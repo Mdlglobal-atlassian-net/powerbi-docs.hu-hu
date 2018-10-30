@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0055994ee883fbdb508dfa304d063bc359dd5beb
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: b66799df83095ce2104196b076482cc232c9bfae
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641620"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101623"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
@@ -61,7 +61,7 @@ A standard telepítés során az átjáró a gép helyi szolgáltatásfiókjáva
 A **Kerberos által korlátozott delegálás** engedélyezéséhez az átjárót tartományi fiókkal kell futtatni, ha az Azure AD még nincs szinkronizálva a helyi Active Directoryval (az Azure AD DirSync/Connect használatával). Ha a fiókot egy tartományi fiókra kell váltania, tekintse meg a cikk [Átjáró váltása tartományi fiókra](#switching-the-gateway-to-a-domain-account) részét.
 
 > [!NOTE]
-> Ha az Azure AD DirSync / Connect konfigurálva van, és a felhasználói fiókok szinkronizálva vannak, az átjárószolgáltatásnak nem kell helyi AD-kereséseket végrehajtania futásidőben, és használhatja a helyi szolgáltatási SID-et (azaz nincs szükség tartományi fiókra) az átjárószolgáltatáshoz. A Kerberos által korlátozott delegálás cikkben ismertetett konfigurációs lépései ugyanezek, mint ez a konfiguráció (csak a tartományi fiók helyett a szolgáltatási SID alapján kell alkalmazni).
+> Ha az Azure AD DirSync / Connect konfigurálva van, és a felhasználói fiókok szinkronizálva vannak, az átjárószolgáltatásnak nem kell helyi AD-kereséseket végrehajtania futásidőben, és használhatja a helyi szolgáltatási SID-et (azaz nincs szükség tartományi fiókra) az átjárószolgáltatáshoz. A Kerberos által korlátozott delegálás cikkben ismertetett konfigurációs lépések ugyanazok, mint ez a konfiguráció (csak a tartományi fiók helyett az átjáró számítógép-objektumát kell Active Directoryban alkalmazni).
 
 ### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>3. előfeltétel: Tartományi rendszergazdai jogosultsággal kell rendelkezni az SPN-ek (SetSPN) és a Kerberos által korlátozott delegálási beállítások konfigurálásához
 
