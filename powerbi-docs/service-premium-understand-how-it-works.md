@@ -1,7 +1,7 @@
 ---
 title: A Power BI Premium-kapacitás memóriahasználata és optimalizálása
 description: Ismerkedjen meg a Power BI Premium-kapacitás memóriakezelésével és annak optimalizálásával.
-ms.date: 04/30/2018
+ms.date: 10/18/2018
 ms.topic: conceptual
 ms.service: powerbi
 ms.component: powerbi-admin
@@ -9,46 +9,44 @@ ms.author: mblythe
 ms.reviewer: mblythe
 author: mgblythe
 manager: kfile
-ms.openlocfilehash: aee7fb94f1e132783fc2b7791f7e634c903f7aa6
-ms.sourcegitcommit: 1574ecba7530e6e0ee97235251a3138fb0e4789b
+ms.openlocfilehash: 99c84aff932c7ce56a4aaa81d71e4583bce3e4c2
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40256928"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641741"
 ---
-# <a name="power-bi-premium-capacity-resource-management-and-optimization"></a>A Power BI Premium-kapacitás erőforrás-kezelése és optimalizálása
+# <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Microsoft Power BI Premium-kapacitások erőforrás-kezelése és optimalizálása
 
-Ebben a cikkben azt ismertetjük, hogyan kezeli erőforrásait a Power BI Premium, valamint tippeket adunk Önnek saját megoldásának tervezése és optimalizálása kapcsán.
+Ez a cikk bemutatja, hogyan kezeli a Power BI Premium az erőforrásokat, valamint példákat és hibaelhárítási javaslatokat is tartalmaz. Az áttekintésért lásd [Mi a Power BI Premium?](service-premium.md)
 
 ## <a name="premium-capacity-memory-management"></a>A prémium szintű kapacitás memóriakezelése
 
  A prémium szintű kapacitás memóriafelhasználása:
 
-* A betöltött adatkészletek által használt memória
-* Adatkészlet (ütemezett és igény szerinti) frissítéséhez használt memória
-* Jelentéslekérdezésekhez használt memória
+* Memóriába betöltött adathalmazok
+* Adathalmaz frissítése (ütemezett és igény szerinti)
+* Jelentéslekérdezések
 
-Amikor a kapacitáson belül egy közzétett adatkészletre vonatkozó kérelem érkezik, az adott adatkészletet a rendszer az állandó tárolóból tölti be a memóriába (ezt a folyamatot lemezkép betöltésének is nevezzük). Ha az adatkészlet betöltve marad a memóriában, az adatkészletre vonatkozó későbbi lekérdezések esetén rövidebb lesz a válaszidő. Az adatkészletek memóriában való tárolásához szükséges memórián felül a jelentéslekérdezések és az adatkészlet-frissítések is további memóriát használnak fel.
+Amikor a kapacitáson belül egy közzétett adatkészletre vonatkozó kérelem érkezik, az adott adatkészletet a rendszer az állandó tárolóból tölti be a memóriába (ezt a folyamatot lemezkép betöltésének is nevezzük). Ha az adatkészlet betöltve marad a memóriában, az adatkészletre vonatkozó későbbi lekérdezések esetén rövidebb lesz a válaszidő. Az adathalmazok memóriában való tárolásához szükséges memórián kívül a jelentéslekérdezések és az adathalmaz-frissítések is memóriahasználattal járnak.
 
 ### <a name="dataset-memory-estimation"></a>Az adatkészlet becsült memóriafelhasználása
 
-Amikor a rendszer megkísérli betölteni az adatkészletet a memóriába, a Power BI megbecsüli, mennyi memóriára lesz szüksége az adatkészletnek a kért parancs végrehajtásához. A memóriában tárolt adatkészletek általában nagyobb méretűek a lemezre mentett adatkészleteknél. Egy adatkészlet frissítéséhez legalább kétszer annyi memóriára van szükség a memóriakapacitásból, mint amennyire egy inaktív adatkészletnek szüksége van.
+Amikor megkísérli betölteni az adathalmazt a memóriába, a Power BI megbecsüli, hogy mennyi memóriára lesz szüksége az adathalmaznak a kért parancs végrehajtásához. A memóriában tárolt adathalmazok általában nagyobb méretűek a lemezre mentett adathalmazoknál. Az adathalmaz-frissítés során a Power BI-nak legalább kétszer annyi memóriára van szüksége, mint az adathalmaz tétlen állapotában.
 
 ### <a name="overcommitting-capacity-eviction-and-reloading-of-datasets"></a>Kapacitás túlterhelése, kizárás és adatkészletek újbóli betöltése
 
-A Power BI Premium lehetővé teszi, hogy túlterhelje kapacitását. Közzétehet például több adatkészletet, mint amennyi a kapacitás memóriájában elfér. Ha a kapacitáson belül közzétett adatkészletek több memóriát igényelnek annál, mint amennyit a kapacitás biztosítani tud, egyes adathalmazokat külön, egy állandó tárolóban fog eltárolni a rendszer. Az állandó tároló az egyes kapacitásokhoz tartozó 100 terabájtos tárterület részét képezi.
+A Power BI Premium lehetővé teszi a kapacitás *túlterhelését*. Közzétehet például több adathalmazt, mint amennyit a kapacitás tárolni tud. Ha a közzétett adathalmazoknak több memóriára van szükségük, mint amennyi a kapacitásban elérhető, egyes adathalmazokat külön, állandó tárolóban tárol a rendszer. Az állandó tároló az egyes kapacitásokhoz tartozó 100 TB-os tárterület részét képezi.
 
-Tehát mely adatkészletek maradnak a memóriában, és mi történik a többi adatkészlettel? Ahogyan korábban már leírtuk, amikor kérelem érkezik egy adott adatkészletre vonatkozóan, az adatkészlet betöltődik a memóriába (lemezkép betöltése). A kérelem lehet jelentéslekérdezés vagy frissítési műveletet.
+Tehát melyik adathalmazok maradnak a memóriában, és mi történik a többi adathalmazzal? Ahogyan korábban már leírtuk, amikor kérelem érkezik egy adott adatkészletre vonatkozóan, az adatkészlet betöltődik a memóriába (lemezkép betöltése). A kérelem lehet jelentéslekérdezés vagy frissítési műveletet. Mivel megengedett a kapacitástúlterhelés, a kapacitás esetében is előfordulhat memóriatúlterhelés. Ez esetben a csomópont egy vagy több adathalmazt *kizár* a memóriából. Először az inaktív adathalmazok (nincs végrehajtás alatt álló lekérdezési/frissítési művelet) lesznek kizárva. Ezután a „legrégebben használt” (LRU) paraméter értéke határozza meg a kizárási sorrendet. Ha új parancsot ad ki egy kizárt adathalmazra, a szolgáltatás megkísérli újból betölteni az adathalmazt a memóriába, szükség esetén más adathalmazok kizárásával. Ez a működési mód nagyobb kihasználtságot és hatékonyságot biztosít, mivel a kapacitás így sokkal több adatkészletet tud kiszolgálni, mint amennyi a memóriájában elfér.
 
-Mivel kapacitását túlterhelheti, előfordulhat, hogy kapacitása memóriaterheléssel szembesül. Ha a kapacitás memóriaterheléssel szembesül (mivel új adatkészletet kell betölteni, vagy a betöltött adatkészletekre vonatozó kérelmek megnövelik a memóriaszükségletet), a csomópont *kizár egy vagy több adatkészletet* a kapacitásmemóriát lefoglaló adatkészletek közül. Elsőként az inaktív adatkészletek (amelyekhez jelenleg nem kapcsolódik lekérdezés/frissítési művelet) „legrégebbi használat” (LRU) szerinti kizárása történik meg. Ha új parancs érkezik egy kizárt adatkészletre vonatkozóan, a szolgáltatás megkísérli annak újbóli betöltését a memóriába, adott esetben kizárva más adatkészleteket. Ez a működési mód nagyobb kihasználtságot és hatékonyságot biztosít, mivel a kapacitás így sokkal több adatkészletet tud kiszolgálni, mint amennyi a memóriájában elfér.
+Az adatkészletek memóriába történő betöltése viszonylag erőforrás-igényes művelet. A folyamat időtartama az adathalmaz méretétől függően változik: kis adathalmazok esetén néhány másodpercig, míg nagy, például 10 GB-os nagyságrendű adathalmazok esetén több tíz másodpercig, vagy akár percekig is tarthat. Prémium szintű kapacitás esetén a rendszer a legrégebben használt adatkészleteket igyekszik minél tovább a memóriában tárolni, hogy a kapacitást minél kevesebbszer kelljen újratölteni. Ha további memóriára van szükség, ki kell zárni egy vagy több adatkészletet, a rendszer pedig megpróbálja kiválasztani azokat, amelyek kizárása a legkevésbé befolyásolja majd a felhasználói élményt. Ha további memóriára van szükség, ki kell zárni egy vagy több adatkészletet, a rendszer pedig megpróbálja kiválasztani azokat, amelyek kizárása a legkevésbé befolyásolja majd a felhasználói élményt. A rendszer például kerülni fogja a legutóbbi néhány percben használt adathalmazok kizárását. Valószínű, hogy ezeket az adathalmazokat rövidesen újra le fogják kérdezni.
 
-Az adatkészletek memóriába történő betöltése viszonylag erőforrás-igényes művelet. A folyamat hossza az adatkészlet méretétől függően változik: kis adatkészletek esetén néhány másodpercig, míg nagy, például 10 gigabájtos adatkészletek esetén több tíz másodpercig, sőt akár percekig is eltarthat. Prémium szintű kapacitás esetén a rendszer a legrégebben használt adatkészleteket igyekszik minél tovább a memóriában tárolni, hogy a kapacitást minél kevesebbszer kelljen újratölteni. Ha további memóriára van szükség, ki kell zárni egy vagy több adatkészletet, a rendszer pedig megpróbálja kiválasztani azokat, amelyek kizárása a legkevésbé befolyásolja majd a felhasználói élményt. Ha további memóriára van szükség, ki kell zárni egy vagy több adatkészletet, a rendszer pedig megpróbálja kiválasztani azokat, amelyek kizárása a legkevésbé befolyásolja majd a felhasználói élményt. A rendszer megpróbálja például elkerülni azoknak az adatkészleteknek a kizárását, amelyek az elmúlt néhány percben használatban voltak, ugyanis az ilyen adatkészletekhez rövid időn belül valószínűleg újabb lekérdezések érkeznek.
-
-Maga a kizárási folyamat egy gyors művelet. Ha kizáráskor az adatkészlet épp nincsen használatban, a felhasználó nem fog sokat észlelni a kizárásból. Ha azonban a kizáráskor egyszerre túl sok adatkészlet van használatban, és nincs elegendő memória mindegyik tárolásához, több kizárás is történhet. Ez „akadozáshoz” vezethet, ugyanis ebben az esetben a rendszer folyamatosan kizárja, majd újból betölti az adatkészleteket, aminek következtében a felhasználók a válaszidők növekedését és a teljesítmény csökkenését tapasztalhatják.
+Maga a kizárási folyamat egy gyors művelet. Ha kizáráskor az adatkészlet épp nincsen használatban, a felhasználó nem fog sokat észlelni a kizárásból. Ha azonban egyszerre túl sok adathalmaz van használatban, és nincs elegendő memória az összes tárolásához, több kizárás is történhet. Ha túl sok aktív adathalmazt használ, az „akadozáshoz” vezethet, mivel ekkor a rendszer folyamatosan zárja ki, majd tölti be újra az adathalmazokat, a felhasználók pedig a válaszidő növekedését és a teljesítmény jelentős lecsökkenését tapasztalhatják.
 
 ### <a name="dataset-refresh-memory-requirement-competing-with-an-active-dataset-memory-requirement"></a>Az adatkészletek frissítéséhez, valamint a használatban lévő adatkészletekhez szükséges memóriaszükségletek közti versengés
 
-Az adatkészleteket a felhasználók ütemezett módon vagy igény szerint is frissíthetik. Ahogyan korábban már leírtuk, egy teljes frissítéshez legalább kétszer annyi memóriára van szükség, mint amennyire egy betöltött, inaktív adatkészletnek szüksége van. A frissítés megkezdése előtt a rendszer felbecsüli a folyamat memóriaszükségletét. Ha a teljes memóriaszükséglet meghaladja a kapacitáson belül rendelkezésre álló memóriát, a rendszer kizár egy vagy több adatkészletet. Kizáráskor a rendszer a legrégebbi használat szerinti sorrendben választ az adatkészletek közül, tehát igyekszik minél több nemrégiben használt adatkészletet a memóriában tartani.
+Az adatkészleteket a felhasználók ütemezett módon vagy igény szerint is frissíthetik. Mint korábban említettük, a teljes frissítéshez legalább kétszer annyi memóriára van szükség, mint a betöltött, tétlen adathalmazok esetében. A frissítés megkezdése előtt a rendszer felbecsüli a folyamat memóriaszükségletét. Ha a teljes memóriaszükséglet meghaladja a kapacitáson belül rendelkezésre álló memóriát, a rendszer kizár egy vagy több adatkészletet. A kizárási sorrendet ez esetben is az LRU határozza meg.
 
 Ha a kizárás ellenére sem áll rendelkezésre elegendő memória, a rendszer újbóli végrehajtás céljából sorba állítja a frissítési folyamatot. A szolgáltatás egészen addig próbálja újra és újra végrehajtani a folyamatot, amíg sikerrel nem jár, vagy amíg el nem indul egy másik frissítési folyamat.
 
@@ -58,18 +56,18 @@ Ha interaktív lekérdezés érkezik bármelyik adatkészlethez kapcsolódóan a
 
 A CPU erőforrásait elsősorban az alábbi két folyamat használja:
 
-- Jelentéslekérdezések
-- Frissítés (feldolgozás)
+* Jelentéslekérdezések
+* Frissítés (feldolgozás)
 
 ### <a name="queries-from-reports"></a>Jelentéslekérdezések
 
-A jelentéslekérdezések a meglévő kapacitásán belül használják a CPU erőforrásait. Ha a jelentés nem hatékony lekérdezéseket tartalmaz, illetve ha az egyidejű felhasználók száma magas, az a CPU erőforrásainak jelentős részét felemésztheti, meglévő kapacitása pedig kevésnek bizonyulhat a terhelés kezeléséhez.
+A jelentéslekérdezések a kapacitásban található processzor-erőforrásokat használják. A kevésbé hatékony jelentéslekérdezések és a sok egyidejű felhasználó nagy processzorhasználatot eredményezhetnek. Előfordulhat, hogy a meglévő kapacitás már nem lesz elegendő a terhelés kezeléséhez.
 
 ### <a name="refresh-parallelization-policy"></a>A párhuzamos frissítésekre vonatkozó irányelv
 
-Nem a memória az egyetlen olyan erőforrás, melynek kapacitása korlátozhatja az adatkészletek frissítését. Az adott kiszolgáló virtuális magjainak száma szintén befolyásolhatja a folyamatokat. Mivel minden egyes frissítési művelethez adott számú virtuális magra van szükség, a párhuzamosan futtatható frissítések száma korlátozva van. Az alábbi táblázat az egyes termékváltozatokra vonatkozó felső határértéket mutatja. A határértékeken túli, további frissítési műveleteket a rendszer sorba állítja.
+Nem a memória az egyetlen olyan erőforrás, amely korlátozhatja az adathalmazok frissíthetőségét. Az adott kiszolgáló virtuális magjainak száma szintén befolyásolhatja a folyamatokat. Mivel minden egyes frissítési művelethez meghatározott számú virtuális magra van szükség, a párhuzamosan futtatható frissítések száma korlátozott. Az alábbi táblázat az egyes termékváltozatokra vonatkozó felső határértéket mutatja. Ha a frissítések száma túllépi ezt az értéket, akkor a további műveletek várólistára kerülnek.
 
- | Termékváltozat  | Háttérrendszeri virtuális magok  | Párhuzamos frissítések modellezése   |
+ | Termékváltozat | Háttérrendszeri virtuális magok | Párhuzamos frissítések modellezése |
  | --- | --- | --- |
  | A1  | 0,5  | 1  |
  | A2  | 1  | 2  |
@@ -87,28 +85,32 @@ Nem a memória az egyetlen olyan erőforrás, melynek kapacitása korlátozhatja
  | P5  | 64  | 96  |
 
  > [!TIP]
-> Ha a frissítései késlekednek, ellenőrizze, hogy kapacitása egyszerre hány párhuzamos frissítést tud kezelni.
+> Ha a frissítések késnek, ellenőrizze a kapacitás által támogatott párhuzamos frissítések számát.
 
 ## <a name="example-scenarios"></a>Esetpéldák
 
-Az alábbiakban bemutatunk néhány gyakori helyzetet, valamint azt, hogyan reagál esetükben a szolgáltatás:
+Az alábbiakban néhány gyakori alkalmazási helyzet, valamint a szolgáltatás által végrehajtott műveletek láthatók:
 
- **Húsz, egy időben beküldött, ütemezett frissítés** – A Power BI megkísérli az első *x* frissítés párhuzamos elindítását. Az *x* értékét az adott termékváltozat párhuzamos frissítésekre vonatozó irányelve határozza meg. Ha a Power BI nem tud elég memóriát felszabadítani az inaktív (régebben használt) adatkészletek kizárásával, nem fog az *összes* frissítés egy időben elindulni. Azokat a frissítéseket, amelyek nem tudnak elindulni, a rendszer sorba állítja.
+**Húsz ütemezett frissítés egyidejű elküldése**. A Power BI megkísérli egyszerre elindítani az első *x* frissítést. Az *x* értékét az adott termékváltozat párhuzamos frissítésekre vonatozó irányelve határozza meg. Ha a Power BI nem tud elég memóriát felszabadítani az inaktív (régebben használt) adatkészletek kizárásával, nem fog az *összes* frissítés egy időben elindulni. Az aktuálisan nem indítható frissítéseket a rendszer átmenetileg várólistára helyezi.
 
- **Két frissítés fut egy időben, de csak az egyik befejezéséhez van elegendő memória** – Az, amelyik le tud futni, elindul. A másikat a rendszer megpróbálja később újból végrehajtani.
+**Két frissítés fut egyszerre, de csak az egyik befejezéséhez van elegendő memória**. Az a frissítés, amelyik le tud futni, elindul. A másikat a rendszer megpróbálja később újból végrehajtani.
 
- **Sok adatkészlethez érkeznek lekérdezések, miközben több adatkészlet épp frissül** – Ha nem áll rendelkezésre elegendő memória, a Power BI megkísérli leállítani az aktív frissítéseket, hogy az interaktív lekérdezések lefuthassanak. Ez csökkenti a frissítési teljesítményt.
+**Sok adathalmaz lekérdezése több adathalmaz frissítése közben**. Ha nincs elég memória, a Power BI megkísérli leállítani a folyamatban lévő frissítéseket, prioritást adva az interaktív lekérdezéseknek. Emiatt a frissítési teljesítmény csökken.
 
- **A kapacitás aktuális mérete miatt nem áll rendelkezésre elegendő memória az adatkészlet frissítéséhez** – A frissítés sikertelen lesz. A rendszer nem kísérli meg további memória felszabadítását az adatkészletek kizárásával.
+**Az adathalmaz frissítéséhez túl sok memóriára van szükség a kapacitás aktuális méretéhez viszonyítva**. A frissítés meghiúsul. A rendszer nem kísérli meg további memória felszabadítását az adatkészletek kizárásával.
 
- **Egyetlen adatkészlet frissítése során hirtelen ugrás tapasztalható a memóriahasználatban** – Ha a hirtelen ugrás során fellépő memóriaszükséglet túllépi az inaktív adatkészletek kizárásával felszabadítható memória mennyiségét, a rendszer később újból megkísérli végrehajtani a frissítést, egészen addig, amíg elegendő memória nem áll rendelkezésre a hirtelen ugrás során fellépő memóriaszükséglet biztosításához.
+**Egyetlen, kiugróan magas memóriahasználattal járó adathalmaz-frissítés**. Ha a csúcsidei memóriaszükséglet túllépi az inaktív adathalmazok kizárásával felszabadítható memória mennyiségét, a rendszer később újból megkísérli végrehajtani a frissítést, egészen addig, amíg a szükségletnek megfelelő mennyiségű memória rendelkezésre nem áll.
 
- **Olyan adatkészletre érkezik lekérdezés, amely nem tud elegendő memóriát felszabadítani az inaktív adatkészletek és a frissítési műveletek kizárásával** – Ezek a lekérdezések sikertelenek lesznek. Az ilyen típusú munkaterhelési követelmények esetén nagyobb kapacitást kell megvásárolnia.
+**Olyan adathalmaz lekérdezése, amely esetében a rendszer nem képes elegendő memóriát felszabadítani az inaktív adathalmazok és a frissítési műveletek kizárásával**. Ezek a lekérdezések meghiúsulnak. Az ilyen típusú munkaterhelési követelmények esetén nagyobb kapacitást kell megvásárolnia.
 
 ## <a name="troubleshooting-and-testing"></a>Hibaelhárítás és tesztelés
 
-Ha a jelentések lassúak vagy nem válaszolnak, teszteljen egy jelentést először egyetlen egy felhasználó esetén. Ezután kezdje el megemelni az egyidejű felhasználók számát, hogy kiderítse, hány felett lassul le a rendszer. A (jelentéslekérdezésekhez kapcsolódó) DAX-függvények finomhangolása sok esetben jelentősen befolyásolhatja a jelentések teljesítményét (és növelheti a kapacitása által támogatott egyidejű felhasználók számát).
+Ha a jelentések lassúak vagy nem válaszolnak, teszteljen egy jelentést először egyetlen egy felhasználó esetén. Ezután kezdje el megemelni az egyidejű felhasználók számát, hogy kiderítse, hány felett lassul le a rendszer. Sok esetben a DAX-lekérdezések finomhangolása jelentősen módosíthatja a jelentéskészítési teljesítményt. A lekérdezések finomhangolásával továbbá megnövelhető a kapacitás által támogatott párhuzamos felhasználók száma. [A kapacitás monitorozásával](service-admin-premium-monitor-capacity.md) azonosíthatók a lehetséges teljesítményproblémák.
 
-Használjon Power BI Embedded-kapacitást az Azure-ban, hogy a különféle termékváltozatok tesztelését követően eldönthesse, melyik a legmegfelelőbb Premium termékváltozat az Ön számára feltételezett munkaterhelése alapján. A Power BI Embedded A4 termékváltozat a P1-gyel, az A5 a P2-vel, az A6 pedig a P3-mal egyezik meg. Az Azure Portal felületén egyszerűen váltogathat a kisebb vagy nagyobb kapacitású termékváltozatok között. Miután megtalálta a munkaterheléséhez legmegfelelőbb termékváltozatot, és befejezte a tesztelést, törölheti is a termékváltozatot.
+Használjon Power BI Embedded-kapacitást az Azure-ban, hogy a különféle termékváltozatok tesztelését követően eldönthesse, melyik a legmegfelelőbb Premium termékváltozat az Ön számára feltételezett munkaterhelése alapján. A Power BI Embedded A4 termékváltozata a P1-gyel, az A5 a P2-vel, az A6 pedig a P3-mal egyezik meg. Az Azure Portal felületén egyszerűen váltogathat a kisebb vagy nagyobb kapacitású termékváltozatok között. Miután megtalálta a munkaterheléséhez legmegfelelőbb termékváltozatot, és befejezte a tesztelést, törölheti is a termékváltozatot.
 
-Bizonyos esetekben sokat megtudhat az adott problémáról, ha megnyitja számítógépén a modell PBIX-fájlját, illetve ellenőrzi a memória- és a CPU-felhasználást. Kisebb modellek esetén próbálkozzon azzal, hogy megnyitja a modellt a számítógépéről, frissíti, majd lekérdezéseket küld rá. Nagyon nagy modellek esetén azonban ez nem fog működni. A modell megnyitásakor ellenőrizze a modell méretét, valamint a memória- és a CPU-felhasználást. Próbáljon meg frissíteni és lekérdezéseket indítani. A feladatkezelő segítségével ellenőrizze a helyi PBIX-fájl CPU- és memóriafelhasználását). Néha magának a számítógépnek a metrikáiból is kiderül, hogy egy alacsonyabb (pl. P1/P2) prémium szintű kapacitás nem feltétlen elegendő az Ön számára.
+Bizonyos esetekben sokat megtudhat az adott problémáról, ha megnyitja számítógépén a modell Power BI Desktop- (PBIX-) fájlját, illetve ellenőrzi a memória- és a CPU-használatot. Kisebb modellek esetén próbálkozzon azzal, hogy megnyitja a modellt a számítógépéről, frissíti, majd lekérdezéseket küld rá. Nagyon nagy modellek esetén azonban ez nem fog működni. A modell megnyitásakor ellenőrizze a modell méretét, valamint a memória- és a CPU-felhasználást. Próbáljon meg frissíteni és lekérdezéseket indítani. A feladatkezelővel ellenőrizheti a helyi fájl processzor- és memóriafelhasználását. Néha magának a számítógépnek a metrikáiból is kiderül, hogy egy alacsonyabb (pl. P1/P2) prémium szintű kapacitás nem feltétlen elegendő az Ön számára.
+
+## <a name="next-steps"></a>Következő lépések
+
+[Kapacitáskezelés a Power BI Premiumban és a Power BI Embeddedben](service-admin-premium-manage.md)

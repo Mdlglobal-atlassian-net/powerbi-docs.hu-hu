@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/30/2018
+ms.date: 10/19/2018
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: fd62e90d4a4f348ee7b3a524f85725d517180068
-ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
+ms.openlocfilehash: 96756adc0c24992e99dee0236bb2eb0b81716e4b
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43300138"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641781"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Növekményes frissítés a Power BI Premium szolgáltatásban
 
 A növekményes frissítés lehetővé teszi a rendkívül nagyméretű adatkészletek használatát a Power BI Premium szolgáltatásban az alábbi előnyökkel:
 
-- **A frissítés gyorsabb lesz.** Csak a módosult adatokat szükséges frissíteni. Frissítheti például egy 10 éves adatkészletnek csak az utolsó 5 napját.
+- **A frissítés gyorsabb lesz.** Csak a módosult adatokat szükséges frissíteni. Frissítheti például egy 10 éves adatkészletnek csak az utolsó öt napját.
 
 - **A frissítések megbízhatóbbak.** Nem szükséges például hosszú futású kapcsolatokat fenntartani alacsony megbízhatóságú forrásrendszerekkel.
 
@@ -29,7 +29,7 @@ A növekményes frissítés lehetővé teszi a rendkívül nagyméretű adatkés
 
 ## <a name="how-to-use-incremental-refresh"></a>A növekményes frissítés használata
 
-Definiálnia kell egy növekményes frissítési szabályzatot a Power BI Desktopban, majd az alkalmazásához közzé kell azt tennie a Power BI szolgáltatásban.
+A növekményes frissítési szabályzatok a Power BI Desktopban definiálhatók, majd az alkalmazásukhoz közzé kell tenni azokat a Power BI szolgáltatásban.
 
 Első lépésként engedélyezze a növekményes frissítést az előzetes verziójú funkciók között.
 
@@ -41,13 +41,13 @@ A potenciálisan több milliárd sort tartalmazó nagyméretű adatkészletek ne
 
 #### <a name="rangestart-and-rangeend-parameters"></a>RangeStart és RangeEnd paraméter
 
-A növekményes frissítés Power BI szolgáltatásban való használatához szűrnie kell az adatokat dátum/idő típusú Power Query-paraméterekkel, melyeknek a **RangeStart** és a **RangeEnd** fenntartott nevet kell adnia, a kis- és nagybetűk különbségére is ügyelve.
+A növekményes frissítés Power BI szolgáltatásban való használatához szűrnie kell az adatokat dátum/idő típusú Power Query-paraméterekkel, amelyeknek a **RangeStart** és a **RangeEnd** fenntartott nevet kell adnia, a kis- és nagybetűk különbségére is ügyelve.
 
 A közzététel után a paraméterek értékét automatikusan felülbírálja a Power BI szolgáltatás. Nem szükséges a szolgáltatásban az adatkészlet beállításainál megadnia őket.
- 
-Fontos elküldeni a szűrőt a forrásrendszernek, amikor elküldi a lekérdezéseket a frissítési műveletekhez. Ez azt jelenti, hogy az adatbázisnak támogatnia kell a „lekérdezési modellrészeket”. Az egyes adatforrásoknál a lekérdezési modellrészek különböző szintjeinek támogatása miatt fontos ellenőriznie, hogy a forráslekérdezések tartalmazzák-e a szűrési logikát. Ha ez nem történik meg, minden egyes lekérdezés az összes adatot lekéri a forrásból, ezáltal meghiúsítva a növekményes frissítés célját.
- 
-A szűrő használatával tartományokra bontja az adatokat a Power BI szolgáltatásban. Nem a szűrt dátum oszlop frissítésének támogatására tervezték. A frissítés beszúrásként és törlésként lesz értelmezve (nem frissítésként). Ha a törlés az előzménytartományban és nem a növekményes tartományban történik, az nem lesz kiválasztva.
+
+Fontos elküldeni a szűrőt a forrásrendszernek, amikor elküldi a lekérdezéseket a frissítési műveletekhez. A szűrés elküldéséhez az adatforrásnak támogatnia kell a „query folding” (lekérdezésdelegálás) elnevezésű technika használatát. A legtöbb SQL-lekérdezéseket támogató adatforrás támogatja a lekérdezésdelegálást. Bizonyos adatforrások, például az egybesimított fájlok, a blobok, a webes és az OData-csatornák alapvetően nem támogatják a használatát. Mivel az egyes adatforrások különböző szinten támogatják a lekérdezésdelegálást, ajánlott ellenőrizni azt, hogy a szűrési logika szerepel-e a forráslekérdezésekben. Ha az adatforrás háttérfolyamata nem támogatja a szűrőt, akkor az nem küldhető tovább. Ilyen esetben az adategyesítési motor a szűrő helyi alkalmazásával kompenzál, amelyhez valószínűleg a teljes adatkészletet le kell kérni az adatforrásból. Ez jelentősen lelassíthatja a növekményes frissítést, és a folyamat kifogyhat az erőforrásokból a Power BI szolgáltatásban vagy a helyszíni adatátjárón (ha azt használja).
+
+A szűrő használatával tartományokra bontja az adatokat a Power BI szolgáltatásban. Nem a szűrt dátumoszlop frissítésének támogatására lett tervezve. A frissítés beszúrásként és törlésként lesz értelmezve (nem frissítésként). Ha a törlés az előzménytartományban és nem a növekményes tartományban történik, az nem lesz kiválasztva. Ez a partíciókulcs-ütközés miatt adatfrissítési hibákat okozhat.
 
 A Power Query-szerkesztőben válassza a **Paraméterek kezelése** lehetőséget a paraméterek alapértelmezett értékkel való definiálásához.
 
@@ -85,21 +85,21 @@ Ekkor megjelenik a Növekményes frissítés párbeszédpanel. A párbeszédpane
 
 A fejlécszöveg rövid magyarázatot nyújt az alábbiakról:
 
--   A növekményes frissítést csak a prémium szintű kapacitáson tárolt munkaterületek támogatják. A frissítési szabályzatokat a Power BI Desktopban definiálhatja, és a frissítési művelet alkalmazza őket a szolgáltatásban.
+- A növekményes frissítést csak a prémium szintű kapacitáson tárolt munkaterületek támogatják. A frissítési szabályzatokat a Power BI Desktopban definiálhatja, és a frissítési művelet alkalmazza őket a szolgáltatásban.
 
--   Ha sikerül is letöltenie a növekményes frissítési szabályzatot tartalmazó PBIX-fájlt a Power BI szolgáltatásból, nem fog megnyílni a Power BI Desktopban. Hamarosan már a letöltés sem fog működni. A jövőben elképzelhető, hogy a rendszer támogatni fogja ezt a használati módot, de tartsa szem előtt, hogy ezek az adatkészletek akkorára nőhetnek, hogy problémákba ütközhet, ha átlagos asztali számítógépen próbálja letölteni és megnyitni őket.
+- Ha sikerül is letöltenie a növekményes frissítési szabályzatot tartalmazó PBIX-fájlt a Power BI szolgáltatásból, nem fog megnyílni a Power BI Desktopban. Hamarosan már a letöltés sem fog működni. A jövőben elképzelhető, hogy a rendszer támogatni fogja ezt a használati módot, de tartsa szem előtt, hogy ezek az adatkészletek akkorára nőhetnek, hogy problémákba ütközhet, ha átlagos asztali számítógépen próbálja letölteni és megnyitni őket.
 
 #### <a name="refresh-ranges"></a>Tartományok frissítése
 
-Az alábbi példa definiál egy frissítési szabályzatot 5 évnyi adat tárolásához, illetve 10 napnyi adat növekményes frissítéséhez. Az adatkészlet napi frissítése esetén az alábbi műveletek zajlanak le minden egyes frissítési művelet során.
+A következő példa egy frissítési szabályzatot mutat be, az adatok öt naptári évig tartó tárolásához, valamint az aktuális év adatait a jelenlegi dátumig, és 10 nap adatainak növekményes frissítését. Az első frissítési művelet az előzményadatokat tölti be. A további frissítések növekményesek lesznek, és (napi szinten történő futtatás mellett) az alábbi műveleteket végzik el.
 
--   Új napnyi adatok hozzáadása.
+- Új napnyi adatok hozzáadása.
 
--   Az adatok frissítése az aktuális dátumtól számított 10 napra visszamenőleg.
+- Az adatok frissítése az aktuális dátumtól számított 10 napra visszamenőleg.
 
--   Az aktuális dátumtól számított 5 évnél régebbi naptári évek eltávolítása. Ha például az aktuális dátum 2019. január 1., a 2013-as évet eltávolítja a rendszer.
+- Az aktuális dátumtól számított öt évnél régebbi naptári évek eltávolítása. Ha például az aktuális dátum 2019. január 1., a 2013-as évet eltávolítja a rendszer.
 
-A Power BI szolgáltatás által végzett első frissítés tovább tarthat, mert itt a teljes 5 éves időtartamot importálni kell. A későbbi frissítések végrehajtása már sokkal rövidebb időt fog igénybe venni.
+A Power BI szolgáltatás által végzett első frissítés tovább tarthat, mert itt öt teljes naptári évet kell importálni. A későbbi frissítések végrehajtása már sokkal rövidebb időt fog igénybe venni.
 
 ![Tartományok frissítése](media/service-premium-incremental-refresh/refresh-ranges.png)
 
@@ -109,7 +109,7 @@ A Power BI szolgáltatás által végzett első frissítés tovább tarthat, mer
 
 #### <a name="detect-data-changes"></a>Adatváltozások észlelése
 
-10 napnyi adat növekményes frissítése természetesen sokkal hatékonyabb, mint 5 évnyi adat teljes frissítése. De lehet, hogy ennél többet is tudunk tenni. Az **Adatváltozások észlelése** jelölőnégyzet bejelölésével megadhat egy dátum/idő oszlopot, amely alapján a rendszer azonosítani tudja, hogy mely napokon történt adatváltozás, és csak ezeket a napokat frissíti. Ez azt feltételezi, hogy található ilyen oszlop a forrásrendszerben (mely jellemzően megtalálható, naplózási célokból). **Ez nem lehet ugyanaz az oszlop, amelyet az adatoknak a RangeStart/RangeEnd paraméterekkel való particionálására használt.** Ennek az oszlopnak a maximális értékét a rendszer kiértékeli a növekményes tartományban lévő minden egyes időszak esetében. Ha nem változott az utolsó frissítés óta, akkor nem szükséges frissíteni az időszakot. A jelen példában ez tovább csökkentheti a növekményesen frissített napok számát 10-ről akár 2-re.
+10 napnyi adat növekményes frissítése természetesen sokkal hatékonyabb, mint öt évnyi adat teljes frissítése. De lehet, hogy ennél többet is tudunk tenni. Az **Adatváltozások észlelése** jelölőnégyzet bejelölésével megadhat egy dátum/idő oszlopot, amely alapján a rendszer azonosítani tudja, hogy mely napokon történt adatváltozás, és csak ezeket a napokat frissíti. Ez azt feltételezi, hogy található ilyen oszlop a forrásrendszerben (mely jellemzően megtalálható, naplózási célokból). **Ez nem lehet ugyanaz az oszlop, amelyet az adatoknak a RangeStart/RangeEnd paraméterekkel való particionálására használt.** Ennek az oszlopnak a maximális értékét a rendszer kiértékeli a növekményes tartományban lévő minden egyes időszak esetében. Ha nem változott az utolsó frissítés óta, akkor nem szükséges frissíteni az időszakot. A jelen példában ez tovább csökkentheti a növekményesen frissített napok számát 10-ről akár 2-re.
 
 ![Változások észlelése](media/service-premium-incremental-refresh/detect-changes.png)
 

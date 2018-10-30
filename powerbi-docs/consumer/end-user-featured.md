@@ -8,15 +8,15 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 10/19/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d23e168f6192629ce9dd945e29691dcf40ae1427
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 66956a38a4f2076a01cf224bbef3a20490915e9b
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565406"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473704"
 ---
 # <a name="featured-dashboards-in-power-bi-service"></a>Kiemelt irányítópultok a Power BI szolgáltatásban
 ## <a name="create-a-featured-dashboard"></a>Kiemelt irányítópult létrehozása
@@ -41,7 +41,7 @@ Nézze meg, ahogy Amanda létrehoz egy kiemelt irányítópultot, majd a videó 
 
 
 1. Nyissa meg azt az irányítópultot, amelyiket *kiemeltté* kíván tenni. 
-2. A felső navigációs sávon találja a **Beállítás kiemeltként** parancsot vagy a Kiemelt  ![kiemelt ikon](./media/end-user-featured/power-bi-featured-icon.png)  ikont. Kattintson valamelyikre.
+2. A felső menüsorban találja a **Beállítás kiemeltként** parancsot vagy a kiemelt ![kiemelt ikon](./media/end-user-featured/power-bi-featured-icon.png) ikont. Kattintson valamelyikre.
    
     ![Beállítás kiemeltként ikon](./media/end-user-featured/power-bi-set-as-featured.png)
 3. Erősítse meg a választását.

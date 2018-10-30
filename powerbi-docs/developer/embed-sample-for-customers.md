@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-ms.date: 06/20/2018
-ms.openlocfilehash: 6685b47de6fbcc4ce35d5087c545814e34092d11
-ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
+ms.date: 10/17/2018
+ms.openlocfilehash: d3076090b06cdb60b72c475fd156cc274985ea32
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48827433"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435488"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Oktatóanyag: Power BI-jelentés, -irányítópult vagy -csempe beágyazása egy alkalmazásba a saját ügyfelek részére
 
@@ -36,7 +36,7 @@ A kezdéshez szüksége van egy **Power BI Pro**-fiókra, amely a **fő fiókké
 
 ## <a name="set-up-your-embedded-analytics-development-environment"></a>A beágyazott elemzési fejlesztési környezet beállítása
 
-Mielőtt jelentéseket, irányítópultokat és csempéket ágyazna be az alkalmazásba, győződjön meg arról, hogy a környezete be van állítva a beágyazás engedélyezéséhez. A beállítás részeként a következőket kell elvégeznie.
+Mielőtt jelentéseket, irányítópultokat vagy csempéket ágyazna az alkalmazásba, győződjön meg arról, hogy a környezete engedélyezi a beágyazást a Power BI-jal.
 
 Az első lépések gyors elsajátításához követheti a [beágyazáshoz szükséges telepítési eszköz](https://aka.ms/embedsetup/AppOwnsData) lépéseit, és letölthet egy mintaalkalmazást, amely végigvezeti Önt a környezet létrehozásán és egy jelentés beágyazásán.
 
@@ -44,7 +44,7 @@ Ha mégis a környezet manuális létrehozása mellett dönt, folytathatja az al
 
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Alkalmazás regisztrálása az Azure Active Directoryban (Azure AD)
 
-Az alkalmazás Azure Active Directoryban történő regisztrálása lehetővé teszi az alkalmazás számára a Power BI REST API-k elérését. Így identitást hozhat létre az alkalmazás számára, és meghatározhatja a Power BI REST-erőforrásokhoz való engedélyeket.
+Az alkalmazás Azure Active Directoryban történő regisztrálása lehetővé teszi az alkalmazás számára a Power BI REST API-k elérését. Az alkalmazás regisztrálásával identitást hozhat létre a számára, és meghatározhatja a Power BI REST-erőforrásokhoz kötődő engedélyeket.
 
 1. Fogadja el a [Microsoft Power BI API használati feltételeit](https://powerbi.microsoft.com/api-terms).
 
@@ -52,7 +52,7 @@ Az alkalmazás Azure Active Directoryban történő regisztrálása lehetővé t
 
     ![Az Azure Portal főoldala](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-3. A bal oldali navigációs ablakban válassza az **Összes szolgáltatás** lehetőséget, és kattintson az **Alkalmazásregisztráció**, majd az **Új alkalmazás regisztrálása** elemre.
+3. A bal oldali navigációs panelen válassza a **Minden szolgáltatás** lehetőséget, és kattintson az **Alkalmazásregisztrációk**, majd az **Új alkalmazás regisztrálása** elemre.
 
     ![Alkalmazásregisztráció keresése](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![Új alkalmazás regisztrálása](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
@@ -63,7 +63,7 @@ Az alkalmazás Azure Active Directoryban történő regisztrálása lehetővé t
 
 ### <a name="apply-permissions-to-your-application-within-azure-active-directory"></a>Engedélyek alkalmazása a saját alkalmazásra az Azure AD-ben
 
-Az alkalmazás részére további engedélyeket is meg kell adnia az alkalmazásregisztrációs oldalon már megadottakon felül. Jelentkezzen be a beágyazáshoz használt *fő* fiókkal, amelynek globális rendszergazdafióknak kell lennie.
+További engedélyeket adhat meg az alkalmazásnak azokon felül, amelyeket az alkalmazásregisztrációs oldalon megadott. Jelentkezzen be a beágyazáshoz használt *fő* fiókkal. A fő fióknak globális rendszergazdai fióknak kell lennie.
 
 ### <a name="use-the-azure-active-directory-portal"></a>Az Azure Active Directory portál használata
 
@@ -91,7 +91,7 @@ Az alkalmazás részére további engedélyeket is meg kell adnia az alkalmazás
 
     ![PBI szolgáltatás kiválasztása](media/embed-sample-for-customers/embed-sample-for-customers-014.png)
 
-7. Jelölje be az összes engedélyt a **Delegált engedélyek** szakaszban. Ezeket egyenként kell kijelölnie, hogy menteni tudja a kijelöléseket. Ha végzett, kattintson a **Mentés** gombra.
+7. Jelölje be az összes engedélyt a **Delegált engedélyek** szakaszban. Ha végzett, kattintson a **Mentés** gombra.
 
     ![Delegált engedélyek kiválasztása](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
 
@@ -107,11 +107,11 @@ Az alkalmazás részére további engedélyeket is meg kell adnia az alkalmazás
 
 Amikor beágyazza a jelentéseket, irányítópultokat vagy csempéket az ügyfelei számára, akkor egy alkalmazás-munkaterületen kell elhelyeznie a tartalmakat. A *fő* fióknak az alkalmazás-munkaterület rendszergazdai fiókjának kell lennie.
 
-1. Kezdjük a munkaterület létrehozásával. Kattintson a **munkaterületek** > **Alkalmazás-munkaterületek létrehozása** lehetőségre. A tartalmat itt kell elhelyeznie, hogy elérhető legyen az alkalmazás számára.
+1. Kezdjük a munkaterület létrehozásával. Kattintson a **munkaterületek** > **Alkalmazás munkaterületének létrehozása** lehetőségre. Az Alkalmazás munkaterületének létrehozása elemnél helyezze el azokat a tartalmakat, amelyekhez az alkalmazásnak hozzá kell férnie.
 
     ![Munkaterület létrehozása](media/embed-sample-for-customers/embed-sample-for-customers-020.png)
 
-2. Nevezze el a munkaterületet. Ha a megfelelő **munkaterület-azonosító** nem használható, szerkesztéssel hozzon létre egy egyedi azonosítót. Ez lesz az alkalmazás neve is.
+2. Nevezze el a munkaterületet. Ha a megfelelő **munkaterület-azonosító** nem használható, szerkesztéssel hozzon létre egy egyedi azonosítót.
 
     ![Munkaterület elnevezése](media/embed-sample-for-customers/embed-sample-for-customers-021.png)
 
@@ -161,31 +161,31 @@ A mintaalkalmazás segítségével történő tartalombeágyazáshoz kövesse az
 
     ![App Owns Data alkalmazásminta](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
 
-2. Nyissa meg a Web.config fájlt ugyanebben az alkalmazásban. Az alkalmazás sikeres futtatásához 5 mezőt kell kitöltenie. Az **ügyfél-azonosító**, a **csoportazonosító**, a **jelentésazonosító**, a **pbiUsername** (PBI-felhasználónév) és a **pbiPassword** (PBI-jelszó) mezőket.
+2. Nyissa meg a Web.config fájlt ugyanebben az alkalmazásban. Az alkalmazás sikeres futtatásához öt mezőt kell kitöltenie: az **applicationId** (ügyfél-azonosító), a **workspaceId** (munkaterület-azonosító), a **reportId** (jelentésazonosító), a **pbiUsername** (PBI-felhasználónév) és a **pbiPassword** (PBI-jelszó) mezőt.
 
     ![Web Config fájl](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-    Az **ügyfél-azonosító** mezőbe az **Azure-beli** **Alkalmazásazonosítót** kell beírni. Az alkalmazás az **ügyfél-azonosítóval** azonosítja magát azon felhasználók esetén, akiktől Ön engedélyeket kér. Az **ügyfél-azonosítót** a következőképpen olvashatja be:
+    Az **applicationId** mezőbe írja be az **Azure**-beli **alkalmazásazonosítót**. Az alkalmazás az **applicationId**-vel azonosítja magát azon felhasználóknak, akiktől Ön engedélyeket kér. Az **applicationId** beszerzéséhez kövesse az alábbi lépéseket:
 
     Jelentkezzen be az [Azure Portalon](https://portal.azure.com).
 
     ![Az Azure Portal főoldala](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-    A bal oldali navigációs ablaktáblán válassza az **Összes szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
+    A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
 
     ![Alkalmazásregisztráció keresése](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
-    Válassza ki azt az alkalmazást, amelynek az **ügyfél-azonosítóját** be kívánja olvasni.
+    Válassza ki azt az alkalmazást, amelynek az **applicationId**-jére szüksége van.
 
     ![Az alkalmazás kiválasztása](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-    Megjelenik egy GUID-ként listázott **alkalmazásazonosító**. Használja ezt az **alkalmazásazonosítót** az alkalmazás **ügyfél-azonosítójaként**.
+    Megjelenik egy GUID-ként listázott **alkalmazásazonosító**. Használja ezt az **alkalmazásazonosítót** az alkalmazás **applicationId** mezőjében.
 
-    ![ügyfél-azonosító](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-    A **csoportazonosító** mezőbe írja be a Power BI-ban szereplő **alkalmazás-munkaterület GUID-azonosítóját**.
+    A **workspaceId** mezőbe írja be a Power BI-ban szereplő **alkalmazás-munkaterület GUID-azonosítóját**.
 
-    ![csoportazonosító](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+    ![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
     A **jelentésazonosító** mezőbe írja be a Power BI-ban szereplő **jelentés GUID-azonosítóját**.
 
@@ -214,7 +214,7 @@ Bár a tartalombeágyazás lépései elvégezhetők a [Power BI REST API-kkal](h
 
 Az ügyfelek számára történő beágyazáshoz a fő fióknak egy **hozzáférési jogkivonatra** van szüksége az **Azure AD-ből**. Mielőtt hívásokat intézhetne a [Power BI REST API-khoz](https://docs.microsoft.com/rest/api/power-bi/), be kell szereznie egy [Azure AD hozzáférési jogkivonatot](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) az **alkalmazás tulajdonában lévő adatokat** használó Power BI-alkalmazáshoz.
 
-A Power BI-ügyfél a **hozzáférési tokennel** való létrehozásához célszerű létrehozni a Power BI-ügyfélobjektumot, amely lehetővé teszi a [Power BI REST API-k](https://docs.microsoft.com/rest/api/power-bi/) használatát. Ehhez a **hozzáférési tokent** a ***Microsoft.Rest.TokenCredentials*** objektummal kell tördelni.
+A Power BI-ügyfél **hozzáférési jogkivonattal** való létrehozásához célszerű létrehozni a Power BI-ügyfélobjektumot, amely lehetővé teszi a [Power BI REST API-k](https://docs.microsoft.com/rest/api/power-bi/) használatát. Ehhez a **hozzáférési tokent** a ***Microsoft.Rest.TokenCredentials*** objektummal kell tördelni.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -242,8 +242,8 @@ Itt láthat arra mintakódot, hogyan kérhető le az első jelentés egy adott m
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You need to provide the GroupID where the dashboard resides.
-ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
+// You need to provide the workspaceId where the dashboard resides.
+ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(workspaceId);
 
 // Get the first report in the group.
 Report report = reports.Value.FirstOrDefault();
@@ -263,7 +263,7 @@ using Microsoft.PowerBI.Api.V2.Models;
 
 // Generate Embed Token.
 var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(GroupId, report.Id, generateTokenRequestParameters);
+EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(workspaceId, report.Id, generateTokenRequestParameters);
 
 // Generate Embed Configuration.
 var embedConfig = new EmbedConfig()
@@ -339,9 +339,9 @@ Az alábbi táblázatból megtudhatja, milyen kapacitású Power BI Embedded-kap
 
 | Kapacitáscsomópont | Magok száma összesen<br/>*(Háttérrendszer + előtérrendszer)* | Háttérrendszerbeli magok | Előtérrendszerbeli magok | DirectQuery-/élő kapcsolat korlátai | Maximális oldalmegjelenítések óránként csúcsidőszakban |
 | --- | --- | --- | --- | --- | --- |
-| A1 |1 virtuális mag |0,5 mag, 3 GB RAM |0,5 mag | Másodpercenként 5 |1-300 |
+| A1 |1 virtuális mag |0,5 mag, 3 GB RAM |0,5 mag |Másodpercenként 5 |1-300 |
 | A2 |2 virtuális mag |1 mag, 5 GB RAM |1 mag | Másodpercenként 10 |301-600 |
-| A3 |42 virtuális mag |2 mag, 10 GB RAM |2 mag | Másodpercenként 15 |601-1200 |
+| A3 |4 virtuális mag |2 mag, 10 GB RAM |2 mag | Másodpercenként 15 |601-1200 |
 | A4 |8 virtuális mag |4 mag, 25 GB RAM |4 mag |Másodpercenként 30 |1,201-2,400 |
 | A5 |16 virtuális mag |8 mag, 50 GB RAM |8 mag |Másodpercenként 60 |2,401-4,800 |
 | A6 |32 virtuális mag |16 mag, 100 GB RAM |16 mag |Másodpercenként 120 |4801-9600 |

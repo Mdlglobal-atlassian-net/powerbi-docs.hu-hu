@@ -10,155 +10,152 @@ ms.topic: conceptual
 ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 5c0c6fd619a2487f9c801200d732cda628a68055
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 379f80e1e87181ffdacdaab01d87ff435f2a9501
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974000"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473774"
 ---
 # <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)
 
-A **Power BI Desktop** **több-a-többhöz kapcsolatok** funkciójával **több-a-többhöz** számosságú táblák kapcsolhatók össze, így a több adatforrást tartalmazó adatmodellek egyszerűbb és ésszerűbb módon hozhatók létre. A **több-a-többhöz kapcsolatok** funkció a **Power BI Desktop** tágabb **összetett modellek** képességének része.
+A Power BI Desktop *több-a-többhöz kapcsolatok* funkciójával *több-a-többhöz* számosságot használó táblák kapcsolhatók össze. A kettő vagy több adatforrást tartalmazó adatmodellek így egyszerűbb és intuitívabb módon hozhatók létre. A *több-a-többhöz kapcsolatok* funkció a Power BI Desktop tágabb *összetett modellek* képességének része.
 
-![több-a-többhöz a Kapcsolat szerkesztése párbeszédpanelen](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+![Egy több-a-többhöz kapcsolat a „Kapcsolat szerkesztése” panelen](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-A **Power BI Desktopban** beállítható **több-a-többhöz kapcsolatok** három összefüggő funkció együttesének egy részét képezik:
+A Power BI Desktopban beállítható *több-a-többhöz kapcsolatok* három összefüggő funkció együttesének egy részét képezik:
 
-* **Összetett modellek** – Lehetővé teszi, hogy egy jelentés több adatkapcsolattal, köztük DirectQuery-kapcsolatokkal és importtal, vagy ezek bármilyen kombinációjával rendelkezzen.
-* **Több-a-többhöz kapcsolatok** – Az **összetett modellekkel** a táblák között **több-a-többhöz kapcsolatok** hozhatók létre, kiküszöbölve ezzel az egyedi értékek követelményét, és szükségtelenné téve a korábbi kerülő megoldásokat, amilyen például új táblák bevezetése a kapcsolatok létrehozásához. 
-* **Tárolási mód** – Mostantól megadható, hogy mely vizualizációk igényelnek a háttér-adatforrásokba irányuló lekérdezéseket. Azok, amelyekhez erre nincs szükség, importálva lesznek még akkor is, ha DirectQuery-alapúak. Ezáltal javul a teljesítmény, és csökken a háttérbeli adatforgalom. Korábban még az olyan egyszerű vizualizációk, mint a szeletelők is kezdeményeztek a háttérbeli forrásokba irányuló lekérdezéseket. 
+* **Összetett modellek**: Lehetővé teszik, hogy egy jelentés kettő vagy több adatkapcsolattal, köztük DirectQuery-kapcsolatokkal és importálással, vagy ezek bármilyen kombinációjával rendelkezzen. További információért lásd: [Összetett modellek a Power BI Desktopban (előzetes verzió)](desktop-composite-models.md).
 
-Az **összetett modelleknek** ezt a három, egymással összefüggő funkcióját külön cikkek ismertetik:
+* **Több-a-többhöz kapcsolatok**: Az *összetett modellekkel* a táblák között *több-a-többhöz kapcsolatok* hozhatók létre. Ez a megközelítés kiküszöböli, hogy egyedi értékeket kelljen használni a táblákban. Korábbi áthidaló megoldásokat is szükségtelenné tesz, például új táblák bevezetését a kapcsolatok létrehozásához. A funkcióról ez a cikk szolgáltat további információt.
 
-* Az **összetett modellekről** a következő cikk szól részletesen: [Összetett modellek a Power BI Desktopban (előzetes verzió)](desktop-composite-models.md).
-* A **több-a-többhöz kapcsolatokat** ez a cikk ismerteti.
-* A **tárolási módokról** a következő cikk szól részletesen: [Tárolási mód a Power BI Desktopban (előzetes verzió)](desktop-storage-mode.md).
+* **Tárolási mód**: Mostantól megadható, hogy mely vizualizációk igényelnek a háttér-adatforrásokba irányuló lekérdezéseket. Azok a vizualizációk, amelyekhez nincs szükség lekérdezésre, importálva lesznek még akkor is, ha DirectQuery-alapúak. Ez a funkció segíti a teljesítmény javulását, és csökkenti a háttérrendszerek leterheltségét. Korábban még az egyszerű vizualizációk, például a szeletelők is kezdeményeztek a háttérbeli forrásokba irányuló lekérdezéseket. További információért lásd: [Tárolási mód a Power BI Desktopban (előzetes verzió)](desktop-storage-mode.md).
 
-## <a name="enabling-the-many-to-many-relationships-preview-feature"></a>A több-a-többhöz kapcsolatok funkció engedélyezése
+## <a name="enable-the-many-to-many-relationships-preview-feature"></a>A *több-a-többhöz kapcsolatok* előzetes verziójú funkció engedélyezése
 
-A **több-a-többhöz kapcsolatok** funkció az **összetett modellek** képesség része, és előzetes verzióban van, ezért engedélyezni kell a **Power BI Desktopban**. Az **Összetett modellek** funkció engedélyezéséhez válassza a **Fájl > Lehetőségek és beállítások > Lehetőségek > Előzetes verziójú funkciók** lehetőséget, majd jelölje be az **összetett modellek** jelölőnégyzetet.
+A *több-a-többhöz kapcsolatok* funkcióját engedélyezni kell a Power BI Desktopban. Az összetett modellek engedélyezéséhez válassza a **Fájl** > **Lehetőségek és beállítások** > **Lehetőségek** > **Előzetes verziójú funkciók** elemet, majd jelölje be az **Összetett modellek** jelölőnégyzetét.
 
-![előzetes funkciók engedélyezése](media/desktop-composite-models/composite-models_02.png)
+![Az „Előzetes verziójú funkciók” panel](media/desktop-composite-models/composite-models_02.png)
 
-Ahhoz, hogy a funkció engedélyezve legyen, újra kell indítania a **Power BI Desktopot**.
+A funkció engedélyezéséhez újra kell indítania a Power BI Desktopot.
 
-![a változások érvénybe léptetéséhez újraindítás szükséges](media/desktop-composite-models/composite-models_03.png)
+![A „Funkció újraindítást igényel” ablak](media/desktop-composite-models/composite-models_03.png)
 
+## <a name="what-many-to-many-relationships-solves"></a>A *több-a-többhöz kapcsolatok* által megoldott problémák
 
-## <a name="what-many-to-many-relationships-solves"></a>A több-a-többhöz kapcsolatok által megoldott problémák
+A két tábla közötti kapcsolat már definiálva volt a Power BI-ban, mielőtt a *több-a-többhöz kapcsolatok* funkciója elérhetővé vált volna. A kapcsolatot alkotó táblák legalább egyik oszlopának tartalmaznia kellett egyedi értékeket, gyakran azonban egyetlen oszlopban sem voltak egyedi értékek. 
 
-A **több-a-többhöz kapcsolatok** elérhetővé válása előtt a Power BI-ban két tábla közötti kapcsolat definiálásakor legalább az egyik érintett oszlopnak egyedi értékeket kellett tartalmaznia. Sok esetben azonban a tábla egyetlen oszlopa sem tartalmazott egyedi értékeket. 
+Két tábla tartalmazhatott például egy-egy *Ország* oszlopot, de az *Ország* értékei egyik táblában sem voltak egyediek. Két ilyen tábla összekapcsolásához áthidaló megoldásra volt szükség. Egy ilyen áthidaló megoldás volt például a szükséges egyedi értékeket tartalmazó további táblák beépítése a modellbe. A *több-a-többhöz kapcsolatok* funkciójával ilyen táblákat közvetlenül is összekapcsolhat a **több-a-többhöz** számosságot használó kapcsolat segítségével.  
 
-A két tábla tartalmazhatott például egy-egy *Ország* oszlopot, de az *Ország* értékei egyik táblában sem egyediek. Két ilyen tábla összekapcsolásához áthidaló megoldásként például a szükséges egyedi értékeket tartalmazó további táblákat kellett beépíteni a modellbe. A **több-a-többhöz kapcsolatok** funkció más megoldást kínál, lehetővé téve az ilyen táblák közvetlen összekapcsolását egy **több-a-többhöz** számosságú kapcsolattal.  
+## <a name="use-many-to-many-relationships"></a>A *több-a-többhöz kapcsolatok* használata
 
-## <a name="using-many-to-many-relationships"></a>A több-a-többhöz kapcsolatok használata
+Amikor kapcsolatot definiál két tábla között a Power BI-ban, meg kell adnia a kapcsolat számosságát. Például a *ProductSales* (értékesítések) és *Product*&mdash;(termék) táblák közötti kapcsolat a *ProductSales[ProductCode]* és a *Product[ProductCode]*&mdash;oszlop alapján *több-az-egyhez* kapcsolatként lenne definiálva. A kapcsolatot azért definiálható így, mert egy termékhez több értékesítés is tartozhat, és a *Product* tábla *(ProductCode)* (termékkód) oszlopa egyedi. Amikor egy kapcsolat számosságaként *több-az-egyhez*, *egy-a-többhöz* vagy *egy-az-egyhez* van megadva, a Power BI ellenőrzi, hogy a megadott számosság megfelel-e a tényleges adatoknak.
 
-Amikor kapcsolatot definiál két tábla között a Power BI-ban, meg kell adnia a kapcsolat számosságát. Például a *ProductSales* (értékesítések) és *Product* (termék) táblák közötti kapcsolat (a *ProductSales[ProductCode]* és a *Product[ProductCode]* mezők alapján) **több-az-egyhez** kapcsolatként lenne definiálva, mivel egy termékhez több értékesítés is tartozhat, a *Product* tábla *(ProductCode)* (termékkód) oszlopa pedig egyedi. Amikor egy kapcsolat számosságaként **több-az-egyhez**, **egy-a-többhöz** vagy **egy-az-egyhez** van megadva, a Power BI érvényesítést végez, és ellenőrzi, hogy a megadott számosság megfelel-e a tényleges adatoknak.
+Vegyük például az alábbi képen látható egyszerű modellt:
 
-Vegyük például az alábbi ábrán látható egyszerű modellt.
+![Kapcsolat nézet](media/desktop-many-to-many-relationships/many-to-many-relationships_02.png)
 
-![kapcsolat nézet](media/desktop-many-to-many-relationships/many-to-many-relationships_02.png)
+Tegyük fel, hogy a *Product* tábla csak két sorból áll, ahogyan a kép mutatja:
 
-Tegyük fel, hogy a *Product* (termék) tábla csak két sorból áll.
+![Terméktábla vizualizációja két sorral](media/desktop-many-to-many-relationships/many-to-many-relationships_03.png)
 
-![táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_03.png)
+Tegyük fel továbbá, hogy a *Sales* (értékesítések) tábla csak négy sorból áll, köztük egy C termékhez tartozó sorból. Egy hivatkozási integritási hiba következtében a *Product* táblában a C termékhez tartozó sor nem létezik.
 
-Tegyük fel továbbá, hogy a *Sales* (termékértékesítések) tábla csak négy sorból áll, köztük (egy hivatkozás-integritási hiba következtében) a *Product* táblában nem szereplő **C** termék értékesítését leíró *Sales* rekorddal.
+![Értékesítési tábla vizualizációja négy sorral](media/desktop-many-to-many-relationships/many-to-many-relationships_04.png)
 
-![táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_04.png)
+A *ProductName* (terméknév) és a *Price* (Ár) (a *Product* táblából), valamint az egyes termékek összes mennyiségét tartalmazó *Qty* (mennyiség) (a *ProductSales* táblából) a következő módon jelenne meg: 
 
-Egy olyan vizualizáció, amely minden termékhez megmutatja a termék nevét (*ProductName*) és árát (*Price*) (a *Product* táblából), valamint az egyes termékek összes mennyiségét (*Qty*) (a *ProductSales* táblából) a következő ábrán látható módon jelenne meg: 
+![A termék nevének, árának és mennyiségének vizualizációja](media/desktop-many-to-many-relationships/many-to-many-relationships_05.png)
 
-![táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_05.png)
+Amint az előző képen látható, van egy üres *ProductName* sor, amely a C termék értékesítéséhez tartozik. Ez az üres sor a következőkre van hatással:
 
-Amint a fenti ábrán látható, a vizualizáció egyik sorában a *ProductName* mező üres. Ez tartozik a *C* termék értékesítéséhez. Ez az üres sor a következőket veszi figyelembe:
+* A *ProductSales* tábla minden olyan sorára, amelyhez nincs megfeleltethető sor a *Product* táblában. Ez egy hivatkozási integritási hiba, amelyet példánkban a *C* termék esetében látunk.
 
-* A *ProductSales* tábla minden sorát, amelynek nem felel meg sor a *Product* táblában – ez hivatkozás-integritási hiba, amit példánkban a *C* termék esetében láttunk.
+* A *ProductSales* tábla minden sorára, amely a külsőkulcs-oszlopban null értéket tartalmaz. 
 
-* A *ProductSales* tábla minden sorát, amely a külsőkulcs-oszlopban Null értéket tartalmaz. 
+A fenti okokból az üres sor mindkét esetben olyan értékesítéseknek felel meg, ahol a *ProductName* és a *Price* ismeretlen.
 
-A fenti okokból az üres sor mindkét esetben olyan eladásoknak felel meg, ahol a termék neve (*ProductName*) és ára (*Price*) ismeretlen.
+Olykor az is előfordul, hogy a táblák két oszlop alapján vannak összekapcsolva, de egyik oszlop sem egyedi. Vegyük például a következő két táblát:
 
-Olykor azonban az is előfordul, hogy a táblák két oszlop alapján vannak összekapcsolva, de egyik oszlop sem egyedi. Vegyük például a következő két táblát:
+* A *Sales* tábla államonként (*State*) mutatja az értékesítéseket, soronként tartalmazva az adott módon értékesített mennyiséget az államban. Az államok a következők: CA, WA, TX (Kalifornia, Washington és Texas). 
 
-* A *Sales* (értékesítések) tábla államonként (*State*) tartalmazza az értékesítéseket, soronként megadva az államban (CA, WA és TX államban) adott módon (Type) értékesített mennyiséget (Sales) 
+    ![Értékesítési tábla az államonkénti értékesítésekkel](media/desktop-many-to-many-relationships/many-to-many-relationships_06.png)
 
-    ![táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_06.png)
+* A *CityData* tábla városok adatait mutatja, köztük a lakosságot és az államot, amelyben megtalálhatók (beleértve CA, WA és New York államot).
 
-* A *CityData* tábla városok (City) adatait tartalmazza, köztük a lakosságot (Population) és az államot (State) (CA, WA és New York állam)
+    ![Értékesítési tábla a várossal, az állammal és a lakossággal](media/desktop-many-to-many-relationships/many-to-many-relationships_07.png)
 
-    ![táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_07.png)
+Bár mindkét táblában van *State* oszlop, és elképzelhető, hogy olyan jelentést szeretnénk készíteni, amely az értékesítéseket államonként mutatja be, az egyes államok teljes lakosságával együtt, van egy probléma: a *State* oszlop egyik táblában sem egyedi. 
 
-Bár mindkét táblában van *State* (állam) oszlop, és elképzelhető, hogy az értékesítéseket (*Sales*) államonként (*State*), az egyes államok lakosságával együtt bemutató jelentést szeretnénk készíteni, van egy probléma: a *State* oszlop egyik táblában sem egyedi. 
+## <a name="the-previous-workaround"></a>A korábbi áthidaló megoldás
 
-## <a name="the-prior-workaround"></a>A korábbi áthidaló megoldás
+A Power BI Desktop 2018. júliusi kiadását megelőző verziókban a felhasználók nem tudtak ezek között a táblák között közvetlen kapcsolatot létrehozni. Egy gyakran alkalmazott áthidaló megoldás a következő lépésekből állt:
 
-A **Power BI Desktopnak** a 2018. júliusi kiadás előtti verzióiban ezek között a táblák között nem lehetett közvetlen kapcsolatot létrehozni. A probléma gyakran alkalmazott áthidaló megoldása a következő lépésekből állt:
+* Létre kellett hozni egy harmadik táblát, amely csak az egyedi állam- (*State*) azonosítókat tartalmazta. A tábla a következők közül bármelyik lehetett:
+  * Egy számított tábla (Data Analysis Expressions-referencia [DAX] használatával definiálva).
+  * Egy Lekérdezésszerkesztőben definiált lekérdezésen alapuló tábla, amely meg tudta jeleníteni a valamelyik táblából kinyert egyedi azonosítókat.
+  * A teljes kombinált készlet.
 
-* Egy harmadik, csak az egyedi államazonosítókat (*State*) tartalmazó tábla létrehozása. Ez lehetett (a DAX használatával definiált) számított tábla, vagy a **Lekérdezésszerkesztőben** megadott lekérdezéssel létrehozott tábla, amely a táblák egyikéből kinyert egyedi azonosítókat, vagy a két halmaz teljes unióját tartalmazta.
+* Össze kellett kapcsolni a két eredeti és az új táblát a szokásos *több-az-egyhez* kapcsolatokkal.
 
-* A két eredeti tábla és az új tábla összekapcsolása a szokásos **több-az-egyhez* kapcsolatokkal.
+Ez az áthidaló tábla maradhatott látható, de el is lehetett rejteni, hogy ne jelenjen meg a **Mezők** listában. A tábla elrejtésekor a *több-az-egyhez* kapcsolatok gyakran kétirányú szűrésre voltak beállítva, és bármelyik tábla *State* mezőjét használni lehetett. Ezt aztán keresztszűrés vitt át a másik táblára. Ez a megközelítés az alábbi képen látható:
 
-Ez az áthidaló tábla maradhatott látható, de el is lehetett rejteni, hogy nem jelenjen meg a mezőlistában. Az utóbbi esetben a **több-az-egyhez** kapcsolat általában kétirányú szűrésre volt beállítva, hogy bármelyik tábla *State* mezője használható legyen, amelyet aztán keresztszűrés vitt át a másik táblára. Ezt a kerülő megoldást mutatja be a **Kapcsolat nézetről** készült alábbi kép.
+![Kapcsolat nézet](media/desktop-many-to-many-relationships/many-to-many-relationships_08.png)
 
-![kapcsolat nézet](media/desktop-many-to-many-relationships/many-to-many-relationships_08.png)
+Az államokat (*State*) (a *CityData* táblából) a teljes lakossággal (*Population*) és az összes értékesítéssel (*Sales*) együtt megjelenítő vizualizáció ekkor az alábbihoz hasonló módon néz ki:
 
-Az államokat (*State*) (a *CityData* táblából) a teljes lakossággal (*Population*) és az összes értékesített mennyiséggel (*Sales*) együtt bemutató vizualizáció ekkor az alábbihoz hasonló lenne.
-
-![táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
-
-Figyelje meg, hogy mivel ez az áthidaló megoldás az államot a *CityData* táblából veszi, csak az ebben a táblában szereplő *State* értékek jelennek meg (TX állam így kimaradt). Ezen felül, a **több-az-egyhez** kapcsolatoktól eltérően, bár az összeg sor minden *Sales* értéket figyelembe vesz (a TX államhoz tartozókat is), a részletezésben nincs a nem párosított soroknak megfelelő üres sor. Ugyanígy azoknak a *Sales* értékeknek sem felelne meg üres sor, amelyekhez Null érték tartozik a *State* oszlopban.
-
-Ha a *City* (város) mező is hozzá lenne adva a vizualizációhoz, akkor bár az egyes *városok* lakossága ismert, a *City* mellett feltüntetett *Sales* értékek egyszerűen a megfelelő államhoz (*State*) tartozó *Sales* értékek ismétlései lennének (ez történik olyan oszlop szerinti csoportosítás esetén, amelyhez nem kapcsolódik összesíthető érték). Ezt mutatja be az alábbi ábra.
-
-![táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
-
-Ha az áthidaló megoldáshoz létrehozott az új tábla *Sales* oszlopa az összes *States* mező uniójaként volna definiálva, és meg lenne jelenítve a mezőlistában, akkor ugyanez a vizualizáció, amely a *State* (az új tábla alapján) mellett a teljes lakosságot (*Population*) és a teljes értékesített mennyiséget (*Sales*) mutatja be, a következőképpen nézne ki.
-
-![táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
-
-Ebben az esetben a vizualizációban *TX* (*Sales* értékkel, de ismeretlen lakossággal) és *New York* (ismert lakossággal de *Sales* érték nélkül) is szerepelne. 
-
-Mint látható, ez az áthidaló megoldás nem optimális, és számos problémával jár. A **több-a-többhöz kapcsolatok** létrehozásának célja ezeknek a problémáknak a megoldása, a következő bekezdésben leírtak szerint.
-
-## <a name="using-many-to-many-relationships-instead-of-the-workaround"></a>Több-a-többhöz kapcsolatok használata áthidaló megoldás helyett
-
-A **Power BI Desktop** 2018. júliusi verziójától kezdve az előző bekezdésekben leírt táblák közvetlenül összekapcsolhatók, és nincs többé szükség áthidaló megoldásokra. A kapcsolatok mostantól **több-a-többhöz** számosságúra állíthatók, ezzel jelezve, hogy egyik tábla sem egyedi értékeket tartalmaz. Ilyen kapcsolatokhoz is megadható, hogy melyik tábla szűri a másikat, vagy hogy a szűrés kétirányú legyen, és a táblák kölcsönösen szűrjék egymást.  
+![Táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
 
 > [!NOTE]
-> A **több-a-többhöz** kapcsolatok létrehozásának lehetősége előzetes verzióban érhető el, és amíg előzetes verziójú, addig a **több-a-többhöz** kapcsolatokat használó modellek nem tehetők közzé a Power BI szolgáltatásban. 
+> Mivel ez az áthidaló megoldás az államot a *CityData* táblából emeli ki, csak az ebben a táblában szereplő államok jelennek meg, ezért TX kimaradt. Ezen felül, a *több-az-egyhez* kapcsolatoktól eltérően, bár az összegző sor minden *Sales* értéket figyelembe vesz (a TX államhoz tartozókat is), a részletezésben nincs a nem egyező soroknak megfelelő üres sor. Ugyanígy azoknak a *Sales* értékeknek sem felelne meg üres sor, amelyekhez null érték tartozik a *State* oszlopban.
 
-A **Power BI Desktop** alapértelmezés szerint **több-a-többhöz** számosságot állít be, ha azt észleli, hogy egyik tábla sem egyedi értékeket tartalmaz a kapcsolatban részt vevő oszlopokban. Ilyen esetben figyelmeztetés jelenik meg, amelyben meg kell erősíteni, hogy a kapcsolat beállítása a kívánt viselkedés, nem pedig egy adathiba nem szándékos következménye. 
+Ha a *City* oszlopot is hozzáadja a vizualizációhoz, akkor bár az egyes *városok* lakossága ismert, a *City* mellett feltüntetett *Sales* értékek a megfelelő államhoz (*State*) tartozó *Sales* értékek ismétlései lennének. Általában ez történik olyan oszlop szerinti csoportosítás esetén, amelyhez nem kapcsolódik összesíthető érték. Ezt mutatja be az alábbi ábra:
 
-Amikor például közvetlen kapcsolatot hozunk létre a *CityData* és a *Sales* táblák között, ahol a szűrés a *CityData* felől a *Sales* táblára irányul, akkor az alábbi ábrán látható figyelmeztetés jelenik meg.
+![Táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
 
-![Kapcsolat szerkesztése párbeszédpanel](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+Ha az áthidaló megoldásban az új *Sales* táblát az összes *States* mező kombinációjaként definiáljuk, és láthatóvá tesszük a **mezőlistában**, akkor ugyanez a vizualizáció megjelenítené az államok (*State*, az új táblán) mellett a teljes lakosságot (*Population*) és a teljes értékesített mennyiséget (*Sales*), ahogy az alábbi ábra mutatja:
 
-Az így keletkező **Kapcsolat nézetben** ekkor a két tábla közötti közvetlen **több-a-többhöz** kapcsolat látszana. A **Mezők** listában való megjelenés és az ez utáni viselkedés a vizualizációk létrehozásakor ugyanolyan lesz, mint az előző bekezdésben leírt áthidaló megoldásnál, ha a kiegészítő tábla (benne az egyedi *Sales* értékekkel) nincs láthatóvá téve. Egy, a *States* (államok) értékeket a teljes lakossággal és értékesített mennyiséggel együtt bemutató vizualizáció például az áthidaló megoldást leíró előző bekezdésben látotthoz hasonlóan, az alábbi ábrán látható módon jelenne meg.
+![Táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
 
-![táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
+Amint látható, így a *TX*&mdash;*Sales* adatokkal, de ismeretlen *Population* adatokkal&mdash;, és *New York*&mdash;ismert *Population* adatokkal, de *Sales* adatok&mdash;nélkül szintén szerepelne. Ez az áthidaló megoldás nem optimális, és számos problémával jár. A több-a-többhöz kapcsolatok létrehozásának célja ezeknek a problémáknak a megoldása, a következő bekezdésben leírtak szerint.
 
-A **több-a-többhöz** kapcsolatok ás a gyakoribb **több-az-egyhez** kapcsolatok közötti fő eltérések tehát a következők.
+## <a name="use-many-to-many-relationships-instead-of-the-workaround"></a>*Több-a-többhöz kapcsolatok* használata az áthidaló megoldás helyett
 
-* A megjelenő értékek között nincs üres sor, amely a másik tábla párosítatlan sorainak felelne meg, sem azoknak, amelyekben a kapcsolatban használt oszlop Null értéket tartalmaz a másik táblában.
-* A *RELATED()* függvény nem használható (mivel egynél több sor is kapcsolódhat)
-* Az *ALL()* függvény használata egy táblán nem távolítja el a vele **több-a-többhöz** kapcsolatban álló más táblákra alkalmazott szűrőket. Az alábbi módon definiált mérték például nem távolítaná el az előző példában a kapcsolódó *CityData* tábla oszlopaira alkalmazott szűrőket:
+A Power BI Desktop 2018. júliusi verziójától kezdve az előzőekben leírtakhoz hasonlóan közvetlenül összekapcsolhatók a táblák, anélkül, hogy áthidaló megoldásokra lenne szükség. A kapcsolatokat mostantól *több-a-többhöz* számosságúra is lehet állítani. Ez a beállítás jelzi, hogy egyik tábla sem tartalmaz egyedi értékeket. Ilyen kapcsolatoknál is felügyelheti, hogy melyik tábla szűrje a másikat, vagy alkalmazhat kétirányú szűrést, hogy a táblák kölcsönösen szűrjék egymást.  
 
-    ![példaszkript](media/desktop-many-to-many-relationships/many-to-many-relationships_13.png)
+> [!NOTE]
+> A *több-a-többhöz kapcsolatok* létrehozásának képessége egyelőre előzetes verzióban érhető el. Amíg előzetes verzióban van, nem lehet közzétenni a *több-a-többhöz kapcsolatokat* használó Power BI-szolgáltatásmodellekhez. 
 
-    Emiatt a *State*, *Sales*, és *Sales total* értékeket feltüntető vizualizáció az alábbi eredményt mutatná:
+A Power BI Desktop alapértelmezés szerint *több-a-többhöz* számosságot állít be, ha a meghatározása szerint egyik tábla sem tartalmaz egyedi értékeket a kapcsolatban részt vevő oszlopokban. Ilyen esetekben figyelmeztetés jelenik meg annak megerősítésére, hogy a kapcsolat beállítása szándékos, nem pedig egy adathiba nem várt következménye. 
 
-    ![táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_14.png)
+Amikor például közvetlen kapcsolatot hozunk létre a *CityData* és a *Sales*&mdash;táblák között, ahol a szűrés a *CityData* felől a *Sales*&mdash;táblára irányul, akkor a Power BI Desktop megjeleníti a **Kapcsolat szerkesztése** ablakot, ahogy az alábbi kép is mutatja:
 
-Éppen ezért nagy gonddal kell eljárni, hogy az *ALL(\<Tábla>)* függvényt használó számítások, amilyen a *végösszeg %-a*, a kívánt eredményt adják. 
+![A „Kapcsolat szerkesztése” ablak](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+
+Az így keletkező **Kapcsolat** nézet ekkor a két tábla közötti közvetlen több-a-többhöz kapcsolatot jelenítené meg. A táblák megjelenése a **Mezők** listában, valamint a vizualizációk létrehozása utáni viselkedésük hasonló lesz ahhoz, mint amikor az áthidaló megoldást alkalmaztuk. Az áthidaló megoldásban az egyedi *State* adatokat megjelenítő plusz tábla nincs láthatóvá téve. Például egy, a *States*, a *Population* és a *Sales* adatait bemutató vizualizáció az előző szakaszban leírtaknak megfelelően a következő módon jelenne meg:
+
+![Táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
+
+A *több-a-többhöz* kapcsolatok és a gyakoribb *több-az-egyhez* kapcsolatok közötti főbb eltérések a következők:
+
+* A megjelenő értékek nem tartalmaznak üres sort, amely a másik tábla nem egyező sorainak felel meg. Olyan soroknak megfelelő értékek sincsenek, ahol a kapcsolatban használt oszlop a másik táblában null értéket tartalmaz.
+* A `RELATED()` függvény nem használható, mert egynél több sor is kapcsolódhat.
+* Az `ALL()` függvény használata egy táblán nem távolítja el a vele több-a-többhöz kapcsolatban álló, más táblákra alkalmazott szűrőket. Az előző példában az alábbi szkriptben látható módon definiált mérték nem távolítaná el a kapcsolódó *CityData* tábla oszlopaira alkalmazott szűrőket:
+
+    ![Példaszkript](media/desktop-many-to-many-relationships/many-to-many-relationships_13.png)
+
+    Egy *State*, *Sales* és *Sales total* (összes értékesítés) adatokat feltüntető vizualizáció az alábbi eredményt mutatná:
+
+    ![Táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_14.png)
+
+Az előbbi eltéréseket szem előtt tartva győződjön meg arról, hogy az `ALL(\<Table>)` függvényt használó számítások, amilyen a *végösszeg %-a*, a kívánt eredményt adják. 
 
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 
-A **több-a-többhöz kapcsolatoknak** és az **összetett modelleknek** erre a verziójára érvényes néhány korlátozás.
+A *több-a-többhöz kapcsolatoknak* és az összetett modelleknek erre a verziójára érvényes néhány korlátozás.
 
-Az alábbi Live Connect- (többdimenziós) források nem használhatók **összetett modellekkel**:
+Az alábbi Live Connect- (többdimenziós) források nem használhatók összetett modellekkel:
 
 * SAP HANA
 * SAP Business Warehouse
@@ -166,19 +163,14 @@ Az alábbi Live Connect- (többdimenziós) források nem használhatók **össze
 * Power BI-adathalmazok
 * Azure Analysis Services
 
-Ha ezekhez a többdimenziós forrásokhoz a DirectQuery használatával csatlakozik, nem tud ugyanakkor más DirectQuery-forráshoz is csatlakozni, és importált adatokkal kombinálni sem.
+Ha ezekhez a többdimenziós forrásokhoz a DirectQuery használatával csatlakozik, nem tud más DirectQuery-forráshoz csatlakozni vagy importált adatokkal kombinálni.
 
-A DirectQuery használatára jelenleg vonatkozó korlátozások a **több-a-többhöz kapcsolatok** használatára is érvényesek. Sok ilyen korlátozás jelenleg táblánként értendő, a tábla **tárolási módjától** függően. Egy importált tábla egy számított oszlopa például hivatkozhat más táblákra, egy DirectQuery-tábla számított oszlopai viszont továbbra is csak a táblán belüli oszlopokra hivatkozhatnak. Más korlátozások a modell egészére vonatkoznak, ha a modellen belül bármelyik tábla DirectQuery módban van. A **QuickInsights** és a **Q&A** funkciók például nem érhetők el a modellben, ha a táblák bármelyikének **tárolási módja** DirectQuery. 
+A DirectQuery használatára vonatkozó korlátozások a *több-a-többhöz kapcsolatokra* is érvényesek. Sok ilyen korlátozás jelenleg táblánként értendő, a tábla tárolási módjától függően. Egy importált tábla egy számított oszlopa például hivatkozhat más táblákra, egy DirectQuery-tábla számított oszlopai viszont továbbra is csak a táblán belüli oszlopokra hivatkozhatnak. Más korlátozások a modell egészére vonatkoznak, ha a modellen belül bármelyik tábla DirectQuery módban van. A QuickInsights- és a Q&A-funkciók például nem érhetők el a modellben, ha a táblák bármelyikének tárolási módja DirectQuery. 
 
 ## <a name="next-steps"></a>Következő lépések
 
-Az alábbi cikkek bővebben ismertetik az összetett modelleket, és a DirectQuery részletes leírását is tartalmazzák.
-
+Az összetett modellekkel és a DirectQueryvel kapcsolatos további információkért tekintse meg a következő cikkeket:
 * [Összetett modellek a Power BI Desktopban (előzetes verzió)](desktop-composite-models.md)
 * [Tárolási mód a Power BI Desktopban (előzetes verzió)](desktop-storage-mode.md)
-
-A DirectQuery-vel kapcsolatos cikkek:
-
-* [DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
-* [A DirectQuery által támogatott adatforrások a Power BI-ban](desktop-directquery-data-sources.md)
-
+* [A DirectQuery használata a Power BI Desktopban](desktop-directquery-about.md)
+* [A DirectQuery által támogatott adatforrások a Power BI Desktopban](desktop-directquery-data-sources.md)

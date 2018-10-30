@@ -1,61 +1,69 @@
 ---
 title: A Power BI Premium megvásárlása
-description: Megtudhatja, hogyan kezelheti a Power BI Premiumot, és hogyan engedélyezheti a tartalmakhoz való hozzáférést a teljes szervezet számára.
+description: Megtudhatja, hogyan vásárolhatja meg a Power BI Premiumot, és hogyan engedélyezheti a tartalmakhoz való hozzáférést a teljes cég számára.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/17/2017
+ms.date: 10/20/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 2789f2e3e8198ddc0363fb07488f5fe8f39441a6
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: e2d2f0bd73d17d8d987dab9f3b3396bf7845d16e
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "34297377"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641413"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>A Power BI Premium megvásárlása
-Megtudhatja, hogyan vásárolhat Power BI Premium-kapacitást a szervezete számára.
+
+Ez a cikk azt ismerteti, hogyan vásárolhat Power BI Premium-kapacitást cége számára. Power BI Premium-kapacitást az Office 365 Felügyeleti központban vásárolhat, a [kapacitások felügyeletéhez](service-admin-premium-manage.md) pedig a Power BI felügyeleti portált használja.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/NkvYs5Qp4iA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Kapacitás-csomópontot a Power BI Premiumhoz az Office 365 Felügyeleti központban vásárolhat. Emellett a szervezetében a Premium kapacitás-termékváltozatok (P1-től P3-ig) bármilyen együttesét használhatja. Ezek különböző erőforrás-funkciókat nyújtanak.
-
-További információ Power BI Premiumról: [Power BI Premium – mi ez?](service-premium.md). A Power BI jelenlegi díjszabását a [Power BI díjszabásának oldalán](https://powerbi.microsoft.com/pricing/) tekintheti meg. A Power BI Premium költségeit megtervezheti a [Power BI Premium díjszámítójával](https://powerbi.microsoft.com/calculator/).
+További információt a Power BI Premiumról a [Mi az a Power BI Premium?](service-premium.md) című cikkben talál. A jelenlegi díjszabással kapcsolatos és további tervezési információkat a [Power BI díjszabását ismertető oldalon](https://powerbi.microsoft.com/pricing/) és a [Power BI Premium-kalkulátor](https://powerbi.microsoft.com/calculator/) oldalán talál.
 
 > [!IMPORTANT]
-> A tartalmak szerzőinek továbbra is Power BI Pro-licencre lesz szükségük, akkor is, ha Ön megvásárolja a Power BI Premiumot.
-> 
-> 
+> A tartalmak szerzőinek továbbra is Power BI Pro-licencre lesz szükségük, abban az esetben is, ha cége a Power BI Premiumot használja. Legalább egy Power BI Pro-licencet meg kell vásárolnia cége számára.
+>
+>Egy Premium-előfizetés lejárta után 30 napig a kapacitása még teljes mértékben a rendelkezésére áll. Ezután tartalmai megosztott kapacitásra állnak vissza. Az 1 GB-nál nagyobb méretű modellek nem támogatottak a megosztott kapacitásban.
 
 ## <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Új bérlő létrehozása a Power BI Premium P1 csomaggal
-Ha nem rendelkezik meglévő bérlővel, és létre szeretne hozni egyet, ezzel egy időben megvásárolhatja a Power BI Premiumot. Az alábbi hivatkozás végigvezeti az Office 365-höz használandó új bérlő létrehozásának lépésein, és ezen keresztül megvásárolhatja a Power BI Premiumot is. A bérlő létrehozása után egy Power BI Pro-licencet kell vásárolnia egy felhasználónak. A bérlő létrehozásakor automatikusan Ön lesz a globális rendszergazdája.
 
-A vásárlásról további információt itt találhat: [Power BI Premium P1-ajánlat](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1).
+Ha nem rendelkezik meglévő bérlővel, és létre szeretne hozni egyet, ezzel egy időben megvásárolhatja a Power BI Premiumot. A következő hivatkozás végigvezeti egy új bérlő létrehozásának folyamatán, és a segítségével megvásárolhatja a Power BI Premiumot: [Power BI Premium P1 ajánlat](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1).
 
-![](media/service-admin-premium-purchase/premium-purchase-with-tenant.png)
+![Power BI Premium P1 csomag](media/service-admin-premium-purchase/premium-purchase-with-tenant.png)
+
+Amikor létrehoz egy bérlőt, automatikusan hozzá lesz rendelve a bérlőhöz tartozó Office 365 globális rendszergazdai szerepkörhöz.
 
 ## <a name="purchase-a-power-bi-premium-capacity-for-an-existing-organization"></a>Power BI Premium-kapacitás vásárlása meglévő szervezet számára
-Ha egy meglévő szervezet tagja, globális vagy számlázási rendszergazdának kell lennie az előfizetések és licencek vásárlásához. További információ: [Az Office 365 rendszergazdai szerepkörei](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
-Prémium-kapacitás vásárlásához az alábbi lépéseket kell elvégeznie.
+Ha rendelkezik egy meglévő céggel, előfizetések és licencek vásárlásához az Office 365 globális rendszergazdai szerepkörrel vagy a számlázási rendszergazdai szerepkörrel kell rendelkeznie. További információ: [Az Office 365 rendszergazdai szerepkörei](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
-1. A Power BI szolgáltatásban válassza az **Office 365-alkalmazásválasztó** > **Felügyelet** lehetőséget. Másik lehetőségként megnyithatja az Office 365 Felügyeleti központját. Ehhez nyissa meg a(z) https://portal.office.com oldalt, majd válassza a **Felügyelet** lehetőséget.
-   
-    ![](media/service-admin-premium-purchase/o365-app-picker.png)
-2. Válassza a **Számlázás** > **Szolgáltatások vásárlása** lehetőséget.
-3. Az **Egyéb csomagok** területen keresse meg a Power BI Premium ajánlatait. Itt az alábbi lehetőségek közül választhat: P1-től P3-ig, valamint EM3 és P1 (havonta megújuló).
-4. Helyezze a kurzort a **három pont(…)**  fölé, majd válassza a **Vásárlás** lehetőséget.
-   
-    ![](media/service-admin-premium-purchase/premium-purchase.png)
-5. A vásárlás megerősítéséhez kövesse a lépéseket.
+Premium-kapacitás vásárlásához kövesse az alábbi lépéseket.
 
-Az alábbi hivatkozásokkal közvetlenül az egyes elemek vásárlási oldalára kerülhet. További információ a termékváltozatokról: [Power BI Premium – mi ez?](service-premium.md#premiumskus).
+1. A Power BI szolgáltatásban válassza az Office 365 alkalmazásválasztót, majd a **Rendszergazda** lehetőséget.
 
-A Power BI Premium termékváltozatainak megvásárlásához ***globális vagy számlázási rendszergazdának kell lennie*** a bérlőben. Ha Ön nem rendszergazda, az alábbi hivatkozásokra kattintva hibaüzenet jelenik meg.
+    ![Office 365 alkalmazásválasztó](media/service-admin-premium-purchase/o365-app-picker.png)
+
+    Másik lehetőségként megnyithatja az Office 365 Felügyeleti központját. Ehhez nyissa meg a(z) https://portal.office.com oldalt, majd válassza a **Felügyelet** lehetőséget.
+
+1. Válassza a **Számlázás** > **Szolgáltatások vásárlása** lehetőséget.
+
+1. Az **Egyéb csomagok** területen keresse meg a Power BI Premium ajánlatait. Itt az alábbi lehetőségek közül választhat: P1-től P3-ig, valamint EM3 és P1 (havonta megújuló).
+
+1. Helyezze a kurzort a három pont fölé (**. . .**), majd válassza a **Vásárlás** lehetőséget.
+
+    ![Vásárlás](media/service-admin-premium-purchase/premium-purchase.png)
+
+1. A vásárlás megerősítéséhez kövesse a lépéseket.
+
+A termékváltozat vásárlási oldalának közvetlen eléréséhez választhatja az alábbi hivatkozások egyikét is. További információt a termékváltozatokról a [Mi az a Power BI Premium?](service-premium.md#premiumskus) című cikkben talál.
+
+> [!IMPORTANT]
+> Az alábbi hivatkozások használata hibát ad vissza, ha nem rendelkezik az Office 365 globális rendszergazdai szerepkörrel vagy a számlázási rendszergazdai szerepkörrel.
 
 | Közvetlen vásárlási hivatkozások |
 | --- |
@@ -65,58 +73,58 @@ A Power BI Premium termékváltozatainak megvásárlásához ***globális vagy s
 | [P2 SKU](https://portal.office.com/commerce/completeorder.aspx?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |
 | [P3 SKU](https://portal.office.com/commerce/completeorder.aspx?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |
 
-A vásárlás befejezése után a Szolgáltatások vásárlása képernyőn megvásároltként és aktívan jelenik meg az elem.
+A vásárlás befejezése után a **Szolgáltatások vásárlása** oldalon a termék megvásároltként és aktívként jelenik meg.
 
-![](media/service-admin-premium-purchase/premium-purchased.png)
+![Power BI Premium megvásárlása esetén](media/service-admin-premium-purchase/premium-purchased.png)
 
-Ezt a kapacitást a Power BI felügyeleti központban kezelheti. További információ: [A Power BI Premium kezelése](service-admin-premium-manage.md).
+## <a name="purchase-additional-capacities"></a>További kapacitások vásárlása
 
-## <a name="purchase-more-capacities"></a>További kapacitások vásárlása
-A Power BI felügyeleti portálja **Prémium szintű beállítások** szakaszában – amennyiben Ön rendszergazda – megjelenik a **Továbbiak vásárlása** gomb. Erre a gombra kattintva visszatér az Office 365 portálra. Az Office 365 Felügyeleti központjában az alábbi műveletet végezheti el.
+Most, hogy rendelkezik egy kapacitással, az igények növekedésének megfelelően hozzáadhat továbbiakat is. Cégében a Premium-kapacitások termékváltozatainak bármely kombinációját (P1-től P3-ig) használhatja. A különböző termékváltozatok különböző erőforrás-képességeket biztosítanak.
 
-1. Válassza a **Számlázás** > **Szolgáltatások vásárlása** lehetőséget.
-2. Keresse meg azt a Power BI Premium-elemet, amelyből további példányokat szeretne vásárolni az **Egyéb csomagok** területen.
-3. Helyezze a kurzort a **három pont(…)**  fölé, majd válassza a **Licencmennyiség módosítása** lehetőséget.
-   
-    ![](media/service-admin-premium-purchase/premium-purchase-more.png)
-4. Adja meg az elemhez használni kívánt példányok számát. Ha kész, válassza a **Küldés** lehetőséget.
-   
+1. Az Office 365 Felügyeleti központjában válassza a **Számlázás** > **Szolgáltatások vásárlása** lehetőséget.
+
+1. Keresse meg azt a Power BI Premium-elemet, amelyből további példányokat szeretne vásárolni az **Egyéb csomagok** területen.
+
+1. Helyezze a kurzort a **három pont(…)**  fölé, majd válassza a **Licencmennyiség módosítása** lehetőséget.
+
+    ![Licenc mennyiségének módosítása](media/service-admin-premium-purchase/premium-purchase-more.png)
+
+1. Adja meg az elemhez használni kívánt példányok számát. Ha kész, válassza a **Küldés** lehetőséget.
+
    > [!IMPORTANT]
-   > A **Küldés** lehetőségre kattintva megterheljük a fájlhoz tartozó bankkártyát.
-   > 
-   > 
+   > A **Küldés** lehetőség választása megterheli a nyilvántartásba vett hitelkártyát.
 
 A **Szolgáltatások vásárlása** lapon ekkor megjelenik a példányok száma. A Power BI felügyeleti portáljának **Kapacitásbeállítások** területén az elérhető virtuális magok megjelenítik az új kapacitást.
 
 ![A Power BI Premium-kapacitáshoz elérhető virtuális magok](media/service-admin-premium-purchase/premium-capacities.png)
 
-Ezt a kapacitást a Power BI felügyeleti központban kezelheti. További információ: [A Power BI Premium kezelése](service-admin-premium-manage.md).
-
 ## <a name="cancel-your-subscription"></a>Az előfizetés megszüntetése
+
 Az előfizetést az Office 365 Felügyeleti központjában szüntetheti meg. A Premium-előfizetés megszüntetéséhez végezze el az alábbi műveleteket.
 
-![](media/service-admin-premium-purchase/premium-cancel-subscription.png "Premium-előfizetés megszüntetése")
+![Előfizetés megszüntetése](media/service-admin-premium-purchase/premium-cancel-subscription.png)
 
 1. Nyissa meg az Office 365 Felügyeleti központot.
-2. Válassza a **Számlázás** > **Előfizetések** lehetőséget.
-3. Válassza ki a listából a Power BI Premium-előfizetését.
-4. A **További műveletek** legördülő menüben válassza az **Előfizetés megszüntetése** lehetőséget.
-   
-    ![](media/service-admin-premium-purchase/o365-more-actions.png)
-5. Az **Előfizetés megszüntetése** lapon tájékoztatást kap arról, hogy kell-e [idő előtti megszüntetésért felszámolt díjat](https://support.office.com/article/early-termination-fees-6487d4de-401a-466f-8bc3-c0beb5cc40d3) fizetnie. Ezen a lapon azt is megtudhatja, hogy mikor törlődnek az előfizetés adatai.
-6. Olvassa végig az adatokat, és ha folytatni kívánja, válassza az **Előfizetés megszüntetése** lehetőséget.
+
+1. Válassza a **Számlázás** > **Előfizetések** lehetőséget.
+
+1. Válassza ki a listából a Power BI Premium-előfizetését.
+
+1. A **További műveletek** legördülő menüben válassza az **Előfizetés megszüntetése** lehetőséget.
+
+    ![További műveletek](media/service-admin-premium-purchase/o365-more-actions.png)
+
+1. Az **Előfizetés megszüntetése** lapon tájékoztatást kap arról, hogy kell-e [idő előtti megszüntetésért felszámolt díjat](https://support.office.com/article/early-termination-fees-6487d4de-401a-466f-8bc3-c0beb5cc40d3) fizetnie. Ezen a lapon azt is megtudhatja, hogy mikor törlődnek az előfizetés adatai.
+
+1. Olvassa végig az adatokat, és ha folytatni kívánja, válassza az **Előfizetés megszüntetése** lehetőséget.
 
 ## <a name="next-steps"></a>Következő lépések
-[A Power BI díjszabási oldala](https://powerbi.microsoft.com/pricing/)  
-[Power BI Premium díjszámító](https://powerbi.microsoft.com/calculator/)  
-[Power BI Premium – mi ez?](service-premium.md)  
-[A Power BI Premium kezelése](service-admin-premium-manage.md)  
-[Power BI Premium – gyakori kérdések](service-premium-faq.md)  
-[A Power BI Premium kiadási megjegyzései](service-premium-release-notes.md)  
-[Microsoft Power BI Premium-tanulmány](https://aka.ms/pbipremiumwhitepaper)  
-[Egy Power BI vállalati bevezetését ismertető tanulmány tervezése](https://aka.ms/pbienterprisedeploy)  
-[Power BI felügyeleti portál](service-admin-portal.md)  
-[A Power BI felügyelete a szervezetnél](service-admin-administering-power-bi-in-your-organization.md)  
+
+[Power BI díjszabási oldal](https://powerbi.microsoft.com/pricing/)
+[Power BI Premium-kalkulátor](https://powerbi.microsoft.com/calculator/)
+[Mi az a Power BI Premium?](service-premium.md)
+[Power BI Premium – GYIK](service-premium-faq.md)
+[Microsoft Power BI Premium-tanulmány](https://aka.ms/pbipremiumwhitepaper)
+[A Power BI nagyvállalati üzembehelyezési előkészületeit bemutató tanulmány](https://aka.ms/pbienterprisedeploy)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-

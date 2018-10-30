@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/13/2018
+ms.date: 10/18/2018
 ms.author: maikelson
-ms.openlocfilehash: 8a20e5b9807f9495183ebb1e6bd396e68f02c1a1
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 126baf11492f05228d1e0637e27b5f2caa8390a3
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137595"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473957"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -22,9 +22,7 @@ Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket 
 
 ## <a name="upcoming-webinars"></a>Közelgő webináriumok
 
-Még nincs tervezett webinárium. Látogasson vissza később közelgő eseményekért.
-
->[Részvétel a Power BI-közösség közelgő webináriumain](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
+>[A Power BI-közösség közelgő webináriumai](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Kiemelt előadások
 
@@ -34,21 +32,29 @@ Igény szerint elérhető népszerű előadások az első lépésekhez
 <br>by Miguel Martinez
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
 
-**Power BI tippek, trükkök és eszközök a PowerBI.Tips tulajdonosaitól**
-<br>írta: Mike Carlo és Seth Bauer
-<br>[Megtekintés](https://www.youtube.com/watch?v=fnj1_e3HXow)
-
 **Ismerje meg 20 percben, hogyan igazodhat el a Power BI-irányítópulton**
 <br>by Miguel Martinez
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
+
+**A Microsoft Power BI-t használ – pénzügyi tervezés és elemzés egyszerűen**
+<br>előadó: Cory Hrncirik és Miguel Martinez
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Tegye Power BI-adatait láthatóvá: alapvető diagramtípusok és a használatuk**
+<br>by Miranda Li
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+
+**Power BI, Excel és Office 365: nagyvállalati adatok optimalizálása**
+<br>előadó: Olaf Hubel és Miguel Martinez
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
 **Egyszerűen meggyőző – Tippek a jobb vizualizációk tervezéséhez**
 <br>by Miranda Li
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**Együtt még jobb: A Power BI öt előnye az Excel-felhasználók számára**
-<br>Készítette Carlos Otero és Miguel Martinez
-<br>[Regisztráció és megtekintés](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
+**Power BI tippek, trükkök és eszközök a PowerBI.Tips tulajdonosaitól**
+<br>írta: Mike Carlo és Seth Bauer
+<br>[Megtekintés](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
 >[Böngészés közösségi szakértőink felvételről megtekinthető előadásainak könyvtárában](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
@@ -61,6 +67,10 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 **Útmutató: Látványos Power BI-jelentések tervezése**
 <br>Készítette Charles Sterling
 <br>[Megtekintés](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**Együtt még jobb: A Power BI öt előnye az Excel-felhasználók számára**
+<br>Készítette Carlos Otero és Miguel Martinez
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
 
 **Ismerje meg 20 percben a Power BI Embedded alkalmazást**
 <br>Készítette: Megan Asarrane és Colin Murphy

@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2536ea34cadae5f348e619d713420787db4c467a
-ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
+ms.openlocfilehash: 75e760c1ad808d05986de46cf2bc427bb078e3ce
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799046"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101278"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Egyéni adatösszekötők használata a helyszíni adatátjáróval
 
@@ -56,6 +56,6 @@ Ha ezt a beállítást engedélyezte, akkor egyéni összekötői megjelennek az
 * [Helyszíni adatátjáró – részletes](service-gateway-onprem-indepth.md)  
 * [Helyszíni adatátjáró (személyes mód)](service-gateway-personal-mode.md)
 * [Helyszíni adatátjáró proxybeállításainak konfigurálása](service-gateway-proxy.md)  
-* [Kerberos használata egyszeri bejelentkezésre (SSO) a Power BI-ból a helyszíni adatforrásokba](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)  
+* [Kerberos használata egyszeri bejelentkezésre (SSO) a Power BI-ból a helyszíni adatforrásokba](service-gateway-sso-kerberos.md)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

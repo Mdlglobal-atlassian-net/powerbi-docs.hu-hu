@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: bfc9b054f9a34757361bf4ab1803aa6904471167
-ms.sourcegitcommit: fb29c4bf7e598f962b453ac68091ca2189d6ae3b
+ms.openlocfilehash: 41f48e886c376f6cc00a76313538e5a6b9ac1c3b
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43380313"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641942"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
@@ -40,7 +40,7 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
             - Az egyéni vizualizációk visszaváltanak a kiszolgálói API jelenlegi verziójával kompatibilis előző verzióra (ha rendelkezésre áll)
 
 - **Power BI Desktop (a Power BI jelentéskészítő kiszolgálóra optimalizálva)**
-    - *Verzió: 2.61.5192.64 (2018. augusztus), kiadás dátuma: 2018. augusztus 15.*
+    - *Verzió: 2.61.5192.641 (2018. augusztus), kiadás dátuma: 2018. augusztus 15.*
         - A Power BI jelentéskészítő kiszolgálóval (2018. augusztus) való kapcsolathoz szükséges módosításokat tartalmaz         
         
 ## <a name="march-2018"></a>2018. március

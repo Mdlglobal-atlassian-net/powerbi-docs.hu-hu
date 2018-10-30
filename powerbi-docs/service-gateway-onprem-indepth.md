@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8b0121dbfe633eca9c438dfd272d3aeb56fd59a4
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 30ac2c0620607d680874e423c841c381fc273904
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38921507"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101508"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Helyszíni adatátjáró – részletesen
 Cége felhasználói hozzáférhetnek a helyszíni adatokhoz (amelyekhez már van hozzáférési jogosultságuk), de ahhoz, hogy ezek a felhasználók az Ön helyszíni adatforrásához kapcsolódjanak, helyszíni adatátjáró telepítésére és konfigurálására van szükség. Az átjáró gyors és biztonságos háttérbeli kommunikációt biztosít a felhőbeli felhasználótól az Ön helyszíni adatforrásáig és vissza a felhő felé.
@@ -52,7 +52,7 @@ Azt, hogy egy felhasználó lekérdezheti és megtekintheti-e a modell adatait, 
 A szerepkörök és a dinamikus sorszintű biztonság megvalósítása a modellekben meghaladja e cikk kereteit.  Erről további információt talál az MSDN [Szerepkörök (táblázatos SSAS)](https://msdn.microsoft.com/library/hh213165.aspx) és [Biztonsági szerepkörök (Analysis Services - többdimenziós adatok)](https://msdn.microsoft.com/library/ms174840.aspx) című cikkeiben. A táblázatos modellek biztonságának legrészletesebb tárgyalását a letölthető [A táblázatos BI szemantikus modell biztosítása](https://msdn.microsoft.com/library/jj127437.aspx) című tanulmányban olvashatja.
 
 ## <a name="what-about-azure-active-directory"></a>Mi az Azure Active Directory szerepe?
-A Microsoft-felhőszolgáltatások az [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) használatával hitelesítik a felhasználókat. Az Azure Active Directory a felhasználóneveket és biztonsági csoportokat tartalmazó bérlő. A felhasználó által a bejelentkezéshez használt e-mail-cím általában megegyezik a fiók egyszerű felhasználónevével.
+A Microsoft-felhőszolgáltatások az [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) használatával hitelesítik a felhasználókat. Az Azure Active Directory a felhasználóneveket és biztonsági csoportokat tartalmazó bérlő. A felhasználó által a bejelentkezéshez használt e-mail-cím általában megegyezik a fiók egyszerű felhasználónevével.
 
 Mi az én helyszíni Active Directorym szerepe?
 
@@ -78,7 +78,7 @@ A felhőszolgáltatások csak az Azure Active Directoryn belüli fiókokat érik
 1. Hozzáadhat fiókokat az Azure Active Directoryhoz manuálisan.
    
    Létrehozhat egy fiókot az Azure Portalon vagy az Office 365 felügyeleti portálon, amelynek a neve egyezik a helyi Active Directory-fiók egyszerű felhasználónevével.
-2. Használhatja az [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) eszközt az Azure Active Directory-bérlő és a helyi fiókok szinkronizálására.
+2. Használhatja az [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) eszközt az Azure Active Directory-bérlő és a helyi fiókok szinkronizálására.
    
    Az Azure AD Connect eszköz beállításokat tesz elérhetővé a címtár-szinkronizáláshoz és a hitelesítés beállításához, többek között jelszókivonat-szinkronizálást, átmenő hitelesítést és összevonást. Ha Ön nem bérlői vagy helyi tartományi rendszergazda, akkor ennek konfigurálásához fel kell vennie a kapcsolatot a rendszergazdával.
 
@@ -90,7 +90,7 @@ Az Azure AD Connect használata biztosítja, hogy egyszerű felhasználónév eg
 > 
 
 ## <a name="now-this-is-where-the-gateway-comes-in"></a>Itt jut szerephez az átjáró
-Az átjáró hídként szolgál a felhő és a helyszíni kiszolgáló között. A felhő és az átjáró közötti adatátvitel biztonságát az [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/) garantálja. A Service Bus az átjáró egy kimenő kapcsolatán keresztül biztonságos csatornát hoz létre a felhő és a helyszíni kiszolgáló között.  A helyszíni tűzfalon egy kimenő kapcsolatot sem kell megnyitnia.
+Az átjáró hídként szolgál a felhő és a helyszíni kiszolgáló között. A felhő és az átjáró közötti adatátvitel biztonságát az [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview) garantálja. A Service Bus az átjáró egy kimenő kapcsolatán keresztül biztonságos csatornát hoz létre a felhő és a helyszíni kiszolgáló között.  A helyszíni tűzfalon egy kimenő kapcsolatot sem kell megnyitnia.
 
 Analysis Services-adatforrás használata esetén a az átjárót olyan számítógépre kell telepítenie, amely az Analysis Services-kiszolgálóval közös erdőbe/tartományba van beléptetve.
 
@@ -116,8 +116,10 @@ A hibaelhárítási kérdéseket nem itt tárgyaljuk, hanem egy külön cikkben 
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
 ## <a name="next-steps"></a>Következő lépések
+
 [A Helyszíni adatátjáróval kapcsolatos hibák elhárítása](service-gateway-onprem-tshoot.md)  
-[Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/)  
-[Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
+[Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview/)  
+[Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis/)  
+
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

@@ -1,21 +1,21 @@
 ---
 title: Multi-Geo támogatás a Power BI Premiumhoz (előzetes verzió)
 description: Útmutató tartalom üzembe helyezéséhez a Power BI-bérlő saját régióján kívüli régiókban lévő adatközpontokban.
-author: maggiesMSFT
-ms.author: maggies
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/31/2018
+ms.date: 10/21/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 135217acbe6289edb73c39035f58df8babf32566
-ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
+ms.openlocfilehash: 1041dcf8c345bfdf8d5a6ae9823d4cecd5c323a6
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43300184"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641668"
 ---
 # <a name="multi-geo-support-for-power-bi-premium-preview"></a>Multi-Geo támogatás a Power BI Premiumhoz (előzetes verzió)
 
@@ -40,7 +40,7 @@ A Multi-Geo már a Power BI Embeddedben is elérhető. További információ: [M
 Új kapacitásokat érhet el, ha a legördülő listából az alapértelmezettől eltérő régiót választva engedélyezi a Multi-Geo használatát.  Minden elérhető kapacitásnál megjelenik a régió, ahol jelenleg elhelyezkedik, például az **USA nyugati középső régiója**.
 
 ![Kapacitás mérete: régió kiválasztása. Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-capacity-size.png)
-  
+
 A kapacitás létrehozása után ebben a régióban marad, és az összes létrehozott munkaterület tartalma ebben a régióban lesz tárolva. Munkaterület egy régióból egy másikba a munkaterület beállításainak képernyőjén lévő legördülő listával migrálható.
 
 ![Munkaterület szerkesztése: rendelkezésre álló kapacitás kiválasztása. Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
@@ -83,7 +83,7 @@ Ha módosítania kell egy meglévő tartalom régióját, két módszer közül 
 
 ## <a name="move-content-out-of-multi-geo"></a>Tartalom visszavétele a Multi-Geo alól  
 
-A munkaterületek két módon vonhatók ki a Multi-Geo alól:
+A munkaterületek kétféle módon vonhatók ki a Multi-Geo-kapacitásból:
 
 - Törölheti a meglévő kapacitást, ahol a munkaterület elhelyezkedik.  A munkaterület ezáltal vissza lesz helyezve a saját régi megosztott kapacitásába.
 - A munkaterületeket egyenként visszamigrálhatja a saját bérlőbeli Prémium szintű kapacitásba.
@@ -91,11 +91,8 @@ A munkaterületek két módon vonhatók ki a Multi-Geo alól:
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 
 - Mielőtt kezdeményezné az adatátvitelt, győződjön meg arról, hogy a régiók közötti összes forgalom megfelel minden vállalati és kormányzati megfelelőségi követelménynek.
-
 - A távoli régiókban tárolt gyorsítótárazott lekérdezések inaktív állapotban abban a régióban maradnak. Más átvitt adatok azonban oda-vissza mozoghatnak több földrajzi hely között.
-
 - Ha Multi-Geo-környezetben adatot mozgat egy régióból egy másikba, a forrásadatok akár 30 napon át is megmaradhatnak abban a régióban, ahonnan mozgatta őket. Ebben az időszakban a végfelhasználók nem férnek hozzájuk. A 30 napos időszak után az adatok el lesznek távolítva ebből a régióból, és meg lesznek semmisítve.
-
 - A Multi-Geo általában nem eredményez jobb teljesítményt. A jelentések és irányítópultok betöltéséhez továbbra is szükségesek a saját régióból lekért metaadatok.
 
 ## <a name="next-steps"></a>Következő lépések

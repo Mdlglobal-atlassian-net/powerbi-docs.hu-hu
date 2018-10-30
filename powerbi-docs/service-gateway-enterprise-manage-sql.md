@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2eb880ee512a3f13c56bb6dbf880209f05cdf7b4
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ff770320e0e6cd3f591e3318637a04977152e488
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296311"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101416"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Adatforrások kezelése – SQL Server
 A helyszíni adatátjáró telepítése után az átjáróval használható adatforrásokat adhat hozzá. Ez a cikk bemutatja, hogyan lehet használni az átjárókat és az adatforrásokat. Az SQL Server-adatforrás ütemezett frissítéshez vagy DirectQueryhez is használható.
@@ -60,7 +60,7 @@ Ez után az adatforrás információit, köztük a **Kiszolgálót** és az **Ad
 **Hitelesítési módszert** is választania kell.  Ez lehet **Windows** vagy **Egyszerű**.  Az **Egyszerű** lehetőséget akkor kell választani, ha Windows-hitelesítés helyett SQL-hitelesítést fog használni. Végül adja meg az ehhez az adatforráshoz használandó hitelesítő adatokat.
 
 > [!NOTE]
-> Az adatforráson minden lekérdezés ezekkel a hitelesítő adatokkal fog futni, hacsak nincs hozzá konfigurálva és engedélyezve a Kerberos használata egyszeri bejelentkezéshez (SSO). Egyszeri bejelentkezés (SSO) használata esetén az importált adatkészletek a tárolt hitelesítő adatokat használják, a DirectQuery-adatkészletek viszont az aktuális Power BI-felhasználó nevében, SSO használatával futtatják a lekérdezéseket. A helyszíni adatátjáróról szóló fő cikkben bővebben tájékozódhat a [hitelesítő adatok](service-gateway-onprem.md#credentials) tárolásáról. További információ: [a Kerberos használata egyszeri bejelentkezéshez (SSO) a Power BI-ból helyszíni adatforrásokba](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md).
+> Az adatforráson minden lekérdezés ezekkel a hitelesítő adatokkal fog futni, hacsak nincs hozzá konfigurálva és engedélyezve a Kerberos használata egyszeri bejelentkezéshez (SSO). Egyszeri bejelentkezés (SSO) használata esetén az importált adatkészletek a tárolt hitelesítő adatokat használják, a DirectQuery-adatkészletek viszont az aktuális Power BI-felhasználó nevében, SSO használatával futtatják a lekérdezéseket. A helyszíni adatátjáróról szóló fő cikkben bővebben tájékozódhat a [hitelesítő adatok](service-gateway-onprem.md#credentials) tárolásáról. További információ: [a Kerberos használata egyszeri bejelentkezéshez (SSO) a Power BI-ból helyszíni adatforrásokba](service-gateway-sso-kerberos.md).
 > 
 > 
 
@@ -123,6 +123,6 @@ Ha szerepel az átjárón belül konfigurált adatforrás **Felhasználók** lap
 * [Helyszíni adatátjáró](service-gateway-onprem.md)  
 * [Helyszíni adatátjáró – részletek](service-gateway-onprem-indepth.md)  
 * [A Helyszíni adatátjáróval kapcsolatos hibák elhárítása](service-gateway-onprem-tshoot.md)
-* [Kerberos használata egyszeri bejelentkezéshez (SSO) a Power BI-ból a helyszíni adatforrásokhoz](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md). 
+* [Kerberos használata egyszeri bejelentkezéshez (SSO) a Power BI-ból a helyszíni adatforrásokhoz](service-gateway-sso-kerberos.md). 
 * További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

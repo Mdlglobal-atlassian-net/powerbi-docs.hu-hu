@@ -8,19 +8,19 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 10/02/2018
+ms.date: 10/18/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 41bd4148845754d1b714060e538f559b310969d8
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 1d093c9eb39b312e1883b2635de473dac6db5192
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112153"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473865"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Rövid útmutató – Navigáció a Power BI szolgáltatásban
 
-Most, hogy már ismeri a Power BI használatának alapjait, ideje megismerkednie a **Power BI szolgáltatással** is. Ahogy azt korábban említettük, előfordulhat, hogy a csapata egy tagja az összes idejét a **Power BI Desktop** alkalmazásban tölti azzal, hogy adatokat kombinál és jelentéseket hoz létre mások számára. Mindeközben elképzelhető, hogy ezzel ellentétben Ön az összes idejét a Power BI szolgáltatásban tölti a mások által létrehozott tartalmak megtekintésével és használatával (**fogyasztói** szerepkör), vagy adatok beolvasásával és saját jelentések és irányítópultok létrehozásával (**létrehozói** szerepkör). Ebben a rövid útmutatóban mintaadatok importálásával és használatával felfedezheti, hogy hogyan tud navigálni a Power BI szolgáltatásban. 
+Most, hogy már ismeri a Power BI használatának alapjait, ideje megismerkednie a **Power BI szolgáltatással** is. Ahogy azt korábban említettük, előfordulhat, hogy a csapata egy tagja az összes idejét a **Power BI Desktop** alkalmazásban tölti azzal, hogy adatokat kombinál és jelentéseket hoz létre mások számára. De lehet, hogy ezzel szemben Ön azzal tölti az összes idejét a Power BI szolgáltatásban, hogy mások által készített tartalmakat tekint meg és kezel (**felhasználói** élmény). Ebben a rövid útmutatóban mintaadatok importálásával és használatával felfedezheti, hogy hogyan tud navigálni a Power BI szolgáltatásban. 
  
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -48,9 +48,11 @@ Amanda most bemutatja a Power BI szolgáltatás navigációjának használatát.
 
 
 ## <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Tartalom megtekintése (irányítópultok, jelentések, munkafüzetek, adatkészletek, munkaterületek, alkalmazások)
-Kezdjük az alapvető tartalmak (irányítópultok, jelentések, adatkészletek, munkafüzetek) rendszerének megtekintésével. A tartalom egy munkaterületen belül jelenik meg. Ezen a ponton csak egy munkaterülete van, melynek neve **Saját munkaterület**. A Saját munkaterület a tulajdonában lévő összes tartalom tárolására szolgál. Tekintsen rá úgy mint a saját, személyes munkaterületére, ahol nyugodtan kísérletezhet tartalmaival. A Saját munkaterületen lévő tartalmakat megoszthatja munkatársaival is. A Saját munkaterületen belül a tartalmak 4 lapra vannak rendszerezve: Irányítópultok, Jelentések, Munkafüzetek, és Adatkészletek.
+Kezdjük az alapvető tartalmak (irányítópultok, jelentések, adatkészletek, munkafüzetek) rendszerének megtekintésével. A tartalom egy munkaterületen belül jelenik meg. Ezen a ponton csak egy munkaterülete van, melynek neve **Saját munkaterület**. Általában a felhasználóknak nincs szükségük másik munkaterület használatára. A Saját munkaterület a tulajdonában lévő összes tartalom tárolására szolgál. Tekintsen rá úgy mint a saját, személyes munkaterületére, ahol nyugodtan kísérletezhet tartalmaival. A Saját munkaterület az a hely, ahova a Kiskereskedelmi elemzési mintát letöltötte és mentette. 
 
-![Saját munkaterület képernyő](./media/end-user-experience/power-bi-my-workspace2.png)
+A Saját munkaterületen belül a tartalmak 4 lapra vannak rendszerezve: Irányítópultok, Jelentések, Munkafüzetek, és Adatkészletek.
+
+![Saját munkaterület képernyő](./media/end-user-experience/power-bi-my-workspace.png)
 
 Jelöljön ki egy munkaterület a bal oldali navigációs ablaktáblában, és a Power BI vásznát jobb oldalt a vonatkozó tartalmak (irányítópultok, jelentések, munkafüzetek, adatkészletek) lapfülei fogják kitölteni.
 
@@ -58,7 +60,7 @@ Ha új felhasználó, akkor csak egyetlen munkaterületet lát – a **Saját mu
 
 ![rövid videó a munkaterületről](./media/end-user-experience/nav.gif)
 
-Ezeken a lapokon (más néven *tartalomnézeteken*) belül információt találhat a tartalomról, illetve különböző műveleteket érhet el a tartalommal való munkához.  Az Irányítópultok lapon például megnyithat egy irányítópultot, és megoszthatja, törölheti és kereshet abban, valamint hozhat létre új tartalmat, rendezheti a tartalmakat, illetve más műveleteket is végezhet.
+Ezeken a lapokon (más néven *tartalomnézeteken*) belül információt találhat a tartalomról, illetve különböző műveleteket érhet el a tartalommal való munkához.  Az Irányítópultok lapról például megnyithat egy irányítópultot, kereshet, rendezhet és még sok mást is tehet.
 
 ![Irányítópultok lap](./media/end-user-experience/power-bi-dashboard-tab.png)
 
@@ -83,7 +85,7 @@ A **Kedvencek** segítségével gyorsan elérheti azokat a tartalmakat, amelyek 
    
     Jelenleg csak egy kedvence van. Irányítópultokat, jelentéseket és alkalmazásokat egyaránt jelölhet meg kedvencként.  
 
-1. Irányítópultot vagy jelentést a munkaterület **Irányítópultok** vagy **Jelentések** paneljén is megjelölhet kedvencként.  Nyissa meg a **Jelentések** lapot, és válassza a jelentés nevétől balra lévő csillag ikont.
+1. Irányítópultot vagy jelentést a munkaterület **Irányítópultok** vagy **Jelentések** megjelenítési lapján is megjelölhet kedvencként.  Nyissa meg a **Jelentések** lapot, és válassza a jelentés nevétől balra lévő csillag ikont.
    
    ![megjelölés kedvencként](./media/end-user-experience/power-bi-report-favorite.png)
 
@@ -108,7 +110,7 @@ További információ: [Kedvencek](end-user-favorite.md).
 
     A megjelenő menüben kiválaszthatja a megnyitandó tartalmat.
 
-2. Időnként előfordulhat, hogy nem megnyitni szeretne egy legutóbbi tartalmat, hanem csak az adataira kíváncsi vagy más műveletet szeretne végezni, például megosztást, elemzést vagy Excelbe exportálást. Ilyen esetben nyissa meg a **Legutóbbiak** panelt a bal oldali navigációs panelen lévő **Legutóbbi** elem vagy a vonatkozó ikon választásával. Egynél több munkaterület esetén ez a lista az összes munkaterületről jelenít meg tartalmakat.
+2. Időnként előfordulhat, hogy nem megnyitni szeretné a legutóbbi tartalmat, hanem csak adatokra kíváncsi, vagy olyan műveleteket végezne, mint a megállapítások megtekintése vagy az Excelbe exportálás. Ilyen esetben nyissa meg a **Legutóbbi** ablaktáblát a bal oldali navigációs ablakban lévő **Legutóbbi** elem vagy az ikonja választásával. Egynél több munkaterület esetén ez a lista az összes munkaterületről megjeleníti a tartalmakat.
 
    ![Legutóbbi ablaktábla](./media/end-user-experience/power-bi-recent.png)
 
@@ -119,13 +121,15 @@ A tartalom nézet megkönnyíti a különböző tartalmak keresését, szűrés�
 
 Mivel csak egy mintája van, a keresés és rendezés nem túl hasznos most.  De ha az irányítópultok, jelentések, munkafüzetek és adatkészletek hosszú listájával dolgozik, akkor a keresést és a rendezést rendkívül hasznosnak fogja találni.
 
-![irányítópult keresése](./media/end-user-experience/power-bi-search-sort.png)
+![jelentés keresése](./media/end-user-experience/power-bi-search.png)
 
-A tartalmakat a nevük vagy a tulajdonosuk alapján is rendezheti.  
+A tartalmakat a nevük vagy a tulajdonosuk alapján is rendezheti. Vegye figyelembe a **Név** elem jobb oldalán a felfelé mutató nyilat. Jelenleg 83 elemet rendezünk név szerinti betűrendes növekvő sorrendben. Ha a rendezési sorrendet csökkenőre kívánja állítani, válassza a **Név** elemet. A felfelé mutató nyíl lefelé mutatóra vált.
 
-![tartalom rendezése](./media/end-user-experience/power-bi-sort.png)
+![tartalom rendezése](./media/end-user-experience/power-bi-sort-new.png)
 
-További információkat itt talál: [Navigáció a Power BI-ban: keresés, rendezés, szűrés](end-user-search-sort.md)
+Nem minden oszlop rendezhető. Vigye az egeret az oszlopok fejlécére, hogy lássa, melyeknél érhető el a rendezés.
+
+További információkért olvassa el a [Power BI-ban végzett navigáció keresési és rendezési](end-user-search-sort.md) műveletét ismertető témakört.
 
 ## <a name="clean-up-resources"></a>Erőforrások felszabadítása
 Miután elkészült ezzel a gyors útmutatóval, igény szerint eltávolíthatja a Kiskereskedelmi elemzési mintát, a jelentést és az adatkészletet.
@@ -143,4 +147,4 @@ Miután elkészült ezzel a gyors útmutatóval, igény szerint eltávolíthatja
 ## <a name="next-steps"></a>Következő lépések
 
 > [!div class="nextstepaction"]
-> [A Power BI szolgáltatás Olvasó és Szerkesztési nézete](end-user-reading-view.md)
+> [Olvasó nézet a Power BI szolgáltatásban](end-user-reading-view.md)

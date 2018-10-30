@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/01/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: f9bc117d4260bb8efa604591703205b405fd63c9
-ms.sourcegitcommit: f391b645062f64ac3adc2ce7877318583b14b941
+ms.openlocfilehash: 92b8d0e0ecfa9bae36e552e30cf8f1a7fcecff4b
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48016169"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100749"
 ---
 # <a name="spark-on-hdinsight-with-directquery"></a>A Spark on HDInsight és a DirectQuery
 
@@ -58,7 +58,7 @@ A felhasználónév és a jelszó szintén megtalálható az Azure Portalon.
 
 ## <a name="limitations"></a>Korlátozások
 
-Ezek a korlátozások és figyelmeztetések a felhasználói felületek fejlesztésével változhatnak. További dokumentációért lásd: [BI-eszközök használata az Apache Spark on Azure HDInsighttal](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/)
+Ezek a korlátozások és figyelmeztetések a felhasználói felületek fejlesztésével változhatnak. További dokumentációért lásd: [BI-eszközök használata az Apache Spark on Azure HDInsighttal](/azure/hdinsight/spark/apache-spark-use-bi-tools/)
 
 * A Power BI szolgáltatás kizárólag a Spark 2.0-ból és a HDInsight 3.5-ből álló konfigurációt támogatja.
 * Minden művelet, például az oszlopok kijelölése vagy a szűrők hozzáadása azzal jár, hogy a rendszer lekérdezi az adatbázist – mielőtt nagyon nagy mezőket jelölne ki, érdemes kiválasztania egy megfelelő vizualizációtípust.
@@ -76,9 +76,9 @@ Az Azure Portalon további erőforrásokat is hozzárendelhet a **Konfiguráció
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Első lépések: Apache Spark-fürt létrehozása HDInsight Linux rendszeren és interaktív lekérdezések futtatása Spark SQL használatával](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-jupyter-spark-sql)  
+[Első lépések: Apache Spark-fürt létrehozása HDInsight Linux rendszeren és interaktív lekérdezések futtatása Spark SQL használatával](/azure/hdinsight/spark/apache-spark-jupyter-spark-sql/)  
 [Mi az a Power BI?](power-bi-overview.md)  
 [Power BI – Adatok lekérése](service-get-data.md)
-[Kerberos használata a helyszíni átjárón egyszeri bejelentkezéshez (SSO)](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)
+[Kerberos használata a helyszíni átjárón egyszeri bejelentkezéshez (SSO)](service-gateway-sso-kerberos.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

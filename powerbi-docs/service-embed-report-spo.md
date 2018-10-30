@@ -10,13 +10,13 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 08/16/2018
-ms.openlocfilehash: 111987fda4b0f841c0806dbdc454ac96ddb3c666
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.date: 10/01/2018
+ms.openlocfilehash: b701ce9921d055dfe124c5a419f02900b15a9f62
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908371"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641206"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Beágyazás jelentéskijelzővel a SharePoint Online-ban
 
@@ -87,7 +87,7 @@ Egy jelentés beágyazása a SharePoint Online-ba még nem ad automatikusan enge
 
 A Power BI szolgáltatásban kétféleképpen lehet egy jelentéshez hozzáférést adni. Ha a SharePoint Online-csoportwebhely létrehozásához Office 365-csoportot használ, akkor a felhasználót hozzáadhatja az **alkalmazás-munkaterülethez a Power BI szolgáltatásban** és a **SharePoint-oldalon**. Ez biztosítja, hogy a felhasználók láthassák az adott csoport tartalmát. További információ: [Alkalmazások létrehozása és terjesztése a Power BI-ban](service-create-distribute-apps.md).
 
-A másik mód, amellyel hozzáférést adhat a felhasználóknak a jelentéshez, a következő:
+A következő lépésekkel más módon is hozzáférést adhat a felhasználóknak a jelentéseihez.
 
 1. Adja a jelentés egyik csempéjét egy irányítópulthoz.
 
@@ -108,7 +108,7 @@ Alább megtekintheti a SharePoint Online Power BI-kijelzőjének módosítható 
 
 ## <a name="multi-factor-authentication"></a>Többtényezős hitelesítés
 
-Ha a Power BI-környezetbe való belépéshez többtényezős hitelesítésre van szükség, akkor előfordulhat, hogy a rendszer arra kéri, hogy bejelentkezéskor egy biztonsági eszközzel igazolja személyazonosságát. Ez olyankor fordul elő, amikor a SharePoint Online-ba nem többtényezős hitelesítés használatával jelentkezik be, a Power BI-környezetbe való belépéshez viszont biztonsági eszközzel igazolt fiók szükséges.
+Ha a Power BI-környezetbe való bejelentkezéshez többtényezős hitelesítésre van szükség, akkor előfordulhat, hogy a rendszer arra kéri, hogy személyazonossága igazolásához jelentkezzen be egy biztonsági eszközzel. Ez olyankor fordul elő, amikor a SharePoint Online-ba nem többtényezős hitelesítés használatával jelentkezik be, a Power BI-környezetbe való belépéshez viszont biztonsági eszközzel igazolt fiók szükséges.
 
 > [!NOTE]
 > A többtényezős hitelesítést az Azure Active Directory 2.0 még nem támogatja. A felhasználók egy *Hiba* feliratú üzenetet fognak kapni. Ha a felhasználó egy biztonsági eszköz használatával újból bejelentkezik a SharePoint Online-ba, akkor megtekintheti a jelentést.
@@ -147,6 +147,8 @@ A probléma elhárításához lépjen kapcsolatba a SharePoint Online-oldal tula
 * A Power BI webes kijelző nem érhető el [szuverén felhő](https://powerbi.microsoft.com/en-us/clouds/) esetén.
 
 * A klasszikus SharePoint-kiszolgáló nincs támogatva ehhez a webes kijelzőhöz.
+
+* Az [URL-szűrőket](service-url-filters.md) nem támogatja a SPO webes kijelző.
 
 ## <a name="next-steps"></a>Következő lépések
 

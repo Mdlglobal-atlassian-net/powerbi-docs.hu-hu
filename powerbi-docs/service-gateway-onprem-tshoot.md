@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: cbc1d6304a7ee34b489d93488115ceb80864a42d
-ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
+ms.openlocfilehash: a8f0360d87fe5bf4e19632a92d8dfe4cf61da16e
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43151906"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49474026"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>A helyszíni adatátjáró hibaelhárítása
 
@@ -40,6 +40,25 @@ Az átjáró Windows-szolgáltatásként fut, így többféle módon is elindít
 * A szolgáltatás elindításához futtassa az alábbi parancsot:
 
     „   net start PBIEgwService   ”
+
+### <a name="log-file-configuration"></a>Naplófájl-konfiguráció
+
+Az átjárószolgáltatás naplói három kategóriába sorolhatók: információ, hiba és hálózat. Ez a kategorizálás jobb hibaelhárítást biztosít, segítségével pedig egy adott területre összpontosíthat a hiba vagy probléma típusától függően. A három kategóriát megtekintheti a következő, átjárókonfigurációs fájlból származó kódrészletben: `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log`.
+
+```xml
+  <system.diagnostics>
+    <trace autoflush="true" indentsize="4">
+      <listeners>
+        <remove name="Default" />
+        <add name="ApplicationFileTraceListener"
+             type="Microsoft.PowerBI.DataMovement.Pipeline.Common.Diagnostics.RotatableFilesManagerTraceListener, Microsoft.PowerBI.DataMovement.Pipeline.Common"
+             initializeData="%LOCALAPPDATA%\Microsoft\On-premises data gateway\,GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50" />
+      </listeners>
+    </trace>
+  </system.diagnostics>
+```
+
+A fájl alapértelmezett helye: *\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config*. A megőrizni kívánt naplófájlok számát az első szám (ebben a példában a 20) megváltoztatásával konfigurálhatja: `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50`.
 
 ### <a name="error-failed-to-create-a-gateway-try-again"></a>Hiba: Az átjáró létrehozása nem sikerült. Próbálja újra
 

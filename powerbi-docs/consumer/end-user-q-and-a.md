@@ -7,81 +7,76 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 23f7546ce77f9062809e65be24517f74b89fe8a2
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 361c71c979d65e5c71ada6889bc7312ef64da23e
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565958"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396359"
 ---
-# <a name="qa-in-power-bi-service-and-power-bi-desktop"></a>A Q&A a Power BI szolgáltatásban és a Power BI Desktopban
+# <a name="qa-for-power-bi-consumers"></a>Q&A a Power BI-**ügyfelek** számára
 ## <a name="what-is-qa"></a>Mi a Q&A?
-Ha válaszokat keres az adatokban, néha az a leggyorsabb megoldás, ha természetes nyelven kérdez. Például: „what were total sales last year (mennyi volt az összes értékesítés tavaly).”  A Q&A szolgáltatás könnyen használható, természetes nyelvi funkciókat kínál az adatok elemzéséhez, és kérdéseire grafikonok vagy diagramok formájában ad választ. A Q&A nem keresőmotor – csak a Power BI-ban lévő adatokról szolgáltat eredményeket.
+Ha válaszokat keres az adatokban, néha az a leggyorsabb megoldás, ha természetes nyelven kérdez. Például: „what were total sales last year (mennyi volt az összes értékesítés tavaly).”  
+A Q&A szolgáltatás könnyen használható, természetes nyelvi funkciókat kínál az adatok elemzéséhez, és kérdéseire grafikonok vagy diagramok formájában ad választ. A Q&A nem keresőmotor – csak a Power BI-ban lévő adatokról szolgáltat eredményeket.
 
-Ebben a cikkben minden olyan témát tárgyalunk, amelyet a Q&A használatba vételéhez ajánlunk. Az alábbi hivatkozásokat követve arról tájékozódhat, hogy hogyan működik a Q&A a Power BI szolgáltatásban (irányítópultok és jelentések), a Power BI Embeddedben és a Power BI Mobile-ban.  
+A **Power BI Q&A** csak angol nyelven támogatja a természetes nyelven írt lekérdezések megválaszolását. Elérhető egy előzetes verzió spanyol nyelven, amelyet a Power BI-rendszergazda engedélyezhet.
 
-> [!NOTE]
-> A **Power BI Q&A** csak angol nyelven támogatja a természetes nyelven írt lekérdezések megválaszolását. Kipróbálhatja a spanyolul feltett kérdésekre válaszoló előzetes verziójú funkciót is. A **Power BI Desktopban** nyissa meg a **Fájl**, **Lehetőségek és beállítások**, **Beállítások** menüt, és keresse meg az **Előzetes verziójú funkciók** fület. Jelölje be **A Q&A spanyol nyelvű támogatása** jelölőnégyzetet.  
+A **Power BI Q&A** Pro- vagy Premium-licenccel érhető el. 
 >
->
 
-![](media/end-user-q-and-a/pbi_qa_boxsalessqft.png)
+![q&a által létrehozott fatérkép](media/end-user-q-and-a/power-bi-qna.png)
 
 A kérdés megfogalmazása csak az első lépés.  Pontosíthatja vagy kibővítheti a kérdést, megbízható új információkat fedezhet fel, összpontosíthat a részletekre, vagy feltárhatja a szélesebb összefüggéseket, így az adatok feltérképezése valódi élménnyé válik. Örömét lelheti az új eredményekben és felfedezésekben.
 
 Valóban interaktív élmény... és gyors! A memóriabeli tárolás segítségével szinte egy pillanat alatt megkapja a választ.
 
-##  <a name="qa-for-consumers"></a>Q&A *felhasználók* számára
-Ha megosztanak Önnel egy irányítópultot, a Q&A kérdésmező a Power BI szolgáltatásban (app.powerbi.com) az irányítópulton jelenik meg, a Power BI Mobile-ban az irányítópult alján, míg a Power BI Embeddedben a vizualizáció fölött. Ha a tulajdonos nem adott Önnek szerkesztési jogosultságot, akkor megnézheti és feltárhatja az adatokat, de a Q&A használatával létrehozott vizualizációkat nem fogja tudni menteni.
+## <a name="where-can-i-use-qa"></a>Hol találom a Q&A-t?
+A Q&A a Power BI szolgáltatás irányítópultjain, a Power BI mobilalkalmazás irányítópultjának alján és a Power BI Embeddedben látható vizualizáció felett érhető el. Ha a tervező nem adott Önnek szerkesztési jogosultságot, a Q&A-vel feltárhatja az adatokat, azonban nem mentheti a Q&A használatával létrehozott vizualizációkat.
 
-![](media/end-user-q-and-a/powerbi-qna.png)
-
-## <a name="qa-for-creators"></a>Q&A *létrehozók* számára
-Ha Ön a Power BI-jelentés *létrehozója*, vagy ha jogosultsága van az adatkészlet szerkesztéséhez, akkor a Q&A kérdésmezője a Power BI szolgáltatásban az irányítópulton jelenik meg, és a Power BI szolgáltatásban és a Power BI Desktopban minden jelentésoldalon. A Q&A használatával létrehozott vizualizációk irányítópulton és jelentésbe is menthetők lesznek.
-
-![](media/end-user-q-and-a/power-bi-desktop.png)
-
-Az adatok vizsgálatán túl a létrehozók és az adatkészletek tulajdonosai javíthatják is a Q&A felhasználói élményét a felhasználók számára: [módosíthatják az adatkészletet](../service-prepare-data-for-q-and-a.md), hozzáadhatnak [kiemelt kérdéseket](../service-q-and-a-create-featured-questions.md), valamint [engedélyezhetik és letilthatják a Q&A-t](end-user-q-and-a-direct-query.md) a helyszíni élő kapcsolatú adatkészletek használatához. [Beágyazott megoldások](../developer/qanda.md) esetén a fejlesztők két mód közül választhatnak: **interaktív** és **csak eredmény**.
+![kérdésmező](media/end-user-q-and-a/powerbi-qna.png)
 
 ## <a name="how-does-qa-know-how-to-answer-questions"></a>Honnan tudja a Q&A, hogy hogyan válaszoljon meg egy kérdést?
-### <a name="which-datasets-does-qa-use"></a>Melyik adatkészleteket használja a Q&A?
-Honnan tudja a Q&A, hogy hogyan válaszoljon meg egy adott adatokra vonatkozó kérdést? Az alapul szolgáló adatkészlet tábláinak, oszlopainak és számított mezőinek nevére támaszkodik. Éppen ezért fontos, hogy Ön (vagy az adatkészlet tulajdonosa) mit minek nevez el!
+A Q&A az irányítópulthoz társított adatkészletek mindegyikében keresi a válaszokat. Ha egy adatkészlet rendelkezik csempével az irányítópulton, a Q&A abban az adatkészletben fogja keresni a válaszokat. 
 
-Például egy “Eladások” nevű Excel-táblázatban, amelynek “Termék”, “Hónap”, “Eladott mennyiség”, “Bruttó bevétel” és “Nyereség” nevű oszlopai vannak, Ön kérdéseket tehet fel ezek bármelyikével kapcsolatban.  Kérheti az *eladások* és az összes *nyereség* *havonkénti* kimutatását, a *termékek* *eladott mennyiség* szerinti rendezését és sok minden mást.
+## <a name="how-do-i-start"></a>Hogyan kezdjem meg a használatát?
+Először ismerkedjen meg a tartalommal. Tekintse meg az irányítópulton és a jelentésben található vizualizációkat. Mérje fel az elérhető adatok típusát és terjedelmét. Ezután lépje vissza az irányítópultra, és helyezze a kurzort a kérdésmezőbe. Ekkor megnyílik a Q&A képernyő.
 
-A Q&A az adatkészlet felépítésén alapuló kérdésekre képes választ adni. Hogyan működne ez Salesforce-adatok esetén? Amikor Ön a salesforce.com-fiókjához kapcsolódik, a Power BI automatikusan létrehoz egy irányítópultot.  Mielőtt elkezdene kérdéseket feltenni a Q&A-val, vessen egy pillantást az irányítópult vizualizációin és a Q&A legördülő menüjében látható adatokra.
+![Q&A képernyő](media/end-user-q-and-a/power-bi-qna-screen.png) 
 
 * Ha a vizualizáció tengelyfeliratai és értékei között szerepelnek a "sales", "account", "month" és "opportunity" szavak, akkor feltehet olyan angol nyelvű kérdéseket, mint hogy "Which *account* has the highest *opportunity*", vagy "show *sales* by month as a bar chart".
-* Ha a legördülő listában szerepelnek a "salesperson", "state", és "year" szavak, akkor bizonyára választ kap a "which *salesperson* had the lowest *sales* in *Florida* in *2013*" angol nyelvű kérdésre.
 
-Ha egy webhely Google Analytics-beli teljesítményadatairól van szó, akkor kérdezheti a Q&A-t a weboldalakon töltött időről, az egyedi látogatások számáról és a felhasználói érdeklődés mérőszámairól. Demográfiai adatok lekérdezésekor például az életkor és a háztartások bevétele földrajzi hely szerinti eloszlásáról tehet fel kérdéseket.
+* Ha rendelkezik egy webhely Google Analytics-beli teljesítményadataival, akkor kérdezheti a Q&A-t a weboldalakon töltött időről, az egyedi oldallátogatások számáról és a felhasználói érdeklődés mérőszámairól. Demográfiai adatok lekérdezésekor például az életkor és a háztartások bevétele földrajzi hely szerinti eloszlásáról tehet fel kérdéseket.
+
+A képernyő alján egyéb hasznos dolgokat láthat. A Q&A minden adatkészlethez kapcsolódóan megjelenít kulcsszavakat, néha pedig még minta- vagy javasolt kérdéseket is. Ezek bármelyikét kijelölheti, és hozzáadhatja a kérdésmezőhöz. 
+
+A Q&A emellett kérdésekkel, automatikus kiegészítéssel és vizuális jelekkel is segíti a kérdések feltételét. 
+
+![videó](media/end-user-q-and-a/qa.gif) 
+
 
 ### <a name="which-visualization-does-qa-use"></a>Mely vizualizációkat használja a Q&A?
 A Q&A az éppen megjelenített adatok alapján választja ki a legalkalmasabb vizualizációt. Az alapul szolgáló adatkészlet(ek) adatai egy bizonyos típusba vagy kategóriába vannak besorolva, ami segít a Q&A-nak eldönteni, hogy hogyan jelenítse meg. Ha az adat például dátum típusúként van megadva, akkor nagyobb valószínűséggel jelenik meg vonaldiagramként. Városként kategorizált adatok nagyobb valószínűséggel lesznek térképen megjelenítve.
 
-Utasíthatja is a Q&A-t, hogy melyik vizualizációt használja, ha hozzáfűzi azt a kérdéséhez. Azt azonban mindig vegye figyelembe, hogy a Q&A nem mindig tudja a kért vizualizációtípusban megjeleníteni az adatokat.
+Utasíthatja is a Q&A-t, hogy melyik vizualizációt használja, ha hozzáfűzi azt a kérdéséhez. Azt azonban mindig vegye figyelembe, hogy a Q&A nem mindig tudja a kért vizualizációtípusban megjeleníteni az adatokat. A Q&A felajánlja a használható vizualizációtípusok listáját.
 
-A Q&A által felismert kulcsszavakról a [Tippek kérdések feltevéséhez](end-user-q-and-a-tips.md) című cikkben talál információt.
+## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+**Kérdés**: Nem látom a Q&A-t ezen az irányítópulton.    
+**1. válasz**: Ha nem látja a kérdésmezőt, először ellenőrizze a beállításokat. Ehhez kattintson a Power BI-eszköztár jobb felső sarkában lévő fogaskerék ikonra.   
+![fogaskerék ikon](media/end-user-q-and-a/power-bi-settings.png)
+
+Ezután válassza a **Beállítások** > **Irányítópultok** elemet. Ellenőrizze, hogy látható-e pipa a **Q&A-keresőmező megjelenítése ezen az irányítópulton** beállítás mellett.
+![Irányítópult Q&A-beállításai](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 
-## <a name="for-more-details-about-power-bi-qa"></a>További információk a Power BI Q&A szolgáltatásáról
-[A Q&A használata Power BI-irányítópultokkal és jelentésekkel – áttekintés](../power-bi-tutorial-q-and-a.md): Részletes leírás a Q&A használatához és a működésének áttekintése.
+**2. válasz**: Néha az irányítópult *tervezője* vagy a rendszergazda kikapcsolja a Q&A-t. Kérdezze meg őket, hogy engedélyezni lehetne-e a használatát.   
 
-[Microsoft Power BI mobilalkalmazás](mobile/mobile-apps-ios-qna.md) iOS-hez készült iPadekhez, iPhone-okhoz, és iPod Touch eszközökhöz.
+**Kérdés**: Nem a várt eredményeket látom, amikor beírok egy kérdést.    
+**Válasz**: Beszéljen az irányítópult *tervezőjével*. A tervező sok mindent tehet a Q&A-eredmények javítása érdekében. A tervező például átnevezheti az adatkészlet oszlopait, hogy azok könnyebben érhető kifejezéseket használjanak (`CustomerFirstName` `CustFN` helyett). Mivel a tervező ismeri igazán jól az adatkészletet, hasznos kérdéseket is javasolhat, és hozzáadhatja azokat a Q&A-vászonhoz.
 
-[Microsoft Power BI Embedded](../developer/qanda.md) A Q&A beágyazása alkalmazásba.
+![kiemelt kérdés bekeretezve](media/end-user-q-and-a/power-bi-featured-q.png)
 
-[Tippek a kérdésfeltevéshez a Q&A szolgáltatásban](end-user-q-and-a-tips.md):Megtudhatja, miképpen fogalmazhatja meg kérdéseit a Q&A-ban, hogy a legjobb válaszokat kapja meg.
+## <a name="next-steps"></a>Következő lépések
 
-[Kiemelt kérdések hozzáadása az adatkészletekhez](../service-q-and-a-create-featured-questions.md): Ha ezt a megoldást választja, a Q&A javasolni fogja a kérdéseket a munkatársainak.
-
-[A Q&A engedélyezése helyszíni adatkészletekhez](end-user-q-and-a-direct-query.md) Ha az adatkészlethez való csatlakozáshoz átjáróra van szüksége, használja a Power BI beállításait a Q&A be- és kikapcsolásához.
-
-[Oktatóanyag: A Q&A használata a Kiskereskedelmi értékesítési mintával a Power BI szolgáltatásban](../power-bi-visualization-introduction-to-q-and-a.md): Valósághű iparági oktatóanyag a Q&A használatáról.
-
-[Az adatok és a Q&A összeegyeztetése](../service-prepare-data-for-q-and-a.md): Adatkészleteket és adatmodelleket állít elő?  Akkor ez a témakör Önnek szól.
-
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

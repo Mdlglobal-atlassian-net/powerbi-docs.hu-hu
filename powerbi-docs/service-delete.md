@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 770b2796eb8f29cadfe8371cb2baef12cec7c0e8
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 0d07953fb4f9474f929c108df5b76acb61c7df7c
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909897"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435337"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>A Power BI szinte bármelyik elemének törlése
 Ebből a cikkből megtudhatja, hogyan törölhet egy irányítópultot, jelentést, munkafüzetet, adatkészletet, alkalmazást, vizualizációt vagy munkaterületet a Power BI szolgáltatásból.
@@ -129,7 +129,7 @@ Ha töröl egy alkalmazást az alkalmazásokat listázó oldalról, azzal más t
 
    ![alkalmazások kiválasztása](media/service-delete/power-bi-delete-app.png)
 
-   Ha véletlenül távolít el egy alkalmazást, számos módon visszaszerezheti.  Megkérheti az alkalmazás létrehozóját, hogy küldje el újra, megkeresheti a hivatkozást tartalmazó eredeti e-mailt, ellenőrizheti az [Értesítési központban](service-notification-center.md), hogy listázva van-e még az alkalmazás, vagy ellenőrizheti a szervezet [AppSource](service-install-use-apps.md)-át.
+   Ha véletlenül távolít el egy alkalmazást, számos módon visszaszerezheti.  Megkérheti az alkalmazás létrehozóját, hogy küldje el újra, megkeresheti a hivatkozást tartalmazó eredeti e-mailt, ellenőrizheti az [Értesítési központban](service-notification-center.md), hogy szerepel-e még a listában az alkalmazás, vagy ellenőrizheti [a szervezet AppSource-át](consumer/end-user-apps.md).
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 Ez a cikk bemutatta, hogyan törölheti a Power BI szolgáltatás főbb alkotóelemeit. Vannak azonban egyéb dolgok is, amelyeket törölhet a Power BI szolgáltatásban.  
