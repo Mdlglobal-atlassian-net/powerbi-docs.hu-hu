@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: overview
-ms.date: 05/01/2018
+ms.date: 10/29/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1f3c871d4ac47a110f2085ef1bdccb166fc00643
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: fcc7563ef1c1196a7e00e107bb1dadd6b10075d3
+ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944307"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50252468"
 ---
 # <a name="what-is-power-bi-administration"></a>Mit jelent a Power BI-felügyelet?
 
@@ -30,7 +30,6 @@ A Power BI-t önkiszolgáló üzleti intelligenciához terveztük, a rendszergaz
 - A Power BI-üzembehelyezés bevezetésének és a befektetési megtérülésnek a növelése
 
 A fő feladat az, hogy az üzleti felhasználók eredményesebbek lehessenek, és hogy biztosítani lehessen a jogszabályi és az egyéb szabályozásoknak való megfelelőséget. A feladatok közé tartozhat a segítségnyújtás és támogatás, és sok esetben az is, hogy az üzleti felhasználókat segítse a munkavégzésben.
-
 
 ## <a name="administrator-roles-related-to-power-bi"></a>A Power BI-jal kapcsolatos rendszergazdai szerepkörök
 
@@ -50,7 +49,6 @@ A Power BI szolgáltatás-rendszergazdáinak hozzáférése van a Power BI port�
 
 A Power BI szolgáltatás-rendszergazdai szerepköre nem tartalmaz jogosultságot licencek felhasználókhoz való hozzárendeléséhez vagy az auditnaplók megtekintéséhez az Office 365-ben. Ezért jelenleg a Power BI nem felügyelhető teljes mértékben olyan felhasználók által, akik kizárólag Power BI-szolgáltatásrendszergazdai szerepkörrel rendelkeznek.
 
-
 ## <a name="administrative-tasks"></a>Felügyeleti feladatok
 
 A rendszergazdák sokféle feladatot látnak el a Power BI-bérlő szervezeten belüli támogatásához. Ezeket a feladatokat az alábbi táblázatban foglaltuk össze.
@@ -65,7 +63,6 @@ A rendszergazdák sokféle feladatot látnak el a Power BI-bérlő szervezeten b
 | Power BI-erőforrások kezelése |<ul><li>Munkaterületek kezelése<br><li>Egyéni vizualizációk közzététele<br><li>A Power BI más alkalmazásokban való beágyazásához használt kódok ellenőrzése|
 | A bérlő felhasználóinak támogatása és segítségnyújtás számukra |<ul><li>Adathozzáférési és más problémák elhárítása</ul>|
 | Egyéb feladatok |<ul><li>A Power BI Desktop üzembe helyezése például a System Center Configuration Manager használatával<br><li>A Power BI mobilalkalmazás üzemelő példányainak kezelése az Intune-nal<br><li>Az adatvédelem és a biztonság, többek között a forrásadatok biztonságának kezelése</ul>|
-
 
 ## <a name="administrative-tools"></a>Felügyeleti eszközök
 
@@ -82,11 +79,12 @@ A Power BI-adminisztrációhoz számos eszköz használható, amelyeket az aláb
 
 ## <a name="next-steps"></a>Következő lépések
 
-Ebből a cikkből megismerhette a Power BI-rendszergazdai feladatok lényegesebb aspektusait, az egyes szerepköröket, a hozzájuk kapcsolódó feladatokat és a felhasználható eszközöket. Ha közelebbről is meg szeretné ismerni ezeket, az alábbi két forrást ajánljuk figyelmébe.
+Ebből a cikkből megismerhette a Power BI-rendszergazdai feladatok lényegesebb aspektusait, az egyes szerepköröket, a hozzájuk kapcsolódó feladatokat és a felhasználható eszközöket. Ezek mélyebb megértéséhez az alábbi cikkeket, illetve témaköröket ajánljuk figyelmébe.
 
 [A Power BI felügyeleti portál használata](service-admin-portal.md)
+
+[PowerShell-parancsmagok használata](/powershell/power-bi/overview?toc=%2Fen-us%2Fpower-bi%2FTOC.json&bc=%2Fen-us%2Fpower-bi%2Fbreadcrumb%2Ftoc.json&view=powerbi-ps)
 
 [Gyakori kérdések a Power BI-felügyelettel kapcsolatban](service-admin-faq.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-
