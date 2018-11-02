@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 474fe7eee6dbcb296a7eaec6057ecfa56cd3f144
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 433710918cb77ca9ee002673dbe6298f0d2184aa
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417119"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003294"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>A DAX alapszintű használata a Power BI Desktopban
 Ez a cikk a Power BI Desktoppal még csak most ismerkedő felhasználóknak szól. A célja annak a rövid bemutatása, hogyan lehet a Data Analysis Expressions (DAX) nyelv segítségével néhány alapszintű számítási és adatelemzési problémát megoldani. Ismerteti az alapvető fogalmakat, továbbá tartalmaz néhány elvégezhető feladatot és néhány tesztkérdést az elsajátított ismeretek felmérésére, így segít a DAX nyelvvel kapcsolatos legfontosabb alapvető tudnivalók elsajátításában.
@@ -142,7 +142,7 @@ A DAX a következő függvénykategóriákat tartalmazza: [Dátum és idő](http
 * A DAX különböző időintelligencia-függvényeket is tartalmaz. Ezekkel a függvényekkel megadhat vagy kiválaszthat dátumtartományokat, és azokon dinamikus számításokat hajthat végre. Például összehasonlíthat párhuzamos időszakokra vonatkozó összegeket.
 * Az Excel egyik nagyon népszerű függvénye a HKERES. Ellentétben az Excel HKERES függvényével, a DAX-függvényeknek nem adható át hivatkozásként cella vagy cellatartomány. A DAX-függvényeknek oszlopok vagy táblák adhatók át hivatkozásként. Mindig tartsa szem előtt, hogy a Power BI Desktopban relációs adatmodellekkel dolgozik. Egy másik tábla valamelyik értékének megkeresése igazán egyszerű dolog, és sokszor még csak képlet sem kell hozzá.
   
-  Amint látható, a DAX függvényeivel nagyon hatékony képletek hozhatóak létre. Eddig még csak alapszinten tekintettük át a képleteket. Ahogy egyre jobban elsajátítja a DAX használatát, számos különböző függvényt alkalmaz majd a képletekben. A DAX-függvényekkel kapcsolatos információkért leginkább a [DAX-függvények referencia-útmutatóját](https://msdn.microsoft.com/library/ee634396.aspx) érdemes tanulmányoznia.
+  Amint látható, a DAX függvényeivel nagyon hatékony képletek hozhatóak létre. Eddig még csak alapszinten tekintettük át a képleteket. Ahogy egyre jobban elsajátítja a DAX használatát, számos különböző függvényt alkalmaz majd a képletekben. A DAX-függvényekkel kapcsolatos információkért leginkább a [DAX-függvények referencia-útmutatóját](https://msdn.microsoft.com/en-us/query-bi/dax/data-analysis-expressions-dax-reference) érdemes tanulmányoznia.
 
 ### <a name="functions-quickquiz"></a>Függvények-gyorsteszt
 1. Mire hivatkoznak minden esetben a függvények?
