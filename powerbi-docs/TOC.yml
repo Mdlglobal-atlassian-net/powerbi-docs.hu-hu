@@ -250,8 +250,6 @@ items:
         href: desktop-r-powered-custom-visuals.md
       - name: Rácsvonalak és rácsvonalhoz igazítás használata
         href: desktop-gridlines-snap-to-grid.md
-      - name: Nagy sűrűségű vonalas mintavétel
-        href: desktop-high-density-sampling.md
       - name: Oszlop hozzáadása mintából
         href: desktop-add-column-from-example.md
       - name: Egyéni oszlop hozzáadása
@@ -322,6 +320,8 @@ items:
         href: visuals/power-bi-visualization-filled-maps-choropleths.md
       - name: Tölcsérdiagramok a Power BI-ban
         href: visuals/power-bi-visualization-funnel-charts.md
+      - name: Nagy sűrűségű vonalas mintavétel
+        href: desktop-high-density-sampling.md
       - name: KPI (teljesítménymutatós) vizuális elemek
         href: visuals/power-bi-visualization-kpi.md
       - name: Fejlett elemzések és vizualizációk létrehozása R-parancsfájlokkal a Power BI-ban
@@ -1203,9 +1203,9 @@ items:
       href: service-admin-governance.md
     - name: A Power BI és a biztonság
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: dbefae36f3a51d7494130593a4c7009f3cbc10b4
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: fffb456fe7ad9648b27a1106e9a4cb6401b5f56b
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252514"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909709"
