@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f07b5174d031c79f4d8f232c49836b54d95621f1
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: 525a7e45a804d9f82f4d06cf8618d790e140699f
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256032"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336875"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Akadálymentesség a Power BI Desktop-jelentésekben
 A Power BI rendelkezik olyan funkciókkal, amelyek lehetővé teszik a fogyatékkal élők számára, hogy könnyedén használják és kezeljék a Power BI-jelentéseket. A funkciók közé tartozik az a lehetőség, hogy a jelentések billentyűzettel vagy képernyőolvasóval is használhatók legyenek, az oldalak objektumai léptetéssel emelhetők ki, és a jelölők használata átgondolt a vizualizációkban.
@@ -61,6 +61,8 @@ Ezek az akadálymentesítési kiegészítések azért készültek, hogy a felhas
 ## <a name="tips-for-creating-accessible-reports"></a>Akadálymentesített jelentések létrehozásával kapcsolatos tippek
 Az alábbi tippek segítségével olyan **Power BI Desktop** jelentéseket hozhat létre, amelyek akadálymentesebbek.
 
+### <a name="general-tips-for-accessible-reports"></a>Általános tippek az akadálymentesített jelentésekhez
+
 * A **Vonal**, **Terület** és **Kombinált** vizualizációkhoz, valamint a **Pont** és **Buborék** vizualizációkhoz kapcsolja be a jelölőket, és használjon eltérő *Jelölőalakzatot* minden vonalhoz.
   
   * A *Jelölők* bekapcsolásához válassza ki a **Formátum** szakaszt a **Vizualizációk** panelen, bontsa ki az **Alakzatok** szakaszt, majd görgessen lefelé a **Jelölők** kapcsolóig, és állítsa *Be* állapotba.
@@ -80,6 +82,13 @@ Az alábbi tippek segítségével olyan **Power BI Desktop** jelentéseket hozha
 * Adjon meg címet, tengelyfeliratokat és adatfeliratokat minden vizualizációhoz.
 * Használjon jelentéssel bíró címeket minden jelentésoldalhoz.
 * Ha lehetséges, kerülje a díszítő alakzatok és képek a jelentésben, mert ezek belekerülnek a jelentés lapsorrendjébe. Ha díszítő objektumokat szeretne szerepeltetni a jelentésben, frissítse az objektum helyettesítő szövegét, hogy a képernyőolvasót használók tudják, hogy azok díszítés célját szolgálják.
+
+### <a name="arranging-items-in-field-buckets"></a>Elemek elrendezése mező gyűjtőkbe
+A **Power BI Desktop** 2018. októberi kiadásától kezdve a **Mezők** területen navigálhat a billentyűzettel, és képernyőolvasókat használhat. 
+
+A jelentések képernyőolvasókkal való létrehozási folyamatának javítása érdekében elérhető egy helyi menü, amely lehetővé teszi a területen lévő mezők felfelé vagy lefelé mozgatását a **Mezők** listában, vagy a mező más területekre (például a **Jelmagyarázat**, az **Érték** vagy más területekre) mozgatását.
+
+![A Mezők területen lévő helyi menüvel a mezőket felfelé, lefelé vagy más területre mozgathatja](media/desktop-accessibility/accessibility_09.png)
 
 ## <a name="high-contrast-support-for-reports"></a>Kontrasztos megjelenítés a jelentésekhez
 

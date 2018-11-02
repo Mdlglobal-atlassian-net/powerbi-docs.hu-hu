@@ -1,38 +1,39 @@
 ---
 title: A Power BI telefonos alkalmazásokhoz optimalizált jelentések létrehozása
-description: Megismerkedhet annak a folyamatával, hogyan lehet optimalizálni a Power BI Desktop jelentésoldalait a Power BI telefonos alkalmazásaihoz.
+description: Megtudhatja, hogyan lehet optimalizálni a Power BI telefonos alkalmazásainak jelentésoldalait a kifejezetten a telefonra tervezett jelentésverzió létrehozásával.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 09/14/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f34207640fe0db02d38464ce8600a44b6ffab4c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 22f4d6bf3c715c390c9760593ba5afdc72ce3bf7
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726455"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973954"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>A Power BI telefonos alkalmazásokhoz optimalizált jelentések létrehozása
-Amikor [létrehoz egy jelentést a Power BI Desktopban](desktop-report-view.md), kényelmesebbé teheti a használatát a telefonokon futó mobilalkalmazásokban, ha létrehozza kifejezetten a telefonokra tervezett verzióját. A jelentés telefonra való optimalizálása a vizualizációk átrendezését és átméretezését, esetleg egyes vizualizációk kihagyását jelenti a kényelmes használat érdekében. Emellett [*rugalmas* vizualizációkat](#optimize-a-visual-for-any-size) és [rugalmas szeletelőket](#enhance-slicers-to-to-work-well-in-phone-reports) is létrehozhat, amelyek megfelelően átméretezhetők a telefonon való megtekintéshez. Ha a jelentéshez szűrőket is hozzáad, azok automatikusan megjelennek a telefonos jelentésben. A jelentés olvasói is láthatják őket, és a használatukkal szűrhetik a jelentés adatait.
+Kényelmesebbé teheti a jelentések megtekintését a telefonokon futó mobilalkalmazásokban, ha létrehoz egy, kifejezetten a telefonokra tervezett jelentésverziót. A Power BI Desktopban és a Power BI szolgáltatásban a jelentés telefonra való optimalizálása a vizualizációk átrendezését és átméretezését, esetleg egyes vizualizációk kihagyását jelenti a kényelmes használat érdekében. Emellett [*rugalmas* vizualizációkat](#optimize-a-visual-for-any-size) és [rugalmas szeletelőket](#enhance-slicers-to-to-work-well-in-phone-reports) is létrehozhat, amelyek megfelelően átméretezhetők a telefonon való megtekintéshez. Ha a jelentéshez szűrőket is hozzáad, azok automatikusan megjelennek a telefonos jelentésben. A jelentés olvasói is láthatják őket, és a használatukkal szűrhetik a jelentés adatait.
 
 ![Optimalizált jelentés egy telefonon](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
-## <a name="lay-out-a-report-page-for-the-phone-in-power-bi-desktop"></a>Jelentésoldal telefonra optimalizált elrendezése a Power BI Desktopban
-Miután [létrehozott egy jelentést a Power BI Desktopban](desktop-report-view.md), optimalizálhatja a telefonon történő megjelenítéshez.
+## <a name="lay-out-a-report-page-for-the-phone"></a>Jelentésoldal telefonra optimalizált elrendezése
 
-1. A Power BI Desktopban kattintson a **Jelentés nézet** gombra a bal oldali navigációs sávon.
-   
-    ![Jelentés nézet ikonja](media/desktop-create-phone-report/desktop-create-phone-report-2.png)
-2. A **Nézet** lapon válassza a **Telefonos elrendezés** lehetőséget.  
+Miután létrehozott egy jelentést, optimalizálhatja azt a telefonon történő megjelenítésre.
+
+1. A Power BI Desktop **Nézet** lapján válassza a **Telefonos elrendezés** lehetőséget.  
    
     ![Telefonos elrendezés ikon](media/desktop-create-phone-report/desktop-create-phone-report-3.png)
    
+    A Power BI szolgáltatásban válassza a **Jelentés szerkesztése** > **Telefonos elrendezés** lehetőséget.
+
     Megjelenik egy üres telefonos vászon. Az eredeti jelentésoldalon lévő minden vizualizáció fel van sorolva a jobb oldali Vizualizációk panelen.
+
 3. Ha hozzá szeretne adni egy vizualizációt a telefonos elrendezéshez, húzza azt a Vizualizációk panelről a telefonos vászonra.
    
     A telefonos jelentések rács elrendezésűek. Ahogy a vizualizációkat a mobil vászonra húzza, azok a rácsra illeszkednek.
@@ -40,12 +41,10 @@ Miután [létrehozott egy jelentést a Power BI Desktopban](desktop-report-view.
     ![Vizualizáció áthúzása](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
    
     A telefonos jelentésoldalhoz a fő jelentésoldalon lévő mindegyik vizualizációt is hozzáadhatja, vagy kiválaszthat néhányat, amelyeket hozzá szeretne adni. Egy-egy vizualizációt csak egyszer adhat meg.
+
 4. A rácson átméretezheti a vizualizációkat, ahogy az irányítópultokon és mobil irányítópultokon lévő csempék esetében tenné.
    
-   > [!NOTE]
-   > A telefonos jelentések rácsa a különféle telefonok méretének megfelelően átméreteződik, így a jelentés kis és nagy képernyőjű telefonokon egyaránt jól fog kinézni.
-   > 
-   > 
+   A telefonos jelentések rácsa a különféle telefonok méretének megfelelően átméreteződik, így a jelentés kis és nagy képernyőjű telefonokon egyaránt jól fog kinézni.
    
    ![Vizualizációk átméretezése](media/desktop-create-phone-report/desktop-create-phone-report-5.gif)
 

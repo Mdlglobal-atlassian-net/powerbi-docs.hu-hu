@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4540c00e4956e87e1c012dc2a35c00e61e00b5a6
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: ae17eff366fe5e931963c9367586c08fd39eda69
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328144"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973931"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Nagy sűrűségű sorok mintavétele a Power BI-ban
 A **Power BI Desktop** 2017. júniusi kiadásától és a **Power BI szolgáltatás** frissítéseiben egy új mintavételi algoritmus érhető el, amelynek köszönhetően a vizualizációk hatékonyabban mintavételezik a nagy sűrűségű adatokat. Például létrehozhat egy vonaldiagramot a kereskedelmi egységek értékesítési adataiból, ahol minden egyes üzlet több mint tízezer értékesítési nyugtával rendelkezik. Egy ilyen értékesítési információkat tartalmazó vonaldiagram mintát vesz az egyes üzletek adataiból (reprezentatív adatokat választ, amelyek megmutatják, hogyan változtak az értékesítések az idő múlásával), és egy több adatsorozatú vonaldiagramot hoz létre, amely az alapul szolgáló adatokat ábrázolja. Ez gyakori eljárás a nagy sűrűségű pontdiagramok vizualizációjánál. Ebben a cikkben részletezzük, miben fejlődött a Power BI Desktop mintavételi folyamata nagy sűrűségű adatok esetén.
@@ -24,8 +24,6 @@ A **Power BI Desktop** 2017. júniusi kiadásától és a **Power BI szolgáltat
 
 > [!NOTE]
 > A cikkben bemutatott **nagy sűrűségű mintavételi** algoritmus elérhető a **Power BI Desktopban** és a **Power BI szolgáltatásban** is.
-> 
-> 
 
 ## <a name="how-high-density-line-sampling-works"></a>A nagy sűrűségű sorok mintavételezésének működése
 Korábban a **Power BI** determinisztikus módon választott mintaadatpontokat az alapul szolgáló adatok teljes tartományából. Például egy egész naptári évet lefedő vizualizáció nagy sűrűségű adatai esetén 350 mintaadatpont is megjelenhet a vizualizációban, amelyek mindegyike úgy lett kiválasztva, hogy biztosítsa a vizualizációban ábrázolt adatok teljességét (az alapul szolgáló adatok teljes sorozatát). Hogy jobban elképzelhesse, hogyan történik ez, képzelje el, hogy tőzsdei árfolyamadatokat ábrázolunk egy egyéves időszakból, és 365 adatpontot választottunk ki a vonaldiagramos vizualizáció létrehozásához (ami minden nap esetén egy adatpontot jelent).
@@ -42,17 +40,25 @@ Nagy adatsűrűségű vizualizációk esetén a **Power BI** intelligensen darab
 ### <a name="minimum-and-maximum-values-for-high-density-line-visuals"></a>A nagy sűrűségű sorokat tartalmazó vizualizációk minimum és maximum értékei
 Minden vizualizációra az alábbi vizuális korlátozások vonatkoznak:
 
-* Legfeljebb **3500** adatpont *jeleníthető meg* a vizualizációban, függetlenül az alapul szolgáló adatpontok vagy adatsorok számától. Ezért ha 10 sorozat áll rendelkezésre, amelyek mindegyike 350 adatpontot tartalmaz, akkor a vizualizáció elérte az adatpontok számának felső korlátját. Ha viszont csak egyetlen sorozat van, az 3500 adatpontot tartalmazhat, ha az új algoritmus úgy ítéli meg, hogy a legjobb mintavételezési mód az alapul szolgáló adatokhoz.
+* Legfeljebb **3500** adatpont *jeleníthető meg* a legtöbb vizualizációban, függetlenül az alapul szolgáló adatpontok vagy adatsorok számától (tekintse meg a következő felsorolásban szereplő *kivételeket*). Ezért ha 10 sorozat áll rendelkezésre, amelyek mindegyike 350 adatpontot tartalmaz, akkor a vizualizáció elérte az adatpontok számának felső korlátját. Ha viszont csak egyetlen sorozat van, az 3500 adatpontot tartalmazhat, ha az új algoritmus úgy ítéli meg, hogy a legjobb mintavételezési mód az alapul szolgáló adatokhoz.
+
 * Minden vizualizációban legfeljebb **60 sorozat** szerepelhet. 60-nál több sorozat esetén az adatokat úgy kell feldarabolni, hogy több, legfeljebb 60 sorozatot tartalmazó vizualizáció jöjjön létre. Erre jó módszer a **szeletelők** használata, amelyekkel megjelenítheti csak az adatok egyes szakaszait (csak bizonyos sorozatokat). Ha például minden alkategóriát megjelenít a jelmagyarázatban, akkor egy szeletelővel szűrést állíthat be az általános kategória alapján ugyanazon a jelentésoldalon belül.
+
+A 3500 adatpontos korlátozás alól *kivételt* képeznek a következő vizualizációtípusok, amelyek esetében magasabb az adatpontok maximális száma:
+
+* Legfeljebb **150 000** adatpont R-vizualizációk esetében.
+* Legfeljebb **30 000** adatpont az egyéni vizualizációk esetében.
+* Legfeljebb **10 000** adatpont pontdiagramok esetében (a pontdiagramok alapértelmezett értéke 3500).
+* **3500** minden más vizualizáció esetében.
 
 Ezek a paraméterek biztosítják a Power BI Desktop vizualizációinak nagyon gyors megjelenítését, gyors reakcióját a felhasználói műveletekre, valamint hogy nem okoznak túlzott számítási többletterhelést a vizualizációt megjelenítő számítógépen.
 
 ### <a name="evaluating-representative-data-points-for-high-density-line-visuals"></a>A nagy adatsűrűségű sorokat tartalmazó vizualizációk reprezentatív adatpontjainak értékelése
-Ha az alapul szolgáló adatpontok száma meghaladja a vizualizációban megjeleníthető adatpontok maximális számát (3500-at), akkor a *dobozolás* nevű folyamat veszi kezdetét, amely *dobozoknak* nevezett csoportokra darabolja az alapul szolgáló adatokat, majd a műveletek ismétlésével finomítja őket.
+Ha az alapul szolgáló adatpontok száma meghaladja a vizualizációban megjeleníthető maximális adatpontok számát, akkor a *dobozolás* nevű folyamat veszi kezdetét, amely *dobozoknak* nevezett csoportokra darabolja az alapul szolgáló adatokat, majd interaktív módon finomítja őket.
 
 Az algoritmus a lehető legtöbb dobozt hozza létre a vizualizáció maximális részletessége érdekében. Az algoritmus minden dobozban megkeresi a legalacsonyabb és a legmagasabb adatértéket, így biztosítja, hogy kulcsfontosságú és releváns értéket rögzít és jelenít meg a vizualizációban (például kiugró értékeket). Miután a Power BI dobozolja és kiértékeli az adatokat, meghatározza a vizualizáció x tengelyének minimális felbontását, hogy a vizualizáció a lehető legrészletesebb legyen.
 
-Ahogy korábban már említettük, az egyes sorozatok minimális részletessége 350 pont, a maximális pedig 3500.
+Ahogy korábban már említettük, az egyes sorozatok minimális részletessége 350 pont, a maximális pedig 3500 a legtöbb vizualizáció esetében, amely alól az előző bekezdésben szereplő felsorolás elemei képeznek *kivételt*.
 
 Minden dobozt két adatpont ábrázol, amelyek a doboz reprezentatív adatpontjaiként szerepelnek a vizualizációban. Az adatpontok egyszerűen a doboz legmagasabb és legalacsonyabb értékei, így a kiválasztásukkal a dobozolási folyamat biztosítja, hogy minden fontos magas vagy releváns alacsony érték rögzítve lesz és megjelenik a vizualizációban.
 

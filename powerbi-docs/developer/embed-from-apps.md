@@ -9,40 +9,40 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 2817ccb25fc9aa6d3e8150c776558366dcf0ccb6
-ms.sourcegitcommit: 0c870a006e525447497e678484874a2f137b9abd
+ms.openlocfilehash: 53803c77dec8eb35c10db7f19a82f58144f88414
+ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39088839"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47237985"
 ---
 # <a name="embed-reports-or-dashboards-from-apps"></a>Jelentések és irányítópultok beágyazása alkalmazásokból
 
-A **Power BI**-ban létrehozhat a összetartozó **irányítópultokat** és **jelentéseket** egy helyen összefűző alkalmazásokat, majd közzéteheti azokat a vállalatban nagy csoportok számára elérhetően. Ezeknek az alkalmazásoknak a használata akkor releváns, ha minden felhasználó Power BI-felhasználó, tehát megoszthatja velük a tartalmakat Power BI-alkalmazásokkal. Szeretnénk ismertetni néhány gyors lépést arról, hogyan végezheti el tartalom beágyazását egy közzétett Power BI-alkalmazásból egy külső fél alkalmazásába.
+A Power BI-ban létrehozhat az irányítópultokat és jelentéseket egy helyen összefűző alkalmazásokat. Ezután közzéteheti azokat a vállalat nagy csoportjai számára. Ezen alkalmazások használata akkor válik fontossá, ha minden felhasználója Power BI-felhasználó. Ekkor a Power BI-alkalmazásokon keresztül oszthat meg velük tartalmakat. A cikk bemutatja, hogyan kell beágyazni egy közzétett Power BI-alkalmazásból származó tartalmat egy külső alkalmazásba.
 
-## <a name="how-to-grab-report-embed-url-for-embedding"></a>Jelentés beágyazási URL-címének megragadása beágyazáshoz
+## <a name="grab-a-report-embedurl-for-embedding"></a>Jelentési embedURL beszerzése beágyazáshoz
 
-1. Hozza létre az alkalmazás egy példányát egy felhasználói munkaterületen (Saját munkaterület) úgy, hogy megosztja azt saját magával, vagy végigvezet egy másik felhasználót ezen a folyamaton.
+1. Példányosítsa az alkalmazást a **Saját munkaterület** nevű felhasználói munkaterületen. Ezt ossza meg saját magával, vagy irányítson hozzá egy másik felhasználót.
 
 2. Nyissa meg a kívánt jelentést a Power BI szolgáltatásban.
 
-3. Lépjen a Fájl -> Beágyazás a SharePoint Online-ban szakaszba, és ragadja meg a jelentés beágyazási URL-címét (az alábbi képernyőképen látható), vagy hívja a GetReports/GetReports REST API-t, és másolja ki a megfelelő jelentésbeágyazási embedURL mezőt a válaszból (vegye figyelembe, hogy a REST-hívásnak nem szabad munkaterület-azonosítót tartalmaznia az URL-cím részeként, mert az alkalmazás példánya a felhasználó munkaterületén jön létre).
+3. Nyissa meg a **Fájl** > **Beágyazás a SharePoint Online-ba** lapot, és ágyazza be a jelentési embedURL-t. Ez látható az alábbi pillanatképen. Alternatív megoldásként meghívhatja a GetReports/GetReport REST API-t, és kinyerheti a válaszból a megfelelő jelentési embedURL-mezőt. A REST-hívás URL-címe elvileg nem tartalmaz munkaterület-azonosítót, mivel az alkalmazás a felhasználó munkaterületén lett példányosítva.
 
-4. Használja a JS SDK-hoz a 3. lépésben lekért beágyazási URL-címet.
+4. Használja a 3. lépésben lekért embedURL-t a JavaScript SDK-val.
 
     ![Beágyazás alkalmazásokból](media/embed-from-apps/embed-from-app.png)
 
-## <a name="how-to-grab-dashboard-embed-url-for-embedding"></a>Irányítópult beágyazási URL-címének megragadása beágyazáshoz
+## <a name="grab-a-dashboard-embedurl-for-embedding"></a>Irányítópult embedURL-jének beszerzése beágyazáshoz
 
-1. Hozza létre az alkalmazás egy példányát egy felhasználói munkaterületen (Saját munkaterület) úgy, hogy megosztja azt saját magával, vagy végigvezet egy másik felhasználót ezen a folyamaton.
+1. Példányosítsa az alkalmazást a **Saját munkaterület** nevű felhasználói munkaterületen. Ezt ossza meg saját magával, vagy irányítson hozzá egy másik felhasználót.
 
-2. Hívja a GetDashboards REST API-t, és másolja ki a válaszból a megfelelő irányítópult embedURL mezőjét (vegye figyelembe, hogy a REST-hívásnak nem szabad munkaterület-azonosítót tartalmaznia az URL-cím részeként, mert az alkalmazás példánya a felhasználó munkaterületén jön létre).
+2. Alternatív megoldásként meghívhatja a GetDashboards REST API-t, és kinyerheti a válaszból a megfelelő irányítópult-embedURL-mezőt. A REST-hívás URL-címe elvileg nem tartalmaz munkaterület-azonosítót, mivel az alkalmazás a felhasználó munkaterületén lett példányosítva.
 
-3. Használja a JS SDK-hoz a 4. lépésben lekért beágyazási URL-címet.
+3. Használja a 2. lépésben lekért embedURL-t a JavaScript SDK-val.
 
 ## <a name="next-steps"></a>Következő lépések
 
-Tekintse át azt is, hogyan végezhet beágyazást az alkalmazás-munkaterületekről a külső ügyfelek és a cége számára.
+Tekintse át, hogyan ágyazhat be tartalmakat az alkalmazás-munkaterületről külső ügyfelekhez és a saját szervezetébe:
 
 > [!div class="nextstepaction"]
 >[Beágyazás külső ügyfelek számára](embed-sample-for-customers.md)

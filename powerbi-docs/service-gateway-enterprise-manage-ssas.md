@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: a4c931b671840ca78f340005c30aeb92454ca2a6
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: a84a5da9600daa7ef55ed5a707affa4ee1da4aba
+ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599181"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47238100"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Az adatforrás kezelése – Analysis Services
 Amint telepítette a helyszíni adatátjárót, fel kell vennie az átjáróval használható adatforrásokat. Ez a cikk bemutatja, hogyan lehet használni az átjárókat és az adatforrásokat. Az Analysis Services-adatforrást ütemezett frissítéshez vagy élő kapcsolatokhoz használhatja.
@@ -150,13 +150,38 @@ A konfigurálható egyéni felhasználóleképezéssel rendelkező helyszíni ad
 Az átjáró konfigurálása az AD-kereséshez:
 
 1. Töltse le és telepítse a legújabb átjárót.
+
 2. Az átjáróban módosítania kell a **helyszíni adatátjárói szolgáltatást**, hogy tartományi fiókkal fusson (helyi szolgáltatásfiók helyett – különben az AD-keresés futásidőben nem fog megfelelően működni). A változtatás érvénybe léptetéséhez újra kell indítania az átjárószolgáltatást.  Nyissa meg a gépén az átjáróalkalmazást (keressen rá a „helyszíni adatátjáró” kifejezésre). Ehhez lépjen a **Szolgáltatásbeállítások > Szolgáltatásfiók módosítása** területre. Győződjön meg arról, hogy rendelkezik ezen átjáró helyreállítási kulcsával, mert vissza kell majd állítania ugyanezen a gépen, ha nem szeretne helyette létrehozni új átjárót. 
-3. Lépjen rendszergazdaként az átjáró telepítési mappájához, a *C:\Program Files\Hegyszíni adatátjáró* mappához, hogy írási-olvasási engedélyei legyenek, és szerkessze a következő fájlt:
 
-       Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
-4. Szerkessze a következő két konfigurációértéket az alapján, hogy *Ön* milyen attribútumkonfigurációkat adott meg az Active Directory felhasználóihoz. Az alábbi konfigurációértékek csak példák – az Active Directory konfigurációja alapján kell őket meghatároznia. 
+3. Lépjen rendszergazdaként az átjáró telepítési mappájához (*C:\Program Files\On-premises data gateway*), hogy írási engedélyei legyenek, és szerkessze a következő fájlt: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 
-   ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+4. Szerkessze a következő két konfigurációértéket az alapján, hogy *Ön* milyen attribútumkonfigurációkat adott meg az Active Directory-felhasználóihoz. Az alábbi konfigurációértékek csak példák – az Active Directory konfigurációja alapján kell őket meghatároznia. A konfigurációk megkülönböztetik a kis- és nagybetűket, ezért győződjön meg arról, hogy megegyeznek az Active Directoryban szereplő értékekkel.
+
+    ![Az Azure Active Directory beállításai](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+
+    Ha nincs megadva érték az ADServerPath-konfigurációhoz, az átjáró az alapértelmezett globális katalógust használja. Az ADServerPath-konfigurációhoz több értéket is megadhat. Az értékeket pontosvesszővel kell elválasztania egymástól, az alábbi példában látható módon.
+
+    ```xml
+    <setting name="ADServerPath" serializeAs="String">
+        <value> >GC://serverpath1; GC://serverpath2;GC://serverpath3</value>
+    </setting>
+    ```
+    Az átjáró balról jobbra haladva elemzi az ADServerPath értékeit, amíg egyezést nem talál. Ha itt sincs egyezés, a rendszer az eredeti UPN-t használja. Győződjön meg arról, hogy az átjárószolgáltatást (PBIEgwService) futtató fiók rendelkezik az ADServerPath-konfigurációban megadott összes AD-kiszolgálóra vonatkozó lekérdezési engedéllyel.
+
+    Az átjáró két ADServerPath-típust támogat, ezt a következő példákban tekintheti meg.
+
+    **WinNT**
+
+    ```xml
+    <value="WinNT://usa.domain.corp.contoso.com,computer"/>
+    ```
+
+    **GC**
+
+    ```xml
+    <value> GC://USA.domain.com </value>
+    ```
+
 5. A konfiguráció módosításának érvénybe léptetéséhez indítsa újra a **helyszíni adatátjáró** szolgáltatást.
 
 ### <a name="working-with-mapping-rules"></a>Leképezési szabályok használata

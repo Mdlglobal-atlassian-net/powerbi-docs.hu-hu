@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 161ea8f20db36c129787e84242ea002980d0f8dd
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: df4afe91de955eabfba6eeea9022cc5f9475cc33
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565866"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336852"
 ---
 # <a name="using-slicers-power-bi-desktop"></a>Szeletelők használata a Power BI Desktopban
 
@@ -65,6 +65,12 @@ Alkalmazhat **csoportnevet** is a szeletelők egy csoportjára a **Szeletelők s
 Ezzel a funkcióval létrehozhat egy egyedi csoportot a szeletelőinek, mellyel szinkronizálva tarthatja őket. A program megad egy alapértelmezett nevet, de módosíthatja azt a kívánt egyéni névre. 
 
 A csoportnév tovább növeli a szeletelők használatának rugalmasságát. Hozhat létre különálló csoportokat egyazon mezőt használó szeletelők szinkronizálásához, illetve hozzáadhatja egyetlen csoporthoz több mező szeletelőit is. 
+
+## <a name="how-filtering-affects-selection-in-slicers"></a>A szűrés hatása a kiválasztásra a szeletelőkben
+
+Ha kiválaszt valamit egy szeletelőben, majd egy, a kiválasztott elemet normál esetben eltávolító szűrőt választ ki, az az elemek listájának a végén marad a szeletelőben. Ha eltávolítja a szűrőt, a kiválasztás megmarad a szeletelőben. Figyelje meg, hogy ha megszünteti az elem kiválasztását a szeletelőben, eltűnik a listából.
+
+![megőrzött kiválasztás a szeletelőkben](./media/desktop-slicers/retained-selection-in-slicers.gif)
 
 
 ## <a name="next-steps"></a>Következő lépések

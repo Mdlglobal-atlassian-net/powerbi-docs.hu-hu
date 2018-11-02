@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 10/09/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0d9f16933bff264b10c0bff3e1b7c440a3d373a2
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 0cb5e9ae8256f9df6c849df612f156d7fe9d12a8
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48907854"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112199"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Alkalmazások telepítése és használata irányítópultokkal és jelentésekkel a Power BI-ban
 A Power BI-ban az *alkalmazások* egy helyen hozzák össze az összefüggő irányítópultokat és jelentéseket. Cégének tagjai fontos üzleti információkkal dolgozó alkalmazásokat hozhatnak létre és terjeszthetnek. Az esetleg már eddig is használt [külső szolgáltatások](end-user-connect-to-services.md), mint a Google Analytics és a Microsoft Dynamics CRM, szintén kínálnak Power BI-alkalmazásokat. 
@@ -34,13 +34,13 @@ Alkalmazásokat sokféleképpen be lehet szerezni. Az alkalmazást a szerzője a
 
 **A saját számítógépén** 
 
-Amikor az e-mailben kapott hivatkozásra kattint, böngészőben megnyílik a Power BI szolgáltatás ([https://powerbi.com](https://powerbi.com)). Miután megerősíti, hogy telepíteni szeretné az alkalmazást, megnyílik az alkalmazás kezdőlapja.
+A Power BI szolgáltatás ([https://powerbi.com](https://powerbi.com)) böngészőben történő megnyitásához kattintson az e-mailben található hivatkozásra. Erősítse meg, hogy telepíteni szeretné az alkalmazást, majd megnyílik az alkalmazás kezdőlapja.
 
 ![Alkalmazás kezdőlapja a Power BI szolgáltatásban](./media/end-user-apps/power-bi-app-landing-page-opportunity-480.png)
 
 **iOS- vagy Android-mobileszközén** 
 
-Amikor az e-mailben kapott hivatkozásra koppint a mobileszközén, az alkalmazás automatikusan települ, és megnyílik az alkalmazás-tartalomlista. 
+Ha mobileszközön nyitja meg az e-mailben szereplő hivatkozást, az alkalmazás automatikusan megnyílik, és megnyitja az alkalmazás tartalomjegyzékét a mobilalkalmazásban. 
 
 ![Alkalmazás-tartalomlista mobileszközön](./media/end-user-apps/power-bi-app-index-it-spend-360.png)
 
@@ -50,7 +50,7 @@ A Microsoft AppSource-szal bármilyen alkalmazást megtalálhat és telepíthet,
 1. Válassza az **Alkalmazások** ![Alkalmazások a bal oldali navigációs panelen](./media/end-user-apps/power-bi-apps-bar.png) > **Alkalmazások letöltése** lehetőséget. 
    
      ![Az Alkalmazások letöltése ikon](./media/end-user-apps/power-bi-service-apps-get-apps-oppty.png)
-2. Az AppSource-ban a **Saját szervezet** alatti kereséssel szűkítheti a találatok körét, és megtalálhatja a keresett alkalmazást.
+2. Az AppSource-ban, a **Saját szervezet** területen kereséssel szűkítse az eredményeket, hogy megtalálja a keresett alkalmazást.
    
      ![Az AppSource-ban a Saját szervezet alatt](./media/end-user-apps/power-bi-appsource-my-org.png)
 3. A **Letöltés most** lehetőséget választva adhatja hozzá az Alkalmazások oldalához. 

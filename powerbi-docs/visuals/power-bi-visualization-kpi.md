@@ -1,25 +1,31 @@
 ---
 title: KPI (teljesítménymutatós) vizuális elemek
-description: KPI-k létrehozása a Power BI szolgáltatásban és a Power BI Desktopban
+description: KPI-vizualizációk létrehozása a Power BI-ban
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
 ms.component: powerbi-desktop
-ms.topic: conceptual
-ms.date: 03/21/2018
+ms.topic: tutorial
+ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d3afa24c68db5ffcaec1dddae09b0b9719bf2bb5
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: aec8bc2d7faa8d3c4b9c7b4eb69ed9a930cfbcd1
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46543543"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417234"
 ---
 # <a name="kpi-visuals"></a>KPI (teljesítménymutatós) vizuális elemek
 A fő teljesítménymutató (KPI) olyan vizuális jel, amely egy mérhető cél terén elért előrehaladás mértékét jelzi. A KPI-kal kapcsolatos további információkért lásd: [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
+
+Ha még nem regisztrált a Power BI-ra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://app.powerbi.com/signupredirect?pbi_source=web).
+
+## <a name="prerequisites"></a>Előfeltételek
+* [Power BI Desktop – ingyenes!](https://powerbi.microsoft.com/en-us/get-started/)
+* [A Kiskereskedelmi elemzési minta PBIX-fájlja](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
 
 ## <a name="when-to-use-a-kpi"></a>Mikor érdemes KPI-t használni?
 A KPI remek választás:
@@ -27,33 +33,31 @@ A KPI remek választás:
 * az előrehaladás mérésére (miben járok előrébb vagy miben maradtam le?)
 * egy céltól való távolság mérésére (mennyivel járok előrébb vagy milyen messze vagyok tőle?)   
 
-## <a name="kpi-visual-requirements"></a>KPI-vizualizációk követelményei
-A fő teljesítménymutató (KPI) specifikus mérésen alapul, és úgy van kialakítva, hogy segítsen egy mutatószám jelenlegi értékének és állapotának egy meghatározott célhoz viszonyított értékelésében. Ezért a KPI-vizualizációhoz szükség van egy *alapmértékre*, amely egy értéket és egy *célmértéket* vagy -értéket ad eredményként, valamint egy küszöbértékre vagy célra.
+## <a name="kpi-requirements"></a>KPI-követelmények
+A fő teljesítménymutató (KPI) specifikus mérésen alapul, és úgy van kialakítva, hogy segítsen egy mutatószám jelenlegi értékének és állapotának egy meghatározott célhoz viszonyított értékelésében. Ezért a KPI-vizualizációhoz szükség van egy *alapmértékre*, amely egy értéket és egy *célmértéket* vagy célértéket, valamint egy *küszöbértéket* vagy *célt* ad eredményként.
 
-> [!NOTE]
-> Jelenleg a KPI-adatkészletnek tartalmaznia kell egy KPI célértékeit. Ha az adatkészlet nem tartalmaz ilyet, létrehozhat célokat, ha hozzáad egy célokat tartalmazó Excel-munkalapot az adatmodellhez vagy egy PBIX-fájlt.
-> 
-> 
+Jelenleg a KPI-adatkészletnek tartalmaznia kell egy KPI célértékeit. Ha az adatkészlet nem tartalmaz ilyet, létrehozhat célokat, ha hozzáad egy célokat tartalmazó Excel-munkalapot az adatmodellhez vagy egy PBIX-fájlt.
+
 
 ## <a name="how-to-create-a-kpi"></a>KPI létrehozása
-Annak érdekében, hogy követni tudja a lépéseket, jelentkezzen be a Power BI szolgáltatásba, és válassza az **Adatok beolvasása > Minták > Kiskereskedelmi elemzési minta** lehetőséget. Létrehozunk egy KPI-t, amely egy értékesítési cél irányába tett előrehaladást méri.
+A bemutatott lépések elvégzéséhez a Power BI Desktopban nyissa meg a [Kiskereskedelmi elemzési minta .PBIX-fájlját](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Létrehozunk egy KPI-t, amely egy értékesítési cél irányába tett előrehaladást méri.
 
 Másik lehetőségként tekintse meg a videót, amelyben bemutatjuk, hogyan hozhat létre egyetlen mutatószámos vizualizációkat: mérőműszereket, kártyákat és KPI-ket.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Nyissa meg a jelentést a [Szerkesztési nézetben](../consumer/end-user-reading-view.md), és [adjon hozzá egy új oldalt](../power-bi-report-add-page.md).    
-2. Válassza a **Sales > Total Units This Year** (Értékesítés > Idei összes egység) mezőt.  Ez lesz a mutató.
-3. Adjon hozzá **Time > Month** (Időpont > Hónap) értékeket.  Ez jelzi a trendet.
-4. FONTOS: A **Month** mező szerint rendezze a diagramot. Miután átalakítja a vizualizációt KPI-vé, nincs lehetőség rendezésre.
+1. Nyissa meg a jelentést a Jelentés nézetben, majd [új lap hozzáadásához kattintson a sárga lapfülre](../power-bi-report-add-page.md).    
+2. A Mezők panelen válassza a **Sales > Total Units This Year** (Értékesítés > Idei összes egység) mezőt.  Ez lesz a mutató.
+3. Adjon hozzá **Time > FiscalMonth** (Időpont > Pénzügyi hónap) értékeket.  Ez jelzi a trendet.
+4. FONTOS: A **FiscalMonth** mező szerint rendezze a diagramot. Miután átalakítja a vizualizációt KPI-vé, nincs lehetőség rendezésre.
 
-    ![](media/power-bi-visualization-kpi/power-bi-sort-by-month.png)
+    ![](media/power-bi-visualization-kpi/power-bi-chart.png)
 5. Alakítsa át a vizualizációt KPI-vé a KPI ikon kiválasztásával a Vizualizációk panelen.
    
-    ![](media/power-bi-visualization-kpi/power-bi-kpi-icon.png)
+    ![](media/power-bi-visualization-kpi/power-bi-kpi-template.png)
 6. Adjon meg egy célt. Adja meg a múlt évi értékesítést célként. Húzza a **Total Units Last Year** (Tavalyi összes egység) mezőt a **Célkitűzések** mezőbe.
    
-    ![](media/power-bi-visualization-kpi/power-bi-kpi.png)
+    ![](media/power-bi-visualization-kpi/power-bi-kpi-done.png)
 7. Ha szeretné, formázza a KPI-t a festőhenger ikon kiválasztásával, amely megnyitja Formátum panelt.
    
    * **Mutató** – szabályozza a mutatószám megjelenítési egységeit és tizedesjegyeit.
@@ -61,16 +65,14 @@ Másik lehetőségként tekintse meg a videót, amelyben bemutatjuk, hogyan hozh
    * **Célok** – amikor **Be** értékre van állítva, a vizualizáció megjeleníti a célt és a távolságot a céltól százalékban.
    * **Színkódok > Irány** – néhány KPI magasabb érték esetén *jobb*, néhány pedig alacsonyabb érték esetén *jobb*. Vessük össze például a bevételeket a várakozási idővel. Általában a bevételek magasabb értéke jobbnak tekinthető, míg a várakozási idő magasabb értéke nem. Válassza a **high is better** (a nagyobb érték jobb) lehetőséget, és igény szerint módosítsa a színbeállításokat.
 
-1. Ha már olyan a KPI, amilyennek szeretné, [rögzítse az irányítópultra](../service-dashboard-pin-tile-from-report.md).
 
-A KPI-k mobileszközökön is elérhetők, így mindig összhangban lehet a cég szívverésével.
+A KPI-k a Power BI szolgáltatásban, illetve a mobileszközein is elérhetők, így mindig szinkronban lehet vállalkozása működésével.
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
-* Amennyiben a KPI-je nem hasonlít a fentire, lehetséges, hogy hónapok szerint sorba kell rendeznie. Mivel a KPI-knél nem érhető el a rendezés lehetősége, a hónapok szerinti rendezést még *azelőtt* kell elvégeznie, hogy átalakítja a vizualizációt KPI-vé.
+* Amennyiben a KPI-je nem hasonlít a fentire, lehetséges, hogy pénzügyi hónapok szerint kell sorba rendeznie. Mivel a KPI-knél nem érhető el a rendezés lehetősége, a pénzügyi hónapok szerinti rendezést még *azelőtt* kell elvégeznie, hogy átalakítja a vizualizációt KPI-vé.
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Vizualizációk a Power BI-jelentésekben](power-bi-report-visualizations.md)
+[Alapszintű térképek a Power BI-ban](power-bi-map-tips-and-tricks.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-
+[Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)

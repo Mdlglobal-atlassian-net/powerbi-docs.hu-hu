@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5db9b801fad3145cc864799062fe886c99da53aa
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 73be85644fd320bd44372a0df6c844705c3cf602
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280202"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336921"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Az SAP BW Connector használata a Power BI Desktopban
 A Power BI Desktopban hozzáférhet az **SAP Business Warehouse (BW)** adataihoz.
 
 Ha szeretné megismerni, milyen előnyökkel jár, ha az ügyfelek a Power BI-t a meglévő SAP Business Warehouse (BW) rendszerükhöz csatlakoztatják, olvassa el a [Power BI-t és az SAP BW-t bemutató tanulmányt](https://aka.ms/powerbiandsapbw). A DirectQuery az SAP BW-vel való használatáról további tudnivalókat a [DirectQuery és SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md) szolgáltatást ismertető cikkben találhat.
 
-A **Power BI Desktop** 2018. júniusi kiadásától kezdődően az SAP BW-összekötő olyan új implementációját használhatja, amelyen jelentős teljesítménybeli és képességbeli fejlesztéseket végeztünk. Az SAP BW-összekötő felújított változatát a Microsoft fejlesztette, a neve **2.0-s Implementáció**. Ezentúl választhat az 1. verzió (v1) **SAP BW-összekötője** és az **SAP-összekötő 2.0-ás implementációja** között. A következő szakaszok az egyes verziók telepítését mutatják be egymás után. Amikor a Power BI Desktopból az SAP BW-hez kapcsolódik, kiválaszthatja, hogy a kettő közül melyik összekötőt kívánja használni.
+A **Power BI Desktop** 2018. júniusi kiadása óta (és a 2018. októberi kiadástól általánosan) a SAP BW-összekötőt olyan implementációval használhatja, amelynek teljesítménye és képességei jelentős mértékben javultak. Az SAP BW-összekötő felújított változatát a Microsoft fejlesztette, a neve **2.0-s Implementáció**. Ezentúl választhat az 1. verzió (v1) **SAP BW-összekötője** és az **SAP-összekötő 2.0-ás implementációja** között. A következő szakaszok az egyes verziók telepítését mutatják be egymás után. Amikor a Power BI Desktopból az SAP BW-hez kapcsolódik, kiválaszthatja, hogy a kettő közül melyik összekötőt kívánja használni.
 
 Javasoljuk, hogy amikor csak lehetséges az **SAP-összekötő 2.0-s Implementáció** lehetőséget válassza.
 

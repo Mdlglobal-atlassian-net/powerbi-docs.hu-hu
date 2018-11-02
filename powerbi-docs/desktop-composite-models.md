@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/31/2018
+ms.date: 10/02/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ddfe0c7ad116a74fa6887491ee41e544096de0f9
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: 49540dd491d02c6a6b474ff80690a75eecfd27db
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388847"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336990"
 ---
 # <a name="composite-models-in-power-bi-desktop-preview"></a>Összetett modellek a Power BI Desktopban (előzetes verzió)
 
@@ -58,7 +58,7 @@ DirectQuery használata esetén **összetett modellekkel** létrehozható egy ol
 **Összetett modellek** használatával készíthető például olyan modell, amely egy vállalat adattárházából származó értékesítési adatokat egyesít egy részleg SQL Server-adatbázisában tárolt értékesítési cél adatokkal és egy munkafüzetből származó adatokkal. Az egynél több DirectQuery-forrás adatait egyesítő, vagy DirectQuery- és importált adatokat egyesítő modelleket *összetett modellnek* nevezzük.
 
 > [!NOTE]
-> Amíg az összetett modellek előzetes verzióban állnak rendelkezésre, összetett modellek nem tehetők közzé a Power BI szolgáltatásban. 
+> A **Power BI Desktop** 2018. októberi kiadásától kezdődően összetett modelleket *tehet közzé* a Power BI szolgáltatásban. A Power BI szolgáltatásban az összetett modellek az ütemezett frissítések és az irányítópult csempéinek frissítései esetén ugyanúgy viselkednek, mint az importálási modellek. 
 
 A táblák között ugyanúgy hozhat létre kapcsolatokat mint eddig, még akkor is, ha a táblák különböző forrásokból származnak, a következő megkötésekkel: a források közötti minden kapcsolatnak **több-a-többhöz** számosságúnak kell lennie, függetlenül a tényleges számosságuktól. Az ilyen kapcsolatok a **több-a-többhöz** kapcsolatok szokásos módján működnek. Ezt a [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md) című cikk ismerteti. Lényeges, hogy az összetett modellek körében minden importált tábla egyetlen adatforrásként jelenik meg, függetlenül az alapjukat képező adatforrástól, ahonnan ténylegesen importálva lettek.   
 
@@ -164,12 +164,13 @@ A **több-a-többhöz** kapcsolatok használata ráadásul azzal jár, hogy mind
 
 A **összetett modelleknek** erre a verziójára érvényes néhány korlátozás.
 
-Az alábbi többdimenziós források nem használhatók **összetett modellekkel**:
+Az alábbi Live Connect- (többdimenziós) források nem használhatók **összetett modellekkel**:
 
 * SAP HANA
 * SAP Business Warehouse
 * SQL Server Analysis Services
 * Power BI-adathalmazok
+* Azure Analysis Services
 
 Ha ezekhez a többdimenziós forrásokhoz a DirectQuery használatával csatlakozik, nem tud ugyanakkor más DirectQuery-forráshoz is csatlakozni, és importált adatokkal kombinálni sem.
 

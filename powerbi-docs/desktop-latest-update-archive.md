@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 40eefccbce19c8d6f4441e30e037e6e421a8dd5c
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: cda575c11be90c8e18a3a9f3b8325ccf674afffc
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512248"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49337082"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>A Power BI Desktop korábbi havi frissítései
 
 Ez a cikk a **Power BI Desktop** korábbi frissítéseit ismerteti. Az aktuális hónapban megjelent kiadásokat a [**Power BI Desktop** legutóbbi frissítései](desktop-latest-update.md) között találja.
 
-Bármikor [letöltheti a Power BI Desktop legújabb verzióját](https://powerbi.microsoft.com/desktop). Ha Windows 10 operációs rendszert használ, a **Power BI Desktopot** a Windows Áruházból is letöltheti. A havi verziók a **Power BI Desktop** telepítésének módjától függetlenül megegyeznek. További információkért tekintse meg [ezt a cikket](desktop-get-the-desktop.md). 
+Bármikor [letöltheti a Power BI Desktop legújabb verzióját](https://powerbi.microsoft.com/desktop). Ha Windows 10 operációs rendszert használ, a **Power BI Desktopot** a Windows Áruházból is letöltheti. A havi verziók a **Power BI Desktop** telepítésének módjától függetlenül megegyeznek, bár a verziószámok különbözhetnek. További információkért tekintse meg [ezt a cikket](desktop-get-the-desktop.md). 
 
 Az egyes frissítések mellett szereplő hivatkozások a következőket jelentik:
 
@@ -33,6 +33,53 @@ Az egyes frissítések mellett szereplő hivatkozások a következőket jelentik
 A **legújabb frissítésekről** szóló videót az elejétől is végignézheti ezen a cikken belül. Ehhez kattintson a frissítések listája alatti videóképen található **lejátszás** ikonra.
 
 Az alábbi szakaszok a **Power BI Desktop** korábbi havi frissítéseit ismertetik.
+
+
+## <a name="september-2018-update-2625222582"></a>2018. szeptemberi frissítés (2.62.5222.582)
+
+A szeptemberi frissítések az iskolakezdés izgalmas hangulatát idézték. Reméljük, hogy legalább olyan hasznosnak találta ezeket a frissítéseket, mint egy maréknyi frissen hegyezett HB-s ceruzát. 
+
+Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**:
+
+### <a name="reporting"></a>Jelentéskészítés
+
+* Pöttydiagram elrendezés támogatása pontdiagramokban [[videó]](https://youtu.be/Rzw2WyI09kY?t=30s)  [[cikk]](power-bi-visualization-scatter.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#dotPlot) 
+* Érték és kijelölés másolása táblázatos és mátrix-vizualizációkból [[videó]](https://youtu.be/Rzw2WyI09kY?t=2m33s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#copy) 
+* Beépített jelentéstéma-beállítások [[videó]](https://youtu.be/Rzw2WyI09kY?t=6m2s)   [[cikk]](desktop-report-themes.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#themes) 
+* Általánosan elérhető jelentésoldali elemleírások, kártyák új támogatása [[videó]](https://youtu.be/Rzw2WyI09kY?t=8m10s)  [[cikk]](desktop-tooltips.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#themes) 
+* Elemzések akadálymentességének fejlesztései és panelformázás támogatása [[videó]](https://youtu.be/Rzw2WyI09kY?t=9m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#accessibility)
+
+### <a name="analytics"></a>Elemzések
+
+* Összesítések (előzetes verzió) [[videó]](https://youtu.be/Rzw2WyI09kY?t=11m37s)  [[cikk]](desktop-aggregations.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#aggregations) 
+
+### <a name="custom-visuals"></a>Egyéni vizualizációk
+
+* Öt új egyéni vizualizáció  [[videó]](https://youtu.be/Rzw2WyI09kY?t=23m8s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#customVisuals) 
+
+### <a name="data-connectivity"></a>Adatkapcsolatok
+
+* PDF-fájl összekötő (előzetes verzió)  [[videó]](https://youtu.be/Rzw2WyI09kY?t=29m26s)  [[cikk]](desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#pdf) 
+* SAP BW-összekötő – mértéktulajdonságok támogatása  [[videó]](https://youtu.be/Rzw2WyI09kY?t=30m15s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#sapBW) 
+* Adatfolyamok-összekötő (bétaverzió)  [[cikk]](desktop-connect-dataflows.md)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#dataflows) 
+
+### <a name="data-preparation"></a>Adatok előkészítése
+* M Intellisense  [[videó]](https://youtu.be/Rzw2WyI09kY?t=30m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#pdf) 
+* Oszlop hozzáadása példákból – szövegkitöltés támogatása  [[videó]](https://youtu.be/Rzw2WyI09kY?t=32m27s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#addColumn) 
+
+
+> [!NOTE]
+> Megtekintheti továbbá [a Power BI Desktophoz elérhető adatforrások teljes listáját](desktop-data-sources.md). A lista folyamatosan bővül, ezért érdemes gyakran visszatérnie.
+
+További információkra kíváncsi ezekről a frissítésekről? Olvassa el [blogbejegyzésünket](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary), amely részletes információkkal szolgál az új funkciókról (ez ugyanaz a blogbejegyzés, amelyre a fenti lista hivatkozik).
+
+
+Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzésben is megtekinthető.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rzw2WyI09kY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+> [!NOTE]
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="august-2018-update-2615192321"></a>2018. augusztusi frissítés (2.61.5192.321)
 
@@ -137,7 +184,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="june-2018-update-2595135101"></a>2018. júniusi frissítés (2.59.5135.101)
 
@@ -184,7 +231,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="may-2018-update-2585103281"></a>2018. májusi frissítés (2.58.5103.281)
 
@@ -238,7 +285,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-_GMCE1TLvQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="april-2018-update-2575068501"></a>2018. áprilisi frissítés (2.57.5068.501)
@@ -284,7 +331,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W_Nb73Od_AI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -330,7 +377,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -352,7 +399,7 @@ A **Power BI Desktop** 2018. februári újdonságai közé az alábbi frissíté
 ### <a name="reporting"></a>Jelentéskészítés
 
 * Többszörös kiválasztású adatpontok több oldalra [[videó]](https://youtu.be/KeVB5RwMzJo?t=23s) [[cikk]](desktop-multi-select.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight) 
-* Szeletelők szinkronizálása több jelentésoldalon  [[videó]](https://youtu.be/KeVB5RwMzJo?t=3m33s) [[cikk]](desktop-slicers.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
+* Szeletelők szinkronizálása több jelentésoldalon  [[videó]](https://youtu.be/KeVB5RwMzJo?t=3m33s) [[cikk]](visuals/desktop-slicers.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
 * Továbbfejlesztett számtartomány-szeletelők – teljes számokra korlátozás (előzetes verzió)  [[videó]](https://youtu.be/KeVB5RwMzJo?t=8m44s)  [[cikk]](desktop-slicer-numeric-range.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#rangeSlicer) 
 * Bing-térképek gyorsabb geokódolása (webes előzetes verzió) – akár hatszoros gyorsaság  [[videó]](https://youtu.be/KeVB5RwMzJo?t=10m18s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#geocoding) 
 * Adatcímkék túlcsordulása sáv- és oszlopdiagramot tartalmazó vizualizációknál  [[videó]](https://youtu.be/KeVB5RwMzJo?t=12m31s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow) 
@@ -394,7 +441,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="january-2018-update-2544970761"></a>2018. januári frissítés (2.54.4970.761)
@@ -443,7 +490,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W8Pp5wuCXJw" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -499,7 +546,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZPU8B-1BxjI" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="november-2017-update-2524921202"></a>2017. novemberi frissítés (2.52.4921.202)
@@ -555,7 +602,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sI3yRjdnJ7w" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -613,7 +660,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jksjtR8GnBE" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="september-2017-update-2504859502"></a>2017. szeptemberi frissítés (2.50.4859.502)
@@ -623,7 +670,7 @@ A **Power BI Desktop** szeptemberi újdonságai közé az alábbi frissítések 
 ### <a name="report-view"></a>Jelentés nézet:
 
 -   Áthatoló részletezés másik jelentésoldalra [[videó]](https://youtu.be/moTQJlnClJw?t=19s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#drillthrough) [[cikk]](desktop-drillthrough.md)
--   Szalagdiagram  [[videó]](https://youtu.be/moTQJlnClJw?t=8m57s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#ribbon) [[cikk]](desktop-ribbon-charts.md)
+-   Szalagdiagram  [[videó]](https://youtu.be/moTQJlnClJw?t=8m57s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#ribbon) [[cikk]](visuals/desktop-ribbon-charts.md)
 -   Tudnivalók a növekedés értelmezéséről / csökkenés értelmezéséről  [[videó]](https://youtu.be/moTQJlnClJw?t=13m37s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#insights) [[cikk]](desktop-insights.md)
 -   A témakezelés előzetes verziójának frissítése – diagramstílus-vezérlők [[videó]](https://youtu.be/moTQJlnClJw?t=19m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#theming) [[cikk]](desktop-report-themes.md)
 -   Fejlesztések a kisegítő lehetőségek terén [[videó]](https://youtu.be/moTQJlnClJw?t=27m25s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#accessibility) [[cikk]](desktop-accessibility.md)
@@ -653,7 +700,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/moTQJlnClJw" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="august-2017-update-2494831222"></a>2017. augusztusi frissítés (2.49.4831.222)
@@ -698,7 +745,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ND8U0yXroaQ" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="july-2017-update-2484792321"></a>2017. júliusi frissítés (2.48.4792.321)
@@ -748,7 +795,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4X96ow7FnSY" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="june-2017-update-2474766542"></a>2017. júniusi frissítés (2.47.4766.542)
@@ -762,7 +809,7 @@ A **Power BI Desktop** júniusi újdonságai közé az alábbi frissítések tar
 -   Vizualizációk betűcsalád-beállítása [[videó]](https://youtu.be/YlNVE5dgcSI?t=6m59s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#fonts)
 -   Vízszintes képszeletelő [[videó]](https://youtu.be/YlNVE5dgcSI?t=8m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#imageSlicer)
 -   Kombinált diagramok formázási frissítései [[videó]](https://youtu.be/YlNVE5dgcSI?t=9m58s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#comboChart)
--   A Bing Térképek fejlesztései [[videó]](https://youtu.be/YlNVE5dgcSI?t=11m47s) [[cikk]](power-bi-map-tips-and-tricks.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#maps)
+-   A Bing Térképek fejlesztései [[videó]](https://youtu.be/YlNVE5dgcSI?t=11m47s) [[cikk]](visuals/power-bi-map-tips-and-tricks.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#maps)
 -   Nagy sűrűségű sorok mintavétele [[videó]](https://youtu.be/YlNVE5dgcSI?t=16m53s) [[cikk]](desktop-high-density-sampling.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#highDensityLine)
 -   Akadálymentes jelentések [[videó]](https://youtu.be/YlNVE5dgcSI?t=19m23s) [[cikk]](desktop-accessibility.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#accessibility)
 
@@ -793,7 +840,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YlNVE5dgcSI" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -840,7 +887,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CKISVNHcHVA" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -852,7 +899,7 @@ A Power BI Desktop 2017. áprilisi újdonságai közé az alábbi frissítések 
 ### <a name="report-view"></a>Jelentés nézet:
 
 -   Tengelycímek átnevezése [[videó]](https://youtu.be/AWMaIaI8G2Y?t=25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#renameAxisTitles)
--   Fejlesztések a mátrixvizualizációk terén: oszlopok rendezése, oszlopok átméretezése és sortörés (előzetes verzió) [[videó]](https://youtu.be/AWMaIaI8G2Y?t=1m32s) [[cikk]](desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#matrix)
+-   Fejlesztések a mátrixvizualizációk terén: oszlopok rendezése, oszlopok átméretezése és sortörés (előzetes verzió) [[videó]](https://youtu.be/AWMaIaI8G2Y?t=1m32s) [[cikk]](visuals/desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#matrix)
 
 ### <a name="analytics"></a>Elemzés:
 
@@ -885,7 +932,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AWMaIaI8G2Y" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="march-2017-update-2444675422"></a>2017. márciusi frissítés (2.44.4675.422)
@@ -894,7 +941,7 @@ A Power BI Desktop 2017. márciusi újdonságai közé az alábbi frissítések 
 
 ### <a name="report-view"></a>Jelentés nézet:
 
--   Új mátrix vizualizáció (előzetes verzió) [[videó]](https://youtu.be/CaRTON3lJqw?t=18s) [[cikk]](desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#matrix)
+-   Új mátrix vizualizáció (előzetes verzió) [[videó]](https://youtu.be/CaRTON3lJqw?t=18s) [[cikk]](visuals/desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#matrix)
 -   Numerikustartomány-szeletelő (előzetes verzió) [[videó]](https://youtu.be/CaRTON3lJqw?t=8m20s) [[cikk]](desktop-slicer-numeric-range.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#rangeSlicer)
 -   Adatfeliratok torta vagy perec vizualizációkon – az összeg százaléka [[videó]](https://youtu.be/CaRTON3lJqw?t=10m52s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#dataLabels)
 -   Keresztkiemelés több adatsor használatával [[videó]](https://youtu.be/CaRTON3lJqw?t=11m57s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#crossHighlight)
@@ -928,7 +975,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaRTON3lJqw" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -976,7 +1023,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mn75-LOPxMA" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="january-2017-update-2424611482"></a>2017. januári frissítés (2.42.4611.482)
@@ -1012,7 +1059,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C1-f0T8vZ7M" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -1065,7 +1112,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kERJ_WOLuLk" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="october-2016-update-2404554361"></a>2016. októberi frissítés (2.40.4554.361)
@@ -1118,7 +1165,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UXEYSvgvMaQ" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="september-2016-update-2394526362"></a>2016. szeptemberi frissítés (2.39.4526.362)
@@ -1176,7 +1223,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pcUr6E8g_KI" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -1237,7 +1284,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0VvG7Eqoke8" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="july-2016-update-2374464321"></a>2016. júliusi frissítés (2.37.4464.321)
@@ -1249,7 +1296,7 @@ Júliusban újabb rengeteg új szolgáltatással és nagyon várt adatösszeköt
 ### <a name="report-view"></a>Jelentés nézet:
 
 -   Előre megadott táblastílusok [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/) [[videó]](https://youtu.be/g8ccfjffWmw?t=1m25s)
--   Az alakzatleképezések funkció frissítése – egyéni leképezések használata [[cikk]](desktop-shape-map.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/) [[videó]](https://youtu.be/g8ccfjffWmw?t=2m21s)
+-   Az alakzatleképezések funkció frissítése – egyéni leképezések használata [[cikk]](visuals/desktop-shape-map.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/) [[videó]](https://youtu.be/g8ccfjffWmw?t=2m21s)
 
 ### <a name="data-connectors"></a>Adatösszekötők:
 
@@ -1280,7 +1327,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 <iframe width="560" height="315" src="https://www.youtube.com/embed/g8ccfjffWmw" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="june-2016-update-2364434362"></a>2016. júniusi frissítés (2.36.4434.362)
 
@@ -1290,7 +1337,7 @@ Júniusban számos érdekes frissítés történt a Power BI Desktopban.
 
 ### <a name="report-view"></a>Jelentés nézet:
 
--   Új vizualizáció – Alakzatleképezések [[videó]](https://youtu.be/sZsL2l6oS4A?t=3m9s) [[cikk]](desktop-shape-map.md)
+-   Új vizualizáció – Alakzatleképezések [[videó]](https://youtu.be/sZsL2l6oS4A?t=3m9s) [[cikk]](visuals/desktop-shape-map.md)
 -   Kereshető szeletelők [[videó]](https://youtu.be/sZsL2l6oS4A?t=6m25s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 -   Konfigurálható vonaldiagram-címkék [[videó]](https://youtu.be/sZsL2l6oS4A?t=7m21s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 -   Új bejelentkezési belépési pontok [[videó]](https://youtu.be/sZsL2l6oS4A?t=2m30s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
@@ -1334,7 +1381,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -1390,7 +1437,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="april-2016-update-2344372322"></a>2016. áprilisi frissítés (2.34.4372.322)
 
@@ -1439,7 +1486,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="march-2016-update-2334337281"></a>2016. márciusi frissítés (2.33.4337.281)
@@ -1491,7 +1538,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -1549,7 +1596,7 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 
 
 > [!NOTE]
-> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="january-2016-update-2314280361"></a>2016. januári frissítés (2.31.4280.361)

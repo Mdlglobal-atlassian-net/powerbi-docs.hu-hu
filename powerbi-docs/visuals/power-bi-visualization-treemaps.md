@@ -8,22 +8,30 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/23/2018
+ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 946746b1c868ca5310edd929434cc852400b5bc3
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 92e86817231e959db50af3c32fe8eba761c79a61
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548074"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448868"
 ---
 # <a name="treemaps-in-power-bi"></a>Fatérképek a Power BI-ban
-A fatérképek a hierarchikus adatokat beágyazott téglalapokként jelenítik meg.  A hierarchia minden egyes szintjét egy színes téglalap (más néven „ág”) jelöli, amely további téglalapokat („leveleket”) tartalmaz.  Egy téglalapon belül a hely lefoglalása a mért mennyiségi értékek alapján, méret szerint rendezve történik – bal oldalt felül találhatók a legnagyobb téglalapok, jobbra alul pedig a legkisebbek.
+A fatérképek a hierarchikus adatokat beágyazott téglalapokként jelenítik meg.  A hierarchia minden egyes szintjét egy színes téglalap (más néven „ág”) jelöli, amely további téglalapokat („leveleket”) tartalmaz.  Az egyes téglalapokon belüli területet a mért érték alapján osztja ki a rendszer. A téglalapok pedig méret szerint vannak rendezve, a bal felső saroktól (legnagyobb), a jobb alsó sarokig (legkisebb).
 
 ![](media/power-bi-visualization-treemaps/pbi-nancy_viz_treemap.png)
 
-Ha például az értékesítéseimet elemzem, akkor a ruházati kategóriák, vagyis az **Urban** (Városi), a **Rural** (Vidéki), a **Youth** (Fiatalok) és a **Mix** (Vegyes) kategóriák lehetnének a felső szintű téglalapjaim (ágaim).  A kategória-téglalapjaimon belül a kisebb téglalapok (levelek) az egyes kategóriák ruhagyártóihoz tartoznának, és ezek a kisebb téglalapok az eladási számok alapján lennének méretezve és színezve.  A fenti **Urban** ágban sok Maximus-ruhát értékesítenek, kevesebbet Natura- és Fama-ruhát, és nagyon kevés Leo-ruhát.  Így a fatérképemben az **Urban** ágban a Maximus kapná a legnagyobb téglalapot (a bal felső sarokban), valamivel kisebb téglalapok ábrázolnák a Naturát és a Famát, sok másik téglalap jelölné az egyéb eladott ruhákat, és egy egészen kicsi a Leót.  Az egyes levelek méretének és színének összevetésével más kategóriák eladásaival is összetudnám hasonlítani az eladásokat: minél nagyobb a téglalap és minél sötétebb a szín, annál nagyon értéket képvisel.
+Ha például az értékesítést elemzem, akkor valószínűleg a ruházati kategóriák (**Urban** (Város), **Rural** (Vidék), **Youth** (Fiatalok), és **Mix** (Vegyes)) szerepelnek majd a legfelső szintű téglalapokban, az úgynevezett *ágakban*.  A kategóriákat jelölő téglalapjaim kisebb téglalapokra, más néven *levelekre* tagolódnának, az adott kategória ruházati gyártóit jelképezve. Ezek a kisebb téglalapok pedig az eladott darabszámok alapján kapnák a méretüket és az árnyalatukat.  
+
+A fenti **Urban** ágban sok `Maximus` márkájú ruhát adtak el, `Natura` és `Fama` ruhákból valamivel kevesebb fogyott, a `Leo` márkából pedig keveset értékesítettek.  Így a fatérkép **Urban** ágában:
+* a `Maximus` rendelkezik a legnagyobb téglalappal a bal felső sarokban;
+* valamivel kisebb téglalapban jelenik meg a `Natura` és a `Fama`;
+* számos egyéb téglalap jelöli az összes többi ruházati márkát; és 
+* egy egészen kis méretű jut a `Leo` márkára.  
+
+Az egyéb ruházati kategóriákban értékesített tételek számát pedig az egyes levélcsomópontok mérete és árnyalata alapján hasonlíthatom össze: minél nagyobb és sötétebb egy adott téglalap, annál nagyobb értéket jelöl.
 
 ## <a name="when-to-use-a-treemap"></a>Mikor érdemes fatérképet használni
 A fatérképek használata nagyszerű választás, ha:
@@ -44,31 +52,31 @@ Szeretne előbb megnézni valaki mást, ahogyan létrehoz egy fatérképet?  Ugo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-Vagy hozzon létre saját fatérképet. Ez az útmutatás a Kiskereskedelmi elemzési mintát használja. Hogy követni tudja a lépéseket, jelentkezzen be a Power BI szolgáltatásba (ne a Desktopba), és válassza az **Adatok lekérése \> Minták \> Kiskereskedelmi elemzési minta \>  Kapcsolódás \> Ugrás az irányítópultra**  lehetőséget. Vizualizációkat csak akkor hozhat létre jelentésekben, ha jogosultsággal rendelkezik az adatkészlet és a jelentés szerkesztéséhez. A Power BI mintái szerkeszthetőek. Ha azonban mások osztanak meg Önnel jelentést, abban az esetben nem fog tudni új vizualizációkat létrehozni.
+Vagy hozzon létre saját fatérképet. Ez az útmutatás a Kiskereskedelmi elemzési mintát használja. Hogy követni tudja a lépéseket, jelentkezzen be a Power BI szolgáltatásba, és válassza az **Adatok lekérése \> Minták \> Kiskereskedelmi elemzési minta \> Kapcsolódás \> Ugrás az irányítópultra** lehetőséget. Vizualizációkat csak akkor hozhat létre jelentésekben, ha jogosultsággal rendelkezik az adatkészlet és a jelentés szerkesztéséhez. A Power BI mintái szerkeszthetőek. Azonban nem adhat vizualizációkat olyan jelentésekhez, amelyeket valaki más osztott meg Önnel.  
 
 1. Nyissa meg a „Kiskereskedelmi elemzési minta” jelentést az „Összes áruház” csempe kiválasztásával.    
 2. Nyissa meg a [Szerkesztő nézetet](../service-interact-with-a-report-in-editing-view.md), és válassza ki a **Sales** > **Last Years Sales** mértéket.   
    ![](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)   
 3. Konvertálja a diagramot fatérképpé.  
    ![](media/power-bi-visualization-treemaps/treemapconvertto_new.png)   
-4. Húzza az **Item** > **Category** elemet a **Csoport** gyűjtőbe. A Power BI ekkor létrehoz egy fatérképet, ahol a téglalapok méretei az összes értékesítést jelölik, a színeik pedig az egyes kategóriákat.  Lényegében egy olyan hierarchiát hozott létre, amely az összes értékesítés kategóriák szerinti relatív arányát jeleníti meg.  A **Mens** (Férfi) kategóriában található a legtöbb értékesítés, a **Hosiery** (Kötöttáru) kategóriában pedig a legkevesebb.   
-   ![](media/power-bi-visualization-treemaps/treemapcomplete_new.png)   
+4. Húzza az **Item** > **Category** elemet a **Csoport** gyűjtőbe. A Power BI létrehoz egy fatérképet, amelyen a téglalapok mérete az összes eladáson alapszik, a szín pedig a kategóriát jelöli.  Lényegében egy olyan hierarchiát hozott létre, amely az összes értékesítés kategóriák szerinti relatív arányát jeleníti meg.  A legtöbb eladás a **Men's** (Férfi) kategóriában van, a legkevesebb pedig a **Hosiery** (Harisnya) kategóriában.   
+   ![](media/power-bi-visualization-treemaps/power-bi-complete.png)   
 5. Húzza a **Store** > **Chain** elemet a **Részletek** gyűjtőbe a fatérképe kiegészítéséhez. Így már kategóriák és üzletláncok szerint is össze tudja hasonlítani a tavalyi év értékesítéseit.   
-   ![](media/power-bi-visualization-treemaps/treemap_addgroup_new.png)
+   ![](media/power-bi-visualization-treemaps/power-bi-details.png)
    
    > [!NOTE]
    > A Színtelítettség és a Részletek gyűjtők nem használható egyszerre.
    > 
    > 
-5. Helyezze a kurzort egy **Chain** elem fölé, hogy megjelenjen az adott **Kategória** elemleírása.  Ha például a **040-Juniors** téglalapban a **Lindseys** fölé helyezi a kurzort, akkor megjelenik a Juniors (Fiatalok) kategóriában található Lindsey-rész elemleírása.  
+5. Helyezze a kurzort egy **Chain** elem fölé, hogy megjelenjen az adott **Kategória** elemleírása.  Például, ha a kurzorral a **090-Home** téglalap **Fashions Direct** levelére mutat, akkor megjelenik a Home (Otthoni) kategória Fashion Direct részéhez tartozó elemleírás.  
    ![](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
-6. [Vegye fel a fatérképet egy irányítópult-csempeként (rögzítse a vizualizációt)](../consumer/end-user-tiles.md). 
+6. [Vegye fel a fatérképet egy irányítópult-csempeként (rögzítse a vizualizációt)](../service-dashboard-tiles.md). 
 7. [Mentse a jelentést](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Kiemelés és keresztszűrés
-A Szűrők panel használatáról a [Szűrő hozzáadása jelentéshez](../power-bi-report-add-filter.md) című cikk nyújt tájékoztatást.
+További információ a Szűrök ablaktábla használatáról: [Szűrők hozzáadása jelentésekhez](../power-bi-report-add-filter.md).
 
-Egy kategória vagy részlet kijelölése egy fatérképen keresztkiemelést és keresztszűrést végez a jelentés oldalon lévő többi vizualizációval és viszont. Ehhez vagy adjon hozzá egy vizualizációt ugyanehhez az oldalhoz, vagy másolja a fatérképet, és illessze be egy olyan jelentési oldalra, amelyen már találhatók más vizualizációk.
+Egy Kategória vagy Részlet kiemelése egy fatérképen keresztkiemelést és keresztszűrést végez a jelentésoldalon lévő többi vizualizáción, és fordítva. A lépések elvégzéséhez adjon vizualizációkat a jelentésoldalhoz, vagy másolja a fatérképet a jelentésben szereplő egyéb nem üres oldalak egyikéhez.
 
 1. A fatérképen válasszon egy kategóriát, vagy válasszon egy láncot egy kategórián belül.  Ez keresztkiemelést végez az oldalon található többi vizualizációval. A **050-Shoes** kiválasztása például megmutatja, hogy a tavalyi év cipőeladásai 3 640 471 $ értéket képviseltek, amelyből 2 174 185 $ a Fashion Directtől származott.  
    ![](media/power-bi-visualization-treemaps/treemaphiliting.png)
@@ -76,11 +84,10 @@ Egy kategória vagy részlet kijelölése egy fatérképen keresztkiemelést és
 2. A **Last Year Sales by Chain** (Előző évi értékesítések üzletlánc szerint) tortadiagramban válassza a **Fashions Direct** szeletet, ezzel keresztszűrést végezhet a fatérképen.  
    ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)    
 
-3. A keresztkiemelések és keresztszűrések használatának módját a [Vizualizációk közötti interakciók Power BI-jelentésekben](../consumer/end-user-interactions.md) című cikk ismerteti.
+3. A keresztkiemelések és keresztszűrések használatának módját a [Vizualizációk közötti interakciók Power BI-jelentésekben](../service-reports-visual-interactions.md) című cikk ismerteti.
 
 ## <a name="next-steps"></a>Következő lépések
-[Vizualizáció rögzítése az irányítópulton](../service-dashboard-pin-tile-from-report.md)  
-[Power BI – Alapfogalmak](../consumer/end-user-basic-concepts.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)  
+[Vízesésdiagramok a Power BI-ban](power-bi-visualization-waterfall-charts.md)
 
+[Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)

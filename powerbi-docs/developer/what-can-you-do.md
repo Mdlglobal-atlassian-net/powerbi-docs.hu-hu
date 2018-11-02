@@ -3,45 +3,65 @@ title: Mire használhatják a fejlesztők a Power BI-t?
 description: A Power BI lehetőségek széles tárházát kínálja a fejlesztők számára. Ezek a beágyazási lehetőségektől az egyéni vizualizációkig és az adatkészletek streameléséig terjednek.
 author: markingmyname
 ms.author: maghan
-ms.date: 05/25/2018
+manager: kfile
 ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-manager: kfile
-ms.openlocfilehash: 07fb8d365a6fe4a874b057a71a90a99fc8a9e5fa
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.date: 09/17/2018
+ms.openlocfilehash: ac35e0c61576e561afd495e51d814bc38ab0a3f5
+ms.sourcegitcommit: 9719eccf29298c9c673200350abc58281ef14869
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34564696"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46473977"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Mire használhatják a fejlesztők a Power BI-t?
 
-A fejlesztőknek több módszer is rendelkezésére áll ahhoz, hogy a Power BI-tartalmat alkalmazásokban használjanak. Többek között **beágyazást végezhetnek a Power BI-jal**, használhatnak **egyéni vizualizációkat** vagy **adatokat tölthetnek be a Power BI-ba**.
+A fejlesztőknek több módszer is rendelkezésére áll ahhoz, hogy a Power BI-tartalmat alkalmazásokban használjanak. Fejlesztőként ezekkel a lehetőségekkel a következő szolgáltatásokat építheti be: **beágyazás a Power BI-jal**, **egyéni vizualizációk** és **adatok leküldése a Power BI-ba**.
 
-## <a name="embedding"></a>Beágyazás
-A Power BI szolgáltatás (SaaS) és a Power BI Embedded szolgáltatás az Azure-ban (PaaS) API-kkal is rendelkezik az irányítópultok és jelentések beágyazásához. Ez azt jelenti, hogy a tartalmak (például irányítópultok, átjárók és alkalmazás-munkaterületek) beágyazásához egy funkciókészlet és a Power BI legújabb szolgáltatásai használhatók.
+## <a name="embedding-power-bi-content"></a>Power BI-tartalom beágyazása
 
-Használhatja az [Előkészítési eszközt](https://aka.ms/embedsetup), amellyel egyszerűen elvégezheti az első lépéseket, és letölthet egy mintaalkalmazást.
+A Power BI szolgáltatás (SaaS) és a Power BI Embedded szolgáltatás az Azure-ban (PaaS) API-kkal is rendelkezik az irányítópultok és jelentések beágyazásához. Ez azt jelenti, hogy a tartalmak beágyazásakor rendelkezésére állnak a Power BI legújabb szolgáltatásai (például irányítópultok, átjárók és alkalmazás-munkaterületek).
+
+A [beágyazást előkészítő eszközzel](https://aka.ms/embedsetup) gyorsan megteheti az első lépéseket és letölthet egy mintaalkalmazást.
 
 Válassza ki az Ön számára megfelelő megoldást:
+
 * Amennyiben az [ügyfelei számára végez beágyazást](embedding.md#embedding-for-your-customers), irányítópultokat és jelentéseket ágyazhat be olyan felhasználók számára, akik nem rendelkeznek Power BI-fiókkal. Futtassa a [Beágyazás az ügyfelek számára](https://aka.ms/embedsetup/AppOwnsData) megoldást.
+
 * A [Beágyazás a cég számra](embedding.md#embedding-for-your-organization) használatával kiterjesztheti a Power BI szolgáltatást. Futtassa a [Beágyazás a cég számára](https://aka.ms/embedsetup/UserOwnsData) megoldást.
 
 ![PBIE-minta](media/what-can-you-do/what-can-you-do-02.png)
 
-## <a name="develop-custom-visuals"></a>Egyéni vizualizációk létrehozása
-Az egyéni vizualizációk révén saját vizualizációkat hozhat létre, amelyeket a Power BI-jelentésekben használhat. Az egyéni vizualizációk TypeScriptben, a JavaScript egy bővített változatában készülnek. A TypeScript néhány speciális funkciót is támogat, és korai hozzáférést biztosít az ES6/ES7-funkciókhoz. A vizualizációk stílusa CSS-stíluslapokkal alakítható ki. A fejlesztők munkájának megkönnyítésére a Less előfordító programot használjuk. Ez támogat bizonyos összetettebb funkciókat, például a beágyazást, a változókat, a feltételeket és a ciklusokat. Ha nem szeretné használni ezeket a funkciókat, egyszerű CSS-kódot is írhat a Less-fájlba.
+További információ a Power BI-ba való beágyazásról a [Power BI-ba történő beágyazást](embedding.md) ismertető cikkben található.
+
+## <a name="developing-custom-visuals"></a>Egyéni vizualizációk létrehozása
+
+A Power BI-ban létrehozhat egyéni vizualizációkat, amelyek a vállalatára jellemző egyedi stílusban készülnek. Az egyéni vizualizációkat sok esetben fejlesztők hozzák létre. Akkor van rájuk szükség, amikor a Power BI-ban megtalálható vizualizációk nem felelnek meg tökéletesen egy feladathoz.
+
+Az egyéni vizualizációk révén saját vizualizációkat hozhat létre, amelyeket a Power BI-jelentésekben használhat. Az egyéni vizualizációk a JavaScript egy bővített változatában, a TypeScriptben készülnek. A TypeScript néhány speciális funkciót is támogat, és korai hozzáférést biztosít az ES6/ES7-funkciókhoz. A vizualizációk stílusa CSS-stíluslapokkal alakítható ki. A kényelem érdekében a Less előfordítót alkalmazzuk, amely támogat bizonyos különleges funkciókat, mint például: beágyazás, változók, feltételek, ciklusok stb. Ha nem szeretné használni ezeket a funkciókat, egyszerű CSS-kódot is írhat a Less-fájlba.
 
 ![CV-minta](media/what-can-you-do/powerbi-custom-visual-store.png)
 
-## <a name="push-data-into-power-bi"></a>Adatok leküldése a Power BI szolgáltatásba
-A Power BI API lehetővé teszi az adatok leküldését az adatkészletekbe. Ennek segítéségével kiegészítheti sorokkal az adatkészletekben lévő táblákat. Az irányítópultok csempéi vagy a jelentésekben lévő vizualizációk ezután tükrözik az új adatokat.
+További információ az egyéni vizualizációk fejlesztéséről az [egyéni vizualizációk fejlesztői eszközök használatával történő létrehozását](../service-custom-visuals-getting-started-with-developer-tools.md) ismertető cikkben található.
+
+## <a name="using-api-automation"></a>API-automatizálás használata
+
+A Power BI interaktív irányítópultokat jelenít meg, amelyek valós időben hozhatók létre és frissíthetők számos különböző adatforrásból. Bármilyen, REST-hívásokat támogató programnyelv használatával létrehozhat olyan alkalmazásokat, amelyek valós időben integrálhatók a Power BI-irányítópultokkal. Az alkalmazásokba Power BI-csempéket és jelentéseket is integrálhat.
+
+A fejlesztők létrehozhatnak saját adatmegjelenítéseket is, amelyek az interaktív jelentésekben és irányítópultokon használhatók.
 
 ![Adatminta leküldése](media/what-can-you-do/powerbi-push-data.png)
 
+A [Mire használhatják a fejlesztők a Power BI API-t?](overview-of-power-bi-rest-api.md) című rész több, a Power BI API-k használatával elvégezhető feladatot mutat be.
+
 ## <a name="next-steps"></a>Következő lépések
+
 [Beágyazás a Power BI szolgáltatással](embedding.md)  
-[Egyéni vizualizációk közzététele az Office áruházban](office-store.md)  
-[Adatok küldése az irányítópultokra](walkthrough-push-data.md)
+
+[Egyéni Power BI-vizualizáció fejlesztése](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
+
+[Mire használhatják a fejlesztők a Power BI API-t?](overview-of-power-bi-rest-api.md)
+
+[Power BI Fejlesztői központ](https://powerbi.microsoft.com/developers/)

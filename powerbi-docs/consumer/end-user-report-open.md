@@ -1,84 +1,99 @@
 ---
-title: A Power BI szolgáltatásban nyisson meg egy jelentést Olvasás nézetben vagy Szerkesztés nézetben
-description: Power BI-jelentés megnyitása Olvasó vagy Szerkesztő nézetben
+title: Jelentés megtekintése a Power BI szolgáltatásban
+description: Nyisson meg egy Power BI-jelentést Olvasó nézetben.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 10/10/2018
 ms.author: mihart
-ms.openlocfilehash: fe1916b2b287dffd59bf4535cc07e13d10d01321
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 4d37c1389628078466d8fedb290d928c3f02e7d5
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565797"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112015"
 ---
-# <a name="open-a-report-in-power-bi-service-apppowerbicom"></a>Jelentés megnyitása a Power BI szolgáltatásban (az app.powerbi.com webhelyen)
-A jelentések elérhetőek a Power BI szolgáltatásban, a Power BI Desktopban, a Power BI-mobilalkalmazásban, sőt a Power BI Embeddedben is. Ebben a cikkben azt feltételezzük, hogy a jelentést a ***Power BI szolgáltatásban*** nyitotta meg.
+# <a name="view-a-report-in-power-bi-service-apppowerbicom"></a>Jelentés megtekintése a Power BI szolgáltatásban (app.powerbi.com)
+A jelentések egy vagy több oldalnyi vizualizációból állnak. A jelentéseket a Power BI *jelentéstervezői* hozzák létre, és [megosztják őket Önnel közvetlenül](end-user-shared-with-me.md) vagy egy [alkalmazás](end-user-apps.md) részeként. 
 
-A Power BI szolgáltatásban a jelentések két módban tekinthetők meg és kezelhetők: az [Olvasó és a Szerkesztési nézetben](end-user-reading-view.md). Az Olvasó nézet minden felhasználó számára elérhető, és speciálisan az adatok *felhasználói* számára lett kialakítva, míg a Szerkesztő nézet csak a jelentések *létrehozói* és tulajdonosai számára érhető el. 
+A jelentések megnyitásának számos különböző módja van, amelyek közül most kettőt mutatunk be: a kezdőlapról, és az irányítópultról történő megnyitást. 
 
-## <a name="open-a-report-from-a-workspace-via-the-reports-content-view-list"></a>Jelentés megnyitása munkaterületről (a **Jelentések** tartalom nézet listájában)
+<!-- add art-->
 
-1. Egy munkaterületről kiindulva válassza a **Jelentések** lapot, hogy megjelenítse az adott munkaterület összes jelentését.  
+
+## <a name="open-a-report-from-your-home-page"></a>Jelentés megnyitása a kezdőlapról
+Nyissunk meg egy Önnel közvetlenül megosztott jelentést, majd egy olyat, amely egy alkalmazás részeként lett megosztva Önnel.
+
+   ![Kezdőlap](./media/end-user-report-open/power-bi-home.png)
+
+### <a name="open-a-report-that-has-been-shared-with-you"></a>Önnel megosztott jelentés megnyitása
+A Power BI *tervezői* a fenti menüsávon lévő **Megosztás** gombra kattintva közvetlenül oszthatnak meg Önnel jelentéseket. Az ezúton megosztott tartalmak a bal oldali navigációs sávon található **Velem megosztva** tárolóban, valamint a kezdőlap **Velem megosztva** szakaszában jelennek meg.
+
+1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com).
+
+2. A kezdőlap megnyitásához a bal oldali navigációs sávon kattintson a **Kezdőlap (előnézet)** gombra.  
+
+   ![Kezdőlap](./media/end-user-report-open/power-bi-select-home.png)
    
-   ![Munkaterület Jelentések lapja](./media/end-user-report-open/power-bi-open-report.png)
-2. Válassza ki egy jelentés nevét, és nyissa meg Olvasó nézetben.  
+3. Görgessen le a **Velem megosztva** szakaszig. Keresse meg a jelentés ikont ![jelentés ikon](./media/end-user-report-open/power-bi-report-icon.png). Ezen a képernyőképen két jelentés szerepel: a *Financial* és a *Northwind*. 
    
-    ![jelentés az Olvasó nézetben](./media/end-user-report-open/power-bi-reading-view.png)
-3. [Az Olvasó nézetben sokféle lehetősége van](end-user-reading-view.md).  Ez egy többoldalas jelentésminta, feltárásához válassza ki az egyes oldalakat a jelentésvászon alján. 
+   ![a kezdőlap Velem megosztva része](./media/end-user-report-open/power-bi-shared.png)
+
+4. A jelentés megnyitásához egyszerűen kattintson az egyik jelentéskártyára.
+
+   ![jelentés oldala](./media/end-user-report-open/power-bi-report1.png)
+
+5. Figyelje meg az alul található lapokat. Minden fül egy *jelentésoldalt* jelöl. Jelenleg az *IT Spend Trend* (Informatikai kiadások trendje) oldal van megnyitva. Kattintson egy másik fülre a jelentés adott oldalának megnyitásához. 
+
+   ![jelentésoldal fülei](./media/end-user-report-open/power-bi-tabs.png)
+
+6. Jelenleg csak a jelentésoldal egy részét látjuk. Az oldal megjelenítésének (nagyításának) módosításához válassza a **Nézet** > **Laphoz igazítás** lehetőséget.
+
+   ![nagyítás módosítása](./media/end-user-report-open/power-bi-fit.png)
+
+   ![laphoz igazítás](./media/end-user-report-open/power-bi-report2.png)
+
+### <a name="open-a-report-that-is-part-of-an-app"></a>Alkalmazás részét képező jelentés megnyitása
+A munkatársaitól kapott vagy az AppSource-ból szerzett alkalmazásokat a kezdőlapon és a bal oldali navigációs sáv **Alkalmazások** tárolóján érheti el. Az irányítópultok és jelentések együttesét [alkalmazásnak](end-user-apps.md) nevezzük.
+
+1. Lépjen vissza a kezdőlapra: kattintson a **Kezdőlap (előnézet)** elemre a bal oldali navigációs sávon.
+
+7. Görgessen le a **Saját alkalmazások** szakaszig.
+
+   ![Kezdőlap](./media/end-user-report-open/power-bi-my-apps.png)
+
+8. A megnyitáshoz kattintson az egyik alkalmazásra. Az alkalmazás *tervezője* által megadott beállításoktól függően az alkalmazás egy irányítópultot vagy egy jelentést nyit meg. Ha az alkalmazásra kattintva:
+    - megnyílik a jelentés, készen is van.
+    - egy irányítópult nyílik meg, tekintse meg a következő szakaszt: [Jelentés megnyitása irányítópultról](#Open-a-report-from-a-dashboard).
+
+
 
 ## <a name="open-a-report-from-a-dashboard"></a>Jelentés megnyitása irányítópultról
-Sokféleképpen meg lehet nyitni egy jelentést, például egy irányítópultról kiindulva egy, az adott jelentésből létrehozott csempe kiválasztásával.  A csempe kiválasztása megnyitja a jelentést Olvasó nézetben. Annak érdekében, hogy követni tudja a lépéseket, nyissa meg az [Értékesítési és marketing minta irányítópultját](../sample-datasets.md).
+A jelentések irányítópultokról is megnyithatók. A legtöbb estben az irányítópultok csempéi jelentésekből vannak *rögzítve*. Egy adott csempére kattintva megnyílik a csempe létrehozásához használt jelentés. 
 
-1. Nyissa meg az irányítópultot és válasszon ki egy csempét.
-
-   Ha olyan csempét nyit meg, amelyet a [Q&A használatával hoztak létre](../service-dashboard-pin-tile-from-q-and-a.md), akkor a Q&A képernyő is megnyílik. Ha olyan csempét választ, amelyet az [irányítópulton található **Csempe hozzáadása** widget](../service-dashboard-add-widget.md) használatával hoztak létre, akkor megnyitja a widget szerkesztésére szolgáló varázslót.  
-
-2.  Ebben a példában a „Total Units YTD...” (Összes egység az év elejétől...) oszlopdiagram címét választottuk.
+1. Az irányítópulton kattintson egy csempére. Ebben a példában a „Total Units YTD...” (Összes egység az év elejétől...) oszlopdiagram címét választottuk.
 
     ![irányítópult egy kijelölt csempével](./media/end-user-report-open/power-bi-dashboard.png)
 
-3.  A kapcsolódó jelentés Olvasó nézetben nyílik meg. Figyelje meg, hogy most a „YTD Category” oldalon vagyunk. Ez a jelentésoldal tartalmazza azt az oszlopdiagramot, amelyet az irányítópulton választottunk ki.
+2.  Ekkor megnyílik a hozzá tartozó jelentés. Figyelje meg, hogy most a „YTD Category” oldalon vagyunk. Ez a jelentésoldal tartalmazza azt az oszlopdiagramot, amelyet az irányítópulton választottunk ki.
 
-    ![megnyitott jelentés az Olvasó nézetben](./media/end-user-report-open/power-bi-report.png)
+    ![megnyitott jelentés az Olvasó nézetben](./media/end-user-report-open/power-bi-report-new.png)
 
-4. Maradjon az Olvasó nézetben, vagy válassza a **Jelentés szerkesztése** lehetőséget, és nyissa meg a jelentést Szerkesztési nézetben. Ne feledje, hogy csak a szerkesztési jogosultsággal rendelkezők nyithatják meg a jelentést Szerkesztési nézetben.
+> [!NOTE]
+> Nem minden csempe mutat jelentésekre. Ha olyan csempét nyit meg, amelyet a [Q&A használatával hoztak létre](../service-dashboard-pin-tile-from-q-and-a.md), akkor a Q&A képernyő is megnyílik. Ha olyan csempét nyit meg, amelyet az [irányítópult **Csempe felvétele** vezérlőjének használatával hoztak létre](../service-dashboard-add-widget.md), akkor a **Csempe szerkesztése** varázsló is megnyílik.  
 
-    ![Jelentésszerkesztő a Jelentés szerkesztése ikonnal](./media/end-user-report-open/power-bi-edit-report.png)
-
-## <a name="create-a-brand-new-report-from-a-dataset"></a>Új jelentés létrehozása adatkészletből
-A jelentés megnyitásának van még egy újabb módja is: a megnyitás adathalmazból. Ha adathalmazzal kezd, a jelentésvászon üres lesz, ezért ezt a módszert a jelentések *létrehozóinak* ajánljuk, akik saját adathalmazt használva szeretnének új jelentést létrehozni. A fentiekhez hasonlóan ahhoz, hogy követni tudja a lépéseket, töltse le az [Értékesítési és marketing minta alkalmazását](../sample-datasets.md).
-
-1. Kezdje azon a munkaterületen, amely azt az adathalmazt tartalmazza, amelyet a jelentés alapjául szeretne használni.
-
-   ![bal oldali navigációs ablak az alkalmazás munkaterületeivel](./media/end-user-report-open/power-bi-workspace.png)
-
-2. Válassza az **Adathalmazok** lapot, amivel megjelenítheti a munkaterület összes adathalmazát. Ezt az **Adathalmaz** tartalomnézeti listájának nevezzük.
-   
-   ![adatkészletek listája](./media/end-user-report-open/power-bi-dataset.png)
-
-1. Keresse meg az adathalmazt, és válassza a **Jelentés létrehozása** ikont, amellyel az adathalmazt Szerkesztési nézetben nyitja meg. A jelentést csak akkor tudja megnyitni, ha szerkesztési jogosultsággal rendelkezik hozzá. 
-   
-    ![adatkészlet a Jelentés létrehozása ikonnal](./media/end-user-report-open/power-bi-create-report.png)
-
-3. Az adathalmaz megnyílik a jelentésszerkesztőben. A jobb oldalon találja az adatmezőket. Ezeket használva máris elkezdheti a vizualizációk létrehozását. 
-
-   ![A jelentésvászon](./media/end-user-report-open/power-bi-blank-canvas.png)
 
 ##  <a name="still-more-ways-to-open-a-report"></a>További lehetőségek a jelentés megnyitására
 Ha már otthonosabban mozog a Power BI szolgáltatásban, minden bizonnyal tudni fogja, mely munkafolyamatok a legkényelmesebbek az Ön számára. Íme még néhány további lehetőség a jelentések megnyitásához:
-- A bal oldali navigációs panelen válassza a **Kedvencek**, **Legutóbbi**, **Alkalmazások** elemet, majd a **Velem megosztott** lehetőséget. 
-- A [Kapcsolódó megtekintése](end-user-related.md) használata
-- E-mailben, ha valaki [Önnel osztott meg](../service-share-reports.md) jelentést, vagy ha [Riasztást állít be](../service-set-data-alerts.md).    
-- Az [Értesítési központból](end-user-notification-center.md)    
+- A bal oldali navigációs panelen a **Kedvencek**, majd a **Legutóbbi** lehetőséget választva;    
+- A [Kapcsolódó megtekintése](end-user-related.md) használata    
+- E-mailben, ha valaki [megosztja Önnel](../service-share-reports.md) vagy Ön [riasztást állít be](../service-set-data-alerts.md);    
+- Az [Értesítési központból]    (end-user-notification-center.md);    
 - és még néhány további lehetőség
 
 ## <a name="next-steps"></a>Következő lépések
-A [Power BI jelentéseiről itt talál](end-user-reports.md) további információkat
-
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)  
+[A jelentéseket számos különböző módon kezelheti](end-user-reading-view.md).  Kezdésként kattintson a jelentésvászon alsó részén található fülekre.
 

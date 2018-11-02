@@ -1,22 +1,22 @@
 ---
 title: Power BI-jelentés paramétereinek megadása az URL-cím használatával
 description: A jelentések szűrhetők az URL-cím lekérdezési sztringjének paramétereivel, akár egynél több mezőre is.
-author: mihart
-ms.author: mihart
-manager: annebe
+author: maggiesMSFT
+ms.author: maggies
+manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 10/01/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 1124163b985f575df08a9ba4f065c6a6b1abf54c
-ms.sourcegitcommit: cca21f8089e71b595d3aca30c95f12e4bbf767cc
+ms.openlocfilehash: 562af0b21c4ecd4617de0e524cca20ec6935ca7a
+ms.sourcegitcommit: 31f9da5f562cd02a729b6f012b4b3326416adb0e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45626031"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48232926"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával
 
@@ -106,7 +106,7 @@ A Power BI az **and** operátoron kívül sok továbbit is támogat. Ezek az ope
 |**gt**     | nagyobb, mint        |nem | igen | igen  | termék/ár gt 20
 |**le**     |   kisebb vagy egyenlő, mint      | nem | igen | igen  | termék/ár le 100
 |**lt**     |  kisebb, mint       | nem | igen | igen |  termék/ár lt 20
-|**in****     |  a következők között van       | nem | nem |  igen | Diák/Életkor in (27, 29)
+|**in****     |  a következők között van       | igen | igen |  igen | Diák/Életkor in (27, 29)
 
 
 \** az **in** használatakor az **in** operátortól jobbra lévő értékek zárójelek közötti, vesszővel elválasztott listaként, vagy egy kollekciót megadó kifejezésként adhatók meg.
@@ -127,18 +127,18 @@ A Power BI URL-címekben a szűrők az alábbi formátumú számokat tartalmazha
 
 A Power BI az OData V3 és V4 **Date** és **DateTimeOffset** adattípusokat is támogatja.  A dátumok az EDM formátum (2019-02-12T00:00:00) használatával vannak ábrázolva. Ez azt jelenti, hogy ha a dátum ÉÉÉÉ-HH-NN formátumban van megadva, akkor a Power BI azt ÉÉÉÉ-HH-NNT00:00:00 formátumban értelmezi.
 
-Miért számít ez a megkülönböztetés? Tegyük fel, hogy létrehoz egy **Table/Date gt 2018-08-03** lekérdezésisztring-paramétert.  Az eredmények között lesz 2018. augusztus 3., vagy csak 2018. augusztus 4-étől kezdődnek? Mivel a Power BI a lekérdezést **Table/Date gt 2018-08-03T00:00:00** formára alakítja, az eredményhalmaz minden dátumot tartalmaz, amelynek idő-része nem nulla, ugyanis ezek a dátumok nagyobbak, mint **2018-08-03T00:00:00**.
+Miért számít ez a megkülönböztetés? Tegyük fel, hogy létrehoz egy **Table/Date gt 2018-08-03** lekérdezésisztring-paramétert.  Az eredmények között lesz 2018. augusztus 3., vagy csak 2018. augusztus 4-étől kezdődnek? Mivel a Power BI **Táblázat/Dátum gt 2018-08-03T00:00:00** formátumra fordítja le a lekérdezést, az eredményekben minden nem nulla időösszetevővel rendelkező dátum szerepel, mert azok a **2018-08-03T00:00:00** dátumnál nagyobbak.
 
 ## <a name="special-characters-in-url-filters"></a>Speciális karakterek URL-szűrőkben
 
-A speciális karakterek és szóközök igényelnek némi további formázást. Ha lekérdezése szóközöket, kötőjeleket vagy más nem ASCII-karaktereket tartalmaz, akkor ezek elé szúrja be a **_x** *átléptető kódot* és a négyjegyű **Unicode** kódot. Ha a Unicode 4 karakternél rövidebb, akkor egészítse ki nullákkal. Az alábbiakban néhány példa következik.
+A speciális karakterek és szóközök igényelnek némi további formázást. Ha a lekérdezés szóközöket, kötőjeleket vagy egyéb nem ASCII-karaktereket tartalmaz, a speciális karakterek előtagjaként használjon olyan *feloldókaraktert*, amely aláhúzásjellel és egy X karakterrel (**_x**) kezdődik, majd a 4 számjegyű **Unicode**-karakter után még egy aláhúzásjelet tartalmaz. Ha a Unicode-karakter kevesebb mint 4 számjegyből áll, akkor nullákkal kell kiegészíteni. Az alábbiakban néhány példa következik.
 
 |Azonosító  |Unicode  | Kódolás a Power BI-ban  |
 |---------|---------|---------|
-|**Táblázat neve**     | Szóköz: 0x20        |  Table_x0020_Name       |
-|**Column**@**Number**     |   @: 0x40     |  Column_x0040_Number       |
-|**[Column]**     |  [:0x005B ]:0x005D       |  _x005B_Column_x005D       |
-|**Column+Plus**     | +: 0x2B        |  Column_x002B_Plus       |
+|**Táblázat neve**     | A szóköz kódja: 0x20        |  Table_x0020_Name       |
+|**Column**@**Number**     |   A @ kódja: 0x40     |  Column_x0040_Number       |
+|**[Column]**     |  A [ kódja: 0x0058, a ] kódja pedig: 0x0050       |  _x005B_Column_x005D       |
+|**Column+Plus**     | A + kódja: 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3 ![speciális karaktereket megjelenítő táblázatvizualizáció](media/service-url-filters/power-bi-special-characters1.png)
 
@@ -159,9 +159,9 @@ Tegye közzé a jelentést a Power BI szolgáltatásban, majd az URL-cím lekér
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Szűrt jelentésből származó csempe rögzítése
 
-Miután lekérdezésisztring-paraméterek használatával szűrte a jelentést, abból származó vizualizációkat rögzíthet az irányítópulton.  Az irányítópulton lévő csempe a szűrt adatokat jeleníti meg, a csempe kiválasztásakor pedig megnyílik a létrehozásához használt jelentés.  Az URL-címmel alkalmazott szűrés azonban nem lesz a jelentéssel együtt mentve, és az irányítópult csempéjének kiválasztása után a jelentés szűretlen állapotban nyílik meg.  Ez azzal jár, hogy az irányítópult csempéjén látható adatok nem egyeznek meg azokkal, amelyek a jelentésben lévő vizualizáción megjelennek.
+Miután lekérdezésisztring-paraméterek használatával szűrte a jelentést, abból származó vizualizációkat rögzíthet az irányítópulton.  Az irányítópulton található csempe a szűrt adatokat jeleníti meg, az irányítópult csempéjére kattintva pedig megnyílik a létrehozásához használt jelentés.  Az URL-címmel alkalmazott szűrés azonban nem lesz a jelentéssel együtt mentve, és az irányítópult csempéjének kiválasztása után a jelentés szűretlen állapotban nyílik meg.  Ez azt jelenti, hogy az irányítópult csempéjén megjelenített adatok nem egyeznek a jelentésben szereplő vizualizációban megjelenített adatokkal.
 
-Ez akkor lehet hasznos, ha különböző eredményeket szeretne látni: szűrve az irányítópulton és szűrés nélkül a jelentésben.
+Ez akkor hasznos, ha különböző eredményeket szeretne megjeleníteni: a szűrt adatokat az irányítópulton, a nem szűrt adatokat pedig a jelentésben.
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 
@@ -171,6 +171,7 @@ Lekérdezésisztring-paraméterek használatakor néhány szemponttal érdemes t
 * A Power BI jelentéskészítő kiszolgálón [adhat át jelentésparamétereket](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) úgy, hogy belefoglalja őket a jelentés URL-címébe. Ezek az URL-paraméterek nincsenek előtaggal ellátva, mert a rendszer közvetlenül átadja őket a jelentésfeldolgozó motornak.
 * A lekérdezési sztringgel végzett szűrés [webes közzététellel](service-publish-to-web.md) és Power BI Embedded használatával nem működik.   
 * A long adattípus maximális értéke a JavaScript korlátozásai miatt 2^53-1.
+* A jelentés URL-címének szűrői legfeljebb 10 kifejezést tartalmazhatnak (10 kifejezést, AND operátorral).
 
 ## <a name="next-steps"></a>Következő lépések
 

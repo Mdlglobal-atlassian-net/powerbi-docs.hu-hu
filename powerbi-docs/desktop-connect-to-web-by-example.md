@@ -1,5 +1,5 @@
 ---
-title: Adatok kinyerése egy weblapról példa alapján a Power BI Desktopban (előzetes verzió)
+title: Adatok kinyerése egy weblapról példa alapján a Power BI Desktopban
 description: Adatok kinyerése egy weblapról a lekérdezni kívánt adatok egy példájának megadásával
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 55c1a70e054b6bb6ff06c7fe6f83b58d8b1f26f3
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: f90f2ea4737fc5c98df4d171f8e1e65c2704607d
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290982"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336806"
 ---
-# <a name="get-data-from-a-web-page-by-providing-an-example-preview"></a>Adatgyűjtés egy weblapról példa megadásával (előzetes verzió)
+# <a name="get-data-from-a-web-page-by-providing-an-example"></a>Adatok lekérése egy weblapról egy példa megadásával
 
 A weboldalak adatainak letöltésével a felhasználók egyszerűen nyerhetnek ki és importálhatnak adatokat a **Power BI Desktopba**. A weboldalak adatai azonban nem könnyen kiolvasható, rendezett táblázatokban találhatók, ezért egy ilyen oldalról még akkor is nehéz lehet adatokat gyűjteni, ha azok strukturáltak és egységesek. 
 
@@ -26,13 +26,6 @@ Létezik megoldás. Az **Adatgyűjtés a webről példa alapján** funkcióval t
 ![Adatgyűjtés a webről példa alapján](media/desktop-connect-to-web-by-example/web-by-example_01.png)
 
 
-## <a name="enabling-the-preview-feature-get-data-from-web-by-example"></a>Az Adatgyűjtés a webről példa alapján funkció előzetes verziójának engedélyezése
-
-Az **Adatgyűjtés a webről példa alapján** előzetes verziójú funkció, és azt a **Power BI Desktopban** engedélyezni kell. A funkció engedélyezéséhez válassza a **Fájl > Lehetőségek és beállítások > Lehetőségek > Előzetes verziójú funkciók** lehetőséget, majd jelölje be az **Újdonságok a webes felületen** jelölőnégyzetet. Miután ezt beállította, újra kell indítania a Power BI Desktopot.
-
-![előzetes verziójú funkció engedélyezése](media/desktop-connect-to-web-by-example/web-by-example_02.png)
-
-Az előzetes verziójú funkció engedélyezése után már készen áll a használatra. 
 
 ## <a name="using-get-data-from-web-by-example"></a>Az Adatgyűjtés a webről példa alapján funkció használata
 

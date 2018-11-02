@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 10/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 71894a801f0c993abaaedc92d4172da67b76f7a0
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 3e94dc516f41d764394828309ba4b612083d4583
+ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974207"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49359723"
 ---
 # <a name="aggregations-in-power-bi-desktop-preview"></a>Aggregációk a Power BI Desktopban (előzetes verzió)
 
@@ -191,9 +191,9 @@ Ezután meghatározzuk az aggregációleképezéseket az **Aggregációk kezelé
 
 ![Az Aggregációk kezelése párbeszédablak a Driver Activity Agg (Aggr. sofőrtevékenység) tábla esetén](media/desktop-aggregations/aggregations_11.jpg)
 
-Az alábbi táblázat a **Sales Agg** (Aggr. értékesítések) tábla aggregációit jeleníti meg.
+Az alábbi táblázat a **Driver Activity Agg** (Aggr. sofőrtevékenység) tábla aggregációit jeleníti meg.
 
-![a Sales Agg (Aggr. értékesítések) aggregációs tábla](media/desktop-aggregations/aggregations-table_02.jpg)
+![A Driver Activity Agg (Aggr. sofőrtevékenység) aggregációnak táblája](media/desktop-aggregations/aggregations-table_02.jpg)
 
 ### <a name="group-by-columns"></a>Csoportosítás oszlopok szerint
 
@@ -229,9 +229,9 @@ A **Részlettáblán** megadott oszlop azért a **Driver Activity** (Sofőrtevé
 
 ![Az Aggregációk kezelése párbeszédablak](media/desktop-aggregations/aggregations_14.jpg)
 
-Az alábbi táblázat a **Sales Agg** (Aggr. értékesítések) tábla aggregációit jeleníti meg.
+Az alábbi táblázat a **Driver Activity Agg2** (Aggr. sofőrtevékenység2) tábla aggregációit jeleníti meg.
 
-![A Sales Agg (Aggr. értékesítések) aggregációs tábla](media/desktop-aggregations/aggregations-table_03.jpg)
+![A Driver Activity Agg2 (Aggr. sofőrtevékenység2) aggregációnak táblája](media/desktop-aggregations/aggregations-table_03.jpg)
 
 ## <a name="aggregations-based-on-group-by-columns-combined-with-relationships"></a>Oszlopok szerinti csoportosításon alapuló aggregációk kapcsolatokkal
 

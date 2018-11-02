@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 922352c0cdbacd57d3e6706d490b3cc7e65ab8f6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 798b1daa13079e69788bc977f37748531e38f431
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44744502"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909245"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -22,6 +22,25 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+
+## <a name="september-2018"></a>2018. szeptember
+
+### <a name="phone-report-editing-in-the-browser-all-devices"></a>Telefonos jelentések szerkesztése a böngészőben (minden eszköz)
+
+Mostantól nem csak a Power BI Desktopban, hanem a Power BI szolgáltatásban közzétett jelentésekhez is létrehozhat telefonosjelentés-elrendezéseket. A böngésző Szerkesztés módjában lehet létrehozni őket.
+
+### <a name="dashboard-commenting-ios-and-android"></a>Megjegyzések hozzáfűzése az irányítópultokon (iOS és Android) 
+
+Az adatokkal kapcsolatos megjegyzéseket közvetlenül az irányítópultokon és az egyes csempéken is közzéteheti. Az irányítópultot megtekintő személyek látni fogják a megjegyzéseket. A szervezet tagjait is bevonhatja a beszélgetésbe @mentioning útján. Az @mentioned személyek egy leküldéses értesítést fognak kapni a mobiltelefonjukon, benne az Ön üzenetével.
+
+Jelenleg iOS- és Android-eszközökön érhető el. A Windows-támogatás hamarosan elérhetővé válik.
+
+Olvassa el az [irányítópulti megjegyzésekről szóló Power BI-blogbejegyzést](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/).
+
+### <a name="single-sign-on-windows"></a>Egyszeri bejelentkezés (Windows)
+
+Az egyszeri bejelentkezés (SSO) az egyik legtöbbet kért képesség a Windowshoz készült Power BI Mobile esetében. Mostantól nem csak arra használhatja az elsődleges szervezeti fiókját, hogy bejelentkezzen a tartományhoz csatlakoztatott Windows rendszerű mobileszközökre, hanem a segítségével a Power BI szolgáltatásba is zökkenőmentesen bejelentkezhet. További információk az [SSO-ról és a Windows-mobilalkalmazásokról](mobile-windows-10-app-single-sign-on-sso.md).
+
 
 ## <a name="july-2018"></a>2018. július
 
@@ -177,7 +196,7 @@ Olvassa el a [mobilalkalmazások funkcióinak 2017. júliusi összefoglalását]
 
 ### <a name="june-2107"></a>2017. június
 #### <a name="all-devices"></a>Minden eszköz
-**Alkalmazások megjelölése kedvencként** Már eddig is lehetőség volt megjelölni egy irányítópultot kedvencként. A közelmúltban a [Power BI elérhetővé tett alkalmazásokat](../../service-install-use-apps.md), és mostantól ezeket is meg lehet jelölni kedvencként. 
+**Alkalmazások megjelölése kedvencként** Már eddig is lehetőség volt megjelölni egy irányítópultot kedvencként. A közelmúltban a [Power BI elérhetővé tett alkalmazásokat](../../service-create-distribute-apps.md), és mostantól ezeket is meg lehet jelölni kedvencként. 
 
 ### <a name="may-2017"></a>2017. május
 #### <a name="all-devices"></a>Minden eszköz
@@ -498,7 +517,7 @@ Az összes januári fejlesztés már elérhető a 2015 decemberében kiadott, [W
 
 **R-csempék és webes widgetek** Ezek az új csempetípusok is megtekinthetők az irányítópultjain mobileszközön.
 
-**Bing-irányítópultok** A Power BI szolgáltatásban mostantól létrehozhat [Bing keresési eredményeket tartalmazó irányítópultokat](../../service-connect-to-services.md), és megtekintheti őket mobileszközén.
+**Bing-irányítópultok** A Power BI szolgáltatásban mostantól létrehozhat [Bing keresési eredményeket tartalmazó irányítópultokat](../end-user-connect-to-services.md), és megtekintheti őket mobileszközén.
 
 **Jelentésoldalak rögzítése csempékként az irányítópultokon** Mostantól teljes jelentésoldalakat rögzíthet az irányítópultokra a Power BI szolgáltatásban, így megtekintheti a jelentésoldalakat iPhone-ján vagy androidos telefonján a Power BI alkalmazásban.
 
