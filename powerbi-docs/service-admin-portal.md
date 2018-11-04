@@ -7,34 +7,35 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/28/2017
+ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 2f10ead5d08efa12cae05aeb6f2e3d3068636f77
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 02829adb386cc746715a34300a42aba616dc2d60
+ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396911"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50252491"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI felügyeleti portál
 
-A felügyeleti portál a Power BI bérlői felügyeletét teszi lehetővé a munkahelyen. Olyan lehetőségeket kínál, mint például a használati metrikák, hozzáférés az Office 365 felügyeleti központjához, valamint a beállítások.
+A felügyeleti portál segítségével kezelheti a szervezetéhez tartozó Power BI-*bérlőt*. A portál olyan lehetőségeket kínál, mint például a használati metrikák, hozzáférés az Office 365 felügyeleti központjához, valamint a beállítások.
 
-A cégnél a Power BI bérlői felügyelete a Power BI felügyeleti portálján keresztül történik. A felügyeleti portálhoz az Office 365 minden globális rendszergazdája hozzáférhet, valamint olyan felhasználók is, akik Power BI-szolgáltatásadminisztrátori szerepkört kaptak. A Power BI szolgáltatás rendszergazdai szerepkörére vonatkozó további információkat [a Power BI rendszergazdai szerepkörét ismertető](service-admin-role.md) témakör tartalmaz.
-
-Az összes felhasználó láthatja a **Felügyeleti portál** menüpontot a fogaskerék ikonja alatt. Ha nem rendszergazdáról van szó, a felhasználó csak a **Premium-beállítások** szakaszt látja, és csak azok a kapacitások jelennek meg, amelyek felügyeletéhez a felhasználó jogosultsággal rendelkezik.
+Az Office 365 minden globális rendszergazdája hozzáférhet a teljes felügyeleti portálhoz, valamint olyan felhasználók is, akik Power BI-szolgáltatásadminisztrátori szerepkört kaptak. Ha még nem kapott ilyen szerepkörbe, csak a **kapacitásbeállításokat** láthatja a portálon. A Power BI szolgáltatás rendszergazdai szerepkörére vonatkozó további információkat [a Power BI rendszergazdai szerepkörét ismertető](service-admin-role.md) témakör tartalmaz.
 
 ## <a name="how-to-get-to-the-admin-portal"></a>A felügyeleti portál elérése
 
 A Power BI felügyeleti portál eléréséhez az adott fiókot **globális rendszergazdaként** kell megjelölni az Office 365-ben vagy az Azure Active Directoryban, vagy Power BI-szolgáltatásadminisztrátori szerepkört kell hozzárendelni. További információ a Power BI-szolgáltatásadminisztrátori szerepkörről: [A Power BI rendszergazdai szerepkörének ismertetése](service-admin-role.md). A Power BI felügyeleti portál eléréséhez tegye az alábbiakat.
 
 1. Válassza ki a Beállítások fogaskereket a Power BI szolgáltatás jobb felső sarkában.
-2. Válassza a **Felügyeleti portál** lehetőséget.
 
-![](media/service-admin-portal/powerbi-admin-settings.png)
+1. Válassza a **Felügyeleti portál** lehetőséget.
 
-A portálon hat lap található. Ezek leírását az alábbiakban láthatja.
+    ![A felügyeleti portál beállításai](media/service-admin-portal/powerbi-admin-settings.png)
+
+A portálon hét lap található. A cikk további részében ezen lapokról olvashat.
+
+![Navigálás a felügyeleti portálon](media/service-admin-portal/powerbi-admin-landing-page.png)
 
 * [Használati metrikák](#usage-metrics)
 * [Felhasználók](#users)
@@ -42,12 +43,11 @@ A portálon hat lap található. Ezek leírását az alábbiakban láthatja.
 * [Bérlői beállítások](#tenant-settings)
 * [Premium-beállítások](#premium-settings)
 * [Beágyazási kódok](#embed-codes)
-* [Szervezeti vizualizációk](#Organization-visuals)
-
-![](media/service-admin-portal/powerbi-admin-landing-page.png)
+* [Szervezeti vizualizációk](#organization-visuals)
 
 ## <a name="usage-metrics"></a>Használati metrikák
-A felügyeleti portál első lapja a **Használati metrikák**. A használati metrikákat tartalmazó jelentés a Power BI-beli használat monitorozását teszi lehetővé a munkahelyen. Ezenkívül azt is mutatja, hogy mely munkahelyi felhasználók és csoportok a legaktívabbak a Power BI-ban.
+
+A **Használati metrikák** segítségével nyomon követheti a szervezet Power BI-használatát. Ezenkívül azt is mutatja, hogy mely munkahelyi felhasználók és csoportok a legaktívabbak a Power BI-ban.
 
 > [!NOTE]
 > Az irányítópult első használatakor, vagy ha hosszú idő elteltével keresi fel újra az irányítópultot, egy betöltési képernyő jelenik meg az irányítópult betöltése során.
@@ -58,79 +58,76 @@ Az alábbiakban az egyes csempéknél megjelenő részletes információkat isme
 
 * A felhasználói munkaterület összes irányítópultjának, jelentésének és adatkészletének eltérő darabszáma
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
+    ![Az irányítópultok, jelentések és adatkészletek eltérő darabszáma](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
 * A legtöbbet használt irányítópult az ahhoz hozzáférő felhasználók száma szerint. Például ha 3 felhasználóval oszt meg egy irányítópultot, és olyan tartalomcsomaghoz is hozzáadja azt, amelyhez két különböző felhasználó kapcsolódik, a számláló értéke 6 (1 + 3 + 2)
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
+    ![Legtöbbet felhasznált irányítópultok](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
 * A legnépszerűbb tartalom, amelyhez a felhasználók kapcsolódtak. Ez bármi lehet, amelyhez a felhasználók hozzáférhetnek az adatbeolvasási folyamaton keresztül, például szolgáltatott szoftveres tartalomcsomagok, munkahelyi tartalomcsomagok, fájlok vagy adatbázisok.
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
+    ![Legtöbbet felhasznált csomagok](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
 
 * A legaktívabb felhasználókat mutatja az irányítópultok száma alapján, beleértve a felhasználók által létrehozott és a velük megosztott irányítópultok számát.
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
+    ![Legaktívabb felhasználók – irányítópultok](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
 
 * A legaktívabb felhasználókat mutatja a jelentések száma alapján
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
+    ![Legaktívabb felhasználók – jelentések](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
-A második szakasz ugyanezeket az információkat tartalmazza – a csoportok alapján. Lehetővé teszi annak megtekintését, hogy a munkahely mely csoportjai a legaktívabbak, és milyen típusú információkat használnak.
+A második szakasz ugyanezeket az információkat tartalmazza – a csoportok alapján. Lehetővé teszi annak megtekintését, hogy a munkahely mely csoportjai a legaktívabbak, és milyen típusú tartalmakat használnak fel.
 
 Ezek az információk valós betekintést nyújtanak abba, hogy a felhasználók miként használják a Power BI-t a munkahelyen, és mely munkahelyi felhasználók és csoportok számítanak különösen aktívnak.
 
 ## <a name="users"></a>Felhasználók
 
-A felügyeleti portál második lapja a **Felhasználók kezelése**. A Power BI-beli felhasználók kezelése az Office 365 felügyeleti központjában történik. Ebből a szakaszból gyorsan elérhető a felhasználók, a rendszergazdák és a csoportok kezelésére szolgáló Office 365-beli terület.
+A Power BI-felhasználókat, -csoportokat és -rendszergazdákat az Office 365 felügyeleti központjában kezelheti. A **Felhasználók** lap tartalmaz egy hivatkozást a bérlő felügyeleti központjára.
 
-![](media/service-admin-portal/powerbi-admin-manage-users.png)
-
-Amikor rákattint az **Ugrás az O365 felügyeleti központjára** elemre, közvetlenül az Office 365 felügyeleti központjának kezdőlapjára kerül, ahol elvégezheti a bérlő felhasználóinak kezelését.
-
-![](media/service-admin-portal/powerbi-admin-o365-admin-center.png)
+![Ugrás az O365 felügyeleti központjára](media/service-admin-portal/powerbi-admin-manage-users.png)
 
 ## <a name="audit-logs"></a>Auditnaplók
 
-A felügyeleti portál harmadik lapja az **Auditnaplók**. A naplók az Office 365 Biztonsági és megfelelőségi központjában találhatók. Ebben a szakaszban gyorsan hozzáférhet az Office 365-beli adott területhez.
-
-Az auditnaplókkal kapcsolatos további információ: [A Power BI-naplózás használata a munkahelyen](service-admin-auditing.md)
+A Power BI-naplókat az Office 365 Security & Compliance Centerben kezelheti. A **Auditnaplók** lap tartalmaz egy, a bérlőhöz tartozó Security & Compliance centerre mutató hivatkozást. [További információ](service-admin-auditing.md)
 
 ## <a name="tenant-settings"></a>Bérlői beállítások
 
-A felügyeleti portál negyedik lapja a **Bérlői beállítások**. A Bérlői beállítások használatával hatékonyabban lehet szabályozni, hogy mely funkciók legyenek elérhetők a munkahelyen. Ha aggályai vannak a bizalmas adatokkal kapcsolatban, a funkciók némelyike esetlegesen nem megfelelő a munkahely számára, vagy csak egy adott funkciót szeretne engedélyezni egy adott csoportnak. Ha ezekről van szó, kikapcsolhatja az adott funkciót a bérlőn.
+A **Bérlői beállítások** lap lehetővé teszi a szervezet számára elérhetővé tett funkciók finomhangolt szabályozását. Ha aggályai vannak a bizalmas adatokkal kapcsolatban, a funkciók némelyike esetlegesen nem megfelelő a munkahely számára, vagy csak egy adott funkciót szeretne engedélyezni egy adott csoportnak.
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
+Az alábbi képen a **Bérlői beállítások** lap első két szakasza látható.
+
+![Bérlői beállítások](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
-> A beállítás érvénybe léptetése a bérlő összes felhasználója számára akár 10 percet is igénybe vehet.
+> A beállítás módosításának érvénybe léptetése a bérlő összes felhasználója számára akár 10 percet is igénybe vehet.
 
 A beállítások állapota háromféle lehet:
 
-* **Az egész munkahelyen sehol nem engedélyezett**: Letilthat egy funkciót, így a felhasználók nem fogják tudni használni azt.
+* **A szervezeten belül sehol nem engedélyezett**: A munkahelyen senki sem használhatja az adott funkciót.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
+    ![Az összes le van tiltva beállítás](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-* **Az egész munkahelyen mindenhol engedélyezett**: Engedélyezhet egy funkciót az egész munkahelyen, így ahhoz minden felhasználó hozzáférhet.
+* **A szervezeten belül mindenhol engedélyezett**: A munkahelyen mindenki használhatja az adott funkciót.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
+    ![Az összes engedélyezve van beállítás](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **A munkahely egy alegységénél engedélyezett**: A funkciókat a munkahely egy adott alegységénél is engedélyezheti. Erre különböző módokon kerülhet sor. Engedélyezhet egy funkciót az egész munkahelyen a felhasználók egy adott csoportja kivételével.
+* **A szervezet egy alegysége számára engedélyezett**: A szervezet felhasználóinak egy adott részhalmaza vagy csoportjai használhatják az adott funkciót.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
+    Engedélyezhet egy funkciót az egész munkahelyen a felhasználók egy adott csoportja kivételével.
 
-    Engedélyezhet egy funkciót a felhasználók egy adott csoportjában, és letilthatja azt a felhasználók egy másik csoportjában. Így garantálható, hogy egyes felhasználók még akkor sem férhetnek hozzá az adott funkcióhoz, ha egyébként benne vannak az engedélyezett csoportban.
+    ![Engedélyezett részhalmaz beállítás](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+    Engedélyezhet egy funkciót a felhasználók egy adott csoportjában, és letilthatja azt a felhasználók egy másik csoportjában. Ezzel a módszerrel garantálható, hogy egyes felhasználók még akkor sem férhetnek hozzá az adott funkcióhoz, ha egyébként benne vannak az engedélyezett csoportban.
+
+    ![Kivéve engedélyezése beállítás](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
 A következő néhány bekezdés a bérlői beállítások különböző típusainak áttekintését nyújtja.
 
 ## <a name="workspace-settings"></a>Munkaterület beállításai
 
 ### <a name="create-workspaces-preview"></a>Munkaterületek létrehozása (előzetes verzió)
-A vállalat felhasználói alkalmazás-munkaterületeket hozhatnak létre az irányítópultok, jelentések és egyéb tartalmak közös használatához.
 
-További információk: [Új munkaterületek létrehozása](service-create-the-new-workspaces.md).
+A vállalat felhasználói alkalmazás-munkaterületeket hozhatnak létre az irányítópultok, jelentések és egyéb tartalmak közös használatához. [További információ](service-create-the-new-workspaces.md)
 
 ## <a name="export-and-sharing-settings"></a>Exportálási és megosztási beállítások
 
@@ -138,19 +135,21 @@ További információk: [Új munkaterületek létrehozása](service-create-the-n
 
 A munkahelyi felhasználók külső felhasználókkal oszthatnak meg irányítópultokat.
 
-![](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
+![Külső felhasználók beállítás](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
-Ha külső felhasználóval oszt meg tartalmat, az alábbi üzenet jelenik meg.
+Az alábbi képen azon üzenet látható, amely akkor jelenik meg, ha külső felhasználóval oszt meg tartalmat.
 
-![](media/service-admin-portal/powerbi-admin-sharing-external.png)
+![Megosztás külső felhasználóval](media/service-admin-portal/powerbi-admin-sharing-external.png)
 
 ### <a name="publish-to-web"></a>Webes közzététel
 
 A munkahelyi felhasználók a weben tehetnek közzé jelentéseket. [További információ](service-publish-to-web.md)
 
-![](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+Az alábbi képen látható a **Fájl** menü egy jelentéshez, ha a **Webes közzététel** beállítás engedélyezve van.
 
-A webes közzététel beállításától függően a felhasználók különféle lehetőségeket láthatnak a felhasználói felületen.
+![Webes közzététel beállítás](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+
+A **Webes közzététel** beállításától függően a felhasználók különféle lehetőségeket láthatnak a felhasználói felületen.
 
 |Funkció |A teljes cég számára engedélyezve |A teljes cég számára letiltva |Speciális biztonsági csoportok   |
 |---------|---------|---------|---------|
@@ -163,7 +162,9 @@ A webes közzététel beállításától függően a felhasználók különféle
 
 A munkahelyi felhasználók adatokat exportálhatnak egy csempéről vagy vizualizációból. [További információ](visuals/power-bi-visualization-export-data.md)
 
-![](media/service-admin-portal/powerbi-admin-export-data.png)
+Az alábbi képen az adatok exportálásának lehetősége látható egy csempén.
+
+![Adatok exportálása egy csempéből](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
 > Az **Adatok exportálása** lehetőség letiltásával azt is megakadályozhatja, hogy a felhasználók az **Elemzés az Excelben** funkciót vagy a Power BI szolgáltatás élő kapcsolatát használják.
@@ -172,7 +173,9 @@ A munkahelyi felhasználók adatokat exportálhatnak egy csempéről vagy vizual
 
 A munkahelyi felhasználók PowerPoint-fájlként exportálhatják a Power BI-jelentéseket. [További információ](consumer/end-user-powerpoint.md)
 
-![](media/service-admin-portal/powerbi-admin-powerpoint.png)
+Az alábbi képen látható a **Fájl** menü egy jelentéshez, ha a **Jelentések exportálása PowerPoint-bemutatóként** beállítás engedélyezve van.
+
+![Jelentések exportálása PowerPoint-bemutatóként](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
 ### <a name="print-dashboards-and-reports"></a>Irányítópultok és jelentések nyomtatása
 
