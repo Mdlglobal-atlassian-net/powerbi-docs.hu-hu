@@ -1,5 +1,5 @@
 ---
-title: Power BI-tartalom beágyazása alkalmazásokba szuverén felhőket használó ügyfelek számára
+title: Power BI-tartalom beágyazása alkalmazásokba kormányzati és szuverén felhőt használó ügyfelek számára
 description: Ismerje meg, hogyan integrálhat vagy ágyazhat be egy irányítópultot, csempét vagy jelentést egy webalkalmazásba a Power BI API-kkal az ügyfelei számára.
 author: markingmyname
 ms.author: maghan
@@ -7,16 +7,17 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 07/26/2018
-ms.openlocfilehash: c9e38f3ca1c8ee43ab9d51d621dfc7d835c39db1
-ms.sourcegitcommit: 767c0d770e32e91ff28a176f79595fab523f69eb
+ms.date: 10/25/2018
+ms.openlocfilehash: 76b80ad296f2f595fb5014e13bbd48d414cd8bbe
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48039439"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003156"
 ---
 # <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Oktatóanyag: Power BI-irányítópult, -csempe vagy -jelentés beágyazása az alkalmazásba szuverén felhők használata esetén
-Ismerje meg, hogyan integrálhat vagy ágyazhat be egy irányítópultot, csempét vagy jelentést egy webalkalmazásba a Power BI .NET SDK-val és a Power BI JavaScript API-val, amikor az ügyfelei számára ágyaz be. Ez általában a független szoftverszállítóknál jellemző.
+
+Megtudhatja, hogyan ágyazhat be egy irányítópultot, csempét vagy jelentést a webalkalmazásaiba a Power BI .NET SDK-val és a Power BI JavaScript API-val, amikor az ügyfelei számára integrálja az adatokat.
 
 A Power BI a szuverén (privát) felhőket is támogatja.
 
@@ -38,17 +39,21 @@ A bemutató megkezdéséhez **Power BI**-fiókra van szükség. Ha nincs beáll�
 
 > [!NOTE]
 > A saját cégének szeretne irányítópultot beágyazni? Tekintse meg az [irányítópult céges alkalmazásba való integrálását](integrate-dashboard.md) ismertető cikket.
->
 
-Egy irányítópult webalkalmazásba ágyaszásához használja a **Power BI** API-t, és egy Azure Active Directory (AD) engedélyezési **hozzáférési tokent** az irányítópult lekéréséhez. Ezután töltse be az irányítópultot egy beágyazási token használatával. A **Power BI** API szoftveres hozzáférést biztosít meghatározott **Power BI**-erőforrásokhoz. További információkat a [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/), a [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-CSharp) és a [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) cikkekben talál.
+Egy irányítópult webalkalmazásba ágyaszásához használja a **Power BI** API-t, és egy Azure Active Directory (AD) engedélyezési **hozzáférési tokent** az irányítópult lekéréséhez. Ezután töltse be az irányítópultot egy beágyazási token használatával. A **Power BI** API szoftveres hozzáférést biztosít meghatározott **Power BI**-erőforrásokhoz. További információt a [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/), a Power BI .NET SDK és a [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) cikkében talál.
 
 ## <a name="download-the-sample"></a>A minta letöltése
-Ez a cikk a GitHubon az [ügyfelek számára végzett beágyazási mintában](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) használt kódot mutatja be. A bemutató követéséhez letöltheti a mintát.
+
+Ez a cikk a GitHubon, az [alkalmazás tulajdonában lévő adatok mintában](https://github.com/Microsoft/PowerBI-Developer-Samples) használt kódot mutatja be. A bemutató követéséhez letöltheti a mintát.
+
+![Alkalmazás tulajdonában lévő adatok minta](media/embed-sample-for-customers-sovereign-clouds/embed-sample-for-customers-026.png)
 
 * Kormányzati közösségi felhő (GCC):
-    1. Írja felül a Cloud.config fájlt a GCCCloud.config tartalmával.
-    2. Frissítse a clientid (a natív alkalmazás ügyfél-azonosítója), a groupid, a user (a fő felhasználó) és a password (jelszó) paramétereit a Web.config fájlban.
-    3. Az alábbiaknak megfelelően adja hozzá a GCC-paramétereket a web.config fájlhoz.
+1. Írja felül a Cloud.config fájlt a GCCCloud.config tartalmával.
+
+2. Frissítse az applicationId (natív alkalmazáshoz tartozó applicationId), a workspaceId, a felhasználó (a fő felhasználó) és a jelszó értékét a Web.config fájlban.
+
+3. Az alábbiaknak megfelelően adja hozzá a GCC-paramétereket a web.config fájlhoz.
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
@@ -58,9 +63,11 @@ Ez a cikk a GitHubon az [ügyfelek számára végzett beágyazási mintában](ht
 ```
 
 * Katonai alvállalkozók (DoDCON):
-    1. Írja felül a Cloud.config fájlt a TBCloud.config tartalmával.
-    2. Frissítse a clientid (a natív alkalmazás ügyfél-azonosítója), a groupid, a user (a fő felhasználó) és a password (jelszó) paramétereit a Web.config fájlban.
-    3. Az alábbiaknak megfelelően adja hozzá a DoDCON-paramétereket a web.config fájlhoz.
+1. Írja felül a Cloud.config fájlt a TBCloud.config tartalmával.
+
+2. Frissítse az applicationId (natív alkalmazáshoz tartozó applicationId), a workspaceId, a felhasználó (a fő felhasználó) és a jelszó értékét a Web.config fájlban.
+
+3. Az alábbiaknak megfelelően adja hozzá a DoDCON-paramétereket a web.config fájlhoz.
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
@@ -70,9 +77,11 @@ Ez a cikk a GitHubon az [ügyfelek számára végzett beágyazási mintában](ht
 ```
 
 * Katonaság (DoD):
-    1. Írja felül a Cloud.config fájlt a PFCloud.config tartalmával.
-    2. Frissítse a clientid (a natív alkalmazás ügyfél-azonosítója), a groupid, a user (a fő felhasználó) és a password (jelszó) paramétereit a Web.config fájlban.
-    3. Az alábbiaknak megfelelően adja hozzá a DoDCON-paramétereket a web.config fájlhoz.
+1. Írja felül a Cloud.config fájlt a PFCloud.config tartalmával.
+
+2. Frissítse az applicationId (natív alkalmazáshoz tartozó applicationId), a workspaceId, a felhasználó (a fő felhasználó) és a jelszó értékét a Web.config fájlban.
+
+3. Az alábbiaknak megfelelően adja hozzá a DoDCON-paramétereket a web.config fájlhoz.
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
@@ -82,9 +91,11 @@ Ez a cikk a GitHubon az [ügyfelek számára végzett beágyazási mintában](ht
 ```
 
 * A németországi felhőhöz készült Power BI paraméterei
-    1. Írja felül a Cloud.config fájlt a németországi felhőhöz készült Power BI tartalmával.
-    2. Frissítse a clientid (a natív alkalmazás ügyfél-azonosítója), a groupid, a user (a fő felhasználó) és a password (jelszó) paramétereit a Web.config fájlban.
-    3. Az alábbiaknak megfelelően adja hozzá a németországi felhőhöz készült Power BI paramétereit a web.config fájlhoz.
+1. Írja felül a Cloud.config fájlt a németországi felhőhöz készült Power BI tartalmával.
+
+2. Frissítse az applicationId (natív alkalmazáshoz tartozó applicationId), a workspaceId, a felhasználó (a fő felhasználó) és a jelszó értékét a Web.config fájlban.
+
+3. Az alábbiaknak megfelelően adja hozzá a németországi felhőhöz készült Power BI paramétereit a web.config fájlhoz.
 
 ```xml
 <add key="authorityUrl" value=https://login.microsoftonline.de/common/oauth2/authorize/" />
@@ -94,9 +105,11 @@ Ez a cikk a GitHubon az [ügyfelek számára végzett beágyazási mintában](ht
 ```
 
 * A kínai felhőhöz készült Power BI paraméterei
-    1. Írja felül a Cloud.config fájlt a [kínai felhőhöz készült Power BI](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) tartalmával.
-    2. Frissítse a clientid (a natív alkalmazás ügyfél-azonosítója), a groupid, a user (a fő felhasználó) és a password (jelszó) paramétereit a Web.config fájlban.
-    3. Az alábbiaknak megfelelően adja hozzá a kínai felhőhöz készült Power BI paramétereit a web.config fájlhoz.
+1. Írja felül a Cloud.config fájlt a [kínai felhőhöz készült Power BI](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) tartalmával.
+
+2. Frissítse az applicationId (natív alkalmazáshoz tartozó applicationId), a workspaceId, a felhasználó (a fő felhasználó) és a jelszó értékét a Web.config fájlban.
+
+3. Az alábbiaknak megfelelően adja hozzá a kínai felhőhöz készült Power BI paramétereit a web.config fájlhoz.
 
 ```xml
 <add key="authorityUrl" value=https://login.chinacloudapi.cn/common/oauth2/authorize/" />
@@ -106,7 +119,8 @@ Ez a cikk a GitHubon az [ügyfelek számára végzett beágyazási mintában](ht
 ```
 
 ## <a name="step-1---register-an-app-in-azure-ad"></a>1. lépés – alkalmazás regisztrálása az Azure AD-ben
-A REST API-hívások indításához az alkalmazásokat regisztrálni kell az Azure AD-ben. További információt az [Azure AD alkalmazás regisztrálása Power BI-tartalmak beágyazásához](register-app.md) eljárást ismertető cikkben talál. Mivel különböző szuverén felhőszolgáltatások léteznek, különböző URL-címek használatával regisztrálhatja alkalmazását.
+
+A REST API-hívások indításához az alkalmazásokat regisztrálja az Azure AD-ben. További információt az [Azure AD alkalmazás regisztrálása Power BI-tartalmak beágyazásához](register-app.md) eljárást ismertető cikkben talál. Mivel különböző szuverén felhőszolgáltatások léteznek, különböző URL-címek használatával regisztrálhatja alkalmazását.
 
 * Kormányzati közösségi felhő (GCC) – https://app.powerbigov.us/apps 
 
@@ -118,10 +132,10 @@ A REST API-hívások indításához az alkalmazásokat regisztrálni kell az Azu
 
 * A kínai felhőhöz készült Power BI – https://app.powerbi.cn/apps
 
-Ha letöltötte az [ügyfelek számára végzett beágyazási mintát](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), használja a regisztráció után kapott **Ügyfél-azonosítót**, így a minta hitelesíthet az Azure AD-ben. A minta konfigurálásához módosítsa a **clientId** azonosítót a *web.config* fájlban.
-
+Ha letöltötte az [ügyfelek számára végzett beágyazási mintát](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), használja a regisztráció után kapott **applicationId** azonosítót, hogy a minta hitelesítést végezhessen az Azure AD-ben. A minta konfigurálásához módosítsa az **applicationId** azonosítót a *web.config* fájlban.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>2. lépés – hozzáférési token lekérése az Azure AD-ből
+
 Az alkalmazásban egy **hozzáférési tokent** kell beszereznie az Azure AD-ből, mielőtt hívásokat indíthatna a Power BI REST API-hoz. További információkért lásd [a felhasználók hitelesítésével és a Power BI-alkalmazáshoz Azure AD hozzáférési token beszerzésével](get-azuread-access-token.md) kapcsolatos cikket. Mivel különböző szuverén felhőszolgáltatások léteznek, különböző URL-címek használatával szerezheti be az alkalmazása hozzáférési jogkivonatát.
 
 * Kormányzati közösségi felhő (GCC) – https://login.microsoftonline.com
@@ -132,15 +146,17 @@ Az alkalmazásban egy **hozzáférési tokent** kell beszereznie az Azure AD-bő
 
 * A németországi felhőhöz készült Power BI – https://login.microsoftonline.de
 
-* A kínai felhőhöz készült Power BI – https://login.microsoftonline.cn
+* A kínai felhőhöz készült Power BI – https://login.chinacloudapi.cn
 
-A **Controllers\HomeController.cs** fájlban lévő tartalomelem feladatokban láthat példát ilyen megoldásra.
+A **Controllers\HomeController.cs** fájlban lévő tartalomelem-feladatokban láthat példát ezekre a hozzáférési jogkivonatokra.
 
 ## <a name="step-3---get-a-content-item"></a>3. lépés – tartalomelem lekérése
+
 A Power BI-tartalom beágyazásához el kell végeznie néhány dolgot a megfelelő beágyazás biztosítása érdekében. Bár ezen lépések mindegyike elvégezhető közvetlenül a REST API-val, a mintaalkalmazás és az itt szereplő példák a .NET SDK-t használják.
 
 ### <a name="create-the-power-bi-client-with-your-access-token"></a>A Power BI-ügyfél létrehozása a hozzáférési tokennel
-A hozzáférési tokennel érdemes létrehozni a Power BI-ügyfélobjektumot, amely lehetővé teszi a Power BI API-k használatát. Ehhez a hozzáférési tokent a *Microsoft.Rest.TokenCredentials* objektummal kell tördelni.
+
+A hozzáférési jogkivonattal érdemes létrehozni a Power BI-ügyfélobjektumot, amely lehetővé teszi a Power BI API-k használatát. A Power BI-ügyfél létrehozásához az AccessToken hozzáférési jogkivonatot a *Microsoft.Rest.TokenCredentials* objektummal kell becsomagolni.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -157,24 +173,38 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ```
 
 ### <a name="get-the-content-item-you-want-to-embed"></a>A beágyazni kívánt tartalomelem lekérése
-A Power BI-ügyfélobjektummal kérje le a beágyazni kívánt elem hivatkozását. Irányítópultokat, csempéket vagy jelentéseket ágyazhat be. Itt láthat arra példát, hogyan kérhető le az első irányítópult, csempe vagy jelentés adott munkaterületről.
 
-Ennek példája az [alkalmazás tulajdonában lévő adatok használatát ismertető mintában](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) lévő **Controllers\HomeController.cs** fájlban érhető el.
+A Power BI-ügyfélobjektummal kérje le a beágyazni kívánt elem hivatkozását. Irányítópultokat, csempéket vagy jelentéseket ágyazhat be. Itt láthat arra példát, hogyan kérhető le az első irányítópult, csempe vagy jelentés egy adott munkaterületről.
 
-**Irányítópultok**
+Egy példa elérhető az [alkalmazás tulajdonában lévő adatok használatát ismertető mintában](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) lévő **Controllers\HomeController.cs** fájlban.
+
+#### <a name="reports"></a>Jelentések
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You need to provide the GroupID where the dashboard resides.
-ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(GroupId);
+// You need to provide the workspaceId where the dashboard resides.
+ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(workspaceId);
+
+// Get the first report in the group.
+Report report = reports.Value.FirstOrDefault();
+```
+
+#### <a name="dashboards"></a>Irányítópultok
+
+```csharp
+using Microsoft.PowerBI.Api.V2;
+using Microsoft.PowerBI.Api.V2.Models;
+
+// You need to provide the workspaceId where the dashboard resides.
+ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(workspaceId);
 
 // Get the first report in the group.
 Dashboard dashboard = dashboards.Value.FirstOrDefault();
 ```
 
-**Csempe**
+#### <a name="tiles"></a>Csempék
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -182,43 +212,31 @@ using Microsoft.PowerBI.Api.V2.Models;
 
 // To retrieve the tile, you first need to retrieve the dashboard.
 
-// You need to provide the GroupID where the dashboard resides.
-ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(GroupId);
+// You need to provide the workspaceId where the dashboard resides.
+ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(workspaceId);
 
 // Get the first report in the group.
 Dashboard dashboard = dashboards.Value.FirstOrDefault();
 
 // Get a list of tiles from a specific dashboard
-ODataResponseListTile tiles = client.Dashboards.GetTilesInGroup(GroupId, dashboard.Id);
+ODataResponseListTile tiles = client.Dashboards.GetTilesInGroup(workspaceId, dashboard.Id);
 
 // Get the first tile in the group.
 Tile tile = tiles.Value.FirstOrDefault();
 ```
 
-**Jelentés**
-
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// You need to provide the GroupID where the dashboard resides.
-ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
-
-// Get the first report in the group.
-Report report = reports.Value.FirstOrDefault();
-```
-
 ### <a name="create-the-embed-token"></a>A beágyazási token létrehozása
-Létre kell hozni egy beágyazási tokent, amely a JavaScript API-ból használható. A beágyazási token a beágyazott elemre jellemző. Ez azt jelenti, hogy amikor Power BI-tartalmat ágyaz be, mindig létre kell hoznia egy új beágyazási tokent. További információt (beleértve a használandó **hozzáférési szintet**) az [Beágyazási Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) című cikkben talál.
+
+A JavaScript API segítségével létrehozhat egy beágyazási tokent. A beágyazási token a beágyazott elemre jellemző. Valahányszor Power BI-tartalmat ágyaz be, mindig létre kell hoznia egy új beágyazási tokent. További információt (beleértve a használandó **hozzáférési szintet**) az [Beágyazási Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) című cikkben talál.
 
 > [!IMPORTANT]
 > Mivel a beágyazási tokenek elsődlegesen fejlesztési és tesztelési célokra használhatók, a Power BI fő fiókja csak korlátozott mennyiségű tokent tud előállítani. Éles üzemi beágyazási helyzetekhez [kapacitást szükséges vásárolni](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical). Kapacitásvásárlás esetén nincs korlátja a beágyazási tokenek előállításának.
 
-Ennek példája a [céges beágyazási mintában](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) lévő **Controllers\HomeController.cs** fájlban érhető el.
+Egy példa elérhető a [céges beágyazási mintában](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) lévő **Controllers\HomeController.cs** fájlban.
 
-Ez feltételezi, hogy létrejött egy osztály az **EmbedConfig** és a **TileEmbedConfig** elemekhez. Ezek mintái a **Models\EmbedConfig.cs** és a **Models\TileEmbedConfig.cs** fájlban érhetők el.
+Ez feltételezi, hogy létrejött egy osztály az **EmbedConfig** és a **TileEmbedConfig** elemekhez. Egy példa elérhető a **Models\EmbedConfig.cs** és a **Models\TileEmbedConfig.cs** fájlban.
 
-**Irányítópult**
+#### <a name="reports"></a>Jelentések
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -226,7 +244,26 @@ using Microsoft.PowerBI.Api.V2.Models;
 
 // Generate Embed Token.
 var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Dashboards.GenerateTokenInGroup(GroupId, dashboard.Id, generateTokenRequestParameters);
+EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(workspaceId, report.Id, generateTokenRequestParameters);
+
+// Generate Embed Configuration.
+var embedConfig = new EmbedConfig()
+{
+    EmbedToken = tokenResponse,
+    EmbedUrl = report.EmbedUrl,
+    Id = report.Id
+};
+```
+
+#### <a name="dashboards"></a>Irányítópultok
+
+```csharp
+using Microsoft.PowerBI.Api.V2;
+using Microsoft.PowerBI.Api.V2.Models;
+
+// Generate Embed Token.
+var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
+EmbedToken tokenResponse = client.Dashboards.GenerateTokenInGroup(workspaceId, dashboard.Id, generateTokenRequestParameters);
 
 // Generate Embed Configuration.
 var embedConfig = new EmbedConfig()
@@ -237,7 +274,7 @@ var embedConfig = new EmbedConfig()
 };
 ```
 
-**Csempe**
+#### <a name="tiles"></a>Csempék
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -245,7 +282,7 @@ using Microsoft.PowerBI.Api.V2.Models;
 
 // Generate Embed Token for a tile.
 var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Tiles.GenerateTokenInGroup(GroupId, dashboard.Id, tile.Id, generateTokenRequestParameters);
+EmbedToken tokenResponse = client.Tiles.GenerateTokenInGroup(workspaceId, dashboard.Id, tile.Id, generateTokenRequestParameters);
 
 // Generate Embed Configuration.
 var embedConfig = new TileEmbedConfig()
@@ -257,30 +294,13 @@ var embedConfig = new TileEmbedConfig()
 };
 ```
 
-**Jelentés**
-
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// Generate Embed Token.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(GroupId, report.Id, generateTokenRequestParameters);
-
-// Generate Embed Configuration.
-var embedConfig = new EmbedConfig()
-{
-    EmbedToken = tokenResponse,
-    EmbedUrl = report.EmbedUrl,
-    Id = report.Id
-};
-```
 ## <a name="step-4---load-an-item-using-javascript"></a>4. lépés – elem betöltése a JavaScript használatával
+
 A JavaScript használatával egy irányítópultot tölthet be egy div elembe a weboldalon. A minta EmbedConfig/TileEmbedConfig modellt használ egy irányítópult, csempe vagy jelentés nézeteivel együtt. A JavaScript API használatának teljes mintájáért használhatja a [Microsoft Power BI Embedded mintát](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
 Ennek alkalmazásmintája a [céges beágyazási mintában](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) érhető el.
 
-**Views\Home\EmbedDashboard.cshtml**
+### <a name="viewshomeembeddashboardcshtml"></a>Views\Home\EmbedDashboard.cshtml
 
 ```csharp
 <script src="~/scripts/powerbi.js"></script>
@@ -318,7 +338,7 @@ Ennek alkalmazásmintája a [céges beágyazási mintában](https://github.com/M
 </script>
 ```
 
-**Views\Home\EmbedTile.cshtml**
+### <a name="viewshomeembedtilecshtml"></a>Views\Home\EmbedTile.cshtml
 
 ```csharp
 <script src="~/scripts/powerbi.js"></script>
@@ -360,7 +380,7 @@ Ennek alkalmazásmintája a [céges beágyazási mintában](https://github.com/M
 </script>
 ```
 
-**Views\Home\EmbedReport.cshtml**
+### <a name="viewshomeembedreportcshtml"></a>Views\Home\EmbedReport.cshtml
 
 ```csharp
 <script src="~/scripts/powerbi.js"></script>
@@ -406,12 +426,15 @@ Ennek alkalmazásmintája a [céges beágyazási mintában](https://github.com/M
 ## <a name="next-steps"></a>Következő lépések
 
 * Egy mintaalkalmazás elérhető a GitHubon, hogy áttekinthesse. A fenti példák azon a mintán alapulnak. További információért tekintse meg a [céges beágyazási mintát](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
-* További információ a JavaScript API-ról: [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
-* További információ a németországi felhőhöz készült Power BI-ról: [A németországi felhőhöz készült Power BI – gyakori kérdések](https://docs.microsoft.com/power-bi/service-govde-faq)
+
+* További információ a JavaScript API-ról a [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) dokumentációjában található.
+
+* További információ a németországi felhőhöz készült Power BI-ról [a németországi felhőhöz készült Power BI gyakori kérdéseiben](https://docs.microsoft.com/power-bi/service-govde-faq) található.
+
 * [Power BI-munkaterületcsoport tartalmainak migrálása a Power BI-ba](migrate-from-powerbi-embedded.md)
 
 Korlátozások és megfontolandó szempontok
+
 * A GCC-fiókok jelenleg csak a P és EM kapacitásokat támogatják
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-

@@ -7,15 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 10/24/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b83ef2b6f2cd07e9f6c9af849e0f64d0490fa1af
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: b183738c062af1d834a742639369ca90f2cb1bad
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546955"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003225"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Csatlakozás a Zuorához a Power BI-ból
 A Power BI-hoz készült Zuora segítségével ábrázolhatja a bevételekkel, a számlázással és az előfizetésekkel kapcsolatos fontos adatait. Az alapértelmezett irányítópulttal és jelentésekkel elemezheti a használati trendeket, követheti a számlázási és fizetési adatokat, illetve figyelheti az ismétlődő bevételeket. Az irányítópultot és a jelentéseket testre is szabhatja az egyéni igényei kielégítéséhez.
@@ -32,13 +32,13 @@ Csatlakozzon a Power BI-hoz készült [Zuora](https://app.powerbi.com/getdata/se
 3. Válassza a **Zuora** \> **Beolvasás** lehetőséget.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Adja meg a Zuora URL-címét. Ez általában „<https://www.zuora.com>”. A [paraméterek megkereséséről](#FindingParams) alább olvashat részletesebben.
+4. Adja meg a Zuora URL-címét. Az URL-cím általában „<https://www.zuora.com>”. A [paraméterek megkereséséről](#FindingParams) alább olvashat részletesebben.
 
    ![](media/service-connect-to-zuora/params.png)
 5. **Hitelesítési módszerként** válassza az **Alapszintű** lehetőséget, adja meg a felhasználónevét és a jelszavát (figyeljen a kis- és nagybetűkre), majd kattintson a **Bejelentkezés** elemre.
 
     ![](media/service-connect-to-zuora/creds.png)
-6. A jóváhagyás után automatikusan megkezdődik az importálás. Ha befejeződött, a navigációs panelen megjelenik egy új irányítópult, jelentés és modell. Válassza ki az irányítópultot az importált adatok megtekintéséhez.
+6. A jóváhagyás után automatikusan megkezdődik az importálási folyamat. Ha befejeződött, a navigációs panelen megjelenik egy új irányítópult, jelentés és modell. Válassza ki az irányítópultot az importált adatok megtekintéséhez.
 
      ![](media/service-connect-to-zuora/dashboard.png)
 
@@ -95,7 +95,6 @@ Hozzáféréssel kell rendelkeznie a Zuora API-hoz.
 Adja meg azt az URL-címet, amellyel be szokott jelentkezni a Zuora-adatai eléréshez. Az érvényes lehetőségek a következők:  
 
 * https://www.zuora.com  
-* https://www.apisandbox.zuora.com  
 * A használt szolgáltatáspéldány által meghatározott URL-cím  
 
 ## <a name="troubleshooting"></a>Hibaelhárítás

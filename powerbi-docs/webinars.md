@@ -7,20 +7,38 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2018
+ms.date: 10/23/2018
 ms.author: maikelson
-ms.openlocfilehash: 126baf11492f05228d1e0637e27b5f2caa8390a3
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: d656a27717d22d13884bcbfa69fab4ba2babaf12
+ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49952234"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
 Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket később felvételről, igény szerint.
 
 ## <a name="upcoming-webinars"></a>Közelgő webináriumok
+
+**Power BI: Helyesen elvégzett elemzések**
+<br>Előadó: Gohul Shanmugalingam
+<br>*2018. november 8., 19:00–20:00 (CET)*
+
+Beszélgetésre hívjuk az összes Analytics- és Excel-látnokot: megtudhatja, hogyan hozhat létre használatra csábító, gyönyörű jelentéseket, hogyan oszthat meg vonzó, könnyen érthető elemzéseket, és hogyan oszthatja fel biztonságosan a komplex adatok silóit, hogy könnyen elérhetők legyenek.
+
+Megosztjuk az új termékfejlesztéseket és a modern vállalati üzleti intelligenciával és az önkiszolgáló üzleti intelligenciával kapcsolatos elképzeléseinket, hogy a szervezete adatalapú kultúrára alapozhassa a működését.
+
+[Regisztráljon a november 8-i megtekintéshez](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
+
+**Az adatmodellezési készségek fejlesztése a Power BI segítségével**
+<br>Készítette Kasper de Jonge
+<br>*2018. november 20., 20:00–21:00 (CET)*
+
+Regisztráljon erre a webináriumra, és lépjen új szintre a Power BI-modellezésben. Megismerheti a Power BI memóriában végzett elemzéseket kiszolgáló motorját, az adatkapcsolatok létrehozása és kezelése során alkalmazható stratégiákat, valamint a Data Analysis Expressions (DAX) szűrőkörnyezet használatát. Megtudhatja, hogyan küzdhet le bármilyen modellezési kihívást a Power BI vagy az Azure Analysis Services segítségével.
+
+[Regisztráljon a november 20-i megtekintéshez](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
 
 >[A Power BI-közösség közelgő webináriumai](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 

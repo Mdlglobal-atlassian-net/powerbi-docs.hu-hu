@@ -1,6 +1,6 @@
 ---
 title: Az Önnel megosztott ArcGIS-térképek használata
-description: 'ArcGIS-térképek használata az Olvasás nézetben '
+description: ArcGIS-térképek használata olvasási nézetben Power BI-jelentésfelhasználóként
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 10/23/2018
 ms.author: mihart
-ms.openlocfilehash: 2c7a9d5f6bdbbfff905f3faa8cec255c2b85a0d5
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: dd7bca6782327700f087b6b9ca60a9654fa362d8
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396802"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003271"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>ArcGIS-térképek használata a Power BI-ban
 Ez a témakör az ArcGIS-térképet a Power BI szolgáltatás, a Desktop alkalmazás vagy a mobilalkalmazás felületén *használó* felhasználó szemszögéből van megírva. Ha egy ArcGIS-térképet a létrehozója megoszt Önnel, számos különféle módon használhatja azt.  Az ArcGIS-térképek létrehozásával kapcsolatos információkért lásd: [Az esri ArcGIS-térképeinek oktatóanyaga](../power-bi-visualization-arcgis.md).
@@ -57,8 +57,12 @@ Az ArcGIS Maps for Power BI három kijelölési módot tesz lehetővé. Egyszerr
 ## <a name="interacting-with-an-arcgis-map"></a>Az ArcGIS-térképek használata
 Az elérhető funkciók attól függően változnak, hogy Ön a térkép *létrehozója* (aki a térképet készítette) vagy *felhasználója* (valaki megosztotta Önnel az ArcGIS-térképet). Ha felhasználóként használja valamely ArcGIS-térképet (lásd [Olvasás nézet](../consumer/end-user-reading-view.md)), az alábbi műveleteket hajthatja végre.
 
-* Ahogy a képi megjelenítések egyéb típusait, a térképeket is [rögzítheti az irányítópultokra](../service-dashboard-pin-tile-from-report.md), [megtekintheti](../consumer/end-user-show-data.md) és/vagy [exportálhatja a mögöttes adatokat](power-bi-visualization-export-data.md), továbbá megtekintheti [Fókusz módban](../consumer/end-user-focus.md) és [Teljes képernyős nézetben](../service-fullscreen-mode.md).    
-* A **Szűrők** panel kibontásával szűrők használatával derítheti fel a térképet. A jelentés bezárásakor az alkalmazott szűrők nem lesznek mentve.    
+* Ha Ön *megtekintési* engedélyekkel rendelkező Prémium-felhasználó, akkor többek között [megtekintheti a vizualizáció létrehozásához használt adatokat](../consumer/end-user-show-data.md), [feliratkozhat](../consumer/end-user-subscribe.md), megtekintheti a térképet [Fókusz módban és teljes képernyős módban](../consumer/end-user-focus.md), [megtekintheti a kapcsolódó tartalmakat](../consumer/end-user-related.md), [használhatja azokat a szűrőket](../consumer/end-user-report-filter.md), amelyeket a *jelentés létrehozója* adott meg és [megoszthatja a jelentést](../service-share-reports.md).
+
+* Akárcsak más vizualizációtípusok esetében, a Power BI **Pro**-felhasználóknak minden olyan joguk megvan, amivel a Premium-felhasználók rendelkeznek, ezenfelül többek között [exportálhatják az alapul szolgáló adatokat](power-bi-visualization-export-data.md), [lekérhetik a használati metrikákat](../service-usage-metrics.md) és menthetnek egy másolatot és [közzétehetik a weben](../service-publish-to-web.md).
+
+    
+* A **Szűrők** panel kibontásával szűrők használatával derítheti fel a térképet.   
     ![](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
 * Ha a térkép tartalmaz referenciaréteget, a helyek kijelölésekor a részletek elemleírásokban jelennek meg. Az Adams megye van kijelölve, így a létrehozó által hozzáadott háztartásonkénti átlagjövedelem referenciafólia adatai láthatók.
   
@@ -116,6 +120,9 @@ Az ArcGIS Maps for Power BI az alábbi szolgáltatásokban és alkalmazásokban 
 **Hogyan működik az ArcGIS Maps for Power BI?**
 Az ArcGIS Maps for Power BI szolgáltatója az Esri (www.esri.com). Az ArcGIS Maps for Power BI használatára az Esri [szerződési feltételei](https://go.microsoft.com/fwlink/?LinkID=8263222) és [adatvédelmi szabályzata](https://go.microsoft.com/fwlink/?LinkID=826323) vonatkoznak. Ha a Power BI-felhasználó használni kívánja az ArcGIS Maps for Power BI vizualizációit, el kell fogadnia a feltételeket (részletekért tekintse meg a felhasználói beleegyezésről szóló szakaszt).  Az Esri ArcGIS Maps for Power BI az Esri használati feltételeinek és adatvédelmi szabályzatának hatálya alá tartozik, amelyek elérhetők a beleegyező párbeszédpanelről. Az ArcGIS Maps for Power BI első használata előtt minden felhasználónak el kell fogadnia a feltételeket. Miután a felhasználók elfogadták a feltételeket, a program elküldi a vizualizációhoz tartozó adatokat az Esrinek geokódolásra, amelyne során a helyadatok térképen megjeleníthető szélességi és hosszúsági adatokká lesznek átalakítva. Érdemes annak tudatában használni a szolgáltatást, hogy az Esri minden, adatvizualizációhoz tartozó adatot megkaphat. Az Esri olyan szolgáltatásokat nyújt, mint az alaptérképek, térelemzés, geokódolás és hasonlók. Az ArcGIS Maps for Power BI vizualizáció ezekkel a szolgáltatásokkal egy SSL-kapcsolaton keresztül kommunikál, amelyet egy Esri által nyújtott és fenntartott tanúsítvány véd. További információt az ArcGIS Maps for Power BI szolgáltatásról az Esri [ArcGIS Maps for Power BI termékoldalán](https://www.esri.com/powerbi) találhat.
 
+**Power BI Plus**    
+![A Plus ikont választva regisztrálhat vagy bejelentkezhet](media/power-bi-visualizations-arcgis/power-bi-plus.png)
+
 Amikor egy felhasználó az ArcGIS Maps for Power BI egy, az Esri által ajánlott Plus-előfizetésére regisztrál, közvetlen kapcsolatba kerül az Esrivel. A Power BI nem küld személyes felhasználói adatokat az Esrinek. A felhasználó a bejelentkezés után megadja a saját AAD-identitását egy Esri által nyújtott AAD-alkalmazásnak. Ezzel személyes adatokat oszt meg közvetlenül az Esrivel. Ha egy felhasználó Plus-tartalmakat ad meg egy ArcGIS Maps for Power BI-vizualizációhoz, a többi felhasználónak szintén Plus-előfizetésre lesz szüksége az adott tartalom megtekintéséhez vagy szerkesztéséhez. 
 
 Az Esri ArcGIS Maps for Power BI működésével kapcsolatos részletes technikai kérdésekkel az Esri támogatási oldalához fordulhat.
@@ -123,12 +130,12 @@ Az Esri ArcGIS Maps for Power BI működésével kapcsolatos részletes technika
 **Az ArcGIS-térkép nem jelenik meg**    
 Azokban a szolgáltatásokban és alkalmazásokban, ahol az ArcGIS Maps for Power BI nem elérhető, a képi megjelenítésben üres vizualizáció jelenik meg a Power BI emblémával.
 
-**Nem jelenik meg az összes cím a térképen**    
-Az utcacímek geokódolása során csak az első 1500 cím lesz geokódolva. A helynevek és országok geokódolására az 1500 címes korlát nem vonatkozik.
+**Nem jelenik meg az összes információ a térképen**    
+A térkép szélességi/hosszúsági adatainak geokódolásakor legfeljebb 30 000 adatpont jelenik meg. Az olyan adatpontok geokódolása során, mint az irányítószámok és utcacímek, csak az első 15 000 adatpont lesz geokódolva. A helynevek és országok geokódolására az 1500 címes korlát nem vonatkozik.
 
 **Van valamilyen díja az ArcGIS Maps for Power BI használatának?**
 
-Az ArcGIS Maps for Power BI minden Power BI-felhasználó számára elérhető külön költségvonzatok nélkül. Ezt az összetevőt az **Esri** biztosítja, ezért használata az **Esri** használati feltételeinek és adatvédelmi szabályzatának elfogadásához kötött, ahogy az a cikkben korábban olvasható.
+Az ArcGIS Maps for Power BI minden Power BI-felhasználó számára elérhető külön költségvonzatok nélkül. Ezt az összetevőt az **Esri** biztosítja, ezért használata az **Esri** használati feltételeinek és adatvédelmi szabályzatának elfogadásához kötött, ahogy az a cikkben korábban olvasható. Ha feliratkozik az ArcGIS **Plus** szolgáltatásra, az díjfizetési kötelezettséggel jár.
 
 **Hibaüzenetet kapok arról, hogy megtelt a gyorsítótár**
 
@@ -146,4 +153,3 @@ A Power BI [ az **ArcGIS Maps for Power BI** termékkel kapcsolatos közösségi
 Amennyiben fejlesztési javaslatai vannak, azokat a [Power BI ötletlistájához](https://ideas.powerbi.com) adja hozzá.
 
 [Az ArcGIS Maps for Power BI termékoldala](https://www.esri.com/powerbi)
-

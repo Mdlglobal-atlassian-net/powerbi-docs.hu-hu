@@ -1,6 +1,6 @@
 ---
-title: Pontdiagramok a Power BI-ban
-description: Pontdiagramok a Power BI-ban
+title: Pont-, buborék- és pöttydiagramok a Power BI-ban
+description: Pontdiagramok, pöttydiagramok és buborékdiagramok a Power BI-ban
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,22 +8,26 @@ featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/28/2018
+ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bd09adf21292b16ee27f111ac92bbd8c83c384d8
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: 7739dda4647a82b3c9d4b58976db89038428625a
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448845"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003179"
 ---
-# <a name="scatter-charts-and-bubble-charts-in-power-bi"></a>Pontdiagramok és buborékdiagramok a Power BI-ban
+# <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Pontdiagramok, buborékdiagramok és pöttydiagramok a Power BI-ban
 A pontdiagramok mindig két értéktengellyel rendelkeznek. A vízszintes tengely mentén numerikus adatok egy készletét ábrázolják, a függőleges tengely mentén pedig numerikus adatok egy másik készletét. A diagram pontokat jelenít meg az x és y numerikus értékek metszéspontjában, így egyetlen adatponttá kombinálja ezeket az értékeket. Ezek az adatpontok egyenletesen vagy egyenetlenül oszthatók el a vízszintes tengely mentén az adatoktól függően.
 
 A buborékdiagramokban az adatpontok helyett buborékok szerepelnek, és a buborékok *mérete* az adatok egy további dimenzióját jelöli.
 
 ![minta buborékdiagram](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
+
+A pöttydiagram hasonlít a buborék- és pontdiagramokra, csak itt ábrázolhat numerikus vagy kategorizált adatokat az X tengely mentén. 
+
+![minta buborékdiagram](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
 
 Beállíthatja az adatpontok számát, amely legfeljebb 10 000 lehet.  
 
@@ -41,6 +45,9 @@ Beállíthatja az adatpontok számát, amely legfeljebb 10 000 lehet.
 * Ha az adatok 3 adatsorozattal rendelkeznek, amelyek mindegyike egy értékkészletet tartalmaz.
 * Pénzügyi adatok ábrázolásához.  A különböző buborékméretek hasznosak adott értékek vizuális kiemeléséhez.
 * Kvadránsokkal való használathoz.
+
+### <a name="dot-plot-charts-are-a-great-choice-in-place-of-a-scatter-or-bubble"></a>A pöttydiagram remek választás a pont-vagy buborékdiagram helyett:
+* ha kategorikus adatokat szeretne ábrázolni az X tengely mentén
 
 ## <a name="create-a-scatter-chart"></a>Pontdiagram létrehozása
 Ebben a videóban megtekintheti, ahogy Will létrehoz egy pontdiagramot, majd az alábbi lépéseket követve maga is létrehozhat egyet.
@@ -63,11 +70,11 @@ Ez az útmutatás a Kiskereskedelmi elemzési mintát használja. Annak érdeké
 
 3. Alakítsa át pontdiagrammá. A Vizualizáció panelen válassza a Pontdiagram ikont.
 
-   ![](media/power-bi-visualization-scatter/pbi_scatter_chart_icon.png).
+   ![](media/power-bi-visualization-scatter/power-bi-scatter-new.png).
 
 4. Húzza a **Kerület** elemet a **Részletek** területről a **Jelmagyarázat** területre. A megjelenő pontdiagram a **Teljes értékesítési eltérés (%)** értéket jeleníti meg az Y tengely mentén, és az **Értékesítések négyzetlábanként** értéket az X tengely mentén. Az adatpontok színe a kerületeket jelzi:
 
-    ![](media/power-bi-visualization-scatter/power-bi-scatter.png)
+    ![](media/power-bi-visualization-scatter/power-bi-scatter2.png)
 
 Most adjunk hozzá egy harmadik dimenziót.
 
@@ -75,18 +82,17 @@ Most adjunk hozzá egy harmadik dimenziót.
 
 1. A **Mezők** panelen húzza az **Értékesítések** > **Idei értékesítések** > **Érték** elemet a **Méret** területre. Az adatpontok az értékesítési értékkel arányos mértékben jelennek meg.
    
-   ![](media/power-bi-visualization-scatter/power-bi-bubble.png)
+   ![a pontok buborékokká válnak](media/power-bi-visualization-scatter/power-bi-scatter-chart-size.png)
 
 2. Vigye az egérmutatót egy buborék fölé. A buborék mérete az **Idei értékesítések** értékét tükrözi.
    
-    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
+    ![elemleírások megjelenítése](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
 3. A buborékdiagramban megjelenő adatpontok számának beállításához a **Vizualizációk** ablaktábla **Formázás** szakaszában bontsa ki az **Általános** kártyát, és állítsa be az **Adatmennyiséget**. A maximális adatmennyiség értékeként bármilyen számot megadhat 10.000-ig. Ahogy egyre nagyobb számokat használ, javasolt először tesztelést végezni a megfelelő teljesítmény biztosítása érdekében. 
 
     ![Adatmennyiség](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 
-   > [!NOTE]
-   > A nagy számú adatpont hosszabb betöltési idővel jár, ezért ha nagyon sok adatpontot használva szeretné közzétenni a jelentést, először mindenképp ajánlatos ellenőrizni weben és mobileszközökön is, hogy a teljesítmény megfelel-e a felhasználói elvárásoknak. Magasabb adatpontértékek esetén ajánlatos az eredményeket különféle méretekkel ellenőrizni, hogy biztosítható legyen a megfelelő teljesítmény.
+   A nagy számú adatpont hosszabb betöltési idővel jár, ezért ha nagyon sok adatpontot használva szeretné közzétenni a jelentést, először mindenképp ajánlatos ellenőrizni weben és mobileszközökön is, hogy a teljesítmény megfelel-e a felhasználói elvárásoknak. 
 
 4. [Formázhatja a vizualizáció színeit, a címkéket, a címeket, a hátteret és egyebeket](service-getting-started-with-color-formatting-and-axis-properties.md). A [kisegítő lehetőségek javítása](../desktop-accessibility.md) érdekében érdemes lehet minden vonalhoz jelölőalakzatokat hozzáadni. A különböző jelölőalakzatok használata az egyes vonalakhoz megkönnyíti a jelentés használóinak a vonalak (vagy területek) elkülönítését egymástól. Ha a jelölőalakzatot szeretné kiválasztani, bontsa ki az **Alakzatok** kártyát, majd válasszon ki egy jelölőalakzatot.
 
@@ -95,6 +101,13 @@ Most adjunk hozzá egy harmadik dimenziót.
    A jelölő alakzat alakja megváltoztatható rombuszra, háromszögre vagy négyszögre:
 
    ![Négyszög jelölőalakzat](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
+
+## <a name="create-a-dot-plot"></a>Pöttydiagram létrehozása
+Pöttydiagram létrehozásához helyezzen a numerikus X tengely helyére egy kategorizált mezőt.
+
+Az **X tengely** mezőről távolítsa el az **Értékesítések négyzetlábanként** mezőt, és tegye a helyére a **Kerület > DM** mezőt.
+   
+![új pöttydiagram](media/power-bi-visualization-scatter/power-bi-dot-plot-squares.png)
 
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
