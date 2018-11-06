@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/10/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d37ed22c0abba4e843d37fd6df465f9a755fbdc6
-ms.sourcegitcommit: 126e5eca8bfab6273581dabd7603df88be755240
+ms.openlocfilehash: fee4acf21e38ddeaf78ff785d76b41c774c7022d
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/11/2018
-ms.locfileid: "40257008"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909548"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>A DirectQuery által támogatott adatforrások a Power BI-ban
 A **Power BI Desktopban** és a **Power BI szolgáltatásban** számos adatforráshoz csatlakozhat, és hozzáférhet ezek adataihoz. Ez a cikk azt ismerteti, hogy a Power BI mely adatforrásai támogatják a **DirectQuery** néven ismert kapcsolódási módszert. További, a DirectQueryre vonatkozó információkért lásd [**a DirectQuery Power BI-ban történő használatát**](desktop-directquery-about.md) ismertető cikket.
@@ -23,11 +23,11 @@ A **Power BI Desktopban** és a **Power BI szolgáltatásban** számos adatforr�
 A következő adatforrások támogatják a DirectQueryt a Power BI-ban:
 
 * Amazon Redshift
-* Azure Databricks
 * Azure HDInsight Spark (bétaverzió)
 * Azure SQL Database
 * Azure SQL Data Warehouse
 * Google BigQuery (bétaverzió)
+* IBM DB2-adatbázis
 * IBM Netezza (bétaverzió)
 * Impala (2.x-es verzió)
 * Oracle Database (12-es és újabb verzió)
