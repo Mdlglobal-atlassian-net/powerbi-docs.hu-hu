@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/25/2018
+ms.date: 10/24/2018
 ms.author: maghan
-ms.openlocfilehash: b340ba2f2798c518d1705c03f7ec526a43bc019d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 737fa3158078e24d56270fea9b212a06935652ae
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721777"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101554"
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló böngészőtámogatása
 Ismerje meg, hogy a böngészők mely verziói támogatják a Power BI jelentéskészítő kiszolgáló és a Jelentésmegjelenítő vezérlők kezelését és megtekintését.
@@ -114,7 +114,7 @@ Olyan böngészőt használjon, amelyikben a parancsfájlok használata engedél
 ## <a name="next-steps"></a>Következő lépések
 [Rendszergazdai áttekintés](admin-handbook-overview.md)  
 [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
-[A Jelentéskészítő telepítése](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[A Jelentéskészítő letöltése](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Az SQL Server Data Tools (SSDT) letöltése](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

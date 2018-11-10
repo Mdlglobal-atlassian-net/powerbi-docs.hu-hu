@@ -10,12 +10,12 @@ ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/29/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a2e43d205b9e4f3085652ac3603ee68f67b2b33c
-ms.sourcegitcommit: f9dd6098ca57d4d6cad34284126d4e58eab1c92c
+ms.openlocfilehash: 064d32944f52f6e391d4a7ec4df41ecbf09b7e3f
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50222158"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223076"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Gyakori kérdések – Power BI-beli egyéni vizualizációk
 
@@ -58,3 +58,7 @@ Igen. Az, hogy a rendszergazda letiltja az egyéni vizualizációkat a felügyel
 **Mik azok a minősített egyéni vizualizációk?**
 
 A minősített egyéni vizualizációk azok a [piactéren](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) lévő vizualizációk, amelyek megfelelnek [bizonyos](power-bi-custom-visuals-certified.md), a Power BI csapata által megadott kódolási és tesztelési előírásoknak.  A végrehajtott tesztek célja az, hogy ellenőrizzék, hogy a vizualizáció nem használ-e külső szolgáltatásokat vagy erőforrásokat. Azonban nem a Microsoft a készítője a külső felek egyéni vizualizációinak, és azt javasoljuk az ügyfeleinknek, hogy közvetlenül a készítővel kapcsolatba lépve ellenőrizzék az ilyen vizualizációk működését.
+
+## <a name="next-steps"></a>Következő lépések
+
+A hibaelhárítással kapcsolatban az [egyéni Power BI-vizualizációk hibáinak elhárítását](power-bi-custom-visuals-troubleshoot.md) ismertető cikkből tájékozódhat.

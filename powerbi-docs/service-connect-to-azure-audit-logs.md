@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 882fdad2b29c9bd21ea0b979d5009dee86304159
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4faaa63a3845125b4df1ec634d22b084b5ae25f2
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548143"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101209"
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Kapcsolódás Azure-auditnaplókhoz a Power BI-jal
 Az Azure-auditnaplók tartalomcsomagjával elemezheti és vizualizálhatja az auditnaplókban tárolt információt. A Power BI lekéri az adatait, előregyártott irányítópultot készít, és jelentéseket hoz létre az adatok alapján.
@@ -53,7 +53,7 @@ Az Azure-auditnaplók tartalomcsomagjával elemezheti és vizualizálhatja az au
 * Noha az adatkészlet napi frissítésre van ütemezve, módosíthatja a frissítési ütemezést, vagy igény szerint frissíthet az **Azonnali frissítés** gombbal.
 
 ## <a name="system-requirements"></a>Rendszerkövetelmények
-Az Azure-auditnaplók tartalomcsomagnak hozzáférésre van szüksége az auditnaplókhoz az Azure Portalon. A részleteket [itt](https://azure.microsoft.com/documentation/articles/insights-debugging-with-events/) találja.
+Az Azure-auditnaplók tartalomcsomagnak hozzáférésre van szüksége az auditnaplókhoz az Azure Portalon. A részleteket [itt](/azure/azure-resource-manager/resource-group-audit/) találja.
 
 <a name="FindingParams"></a>
 
@@ -63,7 +63,7 @@ Az előfizetés-azonosítót két egyszerű módon találhatja meg.
 1. A https://portal.azure.com helyről  -&gt; Tallózás -&gt; Előfizetések -&gt; Előfizetés-azonosító
 2. A https://manage.windowsazure.com helyről  -&gt; Beállítások -&gt; Előfizetés-azonosító
 
-Az előfizetés-azonosító egy hosszú betű- és számsor, ami a fenti \#4. lépésben láthatóhoz hasonlít. 
+Az előfizetés-azonosító egy hosszú betű- és számsor, amely a fenti \#4. lépésben láthatóhoz hasonlít. 
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 Ha hitelesítési hibát tapasztal vagy frissítési próbálkozáskor érvénytelen hitelesítő adatok miatti hibát, akkor próbálja törölni az Azure-auditnaplók tartalomcsomag összes példányát, és próbáljon újrakapcsolódni.

@@ -10,26 +10,26 @@ ms.topic: conceptual
 ms.date: 06/20/2018
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 0f2c3649a2c6e0582fe7536473f7a6ee9067ee1d
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 347a56f75fa7ea9008539e3d75d094d0c22c69d1
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137445"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101301"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>Az Azure SQL Data Warehouse használata DirectQueryvel
-Ha DirectQueryvel csatlakozik az Azure SQL Data Warehouse-hoz, dinamikus jelentéseket hozhat létre az Azure SQL Data Warehouse-ban tárolt adatokat és metrikákat használva. DirectQuery használata esetén a rendszer valós idejű lekérdezéseket küld az Azure SQL Data Warehouse-ba az adatok feltárásakor. Ez a módszer az SQL Data Warehouse méreteit is tekintve lehetővé teszi, hogy percek alatt hozzunk létre dinamikus jelentéseket akár több terabájtnyi adatból is. Ezenkívül a **Megnyitás Power BI-ban** gomb lehetővé teszi, hogy a felhasználók közvetlenül is csatlakoztathassák a Power BI-t az SQL Data Warehouse-hoz anélkül, hogy külön be kellene írniuk az ehhez szükséges információt.
+Ha DirectQueryvel csatlakozik az Azure SQL Data Warehouse-hoz, dinamikus jelentéseket hozhat létre az Azure SQL Data Warehouse-ban tárolt adatokat és metrikákat használva. DirectQuery használata esetén a rendszer valós idejű lekérdezéseket küld az Azure SQL Data Warehouse-ba az adatok feltárásakor. A valós idejű lekérdezések és az SQL Data Warehouse mérete lehetővé teszi, hogy percek alatt létrehozzon dinamikus jelentéseket akár több terabájtnyi adatból is. Ezenkívül a **Megnyitás Power BI-ban** gomb lehetővé teszi, hogy a felhasználók közvetlenül is csatlakoztathassák a Power BI-t az SQL Data Warehouse-hoz anélkül, hogy külön be kellene írniuk az ehhez szükséges információt.
 
 Az SQL Data Warehouse-összekötő használatakor:
 
 * A kapcsolódáskor a teljes szervernevet adja meg (részletes információkat lejjebb talál)
 * Győződjön meg arról, hogy a kiszolgálóra vonatkozó tűzfalszabályok között konfigurálva van az „Azure-szolgáltatások hozzáférésének engedélyezése”
 * A rendszer minden olyan művelet végrehajtásakor, mint amilyen például az oszlopok vagy szűrők felvétele, közvetlenül az adattárházat kérdezi le
-* A csempéket körülbelül 15 percenként frissíti. A frissítést nem szükséges ütemezni.  Ezen a csatlakozáskor lehet módosítani, a Speciális beállítások között.
-* DirectQueryvel elért adatkészletek esetén a Q&A nem használható
-* a sémák változtatásait nem veszi át automatikusan a rendszer
+* A csempéket körülbelül 15 percenként frissíti. A frissítést nem szükséges ütemezni.  A frissítésen a csatlakozáskor lehet módosítani, a Speciális beállítások között.
+* A Q&A nem érhető el a DirectQuery-adatkészletek esetén.
+* A rendszer nem követi automatikusan a sémák változásait.
 
-Ezek a korlátozások és megjegyzések a termék folyamatos fejlesztése következtében valószínűleg változni fognak. A csatlakozás részletes lépései alább olvashatók.
+Ezek a korlátozások és figyelmeztetések a felhasználói felületek fejlesztésével változhatnak. Alább láthatók a kapcsolódás lépéseinek részletei.
 
 ## <a name="using-the-open-in-power-bi-button"></a>A „Megnyitás Power BI-ban” gomb használata
 
@@ -37,9 +37,9 @@ Ezek a korlátozások és megjegyzések a termék folyamatos fejlesztése követ
 > Továbbfejlesztettük az Azure SQL Data Warehouse-kapcsolódást.  Az Azure SQL Data Warehouse-beli adatforráshoz való kapcsolódás leghatékonyabb módja a Power BI Desktop használata.  Miután elkészítette a modellt és a jelentést, közzéteheti a Power BI szolgáltatásban.  Az Azure SQL Data Warehouse-nak a Power BI szolgáltatásban használt közvetlen összekötője elavult.
 >
 
-Az SQL Data Warehouse és a Power BI között a legegyszerűbben az Azure betekintő portálon elérhető **Megnyitás Power BI-ban** gombot használva mozoghat. Ez a gomb lehetővé teszi, hogy fennakadások nélkül kezdhessen új irányítópultokat létrehozni a Power BI-t használva.
+Az SQL Data Warehouse és a Power BI között a legegyszerűbben az Azure Portalon elérhető **Megnyitás Power BI-ban** gombot használva mozoghat. Ez a gomb lehetővé teszi, hogy fennakadások nélkül kezdhessen új irányítópultokat létrehozni a Power BI-t használva.
 
-1. Kiindulásképpen lépjen az SQL Data Warehouse-példányhoz az Azure betekintő portálon. Vegye figyelembe, hogy az SQL Data Warehouse jelenleg még csak az Azure betekintő portálról érhető el.
+1. Kiindulásképpen lépjen az SQL Data Warehouse-példányhoz az Azure Portalon. Vegye figyelembe, hogy az SQL Data Warehouse jelenleg még csak az Azure előzetes verziós portáljáról érhető el.
 2. Kattintson a **Megnyitás Power BI-ban** gombra
    
     ![](media/service-azure-sql-data-warehouse-with-direct-connect/openinpowerbi.png)
@@ -78,7 +78,7 @@ Az SQL Data Warehouse a Power BI Adatok lekérése oldaláról is elérhető.
     ![](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
 
 ## <a name="finding-parameter-values"></a>Paraméterértékek megkeresése
-A teljes szervernevet és adatbázisnevet az Azure betekintő portálon találhatja meg. Vegye figyelembe, hogy az SQL Data Warehouse jelenleg még csak az Azure betekintő portálról érhető el.
+A teljes kiszolgálónevet és adatbázisnevet az Azure Portalon találhatja meg. Vegye figyelembe, hogy az SQL Data Warehouse jelenleg még csak az Azure előzetes verziós portáljáról érhető el.
 
 ![](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
@@ -89,6 +89,6 @@ A teljes szervernevet és adatbázisnevet az Azure betekintő portálon találha
 ## <a name="next-steps"></a>Következő lépések
 [Mi az a Power BI?](power-bi-overview.md)  
 [Power BI – Adatok lekérése](service-get-data.md)  
-[Az Azure SQL Data Warehouse](https://azure.microsoft.com/documentation/services/sql-data-warehouse/)  
+[Az Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is/)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 62950462f60fea6db44a9756eff8f99a6841d1d4
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: 3881e37fa5e97939265e9bb9362cee65a1030e67
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435442"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100818"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Irányítópultokból és jelentésekből álló alkalmazások közzététele a Power BI-ban
 
@@ -63,7 +63,7 @@ Ha a munkaterület irányítópultjai és jelentései elkészültek, kiválaszth
    
      ![Alkalmazás tartalma](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-5. A **Hozzáférés** területen meghatározhatja, hogy ki férhet hozzá az alkalmazáshoz: a vállalat összes tagja, vagy adott személyek vagy Active Directory-csoportok. Ha rendelkezik a megfelelő engedélyekkel, dönthet úgy, hogy automatikusan telepíti az alkalmazást a címzetteknél. Ezt a beállítást a [Power BI felügyeleti portálon](#how-to-enable-pushing-apps) engedélyezheti. Ismerje meg az [alkalmazások leküldésének](#how-to-enable-pushing-apps) további megfontolásait.
+5. A **Hozzáférés** területen meghatározhatja, hogy ki férhet hozzá az alkalmazáshoz: a vállalat összes tagja, vagy adott személyek vagy Active Directory-csoportok. Ha rendelkezik a megfelelő engedélyekkel, dönthet úgy, hogy automatikusan telepíti az alkalmazást a címzetteknél. A Power BI-rendszergazdák a Power BI felügyeleti portálon engedélyezhetik ezt a beállítást. További információk: [Alkalmazások automatikus telepítése](#how-to-install-an-app-automatically-for-end-users).
 
     ![Alkalmazás-hozzáférés](media/service-create-distribute-apps/power-bi-apps-access.png)
 

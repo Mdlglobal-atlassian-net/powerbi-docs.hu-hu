@@ -8,18 +8,18 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2018
+ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d042119a95cb60f930a0535e93b0a50ee9224da3
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: af39332bdc1c9e1529d56f55215b0b32ab86f3e7
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112265"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396810"
 ---
 # <a name="export-data-from-visualizations"></a>Adatok exportálása vizualizációkból
-Ha szeretné megtekinteni a vizualizáció létrehozásához használt adatokat, megjelenítheti az adatokat a Power BI-ban vagy exportálhatja őket az Excelbe .xlsx- vagy .csv-fájlként.   
+Ha szeretné megtekinteni a vizualizáció létrehozásához használt adatokat, megjelenítheti az adatokat a Power BI-ban vagy exportálhatja őket az Excelbe .xlsx- vagy .csv-fájlként. Az adatexportálási lehetőség használatához Pro- vagy Premium-licenc szükséges, valamint engedélyek az adathalmazhoz és a jelentésekhez. 
 
 Tekintse meg, ahogy Will exportálja az adatokat az egyik jelentésében található vizualizációkból, menti őket .xlsx-fájlként, és megnyitja a fájlt az Excelben. Ezután a videó alatt látható részletes utasításokat követve próbálkozzon meg a feladat elvégzésével.
 
@@ -92,9 +92,12 @@ A **Mögöttes adatok** lehetőség kiválasztásakor több dolog történhet. A
 
 ### <a name="set-the-export-options"></a>Exportálási beállítások megadása
 A felhasználók számára elérhető adatexportálási beállítások típusait a Power BI jelentéstervezői adják meg. Az alábbiak közül választhat:
-- Csak az összegzett adatok exportálásának engedélyezése (a jelentések esetében ez az alapértelmezett beállítás); 
-- Az összegtett és az alapul szolgáló adatok exportálásának engedélyezése;  
+- Csak az összegzett adatok exportálásának engedélyezése (ez az alapértelmezett beállítás az új jelentések esetében); 
+- Az összegtett és az alapul szolgáló adatok exportálásának engedélyezése (ez volt az alapértelmezett beállítás 2018 októbere előtt); 
 - Minden adat exportálásának letiltása.  
+
+    > [!IMPORTANT]
+    > Azt javasoljuk, hogy a jelentéstervezők térjenek vissza a régi jelentésekhez, és manuálisan állítsák vissza az exportálási beállítást igény szerint.
 
 1. A beállítások megadásához először nyissuk meg a Power BI Desktopot.
 

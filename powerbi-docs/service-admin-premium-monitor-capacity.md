@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/09/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: b2627950ea51239acb19972fde3244f3bd158255
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 2623dd3280636583d5dd6d6e3f57518550032193
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909222"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003202"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>A Power BI Premium- és a Power BI Embedded-kapacitások monitorozása
 
@@ -61,13 +61,11 @@ Az **Összes oldalra alkalmazott szűrők** lap lehetővé teszi, hogy kiválass
 
 ### <a name="datasets-tab"></a>Adatkészletek lap
 
-Az **Adatkészletek** lap biztosítja a legtöbb mérőszámot az alkalmazásban. Használja a lap tetején található négy gombot a különböző területek közötti váltáshoz: **Összefoglalás**, **Frissítések**, **Lekérdezések** és **Adatkészletek**.
+Az **Adatkészletek** lap biztosítja a legtöbb mérőszámot az alkalmazásban. Használja a lap tetején található gombokat a különböző területek közötti váltáshoz: **Összefoglalás**, **Frissítések**, **Lekérdezések időtartama**, **Lekérdezésekre való várakozások** és **Adatkészletek**.
 
 ![Adatkészletek lap](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
 #### <a name="summary-area"></a>Összefoglalás terület
-
-![Összefoglalás gomb](media/service-admin-premium-monitor-capacity/summary-button.png)
 
 Az **Összefoglalás** terület entitások, rendszererőforrások és adathalmazhoz tartozó számítási feladatok alapján jeleníti meg a kapacitásokat.
 
@@ -80,19 +78,27 @@ Az **Összefoglalás** terület entitások, rendszererőforrások és adathalmaz
 
 #### <a name="refreshes-area"></a>Frissítések terület
 
-![Frissítések gomb](media/service-admin-premium-monitor-capacity/refreshes-button.png)
-
 A **Frissítések** terület adathalmazokra lebontva megjeleníti a frissítéseket, a sikeres műveleteket, a frissítések átlagos/maximális várakozási idejét és a frissítések átlagos/maximális időtartamát, az elmúlt hét napra vonatkozóan. Az utolsó két diagram a frissítéseket és a GB-ban kifejezett memóriafogyasztást hasonlítja össze, valamint az átlagos várakozási időt egyórás gyűjtőkbe csoportosítva, helyi időben kifejezve. A felső sávdiagramok az első öt adathalmazt mutatják aszerint, hogy mennyi időt vett igénybe az adathalmaz frissítése (a frissítés időtartama), és mennyi volt a frissítések átlagos várakozási ideje. Ha több magas frissítési várakozási érték is van, az azt jelzi, hogy a kapacitáshasználat a csúcsértékhez közelít.
 
-#### <a name="queries-area"></a>Lekérdezések terület
+#### <a name="query-durations-area"></a>A Lekérdezések időtartama terület
 
-![Lekérdezések gomb](media/service-admin-premium-monitor-capacity/queries-button.png)
+A **Lekérdezések időtartama** terület a futtatott lekérdezések teljes számát, és az átlagos/maximális időtartamot jeleníti meg ezredmásodpercben kifejezve. Ezek az adatok adathalmazokra, munkaterületekre és egyórás gyűjtőkre vannak lebontva az elmúlt hét napra vonatkozóan. Az alsó diagram a lekérdezések számát és az átlagos időtartamot (ezredmásodpercben) hasonlítja össze a GB-ban kifejezett memóriahasználattal, egyórás gyűjtőkre bontva, helyi időben kifejezve.
 
-A **Lekérdezések** terület adathalmazokra, munkaterületekre és egyórás gyűjtőkre lebontva megjeleníti a lekérdezések teljes számát, a lekérdezésre való várakozások számát az élő/közvetlen lekérdezéseknél, az átlagos/maximális időtartamot és az ezredmásodpercben kifejezett átlagos/maximális jelentett várakozási időt, az elmúlt hét napra vonatkozóan. Az alsó diagramok a lekérdezések számát, az átlagos időtartamot (ezredmásodpercben) és az átlagos várakozási időt (ezredmásodpercben) hasonlítják össze a GB-ban kifejezett memóriafogyasztással, egyórás gyűjtőkre bontva, helyi időben kifejezve. A két felső diagram az első öt adathalmazt mutatja aszerint, hogy mennyi volt a lekérdezések átlagos időtartama, és mennyi várakozási időre volt szükség a lekérdezések végrehajtásához. A hosszú lekérdezési időtartamok és a hosszú várakozási idők azt jelzik, hogy a kapacitáshasználat a csúcsértékhez közelít. Azt is jelenthetik, hogy az egyik adathalmaz problémákat okoz, és további vizsgálat szükséges.
+A jobb felső diagram a lekérdezés időtartamának eloszlási hisztogramját jeleníti meg. A hisztogram ezredmásodpercben jelentett lekérdezés-időtartamokra van osztva a következő kategóriákba: <= 30 ms, 30–100 ms, 100–300 ms, 300 ms–1 mp, 1–3 mp, 3–10 mp, 10–30 mp és > 30 mp időszakok.
+
+A jobb alsó diagram az első öt adathalmazt mutatja aszerint, hogy mennyi volt a lekérdezések végrehajtásának átlagos időtartama.
+
+A hosszú lekérdezési időtartamok és a hosszú várakozási idők azt jelzik, hogy a kapacitáshasználat a csúcsértékhez közelít. Azt is jelenthetik, hogy az egyik adathalmaz problémákat okoz, és további vizsgálat szükséges.
+
+#### <a name="query-waits-area"></a>Lekérdezésekre való várakozások terület
+
+A **Lekérdezésekre való várakozások** terület megjeleníti a futtatott lekérdezések teljes számát, a lekérdezésre való várakozások számát az élő/közvetlen lekérdezések esetében, és az átlagos/maximális várakozási időt ezredmásodpercben kifejezve. Ezek az adatok adathalmazokra, munkaterületekre és egyórás gyűjtőkre vannak lebontva az elmúlt hét napra vonatkozóan. Az alsó diagram a lekérdezésekre való várakozások számát és az átlagos várakozási időtartamot (ezredmásodpercben) hasonlítja össze a GB-ban kifejezett memóriahasználattal, egyórás gyűjtőkre bontva, helyi időben kifejezve.
+
+A jobb felső diagram a lekérdezésekre való várakozási idő eloszlási hisztogramját jeleníti meg. A hisztogram ezredmásodpercben jelentett lekérdezés-időtartamokra van osztva a következő kategóriákba: <= 50 ms, 50–100 ms, 100–200 ms, 200–400 ms, 400 ms–1 mp, 1–5 mp és > 5 mp időszakok.
+
+A jobb alsó diagram az első öt adathalmazt mutatja aszerint, hogy átlagosan mennyi várakozási időre volt szükség a lekérdezések elindításához.
 
 #### <a name="datasets-area"></a>Adatkészletek terület
-
-![Adatkészletek gomb](media/service-admin-premium-monitor-capacity/datasets-button.png)
 
 Az **Adatkészletek** terület a memóriaterhelés miatt kizárt adathalmazok teljes számát mutatja, óránkénti lebontásban.
 

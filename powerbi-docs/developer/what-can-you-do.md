@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 ms.date: 09/17/2018
-ms.openlocfilehash: ac35e0c61576e561afd495e51d814bc38ab0a3f5
-ms.sourcegitcommit: 9719eccf29298c9c673200350abc58281ef14869
+ms.openlocfilehash: 5fb4583dccf7b6543881f1c9062227b9a3a68b05
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46473977"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223132"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Mire használhatják a fejlesztők a Power BI-t?
 
@@ -44,7 +44,7 @@ Az egyéni vizualizációk révén saját vizualizációkat hozhat létre, amely
 
 ![CV-minta](media/what-can-you-do/powerbi-custom-visual-store.png)
 
-További információ az egyéni vizualizációk fejlesztéséről az [egyéni vizualizációk fejlesztői eszközök használatával történő létrehozását](../service-custom-visuals-getting-started-with-developer-tools.md) ismertető cikkben található.
+Az egyéni vizualizációk fejlesztéséről az [Egyéni Power BI-vizualizáció fejlesztése](custom-visual-develop-tutorial.md) című cikkben találhatók további információk.
 
 ## <a name="using-api-automation"></a>API-automatizálás használata
 

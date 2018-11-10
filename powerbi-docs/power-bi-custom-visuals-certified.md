@@ -2,6 +2,7 @@
 title: Minősített egyéni Power BI képi megjelenítések
 description: Az egyéni vizualizációk minősítésre való beküldésének követelményei és folyamata. Továbbá a már minősített egyéni vizualizációk listája.
 author: mihart
+ms.author: mihart
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
@@ -9,45 +10,46 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.author: mihart
-ms.openlocfilehash: ba6c59d168deb5fb68f4b339f11fba795bae6452
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: 72b09083c50a88e2d22e9aa22f54ff014dafa998
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252399"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223444"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Egyéni vizualizáció *minősítésének* megszerzése
+
 ## <a name="what-is-meant-by-certified"></a>Mit értünk az alatt, hogy *minősített*?
+
 A *minősített egyéni vizualizáció* olyan vizualizáció, amely megfelel bizonyos kódelőírásoknak, valamint szigorú biztonsági ellenőrzéseken is átment.  Az egyéni vizualizáció a minősítést követően [exportálható PowerPointba](consumer/end-user-powerpoint.md), és megjeleníthető [az egyes jelentésoldalakra feliratkozott](consumer/end-user-subscribe.md) felhasználók által kapott e-mailekben is. Természetesen [hagyományos egyéni vizualizációként](power-bi-custom-visuals.md) is használható, hozzáadható a Power BI szolgáltatáshoz és a Power BI Desktophoz, és megtekinthető a Power BI-mobilalkalmazásban és az Embeddedben.
 
-Ön olyan webfejlesztő, aki szeretne saját képi megjelenítéseket létrehozni, és hozzáadni azokat a [Microsoft AppSource](https://appsource.microsoft.com) listájához? Ehhez tekintse át az [Ismerkedés a fejlesztői eszközökkel](service-custom-visuals-getting-started-with-developer-tools.md) című részt.
-
+Ön olyan webfejlesztő, aki szeretne saját képi megjelenítéseket létrehozni, és hozzáadni azokat a [Microsoft AppSource](https://appsource.microsoft.com) listájához? Ennek módját az [Egyéni Power BI-vizualizáció fejlesztése](developer/custom-visual-develop-tutorial.md) című cikk ismerteti.
 
 ## <a name="certification-requirements"></a>Minősítési követelmények
-* Microsoft AppSource-jóváhagyás    
-* Az egyéni vizualizációt a verzióval ellátott API-k 1.2-es vagy újabb verzióival kell megírni    
-* A kódtárat elérhetővé kell tenni felülvizsgálati célokra (például a vizualizáció kódját meg kell osztani velünk a GitHubon keresztül)    
-* Csak nyilvánosan véleményezhető OSS-összetevők használata    
-* Nem kapcsolódhat külső szolgáltatásokhoz és erőforrásokhoz    
+
+* Microsoft AppSource-jóváhagyás
+* Az egyéni vizualizációt a verzióval ellátott API-k 1.2-es vagy újabb verzióival kell megírni
+* A kódtárat elérhetővé kell tenni felülvizsgálati célokra (például a vizualizáció kódját meg kell osztani velünk a GitHubon keresztül)
+* Csak nyilvánosan véleményezhető OSS-összetevők használata
+* Nem kapcsolódhat külső szolgáltatásokhoz és erőforrásokhoz
 
 > **TIPP**: Javasoljuk az EsLint az alapértelmezett biztonsági szabálykészlettel való használatát a kód előzetes ellenőrzésére a beküldés előtt.
-> 
-> 
 
 ## <a name="process-for-submitting-a-custom-visual-for-certification"></a>Az egyéni vizualizációk minősítésre való beküldésének folyamata
+
 Egyéni vizualizáció beküldése minősítésre:
 
 1. Küldjön egy e-mailt a Power BI egyéni vizualizációk támogatásáért felelő csapatának (pbicvsupport@microsoft.com). Az e-mailben adja meg az alábbi információkat:    
 
-   * Cím: Vizualizáció minősítésére vonatkozó kérelem    
-   * A vizualizáció forráskódját tartalmazó GitHub-adattárra mutató hivatkozás    
-   * Feleljen meg a követelményeknek (lásd fent)    
-   * Sikeres kód- és biztonsági felülvizsgálat    
+   * Cím: Vizualizáció minősítésére vonatkozó kérelem
+   * A vizualizáció forráskódját tartalmazó GitHub-adattárra mutató hivatkozás
+   * Feleljen meg a követelményeknek (lásd fent)
+   * Sikeres kód- és biztonsági felülvizsgálat
 
 2. A Microsoft egyéni vizualizációkért felelős csapata értesíti, amint az egyéni vizualizáció megkapja a minősítést, és elérhetővé válik a Minősített listában (alább), illetve a vizualizáció elutasítása esetén megküldi az orvosolandó problémák listáját. A fejlesztő felelőssége, hogy biztosítsa a megfelelő kommunikációt a Microsoft csapatával, és szükség esetén frissítse Minősített vizualizációit.
 
 ## <a name="removal-of-power-bi-certified-custom-visuals"></a>Minősített egyéni Power BI vizualizációk eltávolítása
+
 A Microsoft saját belátása szerint eltávolíthatja a vizualizációkat a Minősített listáról.  
 
 ## <a name="list-of-custom-visuals-that-have-been-certified"></a>A már minősített egyéni vizualizációk listája
@@ -141,11 +143,12 @@ A Microsoft saját belátása szerint eltávolíthatja a vizualizációkat a Min
 | [Gofri diagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381049) | [Videó](https://youtu.be/1vRqYUsm3Vk) |
 | [Szófelhő](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380752) | [Videó](https://youtu.be/AblTenl9fqo) |
 
-## <a name="next-steps"></a>További lépések
-[Bevezetés az egyéni vizualizációk fejlesztői eszközeinek használatába (előzetes verzió)](service-custom-visuals-getting-started-with-developer-tools.md)      
-[A Microsoft az egyéni vizualizációkat bemutató lejátszási listája a YouTube-on](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
-[Vizualizációk a Power BI-ban](visuals/power-bi-report-visualizations.md)  
-[Egyéni vizualizáció a Power BI-ban](power-bi-custom-visuals.md)  
-[Egyéni vizualizációk közzététele a Microsoft AppSource-ban](developer/office-store.md)  
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+## <a name="next-steps"></a>Következő lépések
 
+* [Egyéni Power BI-vizualizáció fejlesztése](developer/custom-visual-develop-tutorial.md)
+* [A Microsoft az egyéni vizualizációkat bemutató lejátszási listája a YouTube-on](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
+* [Vizualizációk a Power BI-ban](visuals/power-bi-report-visualizations.md)  
+* [Egyéni vizualizáció a Power BI-ban](power-bi-custom-visuals.md)  
+* [Egyéni vizualizációk közzététele a Microsoft AppSource-ban](developer/office-store.md)  
+
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-ms.date: 07/13/2018
-ms.openlocfilehash: 9df612d80d3f322a8391eeb43430942a03850470
-ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
+ms.date: 10/17/2018
+ms.openlocfilehash: 92ed5530ba2e3e72ec4d4e7d7c317993bdf9c04b
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48827456"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396865"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Oktatóanyag: Power BI-jelentés, -irányítópult vagy -csempe beágyazása egy alkalmazásba a szervezet számára
 
@@ -158,13 +158,13 @@ A tartalmak mintaalkalmazással történő beágyazásához kövesse az alábbi 
 
     ![User Owns Data alkalmazásminta](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Nyissa meg a **Cloud.config** fájlt a mintaalkalmazásban. Az alkalmazás sikeres futtatásához ki kell töltenie a következő mezőket: **ügyfél-azonosító** és **titkos ügyfélkulcs**.
+2. Nyissa meg a **Cloud.config** fájlt a mintaalkalmazásban. Az alkalmazás sikeres futtatásához ki kell töltenie a következő mezőket: **ApplicationID** (Alkalmazásazonosító) és **ApplicationSecret** (Alkalmazás titkos kulcsa).
 
     ![Cloud.config fájl](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
-    Az **ügyfél-azonosító** mezőbe az Azure-beli **alkalmazásazonosítót** kell beírni. Az alkalmazás az **ügyfél-azonosító** segítségével azonosítja magát azon felhasználóknál, akiktől engedélyeket kér.
+    Az **ApplicationID** mezőbe írja be az Azure-beli **alkalmazásazonosítót**. Az alkalmazás az **ApplicationID** segítségével azonosítja magát azon felhasználóknál, akiktől engedélyeket kér.
 
-    A **ClientID** beszerzéséhez kövesse az alábbi lépéseket:
+    Az **ApplicationID** beszerzéséhez kövesse az alábbi lépéseket:
 
     1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 
@@ -174,17 +174,17 @@ A tartalmak mintaalkalmazással történő beágyazásához kövesse az alábbi 
 
         ![Alkalmazásregisztráció keresése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    1. Válassza ki azt az alkalmazást, amelynek használnia kell a **ClientID** azonosítót.
+    1. Válassza ki azt az alkalmazást, amelynek használnia kell az **ApplicationID** azonosítót.
 
         ![Alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    1. Egy GUID-ként listázott **alkalmazásazonosítónak** kell megjelennie. Használja ezt az **alkalmazásazonosítót** az alkalmazás **ClientID** mezőjében.
+    1. Egy GUID-ként listázott **alkalmazásazonosítónak** kell megjelennie. Használja ezt az **alkalmazásazonosítót** az alkalmazás **ApplicationID** mezőjében.
 
-        ![Ügyfélazonosító](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
+        ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    1. Másolja be a **ClientSecret** (Titkos ügyfélkulcs) adatot az **Azure** **Alkalmazásregisztrációk** szakaszának **Kulcsok** szakaszából.
+    1. Az **ApplicationSecret**mező tartalmát az **Azure** **Alkalmazásregisztrációk** szakaszának **Kulcsok** részéből másolhatja be.
 
-    1. A **ClientSecret** (Titkos ügyfélkulcs) beszerzéséhez kövesse az alábbi lépéseket:
+    1. Az **ApplicationSecret** beszerzéséhez kövesse az alábbi lépéseket:
 
         1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 
@@ -194,7 +194,7 @@ A tartalmak mintaalkalmazással történő beágyazásához kövesse az alábbi 
 
             ![Alkalmazásregisztráció keresése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-        1. Válassza ki azt az alkalmazást, amelynek használnia kell a **ClientSecret** kulcsot.
+        1. Válassza ki azt az alkalmazást, amelyhez használni kívánja az **ApplicationSecret** kulcsot.
 
             ![Alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 

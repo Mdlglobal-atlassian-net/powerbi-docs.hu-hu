@@ -1,23 +1,23 @@
 ---
-title: Jelentés megtekintése a Power BI szolgáltatásban
-description: Nyisson meg egy Power BI-jelentést Olvasó nézetben.
+title: Az ügyfeleknek készült Power BI szolgáltatásban jelentéseket tekinthet meg.
+description: Ez a témakör azt mutatja be a Power BI-felhasználóknak és -végfelhasználóknak, hogyan nyithatnak meg és tekinthetnek meg Power BI-jelentéseket.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 10/17/2018
 ms.author: mihart
-ms.openlocfilehash: 4d37c1389628078466d8fedb290d928c3f02e7d5
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 15259d472ad315eb0a6274e59ebb30b94f48a302
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112015"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396934"
 ---
-# <a name="view-a-report-in-power-bi-service-apppowerbicom"></a>Jelentés megtekintése a Power BI szolgáltatásban (app.powerbi.com)
-A jelentések egy vagy több oldalnyi vizualizációból állnak. A jelentéseket a Power BI *jelentéstervezői* hozzák létre, és [megosztják őket Önnel közvetlenül](end-user-shared-with-me.md) vagy egy [alkalmazás](end-user-apps.md) részeként. 
+# <a name="view-a-report-in-power-bi-service-for-consumers"></a>Jelentés megtekintése az *ügyfeleknek* készült Power BI szolgáltatásban
+A jelentések egy vagy több oldalnyi vizualizációból állnak. A jelentéseket a Power BI *jelentéstervezői* hozzák létre, és [megosztják őket a *felhasználókkal* közvetlenül](end-user-shared-with-me.md) vagy egy [alkalmazás](end-user-apps.md) részeként. 
 
 A jelentések megnyitásának számos különböző módja van, amelyek közül most kettőt mutatunk be: a kezdőlapról, és az irányítópultról történő megnyitást. 
 
@@ -42,7 +42,7 @@ A Power BI *tervezői* a fenti menüsávon lévő **Megosztás** gombra kattintv
    
    ![a kezdőlap Velem megosztva része](./media/end-user-report-open/power-bi-shared.png)
 
-4. A jelentés megnyitásához egyszerűen kattintson az egyik jelentéskártyára.
+4. A jelentés megnyitásához egyszerűen kattintson az egyik *jelentéskártyára*.
 
    ![jelentés oldala](./media/end-user-report-open/power-bi-report1.png)
 
@@ -65,10 +65,10 @@ A munkatársaitól kapott vagy az AppSource-ból szerzett alkalmazásokat a kezd
 
    ![Kezdőlap](./media/end-user-report-open/power-bi-my-apps.png)
 
-8. A megnyitáshoz kattintson az egyik alkalmazásra. Az alkalmazás *tervezője* által megadott beállításoktól függően az alkalmazás egy irányítópultot vagy egy jelentést nyit meg. Ha az alkalmazásra kattintva:
+8. A megnyitáshoz kattintson az egyik alkalmazásra. Az alkalmazás *tervezője* által megadott beállításoktól függően az alkalmazás egy irányítópultot, egy jelentést vagy egy alkalmazás tartalomjegyzékét nyitja meg. Ha az alkalmazásra kattintva:
     - megnyílik a jelentés, készen is van.
     - egy irányítópult nyílik meg, tekintse meg a következő szakaszt: [Jelentés megnyitása irányítópultról](#Open-a-report-from-a-dashboard).
-
+    - az alkalmazás tartalomjegyzéke nyílik meg, a **Jelentések** területen válassza ki a kívánt jelentést a megnyitásához.
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Jelentés megnyitása irányítópultról
@@ -83,15 +83,15 @@ A jelentések irányítópultokról is megnyithatók. A legtöbb estben az irán
     ![megnyitott jelentés az Olvasó nézetben](./media/end-user-report-open/power-bi-report-new.png)
 
 > [!NOTE]
-> Nem minden csempe mutat jelentésekre. Ha olyan csempét nyit meg, amelyet a [Q&A használatával hoztak létre](../service-dashboard-pin-tile-from-q-and-a.md), akkor a Q&A képernyő is megnyílik. Ha olyan csempét nyit meg, amelyet az [irányítópult **Csempe felvétele** vezérlőjének használatával hoztak létre](../service-dashboard-add-widget.md), akkor a **Csempe szerkesztése** varázsló is megnyílik.  
+> Nem minden csempe mutat jelentésekre. Ha olyan csempét nyit meg, amelyet a [Q&A használatával hoztak létre](end-user-q-and-a.md), akkor a Q&A képernyő is megnyílik. Ha olyan csempét nyit meg, amelyet az [irányítópult **Csempe felvétele** vezérlője használatával hoztak létre](../service-dashboard-add-widget.md), számos különböző dolog történhet.  
 
 
 ##  <a name="still-more-ways-to-open-a-report"></a>További lehetőségek a jelentés megnyitására
 Ha már otthonosabban mozog a Power BI szolgáltatásban, minden bizonnyal tudni fogja, mely munkafolyamatok a legkényelmesebbek az Ön számára. Íme még néhány további lehetőség a jelentések megnyitásához:
 - A bal oldali navigációs panelen a **Kedvencek**, majd a **Legutóbbi** lehetőséget választva;    
 - A [Kapcsolódó megtekintése](end-user-related.md) használata    
-- E-mailben, ha valaki [megosztja Önnel](../service-share-reports.md) vagy Ön [riasztást állít be](../service-set-data-alerts.md);    
-- Az [Értesítési központból]    (end-user-notification-center.md);    
+- E-mailben, ha valaki [megosztja Önnel](../service-share-reports.md) vagy Ön [riasztást állít be](end-user-alerts.md);    
+- Az [Értesítési központból](end-user-notification-center.md)    
 - és még néhány további lehetőség
 
 ## <a name="next-steps"></a>Következő lépések

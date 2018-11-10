@@ -4,18 +4,18 @@ description: A Power BI jelentéskészítő kiszolgáló áttekintése segít me
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/07/2018
+ms.date: 10/24/2018
 ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 1be2270074011f73c3d942677211dd99d18c6b2b
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 95a97c86ae7d17091b49fbf33cf5ec0d26053c3e
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34294571"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101394"
 ---
 # <a name="what-is-power-bi-report-server"></a>Mi a Power BI jelentéskészítő kiszolgáló?
 
@@ -28,6 +28,9 @@ A Power BI jelentéskészítő kiszolgáló hasonló az SQL Server Reporting Ser
 
 ## <a name="licensing-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló licencelése
 A Power BI jelentéskészítő kiszolgáló kétféle licenccel érhető el: [Power BI Premium](../service-premium.md) és [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) Frissítési Garanciával. Power BI Premium licenccel hibrid, vegyesen felhőbeli és helyszíni telepítés is végrehajtható.  
+
+> [!NOTE]
+> A Power BI Premium esetében a Power BI jelentéskészítő kiszolgáló csak a P termékváltozatoknak képezi részét. Az EM termékváltozatok mellé nem jár.
 
 ## <a name="web-portal"></a>Webes portál
 A Power BI jelentéskészítő kiszolgáló minden mai böngészőben megnyitható, biztonságos webes portál. Itt minden jelentést és KPI-t elérhet. A webes portál tartalma hagyományos mappahierarchiába van szervezve. A mappák tartalma típus szerint van szervezve: Power BI-jelentések, mobiljelentések, többoldalas jelentések, KPI-k és Excel-munkafüzetek, valamint a jelentések építőelemeiként használható megosztott adathalmazok és megosztott adatforrások. Kedvenceit megjelölheti, hogy egy mappában jelenjenek meg. A webes portálon közvetlenül is létrehozhatja a KPI-ket. 
@@ -66,7 +69,7 @@ További [fejlesztői dokumentáció a Jelentéskészítő kiszolgálóhoz](http
 
 ## <a name="next-steps"></a>Következő lépések
 [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
-[A Jelentéskészítő telepítése](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[A Jelentéskészítő letöltése](https://www.microsoft.com/download/details.aspx?id=53613)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

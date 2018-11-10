@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05a644c300a0879b2f5eedd95cdddc537cc6fd0b
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: a5a4f6532fe127fe01b699ee9d9e89693fdb369e
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512064"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336898"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 A Power BI Desktoppal különböző forrásokból származó adatokhoz csatlakozhat. Az elérhető adatforrások teljes listája az oldal alján látható.
@@ -75,13 +75,15 @@ Az **Adatbázis** kategória a következő adatkapcsolatokat biztosítja:
 * Teradata-adatbázis
 * SAP HANA-adatbázis
 * SAP Business Warehouse-alkalmazáskiszolgáló
-* SAP Business Warehouse üzenetkezelési kiszolgáló (bétaverzió)
+* SAP Business Warehouse üzenetkezelési kiszolgáló
 * Amazon Redshift
 * Impala
 * Google BigQuery
 * Snowflake
+* Dremio (bétaverzió)
 * Exasol (bétaverzió)
 * Jethro (bétaverzió)
+* Kyligence Enterprise (bétaverzió)
 
 > [!NOTE]
 > Egyes adatbázis-összekötőket engedélyezni kell a **Fájl > Lehetőségek és beállítások > Beállítások** elem, majd az **Előzetes verziójú funkciók** lehetőség kiválasztásával és az adott összekötő engedélyezésével. Ha a fentiekben említett összekötők nem jelennek meg itt, és használni kívánja őket, ellenőrizze az **Előzetes verziójú funkciók** beállításait. Vegye figyelembe azt is, hogy a *bétaverzió* vagy *előzetes verzió* felirattal ellátott adatforrások támogatása és működése korlátozott, használatuk éles környezetben nem ajánlott.
@@ -112,7 +114,7 @@ Az **Azure** kategória a következő adatkapcsolatokat biztosítja:
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
-* HDInsight interaktív lekérdezés (bétaverzió)
+* HDInsight interaktív lekérdezés
 * Azure KustoDB (bétaverzió)
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Azure** kategória ki van választva.
@@ -124,10 +126,10 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * SharePoint Online-lista
 * Microsoft Exchange Online
 * Dynamics 365 (online)
-* Dynamics NAV (bétaverzió)
+* Dynamics NAV
 * Dynamics 365 Business Central
+* Dynamics 365 Business Central (helyszíni)
 * Common Data Service for Apps (bétaverzió)
-* Common Data Service (bétaverzió)
 * Microsoft Azure – használati elemzés (bétaverzió)
 * Visual Studio Team Services (bétaverzió)
 * Salesforce-objektumok
@@ -163,7 +165,7 @@ A következő képen a **Lekérdezés** ablak látható, amelyen az **Online szo
 
 Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 
-* Vertica (bétaverzió)
+* Vertica
 * Web
 * SharePoint-lista
 * OData-adatcsatorna
@@ -175,6 +177,8 @@ Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 * Python-szkript
 * ODBC
 * OLE DB
+* Denado
+* Paxata (bétaverzió)
 * Üres lekérdezés
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Egyéb** kategória ki van választva.

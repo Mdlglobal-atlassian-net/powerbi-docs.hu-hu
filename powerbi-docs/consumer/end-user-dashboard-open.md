@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 10/11/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 55256d8f8eb47c9a5ec604674041456d2b1d42a1
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 53575f657c2d58f9d6b1908fb42bbb9267c3a3b8
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49113004"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396681"
 ---
 # <a name="view-a-dashboard"></a>Irányítópult megtekintése
 A Power BI-felhasználók sok időt töltenek irányítópultok tanulmányozásával. Az irányítópultok adott információkat jelenítenek meg alapul szolgáló jelentésekből vagy adathalmazokból. A Power BI-felhasználók pedig ezen információkat használják a nyomkövetéshez, monitorozáshoz, kérdések megválaszolásához, teszteléshez és egyéb műveletekhez az adatokon alapuló üzleti döntések meghozása érdekében.
@@ -26,18 +26,16 @@ A Power BI-felhasználók sok időt töltenek irányítópultok tanulmányozás�
 A Power BI Pro az irányítópultok megosztásához és a megosztott irányítópultok megtekintéséhez is szükséges.
 
 ## <a name="open-a-dashboard"></a>Irányítópult megnyitása
-Az irányítópultok a Power BI szolgáltatásban számos helyről megnyithatók.  Fontos annak megállapítása, mely tartalmak minősülnek irányítópultnak (és nem jelentésnek). Az irányítópult azonosítása után, annak megnyitása egyszerű: csak kattintson rá, és az irányítópult kitölti a Power BI vásznát.
+
 
 
 |              |         |
 |------------|--------------------------------|
-|![irányítópult ikon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Az irányítópultok legegyszerűbben az <br>irányítópult ikonról ismerhetők fel. Ha ezzel az ikonnal jelzett tartalommal találkozik, az ikonra kattintva megnyithatja az irányítópultot. |
+|![irányítópult ikon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Az irányítópultok a Power BI szolgáltatásban számos helyről megnyithatók. <br> Egyszerűen keresse ezt az irányítópult ikont. Ha már megtalálta az adott <br>irányítópultot, a megnyitás egyszerű – csak válassza ki, és az irányítópult megjelenik <br>a Power BI vásznán. |
 |                    |          |
 
 ![irányítópult ikon](media/end-user-dashboard-open/opendash.gif)
- 
 
-<!--insert aGIF-->
 
 Irányítópultokat a bal oldali navigációs sáv összes tárolójában találhat. 
 - **Kezdőlap** (előnézet)
@@ -51,5 +49,3 @@ Irányítópultokat a bal oldali navigációs sáv összes tárolójában talál
 ## <a name="next-steps"></a>Következő lépések
 * [Minta-irányítópultjaink](../sample-tutorial-connect-to-the-samples.md) egyikének megtekintése révén megismerkedhet az irányítópultok használatával.
 * Ismerkedjen meg az [irányítópult-csempékkel](end-user-tiles.md), és fedezze fel mi történik, ha kiválaszt egy csempét.
-* Szeretne nyomon követni egy adott irányítópult-csempét, és e-mailes értesítést kapni, ha elér egy bizonyos küszöbértéket? [Riasztások létrehozása a csempéken](end-user-alerts.md).
-* Tegye fel bátran az irányítópultokkal kapcsolatos kérdéseit. Fedezze fel, hogyan teheti fel az adatokkal kapcsolatos kérdéseit és szerezheti meg a válaszokat vizualizáció formájában a [Power BI Q&A](end-user-q-and-a.md) segítségével. 

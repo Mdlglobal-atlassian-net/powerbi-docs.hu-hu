@@ -10,12 +10,12 @@ ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/29/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6fc21a9b8558b554cae6e9096aaee0fbaabcdaf3
-ms.sourcegitcommit: f9dd6098ca57d4d6cad34284126d4e58eab1c92c
+ms.openlocfilehash: e34491ebc1cc7554e8c8c000da7528754b5a673b
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50222082"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223099"
 ---
 # <a name="use-organizational-custom-visuals-in-power-bi"></a>Egyéni céges vizualizációk használata a Power BI-ban
 
@@ -54,4 +54,12 @@ Végfelhasználók:
 
 * Az AppSource piactérről származó Visio-vizualizáció, PowerApps-vizualizáció és GlobeMap-vizualizáció nem jelenik meg, ha a szervezet adattárának használatával lett üzembe helyezve.
 
-További információt és válaszokat a [gyakori kérdések](power-bi-custom-visuals-faq.md#organizational-custom-visuals) között talál.
+## <a name="troubleshoot"></a>Hibaelhárítás
+
+A hibaelhárítással kapcsolatban az [egyéni Power BI-vizualizációk hibáinak elhárítását](power-bi-custom-visuals-troubleshoot.md) ismertető cikkből tájékozódhat.
+
+## <a name="faq"></a>Gyakori kérdések
+
+További információt és válaszokat [az egyéni Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md#organizational-custom-visuals) között talál.
+
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).

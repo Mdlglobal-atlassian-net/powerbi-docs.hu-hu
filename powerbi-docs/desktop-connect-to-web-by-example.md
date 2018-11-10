@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 10/23/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f90f2ea4737fc5c98df4d171f8e1e65c2704607d
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: 7de11de4c10df6a76f031f88952671d0e365b498
+ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49952211"
 ---
 # <a name="get-data-from-a-web-page-by-providing-an-example"></a>Adatok lekérése egy weblapról egy példa megadásával
 
@@ -51,6 +51,8 @@ A **Táblázat kinyerése példa alapján** választásával megnyílik egy inte
 Ebben az esetben az oldalon látható játékok *Nevét* és *Árát* fogjuk kigyűjteni. Ehhez néhány példát kell megadni az oldalról minden oszlopban, ahogyan a következő ábrán látható. A példák begépelése közben a **Power Query** (a háttérben dolgozó technológia, amely kinyeri az adatokat a weboldalról) intelligens adatkinyerési algoritmusok használatával megtalálja a példák mintázatának megfelelő adatokat.
 
 ![adatok példa alapján](media/desktop-connect-to-web-by-example/web-by-example_06.png)
+
+> Megjegyzés: Az ajánlott értékek legfeljebb 128 karakter hosszúságúak.
 
 Ha elégedett a weboldalról kinyert adatokkal, az **OK** választásával átléphet a **Lekérdezésszerkesztőbe**, ahol az adatok tovább alakíthatók vagy formázhatók, például más forrásból származó adatokkal is kombinálhatók.
 

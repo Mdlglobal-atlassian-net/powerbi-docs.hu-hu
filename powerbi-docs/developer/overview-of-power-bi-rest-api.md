@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 3b19740616e7b9a390a883fde2fd96320de7b94a
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: a1492a98825ad26b2dde359cf9cec96cc4623e04
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973586"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223168"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Mire használhatják a fejlesztők a Power BI API-t?
 
@@ -29,7 +29,7 @@ A fejlesztők létrehozhatnak saját adatmegjelenítéseket is, amelyek az inter
 | Irányítópultok, jelentések és csempék beágyazása Power BI- és nem Power BI-felhasználók részére (alkalmazás tulajdonában lévő adatok) |[Power BI-irányítópultok, -jelentések és -csempék beágyazása](embedding-content.md) |
 | Kulcsfontosságú adatok küldése Power BI-irányítópultokra a meglévő üzleti munkafolyamatok kiterjesztésével. |[Adatok küldése az irányítópultokra](walkthrough-push-data.md) |
 | Hitelesítés a Power BI-ban. |[Hitelesítés a Power BI-ban](get-azuread-access-token.md) |
-| Egyéni vizualizáció létrehozása. |[Egyéni vizualizációk létrehozása fejlesztői eszközök használatával](../service-custom-visuals-getting-started-with-developer-tools.md) |
+| Egyéni vizualizáció létrehozása. |[Egyéni Power BI-vizualizáció fejlesztése](custom-visual-develop-tutorial.md) |
 
 > [!NOTE]
 > A Power BI API-k továbbra is csoportokként hivatkoznak az alkalmazás-munkaterületekre. Bármely csoportokra való utalás alkalmazás-munkaterületek használatát jelöli.
@@ -72,7 +72,7 @@ A Power BI API lehetővé teszi az adatok leküldését az adatkészletekbe. A f
 ## <a name="next-steps"></a>Következő lépések
 
 [Adatok küldése adatkészletekbe](walkthrough-push-data.md)  
-[Bevezetés az egyéni vizualizációk fejlesztői eszközeinek használatába](../service-custom-visuals-getting-started-with-developer-tools.md)  
+[Egyéni Power BI-vizualizáció fejlesztése](custom-visual-develop-tutorial.md)  
 [A Power BI REST API-jainak leírása](https://docs.microsoft.com/rest/api/power-bi/)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

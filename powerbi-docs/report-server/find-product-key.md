@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 10/24/2018
 ms.author: maghan
-ms.openlocfilehash: 2ea6f2e557f26358ab6a93d33c890e90c96885f4
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 6d494ebf00388478bea802dbb713f1025d428439
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34564650"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101232"
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>A jelentéskészítő kiszolgáló termékkulcsának megkeresése
 Megtudhatja, hogyan találhatja meg a Power BI jelentéskészítő kiszolgáló termékkulcsát a kiszolgáló éles környezetben történő telepítéséhez.
@@ -47,7 +47,7 @@ Ha SQL Server Enterprise Frissítési garancia szerződéssel rendelkezik, a [Me
 ## <a name="next-steps"></a>Következő lépések
 [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
 [A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése](install-powerbi-desktop.md)  
-[A Jelentéskészítő telepítése](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[A Jelentéskészítő letöltése](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Az SQL Server Data Tools (SSDT) letöltése](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

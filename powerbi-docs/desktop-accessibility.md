@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 525a7e45a804d9f82f4d06cf8618d790e140699f
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: 799115dc5487a196cbd5d8a2c9dce1603764034a
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336875"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223375"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Akadálymentesség a Power BI Desktop-jelentésekben
 A Power BI rendelkezik olyan funkciókkal, amelyek lehetővé teszik a fogyatékkal élők számára, hogy könnyedén használják és kezeljék a Power BI-jelentéseket. A funkciók közé tartozik az a lehetőség, hogy a jelentések billentyűzettel vagy képernyőolvasóval is használhatók legyenek, az oldalak objektumai léptetéssel emelhetők ki, és a jelölők használata átgondolt a vizualizációkban.
@@ -34,6 +34,8 @@ A **Power BI Desktop** 2017. szeptemberi kiadásával kezdve a **?** billentyű 
 
 Az akadálymentességi fejlesztéseknek köszönhetően a Power BI-jelentések billentyűzettel vagy képernyőolvasóval is használhatók az alábbi technikák segítségével:
 
+A jelentések megtekintésekor általában előnyös, ha ki van kapcsolva a vizsgálati mód.
+
 Fókuszt válthat a jelentés lapfülei vagy egy adott jelentésoldal objektumai között a **Ctrl+F6** billentyűkombinációval.
 
 * Ha a fókusz a *jelentés lapfülein* van, a *Tab* vagy a *nyíl*billentyűk használatával válthat fókuszt az egyik jelentésoldalról a következőre. A képernyőolvasó felolvassa a jelentésoldal címét, valamint azt, hogy jelenleg ki van-e választva. A jelenleg aktív lévő jelentésoldal betöltéséhez nyomja le az *Enter* vagy a *Szóköz* billentyűt.
@@ -48,7 +50,7 @@ Az **Alt+Shift+F11** billentyűkombinációval megjelenítheti az *Adatok megjel
 ![Az Alt+Shift+F11 billentyűkombináció lenyomásával a Power BI Desktopban az egyes vizualizációk Adatok megjelenítése ablakának akadálymentesített változatát jelenítheti meg](media/desktop-accessibility/accessibility_04.png)
 
 > [!NOTE]
-> Az Adatok megjelenítése funkció a képernyőolvasóban csak ezzel a billentyűparanccsal érhető el. Ha az Adatok megjelenítése funkciót a vizualizáció fejlécében lévő beállítással nyitja meg, akkor az nem lesz elérhető a képernyőolvasó számára.
+> Az Adatok megjelenítése funkció a képernyőolvasóban csak ezzel a billentyűparanccsal érhető el. Ha az Adatok megjelenítése funkciót a vizualizáció fejlécében lévő beállítással nyitja meg, akkor az nem lesz elérhető a képernyőolvasó számára. Ha bekapcsolja a vizsgálati módot az Adatok megjelenítése funkció használata alkalmával, minden olyan billentyűparancsot használhat, amely elérhető a képernyőolvasóban.
 
 A **Power BI Desktop** 2018. júliusi verziójától kezdve az akadálymentességi funkciók a szeletelőkbe is be vannak építve. Egy kijelölt szeletelő értékének beállításakor a Ctrl+jobb nyíl (a Ctrl és a jobbra mutató nyíl billentyű) használatával lehet végiglépkedni a szeletelő különböző vezérlőin. Ha például először a Ctlr+jobb nyíl kombinációt nyomja le, akkor a radír ikon lesz kiemelve, és a SZÓKÖZ billentyű lenyomása azzal egyenértékű, mintha a radírra kattintott volna. Ezzel minden értéket töröl a szeletelőn. 
 
@@ -112,6 +114,55 @@ Az akadálymentességi funkciók néhány ismert hibáját és korlátait az al�
 
 * Ha képernyőolvasót használ a **Power BI Desktoppal**, a legjobb élményben új lesz része, ha a választott képernyőolvasót még azelőtt megnyitja, mielőtt bármilyen fájlt megnyitott volna a Power BI Desktopban.
 * Ha narrátort használ, akkor néhány korlátozás van érvényben az Adatok megjelenítése adatainak HTML-táblaként való böngészésekor.
+
+## <a name="keyboard-shortcuts"></a>Billentyűparancsok
+### <a name="frequently-used-shortcuts"></a>Gyakran használt billentyűparancsok
+| Cél           | Billentyűparancs                |
+| :------------------- | :------------------- |
+| Fókusz áthelyezése a szakaszok között  | Ctrl + F6 |
+| Fókusz mozgatása előre a szakaszban | Tab         |
+| Fókusz mozgatása visszafelé a szakaszban | Shift + Tab |
+
+### <a name="on-visual"></a>A vizualizációban
+| Cél           | Billentyűparancs                |
+| :------------------- | :------------------- |
+| Fókusz áthelyezése a Vizualizáció menüre | Alt + Shift + F10 |
+| Adatok megjelenítése | Alt + Shift + F11  |
+
+### <a name="pane-navigation"></a>Navigáció a panelen
+| Cél           | Billentyűparancs                |
+| :------------------- | :------------------- |
+| Helyi menü megnyitása | <ul><li>Windows-billentyűzet: Windows helyi menü billentyű + F10.  A Windows helyi menü billentyű a bal oldali Alt billentyű és a Balra nyílbillentyű között van</li><li>Más billentyűzeten: Shift + F10</li></ul> |
+
+### <a name="slicer"></a>Szeletelő
+| Cél           | Billentyűparancs                |
+| :------------------- | :------------------- |
+| Szeletelő vezérlése | CTRL + Jobbra nyíl |
+
+### <a name="selection-pane"></a>Kiválasztás panel
+| Cél           | Billentyűparancs                |
+| :------------------- | :------------------- |
+| A Kiválasztás panel aktiválása | F6 |
+| Objektum feljebb helyezése a rétegekben | Ctrl + Shift + F |
+| Objektum lejjebb helyezése a rétegekben | Ctrl + Shift + B |
+| Objektum elrejtése/megjelenítése | Ctrl + Shift + S |
+
+### <a name="dax-editor"></a>DAX Editor
+| Cél           | Billentyűparancs                |
+| :------------------- | :------------------- |
+| Sor mozgatása felfelé/lefelé | Alt + Felfelé nyíl/Lefelé nyíl |
+| Sor másolása felfelé/lefelé | Shift + Alt + Felfelé nyíl/Lefelé nyíl |
+| Sor beszúrása alá | Ctrl + Enter |
+| Sor beszúrása fölé | Ctrl + Shift + Enter |
+| Ugrás az egyező zárójelre | Ctrl + Shift + \ |
+| Sor behúzása/behúzásának csökkentése | Ctrl + ] / [ |
+| Kurzor beszúrása | Alt + kattintás |
+| Aktuális sor kijelölése | Ctrl + I |
+| Az aktuális kijelölés összes előfordulásának kijelölése | Ctrl + Shift + L |
+| Az aktuális szó összes előfordulásának kijelölése | Ctrl + F2 |
+
+
+
 
 ## <a name="next-steps"></a>Következő lépések
 * [Jelentéstémák használata a Power BI Desktopban (előzetes verzió)](desktop-report-themes.md)

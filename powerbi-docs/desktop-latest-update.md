@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: dc3c80b2043024a694c4852da200eb503b10c28a
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: 7de1b47656ae06f522b4b86a124bf558a660ba4e
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49337036"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473405"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Újdonságok a Power BI Desktop legújabb frissítésében
 
-## <a name="october-2018-update-2625222582"></a>2018. októberi frissítés (2.62.5222.582)
+## <a name="october-2018-update-263327240262"></a>2018. októberi frissítés (2.63.3272.40262)
 
 Az októberi frissítések kísértetiesen jók, már-már ijesztően hasznosak, és édesebbek, mint egy cukorkákkal teli halloweeni vödör. 
 
@@ -47,7 +47,7 @@ Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**
 
 * A DAX-szerkesztő fejlesztései [[videó]](https://youtu.be/GO1dhDJhSDY)  [[cikk]](desktop-formula-editor.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23daxEditor) 
 
-### <a name="analytics"></a>Elemzések
+### <a name="analytics"></a>Elemzés
 
 * Összetett modellek és az összesítés támogatása a Power BI szolgáltatásban (előzetes verzió) [[videó]](https://youtu.be/8E6UokaDtc0)  [[cikk – összesítések]](desktop-aggregations.md) [[cikk – összetett modellek]](desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23compositeModels) 
 * Tudnivalók a nem additív mértékek növekedéséről [[videó]](https://youtu.be/8E6UokaDtc0?t=107)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23Insights) 

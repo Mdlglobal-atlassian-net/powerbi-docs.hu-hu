@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f8c1aae757e80c0c2adbc321345c242eba25098c
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: c49750ef51c1b8bacc36946d2d5c75a08abb36d7
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "34456134"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101577"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dinamikus sorszintű biztonság Analysis Services-beli táblázatos modellel
 Ez az oktatóanyag bemutatja a **sorszintű biztonság** megvalósításához szükséges lépéseket az **Analysis Services-beli táblázatos modellben**, és a Power BI-jelentésben való használatának módját. A jelen oktatóanyagban szereplő lépések célja, hogy végigvezessék és megismertessék a minta adatkészlet teljesítéséhez szükséges lépésekkel.
@@ -72,6 +72,9 @@ Számos közzétett cikkben található leírás arról, hogy hogyan állíthat�
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
     Ebben a képletben a **LOOKUPVALUE** függvény a **DimUserSecurity[SalesTerritoryID]** oszlop minden értékét visszaadja, ahol a **DimUserSecurity[UserName]** megegyezik az aktuálisan bejelentkezett Windows-felhasználónévvel, az **DimUserSecurity[SalesTerritoryID]** pedig ugyanaz, mint a **DimSalesTerritory[SalesTerritoryKey]**.
    
+    > [!IMPORTANT]
+    > Ügyeljen arra, hogy sorszintű biztonság használatakor a [USERELATIONSHIP](https://msdn.microsoft.com/query-bi/dax/userelationship-function-dax) DAX-függvény nem támogatott.
+
    A **LOOKUPVALUE** által visszaadott értékesítési SalesTerritoryKey készletét ezután a **DimSalesTerritory** sorainak korlátozására használja a rendszer. Csak azok a sorok jelennek meg, ahol a sorhoz tartozó **SalesTerritoryKey** megtalálható a **LOOKUPVALUE** függvény által visszaadott azonosítók készletében.
 8. A **DimUserSecurity** tábla **DAX-szűrő** oszlopába írja be a következő képletet:
    
