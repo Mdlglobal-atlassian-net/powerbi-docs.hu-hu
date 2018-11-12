@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1bb9921b31187d0df3debc644088a72e1d78207c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 6bc8eea6138f2961457d03eaf5ef88d0327a058d
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549914"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909571"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Elemzések megosztása és történetek felépítése a Power BI könyvjelzőivel 
 A Power BI-ban a **könyvjelzők** használatával rögzítheti az egyes jelentésoldalak aktuális nézetkonfigurációját, beleértve a szűréseket és a vizualizációk állapotát, hogy később egyszerűen a mentett könyvjelzőre kattintva visszaállíthassa az adott állapotot. 
@@ -44,13 +44,12 @@ A létrehozott könyvjelzőkhöz a rendszer a következő elemeket menti:
 
 * Az aktuális oldal
 * Szűrők
-* Szeletelők
+* Szeletelők, szeletelőtípusok (például legördülő menü vagy lista), valamint szeletelőállapot
+* A vizualizáció kiválasztásának állapota (például szűrők keresztikemelése)
 * A rendezés iránya
 * A részletezés helye
 * Láthatóság (az egyes objektumoké, a **Kiválasztás** panel használatával)
 * A látható objektumok fókusz vagy **Reflektorfény** módja
-
-A könyvjelzők jelenleg még nem mentik a keresztkiemelési állapotokat. 
 
 Állítson be egy jelentésoldalt úgy, amilyen állapotban a könyvjelzővel menteni szeretné. Miután a jelentésoldalt és a vizualizációkat a kívánt módon elrendezte, a könyvjelző hozzáadásához válassza a **Könyvjelzők** panel **Hozzáadás** gombját. 
 

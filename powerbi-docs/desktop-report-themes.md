@@ -10,28 +10,33 @@ ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9945237088073a4f9111e06fd6729a1c4db10081
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: 215b4c8f46b2d39c6dcc5853c07e4e6526027881
+ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003317"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51027460"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Jelentéstémák használata a Power BI Desktopban
-A **Jelentéstémák** használatával egységes színtémát alkalmazhat az egész jelentésre, például a cég színeit, az évszaknak megfelelő színeket vagy bármely más színtémát, amit csak szeretne. **Jelentéstémák** alkalmazásakor a jelentésben szereplő összes vizualizáció a kiválasztott téma színeit fogja használni (ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be).
+A **Jelentéstémák** használatával egységes színtémát alkalmazhat az egész jelentésre, például a cég színeit, az évszaknak megfelelő színeket vagy bármely más színtémát. **Jelentéstémák** alkalmazásakor a jelentésben szereplő összes vizualizáció a kiválasztott téma színeit fogja használni. Ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be.
 
-![](media/desktop-report-themes/report-themes_1.png)
+![Jelentéstémák](media/desktop-report-themes/report-themes_1.png)
 
-A **Jelentéstémák** alkalmazásához egy JSON-fájlra van szükség, amely olyan alapvető szerkezetet használ, amelyet aztán importálhat a Power BI Desktopba, majd alkalmazhatja a jelentésen. A JSON-fájl szerkezete egyszerű, és a mindössze néhány kattintásból álló importálási folyamat pillanatok alatt elvégezhető.
+**Jelentéstéma** alkalmazásakor egy alapszintű szerkezettel rendelkező JSON-fájlra van szükség. Ezt a JSON-fájlt ezután importálhatja a Power BI Desktopba, majd alkalmazhatja a jelentésre. A JSON-fájl szerkezete és importálási folyamata egyszerű (utóbbi mindössze néhány kattintásból áll).
 
-A **Power BI Desktop** 2017. szeptemberi kiadásától kezdődően még több jelentéstéma-elemet határozhat meg JSON-fájlok használatával, továbbá a **Formázás** panelen manuálisan beállítható szinte összes elemet testre szabhatja (és szabványosíthatja) JSON-fájl segítségével. A 2017. szeptemberi (és a későbbi) kiadások célja, hogy teljes körűen, egészen a legapróbb részletekig megszabhassa a jelentések megjelenését és működését.
+A **Power BI Desktop** 2017. szeptemberi verziójában még több jelentéstéma-elemet határozhat meg JSON-fájl használatával. Ezen felül szinte az összes elemet testreszabhatja és szabványosíthatja. A testreszabást a JSON-fájlban kell végrehajtani, amelyet manuálisan módosíthat a **Formázás** panelen. A 2017. szeptemberi (és a későbbi) kiadások célja, hogy teljes körűen, egészen a legapróbb részletekig megszabhassa a jelentések megjelenését és működését.
 
 ### <a name="enable-report-themes"></a>Jelentéstémák engedélyezése
-A **Power BI Desktop** 2018. augusztusi kiadásától kezdődően általánosan elérhetőek a jelentéstémák, és nem szükséges külön engedélyezni őket. 
+A **Power BI Desktop** 2018. augusztusi verziójától kezdve általánosan elérhető a jelentéstémák használata, és nem szükséges külön engedélyezni. 
 
-Ha a **Power BI Desktop** korábbi verzióját használja, akkor előzetes funkcióként engedélyezheti a használatukat. Ehhez a **Fájl > Lehetőségek és beállítások > Lehetőségek > Előzetes verziójú funkciók** területen jelölje be az **Egyéni jelentéstémák** jelölőnégyzetet. Miután ezt beállította, újra kell indítania a **Power BI Desktopot**.
+Ha a **Power BI Desktop** egy korábbi verzióját használja, előzetes funkcióként engedélyezheti a következő lépések végrehajtásával: 
 
-![](media/desktop-report-themes/report-themes_2.png)
+1. Válassza a **Fájl > Lehetőségek és beállítások > Beállítások > Előzetes verziójú funkciók** lehetőséget. 
+2. Ezután jelölje be a **Egyéni jelentéstémák** jelölőnégyzetét. 
+
+Miután ezt beállította, újra kell indítania a **Power BI Desktopot**.
+
+![Egyéni jelentéstémák](media/desktop-report-themes/report-themes_2.png)
 
 Javasoljuk, hogy mindig frissítsen a **Power BI Desktop** legújabb verziójára, amelyet a [Power BI Desktop beszerzése](desktop-get-the-desktop.md) hivatkozással érhet el. 
 
@@ -51,42 +56,50 @@ Power BI Desktop-jelentésre úgy alkalmazhat jelentéstémát, hogy kiválaszt 
 
 Az elérhető beépített jelentéstémák közül úgy választhat, hogy a **Kezdőlap** menüsávjának **Témaváltás** gombját választja, majd kijelöl egyet a legördülő menüben látható témák közül.
 
-![jelentéstéma kiválasztása](media/desktop-report-themes/report-themes_2a.png)
+![Jelentéstéma kiválasztása](media/desktop-report-themes/report-themes_2a.png)
 
 A jelentéstéma alkalmazva lesz a jelentésre, és folytathatja a munkát.
 
 ### <a name="importing-report-themes"></a>Jelentéstémák importálása
 
-Egyéni jelentéstéma importálásához kattintson a **Témaváltás** lehetőségre a **Kezdőlap** menüszalagon, majd a legördülő menüben válassza a **Téma importálása** elemet.
+Egyéni jelentéstéma importálásához válassza a **Témaváltás** lehetőséget a menüszalag **Kezdőlap** lapján. Válassza a **Téma importálása** elemet a legördülő menüből.
 
-![](media/desktop-report-themes/report-themes_3.png)
+![Téma importálása](media/desktop-report-themes/report-themes_3.png)
 
-Ekkor megjelenik egy ablak, amelyben megkeresheti a JSON-témafájl helyét. A Power BI Desktop .JSON kiterjesztésű fájlokat keres, amely a Power BI-jelentéstémák fájltípusa. Az alábbi képen néhány ünnepi témafájl szerepel. Most egy március hónaphoz illő ünnepi témát fogunk kiválasztani.
+Ekkor megjelenik egy ablak, amelyben megkeresheti a JSON-témafájl helyét. A Power BI Desktop JSON kiterjesztésű fájlokat keres, mert ez a Power BI-jelentéstémák fájltípusa. Az alábbi képen néhány ünnepi témafájl szerepel. Példánkban egy márciushoz illő ünnepi témát fogunk kiválasztani.
 
-![](media/desktop-report-themes/report-themes_4.png)
+![Ünnepi téma](media/desktop-report-themes/report-themes_4.png)
 
 A Power BI Desktop jelzi, ha a téma sikeresen betöltődött.
 
-![](media/desktop-report-themes/report-themes_5.png)
+![A téma importálása sikerült](media/desktop-report-themes/report-themes_5.png)
 
 A témafájl sikeres importálása után tekintsük meg a JSON-fájl egyszerű és kézenfekvő szerkezetét.
 
 ## <a name="structure-of-a-report-theme-json-file"></a>Egy jelentéstémát tartalmazó JSON-fájl szerkezete
-Az előző szakaszban kiválasztott alapszintű JSON-fájl (*St Patricks Day.json*) egy szerkesztőben megnyitva a következőképpen néz ki.
+ Ha az előző szakaszban kiválasztott alapszintű JSON-fájlt (*St. Patrick’s Day.json*) megnyitjuk egy szerkesztőben, a következő képernyőképhez hasonlóan fog kinézni:
 
-![](media/desktop-report-themes/report-themes_6.png)
+![A St. Patrick’s Day JSON-fájl](media/desktop-report-themes/report-themes_6.png)
 
 Ez a JSON-fájl az alábbi kötelező sorokat tartalmazza:
 
-* **name** – Ez a téma neve, amely az egyetlen kötelezően kitöltendő mező
-* **dataColors** – Hexadecimális kódolású színkódok listája a Power BI Desktop vizualizációiban szereplő adatokhoz. A lista annyi színt tartalmazhat, amennyi szükséges
-* **background**, **foreground** és **tableAccent** – Ezek az értékek a különböző típusú vizualizációkban alkalmazandó színeket határozzák meg. A **foreground** (előtérszín) a szövegmezők, a KPI-célok, a többsoros kártyák, a kártyaértékek, a mérőkiolvasások és a függőleges szeletelőelemek szövegére, valamint a **táblázatok** és **mátrixok** összegeire és értékeire vonatkozik. A **background** (háttérszín) a gombok kitöltésére és a kombinált diagramok címkéinek hátterére vonatkozik. A színek használatának módja az alkalmazott vizualizációstílustól függ. A **tábla** és **mátrix** típusú vizualizációk alapértelmezés szerint alkalmazzák ezeket a stílusokat.
+* **name** (név) – A téma neve, amely az egyetlen kötelezően kitöltendő mező.
 
-Ha egy stílust szeretne alkalmazni egy **tábla** vagy **mátrix** típusú vizualizációra, válassza ki a vizualizációt, majd a **Vizualizációk** ablaktáblán kattintson a **Formátum** szakaszra, majd bontsa ki a **Mátrix stílusa** lehetőséget és válasszon egy stílust a **Stílus** helyi menüből.
+* **dataColors** (adatszínek) – A Power BI Desktop vizualizációiban szereplő adatokhoz használható hexadecimális színkódok listája. A lista annyi színt tartalmazhat, amennyit csak szeretne.
 
-![](media/desktop-report-themes/report-themes_7.png)
+* **background** (háttér), **foreground** (előtér) és **tableAccent** (táblázat jelölőszíne) – A különböző típusú vizualizációkban alkalmazandó színek. 
+  - A **foreground** (előtérszín) érték a szövegmezők, a KPI-célok, a többsoros kártyák, a kártyaértékek, a mérőkiolvasások és a függőleges szeletelőelemek szövegére, valamint a **táblázatok** és **mátrixok** összegeire és értékeire vonatkozik. 
+  - A **background** (háttérszín) érték a gombok kitöltésére és a kombinált diagramok címkéinek hátterére vonatkozik. A színek használatának módja az alkalmazott vizualizációs stílustól függ. 
+  - A **tábla** és **mátrix** típusú vizualizációk alapértelmezés szerint alkalmazzák ezeket a stílusokat.
 
-Ha egyszerűen kivágással és beillesztéssel szeretné létrehozni saját JSON-fájlját, a *St Patricks Day.json* fájl szövege itt található:
+Stílus **tábla** vagy **mátrix** típusú vizualizációkra való alkalmazásához kövesse az alábbi lépéseket: 
+1. Válassza ki a vizualizációt. 
+2. Ezt követően a **Vizualizációk** panelen válassza a **Formátum** szakaszt.
+3. Bontsa ki a **Mátrix stílusa** elemet, majd válasszon egy stílust a **Stílus** legördülő listából.
+
+![Stílus legördülő lista](media/desktop-report-themes/report-themes_7.png)
+
+A *St. Patrick’s Day.json* fájl szövege az alábbiakban látható, amely alapján létrehozhat egy saját JSON-fájlt:
 
     {
         "name": "St Patricks Day",
@@ -98,52 +111,52 @@ Ha egyszerűen kivágással és beillesztéssel szeretné létrehozni saját JSO
 
 Itt beírhatja saját hexadecimális színkódját a kívánt színekhez.
 
-A **Power BI Desktop** 2017. szeptemberi kiadásától kezdve a JSON-fájl lényegesen összetettebb lehet. A JSON-fájlban csak azt a formátum szerepel, amelyiket módosítani szeretné, és minden más, ami *nem* szerepel a JSON-fájlban, a Power BI alapértelmezett beállításai szerint jelenik meg.
+A **Power BI Desktop** 2017. szeptemberi verziójától kezdve a JSON-fájl lényegesen összetettebb is lehet. A JSON-fájlban csak azt a formázást kell megadnia, amelyet módosítani szeretne, és minden más, ami *nem* szerepel a JSON-fájlban, egyszerűen a Power BI alapértelmezett beállításai szerint fog megjelenni.
 
-A JSON-fájlok létrehozásának számos előnye van. Megadhatja például, hogy minden diagram 12-es betűméretet használjon, vagy hogy egyes vizualizációk egy adott betűtípuscsaládot használjanak, esetleg kikapcsolhatja az adatcímkéket bizonyos diagramtípusoknál.
+A JSON-fájlok létrehozásának számos előnye van. Megadhatja például, hogy minden diagram 12-es betűméretet használjon, vagy hogy egyes vizualizációk egy adott betűtípuscsaládot használjanak. Esetleg kikapcsolhatja az adatcíméket bizonyos diagramtípusok esetében.
 
-A részletes JSON-fájlok használata révén olyan témafájlt hozhat létre, amely szabványosítja a diagramokat és jelentéseket, így megkönnyíti a konzisztens vállalati jelentések létrehozását.
+A részletes JSON-fájlok használatával olyan témafájlt hozhat létre, amely szabványosítja a diagramokat és a jelentéseket, így megkönnyíti az egységes vállalati jelentések létrehozását.
 
-A részletes JSON-fájl formátumával kapcsolatos tudnivalókért tekintse meg a cikk végén található **Jelentéstémát tartalmazó JSON-fájlok formátuma** című szakaszt.
+A részletes JSON-fájl formátumával kapcsolatos tudnivalókért tekintse meg a cikk **Jelentéstémát tartalmazó JSON-fájlok formátuma** című későbbi szakaszát.
 
 ## <a name="how-report-theme-colors-stick-to-your-reports"></a>Hogyan társulnak a jelentéshez a jelentéstéma színei?
 Ha a jelentést közzéteszi a **Power BI szolgáltatásban**, a Jelentéstéma színei társítva maradnak.
 
-Emellett a **Formátum** panel **Adatszínek** szakaszában megjelenik a választott jelentéstéma. Például a **St. Patrick's Day** téma zöld és barna színeinek alkalmazása után, ha kiválasztunk egy vizualizációt és a **Formátum > Adatszínek** részhez lépünk, a következőt fogjuk látni.
+A **Formátum** panel **Adatszínek** szakaszában megjelenik a választott jelentéstéma. Ha például alkalmazzuk a **St. Patrick’s Day** témában szereplő sokféle zöld és barna színt, ezzel egy vizualizációt választunk ki. Ezután a **Formátum > Adatszínek** lehetőség alatt a következő információk láthatók:
 
-![](media/desktop-report-themes/report-themes_8.png)
+![Vizualizációk](media/desktop-report-themes/report-themes_8.png)
 
 Látja ezt a sok zöld árnyalatot? Ez azért jelenik meg így, mert ezek a színek az előzőleg importált és alkalmazott **jelentéstéma** részei.
 
 ### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Milyen helyzetekben nem társulnak a jelentéshez a jelentéstéma színei?
-Ha egyéni színkészletet (vagy egyedi színeket) alkalmaz egy vizualizáció adott adatpontjára, az alkalmazott jelentéstéma *nem* írja felül a testre szabott adatpont színét.
+Tegyük fel, hogy egy egyéni színkészletet (vagy egyedi színt) alkalmaz egy vizualizáció adott adatpontjára. Ha ezután egy jelentéstémát alkalmaz, azzal *nem* fogja felülírni az imént testre szabott adatpontot.
 
-Emellett, ha egy adatpont színét a színpaletta Téma színei szakaszával manuálisan adja meg, akkor azok az így beállított szín (vagy színek) *nem* frissül(nek) új jelentéstéma alkalmazásakor. Az alapértelmezett színek visszaállításához (ha azt szeretné, hogy azok új jelentéstéma alkalmazásakor frissüljenek) válassza a **Visszaállítás alapértelmezettre** lehetőséget a **Téma színei** palettán.
+Arra is lehetősége van, hogy manuálisan beállítsa egy adatpont színét a Téma színei szakaszban. Új jelentéstéma alkalmazásakor ezek a színek *nem* fognak frissülni. Az alapértelmezett színek visszaállításához (ha azt szeretné, hogy azok új jelentéstéma alkalmazásakor frissüljenek) válassza a **Visszaállítás alapértelmezettre** lehetőséget a **Téma színei** palettán.
 
-![](media/desktop-report-themes/report-themes_9.png)
+![Visszaállítás alapértelmezettre](media/desktop-report-themes/report-themes_9.png)
 
 Ezen kívül számos **egyéni vizualizáció** sem alkalmazza a jelentéstémákat.
 
 ## <a name="report-theme-files-you-can-use-right-now"></a>Azonnal használható jelentéstémák
-Meg szeretne ismerkedni a **jelentéstémákkal**? Remek! Íme néhány használatra kész jelentéstémát tartalmazó JSON-fájl, amelyeket letölthet, majd a **Power BI Desktop**-jelentésbe importálhat, valamint egy kép arról a jelentéstémáról, amelyet a cikkben korábban a jelentésre alkalmaztunk.
+Meg szeretne ismerkedni a **jelentéstémákkal**? Íme néhány előre elkészített jelentéstémát tartalmazó JSON-fájl, amelyet letölthet és importálhat **Power BI Desktop**-beli jelentésekbe. Továbbá talál képeket is, melyeken láthatja, hogy néznek ki a jelentéstémák a cikkben ismertetett jelentésre alkalmazva.
 
 * A **jelentéstémák** első kiadását bejelentő [blogbejegyzésben](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) használt [téma](https://go.microsoft.com/fwlink/?linkid=843924) neve [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
 
-![](media/desktop-report-themes/report-themes_10.png)
+  ![A waverform.json téma](media/desktop-report-themes/report-themes_10.png)
 
-* Az alapértelmezett színtémánál a [látássérültek számára könnyebben látható téma](https://go.microsoft.com/fwlink/?linkid=843923) neve [*ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
+* A [gyengénlátók számára az alapértelmezett témához képest könnyebben olvasható téma](https://go.microsoft.com/fwlink/?linkid=843923). A neve: [ *ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
 
-![](media/desktop-report-themes/report-themes_11.png)
+  ![A ColorblindSafe-Longer.json téma.](media/desktop-report-themes/report-themes_11.png)
 
-* Rengeteg [Power View-téma](https://go.microsoft.com/fwlink/?linkid=843925) egy zip-fájlban, köztük a lentebb látható [*Apothecary.json*](https://go.microsoft.com/fwlink/?linkid=843925).
+* Egy csokornyi [Power View-téma](https://go.microsoft.com/fwlink/?linkid=843925) egy zip-fájlban, köztük a lentebb látható [*Apothecary.json*](https://go.microsoft.com/fwlink/?linkid=843925).
 
-![](media/desktop-report-themes/report-themes_12.png)
+  ![Az Apothecary.json téma](media/desktop-report-themes/report-themes_12.png)
 
-* Végül pedig egy kedves téma (a *Valentine's Day* nevű téma), amely garantáltan felkelti a nézők figyelmét.
+* Végül íme a *Valentine's Day* téma.
 
-![](media/desktop-report-themes/report-themes_13.png)
+  ![A Valentine's Day téma](media/desktop-report-themes/report-themes_13.png)
 
-Ha nem szeretné letölteni, innen kimásolhatja Valentine's Day nevű JSON-fájl kódját:
+Letöltés biztosítása helyett az alábbiakban látható a Valentine’s Day nevű JSON-fájl kódja:
 
     {
         "name": "Valentine's Day",
@@ -153,7 +166,7 @@ Ha nem szeretné letölteni, innen kimásolhatja Valentine's Day nevű JSON-fáj
         "tableAccent": "#990011"
     }
 
-A **jelentéstémák** színek segítségével tükrözhetik az Ön személyiségét, vagy a vállalat arculatát, esetleg az aktuális évszak, vagy ünnep hangulatát. Használja örömmel!
+A **jelentéstémák** színek segítségével tükrözhetik az Ön személyiségét, vagy a vállalat arculatát, esetleg az aktuális évszak, vagy ünnep hangulatát. 
 
 Íme néhány további jelentéstéma, amelyet kiindulási pontként használhat:
 
@@ -165,11 +178,11 @@ A **jelentéstémák** színek segítségével tükrözhetik az Ön személyisé
 ## <a name="report-theme-json-file-format"></a>Jelentéstémát tartalmazó JSON-fájlok formátuma
 Az alapszintű JSON-fájl öt kötelező sort tartalmaz:
 
-* **name** – Ez a téma neve, amely az egyetlen kötelezően kitöltendő mező
-* **dataColors** – Hexadecimális kódolású színkódok listája a Power BI Desktop vizualizációiban szereplő adatokhoz. A lista annyi színt tartalmazhat, amennyi szükséges
-* **background**, **foreground** és **tableAccent** – Ezek az értékek a különböző típusú vizualizációkban alkalmazandó színeket határozzák meg. A **foreground** (előtérszín) a szövegmezők, a KPI-célok, a többsoros kártyák, a kártyaértékek, a mérőkiolvasások és a függőleges szeletelőelemek szövegére, valamint a **táblázatok** és **mátrixok** összegeire és értékeire vonatkozik. A **background** (háttérszín) a gombok kitöltésére és a kombinált diagramok címkéinek hátterére vonatkozik. A színek használatának módja az alkalmazott vizualizációstílustól függ. A **tábla** és **mátrix** típusú vizualizációk alapértelmezés szerint alkalmazzák ezeket a stílusokat.
+* **name** (név) – A téma neve, amely az egyetlen kötelezően kitöltendő mező.
+* **dataColors** (adatszínek) – A Power BI Desktop vizualizációiban szereplő adatokhoz használható hexadecimális színkódok listája. A lista annyi színt tartalmazhat, amennyit csak szeretne.
+* **background** (háttér), **foreground** (előtér) és **tableAccent** (táblázat jelölőszíne) – A különböző típusú vizualizációkban alkalmazandó színek. A **foreground** (előtérszín) a szövegmezők, a KPI-célok, a többsoros kártyák, a kártyaértékek, a mérőkiolvasások és a függőleges szeletelőelemek szövegére, valamint a **táblázatok** és **mátrixok** összegeire és értékeire vonatkozik. A **background** (háttérszín) érték a gombok kitöltésére és a kombinált diagramok címkéinek hátterére vonatkozik. A színek használatának módja az alkalmazott vizualizációs stílustól függ. A **tábla** és **mátrix** típusú vizualizációk alapértelmezés szerint alkalmazzák ezeket a stílusokat.
 
-Ha bővített formátumú JSON-fájlt szeretne létrehozni, amelynek formátuma sokkal részletesebben szabályozható, akkor egy **visualStyles** nevű szakaszt kell hozzáadnia a JSON-fájlhoz, és abban a szakaszban kell megadnia a formázás részleteit. A **visualStyles** szakasz formátuma a következőképpen néz ki:
+Ha bővített, a formázást sokkal részletesebben szabályozó JSON-fájlt szeretne létrehozni, akkor egy **visualStyles** nevű szakaszt kell beszúrnia a JSON-fájlba. A formázási jellemzőket a **visualStyles** szakaszba kell beágyazni. A **visualStyles** szakasz az alábbi formátumhoz fog hasonlítani:
 
     visualStyles: {
         visualName: {
@@ -181,7 +194,7 @@ Ha bővített formátumú JSON-fájlt szeretne létrehozni, amelynek formátuma 
         }
     }
 
-A **visualName** és a **cardName** szakaszokban megadhatja a vizualizáció és a kártya kívánt nevét, vagy egy csillag („\*”) karakter használatával megadhatja, hogy az adott vizualizációhoz valamilyen tulajdonságot tartalmazó összes vizualizációra és kártyára vonatkozzon. A csillag („\*”) karaktert bármikor alkalmazhatja, ha azt szeretné, hogy egy beállítás az egész jelentésre vonatkozzon, mint például a betűméret vagy egy adott betűtípuscsalád, amelyet a jelentés minden vizualizációjában látni szeretne.
+A **visualName** és a **cardName** szakaszokban használjon egy adott vizualizáció- és kártyanevet. Használja a csillag karaktert („\*”), ha a beállítást minden olyan vizualizációra vagy kártyára alkalmazni szeretné, amely rendelkezik az adott vizualizáció egy tulajdonságával. A csillag („\*”) karaktert akkor is bármikor alkalmazhatja, ha azt szeretné, hogy egy beállítás az egész jelentésre vonatkozzon (példa: vizualizációk betűmérete vagy adott betűtípuscsaládja).
 
 > [!NOTE]
 > Csak azokat a formázási elemeket kell megadnia, amelyeket módosítani szeretne. A JSON-fájlban nem szereplő formázási elemek egyszerűen az alapértelmezett értékeket és beállításokat veszik fel.
@@ -189,9 +202,9 @@ A **visualName** és a **cardName** szakaszokban megadhatja a vizualizáció és
 > 
 
 ### <a name="json-file-element-definitions"></a>A JSON-fájl elemeinek definíciói
-Az ebben a szakaszban szereplő táblák a JSON-fájl létrehozásához szükséges vizualizációneveket (*visualName*), kártyaneveket (*cardName*) és enumerálásokat határoznak meg.
+Az ebben a szakaszban szereplő táblázatok a JSON-fájl létrehozásához szükséges vizualizációneveket (*visualName*), kártyaneveket (*cardName*) és enumerálásokat adják meg.
 
-A *dateTime* érték meghatározásakor a dátumnak aposztrófok közötti ISO-formátumú dátumnak kell lennie, amely a „datetime” kifejezéssel kezdődik a következőképpen:
+A *dateTime* érték meghatározásakor a dátumnak aposztrófok közötti ISO-formátumú dátumnak kell lennie, amely a „datetime” kifejezéssel kezdődik. Íme egy példa:
 
     “datetime’2011-10-05T14:48:00.000Z’”
 
@@ -231,7 +244,7 @@ A Boole-értékek lehetséges értéke *true* (igaz) vagy *false* (hamis). A szt
 | treemap |
 | waterfallChart |
 
-Az alábbi tábla *cardName* értékeket határoz meg. Az egyes cellákban szereplő első érték a JSON-fájl kifejezés, a második érték a kártyának a **Power BI Desktop** felhasználói felületén megjelenő neve.
+Az alábbi tábla *cardName* értékeket határoz meg. Az egyes cellákban szereplő első érték a JSON-fájl kifejezés. A második érték a kártyának a **Power BI Desktop** felhasználói felületén megjelenített neve.
 
 | **cardName** |
 | --- |
@@ -288,7 +301,7 @@ Az alábbi tábla *cardName* értékeket határoz meg. Az egyes cellákban szere
 | zoom: Nagyítás |
 
 ### <a name="properties-within-each-card"></a>Az egyes kártyákon belüli tulajdonságok
-A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza meg.
+A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza meg:
 
     "general":
         "responsive": {
@@ -1176,7 +1189,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
             "Value"
           ],
           "description": [
-            "Set reference line numeric value "
+            "Set reference line numeric value"
           ]
         },
         "lineColor": {
@@ -1312,7 +1325,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
             "Value"
           ],
           "description": [
-            "Set reference line numeric value "
+            "Set reference line numeric value"
           ]
         },
         "lineColor": {
@@ -2029,7 +2042,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
             "Value"
           ],
           "description": [
-            "Set reference line numeric value "
+            "Set reference line numeric value"
           ]
         },
         "lineColor": {

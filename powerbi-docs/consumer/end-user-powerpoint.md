@@ -1,5 +1,5 @@
 ---
-title: Jelentések exportálása a Power BI-ból a PowerPointba (előzetes verzió)
+title: Jelentések exportálása Power BI-ból PowerPointba
 description: Ismerje meg, hogyan exportálhat jelentést a Power BI-ból a PowerPointba.
 author: mihart
 manager: kvivek
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 85a0a34f9c67d29fee7be6335f79e97b482548be
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 661d615ed33b12ae0557fd8feaa0bc47b3a6638f
+ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565337"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50736941"
 ---
-# <a name="export-reports-from-power-bi-to-powerpoint-preview"></a>Jelentések exportálása a Power BI-ból a PowerPointba (előzetes verzió)
+# <a name="export-reports-from-power-bi-to-powerpoint"></a>Jelentések exportálása Power BI-ból PowerPointba
 A Power BI segítségével mostantól közzéteheti jelentését a **Microsoft PowerPointban**, és könnyedén létrehozhat bemutatót a Power BI-jelentés alapján. A **PowerPointba történő exportáláskor** a következő történik:
 
 * A PowerPointban a Power BI-jelentés minden lapjából külön dia lesz
@@ -77,9 +77,9 @@ Az **Exportálás a PowerPointba** funkció használatakor figyelembe kell venni
 * Az **R vizualizációk** jelenleg nem támogatottak. Az ilyen vizualizációkat a rendszer üres képként exportálja a PowerPointba, és hibaüzenetet küld, hogy a vizualizáció nem támogatott.
 * A **hitelesített** **egyéni vizualizációk** támogatottak. A hitelesített egyéni vizualizációkról, beleértve az egyéni vizualizáció hitelesítési folyamatát, az [Egyéni vizualizáció hitelesítése](../power-bi-custom-visuals-certified.md) oldalon talál további információt. A nem hitelesített egyéni vizualizációkat a rendszer üres képként exportálja a PowerPointba, és hibaüzenetet küld, hogy a vizualizáció nem támogatott.
 * A **hitelesített egyéni vizualizációk** támogatottak. A hitelesített egyéni vizualizáció használatát jóváhagyták a Power BI-ban, kódja megfelel bizonyos követelményeknek, és szigorú biztonsági ellenőrzésen ment át. [Ismerje meg részletesebben **a hitelesített egyéni vizualizációkat**](../power-bi-custom-visuals-certified.md).
-* A 15-nél több jelentésoldalt tartalmazó jelentések jelenleg nem exportálhatók.
+* A 30-nál több jelentésoldalt tartalmazó jelentések jelenleg nem exportálhatók.
 * A jelentés PowerPointba történő exportálása néhány percet igénybe vehet, ezért türelmét kérjük. Az exportálás időtartamát többek között a jelentés szerkezete és a Power BI szolgáltatás aktuális terhelése befolyásolhatja.
-* Ha az **Exportálás a PowerPointba (előzetes verzió)** menüpont nem érhető el a Power BI szolgáltatásban, valószínűleg a bérlői rendszergazda tiltotta le a funkciót. Lépjen kapcsolatba a bérlői rendszergazdával.
+* Ha az **Exportálás a PowerPointba** menüpont nem érhető el a Power BI szolgáltatásban, valószínűleg a bérlői rendszergazda letiltotta a funkciót. Lépjen kapcsolatba a bérlői rendszergazdával.
 * A háttérképek szélét a program a diagram határoló területével együtt levágja. Erősen ajánljuk, hogy a PowerPointba való exportálás előtt távolítsa el a háttérképeket.
 * A **munkamenet közbeni interaktivitás** egyes formái, mint például a kiemelés, a szűrés és a részletezés, jelenleg még nem támogatottak a PowerPointba történő exportálás során. Az exportált PowerPoint az eredeti vizualizációkat a jelentésben mentett módon mutatja be.
 * A PowerPoint lapjai, függetlenül a Power BI-jelentés eredeti oldalméreteitől és dimenzióitól, mindig a szabványos 9:16 méretben jönnek létre.

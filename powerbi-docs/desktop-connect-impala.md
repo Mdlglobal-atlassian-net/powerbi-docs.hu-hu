@@ -10,40 +10,43 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 781e9f6813fee63b7c5d83a2e7e60e1ed1eeedc0
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 1b512a3e6ef3ead8d93e1b554fbab3aaed8a2a5a
+ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39326993"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51027391"
 ---
 # <a name="connect-to-an-impala-database-in-power-bi-desktop"></a>Csatlakozás Impala-adatbázishoz a Power BI Desktopban
 A Power BI Desktopban csatlakozhat egy **Impala**-adatbázishoz, és úgy használhatja az alapul szolgáló adatokat, mint a Power BI Desktop bármely más adatforrását.
 
 ## <a name="connect-to-an-impala-database"></a>Kapcsolódás Impala-adatbázishoz
-Ha csatlakozni kíván egy **Impala**-adatbázishoz, válassza az **Adatok lekérése** lehetőséget a Power BI Desktop **Kezdőlap** menüszalagján. A bal oldali kategóriák közül válassza az **Adatbázis** lehetőséget, ekkor megjelenik az **Impala**.
+**Impala**-adatbázishoz való csatlakozáshoz végezze el a következő lépéseket: 
 
-![](media/desktop-connect-impala/connect_impala_2.png)
+1. A Power BI Desktop **Kezdőlap** szalagján válassza az **Adatok lekérése** lehetőséget. 
 
-A megjelenő **Impala** ablakban írja vagy illessze be az Impala-kiszolgáló nevét a mezőbe, és válassza az **OK** gombot. Vegye figyelembe, hogy az adatokat közvetlenül is **importálhatja** a Power BI-ba, vagy használhatja a **DirectQueryt**. További információ a DirectQueryről: [A DirectQuery használata](desktop-use-directquery.md).
+2. A bal oldali kategóriák közül válassza az **Adatbázis** lehetőséget. Ekkor megjelenik az **Impala**.
 
-![](media/desktop-connect-impala/connect_impala_3a.png)
+    ![Adatok lekérése](media/desktop-connect-impala/connect_impala_2.png)
 
-Amikor a rendszer kéri, adja meg a hitelesítő adatait, vagy válassza a névtelen csatlakozást. Az Impala-összekötő a névtelen, az alapszintű (felhasználónév + jelszó) és a Windows-hitelesítési típusokat támogatja.
+3. A megjelenő **Impala** ablakban írja vagy illessze be az Impala-kiszolgáló nevét a mezőbe. Ezután válassza az **OK** gombot. Az adatokat közvetlenül is **importálhatja** a Power BI-ba, vagy használhatja a **DirectQueryt**. További információ a [DirectQuery használatáról](desktop-use-directquery.md).
 
-![](media/desktop-connect-impala/connect_impala_4.png)
+    ![Az Impala ablaka](media/desktop-connect-impala/connect_impala_3a.png)
 
-> [!NOTE]
-> Ha egy adott **Impala**-kiszolgálóhoz megadta a felhasználónévét és a jelszavát, a Power BI Desktop ugyanazon hitelesítő adatokat fogja használni a későbbi csatlakozási kísérletekhez is. A hitelesítő adatokat a **Fájl > Lehetőségek és beállítások > Adatforrás-beállítások** szakaszában módosíthatja.
-> 
-> 
+4. Amikor a rendszer kéri, adja meg a hitelesítő adatait, vagy válassza a névtelen csatlakozást. Az Impala-összekötő a névtelen, az alapszintű (felhasználónév + jelszó) és a Windows-hitelesítési típusokat támogatja.
 
-Ha sikeresen csatlakozott, megjelenik a **Kezelő** ablaka, és megjeleníti a kiszolgálón elérhető adatokat. Ezek közül kiválaszthat egy vagy több importálni kívánt elemet, és használhatja őket a **Power BI Desktopban**.
+    ![Impala-összekötő](media/desktop-connect-impala/connect_impala_4.png)
 
-![](media/desktop-connect-impala/connect_impala_5.png)
+    > [!NOTE]
+    > Ha egy adott **Impala**-kiszolgálóhoz megadta a felhasználónévét és a jelszavát, a Power BI Desktop ugyanazon hitelesítő adatokat fogja használni a későbbi csatlakozási kísérletekhez is. A hitelesítő adatokat a **Fájl > Lehetőségek és beállítások > Adatforrás-beállítások** szakaszában módosíthatja.
+
+
+5. A csatlakozás után egy **kezelő** ablak jelenik meg, és megjeleníti a kiszolgálón elérhető adatokat. Válassza ki az importálandó és a **Power BI Desktopban** használni kívánt elemeket az adatokból.
+
+    ![Navigátor ablak](media/desktop-connect-impala/connect_impala_5.png)
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
-Az **Impala**-összekötő használatára vonatkozik néhány korlátozást és egyéb szempont.
+Az **Impala**-összekötő használatára vonatkozik néhány korlátozást és egyéb szempont:
 
 * Az Impala-összekötőt támogatják a helyszíni adatátjárók, bármelyik hitelesítési módot is válassza a három támogatott közül.
 

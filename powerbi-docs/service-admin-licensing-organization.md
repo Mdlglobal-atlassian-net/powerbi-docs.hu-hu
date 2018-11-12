@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: bdd43c820f87bb9308478b4e2100514349644d11
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: 11ad100bce2e13d5622676f43573dee411a93221
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252376"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973304"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Szervezeti Power BI-licencelés
 
@@ -150,6 +150,9 @@ A regisztrációkat az AAD **AllowAdHocSubscriptions** beállítása szabályozz
     ```powershell
      Set-MsolCompanySettings -AllowAdHocSubscriptions $true
     ```
+
+> [!NOTE]
+> Az AllowAdHocSubscriptions jelzővel irányítható a vállalat számos felhasználói képessége, beleértve a felhasználók azon képességét, hogy regisztráljanak az Azure Rights Management szolgáltatásra. A jelölő módosítása az összes képességre hatással van.
 
 ## <a name="next-steps"></a>Következő lépések
 

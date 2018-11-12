@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 319c636c660aff3ab651475e2d7b553fef49b8cd
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 5eb2e63d9bac7249e106ad4c4b525ca3f3ab5cf8
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137330"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909594"
 ---
 # <a name="get-power-bi-desktop"></a>A Power BI Desktop beszerzése
 A **Power BI Desktop** segítségével az adatok megjelenítésére szolgáló speciális lekérdezések, modellek és jelentések állíthatók össze. A **Power BI Desktop** használatával adatmodelleket állíthat össze, jelentéseket hozhat létre és megoszthatja a munkáját a Power BI szolgáltatásba való közzététellel.  A **Power BI Desktop** ingyenesen letölthető.
@@ -101,11 +101,35 @@ A következő lista a **Power BI Desktop** futtatásához szükséges minimális
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
+Mindig igyekszünk a lehető legjobb élményt biztosítani a Power BI Desktop felhasználóinak. Előfordulhat, hogy a Power BI Desktop használata során problémák merülnek fel, ezért ez a szakasz megoldásokat és javaslatokat kínál a különböző esetekre. 
+
+### <a name="issues-when-using-previous-releases-of-power-bi-desktop"></a>Problémák a Power BI Desktop előző kiadásainak használata során
+
 Egyes felhasználók a következő példához hasonló hibával szembesülhetnek, ha a **Power BI Desktop** elavult verzióját használják: 
 
     "We weren't able to restore the saved database to the model" 
 
 A Power BI Desktop aktuális verziójára történő frissítés általában megoldja ezt a problémát.
+
+### <a name="disabling-notifications"></a>Értesítések letiltása
+Javasoljuk a frissítést a Power BI Desktop legújabb verziójára, hogy a legújabb fejlesztéseket élvezhesse többek között a funkciók, a teljesítmény és a stabilitás terén. Egyes cégek nem kívánják, hogy a munkatársaik minden új verzióra frissítsenek. Az értesítéseket a beállításjegyzék módosításával kapcsolhatja ki a következő lépésekben:
+
+1. A beállításjegyzék-szerkesztővel nyissa meg a *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop* helyet.
+2. Hozzon létre egy új bejegyzést a következő beállításokkal: *REG_DWORD : DisableUpdateNotification*
+3. Állítsa az új bejegyzés értékét **1**-re.
+
+A módosítás érvénybe lépéséhez újra kell indítania a számítógépet.
+
+### <a name="power-bi-desktop-loads-with-a-partial-screen"></a>A Power BI Desktop részképernyővel töltődik be
+
+Bizonyos körülmények között, például bizonyos képernyőfelbontási konfigurációk esetén, egyes felhasználók a Power BI Desktop tartalmai mellett nagy, fekete területeket láthatnak. Az elemek megjelenítésére általában inkább a közelmúltban történt operációsrendszer-frissítések hatnak, és nem az, ahogy maga a Power BI Desktop mutatja be őket. Ettől még a nagy, fekete területek nem mutatnak olyan jól, mint a vizualizációk, ezért a probléma megoldásához a következő lépéseket javasoljuk:
+
+1. Nyomja le a Start billentyűt, és a megjelenő keresőmezőbe írja be a *blurry* (homályos) szót.
+2. A megjelenő párbeszédablakban válassza a következő lehetőséget: *Let Windows fix apps that are blurry.* (Javítsa ki a Windows a homályos alkalmazásokat).
+3. Indítsa újra a Power BI Desktopot.
+
+A további Windows-frissítések megjelenésekor megoldódhat a probléma. 
+ 
 
 ## <a name="next-steps"></a>Következő lépések
 A **Power BI Desktop** telepítése után a következő tartalmak segíthetnek a használatának gyors megkezdésében:

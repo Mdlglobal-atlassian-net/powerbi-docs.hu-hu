@@ -10,13 +10,13 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 10/20/2018
-ms.openlocfilehash: e336323863dfacc8c74f2dc1f721231d58d03834
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.date: 11/01/2018
+ms.openlocfilehash: fc0234536415c758992cec629452a3e629c46ad1
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50100772"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973327"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Beágyazás jelentéskijelzővel a SharePoint Online-ban
 
@@ -82,14 +82,34 @@ Egy jelentés beágyazása a SharePoint Online-ba még nem ad automatikusan enge
 > [!IMPORTANT]
 > Tekintse át kik láthatják a jelentést a Power BI szolgáltatásban, és adjon hozzáférést azoknak, akik még nem szerepelnek a listában.
 
-A Power BI szolgáltatásban kétféleképpen lehet egy jelentéshez hozzáférést adni. Ha a SharePoint Online-csoportwebhely létrehozásához Office 365-csoportot használ, akkor a felhasználót hozzáadhatja az **alkalmazás-munkaterülethez a Power BI szolgáltatásban** és a **SharePoint-oldalon**. Ez biztosítja, hogy a felhasználók láthassák az adott csoport tartalmát. További információ: [Alkalmazások létrehozása és terjesztése a Power BI-ban](service-create-distribute-apps.md).
+A Power BI szolgáltatásban kétféleképpen lehet egy jelentéshez hozzáférést adni. Ha a SharePoint Online-csoportwebhely létrehozásához Office 365-csoportot használ, akkor a felhasználót hozzáadhatja az **alkalmazás-munkaterülethez a Power BI szolgáltatásban** és a **SharePoint-oldalon**. További információkért lásd: [Alkalmazás-munkaterület kezelése](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
-Másik lehetőségként úgy is megoszthatja közvetlenül a felhasználókkal, ha a jelentést beágyazza egy alkalmazásba. A jelentés beágyazásához az alkalmazásnak előre telepítve kell lennie. Az alkalmazást az **Alkalmazás automatikus telepítése** funkció használatával állíthatja be az előre történő telepítéshez.
+Másik lehetőségként úgy is megoszthatja közvetlenül a felhasználókkal, ha a jelentést beágyazza egy alkalmazásba. A jelentés néhány lépésben beágyazható az alkalmazásba.  
+
+1. Az alkalmazás szerzője Pro felhasználó.
+
+2. A szerző jelentést hoz létre egy alkalmazás-munkaterületen. *Ahhoz, hogy az alkalmazás-munkaterület megosztható legyen az **ingyenes Power BI-felhasználókkal**, az alkalmazás-munkaterületet **Premium munkaterületként** kell beállítani.*
+
+3. A szerző közzéteszi, majd telepíti az alkalmazást. *A szerzőnek telepítenie kell az alkalmazást, hogy hozzáférhessen a jelentés URL-címéhez, amely a SharePoint Online-on való beágyazáshoz szükséges.*
+
+4. Mostantól az összes végfelhasználónak is telepítenie kell az alkalmazást. Az alkalmazás előtelepítettként is beállítható a végfelhasználók számára az **Alkalmazás automatikus telepítése** funkcióval, amely a [Power BI felügyeleti portálján](service-admin-portal.md) engedélyezhető.
 
    ![Alkalmazás automatikus telepítése](media/service-embed-report-spo/install-app-automatically.png)
 
-> [!NOTE]
-> **A felhasználónak hozzáférésre van szüksége a SharePoint-laphoz és a jelentéshez is, hogy a jelentést megtekinthesse a SharePoint-lapon.**
+5. A szerző megnyitja az alkalmazást és a jelentést.
+
+6. A szerző bemásolja a jelentés beágyazásának URL-címét az alkalmazás által telepített jelentésből. *Ne használja az eredeti jelentés URL-címét az alkalmazás-munkaterületről.*
+
+7. Hozzon létre egy új csoportwebhelyet a SharePoint Online-ban.
+
+8. Adja hozzá a Power BI webes részéhez a 6. lépésben kimásolt URL-címet.
+
+9. Vegye fel az összes olyan felhasználót és/vagy csoportot, akik dolgozni fognak a létrehozott SharePoint Online oldalon és a Power BI alkalmazásban.
+
+    > [!NOTE]
+    > **Ahhoz, hogy a felhasználók és a csoportok a SharePoint Online-oldalon láthassák a jelentést, hozzá kell férniük a SharePoint Online-oldalhoz és a Power BI-ban lévő jelentéshez.**
+
+10. Mostantól a végfelhasználó hozzáfér a SharePoint Online-on lévő csoportwebhelyhez, és láthatja rajta a jelentést.
 
 ## <a name="multi-factor-authentication"></a>Többtényezős hitelesítés
 

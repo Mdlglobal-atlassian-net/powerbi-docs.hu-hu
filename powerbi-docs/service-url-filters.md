@@ -1,5 +1,5 @@
 ---
-title: Power BI-jelentés paramétereinek megadása az URL-cím használatával
+title: Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával
 description: A jelentések szűrhetők az URL-cím lekérdezési sztringjének paramétereivel, akár egynél több mezőre is.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,24 +9,24 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2018
+ms.date: 11/01/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 7a034e865b0e0b6ba55385f8873d039dba0662db
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: d708a4ff07a0d202fcc709f6348e48505d7589d0
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396957"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973373"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával
 
-A Power BI szolgáltatásban megnyitott jelentések minden egyes oldalának saját egyedi URL-címe van. Az adott jelentésoldal a jelentésvászon Szűrők paneljének használatával szűrhető.  A jelentés előzetes szűréséhez az URL-címhez is hozzáadhat lekérdezésisztring-paramétereket. Tegyük fel, hogy egy jelentést meg szeretne mutatni a munkatársainak, és előre szűrni szeretné azt a számukra. Ennek egyik módja az, hogy a jelentés alapértelmezett URL-címéhez szűrési paramétereket ad, majd a teljes új URL-címet küldi el e-mailben.
+A Power BI szolgáltatásban megnyitott jelentések minden egyes oldalának saját egyedi URL-címe van. Az adott jelentésoldal a jelentésvászon Szűrők paneljének használatával szűrhető.  A jelentés előzetes szűréséhez az URL-címhez is hozzáadhat lekérdezésisztring-paramétereket. Tegyük fel, hogy egy jelentést meg szeretne mutatni a munkatársainak, és előre szűrni szeretné azt a számukra. A szűrés egyik módja az, hogy a jelentés alapértelmezett URL-címéhez szűrési paramétereket ad, majd a teljes új URL-címet küldi el e-mailben.
 
 ![Power BI-jelentés a szolgáltatásban](media/service-url-filters/power-bi-report2.png)
 
 ## <a name="uses-for-query-string-parameters"></a>Lekérdezésisztring-paraméterek felhasználási módjai
 
-Tegyük fel, hogy a Power BI Desktopban dolgozva más Power BI-jelentésekre mutató hivatkozásokat tartalmazó jelentést kíván létrehozni – de a más jelentésekben lévő információnak csak egy részét szeretné megjeleníteni. Megteheti, hogy először lekérdezésisztring-paraméterek használatával szűri a jelentéseket, majd menti az URL-címeket. Ez után létrehoz egy, ezeket az új jelentés-URL-címeket tartalmazó táblázatot a Desktopban.  Végül közzéteszi és megosztja a jelentést.
+Tegyük fel, hogy a Power BI Desktopban dolgozik. Más Power BI-jelentésekre mutató hivatkozásokat tartalmazó jelentést kíván létrehozni – de a más jelentésekben lévő információnak csak egy részét szeretné megjeleníteni. Megteheti, hogy először lekérdezésisztring-paraméterek használatával szűri a jelentéseket, majd menti az URL-címeket. Ez után létrehoz egy, ezeket az új jelentés-URL-címeket tartalmazó táblázatot a Desktopban.  Végül közzéteszi és megosztja a jelentést.
 
 A lekérdezésisztring-paraméterek másik felhasználási módja speciális Power BI-megoldások létrehozásához való.  A DAX használatával olyan jelentés hozható létre, amely dinamikusan generál szűrt jelentés-URL-címet az alapján, hogy mit jelölt ki éppen az ügyfél az aktuális jelentésben. Az URL-címet választó ügyfelek csak a nekik szánt információt látják. 
 
@@ -43,7 +43,7 @@ URL-cím?filter=***Tábla***/***Mező*** eq '***érték***'
 
 ### <a name="field-types"></a>Mezőtípusok
 
-A mezőtípus lehet szám, dátum és idő vagy sztring, és a használt típusnak egyeznie kell az adathalmazban megadottal.  Egy tábla oszlopának „sztring” beállítása például nem működik, ha dátum, idő vagy numerikus értéket keres egy adathalmaz dátumként beállított oszlopában (például Table/StringColumn eq 1).
+A mezőtípus lehet szám, dátum és idő vagy sztring, és a használt típusnak egyeznie kell az adathalmazban megadottal.  Egy tábla oszlopának „sztring” beállítása például nem működik, ha dátum, idő vagy numerikus értéket keres egy adathalmaz dátumként beállított oszlopában, például a Table/StringColumn eq 1 oszlopban.
 
 * A **sztringeket** aposztrófok között kell megadni – ’vezető neve’.
 * A **számok** nem igényelnek különleges formázást
@@ -85,7 +85,7 @@ Ha további paramétereket fűz az URL-címhez, több mező alapján is végezhe
 ?filter=Store/Territory eq 'NC'
 ```
 
-További mezők alapján úgy szűrhet, hogy az **and** kulcsszót és egy újabb mezőt ad meg a fentinek megfelelő formátumban. Íme egy példa.
+További mezők alapján úgy szűrhet, hogy az „**and**” kulcsszót és egy újabb mezőt ad meg a fentinek megfelelő formátumban. Íme egy példa.
 
 ```
 ?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
@@ -95,7 +95,7 @@ További mezők alapján úgy szűrhet, hogy az **and** kulcsszót és egy újab
 
 ## <a name="operators"></a>Operátorok
 
-A Power BI az **and** operátoron kívül sok továbbit is támogat. Ezek az operátorok az alábbi táblázatban az általuk támogatott tartalomtípussal együtt vannak felsorolva.
+A Power BI az „**and**” operátoron kívül sok továbbit is támogat. Ezek az operátorok az alábbi táblázatban az általuk támogatott tartalomtípussal együtt vannak felsorolva.
 
 |operátor  | definíció | sztring  | szám | Dátum |  Példa|
 |---------|---------|---------|---------|---------|---------|
@@ -125,13 +125,13 @@ A Power BI URL-címekben a szűrők az alábbi formátumú számokat tartalmazha
 
 ### <a name="date-data-types"></a>Dátum adattípusok
 
-A Power BI az OData V3 és V4 **Date** és **DateTimeOffset** adattípusokat is támogatja.  A dátumok az EDM formátum (2019-02-12T00:00:00) használatával vannak ábrázolva. Ez azt jelenti, hogy ha a dátum ÉÉÉÉ-HH-NN formátumban van megadva, akkor a Power BI azt ÉÉÉÉ-HH-NNT00:00:00 formátumban értelmezi.
+A Power BI az OData V3 és V4 **Date** és **DateTimeOffset** adattípusokat is támogatja.  A dátumok megadása EDM formátumban (2019-02-12T00:00:00) történik, tehát he megad egy dátumot ÉÉÉÉ-HH-NN formátumban, a Power BI ezt ÉÉÉÉ-HH-NNT00:00:00 időpontként értelmezi.
 
 Miért számít ez a megkülönböztetés? Tegyük fel, hogy létrehoz egy **Table/Date gt 2018-08-03** lekérdezésisztring-paramétert.  Az eredmények között lesz 2018. augusztus 3., vagy csak 2018. augusztus 4-étől kezdődnek? Mivel a Power BI **Táblázat/Dátum gt 2018-08-03T00:00:00** formátumra fordítja le a lekérdezést, az eredményekben minden nem nulla időösszetevővel rendelkező dátum szerepel, mert azok a **2018-08-03T00:00:00** dátumnál nagyobbak.
 
 ## <a name="special-characters-in-url-filters"></a>Speciális karakterek URL-szűrőkben
 
-A speciális karakterek és szóközök igényelnek némi további formázást. Ha a lekérdezés szóközöket, kötőjeleket vagy egyéb nem ASCII-karaktereket tartalmaz, a speciális karakterek előtagjaként használjon olyan *feloldókaraktert*, amely aláhúzásjellel és egy X karakterrel (**_x**) kezdődik, majd a 4 számjegyű **Unicode**-karakter után még egy aláhúzásjelet tartalmaz. Ha a Unicode-karakter kevesebb mint 4 számjegyből áll, akkor nullákkal kell kiegészíteni. Az alábbiakban néhány példa következik.
+A speciális karakterek és szóközök igényelnek némi további formázást. Ha a lekérdezés szóközöket, kötőjeleket vagy egyéb nem ASCII-karaktereket tartalmaz, a speciális karakterek előtagjaként használjon olyan *feloldókaraktert*, amely aláhúzásjellel és egy X karakterrel (**_x**) kezdődik, majd a 4 számjegyű **Unicode**-karakter után még egy aláhúzásjelet tartalmaz. Ha a Unicode-karakter kevesebb mint négy számjegyből áll, akkor nullákkal kell kiegészítenie. Az alábbiakban néhány példa következik.
 
 |Azonosító  |Unicode  | Kódolás a Power BI-ban  |
 |---------|---------|---------|
@@ -159,9 +159,9 @@ Tegye közzé a jelentést a Power BI szolgáltatásban, majd az URL-cím lekér
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Szűrt jelentésből származó csempe rögzítése
 
-Miután lekérdezésisztring-paraméterek használatával szűrte a jelentést, abból származó vizualizációkat rögzíthet az irányítópulton.  Az irányítópulton található csempe a szűrt adatokat jeleníti meg, az irányítópult csempéjére kattintva pedig megnyílik a létrehozásához használt jelentés.  Az URL-címmel alkalmazott szűrés azonban nem lesz a jelentéssel együtt mentve, és az irányítópult csempéjének kiválasztása után a jelentés szűretlen állapotban nyílik meg.  Ez azt jelenti, hogy az irányítópult csempéjén megjelenített adatok nem egyeznek a jelentésben szereplő vizualizációban megjelenített adatokkal.
+Miután lekérdezésisztring-paraméterek használatával szűrte a jelentést, abból származó vizualizációkat rögzíthet az irányítópulton.  Az irányítópulton található csempe a szűrt adatokat jeleníti meg, az irányítópult csempéjére kattintva pedig megnyílik a létrehozásához használt jelentés.  Az URL-címmel végrehajtott szűrés azonban nem lesz mentve a jelentéssel együtt. Amikor kiválasztja a csempét az irányítópulton, a jelentés szűretlen állapotban nyílik meg.  Tehát az irányítópult csempéjén megjelenített adatok nem egyeznek a jelentésben szereplő vizualizációban megjelenített adatokkal.
 
-Ez akkor hasznos, ha különböző eredményeket szeretne megjeleníteni: a szűrt adatokat az irányítópulton, a nem szűrt adatokat pedig a jelentésben.
+Ez az eltérés akkor hasznos, ha különböző eredményeket szeretne megjeleníteni: a szűrt adatokat az irányítópulton, a nem szűrt adatokat pedig a jelentésben.
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 

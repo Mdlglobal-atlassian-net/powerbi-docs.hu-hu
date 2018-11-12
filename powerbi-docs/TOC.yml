@@ -766,6 +766,24 @@ items:
         href: refresh-troubleshooting-tile-errors.md
       - name: A Xero tartalomcsomag hitelesítő adatainak frissítése frissítési hiba esetén
         href: service-refresh-xero-credentials.md
+    - name: Önkiszolgáló adatelőkészítés
+      items:
+      - name: Önkiszolgáló adatelőkészítés adatfolyamokkal (előzetes verzió)
+        href: service-dataflows-overview.md
+      - name: Adatfolyamok létrehozása és használata
+        href: service-dataflows-create-use.md
+      - name: Számított entitások a Power BI Premiummal
+        href: service-dataflows-computed-entities-premium.md
+      - name: Adatfolyamok használata helyszíni adatforrásokkal
+        href: service-dataflows-on-premises-gateways.md
+      - name: Entitások összekötése adatfolyamok között (előzetes verzió)
+        href: service-dataflows-linked-entities.md
+      - name: Növekményes frissítések használata adatfolyamokkal (előzetes verzió)
+        href: service-dataflows-incremental-refresh.md
+      - name: Az adatfolyamokkal kapcsolatos fejlesztői források
+        href: service-dataflows-developer-resources.md
+      - name: Csatlakozás adatfolyamokhoz a Power BI Desktopban
+        href: desktop-connect-dataflows.md
   - name: Erőforrások
     items:
     - name: Videók
@@ -776,6 +794,36 @@ items:
       href: supported-languages-countries-regions.md
     - name: Tanulmányok
       href: whitepapers.md
+- name: Többoldalas jelentések a Power BI-ban
+  items:
+  - name: Áttekintés
+    items:
+    - name: Mik azok a többoldalas jelentések? (Előzetes verzió)
+      href: paginated-reports-report-builder-power-bi.md
+  - name: Oktatóanyagok
+    items:
+    - name: Többoldalas jelentés készítése és feltöltése
+      href: paginated-reports-quickstart-aw.md
+  - name: Fogalmak
+    items:
+    - name: Eligazodás a Jelentéstervező nézetben
+      href: paginated-reports-report-design-view.md
+    - name: Gyakori kérdések a többoldalas jelentésekről
+      href: paginated-reports-faq.md
+  - name: Útmutató
+    items:
+    - name: Beágyazott adatforrás létrehozása
+      href: paginated-reports-embedded-data-source.md
+    - name: Beágyazott adathalmaz létrehozása
+      href: paginated-reports-create-embedded-dataset.md
+    - name: Paraméterek létrehozása
+      href: paginated-reports-parameters.md
+    - name: Többoldalas jelentés közzététele
+      href: paginated-reports-save-to-power-bi-service.md
+    - name: Többoldalas jelentés megtekintése
+      href: paginated-reports-view-power-bi-service.md
+    - name: Paraméterek használata
+      href: paginated-reports-view-parameters.md
 - name: Power BI fejlesztőknek
   items:
   - name: Mire használhatják a fejlesztők a Power BI-t?
@@ -1203,9 +1251,9 @@ items:
       href: service-admin-governance.md
     - name: A Power BI és a biztonság
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: a0d2f9e2fcf26f3eca516a1204c9d25a9225010f
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 8640762b152c996d21cefe8663cf6bf8e78f718a
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223191"
+ms.locfileid: "51266139"

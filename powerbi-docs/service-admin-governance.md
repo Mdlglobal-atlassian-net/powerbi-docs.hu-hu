@@ -7,27 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/28/2017
+ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 955f4347630a781174d399d6a1363683745a4b3e
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 7dc30fa6e590772a1a9845aae1f4b0d4aeb91b98
+ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34293490"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50737033"
 ---
 # <a name="governance-and-deployment-approaches"></a>Irányítási és üzembe helyezési megközelítések
-Az elmúlt néhány évtizedben a vállalatok egyre jobban felfigyeltek arra, milyen fontos az adategységekben rejlő előnyök stratégiai kihasználása, ha a piaci lehetőségekből profitálni szeretnének. Sok vállalat már megértette, hogy egy adatstratégia alkalmazásával, például a versenyképesség elemzésével vagy a működési minták megismerésével, a versenytársak előtt maradhatnak.  
 
-Mivel a vállalatok egyre inkább az adatközpontúságra törekednek, ez a tanulmány ahhoz biztosít keretet, hogy a Power BI-jal kapcsolatos befektetések jobban megtérüljenek.
+Az elmúlt néhány évtizedben a vállalatok egyre jobban felfigyeltek arra, milyen fontos az adategységekben rejlő előnyök kihasználása, ha a piaci lehetőségekből profitálni szeretnének. Sok vállalat már megértette, hogy egy adatstratégia alkalmazásával, például a versenyképesség elemzésével vagy a működési minták megismerésével, a versenytársak előtt maradhatnak.  
 
-Az üzleti intelligencia gyakorlói általános vélekedése szerint az adatközpontú vállalatok olyan vállalatok, amelyek a döntéshozatal során felhasználják a tényszerű adatok nyújtotta előnyöket.  Mi úgy is jellemzünk bizonyos vállalatokat, hogy „adatkultúrával rendelkeznek”.
-Az adatkultúra, akár vállalati szinten, akár részlegek szintjén, pozitív hatással lehet egy vállalat alkalmazkodóképességére és sikerességére.  Az adatelemzéseknek nem kell mindig az egész vállalatra kiterjedniük ahhoz, hogy komoly hatást gyakorolhassanak: egy kisebb működési elemzés az egész vállalatot átformálhatja, ha a mindennapi működést változtatja meg.
+Mivel a vállalatok egyre inkább az adatközpontúságra törekednek, [A Power BI irányítási és üzembe helyezési megközelítései](http://go.microsoft.com/fwlink/?LinkId=785915&clcid=0x409) című tanulmány ahhoz biztosít keretet, hogy a Power BI-jal kapcsolatos befektetések jobban megtérüljenek.
 
-Ezek a vállalatok megértették, hogy az üzletmenetet a tényeknek és a tényeken alapuló elemzéseknek kell meghatározniuk. A csoportok tagjai arra törekednek, hogy felkutassák az adatokat, azonosítsák a mintákat és megosszák az észrevételeiket másokkal. 
+Az üzleti intelligencia gyakorlói általános vélekedése szerint az adatközpontú vállalatok olyan vállalatok, amelyek a döntéshozatal során felhasználják a tényszerű adatok nyújtotta előnyöket.  Mi úgy is jellemzünk bizonyos vállalatokat, hogy *adatkultúrával rendelkeznek*. Az adatkultúra, akár vállalati szinten, akár részlegek szintjén, pozitív hatással lehet egy vállalat alkalmazkodóképességére és sikerességére.  Az adatelemzéseknek nem kell mindig az egész vállalatra kiterjedniük ahhoz, hogy komoly hatást gyakorolhassanak: ha egy kisebb működési elemzés a mindennapi működést változtatja meg, akár az egész vállalatot átformálhatja.
 
-Hasznos lehet ez a megközelítés, függetlenül attól, hogy az elemzést külső vagy belső üzleti tényezők alapján végezték. Ez elsősorban egy szemlélet, nem pedig egy folyamat.
-
-Olvassa el a [Megközelítések a Power BI irányításához és üzembe helyezéséhez](http://go.microsoft.com/fwlink/?LinkId=785915&clcid=0x409) témakört, hogy megismerje a Power BI-ökoszisztémával kapcsolatos alapfogalmakat, lehetőségeket és javaslatokat.
+Ezek a vállalatok megértették, hogy az üzletmenetet a tényeknek és a tényeken alapuló elemzéseknek kell meghatározniuk. A csoportok tagjai arra törekednek, hogy felkutassák az adatokat, azonosítsák a mintákat és megosszák az észrevételeiket másokkal. Hasznos lehet ez a megközelítés, függetlenül attól, hogy az elemzést külső vagy belső üzleti tényezők alapján végezték. Ez elsősorban egy szemlélet, nem pedig egy folyamat. Olvassa el a tanulmányt a Power BI-ökoszisztéma irányításával kapcsolatos alapfogalmak, lehetőségek és javaslatok megismeréséhez.
 

@@ -7,117 +7,105 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/05/2017
+ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a20b6312f031452508c986565e27090fabbae019
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a7d8fc977cdacd8f0409c1ac0fa3c78e66282b67
+ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34293812"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50736895"
 ---
-# <a name="understanding-the-power-bi-admin-role"></a>A Power BI rendszergazdai szerepkörének ismertetése
-Megismerheti a Power BI rendszergazdai szerepkörének használatát a munkahelyen.
+# <a name="understanding-the-power-bi-service-administrator-role"></a>A Power BI-szolgáltatásadminisztrátor szerepkör ismertetése
+
+Megismerheti a Power BI-szolgáltatásadminisztrátor szerepkör használatát a munkahelyen. Az ezzel a szerepkörrel rendelkező felhasználóknak teljes felügyeleti jogosultsága van a Power BI-bérlőre és annak felügyeleti funkcióira vonatkozóan (kivéve a licencelést).
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/PQRbdJgEm3k?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-A Power BI szolgáltatásadminisztrátori szerepkörét olyan felhasználókhoz lehet hozzárendelni, akiknek szükségük van a Power BI felügyeleti portáljához való hozzáférésre, de nem kaphatnak egyéb rendszergazdai Office 365-hozzáférést. Például globális rendszergazdai szerepkört. Az ilyen szerepkört azok kapják, akik a Power BI adminisztrátori felügyeletét látják el a munkahelyen.
+A Power BI szolgáltatásadminisztrátori szerepkörét olyan felhasználókhoz lehet hozzárendelni, akiknek szükségük van a Power BI felügyeleti portáljához való hozzáférésre, de nem kaphatnak egyéb rendszergazdai Office 365-hozzáférést.
 
-Az Office 365 felhasználói rendszergazdái az Office 365 felügyeleti központjában vagy egy PowerShell-szkripttel nevezhetnek ki felhasználókat Power BI-adminisztrátorrá. Miután a hozzárendelés megtörténik, a felhasználók képesek hozzáférni a [Power BI felügyeleti portáljához](service-admin-portal.md). A portálon hozzáférhetnek a bérlői szintű használati metrikákhoz, valamint képesek szabályozni a Power BI funkcióinak bérlői szintű használatát.
+Az Office 365 felhasználókezelő rendszergazdái az Office 365 felügyeleti központjában vagy egy PowerShell-szkripttel rendelhetnek felhasználókat a Power BI-szolgáltatásadminisztrátor szerepkörhöz. Miután a hozzárendelés megtörténik, a felhasználók hozzáférhetnek a [Power BI felügyeleti portáljához](service-admin-portal.md). A portálon hozzáférhetnek a bérlői szintű használati metrikákhoz, valamint képesek szabályozni a Power BI funkcióinak bérlői szintű használatát.
 
-![](media/service-admin-role/powerbi-admin-portal.png)
+## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 
-## <a name="using-the-office-365-admin-center-to-assign-a-role"></a>Az Office 365 felügyeleti központjának használata szerepkörök hozzárendelésére
-A Power BI adminisztrátori szerepkörének felhasználókhoz való hozzárendeléséhez végezze el az alábbiakat az Office 365 felügyeleti központjában.
+A Power BI-szolgáltatásadminisztrátori szerepkör nem teszi lehetővé az alábbiakat:
 
-1. Nyissa meg az Office 365 felügyeleti központját, majd válassza a **Felhasználók** > **Aktív felhasználók** elemet.
-   
-    ![](media/service-admin-role/powerbi-admin-users.png)
-2. Válassza ki azt a felhasználót, akihez a szerepkört szeretné hozzárendelni.
-3. Válassza ki a szerepkörökhöz tartozó **Szerkesztés** elemet.
-   
-    ![](media/service-admin-role/powerbi-admin-edit-roles.png)
-4. Válassza ki a **Személyre szabott adminisztrátor** > **Power Bi-szolgáltatásadminisztrátor** elemet
-   
-    ![](media/service-admin-role/powerbi-admin-role.png)
-5. Válassza a **Mentés** gombot.
+* A felhasználók és licencek módosításának képessége az Office 365 felügyeleti központjában.
 
-Most már láthatja, hogy a **Power BI-szolgáltatásadminisztrátor** megjelölés szerepel az adott felhasználó szerepkörénél. Ezek a felhasználók mostantól hozzáférhetnek a [Power BI felügyeleti portáljához](service-admin-portal.md).
-
-![](media/service-admin-role/powerbi-admin-role-set.png)
-
-## <a name="using-powershell-to-assign-a-role"></a>A PowerShell használata szerepkörök hozzárendelésére
-A PowerShell-parancs futtatásához telepíteni kell az Azure Active Directory PowerShell-modulját.
-
-### <a name="download-azure-ad-powershell-module"></a>Az Azure AD PowerShell-modul letöltése
-[Az Azure Active Directory PowerShell 2-es verziójának letöltése](https://github.com/Azure/azure-docs-powershell-azuread/blob/master/Azure%20AD%20Cmdlets/AzureAD/index.md)
-
-[Az Azure Active Directory PowerShell általánosan elérhető 1.1.166.0-s verziójának letöltése](http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185)
-
-### <a name="command-to-add-role-to-member"></a>A szerepkör taghoz való hozzárendelésére szolgáló parancs
-**Az Azure AD PowerShell 2-es verziójában használható parancs**
-
-Be kell szereznie a **Power BI-szolgáltatásadminisztrátor** szerepkörhöz tartozó **ObjectId** paramétert. Az **ObjectId** beszerzéséhez futtathatja a [Get-AzureADDirectoryRole](https://docs.microsoft.com/powershell/azuread/v2/get-azureaddirectoryrole) parancsot
-
-```
-PS C:\Windows\system32> Get-AzureADDirectoryRole
-
-ObjectId                             DisplayName                        Description
---------                             -----------                        -----------
-00f79122-c45d-436d-8d4a-2c0c6ca246bf Power BI Service Administrator     Full access in the Power BI Service.
-250d1222-4bc0-4b4b-8466-5d5765d14af9 Helpdesk Administrator             Helpdesk Administrator has access to perform..
-3ddec257-efdc-423d-9d24-b7cf29e0c86b Directory Synchronization Accounts Directory Synchronization Accounts
-50daa576-896c-4bf3-a84e-1d9d1875c7a7 Company Administrator              Company Administrator role has full access t..
-6a452384-6eb9-4793-8782-f4e7313b4dfd Device Administrators              Device Administrators
-9900b7db-35d9-4e56-a8e3-c5026cac3a11 AdHoc License Administrator        Allows access manage AdHoc license.
-a3631cce-16ce-47a3-bbe1-79b9774a0570 Directory Readers                  Allows access to various read only tasks in ..
-f727e2f3-0829-41a7-8c5c-5af83c37f57b Email Verified User Creator        Allows creation of new email verified users.
-```
-
-Ebben az esetben a szerepkör ObjectId paramétere a következő: 00f79122-c45d-436d-8d4a-2c0c6ca246bf.
-
-Ismernie kell a felhasználók **ObjectId** paraméterét is. Ezt a [Get-AzureADUser](https://docs.microsoft.com/powershell/azuread/v2/get-azureaduser) parancs futtatásával szerezheti be.
-
-```
-PS C:\Windows\system32> Get-AzureADUser -SearchString 'tim@contoso.com'
-
-ObjectId                             DisplayName UserPrincipalName      UserType
---------                             ----------- -----------------      --------
-6a2bfca2-98ba-413a-be61-6e4bbb8b8a4c Tim         tim@contoso.com        Member
-```
-
-A szerepkör taghoz való hozzárendeléséhez futtassa az [Add-AzureADDirectoryRoleMember](https://docs.microsoft.com/powershell/azuread/v2/add-azureaddirectoryrolemember) parancsot.
-
-| Paraméter | Leírás |
-| --- | --- |
-| ObjectId |A szerepkör objektumazonosítója (ObjectId). |
-| RefObjectId |A tag objektumazonosítója (ObjectId). |
-
-```
-Add-AzureADDirectoryRoleMember -ObjectId 00f79122-c45d-436d-8d4a-2c0c6ca246bf -RefObjectId 6a2bfca2-98ba-413a-be61-6e4bbb8b8a4c
-```
-
-**Az Azure AD PowerShell 1-es verziójában használható parancs**
-
-Ha a szerepkört az Azure AD 1-es verziójú parancsmagjainak használatával rendeli hozzá a taghoz, futtassa az [Add-MsolRoleMember](https://docs.microsoft.com/powershell/msonline/v1/add-msolrolemember) parancsot.
-
-```
-Add-MsolRoleMember -RoleMemberEmailAddress "tim@contoso.com" -RoleName "Power BI Service Administrator"
-```
-
-## <a name="limitations-and-considerations"></a>Korlátozások és megfontolások
-A Power BI-szolgáltatásadminisztrátori szerepkör nem teszi lehetővé az alábbiakat.
-
-* A felhasználók és licencek módosításának képessége az Office 365 felügyeleti központjában
 * Hozzáférés az auditnaplókhoz. További információért lásd: [Naplózás használata a munkahelyen](service-admin-auditing.md).
 
+## <a name="assign-users-to-the-admin-role-in-office-365"></a>Felhasználók hozzárendelése a rendszergazdai szerepkörhöz az Office 365-ben
+
+A Power BI rendszergazdai szerepkörének felhasználókhoz való hozzárendeléséhez kövesse az alábbi lépéseket az Office 365 felügyeleti központjában.
+
+1. Az Office 365 felügyeleti központjában válassza a **Felhasználók** > **Aktív felhasználók** elemet.
+
+    ![Office 365 Felügyeleti központ](media/service-admin-role/powerbi-admin-users.png)
+
+1. Válassza ki azt a felhasználót, akihez a szerepkört szeretné hozzárendelni.
+
+1. A **Szerepkörök** területen válassza a **Szerkesztés** lehetőséget.
+
+    ![Szerepkörök szerkesztése](media/service-admin-role/powerbi-admin-edit-roles.png)
+
+1. Válassza ki a **Személyre szabott adminisztrátor** > **Power BI-szolgáltatásadminisztrátor** elemet.
+
+    ![Power BI-szolgáltatásadminisztrátor](media/service-admin-role/powerbi-admin-role.png)
+
+1. Válassza a **Mentés**, majd a **Bezárás** lehetőséget.
+
+Most már láthatja, hogy a **Power BI-szolgáltatásadminisztrátor** megjelölés szerepel az adott felhasználó szerepkörénél.
+
+![Szerepkörök](media/service-admin-role/powerbi-admin-role-set.png)
+
+## <a name="assign-users-to-the-admin-role-with-powershell"></a>Felhasználók hozzárendelése a rendszergazdai szerepkörhöz a PowerShellben
+
+Felhasználókat a PowerShell-lel is hozzárendelhet szerepkörökhöz. Őket az Azure Active Directoryban (Azure AD) kezelheti. Ha még nem rendelkezik az Azure AD PowerShell-modullal, [töltse le és telepítse a legújabb verziót](https://www.powershellgallery.com/packages/AzureAD/).
+
+1. Elsőként be kell szereznie a **Power BI-szolgáltatásadminisztrátor** szerepkörhöz tartozó **ObjectId** paramétert. Az **ObjectId** beszerzéséhez futtathatja a [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) parancsot
+
+    ```
+    PS C:\Windows\system32> Get-AzureADDirectoryRole
+
+    ObjectId                             DisplayName                        Description
+    --------                             -----------                        -----------
+    00f79122-c45d-436d-8d4a-2c0c6ca246bf Power BI Service Administrator     Full access in the Power BI Service.
+    250d1222-4bc0-4b4b-8466-5d5765d14af9 Helpdesk Administrator             Helpdesk Administrator has access to perform..
+    3ddec257-efdc-423d-9d24-b7cf29e0c86b Directory Synchronization Accounts Directory Synchronization Accounts
+    50daa576-896c-4bf3-a84e-1d9d1875c7a7 Company Administrator              Company Administrator role has full access t..
+    6a452384-6eb9-4793-8782-f4e7313b4dfd Device Administrators              Device Administrators
+    9900b7db-35d9-4e56-a8e3-c5026cac3a11 AdHoc License Administrator        Allows access manage AdHoc license.
+    a3631cce-16ce-47a3-bbe1-79b9774a0570 Directory Readers                  Allows access to various read only tasks in ..
+    f727e2f3-0829-41a7-8c5c-5af83c37f57b Email Verified User Creator        Allows creation of new email verified users.
+    ```
+
+    Ebben az esetben a szerepkör **ObjectId** paramétere a következő: 00f79122-c45d-436d-8d4a-2c0c6ca246bf.
+
+1. Ezután szerezze be a felhasználó **ObjectId** paraméterét. Ezt a [Get-AzureADUser](/powershell/module/azuread/get-azureaduser) parancs futtatásával szerezheti be.
+
+    ```
+    PS C:\Windows\system32> Get-AzureADUser -SearchString 'tim@contoso.com'
+
+    ObjectId                             DisplayName UserPrincipalName      UserType
+    --------                             ----------- -----------------      --------
+    6a2bfca2-98ba-413a-be61-6e4bbb8b8a4c Tim         tim@contoso.com        Member
+    ```
+
+1. A szerepkör taghoz való hozzárendeléséhez futtassa az [Add-AzureADDirectoryRoleMember](/powershell/module/azuread/add-azureaddirectoryrolemember) parancsot.
+
+    | Paraméter | Leírás |
+    | --- | --- |
+    | ObjectId |A szerepkör objektumazonosítója (ObjectId). |
+    | RefObjectId |A tag objektumazonosítója (ObjectId). |
+
+    ```powershell
+    Add-AzureADDirectoryRoleMember -ObjectId 00f79122-c45d-436d-8d4a-2c0c6ca246bf -RefObjectId 6a2bfca2-98ba-413a-be61-6e4bbb8b8a4c
+    ```
+
 ## <a name="next-steps"></a>Következő lépések
-[Power BI felügyeleti portál](service-admin-portal.md)  
-[Add-AzureADDirectoryRoleMember](https://docs.microsoft.com/powershell/azuread/v2/add-azureaddirectoryrolemember)  
-[Add-MsolRoleMember](https://docs.microsoft.com/powershell/msonline/v1/add-msolrolemember)  
-[A Power BI-naplózás használata a munkahelyen](service-admin-auditing.md)  
+
 [A Power BI felügyelete a munkahelyen](service-admin-administering-power-bi-in-your-organization.md)  
+[Power BI felügyeleti portál](service-admin-portal.md)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-

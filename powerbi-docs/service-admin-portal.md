@@ -2,20 +2,20 @@
 title: Power BI felügyeleti portál
 description: A felügyeleti portál a Power BI bérlői felügyeletét teszi lehetővé a munkahelyen. Olyan lehetőségeket kínál, mint például a használati metrikák, hozzáférés az Office 365 felügyeleti központjához, valamint a beállítások.
 author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 02829adb386cc746715a34300a42aba616dc2d60
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: 3e125061766d6ade0daeaacb208d3070d8e9bd9b
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252491"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973258"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI felügyeleti portál
 
@@ -90,6 +90,8 @@ A Power BI-felhasználókat, -csoportokat és -rendszergazdákat az Office 365 f
 
 A Power BI-naplókat az Office 365 Security & Compliance Centerben kezelheti. A **Auditnaplók** lap tartalmaz egy, a bérlőhöz tartozó Security & Compliance centerre mutató hivatkozást. [További információ](service-admin-auditing.md)
 
+Az auditnaplók használatához engedélyezze a [**Vizsgálati naplók létrehozása belső tevékenységek és megfelelőség vizsgálatához**](#create-audit-logs-for-internal-activity-auditing-and-compliance) beállítást.
+
 ## <a name="tenant-settings"></a>Bérlői beállítások
 
 A **Bérlői beállítások** lap lehetővé teszi a szervezet számára elérhetővé tett funkciók finomhangolt szabályozását. Ha aggályai vannak a bizalmas adatokkal kapcsolatban, a funkciók némelyike esetlegesen nem megfelelő a munkahely számára, vagy csak egy adott funkciót szeretne engedélyezni egy adott csoportnak.
@@ -133,7 +135,7 @@ A vállalat felhasználói alkalmazás-munkaterületeket hozhatnak létre az ir�
 
 ### <a name="share-content-to-external-users"></a>Tartalom megosztása külső felhasználókkal
 
-A munkahelyi felhasználók külső felhasználókkal oszthatnak meg irányítópultokat.
+A munkahelyi felhasználók külső felhasználókkal oszthatnak meg irányítópultokat. [További információ](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
 
 ![Külső felhasználók beállítás](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
@@ -181,40 +183,37 @@ Az alábbi képen látható a **Fájl** menü egy jelentéshez, ha a **Jelentés
 
 A munkahelyi felhasználók irányítópultokat és jelentéseket nyomtathatnak. [További információ](consumer/end-user-print.md)
 
-![](media/service-admin-portal/powerbi-admin-print-dashboard.png)
+Az alábbi képen az irányítópult nyomtatásának lehetősége látható.
 
-![](media/service-admin-portal/powerbi-admin-print-report.png)
+![Irányítópult nyomtatása](media/service-admin-portal/powerbi-admin-print-dashboard.png)
 
-## <a name="content-pack-settings"></a>Tartalomcsomag-beállítások
+Az alábbi képen a jelentéshez tartozó **Fájl** menü látható, ha az **Irányítópultok és jelentések nyomtatása** beállítás engedélyezve van.
 
-### <a name="publish-content-packs-to-the-entire-organization"></a>Tartalomcsomagok közzététele az egész munkahely számára
+![Jelentés nyomtatása](media/service-admin-portal/powerbi-admin-print-report.png)
 
-A munkahelyi felhasználók tartalomcsomagokat tehetnek közzé az egész munkahely számára.
+## <a name="content-pack-and-app-settings"></a>Tartalomcsomag és alkalmazás beállításai
 
-![](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
+### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Tartalomcsomagok és alkalmazások közzététele a teljes szervezet számára
 
-### <a name="create-template-organizational-content-packs"></a>Munkahelyi tartalomcsomagok sablonjainak létrehozása
+A munkahely felhasználói nem csupán egyes csoportok, hanem a teljes szervezet számára közzétehetik a tartalomcsomagokat és alkalmazásokat. [További információ](service-organizational-content-pack-manage-update-delete.md)
 
-A munkahelyi felhasználók tartalomcsomag-sablonokat készíthetnek, amelyek a Power BI Desktop adott adatforrására épülő adatkészleteket használják.
+Az alábbi képen a **Teljes saját szervezet** lehetőség látható a tartalomcsomag létrehozásakor.
+
+![Tartalomcsomag közzététele a szervezet számára](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
+
+### <a name="create-template-organizational-content-packs-and-apps"></a>Szervezeti tartalomcsomagok és alkalmazások sablonjainak létrehozása
+
+A munkahelyi felhasználók tartalomcsomag-sablonokat készíthetnek, amelyek a Power BI Desktop adatkészleteit használják. [További információ](template-content-pack-authoring.md)
 
 ### <a name="push-apps-to-end-users"></a>Alkalmazások küldése a végfelhasználóknak
 
-A bérlői rendszergazda a **Bérlői beállításokban** engedélyezheti az alkalmazások küldését.
-
-   ![Alkalmazásleküldés engedélyezése](media/service-create-distribute-apps/power-bi-apps-pushapps01.png)
-
-A beállítást **Engedélyezve** értékre állíthatja, és megadhatja, hogy ki használhatja ezt a funkciót (a teljes szervezet vagy adott biztonsági csoportok).
-
-> [!NOTE]
-> Ne feledje, hogy bérlői beállítások módosításának érvénybe lépése időbe telhet.
-
-További információ az [alkalmazások leküldéséről](service-create-distribute-apps.md).
+A felhasználók közvetlenül is megoszthatnak alkalmazásokat a végfelhasználókkal, anélkül, hogy telepíteni kéne azokat az AppSource-ból. [További információ](service-create-distribute-apps.md)
 
 ## <a name="integration-settings"></a>Integrálási beállítások
 
 ### <a name="ask-questions-about-data-using-cortana"></a>Adatokkal kapcsolatos kérdések feltevése Cortanával
 
-A munkahelyi felhasználók Cortana használatával kérdéseket tehetnek fel az adataikról.
+A munkahelyi felhasználók Cortana használatával kérdéseket tehetnek fel az adataikról. [További információ](service-cortana-enable.md)
 
 > [!NOTE]
 > Ez a beállítás az egész munkahelyre vonatkozik, és nem lehet korlátozni meghatározott csoportokra.
@@ -258,29 +257,20 @@ A munkahelyi felhasználók R-szkriptekkel készült vizualizációkat használh
 
 A felhasználók a naplózással nyomon követhetik, hogy a munkahely más felhasználói milyen műveleteket hajtottak végre a Power BI-ban. [További információ](service-admin-auditing.md)
 
-Az auditnapló bejegyzéseinek rögzítéséhez ezt a beállítást kell bekapcsolni. Akár 48 órás késés is lehet a naplózás engedélyezése és a naplózási adatok megtekinthetővé válása között. Ha nem látja azonnal adatokat, ellenőrizze később az auditnaplókat. Hasonló késés lehet az auditnaplók megtekintési engedélyének megkapása és a naplók elérésének lehetővé válása között.
+Az auditnapló bejegyzéseinek rögzítéséhez engedélyezni kell ezt a beállítást. Akár 48 órás késés is lehet a naplózás engedélyezése és a naplózási adatok megtekinthetővé válása között. Ha nem látja azonnal adatokat, ellenőrizze később az auditnaplókat. Hasonló késés lehet az auditnaplók megtekintési engedélyének megkapása és a naplók elérésének lehetővé válása között.
 
 > [!NOTE]
 > Ez a beállítás az egész munkahelyre vonatkozik, és nem lehet korlátozni meghatározott csoportokra.
 
 ### <a name="usage-metrics-for-content-creators"></a>Használati metrikák tartalomkészítők számára
-A szervezet felhasználói láthatják az általuk létrehozott jelentések és irányítópultok metrikáit. [További információ](service-usage-metrics.md).
 
-A beállítást **Engedélyezve** értékre állíthatja, és megadhatja, hogy ki láthat használati metrikákat (a teljes szervezet vagy adott biztonsági csoportok).
-
-> [!NOTE]
-> Ne feledje, hogy bérlői beállítások módosításának érvénybe lépése időbe telhet.
+A munkahelyi felhasználók láthatják az általuk létrehozott jelentések és irányítópultok használati metrikáit. [További információ](service-usage-metrics.md)
 
 ### <a name="per-user-data-in-usage-metrics-for-content-creators"></a>Felhasználónkénti adatok a használati metrikákban a tartalmak szerzői számára
-A tartalmak szerzőinek használati metrikáiban szerepel a tartalmakhoz hozzáférő felhasználók megjelenítendő neve és e-mail-címe. [További információ](service-usage-metrics.md).
 
-A beállítást **Engedélyezve** értékre állíthatja, és megadhatja, hogy ki láthatja a megjelenített nevet és az e-mail-címet a használati metrikákban (a teljes szervezet vagy adott biztonsági csoportok).
+A tartalmak szerzőinek használati metrikáiban szerepel a tartalmakhoz hozzáférő felhasználók megjelenítendő neve és e-mail-címe. [További információ](service-usage-metrics.md)
 
 A felhasználónkénti adatok alapértelmezés szerint engedélyezve vannak a használati metrikákhoz, a tartalomkészítői fiókadatok pedig szerepelnek a metrikák jelentéseiben. Ha ezt az információt nem szeretné belefoglalni egyes felhasználók esetében, tiltsa le a funkciót megadott biztonsági csoportok, vagy a teljes szervezet számára. A fiókadatok ekkor *névtelenként* jelennek meg a jelentésben.
-
-> [!NOTE]
-> Ne feledje, hogy bérlői beállítások módosításának érvénybe lépése időbe telhet.
-
 
 ## <a name="dashboard-settings"></a>Irányítópult beállításai
 
@@ -295,69 +285,79 @@ A munkahelyi felhasználók a biztonsági szint besorolását jelző címkékkel
 
 ### <a name="embed-content-in-apps"></a>Tartalom beágyazása alkalmazásokba
 
-A munkahelyi felhasználók beágyazhatnak Power BI-irányítópultokat és -jelentéseket szolgáltatott szoftveres (SaaS-) alkalmazásokba. A beállítás kikapcsolásával megakadályozhatja, hogy a felhasználók a REST API-k használatával Power BI-tartalmakat ágyazzanak be saját alkalmazásukba.
+A munkahelyi felhasználók beágyazhatnak Power BI-irányítópultokat és -jelentéseket szolgáltatott szoftveres (SaaS-) alkalmazásokba. A beállítás kikapcsolásával megakadályozhatja, hogy a felhasználók a REST API-k használatával Power BI-tartalmakat ágyazzanak be saját alkalmazásukba. [További információ](developer/embedding.md)
+
+## <a name="workspaces-and-import-settings"></a>Munkaterületek és importálási beállítások
+
+### <a name="author-content-in-workspaces"></a>Szerzői tartalmak a munkaterületeken
+
+A munkahelyi felhasználók hozzáférhetnek a munkaterületekhez, hogy csatlakozni tudjanak az adatokhoz és a szerzői tartalmakhoz. [További információ](service-create-the-new-workspaces.md)
+
+### <a name="import-data-into-power-bi"></a>Adatok importálása a Power BI-ba
+
+A munkahelyi felhasználók adatokat importálhatnak a szolgáltatásba, például jelentéseket tehetnek közzé a Power BI Desktopról, Power BI-jelentésfájlokat tölthetnek fel, és közvetlenül a szolgáltatásból csatlakozhatnak az adatokhoz. [További információ](desktop-upload-desktop-files.md)
 
 ## <a name="capacity-settings"></a>Kapacitásbeállítások
 
-### <a name="premium-settings"></a>Premium-beállítások
+### <a name="power-bi-premium"></a>Power BI Premium
 
-A Premium-beállítások lapon bármely Power BI Premium-kapacitás (Em vagy P termékváltozat) felügyelhető, amelyet a munkahely megvásárolt. A munkahely bármely felhasználója láthatja a Premium-beállítások lapot, de annak tartalma csak akkor jelenik meg, ha az adott felhasználó **kapacitás-rendszergazda**, vagy rendelkezik a szükséges engedélyekkel. Ha a felhasználó nem rendelkezik ilyen engedéllyel, az alábbi üzenet jelenik meg.
+A **Power BI Premium** lapon a munkahely által megvásárolt bármely Power BI Premium-kapacitás (EM vagy P termékváltozat) felügyelhető. A munkahely minden felhasználója láthatja a **Power BI Premium** lapot, de annak tartalma csak akkor jelenik meg, ha az adott felhasználó *kapacitás-rendszergazda* vagy rendelkezik a szükséges engedélyekkel. Ha a felhasználó nem rendelkezik ilyen engedéllyel, az alábbi üzenet jelenik meg.
 
-![A Power BI Premium adminisztrátori beállításai](media/service-admin-portal/premium-settings-no-access.png "Nincs hozzáférés a Premium-beállításokhoz")
+![Nincs hozzáférés a Premium-beállításokhoz](media/service-admin-portal/premium-settings-no-access.png)
 
 További információ a Premium-beállítások kezeléséről: [A Power BI Premium kezelése](service-admin-premium-manage.md).
 
-### <a name="power-bi-embedded-settings"></a>Power BI Embedded-beállítások
+### <a name="power-bi-embedded"></a>Power BI Embedded
 
-A Power BI Embedded beállítások lapján megtekintheti a Power BI Embedded (A termékváltozat) kapacitásait, amelyeket az ügyfelének vásárolt. Mivel az Azure-tól csak A termékváltozatot vásárolhat, a [beágyazott kapacitások Azure-ban való kezelésére](developer/azure-pbie-create-capacity.md) az **Azure Portalt** használhatja.
-
-![A Power BI Embedded adminisztrátori beállításai](media/service-admin-portal/manage-pbie-capacities-01.png)
-
-![A Power BI Embedded adminisztrátori beállításainak részletei](media/service-admin-portal/manage-pbie-capacities-02.png)
+A **Power BI Embedded** lapon megtekintheti az ügyfél számára vásárolt Power BI Embedded (A termékváltozat) kapacitásait. Mivel az A termékváltozatot csak az Azure-tól szerezheti be, a [beágyazott kapacitások Azure-ban való kezelésére](developer/azure-pbie-create-capacity.md) **az Azure Portalt** kell használnia.
 
 A Power BI Embedded (A termékváltozat) beállításainak kezeléséről további információért lásd a [Mi a Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md) szakaszt.
 
 ## <a name="embed-codes"></a>Beágyazási kódok
 
-![Beágyazási kódok a Power BI felügyeleti portálon](media/service-admin-portal/embed-codes.png)
+A rendszergazdák megnézhetik a bérlő számára generált beágyazási kódokat. A kódokat vissza is vonhatja, vagy törölheti. [További információ](service-publish-to-web.md)
 
-A rendszergazdák megnézhetik a bérlő számára generált beágyazási kódokat. Elérhetőek a jelentés megtekintésére, valamint a visszavonáshoz a beágyazási kód törlésére vonatkozó műveletek is.
+![Beágyazási kódok a Power BI felügyeleti portálon](media/service-admin-portal/embed-codes.png)
 
 ## <a name="organization-visuals"></a>Szervezeti vizualizációk
 
-A szervezeti vizualizációk lapon egyéni vizualizációkat helyezhet el és kezelhet a szervezetén belül, így könnyen alkalmazhat jogvédett egyéni vizualizációkat a szervezetében, amelyeket a jelentéskészítők könnyen megtalálhatnak és importálhatnak a jelentéseikbe közvetlenül a Power BI Desktopból.
+A **Szervezeti vizualizációk** lapon egyéni vizualizációkat helyezhet üzembe és kezelhet a cégen belül. A szervezeti vizualizációk segítségével egyszerűen helyezhet üzembe szellemi tulajdont képező vizualizációkat, a szerzők pedig láthatják a jelentéseket és importálhatják a saját jelentéseikbe a Power BI Desktopból. [További információ](power-bi-custom-visuals-organization.md)
 
-A lapon minden olyan egyéni vizualizáció megjelenik, amely jelenleg megtalálható a szervezet adattárában.
+> [!WARNING]
+> Az egyéni vizualizációk biztonsági vagy adatvédelmi kockázatot jelentő kódokat tartalmazhatnak, ezért az adattárban való üzembe helyezés előtt ellenőrizze, hogy megbízható-e a vizualizáció szerzője és forrása.
+
+A következő képen látható az összes olyan egyéni vizualizáció, amely jelenleg megtalálható a szervezet adattárában.
 
 ![Szervezeti rendszergazdai visualizáció](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
 
 ### <a name="add-a-new-custom-visual"></a>Új egyéni vizualizáció hozzáadása
 
-Új egyéni vizualizáció a listához adásához válassza az **Egyéni vizualizáció hozzáadása** lehetőséget
+Új egyéni vizualizáció hozzáadásához kövesse az alábbi lépéseket. 
 
-![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
+1. A jobb oldali ablaktáblán válassza ki az **Egyéni vizualizáció hozzáadása** lehetőséget.
 
-> [!WARNING]
-> Az egyéni vizualizációk biztonsági vagy adatvédelmi kockázatot jelentő kódokat tartalmazhatnak, ezért az adattárban való üzembe helyezés előtt ellenőrizze, hogy megbízható-e a vizualizáció szerzője és forrása.
+    ![Egyéni vizualizáció űrlap](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
 
-Töltse ki a mezőket:
+1. Töltse ki az **Egyéni vizualizáció hozzáadása** űrlapot:
 
-* Válasszon egy .pbiviz-fájlt (kötelező): Válasszon ki egy feltöltendő egyéni vizualizációs fájlt. Csak a verziószámmal ellátott API-s vizualizációk támogatottak (itt elolvashatja, ez mit jelent).
+    * **Válasszon egy .pbiviz-fájlt** (kötelező): Válasszon ki egy feltöltendő egyéni vizualizációs fájlt. Csak a verziószámmal ellátott API-s vizualizációk támogatottak (itt elolvashatja, ez mit jelent).
 
-Az egyéni vizualizációk feltöltése előtt át kell tekintenie a vizualizációt biztonsági és adatvédelmi szempontból, hogy biztosan megfeleljen a szervezet igényeinek. További információk az egyéni vizualizációk biztonságáról.
+    Az egyéni vizualizációk feltöltése előtt át kell tekintenie a vizualizációt biztonsági és adatvédelmi szempontból, hogy biztosan megfeleljen a szervezet igényeinek.
 
-* Nevezze el az egyéni vizualizációkat (kötelező): Adjon egy rövid címet a vizualizációnak, a Power BI Desktop felhasználói így könnyen megérthetik, mi annak a célja
+    * **Nevezze el az egyéni vizualizációkat** (kötelező): Adjon egy rövid címet a vizualizációnak, hogy a Power BI Desktop felhasználói könnyen megértsék a rendeltetését.
 
-* Ikon (kötelező): A Power BI Desktop felhasználói felületén megjelenő ikonfájl.
+    * **Ikon**: A Power BI Desktop felhasználói felületén megjelenő ikonfájl.
 
-* Leírás: A vizualizáció rövid leírása, amely több információt szolgáltat a felhasználónak
+    * **Leírás**: A vizualizáció rövid leírása, amely több információt szolgáltat a felhasználónak
 
-Az „Alkalmazás“ lehetőséggel kezdje meg a feltöltést. Ha ez sikeres, az új elem megjelenik a listában. Ha nem, egy ennek megfelelő hibaüzenet jelenhet meg
+1. Kattintson a **Hozzáadás** lehetőségre a feltöltés kérelmezéséhez. Ha ez sikeres, az új elem megjelenik a listában. Ha nem, egy ennek megfelelő hibaüzenet jelenhet meg
 
 ### <a name="delete-a-custom-visual-from-the-list"></a>Egyéni látványelem törlése a listából
 
-A kuka ikonnal végleg törölheti a vizualizációt az adattárból.
-Fontos: a törlés nem vonható vissza. A törölt vizualizációk azonnal abbahagyják a renderelést a meglévő jelentésekben. Még ha újra feltölti is a vizualizációt, az nem helyettesíti a törölt verziót, a felhasználók újra importálhatják az új vizualizációt, és kicserélhetik azt a saját jelentésükben található példánnyal.
+A vizualizáció végleges törléséhez kattintson az adattárban lévő vizualizációhoz tartozó kuka ikonra.
+
+> [!IMPORTANT]
+> A törlés nem vonható vissza. A törölt vizualizációk azonnal abbahagyják a renderelést a meglévő jelentésekben. A törölt változatot még ugyanazon vizualizáció ismételt feltöltése sem helyettesíti. A felhasználók azonban újraimportálhatják a vizualizációt, és pótolhatják azt a jelentéseikben.
 
 ### <a name="disable-a-custom-visual-in-the-list"></a>Egyéni látványelem letiltása a listában
 
@@ -371,15 +371,16 @@ Azonban a könyvjelzőzött vizualizációk továbbra is működnek.
 
 Frissítés vagy rendszergazdai módosítás után a Power BI felhasználóinak újra kell indítaniuk az alkalmazást, vagy a Power BI szolgáltatás használata esetén frissíteniük kell a böngészőt a frissítések megjelenítéséhez.
 
-### <a name="how-to-update-a-visual"></a>A vizualizációk frissítése
+### <a name="update-a-visual"></a>Vizualizáció frissítése
 
-Ha szeretné frissíteni az adattárban a vizualizációt, mert annak újabb verziója érhető el (pl. hibajavítások, új funkciók stb.), akkor válassza a **Frissítés** ikont, és töltse fel az új fájlt. Győződjön meg róla, hogy a vizuális azonosító ugyanaz maradt. Az új fájl az előző fájlt helyére kerül a jelentésekben az egész vállalatnál. Ha azonban a vizualizáció új verziója megbontja az előző verziójának valamely használati vagy adatstruktúráját, akkor ne cserélje le az előző verziót. Ehelyett hozzon létre egy új listázást a vizualizáció új verziójához. Például adjon hozzá egy új verziószámot (X.X verzió) az új listázott vizualizáció címéhez. Ezáltal nyilvánvalóvá válik, hogy ez ugyanaz a vizualizáció, de frissített verziószámmal, így a meglévő jelentések működése nem hibásodik meg. Most is győződjön meg róla, hogy a vizuális azonosító ugyanaz maradt. Így amikor a felhasználók legközelebb belépnek a szervezeti adattárba a Power BI Desktopból, importálhatják az új verziót, amely kérni fogja őket, hogy cseréljék le a jelentésben található jelenlegi verziót.
+A vizualizáció munkahelyi áruházból való feltöltéséhez kattintson a fogaskerék ikonra. Keresse meg és töltse fel a vizualizáció új verzióját.
+
+Győződjön meg róla, hogy a vizuális azonosító ugyanaz maradt. Az új fájl az előző fájlt helyére kerül a jelentésekben az egész vállalatnál. Ha azonban a vizualizáció új verziója megbontja az előző verziójának valamely használati vagy adatstruktúráját, akkor ne cserélje le az előző verziót. Ehelyett hozzon létre egy új listázást a vizualizáció új verziójához. Például adjon hozzá egy új verziószámot (X.X verzió) az új listázott vizualizáció címéhez. Ezáltal nyilvánvalóvá válik, hogy ez ugyanaz a vizualizáció, de frissített verziószámmal, így a meglévő jelentések működése nem hibásodik meg. Most is győződjön meg róla, hogy a vizuális azonosító ugyanaz maradt. Így amikor a felhasználók legközelebb belépnek a szervezeti adattárba a Power BI Desktopból, importálhatják az új verziót, amely kérni fogja őket, hogy cseréljék le a jelentésben található jelenlegi verziót.
 
 ## <a name="next-steps"></a>Következő lépések
 
-[A Power BI rendszergazdai szerepkörének ismertetése](service-admin-role.md)  
+[A Power BI felügyelete a szervezetnél](service-admin-administering-power-bi-in-your-organization.md) [A Power BI rendszergazdai szerepkörének ismertetése](service-admin-role.md)  
 [A Power BI-naplózás használata a munkahelyen](service-admin-auditing.md)  
 [A Power BI Premium kezelése](service-admin-premium-manage.md)  
-[A Power BI felügyelete a munkahelyen](service-admin-administering-power-bi-in-your-organization.md)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
