@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: d265e465825fb8def167207ed632f1702adcbc7f
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 4bc9a0fe6dd3becd67c2b6dd8ffeb9d7922705a6
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973632"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507933"
 ---
 # <a name="view-reports-in-presentation-mode-on-surface-hub-and-windows-10---power-bi"></a>Jelentések megjelenítése bemutató módban a Surface Hubon és a Windows 10-ben – Power BI
 A jelentéseket megjelenítheti bemutató módban a Surface Hubon, a Power BI-irányítópultokat, -jelentéseket és -csempéket pedig teljes képernyős módban a Windows 10-eszközökön. 
@@ -27,7 +27,7 @@ A Power BI mobilalkalmazás teljes képernyős módjában az összes „díszít
 
 Amikor egy jelentést bemutató módban jelenít meg a Surface Hubon, az oldalakra több különböző színű tintával is rajzolhat, és válthat a jelentés oldalai között.
 
-[Irányítópultokat és jelentéseket is megjeleníthet teljes képernyős módban a Power BI szolgáltatásból](../../service-fullscreen-mode.md) a weben.
+[Irányítópultokat és jelentéseket is megjeleníthet teljes képernyős módban a Power BI szolgáltatásból](../end-user-focus.md) a weben.
 
 > [!NOTE]
 > A bemutató mód különbözik [a csempék fókusz módjától](mobile-tiles-in-the-mobile-apps.md).
@@ -74,6 +74,6 @@ A Surface Hubon a bemutató mód alapértelmezés szerint be van kapcsolva, ha a
 7. A teljes képernyős mód elhagyásához pöccintsen lefelé a képernyőn, és koppintson a két egymás felé mutató nyilat ábrázoló ikonra ![](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-hub-icon.png).
 
 ## <a name="next-steps"></a>További lépések
-* [Irányítópultok és jelentések megjelenítése teljes képernyős módban a Power BI szolgáltatásból](../../service-fullscreen-mode.md)
+* [Irányítópultok és jelentések megjelenítése teljes képernyős módban a Power BI szolgáltatásból](../end-user-focus.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

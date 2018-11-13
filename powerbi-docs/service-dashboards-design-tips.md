@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 580d1ead35042d14c155c5a28fdb6ba6e6dbcd54
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 082d0ba1e638e8eaf6ae16fa8d5ed63c128c8ad5
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544965"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507853"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tippek a tökéletes Power BI-irányítópult megtervezéséhez
 Most, hogy létrehozta az irányítópultot, és hozzáadott néhány csempét is, gondolja át, hogyan tehetné irányítópultját egyszerre ízlésessé és célratörővé. Ennek a legjobb módja, ha a legfontosabb információ a legfeltűnőbb, amelynek megjelenése letisztult és rendezett.
@@ -43,7 +43,7 @@ Mivel az irányítópultok célja, hogy egyetlen pillantás alatt leolvashassuk 
 Túlságosan zsúfolt az irányítópult?  A legfontosabb, könnyen olvasható és értelmezhető információk kivételével távolítson el minden további adatot.
 
 ## <a name="make-use-of-full-screen-mode"></a>Használja a teljes képernyős módot
-Irányítópultját minden felesleges információ nélkül, [Teljes képernyős](service-fullscreen-mode.md) módban jelenítse meg.
+Irányítópultját minden felesleges információ nélkül, [Teljes képernyős](consumer/end-user-focus.md) módban jelenítse meg.
 
 ## <a name="make-the-most-important-information-biggest"></a>A legfontosabb információt jelenítse meg a legnagyobbként
 Ha az irányítópulton található szövegek és a vizualizációk azonos méretűek, az olvasóknak nehezére esik majd a legfontosabb információra összpontosítani. A kártyavizualizációk segítségével például hatásosan tudja megjeleníteni a fontos számokat:  

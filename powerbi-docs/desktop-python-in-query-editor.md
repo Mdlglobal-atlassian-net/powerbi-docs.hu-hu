@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 873b83221aa5a1a728d648cccf7a23d5924dfb6d
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: c3664eee2d3836fc802d1728bbfe7fce3e03e18d
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45975495"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297205"
 ---
 # <a name="using-python-in-query-editor"></a>A Python használata a Lekérdezésszerkesztőben
 A Power BI Desktop **Lekérdezésszerkesztőjében** használhatja a statisztikusok, adatszakértők és adatelemzők által széles körben használt **Python** programozási nyelvet. A Python integrációja a **Lekérdezésszerkesztőbe** lehetővé teszi adattisztítás elvégzését a Python használatával, és összetett adatátalakítási és elemzési műveletek adatkészleteken történő elvégzését, beleértve többek között a hiányos adatok kiegészítését, az előrejelzéseket és a fürtözést. A **Python** egy sokoldalú nyelv, amely a **Lekérdezésszerkesztőben** is használható adatmodellek előkészítéséhez és jelentések létrehozásához.
@@ -75,9 +75,7 @@ Most létrehozhatunk egy vizualizációt, amelyből látható, hogy a Python-szk
 Miután a vizualizáció elkészült, bármely egyéb vizualizációval együtt amelyet a **Power BI Desktop** használatával szeretne létrehozni, mentheti a **Power BI Desktop-fájlt** (.pbix-fájlként), és utána a Power BI szolgáltatásban használhatja az adatmodellt, beleértve a részét képező Python-szkripteket.
 
 > [!NOTE]
-> Szeretne egy teljes .pbix-fájlt látni úgy, hogy ezek a lépések már be vannak fejezve? Szerencséje van – [innen](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete Values with Python in PQ.pbix) letöltheti az ebben a példában használt, teljes **Power BI Desktop-fájlt**.
-> 
-> 
+> Szeretne egy teljes .pbix-fájlt látni úgy, hogy ezek a lépések már be vannak fejezve? Szerencséje van – [innen](http://download.microsoft.com/download/A/B/C/ABCF5589-B88F-49D4-ADEB-4A623589FC09/Complete%20Values%20with%20Python%20in%20PQ.pbix) letöltheti az ebben a példában használt, teljes **Power BI Desktop-fájlt**.
 
 Miután feltöltötte a .pbix-fájlt a Power BI szolgáltatásba, néhány további lépés szükséges az adatfrissítés engedélyezéséhez (a szolgáltatásban) és annak engedélyezéséhez, hogy a vizualizációk frissíthetők legyenek a szolgáltatásban (az adatoknak hozzáféréssel kell rendelkezniük a Pythonhoz, hogy a vizualizációk frissülhessenek). A további lépések a következők:
 

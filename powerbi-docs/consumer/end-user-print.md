@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 636dbceae129d7a5288fa6dfc8a281d5257a087f
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: be7597cf13732e251f40f73a853e6ea7b0032652
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564992"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507669"
 ---
 # <a name="printing-from-power-bi-service"></a>Nyomtatás a Power BI-ból
 Útmutató teljes irányítópultok, irányítópult-csempék, jelentésoldalak, jelentés-vizualizációk Power BI-ból történő nyomtatásához. A jelentésekből alkalmanként csak egy oldal nyomatható ki, a teljes jelentést nem lehet egyszerre kinyomtatni.
@@ -47,7 +47,7 @@ Tekintse meg, hogyan nyomtat Amanda irányítópultjáról, illetve jelentéséb
 1. A három pontra, majd a Fókusz ikonra ![Fókusz ikon](./media/end-user-print/power-bi-focus-icon.png) kattintva [nyissa meg a csempét fókusz módban](end-user-focus.md).
    
     ![három pont menü](./media/end-user-print/menu-options.png)
-2. A felső navigációs sáv teljes képernyő ikonjára ![teljes képernyő ikon](./media/end-user-print/power-bi-full-screen-icon.png) kattintva nyissa meg a csempét [teljes képernyős módban](../service-fullscreen-mode.md).
+2. A felső navigációs sáv teljes képernyő ikonjára ![teljes képernyő ikon](./media/end-user-print/power-bi-full-screen-icon.png) kattintva nyissa meg a csempét [teljes képernyős módban](end-user-focus.md).
 3. A kurzort a csempe fölé húzva jelenítheti meg a válaszható lehetőségek menüjét.
    
     ![teljes képernyős beállítások menü](./media/end-user-print/menu-options-new.png)
