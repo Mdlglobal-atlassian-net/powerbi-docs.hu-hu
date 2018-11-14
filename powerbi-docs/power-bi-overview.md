@@ -1,20 +1,20 @@
 ---
 title: A Power BI bemutatása
 description: A Power BI és a különféle komponensek áttekintése – Power BI Desktop, Power BI szolgáltatás, Power BI Mobile, Jelentéskészítő kiszolgáló, Power BI Embedded.
-author: mihart
-manager: kvivek
+author: davidiseminger
+manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: overview
-ms.date: 09/22/2018
-ms.author: mihart
+ms.date: 11/13/2018
+ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 61264a2a127ea45f542543d40fd62a9de8c3620d
-ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
+ms.openlocfilehash: 357af2f995fc927e7b55283c762e5f4b52376444
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48798908"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619586"
 ---
 # <a name="what-is-power-bi"></a>A Power BI bemutatása
 A **Power BI** olyan szoftverszolgáltatások, alkalmazások és összekötők gyűjteménye, amellyel az egymástól független adatforrásokat egymással együttműködő, vizuálisan megragadó, interaktív elemzésekké alakítja. Akár egyszerű Excel-táblákból, akár felhőalapú és helyszíni hibrid adatraktárak gyűjteményéből állnak az adatai, a **Power BI** segítségével könnyedén összekötheti az adatforrásokat, vizualizálhatja (vagy feltárhatja) a fontos részleteket, és megoszthatja az így kapott információt bárkivel, akivel csak szeretné.
