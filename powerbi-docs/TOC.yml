@@ -54,9 +54,11 @@ items:
     items:
     - name: Újdonságok a Power BI Desktop legújabb frissítésében
       href: desktop-latest-update.md
+    - name: A Modellező nézet a Power BI Desktopban (előzetes verzió)
+      href: desktop-modeling-view.md
     - name: Aggregációk a Power BI Desktopban (előzetes verzió)
       href: desktop-aggregations.md
-    - name: Összetett modellek a Power BI Desktopban (előzetes verzió)
+    - name: Összetett modellek a Power BI Desktopban
       href: desktop-composite-models.md
     - name: Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)
       href: desktop-many-to-many-relationships.md
@@ -232,6 +234,8 @@ items:
         href: desktop-bookmarks.md
       - name: Jelentéstémák használata
         href: desktop-report-themes.md
+      - name: Az új szűrőfunkciók kipróbálása
+        href: power-bi-report-filter-preview.md
       - name: Gyors mértékek használata
         href: desktop-quick-measures.md
       - name: Feltételes eset paraméterek használata
@@ -768,17 +772,17 @@ items:
       items:
       - name: Önkiszolgáló adatelőkészítés adatfolyamokkal (előzetes verzió)
         href: service-dataflows-overview.md
-      - name: Adatfolyamok létrehozása és használata
+      - name: Adatfolyamok létrehozása és használata (előzetes verzió)
         href: service-dataflows-create-use.md
-      - name: Számított entitások a Power BI Premiummal
+      - name: Számított entitások a Power BI Premiummal (előzetes verzió)
         href: service-dataflows-computed-entities-premium.md
-      - name: Adatfolyamok használata helyszíni adatforrásokkal
+      - name: Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)
         href: service-dataflows-on-premises-gateways.md
       - name: Entitások összekötése adatfolyamok között (előzetes verzió)
         href: service-dataflows-linked-entities.md
       - name: Növekményes frissítések használata adatfolyamokkal (előzetes verzió)
         href: service-dataflows-incremental-refresh.md
-      - name: Az adatfolyamokkal kapcsolatos fejlesztői források
+      - name: Az adatfolyamokkal kapcsolatos fejlesztői források (előzetes verzió)
         href: service-dataflows-developer-resources.md
       - name: Csatlakozás adatfolyamokhoz a Power BI Desktopban
         href: desktop-connect-dataflows.md
@@ -1249,9 +1253,9 @@ items:
       href: service-admin-governance.md
     - name: A Power BI és a biztonság
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 7c2025a2dd23ce58937cd9987bec8d28b8ffb04c
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 89c0a22887d00b325abeddd193bbf71af97feb9f
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508060"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619662"
