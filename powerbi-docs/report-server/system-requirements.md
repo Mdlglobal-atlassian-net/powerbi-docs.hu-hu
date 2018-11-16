@@ -1,23 +1,23 @@
 ---
 title: A Power BI jelentéskészítő kiszolgáló telepítésének hardver- és szoftverkövetelményei
-description: Itt láthatók a Power BI jelentéskészítő kiszolgáló telepítésének és futtatásának minimális hardver- és szoftverkövetelményei.
+description: Ez a cikk a Power BI jelentéskészítő kiszolgáló telepítésének és futtatásának minimális hardver- és szoftverkövetelményeit ismerteti.
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 06/13/2018
+ms.date: 11/08/2018
 ms.author: maghan
-ms.openlocfilehash: c2784bf8e8dca857ae2a1b55d1ad8560e552cafb
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: c8904f3025a0a60557b1d3efb54ea6bc18c20da4
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37780570"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507906"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló telepítésének hardver- és szoftverkövetelményei
-Itt láthatók a Power BI jelentéskészítő kiszolgáló telepítésének és futtatásának minimális hardver- és szoftverkövetelményei.
+Ez a cikk a Power BI jelentéskészítő kiszolgáló telepítésének és futtatásának minimális hardver- és szoftverkövetelményeit ismerteti.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Processzorra, memóriára és operációs rendszerre vonatkozó követelmények
 
@@ -43,18 +43,19 @@ A jelentéskészítő kiszolgáló adatbázisának üzemeltetése SQL Serveren t
 * SQL Server 2014
 * SQL Server 2012
 
-Ha a jelentéskészítő kiszolgáló adatbázisát egy távoli számítógépen szeretné létrehozni, akkor a kapcsolódáshoz egy tartományi felhasználó fiókja vagy pedig egy hálózati hozzáféréssel rendelkező szolgáltatási fiók szükséges. Ha úgy dönt, hogy egy távoli SQL Server-példányt használ, fontolja meg alaposan, hogy a jelentéskészítő kiszolgáló mely hitelesítő adatokkal kapcsolódjon az SQL Server-példányhoz. További információkért tekintse meg a [Jelentéskészítő kiszolgáló adatbázis-kapcsolatának konfigurációja](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager) című cikket.
+Ha a jelentéskészítő kiszolgáló adatbázisát egy távoli számítógépen szeretné létrehozni, akkor úgy kell konfigurálnia a kapcsolatot, hogy az egy tartományi felhasználói fiókot vagy pedig egy hálózati hozzáféréssel rendelkező szolgáltatási fiókot használjon. Ha úgy dönt, hogy egy távoli SQL Server-példányt használ, fontolja meg alaposan, hogy a jelentéskészítő kiszolgáló mely hitelesítő adatokkal kapcsolódjon az SQL Server-példányhoz. További információkért tekintse meg a [Jelentéskészítő kiszolgáló adatbázis-kapcsolatának konfigurációja](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager) című cikket.
 
 ## <a name="considerations"></a>Megfontolandó szempontok
 A Power BI jelentéskészítő kiszolgáló az alapvető beállításokat a működéséhez szükséges alapértelmezett értékekkel telepíti. Ehhez a következő követelményeknek kell teljesülniük:
 
 * Rendelkezésre kell állnia egy SQL Server adatbázismotornak a jelentéskészítő kiszolgáló telepítése után, de még a jelentéskészítő kiszolgáló adatbázisának konfigurációja előtt. A jelentéskészítő kiszolgáló adatbázisát, amelyet a Reporting Services konfigurációkezelő fog létrehozni, az adatbázismotor-példány üzemelteti. A tényleges telepítési felületen nem szükséges az adatbázismotor megadása.
-* A telepítés futtatásához használt felhasználói fiók tagja kell hogy legyen a helyi Rendszergazdák csoportnak.
+- A [Reporting Services Features Supported by the Editions of SQL Server](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) (Az SQL Server kiadásai által támogatott Reporting Services-funkciók) az SQL Server kiadásai közötti különbségeket ismerteti.
+* A telepítés futtatásához használt felhasználói fióknak a helyi Rendszergazdák csoport tagjának kell lennie.
 * A Reporting Services konfigurációkezelőhöz használt felhasználói fióknak engedéllyel kell rendelkeznie adatbázisok létrehozásához és az adatbázisokhoz történő hozzáféréshez a jelentéskészítő kiszolgáló adatbázisát üzemeltető adatbázismotor-példányon.
 * A telepítésnek működnie kell az alapértelmezett értékekkel, hogy bejegyezhesse a jelentéskészítő kiszolgáló és a webes portál elérését biztosító URL-címeket. Ezek az értékek a 80-as port, egy erős helyettesítő, és a **ReportServer** és **Reports** formátumú virtuális könyvtárnevek.
 
 ## <a name="read-only-domain-controller-rodc"></a>Írásvédett tartományvezérlő (RODC)
- A jelentéskészítő kiszolgálót csak egy írásvédett tartományvezérlővel (RODC-vel) rendelkező környezetben telepítheti, a Reporting Servicesnek azonban a megfelelő működés érdekében hozzáféréssel kell rendelkeznie egy írható tartományvezérlőhöz. Ha a Reporting Services csak egy írásvédett tartományvezérlőhöz (RODC-hez) fér hozzá, akkor a szolgáltatás adminisztrálása során hibákat tapasztalhat.
+ A jelentéskészítő kiszolgálót telepítheti olyan környezetben, amely írásvédett tartományvezérlővel (RODC) rendelkezik. A Reporting Servicesnek azonban a megfelelő működéshez hozzáféréssel kell rendelkeznie egy írható és olvasható tartományvezérlőhöz. Ha a Reporting Services csak egy írásvédett tartományvezérlőhöz (RODC-hez) fér hozzá, akkor a szolgáltatás adminisztrálása során hibákat tapasztalhat.
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Power BI-jelentések és az Analysis Services élő kapcsolatai
 Az élő kapcsolatokat táblázatos vagy többdimenziós példányokhoz használhatja. A megfelelő működéshez megfelelő verziójú és kiadású Analysis Services-kiszolgáló szükséges.
@@ -69,7 +70,7 @@ Az élő kapcsolatokat táblázatos vagy többdimenziós példányokhoz használ
 [Mi a Power BI jelentéskészítő kiszolgáló?](get-started.md)  
 [Rendszergazdai áttekintés](admin-handbook-overview.md)  
 [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
-[A Jelentéskészítő telepítése](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[A Jelentéskészítő letöltése](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Az SQL Server Data Tools (SSDT) letöltése](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

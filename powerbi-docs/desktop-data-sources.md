@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a5a4f6532fe127fe01b699ee9d9e89693fdb369e
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: a49b433af32e6c0f03d43333a424864c5463ddd3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336898"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619816"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 A Power BI Desktoppal különböző forrásokból származó adatokhoz csatlakozhat. Az elérhető adatforrások teljes listája az oldal alján látható.
@@ -30,8 +30,6 @@ A **Továbbiak...** lehetőség a **Leggyakoribb** menüből való kiválasztás
 
 > [!NOTE]
 > A Power BI csapata folyamatosan bővíti a **Power BI Desktop** és a **Power BI szolgáltatás** számára elérhető adatforrásokat. Ezért gyakran láthatja majd a fejlesztés alatt álló adatforrások előzetes verzióit *bétaverzió* vagy *előzetes verzió* felirattal. A *bétaverzió* vagy *előzetes verzió* felirattal ellátott adatforrások támogatása és működése korlátozott, használatuk éles környezetben nem ajánlott.
-> 
-> 
 
 ## <a name="data-sources"></a>Adatforrások
 Az adattípusok a következő kategóriákba vannak csoportosítva:
@@ -80,15 +78,14 @@ Az **Adatbázis** kategória a következő adatkapcsolatokat biztosítja:
 * Impala
 * Google BigQuery
 * Snowflake
+* BI-összekötő
+* Exasol
 * Dremio (bétaverzió)
-* Exasol (bétaverzió)
 * Jethro (bétaverzió)
 * Kyligence Enterprise (bétaverzió)
 
 > [!NOTE]
 > Egyes adatbázis-összekötőket engedélyezni kell a **Fájl > Lehetőségek és beállítások > Beállítások** elem, majd az **Előzetes verziójú funkciók** lehetőség kiválasztásával és az adott összekötő engedélyezésével. Ha a fentiekben említett összekötők nem jelennek meg itt, és használni kívánja őket, ellenőrizze az **Előzetes verziójú funkciók** beállításait. Vegye figyelembe azt is, hogy a *bétaverzió* vagy *előzetes verzió* felirattal ellátott adatforrások támogatása és működése korlátozott, használatuk éles környezetben nem ajánlott.
-> 
-> 
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Adatbázis** kategória ki van választva.
 
@@ -111,11 +108,11 @@ Az **Azure** kategória a következő adatkapcsolatokat biztosítja:
 * Azure Blob-tároló
 * Azure Table Storage
 * Azure Cosmos DB (bétaverzió)
-* Azure Data Lake Store
+* Azure Data Lake Storage
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight interaktív lekérdezés
-* Azure KustoDB (bétaverzió)
+* Azure Data Explorer (bétaverzió)
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Azure** kategória ki van választva.
 
@@ -131,7 +128,8 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * Dynamics 365 Business Central (helyszíni)
 * Common Data Service for Apps (bétaverzió)
 * Microsoft Azure – használati elemzés (bétaverzió)
-* Visual Studio Team Services (bétaverzió)
+* Azure DevOps (bétaverzió)
+* Azure DevOps Server (bétaverzió)
 * Salesforce-objektumok
 * Salesforce-jelentések
 * Google Analytics
@@ -187,8 +185,6 @@ A következő képen a **Lekérdezés** ablak látható, amelyen az **Egyéb** k
 
 > [!NOTE]
 > Jelenleg nem lehetséges olyan egyéni adatforrásokhoz csatlakozni, amelyek védelmét az Azure Active Directory biztosítja.
-> 
-> 
 
 ## <a name="connecting-to-a-data-source"></a>Csatlakozás adatforráshoz
 Egy adott adatforráshoz való csatlakozáshoz válassza ki azt a **Lekérdezés** ablakban, majd válassza a **Kapcsolódás** lehetőséget. A következő képen a **Web** lehetőség van kiválasztva az **Egyéb** adatkapcsolat-kategórián belül.

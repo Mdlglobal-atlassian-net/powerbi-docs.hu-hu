@@ -61,14 +61,14 @@ A későbbiekben újraindíthatja az *átjáró Windows-szolgáltatást* a felha
 
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
-## <a name="support-for-tls-1112"></a>A TLS 1.1/1.2 támogatása
+## <a name="support-for-tls-12"></a>A TLS 1.2 támogatása
 
-A helyszíni adatátjáró alapértelmezés szerint a Transport Layer Security (TLS) 1.1-es vagy 1.2-es verzióját használja a **Power BI szolgáltatással** folytatott kommunikációra. A helyszíni adatátjáró korábbi verziói a TLS 1.0-t használták alapértelmezés szerint. 2018. március 15-étől a TLS 1.0 támogatása megszűnik, így az átjáró nem fog tudni kommunikálni a **Power BI szolgáltatással** a TLS 1.0 használatával. Frissítse helyszíni adatátjáróit, hogy az átjárók ezután is megfelelően működjenek.
+A helyszíni adatátjáró alapértelmezés szerint a Transport Layer Security (TLS) 1.2-es verzióját használja a Power BI szolgáltatással folytatott kommunikációra. Ahhoz, hogy az átjárók teljes adatforgalma a TLS 1.2-es verzióját használja, esetleg meg kell adnia vagy módosítania kell a következő beállításkulcsokat az átjárószolgáltatást futtató gépen:
 
-Fontos megjegyezni, hogy november 1. előtt a helyszíni adatátjáró továbbra is támogatja a TLS 1.0-t, és azt az átjáró tartalékként használja. Ahhoz, hogy biztosítsa, hogy az átjárók teljes adatforgalma a TLS 1.1-es vagy 1.2-es verzióját használja (és hogy megakadályozza a TLS 1.0 használatát az átjárón), a következő beállításkulcsokat kell megadnia vagy módosítania az átjárószolgáltatáson futó gépen:
-
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
 
 > [!NOTE]
 > A beállításkulcsok hozzáadásával vagy módosításával a módosítások érvényesek lesznek az összes .NET-alkalmazásra. További információkat a TLS-t vagy az egyéb alkalmazásokat érintő beállításjegyzék-módosításokról [a Transport Layer Security (TLS) beállításjegyzék-módosításaival](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) kapcsolatos cikkben olvashat.

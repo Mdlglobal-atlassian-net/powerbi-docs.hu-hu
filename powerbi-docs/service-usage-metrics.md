@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4c10a0ffdf11829d8faa15ea14be136922c86382
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 7b511a28f056df268216552f7d075a88c047f9f3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545032"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619839"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Használati metrikák irányítópultokhoz és jelentésekhez
 
@@ -69,9 +69,9 @@ Ha mélyen kívánja elemezni a jelentés adatait, vagy saját jelentéseket kí
     > [!NOTE]
     > Ha egy használati metrikai jelentésből származó csempét hozzáad egy irányítópulthoz, akkor az az irányítópult már nem adható hozzá alkalmazáshoz vagy tartalomcsomaghoz.
 
-## <a name="what-metrics-are-reported"></a>Milyen metrikák szerepelnek a jelentésben?
+## <a name="which-metrics-are-reported"></a>Melyik metrikák szerepelnek a jelentésben?
 
-| Metrika | Irányítópult | Jelentés | Leírás |
+| Mérték | Irányítópult | Jelentés | Leírás |
 | --- | --- | --- | --- |
 | Hozzáférési mód szerint |igen |igen |Hogyan érik el a felhasználók a tartalmat. Három mód lehetséges: a felhasználók elérhetik a jelentést vagy irányítópultot azáltal, hogy egy [alkalmazás munkaterületének](consumer/end-user-experience.md) tagjai, hogy a tartalom [meg van osztva velük](service-share-dashboards.md), vagy egy tartalomcsomag/alkalmazás telepítésével.  Megjegyzendő, hogy az alkalmazáson keresztül történő hozzáférés "tartalomcsomagként” számítódik be. |
 | Platform szerint |igen |igen |A Power BI szolgáltatáson (powerbi.com) keresztül, vagy mobileszközzel érték el az irányítópultot vagy jelentést? Mobileszköznek számít minden iOS-, Android- és Windows-alkalmazásunk is. |
@@ -162,6 +162,15 @@ Amikor a teljes szervezet számára letiltja a használati metrikákat, a rendsz
 A Power BI elérhető különálló országos felhőkben. Ezek a felhők ugyanolyan szintű biztonságot, adatvédelmet, megfelelőséget és átláthatóságot kínálnak, mint a Power BI globális verziója, de a szolgáltatásnyújtás, az adatok tárolási helye, a hozzáférés és a vezérlés terén a helyi jogszabályoknak megfelelő egyedi modellel kombinálva. Ennek a helyi jogszabályok szerint kialakított egyedi modellnek köszönhetően a használati metrikák az országos felhőkben nem állnak rendelkezésre. További információért lásd az [szuverén felhők](https://powerbi.microsoft.com/en-us/clouds/) weblapját.
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
+
+Fontos tisztában lenni a használati metrikák és az auditnaplók összehasonlításakor jelentkező különbségekkel és magyarázatukkal. Az *auditnaplók* a Power BI szolgáltatástól származó adatokból vannak gyűjtve, a *használati metrikák* viszont az ügyfélen. Ennek a különbségnek a következtében a tevékenységek összesített száma az auditnaplókban és a használati metrikákban nem mindig egyezik. Ennek okai a következők:
+
+* A használati metrikák olykor kevesebb tevékenységet számlálnak az inkonzisztens hálózati kapcsolatok, reklámblokkolók vagy más körülmények miatt, amelyek megzavarják az események elküldését az ügyfélről.
+* A használati metrikák nem tartalmaznak bizonyos nézettípusokat. Erről már volt szó a cikk korábbi részében.
+* A használati metrikák olykor több tevékenységet számlálnak olyan helyzetekben, amikor az ügyfél úgy frissül, hogy nem kell kérelmet visszaküldenie a Power BI szolgáltatásnak.
+
+
+A használati metrikák és az auditnaplók esetleges eltérésein kívül a használati metrikákkal kapcsolatos alábbi kérdések és válaszok is hasznosak lehetnek felhasználók és rendszergazdák számára:
 
 K:    Nem tudok használati metrikát futtatni egy irányítópulton vagy jelentésen. V:    A használati metrikák csak olyan tartalmakon tekinthetők meg, amelyeknek Ön a tulajdonosa, vagy amelyekhez szerkesztési engedélye van.
 

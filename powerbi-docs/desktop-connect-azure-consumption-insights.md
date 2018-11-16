@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05a84d34bf82be99eb52fccfb6318142f7d47de1
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: c770423b81c6d5cd4135539d8d44c3cc46f8b6fe
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329914"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619609"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Kapcsolódás az Azure Consumption Insightshoz a Power BI Desktopban (bétaverzió)
 Az **Azure Consumption Insights** összekötő használatával a **Power BI Desktopból** kapcsolódhat az Azure-hoz, és részletes adatokat és információkat kérhet le cége Azure-szolgáltatáshasználatáról. Továbbá mértékeket, egyéni oszlopokat és vizualizációkat hozhat létre, amelyekkel jelentéseket készíthet és információkat oszthat meg cége Azure-használatáról. Az **Azure Consumption Insights** összekötő jelenleg bétaverzióban van, és később még változhat.
@@ -49,9 +49,20 @@ Következő lépésként adja meg a *Hozzáférési kulcsát* a csatlakozáshoz.
   
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
-Miután megadta a *hozzáférési kulcsát* és rákattintott a **Csatlakozás** gombra, megjelenik a **Kezelő** ablak, rajta az Ön számára elérhető négy táblával: *Summary* (Összefoglalás), *Usage* (Használat), *PriceSheet* (Árlista) és *Marketplace*. Ha valamelyik tábla jelölőnégyzetét bejelöli, megjelenik egy előnézet. Több táblát is kiválaszthat a nevek melletti jelölőnégyzetekkel, majd kattintson a **Betöltés** gombra.
+Miután megadta *hozzáférési kulcsát*, és kiválasztotta a **Csatlakozás** lehetőséget, megjelenik a **Kezelő** ablak, rajta az Ön számára elérhető kilenc táblával: 
+* **Budgets**: Költségvetési részleteket tartalmaz a tényleges költségek vagy használat és a költségkeret összehasonlításához. 
+* **MarketPlace**: Használatalapú Azure Marketplace-díjakat tartalmaz.
+* **PriceSheets**: Egy regisztráció mérőnként érvényesíthető díjait tartalmazza.
+* **RICharges**: A fenntartott példányaival kapcsolatos utolsó 24 havi díjakat tartalmazza.
+* **RIRecommendations_Single**: Fenntartott példányok vásárlására vonatkozó javaslatokat tartalmaz az egy előfizetésen belül 7, 30 vagy 60 napon át tapasztalt használati trendek alapján.
+* **RIRecommendations_Shared**: Fenntartott példányok vásárlására vonatkozó javaslatokat tartalmaz az összes előfizetésben 7, 30 vagy 60 napon át tapasztalt használati trendek alapján.
+* **RIUsage**: Az utolsó hónapra vonatkozó fogyasztási részleteket tartalmaz meglévő fenntartott példányairól.
+* **Summaries**: Havi összegzést nyújt az egyenlegekről, új vásárlásokról, az Azure Marketplace-szolgáltatások díjairól, módosításokról és kerettúllépési díjakról.
+* **UsageDetails**: Egy előfizetés fogyasztott mennyiségeinek és a becsült díjainak részletezését tartalmazza.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04.png)
+Ha valamelyik tábla jelölőnégyzetét bejelöli, megjelenik egy előnézet. Több táblát is kiválaszthat a nevek melletti jelölőnégyzetekkel, majd kattintson a **Betöltés** gombra.
+
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04b.png)
 
 > [!NOTE]
 > A *Summary* és *PriceSheet* táblák csak a beléptetési szintű API-kulcsokkal elérhetők. A táblák alapértelmezés szerint az aktuális havi *használat* és *árlista* adatait tartalmazzák. A *Summary* és a *Marketplace* táblák nem korlátozódnak az aktuális hónapra.

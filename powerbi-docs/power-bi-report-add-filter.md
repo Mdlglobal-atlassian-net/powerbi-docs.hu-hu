@@ -1,25 +1,27 @@
 ---
-title: Szűrő hozzáadása vizualizációhoz, oldalhoz, részletezéshez vagy jelentéshez a Power BI-ban
-description: Oldalszűrő, vizualizációszűrő, jelentésszűrő vagy részletezési szűrő hozzáadása egy jelentéshez a Power BI-ban
+title: Szűrő hozzáadása Power BI-jelentéshez
+description: Oldalszűrő, vizualizációszűrő vagy jelentésszűrő hozzáadása egy jelentéshez a Power BI-ban
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/28/2018
+ms.date: 11/08/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c70e29bf7dcd5a307cbcb4762595716595dfa523
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: c50afced257df1878a0a695a37d9401d9eda01b7
+ms.sourcegitcommit: ea77827127e0781f1d6877c0a3078aec7eb6694a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973281"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51611152"
 ---
 # <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Szűrő hozzáadása a Power BI szolgáltatás jelentéseihez (Szerkesztési nézetben)
 
 Ez a cikk ismerteti, hogyan adhat hozzá oldalszűrőt, vizualizációszűrőt, jelentésszűrőt vagy részletezési szűrőt egy jelentéshez a Power BI-ban. A cikkben található példák a Power BI szolgáltatásban szerepelnek. Az elvégzendő lépések csaknem teljesen azonosak a Power BI Desktop alkalmazásban is.
+
+**Tudta?** A Power BI új szűrési felülettel rendelkezik, egyelőre előzetes verzióban. Bővebben is tájékozódhat [a Power BI-jelentésekben elérhető új szűrési felületről](power-bi-report-filter-preview.md).
 
 ## <a name="filters-in-editing-view-or-reading-view"></a>Szűrők a Szerkesztő nézetben és az Olvasó nézetben
 A jelentésekkel két nézetben végezhet műveleteket: az Olvasó nézetben és a Szerkesztő nézetben. Az elérhető szűrési képességek az éppen használatban lévő nézettől függnek. További információt a [Szűrők és kiemelés a Power BI-jelentésekben](power-bi-reports-filters-and-highlighting.md) című cikkben találhat.
@@ -75,7 +77,7 @@ Ez a folyamat a Kiskereskedelmi elemzési mintát használja, ha le szeretné t�
 
 Most vegyünk fel egy új mezőt a vizualizációhoz vizualizáció szintű szűrőnek.
    
-1. A Mezők panelen válassza ki az új vizualizáció szintű szűrőként felvenni kívánt mezőt, és húzza a **Vizualizációszint szűrői területre**.  Ebben a példában a **District Manager** (kerületi vezető) mezőt húzzuk a **Vizualizációszint szűrői** gyűjtőbe, rákeresünk az **an** kifejezésre, és kiválasztjuk a három vezetőt. 
+1. A Mezők panelen válassza ki az új vizualizáció szintű szűrőként felvenni kívánt mezőt, és húzza a **Vizualizációszint szűrői területre**.  Ebben a példában a **District Manager** (területi vezető) mezőt húzzuk a **Vizualizációszint szűrői** gyűjtőbe, rákeresünk az **an** kifejezésre, és kiválasztjuk a három vezetőt. 
      
     ![](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
@@ -109,7 +111,7 @@ A Power BI szolgáltatás és a Power BI Desktop részletezési funkciójával o
 ### <a name="create-a-drillthrough-filter"></a>Részletezési szűrő létrehozása
 Annak érdekében, hogy követni tudja a lépéseket, nyissa meg az ügyfél-jövedelmezőségi mintát Szerkesztési nézetben. Tegyük fel, hogy egy olyan oldalt szeretne, amely a vezetői üzleti területekre összpontosít.   
 
-1. Adjon a jelentéshez egy új, **Csapatvezető** nevű oldalt. Ez lesz a részletezés *céloldala*.
+1. Adjon a jelentéshez egy új, **Csapatvezető** nevű oldalt. Ez az oldal lesz a részletezés *célja*.
 2. Adjon hozzá vizualizációkat, amelyek nyomon követik a csapatvezetők üzleti területeinek fő mérőszámait.    
 3. Vegye fel a Részletezési szűrők szakaszba a **Vezető > Vezető neve** elemet.    
    
@@ -144,7 +146,7 @@ Lássuk, hogy működik a részletezési szűrő.
 
 - Bizonyos helyzetekben a vizualizációszintű és az oldalszintű szűrő különböző eredményt adhat.  Például amikor vizualizációszintű szűrőt ad meg, a Power BI az összesített eredményeket szűri.  Az alapértelmezett összesítés a Sum, de [az összesítés típusa módosítható](service-aggregates.md).  
 
-    Amikor ezután oldalszintű szűrőt ad meg, a Power BI összesítés nélkül végzi el a szűrést.  Ennek az az oka, hogy egy oldalon több, különböző típusú összesítést használó vizualizáció is lehet.  Így a rendszer minden egyes adatsorra külön alkalmazza a szűrőt.
+    Amikor ezután oldalszintű szűrőt ad meg, a Power BI összesítés nélkül végzi el a szűrést.  Azért nem összegez, mert egy oldalon több, különböző típusú összesítést használó vizualizáció is lehet.  Így a rendszer minden egyes adatsorra külön alkalmazza a szűrőt.
 
 - Ha nem látja a Mezők panelt, győződjön meg arról, hogy a jelentés [Szerkesztési nézetében](service-interact-with-a-report-in-editing-view.md) van.    
 - Ha nagy mennyiségű módosítást végzett a szűrőkön, és szeretne visszatérni a jelentés készítőjének alapértelmezett beállításaihoz, válassza a **Visszaállítás alapértelmezettre** lehetőséget a felső menüsoron.

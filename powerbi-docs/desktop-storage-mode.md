@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: df61b9c68407ef0d00d1d5981c57021e7659cfff
-ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
+ms.openlocfilehash: 18d5b2ca504ec3533e2ded0e5480885ea862fb3a
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49359746"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619494"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Tárolási mód a Power BI Desktopban (előzetes verzió)
 
@@ -43,16 +43,6 @@ A Power BI Desktop tárolási mód beállítása három kapcsolódó funkció eg
 
 * **Tárolási mód**: Mostantól megadható, hogy mely vizualizációk igényelnek a háttér-adatforrásokba irányuló lekérdezéseket. Azok a vizualizációk, amelyekhez nincs szükség lekérdezésre, importálva lesznek még akkor is, ha DirectQuery-alapúak. Ez a funkció segíti a teljesítmény javulását, és csökkenti a háttérrendszerek leterheltségét. Korábban még az egyszerű vizualizációk, például a szeletelők is kezdeményeztek a háttérbeli forrásokba irányuló lekérdezéseket. A tárolási módról további információt ebben a cikkben talál.
 
-## <a name="enable-the-storage-mode-preview-feature"></a>Az előzetes verziójú tárolási mód funkció engedélyezése
-
-A tárolási mód előzetes verzióban érhető el, és a Power BI Desktopban engedélyezni kell. A tárolási mód engedélyezéséhez válassza a **Fájl** > **Lehetőségek és beállítások** > **Lehetőségek** > **Előzetes verziójú funkciók** lehetőséget, majd jelölje be az **Összetett modellek** jelölőnégyzetet. 
-
-![Az „Előzetes verziójú funkciók” panel](media/desktop-composite-models/composite-models_02.png)
-
-A funkció engedélyezéséhez indítsa újra a Power BI Desktopot.
-
-![A „Funkció újraindítást igényel” ablak](media/desktop-composite-models/composite-models_03.png)
-
 ## <a name="use-the-storage-mode-property"></a>A tárolási mód tulajdonság használata
 
 A tárolási mód egy tulajdonság, amely a modell minden táblájához beállítható. A tárolási mód beállításához a **Mezők** panelen kattintson a jobb gombbal a táblára, amelynek a tulajdonságait be szeretné állítani, majd válassza a **Tulajdonságok** lehetőséget.
@@ -75,19 +65,7 @@ Egy tábla **Importálás** értékűre állítása *visszafordíthatatlan* műv
 
 ## <a name="constraints-on-directquery-and-dual-tables"></a>A DirectQuery és Kettős táblákra vonatkozó megkötések
 
-A Kettős táblákra ugyanazok a megkötések vonatkoznak, mint a DirectQuery-táblákra. Ezek közé tartozik az M átalakítások korlátozása és a DAX-függvények korlátozott használata a számított oszlopokban. Bővebb információért olvassa el [a DirectQuery használatának következményeit](desktop-directquery-about.md#implications-of-using-directquery) bemutató cikket.
-
-## <a name="relationship-rules-on-tables-with-different-storage-modes"></a>Eltérő tárolási módú táblákra vonatkozó kapcsolati szabályok
-
-A kapcsolatoknak eleget kell tenniük a kapcsolódó táblák tárolási módja alapján meghatározott szabályoknak. Ez a fejezet érvényes kapcsolatokra mutat példákat. További információk: [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md).
-
-Egyetlen adatforrással rendelkező adathalmaz esetén az alábbi összetételű *egy-a-többhöz* kapcsolatok érvényesek:
-
-| Tábla a *több* oldalon | Tábla az *egy* oldalon |
-| ------------- |----------------------| 
-| Kettős          | Kettős                 | 
-| Importálás        | Importálás vagy kettős       | 
-| DirectQuery   | DirectQuery vagy kettős  | 
+A Kettős táblákra a DirectQuery-táblákéval azonos funkcionális megkötések érvényesek. Ezek közé tartozik az M átalakítások korlátozása és a DAX-függvények korlátozott használata a számított oszlopokban. Bővebb információért olvassa el [a DirectQuery használatának következményeit](desktop-directquery-about.md#implications-of-using-directquery) bemutató cikket.
 
 ## <a name="propagation-of-dual"></a>Kettős mód propagálása
 Tekintsük meg az alábbi egyszerű modellt, amelyben minden tábla egyetlen, az Importálást és a DirectQuery-t is támogató forrásból származik.
@@ -98,14 +76,11 @@ Tegyük fel, hogy kezdetben a modell minden táblája DirectQuery beállítású
 
 ![Tárolási mód figyelmeztetési ablaka](media/desktop-storage-mode/storage-mode_05.png)
 
-A dimenziótáblák (*Customer*, *Date* és *Geography*) beállításának **Kettős** értékűnek kell lennie, hogy eleget tegyenek a fent leírt kapcsolati szabályoknak. Ezeket a táblákat nem kell előre **Kettős** tárolási módra állítani, egyetlen művelettel átállíthatók.
+A dimenziótáblák (*Customer*, *Geography* és *Date*) beállíthatók **Kettős** típusúra, hogy az adathalmazban csökkenjen a gyenge kapcsolatok száma, és javuljon a teljesítmény. Ahol az összekapcsolás logikája nem küldhető le a forrásrendszerekhez, ott a gyenge kapcsolatokban általában legalább egy DirectQuery-tábla is szerepel. Ennek elkerülésében segít az a tény, hogy a **Kettős** típusú táblák DirectQuery és Importálás típusú táblaként is viselkedhetnek.
 
 A propagálási logika úgy van megtervezve, hogy segítsen a sok táblát tartalmazó modellek esetében. Tegyük fel, hogy a modellje 50 táblát tartalmaz, és csak bizonyos tény- (tranzakciós) táblákat kell gyorsítótárazni. A Power BI Desktop logikája kiszámítja a dimenziótáblák legszűkebb halmazát, amelyet **Kettős** értékűre kell beállítani, így ezt Önnek nem kell megtennie.
 
 A propagálási logika csak az **egy-a többhöz** kapcsolatok „egy” oldalát járja be.
-
-* A *Customer* tábla **Importálás** értékűre állítása (a *SurveyResponse* módosítása helyett) nem megengedett, mert kapcsolatban áll a *Sales* és a *SurveyResponse* DirectQuery-táblával.
-* A *Customer* tábla **Kettős** értékűre állítása (a *SurveyResponse* módosítása helyett) megengedett. A propagálási logika emellett a *Geography* táblát beállítja **Kettős** értékűre.
 
 ## <a name="storage-mode-usage-example"></a>Példa a tárolási mód használatára
 Folytatva az előző szakaszban megkezdett példát, tegyük fel, hogy a következő tárolásimód-beállításokat alkalmaztuk:
@@ -191,4 +166,3 @@ Az összetett modellekkel és a DirectQueryvel kapcsolatos további információ
 * [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md)
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások a Power BI-ban](desktop-directquery-data-sources.md)
-

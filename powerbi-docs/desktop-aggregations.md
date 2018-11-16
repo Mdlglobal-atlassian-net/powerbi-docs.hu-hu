@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3e94dc516f41d764394828309ba4b612083d4583
-ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
+ms.openlocfilehash: e88e60bc1745a08ea53c7336f6f1fb9e4cda1ec8
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49359723"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619724"
 ---
 # <a name="aggregations-in-power-bi-desktop-preview"></a>Aggregációk a Power BI Desktopban (előzetes verzió)
 
@@ -25,15 +25,15 @@ A Power BI-ban az **aggregációk** olyan big data-elemzéseket tesznek lehetőv
 
 Az alábbi lista az **aggregációk** használatának előnyeit tartalmazza:
 
-* **Lekérdezési teljesítmény nagy adatkészletek esetén** – amikor a felhasználók Power BI-jelentések vizualizációival dolgoznak, DAX-lekérdezések lesznek továbbítva az adathalmazhoz. Az adatok gyorsítótárazását az aggregált szinten végezheti, így a részletességi szinten szükséges erőforrásoknak töredékét felhasználva gyorsíthatja fel a lekérdezéseket. Úgy oldhat fel big data jellegű adatokat, ahogy korábban nem volt lehetséges.
+* **Lekérdezési teljesítmény big data típusú adatok esetén** – amikor a felhasználók Power BI-jelentések vizualizációival dolgoznak, DAX-lekérdezések lesznek továbbítva az adathalmazhoz. Az adatok gyorsítótárazását az aggregált szinten végezheti, így a részletességi szinten szükséges erőforrásoknak töredékét felhasználva gyorsíthatja fel a lekérdezéseket. Úgy oldhat fel big data jellegű adatokat, ahogy korábban nem volt lehetséges.
 * **Adatfrissítés optimalizálása** – az adatok gyorsítótárazása az aggregált szinten történik, így csökkentheti a gyorsítótárak méretét és a frissítések időigényét. Gyorsabban teheti elérhetővé az adatokat a felhasználók számára.
 * **Kiegyensúlyozott architektúrák megvalósítása** – engedélyezheti, hogy az aggregált lekérdezések kezelése hatékonyan, a Power BI memóriában tárolt gyorsítótárában történjen. Korlátozhatja az adatforrásokhoz DirectQuery-módban érkező lekérdezéseket, hogy az egyidejűségi korláton belül maradhasson. Azok a lekérdezések, amelyek átjutnak, többnyire szűrt tranzakciószintű lekérdezések, amelyeket az adattárházak és a big data-rendszerek általában könnyen kezelnek.
 
 ### <a name="table-level-storage"></a>Táblaszintű tárolás
-A táblaszintű tárolás használata általában az aggregációk funkcióval együtt történik. További információkért tekintse meg a [Tárolási mód a Power BI Desktopban (előzetes verzió)](desktop-storage-mode.md) című cikket.
+A táblaszintű tárolás használata általában az aggregációk funkcióval együtt történik. További információkért tekintse meg a [Tárolási mód a Power BI Desktopban](desktop-storage-mode.md) című cikket.
 
 ### <a name="data-source-types"></a>Adatforrástípusok
-Az aggregációk használata dimenziós modellek adatforrásaival történik, például adattárházakkal és data martokkal, illetve Hadoop-alapú big data-forrásokkal. Ez a cikk azt ismerteti, hogy miben különbözik az egyes adatforrások modellezése a Power BI-ban.
+Az aggregációk használata dimenziós modellek adatforrásaival történik, például adattárházakkal, data martokkal, és Hadoop-alapú big data-forrásokkal. Ez a cikk azt ismerteti, hogy miben különbözik az egyes adatforrások modellezése a Power BI-ban.
 
 A Power BI összes Importált forrásán és (nem többdimenziós) DirectQuery-forrásán használhatók aggregációk.
 
@@ -57,7 +57,7 @@ Tekintsük meg az alábbi modellt, amely egyetlen adatforrásból származik. Te
 
 Ehelyett inkább létrehozunk egy **Sales Agg** (Aggr. értékesítések) nevű aggregációs táblát. Ez részletesebb, mint a **Sales** (Értékesítések) tábla, ezért sokkal kevesebb sort fog tartalmazni. A sorok száma meg fog egyezni a **SalesAmount** (Értékesítési összeg) **CustomerKey** (ÜgyfélAzonosító), **DateKey** (DátumAzonosító) és **ProductSubcategoryKey** (TermékAlkategóriaAzonosító) attribútumok szerint csoportosított összegével. A több milliárd sor helyett így csak több millió sor lesz, ami sokkal könnyebben kezelhető.
 
-Tegyük fel, hogy az üzleti értékek szempontjából fontos lekérdezések a következő dimenziós táblákat használják a leggyakrabban. Ezek azok a táblák, amelyek a **Sales Agg** (Aggr. értékesítések) táblát a *one-to-many* (egy-a-többhöz) vagy a *many-to-one* (több-az-egyhez) kapcsolattal tudják szűrni. Aggregációk esetén az egyéb kapcsolattípusok, például a *many-to-many* (több-a-többhöz) vagy a *multi-source* (több-forrás) nem számítanak.
+Tegyük fel, hogy az üzleti értékek szempontjából fontos lekérdezések a következő dimenziós táblákat használják a leggyakrabban. Ezek azok a táblák, amelyek a **Sales Agg** (Aggr. értékesítések) táblát a *one-to-many* (egy-a-többhöz) vagy a *many-to-one* (több-az-egyhez) kapcsolattal tudják szűrni.
 
 * Földrajzi hely
 * Ügyfél
@@ -77,7 +77,7 @@ Folytassuk a példánkkal. A lekérdezések felgyorsításához a **Sales Agg** 
 
 ![a tárolási mód beállítása](media/desktop-aggregations/aggregations_04.jpg)
 
-Ekkor megjelenik az alábbi párbeszédablak, amely arról tájékoztat, hogy a kapcsolódó dimenziós táblák tárolási módja **Dual** (Kettős) lesz. 
+Ekkor megjelenik az alábbi párbeszédablak, amely arról tájékoztat, hogy a kapcsolódó dimenziós táblák beállíthatók **Dual** (Kettős) tárolási módra. 
 
 ![tárolási mód párbeszédablaka](media/desktop-aggregations/aggregations_05.jpg)
 
@@ -88,7 +88,23 @@ Ha a kapcsolódó dimenziós tábláknak **Dual** (Kettős) a tárolási módjuk
 
 A **Dual** (Kettős) tárolási módról további információt a [tárolási mód](desktop-storage-mode.md) cikkében találhat.
 
-> Megjegyzés: A **Sales Agg** (Aggr. értékesítések) tábla rejtett. Az aggregációs táblákat el kell rejteni az adatkészlet felhasználói elől. A felhasználók és a lekérdezések nem az aggregációs, hanem a részlettáblára hivatkoznak, így nem is kell tudniuk arról, hogy létezik aggregációs tábla.
+### <a name="strong-vs-weak-relationships"></a>Erős és gyenge kapcsolatok összehasonlítása
+A kapcsolatokon alapuló aggregációs találatok erős kapcsolatokat igényelnek.
+
+Erős kapcsolatok többek között az alábbi kombinációk, amennyiben mindkét tábla *egyetlen forrásból* származik.
+
+| Tábla a *több oldalon | Tábla az *egy* oldalon |
+| ------------- |----------------------| 
+| Kettős          | Kettős                 | 
+| Importálás        | Importálás vagy kettős       | 
+| DirectQuery   | DirectQuery vagy kettős  | 
+
+A *források közötti* kapcsolatok csak abban az esetben számítanak erősnek, ha mindkét tábla tárolási módja Importált. A több-a-többhöz kapcsolatok mindig gyengének minősülnek.
+
+Az olyan, *források közötti* aggregációs találatokat, amelyek nem függnek kapcsolatoktól, az oszlop szerinti csoportosításon alapuló aggregációról szóló későbbi bekezdés ismerteti.
+
+### <a name="aggregation-table-is-hidden"></a>Az aggregációs tábla rejtett
+A **Sales Agg** (Aggr. értékesítések) tábla rejtett. Az aggregációs tábláknak ajánlott mindig rejtettnek lenniük az adathalmaz fogyasztói előtt. A felhasználók és a lekérdezések nem az aggregációs, hanem a részlettáblára hivatkoznak, így nem is kell tudniuk arról, hogy létezik aggregációs tábla.
 
 ### <a name="manage-aggregations-dialog"></a>Az Aggregációk kezelése párbeszédablak
 A következő lépésben meghatározzuk az aggregációkat. Kattintson a jobb gombbal a **Sales Agg** (Aggr. értékesítések) táblára, majd válassza ki a helyi menüjéből az **Aggregációk kezelése** lehetőséget.
@@ -277,4 +293,3 @@ A DirectQuery-vel kapcsolatos cikkek:
 
 * [DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások a Power BI-ban](desktop-directquery-data-sources.md)
-

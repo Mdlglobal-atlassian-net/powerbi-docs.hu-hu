@@ -7,25 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 799115dc5487a196cbd5d8a2c9dce1603764034a
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: d57d31e87197ee9d764a8d263dd4ee6dd0c75ac3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223375"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619632"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Akadálymentesség a Power BI Desktop-jelentésekben
 A Power BI rendelkezik olyan funkciókkal, amelyek lehetővé teszik a fogyatékkal élők számára, hogy könnyedén használják és kezeljék a Power BI-jelentéseket. A funkciók közé tartozik az a lehetőség, hogy a jelentések billentyűzettel vagy képernyőolvasóval is használhatók legyenek, az oldalak objektumai léptetéssel emelhetők ki, és a jelölők használata átgondolt a vizualizációkban.
 
 ![Különböző jelölők használata a vonal- és területdiagramokhoz az akadálymentesítés érdekében](media/desktop-accessibility/accessibility_01.png)
-
-> [!NOTE]
-> Ezek az akadálymentességi funkciók a **Power BI Desktop** 2017. júniusi és újabb kiadásaiban érthetők el. A jövőbeli kiadásokban további akadálymentességi funkciókat tervezünk bevezetni.
-> 
-> 
 
 ## <a name="consuming-a-power-bi-desktop-report-with-a-keyboard-or-screen-reader"></a>Power BI Desktop-jelentések használata billentyűzet vagy képernyőolvasó segítségével
 A **Power BI Desktop** 2017. szeptemberi kiadásával kezdve a **?** billentyű lenyomásával megjeleníthet egy ablakot, amely ismerteti a **Power BI Desktopban** elérhető akadálymentességi billentyűparancsokat.
@@ -116,12 +111,26 @@ Az akadálymentességi funkciók néhány ismert hibáját és korlátait az al�
 * Ha narrátort használ, akkor néhány korlátozás van érvényben az Adatok megjelenítése adatainak HTML-táblaként való böngészésekor.
 
 ## <a name="keyboard-shortcuts"></a>Billentyűparancsok
+A billentyűparancsok segítenek a Power BI-jelentésekben a billentyűzettel való navigálásban. Az alábbi táblázatok a Power BI-jelentésekben elérhető billentyűparancsokat ismertetik. Ezek a billentyűparancsok a Power BI Desktopon kívül a következő felületeken is működnek:
+
+* Q & A Explorer párbeszédpanel
+* Első lépések párbeszédpanel
+* Fájl menü és Névjegy párbeszédpanel
+* Figyelmeztetés sáv
+* Fájlvisszaállítás párbeszédpanel
+* Rosszallások párbeszédpanel
+
+Az akadálymentesség javítására való folyamatos törekvésünk jegyében a fenti felületek a képernyőolvasókat és a kontrasztos beállításokat is támogatják.
+
+
 ### <a name="frequently-used-shortcuts"></a>Gyakran használt billentyűparancsok
 | Cél           | Billentyűparancs                |
 | :------------------- | :------------------- |
 | Fókusz áthelyezése a szakaszok között  | Ctrl + F6 |
 | Fókusz mozgatása előre a szakaszban | Tab         |
 | Fókusz mozgatása visszafelé a szakaszban | Shift + Tab |
+| Objektum kijelölése, vagy a kijelölésének megszüntetése | Enter vagy szóköz |
+| Objektumok többszörös kijelölése | Ctrl + szóköz |
 
 ### <a name="on-visual"></a>A vizualizációban
 | Cél           | Billentyűparancs                |

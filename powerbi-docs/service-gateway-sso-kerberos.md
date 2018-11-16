@@ -1,5 +1,5 @@
 ---
-title: A Kerberos használata a helyszíni átjárón a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
+title: A Kerberos használata a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 description: Az átjáró konfigurálása a Kerberosszal az egyszeri bejelentkezés engedélyezéséhez a Power BI-ból a helyszíni adatforrásokba
 author: mgblythe
 ms.author: mblythe
@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: b66799df83095ce2104196b076482cc232c9bfae
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: ed9281ba14ad25e2acb347a2394ec729e9d4465c
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101623"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51508037"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
@@ -27,8 +27,10 @@ Jelenleg az alábbi adatforrások használatát támogatjuk:
 
 * SQL Server
 * SAP HANA
+* SAP BW
 * Teradata
 * Spark
+* Impala
 
 Továbbá támogatjuk a [Security Assertion Markup Language (SAML)](service-gateway-sso-saml.md) protokollt használó SAP HANA rendszert is.
 
@@ -158,7 +160,7 @@ Végül az átjáró-szolgáltatást futtató gépen (a példánkban **PBIEgwTes
 
 1. A **Felhasználói jogok kiosztása** lehetőségnél a házirendek listájából válassza ki az **Az operációs rendszer részeként való működés (SeTcbPrivilege)** elemet. Győződjön meg róla, hogy az átjáró-szolgáltatásfiók a fiókok listájában is szerepel.
 
-18. Indítsa újra a **helyszíni adatátjáró** szolgáltatás folyamatát.
+1. Indítsa újra a **helyszíni adatátjáró** szolgáltatás folyamatát.
 
 Az SAP HANA használata esetén javasoljuk, hogy kövesse az alábbi lépéseket, amelyek egy kis teljesítménynövekedést eredményezhetnek.
 
@@ -200,9 +202,11 @@ A cikk korábbi részeiben már volt szó az átjáró helyi szolgáltatásfiók
 
 Most, hogy megismerkedett a Kerberos átjáróval történő működésével, konfigurálhat egy egyszeri bejelentkezést az SAP Business Warehouse (SAP BW) szolgáltatáshoz. Az alábbi lépések azt feltételezik, hogy már [előkészült a Kerberos által korlátozott delegáláshoz](#preparing-for-kerberos-constrained-delegation) a cikkben korábban leírtak szerint.
 
-### <a name="install-sap-bw-components"></a>Az SAP BW összetevőinek telepítése
+Ez az útmutató próbál olyan átfogó lennie, amennyire csak lehetséges. Ha már végrehajtott néhány lépést, azokat kihagyhatja: például már létrehozott egy szolgáltatásfelhasználót a BW-kiszolgálóhoz, és leképezte rá az egyszerű szolgáltatásnevet, vagy már telepítette a gsskrb5 kódtárat.
 
-Ha még nem állította be az SAP gsskrb5 és gx64krb5 dll-fájlokat az ügyfélgép(ek)en és az SAP BW-alkalmazáskiszolgálón, végezze el a jelen szakaszban leírtakat. Ha már elvégezte ezt a telepítést (létrehozott egy szolgáltatásfelhasználót a BW-kiszolgálóhoz, és leképezett hozzá egy egyszerű szolgáltatásnevet), kihagyhatja a szakasz néhány részét.
+### <a name="setup-gsskrb5-on-client-machines-and-the-bw-server"></a>A gsskrb5 telepítése az ügyfélgépekre és a BW-kiszolgálóra
+
+A gsskrb5-öt az ügyfélnek és a kiszolgálónak is használnia kell az SSO-kapcsolat átjárón keresztüli létrehozásához. A közös titkosítási kódtár (sapcrypto) jelenleg nem támogatott.
 
 1. Töltse le a gsskrb5/gx64krb5 dll-fájlokat az [SAP Note 2115486](https://launchpad.support.sap.com/) oldaláról (ehhez szükséges egy SAP S-felhasználó). Győződjön meg arról, hogy a gsskrb5.dll és a gx64krb5.dll legalább 1.0.11.x verziójával rendelkezik.
 
@@ -212,15 +216,15 @@ Ha még nem állította be az SAP gsskrb5 és gx64krb5 dll-fájlokat az ügyfél
 
 1. Az ügyfélgépen és a kiszolgálógépen állítsa be az SNC\_LIB és az SNC\_LIB\_64 környezeti változókat úgy, hogy azok a gsskrb5.dll és a gx64krb5.dll helyeire mutassanak.
 
-### <a name="complete-the-gateway-configuration-for-sap-bw"></a>Átjáró SAP BW-hez történő konfigurációjának befejezése
+### <a name="create-a-bw-service-user-and-enable-snc-communication-using-gsskrb5-on-the-bw-server"></a>BW-szolgáltatásfelhasználó létrehozása és SNC-kommunikáció engedélyezése gsskrb5 használatával a BW-kiszolgálón
 
 A már elvégzett átjárókonfiguráción kívül még el kell végeznie néhány SAP BW-specifikus lépést. A dokumentáció [**Delegálási beállítások konfigurálása az átjáró szolgáltatásfiókján**](#configure-delegation-settings-on-the-gateway-service-account) szakasza azt feltételezi, hogy már konfigurálta az egyszerű szolgáltatásneveket az alapul szolgáló adatforrásokhoz. Az SAP BW konfigurációjának befejezéséhez:
 
-1. Hozzon létre egy szolgáltatásfelhasználót (először csak egy egyszerű Active Directory-felhasználót) egy Active Directory-tartományvezérlőn a BW-alkalmazáskiszolgáló számára az Active Directory-környezetben. Ezután rendeljen hozzá egy egyszerű szolgáltatásnevet.
+1. Hozzon létre egy szolgáltatásfelhasználót (először csak egy egyszerű Active Directory-felhasználót) egy Active Directory-tartományvezérlő kiszolgálón a BW-alkalmazáskiszolgáló számára az Active Directory-környezetben. Ezután rendeljen hozzá egy egyszerű szolgáltatásnevet.
 
-    A hozzárendelt egyszerű szolgáltatásnévnek az SAP/ karakterekkel **kell** kezdődnie. Az egyszerű szolgáltatásnév SAP/ utáni része már szabadon választható; használhatja például a BW-kiszolgáló szolgáltatásfelhasználójának felhasználónevét. Ha például a BWServiceUser@\<DOMAIN\> szolgáltatásfelhasználót hozza létre, egyszerű szolgáltatásnévként használhatja a SAP/BWServiceUser nevet. Az egyszerű szolgáltatásnév leképezésének egyik módja a setspn parancs. Például az előbb létrehozott szolgáltatásfelhasználó egyszerű szolgáltatásnevének beállításához hajtsa végre a következő parancsot egy parancsablakban a tartományvezérlő gépen: `setspn -s SAP/ BWServiceUser DOMAIN\ BWServiceUser`.
+    Az SAP ajánlása szerint az egyszerű szolgáltatásnévnek SAP/ kezdetűnek kell lennie, de valószínűleg más előtagok is használhatók, például HTTP/. Az egyszerű szolgáltatásnév SAP/ utáni része már szabadon választható; használhatja például a BW-kiszolgáló szolgáltatásfelhasználójának felhasználónevét. Ha például a BWServiceUser@\<DOMAIN\> szolgáltatásfelhasználót hozza létre, egyszerű szolgáltatásnévként használhatja a SAP/BWServiceUser nevet. Az egyszerű szolgáltatásnév leképezésének egyik módja a setspn parancs. Például az előbb létrehozott szolgáltatásfelhasználó egyszerű szolgáltatásnevének beállításához hajtsa végre a következő parancsot egy parancsablakban a tartományvezérlő gépen: `setspn -s SAP/ BWServiceUser DOMAIN\ BWServiceUser`. További információt az SAP BW dokumentációjában talál.
 
-1. Biztosítson hozzáférést a szolgáltatásfelhasználónak a BW-alkalmazáskiszolgáló példányához:
+1. Biztosítson hozzáférést a szolgáltatásfelhasználónak a BW-alkalmazáskiszolgálóhoz:
 
     1. A BW-kiszolgálógépén adja hozzá a szolgáltatásfelhasználót a BW-kiszolgáló Helyi rendszergazdák csoportjához: nyissa meg a Számítógép-felügyelet programot, és kattintson duplán a kiszolgálójához tartozó Helyi rendszergazdák csoport elemre.
 
@@ -238,7 +242,7 @@ A már elvégzett átjárókonfiguráción kívül még el kell végeznie néhá
 
 1. Jelentkezzen be a kiszolgálóba az SAP GUI / Logon programban, és állítsa be az alábbi profilparamétereket az RZ10 tranzakció használatával:
 
-    1. Állítsa az snc/identity/as profilparamétert a p:\<a létrehozott BW-szolgáltatásfelhasználóra\>, például: p:BWServiceUser@MYDOMAIN.COM. Figyelje meg a szolgáltatásfelhasználó egyszerű felhasználóneve előtt szereplő p: elemet.
+    1. Állítsa az snc/identity/as profilparamétert a p:\<a létrehozott BW-szolgáltatásfelhasználóra\>, például: p:BWServiceUser@MYDOMAIN.COM. Figyelje meg, hogy a szolgáltatásfelhasználói UPN előtti p: nem p:CN=, mint ha a közös titkosítási kódtárat használná SNC-kódtárként.
 
     1. Állítsa az snc/gssapi\_lib profilparamétert \<a kiszolgálógépen található gsskrb5.dll/gx64krb5.dll elérési útjára (a használandó kódtár az operációs rendszer bitszámától függ)\>. Ne feledje a kódtárat egy olyan helyre helyezni, amelyhez a BW-alkalmazáskiszolgáló hozzá tud férni.
 
@@ -259,7 +263,7 @@ A már elvégzett átjárókonfiguráción kívül még el kell végeznie néhá
 
 1. A profilparaméterek beállítása után nyissa meg az SAP Felügyeleti konzolt a kiszolgálógépen, és indítsa újra a BW-példányt. Ha a kiszolgáló nem indul el, ellenőrizze, hogy a profilparamétereket megfelelően állította-e be. A profilparaméterek beállításáról további információt az [SAP dokumentációjában](https://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/frameset.htm) talál. Ha problémába ütközik, tekintse át a szakasz később részletezett, hibaelhárítással kapcsolatos információit.
 
-### <a name="map-azure-ad-users-to-sap-bw-users"></a>Azure AD-felhasználók leképezése SAP BW-felhasználókra
+### <a name="map-a-bw-user-to-an-active-directory-user"></a>BW-felhasználó leképezése egy Active Directory-felhasználóra
 
 Képezzen le egy Active Directory-felhasználót egy SAP BW-alkalmazáskiszolgáló-felhasználóra, és tesztelje az egyszeri bejelentkezési kapcsolatot az SAP GUI / Logon programban.
 
@@ -275,7 +279,7 @@ Képezzen le egy Active Directory-felhasználót egy SAP BW-alkalmazáskiszolgá
 
 1. Válassza a mentés ikont (amely egy hajlékonylemezt ábrázol a képernyő bal felső sarkában).
 
-### <a name="verify-sign-in-using-sso"></a>Bejelentkezés ellenőrzése egyszeri bejelentkezés használatával
+### <a name="test-sign-in-using-sso"></a>Egyszeri bejelentkezés (SSO) használatával való bejelentkezés tesztelése
 
 Ellenőrizze, hogy be tud-e jelentkezni a kiszolgálóba az SAP Logon / SAP GUI használatával egyszeri bejelentkezéssel azon Active Directory-felhasználóként, amely számára az előbb engedélyezte az egyszeri bejelentkezési hozzáférést.
 
@@ -287,11 +291,11 @@ Ellenőrizze, hogy be tud-e jelentkezni a kiszolgálóba az SAP Logon / SAP GUI 
 
 1. A következő oldalon adja meg a megfelelő részleteket az alkalmazáskiszolgálóval, a példányszámmal és a rendszer-azonosítóval együtt, majd válassza a **Befejezés** lehetőséget.
 
-1. Kattintson a jobb gombbal az új kapcsolatra, majd válassza a **Tulajdonságok** elemet. Válassza a **Hálózat** lapot. Az **SNC-név** ablakban adja meg a p:\<a BW-szolgáltatásfelhasználó egyszerű felhasználóneve\> sztringet, például: p:BWServiceUser@MYDOMAIN.COM.
+1. Kattintson a jobb gombbal az új kapcsolatra, majd válassza a **Tulajdonságok** elemet. Válassza a **Hálózat** lapot. Az **SNC-név** ablakban adja meg a p:\<a BW-szolgáltatásfelhasználó egyszerű felhasználóneve\> sztringet, például p:BWServiceUser@MYDOMAIN.COM, majd válassza az **OK** gombot.
 
     ![Rendszerbejegyzés-tulajdonságok](media/service-gateway-sso-kerberos/system-entry-properties.png)
 
-1. Kattintson az **OK** gombra. Most kattintson duplán az előbb létrehozott kapcsolatra, hogy megkísérelje az egyszeri bejelentkezést a szolgáltatásba. Ha ez a kapcsolat sikeres, folytassa a következő lépéssel. Ellenkező esetben tekintse át a dokumentum korábbi lépéseit, hogy meggyőződjön arról, hogy azok megfelelően lettek elvégezve, vagy tekintse át az alábbi, hibaelhárítással kapcsolatos szakaszt. Vegye figyelembe, hogy ha ebben a környezetben nem tud csatlakozni a BW-kiszolgálóhoz egyszeri bejelentkezéssel, akkor az átjárói környezetben sem fog tudni csatlakozni a BW-kiszolgálóhoz egyszeri bejelentkezéssel.
+1. Kattintson duplán az előbb létrehozott kapcsolatra, hogy megkísérelje az egyszeri bejelentkezést a BW-kiszolgálóra. Ha ez a kapcsolat sikeres, folytassa a következő lépéssel. Ellenkező esetben tekintse át a dokumentum korábbi lépéseit, hogy meggyőződjön arról, hogy azok megfelelően lettek elvégezve, vagy tekintse át az alábbi, hibaelhárítással kapcsolatos szakaszt. Vegye figyelembe, hogy ha ebben a környezetben nem tud csatlakozni a BW-kiszolgálóhoz egyszeri bejelentkezéssel, akkor az átjárói környezetben sem fog tudni csatlakozni a BW-kiszolgálóhoz egyszeri bejelentkezéssel.
 
 ### <a name="troubleshoot-installation-and-connections"></a>A telepítés és a kapcsolatok hibaelhárítása
 
@@ -309,15 +313,33 @@ Ha bármilyen problémát tapasztal, kövesse az alábbi lépéseket a gsskrb5-t
 
 1. „(SNC-hiba) a megadott modul nem található”: ezt általában az okozza, hogy a gsskrb5.dll/gx64krb5.dll olyan helyen található, amelynek hozzáféréséhez megemelt jogosultsági szint (rendszergazdai jogosultság) szükséges.
 
-### <a name="add-registry-entries"></a>Beállításjegyzék-bejegyzések hozzáadása
+### <a name="add-registry-entries-to-the-gateway-machine"></a>Beállításjegyzékbeli bejegyzések hozzáadása az átjárót tartalmazó számítógépen
 
-Adja hozzá a szükséges beállításjegyzék-bejegyzéseket annak a gépnek beállításjegyzékéhez, amelyre az átjáró telepítve van. Ezután állítsa be a szükséges átjárókonfigurációs paramétereket.
+Adja hozzá a szükséges beállításjegyzék-bejegyzéseket annak a gépnek beállításjegyzékéhez, amelyre az átjáró telepítve van.
 
 1. Hajtsa végre a következő parancsokat egy parancsablakban:
 
     1. REG ADD HKLM\SOFTWARE\Wow6432Node\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f
 
     1. REG ADD HKLM\SOFTWARE\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f
+
+### <a name="set-configuration-parameters-on-the-gateway-machine"></a>Konfigurációs paraméterek beállítása az átjárót tartalmazó számítógépen
+
+Kétféleképpen lehet konfigurációs paramétereket megadni, attól függően, hogy konfigurálva van-e az Azure AD DirSync, hogy a felhasználók Azure AD-felhasználóként jelentkezhessenek be a Power BI szolgáltatásba.
+
+Ha konfigurálva van az Azure AD DirSync, kövesse az alábbi lépéseket.
+
+1. Nyissa meg a *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll* fő átjárókonfigurációs fájlt. A fájl alapértelmezett tárolási helye: *C:\Program Files\Helyszíni adatátjáró*.
+
+1. Győződjön meg róla, hogy a **FullDomainResolutionEnabled** tulajdonság beállítása Igaz, és a **SapHanaSsoRemoveDomainEnabled** beállítása Hamis.
+
+1. Mentse a konfigurációs fájlt.
+
+1. Indítsa újra az átjárószolgáltatást a Feladatkezelő Szolgáltatások lapján (kattintson a jobb gombbal, majd válassza az Újraindítás elemet)
+
+    ![Átjáró újraindítása](media/service-gateway-sso-kerberos/restart-gateway.png)
+
+Ha nincs konfigurálva az Azure AD DirSync, kövesse ezeket a lépéseket **minden olyan Power BI szolgáltatásbeli felhasználónál, amelyet szeretne egy Azure AD-felhasználóra leképezni**. Ezekkel a lépésekkel manuálisan összekapcsolhat egy Power BI szolgáltatásbeli felhasználót a BW-be való bejelentkezési engedéllyel rendelkező Active Directory-felhasználóval.
 
 1. Nyissa meg a Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll fő átjárókonfigurációs fájlt. A fájl alapértelmezett tárolási helye: C:\Program Files\Helyszíni adatátjáró.
 
@@ -327,19 +349,21 @@ Adja hozzá a szükséges beállításjegyzék-bejegyzéseket annak a gépnek be
 
     ![Átjáró újraindítása](media/service-gateway-sso-kerberos/restart-gateway.png)
 
-### <a name="set-azure-ad-properties"></a>Azure AD-tulajdonságok beállítása
+1. Állítsa a BW-felhasználóra leképezett Active Directory-felhasználó msDS-cloudExtensionAttribute1 tulajdonságát arra a Power BI szolgáltatásbeli felhasználóra, amely számára engedélyezni szeretné a Kerberoson keresztüli egyszeri bejelentkezést. Az msDS-cloudExtensionAttribute1 tulajdonság beállításának egyik módja az Active Directory – felhasználók és számítógépek MMC beépülő modul használata (de egyéb metódusokat is lehet használni).
 
-Állítsa a BW-felhasználóra (az „Azure AD-felhasználók leképezése SAP BW-felhasználókra” lépésben) leképezett Active Directory-felhasználó msDS-cloudExtensionAttribute1 tulajdonságát arra a Power BI szolgáltatásfelhasználóra, amely számára engedélyezni szeretné a Kerberoson keresztüli egyszeri bejelentkezést. Az msDS-cloudExtensionAttribute1 tulajdonság beállításának egyik módja az Active Directory – felhasználók és számítógépek MMC beépülő modul használata (de egyéb metódusokat is lehet használni).
+    1. Jelentkezzen be a tartományvezérlő gépbe rendszergazdaként.
 
-1. Jelentkezzen be a tartományvezérlő gépbe rendszergazdaként.
+    1. Nyissa meg a **Felhasználók** mappát a beépülő ablakban, és kattintson duplán a BW-felhasználóhoz leképezett Active Directory-felhasználóra.
 
-1. Nyissa meg a **Felhasználók** mappát a beépülő ablakban, és kattintson duplán a BW-felhasználóhoz leképezett Active Directory-felhasználóra.
+    1. Válassza az **Attribútumszerkesztő** lapot.
 
-1. Válassza az **Attribútumszerkesztő** lapot. Ha nem látja ezt a lapot, akkor keressen utasításokat azzal kapcsolatban, hogyan engedélyezze azt, illetve hogyan használjon egy másik metódust az msDS-cloudExtensionAttribute1 tulajdonság beállításához. Válassza ki az egyik attribútumot, majd nyomja le az „m” billentyűt, hogy az „m”-mel kezdődő Active Directory-tulajdonságokhoz lépjen. Keresse meg az msDS-cloudExtensionAttribute1 tulajdonságot, és kattintson rá duplán. Állítsa a tulajdonság értékét arra a felhasználónévre, amelyet a Power BI szolgáltatásba való bejelentkezéshez használ. Kattintson az **OK** gombra.
+        Ha nem látja ezt a lapot, akkor keressen utasításokat azzal kapcsolatban, hogyan engedélyezze azt, illetve hogyan használjon egy másik metódust az msDS-cloudExtensionAttribute1 tulajdonság beállításához. Válassza ki az egyik attribútumot, majd nyomja le az „m” billentyűt, hogy az „m”-mel kezdődő Active Directory-tulajdonságokhoz lépjen. Keresse meg az msDS-cloudExtensionAttribute1 tulajdonságot, és kattintson rá duplán. Állítsa a tulajdonság értékét arra a felhasználónévre, amelyet a Power BI szolgáltatásba való bejelentkezéshez használ YourUser@YourDomain formátumban.
 
-    ![Attribútum szerkesztése](media/service-gateway-sso-kerberos/edit-attribute.png)
+    1. Kattintson az **OK** gombra.
 
-1. Kattintson az **Alkalmaz** elemre. Ellenőrizze, hogy az Érték oszlopban a megfelelő érték lett-e beállítva.
+        ![Attribútum szerkesztése](media/service-gateway-sso-kerberos/edit-attribute.png)
+
+    1. Kattintson az **Alkalmaz** elemre. Ellenőrizze, hogy az Érték oszlopban a megfelelő érték lett-e beállítva.
 
 ### <a name="add-a-new-bw-application-server-data-source-to-the-power-bi-service"></a>Új BW-alkalmazáskiszolgáló-adatforrás hozzáadása a Power BI szolgáltatáshoz
 
@@ -347,17 +371,19 @@ Adja hozzá a BW-adatforrást az átjáróhoz: kövesse a cikkben szereplő kor�
 
 1. Az adatforrás konfigurációs ablakában adja meg az Alkalmazáskiszolgáló **Gazdagépnév**, **Rendszer száma** és **Ügyfél-azonosító** adatait, ahogy azt a Power BI Desktopból a BW-kiszolgálóba való bejelentkezés során tenné. A **Hitelesítési módszer** elemnél válassza a **Windows** lehetőséget.
 
-1. Az **SNC-partner neve** mezőben adja meg a kiszolgáló snc/identity/as profilparaméterében tárolt értéket úgy, hogy *az SAP/ karakterek hozzá legyenek adva a p: és az azonosító további része között.* Ha például a kiszolgáló SNC-azonosítója p:BWServiceUser@MYDOMAIN.COM, adja meg a p:SAP/BWServiceUser@MYDOMAIN.COM értéket az SNC-partner neve beviteli mezőben.
+1. Az **SNC-partner neve** mezőben adja meg a p: \<a BW-szolgáltatás felhasználójára leképezett egyszerű szolgáltatásnév\> értéket. Ha például az SPN SAP/BWServiceUser@MYDOMAIN.COM, adja meg a p:SAP/BWServiceUser@MYDOMAIN.COM értéket az **SNC-partner neve** mezőben.
 
 1. Az SNC-kódtárnál válassza az SNC\_LIB vagy az SNC\_LIB\_64 lehetőséget.
 
 1. A **Felhasználónév** és a **Jelszó** adatoknak egy olyan Active Directory-felhasználó felhasználónevének és jelszavának kell lenniük, amely engedéllyel rendelkezik a BW-kiszolgálóba való bejelentkezéshez egyszeri bejelentkezés használatával (ez egy olyan Active Directory-felhasználó, amely le lett képezve egy BW-felhasználóra az SU01 tranzakció használatával). Ezek a hitelesítő adatok csak akkor lesznek használva, ha az **Egyszeri bejelentkezés használata a Kerberoson keresztül DirectQuery-lekérdezésekhez** jelölőnégyzet *nincs* bejelölve.
 
-1. Ellenőrizze az **Egyszeri bejelentkezés használata a Kerberoson keresztül DirectQuery-lekérdezésekhez** jelölőnégyzetet, majd válassza az **Alkalmaz** lehetőséget. Ha a tesztkapcsolat nem volt sikeres, ellenőrizze, hogy az előző telepítési és konfigurációs lépések megfelelően lettek elvégezve.
+1. Jelölje be az **Egyszeri bejelentkezés használata a Kerberoson keresztül DirectQuery-lekérdezésekhez** jelölőnégyzetet, majd válassza az **Alkalmaz** lehetőséget. Ha a tesztkapcsolat nem volt sikeres, ellenőrizze, hogy az előző telepítési és konfigurációs lépések megfelelően lettek elvégezve.
+
+    Az átjáró mindig a beírt hitelesítő adatokat használja tesztkapcsolatot létesítéséhez a kiszolgálóval és az importáláson alapuló jelentések ütemezett frissítéséhez. Az átjáró csak akkor próbálkozik SSO-kapcsolat létrehozásával, ha az **SSO használata Kerberoson keresztül a DirectQuery-lekérdezésekhez** lehetőség ki van választva, és a felhasználó hozzáfér egy közvetlen lekérdezésen alapuló jelentéshez vagy adatkészlethez.
 
 ### <a name="test-your-setup"></a>Telepítés tesztelése
 
-Tegyen közzé egy DirectQuery-jelentést a Power BI Desktopból a Power BI szolgáltatásba a telepítés teszteléséhez. Győződjön meg arról, hogy azon felhasználóként van bejelentkezve a Power BI szolgáltatásba, amelyre beállította az msDS-cloudExtensionAttribute1 tulajdonságot. Ha a telepítés sikeresen befejeződött, képes lesz létrehozni egy jelentést a Power BI szolgáltatásban közzétett adathalmaz alapján, és lekérni adatokat a jelentés vizualizációin keresztül.
+Tegyen közzé egy DirectQuery-jelentést a Power BI Desktopból a Power BI szolgáltatásba a telepítés teszteléséhez. Ellenőrizze, hogy be van-e jelentkezve a Power BI szolgáltatásba Azure AD-felhasználóként vagy egy olyan felhasználóként, akit hozzárendelt egy Azure AD-felhasználó msDS-cloudExtensionAttribute1 tulajdonságához. Ha a telepítés sikeresen befejeződött, képes lesz létrehozni egy jelentést a Power BI szolgáltatásban közzétett adathalmaz alapján, és lekérni adatokat a jelentés vizualizációin keresztül.
 
 ### <a name="troubleshooting-gateway-connectivity-issues"></a>Átjáróhoz való csatlakozás hibaelhárítása
 

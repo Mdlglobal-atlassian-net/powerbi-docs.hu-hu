@@ -1,5 +1,5 @@
 ---
-title: Összetett modellek használata a Power BI Desktopban (előzetes verzió)
+title: Összetett modellek használata a Power BI Desktopban
 description: Több adatkapcsolattal és több-a-többhöz kapcsolatokkal rendelkező adatmodellek létrehozása a Power BI Desktopban
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/02/2018
+ms.date: 11/12/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 47c99e40b1665b98c33d16b685e359c10277a560
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: b7a8323557f769fa2a05d504de2540bc505e7a54
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435396"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619701"
 ---
-# <a name="use-composite-models-in-power-bi-desktop-preview"></a>Összetett modellek használata a Power BI Desktopban (előzetes verzió)
+# <a name="use-composite-models-in-power-bi-desktop"></a>Összetett modellek használata a Power BI Desktopban
 
 Ha korábban a Power BI Desktopban DirectQueryt használt egy jelentésben, akkor más, &mdash;akár DirectQuery, akár importálás&mdash; típusú adatkapcsolatra nem volt lehetőség az adott jelentésben. Az összetett modellekkel ez a kötöttség megszűnik. Egy jelentés problémamentesen tartalmazhat több, DirectQuery vagy importálás típusú adatkapcsolatot bármilyen kívánt kombinációban.
 
@@ -30,16 +30,6 @@ Az összetett modellek használatának lehetősége a Power BI Desktopban három
 * **Több-a-többhöz kapcsolatok**: Az *összetett modellekkel* a táblák között *több-a-többhöz kapcsolatok* hozhatók létre. Ez a megközelítés kiküszöböli, hogy egyedi értékeket kelljen használni a táblákban. Korábbi áthidaló megoldásokat is szükségtelenné tesz, például új táblák bevezetését a kapcsolatok létrehozásához. További információk: [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md).
 
 * **Tárolási mód**: Mostantól megadható, hogy mely vizualizációk igényelnek a háttér-adatforrásokba irányuló lekérdezéseket. Azok a vizualizációk, amelyekhez nincs szükség lekérdezésre, importálva lesznek még akkor is, ha DirectQuery-alapúak. Ez a funkció segíti a teljesítmény javulását, és csökkenti a háttérrendszerek leterheltségét. Korábban még az egyszerű vizualizációk, például a szeletelők is kezdeményeztek a háttérbeli forrásokra irányuló lekérdezéseket. További információért lásd: [Tárolási mód a Power BI Desktopban (előzetes verzió)](desktop-storage-mode.md).
-
-## <a name="enable-the-composite-models-preview-feature"></a>Az előzetes verziójú Összetett modellek funkció engedélyezése
-
-Az Összetett modellek egy előzetes verziójú funkció, amelyet a Power BI Desktopban engedélyezni kell. Az összetett modellek engedélyezéséhez válassza a **Fájl** > **Lehetőségek és beállítások** > **Lehetőségek** > **Előzetes verziójú funkciók** elemet, majd jelölje be az **Összetett modellek** jelölőnégyzetét. 
-
-![Az „Előzetes verziójú funkciók” panel](media/desktop-composite-models/composite-models_02.png)
-
-A funkció engedélyezéséhez újra kell indítania a Power BI Desktopot.
-
-![A „Funkció újraindítást igényel” ablak](media/desktop-composite-models/composite-models_03.png)
 
 
 ## <a name="use-composite-models"></a>Az összetett modellek használata
