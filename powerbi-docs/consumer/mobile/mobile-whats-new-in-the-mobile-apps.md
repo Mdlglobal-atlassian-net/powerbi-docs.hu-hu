@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 798b1daa13079e69788bc977f37748531e38f431
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 9d73e7b4e9b303f1a774c14fc813572805f7b093
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909245"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297228"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -22,6 +22,26 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+
+## <a name="october-2018"></a>2018. október
+
+### <a name="paginated-report-preview-all-devices"></a>Lapszámozott jelentések előzetes verziója (minden eszközön)
+
+A Power BI szolgáltatásban már elérhetők a lapszámozott jelentések. Azok a felhasználók, akik a Power BI szolgáltatásban hozzáférnek lapszámozott jelentésekhez, mobilalkalmazásból is elérhetik őket. 
+
+Olvassa el a Power BI [mobileszközökön használható lapszámozott jelentésekről szóló blogbejegyzését](https://powerbi.microsoft.com/en-us/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
+
+### <a name="shared-credentials-ios"></a>Megosztott hitelesítő adatok (iOS)
+
+Mobilalkalmazásából minden eddiginél könnyebben jelentkezhet be a Power BI-ba. A megosztott hitelesítő adatokkal a bejelentkezési folyamat egyszerűbbé vált azáltal, hogy az eszközön más Office 365-ös alkalmazáshitelesítő adatokkal hitesítjük Önt a Power BI szolgáltatásban.
+
+### <a name="in-app-urls-ios"></a>Alkalmazáson belüli URL-címek (iOS) 
+
+A jelentésekben lévő, más Power BI-összetevőkre mutató hivatkozások már közvetlenül az alkalmazásban nyílnak meg. Ezáltal Ön egyéni navigációs folyamatokat készíthet, egy jelentésből hivatkozhat például egy irányítópultra.
+
+### <a name="ios12-and-watchos-5-support"></a>iOS12- és watchOS 5-támogatás 
+
+Frissítettük az iOS-hez készült Power BI alkalmazást, hogy mobileszközökön és órákon is zökkenőmentesen együttműködjön az új operációs rendszerrel.
 
 ## <a name="september-2018"></a>2018. szeptember
 
@@ -41,10 +61,11 @@ Olvassa el az [irányítópulti megjegyzésekről szóló Power BI-blogbejegyzé
 
 Az egyszeri bejelentkezés (SSO) az egyik legtöbbet kért képesség a Windowshoz készült Power BI Mobile esetében. Mostantól nem csak arra használhatja az elsődleges szervezeti fiókját, hogy bejelentkezzen a tartományhoz csatlakoztatott Windows rendszerű mobileszközökre, hanem a segítségével a Power BI szolgáltatásba is zökkenőmentesen bejelentkezhet. További információk az [SSO-ról és a Windows-mobilalkalmazásokról](mobile-windows-10-app-single-sign-on-sso.md).
 
+## <a name="previous-months"></a>Előző hónapok
 
-## <a name="july-2018"></a>2018. július
+### <a name="july-2018"></a>2018. július
 
-### <a name="ios-and-android-only"></a>Csak iOS és Android
+#### <a name="ios-and-android-only"></a>Csak iOS és Android
 
 **Megosztott szűrők**
 
@@ -55,127 +76,125 @@ Mostantól megosztott szűrőket és szeletelőket tartalmazó jelentéseket is 
 Ha fekvő tájolásban tekint meg egy jelentést a mobileszközén, ugyanazokat a háttérképeket láthatja, amelyeket a webes Power BI-ban.
 
 
-## <a name="june-2018"></a>2018. június
+### <a name="june-2018"></a>2018. június
 
-### <a name="full-canvas-reports"></a>Teljes vásznas jelentések
+#### <a name="full-canvas-reports"></a>Teljes vásznas jelentések
 
 A felső és az alsó műveletsáv röviddel azután eltűnik, hogy a jelentés betöltődik, így egyszerre többet láthat a jelentésből.
 
-### <a name="increased-phone-report-canvas-size"></a>Telefonos jelentések vászonméretének növelése
+#### <a name="increased-phone-report-canvas-size"></a>Telefonos jelentések vászonméretének növelése
 
 Megnöveltük a telefonos jelentések vásznának méretét, így még több vizualizáció fér el rajta.
 
-## <a name="may-2018"></a>2018. máj.
+### <a name="may-2018"></a>2018. máj.
 
-### <a name="mobile-drill-through-all-mobile-apps"></a>Mobilos részletezés: minden mobilalkalmazás
+#### <a name="mobile-drill-through-all-mobile-apps"></a>Mobilos részletezés: minden mobilalkalmazás
 
 A részletezéshez megjelenítheti egy kijelölt adatpontból a mobilalkalmazások egy másik jelentésoldalát, ha a jelentés szerzője definiálta ezt a műveletet. 
 
-### <a name="back-button-all-mobile-apps"></a>Vissza gomb: minden mobilalkalmazás
+#### <a name="back-button-all-mobile-apps"></a>Vissza gomb: minden mobilalkalmazás
 
 Mostantól, ha a jelentésben pöccintéssel navigál, jelentésoldalt választ a műveleti sávon, vagy a részletezést használja, a vissza gomb visszaviszi az előzőleg megtekintett oldalra. 
 
-### <a name="dashboard-themes-all-mobile-apps"></a>Irányítópult-témák: minden mobilalkalmazás
+#### <a name="dashboard-themes-all-mobile-apps"></a>Irányítópult-témák: minden mobilalkalmazás
 
 Ha a jelentések szerzői testre szabják a témákat a Power BI szolgáltatásban, az irányítópult megjelenése és működése a mobilalkalmazásban is megváltozik. Háttérképek azonban nem jelennek meg.
 
-### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: A Power BI iOS-es mobilalkalmazás jelentéskészítő kiszolgálóhoz való távoli hozzáférésének konfigurálása
+#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: A Power BI iOS-es mobilalkalmazás jelentéskészítő kiszolgálóhoz való távoli hozzáférésének konfigurálása
 
 A rendszergazda most már MDM eszközzel is konfigurálhatja a Power BI iOS-es mobilalkalmazás jelentéskészítő kiszolgálóhoz való hozzáférését. További részleteket [Az iOS-es Power BI-mobilalkalmazás jelentéskészítő kiszolgálóhoz való távoli hozzáférésének konfigurálása](../../report-server/configure-powerbi-mobile-apps-remote.md) című témakörben talál.
 
-### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI vegyes valósághoz alkalmazás (előzetes verzió)
+#### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI vegyes valósághoz alkalmazás (előzetes verzió)
 
 A Power BI vegyes valósághoz alkalmazás már elérhető a Microsoft Store-ban. Megtekintheti a virtuális világon belül az irányítópultjait és jelentéseit, vagy a környezetén belül mozgathatja és adott helyeken tekintheti meg őket. Az információ kontextusba helyezéséhez tekintse meg az új [Introducing Power BI on Hololens](https://www.youtube.com/watch?v=J_X_nOFUBss) (A Power BI on Hololens bemutatása) videónkat, vagy olvassa el az új [Power BI vegyes valósághoz alkalmazásról](mobile-mixed-reality-app.md) szóló cikket.
 
 
-## <a name="april-2018"></a>2018. április
+### <a name="april-2018"></a>2018. április
 
-### <a name="mobile-drill-down-and-drill-up"></a>Mobilos részletezés és felhatolás
+#### <a name="mobile-drill-down-and-drill-up"></a>Mobilos részletezés és felhatolás
 
 Mobileszközön is használható a részletezés és a felhatolás a jelentés vizualizációinál. Az új funkciót úgy érheti el, ha rákoppint és lenyomva tartja a vizualizáció elemleírás menüjét, majd a lehatolás-felhatolás gombokra koppint az adatok részletesebb megjelenítéséhez. További tudnivalók a [mobilalkalmazásokban történő részletezésről és a felhatolásról](https://powerbi.microsoft.com/blog/drill-down-up-in-power-bi-mobile-apps/).
 
-### <a name="persistent-filters"></a>Állandó szűrők
+#### <a name="persistent-filters"></a>Állandó szűrők
 
 A közelmúltban frissítettük a jelentésszűrőket és a szeletelőket, így azok most már automatikusan mentve lesznek a webes Power BI-ból a Power BI mobilalkalmazásba. A mobilalkalmazásban beállított szűrők és szeletelők is automatikusan mentve lesznek a webes Power BI-ban.
 
 
-## <a name="march-2018"></a>2018. március
+### <a name="march-2018"></a>2018. március
 
-### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI vegyes valósághoz alkalmazás (előzetes verzió)
+#### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI vegyes valósághoz alkalmazás (előzetes verzió)
 
 Az adatok még felhasználóbarátabbá tételének érdekében létrehoztuk a vegyes valósághoz készült Power BI alkalmazást. Megtekintheti a virtuális világon belül az irányítópultjait és jelentéseit, vagy a környezetén belül mozgathatja és adott helyeken tekintheti meg őket. További információ az új, [vegyes valósághoz készült Power BI alkalmazásról](mobile-mixed-reality-app.md).
 
-### <a name="share-reports-and-dashboards-externally"></a>Jelentések és irányítópultok külső megosztása
+#### <a name="share-reports-and-dashboards-externally"></a>Jelentések és irányítópultok külső megosztása
 
 Az irányítópultok és jelentések a vállalatán kívüli felhasználókkal is megoszthatók, közvetlenül az alkalmazásból. A külső megosztás vállalati és közösségi fiókok esetén is engedélyezve van. 
 
-### <a name="persistent-filters"></a>Állandó szűrők
+#### <a name="persistent-filters"></a>Állandó szűrők
 
 A Power BI webes felületén beállított szűrők és szeletelők a mobilalkalmazásban is el lesznek mentve, tehát ott folytathatja a munkát, ahol abbahagyta.
 
-### <a name="refresh-reports-on-the-ipad"></a>Jelentések frissítése iPad-en
+#### <a name="refresh-reports-on-the-ipad"></a>Jelentések frissítése iPad-en
 
 A Power BI-jelentésekben mostantól frissítés gomb is van az iPad-alkalmazásban.
 
-## <a name="february-2018"></a>2018. február
+### <a name="february-2018"></a>2018. február
 
-### <a name="share-reports"></a>Jelentések megosztása
+#### <a name="share-reports"></a>Jelentések megosztása
 
 A jelentések mostantól közvetlenül a mobilalkalmazásokból megoszthatók. További információ az [irányítópultok és jelentések mobilalkalmazásokból való megosztásáról](mobile-share-dashboard-from-the-mobile-apps.md)
 
-### <a name="improved-tooltips"></a>Továbbfejlesztett eszközleírások
+#### <a name="improved-tooltips"></a>Továbbfejlesztett eszközleírások
 
 Amikor egy jelentés vizualizációjára koppint, hogy megjelenítse az eszközleírásokat, mostantól az ujja a vizualizáción keresztüli húzásával megtekintheti az egyes adatpontok részletes adatait.
 
-## <a name="january-2018"></a>2018. január
+### <a name="january-2018"></a>2018. január
 
-### <a name="report-favorites"></a>Jelentések kedvencekként
+#### <a name="report-favorites"></a>Jelentések kedvencekként
 
 A jelentéseket megjelölheti kedvencekként, így azok megjelennek a **Kedvencek** lapon. További információ a [kedvencekről a Power BI-mobilalkalmazásokban](mobile-apps-favorites.md).
 
-### <a name="view-shared-reports"></a>Megosztott jelentések megtekintése
+#### <a name="view-shared-reports"></a>Megosztott jelentések megtekintése
 
 Mostantól ha valaki megoszt Önnel egy jelentést, az megjelenik a **Velem megosztva** lapon az irányítópultokkal együtt.
 
-### <a name="improved-hyperlink-support"></a>Továbbfejlesztett hivatkozástámogatás
+#### <a name="improved-hyperlink-support"></a>Továbbfejlesztett hivatkozástámogatás
 
 Mostantól az egyéni vizualizációk hivatkozásaira koppintva megnyithatja őket a mobilböngészőjében.
 
-### <a name="intune-integration-android"></a>Intune-integráció (Android)
+#### <a name="intune-integration-android"></a>Intune-integráció (Android)
 
 A feltételes hozzáférés támogatása az Intune mobileszköz-kezelésével.
 
-## <a name="december-2017"></a>2017. december
+### <a name="december-2017"></a>2017. december
 
-### <a name="improved-security-management"></a>Továbbfejlesztett biztonságkezelés 
+#### <a name="improved-security-management"></a>Továbbfejlesztett biztonságkezelés 
 
 A rendszert kibővítettük a feltételes hozzáférés (CA) és a Microsoft Intune mobileszköz-kezelés (MDM) támogatásával Android-eszközökön, hogy cége vagy szervezete adatai nagyobb védelemben részesüljenek. Már elérhető iOS rendszeren.
 
-### <a name="improved-permission-management"></a>Továbbfejlesztett engedélykezelés
+#### <a name="improved-permission-management"></a>Továbbfejlesztett engedélykezelés
 
 Végrehajtottunk bizonyos módosításokat az adathalmazokra, irányítópultokra és jelentésekre vonatkozó felhasználói engedélyek pontosabb kezelése érdekében.
 
-### <a name="auto-installed-apps"></a>Automatikusan telepített alkalmazások
+#### <a name="auto-installed-apps"></a>Automatikusan telepített alkalmazások
 
 A Power BI-ban bizonyos alkalmazásokat nem szükséges telepíteni. A Power BI-alkalmazások létrehozói a cégnél létrehozhatnak olyan *alkalmazásokat*, amelyek számos irányítópultot és jelentést tartalmaznak. Az alkalmazást ezt követően közzétehetik, és beállíthatják úgy, hogy az automatikusan települjön a Power BI szolgáltatásban és a Power BI-mobilalkalmazásokban. Ha egy alkalmazás automatikus telepítésre van beállítva, automatikusan megjelenik az **Alkalmazások** menüben:
 
 ![Alkalmazások a Power BI-mobilalkalmazásokban](./media/mobile-whats-new-in-the-mobile-apps/power-bi-apps-mobile-apps.png)
 
-## <a name="november-2017"></a>2017. november
-### <a name="iphone-x-optimization"></a>Optimalizálás iPhone X-hez
+### <a name="november-2017"></a>2017. november
+#### <a name="iphone-x-optimization"></a>Optimalizálás iPhone X-hez
 
 Optimalizáltuk az iPhone X-hez az alkalmazás elrendezését, így minden eszközön tetszetős elrendezésben jelennek meg az adatok.
 
-## <a name="october-2017"></a>2017. október
-### <a name="filters-for-phone-reports-in-android"></a>Szűrők telefonos jelentésekhez Androidon
+### <a name="october-2017"></a>2017. október
+#### <a name="filters-for-phone-reports-in-android"></a>Szűrők telefonos jelentésekhez Androidon
 
 Ha telefonra optimalizált oldalakkal rendelkező jelentést hoz létre a Power BI Desktopban, és a jelentés szűrőket tartalmaz, ezeket a szűrőket mostantól alkalmazhatja a telefonos jelentésekben Android-eszközén. Tudjon meg többet az Androidon használható Power BI-jelentésekhez készült szűrőkről.
 
-### <a name="show-data-in-reports"></a>Adatok megjelenítése a jelentésekben
+#### <a name="show-data-in-reports"></a>Adatok megjelenítése a jelentésekben
 
 A jelentésekben a táblázatos nézetre állíthatja a vizualizációkat, így megtekintheti az adatok alapját képező számokat. A funkció eléréséhez koppintson az Adatok megjelenítése pontra a vizualizáció ... menüjében a jelentésben, vagy pedig az új ikonra a kibontott vizualizáció műveleti menüjében.
-
-## <a name="previous-months"></a>Előző hónapok
 
 ### <a name="september-2017"></a>2017. szeptember
 #### <a name="filters-for-phone-reports-in-iphones"></a>Szűrők telefonos jelentésekhez iPhone-okon

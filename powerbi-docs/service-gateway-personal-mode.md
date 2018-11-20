@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 093339e820c45fcbd586bd1eb6d8933b6e5743f8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 263c1a576e939a87e970cc2c0200dfb6c1ccdc41
+ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298205"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273333"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Helyszíni adatátjáró (személyes mód)
 Az átjáró használatával vehetők igénybe a helyszíni adatforrások, illetve létrehozhatók Power BI-jelentések és -irányítópultok. Az **átjárók** olyan szoftverek, amelyek hozzáférést biztosítanak egy helyszíni magánhálózaton tárolt adatokhoz, majd lehetővé teszik ezen adatok felhasználását olyan online szolgáltatásokban, mint a **Power BI szolgáltatás**. A **helyszíni adatátjáró (személyes mód)** a Power BI egy nemrég kiadott frissítése, amely lehetővé teszi személyek számára, hogy telepítsenek a számítógépükön egy átjárót, és hozzáférést szerezzenek helyszíni adatokhoz.
@@ -132,7 +132,7 @@ A Spark támogatása a tervek szerint a 2017-es naptári év második felében v
   * **Válasz:** Ha a jelenlegi átjáróval frissíti a jelentéseit, a frissítések leállnak. Egy új frissítési ütemezés beállításának egyetlen módja az új átjáró telepítése és konfigurálása.
 * R-szkripteket használok. Ez támogatott?
   
-  * **Válasz:** A tervek szerint az R-szkriptek hamarosan támogatottak lesznek.
+  * **Válasz:** Az R-szkriptek személyes módhoz támogatottak.
 * Miért nem látom az átjáróm frissítésére felszólító üzenetet a **Power BI szolgáltatásban**?
   
   * **Válasz:** Valószínűleg azért, mert rendelkezik egy vagy több olyan adatkészlettel, amelyek olyan adatforrásokat tartalmaznak, amelyek jelenleg még nem támogatottak.

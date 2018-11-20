@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/20/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: a36b0524006144bfa9fbd24d9ff88b42a1acb3d4
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 39429d0f09431da3f860bf0454843c65ce07a524
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641643"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266001"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Kapacitáskezelés a Power BI Premium és a Power BI Embedded szolgáltatással
 
@@ -53,6 +53,44 @@ A Power BI Premium vagy Embedded termékváltozatok megvásárlásakor a bérlő
 Az esetek többségében a felhasználónak nem kell tudnia róla, hogy prémium szintű kapacitást használ, amíg az irányítópultjai és jelentései működnek. Vizuális utalásként a prémium szintű kapacitás munkaterületeit gyémánt ikon jelzi.
 
 ![Prémium szintű kapacitás munkaterülete egy gyémánt ikonnal](media/service-admin-premium-manage/premium-workspace.png)
+
+## <a name="configure-workloads"></a>Számítási feladatok konfigurálása
+
+Egy Power BI-beli számítási feladat felfogható a felhasználók számára felkínálható számos szolgáltatás egyikeként. A **Power BI Premium** és a **Power BI Embedded** kapacitásai alapértelmezés szerint csak a Power BI-lekérdezések felhőbeli futtatásával társított számítási feladatot támogatják.
+
+Most két további számítási feladathoz kínálunk előzetes verziójú támogatást: a **lapszámozott jelentésekhez**, és az **adatfolyamokhoz**. Ezek a számítási feladatok a Power BI felügyeleti portálján, vagy a Power BI REST API-n keresztül engedélyezhetők. Beállíthatja az egyes számítási feladatok által felhasználható memória maximumát is, hogy szabályozni tudja a különböző számítási feladatok egymásra gyakorolt hatását.
+
+### <a name="enable-workloads-in-the-power-bi-admin-portal"></a>Számítási feladatok engedélyezése a Power BI felügyeleti portálján
+
+Számítási feladatokat a következő lépésekkel engedélyezhet.
+
+1. A **Kapacitásbeállítások** alatt válasszon kapacitást.
+
+1. A **TOVÁBBI LEHETŐSÉGEK** alatt bontsa ki a **Számítási feladatok** elemet.
+
+1. Engedélyezzen egy vagy több számítási feladatot, és állítsa be a **Maximális memória** értékét.
+
+    ![Számítási feladatok konfigurálása a felügyeleti portálon](media/service-admin-premium-manage/admin-portal-workloads.png)
+
+1. Kattintson az **Alkalmaz** elemre.
+
+### <a name="default-memory-settings"></a>Alapértelmezett memóriabeállítások
+
+Az alábbi táblázat a különböző elérhető [kapacitás-csomópontokon](service-premium.md#premium-capacity-nodes) alapuló alapértelmezett és minimális memóriaértékeket ismerteti. A memória adatfolyamokhoz dinamikusan, lapszámozott jelentésekhez viszont statikusan van lefoglalva. További információt a következő, [Szempontok lapszámozott jelentések esetén](#considerations-for-paginated-reports) című szakaszban talál.
+
+|                     | EM3                      | P1                       | P2                      | P3                       |
+|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
+| Oldalakra osztott jelentések | N.A. | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% | Alapértelmezés szerint 20%; minimum 2,5% |
+| Adatfolyamok | Alapértelmezés szerint 15%; minimum 8%  | Alapértelmezés szerint 15%; minimum 4%  | Alapértelmezés szerint 15%; minimum 2% | Alapértelmezés szerint 15%; minimum 1%  |
+| | | | | |
+
+### <a name="considerations-for-paginated-reports"></a>Szempontok lapszámozott jelentések esetén
+
+A „lapszámozott jelentések” számítási feladat használata során a következőket tartsa szem előtt.
+
+* **Memóriafoglalás lapszámozott jelentésekben**: A lapszámozott jelentések lehetővé teszik, hogy a jelentés renderelése során saját kódot futtasson (például dinamikusan változtassa a szövegszínt a tartalom alapján). Ezt figyelembe véve, a Power BI Premium-kapacitás védelme érdekében a lapszámozott jelentéseket a kapacitás egy korlátozott területén belül futtatjuk. Ehhez a területhez az Ön által megadott maximális memóriát foglaljuk le, akár aktív a számítási feladat, akár nem. Ha egy kapacitásban több Power BI-jelentést vagy -adatfolyamot használ, ügyeljen rá, hogy a lapszámozott jelentésekhez kellően alacsony memóriakorlátot adjon meg, hogy azok ne befolyásolhassák hátrányosan a többi számítási feladatot.
+
+* **A lapszámozott jelentések nem elérhetők**: Ritkán előfordulhat, hogy a „lapszámozott jelentések” számítási feladat elérhetetlenné válik. Ilyen esetben a számítási feladat hibás állapotot jelez a felügyeleti portálon, a felhasználók pedig időtúllépést tapasztalnak a jelentés renderelése során. A probléma megoldásához tiltsa le, majd engedélyezze újra a számítási feladatot.
 
 ## <a name="monitor-capacity-usage"></a>Kapacitáshasználat monitorozása
 

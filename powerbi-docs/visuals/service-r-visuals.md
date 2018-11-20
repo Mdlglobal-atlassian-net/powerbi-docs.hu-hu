@@ -1,5 +1,5 @@
 ---
-title: Fejlett elemzések és vizualizációk létrehozása R-parancsfájlokkal a Power BI-ban
+title: Fejlett elemzések és vizualizációk létrehozása R-szkriptekkel
 description: R-parancsfájlok használata a Power BI-ban fejlett elemzések és vizualizációk létrehozásához
 author: mihart
 manager: kvivek
@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a3407458cfe6e395a5a209e136af1d4c9a7aa6a6
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 409a2ee486d0153e0dec2f715ff0e2ea19e236d7
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566349"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297113"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>R-vizualizációk létrehozása a Power BI szolgáltatásban
 A Power BI szolgáltatás támogatja az R-parancsfájlokkal létrehozott vizualizációk megtekintését és használatát. Az R-parancsfájlokkal létrehozott, gyakran *R-vizualizációknak* nevezett vizualizációk fejlett adatformázást és elemzéseket, például előrejelzéseket kínálnak az R gazdag elemzési és megjelenítési lehetőségeinek kihasználásával.
 
 > [!NOTE]
-> Az [R programozási nyelv](https://www.r-project.org/) a statisztikusok, adatelemzők és üzleti elemzők körében legelterjedtebb programozási nyelvek egyike. Az R nyelv nyílt forráskódját gondozó közösség a széles körben használt [R User Groups](http://msdsug.microsoft.com/) mellett több mint 7000 bővítménycsomagot kínál. Az R-nek a Power BI szolgáltatással telepített verziója a következő: *Revolution R Open 3.2.2.*
+> Az [R programozási nyelv](https://www.r-project.org/) a statisztikusok, adatelemzők és üzleti elemzők körében legelterjedtebb programozási nyelvek egyike. Az R nyelv nyílt forráskódját gondozó közösség a széles körben használt R-felhasználói csoportok mellett több mint 7000 bővítménycsomagot is kínál. Az R-nek a Power BI szolgáltatással telepített verziója a következő: *Revolution R Open 3.2.2.*
 > 
 > 
 

@@ -8,20 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/09/2018
+ms.date: 11/06/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 2623dd3280636583d5dd6d6e3f57518550032193
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: bb7527a197c9556509ebba721ee49a2d9817b6f5
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003202"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266208"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>A Power BI Premium- és a Power BI Embedded-kapacitások monitorozása
 
 A cikk azt tekinti át, hogyan monitorozhatóak a Power BI Premium kapacitásmetrikái. A kapacitás felhasználásának figyelemmel kísérése segít abban, hogy megalapozott döntéseket hozhasson a kapacitáskezelést illetően.
 
-A kapacitás monitorozható a Power BI Premium Metrics alkalmazással vagy a felügyeleti portálon is. Az alkalmazás használatát javasoljuk, mert az jelentősen több információt nyújt, de a jelen cikkben mindkét monitorozási lehetőséget megvizsgáljuk.
+A kapacitás monitorozható a Power BI Premium Metrics alkalmazással vagy a felügyeleti portálon is. Az alkalmazás használatát javasoljuk, mert az jelentősen több információt nyújt, de a jelen cikkben mindkét monitorozási lehetőséget megvizsgáljuk. **Az alkalmazás jelenlegi verziója 1.8-as (a kiadás dátuma: 2018. November 7.).**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -33,11 +33,11 @@ A [Premium Capacity Metrics alkalmazást](https://app.powerbi.com/groups/me/geta
 
     ![Ugrás az alkalmazásokra](media/service-admin-premium-monitor-capacity/apps.png)
 
-2. A jobb oldalon kattintson az **Alkalmazások beszerzése** lehetőségre.
+1. A jobb oldalon kattintson az **Alkalmazások beszerzése** lehetőségre.
 
-3. Az **Alkalmazások** kategóriában keresse meg a **Power BI Premium Capacity Metrics alkalmazást**.
+1. Az **Alkalmazások** kategóriában keresse meg a **Power BI Premium Capacity Metrics alkalmazást**.
 
-4. Az alkalmazás telepítéséhez regisztrálnia kell.
+1. Az alkalmazás telepítéséhez regisztrálnia kell.
 
 Az alkalmazás telepítése után már megtekintheti a cég kapacitásainak információit. Most vizsgáljuk meg a legfontosabb elérhető metrikákat.
 
@@ -47,72 +47,155 @@ Az alkalmazás a megnyitás után egy irányítópultot jelenít meg, amelyen eg
 
 ![A Metrics alkalmazás irányítópultja](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-A jelentés három lapot tartalmaz, amelyeknek részletesebb leírását az alábbi szakaszokban találja.
+Kattintson az irányítópultra a mögöttes jelentés megnyitásához. A jelentés hat lapból áll, amelyeknek részletesebb leírását az alábbi szakaszokban találja.
 
-* **Összes oldalra alkalmazott szűrők**: lehetővé teszi egy adott kapacitás szűrését a jelentés többi oldalán.
-* **Adatkészletek**: részletes mérőszámokat biztosít a kapacitások adathalmazainak állapotáról.
-* **Rendszer**: általános kapacitási mérőszámokat biztosít, például a memória és a processzor magas kihasználtságával kapcsolatban. 
+* **Szűrők**: lehetővé teszi egy adott kapacitás szűrését a jelentés többi oldalán.
 
-### <a name="filters-applied-to-all-pages-tab"></a>Összes oldalra alkalmazott szűrők lap
+* **Adatkészletek**: részletes metrikák a kapacitásokon belüli Power BI-adathalmazok állapotáról.
 
-Az **Összes oldalra alkalmazott szűrők** lap lehetővé teszi, hogy kiválasszon egy kapacitást, egy adathalmazt és egy dátumtartományt az elmúlt hét napból. A szűrők ezután alkalmazva lesznek a jelentés vonatkozó oldalaira és csempéire. Ha nincsenek kiválasztva szűrők, a jelentés alapértelmezés szerint a kapacitások múlt heti mérőszámait jeleníti meg.
+* **Lapszámozott jelentések**: részletes metrikák a kapacitásokon belüli lapszámozott jelentések állapotáról.
+
+* **Adatfolyamok**: részletes frissítési metrikák a kapacitásokon belüli adatfolyamokról.
+
+* **Rendszer**: általános kapacitási metrikák, például a memória és a processzor magas kihasználtságáról.
+
+* **Megjelenítendő nevek és azonosítók**: kapacitások, munkaterületek és számítási feladatok neve, azonosítója és tulajdonosa.
+
+### <a name="filters-tab"></a>Szűrők lap
+
+A **Szűrők** lapon kapacitást, dátumtartományt és más lehetőségeket választhat. A szűrők ezután alkalmazva lesznek a jelentés vonatkozó oldalaira és csempéire. Ha nincsenek kiválasztva szűrők, a jelentés alapértelmezés szerint a kapacitások múlt heti mérőszámait jeleníti meg.
 
 ![Szűrők lap](media/service-admin-premium-monitor-capacity/filters-tab.png)
 
+* **(A)** Válassza az **Adathalmazok**, **Lapszámozott jelentések** vagy **Adatfolyamok** lehetőséget, hogy szűrőket állíthasson be az egyes számítási feladatokhoz.
+
+* A **(B)** szakaszban szereplő nevek és a **(C)** szakaszban szereplő adatok az **(A)** részen kiválasztott lehetőség függvényében frissülnek, így név szerint szűrhet a számítási feladatokra. A fenti ábrán például az **Adatfolyamok** lehetőség van kiválasztva, így az **Adatfolyamok neve** és az **Adatfolyamok információi** láthatók.
+
+* **(D)** Kapacitásinformációk, amelyek azt jelzik, hogy engedélyezve vannak-e a kapacitáshoz az adathalmazok, lapszámozott jelentések vagy adatfolyamok.
+
 ### <a name="datasets-tab"></a>Adatkészletek lap
 
-Az **Adatkészletek** lap biztosítja a legtöbb mérőszámot az alkalmazásban. Használja a lap tetején található gombokat a különböző területek közötti váltáshoz: **Összefoglalás**, **Frissítések**, **Lekérdezések időtartama**, **Lekérdezésekre való várakozások** és **Adatkészletek**.
+Használja az **Adathalmazok** lap tetején található gombokat a különböző területek közötti váltáshoz: **Összefoglalás**, **Frissítések**, **Lekérdezések időtartama**, **Lekérdezési várakozások** és **Adatkészletek**.
 
 ![Adatkészletek lap](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
 #### <a name="summary-area"></a>Összefoglalás terület
 
-Az **Összefoglalás** terület entitások, rendszererőforrások és adathalmazhoz tartozó számítási feladatok alapján jeleníti meg a kapacitásokat.
+Az **Összefoglalás** terület entitások, rendszererőforrások és adathalmazhoz tartozó számítási feladatok alapján jeleníti meg a kapacitásokat. A következő metrikákat mutatja meg.
 
-| | **Metrikák** |
+| **Jelentésszakasz** | **Metrikák** |
 | --- | --- |
 | **Entitások** | * Az Önhöz tartozó kapacitások száma<br> * A kapacitásában meglévő különálló adatkészletek száma<br> * A kapacitásában meglévő különálló munkaterületek száma |
 | **Rendszer** | * Az átlagos memóriahasználat GB-ban az elmúlt hét napban<br> * A legmagasabb memóriahasználat GB-ban az elmúlt hét napban, az események helyi idejével<br> * Az a szám, ahányszor a CPU-használat meghaladta a küszöbérték 80%-át a legutóbbi hét napban, három perces gyűjtőkbe csoportosítva<br> * A legtöbb eset, amikor a CPU-használat meghaladta a 80%-ot a legutóbbi hét napban, egyórás gyűjtőkbe elosztva, és az esemény helyi idejével<br> * Az a szám, ahányszor a Közvetlen lekérdezés/Élő kapcsolat értéke meghaladta a küszöbérték 80%-át a legutóbbi hét napban, három perces gyűjtőkbe csoportosítva<br> * A legtöbb eset, amikor a Közvetlen lekérdezés/Élő kapcsolat értéke meghaladta a 80%-ot a legutóbbi hét napban, egyórás gyűjtőkbe elosztva, és az esemény helyi idejével |
-| **Adatkészlethez tartozó számítási feladatok** | * A frissítések teljes száma a legutóbbi hét napban<br> * A sikeres frissítések teljes száma a legutóbbi hét napban<br> * A sikertelen frissítések teljes száma a legutóbbi hét napban<br> * A nem elegendő mennyiségű memória miatt sikertelen frissítések teljes száma<br> * A frissítések átlagos időtartama percekben kifejezve és a művelethez szükséges teljes idő<br> * Az átlagos frissítési idő percekben kifejezve, valamint a beütemezett időpont és a művelet kezdete közötti átlagos késés<br> * A lekérdezések teljes száma a legutóbbi hét napban<br> * A sikeres lekérdezések teljes száma a legutóbbi hét napban<br> * A sikertelen lekérdezések teljes száma a legutóbbi hét napban<br> * A lekérdezések átlagos időtartama percekben kifejezve és a művelethez szükséges teljes idő<br> * A memóriaterhelés miatt kizárt modellek teljes száma |
+| **Adatkészlethez tartozó számítási feladatok** | * A frissítések teljes száma a legutóbbi hét napban<br> * A sikeres frissítések teljes száma a legutóbbi hét napban<br> * A sikertelen frissítések teljes száma a legutóbbi hét napban<br> * A nem elegendő mennyiségű memória miatt sikertelen frissítések teljes száma<br> * A frissítések átlagos időtartama a művelethez szükséges teljes idő, percekben kifejezve<br> * A frissítésre várakozás átlagos időtartama az ütemezett időpont és a művelet kezdete közötti átlagos késést jelenti, percekben kifejezve<br> * A lekérdezések teljes száma a legutóbbi hét napban<br> * A sikeres lekérdezések teljes száma a legutóbbi hét napban<br> * A sikertelen lekérdezések teljes száma a legutóbbi hét napban<br> * A lekérdezések átlagos időtartama a művelethez szükséges teljes idő, percekben kifejezve<br> * A memóriaterhelés miatt kizárt modellek teljes száma |
 |  |  |
 
 #### <a name="refreshes-area"></a>Frissítések terület
 
-A **Frissítések** terület adathalmazokra lebontva megjeleníti a frissítéseket, a sikeres műveleteket, a frissítések átlagos/maximális várakozási idejét és a frissítések átlagos/maximális időtartamát, az elmúlt hét napra vonatkozóan. Az utolsó két diagram a frissítéseket és a GB-ban kifejezett memóriafogyasztást hasonlítja össze, valamint az átlagos várakozási időt egyórás gyűjtőkbe csoportosítva, helyi időben kifejezve. A felső sávdiagramok az első öt adathalmazt mutatják aszerint, hogy mennyi időt vett igénybe az adathalmaz frissítése (a frissítés időtartama), és mennyi volt a frissítések átlagos várakozási ideje. Ha több magas frissítési várakozási érték is van, az azt jelzi, hogy a kapacitáshasználat a csúcsértékhez közelít.
+A **Frissítések** terület az alábbi metrikákat tartalmazza.
+
+| **Jelentésszakasz** | **Metrikák** |
+| --- | --- |
+| **Frissítések megbízhatósága** | * Teljes szám: Az egyes adathalmazok frissítéseinek teljes száma<br> * Megbízhatóság: Az egyes adathalmazok befejezett frissítéseinek százalékos aránya<br> * A várakozás átlagos időtartama: az ütemezett időpont és az adathalmaz frissítésének kezdete közötti átlagos késés, percekben kifejezve<br> * Maximális várakozási idő: az adathalmazhoz tartozó leghosszabb várakozási idő, percekben kifejezve <br> * Átlagos időtartam: az adathalmaz frissítéseinek átlagos időtartama, percekben kifejezve<br> * Maximális időtartam: az adathalmaz leghosszabb ideig futó frissítésének időtartama, percekben kifejezve |
+| **Az első 5 adathalmaz a frissítés átlagos időtartama szerint** | * Az öt leghosszabb (percekben megadott) átlagos frissítési idejű adathalmaz |
+| **Az első 5 adathalmaz az átlagos várakozási idő szerint** | * Az öt leghosszabb (percekben megadott) átlagos frissítési várakozási idejű adathalmaz |
+| **Átlagos frissítési várakozási idő óránként** | * A frissítésre várakozás átlagos időtartama órákra lebontva, helyi idő szerint jelentve. Ha több kiugróan magas frissítési várakozási érték is van, az azt jelzi, hogy a kapacitáshasználat a csúcsértékhez közelít. |
+| **Frissítések száma és memóriahasználat óránként** | * Sikeres és sikertelen frissítések, valamint memóriahasználat órákra lebontva, helyi idő szerint jelentve |
+|  |  |
 
 #### <a name="query-durations-area"></a>A Lekérdezések időtartama terület
 
-A **Lekérdezések időtartama** terület a futtatott lekérdezések teljes számát, és az átlagos/maximális időtartamot jeleníti meg ezredmásodpercben kifejezve. Ezek az adatok adathalmazokra, munkaterületekre és egyórás gyűjtőkre vannak lebontva az elmúlt hét napra vonatkozóan. Az alsó diagram a lekérdezések számát és az átlagos időtartamot (ezredmásodpercben) hasonlítja össze a GB-ban kifejezett memóriahasználattal, egyórás gyűjtőkre bontva, helyi időben kifejezve.
+A **Lekérdezések időtartama** terület az alábbi metrikákat tartalmazza.
 
-A jobb felső diagram a lekérdezés időtartamának eloszlási hisztogramját jeleníti meg. A hisztogram ezredmásodpercben jelentett lekérdezés-időtartamokra van osztva a következő kategóriákba: <= 30 ms, 30–100 ms, 100–300 ms, 300 ms–1 mp, 1–3 mp, 3–10 mp, 10–30 mp és > 30 mp időszakok.
-
-A jobb alsó diagram az első öt adathalmazt mutatja aszerint, hogy mennyi volt a lekérdezések végrehajtásának átlagos időtartama.
-
-A hosszú lekérdezési időtartamok és a hosszú várakozási idők azt jelzik, hogy a kapacitáshasználat a csúcsértékhez közelít. Azt is jelenthetik, hogy az egyik adathalmaz problémákat okoz, és további vizsgálat szükséges.
+| **Jelentésszakasz** | **Metrikák** |
+| --- | --- |
+| **Lekérdezések időtartama** | * Ebben a szakaszban az adatok adathalmazokra, munkaterületekre és egyórás gyűjtőkre vannak lebontva az elmúlt hét napra vonatkozóan<br> * Összesen: az adathalmazon futtatott lekérdezések teljes száma<br> * Átlag: az adathalmaz lekérdezéseinek átlagos időtartama, ezredmásodpercben megadva<br> * Max: az adathalmaz leghosszabb ideig futó lekérdezésének időtartama, ezredmásodpercben megadva|
+| **Lekérdezések időtartamának eloszlása** | * A lekérdezési időtartamok hisztogramja ezredmásodpercben mért lekérdezés-időtartamokra van osztva a következő kategóriákba: <= 30 ms, 30–100 ms, 100–300 ms, 300 ms–1 mp, 1–3 mp, 3–10 mp, 10–30 mp és > 30 mp időszakok. A hosszú lekérdezési időtartamok és a hosszú várakozási idők azt jelzik, hogy a kapacitáshasználat a csúcsértékhez közelít. Azt is jelenthetik, hogy az egyik adathalmaz problémákat okoz, és további vizsgálat szükséges. |
+| **Az első 5 adathalmaz az átlagos időtartam szerint** | * Az öt leghosszabb (ezredmásodpercekben megadott) átlagos lekérdezési idejű adathalmaz |
+| **Közvetlen lekérdezés / élő kapcsolatok (80% feletti kihasználtság)** | * Azon alkalmak száma, amikor egy közvetlen lekérdezés vagy élő kapcsolat túllépte a 80%-os CPU-kihasználtságot, óránként lebontva, helyi idő szerint jelentve |
+| **Lekérdezések időtartamának eloszlása óránként** | * A lekérdezések száma és az átlagos időtartam (ezredmásodpercekben) összehasonlítva a GB-ban kifejezett memóriahasználattal, óránként lebontva, helyi idő szerint jelentve |
+|  |  |
 
 #### <a name="query-waits-area"></a>Lekérdezésekre való várakozások terület
 
-A **Lekérdezésekre való várakozások** terület megjeleníti a futtatott lekérdezések teljes számát, a lekérdezésre való várakozások számát az élő/közvetlen lekérdezések esetében, és az átlagos/maximális várakozási időt ezredmásodpercben kifejezve. Ezek az adatok adathalmazokra, munkaterületekre és egyórás gyűjtőkre vannak lebontva az elmúlt hét napra vonatkozóan. Az alsó diagram a lekérdezésekre való várakozások számát és az átlagos várakozási időtartamot (ezredmásodpercben) hasonlítja össze a GB-ban kifejezett memóriahasználattal, egyórás gyűjtőkre bontva, helyi időben kifejezve.
+A **Lekérdezésekre való várakozások** terület az alábbi metrikákat tartalmazza.
 
-A jobb felső diagram a lekérdezésekre való várakozási idő eloszlási hisztogramját jeleníti meg. A hisztogram ezredmásodpercben jelentett lekérdezés-időtartamokra van osztva a következő kategóriákba: <= 50 ms, 50–100 ms, 100–200 ms, 200–400 ms, 400 ms–1 mp, 1–5 mp és > 5 mp időszakok.
-
-A jobb alsó diagram az első öt adathalmazt mutatja aszerint, hogy átlagosan mennyi várakozási időre volt szükség a lekérdezések elindításához.
+| **Jelentésszakasz** | **Metrikák** |
+| --- | --- |
+| **Lekérdezésekre való várakozások időtartama** | * Ebben a szakaszban az adatok adathalmazokra, munkaterületekre és egyórás gyűjtőkre vannak lebontva az elmúlt hét napra vonatkozóan<br> * Összesen: az adathalmazon futtatott lekérdezések teljes száma<br> * Várakozások száma: Az adathalmaz azon lekérdezéseinek számra, amelyek rendszererőforrásokra várakoztak a végrehajtás előtt <br> * Átlag: az adathalmaz lekérdezéseinek átlagos várakozási időtartama, ezredmásodpercben megadva<br> * Max: az adathalmaz leghosszabb ideig várakozó lekérdezésének időtartama, ezredmásodpercben megadva|
+| **Várakozási idők eloszlása** | * A lekérdezési időtartamok hisztogramja ezredmásodpercekben mért lekérdezés-időtartamokra van osztva a következő kategóriákba: <= 50 ms, 50–100 ms, 100–200 ms, 200–400 ms, 400 ms–1 mp, 1–5 mp és > 5 mp |
+| **Az első 5 adathalmaz az átlagos várakozási idő szerint** | * Az az öt adathalmaz, amelynek a lekérdezések előtti, ezredmásodpercekben mért várakozási ideje a legnagyobb |
+| **Lekérdezések várakozásainak száma és időtartama óránként** | A lekérdezésekre való várakozások száma és az átlagos várakozási időtartam (ezredmásodpercekben), összehasonlítva a GB-ban kifejezett memóriahasználattal, óránként lebontva, helyi idő szerint jelentve |
+|  |  |
 
 #### <a name="datasets-area"></a>Adatkészletek terület
 
-Az **Adatkészletek** terület a memóriaterhelés miatt kizárt adathalmazok teljes számát mutatja, óránkénti lebontásban.
+Az **Adathalmazok** terület az alábbi metrikákat tartalmazza.
+
+| **Jelentésszakasz** | **Metrikák** |
+| --- | --- |
+| **Adathalmaz-kizárások száma** | * Összesen: az adathalmaz-*kizárások* teljes száma kapacitásonként. Ha egy kapacitásban magas memóriaterhelés lép fel, a csomópont egy vagy több adathalmazt kizár a memóriából. Először az inaktív adathalmazok (nincs végrehajtás alatt álló lekérdezési/frissítési művelet) lesznek kizárva. Ezután a „legrégebben használt” (LRU) paraméter értéke határozza meg a kizárási sorrendet.|
+| **Adathalmaz-kizárások és memóriahasználat** | * Adathalmaz-kizárások és a GB-ban kifejezett memóriahasználat óránkénti bontásban, helyi idő szerint jelentve |
+|  |  |
+
+### <a name="paginated-reports-tab"></a>Lapszámozott jelentések lap
+
+A **Lapszámozott jelentések** lap részletes metrikákat mutat a kapacitásokon belüli lapszámozott jelentések állapotáról.
+
+![Lapszámozott jelentések lap](media/service-admin-premium-monitor-capacity/paginated-reports-tab.png)
+
+A **Lapszámozott jelentések** lap az alábbi metrikákat tartalmazza.
+
+| **Jelentésszakasz** | **Metrikák** |
+| --- | --- |
+| **Általános igénybevétel** | * Összes megtekintés: azon alkalmak száma, amikor egy felhasználó megtekintette a jelentést<br> * Sorok száma: a jelentésben szereplő adatsorok száma<br> * Lekérés (átlag): az adatok jelentéshez való lekérésének átlagos időtartama, ezredmásodpercben megadva. A hosszú időtartamok lassú lekérdezésekre vagy az adatforrással kapcsolatos más problémára utalhatnak. <br> * Feldolgozás (átlag): az adatok jelentéshez való feldolgozásának átlagos időtartama, ezredmásodpercben megadva<br>* Renderelés (átlag): a jelentés böngészőben való renderelésének átlagos időtartama, ezredmásodpercben megadva<br> * Teljes időtartam: a jelentés összes fázisának időtartama, ezredmásodpercben megadva|
+| **Az első 5 adathalmaz az átlagos adatlekérési idő szerint** | * Az öt, ezredmásodpercekben mérve legnagyobb átlagos adatlekérési idejű jelentés |
+| **Az első 5 adathalmaz a jelentés feldolgozásának átlagos időtartama szerint** | * Az ezredmásodpercekben mérve legnagyobb átlagos feldolgozási idejű jelentés |
+| **Időtartamok óránként** | * Adatlekérés a feldolgozási és renderelési időhöz viszonyítva, óránkénti bontásban, helyi idő szerint jelenve |
+| **Eredmények óránként** | * Sikeres és sikertelen frissítések, valamint memóriahasználat órákra lebontva, helyi idő szerint jelentve |
+|  |  |
+
+### <a name="dataflows-tab"></a>Adatfolyamok lap
+
+Az **Adatfolyamok** lap részletes frissítési metrikákat mutat a kapacitásokon belüli adatfolyamokról.
+
+![Adatfolyamok lap](media/service-admin-premium-monitor-capacity/dataflows-tab.png)
+
+Az **Adatfolyamok** lap az alábbi metrikákat tartalmazza.
+
+| **Jelentésszakasz** | **Metrikák** |
+| --- | --- |
+| **Frissítés** | * Összesen: az egyes adatfolyamok frissítéseinek teljes száma<br> * Megbízhatóság: az egyes adatfolyamok befejezett frissítéseinek százalékos aránya<br> * A várakozás átlagos időtartama: az ütemezett időpont és az adatfolyam frissítésének kezdete közötti átlagos késés, percekben kifejezve<br> * Maximális várakozási idő: az adatfolyamhoz tartozó leghosszabb várakozási idő, percekben kifejezve <br> * Átlagos időtartam: az adatfolyam frissítéseinek átlagos időtartama, percekben kifejezve<br> * Maximális időtartam: az adatfolyam leghosszabb ideig futó frissítésének időtartama, percekben kifejezve |
+| **Az első 5 adatfolyam a frissítés átlagos időtartama szerint** | * Az öt leghosszabb (percekben megadott) átlagos frissítési idejű adatfolyam |
+| **Az első 5 adatfolyam az átlagos várakozási idő szerint** | * Az öt leghosszabb (percekben megadott) átlagos frissítési várakozási idejű adatfolyam |
+| **Átlagos frissítési várakozási idő óránként** | * A frissítésre várakozás átlagos időtartama órákra lebontva, helyi idő szerint jelentve. Ha több kiugróan magas frissítési várakozási érték is van, az azt jelzi, hogy a kapacitáshasználat a csúcsértékhez közelít. |
+| **Frissítések száma és memóriahasználat óránként** | * Sikeres és sikertelen frissítések, valamint memóriahasználat órákra lebontva, helyi idő szerint jelentve |
+|  |  |
 
 ### <a name="system-tab"></a>Rendszer lap
 
-A **Rendszer** lap megjeleníti, hogy mikor volt magas a processzorhasználat (hányszor haladta meg a 80%-os kihasználtságot), a közvetlen lekérdezés/élő kapcsolat kihasználtsága és a memóriahasználat.
+A **Rendszer** lap az összes kapacitás és számítási feladat CPU- és memóriafelhasználását mutatja.
 
-![Premium szint rendszerjelentése](media/service-admin-premium-monitor-capacity/system-tab.png)
+![Rendszer lap](media/service-admin-premium-monitor-capacity/system-tab.png)
+
+A **Rendszer** lap az alábbi metrikákat tartalmazza.
+
+| **Jelentésszakasz** | **Metrikák** |
+| --- | --- |
+| **CPU-metrikák (80% feletti kihasználtság)** | * Az a szám, ahányszor a CPU-használat meghaladta a küszöbérték 80%-át a legutóbbi hét napban, három perces gyűjtőkbe csoportosítva |
+| **Memóriahasználat** | * Memóriahasználat az elmúlt hét nap folyamán, háromperces időszakokra lebontva |
+|  |  |
+
+### <a name="display-names-and-ids-tab"></a>A Megjelenítendő nevek és azonosítók lap
+
+A **Megjelenítendő nevek és azonosítók** lap kapacitások, munkaterületek és számítási feladatok nevét, azonosítóját és tulajdonosát tartalmazza.
 
 ## <a name="monitor-power-bi-embedded-capacity"></a>A Power BI Embedded-kapacitás monitorozása
 
 A Power BI Premium Capacity Metrics alkalmazással *A SKU*-kapacitásokat is monitorozhat a Power BI Embedded szolgáltatásban. Ha Ön az adott kapacitás adminisztrátora, akkor a kapacitás megjelenik a jelentésben is. A jelentést azonban csak akkor lehet frissíteni, ha a Power BI-nak megad bizonyos engedélyeket az A SKU-kra vonatkozóan:
 
 1. Nyissa meg a kapacitást az Azure Portalon.
+
 1. Kattintson a **Hozzáférés-vezérlés (IAM)** lehetőségre, és adja hozzá a „Power BI Premium” alkalmazást az Olvasó szerepkörhöz. Ha az alkalmazást nem találja név szerint, az ügyfél-azonosító használatával is hozzáadhatja azt: cb4dc29f-0bf4-402a-8b30-7511498ed654.
 
     ![Engedélyek a Power BI Embeddedhez](media/service-admin-premium-monitor-capacity/embedded-permissions.png)

@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: b56134314b9396dff1b965786e65e62129e5e7b9
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: 488d11209126098063ba8ca2b2d73573edbcdbb9
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558447"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297136"
 ---
 # <a name="on-premises-data-gateway"></a>Helyszíni adatátjáró
 
@@ -47,9 +47,9 @@ Az élő kapcsolatokat táblázatos vagy többdimenziós példányokhoz használ
 
 ## <a name="download-and-install-the-on-premises-data-gateway"></a>Helyszíni adatátjáró letöltése és telepítése
 
-Az átjáró letöltéséhez válassza a Letöltés menü alatt található **Data Gateway** (Adatátjáró) lehetőséget. Töltse le a [helyszíni adatátjárót](http://go.microsoft.com/fwlink/?LinkID=820925). 
+Az átjáró letöltéséhez válassza a Letöltés menü alatt található **Data Gateway** (Adatátjáró) lehetőséget. Töltse le a [helyszíni adatátjárót](http://go.microsoft.com/fwlink/?LinkID=820925).
 
-Vegye figyelembe, hogy a helyszíni adatátjáró frissítéséhez az átjáró újratelepítése szükséges, az ebben a szakaszban leírtaknak megfelelően. Az átjáró (újratelepítéssel történő) frissítésekor az átjáró meglévő beállításai megmaradnak.
+Vegye figyelembe, hogy a helyszíni adatátjáró frissítéséhez újra telepítenie kell az átjárót az ebben a szakaszban leírt módon. Ha az átjáró egy újabb verzióját telepíti, a rendszer megőrzi a meglévő beállításait. Ha ugyanazt a verziót telepíti, a rendszer teljes újratelepítésként kezeli azt, és nem őrzi meg a beállításait.
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
@@ -118,7 +118,7 @@ Ha úgy gondolja, hogy proxyval kapcsolatos problémákba ütközött, tekintse 
 [Adatforrások kezelése – Oracle](service-gateway-onprem-manage-oracle.md)  
 [Adatforrások kezelése – Importálás és ütemezett frissítés](service-gateway-enterprise-manage-scheduled-refresh.md)  
 [Helyszíni adatátjáró – részletes](service-gateway-onprem-indepth.md)  
-[Helyszíni adatátjáró (személyes mód) – a személyes átjáró új verziója](service-gateway-personal-mode.md)
+[Helyszíni adatátjáró (személyes mód) – a személyes átjáró új verziója](service-gateway-personal-mode.md)  
 [Helyszíni adatátjáró proxybeállításainak konfigurálása](service-gateway-proxy.md)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

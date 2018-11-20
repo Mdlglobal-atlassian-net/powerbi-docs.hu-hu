@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
 LocalizationGroup: Administration
-ms.openlocfilehash: 3e125061766d6ade0daeaacb208d3070d8e9bd9b
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: b03e9da87aa507812045378b1fa3e581b7de159c
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973258"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266116"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI felügyeleti portál
 
@@ -296,6 +296,15 @@ A munkahelyi felhasználók hozzáférhetnek a munkaterületekhez, hogy csatlako
 ### <a name="import-data-into-power-bi"></a>Adatok importálása a Power BI-ba
 
 A munkahelyi felhasználók adatokat importálhatnak a szolgáltatásba, például jelentéseket tehetnek közzé a Power BI Desktopról, Power BI-jelentésfájlokat tölthetnek fel, és közvetlenül a szolgáltatásból csatlakozhatnak az adatokhoz. [További információ](desktop-upload-desktop-files.md)
+
+## <a name="dataflow-settings-preview"></a>Adatfolyam-beállítások (előzetes verzió)
+
+### <a name="create-and-use-dataflows-preview"></a>Adatfolyamok létrehozása és használata (előzetes verzió)
+
+A vállalati felhasználók létrehozhatnak és használhatnak adatfolyamokat. [További információ](service-dataflows-overview.md)
+
+> [!NOTE]
+> Ez a beállítás az egész munkahelyre vonatkozik, és nem lehet korlátozni meghatározott csoportokra.
 
 ## <a name="capacity-settings"></a>Kapacitásbeállítások
 

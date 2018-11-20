@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b4ecec3b2e53c2fea0fcbb7d78d1114da1a105ed
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: da8fb3da7ea0e4f0457951bc421a5f207c3c6911
+ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34299631"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273310"
 ---
 # <a name="on-premises-data-gateway-faq"></a>Helyszíni adatátjáró – GYIK
 <!-- Shared FAQ shared Include -->
@@ -68,6 +68,9 @@ ms.locfileid: "34299631"
 
 **Kérdés:** Működik az átjáró az ExpressRoute-tal?  
 **Válasz:** Igen. Az ExpressRoute és a Power BI közös használatáról további információt [A Power BI és az ExpressRoute](service-admin-power-bi-expressroute.md) című cikkben olvashat.
+
+**Kérdés:** R-szkripteket használok. Ez támogatott?
+**Válasz:** Az R-szkriptek csak személyes módhoz támogatottak.
 
 ## <a name="next-steps"></a>Következő lépések
 [Helyszíni adatátjáró](service-gateway-onprem.md)  

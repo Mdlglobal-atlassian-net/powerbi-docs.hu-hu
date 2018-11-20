@@ -9,12 +9,12 @@ ms.author: mblythe
 ms.reviewer: mblythe
 author: mgblythe
 manager: kfile
-ms.openlocfilehash: 99c84aff932c7ce56a4aaa81d71e4583bce3e4c2
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 534c06c66d561a04dbffc04412095d6924c92781
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641741"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266070"
 ---
 # <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Microsoft Power BI Premium-kapacitások erőforrás-kezelése és optimalizálása
 
@@ -26,6 +26,7 @@ Ez a cikk bemutatja, hogyan kezeli a Power BI Premium az erőforrásokat, valami
 
 * Memóriába betöltött adathalmazok
 * Adathalmaz frissítése (ütemezett és igény szerinti)
+* A kapacitás által támogatott számítási feladatok
 * Jelentéslekérdezések
 
 Amikor a kapacitáson belül egy közzétett adatkészletre vonatkozó kérelem érkezik, az adott adatkészletet a rendszer az állandó tárolóból tölti be a memóriába (ezt a folyamatot lemezkép betöltésének is nevezzük). Ha az adatkészlet betöltve marad a memóriában, az adatkészletre vonatkozó későbbi lekérdezések esetén rövidebb lesz a válaszidő. Az adathalmazok memóriában való tárolásához szükséges memórián kívül a jelentéslekérdezések és az adathalmaz-frissítések is memóriahasználattal járnak.
@@ -51,6 +52,10 @@ Az adatkészleteket a felhasználók ütemezett módon vagy igény szerint is fr
 Ha a kizárás ellenére sem áll rendelkezésre elegendő memória, a rendszer újbóli végrehajtás céljából sorba állítja a frissítési folyamatot. A szolgáltatás egészen addig próbálja újra és újra végrehajtani a folyamatot, amíg sikerrel nem jár, vagy amíg el nem indul egy másik frissítési folyamat.
 
 Ha interaktív lekérdezés érkezik bármelyik adatkészlethez kapcsolódóan a kapacitáson belül, egy folyamatban lévő frissítés miatt azonban nem áll rendelkezésre elegendő memória, az említett kérelem sikertelen lesz, és a felhasználónak újból végre kell azt hajtania.
+
+### <a name="workloads"></a>Számítási feladatok
+
+A **Power BI Premium** és a **Power BI Embedded** kapacitásai alapértelmezés szerint csak a Power BI-lekérdezések felhőbeli futtatásával társított számítási feladatot támogatják. Most két további számítási feladathoz kínálunk előzetes verziójú támogatást: a **lapszámozott jelentésekhez** és az **adatfolyamokhoz**. Ha engedélyezve vannak, ezek a számítási feladatok befolyásolhatják a kapacitásán belüli memóriahasználatot. További információ: [Számítási feladatok konfigurálása](service-admin-premium-manage.md#configure-workloads).
 
 ## <a name="cpu-resource-management-in-premium-capacity"></a>A CPU erőforrás-kezelése prémium szintű kapacitás esetén
 

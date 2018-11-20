@@ -1,5 +1,5 @@
 ---
-title: Power BI tartalmak terjesztése Azure AD B2B külső vendégfelhasználóknak
+title: Tartalom terjesztése Azure AD B2B-s külső vendégfelhasználóknak
 description: A Power BI integrálható az Azure Active Directory vállalatközi felhasználásra szánt verziójával (Azure AD B2B), ami lehetővé teszi, hogy a Power BI-tartalmakat cégen kívüli vendégfelhasználókkal is biztonságosan meg tudja osztani.
 author: mgblythe
 manager: kfile
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: dded0f38ccc4c871bf402240aba25b11106bac09
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: dee5c14d2ee714872409352b5e42d646e561c271
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973212"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507761"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Power BI tartalmak terjesztése Azure AD B2B külső vendégfelhasználóknak
 

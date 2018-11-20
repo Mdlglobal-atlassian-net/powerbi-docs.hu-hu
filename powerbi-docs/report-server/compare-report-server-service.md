@@ -4,22 +4,24 @@ description: Ez a cikk a Power BI jelentéskészítő kiszolgáló és a Power B
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/07/2018
+ms.date: 11/06/2018
 ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: f78638097ea33f9954f3db78c117f1935a68530b
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: a693eef85f7eafe7cfac2a02cbccc346201a6f13
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908531"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507692"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása
 
 A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak sok hasonló és néhány jelentősen eltérő tulajdonsága van. Ez a táblázat ezeket mutatja be.
+
+## <a name="features-of-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás funkciói
 
 | Funkciók | Power BI jelentéskészítő kiszolgáló | A Power BI szolgáltatás | Megjegyzések
 |---------|---------|---------|---------|
@@ -39,14 +41,14 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 | Q&A | Nem | Igen | [A Q&A a Power BI szolgáltatásban és a Power BI Desktopban](../consumer/end-user-q-and-a.md) 
 | Gyors elemzések | Nem | Igen | [Adatelemzések automatikus generálása a Power BI-jal](../consumer/end-user-insights.md) 
 | Elemzés az Excelben | Nem | Igen | [Elemzés az Excelben](../service-analyze-in-excel.md) 
-| Oldalakra osztott jelentések | Igen | Nem | Többoldalas jelentések a Power BI szolgáltatásban nem elérhetők, de [többoldalasjelentés-elemek rögzíthetők a Power BI irányítópultokon](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
+| Oldalakra osztott jelentések | Igen | Igen | Előzetes verzióban [elérhetők a Power BI szolgáltatás lapszámozott jelentései](../paginated-reports-report-builder-power-bi.md)
 | Power BI – mobilalkalmazások | Igen | Igen | [Power BI-mobilalkalmazások áttekintése](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
 | ArcGIS-térképek | Nem | Igen | [Esri ArcGIS-térképek a Power BI szolgáltatásban és a Power BI Desktopban](../power-bi-visualization-arcgis.md)
 | E-mail-előfizetés Power BI-jelentésekre | Nem | Igen | [Feliratkozás jelentésre vagy irányítópultra](../consumer/end-user-subscribe.md) a Power BI szolgáltatásban 
 | E-mail-előfizetés többoldalas jelentésekre | Igen | Nem | [E-mail-kézbesítés a jelentéskészítő szolgáltatásban](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
 | Adatriasztások | Nem | Igen | [Adatriasztások](../service-set-data-alerts.md) a Power BI szolgáltatásban
 | Sorszintű biztonság | DirectQuery-módban csak adatforráson keresztül | Elérhető DirectQuery- (adatforrással) és Import-módban is | [Sorszintű biztonság (RLS)](../service-admin-rls.md) a Power BI-ban 
-| Teljes képernyős mód | Nem | Igen | [Teljes képernyős mód](../service-fullscreen-mode.md) a Power BI szolgáltatásban 
+| Teljes képernyős mód | Nem | Igen | [Teljes képernyős mód](../consumer/end-user-focus.md) a Power BI szolgáltatásban 
 | Fejlett Office 365-együttműködés | Nem | Igen | [Együttműködés egy alkalmazás-munkaterületen](../service-collaborate-power-bi-workspace.md) az Office 365 használatával 
 | R vizualizációk | Nem | Igen | [R-vizualizációk létrehozása](../visuals/service-r-visuals.md) a Power BI szolgáltatásban  
 | Előzetes verziójú funkciók | Nem | Igen | [Feliratkozás a Power BI szolgáltatás előzetes verziójú](../consumer/end-user-preview-features.md) funkcióira 
