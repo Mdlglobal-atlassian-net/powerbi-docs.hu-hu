@@ -1,21 +1,21 @@
 ---
 title: Adatok optimalizálása a Power BI gyors elemzéseihez
 description: Adatok optimalizálása a Power BI gyors elemzéseihez. Ha a Power BI nem talál összefüggéseket az adatok között, a következőket teheti
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2017
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: fbf49a9ddbec5f087a28e51144c782e2f1739db0
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 33d8911ee819bbc1ac37976f077edabee368f5aa
+ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546945"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51850568"
 ---
 # <a name="optimize-your-data-for-power-bi-quick-insights"></a>Adatok optimalizálása a Power BI gyors elemzéseihez
 Szeretne jobb eredményeket elérni a Gyors elemzésekkel?  Ha Ön az adatkészlet tulajdonosa, próbálja meg a következőket:

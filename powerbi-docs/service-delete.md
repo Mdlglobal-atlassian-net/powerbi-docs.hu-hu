@@ -1,21 +1,21 @@
 ---
 title: Irányítópult, jelentés, munkafüzet, adatkészlet vagy munkaterület törlése
 description: Tudja meg, hogy törölhet szinte bármit a Power BI szolgáltatásból
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 09/11/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 0d07953fb4f9474f929c108df5b76acb61c7df7c
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: a2bd78e8b30565428d380c43c7067f9e13117a96
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435337"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717447"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>A Power BI szinte bármelyik elemének törlése
 Ebből a cikkből megtudhatja, hogyan törölhet egy irányítópultot, jelentést, munkafüzetet, adatkészletet, alkalmazást, vizualizációt vagy munkaterületet a Power BI szolgáltatásból.

@@ -1,21 +1,21 @@
 ---
 title: 'Beszerzéselemzési minta: bemutató'
 description: 'Beszerzéselemzési minta a Power BI-hoz: bemutató'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: a43ffab1ff30dd624fadb7dacb3cebc989ba3128
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3b0c6fcc72e5b2f95b06f1184341298d449bf57e
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944677"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717148"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Beszerzéselemzési minta a Power BI-hoz: bemutató
 
@@ -45,7 +45,7 @@ Ez a minta egy olyan sorozat részét képezi, amely bemutatja, hogyan használh
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Válassza a **Beszerzéselemzési minta** elemet, majd a **Kapcsolódás** lehetőséget.  
   
-   ![Adatok lekérése](media/sample-procurement/procurement1a.png)
+   ![Adatok beolvasása](media/sample-procurement/procurement1a.png)
    
 5. A Power BI importálja a tartalomcsomagot, és egy új irányítópultot, jelentést és adatkészletet ad hozzá az aktuális munkaterülethez. Az új tartalmakat sárga csillag jelöli. 
    

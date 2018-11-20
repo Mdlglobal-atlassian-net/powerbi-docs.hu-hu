@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4854f05e3394d7b4eed2c67de8bbca5266a12ae3
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: 912ed0be1e6a732db46e83f8a9b0757ad2801dab
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909318"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157402"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Nem sikerült hozzáadni a Power BI-t az Office 365 típusú partneri előfizetéshez
 
@@ -23,7 +23,7 @@ Az Office 365 lehetővé teszi a cégeknek az Office 365 saját megoldásokkal i
 
 Ha érdekli a Power BI és az Office 365-előfizetés együttes beszerzése, javasoljuk, hogy érdeklődjön a partnernél ezzel kapcsolatban. Ha a partner kínálatában jelenleg nem szerepel a Power BI, különböző lehetőségeket vehet fontolóra.
 
-# <a name="work-with-your-partner-to-purchase-power-bi"></a>A Power BI megvásárlása a partnerrel együttműködve
+## <a name="work-with-your-partner-to-purchase-power-bi"></a>A Power BI megvásárlása a partnerrel együttműködve
 
 Ha szeretne Power BI Pro- vagy Power BI Premium-előfizetést vásárolni, a partnerrel együttműködve mérlegelje a rendelkezésre álló lehetőségeket:
 
@@ -31,7 +31,7 @@ Ha szeretne Power BI Pro- vagy Power BI Premium-előfizetést vásárolni, a par
 
 * A partner segítségével olyan modellre válthat, amelyben a Power BI közvetlenül a Microsofttól vagy egy Power BI-t értékesítő másik partnertől vásárolható meg.
 
-# <a name="purchase-from-microsoft-or-another-channel"></a>Vásárlás a Microsofttól vagy másik forrásból
+## <a name="purchase-from-microsoft-or-another-channel"></a>Vásárlás a Microsofttól vagy másik forrásból
 
 A partnerével való kapcsolatától függően előfordulhat, hogy közvetlenül a Microsofttól vagy egy másik partnertől vásárolhatja meg a Power BI-t. Az Office 365 felügyeleti portálján ellenőrizheti, hogy hozzáadhat-e Power BI-előfizetéseket (ehhez Globális rendszergazda vagy Számlázási rendszergazda szerepkör szükséges).
 

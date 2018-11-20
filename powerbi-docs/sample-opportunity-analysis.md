@@ -1,21 +1,21 @@
 ---
 title: 'Lehetőségelemzési minta a Power BI-hoz: bemutató'
 description: 'Lehetőségelemzési minta a Power BI-hoz: bemutató'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/20/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 2a7bc3ae08d46ccc9340295a1a6bc9f8303382f8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 12bc6039f7b6580782d3dfac181443caa6557447
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36945089"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717493"
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Lehetőségelemzési minta a Power BI-hoz: bemutató
 
@@ -51,7 +51,7 @@ Ez a minta egy olyan sorozat részét képezi, amely bemutatja, hogyan használh
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Válassza a **Lehetőségelemzési mintát**, majd a **Kapcsolódás** lehetőséget.  
   
-   ![Adatok lekérése](media/sample-opportunity-analysis/opportunity-connect.png)
+   ![Adatok beolvasása](media/sample-opportunity-analysis/opportunity-connect.png)
    
 5. A Power BI importálja a tartalomcsomagot, és egy új irányítópultot, jelentést és adatkészletet ad hozzá az aktuális munkaterülethez. Az új tartalmakat sárga csillag jelöli. 
    

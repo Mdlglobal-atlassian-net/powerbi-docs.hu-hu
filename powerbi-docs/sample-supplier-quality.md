@@ -1,21 +1,21 @@
 ---
 title: 'Szállítói minőségelemzési minta a Power BI-hoz: bemutató'
 description: 'Szállítói minőségelemzési minta a Power BI-hoz: bemutató'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/06/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3d89b34199decf6b27bda49bfac085688dd2e14b
-ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
+ms.openlocfilehash: 0b214e2c08e6a39e4b09643c02bccedb56d5b9f4
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582672"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717654"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Szállítói minőségelemzési minta a Power BI-hoz: bemutató
 

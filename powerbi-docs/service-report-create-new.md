@@ -1,21 +1,21 @@
 ---
 title: 'Új jelentés létrehozása adatkészletből '
 description: Hozzon létre egy új Power BI-jelentést egy adatkészletből.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/24/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 7647cba750ea7369e84022f77f46299ae15c6554
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 96b46e595ffd2373a2d59776cb8c2b4314727d89
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545843"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51718045"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Új jelentés létrehozása a Power BI szolgáltatásban adatkészlet importálásával
 Már elolvasta a [Jelentések a Power BI-ban](consumer/end-user-reports.md) című cikket, és szeretne létrehozni egy saját jelentést. A jelentések több különböző módon is létrehozhatók. Ebben a cikkben kezdésként egy Excel-adatkészletből egy alapszintű jelentést fogunk létrehozni a Power BI szolgáltatásban. Ha már megismerte a jelentés létrehozásának alapjait, akkor a lap alján található **Következő lépések** hivatkozással továbbhaladhat a jelentésekkel kapcsolatos összetettebb témakörökre is.  

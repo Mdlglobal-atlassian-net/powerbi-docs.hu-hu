@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1ec687e4751c6003fe558f2088825eae0bf4be11
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 4379caf909360688e602601795066f51c9660633
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973396"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157080"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>A Power BI felügyelete – gyakori kérdések (GYIK)
 
@@ -38,7 +38,7 @@ A cikk a Power BI felügyeletével kapcsolatos gyakori kérdéseket ismerteti. A
 
 * [Hogyan változtatja meg a Power BI használata a felhasználók identitásának kezelését a cégen belül?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Hogyan lehet kezelni a Power BI-t?](#how-do-we-manage-power-bi)
-* [Mi a Microsoft által a felhasználók számára létrehozott bérlők kezelésének folyamata?](#what-is-the-process-to-manage-a-tenant-created-by-Microsoft-for-my-users)
+* [Mi a Microsoft által a felhasználók számára létrehozott bérlők kezelésének folyamata?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [Ha több tartományom van, felügyelhetem azt az Office 365-bérlőt, amelyhez a felhasználók hozzáadódnak?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to)
 * [Hogyan távolítható el a Power BI a már regisztrált felhasználóktól?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Honnan szerzek arról tudomást, ha új felhasználók csatlakoztak a bérlőhöz?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -144,7 +144,7 @@ Az alkalmi előfizetések letiltásához használja a következő PowerShell-szk
     ```
 
 > [!NOTE]
-> Az AllowAdHocSubscriptions jelzővel irányítható a vállalat számos felhasználói képessége, beleértve a felhasználók azon képességét, hogy regisztráljanak az Azure Rights Management szolgáltatásra. A jelző módosítása hatással van az összes képességre.
+> Az AllowAdHocSubscriptions jelzővel irányítható a vállalat számos felhasználói képessége, beleértve a felhasználók azon képességét, hogy regisztráljanak az Azure Rights Management szolgáltatásra. A jelölő módosítása az összes képességre hatással van.
 
 ### <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>Hogyan engedélyezhető, hogy a meglévő felhasználók regisztráljanak a Power BI-ra?
 
@@ -241,7 +241,7 @@ A Power BI SLA-ról (szolgáltatásiszint-szerződésről) további információ
 
 ### <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Eleget tesz a Power BI az országos, regionális, illetve iparágra jellemző megfelelőségi követelményeknek?
 
-A Power BI megfelelésével kapcsolatban további információért látogasson el a [Microsoft biztonsági és adatkezelési központba](http://go.microsoft.com/fwlink/?LinkId=785324).
+A Power BI megfelelésével kapcsolatban további információért látogasson el a [Microsoft biztonsági és adatkezelési központba](https://www.microsoft.com/en-us/TrustCenter/CloudServices/business-application-platform/default.aspx).
 
 ### <a name="how-does-security-work-in-power-bi"></a>Hogyan működik a biztonság a Power BI-ban?
 

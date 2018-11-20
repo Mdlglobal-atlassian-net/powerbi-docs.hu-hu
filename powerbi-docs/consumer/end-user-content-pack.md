@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2e74c8db22a2a1c4ddb188ae13a8ca5df9f862f3
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 432e38ffdcb92ee1d2cf1d62f7f34863d748885b
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507715"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679110"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Céges tartalomcsomag megkeresése és csatlakozás hozzá
 
@@ -38,7 +38,7 @@ Minden [Power BI Pro](https://powerbi.microsoft.com/pricing)-felhasználó szám
 ## <a name="connect-to-an-organizational-content-pack"></a>Csatlakozás céges tartalomcsomaghoz
 * A **Letöltés most** elemre kattintva csatlakozzon a tartalomcsomaghoz, és adja hozzá az aktív munkaterülethez. Az új irányítópultok, jelentések, Excel-munkafüzetek és adatkészletek sárga csillaggal vannak jelölve.
 
-Ha a tartalomcsomag Excel-munkafüzetet tartalmaz, figyelmeztetés jelenhet meg, hogy nincs engedélye a munkafüzet megtekintéséhez. Ebben az esetben kérje meg a tartalomcsomag tulajdonosát, hogy [ossza meg Önnel a munkafüzetet a OneDrive Vállalati verzióban](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
+Ha a tartalomcsomag Excel-munkafüzetet tartalmaz, figyelmeztetés jelenhet meg, hogy nincs engedélye a munkafüzet megtekintéséhez. Ebben az esetben kérje meg a tartalomcsomag tulajdonosát, hogy [ossza meg Önnel a munkafüzetet a OneDrive Vállalati verzióban](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
 
 A tartalomcsomag zárolva van. [Mentheti a saját példányát az irányítópultról és a jelentésekről](../service-organizational-content-pack-copy-refresh-access.md). 
 

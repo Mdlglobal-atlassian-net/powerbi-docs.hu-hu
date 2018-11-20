@@ -1,21 +1,21 @@
 ---
 title: Csempe rögzítése az irányítópultra a Q&A kérdésmezőből
 description: Csempe rögzítése Power BI-irányítópultra a Q&A kérdésmezőből – dokumentáció
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 9cf5855acc5efe773f8f06e6de9f769f75794bdb
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 32099bb5ab5cb3784bd237234344783be8ca5a9a
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548732"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717201"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Csempe rögzítése az irányítópultra a Q&A kérdésmezőből
 ## <a name="how-to-pin-a-tile-from-qa"></a>Hogyan rögzíthet csempét a Q&A kérdésmezőből

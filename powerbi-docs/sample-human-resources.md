@@ -1,21 +1,21 @@
 ---
 title: 'Emberi erőforrások minta: bemutató'
 description: 'Emberi erőforrások minta a Power BI-hoz: bemutató'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/26/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3c73476351671d9c37bea824b2ade0f7e79dd274
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: c0f1df47501c297e65e7dc3ccdb8d745c84b2e55
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37067241"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717872"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Emberi erőforrások minta a Power BI-hoz: bemutató
 
@@ -45,7 +45,7 @@ Ez a minta egy olyan sorozat részét képezi, amely bemutatja, hogyan használh
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Válassza ki az **Emberi erőforrások mintát**, majd válassza a **Kapcsolódás** lehetőséget.  
    
-   ![Adatok lekérése](media/sample-human-resources/pbi_hr_sample_connect.png)
+   ![Adatok beolvasása](media/sample-human-resources/pbi_hr_sample_connect.png)
 5. A Power BI importálja a tartalomcsomagot, és egy új irányítópultot, jelentést és adatkészletet ad hozzá az aktuális munkaterülethez. Az új tartalmakat sárga csillag jelöli. 
    
    ![Csillag](media/sample-human-resources/human-resources-sample-asterisk.png)

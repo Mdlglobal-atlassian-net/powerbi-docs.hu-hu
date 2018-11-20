@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 28934a525c332344b31de599363fb41126a18cfa
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: ccb73b05998eded0c32742deed57b2bee35fbbb6
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548764"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679087"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>OneDrive-on található Excel-fájlra hivatkozó Power BI-irányítópult megosztása
 A Power BI-ból csatlakozhat a [OneDrive Vállalati verzióján tárolt Excel-munkafüzetekhez](service-excel-workbook-files.md), és a munkafüzetekből csempéket tűzhet ki az irányítópultokra. Ha megoszt egy ilyen irányítópultot, vagy létrehoz egy tartalomcsomagot, amely tartalmazza az irányítópultot:
 
 * Kollégái akkor is megnézhetik a csempéket, ha nincs engedélyük a munkafüzethez. A tartalomcsomagokat annak tudatában hozhatja létre, hogy kollégái megtekinthetik a OneDrive-on található Excel-munkafüzetekből létrehozott csempéket.
-* A csempékre kattintva a munkafüzet megnyitható a Power BI szolgáltatásban. A munkafüzet azonban csak akkor nyílik meg, ha munkatársainak legalább [olvasási jogosultsága](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c) van a OneDrive Vállalati verzióján tárolt munkafüzethez.
+* A csempékre kattintva a munkafüzet megnyitható a Power BI szolgáltatásban. A munkafüzet azonban csak akkor nyílik meg, ha munkatársainak legalább [olvasási jogosultsága](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c) van a OneDrive Vállalati verzióján tárolt munkafüzethez.
 
 ## <a name="share-a-dashboard-that-contains-workbook-tiles"></a>Munkafüzetcsempéket tartalmazó irányítópult megosztása
 A OneDrive Vállalati verzióban tárolt Excel-munkafüzetre hivatkozó irányítópultok megosztásával kapcsolatban tekintse át az [Irányítópultok megosztását](service-share-dashboards.md) bemutató cikket. A különbség csak annyi, hogy lehetősége van a hivatkozott Excel-munkafüzethez tartozó jogosultságok módosítására.
@@ -30,7 +30,7 @@ A OneDrive Vállalati verzióban tárolt Excel-munkafüzetre hivatkozó irányí
 
 1. Adja meg kollégái e-mail-címét.
 2. Az Excel-munkafüzet a Power BI szolgáltatásban történő megtekintésének az engedélyezéséhez kattintson a **Munkafüzet engedélyeinek beállítása** lehetőségre.
-3. A OneDrive-on [módosítsa az engedélyeket](https://support.office.com/en-US/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) igény szerint.
+3. A OneDrive-on [módosítsa az engedélyeket](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) igény szerint.
 4. Kattintson a **Megosztás** lehetőségre.
 
 >[!NOTE]
@@ -46,7 +46,7 @@ Amikor [közzétesz egy tartalomcsomagot](service-organizational-content-pack-cr
    
     ![Excel-munkafüzet egy tartalomcsomagban](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_contpack_workbk.png)
 3. Kattintson a **Munkafüzet engedélyeinek beállítása** lehetőségre.
-4. A OneDrive-on [módosítsa az engedélyeket](https://support.office.com/en-US/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) igény szerint.
+4. A OneDrive-on [módosítsa az engedélyeket](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) igény szerint.
 5. Kattintson a **Közzététel** lehetőségre.
 
 ## <a name="share-a-dashboard-from-a-power-bi-workspace"></a>Irányítópult megosztása Power BI-munkaterületről
