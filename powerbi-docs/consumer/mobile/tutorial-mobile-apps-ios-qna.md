@@ -1,5 +1,5 @@
 ---
-title: 'Oktatóanyag: Kérdezés a Power BI Q&A virtuális elemzőjével iOS-alkalmazásokban'
+title: 'Oktatóanyag: Kérdezés a Q&A virtuális elemzőjével iOS-alkalmazásokban'
 description: Ebben az oktatóanyagban azt mutatjuk be, hogyan tehet fel a saját szavaival megfogalmazott kérdéseket a mintaadatokkal kapcsolatban az iOS-eszközökön futó Power BI mobilalkalmazás Q&A virtuális elemzőjét használva.
 author: maggiesMSFT
 manager: kfile
@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: tutorial
-ms.date: 05/08/2018
+ms.date: 11/16/2018
 ms.author: maggies
-ms.openlocfilehash: f3ecdb79b8fb5a8d9463eaabbda70a60110191ea
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 9fd0d06b186d84412ec36749270d261ddd01fb2f
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547127"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157149"
 ---
-# <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-ios-apps---power-bi"></a>Oktatóanyag: Adatokkal kapcsolatos kérdések feltevése a Power BI Q&A virtuális elemzőjével iOS-alkalmazásokban
+# <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Oktatóanyag: Adatokkal kapcsolatos kérdések feltevése a Q&A virtuális elemzőjével az iOS-es Power BI-alkalmazásokban
 
 Az adatokról úgy tudhat meg a legtöbbet, ha saját szavaival megfogalmazott kérdéseket tesz fel velük kapcsolatban. Ebben az oktatóanyagban azt mutatjuk be, hogyan tehet fel kérdéseket és hogyan tekinthet meg kiemelt információkat a mintaadatokkal kapcsolatban a Q&A virtuális elemző használatával a Microsoft Power BI mobilalkalmazásban iPaden, iPhone-on és iPod Touch eszközön. 
 
@@ -64,7 +64,7 @@ Az oktatóanyag első lépéseként töltse le a Lehetőségelemzési mintát a 
 
 3. A bal alsó sarokban kattintson a **Lekérdezés** elemre.
    
-    ![Adatok lekérése](./media/tutorial-mobile-apps-ios-qna/power-bi-get-data.png)
+    ![Adatok beolvasása](./media/tutorial-mobile-apps-ios-qna/power-bi-get-data.png)
 
 3. A Lekérdezés lapon kattintson a **Minták** ikonra.
    

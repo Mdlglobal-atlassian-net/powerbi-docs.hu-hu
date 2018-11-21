@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/10/2018
+ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 294fb3a0142908ce0ab068e075ce39f950a0b124
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: e64496461e7d81d3b39e9a8d7174a3e985d04002
+ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973350"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51850476"
 ---
 # <a name="using-auditing-within-your-organization"></a>Naplózás használata a cégnél
 
@@ -139,83 +139,100 @@ Egy másik példát a PowerShell auditnaplókkal való használatára a [Power B
 
 A Power BI az alábbi tevékenységeket naplózza.
 
-* AddDatasourceToGateway (Adatforrás hozzáadása átjáróhoz)
-* AddGroupMembers (Csoporttagok hozzáadása)
-* AnalyzedByExternalApplication (Külső alkalmazásban elemezve)
-* AnalyzeInExcel (Elemzés az Excelben)
-* AttachDataflowStorageAccount (Adatfolyam-tárfiók csatolása)
-* BindToGateway (Kötés átjáróhoz)
-* ChangeCapacityState (Kapacitásállapot módosítása)
-* ChangeGatewayAdministrators (Átjáró-rendszergazdák módosítása)
-* ChangeGatewayDatasourceUsers (Átjáróadatforrás-felhasználók módosítása)
-* CreateApp (Alkalmazás létrehozása)
-* CreateDashboard (Irányítópult létrehozása)
-* CreateDataflow (Adatfolyam létrehozása)
-* CreateDataset (Adatkészlet létrehozása)
-* CreateEmailSubscription (E-mail-feliratkozás létrehozása)
-* CreateFolder (Mappa létrehozása)
-* CreateGateway (Átjáró létrehozása)
-* CreateGroup (Csoport létrehozása)
-* CreateOrgApp (Szervezeti alkalmazás létrehozása)
-* CreateReport (Jelentés létrehozása)
-* DeleteComment (Megjegyzés törlése)
-* DeleteDashboard (Irányítópult törlése)
-* DeleteDataflow (Adatfolyam törlése)
-* DeleteDataset (Adatkészlet törlése)
-* DeleteEmailSubscription (E-mail-feliratkozás törlése)
-* DeleteFolder (Mappa törlése)
-* DeleteGateway (Átjáró törlése)
-* DeleteGroup (Csoport törlése)
-* DeleteGroupMembers (Csoporttagok törlése)
-* DeleteOrgApp (Szervezeti alkalmazás törlése)
-* DeleteReport (Jelentés törlése)
-* DownloadReport (Jelentés letöltése)
-* EditDataset (Adatkészlet szerkesztése)
-* EditReport (Jelentése szerkesztése)
-* ExportDataflow (Adatfolyam exportálása)
-* ExportReport (Jelentés exportálása)
-* ExportTile (Csempe exportálása)
-* GenerateDataflowSasToken (Adatfolyam-SAS-token generálása)
-* GenerateEmbedToken (Beágyazott token generálása)
-* GetDatasources (Adatforrások beszerzése)
-* Import (Importálás)
-* InstallApp (Alkalmazás telepítése)
-* MigrateWorkspaceIntoCapacity (Munkaterület migrálása kapacitásba)
-* OptInForProTrial (Regisztráció a Pro csomag próbaverziójára)
-* PostComment (Megjegyzés közzététele)
-* PrintDashboard (Irányítópult nyomtatása)
-* PrintReport (Jelentés nyomtatása)
-* PublishToWebReport (Jelentés közzététele a weben)
-* RefreshDataset (Adatkészlet frissítése)
-* RemoveDatasourceFromGateway (Adatforrás eltávolítása átjáróból)
-* RemoveWorkspacesFromCapacity (Munkaterületek eltávolítása kapacitásból)
-* RenameDashboard (Irányítópult átnevezése)
-* SetAllConnections (Az összes kapcsolat beállítása)
-* SetScheduledRefresh (Ütemezett frissítés beállítása)
-* SetScheduledRefreshOnDataflow (Adatfolyam ütemezett frissítésének beállítása)
-* ShareDashboard (Irányítópult megosztása)
-* ShareReport (Jelentés megosztása)
-* TakeOverDataset (Adatkészlet átvétele)
-* TakeOverDatasource (Adatforrás átvétele)
-* UnpublishApp (Alkalmazás közzétételének visszavonása)
-* UpdateApp (Alkalmazás frissítése)
-* UpdateCapacityAdmins (Kapacitás-rendszergazdák frissítése)
-* UpdateCapacityDisplayName (Kapacitás megjelenített neve)
-* UpdateCapacityResourceGovernanceSettings (Kapacitásforrás szabályozási beállításai)
-* UpdateCapacityUsersAssignment (Felhasználói hozzárendelések a kapacitásban)
-* UpdatedAdminFeatureSwitch (Frissített rendszergazdai funkciókapcsoló)
-* UpdateDataflow (Adatfolyam frissítése)
-* UpdateDatasetParameters (Adatkészlet-paraméterek frissítése)
-* UpdateDatasourceCredentials (Adatforrás hitelesítő adatainak frissítése)
-* UpdateDatasources (Adatforrások frissítése)
-* UpdateEmailSubscription (E-mail-feliratkozás frissítése)
-* UpdateFolder (Mappa frissítése)
-* UpdateFolderAccess (Mappahozzáférés frissítése)
-* ViewDashboard (Irányítópult megtekintése)
-* ViewDataflow (Adatfolyam megtekintése)
-* ViewReport (Jelentés megtekintése)
-* ViewTile (Csempe megtekintése)
-* ViewUsageMetrics (Használati metrikák megtekintése)
+| Felhasználóbarát név                                     | Művelet neve                              | Megjegyzések                                  |
+|---------------------------------------------------|---------------------------------------------|------------------------------------------|
+| Adatforrás hozzáadása Power BI-átjáróhoz             | AddDatasourceToGateway (Adatforrás hozzáadása átjáróhoz)                      |                                          |
+| Power BI-mappahozzáférés hozzáadása                      | AddFolderAccess                             | Jelenleg nem használt                       |
+| Power BI-csoporttagok hozzáadása                      | AddGroupMembers (Csoporttagok hozzáadása)                             |                                          |
+| Egy rendszergazda adatfolyam-tárfiókot csatolt egy bérlőhöz | AdminAttachedDataflowStorageAccountToTenant | Jelenleg nem használt                       |
+| Power BI-adatkészlet elemezve                         | AnalyzedByExternalApplication (Külső alkalmazásban elemezve)               |                                          |
+| Power BI-jelentés elemzése                          | AnalyzeInExcel (Elemzés az Excelben)                              |                                          |
+| Power BI-adatkészlet kötése egy átjáróhoz                | BindToGateway (Kötés átjáróhoz)                               |                                          |
+| Kapacitásállapot módosítása                            | ChangeCapacityState (Kapacitásállapot módosítása)                         |                                          |
+| Kapacitás felhasználó-hozzárendelésének módosítása                  | UpdateCapacityUsersAssignment (Felhasználói hozzárendelések a kapacitásban)               |                                          |
+| Power BI-adathalmaz-kapcsolatok módosítása              | SetAllConnections (Az összes kapcsolat beállítása)                           |                                          |
+| Power BI-átjáró rendszergazdái módosítva                   | ChangeGatewayAdministrators (Átjáró-rendszergazdák módosítása)                 |                                          |
+| A Power BI-átjáró adatforrásának felhasználói módosultak        | ChangeGatewayDatasourceUsers (Átjáróadatforrás-felhasználók módosítása)                |                                          |
+| Vállalati Power BI-tartalomcsomag létrehozása      | CreateOrgApp (Szervezeti alkalmazás létrehozása)                                |                                          |
+| Power BI-alkalmazás létrehozása                              | CreateApp (Alkalmazás létrehozása)                                   |                                          |
+| Power BI-irányítópult létrehozása                        | CreateDashboard (Irányítópult létrehozása)                             |                                          |
+| Power BI-adatfolyam létrehozása                         | CreateDataflow (Adatfolyam létrehozása)                              |                                          |
+| Power BI-adathalmaz létrehozása                          | CreateDataset (Adatkészlet létrehozása)                               |                                          |
+| Power BI e-mail-feliratkozás létrehozása               | CreateEmailSubscription (E-mail-feliratkozás létrehozása)                     |                                          |
+| Power BI-mappa létrehozása                           | CreateFolder (Mappa létrehozása)                                |                                          |
+| Power BI-átjáró létrehozva                          | CreateGateway (Átjáró létrehozása)                               |                                          |
+| Power BI-csoport létrehozása                            | CreateGroup (Csoport létrehozása)                                 |                                          |
+| Power BI-jelentés létrehozása                           | CreateReport (Jelentés létrehozása)                                |                                          |
+| Adatfolyam migrálása külső tárfiókba     | DataflowMigratedToExternalStorageAccount    | Jelenleg nem használt                       |
+| Adatfolyam-engedélyek hozzáadása                        | DataflowPermissionsAdded                    | Jelenleg nem használt                       |
+| Adatfolyam-engedélyek eltávolítása                      | DataflowPermissionsRemoved                  | Jelenleg nem használt                       |
+| Vállalati Power BI-tartalomcsomag törlése      | DeleteOrgApp (Szervezeti alkalmazás törlése)                                |                                          |
+| Power BI-megjegyzés törlése                          | DeleteComment (Megjegyzés törlése)                               |                                          |
+| Power BI-irányítópult törlése                        | DeleteDashboard (Irányítópult törlése)                             | Jelenleg nem használt                       |
+| Power BI-adatfolyam törlése                         | DeleteDataflow (Adatfolyam törlése)                              | Jelenleg nem használt                       |
+| Power BI-adathalmaz törlése                          | DeleteDataset (Adatkészlet törlése)                               |                                          |
+| Power BI e-mail-feliratkozás törlése               | DeleteEmailSubscription (E-mail-feliratkozás törlése)                     |                                          |
+| Power BI-mappa törlése                           | DeleteFolder (Mappa törlése)                                |                                          |
+| Power BI-mappahozzáférés törlése                    | DeleteFolderAccess                          | Jelenleg nem használt                       |
+| Power BI-átjáró törölve                          | DeleteGateway (Átjáró törlése)                               |                                          |
+| Power BI-csoport törlése                            | DeleteGroup (Csoport törlése)                                 |                                          |
+| Power BI-jelentés törlése                           | DeleteReport (Jelentés törlése)                                |                                          |
+| Power BI-adathalmaz adatforrásainak felderítése          | GetDatasources (Adatforrások beszerzése)                              |                                          |
+| Letöltött Power BI-jelentés                        | DownloadReport (Jelentés letöltése)                              |                                          |
+| Power BI tanúsítási engedélyek szerkesztése          | EditCertificationPermission                 | Jelenleg nem használt                       |
+| Power BI-irányítópult szerkesztése                         | EditDashboard (Irányítópult szerkesztése)                               | Jelenleg nem használt                       |
+| Power BI-adathalmaz szerkesztése                           | EditDataset (Adatkészlet szerkesztése)                                 |                                          |
+| Power BI-adathalmaz tulajdonságainak szerkesztése                | EditDatasetProperties                       | Jelenleg nem használt                       |
+| Power BI-jelentés szerkesztése                            | EditReport (Jelentése szerkesztése)                                  |                                          |
+| Power BI-adatfolyam exportálása                        | ExportDataflow (Adatfolyam exportálása)                              |                                          |
+| Power BI-jelentés vizualizációs adatainak exportálása              | ExportReport (Jelentés exportálása)                                |                                          |
+| Power BI-csempeadatok exportálása                       | ExportTile (Csempe exportálása)                                  |                                          |
+| Adatfolyam-engedélyek sikertelen hozzáadása                | FailedToAddDataflowPermissions              | Jelenleg nem használt                       |
+| Adatfolyam-engedélyek sikertelen eltávolítása             | FailedToRemoveDataflowPermissions           | Jelenleg nem használt                       |
+| Power BI-adatfolyam SAS-jogkivonatának generálása             | GenerateDataflowSasToken (Adatfolyam-SAS-token generálása)                    |                                          |
+| Beágyazott Power BI-token generálása                    | GenerateEmbedToken (Beágyazott token generálása)                          |                                          |
+| Fájl importálása a Power BI-ba                         | Importálás                                      |                                          |
+| Power BI-alkalmazás telepítése                            | InstallApp (Alkalmazás telepítése)                                  |                                          |
+| Munkaterület kapacitásba migrálása                  | MigrateWorkspaceIntoCapacity (Munkaterület migrálása kapacitásba)                |                                          |
+| Power BI-megjegyzés közzététele                           | PostComment (Megjegyzés közzététele)                                 |                                          |
+| Power BI-irányítópult nyomtatása                        | PrintDashboard (Irányítópult nyomtatása)                              |                                          |
+| Power BI-jelentésoldal nyomtatása                      | PrintReport (Jelentés nyomtatása)                                 |                                          |
+| Power BI-jelentés webes közzététele                  | PublishToWebReport (Jelentés közzététele a weben)                          |                                          |
+| Power BI-adatfolyam titkos kódjának fogadása a Key Vaultból  | ReceiveDataflowSecretFromKeyVault           | Jelenleg nem használt                       |
+| Adatforrás törölve a Power BI-átjáróból         | RemoveDatasourceFromGateway (Adatforrás eltávolítása átjáróból)                 |                                          |
+| Power BI-csoporttagok eltávolítása                    | DeleteGroupMembers (Csoporttagok törlése)                          |                                          |
+| Munkaterület eltávolítása kapacitásból                 | RemoveWorkspacesFromCapacity (Munkaterületek eltávolítása kapacitásból)                |                                          |
+| Power BI-irányítópult átnevezése                        | RenameDashboard (Irányítópult átnevezése)                             |                                          |
+| Power BI-adatfolyam frissítésének kérése               | RequestDataflowRefresh                      | Jelenleg nem használt                       |
+| Power BI-adathalmaz frissítésének kérése                | RefreshDataset (Adatkészlet frissítése)                              |                                          |
+| Power BI-munkaterületek fogadása                     | GetWorkspaces                               |                                          |
+| Power BI-adatfolyam ütemezett frissítésének beállítása        | SetScheduledRefreshOnDataflow (Adatfolyam ütemezett frissítésének beállítása)               |                                          |
+| Power BI-adathalmaz ütemezett frissítésének beállítása         | SetScheduledRefresh (Ütemezett frissítés beállítása)                         |                                          |
+| Power BI-irányítópult megosztása                         | ShareDashboard (Irányítópult megosztása)                              |                                          |
+| Power BI-jelentés megosztása                            | ShareReport (Jelentés megosztása)                                 |                                          |
+| Megkezdett Power BI-próbaidőszak (kiterjesztett)                   | OptInForExtendedProTrial                    | Jelenleg nem használt                       |
+| Power BI-próbaidőszak megkezdése                            | OptInForProTrial (Regisztráció a Pro csomag próbaverziójára)                            |                                          |
+| Power BI-adatforrás átvétele                   | TakeOverDatasource (Adatforrás átvétele)                          |                                          |
+| Power BI-adathalmaz átvétele                        | TakeOverDataset (Adatkészlet átvétele)                             |                                          |
+| Közzé nem tett Power BI-alkalmazás                          | UnpublishApp (Alkalmazás közzétételének visszavonása)                                |                                          |
+| Kapacitásforrás szabályozási beállításainak frissítése      | UpdateCapacityResourceGovernanceSettings (Kapacitásforrás szabályozási beállításai)    | Az Office 365 felügyeleti portálján jelenleg nincs használatban |
+| Kapacitás-rendszergazda frissítése                            | UpdateCapacityAdmins (Kapacitás-rendszergazdák frissítése)                        |                                          |
+| Kapacitás megjelenített nevének frissítése                     | UpdateCapacityDisplayName (Kapacitás megjelenített neve)                   |                                          |
+| Vállalati Power BI-beállítások frissítése          | UpdatedAdminFeatureSwitch (Frissített rendszergazdai funkciókapcsoló)                   |                                          |
+| Power BI-alkalmazás frissítése                              | UpdateApp (Alkalmazás frissítése)                                   |                                          |
+| Power BI-adatfolyam frissítése                         | UpdateDataflow (Adatfolyam frissítése)                              |                                          |
+| Power BI-adathalmaz adatforrásainak frissítése             | UpdateDatasources (Adatforrások frissítése)                           |                                          |
+| Power BI-adathalmaz paramétereinek frissítése               | UpdateDatasetParameters (Adatkészlet-paraméterek frissítése)                     |                                          |
+| Power BI e-mail-feliratkozás frissítése               | UpdateEmailSubscription (E-mail-feliratkozás frissítése)                     |                                          |
+| Power BI-mappa frissítése                           | UpdateFolder (Mappa frissítése)                                |                                          |
+| Power BI-mappahozzáférés frissítése                    | UpdateFolderAccess (Mappahozzáférés frissítése)                          |                                          |
+| Power BI-átjáró adatforráshoz tartozó hitelesítő adatainak frissítése  | UpdateDatasourceCredentials (Adatforrás hitelesítő adatainak frissítése)                 |                                          |
+| Power BI-irányítópult megtekintése                         | ViewDashboard (Irányítópult megtekintése)                               |                                          |
+| Power BI-adatfolyam megtekintése                          | ViewDataflow (Adatfolyam megtekintése)                                |                                          |
+| Power BI-jelentés megtekintése                            | ViewReport (Jelentés megtekintése)                                  |                                          |
+| Power BI-csempe megtekintése                              | ViewTile (Csempe megtekintése)                                    |                                          |
+| Power BI-használati metrikák megtekintése                     | ViewUsageMetrics (Használati metrikák megtekintése)                            |                                          |
+|                                                   |                                             |                                          |
 
 ## <a name="next-steps"></a>Következő lépések
 

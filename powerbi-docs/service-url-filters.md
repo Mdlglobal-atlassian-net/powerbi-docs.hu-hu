@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 11/16/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: d708a4ff07a0d202fcc709f6348e48505d7589d0
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 6a2cfd4926089bce8973070949791e450a47cc4b
+ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973373"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51850591"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával
 
@@ -47,7 +47,7 @@ A mezőtípus lehet szám, dátum és idő vagy sztring, és a használt típusn
 
 * A **sztringeket** aposztrófok között kell megadni – ’vezető neve’.
 * A **számok** nem igényelnek különleges formázást
-* A **dátum és idő** értékeket aposztrófok között kell megadni, és eléjük be kell szúrni a **DateTime** szót.
+* A **dátumokat és időpontokat** aposztrófok között kell megadni. Az OData v3-ban ezeket a datetime szónak kell megelőznie. Az OData v4-ben ez nem szükséges.
 
 Ha egyelőre nem minden világos, akkor olvasson tovább, és bővebb kifejtést is találhat.  
 
@@ -167,7 +167,7 @@ Ez az eltérés akkor hasznos, ha különböző eredményeket szeretne megjelen�
 
 Lekérdezésisztring-paraméterek használatakor néhány szemponttal érdemes tisztában lenni.
 
-* Az *in* használatakor az *in* operátortól jobbra lévő értékek zárójelek közötti, vesszővel elválasztott listaként is megadhatók.    
+* Az *in* használatakor az *in* operátortól jobbra lévő értékeket zárójelek közötti, vesszővel elválasztott listaként kell megadni.    
 * A Power BI jelentéskészítő kiszolgálón [adhat át jelentésparamétereket](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) úgy, hogy belefoglalja őket a jelentés URL-címébe. Ezek az URL-paraméterek nincsenek előtaggal ellátva, mert a rendszer közvetlenül átadja őket a jelentésfeldolgozó motornak.
 * A lekérdezési sztringgel végzett szűrés a [webes közzététellel](service-publish-to-web.md) együtt nem működik.
 * [A SharePoint Online-ban jelentéskijelzővel történő beágyazás](service-embed-report-spo.md) nem támogatja az URL-szűrőket.

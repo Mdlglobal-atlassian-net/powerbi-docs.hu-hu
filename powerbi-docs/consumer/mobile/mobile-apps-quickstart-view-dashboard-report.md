@@ -1,5 +1,5 @@
 ---
-title: 'Rövid útmutató: Irányítópultok és jelentések felfedezése a Power BI mobilalkalmazásokban'
+title: 'Rövid útmutató: Irányítópultok és jelentések felfedezése mobilalkalmazásokban'
 description: Ebben a rövid útmutatóban a Power BI mobilalkalmazásokban használt irányítópultok és jelentések mintáját ismerheti meg.
 author: maggiesMSFT
 manager: kfile
@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: quickstart
-ms.date: 05/08/2018
+ms.date: 11/16/2018
 ms.author: maggies
-ms.openlocfilehash: 89f45409607cbe8da6cb1b167b6e71238d6edde0
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 6d5d543c3654da13592b24f4c70bc964eb7bddff
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548810"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157264"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Rövid útmutató: Irányítópultok és jelentések felfedezése a Power BI mobilalkalmazásokban
 Ebben a rövid útmutatóban az androidos telefonokhoz készült Power BI mobilalkalmazásban használt irányítópultok és jelentések mintáját ismerheti meg. Az itt leírtakat a többi mobilalkalmazásban is követheti. 
@@ -54,7 +54,7 @@ A rövid útmutató első lépéseként töltse le a Kiskereskedelmi elemzési m
 
 3. A bal alsó sarokban kattintson a **Lekérdezés** elemre.
    
-    ![Adatok lekérése](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-get-data.png)
+    ![Adatok beolvasása](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-get-data.png)
 
 3. A Lekérdezés lapon kattintson a **Minták** ikonra.
    

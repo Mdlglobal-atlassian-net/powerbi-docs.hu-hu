@@ -1,5 +1,5 @@
 ---
-title: A Power BI iOS-es mobilalkalmazás jelentéskészítő kiszolgálóhoz való távoli hozzáférésének konfigurálása
+title: iOS-es mobilalkalmazás jelentéskészítő kiszolgálóhoz való távoli hozzáférésének konfigurálása
 description: Ismerje meg, hogyan konfigurálható az iOS-es mobilalkalmazás jelentéskészítő kiszolgálóhoz való távoli hozzáférése.
 author: maggiesMSFT
 manager: kfile
@@ -7,21 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 11/15/2018
 ms.author: maggies
-ms.openlocfilehash: bbade67c9510b8d316364d991c09444712309514
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 538bb802998003dba63b6c63cca2068b2d7b69fa
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722178"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157425"
 ---
 # <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>A Power BI iOS-es mobilalkalmazás jelentéskészítő kiszolgálóhoz való távoli hozzáférésének konfigurálása
 
 Ebben a cikkben megismerheti, hogyan használható a cég MDM eszköze ahhoz, hogy a Power BI iOS-es mobilalkalmazásának jelentéskészítő kiszolgálóhoz való hozzáférését konfigurálja. Ehhez az informatikai rendszergazdának létre kell hoznia egy alkalmazáskonfigurálási szabályzatot a megfelelő információkkal, amelyet le lehet küldeni az alkalmazásba. 
 
- Ezt követően a Power BI iOS-es mobilalkalmazásának felhasználói egyszerűbben csatlakozhatnak a cég jelentéskiszolgálójához, mert a jelentéskészítő kiszolgálóval való kapcsolat már konfigurálva lesz. 
-
+ Ha a jelentéskészítő kiszolgálóval való kapcsolat már konfigurálva van, a Power BI iOS-es mobilalkalmazásának felhasználói egyszerűbben csatlakozhatnak a cég jelentéskiszolgálójához. 
 
 ## <a name="create-the-app-configuration-policy-in-mdm-tool"></a>Az alkalmazáskonfigurálási szabályzat létrehozása az MDM eszközzel 
 
@@ -39,7 +38,7 @@ A párokat az alábbi táblázatban láthatja.
 | com.microsoft.powerbi.mobile.ServerURL | Sztring | Jelentéskészítő kiszolgáló URL-címe </br> Http/https-sel kell kezdődnie |
 | com.microsoft.powerbi.mobile.ServerUsername | Sztring | [nem kötelező] </br> A kiszolgálóhoz való csatlakozáshoz használandó felhasználónév. </br> Ha még nem létezik ilyen, az alkalmazás kérni fogja a felhasználót, hogy adja meg a kapcsolathoz a felhasználónevet.| 
 | com.microsoft.powerbi.mobile.ServerDisplayName | Sztring | [nem kötelező] </br> Az alapértelmezett érték „Report server” („Jelentéskészítő kiszolgáló”) </br> Az alkalmazásban használt rövid név a kiszolgáló azonosítására | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | Az alapértelmezett érték True (Igaz) </br> A „True” (Igaz) érték felülírja a mobileszközben már meglévő összes definíciót a jelentéskészítő kiszolgálóhoz (a már konfigurált kiszolgálók törölve lesznek). </br> A felülbírálás True értékre állítása azt is megakadályozza, hogy a felhasználó eltávolítsa ezt a konfigurációt. </br> Ha „False” (Hamis) értéket használ, akkor a leküldött értékek hozzáadódnak, a már meglévő beállítások pedig megmaradnak. </br> Ha a mobilalkalmazásban ugyanaz a kiszolgálói URL-cím már konfigurálva van, akkor az alkalmazás érintetlenül hagyja a konfigurációt, és nem kéri a felhasználót arra, hogy ugyanahhoz a kiszolgálóhoz még egyszer végezze el a hitelesítést. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | Az alapértelmezett érték True (Igaz) </br>Ha értéke „True” (Igaz), felülbírálja a Jelentéskészítő kiszolgálónak a mobileszközön lévő definícióját. A már konfigurált meglévő kiszolgálók törölve lesznek. </br> A felülbírálás True értékre állítása azt is megakadályozza, hogy a felhasználó eltávolítsa ezt a konfigurációt. </br> Ha „False” (Hamis) értéket használ, akkor a leküldött értékek hozzáadódnak, a már meglévő beállítások pedig megmaradnak. </br> Ha az adott kiszolgálói URL-cím már konfigurálva van a mobilalkalmazásban, akkor az alkalmazás ezt a konfigurációt változatlanul hagyja. Az alkalmazás nem kéri fel a felhasználót, hogy újra hitelesítse magát ugyanazon a kiszolgálón. |
 
 Az alábbiakban bemutatunk egy példát arra, hogyan állítható be a konfigurálási szabályzat az Intune-ban.
 
@@ -47,7 +46,7 @@ Az alábbiakban bemutatunk egy példát arra, hogyan állítható be a konfigur�
 
 ## <a name="end-users-connecting-to-a-report-server"></a>A jelentéskészítő kiszolgálóhoz csatlakozó végfelhasználók
 
-Miután közzétette az alkalmazáskonfigurálási szabályzatot, a szabályzathoz definiált terjesztési listán szereplő felhasználók és eszközök az alábbi működést tapasztalják majd, amikor elindítják a Power BI iOS-es mobilalkalmazását. 
+ Tegyük fel, hogy az alkalmazáskonfigurálási szabályzatot egy terjesztési listán teszi közzé. Amikor a terjesztési listában szereplő felhasználók és eszközök elindítják az iOS-es mobilalkalmazást, a következőket tapasztalják. 
 
 1. Egy üzenet jelenik meg számukra arról, hogy a mobilalkalmazásuk egy jelentéskészítő kiszolgálóval lett konfigurálva, és kéri őket a **Bejelentkezésre**.
 

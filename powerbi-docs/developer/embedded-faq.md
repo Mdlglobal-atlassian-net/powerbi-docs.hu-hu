@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 09/17/2018
-ms.openlocfilehash: 56b6c954aa49f8adf0aa479f143fb11b932c107e
-ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
+ms.openlocfilehash: 8cdeed0c5575a8405ae5db6d1eaca522ab0597cb
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50736964"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679432"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Gyakori kérdések – Power BI Embedded
 
@@ -119,10 +119,10 @@ https://app.powerbi.com/ > ? > A Power BI bemutatása
 ![A Power BI bemutatása](media/embedded-faq/about-01.png)
 ![Bérlői régió](media/embedded-faq/tenant-location-01.png)
 
-### <a name="what-is-supported-with-the-communicating-sequential-processes-csp-channel"></a>Mit támogat a szekvenciális folyamatokat kommunikáló (CSP) csatorna?
+### <a name="what-is-supported-with-the-cloud-solution-provider-csp-channel"></a>Mi támogatott a Cloud Solution Provider (CSP) csatornával?
 
 * A CSP előfizetési típusú bérlőjéhez létrehozhat PBIE-t
-* A partnerfiók bejelentkezhet az ügyfélbérlőbe, vásárolhat PBIE-t az ügyfélbérlőhöz, és meghatározhatja az ügyfélbérlő felhasználóját a Power BI-kapacitás adminisztrátoraként
+* A partnerfiók bejelentkezhet az ügyfélbérlőbe, vásárolhat PBIE-t az ügyfélbérlőhöz, és meghatározhatja az ügyfélbérlő felhasználóját a Power BI-kapacitás rendszergazdájaként
 
 ### <a name="why-do-i-get-an-unsupported-account-message"></a>Miért kapok „nem támogatott fiók” üzenetet?
 

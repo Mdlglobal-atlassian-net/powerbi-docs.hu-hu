@@ -10,24 +10,32 @@ ms.topic: conceptual
 ms.date: 10/18/2018
 ms.author: jocaplan
 LocalizationGroup: Premium
-ms.openlocfilehash: 416f022ee3c413c69650e6f1736cc94edcd58f13
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 0449d7953b5cefb4c76d89f05ec5b3fa70e9c0da
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641252"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679382"
 ---
 # <a name="power-bi-premium-support-for-large-datasets"></a>Nagyméretű adathalmazok Power BI Premium-támogatása
 
-A Power BI Premium támogatja a legfeljebb 10 GB méretű Power BI Desktop- (.pbix-) fájlok feltöltését. Feltöltés után az adatkészlet frissíthet legfeljebb 12 GB méretig. Egy nagyméretű adathalmaz használatához tegye azt közzé egy prémium szintű kapacitáshoz társított munkaterületen. A cikk ismerteti, hogy mit érdemes megfontolni, illetve mik az ajánlott eljárások a nagyméretű adatkészletekkel folytatott munka esetén.
+A Power BI Premium támogatja a legfeljebb 10 GB méretű Power BI Desktop- (.pbix-) fájlok feltöltését. Feltöltés után az adatkészlet frissíthet legfeljebb 12 GB méretig. Egy nagyméretű adathalmaz használatához tegye azt közzé egy prémium szintű kapacitáshoz társított munkaterületen.
+ 
+## <a name="best-practices"></a>Ajánlott eljárások
 
-**A nagyméretű modellek rendkívül erőforrás-igényesek lehetnek** az Ön kapacitásán. Ajánlott legalább a P1 termékváltozat alkalmazása minden 1 GB-nál nagyobb méretű modell esetén. A következő táblázatban a különböző méretű .pbix-fájlokhoz ajánlott termékváltozatok vannak megadva:
+Ez a szakasz ismerteti a nagyméretű adathalmazok használatának ajánlott eljárásait.
+
+**A nagyméretű modellek rendkívül erőforrás-igényesek lehetnek** az Ön kapacitásán. Ajánlott legalább a P1 termékváltozat alkalmazása minden 1 GB-nál nagyobb méretű modell esetén. Bár nagy modellek legfeljebb A3-as SKU-kra épülő munkaterületre való közzététele sikeres lehet, a frissítésük nem.
+
+A következő táblázatban a különböző méretű .pbix-fájlokhoz ajánlott termékváltozatok vannak megadva:
 
    |Termékváltozat  |A .pbix-fájl mérete   |
    |---------|---------|
    |P1    | < 3 GB        |
    |P2    | < 6 GB        |
-   |P3, P4, P5    | legfeljebb 10 GB |
+   |P3, P4, P5    | legfeljebb 10 GB   |
+
+A Power BI Embedded A4 termékváltozata a P1 SKU-val, az A5 a P2-vel, az A6 pedig a P3-mal egyezik meg. Fontos tudni, hogy nagy modellek A és EM SKU-kba való közzététele olyan hibát eredményezhet, amely nem a megosztott kapacitásbeli modellméret-korlátozási hibával függ össze. Nagy modellek A és EM SKU-kban fellépő frissítési hibái feltehetően időtúllépésre utalnak. Dolgozunk az ilyen helyzetekben kapott hibaüzenetek érthetőbbé tételén.
 
 **A .pbix-fájlok nagy mértékben tömörített állapotban tartalmazzák az adatokat**. Az adatok mérete valószínűleg többszörösére fog nőni a memóriába való betöltéskor, és ehhez képest is a többszörösére nőhet az adatok frissítése során.
 

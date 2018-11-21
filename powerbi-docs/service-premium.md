@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/21/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 2ca75f191f27bd158b9fab67c7be6902154f8ac1
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 451727d473b59afd362e4f31e8aef634d2168f83
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641229"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717631"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Mi az a Microsoft Power BI Premium?
 
@@ -46,7 +46,7 @@ Az alábbi táblázat a megosztott és a prémium szintű kapacitás közötti k
 | --- | --- | --- |
 | **Frissítési időköz** |8/nap |48/nap |
 | **Dedikált hardverrel elkülönítve** |![](media/service-premium/not-available.png "Nem érhető el") |![](media/service-premium/available.png "Elérhető") |
-| ***Minden felhasználó*** **számára elérhető vállalati terjesztés** | | |
+| _**Minden felhasználó**_ **számára elérhető vállalati terjesztés** | | |
 | Alkalmazások és megosztás |![](media/service-premium/not-available.png "Nem érhető el") |![](media/service-premium/available.png "Elérhető")<sup>1</sup> |
 | Beágyazott API-k és vezérlők |![](media/service-premium/not-available.png "Nem érhető el") |![](media/service-premium/available.png "Elérhető")<sup>2</sup> |
 | **Power BI-jelentések helyszíni közzététele** |![](media/service-premium/not-available.png "Nem érhető el") |![](media/service-premium/available.png "Elérhető") |
@@ -83,6 +83,39 @@ A Power BI Premium csomópont-konfigurációkban különböző virtuálismag-kap
 * Az előtérrendszeri virtuális magokat használja a rendszer webes szolgáltatásokhoz, az irányítópultokhoz, a jelentés- és dokumentumkezeléshez, a hozzáférések kezeléséhez, az ütemezéshez, az API-khoz, a feltöltésekhez, és letöltésekhez és többnyire mindenhez, ami a felhasználói élmény részét képzi.
 
 * A háttérrendszeri virtuális magokat a nagyobb erőforrásigényű feladatokhoz, például a lekérdezések feldolgozásához, a gyorsítótár kezeléséhez, R szerverek futtatásához, adatfrissítéshez, természetes nyelvi feldolgozásához, valós idejű adatcsatornákhoz és a jelentések és képek megjelenítéséhez használja. A háttérrendszeri virtuális magokkal bizonyos mennyiségű memóriát is fenntart. A megfelelő mennyiségű memória nagy adatmodellek esetén vagy akkor válik különösen fontossá, amikor nagy számú aktív adatkészlet kezelésére van szükség.
+
+## <a name="workloads-in-premium-capacity"></a>Számítási feladatok prémium szintű kapacitásban
+
+Egy Power BI-beli számítási feladat felfogható a felhasználók számára felkínálható számos szolgáltatás egyikeként. A **Power BI Premium** és a **Power BI Embedded** kapacitásai alapértelmezés szerint csak a Power BI-lekérdezések felhőbeli futtatásával társított számítási feladatot támogatják.
+
+Most két további számítási feladathoz kínálunk előzetes verziójú támogatást: a **lapszámozott jelentésekhez** és az **adatfolyamokhoz**. Ezek a számítási feladatok a Power BI felügyeleti portálján, vagy a Power BI REST API-n keresztül engedélyezhetők. Beállíthatja az egyes számítási feladatok által felhasználható memória maximumát is, hogy szabályozni tudja a különböző számítási feladatok egymásra gyakorolt hatását. További információ: [Számítási feladatok konfigurálása](service-admin-premium-manage.md#configure-workloads).
+
+### <a name="default-memory-settings"></a>Alapértelmezett memóriabeállítások
+
+Az alábbi táblázatok a különböző elérhető [kapacitás-csomópontokon](#premium-capacity-nodes) alapuló alapértelmezett és minimális memóriaértékeket ismertetik. A memória adatfolyamokhoz dinamikusan, lapszámozott jelentésekhez viszont statikusan van lefoglalva. További információt a következő, [Szempontok lapszámozott jelentések esetén](#considerations-for-paginated-reports) című szakaszban talál.
+
+#### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office SKU-k szoftverszolgáltatásokhoz (SaaS)
+
+|                     | EM3                      | P1                       | P2                      | P3                       |
+|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
+| Oldalakra osztott jelentések | N.A. | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% | Alapértelmezés szerint 20%; minimum 2,5% |
+| Adatfolyamok | Alapértelmezés szerint 20%; minimum 8%  | Alapértelmezés szerint 20%; minimum 4%  | Alapértelmezés szerint 20%; minimum 2% | Alapértelmezés szerint 20%; minimum 1%  |
+| | | | | |
+
+#### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Microsoft Office SKU-k platformszolgáltatásokhoz (PaaS)
+
+|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
+|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
+| Oldalakra osztott jelentések | N.A.                      | N.A.                      | N.A.                     | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% | Alapértelmezés szerint 20%; minimum 2,5% |
+| Adatfolyamok         | Alapértelmezés szerint 27%; minimum 27% | Alapértelmezés szerint 20%; minimum 16% | Alapértelmezés szerint 20%; minimum 8% | Alapértelmezés szerint 20%; minimum 4%  | Alapértelmezés szerint 20%; minimum 2% | Alapértelmezés szerint 20%; minimum 1%   |
+
+### <a name="considerations-for-paginated-reports"></a>Szempontok lapszámozott jelentések esetén
+
+A „lapszámozott jelentések” számítási feladat használata során a következőket tartsa szem előtt.
+
+* **Memóriafoglalás lapszámozott jelentésekben**: A lapszámozott jelentések lehetővé teszik, hogy a jelentés renderelése során saját kódot futtasson (például dinamikusan változtassa a szövegszínt a tartalom alapján). Ezt figyelembe véve, a Power BI Premium-kapacitás védelme érdekében a lapszámozott jelentéseket a kapacitás egy korlátozott területén belül futtatjuk. Ehhez a területhez az Ön által megadott maximális memóriát foglaljuk le, akár aktív a számítási feladat, akár nem. Ha egy kapacitásban több Power BI-jelentést vagy -adatfolyamot használ, ügyeljen rá, hogy a lapszámozott jelentésekhez kellően alacsony memóriakorlátot adjon meg, hogy azok ne befolyásolhassák hátrányosan a többi számítási feladatot.
+
+* **A lapszámozott jelentések nem elérhetők**: Ritkán előfordulhat, hogy a „lapszámozott jelentések” számítási feladat elérhetetlenné válik. Ilyen esetben a számítási feladat hibás állapotot jelez a felügyeleti portálon, a felhasználók pedig időtúllépést tapasztalnak a jelentés renderelése során. A probléma megoldásához tiltsa le, majd engedélyezze újra a számítási feladatot.
 
 ## <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgáló
 

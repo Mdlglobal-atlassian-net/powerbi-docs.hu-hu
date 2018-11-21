@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/24/2018
+ms.date: 11/14/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cc1f348deb222ce080ac41ac2574f4fb1437e8db
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: cdc406ddd9c086114ca118130bb4973737de3ed1
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909015"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717895"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Új munkaterületek létrehozása a Power BI-ban (előzetes verzió)
 
@@ -168,7 +168,7 @@ A jelenlegi alkalmazás-munkaterületek egyes funkciói másképp működnek, mi
 
 A következő problémák ismertek, és már dolgozunk a megoldásukon:
 
-- Az e-mailes feliratkozók címzettjeiként hozzáadott felhasználók vagy felhasználói csoportok nem kapják meg az e-maileket. Ez a probléma akkor merül fel, amikor az új munkaterületi felület egy Prémium szintű kapacitásban található, az előfizetést létrehozó felhasználó Saját munkaterülete azonban nem. Ha a Saját munkaterület egy Prémium szintű kapacitásban található, az ingyenes felhasználók és felhasználói csoportok is megkapják az e-maileket.
+- Az e-mailes feliratkozók címzettjeiként hozzáadott felhasználók vagy felhasználói csoportok nem kapják meg az e-maileket. Ez a probléma akkor merül fel, amikor az új munkaterületek egyike egy prémium szintű kapacitásban található, az előfizetést létrehozó felhasználó Saját munkaterülete azonban nem. Ha a Saját munkaterület egy Prémium szintű kapacitásban található, az ingyenes felhasználók és felhasználói csoportok is megkapják az e-maileket.
 - Miután egy munkaterületet áthelyez egy Prémium szintű kapacitásból egy megosztott kapacitásba, az ingyenes felhasználók és felhasználói csoportok egyes esetekben továbbra is kapnak e-maileket, annak ellenére, hogy már nem szabadna. Ez a probléma akkor merül fel, az előfizetést létrehozó felhasználó Saját munkaterülete egy Prémium szintű kapacitásban található.
 
 ## <a name="next-steps"></a>Következő lépések

@@ -1,7 +1,7 @@
 ---
 title: A Power BI szolgáltatás alapfogalmai
 description: Munkaterületek, irányítópultok, jelentések, adathalmazok és munkafüzetek a Power BI szolgáltatásban.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
@@ -9,20 +9,20 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 07/19/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 8a95dae913c2069fa3768d66c55d2b1358640000
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 9b02bdfd2c0025977dbb69eae44f4e976a527a30
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641919"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717769"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – a Power BI szolgáltatás alapfogalmai
 
 A cikk feltételezi, hogy már [regisztrált a Power BI szolgáltatásra](service-self-service-signup-for-power-bi.md), és [hozzáadott adatokat](service-get-data.md).
 
-A Power BI szolgáltatás megnyitásakor egy ***irányítópult*** jelenik meg. Az irányítópult megkülönbözteti a Power BI szolgáltatást a Power BI Desktoptól.
+A Power BI szolgáltatás megnyitásakor egy **_irányítópult_** jelenik meg. Az irányítópult megkülönbözteti a Power BI szolgáltatást a Power BI Desktoptól.
 
 ![](media/service-basic-concepts/completenewest.png)
 
@@ -45,7 +45,7 @@ De meg is nézheti ezt a videót, mielőtt tovább olvassa a cikket.  A videóba
 
 
 ## <a name="power-bi-concepts"></a>A Power BI alapfogalmai
-A Power BI négy alapvető építőeleme a következő: ***irányítópultok***, ***jelentések***, ***munkafüzetek*** és ***adathalmazok***. Ezek mind pedig ***munkaterületekbe*** vannak szervezve. A négy építőelem részletes ismertetéséhez fontos tisztában lenni a munkaterületek működésével, ezért először ezekkel foglalkozunk.
+A Power BI 4 alapvető építőeleme a következő: **_irányítópultok_**, **_jelentések_**, **_munkafüzetek_** és **_adathalmazok_**. Ezek mind pedig **_munkaterületekbe_** vannak szervezve. A négy építőelem részletes ismertetéséhez fontos tisztában lenni a munkaterületek működésével, ezért először ezekkel foglalkozunk.
 
 ## <a name="workspaces"></a>Munkaterületek
 A munkaterületek a Power BI irányítópultjainak, jelentéseinek, munkafüzeteinek és adathalmazainak tárolói. A munkaterületeknek kétféle típusa van: a *Saját munkaterület* és az *alkalmazás-munkaterületek*. Mi tehát egy *alkalmazás*? Egy Power BI-*alkalmazás* az irányítópultok és jelentések egy olyan gyűjteménye, amely arra szolgál, hogy alapvető metrikákat bocsátson a szervezet rendelkezésére. Az alkalmazások interaktívak, de nem szerkeszthetők.
@@ -77,7 +77,7 @@ Az alábbi példában a „Sales and marketing” („Értékesítési és marke
 
 [Adathalmazhoz való csatlakozáshoz vagy annak importálásához](service-get-data.md) kattintson az **Adatok beolvasása** lehetőségre a bal oldali navigáció alján, vagy válassza a **+ Létrehozás > Adatkészlet** lehetőséget (a jobb felső sarokban). Kövesse az utasításokat az adott forráshoz való csatlakozáshoz vagy annak importálásához, majd adja hozzá az adathalmazt az aktív munkaterülethez. Az új adathalmazokat sárga csillag jelöli. A Power BI-ban végzett munka nem változtatja meg az alapjául szolgáló adatkészletet.
 
-Ha Ön [része egy ***alkalmazás-munkaterületnek***](service-collaborate-power-bi-workspace.md), akkor a munkaterület bármelyik tagja által hozzáadott adatkészletek a többi tag számára is láthatók.
+Ha Ön [része egy **_alkalmazás-munkaterületnek_**](service-collaborate-power-bi-workspace.md), akkor a munkaterület bármelyik tagja által hozzáadott adatkészletek a többi tag számára is láthatók.
 
 Az adathalmazok frissíthetők, átnevezhetők, elemezhetők és eltávolíthatók. Adathalmazok alapján létrehozhat jelentéseket újonnan, vagy [gyors elemzések](service-insights.md) futtatásával.  A **Kapcsolódó megtekintése** lehetőséget választva megtekintheti, hogy melyek azok a jelentések és irányítópultok, melyek már használnak adathalmazt. Ha elemezni szeretne egy adatkészletet, kattintson rá. Ilyenkor az adatkészletet a jelentésszerkesztőben nyitja meg, ahol mélyre áshat az adatokban, és vizualizációkat hozhat létre belőlük. Ez már továbbvezet a következő témához: a jelentésekhez.
 
@@ -87,9 +87,9 @@ Az adathalmazok frissíthetők, átnevezhetők, elemezhetők és eltávolíthat�
 * [A Power BI-hoz használható mintaadathalmazok](sample-datasets.md)
 
 ## <a name="reports"></a>Jelentések
-A Power BI-jelentések egy vagy több diagramból állnak, és vizualizációkat tartalmaznak (diagramok vagy grafikonok, például vonaldiagram, kördiagram, fatérkép stb. formájában). A vizualizációk másik elnevezése ***vizualizációs elem***. Egyetlen jelentés vizualizációi csak egy adatkészleten alapulhatnak. Jelentések létrehozhatók újonnan a Power BI szolgáltatásban, importálhatók a munkatársak által megosztott irányítópultokból, és létrehozhatók olyan adatkészletekhez való csatlakozással, amelyek az Excelből, a Power BI Desktopból, adatbázisokból, SaaS-alkalmazásokból vagy [alkalmazásokból](service-get-data.md) származnak.  Ha például csatlakozik egy Power View-lapokat tartalmazó Excel-munkafüzethez, akkor a Power BI elkészít egy jelentést a lapok alapján. Ha pedig SaaS-alkalmazáshoz csatlakozik, a Power BI egy előre elkészített jelentést importál.
+A Power BI-jelentések egy vagy több diagramból állnak, és vizualizációkat tartalmaznak (diagramok vagy grafikonok, például vonaldiagram, kördiagram, fatérkép stb. formájában). A vizualizációk másik elnevezése **_vizualizációs elem_**. Egyetlen jelentés vizualizációi csak egy adatkészleten alapulhatnak. Jelentések létrehozhatók újonnan a Power BI szolgáltatásban, importálhatók a munkatársak által megosztott irányítópultokból, és létrehozhatók olyan adatkészletekhez való csatlakozással, amelyek az Excelből, a Power BI Desktopból, adatbázisokból, SaaS-alkalmazásokból vagy [alkalmazásokból](service-get-data.md) származnak.  Ha például csatlakozik egy Power View-lapokat tartalmazó Excel-munkafüzethez, akkor a Power BI elkészít egy jelentést a lapok alapján. Ha pedig SaaS-alkalmazáshoz csatlakozik, a Power BI egy előre elkészített jelentést importál.
 
-A jelentések megtekintésének és használatának két módja van: az [Olvasó nézet és a Szerkesztő nézet](service-reading-view-and-editing-view.md).  A jelentés ***Szerkesztési nézetének*** elemzési, tervezési, kiépítési és megosztási funkcióihoz csak a jelentés készítője, a társtulajdonosok és az erre feljogosított felhasználók férhetnek hozzá. Azok, akikkel ők megosztják a jelentést, az ***Olvasó nézet*** segítségével tanulmányozhatják és használhatják.   
+A jelentések megtekintésének és használatának két módja van: az [Olvasó nézet és a Szerkesztő nézet](service-reading-view-and-editing-view.md).  A jelentés **_Szerkesztési nézetének_** elemzési, tervezési, kiépítési és megosztási funkcióihoz csak a jelentés készítője, a társtulajdonosok és az erre feljogosított felhasználók férhetnek hozzá. Azok, akikkel ők megosztják a jelentést, az **_Olvasó nézet_** segítségével tanulmányozhatják és használhatják.   
 
 Amikor megnyit egy munkaterületet, az ahhoz társított jelentések a **Jelentések** lapon vannak felsorolva. A listán szereplő jelentések mind olyan vizualizációkat tartalmaznak egy vagy több oldalon, amelyek kizárólag a mögöttes adathalmazok egyikén alapulnak. Ha meg szeretne nyitni egy jelentést, kattintson vagy koppintson rá.
 

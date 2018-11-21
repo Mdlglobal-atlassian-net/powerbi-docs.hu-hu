@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
-ms.openlocfilehash: 7b57e0d5e303f2b342e2d7750741717b178a8f4e
-ms.sourcegitcommit: f9dd6098ca57d4d6cad34284126d4e58eab1c92c
+ms.openlocfilehash: e62d39f13e2b171456d667ec9683acd4ebdc5516
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50222105"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157126"
 ---
 # <a name="power-bi-urls"></a>Power BI URL-címek
 
@@ -69,7 +69,7 @@ Ahhoz, hogy adatokat kérhessen le bizonyos adatforrásokból, például a OneDr
 | Sor | Szerep | Cél(ok) | Port(ok) |
 | --- | --- | --- | --- |
 | 1 | **Kötelező:** AppSource (belső vagy külső alkalmazások a Power BI-ban) | appsource.microsoft.com </br> *.s-microsoft.com  | TCP 443 |
-| 2 | **Kötelező:** Bejelentkezés és adatok lekérése tartalomcsomagokhoz | *.github.com  | TCP 443 |
+| 2 | **Nem kötelező:** Bejelentkezés és adatok lekérése tartalomcsomagokhoz | A használt tartalomcsomagoktól függ | A használt tartalomcsomagoktól függ |
 | 3 | **Választható:** Fájlok importálása személyes OneDrive-ból | Lásd: [A OneDrive webhelyhez megkövetelt URL-címek és portok](https://docs.microsoft.com/onedrive/required-urls-and-ports) | N.A. |
 | 4 | **Választható:** Power BI 60 másodperc alatt – bemutató videó | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
 | 5 | **Választható:** PubNub streamelési adatforrások | Lásd: [PubNub dokumentáció](https://support.pubnub.com/support/solutions/articles/14000043522) | N.A. |
