@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
 LocalizationGroup: Administration
-ms.openlocfilehash: b03e9da87aa507812045378b1fa3e581b7de159c
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 663a6bb9629e98dabab9934c7647bba6f7c14cd4
+ms.sourcegitcommit: a13abdb5a6c0c6a397b328ec2d68788ce3afa866
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266116"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52268366"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI felügyeleti portál
 
@@ -301,7 +301,7 @@ A munkahelyi felhasználók adatokat importálhatnak a szolgáltatásba, példá
 
 ### <a name="create-and-use-dataflows-preview"></a>Adatfolyamok létrehozása és használata (előzetes verzió)
 
-A vállalati felhasználók létrehozhatnak és használhatnak adatfolyamokat. [További információ](service-dataflows-overview.md)
+A vállalati felhasználók létrehozhatnak és használhatnak adatfolyamokat. További információ az adatfolyamokról: [Önkiszolgáló adat-előkészítés a Power BI-ban (előzetes verzió)](service-dataflows-overview.md). Az adatfolyamok prémium szintű kapacitásban való engedélyezéséről lásd: [Számítási feladatok konfigurálása](service-admin-premium-manage.md#configure-workloads).
 
 > [!NOTE]
 > Ez a beállítás az egész munkahelyre vonatkozik, és nem lehet korlátozni meghatározott csoportokra.
