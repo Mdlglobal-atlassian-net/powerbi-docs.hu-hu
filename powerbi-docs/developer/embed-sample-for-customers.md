@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 ms.date: 10/17/2018
-ms.openlocfilehash: d3076090b06cdb60b72c475fd156cc274985ea32
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: 49ea393af6e98ab0f081d95f5be6451064347ed4
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435488"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52332011"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Oktatóanyag: Power BI-jelentés, -irányítópult vagy -csempe beágyazása egy alkalmazásba a saját ügyfelek részére
 
@@ -107,7 +107,7 @@ További engedélyeket adhat meg az alkalmazásnak azokon felül, amelyeket az a
 
 Amikor beágyazza a jelentéseket, irányítópultokat vagy csempéket az ügyfelei számára, akkor egy alkalmazás-munkaterületen kell elhelyeznie a tartalmakat. A *fő* fióknak az alkalmazás-munkaterület rendszergazdai fiókjának kell lennie.
 
-1. Kezdjük a munkaterület létrehozásával. Kattintson a **munkaterületek** > **Alkalmazás munkaterületének létrehozása** lehetőségre. Az Alkalmazás munkaterületének létrehozása elemnél helyezze el azokat a tartalmakat, amelyekhez az alkalmazásnak hozzá kell férnie.
+1. Kezdjük a munkaterület létrehozásával. Kattintson a **munkaterületek** > **Alkalmazás-munkaterületek létrehozása** lehetőségre. Az Alkalmazás munkaterületének létrehozása elemnél helyezze el azokat a tartalmakat, amelyekhez az alkalmazásnak hozzá kell férnie.
 
     ![Munkaterület létrehozása](media/embed-sample-for-customers/embed-sample-for-customers-020.png)
 
@@ -243,7 +243,7 @@ using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
 // You need to provide the workspaceId where the dashboard resides.
-ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(workspaceId);
+ODataResponseListReport reports = await client.Reports.GetReportsInGroupAsync(workspaceId);
 
 // Get the first report in the group.
 Report report = reports.Value.FirstOrDefault();
@@ -341,7 +341,7 @@ Az alábbi táblázatból megtudhatja, milyen kapacitású Power BI Embedded-kap
 | --- | --- | --- | --- | --- | --- |
 | A1 |1 virtuális mag |0,5 mag, 3 GB RAM |0,5 mag |Másodpercenként 5 |1-300 |
 | A2 |2 virtuális mag |1 mag, 5 GB RAM |1 mag | Másodpercenként 10 |301-600 |
-| A3 |4 virtuális mag |2 mag, 10 GB RAM |2 mag | Másodpercenként 15 |601-1200 |
+| A3 |42 virtuális mag |2 mag, 10 GB RAM |2 mag | Másodpercenként 15 |601-1200 |
 | A4 |8 virtuális mag |4 mag, 25 GB RAM |4 mag |Másodpercenként 30 |1,201-2,400 |
 | A5 |16 virtuális mag |8 mag, 50 GB RAM |8 mag |Másodpercenként 60 |2,401-4,800 |
 | A6 |32 virtuális mag |16 mag, 100 GB RAM |16 mag |Másodpercenként 120 |4801-9600 |

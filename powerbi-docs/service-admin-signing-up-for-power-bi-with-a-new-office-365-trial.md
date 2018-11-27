@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: ef20b37d781e266de9e72117d2c57e58f802d4fa
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 26fa709eee00607911b2bee2e8bf3f5f1cba732f
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850384"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289105"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Regisztráció a Power BI-ra új Office 365 próbaverzióval
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gbSuFST-Nx4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Ez a cikk a Power BI-ra való regisztráció egy alternatív módját ismerteti az Office 365 próbaverziója használatával. Ha problémába ütközik, amikor munkahelyi e-mail-címével próbál regisztrálni a Power BI-ra, először győződjön meg arról, hogy a [Power BI-jal használható e-mail-címmel próbálkozik](service-self-service-signup-for-power-bi.md#what-email-address-can-be-used-with-power-bi). Ha nem jár sikerrel, próbáljon meg először regisztrálni az Office 365 próbaverziójára, majd ezután regisztrálni a Power BI-ra. A Power BI-t az Office 365 próbaverziójának lejárta után is használhatja.
+Ez a cikk a Power BI-ra való regisztráció egy alternatív módját ismerteti az Office 365 próbaverziója használatával. Ha problémába ütközik, amikor munkahelyi e-mail-címével próbál regisztrálni a Power BI-ra, először győződjön meg arról, hogy a [Power BI-jal használható e-mail-címmel próbálkozik](service-self-service-signup-for-power-bi.md#supported-email-addresses). Ha nem jár sikerrel, próbáljon meg először regisztrálni az Office 365 próbaverziójára, majd ezután regisztrálni a Power BI-ra. A Power BI-t az Office 365 próbaverziójának lejárta után is használhatja.
 
 1. Regisztráció Office 365 próbaverzióra [az Office 365 webhelyen](https://go.microsoft.com/fwlink/p/?LinkID=403802).
 
