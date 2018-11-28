@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c49750ef51c1b8bacc36946d2d5c75a08abb36d7
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: c2d4dc5d8c11db035cc2470c0c44d64a6b78cd1a
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101577"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452752"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dinamikus sorszintű biztonság Analysis Services-beli táblázatos modellel
 Ez az oktatóanyag bemutatja a **sorszintű biztonság** megvalósításához szükséges lépéseket az **Analysis Services-beli táblázatos modellben**, és a Power BI-jelentésben való használatának módját. A jelen oktatóanyagban szereplő lépések célja, hogy végigvezessék és megismertessék a minta adatkészlet teljesítéséhez szükséges lépésekkel.
@@ -50,7 +50,7 @@ Számos közzétett cikkben található leírás arról, hogy hogyan állíthat�
    A későbbi feladatokban visszatérünk ezekhez a felhasználókhoz.
 4. A következő lépés egy *belső illesztés* létrehozása a **DimSalesTerritory** táblával, amely a felhasználóhoz társított régió részleteit mutatja. Az alábbi kód elvégzi a *belső illesztést*, és az utána következő kép bemutatja, hogyan fog kinézni a tábla a sikeres *belső illesztés* után.
    
-       select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryKey] = b.[SalesTerritoryID]
+       select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryID] = b.[SalesTerritoryKey]
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_join_users.png)
 5. Figyelje meg, hogy a fenti képen például olyan információk láthatók, hogy melyik felhasználó melyik értékesítési régióért felelős. Ez az adat a **2. lépésben** létrehozott kapcsolat miatt jelenik meg. Azt is figyelje meg, hogy **Jon Doe felhasználó az ausztrál értékesítési régióba tartozik**. A későbbi lépésekben és feladatokban visszatérünk Jon Doe-hoz.

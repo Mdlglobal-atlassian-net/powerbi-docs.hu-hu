@@ -390,42 +390,54 @@ items:
     items:
     - name: A Power BI szolgáltatás újdonságai
       href: service-whats-new.md
-    - name: Alapfogalmak
+    - name: Alapfogalmak tervezőknek
       href: service-basic-concepts.md
-    - name: Önkiszolgáló regisztráció
-      href: service-self-service-signup-for-power-bi.md
-    - name: A Power BI-hoz használt Cortana bemutatása
-      href: service-cortana-intro.md
-    - name: Adatfrissítés a Power BI-ban
-      href: refresh-data.md
-    - name: Power BI az USA kormányzati szervei számára
-      href: service-govus-overview.md
-    - name: Funkciók licenctípusok szerint
-      href: service-features-license-type.md
     - name: 10 tanács segítségkéréshez
       href: service-tips-for-finding-help.md
-    - name: Szűrők és kiemelés a Power BI-jelentésekben
-      href: power-bi-reports-filters-and-highlighting.md
-    - name: Adatok lekérdezése fájlból
-      href: service-get-data-from-files.md
-    - name: A jelentésszerkesztő – bevezetés
-      href: service-the-report-editor-take-a-tour.md
-    - name: Vizualizációk a Power BI-ban
-      href: visuals/power-bi-report-visualizations.md
-    - name: Adatforrások a Power BI-ban
-      href: service-get-data.md
-    - name: A Kiterjesztett Pro-próbaverzió aktiválása
-      href: service-extended-pro-trial.md
-    - name: A Microsoft Flow és a Power BI
-      href: service-flow-integration.md
-    - name: Power BI – gyakori kérdések a Germany Cloud-ügyfelek számára
-      href: service-govde-faq.md
-    - name: Power BI – első lépések harmadik féltől származó alkalmazásokkal
-      href: service-power-bi-get-started-third-party-apps.md
-    - name: Összesítések (összeg, átlag, maximum stb.) a Power BI-ban
-      href: service-aggregates.md
-    - name: Oldal megjelenítési beállításai Power BI-jelentésben
-      href: power-bi-report-display-settings.md
+    - name: Licencelés
+      items:
+      - name: Önkiszolgáló regisztráció
+        href: service-self-service-signup-for-power-bi.md
+      - name: Funkciók licenctípusok szerint
+        href: service-features-license-type.md
+      - name: A Kiterjesztett Pro-próbaverzió aktiválása
+        href: service-extended-pro-trial.md
+      - name: Power BI az USA kormányzati szervei számára
+        href: service-govus-overview.md
+      - name: Gyakori kérdések a Germany Cloud-ügyfelek számára
+        href: service-govde-faq.md
+    - name: Adatok
+      items:
+      - name: Adatforrások a Power BI-ban
+        href: service-get-data.md
+      - name: Adatok lekérdezése fájlból
+        href: service-get-data-from-files.md
+      - name: Összesítések (összeg, átlag, maximum stb.)
+        href: service-aggregates.md
+      - name: Adatfrissítés a Power BI-ban
+        href: refresh-data.md
+      - name: Az Azure és a Power BI
+        href: service-azure-and-power-bi.md
+      - name: A Power BI és az Azure kimenő forgalma
+        href: service-azure-egress-power-bi.md
+    - name: Jelentéstervezés
+      items:
+      - name: A jelentésszerkesztő – bevezetés
+        href: service-the-report-editor-take-a-tour.md
+      - name: Vizualizációk a Power BI-ban
+        href: visuals/power-bi-report-visualizations.md
+      - name: Szűrők és kiemelések a jelentésekben
+        href: power-bi-reports-filters-and-highlighting.md
+      - name: Oldal megjelenítési beállításai Power BI-jelentésben
+        href: power-bi-report-display-settings.md
+      - name: A Power BI-hoz használt Cortana bemutatása
+        href: service-cortana-intro.md
+    - name: Egyéb
+      items:
+      - name: A Microsoft Flow és a Power BI
+        href: service-flow-integration.md
+      - name: Első lépések harmadik féltől származó alkalmazásokkal
+        href: service-power-bi-get-started-third-party-apps.md
   - name: Útmutató
     items:
     - name: Gyakori feladatok
@@ -548,13 +560,13 @@ items:
         href: service-connect-to-zuora.md
     - name: Fájlokból származó adatok
       items:
-      - name: Excel-munkafüzettől egy lenyűgöző jelentésig villámgyorsan
+      - name: Az Exceltől a lenyűgöző jelentésekig
         href: service-from-excel-to-stunning-report.md
       - name: Adatok elérése Excel-munkafüzetfájlokból
         href: service-excel-workbook-files.md
       - name: Adatok lekérése Power BI Desktop-fájlokból
         href: service-desktop-files.md
-      - name: Paraméterbeállítások adatkészletekhez
+      - name: Paraméterek szerkesztése
         href: service-parameters.md
       - name: Adatok lekérdezése vesszővel tagolt (.csv) fájlból
         href: service-comma-separated-value-files.md
@@ -562,7 +574,7 @@ items:
         href: service-real-time-streaming.md
       - name: Közzététel Excel 2016-ból a Power BI-ba
         href: service-publish-from-excel.md
-      - name: Excel-munkafüzet méretének csökkentése a Power BI-ban való megtekintéshez
+      - name: Excel-munkafüzet méretének csökkentése
         href: reduce-the-size-of-an-excel-workbook.md
     - name: Adatbázisból származó adatok
       items:
@@ -574,23 +586,19 @@ items:
         href: spark-on-hdinsight-with-direct-connect.md
       - name: Az SQL Server Analysis Services élő adatai a Power BI-ban
         href: sql-server-analysis-services-tabular-data.md
-      - name: Az Azure és a Power BI
-        href: service-azure-and-power-bi.md
-      - name: A Power BI és az Azure kimenő forgalma
-        href: service-azure-egress-power-bi.md
     - name: Adatfrissítés
       items:
       - name: Ütemezett frissítés beállítása
         href: refresh-scheduled-refresh.md
-      - name: Power BI Desktop-fájlból létrehozott adatkészlet frissítése (helyi)
+      - name: Power BI Desktop-fájlból létrehozott adatkészlet frissítése – helyi
         href: refresh-desktop-file-local-drive.md
-      - name: Power BI Desktop-fájlból létrehozott adatkészlet frissítése (felhőbeli)
+      - name: Power BI Desktop-fájlból létrehozott adatkészlet frissítése – felhő
         href: refresh-desktop-file-onedrive.md
-      - name: Excel-munkafüzetből létrehozott adatkészlet frissítése (helyi)
+      - name: Excel-munkafüzetből létrehozott adatkészlet frissítése – helyi
         href: refresh-excel-file-local-drive.md
-      - name: Excel-munkafüzetből létrehozott adatkészlet frissítése (felhőbeli)
+      - name: Excel-munkafüzetből létrehozott adatkészlet frissítése – felhő
         href: refresh-excel-file-onedrive.md
-      - name: A OneDrive-ban tárolt, vesszővel tagolt (.csv) fájlból létrehozott adatkészlet frissítése
+      - name: CSV-fájlból létrehozott adatkészlet frissítése a OneDrive-ban
         href: refresh-csv-file-onedrive.md
       - name: Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása
         href: refresh-troubleshooting-refresh-scenarios.md
@@ -604,25 +612,25 @@ items:
         href: service-dashboard-create.md
       - name: Irányítópult másolatának létrehozása
         href: service-dashboard-copy.md
-      - name: Csempe rögzítése Power BI-irányítópultra jelentésből
+      - name: Csempe rögzítése az irányítópultra jelentésből
         href: service-dashboard-pin-tile-from-report.md
-      - name: Csempe rögzítése egy irányítópultról egy másikra
+      - name: Csempe kitűzése egy irányítópultról egy másikra
         href: service-pin-tile-to-another-dashboard.md
-      - name: Csempe rögzítése Power BI-irányítópultra Excelből
+      - name: Csempe rögzítése az irányítópultra az Excelből
         href: service-dashboard-pin-tile-from-excel.md
-      - name: Csempe rögzítése Power BI-irányítópultra a Q&A kérdésmezőből
+      - name: Csempe rögzítése az irányítópultra a Q&A kérdésmezőből
         href: service-dashboard-pin-tile-from-q-and-a.md
-      - name: Teljes jelentésoldal rögzítése Power BI-irányítópultra
+      - name: Teljes jelentésoldal rögzítése irányítópultra
         href: service-dashboard-pin-live-tile-from-report.md
       - name: Használati metrikák irányítópultokhoz
         href: service-usage-metrics.md
-      - name: Kép, szövegmező, videó vagy webes kód felvétele az irányítópultra
+      - name: Kép, szövegmező, videó vagy kód felvétele az irányítópultra
         href: service-dashboard-add-widget.md
-      - name: Csempe szerkesztése – átméretezés, áthelyezés, átnevezés, rögzítés, törlés és hivatkozás hozzáadása
+      - name: Csempe szerkesztése
         href: service-dashboard-edit-tile.md
-      - name: Tippek a tökéletes Power BI-irányítópult megtervezéséhez
+      - name: Tippek a tökéletes irányítópult megtervezéséhez
         href: service-dashboards-design-tips.md
-      - name: Adatok optimalizálása a Power BI gyors elemzéseihez
+      - name: Adatok optimalizálása gyors elemzésekhez
         href: service-insights-optimize.md
       - name: Irányítópult telefonos nézetének létrehozása
         href: service-create-dashboard-mobile-phone-view.md
@@ -708,7 +716,7 @@ items:
         href: service-collaborate-power-bi-workspace.md
       - name: Csoport kezelése a Power BI-ban és az Office 365-ben
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
-      - name: A OneDrive Vállalati verzióban tárolt Excel-munkafüzetre hivatkozó irányítópult megosztása
+      - name: A OneDrive-ban tárolt Excel-munkafüzetre hivatkozó irányítópult megosztása
         href: service-share-dashboard-that-links-to-excel-onedrive.md
     - name: Tartalomcsomagok
       items:
@@ -936,6 +944,8 @@ items:
         href: developer/custom-visual-develop-tutorial-format-options.md
     - name: Fogalmak
       items:
+      - name: Útmutató Power BI-vizualizációkhoz
+        href: developer/office-store-in-app-purchase-visual-guidelines.md
       - name: Képességek használata
         href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
       - name: Adatnézet-leképezések
@@ -1255,9 +1265,9 @@ items:
       href: service-admin-governance.md
     - name: A Power BI és a biztonság
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 6be9e4865dd91817bd4b73c2763d6f7d374e1013
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: d6dd88caff9e0f2cdef7f7697c81161fe32c0b35
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289289"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331850"

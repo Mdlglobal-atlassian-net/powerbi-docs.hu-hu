@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 97d9fc6bf7a27b9d681d10ae20ab0780622e5ee8
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 098447f4d0c0b1dc9534c91e84827c4cefb8850c
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223398"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452545"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>A DirectQuery által támogatott adatforrások a Power BI-ban
 A **Power BI Desktopban** és a **Power BI szolgáltatásban** számos adatforráshoz csatlakozhat, és hozzáférhet ezek adataihoz. Ez a cikk azt ismerteti, hogy a Power BI mely adatforrásai támogatják a **DirectQuery** néven ismert kapcsolódási módszert. További, a DirectQueryre vonatkozó információkért lásd [**a DirectQuery Power BI-ban történő használatát**](desktop-directquery-about.md) ismertető cikket.
@@ -62,7 +62,7 @@ Az alábbi tábla meghatározza, hogy szükség van-e **helyszíni adatátjáró
 | Amazon Redshift |Nem |
 | Impala (2.x-es verzió) |Igen |
 | Snowflake |Igen |
-| Spark (bétaverzió) (0.9-es és újabb) |Még nem támogatott a **Power BI szolgáltatásban** |
+| Spark (bétaverzió) (0.9-es és újabb) |Igen |
 | Azure HDInsight Spark (bétaverzió) |Nem |
 | IBM Netezza |Igen |
 | SAP Business Warehouse-alkalmazáskiszolgáló |Igen |

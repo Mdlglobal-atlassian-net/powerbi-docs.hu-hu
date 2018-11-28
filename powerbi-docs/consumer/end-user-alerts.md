@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 10/08/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ba27b42d6449d38fef2659507f035144c67f23fd
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 7982c2b29d5d92a992a115c92cbc7f0d128cb9d6
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223214"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452591"
 ---
 # <a name="tutorial-set-data-alerts-in-power-bi-service"></a>Oktatóanyag: Adatriasztások beállítása a Power BI szolgáltatásban
 Riasztásokat állíthat be, amelyek figyelmeztetik, ha az irányítópultjain lévő adatok változásai meghaladják a beállított korlátokat. 
@@ -75,7 +75,7 @@ Ezután a Power BI egy riasztást küld az Értesítési központba, valamint v�
    ![Értesítési ikon a Power BI szolgáltatásban](media/end-user-alerts/powerbi-alert-notifications.png)
 3. A riasztás részleteinek megtekintéséhez nyissa meg az Értesítési központot.
    
-    ![riasztás olvasása](media/end-user-alerts/powerbi-alert-notfication.png)
+    ![riasztás olvasása](media/end-user-alerts/powerbi-alert-notification.png)
    
    > [!NOTE]
    > A riasztások kizárólag a frissített adatokon működnek. Az egyes adatok frissítésekor a Power BI ellenőrzi, hogy az adott adathoz van-e beállítva riasztás. Ha az adott adat elérte a riasztási küszöböt, a riasztás aktiválódik.

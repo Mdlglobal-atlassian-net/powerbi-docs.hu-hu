@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2017
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 33d8911ee819bbc1ac37976f077edabee368f5aa
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 1f60c24a244b05aca93b312921b943e261d4d266
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850568"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452683"
 ---
 # <a name="optimize-your-data-for-power-bi-quick-insights"></a>Adatok optimalizálása a Power BI gyors elemzéseihez
 Szeretne jobb eredményeket elérni a Gyors elemzésekkel?  Ha Ön az adatkészlet tulajdonosa, próbálja meg a következőket:
@@ -23,7 +23,7 @@ Szeretne jobb eredményeket elérni a Gyors elemzésekkel?  Ha Ön az adatkészl
 * Rejtsen el oszlopokat az adatkészletből, vagy szüntesse meg oszlopok elrejtését. A Power BI gyors elemzési szolgáltatása az elrejtett oszlopokban nem hajtja végre a keresést.  Ezért rejtse el az ismétlődő vagy szükségtelen oszlopokat, és szüntesse meg a releváns oszlopok elrejtését.
 * Használjon többféle adattípust, például neveket, időpontokat, dátumokat és számokat.
 * Kerülje (vagy rejtse el) az ismétlődő információt tartalmazó oszlopokat.  Ez értékes időt vehet el a jelentést hordozó mintázatok feltárásától.  Ilyen lehet például, ha az egyik oszlopban az államok neve szerepel, a másikban pedig az államnevek rövidítése.
-* Kapott hibaüzenetet, mely arról tájékoztatja, hogy az adatok statisztikailag nem szignifikánsak?  Ez akkor fordulhat elő, ha a modell nagyon egyszerű, vagy nem tartalmaz túl sok adatot, vagy nem rendelkezik dátum- illetve számoszlopokkal. Elemzések generálásához az adatkészletnek rendelkeznie kell legalább egy dimenzióval és egy kategóriával.
+* Kapott hibaüzenetet, mely arról tájékoztatja, hogy az adatok statisztikailag nem szignifikánsak?  Ez akkor fordulhat elő, ha a modell nagyon egyszerű, vagy nem tartalmaz túl sok adatot, vagy nem rendelkezik dátum- illetve számoszlopokkal.
 
 ### <a name="next-steps"></a>Következő lépések
 [Power BI – gyors elemzések](consumer/end-user-insights.md)
