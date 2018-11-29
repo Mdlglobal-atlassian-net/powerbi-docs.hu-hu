@@ -1,54 +1,48 @@
 ---
-title: Irányítópultok a Power BI szolgáltatásban
-description: Az irányítópult a Power BI szolgáltatás egyik legfontosabb funkciója.
+title: Irányítópultok a Power BI szolgáltatás tervezői számára – bevezetés
+description: Az irányítópult a Power BI szolgáltatás egyik legfontosabb funkciója. Ez egy gyakran vászonnak is nevezett oldal, amely vizualizációk segítségével mutat be információkat.
 author: maggieMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2018
+ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b7f94d47452fb9d1ea24c950dba2988c6c80c053
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 709518924fbb9d83201eb5c070b7a3e93838ec79
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473728"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331942"
 ---
-# <a name="dashboards-in-the-power-bi-service"></a>Irányítópultok a Power BI szolgáltatásban
+# <a name="intro-to-dashboards-for-power-bi-designers"></a>Irányítópultok a Power BI szolgáltatás tervezői számára – bevezetés
 
-A Power BI-***irányítópult*** egy gyakran vászonnak is nevezett oldal, amely vizualizációk segítségével mesél el egy történetet. Mivel az irányítópult egyetlen lapon jelenik meg, ezért a jól megtervezett irányítópult csak a történet legfontosabb elemeit tartalmazza.
+A ***Power BI-irányítópult*** egy gyakran vászonnak is nevezett oldal, amely vizualizációk segítségével mutat be információkat. Mivel egyetlen lapon jelenik meg, ezért a jól megtervezett irányítópult csak a történet legfontosabb elemeit tartalmazza. Az olvasók a kapcsolódó jelentésekben tekinthetik meg a részleteket.
 
 ![irányítópult](media/service-dashboards/power-bi-dashboard2.png)
 
-Az irányítópult a Power BI szolgáltatás egyik funkciója, ezért a Power BI Desktopban nem érhető el. Mobileszközökön csak [megtekinteni és megosztani](mobile-apps-view-dashboard.md) lehet az irányítópultokat, létrehozni nem.
+Az irányítópult a Power BI szolgáltatás egyik funkciója. A Power BI Desktopban nem érhetők el. Mobileszközön nem hozhat létre irányítópultokat, azonban [megtekintheti és megoszthatja](mobile-apps-view-dashboard.md) őket.
 
-## <a name="dashboard-creators-and-dashboard-consumers"></a>Az irányítópultok létrehozói és felhasználói
-Szerepkörétől függően létrehozhat irányítópultokat saját maga vagy akár kollégái számára. Információt az **Irányítópult létrehozóknak** című tájékoztatóban találhat. Ha más felhasználóktól kapja az irányítópultokat. Szeretné megtanulni, hogyan kell értelmeznie és használnia azokat. Akkor ez a cikk Önnek szól!
+## <a name="dashboard-basics"></a>Irányítópult – alapok 
 
-
-### <a name="if-you-will-be-receiving-and-consuming-dashboards"></a>Ha irányítópultokat fogad és használ
-
-Az irányítópulton látható vizualizációkat *csempéknek* nevezik, és az irányítópult *létrehozói* a jelentésekből az irányítópultokra *rögzíthetik* őket. Ha csak most kezdte el használni a Power BI-t, a [Power BI alapfogalmait](service-basic-concepts.md) elolvasva egyszerűen elsajátíthatja az alapokat.
+Az irányítópulton látható vizualizációkat *csempéknek* nevezik. Ezek jelentésekből *rögzíthetők* az irányítópultra. Ha csak most kezdte el használni a Power BI-t, a [Power BI alapfogalmait](service-basic-concepts.md) elolvasva egyszerűen elsajátíthatja az alapokat.
 
 > [!IMPORTANT]
-> A megosztott irányítópultok megtekintéséhez [Power BI Pro](service-free-vs-pro.md) szükséges.
+> Irányítópult létrehozásához [Power BI Pro-licencre](service-free-vs-pro.md) van szüksége.
 
-Az irányítópulton megjelenő vizualizációk a jelentéseken, az egyes jelentések pedig egy-egy adatkészleten alapulnak. Az irányítópultok tulajdonképpen az alapjául szolgáló jelentésekhez és adatkészletekhez való hozzáférési útnak is tekinthetők. Egy vizualizáció kiválasztásával hozzáférhet a létrehozásához használt jelentéshez (és adatkészlethez).
+Az irányítópulton megjelenő vizualizációk a jelentéseken, az egyes jelentések pedig egy-egy adatkészleten alapulnak. Az irányítópultok az alapjául szolgáló jelentésekhez és adatkészletekhez való hozzáférési útnak is tekinthetők. Egy vizualizáció kiválasztásával hozzáférhet az alapjául szolgáló jelentéshez (és adatkészlethez).
 
 ![az irányítópultok, jelentések és adatkészletek közötti kapcsolatot megjelenítő diagram](media/service-dashboards/power-bi-diagram.png)
 
-
-
 ## <a name="advantages-of-dashboards"></a>Az irányítópultok előnyei
-Az irányítópultok segítségével nagyszerűen nyomon követheti üzletmenetét, választ találhat kérdéseire, és egyetlen pillantással megtekintheti a legfontosabb mérőszámokat. Az irányítópulton található vizualizációk egy vagy több adatkészletből vagy jelentésből is származhatnak. Az irányítópult a helyi és a felhőben keletkezett adatokat ötvözi, és egyesített nézetet biztosít függetlenül attól, hogy az adatok hol találhatók.
+Az irányítópultok segítségével nagyszerűen nyomon követheti üzletmenetét, és egyetlen pillantással megtekintheti a legfontosabb mérőszámokat. Az irányítópulton található vizualizációk egy vagy több adatkészletből vagy jelentésből is származhatnak. Az irányítópult a helyi és a felhőben keletkezett adatokat ötvözi, és egyesített nézetet biztosít függetlenül attól, hogy az adatok hol találhatók.
 
-Az irányítópult nem csak egy tetszetős kép, hanem egy interaktív funkció, amelyben az egyes csempék az alapul szolgáló adatok változásának megfelelően frissülnek.
+Az irányítópult nem csak egy tetszetős kép. Egy interaktív funkció, amelyben az egyes csempék az alapul szolgáló adatok változásának megfelelően frissülnek.
 
 ## <a name="dashboards-versus-reports"></a>Irányítópultok és jelentések
-A [Jelentések](service-reports.md) összekeverhetők az irányítópultokkal, mivel mind a kettő egy vizualizációkkal teli vászon. Azonban van köztük néhány alapvető különbség a Power BI felhasználói számára.
+A [jelentések](service-reports.md) hasonlítanak az irányítópultokra, mivel mind a kettő egy vizualizációkkal teli vászon. Azonban van köztük néhány alapvető különbség.
 
 | **Képesség** | **Irányítópultok** | **Jelentések** |
 | --- | --- | --- |
@@ -66,6 +60,6 @@ A [Jelentések](service-reports.md) összekeverhetők az irányítópultokkal, m
 
 ## <a name="next-steps"></a>Következő lépések
 * [Minta-irányítópultjaink](sample-tutorial-connect-to-the-samples.md) egyikének megtekintése révén megismerkedhet az irányítópultok használatával.
-* Ismerkedjen meg az [irányítópult-csempékkel](service-dashboard-tiles.md), és fedezze fel mi történik, ha kiválaszt egy csempét.
+* Információ az [irányítópult csempéiről](service-dashboard-tiles.md).
 * Szeretne nyomon követni egy adott irányítópult-csempét, és e-mailes értesítést kapni, ha elér egy bizonyos küszöbértéket? [Riasztások létrehozása a csempéken](service-set-data-alerts.md).
-* Tegye fel bátran az irányítópultokkal kapcsolatos kérdéseit. Fedezze fel, hogyan teheti fel az adatokkal kapcsolatos kérdéseit és szerezheti meg a válaszokat vizualizáció formájában a [Power BI Q&A](power-bi-tutorial-q-and-a.md) segítségével.
+* Fedezze fel, hogyan teheti fel az adatokkal kapcsolatos kérdéseit és szerezheti meg a válaszokat vizualizáció formájában a [Power BI Q&A](power-bi-tutorial-q-and-a.md) segítségével.

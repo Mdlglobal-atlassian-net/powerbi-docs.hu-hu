@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/22/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4e0f8dac3a5d254594c512f0a9804773308c9eb7
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 3e1c08e2dd9515ea49279cbd5c331d358b3b9ed4
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717284"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452568"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Irányítópult-témák használata a Power BI szolgáltatásban
 Az **Irányítópult-témák** használatával egységes színtémát alkalmazhat az egész irányítópultra, például a cég színeit, az évszaknak megfelelő színeket vagy bármely más színtémát, amit csak szeretne. **Irányítópult-témák** alkalmazásakor az irányítópulton szereplő összes vizualizáció a kiválasztott téma színeit fogja használni (ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be).
@@ -46,7 +46,7 @@ A Power BI irányítópultjainál az alapértelmezés szerinti téma a **Világo
 
 ![Egyéni lehetőség kiválasztása a legördülő listában](media/service-dashboard-themes/power-bi-theme-custom.png)
 
-Saját irányítópult-téma létrehozásához használja az egyéni lehetőségeket. Ha háttérképet szeretne hozzáadni, javasoljuk, hogy legalább 1920x1080 felbontású képet használjon. Ha hátteret szeretne képként használni, töltse fel a képet egy nyilvános webhelyre, másolja le az URL-címet, és illessze be a **Kép URL-címe** mezőbe. 
+Saját irányítópult-téma létrehozásához használja az egyéni lehetőségeket. Ha háttérképet szeretne hozzáadni, javasoljuk, hogy legalább 1920x1080 felbontású képet használjon. Ha egy képet szeretne háttérként használni, töltse fel a képet egy nyilvános webhelyre, másolja le az URL-címet, és azt illessze be a **Kép URL-címe** mezőbe. 
 
 ### <a name="using-json-themes"></a>JSON-témák használata
 Egyéni témát úgy is létrehozhat, ha feltölt egy olyan JSON-fájlt, amely tartalmazza az összes beállítást az irányítópulton használni kívánt összes színhez. A Power BI Desktopban a jelentéskészítők JSON-fájlokat használnak a [jelentések témáinak létrehozásához](desktop-report-themes.md). Ugyanezek a JSON-fájlok az irányítópultokhoz is feltölthetőek, de kereshet feltölthető JSON-fájlokat a Power BI közösség [Tématárában](https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery) is 

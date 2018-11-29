@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/20/2018
+ms.date: 11/20/2018
 ms.author: maggies
-ms.openlocfilehash: 4a5d124ffd213c54d628ff15e32ece18e56913eb
-ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
+ms.openlocfilehash: f97393a8a7fe8dc9c413a0cb0cda8be0e965da5b
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157422"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289197"
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>A Power BI szolgáltatás tartalomcsomag-programjának áttekintése
 A tartalomcsomagok olyan nem beépített tartalmakból álló csomagok, amelyekkel a felhasználók azonnali elemzésekhez juthatnak adatforrásaikból. A tartalomcsomagok általában egy adott üzleti forgatókönyvre fókuszálva elemzéseket készítenek egy szerepkörről, tartományról vagy munkafolyamatról.
@@ -45,7 +45,7 @@ Ahhoz, hogy létrehozzon egy tartalomcsomagot, majd beküldje a Power BI szolgá
 * SaaS-alkalmazása számára engedélyezve van tartalomcsomag közzététele. Kérelem beküldése: pbiservicesapps@microsoft.com. Minden kérelmet a relevancia és a várható használat alapján értékelünk. 
 * Aláírt partnerszerződéssel kell rendelkeznie. Ezt a [beküldés lépésben](template-content-pack-testing.md#submission) fogja megtenni.
 
-Kérjük, tekintse át a [tartalomkészítés](template-content-pack-authoring.md) szakaszt, amelyben részletesebben olvashat a technikai követelményekről.
+Tekintse át a [tartalomkészítés](template-content-pack-authoring.md) szakaszt, amelyben részletesebben olvashat a technikai követelményekről.
 
 ## <a name="business-scenario"></a>Vállalati forgatókönyv
 A tartalomcsomagok egy adott üzleti forgatókönyvre fókuszáló elemzéseket és metrikákat biztosítanak. A célközönség és a tartalomcsomagok által nyújtott előnyök megismerésével biztosítható, hogy a felhasználók eredményesen használhatják a nekik készült tartalmakat.
@@ -78,7 +78,7 @@ A közzétett tartalomcsomagok havonta frissíthetők. A [pbiservicesapps@micros
 Kérdéseit elküldheti a következő e-mail-címre: [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
 ## <a name="support"></a>Támogatás
-Ha a fejlesztési fázisban van szüksége támogatásra, használja a következő webhelyet: [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). A támogatási webhelyet aktívan figyeljük és kezeljük. Az ügyfélincidensek gyorsan eljutnak a megfelelő csapathoz.
+Ha a fejlesztési fázisban van szüksége támogatásra, használja a következő webhelyet: [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Az ügyfélincidensek gyorsan eljutnak a megfelelő csapathoz.
 
 ## <a name="next-step"></a>Következő lépés
 [Tartalomkészítés](template-content-pack-authoring.md)

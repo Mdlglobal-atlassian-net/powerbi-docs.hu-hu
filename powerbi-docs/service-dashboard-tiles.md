@@ -1,31 +1,31 @@
 ---
-title: Irányítópult-csempék a Power BI szolgáltatásban
-description: Minden, amit a Power BI irányítópult csempékről tudni érdemes. Ide tartoznak az SQL Server Reporting Services-ből (SSRS-ből) létrehozott csempék is.
+title: Irányítópultcsempék a Power BI szolgáltatás tervezői számára – bevezetés
+description: Minden, amit a Power BI irányítópult csempékről tudni érdemes. Ide tartoznak az SQL Server Reporting Services (SSRS) jelentéseiből létrehozott csempék is.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/3/2018
+ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 76b8eaff949ee56d57511eabea913363e6cdc3f6
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: de99c04077a58f1c0c060561674fefa9041fa144
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717401"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331965"
 ---
-# <a name="dashboard-tiles-in-power-bi"></a>Irányítópult-csempék a Power BI-ban
-Az irányítópultok és az irányítópulton található csempék nem a Power BI Desktophoz, hanem a Power BI szolgáltatáshoz tartozó funkciók. A Power BI mobilalkalmazásban nem hozhatók létre és nem tűzhetők ki irányítópult-csempék, de [megtekinthetők és megoszthatók](mobile-tiles-in-the-mobile-apps.md) abból. Ezenkívül a Power BI mobilalkalmazásban [képeket vehet fel az irányítópulthoz az iPhone-alkalmazással](mobile-iphone-app-get-started.md).
+# <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Irányítópultcsempék a Power BI szolgáltatás tervezői számára – bevezetés
 
-## <a name="dashboard-tiles"></a>Irányítópult-csempék
+A csempék az adatokról készített és az irányítópultra kitűzött pillanatfelvételek. Csempe létrehozható jelentésből, adatkészletből, irányítópultból, a Q&A mezőjéből, az Excelből, az SQL Server Reporting Services (SSRS) jelentéseiből és sok minden másból.  Ezen a képernyőfelvételen több irányítópultra tűzött csempe látható.
+
 ![Power BI-irányítópult](media/service-dashboard-tiles/power-bi-dashboard.png)
 
-A csempék az adatokról készített és az irányítópultra kitűzött pillanatfelvételek. Csempe létrehozható jelentésből, Q&A mezőből, Excelből, SQL Server Reporting Services-ből (SSRS-ből), és sok minden másból.  Ezen a képernyőfelvételen több irányítópultra tűzött csempe látható.
+Az irányítópultok és az irányítópulton található csempék nem a Power BI Desktophoz, hanem a Power BI szolgáltatáshoz tartozó funkciók. Mobileszközön nem hozhat létre irányítópultokat, azonban [megtekintheti és megoszthatja](mobile-apps-view-dashboard.md) őket.
 
-A kitűzés mellett, önmagukban álló csempék is kitűzhetők közvetlenül az irányítópultra a [Csempe hozzáadása](service-dashboard-add-widget.md) lehetőséget használva. Önmagukban álló csempék lehetnek többek között szövegmezők, képek, videók, streaming-adatok, webtartalmak.
+A kitűzés mellett önálló csempéket is létrehozhat közvetlenül az irányítópulton a [Csempe hozzáadása](service-dashboard-add-widget.md) lehetőséggel. Önmagukban álló csempék lehetnek többek között szövegmezők, képek, videók, streaming-adatok, webtartalmak.
 
 További segítségre van szüksége annak megértéséhez, hogy milyen elemekből épül fel a Power BI?  Tekintse meg a [Power BI alapfogalmait](service-basic-concepts.md) ismertető cikket.
 
@@ -42,8 +42,8 @@ Az irányítópultokra többféleképpen lehet felvenni (kitűzni) csempét. Cse
 * [másik irányítópultról](service-pin-tile-to-another-dashboard.md)
 * [OneDrive vállalati verzión található Excel-munkafüzetből](service-dashboard-pin-tile-from-excel.md)
 * [az Excelhez készült Power BI Publisherből](publisher-for-excel.md)
-* [gyors elemzésekből](service-insights.md)
-* [SSRS-ből](https://msdn.microsoft.com/library/mt604784.aspx)
+* [Gyors elemzések](service-insights.md)
+* [Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 A képek, szövegdobozok, videók, streamelési adatok és webtartalmak különálló csempéi közvetlenül az irányítópulton is létrehozhatók a [Csempe hozzáadása](service-dashboard-add-widget.md) lehetőséget használva.
 
@@ -78,7 +78,7 @@ Fogja meg az egyik csempét, és [mozgassa körbe az irányítópulton](service-
 3. A művelet menü bezárásához kattintson egy üres területre a vásznon.
 
 ### <a name="select-click-a-tile"></a>Csempék kiválasztása
-Az, hogy mi történik, amikor rákattint valamelyik csempére, attól függ, hogyan lett létrehozva a csempe, és hogy tartozik-e hozzá [egyedi hivatkozás](service-dashboard-edit-tile.md). Ha tartozik hozzá egyedi hivatkozás, a csempe kiválasztásakor a rendszer a hivatkozott oldalra lépteti. Más esetben a csempére kattintáskor a létrehozásához használt helyszíni jelentéshez, Excel-munkafüzethez, SSRS-jelentéshez vagy Q&A-kérdéshez irányítja a rendszer.
+Az, hogy mi történik, amikor rákattint valamelyik csempére, attól függ, hogyan lett létrehozva a csempe. Ha tartozik hozzá [egyedi hivatkozás](service-dashboard-edit-tile.md), a csempe kiválasztásakor a rendszer a hivatkozott oldalra lépteti. Ellenkező esetben a csempére kattintáskor a létrehozásához használt jelentéshez, Excel Online-munkafüzethez, helyszíni Reporting Services-jelentéshez vagy Q&A-kérdéshez irányítja a rendszer.
 
 > [!NOTE]
 > Ez alól csak a közvetlenül az irányítópulton a **Csempe hozzáadása** funkcióval létrehozott videócsempék képeznek kivételt. Amikor egy így létrehozott videócsempére kattint, a rendszer közvetlenül az irányítópulton játssza le a videót.   
@@ -86,11 +86,12 @@ Az, hogy mi történik, amikor rákattint valamelyik csempére, attól függ, ho
 > 
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+
 * Ha a vizualizáció létrehozásához használt jelentés nem lett mentve, akkor nem történik semmi a csempére kattintáskor.
-* Ha a csempe Excel Online-munkafüzetből lett létrehozva, és a felhasználónak ahhoz nincs legalább Olvasási jogosultsága, a csempe kiválasztásakor nem fog megnyílni az Excel Online-munkafüzet.
-* Olyan csempe esetén, melyet a **Csempe létrehozása** funkcióval közvetlenül az irányítópulton hozott létre a felhasználó, és beállított hozzá egy egyedi hiperhivatkozást, a csempe címére, alcímére vagy magára a csempére kattintáskor a rendszer megnyitja az adott URL-címet.  Más esetben a közvetlenül az irányítópulton kép, webkód vagy szövegdoboz részére létrehozott csempe kiválasztása nem indít el semmilyen műveletet.
-* Ha az SSRS-en nem jogosult egy jelentés használatára, az SSRS alapján létrehozott csempék kiválasztásakor a rendszer megjelenít egy oldalt, amely jelezni fog, hogy a felhasználó nem rendelkezik megfelelő hozzáféréssel (rsAccessDenied).
-* Ha nincs hozzáférése ahhoz a hálózathoz, ahol az SSRS található, SSRS-ből létrehozott csempe kiválasztásakor a rendszer megjelenít majd egy oldalt, amely azt jelzi, hogy a kiszolgáló nem található (HTTP 404). Ahhoz, hogy meg tudja tekinteni a jelentést, az Ön eszközének hálózati hozzáféréssel kell rendelkeznie a jelentés-kiszolgálóhoz.
+* Ha a csempe Excel Online-munkafüzetből lett létrehozva, a munkafüzethez legalább olvasási engedélyre lesz szüksége. Ellenkező esetben a csempe kiválasztásakor nem nyílik meg a munkafüzet az Excel Online-ban.
+* Tegyük fel, hogy közvetlenül az irányítópulton hozta létre a csempét a **Csempe hozzáadása** művelettel, majd egy egyéni hiperhivatkozást állított be hozzá. Ha így történt, a cím, alcím vagy csempe kiválasztásakor megnyílik az adott URL-cím. Ellenkező esetben a közvetlenül az irányítópulton kép, webkód vagy szövegdoboz részére létrehozott csempe kiválasztása nem indít el semmilyen műveletet.
+* Ha a Reporting Servicesben nem jogosult egy jelentés használatára, a Reporting Services-jelentés alapján létrehozott csempék kiválasztásakor a rendszer megjelenít egy oldalt, amely jelzi, hogy nem rendelkezik megfelelő hozzáféréssel (rsAccessDenied).
+* Ha nincs hozzáférése ahhoz a hálózathoz, ahol a Reporting Services-kiszolgáló található, egy Reporting Servicesből létrehozott csempe kiválasztásakor a rendszer megjelenít egy oldalt, amely azt jelzi, hogy a kiszolgáló nem található (HTTP 404). Ahhoz, hogy meg tudja tekinteni a jelentést, az Ön eszközének hálózati hozzáféréssel kell rendelkeznie a jelentéskészítő kiszolgálóhoz.
 * A csempe létrehozásához használt vizualizációs elem változásakor a csempe nem változik.  Például ha kitűz egy sávdiagramot egy jelentésből, majd a sávdiagramot oszlopdiagramra cseréli, az irányítópulton megjelenő csempén továbbra is sávdiagram lesz látható. Az adatok frissülni fognak, de a diagram típusa nem.
 
 ## <a name="next-steps"></a>Következő lépések

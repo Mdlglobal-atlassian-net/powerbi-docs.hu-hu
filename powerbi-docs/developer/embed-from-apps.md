@@ -3,18 +3,18 @@ title: Jelentések és irányítópultok beágyazása alkalmazásokból
 description: Megtudhatja, hogyan integrálhat vagy ágyazhat be egy jelentést vagy irányítópultot egy Power BI-alkalmazásból, és nem az alkalmazás-munkaterületről.
 author: markingmyname
 ms.author: maghan
-ms.date: 07/13/2018
 ms.topic: how-to
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 53803c77dec8eb35c10db7f19a82f58144f88414
-ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
+ms.date: 11/27/2018
+ms.openlocfilehash: 8073696907ceff67664a0802a2b7775eea693e37
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237985"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452522"
 ---
 # <a name="embed-reports-or-dashboards-from-apps"></a>Jelentések és irányítópultok beágyazása alkalmazásokból
 
@@ -26,11 +26,11 @@ A Power BI-ban létrehozhat az irányítópultokat és jelentéseket egy helyen 
 
 2. Nyissa meg a kívánt jelentést a Power BI szolgáltatásban.
 
-3. Nyissa meg a **Fájl** > **Beágyazás a SharePoint Online-ba** lapot, és ágyazza be a jelentési embedURL-t. Ez látható az alábbi pillanatképen. Alternatív megoldásként meghívhatja a GetReports/GetReport REST API-t, és kinyerheti a válaszból a megfelelő jelentési embedURL-mezőt. A REST-hívás URL-címe elvileg nem tartalmaz munkaterület-azonosítót, mivel az alkalmazás a felhasználó munkaterületén lett példányosítva.
-
-4. Használja a 3. lépésben lekért embedURL-t a JavaScript SDK-val.
+3. Válassza a **Fájl** > **Beágyazás a SharePoint Online-ba** lehetőséget, és megtalálhatja a jelentés beágyazási URL-címét (embedURL). Az alábbi képernyőképen láthat egy minta beágyazási URL-címet. Alternatív megoldásként meghívhatja a GetReports/GetReport REST API-t, és a válaszból kinyerheti a megfelelő jelentés embedURL mezőjét. A REST-hívás URL-címe elvileg nem tartalmaz munkaterület-azonosítót, mivel az alkalmazás a felhasználó munkaterületén lett példányosítva.
 
     ![Beágyazás alkalmazásokból](media/embed-from-apps/embed-from-app.png)
+
+4. Használja a 3. lépésben lekért embedURL-t a JavaScript SDK-val.
 
 ## <a name="grab-a-dashboard-embedurl-for-embedding"></a>Irányítópult embedURL-jének beszerzése beágyazáshoz
 

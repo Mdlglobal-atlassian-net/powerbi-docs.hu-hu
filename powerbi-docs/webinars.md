@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2018
+ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: d656a27717d22d13884bcbfa69fab4ba2babaf12
-ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
+ms.openlocfilehash: c3ef18bf05c6a979e9fd0440b271afd5d8545a54
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49952234"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452660"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -22,23 +22,13 @@ Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket 
 
 ## <a name="upcoming-webinars"></a>Közelgő webináriumok
 
-**Power BI: Helyesen elvégzett elemzések**
-<br>Előadó: Gohul Shanmugalingam
-<br>*2018. november 8., 19:00–20:00 (CET)*
+**Jól bevált egészségügyi megoldások javítanak a betegek eredményein és a nyereségességen**
+<br>Készítette Stephen Cracknell és Stuart Macanliss, US Medical IT
+<br>*2018. november 28., 20:00–21:00 (CET)*
 
-Beszélgetésre hívjuk az összes Analytics- és Excel-látnokot: megtudhatja, hogyan hozhat létre használatra csábító, gyönyörű jelentéseket, hogyan oszthat meg vonzó, könnyen érthető elemzéseket, és hogyan oszthatja fel biztonságosan a komplex adatok silóit, hogy könnyen elérhetők legyenek.
+Az egészségügyi szervezetek számára kihívást jelent, hogy a hatalmas mennyiségű adatot a betegekre vonatkozó megállapításokká alakítsák, ezekre pedig cselekvéseket alapozzanak. Ha regisztrál erre a webináriumra, megtudhatja, hogyan tervezhet közérthető egészségügyi jelentéseket, amelyek segítik a szervezetet az adatok hasznos betegekre vonatkozó megállapításokká alakítani. Szakértői stratégiákat és tanácsokat kaphat a US Medical IT alapítójától és vezérigazgatójától, Stephen Cracknelltől, a Healthcare IT igazgatójától, Stuart Macanliss-től, és a texasi reumatológustól, Dr. John P. Lavery-től.
 
-Megosztjuk az új termékfejlesztéseket és a modern vállalati üzleti intelligenciával és az önkiszolgáló üzleti intelligenciával kapcsolatos elképzeléseinket, hogy a szervezete adatalapú kultúrára alapozhassa a működését.
-
-[Regisztráljon a november 8-i megtekintéshez](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
-
-**Az adatmodellezési készségek fejlesztése a Power BI segítségével**
-<br>Készítette Kasper de Jonge
-<br>*2018. november 20., 20:00–21:00 (CET)*
-
-Regisztráljon erre a webináriumra, és lépjen új szintre a Power BI-modellezésben. Megismerheti a Power BI memóriában végzett elemzéseket kiszolgáló motorját, az adatkapcsolatok létrehozása és kezelése során alkalmazható stratégiákat, valamint a Data Analysis Expressions (DAX) szűrőkörnyezet használatát. Megtudhatja, hogyan küzdhet le bármilyen modellezési kihívást a Power BI vagy az Azure Analysis Services segítségével.
-
-[Regisztráljon a november 20-i megtekintéshez](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
+[Regisztráljon a november 28-i megtekintéshez](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
 >[A Power BI-közösség közelgő webináriumai](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
@@ -54,9 +44,17 @@ Igény szerint elérhető népszerű előadások az első lépésekhez
 <br>by Miguel Martinez
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
 
+**Az adatmodellezési készségek fejlesztése a Power BI segítségével**
+<br>Készítette Kasper de Jonge
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
+
 **A Microsoft Power BI-t használ – pénzügyi tervezés és elemzés egyszerűen**
 <br>előadó: Cory Hrncirik és Miguel Martinez
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Power BI: Helyesen elvégzett elemzések**
+<br>Előadó: Gohul Shanmugalingam
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
 
 **Tegye Power BI-adatait láthatóvá: alapvető diagramtípusok és a használatuk**
 <br>by Miranda Li
@@ -70,9 +68,9 @@ Igény szerint elérhető népszerű előadások az első lépésekhez
 <br>by Miranda Li
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**Power BI tippek, trükkök és eszközök a PowerBI.Tips tulajdonosaitól**
-<br>írta: Mike Carlo és Seth Bauer
-<br>[Megtekintés](https://www.youtube.com/watch?v=fnj1_e3HXow)
+**A Microsoft Flow és a PowerApps teljes gazdasági hatása**
+<br>Készítette Jonathan Lipsitz és Enrique Plaza Garcia
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 
 >[Böngészés közösségi szakértőink felvételről megtekinthető előadásainak könyvtárában](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
@@ -112,10 +110,6 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 <br>Előadó: Scott Ball az Esritől és Enrique Plaza a Microsofttól
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
 
-**A jövedelmezőség növelése az egészségügyben**
-<br>Készítette Stephen Cracknell és Stuart Macanliss, US Medical IT
-<br>[Regisztráció és megtekintés](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
-
 **Alkalmazott intelligencia az értékesítésben és a szolgáltatásokban**
 <br>Készítette Ed Bobrin, Avanade
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
@@ -129,6 +123,10 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
 
 ### <a name="community"></a>Közösség ###
+
+**Power BI tippek, trükkök és eszközök a PowerBI.Tips tulajdonosaitól**
+<br>írta: Mike Carlo és Seth Bauer
+<br>[Megtekintés](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
 **Informatív lehetőségek saját adatok és a Power BI segítségével**
 <br>írta: Tristan Malherbe

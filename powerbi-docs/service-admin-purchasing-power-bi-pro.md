@@ -10,17 +10,18 @@ ms.topic: quickstart
 ms.date: 10/21/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 7984f269235084268af57f1bb0d292793aef1f7f
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 0784976e1404247d69415bb398f83cbb73ab98a8
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641275"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331919"
 ---
 # <a name="purchase-and-assign-power-bi-pro-licenses"></a>Power BI Pro-licencek vásárlása és kiosztása
 
 A Power BI Pro egyéni licenc, amely hozzáférést biztosít a Power BI szolgáltatásban minden tartalomhoz és funkcióhoz, többek között megosztható a tartalom, és lehetőség van más Pro-felhasználókkal való együttműködésre is. Csak a Pro szintű felhasználók tehetnek közzé és használhatnak tartalmat alkalmazás-munkaterületeken, oszthatnak meg irányítópultokat, és iratkozhatnak fel irányítópultokra és jelentésekre. További információ: [Power BI-szolgáltatások licenctípus szerint](service-features-license-type.md).
-Ez a cikk elsőként azt ismerteti, hogyan vásárolható Power BI Pro-licenceket az Office 365-ben. A cikk ezután két lehetőséget mutat be a licencek egyéni felhasználókhoz való hozzárendeléséhez: az Office 365-öt és az Azure-t (válassza ki az egyik lehetőséget).
+
+Ez a cikk elsőként azt ismerteti, hogyan vásárolhat Power BI Pro-licenceket az Office 365-ben. A cikk ezután két lehetőséget mutat be a licencek egyéni felhasználókhoz való hozzárendeléséhez: az Office 365-öt és az Azure-t (válassza ki az egyik lehetőséget).
 
 ## <a name="prerequisites"></a>Előfeltételek
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 73be85644fd320bd44372a0df6c844705c3cf602
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: f4825e8d8d47f755b01748c847b0fcf110db030a
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336921"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452867"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Az SAP BW Connector használata a Power BI Desktopban
 A Power BI Desktopban hozzáférhet az **SAP Business Warehouse (BW)** adataihoz.
@@ -197,11 +197,28 @@ Ez a szakasz hibaelhárítási forgatókönyveket (és megoldásokat) mutat be a
            </item>
    
    A hiba megoldásához a felhasználónak meg kell kérnie az SAP-rendszergazdát, hogy engedélyezze a Power BI-ban használt SAPBW felhasználó számára a *BAPI_USER_GET_DETAIL* végrehajtását. Azt is érdemes ellenőrizni, hogy a felhasználónál a megfelelő *DCPFM* érték van-e beállítva a jelen hibaelhárítási forgatókönyvben korábban leírtaknak megfelelően.
+   
 2. **Az SAP BEx lekérdezések kapcsolódási beállításai**
    
    A **BEx** lekérdezések végrehajtásához a Power BI Desktopban engedélyezni kell egy adott tulajdonságot, amint az a következő képen látható:
    
    ![](media/desktop-sap-bw-connector/sap_bw_8.png)
+   
+3. A **Kezelő** ablakban nem az adatok előnézete, hanem ehelyett *Az objektumhivatkozás nincs beállítva semmilyen objektumpéldányra* hibaüzenet jelenik meg.
+   
+   Az SAP-felhasználóknak meghatározott BAPI-függvénymodulokhoz való hozzáférésre van szükségük a metaadatok beolvasásához és az adatok az SAP BW InfoProvider objektumaiból való lekéréséhez. Ezek a következők:
+   * BAPI_MDPROVIDER_GET_CATALOGS
+   * BAPI_MDPROVIDER_GET_CUBES
+   * BAPI_MDPROVIDER_GET_DIMENSIONS
+   * BAPI_MDPROVIDER_GET_HIERARCHYS
+   * BAPI_MDPROVIDER_GET_LEVELS
+   * BAPI_MDPROVIDER_GET_MEASURES
+   * BAPI_MDPROVIDER_GET_MEMBERS
+   * BAPI_MDPROVIDER_GET_VARIABLES
+   * BAPI_IOBJ_GETDETAIL
+
+   A probléma megoldásához győződjön meg arról, hogy a felhasználó hozzáfér a különböző *MDPROVIDER*-modulokhoz, valamint a *BAPI_IOBJ_GETDETAIL* függvénymodulhoz. Az ilyen vagy hasonló problémák további hibaelhárításához válassza a *Nyomkövetés engedélyezése* lehetőséget a Power BI Desktop *Beállításainak* *Diagnosztika* ablakában. Próbáljon meg aktív nyomkövetés mellett adatokat lekérni az SAP BW-ből, és további részletekért vizsgálja meg a nyomkövetési fájlt.
+
 
 ## <a name="next-steps"></a>Következő lépések
 Az SAP-val és a DirectQueryvel kapcsolatos további információkért tekintse meg az alábbi forrásanyagokat:

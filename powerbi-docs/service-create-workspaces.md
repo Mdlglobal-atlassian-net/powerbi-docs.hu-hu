@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9a22889da87af91f3b5ea996961ec9e9538fe31b
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: f12974d4e53217fc6c29ad172153ec9c51ecc44e
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909107"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452637"
 ---
 # <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Munkaterületek létrehozása munkatársakkal a Power BI-ban
 
 A Power BI-ban létrehozhat *munkaterületeket*, amelyeken együttműködhet munkatársaival irányítópult- és jelentésgyűjtemények létrehozásán és finomításán. Ezeket később olyan *alkalmazásokba* csomagolhatja, amelyeket a teljes szervezet vagy csak adott személyek vagy csoportok számára terjeszthet. 
 
-![Power BI alkalmazások](media/service-create-workspaces/power-bi-apps-left-nav.png)
+![Power BI-alkalmazások](media/service-create-workspaces/power-bi-apps-left-nav.png)
 
 Amikor létrehoz egy munkaterületet, egy mögöttes, társított Office 365-csoportot is létrehoz. A munkaterület felügyelete az Office 365-ben zajlik. A kollégákat hozzáadhatja tagként vagy rendszergazdaként ezekhez a munkaterületekhez. A munkaterületen együttműködhetnek az irányítópultokon, jelentéseken és más cikkeken, amelyeket a szélesebb közönség elé szeretne tárni. Az alkalmazás-munkaterületekhez adott tagoknak Power BI Pro-licencre van szüksége. 
 

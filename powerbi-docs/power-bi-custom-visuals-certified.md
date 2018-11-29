@@ -1,56 +1,73 @@
 ---
-title: Minősített egyéni Power BI képi megjelenítések
+title: Minősített egyéni Power BI-vizualizációk
 description: Az egyéni vizualizációk minősítésre való beküldésének követelményei és folyamata. Továbbá a már minősített egyéni vizualizációk listája.
-author: mihart
-ms.author: mihart
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/30/2018
-ms.openlocfilehash: 72b09083c50a88e2d22e9aa22f54ff014dafa998
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.date: 11/21/2018
+ms.openlocfilehash: fd352cd78225e647acf53c2af899e4d2fc662376
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223444"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289266"
 ---
-# <a name="getting-a-custom-visual-certified"></a>Egyéni vizualizáció *minősítésének* megszerzése
+# <a name="certified-custom-visuals"></a>Minősített egyéni vizualizációk
 
-## <a name="what-is-meant-by-certified"></a>Mit értünk az alatt, hogy *minősített*?
+## <a name="what-are-certified-custom-visuals"></a>Mik azok a **_minősített_** egyéni vizualizációk?
 
-A *minősített egyéni vizualizáció* olyan vizualizáció, amely megfelel bizonyos kódelőírásoknak, valamint szigorú biztonsági ellenőrzéseken is átment.  Az egyéni vizualizáció a minősítést követően [exportálható PowerPointba](consumer/end-user-powerpoint.md), és megjeleníthető [az egyes jelentésoldalakra feliratkozott](consumer/end-user-subscribe.md) felhasználók által kapott e-mailekben is. Természetesen [hagyományos egyéni vizualizációként](power-bi-custom-visuals.md) is használható, hozzáadható a Power BI szolgáltatáshoz és a Power BI Desktophoz, és megtekinthető a Power BI-mobilalkalmazásban és az Embeddedben.
+A minősített egyéni vizualizációk azok a **piactéren** lévő vizualizációk, amelyek megfelelnek **bizonyos**, a **Microsoft Power BI csapata** által jóváhagyott és tesztelt kódolási előírásoknak. A minősítést szerzett egyéni vizualizációk több funkcióval bírnak. Például [exportálhatók a PowerPointba](consumer/end-user-powerpoint.md), és megjeleníthetők olyan e-mailekben, amelyek akkor érkeznek, amikor egy felhasználó [feliratkozik jelentésoldalakra](consumer/end-user-subscribe.md).
 
-Ön olyan webfejlesztő, aki szeretne saját képi megjelenítéseket létrehozni, és hozzáadni azokat a [Microsoft AppSource](https://appsource.microsoft.com) listájához? Ennek módját az [Egyéni Power BI-vizualizáció fejlesztése](developer/custom-visual-develop-tutorial.md) című cikk ismerteti.
+**A minősített egyéni vizualizációk** a [szabványos egyéni vizualizációkhoz](power-bi-custom-visuals.md) hasonlóan működnek. A minősített egyéni vizualizációk hozzáadhatók a **Power BI szolgáltatáshoz** és a **Power BI Desktop jelentéseihez**, valamint megtekinthetők a **Power BI-mobilalkalmazásban** és a **Power BI Embeddedben**.
 
-## <a name="certification-requirements"></a>Minősítési követelmények
+A végrehajtott tesztek célja, hogy ellenőrizze, hogy a vizualizáció nem kapcsolódik külső szolgáltatásokhoz vagy erőforrásokhoz. *Nem* a **Microsoft** a készítője a külső felek egyéni vizualizációinak, ezért azt javasoljuk az ügyfeleinknek, hogy közvetlenül a készítővel kapcsolatba lépve ellenőrizzék az ilyen vizualizációk működését.
 
-* Microsoft AppSource-jóváhagyás
-* Az egyéni vizualizációt a verzióval ellátott API-k 1.2-es vagy újabb verzióival kell megírni
-* A kódtárat elérhetővé kell tenni felülvizsgálati célokra (például a vizualizáció kódját meg kell osztani velünk a GitHubon keresztül)
-* Csak nyilvánosan véleményezhető OSS-összetevők használata
-* Nem kapcsolódhat külső szolgáltatásokhoz és erőforrásokhoz
+A minősítési folyamat nem kötelező, így a fejlesztők hatásköre eldönteni, hogy szeretnék-e minősíttetni a piactéri vizualizációjukat.  
 
-> **TIPP**: Javasoljuk az EsLint az alapértelmezett biztonsági szabálykészlettel való használatát a kód előzetes ellenőrzésére a beküldés előtt.
+**A nem minősített egyéni vizualizációk** nem feltétlenül jelentenek nem biztonságos vizualizációkat. Egyes vizualizációk azért nincsenek minősítve, mert nem felelnek meg egy vagy több [minősítésbeli követelménynek](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Például egy külső szolgáltatáshoz (például egy térképvizualizációhoz) vagy egy kereskedelmi könyvtárakat használó vizualizációhoz csatlakozik.
+
+Ön olyan webfejlesztő, aki szeretne saját képi megjelenítéseket létrehozni, és hozzáadni azokat a  **[Microsoft AppSource](https://appsource.microsoft.com)** listájához? Ennek módját az  **[Egyéni Power BI-vizualizáció fejlesztése](developer/custom-visual-develop-tutorial.md)** című cikk ismerteti.
+
+## <a name="removal-of-power-bi-certified-custom-visuals"></a>Minősített egyéni Power BI vizualizációk eltávolítása
+
+A Microsoft saját belátása szerint eltávolíthatja a vizualizációkat a [Minősített listáról](#list-of-custom-visuals-that-have-been-certified).
+
+## <a name="getting-a-custom-visualcertified"></a>Egyéni vizualizáció minősítése
+
+### <a name="certification-requirements"></a>Minősítési követelmények
+
+Az egyéni vizualizáció [minősítéséhez](#certified-custom-visuals) győződjön meg róla, hogy az megfelel az alábbi feltételeknek:  
+
+* Microsoft AppSource-jóváhagyás. Az egyéni vizualizáció megtalálható a [piactéren](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
+* Az egyéni vizualizációt a verzióval ellátott API-k 1.2-es vagy újabb verzióival kell megírni.
+* A Power BI csapata által áttekinthető kódtár (például elérhetővé tett forráskód [JavaScript vagy TypeScript] emberileg olvasható formátumban a GitHubon).
+
+    >[!Note]
+    > Nem kell nyilvánosan megosztania a kódot a GitHubon.
+
+* Csak nyilvánosan véleményezhető OSS-összetevők használata (nyilvános JS-kódtárak vagy nyilvános TypeScript. A forráskód véleményezhető, és nincsenek ismert biztonsági rései). Kereskedelmi összetevővel rendelkező egyéni vizualizációt nem minősíthetünk.
+
+* Nem fér hozzá külső szolgáltatásokhoz vagy erőforrásokhoz, így többek között HTTP/S- vagy WebSocket-kérelmeket sem küld a Power BI-ból más szolgáltatásokba. 
+
+> [!TIP]
+> Javasoljuk az EsLint az alapértelmezett biztonsági szabálykészlettel való használatát a kód előzetes ellenőrzésére a beküldés előtt.
 
 ## <a name="process-for-submitting-a-custom-visual-for-certification"></a>Az egyéni vizualizációk minősítésre való beküldésének folyamata
 
 Egyéni vizualizáció beküldése minősítésre:
 
-1. Küldjön egy e-mailt a Power BI egyéni vizualizációk támogatásáért felelő csapatának (pbicvsupport@microsoft.com). Az e-mailben adja meg az alábbi információkat:    
+1. Küldjön egy e-mailt a Power BI egyéni vizualizációk támogatásáért felelő csapatának (pbicvsupport@microsoft.com). Az e-mailben adja meg az alábbi információkat:
+    * Cím: Vizualizáció minősítésére vonatkozó kérelem
+    * Az emberileg olvasható forráskódot tartalmazó GitHub-adattárra mutató hivatkozás
+    * [Feleljen meg a követelményeknek](#certification-requirements)
+    * Sikeres kódfelülvizsgálat
 
-   * Cím: Vizualizáció minősítésére vonatkozó kérelem
-   * A vizualizáció forráskódját tartalmazó GitHub-adattárra mutató hivatkozás
-   * Feleljen meg a követelményeknek (lásd fent)
-   * Sikeres kód- és biztonsági felülvizsgálat
-
-2. A Microsoft egyéni vizualizációkért felelős csapata értesíti, amint az egyéni vizualizáció megkapja a minősítést, és elérhetővé válik a Minősített listában (alább), illetve a vizualizáció elutasítása esetén megküldi az orvosolandó problémák listáját. A fejlesztő felelőssége, hogy biztosítsa a megfelelő kommunikációt a Microsoft csapatával, és szükség esetén frissítse Minősített vizualizációit.
-
-## <a name="removal-of-power-bi-certified-custom-visuals"></a>Minősített egyéni Power BI vizualizációk eltávolítása
-
-A Microsoft saját belátása szerint eltávolíthatja a vizualizációkat a Minősített listáról.  
+2. A Microsoft egyéni vizualizációkért felelős csapata értesíti, amint az egyéni vizualizáció megkapja a minősítést, és elérhetővé válik a [Minősített listában](#list-of-custom-visuals-that-have-been-certified), illetve a vizualizáció elutasítása esetén megküldi az orvosolandó problémák listáját. A fejlesztő felelőssége, hogy biztosítsa a megfelelő kommunikációt a Microsoft csapatával, és szükség esetén frissítse Minősített vizualizációit.
 
 ## <a name="list-of-custom-visuals-that-have-been-certified"></a>A már minősített egyéni vizualizációk listája
 

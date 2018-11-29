@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 11/06/2018
-ms.openlocfilehash: a3d36f988847df283576dae6cfe5870b707c6f98
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.date: 11/21/2018
+ms.openlocfilehash: 56de3745d59e4a26dffbb988e9543c294de261e3
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223260"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289174"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Oktatóanyag: Formázási beállítások hozzáadása egyéni Power BI-vizualizációhoz
 
@@ -32,7 +32,7 @@ Az oktatóanyag a következőket ismerteti:
 
     Ekkor a következő üzenet jelenik meg: *Ehhez a megjelenítéshez nem érhetők el formázási beállítások.*
 
-    ![Formázási ecset](media/custom-visual-develop-tutorial/format-paintbrush.png)
+    ![Formázási ecset](media/custom-visual-develop-tutorial-format-options/format-paintbrush.png)
 
 2. A **Visual Studio Code**-ban nyissa meg a *capabilities.json* fájlt.
 
@@ -41,7 +41,7 @@ Az oktatóanyag a következőket ismerteti:
     ```json
     "objects": {},
     ```
-    ![Objektumok hozzáadása](media/custom-visual-develop-tutorial/add-objects.png)
+    ![Objektumok hozzáadása](media/custom-visual-develop-tutorial-format-options/add-objects.png)
 
 4. Mentse a **capabilities.json** fájlt.
 
@@ -50,13 +50,13 @@ Az oktatóanyag a következőket ismerteti:
     > [!Note]
     > Ha nem változtak meg a formázási beállítások, válassza az **Egyéni vizualizáció újbóli betöltése** parancsot.
 
-    ![Formázási beállítások megtekintése](media/custom-visual-develop-tutorial/view-formatting-options.png)
+    ![Formázási beállítások megtekintése](media/custom-visual-develop-tutorial-format-options/view-formatting-options.png)
 
 6. A **Cím** beállítást állítsa *Ki* értékűre. Figyelje meg, hogy a vizualizáció bal felső sarkában már nem jelenik meg a mérték neve.
 
-    ![A Cím beállítás ki van kapcsolva](media/custom-visual-develop-tutorial/tile-option-off.png)
+    ![A Cím beállítás ki van kapcsolva](media/custom-visual-develop-tutorial-format-options/tile-option-off.png)
 
-    ![Névtelen csempe](media/custom-visual-develop-tutorial/no-name-tile.png)
+    ![Névtelen csempe](media/custom-visual-develop-tutorial-format-options/no-name-tile.png)
 
 ### <a name="adding-custom-formatting-options"></a>Egyéni formázási beállítások hozzáadása
 
@@ -89,12 +89,12 @@ Egyéni tulajdonságok hozzáadásával konfigurálhatja a kör színét vagy ak
                  }
              }
          }
-     }
+     },
     ```
 
     A JSON-töredék írja le a kör nevű csoportot, amely két beállításból áll. Ezek neve circleColor és circleThickness.
 
-   ![A kör vastagságának kódja](media/custom-visual-develop-tutorial/circle-thickness-code.png)
+   ![A kör vastagságának kódja](media/custom-visual-develop-tutorial-format-options/circle-thickness-code.png)
 
 3. Mentse a **capabilities.json** fájlt.
 
@@ -112,7 +112,7 @@ Egyéni tulajdonságok hozzáadásával konfigurálhatja a kör színét vagy ak
     }
     ```
 
-    ![Modulosztályok](media/custom-visual-develop-tutorial/module-classes.png)
+    ![Modulosztályok](media/custom-visual-develop-tutorial-format-options/module-classes.png)
 
     Ez a modul definiálja a két osztályt. A **CircleSettings** osztály két tulajdonságot definiál, amelyek neve megegyezik a **capabilities.json** fájlban definiált objektumokéval (**circleColor** és **circleThickness**), valamint beállítja azok alapértelmezett értékét. A **VisualSettings** osztály örökli a **DataViewObjectParser** osztályt, és hozzáad egy **circle** nevű tulajdonságot, amelynek neve megegyezik a *capabilities.json* fájlban definiált objektuméval, és a **CircleSettings** egy példányát adja vissza.
 
@@ -127,7 +127,7 @@ Egyéni tulajdonságok hozzáadásával konfigurálhatja a kör színét vagy ak
     ```
     A tulajdonság a **VisualSettings** objektumra mutató hivatkozást tartalmaz, és leírja a vizualizáció beállításait.
 
-    ![Vizualizáció osztályának hozzáadása](media/custom-visual-develop-tutorial/visual-class-add-on.png)
+    ![Vizualizáció osztályának hozzáadása](media/custom-visual-develop-tutorial-format-options/visual-class-add-on.png)
 
 9. A **Visual** osztályban adja hozzá a következő metódust az **update** (frissítés) metódus előtt. Ez a metódus a formázási beállítások feltöltésére szolgál.
 
@@ -140,7 +140,7 @@ Egyéni tulajdonságok hozzáadásával konfigurálhatja a kör színét vagy ak
     ```
     Ez a metódus a formázási beállítások feltöltésére szolgál.
 
-    ![Vizualizációs beállítások objektuma](media/custom-visual-develop-tutorial/visual-settings-object.png)
+    ![Vizualizációs beállítások objektuma](media/custom-visual-develop-tutorial-format-options/visual-settings-object.png)
 
 10. Az **update** (frissítés) metódusban a **radius** (sugár) változó megadása előtt adja hozzá a következő kódot.
 
@@ -150,7 +150,7 @@ Egyéni tulajdonságok hozzáadásával konfigurálhatja a kör színét vagy ak
     ```
     Ez a kód kéri le a formázási beállításokat. Kiigazítja a **circleThickness** tulajdonságba érkező összes értéket: a negatív értékeket 0-ra, a 10-nél nagyobb értékeket pedig 10-re módosítja.
 
-    ![A radius változó](media/custom-visual-develop-tutorial/radius.png)
+    ![A radius változó](media/custom-visual-develop-tutorial-format-options/radius.png)
 
 11. A **circle (kör) elem** esetén módosítja a **fill style** (kitöltési stílus) tulajdonsághoz továbbított értéket a következő kifejezésre.
 
@@ -158,7 +158,7 @@ Egyéni tulajdonságok hozzáadásával konfigurálhatja a kör színét vagy ak
     this.visualSettings.circle.circleColor
     ```
 
-    ![Kör elem kitöltése](media/custom-visual-develop-tutorial/circle-element-fill.png)
+    ![Kör elem kitöltése](media/custom-visual-develop-tutorial-format-options/circle-element-fill.png)
 
 12. A **circle (kör) elemnél** módosítja a **stroke-width style** tulajdonsághoz továbbított értéket a következő kifejezésre.
 
@@ -166,7 +166,7 @@ Egyéni tulajdonságok hozzáadásával konfigurálhatja a kör színét vagy ak
     this.visualSettings.circle.circleThickness
     ```
 
-    ![Kör vonalvastagsága](media/custom-visual-develop-tutorial/circle-stroke-width.png)
+    ![Kör vonalvastagsága](media/custom-visual-develop-tutorial-format-options/circle-stroke-width.png)
 
 13. Mentse a visual.ts fájlt.
 
@@ -180,7 +180,7 @@ Egyéni tulajdonságok hozzáadásával konfigurálhatja a kör színét vagy ak
 
 16. A **vizualizáció formázási** beállításai között bontsa ki a **Kör** elemet.
 
-    ![Kör formázása](media/custom-visual-develop-tutorial/circle-format.png)
+    ![Kör formázása](media/custom-visual-develop-tutorial-format-options/circle-format.png)
 
     Módosítsa a **szín** és a **vastagság** beállítást.
 
@@ -198,7 +198,7 @@ Adja meg az egyéni vizualizációs projekt tulajdonságainak értékeit, friss�
 
     A **Vizualizációk** ablaktáblán az ikonra mutatva láthatóvá válik a megjelenített név.
 
-    ![Vizualizáció megjelenített neve](media/custom-visual-develop-tutorial/display-name-viz.png)
+    ![Vizualizáció megjelenített neve](media/custom-visual-develop-tutorial-format-options/display-name-viz.png)
 
 4. A **description** (leírás) tulajdonsághoz írja be a következő szöveget.
 
@@ -216,7 +216,7 @@ Adja meg az egyéni vizualizációs projekt tulajdonságainak értékeit, friss�
 
 10. Tekintse át az ikont.
 
-    ![A Vizualizáció ablaktábla képe](media/custom-visual-develop-tutorial/viz-pane-image.png)
+    ![A Vizualizáció ablaktábla képe](media/custom-visual-develop-tutorial-format-options/viz-pane-image.png)
 
 11. Győződjön meg a Visual Studio Code-ban arról, hogy minden fájlt mentett.
 
@@ -226,7 +226,7 @@ Adja meg az egyéni vizualizációs projekt tulajdonságainak értékeit, friss�
     pbiviz package
     ```
 
-    ![Dist mappa](media/custom-visual-develop-tutorial/dist-folder.png)
+    ![Dist mappa](media/custom-visual-develop-tutorial-format-options/dist-folder.png)
 
 Ezzel a csomag a projekt **dist** mappájába kerül. A csomag tartalmaz mindent, amire szükség van az egyéni vizualizáció a Power BI szolgáltatásba vagy egy Power BI Desktop-jelentésbe történő importálásához. A becsomagolt egyéni vizualizáció ezzel használatra kész.
 
@@ -238,7 +238,7 @@ Most már megnyithatja a Power BI Desktop-jelentést, és importálhatja a Circl
 
 2. A **_Vizualizációk_** ablaktáblán kattintson a **három pontra**, majd válassza az **Importálás** fájlból lehetőséget.
 
-    ![Egyéni vizualizáció hozzáadása az asztalhoz](media/custom-visual-develop-tutorial/add-custom-viz-to-desktop.png)
+    ![Egyéni vizualizáció hozzáadása az asztalhoz](media/custom-visual-develop-tutorial-format-options/add-custom-viz-to-desktop.png)
 
 3. Az **Importálás ablakban** válassza az **Importálás** elemet.
 
@@ -250,7 +250,7 @@ Most már megnyithatja a Power BI Desktop-jelentést, és importálhatja a Circl
 
 7. Ellenőrizze, hogy a vizualizáció megjelent-e a **_Vizualizációk_** ablaktáblán.
 
-    ![Megtekintés a PBI Desktop Vizualizációk ablaktábláján](media/custom-visual-develop-tutorial/view-in-desktop-viz-pane.png)
+    ![Megtekintés a PBI Desktop Vizualizációk ablaktábláján](media/custom-visual-develop-tutorial-format-options/view-in-desktop-viz-pane.png)
 
 8. Mutasson a **Circle Card** ikonra, és figyelje meg a megjelenő elemleírást.
 

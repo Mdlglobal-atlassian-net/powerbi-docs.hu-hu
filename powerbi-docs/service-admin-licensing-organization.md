@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 09ce2e2db94116d70824b276b9b67b9dbe163d11
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 861b9c411b3088b6c16b7ad601f374bd771b13ed
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679317"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331988"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Szervezeti Power BI-licencelés
 
 A Power BI szolgáltatásban a felhasználók számára elérhető képességeket két licenctípus határozza meg:
 
-* **Felhasználónkénti** - *ingyenes és Power BI Pro-licencek*. Az ingyenes licenccel csak a Power BI egyes funkciói érhetők el. A Pro licenc a Power BI minden tartalmához és funkciójához hozzáférést biztosít, lehetővé teszi a tartalmak megosztását, és más Pro-felhasználókkal folytatott együttműködésre is lehetőség van. Csak a Pro szintű felhasználók tehetnek közzé és használhatnak tartalmat alkalmazás-munkaterületeken, oszthatnak meg irányítópultokat, és iratkozhatnak fel irányítópultokra és jelentésekre. További információkért lásd a [Power BI-szolgáltatások licenctípus szerinti funkcióinak](service-features-license-type.md) ismertetését.
+* **Felhasználónkénti** - *Power BI Pro-licencek és ingyenes licencelés*. A Power Pro-licenc a Power BI minden tartalmához és funkciójához hozzáférést biztosít, lehetővé teszi a tartalmak megosztását, és más Pro-felhasználókkal folytatott együttműködésre is lehetőséget nyújt. Csak a Pro szintű felhasználók tehetnek közzé és használhatnak tartalmat alkalmazás-munkaterületeken, oszthatnak meg irányítópultokat, és iratkozhatnak fel irányítópultokra és jelentésekre. Az ingyenes licenccel csak a Power BI egyes funkciói érhetők el. További információkért lásd a [Power BI-szolgáltatások licenctípus szerinti funkcióinak](service-features-license-type.md) ismertetését.
 
-* **Kapacitásalapú** - *Power BI Premium-licencek*. A Premium szint fenntartott kapacitást biztosít, amellyel konzisztensebb teljesítmény érhető el, és amely nagyobb adatméreteket támogat a Power BI-ban. Egyéni felhasználók esetén a Premium lehetővé teszi, hogy a Pro-felhasználók széles körben megoszthassák a tartalmakat anélkül, hogy a tartalmak címzettjei Pro licencekkel rendelkeznének. További információ: [A Power BI Premium bemutatása](service-premium.md).
+* **Kapacitásalapú** - *Power BI Premium-licencek*. A Premium szint fenntartott kapacitást biztosít, amellyel konzisztensebb teljesítmény érhető el, és amely nagyobb adatméreteket támogat a Power BI-ban. Egyéni felhasználók esetén a Premium lehetővé teszi, hogy a Pro-felhasználók széles körben megoszthassák a tartalmakat anélkül, hogy a tartalmak címzettjei Pro-licencekkel rendelkeznének. További információ: [A Power BI Premium bemutatása](service-premium.md).
 
 A cikk a felhasználónkénti licencekre összpontosít a rendszergazda szemszögéből.
 
@@ -73,17 +73,11 @@ Most [kioszthatja a licenceket az Office 365-ben](https://support.office.com/art
 
 ## <a name="manage-power-bi-free-licenses"></a>Ingyenes Power BI-licencek kezelése
 
-A céghez tartozó felhasználók két különböző módon szerezhetnek be ingyenes Power BI-licenceket. Egyénileg regisztrálhatnak a Power BI-ban, vagy Ön rendelhet hozzájuk Power BI-licencet az Office 365 Felügyeleti portálon.
+A céghez tartozó felhasználók két különböző módon szerezhetnek be ingyenes Power BI-licenceket:
 
-Az egyéni regisztráció engedélyezése megkönnyíti a céges rendszergazda dolgát, mert lehetőséget ad a Power BI iránt érdeklődő felhasználóknak, hogy ők maguk regisztráljanak díjmentesen.
+* Power BI-licenceket rendelhet hozzájuk az Office 365 felügyeleti portálon.
 
-Az egyéni regisztráció letiltása azonban nagyobb kontrollt biztosít, és megfelelő választás lehet, ha naplóznia kell a szolgáltatás használatát.
-
-### <a name="power-bi-free-for-individuals"></a>Ingyenes Power BI egyéni felhasználóknak
-
-Alapértelmezés szerint a cégben dolgozó egyéni felhasználók regisztrálhatnak a Power BI ingyenes licenceire. További információkért lásd: [Egyéni Power BI-regisztráció](service-self-service-signup-for-power-bi.md).
-
-Az egyéni regisztráció blokkolásával kapcsolatban lásd alább a cikk [Egyéni felhasználók általi Azure Active Directory-regisztráció engedélyezése és letiltása](service-admin-licensing-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory) szakaszát.
+* Ha egy felhasználó [regisztrál a Power BI Pro próbaverziójára](service-self-service-signup-for-power-bi.md), az pedig lejár, ingyenes licencet kap.
 
 ### <a name="requesting-and-assigning-free-licenses"></a>Ingyenes licencek igénylése és kiosztása
 
