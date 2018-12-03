@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/21/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: b7aac59c9d3848db37211475cd82447d6359b459
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: ec90e63de1e42350ff205febdc66abf4ba6ee626
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "34456039"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578497"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Oktatóanyag: Facebook-elemzések a Power BI Desktop használatával
 
@@ -226,7 +226,7 @@ Szeretné vizualizálni a bejegyzések hozzászólásainak számát adott idősz
 
 Kísérletezzen a további formázási lehetőségekkel és beállításokkal a vizualizációk megjelenésének módosításához. 
 
-![Vizualizációs elemek](media/desktop-tutorial-facebook-analytics/vis-1.png)
+![Vizualizációk](media/desktop-tutorial-facebook-analytics/vis-1.png)
 
 ## <a name="create-more-visualizations"></a>További vizualizációk létrehozása
 

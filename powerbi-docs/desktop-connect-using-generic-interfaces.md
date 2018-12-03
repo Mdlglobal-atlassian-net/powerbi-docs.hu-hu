@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9dad723d7b65836770fb866ddeed80d069a9658a
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: a76e287b957407bad98ceae92c5f6b39cde0b31d
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137100"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578566"
 ---
 # <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Csatlakozás adatokhoz általános illesztők használatával a Power BI Desktopban
 Számos különböző adatforráshoz csatlakozhat a **Power BI Desktopban** beépített adatösszekötők használatával, kezdve az **Access-adatbázisoktól** a **Zendesk-erőforrásokig**, ahogy ez az **Adatok lekérése** ablakban is látható. Továbbá a **Power BI Desktop** beépített általános illesztőinek használatával (pl.: **ODBC** vagy **REST API-k**) számos *egyéb* adatforráshoz is csatlakozhat, amelyek tovább bővítik kapcsolati lehetőségeit.

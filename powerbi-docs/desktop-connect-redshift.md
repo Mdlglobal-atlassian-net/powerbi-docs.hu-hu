@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c90d2ecf5c3722dfa3991d7001f7c5054e48e6a6
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: a71dc77f36ae1b8c4e54c69b5c9afaf676c7836f
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135122"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578083"
 ---
 # <a name="connect-to-amazon-redshift-in-power-bi-desktop"></a>Csatlakozás Amazon Redshifthez a Power BI Desktopban
 A **Power BI Desktopban** csatlakozhat egy **Amazon Redshift**-adatbázishoz, és úgy használhatja az alapul szolgáló adatokat, mint a Power BI Desktop bármely más adatforrását.

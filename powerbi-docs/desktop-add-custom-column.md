@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7937730988c651e32fb99e9c8eb9314b3a00785b
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 3ea3aa22a2ab76df115c1b4784d74dedfdf7dbf0
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39330007"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578658"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Egyéni oszlop hozzáadása a Power BI Desktopban
 A **Power BI Desktop** **Lekérdezésszerkesztőjével** egyszerűen adhat hozzá új egyéni adatoszlopokat a modellekhez. Ha egyéni oszlopokat szeretne létrehozni vagy átnevezni, egyszerű gombműveletekkel az egyéni oszlopot definiáló [M képleteket](https://msdn.microsoft.com/library/mt270235.aspx) hozhat létre. Az M képlet egy [átfogó függvényreferencia-tartalomkészlettel](https://msdn.microsoft.com/library/mt779182.aspx) rendelkezik. 

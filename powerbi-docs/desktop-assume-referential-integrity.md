@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bd609d5d5444bd5ed44b68c3d5afde473b4b1629
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 30aba9dc78008c933c34b24d1d367d18fb26c36c
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328350"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578451"
 ---
 # <a name="assume-referential-integrity-settings-in-power-bi-desktop"></a>Hivatkozási integritás feltételezése beállítások a Power BI Desktopban
 Amikor a **DirectQuery** használatával csatlakozik egy adatforráshoz, a **Hivatkozási integritás feltételezése** lehetőséggel engedélyezheti a hatékonyabb lekérdezések futtatását az adatforráson. Ez a funkció a felállít néhány követelményt a mögöttes adatokkal szemben, és csak a **DirectQuery** használatakor érhető el.

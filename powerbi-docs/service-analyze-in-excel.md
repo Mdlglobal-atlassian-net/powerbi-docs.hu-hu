@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: bbffe00507462c3a41ee07cb86c2376a072e5437
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: d1ddb1eabb45fa0c93b04419524d7f4f194189bb
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271555"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52669129"
 ---
 # <a name="analyze-in-excel"></a>Elemzés az Excelben
 Előfordulhat, hogy az Excel használatával szeretne megnézni és kezelni egy Power BI-adatkészletet. Az **Elemzés az Excelben** funkció segítségével pontosan ezt teheti meg, valamit elérheti az Excel kimutatás-, diagram- és szeletelő funkcióit a Power BI-ban létező adatkészletre vonatkozóan.

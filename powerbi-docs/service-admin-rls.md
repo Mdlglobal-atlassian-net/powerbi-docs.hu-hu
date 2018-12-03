@@ -7,18 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/02/2018
 ms.author: mblythe
+ms.date: 01/02/2018
 LocalizationGroup: Administration
-ms.openlocfilehash: b99f346102ae8b5f31db8101e499fb6915d870de
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 920fa426f98098768583e07d8f2b6c9825bfad1b
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850407"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578428"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sorszintű biztonság (RLS) a Power BI-ban
-A sorszintű biztonság (RLS) a Power BI-ban az adott felhasználók adatokhoz való hozzáférésének korlátozására használható. A szűrők a sorok szintjén korlátozzák az adatok elérését, és szerepkörökön belül határozhat meg szűrőket. Vegye figyelembe, hogy a Power BI szolgáltatásban a munkaterület tagjai hozzáférnek az adatkészletekhez a munkaterületen. Az RLS nem korlátozza ezt az adathozzáférést. 
+
+A sorszintű biztonság (RLS) a Power BI-ban az adott felhasználók adatokhoz való hozzáférésének korlátozására használható. A szűrők a sorok szintjén korlátozzák az adatok elérését, és szerepkörökön belül határozhat meg szűrőket. Vegye figyelembe, hogy a Power BI szolgáltatásban a munkaterület tagjai hozzáférnek az adatkészletekhez a munkaterületen. Az RLS nem korlátozza ezt az adathozzáférést.
 
 Konfigurálhat RLS-t a Power BI Desktoppal a Power BI-ba importált adatmodellekhez. Ezen kívül konfigurálhat RLS-t a DirectQueryt használó adatkészletekhez, például az SQL Serverhez is. Korábban csak a Power BI szolgáltatáson kívül, a helyszíni Analysis Services-modellekben lehetett RLS-t beállítani. Az Analysis Services élő kapcsolataihoz a helyszíni modellen konfigurálhatja a sorszintű biztonságot. Az élő kapcsolatok adatkészleteinél nem fog megjelenni a biztonsági beállítás.
 
@@ -34,6 +35,7 @@ További információt a [Kétirányú keresztszűrés a DirectQuery használat�
 [!INCLUDE [include-short-name](./includes/rls-desktop-view-as-roles.md)]
 
 ## <a name="manage-security-on-your-model"></a>Az adatmodell biztonságának kezelése
+
 Az adatmodell biztonságának kezeléséhez a következő lépéseket hajthatja végre.
 
 1. Az adatmodellnél kattintson a **három pontra (…)**.
@@ -46,7 +48,9 @@ Ekkor megnyílik az RLS-oldal, ahol hozzárendelheti a tagokat a Power BI Deskto
 Csak a Power BI Desktopon belül hozhat létre és módosíthat szerepköröket.
 
 ## <a name="working-with-members"></a>Tagok kezelése
+
 ### <a name="add-members"></a>Tagok hozzáadása
+
 A felvenni kívánt felhasználót, biztonsági csoportot vagy terjesztési listát az e-mail-cím vagy a név megadásával adhatja hozzá a szerepkörhöz. Csak cégen belüli tagot vehet fel. Power BI-ban létrehozott Csoportokat nem vehet fel.
 
 ![](media/service-admin-rls/rls-add-member.png)
@@ -56,11 +60,13 @@ A szerepkör neve vagy a Tagok melletti zárójelben a szerepkörhöz tartozó t
 ![](media/service-admin-rls/rls-member-count.png)
 
 ### <a name="remove-members"></a>Tagok eltávolítása
+
 A tagokat a nevük mellett látható X elemre kattintva távolíthatja el. 
 
 ![](media/service-admin-rls/rls-remove-member.png)
 
 ## <a name="validating-the-role-within-the-power-bi-service"></a>Szerepkör ellenőrzése a Power BI szolgáltatásban
+
 Az adott szerepkör megfelelő működését a szerepkör tesztelésével ellenőrizheti. 
 
 1. Kattintson a szerepkör mellett látható **három pontra (...)**.
@@ -83,12 +89,11 @@ A **Vissza a sorszintű biztonsághoz** lehetőségre kattintva visszatérhet a 
 [!INCLUDE [include-short-name](./includes/rls-usernames.md)]
 
 ## <a name="using-rls-with-app-workspaces-in-power-bi"></a>Az RLS használata Power BI-beli alkalmazás-munkaterületeken
+
 Ha egy Power BI szolgáltatáson belüli alkalmazás-munkaterületen tesz közzé Power BI Desktop-jelentést, a szerepkörök a csak olvasási jogosultsággal rendelkező tagokra fognak vonatkozni. Jeleznie kell, hogy a tagok csak az alkalmazás-munkaterület beállításain belül láthatják a Power BI-tartalmakat.
 
 > [!WARNING]
 > Ha az alkalmazás-munkaterületet úgy konfigurálta, hogy a tagoknak szerkesztési engedélyük legyen, az RLS-szerepkörök nem fognak vonatkozni rájuk. A felhasználók az összes adatot megtekinthetik.
-> 
-> 
 
 ![](media/service-admin-rls/rls-group-settings.png)
 
@@ -100,4 +105,3 @@ Ha egy Power BI szolgáltatáson belüli alkalmazás-munkaterületen tesz közz�
 [Sorszintű biztonság (RLS) a Power BI Desktoppal](desktop-rls.md)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c1f9ae5d988df16eeb9e9824968e55d2c22f0454
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 0518350e3dd9fa9d0e7bf94c5d37621a308c37d1
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328603"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52669404"
 ---
 # <a name="enter-data-directly-into-power-bi-desktop"></a>Adatok közvetlen bevitele a Power BI Desktopba
 A Power BI Desktoppal lehetőség van adatok közvetlen bevitelére, amelyeket azután jelentések és vizualizációk készítéséhez használhat fel. Például kimásolhatja egy munkafüzet vagy egy weblap egyes részeit, majd beillesztheti ezeket a Power BI Desktopba.

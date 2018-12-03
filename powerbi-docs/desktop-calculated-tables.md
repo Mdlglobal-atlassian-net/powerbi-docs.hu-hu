@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: e35c842af47bac9dfd6667ecfa885a8df8a8785c
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: efb936a4fadbd45c3d9fce809963415bb27e321e
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328097"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578474"
 ---
 # <a name="using-calculated-tables-in-power-bi-desktop"></a>Számított táblázatok használata a Power BI Desktopban
 A számított táblázatokkal új táblázatokat adhat a modellhez. De ahelyett, hogy értékeket kellene lekérdeznie és betöltenie egy adatforrásból az új táblázat oszlopaiba, létrehozhat egy Data Analysis Expressions- (DAX-) képletet, amely meghatározza a táblázat értékeit. A számított táblázatok a Power BI Desktopban az Új táblázat funkcióval hozhatók létre Jelentés nézetben vagy Adatnézetben.
@@ -65,7 +65,7 @@ A számított táblázatok bármely, táblázatot visszaadó DAX-kifejezéssel m
 Számos elemzési probléma megoldásához használhatja a számított táblázatokat a DAX-szal. Itt csak röviden bemutattuk a számított táblázatokat. A számított táblázatok használatának megkezdéséhez íme néhány gyakori DAX-táblázatfüggvény, amely hasznos lehet:
 
 * DISTINCT
-* VALUES
+* ÉRTÉKEK
 * CROSSJOIN
 * UNION
 * NATURALINNERJOIN

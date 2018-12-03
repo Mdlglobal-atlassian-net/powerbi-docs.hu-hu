@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: fad7b8453b6d5d29a1f6c5d9d9ed49b0a8b8a66f
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: a403f8a115361a36fbd12c4a66ba1dd34cc3bdde
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280340"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52669980"
 ---
 # <a name="data-view-in-power-bi-desktop"></a>A Power BI Desktop adatnézete
 Az **Adatnézet** segítségével megvizsgálhatja, felderítheti és megismerheti **Power BI Desktop**-modellben lévő adatokat. Az adatnézettel másképp tekintheti meg a táblákat, oszlopokat és adatokat, mint a **Lekérdezésszerkesztőben**. Az adatnézettel a modellbe való betöltésük *után* tekintheti meg az adatokat.

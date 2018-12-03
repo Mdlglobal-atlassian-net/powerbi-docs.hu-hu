@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/21/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 8cfa3190acd4ef2ae2e1123f22d8f6221147afb1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 85c16822a51bc3c4a59bbfaa363f742f77552b72
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34456088"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578635"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Oktatóanyag: Saját mértékek létrehozása a Power BI Desktopban
 A Power BI Desktop leghatékonyabb adatelemzési megoldásait a mértékek segítségével alakíthatja ki. A mértékek segítségével számításokat hajthat végre az adatokon a jelentések használata közben. Ez az oktatóanyag ismerteti a mértékekről, és bemutatja, hogy miképpen hozhatja létre a saját alapvető mértékeit a Power BI Desktopban.

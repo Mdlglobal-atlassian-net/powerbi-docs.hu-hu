@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4b1077b62baeee2412620e6ee2aa6aabc6838863
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: e0430455131b0669dfa744c7a1df6691bda4c782
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136387"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578152"
 ---
 # <a name="connect-to-data-in-power-bi-desktop"></a>Csatlakozás adatokhoz a Power BI Desktopban
 A Power BI Desktop segítségével egyszerűen csatlakozhat az adatok egyre bővülő forrásaihoz. Ha nem rendelkezik a Power BI Desktoppal, itt [letöltheti](http://go.microsoft.com/fwlink/?LinkID=521662) és telepítheti.

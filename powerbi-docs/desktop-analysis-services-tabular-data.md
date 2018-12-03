@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cbec15b472e6cfad6134cc48970977132d61dd36
-ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
+ms.openlocfilehash: 102198c4524903098ad0c6b0b9fd7e231c3f1fdc
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40257347"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578290"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Az Analysis Services táblázatos adatainak használata a Power BI Desktopban
 A Power BI Desktopban kétféleképpen érheti el és kérheti le az adatokat az SQL Server Analysis Services táblázatos modelljeiből: élő kapcsolaton keresztüli feltárással vagy az elemek kiválasztásával és a Power BI Desktopba történő importálásával.
