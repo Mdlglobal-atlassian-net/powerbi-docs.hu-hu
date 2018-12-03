@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 33462cbdac69d13d64d396a1dd93a6e1922a9e2c
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 0c972a218e8cf1197aef5b2948519b3fe997aee0
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679376"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670670"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Gyakori lekérdezési feladatok a Power BI Desktopban
 A Power BI Desktop **Lekérdezésszerkesztő** ablakában elérhető néhány gyakran használt feladat. Ez a dokumentum ezeket a gyakori feladatokat mutatja be, és további információkra mutató hivatkozásokat is tartalmaz. 

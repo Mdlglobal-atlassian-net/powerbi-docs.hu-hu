@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: cae73b7d232cf183fb99623016fba485904a2d7a
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 99ca79a676d103a5e3d2a297b9ac0752ee524295
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39326901"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670102"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Az Elemzés az Excelben hibaelhárítása
 Előfordulhat az Elemzés az Excelben funkció használata során, hogy nem várt eredményt kap, vagy nem a kívánt módon működik. Ez az oldal az Elemzés az Excelben használata során felmerülő gyakori problémákra nyújt megoldást.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a4a8c591d4f8fb6c9610496366b4eb3d80601fae
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 56f25730730a6f218f2dbaa678abdf182470f177
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39327453"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670256"
 ---
 # <a name="import-excel-workbooks-into-power-bi-desktop"></a>Excel-munkafüzetek importálása a Power BI Desktopba
 A **Power BI Desktop** segítségével egyszerűen importálhatja a Power Query lekérdezéseket, Power Pivot modelleket és Power View munkalapokat tartalmazó Excel-munkafüzeteket a Power BI Desktopba. A jelentéseket és a vizualizációkat a rendszer automatikusan létrehozza az Excel-munkafüzet alapján, és ha importálta, tovább is fejlesztheti ezeket a jelentéseket a Power BI Desktoppal a meglévő szolgáltatások és a Power BI Desktop havi frissítéseivel megjelenő új szolgáltatások segítségével.

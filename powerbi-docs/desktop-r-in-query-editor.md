@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 98f5e6b5fee1f3666ff204a5f2da400d0aaab80f
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: 9183a0fbb163fb4e46e6b310bcce953aaef9d1b8
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256124"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670624"
 ---
 # <a name="using-r-in-query-editor"></a>Az R használata a Lekérdezésszerkesztőben
 A Power BI Desktop **Lekérdezésszerkesztőjében** használhatja a statisztikusok, adatszakértők és adatelemzők által széles körben használt **R** programozási nyelvet. Az R integrációja a **Lekérdezésszerkesztőbe** lehetővé teszi adattisztítás elvégzését az R használatával, és összetett adatátalakítási és elemzési műveletek elvégzését adatkészletekben, beleértve többek között a hiányos adatok kiegészítését, az előrejelzéseket és a fürtözést. Az **R** egy sokoldalú nyelv, amely a **Lekérdezésszerkesztőben** is használható adatmodellek előkészítéséhez és jelentések létrehozásához.

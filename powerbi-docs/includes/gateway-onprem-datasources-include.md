@@ -20,6 +20,7 @@
 | SAP HANA |Igen |Igen |
 | SharePoint-lista (helyszíni) |Nem |Igen |
 | Snowflake |Igen |Igen |
+| Spark |Igen |Igen |
 | SQL Server |Igen |Igen |
 | Sybase |Nem |Igen |
 | Teradata |Igen |Igen |
