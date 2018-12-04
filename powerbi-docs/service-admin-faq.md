@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4379caf909360688e602601795066f51c9660633
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.openlocfilehash: fe81c8e972a4fe36f88da495e4e0dce97a39d32c
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157080"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830309"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>A Power BI felügyelete – gyakori kérdések (GYIK)
 
@@ -174,11 +174,15 @@ A Power BI felügyeleti portáljának eléréséhez fiókját **Globális rendsz
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Mi a Microsoft által a felhasználók számára létrehozott bérlők kezelésének folyamata?
 
-Ha egy bérlőt a Microsoft hozott létre, a következő lépésekkel igényelheti és kezelheti a bérlőt:
+Amikor egy önkiszolgáló felhasználó olyan felhőszolgáltatásban regisztrál, amely az Azure-t használja, akkor az e-mail-tartománya alapján hozzá lesz adva egy nem felügyelt Azure AD-címtárhoz. A létrehozott bérlőt a *rendszergazdai átvétel* néven ismert folyamattal igényelheti és kezelheti. Az átvétel típusa attól függ, hogy van-e már létező felügyelt bérlő a tartományhoz társítva:
 
-1. A Power BI-ra való regisztrációval csatlakozzon a bérlőhöz a kezelni kívánt bérlőtartománynak megfelelő e-mail-címtartománnyal. Ha a Microsoft például a contoso.com bérlőt hozta létre, a következő utótaggal rendelkező e-mail-címmel kell a bérlőhöz csatlakoznia: @contoso.com.
+* Új felügyelt bérlő tartományhoz történő létrehozásához használjon *belső átvételt*.
 
-1. Igényeljen rendszergazdai irányítást a tartomány tulajdonosának ellenőrzésével: miután a bérlőbe került, a tartomány tulajdonosának ellenőrzésével *Globális rendszergazda* szerepbe léptetheti elő magát. Ehhez kövesse az [Office 365-dokumentáció](/office365/admin/misc/become-the-admin) lépéseit.
+* Használjon *külső átvételt* a tartománynak egy meglévő felügyelt bérlőbe történő áthelyezésére.
+
+További információért lásd: [Nem felügyelt címtár átvétele rendszergazdaként az Azure Active Directoryban](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+
+Külső átvétel végrehajtásakor az átvétel végrehajtása előtt létrehozott Power BI-tartalom a [Power BI archivált munkaterületére](service-admin-power-bi-archived-workspace.md) kerül. Minden tartalmat manuálisan kell áttelepítenie, amelyet az új bérlőben szeretne használni.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Ha több tartományom van, felügyelhetem azt az Office 365-bérlőt, amelyhez a felhasználók hozzáadódnak?
 

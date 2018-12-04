@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: df53cf238a52502cecb4d1f77482b7b1a09c6b7a
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: f2edbd7b0b977b378d25634a0f9505101350d73b
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545268"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829803"
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report"></a>1. rész – Vizualizációk hozzáadása Power BI-jelentésekhez
 A cikk röviden bemutatja a vizualizációk jelentésekben történő létrehozását mind a Power BI szolgáltatás, mind pedig a Power BI Desktop használatával.  Részletesebb útmutatásért [lásd a II. részt](power-bi-report-add-visualizations-ii.md). Amanda bemutatja, hogyan lehet különbözőképpen létrehozni, szerkeszteni és formázni a vizualizációkat a jelentésvásznon. Ezután Ön is megpróbálhatja létrehozni a saját jelentését a [Értékesítési és marketing minta](../sample-datasets.md) segítségével.
@@ -29,7 +29,7 @@ A cikk röviden bemutatja a vizualizációk jelentésekben történő létrehoz�
 2. Ha a Mezők panel nem látható, a nyíl ikonnal tudja megnyitni. 
    
    ![](media/power-bi-report-add-visualizations-i/pbi_nancy_fieldsfiltersarrow.png)
-3. [Adjon hozzá egy üres lapot a jelentéshez](../power-bi-report-add-page.md).
+3. Adjon hozzá egy üres lapot a jelentéshez.
 
 ## <a name="add-visualizations-to-the-report"></a>Vizualizációk hozzáadása a jelentéshez
 1. A vizualizáció létrehozásához válasszon egy mezőt a **Mezők** panelen.  

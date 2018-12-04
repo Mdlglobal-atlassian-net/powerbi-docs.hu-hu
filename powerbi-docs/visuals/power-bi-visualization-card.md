@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9654e2838b1b62dcc856e2870b3fcc1e5301641c
-ms.sourcegitcommit: 07beb155ec0ea1cdcc741085251ed06d7bc8581c
+ms.openlocfilehash: b15d285774f0b6735fbc5df0ca2d00a81b944012
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48874575"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829941"
 ---
 # <a name="card-visualizations"></a>Kártyavizualizációk
 Néha csupán egyetlen szám a legfontosabb, amit nyomon szeretne követni a Power BI-irányítópulton vagy -jelentésben, például az összesített értékesítés, az egy évre vetített piaci részesedés, vagy a lehetőségek száma összesen. Az ilyen típusú vizualizációkat *Kártyáknak* nevezzük. Csakúgy, mint szinte minden natív Power BI-vizualizáció, a Kártyák is a jelentésszerkesztővel vagy a Q&A-val hozhatók létre.
@@ -25,7 +25,7 @@ Néha csupán egyetlen szám a legfontosabb, amit nyomon szeretne követni a Pow
 ## <a name="create-a-card-using-the-report-editor"></a>Kártyák létrehozása a jelentésszerkesztővel
 Ez az útmutatás a Kiskereskedelmi elemzési mintát használja. Annak érdekében, hogy követni tudja a lépéseket, [töltse le a mintát](../sample-datasets.md), mely a Power BI szolgáltatásban (az app.powerbi.com webhelyen) vagy a Power BI Desktopban használható.   
 
-1. Kezdjen egy [üres jelentésoldalon](../power-bi-report-add-page.md), és válassza a **Store** \> **Open store count** (Üzlet > Nyitva lévő üzletek száma) mezőt. Ha a Power BI szolgáltatást használja, a [Szerkesztési nézetében](../service-interact-with-a-report-in-editing-view.md) kell megnyitnia a jelentést.
+1. Kezdjen egy üres jelentésoldalon, és válassza a **Store** \> **Open store count** (Üzlet > Nyitva lévő üzletek száma) mezőt. Ha a Power BI szolgáltatást használja, a [Szerkesztési nézetében](../service-interact-with-a-report-in-editing-view.md) kell megnyitnia a jelentést.
 
     A Power BI létrehoz egy oszlopdiagramot ezzel az egy számmal.
 

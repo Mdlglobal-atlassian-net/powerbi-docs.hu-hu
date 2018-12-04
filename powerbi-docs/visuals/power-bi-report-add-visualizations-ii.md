@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a15975f456bab94fd04fa7501760c9874fabf952
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 01051ab47304713fe3cf0f9128f5cd99af58bffe
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736896"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830217"
 ---
 # <a name="part-2-add-visualizations-to-a-power-bi-report"></a>2. rész – Vizualizációk hozzáadása Power BI-jelentésekhez
 Az [1. részben](power-bi-report-add-visualizations-ii.md) alapszintű képi megjelenítéseket hozott létre a mezők neve melletti jelölőnégyzetek bejelölésével.  A 2. részben megtudhatja, hogyan hozhat létre és módosíthat képi megjelenítéseket az egér húzásával, valamint a **Mezők** és a **Képi megjelenítések** panelek nyújtotta lehetőségek teljes körű kiaknázásával.
@@ -32,7 +32,7 @@ Ebben az oktatóanyagban a Kiskereskedelmi elemzés adatkészlet felhasználás�
 1. Nyissa meg a Kiskereskedelmi elemzési minta .PBIX-fájlját a Power BI Desktopban. 
    ![](media/power-bi-report-add-visualizations-ii/power-bi-open-desktop.png)   
 
-2.  A vászon aljánál lévő sárga plusz ikonra kattintva [adhat hozzá egy új oldalt](../power-bi-report-add-page.md).
+2. A vászon aljánál lévő sárga plusz ikonra kattintva adhat hozzá egy új oldalt.
 
 ### <a name="add-a-visualization-that-looks-at-this-years-sales-compared-to-last-year"></a>Adjon hozzá egy olyan képi megjelenítést, amely az idei értékesítési adatokat a tavalyiakkal veti össze.
 1. Az **Értékesítés** táblában válassza az **Idei értékesítés** > **Érték** és a **Tavalyi értékesítések** mezőket. A Power BI létrehoz egy oszlopdiagramot.  Ez valamelyest azért érdekes, és nem árt a mélyére ásni. Hogy néz ki az értékesítés havi bontásban?  

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 327ba72c46aa5a6a2edea723bd5450cd5bbbcdb4
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 3a0ef369aa690044dbef9c4ef0cda070565b9922
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187329"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829895"
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>A Power BI szolgáltatás vagy a Power BI Desktop használata egyéni válaszoldal létrehozására Cortanához
 A Power BI teljes funkcionalitásának használata *Cortana-válaszoldalaknak* (vagy néha *Cortana-válaszkártyáknak*) nevezett, kifejezetten a Cortana-kérdések megválaszolására tervezett, különleges jelentésoldalak létrehozására.
@@ -41,7 +41,7 @@ Négy dokumentum nyújt útmutatást a Power BI-hoz használt Cortana beállít�
 ## <a name="create-a-cortana-answer-page-designed-specifically-for-cortana"></a>Kifejezetten Cortanához tervezett Cortana-válaszoldal létrehozása
 A jelentésekben a *Cortana-válaszoldal* Cortanára van méretezve, hogy megjeleníthesse a képernyőn a kérdésekre adott válaszul. Válaszoldal létrehozása Cortanához:
 
-1. Javasoljuk, hogy egy [üres jelentésoldallal](power-bi-report-add-page.md) kezdje.
+1. Javasoljuk, hogy egy üres jelentésoldallal kezdje.
 2. A **Vizualizációk** ablaktáblán kattintson a festőhenger ikonra, és válassza az **Oldalméret** > **Típus** > **Cortana** lehetőséget.
    
     ![](media/service-cortana-answer-cards/pbi-cortana-page-size-new.png)
