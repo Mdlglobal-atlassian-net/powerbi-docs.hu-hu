@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 06/25/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1ed4298e4ed4cddcdf965bd427c654cab6adf1e6
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.openlocfilehash: 216451874fcc66b14286ea4ed3aeb1845483bfb7
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157011"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578359"
 ---
 # <a name="powershell-cmdlets-rest-apis-and-net-sdk-for-power-bi-administration"></a>PowerShell-parancsmagok, REST API-k és a .NET SDK a Power BI felügyeletéhez
 A Power BI segítségével a rendszergazdák gyakori feladatokat végeztethetnek el PowerShell-parancsmagokkal. A Power BI emellett REST API-kkal is rendelkezik, valamint felügyeleti megoldások fejlesztésére is használható a .NET SDK-val. Ez a témakör parancsmagokat, valamint a hozzájuk tartozó SDK-módszert és REST API-végpontot ismerteti. További információ:
@@ -23,6 +23,8 @@ A Power BI segítségével a rendszergazdák gyakori feladatokat végeztethetnek
 - PowerShell – [Letöltés](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt/) és [dokumentáció](https://docs.microsoft.com/powershell/power-bi/overview?view=powerbi-ps)
 - REST API – [dokumentáció](https://docs.microsoft.com/rest/api/power-bi/admin)
 - .NET SDK – [Letöltés](https://www.nuget.org/packages/Microsoft.PowerBI.Api/)
+
+> Az alábbi parancsmagokat a `-Scope Organization` hívhatja a bérlő kezeléséhez.
 
 | **Parancsmag neve** | **Aliasnevek** | **SDK-módszer** | **REST API-végpont** | **Leírás** |
 | --- | --- | --- | --- | --- |
@@ -34,10 +36,9 @@ A Power BI segítségével a rendszergazdák gyakori feladatokat végeztethetnek
 | **Restore-PowerBIWorkspace** |**Restore-PowerBIGroup** | Groups\_RestoreDeletedGroupAsAdmin | /v1.0/myorg/admin/groups/{groupId}/restore | Visszaállít egy törölt munkaterületet. |
 | **Set-PowerBIWorkspace** |**Set-PowerBIGroup** | Groups\_UpdateGroupAsAdmin | /v1.0/myorg/admin/groups/{groupId} | Frissíti egy adott munkaterület tulajdonságait. |
 | **Get-PowerBIDataset -WorkspaceId** | N.A. | Groups\_GetDatasetsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/datasets | Lekéri egy adott munkaterület adatkészleteit. |
-| **Export-PowerBIReport** | N.A. | Reports\_ExportReportAsAdmin | N.A. | Egy helyi fájlba exportál egy adott jelentést. |
 | **Get-PowerBIReport** | N.A. | Reports\_GetReportsAsAdmin | /v1.0/myorg/admin/reports | Lekéri egy Power BI-bérlő összes jelentését. |
 | **Get-PowerBIDashboard** | N.A. | Dashboards\_GetDashboardsAsAdmin | /v1.0/myorg/admin/dashboards | Lekéri egy Power BI-bérlő összes irányítópultját. |
-| **Get-PowerBIDashboard** | N.A. | Groups\_GetDashboardsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/dashboards | Lekéri egy adott munkaterület irányítópultjait. |
+| **Get-PowerBIDashboard -WorkspaceId** | N.A. | Groups\_GetDashboardsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/dashboards | Lekéri egy adott munkaterület irányítópultjait. |
 | **Get-PowerBITile** | **Get-PowerBIDashboardTile** | Dashboards\_GetTilesAsAdmin | /v1.0/myorg/admin/dashboards/{dashboard\_id}/tiles | Lekéri egy adott irányítópult csempéit. |
 | **Get-PowerBIReport** | N.A. | Groups\_GetReportsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/reports | Lekéri egy adott munkaterület jelentéseit. |
 | **Get-PowerBIImport** | N.A. | Import\_GetImportsAsAdmin | /v1.0/myorg/admin/imports | Lekéri egy Power BI-bérlő összes importálását. |

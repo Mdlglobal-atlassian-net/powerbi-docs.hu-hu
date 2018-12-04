@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/17/2018
-ms.openlocfilehash: 8cdeed0c5575a8405ae5db6d1eaca522ab0597cb
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.date: 11/27/2018
+ms.openlocfilehash: 71cbae5f282883ca26a5bf0b2ae7b5609b86eb58
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679432"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578796"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Gyakori kérdések – Power BI Embedded
 
@@ -35,7 +35,7 @@ A saját alkalmazásokat készítő fejlesztők és szoftvercégek, más néven 
 
 A Power BI Embedded független szoftvergyártók vagy fejlesztők számára készült, akik alkalmazásokat készítenek és vizualizációkat ágyaznak be bennük, hogy ezzel segítsék ügyfeleik döntéseit, de ne kelljen az alapoktól kezdve elemzési megoldásokat létrehozniuk. A beágyazott elemzések használatával a vállalati felhasználók az alkalmazáson belül férhetnek hozzá a vállalati adataikhoz, amelyekben elemzéseket készíthetnek lekérdezések végrehajtásával.
 
-A Power BI pedig egy olyan elemzési szolgáltatottszoftver-megoldás, amely vállalatok számára teszi lehetővé a legfontosabb üzleti adataik egyszerű megtekintését.
+A Power BI egy olyan elemzési szolgáltatottszoftver-megoldás, amely vállalatok számára teszi lehetővé a legfontosabb üzleti adataik egyszerű megtekintését.
 
 ### <a name="what-is-the-difference-between-power-bi-premium-and-power-bi-embedded"></a>Mi a különbség a Power BI Premium és a Power BI Embedded között?
 
@@ -47,7 +47,7 @@ A Power BI Embedded független szoftvergyártók vagy fejlesztők számára kés
 
 A Microsoft ajánlása alapján a vállalatoknak a Power BI Premiumot érdemes megvásárolniuk, amely egy nagyvállalati szintű, felhőbeli önkiszolgáló BI-megoldás, a független szoftvergyártóknak pedig a Power BI Embeddedet érdemes megvásárolniuk, amely felhőalapú elemzési képességeket biztosít számukra. Azonban nincsenek korlátozások arra vonatkozóan, hogy ügyfeleink melyik terméket vásárolhatják meg.
 
-Előfordulhatnak olyan esetek, amikor független szoftvergyártók (általában nagyobb méretűek) egy P termékváltozatot szeretnének használni, hogy kihasználhassák az előrecsomagolt Power BI szolgáltatás előnyeit a vállalatukon belül és az alkalmazásaikba ágyazva egyaránt. És persze nagyvállalatok is dönthetnek az Azure-beli A termékváltozatok használata mellet, ha csak az üzletági alkalmazások fejlesztése és az elemzési képességek beágyazása érdekli őket, és nem szeretnék az előrecsomagolt Power BI szolgáltatást használni.
+Előfordulhatnak olyan esetek, amikor független szoftvergyártók (általában nagyobb méretűek) egy P termékváltozatot szeretnének használni, hogy kihasználhassák az előrecsomagolt Power BI szolgáltatás előnyeit a vállalatukon belül és az alkalmazásaikba ágyazva egyaránt. Egyen nagyvállalatok dönthetnek az Azure-beli A termékváltozatok használata mellet, ha csak az üzletági alkalmazások fejlesztése és az elemzési képességek beágyazása érdekli őket, és nem szeretnék az előrecsomagolt Power BI szolgáltatást használni.
 
 ### <a name="how-many-embed-tokens-can-i-create"></a>Hány beágyazási tokent hozhatok létre?
 
@@ -130,7 +130,7 @@ A Power BI megköveteli, hogy céges fiókkal jelentkezzen be. A Power BI-ra MSA
 
 ### <a name="can-i-use-apis-to-create--manage-azure-capacities"></a>Használhatok API-kat Azure-képességek létrehozására és kezelésére?
 
-Igen, vannak PowerShell-parancsmagok és Azure Resource Manager (ARM) API-k, amelyeket használhat PBIE-erőforrások létrehozására és kezelésére.
+Igen, vannak PowerShell-parancsmagok és Azure Resource Manager API-k, amelyeket használhat PBIE-erőforrások létrehozására és kezelésére.
 
 * REST API-k – https://docs.microsoft.com/rest/api/power-bi-embedded/
 * PowerShell-parancsmagok – https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/
@@ -144,6 +144,7 @@ Annak érdekében, hogy a [megoldást elő lehessen léptetni az éles környeze
 [PAM](https://ecosystemmanager.azurewebsites.net/home) (EcoManager) – lásd termékrendelkezésre állás-kezelő
 
 Elérhető régiók (16 – ugyanazok a régiók, mint a Power BI-ban)
+
 * US (6) – USA keleti régiója, USA 2. keleti régiója, USA északi középső régiója, USA déli középső régiója, USA nyugati régiója, USA 2. nyugati régiója
 * Európa (2) – Észak-Európa, Nyugat-Európa
 * Ázsia és a Csendes-óceáni térség (2) – Délkelet-Ázsia, Kelet-Ázsia
@@ -164,7 +165,7 @@ Ha már rendelkezik egy Azure AD-bérlővel, akkor használhatja meglévő címt
 
 AAD-token beszerzéséhez használhatja az Azure Active Directory valamely hitelesítési kódtárát – https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries. Ügyfélkódtárak több platformhoz is elérhetőek.
 
-### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>Az alkalmazásom már AAD-t használ a felhasználói hitelesítéshez. Hogyan használhatjuk ezt az identitást, a „Felhasználó az adatok tulajdonosa” forgatókönyvek esetében a Power BI-ban való hitelesítésekor? 
+### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-an-user-owns-data-scenario"></a>Az alkalmazásom már AAD-t használ a felhasználói hitelesítéshez. Hogyan használhatjuk ezt az identitást, a „Felhasználó az adatok tulajdonosa” forgatókönyvek esetében a Power BI-ban való hitelesítéskor?
 
 Ez egy szokásos, más nevében történő OAuth-hitelesítési folyamat (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) Az alkalmazást úgy kell konfigurálni, hogy engedélyt kérjen a Power BI szolgáltatáshoz (a szükséges hatókörökkel), és ha már rendelkezik felhasználói tokennel az alkalmazáshoz, egyszerűen csak hívnia kell az ADAL API AcquireTokenAsync metódust a felhasználói hozzáférési tokennel, és meg kell adnia a Power BI-erőforrás URL-címét erőforrás-azonosítóként. Tekintse át az alábbi kódrészletet, amely bemutatja ennek módját:
 
@@ -193,6 +194,16 @@ Délkelet-Ausztrália, Dél-Brazília, Közép-Kanada, USA 2. keleti régiója, 
 
 A tartalomcsomagok adathalmazaiból készült **irányítópultokat** és **csempéket** *nem lehet beágyazni*, a tartalomcsomagok adathalmazaiból készült **jelentések** viszont *beágyazhatók*.
 
+### <a name="what-is-the-difference-between-using-rls-vs-javascript-filters"></a>Mi a különbség az RLS- és a JavaScript-szűrők használata között?
+
+Gyakran van keveredés akörül, mikor érdemes használni az RLS-, és mikor a JavaScript a szűrőket, mert az egyik módszer azt szabályozza, hogy mit láthat a megadott felhasználó, a másik pedig a felhasználói nézet optimalizálása.
+
+Az RLS-nél a független szoftverszállító szabályozza az adatszűrést a modell létrehozásának és a beágyazott token generálásának részeként. A végfelhasználó csak azt látja, amit a független szoftverszállító engedélyez a számára. Ebben az esetben a felhasználó dönthet úgy, hogy kevesebb adatot jelenít meg, mint amennyi a szűrővel látható, de nem tudja megkerülni az RLS-konfigurációt, és a megengedettnél több adatot nem tud megjeleníteni.
+
+Az ügyféloldali szűrés (JavaScript) alkalmazásakor a független szoftverszállító meghatározhatja, mit láthat a végfelhasználó a kezdeti nézetben, de nem szabályozhatja, hogy a végfelhasználó milyen módosításokat alkalmazhat magára a nézetre. Bár lehetséges adatszűrés a háttéralkalmazásban, ezt a JavaScript-ügyfélkód váltja ki, ezért a végfelhasználó módosíthatja, és nem tekinthető biztonságosnak.
+
+További részletekért lásd [Az RLS- és a JavaScript-szűrők összehasonlítása](embedded-row-level-security.md#using-rls-vs-javascript-filters) szakaszt.
+
 ## <a name="licensing"></a>Licencelés
 
 ### <a name="how-do-i-purchase-power-bi-embedded"></a>Hogyan tudom megvásárolni a Power BI Embeddedet?
@@ -207,13 +218,13 @@ Az ügyfelek továbbra is fizetnek a megvásárolt Power BI Premiumukért az akt
 
 Nem, a Power BI Embedded magában foglalja a megoldásainak üzembe helyezéséhez és terjesztéséhez szükséges Azure-alapú kapacitást.
 
-### <a name="whats-the-purchase-commitment-for-power-bi-embedded"></a>Milyen kötelezettségeket kell vállalni a Power BI Embedded megvásárlásakor? 
+### <a name="whats-the-purchase-commitment-for-power-bi-embedded"></a>Milyen kötelezettségeket kell vállalni a Power BI Embedded megvásárlásakor?
 
 Ügyfeleink a használatukat óránként módosíthatják. A Power BI Embedded szolgáltatás esetén nincs havi vagy éves kötelezettségvállalás.
 
 ### <a name="how-does-the-usage-of-power-bi-embedded-show-up-on-my-bill"></a>Hogyan jelenik meg a Power BI Embedded használata a számlámon?
 
-A Power BI Embedded költségeinek számlázása könnyen előrejelezhető módon, óránként történik az üzembe helyezett csomópont(ok) típusa alapján. Vegye figyelembe, hogy ha az erőforrása aktív, abban az esetben akkor is díjat számolunk fel, ha nem történik tényleges használat. Ha nem szeretne díjat fizetni, az erőforrást kifejezetten szüneteltetnie kell.
+A Power BI Embedded költségeinek számlázása könnyen előrejelezhető módon, óránként történik az üzembe helyezett csomópont(ok) típusa alapján. Ha az erőforrása aktív, abban az esetben akkor is díjat számolunk fel, ha nem történik tényleges használat. Ha nem szeretne díjat fizetni, az erőforrást kifejezetten szüneteltetnie kell.
 
 ### <a name="who-needs-a-power-bi-pro-license-for-power-bi-embedded-and-why"></a>Kinek van szüksége a Power BI Embeddedhez Power BI Pro-licencre, és miért?
 
@@ -229,7 +240,7 @@ Igen, használhatja az [Azure-kreditjeit](https://azure.microsoft.com/free/) a P
 
 ### <a name="can-i-get-a-trial-experience-for-power-bi-embedded-in-azure"></a>Van lehetőség az Azure-beli Power BI Embedded kipróbálására?
 
-Mivel a Power BI Embedded az Azure része, így használhatja ezt a szolgáltatást az [Azure-regisztráció során kapott 200 $ értékű kreditjéből](https://azure.microsoft.com/free/).
+Mivel a Power BI Embedded az Azure része, így használhatja ezt a szolgáltatást az [Azure-regisztráció során kapott 200 USD értékű kreditjéből](https://azure.microsoft.com/free/).
 
 ### <a name="is-power-bi-embedded-available-for-sovereign-clouds-us-government-germany-china"></a>Elérhető a Power BI Embedded a szuverén felhőkben (US Government, Németország, Kína)?
 
@@ -263,6 +274,7 @@ További információkért lásd: [Power BI-munkaterületcsoport tartalmainak á
 Igen, de a  **Power BI-munkaterületcsoport** meglévő felhasználói tovább használhatják azt az elavulás időpontjáig. Az ügyfelek egyaránt létrehozhatnak új munkaterületcsoportokat és **Power BI-munkaterületcsoportot** még használó **Power BI Embedded**-megoldásokat is.
 
 Ez azonban azzal jár, hogy a **Power BI-munkaterületcsoportokban** már nem jelennek meg új funkciók, és az ügyfeleknek érdemes lesz megtervezni a tartalmak áttelepítését a **Power BI Embedded** megoldásba.
+
 ### <a name="when-will-power-bi-workspace-collection-support-be-discontinued"></a>Mikor szűnik meg a Power BI-munkaterületcsoport támogatása?
 
 A **Power BI-munkaterületcsoportot** használó ügyfelek 2018 június végéig, vagy a támogatási szerződésük lejártáig folytathatják a használatot.
@@ -276,11 +288,12 @@ Az elérhető régiók Délkelet-Ausztrália, Dél-Brazília, Közép-Kanada, az
 A **Power BI Embedded** megoldás olyan új funkciókkal és képességekkel rendelkezik, amelyek a **Power BI-munkaterületcsoportban** nem valósíthatók meg.
 
 Néhány ilyen funkció:
-* A PBI esetében minden adatforrás támogatott, szemben a **Power BI-munkaterületcsoport** 2 adatforrásával. 
+
+* A PBI esetében minden adatforrás támogatott, szemben a **Power BI-munkaterületcsoport** két adatforrásával. 
 * Számos új funkció, köztük a Q&A, a Frissítés, a könyvjelzők, az irányítópultok és csempék beágyazása és az egyéni menü csak a **Power BI Embedded** megoldásban van támogatva.
 * Kapacitás-számlázási modell.
 
-## <a name="embedding-setup-tool-for-embedding"></a>Beágyazáshoz szükséges telepítési eszköz beágyazása
+## <a name="embedding-setup-tool"></a>Beágyazáshoz szükséges telepítési eszköz
 
 ### <a name="what-is-the-embedding-setup-tool"></a>Mi a beágyazáshoz szükséges telepítési eszköz?
 

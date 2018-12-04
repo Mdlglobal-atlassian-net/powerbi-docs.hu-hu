@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/18/2018
-ms.openlocfilehash: 60061d781542f8b5a3ef67a75e61d902459d4963
-ms.sourcegitcommit: ded8b85276e7eda166d6e67f72d1fe3d5e234745
+ms.date: 11/28/2018
+ms.openlocfilehash: 901c087c486598019e905598ee83382664842cc8
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46506776"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578773"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Sorszintű biztonság használata beágyazott Power BI tartalommal
 
-A sorszintű biztonság (RLS) a felhasználók adatokhoz való hozzáférésének korlátozására használható irányítópultoknál, csempéknél, jelentéseknél és adatkészleteknél. Ugyanazokkal az összetevőkkel több felhasználó is dolgozhat egyszerre úgy, hogy más-másféle adatokat látnak. A beágyazás támogatja a RLS-t.
+A **sorszintű biztonság (RLS)** a felhasználók adatokhoz való hozzáférésének korlátozására használható irányítópultoknál, csempéknél, jelentéseknél és adatkészleteknél. Ugyanazokkal a összetevőkkel több felhasználó is dolgozhat egyszerre úgy, hogy más-másféle adatokat látnak. A beágyazás támogatja a RLS-t.
 
-Ha nem Power BI-felhasználóknak végez beágyazást (alkalmazás tulajdonában lévő adatok, ez általában a szoftverszolgáltatóknál fordul elő), akkor ez a cikk Önnek szól. Konfigurálnia kell a beágyazási tokent a felhasználó és a szerepkör figyelembe vételéhez. Olvasson tovább ennek megismeréséhez.
+Ha nem Power BI-felhasználóknak végez beágyazást (alkalmazás tulajdonában lévő adatok, ez általában a szoftverszolgáltatóknál fordul elő), akkor ez a cikk Önnek szól. Konfigurálnia kell a beágyazási tokent a felhasználó és a szerepkör figyelembe vételéhez.
 
 Ha Power BI-felhasználóknak végez beágyazást (a felhasználó az adatok tulajdonosa) a cégen belül, az RLS ugyanúgy működik, mintha közvetlenül a Power BI szolgáltatásban lenne. Nem kell semmi mást csinálnia az alkalmazásban. További információkat a [Power BI sorszintű biztonság (RLS) használatával kapcsolatos](../service-admin-rls.md) részben találhat.
 
@@ -32,14 +32,14 @@ Az RLS kihasználása érdekében fontos megérteni a három fő alapelvet: a fe
 
 **Szerepkörök** – A felhasználók szerepkörökhöz tartoznak. A szerepkörök szabályok tárolói és olyan nevük lehet, mint *Értékesítési igazgató* vagy *Értékesítési képviselő*. A Power BI Desktopban hozhat létre szerepköröket. További információkat a [sorszintű biztonság (RLS) Power BI Desktoppal való használatával kapcsolatos](../desktop-rls.md) részben találhat.
 
-**Szabályok** – A szerepkörök szabályokkal rendelkeznek, és ezek a szabályok az adatokra alkalmazott tényleges szűrők. Ez olyan egyszerű lehet, mint a „Country = USA”, vagy sokkal dinamikusabb lehet.
+**Szabályok** – A szerepkörök szabályokkal rendelkeznek, és ezek a szabályok az adatokra alkalmazott tényleges szűrők. A szabályok lehetnek olyan egyszerűek, mint a „Country = USA”, vagy sokkal dinamikusabbak is lehetnek.
 A cikk hátralévő részében egy példa szerepel az RLS elkészítésére és beágyazott alkalmazásban való használatára. A példánk a [Kiskereskedelmi elemzési minta](http://go.microsoft.com/fwlink/?LinkID=780547) PBIX-fájlját használja.
 
 ![Jelentéspélda](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
 ## <a name="adding-roles-with-power-bi-desktop"></a>Szerepkörök hozzáadása a Power BI Desktoppal
 
-A Kiskereskedelmi elemzési minta egy kiskereskedelmi láncban lévő összes áruház értékesítéseit jeleníti meg. Az RLS nélkül nem számít, hogy melyik kerület menedzsere jelentkezik be és tekinti meg a jelentést, mindegyik ugyanazokat az adatokat látja. A felső vezetőség meghatározta, hogy mindegyik kerületi menedzser csak az általuk kezelt áruházak értékesítéseit láthatja, és ehhez használhatjuk az RLS-t.
+A **Kiskereskedelmi elemzési minta** egy kiskereskedelmi láncban lévő összes áruház értékesítéseit jeleníti meg. Az RLS nélkül nem számít, hogy melyik kerület menedzsere jelentkezik be és tekinti meg a jelentést, mindegyik ugyanazokat az adatokat látja. A felső vezetőség meghatározta, hogy mindegyik kerületi menedzser csak az általuk kezelt áruházak értékesítéseit láthatja. Az RLS használata lehetővé teszi, hogy a felső vezetőség az adatokat a kerületi menedzser alapján korlátozza.
 
 Az RLS a Power BI Desktopban készül. Az adatkészlet és a jelentés megnyitásakor diagramnézetre válthatunk a séma megtekintéséhez:
 
@@ -64,7 +64,7 @@ Ezt a következőképpen teheti meg:
 2. Hozzon létre egy **Manager** (Menedzser) nevű új szerepkört.
 
     ![Új szerepkör létrehozása](media/embedded-row-level-security/powerbi-embedded-new-role.png)
-3. A **District** (Kerület) táblában írja be a következő DAX-kifejezést: **[District Manager] = USERNAME()**.
+3. A **District** (Kerület) táblában írja be ezt a DAX-kifejezést: **[District Manager] = USERNAME()**.
 
     ![DAX-utasítás RLS-szabályhoz](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
 4. A szabályok működésének biztosítása érdekében a **Modellezés** lapon válassza a **Megtekintés szerepkörökként** lehetőséget, majd válassza ki a most létrehozott **Manager** szerepkört és az **Egyéb felhasználó** szerepkört is. Írja be felhasználóként az **AndrewMa** nevet.
@@ -79,11 +79,11 @@ A szűrő alkalmazásával, ahogyan itt tettük, a **District** (Kerület), **St
 
 Most, hogy konfigurálva vannak a Power BI Desktop-szerepkörök, el kell végezni néhány dolgot az alkalmazásban a szerepkörök kihasználása érdekében.
 
-Az alkalmazás hitelesíti és engedélyezi a felhasználókat és beágyazási tokenekkel ad hozzáférést ezeknek a felhasználóknak egy adott Power BI Embedded-jelentéshez. A Power BI Embedded nem rendelkezik konkrét információkkal arról, hogy ki a felhasználó. Az RLS működéséhez további kontextust kell megadnia a beágyazási token részeként identitások formájában. Ez az [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) (Beágyazási Token) API-n keresztül végezhető el.
+Az alkalmazás hitelesíti és engedélyezi a felhasználókat és beágyazási tokenekkel ad hozzáférést ezeknek a felhasználóknak egy adott Power BI Embedded-jelentéshez. A Power BI Embedded nem rendelkezik konkrét információkkal arról, hogy ki a felhasználó. Az RLS működéséhez további kontextust kell megadnia a beágyazási token részeként identitások formájában. Az identitásokat a [Beágyazási token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) API-val adhatja át.
 
-Az API olyan identitások listáját fogadja el, amelyben jelezve vannak a kapcsolódó adatkészletek. Annak érdekében, hogy az RLS működjön, a következőt kell megadnia az identitás részeként.
+Az API olyan identitások listáját fogadja el, amelyben jelezve vannak a kapcsolódó adatkészletek. Annak érdekében, hogy az RLS működjön, az alábbiakat kell átadnia az identitás részeként.
 
-* **username (kötelező)** – Ez olyan sztring, amellyel azonosítható a felhasználó az RLS-szabályok alkalmazásakor. Csak egyetlen felhasználó sorolható fel. Az Ön felhasználóneve *ASCII* karakterekkel hozható létre.
+* **username (kötelező)** – Egy sztring, amellyel azonosítható a felhasználó az RLS-szabályok alkalmazásakor. Csak egyetlen felhasználó sorolható fel. Az Ön felhasználóneve *ASCII* karakterekkel hozható létre.
 * **roles (kötelező)** – Sorszintű biztonsági szabályok alkalmazásakor kiválasztható szerepköröket tartalmazó sztring. Több szerepkör átadásakor sztringtömbként kell azokat átadni.
 * **dataset (kötelező)** – Az épp beágyazott összetevőre érvényes adatkészlet.
 
@@ -106,7 +106,9 @@ var generateTokenRequestParameters = new GenerateTokenRequest("View", null, iden
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync("groupId", "reportId", generateTokenRequestParameters);
 ```
 
-Ha a REST API-t hívja meg, a frissített API már elfogad egy további, **identities** nevű JSON-tömböt, amely tartalmaz egy felhasználónevet, a szerepkörök sztringlistáját és az adatkészletek karakterlánclistáját, pl.:
+Ha a REST API-t hívja meg, a frissített API már elfogad egy további, **identities** nevű JSON-tömböt, amely tartalmaz egy felhasználónevet, a szerepkörök sztringlistáját és az adatkészletek karakterlánclistáját. 
+
+Használja példaként az alábbi kódot:
 
 ```json
 {
@@ -129,36 +131,43 @@ A sorszintű biztonság használható az élő Analysis Services-kapcsolatokkal 
 
 A felhasználónév tulajdonsághoz megadott hatályos identitásnak Windows-felhasználónak kell lennie, amely rendelkezik engedélyekkel az Analysis Services-kiszolgálóhoz.
 
-**Helyszíni adatátjáró konfigurációja**
+### <a name="on-premises-data-gateway-configuration"></a>Helyszíni adatátjáró konfigurációja
 
 Az élő Analysis Services-kapcsolatok használatakor [helyszíni adatátjárót](../service-gateway-onprem.md) kell használni. Az identitást tartalmazó beágyazási token létrehozásakor a fő fióknak az átjáró rendszergazdájaként kell szerepelnie. Ha a fő fiók nincs felsorolva, a sorszintű biztonság nem fog érvényesülni az adatok tulajdonságán. Az átjáró nem rendszergazda felhasználója megadhat szerepköröket, de a saját felhasználónevét kell megadnia a hatályos identitáshoz.
 
-**Szerepkörök használata**
+### <a name="use-of-roles"></a>Szerepkörök használata
 
 A szerepkörök az identitással adhatók meg a beágyazási tokenekben. Ha nincs megadva szerepkör, a rendszer a megadott felhasználónévvel oldja fel a társított szerepköröket.
 
-**A CustomData funkció használata**
+### <a name="using-the-customdata-feature"></a>A CustomData funkció használata
 
-A CustomData funkcióval szabad szövegeket (sztringeket) adhat át a CustomData kapcsolatisztring-tulajdonsággal, amelyet az AS használ (A CUSTOMDATA() függvényen keresztül).
-Ez egy alternatív mód az adatfelhasználás testreszabására.
+A CustomData funkció csak az **Azure Analysis Services** szolgáltatásban található modelleken, és csak az **Élő csatlakozás** módban működik. A felhasználókkal és a szerepkörökkel ellentétben a CustomData funkció nem állítható be .pbix-fájlokban. Ha a CustomData funkcióval hoz létre tokent, felhasználónévvel kell rendelkeznie.
+
+A CustomData funkció lehetővé teszi sorszűrő hozzáadását, amikor Power BI-adatokat tekint meg az alkalmazásában az **Azure Analysis Services** adatforrásként való használatakor (az Azure Analysis Serviceshez kapcsolódó Power BI-adatok megtekintésekor az alkalmazásban).
+
+A CustomData funkció lehetővé teszi szabad szöveg (sztring) átadását a CustomData kapcsolatisztring-tulajdonság használatával. Az Analysis Services ezt az értéket a *CUSTOMDATA()* függvényen keresztül használja.
+
+Az **Azure Analysis Services** szolgáltatásban a dinamikus RLS (amely dinamikus értékeket használ a szűrő kiértékelésére) használatának egyetlen módja a *CUSTOMDATA()* függvény alkalmazása.
+
 A szerepkör DAX-lekérdezésében is használhatja, valamint szerepkör nélkül egy mérték DAX-lekérdezésében.
 A CustomData funkció az alábbi összetevők tokenlétrehozási funkcióinak egyik eleme: irányítópult, jelentés és csempe. Az irányítópultok több CustomData-identitással rendelkezhetnek (csempénként/modellenként eggyel).
 
-> [!NOTE]
-> A CustomData funkció csak az Azure Analysis Servicesben található modelleken, és csak élő módban működik. A felhasználókkal és a szerepkörökkel ellentétben a CustomData funkció nem használható .pbix-fájlokban. Ha a CustomData funkcióval hoz létre tokent, felhasználónévvel kell rendelkeznie.
-
-**A CustomData SDK-bővítményei**
+#### <a name="customdata-sdk-additions"></a>A CustomData SDK-bővítményei
 
 A CustomData sztringtulajdonságot hozzáadtuk a tokenlétrehozási forgatókönyvbeli hatályos identitásunkhoz.
 
-        [JsonProperty(PropertyName = "customData")]
-        public string CustomData { get; set; }
+```json
+[JsonProperty(PropertyName = "customData")]
+public string CustomData { get; set; }
+```
 
 Az identitás egyéni adatokkal, az alábbi hívással hozható létre:
 
-        public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+```csharp
+public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+```
 
-**A CustomData SDK-használata**
+#### <a name="customdata-sdk-usage"></a>A CustomData SDK-használata
 
 A REST API meghívásánál minden identitáshoz egyéni adatokat adhat meg, például:
 
@@ -176,10 +185,64 @@ A REST API meghívásánál minden identitáshoz egyéni adatokat adhat meg, pé
 }
 ```
 
+Az alábbi lépések követésével megkezdheti a CustomData() függvény beállítását a Power BI Embedded alkalmazáshoz.
+
+1. Hozzon létre egy Azure Analysis Services-adatbázist. Majd jelentkezzen be az Azure Analysis Services-kiszolgálóra az [SQL Server Management Studióval](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+
+    ![Azure Analysis Services-adatbázis létrehozása](media/embedded-row-level-security/azure-analysis-services-database-create.png)
+
+    ![Analysis Services-adatbázis](media/embedded-row-level-security/azure-analysis-services-database.png)
+
+2. Hozzon létre egy szerepkört az Analysis Services-kiszolgálón.
+
+    ![Szerepkör létrehozása](media/embedded-row-level-security/azure-analysis-services-database-create-role.png)
+
+3. Adja meg az **Általános** beállításokat.  Itt megadhatja a **Szerepkörnév** értékét, és beállíthatja a csak **olvasható** adatbázis-jogosultságot.
+
+    ![Szerepkör létrehozása – általános beállítások megadása](media/embedded-row-level-security/azure-analysis-services-database-create-role-general-settings.png)
+
+4. Adja meg a **Tagság** beállításait. Itt veheti fel a szerepkör által érintett felhasználókat.
+
+    ![Szerepkör létrehozása – tagsági beállítások megadása](media/embedded-row-level-security/azure-analysis-services-database-create-role-membership.png)
+
+5. Állítsa be a **Sorszűrők** DAX-lekérdezését a *CUSTOMDATA()* függvénnyel.
+
+    ![Szerepkör létrehozása – sorszűrők beállítása](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
+
+6. Hozzon létre egy PBI-jelentést, és tegye közzé egy dedikált kapacitással rendelkező munkaterületen.
+
+    ![PBI-jelentésminta](media/embedded-row-level-security/rls-sample-pbi-report.png)
+
+7. Használja a Power BI API-kat a CustomData funkció használatára az alkalmazásában.  Ha a CustomData funkcióval hoz létre tokent, felhasználónévvel kell rendelkeznie. A felhasználónévnek meg kell egyeznie a fő felhasználó egyszerű felhasználónevével. A fő felhasználónak a létrehozott szerepkör tagjának kell lennie. Ha nincs szerepkör megadva, akkor a rendszer minden szerepkört felhasznál az RLS kiértékelésére, amelynek a fő felhasználó a tagja.
+
+    > [!Note]
+    > Ha készen áll az alkalmazás éles környezetben történő üzembe helyezésére, a fő felhasználói fiók mezője vagy beállítása nem lehet látható a végfelhasználó számára.
+
+    Tekintse meg a [kódot](#customdata-sdk-additions) a CustomData funkció hozzáadásához.
+
+8. Most megtekintheti a jelentést az alkalmazásában a CustomData-érték(ek) alkalmazása előtt a jelentésben lévő összes adat megjelenítéséhez.
+
+    ![A CustomData alkalmazása előtt](media/embedded-row-level-security/customdata-before.png)
+
+    Ezután alkalmazza a Customdata-értéke(ke)t, hogy láthassa, hogyan jelenít meg a jelentés egy másik adatkészletet.
+    ![A CustomData alkalmazása után](media/embedded-row-level-security/customdata-after.png)
+
+## <a name="using-rls-vs-javascript-filters"></a>Az RLS és a JavaScript-szűrők használatának összehasonlítása
+
+Ha a jelentés adainak szűrése mellett dönt, használhat **sorszintű biztonságot (RLS)** vagy **JavaScript-szűrőket**.
+
+A [sorszintű biztonság](../service-admin-rls.md) olyan szolgáltatás, amely az adatmodell szintjén szűri az adatokat. A háttéralkalmazás adatforrása szabályozza az RLS-beállításait. Az adatmodell alapján a beágyazási tokengenerálás állítja be a felhasználónevet és a szerepköröket a munkamenethez. Nem lehet felülírni, eltávolítani vagy vezérelni az ügyféloldali kóddal, és ezért számít biztonságosnak. Az adatok biztonságos szűréséhez az RLS-t ajánljuk. Az adatokat az RLS-sel az alábbi lehetőségek egyikének használatával szűrheti.
+
+* [Szerepkörök konfigurálása Power BI-jelentésekben](../desktop-rls.md).
+* Szerepkörök konfigurálása az adatforrás szintjén (csak Analysis Services élő kapcsolat esetén).
+* Programozott módon egy [beágyazási tokennel](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) az `EffectiveIdentity` használatával. Beágyazási token használatakor a tényleges szűrő áthalad a beágyazási tokenen az adott munkamenetnél.
+
+A [JavaScript-szűrők](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) lehetővé teszik, hogy a felhasználó csökkentett, hatókörön belüli vagy szűrt nézetet lásson az adatokról. A felhasználó azonban továbbra is rendelkezik hozzáféréssel a modellséma tábláihoz, oszlopaihoz és mértékeihez, és elérheti az itt található bármely adatot. Az adatok korlátozott elérése csak RLS-sel lehetséges, ügyféloldali szűrő API-kkal nem.
+
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
 * A Power BI szolgáltatásban a felhasználók szerepkörökhöz rendelése nincs hatással az RLS-re beágyazási token használatakor.
-* Bár a Power BI szolgáltatás nem alkalmazza az RLS beállítást a rendszergazdákra vagy a szerkesztési engedélyekkel rendelkező tagokra, amikor beágyazási tokennel ad meg egy identitást, azt az adatokra alkalmazza.
+* Bár a Power BI szolgáltatás nem alkalmazza az RLS-beállítást a rendszergazdákra vagy a szerkesztési engedélyekkel rendelkező tagokra, amikor beágyazási tokennel ad meg egy identitást, azt az adatokra alkalmazza.
 * Az élő Analysis Services-kapcsolatok a helyszíni kiszolgálókhoz támogatottak.
 * Az Azure Analysis Services élő kapcsolatai támogatják a szerepkör szerinti szűrést. Dinamikus szűrést a CustomData használatával végezhet.
 * Ha a mögöttes adatkészlethez nincs szükség RLS-re, a GenerateToken kérés **nem** tartalmazhat hatályos identitást.
