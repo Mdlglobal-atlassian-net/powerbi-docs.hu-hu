@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1855b65277fe778a20bd9e4629f8db1e7b9000a3
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: 5d2a33b8dc50a4a30bb79406462f1342953528d9
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448960"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830378"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinált diagram a Power BI-ban
 A kombinált diagramok olyan vizualizációk a Power BI-ban, amelyek egy vonaldiagramot és egy oszlopdiagramot kombinálnak egyetlen elemmé. A két diagram kombinációjával gyorsabban hasonlíthat össze adatokat.
@@ -44,8 +44,8 @@ Nézze meg, hogyan hoz létre Will egy kombinált diagramot az Értékesítési 
 <a name="create"></a> A kombinált diagram létrehozásához jelentkezzen be a Power BI szolgáltatásba, válassza az **Adatok beolvasása \> Minták \> Kiskereskedelmi elemzési minta > Kapcsolódás >Ugrás az irányítópultra** lehetőséget.
 
 1. A „Kiskereskedelmi elemzési minta” irányítópulton nyissa meg a „Kiskereskedelmi elemzési minta” jelentést a **Total Stores** (Összes áruház) csempe kiválasztásával.
-2. Válassza a **Jelentés szerkesztése** lehetőséget, hogy megnyissa a jelentést Szerkesztő nézetben.
-3. [Adjon hozzá egy új oldalt a jelentéshez](../power-bi-report-add-page.md).
+2. Válassza a **Jelentés szerkesztése** elemet a jelentés Szerkesztési nézetben való megnyitásához.
+3. Adjon hozzá egy új jelentésoldalt.
 4. Hozzon létre egy oszlopdiagramot, amely az idei év értékesítéseit és bruttó árrését jeleníti meg havi bontásban.
 
     a.  A Mezők ablaktáblán válassza ki a **Sales** \> **This Year Sales** > **Érték** elemet.

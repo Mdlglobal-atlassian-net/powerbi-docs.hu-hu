@@ -2,7 +2,7 @@
 title: Hivatkozás hozzáadása szövegmezőhöz egy jelentésben
 description: Hivatkozás hozzáadása szövegmezőhöz a Power BI szolgáltatásban és a Power BI Desktopban
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e8a03cdd666f84b788d3bd90b8ebf2a84fc12a9b
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 92c5ad6be98e77c7fb844d45ab135bfb9d1cd141
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726984"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829964"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Hivatkozás hozzáadása szövegmezőhöz egy jelentésben
 A szövegmezőket hozzá lehet adni jelentésekhez, rögzíteni lehet irányítópultokra a jelentésekből, és hozzá lehet őket közvetlenül adni az irányítópultokhoz. A hivatkozásokat hozzá lehet adni a szövegmezőkhöz, függetlenül attól, hol vannak.  

@@ -1,21 +1,21 @@
 ---
 title: Látványos jelentések létrehozásával kapcsolatos tippek
 description: Tippek és trükkök jelentések létrehozásához a Power BI szolgáltatásban és a Power BI Desktopban
-author: mihart
+author: davidi
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 04/13/2018
-ms.author: mihart
+ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 0397921d239ec1d07312e69061890f8898e9687b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 2093800f10484a24eb4db9f77f45468ae4b9b4c3
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549960"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829834"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tippek és trükkök jelentések létrehozásához a Power BI Desktopban és a Power BI szolgáltatásban
 Ahhoz, hogy a legtöbbet hozza ki az adataiból, néha szüksége van egy kis extra segítségre. Összegyűjtöttünk néhány tippet és trükköt, amelyek segítségére lehetnek, amikor jelentéseket hoz létre a Microsoft Power BI Desktopban, a Power BI szolgáltatásban *és* a Microsoft Excel 2016 vagy Excel 2013 Pro-Plus kiadásokban, amelyekben engedélyezve van a Power Pivot bővítmény, illetve telepítve és engedélyezve van a Power Query.

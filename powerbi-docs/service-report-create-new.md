@@ -10,19 +10,17 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 96b46e595ffd2373a2d59776cb8c2b4314727d89
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: a5762964b75d73d8dabceac58c47f616753b94cc
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51718045"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830181"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Új jelentés létrehozása a Power BI szolgáltatásban adatkészlet importálásával
 Már elolvasta a [Jelentések a Power BI-ban](consumer/end-user-reports.md) című cikket, és szeretne létrehozni egy saját jelentést. A jelentések több különböző módon is létrehozhatók. Ebben a cikkben kezdésként egy Excel-adatkészletből egy alapszintű jelentést fogunk létrehozni a Power BI szolgáltatásban. Ha már megismerte a jelentés létrehozásának alapjait, akkor a lap alján található **Következő lépések** hivatkozással továbbhaladhat a jelentésekkel kapcsolatos összetettebb témakörökre is.  
 
-> **TIPP**: Ha egy meglévő jelentés másolásával szeretne létrehozni egy új jelentést, tekintse meg a [Jelentés másolása](power-bi-report-copy.md) cikket.
-> 
-> ### <a name="prerequisites"></a>Előfeltételek
+## <a name="prerequisites"></a>Előfeltételek
 > - A Power BI szolgáltatás (arról, hogy hogyan hozhat létre jelentést a Power BI Desktopban lásd: [Desktop jelentés nézet](desktop-report-view.md) )  
 > - A Kiskereskedelmi elemzési minta adatkészlete
 
@@ -93,7 +91,7 @@ Meg kell válaszolnunk a marketingigazgató újabb kérdéseit. Szeretné tudni,
 Az adatokat tovább vizsgálhatja, és vizualizációkat is adhat hozzá. Ha különösen érdekes információt talál, azt [rögzítheti egy irányítópultra](service-dashboard-pin-tile-from-report.md).
 
 ## <a name="next-steps"></a>Következő lépések
-* [Új oldal hozzáadása jelentéshez](power-bi-report-add-page.md)  
+
 * Tudnivalók arról, hogyan történik a [vizualizációk rögzítése egy irányítópulton](service-dashboard-pin-tile-from-report.md)   
 * További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 
