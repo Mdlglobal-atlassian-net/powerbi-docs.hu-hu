@@ -1,5 +1,5 @@
 ---
-title: Ismerkedés a lapszámozott jelentések Jelentéstervező nézetével – Power BI | Microsoft Docs
+title: Ismerkedés a lapszámozott jelentések Jelentéstervező nézetével (előzetes verzió)
 description: A Jelentéskészítő Jelentéstervező nézete a Power BI szolgáltatásban közzétehető lapszámozott jelentések létrehozására szolgáló tervezési felület.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: de3919903a3df4fdc5b0e167069b3035204761ff
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: dc811c5f6c6a7d5d428591eb7afd1665cda6dbb0
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268187"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900451"
 ---
-# <a name="getting-around-in-report-design-view-for-paginated-reports"></a>Ismerkedés a lapszámozott jelentések Jelentéstervező nézetével
+# <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Ismerkedés a lapszámozott jelentések Jelentéstervező nézetével (előzetes verzió)
 
 A Jelentéskészítő Jelentéstervező nézete a Power BI szolgáltatásba közzétehető lapszámozott jelentések létrehozására szolgáló tervezési felület. A tervezőfelület a Jelentéskészítő közepén található, menüsávokkal és panelekkel körülvéve. A tervezőfelületen vehetők fel és rendezhetők el a jelentés elemei. Ez a cikk a jelentés forrásainak hozzáadására, kiválasztására és elrendezésére, valamint a jelentéselemek tulajdonságainak szerkesztésére használható paneleket ismerteti.  
 

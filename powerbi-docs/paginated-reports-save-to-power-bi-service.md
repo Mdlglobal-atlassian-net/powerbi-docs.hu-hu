@@ -1,5 +1,5 @@
 ---
-title: Lapszámozott jelentés közzététele a Power BI szolgáltatásban | Microsoft Docs
+title: Lapszámozott jelentés közzététele a Power BI szolgáltatásban (előzetes verzió)
 description: Ez az oktatóanyag arról szól, hogyan tehet közzé lapszámozott jelentéseket a Power BI szolgáltatásba, a helyi számítógépről feltöltve őket.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: 6f2d1a4e4de87ea6eb63826b59286a9abd54b94f
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 1114f1949c68e4bebf2d636906bf754e7de77273
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267971"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900267"
 ---
-# <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Lapszámozott jelentés közzététele a Power BI szolgáltatásban
+# <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Lapszámozott jelentés közzététele a Power BI szolgáltatásban (előzetes verzió)
 
 Ebből az oktatóanyagból a helyi számítógépről feltöltött lapszámozott jelentések Power BI szolgáltatásba való közzétételét sajátíthatja el. Lapszámozott jelentéseket a saját munkaterületre, vagy bármely más munkaterületre is feltölthet, ha a munkaterület prémium szintű kapacitásban van. Keresse a gyémánt ikont ![A Power BI Premium-kapacitás gyémánt ikonja](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) a munkaterület neve mellett. 
 

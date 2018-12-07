@@ -1,5 +1,5 @@
 ---
-title: Adatok megadása közvetlenül többoldalas jelentésben a jelentéskészítőben
+title: Adatok megadása közvetlenül többoldalas jelentésben a jelentéskészítőben (előzetes verzió)
 description: Ebben a cikkben megismerheti, hogyan adhat meg közvetlenül adatokat egy jelentésben a jelentéskészítővel.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/19/2018
 ms.author: maggies
-ms.openlocfilehash: 201a81eaef81015c73d70b54e8e862c2ccc29b1d
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: c3b003ee600df010aa07aad78ee2350704734dd4
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289990"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900405"
 ---
-# <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Adatok megadása közvetlenül többoldalas jelentésben a jelentéskészítőben – Power BI
+# <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Adatok megadása közvetlenül többoldalas jelentésben a jelentéskészítőben (előzetes verzió) - Power BI
 
 Ebben a cikkben megismerkedhet az SQL Server 2016 jelentéskészítője új verziójának egy funkcióját, amellyel közvetlenül egy RDL-jelentésben adhat meg adatokat beágyazott adatkészletként.  Ez a funkció hasonlóan működik a Power BI Desktophoz. Az adatokat közvetlenül a jelentés egy adatkészletében adhatja meg, vagy beillesztheti egy másik programból, például a Microsoft Excelből. Miután létrehozta az adatkészletet az adatok megadásával, azt ugyanúgy használhatja, mint bármely más beágyazott adatkészletet. Emellett több táblázatot is hozzáadhat, és egyikkel szűrheti a másikat. Ez a funkció különösen hasznos kisebb méret, statikus adatkészletekhez, amelyeket a jelentésben kell használnia, például a jelentésparaméterekhez.
  
