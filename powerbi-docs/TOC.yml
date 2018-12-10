@@ -246,11 +246,7 @@ items:
         href: visuals/desktop-slicer-filter-date-range.md
       - name: Csoportosítás és tárolás használata
         href: desktop-grouping-and-binning.md
-      - name: Szalagdiagramok
-        href: visuals/desktop-ribbon-charts.md
-      - name: Az új mátrix vizuális elem használata
-        href: visuals/desktop-matrix-visual.md
-      - name: Vizuális elemek létrehozása R használatával a Power BI-ban
+      - name: Power BI-vizualizációk létrehozása az R programozási nyelvvel
         href: desktop-r-visuals.md
       - name: R-alapú egyéni vizuális elemek
         href: desktop-r-powered-custom-visuals.md
@@ -290,6 +286,8 @@ items:
         href: visuals/power-bi-visualization-best-practices.md
       - name: Vizualizáció-típus módosítása Power BI-jelentésekben
         href: visuals/power-bi-report-change-visualization-type.md
+      - name: Adatpontkorlátok vizualizációtípus szerint
+        href: visuals/power-bi-data-points.md
       - name: Bevezetés a színformázás és tengelytulajdonságok használatába
         href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
       - name: Tippek és trükkök a színformázáshoz a Power BI-ban
@@ -332,10 +330,14 @@ items:
         href: desktop-high-density-sampling.md
       - name: KPI (teljesítménymutatós) vizuális elemek
         href: visuals/power-bi-visualization-kpi.md
+      - name: Mátrix vizualizáció
+        href: visuals/desktop-matrix-visual.md
       - name: Fejlett elemzések és vizualizációk létrehozása R-parancsfájlokkal a Power BI-ban
         href: visuals/service-r-visuals.md
       - name: A Power BI kör alakú mérőműszer-diagramjai
         href: visuals/power-bi-visualization-radial-gauge-charts.md
+      - name: Szalagdiagramok
+        href: visuals/desktop-ribbon-charts.md
       - name: Pontdiagramok a Power BI-ban
         href: visuals/power-bi-visualization-scatter.md
       - name: Nagy sűrűségű pontdiagramok
@@ -1251,9 +1253,9 @@ items:
       href: service-admin-governance.md
     - name: A Power BI és a biztonság
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 83446170e1ee29cdf2e2d2f1298a37c58e255f1b
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 066aa4a3b87375e29e14d1611e7e67ab58dfd482
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900382"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979674"
