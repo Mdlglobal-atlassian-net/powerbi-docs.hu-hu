@@ -4,25 +4,26 @@ description: Megismerheti az elemek csoportosításának és dobozolásának fol
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6363cbe3afdce351acc728fe29af8662702b8254
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 64ec167a295255a6813244ef6cb222b4eccb50f3
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670693"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025242"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Csoportosítás és dobozolás használata a Power BI Desktopban
 Amikor a **Power BI Desktop** vizualizációkat hoz létre, az adatait az alapul szolgáló adatokban talált értékek alapján adattömbökbe (vagy csoportokba) gyűjti. Ez gyakran elegendő is, de lehetnek alkalmak, amikor finomítani szeretné az adattömbök megjelenítését. Előfordulhat például, hogy három termékkategóriát egy nagyobb kategóriában (egy *csoportban*) szeretne elhelyezni. Az is előfordulhat, hogy az eladási adatokat 1 000 000 dollár méretű dobozokban szeretné látni, nem pedig egyenlően elosztva, 923 983 dolláros részekben.
 
 A Power BI Desktopban **csoportosíthatja** az adatokat, és így jobban áttekintheti, elemezheti és feltárhatja a vizualizációkban foglalt adatokat és tendenciákat. A **dobozméretet** is meghatározhatja. A folyamatot, amelynek során az értékeket egyenlő méretű csoportokra osztja, gyakran *dobozolásnak* nevezik, és ez lehetővé teszi az adatok könnyebben értelmezhető vizualizációját.
 
-### <a name="using-grouping"></a>A csoportosítás használata
+## <a name="using-grouping"></a>A csoportosítás használata
 A csoportosítás használatához a CTRL+kattintással válasszon ki két vagy több elemet egy vizualizáción. Ezután kattintson a jobb gombbal a több kijelölt elem egyikére, és válassza a **Csoport** lehetőséget a megjelenő menüben.
 
 ![](media/desktop-grouping-and-binning/grouping-binning_1.png)
@@ -45,10 +46,8 @@ Hozzáadhat egy nem csoportosított értéket egy létező csoporthoz: csak vál
 
 > [!NOTE]
 > A **Mezők** szakasz bármelyik mezőjéhez létrehozhat csoportokat, ehhez nem kell egy meglévő vizualizációból több elemet kijelölnie. Csak kattintson a jobb gombbal a mezőre, és válassza a megjelenő menüben az **Új csoport** elemet.
-> 
-> 
 
-### <a name="using-binning"></a>A dobozolás használata
+## <a name="using-binning"></a>A dobozolás használata
 A dobozméretet a **Power BI Desktop** numerikus és időmezőihez állíthatja be. A dobozolással megfelelő méretűre állíthatja a **Power BI Desktop** által megjelenített adatokat.
 
 Egy dobozméret alkalmazásához kattintson a jobb gombbal egy **Mezőre**, és válassza az **Új csoport** lehetőséget.

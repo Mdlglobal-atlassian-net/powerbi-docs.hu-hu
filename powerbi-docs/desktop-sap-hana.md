@@ -4,18 +4,19 @@ description: Az SAP HANA használata a Power BI Desktopban
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ba49fc09fb7b5a3885dbbcdf61086026e822ae03
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 7f4ff77522f083c103210dce4cdc3a7cd2325ec5
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669612"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025150"
 ---
 # <a name="use-sap-hana-in-power-bi-desktop"></a>Az SAP HANA használata a Power BI Desktopban
 A Power BI Desktoppal mostantól hozzáférhet az **SAP HANA**-adatbázisokhoz. Az **SAP HANA**-adatbázisok használatához telepíteni kell az SAP HANA ODBC-illesztőprogramot a helyi ügyfélszámítógépen, hogy a Power BI Desktop **SAP HANA**-adatkapcsolat megfelelően működjön. Az SAP HANA ODBC-illesztőprogramot az [SAP Software Download Center központból](https://support.sap.com/swdc) töltheti le. Itt keresse meg a Windows rendszerű számítógépekhez készült SAP HANA-ügyfelet. Mivel az **SAP Software Download Center** szerkezete gyakran változik, a helyet nem tudjuk pontosabban meghatározni.
@@ -30,7 +31,7 @@ Amikor SAP HANA-adatbázishoz csatlakozik, adja meg a kiszolgáló nevét és a 
 
 Ebben a kiadásban az **SAP HANA** [DirectQuery](desktop-directquery-sap-hana.md) módban támogatott a Power BI Desktopban és a Power BI szolgáltatásban, és a **SAP HANA**-adatbázist DirectQuery módban használó jelentéseket tehet közzé és tölthet fel a Power BI szolgáltatásban. A Power BI szolgáltatásban akkor is közzétehet és feltölthet jelentéseket, ha nem **SAP HANA**-adatbázist használ DirectQuery módban.
 
-### <a name="supported-features-for-sap-hana"></a>Az SAP HANA támogatott funkciói
+## <a name="supported-features-for-sap-hana"></a>Az SAP HANA támogatott funkciói
 Ebben a kiadásban számos képesség érhető el az **SAP HANA**-hoz, például a következők:
 
 * Az **SAP HANA**-hoz készült Power BI-összekötő az SAP ODBC-illesztőprogramját használja a legjobb felhasználói élményt érdekében
@@ -40,8 +41,7 @@ Ebben a kiadásban számos képesség érhető el az **SAP HANA**-hoz, például
 * Optimalizált navigáció érhető el a HANA-modellekhez
 * A Power BI támogatja az **SAP HANA** változóit és bemeneti paramétereit
 
-### <a name="installing-the-sap-hana-odbc-driver"></a>Az SAP HANA ODBC-illesztőprogramjának telepítése
-### <a name="limitations-of-sap-hana"></a>Az SAP HANA korlátozásai
+## <a name="limitations-of-sap-hana"></a>Az SAP HANA korlátozásai
 Az **SAP HANA** használatára a következő néhány korlátozás vonatkozik:
 
 * Az NVARCHAR sztringeket a rendszer legfeljebb 4000 Unicode karakter hosszúságúra csonkolja

@@ -4,18 +4,19 @@ description: Rácsvonalak, rácshoz illesztés, mélységi (Z) index, igazítás
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a798cbb5012933bb01264aa3db9fa9e06b1f334a
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 37416ab15a638ccd8c8e7b1066ffc01f1ba6c944
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669313"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025894"
 ---
 # <a name="use-gridlines-and-snap-to-grid-in-power-bi-desktop-reports"></a>Rácsvonalak és rácshoz illesztés használata Power BI Desktop-jelentésekben
 A **Power BI Desktop** jelentésvásznon található rácsvonalak segítségével eligazíthatja a vizualizációkat egy jelentésoldalon, a rácshoz illesztés funkció pedig abban segít, hogy a jelentésben szereplő vizualizációk rendezetten, igazítva, egyenlő térközökkel jelenhessenek meg.
@@ -24,24 +25,22 @@ A **Power BI Desktopban** az objektumok mélységi (Z) indexét is beállíthatj
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_0.png)
 
-### <a name="enabling-gridlines-and-snap-to-grid"></a>Rácsvonalak és rácshoz illesztés engedélyezése
+## <a name="enabling-gridlines-and-snap-to-grid"></a>Rácsvonalak és rácshoz illesztés engedélyezése
 A rácsvonalak és a rácshoz illesztés engedélyezéséhez válassza a **Nézet** menüszalagot, majd jelölje be a **Rácsvonalak megjelenítése** és az **Objektumok rácshoz illesztése** melletti jelölőnégyzeteket. Bejelölheti az egyik vagy mindkét jelölőnégyzetet is, függetlenek egymástól.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_1.png)
 
 > [!NOTE]
 > Ha a **Rácsvonalak megjelenítése** és az **Objektumok rácshoz illesztése** le van tiltva, csatlakozzon bármely adatforráshoz, és azonnal engedélyezve lesznek.
-> 
-> 
 
-### <a name="using-gridlines"></a>Rácsvonalak használata
+## <a name="using-gridlines"></a>Rácsvonalak használata
 A rácsvonalak olyan láthatók vonalzók, amelyek segítenek a látványelemek igazításában. Amikor megpróbálja meghatározni, hogy két (vagy több) vizualizáció vízszintesen vagy függőlegesen egy vonalban van-e, a rácsvonalak segítségével meghatározhatja, hogy egy vonalba esnek-e a szegélyeik.
 
 A CTRL+kattintás kombinációval kijelölhet egyszerre egynél több vizualizációt, így megjelenik mindegyik vizualizáció szegélye, és jól látható, hogy a vizualizációk egy vonalban vannak-e.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_2.png)
 
-#### <a name="using-gridlines-inside-visuals"></a>Rácsvonalak használata a vizualizációkban
+### <a name="using-gridlines-inside-visuals"></a>Rácsvonalak használata a vizualizációkban
 A Power BI-ban a vizualizációkon belül is találhatók rácsvonalak, és ezek vezetőként szolgálnak az adatpontok és az értékek összehasonlításához. A **Power BI Desktop** 2017. szeptemberi kiadásával kezdve már kezelheti ezeket a rácsvonalakat a vizualizációkon belül a **Megjelenítések** panel **Formátum** szakaszában található **X tengely** vagy **Y tengely** kártya segítségével (a vizualizáció típusának megfelelően). A vizualizáción belül a rácsvonalak alábbi elemeit módosíthatja:
 
 * Rácsvonalak be- vagy kikapcsolása
@@ -53,14 +52,14 @@ A rácsvonalak bizonyos elemeinek módosítása különösen hasznos lehet az ol
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_9.png)
 
-### <a name="using-snap-to-grid"></a>Rácshoz illesztés használata
+## <a name="using-snap-to-grid"></a>Rácshoz illesztés használata
 Amikor engedélyezi az **Objektumok rácshoz illesztését**, a rendszer a **Power BI Desktop** vásznon szereplő összes vásznat automatikusan a legközelebbi rácstengelyhez illeszti, így sokkal könnyebb biztosítani, hogy két vagy több vizualizáció ugyanahhoz a vízszintes vagy függőleges helyhez vagy mérethez igazodjon.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_3.png)
 
 Ezek a legfontosabb tudnivalók a **rácsvonalak** és a **rácshoz illesztés** használatáról, hogy gondoskodhasson a jelentésekben szereplő vizualizációk megfelelő igazításáról.
 
-### <a name="using-z-order-align-and-distribute"></a>Mélységi (Z) index, igazítás és elosztás használata
+## <a name="using-z-order-align-and-distribute"></a>Mélységi (Z) index, igazítás és elosztás használata
 Kezelheti a jelentésekben a vizualizációkban gyakran az elemek *mélységi (Z) indexének* nevezett elölről-hátra sorrendet. Ezzel tetszés szerinti átfedésbe helyezheti a vizualizációkat, majd módosíthatja az egyes vizualizációk elölről-hátra sorrendjét. A **Formátum** menüszalag **Elrendezés** szakaszában található **Előbbre hozás** és **Hátrébb küldés** gombokkal állíthatja be a vizualizációk sorrendjét. A **Formátum** menüszalag azonnal megjelenik, amint kiválaszt egy vagy több vizualizációt az oldalon.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_4.png)

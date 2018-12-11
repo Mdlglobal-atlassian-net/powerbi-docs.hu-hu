@@ -4,18 +4,19 @@ description: Könnyedén csatlakozhat a weblapadatokhoz, és használhatja azoka
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2aef47ab1716464c0896b624069a6ebbeb4adc54
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: a0d7eeccede8f6402256eb8655657ca12dde075b
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578382"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026569"
 ---
 # <a name="connect-to-a-web-page-from-power-bi-desktop"></a>Csatlakozás egy weblaphoz a Power BI Desktopról
 Csatlakozhat egy weblaphoz, és a Power BI Desktopba importálhatja annak adatait a vizualizációban és adatmodellekben való használathoz.
@@ -44,7 +45,7 @@ A Power BI Desktopból áthúzhatja a mezőket a Jelentés vászonra, és bármi
 
 Ha részletesebben és működés közben szeretné látni a weblapokhoz való csatlakozást, tekintse meg a [Power BI Desktop Első lépések útmutatóját](desktop-getting-started.md).
 
-### <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>Következő lépések
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:
 
 * [Adatforrások a Power BI Desktopban](desktop-data-sources.md)

@@ -4,18 +4,19 @@ description: Adatok közvetlen és egyszerű felvétele a Power BI Desktopba
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0518350e3dd9fa9d0e7bf94c5d37621a308c37d1
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: f58c5ec46cb59ba65d6ecbedb7a119d73572ea4b
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669404"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025580"
 ---
 # <a name="enter-data-directly-into-power-bi-desktop"></a>Adatok közvetlen bevitele a Power BI Desktopba
 A Power BI Desktoppal lehetőség van adatok közvetlen bevitelére, amelyeket azután jelentések és vizualizációk készítéséhez használhat fel. Például kimásolhatja egy munkafüzet vagy egy weblap egyes részeit, majd beillesztheti ezeket a Power BI Desktopba.
@@ -38,7 +39,7 @@ Készen is van. Ennyire egyszerű az adatbevitel a Power BI Desktopba.
 
 Most már felhasználhatja a Power BI Desktopba bevitt adatokat vizualizációk és jelentések készítéséhez, vagy más olyan adatok kezeléséhez, amelyekhez később csatlakozni szeretne vagy amelyeket importálna, mint például Excel-táblázatok, adatbázisok vagy más egyéb adatforrás.
 
-### <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>Következő lépések
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:
 
 * [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)

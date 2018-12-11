@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 31cf660a969e1779625c205c6834ceaca92325d1
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 82cc459bcfd33d2aa576529899b7f893b0854c37
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268004"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180300"
 ---
 # <a name="using-dataflows-with-on-premises-data-sources-preview"></a>Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)
 
@@ -83,10 +83,10 @@ Ennek a cikknek az elolvasásával helyszíni adatforrás adatfolyamokhoz való 
 * [Számított entitások használata a Power BI Premiumban (előzetes verzió)](service-dataflows-computed-entities-premium.md)
 * [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
 
-A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információkért olvassa el ezeket a cikkeket:
+A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)
 * [Ütemezett frissítés beállítása](refresh-scheduled-refresh.md)
 
-A Common Data Modellel kapcsolatos további információkért olvassa el a áttekintését tartalmazó cikket:
-* [Common Data Modell – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
+A Common Data Modellel kapcsolatos további információt a témát áttekintő cikkben talál:
+* [Common Data Model – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
 
