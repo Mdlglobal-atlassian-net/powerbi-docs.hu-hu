@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 8689c9a2fded5e283740d82923d674b73434e6a1
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: aca89b1e45c2ce236a4b5a960436077e089a5b01
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850453"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900566"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása
 
@@ -23,7 +23,7 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 
 ## <a name="features-of-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás funkciói
 
-| Funkciók | Power BI jelentéskészítő kiszolgáló | A Power BI szolgáltatás | Megjegyzések
+| Funkciók | Power BI jelentéskészítő kiszolgálón | A Power BI szolgáltatás | Megjegyzések
 |---------|---------|---------|---------|
 | Telepítés | Helyszíni vagy üzemeltetett felhőbeli | Felhőbeli | A Power BI jelentéskészítő kiszolgáló akkor helyezhető üzembe Azure-beli virtuális gépeken (üzemeltetett felhőbeli) ha licencelése a Power BI Premiummal történt
 | Forrásadatok | Felhőbeli és/vagy helyszíni | Felhőbeli és/vagy helyszíni |  
@@ -37,7 +37,7 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 | Irányítópultok | Nem | Igen | [Irányítópultok a Power BI szolgáltatásban](../consumer/end-user-dashboards.md) 
 | Jelentéscsoportok terjesztése alkalmazások használatával | Nem | Igen | [Irányítópultokat és jelentéseket tartalmazó alkalmazások létrehozása és közzététele](../service-create-distribute-apps.md) 
 | Tartalomcsomagok | Nem | Igen | [Céges tartalomcsomagok: bevezetés](../service-organizational-content-pack-introduction.md) 
-| Csatlakozás olyan szolgáltatásokhoz, mint a Salesforce | Igen | Igen | [Csatlakozhat a használt szolgáltatásokhoz](../consumer/end-user-connect-to-services.md) a Power BI szolgáltatás tartalomcsomagjaival. A Power BI jelentéskészítő kiszolgálón a hitelesített összekötők használatával csatlakozhat szolgáltatásokhoz. További információt [A Power BI-jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón](data-sources.md) című témakörben talál.
+| Csatlakozás olyan szolgáltatásokhoz, mint a Salesforce | Igen | Igen | [Csatlakozhat a használt szolgáltatásokhoz](../service-connect-to-services.md) a Power BI szolgáltatás tartalomcsomagjaival. A Power BI jelentéskészítő kiszolgálón a hitelesített összekötők használatával csatlakozhat szolgáltatásokhoz. További információt [A Power BI-jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón](data-sources.md) című témakörben talál.
 | Q&A | Nem | Igen | [A Q&A a Power BI szolgáltatásban és a Power BI Desktopban](../consumer/end-user-q-and-a.md) 
 | Gyors elemzések | Nem | Igen | [Adatelemzések automatikus generálása a Power BI-jal](../consumer/end-user-insights.md) 
 | Elemzés az Excelben | Nem | Igen | [Elemzés az Excelben](../service-analyze-in-excel.md) 

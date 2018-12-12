@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 554e9f3bbea5a1da6ac43f21f72b054a26849f23
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 6de9427a11ae5aa43563ce9e21371d231a1dd3a9
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908745"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900551"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Oktatóanyag: A Power BI szolgáltatás (az app.powerbi.com webhely) használatának első lépései
 Ez az oktatóanyag segít az első lépések megtételében a ***Power BI szolgáltatásban***. Ha szeretné megérteni, hogyan illeszkedik a Power BI szolgáltatás a többi Power BI-ajánlathoz, javasoljuk, először olvassa el a [Mi az a Power BI](power-bi-overview.md) című szakaszt.
@@ -158,5 +158,5 @@ Most, hogy befejezte ezt az oktatóanyagot, törölheti az adatkészletet, a jel
 Készen áll, hogy több mindent kipróbáljon?  Íme néhány nagyszerű módszer a Power BI megismeréséhez.
 
 > [!div class="nextstepaction"]
-> [Kapcsolódás online szolgáltatásokhoz](consumer/end-user-connect-to-services.md)
+> [Kapcsolódás online szolgáltatásokhoz](service-connect-to-services.md)
 

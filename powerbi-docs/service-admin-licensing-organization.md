@@ -10,20 +10,16 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 861b9c411b3088b6c16b7ad601f374bd771b13ed
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: ce44e87144d9338fbd88f0bc7183daf1b5339b35
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331988"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900474"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Szervezeti Power BI-licencelés
 
-A Power BI szolgáltatásban a felhasználók számára elérhető képességeket két licenctípus határozza meg:
-
-* **Felhasználónkénti** - *Power BI Pro-licencek és ingyenes licencelés*. A Power Pro-licenc a Power BI minden tartalmához és funkciójához hozzáférést biztosít, lehetővé teszi a tartalmak megosztását, és más Pro-felhasználókkal folytatott együttműködésre is lehetőséget nyújt. Csak a Pro szintű felhasználók tehetnek közzé és használhatnak tartalmat alkalmazás-munkaterületeken, oszthatnak meg irányítópultokat, és iratkozhatnak fel irányítópultokra és jelentésekre. Az ingyenes licenccel csak a Power BI egyes funkciói érhetők el. További információkért lásd a [Power BI-szolgáltatások licenctípus szerinti funkcióinak](service-features-license-type.md) ismertetését.
-
-* **Kapacitásalapú** - *Power BI Premium-licencek*. A Premium szint fenntartott kapacitást biztosít, amellyel konzisztensebb teljesítmény érhető el, és amely nagyobb adatméreteket támogat a Power BI-ban. Egyéni felhasználók esetén a Premium lehetővé teszi, hogy a Pro-felhasználók széles körben megoszthassák a tartalmakat anélkül, hogy a tartalmak címzettjei Pro-licencekkel rendelkeznének. További információ: [A Power BI Premium bemutatása](service-premium.md).
+[!INCLUDE [license-capabilities](includes/license-capabilities.md)]
 
 A cikk a felhasználónkénti licencekre összpontosít a rendszergazda szemszögéből.
 
