@@ -32,21 +32,21 @@ items:
       href: sample-datasets.md
     - name: A minta-tartalomcsomagok használata
       href: sample-tutorial-connect-to-the-samples.md
-    - name: 'Ügyfél-jövedelmezőségi minta: bemutató'
+    - name: 'Ügyfél-jövedelmezőségi minta: Bemutató megtekintése'
       href: sample-customer-profitability.md
-    - name: 'Informatikai beszerzéselemzési minta: bemutató'
+    - name: 'Informatikaköltség-elemzési minta: Bemutató megtekintése'
       href: sample-it-spend.md
-    - name: 'Emberi erőforrások minta: bemutató'
+    - name: 'Emberi erőforrások minta: Bemutató megtekintése'
       href: sample-human-resources.md
-    - name: 'Lehetőségelemzési minta: bemutató'
+    - name: 'Lehetőségelemzési minta: Bemutató megtekintése'
       href: sample-opportunity-analysis.md
-    - name: 'Beszerzéselemzési minta: bemutató'
+    - name: 'Beszerzéselemzési minta: Bemutató megtekintése'
       href: sample-procurement.md
-    - name: 'Kiskereskedelmi elemzési minta: bemutató'
+    - name: 'Kiskereskedelmi elemzési minta: Bemutató megtekintése'
       href: sample-retail-analysis.md
-    - name: 'Értékesítési és marketingminta: bemutató'
+    - name: 'Értékesítési és marketing minta: Bemutató megtekintése'
       href: sample-sales-and-marketing.md
-    - name: 'Szállítói minőségelemzési minta: bemutató'
+    - name: 'Szállítói minőségelemzési minta: Bemutató megtekintése'
       href: sample-supplier-quality.md
     - name: A Pénzügyi minta munkafüzet letöltése
       href: sample-financial-download.md
@@ -758,6 +758,14 @@ items:
         href: service-dataflows-developer-resources.md
       - name: Csatlakozás adatfolyamokhoz a Power BI Desktopban
         href: desktop-connect-dataflows.md
+      - name: Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)
+        href: service-dataflows-azure-data-lake-integration.md
+      - name: Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)
+        href: service-dataflows-connect-azure-data-lake-storage-gen2.md
+      - name: Munkaterület adatfolyam-beállításainak konfigurálása (előzetes verzió)
+        href: service-dataflows-configure-workspace-storage-settings.md
+      - name: CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)
+        href: service-dataflows-add-cdm-folder.md
     - name: Többoldalas jelentések a Power BI-ban
       items:
       - name: Mik azok a többoldalas jelentések? (Előzetes verzió)
@@ -794,9 +802,9 @@ items:
         items:
         - name: Céges tartalomcsomagok kezelése, frissítése és törlése
           href: service-organizational-content-pack-manage-update-delete.md
-        - name: 'Vállalati tartalomcsomagok: másolás, frissítés és hozzáférés kérése'
+        - name: 'Céges tartalomcsomagok: Másolás, frissítés és hozzáférés'
           href: service-organizational-content-pack-copy-refresh-access.md
-        - name: 'Céges tartalomcsomagok: bevezetés'
+        - name: 'Céges tartalomcsomagok: Bevezetés'
           href: service-organizational-content-pack-introduction.md
         - name: Szervezeti tartalomcsomag létrehozása és közzététele
           href: service-organizational-content-pack-create-and-publish.md
@@ -1253,9 +1261,9 @@ items:
       href: service-admin-governance.md
     - name: A Power BI és a biztonság
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 066aa4a3b87375e29e14d1611e7e67ab58dfd482
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: e105b33d6b37099dd6bc2c657f2293f8561a6004
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979674"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53181013"
