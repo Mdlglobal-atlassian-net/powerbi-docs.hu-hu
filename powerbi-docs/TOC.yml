@@ -262,19 +262,19 @@ items:
         href: desktop-inline-hierarchy-labels.md
       - name: Numerikustartomány-szeletelő használata
         href: desktop-slicer-numeric-range.md
-      - name: Átméretezhető rugalmas szeletelő létrehozása
+      - name: Átméretezhető szeletelő létrehozása
         href: power-bi-slicer-filter-responsive.md
-      - name: Egyéni válaszkártyák létrehozása Cortanához a Power BI-ban
+      - name: Egyéni válaszkártyák létrehozása Cortanához
         href: service-cortana-answer-cards.md
       - name: Sorszintű biztonság
         href: desktop-rls.md
-      - name: Elemleírások testreszabása a Power BI Desktopban
+      - name: Elemleírások testreszabása
         href: desktop-custom-tooltips.md
-      - name: Feltételes táblaformázás a Power BI Desktopban
+      - name: Táblázat feltételes formázása
         href: desktop-conditional-table-formatting.md
       - name: Oszlop szerinti rendezés a Power BI Desktopban
         href: desktop-sort-by-column.md
-      - name: A Power BI telefonos alkalmazásokhoz optimalizált jelentések létrehozása
+      - name: Mobilalkalmazásokhoz optimalizált jelentések létrehozása
         href: desktop-create-phone-report.md
       - name: Az Adatok megtekintése és a Rekordok megtekintése használata
         href: desktop-see-data-see-records.md
@@ -284,23 +284,23 @@ items:
       items:
       - name: Vizuális elemekkel kapcsolatos ajánlott eljárások
         href: visuals/power-bi-visualization-best-practices.md
-      - name: Vizualizáció-típus módosítása Power BI-jelentésekben
+      - name: Vizualizáció-típus módosítása jelentésekben
         href: visuals/power-bi-report-change-visualization-type.md
       - name: Adatpontkorlátok vizualizációtípus szerint
         href: visuals/power-bi-data-points.md
       - name: Bevezetés a színformázás és tengelytulajdonságok használatába
         href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
-      - name: Tippek és trükkök a színformázáshoz a Power BI-ban
+      - name: Tippek és trükkök a színformázáshoz
         href: visuals/service-tips-and-tricks-for-color-formatting.md
-      - name: Vizualizáció másolása és beillesztése Power BI-jelentésbe
+      - name: Vizualizáció másolása és beillesztése
         href: visuals/power-bi-visualization-copy-paste.md
       - name: A vizualizáció létrehozásához használt adatok exportálása
         href: visuals/power-bi-visualization-export-data.md
-      - name: Vizuális elem áthelyezése, átméretezése és kiugróvá tétele Power BI-jelentésben
+      - name: Vizuális elem áthelyezése, átméretezése és kiugróvá tétele a jelentésben
         href: visuals/power-bi-visualization-move-and-resize.md
       - name: Hivatkozások a táblázatokban
         href: power-bi-hyperlinks-in-tables.md
-      - name: Hivatkozás hozzáadása szövegmezőhöz Power BI-jelentésben
+      - name: Hivatkozás hozzáadása szövegmezőhöz egy jelentésben
         href: service-add-hyperlink-to-text-box.md
       - name: Vizualizációk jelentésen belüli működésének módosítása
         href: service-reports-visual-interactions.md
@@ -598,7 +598,7 @@ items:
         href: refresh-troubleshooting-refresh-scenarios.md
     - name: Irányítópultok
       items:
-      - name: Power BI-irányítópult
+      - name: Az irányítópult bemutatása
         href: service-dashboards.md
       - name: Irányítópult-csempék
         href: service-dashboard-tiles.md
@@ -692,6 +692,8 @@ items:
         href: service-create-workspaces.md
       - name: Új munkaterületek létrehozása (előzetes verzió)
         href: service-create-the-new-workspaces.md
+      - name: Adattárolás felügyelete a munkaterületeken
+        href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: Szűrt jelentés megosztása
         href: service-share-reports.md
       - name: Közzététel Power BI-ból a webre
@@ -852,6 +854,8 @@ items:
         href: developer/embed-sample-for-customers-sovereign-clouds.md
     - name: Fogalmak
       items:
+      - name: Ajánlott eljárások teljesítményének javításához
+        href: developer/embedded-performance-best-practices.md
       - name: Sorszintű biztonság (RLS)
         href: developer/embedded-row-level-security.md
       - name: Diagnosztikai naplózás a Power BI Embedded szolgáltatáshoz az Azure-ban
@@ -1261,9 +1265,9 @@ items:
       href: service-admin-governance.md
     - name: A Power BI és a biztonság
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: e105b33d6b37099dd6bc2c657f2293f8561a6004
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 8d672463e0f7ce1fb9f9a2fc938ae73cdd492a42
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53181013"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329809"
