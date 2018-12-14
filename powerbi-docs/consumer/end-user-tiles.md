@@ -4,18 +4,19 @@ description: Információk az ügyfeleknek készült Power BI szolgáltatás ir�
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 12/05/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b4ce5c811b2aa18803483ed9780c6b73a6b04bb1
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: c8c39e2fbc4aeca4aeb9cc5f906cca8bb063a2e6
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979237"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280098"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Irányítópult-csempék a Power BI-ban
 A csempék az adatokról készített, és egy *tervező* által az irányítópultra kitűzött pillanatfelvételek. Csempe létrehozható jelentésből, adatkészletből, irányítópultból, a Q&A kérdésmezőjéből, az Excelből, az SQL Server Reporting Servicesből (SSRS) és sok minden másból.  Ezen a képernyőfelvételen több irányítópultra tűzött csempe látható.
