@@ -1,22 +1,22 @@
 ---
 title: Oktatóanyag – Szeletelők a Power BI-ban
 description: Szeletelők a Power BI-ban
-author: mihart
+author: v-thepet
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/25/2018
-ms.author: v-thepet
+ms.date: 10/25/2018
+ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e42504c2c320e4f102cab5e2272e6123bf580cf5
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: e6b738060875685a7de8e07a55d28afaf071b32e
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448983"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979651"
 ---
 # <a name="slicers-in-power-bi"></a>Szeletelők a Power BI-ban
 A jelentést olvasók számára az összesítő értékesítési mérőszámok megjelenítése mellett az egyes körzeti vezetők teljesítményét és a különböző időkereteket is ki kell tudni mutatni. Létrehozhat különálló jelentéseket vagy összehasonlító diagramokat, illetve használhat szeletelőket. A szűrés másféle lehetőségét kínáló szeletelőkkel az adathalmaz a jelentés más vizualizációiban szereplő részére szűkíthető. 
@@ -177,9 +177,9 @@ A szeletelő felső részén az adatmező nevét tartalmazó **Fejléc** alapér
 
 ### <a name="other-formatting-options"></a>Egyéb formázási lehetőségek
 A további formázási lehetőségek alapértelmezés szerint ki vannak kapcsolva. Ha **Be** vannak kapcsolva: 
-- **Cím:** Címsort vesz fel és formáz (a fejlécen kívül és attól függetlenül) a szeletelő felső részén. 
+- **Cím:** Címsort vesz fel és formáz (a fejlécen kívül, és attól függetlenül) a szeletelő felső részén. 
 - **Háttér:** Háttérszínt ad meg a teljes szeletelőhöz, és beállítja annak átlátszóságát.
-- **Zárolási helyzet:** Átméretezéskor megtartja a szeletelő képarányát.
+- **Képarány rögzítése:** Átméretezéskor megtartja a szeletelő képarányát.
 - **Szegély:** 1 képpont vastagságú szegélyt rajzol a szeletelő köré, és beállítja annak színét. (Ez a szeletelőszegély az általános körvonal-beállításoktól független, azok nincsenek hatással rá.) 
 
 ## <a name="next-steps"></a>Következő lépések

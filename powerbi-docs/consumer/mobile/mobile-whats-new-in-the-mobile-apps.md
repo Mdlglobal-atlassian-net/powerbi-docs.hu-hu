@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 9d73e7b4e9b303f1a774c14fc813572805f7b093
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: 37995f52882d1a5062b8aa03fb7b0480063a4f77
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297228"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979548"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -219,9 +219,9 @@ Olvassa el a [mobilalkalmazások funkcióinak 2017. júliusi összefoglalását]
 
 ### <a name="may-2017"></a>2017. május
 #### <a name="all-devices"></a>Minden eszköz
-**Új menü: Velem megosztva** Lépjen a Velem megosztva elemre a mobilalkalmazás menüjében. Itt megtekintheti az összes Önnel megosztott tartalmat.
+**Új menü: Velem megosztva** Lépjen a Velem megosztva elemre a mobilalkalmazás menüjében, ahol megtekintheti az összes Önnel megosztott tartalmat.
 
-**Új menü: Alkalmazások** Az alkalmazások olyan irányítópultok és jelentések gyűjteményei, amelyeket a vállalat a fő mutatók megjelenítése érdekében állított össze a gyorsabb és egyszerűbb, adatokra épülő döntéshozatal érdekében.
+**Új menü: Alkalmazások** Az alkalmazások olyan irányítópultok és jelentések gyűjteményei, amelyeket a vállalat a fő mutatók megjelenítése érdekében állított össze a gyorsabb és egyszerűbb, adatokra épülő döntéshozatalért.
 
 További tudnivalók [a Power BI-tartalmak elrendezéséről](mobile-apps-quickstart-view-dashboard-report.md).
 
@@ -346,7 +346,7 @@ Olvassa el a [Power BI mobilalkalmazásai funkcióinak 2016. novemberi összefog
 * Áttekintheti a [Reporting Services-mobiljelentéseket és KPI-ket androidos táblagépén](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
 
 #### <a name="android-devices"></a>Androidos eszközök
-**Előzetes verzió: Intune mobilalkalmazás-kezelés** A Power BI mostantól támogatja a Microsoft Intune Mobile Application Managert (MAM), ezért az előzetes verzióban elérhető a Power BI Pro-felhasználók számára androidos eszközökön. 
+**Előzetes verzió: Intune mobilalkalmazás-kezelés** A Power BI mostantól támogatja a Microsoft Intune mobilalkalmazás-kezelőjét, amely előzetes verzióban elérhető Power BI Pro-felhasználók számára androidos eszközökön. 
 
 **Kedvencek** Megjelölheti kedvenc irányítópultjait androidos eszközén, és egyetlen, kényelmesen elérhető helyen tekintheti meg [kedvenc Power BI-irányítópultjait, valamint a Reporting Services-mobiljelentéseket és KPI-ket](mobile-android-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports). 
 
@@ -458,8 +458,8 @@ A Power BI mobilalkalmazás értesítési központja megjeleníti az Önnel mego
 ### <a name="may-2016"></a>2016. május
 #### <a name="ios-devices-and-android-phones"></a>iOS-eszközök és androidos telefonok
 * A **QR-kódok** mostantól **a jelentések esetében** is elérhetők. Olvassa be a kódot a Power BI alkalmazással, hogy közvetlenül egy kapcsolódó jelentésre ugorhasson, navigálás és keresés nélkül.
-* **Továbbfejlesztett adatkezelés** az SQL Server 2016 Reporting Serviceshez: Csökkent a tartalmak betöltési ideje és az eszköz adatforgalma.
-* **Témák az SQL Server 2016-mobiljelentésekhez**: Eszközén különféle témák érhetők el a mobiljelentésekhez.
+* **Továbbfejlesztett adatkezelés** az SQL Server 2016 Reporting Services szolgáltatáshoz: Csökkentett betöltési idők és adatforgalom az eszközén.
+* **SQL Server 2016 témájú mobiljelentések**: Mobiljelentésekhez készült témákat tekinthet meg az eszközén.
 * **Földrajzi alapú szűrés**: Szűrheti a jelentéseket a saját tartózkodási helye alapján.
 
 ### <a name="april-2016"></a>2016. április
@@ -523,7 +523,7 @@ Az irányítópultokat [fekvő tájolásban is megtekintheti Windows 10 rendszer
 
 Megtekintheti [a jelentéseket Windows 10 rendszerű telefonján](mobile-reports-in-the-mobile-apps.md).
 
-Gyorsabb [elemzések a Windows 10-es mobil irányítópultokon](mobile-tiles-in-the-mobile-apps.md): Megoszthat egy csempéről készült pillanatképet, vagy közvetlenül az irányítópultról nyithat meg jelentéseket.
+Gyorsabb [elemzési eredmények Windows 10-es mobil-irányítópultjain](mobile-tiles-in-the-mobile-apps.md): Csempepillanatképet oszthat meg, vagy jelentést nyithat meg közvetlenül az irányítópultról.
 
 ### <a name="january-2016"></a>2016. január
 Az összes januári fejlesztés már elérhető a 2015 decemberében kiadott, [Windows 10-hez készült új Power BI alkalmazásban](mobile-windows-10-phone-app-get-started.md). Mostantól ezek a többi mobileszközhöz készült Power BI alkalmazásokban is elérhetőek. Olvassa el a fejlesztésekről szóló blogbejegyzést.
@@ -536,7 +536,7 @@ Az összes januári fejlesztés már elérhető a 2015 decemberében kiadott, [W
 
 **R-csempék és webes widgetek** Ezek az új csempetípusok is megtekinthetők az irányítópultjain mobileszközön.
 
-**Bing-irányítópultok** A Power BI szolgáltatásban mostantól létrehozhat [Bing keresési eredményeket tartalmazó irányítópultokat](../end-user-connect-to-services.md), és megtekintheti őket mobileszközén.
+**Bing-irányítópultok** A Power BI szolgáltatásban mostantól létrehozhat [Bing keresési eredményeket tartalmazó irányítópultokat](../../service-connect-to-services.md), és megtekintheti őket mobileszközén.
 
 **Jelentésoldalak rögzítése csempékként az irányítópultokon** Mostantól teljes jelentésoldalakat rögzíthet az irányítópultokra a Power BI szolgáltatásban, így megtekintheti a jelentésoldalakat iPhone-ján vagy androidos telefonján a Power BI alkalmazásban.
 
@@ -601,7 +601,7 @@ A Power BI-mobilalkalmazások fejlesztései – Android, iOS (iPhone és iPad) �
 
 #### <a name="android"></a>Android
 * Csoportos munkaterületek támogatása: Csoportos munkaterületek érhetők el a munkatársakkal való együttműködéshez. 
-* Nem hitelesített felhasználók támogatása: Azokra a ritka esetekre, amikor a felhasználók nem tudnak bejelentkezni az alkalmazásba, egy gyors, kényelmes új funkciót kínálunk az ügyfélszolgálattal való kapcsolatfelvételhez és visszajelzés küldéséhez.
+* Nem hitelesített felhasználók támogatása:  Azokra a ritka esetekre, amikor a felhasználók nem tudnak bejelentkezni az alkalmazásba, egy gyors, kényelmes új funkciót kínálunk az ügyfélszolgálattal való kapcsolatfelvételhez és visszajelzések küldéséhez.
 * Jobb felhasználói élmény az irányítópultok elérésekor szerepköralapú biztonság esetén.          
 * Továbbfejlesztett adatformázás a diagramokban és az irányítópulton lévő csempék fejlettebb igazítása. 
 
