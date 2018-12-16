@@ -1,22 +1,23 @@
 ---
-title: Nyomtatás a Power BI-ból
+title: Nyomtatás a Power BI szolgáltatásból
 description: Irányítópult, csempe vagy jelentésoldal nyomtatása a Power BI-ból.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: be7597cf13732e251f40f73a853e6ea7b0032652
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: bb3ecb8a343d2ed3f3693dd136b11b7543cabc70
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507669"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280742"
 ---
 # <a name="printing-from-power-bi-service"></a>Nyomtatás a Power BI-ból
 Útmutató teljes irányítópultok, irányítópult-csempék, jelentésoldalak, jelentés-vizualizációk Power BI-ból történő nyomtatásához. A jelentésekből alkalmanként csak egy oldal nyomatható ki, a teljes jelentést nem lehet egyszerre kinyomtatni.
@@ -77,16 +78,16 @@ A jelentésekből egyszerre egy oldal nyomtatható ki.
 2. Hajtsa végre a *Jelentésoldal nyomtatása* részben fentebb leírt 2. és 3. lépést.
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
-* Kérdés: Nem található a **Nyomtatás** gomb.    
-* Válasz: Ha a Power BI Desktopot használja, a nyomtatás nem támogatott.  A nyomtatás csak a Power BI szolgáltatásban érhető el.
-* Kérdés: Nem nyomtatható ki a jelentés minden lapja egyszerre.    
-* Válasz: Ez nem hiba. A jelentésekből egyszerre csak egy oldal nyomtatható ki.
-* Kérdés: Nem lehet PDF-fájlba nyomtatni.    
-* Válasz: Ez a lehetőség csak akkor jelenik meg, ha böngészőjéhez már beállított egy PDF-illesztőprogramot.    
-* Kérdés: A **Nyomtatásra** kattintás után nem az itt bemutatott képernyő jelenik meg.    
-* Válasz: A Nyomtatási képernyők böngészőnként és szoftververziónként változnak.
-* Kérdés: A nyomtatásra kerülő anyag nincs megfelelően méretezve.  Az irányítópult nem fér el az oldalon. Méretezéssel és tájolással kapcsolatos egyéb problémák.    
-* Válasz: Nem tudjuk garantálni, hogy a nyomtatott példány pontosan meg fog egyezni azzal, ami a Power BI szolgáltatásban látható. A kicsinyítést és nagyítást, a margókat, a megjelenítési részleteket, a tájolást és a méretet nem a Power BI szolgáltatás vezérli. Az ilyen kérdésekkel kapcsolatban a böngésző súgójában találhat információt.      
+* KÉRDÉS: Nem található a **Nyomtatás** gomb.    
+* VÁLASZ: Ha a Power BI Desktopot használja, a nyomtatás nem támogatott.  A nyomtatás csak a Power BI szolgáltatásban érhető el.
+* KÉRDÉS: Nem nyomtatható ki a jelentés minden lapja egyszerre.    
+* VÁLASZ: Ez nem hiba. A jelentésekből egyszerre csak egy oldal nyomtatható ki.
+* KÉRDÉS: Nem lehet PDF-fájlba nyomtatni.    
+* VÁLASZ: Ez a lehetőség csak akkor jelenik meg, ha böngészőjéhez már beállított egy PDF-illesztőprogramot.    
+* KÉRDÉS: A **Nyomtatásra** kattintás után nem az itt bemutatott képernyő jelenik meg.    
+* VÁLASZ: A Nyomtatási képernyők böngészőnként és szoftververziónként változnak.
+* KÉRDÉS: A nyomtatásra kerülő anyag nincs megfelelően méretezve.  Az irányítópult nem fér el az oldalon. Méretezéssel és tájolással kapcsolatos egyéb problémák.    
+* VÁLASZ: Nem tudjuk garantálni, hogy a nyomtatott példány pontosan meg fog egyezni azzal, ami a Power BI szolgáltatásban látható. A kicsinyítést és nagyítást, a margókat, a megjelenítési részleteket, a tájolást és a méretet nem a Power BI szolgáltatás vezérli. Az ilyen kérdésekkel kapcsolatban a böngésző súgójában találhat információt.      
 
 ## <a name="next-steps"></a>További lépések
 [Irányítópultok és jelentések megosztása munkatársakkal és más személyekkel](../service-share-dashboards.md)

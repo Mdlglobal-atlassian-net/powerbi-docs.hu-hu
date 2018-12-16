@@ -4,18 +4,19 @@ description: a tartalmak Power BI-munkaterületeken való keresésével és rend
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 3c66a428fabadaf53e2b1f7745b6de9668a9e532
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 7f56cb4ec9859750c218975d25f3b8e2dd8a0469
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49113024"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280466"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigáció: tartalom keresése és rendezése a Power BI szolgáltatásban
 A Power BI szolgáltatásban számos módon navigálhat a tartalmak között. A tartalmak típus szerint vannak rendezve a munkaterületeken: irányítópultok, jelentések, munkafüzetek és adathalmazok.  A tartalom emellett használat szerint is rendezve van: kedvencek, legutóbbi, alkalmazások, velem megosztott és kiemelt. A kezdőlap az egylépéses navigáció érdekében egy oldalon rendez el minden tartalmat. Ezek a különböző tartalmakhoz vezető utak lehetővé teszik, hogy gyorsan megtalálja, amire szüksége van a Power BI szolgáltatásban.  

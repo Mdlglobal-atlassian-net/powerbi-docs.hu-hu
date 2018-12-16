@@ -3,20 +3,21 @@ title: Kedvencek a Power BI szolgáltatásban (irányítópultok, jelentések é
 description: Útmutató az irányítópultok, jelentések és alkalmazások kedvencekhez történő hozzáadásához a Power BI szolgáltatásban – dokumentáció
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 46b943b9de7e8bae29c20617f957c81de2d49f94
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: cc94f352c550d7fba96f71f894e8d81ba5bc487a
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452499"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280188"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Kedvenc irányítópultok, jelentések és alkalmazások a Power BI szolgáltatásban
 Ha egy tartalmat hozzáad a *Kedvencekhez*, akkor azt minden munkaterületéről elérheti.  A kedvencek azok a helyek, amelyeket általában a leggyakrabban látogat.
@@ -71,7 +72,7 @@ Már nem használja olyan gyakran a tartalmat?  Eltávolíthatja a kedvencek kö
    ![Kedvencek képernyő](./media/end-user-favorite/power-bi-unfavorites-screen.png)
 2. A kedvencnek jelölés visszavonásához kattintson a tartalom melletti sárga csillagra.
 
-> **FIGYELEM**: Irányítópult, jelentés vagy alkalmazás kedvencnek jelölése is visszavonható. Ehhez egyszerűen nyissa meg a tartalmat, és szüntesse meg a sárga ikon bejelölését.   
+> **MEGJEGYZÉS**: Irányítópult, jelentés vagy alkalmazás kedvencnek jelölése is visszavonható. Ehhez egyszerűen nyissa meg a tartalmat, és szüntesse meg a sárga ikon bejelölését.   
 > 
 > 
 

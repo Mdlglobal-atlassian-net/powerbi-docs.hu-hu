@@ -5,21 +5,21 @@ services: powerbi
 documentationcenter: ''
 author: mihart
 manager: kvivek
-backup: ''
+ms.custom: seodec18
 editor: ''
 tags: ''
 ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/17/2018
+ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: 1da43fb6bc0604cfa356f19aa212256612350c65
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 84ce069913b1c262ce4e91138f8496cf3f19dddd
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396520"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280121"
 ---
 <!-- once the sample aps are live, change this so consumers can follow along -->
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Rövid útmutató: A Power BI ***felhasználói*** képességeivel kapcsolatos tudnivalók
@@ -175,7 +175,7 @@ Helyezze a kurzort egy vizualizáció fölé, majd válassza a **Fókusz mód** 
 
 ![fókusz mód](media/end-user-reading-view/powerbi-focus-mode.png)
 
-Ha ugyanezt a vizualizációt a zavaró menüsávok, a szűrők ablaktábla vagy egyéb sötét színű elemek nélkül szeretné megjeleníteni, válassza a menüsáv tetején található **Teljes képernyő** ikont ![](media/end-user-reading-view/power-bi-focus-icon.png) .
+Ha ugyanezt a vizualizációt a zavaró menüsávok, a szűrők ablaktábla vagy egyéb sötét színű elemek nélkül szeretné megjeleníteni, válassza a menüsáv tetején található **Teljes képernyő** ikont ![teljes képernyő ikon](media/end-user-reading-view/power-bi-focus-icon.png) .
 
 ![teljes képernyős mód](media/end-user-reading-view/power-bi-full-screen.png)
 

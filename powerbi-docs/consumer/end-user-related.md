@@ -1,27 +1,28 @@
 ---
-title: Kapcsolódó tartalom megtekintése a Power BI szolgáltatásban
+title: Kapcsolódó tartalom megtekintése irányítópultokról, jelentésekből és adathalmazokból
 description: Egyszerűsített navigáció, kapcsolódó tartalmak megtekintése az irányítópultokban, jelentésekben és adatkészletekben
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 12/09/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 7bb46bbed79be32b45fe4e5dbd2ecb07acc5d673
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: cc2369f6e1e074231267ceb41c19585eccfdb6f9
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566395"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280723"
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Kapcsolódó tartalom megtekintése a Power BI szolgáltatásban
-A **Kapcsolódó tartalom** ablaktáblában megtekintheti, hogyan vannak összekapcsolva a különböző Power BI-tartalmak – irányítópultok, jelentések és adatkészletek.  És ami még jobb, erről az ablaktábláról elvégezheti az olyan gyakori feladatokat is, mint a frissítés, az átnevezés, az értékelések készítése és még sok minden más. Ha kiválaszt egy kapcsolódó jelentést vagy irányítópultot, az megnyílik a Power BI munkaterületén.   
+A **Kapcsolódó tartalom** ablaktáblában megtekintheti, hogyan vannak összekapcsolva a különböző Power BI-tartalmak – irányítópultok, jelentések és adatkészletek. A Kapcsolódó tartalom panel indítási területként is funkcionál műveletek elvégzéséhez. Innen sok más mellett frissítheti, átnevezheti és létrehozhatja az információs adatokat. Ha kiválaszt egy kapcsolódó jelentést vagy irányítópultot, az megnyílik a Power BI munkaterületén.   
 
-Mint azt már valószínűleg tudja, a jelentések adatkészletekre épülnek, a jelentések vizualizációit irányítópultokra lehet tűzni, és az irányítópultok vizualizációi hivatkoznak a jelentésekre. De hogyan tudhatja meg, hogy a Marketing jelentésének a vizualizációit melyik irányítópultokra tűzték ki? És hogyan találhatja meg ezeket az irányítópultokat? A Beszerzés irányítópult vajon olyan vizualizációkat használ, amelyek több adatkészletre is épülnek? És ha igen, akkor mi azok neve, és hogyan tudja megnyitni és szerkeszteni őket? Vajon használja-e valamelyik jelentés vagy irányítópult a HR-adatkészletet, vagy nyugodtan át lehet helyezni anélkül, hogy hivatkozásokat szakítana meg? Minden ilyen kérdésre választ találhat a **Kapcsolódó tartalom** adattáblán.  Az adattábla nem csak a kapcsolódó tartalmakat jeleníti meg, hanem műveletek elvégzését is lehetővé teszi rajtuk, és megkönnyíti a navigációt is közöttük.
+A Power BI-ban a jelentések adatkészletekre épülnek, a jelentések vizualizációit irányítópultokra lehet tűzni, és az irányítópultok vizualizációi hivatkoznak a jelentésekre. De hogyan tudhatja meg, hogy a Marketing jelentésének a vizualizációit melyik irányítópultokra tűzték ki? És hogyan találhatja meg ezeket az irányítópultokat? A Beszerzés irányítópult vajon olyan vizualizációkat használ, amelyek több adatkészletre is épülnek? És ha igen, akkor mi azok neve, és hogyan tudja megnyitni és szerkeszteni őket? A HR-adatkészlet fel van egyáltalán használva jelentésekben vagy irányítópultokon? Vagy áthelyezhetők anélkül, hogy hibás hivatkozások maradnának utána? Minden ilyen kérdésre választ találhat a **Kapcsolódó tartalom** adattáblán.  Az adattábla nem csak a kapcsolódó tartalmakat jeleníti meg, hanem műveletek elvégzését is lehetővé teszi rajtuk, és megkönnyíti a navigációt is közöttük.
 
 ![kapcsolódó tartalom](./media/end-user-related/power-bi-view-related-dashboard-new.png)
 
@@ -40,7 +41,7 @@ A **Kapcsolódó tartalom** adattábla megnyitásához legalább *megtekintési*
 
 **1. módszer**
 
-A munkaterületen válassza az **Irányítópultok** lapot, majd válassza ki a **Kapcsolódó megtekintése** ikont ![Kapcsolódó megtekintése ikon](./media/end-user-related/power-bi-view-related-icon-new.png)  .
+A munkaterületen válassza az **Irányítópultok** lapot, majd válassza ki a **Kapcsolódó megtekintése** ikont ![Kapcsolódó megtekintése ikon](./media/end-user-related/power-bi-view-related-icon-new.png).
 
 ![Irányítópult lap](./media/end-user-related/power-bi-view-related-dash-newer.png)
 
@@ -80,23 +81,22 @@ Innen közvetlen műveleteket is végezhet a kapcsolódó tartalmakon.  Példáu
 ## <a name="view-related-content-for-a-dataset"></a>Egy adatkészlet kapcsolódó tartalmainak megtekintése
 A **Kapcsolódó tartalom** adattábla megnyitásához legalább *megtekintési engedéllyel* kell rendelkeznie az adott adatkészlethez. A példában a [Beszerzéselemzési mintát](../sample-procurement.md) fogjuk használni.
 
-A munkaterületen válassza az **Adatkészletek** lapot, majd keresse meg a **Kapcsolódó megtekintése** ikont ![Kapcsolódó megtekintése ikon](./media/end-user-related/power-bi-view-related-icon-new.png)  .
+A munkaterületen válassza az **Adatkészletek** lapot, majd keresse meg a **Kapcsolódó megtekintése** ikont ![Kapcsolódó megtekintése ikon](./media/end-user-related/power-bi-view-related-icon-new.png).
 
 ![Adatkészletek lap](./media/end-user-related/power-bi-view-related-dataset-newer.png)
 
 Válassza ki az ikont a **Kapcsolódó tartalom** ablaktábla megnyitásához.
 
-![](media/end-user-related/power-bi-datasets.png)
+![A Kapcsolódó tartalom panel a Power BI tartalom nézete fölött jelenik meg](media/end-user-related/power-bi-datasets.png)
 
-Innen közvetlen műveleteket is végezhet a kapcsolódó tartalmakon.  Például, az egyik irányítópult vagy jelentés nevének kiválasztásával megnyithatja az adott irányítópultot vagy jelentést.  A felsorolt irányítópultok esetében a megfelelő ikon kiválasztásával [megoszthatja az irányítópultot másokkal](../service-share-dashboards.md), vagy megnyithatja az adott irányítópult **Beállítások** ablakát. Jelentések esetében a megfelelő ikon kiválasztásával az [Elemzés az Excelben](../service-analyze-in-excel.md), az [Átnevezés](../service-rename.md) és az [Elemzések lekérése](end-user-insights.md) műveleteket hajthatja végre.  
+Innen közvetlen műveleteket is végezhet a kapcsolódó tartalmakon. Például, az egyik irányítópult vagy jelentés nevének kiválasztásával megnyithatja az adott irányítópultot vagy jelentést.  A felsorolt irányítópultok esetében a megfelelő ikon kiválasztásával [megoszthatja az irányítópultot másokkal](../service-share-dashboards.md), vagy megnyithatja az adott irányítópult **Beállítások** ablakát. Jelentések esetében a megfelelő ikon kiválasztásával az [Elemzés az Excelben](../service-analyze-in-excel.md), az [Átnevezés](../service-rename.md) és az [Elemzések lekérése](end-user-insights.md) műveleteket hajthatja végre.  
 
 ## <a name="limitations-and-troubleshooting"></a>Korlátozások és hibaelhárítás
-* Ha a böngésző ablakában nincs elég hely, akkor lehet, hogy nem látszik a **Kapcsolódó megtekintése** lehetőség, csak a Kapcsolódó megtekintése ikon  ![Kapcsolódó megtekintése](./media/end-user-related/power-bi-view-related-icon-new.png)  . Válassza ki az ikont a **Kapcsolódó tartalom** ablaktábla megnyitásához.
+* Ha nem jelenik meg a „Kapcsolódó megtekintése” szöveg, akkor keresse az ikont ![Kapcsolódó megtekintése ikon](./media/end-user-related/power-bi-view-related-icon-new.png). Válassza ki az ikont a **Kapcsolódó tartalom** ablaktábla megnyitásához.
 * Egy jelentés kapcsolódó tartalmainak megnyitásához [Olvasó nézetben](end-user-reading-view.md) kell lennie.
-* A Kapcsolódó tartalom funkció a Power BI Desktop alkalmazásban nem érhető el.
 * A Kapcsolódó tartalom funkció nem működik streamelt adatkészletek esetében.
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 * [A Power BI szolgáltatás használatának első lépései](../service-get-started.md)
 * További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

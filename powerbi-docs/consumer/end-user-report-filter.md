@@ -1,21 +1,22 @@
 ---
-title: Jelentésszűrő hozzáadása
+title: Szűrő hozzáadása jelentéshez
 description: Szűrő hozzáadása jelentéshez az ügyfeleknek készült Power BI szolgáltatásban
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 31b3584b0cbd2481db64160bcf502caf46e7acc3
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: ea219071b475bf5bb9123e1aa3bbaca412507a8e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473807"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280765"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Ismerkedés a jelentések Szűrők panelével
 Ez a cikk a jelentések Szűrők paneljét mutatja be a Power BI szolgáltatásban.
@@ -36,7 +37,7 @@ A Power BI szolgáltatásban a jelentések megtartják a Szűrők panelen végze
 ## <a name="open-the-filters-pane"></a>A Szűrők panel megnyitása
 Amikor megnyit egy jelentést, a Szűrők panel megjelenik a jelentésvászon jobb oldalán. Ha a panel nem látható, a jobb felső sarokban található nyíllal nyitható meg.  
 
-Ehhez a példához egy 6 szűrővel rendelkező vizualizációt választottunk. A jelentésoldalon szintén találhatóak szűrők – ezek a **Lapszintű szűrők** cím alatt vannak felsorolva. Egy [Részletezési szűrő](../power-bi-report-add-filter.md) is rendelkezésre áll, továbbá a teljes jelentésre is vonatkozik egy szűrő: a **FiscalYear** (Pénzügyi év) lehet 2013 vagy 2014.
+Ehhez a példához egy 6 szűrővel rendelkező vizualizációt választottunk. A jelentésoldalon szintén találhatóak szűrők – ezek a **Lapszintű szűrők** cím alatt vannak felsorolva. Egy [Részletezési szűrő](../power-bi-report-add-filter.md) is rendelkezésre áll, továbbá a teljes jelentésre is vonatkozik egy szűrő:  a **FiscalYear** (Pénzügyi év) lehet 2013 vagy 2014.
 
 ![szűrők listája](media/end-user-report-filter/power-bi-filter-list.png)
 

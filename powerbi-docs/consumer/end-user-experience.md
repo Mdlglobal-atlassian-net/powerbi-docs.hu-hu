@@ -5,18 +5,19 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 10/18/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 1d093c9eb39b312e1883b2635de473dac6db5192
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 3b3eaa33879a1f0c6d51aecaa93cae6ce5c90d10
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473865"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280811"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Rövid útmutató – Navigáció a Power BI szolgáltatásban
 
@@ -40,7 +41,7 @@ Első lépésként beszerzünk néhány mintaadatot a Power BI szolgáltatás be
 
     A Power BI szolgáltatás ekkor importálja a mintát, és megjeleníti az irányítópultot. Az irányítópult megkülönbözteti a Power BI szolgáltatást a Power BI Desktoptól. A minta tartalmaz egy jelentést és egy adatkészletet is, melyre később fogunk kitérni.
 
-    ![](media/end-user-experience/power-bi-dashboard.png)
+    ![az irányítópult megjelenik](media/end-user-experience/power-bi-dashboard.png)
 
 Amanda most bemutatja a Power BI szolgáltatás navigációjának használatát.  Ezután Ön is elkezdheti az ismerkedést a videó alatt látható részletes utasítások alapján.
 
@@ -50,7 +51,7 @@ Amanda most bemutatja a Power BI szolgáltatás navigációjának használatát.
 ## <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Tartalom megtekintése (irányítópultok, jelentések, munkafüzetek, adatkészletek, munkaterületek, alkalmazások)
 Kezdjük az alapvető tartalmak (irányítópultok, jelentések, adatkészletek, munkafüzetek) rendszerének megtekintésével. A tartalom egy munkaterületen belül jelenik meg. Ezen a ponton csak egy munkaterülete van, melynek neve **Saját munkaterület**. Általában a felhasználóknak nincs szükségük másik munkaterület használatára. A Saját munkaterület a tulajdonában lévő összes tartalom tárolására szolgál. Tekintsen rá úgy mint a saját, személyes munkaterületére, ahol nyugodtan kísérletezhet tartalmaival. A Saját munkaterület az a hely, ahova a Kiskereskedelmi elemzési mintát letöltötte és mentette. 
 
-A Saját munkaterületen belül a tartalmak 4 lapra vannak rendszerezve: Irányítópultok, Jelentések, Munkafüzetek, és Adatkészletek.
+A Saját munkaterületen belül a tartalom 4 lapon van elhelyezve: irányítópultok, jelentések, munkafüzetek, és adatkészletek.
 
 ![Saját munkaterület képernyő](./media/end-user-experience/power-bi-my-workspace.png)
 

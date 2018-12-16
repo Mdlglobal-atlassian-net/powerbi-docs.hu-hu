@@ -1,22 +1,23 @@
 ---
-title: Fókusz mód és teljes képernyős mód – ráközelítés a részletekre.
+title: Fókusz mód és teljes képernyős mód – ráközelítés a részletekre
 description: Power BI-beli irányítópultok, irányítópult-csempék, jelentések vagy jelentésvizualizációk fókusz módú vagy teljes képernyős megjelenítésének dokumentációja
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 70e7fcb9f38c6dbf52adf58f8477f671156c9da4
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 13032e011446fad765961dacdb83fbb8bd5a2f6e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507961"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279960"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>A tartalom részletesebb megjelenítése: fókusz mód és teljes képernyős mód
 
@@ -83,7 +84,7 @@ Jelentésoldalak menüje
     Teljes képernyős jelentéseknél ezeket a nyilakat használva válthat a jelentésoldalak között.    
   * A teljes képernyős módból való kilépéshez válassza a **Kilépés a teljes képernyős módból** ikont.
 
-      ![](media/end-user-focus/exit-fullscreen-new.png)
+      ![kilépés a teljes képernyős módból ikon](media/end-user-focus/exit-fullscreen-new.png)
 
 ## <a name="working-in-focus-mode"></a>Munka fókusz módban
 A fókusz mód kétféleképpen nyitható meg. Az egyik irányítópult-csempékhez, a másik jelentésvizualizációkhoz használható.
@@ -130,7 +131,7 @@ A fókusz mód kétféleképpen nyitható meg. Az egyik irányítópult-csempék
     ![kilépés a Fókusz módból](media/end-user-focus/power-bi-exit-focus-report.png)  
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
-* Jelentésben lévő vizualizáció fókusz módban történő megtekintésekor az összes szűrőt, azaz a vizualizációszintű, a lapszintű, a részletezésszintű és a jelentésszintű szűrőket is megtekintheti és kezelheti.    
+* Jelentésben lévő vizualizáció fókusz módban történő megtekintésekor megtekintheti és kezelheti az összes szűrőt: a vizualizációszintű, a lapszintű, a részletezésszintű és a jelentésszintű szűrőket is.    
 * Irányítópult-vizualizációk fókusz módú megjelenítésekor csak a vizualizációszintű szűrőket tudja kezelni.
 
 ## <a name="next-steps"></a>Következő lépések

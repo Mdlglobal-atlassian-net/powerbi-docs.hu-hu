@@ -1,21 +1,22 @@
 ---
-title: A Q&A használata a Power BI szolgáltatásban és a Power BI Desktopban – áttekintés
+title: A Q&A használata a Power BI szolgáltatásban – áttekintés
 description: 'Q&A szolgáltatás: Természetes nyelvi kérdések a Power BI-ban – Dokumentáció'
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 361c71c979d65e5c71ada6889bc7312ef64da23e
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 3548041be39705c3013d09740040afc3e7f1c9e7
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396359"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279578"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Q&A a Power BI-**ügyfelek** számára
 ## <a name="what-is-qa"></a>Mi a Q&A?
@@ -46,7 +47,7 @@ Először ismerkedjen meg a tartalommal. Tekintse meg az irányítópulton és a
 
 ![Q&A képernyő](media/end-user-q-and-a/power-bi-qna-screen.png) 
 
-* Ha a vizualizáció tengelyfeliratai és értékei között szerepelnek a "sales", "account", "month" és "opportunity" szavak, akkor feltehet olyan angol nyelvű kérdéseket, mint hogy "Which *account* has the highest *opportunity*", vagy "show *sales* by month as a bar chart".
+* Ha a vizualizáció tengelyfeliratai és értékei között szerepelnek a "sales", "account", "month" és "opportunity" szavak, akkor feltehet olyan angol nyelvű kérdéseket, mint "Which *account* has the highest *opportunity*", vagy "show *sales* by month as a bar chart".
 
 * Ha rendelkezik egy webhely Google Analytics-beli teljesítményadataival, akkor kérdezheti a Q&A-t a weboldalakon töltött időről, az egyedi oldallátogatások számáról és a felhasználói érdeklődés mérőszámairól. Demográfiai adatok lekérdezésekor például az életkor és a háztartások bevétele földrajzi hely szerinti eloszlásáról tehet fel kérdéseket.
 

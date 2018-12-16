@@ -1,21 +1,22 @@
 ---
-title: Szeretne megtekinteni egy Power BI-irányítópultot?
-description: Az irányítópult a Power BI szolgáltatás egyik legfontosabb funkciója.
+title: Power BI-irányítópult megtekintése
+description: Az irányítópultok a Power BI szolgáltatás központi funkciói. Ismerje meg, hogyan nyithatók meg és tekinthetők meg az irányítópultok.
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/11/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 53575f657c2d58f9d6b1908fb42bbb9267c3a3b8
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 2fa614683ecfebc0693829c834dcfa4f160d22b1
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396681"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279753"
 ---
 # <a name="view-a-dashboard"></a>Irányítópult megtekintése
 A Power BI-felhasználók sok időt töltenek irányítópultok tanulmányozásával. Az irányítópultok adott információkat jelenítenek meg alapul szolgáló jelentésekből vagy adathalmazokból. A Power BI-felhasználók pedig ezen információkat használják a nyomkövetéshez, monitorozáshoz, kérdések megválaszolásához, teszteléshez és egyéb műveletekhez az adatokon alapuló üzleti döntések meghozása érdekében.

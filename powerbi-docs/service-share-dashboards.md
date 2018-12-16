@@ -8,15 +8,15 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8644bc01aa845ff91950169f011cb70fb161ecb1
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: abddbf3e4ae0b51dbb46f949e6d4f287d084f873
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271763"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53281031"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI-irányítópult és -jelentés megosztása munkatársakkal és másokkal
 A *Megosztással* egyszerűen biztosíthatja néhány személy hozzáférését az irányítópultjaihoz és jelentéseihez. A Power BI-ban [többféle módon valósítható meg az irányítópultok és jelentések közös használata és terjesztése](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -111,7 +111,7 @@ Irányítópultok vagy jelentések megosztásakor vegye figyelembe a következő
 
 * Ön és a munkatársai általában ugyanazokat az adatokat látják az irányítópulton vagy jelentésen. Ha tehát Ön több adathoz jogosult hozzáférni mint ők, akkor az irányítópultján vagy jelentésén ők is látni fogják az összes adatát. Ha azonban [sorszintű biztonság (RLS)](service-admin-rls.md) van érvényben egy irányítópult agy jelentés alapjául szolgáló adatkészletben, akkor a hozzáférhető adatok köre az egyes személyek hitelesítő adatai alapján lesz meghatározva.
 * Mindenki, akivel Ön megosztotta az irányítópultot, megtekintheti és használhatja a vonatkozó jelentéseket az [Olvasó nézetben](consumer/end-user-reading-view.md). Nem hozhatnak létre jelentéseket és nem menthetik a meglévő jelentések módosításait.
-* Az adatkészletet senki sem tekintheti meg vagy töltheti le.
+* Az adatkészletet senki nem láthatja és nem töltheti le, de közvetlenül elérhetik azt az Elemzés az Excelben funkcióval. A rendszergazda úgy korlátozhatja az Elemzés az Excelben funkciót, hogy egy adott csoporton belül mindenkire kiterjeszti a korlátozást. A korlátozás azonban a csoport minden tagjára vonatkozik, és minden olyan munkaterületre kiterjed, amelyhez a csoport tartozik.
 * Manuálisan mindenki [frissítheti az adatokat](refresh-data.md).
 * Ha a levelezéshez az Office 365-öt használja, akkor a megosztás címzettjeként egy terjesztési csoportot is megadhat a csoporthoz tartozó e-mail-cím beírásával.
 * Az Önnel egy e-mail-tartományban lévő munkatársai, valamint a más, de ugyanazon a bérlőn belül regisztrált tartományok tagjai másokkal is megoszthatják az irányítópultot. Legyen például a contoso.com és a contoso2.com tartomány egy bérlőn belül regisztrálva. Ha az Ön e-mail-címe konrads@contoso.com, akkor ravali@contoso.com és gustav@contoso2.com egyaránt újraoszthat, ha Ön engedélyezte számukra a megosztást.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/21/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 709518924fbb9d83201eb5c070b7a3e93838ec79
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: 7a1187373304387ac511053d241e5cfb31f7fcd9
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331942"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280581"
 ---
 # <a name="intro-to-dashboards-for-power-bi-designers"></a>Irányítópultok a Power BI szolgáltatás tervezői számára – bevezetés
 
@@ -48,15 +48,15 @@ A [jelentések](service-reports.md) hasonlítanak az irányítópultokra, mivel 
 | --- | --- | --- |
 | Oldalak |Egy oldal |Egy vagy több oldal |
 | Adatforrások |Egy vagy több jelentés és egy vagy több adatkészlet irányítópultonként |Egyetlen adatkészlet jelentésenként |
-| Elérhető a Power BI Desktopban |Nem |Igen, a ***létrehozók*** létrehozhatnak és megtekinthetnek jelentéseket a Desktopban |
+| Elérhető a Power BI Desktopban |Nem | Létrehozhatnak és megtekinthetnek jelentéseket a Power BI Desktopban |
 | Előfizetés |Feliratkozhat irányítópultra |Előfizethet jelentésoldalakra |
 | Szűrés |Nem lehet szűrni és szeletelni |Számos szűrési, kiemelési és szeletelési móddal rendelkezik |
 | Kiemelt |Kiválaszthat és beállíthat egy „kiemelt” irányítópultot |Nem hozhat létre kiemelt jelentést |
 | Kedvenc | Irányítópultokat *kedvencként* jelölhet meg | Jelentéseket *kedvencként* jelölhet meg
 | Riasztások beállítása |Bizonyos helyzetekben elérhető irányítópultok csempéihez |Nem érhető el a jelentésekből |
-| Természetes nyelven történő lekérdezések |Elérhető az irányítópultból |Nem érhető el a jelentésekből |
+| Természetes nyelven történő lekérdezések (Q&A) |Elérhető az irányítópultokon | Elérhető a jelentésekben |
 | Láthatja az alapul szolgáló adatkészlet-táblázatokat és -mezőket |Nem. Exportálhatja az adatokat, de magán az irányítópulton nem fogja látni a táblázatokat és a mezőket. |Igen. Láthatja az adatkészlet-táblázatokat, -mezőket és -értékeket. |
-| Testreszabás |Nem |Az olvasási nézetben közzétehet, beágyazhat, szűrhet és exportálhat adatokat, letöltheti őket .pbix-ként, megtekintheti a vonatkozó tartalmakat, QR-kódokat generálhat, exceles elemzést hajthat végre stb.  |
+
 
 ## <a name="next-steps"></a>Következő lépések
 * [Minta-irányítópultjaink](sample-tutorial-connect-to-the-samples.md) egyikének megtekintése révén megismerkedhet az irányítópultok használatával.
