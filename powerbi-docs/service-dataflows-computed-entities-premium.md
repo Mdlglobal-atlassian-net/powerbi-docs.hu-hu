@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8131722d0e035f28fcb88827b1a68c2da97959cb
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: b63b8a601040751cda81e022d571d3a0ed6d501f
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268094"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180668"
 ---
 # <a name="using-computed-entities-on-power-bi-premium-preview"></a>Számított entitások használata a Power BI Premiumban (előzetes verzió)
 
@@ -77,16 +77,21 @@ Ennyi az egész – az átalakítást nem a forrásadatokon, hanem az adatfolyam
 
 Fontos megjegyezni, hogy ha a munkaterületet eltávolítja a Power BI Premium-kapacitásból, a vele társított adatfolyam többé nem frissül. 
 
+A kifejezetten a vállalat Azure Data Lake Storage Gen2-fiókjában létrehozott adatfolyamok esetében a csatolt entitások és a számított entitások csak akkor működnek helyesen, ha ugyanabban a tárfiókban helyezkednek el. További információ: [Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
+
+Csatolt entitások a CDM-mappából létrehozott adatfolyamokhoz sem érhetők el. Lásd: [CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)](service-dataflows-add-cdm-folder.md).
 
 ## <a name="next-steps"></a>Következő lépések
 
 Ez a cikk a Power BI szolgáltatásban elérhető számított entitásokat és adatfolyamokat ismertette. Az alábbi cikkek szintén hasznosak lehetnek.
 
-
 * [Önkiszolgáló adatelőkészítés adatfolyamokkal](service-dataflows-overview.md)
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
 * [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
 * [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
+* [Munkaterület adatfolyam-beállításainak konfigurálása (előzetes verzió)](service-dataflows-configure-workspace-storage-settings.md)
+* [CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)](service-dataflows-add-cdm-folder.md)
+* [Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)

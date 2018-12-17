@@ -1,23 +1,25 @@
 ---
-title: Power BI-tartalom beágyazása alkalmazásokba kormányzati és szuverén felhőt használó ügyfelek számára
-description: Ismerje meg, hogyan integrálhat vagy ágyazhat be egy irányítópultot, csempét vagy jelentést egy webalkalmazásba a Power BI API-kkal az ügyfelei számára.
+title: Beágyazott analitika Power BI-tartalom beágyazásához egy alkalmazásba a kormányzati és szuverén felhők számára
+description: Útmutató jelentés, irányítópult vagy csempe alkalmazásba való integrálásához vagy beágyazásához az ügyfelek számára, a beágyazott analitikákhoz készült Power BI API-k használatával. Útmutató a Power BI alkalmazásba integrálásához beágyazott analitikai szoftver, beágyazott analitikai eszközök, vagy beágyazott üzleti intelligencia eszközök használatával.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 10/25/2018
-ms.openlocfilehash: 76b80ad296f2f595fb5014e13bbd48d414cd8bbe
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: aabf472e236f545fe51d4007dcd8fbdf36632931
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003156"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180622"
 ---
 # <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Oktatóanyag: Power BI-irányítópult, -csempe vagy -jelentés beágyazása az alkalmazásba szuverén felhők használata esetén
 
-Megtudhatja, hogyan ágyazhat be egy irányítópultot, csempét vagy jelentést a webalkalmazásaiba a Power BI .NET SDK-val és a Power BI JavaScript API-val, amikor az ügyfelei számára integrálja az adatokat.
+Elsajátíthatja analitikai tartalom beágyazását üzletifolyamat-alkalmazásaiba a szuverén felhő számára. A Power BI .NET SDK és a Power BI JavaScript API segítségével jelentést, irányítópultot vagy csempét ágyazhat be webalkalmazásába.
 
 A Power BI a szuverén (privát) felhőket is támogatja.
 
@@ -132,7 +134,7 @@ A REST API-hívások indításához az alkalmazásokat regisztrálja az Azure AD
 
 * A kínai felhőhöz készült Power BI – https://app.powerbi.cn/apps
 
-Ha letöltötte az [ügyfelek számára végzett beágyazási mintát](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), használja a regisztráció után kapott **applicationId** azonosítót, hogy a minta hitelesítést végezhessen az Azure AD-ben. A minta konfigurálásához módosítsa az **applicationId** azonosítót a *web.config* fájlban.
+Ha letöltötte az [ügyfelek számára végzett beágyazási mintát](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), használja a kapott **applicationId** azonosítót, hogy a minta hitelesítést végezhessen az Azure AD-ben. A minta konfigurálásához módosítsa az **applicationId** azonosítót a *web.config* fájlban.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>2. lépés – hozzáférési token lekérése az Azure AD-ből
 
@@ -227,7 +229,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>A beágyazási token létrehozása
 
-A JavaScript API segítségével létrehozhat egy beágyazási tokent. A beágyazási token a beágyazott elemre jellemző. Valahányszor Power BI-tartalmat ágyaz be, mindig létre kell hoznia egy új beágyazási tokent. További információt (beleértve a használandó **hozzáférési szintet**) az [Beágyazási Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) című cikkben talál.
+A JavaScript API segítségével létrehozhat egy beágyazási tokent. A beágyazási token a beágyazott elemre vonatkozik. Valahányszor Power BI-tartalmat ágyaz be, mindig létre kell hoznia egy új beágyazási tokent. További információt (beleértve a használandó **hozzáférési szintet**) az [Beágyazási Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) című cikkben talál.
 
 > [!IMPORTANT]
 > Mivel a beágyazási tokenek elsődlegesen fejlesztési és tesztelési célokra használhatók, a Power BI fő fiókja csak korlátozott mennyiségű tokent tud előállítani. Éles üzemi beágyazási helyzetekhez [kapacitást szükséges vásárolni](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical). Kapacitásvásárlás esetén nincs korlátja a beágyazási tokenek előállításának.

@@ -4,26 +4,27 @@ description: 'Project Online: kapcsolódás az adatokhoz a Power BI Desktopon ke
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3773f1cb13eb967c511245f57cf59c7159d68fba
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a0888c09a9d92123ba08c8cbc27ff8614b8c142a
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669888"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025627"
 ---
 # <a name="project-online-connect-to-data-through-power-bi-desktop"></a>Project Online: kapcsolódás az adatokhoz a Power BI Desktopon keresztül
 A Project Online-adatokhoz kapcsolódhat a Power BI Desktopon keresztül.
 
-### <a name="step-1-download-power-bi-desktop"></a>1. lépés: A Power BI Desktop letöltése
+## <a name="step-1-download-power-bi-desktop"></a>1. lépés: A Power BI Desktop letöltése
 1. [Töltse le a Power BI Desktopot](http://go.microsoft.com/fwlink/?LinkID=521662), majd futtassa a telepítőt, és telepítse a **Power BI Desktopot** a számítógépre.
 
-### <a name="step-2-connect-to-project-online-with-odata"></a>2. lépés: Kapcsolódás a Project Online-hoz az OData használatával
+## <a name="step-2-connect-to-project-online-with-odata"></a>2. lépés: Kapcsolódás a Project Online-hoz az OData használatával
 1. Nyissa meg a **Power BI Desktopot**.
 2. Az *üdvözlőképernyőn* válassza az **Adatok lekérése** lehetőséget.
 3. Válassza az **OData-csatorna**, majd a **Csatlakozás** lehetőséget.

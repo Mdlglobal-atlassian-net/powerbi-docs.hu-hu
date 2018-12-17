@@ -1,44 +1,42 @@
 ---
-title: Ingyenes és Pro szintű Power BI
-description: A Power BI felhasználói vagy ingyenes vagy Pro szintű felhasználók. Fontos megérteni a két felhasználótípus közötti különbségeket.
+title: Power BI-szolgáltatások funkciói licenctípus szerint
+description: 'A Power BI szolgáltatásban a felhasználók számára elérhető képességeket két licenctípus határozza meg: felhasználónkénti (ingyenes és Pro), és kapacitásalapú.'
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/13/2018
+ms.date: 12/06/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: 62d6a274b7cfb784f4f61b0973bad22ea6194698
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: fab6181997fd57448a152fe315efcadf076e4fbb
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641298"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025876"
 ---
-# <a name="power-bi-free-vs-pro"></a>Ingyenes és Pro szintű Power BI
+# <a name="power-bi-service-features-by-license-type"></a>Power BI-szolgáltatások funkciói licenctípus szerint
 
-A Power BI felhasználói vagy ingyenes vagy Pro szintű felhasználók. Fontos megérteni a két felhasználótípus közötti különbségeket.
+[!INCLUDE [license-capabilities](includes/license-capabilities.md)]
 
-A szolgáltatásban *minden felhasználó* besorolható az ingyenes vagy a Pro kategóriába. Az ingyenes és a Pro szintű felhasználók közötti különbség a megosztási és együttműködési lehetőségek eltérése. Csak a Pro szintű felhasználók tehetnek közzé tartalmat alkalmazás-munkaterületeken, használhatnak fel prémium szintű kapacitás nélküli alkalmazásokat, oszthatnak meg irányítópultokat, és iratkozhatnak fel irányítópultokra és jelentésekre. Az ingyenes felhasználók most az összes adatforráshoz kapcsolódhatnak minden kapcsolódási lehetőséggel, például a DirectQueryvel, az élő kapcsolatokkal és az adatátjáró használatával.
+## <a name="per-user-license-type-comparison"></a>Felhasználónkénti licenctípus összehasonlítása
 
-Ha egy alkalmazás közzé van téve, és az alkalmazás-munkaterülete Prémium-kapacitáshoz van hozzárendelve, ezeket az alkalmazásokat használhatják az ingyenes felhasználók.
-
-## <a name="free-vs-pro-comparison"></a>Az ingyenes és a Pro szintű felhasználók összehasonlítása
-Íme a két felhasználótípus által támogatott funkciók listája.
+Az alábbi felsorolás a felhasználónkénti licenctípus által támogatott funkciókat tartalmazza.
 
 |  | Ingyenes | Pro |
 | --- | --- | --- |
 | **Kapcsolódás több mint 70 adatforráshoz** |![Elérhető funkció](media/features-license-type/available.png) |![Elérhető funkció](media/features-license-type/available.png) |
 | **Webes közzététel** |![Elérhető funkció](media/features-license-type/available.png) |![Elérhető funkció](media/features-license-type/available.png) |
-| **Társközi megosztás** |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
 | **Exportálás PowerPointba, Excel, CSV** |![Elérhető funkció](media/features-license-type/available.png) |![Elérhető funkció](media/features-license-type/available.png) |
 | **Vállalati terjesztés** | | |
 | Alkalmazások |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
 | E-mail-előfizetés |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
 | API-k és vezérlők beágyazása |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
 | **Együttműködés** | | |
+| Társközi megosztás |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
 | Alkalmazás munkaterületei |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
 | Elemzés az Excelben, elemzés a Power BI Desktopban |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
 

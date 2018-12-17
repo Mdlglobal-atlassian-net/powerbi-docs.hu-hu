@@ -1,23 +1,23 @@
 ---
 title: Mik a lapszámozott jelentések a Power BI Premiumban? (Előzetes verzió)
-description: A lapszámozott jelentések nyomtathatók és megoszthatók. Elrendezésük pontosan vezérelhető. Minden adatot egy táblázatban jelenítenek meg, akkor is, ha az több oldalon keresztül fut.
+description: A lapszámozott jelentések, melyek az SQL Server Reporting Services szabványos jelentéstípusát képviselik már régóta, mostantól elérhetők a Power BI szolgáltatásban. Ezek a jelentések kinyomtathatók vagy megoszthatók. Elrendezésük pontosan vezérelhető. Minden adatot egy táblázatban jelenítenek meg, akkor is, ha az több oldalon keresztül fut.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 11/20/2018
+ms.date: 12/05/2018
 ms.author: maggies
-ms.openlocfilehash: 7a39d7b3bdbbd592afc6481c5936efc76569ad11
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: d79299f469062ec74c49ff4b7e9edda26c3409a3
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289220"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026121"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Mik a lapszámozott jelentések a Power BI Premiumban? (Előzetes verzió)
-A lapszámozott jelentések, melyek az SQL Server Reporting Services szabványos jelentéstípusát képviselik már régóta, mostantól elérhetők a Power BI szolgáltatásban. A lapszámozott jelentések nyomtatáshoz és megosztáshoz lettek kialakítva. Lapszámozottnak hívjuk őket, mert egy oldalon jól megjeleníthetők. Minden adatot egy táblázatban jelenítenek meg, akkor is, ha az több oldalon keresztül fut. Az oldalak elrendezése pontosan vezérelhető egészen az utolsó pixelig. A lapszámozott jelentések az SQL Server Reporting Services RDL-jelentéseinek technológiáján alapulnak. A Jelentéskészítő a lapszámozott jelentések létrehozásának különálló eszköze. 
+A lapszámozott jelentések, melyek az SQL Server Reporting Services szabványos jelentéstípusát képviselik már régóta, mostantól elérhetők a Power BI szolgáltatásban. Ezek a jelentések kinyomtathatók vagy megoszthatók. Lapszámozottnak hívjuk őket, mert egy oldalon jól megjeleníthetők. Minden adatot egy táblázatban jelenítenek meg, akkor is, ha az több oldalon keresztül fut. Az oldalak elrendezése pontosan vezérelhető egészen az utolsó pixelig. A lapszámozott jelentések az SQL Server Reporting Services RDL-jelentéseinek technológiáján alapulnak. A Jelentéskészítő a lapszámozott jelentések létrehozásának különálló eszköze. 
 
 A lapszámozott jelentések számos oldalból állhatnak. Ez a jelentés például 563 oldalas. Mindegyik oldal pontosan egy számlát tartalmaz, valamint ismétlődő fejlécekből és élőlábakból áll.
 
@@ -43,7 +43,7 @@ Az előzetes verziós időszakban további adatforrásokat adunk hozzá.
 
 ### <a name="create-paginated-reports-with-matrix-chart-and-free-form-layouts"></a>Lapszámozott jelentések létrehozása mátrixszal, diagrammal és szabad formátumú elrendezéssel
 
-Létrehozhat táblázatos jelentéseket oszlopalapú adatokhoz, mátrixjelentéseket (például kereszttáblás jelentéseket vagy kimutatásokat) összesített adatokhoz, valamint szabad formátumú *listajelentéseket* minden máshoz, például számlákhoz. 
+A táblázatos jelentések jól alkalmazhatók oszlopalapú adatok esetén. Az olyan mátrixjelentések, mint a lapközi vagy PivotTable-jelentések összegzett adatokhoz alkalmasak. A diagram jellegű jelentések grafikus formában mutatják be az adatokat, a kötetlen formájú *lista* jelentések pedig szinte bármi más, például számlák bemutatására is használhatók. 
   
 Az első lépést a Jelentéskészítő egyik varázslójában teheti meg. A táblázat, mátrix és diagram varázslói lépésenként bemutatják a beágyazott adatforrás-kapcsolat és adathalmaz létrehozását. Ezután mezők húzásával létrehozhat egy adathalmaz-lekérdezést, kiválaszthat egy elrendezést és stílust, valamint testreszabhatja a jelentést.  
   
@@ -66,7 +66,7 @@ A lapszámozott jelentést a böngészős Power BI szolgáltatásban és a Power
 
 Íme néhány funkció, amely nem támogatott az első megjelenéskor:
 
-- Jelentésoldalak és vizualizációk rögzítése a Power BI irányítópultjain.
+- Jelentésoldalak és vizualizációk rögzítése a Power BI irányítópultjain. Továbbra is rögzíthet vizualizációkat Power BI-irányítópultokra helyszíni lapszámozott jelentésből egy Power BI, vagy Reporting Services jelentéskészítő kiszolgálón. További információ: [Reporting Services-elemek rögzítése Power BI-irányítópultokra](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
 - Interaktív funkciók, például dokumentumtérképek és Megjelenítés/elrejtés gombok.
 - Segédjelentések és részletezések.
 - Előfizetések.
@@ -78,7 +78,7 @@ A lapszámozott jelentést a böngészős Power BI szolgáltatásban és a Power
 ## <a name="next-steps"></a>Következő lépések
 
 - [A Jelentéskészítő telepítése a Microsoft letöltőközpontból](http://go.microsoft.com/fwlink/?LinkID=734968)
-- [Oktatóanyag: Többoldalas jelentés készítése](paginated-reports-quickstart-aw.md)
+- [Oktatóanyag: Lapszámozott jelentés létrehozása](paginated-reports-quickstart-aw.md)
 - [Adatok megadása közvetlenül többoldalas jelentésben](paginated-reports-enter-data.md)
 
   

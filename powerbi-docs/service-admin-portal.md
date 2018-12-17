@@ -9,15 +9,16 @@ ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 663a6bb9629e98dabab9934c7647bba6f7c14cd4
-ms.sourcegitcommit: a13abdb5a6c0c6a397b328ec2d68788ce3afa866
+ms.openlocfilehash: 5f377f60935f23b62b90731c5d7bc16c8119ab83
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52268366"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026707"
 ---
-# <a name="power-bi-admin-portal"></a>Power BI felügyeleti portál
+# <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
 A felügyeleti portál segítségével kezelheti a szervezetéhez tartozó Power BI-*bérlőt*. A portál olyan lehetőségeket kínál, mint például a használati metrikák, hozzáférés az Office 365 felügyeleti központjához, valamint a beállítások.
 
@@ -105,11 +106,11 @@ Az alábbi képen a **Bérlői beállítások** lap első két szakasza láthat�
 
 A beállítások állapota háromféle lehet:
 
-* **A szervezeten belül sehol nem engedélyezett**: A munkahelyen senki sem használhatja az adott funkciót.
+* **A szervezeten belül sehol nem engedélyezett**: A szervezeten belül senki sem használhatja ezt a funkciót.
 
     ![Az összes le van tiltva beállítás](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-* **A szervezeten belül mindenhol engedélyezett**: A munkahelyen mindenki használhatja az adott funkciót.
+* **A szervezeten belül mindenhol engedélyezett**: A szervezeten belül mindenki használhatja ezt a funkciót.
 
     ![Az összes engedélyezve van beállítás](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 

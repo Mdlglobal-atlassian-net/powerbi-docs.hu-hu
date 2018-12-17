@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/17/2018
 ms.author: maggies
-ms.openlocfilehash: 7a5c60eea81eeb3a1f4e8a7f5b807fd8c7bfb6b5
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 694ae2cd6f77fbcf898a984b135fb65b9163a43b
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547246"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180990"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Jelentések vizsgálata a Power BI mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -105,6 +105,16 @@ Ha egy jelentésszerző hozzáadta a részletezés funkciót a vizualizációhoz
 Részletezés használatakor a vissza gomb visszaviszi a jelentés előző oldalára.
 
 Olvassa el, hogyan [adhat hozzá részletezést a Power BI Desktopban](../../desktop-drillthrough.md).
+
+## <a name="show-data-and-copy-values"></a>Adatok megjelenítése és az értékek másolása
+
+Ha egy telefonos jelentés egy vizualizációjának jobb felső sarkában a három pont (**...**) menüelemet, majd az **Adatok megjelenítése** lehetőséget választja, megtekintheti a vizualizáció hátterében álló adatokat.
+
+![Power BI mobil adatok megjelenítése menüpont](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.png)
+
+Hosszan a megjelenő táblázat egy cellájára koppintva felugrik a natív kijelölési és másolási menü, amelyből kiválaszthatja a táblázat adatai (vagy a teljes táblázat) másolását.
+
+![Részletező jelentés a Power BI Mobile-ban](./media/mobile-reports-in-the-mobile-apps/copy-data-table.png)
 
 ## <a name="next-steps"></a>Következő lépések
 * [Telefonra optimalizált Power BI-jelentések megtekintése és használata](mobile-apps-view-phone-report.md)

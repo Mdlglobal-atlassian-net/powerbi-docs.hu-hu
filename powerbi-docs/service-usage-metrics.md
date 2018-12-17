@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 53d39eaf7c615d2ed279e7c45330dacbdad7994a
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 1c6c0a803e77ead6d43c23ac2b12b305d5960ef7
+ms.sourcegitcommit: 2882b8962ed03c188257c042e537c76b052545c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830332"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53111542"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Használati metrikák irányítópultokhoz és jelentésekhez
 
@@ -172,19 +172,19 @@ Fontos tisztában lenni a használati metrikák és az auditnaplók összehasonl
 
 A használati metrikák és az auditnaplók esetleges eltérésein kívül a használati metrikákkal kapcsolatos alábbi kérdések és válaszok is hasznosak lehetnek felhasználók és rendszergazdák számára:
 
-K:    Nem tudok használati metrikát futtatni egy irányítópulton vagy jelentésen. V:    A használati metrikák csak olyan tartalmakon tekinthetők meg, amelyeknek Ön a tulajdonosa, vagy amelyekhez szerkesztési engedélye van.
+KÉRDÉS:    Nem tudok használati metrikát futtatni egy irányítópulton vagy jelentésen    Használati metrikát csak olyan tartalmon használhat, amelynek tulajdonosa, vagy amelyhez szerkesztési jogosultsága van.
 
-K:    Rögzíti a használati metrika a beágyazott irányítópultokon és jelentéseken keresztül történő megtekintéseket?
-V:    A használati metrikák jelenleg nem támogatják a használati adatok gyűjtését beágyazott irányítópultok, jelentések, valamint a [webes közzétételi](service-publish-to-web.md) folyamat esetében.          Ezekben az esetekben a meglévő webes elemző platformok használatát ajánljuk az üzemeltető alkalmazás vagy portál használatának nyomon követéséhez.
+KÉRDÉS:    Rögzíti a használati metrika a beágyazott irányítópultokon és jelentéseken keresztül történő megtekintéseket?
+VÁLASZ:    A használati metrikák jelenleg nem támogatják a használati adatok gyűjtését beágyazott irányítópultok, jelentések, valamint a [webes közzétételi](service-publish-to-web.md) folyamat esetében.          Ezekben az esetekben a meglévő webes elemző platformok használatát ajánljuk az üzemeltető alkalmazás vagy portál használatának nyomon követéséhez.
 
-K:    Semmilyen tartalmon sem tudok használati metrikát futtatni.
-V1:    Ezt a funkciót a rendszergazdák kikapcsolhatják a szervezeten belül.  Kérdezze meg a rendszergazdától, hogy ez-e a helyzet.
-V2:    A használati metrika a Power BI Pro funkciója.
+KÉRDÉS:    Semmilyen tartalmon sem tudok használati metrikát futtatni.
+VÁLASZ1:    Ezt a funkciót a rendszergazdák kikapcsolhatják a szervezeten belül.  Kérdezze meg a rendszergazdától, hogy ez-e a helyzet.
+VÁLASZ2:    A használati metrika a Power BI Pro funkciója.
 
-K:    Úgy látom, hogy az adatok nem naprakészek. Nem jelennek meg például a terjesztési módok, oldalak hiányoznak egy jelentésből, stb. V:    Az adatok frissülése akár 24 órát is igénybe vehet.
+KÉRDÉS:    Úgy látom, hogy az adatok nem naprakészek. Nem jelennek meg például a terjesztési módok, oldalak hiányoznak egy jelentésből, stb. VÁLASZ:    Az adatok frissülése akár 24 órát is igénybe vehet.
 
-K:    A munkaterületen négy jelentés van, de a használati metrikai jelentésben csak három látszik.
-V:    A használati metrikai jelentésben csak azok a jelentések (vagy irányítópultok) jelennek meg, amelyekhez az utolsó 90 napban hozzáfértek.  Ha egy jelentés (vagy irányítópult) nem jelenik meg, akkor valószínűleg több mint 90 napja használták utoljára.
+KÉRDÉS:    A munkaterületen négy jelentés van, de a használati metrikai jelentésben csak három látszik.
+VÁLASZ:    A használati metrikai jelentésben csak azok a jelentések (vagy irányítópultok) jelennek meg, amelyekhez az utolsó 90 napban hozzáfértek.  Ha egy jelentés (vagy irányítópult) nem jelenik meg, akkor valószínűleg több mint 90 napja használták utoljára.
 
 ## <a name="next-steps"></a>Következő lépések
 

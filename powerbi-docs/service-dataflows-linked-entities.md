@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b69b84c7c61227ef7a827722c86f54100bd2f3b7
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 258b526c08615a81f3cc940fc3b9f2fcda063a12
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268007"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180645"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Entitások csatolása adatfolyamok között a Power BI-ban (előzetes verzió)
 
@@ -32,6 +32,12 @@ A csatolt entitások **csak olvashatók**. Ha átalakításokat akar létrehozni
 A csatolt entitások frissítéséhez [Power BI Premium](service-premium.md) előfizetés szükséges. Csatolt entitások a Power BI Premium-kapacitásokban üzemeltetett munkaterületek bármely adatfolyamában elérhetők. A forrásadatfolyamra nem vonatkoznak korlátozások.
 
 A csatolt entitások csak új Power BI-munkaterületeken működnek megfelelően. Az [új Power BI-munkaterületekről](service-create-the-new-workspaces.md) további információ is rendelkezésére áll. A megfelelő működéshez minden csatolt adatfolyamnak új munkaterületen kell elhelyezkednie.
+
+> [!NOTE]
+> Az entitások meg vannak különböztetve az szerint, hogy standard, vagy számított entitások. A (többnyire egyszerűen entitásoknak nevezett) standard entitások egy külső adatforrást, például SQL-adatbázist kérdeznek le. A számított entitások prémium szintű kapacitást igényelnek a Power BI-ban, átalakításaikat pedig olyan adatokon futtatják, amelyek már a Power BI-tárolóban vannak. 
+>
+>Ekkor is hivatkozhat lekérdezésre, vagy kombinálhat több lekérdezést, ha adatfolyama nem prémium kapacitású munkaterületen van, de csak ha az átalakítások nem tárolón belüli átalakításként vannak definiálva. Az ilyen hivatkozásokat nevezzük standard entitásnak. Ehhez kapcsolja ki a hivatkozott lekérdezések **Betöltés engedélyezése** beállítását, hogy az adatok ne jelenjenek meg ténylegesen, és ne legyenek betöltve a tárolóba. Ettől kezdve hivatkozni tud a **Betöltés engedélyezése = hamis** lekérdezésekre, és csak azokra az eredményként előállt lekérdezésekre kell **Be** értékre állítania a **Betöltés engedélyezése** lehetőséget, amelyeket materializálni szeretne.
+
 
 ## <a name="how-to-link-entities-between-dataflows"></a>Entitások csatolása adatfolyamok között
 
@@ -87,10 +93,10 @@ Az alábbi cikkek hasznosak lehetnek adatfolyamok létrehozása, vagy a velük v
 * [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
 * [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
 
-A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információkat talál a következő cikkekben:
+A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)
 * [Ütemezett frissítés beállítása](refresh-scheduled-refresh.md)
 
-A Common Data Modellel kapcsolatos további információkat talál az annak áttekintését tartalmazó cikkben:
+A Common Data Modellel kapcsolatos további információt a témát áttekintő cikkben talál:
 * [Common Data Model – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
 

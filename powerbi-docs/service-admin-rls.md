@@ -9,13 +9,14 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.author: mblythe
 ms.date: 01/02/2018
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 920fa426f98098768583e07d8f2b6c9825bfad1b
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 466e91786dcb75f09db808306ba7d9d9f486718b
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578428"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025120"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sorszintű biztonság (RLS) a Power BI-ban
 
@@ -41,7 +42,7 @@ Az adatmodell biztonságának kezeléséhez a következő lépéseket hajthatja 
 1. Az adatmodellnél kattintson a **három pontra (…)**.
 2. Válassza a **Biztonság** elemet.
    
-   ![](media/service-admin-rls/rls-security.png)
+   ![Biztonsági szűrők alkalmazása mindkét irányba](media/service-admin-rls/rls-security.png)
 
 Ekkor megnyílik az RLS-oldal, ahol hozzárendelheti a tagokat a Power BI Desktopban létrehozott szerepkörökhöz. A Biztonság lehetőség csak az adatkészlet tulajdonosai számára érhető el. Ha az adatkészlet egy Csoporthoz tartozik, akkor a Biztonság lehetőséget csak a csoport rendszergazdái látják. 
 
@@ -53,17 +54,17 @@ Csak a Power BI Desktopon belül hozhat létre és módosíthat szerepköröket.
 
 A felvenni kívánt felhasználót, biztonsági csoportot vagy terjesztési listát az e-mail-cím vagy a név megadásával adhatja hozzá a szerepkörhöz. Csak cégen belüli tagot vehet fel. Power BI-ban létrehozott Csoportokat nem vehet fel.
 
-![](media/service-admin-rls/rls-add-member.png)
+![Tag felvétele](media/service-admin-rls/rls-add-member.png)
 
 A szerepkör neve vagy a Tagok melletti zárójelben a szerepkörhöz tartozó tagok számát is megtekintheti.
 
-![](media/service-admin-rls/rls-member-count.png)
+![Szerepkör tagjai](media/service-admin-rls/rls-member-count.png)
 
 ### <a name="remove-members"></a>Tagok eltávolítása
 
 A tagokat a nevük mellett látható X elemre kattintva távolíthatja el. 
 
-![](media/service-admin-rls/rls-remove-member.png)
+![Tag eltávolítása](media/service-admin-rls/rls-remove-member.png)
 
 ## <a name="validating-the-role-within-the-power-bi-service"></a>Szerepkör ellenőrzése a Power BI szolgáltatásban
 
@@ -72,15 +73,15 @@ Az adott szerepkör megfelelő működését a szerepkör tesztelésével ellen�
 1. Kattintson a szerepkör mellett látható **három pontra (...)**.
 2. Kattintson az **Adatok tesztelése szerepkörökként** elemre.
 
-![](media/service-admin-rls/rls-test-role.png)
+![Tesztelés szerepkörként](media/service-admin-rls/rls-test-role.png)
 
 Ekkor megjelennek a szerepkör számára elérhető jelentések. Ebben a nézetben nem jelennek meg irányítópultok. A felső kék sávban látható az éppen tesztelt szerepkör.
 
-![](media/service-admin-rls/rls-test-role2.png)
+![Megtekintés a következőként: <szerepkör>](media/service-admin-rls/rls-test-role2.png)
 
 A **Megtekintés a következőként** elemre kattintva más szerepköröket és szerepkör-kombinációkat is tesztelhet.
 
-![](media/service-admin-rls/rls-test-role3.png)
+![Más szerepkörök tesztelése](media/service-admin-rls/rls-test-role3.png)
 
 Megtekinthet adatokat konkrét személyként, vagy választhatja az elérhető szerepkörök kombinációját a működésük ellenőrzéséhez. 
 
@@ -95,13 +96,13 @@ Ha egy Power BI szolgáltatáson belüli alkalmazás-munkaterületen tesz közz�
 > [!WARNING]
 > Ha az alkalmazás-munkaterületet úgy konfigurálta, hogy a tagoknak szerkesztési engedélyük legyen, az RLS-szerepkörök nem fognak vonatkozni rájuk. A felhasználók az összes adatot megtekinthetik.
 
-![](media/service-admin-rls/rls-group-settings.png)
+![Csoportbeállítások](media/service-admin-rls/rls-group-settings.png)
 
 [!INCLUDE [include-short-name](./includes/rls-limitations.md)]
 
 [!INCLUDE [include-short-name](./includes/rls-faq.md)]
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 [Sorszintű biztonság (RLS) a Power BI Desktoppal](desktop-rls.md)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

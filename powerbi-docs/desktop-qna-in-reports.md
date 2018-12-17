@@ -1,21 +1,21 @@
 ---
 title: A Q&A használata a Power BI Desktopban
 description: Mostantól használhat természetes nyelvű lekérdezéseket a Power BI Desktop alkalmazásban, a Q&A segítségével
-author: davidiseminger
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
-ms.author: davidi
+ms.date: 12/05/2018
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8c0736728d1dfce5a571eb1950670bc9fc9fa1c1
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 4a9ab6173422ec2f897050b2f456847b342e9fa2
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670762"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026730"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>A Q&A használata a Power BI Desktopban a természetes nyelvű lekérdezések lehetővé tételéhez
 Hatékony eszköz a munkához, ha gyakori kifejezéseken és természetes nyelven alapuló kérdéseket tud feltenni az adataival kapcsolatban. Még hatékonyabb, ha az adatforrás válaszol is, és a **Power BI Desktop** alkalmazás Q&A szolgáltatása épp ezt teszi lehetővé.
@@ -25,9 +25,6 @@ Annak érdekében, hogy a Q&A sikeresen értelmezni tudja azt a nagyszámú kér
 > [!NOTE]
 > A Q&A csak az **importált** adatokat tartalmazó modellekkel való munka során érhető el. Az SSAS- és DirectQuery-modellekkel való élő kapcsolat nem támogatott.
 >
->
-
-> [!NOTE]
 > Ha a Windowsnak a Windows 10 előtti verzióját használja, a Q&A szolgáltatásnak a következő frissítésre van szüksége a C közös nyelvi futtatókörnyezethez. Megpróbálkozhat a Windows Update fontos frissítéseinek telepítésével, vagy manuálisan is telepítheti a szükséges összetevőt a Microsoft webhelyéről (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
 >
 >
@@ -49,11 +46,11 @@ Ha a modellből hiányoznak táblák közötti kapcsolatok, akkor sem a Power BI
 
 ## <a name="rename-tables-and-columns"></a>Táblák és oszlopok átnevezése
 
-A táblák és oszlopok neveinek megválasztása nagyon fontos a Q&A használatához. Ha például van egy *Ügyféllista* nevű táblája, mely az ügyfelek listáját tartalmazza, akkor a „Budapesti ügyféllista listázása” lekérdezést kell használnia a „Budapesti ügyfelek listázása” lekérdezés helyett. 
+A táblák és oszlopok neveinek megválasztása lényeges a Q&A használatához. Tegyük fel például, hogy egy *CustomerSummary* (Ügyfélösszegzés) nevű tábla az ügyfelei listáját tartalmazza. Ekkor például a „List the customer summaries in Chicago” (Listázd ki a chicagói ügyfélösszegzéseket) kérdést kell feltennie a „List the customers in Chicago” (Listázd ki a chicagói ügyfeleket) helyett. 
 
 Míg a Q&A képes például szavakra felosztani az elnevezéseket, illetve észlelni a többes számot, a Q&A feltételezi, hogy a táblák és az oszlopok neve pontosan tükrözi a tartalmukat.
 
-Lássunk egy újabb példát. Tegyük fel, hogy van egy *Személyzet* nevű táblánk, mely utóneveket és vezetékneveket, valamint alkalmazotti azonosítókat tartalmaz, illetve van egy *Alkalmazottak* nevű táblánk, mely tartalmazza az alkalmazotti azonosítókat, a beosztások azonosítóit, valamint a kezdési dátumokat. Ez ugyan érthető lehet a modellt ismerő személyek számára, de ha egy másik felhasználó feltesz egy kérdést az „alkalmazottak számát” illetően, akkor az „Alkalmazottak” táblában lévő sorok számát fogja megkapni válaszként, miközben valószínűleg nem erre volt kíváncsi, hiszen ez az összes alkalmazott által valaha is betöltött beosztások száma. Célszerű átnevezni ezeket a táblákat, hogy pontosan tükrözzék, mit is tartalmaznak.
+Lássunk egy újabb példát. Tegyük fel, hogy egy *Headcount* (Létszám) nevű tábla vezeték- és keresztneveket, valamint alkalmazotti azonosítókat tartalmaz. Egy másik, *Employees* (Alkalmazottak) nevű tábla alkalmazott-azonosítókat, feladatazonosítókat és kezdési dátumokat tartalmaz. Ez a struktúra érthető lehet a modellt ismerő személyek számára. Mások azonban feltehetik a „count the employees” (számold meg az alkalmazottakat) kérdést, és az „Employees” tábla sorainak számát kapják válaszul. Bizonyára nem ezt az eredményt várják, hiszen ez az összes alkalmazott összes feladatának darabszáma. Érdemesebb volna a tábláknak olyan nevet adni, amely valóban tükrözi a tartalmukat.
 
 **Módosítást igényel**
 
@@ -65,7 +62,7 @@ Lássunk egy újabb példát. Tegyük fel, hogy van egy *Személyzet* nevű táb
 
 ## <a name="fix-incorrect-data-types"></a>Helytelen adattípusok javítása
 
-Az importált adatokhoz helytelen adattípus lehet beállítva. A Q&amp;A a *sztringként* importált *dátum* és *szám* típusú oszlopokat például nem fogja dátumként, illetve számként értelmezni. Ügyeljen rá, hogy a megfelelő adattípust válassza a Power BI-modellben.
+Az importált adatokhoz helytelen adattípus lehet beállítva. A Q&A a *sztringként* importált *dátum* és *szám* típusú oszlopokat például nem dátumként, illetve számként értelmezi. Ügyeljen rá, hogy a megfelelő adattípust válassza a Power BI-modellben.
 
 ![válassza a megfelelő adattípust, hogy az adatok mindenképpen elérhetők legyenek a Q&A számára](media/desktop-qna-in-reports/desktop-qna_05.png)
 
@@ -77,7 +74,7 @@ A Power BI alapértelmezés szerint agresszíven aggregálja a numerikus oszlopo
 
 ## <a name="choose-a-data-category-for-each-date-and-geography-column"></a>Adatkategória választása a dátumot és földrajzi helyet tartalmazó oszlopokhoz
 
-Az **Adatkategória** beállítással az adattípuson kívül további szemantikai információt is megadhat az oszlopok tartalmával kapcsolatban. Egy egész számokat tartalmazó oszlopot elláthat például az Irányítószám jelöléssel, egy sztringeket tartalmazó oszlopot pedig Város, Megye, Régió vagy más hasonló jelöléssel. Ezeket az információkat a Q&A két lényeges módon használja: A vizualizációk kiválasztásához, valamint a nyelvi feldolgozáshoz.
+Az **Adatkategória** beállítással az adattípuson kívül további szemantikai információt is megadhat az oszlopok tartalmával kapcsolatban. Egy egész számokat tartalmazó oszlopot elláthat például az Irányítószám jelöléssel, egy sztringeket tartalmazó oszlopot pedig Város, Megye, Régió vagy más hasonló jelöléssel. Ezt az információt a Q&A két lényeges módon használja fel: A vizualizációk kiválasztására, és nyelvi beállításokhoz.
 
 Egyrészt a Q&A az **Adatkategória** információit figyelembe veszi annak megállapításánál, hogy milyen típusú vizualizációt kell használnia. Felismeri például, hogy azok az oszlopok, amelyeknél az **Adatkategória** dátum vagy idő, jellemzően jól alkalmazhatók vonaldiagramok vízszintes tengelyeként, illetve buborékdiagramok lejátszási tengelyeként. Emellett azt is feltételezi, hogy ha egy oszlop **Adatkategóriája** földrajzi, akkor az azt tartalmazó eredmény jól mutathat térképen megjelenítve.
 
@@ -94,15 +91,15 @@ A **Rendezés más oszlop alapján** tulajdonság lehetővé teszi, hogy egy osz
 
 ## <a name="normalize-your-model"></a>A modell normalizálása
 
-Ne aggódjon, nem fogjuk azt javasolni, hogy alakítsa át a teljes modellt. Vannak azonban olyan struktúrák, amelyek egyszerűen annyira nehezen értelmezhetők, hogy a Q&A nem fogja tudni jól használni őket. Ha elvégez néhány alapvető normalizálási teendőt a modell szerkezetén, a Power BI-jelentések felhasználhatósága jelentősen megnő, csakúgy mint a Q&A-eredmények pontossága.
+Ne aggódjon, nem fogjuk azt javasolni, hogy alakítsa át a teljes modellt. Egyes struktúrák azonban annyira bonyolultak, hogy a Q&A nem jól kezeli őket. Ha elvégez néhány alapvető normalizálási teendőt a modell szerkezetén, a Power BI-jelentések felhasználhatósága jelentősen megnő, csakúgy mint a Q&A-eredmények pontossága.
 
-Az általános követendő szabály a következő: Minden egyedi „dolognak”, amelyet a felhasználó megemlít, pontosan egyetlen modellbeli objektumnak (táblának vagy oszlopnak) kell megfelelnie. Tehát ha a felhasználók ügyfeleket említenek, akkor egyetlen *ügyfél* objektumnak kell szerepelnie a modellben. Ha pedig a felhasználók értékesítéseket említenek, akkor egyetlen *értékesítés* objektumnak kell szerepelnie. Egyszerűen hangzik, igaz? Az adatok kezdeti elrendezésétől függően valóban az lehet. Ha szüksége van rá, a **Lekérdezésszerkesztőben** rengeteg adatalakítási képességet elérhet, míg az egyszerűbb átalakítások közül sok elvégezhető egyszerűen a Power BI-modellben végzett számításokkal.
+Tartsa be a következő általános szabályt: Minden egyedi „dolognak”, amelyet a felhasználó megemlít, pontosan egyetlen modellbeli objektumnak (táblának vagy oszlopnak) kell megfelelnie. Tehát ha a felhasználók ügyfeleket említenek, akkor egyetlen *ügyfél* objektumnak kell szerepelnie a modellben. Ha pedig a felhasználók értékesítéseket említenek, akkor egyetlen *értékesítés* objektumnak kell szerepelnie. Egyszerűen hangzik, igaz? Az adatok kezdeti elrendezésétől függően valóban az lehet. Ha szüksége van rá, a **Lekérdezésszerkesztőben** rengeteg adatalakítási képességet elérhet, míg az egyszerűbb átalakítások közül sok elvégezhető egyszerűen a Power BI-modellben végzett számításokkal.
 
 Az alábbi szakaszokban ismertetünk néhány olyan gyakori átalakítást, amelyet elképzelhető, hogy végre kell hajtania.
 
 ### <a name="create-new-tables-for-multi-column-entities"></a>Új táblák létrehozása a többoszlopos entitásokhoz
 
-Ha több oszlop egyetlen különálló egységet jelképez egy nagyobb táblán belül, akkor ezeket az oszlopokat javasolt különválasztania egy önálló táblába. Ha például a *Cégek* táblában található Kapcsolattartó neve, Kapcsolattartó beosztása és Kapcsolattartó telefonszáma oszlop, akkor helyesebb, ha létrehoz egy különálló *Kapcsolattartók* táblát a Név, Beosztás és Telefonszám oszloppal, és összeköti azt a *Cégek* táblával. Ha így tesz, azzal nagyban megkönnyíti a felhasználók számára, hogy olyan kérdéseket tegyenek fel a kapcsolattartókra vonatkozóan, amelyek függetlenek azoktól a cégektől, melyeknek a kapcsolattartói, illetve a megjelenítést is rugalmasabbá teszi.
+Ha több oszlop egyetlen különálló egységet jelképez egy nagyobb táblán belül, akkor ezeket az oszlopokat javasolt különválasztania egy önálló táblába. Tegyük fel például, hogy a *Companies* (Vállalatok) táblában van egy Contact Name (Kapcsolattartó neve), egy Contact Title (Kapcsolattartó beosztása) és egy Contact Phone (Kapcsolattartó telefonszáma) oszlop. Jobb megoldás volna külön egy *Contacts* (Kapcsolattartók) táblában tárolni a neveket, beosztásokat és telefonszámokat, valamint a *Companies* táblára mutató hivatkozásokat. Ha így tesz, azzal megkönnyíti a felhasználók számára, hogy olyan kérdéseket tegyenek fel a kapcsolattartókra vonatkozóan, amelyek függetlenek azoktól a cégektől, melyeknek a kapcsolattartói, illetve a megjelenítést is rugalmasabbá teszi.
 
 **Módosítást igényel**
 
@@ -128,9 +125,9 @@ Tegyük fel például, hogy van egy *Ügyféldemográfia* nevű tábla egy Ügyf
 
 ### <a name="union-to-eliminate-partitioning"></a>Particionálás megszüntetése egyesítéssel
 
-Ha az adatait több táblára particionálta, vagy ha elforgatta több oszlop értékeit, akkor a felhasználók számos gyakori műveletet nehezen vagy egyáltalán nem fognak tudni végrehajtani. Vegyük példaként a táblák particionálásának egy gyakori módját: az *Értékesítések2000-2010* táblát és az *Értékesítések2011-2020* táblát. Ha az összes lényeges jelentés egy adott évtizedre korlátozódik, akkor valószínűleg meghagyhatja ezt a struktúrát a Power BI-jelentésekhez. A Q&A rugalmassága miatt azonban a felhasználók megfelelő választ fognak várni az „összes értékesítés évenként” típusú kérdésekre. Ahhoz, hogy ezek működjenek, egyetlen táblában kell egyesítenie az adatokat a Power BI-modellben.
+Ha az adatait több táblára particionálta, vagy ha elforgatta több oszlop értékeit, akkor a felhasználók számos gyakori műveletet nehezen vagy egyáltalán nem fognak tudni végrehajtani. Vegyük példaként a táblák particionálásának egy gyakori módját: az *Értékesítések2000-2010* táblát és az *Értékesítések2011-2020* táblát. Ha az összes lényeges jelentés egy adott évtizedre korlátozódik, akkor valószínűleg meghagyhatja ezt a struktúrát a Power BI-jelentésekhez. A Q&A rugalmassága miatt azonban a felhasználók megfelelő választ fognak várni az „összes értékesítés évenként” típusú kérdésekre. Ahhoz, hogy ez a lekérdezés működjön, egyetlen táblában kell egyesítenie az adatokat a Power BI-modellben.
 
-Hasonlóképpen vegyük egy átlagos elforgatott értékoszlop esetét: ilyen a *Könyvturné* tábla, mely a Szerző, a Könyv, illetve a Város1, a Város2 és a Város3 oszlopot tartalmazza. Ilyen struktúra esetén még a „könyvek száma városonként” típusú egyszerű kérdések sem értelmezhetők helyesen. A probléma megoldásához létre kell hoznia egy különálló *KönyvturnéVáros* táblát, mely a városok értékeit egyetlen oszlopban egyesíti.
+Hasonlóképpen vegyük egy átlagos elforgatott értékoszlop esetét: ilyen a *Könyvturné* tábla, mely a Szerző, a Könyv, illetve a Város1, a Város2 és a Város3 oszlopot tartalmazza. Ilyen struktúra esetén még a „könyvek száma városonként” típusú egyszerű kérdések sem értelmezhetők helyesen. Hogy a lekérdezés működhessen, hozzon létre egy különálló *BookTourCities* (KönyvTurnéVáros) táblát, mely a városok értékeit egyetlen oszlopban egyesíti.
 
 **Módosítást igényel**
 
@@ -142,7 +139,7 @@ Hasonlóképpen vegyük egy átlagos elforgatott értékoszlop esetét: ilyen a 
 
 ### <a name="split-formatted-columns"></a>Formázott oszlopok felosztása
 
-Ha az adatokat olyan forrásból importálja, amely formázott oszlopokat tartalmaz, a Power BI-jelentések (és a Q&A) nem fogják tudni elérni az oszlopok tartalmát annak elemzéséhez. Ha tehát van például egy **Teljes cím** nevű oszlop, mely tartalmazza a címet, a várost és az országot, akkor javasolt ezt felosztani egy Cím, egy Város és egy Ország oszlopra, hogy a felhasználók ezeket külön-külön is lekérdezhessék.
+Ha az adatokat olyan forrásból importálja, amely formázott oszlopokat tartalmaz, a Power BI-jelentések (és a Q&A) nem fogják tudni elérni az oszlopok tartalmát annak elemzéséhez. Ha tehát van például egy **Full Address** (Teljes cím) nevű oszlop, mely tartalmazza a címet, a várost és az országot, akkor javasolt ezt felosztani egy Cím, egy Város és egy Ország oszlopra, hogy a felhasználók ezeket külön-külön is lekérdezhessék.
 
 **Módosítást igényel**
 
@@ -169,7 +166,7 @@ A fentiekhez hasonlóan, ha az adatokat olyan forrásból importálja, amely tö
 
 ### <a name="denormalize-to-eliminate-inactive-relationships"></a>Inaktív kapcsolatok megszüntetése denormalizálással
 
-Az az egyetlen kivétel azon szabály alól, hogy „normalizálni jobb”, amikor egynél több úton is el lehet jutni egyik táblából egy másikba. Ha például van egy *Repülőjáratok* nevű táblája, mely az IndulóVárosAzonosítója és a CélvárosAzonosítója oszlopot egyaránt tartalmazza, és mindkettő a *Városok* táblához kapcsolódik, akkor ezen kapcsolatok egyikét inaktívnak kell jelölnie. Mivel a Q&A csak az aktív kapcsolatokat tudja használni, nem tudna kérdéseket feltenni vagy az induló városról, vagy pedig a célvárosról, attól függően, hogy melyik kapcsolatát inaktiválja. Ha ehelyett denormalizálja a városnevek oszlopait a *Repülőjáratok* táblában, akkor tud olyan kérdéseket feltenni, amelyek mind az induló városra, mind pedig a célvárosra utalnak.
+Az az egyetlen kivétel azon szabály alól, hogy „normalizálni jobb”, amikor egynél több úton is el lehet jutni egyik táblából egy másikba. Tegyük fel például, hogy van egy *Flights* (Repülőjáratok) nevű táblája, mely a SourceCityID (IndulóVárosAzonosítója) és a DestinationCityID (CélvárosAzonosítója) oszlopot egyaránt tartalmazza, és mindkettő a *Cities* (Városok) táblához kapcsolódik. Ilyen esetben ezen kapcsolatok egyikét inaktívnak kell jelölnie. Mivel a Q&A csak az aktív kapcsolatokat tudja használni, nem tud kérdéseket feltenni vagy az induló városról, vagy pedig a célvárosról, attól függően, hogy melyik kapcsolatát inaktiválja. Ha ehelyett denormalizálja a városnevek oszlopait a *Flights* táblában, akkor tud olyan kérdéseket feltenni, amelyek mind az induló városra, mind pedig a célvárosra utalnak.
 
 **Módosítást igényel**
 
@@ -183,7 +180,7 @@ Az az egyetlen kivétel azon szabály alól, hogy „normalizálni jobb”, amik
 
 Ez a lépés kifejezetten a Q&A szolgáltatásra vonatkozik (és általánosságban nem szükséges a Power BI-jelentésekhez). A felhasználók gyakran többféleképpen utalnak ugyanarra a dologra. Ilyen például az összes értékesítés, a nettó értékesítés és a teljes nettó értékesítés. A Power BI modellje lehetővé teszi, hogy hozzáadja ezeket a szinonimákat a modellben használt táblákhoz és oszlopokhoz. 
 
-Ez a lépés rendkívül fontos lehet. Még ha egyszerű táblaneveket és oszlopneveket is használ, a Q&A szolgáltatásban kérdéseket feltevő felhasználók a számukra logikus szavakat fogják használni, és nem az oszlopok előre megadott listájából választanak. Minél több hasznos szinonimát tud hozzáadni, annál jobb lesz a felhasználók élménye a jelentés használatakor. Szinonimák hozzáadásához a **Kapcsolatok** nézetben válassza a menüszalag Szinonimák gombját, az alábbi képen látható módon.
+Ez a lépés lényeges lehet. Még ha egyszerű táblaneveket és oszlopneveket is használ, a Q&A szolgáltatásban kérdéseket feltevő felhasználók a számukra logikus szavakat fogják használni, és nem az oszlopok előre megadott listájából választanak. Minél több hasznos szinonimát tud hozzáadni, annál jobb lesz a felhasználók élménye a jelentés használatakor. Szinonimák hozzáadásához a **Kapcsolatok** nézetben válassza a menüszalag Szinonimák gombját, az alábbi képen látható módon.
 
 ![Szinonimák felvétele a Q&A használatához](media/desktop-qna-in-reports/desktop-qna_21.png)
 

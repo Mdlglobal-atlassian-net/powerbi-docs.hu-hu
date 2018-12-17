@@ -5,14 +5,14 @@ services: power-bi
 author: mihart
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 11/09/2018
+ms.date: 11/12/2018
 ms.author: mihart
-ms.openlocfilehash: d8238ae96bb57c580c0b74725b105ad7f4332136
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: fd7974024fdbfce38b93f1598fa389ef71a47dd9
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508014"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026346"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -40,9 +40,9 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
  
 **alkalmazás-munkaterület** A Saját munkaterület kivételével a Power BI összes munkaterülete most már alkalmazás-munkaterületnek számít. A munkaterület tartalma becsomagolható egy Power BI-alkalmazásba. A prémium szintű kapacitásokon tárolt alkalmazás-munkaterületek megoszthatók az ingyenes licencekkel rendelkező felhasználókkal. A (Saját munkaterület alatti) személyes munkaterületek prémium szintű kapacitásokon üzemeltethetők.  
 
-**AppSource**
+**AppSource** Központosított online adattár, ahol letölthető irányítópultokat, jelentéseket, adathalmazokat és alkalmazásokat tallózhat és fedezhet fel.
 
-**ArcGIS for Power BI** Az ArcGIS egy leképezési és elemzési platform, amelyet az ESRI vállalat fejleszt. A Power BI vizualizációtárában foglalt vizualizáció neve ArcGIS for Power BI.
+**ArcGIS Maps for Power BI** Az ArcGIS egy leképezési és elemzési platform, amelyet az ESRI vállalat fejleszt. A Power BI vizualizációtárában foglalt vizualizáció neve ArcGIS Maps for Power BI.
 
 **hozzárendelés** [Power BI Premium] A munkaterületek dedikált kapacitásra vagy onnan való áthelyezésének művelete. A munkaterületek dedikált kapacitásokra való áthelyezésének leírására ne használja az előléptetés kifejezést, mivel ez azt sugallná, hogy a dedikált kapacitás felette áll a megosztott kapacitásnak.  
 
@@ -69,7 +69,7 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 **tartalomjegyzék** Egy alkalmazás tartalommutatója.
 
-**tartalomcsomag**
+**tartalomcsomag** Előrecsomagolt adathalmazok, jelentések és irányítópultok gyűjteménye. Már **alkalmazások**. Ismerkedjen meg az [új munkaterületi felhasználói felülettel](https://docs.microsoft.com/en-us/power-bi/service-create-the-new-workspaces). 
 
 **tartalom nézet**
 
@@ -92,11 +92,11 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 **adatmodell, Excel-adatmodell**
 
 
-**adatkészlet** vagy **adatforrás**
+**adatkészlet** vagy **adatforrás** Egy **adathalmaz** vizualizációk és jelentések létrehozásához használt adatok gyűjteménye.
 
 **dedikált kapacitás** [Power BI Premium] A Microsoft felhőalapú adatközpontjaiban, dedikált hardvereken futó adatmodellek, amelyekkel nagy léptékben is biztosítható az állandó teljesítmény. A BI-megoldások a Power BI-licenctől függetlenül a teljes cég számára elérhetők.
 
-**Desktop** Első előfordulásakor Power BI Desktop, utána csak Desktop.
+**Desktop** Első példány: A Power BI Desktop további említései: Asztal
 
 
 **rombusz** A Power BI Premium jelölése. Annak az ikonnak az alakja, amely azt jelzi, hogy egy adott munkaterület prémium szintű kapacitáson fut.
@@ -110,6 +110,8 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 **három pont** ...
 
 **beágyazási kód** Egy általános internetes szabvány. A Power BI-ban a beágyazási kódok létrehozásával és beillesztésével a felhasználó tartalmakat, például jelentésvizualizációkat helyezhet el a webhelyeken és blogokban.
+
+**Embedded** Lásd: Power BI Embedded. 
 
 **beágyazás** Olyan eljárás, amely a Power BI fejlesztői ajánlataiban az elemzések alkalmazásokba való integrálására szolgál a Power BI REST API-kkal és a Power SDK-val.
 
@@ -133,7 +135,7 @@ A dokumentációkban használható a Power BI-környezet (bérlő) kifejezés is
 
 ## <a name="g"></a>G
 
-**átjárók** vagy **helyszíni adatátjárók** Egy elem, amely biztosítja az összeköttetést a mögöttes adatforrásokkal. Gyors és biztonságos adatátvitelt biztosít a Power BI szolgáltatás és a frissítést támogató helyszíni adatforrások között. Általában az informatikai részleg felügyeli. helyszíni adatátjárók
+**átjárók** vagy **helyszíni adatátjárók** Egy elem, amely biztosítja az összeköttetést a mögöttes adatforrásokkal. Gyors és biztonságos adatátvitelt biztosít a Power BI szolgáltatás és a frissítést támogató helyszíni adatforrások között. Általában az informatikai részleg felügyeli. 
 
 ## <a name="h"></a>H
 **nagy adatsűrűségű vizualizációk** A Power BI által renderelhetőnél több adatponttal rendelkező vizualizációk. A Power BI az adatok mintavételezésével jeleníti meg az alakzatokat és a kiugró értékeket.
@@ -160,7 +162,7 @@ A kifejezés első előfordulásakor bal oldali navigációs menü, utána vagy 
 
 ## <a name="m"></a>M
 
-**mértékek** A Power BI Desktopban a DAX kóddal vagy gyorsmérőkkel írt egyéni számítások.
+**Mobilalkalmazás** Alkalmazások, melyek által a Power BI iOS, Android és Windows rendszerű eszközön is futtatható.
 
 **modellezés** [Power BI Desktop] A csatlakoztatott adatok előkészítése a Power BI-ban való használatra. Ez a különböző adatforrások táblái közötti kapcsolatok létrehozását, a mértékek létrehozását és a metrikák kiosztását jelenti.
 
@@ -180,6 +182,9 @@ A kifejezés első előfordulásakor bal oldali navigációs menü, utána vagy 
 ## <a name="o"></a>O
 
 **OneDrive Vállalati verzió** vagy **OneDrive** A OneDrive egy személyes fiók, míg a OneDrive Vállalati verzió munkahelyi fiókokhoz való.  
+
+**Helyszíni adatátjáró**
+
 
 
 ## <a name="p"></a>P
@@ -202,7 +207,7 @@ A kifejezés első előfordulásakor bal oldali navigációs menü, utána vagy 
 
 **Power BI**, **Power BI szolgáltatás**, **Power BI Desktop**, **Power BI Mobile**, néhány más Power BI-ajánlat. Az általános elnevezés a *Power BI*. Gyakran csak ezt használjuk a teljes terméknév, például a *Power BI szolgáltatás* vagy a *Power BI Mobile* helyett a terméknév első előfordulását követően.
 
-**Power BI Desktop** Röviden *Desktop*.
+**Power BI Desktop** Röviden *Desktop*. Az ingyenes Power BI Windows-alkalmazás, amelyet a helyi számítógépén telepíthet, és amellyel átalakítani és vizualizációkkal megjeleníteni kívánt adatokhoz csatlakozhat. Jelentéstervezők és rendszergazdák használják. További információ: [A Power BI bemutatása](../power-bi-overview.md).
 
 **Power BI Embedded** Az a termék, amellyel a fejlesztők beágyazhatják a Power BI-irányítópultokat és -jelentéseket az alkalmazásokba, webhelyekre és eszközökbe.
 
@@ -210,8 +215,9 @@ A kifejezés első előfordulásakor bal oldali navigációs menü, utána vagy 
 
 **Power BI Pro-licenc** Havidíjas felhasználói licenc, amely lehetővé teszi az irányítópultok létrehozását, az együttműködést a megosztott adatokon, az adatok automatikus naprakészen tartását, az adatok elérésének és használatának naplózását és szabályozását, valamint a tartalmak becsomagolását terjesztés céljából (Power BI-alkalmazások).
 
-**Power BI jelentéskészítő kiszolgáló** Egy, a Power BI Premium részeként elérhető vadonatúj SSRS-ajánlat, amely segítségével a cég elosztott, hibrid BI-rendszereket (felhőalapú és helyszíni környezetek kombinációját) alakíthatja ki.
-Az SQL Server Reporting Servicesen alapul, gazdag, lapozható jelentéskészítési funkciókat és mobil jelentéseket biztosít, és képes a Power BI Desktopban készített Power BI-jelentések kiszolgálására és továbbításukra a Power BI-mobilalkalmazásokba. A klasszikus SSRS továbbra is elérhető marad.
+**Power BI jelentéskészítő kiszolgáló** Egy, a Power BI Premium részeként elérhető vadonatúj SSRS-ajánlat, amely segítségével a cég elosztott, hibrid BI-rendszereket (felhőalapú és helyszíni környezetek kombinációját) alakíthatja ki. Az Embedded a Power BI-jelentések helyszíni tárolására és kezelésére kínál lehetőséget.
+
+**Power BI szolgáltatás** Online SaaS (szolgáltatott szoftver) szolgáltatás. További információ: [A Power BI bemutatása](../power-bi-overview.md).
 
 **Power BI szolgáltatás-összekötő** A Power BI Desktop-felhasználók ezzel az összekötővel csatlakozhatnak a Power BI szolgáltatásban lévő adatkészletekhez a Desktopból. A létrehozott modelleket több jelentésben és irányítópulton is felhasználhatják.
 

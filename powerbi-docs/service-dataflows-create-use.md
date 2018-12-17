@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d7e39d0ee048f51066783b1cc9c98333e0352dcf
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 9e7f43780048a222b9d024b39d983968f45c59f7
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268112"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180576"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Adatfolyamok létrehozása és használata a Power BI-ban (előzetes verzió)
 
@@ -143,6 +143,10 @@ Az ablak tetején található **keresősáv** használatával is gyorsan megtal�
 
 Ha a kijelölte az entitást, és a **Betöltés** gombra kattintott, az entitások a **Mezők** panelen tekinthetők meg a **Power BI Desktopban**. Megjelenésük és viselkedésük is megegyezik a más adathalmazokból származó **táblákéval**.
 
+## <a name="using-dataflows-stored-in-azure-data-lake-storage-gen2"></a>Azure Data Lake Storage Gen2-ben tárolt adatfolyamok használata
+
+Néhány vállalat szívesebben használ saját tárolót adatfolyamok létrehozására és kezelésére. Az adatfolyamok a követelmények betartása és a jogosultságok megfelelő kezelése mellett integrálhatók az Azure Data Lake Storage Gen2-vel. Rendelkezésre áll az ennek minden követelményét felölelő dokumentáció, kezdve az áttekintést nyújtó [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md) című dokumentummal.
+
 
 ## <a name="troubleshooting-data-connections"></a>Adatkapcsolat-hibák elhárítása
 
@@ -160,8 +164,9 @@ Ez a cikk arról szólt, hogyan hozhat létre saját **adatfolyamot**, illetve e
 * [Számított entitások használata a Power BI Premiumban (előzetes verzió)](service-dataflows-computed-entities-premium.md)
 * [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
 * [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
+* [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md)
 
-A Common Data Modellel kapcsolatos további információkért olvassa el a áttekintését tartalmazó cikket:
+A Common Data Modellel kapcsolatos további információt a témát áttekintő cikkben talál:
 * [Common Data Model – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
 * [További információ a Common Data Model-sémáról és -entitásokról a Githubon](https://github.com/Microsoft/CDM)
 

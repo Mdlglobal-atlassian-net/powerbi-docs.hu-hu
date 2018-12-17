@@ -1,21 +1,22 @@
 ---
 title: Power BI a jelentések felhasználói számára
-description: Most ismerkedik a Power BI-jal? Ismerkedjen meg a különféle termékekkel és szolgáltatásokkal, amelyek a Power BI-t alkotják, és megtudhatja, mi mindenre használhatja őket.
+description: Most ismerkedik a Power BI-jal? Megismerkedhet a Power BI funkcióival és képességeivel, és látni fogja, hogy mit tehet meg általuk mint Power BI-ügyfél vagy -végfelhasználó.
 author: mihart
 manager: kvivek
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: landing-page
-ms.date: 10/11/2018
+ms.date: 12/10/2018
 ms.author: mihart
 layout: landingpage
+ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: 566511622ffd167d3389ab0ba290671f577a759f
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: bd4592a8ba28277356f251c81906ac265c1759a2
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396575"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280880"
 ---
 # <a name="power-bi-for-consumers"></a>A Power BI felhasználók számára
 *Végfelhasználóként* vagy *felhasználóként* irányítópultokat, jelentéseket és alkalmazásokat kap munkatársaitól. Ezeket a tartalmakat a ***Power BI szolgáltatásban*** tudja áttekinteni és felhasználni üzleti döntések meghozatalához.
@@ -47,7 +48,7 @@ ms.locfileid: "49396575"
                                                                         <div class="cardText"> 
                                                                                       <h3>Ismerkedés a Power BI rendszerével</h3> 
                                                                                       <p></p>
-                                                                                            <a href="end-user-basic-concepts.md">Alapfogalmak</a><br/>
+                                                                                            <a href="end-user-basic-concepts.md">Az alapfogalmak megismerése</a><br/>
                                                                                             <a href="end-user-experience.md">Eligazodás a Power BI szolgáltatásban</a><br/> 
                                                                                             <a href="../power-bi-overview.md">A különböző Power BI-eszközök bemutatása</a><br/> 
                                                                                             <!--<a href="end-user-faq.md">FAQ: Frequently Asked Questions</a> -->
@@ -63,7 +64,7 @@ ms.locfileid: "49396575"
                                                                         <div class="cardText"> 
                                                                                       <h3>Feladatok haladóknak</h3> 
                                                                                       <p></p>
-                                                                                            <a href="end-user-q-and-a.md">Q&A keresőmező természetes nyelven</a><br/> 
+                                                                                            <a href="end-user-q-and-a.md">A természetes nyelvű Q&A keresőmező használatának elsajátítása</a><br/> 
                                                                                             <a href="end-user-focus.md">Megjelenítési beállítások módosítása</a><br/> 
                                                                                             <a href="end-user-report-filter.md">Ismerkedés a jelentésszűrők használatával</a><br> 
                                                                                             <a href="end-user-insights.md">Automatikus elemzések készítése</a><br/> 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/19/2018
+ms.date: 12/07/2018
 ms.author: maggies
-ms.openlocfilehash: 1d74ed5e39d73252d0779458d0ba8619908c99f2
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: a4914bf0fb6945bc5ee45bdf6559ca75bbd7c2b5
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565912"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180944"
 ---
 # <a name="install-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló telepítése
 
@@ -26,6 +26,10 @@ A Power BI jelentéskészítő kiszolgáló letöltéséhez látogasson el a [He
 
 ## <a name="before-you-begin"></a>Előkészületek
 Javasoljuk, hogy a Power BI jelentéskészítő kiszolgáló telepítése előtt tekintse át a [Power BI jelentéskészítő kiszolgáló telepítésének hardver- és szoftverkövetelményeit](system-requirements.md).
+
+ > [!IMPORTANT]
+ > Bár a Power BI jelentéskészítő kiszolgáló telepíthető írásvédett tartományvezérlővel (RODC-vel) rendelkező környezetben is, a Power BI jelentéskészítő kiszolgálónak a megfelelő működés érdekében hozzáféréssel kell rendelkeznie egy írható tartományvezérlőhöz. Ha a Power BI jelentéskészítő kiszolgáló csak egy írásvédett tartományvezérlőhöz (RODC-hez) fér hozzá, akkor hibákat tapasztalhat a szolgáltatás felügyelete során.
+
 
 ### <a name="power-bi-report-server-product-key"></a>Power BI jelentéskészítő kiszolgáló termékkulcsa
 

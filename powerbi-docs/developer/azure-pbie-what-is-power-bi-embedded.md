@@ -1,25 +1,26 @@
 ---
-title: Az Azure Power BI Embedded ismertetése | Microsoft Docs
-description: A Power BI Embeddeddel a független szoftverszállítók lenyűgöző vizualizációkat, jelentéseket és irányítópultokat adhatnak gyorsan alkalmazásaikhoz, így leegyszerűsíthetik a Power BI funkcióit.
+title: Az Azure Power BI Embedded és a beágyazott analitika ismertetése | Microsoft Docs
+description: A Power BI Embedded beágyazott analitika eszköznek készült, mellyel a független szoftverszállítók lenyűgöző vizualizációkat, jelentéseket és irányítópultokat adhatnak gyorsan alkalmazásaikhoz, így leegyszerűsíthetik a Power BI funkcióit. Útmutató beágyazott analitikai szoftver, beágyazott analitikai eszközök, vagy beágyazott üzleti intelligencia eszközök alkalmazásához a Power BI Embedded használatával.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.component: ''
 ms.devlang: csharp, javascript
 ms.topic: overview
-ms.reviewer: ''
-ms.date: 07/31/2018
-ms.openlocfilehash: b46508aeca35769fb27324fb20f502ac66cb55ab
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: 70cb8f72e5749f7eed70d4476f3af87e272813f4
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360332"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180691"
 ---
-# <a name="what-is-power-bi-embedded-in-azure"></a>A Power BI Embedded az Azure-ban ismertetése 
+# <a name="what-is-power-bi-embedded-in-azure"></a>A Power BI Embedded az Azure-ban ismertetése
 
-A Power BI Embedded a Power BI-funkciók használatát teszi egyszerűbbé független szoftverszolgáltatók és fejlesztők számára. A Power BI Embeddeddel lenyűgöző vizualizációkat, jelentéseket és irányítópultokat adhat gyorsan alkalmazásaihoz, így leegyszerűsítheti a Power BI funkcióit. A Microsoft Azure-on fejlesztett alkalmazásokhoz hasonlóan Machine Learning és IoT szolgáltatásokat is használ. A könnyen navigálható, alkalmazáson belüli adatfeltárás engedélyezésével a független szoftverszállítók ügyfelei gyors és tájékozott döntéseket hozhatnak.
+A Power BI Embedded a beágyazott analitikákkal a Power BI-funkciók használatát teszi egyszerűbbé független szoftverszolgáltatók és fejlesztők számára. A Power BI Embeddeddel lenyűgöző vizualizációkat, jelentéseket és irányítópultokat adhat gyorsan alkalmazásaihoz, így leegyszerűsítheti a Power BI funkcióit. A Microsoft Azure-on fejlesztett alkalmazásokhoz hasonlóan Machine Learning és IoT szolgáltatásokat is használ. A könnyen navigálható, alkalmazáson belüli adatfeltárás engedélyezésével a független szoftverszállítók ügyfelei gyors és tájékozott döntéseket hozhatnak.
 
 > [!VIDEO https://www.youtube.com/embed/iEHfUuoZseo]
 
@@ -27,7 +28,7 @@ A Power BI Embedded a Power BI-funkciók használatát teszi egyszerűbbé függ
 
 A Power BI Embeddeddel a független szoftverszállítók és a fejlesztők rugalmasabban ágyazhatnak be intelligenciát az alkalmazásaikba a Power BI API-k segítségével. A független szoftverszállítók és a fejlesztők minimális fejlesztési erőfeszítéssel érhetnek el gyorsabb piacra dobási időt, és megkülönböztethetik alkalmazásaikat a Microsoft világszínvonalú elemzőmotorjával. A fejlesztők hasonlóképp a megoldásukra fókuszálhatnak, hogy megfeleljenek az ügyfelek igényeinek, ahelyett, hogy vizuális elemzési funkciókat fejlesztenének. A Power BI Embeddeddel ezen kívül jól ismert fejlesztési környezetekben dolgozhat – a Visual Studióban és az Azure-ban.
 
-Már van beágyazott Power BI-tartalommal rendelkező alkalmazása, amely Power BI Premiumot használ? Ha Ön egy alkalmazásokat kínáló független szoftverszállító vagy fejlesztő, vagy egy ezeket felhasználó szervezet része, nincs szüksége további teendőre. Ezeket az alkalmazásokat megszakítás nélkül használhatja az ügyfeleivel együtt. Ha már van egy Power BI-beli munkaterület-csoportban fejlesztett alkalmazása, és ki szeretné használni az átszervezett API-felületet, valamint az új, kapacitásalapú Azure SKU-kat, migrálási segítséget a dokumentációban találhat.
+Már van beágyazott Power BI-tartalommal rendelkező alkalmazása, amely Power BI Premiumot használ? Ha Ön alkalmazásokat kínáló független szoftverszállító vagy fejlesztő, vagy egy ezeket felhasználó szervezet képviselője, nincs további teendője. Ezeket az alkalmazásokat megszakítás nélkül használhatja az ügyfeleivel együtt. Ha már van egy Power BI-beli munkaterület-csoportban fejlesztett alkalmazása, és ki szeretné használni az átszervezett API-felületet, valamint az új, kapacitásalapú Azure SKU-kat, migrálási segítséget a dokumentációban találhat.
 
 ## <a name="comparing-power-bi-embedded-with-power-bi-premium"></a>A Power BI Embedded és a Power BI Premium összehasonlítása
 
@@ -57,4 +58,4 @@ A kapacitáscsomópontokról további információt a [díjszabást ismertető l
 
 A Power BI Embedded-kapacitások létrehozásához tekintse meg a [Power BI Embedded-kapacitás az Azure Portalon való létrehozásával](azure-pbie-create-capacity.md) kapcsolatos cikket
 
-Power BI-tartalmak beágyazásához tekintse meg a [Power BI-irányítópultok, -jelentések és -csempék beágyazása](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/) című témakört.
+Power BI-tartalmak beágyazásának megkezdése előtt tekintse át a [Power BI-irányítópultok, -jelentések és -csempék beágyazása](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/) című témakört.

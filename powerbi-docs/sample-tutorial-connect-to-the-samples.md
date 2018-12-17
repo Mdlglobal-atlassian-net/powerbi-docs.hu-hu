@@ -1,37 +1,36 @@
 ---
-title: Power BI-példák használata
-description: Power BI-példák használata
+title: Csatlakozás a mintákhoz a Power BI szolgáltatásban
+description: Útmutató a minták telepítéséhez és felfedezéséhez a Power BI szolgáltatásban.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/23/2018
+ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 10ba57b203c100dffafa6563e85fd06b7af2eecb
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: fc27054b79497658249b49d832a81223987b7be8
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51718022"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180967"
 ---
-# <a name="the-power-bi-samples"></a>Power BI-példák
+#  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Csatlakozás a mintákhoz a Power BI szolgáltatásban
 
-Javasoljuk, hogy először [A Power BI mintaként használható adatkészletei](sample-datasets.md) cikket olvassa el. Ebben a cikkben megismerkedhet a mintákkal, azok beszerzésével, mentési helyével, használatával, valamint az egyes mintákhoz kapcsolódó történetekkel. Ha pedig már tisztában van az alapokkal, akkor térjen vissza ehhez az oktatóanyaghoz.   
+Ez az oktatóanyag az alábbi témákat ismerteti: 
+- Tartalomcsomag-minta importálása, a Power BI szolgáltatáshoz való hozzáadása, és a tartalom megnyitása. A *tartalomcsomagok* olyan típusú minták, ahol az adatkészlethez irányítópult és jelentés is mellékelve van. 
+- Nyissa meg a sample.pbix fájlt a Power BI Desktopban.
 
-### <a name="prerequisites"></a>Előfeltételek
+Ha több háttérismerettel szeretne belekezdeni, ajánlott először [A Power BI-hoz használható mintaadathalmazok](sample-datasets.md) című cikket elolvasni. Ebben a cikkben megismerkedhet a mintákkal, azok beszerzésével, mentési helyével, használatával, valamint az egyes mintákhoz kapcsolódó történetekkel. Ha pedig már tisztában van az alapokkal, akkor térjen vissza ehhez az oktatóanyaghoz.   
+
+## <a name="prerequisites"></a>Előfeltételek
 A minták elérhetőek a Power BI szolgáltatáshoz és a Power BI Desktophoz is. A lépésekhez a Kiskereskedelmi elemzési mintát fogjuk használni.
 
 Az ebben az oktatóanyagban használt *Kiskereskedelmi elemzési* minta tartalomcsomag irányítópultot, jelentést és adatkészletet is tartalmaz.
 Ahhoz, hogy megismerkedjen az adott tartalomcsomaggal és az ahhoz tartozó forgatókönyvvel, lehetséges, hogy először érdemes megtekintenie [a Kiskereskedelmi elemzési minta bemutatóját](sample-retail-analysis.md).
-
-## <a name="about-this-tutorial"></a>Az oktatóanyag ismertetése
-Ez az oktatóanyag az alábbi témákat ismerteti: 
-- Hogyan importálható tartalomcsomag-minta, hogyan adható hozzá a Power BI szolgáltatáshoz, és hogyan nyitható meg a tartalom. A *tartalomcsomagok* olyan típusú minták, ahol az adatkészlethez irányítópult és jelentés is mellékelve van. 
--  Hogyan nyitható meg a mintát tartalmazó .pbix-fájl a Power BI Desktopban.
-
 
 ## <a name="samples-and-power-bi-service"></a>Minták és a Power BI szolgáltatás
 

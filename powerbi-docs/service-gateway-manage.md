@@ -1,5 +1,5 @@
 ---
-title: Power BI-hoz készült átjáró kezelése
+title: Helyszíni Power BI-átjáró kezelése
 description: Útmutató átjáró kezeléséhez, hogy csatlakozhasson helyszíni adatokhoz a Power BI-ban.
 author: mgblythe
 manager: kfile
@@ -9,15 +9,16 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 04/18/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8369566712e24c035ac0ec07cc7d5a219041a400
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 21eaca02502ae67ba5ecddff8e1b8890e0a049af
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34755162"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026385"
 ---
-# <a name="manage-a-power-bi-gateway"></a>Power BI-átjáró kezelése
+# <a name="manage-a-power-bi-on-premises-gateway"></a>Helyszíni Power BI-átjáró kezelése
 
 Miután [telepítette a Power BI-adatátjárót](service-gateway-install.md), a követelményeknek megfelelően kezelheti azt. Ebben a témakörben elsajátíthatja, hogyan vehet fel és távolíthat el adatforrásokat és felhasználókat; indíthat újra átjárókat; és helyezhet át, állíthat vissza, vehet át és távolíthat el átjárókat. 
 

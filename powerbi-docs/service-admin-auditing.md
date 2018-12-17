@@ -9,13 +9,14 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: e64496461e7d81d3b39e9a8d7174a3e985d04002
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: cb508681950cd5bb585da1208683deb31c8b6e64
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850476"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026822"
 ---
 # <a name="using-auditing-within-your-organization"></a>Naplózás használata a cégnél
 
@@ -73,13 +74,13 @@ A naplók között kereshet dátumtartomány szerint a **Kezdő dátum** és a *
 
 Ha a dátumtartomány nagyobb 90 napnál, hibaüzenet jelenik meg. Ha a maximális értéket (90 napot) adta meg, **kezdődátumnak** a jelenlegi időt írja be. Ellenkező esetben hibaüzenet jelenik meg, mely szerint a kezdő dátum korábban van a záró dátumnál. Ha az elmúlt 90 napban kapcsolta be a naplózást, a dátumtartomány nem kezdődhet a naplózás bekapcsolásának napja előtt.
 
-![](media/service-admin-auditing/search-audit-log-by-date.png)
+![Keresés dátum szerint](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ## <a name="search-the-audit-logs-by-users"></a>Naplók keresése felhasználók szerint
 
 A naplóbejegyzések között kereshet adott felhasználók által elvégzett tevékenységeket. Ehhez írjon be egy vagy több felhasználónevet a **Felhasználók** mezőbe. A felhasználónév e-mail-címre hasonlít; ezzel a fiókkal jelentkezik be a felhasználó a Power BI-ba. Ha a szervezet minden felhasználójáról (és szolgáltatásfiókjáról) szeretne eredményt kapni, hagyja üresen a mezőt.
 
-![Keresés dátum szerint](media/service-admin-auditing/search-audit-log-by-user.png)
+![Keresés felhasználók szerint](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ## <a name="view-search-results"></a>Keresési eredmények megtekintése
 

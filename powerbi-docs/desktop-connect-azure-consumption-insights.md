@@ -1,21 +1,22 @@
 ---
-title: Kapcsolódás Azure Consumption Insights-adatokhoz a Power BI Desktopban (bétaverzió)
+title: Kapcsolódás Azure Consumption Insights-adatokhoz (bétaverzió)
 description: Könnyedén kapcsolódhat az Azure-hoz és használati elemzésekhez juthat hozzá a Power BI Desktop segítségével
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c770423b81c6d5cd4135539d8d44c3cc46f8b6fe
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 622a236ba2a240202a570a07e7b6abb201da9dde
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619609"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026786"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Kapcsolódás az Azure Consumption Insightshoz a Power BI Desktopban (bétaverzió)
 Az **Azure Consumption Insights** összekötő használatával a **Power BI Desktopból** kapcsolódhat az Azure-hoz, és részletes adatokat és információkat kérhet le cége Azure-szolgáltatáshasználatáról. Továbbá mértékeket, egyéni oszlopokat és vizualizációkat hozhat létre, amelyekkel jelentéseket készíthet és információkat oszthat meg cége Azure-használatáról. Az **Azure Consumption Insights** összekötő jelenleg bétaverzióban van, és később még változhat.
@@ -55,7 +56,7 @@ Miután megadta *hozzáférési kulcsát*, és kiválasztotta a **Csatlakozás**
 * **PriceSheets**: Egy regisztráció mérőnként érvényesíthető díjait tartalmazza.
 * **RICharges**: A fenntartott példányaival kapcsolatos utolsó 24 havi díjakat tartalmazza.
 * **RIRecommendations_Single**: Fenntartott példányok vásárlására vonatkozó javaslatokat tartalmaz az egy előfizetésen belül 7, 30 vagy 60 napon át tapasztalt használati trendek alapján.
-* **RIRecommendations_Shared**: Fenntartott példányok vásárlására vonatkozó javaslatokat tartalmaz az összes előfizetésben 7, 30 vagy 60 napon át tapasztalt használati trendek alapján.
+* **RIRecommendations_Shared**: Fenntartott példányok vásárlására vonatkozó javaslatokat tartalmaz az összes előfizetésen belül 7, 30 vagy 60 napon át tapasztalt használati trendek alapján.
 * **RIUsage**: Az utolsó hónapra vonatkozó fogyasztási részleteket tartalmaz meglévő fenntartott példányairól.
 * **Summaries**: Havi összegzést nyújt az egyenlegekről, új vásárlásokról, az Azure Marketplace-szolgáltatások díjairól, módosításokról és kerettúllépési díjakról.
 * **UsageDetails**: Egy előfizetés fogyasztott mennyiségeinek és a becsült díjainak részletezését tartalmazza.

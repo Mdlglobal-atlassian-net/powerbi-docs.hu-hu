@@ -9,13 +9,14 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: cedb3e1572fbf20a32abe4f28b38030539502124
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 8f9ab0a9a4beddf9be3fc933174f92ac4ae96a6b
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34238145"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026500"
 ---
 # <a name="office-365-dedicated-customers---known-issues"></a>Office 365 dedikált ügyfelek – ismert problémák
 A Power BI-támogatás mostantól az Office 365 dedikált ügyfelei számára is elérhető.  Ha Ön az Office 365 dedikált ügyfele, a Power BI használatához az ehhez kapcsolódó bérlőről jelentkezhet be. Jelenleg két ismert probléma van.
@@ -23,7 +24,7 @@ A Power BI-támogatás mostantól az Office 365 dedikált ügyfelei számára is
 ## <a name="groups"></a>Csoportok
 Ha a Csoport helyi menüben a **Tagok** vagy a **Naptár** elemre kattint, a rendszer a Posta alkalmazáshoz irányítja vissza.  A **Fájlok** és a **Beszélgetések** lehetőség az elvárt módon működik.
 
-![](media/service-admin-office-365-dedicated-known-issues/group-menu.png)
+![Csoport a Power BI-ból](media/service-admin-office-365-dedicated-known-issues/group-menu.png)
 
 ## <a name="iphone-app---sign-in-with-vanity-domain-leads-to-error"></a>iPhone-alkalmazás – hiba a személyes tartományról történő bejelentkezéskor
 Ha az iPhone-alkalmazásba személyes tartományról jelentkezik be, hibát tapasztalhat.
@@ -33,7 +34,7 @@ Ha az iPhone-alkalmazásba személyes tartományról jelentkezik be, hibát tapa
 
 A probléma megoldása érdekében a személyes tartomány helyett jelentkezzen be azzal az e-mail-címmel, amely akkor jelenik meg, ha a Power BI szolgáltatás felhasználó ikonjára kattint.
 
-![](media/service-admin-office-365-dedicated-known-issues/sign-in-address.png)
+![Bejelentkezési e-mail-cím](media/service-admin-office-365-dedicated-known-issues/sign-in-address.png)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

@@ -9,13 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/21/2018
+ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 451727d473b59afd362e4f31e8aef634d2168f83
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: cbfee8034639a65517f9adc57cc95dd1271e6044
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717631"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025442"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Mi az a Microsoft Power BI Premium?
 
@@ -45,11 +46,11 @@ Az alábbi táblázat a megosztott és a prémium szintű kapacitás közötti k
 |  | Megosztott kapacitás | Power BI Prémium-kapacitás |
 | --- | --- | --- |
 | **Frissítési időköz** |8/nap |48/nap |
-| **Dedikált hardverrel elkülönítve** |![](media/service-premium/not-available.png "Nem érhető el") |![](media/service-premium/available.png "Elérhető") |
+| **Dedikált hardverrel elkülönítve** |![Nem érhető el](media/service-premium/not-available.png) |![Elérhető](media/service-premium/available.png) |
 | _**Minden felhasználó**_ **számára elérhető vállalati terjesztés** | | |
-| Alkalmazások és megosztás |![](media/service-premium/not-available.png "Nem érhető el") |![](media/service-premium/available.png "Elérhető")<sup>1</sup> |
-| Beágyazott API-k és vezérlők |![](media/service-premium/not-available.png "Nem érhető el") |![](media/service-premium/available.png "Elérhető")<sup>2</sup> |
-| **Power BI-jelentések helyszíni közzététele** |![](media/service-premium/not-available.png "Nem érhető el") |![](media/service-premium/available.png "Elérhető") |
+| Alkalmazások és megosztás |![Nem érhető el](media/service-premium/not-available.png) |![Elérhető](media/service-premium/available.png) |
+| Beágyazott API-k és vezérlők |![Nem érhető el](media/service-premium/not-available.png) |![Elérhető](media/service-premium/available.png)<sup>2</sup> |
+| **Power BI-jelentések helyszíni közzététele** |![Nem érhető el](media/service-premium/not-available.png) |![Elérhető](media/service-premium/available.png) |
 | | | |
 
 *<sup>1</sup> További információkért lásd: [Funkciók a licenc típusa alapján](service-features-license-type.md).*  
@@ -117,7 +118,7 @@ A „lapszámozott jelentések” számítási feladat használata során a köv
 
 * **A lapszámozott jelentések nem elérhetők**: Ritkán előfordulhat, hogy a „lapszámozott jelentések” számítási feladat elérhetetlenné válik. Ilyen esetben a számítási feladat hibás állapotot jelez a felügyeleti portálon, a felhasználók pedig időtúllépést tapasztalnak a jelentés renderelése során. A probléma megoldásához tiltsa le, majd engedélyezze újra a számítási feladatot.
 
-## <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgáló
+## <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgálón
 
 A Power BI Premium azt is lehetővé teszi, hogy a cég a helyszínen futtassa a Power BI jelentéskészítő kiszolgálót. További információkat az [Első lépések a Power BI jelentéskészítő kiszolgálóval](report-server/get-started.md) című cikkben talál.
 

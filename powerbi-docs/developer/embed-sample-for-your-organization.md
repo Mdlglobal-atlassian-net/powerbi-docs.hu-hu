@@ -1,31 +1,32 @@
 ---
-title: Power BI tartalom beágyazása egy alkalmazásba a cége számára
-description: Ismerje meg, hogyan integrálhat vagy ágyazhat be egy jelentést, irányítópultot vagy csempét a szervezet számára egy webalkalmazásba a Power BI API-kkal.
+title: Beágyazott analitika Power BI-tartalom beágyazásához egy alkalmazásba a saját vállalat számára
+description: Útmutató jelentés, irányítópult vagy csempe alkalmazásba való integrálásához vagy beágyazásához a vállalat számára, a beágyazott analitikákhoz készült Power BI API-k használatával. Útmutató a Power BI alkalmazásba integrálásához beágyazott analitikai szoftver, beágyazott analitikai eszközök, vagy beágyazott üzleti intelligencia eszközök használatával.
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.topic: tutorial
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
-ms.custom: mvc
-ms.date: 10/17/2018
-ms.openlocfilehash: 92ed5530ba2e3e72ec4d4e7d7c317993bdf9c04b
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.topic: tutorial
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: 541e6e62ac075922cdb301343361ac328a3db28e
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396865"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180760"
 ---
-# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Oktatóanyag: Power BI-jelentés, -irányítópult vagy -csempe beágyazása egy alkalmazásba a szervezet számára
+# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Oktatóanyag: Power BI-jelentés, -irányítópult vagy -csempe beágyazása egy alkalmazásba a vállalat számára
 
-Az oktatóanyag bemutatja, hogyan integrálhat jelentéseket az alkalmazásokba. A Power BI .NET SDK és a Power BI JavaScript API segítségével beágyazza a Power BI-t egy alkalmazásba a szervezet számára. A Power BI-ban jelentéseket, irányítópultokat és csempéket ágyazhat be az alkalmazásokba **a felhasználó tulajdonában lévő adatokkal**. **A felhasználó az adatok tulajdonosa** forgatókönyv lehetővé teszi, hogy az alkalmazás kiterjessze a Power BI szolgáltatást.
+A **Power BI**-ban jelentéseket, irányítópultokat és csempéket ágyazhat be az alkalmazásokba a felhasználó tulajdonában lévő adatokkal. **A felhasználó az adatok tulajdonosa** forgatókönyv lehetővé teszi, hogy az alkalmazás kiterjessze a Power BI szolgáltatást a beágyazott analitika használatára. Az oktatóanyag bemutatja, hogyan integrálhat jelentéseket az alkalmazásokba. A Power BI .NET SDK és a Power BI JavaScript API segítségével beágyazza a Power BI-t egy alkalmazásba a vállalat számára.
 
 ![Power BI jelentés beágyazása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 Eben az oktatóanyagban az alábbi feladatokkal fog megismerkedni:
->[!div class="checklist"]
->* Alkalmazás regisztrálása az Azure-ban.
->* Ágyazzon be egy Power BI-jelentést egy alkalmazásba.
+> [!div class="checklist"]
+> * Alkalmazás regisztrálása az Azure-ban.
+> * Ágyazzon be egy Power BI-jelentést egy alkalmazásba.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -40,9 +41,9 @@ Első lépésként szüksége lesz egy Power BI Pro-fiókra és egy Microsoft Az
 
 Mielőtt jelentéseket, irányítópultokat és csempéket ágyazna az alkalmazásba, győződjön meg arról, hogy a környezete be van állítva a beágyazás engedélyezéséhez. A beállítás részeként tegye a következők egyikét:
 
-- Az első lépések gyors elsajátításához követheti a [beágyazáshoz szükséges telepítési eszköz](https://aka.ms/embedsetup/UserOwnsData) lépéseit, és letölthet egy mintaalkalmazást, amely végigvezeti Önt a környezet létrehozásán és egy jelentés beágyazásán.
+* Az első lépések gyors elsajátítása érdekében követheti a [beágyazáshoz szükséges telepítési eszköz](https://aka.ms/embedsetup/UserOwnsData) lépéseit, és letölthet egy mintaalkalmazást, amely végigvezeti Önt a környezet létrehozásán és egy jelentés beágyazásán.
 
-- Ha a környezet manuális létrehozása mellett dönt, hajtsa végre a következő szakaszok lépéseit.
+* Ha a környezet manuális létrehozása mellett dönt, hajtsa végre a következő szakaszok lépéseit.
 
 ### <a name="register-an-application-in-azure-active-directory"></a>Alkalmazás regisztrálása az Azure Active Directoryban
 
@@ -60,13 +61,13 @@ Regisztrálja az alkalmazást az Azure Active Directoryban, hogy hozzáférést 
 
     ![Új alkalmazás regisztrálása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
 
-4. Kövesse az utasításokat az új alkalmazás létrehozásához. A **felhasználó tulajdonában lévő adatokkal** az **Alkalmazástípus** mezőben adja meg a **Webalkalmazás/API** beállítást. Egy **Bejelentkezési URL-címet** is meg kell adnia, amelyet az Azure AD a jogkivonatválaszok visszaadására használ. Adja meg az alkalmazáshoz tartozó értéket. Például: `http://localhost:13526/`.
+4. Kövesse az utasításokat az új alkalmazás létrehozásához. A **felhasználó tulajdonában lévő adatokkal** az **Alkalmazástípus** mezőben adja meg a **Webalkalmazás/API** beállítást. Adjon meg egy **Bejelentkezési URL-címet**, amelyet az Azure AD a jogkivonatválaszok visszaadására használ. Adja meg az alkalmazáshoz tartozó értéket. Például: `http://localhost:13526/`.
 
     ![Alkalmazás létrehozása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-005.png)
 
 ### <a name="apply-permissions-to-your-application-within-azure-active-directory"></a>Engedélyek alkalmazása a saját alkalmazásra az Azure AD-ben
 
-Az alkalmazásregisztrációs oldalon megadottak mellett engedélyeket is kell adnia az alkalmazásnak. Az engedélyek megadásához jelentkezzen be egy globális rendszergazdai fiókkal.
+Engedélyeket adhat meg az alkalmazásnak azokon felül, amelyeket az alkalmazásregisztrációs oldalon megadott. Az engedélyek megadásához jelentkezzen be egy globális rendszergazdai fiókkal.
 
 ### <a name="use-the-azure-active-directory-portal"></a>Az Azure Active Directory portál használata
 
@@ -158,7 +159,7 @@ A tartalmak mintaalkalmazással történő beágyazásához kövesse az alábbi 
 
     ![User Owns Data alkalmazásminta](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Nyissa meg a **Cloud.config** fájlt a mintaalkalmazásban. Az alkalmazás sikeres futtatásához ki kell töltenie a következő mezőket: **ApplicationID** (Alkalmazásazonosító) és **ApplicationSecret** (Alkalmazás titkos kulcsa).
+2. Nyissa meg a **Cloud.config** fájlt a mintaalkalmazásban. Az alkalmazás sikeres futtatásához néhány mezőt ki kell töltenie: **ApplicationID** és **ApplicationSecret**.
 
     ![Cloud.config fájl](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
@@ -168,69 +169,69 @@ A tartalmak mintaalkalmazással történő beágyazásához kövesse az alábbi 
 
     1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 
-        ![Azure Portal irányítópultja](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+       ![Azure Portal irányítópultja](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
 
-    1. A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
+    2. A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
 
-        ![Alkalmazásregisztráció keresése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+       ![Alkalmazásregisztráció keresése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    1. Válassza ki azt az alkalmazást, amelynek használnia kell az **ApplicationID** azonosítót.
+    3. Válassza ki azt az alkalmazást, amelynek használnia kell az **ApplicationID** azonosítót.
 
-        ![Alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+       ![Alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    1. Egy GUID-ként listázott **alkalmazásazonosítónak** kell megjelennie. Használja ezt az **alkalmazásazonosítót** az alkalmazás **ApplicationID** mezőjében.
+    4. Egy GUID-ként listázott **alkalmazásazonosítónak** kell megjelennie. Használja ezt az **alkalmazásazonosítót** az alkalmazás **ApplicationID** mezőjében.
 
         ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    1. Az **ApplicationSecret**mező tartalmát az **Azure** **Alkalmazásregisztrációk** szakaszának **Kulcsok** részéből másolhatja be.
+    Az **ApplicationSecret**mező tartalmát az **Azure** **Alkalmazásregisztrációk** szakaszának **Kulcsok** részéből másolhatja be.
 
-    1. Az **ApplicationSecret** beszerzéséhez kövesse az alábbi lépéseket:
+    Az **ApplicationSecret** beszerzéséhez kövesse az alábbi lépéseket:
 
-        1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
+    1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 
-            ![Azure Portal](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+       ![Azure Portal](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
 
-        1. A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
+    2. A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
 
-            ![Alkalmazásregisztráció keresése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+       ![Alkalmazásregisztráció keresése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-        1. Válassza ki azt az alkalmazást, amelyhez használni kívánja az **ApplicationSecret** kulcsot.
+    3. Válassza ki azt az alkalmazást, amelyhez használni kívánja az **ApplicationSecret** kulcsot.
 
-            ![Alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+       ![Alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-        1. Kattintson a **Beállítások** elemre.
+    4. Kattintson a **Beállítások** elemre.
 
-            ![Beállítások kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
+       ![Beállítások kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
 
-        1. Válassza a **Kulcsok** lehetőséget.
+    5. Válassza a **Kulcsok** lehetőséget.
 
-            ![Kulcsok kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+       ![Kulcsok kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    1. A **Leírás** mezőbe írjon be egy nevet, és válasszon ki egy időtartamot. Ezután kattintson a **Mentés** gombra az alkalmazás **Értékének** lekéréséhez. Ha bezárja a **Kulcsok** panelt a kulcsérték mentése után, az értékmező csak rejtettként fog megjelenni. Ebben az esetben nem tudja lekérni a kulcsértéket. Ha elveszíti kulcsértéket, hozzon létre egy újat az Azure Portalon.
+    6. A **Leírás** mezőbe írjon be egy nevet, és válasszon ki egy időtartamot. Ezután kattintson a **Mentés** gombra az alkalmazás **Értékének** lekéréséhez. Ha bezárja a **Kulcsok** panelt a kulcsérték mentése után, az értékmező csak rejtettként fog megjelenni. Ebben az esetben nem tudja lekérni a kulcsértéket. Ha elveszíti kulcsértéket, hozzon létre egy újat az Azure Portalon.
 
-        ![Kulcsérték](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+          ![Kulcsérték](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
-    1. A **csoportazonosító** mezőbe írja be a Power BI szolgáltatásban lévő alkalmazás-munkaterület GUID azonosítóját.
+    7. A **csoportazonosító** mezőbe írja be a Power BI szolgáltatásban lévő alkalmazás-munkaterület GUID azonosítóját.
 
-        ![A csoportazonosító megadása](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+       ![A csoportazonosító megadása](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
-    1. A **jelentésazonosító** mezőbe írja be a Power BI szolgáltatásban lévő jelentés GUID azonosítóját.
+    8. A **jelentésazonosító** mezőbe írja be a Power BI szolgáltatásban lévő jelentés GUID azonosítóját.
 
-        ![A jelentésazonosító megadása](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+       ![A jelentésazonosító megadása](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
 3. Futtassa az alkalmazást:
 
-    1. Először is kattintson a **Futtatás** elemre a **Visual Studióban**.
+    Válassza a **Futtatás** lehetőséget a **Visual Studióban**.
 
-        ![Alkalmazás futtatása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
+    ![Alkalmazás futtatása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
 
-    1. Majd válassza a **Jelentés beolvasása** lehetőséget.
+    Majd válassza a **Jelentés beolvasása** lehetőséget.
 
-        ![Tartalom kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
+    ![Tartalom kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
 
-    1. Most megtekintheti a jelentést a mintaalkalmazásban.
+    Most megtekintheti a jelentést a mintaalkalmazásban.
 
-        ![A jelentés megtekintése az alkalmazásban](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
+    ![A jelentés megtekintése az alkalmazásban](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 ## <a name="embed-your-content-within-your-application"></a>Tartalom beágyazása az alkalmazásba
 

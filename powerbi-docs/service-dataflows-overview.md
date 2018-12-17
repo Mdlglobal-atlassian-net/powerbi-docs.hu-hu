@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 360ffdd61525244bd75e57c8c9c9aad25131a13d
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 92af01b7020f734f286d927650e58a5fea5d8047
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267989"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180829"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Önkiszolgáló adat-előkészítés a Power BI-ban (előzetes verzió)
 
@@ -28,7 +28,7 @@ A Power BI **adatfolyamokkal** segít szervezeteknek egységesíteni a különf�
 Az adatok entitásként vannak tárolva [a **Common Data Service-ben**](https://docs.microsoft.com/powerapps/common-data-model/overview), az Azure Data Lake Storage Gen2 részeként. Adatfolyamokat a Power BI szolgáltatással, alkalmazás-munkaterületeken hozhat létre és kezelhet.  
 
 > [!NOTE]
-> Az adatfolyamok funkció előzetes verzióban áll rendelkezésre, és az általánosan elérhetővé válás előtt módosulhat és frissülhet.
+> Az adatfolyamok előzetes verzióban állnak rendelkezésre, és az általánosan elérhetővé válás előtt módosulhatnak és frissülhetnek.
 
  
 Az **adatfolyamok** a **Common Data Service**, a Microsoft által kiadott szabványosított, moduláris, kiterjeszthető adatséma-gyűjtemény használatához lettek kialakítva, amellyel könnyebben fejleszthet, használhat és elemezhet adatokat. Ezzel a modellel szinte terhelés nélkül válthat adatforrásokról Power BI-irányítópultokra.
@@ -68,6 +68,7 @@ A Power BI-t úgy konfigurálhatja, hogy az adatfolyam adatait a szervezeti Azur
 
 A Power BI emellett sematikus, Common Data Service formátumú adatokat tartalmazó mappákhoz is csatlakozhat, amelyek a szervezet Azure Data Lake Storage-fiókjában találhatók. Ezek a mappák Azure-adatszolgáltatásokkal hozhatók létre. A mappákhoz való csatlakozással az elemzők zökkenőmentesen dolgozhatnak az adatokkal a Power BI-ban. 
 
+Az Azure Data Lake Storage Gen2 és az adatfolyamok integrációjáról, így a vállalati Azure Data Lake-ben elhelyezkedő adatfolyamok létrehozásáról az [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md) című cikkből tájékozódhat.
 
 ## <a name="dataflow-capabilities-on-power-bi-premium"></a>Adatfolyam-funkciók a Power BI Premiumban
 
@@ -105,9 +106,6 @@ Az üzleti adatok a **Common Data Service** szabványosított formátumában val
 * Adatfolyamok kezdeti lépései fejlesztőknek
 
 
-
-
-
 ## <a name="next-steps"></a>Következő lépések
 
 Ez a cikk áttekintést nyújtott a big data típusú adatok Power BI-beli önkiszolgáló adat-előkészítéséről és annak számos használati módjáról. A következő cikkekben részletes információkat találhat az adatfolyamok gyakori használati forgatókönyveiről. 
@@ -116,11 +114,12 @@ Ez a cikk áttekintést nyújtott a big data típusú adatok Power BI-beli önki
 * [Számított entitások használata a Power BI Premiumban (előzetes verzió)](service-dataflows-computed-entities-premium.md)
 * [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
 * [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
+* [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md)
 
-A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információkért olvassa el ezeket a cikkeket:
+A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)
 * [Ütemezett frissítés beállítása](refresh-scheduled-refresh.md)
 
-A Common Data Modellel kapcsolatos további információkért olvassa el a áttekintését tartalmazó cikket:
-* [Common Data Modell – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
+A Common Data Modellel kapcsolatos további információt a témát áttekintő cikkben talál:
+* [Common Data Model – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
 
