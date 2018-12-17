@@ -2,17 +2,18 @@
 title: Szószedet Power BI-felhasználóknak
 description: A Power BI számos új kifejezést használ, és az is előfordul, hogy régebbi kifejezések új értelmet nyernek. A szószedet segít abban, hogy megismerkedhessen a Power BI terminológiájával.
 services: power-bi
+ms.custom: seodec18
 author: mihart
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 11/12/2018
+ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: fd7974024fdbfce38b93f1598fa389ef71a47dd9
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: f0e81c72fde0275467c3a914d19e916dab604cce
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026346"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280788"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -42,7 +43,7 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 **AppSource** Központosított online adattár, ahol letölthető irányítópultokat, jelentéseket, adathalmazokat és alkalmazásokat tallózhat és fedezhet fel.
 
-**ArcGIS Maps for Power BI** Az ArcGIS egy leképezési és elemzési platform, amelyet az ESRI vállalat fejleszt. A Power BI vizualizációtárában foglalt vizualizáció neve ArcGIS Maps for Power BI.
+**ArcGIS for Power BI** Az ArcGIS egy leképezési és elemzési platform, amelyet az ESRI vállalat fejleszt. A Power BI vizualizációtárában foglalt vizualizáció neve ArcGIS for Power BI.
 
 **hozzárendelés** [Power BI Premium] A munkaterületek dedikált kapacitásra vagy onnan való áthelyezésének művelete. A munkaterületek dedikált kapacitásokra való áthelyezésének leírására ne használja az előléptetés kifejezést, mivel ez azt sugallná, hogy a dedikált kapacitás felette áll a megosztott kapacitásnak.  
 
