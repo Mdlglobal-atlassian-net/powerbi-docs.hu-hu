@@ -1,29 +1,30 @@
 ---
-title: Power BI tartalom beágyazása egy alkalmazásba az ügyfelek számára
-description: 'Útmutató: hogyan integrálhat vagy ágyazhat be jelentést, irányítópultot vagy csempét ügyfelei számára egy webalkalmazásba a Power BI API-kkal.'
+title: Beágyazott analitika Power BI-tartalom alkalmazásba való beágyazásához ügyfelei számára
+description: Útmutató jelentés, irányítópult vagy csempe alkalmazásba való integrálásához vagy beágyazásához az ügyfelek számára, a beágyazott analitikákhoz készült Power BI API-k használatával. Útmutató a Power BI alkalmazásba való integrálásához beágyazott analitikai szoftver, beágyazott analitikai eszközök vagy beágyazott üzletiintelligencia-eszközök használatával.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
-ms.custom: mvc
-ms.date: 10/17/2018
-ms.openlocfilehash: cb517d62e64e8ef17be07315112faac331b534d3
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: e396f46987ef14aac9361e8f7ef41e90b2d8383e
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452706"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180875"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Oktatóanyag: Power BI-jelentés, -irányítópult vagy -csempe beágyazása egy alkalmazásba a saját ügyfelek részére
 
-Az **Azure-beli Power BI Embedded** segítségével jelentéseket, irányítópultokat és csempéket ágyazhat be az alkalmazásokba **az alkalmazás tulajdonában lévő adatokkal**. **Az alkalmazás tulajdonában lévő adatok** esetében egy alkalmazás a Power BI-t használja beágyazott elemzőplatformként. Az **alkalmazás tulajdonában lévő adatok** használata rendszerint egy **ISV-fejlesztői** forgatókönyvben fordul elő. **ISV-fejlesztőként** létrehozhat olyan **Power BI**-tartalmakat, amelyek jelentéseket, irányítópultokat vagy csempéket jelenítenek meg egy teljes mértékben integrált és interaktív alkalmazásban anélkül, hogy a felhasználóknak Power BI-licenccel kelljen rendelkezniük. Ez az oktatóanyag bemutatja, hogyan integrálhat egy jelentést az ügyfelei által használt alkalmazásokba a **Power BI** .NET SDK és a **Power BI** JavaScript API segítségével, az **adatok az alkalmazáshoz tartoznak** elven, az **Azure-beli Power BI Embedded** használatával.
+Az **Azure-beli Power BI Embedded** segítségével jelentéseket, irányítópultokat és csempéket ágyazhat be alkalmazásokba az alkalmazás tulajdonában lévő adatokkal. **Az alkalmazás tulajdonában lévő adatok** esetében egy alkalmazás a Power BI-t használja beágyazott elemzőplatformként. **ISV-fejlesztőként** létrehozhat olyan Power BI-tartalmakat, amelyek jelentéseket, irányítópultokat vagy csempéket jelenítenek meg egy teljes mértékben integrált és interaktív alkalmazásban anélkül, hogy a felhasználóknak Power BI-licenccel kellene rendelkeznie. Ez az oktatóanyag bemutatja, hogyan integrálhat jelentést ügyfelei által használt alkalmazásokba a Power BI .NET SDK és a Power BI JavaScript API segítségével, az **Azure-beli Power BI Embedded** használatával.
 
 Az oktatóanyag a következőket ismerteti:
->[!div class="checklist"]
->* Alkalmazás regisztrálása az Azure-ban.
->* Ágyazzon be egy Power BI-jelentést egy alkalmazásba.
+> [!div class="checklist"]
+> * Alkalmazás regisztrálása az Azure-ban.
+> * Ágyazzon be egy Power BI-jelentést egy alkalmazásba.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -38,7 +39,7 @@ A kezdéshez szüksége van egy **Power BI Pro**-fiókra, amely a **fő fiókké
 
 Mielőtt jelentéseket, irányítópultokat vagy csempéket ágyazna az alkalmazásba, győződjön meg arról, hogy a környezete engedélyezi a beágyazást a Power BI-jal.
 
-Az első lépések gyors elsajátításához követheti a [beágyazáshoz szükséges telepítési eszköz](https://aka.ms/embedsetup/AppOwnsData) lépéseit, és letölthet egy mintaalkalmazást, amely végigvezeti Önt a környezet létrehozásán és egy jelentés beágyazásán.
+Az első lépések gyors elsajátítása érdekében követheti a [beágyazáshoz szükséges telepítési eszköz](https://aka.ms/embedsetup/AppOwnsData) lépéseit, és letölthet egy mintaalkalmazást, amely végigvezeti Önt a környezet létrehozásán és egy jelentés beágyazásán.
 
 Ha mégis a környezet manuális létrehozása mellett dönt, folytathatja az alábbiak szerint.
 
@@ -63,7 +64,7 @@ Az alkalmazás Azure Active Directoryban történő regisztrálása lehetővé t
 
 ### <a name="apply-permissions-to-your-application-within-azure-active-directory"></a>Engedélyek alkalmazása a saját alkalmazásra az Azure AD-ben
 
-További engedélyeket adhat meg az alkalmazásnak azokon felül, amelyeket az alkalmazásregisztrációs oldalon megadott. Jelentkezzen be a beágyazáshoz használt *fő* fiókkal. A fő fióknak globális rendszergazdai fióknak kell lennie.
+Az alkalmazásregisztrációs oldalon megadottak mellett további engedélyeket adhat meg az alkalmazásnak. Jelentkezzen be a beágyazáshoz használt *fő* fiókkal. A fő fióknak globális rendszergazdai fióknak kell lennie.
 
 ### <a name="use-the-azure-active-directory-portal"></a>Az Azure Active Directory portál használata
 
@@ -97,7 +98,7 @@ További engedélyeket adhat meg az alkalmazásnak azokon felül, amelyeket az a
 
 8. A **Szükséges engedélyek** listában kattintson az **Engedélyek megadása** elemre.
 
-    Az **Engedélyek megadása** műveletre azért van szükség, hogy a *fő fióknál* ne kelljen Azure AD-hozzájárulást kérni. Amennyiben globális rendszergazdai fiókkal végzi el a műveletet, a cég összes felhasználójának meg kell adnia az engedélyeket ehhez az alkalmazáshoz. Amennyiben a *fő fiókkal*, és nem a globális rendszergazdai fiókkal hajtja végre a műveletet, csak a *fő fiók* számára kell megadnia az engedélyeket ehhez az alkalmazáshoz.
+    Az **Engedélyek megadása** műveletre azért van szükség, hogy a *fő fióknál* ne kelljen Azure AD-hozzájárulást kérni. Ha globális rendszergazdai fiókkal végzi el a műveletet, az összes vállalati felhasználó részére meg kell adnia az engedélyeket ehhez az alkalmazáshoz. Ha a *fő fiókkal*, és nem a globális rendszergazdai fiókkal hajtja végre a műveletet, csak a *fő fiók* számára kell megadnia az engedélyeket ehhez az alkalmazáshoz.
 
     ![Engedélyek megadása a Szükséges engedélyek párbeszédpanelen](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
@@ -105,7 +106,7 @@ További engedélyeket adhat meg az alkalmazásnak azokon felül, amelyeket az a
 
 ### <a name="create-an-app-workspace"></a>Alkalmazás munkaterületének létrehozása
 
-Amikor beágyazza a jelentéseket, irányítópultokat vagy csempéket az ügyfelei számára, akkor egy alkalmazás-munkaterületen kell elhelyeznie a tartalmakat. A *fő* fióknak az alkalmazás-munkaterület rendszergazdai fiókjának kell lennie.
+Ha jelentéseket, irányítópultokat vagy csempéket ágyaz be az ügyfelek számára, akkor ezeket a tartalmakat egy alkalmazás-munkaterületre kell helyezni. A *fő* fióknak az alkalmazás-munkaterület rendszergazdai fiókjának kell lennie.
 
 1. Kezdjük a munkaterület létrehozásával. Kattintson a **munkaterületek** > **Alkalmazás-munkaterületek létrehozása** lehetőségre. Az Alkalmazás munkaterületének létrehozása elemnél helyezze el azokat a tartalmakat, amelyekhez az alkalmazásnak hozzá kell férnie.
 
@@ -115,7 +116,7 @@ Amikor beágyazza a jelentéseket, irányítópultokat vagy csempéket az ügyfe
 
     ![Munkaterület elnevezése](media/embed-sample-for-customers/embed-sample-for-customers-021.png)
 
-3. Néhány beállítást meg kell adnia. Ha **nyilvánosra** állítja a munkaterületet, a szervezet bármely tagja megtekintheti annak tartalmát. A **Privát** beállítás ezzel szemben azt jelenti, hogy a munkaterület tartalmát csak a tagok láthatják.
+3. Néhány beállítást meg kell adnia. Ha **nyilvánosra** állítja a munkaterületet, a szervezet bármely tagja megtekintheti annak tartalmát. Ha a **Privát** beállítást választja, a munkaterület tartalmát csak annak tagjai láthatják.
 
     ![Privát/Nyilvános](media/embed-sample-for-customers/embed-sample-for-customers-022.png)
 
@@ -214,7 +215,7 @@ Bár a tartalombeágyazás lépései elvégezhetők a [Power BI REST API-kkal](h
 
 Az ügyfelek számára történő beágyazáshoz a fő fióknak egy **hozzáférési jogkivonatra** van szüksége az **Azure AD-ből**. Mielőtt hívásokat intézhetne a [Power BI REST API-khoz](https://docs.microsoft.com/rest/api/power-bi/), be kell szereznie egy [Azure AD hozzáférési jogkivonatot](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) az **alkalmazás tulajdonában lévő adatokat** használó Power BI-alkalmazáshoz.
 
-A Power BI-ügyfél **hozzáférési jogkivonattal** való létrehozásához célszerű létrehozni a Power BI-ügyfélobjektumot, amely lehetővé teszi a [Power BI REST API-k](https://docs.microsoft.com/rest/api/power-bi/) használatát. Ehhez a **hozzáférési tokent** a ***Microsoft.Rest.TokenCredentials*** objektummal kell tördelni.
+A Power BI-ügyfél **hozzáférési jogkivonattal** való létrehozásához célszerű létrehozni a Power BI-ügyfélobjektumot, amely lehetővé teszi a [Power BI REST API-k](https://docs.microsoft.com/rest/api/power-bi/) használatát. A Power BI-ügyfél létrehozásához az **AccessToken** hozzáférési jogkivonatot a ***Microsoft.Rest.TokenCredentials*** objektummal kell becsomagolni.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -223,7 +224,7 @@ using Microsoft.PowerBI.Api.V2;
 
 var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 
-// Create a Power BI Client object. It is used to call Power BI APIs.
+// Create a Power BI Client object. it's used to call Power BI APIs.
 using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 {
     // Your code to embed items.
@@ -251,7 +252,7 @@ Report report = reports.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>A beágyazási token létrehozása
 
-Létre kell hozni egy beágyazási tokent, amely a JavaScript API-ból használható. A beágyazási token a beágyazott elemre jellemző. Ez azt jelenti, hogy amikor Power BI-tartalmat ágyaz be, mindig létre kell hoznia egy új beágyazási tokent. További információt (beleértve a használandó **hozzáférési szintet**) a [GenerateToken API-ban](https://msdn.microsoft.com/library/mt784614.aspx) talál.
+Generált egy beágyazási tokent, amely a JavaScript API-ból használható. A beágyazási token a beágyazott elemre vonatkozik. Ez azt jelenti, hogy amikor Power BI-tartalmat ágyaz be, mindig létre kell hoznia egy új beágyazási tokent. További információt (beleértve a használandó **hozzáférési szintet**) a [GenerateToken API-ban](https://msdn.microsoft.com/library/mt784614.aspx) talál.
 
 Íme egy példa egy jelentéshez készült beágyazási token az alkalmazáshoz való hozzáadásáról.
 
@@ -274,13 +275,13 @@ var embedConfig = new EmbedConfig()
 };
 ```
 
-Ez feltételezi, hogy létrejött egy osztály az **EmbedConfig** és a **TileEmbedConfig** elemekhez. Ezek mintái a **Models\EmbedConfig.cs** és a **Models\TileEmbedConfig.cs** fájlban érhetők el.
+Létrejött egy osztály az **EmbedConfig** és a **TileEmbedConfig** elemekhez. Minta a **Models\EmbedConfig.cs** és a **Models\TileEmbedConfig.cs** fájlban érhető el.
 
 ### <a name="load-an-item-using-javascript"></a>Elem betöltése a JavaScript használatával
 
 A JavaScript használatával egy jelentést tölthet be a div elembe a weblapon.
 
-A JavaScript API teljes körű mintáját a [Playground eszköz](https://microsoft.github.io/PowerBI-JavaScript/demo) segítségével használhatja. Ez az eszköz lehetőséget ad a Power BI Embedded különböző mintáinak gyors kipróbálására. A JavaScript API-ról a [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) oldalon talál további információkat.
+A JavaScript API teljes körű mintáját a [Playground eszköz](https://microsoft.github.io/PowerBI-JavaScript/demo) segítségével használhatja. Ez a demókörnyezeti eszköz lehetőséget ad a Power BI Embedded különböző mintáinak gyors kipróbálására. A JavaScript API-ról a [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) oldalon talál további információkat.
 
 Íme egy minta, amely az **EmbedConfig** és a **TileEmbedConfig** modellt használja egy jelentés nézeteivel együtt.
 
@@ -329,7 +330,7 @@ A JavaScript API teljes körű mintáját a [Playground eszköz](https://microso
 
 ## <a name="move-to-production"></a>Átállás éles üzemre
 
-Most, hogy elkészült az alkalmazás fejlesztésével, ideje dedikált kapacitással ellátni az alkalmazás munkaterületét. Az éles üzemre való átálláshoz ez kötelező lépés.
+Most, hogy elkészült az alkalmazás fejlesztésével, ideje dedikált kapacitással ellátni az alkalmazás-munkaterületet. Az éles üzemre való átálláshoz ez kötelező lépés.
 
 ### <a name="create-a-dedicated-capacity"></a>Dedikált kapacitás létrehozása
 
@@ -348,13 +349,13 @@ Az alábbi táblázatból megtudhatja, milyen kapacitású Power BI Embedded-kap
 
 **_A termékváltozatokkal nem férhet hozzá a Power BI-tartalmakhoz INGYENES Power BI-licenccel._**
 
-A PRO licenccel a beágyazási tokenek elsődlegesen fejlesztési tesztelésre használhatók, a Power BI fő fiókja csak korlátozott mennyiségű tokent tud előállítani. Éles környezetben használt beágyazásokhoz dedikált kapacitást kell vásárolnia. Dedikált kapacitásokkal nincs korlátja a beágyazási tokenek előállításának. Az [Elérhető szolgáltatások](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) oldalon ellenőrizheti a használati értéket, amely százalékosan jelzi az aktuális beágyazott használatot. A használati mennyiséget fő fiókonként számoljuk.
+A PRO licenccel a beágyazási tokenek elsődlegesen fejlesztési tesztelésre használhatók, a Power BI fő fiókja csak korlátozott mennyiségű tokent tud előállítani. Éles környezetben használt beágyazásokhoz dedikált kapacitás szükséges. Dedikált kapacitásokkal nincs korlátja a beágyazási tokenek előállításának. Az [Elérhető szolgáltatások](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) oldalon ellenőrizheti a használati értéket, amely százalékosan jelzi az aktuális beágyazott használatot. A használati mennyiséget fő fiókonként számoljuk.
 
-További részletekért tekintse meg az [Embedded elemzési kapacitásának tervezésével kapcsolatos tanulmányt](https://aka.ms/pbiewhitepaper).
+További információ: [Tanulmány a beágyazott analitikai kapacitás tervezéséről](https://aka.ms/pbiewhitepaper).
 
 ### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Alkalmazás-munkaterület hozzárendelése dedikált kapacitáshoz
 
-A dedikált kapacitás létrehozása után hozzárendelheti az alkalmazás-munkaterületet ehhez a kapacitáshoz. Ehhez kövesse az alábbi lépéseket.
+A dedikált kapacitás létrehozása után hozzárendelheti az alkalmazás-munkaterületet ehhez a kapacitáshoz. Dedikált kapacitást a következő lépésekkel rendelhet hozzá munkaterülethez.
 
 1. A **Power BI szolgáltatásban** bontsa ki a munkaterületeket, és kattintson a három pont elemre azon munkaterület mellett, amelyiket tartalombeágyazáshoz használ. Válassza a **Munkaterületek szerkesztése** lehetőséget.
 
