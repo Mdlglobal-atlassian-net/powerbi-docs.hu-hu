@@ -1,24 +1,25 @@
 ---
-title: Adatelemzések automatikus generálása a Power BI-jal
-description: Ismerje meg, hogyan kaphat elemzési információkat az adatkészletekről és az irányítópult-fájlokról.
+title: Elemzések futtatása és megtekintése irányítópult-csempéken
+description: Power BI-végfelhasználóként érdemes elsajátítania az irányítópult-csempék elemzési eredményeinek megállapítását.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f68e962eacf04005d83ec0def10cf8e0e24f6e10
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: dd59f572da6bb3b62fa142ea7b7eab4aef5a3466
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112038"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180530"
 ---
-# <a name="automatically-generate-data-insights-with-power-bi"></a>Adatelemzések automatikus generálása a Power BI-jal
+# <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Adatelemzési eredmények megtekintése irányítópult-csempéken a Power BI-jal
 Az irányítópulton található vizualizációs csempék mindegyike nagyszerű lehetőséget biztosít az adatfeltárással való ismerkedéshez. Ha rákattint egy csempére, megnyílik egy jelentés, amelyben szűrheti és rendezheti a jelentés alapjául szolgáló adathalmazt, és részletes elemzést végezhet rajta. Elemzések futtatásakor pedig a Power BI elvégzi Ön helyett az adatok felderítését.
 
 A Gyors elemzéseket futtatva érdekes interaktív vizualizációkat hozhat létre adataiból. Gyors elemzéseket futtathat az irányítópult adott csempéin, és még az elemzéseken is futtathat elemzést!
@@ -40,7 +41,9 @@ Ha az irányítópult egyik csempéjén futtat elemzéseket, a Power BI megkeres
 4. Felkeltette valamelyik elemzés az érdeklődését? Az adott elemzéskártyát kiválasztva az adatok mélyebb szintjére is leáshat. A kiválasztott elemzés a bal oldalon fog megjelenni, az új, kizárólag az adott elemzés adatain alapuló új elemzéskártyák pedig a jobb oldalon.    
 
  ## <a name="interact-with-the-insight-cards"></a>Az elemzéseket megjelenítő kártyák interaktív használata
-   * Vizualizációk szűrése.  A szűrők megjelenítéshez a jobb felső sarokban látható nyilat választva nyithatja meg a Szűrők panelt.
+Egy elemzés megnyitása után folytathatja a felderítést.
+
+   * A vizualizációt a vásznon szűrheti.  A szűrők megjelenítéshez a jobb felső sarokban látható nyilat választva nyithatja meg a Szűrők panelt.
 
      ![elemzés és a Szűrők menü kibontva](./media/end-user-insights/power-bi-insights-on-insights.png)
    
