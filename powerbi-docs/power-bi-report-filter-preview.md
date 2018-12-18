@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/05/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 3d4bcff012a8abb53d82dea2a8514d654056736a
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: fb25ae7408ddb19d7e8bc9c91c0e1b0f65d2bf42
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026247"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280627"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>A Power BI-jelentésekben elérhető új szűrési felület (előzetes verzió)
 
@@ -34,11 +34,11 @@ Jelentések tervezése során a következőket érheti el az új szűrőkkel:
 
 ## <a name="turn-on-the-new-filter-experience"></a>Az új szűrési felület bekapcsolása 
 
-Az új felületet a Power BI Desktopban engedélyezheti. Ez követően ott vagy a Power BI szolgáltatásban módosíthatja a szűrőket (https://app.powerbi.com). Mivel az új szűrési felület előzetes verzióban van, először engedélyeznie kell a Power BI Desktopban. 
+Az új felületet a Power BI Desktopban engedélyezheti. Ez követően ott vagy a Power BI szolgáltatásban módosíthatja a szűrőket (https://app.powerbi.com). Mivel az új szűrési felület előzetes verzióban van, először engedélyeznie kell a Power BI Desktopban. Ha első lépésként jelentést hoz létre a Power BI szolgáltatásban, az nem rendelkezhet az új szűrőkkel.
 
 ### <a name="turn-on-new-filters-for-all-new-reports"></a>Új szűrők bekapcsolása minden új jelentéshez
 
-1. Válassza a **Fájl** > **Lehetőségek és beállítások** > **Beállítások** > **Előzetes verziójú funkciók** lehetőséget, majd jelölje be az **Új szűrési felület** jelölőnégyzetet. 
+1. A Power BI Desktopban válassza a **Fájl** > **Lehetőségek és beállítások** > **Beállítások** > **Előzetes verziójú funkciók** lehetőséget, majd jelölje be az **Új szűrési felület** jelölőnégyzetet. 
 2. Hogy az új szűrési felület minden új jelentésben megjelenjen, indítsa újra a Power BI Desktopot.
 
 A Power BI Desktop újraindítása után alapértelmezés szerint ez lesz engedélyezve minden új jelentéshez, amelyet létrehoz.  
@@ -47,7 +47,7 @@ A Power BI Desktop újraindítása után alapértelmezés szerint ez lesz enged�
 
 Az új szűrőket meglévő jelentésekhez is engedélyezheti.
 
-1. Egy meglévő jelentésben válassza a **Fájl** > **Lehetőségek és beállítások** > **Beállítások** lehetőséget.
+1. A Power BI Desktopban egy meglévő jelentésben válassza a **Fájl** > **Lehetőségek és beállítások** > **Beállítások** lehetőséget.
 2. A **Jelentésbeállítások** alatt jelölje be a **Frissített szűrőpanel engedélyezése, valamint a szűrők megjelenítése a jelentés vizualizációjának fejlécében** lehetőséget.
 
 ## <a name="build-the-new-filter-pane"></a>Új szűrőpanel készítése

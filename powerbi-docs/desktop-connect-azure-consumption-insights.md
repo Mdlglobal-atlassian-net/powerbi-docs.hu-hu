@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 622a236ba2a240202a570a07e7b6abb201da9dde
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 706fe9f3014ef14ff34100ff336fbf04b44e709c
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026786"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53281011"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Kapcsolódás az Azure Consumption Insightshoz a Power BI Desktopban (bétaverzió)
 Az **Azure Consumption Insights** összekötő használatával a **Power BI Desktopból** kapcsolódhat az Azure-hoz, és részletes adatokat és információkat kérhet le cége Azure-szolgáltatáshasználatáról. Továbbá mértékeket, egyéni oszlopokat és vizualizációkat hozhat létre, amelyekkel jelentéseket készíthet és információkat oszthat meg cége Azure-használatáról. Az **Azure Consumption Insights** összekötő jelenleg bétaverzióban van, és később még változhat.
@@ -70,7 +70,7 @@ Ha valamelyik tábla jelölőnégyzetét bejelöli, megjelenik egy előnézet. T
 > 
 > 
 
-Ha a **Betöltés** gombra kattint, a rendszer betölti az adatokat a **Power BI Desktopba**.
+Ha a **Betöltés** gombra kattint, a rendszer betölti az adatokat a **Power BI Desktopba**.  Az összekötő a tábla alapértelmezett időszaka alapján tölti be az adatokat.  Ha testre szeretné szabni az időszakot, [beállíthat egy egyéni lekérdezést](https://docs.microsoft.com/en-us/power-bi/desktop-connect-azure-consumption-insights#using-azure-consumption-insights).
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
 

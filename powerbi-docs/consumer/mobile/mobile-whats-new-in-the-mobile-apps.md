@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 37995f52882d1a5062b8aa03fb7b0480063a4f77
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: f272d0e40de5c65de9134c3d184195889233496b
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979548"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280926"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -22,6 +22,36 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+
+## <a name="november-2018"></a>2018. november
+
+### <a name="modern-visual-header"></a>Modern vizualizáció-fejléc 
+
+Az új modern vizualizáció-fejlécet használó jelentések mostantól nem foglalnak le helyet a fejlécek számára, így kevesebb marad üresen, és több jut a vizualizációknak.
+
+### <a name="enhance-presentation-mode-windows"></a>Továbbfejlesztett bemutató mód (Windows)
+
+Továbbfejlesztett bemutató üzemmód Surface Hubhoz és Windows 10-eszközökhöz.  A továbbfejlesztett tárgyalótermi Surface Hub-felület jobb bemutató- és közreműködői eszközöket kínál látványelemek nélkül, nagy képernyőre optimalizált nézettel, hogy semmi se vonja el a figyelmet az adatairól. A bemutató mód emellett szabadkézi eszközöket is kínál, amelyekkel hatékonyan mutathatja be adatait. A bemutató módról [itt](https://powerbi.microsoft.com/en-us/blog/presentation-mode-in-power-bi-windows-app/) talál további információt.
+
+### <a name="portrait-report-layout-in-tablets-ios-and-android"></a>Álló elrendezésű jelentések táblagépeken (iOS és Android)
+
+Mostantól a telefonos jelentéselrendezést alkalmazzuk (ha van) a jelentések álló üzemmódban lévő táblagépeken való megjelenítéséhez. További tudnivalók [telefonos elrendezés létrehozásáról a Power BI szolgáltatásban vagy a Desktopban](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report/).
+
+### <a name="supporting-report-query-string"></a>Lekérdezési sztringek támogatása jelentésekben 
+
+A jelentésben lévő, lekérdezési sztringet tartalmazó hivatkozások a mobilalkalmazásban nyílnak meg, előre szűrve a lekérdezési sztringben meghatározott feltételek alapján. További tudnivalók [lekérdezési sztringet tartalmazó jelentésbeli URL-cím létrehozásáról](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+
+### <a name="shared-credentials-now-in-android"></a>Megosztott hitelesítő adatok (már Androidon)
+
+Mobilalkalmazásából minden eddiginél könnyebben jelentkezhet be a Power BI-ba. A megosztott hitelesítő adatokkal a bejelentkezési folyamat egyszerűbbé vált azáltal, hogy az eszközön más Office 365-ös alkalmazáshitelesítő adatokkal hitesítjük Önt a Power BI szolgáltatásban.
+
+### <a name="in-app-urls-now-in-android"></a>Alkalmazásbeli URL-címek (már Androidon) 
+
+A jelentésekben lévő, más Power BI-összetevőkre mutató hivatkozások már közvetlenül az alkalmazásban nyílnak meg. Ezáltal Ön egyéni navigációs folyamatokat készíthet, egy jelentésből hivatkozhat például egy irányítópultra.
+
+### <a name="show-data-and-copy-values"></a>Adatok megjelenítése és az értékek másolása
+
+A jelentésbeli vizualizációk műveleti menüjében (...) már szerepel a mögöttes adatok táblázatos megjelenítésének lehetősége. Megnyitása után a táblázatban hosszú koppintással kijelölhetők és másolhatók az értékek (feltéve, hogy nincs a másolást korlátozó Intune-szabályzat).
 
 ## <a name="october-2018"></a>2018. október
 

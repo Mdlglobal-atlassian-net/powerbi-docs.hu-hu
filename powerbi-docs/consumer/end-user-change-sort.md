@@ -1,33 +1,34 @@
 ---
-title: A diagramok rendezésének módosítása egy Power BI-jelentésben
+title: A diagramok rendezésének módosítása egy jelentésben
 description: A diagramok rendezésének módosítása egy Power BI-jelentésben
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: Conceptual
-ms.date: 09/20/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: f4ca6633eb401e7df8041ea385284210c14995ad
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: 191dfdeba436322052befdbc6548fd08f96f0738
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979337"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280006"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>A diagramok rendezésének módosítása egy Power BI-jelentésben
 A Power BI-jelentésekben a legtöbb vizualizációt rendezheti a kategóriáinak neve alapján betűrendben vagy az egyes kategóriák számértéke szerint. Ez a diagram például az **üzlet neve** kategória szerint van rendezve.
 
-![](media/end-user-change-sort/pbi_chartsortcategory.png)
+![sávdiagram ábécé szerint rendezett X-tengellyel](media/end-user-change-sort/pbi_chartsortcategory.png)
 
 A rendezés könnyedén módosítható egy kategóriáról (store name – üzlet neve) egy értékre (sales per square feet – értékesítés négyzetlábanként).
 
 1. Kattintson a három pontra (...), és majd a **Rendezés szempontja: Eladások négyzetméterenként** lehetőségre.
 2. Ha szükséges, kattintson újra a három pontra, majd a **Rendezés csökkenő sorrendben** lehetőségre.
 
-   ![](media/end-user-change-sort/sort.gif)
+   ![videó emelkedő, majd csökkenő sorrendű rendezés kiválasztásáról](media/end-user-change-sort/sort.gif)
 
    **MEGJEGYZÉS**: Nem minden vizualizáció rendezhető.  A következő vizualizációkat például nem lehet rendezni: Fatérkép, térkép, kartogram, pontdiagram, mérőműszer, kártya, többsoros kártya, vízesés.
 
