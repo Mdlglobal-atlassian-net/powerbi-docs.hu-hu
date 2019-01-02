@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: e396f46987ef14aac9361e8f7ef41e90b2d8383e
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 96cd04385bec6d4b9b47e3e05a30820b2f19f3dd
+ms.sourcegitcommit: 9913c213d40b45ba83c6c3b3a7ef0b757800e3ad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180875"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53301873"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Oktatóanyag: Power BI-jelentés, -irányítópult vagy -csempe beágyazása egy alkalmazásba a saját ügyfelek részére
 
@@ -104,7 +104,7 @@ Az alkalmazásregisztrációs oldalon megadottak mellett további engedélyeket 
 
 ## <a name="set-up-your-power-bi-environment"></a>A Power BI-környezet beállítása
 
-### <a name="create-an-app-workspace"></a>Alkalmazás munkaterületének létrehozása
+### <a name="create-an-app-workspace"></a>Alkalmazás-munkaterület létrehozása
 
 Ha jelentéseket, irányítópultokat vagy csempéket ágyaz be az ügyfelek számára, akkor ezeket a tartalmakat egy alkalmazás-munkaterületre kell helyezni. A *fő* fióknak az alkalmazás-munkaterület rendszergazdai fiókjának kell lennie.
 
@@ -338,14 +338,14 @@ Dedikált kapacitás létrehozásával dedikált erőforrást rendelhet egy ügy
 
 Az alábbi táblázatból megtudhatja, milyen kapacitású Power BI Embedded-kapacitás felel meg a leginkább az igényeinek.
 
-| Kapacitáscsomópont | Magok száma összesen<br/>*(Háttérrendszer + előtérrendszer)* | Háttérrendszerbeli magok | Előtérrendszerbeli magok | DirectQuery-/élő kapcsolat korlátai | Maximális oldalmegjelenítések óránként csúcsidőszakban |
+| Kapacitáscsomópont | Magok száma összesen<br/>*(Háttérrendszer + előtérrendszer)* | Háttérrendszerbeli magok | Előtérrendszerbeli magok | DirectQuery-/élő kapcsolat korlátai|
 | --- | --- | --- | --- | --- | --- |
-| A1 |1 virtuális mag |0,5 mag, 3 GB RAM |0,5 mag |Másodpercenként 5 |1-300 |
-| A2 |2 virtuális mag |1 mag, 5 GB RAM |1 mag | Másodpercenként 10 |301-600 |
-| A3 |42 virtuális mag |2 mag, 10 GB RAM |2 mag | Másodpercenként 15 |601-1200 |
-| A4 |8 virtuális mag |4 mag, 25 GB RAM |4 mag |Másodpercenként 30 |1,201-2,400 |
-| A5 |16 virtuális mag |8 mag, 50 GB RAM |8 mag |Másodpercenként 60 |2,401-4,800 |
-| A6 |32 virtuális mag |16 mag, 100 GB RAM |16 mag |Másodpercenként 120 |4801-9600 |
+| A1 |1 virtuális mag |0,5 mag, 3 GB RAM |0,5 mag |Másodpercenként 5 |
+| A2 |2 virtuális mag |1 mag, 5 GB RAM |1 mag | Másodpercenként 10 |
+| A3 |42 virtuális mag |2 mag, 10 GB RAM |2 mag | Másodpercenként 15 |
+| A4 |8 virtuális mag |4 mag, 25 GB RAM |4 mag |Másodpercenként 30 |
+| A5 |16 virtuális mag |8 mag, 50 GB RAM |8 mag |Másodpercenként 60 |
+| A6 |32 virtuális mag |16 mag, 100 GB RAM |16 mag |Másodpercenként 120 |
 
 **_A termékváltozatokkal nem férhet hozzá a Power BI-tartalmakhoz INGYENES Power BI-licenccel._**
 

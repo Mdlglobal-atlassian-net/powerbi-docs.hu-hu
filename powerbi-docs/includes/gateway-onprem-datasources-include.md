@@ -6,7 +6,7 @@
 | Többdimenziós Analysis Services |Igen |Igen |
 | Fájl |Nem |Igen |
 | Mappa |Nem |Igen |
-| IBM DB2 |Nem |Igen |
+| IBM DB2 |Igen |Igen |
 | IBM Informix-adatbázis |Nem |Igen |
 | IBM Netezza |Igen |Igen |
 | Impala |Igen |Igen |
