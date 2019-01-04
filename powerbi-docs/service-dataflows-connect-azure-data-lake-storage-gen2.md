@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 58c9d41769179b84d9d7cdc79d02f66bc4c99953
-ms.sourcegitcommit: 76b07d55e85110a6ae8c49e08e80e4fa63826166
+ms.openlocfilehash: 72c3c2fde92de45d3a93f087d217af1f50e50601
+ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53200649"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53649045"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)
 
@@ -76,7 +76,7 @@ A **Szerepkör-hozzárendelés megadása** ablakban válassza az **Olvasó** sze
 
 Ahhoz, hogy a tárfiókot a Power BI-hoz adhassa, létre kell hoznia egy *powerbi* nevű fájlrendszert. Ilyen fájlrendszer sokféleképpen létrehozható, például az Azure Databricks, a HDInsight, az AZCopy vagy az Azure Storage Explorer használatával. Ez a szakasz a fájlrendszer létrehozásának egy kézenfekvő módját mutatja be az Azure Storage Explorer használatával.
 
-Ez a lépés megköveteli az Azure Storage Explorer telepítését. Az Azure Storage Explorer Windows, Macintosh vagy Linux rendszeren végzett telepítését az [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) című cikk ismerteti.
+Ez a lépés megköveteli az Azure Storage Explorer 1.6.1 vagy újabb verziójának telepítését. Az Azure Storage Explorer Windows, Macintosh vagy Linux rendszeren végzett telepítését az [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) című cikk ismerteti.
 
 1. Az Azure Storage Explorer sikeres telepítését követően, az első indításakor megjelenik a Microsoft Azure Storage Explorer – Csatlakozás ablaka. Bár a Storage Explorer több módot is kínál a tárfiókokhoz való csatlakozásra, a kívánt beállításhoz jelenleg egyetlen módszer támogatott. 
 
@@ -108,11 +108,11 @@ Bérlői alkalmazásait az alábbi lépésekkel találhatja meg:
 
     ![AAD vállalati alkalmazások](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_06.jpg)
 
-4. A keresősávon gépelje be a *Power* szót, és megjelenik a Power BI- és Power Query-alkalmazások objektumazonosítóinak katalógusa.
+4. A keresősávon gépelje be a *Power* szót, és megjelenik a Power BI- és Power Query-alkalmazások objektumazonosítóinak katalógusa. A következő lépésekben mindhárom értékre szükség lesz.  
 
     ![Power-alkalmazások keresése](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Jelölje ki és másolja ki a Power BI szolgáltatás objektumazonosítóját a keresési eredmények közül. Ezt az értéket a következő lépések során fogja beilleszteni.
+5. Jelölje ki és másolja ki a Power BI szolgáltatás és a Power BI prémium mindkét objektumazonosítóját a keresési eredmények közül. Ezeket az értékeket a következő lépések során fogja beilleszteni.
 
 7. Ezután az **Azure Storage Explorer** használatával navigáljon az előző szakaszban létrehozott *powerbi* fájlrendszerhez. Hajtsa végre a [Fájl- és könyvtárszintű engedélyek kezelése az Azure Storage Explorerrel](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) című cikk [Hozzáférés-kezelés](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) szakaszának utasításait.
 
@@ -120,7 +120,7 @@ Bérlői alkalmazásait az alábbi lépésekkel találhatja meg:
 
    ![mindhárom hozzárendelése mindkettőhöz](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
 
-9. Az 5. lépésben beszerzett Power Query-objektumazonosítóhoz rendelje hozzá az **írási** és **végrehajtási** hozzáférést, valamint az alapértelmezett ACL-eket a *powerbi* fájlrendszerre.
+9. A 4. lépésben beszerzett Power Query-objektumazonosítóhoz rendelje hozzá az **írási** és **végrehajtási** hozzáférést, valamint az alapértelmezett ACL-eket a *powerbi* fájlrendszerre.
 
    ![írási és végrehajtási jog hozzárendelése](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a49b433af32e6c0f03d43333a424864c5463ddd3
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: e09c08780011ffaac7d37468e6018b079c41c669
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619816"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329740"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 A Power BI Desktoppal különböző forrásokból származó adatokhoz csatlakozhat. Az elérhető adatforrások teljes listája az oldal alján látható.
@@ -78,6 +78,7 @@ Az **Adatbázis** kategória a következő adatkapcsolatokat biztosítja:
 * Impala
 * Google BigQuery
 * Snowflake
+* Essbase (bétaverzió)
 * BI-összekötő
 * Exasol
 * Dremio (bétaverzió)

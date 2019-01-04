@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 3e8e8359742a422049751a348bce6a5d4015bd72
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 129649367efa3a2b23fbf3be181e14df158eba02
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619862"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329855"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>A Power BI Desktop korábbi havi frissítései
 
@@ -33,6 +33,57 @@ Az egyes frissítések mellett szereplő hivatkozások a következőket jelentik
 A **legújabb frissítésekről** szóló videót az elejétől is végignézheti ezen a cikken belül. Ehhez kattintson a frissítések listája alatti videóképen található **lejátszás** ikonra.
 
 Az alábbi szakaszok a **Power BI Desktop** korábbi havi frissítéseit ismertetik.
+
+## <a name="november-2018-update-2645285461"></a>2018. novemberi frissítés (2.64.5285.461)
+
+Novemberi frissítéseink új szolgáltatások és funkciók bőséges szüretét kínálják. Üljön asztalhoz adatszakértőivel és elemzőivel, és lássanak hozzá a frissítés-lakomához. 
+
+A **Power BI Desktop** novemberi újdonságai közé az alábbi frissítések tartoznak:
+
+### <a name="reporting"></a>Jelentéskészítés
+
+* Mátrix-sorazonosítók kibontása és összecsukása  [[videó]](https://youtu.be/1xsXXoyTxfk?t=16)  [[cikk]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23expandCollapse) 
+* Másolás és beillesztés Desktop-fájlok között [[videó]](https://youtu.be/1xsXXoyTxfk?t=199)  [[cikk]](desktop-report-view.md#copy-and-paste-between-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23copyPaste)
+* Frissített szűrési felület (előzetes verzió) [[videó]](https://youtu.be/1xsXXoyTxfk?t=410)   [[cikk]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23filterPane)
+* Jelentések akadálymentességi fejlesztései [[videó]](https://youtu.be/1xsXXoyTxfk?t=1036)  [[cikk]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23reportAccessibility)
+
+### <a name="analytics"></a>Elemzés
+
+* Vizualizációk színtelítettség-beállításának fejlesztése a feltételes formázás használatához [[videó]](https://youtu.be/1xsXXoyTxfk?t=1224)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23conditionalFormatting) 
+* Utólagos kérdések a Q&A Explorerben [[videó]](https://youtu.be/1xsXXoyTxfk?t=1429)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23relatedQuestions) 
+
+
+### <a name="modeling"></a>Modellezés
+
+* Új modellező nézet (előzetes verzió) [[videó]](https://youtu.be/1xsXXoyTxfk?t=1642)  [[cikk]](desktop-modeling-view.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingView) 
+* Általánosan elérhetők az összetett modellek [[videó]](https://youtu.be/1xsXXoyTxfk?t=1941)  [[cikk]](desktop-composite-models.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23compositeModels) 
+* A modellezés akadálymentességi fejlesztései [[videó]](https://youtu.be/1xsXXoyTxfk?t=2023)  [[cikk]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingAccessibility) 
+* Új DAX-függvények [[videó]](https://youtu.be/1xsXXoyTxfk?t=2066)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23dax) 
+
+### <a name="custom-visuals"></a>Egyéni vizualizációk
+
+* Öt új egyéni vizualizáció  [[videó]](https://youtu.be/1xsXXoyTxfk?t=2108)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23customVisuals) 
+
+### <a name="data-connectivity"></a>Adatkapcsolatok
+
+* Azure DevOps Server-összekötő [[videó]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
+* A Start Page és az End Page paraméter támogatása PDF-összekötőben  [[videó]](https://youtu.be/1xsXXoyTxfk?t=2667)   [[cikk]](desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23pdf) 
+* Továbbfejlesztett Azure Consumption Insights-összekötő  [[videó]](https://youtu.be/1xsXXoyTxfk?t=2704)  [[cikk]](desktop-connect-azure-consumption-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23consumptionInsights) 
+
+
+> [!NOTE]
+> Megtekintheti továbbá [a Power BI Desktophoz elérhető adatforrások teljes listáját](desktop-data-sources.md). A lista folyamatosan bővül, ezért érdemes gyakran visszatérnie.
+
+További információkra kíváncsi ezekről a frissítésekről? Olvassa el [blogbejegyzésünket](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary), amely részletes információkkal szolgál az új funkciókról (ez ugyanaz a blogbejegyzés, amelyre a fenti lista hivatkozik).
+
+
+Ezeket a frissítéseket az alábbi videócsatorna mutatja be. A videók a blogbejegyzésben is megtekinthetők.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1xsXXoyTxfk?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
 
 ## <a name="october-2018-update-263327240262"></a>2018. októberi frissítés (2.63.3272.40262)
 
@@ -1050,7 +1101,7 @@ A Power BI Desktop februári újdonságai közé az alábbi frissítések tartoz
 
 ### <a name="analytics"></a>Elemzés:
 
--   Két új gyors számítás: sor összegének százalékos értéke és oszlop összegének százalékos értéke: [[videó]](https://youtu.be/mn75-LOPxMA?t=7m46s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#quickCalcs)
+-   Két új gyorsszámítás: Sor összegének százalékos értéke és oszlop összegének százalékos értéke: [[videó]](https://youtu.be/mn75-LOPxMA?t=7m46s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#quickCalcs)
 
 ### <a name="data-connectivity"></a>Adatkapcsolat:
 
@@ -1613,7 +1664,7 @@ Számos további frissítéssel jelentkezünk ebben a hónapban! A február idé
 -   Fejlesztések a térképen – térkép rajzolása csak szélességi és hosszúsági koordinátákkal
 -   A KPI-használat kiadási támogatása (beleértve a navigációs hierarchia támogatását és az SSAS MD KPI-trendjét)
 -   SSAS-feltárás mód: **Megjelenítési** mappák támogatása a **Mezők** panelen
--   A menüszalag elrendezésének fejlesztései: környezeti szalagfül a **jelentéskészítő eszközökhöz**
+-   A menüszalag elrendezésének fejlesztései: Környezeti menüszalag a **Jelentéskészítő eszközökhöz**
 -   Új KPI-vizualizáció
 -   Jelentések megnyitása ugyanazon az oldalon, amely azok mentésekor látható volt
 -   **Lekérdezés szerkesztése** lehetőség a tábla helyi menüjében a Mezők panelen (**Jelentés** & **Adat** nézetek)
@@ -1623,7 +1674,7 @@ Számos további frissítéssel jelentkezünk ebben a hónapban! A február idé
 ### <a name="data-modeling"></a>Adatmodellezés:
 
 -   Lehetőség hierarchiák meghatározására
--   Továbbfejlesztett teljesítmény: a tábla- és oszlopátnevezés optimalizálása
+-   Teljesítménnyel kapcsolatos fejlesztések: Tábla- és oszlopátnevezés optimalizálása
 
 ### <a name="data-connectivity"></a>Adatkapcsolat:
 
@@ -1711,7 +1762,7 @@ A december az ajándékozás hónapja, a Power BI csapata pedig ezt a szokást f
 
 -   Fejlesztések a vizualizációk terén:
     - Vizuális jel az állapot szerinti rendezéshez a **Tábla** vizualizációban
-    - Új vizualizáció: **Halmozott terület** típusú diagram
+    - Új vizualizáció: **Halmozott terület** diagram
     - Intelligens elemleírások megjelenítése a **Terület** és **Vonal** típusú diagramokhoz a mutató diagram fölé húzásakor
     - Lehetőség referenciavonal vagy -régió létrehozására a **Descartes**-féle vizualizációkhoz
     - Továbbfejlesztett adatfeliratok a **torta** és **pont** típusú diagramokhoz
@@ -1872,7 +1923,7 @@ Ehhez a terjedelmes frissítési csomaghoz a következő 44 funkció tartozik:
         - Az X tengely feliratának iránya (vízszintes/átlós)
         - Logaritmikus és lineáris skálázás támogatása az Y tengely értékei esetében
         - Hiperhivatkozások szövegének megjelenítése a szövegmezőkben
-        - Fejlesztések a meglévő vizualizációk terén: tábla, mátrix, szeletelő, pontdiagram, egyedi kártyák, kombinált diagramok és mérőműszerek
+        - Fejlesztések a meglévő vizualizációk terén: Tábla, mátrix, szeletelő, pontdiagram, egyedi kártyák, kombinált diagramok és mérőműszerek
         - Színtelítettségi értékek megjelenítésének támogatása az elemleírásokban
         - Lehetőség a képek átméretezésére és további formázási beállítások alkalmazására
 
@@ -1888,7 +1939,7 @@ Ehhez a terjedelmes frissítési csomaghoz a következő 44 funkció tartozik:
     - Tábla tartalmának másolása a vágólapra.
 - Mezők összegzése:
     - Kiegészítő műveletek támogatása a Mezők panelen: középérték, szórás és eltérés
-    - Alapértelmezett összegzés: a felhasználók mostantól testreszabhatják az alapértelmezett összegzési műveletet a modell bármely mezője esetében
+    - Alapértelmezett összegzés: A felhasználók mostantól testreszabhatják az alapértelmezett összegzési műveletet a modell bármely mezője esetében
 
 ### <a name="data-connectivity"></a>Adatkapcsolat
 
@@ -1912,8 +1963,8 @@ Ehhez a terjedelmes frissítési csomaghoz a következő 44 funkció tartozik:
 - „Oszloptípusok észlelése” beállítás a típus észlelésének igény szerinti indításához
 - „Az összes előnézet frissítése” funkció a Lekérdezésszerkesztő összes előnézetének egyetlen kattintással történő frissítéséhez
 - Teljesítménnyel kapcsolatos fejlesztések:
-    - Oszlopok kiválasztása párbeszédpanel: gyorsabb felhasználói élmény a széles táblák kezelésekor
-    - Automatikus szűrés és kibontás/összesítés előugró ablakok: gyorsabb működés nagyszámú érték vagy mező esetén
+    - Oszlopok kiválasztása párbeszédpanel: Gyorsabb felhasználói élmény a széles táblák kezelésekor
+    - Automatikus szűrés és kibontás/összesítés előugró ablakok: Gyorsabb működés nagy számú értékek vagy mezők esetén
 
 Az alábbi videó részletesebben bemutatja ezeket a funkciókat.
 
@@ -2001,7 +2052,7 @@ Ez a frissítés a következő szolgáltatásokat tartalmazza:
 
 -   Rendezés más oszlop alapján
 
--   Továbbfejlesztett DAX-képletszerkesztő: a függvény súgója és prototípus
+-   Továbbfejlesztett DAX-képletszerkesztő: Függvény súgója és prototípus
 
 **Adatok lekérése és lekérdezése**
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lapszámozott jelentések a Power BI-ban: Gyakori kérdések (előzetes verzió)'
+title: 'Többoldalas jelentések a Power BI-ban: GYIK (előzetes verzió)'
 description: Ez a cikk a lapszámozott jelentésekkel kapcsolatos gyakori kérdésekre ad választ. Ezek a jelentések magas szinten formázott, tökéletesen pontos jelentések, amelyek nyomtatáshoz vagy PDF-készítéshez vannak optimalizálva.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: 0ddf95563c52af135ac7ae4fe71aeddcd2ce7313
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: d3fdf9b568aa13ba5a8437c684835e0fce803d19
+ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268079"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53649445"
 ---
-# <a name="paginated-reports-in-power-bi-faq-preview"></a>Lapszámozott jelentések a Power BI-ban: Gyakori kérdések (előzetes verzió)
+# <a name="paginated-reports-in-power-bi-faq-preview"></a>Többoldalas jelentések a Power BI-ban: GYIK (előzetes verzió)
 
 Ez a cikk a lapszámozott jelentésekkel kapcsolatos gyakori kérdésekre ad választ. Ezek a jelentések magas szinten formázott, tökéletesen pontos jelentések, amelyek nyomtatáshoz vagy PDF-készítéshez vannak optimalizálva. Lapszámozottnak hívjuk őket, mert több oldalon megjeleníthetők. A lapszámozott jelentések az SQL Server Reporting Services RDL-jelentéseinek technológiáján alapulnak. 
 
@@ -59,7 +59,7 @@ A naplók továbbá a következő eseményeket teszik elérhetővé a lapszámoz
 
 ### <a name="can-i-monitor-this-workload-through-the-premium-capacity-monitoring-app"></a>Figyelhetem a számítási feladatot a Prémium szintű kapacitás Monitoring Appjával?
 
-Jelenleg nem. A figyelés nyilvános előzetes verzióban lesz elérhető később, a meglévő jelentés egy új lapjaként, és a Power BI-adatkészletekével megegyező adatokat fogja tartalmazni.
+Igen, a monitoring új lapként elérhető ugyanazokkal a releváns információkkal, amelyek az Power BI-adatkészleteknél is elérhetőek.
 
 ### <a name="do-i-need-a-pro-license-to-create-and-publish-paginated-reports"></a>Pro-licencre van szükségem lapszámozott jelentések létrehozásához és közzétételéhez?
 
@@ -73,9 +73,9 @@ Hibaüzenetet kap, a jelentést pedig nem tekintheti meg, amíg be nem kapcsolja
 
 A lapszámozott jelentéseket támogató Prémium termékváltozatok alapértelmezett memóriája:
 
-- **P1/A4**: 20% alapértelmezés szerint; 10% minimum
-- **P2/A5**: 10% alapértelmezés szerint; 5% minimum
-- **P3/A6**: 5% alapértelmezés szerint; 2.5% minimum
+- **P1/A4**: Alapértelmezés szerint 20%; minimum 10%
+- **P2/A5**: Alapértelmezés szerint 20%; minimum 5%
+- **P3/A6**: Alapértelmezés szerint 20%; minimum 2,5%
 
 ## <a name="general"></a>Általános
 
@@ -113,15 +113,12 @@ A lapszámozott jelentések jelenleg a következő elemeket nem támogatják:
 - Könyvjelzők
 - Bing-térképrétegek
 - Egyéni betűtípusok
-- Rejtett paraméterek
-
-Az átváltás és interaktív rendezés funkciókkal még nem foglalkozunk, de ez is napirenden van.    
 
 Ha egy nem támogatott funkcióval rendelkező fájlt próbál meg feltölteni a Power BI szolgáltatásba, hibaüzenetet kap egy átváltás/rendezés elem helyett.
 
 ### <a name="what-data-sources-do-you-support-currently-for-paginated-reports"></a>Milyen adatforrásokat támogatnak jelenleg a lapszámozott jelentések?
 
-Az Azure SQL Database, SQL Server és SQL Server Analysis Services (SSAS) helyszíni átjárót használó táblázatos modelljeit támogatjuk. Jelenleg nem támogatjuk az SSAS multidimenziós (MDX) modelljeit.
+Az Azure SQL Database, SQL Server és mind az SQL Server Analysis Services (SSAS) táblázatos (DAX) és többdimenziós (MDX) helyszíni átjárót használó modelljeit támogatjuk.
 
 Az SSAS az átjárón keresztül történő megnyitásakor a tárolt hitelesítő adatokhoz tartozó felhasználónak emelt szintű engedélyre lesz szüksége az SSAS-ben az átjárón történő munkához.
 
@@ -135,7 +132,7 @@ Még nem, de hamarosan erre is lehetőség nyílik.
 
 ### <a name="can-i-use-stored-procedures-through-the-gateway"></a>Használhatok tárolt eljárásokat az átjárón keresztül?
 
-Igen, de csak akkor, ha az eljárás nem rendelkezik paraméterekkel.
+Használhat tárolt eljárást az átjárón keresztül, de bizonyos esetekben problémák jelentkezhetnek, ha a tárolt eljárás paraméterekkel rendelkezik.
 
 ### <a name="what-export-formats-are-available-for-my-report-in-the-power-bi-service"></a>Milyen exportálási formátumokat használhatok a jelentéshez a Power BI szolgáltatásban?
 
@@ -143,15 +140,15 @@ Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF, .CSV, XML, és MHTML
 
 ### <a name="can-i-print-paginated-reports"></a>Nyomtathatok lapszámozott jelentéseket?
 
-Jelenleg úgy nyomtathat, ha előbb PDF-fájlba exportálja a fájlt. A lapszámozott jelentések közvetlen nyomtatása hamarosan elérhetővé válik. 
+Igen, nyomtatás is lehetséges a lapszámozott jelentéseknél, és egy új, továbbfejlesztett előnézet is használható. 
 
 ### <a name="are-e-mail-subscriptions-available-yet-for-paginated-reports"></a>Léteznek már e-mail-előfizetések a lapszámozott jelentésekhez?
 
-Nem, ezek bevezetését később tervezzük.
+Nem, de hamarosan elérhető lesz az e-mailes előfizetés.
 
 ### <a name="what-features-from-ssrs-will-you-be-supporting-in-the-power-bi-service"></a>Milyen SSRS-funkciókat fog támogatni a jövőben a Power BI szolgáltatás?
 
-A két termék közötti lehető legszorosabb paritás elérésére törekszünk.  Az SSRS és a Power BI egyes funkcióit nem célszerű megváltoztatni a meglévő SSRS-mintákhoz való alkalmazkodás érdekében (ilyenek például a Power BI eltérő engedélymodelljei), de az ilyen típusú döntésekhez az ügyfeleink visszajelzését is kérni fogjuk.
+Tervezzük, hogy a legtöbb forgatókönyvhöz bevezetjük a funkcióparitást, de egyes dolgokat nem érdemes megváltoztatni az SSRS-nél és a Power BI-nál ahhoz, hogy illeszkedjenek a meglévő SSRS-mintákhoz.  Például a Power BI különféle engedélyezési modelljeit nem lehet vissza leképezni az SSRS-re.  Ezeket a döntéseket az ügyfeleink és a partnereink visszajelzései alapján fogjuk meghozni.
 
 ### <a name="can-i-run-custom-code-in-my-report"></a>Futtathatok egyéni kódot a jelentésben?
 
@@ -171,7 +168,7 @@ Még nem, de a jövőben ezt mindenképp lehetővé tesszük.
 
 ### <a name="can-i-share-my-paginated-report-content-through-a-power-bi-app"></a>Megoszthatom a lapszámozott jelentésem tartalmát egy Power BI-alkalmazáson keresztül?
 
-Jelenleg csak a portál Megosztás funkciójával oszthat meg önálló lapszámozott jelentéseket más felhasználókkal. Az alkalmazáson belüli megosztás még nem támogatott, de hamarosan elérhetővé válik. A Megosztás gombot emellett az eszköztáron is elhelyezzük.
+Jelenleg csak a portál Megosztás funkciójával vagy az eszköztár használatával oszthat meg önálló lapszámozott jelentéseket más felhasználókkal. Az alkalmazáson belüli megosztás még nem támogatott, de hamarosan elérhetővé válik. 
 
 ### <a name="will-other-report-specific-features-in-power-bi-like-pinning-to-report-tiles-to-dashboards-work-with-paginated-reports"></a>A Power BI más jelentésspecifikus funkciói – például az irányítópultok jelentéscsempéin való rögzítés – is működnek a lapszámozott jelentésekkel?
 
@@ -179,15 +176,15 @@ Terveink szerint a jelentések ugyanazokat a főbb szolgáltatásbeli forgatók�
 
 ### <a name="are-you-planning-to-create-a-new-authoring-tool-for-paginated-reports-in-the-power-bi-service--we-cant-do-everything-we-need-to-with-report-builder-today"></a>Tervben van egy új szerkesztőeszköz lapszámozott jelentések a Power BI szolgáltatáson belüli létrehozásához?  A Jelentéskészítő jelenleg nem képes minden funkciót ellátni.
 
-A lehető legjobb megoldást még mindig keressük, de az ALM, az egyéni bővítmények, és egyéb, csak az SSRS egyik szerkesztőeszközében elérhető funkciók támogatását garantáljuk. 
+Jelenleg is dolgozunk különféle lehetőségeken, amelyekkel a legjobb eszközhasználat lesz elérhető a Power BI lapszámozott jelentéseihez. 
 
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Tervben van egy migrálási eszköz létrehozása, amellyel az SSRS-ügyfelek áthelyezhetik a meglévő jelentéseiket és eszközeiket a Power BI-ba?
 
-Igen, de csak azt követően, hogy a Power BI szolgáltatás összes legfontosabb támogatott funkciója működőképes.
+Jelenleg vizsgáljuk azokat a lehetőségeket, amelyekkel automatikusan lehet tartalmat áthelyezni a Power BI-ba, de ez csak az általános elérhetőség után esedékes.
 
 ### <a name="will-i-ever-be-able-to-create-both-paginated-reports-and-power-bi-reports-in-a-single-authoring-tool"></a>Létrehozhatok a jövőben lapszámozott jelentéseket és Power BI-jelentéseket is egyetlen szerkesztőeszközben?
 
-Jelenleg nem tervezzük egy egységes szerkesztőeszköz fejlesztését, de szeretnénk együtt, BI-csomagként elérhetővé tenni a szerkesztőeszközöket különálló letöltések és márkák helyett.
+Valószínűleg.  Jelenleg vizsgáljuk a lehetőségeit egy ilyen megoldásnak, de szeretnénk együtt, BI-csomagként elérhetővé tenni a szerkesztőeszközöket különálló letöltések és márkák helyett.
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Létezik jelentésmegjelenítő vezérlőelem a Power BI szolgáltatásban a lapszámozott jelentésekhez?
 
@@ -200,4 +197,4 @@ Nem, a kezdőlapról jelenleg nem kereshet lapszámozott jelentésekre.  Az új 
 ## <a name="next-steps"></a>Következő lépések
 
 - [A Jelentéskészítő telepítése a Microsoft letöltőközpontból](https://www.microsoft.com/download/details.aspx?id=53613)
-- [Oktatóanyag: Többoldalas jelentés készítése](paginated-reports-quickstart-aw.md)
+- [Oktatóanyag: Lapszámozott jelentés létrehozása](paginated-reports-quickstart-aw.md)
