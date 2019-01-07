@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 5f377f60935f23b62b90731c5d7bc16c8119ab83
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 6fff11d37b0f099effeafb6b88dbfa68af88f3d6
+ms.sourcegitcommit: f5e39e9ead37445bbeab795890b3d80633383032
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026707"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53735569"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -386,6 +386,18 @@ Frissítés vagy rendszergazdai módosítás után a Power BI felhasználóinak 
 A vizualizáció munkahelyi áruházból való feltöltéséhez kattintson a fogaskerék ikonra. Keresse meg és töltse fel a vizualizáció új verzióját.
 
 Győződjön meg róla, hogy a vizuális azonosító ugyanaz maradt. Az új fájl az előző fájlt helyére kerül a jelentésekben az egész vállalatnál. Ha azonban a vizualizáció új verziója megbontja az előző verziójának valamely használati vagy adatstruktúráját, akkor ne cserélje le az előző verziót. Ehelyett hozzon létre egy új listázást a vizualizáció új verziójához. Például adjon hozzá egy új verziószámot (X.X verzió) az új listázott vizualizáció címéhez. Ezáltal nyilvánvalóvá válik, hogy ez ugyanaz a vizualizáció, de frissített verziószámmal, így a meglévő jelentések működése nem hibásodik meg. Most is győződjön meg róla, hogy a vizuális azonosító ugyanaz maradt. Így amikor a felhasználók legközelebb belépnek a szervezeti adattárba a Power BI Desktopból, importálhatják az új verziót, amely kérni fogja őket, hogy cseréljék le a jelentésben található jelenlegi verziót.
+
+További információt [az egyéni vállalati vizualizációkkal kapcsolatos gyakori kérdések](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals) között talál.
+
+## <a name="dataflow-storage-preview"></a>Adatfolyam-tárolás (előzetes verzió)
+
+A Power BI-jal használt adatok alapértelmezés szerint a Power BI által biztosított belső tárolóban helyezkednek el. Az adatfolyamok és az Azure Data Lake Storage Gen2 (ADLS Gen2) integrációjának köszönhetően adatfolyamait vállalata Azure Data Lake Storage Gen2-fiókjában is tárolhatja. További információt az [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md) című cikkben talál.
+
+## <a name="workspaces-preview"></a>Munkaterületek (előzetes verzió)
+
+Rendszergazdaként megtekintheti a bérlőjében meglévő munkaterületeket. Rendezheti és szűrheti a munkaterületek listáját, és minden munkaterület adtait megjelenítheti. Lényeges, hogy a táblázat oszlopai a munkaterületek a [Power BI felügyeleti Rest API](/rest/api/power-bi/admin) által visszaadott tulajdonságainak felelnek meg. A személyes munkaterületek típusa **PersonalGroup**, az örökölt munkaterületeké **Group**, a modern munkaterületek pedig **Workspace** típusúak. További információk: [Új munkaterületek (előzetes verzió) létrehozása a Power BI-ban](service-create-the-new-workspaces.md).
+
+![Munkaterületek listája](media/service-admin-portal/workspaces-list.png)
 
 ## <a name="next-steps"></a>Következő lépések
 
