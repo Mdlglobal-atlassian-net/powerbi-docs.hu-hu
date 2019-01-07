@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8ec638eefa95ef70ab04606881bee421f82b7f11
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 0b5693dfa53feba35acb559bf8606b1d03f97fdb
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223320"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329786"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Elemleírások létrehozása jelentésoldalak alapján a Power BI Desktopban
 A **Power BI Desktopban** létrehozott jelentésoldalak alapján sokatmondóan látványos **jelentés-elemleírásokat** készíthet, amelyek akkor jelennek meg, ha az egérmutató a vizualizáció felett van. Elemleírásként szolgáló jelentésoldal létrehozásakor az egyéni elemleírásokban vizualizációk, képek és a jelentésoldalon létrejött bármely más elemek gyűjteményei is szerepelhetnek. 
@@ -25,17 +25,6 @@ A **Power BI Desktopban** létrehozott jelentésoldalak alapján sokatmondóan l
 Tetszőleges számú elemleírás-oldalt létrehozhat. Minden elemleírás-oldal a jelentés egy vagy több mezőjéhez társítható, így ha az egérmutatót a kiválasztott mezőt tartalmazó vizualizáció fölé viszi, az elemleírás-oldalon létrehozott, az egérmutató alatti adatpont szerint szűrt elemleírás jelenik meg. 
 
 A jelentések elemleírásainak számos felhasználási módja van. Tekintsük át az elemleírások létrehozását és a konfigurálásukhoz szükséges teendőket.
-
-### <a name="enable-the-tooltips-preview"></a>Az elemleírás-készítési funkció előzetes verziójának engedélyezése 
-A **Power BI Desktop** 2018. szeptemberi kiadásától kezdődően általánosan elérhetőek az elemleírások, és nem szükséges külön engedélyezni őket. 
-
-Ha a **Power BI Desktop** korábbi verzióját használja, akkor előzetes funkcióként engedélyezheti a használatukat. Ehhez a Power BI Desktopban a **Fájl > Lehetőségek és beállítások > Lehetőségek > Előzetes funkciók** területen jelölje be az **Jelentésoldal elemleírásai** jelölőnégyzetet. 
-
-![A jelentés-elemleírások készítésére szolgáló funkció előzetes verziójának engedélyezése](media/desktop-tooltips/desktop-tooltips_01.png)
-
-A jelentés-elemleírások készítésére szolgáló funkció előzetes verziójának engedélyezése után újra kell indítania a **Power BI Desktopot**.
-
-Javasoljuk, hogy mindig frissítsen a **Power BI Desktop** legújabb verziójára, amelyet a [Power BI Desktop beszerzése](desktop-get-the-desktop.md) hivatkozással érhet el. 
 
 ## <a name="create-a-report-tooltip-page"></a>Elemleírás-oldal létrehozása jelentéshez
 Kiindulásként hozzon létre egy új jelentésoldalt a **Power BI Desktop**-vászon alján, a lapfülek sávjában található **+** gombra kattintva. A gomb a jelentés utolsó oldala mellett van. 
@@ -123,8 +112,7 @@ Ha egy jelentés vizualizációja keresztkiemeléssel készült, akkor a jelent�
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 Az **elemleírásokra** vonatkozik néhány korlátozás és egyéb szempont.
 
-* A **Power BI Desktop** 2018. szeptemberi kiadásától kezdve, amelyben az elemleírások általánosan elérhetővé váltak, a Kártya vizualizációk is támogatják az elemleírásokat.
-* A **Power BI Desktop** 2018. júliusi kiadásától kezdve az elemleírásoknál a Táblázat és Mátrix vizualizációk is támogatva vannak. 
+* A **Power BI Desktop** 2018. decemberi kiadásától kezdve a gomb vizualizációk az elemleírásokat is támogatják.
 * A jelentésekhez készült elemleírások nem támogatottak, ha mobilalkalmazásokban tekinti meg a jelentéseket. 
 * A jelentésekhez készült elemleírások egyéni vizualizációkhoz való használata nem támogatott. 
 * A fürtök mezőként történő megjelenítése a jelentésekhez készült elemleírásokban jelenleg nem támogatott. 

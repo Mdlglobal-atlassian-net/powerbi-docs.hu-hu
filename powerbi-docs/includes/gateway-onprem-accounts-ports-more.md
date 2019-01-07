@@ -13,7 +13,7 @@ Amennyiben hitelesítési problémák lépnek fel a proxykiszolgálón, cserélj
 
 ## <a name="ports"></a>Portok
 
-Az átjáró kimenő kapcsolatot hoz létre az Azure Service Bus felé. A következő kimenő portokon kommunikál: TCP 443 (alapméretezett), 5671, 5672, 9350–9354.  Az átjáró nem igényel bejövő portokat.
+Az átjáró kimenő kapcsolatot hoz létre az Azure Service Bus felé. A következő kimenő portokon kommunikál: TCP 443 (alapértelmezett), 5671, 5672, 9350-9354.  Az átjáró nem igényel bejövő portokat.
 
 Ajánlott az adatrégió IP-címeit felvenni a tűzfal engedélyezési listájára. Töltse le a [Microsoft Azure Datacenter IP-listáját](https://www.microsoft.com/download/details.aspx?id=41653), amelyet hetente frissítünk. Az átjáró az IP-cím és a teljes tartománynév (FQDN) használatával kommunikál az Azure Service Busszal. Amennyiben kényszeríti az átjáró, hogy HTTPS használatával kommunikáljon, az csak a teljes tartománynevet használja majd, és nem kommunikál az IP-címeken keresztül.
 
@@ -63,7 +63,7 @@ A későbbiekben újraindíthatja az *átjáró Windows-szolgáltatást* a felha
 
 ## <a name="support-for-tls-12"></a>A TLS 1.2 támogatása
 
-A helyszíni adatátjáró alapértelmezés szerint a Transport Layer Security (TLS) 1.2-es verzióját használja a Power BI szolgáltatással folytatott kommunikációra. Ahhoz, hogy az átjárók teljes adatforgalma a TLS 1.2-es verzióját használja, esetleg meg kell adnia vagy módosítania kell a következő beállításkulcsokat az átjárószolgáltatást futtató gépen:
+A helyszíni adatátjáró alapértelmezés szerint a Transport Layer Security (TLS) 1.2-es verzióját használja a Power BI szolgáltatással folytatott kommunikációra. Ahhoz, hogy az átjárók teljes adatforgalma a TLS 1.2-es verzióját használja, előfordulhat, hogy meg kell adnia vagy módosítania kell a következő beállításkulcsokat az átjárószolgáltatást futtató gépen:
 
 ```
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001

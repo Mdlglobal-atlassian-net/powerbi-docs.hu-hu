@@ -11,11 +11,11 @@ ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: f4825e8d8d47f755b01748c847b0fcf110db030a
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452867"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53451444"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Az SAP BW Connector használata a Power BI Desktopban
 A Power BI Desktopban hozzáférhet az **SAP Business Warehouse (BW)** adataihoz.
@@ -66,7 +66,7 @@ A kapcsolat kiépítéséhez kapcsolódáskor ki kell töltenie a *Kiszolgáló*
 
 ![SAP-kiszolgáló kapcsolatbeállításai](media/desktop-sap-bw-connector/sap_bw_3a.png)
 
-Két további **Speciális beállítást** is megadhat: a nyelvkódot, valamint a megadott kiszolgálón futtatható egyéni MDX-utasítást.
+Két további **Speciális beállítást** is megadhat: A nyelv kódját, és egy, a megadott kiszolgálón futtatandó egyéni MDX-utasítást.
 
 ![kapcsolat további adatai](media/desktop-sap-bw-connector/sap_bw_4a.png)
 
@@ -78,7 +78,7 @@ Amikor kijelöl egy vagy több elemet a kiszolgálón, a rendszer a kijelölés 
 
 A **Kezelő** ablakban néhány **megjelenítési beállítás** is elérhető, amelyekkel a következőket állíthatja be:
 
-* **Megjelenítés – *Csak a kijelölt elemek* vagy *Összes elem* (alapértelmezett nézet):** Ezzel a beállítással ellenőrizheti a kiválasztott elemek végleges halmazát. Ezt az *Előnézet* területen az *Oszlopnevek* kiválasztásával is megtekintheti.
+* ***Csak a kijelölt elemek* megjelenítése az *Összes elem* (alapértelmezett nézet) helyett:** Ez a beállítás a kijelölt elemek végleges halmazának ellenőrzéséhez hasznos. Ezt az *Előnézet* területen az *Oszlopnevek* kiválasztásával is megtekintheti.
 * **Adatok előnézetének engedélyezése (alapértelmezett viselkedés):** Szabályozhatja azt is, hogy a párbeszédablakban megjelenjenek-e az adatelőnézetek. Az adatelőnézetek letiltása csökkenti a kiszolgálói hívások mennyiségét, mivel a rendszer nem kér le adatokat az előnézetekhez.
 * **Technikai nevek:** Az SAP BW támogatja a kockákban lévő objektumokra vonatkozó *technikai nevek* koncepciót. A technikai nevek segítségével a kocka tulajdonosa *felhasználóbarát* nevekkel jelenítheti meg a kockában lévő objektumokat, nem csupán azok *fizikai neveivel*.
 
