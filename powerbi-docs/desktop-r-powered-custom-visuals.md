@@ -2,20 +2,21 @@
 title: Egyéni R-vizualizációk a Power BI-ban
 description: Egyéni R-vizualizációk a Power BI-ban
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
-ms.author: maghan
 LocalizationGroup: Create reports
-ms.openlocfilehash: b9f9b6faa7490ed05626f52623750ea79183d36a
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 84b6acfcf87601712622cbbd2b4e7d396f75f0b8
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187375"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056087"
 ---
 # <a name="use-r-powered-custom-visuals-in-power-bi"></a>Egyéni R-vizualizációk a Power BI-ban
 A **Power BI Desktopban** és a **Power BI szolgáltatásban** az R ismerete és R-parancsfájlok használata nélkül is lehetősége van egyéni R-vizualizációk használatára. Ez lehetővé teszi az R-vizualizációk és R-szkriptek elemzési és vizuális sokoldalúságának kihasználását anélkül, hogy meg kellene tanulnia az R programozási nyelvet, vagy bármit is programoznia kellene.
@@ -33,7 +34,7 @@ Az egyéni R-vizualizációk használatához le kell töltenie az egyes vizualiz
 
 A vizualizációk az **AppSource** webhelyről történő kikeresésének és kiválasztásának lépései a következők:
 
-1. Lépjen a Power BI-vizualizációk gyűjteményre, a következő címen: [https://appsource.microsoft.com](https://appsource.microsoft.com/). Jelölje be a *Power BI-alkalmazások* jelölőnégyzetet a *Pontosítás termék szerint* terület alatt, majd kattintson **Az összes megjelenítése** hivatkozásra.
+1. Lépjen a Power BI-vizualizációk gyűjteményre, a következő címen: [https://appsource.microsoft.com](https://appsource.microsoft.com/). Jelölje be a **Power BI-alkalmazások** jelölőnégyzetet a *Pontosítás termék szerint* terület alatt, majd kattintson Az összes megjelenítése hivatkozásra.
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2a.png)
 
