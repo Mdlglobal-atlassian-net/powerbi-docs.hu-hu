@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2800eb5b01e8203632ae60c9b304a5ed9ce28b69
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 281e84b1dd3a3c21a7aaebce4784551a8afb31ba
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670228"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056064"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>USA-beli kormányzati szerv regisztrálása a Power BI szolgáltatásban
 A **Power BI szolgáltatás** külön verziója érhető el az USA kormányzati ügyfeleinek az **egyesült államokbeli Office 365-közösségi** előfizetések részeként. A jelen cikkben a **Power BI szolgáltatás** kifejezetten az USA kormányzati ügyfeleinek készült verzióját tárgyaljuk, amely elkülönül és különbözik a **Power BI szolgáltatás** kereskedelmi verziójától.
@@ -102,7 +102,7 @@ Ha Ön az ingyenes és az USA kormányzati szerveinek biztosított Pro-licenccel
 
 Amikor az ingyenes és a Pro-licencet egyszerre használja az USA valamely kormányzati szervének bérlőjén, és végighalad az *engedélyezés* folyamatán, az alábbiak várhatók:
 
-**Engedélyezés *előtt***:
+**Engedélyezés _előtt_**:
 
 * A kereskedelmi felhőkörnyezetet használó, ingyenes licenccel rendelkező felhasználók
 * Az USA kormányzati szerveinek biztosított Pro-licencek láthatók a portálon, és a rendszergazda hozzárendelheti ezeket a licenceket a felhasználókhoz. Az USA kormányzati szerveinek biztosított Pro-licencek felhasználói nem veszítik el az ingyenes licencekhez tartozó adatokat, miután a rendszergazda a felhasználókhoz rendeli az USA kormányzati szerveinek biztosított Pro-licencet. A hozzárendelt felhasználók hozzáférnek az USA kormányzati ügyfeleinek biztosított Power BI Pro-funkciókhoz, de az alábbi listajeles listában ismertetett funkciókorlátozásokat fogják tapasztalni a bérlő sikeres *engedélyezéséig*:
@@ -112,7 +112,7 @@ Amikor az ingyenes és a Pro-licencet egyszerre használja az USA valamely korm�
   * A PBIX-fájlokat manuálisan kell feltölteni a kereskedelmi verziójú Power BI szolgáltatásba
   * A Power BI mobilalkalmazásai nem érhetők el
 
-**Engedélyezés *után***:
+**Engedélyezés _után_**:
 
 * A kereskedelmi verziójú Power BI szolgáltatást használó ingyenes felhasználók továbbra is használhatják a szolgáltatást, de a hitelesítésük a várt módon megszűnik.
 * Az Egyesült Államok kormányzati felhőkörnyezetét használó Pro-felhasználók a várt módon használhatják az **USA kormányzati szerveinek biztosított Power BI** szolgáltatást.

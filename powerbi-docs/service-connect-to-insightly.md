@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6e2ca51f79173e065d0a780943eab2e834837820
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 87d294c81cbf9a342ce238bb198173516c1f3215
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548626"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008005"
 ---
 # <a name="connect-to-insightly-with-power-bi"></a>Csatlakozás az Insightly-hoz a Power BI használatával
 Megjelenítheti és megoszthatja Insightly CRM-adatait a Power BI-ban az Insightly tartalomcsomag használatával. Csatlakozzon a Power BI-hoz az Insightly API-kulccsal jelentések és irányítópultok megtekintéséhez és felépítéséhez a CRM-adatokból. A Power BI használatával új módokon elemezheti az adatokat, hatékony gráfokat és diagramokat hozhat létre, valamint térképen jeleníthet meg a kapcsolattartókat, érdeklődőket és cégeket.

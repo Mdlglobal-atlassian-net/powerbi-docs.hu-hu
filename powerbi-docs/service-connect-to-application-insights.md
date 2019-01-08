@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 08/10/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 34e3524d561fb6f6394d69fed55c1bd29bddf4bd
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 3f0a23c2bdb97c6fbc75981c40cb92c529550b1b
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50100588"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008235"
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Csatlakozás az Application Insightshoz Power BI-jal
 A Power BI használatával nagyszerű egyéni irányítópultokat hozhat létre az [Application Insights](/azure/application-insights/app-insights-overview/) telemetriai adataiból. Alkalmazásai telemetriai adatait újszerű módokon jelenítheti meg. Több alkalmazás vagy szolgáltatás mutatóit egyetlen irányítópulton egyesítheti. Az Application Insights-hoz készült Power BI tartalomcsomagnak ez az első kiadása. Olyan általánosan elterjedt, használati metrikákkal kapcsolatos widgeteket tartalmaz, mint például az aktív felhasználók száma, oldalmegtekintések, munkamenetek, böngésző- és operációsrendszer-verziók, valamint a felhasználók földrajzi eloszlása egy térképen.
