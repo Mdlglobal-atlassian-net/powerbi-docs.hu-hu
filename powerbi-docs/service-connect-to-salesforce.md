@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5cd858ad14c1a5fcf76ddf23dafdac2bb5585b10
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 02b98d807ccc84aa83826ae5e9eecdbdd1987a91
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548258"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008580"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Csatlakozás a Salesforce-hoz a Power BI-ban
 A Power BI használatával könnyedén csatlakozhat a Salesforce.com-fiókjához. A létrehozott kapcsolat lekéri az adatokat, és automatikusan a rendelkezésére bocsátja az adatokhoz kapcsolódó irányítópultot és jelentéseket.
@@ -80,7 +80,7 @@ Ha hibát észlel, tekintse át a fenti követelményeket. Azt is vegye figyelem
 
 ### <a name="unable-to-connect-to-the-remote-server-message"></a>„Nem sikerült csatlakozni a távoli kiszolgálóhoz” üzenet
 
-Ha „Nem sikerült csatlakozni a távoli kiszolgálóhoz” üzenet jelenik meg, amikor megpróbál kapcsolódni a Salesforce-fiókjához, tekintse meg a következő megoldást az Outsystems fórumon: [A Salesforce-összekötő bejelentkezési hibaüzenete: Nem sikerült csatlakozni a távoli kiszolgálóhoz](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
+Ha a „Nem sikerült csatlakozni a távoli kiszolgálóhoz” üzenet jelenik meg, amikor megpróbál kapcsolódni a Salesforce-fiókjához, tekintse meg a következő megoldást az Outsystems fórumon: [A Salesforce-összekötő bejelentkezési hibaüzenete: Nem sikerült csatlakozni a távoli kiszolgálóhoz](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
 
 
 ## <a name="next-steps"></a>Következő lépések

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2018
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bba674df9864697199a274698a1b17320b8ccd80
-ms.sourcegitcommit: 9d6f37fd32b965592bd7b108dea87b8e53b11334
+ms.openlocfilehash: eaf76f2ba762a603bf37385ea00cd714499db4b5
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40257088"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983416"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Összekötők bővíthetősége a Power BI-ban
 
@@ -42,7 +42,7 @@ Az **Adatkiterjesztések** területen két biztonsági szint közül választhat
 * (Ajánlott) Csak a tanúsítvánnyal rendelkező bővítmények betöltésének engedélyezése
 * (Nem ajánlott) Bármilyen bővítmény betöltésének engedélyezése figyelmeztetés nélkül
 
-Ha **egyéni összekötőket** vagy olyan összekötőket szeretne használni, amelyeket Ön vagy egy külső fél fejlesztett és terjeszt, válassza a **„(Nem ajánlott) Bármilyen bővítmény betöltésének engedélyezése figyelmeztetés nélkül”** lehetőséget. Nem javasoljuk ezt a biztonsági beállítást, hacsak nem **egyéni összekötőket** szeretne futtatni.
+Ha **egyéni összekötőket** vagy olyan összekötőket szeretne használni, amelyeket Ön vagy egy külső fél fejlesztett és terjeszt, válassza a **„(Nem ajánlott) Bármilyen bővítmény betöltésének engedélyezése figyelmeztetés nélkül”** lehetőséget. Ezt a biztonsági beállítást nem ajánljuk, csak akkor, ha teljes mértékben megbízik az egyéni összekötőkben, mivel az itt szereplő kód kezelheti a hitelesítő adatokat (beleértve azok HTTP-n való küldését), és figyelmen kívül hagyhatja az adatbiztonsági szinteket.
 
 Az **„(Ajánlott)”** biztonsági beállítás esetén, ha egyéni összekötők találhatók a rendszerén, egy hibaüzenet jelenik meg, amely leírja a biztonsági okokból nem betölthető összekötőket.
 

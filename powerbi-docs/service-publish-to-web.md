@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/13/2018
+ms.date: 01/08/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0ef3bd027c7fc14f88a569cab160f90044689784
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: ab5f891b8769657f18861863562c0ab866044a18
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558539"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136622"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Webes közzététel a Power BI-ból
 
@@ -26,6 +26,9 @@ A közzétett vizualizációkat egyszerűen szerkesztheti, frissítheti, vagy ak
 > [!WARNING]
 > A **Webes közzététel** használatával közzétett jelentést vagy vizualizációt bárki megtekintheti az Interneten. A jelentések megtekintésekor nincs hitelesítés. A Webes közzétételt csak olyan jelentések és adatok esetén használja, amelyeket az Interneten bárki számára (hitelesítés nélkül) láthatóvá kíván tenni. Ez a részletes adatokra is vonatkozik, amelyeket a jelentéseiben összegez. A jelentés közzététele előtt ellenőrizze, hogy jogában áll-e nyilvánosan megosztani az adatokat és vizualizációkat. Bizalmas vagy szellemi tulajdont képező információt ne tegyen közzé. Ha bizonytalan, akkor a közzététel előtt ellenőrizze a cég szabályzatait.
 
+>[!Note]
+>Ha biztonságosan be szeretné ágyazni a tartalmat egy belső portálon vagy webhelyen, használja a [Beágyazás](service-embed-secure.md) vagy a [Beágyazás a SharePoint online-ban](service-embed-report-spo.md) lehetőséget. Ez biztosítja, hogy minden engedély és adatbiztonság kényszerítve legyen, amikor a felhasználók megtekintik a belső adatokat.
+
 ## <a name="how-to-use-publish-to-web"></a>A Webes közzététel használata
 
 A **Webes közzétételt** a személyes vagy csoport-munkaterületein lévő, Ön által szerkeszthető jelentésekhez érheti el.  Nem használhatja a Webes közzétételt az Önnel megosztott, vagy az adatbiztonságot sorszintű védelemmel biztosító jelentéseknél. A lenti **Korlátozások** szakasz tartalmazza azoknak az eseteknek a teljes listáját, amelyeknél a Webes hozzátétel nem támogatott. A Webes közzététel használata előtt olvassa el figyelmesen a **Figyelmeztetést** a cikk elején.
@@ -34,46 +37,45 @@ A funkció működését megtekintheti a következő *rövid videóban*. A köve
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
 
-
 A következő útmutató a **Webes közzététel** használatát ismerteti.
 
 1. Egy a munkaterületén lévő, Ön által szerkeszthető jelentésen válassza a **Fájl > Webes közzététel** lehetőséget.
-   
-   ![](media/service-publish-to-web/publish_to_web1.png)
+
+   ![PtW1](media/service-publish-to-web/publish_to_web1.png)
 
 2. Olvassa el a párbeszédpanel szövegét, majd válassza a **Beágyazási kód létrehozása** lehetőséget, ahogyan az alábbi ábra mutatja.
-   
-   ![](media/service-publish-to-web/publish_to_web2_ga.png)
+
+   ![PtW2](media/service-publish-to-web/publish_to_web2_ga.png)
 
 3. Olvassa el a következő párbeszédpanelen álló figyelmeztetést, és ellenőrizze, hogy az adatok szabadon beágyazhatók-e egy nyilvános weboldalba. Ha így van, akkor válassza a **Közzététel** lehetőséget.
-   
-   ![](media/service-publish-to-web/publish_to_web3_ga.png)
+
+   ![PtW3](media/service-publish-to-web/publish_to_web3_ga.png)
 
 4. Újabb párbeszédpanel jelenik meg, amely megad egy e-mailben továbbítható vagy kódba (például iFrame) beépíthető hivatkozást, és egy másikat, amelyet közvetlenül beilleszthet a weboldalra vagy a blogba.
-   
-   ![](media/service-publish-to-web/publish_to_web4.png)
+
+   ![PtW4](media/service-publish-to-web/publish_to_web4.png)
 
 5. Ha már korábban létrehozta a jelentés beágyazási kódját, akkor a kód gyorsan megjelenik. Jelentésenként csak egy beágyazási kód hozható létre.
-   
-   ![](media/service-publish-to-web/publish_to_web5.png)
+
+   ![PtW5](media/service-publish-to-web/publish_to_web5.png)
 
 ## <a name="tips-and-tricks-for-view-modes"></a>Tippek és trükkök különböző Megtekintési módokhoz
 
 Amikor egy blogbejegyzésbe ágyaz be tartalmat, akkor annak általában egy adott méretű képernyőn kell elférnie.  Az iFrame-címkében a magasságot és a szélességet is igény szerint beállíthatja, de arról is gondoskodnia kell, hogy a jelentés elférjen az iFrame-keret egy adott részén, ezért a jelentés szerkesztésekor be kell állítania a megfelelő Megtekintési módot.
 
-A következő táblázat a Megtekintési módokat és azok beágyazott megjelenését ismerteti. 
+A következő táblázat a Megtekintési módokat és azok beágyazott megjelenését ismerteti.
 
 | Megtekintési mód | Beágyazott megjelenés |
 | --- | --- |
-| ![](media/service-publish-to-web/publish_to_web6b.png) |Az **oldalhoz igazítás** a jelentés magasságát és szélességét veszi figyelembe. Ha az oldalt 'Dinamikus', például 16:9 vagy 4:3 képarányúra állította be, akkor a tartalom úgy méreteződik át, hogy illeszkedjen a megadott iFrame-keretbe. iFrame-keretbe ágyazva az **oldalhoz igazítás** eredményeként **üres sávok**, szürke hátterű területek jelenhetnek meg a tartalom mellett, miután az átméreteződik, hogy illeszkedjen a keretbe. Az üres sávok eltüntetéséhez állítsa át az iFrame-keret magasságát/szélességét a megfelelő értékre. |
-| ![](media/service-publish-to-web/publish_to_web6d.png) |A **tényleges méret** módban a jelentés megtartja a jelentésoldalon megadott méretét. Emiatt az iFrame-keretben görgetősávok jelenhetnek meg. A görgetősávok megjelenése az iFrame-keret magasságának és szélességének beállításával előzhető meg. |
-| ![](media/service-publish-to-web/publish_to_web6c.png) |A **szélességhez igazítás** beállítás biztosítja, hogy a tartalom vízszintesen kitöltse az iFrame-keretet. A szegély látható marad, de a tartalom úgy méreteződik át, hogy vízszintesen kitöltse a rendelkezésre álló területet. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |Az **oldalhoz igazítás** a jelentés magasságát és szélességét veszi figyelembe. Ha az oldalt 'Dinamikus', például 16:9 vagy 4:3 képarányúra állította be, akkor a tartalom úgy méreteződik át, hogy illeszkedjen a megadott iFrame-keretbe. iFrame-keretbe ágyazva az **oldalhoz igazítás** eredményeként **üres sávok**, szürke hátterű területek jelenhetnek meg a tartalom mellett, miután az átméreteződik, hogy illeszkedjen a keretbe. Az üres sávok eltüntetéséhez állítsa át az iFrame-keret magasságát/szélességét a megfelelő értékre. |
+| ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |A **tényleges méret** módban a jelentés megtartja a jelentésoldalon megadott méretét. Emiatt az iFrame-keretben görgetősávok jelenhetnek meg. A görgetősávok megjelenése az iFrame-keret magasságának és szélességének beállításával előzhető meg. |
+| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |A **szélességhez igazítás** beállítás biztosítja, hogy a tartalom vízszintesen kitöltse az iFrame-keretet. A szegély látható marad, de a tartalom úgy méreteződik át, hogy vízszintesen kitöltse a rendelkezésre álló területet. |
 
 ## <a name="tips-and-tricks-for-iframe-height-and-width"></a>Tippek és trükkök az iFrame magasság- és szélesség-beállításaihoz
 
 A Webes közzététel után kapott beágyazási kód a következőhöz lesz hasonló:
 
-![](media/service-publish-to-web/publish_to_web7.png)
+![PtW7](media/service-publish-to-web/publish_to_web7.png)
 
 A szélességét és magasságát manuálisan is módosíthatja, hogy pontosan a kívánt módon illeszkedjen az oldalba, amelybe beágyazza.
 
@@ -93,20 +95,20 @@ A legjobb illeszkedés érdekében megpróbálhat 56 képpontot hozzáadni az iF
 Miután létrehozott egy **Webes közzétételi** beágyazási kódot, a kódokat a Power BI szolgáltatás **Beállítások** menüjében tudja kezelni. A beágyazási kódok kezeléséhez tartozik a kód által hivatkozott vizualizáció vagy jelentés eltávolítása (ez használhatatlanná teszi a beágyazási kódot), vagy a beágyazási kód ismételt lekérése.
 
 1. A **Webes közzétételi** beágyazási kódok kezeléséhez nyissa meg a **Beállítások** fogaskerék-ikont, és válassza a **Beágyazási kódok kezelése** lehetőséget.
-   
-   ![](media/service-publish-to-web/publish_to_web8.png)
+
+   ![PtW8](media/service-publish-to-web/publish_to_web8.png)
 
 2. Megjelenik a létrehozott beágyazási kódok listája, ahogyan a következő ábra mutatja.
-   
-   ![](media/service-publish-to-web/publish_to_web9.png)
+
+   ![PtW9](media/service-publish-to-web/publish_to_web9.png)
 
 3. A listában szereplő **Webes közzétételi** beágyazási kódok mindegyikéhez újra lekérheti a beágyazási kódot vagy törölheti azt. Az utóbbi esetben az érintett jelentésre vagy vizualizációra mutató hivatkozások többé nem működnek.
-   
-   ![](media/service-publish-to-web/publish_to_web10.png)
+
+   ![PtW10](media/service-publish-to-web/publish_to_web10.png)
 
 4. Ha a **Törlés** lehetőséget választja, akkor a rendszer rákérdez, hogy valóban törölni szeretné-e a beágyazott kódot.
-   
-   ![](media/service-publish-to-web/publish_to_web11.png)
+
+   ![PtW11](media/service-publish-to-web/publish_to_web11.png)
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Jelentések és adatok frissítése
 
@@ -138,6 +140,7 @@ A Power BI szolgáltatás adatforrásainak és jelentéseinek túlnyomó többs�
 - Jelentésszintű DAX-mértékeket tartalmazó jelentések
 - Egyszeri bejelentkezési adatlekérdezési modellek
 - [Bizalmas vagy szellemi tulajdont képező információk biztonságának védelme](#publish-to-web-from-power-bi)
+- A **Beágyazás** lehetőség automatikus hitelesítés funkciója nem működik a Power BI JavaScript API-jával. A Power BI JavaScript API-hoz a [felhasználó az adatok tulajdonosa](developer/embed-sample-for-your-organization.md) módszert kell használnia. További információ a [felhasználó az adatok tulajdonosa](developer/embed-sample-for-your-organization.md) megközelítésről.
 
 ## <a name="tenant-setting"></a>Bérlőbeállítások
 
@@ -167,7 +170,7 @@ Egy **Webes közzététel** útján egy weboldalba vagy blogba beágyazott tarta
 
 Észrevétel bejelentéséhez használja a megtekintett webes közzétételű jelentés alsó sávján lévő **zászló** ikont.
 
-![](media/service-publish-to-web/publish_to_web12_ga.png)
+![PtW12](media/service-publish-to-web/publish_to_web12_ga.png)
 
 ## <a name="licensing-and-pricing"></a>Licencelés és Díjszabás
 
@@ -178,5 +181,11 @@ A **Webes közzétételt** csak Microsoft Power BI-felhasználók használhatjá
 Amikor a **Webes közzététel** használatával beágyazott kódot állít elő, akkor a jelentés láthatóvá válik a felhasználók számára az Interneten. Nyilvánosan elérhető, tehát számítani lehet rá, hogy a megtekintői egyszerűen meg tudják majd osztani a jelentést a közösségi médiában. Amikor a felhasználók a közvetlen nyilvános URL-cím megnyitásával vagy egy weboldalba vagy blogba beágyazottan megtekintik a jelentést, akkor a Power BI gyorsítótárazza a jelentés definícióját és a jelentés megtekintéséhez szükséges lekérdezések eredményeit. Ezen a módon a jelentést egyidejűleg több ezer felhasználó is megtekintheti a teljesítmény romlása nélkül.
 
 A gyorsítótár hosszú ideig megőrzi a tartalmát, ezért ha Ön módosítja a jelentés definícióját (ha például megváltoztatja a megtekintési módját), akkor a módosítások körülbelül egy óra elteltével lesznek láthatók a jelentésnek a felhasználók által megtekintett verziójában. Éppen ezért ajánlott előre elkészíteni a munkáját, és a **Webes közzétételi** beágyazási kódot csak akkor létrehozni, amikor már elégedett a beállításokkal.
+
+## <a name="next-steps"></a>Következő lépések
+
+- [SharePoint Online jelentéskijelző](service-embed-report-spo.md) 
+
+- [Jelentés beágyazása egy biztonságos portálon vagy webhelyen](service-embed-secure.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

@@ -1,5 +1,5 @@
 ---
-title: Hogyan végezhetek közös munkát és hogyan oszthatok meg tartalmat a Power BI-ban?
+title: A munka megosztásának módjai
 description: A Power BI-ban az irányítópultok, a jelentések, a csempék és az alkalmazások másokkal közös használatához és megosztásához számos mód áll rendelkezésre. Mindegyiknek megvannak a maga előnyei.
 author: maggiesMSFT
 manager: kfile
@@ -7,23 +7,23 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 12/17/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bcec05211d3748e992f0e0cf68acd6460b2715d4
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: bc4f58920feaf5219d63761116ef9a742edd4eed
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983531"
 ---
-# <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Hogyan végezhetek közös munkát és hogyan oszthatok meg tartalmat a Power BI-ban?
+# <a name="ways-to-share-your-work-in-power-bi"></a>A munka megosztásának módjai a Power BI-ban
 
-Ön az irányítópultokat és jelentéseket létrehozó személy. Előfordulhat, hogy a munkatársaival együtt dolgozik rajtuk. Ezután szeretné, hogy mások is elérhessék, amit létrehozott. Mi a terjesztésük legjobb módja?
+Ön az irányítópultokat és jelentéseket létrehozó személy. Előfordulhat, hogy a munkatársaival együtt dolgozott rajtuk. Ezután szeretné, hogy mások is elérhessék, amit létrehozott. Mi a terjesztésük legjobb módja?
 
 Ebben a témakörben összehasonlítjuk a Power BI-ban való közös munka és megosztás alábbi lehetőségeit: 
 
-* Jelentések és irányítópultok létrehozása munkatársakkal együtt egy *alkalmazás-munkaterületen*.
+* Jelentések és irányítópultok létrehozása a munkatársakkal a *munkaterületeken*.
 * A létrehozott irányítópultok és jelentések egyesítése *alkalmazásként*, és ezek közzététele egy nagyobb csoport vagy a teljes cég számára.
 * Az irányítópultok és jelentések megosztása csak néhány személlyel, a szolgáltatásból vagy a Power BI-mobilalkalmazásokból.
 - Jelentések nyomtatása.
@@ -35,25 +35,25 @@ Bármelyik lehetőséget is válassza, az irányítópultok megosztásához [Pow
 
 *Alkalmazások a Power BI szolgáltatásban*
 
-## <a name="collaborate-with-coworkers-in-an-app-workspace"></a>Együttműködés a munkatársakkal egy alkalmazás-munkaterületen
+## <a name="collaborate-with-coworkers-in-a-workspace"></a>Együttműködés a munkatársakkal egy munkaterületen
 
-Amikor a csapatok együtt dolgoznak, ugyanazon dokumentumokhoz való hozzáférésre van szükség a gyors együttműködés céljából. A Power BI alkalmazás-munkaterületei biztosítják azt a helyet, ahol a csapatok megoszthatják egymással a számukra fontos irányítópultok, jelentések, adatkészletek és munkafüzetek tulajdonjogát és felügyeletét. Néha a Power BI-felhasználók a saját munkaterületeiket a céges struktúrák alapján hozzák létre, míg máskor konkrét projektekhez készítenek munkaterületeket. Más cégek több munkaterületet használnak a jelentések és az irányítópultok különböző verzióinak tárolására. 
+Amikor a csapatok együtt dolgoznak, ugyanazon dokumentumokhoz való hozzáférésre van szükség a gyors együttműködés céljából. A Power BI munkaterületei biztosítják azt a helyet, ahol a csapatok megoszthatják egymással a számukra fontos irányítópultok, jelentések, adatkészletek és munkafüzetek tulajdonjogát és felügyeletét. Néha a Power BI-felhasználók a saját munkaterületeiket a céges struktúrák alapján hozzák létre, míg máskor konkrét projektekhez készítenek munkaterületeket. Más cégek több munkaterületet használnak a jelentések és az irányítópultok különböző verzióinak tárolására. 
 
-Az alkalmazás-munkaterületek olyan szerepköröket biztosítanak, amelyek meghatározzák a munkatársak adott jogosultságait. Az ilyen szerepkörökkel meghatározható, hogy kik kezelhetik a teljes munkaterületet, és kik bővíthetik azt csak tartalommal.
+A munkaterületek olyan szerepköröket biztosítanak, amelyek meghatározzák a munkatársak adott jogosultságait. Az ilyen szerepkörökkel meghatározható, hogy kik kezelhetik a teljes munkaterületet, és kik bővíthetik azt csak tartalommal.
 
-![Alkalmazás munkaterületei](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
+![Munkaterületek](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
 
-Egyes felhasználók természetes módon helyeznek el tartalmat a Saját munkaterületen, és osszák meg azt. Az alkalmazás-munkaterületek jobb együttműködést biztosítanak a Saját munkaterülethez képest, mivel lehetővé teszik a tulajdonjog megosztását. Ön és csapata egyszerűen végezhet frissítéseket, vagy biztosíthat hozzáférést másoknak. A Saját munkaterület egyszeri használatra vagy személyes tartalom esetén nyújt optimális megoldást az egyéni felhasználóknak.
+Egyes felhasználók természetes módon helyeznek el tartalmat a Saját munkaterületen, és osszák meg azt. A munkaterületek jobb együttműködést biztosítanak a Saját munkaterülethez képest, mivel lehetővé teszik a tulajdonjog megosztását. Ön és csapata egyszerűen végezhet frissítéseket, vagy biztosíthat hozzáférést másoknak. A Saját munkaterület egyszeri használatra vagy személyes tartalom esetén nyújt optimális megoldást az egyéni felhasználóknak.
 
-Tegyük fel, hogy van egy kész irányítópultja, amelyet szeretne megosztani a munkatársaival. Mi a legjobb módszer az irányítópult munkatársakkal való megosztásának? A válasz számos tényezőtől függ. Ha egy adott munkatárs tulajdonjogot szeretne kapni az irányítópulthoz, és naprakészen kell tartania azt, vagy az alkalmazás-munkaterület minden tartalmához hozzá kell férnie, akkor a legjobb, ha felveszi az irányítópultot a munkaterületre. Ha a kollégának a munkaterület összes tartalma helyett csak egy adott irányítópultot kell látnia, ismét több alternatíva közül lehet választani. Ha az irányítópult része egy nagyobb tartalomcsomagnak, amelyet számos munkatárssal kell megosztani, akkor valószínűleg egy alkalmazás közzététele a legjobb választás. Azonban ha a munkatársnak csak egyetlen irányítópultra van szüksége, az adott irányítópult megosztása lehet a legjobb megoldás. 
+Tegyük fel, hogy van egy kész irányítópultja, amelyet szeretne megosztani a munkatársaival. Mi a legjobb módszer az irányítópult munkatársakkal való megosztásának? A válasz számos tényezőtől függ. Ha egy adott munkatárs tulajdonjogot szeretne kapni az irányítópulthoz, és naprakészen kell tartania azt, vagy a munkaterület minden tartalmához hozzá kell férnie, akkor a legjobb, ha felveszi az irányítópultot a munkaterületre. Ha a kollégának a munkaterület összes tartalma helyett csak egy adott irányítópultot kell látnia, ismét több alternatíva közül lehet választani. Ha az irányítópult része egy nagyobb tartalomcsomagnak, amelyet számos munkatárssal kell megosztani, akkor valószínűleg egy alkalmazás közzététele a legjobb választás. Azonban ha a munkatársnak csak egyetlen irányítópultra van szüksége, az adott irányítópult megosztása lehet a legjobb megoldás. 
 
-További információ az [alkalmazás-munkaterületek létrehozásáról](service-create-workspaces.md).
+További információ a [munkaterületek létrehozásáról](service-create-workspaces.md).
 
 **Tudta?** A Power BI előzetes verziójú, új munkaterületi felhasználói felületet kínál. Az [Új munkaterületek létrehozása (előzetes verzió)](service-create-the-new-workspaces.md) című cikkben további információt talál a munkaterületek jövőbeni változásairól. 
 
 ## <a name="distribute-data-and-insights-by-creating-an-app"></a>Adatok és betekintések terjesztése alkalmazás létrehozásával
 
-Tegyük fel, hogy szeretné széles közönséggel megosztani az irányítópultját. Ön és a munkatársai létrehoztak egy *alkalmazás-munkaterületet*, majd az alkalmazás-munkaterületen létrehozták és kidolgozták az irányítópultokat, jelentéseket és adatkészleteket. Következő lépésként ki kell jelölnie a kívánt irányítópultokat és jelentéseket, és közzé kell tennie őket alkalmazásként &#151; egy adott csoportnak vagy a teljes cégnek. 
+Tegyük fel, hogy szeretné széles közönséggel megosztani az irányítópultját. Ön és a munkatársai létrehoztak egy *munkaterületet*, majd a munkaterületen létrehozták és kidolgozták az irányítópultokat, jelentéseket és adatkészleteket. Következő lépésként ki kell jelölnie a kívánt irányítópultokat és jelentéseket, és közzé kell tennie őket alkalmazásként &#151; egy adott csoportnak vagy a teljes cégnek. 
 
 ![Alkalmazás közzététele ikon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
@@ -66,7 +66,7 @@ Ahhoz, hogy a felhasználók megtekinthessék az alkalmazást, vagy Power BI Pro
 Alkalmazásokat munkahelyen kívüli személyeknek is közzétehet. Az ilyen személyek megtekinthetik az alkalmazás tartalmát, műveleteket végezhetnek vele, de megosztani nem tudják azt másokkal.
 
 ## <a name="share-dashboards-and-reports"></a>Irányítópultok és jelentések megosztása
-Tegyük fel, hogy véglegesített egy irányítópultot és egy jelentést a Saját munkaterületen vagy egy alkalmazás-munkaterületen, és szeretne hozzáférést adni néhány másik személynek. Ennek egyik módja az, ha *megosztja* őket. 
+Tegyük fel, hogy véglegesített egy irányítópultot és egy jelentést a Saját munkaterületen vagy egy munkaterületen, és szeretne hozzáférést adni néhány másik személynek. Ennek egyik módja az, ha *megosztja* őket. 
 
 ![Megosztás ikon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-in-situ.png)
 

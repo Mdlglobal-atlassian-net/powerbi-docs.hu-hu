@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 11/01/2018
-ms.openlocfilehash: fc0234536415c758992cec629452a3e629c46ad1
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 3ad4335cabac159aee38d54fbfff0f689009fd68
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973327"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136599"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Beágyazás jelentéskijelzővel a SharePoint Online-ban
 
@@ -75,7 +75,7 @@ Ahhoz, hogy a jelentést beágyazza a SharePoint Online-ba, először is szüks�
 
     ![SP-jelentés betöltve](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
 
-## <a name="granting-access-to-reports"></a>Hozzáférés biztosítása a jelentésekhez
+## <a name="grant-access-to-reports"></a>Hozzáférés biztosítása a jelentésekhez
 
 Egy jelentés beágyazása a SharePoint Online-ba még nem ad automatikusan engedélyt a felhasználóknak arra, hogy megtekinthessék a jelentést. A megtekintési engedélyeket a Power BI szolgáltatásban kell beállítani.
 
@@ -152,7 +152,7 @@ Egy jelentést SharePointban megtekintő felhasználónak vagy **Power BI Pro**-
 
 ## <a name="known-issues-and-limitations"></a>Ismert problémák és korlátozások
 
-* Hiba: „Hiba történt, kérjük jelentkezzen ki, és újból be, majd nyissa meg ismét az oldalt. Korrelációs azonosító: nincs definiálva, HTTP-válasz állapota: 400, kiszolgálói hibakód 10001, üzenet: Hiányzó frissítési token”
+* Hiba: „Hiba történt, kérjük jelentkezzen ki, és újból be, majd nyissa meg ismét az oldalt. Korrelációs azonosító: nem meghatározott, http-válasz állapota: 400, kiszolgáló hibakódja: 10001, üzenet: Hiányzó frissítési jogkivonat”
   
   Ha ez a hibaüzenet jelenik meg, próbálkozzon az alábbi hibaelhárítási lépések egyikével.
   
@@ -174,9 +174,10 @@ Egy jelentést SharePointban megtekintő felhasználónak vagy **Power BI Pro**-
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Modern weboldalak végfelhasználók általi létrehozásának engedélyezése vagy letiltása](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
-[Alkalmazások létrehozása és terjesztése a Power BI-ban](service-create-distribute-apps.md)  
-[Irányítópult megosztása munkatársakkal és másokkal](service-share-dashboards.md)  
-[Mi a Power BI Premium?](service-premium.md)  
+* [Modern weboldalak végfelhasználók általi létrehozásának engedélyezése vagy letiltása](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
+* [Alkalmazások létrehozása és terjesztése a Power BI-ban](service-create-distribute-apps.md)  
+* [Irányítópult megosztása munkatársakkal és másokkal](service-share-dashboards.md)  
+* [Mi a Power BI Premium?](service-premium.md)
+* [Jelentés beágyazása egy biztonságos portálon vagy webhelyen](service-embed-secure.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

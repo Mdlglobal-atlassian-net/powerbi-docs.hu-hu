@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 98250e30d1ca944aa536e0d8a05e6ee6c227fc61
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 87e2ff9bf8e4eb87b4b915492bf8cfa4a97a9150
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546754"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008856"
 ---
 # <a name="connect-to-xero-with-power-bi"></a>Csatlakozás a Xerohoz a Power BI szolgáltatással
 A Xero egy egyszerűen használható online számviteli program, amelyet kifejezetten kisvállalkozások számára terveztek. Ezzel a Power BI-tartalomcsomaggal lenyűgöző vizualizációkat készíthet a Xero pénzügyi adatai alapján. Az alapértelmezett irányítópulton számos kisvállalati mérőszám található, többek között a likviditás, a bevétel és kiadások, az eredménytrend, a kintlévőség-behajtási arányszám és a megtérülés.
@@ -81,15 +81,15 @@ Az adatkészlet a következő táblákat is tartalmazza a jelentések és irány
 * Xero-fiókok
 
 ## <a name="system-requirements"></a>Rendszerkövetelmények
-A Xero "Standard + Reports" vagy "Advisor" tartalomcsomagjának eléréséhez a következő szerepkörök szükségesek.
+A Xero tartalomcsomagjának eléréséhez a következő szerepkörök szükségesek: „Standard + Reports” vagy „Advisor”.
 
 <a name="FindingParams"></a>
 
-## <a name="finding-parameters"></a>Paraméterek keresése
+## <a name="finding-parameters"></a>Paraméterek helye
 Adjon meg egy nevet, amelyen a cégét tudja nyomon követni a Power BI-ban. Ezáltal több különböző céghez is kapcsolódhat. Fontos, hogy nem kapcsolódhat többször ugyanahhoz a céghez, mert ez befolyással van az ütemezett frissítésre.   
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
-* A Xero-felhasználóknak a következő szerepkörökkel kell rendelkezniük a Xero "Standard + Reports" vagy "Advisor" Power BI-tartalomcsomagjának eléréséhez. A tartalomcsomag a felhasználóalapú engedélyektől függően ad hozzáférést a jelentésadatokhoz a Power BI-on keresztül.  
+* A Xero-felhasználóknak a következő szerepkörökkel kell rendelkezniük a Xero Power BI-tartalomcsomagjának eléréséhez: „Standard + Reports” vagy „Advisor”. A tartalomcsomag a felhasználóalapú engedélyektől függően ad hozzáférést a jelentésadatokhoz a Power BI-on keresztül.  
 * Ha a rendszer egy kis ideig tölt, majd értesítést ad a sikertelenségről, akkor jegyezze meg, hogy mennyi idő után jelent meg a hibaüzenet. Fontos, hogy a Xero által kiadott hozzáférési jogkivonat csak 30 percig érvényes, ezért az ennyi idő alatt betölthetőnél több adattal dolgozó fiókoknál a betöltés nem sikerül. Folyamatosan dolgozunk a hiba elhárításán.
 * A betöltés idejére az irányítópult csempéi általános betöltési állapotba kerülnek. Ez a betöltés teljes befejeződéséig várhatóan nem változik. Ha megkapja az értesítést a betöltés befejezéséről, de a csempék továbbra is töltést jeleznek, akkor próbálja meg frissíteni az irányítópult csempéit a jobb felső sarokban lévő három pont (...) használatával.
 * Ha a tartalomcsomag nem frissül, akkor ellenőrizze, hogy nem kapcsolódott-e egynél többször ugyanahhoz a céghez a Power BI-ban. A Xero csak egy aktív kapcsolatot engedélyez egy cég számára, és ha egynél többször kapcsolódik ugyanahhoz, akkor megjelenhet egy hibaüzenet, amely szerint a hitelesítő adatai nem érvényesek.  

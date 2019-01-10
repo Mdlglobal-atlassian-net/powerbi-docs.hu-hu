@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 909e15fa843df3f87e1cdfa25b45f60996b3dca0
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4ad7ce28c512f69e144af98098ab9f13a15b6023
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545684"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008626"
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Kapcsolódás a Marketo eszközhöz a Power BI használatával
 A Marketo eszközhöz készült Power BI-tartalomcsomag az érdeklődőkhöz és tevékenységeikhez kapcsolódó adatokkal segíti a Marketo-fiók elemzését. A kapcsolat lekéri az adatokat, és automatikusan a rendelkezésére bocsátja a rájuk épülő irányítópultot, valamint a kapcsolódó jelentéseket.
@@ -59,7 +59,7 @@ A Power BI-ban a következő tevékenységadatok érhetők el a Marketo rendszer
 | Táblázat neve | Leírás |
 | --- | --- |
 | EmailActivities (E-mail-tevékenység) |Érdeklődők/kapcsolatok számára küldött e-mailek adatai, beleértve az eszközöket, a kategóriákat, a visszapattanások számát és százalékát, a kattintások számát és százalékát, a megnyitások számát és százalékát, valamint a program nevét. A Power BI-ban megjelenített e-mail-tevékenység az e-mailek kézbesítési eredményességéről készült abszolút jelentés, amely nem alkalmaz további logikát az adatokra. Ezért a Marketo-ügyfél és a Power BI néha eltérő eredményeket adhat. |
-| ProgramActivities (Programtevékenység) |Adatok olyan programokról, amelyeknek az állapotában változás állt be. Ide tartozik az ok, a sikeresség, a programbeszerzések száma és százaléka, valamint a sikeres programfuttatások száma és százaléka. |
+| ProgramActivities (Programtevékenység) |Adatok olyan programokról, amelyeknek az állapotában változás állt be. Ide tartoznak például a következő adatok: ok, a sikeresség, a programbeszerzések száma és százaléka, valamint a sikeres programfuttatások száma és százaléka. |
 | WebPageActivities (Weblap-aktivitás) |Felhasználói weblaplátogatások adatai, beleértve a keresési ügynököt, a felhasználói ügynököt, a weblapot és az aktivitás időpontját (óra). |
 | DateTable (Dátumtáblázat) |Dátumok a mai naptól egy évre visszamenőleg.  Lehetőséget ad a Marketo adatainak időpont szerinti elemzésére. |
 | Érdeklődők |Érdeklődőkre vonatkozó információ, például cég, jövedelem nagysága, alkalmazottak száma, ... ország, iparág, érdeklődői pontszám, érdeklődői állapot. Az érdeklődők lekérése az e-mailek, a programok, és a weblapaktivitás adataiban lévő jelenlétük alapján történik. |

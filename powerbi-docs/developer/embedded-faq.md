@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/27/2018
-ms.openlocfilehash: 71cbae5f282883ca26a5bf0b2ae7b5609b86eb58
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.date: 12/20/2018
+ms.openlocfilehash: 3971651caf9be7e754f4232ffec8b4e4dbfdfe6d
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578796"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008419"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Gyakori kérdések – Power BI Embedded
 
@@ -104,7 +104,7 @@ Jelenleg nincs automatikus méretezés, ugyanakkor bármikor bármelyik API mér
 
 ### <a name="why-creatingscalingresuming-a-capacity-results-in-putting-the-capacity-into-a-suspended-state"></a>Miért módosítja a kapacitás létrehozása/méretezése/folytatása a kapacitás állapotát felfüggesztettre?
 
-A kapacitás kiépítése (méretezés/folytatás/létrehozás) sikertelen lehet. A kiépítési hívás hívójának ellenőriznie kell a kapacitás ProvisioningState tulajdonságát a Részletek beolvasása API-val: [Capacities - Get Details](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails) (Kapacitások – Részletek beolvasása).
+A kapacitás kiépítése (méretezés/folytatás/létrehozás) sikertelen lehet. A kiépítési hívás hívójának ellenőriznie kell a kapacitás ProvisioningState tulajdonságát a Részletek beolvasása API-val: [Kapacitások – Részletek beolvasása](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
 
 ### <a name="why-can-i-only-create-pbie-in-a-specific-region"></a>Miért csak egy adott régióban hozhatok létre PBIE-t?
 
@@ -321,3 +321,7 @@ A Power BI-adatok szerkesztéséről [itt](https://docs.microsoft.com/power-bi/s
 További információ: [A beágyazott alkalmazás hibaelhárítása](embedded-troubleshoot.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+
+### <a name="what-are-the-best-practices-to-improve-performance"></a>Mik a teljesítmény növelése érdekében ajánlott eljárások?
+
+[A Power BI Embedded teljesítménye](embedded-performance-best-practices.md)
