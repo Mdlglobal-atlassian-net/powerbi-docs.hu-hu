@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 12/19/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 04e00537db4ffbcb6c1a154cb69fb2c856bd7596
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 09c505d114eaa951978f23061d9c79c1b6870fad
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983370"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tippek és trükkök a színformázáshoz a Power BI-ban
 A Power BI sokféle lehetőséget kínál, amelyekkel egyedivé tehetők az irányítópultok és a jelentések. Ez a cikk néhány olyan ötletet fejt ki részletesen, amelyek segítségével meggyőzőbb, érdekesebb és az Ön igényeinek jobban megfelelő Power BI-vizualizációkat készíthet.
@@ -29,38 +29,35 @@ A következő tippeket kínáljuk Önnek. Van egy másik remek ötlete? Nagyszer
 * Széttartó színskálák használata
 * Művelet visszavonása a Power BI-ban
 
-A módosításhoz szerkesztenie kell a jelentést: jelölje ki saját **Jelentését** a **Saját munkaterület** panelen, majd válassza a **Jelentés szerkesztése** lehetőséget a felső menüben, ahogyan az alábbi ábrán látható.
+A módosításhoz szerkesztenie kell a jelentést: jelölje ki saját **Jelentését** a **Saját munkaterület** panelen, majd válassza a **Jelentés szerkesztése** lehetőséget a felső menüben, ahogyan az alábbi ábrán látható. Ez a példa az **Emberi erőforrások mintát** használja.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_1.png)
+![jelentésvászon a Jelentés szerkesztése elem kiemelésével](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
 Amikor a **Jelentés** vászon jobb oldalán megjelenik a **Vizualizációk** panel, megkezdheti a testre szabást.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_2.png)
+![jelentés a Formázás panellel](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
 
 ## <a name="change-the-color-of-a-single-data-point"></a>Egy adatpont színének módosítása
-Előfordul, hogy egy adott adatpontot szeretne kiemelni. Ez lehet egy újonnan bevezetett termék eladott mennyisége, vagy egy javuló minőségi mutató egy új program elindítása után. A Power BI-ban kiemelhet egy választott adatpontot a színe módosításával.
+Előfordul, hogy egy adott adatpontot szeretne kiemelni. Ez lehet egy újonnan bevezetett termék eladott mennyisége, vagy egy javuló minőségi mutató egy új program elindítása után. A Power BI-ban és a vizualizációtípusok többségénél kiemelhet egy választott adatpontot a színe módosításával.
 
-Az alábbi vizualizáció államokat rangsorol a megélhetési költségek szerint. 
+Az alábbi vizualizáció az értékesítési nyereségeket mutatja be alkalmazottanként az alapértelmezett színekkel. 
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_3.png)
+![területdiagram](media/service-tips-and-tricks-for-color-formatting/power-bi-area-chart.png)
 
-Képzelje el, hogy színes kiemeléssel gyorsan meg szeretné mutatni, hol áll Washington ebben a rangsorban. A lépések a következők:
+Az Annelie-hez tartozó terület nem jól látható, ezért színezéssel fogjuk jobban kiemelni. A lépések a következők:
 
 Bontsa ki az **Adatszínek** szakaszt. A következő jelenik meg.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_4.png)
+![a Formázás alatti Adatszínek terület](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors.png)
 
-Állítsa az **Összes megjelenítése** kapcsolót **Be** helyzetbe. Így a vizualizáció összes adatelemének színe megjelenik. A kurzort az adatpontok fölé helyezve engedélyezett a görgetés, tehát az adatpontok bármelyikét módosíthatja.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_5.png)
+Ebben az esetben válasszunk egy sötét de élénk színt, amely nem hasonló a Valery adataihoz használt színhez. Válassza ki az Annelie színmezőjében lévő lefelé mutató nyilat, válassza az **Egyéni szín** lehetőséget, és válasszon egy élénk kék színt.
 
-Állítsa most a **Washington** államhoz tartozó színt zöldre. A **Washington** elemig görgetve kattintson a színmezőben lévő nyílra a paletta megnyitásához.
+![színválasztás](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
+A választás után Annelie területe sokkal jobban megkülönböztethető a többi alkalmazottétól. 
 
-Miután választott, a **Washington** adatpont szép zöld, és kétségtelenül szembeszökő színt vesz fel.
-
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_7.png)
+![területdiagram, Annalie területe már élénk kék](media/service-tips-and-tricks-for-color-formatting/power-bi-color.png)
 
 A Power BI akkor is megjegyzi a választását és zölden jeleníti meg **Washingtont**, ha Ön megváltoztatja, majd visszaváltoztatja a vizualizáció típusát.
 

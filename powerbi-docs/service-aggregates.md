@@ -1,24 +1,24 @@
 ---
-title: Összesítések (összeg, átlag, maximum stb.) a vizualizációkban
-description: Diagramok összesítésének módosítása a Power BI-ban (összeg, átlag, maximum, stb.)
+title: Összesítésekkel (összeg, átlag stb.) végzett munka a Power BI szolgáltatásban
+description: Útmutató diagramok összesítésének módosításához a Power BI szolgáltatásban (összeg, átlag, maximum, stb.).
 author: mgblythe
-manager: kvivek
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2018
+ms.date: 12/21/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: dfc3006c37d6055bac435fceb05febd596f0cd1a
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 7a88cc7f210c6119e57a5dcf30920a95e180b85f
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026477"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983715"
 ---
-# <a name="aggregates-in-power-bi-visualizations"></a>Összesítések a Power BI-vizualizációkban
+# <a name="work-with-aggregates-sum-average-etc-in-the-power-bi-service"></a>Összesítésekkel (összeg, átlag stb.) végzett munka a Power BI szolgáltatásban
 ## <a name="what-is-an-aggregate"></a>Mi az az összesítés?
 Néha szükség van az adatok értékeinek matematikai összevonására. Ez a matematikai művelet lehet összeadás, átlagolás, maximumérték meghatározása, darabszám meghatározása, stb. Az adatok értékeinek összevonását *összesítésnek* nevezzük. Az ilyen matematikai műveletek eredménye az *összesítési érték*. 
 
@@ -70,7 +70,7 @@ Tegyük fel, hogy egy diagramban különböző termékekhez tartozó értékesí
 
 A mezők összesítésekor esetlegesen rendelkezésre álló lehetőségek:
 
-* **Összegzés mellőzése**. A lehetőség használatakor az adott mező egyes értékeit a rendszer különállóként kezeli, és nem összegzi. Gyakran használható, ha olyan számazonosítós oszlopról van szó, amelyet nem kell összeadni.
+* **Összegzés mellőzése**. A lehetőség használatakor az adott mező egyes értékeit a rendszer különállóként kezeli, és nem összegzi. Ezt akkor használhatja, ha olyan számazonosítós oszlopról van szó, amelyet nem kell összeadni.
 * **Összeg**. Összeadja a mezőben szereplő összes értéket.
 * **Átlag**. Az értékek számtani középértékét számítja ki.
 * **Minimum**. A legkisebb értéket mutatja.
@@ -79,7 +79,7 @@ A mezők összesítésekor esetlegesen rendelkezésre álló lehetőségek:
 * **Darabszám (eltérők).** A mezőkben lévő különböző értékek darabszámát adja vissza.
 * **Szórás.**
 * **Variancia**.
-* **Medián**.  A mediánt (középértéket) mutatja. Ez az az érték, amely hozzá képest ugyanannyi számú kisebb és nagyobb elemmel rendelkezik.  Ha két mediánról van szó, a Power BI átlagolja őket.
+* **Medián**.  A mediánt (középértéket) mutatja. Ez az az érték, amely képest ugyanannyi számú nála nem kisebb és nem nagyobb elem van.  Ha két mediánról van szó, a Power BI átlagolja őket.
 
 Nézzük például az alábbi adatokat:
 
@@ -141,11 +141,11 @@ VÁLASZ4:  A harmadik lehetőség pedig az, hogy tengelyen használja az adott m
 >[!NOTE]
 >Az egyetlen kivételt e szabály alól a pontdiagram képviseli, amely *megköveteli* az összesített értékek használatát az X és az Y tengelyeken.
 
-KÉRDÉS:  Miért nem lehet összesíteni a szöveges mezőket az SSAS-adatforrásoknál?
+KÉRDÉS:  Miért nem lehet összesíteni a szöveges mezőket az SQL Server Analysis Services- (SSAS-) adatforrásoknál?
 
-VÁLASZ:  Az SSAS MD élő kapcsolatai nem teszik lehetővé az ügyféloldali összesítéseket. Ez magában foglalja, az első, utolsó, átlag, min, max és összeg számítását.
+VÁLASZ:  A többdimenziós SSAS-modellekkel való élő kapcsolat nem engedélyezi ügyféloldali összesítés, így a first, last, avg, min, max, és sum használatát sem.
 
-KÉRDÉS:  Pontdiagramot használok, és szeretném, ha az adott mező *nem* szerepelne az összesítésben.  Hogyan lehet ezt elérni?
+KÉRDÉS:  Pontdiagramot használok, és szeretném, ha az adott mező *nem* szerepelne az összesítésben.  Hogyan?
 
 VÁLASZ:  A **Részletek** gyűjtőbe vegye fel a mezőt, ne az X vagy Y tengelyhez tartozó gyűjtőbe.
 

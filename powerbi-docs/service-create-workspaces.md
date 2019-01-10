@@ -7,25 +7,25 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f12974d4e53217fc6c29ad172153ec9c51ecc44e
-ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
+ms.openlocfilehash: 55f592101954ae5c0724fb5b48fb2571a1bdfc51
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53451421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983692"
 ---
 # <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Munkaterületek létrehozása munkatársakkal a Power BI-ban
 
-A Power BI-ban létrehozhat *munkaterületeket*, amelyeken együttműködhet munkatársaival irányítópult- és jelentésgyűjtemények létrehozásán és finomításán. Ezeket később olyan *alkalmazásokba* csomagolhatja, amelyeket a teljes szervezet vagy csak adott személyek vagy csoportok számára terjeszthet. 
+A Power BI-ban létrehozhat *munkaterületeket*, amelyeken együttműködhet munkatársaival irányítópult- és jelentésgyűjtemények létrehozásán és finomításán. A kollekciót később olyan *alkalmazásokba* csomagolhatja, amelyeket a teljes szervezet vagy csak adott személyek vagy csoportok számára terjeszthet. 
 
 ![Power BI-alkalmazások](media/service-create-workspaces/power-bi-apps-left-nav.png)
 
 Amikor létrehoz egy munkaterületet, egy mögöttes, társított Office 365-csoportot is létrehoz. A munkaterület felügyelete az Office 365-ben zajlik. A kollégákat hozzáadhatja tagként vagy rendszergazdaként ezekhez a munkaterületekhez. A munkaterületen együttműködhetnek az irányítópultokon, jelentéseken és más cikkeken, amelyeket a szélesebb közönség elé szeretne tárni. Az alkalmazás-munkaterületekhez adott tagoknak Power BI Pro-licencre van szüksége. 
 
-**Tudta?** A Power BI előzetes verziójú, új munkaterületi felhasználói felületet kínál. Az [Új munkaterületek létrehozása (előzetes verzió)](service-create-the-new-workspaces.md) című cikkben további információt talál a munkaterületek jövőbeni változásairól. 
+**Tudta?** A Power BI előzetes verziójú, új munkaterületi felhasználói felületet kínál. Az új munkaterületekről a [Munka szervezése az új munkaterületeken (előzetes verzió)](service-new-workspaces.md) című cikkből tájékozódhat részletesen. 
 
 ## <a name="video-apps-and-app-workspaces"></a>Videó: Alkalmazások és alkalmazás-munkaterületek
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -73,7 +73,7 @@ Az alkalmazás-munkaterület létrehozása után ideje feltölteni azt tartalomm
 
 Az alkalmazások a Power BI által támogatott összes külső szolgáltatással használhatók, így könnyen lekérheti az Ön által használt szolgáltatások, például a Microsoft Dynamics CRM, a Salesforce vagy a Google Analytics adatait. Szervezeti alkalmazások közzétételével eljuttathatja a szükséges adatokat a felhasználóihoz.
 
-A jelenlegi munkaterületeken emellett szervezeti, valamint külső tartalomcsomagokkal is csatlakozhat, például a Microsoft Dynamics CRM-mel, a Salesforce-szal és a Google Analyticsszel. Célszerű megfontolnia a szervezeti tartalomcsomagok alkalmazásokba való migrálását.
+A jelenlegi munkaterületeken emellett szervezeti, valamint külső tartalomcsomagokkal, például a Microsoft Dynamics CRM-mel, a Salesforce-szal és a Google Analyticsszel is csatlakozhat. Célszerű megfontolnia a szervezeti tartalomcsomagok alkalmazásokba való migrálását.
 
 ## <a name="distribute-an-app"></a>Alkalmazások terjesztése
 
@@ -84,12 +84,12 @@ Ha a tartalom elkészült, kiválaszthatja a közzétenni kívánt irányítópu
 ### <a name="how-are-apps-different-from-organizational-content-packs"></a>Miben különböznek az alkalmazások a vállalati tartalomcsomagoktól?
 Az alkalmazások a vállalati tartalomcsomagokból fejlődtek ki. Ha már vannak vállalati tartalomcsomagjai, azok továbbra is működnek az alkalmazásokkal párhuzamosan. Az alkalmazások néhány fontos dologban eltérnek a tartalomcsomagoktól. 
 
-* Miután az üzleti felhasználók telepítenek egy tartalomcsomagot, az elveszíti a csoportosított identitását: csupán más irányítópultokkal és jelentésekkel összekeveredett irányítópultok és jelentések listája. Az alkalmazások ezzel szemben telepítés után is megtartják a csoportosításukat és az identitásukat. Így az üzleti felhasználók egyszerűbben navigálhatnak közöttük az idők során.
+* Miután az üzleti felhasználók telepítenek egy tartalomcsomagot, az elveszíti a csoportosított identitását: csupán más irányítópultokkal és jelentésekkel összekeveredett irányítópultok és jelentések listája. Az alkalmazások ezzel szemben telepítés után is megtartják a csoportosításukat és az identitásukat. Ezzel a csoportosítással az üzleti felhasználók egyszerűbben navigálhatnak közöttük az idők során.
 * Létrehozhat több tartalomcsomagot is egy munkaterületről, az alkalmazás azonban egy-az-egyhez kapcsolatban áll a munkaterületével. 
 * Terveink szerint a vállalati tartalomcsomagok idővel elavulttá válnak, ezért javasoljuk, hogy mostantól alkalmazásokat hozzon létre.  
 * Az új munkaterület felhasználói felületének előzetes verziójában megtesszük az első lépéseket a szervezeti tartalomcsomagok elavulttá tétele felé. Az előzetes verziós munkaterületekben nem hozhat létre és használhat ilyen tartalomcsomagokat.
 
-A jelenlegi és az új alkalmazás-munkaterületek összehasonlításához tekintse meg a [Miben különböznek az új alkalmazás-munkaterületek a meglévőktől?](service-create-the-new-workspaces.md#how-are-the-new-app-workspaces-different-from-current-app-workspaces) című cikket. 
+A kettő összehasonlításához tekintse meg a [Miben különböznek az új alkalmazás-munkaterületek a meglévőktől?](service-new-workspaces.md#how-are-the-new-workspaces-different-from-current-workspaces) című cikket. 
 
 ## <a name="next-steps"></a>Következő lépések
 * [Alkalmazások telepítése és használata a Power BI-ban](service-create-distribute-apps.md)

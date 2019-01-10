@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 01/02/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e0721efaaca879ffb2915315af9aea4dbafca3ca
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 4b76857e6b0c7f465ce7033b59cdb0b5340c5c70
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983669"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Adatforrások a Power BI szolgáltatásban
 A Power BI legfontosabb összetevői maguk az adatok. Amikor adatokat vizsgál, diagramokat és irányítópultokat hoz létre, és kérdéseket tesz fel a Q&A-jel, akkor a kapott vizualizációk és válaszok alapjául szolgáló adatok valójában egy adatkészletből származnak. De honnan származik ez az adatkészlet? Természetesen egy adatforrásból.
 
-Ez a cikk sorra veszi a különböző típusú adatforrásokat, amelyekhez a Power BI szolgáltatásból kapcsolódhat. Ne feledje, hogy adatokhoz sok más típusú adatforrásból is hozzájuthat. Azok eléréséhez azonban először szükség lehet a Power BI Desktopnak vagy az Excel speciális lekérdezési és modellezési funkcióinak a használatára. Ezt később tárgyaljuk részletesebben. Egyelőre tekintsük át azokat a különféle adatforrástípusokat, amelyekhez közvetlenül a Power BI szolgáltatás webhelyéről kapcsolódhat.
+Ez a cikk sorra veszi a különböző típusú adatforrásokat, amelyekhez a Power BI szolgáltatásból kapcsolódhat. Ne feledje, hogy adatokhoz sok más típusú adatforrásból is hozzájuthat. Az ilyen erőforrások eléréséhez azonban először szükség lehet a Power BI Desktopnak vagy az Excel speciális lekérdezési és modellezési funkcióinak a használatára. Ezt később tárgyaljuk részletesebben. Egyelőre tekintsük át azokat a különféle adatforrástípusokat, amelyekhez közvetlenül a Power BI szolgáltatás webhelyéről kapcsolódhat.
 
 Ezen adatforrások bármelyikéből úgy juthat adatokhoz a Power BI-ban, hogy a **Saját munkaterület** > **Adatok beolvasása** lehetőségre kattint.
 
@@ -31,7 +31,7 @@ Ezen adatforrások bármelyikéből úgy juthat adatokhoz a Power BI-ban, hogy a
 
 **Excel** (.xlsx, xlxm) – Az Excel egyedülálló abban a tekintetben, hogy egy munkafüzet saját kezűleg bevitt adatokat ugyanúgy tartalmazhat, mint külső adatforrásból a Power Query (az Excel 2016-ban Beolvasás és átalakítás) vagy a Power Pivot használatával lekérdezett és beolvasott adatokat. Importálhat adatokat munkafüzetben lévő táblázatokból (az adatoknak *kötelező* táblázatban lennie), vagy importálhat adatmodellbe beolvasott adatokat. További tudnivalókat az [Adatok beolvasása az Excelből](service-get-data-from-files.md) című cikkben talál.
 
-**Power BI Desktop** (.pbix) – A Power BI Desktop használatával lekérdezhet és beolvashat külső adatforrásban lévő adatokat, kibővítheti az adatmodellt mértékekkel és kapcsolatokkal, és jelentéseket hozhat létre. A Power BI Desktop-fájlok importálható a Power BI-webhelyre. A Power BI Desktop gyakorlott felhasználók számára ideális, akik alaposan ismerik az adatforrásokat, az adatlekérdezéseket és az -átalakításokat, valamint az adatmodellezés fogalmait. További információt talál a [Kapcsolódás adatokhoz a Power BI Desktopban](desktop-connect-to-data.md) című cikkben.
+**Power BI Desktop** (.pbix) – A Power BI Desktop használatával lekérdezhet és beolvashat külső adatforrásban lévő adatokat, kibővítheti az adatmodellt mértékekkel és kapcsolatokkal, és jelentéseket hozhat létre. A Power BI Desktop-fájlok importálható a Power BI-webhelyre. A Power BI Desktop gyakorlott felhasználók számára ideális, akik alaposan ismerik az adatforrásokat, az adatlekérdezéseket és az -átalakításokat, valamint az adatmodellezés fogalmait. További információt a [Kapcsolódás adatokhoz a Power BI Desktopban](desktop-connect-to-data.md) című cikkben talál.
 
 **Vesszővel tagolt értékek** (.csv) – Ezek a fájlok adatsorokat tartalmazó, egyszerű szöveges fájlok. Minden sor egy vagy több értéket tartalmaz, vesszővel elválasztva. Egy neveket és címeket tartalmazó .csv-fájl például több sorból állhat, és minden sorban az utónév, vezetéknév, cím, város, állam stb. értékeket tartalmazhatja. .csv-fájlba nem importálhat adatokat, de sok alkalmazás, például az Excel képes egy különálló táblázat adatait .csv-fájlba menteni.
 
@@ -55,7 +55,7 @@ Egy tartalomcsomag előkészítve tartalmaz minden szükséges adatot és jelent
 
 **Helyszíni adatbázisok** – A Power BI szolgáltatásból közvetlenül kapcsolódhat az SQL Server Analysis Services táblázatos modellű adatbázisaihoz. Power BI Enterprise Gateway szükséges. Ha nem tudja biztosan, hogyan kapcsolódhat a cége táblázatos modellű adatbázisához, akkor egyeztessen a rendszergazdával vagy az informatikai részleggel. További tájékoztatást a [Táblázatos SQL Server Analysis-adatok a Power BI-ban](sql-server-analysis-services-tabular-data.md) című cikkben talál.
 
-A cége más típusú adatbázisaihoz először a Power BI Desktop vagy az Excel használatával kell kapcsolódnia, hogy lekérdezze és beolvassa az adatokat egy adatmodellbe. Ezután importálhatja a fájlt a Power BI-ba, ahol létrejön egy adatkészlet. Ha beállítja az ütemezett frissítést, akkor a Power BI a fájlban lévő kapcsolódási információ és a konfigurált frissítési beállítások alapján közvetlenül az adatforráshoz kapcsolódva kérdezi le a frissítéseket. Ezeket a frissítéseket aztán betölti a Power BI-ban lévő adatkészletbe. További információt a [Kapcsolódás adatokhoz a Power BI Desktopban](desktop-connect-to-data.md) című cikkben talál.
+A cége más típusú adatbázisaihoz először a Power BI Desktop vagy az Excel használatával kell kapcsolódnia, hogy lekérdezze és beolvassa az adatokat egy adatmodellbe. Ezután importálhatja a fájlt a Power BI-ba, ahol létrejön egy adatkészlet. Ha konfigurálja az ütemezett frissítést, akkor a Power BI a fájlban lévő kapcsolódási információ és a konfigurált frissítési beállítások alapján közvetlenül az adatforráshoz kapcsolódva kérdezi le a frissítéseket. Ezeket a frissítéseket aztán betölti a Power BI-ban lévő adatkészletbe. További információt a [Kapcsolódás adatokhoz a Power BI Desktopban](desktop-connect-to-data.md) című cikkben talál.
 
 ## <a name="what-if-my-data-comes-from-a-different-source"></a>Mi a helyzet, ha az adataim másféle forrásból származnak?
 A Power BI-jal több százféle adatforrás használható. Az adatoknak azonban az eredetüktől függetlenül olyan formátumúnak kell lenniük, amelyből a Power BI szolgáltatás jelentéseket és irányítópultokat képes létrehozni Q&A-kérdések megválaszolásához és a többi feladat megoldásához.
@@ -64,21 +64,21 @@ Bizonyos adatforrásokban az adatok eleve a Power BI szolgáltatás által kezel
 
 Más esetekben szükséges lehet a kívánt adatokat egy fájlba lekérdezni és betölteni. Tegyük fel, hogy logisztikai adatai vannak egy adattárházbeli adatbázisban a cége egyik kiszolgálóján. Nem kapcsolódhat közvetlenül az adatbázishoz a Power BI szolgáltatásban, hogy megkezdje az adatok vizsgálatát (hacsak nem táblázatos modellű adatbázis). A Power BI Desktop vagy az Excel használatával viszont egy adatmodellbe kérdezheti le és olvashatja be, majd fájlként mentheti a logisztikai adatokat. Ezt a fájlt aztán importálhatja a Power BI-ba, ahol létrejön egy adatkészlet.
 
-Nyilván arra gondol, hogy azok a logisztikai adatok naponta változnak az adatbázisban. Hogyan ellenőrizhetem, hogy az adatkészletem frissítve lesz a Power BI-ban? – A Power BI Desktop- vagy Excel-fájlból az adatokkal együtt kapcsolódási információk is importálódnak az adatkészletbe. Ha ütemezett frissítést állít be, vagy manuálisan frissíti az adatkészletet, akkor a Power BI az adatkészletben lévő kapcsolódási információ és néhány további beállítás alapján közvetlenül kapcsolódik az adatbázishoz, lekérdezi a frissítéseket, és beolvassa őket az adatkészletbe. A helyszíni kiszolgáló és a Power BI közötti biztonságos adatátvitelhez valószínűleg Power BI-átjáró szükséges. A jelentések és az irányítópultok vizualizációi automatikusan frissülnek.
+Nyilván arra gondol, hogy azok a logisztikai adatok naponta változnak az adatbázisban. Hogyan biztosítható, hogy az adathalmaz frissítve legyen a Power BI-ban? – A Power BI Desktop- vagy Excel-fájlból az adatokkal együtt kapcsolódási információk is importálva lesznek az adathalmazba. Ha ütemezett frissítést konfigurál, vagy manuálisan frissíti az adathalmazt, akkor a Power BI az adathalmazban lévő kapcsolódási információ és néhány további beállítás alapján közvetlenül kapcsolódik az adatbázishoz, lekérdezi a frissítéseket, és beolvassa őket az adathalmazba. A helyszíni kiszolgáló és a Power BI közötti biztonságos adatátvitelhez valószínűleg Power BI-átjáró szükséges. A jelentések és az irányítópultok vizualizációi automatikusan frissülnek.
 
 Mint láthatja, önmagában az, hogy az adatforráshoz nem lehet közvetlenül a Power BI-ból kapcsolódni, még nem jelenti azt, hogy nem olvashatja be őket a Power BI-ba. Mindez csupán néhány további lépést és talán némi informatikai segítséget igényel. További információ: [Adatforrások a Power BI Desktopban](desktop-data-sources.md).
 
 ## <a name="some-more-details"></a>További részletek
 A Power BI használata során gyakran találkozik az „adatkészlet” és az „adatforrás” kifejezéssel. Ezeket gyakran azonos értelemben használják, pedig valójában két különböző, bár összefüggő dolgot jelentenek.
 
-Amikor az Adatok beolvasása funkcióval egy tartalomcsomaghoz vagy fájlhoz kapcsolódik, és adatokat importál, vagy amikor egy élő adatforráshoz kapcsolódik, akkor a Power BI-ban automatikusan létrejön egy ***adatkészlet***. Az adatkészletek az adatforrást leíró információt, az adatforrásbeli hitelesítő adatokat, sok esetben pedig az adatoknak egy, az adatforrásból másolt részhalmazát is tartalmazzák. A jelentésekben és irányítópultokon létrehozott vizualizációk többségében az adatkészletben lévő adatok látszanak.
+Amikor az Adatok beolvasása funkcióval egy tartalomcsomaghoz vagy fájlhoz kapcsolódik, és adatokat importál, vagy amikor egy élő adatforráshoz kapcsolódik, akkor a Power BI-ban automatikusan létrejön egy ***adatkészlet***. Az adathalmazok az adatforrást leíró információt, az adatforrásbeli hitelesítő adatokat, sok esetben pedig az adatoknak egy, az adatforrásból másolt részhalmazát is tartalmazzák. A jelentésekben és irányítópultokon létrehozott vizualizációk többségében az adatkészletben lévő adatok látszanak.
 
 Egy ***adatforrás*** az adatkészletbeli adatok valódi származási helye. Ez lehet például online szolgáltatás, mint a Google Analytics vagy a QuickBooks, egy felhőbeli adatbázis, mint az Azure SQL Database, vagy a cége egy helyi számítógépén vagy kiszolgálóján tárolt adatbázis vagy fájl.
 
 ### <a name="data-refresh"></a>Adatfrissítés
 Ha helyi vagy cégén belüli meghajtóra menti a fájljait, akkor a Power BI-beli adatkészlet frissítéséhez Power BI-átjáróra lehet szükség. A számítógépnek, amelyen a fájlt tárolja, bekapcsolva kell lennie a frissítés idején. A fájlt újra is importálhatja, vagy használhatja az Excel vagy a Power BI Desktop Közzététel lehetőségét, de ezek nem automatizált folyamatok.
 
-Ha a fájlokat a OneDrive Vállalati verziójára vagy a SharePoint-csapatwebhelyekre menti, majd ezekhez kapcsolódik, vagy importálja őket a Power BI-ban, akkor az adatkészlete, a jelentései és az indítópultjai is mindig naprakészek lesznek. Mivel a OneDrive és a Power BI is a felhőben van, a Power BI közvetlenül, körülbelül óránként egyszer tud a mentett fájlhoz kapcsolódni, és frissítéseket keresni. Találat esetén az adatkészlet és minden vizualizáció automatikusan frissül.
+Ha a fájlokat a OneDrive Vállalati verziójára vagy a SharePoint-csapatwebhelyekre menti, majd ezekhez kapcsolódik, vagy importálja őket a Power BI-ban, akkor az adathalmaza, a jelentései és az indítópultjai is mindig naprakészek lesznek. Mivel a OneDrive és a Power BI is a felhőben van, a Power BI közvetlenül, körülbelül óránként egyszer tud a mentett fájlhoz kapcsolódni, és frissítéseket keresni. Találat esetén az adatkészlet és minden vizualizáció automatikusan frissül.
 
 A szolgáltatásokból származó tartalomcsomagok automatikusan frissülnek. Ez többnyire naponta egyszer történik meg. Frissíthet manuálisan is, de hogy megjelennek-e a frissített adatok, az a szolgáltatótól függ. A cége más tagjaitól származó tartalomcsomagoknál számít a felhasznált adatforrás és az, hogy a tartalomcsomag létrehozója hogyan állította be a frissítést.
 
@@ -88,7 +88,7 @@ Az SQL Server Analysis Services egyedülálló abban a tekintetben, hogy amikor 
 
 Az adatfrissítés kiemelten fontos a Power BI-ban, és túlságosan mély témakör ahhoz, hogy itt kifejtsük. Ha szeretné alaposan körüljárni, akkor olvassa el az [Adatfrissítés a Power BI-ban](refresh-data.md) című cikket.
 
-## <a name="considerations-and-limitations"></a>Szempontok és korlátozások
+## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 A Power BI szolgáltatásban használt összes adatforrásra érvényesek az alábbi szempontok és korlátozások. Léteznek más, egyes funkciókra vonatkozó korlátozások is, de a következő felsorolás a Power BI szolgáltatás egészére érvényes:
 
 * **Adatkészletek méretkorlátja** – A Power BI szolgáltatásban az egyes adatkészletek méretének felső határa 1 GB.

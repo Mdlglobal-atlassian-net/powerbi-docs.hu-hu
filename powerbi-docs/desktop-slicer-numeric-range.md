@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 01/02/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f997ee7574c5dd9dc6b4d28767d599a97bf297ed
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a2402872744b3029e37bf49eaaeae27a3ad95734
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669842"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983623"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>A numerikustartomány-szeletelő használata a Power BI Desktopban
 A **numerikustartomány-szeletelővel** számos különféle szűrőt alkalmazhat az adatmodellek bármely numerikus oszlopára. Választhat, hogy számok **között**, egy számnál **kisebb vagy egyenlő** vagy egy számnál **nagyobb vagy egyenlő** értékekre szűr. Egyszerűnek tűnik, de nagyon hatékony módja az adatok szűrésének.
@@ -54,6 +54,14 @@ Végül ha a **Nagyobb vagy egyenlő** lehetőséget választjuk, a csúszkasáv
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Egész számhoz illeszkedés a numerikustartomány-szeletelőnél
 
 A numerikustartomány-szeletelő egész számokhoz illeszkedik, ha a mögöttes mező adattípusa **Egész szám**. Ezzel lehetővé válik, hogy a szeletelőn egyszerűen válasszon ki egész számokat. A **Tizedes tört** típusú mezőkkel törtszámokat írhat be. A szövegmezőre alkalmazott formázás megegyezik a mező formázásával, bár beírhat vagy kijelölhet pontosabb számokat.
+
+## <a name="display-formatting-with-the-date-range-slicer"></a>Formázás megjelenítése a dátumtartomány-szeletelővel
+
+Amikor egy időtartományt jelenít meg vagy állít be szeletelő használatával, a dátum mindig a **Rövid dátum** formátumban jelenik meg, a felhasználó böngészőjének vagy operációs rendszerének területi beállítása alapján. A mögöttes adatok vagy modell adattípus-beállításaitól függetlenül ez lesz a megjelenítési formátum. 
+
+A mögöttes adattípus lehet például hosszú dátumformátumú (például *éééé. HHHH n, nnnn*, amely más vizualizációkban vagy más körülmények esetén a *2001. március 14, szerda* formában jelenne meg), a dátumtartomány-szeletelőben azonban ez a dátum *03/14/2001* lesz.
+
+A szeletelőben a **Rövid dátum** formátum használata biztosítja, hogy a sztring hossza ne változzon, és elférjen a szeletelőben. 
 
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok

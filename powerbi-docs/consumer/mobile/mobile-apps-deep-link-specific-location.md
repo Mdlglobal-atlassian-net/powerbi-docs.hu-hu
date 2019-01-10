@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 63b9129c56b064f224eef0720e5f585c86d80a93
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 1f9503980ba19b290fa5d0fd1f521bb85ef93759
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44742863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983577"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>A Power BI-mobilalkalmazásokon belül egy meghatározott helyre mutató hivatkozás létrehozása
 URI létrehozásával és használatával a Power BI-mobilalkalmazásokon belüli meghatározott helyre mutató hivatkozást hozhat létre (*mélyhivaktozás*) az összes mobilplatformon: iOS, Android-eszközök és Windows 10.
@@ -69,6 +69,12 @@ Ez az URI egy meghatározott jelentést nyit meg a Power BI-mobilalkalmazásban:
 A 36 karakterből álló jelentésobjektum-azonosító megkereséséhez navigáljon a Power BI szolgáltatásban az adott jelentéshez (https://powerbi.com)). Nézze meg például ennek az URL-nek a kiemelt szakaszát:
 
 `https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300`
+
+Ha a jelentés a Saját munkaterület csoporton kívül egy másik csoportban található, adja hozzá a következőt a jelentés azonosítója előtt vagy után: `&GroupObjectId=<36-character-group-id>`. Például: 
+
+mspbi://app/OpenReport?ReportObjectId=e684af3a-9e7f-44ee-b679-b9a1c59b5d60 **&GroupObjectId=8cc900cc-7339-467f-8900-fec82d748248**
+
+Ne feledkezzen meg a kettő közötti és (&) jelről.
 
 ## <a name="open-to-a-specific-report-page"></a>Meghatározott jelentésoldal megnyitása
 Ez az URI egy meghatározott jelentésoldalt nyit meg a Power BI-mobilalkalmazásban:

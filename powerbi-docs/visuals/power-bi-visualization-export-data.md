@@ -8,18 +8,18 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f6cb53eadb3c5ddf14b8f8b3b3882e0d7b509a3f
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 8d79d92577da25a316eba8e789a1b7b004a9967a
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983761"
 ---
 # <a name="export-data-from-visualizations"></a>Adatok exportálása vizualizációkból
-Ha szeretné megtekinteni a vizualizáció létrehozásához használt adatokat, megjelenítheti az adatokat a Power BI-ban vagy exportálhatja őket az Excelbe .xlsx- vagy .csv-fájlként. Az adatexportálási lehetőség használatához Pro- vagy Premium-licenc szükséges, valamint engedélyek az adathalmazhoz és a jelentésekhez. 
+Ha szeretné megtekinteni a vizualizáció létrehozásához használt adatokat, [megjelenítheti az adatokat a Power BI-ban](service-reports-show-data.md) vagy exportálhatja őket az Excelbe .xlsx- vagy .csv-fájlként. Az adatexportálási lehetőség használatához Pro- vagy Premium-licenc szükséges, valamint engedélyek az adathalmazhoz és a jelentésekhez. 
 
 Tekintse meg, ahogy Will exportálja az adatokat az egyik jelentésében található vizualizációkból, menti őket .xlsx-fájlként, és megnyitja a fájlt az Excelben. Ezután a videó alatt látható részletes utasításokat követve próbálkozzon meg a feladat elvégzésével.
 
@@ -38,7 +38,7 @@ Tekintse meg, ahogy Will exportálja az adatokat az egyik jelentésében találh
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
 
 ## <a name="from-a-visualization-in-a-report"></a>Jelentésben található vizualizációból
-Annak érdekében, hogy követni tudja a lépéseket, nyissa meg a [Beszerzéselemzési mintajelentést](../sample-procurement.md) [Szerkesztési nézetben](../consumer/end-user-reading-view.md). Adjon hozzá egy új üres jelentésoldalt. Ezután kövesse az alábbi lépéseket, és adjon hozzá egy összesítést és egy vizualizáció-szintű szűrőt.
+Annak érdekében, hogy követni tudja a lépéseket, nyissa meg a [Beszerzéselemzési mintajelentést](../sample-procurement.md) Szerkesztési nézetben. Adjon hozzá egy új üres jelentésoldalt. Ezután kövesse az alábbi lépéseket, és adjon hozzá egy összesítést és egy vizualizáció-szintű szűrőt.
 
 1. Hozzon létre egy új oszlopdiagramot.  A Mezők ablaktáblán válassza a **Hely > Város** és a **Számla > Kedvezmény százaléka** lehetőséget.  Előfordulhat, hogy a **Kedvezmény százalékát** át kell helyeznie az Érték mezőbe. 
 
@@ -129,9 +129,6 @@ Fontos megjegyezni, hogy amennyiben a Power BI felügyeleti portál beállítás
   2. Az **Adatok** lapon kattintson a **Külső adatok beolvasása** > **Szövegből** elemre.
 * A Power BI-rendszergazdák letilthatják az adatok exportálását.
 
-## <a name="next-steps"></a>Következő lépések
-[A Power BI-irányítópultok](../consumer/end-user-dashboards.md)  
-[Power BI – Alapfogalmak](../consumer/end-user-basic-concepts.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 
