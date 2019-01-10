@@ -8,19 +8,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.subservice: powerbi-custom-visuals
-ms.date: 11/06/2018
+ms.date: 12/18/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4d38cf108a4c2e863811cfee68fc2d0b95c1990e
-ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
+ms.openlocfilehash: 0d634d7fc7753f7aaaf7d7118cfad1ab90b6e82a
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54056041"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072244"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Egyéni vizualizációk a Power BI-ban
 
-Power BI-jelentések létrehozása vagy szerkesztése során számos különböző vizualizációtípus használatára van lehetősége. Ezek a vizualizációk a **Vizualizációk** ablaktáblában láthatók. A Power BI Desktop letöltésekor vagy a Power BI szolgáltatás (app.powerbi.com) megnyitásakor a vizualizációk egy készlete azonnal elérhető.
+Power BI-jelentések létrehozása vagy szerkesztése során számos különböző vizualizációtípus használatára van lehetősége. Ezek a vizualizációk a **Vizualizációk** ablaktáblában láthatók. A [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) letöltésekor vagy a [Power BI szolgáltatás](https://app.powerbi.com) megnyitásakor a vizualizációk egy készlete azonnal elérhető.
 
 ![vizualizációk](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
@@ -41,7 +40,7 @@ Az egyéni vizualizációk olyan csomagok, amelyek a nekik szolgáltatott adatok
 > [!WARNING]
 > Az egyéni vizualizációk biztonsági vagy adatvédelmi kockázatot jelentő kódokat tartalmazhatnak, ezért az a jelentésbe való importálás előtt győződjön meg arról, hogy megbízható a vizualizáció szerzője és forrása.
 
-## <a name="organization-visuals"></a>Szervezeti vizualizációk
+## <a name="organizational-visuals"></a>Szervezeti vizualizációk
 
 A Power BI-rendszergazdák egyéni vizualizációkat helyezhetnek üzembe a cégnél, a jelentéskészítők így könnyen felfedezhetik és használhatják a rendszergazda által jóváhagyott vizualizációkat. A rendszergazdák ezt követően kiválaszthatják, hogy konkrétan melyik egyéni vizualizációkat helyezik üzembe a cégnél, valamint könnyen kezelhetik (például frissíthetik, letilthatják vagy engedélyezhetik) őket. A jelentéskészítők pedig könnyen felfedezhetnek a cég számára egyedi vizualizációkat, amelyek frissítéséhez zökkenőmentes támogatást is kapnak.
 
@@ -74,7 +73,7 @@ A minősített egyéni vizualizációk listájának megtekintéséhez vagy sajá
 
     ![Importált egyéni vizualizáció](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
-### <a name="import-organization-visuals"></a>Szervezeti vizualizációk importálása
+### <a name="import-organizational-visuals"></a>Szervezeti vizualizációk importálása
 
 1. Válassza a Vizualizációk ablaktábla alján található, három pontot ábrázoló gombot.
 
@@ -132,7 +131,7 @@ Az egyéni vizualizációk letöltésének és importálásának két módja van
 
 ### <a name="download-and-import-custom-visuals-from-microsoft-appsource"></a>Egyéni vizualizáció letöltése és importálása a Microsoft AppSource-ról
 
-1. A [Microsoft AppSource](https://appsource.microsoft.com) webhelyről kiindulva válassza az **Alkalmazások** lapot. 
+1. A [Microsoft AppSource](https://appsource.microsoft.com) webhelyről kiindulva válassza az **Alkalmazások** lapot.
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
@@ -175,5 +174,9 @@ A hibaelhárítással kapcsolatban az [egyéni Power BI-vizualizációk hibáina
 ## <a name="faq"></a>Gyakori kérdések
 
 További információt és válaszokat [az egyéni Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md#organizational-custom-visuals) között talál.
+
+## <a name="next-steps"></a>Következő lépések
+
+* [Vizualizációk a Power BI-ban](visuals/power-bi-report-visualizations.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).

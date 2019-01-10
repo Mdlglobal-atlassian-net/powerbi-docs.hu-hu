@@ -8,13 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 11/26/2018
-ms.openlocfilehash: 9ef7890c6f80845a9e6d1bd02e35778ed866ff54
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: 2b7a71baafd8ec2ef839aaca95529221c642357f
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52332159"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072175"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Útmutató további vásárlásos Power BI-vizualizációkhoz
 
@@ -59,6 +60,10 @@ A kezdőlapon tudathatja a felhasználókkal, hogy hogyan használhatják a vizu
 ### <a name="license-key-and-token"></a>Licenckulcs és token
 
 A felhasználói élmény javítása érdekében helyezzen el licenckulccsal vagy tokenekkel kapcsolatos mezőket a formázási panel tetején, így a felhasználók könnyebben megtalálhatják őket.
+
+## <a name="faq"></a>Gyakori kérdések
+
+További információkért és válaszokért látogasson el a [Gyakori kérdések a vizualizációkon belüli további vásárlásokról](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases) weblapra.
 
 ## <a name="next-steps"></a>Következő lépések
 

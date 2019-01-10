@@ -1,5 +1,5 @@
 ---
-title: Egyéni céges vizualizációk használata a Power BI-ban
+title: Egyéni céges vizualizációk a Power BI-ban
 description: Egyéni céges vizualizációk használata, kezelése és létrehozása a Power BI-ban
 author: markingmyname
 ms.author: maghan
@@ -8,18 +8,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/29/2018
+ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e34491ebc1cc7554e8c8c000da7528754b5a673b
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 6622625f27f62d9d8ffc35ecfddf4550f2a7e16e
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223099"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072152"
 ---
-# <a name="use-organizational-custom-visuals-in-power-bi"></a>Egyéni céges vizualizációk használata a Power BI-ban
+# <a name="organizational-custom-visuals-in-power-bi"></a>Egyéni céges vizualizációk a Power BI-ban
 
-A Power BI-ban egyéni vizualizációkkal hozhat létre olyan egyedi vizualizációtípust, mely személyre szabott, vagy az átadni kívánt adatelemzésekhez van igazítva. Ezeket az egyéni vizualizációkat gyakran fejlesztők készítik, és azokat gyakran akkor hozzák létre, amikor a Power BI által tartalmazott számos látványelem nem egészen felelt meg az igényeiknek. 
+A Power BI-ban az egyéni vizualizációkkal személyre szabott, egyedi stílusú vizualizációkat hozhat létre. Ezeket az egyéni vizualizációkat fejlesztők készítik, és azokat gyakran akkor hozzák létre, amikor a Power BI-ban található számos látványelem nem egészen felelt meg az igényeiknek.
 
 Egyes szervezeteknél az egyéni vizualizációk még ennél is fontosabbak – szükségesek lehetnek a szervezet bizonyos egyedi adatainak vagy elemzéseinek átadásához, speciális adatkövetelményeik lehetnek, vagy privát üzleti eljárásokat emelhetnek ki. Az ilyen szervezeteknek egyéni vizualizációkat kell fejleszteniük, azokat meg kell osztaniuk az egész szervezetben, és gondoskodniuk kell azok megfelelő karbantartásáról. A Power BI egyéni vizualizációival a szervezetek pont ezt tehetik.
 
@@ -29,11 +29,11 @@ A következő képen az a folyamat látható, mely alapján a Power BI egyéni s
 
 A szervezeti vizualizációkat a Power BI rendszergazdája helyezi üzembe és kezeli a felügyeleti portálon. A szervezeti adattárban való üzembe helyezésük után a szervezet felhasználói könnyedén felderíthetik őket, és közvetlenül a Power BI Desktopból importálhatják az egyéni szervezeti vizualizációkat.
 
-Az egyéni szervezeti vizualizációk a létrehozott jelentésekben való használatával kapcsolatban a következő cikkben találhat további információkat: [További információk a szervezeti vizualizációk jelentésekbe való importálásával kapcsolatban](power-bi-custom-visuals.md).
+Az egyéni szervezeti vizualizációk létrehozott jelentésekben való használatával kapcsolatban a következő cikkben találhat további információt: [További tudnivalók a szervezeti vizualizációk jelentésekbe importálásáról](power-bi-custom-visuals.md).
 
 ## <a name="administer-organizational-custom-visuals"></a>Az egyéni szervezeti vizualizációk felügyelete
 
-Az egyéni szervezeti vizualizációk a szervezetben való felügyeletével, üzembe helyezésével és kezelésével kapcsolatban a következő cikkben találhat további információkat: [További információk az egyéni szervezeti vizualizációk üzembe helyezésével és kezelésével kapcsolatban](https://go.microsoft.com/fwlink/?linkid=866790).
+Az egyéni szervezeti vizualizációknak a szervezetben való felügyeletével, üzembe helyezésével és kezelésével kapcsolatban a következő cikkben találhat további információt: [További információk az egyéni szervezeti vizualizációk üzembe helyezésével és kezelésével kapcsolatban](https://go.microsoft.com/fwlink/?linkid=866790).
 
 > [!WARNING]
 > Az egyéni vizualizációk biztonsági és adatvédelmi kockázatokat tartalmazó kódot is tartalmazhatnak. Győződjön meg arról, hogy az egyéni vizualizációk szerzője és forrása megbízható, mielőtt üzembe helyezné őket a szervezet tárházban.
@@ -46,7 +46,7 @@ Rendszergazdák:
 
 * Az örökölt egyéni vizualizációk (mint például azok az egyéni vizualizációk, melyek nem az új verzióval ellátott API-kra épülnek) használata nem támogatott
 
-* Ha egy egyéni vizualizációt törölnek a tárházból, leáll minden olyan meglévő jelentés megjelenítése, mely a törölt vizualizációt használja. A tárházból való törlési művelet nem vonható vissza. Az egyéni vizualizációk ideiglenes letiltásához használja a „Letiltás” funkciót.
+* Ha egy egyéni vizualizációt törölnek a tárházból, leáll minden olyan meglévő jelentés megjelenítése, mely a törölt vizualizációt használja. Az adattárból való törlés művelete nem vonható vissza. Az egyéni vizualizációk ideiglenes letiltásához használja a „Letiltás” funkciót.
 
 Végfelhasználók:
 

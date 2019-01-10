@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 92af01b7020f734f286d927650e58a5fea5d8047
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: d9cd9c812aa2fdd1d336dbd63ea280516a96e4d9
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180829"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072221"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Önkiszolgáló adat-előkészítés a Power BI-ban (előzetes verzió)
 
@@ -92,7 +92,7 @@ A következő táblázat ismerteti az adatfolyam-funkciókat és azok kapacitás
 |Adatfolyamokhoz csatolt entitások| |        +|
 |Szabványosított séma/Beépített támogatás a Common Data Service-hez|  +|  +|
 
-
+Az adatfolyamok számítási feladatainak prémium szintű kapacitásban történő engedélyezéséről további információt a Power BI Premium [számítási feladatok konfigurálása](service-admin-premium-manage.md#configure-workloads) cikkében talál.
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>A big data típusú adatok önkiszolgáló adat-előkészítésének összefoglalása – Power BI
 Ahogy korábban említettük, több olyan forgatókönyv és példa is létezik, amelyben az **adatfolyamok** nagyobb mértékű vezérlést és gyorsabb elemzést biztosítanak az üzleti adatokhoz. A Common Data Servcie által meghatározott szabványos adatmodellel (sémával) az adatfolyamok importálhatják a fontos üzleti adatokat, és rövid idő alatt előkészíthetik azokat modellezéshez és BI-elemzésekhez. Mindez korábban hónapokig, vagy akár tovább is eltarthatott. 
