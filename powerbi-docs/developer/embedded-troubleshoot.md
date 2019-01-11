@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/20/2018
-ms.openlocfilehash: 5ee6758093969a2db1d932a88f21c965380bab5c
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: db782cea1d47dc31abf2908b82a756404fda513d
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008442"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136530"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Beágyazott alkalmazás hibaelhárítása
 
@@ -219,6 +219,10 @@ Miután beszerezte a IError objektumot, tekintse meg a megfelelő gyakori hibák
 
 ## <a name="content-rendering"></a>Tartalom megjelenítése
 
+### <a name="performance"></a>Teljesítmény
+
+[A Power BI Embedded teljesítménye](embedded-performance-best-practices.md)
+
 ### <a name="rendering-or-consumption-of-embedded-content-fails-or-times-out"></a>A beágyazott tartalmak megjelenítése vagy használata sikertelen, vagy időtúllépés miatt megszakad
 
 Ellenőrizze, hogy a beágyazási token nem járt-e le. Ellenőrizze és frissítse a beágyazási token lejáratát. További információért tekintse meg a [Token frissítése JavaScript SDK használatával](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example) című cikket.
@@ -292,6 +296,8 @@ További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://com
 
 Ha további segítségre van szüksége, [forduljon az ügyfélszolgálathoz](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) vagy [hozzon létre egy támogatási jegyet az Azure Portalon keresztül](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest), és adja meg a látott hibaüzenet(ek)et.
 
-## <a name="performance"></a>Teljesítmény
+## <a name="next-steps"></a>Következő lépések
 
-[A Power BI Embedded teljesítménye](embedded-performance-best-practices.md)
+További információ: [GYIK](embedded-faq.md).
+
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
