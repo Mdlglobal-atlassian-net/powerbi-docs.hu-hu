@@ -25,7 +25,7 @@ Annak érdekében, hogy a Q&A sikeresen értelmezni tudja azt a nagyszámú kér
 > [!NOTE]
 > A Q&A csak az **importált** adatokat tartalmazó modellekkel való munka során érhető el. Az SSAS- és DirectQuery-modellekkel való élő kapcsolat nem támogatott.
 >
-> Ha a Windowsnak a Windows 10 előtti verzióját használja, a Q&A szolgáltatásnak a következő frissítésre van szüksége a C közös nyelvi futtatókörnyezethez. Megpróbálkozhat a Windows Update fontos frissítéseinek telepítésével, vagy manuálisan is telepítheti a szükséges összetevőt a Microsoft webhelyéről (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
+> Ha a Windowsnak a Windows 10 előtti verzióját használja, a Q&A szolgáltatásnak a következő frissítésre van szüksége a C közös nyelvi futtatókörnyezethez. Megpróbálkozhat a Windows Update fontos frissítéseinek telepítésével, vagy manuálisan is telepítheti a szükséges összetevőt a Microsoft webhelyéről (KB2999226). [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)
 >
 >
 
