@@ -584,12 +584,12 @@ items:
         href: service-insights-optimize.md
     - name: Együttműködés a Power BI-ban
       items:
-      - name: Alkalmazások létrehozása és megosztása
-        href: service-create-distribute-apps.md
       - name: Alkalmazás-munkaterületek létrehozása
         href: service-create-workspaces.md
       - name: Új munkaterületek létrehozása (előzetes verzió)
         href: service-create-the-new-workspaces.md
+      - name: Alkalmazások létrehozása és megosztása
+        href: service-create-distribute-apps.md
       - name: Adattárolás felügyelete a munkaterületeken
         href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: Kapcsolódás a csoport OneDrive-on tárolt fájljaihoz
@@ -750,8 +750,6 @@ items:
           href: service-connect-to-mandrill.md
         - name: Marketo
           href: service-connect-to-marketo.md
-        - name: Microsoft Azure Enterprise
-          href: service-connect-to-azure-enterprise.md
         - name: Microsoft Dynamics AX
           href: service-connect-to-microsoft-dynamics-ax.md
         - name: Microsoft Dynamics CRM
@@ -1190,6 +1188,8 @@ items:
         href: service-gateway-sso-overview.md
       - name: Egyszeri bejelentkezés (SSO) – Kerberos
         href: service-gateway-sso-kerberos.md
+      - name: Egyszeri bejelentkezés (SSO) – Kerberos – erőforrás-alapú
+        href: service-gateway-sso-kerberos-resource.md
       - name: Egyszeri bejelentkezés (SSO) – SAML
         href: service-gateway-sso-saml.md
     - name: Proxybeállítások konfigurálása
@@ -1287,9 +1287,9 @@ items:
       href: service-admin-governance.md
     - name: A Power BI és a biztonság
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: ba984e4e4f948f0cc2772dbe632c450bd77eb6b2
-ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
+ms.openlocfilehash: cf29eebc31ef8a62b20b08606e97b4fd035b3fec
+ms.sourcegitcommit: c4455dcb6d9a091ac80f4a5135433b162fcaba58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54136576"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54211367"
