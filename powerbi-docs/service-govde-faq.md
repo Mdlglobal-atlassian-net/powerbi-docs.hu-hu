@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: dfc240e50f2fa88fc40b5f6f8d80b1106c388cd5
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 5c4bf7c1e1abb8fd87b97c48bfa94b57d5481b00
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026454"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295857"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>A németországi felhőszolgáltatás (Germany Cloud) Power BI-felhasználói számára készült gyakori kérdések
 A **Power BI szolgáltatás** egyik verziója kifejezetten az Európai Unió és az Európai Szabadkereskedelmi Társulás (EU és EFTA) országaiban lévő ügyfeleknek készült, és Microsoft Cloud Deutschland (MCD) néven hivatkozunk rá. A jelen cikkben a **Power BI szolgáltatás** EU- és EFTA-ügyfelek részére készült verzióját tárgyaljuk, amely elkülönül és különbözik a **Power BI szolgáltatás** kereskedelmi verziójától és a kormányzati ügyfelek részére biztosított Power BI-szolgáltatásoktól.

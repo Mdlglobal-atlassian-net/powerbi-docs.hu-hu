@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: b520eb2758088feadff963f86ddf310ae7a7ed8b
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: cd88270c75b46267217147d8f02fc707eeef26ab
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388640"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290403"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded migrálási eszköz
 Ezzel a migrálási eszközzel jelentések másolhatók a Power BI Embedded Azure-szolgáltatásból (PaaS) a Power BI szolgáltatásba (SaaS).

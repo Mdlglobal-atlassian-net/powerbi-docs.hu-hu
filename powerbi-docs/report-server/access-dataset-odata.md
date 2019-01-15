@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/05/2018
 ms.author: maghan
-ms.openlocfilehash: 9ec0ace4cf92d559da4a2b1bd1aa0f918e2b09dc
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: cf322fc518185d87021f2df3d4573805315e625f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34294939"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295343"
 ---
 # <a name="accessing-shared-datasets-as-odata-feeds-in-power-bi-report-server"></a>Megosztott adatkészletek elérése OData-csatornákként a Microsoft Power BI jelentéskészítő kiszolgálóban
 A megosztott adatkészletek a Power BI Desktopból OData-csatorna használatával érhetők el.

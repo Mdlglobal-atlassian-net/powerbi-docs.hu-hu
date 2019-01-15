@@ -4,19 +4,19 @@ description: Most ismerkedik a Power BI-jal? Megismerkedhet a Power BI funkciói
 author: mihart
 manager: kvivek
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: landing-page
 ms.date: 12/10/2018
 ms.author: mihart
 layout: LandingPage
 ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: e9a59703ff76d0d1f9401d80c6702d69eec5d049
-ms.sourcegitcommit: f5e39e9ead37445bbeab795890b3d80633383032
+ms.openlocfilehash: 7ebeb80de73ed9212c8565461d21d375c63badc6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53735523"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283000"
 ---
 # <a name="power-bi-for-consumers"></a>A Power BI felhasználók számára
 *Végfelhasználóként* vagy *felhasználóként* irányítópultokat, jelentéseket és alkalmazásokat kap munkatársaitól. Ezeket a tartalmakat a ***Power BI szolgáltatásban*** tudja áttekinteni és felhasználni üzleti döntések meghozatalához.

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ae17eff366fe5e931963c9367586c08fd39eda69
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: cb4a0f81766aa030b1981cb67a26c296dab2ba2a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973931"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277204"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Nagy sűrűségű sorok mintavétele a Power BI-ban
 A **Power BI Desktop** 2017. júniusi kiadásától és a **Power BI szolgáltatás** frissítéseiben egy új mintavételi algoritmus érhető el, amelynek köszönhetően a vizualizációk hatékonyabban mintavételezik a nagy sűrűségű adatokat. Például létrehozhat egy vonaldiagramot a kereskedelmi egységek értékesítési adataiból, ahol minden egyes üzlet több mint tízezer értékesítési nyugtával rendelkezik. Egy ilyen értékesítési információkat tartalmazó vonaldiagram mintát vesz az egyes üzletek adataiból (reprezentatív adatokat választ, amelyek megmutatják, hogyan változtak az értékesítések az idő múlásával), és egy több adatsorozatú vonaldiagramot hoz létre, amely az alapul szolgáló adatokat ábrázolja. Ez gyakori eljárás a nagy sűrűségű pontdiagramok vizualizációjánál. Ebben a cikkben részletezzük, miben fejlődött a Power BI Desktop mintavételi folyamata nagy sűrűségű adatok esetén.

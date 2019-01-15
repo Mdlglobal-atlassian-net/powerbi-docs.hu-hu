@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d8a241a810cc41e908fd99df08f8eae53bac7f47
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 68b392f4570d137fabdfe8f10e5b7035babc397b
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717125"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54272627"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Csempe kitűzése egy irányítópultról egy másikra
 Ha egy új [irányítópult-csempét](consumer/end-user-tiles.md) szeretne felvenni, egyik módszerként ezt megteheti egy másik irányítópult csempéjének másolásával. Ezek a csempék kattintható hivatkozások, amelyek arra a helyre mutatnak, ahol létrejöttek: vagy a Q&A-ra vagy egy jelentésre. 

@@ -1,20 +1,20 @@
 ---
 title: A Power BI mobilalkalmazásainak újdonságai
 description: A Power BI mobilalkalmazásainak újdonságai
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
-ms.author: maggies
-ms.openlocfilehash: ae0126c6242508a551e094d3e40a57e7e6868ab3
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.author: mshenhav
+ms.openlocfilehash: 3aa4ea96e9bea4e52de05b49fa0c958a6c2a6943
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53983876"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54286864"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:

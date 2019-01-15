@@ -1,20 +1,20 @@
 ---
 title: Az iOS-hez készült Power BI mobilalkalmazás használatának első lépései
 description: Megtudhatja, hogyan hozza el a mobileszközökhöz készült, iOS-es Microsoft Power BI-alkalmazás a Power BI-t az Ön zsebébe, a helyszíni és felhőbeli üzleti információkhoz való mobil hozzáféréssel együtt.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
-ms.author: maggies
-ms.openlocfilehash: a09fc4471f9af3a9406dcbcdd80d5bcc7a3632f6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.author: mshenhav
+ms.openlocfilehash: b0de20cc32c32360f4f37c70e673dba01740a860
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44744394"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281781"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Első lépések az iOS-eszközökhöz készült Power BI mobilalkalmazással
 Az iPhone-on, iPaed és iPod Touchon futó iOS-es Microsoft Power BI alkalmazás mobil BI-élményt kínál a Power BI-hoz, a Power BI jelentéskészítő kiszolgálóhoz és a Reporting Services-hez. Az élő, érintéssel vezérelhető mobil hozzáférés révén bárhonnan megtekintheti és kezelheti vállalata helyszíni és felhőbeli irányítópultjait. Fedezze fel az adatokat az irányítópultokon, és ossza meg eredményeit munkatársaival e-mailben vagy SMS-ben. Kísérje figyelemmel a legidőszerűbb adatokat [Appla Watch](mobile-apple-watch.md)on.  

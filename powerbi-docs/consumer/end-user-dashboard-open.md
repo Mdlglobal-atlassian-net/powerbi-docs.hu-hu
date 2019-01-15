@@ -6,17 +6,17 @@ manager: kvivek
 ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2fa614683ecfebc0693829c834dcfa4f160d22b1
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: a4dff6ca2020a349c3f06e5c828e186b3e11bdb6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53279753"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288704"
 ---
 # <a name="view-a-dashboard"></a>Irányítópult megtekintése
 A Power BI-felhasználók sok időt töltenek irányítópultok tanulmányozásával. Az irányítópultok adott információkat jelenítenek meg alapul szolgáló jelentésekből vagy adathalmazokból. A Power BI-felhasználók pedig ezen információkat használják a nyomkövetéshez, monitorozáshoz, kérdések megválaszolásához, teszteléshez és egyéb műveletekhez az adatokon alapuló üzleti döntések meghozása érdekében.

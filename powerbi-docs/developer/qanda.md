@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
 ms.author: maghan
-ms.openlocfilehash: d1fd42f059f8050662adc80018748d11c1e73e2b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 208c1e2a0e188622f989faa6ba391d9742dd7967
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813756"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277984"
 ---
 # <a name="qa-in-power-bi-embedded"></a>Kérdések és válaszok a Power BI Embeddedben
 A Power BI Embedded segítségével a Kérdések és válaszok szolgáltatást beépítheti egy alkalmazásba, és engedélyezheti a felhasználók számára, hogy kérdéseket tegyenek fel a természetes nyelvet használva, és ezekre azonnal választ is kapjanak vizualizációk, például diagramok és ábrák formájában.

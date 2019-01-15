@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 375a251e7515ad33396cc4cf5ebb0ee715ab0330
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d9b171052bd095afc918a312ecbadba89a2471cd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34254033"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283575"
 ---
 # <a name="using-the-same-account-for-power-bi-and-azure"></a>Ugyanazon bejelentkezési fiók használata a Power BI-hoz és az Azure-hoz
 Ha Ön a Power BI és az Azure felhasználója, ugyanazokat a bejelentkezési adatokat használhatja mindkét szolgáltatásban, így nem kell kétszer megadnia a jelszót.

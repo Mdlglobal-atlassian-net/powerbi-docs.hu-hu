@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6d602b19141c6277fe7ec6a7627749f57f6e25a6
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 27d686bd1be8a5cf73c7fa5bafc54d4a58dc7a5b
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180714"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279343"
 ---
 # <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-beta"></a>Csatlakozás Power BI-adatfolyamok által létrehozott adatokhoz a Power BI Desktopban (bétaverzió)
 A **Power BI Desktopban** ugyanúgy csatlakozhat a **Power BI-adatfolyamok** által létrehozott adatokhoz, mint bármely más adatforráshoz.
@@ -41,12 +41,12 @@ Javíthatja az adatfolyamok adatbetöltési teljesítményét. Ha például a fe
 Az adatfolyamok többsége a Power BI szolgáltatás bérlőjében helyezkedik el. A **Power BI Desktop**-felhasználók azonban csak akkor férnek hozzá az Azure Data Lake Storage Gen2-tárfiókokban tárolt adatfolyamhoz, ha az adatfolyam tulajdonosai, vagy külön megadott jogosultsággal rendelkeznek az adatfolyam CDM-mappájához. Figyelje meg a következő példát:
 
 1.  Anna új alkalmazás-munkaterületet hoz létre, amelyet úgy konfigurál, hogy a vállalati data lake-ben tárolja az adatfolyamokat.
-2.  Ben, aki szintén tagja az Anna által létrehozott munkaterületnek, a Power BI Desktop és az adatfolyam-összekötő használatával szeretne adatokhoz jutni az Anna által létrehozott adatfolyamból.
-3.  Ben hibajelenséget tapasztal, ugyanis nem adták hozzá jogosult felhasználóként az adatfolyam data lake-beli CDM-mappájához.
+2.  Dávid, aki szintén tagja az Anna által létrehozott munkaterületnek, a Power BI Desktop és az adatfolyam-összekötő használatával szeretne adatokhoz jutni az Anna által létrehozott adatfolyamból.
+3.  Dávid hibajelenséget tapasztal, ugyanis nem adták hozzá jogosult felhasználóként az adatfolyam data lake-beli CDM-mappájához.
 
     ![Hiba adatfolyam használatára tett kísérlet esetén](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
-A probléma megoldásához Bennek olvasási jogot kell adni a CDM-mappára, és annak fájljaira. A CDM-mappákhoz való hozzáférés megadásáról [ez a cikk](https://go.microsoft.com/fwlink/?linkid=2029121) tartalmaz további információt.
+A probléma megoldásához Dávidnak olvasási jogot kell adni a CDM-mappára és annak fájljaira. A CDM-mappákhoz való hozzáférés megadásáról [ez a cikk](https://go.microsoft.com/fwlink/?linkid=2029121) tartalmaz további információt.
 
 
 

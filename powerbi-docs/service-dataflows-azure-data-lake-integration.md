@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 09f001edc787d50db1de3291c483374948e50d66
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 763b331fd0a5ff47263ea54d17f6cb17516de79d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53181498"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296777"
 ---
 # <a name="dataflows-and-azure-data-lake-integration-preview"></a>Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)
 
@@ -92,7 +92,7 @@ Az adatfolyamokról általánosságban a következő cikkek szólnak:
 * [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
 
 Az Azure Storage szolgáltatással kapcsolatban az alábbi cikkeket érdemes elolvasni:
-* [Azure Storage biztonsági útmutató](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+* [Azure Storage – biztonsági útmutató](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
 * [Első lépések az Azure Data Servicesből származó github-mintákkal](https://aka.ms/cdmadstutorial)
 
 A Common Data Modellel kapcsolatos további információt a témát áttekintő cikkben talál:
@@ -100,4 +100,4 @@ A Common Data Modellel kapcsolatos további információt a témát áttekintő 
 * [CDM-mappák](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM-modellfájl definiálása](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Mindig érdemes [feltenni kérdéseit a Power BI-közösségnek](http://community.powerbi.com/).
+[Kérdéseit mindig felteheti a Power BI-közösségben](http://community.powerbi.com/) is.
