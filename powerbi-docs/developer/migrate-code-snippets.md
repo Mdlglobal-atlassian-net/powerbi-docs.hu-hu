@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: ba3829d54572c9d8166342d381f3850f0fc8a909
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: e1c608279bd725870e52348b2f36fd729a0e9d13
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388732"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292913"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kódrészletek a tartalmak Power BI-munaterületcsoportból való migrálásához
 Íme a tartalmak migrálásához szükséges alapvető műveletek néhány kódrészlete. Egyes jelentéstípusok kapcsolódó folyamatai: [Power BI-munkaterület-csoport tartalmainak migrálása a Power BI Embeddedbe](migrate-from-powerbi-embedded.md#content-migration).

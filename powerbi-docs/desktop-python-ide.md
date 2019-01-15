@@ -5,17 +5,17 @@ author: otarb
 manager: rajatt
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 634acc9e456462e2ca6d1a09bb6d97b87e75605b
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 3e7169e1aa54db93488f0c55e701188667f70305
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974989"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289262"
 ---
 # <a name="use-an-external-python-ide-with-power-bi"></a>Külső Python IDE használata a Power BI-jal
 A **Power BI Desktoppal** használhatja a külső Python IDE környezetet (integrált fejlesztőkörnyezetet) Python-szkriptek létrehozásához és pontosításához, majd ezután használhatja ezeket a szkripteket a Power BI-ban.

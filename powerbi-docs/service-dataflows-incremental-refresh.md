@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 37eaa9e26a6386379dd165e15cffab3e42dc9546
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 224fc07fccc2b12b0a28c016f427a4d5f4613290
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268133"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293710"
 ---
 # <a name="using-incremental-refresh-with-power-bi-dataflows-preview"></a>Növekményes frissítések használata Power BI-adatfolyamokkal (előzetes verzió)
 
@@ -159,10 +159,10 @@ Ez a cikk az adatfolyamok növekményes frissítését ismertette. Az alábbi ci
 * [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
 * [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
 
-A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információkért olvassa el ezeket a cikkeket:
+A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)
 * [Ütemezett frissítés beállítása](refresh-scheduled-refresh.md)
 
-A Common Data Modellel kapcsolatos további információkért olvassa el a áttekintését tartalmazó cikket:
-* [Common Data Modell – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
+A Common Data Modellel kapcsolatos további információt a témát áttekintő cikkben talál:
+* [Common Data Model – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
 

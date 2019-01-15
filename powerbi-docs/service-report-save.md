@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: f98d4c5e7b7cc02c9a08d982edb88b2e129f51e6
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: a4bc58a5be385e22c68aa29a8a366231c8434bba
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47186870"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283958"
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Jelentések mentése a Power BI szolgáltatásban és a Power BI Desktopban
 Miután módosít egy jelentést a Power BI-ban, mentheti, új néven mentheti, vagy bezárhatja a módosítások mentése nélkül. Tegyük fel, hogy megnyitja a jelentést, létrehoz egy vizualizációt, és az irányítópultra tűzi azt. Ha most a módosítások mentése nélkül bezárja a jelentést, a cím az irányítópulton marad, de nem menti a vizualizációt a jelentésbe. Amikor az irányítópulton lévő csempére kattint, megnyílik a jelentés, de a vizualizáció nem létezik a jelentésben.

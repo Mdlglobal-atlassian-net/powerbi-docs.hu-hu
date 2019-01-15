@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cc374da84e269abe18a52270c0d9fd15987cf666
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 6d818252d60c2e6e123e4dff0c64dd5e2408cad2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452614"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285737"
 ---
 # <a name="data-alerts-in-power-bi-service"></a>Adatriasztások a Power BI szolgáltatásban
 Riasztásokat állíthat be, amelyek figyelmeztetik, ha az irányítópultjain lévő adatok változásai meghaladják a beállított korlátokat. 
@@ -73,7 +73,7 @@ Ezután a Power BI egy riasztást küld az Értesítési központba, valamint v�
    > 
 
 ## <a name="managing-alerts"></a>Riasztások kezelése
-A riasztások számos módon kezelhetők: Magával az irányítópult csempéjével, a Power BI-beállítások menüjében, illetve egy adott csempével az [iPhone-on futtatott Power BI-mobilalkalmazásban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) vagy a [Windows 10-hez készült Power BI-mobilalkalmazásban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+A riasztásokat többféle módon is kezelheti: Magán az irányítópult csempén, a Power BI Beállítások menüből, az egyes csempéken a [Power BI mobilalkalmazásban iPhone-on](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md), vagy [Windows 10-en a Power BI mobilalkalmazásban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### <a name="from-the-tile-itself"></a>Magáról a csempéről
 1. Ha módosítani vagy törölni szeretné egy adott csempe valamelyik riasztását, nyissa meg újra a **Riasztások kezelése** ablakot a harang ikon ![riasztás ikon](media/service-set-data-alerts/power-bi-bell-icon.png) kiválasztásával. Az adott csempéhez beállított összes riasztás megjelenik.

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ddf0ab52aae38a28f30de94904c6d966d0fd24a8
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: dffcf8fb3daa7559abd4d3b999ea3a73392d0eb9
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669796"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283116"
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Részletezés használata a Power BI Desktopban
 A **Power BI Desktop** **részletezés** funkciójával olyan oldalt hozhat létre a jelentésben, amely egy adott entitásra – például szállítóra, ügyfélre vagy gyártóra összpontosít. Más jelentésoldalakon a felhasználók a jobb gombbal kattinthatnak az adatpontokra. Ezt követően részletezhetik a kiemelt oldalt, és megkaphatják az adott környezetre szűrt adatokat.

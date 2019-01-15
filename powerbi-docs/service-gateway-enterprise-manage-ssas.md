@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: a84a5da9600daa7ef55ed5a707affa4ee1da4aba
-ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
+ms.openlocfilehash: 5c388a15132c7f433a50c2975aa4b45195c55bf9
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47238100"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285047"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Az adatforrás kezelése – Analysis Services
 Amint telepítette a helyszíni adatátjárót, fel kell vennie az átjáróval használható adatforrásokat. Ez a cikk bemutatja, hogyan lehet használni az átjárókat és az adatforrásokat. Az Analysis Services-adatforrást ütemezett frissítéshez vagy élő kapcsolatokhoz használhatja.
@@ -153,7 +153,7 @@ Az átjáró konfigurálása az AD-kereséshez:
 
 2. Az átjáróban módosítania kell a **helyszíni adatátjárói szolgáltatást**, hogy tartományi fiókkal fusson (helyi szolgáltatásfiók helyett – különben az AD-keresés futásidőben nem fog megfelelően működni). A változtatás érvénybe léptetéséhez újra kell indítania az átjárószolgáltatást.  Nyissa meg a gépén az átjáróalkalmazást (keressen rá a „helyszíni adatátjáró” kifejezésre). Ehhez lépjen a **Szolgáltatásbeállítások > Szolgáltatásfiók módosítása** területre. Győződjön meg arról, hogy rendelkezik ezen átjáró helyreállítási kulcsával, mert vissza kell majd állítania ugyanezen a gépen, ha nem szeretne helyette létrehozni új átjárót. 
 
-3. Lépjen rendszergazdaként az átjáró telepítési mappájához (*C:\Program Files\On-premises data gateway*), hogy írási engedélyei legyenek, és szerkessze a következő fájlt: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
+3. Lépjen rendszergazdaként az átjáró telepítési mappájához, a *C:\Program Files\Hegyszíni adatátjáró* mappához, hogy írási-olvasási engedélyei legyenek, és szerkessze a következő fájlt: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 
 4. Szerkessze a következő két konfigurációértéket az alapján, hogy *Ön* milyen attribútumkonfigurációkat adott meg az Active Directory-felhasználóihoz. Az alábbi konfigurációértékek csak példák – az Active Directory konfigurációja alapján kell őket meghatároznia. A konfigurációk megkülönböztetik a kis- és nagybetűket, ezért győződjön meg arról, hogy megegyeznek az Active Directoryban szereplő értékekkel.
 

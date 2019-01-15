@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: overview
 ms.date: 12/05/2018
 ms.author: maggies
-ms.openlocfilehash: d79299f469062ec74c49ff4b7e9edda26c3409a3
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 7ce0e90e3166ce6f84c5e53e05d56e9fcc4e790d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026121"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282840"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Mik a lapszámozott jelentések a Power BI Premiumban? (Előzetes verzió)
 A lapszámozott jelentések, melyek az SQL Server Reporting Services szabványos jelentéstípusát képviselik már régóta, mostantól elérhetők a Power BI szolgáltatásban. Ezek a jelentések kinyomtathatók vagy megoszthatók. Lapszámozottnak hívjuk őket, mert egy oldalon jól megjeleníthetők. Minden adatot egy táblázatban jelenítenek meg, akkor is, ha az több oldalon keresztül fut. Az oldalak elrendezése pontosan vezérelhető egészen az utolsó pixelig. A lapszámozott jelentések az SQL Server Reporting Services RDL-jelentéseinek technológiáján alapulnak. A Jelentéskészítő a lapszámozott jelentések létrehozásának különálló eszköze. 
