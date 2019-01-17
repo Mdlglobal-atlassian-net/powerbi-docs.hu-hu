@@ -10,18 +10,26 @@ ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d098b55367e4d8ff13dc2fd22593af00dffe611f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5eab760a3bfbb590a1a6242984aa1be88064409f
+ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286933"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54323951"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Python-szkriptek futtatása a Power BI Desktopban
 Python-szkripteket futtathat közvetlenül a **Power BI Desktopban** is, és az így kapott adatkészleteket importálhatja Power BI Desktop-adatmodellekbe.
 
 ## <a name="install-python"></a>A Python telepítése
 A Python-szkriptek a Power BI Desktopban való futtatásához telepítenie kell a **Pythont** a helyi gépen. A **Pythont** számos helyről ingyenesen letöltheti és telepítheti, például a [Python hivatalos letöltőoldaláról](https://www.python.org/) vagy az [Anaconda](https://anaconda.org/anaconda/python/) oldaláról. A Power BI Desktopban a Python-szkriptek támogatásának jelenlegi kiadása lehetővé teszi a Unicode karakterek, valamint a szóközök (üres karakterek) a telepítési útvonalban történő használatát.
+
+### <a name="install-required-python-packages"></a>A szükséges Python-csomagok telepítése
+A Power BI Python-integrációjához két Python-csomagot (Pandas és Matplotlib) kell telepíteni.  A pip parancssori eszköz használatával telepítse az alábbi két csomagot,
+
+```
+pip install pandas
+pip install matplotlib
+```
 
 ## <a name="run-python-scripts"></a>Python-szkriptek futtatása
 A Power BI Desktopban mindössze néhány lépéssel, Python-szkriptek futtatásával létrehozhat egy adatmodellt, amelyből aztán jelentéseket hozhat létre, és megoszthatja azokat a Power BI szolgáltatásban.

@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/21/2018
+ms.date: 01/15/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1749fc932b3aa6cfb86de87bc9ecd71f78d92af5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6cc26f386a77ad8482d7f1af69fd0fdf2b7de5ac
+ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281965"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54324020"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Mi az a Microsoft Power BI Premium?
 
-A Microsoft Power BI Premium a Power BI futtatásához dedikált erőforrásokat biztosít a cége számára. Megbízhatóbb teljesítményt biztosít és nagyobb mennyiségű adat kezelését teszi lehetővé. A Premium széles körű tartalommegosztást is lehetővé tesz anélkül, hogy a tartalomfogyasztók számára felhasználónkénti Pro-licenceket kellene beszereznie. A vásárlással kapcsolatban további tudnivalókért lásd [a Power BI Premium megvásárlását](service-admin-premium-purchase.md) ismertető szakaszt.
+A Microsoft Power BI Premium a Power BI futtatásához dedikált erőforrásokat biztosít a cége számára. Megbízhatóbb teljesítményt biztosít és nagyobb mennyiségű adat kezelését teszi lehetővé. A Premium széles körű tartalommegosztást is lehetővé tesz anélkül, hogy a tartalomfogyasztók számára felhasználónkénti Pro-licenceket kellene beszereznie. A vásárlással kapcsolatban további tudnivalókért lásd [a Power BI Premium megvásárlását](service-admin-premium-purchase.md) ismertető szakaszt.   
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lNQDkN0GXzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -41,24 +41,21 @@ Az alábbi képen a prémium szintű kapacitás és a megosztott kapacitás köz
 
 A kapacitás megosztásakor a Power BI több korlátot érvényesít az egyes felhasználókon annak érdekében, hogy mindenki számára minőségi felhasználói élményt biztosíthasson. Alapértelmezés szerint a munkaterületek is megosztott kapacitáson vannak, beleértve a személyes *Saját munkaterületet* és az alkalmazás-munkaterületeket is.
 
-Az alábbi táblázat a megosztott és a prémium szintű kapacitás közötti különbségeket foglalja össze.
+Az alábbi táblázat a megosztott és a prémium szintű kapacitás közötti különbségeket foglalja össze:
 
 |  | Megosztott kapacitás | Power BI Prémium-kapacitás |
 | --- | --- | --- |
 | **Frissítési időköz** |8/nap |48/nap |
-| **Dedikált hardverrel elkülönítve** |![Nem érhető el](media/service-premium/not-available.png) |![Elérhető](media/service-premium/available.png) |
-| _**Minden felhasználó**_ **számára elérhető vállalati terjesztés** | | |
-| Alkalmazások és megosztás |![Nem érhető el](media/service-premium/not-available.png) |![Elérhető](media/service-premium/available.png) |
-| Beágyazott API-k és vezérlők |![Nem érhető el](media/service-premium/not-available.png) |![Elérhető](media/service-premium/available.png)<sup>2</sup> |
-| **Power BI-jelentések helyszíni közzététele** |![Nem érhető el](media/service-premium/not-available.png) |![Elérhető](media/service-premium/available.png) |
+| Dedikált hardverrel elkülönítve |![Nem érhető el](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
+| *Minden felhasználó* számára elérhető vállalati terjesztés | | |
+| Alkalmazások és megosztás |![Nem érhető el](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
+| Beágyazott API-k és vezérlők |![Nem érhető el](media/service-premium/not-available.png) |![](media/service-premium/available.png)<sup>[1](#fnt1)</sup> |
+| Power BI-jelentések helyszíni közzététele |![Nem érhető el](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
 | | | |
 
-*<sup>1</sup> További információkért lásd: [Funkciók a licenc típusa alapján](service-features-license-type.md).*  
-*<sup>2</sup> A Power BI Premium további fejlesztései várhatók.*
+<a name="fnt1">1</a> A Power BI Premium további fejlesztései várhatók.
 
-Munkaterületek prémium szintű kapacitáshoz rendeléséről [A Power BI Premium felügyelete](service-admin-premium-manage.md) című cikkből tájékozódhat.
 
-<a name="premiumskus"/>
 
 ### <a name="premium-capacity-nodes"></a>Prémium szintű kapacitást használó csomópontok
 
@@ -68,22 +65,19 @@ A Power BI Premium csomópont-konfigurációkban különböző virtuálismag-kap
 
 * Az EM csomópontok csak beágyazott környezetekben használhatók. Az EM csomópontok nem férhetnek hozzá prémium képességekhez, például alkalmazások Power BI Pro-licenccel nem rendelkező felhasználókkal való megosztásához.
 
->[!NOTE]
->A táblázatban található hivatkozások csak azoknak a felhasználóknak működnek megfelelően, akik az Office 365 globális rendszergazdai szerepkörével rendelkeznek. A többi felhasználó 404-es hibaüzenetet kap.
-
-| Kapacitáscsomópont | Összes virtuális mag<br/>*(Háttérrendszer + előtérrendszer)* | Háttérrendszeri virtuális magok | Előtérrendszeri virtuális magok | DirectQuery-/élő kapcsolat korlátai | Elérhetőség |
-| --- | --- | --- | --- | --- | --- | --- |
-| [EM1 (havonta megújuló)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 virtuális mag |0,5 virtuális mag, 2,5 GB RAM |0,5 virtuális mag |Másodpercenként 3,75 |Elérhető |
-| [EM2 (havonta megújuló)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 virtuális mag |1 virtuális mag, 5 GB RAM |1 virtuális mag |Másodpercenként 7.5 |Elérhető |
-| [EM3 (havonta megújuló)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 virtuális mag |2 virtuális mag, 10 GB RAM |2 virtuális mag | |Elérhető |
-| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 virtuális mag |4 virtuális mag, 25 GB RAM |4 virtuális mag |Másodpercenként 30 |Elérhető ([havonta megújulóként](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) is elérhető) |
-| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 virtuális mag |8 virtuális mag, 50 GB RAM |8 virtuális mag |Másodpercenként 60 |Elérhető |
-| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 virtuális mag |16 virtuális mag, 100 GB RAM |16 virtuális mag |Másodpercenként 120 |Elérhető |
+| Kapacitáscsomópont | Összes virtuális mag<br/>*(Háttérrendszer + előtérrendszer)*  | Háttérrendszeri virtuális magok <sup>[1](#fn1)</sup> | Előtérrendszeri virtuális magok <sup>[2](#fn2)</sup> | DirectQuery-/élő kapcsolat korlátai | Egyidejű frissítések maximális száma |  Elérhetőség
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| EM1 (havonta megújuló) |1 virtuális mag |0,5 virtuális mag, 2,5 GB RAM |0,5 virtuális mag |Másodpercenként 3,75 |  1 | Elérhető |
+| EM2 (havonta megújuló) |2 virtuális mag |1 virtuális mag, 5 GB RAM |1 virtuális mag |Másodpercenként 7.5 |  2 | Elérhető |
+| EM3 (havonta megújuló) |4 virtuális mag |2 virtuális mag, 10 GB RAM |2 virtuális mag | | 3 |  Elérhető |
+| P1 |8 virtuális mag |4 virtuális mag, 25 GB RAM |4 virtuális mag |Másodpercenként 30 | 6 | Elérhető (havonta megújulóként is elérhető) |
+| P2 |16 virtuális mag |8 virtuális mag, 50 GB RAM |8 virtuális mag |Másodpercenként 60 | 12 | Elérhető |
+| P3 |32 virtuális mag |16 virtuális mag, 100 GB RAM |16 virtuális mag |Másodpercenként 120 | 24 | Elérhető |
 | | | | | | | |
 
-* Az előtérrendszeri virtuális magokat használja a rendszer webes szolgáltatásokhoz, az irányítópultokhoz, a jelentés- és dokumentumkezeléshez, a hozzáférések kezeléséhez, az ütemezéshez, az API-khoz, a feltöltésekhez, és letöltésekhez és többnyire mindenhez, ami a felhasználói élmény részét képzi.
+<a name="fn1">1</a>: A webszolgáltatásokhoz az előtérrendszeri virtuális magok használatosak. Például az irányítópultokhoz, a jelentés- és dokumentumkezeléshez, a hozzáférések kezeléséhez, az ütemezéshez, az API-khoz, a feltöltésekhez, és letöltésekhez és többnyire mindenhez, ami a felhasználói élmény részét képzi. 
 
-* A háttérrendszeri virtuális magokat a nagyobb erőforrásigényű feladatokhoz, például a lekérdezések feldolgozásához, a gyorsítótár kezeléséhez, R szerverek futtatásához, adatfrissítéshez, természetes nyelvi feldolgozásához, valós idejű adatcsatornákhoz és a jelentések és képek megjelenítéséhez használja. A háttérrendszeri virtuális magokkal bizonyos mennyiségű memóriát is fenntart. A megfelelő mennyiségű memória nagy adatmodellek esetén vagy akkor válik különösen fontossá, amikor nagy számú aktív adatkészlet kezelésére van szükség.
+<a name="fn2">2</a>: A háttérrendszeri virtuális magokat a nagyobb erőforrásigényű feladatokhoz, például a lekérdezések feldolgozásához, a gyorsítótár kezeléséhez, R szerverek futtatásához, adatfrissítéshez, természetes nyelvi feldolgozásához, valós idejű adatcsatornákhoz és a jelentések és képek megjelenítéséhez használja. A háttérrendszeri virtuális magokkal bizonyos mennyiségű memóriát is fenntart. A megfelelő mennyiségű memória nagy adatmodellek esetén vagy akkor válik különösen fontossá, amikor nagy számú aktív adatkészlet kezelésére van szükség.
 
 ## <a name="workloads-in-premium-capacity"></a>Számítási feladatok prémium szintű kapacitásban
 
@@ -112,11 +106,9 @@ Az alábbi táblázatok a különböző elérhető [kapacitás-csomópontokon](#
 
 ### <a name="considerations-for-paginated-reports"></a>Szempontok lapszámozott jelentések esetén
 
-A „lapszámozott jelentések” számítási feladat használata során a következőket tartsa szem előtt.
+Ha a lapszámozott jelentések számítási feladatot használja, ügyeljen rá, hogy a lapszámozott jelentések lehetővé teszik, hogy a jelentés renderelése során saját kódot futtasson (például dinamikusan változtassa a szövegszínt a tartalom alapján). Ezt figyelembe véve, a Power BI Premium-kapacitás védelme érdekében a lapszámozott jelentéseket a kapacitás egy korlátozott területén belül futtatjuk. Ehhez a területhez az Ön által megadott maximális memóriát foglaljuk le, akár aktív a számítási feladat, akár nem. Ha egy kapacitásban több Power BI-jelentést vagy -adatfolyamot használ, ügyeljen rá, hogy a lapszámozott jelentésekhez kellően alacsony memóriakorlátot adjon meg, hogy azok ne befolyásolhassák hátrányosan a többi számítási feladatot.
 
-* **Memóriafoglalás lapszámozott jelentésekben**: A lapszámozott jelentések lehetővé teszik, hogy a jelentés renderelése során saját kódot futtasson (például dinamikusan változtassa a szövegszínt a tartalom alapján). Ezt figyelembe véve, a Power BI Premium-kapacitás védelme érdekében a lapszámozott jelentéseket a kapacitás egy korlátozott területén belül futtatjuk. Ehhez a területhez az Ön által megadott maximális memóriát foglaljuk le, akár aktív a számítási feladat, akár nem. Ha egy kapacitásban több Power BI-jelentést vagy -adatfolyamot használ, ügyeljen rá, hogy a lapszámozott jelentésekhez kellően alacsony memóriakorlátot adjon meg, hogy azok ne befolyásolhassák hátrányosan a többi számítási feladatot.
-
-* **A lapszámozott jelentések nem elérhetők**: Ritkán előfordulhat, hogy a „lapszámozott jelentések” számítási feladat elérhetetlenné válik. Ilyen esetben a számítási feladat hibás állapotot jelez a felügyeleti portálon, a felhasználók pedig időtúllépést tapasztalnak a jelentés renderelése során. A probléma megoldásához tiltsa le, majd engedélyezze újra a számítási feladatot.
+Ritkán előfordulhat, hogy a „lapszámozott jelentések” számítási feladat elérhetetlenné válik. Ilyen esetben a számítási feladat hibás állapotot jelez a felügyeleti portálon, a felhasználók pedig időtúllépést tapasztalnak a jelentés renderelése során. A probléma megoldásához tiltsa le, majd engedélyezze újra a számítási feladatot.
 
 ## <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgálón
 
@@ -129,6 +121,5 @@ A Power BI Premium azt is lehetővé teszi, hogy a cég a helyszínen futtassa a
 [A Power BI Premium kezelése](service-admin-premium-manage.md)
 [Microsoft Power BI Premium-tanulmány](https://aka.ms/pbipremiumwhitepaper)
 [A Power BI Enterprise üzembehelyezési előkészületeit bemutató tanulmány](https://aka.ms/pbienterprisedeploy)
-[A Power BI céges felügyelete](service-admin-administering-power-bi-in-your-organization.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
