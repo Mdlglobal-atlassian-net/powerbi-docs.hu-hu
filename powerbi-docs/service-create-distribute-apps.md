@@ -4,23 +4,23 @@ description: Tudja meg, hogyan tehet közzé alkalmazásokat, azaz irányítópu
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3881e37fa5e97939265e9bb9362cee65a1030e67
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 451b5967dd648d982132282d2debbd4c4f86780f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50100818"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54294061"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Irányítópultokból és jelentésekből álló alkalmazások közzététele a Power BI-ban
 
 A Power BI szolgáltatásban közzétehet kapcsolódó irányítópultok-l és jelentésgyűjteményekből álló *alkalmazásokat*. Az alkalmazásokat a *alkalmazás-munkaterületeken* hozza létre, ahol együttműködhet a Power BI-tartalmakon a munkatársaival. Ezután közzéteheti a kész alkalmazásokat a szervezet számos tagja számára. További információ az [alkalmazás-munkaterületek létrehozásáról](service-create-workspaces.md).
 
-![Power BI alkalmazások](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+![Power BI-alkalmazások](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
 Üzleti felhasználóinak gyakran lehet szükségük több Power BI-irányítópultra vagy -jelentésre az üzletvitelükhöz. A Power BI alkalmazásokkal irányítópult- és jelentésgyűjteményeket hozhat létre, majd közzéteheti az alkalmazásokat a teljes vállalat, vagy egy adott személy vagy csoport számára. A jelentés készítője vagy a rendszergazda számára az alkalmazásoknak köszönhetően egyszerűbbé válik a gyűjteményekre vonatkozó engedélyek kezelése.
 

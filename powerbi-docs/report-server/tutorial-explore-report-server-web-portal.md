@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 32bf2d3cedbeeb2430620855a2ac95bf349af9a2
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: 4eb9f5dc7e45006d1b5697f35b79d0e9d11fa2df
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092046"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281390"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Oktatóanyag: A Power BI jelentéskészítő kiszolgáló webportáljának áttekintése virtuális gépen
 Ebben az oktatatóanyagban Azure-beli virtuális gépet hozhat létre az előre telepített Power BI jelentéskészítő kiszolgálóval, így kipróbálhatja a Power BI- és a többoldalas jelentésminták és főbb teljesítménymutatók megtekintését, szerkesztését és kezelését.
@@ -119,7 +119,7 @@ A kívánt főbb teljesítménymutatókat és jelentéseket megjelölheti kedven
 
 1. Válassza a három pont ikont (**…**) a **Haszonkulcs** KPI jobb felső sarkában, majd válassza a **Hozzáadás a Kedvencekhez** lehetőséget.
    
-    ![Hozzáadás a Kedvencekhez](media/tutorial-explore-report-server-web-portal/power-bi-report-server-add-to-favorites.png)
+    ![Hozzáadás a kedvencekhez](media/tutorial-explore-report-server-web-portal/power-bi-report-server-add-to-favorites.png)
 2. Ha a webportál menüszalagján a **Kedvencek** lehetőségre kattint, ez a csoport is megjelenik a webportál Kedvencek lapján.
    
     ![Kedvencek megtekintése](media/tutorial-explore-report-server-web-portal/power-bi-report-server-favorites.png)
@@ -135,7 +135,7 @@ A webportál alapértelmezés szerint Csempe nézetben látható.
    
     ![Nézetváltás](media/tutorial-explore-report-server-web-portal/report-server-web-portal-list-view.png)
 
-2. Térjen vissza a csempenézetre: válassza a **Lista** > **Csempék** elemet.
+2. Váltson újra Csempék nézetre: Válassza a **Lista** > **Csempék** lehetőséget.
 
 ## <a name="power-bi-reports"></a>Power BI-jelentések
 

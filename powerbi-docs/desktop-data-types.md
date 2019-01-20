@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: reference
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b7387f633f0a53db840653a648ba9750b33c180f
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: f153ea866404066ce2ada6ab509de2aa8259d6a5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578612"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293056"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Adattípusok a Power BI Desktopban
 A cikk a Power BI Desktop és a Data Analysis Expressions (DAX) által támogatott adattípusokat ismerteti. 
@@ -35,7 +35,7 @@ A Power BI Desktopban az oszlopok adattípusát a Lekérdezésszerkesztőben, il
 
 ![](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
-A Lekérdezésszerkesztő Adattípus legördülő menüje jelenleg tartalmaz két olyan adattípust, amelyek az Adat- és a Jelentésnézetben nem érhetők el. Ez a **Dátum/idő/időzóna** és az **Időtartam**. Ha egy ilyen adattípusú oszlopot tölt be a modellbe, majd az Adat- vagy Jelentésnézetben tekinti meg, a Dátum/idő/időzóna típusú oszlop Dátum/idő típusúvá, az Időtartam típusú oszlop Tizedes tört típusúvá lesz konvertálva.
+A Lekérdezésszerkesztő Adattípus legördülő menüje tartalmaz két olyan adattípust, amelyek az Adat- és a Jelentésnézetben jelenleg nem érhetők el: Ez a **Dátum/idő/időzóna** és az **Időtartam**. Ha egy ilyen adattípusú oszlopot tölt be a modellbe, majd az Adat- vagy Jelentésnézetben tekinti meg, a Dátum/idő/időzóna típusú oszlop Dátum/idő típusúvá, az Időtartam típusú oszlop Tizedes tört típusúvá lesz konvertálva.
 
 ### <a name="number-types"></a>Számtípusok
 A Power BI Desktop három számtípust támogat:

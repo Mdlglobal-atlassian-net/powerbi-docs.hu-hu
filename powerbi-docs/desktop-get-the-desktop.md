@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5eb2e63d9bac7249e106ad4c4b525ca3f3ab5cf8
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: be4ebfdfa7dca5ce212c2b5d242d87b0001b7750
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909594"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281919"
 ---
 # <a name="get-power-bi-desktop"></a>A Power BI Desktop beszerzése
 A **Power BI Desktop** segítségével az adatok megjelenítésére szolgáló speciális lekérdezések, modellek és jelentések állíthatók össze. A **Power BI Desktop** használatával adatmodelleket állíthat össze, jelentéseket hozhat létre és megoszthatja a munkáját a Power BI szolgáltatásba való közzététellel.  A **Power BI Desktop** ingyenesen letölthető.
@@ -95,7 +95,7 @@ A következő lista a **Power BI Desktop** futtatásához szükséges minimális
 * .NET 4.5
 * Internet Explorer 9-es vagy újabb verzió
 * **Memória (RAM):** Legalább 1 GB, 1,5 GB vagy több javasolt.
-* **Kijelző:** Legalább 1440x900 vagy 1600x900 (16:9) felbontás javasolt. Az alacsonyabb felbontás, például 1024x768 vagy 1280x800 nem javasolt, mert bizonyos vezérlők (például a kezdőképernyő bezárása) csak nagyobb felbontáson jelennek meg.
+* **Kijelző:** Legalább 1440×900 vagy 1600×900 (16:9) felbontás javasolt. Az alacsonyabb felbontás, például 1024x768 vagy 1280x800 nem javasolt, mert bizonyos vezérlők (például a kezdőképernyő bezárása) csak nagyobb felbontáson jelennek meg.
 * **A Windows megjelenítési beállításai:** Ha a megjelenítési beállítások több mint 100%-ra módosítják a szövegek, alkalmazások és más elemek méretét, lehet, hogy nem jelennek meg bizonyos párbeszédpanelek, amelyeket be kell zárni, vagy amelyeken valamilyen műveletet kell végezni a **Power BI Desktop** használatának folytatásához. Ha ezzel a problémával találkozik, ellenőrizze a **megjelenítési beállításokat**. Ehhez lépjen Windows rendszeren a **Gépház > Rendszer > Kijelző** területre, és a csúszkával állítsa vissza a megjelenítési beállításokat 100%-ra.
 * **CPU:** 1 GHz-es vagy gyorsabb x86-os vagy x64-es processzor ajánlott.
 
@@ -115,7 +115,7 @@ A Power BI Desktop aktuális verziójára történő frissítés általában meg
 Javasoljuk a frissítést a Power BI Desktop legújabb verziójára, hogy a legújabb fejlesztéseket élvezhesse többek között a funkciók, a teljesítmény és a stabilitás terén. Egyes cégek nem kívánják, hogy a munkatársaik minden új verzióra frissítsenek. Az értesítéseket a beállításjegyzék módosításával kapcsolhatja ki a következő lépésekben:
 
 1. A beállításjegyzék-szerkesztővel nyissa meg a *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop* helyet.
-2. Hozzon létre egy új bejegyzést a következő beállításokkal: *REG_DWORD : DisableUpdateNotification*
+2. Hozzon létre új bejegyzést a következő beállításokkal: *REG_DWORD : DisableUpdateNotification*
 3. Állítsa az új bejegyzés értékét **1**-re.
 
 A módosítás érvénybe lépéséhez újra kell indítania a számítógépet.
@@ -125,7 +125,7 @@ A módosítás érvénybe lépéséhez újra kell indítania a számítógépet.
 Bizonyos körülmények között, például bizonyos képernyőfelbontási konfigurációk esetén, egyes felhasználók a Power BI Desktop tartalmai mellett nagy, fekete területeket láthatnak. Az elemek megjelenítésére általában inkább a közelmúltban történt operációsrendszer-frissítések hatnak, és nem az, ahogy maga a Power BI Desktop mutatja be őket. Ettől még a nagy, fekete területek nem mutatnak olyan jól, mint a vizualizációk, ezért a probléma megoldásához a következő lépéseket javasoljuk:
 
 1. Nyomja le a Start billentyűt, és a megjelenő keresőmezőbe írja be a *blurry* (homályos) szót.
-2. A megjelenő párbeszédablakban válassza a következő lehetőséget: *Let Windows fix apps that are blurry.* (Javítsa ki a Windows a homályos alkalmazásokat).
+2. A megjelenő párbeszédablakban válassza az alábbi lehetőséget: *A Windows javítsa ki a homályos alkalmazásokat.*
 3. Indítsa újra a Power BI Desktopot.
 
 A további Windows-frissítések megjelenésekor megoldódhat a probléma. 

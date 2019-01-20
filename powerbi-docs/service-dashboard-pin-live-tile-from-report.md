@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 447257ba715b473c233b1d13c6319ff4958f33fa
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 4a30d01040daffa394ff884c38dda3dd66fa5809
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717171"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285806"
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Teljes jelentésoldal rögzítése Power BI-irányítópultra élő csempeként
 Új [irányítópult-csempe](consumer/end-user-tiles.md) hozzáadásának egy másik módja egy teljes jelentésoldal rögzítése. Így egyszerűen rögzíthető egyszerre több vizualizáció.  Ezen felül teljes oldal rögzítésekor a csempék *élők* lesznek, és közvetlenül az irányítópulton kezelhetők. A vizualizációk jelentésszerkesztőben végrehajtott módosítása, például egy szűrő hozzáadása vagy a diagramon használt mezők megváltoztatása is megjelenik az irányítópulton lévő csempén.  
@@ -38,7 +38,7 @@ Nézze meg, hogyan rögzít Amanda élő jelentésoldalt egy irányítópulton, 
 2. Vizualizáció kijelölése nélkül válassza a menüsáv **Élő oldal rögzítése** elemét.
    
    ![Élő oldal rögzítése ikon](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page.png) 
-3. A csempét egy meglévő vagy egy új irányítópultra is rögzítheti. Figyelje meg a kiemelt szöveget: *Ha élő oldalt rögzít, akkor a jelentés módosításai az irányítópulton is megjelennek az oldal frissítésekor.*
+3. A csempét egy meglévő vagy egy új irányítópultra is rögzítheti. Figyelje meg a kiemelt szöveget: *Az élő oldal rögzítése lehetővé teszi, hogy a jelentés módosításai megjelenjenek az irányítópult csempéjén az oldal frissítésekor.*
    
    * Meglévő irányítópult: válassza ki az irányítópult nevét a legördülő listából. Az Önnel megosztott irányítópultok nem jelennek meg a legördülő listában.
    * Új irányítópult: írja be az új irányítópult nevét.

@@ -6,16 +6,16 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 795f97403ea80caad52e57e54edc3d54a4c5d952
-ms.sourcegitcommit: 3b1a1f55465e5dca88783046c6b4c073e4e22e4b
+ms.openlocfilehash: 623eb93c27f0ec762b2c9d063b646d757c3b1f0c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51580540"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296570"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>A helyszíni adatátjáró hibaelhárítása
 
@@ -141,7 +141,7 @@ A **Részletek megjelenítése** területen ekkor megjelenik a **DM_GWPipeline_U
 
 További részleteket az Eseménynaplók > **Alkalmazás- és szolgáltatásnaplók** > **Helyszíni adatátjáró szolgáltatás** részben talál.
 
-### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Hiba: Hiba történt a(z) <server> rendszerhez történő csatlakozás közben. Részletek: „Az adatátjáró elérése sikerült, de az átjáró nem tud hozzáférni a helyszíni adatforráshoz.”
+### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Hiba: Hiba történt a következőhöz való csatlakozás közben: <server>. Részletek: „Az adatátjáró elérése sikerült, de az átjáró nem tud hozzáférni a helyszíni adatforráshoz.”
 
 Nem sikerült csatlakozni a megadott adatforráshoz. Ellenőrizze az adott adatforráshoz megadott információkat.
 
@@ -307,7 +307,7 @@ Az alábbiakban a rendelkezésre álló teljesítményszámlálók láthatók.
 
 ## <a name="reviewing-slow-performing-queries"></a>Lassú lekérdezések áttekintése
 
-Azt tapasztalhatja, hogy az átjáró lassan válaszol. Ez DirectQuery-lekérdezések esetében, illetve az importált adatkészlet frissítésekor fordulhat elő. A teljesítménycsökkenés okának azonosítása érdekében engedélyezheti a további naplózást, amellyel megtekintheti a kimeneteket és az időzítésüket. Ha hosszan futó lekérdezést észlel, lehetséges, hogy a lekérdezési teljesítmény hangolásához további módosításokat kell elvégeznie az adatforráson. Ilyen lehet például az SQL Server-lekérdezésekhez tartozó indexek beállítása.
+Azt tapasztalhatja, hogy az átjáró lassan válaszol. Ez DirectQuery-lekérdezések esetében, illetve az importált adatkészlet frissítésekor fordulhat elő. A további naplózás engedélyezésével kinyerheti a lekérdezéseket és az időzítésüket, így felmérheti, hogy melyiknek lassú a teljesítménye. Ha hosszan futó lekérdezést észlel, lehetséges, hogy a lekérdezési teljesítmény hangolásához további módosításokat kell elvégeznie az adatforráson. Ilyen lehet például az SQL Server-lekérdezésekhez tartozó indexek beállítása.
 
 A lekérdezés időtartamának meghatározásához két konfigurációs fájlt kell módosítania.
 
@@ -316,7 +316,7 @@ A lekérdezés időtartamának meghatározásához két konfigurációs fájlt k
 A *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* fájlban módosítsa az `EmitQueryTraces` értékét `False` értékről `True` értékre. A fájl alapértelmezett helye: *C:\Program Files\On-premises data gateway*. Az `EmitQueryTraces` engedélyezésével bekapcsolja az átjáróról az adatforrásra küldött lekérdezések naplózását.
 
 > [!IMPORTANT]
-> Az átjáró használatának mértékétől függően az EmitQueryTraces engedélyezése jelentősen megnövelheti a napló méretét. A naplók áttekintése után az EmitQueryTraces értékét módosítsa False értékre. Nem javasoljuk, hogy ez a beállítás hosszabb ideig engedélyezve legyen.
+> Az átjáró használatának mértékétől függően az EmitQueryTraces engedélyezése jelentősen megnövelheti a napló méretét. A naplók áttekintése után az EmitQueryTraces értékét módosítsa False értékre. A beállítást nem ajánlott hosszú távon engedélyezve hagyni.
 
 ```
 <setting name="EmitQueryTraces" serializeAs="String">
@@ -360,7 +360,7 @@ A *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* fájlban mód
    ![további naplózás](media/service-gateway-onprem-tshoot/additional-logging.png)
 
 > [!IMPORTANT]
-> Az átjáró használatának mértékétől függően a TracingVerbosity `5` értékre való állítása jelentősen megnövelheti a napló méretét. A naplók áttekintése után a TraceVerbosity értékét módosítsa `4` értékre. Nem javasoljuk, hogy ez a beállítás hosszabb ideig engedélyezve legyen.
+> Az átjáró használatának mértékétől függően a TracingVerbosity `5` értékre való állítása jelentősen megnövelheti a napló méretét. A naplók áttekintése után a TraceVerbosity értékét módosítsa `4` értékre. A beállítást nem ajánlott hosszú távon engedélyezve hagyni.
 
 ```
 <setting name="TracingVerbosity" serializeAs="String">
@@ -459,7 +459,7 @@ Kövesse az alábbi lépéseket a probléma megoldásához:
 1. Egyszerű szolgáltatásnév beállítása a helyszíni átjáróhoz
 2. Korlátozott delegálás beállítása az Active Directory (AD) szolgáltatásban
 
-### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException: Nem sikerült windowsos identitást létrehozni a felhasználói azonosítóhoz
+### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException: A felhasználó azonosítójához nem sikerült windowsos identitást létrehozni
 
 A FailedToImpersonateUserException akkor történik, ha nem tud megszemélyesítést végezni más felhasználó nevében. Akkor is előfordulhat, ha a megszemélyesíteni kívánt fiók egy másik tartományból van, mint amelyikben az átjáró szolgáltatás tartománya található (ez egy korlátozás).
 
@@ -500,7 +500,7 @@ Az 1033-as hibát kapja, amikor az SAP HANA-ban konfigurált külső azonosító
         <value>AADEmail</value>
 ```
 
-### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG][LIBODBCHDB DLL][HDBODBC] Kommunikációs kapcsolódási hiba;-10709 sikertelen kapcsolódás (RTE:[-1] Kerberos-hiba. Jelentős: „[851968] egyéb hiba”, kisebb: „Nincsenek hitelesítő adatok a biztonsági csomagban”
+### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG][LIBODBCHDB DLL][HDBODBC] Kommunikációs kapcsolódási hiba;-10709 sikertelen kapcsolódás (RTE:[-1] Kerberos-hiba. Jelentős: "[851968] Egyéb hiba", kisebb: „Nincsenek hitelesítő adatok a biztonsági csomagban”
 
 A -10709 sikertelen kapcsolat hibaüzenetet kapja, ha a delegálás beállítása nem megfelelő az AD-ben.
 

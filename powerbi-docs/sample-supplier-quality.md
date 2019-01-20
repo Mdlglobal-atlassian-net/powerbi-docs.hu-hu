@@ -1,23 +1,23 @@
 ---
-title: 'Szállítói minőségelemzési minta a Power BI-hoz: bemutató'
-description: 'Szállítói minőségelemzési minta a Power BI-hoz: bemutató'
+title: 'Szállítói minőségelemzési minta a Power BI-hoz: Bemutató megtekintése'
+description: 'Szállítói minőségelemzési minta a Power BI-hoz: Bemutató megtekintése'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 0b214e2c08e6a39e4b09643c02bccedb56d5b9f4
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 3ef48bbe55793825693382252ac143068549d7a8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717654"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292982"
 ---
-# <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Szállítói minőségelemzési minta a Power BI-hoz: bemutató
+# <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Szállítói minőségelemzési minta a Power BI-hoz: Bemutató megtekintése
 
 ## <a name="a-brief-overview-of-the-supplier-quality-analysis-sample"></a>A Szállítói minőségelemzési minta rövid áttekintése
 Ez az iparági minta-irányítópult és az alapjául szolgáló jelentés az ellátási láncok egyik tipikus problémájára, a szállítók minőségelemzésére helyezi a hangsúlyt.
@@ -167,5 +167,5 @@ Nézzünk meg egy másik, szintén a hibák összesített számához kapcsolód�
 
 Ebben a környezetben nyugodtan kipróbálhat bármit. Bármikor dönthet úgy, hogy nem menti a változtatásokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőséggel.
 
-## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Kapcsolódás saját adatokhoz
+## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
 Reméljük, ebből a bemutatóból megtudta, hogyan elemezheti a szállítók minőségét Power BI-irányítópultok, a Q&A és Power BI-jelentések használatával. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További tudnivalók a [Power BI használatának első lépéseiről](service-get-started.md).

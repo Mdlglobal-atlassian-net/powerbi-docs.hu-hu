@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/11/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8856a8641b38b7a8256b199acccd54e030bdce40
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: dd4ee055501974345c819f7604ff30174cd4c5ba
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53984631"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279004"
 ---
 # <a name="organize-work-in-the-new-workspaces-preview-in-power-bi"></a>Munka szervezése az új munkaterületeken (előzetes verzió) a Power BI-ban
 
@@ -43,7 +43,7 @@ Az előzetes verzió ideje alatt a régi és új típusú alkalmazás-munkaterü
 
 ## <a name="roles-in-the-new-workspaces"></a>Az új munkaterületek szerepkörei
 
-Felhasználói csoportokat vagy egyéneket tagként, közreműködőként vagy rendszergazdaként adhat hozzá az új munkaterületekhez. A meghatározott szerepkört a felhasználói csoport minden tagja megkapja. Ha egy felhasználó több csoport tagja, a szerepkör által nyújtott legmagasabb szintű engedélyekkel fog rendelkezni.  A különböző szerepkörök ismertetését a cikk későbbi, [Az új munkaterületek szerepkörei](#roles-in-the-new-workspaces) című szakaszában találhatja.
+Felhasználói csoportokat vagy egyéneket tagként, közreműködőként vagy rendszergazdaként adhat hozzá az új munkaterületekhez. A meghatározott szerepkört a felhasználói csoport minden tagja megkapja. Ha egy felhasználó több csoport tagja, a szerepkör által nyújtott legmagasabb szintű engedélyekkel fog rendelkezni.
 
 A munkaterületekhez adott tagoknak Power BI Pro-licencre van szüksége. A munkaterületen a felhasználók együttműködhetnek az irányítópultokon és jelentéseken, amelyeket a szélesebb közönség vagy akár a teljes vállalat elé szeretne tárni. Ha másokkal is megszeretné osztani a tartalmat a szervezeten belül, rendeljen hozzájuk Power BI Pro-licencet, vagy helyezze a munkaterületet egy Power BI Prémium szintű kapacitásba.
 
@@ -83,9 +83,7 @@ Az előzetes verzió időtartama alatt nem konvertálhat automatikusan régi tí
 
 Az új típusú munkaterületek általános elérhetővé válásakor igény szerint automatikusan migrálhatja a régi munkaterületeket. Az általános elérhetővé válás után egy idővel kötelező lesz a migrálás.
 
-## <a name="power-bi-apps-faq"></a>Power BI alkalmazások – gyakori kérdések
-
-### <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Miben különböznek az új munkaterületek a jelenlegi munkaterületektől?
+## <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Miben különböznek az új munkaterületek a jelenlegi munkaterületektől?
 
 Az új munkaterületekkel újraterveztünk néhány funkciót. Íme a változások, amelyek várhatóan véglegesek lesznek és az előzetes verziójuk. 
 
@@ -94,6 +92,13 @@ Az új munkaterületekkel újraterveztünk néhány funkciót. Íme a változás
 - A jelenlegi munkaterületeken létrehozhat szervezeti tartalomcsomagot. Az új munkaterületen ezt nem teheti meg.
 - A jelenlegi munkaterületeken használhat szervezeti tartalomcsomagot. Az új munkaterületen ezt nem teheti meg.
 - Az előzetes verzió időtartama alatt az új munkaterületek egyes új funkciói még nem érhetők el. Részleteket a következő szakaszban ([Az új munkaterületek tervezett funkciói](service-new-workspaces.md#planned-new-workspace-preview-features)) találhat.
+
+## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
+
+Figyelembe veendő korlátozások:
+
+- Egy munkaterület legfeljebb 1000 adathalmazt, vagy adathalmazonként 1000 jelentést tartalmazhat. 
+- Power BI Pro-licenccel rendelkező személy legfeljebb 250 munkaterületnek lehet tagja.
 
 ## <a name="planned-new-workspace-preview-features"></a>Az előzetes verziós, új munkaterületek tervezett funkciói
 

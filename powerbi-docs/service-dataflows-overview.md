@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/03/2019
+ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d9cd9c812aa2fdd1d336dbd63ea280516a96e4d9
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.openlocfilehash: 83961f3ad469a4a7a76ceb6e1e4dba846a6edb04
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54072221"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287634"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Önkiszolgáló adat-előkészítés a Power BI-ban (előzetes verzió)
 
@@ -92,7 +92,7 @@ A következő táblázat ismerteti az adatfolyam-funkciókat és azok kapacitás
 |Adatfolyamokhoz csatolt entitások| |        +|
 |Szabványosított séma/Beépített támogatás a Common Data Service-hez|  +|  +|
 
-Az adatfolyamok számítási feladatainak prémium szintű kapacitásban történő engedélyezéséről további információt a Power BI Premium [számítási feladatok konfigurálása](service-admin-premium-manage.md#configure-workloads) cikkében talál.
+Az adatfolyamok számítási feladatainak prémium szintű kapacitásban történő engedélyezéséről további információt a Power BI Premium [számítási feladatok konfigurálása](service-admin-premium-manage.md#configure-workloads) cikkében talál. Adatfolyam számítási feladatok több földrajzi helyes kapacitásokban jelenleg nem érhetők el.
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>A big data típusú adatok önkiszolgáló adat-előkészítésének összefoglalása – Power BI
 Ahogy korábban említettük, több olyan forgatókönyv és példa is létezik, amelyben az **adatfolyamok** nagyobb mértékű vezérlést és gyorsabb elemzést biztosítanak az üzleti adatokhoz. A Common Data Servcie által meghatározott szabványos adatmodellel (sémával) az adatfolyamok importálhatják a fontos üzleti adatokat, és rövid idő alatt előkészíthetik azokat modellezéshez és BI-elemzésekhez. Mindez korábban hónapokig, vagy akár tovább is eltarthatott. 

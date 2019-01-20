@@ -4,17 +4,17 @@ description: Megismerheti Power BI-tartalmak az alkalmazásba való beágyazás�
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: nishalit
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/28/2018
-ms.openlocfilehash: 901c087c486598019e905598ee83382664842cc8
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.date: 12/20/2018
+ms.openlocfilehash: 785461290493db59c534a58b548620b6d2f58cd7
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578773"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284173"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Sorszintű biztonság használata beágyazott Power BI tartalommal
 
@@ -49,12 +49,12 @@ Ebben a sémában a következőket érdemes megfigyelni:
 
 * Minden mérték (például a **Total Sales** (Összes értékesítés)) a **Sales** (Értékesítések) ténytáblában van tárolva.
 * Négy további kapcsolódó dimenziótábla van: **Item** (Tétel), **Time** (Idő), **Store** (Áruház) és **District** (Kerület).
-* A kapcsolatvonalakon lévő nyilak jelzik, milyen irányba haladhatnak a szűrők az egyik táblából egy másikba. Ha például egy szűrő a **Time[Date]** (Idő [Dátum]) táblára van helyezve, a jelenlegi sémában csak a **Sales** (Értékesítések) táblába szűrne lefelé értékeket. Ez a szűrő nem lenne hatással más táblákra, mert a kapcsolatvonalakon lévő összes nyíl az értékesítések táblára mutat, és nem a másik irányba.
+* A kapcsolatvonalakon lévő nyilak jelzik, milyen irányba haladhatnak a szűrők az egyik táblából egy másikba. Ha például egy szűrő a **Time[Date]** (Idő [Dátum]) táblára van helyezve, a jelenlegi sémában csak a **Sales** (Értékesítések) táblába szűrne lefelé értékeket. Ez a szűrő nincs hatással más táblákra, mert a kapcsolatvonalakon lévő összes nyíl az értékesítések táblára mutat, és nem a másik irányba.
 * A **District** (Kerület) tábla jelzi, hogy ki az egyes kerületek menedzsere:
   
     ![A District (Kerület) táblában lévő sorok](media/embedded-row-level-security/powerbi-embedded-district-table.png)
 
-Ezen séma alapján, ha szűrőt alkalmazunk a **District** (Kerület) táblában lévő **District Manager** (Kerületi menedzser) oszlopra, és ha ez a szűrő megfelel a jelentést megtekintő felhasználónak, akkor a szűrő a **Store** (Áruház) és a **Sales** (Értékesítések) táblákra is szűr, hogy csak az adott menedzser adatait jelenítse meg.
+Ezen séma alapján, ha szűrőt alkalmazunk a **District** (Kerület) táblában lévő **District Manager** (Kerületi menedzser) oszlopra, és ha ez a szűrő megfelel a jelentést megtekintő felhasználónak, akkor a szűrő a **Store** (Áruház) és a **Sales** (Értékesítések) táblákra is szűr, hogy az adott menedzser adatait jelenítse meg.
 
 Ezt a következőképpen teheti meg:
 
@@ -141,7 +141,7 @@ A szerepkörök az identitással adhatók meg a beágyazási tokenekben. Ha ninc
 
 ### <a name="using-the-customdata-feature"></a>A CustomData funkció használata
 
-A CustomData funkció csak az **Azure Analysis Services** szolgáltatásban található modelleken, és csak az **Élő csatlakozás** módban működik. A felhasználókkal és a szerepkörökkel ellentétben a CustomData funkció nem állítható be .pbix-fájlokban. Ha a CustomData funkcióval hoz létre tokent, felhasználónévvel kell rendelkeznie.
+A CustomData funkció csak az **Azure Analysis Services** szolgáltatásban található modelleken, és csak az **Élő csatlakozás** módban működik. A felhasználókkal és a szerepkörökkel ellentétben a CustomData funkció nem használható .pbix-fájlokban. Ha a CustomData funkcióval hoz létre tokent, felhasználónévvel kell rendelkeznie.
 
 A CustomData funkció lehetővé teszi sorszűrő hozzáadását, amikor Power BI-adatokat tekint meg az alkalmazásában az **Azure Analysis Services** adatforrásként való használatakor (az Azure Analysis Serviceshez kapcsolódó Power BI-adatok megtekintésekor az alkalmazásban).
 
@@ -239,6 +239,75 @@ A [sorszintű biztonság](../service-admin-rls.md) olyan szolgáltatás, amely a
 
 A [JavaScript-szűrők](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) lehetővé teszik, hogy a felhasználó csökkentett, hatókörön belüli vagy szűrt nézetet lásson az adatokról. A felhasználó azonban továbbra is rendelkezik hozzáféréssel a modellséma tábláihoz, oszlopaihoz és mértékeihez, és elérheti az itt található bármely adatot. Az adatok korlátozott elérése csak RLS-sel lehetséges, ügyféloldali szűrő API-kkal nem.
 
+## <a name="token-based-identity-with-azure-sql-database-preview"></a>Jogkivonat alapú identitás Azure SQL Database esetén (előzetes verzió)
+
+**Jogkivonat-alapú identitással** úgy adhatja meg egy beágyazási jogkivonat hatályos identitását, hogy **Azure Active Directory (AAD)** hozzáférési jogkivonatot használ az **Azure SQL Database-hez**.
+
+Az adataikat **Azure SQL Database-ben** tároló ügyfelek új képesség kihasználásával kezelhetik felhasználóikat és azok adatokhoz való hozzáférését az Azure SQL-ben, a **Power BI Embeddeddel** való integráció esetén.
+
+A beágyazási jogkivonat generálása során megadható egy felhasználó Azure SQL-ben hatályos identitása. Egy felhasználó hatályos identitása úgy adható meg, hogy átadja az AAD hozzáférési jogkivonatot a kiszolgálónak. A hozzáférési jogkivonat használatának célja az, hogy az adott munkamenetben csak a felhasználót illető adatok legyenek lekérve az Azure SQL-ből.
+
+Használható egy felhasználói nézet kezelésére az Azure SQL-ben, vagy több-bérlős környezetben az Azure SQL-be egy adott ügyfélként való bejelentkezéshez. Használatával sorszintű biztonság alkalmazható a munkamenet során az Azure SQL-ben, így a munkamenet során csak a megfelelő adatok lesznek lekérve, tehát az RLS-t nem szükséges a Power BI-ban kezelni.
+
+A hatályos identitást érintő ilyen kérdések az RLS-szabályokra vonatkoznak, közvetlenül az Azure SQL Serveren. A Power BI Embedded akkor használja a megadott hozzáférési jogkivonatot, amikor adatokat kérdez le az Azure SQL Serverről. A felhasználó egyszerű felhasználónevét (amelyhez a hozzáférési jogkivonat meg lett adva) a USER_NAME() SQL-függvénnyel lehet megállapítani.
+
+A jogkivonat-alapú identitás csak DirectQuery-modelleknél működik, dedikált kapacitáson – olyan Azure SQL Database-hez csatlakozva, amely AAD-hitelesítés engedélyezésére van konfigurálva ([további tudnivalók az Azure SQL Database-hez használt AAD-hitelesítésről](https://docs.microsoft.com/azure/sql-database/sql-database-manage-logins)). Jogkivonat-alapú identitás használatához az adathalmaz adatforrásának konfigurálva kell lennie a végfelhasználók OAuth2 hitelesítő adatainak használatára.
+
+   ![Az Azure SQL Server konfigurálása](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
+
+### <a name="token-based-identity-sdk-additions"></a>Jogkivonat-alapú identitás SDK-bővítményei
+
+Az IdentityBlob tulajdonságot hozzáadtuk a jogkivonat-létrehozási forgatókönyvbeli hatályos identitásunkhoz.
+
+```JSON
+[JsonProperty(PropertyName = "identityBlob")]
+public IdentityBlob IdentityBlob { get; set; }
+```
+
+Az IdentityBlob típus egy érték sztring tulajdonságot tároló, egyszerű JSON-struktúra
+
+```JSON
+[JsonProperty(PropertyName = "value")]
+public string value { get; set; }
+```
+
+Az EffectiveIdentity a következő hívással hozható létre identitásblobbal:
+
+```C#
+public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null, IdentityBlob identityBlob = null);
+```
+
+Identitásblob az alábbi hívással hozható létre.
+
+```C#
+public IdentityBlob(string value);
+```
+
+### <a name="token-based-identity-rest-api-usage"></a>Jogkivonat-alapú identitás REST API használata
+
+Ha meghívja a [REST API-t](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetoken#definitions) minden identitásba felvehet identitásblobot.
+
+```JSON
+{
+    "accessLevel": "View",
+    "identities": [
+        {
+            "datasets": ["fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc"],
+        “identityBlob”: {
+            “value”: “eyJ0eXAiOiJKV1QiLCJh….”
+         }
+        }
+    ]
+}
+```
+
+Az identitásblobban megadott értéknek az Azure SQL Serverhez érvényes hozzáférési jogkivonatnak kell lennie (a következő forrás URL-címmel: <https://database.windows.net/>).
+
+   > [!Note]
+   > Ahhoz, hogy hozzáférési jogkivonatot hozhasson létre az Azure SQL-hez, az alkalmazásnak rendelkeznie kell **hozzáféréssel az Azure SQL DB-hez és a Data Warehouse-hoz**, valamint delegált jogosultsággal az **Azure SQL Database** API-hoz az AAD alkalmazásregisztrációs konfigurációban az Azure Portalon.
+
+   ![Alkalmazásregisztráció](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
+
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
 * A Power BI szolgáltatásban a felhasználók szerepkörökhöz rendelése nincs hatással az RLS-re beágyazási token használatakor.
@@ -248,5 +317,11 @@ A [JavaScript-szűrők](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Fil
 * Ha a mögöttes adatkészlethez nincs szükség RLS-re, a GenerateToken kérés **nem** tartalmazhat hatályos identitást.
 * Ha a mögöttes adatkészlet felhőalapú modell (gyorsítótárazott modell vagy DirectQuery), a hatályos identitásnak tartalmaznia kell legalább egy szerepkört, mert ellenkező esetben a szerepkör-hozzárendelés sikertelen lesz.
 * Az identitáslista lehetővé teszi, hogy az irányítópultok beágyazásánál több identitásból álló tokent is lehessen használni. A lista minden más összetevő esetében csak egyetlen identitást tartalmaz.
+
+### <a name="token-based-identity-limitations-preview"></a>Jogkivonat-alapú identitás-korlátozások (előzetes verzió)
+
+* Ez a képesség csak a Power BI Premiummal való használatot korlátozza.
+* A képesség helyszíni SQL Serverrel nem működik.
+* Ez a képesség több földrajzi hely esetén nem működik.
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

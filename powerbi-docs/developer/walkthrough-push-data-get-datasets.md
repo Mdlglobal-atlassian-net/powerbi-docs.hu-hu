@@ -5,19 +5,19 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 44fbf1e651c36c95694e397c64050977f3ee730a
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: f6396747dc21ddc94ab1abda6939e8e423c649e7
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092552"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296188"
 ---
-# <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>4. lépés: Adatkészlet lekérése, és sorok hozzáadása egy Power BI-táblához
-Ez a cikk az [adatok adatkészletbe történő leküldését](walkthrough-push-data.md) ismertető részletes útmutató része.
+# <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>4. lépés: Sorok hozzáadása egy Power BI-táblához adathalmaz lekérésével
+Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-data.md) ismertető részletes útmutató része.
 
 Az Adatok adatkészletbe való leküldésének **3. lépésében**, amelynek címe [Adatkészlet létrehozása a Power BI-ban](walkthrough-push-data-create-dataset.md), az [Adatkészlet létrehozása](https://docs.microsoft.com/rest/api/power-bi/datasets) művelet meghívásával létrehozott egy adatkészletet a Power BI-ban. Ebben a lépésben az [Adatkészletek lekérése](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) műveletet és a Newtonsoft.Jsont fogja használni az adatkészlet azonosítójának lekéréséhez. Az adatkészlet azonosítóját a 4. lépésben fogja használni, hogy sorokat adjon hozzá egy adatkészlethez. 
 
@@ -26,11 +26,11 @@ Ha adatokat szeretne elküldeni Power BI-adatkészletbe, akkor az adatkészletbe
 Az adatkészlet lekérésének menete:
 
 ## <a name="get-a-power-bi-dataset"></a>Power BI-adatkészlet lekérése
-> **Megjegyzés**: Mielőtt elkezdené, győződjön meg arról, hogy követte az [adatok elküldése az adatkészletbe](walkthrough-push-data.md) bemutatóban található, korábbi lépéseket.
+> **MEGJEGYZÉS**: Mielőtt elkezdené, győződjön meg arról, hogy követte az [adatok leküldése az adatkészletbe](walkthrough-push-data.md) bemutatóban található korábbi lépéseket.
 > 
 > 
 
-1. Az adatok elküldéséről szóló útmutató 2. lépésében ([Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése](walkthrough-push-data-get-token.md)) létrehozott konzolalkalmazás-projektben telepítse a Newtonsoft.Json NuGet-csomagot. A csomagot az alábbiakban leírt módon telepítheti:
+1. A 2. lépésben létrehozott konzolalkalmazás projektben tegye a következőket: Hajtsa végre az adatok leküldéséről szóló útmutató [Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése](walkthrough-push-data-get-token.md) lépését, és telepítse a Newtonsoft.Json NuGet-csomagot. A csomagot az alábbiakban leírt módon telepítheti:
    
      a. A Visual Studio 2015-ben válassza a **Tools** (Eszközök) > **NuGet Package Manager** (NuGet-csomagkezelő) > **Package Manager Console** (Csomagkezelő konzol) elemet.
    

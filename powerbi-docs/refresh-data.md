@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: bb29cd9edc5e44293344b7194ec94af482bd0166
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 097f0ae9da29d193fd7a337c9a164ab8c67dc4d9
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417372"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277664"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
 A jó döntések meghozatalában gyakran kritikus fontosságú a legfrissebb adatok lekérése. Már valószínűleg ismeri a Power BI Adatok lekérése funkcióját, amellyel adatokhoz csatlakozhat, illetve adatokat tölthet fel, és biztosan létrehozott már jelentéseket és egy irányítópultot is. Ezután célszerű meggyőződni arról, hogy az adatok valóban frissek és hibátlanok.
@@ -221,7 +221,7 @@ Néha a legjobb módszer az adatfrissítés megismerésére néhány példa megt
 ### <a name="excel-workbook-with-tables-of-data"></a>Excel-munkafüzet adattáblázatokkal
 Egy olyan Excel-munkafüzettel dolgozik, amely több táblázatnyi adatot is tartalmaz, azonban ezek nincsenek betöltve az Excel adatmodelljébe. Az Adatok lekérése funkcióval feltöltötte a munkafüzetet a helyi meghajtóból a Power BI-ba, és létrehozott egy irányítópultot. Azonban azóta módosította a munkafüzet táblázatait a helyi meghajtón, és szeretné frissíteni az irányítópultot a Power BI-ban az új adatokkal.
 
-Sajnos ebben az esetben a frissítés nem támogatott. Az irányítópult adatkészletének frissítéséhez újra fel kell töltenie a munkafüzetet. Van azonban egy remek megoldás: helyezze a munkafüzetet a OneDrive-ra vagy a SharePoint Online-ra!
+Sajnos ebben az esetben a frissítés nem támogatott. Az irányítópult adatkészletének frissítéséhez újra fel kell töltenie a munkafüzetet. Van azonban egy remek megoldás: Helyezze el munkafüzet-fájlját a OneDrive-on vagy a SharePoint Online-on!
 
 Amikor egy OneDrive-on vagy a SharePoint Online-on tárolt fájlhoz csatakozik, a jelentések és az irányítópultok a fájlhoz hűen jelenítik meg az adatokat. Ebben az esetben ugyanúgy, mint ahogy az Excel-munkafüzetben szerepelnek. A Power BI automatikusan, körülbelül óránként ellenőrzi a fájlt, frissítéseket keresve. Ha módosítja a OneDrive-on vagy a SharePoint Online-on tárolt munkafüzetet, a módosítások az irányítópulton és a jelentésekben is megjelennek egy órán belül. A frissítést nem kell kézzel beállítania. Azonban ha azonnal látni szeretné a frissítéseket a Power BI-ban, kézzel frissítheti az adatkészletet az Azonnali frissítés funkcióval.
 

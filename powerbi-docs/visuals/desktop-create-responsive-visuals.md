@@ -5,20 +5,20 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1260f2c69a4ab913f7451671ab7821ee250998c0
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 4372f37cf6afc8fe51d6650ddd888bd41d3ea678
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187237"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280125"
 ---
 # <a name="optimize-a-power-bi-visual-for-any-size"></a>Power BI-vizualizációk optimalizálása bármely méretre
-Ha létrehoz egy új jelentést, akkor alapértelmezés szerint a vizualizációk *rugalmasak*: dinamikusan módosulnak, hogy a lehető legtöbb adatot jelenítsék meg a képernyő méretétől függően. Régebbi jelentések esetén is beállíthatja, hogy a vizualizációk dinamikusan átméreteződjenek.
+Új jelentés létrehozásakor a vizualizációk alapértelmezés szerint *rugalmasak*: A képernyő méretétől függően dinamikusan a lehető legtöbb adatot és eredményt jelenítik meg egyszerre. Régebbi jelentések esetén is beállíthatja, hogy a vizualizációk dinamikusan átméreteződjenek.
 
 A vizualizáció méretének változásával a Power BI átrangsorolja az adatnézet elemeit, például eltávolítja a kitöltéseket, vagy automatikusan áthelyezi a jelmagyarázatot a vizualizáció tetejére, hogy az egyre kisebb méretű vizualizáció változatlanul áttekinthető maradjon. Az ilyen rugalmas elrendezés különösen hasznos a telehonokon futó Power BI mobilalkalmazásban lévő vizualizációk esetében.
 

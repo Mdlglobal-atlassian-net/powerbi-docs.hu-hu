@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 215b4c8f46b2d39c6dcc5853c07e4e6526027881
-ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
+ms.openlocfilehash: 5c383cf3c7fcbae88be6943bb418026c849db196
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51027460"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277434"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Jelentéstémák használata a Power BI Desktopban
 A **Jelentéstémák** használatával egységes színtémát alkalmazhat az egész jelentésre, például a cég színeit, az évszaknak megfelelő színeket vagy bármely más színtémát. **Jelentéstémák** alkalmazásakor a jelentésben szereplő összes vizualizáció a kiválasztott téma színeit fogja használni. Ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be.
@@ -83,11 +83,11 @@ A témafájl sikeres importálása után tekintsük meg a JSON-fájl egyszerű �
 
 Ez a JSON-fájl az alábbi kötelező sorokat tartalmazza:
 
-* **name** (név) – A téma neve, amely az egyetlen kötelezően kitöltendő mező.
+* **name** (név): A téma neve, amely az egyetlen kötelezően kitöltendő mező.
 
-* **dataColors** (adatszínek) – A Power BI Desktop vizualizációiban szereplő adatokhoz használható hexadecimális színkódok listája. A lista annyi színt tartalmazhat, amennyit csak szeretne.
+* **dataColors** (adatszínek): A Power BI Desktop vizualizációiban szereplő adatokhoz használható hexadecimális színkódok listája. A lista annyi színt tartalmazhat, amennyit csak szeretne.
 
-* **background** (háttér), **foreground** (előtér) és **tableAccent** (táblázat jelölőszíne) – A különböző típusú vizualizációkban alkalmazandó színek. 
+* **background** (háttér), **foreground** (előtér) és **tableAccent** (táblázat jelölőszíne): A különböző típusú vizualizációkban alkalmazandó színek. 
   - A **foreground** (előtérszín) érték a szövegmezők, a KPI-célok, a többsoros kártyák, a kártyaértékek, a mérőkiolvasások és a függőleges szeletelőelemek szövegére, valamint a **táblázatok** és **mátrixok** összegeire és értékeire vonatkozik. 
   - A **background** (háttérszín) érték a gombok kitöltésére és a kombinált diagramok címkéinek hátterére vonatkozik. A színek használatának módja az alkalmazott vizualizációs stílustól függ. 
   - A **tábla** és **mátrix** típusú vizualizációk alapértelmezés szerint alkalmazzák ezeket a stílusokat.
@@ -178,9 +178,9 @@ A **jelentéstémák** színek segítségével tükrözhetik az Ön személyisé
 ## <a name="report-theme-json-file-format"></a>Jelentéstémát tartalmazó JSON-fájlok formátuma
 Az alapszintű JSON-fájl öt kötelező sort tartalmaz:
 
-* **name** (név) – A téma neve, amely az egyetlen kötelezően kitöltendő mező.
-* **dataColors** (adatszínek) – A Power BI Desktop vizualizációiban szereplő adatokhoz használható hexadecimális színkódok listája. A lista annyi színt tartalmazhat, amennyit csak szeretne.
-* **background** (háttér), **foreground** (előtér) és **tableAccent** (táblázat jelölőszíne) – A különböző típusú vizualizációkban alkalmazandó színek. A **foreground** (előtérszín) a szövegmezők, a KPI-célok, a többsoros kártyák, a kártyaértékek, a mérőkiolvasások és a függőleges szeletelőelemek szövegére, valamint a **táblázatok** és **mátrixok** összegeire és értékeire vonatkozik. A **background** (háttérszín) érték a gombok kitöltésére és a kombinált diagramok címkéinek hátterére vonatkozik. A színek használatának módja az alkalmazott vizualizációs stílustól függ. A **tábla** és **mátrix** típusú vizualizációk alapértelmezés szerint alkalmazzák ezeket a stílusokat.
+* **name** (név): A téma neve, amely az egyetlen kötelezően kitöltendő mező.
+* **dataColors** (adatszínek): A Power BI Desktop vizualizációiban szereplő adatokhoz használható hexadecimális színkódok listája. A lista annyi színt tartalmazhat, amennyit csak szeretne.
+* **background** (háttér), **foreground** (előtér) és **tableAccent** (táblázat jelölőszíne): A különböző típusú vizualizációkban alkalmazandó színek. A **foreground** (előtérszín) a szövegmezők, a KPI-célok, a többsoros kártyák, a kártyaértékek, a mérőkiolvasások és a függőleges szeletelőelemek szövegére, valamint a **táblázatok** és **mátrixok** összegeire és értékeire vonatkozik. A **background** (háttérszín) érték a gombok kitöltésére és a kombinált diagramok címkéinek hátterére vonatkozik. A színek használatának módja az alkalmazott vizualizációs stílustól függ. A **tábla** és **mátrix** típusú vizualizációk alapértelmezés szerint alkalmazzák ezeket a stílusokat.
 
 Ha bővített, a formázást sokkal részletesebben szabályozó JSON-fájlt szeretne létrehozni, akkor egy **visualStyles** nevű szakaszt kell beszúrnia a JSON-fájlba. A formázási jellemzőket a **visualStyles** szakaszba kell beágyazni. A **visualStyles** szakasz az alábbi formátumhoz fog hasonlítani:
 
@@ -249,12 +249,12 @@ Az alábbi tábla *cardName* értékeket határoz meg. Az egyes cellákban szere
 | **cardName** |
 | --- |
 | axis: Mérőtengely |
-| breakdown: Bontás |
+| breakdown: Lebontás |
 | bubbles: Buborékok |
 | calloutValue: Ábrafelirat értéke |
 | card: Kártya |
 | cardTitle: Kártya címe |
-| categoryAxis: X-tengely |
+| categoryAxis: X tengely |
 | categoryLabels: Kategóriacímkék |
 | columnFormatting: Mezőformázás |
 | columnHeaders: Oszlopfejlécek |
@@ -266,7 +266,7 @@ Az alábbi tábla *cardName* értékeket határoz meg. Az egyes cellákban szere
 | goals: Célok |
 | grid: Rács |
 | header: Fejléc |
-| imageScaling: Skálázás |
+| imageScaling: Méretezés |
 | indicator: Jelző |
 | items: Elemek |
 | labels: Adatfeliratok |
@@ -274,16 +274,16 @@ Az alábbi tábla *cardName* értékeket határoz meg. Az egyes cellákban szere
 | lineStyles: Alakzatok |
 | mapControls: Térképvezérlők |
 | mapStyles: Térképstílusok |
-| numericInputStyle: Numerikus bemenetek |
+| numericInputStyle: Számbevitelek |
 | percentBarLabel: Árfolyamcímke |
 | plotArea: Rajzterület |
-| plotAreaShading: Szimmetrikus árnyékolás |
-| ratioLine: Arányvonalak |
+| plotAreaShading: Szimmetriaárnyékolás |
+| ratioLine: Arányvonal |
 | referenceLine: Állandó-vonal |
-| ribbonChart: Szalagok |
+| ribbonChart: Menüszalagok |
 | rotation: Elforgatás |
 | rowHeaders: Sorazonosítók |
-| kijelölés: Kijelölési vezérlők |
+| selection: Kijelölési vezérlők |
 | sentimentColors: Hangulatszínek |
 | shape: Alakzat |
 | slider: Csúszka |
@@ -293,11 +293,11 @@ Az alábbi tábla *cardName* értékeket határoz meg. Az egyes cellákban szere
 | total: Végösszeg |
 | trend: Trendvonal |
 | trendline: Trendtengely |
-| valueAxis: Y-tengely |
+| valueAxis: Y tengely |
 | values: Értékek |
 | wordWrap: Sortörés |
-| xAxisReferenceLine: Állandóvonal az X-tengelyen |
-| y1AxisReferenceLine: Állandóvonal |
+| xAxisReferenceLine: Állandó-vonal az X tengelyen |
+| y1AxisReferenceLine: Állandó-vonal |
 | zoom: Nagyítás |
 
 ### <a name="properties-within-each-card"></a>Az egyes kártyákon belüli tulajdonságok

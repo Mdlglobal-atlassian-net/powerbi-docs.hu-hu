@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: 18fb96573052455034f8c257811daed6cb15529e
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: dd3da287d976b9fe84ab56b425a5f08fba31d224
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679238"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288359"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI-jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz
 A Power BI-jelentéseket helyszínen is tárolhatja és kezelheti a Power BI jelentéskészítő kiszolgáló webportálján, illetve tárolhatja őket a felhőbeli Power BI szolgáltatásban (https://powerbi.com)). A jelentéseket a Power BI Desktopban hozhatja létre, majd közzéteheti a webportálon. Ekkor a jelentések megtekinthetővé válnak a cégen belüli olvasók számára egy böngésző vagy egy Power BI-mobilalkalmazás használatával.
@@ -53,7 +53,7 @@ Ha már létrehozott jelentéseket a Power BI Desktopban, akkor gyakorlatilag a 
    
     ![A Power BI Destop üdvözlőképernyője](media/quickstart-create-powerbi-report/report-server-powerbi-desktop-start.png)
 
-## <a name="step-2-select-a-data-source"></a>2. lépés: Az adatforrás kiválasztása
+## <a name="step-2-select-a-data-source"></a>2. lépés: Adatforrás kiválasztása
 Számos adatforráshoz kapcsolódhat. További információkért lásd: [Kapcsolódás az adatforrásokhoz](connect-data-sources.md).
 
 1. Az üdvözlőképernyőn kattintson az **Adatok beolvasása** elemre.
@@ -70,7 +70,7 @@ Számos adatforráshoz kapcsolódhat. További információkért lásd: [Kapcsol
     ![Jelentéskészítő kiszolgáló kiválasztása](media/quickstart-create-powerbi-report/report-server-select-server.png)
 
 ## <a name="step-3-design-your-report"></a>3. lépés: A jelentés megtervezése
-Most jön a legérdekesebb rész: az adatokat illusztráló vizualizációk létrehozása.
+Most jön a legérdekesebb rész: Az adatokat illusztráló vizualizációk létrehozása.
 
 Például tölcsérdiagramot hozhat létre az éves jövedelem alapján csoportokba rendezett ügyfelekről.
 
@@ -82,7 +82,7 @@ Például tölcsérdiagramot hozhat létre az éves jövedelem alapján csoporto
 
 További információk a [Power BI-jelentés megtervezéséről](../desktop-report-view.md).
 
-## <a name="step-4-save-your-report-to-the-report-server"></a>4. lépés: A jelentés mentése a jelentéskészítő kiszolgálón
+## <a name="step-4-save-your-report-to-the-report-server"></a>4. lépés: Mentse a jelentést a jelentéskészítő kiszolgálón
 A kész jelentést mentse a 2. lépésben kiválasztott Power BI jelentéskészítő kiszolgálón.
 
 1. A **Fájl** menüben kattintson a**Mentés másként** > **Power BI jelentéskészítő kiszolgáló** elemre.
@@ -97,9 +97,9 @@ A kész jelentést mentse a 2. lépésben kiválasztott Power BI jelentéskész�
 A Power BI Desktop számos nagyszerű erőforrással segíti a jelentéskészítést. Egy jó kiindulási pont ez a hivatkozás.
 
 * [Első lépések a Power BI Desktopban](../desktop-getting-started.md)
-* Irányított útmutató: [Első lépések a Power BI Desktopban](../guided-learning/gettingdata.yml?tutorial-step=2)
+* Interaktív tanulás: [Első lépések a Power BI Desktop alkalmazással](../guided-learning/gettingdata.yml?tutorial-step=2)
 
-### <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgáló
+### <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgálón
 * [A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése](install-powerbi-desktop.md)  
 * [Mi a Power BI jelentéskészítő kiszolgáló?](get-started.md)  
 

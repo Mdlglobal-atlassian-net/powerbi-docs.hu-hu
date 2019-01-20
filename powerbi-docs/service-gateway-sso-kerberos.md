@@ -6,20 +6,20 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: ed9281ba14ad25e2acb347a2394ec729e9d4465c
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 7256de8dd36c25af9959e7103186666d65123360
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508037"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295259"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
-Használja a [Kerberos által korlátozott delegálást](https://technet.microsoft.com/library/jj553400.aspx) a közvetlen SSO-kapcsolat engedélyezéséhez. Az SSO engedélyezése egyszerűvé teszi a Power BI-jelentések és -irányítópultok számára az adatok helyszíni forrásokból történő frissítését.
+Használja a [Kerberos által korlátozott delegálást](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) a közvetlen SSO-kapcsolat engedélyezéséhez. Az SSO engedélyezése egyszerűvé teszi a Power BI-jelentések és -irányítópultok számára az adatok helyszíni forrásokból történő frissítését.
 
 ## <a name="supported-data-sources"></a>Támogatott adatforrások
 
@@ -111,9 +111,9 @@ Ez a szakasz azt feltételezi, hogy már konfigurálta az egyszerű szolgáltat�
 
 A következő lépésekben egy helyszíni környezetet feltételezünk két géppel: egy átjárót tartalmazó géppel és egy SQL Servert futtató adatbázis-kiszolgálóval. A példa kedvéért a következő beállításokat és neveket is feltételezzük:
 
-* Átjáró-számítógép neve: **PBIEgwTestGW**
-* Átjáró-szolgáltatásfiók: **PBIEgwTest\GatewaySvc** (fiók megjelenített neve: Gateway Connector)
-* SQL Server adatforrás gépének neve: **PBIEgwTestSQL**
+* Átjáró gépneve: **PBIEgwTestGW**
+* Átjárószolgáltatás-fiók: **PBIEgwTest\GatewaySvc** (fiók megjelenítendő neve: Gateway Connector)
+* SQL Server adatforrás gépneve: **PBIEgwTestSQL**
 * SQL Server adatforrás szolgáltatásfiókja: **PBIEgwTest\SQLService**
 
 A példaként megadott nevekkel és beállításokkal a konfigurációs lépések a következők:
@@ -164,7 +164,7 @@ Végül az átjáró-szolgáltatást futtató gépen (a példánkban **PBIEgwTes
 
 Az SAP HANA használata esetén javasoljuk, hogy kövesse az alábbi lépéseket, amelyek egy kis teljesítménynövekedést eredményezhetnek.
 
-1. Az átjáró telepítési könyvtárában keresse meg és nyissa meg a következő konfigurációs fájlt: *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
+1. Az átjáró telepítési könyvtárában keresse meg, majd nyissa meg ezt a konfigurációs fájlt: *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
 
 1. Keresse meg a *FullDomainResolutionEnabled* tulajdonságot, és módosítsa *True* értékre.
 
@@ -202,7 +202,7 @@ A cikk korábbi részeiben már volt szó az átjáró helyi szolgáltatásfiók
 
 Most, hogy megismerkedett a Kerberos átjáróval történő működésével, konfigurálhat egy egyszeri bejelentkezést az SAP Business Warehouse (SAP BW) szolgáltatáshoz. Az alábbi lépések azt feltételezik, hogy már [előkészült a Kerberos által korlátozott delegáláshoz](#preparing-for-kerberos-constrained-delegation) a cikkben korábban leírtak szerint.
 
-Ez az útmutató próbál olyan átfogó lennie, amennyire csak lehetséges. Ha már végrehajtott néhány lépést, azokat kihagyhatja: például már létrehozott egy szolgáltatásfelhasználót a BW-kiszolgálóhoz, és leképezte rá az egyszerű szolgáltatásnevet, vagy már telepítette a gsskrb5 kódtárat.
+Ez az útmutató próbál olyan átfogó lennie, amennyire csak lehetséges. Ha már végrehajtott néhány lépést, azokat kihagyhatja: Például már létrehozott egy szolgáltatásfelhasználót a BW-kiszolgálóhoz, és leképezte rá az egyszerű szolgáltatásnevet, vagy már telepítette a gsskrb5 kódtárat.
 
 ### <a name="setup-gsskrb5-on-client-machines-and-the-bw-server"></a>A gsskrb5 telepítése az ügyfélgépekre és a BW-kiszolgálóra
 
@@ -367,7 +367,7 @@ Ha nincs konfigurálva az Azure AD DirSync, kövesse ezeket a lépéseket **mind
 
 ### <a name="add-a-new-bw-application-server-data-source-to-the-power-bi-service"></a>Új BW-alkalmazáskiszolgáló-adatforrás hozzáadása a Power BI szolgáltatáshoz
 
-Adja hozzá a BW-adatforrást az átjáróhoz: kövesse a cikkben szereplő korábbi, [jelentés futtatásával](#running-a-power-bi-report) kapcsolatos utasításokat.
+Adja hozzá a BW-adatforrást az átjáróhoz: Kövesse a cikkben szereplő korábbi, [jelentés futtatásával](#running-a-power-bi-report) kapcsolatos utasításokat.
 
 1. Az adatforrás konfigurációs ablakában adja meg az Alkalmazáskiszolgáló **Gazdagépnév**, **Rendszer száma** és **Ügyfél-azonosító** adatait, ahogy azt a Power BI Desktopból a BW-kiszolgálóba való bejelentkezés során tenné. A **Hitelesítési módszer** elemnél válassza a **Windows** lehetőséget.
 

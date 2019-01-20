@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: reference
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d3ccba3e68400a5a4c5fbf486aa8ef4b00c51729
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: b3815e6783b612ff52aeb015fdd3b3669b6a2a51
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578336"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282973"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>A Power BI Desktop adatvédelmi szintjei
 A **Power BI Desktop** adatvédelmi szintjei egy elkülönítési szintet adnak meg, amely meghatározza, hogy az adott adatforrás milyen mértékben lesz elkülönítve a többi adatforrástól. A korlátozó elkülönítési szint azonban gátolja az adatforrások közötti információcserét, csökkentheti a funkcionalitást és hatással lehet a teljesítményre.

@@ -1,23 +1,23 @@
 ---
-title: 'Értékesítési és marketing minta a Power BI-hoz: bemutató'
-description: 'Értékesítési és marketing minta a Power BI-hoz: bemutató'
+title: 'Értékesítési és marketing minta a Power BI-hoz: Bemutató megtekintése'
+description: 'Értékesítési és marketing minta a Power BI-hoz: Bemutató megtekintése'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 717db64d30a12d41dc293db11f6f942e4615a1db
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 58c5063796a575498ab1c402f0be6aa2492e9060
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717585"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289233"
 ---
-# <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Értékesítési és marketing minta a Power BI-hoz: bemutató
+# <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Értékesítési és marketing minta a Power BI-hoz: Bemutató megtekintése
 
 ## <a name="overview-of-the-sales-and-marketing-sample"></a>Értékesítési és marketing minta: áttekintés
 Az **Értékesítési és marketing minta** egy VanArsdel Ltd nevű kitalált gyártó céghez tartozó irányítópultot és jelentést tartalmaz. Az irányítópultot a VanArsdel marketingigazgatója hozta létre, hogy nyomon tudja követi az iparág eseményeit és cége piaci részesedését, a termékmennyiséget, az eladásokat, valamint a róluk szóló véleményeket.
@@ -134,5 +134,5 @@ A vizualizációk a VanArsdel, szegmens, hónap és régió szerinti szűrésév
 
 Ebben a környezetben nyugodtan kísérletezhet. Bármikor dönthet úgy, hogy nem menti a változtatásokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőséggel.
 
-## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Kapcsolódás a saját adatokhoz
+## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
 Reméljük, hogy ez a bemutató segített megérteni, hogyan tárhat fel összefüggéseket az értékesítési és marketingadatokban Power BI-irányítópultok, a Q&A és jelentések használatával. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További tudnivalók a [Power BI használatának első lépéseiről](service-get-started.md).  

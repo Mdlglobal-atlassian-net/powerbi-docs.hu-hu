@@ -6,16 +6,16 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: maggies
-ms.openlocfilehash: 28a282ff6a35061422995c46fbbcd34c21b533a7
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: c42aa07fd78430c5692067ae8476b22288470c8c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717424"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54294265"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Power BI-irányítópult létrehozása jelentésből
 Áttekintette [A Power BI-irányítópultok](service-dashboards.md) részben leírtakat, és most saját irányítópultot kíván létrehozni. Az irányítópultok létrehozásának számos különböző módja van: többek között jelentésből, az alapoktól, adatkészletből, illetve egy meglévő irányítópult megkettőzésével is létrehozhatók stb.  
@@ -65,7 +65,7 @@ A Power BI egyik mintaként szolgáló adatkészletét fogjuk importálni, majd 
 1. Ugyanazon a munkaterületen maradva kattintson a **Jelentések** lapra. Megjelenik az újonnan importált jelentés egy sárga csillaggal. A megnyitásához kattintson a jelentés nevére.
 
     ![jelentések fül](media/service-dashboard-create/power-bi-reports.png)
-2. A jelentés Olvasás nézetben nyílik meg. Figyelje meg, hogy két lap található alul: a Discount Analysis (Kedvezményelemzés) és a Spend Overview (Költségvetés áttekintése) lapok. Minden egyes lap a jelentés egy-egy oldalát jelképezi.
+2. A jelentés Olvasás nézetben nyílik meg. Figyelje meg, hogy alul két lapfül látható: Kedvezményelemzés és értékesítés áttekintése. Minden egyes lap a jelentés egy-egy oldalát jelképezi.
     Válassza a **Jelentés szerkesztése** elemet a jelentés Szerkesztési nézetben való megnyitásához.
 
     ![jelentés az Olvasó nézetben](media/service-dashboard-create/power-bi-reading-view.png)

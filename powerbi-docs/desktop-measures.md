@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/08/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d4b0ad34d200e3d94c60c7e3a3f524a3f3ed09cf
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4cdd4cf3f8a21b2e97b936ed4e6d4efe2df9a0e8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46550006"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290590"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mértékek a Power BI Desktopban
 
@@ -66,7 +66,7 @@ Ez többek között lehetővé teszi, hogy mértékek használatával dinamikusa
 Például létrehozhat táblázatokat, amelyben a mértékek webes URL-címekként jelennek meg, és a kiválasztásnak megfelelően a létrehozott URL-címek kattinthatók is lesznek. Ez különösen hasznos, ha más Power BI-jelentésekhez szeretne hivatkozásokat létrehozni [URL-szűrő paraméterekkel](service-url-filters.md).
 
 ## <a name="learn-more"></a>További információ
-Itt csak egy rövid áttekintést adtunk a mértékekről, azonban ennél sokkal több információ áll rendelkezésre, amelyek alapján megtanulhat saját mértékeket létrehozni. Tekintse meg az [egyéni mértékek Power BI Desktopban való létrehozásáról szóló oktatóanyagot](desktop-tutorial-create-measures.md). Ebben a cikkben egy letöltött mintafájlon keresztül lépésenként elsajátíthatja a mértékek létrehozását.  
+Itt csak egy rövid áttekintést adtunk a mértékekről, azonban ennél sokkal több információ áll rendelkezésre, amelyek alapján megtanulhat saját mértékeket létrehozni. Tekintse meg a következő [oktatóanyagot: Egyéni mértékek létrehozása a Power BI Desktopban](desktop-tutorial-create-measures.md). Ebben a cikkben egy letöltött mintafájlon keresztül lépésenként sajátíthatja el a mértékek létrehozását.  
 
 A DAX behatóbb megismeréséhez tekintse át [a DAX Power BI Desktopban való használatának alapjait](desktop-quickstart-learn-dax-basics.md) ismertető cikket. A [Data Analysis Expressions-referencia](https://msdn.microsoft.com/library/gg413422.aspx) részletes cikkeket tartalmaz az egyes függvényekkel, szintaxisokkal, operátorokkal és elnevezési konvenciókkal kapcsolatban. A DAX már elérhető néhány éve az Excelhez készült Power Pivotban és az SQL Server Analysis Servicesben, így számos további nagyszerű forrásanyag is rendelkezésre áll. Tekintse meg továbbá a [DAX forrásanyagközpont wikijét](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), ahol a BI-közösség fontos tagjai osztják meg a DAX-szal kapcsolatos tudásukat.
 

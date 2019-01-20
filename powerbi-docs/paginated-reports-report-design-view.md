@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: dc811c5f6c6a7d5d428591eb7afd1665cda6dbb0
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 85950e2510147c3bed36d4911360f7c365c79da6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900451"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283529"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Ismerkedés a lapszámozott jelentések Jelentéstervező nézetével (előzetes verzió)
 
@@ -88,14 +88,14 @@ A tervezőfelület mérete eltérhet a jelentés nyomtatásához megadott nyomta
  A tulajdonság értéke – a tulajdonságtól függően – legördülő listából, az érték begépelésével, vagy a `<Expression>` lehetőség választása után egy kifejezés megadásával állítható be.  
   
 ### <a name="changing-the-properties-pane-view"></a>A Tulajdonságok panel nézetének módosítása  
- A Tulajdonságok panelen a tulajdonságok alapértelmezés szerint olyan tág kategóriákba rendezve jelennek meg, mint a Művelet, Szegély, Kitöltés, Betűtípus és Általános. Minden kategóriához tartozik egy tulajdonsághalmaz. A Betűtípus kategóriában például a következő tulajdonságok vannak felsorolva: Color (szín), FontFamily (betűcsalád), FontSize (betűméret), FontStyle (betűstílus), FontWeight (betűvastagság), LineHeight (sortávolság) és TextDecoration (betűdíszítés). A panelen felsorolt tulajdonságok igény szerint ábécé szerint rendezhetők. Ekkor a kategóriák eltűnnek, a tulajdonságok pedig ábécé szerinti sorrendben, kategóriától függetlenül jelennek meg.  
+ A Tulajdonságok panelen a tulajdonságok alapértelmezés szerint olyan tág kategóriákba rendezve jelennek meg, mint a Művelet, Szegély, Kitöltés, Betűtípus és Általános. Minden kategóriához tartozik egy tulajdonsághalmaz. A Betűtípus kategóriában például az alábbi tulajdonságok vannak felsorolva: Color (szín), FontFamily (betűcsalád), FontSize (betűméret), FontStyle (betűstílus), FontWeight (betűvastagság), LineHeight (sortávolság) és TextDecoration (betűdíszítés). A panelen felsorolt tulajdonságok igény szerint ábécé szerint rendezhetők. Ekkor a kategóriák eltűnnek, a tulajdonságok pedig ábécé szerinti sorrendben, kategóriától függetlenül jelennek meg.  
   
  A Tulajdonság panel tetején három gomb található: **Kategória**, **Ábécé** és **Tulajdonságlap**. A Tulajdonságok panel nézetei között a Kategória és az Ábécé gombokkal válthat. A **Tulajdonságlap** gombbal a kijelölt jelentéselem tulajdonságainak párbeszédablakát nyithatja meg.  
   
   
 ## <a name="5-grouping-pane"></a>5. A Csoportosítás panel
 
- A csoportokkal vizuális hierarchiába rendezhetők a jelentés adatai, és kiszámíthatók az összegek. Az egy adatterületen belüli sor- és oszlopcsoportok a tervezőfelületen és a Csoportosítás panelen is megtekinthetők. A Csoportosítás panelen két további panel érhető el: Sorcsoportok és Oszlopcsoportok. Az adatterület kiválasztása után a Csoportosítás panel az adott adatterületen belüli összes csoportot hierarchikus listában jeleníti meg. A gyermekcsoportok a szülőcsoport alatt, behúzással jelennek meg.  
+ A csoportokkal vizuális hierarchiába rendezhetők a jelentés adatai, és kiszámíthatók az összegek. Az egy adatterületen belüli sor- és oszlopcsoportok a tervezőfelületen és a Csoportosítás panelen is megtekinthetők. A Csoportosítás panelen két további panel érhető el: Sorcsoportok és Oszlopcsoportok. Az adatterület kiválasztása után a Csoportosítás panel az adott adatterületen belüli összes csoportot hierarchikus listában jeleníti meg: A gyermekcsoportok a szülőcsoport alatt, behúzással jelennek meg.  
   
  Csoportokat úgy hozhat létre, hogy a Jelentésadatok panelről mezőket húz át a tervezőfelületre vagy a Csoportosítás panelre. A Csoportosítás panelen szülő-, szomszédos és gyermekcsoportokat is felvehet, módosíthatja a csoport tulajdonságait, és csoportokat törölhet.  
   

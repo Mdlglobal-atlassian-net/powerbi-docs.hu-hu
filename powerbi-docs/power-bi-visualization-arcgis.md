@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 81867ba36e79a26acb168c1b02fc31e228bd6439
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: e559cb3ed460c8d81406ae8c8b01fe33eceaf461
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266047"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293915"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Esri ArcGIS-térképek a Power BI szolgáltatásban és a Power BI Desktopban
 Ez az oktatóanyag az ArcGIS-térképet létrehozó személy szemszögéből van megírva. Ha a készítő megosztja az ArcGIS-térképet egy kollégájával, az illető megtekintheti és használhatja a térképet, azonban nem mentheti a módosításokat. További információ az ArcGIS-térképek megtekintéséről: [Az ArcGIS-térképek használata](visuals/power-bi-visualizations-arcgis.md).
@@ -207,7 +207,7 @@ Az ArcGIS Online szolgáltatás használatával a vállalatok nyilvános webes t
 2. Írja be a keresési kifejezéseket, majd válasszon egy térképréteget. Ebben a példában az egyesült államokbeli kongresszusi körzeteket választottuk.
    
     ![](media/power-bi-visualization-arcgis/power-bi-esri-demographics-esri2-new.png)
-3. Ha szeretné megtekinteni a részleteket, válasszon egy árnyékolt területet a *Select from reference layer* (Kiválasztás referenciarétegről) eszköz megnyitásához. A referenciaréteg-választó eszközzel határokat vagy objektumokat választhat ki a referenciarétegen.
+3. Ha szeretné megtekinteni a részleteket, válasszon egy árnyékolt területet a *Kiválasztás referenciarétegről* eszköz megnyitásához: A referenciaréteg-választó eszközzel határokat vagy objektumokat választhat ki a referenciarétegen.
 
 <br/>
 
@@ -325,7 +325,7 @@ Az ArcGIS Maps for Power BI minden Power BI-felhasználó számára elérhető k
 
 **Hibaüzenetet kapok Power BI Desktopban arról, hogy megtelt a gyorsítótár**
 
-Ez egy programhiba, amelynek a javítása folyamatban van.  Addig is a gyorsítótár ürítéséhez törölje a fájlokat a C:\Users\\AppData\Local\Microsoft\Power BI Desktop\CEF mappából, majd indítsa újra a Power BI-t.
+Ez egy programhiba, amelynek a javítása folyamatban van.  Addig is a gyorsítótár ürítéséhez törölje a fájlokat a következő helyről: C:\Users\\AppData\Local\Microsoft\Power BI Desktop\CEF, majd indítsa újra a Power BI-t.
 
 **Támogatja az ArcGIS Maps for Power BI az Esri-alakzatfájlok használatát?**
 
