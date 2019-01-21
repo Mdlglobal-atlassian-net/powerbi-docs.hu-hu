@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/19/2018
+ms.date: 01/09/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 09c505d114eaa951978f23061d9c79c1b6870fad
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: 71ed70344281dec3353b73c8698594d62ef32eae
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53983370"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285599"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tippek és trükkök a színformázáshoz a Power BI-ban
 A Power BI sokféle lehetőséget kínál, amelyekkel egyedivé tehetők az irányítópultok és a jelentések. Ez a cikk néhány olyan ötletet fejt ki részletesen, amelyek segítségével meggyőzőbb, érdekesebb és az Ön igényeinek jobban megfelelő Power BI-vizualizációkat készíthet.
@@ -29,41 +29,38 @@ A következő tippeket kínáljuk Önnek. Van egy másik remek ötlete? Nagyszer
 * Széttartó színskálák használata
 * Művelet visszavonása a Power BI-ban
 
-A módosításhoz szerkesztenie kell a jelentést: jelölje ki saját **Jelentését** a **Saját munkaterület** panelen, majd válassza a **Jelentés szerkesztése** lehetőséget a felső menüben, ahogyan az alábbi ábrán látható. Ez a példa az **Emberi erőforrások mintát** használja.
+Módosítások elvégzéséhez szerkesztenie kell a jelentést. Nyissa meg a jelentést, majd válassza a **Jelentés szerkesztése** lehetőséget a felső menüben, a következő képhez hasonlóan.
 
-![jelentésvászon a Jelentés szerkesztése elem kiemelésével](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
-Amikor a **Jelentés** vászon jobb oldalán megjelenik a **Vizualizációk** panel, megkezdheti a testre szabást.
+Amikor a **Jelentés** vászon jobb oldalán megjelenik a **Vizualizációk** panel, megkezdheti a testre szabást. Ha a panel nem látható, a jobb felső sarokban található nyíllal nyitható meg.
 
-![jelentés a Formázás panellel](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
 
 ## <a name="change-the-color-of-a-single-data-point"></a>Egy adatpont színének módosítása
-Előfordul, hogy egy adott adatpontot szeretne kiemelni. Ez lehet egy újonnan bevezetett termék eladott mennyisége, vagy egy javuló minőségi mutató egy új program elindítása után. A Power BI-ban és a vizualizációtípusok többségénél kiemelhet egy választott adatpontot a színe módosításával.
+Előfordul, hogy egy adott adatpontot szeretne kiemelni. Ez lehet egy újonnan bevezetett termék eladott mennyisége, vagy egy javuló minőségi mutató egy új program elindítása után. A Power BI-ban kiemelhet egy választott adatpontot a színe módosításával.
 
-Az alábbi vizualizáció az értékesítési nyereségeket mutatja be alkalmazottanként az alapértelmezett színekkel. 
+Az alábbi vizualizáció egységeket rangsorol a termékszegmens szerint. 
 
-![területdiagram](media/service-tips-and-tricks-for-color-formatting/power-bi-area-chart.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-grey.png)
 
-Az Annelie-hez tartozó terület nem jól látható, ezért színezéssel fogjuk jobban kiemelni. A lépések a következők:
+Tegyük fel, hogy a **Kényelem** szegmens színes kiemelésével meg szeretné mutatni, hogy milyen jól teljesít az új szegmens. A lépések a következők:
 
-Bontsa ki az **Adatszínek** szakaszt. A következő jelenik meg.
+Bontsa ki az **Adatszínek** szakaszt, és kapcsolja be a csúszkát **Az összes megjelenítése** lehetőséghez. Így a vizualizáció összes adatelemének színe megjelenik. A kurzort az adatpontok fölé helyezve engedélyezett a görgetés, tehát az adatpontok bármelyikét módosíthatja.
 
-![a Formázás alatti Adatszínek terület](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-show-all.png)
 
+Állítsa a **Kényelem** színét narancssárgára. 
 
-Ebben az esetben válasszunk egy sötét de élénk színt, amely nem hasonló a Valery adataihoz használt színhez. Válassza ki az Annelie színmezőjében lévő lefelé mutató nyilat, válassza az **Egyéni szín** lehetőséget, és válasszon egy élénk kék színt.
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-orange.png)
 
-![színválasztás](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
+Miután választott, a **Kényelem** adatpont szép narancssárga, és kétségtelenül szembeszökő színt vesz fel.
 
-A választás után Annelie területe sokkal jobban megkülönböztethető a többi alkalmazottétól. 
+A Power BI akkor is megjegyzi a választását és narancssárgán jeleníti meg a **Kényelmet**, ha Ön megváltoztatja, majd visszaváltoztatja a vizualizáció típusát.
 
-![területdiagram, Annalie területe már élénk kék](media/service-tips-and-tricks-for-color-formatting/power-bi-color.png)
+Egynél több, sőt akár az összes adatelem adatpontjának színe is megváltoztatható. A vizualizáció a vállalati színeket is tükrözheti. 
 
-A Power BI akkor is megjegyzi a választását és zölden jeleníti meg **Washingtont**, ha Ön megváltoztatja, majd visszaváltoztatja a vizualizáció típusát.
-
-Egynél több adatpont színe is megváltoztatható. A következő ábrán **Arizona** piros, **Washington** továbbra is zöld színnel jelenik meg.
-
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_8.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-corporate.png)
 
 A színekkel sok mindent megtehet. A következő bekezdések a színátmenetekkel foglalkoznak.
 
@@ -73,16 +70,27 @@ Egy diagramnak gyakran előnyére válik a színek dinamikus meghatározása egy
 A következő szakaszok különböző módszereket mutatnak be a színek numerikus érték alapján történő meghatározására.
 
 ## <a name="base-the-color-of-data-points-on-a-value"></a>Adatpontok színének meghatározása egy érték alapján
-A szín érték alapján történő megadásához húzza a színezés alapjául szánt mezőt a **Mező** panel **Színtelítettség** területére. A következő ábrán az **Adózatlan nyereség** mező adja meg a **Színtelítettség** értékét. Mint látható, bár a **Velo** **Bruttó értékesítés** mutatója nagyobb (az oszlopa magasabb), az **Amarilla** nagyobb **Adózatlan nyereséget** ért el (az oszlopának telítettebb a színe).
+A szín érték alapján történő megadásához húzza a színezés alapjául szánt mezőt a **Mezők** panel **Színtelítettség** területére. A következő ábrán a **%Market Share SPLY YTDP** (Piaci részesedés a tavalyi év azonos időszakában, az év elejétől számítva (%))mező adja meg a **Színtelítettség** értékét. 
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_9.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-color-saturation.png)
+
+A Formázás panel **Adatszínek** területén adja meg, hogy a **%Market Share SPLY YTDP** mező értéke hogyan befolyásolja az oszlopdiagram színárnyalatait. Ebben a példában az alacsonyabb százalékos érték világosabb kéket eredményez, a magasabb pedig sötétebbet.
+
+
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors2.png)
+
+
+Mint látható, bár mind a **Productivity**, mind az **Extreme** egységei több eladást eredményeztek (amit a magasabb oszlop jelez), a **Moderation** nagyobb **%Market Share SPLY YTD** értékkel rendelkezik (amit az oszlop színtelítettségéből láthatunk).
+
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-saturation.png)
 
 ## <a name="customize-the-colors-used-in-the-color-scale"></a>A színskála összeállításának testre szabása
-A színskála összeállítását is testre szabhatja. Bontsa ki az **Adatszíneket** és megjelenik az adatai megjelenítéséhez használt színskála. Alapértelmezés szerint a legalacsonyabb értékű adathoz tartozik a legkevésbé telített szín, a legmagasabbhoz pedig a legtelítettebb.
+A színskála összeállítását is testre szabhatja. Alapértelmezés szerint a legalacsonyabb értékű adathoz tartozik a legkevésbé telített szín, a legmagasabbhoz pedig a legtelítettebb. A fenti ábrán kék színskálát használtuk. 
 
-A színskála sávján látható színtartomány az értékek **minimuma** és **maximuma** közötti átmeneteket mutatja. A sáv bal szélén a **legkisebb**, a jobb szélén a **legnagyobb** értékhez tartozó szín látható.
+Bontsa ki az **Adatszíneket** és megjelenik az adatai megjelenítéséhez használt színskála. A színskála sávján látható színtartomány az értékek **minimuma** és **maximuma** közötti átmeneteket mutatja. A sáv bal szélén a **legkisebb**, a jobb szélén a **legnagyobb** értékhez tartozó szín látható.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_10.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors2.png)
+
 
 Más színátmenet beállításához nyissa meg a legördülő ablakot a **Minimum** vagy a **Maximum** mellett, és válassza ki a színt. A következő ábrán a **legnagyobb** értékhez tartozó szín feketére van állítva, és a színskála a **legkisebb** és a **legnagyobb** értékek közötti átmenetet mutatja.
 

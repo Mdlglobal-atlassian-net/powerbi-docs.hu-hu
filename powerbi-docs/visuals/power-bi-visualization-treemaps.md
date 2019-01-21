@@ -6,24 +6,24 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 92e86817231e959db50af3c32fe8eba761c79a61
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: dd7360761cc78aed9b01eb99165de9f0b4b91ffe
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448868"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54274766"
 ---
 # <a name="treemaps-in-power-bi"></a>Fatérképek a Power BI-ban
 A fatérképek a hierarchikus adatokat beágyazott téglalapokként jelenítik meg.  A hierarchia minden egyes szintjét egy színes téglalap (más néven „ág”) jelöli, amely további téglalapokat („leveleket”) tartalmaz.  Az egyes téglalapokon belüli területet a mért érték alapján osztja ki a rendszer. A téglalapok pedig méret szerint vannak rendezve, a bal felső saroktól (legnagyobb), a jobb alsó sarokig (legkisebb).
 
 ![](media/power-bi-visualization-treemaps/pbi-nancy_viz_treemap.png)
 
-Ha például az értékesítést elemzem, akkor valószínűleg a ruházati kategóriák (**Urban** (Város), **Rural** (Vidék), **Youth** (Fiatalok), és **Mix** (Vegyes)) szerepelnek majd a legfelső szintű téglalapokban, az úgynevezett *ágakban*.  A kategóriákat jelölő téglalapjaim kisebb téglalapokra, más néven *levelekre* tagolódnának, az adott kategória ruházati gyártóit jelképezve. Ezek a kisebb téglalapok pedig az eladott darabszámok alapján kapnák a méretüket és az árnyalatukat.  
+Ha például az értékesítést elemzem, akkor valószínűleg a következő ruházati kategóriák szerepelnek majd a legfelső szintű téglalapokban, az úgynevezett *ágakban*: **Urban** (Város), **Rural** (Vidék), **Youth** (Fiatalok), és **Mix** (Vegyes).  A kategóriákat jelölő téglalapjaim kisebb téglalapokra, más néven *levelekre* tagolódnának, az adott kategória ruházati gyártóit jelképezve. Ezek a kisebb téglalapok pedig az eladott darabszámok alapján kapnák a méretüket és az árnyalatukat.  
 
 A fenti **Urban** ágban sok `Maximus` márkájú ruhát adtak el, `Natura` és `Fama` ruhákból valamivel kevesebb fogyott, a `Leo` márkából pedig keveset értékesítettek.  Így a fatérkép **Urban** ágában:
 * a `Maximus` rendelkezik a legnagyobb téglalappal a bal felső sarokban;

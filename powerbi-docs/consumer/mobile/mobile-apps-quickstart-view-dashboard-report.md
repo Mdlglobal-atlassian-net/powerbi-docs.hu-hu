@@ -1,22 +1,22 @@
 ---
 title: 'Rövid útmutató: Irányítópultok és jelentések felfedezése mobilalkalmazásokban'
 description: Ebben a rövid útmutatóban a Power BI mobilalkalmazásokban használt irányítópultok és jelentések mintáját ismerheti meg.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 11/16/2018
-ms.author: maggies
-ms.openlocfilehash: 6d5d543c3654da13592b24f4c70bc964eb7bddff
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.author: mshenhav
+ms.openlocfilehash: 9bb6dec4cdb689d2a21812b1dab8ebeb49090542
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157264"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279113"
 ---
-# <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Rövid útmutató: Irányítópultok és jelentések felfedezése a Power BI mobilalkalmazásokban
+# <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Rövid útmutató: Irányítópultok és jelentések felfedezése a Power BI-mobilalkalmazásokban
 Ebben a rövid útmutatóban az androidos telefonokhoz készült Power BI mobilalkalmazásban használt irányítópultok és jelentések mintáját ismerheti meg. Az itt leírtakat a többi mobilalkalmazásban is követheti. 
 
 A következőkre vonatkozik:
@@ -153,5 +153,5 @@ Miután elkészült ezzel a gyors útmutatóval, igény szerint eltávolíthatja
 Ebből a rövid útmutatóból egy irányítópult és egy jelentés mintáját ismerhette meg az androidos eszközén. Tájékozódjon tovább a Power BI szolgáltatásban végzett munkáról. 
 
 > [!div class="nextstepaction"]
-> [Rövid útmutató: Navigáció a Power BI szolgáltatásban](../end-user-experience.md)
+> [Rövid útmutató: Eligazodás a Power BI szolgáltatásban](../end-user-experience.md)
 

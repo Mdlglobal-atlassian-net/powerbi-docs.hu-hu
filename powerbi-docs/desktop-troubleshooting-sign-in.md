@@ -5,20 +5,20 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f8ceeddea7a8a9b7a63043cc7e91269da570790b
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a07f266ccdc0b02cd6a18f84b48b5e2b3564b642
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670990"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279013"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Bejelentkezés hibaelhárítása a Power BI Desktopban
-Előfordulhat, hogy amikor megkísérel bejelentkezni a **Power BI Desktopba**, hibát tapasztal. A bejelentkezési hibáknak két fő oka lehet: **proxy-hitelesítési hibák** és **Nem-HTTPS URL-cím átirányítási hibái**. 
+Előfordulhat, hogy amikor megkísérel bejelentkezni a **Power BI Desktopba**, hibát tapasztal. A bejelentkezési hibáknak két fő oka lehet: **proxy-hitelesítési hibák** és **nem-HTTPS URL-cím átirányítási hibái**. 
 
 A bejelentkezési hiba okának megállapításához az első lépés kapcsolatba lépni a rendszergazdával, aki megadja a probléma okának meghatározásához szükséges diagnosztikai információkat. A bejelentkezési problémához tartozó hibák nyomon követésével a rendszergazdák el tudják dönteni, hogy a következő hibák melyike következett be Önnél. 
 
@@ -56,7 +56,7 @@ A **Power BI Desktop** jelenlegi verziói az Active Directory hitelesítési tá
 
 A *Power BI Desktop* nyomkövetési fájljaiban a következő hibák társulnak ehhez a hibához:
 
-* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: Non-HTTPS url redirect is not supported in webview*
+* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: a nem-HTTPS URL-címekre való átirányítás nem támogatott a Webview alkalmazásban*
 * *ErrorCode: non_https_redirect_failed*
 
 Az *ErrorCode: non_https_redirect_failed* előfordulása azt jelenti, hogy az átirányítási láncban egy vagy több oldal vagy szolgáltató nem HTTPS-védelmű végpont, vagy hogy egy vagy több átirányítás tanúsítványának kibocsátója nem szerepel az eszköz megbízható főtanúsítványai között. A bejelentkezéses átirányítási láncban minden szolgáltatónak HTTPS URL-címet kell használnia. A probléma megoldásához forduljon a rendszergazdához, és kérje, hogy a hitelesítő webhelyeken biztonságos URL-címet használjanak. 

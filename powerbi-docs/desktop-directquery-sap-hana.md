@@ -5,22 +5,22 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8024756159b4974ef4a23ab60a055d57b0dfa590
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 1b587edb82f60ac8a9ff22716e42bcf941e0c794
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670601"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276537"
 ---
-# <a name="directquery-and-sap-hana"></a>DirectQuery és SAP HANA
+# <a name="directquery-and-sap-hana"></a>A DirectQuery és az SAP HANA
 Az **SAP HANA**-adatforrásokhoz közvetlenül kapcsolódhat a **DirectQuery** használatával. Az SAP HANA-hoz való kapcsolódás kétféle módszerrel is elvégezhető:
 
-* **Az SAP HANA többdimenziós forrásként való kezelése (alapértelmezett):** Ebben az esetben a rendszer hasonlóan viselkedik ahhoz, amikor a Power BI más többdimenziós forrásokhoz, például az SAP Business Warehouse-hoz vagy az Analysis Serviceshez kapcsolódik. Ha az SAP HANA-hoz ezzel a beállítással kapcsolódik, egyetlen elemzési vagy számítási nézet lesz kiválasztva, és ennek a nézetnek a mértékei, hierarchiái és attribútumai lesznek elérhetőek a mezőlistában. A vizualizációk létrehozásakor az adatok összesítése mindig az SAP HANA-ból lesz lekérdezve. Ez az ajánlott módszer, és egyúttal az alapértelmezett beállítás is az SAP HANA-t használó új DirectQuery-jelentéseknél.
+* **Az SAP HANA többdimenziós forrásként való kezelése (alapértelmezett):**  Ebben az esetben a rendszer hasonlóan viselkedik ahhoz, amikor a Power BI más többdimenziós forrásokhoz, például az SAP Business Warehouse-hoz vagy az Analysis Serviceshez kapcsolódik. Ha az SAP HANA-hoz ezzel a beállítással kapcsolódik, egyetlen elemzési vagy számítási nézet lesz kiválasztva, és ennek a nézetnek a mértékei, hierarchiái és attribútumai lesznek elérhetőek a mezőlistában. A vizualizációk létrehozásakor az adatok összesítése mindig az SAP HANA-ból lesz lekérdezve. Ez az ajánlott módszer, és egyúttal az alapértelmezett beállítás is az SAP HANA-t használó új DirectQuery-jelentéseknél.
 
 * **Az SAP HANA relációs forrásként való kezelése:** Ebben az esetben a Power BI relációs forrásként kezeli az SAP HANA-t. Ez nagyobb rugalmasságot tesz lehetővé, de ügyelni kell, hogy a mértékek az elvárt módon legyenek összesítve, és hogy ne merüljenek fel teljesítménybeli problémák.
 

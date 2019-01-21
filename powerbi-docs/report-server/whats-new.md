@@ -6,15 +6,15 @@ ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/16/2018
-ms.openlocfilehash: a365cab0420fdf373d62f5b1774a4d86985adfe3
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 91179ca37b8ba5c883785501588c9b12a02d644d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101255"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292453"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló újdonságai
 
@@ -120,7 +120,7 @@ Már elérhető a Power BI-jelentésekhez a SAP HANA SSO Direct Query Kerberossz
 - [Szűrő átértékelése](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#slicer)
 - [Jelentésoldal elemleírásai](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#reportPageTooltips)
 
-### <a name="analytics"></a>Elemzések
+### <a name="analytics"></a>Elemzés
 
 - [Új DAX-függvény: COMBINEVALUES()](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#combineValues)
 - [Mérték részletezése](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#measureDrillthrough)
@@ -167,8 +167,8 @@ Előfordulhat, hogy a jelentését mások számára is elérhetővé szeretné t
 
 Könyvjelzők létrehozásával mostantól egyéni információkat állíthat össze a jelentésében lévő adatokból.
 
-- [Keresztkiemelés könyvjelzőkhöz:](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting) A könyvjelzők fenntartják és megjelenítik a jelentésoldalak keresztkiemelt állapotát a könyvjelző létrehozásakor aktuális állapot szerint.
-- [További lehetőségek könyvjelzőkkel:](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility) A könyvjelzők tükrözik a jelentésben beállított tulajdonságokat, és csak a választott vizualizációkra vannak hatással.
+- [Keresztkiemelés könyvjelzőkhöz](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): A könyvjelzők fenntartják és megjelenítik a jelentésoldalak keresztkiemelt állapotát a könyvjelző létrehozásakor aktuális állapot szerint.
+- [További lehetőségek könyvjelzőkkel](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): A könyvjelzők tükrözik a jelentésben beállított tulajdonságokat, és csak a választott vizualizációkra vannak hatással.
 
 #### <a name="multi-select-data-points-across-multiple-chartshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarycrosshighlight"></a>[Többszörös kiválasztású adatpontok több diagramra](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
 
@@ -209,7 +209,7 @@ Amikor részletezi egy vizualizáció egy kategóriáját, mostantól az adott o
 - [Keresés a Formázás és Elemzés panelen](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search)
 - [Mezőtulajdonságok panelje és mezőleírások](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#fieldPropertiesPane)
 
-### <a name="analytics"></a>Elemzések
+### <a name="analytics"></a>Elemzés
 
 - [UTCNOW() és UTCTODAY()](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#utcDAX)
 - [Egyéni dátumtábla megjelölése](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
@@ -266,13 +266,13 @@ Ez a kiadás támogatja a bővítést. A legjobb eredmény érdekében használj
 
 A rendszergazdák a következő tulajdonságokat állíthatják be az SSMS-ben a kiszolgálófarm speciális tulajdonságai között:
 
-* EnableCustomVisuals (Egyéni megjelenítések engedélyezése): True/False (Igaz/Hamis)
-* EnablePowerBIReportEmbeddedModels (Power BI-jelentés beágyazott modellek engedélyezése): True/False (Igaz/Hamis)
-* EnablePowerBIReportExportData (Power BI-jelentés adatexportálás engedélyezése): True/False (Igaz/Hamis)
-* MaxFileSizeMb (Maximális fájlméret MB-ban): Alapértelmezett értéke jelenleg 1000
-* ModelCleanupCycleMinutes (Modellek törlési ciklusa percekben): Milyen gyakran ellenőrzi a memóriából kizárandó modelleket
-* ModelExpirationMinutes (Modellek lejárati ideje percekben): Mennyi idő után jár le és záródik ki a modell az utolsó használat időpontja után
-* ScheduleRefreshTimeoutMinutes (Ütemezett frissítés időtúllépése percekben): Mennyi ideig tarthat egy modell adatfrissítése. Az alapértelmezett korlát két óra.  Nincs merev felső korlát.
+* EnableCustomVisuals: Igaz/Hamis
+* EnablePowerBIReportEmbeddedModels: Igaz/Hamis
+* EnablePowerBIReportExportData: Igaz/Hamis
+* MaxFileSizeMb: Az alapértelmezett érték jelenleg 1000
+* ModelCleanupCycleMinutes: Milyen gyakran ellenőrzi a memóriából kizárandó modelleket
+* ModelExpirationMinutes Mennyi idő után jár le és záródik ki a modell az utolsó használat időpontja után
+* ScheduleRefreshTimeoutMinutes: Mennyi ideig tarthat egy modell adatfrissítése. Az alapértelmezett korlát két óra.  Nincs merev felső korlát.
 
 **Az rsreportserver.config konfigurációs fájl**
 

@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6de9427a11ae5aa43563ce9e21371d231a1dd3a9
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 2a033e6893cffb71c4a898f1260aca615ae4e4b8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900551"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291985"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Oktatóanyag: A Power BI szolgáltatás (az app.powerbi.com webhely) használatának első lépései
 Ez az oktatóanyag segít az első lépések megtételében a ***Power BI szolgáltatásban***. Ha szeretné megérteni, hogyan illeszkedik a Power BI szolgáltatás a többi Power BI-ajánlathoz, javasoljuk, először olvassa el a [Mi az a Power BI](power-bi-overview.md) című szakaszt.
@@ -128,7 +128,7 @@ Most, hogy adatokhoz csatlakozott, megismerkedhet a felülettel.  Ha valami érd
    
    A jelentéshez bármikor visszatérhet, ha az új csempét választja az irányítópulton. A Power BI a jelentéshez lépteti vissza Olvasó nézetben. A felső menüsorban a **Jelentés szerkesztése** lehetőséget választva váltson vissza a Szerkesztési nézetre. Miután a Szerkesztési nézetre váltott, folytassa a felülettel való ismerkedést és a csempék rögzítését. 
 
-## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>3. lépés: A felülettel való ismerkedés folytatása a Q&A-val (a természetes nyelvű lekérdezésekkel)
+## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>3. lépés:  A felülettel való ismerkedés folytatása a Q&A-val (a természetes nyelvű lekérdezésekkel)
 1. Az adatok gyors feltárásához próbáljon kérdést feltenni a Q&A mezőben. A Q&A-kérdésmező az irányítópult tetején (**Tegyen fel kérdést az adataival kapcsolatban**), illetve a jelentés felső menüsorában (**Kérdés feltevése**) található. Próbálja meg beírni például a „what segment had the most revenue” („melyik szegmensben volt a legnagyobb árbevétel”) kérdést.
    
    ![Q&A-vászon](media/service-get-started/powerbi-qna.png)

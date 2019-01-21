@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/5/2018
 ms.author: maggies
-ms.openlocfilehash: 827a7acd24ead0c4948a09f2e67b53c3966769bb
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 1689d7382c0f3bf7406a4a44ffeab53e6bc59197
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900428"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281068"
 ---
 # <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service-preview"></a>Beágyazott adathalmaz létrehozása lapszámozott jelentéshez a Power BI szolgáltatásban (előzetes verzió)
 Ebből a cikkből elsajátíthatja, hogyan hozhat létre beágyazott adathalmazt egy beágyazott adatforrás alapján lapszámozott jelentéshez a Power BI szolgáltatásban. A beágyazott adatkészleteket egyetlen lapszámozott jelentés tartalmazza a jelentésben való használathoz. Jelenleg a Power BI szolgáltatásban közzétett lapszámozott jelentésekhez beágyazott adathalmazok és beágyazott adatforrások szükségesek. A beágyazott adatforrást és adatkészletet a Jelentéskészítőben hozhatja létre a jelentés létrehozásakor. 

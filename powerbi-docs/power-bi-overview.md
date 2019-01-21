@@ -4,17 +4,17 @@ description: A Power BI és a különféle komponensek áttekintése – Power B
 author: davidiseminger
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: overview
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 357af2f995fc927e7b55283c762e5f4b52376444
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: bc712b892cd35259bc036f41b6e3e16a5388ffad
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619586"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293069"
 ---
 # <a name="what-is-power-bi"></a>A Power BI bemutatása
 A **Power BI** olyan szoftverszolgáltatások, alkalmazások és összekötők gyűjteménye, amellyel az egymástól független adatforrásokat egymással együttműködő, vizuálisan megragadó, interaktív elemzésekké alakítja. Akár egyszerű Excel-táblákból, akár felhőalapú és helyszíni hibrid adatraktárak gyűjteményéből állnak az adatai, a **Power BI** segítségével könnyedén összekötheti az adatforrásokat, vizualizálhatja (vagy feltárhatja) a fontos részleteket, és megoszthatja az így kapott információt bárkivel, akivel csak szeretné.
@@ -64,4 +64,4 @@ A Power BI jelentéskészítő kiszolgáló megoldást tűzfal mögött lehet ü
 
 ## <a name="next-steps"></a>Következő lépések
 [Jelentkezzen be, olvasson be adatokat, és ismerkedjen meg a Power BI szolgáltatás használatának alapjaival](service-the-new-power-bi-experience.md)   
-[Oktatóanyag: Első lépések a Power BI szolgáltatásban](service-get-started.md)
+[Oktatóanyag: A Power BI szolgáltatás használatának első lépései](service-get-started.md)

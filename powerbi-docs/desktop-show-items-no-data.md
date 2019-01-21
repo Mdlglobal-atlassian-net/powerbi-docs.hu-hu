@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f4c9fec65f9c006095470a8983f889d44f3ce460
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54072888"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279987"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Adatot nem tartalmazó elemek megjelenítése a Power BI-ban
 
@@ -65,7 +65,7 @@ Mint ilyen, a Power BI megjeleníti azokat a kombinációkat, amelyek rendelkezn
 
 **4. Csoportok különböző és nem kapcsolódó táblákból**
 
-A mintamodell nem rendelkezik ezzel a kombinációval, de ha vannak csoportok különböző és nem kapcsolódó táblákból, a Power BI nem fog tudni kapcsolatot megállapítani két oszlop között, és az eredmény az összes oszlop minden értékének cross join művelettel kapott eredménye lesz. Ebben az esetben a Power BI *korlátozás nélküli összekapcsolás* típusú hibát jelez, mivel az ilyen cross join műveletek sok számítást igényelnek az adatbázisban, és nem szolgálnak sok információval a felhasználó számára. 
+A mintamodell nem rendelkezik ezzel a kombinációval, de ha vannak csoportok különböző és nem kapcsolódó táblákból, a Power BI nem fog tudni kapcsolatot megállapítani két oszlop között. Az eredmény az összes oszlop minden értékének cross join művelettel kapott eredménye lesz. Ebben az esetben a Power BI *korlátozás nélküli összekapcsolás* típusú hibát jelez, mivel az ilyen cross join műveletek sok számítást igényelnek az adatbázisban, és nem szolgálnak sok információval a felhasználó számára. 
 
 ![Egy korlátozás nélküli összekapcsoláshoz megjelenített hiba](media/desktop-show-items-no-data/show-items-no-data_01.png)
 
@@ -76,7 +76,7 @@ Az előz szakasz azt írta le, hogyan határozza meg a Power BI, hogy mely adato
 
 Az **Adatot nem tartalmazó elemek megjelenítése** funkció pontosan ezt teszi lehetővé – olyan adatsorok és oszlopok belefoglalását, amelyek nem tartalmaznak mértékadatokat (üres mértékadatok).
 
-Az **Adatot nem tartalmazó elemek megjelenítése** funkció engedélyezéséhez válasszon ki egy vizualizációt, majd a **Mezők** forrásban kattintson a jobb gombbal a mezőre, és a megjelenő menüben válassza az **Adatot nem tartalmazó elemek megjelenítése** lehetőséget az alábbi képen látható módon.
+Az **Adatot nem tartalmazó elemek megjelenítése** funkció engedélyezéséhez válasszon ki egy vizualizációt, majd a **Mezők** forrásban kattintson a jobb gombbal a mezőre, és a megjelenő menüben válassza az **Adatot nem tartalmazó elemek megjelenítése** lehetőséget az alábbi képen látható módon:
 
 ![Az Adatot nem tartalmazó elemek megjelenítése funkció engedélyezése](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
@@ -193,6 +193,6 @@ Ez a szakasz a cikk példáiban használt minta adatmodellt mutatja be.
 
 ## <a name="next-steps"></a>Következő lépések
 
-Ez a cikk azt ismerteti, hogyan engedélyezheti az **Adatot nem tartalmazó elemek megjelenítése** funkciót a Power BI-ban. Az alábbi cikkeket is érdekesnek találhatja. 
+Ez a cikk azt ismerteti, hogyan engedélyezheti az **Adatot nem tartalmazó elemek megjelenítése** funkciót a Power BI-ban. Az alábbi cikkeket is érdekesnek találhatja: 
 
-* [Adatforrások a Power BI Desktopban](desktop-data-sources.md)
+* [Alapértelmezett tag többdimenziós modellekben a Power BI-ban](desktop-default-member-multidimensional-models.md)

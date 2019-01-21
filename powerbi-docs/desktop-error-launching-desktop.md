@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 78cfcd51a951095353ce5d0f25c4511cc720c632
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: f527fa17ab242f6835ca99a3ff3ef3e2525a001f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578221"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277135"
 ---
 # <a name="resolve-issues-when-power-bi-desktop-will-not-launch"></a>A Power BI Desktop meghiúsult indulásával kapcsolatos hibák elhárítása
 A **Power BI Desktop** esetében azok a felhasználók, akik a **Power BI helyszíni adatátjáró** korábbi verzióit telepítették és futtatják, esetenként nem tudják elindítani a Power BI Desktopot a rendszergazdai szabályzatok korlátozásai miatt, amelyeket a Power BI helyszíni adatátjáró alkalmazott a helyi gép nevesített csöveire. 

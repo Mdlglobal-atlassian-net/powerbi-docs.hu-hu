@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/17/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 09bf82d86301967fb46b8724822e183a21008b92
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 760335b0a08156b3c5b594ffc27be4cb0ad12342
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452729"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289923"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>A Q&A nyelvi sémájának szerkesztése, és kifejezések hozzáadása a Power BI Desktopban 
 Hatékony eszköz a munkához, ha gyakori kifejezéseken és természetes nyelven alapuló kérdéseket tud feltenni az adataival kapcsolatban. És még hatékonyabb, ha a maguk az adatok válaszolnak, ahogy azt a Power BI Q&A szolgáltatása lehetővé teszi. Amikor kérdést tesz fel a Power BI Q&A szolgáltatásának, a rendszer igyekszik a legpontosabban megválaszolni azt. 
@@ -86,7 +86,7 @@ Amikor az első nyelvi sémát exportálja a Power BI Desktopból, a Q&A motorja
 ![Generated: State a YAML-fájlban](media/power-bi-q-and-a-linguistic-schema/power-bi-generated-state.png)
 
 
-Amikor visszaimportálja a nyelvi séma fájlját a Power BI Desktopba, a rendszer nem vesz tudomást a **State: Generated** címkéjű tartalmakról (és később újra létrehozza azokat), ezért ha a létrehozott tartalmak valamelyikét módosítani szeretné, távolítsa el az annak megfelelő **State: Generated** címkét is. Hasonlóképpen, ha a létrehozott tartalmat el akarja távolítani, a **State: Generated** címkét **State: Deleted** címkére kell módosítania, különben a tartalom újra létre fog jönni a nyelvi séma fájljának importálásakor.
+Amikor visszaimportálja a nyelvi séma fájlját a Power BI Desktopba, a rendszer nem vesz tudomást a **State: Generated** címkéjű tartalmakról (és később újra létrehozza azokat), ezért ha a létrehozott tartalmak valamelyikét módosítani szeretné, távolítsa el az annak megfelelő **State: Generated** címkét is. Hasonlóképpen, ha el kívánja távolítani a létrehozott tartalmakat, módosítsa a **State: Generated** címkét **State: Deleted** állapotra, így ez nem jön létre újra a nyelvi sémafájl importálásakor.
 
 1. Nyissa meg az adatkészletet a Power BI Desktop *Kapcsolat nézetében*. 
 2. Válassza ki a **Modellezés** címkét, és válassza a **Nyelvi séma exportja** lehetőséget.

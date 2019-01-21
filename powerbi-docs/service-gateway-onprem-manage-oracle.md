@@ -1,23 +1,23 @@
 ---
-title: Az adatforrás kezelése – Oracle
+title: A vállalati adatforrások kezelése – Oracle
 description: A helyszíni adatátjáró és az átjáróhoz tartozó adatforrások kezelésének módja.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef4b503b7282377b112aebe237cc9a8d132502f0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5e737978b7c39abd331f51fbb12e24656d54e838
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298343"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275916"
 ---
-# <a name="manage-your-data-source---oracle"></a>Az adatforrás kezelése – Oracle
+# <a name="manage-your-data-source---oracle"></a>A vállalati adatforrások kezelése – Oracle
 Amint telepítette a helyszíni adatátjárót, fel kell vennie az átjáróval használható adatforrásokat. Ez a cikk bemutatja, hogyan lehet használni az átjárókat és az adatforrásokat. Az Oracle adatforrást az ütemezett frissítéshez vagy a DirectQueryhez használhatja.
 
 ## <a name="download-and-install-the-gateway"></a>Az átjáró letöltése és telepítése
@@ -161,7 +161,7 @@ Több hibaüzenetet kaphat az Oracle-től, amikor az elnevezési szintaxis helyt
 * ORA-12514: A TNS figyelő jelenleg nem ismeri a csatlakozásleíróban kért szolgáltatást  
 * ORA-12541: TNS: nincs figyelő  
 * ORA-12170: TNS: kapcsolat-időtúllépés történt  
-* ORA-12504: a TNS figyelő nem kapta meg a SERVICE_NAME nevet a CONNECT_DATA adatokban  
+* ORA-12504: A TNS figyelő nem kapta meg a SERVICE_NAME nevet a CONNECT_DATA adatokban  
 
 Ezek a hibák akkor fordulhatnak elő, ha az Oracle-ügyfél nincs telepítve, vagy ha nincs megfelelően konfigurálva. Ha telepítve van, meg kell győződnie arról, hogy a tnsnames.ora fájl helyesen van-e konfigurálva, és hogy a megfelelő net_service_name nevet használja-e. Arról is meg kell győződnie, hogy a net_service_name egyezzen a Power BI Desktopot használó gép és az átjárót futtató gép között. További információ: [Az Oracle-ügyfél telepítése](#installing-the-oracle-client).
 

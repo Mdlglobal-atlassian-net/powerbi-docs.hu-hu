@@ -1,23 +1,23 @@
 ---
-title: 'Ügyfél-jövedelmezőségi minta a Power BI-hoz: bemutató'
-description: 'Ügyfél-jövedelmezőségi minta a Power BI-hoz: bemutató'
+title: 'Ügyfél-jövedelmezőségi minta a Power BI-hoz: Bemutató megtekintése'
+description: 'Ügyfél-jövedelmezőségi minta a Power BI-hoz: Bemutató megtekintése'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: a47a63311dd28f2f1f313bc0a5cfcd68cdb0401b
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 3dd4f5f0404737685757400202d3a92767e44189
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717976"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280838"
 ---
-# <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Ügyfél-jövedelmezőségi minta a Power BI-hoz: bemutató
+# <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Ügyfél-jövedelmezőségi minta a Power BI-hoz: Bemutató megtekintése
 
 ## <a name="overview-of-the-customer-profitability-sample"></a>Az Ügyfél-jövedelmezőségi minta áttekintése
 Az „Ügyfél-jövedelmezőségi minta” nevű csomag egy marketinganyagokat készítő céghez tartozó irányítópultot, jelentést és adatkészletet tartalmaz. Az irányítópult létrehozásával a pénzügyi vezető figyelni tudja az 5 üzleti egység kezelőjéhez (vezetőjéhez), a termékekhez, az ügyfelekhez és a bruttó árréshez tartozó fontosabb metrikákat. A pénzügyi vezető egyetlen pillantással láthatja, hogy mely tényezők vannak hatással a jövedelmezőségre.
@@ -195,7 +195,7 @@ Ebben a környezetben nyugodtan kísérletezhet. Bármikor dönthet úgy, hogy n
 
 Letöltheti [kizárólag a minta adatkészletét (Excel-munkafüzetét) is](http://go.microsoft.com/fwlink/?LinkId=529781).
 
-## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Kapcsolódás a saját adatokhoz
+## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
 Reméljük, hogy ez a bemutató segített megérteni a Power BI-irányítópultok, a Q&A és a jelentések segítségével történő ügyféladat-elemzést. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ a [Power BI használatának első lépéseiről](service-get-started.md).
 
 [Vissza a Power BI-mintákhoz](sample-datasets.md)  

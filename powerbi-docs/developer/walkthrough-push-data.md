@@ -6,15 +6,15 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/05/2017
-ms.openlocfilehash: 01bcc545d3ba8edb23ef583467322401780e657d
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 0990f6ddaf458d5723cd04fedf0b34f497de16cb
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974184"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278493"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Adatok elküldése Power BI-adatkészletbe
 
@@ -25,7 +25,7 @@ Mielőtt elkezdené az adatok adatkészletbe való elküldését, szüksége les
 ## <a name="steps-to-push-data-into-a-dataset"></a>Adatok adatkészletbe történő elküldésének lépései
 
 * 1. lépés: [Alkalmazás regisztrálása az Azure AD-ben](walkthrough-push-data-register-app-with-azure-ad.md)
-* 2. lépés: [Hitelesítéshez szükséges hozzáférési token beszerzése](walkthrough-push-data-get-token.md)
+* 2. lépés: [Hitelesítési hozzáférési token beszerzése](walkthrough-push-data-get-token.md)
 * 3. lépés: [Adatkészlet létrehozása a Power BI-ban](walkthrough-push-data-create-dataset.md)
 * 4. lépés: [Adatkészlet lekérése, és sorok hozzáadása egy Power BI-táblához](walkthrough-push-data-get-datasets.md)
 * 5. lépés: [Sorok hozzáadása egy Power BI-táblához](walkthrough-push-data-add-rows.md)
@@ -59,7 +59,7 @@ Az adatkészletek JSON-sztringjének formátuma a következő:
         ]
     }
 
-Az Értékesítési marketing-adatkészlet példájában tehát az alábbihoz hasonló JSON-sztringet kellene átadnia. Ebben a példában a **SalesMarketing** az adatkészlet, a **Product** (Termék) pedig a tábla neve. A tábla meghatározása után a táblasémát kell meghatározni. A **SalesMarketing** adatkészlet esetében a táblaséma az alábbi oszlopokat tartalmazza ProductID (Termékazonosító), Manufacturer (Gyártó), Category (Kategória), Segment (Szegmens), Product (Termék) és IsComplete (Kész állapot).
+Az Értékesítési marketing-adatkészlet példájában tehát az alábbihoz hasonló JSON-sztringet kellene átadnia. Ebben a példában a **SalesMarketing** az adatkészlet, a **Product** (Termék) pedig a tábla neve. A tábla meghatározása után a táblasémát kell meghatározni. A **SalesMarketing** adatkészlet esetében a táblaséma az alábbi oszlopokat tartalmazza: ProductID (Termékazonosító), Manufacturer (Gyártó), Category (Kategória), Segment (Szegmens), Product (Termék) és IsComplete (Kész állapot).
 
 **Példa adatkészlet-objektum JSON-ra**
 

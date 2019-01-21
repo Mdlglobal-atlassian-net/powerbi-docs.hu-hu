@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/22/2018
 ms.author: maggies
-ms.openlocfilehash: 475221981181e4ddfac18e7023259fac9bbc35ed
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: 9e3a45e7648fd38413c2d45582981bac5e91cd2a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289128"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284423"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Többoldalas jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz
 Mint ahogyan az elnevezés is sugallja, a többoldalas jelentések egyszerre több oldalon is átnyúlhatnak. Az elrendezésük rögzített formátumban történik, és precíz testreszabási lehetőségeket biztosítanak. A többoldalas jelentések .rdl-fájlok.
@@ -46,7 +46,7 @@ Lehet, hogy korábban már telepítette a Jelentéskészítőt, hogy jelentések
    
     A Diagram varázsló végigvezeti azokon a lépéseken, amelyekkel létrehozhat egy egyszerű diagramot egy jelentésben. Onnan már szinte korlátlan lehetőségei lesznek a jelentése testreszabására.
 
-## <a name="step-2-go-through-the-chart-wizard"></a>2. Lépés: Haladjon végig a Diagram varázsló lépésein
+## <a name="step-2-go-through-the-chart-wizard"></a>2. lépés: Haladjon végig a Diagram varázsló lépésein
 A Diagram varázsló végigvezeti azokon az alapvető lépéseken, amelyekkel létrehozhat egy vizualizációt egy jelentésben.
 
 A többoldalas jelentések sokféle adatforráshoz kapcsolódhatnak, a Microsoft SQL Servertől és a Microsoft Azure SQL Database-től kezdve egészen az Oracle-ig, a Hyperionig és egyéb adatforrásokig. További információk a [többoldalas jelentéseket támogató adatforrásokról](connect-data-sources.md).
@@ -55,18 +55,18 @@ A Diagram varázsló első lépése az **Adatkészlet kiválasztása**, ahol lé
 
 1. Válassza a **Tallózás...** lehetőséget, válasszon ki egy megosztott adatkészletet egy kiszolgálón, majd válassza a **Megnyitás** > **Tovább** lehetőségeket.
    
-    ![Diagram varázsló: Adatkészlet kiválasztása](media/quickstart-create-paginated-report/reportserver-paginated-choose-dataset.png)
+    ![Diagram varázsló: Adathalmaz kiválasztása](media/quickstart-create-paginated-report/reportserver-paginated-choose-dataset.png)
    
      Új adatkészletet szeretne létrehozni? Tekintse meg a [Megosztott vagy beágyazott adatkészlet létrehozása](https://docs.microsoft.com/sql/reporting-services/report-data/create-a-shared-dataset-or-embedded-dataset-report-builder-and-ssrs) című cikket.
 2. Válasszon egy diagramtípust, esetünkben a sávdiagramot.
    
-    ![Diagram varázsló: diagramtípus](media/quickstart-create-paginated-report/reportserver-paginated-choose-chart-type.png)
+    ![Diagram varázsló: Diagramtípus](media/quickstart-create-paginated-report/reportserver-paginated-choose-chart-type.png)
 3. A mezők elrendezéséhez húzza őket a **Kategóriák**, **Sorozatok** és **Értékek** területekre.
    
-    ![Diagram varázsló: mezők elrendezése](media/quickstart-create-paginated-report/reportserver-paginated-arrange-fields.png)
+    ![Diagram varázsló: Mezők elrendezése](media/quickstart-create-paginated-report/reportserver-paginated-arrange-fields.png)
 4. Válassza a **Tovább** > **Befejezés** lehetőséget.
 
-## <a name="step-3-design-your-report"></a>3. lépés: Tervezze meg jelentését
+## <a name="step-3-design-your-report"></a>3. lépés: A jelentés megtervezése
 Most már a Jelentéstervező nézetben van. Észreveheti, hogy az adatok csupán helyőrző adatok, nem az Ön saját adatai.
 
 ![Jelentéstervező nézet](media/quickstart-create-paginated-report/reportserver-paginated-preview-report.png)
@@ -82,7 +82,7 @@ Sok más típusú vizualizációt is felvehet, például mérőműszereket, táb
 
 ![A Jelentéskészítő tervező nézete](media/quickstart-create-paginated-report/reportserver-paginated-finished-design-report.png)
 
-## <a name="step-4-save-your-report-to-the-report-server"></a>4. lépés: Mentse a jelentését a jelentéskészítő kiszolgálóra
+## <a name="step-4-save-your-report-to-the-report-server"></a>4. lépés: Mentse a jelentést a jelentéskészítő kiszolgálón
 Ha elkészült a jelentése, mentse a Power BI jelentéskészítő kiszolgálóra.
 
 1. A **Fájl** menüben válassza a **Mentés másként** lehetőséget, majd mentse a jelentést a jelentéskészítő kiszolgálóra. 

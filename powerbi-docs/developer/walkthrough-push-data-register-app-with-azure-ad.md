@@ -5,23 +5,23 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 660f79eab32ae7ade5cea990c6fc152bb9507297
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: db3184f7bc3c181b685c22d0bcad27206b4a0f8f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "34285968"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296363"
 ---
 # <a name="step-1-register-an-app-with-azure-ad"></a>1. lépés: Alkalmazás regisztrálása az Azure AD-ben
-Ez a cikk az [adatok adatkészletbe történő leküldését](walkthrough-push-data.md) ismertető részletes útmutató része.
+Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-data.md) ismertető részletes útmutató része.
 
 Az első lépés az adatok a Power BI-adatkészletekbe való küldése esetén az alkalmazás regisztrálása az Azure AD-ben. Először ezt kell megtennie, hogy rendelkezzen egy **ügyfél-azonosítóval**, amely az Azure AD-ben azonosítja az alkalmazást. **Ügyfél-azonosító** nélkül az Azure AD nem tudja hitelesíteni az alkalmazást.
 
-> **MEGJEGYZÉS:** Mielőtt regisztrálhatna egy alkalmazást a Power BI-ban, [regisztrálnia kell a Power BI-ra](create-an-azure-active-directory-tenant.md).
+> **MEGJEGYZÉS**: Mielőtt regisztrálhatna egy alkalmazást a Power BI-ban, [regisztrálnia kell a Power BI-ra](create-an-azure-active-directory-tenant.md).
 > 
 > 
 
@@ -47,7 +47,7 @@ A következő lépés bemutatja, hogyan [szerezhető be a hitelesítési hozzáf
 ## <a name="next-steps"></a>Következő lépések
 [Regisztráció a Power BI-ra](create-an-azure-active-directory-tenant.md)  
 [Hitelesítési hozzáférési token beszerzése](walkthrough-push-data-get-token.md)  
-[Útmutató: Adatok küldése adatkészletekbe](walkthrough-push-data.md)  
+[Útmutató: Adatok leküldése adatkészletbe](walkthrough-push-data.md)  
 [Egy alkalmazás regisztrálása](register-app.md)  
 [A Power BI REST API áttekintése](overview-of-power-bi-rest-api.md)  
 

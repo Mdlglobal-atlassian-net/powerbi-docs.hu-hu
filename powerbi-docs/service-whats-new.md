@@ -5,17 +5,17 @@ author: mihart
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: daada8a7f69c600acf6fc45669ed6a42c2fdd831
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: c35f418362c5036331030bf100d9bfca6b943a4a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900658"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295812"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
@@ -24,7 +24,7 @@ Ezen az oldalon a **Power BI szolgáltatás** ismert problémáit és új funkci
 - [A Power BI Desktop újdonságai](desktop-latest-update.md)  
 - [A Power BI-mobilalkalmazások újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [A Power BI csapat blogja](https://powerbi.microsoft.com/blog/)
-- [Business Applications ‘18 tavaszi kiadási megjegyzések](http://aka.ms/businessappsreleasenotes) a Dynamics 365-től: Üzleti alkalmazásaink legújabb frissítései és új funkciók alkalmazásai és bővítményei platformunkon történő fejlesztéséhez. 
+- [Az üzleti alkalmazások 2018 tavaszi kibocsátási megjegyzései](http://aka.ms/businessappsreleasenotes)a Dynamics 365-ből: Az üzleti alkalmazások legújabb frissítései, valamint számos új funkció, melyekkel saját alkalmazásokat és bővítményeket hozhat létre a platformunkra építve. 
 
 Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is tájékozódhat:
 
@@ -119,7 +119,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * A Power BI SharePoint-kijelzője elérhető minden felhasználó számára.
 * A Power BI csatlakoztatása bármilyen adatforráshoz az [adatösszekötő SDK-val](https://powerbi.microsoft.com/blog/data-connectors-developer-preview/).
 * Navigálás a jelentésekhez több URL-szűrőparaméterrel.
-* Előzetes verzió: Irányítópultok és jelentések terjesztése széles körben a [Power BI alkalmazásokkal](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/).
+* Előzetes verzió: Irányítópultok és jelentések terjesztése széles körben a [Power BI-alkalmazásokkal](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/).
 
 ### <a name="march-2017"></a>2017. március
 * A céges Power BI finomhangolása a [részletes felügyeleti vezérlőkkel](https://powerbi.microsoft.com/blog/announcing-granular-tenant-settings-in-power-bi/).
@@ -154,7 +154,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * A [Jira projektkezelési adatainak](https://powerbi.microsoft.com/blog/explore-your-jira-data-with-power-bi/) feltárása egy Power BI-tartalomcsomaggal.
 * A [Insightcentr adatainak](https://powerbi.microsoft.com/blog/explore-your-insightcentr-data-with-power-bi/) feltárása egy Power BI-tartalomcsomaggal.
 * Infografikák gyors létrehozása az [infografikatervező egyéni vizualizációval](https://powerbi.microsoft.com/blog/quickly-create-infographics-with-the-infographic-designer-custom-visual-for-power-bi/).
-* Private Preview verzió: Streamelési csempék létrehozásához használható Power BI-streamelési adatkészletek készítése az [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) szolgáltatással.
+* Privát előzetes verzió: Streamelési csempék létrehozásához használható Power BI-streamelési adatkészletek készítése az [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) szolgáltatással.
 * Előzetes verzió: [ESRI ArcGIS Maps vizualizációk](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) hozzáadása a jelentésekhez és az irányítópultokhoz.
 
 ### <a name="october-2016"></a>2016. október
@@ -191,7 +191,7 @@ A részletekről a [Power BI-csapat blogján](https://powerbi.microsoft.com/blog
 ### <a name="may-2016"></a>2016. május
 ***Adatok lekérése***
 
-* Az adatméret korlátját 1 GB-ra emeltük: Mind az Excel-munkafüzetek, mind a Power BI Desktop-fájlok esetében a fájlméret korlátja 1 GB-ra nőtt.
+* A fájlméret korlátját 1 GB-ra emeltük: Mind az Excel-munkafüzetek, mind a Power BI Desktop-fájlok esetében a fájlméret korlátja 1 GB-ra nőtt.
 * Vállalati átjáróval és egyéb átjárófrissítésekkel beállított SSAS-kiszolgálók keresése: Mostantól ha egy vállalati átjárót állít be, a cég felhasználói hozzáférhetnek a kiszolgálókhoz a Power BI Adatok lekérése oldalán keresztül. Továbbá kiterjesztettük a támogatást az SAP Business Warehouse-kiszolgálóról származó adatokat tartalmazó adatkészletek frissítésére, amelyet az átjáró használatával és UPN-leképezési szabályok létrehozásával végezhet el, ha az Analysis Services szolgáltatást az átjáróval használja.
 
 ***Sorszintű biztonság (RLS)***
@@ -213,7 +213,7 @@ A részletekről a [Power BI-csapat blogján](https://powerbi.microsoft.com/blog
 A részletekről a [Power BI-csapat blogján](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/) olvashat.
 
 * [Power BI Q&A-támogatás az SQL Server 2016 Analysis Services rendszerbeli táblázatos modellekhez](service-q-and-a-direct-query.md): Örömmel jelenthetjük, hogy továbbfejlesztettük a Power BI Q&A felhasználói élményét, és megjelentettük a Power BI Q&A nyilvános előzetes verzióját a vállalati átjáró által csatlakoztatott adatforrásokhoz – elsőként pedig az SQL Server 2016 Analysis Services rendszerbeli táblázatos modellek kapnak támogatást. A részletekről [ebben a blogbejegyzésben](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/) olvashat.
-* [Helyi fájlok támogatása az Excel-jelentésekben](service-excel-workbook-files.md#local-excel-workbooks): Mostantól az Excel-fájljait a helyi meghajtóról vagy más társzolgáltatásokból is feltöltheti, és az Excel-jelentést ugyanúgy használhatja a Power BI funkcióival, mint ahogyan az Excel Online-ban tenné. A részletekről a [ebben a blogbejegyzésben](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/) olvashat.
+* [Helyi fájlok támogatása az Excel-jelentésekben](service-excel-workbook-files.md#local-excel-workbooks): Mostantól az Excel-fájljait a helyi meghajtóról vagy más társzolgáltatásokból is feltöltheti, és az Excel-jelentést ugyanúgy használhatja a Power BI funkcióival, mint ahogyan az Excel Online-ban tenné. A részletekről [ebben a blogbejegyzésben](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/) olvashat.
 
 **2016. április 28.**
 
@@ -242,7 +242,7 @@ A részletekről a [Power BI-csapat blogján](https://powerbi.microsoft.com/blog
 
 ***Irányítópultok***
 
-* [Vimeo videócsempe](service-dashboard-add-widget.md): Az irányítópultról hozzáadhat egy csempét, amely egy beágyazott Vimeo-lejátszót tartalmaz.
+* [Vimeo videócsempe](service-dashboard-add-widget.md):  Az irányítópultról hozzáadhat egy csempét, amely egy beágyazott Vimeo-lejátszót tartalmaz.
 
 ***Elemzés az Excelben***
 
@@ -403,7 +403,7 @@ Ezen a héten sok frissítést vezettünk be, amelyek legtöbbje a Power BI Desk
 * Vizualizációk fejlesztései:
   
   1. a vizualizációk rendezési állapota egy Táblázatvizualizációban adható meg
-  2. új vizualizáció: Halmozott területdiagram
+  2. új vizualizáció: Halmozott terület diagram
   3. okos elemleírások a terület- és vonaldiagramok felé helyezett kurzor esetén
   4. referenciavonal/régió létrehozása Descartes-féle vizualizációkhoz
   5. továbbfejlesztett adatfeliratok a kör- és pontdiagramokhoz
@@ -421,10 +421,10 @@ Ezen a héten sok frissítést vezettünk be, amelyek legtöbbje a Power BI Desk
   1. Többdimenziós SSAS-támogatás – hierarchiatámogatás (előzetes verziós funkció)
   2. Stripe-összekötő
   3. Smartsheet-összekötő
-  4. „Adatok megadása”: táblázat létrehozása adatok beillesztésével vagy beírásával
-  5. DirectQuery-fejlesztések: teljesítménybeli javulás a T-SQL és az SAP HANA minden adattípusának támogatása eredményeképp.
-  6. ODBC-összekötő: az adatforrásnevek és a felhasználói adatforrásnevek kiválasztásának támogatása
-  7. CSV-összekötő: oszlophatároló megadása a Forrás párbeszédpanelen
+  4. „Adatbevitel”: Adatbeillesztés vagy -megadás tábla létrehozásához
+  5. A DirectQuery fejlesztései:  A T-SQL és a SAP HANA összes adattípusának támogatása, ami teljesítményjavulást eredményez.
+  6. ODBC-összekötő: Támogatás a felhasználó vagy a rendszer adatforrásneveinek kiválasztásához
+  7. CSV-összekötő: Lehetőség oszlopelválasztó megadására a Forrás párbeszédpanelen
 
 Részletes információkat, többek között egy, a frissítéseket ismertető videót a [Power BI blogján](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx) találhat.
 
@@ -448,7 +448,7 @@ Részletes információkat, többek között egy, a frissítéseket ismertető v
 * [Power BI-integráció a Cortanával](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [A Vállalati Power BI Gateway előzetes verziója](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
 * Új tartalomcsomag: [A Bing keresési elemzései a Power BI-irányítópultokon](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
-* Új fejlesztőközpontú fejlesztések: [két új API és könnyebb alkalmazásregisztráció](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
+* Új fejlesztőközpontú fejlesztések: [Két új API és könnyebb alkalmazásregisztráció](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
 
 **2015. november 24.**
 
@@ -592,11 +592,11 @@ További információt a [blogunkban](http://blogs.msdn.com/b/powerbi/archive/20
 **2015. július 24.**
 
 * Örömmel jelentjük, hogy a Power BI mostantól általánosan elérhető. Regisztráljon még ma a [Power BI Pro](service-self-service-signup-for-power-bi.md) szolgáltatásra. Az általánosan elérhető kiadás részeként nagyszerű új funkciókat vezettünk be:
-* Új vizualizáció- és jelentéskészítési folyamat: az új jelentésvászon több választható vizualizációval, szélesebb körű csempe-, jelmagyarázat-, tengely-, szín- és háttérformázási lehetőségekkel, valamint számos más funkcióval rendelkezik.
+* Új vizualizáció- és jelentéskészítési folyamat: Az új jelentésvászon több választható vizualizációval, szélesebb körű csempe-, jelmagyarázat-, tengely-, szín- és háttérformázási lehetőségekkel, valamint számos más funkcióval rendelkezik.
 * [A Power BI-csoportok](service-create-distribute-apps.md): a csoportokkal egy Office 365-csoportokra épülő, hatékony együttműködési platformot vehet igénybe.
-* [Céges tartalomcsomagok](service-organizational-content-pack-introduction.md): a Power BI szolgáltatással rendkívül egyszerűen hozhat létre irányítópultokat és jelentéseket, a felhasználók pedig mostantól közzétehetik ezeket a tartalmakat a céges tartalomgyűjteményben.
-* [Teljes Excel-fájlok importálása](service-excel-workbook-files.md): bármilyen, a OneDrive Vállalati verzión tárolt Excel-munkafüzetet importálhat a Power BI-ba, és ugyanúgy megtekintheti, mintha az Excel Online-ban tenné.
-* [CSV-fájlok](service-get-data-from-files.md) importálása: az Excel- vagy Power BI Desktop-fájlokhoz hasonlóan CSV-fájlokat is alkalmazhat adatkészletként a Power BI irányítópultjaihoz és jelentéseihez.
+* [Céges tartalomcsomagok:](service-organizational-content-pack-introduction.md): A Power BI szolgáltatással rendkívül egyszerűen hozhat létre irányítópultokat és jelentéseket, a felhasználók pedig mostantól közzétehetik ezeket a tartalmakat a céges tartalomgyűjteményben.
+* [Teljes Excel-fájlok importálása](service-excel-workbook-files.md): Bármilyen, a OneDrive Vállalati verzión tárolt Excel-munkafüzetet importálhat a Power BI-ba, és ugyanúgy megtekintheti, mintha az Excel Online-ban tenné.
+* [CSV-fájlok](service-get-data-from-files.md) importálása: Az Excel- vagy Power BI Desktop-fájlokhoz hasonlóan CSV-fájlokat is alkalmazhat adatkészletként a Power BI irányítópultjaihoz és jelentéseihez.
 * Excel-, Power BI Desktop- és CSV-fájlok lecserélése: a fájlok frissített verziójának a Power BI-ba való feltöltése lecseréli a meglévő adatkészletet. Az ehhez az adatkészlethez csatlakoztatott jelentések és irányítópultok automatikusan az új verziót használják.
 * Örömmel jelentjük, hogy a Power BI e heti frissítésében a [Visual Studio Online tartalomcsomaggal](http://blogs.msdn.com/b/powerbi/archive/2015/07/22/monitoring-your-visual-studio-online-work-items-with-power-bi.aspx) megérkezett az munkaelem-követés funkció. A frissítés egy új irányítópultot, egy jelentést és egy frissített adatkészletet tartalmaz, amelyekkel elemezheti a munkaelemeket. Emellett a Git-tárházzal kapcsolatos fontos metrikákat, lekéréses kérelmeket és a kezdeti verzióhoz tartozó verziókövetési tartalmakat is magában foglal. További részleteket az első lépésekről a [Power Visual Studio Online tartalomcsomag súgóoldalán](service-connect-to-quickbooks-online.md) találhat.
 

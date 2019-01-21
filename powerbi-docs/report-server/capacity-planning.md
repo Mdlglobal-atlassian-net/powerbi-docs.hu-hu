@@ -5,16 +5,16 @@ author: parthsha
 manager: kfile
 ms.reviewer: maghan
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: c19bc774ebffa2e781512e793abbefd1bd9fb5e2
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: c479b2600dad31756101c57ba2b1c5fc7fa19b2f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679292"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296662"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló kapacitástervezési útmutatója
 A Power BI jelentéskészítő kiszolgáló olyan önkiszolgáló BI és céges jelentéskészítő megoldás, amelyet az ügyfelek helyben telepíthetnek a saját tűzfal mögé. A Power BI Desktop interaktív jelentéskészítő képességét kombinálja az SQL Server Reporting Services helyi kiszolgálói platformjával. Az elemzések és a jelentések gyakori és növekvő céges használatának köszönhetően a hardveres infrastruktúrák és a vállalati felhasználói bázis skálázásához szükséges szoftverlicencek költségbecslése kihívást jelenthet. A jelen dokumentum célja, hogy útmutatást nyújtson a Power BI jelentéskészítő kiszolgálójának kapacitástervezéséhez, és megossza a jelentéskészítő kiszolgáló különböző számítási feladataihoz tartozó terhelési tesztek végrehajtási eredményeit. Bár a cégek jelentései, lekérdezései és használati mintái eltérőek lehetnek, a jelen dokumentumban ismertetett eredmények – a ténylegesen használt tesztekkel és azok végrehajtásának részletes bemutatásával – hivatkozási pontként szolgálnak bárkinek, aki a Power BI jelentéskészítő kiszolgáló üzembe helyezésének korai tervezési szakaszában van.
@@ -42,7 +42,7 @@ A Power BI jelentéskészítő kiszolgáló üzemelő példánya az alábbi virt
 
 * Active Directory-tartományvezérlő: az SQL Server adatbázismotor, az SQL Server Analysis Services és a Power BI jelentéskészítő kiszolgáló igényelte ezt az összes kérés biztonságos hitelesítéséhez.
 * SQL Server adatbázismotor és SQL Server Analysis Services: itt tároltuk a jelentések megjelenítésekor használt összes adatbázist.
-* Power BI jelentéskészítő kiszolgáló
+* Power BI jelentéskészítő kiszolgálón
 * A Power BI jelentéskészítő kiszolgáló adatbázisa. A jelentéskészítő kiszolgáló adatbázisa a Power BI jelentéskészítő kiszolgálótól eltérő gépen található, így annak nem kell osztoznia az SQL Server adatbázismotorral a memórián, a CPU-n, a hálózaton és a lemezerőforrásokon.
 
 ![](media/capacity-planning/report-server-topology.png)
@@ -60,7 +60,7 @@ A terhelési műveletekben használt tesztek nyilvánosan elérhetők a [Reporti
 Minden tesztet úgy írtak meg, hogy alkalmas legyen teljes körű műveletek végrehajtására (jelentések megjelenítése, új adatforrások létrehozása stb.). Mindez legalább egy webkérés jelentéskészítő kiszolgálónak való elküldésével valósul meg (API-kon keresztül). A valós életben a felhasználónak néhány köztes műveletet is el kellhet végeznie az ilyen teljes körű műveletek végrehajtásakor. Például egy jelentés megjelenítéséhez a felhasználónak meg kell nyitnia a webportált és a jelentést tartalmazó mappát, majd a jelentésre kattintva kell megjelenítenie azt. Bár a tesztek nem tartalmazzák a teljes körű feladatok végrehajtásához szükséges összes műveletet, jól szimulálják a Power BI jelentéskészítő kiszolgálót érő terhelés nagy részét. A GitHub-projekt tanulmányozásával megismerheti a felhasznált jelentések különböző típusait, valamint az elvégzett különböző műveleteket.
 
 ### <a name="workloads"></a>Számítási feladatok
-A tesztben 2 számításifeladat-profil szerepel: Power BI-jelentés (nagy erőforrásigényű) és Többoldalas jelentés (nagy erőforrásigényű). Az alábbi táblázat a jelentéskészítő kiszolgálón végrehajtott kérések eloszlását ismerteti.
+A teszteléshez két számítási profil használható: Power BI-jelentés (nagy erőforrásigényű) és lapszámozott jelentés (nagy erőforrásigényű). Az alábbi táblázat a jelentéskészítő kiszolgálón végrehajtott kérések eloszlását ismerteti.
 
 | Tevékenység | Power BI-jelentés (nagy erőforrásigényű), előfordulás gyakorisága | Többoldalas jelentés (nagy erőforrásigényű), előfordulás gyakorisága |
 | --- | --- | --- |

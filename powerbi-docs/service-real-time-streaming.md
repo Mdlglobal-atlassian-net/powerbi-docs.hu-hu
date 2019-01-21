@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 63b75aae9fb9299119b606458a4a8832d77dd1be
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 196d2ef3eb0d8ed8b7f008eef1b247d9e7f1cd18
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417165"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296501"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Valós idejű streamelés a Power BI-ban
 A Power BI valós idejű streamelésével valós időben streamelhet adatokat és frissítheti az irányítópultokat. A Power BI-ban elkészíthető vizualizációk vagy irányítópultok úgy is létrehozhatók, hogy valós idejű adatokat és a vizualizációkat jelenítsenek meg és frissítsenek. A streamelési adatok forrásai és eszközei lehetnek ipari érzékelők, közösségimédia-források, szolgáltatáshasználati metrika vagy bármi más, amiből időfüggő adatok gyűjthetők és továbbíthatók.
@@ -44,7 +44,7 @@ Két szempontot érdemes figyelembe venni a leküldéses adatkészletek rögzít
 * Ha rögzített egy vizualizációt az irányítópulton, akkor a **Q&A** segítségével természetes nyelvezetet használva tehet fel kérdéseket a leküldéses adatkészlettel kapcsolatban. Ha feltett egy kérdést a **Q&A** területen, akkor rögzítheti az eredménye vizualizációját az irányítópulton, és ez az irányítópult *szintén* valós időben fog frissülni.
 
 ### <a name="streaming-dataset"></a>Streamelési adatkészlet
-A **streamelési adatkészletek** adatai szintén leküldéssel kerülnek az Power BI szolgáltatásba, van azonban egy fontos különbség: a Power BI csak egy átmeneti gyorsítótárban tárolja az adatokat, és az gyorsan kiürül. Az átmeneti gyorsítótár csak olyan vizualizációkhoz használható, amelyek rövid időre visszamenőleg jelenítik meg az előzményeket, mint amilyen például egy egyórás időtartományú vonaldiagram.
+A **streamelési adatkészletek** adatai szintén leküldéssel kerülnek az Power BI szolgáltatásba, van azonban egy fontos különbség: A Power BI csak egy átmeneti gyorsítótárban tárolja az adatokat, és az gyorsan kiürül. Az átmeneti gyorsítótár csak olyan vizualizációkhoz használható, amelyek rövid időre visszamenőleg jelenítik meg az előzményeket, mint amilyen például egy egyórás időtartományú vonaldiagram.
 
 A  **adatkészlet** esetében *nincs* a háttérben működő adatbázis, így *nem* készíthetők vizualizációk a jelentésekhez a streamből beérkező adatokból. Tehát nem lesznek használhatók egyebek között olyan jelentési funkciók sem, mint a szűrés vagy az egyéni vizualizációk.
 

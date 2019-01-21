@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/19/2017
 ms.author: maghan
-ms.openlocfilehash: 36f9665f0e42ee62e5a1a4a7584a2492bea276b0
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 641369a4410741269a260e036ac3a7930f385e76
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37597912"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288934"
 ---
 # <a name="custom-layouts"></a>Egyéni elrendezések
 
@@ -65,7 +65,7 @@ enum DisplayOption {
 ```
 
 - `pageSize`: Az oldalmérettel szabályozhatja a vászonterület (azaz a jelentés fehér területének) méretét.
-- `displayOptions`: A lehetséges értékek a következők: FitToWidth (Szélességhez igazítás), FitToPage (Laphoz igazítás) vagy ActualSize (Tényleges méret). Azt szabályozza, hogy a rendszer hogyan méretezze a vásznat, hogy az illeszkedjen az IFrame elembe.
+- `displayOptions`: Lehetséges értékek: FitToWidth (Szélességhez igazítás), FitToPage (Laphoz igazítás) vagy ActualSize (Tényleges méret). Azt szabályozza, hogy a rendszer hogyan méretezze a vásznat, hogy az illeszkedjen az IFrame elembe.
 - `pagesLayout`: Az egyes vizualizációk elrendezését szabályozza. További információért lásd a PagesLayout objektumot.
 
 ## <a name="pages-layout"></a>Lapok elrendezése
@@ -112,7 +112,7 @@ enum VisualContainerDisplayMode {
 ```
 
 - `x,y,z`: A vizualizáció új pozícióját határozza meg.
-- `width`, height: A vizualizáció új méretét határozza meg.
+- `width`, magasság: A vizualizáció új méretét határozza meg.
 - `displayState`: Azt határozza meg, hogy a vizualizáció látható-e.
 
 

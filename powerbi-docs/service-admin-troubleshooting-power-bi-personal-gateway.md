@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: d5f2fa0abe6f0503ce5f41387f66db928ae0267e
-ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
+ms.openlocfilehash: 642bd39cb9348bae2a1f30dbc9ee026e11ff7401
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37145410"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284518"
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>A Power BI személyes átjáró hibáinak elhárítása
 Ebben a cikkben áttekintjük a Power BI személyes átjáró használata kapcsán gyakorta felmerülő kérdéseket.
@@ -67,17 +67,17 @@ Ilyen hiba az \<adatkészletek\> beállításainál jelentkezhet, ha az adatkés
 * Jelenleg Power BI-ban nem támogatott az adatforrás frissítése. 
 * Az Excel-munkafüzet nem tartalmaz adatmodellt, csak munkafüzet adatokat. A Power BI jelenleg csak akkor támogatja a frissítést, ha a feltöltött Excel-munkafüzet tartalmaz adatmodellt. Ha az Excelbe a Power Query-t használva importál adatokat, válassza az Adatok betöltése adatmodellbe lehetőséget. Így gondoskodhat arról, hogy az adatokat egy adatmodellbe importálja a rendszer. 
 
-**Hiba: [Az adatok nem kombinálhatók] a &lt;lekérdezés rész&gt;/&lt;... &gt; / &lt;... &gt; olyan adatforrásokhoz próbál hozzáférni, melyek különböző adatvédelmi szintjei együtt nem használhatók. Hozza létre újból az adatok kombinációját.**
+**Hiba: [Az adatok nem kombinálhatók] a &lt;lekérdezés rész&gt;/&lt;... &gt; / &lt;... &gt; olyan adatforrásokhoz próbál hozzáférni, melyek különböző adatvédelmi szintjei együtt nem használhatók. Kérjük, építse újra az adategyesítést.**
 
 **Megoldás**: Ezt a hibát az adatvédelmi szintekre vonatkozó korlátozások és az Ön által használt adatforrástípusok okozzák.
 
-**Error: Data source error: We cannot convert the value "\[Table\]" to type Table. (Adatforrás-hiba: A [Tábla] érték nem konvertálható a következő típusra: Tábla.)**
+**Hiba: Adatforráshiba: We cannot convert the value "\[Table\]" to type Table. (Adatforrás-hiba: A [Tábla] érték nem konvertálható a következő típusra: Tábla.)**
 
 **Megoldás**: Ezt a hibát az adatvédelmi szintekre vonatkozó korlátozások és az Ön által használt adatforrástípusok okozzák.
 
-**Hiba: There is not enough space for this row. (Ez a sor nem fér el.)**
+**Hiba: Nincs elegendő szabad terület ehhez a sorhoz.**
 
-Ilyesmi akkor fordulhat elő, ha az egyik sor mérete nagyobb mint 4 MB. Állapítsa meg, hogy az adatforrás melyik soráról van szó, majd ezt a sort próbálja meg kiszűrni, vagy próbálja meg csökkenteni a méretét.
+Ez a hiba akkor fordul elő, ha egyetlen sor mérete nagyobb 4 MB-nál. Állapítsa meg, hogy az adatforrás melyik soráról van szó, majd ezt a sort próbálja meg kiszűrni, vagy próbálja meg csökkenteni a méretét.
 
 ## <a name="data-sources"></a>Adatforrások
 **Hiányzó adatszolgáltató** – A személyes átjáró csak 64 bites verzióban érhető el. Működéséhez arra van szükség, hogy a számítógépre, amelyen a személyes átjáró üzemel, telepítve legyen az adatszolgáltató 64 bites verziója. Például, ha az adatkészletben szereplő adatforrás Microsoft Access típusú, telepítenie kell a 64 bites ACE-szolgáltatót arra a számítógépre, amelyen a személyes átjáró is fut.  

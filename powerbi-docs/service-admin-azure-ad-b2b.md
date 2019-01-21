@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: dee5c14d2ee714872409352b5e42d646e561c271
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 7e76f03a3795976aebd1480dc77a579c9245ed9e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507761"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282057"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Power BI tartalmak terjesztése Azure AD B2B külső vendégfelhasználóknak
 
@@ -101,6 +101,6 @@ A vendégfelhasználó saját bérlőjén már rendelkezik Power BI Pro-licencce
 
 ## <a name="next-steps"></a>Következő lépések
 
-Többek közt a sorszintű biztonság működésével kapcsolatos további információért tekintse meg a következő tanulmányt: [Power BI-tartalom terjesztése vendégfelhasználóknak az Azure AD B2B használatával](https://aka.ms/powerbi-b2b-whitepaper).
+Ha részletesebb információkra van szüksége például a sorszintű adatvédelem működésével kapcsolatban, olvassa el ezt a tanulmányt: [Power BI-tartalmak terjesztése Azure AD B2B külső vendégfelhasználóinak](https://aka.ms/powerbi-b2b-whitepaper).
 
 Az Azure AD B2B szolgáltatással kapcsolatos további információt a [Mi az Azure AD B2B-csoportmunka?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/) című cikkben találhat.

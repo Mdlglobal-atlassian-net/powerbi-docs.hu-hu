@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6c47fb847ff5360031f4bfe2974db9c405a4ce5f
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 61de19e50437cf8cb5920d2a413821e325da2a1a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670739"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278078"
 ---
 # <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery és SAP Business Warehouse (BW)
 Az **SAP Business Warehouse- (BW-)** adatforrásokhoz közvetlenül kapcsolódhat a **DirectQuery** használatával. Az SAP BW OLAP/többdimenziós természeténél fogva számos különbség van aközött, ha a DirectQueryt az SAP BW-vel használjuk, vagy ha valamilyen relációs forrással, például az SQL Serverrel. A különbségeket a következőképpen lehet összefoglalni:
@@ -42,7 +42,7 @@ A DirectQuery SAP BW-vel való használatakor a Power BI-ban a legfőbb további
 ## <a name="additional-visualization-restrictions"></a>További vizualizációs korlátozások
 A DirectQuery SAP BW-vel való használatakor a Power BI-ban a legfőbb további vizualizációs korlátozások a következők:
 
-* **Nincs oszlopösszesítés:** Nem módosítható a vizualizációs oszlopok összesítése, a beállítás mindig *Nincs összegzés*.
+* **Nincs oszlopösszesítés:** Nem módosítható a vizualizációs oszlopok összesítése, a beállítás mindig *Nincs összegzés*
 * **A mértékek szűrése le van tiltva:** Az SAP BW nyújtotta támogatásnak megfelelően a mértékek szűrése le van tiltva.
 * **Többszörös kiválasztás és belefoglalás/kihagyás:** A vizualizációkban több adatpont kiválasztása nem lehetséges, ha a pontok egynél több oszlop értékeit jelölik. Például egy országok szerinti eladásokat megjelenítő oszlopdiagram esetében, ha a kategória a jelmagyarázat része, nem lehet kiválasztani az (Amerikai Egyesült Államok, kerékpárok) vagy (Franciaország, ruhák) pontokat. Ugyanígy azt sem lehet beállítani, hogy az (Amerikai Egyesült Államok, kerékpárok) pont a kijelölése esetén ne jelenjen meg a vizualizációban. Mindkét korlátozás az SAP BW nyújtotta támogatást tükrözi.
 

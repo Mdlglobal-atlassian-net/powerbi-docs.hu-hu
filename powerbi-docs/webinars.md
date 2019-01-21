@@ -5,16 +5,16 @@ author: maikelson
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: b144f3101606a58b2cd0b48db976a70477442d40
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 24d023d726183119a3bd098c61db75cb68969c52
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670417"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283139"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -50,11 +50,11 @@ Igény szerint elérhető népszerű előadások az első lépésekhez
 <br>Előadó: Gohul Shanmugalingam
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
 
-**Tegye Power BI-adatait láthatóvá: alapvető diagramtípusok és a használatuk**
+**Tegye Power BI-adatait láthatóvá:  Alapvető diagramtípusok és a használatuk**
 <br>by Miranda Li
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
 
-**Power BI, Excel és Office 365: nagyvállalati adatok optimalizálása**
+**Power BI, Excel és Office 365: Vállalati adatforrások optimalizálása**
 <br>előadó: Olaf Hubel és Miguel Martinez
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
@@ -155,11 +155,11 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 
 **[Power BI bevezetési keretrendszer webinárium-sorozat](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
 <br>írta: Manu Kanwarpal és Paul Henwood
-<br>[Regisztráljon, és tekintse meg most: 1. rész – Adatközpontú kultúra bevezetése](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
-<br>[Regisztráljon, és tekintse meg most: 2. rész – Irányítás: irányítsa saját Power BI-használatát](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
-<br>[Regisztráljon, és tekintse meg most: 3. rész – Szolgáltatásfelügyelet: Power BI szolgáltatásfelügyeleti elemzések](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
-<br>[Regisztráljon, és tekintse meg most: 4. rész – Biztonság: adatainak megvédése a Power BI segítségével](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
-<br>[Regisztráljon, és tekintse meg most: 5. rész – Bevezetés: A Power BI sikeres bevezetése](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
+<br>[Regisztráció és megtekintés – 1. rész – Bevezetés: Adatvezérelt kulturális környezet bevezetése](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+<br>[Regisztráció és megtekintés – 1. rész – Irányítás: A Power BI-használat irányítása](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
+<br>[Regisztráció és megtekintés – 3. rész – Szolgáltatásfelügyelet: A Power BI szolgáltatásfelügyeleti elemzései](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
+<br>[Regisztráció és megtekintés – 4. rész – Biztonság: Adatvédelem a Power BI segítségével](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+<br>[Regisztráció és megtekintés – 5. rész – Kibocsátás: A Power BI sikeres kibocsátása](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
 **Az Office 365 webinárium-sorozata pénzügyi szakembereknek**
 <br>Készítette: Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky és Miguel Martinez

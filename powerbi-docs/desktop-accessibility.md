@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d57d31e87197ee9d764a8d263dd4ee6dd0c75ac3
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: d0c6222c4b10307985ad039c3b391c8648614979
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619632"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280056"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Akadálymentesség a Power BI Desktop-jelentésekben
 A Power BI rendelkezik olyan funkciókkal, amelyek lehetővé teszik a fogyatékkal élők számára, hogy könnyedén használják és kezeljék a Power BI-jelentéseket. A funkciók közé tartozik az a lehetőség, hogy a jelentések billentyűzettel vagy képernyőolvasóval is használhatók legyenek, az oldalak objektumai léptetéssel emelhetők ki, és a jelölők használata átgondolt a vizualizációkban.
@@ -36,7 +36,7 @@ Fókuszt válthat a jelentés lapfülei vagy egy adott jelentésoldal objektumai
 * Ha a fókusz a *jelentés lapfülein* van, a *Tab* vagy a *nyíl*billentyűk használatával válthat fókuszt az egyik jelentésoldalról a következőre. A képernyőolvasó felolvassa a jelentésoldal címét, valamint azt, hogy jelenleg ki van-e választva. A jelenleg aktív lévő jelentésoldal betöltéséhez nyomja le az *Enter* vagy a *Szóköz* billentyűt.
 * Ha a fókusz egy betöltött *jelentésoldalon* van, a *Tab* billentyű használatával válthat fókuszt az oldal egyes objektumaira, beleértve a szövegdobozokat, képeket, alakzatokat és diagramokat. A képernyőolvasó felolvassa az objektum típusát, az objektum címét, ha van címe és az objektum leírását, ha a jelentés szerzője létrehozta azt. 
 
-Ha a vizualizációk között navigálva szeretne további műveleteket is végezni az egyiken, megnyomhatja az **Alt+Shift+F10** billentyűkombinációt, hogy a kurzor a vizualizáció fejlécére kerüljön, ahol különféle lehetőségek állnak rendelkezésre, például leválogatás, a diagram alapjául szolgáló adatok exportálása és fókusz mód. 
+A vizualizációk között navigálva megnyomhatja az **Alt+Shift+F10** billentyűkombinációt, hogy a kurzor a vizualizáció fejlécére kerüljön, ahol különféle lehetőségek állnak rendelkezésre, például leválogatás, a diagram alapjául szolgáló adatok exportálása és fókusz mód. 
 
 ![A Power BI Desktopban nyomja le az Alt + Shift + F10 billentyűparancsot a fókusz a vizualizáció fejlécére való helyezéséhez](media/desktop-accessibility/accessibility_08.png)
 
@@ -74,7 +74,7 @@ Az alábbi tippek segítségével olyan **Power BI Desktop** jelentéseket hozha
 * A jelentés minden objektumához adjon meg *helyettesítő szöveget*. Ezzel biztosíthatja, hogy a jelentése felhasználói megértsék, mi a kommunikációs célja a vizualizációval, akkor is, ha nem látják a vizualizációt, a képet, az alakzatot vagy a szövegdobozt. A **Power BI Desktop** jelentés bármely objektumához megadhat *helyettesítő szöveget*, ha kijelöli az objektumot (például vizualizációt, alakzatot stb.), és a **Vizualizációk** panelen kiválasztja a **Formázás** szakaszt, kibontja az **Általános** elemet, majd legörget az aljára, és kitölti a **Helyettesítő szöveg** szövegdobozt.
   
   ![Egy jelentés bármely objektumához a Vizualizációk > Formázás > Általános > Helyettesítő szöveg mezőben adhat meg helyettesítő szöveget](media/desktop-accessibility/accessibility_02.png)
-* Győződjön meg arról, hogy elég kontraszt legyen a jelentéseiben a szöveg és a háttérszínek között. Többféle eszköz, például a [Colour Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/) (Színkontrasztelemző) is rendelkezésre áll a jelentés színeinek ellenőrzésére. 
+* Győződjön meg arról, hogy elég kontraszt legyen a jelentéseiben a szöveg és a háttérszínek között. Többféle eszköz, például a [Color Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/) (Színkontrasztelemző) is rendelkezésre áll a jelentés színeinek ellenőrzésére. 
 * Könnyen olvasható szövegméretet és betűtípusokat használjon. A kis betűméret vagy a nehezen olvasható betűtípusok nehezítik a használatot.
 * Adjon meg címet, tengelyfeliratokat és adatfeliratokat minden vizualizációhoz.
 * Használjon jelentéssel bíró címeket minden jelentésoldalhoz.
@@ -170,7 +170,10 @@ Az akadálymentesség javítására való folyamatos törekvésünk jegyében a 
 | Az aktuális kijelölés összes előfordulásának kijelölése | Ctrl + Shift + L |
 | Az aktuális szó összes előfordulásának kijelölése | Ctrl + F2 |
 
-
+### <a name="enter-data"></a>Adatbevitel
+| Cél           | Billentyűparancs                |
+| :------------------- | :------------------- |
+| Kilépés a szerkeszthető rácsból | Ctrl + Tab |
 
 
 ## <a name="next-steps"></a>Következő lépések

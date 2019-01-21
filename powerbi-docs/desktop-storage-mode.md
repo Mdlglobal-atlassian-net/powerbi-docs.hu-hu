@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 18d5b2ca504ec3533e2ded0e5480885ea862fb3a
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 26ab2ec7dfd7a091a6a7df89ee4492dc124ed60c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619494"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279182"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Tárolási mód a Power BI Desktopban (előzetes verzió)
 
@@ -39,7 +39,7 @@ A Power BI Desktop tárolási mód beállítása három kapcsolódó funkció eg
 
 * **Összetett modellek**: Lehetővé teszik, hogy egy jelentés kettő vagy több adatkapcsolattal, köztük DirectQuery-kapcsolatokkal és importálással, vagy ezek bármilyen kombinációjával rendelkezzen. További információért lásd: [Összetett modellek a Power BI Desktopban (előzetes verzió)](desktop-composite-models.md).
 
-* **Több-a-többhöz kapcsolatok**: Az *összetett modellekkel* a táblák között *több-a-többhöz kapcsolatok* hozhatók létre. A *több-a-többhöz kapcsolatokkal* kiküszöbölhető az egyedi értékek követelménye a táblákban. Ráadásul ez a korábbi áthidaló megoldásokat is szükségtelenné teszi, például új táblák bevezetését a kapcsolatok létrehozásához. További információk: [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md).
+* **Több a többhöz kapcsolatok**: Az *összetett modellekkel* a táblák között *több-a-többhöz kapcsolatok* hozhatók létre. A *több-a-többhöz kapcsolatokkal* kiküszöbölhető az egyedi értékek követelménye a táblákban. Ráadásul ez a korábbi áthidaló megoldásokat is szükségtelenné teszi, például új táblák bevezetését a kapcsolatok létrehozásához. További információk: [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md).
 
 * **Tárolási mód**: Mostantól megadható, hogy mely vizualizációk igényelnek a háttér-adatforrásokba irányuló lekérdezéseket. Azok a vizualizációk, amelyekhez nincs szükség lekérdezésre, importálva lesznek még akkor is, ha DirectQuery-alapúak. Ez a funkció segíti a teljesítmény javulását, és csökkenti a háttérrendszerek leterheltségét. Korábban még az egyszerű vizualizációk, például a szeletelők is kezdeményeztek a háttérbeli forrásokba irányuló lekérdezéseket. A tárolási módról további információt ebben a cikkben talál.
 
@@ -57,7 +57,7 @@ A tárolási mód értéke háromféle lehet:
 
 * **Importálás**: Ha az **Importálás** érték van beállítva, az importált táblák gyorsítótárazva lesznek. A Power BI-adathalmazra irányuló, importált táblákból adatokat visszaadó lekérdezések csak a gyorsítótárazott adatokon hajthatók végre.
 
-* **DirectQuery** – Az ezzel a beállítással rendelkező DirectQuery-táblák nem lesznek gyorsítótárazva. A Power BI-adathalmazra irányuló (például Data Analysis Expressions- (DAX-) lekérdezések), illetve a DirectQuery-táblákból adatokat visszaadó lekérdezések csak igény szerinti lekérdezések az adatforráson való futtatásával hajthatók végre. Az adatforrásra irányuló lekérdezések az adott adatforrás lekérdezési nyelvét (például SQL) használják.
+* **DirectQuery**: Az ezzel a beállítással rendelkező DirectQuery-táblák nem lesznek gyorsítótárazva. A Power BI-adathalmazra irányuló (például Data Analysis Expressions- (DAX-) lekérdezések), illetve a DirectQuery-táblákból adatokat visszaadó lekérdezések csak igény szerinti lekérdezések az adatforráson való futtatásával hajthatók végre. Az adatforrásra irányuló lekérdezések az adott adatforrás lekérdezési nyelvét (például SQL) használják.
 
 * **Kettős**: A kettős beállítású táblák gyorsítótárazottként és nem gyorsítótárazottként is viselkedhetnek a Power BI-adathalmazra irányuló lekérdezés környezetétől függően. Bizonyos esetekben a lekérdezések a gyorsítótárazott adatokból vannak teljesítve. Más esetekben a lekérdezések teljesítése úgy történik, hogy a rendszer egy igény szerinti lekérdezést futtat az adatforráson.
 

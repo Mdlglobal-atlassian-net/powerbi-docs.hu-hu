@@ -1,25 +1,25 @@
 ---
 title: Power BI vegyes valósághoz alkalmazás (előzetes verzió)
 description: A Power BI vegyes valósághoz (előzetes verziójú) alkalmazásban megtekintheti az irányítópultjait és jelentéseit a virtuális világban vagy a környezetében elhelyezve.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/05/2018
-ms.author: maggies
-ms.openlocfilehash: a9db2854ee7f1c0844e17e3641fc07f1d6aaf154
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.author: mshenhav
+ms.openlocfilehash: 443615a64bee1f4723450c6c8cc3c49feb81989c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736986"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275134"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI vegyes valósághoz alkalmazás (előzetes verzió)
 A Power BI vegyes valósághoz (előzetes verziójú) alkalmazásban megtekintheti az irányítópultjait és jelentéseit a virtuális világban, vagy elhelyezheti őket igény szerint a környezetében. 
 
-[A Power BI vegyes valósághoz alkalmazás letöltése](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) a Windows Store-ból: A Windows Store-ban ezt „Power BI Mobile”-nak hívják. A virtuális valóságban műveleteket végezhet az irányítópultjaival és a jelentéseivel, majd kiválaszthatja, melyeket szeretné elhelyezni. 
+[A vegyes valósághoz készült Power BI letöltése](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) a Windows Áruházból: A Windows Áruházban ez „Power BI Mobile” néven szerepel. A virtuális valóságban műveleteket végezhet az irányítópultjaival és a jelentéseivel, majd kiválaszthatja, melyeket szeretné elhelyezni. 
 
 ## <a name="two-views-windows-classic-and-holographic"></a>Két nézet: klasszikus Windows és holografikus Windows
 

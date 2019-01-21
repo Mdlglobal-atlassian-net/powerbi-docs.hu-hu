@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: fe81c8e972a4fe36f88da495e4e0dce97a39d32c
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 494612b9c8ef448756dfe2d516bfca68e69d2e7a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830309"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296823"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>A Power BI felügyelete – gyakori kérdések (GYIK)
 
@@ -186,7 +186,7 @@ Külső átvétel végrehajtásakor az átvétel végrehajtása előtt létrehoz
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Ha több tartományom van, felügyelhetem azt az Office 365-bérlőt, amelyhez a felhasználók hozzáadódnak?
 
-Ha nem tesz semmit, a rendszer minden felhasználói e-mail-tartományhoz és -altartományhoz létrehoz egy bérlőt. Ha azt szeretné, hogy minden felhasználó ugyanahhoz a bérlőhöz tartozzon e-mail-cím-kiterjesztéstől függetlenül: Előre hozzon létre egy célbérlőt, vagy használjon egy meglévő bérlőt, és adja hozzá a bérlőben konszolidálni kívánt összes meglévő tartományt és altartományt. Ezután az összes olyan felhasználó, akinek az e-mail-címe ezekre a tartományokra és altartományokra végződik, automatikusan a célbérlőhöz lesz csatlakoztatva, amikor regisztrál.
+Ha nem tesz semmit, a rendszer minden felhasználói e-mail-tartományhoz és -altartományhoz létrehoz egy bérlőt. Ha azt szeretné, hogy az e-mail-cím bővítményétől függetlenül mindegyik felhasználó ugyanabban a bérlőben legyen: Előre hozzon létre egy célbérlőt, vagy használjon egy meglévő bérlőt, és adja hozzá a bérlőben konszolidálni kívánt összes meglévő tartományt és altartományt. Ezután az összes olyan felhasználó, akinek az e-mail-címe ezekre a tartományokra és altartományokra végződik, automatikusan a célbérlőhöz lesz csatlakoztatva, amikor regisztrál.
 
 > [!IMPORTANT]
 > Nincs támogatott automatikus mechanizmus a felhasználók bérlők közötti mozgatásához, miután létrejöttek. A tartományok egyetlen Office 365-bérlőhöz való hozzáadásáról a [felhasználók és tartományok Office 365 szolgáltatáshoz adásával](/office365/admin/setup/add-domain/) kapcsolatos témakörben olvashat.

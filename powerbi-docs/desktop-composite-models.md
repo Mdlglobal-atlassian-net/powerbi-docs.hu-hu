@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/12/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ffb82303584249641454c81f61e399d2b1d4f574
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 734af04ae515b1cae19b5afc99166619a85ab828
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452775"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290457"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Összetett modellek használata a Power BI Desktopban
 
@@ -25,9 +25,9 @@ Ha korábban a Power BI Desktopban DirectQueryt használt egy jelentésben, akko
 
 Az összetett modellek használatának lehetősége a Power BI Desktopban három összefüggő funkcióból áll:
 
-* **Összetett modellek** – Lehetővé teszi, hogy egy jelentés több adatkapcsolattal, köztük DirectQuery és importálás típusú kapcsolatokkal, vagy ezek bármilyen kombinációjával rendelkezzen. Ez a cikk részletesen tárgyalja az összetett modelleket.
+* **Összetett modellek**: Lehetővé teszik, hogy egy jelentés több adatkapcsolattal, köztük DirectQuery és importálás típusú kapcsolatokkal, vagy ezek bármilyen kombinációjával rendelkezzen. Ez a cikk részletesen tárgyalja az összetett modelleket.
 
-* **Több-a-többhöz kapcsolatok**: Az *összetett modellekkel* a táblák között *több-a-többhöz kapcsolatok* hozhatók létre. Ez a megközelítés kiküszöböli, hogy egyedi értékeket kelljen használni a táblákban. Korábbi áthidaló megoldásokat is szükségtelenné tesz, például új táblák bevezetését a kapcsolatok létrehozásához. További információk: [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md).
+* **Több a többhöz kapcsolatok**: Az *összetett modellekkel* a táblák között *több-a-többhöz kapcsolatok* hozhatók létre. Ez a megközelítés kiküszöböli, hogy egyedi értékeket kelljen használni a táblákban. Korábbi áthidaló megoldásokat is szükségtelenné tesz, például új táblák bevezetését a kapcsolatok létrehozásához. További információk: [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md).
 
 * **Tárolási mód**: Mostantól megadható, hogy mely vizualizációk igényelnek a háttér-adatforrásokba irányuló lekérdezéseket. Azok a vizualizációk, amelyekhez nincs szükség lekérdezésre, importálva lesznek még akkor is, ha DirectQuery-alapúak. Ez a funkció segíti a teljesítmény javulását, és csökkenti a háttérrendszerek leterheltségét. Korábban még az egyszerű vizualizációk, például a szeletelők is kezdeményeztek a háttérbeli forrásokra irányuló lekérdezéseket. További információért lásd: [Tárolási mód a Power BI Desktopban (előzetes verzió)](desktop-storage-mode.md).
 
@@ -160,7 +160,7 @@ Az összetett modellek használata további teljesítménnyel kapcsolatos szempo
 
 * **Kisebb részletességet kívánó SQL-lekérdezés, amelynek adatai a helyszínen lesznek összesítve**: Ha a termékmenedzserek (*Product Manager*) szűrési feltételének megfelelő termékek (*Products*) száma nagyon nagy, lehet, hogy nem érdemes vagy nem lehetséges belefoglalni az összes terméket egy *WHERE* záradékba. Ehelyett a termék (*Product*) alacsonyabb szintjén is lekérdezheti a relációs forrást, majd az eredményeket helyben összesítheti. Ha a termékek (*Products*) száma meghaladja az 1 milliós korlátot, a lekérdezés sikertelen lesz.
 
-* **Több SQL-lekérdezés, csoportosítási szempontonként egy** – Ha az aggregáció a **DistinctCount** függvényt használja, és egy másik forrásban lévő oszlop alapján van csoportosítva, és ha a külső forrás nem támogatja a csoportosítást meghatározó nagy számú literál érték hatékony átadását, szükségessé válhat csoportosítási szempontonként külön SQL-lekérdezést küldeni. 
+* **Több SQL-lekérdezés, csoportosítási szempontonként egy**: Ha az aggregáció a **DistinctCount** függvényt használja, és egy másik forrásban lévő oszlop alapján van csoportosítva, és ha a külső forrás nem támogatja a csoportosítást meghatározó nagy számú literál érték hatékony átadását, szükségessé válhat csoportosítási szempontonként külön SQL-lekérdezést küldeni. 
 
    Például egy olyan vizualizációnak, amely a *CustomerAccountNumber* mező egyedi értékeinek számát kéri (az SQL Serveren lévő táblából) termékmenedzserenként (*Product Manager*) (a munkafüzetből importálva), meg kellene adnia a *Product Managers* táblázat adatait az SQL Servernek elküldött lekérdezésben. Más erőforrások (például a Redshift) használatával ez a művelet nem végezhető el. Ehelyett *Sales Manager*&mdash;értékenként egy SQL-lekérdezés lenne elküldve egy adott gyakorlati korlátig, amely felett a lekérdezés sikertelen lenne. 
 

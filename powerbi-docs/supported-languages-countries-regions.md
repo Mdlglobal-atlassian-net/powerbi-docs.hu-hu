@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: e474081a5f094bc04f6fc93b985b8d81efee1a0b
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 98c637692b3c31e598a11c3039b60be3dec61348
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728111"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281183"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>A Power BI által támogatott nyelvek és országok/régiók
 
@@ -116,7 +116,7 @@ A Power BI a számítógépén érvényben lévő nyelvi beállítások alapján
    A módosítás életbe lépéséhez esetleg be kell zárnia és újra kell indítania a böngészőt.
 
 ## <a name="choose-the-language-or-locale-of-power-bi-desktop"></a>A Power BI nyelvének és területi beállításainak kiválasztása
-A Power BI Desktop két módon szerezhető be: letöltheti vagy telepítheti a Windows Áruházból.
+A Power BI Desktopot kétféle módon szerezheti be: Letöltheti vagy telepítheti a Windows Áruházból.
 
 * Ha [a Power BI Desktopot a Windows Áruházból telepíti](#choose-a-language-for-power-bi-desktop-installed-from-the-windows-store), akkor az minden nyelvet telepít és a Windows alapértelmezett nyelvén jelenik meg.
 * Ha [letölti a Power BI Desktopot](#choose-a-language-when-you-download-power-bi-desktop), akkor Ön választja ki a nyelvet a letöltés során. 

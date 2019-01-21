@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: 354ba336407f200d2c311f6bf0de91967cf3f5d1
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: e7a9b4da760f02672f51aa7ace0f3bb19c501834
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598139"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275019"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Tartalom kezelése a webes portálon 
 A Power BI jelentéskészítő kiszolgáló webportálja egy helyszíni platform, amely Power BI-, mobil- és többoldalas jelentések és főbb teljesítménymutatók (KPI-k) megtekintésére, tárolására és kezelésére szolgál.
@@ -23,8 +23,8 @@ A Power BI jelentéskészítő kiszolgáló webportálja egy helyszíni platform
 
 A webportál bármelyik korszerű böngészőben megnyitható. A jelentéseket és a főbb teljesítménymutatókat a webportál mappákba rendezi, amelyeket megjelölhet kedvencként. A mappákban Excel-munkafüzeteket is tárolhat. A webportálról elindíthatja a jelentéskészítéshez szükséges eszközöket:
 
-* **Power BI-jelentések** a Power BI Desktop alkalmazással: megtekinthetők a webportálon és Power BI-mobilalkalmazásokban.
-* **Többoldalas jelentések** a Jelentéskészítővel: korszerű megjelenésű, rögzített elrendezésű, nyomtatásra optimalizált dokumentumok.
+* Power BI Desktoppal létrehozott **Power BI-jelentések**: Megtekintheti őket a webportálon és a Power BI-mobilalkalmazásokban.
+* A Jelentéskészítővel létrehozott **lapszámozott jelentések**: Korszerű megjelenésű, rögzített elrendezésű, nyomtatásra optimalizált dokumentumok.
 * **Főbb teljesítménymutatók**, amelyek közvetlenül a webportálon készülnek.
 
 A webportálon tallózhat a jelentéskészítő kiszolgáló mappáiban, és adott jelentéseket is megkereshet. Megtekintheti a jelentéseket, az általános jelentéstulajdonságaikat és a jelentéselőzmények közt tárolt korábbi példányaikat. Ha engedélyei lehetővé teszik, feliratkozhat jelentésekre, és kérheti az e-mailben vagy a fájlrendszer egy megosztott mappájába való elküldésüket.

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 85c16822a51bc3c4a59bbfaa363f742f77552b72
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: ba9cc81c966ebadb2aaff8c339b8a151aef7b6fd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578635"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287586"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Oktatóanyag: Saját mértékek létrehozása a Power BI Desktopban
 A Power BI Desktop leghatékonyabb adatelemzési megoldásait a mértékek segítségével alakíthatja ki. A mértékek segítségével számításokat hajthat végre az adatokon a jelentések használata közben. Ez az oktatóanyag ismerteti a mértékekről, és bemutatja, hogy miképpen hozhatja létre a saját alapvető mértékeit a Power BI Desktopban.
@@ -85,7 +85,7 @@ A nettó értékesítések értékét szeretné kiszámítani azzal a módszerre
     
     ![Oszlop kiválasztása](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_sum.png)
     
-    A kifejezések mindig zárójelek között jelennek meg. Ebben a példában a kifejezés csak egy olyan argumentumot tartalmaz, amely továbbadható a SUM függvénynek, és ez a SalesAmount oszlop. Kezdje el a „SalesAmount” kifejezés gépelését, amíg a listán csak a Sales(SalesAmount) érték marad. A táblanévhez csatolt oszlopnév az oszlop *teljesen minősített* neve. A teljesen minősített oszlopnevek olvashatóbbá teszik a képleteket. 
+    A kifejezések mindig zárójelek között jelennek meg. Ebben a példában a kifejezés csak egy olyan argumentumot tartalmaz, amely továbbadható a SUM függvénynek, és ez a SalesAmount oszlop. Kezdje el a „SalesAmount” kifejezés gépelését, amíg a listán csak egyetlen érték marad: Sales(SalesAmount). A táblanévhez csatolt oszlopnév az oszlop *teljesen minősített* neve. A teljesen minősített oszlopnevek olvashatóbbá teszik a képleteket. 
     
     ![SalesAmount oszlop kiválasztása](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_salesam.png)
     
@@ -128,7 +128,7 @@ Ha a **SalesAmount** mezőre kattint, vagy áthúzza a diagramra, megtekintheti 
 
 ![Értékesítések összege és Nettó értékesítés országonként](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
 
-Az ábra most két mértéket használ: az automatikusan összeadott SalesAmount értéket, és az imént létrehozott saját Net Sales értéket. Mindkét mértéket egy másik mező, a RegionCountryName (RégióOrszágNév) környezetében számolta ki a rendszer.
+Az ábra most két mértéket használ: Az automatikusan összeadott SalesAmount értéket, és az imént létrehozott saját Net Sales értéket. Mindkét mértéket egy másik mező, a RegionCountryName (RégióOrszágNév) környezetében számolta ki a rendszer.
     
 ### <a name="use-your-measure-with-a-slicer"></a>Saját mérték használata szeletelővel
 

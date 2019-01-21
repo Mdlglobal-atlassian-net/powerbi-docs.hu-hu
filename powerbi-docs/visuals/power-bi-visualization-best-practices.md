@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 77802d2db59ddff94123991e209441b4c491f98b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: e426d781f7a2e663687f443c423e1fc326624289
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548603"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296723"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Ajánlott eljárások jelentések és vizualizációk megalkotásához
 <!-- Shared newnav Include -->
@@ -101,7 +101,7 @@ A Power BI eszközeivel igazíthatja a vizualizációkat. Ha több vizualizáci�
 
 ![](media/power-bi-visualization-best-practices/power-bi-visualization.png)
 
-**3. ábra:     Vizualizációk igazítása a Power BI Desktopban**
+**3. ábra:    Vizualizációk igazítása a Power BI Desktopban**
 
 A Power BI online és a Power BI Desktop szolgáltatásban a vizualizációk méretét és elhelyezését is pontosan irányíthatja az **Általános** lap formázási ablaktáblájában:
 
@@ -146,7 +146,7 @@ A mintaoldalunk máris jobban mutat. Sok felesleges elemet távolítottunk el, �
 
 ![](media/power-bi-visualization-best-practices/power-bi-example3newer.png)
 
-**7. ábra:   A zsúfoltságától megszabadított csúnya jelentésmintánk**
+**7. ábra:    A zsúfoltságától megszabadított csúnya jelentésmintánk**
 
 ### <a name="tell-a-story-at-a-glance"></a>Egy történet egy pillantásra
 A jelentés legjobb tesztje az, ha olyanok is gyorsan, magyarázat nélkül megértik a tartalmát, akik először találkoznak vele. Az olvasóknak át kell tudniuk látni első pillantásra, hogy miről szól az egész oldal, az egyes diagramok és a táblázatok.   
@@ -166,7 +166,7 @@ A Power BI szolgáltatás felső menüsorában válassza a **Szövegmező** lehe
 
 ![](media/power-bi-visualization-best-practices/power-bi-text-box-edit.png)
 
-**9. ábra:    A szövegmező formázása**
+**9. ábra:    A szövegdoboz formázása**
 
 Ne vigye túlzásba! Ha egy jelentés túl sok szöveget tartalmaz, az elterelheti a figyelmet a vizualizációkról. Ha azt tapasztalja, hogy a jelentésoldal csak akkor érthető, ha rengeteg szöveget tartalmaz, érdemes az egészet újra kezdenie.  Tud olyan vizualizációt használni, amely önmagában jobban szemlélteti az átadandó üzenetet? Tudja módosítani a vizualizáció címét, hogy az érthetőbb legyen?   
 
@@ -178,11 +178,11 @@ Az alakzatok is segíthetik a navigációt és a szövegértést. Az alakzatokka
 
 ![](media/power-bi-visualization-best-practices/shapes.png)
 
-**10a. ábra:    Alakzatok Power BI szolgáltatásban**
+**10a. ábra:    Alakzatok a Power BI szolgáltatásban**
 
 ![](media/power-bi-visualization-best-practices/power-bi-desktop-shapes2new.png)
 
-**10b. ábra:    Alakzatok Power BI Desktop szolgáltatásban**
+**10b. ábra:    Alakzatok a Power BI Desktopban**
 
 Hogy néz ki jelenleg a mintaoldalunk?  A 11. ábrán egy letisztultabb, kevésbé zsúfolt oldalt láthatunk, amelyben következetesek a szövegkészletek, a betűtípusok és a színek.  A bal felső sarokban található oldalcím tudatja velünk, miről szól az oldal.
 
@@ -275,7 +275,7 @@ A jelentésoldal többi vizualizációjához adjon fehér hátteret. A formázá
 
 ![](media/power-bi-visualization-best-practices/power-bi-example5b.png)
 
-**21. ábra: Mintajelentés a színek ajánlott eljárásainak alkalmazásával (fehér háttér)**
+**21. ábra:    Mintajelentés a színek ajánlott eljárásainak alkalmazásával (fekete háttér)**
  
 
 ### <a name="aesthetics"></a>Esztétika
@@ -398,7 +398,7 @@ A vizualizáció aktiválásához kattintson rá. Jelölje ki és nyomja le a vi
 
 ![](media/power-bi-visualization-best-practices/power-bi-move.png)
 
-**30. ábra: Vizualizáció áthelyezése**
+**30. ábra: Vizualizációk áthelyezése**
 
 #### <a name="titles-and-labels-that-are-part-of-the-visualizations"></a>A vizualizációk részét képező címek és címkék
 Ügyeljen rá, hogy a címek és a címkék olvashatók és egyértelműek legyenek. A címek és címkék szövegeinek optimális méretűnek és könnyen észrevehető színűnek kell lenniük (például fekete az alapértelmezett szürke helyett). Emlékszik még a stílusra vonatkozó útmutatóra (a fenti „Szöveg” szakaszból)? Ne használjon túl sok színt és méretet – a túl sok betűméret és betűszín zsúfolttá és zavarossá teheti az oldalt.  Érdemes azonos betűszínt és betűméretet használni az egyes jelentésoldalak minden vizualizációjához, és az oldalak címeinek azonos igazítást beállítani.  
@@ -649,8 +649,8 @@ Ahogyan a vonaldiagramok az adatok az idő viszonyában való megjelenítéséne
 További információ a sáv- és oszlopdiagramokról:
 
 * [Bevezetés a sávdiagramokba](http://blog.newscred.com/article/data-visualization-101-bar-charts)
-* [Adatvizualizációs gyűjtemény: sávdiagram](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
-* [Adatvizualizációs gyűjtemény: többszörös sávdiagram](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
+* [Adatvizualizációs gyűjtemény: Sávdiagram](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
+* [Adatvizualizációs gyűjtemény: Többszörös sávdiagram](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
 
 ### <a name="stacked-barcolumn-charts"></a>Halmozott sáv- és oszlopdiagramok
 ![](media/power-bi-visualization-best-practices/power-bi-stacked.png)
@@ -682,13 +682,13 @@ Ezen a vonaldiagramon könnyebben megfigyelhető, hogy a legnagyobb növekedése
 
 További információ a halmozott diagramokról:
 
-* [Adatvizualizációs gyűjtemény: halmozott sávdiagramok](http://www.datavizcatalogue.com/methods/stacked_bar_graph.html#top)
+* [Adatvizualizációs gyűjtemény: Halmozott sávdiagramok](http://www.datavizcatalogue.com/methods/stacked_bar_graph.html#top)
 * [Mikor hasznos a 100%-ig halmozott sávdiagram?](http://www.perceptualedge.com/blog/?p=2239)
 
 ### <a name="combo-barcolumn-charts"></a>Kombinált sáv- és oszlopdiagramok
 ![](media/power-bi-visualization-best-practices/power-bi-combo.png)
 
-A Power BI-ban az oszlop- és vonaldiagramok egy kombinált diagramban egyesíthetők. Erre az alábbi lehetőségei vannak: vonal- és halmozott oszlopdiagram, valamint vonal- és csoportosított oszlopdiagram. Értékes területet takaríthat meg a vásznon, ha két különálló vizualizációt egyesít.
+A Power BI-ban az oszlop- és vonaldiagramok egy kombinált diagramban egyesíthetők. Az alábbiak közül választhat: Vonal- és halmozott oszlopdiagram, valamint vonal- és csoportosított oszlopdiagram. Értékes területet takaríthat meg a vásznon, ha két különálló vizualizációt egyesít.
 
 A lenti két képernyőkép egy egyesítés előtti és egy egyesítés utáni változatot mutat be.  Az első oldalon két különálló vizualizáció található: egy oszlopdiagram, amely a népességnövekedést szemlélteti az idő függvényében, és egy vonaldiagram, amely a GDP-t szemlélteti az idő függvényében. Ezek ideális alapanyagot nyújtanak egy kombinált diagramhoz, ugyanis megegyezik az X tengelyük (év) és az értékeik (2002-től 2012-ig).  De miért ne vonhatnánk őket össze, és hasonlíthatnánk össze a trendeket egyetlen vizualizáción belül?  A két diagram kombinációjával gyorsabban hasonlíthat össze adatokat.
 
@@ -717,7 +717,7 @@ Ehhez nyissa meg a Formázás ablaktáblát, bontsa ki az **Y tengely** elemet, 
 
 ![](media/power-bi-visualization-best-practices/power-bi-show-secondary-new.png)
 
-**60. ábra: A másodlagos tengely megjelenítése**
+**60. ábra: Másodlagos tengely megtekintése**
 
 ![](media/power-bi-visualization-best-practices/power-bi-combo-chart.png)
 
@@ -777,7 +777,7 @@ Itt egy újabb adatszintet adtunk hozzá, a régiót, és a régiónkénti GDP-h
 További információt a faszerkezetes térképekről az alábbi linkekre kattintva találhat.
 
 * [Faszerkezetes térképek – áttekintés](http://www.perceptualedge.com/articles/b-eye/treemaps.pdf)
-* [Adatvizualizációs gyűjtemény: faszerkezetes térképek](http://www.datavizcatalogue.com/methods/treemap.html#.VYhylI3bL7Y)
+* [Adatvizualizációs gyűjtemény: Faszerkezetes térképek](http://www.datavizcatalogue.com/methods/treemap.html#.VYhylI3bL7Y)
 
 ### <a name="other-charts"></a>Más típusú diagramok
 #### <a name="pie-or-donut-charts"></a>Kör- vagy gyűrűdiagramok
@@ -809,7 +809,7 @@ További információ:
 Ideje élesben is kipróbálni az ajánlott eljárásokat.  Maradjunk kapcsolatban: ossza meg velünk saját legjobb eljárásait! Nem ért egyet a javaslatainkkal, vagy egy remek kivételt talált, amellyel „megszegheti a szabályokat”?  Ezekről is nagyon szívesen hallanánk.  
 
 ### <a name="book-recommendations"></a>Könyvajánló
-A vizualizációtervezési technikákról számos jó könyv érhető el manapság. Stephen Few *Information Dashboard Design* (Információs irányítópultok tervezése) című könyve kötelező a témakörben. Két másik könyvben, a *Show Me the Numbers* (Lássuk a számokat!) és a *Now You See It* (Így már látja?) című kiadásban még részletesebben ír a vizualizációkról. Few-t és más szerzőket Edward R. Tufte ihlette, akinek *The Visual Display of Quantitative Information* (A mennyiségi adatok vizuális megjelenítése) című könyve klasszikusnak számít ezen a területen. Tufte írta emellett a *Visual Explanations* (Vizuális magyarázatok), az *Envisioning Information* (Az információk megjelenítése) és a *Beautiful Evidence* (Gyönyörű bizonyíték) című könyveket is. Adam Kirk új könyve, a *Data Visualization: A Handbook for Data Driven Design* (Adatvizualizáció: adattervezési kézikönyv) is egy nagyszerű olvasmány. További ajánlott szerzők: Lachlan James, William McKnight, és Boris Evelson (Forrester), Darkhorse Analytics.
+A vizualizációtervezési technikákról számos jó könyv érhető el manapság. Stephen Few *Information Dashboard Design* (Információs irányítópultok tervezése) című könyve kötelező a témakörben. Két másik könyvben, a *Show Me the Numbers* (Lássuk a számokat!) és a *Now You See It* (Így már látja?) című kiadásban még részletesebben ír a vizualizációkról. Few-t és más szerzőket Edward R. Tufte ihlette, akinek *The Visual Display of Quantitative Information* (A mennyiségi adatok vizuális megjelenítése) című könyve klasszikusnak számít ezen a területen. Tufte írta emellett a *Visual Explanations* (Vizuális magyarázatok), az *Envisioning Information* (Az információk megjelenítése) és a *Beautiful Evidence* (Gyönyörű bizonyíték) című könyveket is. Andy Kirk új könyve – *Data Visualization: A Handbook for Data Driven Design* (Adatvizualizáció: adattervezési kézikönyv) is egy nagyszerű olvasmány. További ajánlott szerzők: Lachlan James, William McKnight és Boris Evelson (Forrester), Darkhorse Analytics.
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: d15dfa17280a8c289f223719961cd48a97cb92bc
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: d768956f26256bd06516981b2bae0ab17ef3ca90
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187536"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296317"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>A Power BI-hoz használt Cortana hibaelhárítása
 Ez a cikk egy sorozat része. Ha még nem tette meg, javasoljuk, hogy olvassa el az alábbi cikkeket.

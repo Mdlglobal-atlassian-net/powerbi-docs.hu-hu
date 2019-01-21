@@ -1,23 +1,23 @@
 ---
-title: 'Kiskereskedelmi elemzési minta a Power BI-hoz: bemutató'
-description: 'Kiskereskedelmi elemzési minta a Power BI-hoz: bemutató'
+title: 'Kiskereskedelmi elemzési minta – Power BI: Bemutató megtekintése'
+description: 'Kiskereskedelmi elemzési minta – Power BI: Bemutató megtekintése'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/24/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: c07c33cb6ae859c9cf202ae67119dbfb8dd45e26
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: e4cb314af1522c71de85e4576572acbb1d2e88b3
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717677"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291464"
 ---
-# <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Kiskereskedelmi elemzési minta a Power BI-hoz: bemutató
+# <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Kiskereskedelmi elemzési minta – Power BI: Bemutató megtekintése
 
 Ez az iparági minta-irányítópult és a mögöttes jelentés a több üzletben és körzetben értékesített cikkek kiskereskedelmi értékesítési adatait elemzi. A mérőszámok a folyó év teljesítményét vetik össze a tavalyival a következő területeken: értékesítés, egységek, bruttó nyereség, eltérés, új üzletek elemzett adatai. Az adatok az obviEnce-től ([www.obvience.com](http://www.obvience.com)) származó valós, de anonimizált adatok.
 

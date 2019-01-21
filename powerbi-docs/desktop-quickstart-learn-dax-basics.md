@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: a171dd2aa375f8d12830b051dd8ce6437e4b3236
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 323391268e930d3b7b2926590f3377b850b65624
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679455"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282586"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>A DAX alapszintű használata a Power BI Desktopban
 Ez a cikk a Power BI Desktoppal még csak most ismerkedő felhasználóknak szól. A célja annak a rövid bemutatása, hogyan lehet a Data Analysis Expressions (DAX) nyelv segítségével néhány alapszintű számítási és adatelemzési problémát megoldani. Ismerteti az alapvető fogalmakat, továbbá tartalmaz néhány elvégezhető feladatot és néhány tesztkérdést az elsajátított ismeretek felmérésére, így segít a DAX nyelvvel kapcsolatos legfontosabb alapvető tudnivalók elsajátításában.
@@ -33,7 +33,7 @@ Szeretnénk a számításokban, különösen a mértékekben és a számított o
 
 **Például szolgáló munkafüzet**
 
-A legjobban úgy sajátíthatja el a DAX használatát, ha létrehoz néhány alapvető képletet, azokat tényleges adatokkal használja, és megvizsgálja a kapott eredményeket. Az itt található példák és feladatok Power BI Desktop előzetes verziójához készült Contoso értékesítési mintára épülnek. Ez ugyanaz a mintafájl, amelyet a [saját mértékek Power BI Desktopban való létrehozását ismertető oktatóanyag](desktop-tutorial-create-measures.md) is használ. A mintafájlt [innen töltheti le](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip).
+A legjobban úgy sajátíthatja el a DAX használatát, ha létrehoz néhány alapvető képletet, azokat tényleges adatokkal használja, és megvizsgálja a kapott eredményeket. Az itt található példák és feladatok Power BI Desktop előzetes verziójához készült Contoso értékesítési mintára épülnek. Ez ugyanaz a mintafájl, mint amelyet a következőben használhatott: [Oktatóanyag: Saját mértékek létrehozása a Power BI Desktopban](desktop-tutorial-create-measures.md). A mintafájlt [innen töltheti le](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip).
 
 ## <a name="lets-begin"></a>Lássunk is hozzá!
 A DAX nyelvvel kapcsolatos ismeretek három alapvető fogalom köré fűzhetőek fel: *Szintaxis*, *Függvények* és *Környezet*. Természetesen léteznek egyéb fontos fogalmak is a DAX-ban, de ennek a három alapvető fogalomnak az elsajátítása a többi megismerését elősegítő kellő alapot.
@@ -65,7 +65,7 @@ A DAX-képletek megértéséhez érdemes lehet az egyes elemeket lebontani egy o
 
 Ha ezt a mértéket egy jelentéshez adjuk, kiszámítja az összes többi szerepeltetett mező (például: Mobiltelefonok az Egyesült Államok területén) értékesítési értékeinek összegét.
 
-Most talán azt gondolja, hogy „ez a mérték nem ugyanazt csinálja, mintha hozzáadnám a SalesAmount mezőt a jelentéshez?” Voltaképpen igen. Megvan azonban az oka, hogy miért hozunk létre egy külön saját mértéket, amely összegzi a SalesAmount mező értékeit: ezt a mértéket ugyanis használhatjuk argumentumként más képletekben. Lehet, hogy ez elsőre nem egyértelmű, ahogy azonban jobban megismeri a DAX-képleteket, ennek a segítségével sokkal hatékonyabb képleteket és modelleket hozhat majd létre. A későbbiekben viszont is fogja látni a Total Sales mértéket más képletek argumentumaként.
+Most talán azt gondolja, hogy „ez a mérték nem ugyanazt csinálja, mintha hozzáadnám a SalesAmount mezőt a jelentéshez?” Voltaképpen igen. Megvan azonban az oka, hogy miért hozunk létre egy külön saját mértéket, amely összegzi a SalesAmount mező értékeit: Ezt a mértéket ugyanis használhatjuk argumentumként más képletekben. Lehet, hogy ez elsőre nem egyértelmű, ahogy azonban jobban megismeri a DAX-képleteket, ennek a segítségével sokkal hatékonyabb képleteket és modelleket hozhat majd létre. A későbbiekben viszont is fogja látni a Total Sales mértéket más képletek argumentumaként.
 
 Lássunk még néhány dolgot ezzel a képlettel kapcsolatban. Kiemelendő, hogy a részeként egy függvényt is bemutattunk, a [SUM](https://msdn.microsoft.com/library/ee634387.aspx) függvényt. A függvények előre megírt képletek, amelyek használatával bonyolultabb számításokat és átalakításokat végezhet többek között számokkal, dátum- és időértékekkel, valamint szövegekkel. A függvényekre a későbbiekben térünk vissza.
 
@@ -160,7 +160,7 @@ A sorkörnyezetet a legegyszerűbb úgy elképzelni, mint az adott sort. Akkor v
 
 **Szűrőkörnyezet**
 
-A szűrőkörnyezet már egy kicsit összetettebb, mint a sorkörnyezet. A legegyszerűbben így értelmezhető: egy adott számításban alkalmazott egy vagy több szűrő, amely egy eredményt vagy értéket határoz meg.
+A szűrőkörnyezet már egy kicsit összetettebb, mint a sorkörnyezet. A szűrőkörnyezetet legegyszerűbben a következőképp foghatja fel: Egy adott számításban alkalmazott egy vagy több szűrő, amely egy eredményt vagy értéket határoz meg.
 
 A szűrőkörnyezet nem a sorkörnyezetet váltja ki, hanem amellett alkalmazandó. Például az egy adott számításban foglalt értékek további szűkítéséhez alkalmazhat egy szűrőkörnyezetet, amely nem csupán a sorkörnyezetet határozza meg, hanem azon belül egy adott értéket (szűrő).
 

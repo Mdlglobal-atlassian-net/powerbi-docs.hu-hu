@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e07575658ed25e3f4933a7840ef4bc970264b23
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 5ebc5472ffcbd5d6b493b919b3e2965968261d20
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296020"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279849"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Útmutató adatátjáró üzembe helyezéséhez a Power BI számára
 
@@ -40,7 +40,7 @@ Ha a felhasználók minden nap ugyanakkor kívánják elérni az adott jelentés
 A **Power BI** szolgáltatásban van egy korlátozás, amely szerint *jelentésenként* csak *egy* átjáró használható, tehát hiába használ a jelentés több adatforrást, az összes adat ezen az egy átjárón fog áthaladni. Viszont, egy olyan irányítópultnál, amely *több* jelentésen alapul, mindegyik jelentéshez egy-egy dedikált átjárót használhat, így eloszthatja az átjárók terhelését az irányítópultot alkotó jelentések között.
 
 ### <a name="connection-type"></a>Kapcsolat típusa
-A **Power BI-ban** kétféle kapcsolattípus áll rendelkezésre: a **DirectQuery** és az **Importálás**. Nem mindegyik adatforrás támogatja mindkét kapcsolattípust, és több szemponttól is függ, mikor melyiket érdemes használni, például a biztonsági követelményektől, a teljesítménytől, az adatkorláttól és az adatmodell méretétől. A kapcsolattípusokról és a támogatott adatforrásokról bővebben a *Helyszíni adatátjáró cikk* [Elérhető adatforrástípusok listája](service-gateway-onprem.md) című szakaszában olvashat.
+A **Power BI-ban** kétféle kapcsolattípus áll rendelkezésre: A **DirectQuery** és az **Importálás**. Nem mindegyik adatforrás támogatja mindkét kapcsolattípust, és több szemponttól is függ, mikor melyiket érdemes használni, például a biztonsági követelményektől, a teljesítménytől, az adatkorláttól és az adatmodell méretétől. A kapcsolattípusokról és a támogatott adatforrásokról bővebben a *Helyszíni adatátjáró cikk* [Elérhető adatforrástípusok listája](service-gateway-onprem.md) című szakaszában olvashat.
 
 A használt kapcsolat típusától függően az átjáróhasználat mértéke eltérő lehet. Például, amikor csak lehet, különítse el a **DirectQuery** típusú adatforrásokat az **Ütemezett frissítés** típusú adatforrásoktól (feltéve, hogy különböző jelentésekben vannak, és elkülöníthetőek). Ezzel megakadályozható, hogy DirectQuery-kérelmek ezreinek kelljen várni sorukra az átjárónál addig, amíg a cég fő irányítópultjához használt nagy méretű adatmodell reggeli ütemezett frissítése történik. Lássuk milyen szempontokat érdemes figyelembe venni a kapcsolattípusoknál:
 

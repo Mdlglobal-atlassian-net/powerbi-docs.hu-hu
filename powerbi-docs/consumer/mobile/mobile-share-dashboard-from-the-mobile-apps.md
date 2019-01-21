@@ -1,20 +1,20 @@
 ---
 title: Irányítópult vagy jelentés megosztása a Power BI mobilalkalmazásokból
 description: Hívjon meg másokat irányítópultjainak vagy jelentéseinek megtekintésére a Power BI-mobilalkalmazások hivatkozásainak megosztásával. Itt megismerkedhet az erre vonatkozó részletekkel.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
-ms.author: maggies
-ms.openlocfilehash: 4484eca5e810da7674d20e368383429c9c6f5508
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.author: mshenhav
+ms.openlocfilehash: 69532ea9ad98edc7655fb77aec13b69eec6566bf
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271647"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283667"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Irányítópult vagy jelentés megosztása a Power BI mobilalkalmazásokból
 A következőkre vonatkozik:
@@ -94,7 +94,7 @@ A megosztást csak a tulajdonos törölheti.
     Ha Ön az irányítópult tulajdonosa, láthatja a munkatársakat, akikkel megosztotta ezt az irányítópultot vagy jelentést, a következő megjegyzésekkel:
 
     -   **Megtekintheti**: Megtekintheti, de nem oszthatja meg.
-    -   **Megtekinthet és újraoszthat**: Megtekintheti és megoszthatja más munkatársakkal.
+    -   **Megtekintheti és újra megoszthatja**: Megtekintheti és megoszthatja más munkatársakkal.
 
 1. Írja be az e-mail-címeket és az irányítópultra való meghívást kísérő üzenetet. Egyéb esetben a Power BI az alapértelmezett üzenetet küldi el.
 2. Az újbóli megosztás engedélyezéséhez hagyja bejelölve **Az irányítópult megosztásának engedélyezése a címzettek számára** jelölőnégyzetet.
@@ -128,7 +128,7 @@ A megosztást csak a tulajdonos törölheti.
    
    **Megtekintheti**: Megtekintheti, de nem oszthatja meg.
    
-   **Megtekinthet és újraoszthat**: Megtekintheti és megoszthatja más munkatársakkal.
+   **Megtekintheti és újra megoszthatja**: Megtekintheti és megoszthatja más munkatársakkal.
 2. Írja be az e-mail-címeket és a meghívást kísérő üzenetet. Egyéb esetben a Power BI az alapértelmezett üzenetet küldi el.
    
    ![Meghívás párbeszédpanel](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-windows-10-share-dashboard.png)

@@ -6,18 +6,18 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/01/2018
-ms.openlocfilehash: 7608d9098177805849ec61f0427ee5bc662d58c9
-ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
+ms.openlocfilehash: 0337e35a67a852e1bb82209e095df4945c5de84a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475660"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275295"
 ---
-# <a name="step-5-add-rows-to-a-power-bi-table"></a>5. lépés: Sorok hozzáadása egy Power BI-táblához
-Ez a cikk az [adatok adatkészletbe történő leküldését](walkthrough-push-data.md) ismertető részletes útmutató része.
+# <a name="step-5-add-rows-to-a-power-bi-table"></a>5. lépés: Sorok hozzáadása egy Power BI-táblázathoz
+Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-data.md) ismertető részletes útmutató része.
 
 Az adatok adatkészletbe történő leküldési folyamatának **4. lépése** ([Adatkészlet lekérése és sorok hozzáadása egy Power BI-táblához](walkthrough-push-data-get-datasets.md)) esetében az [Adatkészletek lekérése](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) művelet és a Newtonsoft.Json fájl használatával történik az adatkészlet azonosítójának lekérése. Ebben a lépésben az adatkészlet azonosítóját és a [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) műveletet fogja használni arra, hogy sorokat adjon hozzá egy **Power BI**-adatkészlethez. 
 
@@ -33,8 +33,8 @@ Az alábbiakban a sorok adatkészlethez történő hozzáadását mutatjuk be a 
 > 
 > 
 
-1. A 2. lépésben (útmutatás az adatok leküldéséhez) létrehozott [Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése](walkthrough-push-data-get-token.md) című konzolalkalmazás-projektben adja hozzá az alábbi kódot.
-2. Futtassa a Konzolalkalmazást, és jelentkezzen a Power BI-fiókjába. A konzolablakban meg kell jelennie a **Sorok hozzáadva** üzenetnek. Az adatkészlethez hozzáadott sorok megtekintéséhez be is jelentkezhet a Power BI-ba.
+1. A 2. lépésben létrehozott konzolalkalmazás projektben tegye a következőket: Útmutatás az adatok leküldéséhez, [Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése](walkthrough-push-data-get-token.md), a lenti kód hozzáadása.
+2. Futtassa a Konzolalkalmazást, és jelentkezzen be a Power BI-fiókjába. A konzolablakban meg kell jelennie a **Sorok hozzáadva** üzenetnek. Az adatkészlethez hozzáadott sorok megtekintéséhez be is jelentkezhet a Power BI-ba.
 
 **Minta: Adatok leküldése adatkészletbe**
 

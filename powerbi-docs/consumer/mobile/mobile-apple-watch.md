@@ -1,20 +1,20 @@
 ---
 title: Power BI-adatok feltárása Apple Watchra készült mobilalkalmazásban
 description: Apple Watchra készült Power BI alkalmazás
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
-ms.author: maggies
-ms.openlocfilehash: bb5257b801ddb8ff2269a102e4f6c299b1291df4
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.author: mshenhav
+ms.openlocfilehash: 2d43fe5e0248d3876f70878bbbe8a1c9b6387df7
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44742792"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278906"
 ---
 # <a name="explore-your-data-in-the-power-bi-mobile-app-on-your-apple-watch"></a>Adatok feltárása az Apple Watchra készült Power BI mobilalkalmazásban
 Az Apple Watchra készült Power BI alkalmazással közvetlenül az órájáról tekintheti meg az irányítópultján található KPI-ket és kártyacsempéket. A KPI-k és a kártyacsempék a legalkalmasabbak arra, hogy egy kisméretű kijelzőn szívverés típusú mértékeket jelenítsenek meg. Az irányítópult frissíthető az iPhone-járól vagy akár magáról az óráról is.

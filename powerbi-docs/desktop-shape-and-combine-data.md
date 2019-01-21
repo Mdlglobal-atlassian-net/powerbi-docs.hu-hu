@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e23182b1e607498c5187882740b556455657ba1d
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: f39f5ae569c757072a55647becb5697c881abbe2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670900"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285669"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Oktatóanyag: Adatok formázása és összevonása a Power BI Desktopban
 
@@ -179,7 +179,7 @@ Ekkor megjelenik a **Legelső sorok eltávolítása** ablak, amelyben megadhatja
 
 ![](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
-* Távolítson el néhány felesleges oszlopot. Most csak az államnevek hivatalos kétbetűs rövidítésre való leképzésére van szükségünk, így a következő oszlopokat törölhetjük: **Column1**, **Column3**, **Column4**, majd a **Column6** oszloptól a **Column11** oszlopig az összes oszlopot. Először jelölje ki a **Column1** oszlopot, majd a **CTRL** billentyű lenyomva tartása mellett jelölje ki a többi eltávolítandó oszlopot (így egyszerre több, nem egymás melletti oszlopot is kiválaszthat). A menüszalag Kezdőlap területéről válassza az **Oszlopok eltávolítása \> Oszlopok eltávolítása** lehetőséget.
+* Távolítsunk el néhány felesleges oszlopot. Most csak az államneveknek a hivatalos kétbetűs rövidítésükre való leképezésére van szükségünk, így a következő oszlopokat törölhetjük: **1. oszlop**, **3. oszlop**, **4. oszlop**, majd a **6. oszloptól** a **11. oszlopig** mindet. Először jelölje ki a **Column1** oszlopot, majd a **CTRL** billentyű lenyomva tartása mellett jelölje ki a többi eltávolítandó oszlopot (így egyszerre több, nem egymás melletti oszlopot is kiválaszthat). A menüszalag Kezdőlap területéről válassza az **Oszlopok eltávolítása \> Oszlopok eltávolítása** lehetőséget.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 

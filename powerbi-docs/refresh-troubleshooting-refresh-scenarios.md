@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 73d9d84552d49ca507fe4b6f9ec022bb7fb98866
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 8535787cb66ad2dc897ff3a3e4ecaccddfaa80f0
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670854"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285116"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása
 Itt a Power BI szolgáltatásban az adatok frissítése során fellépő különféle forgatókönyvekkel kapcsolatos információkat talál.
@@ -37,7 +37,7 @@ Várjon körülbelül 10-15 percet, hogy a frissített adatok megjelennek az ir�
 ## <a name="gatewaynotreachable-when-setting-credentials"></a>GatewayNotReachable hibaüzenet a hitelesítő adatok beállításakor
 Az adatforrások hitelesítő adatainak beállításkor előfordulhat, hogy a GatewayNotReachable hibaüzenet jelenik meg. Ennek az oka egy elavult átjáró lehet.  Telepítse a legfrissebb átjárót, és próbálkozzon újra.
 
-## <a name="processing-error-the-following-system-error-occurred-type-mismatch"></a>Feldolgozási hiba: A következő rendszerhiba történt: Típuseltérés
+## <a name="processing-error-the-following-system-error-occurred-type-mismatch"></a>Feldolgozási hiba: A következő rendszerhiba történt: Nem egyező típusok
 Ezt az M szkript hibája okozhatja a Power BI Desktop-fájlban vagy Excel-munkafüzetben.  Az is okozhatja, hogy a Power BI Desktop verziója elavult.
 
 ## <a name="tile-refresh-errors"></a>Csempefrissítési hibák

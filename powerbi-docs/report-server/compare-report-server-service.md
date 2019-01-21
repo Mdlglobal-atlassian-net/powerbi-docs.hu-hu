@@ -7,15 +7,15 @@ ms.author: maggies
 ms.date: 11/16/2018
 ms.topic: overview
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: aca89b1e45c2ce236a4b5a960436077e089a5b01
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 95055f19ed4187124d940e0fe7f70068dffc71c5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900566"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289762"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása
 
@@ -36,7 +36,7 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 | Valós idejű streamelés | Nem | Igen | [Valós idejű streamelés a Power BI-ban](../service-real-time-streaming.md)
 | Irányítópultok | Nem | Igen | [Irányítópultok a Power BI szolgáltatásban](../consumer/end-user-dashboards.md) 
 | Jelentéscsoportok terjesztése alkalmazások használatával | Nem | Igen | [Irányítópultokat és jelentéseket tartalmazó alkalmazások létrehozása és közzététele](../service-create-distribute-apps.md) 
-| Tartalomcsomagok | Nem | Igen | [Céges tartalomcsomagok: bevezetés](../service-organizational-content-pack-introduction.md) 
+| Tartalomcsomagok | Nem | Igen | [Céges tartalomcsomagok: Bevezetés](../service-organizational-content-pack-introduction.md) 
 | Csatlakozás olyan szolgáltatásokhoz, mint a Salesforce | Igen | Igen | [Csatlakozhat a használt szolgáltatásokhoz](../service-connect-to-services.md) a Power BI szolgáltatás tartalomcsomagjaival. A Power BI jelentéskészítő kiszolgálón a hitelesített összekötők használatával csatlakozhat szolgáltatásokhoz. További információt [A Power BI-jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón](data-sources.md) című témakörben talál.
 | Q&A | Nem | Igen | [A Q&A a Power BI szolgáltatásban és a Power BI Desktopban](../consumer/end-user-q-and-a.md) 
 | Gyors elemzések | Nem | Igen | [Adatelemzések automatikus generálása a Power BI-jal](../consumer/end-user-insights.md) 

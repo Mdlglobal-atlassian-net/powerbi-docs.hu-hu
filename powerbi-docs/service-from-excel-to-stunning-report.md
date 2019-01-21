@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/28/2018
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: e3b7a6ca4471fb1a6454f6efb9fba1f89b8ae1da
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: d1e3d6b50b91643dc7c1e658094a5ae7763edc8f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829987"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290393"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Excel-munkafüzettől egy lenyűgöző jelentésig villámgyorsan
 A főnöke azt szeretné, hogy még ma készítsen el egy kombinált jelentést a tavalyi év értékesítési mutatóiról és az előző kampánnyal kapcsolatos benyomásairól. A legutóbbi adatok azonban különböző külső gyártók rendszerein és a saját laptopján lévő fájlokban találhatók. Korábban több óráig is eltartott egy vizualizáció létrehozása és egy jelentés formázása. Kezd nyugtalan lenni?
@@ -48,7 +48,7 @@ A bal oldalon lévő navigációs ablaktáblán válassza az **Adatok lekérése
 
 ![Adatok lekérdezése fájlból](media/service-from-excel-to-stunning-report/pbi_get_files.png)
 
-A Fájlok oldalon válassza a **Helyi fájl** lehetőséget. Keresse meg a számítógépén az Excel-munkafüzetet, majd válassza ki, hogy betöltse a Power BI-ba. Válassza az **Importálás** lehetőséget.
+A Fájlok oldalon válassza a **Helyi fájl** lehetőséget. Keresse meg a számítógépén az Excel-munkafüzetet, majd válassza ki, hogy betöltse a Power BI-ba. Kattintson az **Importálás** gombra.
 
 > **MEGJEGYZÉS**: Hogy követni tudja az oktatóanyag következő részeiben leírtakat, használja a [pénzügyi mintát tartalmazó munkafüzetet](sample-financial-download.md).
 > 
@@ -67,7 +67,7 @@ Most már nekiláthat a vizualizáció létrehozásának. A főnöke szeretné l
 
 ![oszlopdiagram a jelentésszerkesztőben](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
 
-> **TIPP**: Ha a diagramja nem úgy néz ki, mint ahogy gondolta, ellenőrizze az összesítéseit. Például az **Érték** gyűjtőben kattintson a jobb gombbal az imént hozzáadott mezőre, és ellenőrizze, hogy az adatok összesítése úgy történik-e, ahogyan Ön szeretné.  Ebben a példában az **Összeg** lehetőséget használjuk.
+> **Tipp:**: Ha a diagramja nem úgy néz ki, mint ahogy gondolta, ellenőrizze az összesítéseit. Például az **Érték** gyűjtőben kattintson a jobb gombbal az imént hozzáadott mezőre, és ellenőrizze, hogy az adatok összesítése úgy történik-e, ahogyan Ön szeretné.  Ebben a példában az **Összeg** lehetőséget használjuk.
 > 
 > 
 

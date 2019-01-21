@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c94fd3ce58cefdb9e3cc7749b6486ab9bb0577cb
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 2c909f1f7d2c1b500d37de0e4617e10c79977c96
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101462"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284771"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Táblák a Power BI-jelentésekben és -irányítópultokon
 A táblák olyan táblázatok, amelyek sorok és oszlopok logikai sorozataként jelenítik meg a kapcsolódó adatokat. Tartalmazhatnak fejléceket és összesítősorokat is. A táblák jól használhatók mennyiségi összehasonlításokhoz, ahol több, egy kategóriába tartozó érték vizsgálható egyszerre. Ez a tábla például a **Kategória** 5 különböző mértékét jeleníti meg.
@@ -135,7 +135,7 @@ Előfordul, hogy a Power BI csonkolja az oszlopfejléceket a jelentésekben vagy
 ![az oszlop átméretezési műveletét kiemelő videó](media/power-bi-visualization-tables/resizetable.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
-* Oszlopformázás alkalmazásakor oszloponként választhat igazítási beállítást a következők közül: Automatikus, Balra, Középre vagy Jobbra. Az oszlopok általában csak szöveget vagy csak számokat tartalmaznak, nem pedig azok keverékét. Azokban az esetekben viszont, amelyekben egy oszlop számokat és szöveget is tartalmaz, az **Automatikus** beállítás szöveg esetén balra, számok esetén pedig jobbra fog igazítani. Ez a működés azokat a nyelveket támogatja, melyeket balról jobbra kell olvasni.   
+* Oszlopformázás alkalmazásakor oszloponként választhat igazítási beállítást a következők közül: Automatikus, balra, középre vagy jobbra. Az oszlopok általában csak szöveget vagy csak számokat tartalmaznak, nem pedig azok keverékét. Azokban az esetekben viszont, amelyekben egy oszlop számokat és szöveget is tartalmaz, az **Automatikus** beállítás szöveg esetén balra, számok esetén pedig jobbra fog igazítani. Ez a működés azokat a nyelveket támogatja, melyeket balról jobbra kell olvasni.   
 
 ## <a name="next-steps"></a>Következő lépések
 

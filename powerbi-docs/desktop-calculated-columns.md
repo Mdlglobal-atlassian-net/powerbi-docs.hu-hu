@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d875a5cd3ded8769ab3734601bd81cf0f17d7cea
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 74567016fe98d57b68d972084761ab8e50bf7b23
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578267"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284725"
 ---
 # <a name="using-calculated-columns-in-power-bi-desktop"></a>Számított oszlopok használata a Power BI Desktopban
 A számított oszlopokkal új adatokat adhat hozzá a modellben már meglévő táblázathoz. De ahelyett, hogy értékeket kellene lekérdeznie és betöltenie egy adatforrásból az új oszlopba, létrehozhat egy Data Analysis Expressions- (DAX-) képletet, amely meghatározza az oszlop értékeit. A számított oszlopok a Power BI Desktopban az Új oszlop funkcióval hozhatók létre Jelentés nézetben.
@@ -52,7 +52,7 @@ Hozzáadhatja a jelentésvászonhoz a szállítmányok számával együtt. Gyors
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 
 ## <a name="learn-more"></a>További információ
-Itt csak röviden bemutattuk a számított oszlopokat. Ne felejtse el megtekinteni a [Számított oszlopok létrehozása a Power BI Desktopban](desktop-tutorial-create-calculated-columns.md) oktatóanyagot, ahol letölthet egy mintafájlt, és lépésenkénti útmutatókat talál további oszlopok létrehozásáról. 
+Itt csak röviden bemutattuk a számított oszlopokat. Tekintse meg a következő [oktatóanyagot: Számított oszlopok létrehozása a Power BI Desktopban](desktop-tutorial-create-calculated-columns.md) oktatóanyag: letölthet egy mintafájlt, és lépésenkénti útmutatókat talál további oszlopok létrehozásáról. 
 
 További információk a DAX-ról: [A DAX használatának alapjai a Power BI Desktopban](desktop-quickstart-learn-dax-basics.md).
 

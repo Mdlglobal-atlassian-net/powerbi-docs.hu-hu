@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 85f7dd131806cd808c28c23cb70230a0c719e0a1
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 6a44443918fe0bb9c25343c8960aaaadd5a6977e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670201"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285622"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Adatok elérése Excel-munkafüzetfájlokból
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -43,7 +43,7 @@ Ha külső adatforráshoz csatlakozik az Excel használatával, akkor mihelyst b
 A PowerView-lapok és kimutatások megjelenítése vagy elrejtése a Power BI-ban attól függ, hogy hol van a munkafüzet mentve, és hogyan viszi azt át a Power BI-ba. A részleteket az alábbiakban olvashatja.
 
 ## <a name="data-types"></a>Adattípusok
-A Power BI az alábbi adattípusok használatát támogatja: egész szám, tizedes tört, pénznem, dátum, igaz/hamis, szöveg. Ha az adatokat konkrét adattípusokként adja meg az Excelben, azzal javíthatja a Power BI teljesítményét.
+A Power BI az alábbi adattípusokat támogatja: Egész szám, tizedes tört, pénznem, dátum, igaz/hamis, szöveg. Ha az adatokat konkrét adattípusokként adja meg az Excelben, azzal javíthatja a Power BI teljesítményét.
 
 ## <a name="prepare-your-workbook-for-power-bi"></a>Munkafüzet előkészítése a Power BI-ban való használatra
 Az alábbi hasznos videóból megtudhatja, hogyan győződhet meg arról, hogy Excel-munkafüzetei készen állnak a Power BI-ban való használatra.

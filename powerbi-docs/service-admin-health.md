@@ -5,21 +5,21 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 101c49a67cabc41251fc6be5c84a26b54a3de46d
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: afb579c3163fac5da8b3a14f2f2b974d64213098
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973189"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296432"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>A Power BI szolgáltatás állapotának követése az Office 365-ben
 
-Az Office 365 Felügyeleti központban fontos eszközök állnak a Power BI-rendszergazdák rendelkezésére, köztük a szolgáltatás állapotának jelenlegi és előzményadatai is. Az információkat a Power BI szolgáltatás rendszergazdái és az Office 365 globális rendszergazdái kérdezhetik le. További információk a szerepkörökről: [A Power BI-jal kapcsolatos rendszergazdai szerepkörök](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
+Az Office 365 Felügyeleti központban fontos eszközök állnak a Power BI-rendszergazdák rendelkezésére, köztük a szolgáltatás állapotának jelenlegi és előzményadatai is. Ezen adatok eléréséhez a következő szerepkörök egyikével kell rendelkeznie: Power BI szolgáltatásadminisztrátor vagy Office 365 globális rendszergazda. További információk a szerepkörökről: [A Power BI-jal kapcsolatos rendszergazdai szerepkörök](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
 1. Jelentkezzen be az [Office 365 Felügyeleti központba](https://portal.office.com/adminportal).
 

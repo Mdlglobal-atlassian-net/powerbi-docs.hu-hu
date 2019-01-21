@@ -5,17 +5,17 @@ author: davidi
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 2093800f10484a24eb4db9f77f45468ae4b9b4c3
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 02202e8b5e89aa8d312a96d448c825f2ca44447a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829834"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290498"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tippek és trükkök jelentések létrehozásához a Power BI Desktopban és a Power BI szolgáltatásban
 Ahhoz, hogy a legtöbbet hozza ki az adataiból, néha szüksége van egy kis extra segítségre. Összegyűjtöttünk néhány tippet és trükköt, amelyek segítségére lehetnek, amikor jelentéseket hoz létre a Microsoft Power BI Desktopban, a Power BI szolgáltatásban *és* a Microsoft Excel 2016 vagy Excel 2013 Pro-Plus kiadásokban, amelyekben engedélyezve van a Power Pivot bővítmény, illetve telepítve és engedélyezve van a Power Query.
@@ -30,7 +30,7 @@ További információt a [Power Query forrásanyagközpontban](https://support.o
 A [Képletreferenciát](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f) is megtekintheti.
 
 ### <a name="data-types-in-query-editor"></a>Adattípusok a Lekérdezésszerkesztőben
-Amikor a Power BI Desktopban a Lekérdezésszerkesztőt használja az adatok betöltéséhez, feltételezésen alapuló adattípus-felismerést végzünk.  A képletek használatakor a rendszer néha nem őrzi meg az oszlopok adattípus-beállításait. A következő műveletek elvégzése után ellenőrizze, hogy megfelelő-e az oszlopok adattípusa: Adatok betöltése elsőként a lekérdezés lapra, Első sor fejléccé alakítása, Oszlop hozzáadása, Csoportosítás, Egyesítés, Hozzáfűzés, és mielőtt először jóváhagyná az adatok betöltését.
+Amikor a Power BI Desktopban a Lekérdezésszerkesztőt használja az adatok betöltéséhez, feltételezésen alapuló adattípus-felismerést végzünk.  A képletek használatakor a rendszer néha nem őrzi meg az oszlopok adattípus-beállításait. Az alábbi műveletek végrehajtása után ajánlott ellenőrizni, hogy megfelelő-e az oszlopok adattípusa:  Adatok betöltése elsőként a lekérdezés lapra, Első sor fejléccé alakítása, Oszlop hozzáadása, Csoportosítás, Egyesítés, Hozzáfűzés, és mielőtt először jóváhagyná az adatok betöltését.
 
 Fontos megjegyezni: az adattáblázatban a dőlt betűk nem azt jelentik, hogy az adattípus megfelelően van beállítva, hanem azt, hogy az adatot nem szövegként értelmezi a rendszer.
 
@@ -167,7 +167,7 @@ A DAX a Power BI Desktop számításokhoz használt képletnyelve.  Ez a nyelv B
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Power BI szolgáltatás *és* Power BI Desktop
 
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Olvassa el [a Power BI-jelentések kialakításának alapelveit](visuals/power-bi-visualization-best-practices.md) ismertető tanulmányt
+### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>A tanulmány elolvasása: [A Power BI-jelentések kialakításának alapelvei](visuals/power-bi-visualization-best-practices.md)
 Ez a tanulmány a Power BI szolgáltatásban történő jelentéstervezés bevált gyakorlatait mutatja be. Az előkészületektől kezdve tárgyalja a jelentésekre és a jelentéseket felépítő oldalakra és egyéni vizualizációkra vonatkozó tervezési alapelveket. Az ajánlott eljárások nagy része az irányítópultok tervezésére is érvényes.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Olvassa el és/vagy nézze meg, hogyan tervezhet lenyűgöző megjelenésű jelentéseket (és irányítópultokat) a Power BI-ban

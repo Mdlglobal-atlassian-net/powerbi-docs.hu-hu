@@ -6,22 +6,22 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: f52231d5df04367a1fe58e8575cd364899ff8eae
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 67a090b64a8243ed2a77d66ae633f8a64e494c89
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396727"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289072"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Oldal megjelenítési beállításai Power BI-jelentésben
 Tudjuk, milyen fontos, hogy a jelentéseinek elrendezése az utolsó pixelig tökéletes legyen. Néha azonban ez kihívást jelenthet, ugyanis Ön és a munkatársai a jelentéseket különböző méretű és méretarányú képernyőkön nézik. 
 
-Az alapértelmezett megjelenítési nézet a **Laphoz igazítás**, az alapértelmezett méretarány pedig a **16:9**-es. Ha a jelentést egy másik méretarányban szeretné zárolni, vagy máshogyan szeretné igazítani, akkor ehhez két eszköz áll rendelkezésére: az ***Oldal nézet*** beállításai és az ***Oldalméret***-beállítások.
+Az alapértelmezett megjelenítési nézet a **Laphoz igazítás**, az alapértelmezett méretarány pedig a **16:9**-es. Ha a jelentést egy másik méretarányban szeretné zárolni, vagy máshogyan szeretné igazítani, akkor ehhez két eszköz áll rendelkezésére: Az ***Oldal nézet*** beállításai és az ***Oldalméret***-beállítások.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
 

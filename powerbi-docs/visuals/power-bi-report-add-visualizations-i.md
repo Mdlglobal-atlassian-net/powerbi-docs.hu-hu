@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f2edbd7b0b977b378d25634a0f9505101350d73b
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 52c0211aea0462e0bf79d7a48808f1f826c09fb6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829803"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296087"
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report"></a>1. rész – Vizualizációk hozzáadása Power BI-jelentésekhez
 A cikk röviden bemutatja a vizualizációk jelentésekben történő létrehozását mind a Power BI szolgáltatás, mind pedig a Power BI Desktop használatával.  Részletesebb útmutatásért [lásd a II. részt](power-bi-report-add-visualizations-ii.md). Amanda bemutatja, hogyan lehet különbözőképpen létrehozni, szerkeszteni és formázni a vizualizációkat a jelentésvásznon. Ezután Ön is megpróbálhatja létrehozni a saját jelentését a [Értékesítési és marketing minta](../sample-datasets.md) segítségével.
@@ -38,7 +38,7 @@ A cikk röviden bemutatja a vizualizációk jelentésekben történő létrehoz�
    
    ![](media/power-bi-report-add-visualizations-i/pbi_onecolchart.png)
    
-   **Ha egy kategóriamezővel kezdi**, mint a Név vagy a Termék, A Power BI egy táblát hoz létre, és hozzáadja az adott mezőt az **Értékek** területhez.
+   **Vagy kezdje egy kategóriamezővel**, mint a Név vagy a Termék: A Power BI egy táblát hoz létre, és hozzáadja az adott mezőt az **Értékek** területhez.
    
    ![](media/power-bi-report-add-visualizations-i/pbi_agif_createchart3.gif)
    
@@ -57,7 +57,7 @@ A cikk röviden bemutatja a vizualizációk jelentésekben történő létrehoz�
   
 
 ## <a name="next-steps"></a>Következő lépések
- Továbbléphet a következőre: [2. rész: Vizualizációk hozzáadása Power BI-jelentésekhez](power-bi-report-add-visualizations-ii.md).
+ Tovább a [2. részre: Vizualizációk hozzáadása Power BI-jelentésekhez](power-bi-report-add-visualizations-ii.md)
    
    [Használhatja a vizualizációkat](../consumer/end-user-reading-view.md) a jelentésben.
    

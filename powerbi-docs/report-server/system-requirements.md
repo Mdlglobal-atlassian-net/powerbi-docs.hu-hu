@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maghan
-ms.openlocfilehash: c8904f3025a0a60557b1d3efb54ea6bc18c20da4
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 763b79b50266678a78dc956372f504f30836c4fc
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507906"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292960"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló telepítésének hardver- és szoftverkövetelményei
 Ez a cikk a Power BI jelentéskészítő kiszolgáló telepítésének és futtatásának minimális hardver- és szoftverkövetelményeit ismerteti.
@@ -25,8 +25,8 @@ Ez a cikk a Power BI jelentéskészítő kiszolgáló telepítésének és futta
 | --- | --- |
 | NET-keretrendszer |4.6<br><br>A .NET-keretrendszert [A Windowshoz készült Microsoft .NET-keretrendszert 4.6-os verziója (webes telepítő)](http://support.microsoft.com/kb/3045560) című cikkből telepítheti manuálisan.<br/><br/> A .NET-keretrendszerrel kapcsolatos további információkért, ajánlásokért és útmutatókért tekintse meg [A .NET-keretrendszer 4.6-os verziójának üzembe helyezési útmutatója fejlesztőknek](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx) című cikket.<br/><br/>Windows 8.1 és Windows Server 2012 R2 rendszereken telepítenie kell a [KB2919355](http://support.microsoft.com/kb/2919355) frissítést a .NET-keretrendszer 4.6-os verziójának telepítése előtt. |
 | Merevlemez |A Power BI jelentéskészítő kiszolgáló működéséhez legalább 1 GB szabad lemezterület szükséges.<br><br>További lemezterület szükséges a jelentéskészítő kiszolgáló adatbázisát üzemeltető adatbázis-kiszolgálón. |
-| Memória |**Minimum:** 1 GB<br/><br/> **Ajánlott:** legalább 4 GB |
-| Processzor sebessége |**Minimum:** x64 processzor: 1,4 GHz<br/><br/> **Ajánlott:** 2,0 GHz vagy gyorsabb |
+| Memória |**Minimális:** 1 GB<br/><br/> **Ajánlott:** Legalább 4 GB |
+| Processzor sebessége |**Minimum:** 64 bites processzor: 1,4 GHz<br/><br/> **Ajánlott:** 2,0 GHz vagy gyorsabb |
 | Processzor típusa |64 bites processzor: AMD Opteron, AMD Athlon 64, Intel Xeon Intel EM64T-támogatással, Intel Pentium IV EM64T-támogatással |
 | Operációs rendszer |Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
 

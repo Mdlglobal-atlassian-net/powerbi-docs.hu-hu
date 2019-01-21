@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8636ec85cb56e87f28a93f9f1f89989ffcc097bb
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: d2eeab8241de06f9a4d0e654696173d076e01ad2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973143"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292361"
 ---
 # <a name="power-bi-archived-workspace"></a>A Power BI archivált munkaterülete
 
@@ -27,21 +27,21 @@ Azok a tartalmak, amelyeket még azelőtt hozott létre, hogy az IT-részleg meg
 
 A Power BI nem töröl tartalmat az archivált munkaterületről. Továbbra is letölthet adatokat, létrehozhat jelentéseket és irányítópultokat, és frissítheti az adatkészleteket. Azok a meglévő felhasználók, akikkel már megosztott tartalmat, továbbra is megtekinthetik azt a saját archivált munkaterületükön. Azonban az archivált munkaterületen található tartalomra néhány korlátozás is vonatkozik:
 
-* **OneDrive vállalati verzió**: Az archivált munkaterületen található adathalmazok esetében többé nem fog tudni adatokat letölteni vagy frissíteni a OneDrive Vállalati verzióból.  Ha ehhez a forráshoz próbál csatlakozni, figyelmeztetés fog kapni.
+* **OneDrive Vállalati verzió**: Az archivált munkaterületen található adathalmazok esetében többé nem fog tudni adatokat letölteni vagy frissíteni a OneDrive Vállalati verzióból.  Ha ehhez a forráshoz próbál csatlakozni, figyelmeztetés fog kapni.
 
 * **Irányítópultok megosztása**: Az archivált munkaterületről nem oszthat meg irányítópultokat más felhasználókkal.  Azok a felhasználók, akik már rendelkeznek hozzáféréssel, továbbra is megtekinthetik a megosztott irányítópultokat az archivált munkaterületük elérésével.
 
 * **Csoportok létrehozása**: Az archivált munkaterületen nem hozhat létre csoportokat.
 
-* **Hozzáférés Power BI-mobilalkalmazásokban**: Bár továbbra is megtekintheti a webes tartalmat az archivált munkaterületen, ez a tartalom többé nem fog megjelenni a Power BI-mobilalkalmazásokban.
+* **Hozzáférés a Power BI-mobilalkalmazásokban**: Bár továbbra is megtekintheti a webes tartalmat az archivált munkaterületen, ez a tartalom többé nem fog megjelenni a Power BI-mobilalkalmazásokban.
 
 ## <a name="migrating-content-in-your-archived-workspace"></a>Tartalom migrálása az archivált munkaterületen
 
 A Power BI használatának folytatásához hozzon létre új tartalmat a Saját munkaterületen. Meg kell terveznie az archivált munkaterületen lévő tartalom Saját munkaterületre való migrálását is.  A tartalom migrálásának módja a tartalom típusától függ:
 
-* **Excel- vagy Power BI Desktop-adathalmazok**: Ezeknek az adathalmazoknak a migrálásához váltson az archivált munkaterületről a Saját munkaterületre, és töltse fel újra az Excel- vagy Power BI Desktop-fájlt az **Adatok** gombbal.  Ha állított be ütemezett frissítést, ezt a beállítást újra meg kell adnia a Saját munkaterületen található új adathalmazhoz.
+* **Excel- vagy Power BI Desktop-adatkészletek**: Ezeknek az adatkészleteknek a migrálásához váltson az archivált munkaterületről a Saját munkaterületre, és töltse fel újra az Excel- vagy Power BI Desktop-fájlt a **My Data** (Adataim) gombbal.  Ha állított be ütemezett frissítést, ezt a beállítást újra meg kell adnia a Saját munkaterületen található új adathalmazhoz.
 
-* **Egyéb adathalmazok**: Váltson a Saját munkaterületre, és válassza az **Adatok lekérése** gombot az archivált munkaterületen létrehozott egyéb adathalmazokhoz való újrakapcsolódáshoz.  Lehet, hogy újra meg kell adnia a biztonsági vagy kapcsolódási adatokat.
+* **Egyéb adatkészletek**: Váltson a Saját munkaterületre, és kattintson az **Adatok lekérése** gombra az archivált munkaterületen létrehozott egyéb adatkészletekhez való újrakapcsolódáshoz.  Lehet, hogy újra meg kell adnia a biztonsági vagy kapcsolódási adatokat.
 
 * **Jelentések**: Az Excel- vagy Power BI Desktop-fájlokban tárolt jelentéseket a rendszer automatikusan újra létrehozza, amint újra feltölti a hozzájuk tartozó Excel- vagy Power BI Desktop-fájlokat. A tartalomcsomag részeként telepített jelentéseket a rendszer szintén újra létrehozza, amint újból csatlakoztatja a tartalomcsomagot. Ha a Power BI szolgáltatásban hozta létre a jelentéseit, akkor ezeket újra létre kell hoznia a Saját munkaterületen.
 

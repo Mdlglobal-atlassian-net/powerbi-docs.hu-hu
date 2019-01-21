@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: E1mIAyEXuF4
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 02663648002f7924725791e378e10532fadc1128
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 7e57233dac635cadf8f1dc31b4956b4f8e503083
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51716941"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284012"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Kiemelt kérdések létrehozása a Power BI Q&A-hez
 Ha rendelkezik saját adatkészlettel, ehhez az adatkészlethez hozzáadhatja a kiemelt kérdéseit.  A Power BI Q&A pedig megjeleníti ezeket a kérdéseket az adatkészletet használó (más néven *fogyasztó*) munkatársaknak.  A kiemelt kérdések ötleteket adnak a munkatársaknak, hogy milyen típusú kérdéseket lehet feltenni az adatkészletről. Ön dönti el, milyen kérdéseket vesz fel. Vegyen fel népszerű kérdéseket, érdekes eredményeket megjelenítő kérdéseket vagy esetleg nehezen megfogalmazható kérdéseket.
