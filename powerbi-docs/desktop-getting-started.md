@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5f202597fa641bf68b8e49c461ed5c25ea987c3e
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 019ee7985c27c72ca41a09c8d13754316fd60232
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670927"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291648"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Első lépések a Power BI Desktopban
 Üdvözöljük a **Power BI Desktop Első lépések útmutatójában**. Ebben a rövid bemutatóban megismerkedhet a Power BI Desktop használatával, képességeivel, és megtudhatja, hogyan állíthat össze gyorsan nagy teljesítményű adatmodelleket és lenyűgöző jelentéseket, amelyek megalapozottabb üzleti döntéseket eredményeznek. 
@@ -69,7 +69,7 @@ Az *Üdvözlőképernyőn* lehetősége van **Adatok lekérésére**, megtekinth
 
 ![](media/desktop-getting-started/designer_gsg_blankreport.png)
 
-A Power BI Desktopban három nézet érhető el: **Jelentés** nézet, **Adatok** nézet és **Kapcsolatok** nézet. A Power BI Desktop része a **Lekérdezésszerkesztő** is, amely külön ablakban nyílik meg. A **Lekérdezésszerkesztőben** lekérdezéseket állíthat össze és adatokat alakíthat át, majd betöltheti a finomított adatmodellt a Power BI Desktopba, és jelentéseket hozhat létre.
+A Power BI Desktopnak három nézete van: **Jelentés** nézet, **Adat** nézet és **Kapcsolatok** nézet. A Power BI Desktop része a **Lekérdezésszerkesztő** is, amely külön ablakban nyílik meg. A **Lekérdezésszerkesztőben** lekérdezéseket állíthat össze és adatokat alakíthat át, majd betöltheti a finomított adatmodellt a Power BI Desktopba, és jelentéseket hozhat létre.
 
 Az alábbi képernyőn a három nézet ikonja látható a Power BI Desktop bal oldalán: **Jelentés**, **Adatok** és **Kapcsolatok**, felülről lefelé. Az épp megjelenített nézetet sárga sáv jelöli a bal oldalon. Ebben az esetben a **Jelentés** nézet látható. A nézetek között az ikonok kiválasztásával válthat.
 
