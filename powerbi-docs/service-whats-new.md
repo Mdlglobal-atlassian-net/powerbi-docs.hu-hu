@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 32a052ca009c613b262d5277a0fd85b186c8e148
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
+ms.openlocfilehash: acfc4062677a28824458781b900b271bedd51eb8
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406753"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488914"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
@@ -197,7 +197,7 @@ A részletekről a [Power BI-csapat blogján](https://powerbi.microsoft.com/blog
 ***Sorszintű biztonság (RLS)***
 
 * Azure Active Directory (AAD) csoporttámogatás: A felhasználók mostantól AAD-csoportokat (biztonsági csoportokat és terjesztési listákat) rendelhetnek a szerepkörökhöz. Így könnyebb egyszerre sok felhasználóhoz szerepkört rendelni.
-* [RLS-szerepkörök tesztelése helyben az adatokat tartalmazó jelentésekkel](service-admin-rls.md#validating-the-role-within-power-bi-desktop): Az RLS előzetes verzióját egy olyan funkcióval bővítettük, amellyel egy adott szerepkörként tesztelheti az adatkészletet. Így meggyőződhet arról, hogy a szerepkör a vártnak megfelelően működik, mielőtt a felhasználók használatba vennék az irányítópultot.
+* [RLS-szerepkörök tesztelése helyben az adatokat tartalmazó jelentésekkel](service-admin-rls.md#validate-the-roles-within-power-bi-desktop): Az RLS előzetes verzióját egy olyan funkcióval bővítettük, amellyel egy adott szerepkörként tesztelheti az adatkészletet. Így meggyőződhet arról, hogy a szerepkör a vártnak megfelelően működik, mielőtt a felhasználók használatba vennék az irányítópultot.
 * RLS definiálása és alkalmazása a felhőmodellekre közvetlen lekérdezések alapján: Mostantól közvetlen lekérdezések adatforrásaihoz is létrehozhat és alkalmazhat RLS-szabályokat.
 
 ***Irányítópultok***
