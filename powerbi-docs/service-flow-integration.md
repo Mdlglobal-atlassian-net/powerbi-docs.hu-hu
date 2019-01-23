@@ -1,7 +1,7 @@
 ---
 title: A Power BI és a Microsoft Flow integrálása
 description: Tanulja meg, hogyan hozhat létre Power BI- adatriasztások által indított folyamatokat.
-author: mihart
+author: mgblythe
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: YhmNstC39Mw
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/01/2018
-ms.author: mihart
+ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 2d73710b9fc41a8cb6a3d8287dc939323d71f7dd
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f39912f5813f67ed65afde10a0e157385e98b7b7
+ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289808"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54406615"
 ---
 # <a name="microsoft-flow-and-power-bi"></a>A Microsoft Flow és a Power BI
 
@@ -111,6 +111,6 @@ Ennek a feladatnak a végrehajtása során sablon nélkül hozunk létre egy egy
 * [Microsoft Flow ‒ első lépések](https://flow.microsoft.com/en-us/documentation/getting-started/)
 * [Adatriasztások beállítása a Power BI szolgáltatásban](service-set-data-alerts.md)
 * [Adatriasztások beállítása az iPhone-on](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* [Adatriasztások beállítása a Windows 10-hez készült Power BI mobilalkalmazásban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Adatriasztások beállítása a Windows 10-hez készült Power BI-mobilalkalmazásban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

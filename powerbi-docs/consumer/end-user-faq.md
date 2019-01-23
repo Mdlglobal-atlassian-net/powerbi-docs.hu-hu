@@ -1,6 +1,6 @@
 ---
-title: Gyakori kérdések gyűjteménye a Power BI-felhasználók számára
-description: Power BI – gyakori kérdések
+title: Végfelhasználók által feltett gyakori kérdések – Power BI
+description: Az alábbiakban a Power BI szolgáltatással és a Power BI mobilalkalmazásaival kapcsolatos gyakori kérdések és válaszok listáját tekintheti át.
 author: mihart
 manager: kvivek
 ms.custom: seodec18
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b292e6df7cb01e26b610ffb99ec5b794df933bfa
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8eb428857e98a696ffb368c729525acd80e268f2
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287575"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394779"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Gyakori kérdések – Power BI
 * Ha bármilyen egyéb kérdése van, [kérdezze a Power BI-közösséget](http://community.powerbi.com/).
@@ -41,7 +41,7 @@ A Power BI Premium verzióval kapcsolatos kérdésekért lásd: [Power BI Premiu
 Az Azure Active Directory Power BI-hoz készült, integrált alkalmazásokat tartalmazó jelentésében megtekintheti az adott vállalat aktív felhasználóit. Az Azure AD-jelentés nem jelzi, hogy az egyes felhasználók milyen licenccel rendelkeznek. Csak az tekinthető meg, hogy mely felhasználók regisztráltak a Power BI-ba, és mikor jelentkeztek be. További információért tekintse át a [Bejelentkezett Power BI-felhasználók keresése](../service-admin-access-usage.md) témát.
 
 ## <a name="what-is-power-bi-desktop"></a>Mi az a Power BI Desktop?
-A Power BI Desktop egy ingyenes asztali alkalmazás, amelyet közvetlenül a saját számítógépre telepíthet. A Power BI Desktop szorosan együttműködik a Power BI szolgáltatással, és speciális adatfeltárást, -átalakítást, -modellezést, valamint kifejezetten interaktív vizualizációkat használó jelentéskészítést biztosít. A felhasználó a munkáját egy fájlba mentheti, majd az adatokat és a jelentéseket közvetlenül a Power BI webhelyén teheti közzé és oszthatja meg másokkal. További olvasnivaló arról, hogy [Mi az a Power BI Desktop](../desktop-what-is-desktop.md).
+A Power BI Desktop egy ingyenes alkalmazás, amelyet a felhasználók közvetlenül a saját számítógépükre telepíthetnek. A Power BI Desktop szorosan együttműködik a Power BI szolgáltatással.  A Power BI Desktoppal dolgozó adatszakértők, rendszergazdák és fejlesztők jelentéseket állítanak elő és tesznek elérhetővé a Power BI szolgáltatás Önhöz hasonló felhasználói számára. További olvasnivaló arról, hogy [Mi az a Power BI Desktop](../desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-power-bi-service"></a>Mire van szükségem a Power BI szolgáltatás használatához?
 Csak egy webböngészőre és egy munkahelyi e-mail-címre. A feliratkozáshoz .gov és .mil e-mail-címeket használhat. További információért lásd: [USA-beli kormányzati szerv regisztrálása a Power BI szolgáltatásban](../service-govus-signup.md) 
@@ -49,14 +49,8 @@ Csak egy webböngészőre és egy munkahelyi e-mail-címre. A feliratkozáshoz .
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Miért a munkahelyi e-mail-címemmel kell regisztrálni?
 A Power BI nem támogatja a fogyasztói e-mail-szolgáltatók vagy távközlési szolgáltatók által biztosított e-mail-címeket. További információ: [A Power BI önkiszolgáló regisztrációs folyamata](../service-self-service-signup-for-power-bi.md).
 
-## <a name="is-power-bi-available-on-premises"></a>Elérhető a Power BI helyszíni szolgáltatásként?
-A Power BI [https://powerbi.com](https://powerbi.com) jelenleg nem érhető el privát, belső felhőszolgáltatásként. Azonban létezik három egyéb lehetőség az adatok helyszíni megtekintésére és használatára. 
-
-### <a name="on-premises-data-gateway"></a>Helyszíni adatátjáró
-A Power BI és a Power BI Desktop használatával a felhasználók biztonságosan kapcsolódhatnak helyszíni adatforrásokhoz. A [helyszíni adatátjárók](../service-gateway-onprem.md) használatával élőben lehet kapcsolódni helyszíni SQL Server Analysis Services-kiszolgálókhoz és más adatforrásokhoz. Továbbá ütemezett frissítést is beállíthat a központi átjáróval. Ha az átjáró nem érhető el, az adatokat a helyszíni adatforrásokból frissítheti a [Power BI Gateway - Personal](../service-gateway-personal-mode.md) használatával.
-
-### <a name="power-bi-mobile-apps"></a>Power BI – mobilalkalmazások
-[A helyszíni Power BI-jelentéseket, a Reporting Services mobiljelentéseit és a KPI-ket a Power BI-mobilalkalmazásokban](mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md) is meg lehet tekinteni.
+## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Létezik külön Power BI-díjszabás kormányzati, felsőoktatási és nonprofit intézményeknek?
+Igen. Létezik nonprofit díjszabás, ha a szolgáltatást közvetlenül a Microsofttól vásárolja meg. További információ és a regisztráció a [Microsoft Nonprofit](https://www.microsoft.com/en-us/nonprofits/power-bi) webhelyen található. A kormányzati és a felsőoktatási intézményeknek szóló díjszabás a Microsoft Online Előfizetési Program, a közvetlen licencelés, a nagyvállalati szerződések vagy az Open-licencprogram keretében érhető el. A kormányzati szerveknek szóló díjszabás szindikálás formájában is rendelkezésre áll. 
 
 ## <a name="does-power-bi-support-mobile-devices"></a>A Power BI támogatja a mobileszközöket?
 Igen. A Power BI natív alkalmazásokat biztosít Android rendszerű mobiltelefonokon, táblagépeken, iOS-eszközökön és Windows 10-es eszközökön. Az adott [Power BI-mobilalkalmazást](https://powerbi.microsoft.com/mobile) a megfelelő áruházból töltheti le:  
@@ -97,7 +91,12 @@ A Power BI Pro licenceit közvetlenül vásárolhatja meg, vagy cseveghet egy k�
 
 Megkereshet egy [Microsoft-partnert](https://partner.microsoft.com/) is a Power BI implementációjának támogatásával kapcsolatban.
 
-## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Teljesíti a Power BI az országos, a regionális és az iparág-specifikus megfelelőségi követelményeket?
+## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Mi történik, ha a Power BI Pro-licenc lejár?
+A Power BI Pro-licenc lejárata után egy türelmi időszak biztosított. A mennyiségi licenc részeként megvásárolt licencekre a türelmi időszak 90 nap. Közvetlenül vásárolt licencre a türelmi időszak 30 nap.
+
+A Power BI Pro előfizetési életciklusa megegyezik az Office 365-ével. További információkért lásd: [Mi történik az adatokkal és a hozzáféréssel, amikor az Office 365 vállalati verzióra szóló előfizetés befejeződik?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
+
+## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Eleget tesz a Power BI az országos, regionális, illetve iparágra jellemző megfelelőségi követelményeknek?
 További információ a Power BI megfelelőségéről a [Microsoft Adatvédelmi központban](http://go.microsoft.com/fwlink/?LinkId=785324) található.
 
 ## <a name="where-can-i-learn-more-about-security"></a>Hol tájékozódhatok a biztonságról?

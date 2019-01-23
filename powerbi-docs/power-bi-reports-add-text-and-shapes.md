@@ -1,24 +1,24 @@
 ---
 title: Szövegdobozok és alakzatok a Power BI-jelentésekben
 description: Dokumentáció szövegdobozok és alakzatok Microsoft Power BI szolgáltatással történő hozzáadásáról és létrehozásáról a jelentésekben.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: _3q6VEBhGew
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/22/2018
-ms.author: mihart
+ms.date: 01/16/2019
+ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 937e15f5cd56f7c720afa945598f9fc1641468f7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: cf5cecc8df5c1e6c3057cab6eb41e40e934b1510
+ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295535"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54406546"
 ---
-# <a name="static-content-in-power-bi-reports"></a>Statikus tartalom a Power BI-jelentésekben
+# <a name="text-boxes-and-shapes-power-bi-reports"></a>Szövegdobozok és alakzatok Power BI-jelentésekben
 Szövegmezőket és alakzatokat a Power BI szolgáltatásban és a Power BI Desktopban is hozzá lehet adni a jelentésekhez. Mindkét esetben a jelentésre vonatkozó szerkesztési jogosultsággal kell rendelkeznie. Ha a jelentést megosztották Önnel a Power BI szolgáltatásban, akkor nem rendelkezik hozzá szerkesztési jogosultsággal. 
 
 Figyelje meg, hogyan használja Will a Power BI Desktopot, hogy [statikus képeket adjon hozzá egy jelentéshez](guided-learning/visualizations.yml?tutorial-step=11), majd az alábbi lépéseket használva próbálja meg ugyanezt elvégezni a Power BI szolgáltatás használatával.
