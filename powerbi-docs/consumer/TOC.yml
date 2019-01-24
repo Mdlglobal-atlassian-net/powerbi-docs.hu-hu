@@ -1,195 +1,186 @@
-items:
 - name: A Power BI felhasználók számára
   href: power-bi-consumer-landing.md
 - name: Power BI-szolgáltatások a felhasználók számára
   items:
-  - name: Áttekintés
-    items:
-    - name: Ki tekinthető Power BI-felhasználónak?
-      href: end-user-consumer.md
-    - name: Alapfogalmak és szakkifejezések Power BI-felhasználók számára
-      href: end-user-basic-concepts.md
-  - name: Rövid útmutatók
-    items:
-    - name: Navigáció a Power BI szolgáltatásban
-      href: end-user-experience.md
-    - name: Mire használható a Power BI-t?
-      href: end-user-reading-view.md
-  - name: Oktatóanyagok
-    items:
-    - name: Irányítópult-értesítés létrehozása
-      href: end-user-alerts.md
-  - name: Útmutató
-    items:
-    - name: Irányítópultok
+    - name: Áttekintés
       items:
-      - name: Irányítópultok
-        href: end-user-dashboards.md
-      - name: Irányítópult megtekintése
-        href: end-user-dashboard-open.md
-      - name: Kiemelt irányítópultok
-        href: end-user-featured.md
-      - name: Irányítópult-csempék
-        href: end-user-tiles.md
-      - name: Megjegyzés hozzáadása vagy beszélgetés indítása
-        href: end-user-comment.md
-    - name: Jelentések
+        - name: Ki tekinthető Power BI-felhasználónak?
+          href: end-user-consumer.md
+        - name: Alapfogalmak és szakkifejezések Power BI-felhasználók számára
+          href: end-user-basic-concepts.md
+    - name: Rövid útmutatók
       items:
-      - name: Jelentések
-        href: end-user-reports.md
-      - name: Jelentés megtekintése
-        href: end-user-report-open.md
-      - name: Szűrők használata a jelentésekben
-        href: end-user-report-filter.md
-      - name: A jelentésvizualizációk keresztszűrési viselkedésének megismerése
-        href: end-user-interactions.md
-    - name: Vizualizációk
+        - name: Navigáció a Power BI szolgáltatásban
+          href: end-user-experience.md
+        - name: Mire használható a Power BI-t?
+          href: end-user-reading-view.md
+    - name: Oktatóanyagok
       items:
-      - name: Mire használhatom a vizualizációkat?
-        href: end-user-visualizations.md
-      - name: A vizualizáció létrehozásához használt adatok megjelenítése
-        href: end-user-show-data.md
-      - name: Lehatolás a vizualizációk mélyebb szintjeire a Power BI-ban
-        href: end-user-drill.md
-      - name: Az ArcGIS-térképek használata
-        href: ../power-bi-visualizations-arcgis.md
-    - name: Gyakori feladatok
+        - name: Irányítópult-értesítés létrehozása
+          href: end-user-alerts.md
+    - name: Útmutató
       items:
-      - name: A tartalom nagyításának különböző módjai a Fókusz és a Teljes képernyős mód használatával
-        href: end-user-focus.md
-      - name: Kedvenc irányítópultok, jelentések és alkalmazások a Power BI-ban
-        href: end-user-favorite.md
-      - name: Irányítópult nyomtatása, irányítópult-csempe nyomtatása, jelentési oldal nyomtatása
-        href: end-user-print.md
-      - name: Kapcsolódó tartalom megtekintése
-        href: end-user-related.md
-      - name: Legutóbbi tartalom megtekintése
-        href: end-user-recent.md
-      - name: Tartalmak megtekintése a Velem megosztva nevű tárolóban
-        href: end-user-shared-with-me.md
-      - name: Feliratkozás jelentésre vagy irányítópultra
-        href: end-user-subscribe.md
-      - name: Tartalmak keresése és rendezése a Power BI-ban
-        href: end-user-search-sort.md
-      - name: Az irányítópult csempéihez tartozó automatikus elemzések megtekintése
-        href: end-user-insights.md
-    - name: Adatok lekérése
+        - name: Irányítópultok
+          items:
+            - name: Irányítópultok
+              href: end-user-dashboards.md
+            - name: Irányítópult megtekintése
+              href: end-user-dashboard-open.md
+            - name: Kiemelt irányítópultok
+              href: end-user-featured.md
+            - name: Irányítópult-csempék
+              href: end-user-tiles.md
+            - name: Megjegyzés hozzáadása vagy beszélgetés indítása
+              href: end-user-comment.md
+        - name: Jelentések
+          items:
+            - name: Jelentések
+              href: end-user-reports.md
+            - name: Jelentés megtekintése
+              href: end-user-report-open.md
+            - name: Szűrők használata a jelentésekben
+              href: end-user-report-filter.md
+            - name: A jelentésvizualizációk keresztszűrési viselkedésének megismerése
+              href: end-user-interactions.md
+        - name: Vizualizációk
+          items:
+            - name: Mire használhatom a vizualizációkat?
+              href: end-user-visualizations.md
+            - name: A vizualizáció létrehozásához használt adatok megjelenítése
+              href: end-user-show-data.md
+            - name: Lehatolás a vizualizációk mélyebb szintjeire a Power BI-ban
+              href: end-user-drill.md
+            - name: Az ArcGIS-térképek használata
+              href: ../power-bi-visualizations-arcgis.md
+        - name: Gyakori feladatok
+          items:
+            - name: A tartalom nagyításának különböző módjai a Fókusz és a Teljes képernyős mód használatával
+              href: end-user-focus.md
+            - name: 'Kedvenc irányítópultok, jelentések és alkalmazások a Power BI-ban'
+              href: end-user-favorite.md
+            - name: 'Irányítópult nyomtatása, irányítópult-csempe nyomtatása, jelentési oldal nyomtatása'
+              href: end-user-print.md
+            - name: Kapcsolódó tartalom megtekintése
+              href: end-user-related.md
+            - name: Legutóbbi tartalom megtekintése
+              href: end-user-recent.md
+            - name: Tartalmak megtekintése a Velem megosztva nevű tárolóban
+              href: end-user-shared-with-me.md
+            - name: Feliratkozás jelentésre vagy irányítópultra
+              href: end-user-subscribe.md
+            - name: Tartalmak keresése és rendezése a Power BI-ban
+              href: end-user-search-sort.md
+            - name: Az irányítópult csempéihez tartozó automatikus elemzések megtekintése
+              href: end-user-insights.md
+        - name: Adatok lekérése
+          items:
+            - name: Alkalmazások telepítése és használata
+              href: end-user-apps.md
+            - name: Kapcsolódás szolgáltatásokhoz
+              href: end-user-connect-to-services.md
+        - name: Kérdések az adatokról
+          items:
+            - name: Q&A a Power BI-ban
+              href: end-user-q-and-a.md
+            - name: Tippek és trükkök Q&A-kérdések feltevéséhez a Power BI-ban
+              href: end-user-q-and-a-tips.md
+    - name: Erőforrások
       items:
-      - name: Alkalmazások telepítése és használata
-        href: end-user-apps.md
-      - name: Kapcsolódás szolgáltatásokhoz
-        href: end-user-connect-to-services.md
-      - name: Szervezeti tartalomcsomagok keresése és csatlakozás hozzájuk
-        href: end-user-content-pack.md
-    - name: Kérdések az adatokról
-      items:
-      - name: Q&A a Power BI-ban
-        href: end-user-q-and-a.md
-      - name: Tippek és trükkök Q&A-kérdések feltevéséhez a Power BI-ban
-        href: end-user-q-and-a-tips.md
-  - name: Erőforrások
-    items:
-    - name: Szószedet és szakkifejezések
-      href: end-user-glossary.md
-    - name: Támogatott böngészők
-      href: end-user-browsers.md
-    - name: A Power BI által támogatott gyors elemzések típusai
-      href: end-user-insight-types.md
+        - name: Szószedet és szakkifejezések
+          href: end-user-glossary.md
+        - name: Támogatott böngészők
+          href: end-user-browsers.md
+        - name: A Power BI által támogatott gyors elemzések típusai
+          href: end-user-insight-types.md
 - name: Power BI – mobilalkalmazások
   items:
-  - name: Áttekintés
-    items:
-    - name: Mik azok a mobilalkalmazások?
-      href: mobile/mobile-apps-for-mobile-devices.md
-  - name: Rövid útmutatók
-    items:
-    - name: Irányítópultok és jelentések felfedezése
-      href: mobile/mobile-apps-quickstart-view-dashboard-report.md
-  - name: Oktatóanyagok
-    items:
-    - name: Kérdések feltevése az iOS-es mobilalkalmazásban
-      href: mobile/tutorial-mobile-apps-ios-qna.md
-  - name: Fogalmak
-    items:
-    - name: A mobilalkalmazások újdonságai
-      href: mobile/mobile-whats-new-in-the-mobile-apps.md
-    - name: Adatok a való világból a mobilalkalmazásokkal
-      href: mobile/mobile-apps-data-in-real-world-context.md
-    - name: Adatok megtekintése kapcsolat nélküli üzemmódban a mobilalkalmazásokban
-      href: mobile/mobile-apps-offline-data.md
-    - name: Power BI vegyes valósághoz alkalmazás (előzetes verzió)
-      href: mobile/mobile-mixed-reality-app.md
-  - name: Útmutató
-    items:
-    - name: Minden mobilalkalmazás
+    - name: Áttekintés
       items:
-      - name: Irányítópult megosztása a Power BI mobilalkalmazásokból
-        href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
-      - name: Csempék használata a mobilalkalmazásokban
-        href: mobile/mobile-tiles-in-the-mobile-apps.md
-      - name: Kedvencek a mobilalkalmazásokban
-        href: mobile/mobile-apps-favorites.md
-      - name: Adatriasztások beállítása a Power BI mobilalkalmazásokban
-        href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
-      - name: Értesítések fogadása a Power BI-mobilalkalmazásokban
-        href: mobile/mobile-apps-notification-center.md
-      - name: Meghatározott helyre mutató hivatkozás létrehozása
-        href: mobile/mobile-apps-deep-link-specific-location.md
-      - name: Jelentés hely szerinti szűrése a Power BI-mobilalkalmazásokban
-        href: mobile/mobile-apps-geographic-filtering.md
-      - name: Irányítópultok Power BI-mobilalkalmazásokhoz
-        href: mobile/mobile-apps-view-dashboard.md
-      - name: Jelentések a mobilalkalmazásokban
-        href: mobile/mobile-reports-in-the-mobile-apps.md
-      - name: Csatlakozás a Reporting Serviceshez OAuth használatával
-        href: mobile/mobile-oauth-ssrs.md
-    - name: Androidos eszközök
+        - name: Mik azok a mobilalkalmazások?
+          href: mobile/mobile-apps-for-mobile-devices.md
+    - name: Rövid útmutatók
       items:
-      - name: Első lépések az Android-alkalmazással
-        href: mobile/mobile-android-app-get-started.md
-      - name: A „vállalati SSL-tanúsítványa nem megbízható” hiba elhárítása
-        href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
-      - name: A „frissíteni kell az Android System Webview alkalmazást” hiba elhárítása
-        href: mobile/mobile-android-error-update-android-system-webview.md
-    - name: iOS
+        - name: Irányítópultok és jelentések felfedezése
+          href: mobile/mobile-apps-quickstart-view-dashboard-report.md
+    - name: Oktatóanyagok
       items:
-      - name: Első lépések az iOS-alkalmazással
-        href: mobile/mobile-iphone-app-get-started.md
-      - name: Q&A virtuális elemző az iOS-es mobilalkalmazásokban
-        href: mobile/mobile-apps-ios-qna.md
-      - name: Apple Watchra készült Power BI alkalmazás
-        href: mobile/mobile-apple-watch.md
-      - name: Vonalkód beolvasása az iPhone-ján lévő alkalmazásból
-        href: mobile/mobile-apps-scan-barcode-iphone.md
-    - name: iOS és Android
+        - name: Kérdések feltevése az iOS-es mobilalkalmazásban
+          href: mobile/tutorial-mobile-apps-ios-qna.md
+    - name: Fogalmak
       items:
-      - name: Helyszíni jelentések megtekintése a mobilalkalmazásokban
-        href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-      - name: Telefonra optimalizált jelentések megtekintése
-        href: mobile/mobile-apps-view-phone-report.md
-      - name: QR-kód szkennelése a Power BI számára a telefonnal
-        href: mobile/mobile-apps-qr-code.md
-      - name: Jegyzetkészítés és megosztás a mobilalkalmazásokban
-        href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-    - name: Windows 10-es eszközökhöz készült Power BI alkalmazás
+        - name: A mobilalkalmazások újdonságai
+          href: mobile/mobile-whats-new-in-the-mobile-apps.md
+        - name: Adatok a való világból a mobilalkalmazásokkal
+          href: mobile/mobile-apps-data-in-real-world-context.md
+        - name: Adatok megtekintése kapcsolat nélküli üzemmódban a mobilalkalmazásokban
+          href: mobile/mobile-apps-offline-data.md
+        - name: Power BI vegyes valósághoz alkalmazás (előzetes verzió)
+          href: mobile/mobile-mixed-reality-app.md
+    - name: Útmutató
       items:
-      - name: Ismerkedés a Windows 10-alkalmazással
-        href: mobile/mobile-windows-10-phone-app-get-started.md
-      - name: Irányítópult rögzítése a kezdőképernyőn
-        href: mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-      - name: Reporting Services-mobiljelentések és -KPI-k megtekintése
-        href: mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-      - name: Power BI megtekintése Surface Hubon
-        href: mobile/mobile-windows-10-app-presentation-mode.md
-      - name: Egyszeri bejelentkezés a Windows-alkalmazásban
-        href: mobile/mobile-windows-10-app-single-sign-on-sso.md
-  - name: Erőforrások
-    items:
-    - name: Támogatott nyelvek a mobilalkalmazásokban
-      href: mobile/mobile-apps-supported-languages.md
-ms.openlocfilehash: f3f9e579a85ae880b28c6f846c5cb362dc49e9a2
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829848"
+        - name: Minden mobilalkalmazás
+          items:
+            - name: Irányítópult megosztása a Power BI mobilalkalmazásokból
+              href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
+            - name: Csempék használata a mobilalkalmazásokban
+              href: mobile/mobile-tiles-in-the-mobile-apps.md
+            - name: Kedvencek a mobilalkalmazásokban
+              href: mobile/mobile-apps-favorites.md
+            - name: Adatriasztások beállítása a Power BI mobilalkalmazásokban
+              href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
+            - name: Értesítések fogadása a Power BI-mobilalkalmazásokban
+              href: mobile/mobile-apps-notification-center.md
+            - name: Meghatározott helyre mutató hivatkozás létrehozása
+              href: mobile/mobile-apps-deep-link-specific-location.md
+            - name: Jelentés hely szerinti szűrése a Power BI-mobilalkalmazásokban
+              href: mobile/mobile-apps-geographic-filtering.md
+            - name: Irányítópultok Power BI-mobilalkalmazásokhoz
+              href: mobile/mobile-apps-view-dashboard.md
+            - name: Jelentések a mobilalkalmazásokban
+              href: mobile/mobile-reports-in-the-mobile-apps.md
+            - name: Csatlakozás a Reporting Serviceshez OAuth használatával
+              href: mobile/mobile-oauth-ssrs.md
+        - name: Androidos eszközök
+          items:
+            - name: Első lépések az Android-alkalmazással
+              href: mobile/mobile-android-app-get-started.md
+            - name: A „vállalati SSL-tanúsítványa nem megbízható” hiba elhárítása
+              href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+            - name: A „frissíteni kell az Android System Webview alkalmazást” hiba elhárítása
+              href: mobile/mobile-android-error-update-android-system-webview.md
+        - name: iOS
+          items:
+            - name: Első lépések az iOS-alkalmazással
+              href: mobile/mobile-iphone-app-get-started.md
+            - name: Q&A virtuális elemző az iOS-es mobilalkalmazásokban
+              href: mobile/mobile-apps-ios-qna.md
+            - name: Apple Watchra készült Power BI alkalmazás
+              href: mobile/mobile-apple-watch.md
+            - name: Vonalkód beolvasása az iPhone-ján lévő alkalmazásból
+              href: mobile/mobile-apps-scan-barcode-iphone.md
+        - name: iOS és Android
+          items:
+            - name: Helyszíni jelentések megtekintése a mobilalkalmazásokban
+              href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+            - name: Telefonra optimalizált jelentések megtekintése
+              href: mobile/mobile-apps-view-phone-report.md
+            - name: QR-kód szkennelése a Power BI számára a telefonnal
+              href: mobile/mobile-apps-qr-code.md
+            - name: Jegyzetkészítés és megosztás a mobilalkalmazásokban
+              href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
+        - name: Windows 10-es eszközökhöz készült Power BI alkalmazás
+          items:
+            - name: Ismerkedés a Windows 10-alkalmazással
+              href: mobile/mobile-windows-10-phone-app-get-started.md
+            - name: Irányítópult rögzítése a kezdőképernyőn
+              href: mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
+            - name: Reporting Services-mobiljelentések és -KPI-k megtekintése
+              href: mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
+            - name: Power BI megtekintése Surface Hubon
+              href: mobile/mobile-windows-10-app-presentation-mode.md
+            - name: Egyszeri bejelentkezés a Windows-alkalmazásban
+              href: mobile/mobile-windows-10-app-single-sign-on-sso.md
+    - name: Erőforrások
+      items:
+        - name: Támogatott nyelvek a mobilalkalmazásokban
+          href: mobile/mobile-apps-supported-languages.md

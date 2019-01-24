@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3fa76b19e187f7a27dc8b9268dad4d9b5ab8f101
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f7e8d58e5fd738e5da678723ef239f5303be5070
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286381"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838462"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Bevezetés a Power BI szervezeti tartalomcsomagjainak használatába
 > [!NOTE]
@@ -41,8 +41,6 @@ Az irányítópultok, a jelentések és az Excel-munkafüzetek írásvédettek, 
 A közzétett szervezeti tartalomcsomagok az AppSource-ban jelennek meg.  Ebben a központi tárházban a tagok könnyen böngészhetik és megkereshetik a nekik szánt irányítópultokat, jelentéseket és adatkészleteket.  
 
 * Az AppSource-ot a **Lekérdezés** > **Saját szervezet** > **Beolvasás** elemre kattintva nyithatja meg.
-
-További információ [a szervezeti tartalomcsomagok kereséséről és megnyitásáról](consumer/end-user-content-pack.md).
 
 ## <a name="the-life-cycle-of-an-organizational-content-pack"></a>A szervezeti tartalomcsomagok életciklusa
 Minden Power BI Pro-felhasználó létrehozhat, közzétehet és elérhet szervezeti tartalomcsomagokat. Azonban a munkafüzet és az adatkészlet módosítására, a frissítés ütemezésére és a törlésre csak a tartalomcsomag létrehozója jogosult.
