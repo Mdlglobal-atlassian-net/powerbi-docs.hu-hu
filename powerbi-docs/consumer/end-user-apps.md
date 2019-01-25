@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/16/2019
+ms.date: 01/21/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: e741076bf345f093e249b398995a72a683ae84d6
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: 0b423310e88917c910d44f15247bbaec49732f2c
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394799"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838324"
 ---
 # <a name="apps-in-power-bi"></a>Alkalmazások a Power BI-ban
 ## <a name="what-is-a-power-bi-app"></a>Mi a Power BI-alkalmazás?
@@ -26,12 +26,14 @@ Alkalmazásai az **Alkalmazások** tartalomlistába vannak rendezve.
 
 ![Alkalmazások a Power BI-ban](./media/end-user-apps/power-bi-apps-nav.png)
 
+> [!NOTE]
+> Az alkalmazás funkciójának használatához Power BI Pro-licencre van szükség. <!-- add link to how to figure out your license -->
+
 ## <a name="app-designers-and-app-consumers"></a>Alkalmazások ***tervezői*** és ***fogyasztói***
 Szerepkörétől függően létrehozhat alkalmazásokat (ha tervező) saját maga vagy akár kollégái számára. Az is lehet, hogy mások által létrehozott alkalmazásokat kap és tölt le (fogyasztó). Ez a cikk az alkalmazások *fogyasztóinak* szól.
 
 ## <a name="advantages-of-apps"></a>Az alkalmazások előnyei
 Az alkalmazásokat a Power BI szolgáltatásban ([https://powerbi.com](https://powerbi.com)) és mobileszközén is könnyen megtalálhatja és telepítheti. Egy alkalmazás telepítése után nem kell emlékeznie a sok különböző irányítópult nevére, mert mind együtt vannak egy alkalmazásban, a böngészőjében vagy a mobileszközén.
-
 
 Valahányszor az alkalmazás szerzője frissítést bocsát ki, Ön automatikusan látja a változtatásokat. Az adatok frissítésének ütemezését is a szerző szabja meg, így azok naprakészségével sem Önnek kell törődnie. 
 

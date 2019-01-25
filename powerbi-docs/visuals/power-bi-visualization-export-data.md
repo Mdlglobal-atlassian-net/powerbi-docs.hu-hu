@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 06ff1326c902c723614b3b89c0b5c1217fa06ea3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 83ca49a3307a12e8a92c01de4175fcb117e3163d
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295638"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838439"
 ---
 # <a name="export-data-from-visualizations"></a>Adatok exportálása vizualizációkból
 Ha szeretné megtekinteni a vizualizáció létrehozásához használt adatokat, [megjelenítheti az adatokat a Power BI-ban](service-reports-show-data.md) vagy exportálhatja őket az Excelbe .xlsx- vagy .csv-fájlként. Az adatexportálási lehetőség használatához Pro- vagy Premium-licenc szükséges, valamint engedélyek az adathalmazhoz és a jelentésekhez. 
@@ -83,7 +83,7 @@ A **Mögöttes adatok** lehetőség kiválasztásakor több dolog történhet. A
 | A vizualizáció tartalma |                                                                              Az exportáláskor megjelenő elemek                                                                              |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   Összesítések    |                                                 az *első* összesítés és az összesítés teljes táblájának nem rejtett adatai                                                  |
-|   Összesítések    | kapcsolódó adatok – ha a vizualizáció más, az összesítést tartalmazó adattáblához *\*\*kapcsolódó*\* adattáblák adatait használja (mindaddig, amíg a kapcsolat \*:1 vagy 1:1 mértékű) |
+|   Összesítések    | kapcsolódó adatok – ha a vizualizáció más, az összesítést tartalmazó adattáblához *kapcsolódó* adattáblák adatait használja (mindaddig, amíg a kapcsolat \*:1 vagy 1:1 mértékű) |
 |    Mértékek     |                                      A vizualizáció összes mértéke *és* minden mérték azon adattáblákból, amelyek a vizualizációban használt mértékeket tartalmaznak                                      |
 |    Mértékek     |                                       Minden nem rejtett adat az adott értéket tartalmazó adattáblákból (mindaddig, amíg a kapcsolat \*:1 vagy 1:1 mértékű)                                       |
 |    Mértékek     |                                      Minden adat minden olyan táblából, amely a mértékeket \*:1/1:1 arányban tartalmazó táblákhoz kapcsolódik                                      |
