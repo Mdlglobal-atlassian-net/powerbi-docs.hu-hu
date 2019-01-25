@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/19/2018
+ms.date: 01/14/2019
 ms.author: maggies
-ms.openlocfilehash: 943e81c8c49a4a0707ed41b593093fc27a85a01e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1f7da83629b932d2e14fbc57682e0f7f7988739a
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295881"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488822"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
 Tudnivalók a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítéséről.
@@ -31,7 +31,7 @@ Ha ellenőrizné, hogy a Power BI jelentéskészítő kiszolgálóhoz optimaliz�
 
     ![A Power BI Desktop letöltése a webportálról](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Vagy másik lehetőségként a Microsoft letöltőközpontban válassza közvetlenül a Power BI jelentéskészítő kiszolgálóra (2018. augusztus) optimalizált [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) hivatkozást.
+    Vagy másik lehetőségként a Microsoft letöltőközpontban válassza közvetlenül a Power BI jelentéskészítő kiszolgálóra (2019. január) optimalizált [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) hivatkozást.
 
 2. A letöltőközpontlapon kattintson a **Letöltés** gombra.
 
@@ -41,7 +41,7 @@ Ha ellenőrizné, hogy a Power BI jelentéskészítő kiszolgálóhoz optimaliz�
 
     - **PBIDesktopRS_x64.msi** (64 bites verzió).
 
-1. A telepítő letöltése után indítsa el a Power BI Desktop (2018. augusztus) telepítővarázslóját.
+1. A telepítő letöltése után indítsa el a Power BI Desktop (2019. január) telepítővarázslóját.
 
 2. A telepítés végén kattintson a **Power BI Desktop azonnali indítása** lehetőségre.
    

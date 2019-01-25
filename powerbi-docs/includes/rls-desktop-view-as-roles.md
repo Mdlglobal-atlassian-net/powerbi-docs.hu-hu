@@ -1,20 +1,21 @@
-## <a name="validating-the-role-within-power-bi-desktop"></a>Szerepkör érvényesítése a Power BI Desktopban
-A szerepkör létrehozása után tesztelheti a szerepkör hatásait a Power BI Desktopban. Ehhez válassza a **Megtekintés szerepkörökként** elemet.
+## <a name="validate-the-roles-within-power-bi-desktop"></a>Szerepkörök érvényesítése a Power BI Desktopban
+A szerepkör létrehozása után tesztelheti a szerepkör hatásait a Power BI Desktopban.
 
-![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
+1. Válassza a  **Megtekintés szerepkörökként** lehetőséget. 
 
-A **Megtekintés szerepkörökként** párbeszédpanelen ellenőrizheti, hogy egy adott felhasználó vagy szerepkör mit láthat. Megtekintheti azokat a szerepköröket, amelyeket létrehozott.
+    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
 
-![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
+    A **Megtekintés szerepkörökként** alatt megjelennek a létrehozott szerepkörök.
 
-Jelölje ki az egyik létrehozott szerepkörét, majd kattintson az **OK** gombra, hogy alkalmazza a szerepkört arra, amit épp megtekintett. A jelentésekből csak a szerepkör számára releváns adatok jelennek meg.
+    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
 
-Az **Egyéb felhasználó** beállítással egy adott felhasználót is kiválaszthat. Az egyszerű felhasználónevet (UPN) érdemes megadni, mivel a Power BI szolgáltatás azt használja. Kattintson az **OK** gombra, és a jelentések csak a felhasználó számára elérhető adatokat fogják megjeleníteni. 
+3. A szerepkör alkalmazásához válassza ki a létrehozott szerepkört > **OK** . A jelentés csak a szerepkör számára releváns adatot jeleníti meg. 
 
-![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
+4. Az **Egyéb felhasználó** beállítással egy adott felhasználót is kiválaszthat. Az egyszerű felhasználónevet (UPN) érdemes megadni, mivel a Power BI szolgáltatás és a Power BI jelentéskészítő kiszolgáló azt használja.
 
-> [!NOTE]
-> A Power BI Desktopban csak akkor fognak megjelenni különböző eredmények, ha DAX-kifejezéseken alapuló dinamikus biztonsági megoldást alkalmaz.
-> 
-> 
+    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
+
+1. Kattintson az  **OK**  gombra, és a jelentések csak a felhasználó számára elérhető adatokat fogják megjeleníteni. 
+
+A Power BI Desktopban a **Más felhasználók** alatt csak akkor fognak megjelenni különböző eredmények, ha DAX-kifejezéseken alapuló dinamikus biztonsági megoldást alkalmaz. 
 

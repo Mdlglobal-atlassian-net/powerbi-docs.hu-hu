@@ -9,18 +9,41 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: edf953f2512550660fd914d2fe54c28dcd01fa24
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18a2d6833f0013f95ac0a5dea5f1930e5b666dd6
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292031"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488868"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
 Ez a változásnapló a Power BI jelentéskészítő kiszolgálóra vonatkozik, és minden kiadott buildhez felsorolja az új elemeket és hibajavításokat.
 
 Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonságai](whats-new.md) című cikkből tájékozódhat. 
+
+## <a name="january-2019"></a>2019. január
+- **Power BI jelentéskészítő kiszolgáló**            
+    - *Verzió: 1.4.6960.38798 (Build 15.0.1102.222), Kiadás dátuma: 2019. január 22.*
+        - Funkciók
+            - Power BI-jelentések 
+                - Sorszintű biztonság támogatása
+                - Kibontás és összecsukás mátrix sorazonosítókban
+                - Másolás és beillesztés .pbix-fájlok között
+                - Útmutatók intelligens igazításhoz
+                - Az SAP BW 2.0 összekötő támogatása
+            - Rendszergazdák
+                - Lehetőség a jelentéskészítő kiszolgálóra feltölthető erőforrások bővítményeinek korlátozására
+                - Lehetőség a támogatott hiperhivatkozás-sémák korlátozására
+        - Hibajavítások
+            - HTML-injektálásos biztonsági rés
+            - A PDF-be exportálás esetén nem jelenik meg az Euró jel
+            - Ha több adatforrás mellett jelszót ment a Power BI-jelentésekben, az érvényteleníti a nem mentett jelszavakat
+            - A Power BI Mobile alkalmazásban a vizualizációk problémákat jelenítenek meg üresjárat után
+
+- **Power BI Desktop (a Power BI jelentéskészítő kiszolgálóra optimalizálva)**
+    - *Verzió: 2.65.5313.1421 (2019. január), Kiadás dátuma: 2019. január 22.*
+        - A Power BI jelentéskészítő kiszolgálóval (2019. január) való kapcsolathoz szükséges módosításokat tartalmaz  
 
 ## <a name="august-2018"></a>2018. augusztus
 - **Power BI jelentéskészítő kiszolgáló**

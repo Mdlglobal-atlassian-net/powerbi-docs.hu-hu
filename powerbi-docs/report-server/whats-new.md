@@ -8,31 +8,47 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
-ms.openlocfilehash: 91179ca37b8ba5c883785501588c9b12a02d644d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 01/22/2019
+ms.openlocfilehash: 2a65baf94abcb79dac7bb9419ad67124f2b65bb8
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292453"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488937"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló újdonságai
 
 A Power BI jelentéskészítő kiszolgáló újdonságainak bemutatása. A cikk a főbb funkciókat ismerteti, és az új elemek kibocsátásakor frissül.
 
-A Power BI jelentéskészítő kiszolgáló, illetve a Power BI jelentéskészítő kiszolgálóra optimalizált Power BI Desktop letöltéséhez nyissa meg az [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) (Helyi jelentéskészítés Power BI jelentéskészítő kiszolgálóval) webhelyet.
-
-Ezekből a forrásokból folyamatosan értesülhet a Power BI jelentéskészítő kiszolgáló új funkcióiról.
-
-* [Microsoft Power BI-blog](https://powerbi.microsoft.com/blog/)
-* [Az SQL Server Reporting Services csapat blogja](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
-* A [Guy in a Cube YouTube-csatorna](https://aka.ms/guyinacube)
+A Power BI jelentéskészítő kiszolgáló legújabb verziója, illetve a Power BI jelentéskészítő kiszolgálóra optimalizált Power BI Desktop letöltéséhez nyissa meg az [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) (Helyi jelentéskészítés Power BI jelentéskészítő kiszolgálóval) webhelyet.
 
 Az újdonságokra vonatkozó Power BI-információk:
 
 * [A Power BI szolgáltatás újdonságai](../service-whats-new.md)
 * [A Power BI Desktop újdonságai](../desktop-latest-update.md)
 * [A Power BI-mobilalkalmazások újdonságai](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="january-2019"></a>2019. január
+
+Az alábbi funkciók támogatása a Power BI-jelentésekben:
+
+[**Sorszintű biztonság**](row-level-security-report-server.md) A Power BI jelentéskészítő kiszolgálóban a sorszintű biztonság (RLS) használatával korlátozható adott felhasználók adatokhoz való hozzáférése. A szűrők a sorok szintjén korlátozzák az adatok elérését, és szerepkörökön belül határozhat meg szűrőket.
+
+[**Kibontás és összecsukás mátrix sorazonosítókban**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) Most már lehetőség van az egyes sorazonosítók kibontására és összecsukására, amely az egyik leggyakrabban kért funkció volt a vizualizációknál.
+
+[**Másolás és beillesztés .pbix-fájlok között**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) A vizualizációk másolhatók .pbix-fájlok között akár a vizualizáció helyi menüjét használva, akár a szokásos Ctrl+C billentyűparanccsal, majd utána a Ctrl+V használatával másik jelentésbe illeszthető be.
+
+[**Útmutatók intelligens igazításhoz**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) Ha objektumokat mozgat a jelentésoldalon, intelligens igazítási útmutatók jelennek majd meg hasonlóan ahhoz, ahogyan az a PowerPointban történik, így egyszerűbben tudja az oldalon az objektumokat igazítani. Az intelligens útmutatók minden esetben megjelennek, amikor húzással áthelyez vagy átméretez valamit az oldalon. Ha egy objektumot egy másik közelébe helyez, akkor az a másik objektumhoz igazítva a megfelelő pozícióba illeszkedik.
+
+**Kisegítő lehetőségek** Olyan sok kisegítő lehetőség van, hogy a listázás nehéz. Elérhetőek például a [mezőlistázási panel kisegítő lehetőségei](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). A mezőlistázási panel teljes mértékben akadálymentes. A panelen navigálni lehet kizárólag billentyűzetet és a képernyőolvasót használva is, a helyi menüvel pedig mezőket lehet hozzáadni a jelentésoldalhoz.
+
+### <a name="administrator-settings"></a>Rendszergazdai beállítások
+
+A rendszergazdák a következő tulajdonságokat állíthatják be az SSMS-ben a kiszolgálófarm speciális tulajdonságai között:
+
+**AllowedResourceExtensionsForUpload** Lehetőség a jelentéskészítő kiszolgálóra feltölthető erőforrások bővítményeinek beállítására. A beépített fájltípusok bővítményeit (például &ast;.rdl vagy &ast;.pbix) nem szükséges belefoglalni. Az alapértelmezés „&ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt, &ast;.pptx”. 
+
+**SupportedHyperlinkSchemes** Azoknak az URI-sémáknak a vesszővel tagolt listáját állítja be, amelyeket definiálni lehet a megjeleníthető hiperhivatkozásos műveleteknél, vagy „&ast;” az összes hiperhivatkozásos séma engedélyezéséhez. A „http,https” beállítással például engedélyezni lehet a „https://www. contoso.com” helyre mutató hivatkozásokat, de eltávolítja a „mailto:bill@contoso.com” vagy “javascript:window.open(‘www.contoso.com’, ‘_blank’)” hivatkozásokat. Az alapértelmezés „&ast;”.
 
 ## <a name="august-2018"></a>2018. augusztus
 
@@ -325,10 +341,10 @@ A Power BI jelentéskészítő kiszolgáló már támogatja a Power BI új tábl
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Mi a Power BI jelentéskészítő kiszolgáló?](get-started.md) 
-[Rendszergazdai kézikönyv](admin-handbook-overview.md)  
-[A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
-[A Jelentéskészítő letöltése](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Az SQL Server Data Tools (SSDT) letöltése](http://go.microsoft.com/fwlink/?LinkID=616714)
+Ezekből a forrásokból folyamatosan értesülhet a Power BI jelentéskészítő kiszolgáló új funkcióiról.
+
+* [Microsoft Power BI-blog](https://powerbi.microsoft.com/blog/)
+* [Az SQL Server Reporting Services csapat blogja](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
+* A [Guy in a Cube YouTube-csatorna](https://aka.ms/guyinacube)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
