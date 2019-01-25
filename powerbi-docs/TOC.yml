@@ -1,1296 +1,1301 @@
+items:
 - name: Power BI Desktop
   items:
-    - name: Áttekintés
+  - name: Áttekintés
+    items:
+    - name: Mi az a Power BI Desktop?
+      href: desktop-what-is-desktop.md
+  - name: Rövid útmutatók
+    items:
+    - name: Csatlakozás adatokhoz
+      href: desktop-quickstart-connect-to-data.md
+    expanded: true
+  - name: Oktatóanyagok
+    items:
+    - name: Több adatforrás formázása és kombinálása
+      href: desktop-shape-and-combine-data.md
+    - name: Weblapokról származó adatok importálása és elemzése a Power BI Desktop használatával
+      href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+    - name: " Excelből és OData-csatornáról származó értékesítési adatok elemzése"
+      href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
+    - name: Saját mértékek létrehozása a Power BI Desktopban
+      href: desktop-tutorial-create-measures.md
+    - name: Számított oszlopok létrehozása a Power BI Desktopban
+      href: desktop-tutorial-create-calculated-columns.md
+    - name: Facebook-elemzések a Power BI Desktop használatával
+      href: desktop-tutorial-facebook-analytics.md
+    - name: Dinamikus sorszintű biztonság Analysis Services-beli táblázatos modellel
+      href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
+  - name: Minták
+    items:
+    - name: Power BI-minták
+      href: sample-datasets.md
+    - name: A minta-tartalomcsomagok használata
+      href: sample-tutorial-connect-to-the-samples.md
+    - name: 'Ügyfél-jövedelmezőségi minta: Bemutató megtekintése'
+      href: sample-customer-profitability.md
+    - name: 'Informatikaköltség-elemzési minta: Bemutató megtekintése'
+      href: sample-it-spend.md
+    - name: 'Emberi erőforrások minta: Bemutató megtekintése'
+      href: sample-human-resources.md
+    - name: 'Lehetőségelemzési minta: Bemutató megtekintése'
+      href: sample-opportunity-analysis.md
+    - name: 'Beszerzéselemzési minta: Bemutató megtekintése'
+      href: sample-procurement.md
+    - name: 'Kiskereskedelmi elemzési minta: Bemutató megtekintése'
+      href: sample-retail-analysis.md
+    - name: 'Értékesítési és marketing minta: Bemutató megtekintése'
+      href: sample-sales-and-marketing.md
+    - name: 'Szállítói minőségelemzési minta: Bemutató megtekintése'
+      href: sample-supplier-quality.md
+    - name: A Pénzügyi minta munkafüzet letöltése
+      href: sample-financial-download.md
+  - name: Fogalmak
+    items:
+    - name: Újdonságok a Power BI Desktop legújabb frissítésében
+      href: desktop-latest-update.md
+    - name: A Modellező nézet a Power BI Desktopban (előzetes verzió)
+      href: desktop-modeling-view.md
+    - name: Aggregációk a Power BI Desktopban (előzetes verzió)
+      href: desktop-aggregations.md
+    - name: Összetett modellek a Power BI Desktopban
+      href: desktop-composite-models.md
+    - name: Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)
+      href: desktop-many-to-many-relationships.md
+    - name: Tárolási mód a Power BI Desktopban (előzetes verzió)
+      href: desktop-storage-mode.md
+    - name: Kétirányú keresztszűrés a Power BI Desktopban (előzetes verzió)
+      href: desktop-bidirectional-filtering.md
+    - name: A Power BI és a DirectQuery
+      href: desktop-directquery-about.md
+    - name: A DirectQuery által támogatott adatforrások
+      href: desktop-directquery-data-sources.md
+    - name: Power BI-adatforrások előfeltételei
+      href: desktop-data-source-prerequisites.md
+    - name: Alapértelmezett tag többdimenziós modellekben a Power BI-ban
+      href: desktop-default-member-multidimensional-models.md
+    - name: Egyéni vizualizációk – GYIK
+      href: power-bi-custom-visuals-faq.md
+  - name: Útmutató
+    items:
+    - name: A Power BI Desktop beszerzése
+      href: desktop-get-the-desktop.md
+    - name: Első lépések útmutató – Power BI Desktop
+      href: desktop-getting-started.md
+    - name: Gyakori lekérdezési feladatok a Power BI Desktopban
+      href: desktop-common-query-tasks.md
+    - name: Kapcsolatok létrehozása és kezelése a Power BI Desktopban
+      href: desktop-create-and-manage-relationships.md
+    - name: Adatnézet a Power BI Desktopban
+      href: desktop-data-view.md
+    - name: Lekérdezések áttekintése a Power BI Desktopban
+      href: desktop-query-overview.md
+    - name: A DAX alapszintű használata a Power BI Desktopban
+      href: desktop-quickstart-learn-dax-basics.md
+    - name: Kapcsolatok nézet a Power BI Desktopban
+      href: desktop-relationship-view.md
+    - name: Jelentés nézet a Power BI Desktopban
+      href: desktop-report-view.md
+    - name: Kapcsolódás több adatforráshoz a Power BI Desktop alkalmazásban
+      href: desktop-connect-to-data.md
+    - name: Közzététel a Power BI Desktopból
+      href: desktop-upload-desktop-files.md
+    - name: 1. rész – Vizualizációk hozzáadása Power BI-jelentésekhez
+      href: visuals/power-bi-report-add-visualizations-i.md
+    - name: 2. rész – Vizualizációk hozzáadása Power BI-jelentésekhez
+      href: visuals/power-bi-report-add-visualizations-ii.md
+    - name: A vizualizáció címének, hátterének és jelmagyarázatának testreszabása
+      href: visuals/power-bi-visualization-customize-title-background-and-legend.md
+    - name: Adatot nem tartalmazó elemek megjelenítése a Power BI-ban
+      href: desktop-show-items-no-data.md
+    - name: Csatlakozás adatokhoz
       items:
-        - name: Mi az a Power BI Desktop?
-          href: desktop-what-is-desktop.md
-    - name: Rövid útmutatók
-      expanded: true
+      - name: Adatforrások a Power BI Desktopban
+        href: desktop-data-sources.md
+      - name: Csatlakozás egy weblaphoz példaként (előzetes verzió)
+        href: desktop-connect-to-web-by-example.md
+      - name: Kapcsolódás adatkészletekhez a Power BI szolgáltatásban
+        href: desktop-report-lifecycle-datasets.md
+      - name: Excel-munkafüzetek importálása a Power BI Desktopba
+        href: desktop-import-excel-workbooks.md
+      - name: Kapcsolódás adatokhoz általános interfész használatával
+        href: desktop-connect-using-generic-interfaces.md
+      - name: Csatlakozás PDF-fájlhoz
+        href: desktop-connect-pdf.md
+      - name: Kapcsolódás az Adobe Analyticshez
+        href: desktop-connect-adobe-analytics.md
+      - name: Kapcsolódás Oracle-adatbázishoz
+        href: desktop-connect-oracle-database.md
+      - name: Python-szkriptek futtatása a Power BI Desktopban
+        href: desktop-python-scripts.md
+      - name: Python használata a Power Query-szerkesztőben
+        href: desktop-python-in-query-editor.md
+      - name: Külső Python IDE használata a Power BI-jal
+        href: desktop-python-ide.md
+      - name: Power BI-vizualizációk létrehozása a Python használatával
+        href: desktop-python-visuals.md
+      - name: R-parancsfájlok futtatása a Power BI Desktopban
+        href: desktop-r-scripts.md
+      - name: Az R használata a lekérdezésszerkesztőben
+        href: desktop-r-in-query-editor.md
+      - name: Külső R IDE használata a Power BI-ban
+        href: desktop-r-ide.md
+      - name: Támogatott R-csomagok
+        href: service-r-packages-support.md
+      - name: Adatok közvetlen bevitele a Power BI Desktopba
+        href: desktop-enter-data-directly-into-desktop.md
+      - name: Kapcsolódás az Excelhez a Power BI Desktopban
+        href: desktop-connect-excel.md
+      - name: Az Analysis Services többdimenziós adatai a Power BI Desktopban
+        href: desktop-ssas-multidimensional.md
+      - name: Csatlakozás CSV-fájlokhoz a Power BI Desktopban
+        href: desktop-connect-csv.md
+      - name: Csatlakozás Google BigQuery-adatbázishoz a Power BI Desktopban
+        href: desktop-connect-bigquery.md
+      - name: Csatlakozás Impala-adatbázishoz a Power BI Desktopban
+        href: desktop-connect-impala.md
+      - name: Csatlakozás egy OData-csatornához a Power BI Desktopban
+        href: desktop-connect-odata.md
+      - name: Csatlakozás Amazon Redshift-adatbázishoz a Power BI Desktopban
+        href: desktop-connect-redshift.md
+      - name: Csatlakozás egy weblaphoz a Power BI Desktopról
+        href: desktop-connect-to-web.md
+      - name: Kapcsolódás Snowflake Computing-adattárházhoz a Power BI Desktopban
+        href: desktop-connect-snowflake.md
+      - name: Kapcsolódás Azure Consumption Insights-adatokhoz
+        href: desktop-connect-azure-consumption-insights.md
+      - name: Az SAP HANA használata a Power BI Desktopban
+        href: desktop-sap-hana.md
+      - name: Az Analysis Services táblázatos adatai a Power BI Desktopban
+        href: desktop-analysis-services-tabular-data.md
+      - name: A DirectQuery használata a Power BI Desktopban
+        href: desktop-use-directquery.md
+      - name: DirectQuery Oracle- és Teradata-adatbázisokhoz
+        href: desktop-directquery-for-oracle-teradata.md
+      - name: A DirectQuery és az SAP Business Warehouse (BW)
+        href: desktop-directquery-sap-bw.md
+      - name: A DirectQuery és az SAP HANA
+        href: desktop-directquery-sap-hana.md
+      - name: Hivatkozási integritás feltételezése beállítás a Power BI Desktopban
+        href: desktop-assume-referential-integrity.md
+      - name: Az SAP BW-összekötő használata a Power BI Desktopban (előzetes verzió)
+        href: desktop-sap-bw-connector.md
+      - name: OneDrive Vállalati verzióra mutató hivatkozások használata a Power BI Desktopban
+        href: desktop-use-onedrive-business-links.md
+      - name: 'Külső szolgáltatás: Facebook-összekötő a Power BI Desktophoz'
+        href: service-facebook-connector.md
+      - name: 'Külső szolgáltatás: Google Analytics-összekötő a Power BI Desktophoz'
+        href: service-google-analytics-connector.md
+      - name: 'Project Online: kapcsolódás adatokhoz a Power BI Desktoppal'
+        href: desktop-project-online-connect-to-data.md
+    - name: Adatok átalakítása
       items:
-        - name: Csatlakozás adatokhoz
-          href: desktop-quickstart-connect-to-data.md
-    - name: Oktatóanyagok
+      - name: Az Alakzatleképezések funkció használata a Power BI Desktopban (előzetes verzió)
+        href: visuals/desktop-shape-map.md
+      - name: Bináris fájlok egyesítése
+        href: desktop-combine-binaries.md
+    - name: Adatok modellezése
       items:
-        - name: Több adatforrás formázása és kombinálása
-          href: desktop-shape-and-combine-data.md
-        - name: Weblapokról származó adatok importálása és elemzése a Power BI Desktop használatával
-          href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
-        - name: ' Excelből és OData-csatornáról származó értékesítési adatok elemzése'
-          href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
-        - name: Saját mértékek létrehozása a Power BI Desktopban
-          href: desktop-tutorial-create-measures.md
-        - name: Számított oszlopok létrehozása a Power BI Desktopban
-          href: desktop-tutorial-create-calculated-columns.md
-        - name: Facebook-elemzések a Power BI Desktop használatával
-          href: desktop-tutorial-facebook-analytics.md
-        - name: Dinamikus sorszintű biztonság Analysis Services-beli táblázatos modellel
-          href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
-    - name: Minták
+      - name: Adatkategorizáció a Power BI Desktopban
+        href: desktop-data-categorization.md
+      - name: Vonalkód mező címkézése mobilalkalmazásokhoz
+        href: desktop-mobile-barcodes.md
+      - name: Földrajzi szűrők beállítása mobilalkalmazásokhoz
+        href: desktop-mobile-geofiltering.md
+      - name: Számított oszlopok a Power BI Desktopban
+        href: desktop-calculated-columns.md
+      - name: Számított táblák a Power BI Desktopban
+        href: desktop-calculated-tables.md
+      - name: Mértékek a Power BI Desktopban
+        href: desktop-measures.md
+      - name: Q&A nyelvi séma szerkesztése
+        href: power-bi-q-and-a-linguistic-schema.md
+      - name: KPI-k importálása és megjelenítése (előzetes verzió)
+        href: desktop-import-and-display-kpis.md
+    - name: Jelentések létrehozása
       items:
-        - name: Power BI-minták
-          href: sample-datasets.md
-        - name: A minta-tartalomcsomagok használata
-          href: sample-tutorial-connect-to-the-samples.md
-        - name: 'Ügyfél-jövedelmezőségi minta: Bemutató megtekintése'
-          href: sample-customer-profitability.md
-        - name: 'Informatikaköltség-elemzési minta: Bemutató megtekintése'
-          href: sample-it-spend.md
-        - name: 'Emberi erőforrások minta: Bemutató megtekintése'
-          href: sample-human-resources.md
-        - name: 'Lehetőségelemzési minta: Bemutató megtekintése'
-          href: sample-opportunity-analysis.md
-        - name: 'Beszerzéselemzési minta: Bemutató megtekintése'
-          href: sample-procurement.md
-        - name: 'Kiskereskedelmi elemzési minta: Bemutató megtekintése'
-          href: sample-retail-analysis.md
-        - name: 'Értékesítési és marketing minta: Bemutató megtekintése'
-          href: sample-sales-and-marketing.md
-        - name: 'Szállítói minőségelemzési minta: Bemutató megtekintése'
-          href: sample-supplier-quality.md
-        - name: A Pénzügyi minta munkafüzet letöltése
-          href: sample-financial-download.md
-    - name: Fogalmak
+      - name: Vizuális elemek jelentésekhez
+        href: desktop-visual-elements-for-reports.md
+      - name: Elemleírások létrehozása jelentésoldalak alapján
+        href: desktop-tooltips.md
+      - name: Exportálás PDF-be és a jelentések nyomtatása
+        href: desktop-export-to-pdf.md
+      - name: Q&A a Power BI Desktopban
+        href: desktop-qna-in-reports.md
+      - name: Az Elemzés panel a Power BI Desktopban
+        href: desktop-analytics-pane.md
+      - name: Növekedések és csökkenések megértése elemzésekkel
+        href: desktop-insights.md
+      - name: A diagramok eltérő eloszlásainak helyének azonosítása elemzésekkel
+        href: desktop-insights-find-where-different.md
+      - name: A Power BI könyvjelzői
+        href: desktop-bookmarks.md
+      - name: Jelentéstémák használata
+        href: desktop-report-themes.md
+      - name: Az új szűrőfunkciók kipróbálása
+        href: power-bi-report-filter-preview.md
+      - name: Gyors mértékek használata
+        href: desktop-quick-measures.md
+      - name: Feltételes eset paraméterek használata
+        href: desktop-what-if.md
+      - name: Részletezés használata
+        href: desktop-drillthrough.md
+      - name: Relatív dátumszeletelő és -szűrő használata
+        href: visuals/desktop-slicer-filter-date-range.md
+      - name: Csoportosítás és tárolás használata
+        href: desktop-grouping-and-binning.md
+      - name: Power BI-vizualizációk létrehozása az R programozási nyelvvel
+        href: desktop-r-visuals.md
+      - name: R-alapú egyéni vizuális elemek
+        href: desktop-r-powered-custom-visuals.md
+      - name: Rácsvonalak és rácsvonalhoz igazítás használata
+        href: desktop-gridlines-snap-to-grid.md
+      - name: Oldal megjelenítési beállításai Power BI-jelentésben
+        href: power-bi-report-display-settings.md
+      - name: Oszlop hozzáadása mintából
+        href: desktop-add-column-from-example.md
+      - name: Egyéni oszlop hozzáadása
+        href: desktop-add-custom-column.md
+      - name: Környezethez alkalmazkodó vizuális elemek létrehozása
+        href: visuals/desktop-create-responsive-visuals.md
+      - name: Beágyazott hierarchiák feliratainak használata a Power BI Desktopban (előzetes verzió)
+        href: desktop-inline-hierarchy-labels.md
+      - name: Numerikustartomány-szeletelő használata
+        href: desktop-slicer-numeric-range.md
+      - name: Átméretezhető szeletelő létrehozása
+        href: power-bi-slicer-filter-responsive.md
+      - name: Egyéni válaszkártyák létrehozása Cortanához
+        href: service-cortana-answer-cards.md
+      - name: Sorszintű biztonság
+        href: desktop-rls.md
+      - name: Elemleírások testreszabása
+        href: desktop-custom-tooltips.md
+      - name: Szövegdobozok és alakzatok jelentésekben
+        href: power-bi-reports-add-text-and-shapes.md
+      - name: Hivatkozás hozzáadása egy szövegdobozhoz
+        href: service-add-hyperlink-to-text-box.md
+      - name: Hivatkozások a táblázatokban
+        href: power-bi-hyperlinks-in-tables.md
+      - name: Táblázat feltételes formázása
+        href: desktop-conditional-table-formatting.md
+      - name: Oszlop szerinti rendezés a Power BI Desktopban
+        href: desktop-sort-by-column.md
+      - name: Mobilalkalmazásokhoz optimalizált jelentések létrehozása
+        href: desktop-create-phone-report.md
+      - name: Az Adatok megtekintése és a Rekordok megtekintése használata
+        href: desktop-see-data-see-records.md
+      - name: Jelentések létrehozásával kapcsolatos tippek
+        href: desktop-tips-and-tricks-for-creating-reports.md
+    - name: Vizualizációk
       items:
-        - name: Újdonságok a Power BI Desktop legújabb frissítésében
-          href: desktop-latest-update.md
-        - name: A Modellező nézet a Power BI Desktopban (előzetes verzió)
-          href: desktop-modeling-view.md
-        - name: Aggregációk a Power BI Desktopban (előzetes verzió)
-          href: desktop-aggregations.md
-        - name: Összetett modellek a Power BI Desktopban
-          href: desktop-composite-models.md
-        - name: Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)
-          href: desktop-many-to-many-relationships.md
-        - name: Tárolási mód a Power BI Desktopban (előzetes verzió)
-          href: desktop-storage-mode.md
-        - name: Kétirányú keresztszűrés a Power BI Desktopban
-          href: desktop-bidirectional-filtering.md
-        - name: A Power BI és a DirectQuery
-          href: desktop-directquery-about.md
-        - name: A DirectQuery által támogatott adatforrások
-          href: desktop-directquery-data-sources.md
-        - name: Power BI-adatforrások előfeltételei
-          href: desktop-data-source-prerequisites.md
-        - name: Alapértelmezett tag többdimenziós modellekben a Power BI-ban
-          href: desktop-default-member-multidimensional-models.md
-        - name: Egyéni vizualizációk – GYIK
-          href: power-bi-custom-visuals-faq.md
-    - name: Útmutató
+      - name: Vizualizációk a Power BI-ban
+        href: visuals/power-bi-report-visualizations.md
+      - name: Vizuális elemekkel kapcsolatos ajánlott eljárások
+        href: visuals/power-bi-visualization-best-practices.md
+      - name: Vizualizáció-típus módosítása jelentésekben
+        href: visuals/power-bi-report-change-visualization-type.md
+      - name: Adatpontkorlátok vizualizációtípus szerint
+        href: visuals/power-bi-data-points.md
+      - name: A vizuális elem létrehozásához használt adat megjelenítése
+        href: visuals/service-reports-show-data.md
+      - name: Bevezetés a színformázás és tengelytulajdonságok használatába
+        href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
+      - name: Tippek és trükkök a színformázáshoz
+        href: visuals/service-tips-and-tricks-for-color-formatting.md
+      - name: Vizualizáció másolása és beillesztése
+        href: visuals/power-bi-visualization-copy-paste.md
+      - name: A vizualizáció létrehozásához használt adatok exportálása
+        href: visuals/power-bi-visualization-export-data.md
+      - name: Vizuális elem áthelyezése, átméretezése és kiugróvá tétele a jelentésben
+        href: visuals/power-bi-visualization-move-and-resize.md
+      - name: Vizualizációk jelentésen belüli működésének módosítása
+        href: service-reports-visual-interactions.md
+      - name: Hisztogramok
+        href: visuals/service-histograms.md
+      - name: Tippek és trükkök térképes vizuális elemekhez a Power BI-ban
+        href: visuals/power-bi-map-tips-and-tricks.md
+      - name: X és Y tengely tulajdonságainak testreszabása
+        href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
+      - name: ArcGIS-térképek a Power BI-ban
+        href: power-bi-visualization-arcgis.md
+      - name: Egyszerű területdiagram
+        href: visuals/power-bi-visualization-basic-area-chart.md
+      - name: Kártyák (nagy méretű numerikus csempék) a Power BI-ban
+        href: visuals/power-bi-visualization-card.md
+      - name: Kombinált diagram a Power BI-ban
+        href: visuals/power-bi-visualization-combo-chart.md
+      - name: Perecdiagramok a Power BI szolgáltatásban
+        href: visuals/power-bi-visualization-doughnut-charts.md
+      - name: Kitöltött (koropletikus) tematikus térképek a Power BI-ban
+        href: visuals/power-bi-visualization-filled-maps-choropleths.md
+      - name: Tölcsérdiagramok a Power BI-ban
+        href: visuals/power-bi-visualization-funnel-charts.md
+      - name: Nagy sűrűségű vonalas mintavétel
+        href: desktop-high-density-sampling.md
+      - name: KPI (teljesítménymutatós) vizuális elemek
+        href: visuals/power-bi-visualization-kpi.md
+      - name: Mátrix vizualizáció
+        href: visuals/desktop-matrix-visual.md
+      - name: Fejlett elemzések és vizualizációk létrehozása R-parancsfájlokkal a Power BI-ban
+        href: visuals/service-r-visuals.md
+      - name: A Power BI kör alakú mérőműszer-diagramjai
+        href: visuals/power-bi-visualization-radial-gauge-charts.md
+      - name: Szalagdiagramok
+        href: visuals/desktop-ribbon-charts.md
+      - name: Pontdiagramok a Power BI-ban
+        href: visuals/power-bi-visualization-scatter.md
+      - name: Nagy sűrűségű pontdiagramok
+        href: visuals/desktop-high-density-scatter-charts.md
+      - name: Szeletelők a Power BI-ban
+        href: visuals/power-bi-visualization-slicers.md
+      - name: Táblázatok a Power BI-ban
+        href: visuals/power-bi-visualization-tables.md
+      - name: Fatérképek a Power BI-ban
+        href: visuals/power-bi-visualization-treemaps.md
+      - name: Vízesésdiagramok a Power BI-ban
+        href: visuals/power-bi-visualization-waterfall-charts.md
+      - name: Dinamikus referenciavonalak létrehozása
+        href: service-analytics-pane.md
+    - name: Hibaelhárítás
       items:
-        - name: A Power BI Desktop beszerzése
-          href: desktop-get-the-desktop.md
-        - name: Első lépések útmutató – Power BI Desktop
-          href: desktop-getting-started.md
-        - name: Gyakori lekérdezési feladatok a Power BI Desktopban
-          href: desktop-common-query-tasks.md
-        - name: Kapcsolatok létrehozása és kezelése a Power BI Desktopban
-          href: desktop-create-and-manage-relationships.md
-        - name: Adatnézet a Power BI Desktopban
-          href: desktop-data-view.md
-        - name: Lekérdezések áttekintése a Power BI Desktopban
-          href: desktop-query-overview.md
-        - name: A DAX alapszintű használata a Power BI Desktopban
-          href: desktop-quickstart-learn-dax-basics.md
-        - name: Kapcsolatok nézet a Power BI Desktopban
-          href: desktop-relationship-view.md
-        - name: Jelentés nézet a Power BI Desktopban
-          href: desktop-report-view.md
-        - name: Kapcsolódás több adatforráshoz a Power BI Desktop alkalmazásban
-          href: desktop-connect-to-data.md
-        - name: Közzététel a Power BI Desktopból
-          href: desktop-upload-desktop-files.md
-        - name: 1. rész – Vizualizációk hozzáadása Power BI-jelentésekhez
-          href: visuals/power-bi-report-add-visualizations-i.md
-        - name: 2. rész – Vizualizációk hozzáadása Power BI-jelentésekhez
-          href: visuals/power-bi-report-add-visualizations-ii.md
-        - name: 'A vizualizáció címének, hátterének és jelmagyarázatának testreszabása'
-          href: visuals/power-bi-visualization-customize-title-background-and-legend.md
-        - name: Adatot nem tartalmazó elemek megjelenítése a Power BI-ban
-          href: desktop-show-items-no-data.md
-        - name: Csatlakozás adatokhoz
-          items:
-            - name: Adatforrások a Power BI Desktopban
-              href: desktop-data-sources.md
-            - name: Csatlakozás egy weblaphoz példaként (előzetes verzió)
-              href: desktop-connect-to-web-by-example.md
-            - name: Kapcsolódás adatkészletekhez a Power BI szolgáltatásban
-              href: desktop-report-lifecycle-datasets.md
-            - name: Excel-munkafüzetek importálása a Power BI Desktopba
-              href: desktop-import-excel-workbooks.md
-            - name: Kapcsolódás adatokhoz általános interfész használatával
-              href: desktop-connect-using-generic-interfaces.md
-            - name: Csatlakozás PDF-fájlhoz
-              href: desktop-connect-pdf.md
-            - name: Kapcsolódás az Adobe Analyticshez
-              href: desktop-connect-adobe-analytics.md
-            - name: Kapcsolódás Oracle-adatbázishoz
-              href: desktop-connect-oracle-database.md
-            - name: Python-szkriptek futtatása a Power BI Desktopban
-              href: desktop-python-scripts.md
-            - name: Python használata a Power Query-szerkesztőben
-              href: desktop-python-in-query-editor.md
-            - name: Külső Python IDE használata a Power BI-jal
-              href: desktop-python-ide.md
-            - name: Power BI-vizualizációk létrehozása a Python használatával
-              href: desktop-python-visuals.md
-            - name: R-parancsfájlok futtatása a Power BI Desktopban
-              href: desktop-r-scripts.md
-            - name: Az R használata a lekérdezésszerkesztőben
-              href: desktop-r-in-query-editor.md
-            - name: Külső R IDE használata a Power BI-ban
-              href: desktop-r-ide.md
-            - name: Támogatott R-csomagok
-              href: service-r-packages-support.md
-            - name: Adatok közvetlen bevitele a Power BI Desktopba
-              href: desktop-enter-data-directly-into-desktop.md
-            - name: Kapcsolódás az Excelhez a Power BI Desktopban
-              href: desktop-connect-excel.md
-            - name: Az Analysis Services többdimenziós adatai a Power BI Desktopban
-              href: desktop-ssas-multidimensional.md
-            - name: Csatlakozás CSV-fájlokhoz a Power BI Desktopban
-              href: desktop-connect-csv.md
-            - name: Csatlakozás Google BigQuery-adatbázishoz a Power BI Desktopban
-              href: desktop-connect-bigquery.md
-            - name: Csatlakozás Impala-adatbázishoz a Power BI Desktopban
-              href: desktop-connect-impala.md
-            - name: Csatlakozás egy OData-csatornához a Power BI Desktopban
-              href: desktop-connect-odata.md
-            - name: Csatlakozás Amazon Redshift-adatbázishoz a Power BI Desktopban
-              href: desktop-connect-redshift.md
-            - name: Csatlakozás egy weblaphoz a Power BI Desktopról
-              href: desktop-connect-to-web.md
-            - name: Kapcsolódás Snowflake Computing-adattárházhoz a Power BI Desktopban
-              href: desktop-connect-snowflake.md
-            - name: Kapcsolódás Azure Consumption Insights-adatokhoz
-              href: desktop-connect-azure-consumption-insights.md
-            - name: Az SAP HANA használata a Power BI Desktopban
-              href: desktop-sap-hana.md
-            - name: Az Analysis Services táblázatos adatai a Power BI Desktopban
-              href: desktop-analysis-services-tabular-data.md
-            - name: A DirectQuery használata a Power BI Desktopban
-              href: desktop-use-directquery.md
-            - name: DirectQuery Oracle- és Teradata-adatbázisokhoz
-              href: desktop-directquery-for-oracle-teradata.md
-            - name: A DirectQuery és az SAP Business Warehouse (BW)
-              href: desktop-directquery-sap-bw.md
-            - name: A DirectQuery és az SAP HANA
-              href: desktop-directquery-sap-hana.md
-            - name: Hivatkozási integritás feltételezése beállítás a Power BI Desktopban
-              href: desktop-assume-referential-integrity.md
-            - name: Az SAP BW-összekötő használata a Power BI Desktopban (előzetes verzió)
-              href: desktop-sap-bw-connector.md
-            - name: OneDrive Vállalati verzióra mutató hivatkozások használata a Power BI Desktopban
-              href: desktop-use-onedrive-business-links.md
-            - name: 'Külső szolgáltatás: Facebook-összekötő a Power BI Desktophoz'
-              href: service-facebook-connector.md
-            - name: 'Külső szolgáltatás: Google Analytics-összekötő a Power BI Desktophoz'
-              href: service-google-analytics-connector.md
-            - name: 'Project Online: kapcsolódás adatokhoz a Power BI Desktoppal'
-              href: desktop-project-online-connect-to-data.md
-        - name: Adatok átalakítása
-          items:
-            - name: Az Alakzatleképezések funkció használata a Power BI Desktopban (előzetes verzió)
-              href: visuals/desktop-shape-map.md
-            - name: Bináris fájlok egyesítése
-              href: desktop-combine-binaries.md
-        - name: Adatok modellezése
-          items:
-            - name: Adatkategorizáció a Power BI Desktopban
-              href: desktop-data-categorization.md
-            - name: Vonalkód mező címkézése mobilalkalmazásokhoz
-              href: desktop-mobile-barcodes.md
-            - name: Földrajzi szűrők beállítása mobilalkalmazásokhoz
-              href: desktop-mobile-geofiltering.md
-            - name: Számított oszlopok a Power BI Desktopban
-              href: desktop-calculated-columns.md
-            - name: Számított táblák a Power BI Desktopban
-              href: desktop-calculated-tables.md
-            - name: Mértékek a Power BI Desktopban
-              href: desktop-measures.md
-            - name: Q&A nyelvi séma szerkesztése
-              href: power-bi-q-and-a-linguistic-schema.md
-            - name: KPI-k importálása és megjelenítése (előzetes verzió)
-              href: desktop-import-and-display-kpis.md
-        - name: Jelentések létrehozása
-          items:
-            - name: Vizuális elemek jelentésekhez
-              href: desktop-visual-elements-for-reports.md
-            - name: Elemleírások létrehozása jelentésoldalak alapján
-              href: desktop-tooltips.md
-            - name: Exportálás PDF-be és a jelentések nyomtatása
-              href: desktop-export-to-pdf.md
-            - name: Q&A a Power BI Desktopban
-              href: desktop-qna-in-reports.md
-            - name: Az Elemzés panel a Power BI Desktopban
-              href: desktop-analytics-pane.md
-            - name: Növekedések és csökkenések megértése elemzésekkel
-              href: desktop-insights.md
-            - name: A diagramok eltérő eloszlásainak helyének azonosítása elemzésekkel
-              href: desktop-insights-find-where-different.md
-            - name: A Power BI könyvjelzői
-              href: desktop-bookmarks.md
-            - name: Jelentéstémák használata
-              href: desktop-report-themes.md
-            - name: Az új szűrőfunkciók kipróbálása
-              href: power-bi-report-filter-preview.md
-            - name: Gyors mértékek használata
-              href: desktop-quick-measures.md
-            - name: Feltételes eset paraméterek használata
-              href: desktop-what-if.md
-            - name: Részletezés használata
-              href: desktop-drillthrough.md
-            - name: Relatív dátumszeletelő és -szűrő használata
-              href: visuals/desktop-slicer-filter-date-range.md
-            - name: Csoportosítás és tárolás használata
-              href: desktop-grouping-and-binning.md
-            - name: Power BI-vizualizációk létrehozása az R programozási nyelvvel
-              href: desktop-r-visuals.md
-            - name: R-alapú egyéni vizuális elemek
-              href: desktop-r-powered-custom-visuals.md
-            - name: Rácsvonalak és rácsvonalhoz igazítás használata
-              href: desktop-gridlines-snap-to-grid.md
-            - name: Oldal megjelenítési beállításai Power BI-jelentésben
-              href: power-bi-report-display-settings.md
-            - name: Oszlop hozzáadása mintából
-              href: desktop-add-column-from-example.md
-            - name: Egyéni oszlop hozzáadása
-              href: desktop-add-custom-column.md
-            - name: Környezethez alkalmazkodó vizuális elemek létrehozása
-              href: visuals/desktop-create-responsive-visuals.md
-            - name: Beágyazott hierarchiák feliratainak használata a Power BI Desktopban (előzetes verzió)
-              href: desktop-inline-hierarchy-labels.md
-            - name: Numerikustartomány-szeletelő használata
-              href: desktop-slicer-numeric-range.md
-            - name: Átméretezhető szeletelő létrehozása
-              href: power-bi-slicer-filter-responsive.md
-            - name: Egyéni válaszkártyák létrehozása Cortanához
-              href: service-cortana-answer-cards.md
-            - name: Sorszintű biztonság
-              href: desktop-rls.md
-            - name: Elemleírások testreszabása
-              href: desktop-custom-tooltips.md
-            - name: Szövegdobozok és alakzatok jelentésekben
-              href: power-bi-reports-add-text-and-shapes.md
-            - name: Hivatkozás hozzáadása egy szövegdobozhoz
-              href: service-add-hyperlink-to-text-box.md
-            - name: Hivatkozások a táblázatokban
-              href: power-bi-hyperlinks-in-tables.md
-            - name: Táblázat feltételes formázása
-              href: desktop-conditional-table-formatting.md
-            - name: Oszlop szerinti rendezés a Power BI Desktopban
-              href: desktop-sort-by-column.md
-            - name: Mobilalkalmazásokhoz optimalizált jelentések létrehozása
-              href: desktop-create-phone-report.md
-            - name: Az Adatok megtekintése és a Rekordok megtekintése használata
-              href: desktop-see-data-see-records.md
-            - name: Jelentések létrehozásával kapcsolatos tippek
-              href: desktop-tips-and-tricks-for-creating-reports.md
-        - name: Vizualizációk
-          items:
-            - name: Vizualizációk a Power BI-ban
-              href: visuals/power-bi-report-visualizations.md
-            - name: Vizuális elemekkel kapcsolatos ajánlott eljárások
-              href: visuals/power-bi-visualization-best-practices.md
-            - name: Vizualizáció-típus módosítása jelentésekben
-              href: visuals/power-bi-report-change-visualization-type.md
-            - name: Adatpontkorlátok vizualizációtípus szerint
-              href: visuals/power-bi-data-points.md
-            - name: A vizuális elem létrehozásához használt adat megjelenítése
-              href: visuals/service-reports-show-data.md
-            - name: Bevezetés a színformázás és tengelytulajdonságok használatába
-              href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
-            - name: Tippek és trükkök a színformázáshoz
-              href: visuals/service-tips-and-tricks-for-color-formatting.md
-            - name: Vizualizáció másolása és beillesztése
-              href: visuals/power-bi-visualization-copy-paste.md
-            - name: A vizualizáció létrehozásához használt adatok exportálása
-              href: visuals/power-bi-visualization-export-data.md
-            - name: 'Vizuális elem áthelyezése, átméretezése és kiugróvá tétele a jelentésben'
-              href: visuals/power-bi-visualization-move-and-resize.md
-            - name: Vizualizációk jelentésen belüli működésének módosítása
-              href: service-reports-visual-interactions.md
-            - name: Hisztogramok
-              href: visuals/service-histograms.md
-            - name: Tippek és trükkök térképes vizuális elemekhez a Power BI-ban
-              href: visuals/power-bi-map-tips-and-tricks.md
-            - name: X és Y tengely tulajdonságainak testreszabása
-              href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-            - name: ArcGIS-térképek a Power BI-ban
-              href: power-bi-visualization-arcgis.md
-            - name: Egyszerű területdiagram
-              href: visuals/power-bi-visualization-basic-area-chart.md
-            - name: Kártyák (nagy méretű numerikus csempék) a Power BI-ban
-              href: visuals/power-bi-visualization-card.md
-            - name: Kombinált diagram a Power BI-ban
-              href: visuals/power-bi-visualization-combo-chart.md
-            - name: Perecdiagramok a Power BI szolgáltatásban
-              href: visuals/power-bi-visualization-doughnut-charts.md
-            - name: Kitöltött (koropletikus) tematikus térképek a Power BI-ban
-              href: visuals/power-bi-visualization-filled-maps-choropleths.md
-            - name: Tölcsérdiagramok a Power BI-ban
-              href: visuals/power-bi-visualization-funnel-charts.md
-            - name: Nagy sűrűségű vonalas mintavétel
-              href: desktop-high-density-sampling.md
-            - name: KPI (teljesítménymutatós) vizuális elemek
-              href: visuals/power-bi-visualization-kpi.md
-            - name: Mátrix vizualizáció
-              href: visuals/desktop-matrix-visual.md
-            - name: Fejlett elemzések és vizualizációk létrehozása R-parancsfájlokkal a Power BI-ban
-              href: visuals/service-r-visuals.md
-            - name: A Power BI kör alakú mérőműszer-diagramjai
-              href: visuals/power-bi-visualization-radial-gauge-charts.md
-            - name: Szalagdiagramok
-              href: visuals/desktop-ribbon-charts.md
-            - name: Pontdiagramok a Power BI-ban
-              href: visuals/power-bi-visualization-scatter.md
-            - name: Nagy sűrűségű pontdiagramok
-              href: visuals/desktop-high-density-scatter-charts.md
-            - name: Szeletelők a Power BI-ban
-              href: visuals/power-bi-visualization-slicers.md
-            - name: Táblázatok a Power BI-ban
-              href: visuals/power-bi-visualization-tables.md
-            - name: Fatérképek a Power BI-ban
-              href: visuals/power-bi-visualization-treemaps.md
-            - name: Vízesésdiagramok a Power BI-ban
-              href: visuals/power-bi-visualization-waterfall-charts.md
-            - name: Dinamikus referenciavonalak létrehozása
-              href: service-analytics-pane.md
-        - name: Hibaelhárítás
-          items:
-            - name: Access-adatbázisok és Excel-munkafüzetek Power BI Desktopba és Power Querybe való importálásával kapcsolatos hibák elhárítása
-              href: desktop-access-database-errors.md
-            - name: A Power BI Desktop indításával kapcsolatos hibák elhárítása
-              href: desktop-error-launching-desktop.md
-    - name: Hivatkozás
-      items:
-        - name: Adattípusok a Power BI Desktopban
-          href: desktop-data-types.md
-        - name: Képletszerkesztő billentyűparancsok a Power BI Desktophoz
-          href: desktop-formula-editor.md
-        - name: A Power BI Desktop adatvédelmi szintjei
-          href: desktop-privacy-levels.md
-        - name: Összekötők bővíthetősége a Power BI-ban
-          href: desktop-connector-extensibility.md
-    - name: Erőforrások
-      items:
-        - name: Power BI Desktop videók
-          href: desktop-videos.md
-        - name: A Power BI Desktop korábbi havi frissítései
-          href: desktop-latest-update-archive.md
-        - name: A Power BI Desktop Mosoly küldése funkciójának adatvédelmi nyilatkozata
-          href: desktop-send-smile-privacy-statement.md
-        - name: Kisegítő lehetőségek a Power BI-jelentésekben
-          href: desktop-accessibility.md
-        - name: A Power BI Desktop bejelentkezési űrlapjának kezelése
-          href: desktop-admin-sign-in-form.md
+      - name: Access-adatbázisok és Excel-munkafüzetek Power BI Desktopba és Power Querybe való importálásával kapcsolatos hibák elhárítása
+        href: desktop-access-database-errors.md
+      - name: A Power BI Desktop indításával kapcsolatos hibák elhárítása
+        href: desktop-error-launching-desktop.md
+  - name: Hivatkozás
+    items:
+    - name: Adattípusok a Power BI Desktopban
+      href: desktop-data-types.md
+    - name: Képletszerkesztő billentyűparancsok a Power BI Desktophoz
+      href: desktop-formula-editor.md
+    - name: A Power BI Desktop adatvédelmi szintjei
+      href: desktop-privacy-levels.md
+    - name: Összekötők bővíthetősége a Power BI-ban
+      href: desktop-connector-extensibility.md
+  - name: Erőforrások
+    items:
+    - name: Power BI Desktop videók
+      href: desktop-videos.md
+    - name: A Power BI Desktop korábbi havi frissítései
+      href: desktop-latest-update-archive.md
+    - name: A Power BI Desktop Mosoly küldése funkciójának adatvédelmi nyilatkozata
+      href: desktop-send-smile-privacy-statement.md
+    - name: Kisegítő lehetőségek a Power BI-jelentésekben
+      href: desktop-accessibility.md
+    - name: A Power BI Desktop bejelentkezési űrlapjának kezelése
+      href: desktop-admin-sign-in-form.md
 - name: Power BI szolgáltatásban
   items:
-    - name: Áttekintés
+  - name: Áttekintés
+    items:
+    - name: A Power BI bemutatása
+      href: power-bi-overview.md
+    - name: A Power BI Desktop és a szolgáltatás összehasonlítása
+      href: service-service-vs-desktop.md
+  - name: Oktatóanyagok
+    items:
+    - name: Első lépések a Power BI-ban
+      href: service-get-started.md
+    - name: Csatlakozás GitHub-mintához
+      href: service-tutorial-connect-to-github.md
+  - name: Fogalmak
+    items:
+    - name: A Power BI szolgáltatás újdonságai
+      href: service-whats-new.md
+    - name: Alapfogalmak
       items:
-        - name: A Power BI bemutatása
-          href: power-bi-overview.md
-        - name: A Power BI Desktop és a szolgáltatás összehasonlítása
-          href: service-service-vs-desktop.md
-    - name: Oktatóanyagok
+      - name: Alapfogalmak tervezőknek
+        href: service-basic-concepts.md
+      - name: Adattípusok a Power BI-ban
+        href: service-get-data.md
+      - name: A jelentésszerkesztő bemutatása
+        href: service-the-report-editor-take-a-tour.md
+      - name: A munka szervezése
+        href: service-new-workspaces.md
+    - name: Munkafolyamat a Power BI-ban
       items:
-        - name: Első lépések a Power BI-ban
-          href: service-get-started.md
-        - name: Csatlakozás GitHub-mintához
-          href: service-tutorial-connect-to-github.md
-    - name: Fogalmak
+      - name: A munka megosztásának módjai
+        href: service-how-to-collaborate-distribute-dashboards-reports.md
+      - name: Az adatok frissen tartása
+        href: refresh-data.md
+      - name: A használat monitorozása
+        href: service-usage-metrics.md
+    - name: Licencelés
       items:
-        - name: A Power BI szolgáltatás újdonságai
-          href: service-whats-new.md
-        - name: Alapfogalmak
-          items:
-            - name: Alapfogalmak tervezőknek
-              href: service-basic-concepts.md
-            - name: Adattípusok a Power BI-ban
-              href: service-get-data.md
-            - name: A jelentésszerkesztő bemutatása
-              href: service-the-report-editor-take-a-tour.md
-            - name: A munka szervezése
-              href: service-new-workspaces.md
-        - name: Munkafolyamat a Power BI-ban
-          items:
-            - name: A munka megosztásának módjai
-              href: service-how-to-collaborate-distribute-dashboards-reports.md
-            - name: Az adatok frissen tartása
-              href: refresh-data.md
-            - name: A használat monitorozása
-              href: service-usage-metrics.md
-        - name: Licencelés
-          items:
-            - name: Önkiszolgáló regisztráció
-              href: service-self-service-signup-for-power-bi.md
-            - name: Licencelés a cégnél
-              href: service-admin-licensing-organization.md
-            - name: Funkciók licenctípusok szerint
-              href: service-features-license-type.md
-        - name: További fogalmak
-          items:
-            - name: 10 tanács segítségkéréshez
-              href: service-tips-for-finding-help.md
-            - name: A licencelés speciális esetei
-              items:
-                - name: A Kiterjesztett Pro-próbaverzió aktiválása
-                  href: service-extended-pro-trial.md
-                - name: Power BI az USA kormányzati szervei számára
-                  href: service-govus-overview.md
-                - name: Gyakori kérdések a Germany Cloud-ügyfelek számára
-                  href: service-govde-faq.md
-            - name: Egyéb
-              items:
-                - name: A Microsoft Flow és a Power BI
-                  href: service-flow-integration.md
-                - name: Első lépések harmadik féltől származó alkalmazásokkal
-                  href: service-power-bi-get-started-third-party-apps.md
-    - name: Útmutató
+      - name: Önkiszolgáló regisztráció
+        href: service-self-service-signup-for-power-bi.md
+      - name: Licencelés a cégnél
+        href: service-admin-licensing-organization.md
+      - name: Funkciók licenctípusok szerint
+        href: service-features-license-type.md
+    - name: További fogalmak
       items:
-        - name: Adatok lekérdezése fájlból
-          items:
-            - name: Adatok beolvasása fájlokból
-              href: service-get-data-from-files.md
-            - name: Az Exceltől a lenyűgöző jelentésekig
-              href: service-from-excel-to-stunning-report.md
-            - name: Adatok elérése Excel-munkafüzetfájlokból
-              href: service-excel-workbook-files.md
-            - name: Adatok lekérése Power BI Desktop-fájlokból
-              href: service-desktop-files.md
-            - name: Paraméterek szerkesztése
-              href: service-parameters.md
-            - name: Adatok lekérdezése vesszővel tagolt (.csv) fájlból
-              href: service-comma-separated-value-files.md
-            - name: Valós idejű streamelés a Power BI-ban
-              href: service-real-time-streaming.md
-            - name: Közzététel Excel-ből a Power BI-ba
-              href: service-publish-from-excel.md
-            - name: Excel-munkafüzet méretének csökkentése
-              href: reduce-the-size-of-an-excel-workbook.md
-        - name: Adatok beolvasása adatbázisokból
-          items:
-            - name: Az Azure és a Power BI
-              href: service-azure-and-power-bi.md
-            - name: A Power BI és az Azure kimenő forgalma
-              href: service-azure-egress-power-bi.md
-            - name: Az Azure SQL Data Warehouse DirectQueryvel
-              href: service-azure-sql-data-warehouse-with-direct-connect.md
-            - name: Az Azure SQL Database DirectQueryvel
-              href: service-azure-sql-database-with-direct-connect.md
-            - name: A Spark on HDInsight DirectQueryvel
-              href: spark-on-hdinsight-with-direct-connect.md
-            - name: Az SQL Server Analysis Services élő adatai a Power BI-ban
-              href: sql-server-analysis-services-tabular-data.md
-        - name: Adatok frissítése
-          items:
-            - name: Ütemezett frissítés beállítása
-              href: refresh-scheduled-refresh.md
-            - name: Power BI Desktop-fájlból létrehozott adatkészlet frissítése – helyi
-              href: refresh-desktop-file-local-drive.md
-            - name: Power BI Desktop-fájlból létrehozott adatkészlet frissítése – felhő
-              href: refresh-desktop-file-onedrive.md
-            - name: Excel-munkafüzetből létrehozott adatkészlet frissítése – helyi
-              href: refresh-excel-file-local-drive.md
-            - name: Excel-munkafüzetből létrehozott adatkészlet frissítése – felhő
-              href: refresh-excel-file-onedrive.md
-            - name: CSV-fájlból létrehozott adatkészlet frissítése a OneDrive-ban
-              href: refresh-csv-file-onedrive.md
-            - name: Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása
-              href: refresh-troubleshooting-refresh-scenarios.md
-        - name: Irányítópultok
-          items:
-            - name: Az irányítópult bemutatása
-              href: service-dashboards.md
-            - name: Irányítópult-csempék
-              href: service-dashboard-tiles.md
-            - name: Irányítópult létrehozása jelentésből
-              href: service-dashboard-create.md
-            - name: Irányítópult másolatának létrehozása
-              href: service-dashboard-copy.md
-            - name: Csempe rögzítése az irányítópultra jelentésből
-              href: service-dashboard-pin-tile-from-report.md
-            - name: Csempe kitűzése egy irányítópultról egy másikra
-              href: service-pin-tile-to-another-dashboard.md
-            - name: Csempe rögzítése az irányítópultra az Excelből
-              href: service-dashboard-pin-tile-from-excel.md
-            - name: Csempe rögzítése az irányítópultra a Q&A kérdésmezőből
-              href: service-dashboard-pin-tile-from-q-and-a.md
-            - name: Teljes jelentésoldal rögzítése irányítópultra
-              href: service-dashboard-pin-live-tile-from-report.md
-            - name: Adatriasztások a Power BI szolgáltatásban
-              href: service-set-data-alerts.md
-            - name: 'Kép, szövegmező, videó vagy kód felvétele az irányítópultra'
-              href: service-dashboard-add-widget.md
-            - name: Csempe szerkesztése
-              href: service-dashboard-edit-tile.md
-            - name: Tippek a tökéletes irányítópult megtervezéséhez
-              href: service-dashboards-design-tips.md
-            - name: Irányítópult telefonos nézetének létrehozása
-              href: service-create-dashboard-mobile-phone-view.md
-            - name: QR-kód létrehozása csempéhez
-              href: service-create-qr-code-for-tile.md
-            - name: Kép felvétele irányítópultra
-              href: service-dashboard-add-image.md
-            - name: Irányítópult adatainak besorolása
-              href: service-data-classification.md
-            - name: Irányítópult-témák
-              href: service-dashboard-themes.md
-        - name: Jelentések
-          items:
-            - name: Jelentés létrehozása adatkészletből
-              href: service-report-create-new.md
-            - name: Szűrők és kiemelések a jelentésekben
-              href: power-bi-reports-filters-and-highlighting.md
-            - name: Szűrő hozzáadása jelentéshez
-              href: power-bi-report-add-filter.md
-            - name: Jelentés mentése a Power BI-ban
-              href: service-report-save.md
-            - name: Jelentés használata szerkesztési nézetben
-              href: service-interact-with-a-report-in-editing-view.md
-            - name: Elemzés az Excelben
-              href: service-analyze-in-excel.md
-            - name: Tippek és trükkök jelentések létrehozásához
-              href: power-bi-reports-tips-and-tricks-for-creating.md
-            - name: Összesítések használata a szolgáltatásban
-              href: service-aggregates.md
-            - name: Használati metrikák jelentésekhez
-              href: service-usage-metrics.md
-            - name: QR-kód létrehozása jelentéshez
-              href: service-create-qr-code-for-report.md
-            - name: Jelentés exportálása a Power BI Desktopba (előzetes verzió)
-              href: service-export-to-pbix.md
-            - name: Jelentés szűrése az URL-címekben szereplő paraméterekkel
-              href: service-url-filters.md
-            - name: Ajánlott eljárások gyors és megbízható jelentések készítéséhez
-              href: power-bi-reports-performance.md
-        - name: Kérdések az adatokról
-          items:
-            - name: Első lépések a Power BI Q&A-ben
-              href: power-bi-visualization-introduction-to-q-and-a.md
-            - name: A Q&A használata vizualizációk és jelentések létrehozásához
-              href: power-bi-tutorial-q-and-a.md
-            - name: Az adatok megfelelő működésének biztosítása a Q&A használatakor
-              href: service-prepare-data-for-q-and-a.md
-            - name: Kiemelt kérdések létrehozása a Q&A-hez
-              href: service-q-and-a-create-featured-questions.md
-            - name: Vizualizációtípusok a Q&A-ban
-              href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
-            - name: A Q&A használata élő kapcsolatokkal
-              href: service-q-and-a-direct-query.md
-            - name: Bevezetés a Power BI-hoz használt Cortanába
-              href: service-cortana-intro.md
-            - name: A Power BI-hoz használt Cortana engedélyezése
-              href: service-cortana-enable.md
-            - name: Gyors elemzések a Power BI-ban
-              href: service-insights.md
-            - name: Adatok optimalizálása gyors elemzésekhez
-              href: service-insights-optimize.md
-        - name: Együttműködés a Power BI-ban
-          items:
-            - name: Alkalmazás-munkaterületek létrehozása
-              href: service-create-workspaces.md
-            - name: Új munkaterületek létrehozása (előzetes verzió)
-              href: service-create-the-new-workspaces.md
-            - name: Alkalmazások létrehozása és megosztása
-              href: service-create-distribute-apps.md
-            - name: Adattárolás felügyelete a munkaterületeken
-              href: service-admin-manage-your-data-storage-in-power-bi.md
-            - name: Kapcsolódás a csoport OneDrive-on tárolt fájljaihoz
-              href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
-            - name: Együttműködés a csoport munkaterületén
-              href: service-collaborate-power-bi-workspace.md
-            - name: Csoport kezelése a Power BI-ban és az Office 365-ben
-              href: service-manage-app-workspace-in-power-bi-and-office-365.md
-        - name: A munka közzététele és megosztása
-          items:
-            - name: Irányítópultok és jelentések megosztása
-              href: service-share-dashboards.md
-            - name: Szűrt jelentés megosztása
-              href: service-share-reports.md
-            - name: Jelentés beágyazása a SharePoint Online-ban
-              href: service-embed-report-spo.md
-            - name: Jelentés beágyazása egy biztonságos portálon vagy webhelyen
-              href: service-embed-secure.md
-            - name: Közzététel Power BI-ból a webre
-              href: service-publish-to-web.md
-            - name: A OneDrive-ban tárolt Excel-munkafüzetre hivatkozó irányítópult megosztása
-              href: service-share-dashboard-that-links-to-excel-onedrive.md
-            - name: Excelhez készült Power BI Publisher
-              href: publisher-for-excel.md
-        - name: Hibaelhárítás
-          items:
-            - name: Elfelejtette a Power BI-hoz használatos jelszavát?
-              href: service-admin-forgot-your-password.md
-            - name: További diagnosztikai adatok gyűjtése a Power BI számára
-              href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
-            - name: Másodlagos e-mail-cím a Power BI-hoz
-              href: service-admin-alternate-email-address-for-power-bi.md
-            - name: Ugyanazon bejelentkezési fiók használata a Power BI-hoz és az Azure-hoz
-              href: service-admin-how-to-use-the-same-account-as-azure.md
-            - name: Dedikált Office 365 – ismert problémák
-              href: service-admin-office-365-dedicated-known-issues.md
-            - name: Cortana hibaelhárítása
-              href: service-cortana-troubleshoot.md
-            - name: Elemzési problémák elhárítása az Excelben
-              href: desktop-troubleshooting-analyze-in-excel.md
-            - name: Helyszíni adatátjárókkal kapcsolatos hibák elhárítása
-              href: service-gateway-onprem-tshoot.md
-            - name: A Power BI-átjáró hibáinak elhárítása – személyes
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
-            - name: Nem támogatott adatforrás frissítési hibáinak elhárítása
-              href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-            - name: Az Azure SQL Database ütemezett frissítési hibáinak elhárítása
-              href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
-            - name: 'Hiba: Nem található adat az Excel-munkafüzetben'
-              href: service-admin-troubleshoot-excel-workbook-data.md
-            - name: Csempékkel kapcsolatos hibák elhárítása
-              href: refresh-troubleshooting-tile-errors.md
-            - name: A Xero tartalomcsomag hitelesítő adatainak frissítése frissítési hiba esetén
-              href: service-refresh-xero-credentials.md
-        - name: Önkiszolgáló adatelőkészítés
-          items:
-            - name: Önkiszolgáló adatelőkészítés adatfolyamokkal (előzetes verzió)
-              href: service-dataflows-overview.md
-            - name: Adatfolyamok létrehozása és használata (előzetes verzió)
-              href: service-dataflows-create-use.md
-            - name: Számított entitások a Power BI Premiummal (előzetes verzió)
-              href: service-dataflows-computed-entities-premium.md
-            - name: Csatlakozás adatforrásokhoz adatfolyamokkal (előzetes verzió)
-              href: service-dataflows-data-sources.md
-            - name: Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)
-              href: service-dataflows-on-premises-gateways.md
-            - name: Entitások összekötése adatfolyamok között (előzetes verzió)
-              href: service-dataflows-linked-entities.md
-            - name: Növekményes frissítések használata adatfolyamokkal (előzetes verzió)
-              href: service-dataflows-incremental-refresh.md
-            - name: Az adatfolyamokkal kapcsolatos fejlesztői források (előzetes verzió)
-              href: service-dataflows-developer-resources.md
-            - name: Csatlakozás adatfolyamokhoz a Power BI Desktopban
-              href: desktop-connect-dataflows.md
-            - name: Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)
-              href: service-dataflows-azure-data-lake-integration.md
-            - name: Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)
-              href: service-dataflows-connect-azure-data-lake-storage-gen2.md
-            - name: Munkaterület adatfolyam-beállításainak konfigurálása (előzetes verzió)
-              href: service-dataflows-configure-workspace-storage-settings.md
-            - name: CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)
-              href: service-dataflows-add-cdm-folder.md
-        - name: Többoldalas jelentések a Power BI-ban
-          items:
-            - name: Mik azok a többoldalas jelentések? (Előzetes verzió)
-              href: paginated-reports-report-builder-power-bi.md
-            - name: Gyakori kérdések a többoldalas jelentésekről (előzetes verzió)
-              href: paginated-reports-faq.md
-            - name: Többoldalas jelentés készítése és feltöltése (előzetes verzió)
-              href: paginated-reports-quickstart-aw.md
-            - name: Eligazodás a Jelentéstervező nézetben (előzetes verzió)
-              href: paginated-reports-report-design-view.md
-            - name: Adatok megadása közvetlenül többoldalas jelentésben (előzetes verzió)
-              href: paginated-reports-enter-data.md
-            - name: Beágyazott adatforrás létrehozása (előzetes verzió)
-              href: paginated-reports-embedded-data-source.md
-            - name: Beágyazott adatkészlet létrehozása (előzetes verzió)
-              href: paginated-reports-create-embedded-dataset.md
-            - name: Paraméterek létrehozása (előzetes verzió)
-              href: paginated-reports-parameters.md
-            - name: Többoldalas jelentés közzététele (előzetes verzió)
-              href: paginated-reports-save-to-power-bi-service.md
-            - name: Többoldalas jelentés megtekintése (előzetes verzió)
-              href: paginated-reports-view-power-bi-service.md
-            - name: Paraméterek használata (előzetes verzió)
-              href: paginated-reports-view-parameters.md
-        - name: Egyéb feladatok
-          items:
-            - name: Tartalom átnevezése a Power BI-ban
-              href: service-rename.md
-            - name: USA-beli kormányzati szerv regisztrálása
-              href: service-govus-signup.md
-            - name: A Power BI szinte bármelyik elemének törlése
-              href: service-delete.md
-            - name: Kapcsolódás szolgáltatásokhoz
-              items:
-                - name: Kapcsolódás szolgáltatásokhoz
-                  href: service-connect-to-services.md
-                - name: Acumatica
-                  href: service-connect-to-acumatica.md
-                - name: Adobe Analytics
-                  href: service-connect-to-adobe-analytics.md
-                - name: Az Alpine Metrics értékesítési előrejelzései
-                  href: service-connect-to-alpine-metrics.md
-                - name: appFigures
-                  href: service-connect-to-appfigures.md
-                - name: Application Insights
-                  href: service-connect-to-application-insights.md
-                - name: AT Internet Bridge
-                  href: service-connect-to-at-internet.md
-                - name: Azure-auditnaplók
-                  href: service-connect-to-azure-audit-logs.md
-                - name: Azure Mobile Engagement
-                  href: service-connect-to-azure-mobile.md
-                - name: Microsoft Azure – használati elemzés
-                  href: service-connect-to-azure-consumption-insights.md
-                - name: Azure Search
-                  href: service-connect-to-azure-search.md
-                - name: Circuit ID
-                  href: service-connect-to-circuit-id.md
-                - name: ClickDimensions
-                  href: service-connect-to-clickdimensions.md
-                - name: comScore Digital Analytix
-                  href: service-connect-to-connect-to.md
-                - name: GitHub
-                  href: service-connect-to-github.md
-                - name: Google Analytics
-                  href: service-connect-to-google-analytics.md
-                - name: Insightly
-                  href: service-connect-to-insightly.md
-                - name: IntelliBoard
-                  href: service-connect-to-intelliboard.md
-                - name: Lithium
-                  href: service-connect-to-lithium.md
-                - name: MailChimp
-                  href: service-connect-to-mailchimp.md
-                - name: Mandrill
-                  href: service-connect-to-mandrill.md
-                - name: Marketo
-                  href: service-connect-to-marketo.md
-                - name: Microsoft Dynamics AX
-                  href: service-connect-to-microsoft-dynamics-ax.md
-                - name: Microsoft Dynamics CRM
-                  href: service-connect-to-microsoft-dynamics-crm.md
-                - name: Microsoft Dynamics NAV
-                  href: service-connect-to-microsoft-dynamics-nav.md
-                - name: Office365Mon
-                  href: service-connect-to-office365mon.md
-                - name: Planview Enterprise
-                  href: service-connect-to-planview.md
-                - name: Prevedere
-                  href: service-connect-to-prevedere.md
-                - name: Project Online
-                  href: service-connect-to-project-online.md
-                - name: Projectplace
-                  href: service-connect-to-projectplace.md
-                - name: QuickBooks Online
-                  href: service-connect-to-quickbooks-online.md
-                - name: Salesforce
-                  href: service-connect-to-salesforce.md
-                - name: SendGrid
-                  href: service-connect-to-sendgrid.md
-                - name: ServiceNow Incidents
-                  href: service-connect-to-servicenow.md
-                - name: Smartsheet
-                  href: service-connect-to-smartsheet.md
-                - name: SparkPost
-                  href: service-connect-to-sparkpost.md
-                - name: SQL Database naplózás
-                  href: service-connect-to-azure-sql-database-auditing.md
-                - name: SQL Sentry
-                  href: service-connect-to-sql-sentry.md
-                - name: Stripe
-                  href: service-connect-to-stripe.md
-                - name: SweetIQ
-                  href: service-connect-to-sweetiq.md
-                - name: Troux
-                  href: service-connect-to-troux.md
-                - name: Twilio
-                  href: service-connect-to-twilio.md
-                - name: tyGraph
-                  href: service-connect-to-tygraph.md
-                - name: UserVoice
-                  href: service-connect-to-uservoice.md
-                - name: VMob
-                  href: service-connect-to-vmob.md
-                - name: Webtrends
-                  href: service-connect-to-webtrends.md
-                - name: Windows Dev Center
-                  href: service-connect-to-windows-dev-center.md
-                - name: Xero
-                  href: service-connect-to-xero.md
-                - name: Zendesk
-                  href: service-connect-to-zendesk.md
-                - name: Ziosk
-                  href: service-connect-to-ziosk.md
-                - name: Zuora
-                  href: service-connect-to-zuora.md
-            - name: Céges tartalomcsomagok
-              items:
-                - name: 'Céges tartalomcsomagok kezelése, frissítése és törlése'
-                  href: service-organizational-content-pack-manage-update-delete.md
-                - name: 'Céges tartalomcsomagok: Másolás, frissítés és hozzáférés'
-                  href: service-organizational-content-pack-copy-refresh-access.md
-                - name: 'Céges tartalomcsomagok: Bevezetés'
-                  href: service-organizational-content-pack-introduction.md
-                - name: Szervezeti tartalomcsomag létrehozása és közzététele
-                  href: service-organizational-content-pack-create-and-publish.md
-                - name: Céges tartalomcsomaghoz való kapcsolódás törlése
-                  href: service-organizational-content-pack-disconnect.md
-            - name: Tartalomcsomag hitelesítése
-              items:
-                - name: Tartalomcsomag-tanúsítási program
-                  href: service-content-pack-overview.md
-                - name: Sablon tartalomcsomag szerzői műveletei
-                  href: template-content-pack-authoring.md
-                - name: Sablon tartalomcsomag tesztelése
-                  href: template-content-pack-testing.md
-                - name: Sablon tartalomcsomag használata
-                  href: template-content-pack-experience.md
-    - name: Erőforrások
+      - name: 10 tanács segítségkéréshez
+        href: service-tips-for-finding-help.md
+      - name: A licencelés speciális esetei
+        items:
+        - name: A Kiterjesztett Pro-próbaverzió aktiválása
+          href: service-extended-pro-trial.md
+        - name: Power BI az USA kormányzati szervei számára
+          href: service-govus-overview.md
+        - name: Gyakori kérdések a Germany Cloud-ügyfelek számára
+          href: service-govde-faq.md
+      - name: Egyéb
+        items:
+        - name: A Microsoft Flow és a Power BI
+          href: service-flow-integration.md
+        - name: Első lépések harmadik féltől származó alkalmazásokkal
+          href: service-power-bi-get-started-third-party-apps.md
+  - name: Útmutató
+    items:
+    - name: Adatok lekérdezése fájlból
       items:
-        - name: Videók
-          href: videos.md
-        - name: Webináriumok
-          href: webinars.md
-        - name: Támogatott nyelvek és országok/régiók
-          href: supported-languages-countries-regions.md
-        - name: Tanulmányok
-          href: whitepapers.md
+      - name: Adatok beolvasása fájlokból
+        href: service-get-data-from-files.md
+      - name: Az Exceltől a lenyűgöző jelentésekig
+        href: service-from-excel-to-stunning-report.md
+      - name: Adatok elérése Excel-munkafüzetfájlokból
+        href: service-excel-workbook-files.md
+      - name: Adatok lekérése Power BI Desktop-fájlokból
+        href: service-desktop-files.md
+      - name: Paraméterek szerkesztése
+        href: service-parameters.md
+      - name: Adatok lekérdezése vesszővel tagolt (.csv) fájlból
+        href: service-comma-separated-value-files.md
+      - name: Valós idejű streamelés a Power BI-ban
+        href: service-real-time-streaming.md
+      - name: Közzététel Excel-ből a Power BI-ba
+        href: service-publish-from-excel.md
+      - name: Excel-munkafüzet méretének csökkentése
+        href: reduce-the-size-of-an-excel-workbook.md
+    - name: Adatok beolvasása adatbázisokból
+      items:
+      - name: Az Azure és a Power BI
+        href: service-azure-and-power-bi.md
+      - name: A Power BI és az Azure kimenő forgalma
+        href: service-azure-egress-power-bi.md
+      - name: Az Azure SQL Data Warehouse DirectQueryvel
+        href: service-azure-sql-data-warehouse-with-direct-connect.md
+      - name: Az Azure SQL Database DirectQueryvel
+        href: service-azure-sql-database-with-direct-connect.md
+      - name: A Spark on HDInsight DirectQueryvel
+        href: spark-on-hdinsight-with-direct-connect.md
+      - name: Az SQL Server Analysis Services élő adatai a Power BI-ban
+        href: sql-server-analysis-services-tabular-data.md
+    - name: Adatok frissítése
+      items:
+      - name: Ütemezett frissítés beállítása
+        href: refresh-scheduled-refresh.md
+      - name: Power BI Desktop-fájlból létrehozott adatkészlet frissítése – helyi
+        href: refresh-desktop-file-local-drive.md
+      - name: Power BI Desktop-fájlból létrehozott adatkészlet frissítése – felhő
+        href: refresh-desktop-file-onedrive.md
+      - name: Excel-munkafüzetből létrehozott adatkészlet frissítése – helyi
+        href: refresh-excel-file-local-drive.md
+      - name: Excel-munkafüzetből létrehozott adatkészlet frissítése – felhő
+        href: refresh-excel-file-onedrive.md
+      - name: CSV-fájlból létrehozott adatkészlet frissítése a OneDrive-ban
+        href: refresh-csv-file-onedrive.md
+      - name: Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása
+        href: refresh-troubleshooting-refresh-scenarios.md
+    - name: Irányítópultok
+      items:
+      - name: Az irányítópult bemutatása
+        href: service-dashboards.md
+      - name: Irányítópult-csempék
+        href: service-dashboard-tiles.md
+      - name: Irányítópult létrehozása jelentésből
+        href: service-dashboard-create.md
+      - name: Irányítópult másolatának létrehozása
+        href: service-dashboard-copy.md
+      - name: Csempe rögzítése az irányítópultra jelentésből
+        href: service-dashboard-pin-tile-from-report.md
+      - name: Csempe kitűzése egy irányítópultról egy másikra
+        href: service-pin-tile-to-another-dashboard.md
+      - name: Csempe rögzítése az irányítópultra az Excelből
+        href: service-dashboard-pin-tile-from-excel.md
+      - name: Csempe rögzítése az irányítópultra a Q&A kérdésmezőből
+        href: service-dashboard-pin-tile-from-q-and-a.md
+      - name: Teljes jelentésoldal rögzítése irányítópultra
+        href: service-dashboard-pin-live-tile-from-report.md
+      - name: Adatriasztások a Power BI szolgáltatásban
+        href: service-set-data-alerts.md
+      - name: Kép, szövegmező, videó vagy kód felvétele az irányítópultra
+        href: service-dashboard-add-widget.md
+      - name: Csempe szerkesztése
+        href: service-dashboard-edit-tile.md
+      - name: Tippek a tökéletes irányítópult megtervezéséhez
+        href: service-dashboards-design-tips.md
+      - name: Irányítópult telefonos nézetének létrehozása
+        href: service-create-dashboard-mobile-phone-view.md
+      - name: QR-kód létrehozása csempéhez
+        href: service-create-qr-code-for-tile.md
+      - name: Kép felvétele irányítópultra
+        href: service-dashboard-add-image.md
+      - name: Irányítópult adatainak besorolása
+        href: service-data-classification.md
+      - name: Irányítópult-témák
+        href: service-dashboard-themes.md
+    - name: Jelentések
+      items:
+      - name: Jelentés létrehozása adatkészletből
+        href: service-report-create-new.md
+      - name: Szűrők és kiemelések a jelentésekben
+        href: power-bi-reports-filters-and-highlighting.md
+      - name: Szűrő hozzáadása jelentéshez
+        href: power-bi-report-add-filter.md
+      - name: Jelentés mentése a Power BI-ban
+        href: service-report-save.md
+      - name: Jelentés használata szerkesztési nézetben
+        href: service-interact-with-a-report-in-editing-view.md
+      - name: Elemzés az Excelben
+        href: service-analyze-in-excel.md
+      - name: Tippek és trükkök jelentések létrehozásához
+        href: power-bi-reports-tips-and-tricks-for-creating.md
+      - name: Összesítések használata a szolgáltatásban
+        href: service-aggregates.md
+      - name: Használati metrikák jelentésekhez
+        href: service-usage-metrics.md
+      - name: QR-kód létrehozása jelentéshez
+        href: service-create-qr-code-for-report.md
+      - name: Jelentés exportálása a Power BI Desktopba (előzetes verzió)
+        href: service-export-to-pbix.md
+      - name: Jelentés szűrése az URL-címekben szereplő paraméterekkel
+        href: service-url-filters.md
+      - name: Ajánlott eljárások gyors és megbízható jelentések készítéséhez
+        href: power-bi-reports-performance.md
+    - name: Kérdések az adatokról
+      items:
+      - name: Első lépések a Power BI Q&A-ben
+        href: power-bi-visualization-introduction-to-q-and-a.md
+      - name: A Q&A használata vizualizációk és jelentések létrehozásához
+        href: power-bi-tutorial-q-and-a.md
+      - name: Az adatok megfelelő működésének biztosítása a Q&A használatakor
+        href: service-prepare-data-for-q-and-a.md
+      - name: Kiemelt kérdések létrehozása a Q&A-hez
+        href: service-q-and-a-create-featured-questions.md
+      - name: Vizualizációtípusok a Q&A-ban
+        href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+      - name: A Q&A használata élő kapcsolatokkal
+        href: service-q-and-a-direct-query.md
+      - name: Bevezetés a Power BI-hoz használt Cortanába
+        href: service-cortana-intro.md
+      - name: A Power BI-hoz használt Cortana engedélyezése
+        href: service-cortana-enable.md
+      - name: Gyors elemzések a Power BI-ban
+        href: service-insights.md
+      - name: Adatok optimalizálása gyors elemzésekhez
+        href: service-insights-optimize.md
+    - name: Együttműködés a Power BI-ban
+      items:
+      - name: Alkalmazás-munkaterületek létrehozása
+        href: service-create-workspaces.md
+      - name: Új munkaterületek létrehozása (előzetes verzió)
+        href: service-create-the-new-workspaces.md
+      - name: Alkalmazások létrehozása és megosztása
+        href: service-create-distribute-apps.md
+      - name: Adattárolás felügyelete a munkaterületeken
+        href: service-admin-manage-your-data-storage-in-power-bi.md
+      - name: Kapcsolódás a csoport OneDrive-on tárolt fájljaihoz
+        href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
+      - name: Együttműködés a csoport munkaterületén
+        href: service-collaborate-power-bi-workspace.md
+      - name: Csoport kezelése a Power BI-ban és az Office 365-ben
+        href: service-manage-app-workspace-in-power-bi-and-office-365.md
+    - name: A munka közzététele és megosztása
+      items:
+      - name: Irányítópultok és jelentések megosztása
+        href: service-share-dashboards.md
+      - name: Szűrt jelentés megosztása
+        href: service-share-reports.md
+      - name: Jelentés beágyazása a SharePoint Online-ban
+        href: service-embed-report-spo.md
+      - name: Jelentés beágyazása egy biztonságos portálon vagy webhelyen
+        href: service-embed-secure.md
+      - name: Közzététel Power BI-ból a webre
+        href: service-publish-to-web.md
+      - name: A OneDrive-ban tárolt Excel-munkafüzetre hivatkozó irányítópult megosztása
+        href: service-share-dashboard-that-links-to-excel-onedrive.md
+      - name: Excelhez készült Power BI Publisher
+        href: publisher-for-excel.md
+    - name: Hibaelhárítás
+      items:
+      - name: Elfelejtette a Power BI-hoz használatos jelszavát?
+        href: service-admin-forgot-your-password.md
+      - name: További diagnosztikai adatok gyűjtése a Power BI számára
+        href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+      - name: Másodlagos e-mail-cím a Power BI-hoz
+        href: service-admin-alternate-email-address-for-power-bi.md
+      - name: Ugyanazon bejelentkezési fiók használata a Power BI-hoz és az Azure-hoz
+        href: service-admin-how-to-use-the-same-account-as-azure.md
+      - name: Dedikált Office 365 – ismert problémák
+        href: service-admin-office-365-dedicated-known-issues.md
+      - name: Cortana hibaelhárítása
+        href: service-cortana-troubleshoot.md
+      - name: Elemzési problémák elhárítása az Excelben
+        href: desktop-troubleshooting-analyze-in-excel.md
+      - name: Helyszíni adatátjárókkal kapcsolatos hibák elhárítása
+        href: service-gateway-onprem-tshoot.md
+      - name: A Power BI-átjáró hibáinak elhárítása – személyes
+        href: service-admin-troubleshooting-power-bi-personal-gateway.md
+      - name: Nem támogatott adatforrás frissítési hibáinak elhárítása
+        href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
+      - name: Az Azure SQL Database ütemezett frissítési hibáinak elhárítása
+        href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
+      - name: 'Hiba: Nem található adat az Excel-munkafüzetben'
+        href: service-admin-troubleshoot-excel-workbook-data.md
+      - name: Csempékkel kapcsolatos hibák elhárítása
+        href: refresh-troubleshooting-tile-errors.md
+      - name: A Xero tartalomcsomag hitelesítő adatainak frissítése frissítési hiba esetén
+        href: service-refresh-xero-credentials.md
+    - name: Önkiszolgáló adatelőkészítés
+      items:
+      - name: Önkiszolgáló adatelőkészítés adatfolyamokkal (előzetes verzió)
+        href: service-dataflows-overview.md
+      - name: Adatfolyamok létrehozása és használata (előzetes verzió)
+        href: service-dataflows-create-use.md
+      - name: Számított entitások a Power BI Premiummal (előzetes verzió)
+        href: service-dataflows-computed-entities-premium.md
+      - name: Csatlakozás adatforrásokhoz adatfolyamokkal (előzetes verzió)
+        href: service-dataflows-data-sources.md
+      - name: Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)
+        href: service-dataflows-on-premises-gateways.md
+      - name: Entitások összekötése adatfolyamok között (előzetes verzió)
+        href: service-dataflows-linked-entities.md
+      - name: Növekményes frissítések használata adatfolyamokkal (előzetes verzió)
+        href: service-dataflows-incremental-refresh.md
+      - name: Az adatfolyamokkal kapcsolatos fejlesztői források (előzetes verzió)
+        href: service-dataflows-developer-resources.md
+      - name: Csatlakozás adatfolyamokhoz a Power BI Desktopban
+        href: desktop-connect-dataflows.md
+      - name: Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)
+        href: service-dataflows-azure-data-lake-integration.md
+      - name: Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)
+        href: service-dataflows-connect-azure-data-lake-storage-gen2.md
+      - name: Munkaterület adatfolyam-beállításainak konfigurálása (előzetes verzió)
+        href: service-dataflows-configure-workspace-storage-settings.md
+      - name: CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)
+        href: service-dataflows-add-cdm-folder.md
+    - name: Többoldalas jelentések a Power BI-ban
+      items:
+      - name: Mik azok a többoldalas jelentések? (Előzetes verzió)
+        href: paginated-reports-report-builder-power-bi.md
+      - name: Gyakori kérdések a többoldalas jelentésekről (előzetes verzió)
+        href: paginated-reports-faq.md
+      - name: Többoldalas jelentés készítése és feltöltése (előzetes verzió)
+        href: paginated-reports-quickstart-aw.md
+      - name: Eligazodás a Jelentéstervező nézetben (előzetes verzió)
+        href: paginated-reports-report-design-view.md
+      - name: Adatok megadása közvetlenül többoldalas jelentésben (előzetes verzió)
+        href: paginated-reports-enter-data.md
+      - name: Beágyazott adatforrás létrehozása (előzetes verzió)
+        href: paginated-reports-embedded-data-source.md
+      - name: Beágyazott adatkészlet létrehozása (előzetes verzió)
+        href: paginated-reports-create-embedded-dataset.md
+      - name: Paraméterek létrehozása (előzetes verzió)
+        href: paginated-reports-parameters.md
+      - name: Többoldalas jelentés közzététele (előzetes verzió)
+        href: paginated-reports-save-to-power-bi-service.md
+      - name: Többoldalas jelentés megtekintése (előzetes verzió)
+        href: paginated-reports-view-power-bi-service.md
+      - name: Paraméterek használata (előzetes verzió)
+        href: paginated-reports-view-parameters.md
+    - name: Egyéb feladatok
+      items:
+      - name: Tartalom átnevezése a Power BI-ban
+        href: service-rename.md
+      - name: USA-beli kormányzati szerv regisztrálása
+        href: service-govus-signup.md
+      - name: A Power BI szinte bármelyik elemének törlése
+        href: service-delete.md
+      - name: Kapcsolódás szolgáltatásokhoz
+        items:
+        - name: Kapcsolódás szolgáltatásokhoz
+          href: service-connect-to-services.md
+        - name: Acumatica
+          href: service-connect-to-acumatica.md
+        - name: Adobe Analytics
+          href: service-connect-to-adobe-analytics.md
+        - name: Az Alpine Metrics értékesítési előrejelzései
+          href: service-connect-to-alpine-metrics.md
+        - name: appFigures
+          href: service-connect-to-appfigures.md
+        - name: Application Insights
+          href: service-connect-to-application-insights.md
+        - name: AT Internet Bridge
+          href: service-connect-to-at-internet.md
+        - name: Azure-auditnaplók
+          href: service-connect-to-azure-audit-logs.md
+        - name: Azure Mobile Engagement
+          href: service-connect-to-azure-mobile.md
+        - name: Microsoft Azure – használati elemzés
+          href: service-connect-to-azure-consumption-insights.md
+        - name: Azure Search
+          href: service-connect-to-azure-search.md
+        - name: Circuit ID
+          href: service-connect-to-circuit-id.md
+        - name: ClickDimensions
+          href: service-connect-to-clickdimensions.md
+        - name: comScore Digital Analytix
+          href: service-connect-to-connect-to.md
+        - name: GitHub
+          href: service-connect-to-github.md
+        - name: Google Analytics
+          href: service-connect-to-google-analytics.md
+        - name: Insightly
+          href: service-connect-to-insightly.md
+        - name: IntelliBoard
+          href: service-connect-to-intelliboard.md
+        - name: Lithium
+          href: service-connect-to-lithium.md
+        - name: MailChimp
+          href: service-connect-to-mailchimp.md
+        - name: Mandrill
+          href: service-connect-to-mandrill.md
+        - name: Marketo
+          href: service-connect-to-marketo.md
+        - name: Microsoft Dynamics AX
+          href: service-connect-to-microsoft-dynamics-ax.md
+        - name: Microsoft Dynamics CRM
+          href: service-connect-to-microsoft-dynamics-crm.md
+        - name: Microsoft Dynamics NAV
+          href: service-connect-to-microsoft-dynamics-nav.md
+        - name: Office365Mon
+          href: service-connect-to-office365mon.md
+        - name: Planview Enterprise
+          href: service-connect-to-planview.md
+        - name: Prevedere
+          href: service-connect-to-prevedere.md
+        - name: Project Online
+          href: service-connect-to-project-online.md
+        - name: Projectplace
+          href: service-connect-to-projectplace.md
+        - name: QuickBooks Online
+          href: service-connect-to-quickbooks-online.md
+        - name: Salesforce
+          href: service-connect-to-salesforce.md
+        - name: SendGrid
+          href: service-connect-to-sendgrid.md
+        - name: ServiceNow Incidents
+          href: service-connect-to-servicenow.md
+        - name: Smartsheet
+          href: service-connect-to-smartsheet.md
+        - name: SparkPost
+          href: service-connect-to-sparkpost.md
+        - name: SQL Database naplózás
+          href: service-connect-to-azure-sql-database-auditing.md
+        - name: SQL Sentry
+          href: service-connect-to-sql-sentry.md
+        - name: Stripe
+          href: service-connect-to-stripe.md
+        - name: SweetIQ
+          href: service-connect-to-sweetiq.md
+        - name: Troux
+          href: service-connect-to-troux.md
+        - name: Twilio
+          href: service-connect-to-twilio.md
+        - name: tyGraph
+          href: service-connect-to-tygraph.md
+        - name: UserVoice
+          href: service-connect-to-uservoice.md
+        - name: VMob
+          href: service-connect-to-vmob.md
+        - name: Webtrends
+          href: service-connect-to-webtrends.md
+        - name: Windows Dev Center
+          href: service-connect-to-windows-dev-center.md
+        - name: Xero
+          href: service-connect-to-xero.md
+        - name: Zendesk
+          href: service-connect-to-zendesk.md
+        - name: Ziosk
+          href: service-connect-to-ziosk.md
+        - name: Zuora
+          href: service-connect-to-zuora.md
+      - name: Céges tartalomcsomagok
+        items:
+        - name: Céges tartalomcsomagok kezelése, frissítése és törlése
+          href: service-organizational-content-pack-manage-update-delete.md
+        - name: 'Céges tartalomcsomagok: Másolás, frissítés és hozzáférés'
+          href: service-organizational-content-pack-copy-refresh-access.md
+        - name: 'Céges tartalomcsomagok: Bevezetés'
+          href: service-organizational-content-pack-introduction.md
+        - name: Szervezeti tartalomcsomag létrehozása és közzététele
+          href: service-organizational-content-pack-create-and-publish.md
+        - name: Céges tartalomcsomaghoz való kapcsolódás törlése
+          href: service-organizational-content-pack-disconnect.md
+      - name: Tartalomcsomag hitelesítése
+        items:
+        - name: Tartalomcsomag-tanúsítási program
+          href: service-content-pack-overview.md
+        - name: Sablon tartalomcsomag szerzői műveletei
+          href: template-content-pack-authoring.md
+        - name: Sablon tartalomcsomag tesztelése
+          href: template-content-pack-testing.md
+        - name: Sablon tartalomcsomag használata
+          href: template-content-pack-experience.md
+  - name: Erőforrások
+    items:
+    - name: Videók
+      href: videos.md
+    - name: Webináriumok
+      href: webinars.md
+    - name: Támogatott nyelvek és országok/régiók
+      href: supported-languages-countries-regions.md
+    - name: Tanulmányok
+      href: whitepapers.md
 - name: Power BI fejlesztőknek
   items:
-    - name: Mire használhatják a fejlesztők a Power BI-t?
-      href: developer/what-can-you-do.md
-    - name: Beágyazott analitika
+  - name: Mire használhatják a fejlesztők a Power BI-t?
+    href: developer/what-can-you-do.md
+  - name: Beágyazott analitika
+    items:
+    - name: Áttekintés
       items:
-        - name: Áttekintés
-          items:
-            - name: A beágyazás a Power BI szolgáltatással ismertetése
-              href: developer/embedding.md
-            - name: A Power BI Embedded az Azure-ban ismertetése
-              href: developer/azure-pbie-what-is-power-bi-embedded.md
-        - name: Oktatóanyagok
-          items:
-            - name: Tartalom beágyazása ügyfelek számára
-              href: developer/embed-sample-for-customers.md
-            - name: Tartalom beágyazása a cég számára
-              href: developer/embed-sample-for-your-organization.md
-            - name: Tartalom beágyazása szuverén felhőkhöz
-              href: developer/embed-sample-for-customers-sovereign-clouds.md
-        - name: Fogalmak
-          items:
-            - name: Ajánlott eljárások teljesítményének javításához
-              href: developer/embedded-performance-best-practices.md
-            - name: Sorszintű biztonság
-              href: developer/embedded-row-level-security.md
-            - name: Több bérlő kezelése
-              href: developer/embed-multi-tenancy.md
-            - name: Diagnosztikai naplózás a Power BI Embedded szolgáltatáshoz az Azure-ban
-              href: developer/azure-pbie-diag-logs.md
-            - name: Beágyazás – GYIK
-              href: developer/embedded-faq.md
-            - name: Power BI-engedélyek
-              href: developer/power-bi-permissions.md
-        - name: Útmutató
-          items:
-            - name: Beágyazás alkalmazásból
-              href: developer/embed-from-apps.md
-            - name: Azure Active Directory-bérlő létrehozása
-              href: developer/create-an-azure-active-directory-tenant.md
-            - name: Alkalmazás regisztrálása
-              href: developer/register-app.md
-            - name: Hitelesítés Power BI szolgáltatásba
-              href: developer/get-azuread-access-token.md
-            - name: Beágyazással kapcsolatos GYIK
-              href: developer/qanda.md
-            - name: Kapacitások kezelése az Azure-ban
-              items:
-                - name: Kapacitás létrehozása az Azure-ban
-                  href: developer/azure-pbie-create-capacity.md
-                - name: Kapacitás létrehozása az Azure-ban a Multi-Geo használatával
-                  href: developer/embedded-multi-geo.md
-                - name: Kapacitás méretezése az Azure-ban
-                  href: developer/azure-pbie-scale-capacity.md
-                - name: Kapacitás szünetelése és elindítása az Azure-ban
-                  href: developer/azure-pbie-pause-start.md
-            - name: Hibaelhárítás
-              items:
-                - name: Beágyazott alkalmazás hibaelhárítása
-                  href: developer/embedded-troubleshoot.md
-            - name: Áttelepítés munkaterület-csoportokból
-              items:
-                - name: Áttelepítés Power BI-beli munkaterület-csoportokból
-                  href: developer/migrate-from-powerbi-embedded.md
-                - name: Áttelepítési eszköz
-                  href: developer/migrate-tool.md
-                - name: Migrálási kódtöredékek
-                  href: developer/migrate-code-snippets.md
-        - name: Hivatkozás
-          items:
-            - name: API-k
-              items:
-                - name: Azure Resource Management REST API-k
-                  href: 'https://docs.microsoft.com/rest/api/power-bi-embedded/'
-                - name: Power BI REST API-k
-                  href: 'https://msdn.microsoft.com/library/mt147898.aspx'
-                - name: A Power BI REST API-jainak leírása
-                  href: developer/rest-api-reference.md
-            - name: .NET SDK letöltése
-              href: 'https://go.microsoft.com/fwlink/?linkid=848274'
-            - name: Egyéni elrendezések beágyazása alkalmazásokba
-              href: developer/embedded-custom-layout.md
-        - name: Erőforrások
-          items:
-            - name: Fejlesztői központ
-              href: 'https://powerbi.microsoft.com/en-us/developers/'
-            - name: Beágyazáshoz szükséges telepítési eszköz
-              href: 'https://aka.ms/embedsetup'
-            - name: JavaScript Playground-minta
-              href: 'https://go.microsoft.com/fwlink/?linkid=848279'
-            - name: Power BI JavaScript wiki
-              href: 'https://github.com/Microsoft/powerbi-javascript/wiki'
-            - name: JavaScript Git-tárház
-              href: 'https://go.microsoft.com/fwlink/?linkid=848276'
-            - name: 'Power BI C# Git-tárház'
-              href: 'https://go.microsoft.com/fwlink/?linkid=848273'
-            - name: Minták
-              href: 'https://go.microsoft.com/fwlink/?linkid=851293'
-            - name: Power BI-közösség
-              href: 'https://go.microsoft.com/fwlink/?linkid=848280'
-            - name: Stack Overflow
-              href: 'https://go.microsoft.com/fwlink/?linkid=848281'
-    - name: Egyéni vizualizációk
+      - name: A beágyazás a Power BI szolgáltatással ismertetése
+        href: developer/embedding.md
+      - name: A Power BI Embedded az Azure-ban ismertetése
+        href: developer/azure-pbie-what-is-power-bi-embedded.md
+    - name: Oktatóanyagok
       items:
-        - name: Áttekintés
-          items:
-            - name: Egyéni vizualizációk a Power BI-ban
-              href: power-bi-custom-visuals.md
-        - name: Oktatóanyagok
-          items:
-            - name: Egyéni Power BI-vizualizáció fejlesztése
-              href: developer/custom-visual-develop-tutorial.md
-            - name: Formázási beállítások hozzáadása
-              href: developer/custom-visual-develop-tutorial-format-options.md
-        - name: Fogalmak
-          items:
-            - name: Egyéni vizualizációk cégek számára a Power BI-ban
-              href: power-bi-custom-visuals-organization.md
-            - name: Útmutató Power BI-vizualizációkhoz
-              href: developer/office-store-in-app-purchase-visual-guidelines.md
-            - name: Egyéni vizualizációk – GYIK
-              href: power-bi-custom-visuals-faq.md
-            - name: Képességek használata
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/'
-            - name: Adatnézet-leképezések
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/dataviewmappings/'
-            - name: Objektumok és tulajdonságok
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/'
-            - name: Speciális szerkesztési mód
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/advanced-edit-mode/'
-            - name: Útmutató a verzióval ellátott API-ba való migráláshoz
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/migrating-to-versioned-api-guide/'
-        - name: Útmutató
-          items:
-            - name: Egyéni vizuális elem hitelesítése
-              href: power-bi-custom-visuals-certified.md
-            - name: Egyéni vizualizációk közzététele az AppSource-ban
-              href: developer/office-store.md
-            - name: Egyéni R-vizualizációk a Power BI-ban
-              href: desktop-r-powered-custom-visuals.md
-            - name: Hibaelhárítás
-              items:
-                - name: Hibaelhárítás az egyéni vizualizációk létrehozásakor
-                  href: power-bi-custom-visuals-troubleshoot.md
-        - name: Hivatkozás
-          items:
-            - name: API-k
-              href: 'https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/'
-        - name: Erőforrások
-          items:
-            - name: Fejlesztői központ
-              href: 'https://powerbi.microsoft.com/developers/'
-            - name: Minták
-              href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
-            - name: Egyéni vizuális elemek Git-tárház
-              href: 'https://go.microsoft.com/fwlink/?linkid=848277'
-    - name: Automatizálás
+      - name: Tartalom beágyazása ügyfelek számára
+        href: developer/embed-sample-for-customers.md
+      - name: Tartalom beágyazása a cég számára
+        href: developer/embed-sample-for-your-organization.md
+      - name: Tartalom beágyazása szuverén felhőkhöz
+        href: developer/embed-sample-for-customers-sovereign-clouds.md
+    - name: Fogalmak
       items:
-        - name: Áttekintés
-          items:
-            - name: Mire használhatom a Power BI API-t?
-              href: developer/overview-of-power-bi-rest-api.md
-        - name: Oktatóanyagok
-          items:
-            - name: Adatok elküldése adatkészletbe
-              href: developer/walkthrough-push-data.md
-        - name: Fogalmak
-          items:
-            - name: Automatikus adatmegőrzési szabályzat valós idejű adatokhoz
-              href: developer/api-automatic-retention-policy-for-real-time-data.md
-            - name: Adatok leküldése
-              items:
-                - name: A Power BI REST API korlátozásai
-                  href: developer/api-rest-api-limitations.md
-                - name: Adatkészlet tulajdonságai
-                  href: developer/api-dataset-properties.md
-                - name: Adatmodell verzióinak kezelése
-                  href: developer/api-data-model-versioning.md
-        - name: Útmutató
-          items:
-            - name: Alkalmazás regisztrálása az Azure AD-ben
-              href: developer/walkthrough-push-data-register-app-with-azure-ad.md
-            - name: Hitelesítési hozzáférési jogkivonat beszerzése
-              href: developer/walkthrough-push-data-get-token.md
-            - name: Adatkészlet létrehozása
-              href: developer/walkthrough-push-data-create-dataset.md
-            - name: Sorok hozzáadása adatkészlettel
-              href: developer/walkthrough-push-data-get-datasets.md
-            - name: Sorok hozzáadása egy táblához
-              href: developer/walkthrough-push-data-add-rows.md
-        - name: Hivatkozás
-          items:
-            - name: REST API-k
-              href: 'https://docs.microsoft.com/rest/api/power-bi'
-            - name: A Power BI REST API-jainak leírása
-              href: developer/rest-api-reference.md
-            - name: Teljes kódlista
-              href: developer/walkthrough-push-data-complete-code.md
-        - name: Erőforrások
-          items:
-            - name: Fejlesztői központ
-              href: 'https://powerbi.microsoft.com/en-us/developers/'
-            - name: 'Power BI C# Git-tárház'
-              href: 'https://go.microsoft.com/fwlink/?linkid=848273'
-            - name: .NET SDK letöltése
-              href: 'https://go.microsoft.com/fwlink/?linkid=848274'
+      - name: Ajánlott eljárások teljesítményének javításához
+        href: developer/embedded-performance-best-practices.md
+      - name: Sorszintű biztonság
+        href: developer/embedded-row-level-security.md
+      - name: Több bérlő kezelése
+        href: developer/embed-multi-tenancy.md
+      - name: Diagnosztikai naplózás a Power BI Embedded szolgáltatáshoz az Azure-ban
+        href: developer/azure-pbie-diag-logs.md
+      - name: Beágyazás – GYIK
+        href: developer/embedded-faq.md
+      - name: Power BI-engedélyek
+        href: developer/power-bi-permissions.md
+    - name: Útmutató
+      items:
+      - name: Beágyazás alkalmazásból
+        href: developer/embed-from-apps.md
+      - name: Azure Active Directory-bérlő létrehozása
+        href: developer/create-an-azure-active-directory-tenant.md
+      - name: Alkalmazás regisztrálása
+        href: developer/register-app.md
+      - name: Hitelesítés Power BI szolgáltatásba
+        href: developer/get-azuread-access-token.md
+      - name: Beágyazással kapcsolatos GYIK
+        href: developer/qanda.md
+      - name: Kapacitások kezelése az Azure-ban
+        items:
+        - name: Kapacitás létrehozása az Azure-ban
+          href: developer/azure-pbie-create-capacity.md
+        - name: Kapacitás létrehozása az Azure-ban a Multi-Geo használatával
+          href: developer/embedded-multi-geo.md
+        - name: Kapacitás méretezése az Azure-ban
+          href: developer/azure-pbie-scale-capacity.md
+        - name: Kapacitás szünetelése és elindítása az Azure-ban
+          href: developer/azure-pbie-pause-start.md
+      - name: Hibaelhárítás
+        items:
+        - name: Beágyazott alkalmazás hibaelhárítása
+          href: developer/embedded-troubleshoot.md
+      - name: Áttelepítés munkaterület-csoportokból
+        items:
+        - name: Áttelepítés Power BI-beli munkaterület-csoportokból
+          href: developer/migrate-from-powerbi-embedded.md
+        - name: Áttelepítési eszköz
+          href: developer/migrate-tool.md
+        - name: Migrálási kódtöredékek
+          href: developer/migrate-code-snippets.md
+    - name: Hivatkozás
+      items:
+      - name: API-k
+        items:
+        - name: Azure Resource Management REST API-k
+          href: https://docs.microsoft.com/rest/api/power-bi-embedded/
+        - name: Power BI REST API-k
+          href: https://msdn.microsoft.com/library/mt147898.aspx
+        - name: A Power BI REST API-jainak leírása
+          href: developer/rest-api-reference.md
+      - name: .NET SDK letöltése
+        href: https://go.microsoft.com/fwlink/?linkid=848274
+      - name: Egyéni elrendezések beágyazása alkalmazásokba
+        href: developer/embedded-custom-layout.md
+    - name: Erőforrások
+      items:
+      - name: Fejlesztői központ
+        href: https://powerbi.microsoft.com/en-us/developers/
+      - name: Beágyazáshoz szükséges telepítési eszköz
+        href: https://aka.ms/embedsetup
+      - name: JavaScript Playground-minta
+        href: https://go.microsoft.com/fwlink/?linkid=848279
+      - name: Power BI JavaScript wiki
+        href: https://github.com/Microsoft/powerbi-javascript/wiki
+      - name: JavaScript Git-tárház
+        href: https://go.microsoft.com/fwlink/?linkid=848276
+      - name: Power BI C# Git-tárház
+        href: https://go.microsoft.com/fwlink/?linkid=848273
+      - name: Minták
+        href: https://go.microsoft.com/fwlink/?linkid=851293
+      - name: Power BI-közösség
+        href: https://go.microsoft.com/fwlink/?linkid=848280
+      - name: Stack Overflow
+        href: https://go.microsoft.com/fwlink/?linkid=848281
+  - name: Egyéni vizualizációk
+    items:
+    - name: Áttekintés
+      items:
+      - name: Egyéni vizualizációk a Power BI-ban
+        href: power-bi-custom-visuals.md
+    - name: Oktatóanyagok
+      items:
+      - name: Egyéni Power BI-vizualizáció fejlesztése
+        href: developer/custom-visual-develop-tutorial.md
+      - name: Formázási beállítások hozzáadása
+        href: developer/custom-visual-develop-tutorial-format-options.md
+    - name: Fogalmak
+      items:
+      - name: Egyéni vizualizációk cégek számára a Power BI-ban
+        href: power-bi-custom-visuals-organization.md
+      - name: Útmutató Power BI-vizualizációkhoz
+        href: developer/office-store-in-app-purchase-visual-guidelines.md
+      - name: Egyéni vizualizációk – GYIK
+        href: power-bi-custom-visuals-faq.md
+      - name: Képességek használata
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
+      - name: Adatnézet-leképezések
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/dataviewmappings/
+      - name: Objektumok és tulajdonságok
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/
+      - name: Speciális szerkesztési mód
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/advanced-edit-mode/
+      - name: Útmutató a verzióval ellátott API-ba való migráláshoz
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/migrating-to-versioned-api-guide/
+    - name: Útmutató
+      items:
+      - name: Egyéni vizuális elem hitelesítése
+        href: power-bi-custom-visuals-certified.md
+      - name: Egyéni vizualizációk közzététele az AppSource-ban
+        href: developer/office-store.md
+      - name: Egyéni R-vizualizációk a Power BI-ban
+        href: desktop-r-powered-custom-visuals.md
+      - name: Hibaelhárítás
+        items:
+        - name: Hibaelhárítás az egyéni vizualizációk létrehozásakor
+          href: power-bi-custom-visuals-troubleshoot.md
+    - name: Hivatkozás
+      items:
+      - name: API-k
+        href: https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/
+    - name: Erőforrások
+      items:
+      - name: Fejlesztői központ
+        href: https://powerbi.microsoft.com/developers/
+      - name: Minták
+        href: https://microsoft.github.io/PowerBI-visuals/samples/
+      - name: Egyéni vizuális elemek Git-tárház
+        href: https://go.microsoft.com/fwlink/?linkid=848277
+  - name: Automatizálás
+    items:
+    - name: Áttekintés
+      items:
+      - name: Mire használhatom a Power BI API-t?
+        href: developer/overview-of-power-bi-rest-api.md
+    - name: Oktatóanyagok
+      items:
+      - name: Adatok elküldése adatkészletbe
+        href: developer/walkthrough-push-data.md
+    - name: Fogalmak
+      items:
+      - name: Automatikus adatmegőrzési szabályzat valós idejű adatokhoz
+        href: developer/api-automatic-retention-policy-for-real-time-data.md
+      - name: Adatok leküldése
+        items:
+        - name: A Power BI REST API korlátozásai
+          href: developer/api-rest-api-limitations.md
+        - name: Adatkészlet tulajdonságai
+          href: developer/api-dataset-properties.md
+        - name: Adatmodell verzióinak kezelése
+          href: developer/api-data-model-versioning.md
+    - name: Útmutató
+      items:
+      - name: Alkalmazás regisztrálása az Azure AD-ben
+        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
+      - name: Hitelesítési hozzáférési jogkivonat beszerzése
+        href: developer/walkthrough-push-data-get-token.md
+      - name: Adatkészlet létrehozása
+        href: developer/walkthrough-push-data-create-dataset.md
+      - name: Sorok hozzáadása adatkészlettel
+        href: developer/walkthrough-push-data-get-datasets.md
+      - name: Sorok hozzáadása egy táblához
+        href: developer/walkthrough-push-data-add-rows.md
+    - name: Hivatkozás
+      items:
+      - name: REST API-k
+        href: https://docs.microsoft.com/rest/api/power-bi
+      - name: A Power BI REST API-jainak leírása
+        href: developer/rest-api-reference.md
+      - name: Teljes kódlista
+        href: developer/walkthrough-push-data-complete-code.md
+    - name: Erőforrások
+      items:
+      - name: Fejlesztői központ
+        href: https://powerbi.microsoft.com/en-us/developers/
+      - name: Power BI C# Git-tárház
+        href: https://go.microsoft.com/fwlink/?linkid=848273
+      - name: .NET SDK letöltése
+        href: https://go.microsoft.com/fwlink/?linkid=848274
 - name: Power BI jelentéskészítő kiszolgálón
   items:
-    - name: Áttekintés
+  - name: Áttekintés
+    items:
+    - name: Mi a Power BI jelentéskészítő kiszolgáló?
+      href: report-server/get-started.md
+    - name: A Power BI jelentéskészítő kiszolgáló és szolgáltatás összehasonlítása
+      href: report-server/compare-report-server-service.md
+  - name: Oktatóanyagok
+    items:
+    - name: A Power BI jelentéskészítő kiszolgáló áttekintése virtuális gépen
+      href: report-server/tutorial-explore-report-server-web-portal.md
+  - name: Fogalmak
+    items:
+    - name: Újdonságok
+      href: report-server/whats-new.md
+    - name: Változási napló
+      href: report-server/changelog.md
+    - name: Támogatási ütemterv
+      href: report-server/support-timeline.md
+    - name: Hardver- és szoftverkövetelmények
+      href: report-server/system-requirements.md
+    - name: Böngészőtámogatás
+      href: report-server/browser-support.md
+    - name: Rendszergazdai áttekintés
+      href: report-server/admin-handbook-overview.md
+    - name: Jelentéskészítő kiszolgálói alapismeretek
       items:
-        - name: Mi a Power BI jelentéskészítő kiszolgáló?
-          href: report-server/get-started.md
-        - name: A Power BI jelentéskészítő kiszolgáló és szolgáltatás összehasonlítása
-          href: report-server/compare-report-server-service.md
-    - name: Oktatóanyagok
+      - name: Power BI-jelentések ütemezett frissítése
+        href: report-server/scheduled-refresh.md
+      - name: Adatforrások a Power BI-jelentésekhez
+        href: report-server/data-sources.md
+      - name: Adatforrások többoldalas jelentésekhez
+        href: report-server/connect-data-sources.md
+      - name: Előfizetések
+        href: https://go.microsoft.com/fwlink/?linkid=851310
+      - name: A mobilalkalmazás használata
+        href: https://go.microsoft.com/fwlink/?linkid=848711
+      - name: Ütemezett frissítésekkel kapcsolatos hibák elhárítása
+        href: report-server/scheduled-refresh-troubleshoot.md
+    - name: Jelentéskészítő kiszolgáló fejlesztőknek
       items:
-        - name: A Power BI jelentéskészítő kiszolgáló áttekintése virtuális gépen
-          href: report-server/tutorial-explore-report-server-web-portal.md
-    - name: Fogalmak
+      - name: Jelentéskészítő kiszolgáló fejlesztőknek
+        href: report-server/developer-handbook-overview.md
+      - name: Jelentésmegjelenítő vezérlőelem
+        href: https://go.microsoft.com/fwlink/?linkid=848724
+      - name: Fejlesztői bővítmények
+        href: https://go.microsoft.com/fwlink/?linkid=848723
+      - name: Jelentések beágyazása
+        href: report-server/quickstart-embed.md
+  - name: Útmutató
+    items:
+    - name: A Power BI Desktop telepítése
+      href: report-server/install-powerbi-desktop.md
+    - name: Jelentéskészítő kiszolgálói alapismeretek
       items:
-        - name: Újdonságok
-          href: report-server/whats-new.md
-        - name: Változási napló
-          href: report-server/changelog.md
-        - name: Támogatási ütemterv
-          href: report-server/support-timeline.md
-        - name: Hardver- és szoftverkövetelmények
-          href: report-server/system-requirements.md
-        - name: Böngészőtámogatás
-          href: report-server/browser-support.md
-        - name: Rendszergazdai áttekintés
-          href: report-server/admin-handbook-overview.md
-        - name: Jelentéskészítő kiszolgálói alapismeretek
-          items:
-            - name: Power BI-jelentések ütemezett frissítése
-              href: report-server/scheduled-refresh.md
-            - name: Adatforrások a Power BI-jelentésekhez
-              href: report-server/data-sources.md
-            - name: Adatforrások többoldalas jelentésekhez
-              href: report-server/connect-data-sources.md
-            - name: Előfizetések
-              href: 'https://go.microsoft.com/fwlink/?linkid=851310'
-            - name: A mobilalkalmazás használata
-              href: 'https://go.microsoft.com/fwlink/?linkid=848711'
-            - name: Ütemezett frissítésekkel kapcsolatos hibák elhárítása
-              href: report-server/scheduled-refresh-troubleshoot.md
-        - name: Jelentéskészítő kiszolgáló fejlesztőknek
-          items:
-            - name: Jelentéskészítő kiszolgáló fejlesztőknek
-              href: report-server/developer-handbook-overview.md
-            - name: Jelentésmegjelenítő vezérlőelem
-              href: 'https://go.microsoft.com/fwlink/?linkid=848724'
-            - name: Fejlesztői bővítmények
-              href: 'https://go.microsoft.com/fwlink/?linkid=848723'
-            - name: Jelentések beágyazása
-              href: report-server/quickstart-embed.md
-    - name: Útmutató
+      - name: Power BI-jelentés létrehozása jelentéskészítő kiszolgálóhoz
+        href: report-server/quickstart-create-powerbi-report.md
+      - name: Tartalmak kezelése a jelentéskészítő kiszolgálón
+        href: report-server/getting-around.md
+      - name: Lapszámozott jelentés létrehozása jelentéskészítő kiszolgálóhoz
+        href: report-server/quickstart-create-paginated-report.md
+      - name: Adatok megadása közvetlenül többoldalas jelentésben
+        href: paginated-reports-enter-data.md
+      - name: KPI-k használata
+        href: https://go.microsoft.com/fwlink/?linkid=849021
+      - name: 'Megosztott adathalmazok elérése OData-csatornákként '
+        href: report-server/access-dataset-odata.md
+      - name: Ütemezett frissítés beállítása
+        href: report-server/configure-scheduled-refresh.md
+      - name: Megjegyzés hozzáadása jelentéshez
+        href: report-server/add-comments.md
+    - name: Jelentéskészítő kiszolgáló rendszergazdáknak
       items:
-        - name: A Power BI Desktop telepítése
-          href: report-server/install-powerbi-desktop.md
-        - name: Jelentéskészítő kiszolgálói alapismeretek
-          items:
-            - name: Power BI-jelentés létrehozása jelentéskészítő kiszolgálóhoz
-              href: report-server/quickstart-create-powerbi-report.md
-            - name: Tartalmak kezelése a jelentéskészítő kiszolgálón
-              href: report-server/getting-around.md
-            - name: Sorszintű biztonság (RLS) a jelentéskészítő kiszolgálóban
-              href: report-server/row-level-security-report-server.md
-            - name: Lapszámozott jelentés létrehozása jelentéskészítő kiszolgálóhoz
-              href: report-server/quickstart-create-paginated-report.md
-            - name: Adatok megadása közvetlenül többoldalas jelentésben
-              href: paginated-reports-enter-data.md
-            - name: KPI-k használata
-              href: 'https://go.microsoft.com/fwlink/?linkid=849021'
-            - name: Megosztott adathalmazok elérése OData-csatornákként
-              href: report-server/access-dataset-odata.md
-            - name: Ütemezett frissítés beállítása
-              href: report-server/configure-scheduled-refresh.md
-            - name: Megjegyzés hozzáadása jelentéshez
-              href: report-server/add-comments.md
-        - name: Jelentéskészítő kiszolgáló rendszergazdáknak
-          items:
-            - name: Jelentéskészítő kiszolgáló telepítése
-              href: report-server/install-report-server.md
-            - name: A termékkulcs megkeresése
-              href: report-server/find-product-key.md
-            - name: Jelentéskészítő kiszolgáló frissítése
-              href: report-server/upgrade.md
-            - name: Jelentéskészítő kiszolgáló áthelyezése
-              href: report-server/migrate-report-server.md
-            - name: A Kerberos konfigurálása Power BI-jelentések használatára
-              href: report-server/configure-kerberos-powerbi-reports.md
-            - name: Mobilalkalmazások hozzáférésének távoli konfigurálása
-              href: report-server/configure-powerbi-mobile-apps-remote.md
-            - name: Excel-munkafüzetek üzemeltetése
-              href: report-server/excel-oos.md
-    - name: Hivatkozás
-      items:
-        - name: REST API
-          href: report-server/rest-api.md
-        - name: WMI
-          href: 'https://go.microsoft.com/fwlink/?linkid=848719'
-        - name: SOAP API-k
-          href: 'https://go.microsoft.com/fwlink/?linkid=848721'
-        - name: URL-hozzáférés
-          href: 'https://go.microsoft.com/fwlink/?linkid=848722'
-        - name: Bővítmények
-          href: 'https://go.microsoft.com/fwlink/?linkid=848723'
-    - name: Erőforrások
-      items:
-        - name: Kapacitástervezési tanulmány
-          href: report-server/capacity-planning.md
+      - name: Jelentéskészítő kiszolgáló telepítése
+        href: report-server/install-report-server.md
+      - name: A termékkulcs megkeresése
+        href: report-server/find-product-key.md
+      - name: Jelentéskészítő kiszolgáló frissítése
+        href: report-server/upgrade.md
+      - name: Jelentéskészítő kiszolgáló áthelyezése
+        href: report-server/migrate-report-server.md
+      - name: A Kerberos konfigurálása Power BI-jelentések használatára
+        href: report-server/configure-kerberos-powerbi-reports.md
+      - name: Mobilalkalmazások hozzáférésének távoli konfigurálása
+        href: report-server/configure-powerbi-mobile-apps-remote.md
+      - name: Excel-munkafüzetek üzemeltetése
+        href: report-server/excel-oos.md
+  - name: Hivatkozás
+    items:
+    - name: REST API
+      href: report-server/rest-api.md
+    - name: WMI
+      href: https://go.microsoft.com/fwlink/?linkid=848719
+    - name: SOAP API-k
+      href: https://go.microsoft.com/fwlink/?linkid=848721
+    - name: URL-hozzáférés
+      href: https://go.microsoft.com/fwlink/?linkid=848722
+    - name: Bővítmények
+      href: https://go.microsoft.com/fwlink/?linkid=848723
+  - name: Erőforrások
+    items:
+    - name: Kapacitástervezési tanulmány
+      href: report-server/capacity-planning.md
 - name: Átjárók
   items:
-    - name: Áttekintés
+  - name: Áttekintés
+    items:
+    - name: Mik a Power BI-átjárók?
+      href: service-gateway-getting-started.md
+  - name: Oktatóanyagok
+    items:
+    - name: Csatlakozás SQL Server-adatokhoz
+      href: service-gateway-sql-tutorial.md
+  - name: Fogalmak
+    items:
+    - name: Útmutató adatátjáró üzembe helyezéséhez
+      href: service-gateway-deployment-guidance.md
+    - name: Helyszíni adatátjáró – GYIK
+      href: service-gateway-onprem-faq.md
+  - name: Útmutató
+    items:
+    - name: Átjárók telepítése
+      href: service-gateway-install.md
+    - name: Átjárók kezelése
+      href: service-gateway-manage.md
+    - name: A vállalati adatforrások kezelése – Analysis Services
+      href: service-gateway-enterprise-manage-ssas.md
+    - name: A vállalati adatforrások kezelése – SAP HANA
+      href: service-gateway-enterprise-manage-sap.md
+    - name: A vállalati adatforrások kezelése – SQL
+      href: service-gateway-enterprise-manage-sql.md
+    - name: A vállalati adatforrások kezelése – Oracle
+      href: service-gateway-onprem-manage-oracle.md
+    - name: A vállalati adatforrások kezelése – importálás és ütemezett frissítés
+      href: service-gateway-enterprise-manage-scheduled-refresh.md
+    - name: Helyszíni és felhőbeli adatforrások egyesítése
+      href: service-gateway-mashup-on-premises-cloud.md
+    - name: Az egyszeri bejelentkezés (SSO) engedélyezése
       items:
-        - name: Mik a Power BI-átjárók?
-          href: service-gateway-getting-started.md
-    - name: Oktatóanyagok
-      items:
-        - name: Csatlakozás SQL Server-adatokhoz
-          href: service-gateway-sql-tutorial.md
-    - name: Fogalmak
-      items:
-        - name: Útmutató adatátjáró üzembe helyezéséhez
-          href: service-gateway-deployment-guidance.md
-        - name: Helyszíni adatátjáró – GYIK
-          href: service-gateway-onprem-faq.md
-    - name: Útmutató
-      items:
-        - name: Átjárók telepítése
-          href: service-gateway-install.md
-        - name: Átjárók kezelése
-          href: service-gateway-manage.md
-        - name: A vállalati adatforrások kezelése – Analysis Services
-          href: service-gateway-enterprise-manage-ssas.md
-        - name: A vállalati adatforrások kezelése – SAP HANA
-          href: service-gateway-enterprise-manage-sap.md
-        - name: A vállalati adatforrások kezelése – SQL
-          href: service-gateway-enterprise-manage-sql.md
-        - name: A vállalati adatforrások kezelése – Oracle
-          href: service-gateway-onprem-manage-oracle.md
-        - name: A vállalati adatforrások kezelése – importálás és ütemezett frissítés
-          href: service-gateway-enterprise-manage-scheduled-refresh.md
-        - name: Helyszíni és felhőbeli adatforrások egyesítése
-          href: service-gateway-mashup-on-premises-cloud.md
-        - name: Az egyszeri bejelentkezés (SSO) engedélyezése
-          items:
-            - name: Egyszeri bejelentkezés (SSO) – áttekintés
-              href: service-gateway-sso-overview.md
-            - name: Egyszeri bejelentkezés (SSO) – Kerberos
-              href: service-gateway-sso-kerberos.md
-            - name: Egyszeri bejelentkezés (SSO) – Kerberos – erőforrás-alapú
-              href: service-gateway-sso-kerberos-resource.md
-            - name: Egyszeri bejelentkezés (SSO) – SAML
-              href: service-gateway-sso-saml.md
-        - name: Proxybeállítások konfigurálása
-          href: service-gateway-proxy.md
-        - name: Magas rendelkezésre állású fürtök helyszíni adatátjáróhoz
-          href: service-gateway-high-availability-clusters.md
-        - name: Helyszíni adatátjáró
-          href: service-gateway-onprem.md
-        - name: Helyszíni adatátjáró – részletes
-          href: service-gateway-onprem-indepth.md
-        - name: Helyszíni adatátjáró (személyes mód)
-          href: service-gateway-personal-mode.md
-        - name: Egyéni összekötők
-          href: service-gateway-custom-connectors.md
-        - name: A helyszíni adatátjáróval kapcsolatos hibák elhárítása
-          href: service-gateway-onprem-tshoot.md
+      - name: Egyszeri bejelentkezés (SSO) – áttekintés
+        href: service-gateway-sso-overview.md
+      - name: Egyszeri bejelentkezés (SSO) – Kerberos
+        href: service-gateway-sso-kerberos.md
+      - name: Egyszeri bejelentkezés (SSO) – Kerberos – erőforrás-alapú
+        href: service-gateway-sso-kerberos-resource.md
+      - name: Egyszeri bejelentkezés (SSO) – SAML
+        href: service-gateway-sso-saml.md
+    - name: Proxybeállítások konfigurálása
+      href: service-gateway-proxy.md
+    - name: Magas rendelkezésre állású fürtök helyszíni adatátjáróhoz
+      href: service-gateway-high-availability-clusters.md
+    - name: Helyszíni adatátjáró
+      href: service-gateway-onprem.md
+    - name: Helyszíni adatátjáró – részletes
+      href: service-gateway-onprem-indepth.md
+    - name: Helyszíni adatátjáró (személyes mód)
+      href: service-gateway-personal-mode.md
+    - name: Egyéni összekötők
+      href: service-gateway-custom-connectors.md
+    - name: A helyszíni adatátjáróval kapcsolatos hibák elhárítása
+      href: service-gateway-onprem-tshoot.md
 - name: Felügyelet
   items:
-    - name: Áttekintés
+  - name: Áttekintés
+    items:
+    - name: Mit jelent a Power BI-felügyelet?
+      href: service-admin-administering-power-bi-in-your-organization.md
+  - name: Fogalmak
+    items:
+    - name: Power BI Premium
       items:
-        - name: Mit jelent a Power BI-felügyelet?
-          href: service-admin-administering-power-bi-in-your-organization.md
-    - name: Fogalmak
+      - name: Mit jelent a Power BI Premium?
+        href: service-premium.md
+      - name: Prémium szintű kapacitás memóriahasználata, optimalizálás
+        href: service-premium-understand-how-it-works.md
+      - name: A Power BI Premium megvásárlása
+        href: service-admin-premium-purchase.md
+      - name: A Power BI Premium kezelése
+        href: service-admin-premium-manage.md
+      - name: A Power BI Premium monitorozása
+        href: service-admin-premium-monitor-capacity.md
+      - name: Prémium szintű kapacitás újraindítása
+        href: service-admin-premium-restart.md
+      - name: Nagy adatkészletek támogatása
+        href: service-premium-large-datasets.md
+      - name: Növekményes frissítés
+        href: service-premium-incremental-refresh.md
+      - name: Multi-Geo támogatás (előzetes verzió)
+        href: service-admin-premium-multi-geo.md
+      - name: Power BI Premium – gyakori kérdések
+        href: service-premium-faq.md
+    - name: Felügyeleti szerepkör az Office 365-ben
+      href: service-admin-role.md
+    - name: Gyakori kérdések (GYIK)
+      href: service-admin-faq.md
+  - name: Útmutató
+    items:
+    - name: Licencelés és regisztráció
       items:
-        - name: Power BI Premium
-          items:
-            - name: Mit jelent a Power BI Premium?
-              href: service-premium.md
-            - name: 'Prémium szintű kapacitás memóriahasználata, optimalizálás'
-              href: service-premium-understand-how-it-works.md
-            - name: A Power BI Premium megvásárlása
-              href: service-admin-premium-purchase.md
-            - name: A Power BI Premium kezelése
-              href: service-admin-premium-manage.md
-            - name: A Power BI Premium monitorozása
-              href: service-admin-premium-monitor-capacity.md
-            - name: Prémium szintű kapacitás újraindítása
-              href: service-admin-premium-restart.md
-            - name: Nagy adatkészletek támogatása
-              href: service-premium-large-datasets.md
-            - name: Növekményes frissítés
-              href: service-premium-incremental-refresh.md
-            - name: Multi-Geo támogatás (előzetes verzió)
-              href: service-admin-premium-multi-geo.md
-            - name: Power BI Premium – gyakori kérdések
-              href: service-premium-faq.md
-        - name: Felügyeleti szerepkör az Office 365-ben
-          href: service-admin-role.md
-        - name: Gyakori kérdések (GYIK)
-          href: service-admin-faq.md
-    - name: Útmutató
-      items:
-        - name: Licencelés és regisztráció
-          items:
-            - name: Szervezeti licencelés
-              href: service-admin-licensing-organization.md
-            - name: A Power BI Pro megvásárlása
-              href: service-admin-purchasing-power-bi-pro.md
-            - name: Regisztráció az Office 365 próbaverziójával
-              href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-            - name: Power BI hozzáadása Office 365-partnerrel
-              href: service-admin-syndication-partner.md
-        - name: Hol található a bérlőm?
-          href: service-admin-where-is-my-tenant-located.md
-        - name: Bejelentkezett felhasználók keresése
-          href: service-admin-access-usage.md
-        - name: A Power BI naplózása
-          href: service-admin-auditing.md
-        - name: Szolgáltatásállapot nyomon követése
-          href: service-admin-health.md
-        - name: A Power BI-fiók megszüntetése
-          href: service-admin-closing-your-account.md
-        - name: A Power BI és az ExpressRoute
-          href: service-admin-power-bi-expressroute.md
-        - name: Az Azure AD B2B használata
-          href: service-admin-azure-ad-b2b.md
-        - name: Sorszintű biztonság a Power BI-vel
-          href: service-admin-rls.md
-        - name: A Power BI archivált munkaterülete
-          href: service-admin-power-bi-archived-workspace.md
-        - name: Mobilalkalmazások konfigurálása az Intune-nal
-          href: service-admin-mobile-intune.md
-    - name: Hivatkozás
-      items:
-        - name: 'PowerShell, REST API-k és .NET SDK'
-          href: service-admin-reference.md
-        - name: Power BI-parancsmagok PowerShellhez
-          href: 'https://docs.microsoft.com/powershell/power-bi/'
-          maintainContext: true
-        - name: Szolgáltatási URL-referencia
-          href: power-bi-whitelist-urls.md
-    - name: Erőforrások
-      items:
-        - name: Megközelítések a Power BI irányításához és üzembe helyezéséhez
-          href: service-admin-governance.md
-        - name: A Power BI és a biztonság
-          href: service-admin-power-bi-security.md
+      - name: Szervezeti licencelés
+        href: service-admin-licensing-organization.md
+      - name: A Power BI Pro megvásárlása
+        href: service-admin-purchasing-power-bi-pro.md
+      - name: Regisztráció az Office 365 próbaverziójával
+        href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+      - name: Power BI hozzáadása Office 365-partnerrel
+        href: service-admin-syndication-partner.md
+    - name: Hol található a bérlőm?
+      href: service-admin-where-is-my-tenant-located.md
+    - name: Bejelentkezett felhasználók keresése
+      href: service-admin-access-usage.md
+    - name: A Power BI naplózása
+      href: service-admin-auditing.md
+    - name: Szolgáltatásállapot nyomon követése
+      href: service-admin-health.md
+    - name: A Power BI-fiók megszüntetése
+      href: service-admin-closing-your-account.md
+    - name: A Power BI és az ExpressRoute
+      href: service-admin-power-bi-expressroute.md
+    - name: Az Azure AD B2B használata
+      href: service-admin-azure-ad-b2b.md
+    - name: Sorszintű biztonság a Power BI-vel
+      href: service-admin-rls.md
+    - name: A Power BI archivált munkaterülete
+      href: service-admin-power-bi-archived-workspace.md
+    - name: Mobilalkalmazások konfigurálása az Intune-nal
+      href: service-admin-mobile-intune.md
+  - name: Hivatkozás
+    items:
+    - name: PowerShell, REST API-k és .NET SDK
+      href: service-admin-reference.md
+    - name: Power BI-parancsmagok PowerShellhez
+      href: https://docs.microsoft.com/powershell/power-bi/
+      maintainContext: true
+    - name: Szolgáltatási URL-referencia
+      href: power-bi-whitelist-urls.md
+  - name: Erőforrások
+    items:
+    - name: Megközelítések a Power BI irányításához és üzembe helyezéséhez
+      href: service-admin-governance.md
+    - name: A Power BI és a biztonság
+      href: service-admin-power-bi-security.md
+ms.openlocfilehash: b3553d493940b831e3e604fe43176ace125fe995
+ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54406730"
