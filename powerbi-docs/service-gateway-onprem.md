@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: 4bc704eb5aeb2bf6da18a43a6d4502b5541ce249
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: eea6fe12fdd8821c803863b63ede93179bf67f07
+ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287899"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899250"
 ---
 # <a name="on-premises-data-gateway"></a>Helyszíni adatátjáró
 
@@ -96,7 +96,9 @@ Amikor hozzáad egy adatforrást az átjáróhoz, meg kell adnia az adatforrás 
 
 ## <a name="tenant-level-administration"></a>Bérlőszintű felügyelet
 
-Jelenleg nincs olyan felület, ahol a bérlő rendszergazdája együtt kezelhetné az összes olyan átjárót, amelyeket más felhasználók telepítettek és konfiguráltak.  Bérlőt felügyelő rendszergazdáknak azt javasoljuk, hogy kérjék meg a cégen belüli felhasználókat, hogy minden általuk telepített átjáróhoz adják hozzá őket rendszergazdaként. Ez lehetővé teszi, hogy a cég összes átjáróját kezelhesse az Átjáróbeállítások oldalon vagy pedig [PowerShell-parancsok](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters) használatával. 
+Bérlői rendszergazdaként megtekinthet és kezelhet minden olyan helyszíni adatátjárót, amelyet a bérlőben telepítettek. Ez a képesség jelenleg nyilvános előzetes verzióban érhető el. További információt a [Power Platform felügyeleti központjának dokumentációjában](/power-platform/admin/onpremises-data-gateway-management) talál.
+
+Bérlőt felügyelő rendszergazdáknak másik lehetőségként azt javasoljuk, hogy kérjék meg a cégen belüli felhasználókat, hogy minden általuk telepített átjáróhoz adják hozzá őket rendszergazdaként. Ez lehetővé teszi, hogy a cég összes átjáróját kezelhesse az Átjáróbeállítások oldalon vagy pedig [PowerShell-parancsok](service-gateway-high-availability-clusters.md#powershell-support-for-gateway-clusters) használatával. 
 
 ## <a name="enabling-outbound-azure-connections"></a>Kimenő Azure-kapcsolatok engedélyezése
 
