@@ -20,7 +20,7 @@ ms.locfileid: "54287635"
 ---
 # <a name="visualizations-for-power-bi-consumers"></a>Vizualizációk Power BI-**felhasználók** számára
 
-Legegyszerűbb formájukban a ***vizualizációk****olyan*diagramok, amelyeket a Power BI *tervezői* hoznak létre a *jelentésekben* és az *adathalmazokban* szereplő adatok alapján. 
+Legegyszerűbb formájukban a ***vizualizációk*** *olyan* diagramok, amelyeket a Power BI *tervezői* hoznak létre a *jelentésekben* és az *adathalmazokban* szereplő adatok alapján. 
 
 > [!TIP]
 > Javasoljuk, hogy először olvassa el a [Power BI alapfogalmait bemutató, *felhasználók számára*](end-user-basic-concepts.md) készült áttekintő témakört, mielőtt továbblépne erre a részletesebb leírásra.
