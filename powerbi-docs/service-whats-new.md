@@ -10,23 +10,23 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: acfc4062677a28824458781b900b271bedd51eb8
-ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
+ms.openlocfilehash: ed519f920fc872c8f13d5a10d59ce0f2f531f2fc
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54488914"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147565"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
-Ezen az oldalon a **Power BI szolgáltatás** ismert problémáit és új funkcióit ismertetjük. Kapcsolódó "Újdonságok" az alábbi helyeken találhatók:
+Ezen az oldalon a **Power BI szolgáltatás** ismert problémáit és új funkcióit ismertetjük. Az újdonságokra vonatkozó kapcsolódó információk:
 
+- [Az üzleti intelligencia 2018. októberi újdonságai ](https://docs.microsoft.com/business-applications-release-notes/October18/intelligence-platform/planned-features) a Microsoft Business Applications csoport kiadási megjegyzései: Az üzleti alkalmazásaink legújabb frissítései.
 - [A Power BI Desktop újdonságai](desktop-latest-update.md)  
 - [A Power BI-mobilalkalmazások újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [A Power BI csapat blogja](https://powerbi.microsoft.com/blog/)
-- [Az üzleti alkalmazások 2018 tavaszi kibocsátási megjegyzései](http://aka.ms/businessappsreleasenotes)a Dynamics 365-ből: Az üzleti alkalmazások legújabb frissítései, valamint számos új funkció, melyekkel saját alkalmazásokat és bővítményeket hozhat létre a platformunkra építve. 
 
-Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is tájékozódhat:
+Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is tájékozódhat.
 
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)

@@ -8,21 +8,21 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/19/2018
+ms.date: 01/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 70eb50c493c6828ca03b1161138e1a4f4b1fae8e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 51a99d59c74160d229c0d18defe2c5e7be4f48fb
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284427"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147404"
 ---
-# <a name="tour-of-the-report-editor-in-power-bi"></a>A Power BI jelentésszerkesztőjének bemutatása
+# <a name="tour-the-report-editor-in-power-bi"></a>A Power BI jelentésszerkesztőjének bemutatása
 
 A Power BI szolgáltatásban és a Power BI Desktopban használt *jelentésszerkesztő* hasonló. A videó a Power BI Desktop, ez a cikk pedig a Power BI szolgáltatás jelentésszerkesztőjét mutatja be. 
 
-Jelentéskészítőként irányítópultokat és jelentéseket hozhat létre és szerkeszthet. Majd kioszthatja ezeket a jelentésfogyasztók számára. Ők a Power BI szolgáltatás olvasási nézetében kezelhetik az irányítópultokat és jelentéseket, de nem szerkeszthetik azokat. További tudnivalók [A Power BI szolgáltatás jelentéseinek olvasási és szerkesztő nézete](consumer/end-user-reading-view.md) közötti különbségekről 
+Jelentéskészítőként irányítópultokat és jelentéseket hozhat létre és szerkeszthet. Majd kioszthatja ezeket a jelentésfogyasztók számára. Ők a Power BI szolgáltatás olvasási nézetében kezelhetik az irányítópultokat és jelentéseket, de nem szerkeszthetik azokat. További információ arról, [mi mindenre használhatják a jelentésfelhasználók a Power BI szolgáltatást](consumer/end-user-reading-view.md). 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -45,7 +45,7 @@ A jelentésszerkesztőben megjelenő tartalom a jelentésvásznon alkalmazott ki
 
 |  |  |
 | --- | --- |
-| ![A jelentésszerkesztő paneljei](media/service-the-report-editor-take-a-tour/power-bi-panes.png) |<ul><li>A Megjelenítések panel felső része a használt vizualizációtípust adja meg. Ez ebben a példában csoportosított oszlopdiagram.<br><br></li> <li>A Megjelenítések panel alsó része (előfordulhat, hogy le kell görgetnie) a vizualizációhoz használt mezőket mutatja. Ez a diagram a FiscalMonth, a DistrictManager, és a Total Sales Variance mezőket ábrázolja. <br><br></li><li>A Szűrők panelen (előfordulhat, hogy le kell görgetnie) az esetleg használt szűrők látszanak. <br><br></li><li>A Mezők panel felsorolja az elérhető táblákat és – a táblanév kibontása után – a táblát alkotó mezőket is. Sárga színű szöveg jelzi, hogy a vizualizáció felhasználja a táblának legalább egy mezőjét.<br><br></li><li>![festőhenger ikon](media/service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) A kijelölt vizualizációhoz tartozó Formázás panel megnyitásához válassza a festőhenger ikont.<br><br></li><li>![nagyító ikon](media/service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) Az Elemzés panel megnyitásához válassza a nagyító ikont.</ul> |
+| ![A jelentésszerkesztő paneljei](media/service-the-report-editor-take-a-tour/power-bi-panes.png) |<ul><li>A Megjelenítések panel felső része a használt vizualizációtípust adja meg. Ez ebben a példában csoportosított oszlopdiagram.<br><br></li> <li>A Megjelenítések panel alsó része (előfordulhat, hogy le kell görgetnie) a vizualizációhoz használt mezőket mutatja. Ez a diagram a FiscalMonth, a DistrictManager, és a Total Sales Variance mezőket ábrázolja. <br><br></li><li>A Szűrők panelen (előfordulhat, hogy le kell görgetnie) az esetleg használt szűrők látszanak. <br><br></li><li>A Mezők panel felsorolja az elérhető táblákat és – a táblanév kibontása után – a táblát alkotó mezőket is. Sárga színű szöveg jelzi, hogy a vizualizáció felhasználja a táblának legalább egy mezőjét.<br><br></li><li>![festőhenger ikon](media/service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) A kijelölt vizualizációhoz tartozó Formázás panel megnyitásához válassza a festőhenger ikont.<br><br></li><li>![nagyító ikon](media/service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) Az Elemzés panel megjelenítéséhez válassza a nagyító ikont.</ul> |
 
 ## <a name="the-visualizations-pane"></a>A Vizualizációk panel
 ![Vizualizációk panel felső része](media/service-the-report-editor-take-a-tour/selectviz.png)

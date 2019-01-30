@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
-ms.openlocfilehash: e24cf43c5797293f83c7f678dee328d502ac2243
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 01/24/2019
+ms.openlocfilehash: b2ddf1e55f54b9c671a92df497c0a2ae1afdcced
+ms.sourcegitcommit: d12d84583e65ebecc8aa947b0cd5720cffdc7978
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280544"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54907520"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló támogatási ütemterve
 
@@ -31,10 +31,11 @@ Ezzel a támogatási házirenddel az újítások gyorsan eljutnak az ügyfelekhe
 
 | **Verzió** | **Elérhetőség dátuma** | **Támogatás végének dátuma** |
 | --- | --- | --- |
-| 2017. június |2017. június 12. |Nem támogatott |
-| 2017. október |2017. október 31. |2018. október 31. |
+| 2017. június |2017. június 12. |Már nem támogatott |
+| 2017. október |2017. október 31. | Már nem támogatott |
 | 2018. március | 2018. március 19. | 2019. március 19. |
 | 2018. augusztus | 2018. augusztus 15. | 2019. augusztus 15. |
+| 2019. január | 2019. január 23. | 2020. január 23. |
 
 A Power BI jelentéskészítő kiszolgáló, illetve a Power BI jelentéskészítő kiszolgálóra optimalizált Power BI Desktop letöltéséhez nyissa meg az [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) (Helyi jelentéskészítés Power BI jelentéskészítő kiszolgálóval) webhelyet.
 

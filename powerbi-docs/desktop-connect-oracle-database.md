@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dc26d6de5ca22fdabfd80bd7ba1d9830e274f808
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 826338a5e5524bb54c2ebb2207a3d438a8d428b1
+ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284495"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899227"
 ---
 # <a name="connect-to-an-oracle-database"></a>Kapcsolódás Oracle-adatbázishoz
 Ha egy Oracle-adatbázist a **Power BI Desktophoz** szeretne csatlakoztatni, előbb telepítenie kell a megfelelő Oracle ügyfélszoftvert a Power BI Desktopot futtató számítógépre. Az Oracle ügyfélszoftver szükséges verziója attól függ, hogy a Power BI Desktop melyik verzióját telepítette – a **32 bites** verziót vagy a **64 bites** verziót.
@@ -51,3 +51,11 @@ A megfelelő Oracle ügyfélillesztő telepítése után csatlakozhat az Oracle-
 4. Miután az Oracle-adatbázis információit megadta az Oracle-adatbázis párbeszédpanelen (a nem kötelező információkkal, például a biztonsági azonosítóval vagy a natív adatbázis-lekérdezéssel együtt), válassza az **OK** lehetőséget a csatlakoztatáshoz.
 5. Ha az Oracle-adatbázis az adatbázis felhasználói hitelesítő adatait igényli, adja meg ezeket a hitelesítő adatokat a párbeszédpanelen, amikor a rendszer kéri.
 
+
+## <a name="troubleshooting"></a>Hibaelhárítás
+
+Ha a Power BI Desktopot a Microsoft Store-ból töltötte le, előfordulhat, hogy egy Oracle-meghajtóval kapcsolatos hiba miatt nem tud csatlakozni Oracle-adatbázisokhoz. Ha ezzel a problémával találkozik, a visszaadott hibaüzenet „Objektumhivatkozás nincs beállítva” (Object reference not set) lesz. A hiba elhárításához végezze el az alábbi műveletek valamelyikét:
+
+* A Power BI Desktopot inkább a https://powerbi.microsoft.com/desktop helyről töltse le.
+
+* Ha a Microsoft Store-ban elérhető verziót szeretné használni: a helyi számítógépén másolja az oraons.dll fájlt a _12.X.X\client_X_ helyről a _12.X.X\client_X\bin_ helyre. Az X a verzió és a könyvtár száma helyett áll.

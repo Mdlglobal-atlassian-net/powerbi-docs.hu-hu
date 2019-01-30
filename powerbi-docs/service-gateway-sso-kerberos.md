@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7256de8dd36c25af9959e7103186666d65123360
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 04f67f82552f7915f8ca4fc6e639de3e616c2f8a
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295259"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147588"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
@@ -205,6 +205,9 @@ Most, hogy megismerkedett a Kerberos átjáróval történő működésével, ko
 Ez az útmutató próbál olyan átfogó lennie, amennyire csak lehetséges. Ha már végrehajtott néhány lépést, azokat kihagyhatja: Például már létrehozott egy szolgáltatásfelhasználót a BW-kiszolgálóhoz, és leképezte rá az egyszerű szolgáltatásnevet, vagy már telepítette a gsskrb5 kódtárat.
 
 ### <a name="setup-gsskrb5-on-client-machines-and-the-bw-server"></a>A gsskrb5 telepítése az ügyfélgépekre és a BW-kiszolgálóra
+
+> [!NOTE]
+> A gsskrb5 már nem kap SAP-támogatást. További információt az [SAP 352295 megjegyzés](https://launchpad.support.sap.com/#/notes/352295) című cikkben talál. Vegye figyelembe azt is, hogy a gsskrb5 nem teszi lehetővé az adatátjáróból a BW üzenetkiszolgálóba irányuló SSO-kapcsolatokat. Csak a BW-alkalmazáskiszolgálóba irányuló kapcsolatok lehetségesek.
 
 A gsskrb5-öt az ügyfélnek és a kiszolgálónak is használnia kell az SSO-kapcsolat átjárón keresztüli létrehozásához. A közös titkosítási kódtár (sapcrypto) jelenleg nem támogatott.
 

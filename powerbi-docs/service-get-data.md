@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/02/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a45ddbef861ad29f5823edee213b12af068d48eb
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 26c7c1b428f513fe2b79a3377085004506412604
+ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277227"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899296"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Adatforrások a Power BI szolgáltatásban
 A Power BI legfontosabb összetevői maguk az adatok. Amikor adatokat vizsgál, diagramokat és irányítópultokat hoz létre, és kérdéseket tesz fel a Q&A-jel, akkor a kapott vizualizációk és válaszok alapjául szolgáló adatok valójában egy adatkészletből származnak. De honnan származik ez az adatkészlet? Természetesen egy adatforrásból.
@@ -29,7 +29,7 @@ Ezen adatforrások bármelyikéből úgy juthat adatokhoz a Power BI-ban, hogy a
 ## <a name="files"></a>Fájlok
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** (.xlsx, xlxm) – Az Excel egyedülálló abban a tekintetben, hogy egy munkafüzet saját kezűleg bevitt adatokat ugyanúgy tartalmazhat, mint külső adatforrásból a Power Query (az Excel 2016-ban Beolvasás és átalakítás) vagy a Power Pivot használatával lekérdezett és beolvasott adatokat. Importálhat adatokat munkafüzetben lévő táblázatokból (az adatoknak *kötelező* táblázatban lennie), vagy importálhat adatmodellbe beolvasott adatokat. További tudnivalókat az [Adatok beolvasása az Excelből](service-get-data-from-files.md) című cikkben talál.
+**Excel** (.xlsx, xlsm) – Az Excel egyedülálló abban a tekintetben, hogy egy munkafüzet saját kezűleg bevitt adatokat ugyanúgy tartalmazhat, mint külső adatforrásból a Power Query (az Excel 2016-ban Beolvasás és átalakítás) vagy a Power Pivot használatával lekérdezett és beolvasott adatokat. Importálhat adatokat munkafüzetben lévő táblázatokból (az adatoknak *kötelező* táblázatban lennie), vagy importálhat adatmodellbe beolvasott adatokat. További tudnivalókat az [Adatok beolvasása az Excelből](service-get-data-from-files.md) című cikkben talál.
 
 **Power BI Desktop** (.pbix) – A Power BI Desktop használatával lekérdezhet és beolvashat külső adatforrásban lévő adatokat, kibővítheti az adatmodellt mértékekkel és kapcsolatokkal, és jelentéseket hozhat létre. A Power BI Desktop-fájlok importálható a Power BI-webhelyre. A Power BI Desktop gyakorlott felhasználók számára ideális, akik alaposan ismerik az adatforrásokat, az adatlekérdezéseket és az -átalakításokat, valamint az adatmodellezés fogalmait. További információt a [Kapcsolódás adatokhoz a Power BI Desktopban](desktop-connect-to-data.md) című cikkben talál.
 

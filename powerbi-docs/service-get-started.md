@@ -1,6 +1,6 @@
 ---
-title: A Power BI szolgáltatás (a Power BI online) használatának első lépései
-description: A Power BI online (az app.powerbi.com webhely) használatának első lépései
+title: Első lépések a Power BI szolgáltatással
+description: Első lépések a Power BI online szolgáltatásban (app.powerbi.com)
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,20 +8,20 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 01/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 2a033e6893cffb71c4a898f1260aca615ae4e4b8
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 06b60e5d493532efbdb49932ace48897e17961c1
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291985"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147496"
 ---
-# <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Oktatóanyag: A Power BI szolgáltatás (az app.powerbi.com webhely) használatának első lépései
+# <a name="tutorial-get-started-with-the-power-bi-service-apppowerbicom"></a>Oktatóanyag: Első lépések a Power BI szolgáltatásban (app.powerbi.com)
 Ez az oktatóanyag segít az első lépések megtételében a ***Power BI szolgáltatásban***. Ha szeretné megérteni, hogyan illeszkedik a Power BI szolgáltatás a többi Power BI-ajánlathoz, javasoljuk, először olvassa el a [Mi az a Power BI](power-bi-overview.md) című szakaszt.
 
-![a Desktop, a szolgáltatás és a mobilalkalmazás közti kapcsolatot mutató ábra](media/service-get-started/power-bi-components.png)
+![a Desktop, a Power BI Desktop, a szolgáltatás és a mobilalkalmazás közti kapcsolatot mutató ábra](media/service-get-started/power-bi-components.png)
 
 A jelen oktatóanyagban az alábbi lépéseket fogja végrehajtani:
 
@@ -35,14 +35,14 @@ A jelen oktatóanyagban az alábbi lépéseket fogja végrehajtani:
 > * Új vizualizáció hozzáadása az irányítópulthoz a Q&A természetes nyelvű eszközzel
 > * Erőforrások felszabadítása az adatkészlet, jelentés és irányítópult törlésével
 
-## <a name="sign-up-for-power-bi-service"></a>Regisztráció a Power BI szolgáltatásra
+## <a name="sign-up-for-the-power-bi-service"></a>Regisztráció a Power BI szolgáltatásra
 Ha még nem regisztrált a Power BI Pro szolgáltatásra, a kezdés előtt [hozzon létre egy ingyenes Power BI Pro próbaverziós fiókot](https://app.powerbi.com/signupredirect?pbi_source=web).
 
 Ha már rendelkezik fiókkal, nyissa meg a böngészőt, és írja be az app.powerbi.com címet a Power BI szolgáltatás megnyitásához. 
 
 ![Jelentkezzen be vagy regisztráljon ingyenesen](media/service-get-started/power-bi-sign-up.png)
 
-Ha a Power BI Desktoppal kapcsolatos segítséget keres, olvassa el az [Első lépések a Desktopban](desktop-getting-started.md) című szakaszt. Ha a Power BI Mobile-lal kapcsolatos segítségre van szükséges, lásd: [Power BI-alkalmazások mobileszközökre](consumer/mobile/mobile-apps-for-mobile-devices.md).
+Ha a Power BI Desktoppal kapcsolatos segítséget keres, olvassa el az [Első lépések a Power BI Desktopban](desktop-getting-started.md) című szakaszt. Ha a Power BI Mobile-lal kapcsolatos segítségre van szükséges, lásd: [Power BI-alkalmazások mobileszközökre](consumer/mobile/mobile-apps-for-mobile-devices.md).
 
 > [!TIP]
 > Ehelyett egy ingyenes, saját tempóban elvégezhető tanfolyamot szeretne? [Regisztráljon Analyzing and Visualizing Data (Adatok elemzése és vizualizációja) tanfolyamunkra az Edx-en](http://aka.ms/edxpbi).
@@ -52,7 +52,7 @@ Nézze meg [lejátszási listánkat a YouTube-on](https://www.youtube.com/playli
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
 
-## <a name="what-is-power-bi-service"></a>A Power BI szolgáltatás bemutatása
+## <a name="what-is-the-power-bi-service"></a>Mi az a Power BI szolgáltatás?
 A Microsoft Power BI szolgáltatás más néven Power BI online vagy app.powerbi.com néven ismert. A Power BI segítségével naprakész maradhat az Ön számára fontos információkkal.  A Power BI szolgáltatásban az ***irányítópultokkal*** ujjait a cége ütőerén tarthatja.  Az irányítópulton ***csempék*** találhatók, amelyekre kattintva ***jelentéseket*** nyithat meg a további vizsgálódásokhoz.  Több ***adatkészlethez*** is kapcsolódhat, hogy minden releváns adatát egy helyen tekinthesse meg. Segítségre van szüksége a Power BI építőköveinek megértéséhez?  Lásd: [Power BI – Alapfogalmak](consumer/end-user-basic-concepts.md).
 
 Ha Excel- vagy CSV-fájlokba mentett fontos adatokkal rendelkezik, létrehozhat egy Power BI-irányítópultot, hogy tájékozott maradhasson, bárhol is van, és másokkal is megoszthassa az elemzéseket.  Előfizetett valamilyen SaaS-alkalmazásra, például a Salesforce-ra?  A gyors kezdéshez csatlakozzon a Salesforce-hoz, hogy automatikusan irányítópultot hozhasson létre az ott található adatokból, vagy [tekintse meg a többi SaaS-alkalmazást](service-get-data.md), amelyhez csatlakozhat. Ha egy cégnél dolgozik, nézze meg, hogy nem tettek-e közzé valamilyen [alkalmazást](service-create-distribute-apps.md) az Ön számára.
@@ -104,7 +104,7 @@ Most, hogy adatokhoz csatlakozott, megismerkedhet a felülettel.  Ha valami érd
    
    ![jelentésszerkesztő kiválasztott ikonnal](media/service-get-started/gettingstart5new.png)
 
-3. Ez érdekesnek tűnik, szóval *rögzítsük* egy irányítópulton. Vigye az egeret a vizualizáció fölé, és válassza a **Rögzítés** ikont.  Ha rögzíti a vizualizációt, a rendszer az irányítópulton tárolja és naprakészen tartja, hogy egyetlen pillantással nyomon tudja követheti a legújabb értékeket.
+3. Ez a diagram érdekesnek tűnik, szóval *rögzítsük* egy irányítópulton. Vigye az egeret a vizualizáció fölé, és válassza a **Rögzítés** ikont.  Ha rögzíti a vizualizációt, a rendszer az irányítópulton tárolja és naprakészen tartja, hogy egyetlen pillantással nyomon tudja követheti a legújabb értékeket.
    
    ![gombostű ikon](media/service-get-started/pinnew.png)
 
@@ -118,7 +118,7 @@ Most, hogy adatokhoz csatlakozott, megismerkedhet a felülettel.  Ha valami érd
    
 1. Válassza a **Rögzítés** lehetőséget.
    
-    A rendszer egy sikert jelző üzenettel (a jobb felső sarokban) tájékoztatja, hogy a vizualizáció csempeként hozzá lett adva az irányítópulthoz.
+    A jobb felső sarokban megjelenik a sikert jelző üzenet, amely tájékoztatja, hogy a vizualizáció csempeként hozzá lett adva az irányítópulthoz.
    
     ![Rögzítve az irányítópulton párbeszédablak](media/service-get-started/power-bi-pin-success.png)
 

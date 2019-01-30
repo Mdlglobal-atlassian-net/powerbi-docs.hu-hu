@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/14/2019
+ms.date: 01/24/2019
 ms.author: maggies
-ms.openlocfilehash: 1f7da83629b932d2e14fbc57682e0f7f7988739a
-ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
+ms.openlocfilehash: c118e3c2f8b30635982a37c47da9fb9e337aff05
+ms.sourcegitcommit: d12d84583e65ebecc8aa947b0cd5720cffdc7978
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54488822"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54907521"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
 Tudnivalók a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítéséről.
@@ -31,7 +31,7 @@ Ha ellenőrizné, hogy a Power BI jelentéskészítő kiszolgálóhoz optimaliz�
 
     ![A Power BI Desktop letöltése a webportálról](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Vagy másik lehetőségként a Microsoft letöltőközpontban válassza közvetlenül a Power BI jelentéskészítő kiszolgálóra (2019. január) optimalizált [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) hivatkozást.
+    Vagy másik lehetőségként a Microsoft letöltőközpontban válassza közvetlenül a Power BI jelentéskészítő kiszolgálóra (2019. január) optimalizált [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2055039) hivatkozást.
 
 2. A letöltőközpontlapon kattintson a **Letöltés** gombra.
 
@@ -47,17 +47,17 @@ Ha ellenőrizné, hogy a Power BI jelentéskészítő kiszolgálóhoz optimaliz�
    
     A folyamat automatikusan elindul, és máris hozzákezdhet.
 
-## <a name="verify-you-are-using-the-correct-version"></a>Annak ellenőrzése, hogy a megfelelő verziót használja-e
-Ellenőrizheti, hogy a Power BI Desktop megfelelő verzióját használja-e a Power BI Desktop indítóképernyőjének vagy címsorának megtekintésével. A címsor a kiadás hónapját és évét jelzi.
+## <a name="verify-youre-using-the-correct-version"></a>Annak ellenőrzése, hogy a megfelelő verziót használja-e
+Egyszerűen ellenőrizheti, hogy a megfelelő Power BI Desktopot használja-e: A Power BI Desktopban ellenőrizze az indítási képernyőt vagy a címsort. A címsor a kiadás hónapját és évét jelzi. Emellett a Power BI logószínei is fordítva jelennek meg: fekete háttéren sárga, és nem sárga háttéren fekete.
 
-![A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop címsora](media/install-powerbi-desktop/power-bi-report-server-desktop-august-2018.png)
+![A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop címsora](media/install-powerbi-desktop/power-bi-report-server-desktop-jan-2019.png)
 
 A Power BI szolgáltatás Power BI Desktop verziójának címsorában nem szerepel a hónap és az év.
 
 ## <a name="file-extension-association"></a>Fájlkiterjesztés társítása
-Ha a Power BI Desktopot és a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopot ugyanarra a gépre telepítette, a Power BI Desktop legutóbbi telepítése rendelkezik a .pbix fájltársítással. Ez azt jelenti, hogy amikor duplán kattint egy pbix-fájlra, az a legutóbb telepített Power BI Desktopot indítja el.
+Ha a Power BI Desktopot és a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopot ugyanarra a gépre telepítette, a Power BI Desktop legutóbbi telepítése rendelkezik a .pbix fájltársítással. Így ha duplán kattint egy .pbix-fájlra, akkor elindul a nemrég telepített Power BI Desktop.
 
-Ha először a Power BI Desktopot telepítette, majd a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopot, az összes pbix-fájl alapértelmezés szerint a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopban nyílik meg. Ha azt szeretné, hogy inkább a Power BI Desktop induljon el alapértelmezés szerint a pbix-fájlok megnyitásakor, telepítse újra a Power BI Desktopot a Power BI szolgáltatásból.
+Ha először a Power BI Desktopot telepítette, majd a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopot, az összes pbix-fájl alapértelmezés szerint a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopban nyílik meg. Ha azt szeretné, hogy inkább a Power BI Desktop induljon el alapértelmezés szerint a pbix-fájlok megnyitásakor, telepítse újra a [Power BI Desktopot a Microsoft Store áruházból](http://aka.ms/pbidesktopstore).
 
 Azt is megteheti, hogy először megnyitja a Power BI Desktop használni kívánt verzióját, majd megnyitja a fájlt a Power BI Desktopból.
 
@@ -95,10 +95,9 @@ A Power BI jelentéskészítő kiszolgálón tárolt jelentések nem támogatjá
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop a Power BI jelentéskészítő kiszolgáló korábbi verzióihoz
 
-Ha a jelentéskészítő kiszolgálója korábbi verziójú, akkor a Power BI Desktop vonatkozó verzióját kell használnia. A két korábbi verzió a következő:
+Ha a jelentéskészítő kiszolgálója korábbi verziójú, akkor a Power BI Desktop vonatkozó verzióját kell használnia. Itt található az előző verzió.
 
-- [A Power BI jelentéskészítő kiszolgálóra (2017. október) optimalizált Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56136)
-- [A Power BI jelentéskészítő kiszolgálóra (2017. június) optimalizált Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=55330)
+- [A Power BI jelentéskészítő kiszolgálóra (2018. augusztus) optimalizált](https://www.microsoft.com/download/details.aspx?id=57271) Microsoft Power BI Desktop
 
 ## <a name="next-steps"></a>Következő lépések
 Most, hogy telepítette a Power BI Desktopot, megkezdheti Power BI-jelentések létrehozását.
