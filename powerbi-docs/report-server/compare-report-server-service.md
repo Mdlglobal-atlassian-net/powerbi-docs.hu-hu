@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 95055f19ed4187124d940e0fe7f70068dffc71c5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4c7724baf63b1ff4e9e6f3d566da113557ab1b06
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289762"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234393"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása
 
@@ -43,7 +43,7 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 | Elemzés az Excelben | Nem | Igen | [Elemzés az Excelben](../service-analyze-in-excel.md) 
 | Oldalakra osztott jelentések | Igen | Igen | A prémium szintű kapacitásban előzetes verzióban [elérhetők a Power BI szolgáltatás lapszámozott jelentései](../paginated-reports-report-builder-power-bi.md)
 | Power BI – mobilalkalmazások | Igen | Igen | [Power BI-mobilalkalmazások áttekintése](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
-| ArcGIS-térképek | Nem | Igen | [Esri ArcGIS-térképek a Power BI szolgáltatásban és a Power BI Desktopban](../power-bi-visualization-arcgis.md)
+| ArcGIS-térképek | Nem | Igen | [Esri ArcGIS-térképek a Power BI szolgáltatásban és a Power BI Desktopban](../visuals/power-bi-visualization-arcgis.md)
 | E-mail-előfizetés Power BI-jelentésekre | Nem | Igen | [Feliratkozás jelentésre vagy irányítópultra](../consumer/end-user-subscribe.md) a Power BI szolgáltatásban 
 | E-mail-előfizetés többoldalas jelentésekre | Igen | Nem | [E-mail-kézbesítés a jelentéskészítő szolgáltatásban](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
 | Adatriasztások | Nem | Igen | [Adatriasztások](../service-set-data-alerts.md) a Power BI szolgáltatásban

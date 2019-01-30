@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 13c2742325e0cf2714d759eb1fd21ce6bcfd0187
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 03a0e3cbd2a82c0d6741694c4389a8dcf4d207d9
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291211"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234255"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Újdonságok a Power BI Desktop legújabb frissítésében 
 
@@ -39,7 +39,7 @@ Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**
 ### <a name="reporting"></a>Jelentéskészítés
 
 * Okos útmutatók objektumok igazításáról egy oldalon  [[videó]](https://youtu.be/AHNlkjRFdYI?t=11)  [[cikk]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) 
-* ArcGIS Maps for Power BI-frissítések  [[videó]](https://youtu.be/AHNlkjRFdYI?t=84)  [[cikk]](power-bi-visualization-arcgis.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#arcGIS) 
+* ArcGIS Maps for Power BI-frissítések  [[videó]](https://youtu.be/AHNlkjRFdYI?t=84)  [[cikk]](visuals/power-bi-visualization-arcgis.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#arcGIS) 
 * Mezőlista akadálymentességének támogatása [[videó]](https://youtu.be/AHNlkjRFdYI?t=464)  [[cikk]](desktop-report-view.md#copy-and-paste-between-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
 * Objektumok lapsorrendjének beállítása egy oldalon [[videó]](https://youtu.be/AHNlkjRFdYI?t=643)   [[cikk]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tabOrder)
 * Elemleírások gomb vizualizációkhoz [[videó]](https://youtu.be/AHNlkjRFdYI?t=884)  [[cikk]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tooltips)
