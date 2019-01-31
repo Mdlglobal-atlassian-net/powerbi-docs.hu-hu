@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 11/01/2018
-ms.openlocfilehash: 906ecdf8934899f2c16bacc07a271b4549d3c048
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a9d90737ed8a62f3791f0741bac1c9ff2b05cbb6
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292826"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431200"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Beágyazás jelentéskijelzővel a SharePoint Online-ban
 
@@ -166,7 +166,7 @@ Egy jelentést SharePointban megtekintő felhasználónak vagy **Power BI Pro**-
 
 * Ha Internet Explorer 10-es böngészőt használ, előfordulhat, hogy problémákba ütközik. Tekintse át mely [böngészők használatát támogatja a Power BI](consumer/end-user-browsers.md) és az [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
 
-* A Power BI webes kijelző nem érhető el [szuverén felhő](https://powerbi.microsoft.com/en-us/clouds/) esetén.
+* A Power BI webes kijelző nem érhető el [szuverén felhő](https://powerbi.microsoft.com/clouds/) esetén.
 
 * A klasszikus SharePoint-kiszolgáló nincs támogatva ehhez a webes kijelzőhöz.
 

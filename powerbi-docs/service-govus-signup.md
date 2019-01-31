@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e37f6f18b182851c3fc2afc2f67de0023bd46382
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 7f7681529f9f1ab8883f6b38889e67b8ad5bb81e
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276698"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430065"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>USA-beli kormányzati szerv regisztrálása a Power BI szolgáltatásban
 A **Power BI szolgáltatás** külön verziója érhető el az USA kormányzati ügyfeleinek az **egyesült államokbeli Office 365-közösségi** előfizetések részeként. A jelen cikkben a **Power BI szolgáltatás** kifejezetten az USA kormányzati ügyfeleinek készült verzióját tárgyaljuk, amely elkülönül és különbözik a **Power BI szolgáltatás** kereskedelmi verziójától.
@@ -41,7 +41,7 @@ Ha az Ön munkahelye még nem használja az **Office kormányzati felhőkörnyez
 > Ezeket a lépéseket a portál rendszergazdájának kell elvégeznie.
 >
 
-1. Látogasson el a [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government) címre.
+1. Látogasson el a [https://products.office.com/government/office-365-web-services-for-government](https://products.office.com/government/office-365-web-services-for-government) címre.
 
 >[!NOTE]
 >Ha nem most kíván regisztrálni az Office kormányzati felhőszolgáltatására, lépjen kapcsolatba az értékesítési képviselővel.

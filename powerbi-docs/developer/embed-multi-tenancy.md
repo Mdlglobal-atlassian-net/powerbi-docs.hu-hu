@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi - developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: d09312ecf462e557ef33851d9d2b1f91ec936dae
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 7bb805877cf2e7453148d667f863cbbc8b01ee52
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289210"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430717"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Több-bérlős konfiguráció kezelése Power BI Embedded-analitikával
 
@@ -29,7 +29,7 @@ Ez a cikk ismerteti és többféle kiértékelési szempont alapján elemzi a k�
 
 ## <a name="concepts-and-terminology"></a>Fogalmak és szakkifejezések
 
-**[AAD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)** – Azure Active Directory.
+**[AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)** – Azure Active Directory.
 
 **AAD-alkalmazás** – Alkalmazás-identitás az AAD-ben. A hitelesítéshez AAD-alkalmazás szükséges.
 
@@ -105,7 +105,7 @@ A Power BI Embedded támogatja a több földrajzi helyen történő üzembe hely
 
 ### <a name="cost"></a>Cost
 
-A [Power BI Embedded](https://azure.microsoft.com/en-us/services/power-bi-embedded/) erőforrás-alapú vásárlási modelje a **Power BI Premiuméhoz** hasonló. Egy vagy több, rögzített számítási teljesítménnyel és memóriával rendelkező kapacitás vásárolható meg. A **Power BI Embeddeddel** végzett munka során ez a kapacitás a költség fő tétele. A kapacitást használó felhasználók száma nincs korlátozva. Az egyetlen korlát a kapacitás teljesítménye. Minden *fő* felhasználónak vagy olyan megadott felhasználónak, akinek el kell érnie a Power BI portált, [Power BI Pro-licenccel](../service-admin-licensing-organization.md) kell rendelkeznie.
+A [Power BI Embedded](https://azure.microsoft.com/services/power-bi-embedded/) erőforrás-alapú vásárlási modelje a **Power BI Premiuméhoz** hasonló. Egy vagy több, rögzített számítási teljesítménnyel és memóriával rendelkező kapacitás vásárolható meg. A **Power BI Embeddeddel** végzett munka során ez a kapacitás a költség fő tétele. A kapacitást használó felhasználók száma nincs korlátozva. Az egyetlen korlát a kapacitás teljesítménye. Minden *fő* felhasználónak vagy olyan megadott felhasználónak, akinek el kell érnie a Power BI portált, [Power BI Pro-licenccel](../service-admin-licensing-organization.md) kell rendelkeznie.
 
 A kapacitás várható terhelését ajánlott élő környezet és használat szimulálásával, és a kapacitáson futtatott terheléstesztekkel tesztelni és mérni. A terhelés és a teljesítmény az Azure-kapacitás vagy a [prémium szintű kapacitás metrika-alkalmazásában](../service-admin-premium-monitor-capacity.md) elérhető különböző metrikákkal mérhető.
 
@@ -132,17 +132,17 @@ A bérlők adatainak felügyeletére két fő módszer használatos.
 
 Ha az SaaS-alkalmazás tárolója bérlőnként külön adatbázist tart fenn, akkor magától értetődő választás a Power BI-ban egybérlős adathalmazokat használni, ahol az egyes adathalmazok kapcsolati sztringje mutat a megfelelő adatbázisra.
 
-Amennyiben az SaaS-alkalmazás tárolója minden bérlőhöz egy több-bérlős adatbázist használ, akkor a bérlők könnyen elkülöníthetők munkaterületek szerint. A Power BI-adathalmaz adatbázis-kapcsolata paraméteres adatbázis-lekérdezéssel konfigurálható, amely csak a megfelelő bérlő adatait adja vissza. A kapcsolati sztring a [Power BI Desktoppal](../desktop-query-overview.md), vagy az [API-val](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) frissíthető, a lekérdezés [paramétereivel](https://docs.microsoft.com/en-us/rest/api/power-bi/datasets/updateparametersingroup).
+Amennyiben az SaaS-alkalmazás tárolója minden bérlőhöz egy több-bérlős adatbázist használ, akkor a bérlők könnyen elkülöníthetők munkaterületek szerint. A Power BI-adathalmaz adatbázis-kapcsolata paraméteres adatbázis-lekérdezéssel konfigurálható, amely csak a megfelelő bérlő adatait adja vissza. A kapcsolati sztring a [Power BI Desktoppal](../desktop-query-overview.md), vagy az [API-val](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) frissíthető, a lekérdezés [paramétereivel](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup).
 
 ### <a name="data-isolation"></a>Adatelkülönítés
 
-Ebben a bérlői modellben az adatok a munkaterületek szintjén vannak elkülönítve. A munkaterületek és bérlők közötti egyszerű leképezés akadályozza meg, hogy a felhasználók egy másik bérlőtől származó tartalmat lássanak. Egyetlen *fő* felhasználó használatakor követelmény, hogy az összes munkaterülethez hozzáférjen. A végfelhasználók számára megjelenítendő adatok köre a [beágyazási token generálása](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken) során van meghatározva. A felhasználók ezt a háttérbeli folyamatot nem látják, és nem módosíthatják.
+Ebben a bérlői modellben az adatok a munkaterületek szintjén vannak elkülönítve. A munkaterületek és bérlők közötti egyszerű leképezés akadályozza meg, hogy a felhasználók egy másik bérlőtől származó tartalmat lássanak. Egyetlen *fő* felhasználó használatakor követelmény, hogy az összes munkaterülethez hozzáférjen. A végfelhasználók számára megjelenítendő adatok köre a [beágyazási token generálása](https://docs.microsoft.com/rest/api/power-bi/embedtoken) során van meghatározva. A felhasználók ezt a háttérbeli folyamatot nem látják, és nem módosíthatják.
 
 További elkülönítés érhető el, ha az alkalmazásfejlesztő több munkaterülethez hozzáférő egyetlen *fő* felhasználó vagy alkalmazás helyett munkaterületenként ad meg *fő* felhasználót vagy alkalmazást. Így biztosítható, hogy egy emberi mulasztás vagy a hitelesítő adatok nyilvánosságra kerülése ne tegye sebezhetővé egyszerre több ügyfél adatait.
 
 ### <a name="scalability"></a>Méretezhetőség
 
-Ennek a modellnek az egyik előnye az, hogy az adatok bérlőnkénti adathalmazokra való felosztása enyhíti az [egy adathalmaz méretére vonatkozó korlátozást](https://docs.microsoft.com/en-us/power-bi/service-premium-large-datasets) (jelenleg 10 GB egy kapacitásban). Ha a kapacitás betelik, [kizárhatja a nem használt adathalmazokat](../service-premium-understand-how-it-works.md), hogy memóriát szabadítson fel az aktív adathalmazok számára. Ez egyetlen nagy adathalmazzal nem oldható meg. Több adathalmaz használata mellett a bérlők szükség esetén több Power BI-kapacitásba is elkülöníthetők. [További tudnivalók a kapacitás működéséről](../service-admin-premium-manage.md).
+Ennek a modellnek az egyik előnye az, hogy az adatok bérlőnkénti adathalmazokra való felosztása enyhíti az [egy adathalmaz méretére vonatkozó korlátozást](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (jelenleg 10 GB egy kapacitásban). Ha a kapacitás betelik, [kizárhatja a nem használt adathalmazokat](../service-premium-understand-how-it-works.md), hogy memóriát szabadítson fel az aktív adathalmazok számára. Ez egyetlen nagy adathalmazzal nem oldható meg. Több adathalmaz használata mellett a bérlők szükség esetén több Power BI-kapacitásba is elkülöníthetők. [További tudnivalók a kapacitás működéséről](../service-admin-premium-manage.md).
 
 Mindezen előnyök ellenére érdemes átgondolni, hogy milyen méretet érhet el az SaaS-alkalmazás a jövőben. Megtörténhet például, hogy a kezelhető összetevők száma ér el egy korlátot. Erről a cikk üzembe helyezési [korlátozásokról](#summary-comparison-of-the-different-approaches) szóló szakaszában talál további részleteket. A használt kapacitás-SKU korlátozza be az egyes adathalmazok számára elérhető memória mennyiségét, [az egyidejűleg futtatható frissítések számát](../service-premium-understand-how-it-works.md), és az adatfrissítések gyakoriságát. Több száz, vagy több ezer adathalmaz felügyelete estén ezt ajánlatos tesztelni. Ajánlott még figyelembe venni a használat átlagos mértékét és csúcsértékét, valamint a nagy adathalmazokat vagy eltérő használati mintákat használó, a többi bérlőtől eltérő módon kezelt bérlőket is.
 

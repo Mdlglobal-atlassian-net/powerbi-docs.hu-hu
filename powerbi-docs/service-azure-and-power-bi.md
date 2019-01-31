@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/26/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 8717e4938ef558eb4bb8c0614990b651d2b59c28
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 142096ca30422549227ddc1dc2d07e129e22e9af
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277710"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430878"
 ---
 # <a name="azure-and-power-bi"></a>Az Azure és a Power BI
 
@@ -55,7 +55,7 @@ Az Azure és a Power BI segítségével igényei szerint növekedhet. A több fo
 
 ## <a name="context-insights-with-power-bi-embedded-analytics"></a>A megállapítások kontextusba illesztése Power BI Embedded-elemzésekkel
 
-Lenyűgöző, interaktív adatvizualizációkat ágyazhat be alkalmazásokba, webhelyekbe, portálokba és más helyekre, teljes körűen felhasználva üzleti adatait. A [Power BI Embedded egy Azure-erőforrás](https://azure.microsoft.com/services/power-bi-embedded/), amellyel egyszerűen ágyazhat be interaktív jelentéseket és irányítópultokat, így a felhasználók egységes, kiváló minőségű tartalmakhoz férhetnek hozzá a különböző eszközeiken.  A Power BI végig segíteni fogja az elemzések beágyazásának folyamatában (adatok -> tudás -> megállapítások -> cselekvés).  Mindezeken felül a Power BI és az Azure segítségével [saját vállalata alkalmazásaiba és portáljaiba](https://powerbi.microsoft.com/en-us/developers/embedded-analytics/organization/) is beágyazhat elemzéseket.
+Lenyűgöző, interaktív adatvizualizációkat ágyazhat be alkalmazásokba, webhelyekbe, portálokba és más helyekre, teljes körűen felhasználva üzleti adatait. A [Power BI Embedded egy Azure-erőforrás](https://azure.microsoft.com/services/power-bi-embedded/), amellyel egyszerűen ágyazhat be interaktív jelentéseket és irányítópultokat, így a felhasználók egységes, kiváló minőségű tartalmakhoz férhetnek hozzá a különböző eszközeiken.  A Power BI végig segíteni fogja az elemzések beágyazásának folyamatában (adatok -> tudás -> megállapítások -> cselekvés).  Mindezeken felül a Power BI és az Azure segítségével [saját vállalata alkalmazásaiba és portáljaiba](https://powerbi.microsoft.com/developers/embedded-analytics/organization/) is beágyazhat elemzéseket.
 
 Nagy mennyiségű információt találhat a Power BI API-król a [Power BI fejlesztői portálján](http://dev.powerbi.com).
 

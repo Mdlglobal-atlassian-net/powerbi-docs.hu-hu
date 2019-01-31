@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 04f67f82552f7915f8ca4fc6e639de3e616c2f8a
-ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
+ms.openlocfilehash: bb626d8afeb999c85d001abaa2e936314cff78e5
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55147588"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431062"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
@@ -44,7 +44,7 @@ Az egyszeri bejelentkezés SAP HANA rendszerrel való engedélyezéséhez elősz
   * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 * Az átjárót tartalmazó számítógépen telepítse az SAP legfrissebb HANA ODBC-illesztőjét.  A minimális verzió a HANA ODBC 2017. augusztusi, 2.00.020.00-s verziója.
 
-További információt az egyszeri bejelentkezés az SAP HANA-hoz a Kerberossal való konfigurálásához az SAP HANA biztonsági útmutatójának [Egyszeri bejelentkezés a Kerberosszal](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/en-US/1885fad82df943c2a1974f5da0eed66d.html) című témakörében, valamint az onnan hivatkozó oldalakon találhat, különös tekintettel az SAP 1837331 számú megjegyzésére (HOWTO HANA DBSSO Kerberos/Active Directory]).
+További információt az egyszeri bejelentkezés az SAP HANA-hoz a Kerberossal való konfigurálásához az SAP HANA biztonsági útmutatójának [Egyszeri bejelentkezés a Kerberosszal](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) című témakörében, valamint az onnan hivatkozó oldalakon találhat, különös tekintettel az SAP 1837331 számú megjegyzésére (HOWTO HANA DBSSO Kerberos/Active Directory]).
 
 ## <a name="preparing-for-kerberos-constrained-delegation"></a>A Kerberos által korlátozott delegálás előkészítése
 

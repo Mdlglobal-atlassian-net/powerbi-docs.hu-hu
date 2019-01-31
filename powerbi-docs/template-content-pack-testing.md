@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
-ms.openlocfilehash: 2ceb8440cd64b05966caaadc9346771dd28cba82
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8a5382a5e435f916599b05310f89d9b1f0327023
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281229"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430671"
 ---
 # <a name="testing-template-content-packs-for-power-bi"></a>Sablonalapú Power BI tartalomcsomagok tesztelése
 A tartalomcsomagokat a közzétételre beküldés előtt többféleképpen is letesztelheti.  
@@ -68,7 +68,7 @@ Javasoljuk, hogy a tartalomcsomagokban lévő irányítópultokat, jelentéseket
 <a name="submission"></a>
 
 ## <a name="submission"></a>Beküldés
-A [Microsoft AppSource](https://appsource.microsoft.com/en-us/partners/list-an-app) beküldési eljárásával közzéteheti a sablonalapú tartalomcsomagot a szolgáltatás-tartalomcsomagok katalógusában a PowerBI.com helyen, valamint felveheti a tartalomcsomagot a [Microsoft AppSource](http://appsource.microsoft.com) listájára.
+A [Microsoft AppSource](https://appsource.microsoft.com/partners/list-an-app) beküldési eljárásával közzéteheti a sablonalapú tartalomcsomagot a szolgáltatás-tartalomcsomagok katalógusában a PowerBI.com helyen, valamint felveheti a tartalomcsomagot a [Microsoft AppSource](http://appsource.microsoft.com) listájára.
 
 ### <a name="before-submission"></a>Beküldés előtt
 * Tekintse át a tartalomcsomag egyes összetevőinak létrehozására vonatkozó tippeket
@@ -77,7 +77,7 @@ A [Microsoft AppSource](https://appsource.microsoft.com/en-us/partners/list-an-a
 * Bizonyosodjon meg róla, hogy a tartalomcsomag jól reagál a kérdésekre – javasoljuk, hogy legalább 30 különféle kérdéssel tesztelje le a teljes adatmodellt. (Ha saját egyéni [adatösszekötőt](https://aka.ms/DataConnectors) fejlesztett, hagyja ki ezt a lépést.)
 
 ### <a name="submission"></a>Beküldés
-Miután készen áll a beküldésre, lépjen az AppSource [alkalmazásbeküldési oldalára](https://appsource.microsoft.com/en-us/partners/list-an-app), és küldje be az adatokat. Az elérhető termékek listájában mindenképp válassza ki a Power BI terméket.
+Miután készen áll a beküldésre, lépjen az AppSource [alkalmazásbeküldési oldalára](https://appsource.microsoft.com/partners/list-an-app), és küldje be az adatokat. Az elérhető termékek listájában mindenképp válassza ki a Power BI terméket.
 
 A Power BI csapat áttekinti az igénylést, és felveszi Önnel a kapcsolatot annak érdekében, hogy minden összetevő megfeleljen a beküldési előírásoknak. A teljesség ellenőrzése mellett mindenképpen ellenőrizze azt is, hogy a megadott irányítópult és jelentések megfelelnek-e az alkalmazásban leírt üzleti forgatókönyvnek.
 

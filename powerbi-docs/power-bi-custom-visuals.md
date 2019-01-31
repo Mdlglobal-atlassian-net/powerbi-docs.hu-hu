@@ -10,16 +10,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/18/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cac436c97515f6b6f7b6cfc110469615e7afc4c6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1ebb9633451ab8e2f1b8cbf8ada743ce6c42692e
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289279"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431131"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Egyéni vizualizációk a Power BI-ban
 
-Power BI-jelentések létrehozása vagy szerkesztése során számos különböző vizualizációtípus használatára van lehetősége. Ezek a vizualizációk a **Vizualizációk** ablaktáblában láthatók. A [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) letöltésekor vagy a [Power BI szolgáltatás](https://app.powerbi.com) megnyitásakor a vizualizációk egy készlete azonnal elérhető.
+Power BI-jelentések létrehozása vagy szerkesztése során számos különböző vizualizációtípus használatára van lehetősége. Ezek a vizualizációk a **Vizualizációk** ablaktáblában láthatók. A [Power BI Desktop](https://powerbi.microsoft.com/desktop/) letöltésekor vagy a [Power BI szolgáltatás](https://app.powerbi.com) megnyitásakor a vizualizációk egy készlete azonnal elérhető.
 
 ![vizualizációk](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
@@ -48,16 +48,16 @@ A szervezeti egyéni vizualizációkról [a szervezeti vizualizációkról szól
 
 ## <a name="marketplace-visuals"></a>Piactér-vizualizációk
 
-A közösség és a Microsoft tagjai nyilvánosan megosztották az egyéni vizualizációikat az [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) piactéren. Ezek a vizualizációk letölthetők, és hozzáadhatók a Power BI-jelentésekhez. Ezeket az egyéni vizualizációkat a Microsoftnál teszteltük és jóváhagytuk működés és minőség terén is.
+A közösség és a Microsoft tagjai nyilvánosan megosztották az egyéni vizualizációikat az [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) piactéren. Ezek a vizualizációk letölthetők, és hozzáadhatók a Power BI-jelentésekhez. Ezeket az egyéni vizualizációkat a Microsoftnál teszteltük és jóváhagytuk működés és minőség terén is.
 
-Mi az az [AppSource](developer/office-store.md)? Az a hely, ahol a Microsoft-szoftverekhez alkalmazásokat, beépülő modulokat és bővítményeket találhat. Az [AppSource](https://appsource.microsoft.com/en-us/) többek között az Office 365, az Azure, a Dynamics 365, Cortana és a Power BI több millió felhasználóját köti össze olyan megoldásokkal, amelyekkel minden eddiginél hatékonyabban, mélyebb betekintéssel vagy látványosabban dolgozhatnak.
+Mi az az [AppSource](developer/office-store.md)? Az a hely, ahol a Microsoft-szoftverekhez alkalmazásokat, beépülő modulokat és bővítményeket találhat. Az [AppSource](https://appsource.microsoft.com/) többek között az Office 365, az Azure, a Dynamics 365, Cortana és a Power BI több millió felhasználóját köti össze olyan megoldásokkal, amelyekkel minden eddiginél hatékonyabban, mélyebb betekintéssel vagy látványosabban dolgozhatnak.
 
 ### <a name="certified-visuals"></a>Hitelesített vizualizációk
 
 A Power BI-minősítéssel rendelkező vizualizációk olyan vizualizációk, amelyek a piactéren érhetők el, további szigorú minőségteszteken feleltek meg, és további forgatókönyvek, például [e-mailes előfizetések](https://docs.microsoft.com/power-bi/service-report-subscribe) és [PowerPointba történő exportálás](https://docs.microsoft.com/power-bi/service-publish-to-powerpoint) esetén is támogatottak.
 A minősített egyéni vizualizációk listájának megtekintéséhez vagy saját vizualizáció közzétételéhez lásd a [minősített egyéni vizualizációkat](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified) ismertető szakaszt.
 
-Ön olyan webfejlesztő, aki szeretne saját vizualizációkat létrehozni, és hozzáadni azokat az AppSource-hoz? Az [Egyéni Power BI-vizualizáció fejlesztése](developer/custom-visual-develop-tutorial.md) című cikkből megtudhatja, hogyan [tehet közzé egyéni vizualizációkat az AppSource-on](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
+Ön olyan webfejlesztő, aki szeretne saját vizualizációkat létrehozni, és hozzáadni azokat az AppSource-hoz? Az [Egyéni Power BI-vizualizáció fejlesztése](developer/custom-visual-develop-tutorial.md) című cikkből megtudhatja, hogyan [tehet közzé egyéni vizualizációkat az AppSource-on](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals).
 
 ### <a name="import-a-custom-visual-from-a-file"></a>Egyéni vizualizáció importálása fájlból
 
@@ -135,7 +135,7 @@ Az egyéni vizualizációk letöltésének és importálásának két módja van
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
-2. Látogasson el az [Alkalmazások találatainak oldalára](https://appsource.microsoft.com/en-us/marketplace/apps), ott megtekintheti az egyes kategóriák legnépszerűbb alkalmazásait, beleértve a *Power BI-alkalmazásokat*. Mi azonban egyéni vizualizációkat keresünk, szóval szűkítsük le a találatokat a bal oldali navigációs listában található **Power BI-vizualizációk** lehetőség kiválasztásával.
+2. Látogasson el az [Alkalmazások találatainak oldalára](https://appsource.microsoft.com/marketplace/apps), ott megtekintheti az egyes kategóriák legnépszerűbb alkalmazásait, beleértve a *Power BI-alkalmazásokat*. Mi azonban egyéni vizualizációkat keresünk, szóval szűkítsük le a találatokat a bal oldali navigációs listában található **Power BI-vizualizációk** lehetőség kiválasztásával.
 
     ![AppSource-vizualizációk](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 

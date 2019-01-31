@@ -7,17 +7,17 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: a52902e22572503b4be6c21f87abf62a90f60476
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: be1c1e489cd29fc67ade95886f77a5a08697ff99
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296616"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431016"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI-munkaterületcsoport tartalmainak migrálása a Power BI Embeddedbe
 A cikk azt mutatja be, hogyan migrálhatja az adatokat a Power BI-munkaterületcsoportokból a Power BI Embeddedbe, és hogyan aknázhatja ki az alkalmazásokba való beágyazás nyújtotta fejlett lehetőségeket.
 
-A Microsoft nemrégiben [bejelentette az új, kapacitásalapú Power BI Embedded licencelési modellt](https://powerbi.microsoft.com/en-us/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), amelynek segítségével a felhasználók rugalmasabban érhetik el, oszthatják meg és terjeszthetik a tartalmakat. Az ajánlat emellett növeli a méretezhetőséget és a teljesítményt.
+A Microsoft nemrégiben [bejelentette az új, kapacitásalapú Power BI Embedded licencelési modellt](https://powerbi.microsoft.com/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), amelynek segítségével a felhasználók rugalmasabban érhetik el, oszthatják meg és terjeszthetik a tartalmakat. Az ajánlat emellett növeli a méretezhetőséget és a teljesítményt.
 
 A Power BI Embeddeddel a tartalmak (például irányítópultok, átjárók és alkalmazás-munkaterületek) beágyazásához egyetlen egységes API-felület, konzisztens funkciókészlet és a Power BI legújabb szolgáltatásai használhatók. A továbbiakban lehetősége van a Power BI Desktopban elkezdeni a munkát, az üzembe helyezést pedig elvégezheti a Power BI Embedded használatával.
 

@@ -8,12 +8,12 @@ ms.service: powerbi-service
 ms.topic: resource
 ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: f0e81c72fde0275467c3a914d19e916dab604cce
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: 1722c401dfd5d2fdfbba530f440cecf9f1e075f3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280788"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431269"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -70,7 +70,7 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 **tartalomjegyzék** Egy alkalmazás tartalommutatója.
 
-**tartalomcsomag** Előrecsomagolt adathalmazok, jelentések és irányítópultok gyűjteménye. Már **alkalmazások**. Ismerkedjen meg az [új munkaterületi felhasználói felülettel](https://docs.microsoft.com/en-us/power-bi/service-create-the-new-workspaces). 
+**tartalomcsomag** Előrecsomagolt adathalmazok, jelentések és irányítópultok gyűjteménye. Már **alkalmazások**. Ismerkedjen meg az [új munkaterületi felhasználói felülettel](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **tartalom nézet**
 

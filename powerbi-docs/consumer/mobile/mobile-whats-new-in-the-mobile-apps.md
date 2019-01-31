@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: b7301d46279d9b975a07b07506c023e19437631b
-ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
+ms.openlocfilehash: 771b7361efaea436d67c26ee05741f6dc3eba810
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54324043"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431246"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -37,15 +37,15 @@ Az új modern vizualizáció-fejlécet használó jelentések mostantól nem fog
 
 ### <a name="enhance-presentation-mode-windows"></a>Továbbfejlesztett bemutató mód (Windows)
 
-Továbbfejlesztett bemutató üzemmód Surface Hubhoz és Windows 10-eszközökhöz.  A továbbfejlesztett tárgyalótermi Surface Hub-felület jobb bemutató- és közreműködői eszközöket kínál látványelemek nélkül, nagy képernyőre optimalizált nézettel, hogy semmi se vonja el a figyelmet az adatairól. A bemutató mód emellett szabadkézi eszközöket is kínál, amelyekkel hatékonyan mutathatja be adatait. A bemutató módról [itt](https://powerbi.microsoft.com/en-us/blog/presentation-mode-in-power-bi-windows-app/) talál további információt.
+Továbbfejlesztett bemutató üzemmód Surface Hubhoz és Windows 10-eszközökhöz.  A továbbfejlesztett tárgyalótermi Surface Hub-felület jobb bemutató- és közreműködői eszközöket kínál látványelemek nélkül, nagy képernyőre optimalizált nézettel, hogy semmi se vonja el a figyelmet az adatairól. A bemutató mód emellett szabadkézi eszközöket is kínál, amelyekkel hatékonyan mutathatja be adatait. A bemutató módról [itt](https://powerbi.microsoft.com/blog/presentation-mode-in-power-bi-windows-app/) talál további információt.
 
 ### <a name="portrait-report-layout-in-tablets-ios-and-android"></a>Álló elrendezésű jelentések táblagépeken (iOS és Android)
 
-Mostantól a telefonos jelentéselrendezést alkalmazzuk (ha van) a jelentések álló üzemmódban lévő táblagépeken való megjelenítéséhez. További tudnivalók [telefonos elrendezés létrehozásáról a Power BI szolgáltatásban vagy a Desktopban](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report/).
+Mostantól a telefonos jelentéselrendezést alkalmazzuk (ha van) a jelentések álló üzemmódban lévő táblagépeken való megjelenítéséhez. További tudnivalók [telefonos elrendezés létrehozásáról a Power BI szolgáltatásban vagy a Desktopban](https://docs.microsoft.com/power-bi/desktop-create-phone-report/).
 
 ### <a name="supporting-report-query-string"></a>Lekérdezési sztringek támogatása jelentésekben 
 
-A jelentésben lévő, lekérdezési sztringet tartalmazó hivatkozások a mobilalkalmazásban nyílnak meg, előre szűrve a lekérdezési sztringben meghatározott feltételek alapján. További tudnivalók [lekérdezési sztringet tartalmazó jelentésbeli URL-cím létrehozásáról](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+A jelentésben lévő, lekérdezési sztringet tartalmazó hivatkozások a mobilalkalmazásban nyílnak meg, előre szűrve a lekérdezési sztringben meghatározott feltételek alapján. További tudnivalók [lekérdezési sztringet tartalmazó jelentésbeli URL-cím létrehozásáról](https://docs.microsoft.com/power-bi/service-url-filters/).  
 
 ### <a name="shared-credentials-now-in-android"></a>Megosztott hitelesítő adatok (már Androidon)
 
@@ -65,7 +65,7 @@ A jelentésbeli vizualizációk műveleti menüjében (...) már szerepel a mög
 
 A Power BI szolgáltatásban már elérhetők a lapszámozott jelentések. Azok a felhasználók, akik a Power BI szolgáltatásban hozzáférnek lapszámozott jelentésekhez, mobilalkalmazásból is elérhetik őket. 
 
-Olvassa el a Power BI [mobileszközökön használható lapszámozott jelentésekről szóló blogbejegyzését](https://powerbi.microsoft.com/en-us/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
+Olvassa el a Power BI [mobileszközökön használható lapszámozott jelentésekről szóló blogbejegyzését](https://powerbi.microsoft.com/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
 
 ### <a name="shared-credentials-ios"></a>Megosztott hitelesítő adatok (iOS)
 

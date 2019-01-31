@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: 96f91eefeab038419ce64e31c7b4b5755d6adf2c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c05dddbddc2dd19fed1bfbec25bcd9e378df543f
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286588"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430153"
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Azure AD-alkalmazás regisztrálása Power BI-tartalmak beágyazásához
 
@@ -138,7 +138,7 @@ Vagy a beágyazáshoz használt *fő* fiókkal, vagy egy globális rendszergazda
 
 ### <a name="applying-permissions-programmatically"></a>Engedélyek szoftveres alkalmazása
 
-1. Be kell szereznie a bérlőn belül meglévő egyszerű szolgáltatásneveket (felhasználókat). További információt ennek menetéről a [Get servicePrincipal](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/serviceprincipal_get) használatát ismertető témakörben talál.
+1. Be kell szereznie a bérlőn belül meglévő egyszerű szolgáltatásneveket (felhasználókat). További információt ennek menetéről a [Get servicePrincipal](https://developer.microsoft.com/graph/docs/api-reference/beta/api/serviceprincipal_get) használatát ismertető témakörben talál.
 
     Ha azonosító megadása nélkül hívja meg a *Get servicePrincipal* API-t, a bérlőben megtalálható összes egyszerű szolgáltatást lekéri.
 2. Az egyszerű szolgáltatások ellenőrzéséhez használja **appId** tulajdonságként az alkalmazás ügyfélazonosítóját.

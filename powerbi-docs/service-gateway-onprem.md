@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: eea6fe12fdd8821c803863b63ede93179bf67f07
-ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
+ms.openlocfilehash: f477cbd5f2d767333c16a43308b4793527665806
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899250"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430786"
 ---
 # <a name="on-premises-data-gateway"></a>Helyszíni adatátjáró
 
@@ -91,7 +91,7 @@ Amikor hozzáad egy adatforrást az átjáróhoz, meg kell adnia az adatforrás 
 
 * Az [Azure Information Protection](https://docs.microsoft.com/microsoft-365/enterprise/protect-files-with-aip
 ) jelenleg nem támogatott.
-* Az [Access Online](https://products.office.com/en-us/access) jelenleg nem támogatott.
+* Az [Access Online](https://products.office.com/access) jelenleg nem támogatott.
 * Az R-szkriptek használata csak akkor támogatott, ha az átjáró személyes módban van futtatva.
 
 ## <a name="tenant-level-administration"></a>Bérlőszintű felügyelet
@@ -102,7 +102,7 @@ Bérlőt felügyelő rendszergazdáknak másik lehetőségként azt javasoljuk, 
 
 ## <a name="enabling-outbound-azure-connections"></a>Kimenő Azure-kapcsolatok engedélyezése
 
-A helyszíni adatátjáró az Azure Service Bust használja a felhőbeli csatlakozásokhoz, és ennek megfelelően hoz létre kimenő kapcsolatokat a társított Azure-régiókhoz. Alapértelmezés szerint ez a Power BI-bérlő helye. Hol található a [Power BI-bérlőm?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
+A helyszíni adatátjáró az Azure Service Bust használja a felhőbeli csatlakozásokhoz, és ennek megfelelően hoz létre kimenő kapcsolatokat a társított Azure-régiókhoz. Alapértelmezés szerint ez a Power BI-bérlő helye. Hol található a [Power BI-bérlőm?](https://powerbi.microsoft.com/documentation/powerbi-admin-where-is-my-tenant-located/)
 Ha a kimenő kapcsolatokat tűzfal blokkolja, a tűzfalat úgy kell konfigurálnia, hogy az engedélyezze a kimenő kapcsolatokat a helyszíni adatátjárótól a hozzá kapcsolódó Azure-régióba. A [Microsoft Azure adatközpontjainak IP-címtartományai](https://www.microsoft.com/download/details.aspx?id=41653) című témakörben megtalálhatja minden egyes Azure-adatközpont IP-címtartományát.
 > [!NOTE]
 > Az IP-címtartományok idővel változhatnak, ezért fontos, hogy a legújabb információt rendszeresen letöltse. 

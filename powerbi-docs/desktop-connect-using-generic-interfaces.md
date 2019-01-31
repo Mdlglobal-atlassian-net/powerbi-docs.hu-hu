@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c1671c820b6de4cddac169c67103168ac46ffc1f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c680ebea23c479202b8b49ed0376f2416a9cffa3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296042"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430625"
 ---
 # <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Csatlakozás adatokhoz általános illesztők használatával a Power BI Desktopban
 Számos különböző adatforráshoz csatlakozhat a **Power BI Desktopban** beépített adatösszekötők használatával, kezdve az **Access-adatbázisoktól** a **Zendesk-erőforrásokig**, ahogy ez az **Adatok lekérése** ablakban is látható. Továbbá a **Power BI Desktop** beépített általános illesztőinek használatával (pl.: **ODBC** vagy **REST API-k**) számos *egyéb* adatforráshoz is csatlakozhat, amelyek tovább bővítik kapcsolati lehetőségeit.
@@ -49,7 +49,7 @@ Az alábbi lista néhány példát ismertet azon adatforrások közül, amelyekh
 | A Power BI Desktop általános összekötője | Külső adatforrás | További információk hivatkozása |
 | --- | --- | --- |
 | ODBC |Cassandra |[Cassandra ODBC-illesztő](http://www.simba.com/drivers/cassandra-odbc-jdbc/) |
-| ODBC |Couchbase DB |[Couchbase és Power BI](https://powerbi.microsoft.com/en-us/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
+| ODBC |Couchbase DB |[Couchbase és Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 | ODBC |DynamoDB |[DynamoDB ODBC-illesztő](http://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
 | ODBC |Google BigQuery |[BigQuery ODBC-illesztő](http://www.simba.com/drivers/bigquery-odbc-jdbc/) |
 | ODBC |HBase |[Hbase ODBC-illesztő](http://www.simba.com/drivers/hbase-odbc-jdbc/) |
@@ -91,7 +91,7 @@ Az alábbi lista néhány példát ismertet azon adatforrások közül, amelyekh
 
 | A Power BI Desktop általános összekötője | Külső adatforrás | További információk hivatkozása |
 | --- | --- | --- |
-| REST API-k |Couchbase DB |[A Couchbase REST API-val kapcsolatos információk](https://powerbi.microsoft.com/en-us/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
+| REST API-k |Couchbase DB |[A Couchbase REST API-val kapcsolatos információk](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 
 ## <a name="data-sources-accessible-through-r-script"></a>R-szkripten keresztül elérhető adatforrások
 **R-szkriptek** használatával is hozzáférhet adatforrásokhoz, és felhasználhatja azok adatait a **Power BI Desktopban**.

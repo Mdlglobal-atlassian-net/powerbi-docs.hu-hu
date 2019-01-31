@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: f39912f5813f67ed65afde10a0e157385e98b7b7
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
+ms.openlocfilehash: c02ce0a92e258055edf906cf17730fec56bcb450
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406615"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430763"
 ---
 # <a name="microsoft-flow-and-power-bi"></a>A Microsoft Flow és a Power BI
 
-A [Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started) SaaS-szolgáltatással munkafolyamatokat automatizálhat az üzleti felhasználók által használt, egyre növekvő számú alkalmazás és SaaS-szolgáltatás között. A Flow segítségével kedvenc alkalmazásait és szolgáltatásait (többek között a Power BI-t) integrálva automatizálhatja az értesítések küldését, a fájlok szinkronizálását, az adatgyűjtést és még sok más feladatot. A munkafolyamatok automatizálásával egyszerűbben végezhetők el az ismétlődő feladatok.
+A [Microsoft Flow](https://flow.microsoft.com/documentation/getting-started) SaaS-szolgáltatással munkafolyamatokat automatizálhat az üzleti felhasználók által használt, egyre növekvő számú alkalmazás és SaaS-szolgáltatás között. A Flow segítségével kedvenc alkalmazásait és szolgáltatásait (többek között a Power BI-t) integrálva automatizálhatja az értesítések küldését, a fájlok szinkronizálását, az adatgyűjtést és még sok más feladatot. A munkafolyamatok automatizálásával egyszerűbben végezhetők el az ismétlődő feladatok.
 
 [Kezdjen el megismerkedni a Flow-val most.](https://flow.microsoft.com/documentation/getting-started)
 
@@ -31,7 +31,7 @@ Nézze meg, hogyan hoz létre Sirui egy olyan folyamatot, amely részletes e-mai
 ## <a name="create-a-flow-that-is-triggered-by-a-power-bi-data-alert"></a>Power BI-adatriasztás által indított folyamat létrehozása
 
 ### <a name="prerequisites"></a>Előfeltételek
-Ez az oktatóanyag bemutatja, hogyan hozzon létre két különböző folyamatot; az egyiket sablonból, a másikat teljesen az alapoktól. A feladat elvégzéséhez [hozzon létre egy adatriasztást a Power BI-ban](service-set-data-alerts.md), hozzon létre egy ingyenes Slack-fiókot, majd [iratkozzon fel a Microsoft Flow](https://flow.microsoft.com/en-us/#home-signup) szolgáltatásra (ingyenes).
+Ez az oktatóanyag bemutatja, hogyan hozzon létre két különböző folyamatot; az egyiket sablonból, a másikat teljesen az alapoktól. A feladat elvégzéséhez [hozzon létre egy adatriasztást a Power BI-ban](service-set-data-alerts.md), hozzon létre egy ingyenes Slack-fiókot, majd [iratkozzon fel a Microsoft Flow](https://flow.microsoft.com/#home-signup) szolgáltatásra (ingyenes).
 
 ## <a name="create-a-flow-that-uses-power-bi---from-a-template"></a>Power BI-t használó folyamat létrehozása sablonból
 Ennek a feladatnak a végrehajtása során sablon alapján hozunk létre egy egyszerű folyamatot, amelyet egy Power BI-adatriasztás (értesítés) indít majd el.
@@ -108,7 +108,7 @@ Ennek a feladatnak a végrehajtása során sablon nélkül hozunk létre egy egy
     ![A folyamat egy Outlook-értesítést aktivál](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Következő lépések
-* [Microsoft Flow ‒ első lépések](https://flow.microsoft.com/en-us/documentation/getting-started/)
+* [Microsoft Flow ‒ első lépések](https://flow.microsoft.com/documentation/getting-started/)
 * [Adatriasztások beállítása a Power BI szolgáltatásban](service-set-data-alerts.md)
 * [Adatriasztások beállítása az iPhone-on](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Adatriasztások beállítása a Windows 10-hez készült Power BI-mobilalkalmazásban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

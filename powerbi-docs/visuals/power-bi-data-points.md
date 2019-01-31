@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 52f679ee143e1009068c7de1ed9ce13e82e957dc
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295374"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430441"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Adatpontkorlátok és -stratégiák vizualizációtípus szerint
 
@@ -40,7 +40,7 @@ Minden stratégiának megvannak a megjelenített adatok formáján és típusán
 ## <a name="statistics"></a>Statisztika
 Egyes modellek statisztikát tudnak adni az egyes oszlopokban előforduló értékek számáról. Ha rendelkezésre áll ilyen információ, akkor ezt kihasználva több hierarchia is jobban kiegyensúlyozható, hacsak a vizualizáció kifejezetten felül nem írja az értékek számát egy stratégiában.
 
-További információt [Az Analysis Services újdonságai](https://docs.microsoft.com/en-us/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017) című cikkben talál
+További információt [Az Analysis Services újdonságai](https://docs.microsoft.com/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017) című cikkben talál
 
 ## <a name="dynamic-limits"></a>Dinamikus korlátok
 A fenti stratégiákon kívül a csoportosítóoszlopok két hierarchiájával rendelkező vizualizációk (tengely és felirat, vagy kategória és adatsor) egy további, *dinamikus korlátok* nevű stratégiát is használnak.  A dinamikus korlátok az adatpontok jobb kiegyensúlyozására vannak kialakítva. 
@@ -128,7 +128,7 @@ Nincs adatcsökkentési stratégia
 - Értékek: Virtualizálás egyszerre 200 sort tartalmazó ablakokkal
 
 ### <a name="scatter-chart-high-density"></a>Pontdiagram (nagy sűrűségű)
-Lásd: [Nagy sűrűségű pontdiagramok](https://docs.microsoft.com/en-us/power-bi/visuals/desktop-high-density-scatter-charts)
+Lásd: [Nagy sűrűségű pontdiagramok](https://docs.microsoft.com/power-bi/visuals/desktop-high-density-scatter-charts)
 
 ### <a name="pie"></a>Torta
 - Pontok maximális száma: 3,500

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 02b98d807ccc84aa83826ae5e9eecdbdd1987a91
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: ca035762f16d2e8e6c7ffb59220a2457daf10545
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008580"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430809"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Csatlakozás a Salesforce-hoz a Power BI-ban
 A Power BI használatával könnyedén csatlakozhat a Salesforce.com-fiókjához. A létrehozott kapcsolat lekéri az adatokat, és automatikusan a rendelkezésére bocsátja az adatokhoz kapcsolódó irányítópultot és jelentéseket.
@@ -60,11 +60,9 @@ Az adatok igény szerinti megjelenítéséhez tetszés szerint módosíthatja az
 
 **Hogyan tovább?**
 
-* [Kérdéseket tehet fel a Q&A mezőben](consumer/end-user-q-and-a.md) az irányítópult tetején.
-* [Módosíthatja az irányítópult csempéit](service-dashboard-edit-tile.md) <<<<<<< HEAD
-* [Kiválaszthatja valamelyik csempét](consumer/end-user-tiles.md) a mögöttes jelentés megnyitásához =======
+* [Tegyen fel egy kérdést a Q&A mezőben](consumer/end-user-q-and-a.md), amely az irányítópult tetején található
+* [Módosítsa a csempéket](service-dashboard-edit-tile.md) az irányítópulton
 * [Kattintson egy csempére](service-dashboard-tiles.md) az alapjául szolgáló jelentés megnyitásához
->>>>>>> 66fe62d8f200efd9cfeb465eeb5f370dbbaa63be
 * Noha az adatkészlet napi frissítésre van ütemezve, módosíthatja a frissítési ütemezést, vagy igény szerint frissíthet az **Azonnali frissítés** gombbal.
 
 ## <a name="system-requirements-and-considerations"></a>Rendszerkövetelmények és megfontolandó szempontok
