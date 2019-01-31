@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 660f76b5bf04f742d435df928e068e434ca70531
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e8e27c55cdcd85fd9f88a3b1ad425829cfa9cf0d
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281988"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430602"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>A Power BI szolgáltatás alapfogalmai ***felhasználók*** számára
 
@@ -37,7 +37,7 @@ Első lépésként nyisson meg egy böngészőt, és írja be az **app.powerbi.c
 ![A Power BI szolgáltatás üdvözlőképernyője](media/end-user-basic-concepts/power-bi-open.png)
 
 A Power BI használata során személyre szabhatja, hogy mi jelenjen meg a webhely megnyitásakor.  Például vannak, akik azt szeretik, ha a Power BI a Kezdőlapot nyitja meg, mások pedig a kedvenc irányítópultjukat látják szívesen bejelentkezéskor. Az alábbiakban bemutatjuk, hogyan állíthatja be mindezt. 
-- [Kezdőlap előnézete](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search)    
+- [Kezdőlap előnézete](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search)    
 - [Tartalom beállítása **kiemeltként**](end-user-featured.md) 
 
 ![a Kezdőlap nézet és az irányítópult nézet](media/end-user-basic-concepts/power-bi-first.png)
@@ -51,7 +51,7 @@ A Power BI 5 alapvető építőeleme a következő: ***vizualizációk***, ***ir
 ![alapszintű folyamatábra](media/end-user-basic-concepts/power-bi-workflow.png)
 
 Ez a munkafolyamat legalapvetőbb leírása. 
-* ![vizualizáció ikon](media/end-user-basic-concepts/visual.png) A ***Vizualizáció*** a Power BI-*tervezők* által *jelentésekből* és  *adatkészletekből* származó adatok alapján létrehozott diagramok egy típusa.** A *tervezők* általában a Power BI Desktopban készítik el a vizualizációkat. 
+* ![vizualizáció ikon](media/end-user-basic-concepts/visual.png) A ***Vizualizáció*** (vagy *visual*), a Power BI-*tervezők* által *jelentésekből* és  *adatkészletekből* származó adatok alapján létrehozott diagramok egy típusa. A *tervezők* általában a Power BI Desktopban készítik el a vizualizációkat. 
 
     További információk: [Vizualizációk Power BI-*felhasználók* számára](end-user-visualizations.md)
 
