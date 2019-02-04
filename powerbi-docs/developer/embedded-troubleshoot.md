@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/20/2018
-ms.openlocfilehash: 4fff6b19b9a17b626d11545a8d4baa8464ffc324
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a53ddf70e82c191af520f2dbba5b5d3d1b0ced42
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294080"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431223"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Beágyazott alkalmazás hibaelhárítása
 
@@ -99,6 +99,14 @@ Lehet, hogy az alkalmazás háttérszolgáltatásának a GenerateToken-hívás e
 
 ## <a name="authentication"></a>Hitelesítés
 
+### <a name="authentication-failed-with-aadsts90002-tenant-authorize-not-found"></a>A hitelesítés nem sikerült: AADSTS90002: A „hitelesítés” bérlő nem található
+
+ Ha bejelentkezéskor a következőhöz hasonló hibaüzeneteket kap: ***hiba: invalid_request, error_description: AADSTS90002: A „hitelesítés” bérlő nem található***, annak az az oka, hogy az ADAL 4.x nem támogatja a „https://login.microsoftonline.com/{Tenant}/oauth2/authorize/” címet hitelesítési URL-címként.
+ 
+A hiba elhárításához törölje az „oauth2/authorize/” végződést a hitelesítési URL-címből. Erről a [Power BI fejlesztői minták](https://github.com/Microsoft/PowerBI-Developer-Samples) című cikkben talál útmutatást.
+
+ Olvassa el az ADAL 4.x kiadási megjegyzések [Jobb hitelesítés-ellenőrzés](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Changes-adalnet-4.0#better-authority-validation) című szakaszát.
+ 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>A hitelesítés nem sikerült: AADSTS70002 vagy AADSTS50053
 
 **_(AADSTS70002: Hiba a hitelesítő adatok ellenőrzése közben. AADSTS50053: Túl sokszor próbált bejelentkezni helytelen felhasználóazonosítóval vagy jelszóval)_**
@@ -243,7 +251,7 @@ Megismerkedhet a [beágyazáshoz szükséges telepítési eszközzel](https://ak
 
 Mielőtt használatba venné a beágyazáshoz szükséges telepítési eszközt, ellenőrizze, hogy rendelkezik-e az összes szükséges előfeltétellel. Szükség van egy **Power BI Pro**-fiókra és egy **Microsoft Azure**-előfizetésre.
 
-* Ha még nem regisztrált a **Power BI Pro** szolgáltatásra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://powerbi.microsoft.com/en-us/pricing/).
+* Ha még nem regisztrált a **Power BI Pro** szolgáltatásra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://powerbi.microsoft.com/pricing/).
 * Ha még nincs Azure-előfizetése, kezdés előtt hozzon létre egy [ingyenes fiókot](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * Állítson be egy saját [Azure Active Directory-bérlőt](create-an-azure-active-directory-tenant.md).
 * Telepítse a [Visual Studio](https://www.visualstudio.com/) 2013-as vagy későbbi verzióját.
@@ -294,7 +302,7 @@ További információ: [Power BI Embedded – gyakori kérdések](embedded-faq.m
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 
-Ha további segítségre van szüksége, [forduljon az ügyfélszolgálathoz](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) vagy [hozzon létre egy támogatási jegyet az Azure Portalon keresztül](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest), és adja meg a látott hibaüzenet(ek)et.
+Ha további segítségre van szüksége, [forduljon az ügyfélszolgálathoz](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) vagy [hozzon létre egy támogatási jegyet az Azure Portalon keresztül](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest), és adja meg a látott hibaüzenet(ek)et.
 
 ## <a name="next-steps"></a>Következő lépések
 

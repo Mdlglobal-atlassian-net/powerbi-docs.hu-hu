@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 5998f4b63a168c3056a5464844d008bd657ef7c9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a37daca38c13cff08be13da619735214002646a3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294264"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430533"
 ---
 # <a name="using-an-alternate-email-address"></a>Másodlagos e-mail-cím használata
 
@@ -64,7 +64,7 @@ A Power BI a következő sorrendben választja ki a használandó e-mail-címet:
 
 1. Ha az Azure AD-bérlő felhasználói objektumának „mail” attribútuma létezik, akkor a Power BI ezt az attribútumot használja e-mail-címként.
 
-1. Ha az UPN-hez tartozó e-mail-cím *nem* **\*.onmicrosoft.com** tartománybeli cím (ez a „@” jelet követő részből derül ki), akkor a Power BI ezt az attribútumot használja e-mail-címként.
+1. Ha az UPN-hez tartozó e-mail-cím *nem* **\*.onmicrosoft.com** tartománybeli cím (ez a „\@” jelet követő részből derül ki), akkor a Power BI ezt az attribútumot használja e-mail-címként.
 
 1. Ha az Azure AD-beli felhasználóobjektum *egyéb e-mail-cím* tömbattribútuma ki van töltve, akkor az ebben a listában szereplő első e-mail-cím lesz használva (mivel ez az attribútum e-mail-címek listáját is tartalmazhatja).
 

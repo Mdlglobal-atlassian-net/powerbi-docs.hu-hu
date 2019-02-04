@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/03/2018
+ms.date: 01/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dc756e98a58d30edd476112ca249dae032d0d79a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ee0063d5266c663079a9801777ee2c900957c52f
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296800"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234301"
 ---
 # <a name="visualization-types-in-power-bi"></a>Vizualizációtípusok a Power BI-ban
 ## <a name="power-bi-visualizations"></a>Power BI-vizualizációk
@@ -82,6 +82,11 @@ További információt a [Power BI tölcsérdiagramjait](power-bi-visualization-
 
 További információt a [Power BI mérőóra-diagramjait](power-bi-visualization-radial-gauge-charts.md) ismertető cikkben talál.
 
+<!-- ### Key influencers chart
+![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
+
+A key influencer chart displays the major contributors to a selected result or value. -->
+
 ### <a name="kpis"></a>KPI-k
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
 
@@ -107,7 +112,7 @@ További információ: [Tippek és trükkök térképes vizualizációkhoz](powe
 ### <a name="maps-arcgis-maps"></a>Térképek: ArcGIS-térképek
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
-További információt a [Power BI ArcGIS-térképeit](../power-bi-visualization-arcgis.md) ismertető cikkben talál.
+További információt a [Power BI ArcGIS-térképeit](power-bi-visualization-arcgis.md) ismertető cikkben talál.
 
 ### <a name="maps-filled-maps-choropleth"></a>Térképek: Kitöltött térképek (Choropleth)
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
@@ -133,6 +138,13 @@ További információt a [Power BI mátrixvizualizációit](desktop-matrix-visua
 
 ### <a name="pie-charts"></a>Tortadiagramok
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
+
+A tortadiagramok a részek egészhez való viszonyát ábrázolják. 
+
+### <a name="ribbon-chart"></a>Szalagdiagram
+![menüszalag-diagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-ribbon.png)
+
+A szalagdiagramokon jól látható, hogy melyik adatkategória a legmagasabb rangú (értékű). A szalagdiagramokkal hatékonyan ábrázolható a rangok időbeli változása: minden időszakban a legmagasabb rangú (értékű) kategória látható felül.
 
 ### <a name="scatter-and-bubble-charts"></a>Pont- és buborékdiagramok
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bubble.png)

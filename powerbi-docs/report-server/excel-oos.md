@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: 2a0fc921ba576803f02ede8fd269370584c61efe
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 157808d7378b40cb097c2cb667eb9d237654e66d
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284219"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234416"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>A jelentéskészítő kiszolgáló konfigurálása Excel-munkafüzetek üzemeltetéséhez az Office Online Server (OOS) használatával
 
@@ -57,7 +57,7 @@ Ha olyan Excel Online-funkciókat tervez használni, amelyek külső adathozzáf
 1. Töltse le az Office Online Servert a [mennyiségi licencszolgáltatási központból (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). A letöltési gomb az Office-termékek alatt található a VLSC portálon. Fejlesztési célokra letöltheti az OOS-t az MSDN-előfizetői letöltéseknél.
 2. Futtassa a Setup.exe fájlt.
 3. Az **Olvassa el a Microsoft szoftverlicenc-szerződést** oldalon jelölje be az **Elfogadom a szerződés feltételeit** jelölőnégyzetet, és válassza a **Folytatás** lehetőséget.
-4. A **Fájl helyének kiválasztása** oldalon válassza ki az Office Online Server fájlok kívánt telepítési mappáját (például C:\Program Files\Microsoft Office Web Apps*), és válassza a **Telepítés** lehetőséget. Ha a megadott mappa nem létezik, a telepítő létrehozza.
+4. A **Fájl helyének kiválasztása** oldalon válassza ki az Office Online Server fájlok kívánt telepítési mappáját (például C:\Program Files\Microsoft Office Web Apps\*), és válassza a **Telepítés** lehetőséget. Ha a megadott mappa nem létezik, a telepítő létrehozza.
 
     Azt ajánljuk, hogy egy rendszermeghajtóra telepítse az Office Online Servert.
 

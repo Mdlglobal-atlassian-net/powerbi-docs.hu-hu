@@ -1,5 +1,5 @@
 ---
-title: Vizualizációk használata
+title: Vizualizációk használata felhasználók számára
 description: A Power BI alapfogalmai és szakkifejezései – vizualizációk. Mi az a Power BI-vizualizáció?
 author: mihart
 manager: kvivek
@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 875f5cef31ea61fffff29404b03af5bbbfc9f0c6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5eadf12fc1b54e8f5ac657685826816f0fca318d
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287635"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234347"
 ---
 # <a name="visualizations-for-power-bi-consumers"></a>Vizualizációk Power BI-**felhasználók** számára
 
@@ -53,4 +53,5 @@ A vizualizációkat a jelentések és irányítópultok *tervezői* hozzák lét
 
 ## <a name="next-steps"></a>Következő lépések
 Vissza az [alapfogalmakat ismertető szakaszhoz](end-user-basic-concepts.md)    
-[Vizualizáció kiválasztása jelentés megnyitásához](end-user-report-open.md)
+[Vizualizáció kiválasztása jelentés megnyitásához](end-user-report-open.md)    
+[A Power BI-ban elérhető vizualizációtípusok](end-user-visual-type.md)

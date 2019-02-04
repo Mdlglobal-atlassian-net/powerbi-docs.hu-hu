@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 74d261098ee8385721a0b72d808a6ecb1b89be7c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2a6fe04f3e905a1e2ce02bceed123b6f117e62c8
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283805"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234439"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával
 
@@ -106,10 +106,10 @@ A Power BI az „**and**” operátoron kívül sok továbbit is támogat. Ezek 
 |**gt**     | nagyobb, mint        |nem | igen | igen  | termék/ár gt 20
 |**le**     |   kisebb vagy egyenlő, mint      | nem | igen | igen  | termék/ár le 100
 |**lt**     |  kisebb, mint       | nem | igen | igen |  termék/ár lt 20
-|**in****     |  a következők között van       | igen | igen |  igen | Diák/Életkor in (27, 29)
+|**in\*\***     |  a következők között van       | igen | igen |  igen | Diák/Életkor in (27, 29)
 
 
-\** az **in** használatakor az **in** operátortól jobbra lévő értékek zárójelek közötti, vesszővel elválasztott listaként, vagy egy kollekciót megadó kifejezésként adhatók meg.
+\*\* az **in** használatakor az **in** operátortól jobbra lévő értékek zárójelek közötti, vesszővel elválasztott listaként, vagy egy kollekciót megadó kifejezésként adhatók meg.
 
 ### <a name="numeric-data-types"></a>Numerikus adattípusok
 

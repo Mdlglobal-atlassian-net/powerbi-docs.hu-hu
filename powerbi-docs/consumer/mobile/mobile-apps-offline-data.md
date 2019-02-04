@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: 36a3026ebbdf1290d7f809f5c1ccaac7f5fbd7d0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b4977bd043cec08c86fbd3c8893e8f1e185dc1fc
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292407"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430556"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Adatok megtekintése kapcsolat nélküli üzemmódban a Power BI-mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -57,6 +57,7 @@ Amikor kapcsolat nélküli üzemmódban használja a Power BI-t a mobileszközé
 * A Power BI-ban a teljes Excel-munkafüzetek nem érhetők el kapcsolat nélküli üzemmódban.
 * A Reporting Services mobiljelentések és KPI-k megtekinthetők kapcsolat nélküli üzemmódban, ha csatlakoztatott állapotban egyszer már használta őket, de nem frissülnek a háttérben. Csak akkor frissülnek, amikor megnyitja őket.
 * A Power BI mobilalkalmazásaiban nem jelennek meg a Power BI jelentéskészítő kiszolgálón mentett Power BI Desktop-fájlok (.pbix-fájlok). 
+* A lapszámozott jelentések (RDL) nem érhetők el kapcsolat nélkül.
 
 ## <a name="next-steps"></a>Következő lépések
 A visszajelzése segít eldönteni, hogy milyen fejlesztésekre koncentráljunk a jövőben, ezért kérjük, ne mulasszon el szavazni más szolgáltatásokra, amelyeket szívesen látna a Power BI-mobilalkalmazásokban. 

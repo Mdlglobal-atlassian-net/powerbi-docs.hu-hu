@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 01/18/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 085860fb9d8e9e01bf0694896a561f34a5627b53
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: 7d76d874712f328344b60fc8b146f69e1aca55db
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394651"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234531"
 ---
 # <a name="add-comments-to-a-dashboard"></a>Megjegyzés hozzáadása irányítópulthoz
 Hozzáadhat személyes megjegyzéseket, vagy az irányítópultra vonatkozó beszélgetést kezdeményezhet a munkatársaival. A **megjegyzés** csak az egyik olyan funkció a sok közül, amely lehetővé teszi a *felhasználó* számára a másokkal való együttműködést. 
@@ -73,7 +73,7 @@ Megjegyzések fűzhetők egy teljes irányítópulthoz vagy egy irányítópult 
 5. A **Bezárás** lehetőséggel lehet visszatérni az irányítópultra vagy a jelentésre.
 
 ### <a name="get-your-colleagues-attention-by-using-the--sign"></a>Munkatársai figyelmének felhívása a @ jel használatával
-Ha megjegyzést fűz egy irányítópulthoz vagy egy adott vizualizációhoz, akkor erre a „@” jel használatával hívhatja fel munkatársai figyelmét.  A „@” jel begépelésekor a Power BI legördülő listát nyit meg, amelyben a vállalatához tartozó személyeket kereshet meg és jelölhet ki. Az ellenőrzött nevek a „@” előtaggal, kék betűkkel jelennek meg. 
+Ha megjegyzést fűz egy irányítópulthoz vagy egy adott vizualizációhoz, akkor erre a „\@” jel használatával hívhatja fel munkatársai figyelmét.  A „\@” jel begépelésekor a Power BI legördülő listát nyit meg, amelyben a vállalatához tartozó személyeket kereshet meg és jelölhet ki. Az ellenőrzött nevek a „\@” előtaggal, kék betűkkel jelennek meg. 
 
 Ez pedig egy olyan beszélgetés, amit a vizualizáció *tervezőjével* folytatok. A tervező a @ szimbólumot használja, hogy nekem címezze a megjegyzéseit. Innen tudom, hogy a megjegyzés nekem szól. Amikor megnyitom ezt az alkalmazás-irányítópultot a Power BI-ban, kiválasztom a **Megjegyzések** elemet a fejlécen. A **Megjegyzések** panel megjeleníti a beszélgetést.
 

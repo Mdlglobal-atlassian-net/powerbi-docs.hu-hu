@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 494612b9c8ef448756dfe2d516bfca68e69d2e7a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9002b1871f5e7db4ef67d4f2f77b6b8769aa1de6
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296823"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430281"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>A Power BI felügyelete – gyakori kérdések (GYIK)
 
@@ -45,6 +45,7 @@ A cikk a Power BI felügyeletével kapcsolatos gyakori kérdéseket ismerteti. A
 * [Van még bármi egyéb, amire fel kell készülnöm?](#are-there-any-additional-things-i-should-be-prepared-for)
 * [Hol található a Power BI-bérlőm?](#where-is-my-power-bi-tenant-located)
 * [A Power BI SLA (szolgáltatásiszint-szerződés)](#what-is-the-power-bi-sla)
+* [Hogyan kezeli a Power BI a magas rendelkezésre állást és a feladatátvételt?](#how-does-power-bi-handle-high-availability-and-failover)
 
 ### <a name="security-in-power-bi-section"></a>Biztonság a Power BI-ban szakasz
 
@@ -241,11 +242,15 @@ További információt a Power BI-bérlő adatrégiójáról a [Hol található 
 
 A Power BI SLA-ról (szolgáltatásiszint-szerződésről) további információt a Microsoft licencelést bemutató webhelyének **Licencelés** szakaszában található [Licencelési feltételek és dokumentáció](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) című témakörben talál.
 
+### <a name="how-does-power-bi-handle-high-availability-and-failover"></a>Hogyan kezeli a Power BI a magas rendelkezésre állást és a feladatátvételt?
+
+A magas rendelkezésre állásról és a feladatátvételről a [Gyakori kérdések a Power BI-beli magas rendelkezésre állással, feladatátvétellel és vészhelyreállítással kapcsolatban](service-admin-failover.md) című cikk nyújt tájékoztatást.
+
 ## <a name="security-in-power-bi"></a>Biztonság a Power BI-ban
 
 ### <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Eleget tesz a Power BI az országos, regionális, illetve iparágra jellemző megfelelőségi követelményeknek?
 
-A Power BI megfelelésével kapcsolatban további információért látogasson el a [Microsoft biztonsági és adatkezelési központba](https://www.microsoft.com/en-us/TrustCenter/CloudServices/business-application-platform/default.aspx).
+A Power BI megfelelésével kapcsolatban további információért látogasson el a [Microsoft biztonsági és adatkezelési központba](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/default.aspx).
 
 ### <a name="how-does-security-work-in-power-bi"></a>Hogyan működik a biztonság a Power BI-ban?
 
