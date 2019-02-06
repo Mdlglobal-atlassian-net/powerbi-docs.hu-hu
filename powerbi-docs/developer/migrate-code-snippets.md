@@ -2,21 +2,22 @@
 title: Kódrészletek a tartalmak Power BI Embeddedből való migrálásához
 description: Íme a tartalmak migrálásához szükséges alapvető műveletek néhány kódrészlete
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/30/2018
-ms.author: maghan
-ms.openlocfilehash: ddb0e95e20a22fd6e7e832c415462504d2ef3652
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: f53549e0a046195c353362368e2e3682df152af9
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55429973"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762513"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kódrészletek a tartalmak Power BI-munaterületcsoportból való migrálásához
+
 Íme a tartalmak migrálásához szükséges alapvető műveletek néhány kódrészlete. Egyes jelentéstípusok kapcsolódó folyamatai: [Power BI-munkaterület-csoport tartalmainak migrálása a Power BI Embeddedbe](migrate-from-powerbi-embedded.md#content-migration).
 
 A Power BI Embedded (PaaS) tartalmainak a Power BI szolgáltatásba (SaaS) való másolásában egy **migrálási eszközt** használhat segítségül. Ez különösen akkor hasznos, ha sok tartalommal rendelkezik. További információ: [Power BI Embedded migrálási eszköz](migrate-tool.md).
@@ -25,7 +26,7 @@ Az alábbi példakódok a C# és a [Power BI .NET SDK](https://www.nuget.org/pro
 
 A következő névtereket használja az alábbi kódrészletek végrehajtásához.
 
-```
+```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.PowerBI.Api.V1;
 using Microsoft.PowerBI.Api.V1.Models;
@@ -46,8 +47,8 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-
 ## <a name="export-report-from-paas-workspace"></a>Jelentés exportálása PaaS-munkaterületről
+
 ```
     // Create a token credentials with "AppKey" type
     var credentials = new TokenCredentials(<myAppKey==>, "AppKey");
@@ -72,6 +73,7 @@ using System.Threading.Tasks;
 ```
 
 ## <a name="import-report-to-saas-workspace"></a>Jelentés importálása SaaS-munkaterületre
+
 ```
     AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.net/common/");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <myClientId>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
@@ -85,6 +87,7 @@ using System.Threading.Tasks;
 ```
 
 ## <a name="extract-directquery-connection-string-from-paas-report"></a>DirectQuery kapcsolati sztring kinyerése a PaaS-jelentésből
+
 Ez a PBIX frissítéséhez szükséges az SaaS-be való migrálás után.
 
 ```
@@ -105,6 +108,7 @@ Ez a PBIX frissítéséhez szükséges az SaaS-be való migrálás után.
 ```
 
 ## <a name="update-directquery-connection-string-is-saas-workspace"></a>DirectQuery kapcsolati sztring frissítése az SaaS-munkaterületen
+
 ```
     public class ConnectionString
     {
@@ -123,6 +127,7 @@ Ez a PBIX frissítéséhez szükséges az SaaS-be való migrálás után.
 ```
 
 ## <a name="set-directquery-credentials-in-saas-workspace"></a>DirectQuery hitelesítő adatok beállítása az SaaS-munkaterületen
+
 Ebben a kódrészletben az egyszerűség kedvéért nem titkosított hitelesítő adatokat használunk, de a titkosított adatok használata is támogatott.
 
 ```
@@ -159,6 +164,7 @@ Ebben a kódrészletben az egyszerűség kedvéért nem titkosított hitelesít�
 ```
 
 ## <a name="push-dataset--report"></a>Adatkészlet leküldése és jelentés
+
 Újra össze kell állítania a jelentést a létrehozott adatkészlethez.
 
 Ebben a kódrészletben feltételezzük, hogy a leküldhető adatkészlet már az SaaS-környezet egyik alkalmazás-munkaterületén van. További információ a leküldési API-ról: [Adatok leküldése Power BI-adatkészletekbe](walkthrough-push-data.md).
@@ -223,6 +229,7 @@ Ebben a kódrészletben feltételezzük, hogy a leküldhető adatkészlet már a
 ```
 
 ## <a name="next-steps"></a>További lépések
+
 [Power BI Embedded migrálási eszköz](migrate-tool.md)  
 [Beágyazás a Power BI-jal](embedding.md)  
 [Power BI Embedded munkaterület-csoport tartalmainak migrálása a Power BI-ba](migrate-from-powerbi-embedded.md)  
@@ -234,4 +241,3 @@ Ebben a kódrészletben feltételezzük, hogy a leküldhető adatkészlet már a
 [Power BI Premium-tanulmány](https://aka.ms/pbipremiumwhitepaper)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-

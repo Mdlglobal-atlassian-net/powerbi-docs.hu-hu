@@ -2,21 +2,22 @@
 title: Adatkészlet lekérése és sorok hozzáadása
 description: Útmutatás az adatok leküldéséhez – Adatkészlet lekérése, és sorok hozzáadása egy Power BI-táblához
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: cd7f1eabc104da7e310abbfbce2929f047f0e5d8
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: fbde44136f403e3aff0c32d8d4acef4d1970830a
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430832"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762490"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>4. lépés: Sorok hozzáadása egy Power BI-táblához adathalmaz lekérésével
+
 Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-data.md) ismertető részletes útmutató része.
 
 Az Adatok adatkészletbe való leküldésének **3. lépésében**, amelynek címe [Adatkészlet létrehozása a Power BI-ban](walkthrough-push-data-create-dataset.md), az [Adatkészlet létrehozása](https://docs.microsoft.com/rest/api/power-bi/datasets) művelet meghívásával létrehozott egy adatkészletet a Power BI-ban. Ebben a lépésben az [Adatkészletek lekérése](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) műveletet és a Newtonsoft.Jsont fogja használni az adatkészlet azonosítójának lekéréséhez. Az adatkészlet azonosítóját a 4. lépésben fogja használni, hogy sorokat adjon hozzá egy adatkészlethez. 
@@ -26,14 +27,13 @@ Ha adatokat szeretne elküldeni Power BI-adatkészletbe, akkor az adatkészletbe
 Az adatkészlet lekérésének menete:
 
 ## <a name="get-a-power-bi-dataset"></a>Power BI-adatkészlet lekérése
+
 > **MEGJEGYZÉS**: Mielőtt elkezdené, győződjön meg arról, hogy követte az [adatok leküldése az adatkészletbe](walkthrough-push-data.md) bemutatóban található korábbi lépéseket.
-> 
-> 
 
 1. A 2. lépésben létrehozott konzolalkalmazás projektben tegye a következőket: Hajtsa végre az adatok leküldéséről szóló útmutató [Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése](walkthrough-push-data-get-token.md) lépését, és telepítse a Newtonsoft.Json NuGet-csomagot. A csomagot az alábbiakban leírt módon telepítheti:
-   
+
      a. A Visual Studio 2015-ben válassza a **Tools** (Eszközök) > **NuGet Package Manager** (NuGet-csomagkezelő) > **Package Manager Console** (Csomagkezelő konzol) elemet.
-   
+
      b. A **csomagkezelő konzolban** lépjen be az Install-Package Newtonsoft.Json elembe.
 2. A csomag telepítése után adja hozzá a **using NewtonsoftJson;** karakterláncot a Program.cs fájlhoz.
 3. Az **Adatkészlet azonosítójának** lekéréséhez adja hozzá a Program.cs fájlhoz az alábbi kódot.
@@ -110,6 +110,7 @@ Az alábbiakban megtalálja a [teljes kódlistát](#code).
 <a name="code"/>
 
 ## <a name="complete-code-listing"></a>Teljes kódlista
+
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System.Net;
@@ -265,6 +266,7 @@ Az alábbiakban megtalálja a [teljes kódlistát](#code).
 [Következő lépés >](walkthrough-push-data-add-rows.md)
 
 ## <a name="next-steps"></a>Következő lépések
+
 [Sorok hozzáadása egy Power BI-táblához](walkthrough-push-data-add-rows.md)  
 [Newtonsoft.Json](http://www.newtonsoft.com/json)  
 [Adatkészletek lekérése](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
@@ -273,4 +275,3 @@ Az alábbiakban megtalálja a [teljes kódlistát](#code).
 [A Power BI REST API-jainak leírása](https://docs.microsoft.com/rest/api/power-bi/)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-

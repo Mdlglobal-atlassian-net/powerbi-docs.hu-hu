@@ -2,21 +2,22 @@
 title: A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
 description: Tudnivalók a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítéséről
 author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/24/2019
-ms.author: maggies
-ms.openlocfilehash: c118e3c2f8b30635982a37c47da9fb9e337aff05
-ms.sourcegitcommit: d12d84583e65ebecc8aa947b0cd5720cffdc7978
+ms.openlocfilehash: 63550950b21231909c32ac63f5f2930ebf93c0af
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54907521"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762214"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
+
 Tudnivalók a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítéséről.
 
 Ha a Power BI jelentéskészítő kiszolgálóhoz szeretne Power BI-jelentéseket létrehozni, akkor le kell tölteni és telepíteni a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopot. Ez különbözik a Power BI szolgáltatáshoz használt Power BI Desktop-kiadástól. A Power BI szolgáltatáshoz készült Power BI Desktopban például olyan előzetes funkciók is megtalálhatók, amelyek a kiadásukig nem érhetők el a Power BI jelentéskészítő kiszolgálóban. Ha ezt a verziót használja, akkor a jelentéskészítő kiszolgáló a jelentések és a modell ismert verzióját használhatja. 
@@ -44,7 +45,7 @@ Ha ellenőrizné, hogy a Power BI jelentéskészítő kiszolgálóhoz optimaliz�
 1. A telepítő letöltése után indítsa el a Power BI Desktop (2019. január) telepítővarázslóját.
 
 2. A telepítés végén kattintson a **Power BI Desktop azonnali indítása** lehetőségre.
-   
+
     A folyamat automatikusan elindul, és máris hozzákezdhet.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Annak ellenőrzése, hogy a megfelelő verziót használja-e
@@ -64,9 +65,11 @@ Azt is megteheti, hogy először megnyitja a Power BI Desktop használni kíván
 Ha egy Power BI-jelentést szerkeszt a Power BI jelentéskészítő kiszolgálóból vagy új Power BI-jelentést hoz létre a webes portálról, mindig a Power BI Desktop megfelelő verziója nyílik meg.
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
+
 A Power BI jelentéskészítő kiszolgálón, a Power BI szolgáltatásban (http://app.powerbi.com)) és a Power BI-mobilalkalmazásokban található jelentések működése szinte teljesen megegyezik, de bizonyos funkciók eltérnek egymástól.
 
 ### <a name="in-a-browser"></a>Böngészőben
+
 A Power BI jelentéskészítő kiszolgálón tárolt jelentések minden vizualizációt támogatnak, köztük:
 
 * Egyéni vizualizációk
@@ -79,6 +82,7 @@ A Power BI jelentéskészítő kiszolgálón tárolt jelentések nem támogatjá
 * A Power BI Desktop előzetes verziójú funkciói
 
 ### <a name="in-the-power-bi-mobile-apps"></a>A Power BI-mobilalkalmazásokban
+
 A Power BI jelentéskészítő kiszolgálón tárolt jelentések a [Power BI-mobilalkalmazások](../consumer/mobile/mobile-apps-for-mobile-devices.md) minden alapvető funkcióját támogatják, köztük:
 
 * [A jelentés telefonos elrendezése](../desktop-create-phone-report.md): A jelentést optimalizálhatja a Power BI-mobilalkalmazásokra. Az optimalizált jelentéseknek különleges ikonjuk ![Jelentés telefonos elrendezésének ikonja](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png) és elrendezésük van a mobiltelefonon.
@@ -100,10 +104,10 @@ Ha a jelentéskészítő kiszolgálója korábbi verziójú, akkor a Power BI De
 - [A Power BI jelentéskészítő kiszolgálóra (2018. augusztus) optimalizált](https://www.microsoft.com/download/details.aspx?id=57271) Microsoft Power BI Desktop
 
 ## <a name="next-steps"></a>Következő lépések
+
 Most, hogy telepítette a Power BI Desktopot, megkezdheti Power BI-jelentések létrehozását.
 
 [Power BI-jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz](quickstart-create-powerbi-report.md)  
 [Mi a Power BI jelentéskészítő kiszolgáló?](get-started.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-

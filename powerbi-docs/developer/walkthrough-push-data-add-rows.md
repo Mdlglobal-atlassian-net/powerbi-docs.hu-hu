@@ -4,19 +4,20 @@ description: Útmutatás az adatok leküldéséhez – Sorok hozzáadása egy Po
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/01/2018
-ms.openlocfilehash: 798bfbb5d1ebf127e7b958e02166dea5f1af81ef
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 52ee2dec11029f7c529362fdb44e2291846449c1
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430488"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761984"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>5. lépés: Sorok hozzáadása egy Power BI-táblázathoz
+
 Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-data.md) ismertető részletes útmutató része.
 
 Az adatok adatkészletbe történő leküldési folyamatának **4. lépése** ([Adatkészlet lekérése és sorok hozzáadása egy Power BI-táblához](walkthrough-push-data-get-datasets.md)) esetében az [Adatkészletek lekérése](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) művelet és a Newtonsoft.Json fájl használatával történik az adatkészlet azonosítójának lekérése. Ebben a lépésben az adatkészlet azonosítóját és a [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) műveletet fogja használni arra, hogy sorokat adjon hozzá egy **Power BI**-adatkészlethez. 
@@ -28,10 +29,9 @@ A [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_
 Az alábbiakban a sorok adatkészlethez történő hozzáadását mutatjuk be a Power BI API használatával.
 
 ## <a name="add-rows-to-a-power-bi-table"></a>Sorok hozzáadása egy Power BI-táblázathoz
+
 > [!NOTE]
 > Mielőtt elkezdené, győződjön meg arról, hogy követte az [adatok leküldése az adatkészletbe](walkthrough-push-data.md) bemutatóban található korábbi lépéseket.
-> 
-> 
 
 1. A 2. lépésben létrehozott konzolalkalmazás projektben tegye a következőket: Útmutatás az adatok leküldéséhez, [Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése](walkthrough-push-data-get-token.md), a lenti kód hozzáadása.
 2. Futtassa a Konzolalkalmazást, és jelentkezzen be a Power BI-fiókjába. A konzolablakban meg kell jelennie a **Sorok hozzáadva** üzenetnek. Az adatkészlethez hozzáadott sorok megtekintéséhez be is jelentkezhet a Power BI-ba.
@@ -57,7 +57,8 @@ Adja hozzá ezt a kódot a Program.cs fájlhoz.
   
        //Add rows to a Power BI table
        AddRows(datasetId, "Product");
-   }     
+   }
+
   ```
 * AddRows() metódus hozzáadása:
 

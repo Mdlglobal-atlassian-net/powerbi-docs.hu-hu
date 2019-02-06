@@ -2,21 +2,22 @@
 title: Hitelesítési hozzáférési token beszerzése
 description: Útmutatás az adatok leküldéséhez – Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: 1381706801a1a817927c891fcc205950cef24cbb
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 2d4e59badf394153dcb6877a270d2ecea63f5df6
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430855"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761961"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>2. lépés: Hitelesítési hozzáférési jogkivonat beszerzése
+
 Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-data.md) ismertető részletes útmutató része.
 
 Az adatok adatkészletbe történő leküldésének **1. lépésében** ([Alkalmazás regisztrálása az Azure AD-vel](walkthrough-push-data-register-app-with-azure-ad.md)) regisztrált egy ügyfélalkalmazást az Azure AD-ben. Ebben a lépésben hitelesítéshez szükséges hozzáférési jogkivonatot fogja beszerezni. A Power BI-alkalmazások integrálva vannak az **Azure AD**-vel, hogy biztonságos bejelentkezést és hitelesítést biztosítsanak az alkalmazáshoz. Az **Azure AD**-hitelesítéshez és a Power BI-erőforrásokhoz való hozzáféréshez jogkivonatokat használhat.
@@ -24,15 +25,16 @@ Az adatok adatkészletbe történő leküldésének **1. lépésében** ([Alkalm
 A továbbiakban ismertetjük, hogyan szerezhet be a hitelesítéshez szükséges hozzáférési jogkivonatot.
 
 ## <a name="get-an-authentication-access-token"></a>Hitelesítési hozzáférési jogkivonat beszerzése
+
 > **MEGJEGYZÉS**: Mielőtt elkezdené, győződjön meg arról, hogy követte az [adatok leküldése az adatkészletbe](walkthrough-push-data.md) bemutatóban található korábbi lépéseket.
 > 
 > 
 
 1. A Visual Studio 2015-ben hozzon létre egy **Konzolalkalmazás** projektet.
 2. Telepítse az [Azure AD Authentication Library for .NET NuGet csomagot](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). Ha egy .NET-alkalmazásban szeretne beszerezni hitelesítéshez szükséges biztonsági jogkivonatot, használja ezt a csomagot. A csomagot az alábbiakban leírt módon telepítheti:
-   
+
      a. A Visual Studio 2015-ben válassza a **Tools** (Eszközök) > **NuGet Package Manager** (NuGet-csomagkezelő) > **Package Manager Console** (Csomagkezelő konzol) elemet.
-   
+
      b. A **csomagkezelő konzolban** lépjen be az Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612 elembe.
 3. Adja az alábbi kódot a Program {...} osztályba.
 4. Cserélje le a „{ClientID}” kifejezést az alkalmazás regisztrálásakor kapott **ügyfél-azonosítóra**. Lásd az [alkalmazás Azure AD-vel történő regisztrálását](walkthrough-push-data-register-app-with-azure-ad.md) ismertető cikket.
@@ -113,6 +115,7 @@ Az alábbiakban megtalálja a [teljes kódlistát](#code).
 <a name="code"/>
 
 ## <a name="complete-code-listing"></a>Teljes kódlista
+
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
@@ -172,10 +175,10 @@ Az alábbiakban megtalálja a [teljes kódlistát](#code).
         }
     }
 
-
 [Következő lépés >](walkthrough-push-data-create-dataset.md)
 
 ## <a name="next-steps"></a>Következő lépések
+
 [Adatkészlet létrehozása a Power BI-ban](walkthrough-push-data-create-dataset.md)  
 [Alkalmazás regisztrálása az Azure AD-ben](walkthrough-push-data-register-app-with-azure-ad.md)  
 [Azure AD Authentication Library for .NET NuGet csomag](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
@@ -183,4 +186,3 @@ Az alábbiakban megtalálja a [teljes kódlistát](#code).
 [A Power BI REST API áttekintése](overview-of-power-bi-rest-api.md)  
 [A Power BI REST API-jainak leírása](https://docs.microsoft.com/rest/api/power-bi/)  
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-

@@ -2,22 +2,21 @@
 title: Beágyazott Power BI-tartalommal rendelkező egyéni elrendezések
 description: További információ az egyéni elrendezésekről Power BI-tartalmak az alkalmazásba való beágyazása esetén.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/19/2017
-ms.author: maghan
-ms.openlocfilehash: 641369a4410741269a260e036ac3a7930f385e76
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e812fde896072762e113c81b1dd728091a8ff190
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288934"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762306"
 ---
 # <a name="custom-layouts"></a>Egyéni elrendezések
-
 
 Egyéni elrendezések használatával az eredeti jelentésétől eltérő elrendezésű jelentéseket ágyazhat be. Az új elrendezések definiálása csupán egy oldalméret megadásától a vizualizációk méretének, pozíciójának és láthatóságának szabályozásáig terjedhet.
 
@@ -115,7 +114,6 @@ enum VisualContainerDisplayMode {
 - `width`, magasság: A vizualizáció új méretét határozza meg.
 - `displayState`: Azt határozza meg, hogy a vizualizáció látható-e.
 
-
 ## <a name="update-layout"></a>Elrendezés frissítése
 
 Az updateSettings metódussal bármikor frissítheti egy jelentés elrendezését a jelentés betöltése közben. Lásd: [Beállítások frissítése](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Update-Settings).
@@ -173,9 +171,7 @@ var embedContainer = document.getElementById('embedContainer');
 var report = powerbi.embed(embedContainer, embedConfiguration);
 ```
 
-
 ## <a name="see-also"></a>Lásd még:
 
 [Power BI-irányítópultok, -jelentések és -csempék beágyazása](embedding-content.md)   
 [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-

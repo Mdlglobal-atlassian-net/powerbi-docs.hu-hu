@@ -2,21 +2,22 @@
 title: Kérdések és válaszok a Power BI Embeddedben
 description: A Power BI Embedded segítségével a Kérdések és válaszok szolgáltatást beépítheti egy alkalmazásba, és engedélyezheti a felhasználók számára, hogy kérdéseket tegyenek fel a természetes nyelvet használva.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
-ms.author: maghan
-ms.openlocfilehash: 208c1e2a0e188622f989faa6ba391d9742dd7967
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 23e0f7a938116185e05e583f5c7f208efed3ca4d
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277984"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761915"
 ---
 # <a name="qa-in-power-bi-embedded"></a>Kérdések és válaszok a Power BI Embeddedben
+
 A Power BI Embedded segítségével a Kérdések és válaszok szolgáltatást beépítheti egy alkalmazásba, és engedélyezheti a felhasználók számára, hogy kérdéseket tegyenek fel a természetes nyelvet használva, és ezekre azonnal választ is kapjanak vizualizációk, például diagramok és ábrák formájában.
 
 ![Kérdések és válaszok – Interaktív kérdés egy beágyazott keretben](media/qanda/embedded-qanda.gif)
@@ -47,13 +48,14 @@ var qna = powerbi.embed(qnaContainer, config);
 ```
 
 ## <a name="set-question"></a>Kérdés beállítása
+
 Ha az **eredmény módot** egy beállított kérdéssel használta, további kérdéseket szúrhat be a keretbe, és azonnal megválaszolhatja őket, lecserélve az előző eredményt. Az új kérdésnek megfelelő új vizualizáció jelenik meg.
 
 Példa erre a használatra a gyakori kérdések listája. A felhasználó áttekintheti ezeket a kérdéseket, és választ kaphat rájuk ugyanabban a beágyazott részben.
 
 **Kódrészlet a JS SDK-használatához:**  
 
-```        
+```
 // Get a reference to the embedded Q&A HTML element
 var qnaContainer = $('#qnaContainer')[0];
 
@@ -70,6 +72,7 @@ qna.setQuestion("This year sales")
 ```
 
 ## <a name="visual-rendered-event"></a>Vizuálisan megjelenített esemény
+
 Az **interaktív** módnál az alkalmazás egy adatmódosítási eseménnyel értesíthető minden alkalommal, amikor a megjelenített vizuális módosítások a frissített bemeneti lekérdezést érintik a beírás közben.
 
 A *visualRendered* esemény figyelése lehetővé teszi a kérdések későbbi használatra történő mentését. 
@@ -93,10 +96,11 @@ qna.on("visualRendered", function(event) {
 ```
 
 ## <a name="embed-token"></a>Beágyazási token
+
 Hozzon létre egy beágyazási tokent egy adatkészletből a Kérdések és válaszok rész megkezdéséhez. További információkért lásd: [Token létrehozása](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 ## <a name="next-steps"></a>Következő lépések
+
 A Kérdések és válaszok szolgáltatás beágyazásának kipróbáláshoz tekintse meg a [JavaScript beágyazási mintát](https://microsoft.github.io/PowerBI-JavaScript/demo/).
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-
