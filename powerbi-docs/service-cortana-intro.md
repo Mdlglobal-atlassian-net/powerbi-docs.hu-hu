@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2018
+ms.date: 01/30/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: bcd07bb0cb53ea4818195e15c1492a27f424cf38
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 26bd41c8fa2d1300a0f9e106c7899777ac5950f7
+ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292593"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482729"
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Power BI-adatok gyors keresése a Power BI-hoz használt Cortana segítségével
 Használja a Cortanát Windows 10-eszközein, ha azonnali választ szeretne kapni fontos üzleti kérdéseire. A Power BI-jal való integráció által a Cortana képes közvetlenül a Power BI-irányítópultokból és -jelentésekből kinyerni a lényeges információkat. Nem kell hozzá más, csak a Windows 10 2015. november 10-einél nem korábbi verziója, a Cortana, a Power BI és hozzáférés legalább egy adatkészlethez.
@@ -22,7 +22,7 @@ Használja a Cortanát Windows 10-eszközein, ha azonnali választ szeretne kapn
 ![A Cortana keresőmező](media/service-cortana-intro/power-bi-cortana-searchbox.png)
 
 ## <a name="preview-the-new-cortana-dashboard-search-experience-for-windows-10"></a>A Cortana Windows 10 rendszerre készült új *irányítópult*-kereső felületének előzetes verziója
-Már egy ideje lehetőség van [a Cortana használatára bizonyos típusú jelentésoldalak lekéréséhez](service-cortana-answer-cards.md). Most **új funkcióval** bővítettük – irányítópultokat is lekérhet vele. Próbálja ki, és [küldje el visszajelzését](mailto:pbicortanasg@microsoft.com). Az *új funkció* tovább bővül, és a Cortana jelentések között is képes lesz keresni.  Az új funkció egyik fő előnye, hogy a beállítása nem igényel különösebb előkészületet – nem kell engedélyezni Cortanát vagy konfigurálni a Windows 10-et. Egyszerűen csak működik.
+Már egy ideje lehetőség van [a Cortana használatára bizonyos típusú jelentésoldalak lekéréséhez](service-cortana-answer-cards.md). Most **új funkcióval** bővítettük – irányítópultokat is lekérhet vele. Próbálja ki, és [küldje el visszajelzését a Power BI Ideas oldalán](https://ideas.powerbi.com/forums/265200-power-bi). Az *új funkció* tovább bővül, és a Cortana jelentések között is képes lesz keresni.  Az új funkció egyik fő előnye, hogy a beállítása nem igényel különösebb előkészületet – nem kell engedélyezni Cortanát vagy konfigurálni a Windows 10-et. Egyszerűen csak működik.
 
 > [!NOTE]
 > Ha mégsem működne azonnal, akkor a [hibaelhárításról szóló cikkben](service-cortana-troubleshoot.md) talál segítséget.
@@ -127,8 +127,9 @@ Amikor Ön feltesz egy kérdést a Cortanában, a Power BI ad választ a kimondo
 * A Power BI-hoz használt Cortana jelenleg csak angol nyelven érhető el.
 * A Power BI-hoz használt Cortana csak Windows rendszerű mobileszközökön érhető el.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+Visszajelzést szeretne küldeni? [Visszajelzés küldése a Power BI Ideas oldalán](https://ideas.powerbi.com/forums/265200-power-bi).
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 [A Cortana, a Power BI és a Windows integrációjának engedélyezése jelentésekhez](service-cortana-enable.md)
 

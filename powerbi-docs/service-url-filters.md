@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/31/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 2a6fe04f3e905a1e2ce02bceed123b6f117e62c8
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 3f9195ecb4b8679ab65ad6535a85d4d271582d7d
+ms.sourcegitcommit: e05b3863c7758f639894d771193b98b12b93022a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234439"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55648697"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával
 
@@ -40,6 +40,14 @@ URL-cím?filter=***Tábla***/***Mező*** eq '***érték***'
 
 * A **Tábla** és a **Mező** nevei megkülönböztetik a kis- és nagybetűket, az **érték** viszont nem.
 * A jelentésnézetben rejtett mezők is szűrhetők.
+
+### <a name="reports-in-apps"></a>Jelentések az alkalmazásokban
+
+Ha URL-szűrőt szeretne felvenni egy alkalmazás egyik jelentésébe, annak formázása kissé eltérő lesz. Az alkalmazáson belüli jelentések hivatkozásai lekérdezésparamétert (ctid-t) tartalmaznak, amely az URL-hez kapcsolódik. A lekérdezési paramétereket és jellel (&) kell elválasztani. Így a lekérdezést az „&filter=” kifejezéssel kell bővítenie (a ctid paraméter után) a „?filter=” helyett. 
+
+Íme egy példa:
+
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?ctid=*ctid*&filter=*Table*/*Field* eq '*value*'
 
 ### <a name="field-types"></a>Mezőtípusok
 
@@ -118,10 +126,10 @@ A Power BI URL-címekben a szűrők az alábbi formátumú számokat tartalmazha
 |Számtípus  |Példa  |
 |---------|---------|
 |**integer**     |   5      |
-|**long**     |   5L vagy 5l      |
+|**long**     |   5 L vagy 5 l      |
 |**double**     |   5.5 vagy 55e-1 vagy 0.55e+1 vagy 5D vagy 5d vagy 0.5e1D vagy 0.5e1d vagy 5.5D vagy 5.5d vagy 55e-1D vagy 55e-1d     |
-|**decimal**     |   5M vagy 5m vagy 5.5M vagy 5.5m      |
-|**float**     | 5F vagy 5f vagy 0.5e1F vagy 0.5e-1d        |
+|**decimal**     |   5 M vagy 5 m vagy 5,5 M vagy 5,5 m      |
+|**float**     | 5 F vagy 5 f vagy 0,5e1 F vagy 0,5e-1 d        |
 
 ### <a name="date-data-types"></a>Dátum adattípusok
 

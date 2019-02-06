@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: 18a2d6833f0013f95ac0a5dea5f1930e5b666dd6
-ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
+ms.openlocfilehash: 034fc149dcd76102ae83864fe65d53c55b57c96a
+ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54488868"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482752"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
@@ -24,6 +24,17 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
 
 ## <a name="january-2019"></a>2019. január
 - **Power BI jelentéskészítő kiszolgáló**            
+    - *Verzió: 1.4.6969.7395 (Build 15.0.1102.235), Kiadás dátuma: 2019. január 30.*
+        - Hibajavítások
+            - Power BI-jelentések
+                - Egy alapszintű hitelesítő adatokkal kapcsolatos hiba javítása közvetlen lekérdezés használatakor
+                - A sorszintű biztonsági szűrőket alkalmazó kétirányú kapcsolatok javítása
+                - Elavult adatok javítása egy horizontálisan felskálázott környezet modellfrissítése után
+                - A táblák/mátrixok dupla görgetősávjának javítása a Firefox 63-as és újabb verzióiban
+                - A +/- ikon méretének javítása az Internet Explorerben
+            - Lapszámozott jelentések
+                - Egy megosztott adatforrás használati frissítésének javítása egy jelentésben
+
     - *Verzió: 1.4.6960.38798 (Build 15.0.1102.222), Kiadás dátuma: 2019. január 22.*
         - Funkciók
             - Power BI-jelentések 
@@ -35,6 +46,10 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
             - Rendszergazdák
                 - Lehetőség a jelentéskészítő kiszolgálóra feltölthető erőforrások bővítményeinek korlátozására
                 - Lehetőség a támogatott hiperhivatkozás-sémák korlátozására
+            - Programozhatóság
+                - Új webes API: PowerBIReports({Id})/DataModelRoles (GET)
+                - Új webes API: /PowerBIReports({Id})/DataModelRoleAssignments (GET és PUT)
+                - További információ: [Power BI jelentéskészítő kiszolgáló REST API](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0)
         - Hibajavítások
             - HTML-injektálásos biztonsági rés
             - A PDF-be exportálás esetén nem jelenik meg az Euró jel
@@ -42,6 +57,10 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
             - A Power BI Mobile alkalmazásban a vizualizációk problémákat jelenítenek meg üresjárat után
 
 - **Power BI Desktop (a Power BI jelentéskészítő kiszolgálóra optimalizálva)**
+    - *Verzió: 2.65.5313.1562 (2019. január), Kiadás dátuma: 2019. január 30.*
+        - A Power BI jelentéskészítő kiszolgáló eltávolítása után továbbra is megmaradnak a parancsikonok és a rögzített ikonok
+        - A Power BI jelentéskészítő kiszolgáló a Start menübe való rögzítésekor jelentkező fekete szöveg és fekete ikon javítása
+
     - *Verzió: 2.65.5313.1421 (2019. január), Kiadás dátuma: 2019. január 22.*
         - A Power BI jelentéskészítő kiszolgálóval (2019. január) való kapcsolathoz szükséges módosításokat tartalmaz  
 
