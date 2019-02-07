@@ -1,8 +1,8 @@
 ---
 title: Mi az a Microsoft Power BI Premium?
 description: A Power BI Premium dedikált kapacitást biztosít cége vagy csapata számára, így felhasználónkénti licencek vásárlása nélkül is megbízható teljesítményre számíthat nagyobb mennyiségű adat estén is.
-author: mgblythe
-ms.author: mblythe
+author: minewiskan
+ms.author: owend
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/15/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 6cc26f386a77ad8482d7f1af69fd0fdf2b7de5ac
-ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
+ms.openlocfilehash: b1a99279087f2d6557da9a70c1e02aae649dc9b4
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54324020"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794548"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Mi az a Microsoft Power BI Premium?
 
@@ -110,7 +110,7 @@ Ha a lapszámozott jelentések számítási feladatot használja, ügyeljen rá,
 
 Ritkán előfordulhat, hogy a „lapszámozott jelentések” számítási feladat elérhetetlenné válik. Ilyen esetben a számítási feladat hibás állapotot jelez a felügyeleti portálon, a felhasználók pedig időtúllépést tapasztalnak a jelentés renderelése során. A probléma megoldásához tiltsa le, majd engedélyezze újra a számítási feladatot.
 
-## <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgálón
+## <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgáló
 
 A Power BI Premium azt is lehetővé teszi, hogy a cég a helyszínen futtassa a Power BI jelentéskészítő kiszolgálót. További információkat az [Első lépések a Power BI jelentéskészítő kiszolgálóval](report-server/get-started.md) című cikkben talál.
 
