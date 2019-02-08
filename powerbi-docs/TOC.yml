@@ -870,6 +870,8 @@ items:
       items:
       - name: Ajánlott eljárások teljesítményének javításához
         href: developer/embedded-performance-best-practices.md
+      - name: Szolgáltatásnév
+        href: developer/embed-service-principal.md
       - name: Sorszintű biztonság
         href: developer/embedded-row-level-security.md
       - name: Több bérlő kezelése
@@ -888,7 +890,7 @@ items:
         href: developer/create-an-azure-active-directory-tenant.md
       - name: Alkalmazás regisztrálása
         href: developer/register-app.md
-      - name: Hitelesítés Power BI szolgáltatásba
+      - name: Azure AD hozzáférési token beszerzése
         href: developer/get-azuread-access-token.md
       - name: Beágyazással kapcsolatos GYIK
         href: developer/qanda.md
@@ -1036,6 +1038,8 @@ items:
         href: developer/walkthrough-push-data-get-datasets.md
       - name: Sorok hozzáadása egy táblához
         href: developer/walkthrough-push-data-add-rows.md
+      - name: Hitelesítő adatok titkosítása
+        href: developer/encrypt-credentials.md
     - name: Hivatkozás
       items:
       - name: REST API-k
@@ -1234,9 +1238,9 @@ items:
         href: service-admin-premium-purchase.md
       - name: A Power BI Premium kezelése
         href: service-admin-premium-manage.md
-      - name: Prémium szintű kapacitások monitorozása az alkalmazással
+      - name: Kapacitások monitorozása az alkalmazással
         href: service-admin-premium-monitor-capacity.md
-      - name: Prémium szintű kapacitások monitorozása a felügyeleti portálon
+      - name: Kapacitások monitorozása a felügyeleti portálon
         href: service-admin-premium-monitor-portal.md
       - name: Prémium szintű kapacitás újraindítása
         href: service-admin-premium-restart.md
@@ -1301,9 +1305,9 @@ items:
       href: service-admin-governance.md
     - name: A Power BI és a biztonság
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: e5f1b5c6ac45f6f37b61692fe4bd7f5cc086aec5
-ms.sourcegitcommit: 01d08ddf9a437489f75501efda6b3b0d8cbd7864
+ms.openlocfilehash: 27de32e6dda7f6eba069eaee56582a449dca858c
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55760395"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794501"
