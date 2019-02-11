@@ -2,24 +2,24 @@
 title: Power BI Embedded-kapacitás létrehozása az Azure Portalon | Microsoft Docs
 description: Ez a cikk bemutatja, hogyan hozhat létre egy Power BI Embedded-kapacitást a Microsoft Azure-ban.
 author: markingmyname
-manager: kfile
 ms.author: maghan
+manager: kfile
 ms.service: power-bi-embedded
 ms.subservice: ''
 ms.devlang: csharp, javascript
 ms.topic: conceptual
-ms.reviewer: ''
-ms.date: 07/31/2018
-ms.openlocfilehash: caab7ce649687ec22d171e112382aa13d7652fb9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.reviewer: zakharb
+ms.date: 02/05/2019
+ms.openlocfilehash: 1d829dc31bc6e2419d4f2c187b40d6945f963f69
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288543"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762559"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Power BI Embedded-kapacitás létrehozása az Azure Portalon
 
-Ez a cikk bemutatja, hogyan hozhat létre egy Power BI Embedded-kapacitást a Microsoft Azure-ban. A Power BI Embeddeddel lenyűgöző vizualizációkat, jelentéseket és irányítópultokat adhat gyorsan alkalmazásaihoz, így leegyszerűsítheti a Power BI funkcióit.
+Ez a cikk bemutatja, hogyan hozhat létre egy [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)-kapacitást a Microsoft Azure-ban. A Power BI Embeddeddel lenyűgöző vizualizációkat, jelentéseket és irányítópultokat adhat gyorsan alkalmazásaihoz, így leegyszerűsítheti a Power BI funkcióit.
 
 Ha még nincs Azure-előfizetése, kezdés előtt hozzon létre egy [ingyenes fiókot](https://azure.microsoft.com/free/).
 
@@ -38,13 +38,11 @@ Ennek a rövid útmutatónak az elvégzéséhez a következőkre lesz szüksége
 
 1. Jelentkezzen be az [Azure Portalon](https://portal.azure.com/).
 
-2. Válassza az **Erőforrás létrehozása** > **Adatok + analitika** lehetőséget.
+2. A keresőmezőbe írja be a *Power BI Embedded* kifejezést.
 
-3. A keresőmezőbe írja be a *Power BI Embedded* kifejezést.
+3. A Power BI Embeddedben válassza a **Létrehozás** lehetőséget.
 
-4. A Power BI Embeddedben válassza a **Létrehozás** lehetőséget.
-
-5. Adja meg a szükséges adatokat, majd válassza a **Létrehozás** lehetőséget.
+4. Adja meg a szükséges adatokat, majd válassza a **Létrehozás** lehetőséget.
 
     ![Új kapacitás létrehozásához kitöltendő mezők](media/azure-pbie-create-capacity/azure-portal-create-power-bi-embedded.png)
 
@@ -57,9 +55,7 @@ Ennek a rövid útmutatónak az elvégzéséhez a következőkre lesz szüksége
     |**Hely**|A Power BI bérlői szolgáltatási helye. Az alapértelmezett hely az otthoni régiója, de a [Multi-Geo-beállításokkal](embedded-multi-geo.md) módosíthatja a helyet.
     |**Tarifacsomag**|Válassza ki az igényeinek megfelelő SKU-t (virtuális magok és memóriaméret szerint)  További információt a [Power BI Embedded díjszabásában](https://azure.microsoft.com/pricing/details/power-bi-embedded/) találhat|
 
-6. Kattintson a **Létrehozás** gombra.
-
-A létrehozás általában egy percet sem vesz igénybe, csupán néhány másodpercet. Ha a **Rögzítés az irányítópulton** lehetőséget választja, az irányítópultra lépve megtekintheti az új kapacitást. Másik lehetőségként a **Minden szolgáltatás** > **Power BI Embedded** területre lépve megtekintheti, hogy készen áll-e az új kapacitás.
+A **Minden szolgáltatás** > **Power BI Embedded** területre lépve megtekintheti, hogy készen áll-e az új kapacitás. Másik lehetőségként választhatja a **Rögzítés az irányítópulton** lehetőséget az értesítések szakaszban vagy a panelen az irányítópult megnyitásához, ahol megtekintheti az új kapacitást.
 
 ![Azure Portal-irányítópult Power BI Embedded-kapacitással](media/azure-pbie-create-capacity/azure-portal-dashboard.png)
 

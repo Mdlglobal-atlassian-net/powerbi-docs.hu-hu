@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: df77d4b9642a6df511af8af054e3e983c0120f77
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9b1357d2e10214cdf578bff4d2aa7fca8fc19033
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291625"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794707"
 ---
 # <a name="developer-handbook-overview-power-bi-report-server"></a>A fejlesztői kézikönyv áttekintése, Power BI jelentéskészítő kiszolgáló
 Üdvözöljük a Power BI-, mobil és lapokra tördelt jelentések tárolására és kezelésére szolgáló helyszíni hely, a Power BI jelentéskészítő kiszolgáló fejlesztői kézikönyvében.
@@ -24,22 +24,22 @@ ms.locfileid: "54291625"
 A kézikönyv bemutatja, hogy milyen lehetőségeket kínál a Power BI jelentéskészítő kiszolgáló a fejlesztők számára.
 
 ## <a name="embedding"></a>Beágyazás
-A Power BI jelentéskészítő kiszolgálón bármely jelentést beágyazhat egy iFrame elembe, ha hozzáfűzi az `?rs:Embed=true` lekérdezési karakterláncot az URL-címe végéhez. Ez a Power BI jelentésekkel és a többi jelentéstípussal is működik.
+A Power BI jelentéskészítő kiszolgálón bármely jelentést beágyazhat egy iFrame elembe, ha hozzáfűzi az `?rs:Embed=true` lekérdezési karakterláncot az URL-címe végéhez. Ez módszer a Power BI jelentésekkel és a többi jelentéstípussal is működik.
 
 ### <a name="report-viewer-control"></a>Jelentésmegjelenítő vezérlőelem
-A több lapra tördelt jelentések esetében a jelentésmegjelenítő vezérlőelem alkalmazása hasznosnak bizonyulhat. Ezáltal ugyanis a vezérlőt elhelyezheti egy .NET-es Windows- vagy webalkalmazásban. További információkért lásd a [Jelentésmegjelenítő vezérlőelem használatának első lépéseit](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started) ismertető témakört.
+A több lapra tördelt jelentések esetében a jelentésmegjelenítő vezérlőelem alkalmazása hasznosnak bizonyulhat. Ezzel ugyanis a vezérlőt elhelyezheti egy .NET-es Windows- vagy webalkalmazásban. További információkért lásd a [Jelentésmegjelenítő vezérlőelem használatának első lépéseit](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started) ismertető témakört.
 
 ## <a name="apis"></a>API-k
-A Power BI jelentéskészítő kiszolgáló használatához számos API áll rendelkezésre. Ezek a következők lehetnek.
+A Power BI jelentéskészítő kiszolgáló használatához számos API áll rendelkezésre. Ez a módszer a következőket foglalja magában.
 
 * [REST API-k](rest-api.md)
 * [URL-en keresztüli elérés](https://docs.microsoft.com/sql/reporting-services/url-access-ssrs)
 * [WMI-szolgáltató](https://docs.microsoft.com/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
 
-Továbbá használhatja a nyílt forráskódú [PowerShell segédprogramokat](https://github.com/Microsoft/ReportingServicesTools) is a jelentéskészítő kiszolgáló kezelésére.
+Továbbá használhatja a nyílt forráskódú [PowerShell-segédprogramokat](https://github.com/Microsoft/ReportingServicesTools) is a jelentéskészítő kiszolgáló kezelésére.
 
 > [!NOTE]
-> A PowerShell segédprogramok jelenleg nem támogatják a Power BI Desktop-fájlokat (.pbix).
+> A PowerShell-segédprogramok jelenleg nem támogatják a Power BI Desktop-fájlokat (.pbix).
 > 
 > 
 

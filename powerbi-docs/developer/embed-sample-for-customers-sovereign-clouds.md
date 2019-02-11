@@ -9,15 +9,15 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 12/10/2018
-ms.openlocfilehash: 790c06dd84d7db3a382ef547c8fcc16237273951
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 69ce8088903cbdddef504dbf5e9b2ecc2a8ab9d4
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431154"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762674"
 ---
-# <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Oktatóanyag: Power BI-irányítópult, -csempe vagy -jelentés beágyazása az alkalmazásba szuverén felhők használata esetén
+# <a name="tutorial-embed-a-power-bi-content-into-your-application-for-sovereign-clouds"></a>Oktatóanyag: Power BI-tartalom beágyazása az alkalmazásba szuverén felhők esetében
 
 Elsajátíthatja analitikai tartalom beágyazását üzletifolyamat-alkalmazásaiba a szuverén felhő számára. A Power BI .NET SDK és a Power BI JavaScript API segítségével jelentést, irányítópultot vagy csempét ágyazhat be webalkalmazásába.
 
@@ -37,7 +37,7 @@ A különböző szuverén felhők az alábbiak:
 
 ![Beágyazott irányítópult](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-A bemutató megkezdéséhez **Power BI**-fiókra van szükség. Ha nincs beállított fiókja, a szuverén felhőtípustól függően egy [egyesült államokbeli kormányzati Power BI-fiókot](../service-govus-signup.md), egy [németországi felhőhöz készült Power BI-fiókot](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1), vagy egy [kínai felhőhöz készült Power BI-fiókot](http://www.21vbluecloud.com/powerbi/) regisztrálhat.
+A bemutató megkezdéséhez **Power BI**-fiókra van szükség. Ha nem rendelkezik beállított fiókkal, akkor a kormányzati típustól vagy az országtól függően kiválaszthatja az Ön számára megfelelő szuverén felhőt. Regisztrálhat egy [egyesült államokbeli kormányzati Power BI-fiókot](../service-govus-signup.md), egy [németországi felhőhöz készült Power BI-fiókot](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) vagy egy [kínai felhőhöz készült Power BI-fiókot](http://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > A saját cégének szeretne irányítópultot beágyazni? Tekintse meg az [irányítópult céges alkalmazásba való integrálását](integrate-dashboard.md) ismertető cikket.
@@ -435,7 +435,7 @@ Ennek alkalmazásmintája a [céges beágyazási mintában](https://github.com/M
 
 * [Power BI-munkaterületcsoport tartalmainak migrálása a Power BI-ba](migrate-from-powerbi-embedded.md)
 
-Korlátozások és megfontolandó szempontok
+Megfontolandó szempontok és korlátozások
 
 * A GCC-fiókok jelenleg csak a P és EM kapacitásokat támogatják
 

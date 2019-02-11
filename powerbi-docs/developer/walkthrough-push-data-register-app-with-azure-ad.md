@@ -2,32 +2,32 @@
 title: Alkalmazás regisztrálása az Azure AD-ben
 description: Útmutató – Adatok küldése adatkészletekbe – Alkalmazás regisztrálása az Azure AD-ben
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: db3184f7bc3c181b685c22d0bcad27206b4a0f8f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 02/05/2019
+ms.openlocfilehash: a3154a7b74d196f3c0aa2969e7c25bf56000a662
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296363"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762030"
 ---
 # <a name="step-1-register-an-app-with-azure-ad"></a>1. lépés: Alkalmazás regisztrálása az Azure AD-ben
+
 Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-data.md) ismertető részletes útmutató része.
 
 Az első lépés az adatok a Power BI-adatkészletekbe való küldése esetén az alkalmazás regisztrálása az Azure AD-ben. Először ezt kell megtennie, hogy rendelkezzen egy **ügyfél-azonosítóval**, amely az Azure AD-ben azonosítja az alkalmazást. **Ügyfél-azonosító** nélkül az Azure AD nem tudja hitelesíteni az alkalmazást.
 
 > **MEGJEGYZÉS**: Mielőtt regisztrálhatna egy alkalmazást a Power BI-ban, [regisztrálnia kell a Power BI-ra](create-an-azure-active-directory-tenant.md).
-> 
-> 
 
 Az alkalmazások az Azure AD-ben való regisztrálásának lépései a következők.
 
 ## <a name="register-an-app-in-azure-ad"></a>Alkalmazás regisztrálása az Azure AD-ben
+
 1. Keresse fel a dev.powerbi.com/apps oldalt.
 2. Kattintson a **Bejelentkezés meglévő fiókkal** lehetőségre, és jelentkezzen be a Power BI-fiókjába.
 3. Adja meg az **Alkalmazás nevét**, például: „Mintaalkalmazás adatküldéshez”.
@@ -38,13 +38,14 @@ Az alkalmazások az Azure AD-ben való regisztrálásának lépései a következ
 
 Az **Alkalmazás regisztrálása a Power BI-ban** oldalnak így kell kinéznie:
 
-![](media/walkthrough-push-data-register-app-with-azure-ad/powerbi-developer-sample-register-app.png)
+![Alkalmazás regisztrálása](media/walkthrough-push-data-register-app-with-azure-ad/powerbi-developer-sample-register-app.png)
 
 A következő lépés bemutatja, hogyan [szerezhető be a hitelesítési hozzáférési token](walkthrough-push-data-get-token.md).
 
 [Következő lépés >](walkthrough-push-data-get-token.md)
 
 ## <a name="next-steps"></a>Következő lépések
+
 [Regisztráció a Power BI-ra](create-an-azure-active-directory-tenant.md)  
 [Hitelesítési hozzáférési token beszerzése](walkthrough-push-data-get-token.md)  
 [Útmutató: Adatok leküldése adatkészletbe](walkthrough-push-data.md)  
@@ -52,4 +53,3 @@ A következő lépés bemutatja, hogyan [szerezhető be a hitelesítési hozzáf
 [A Power BI REST API áttekintése](overview-of-power-bi-rest-api.md)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-

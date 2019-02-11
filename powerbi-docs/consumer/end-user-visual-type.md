@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 174886acf1d827497b48d660bb89e2b4057b09b9
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 35d5a6f9911afea7b91b37299225c191cd4d7ac9
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234635"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794852"
 ---
 # <a name="visualization-types-in-power-bi"></a>Vizualizációtípusok a Power BI-ban
 Vizualizációk találhatók jelentésekben, irányítópultokon, alkalmazásokban és a Q&A-ban is. A vizualizációk egyes típusai a Power BI részei, de vannak *egyéni vizualizációk* is. Az egyéni vizualizációk a Power BI-on kívül készülnek úgy, hogy a *jelentések tervezői* felvehessék azokat a Power BI-jelentésekbe, -irányítópultokba és -alkalmazásokba. 
@@ -26,7 +26,7 @@ Ez a cikk a Power BI részét képező vizualizációtípusokat tekinti át.  T�
 > Ha az egyéni vizualizációkkal szeretne megismerkedni, ilyeneket a [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) **Power BI-vizualizációk** szakaszában kereshet. Minden vizualizációhoz tartozik leírás, a létrehozója adatai, és képernyőkép vagy videó. 
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>A Power BI-ban elérhető vizualizációk listája
-Ez alábbi vizualizációk mind megtalálhatók Power BI-alkalmazásokban, -irányítópultokon, -jelentésekben, és [megadhatók a Q&A-ban](#gna).
+Ez alábbi vizualizációk mind megtalálhatók Power BI-alkalmazásokban, -irányítópultokon, -jelentésekben, és [megadhatók a Q&A-ban](#qna). Ha szeretné megtudni, hogyan kezelje a vizualizációkat, olvassa el az [Interakció vizualizációkkal jelentésekben, irányítópultokon és alkalmazásokban](end-user-visualizations.md) szakaszt.
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Területdiagramok: Alapszintű (rétegzett) és halmozott
 ![területdiagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
@@ -232,5 +232,5 @@ Ha természetes nyelvű lekérdezéseket ír a Power BI Q&A használatával, meg
 ![q&a munkamenet](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## <a name="next-steps"></a>Következő lépések
-[Vizualizációk Power BI-jelentésekben](end-user-visualizations.md)    
+[Interakció vizualizációkkal jelentésekben, irányítópultokon és alkalmazásokban](end-user-visualizations.md)    
 [A megfelelő vizualizáció – referenciaanyag az sqlbi.com-on](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

@@ -8,17 +8,17 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 01/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5eadf12fc1b54e8f5ac657685826816f0fca318d
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: f7e83c2d0cd2f1c3344bf61f9f90ca43f09f7189
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234347"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794302"
 ---
-# <a name="visualizations-for-power-bi-consumers"></a>Vizualizációk Power BI-**felhasználók** számára
+# <a name="interact-with-visualizations-in-reports-dashboards-and-apps"></a>Interakció vizualizációkkal jelentésekben, irányítópultokon és alkalmazásokban
 
 Legegyszerűbb formájukban a ***vizualizációk*** *olyan* diagramok, amelyeket a Power BI *tervezői* hoznak létre a *jelentésekben* és az *adathalmazokban* szereplő adatok alapján. 
 
@@ -27,13 +27,14 @@ Legegyszerűbb formájukban a ***vizualizációk*** *olyan* diagramok, amelyeket
 
 ## <a name="what-can-i-do-with-visualizations"></a>Mire használhatom a vizualizációkat?
 
-A vizualizációkat a jelentések és irányítópultok *tervezői* hozzák létre és osztják meg a *felhasználókkal*. Felhasználóként számos különféle módon használhatja a vizualizációkat, hogy elemzéseket nyerhessen ki, és adatokon alapuló üzleti döntéseket hozhasson. A lehetőségek listája alább látható, a hivatkozásokon keresztül pedig lépésenkénti útmutatók is elérhetők.
+A vizualizációkat a jelentések és irányítópultok *tervezői* hozzák létre és osztják meg a *felhasználókkal*. Felhasználóként számos különféle módon használhatja a vizualizációkat, hogy elemzéseket nyerhessen ki, és adatokon alapuló üzleti döntéseket hozhasson. A lehetőségek listája az alábbi táblában látható, a hivatkozásokon keresztül pedig lépésenkénti útmutatók is elérhetők.
 
-Ám először ejtsünk szót a Q&A-ről. A Q&A a Power BI természetes nyelvi keresőeszköze. Ha természetes nyelv használatával ad meg egy kérdést, a Q&A egy vizualizáció formájában ad rá választ. A Q&A használatával a felhasználók saját vizualizációkat hozhatnak létre. Azonban a Q&A használatával létrehozott vizualizációk nem menthetők. Ha olyan konkrét információra kíváncsi az adatokkal kapcsolatban, amelyet a tervező kihagyott a jelentésből, vagy nem szerepel az irányítópulton, akkor jó megoldás a Q&A. A Q&A-vel kapcsolatban bővebben a [Q&A felhasználók számára készült](end-user-q-and-a.md) cikkében olvashat.
+> [!IMPORTANT]
+> Ám először ejtsünk szót a Q&A-ről. A Q&A a Power BI természetes nyelvi keresőeszköze. Ha természetes nyelv használatával ad meg egy kérdést, a Q&A egy vizualizáció formájában ad rá választ. A Q&A használatával a felhasználók saját vizualizációkat hozhatnak létre. Azonban a Q&A használatával létrehozott vizualizációk nem menthetők. Ha olyan konkrét információra kíváncsi az adatokkal kapcsolatban, amelyet a tervező kihagyott a jelentésből, vagy nem szerepel az irányítópulton, akkor jó megoldás a Q&A. A Q&A-vel kapcsolatban bővebben a [Q&A felhasználók számára készült](end-user-q-and-a.md) cikkében olvashat.
 
 
 
-|1. oszlop  |Egy irányítópulton  |Egy jelentésben  | A Q&A-ben
+|Feladat  |Egy irányítópulton  |Egy jelentésben  | A Q&A-ben
 |---------|---------|---------|--------|
 |[Megjegyzés hozzáadása a vizualizációhoz saját maga számára, vagy beszélgetés kezdeményezése a munkatársakkal a vizualizációról](end-user-comment.md).     |  igen       |   nem      |  nem  |
 |[Azon jelentés megnyitása és felderítése, ahol a vizualizáció létrejött](end-user-tiles.md).     |    igen     |   na      |  na |

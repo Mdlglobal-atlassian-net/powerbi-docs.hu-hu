@@ -8,15 +8,15 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/20/2018
-ms.openlocfilehash: 785461290493db59c534a58b548620b6d2f58cd7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 02/05/2019
+ms.openlocfilehash: f50305eed647bfc94bc5c19ee1a298cb9ac9c782
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284173"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762697"
 ---
-# <a name="use-row-level-security-with-power-bi-embedded-content"></a>Sorszintű biztonság használata beágyazott Power BI tartalommal
+# <a name="row-level-security-with-power-bi-embedded"></a>Sorszintű biztonság a Power BI Embeddeddel
 
 A **sorszintű biztonság (RLS)** a felhasználók adatokhoz való hozzáférésének korlátozására használható irányítópultoknál, csempéknél, jelentéseknél és adatkészleteknél. Ugyanazokkal a összetevőkkel több felhasználó is dolgozhat egyszerre úgy, hogy más-másféle adatokat látnak. A beágyazás támogatja a RLS-t.
 
@@ -307,6 +307,18 @@ Az identitásblobban megadott értéknek az Azure SQL Serverhez érvényes hozz�
    > Ahhoz, hogy hozzáférési jogkivonatot hozhasson létre az Azure SQL-hez, az alkalmazásnak rendelkeznie kell **hozzáféréssel az Azure SQL DB-hez és a Data Warehouse-hoz**, valamint delegált jogosultsággal az **Azure SQL Database** API-hoz az AAD alkalmazásregisztrációs konfigurációban az Azure Portalon.
 
    ![Alkalmazásregisztráció](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
+
+## <a name="on-premises-data-gateway-with-service-principal-preview"></a>Helyszíni adatátjáró szolgáltatásnévvel (előzetes verzió)
+
+Azok az ügyfelek, akik SQL Server Analysis Services (SSAS) helyszíni, élő kapcsolatú adatforrásával konfigurálják a sorszintű biztonságot (RLS), használhatják az új [szolgáltatásnév](embed-service-principal.md) képességet a felhasználók és adatelérésük kezelésére az SSAS-ben a **Power BI Embeddeddel** létrehozott integráció során.
+
+A [Power BI REST API-k](https://docs.microsoft.com/rest/api/power-bi/) lehetővé teszik az SSAS helyszíni, élő kapcsolatok hatályos identitásának meghatározását a beágyazási tokenhez egy [szolgáltatásnév-objektum](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) használatával.
+
+Eddig az SSAS helyszíni, élő kapcsolatai hatályos identitásának meghatározásához a beágyazási tokent létrehozó fő felhasználónak az átjáró adminisztrátorának kellett lennie. Most a felhasználónak nem szükséges az átjáró adminisztrátorának lennie, hanem az átjáró adminisztrátora dedikált engedélyt adhat a felhasználónak az adatforráshoz, amely lehetővé teszi, hogy felülbírálja a hatályos identitást a beágyazási token létrehozásakor. Ez az új képesség lehetővé teszi a szolgáltatásnévvel történő beágyazást az élő SSAS-kapcsolatoknál.
+
+E szerint a forgatókönyv szerint az átjáró adminisztrátora az [Adatforrás-felhasználó hozzáadása REST API-t](https://docs.microsoft.com/rest/api/power-bi/gateways/adddatasourceuser) használja, hogy megadja a szolgáltatásnévnek a *ReadOverrideEffectiveIdentity* engedélyt a Power BI Embeddedhez.
+
+A felügyeleti portálon ezt az engedélyt nem lehet beállítani. Ennek az engedélynek a megadása kizárólag az API-val történik. A felügyeleti portál jelzi az ilyen engedéllyel rendelkező felhasználókat és egyszerű szolgáltatásneveket.
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 

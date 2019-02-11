@@ -4,18 +4,17 @@ description: Útmutató tartalom üzembe helyezéséhez a Power BI Embedded saj�
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/31/2018
-LocalizationGroup: Embedded
-ms.openlocfilehash: ab1b0f7ea7dbee13f39fbf47505a00e2ed6d41ea
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 02/05/2019
+ms.openlocfilehash: 25627709af2faa78fd30b28cffba21d1442e0d3f
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280424"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762421"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded-preview"></a>Multi-Geo-támogatás a Power BI Embedded (előzetes verzió) számára
 
@@ -56,7 +55,9 @@ A Power BI Embedded-erőforrás helye nem módosítható, miután létrehozott e
 A Power BI-tartalmaknak egy másik régióba való áthelyezéséhez kövesse az alábbi lépéseket:
 
 1. [Hozzon létre egy új kapacitást](azure-pbie-create-capacity.md) egy másik régióban.
+
 2. Rendeljen hozzá minden munkaterület a meglévő kapacitásból az új kapacitásba.
+
 3. Törölje vagy szüneteltesse a régi kapacitást.
 
 Fontos megjegyezni, hogy ha úgy dönt, hogy töröl egy kapacitást a tartalmának az újrakiosztása nélkül, akkor a kapacitás minden tartalma egy megosztott kapacitásba kerül, amely az otthoni régiójában található.
@@ -66,7 +67,9 @@ Fontos megjegyezni, hogy ha úgy dönt, hogy töröl egy kapacitást a tartalmá
 Annak érdekében, hogy a rendszer támogassa a Multi-Geoval rendelkező kapacitások API-n keresztüli kezelését, néhány módosítást végeztünk a meglévő API-kon:
 
 1. **[Get Capacities (Kapacitások lekérése)](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)** – Az API a felhasználó számára elérhető kapacitások listáját adja vissza. A válasz már egy „region” nevű új tulajdonságot is tartalmaz, amely a kapacitás helyét határozza meg.
-2. **[Assign To Capacity (Hozzárendelés kapacitáshoz)](https://docs.microsoft.com/rest/api/power-bi/capacities)** – Az API lehetővé teszi egy adott munkaterület hozzárendelését egy kapacitáshoz. Ez a művelet nem teszi lehetővé munkaterületek kapacitáshoz való hozzárendelését az otthoni régión kívül, sem a munkaterületek különböző régiókban lévő kapacitások közötti áthelyezését. A művelet végrehajtásához a felhasználónak rendszergazdai engedélyre van szüksége a munkaterületen és rendszergazdai vagy hozzárendelési engedélyre a célkapacitásban.
+
+2. **[Assign To Capacity (Hozzárendelés kapacitáshoz)](https://docs.microsoft.com/rest/api/power-bi/capacities)** – Az API lehetővé teszi egy adott munkaterület hozzárendelését egy kapacitáshoz. Ez a művelet nem teszi lehetővé munkaterületek kapacitáshoz való hozzárendelését az otthoni régión kívül, sem a munkaterületek különböző régiókban lévő kapacitások közötti áthelyezését. A művelet végrehajtásához a felhasználónak vagy a [szolgáltatásnévnek](embed-service-principal.md) rendszergazdai engedélyre van szüksége a munkaterületen és rendszergazdai vagy hozzárendelési engedélyre a célkapacitásban.
+
 3. **[Azure Resource Manager API](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities)** – Az Azure Resource Manager API összes művelete, többek között a *Létrehozás* és a *Törlés* is támogatja a Multi-Geo funkciót.
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
