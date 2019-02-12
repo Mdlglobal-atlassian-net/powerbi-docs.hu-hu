@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8cda803939ee9ae2f864496300fce25890770dac
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 1bc7539eba4f390c02417edd52ea3f792613abe6
+ms.sourcegitcommit: 3729c88bd991e450fcb2d9b79e6ab478b6e8dc76
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430373"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55888233"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -287,16 +287,6 @@ A munkahelyi felhasználók a biztonsági szint besorolását jelző címkékkel
 ### <a name="embed-content-in-apps"></a>Tartalom beágyazása alkalmazásokba
 
 A munkahelyi felhasználók beágyazhatnak Power BI-irányítópultokat és -jelentéseket szolgáltatott szoftveres (SaaS-) alkalmazásokba. A beállítás kikapcsolásával megakadályozhatja, hogy a felhasználók a REST API-k használatával Power BI-tartalmakat ágyazzanak be saját alkalmazásukba. [További információ](developer/embedding.md)
-
-## <a name="workspaces-and-import-settings"></a>Munkaterületek és importálási beállítások
-
-### <a name="author-content-in-workspaces"></a>Szerzői tartalmak a munkaterületeken
-
-A munkahelyi felhasználók hozzáférhetnek a munkaterületekhez, hogy csatlakozni tudjanak az adatokhoz és a szerzői tartalmakhoz. [További információ](service-create-the-new-workspaces.md)
-
-### <a name="import-data-into-power-bi"></a>Adatok importálása a Power BI-ba
-
-A munkahelyi felhasználók adatokat importálhatnak a szolgáltatásba, például jelentéseket tehetnek közzé a Power BI Desktopról, Power BI-jelentésfájlokat tölthetnek fel, és közvetlenül a szolgáltatásból csatlakozhatnak az adatokhoz. [További információ](desktop-upload-desktop-files.md)
 
 ## <a name="dataflow-settings-preview"></a>Adatfolyam-beállítások (előzetes verzió)
 
