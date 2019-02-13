@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 623eb93c27f0ec762b2c9d063b646d757c3b1f0c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: afc4df99b90d6c6d7016f34983ca3691fb500325
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296570"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223920"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>A helyszíni adatátjáró hibaelhárítása
 
@@ -35,11 +35,15 @@ Az átjáró Windows-szolgáltatásként fut, így többféle módon is elindít
 
 * A szolgáltatás leállításához futtassa az alábbi parancsot:
 
-    „   net stop PBIEgwService   ”
+    ```
+    net stop PBIEgwService
+    ```
 
 * A szolgáltatás elindításához futtassa az alábbi parancsot:
 
-    „   net start PBIEgwService   ”
+    ```
+    net start PBIEgwService
+    ```
 
 ### <a name="log-file-configuration"></a>Naplófájl-konfiguráció
 
@@ -318,7 +322,7 @@ A *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* fájlban mód
 > [!IMPORTANT]
 > Az átjáró használatának mértékétől függően az EmitQueryTraces engedélyezése jelentősen megnövelheti a napló méretét. A naplók áttekintése után az EmitQueryTraces értékét módosítsa False értékre. A beállítást nem ajánlott hosszú távon engedélyezve hagyni.
 
-```
+```xml
 <setting name="EmitQueryTraces" serializeAs="String">
     <value>True</value>
 </setting>
@@ -362,7 +366,7 @@ A *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* fájlban mód
 > [!IMPORTANT]
 > Az átjáró használatának mértékétől függően a TracingVerbosity `5` értékre való állítása jelentősen megnövelheti a napló méretét. A naplók áttekintése után a TraceVerbosity értékét módosítsa `4` értékre. A beállítást nem ajánlott hosszú távon engedélyezve hagyni.
 
-```
+```xml
 <setting name="TracingVerbosity" serializeAs="String">
     <value>5</value>
 </setting>
@@ -486,7 +490,7 @@ Az 1033-as hibát kapja, amikor az SAP HANA-ban konfigurált külső azonosító
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
-```
+```xml
       <setting name="ADUserNameReplacementProperty" serializeAs="String">
         <value>sAMAccount</value>
       </setting>

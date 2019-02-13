@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5c383cf3c7fcbae88be6943bb418026c849db196
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f30ff44fbc4d99818661abc53cb99bb96cfde673
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277434"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215735"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Jelentéstémák használata a Power BI Desktopban
 A **Jelentéstémák** használatával egységes színtémát alkalmazhat az egész jelentésre, például a cég színeit, az évszaknak megfelelő színeket vagy bármely más színtémát. **Jelentéstémák** alkalmazásakor a jelentésben szereplő összes vizualizáció a kiválasztott téma színeit fogja használni. Ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be.
@@ -101,6 +101,7 @@ Stílus **tábla** vagy **mátrix** típusú vizualizációkra való alkalmazás
 
 A *St. Patrick’s Day.json* fájl szövege az alábbiakban látható, amely alapján létrehozhat egy saját JSON-fájlt:
 
+```json
     {
         "name": "St Patricks Day",
         "dataColors": ["#568410", "#3A6108", "#70A322", "#915203", "#D79A12", "#bb7711", "#114400", "#aacc66"],
@@ -108,6 +109,7 @@ A *St. Patrick’s Day.json* fájl szövege az alábbiakban látható, amely ala
         "foreground": "#3A6108",
         "tableAccent": "#568410"
     }
+```
 
 Itt beírhatja saját hexadecimális színkódját a kívánt színekhez.
 
@@ -158,6 +160,7 @@ Meg szeretne ismerkedni a **jelentéstémákkal**? Íme néhány előre elkész�
 
 Letöltés biztosítása helyett az alábbiakban látható a Valentine’s Day nevű JSON-fájl kódja:
 
+```json
     {
         "name": "Valentine's Day",
         "dataColors": ["#990011", "#cc1144", "#ee7799", "#eebbcc", "#cc4477", "#cc5555", "#882222", "#A30E33"],
@@ -165,6 +168,7 @@ Letöltés biztosítása helyett az alábbiakban látható a Valentine’s Day n
         "foreground": "#ee7799",
         "tableAccent": "#990011"
     }
+```
 
 A **jelentéstémák** színek segítségével tükrözhetik az Ön személyiségét, vagy a vállalat arculatát, esetleg az aktuális évszak, vagy ünnep hangulatát. 
 
@@ -303,7 +307,8 @@ Az alábbi tábla *cardName* értékeket határoz meg. Az egyes cellákban szere
 ### <a name="properties-within-each-card"></a>Az egyes kártyákon belüli tulajdonságok
 A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza meg:
 
-    "general":
+```json
+      "general":
         "responsive": {
           "type": [
             "bool"
@@ -371,7 +376,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "categoryAxis": {
+      "categoryAxis": {
         "show": {
           "type": [
             "bool"
@@ -557,7 +562,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "valueAxis": {
+      "valueAxis": {
         "show": {
           "type": [
             "bool"
@@ -865,7 +870,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "dataPoint": {
+      "dataPoint": {
         "defaultColor": {
           "type": [
             "fill"
@@ -901,7 +906,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "labels": {
+      "labels": {
         "show": {
           "type": [
             "bool"
@@ -1019,7 +1024,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "lineStyles": {
+      "lineStyles": {
         "strokeWidth": {
           "type": [
             "numeric"
@@ -1094,7 +1099,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "plotArea": {
+      "plotArea": {
         "transparency": {
           "type": [
             "numeric"
@@ -1107,7 +1112,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "trend": {
+      "trend": {
         "show": {
           "type": [
             "bool"
@@ -1297,7 +1302,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "referenceLine": {
+      "referenceLine": {
         "show": {
           "type": [
             "bool"
@@ -1433,7 +1438,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "line": {
+      "line": {
         "lineColor": {
           "type": [
             "fill"
@@ -1470,7 +1475,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "fill": {
+      "fill": {
         "show": {
           "type": [
             "bool"
@@ -1499,7 +1504,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "rotation": {
+      "rotation": {
         "angle": {
           "type": [
             "numeric"
@@ -1509,7 +1514,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "categoryLabels": {
+      "categoryLabels": {
         "show": {
           "type": [
             "bool"
@@ -1546,7 +1551,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "wordWrap": {
+      "wordWrap": {
         "show": {
           "type": [
             "bool"
@@ -1556,7 +1561,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "dataLabels": {
+      "dataLabels": {
         "color": {
           "type": [
             "fill"
@@ -1585,7 +1590,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "cardTitle": {
+      "cardTitle": {
         "color": {
           "type": [
             "fill"
@@ -1614,7 +1619,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "card": {
+      "card": {
         "outline": {
           "type": [
             "enumeration"
@@ -1695,7 +1700,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "percentBarLabel": {
+      "percentBarLabel": {
         "show": {
           "type": [
             "bool"
@@ -1732,7 +1737,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "axis": {
+      "axis": {
         "min": {
           "type": [
             "numeric"
@@ -1758,7 +1763,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "target": {
+      "target": {
         "show": {
           "type": [
             "bool"
@@ -1817,7 +1822,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "calloutValue": {
+      "calloutValue": {
         "show": {
           "type": [
             "bool"
@@ -1860,7 +1865,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "forecast": {
+      "forecast": {
         "show": {
           "type": [
             "bool"
@@ -1927,7 +1932,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "bubbles": {
+      "bubbles": {
         "bubbleSize": {
           "type": [
             "formatting"
@@ -1937,7 +1942,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "mapControls": {
+      "mapControls": {
         "autoZoom": {
           "type": [
             "bool"
@@ -1962,7 +1967,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "mapStyles": {
+      "mapStyles": {
         "mapTheme": {
           "type": [
             "enumeration"
@@ -1972,7 +1977,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "shape": {
+      "shape": {
         "map": {
           "type": [
             "geoJson"
@@ -1990,7 +1995,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "zoom": {
+      "zoom": {
         "autoZoom": {
           "type": [
             "bool"
@@ -2025,7 +2030,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "xAxisReferenceLine": {
+      "xAxisReferenceLine": {
         "show": {
           "type": [
             "bool"
@@ -2150,7 +2155,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "fillPoint": {
+      "fillPoint": {
         "show": {
           "type": [
             "bool"
@@ -2160,7 +2165,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "colorByCategory": {
+      "colorByCategory": {
         "show": {
           "type": [
             "bool"
@@ -2170,7 +2175,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "plotAreaShading": {
+      "plotAreaShading": {
         "show": {
           "type": [
             "bool"
@@ -2213,7 +2218,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "ratioLine": {
+      "ratioLine": {
         "show": {
           "type": [
             "bool"
@@ -2253,7 +2258,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "grid": {
+      "grid": {
         "outlineColor": {
           "type": [
             "fill"
@@ -2373,7 +2378,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "columnHeaders": {
+      "columnHeaders": {
         "outline": {
           "type": [
             "enumeration"
@@ -2448,7 +2453,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "values": {
+      "values": {
         "outline": {
           "type": [
             "enumeration"
@@ -2567,7 +2572,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "total": {
+      "total": {
         "outline": {
           "type": [
             "enumeration"
@@ -2631,7 +2636,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "columnFormatting": {
+      "columnFormatting": {
         "fontColor": {
           "type": [
             "fill"
@@ -2687,7 +2692,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "rowHeaders": {
+      "rowHeaders": {
         "outline": {
           "type": [
             "enumeration"
@@ -2776,7 +2781,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "subTotals": {
+      "subTotals": {
         "outline": {
           "type": [
             "enumeration"
@@ -2848,7 +2853,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "selection": {
+      "selection": {
         "selectAllCheckboxEnabled": {
           "type": [
             "bool"
@@ -2866,7 +2871,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "header": {
+      "header": {
         "show": {
           "type": [
             "bool"
@@ -2919,7 +2924,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "items": {
+      "items": {
         "fontColor": {
           "type": [
             "fill"
@@ -2964,7 +2969,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "numericInputStyle": {
+      "numericInputStyle": {
         "fontColor": {
           "type": [
             "fill"
@@ -3001,7 +3006,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "slider": {
+      "slider": {
         "show": {
           "type": [
             "bool"
@@ -3019,7 +3024,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "dateRange": {
+      "dateRange": {
         "includeToday": {
           "type": [
             "bool"
@@ -3029,7 +3034,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "sentimentColors": {
+      "sentimentColors": {
         "increaseFill": {
           "type": [
             "fill"
@@ -3063,7 +3068,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "breakdown": {
+      "breakdown": {
         "maxBreakdowns": {
           "type": [
             "integer"
@@ -3076,7 +3081,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "indicator": {
+      "indicator": {
         "indicatorDisplayUnits": {
           "type": [
             "formatting"
@@ -3108,7 +3113,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "trendline": {
+      "trendline": {
         "show": {
           "type": [
             "bool"
@@ -3118,7 +3123,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "goals": {
+      "goals": {
         "showGoal": {
           "type": [
             "bool"
@@ -3136,7 +3141,7 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       },
-    "status": {
+      "status": {
         "direction": {
           "type": [
             "enumeration"
@@ -3170,13 +3175,14 @@ A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza m
           ]
         }
       }
-
+```
 
 
 
 ### <a name="enumerations-in-the-json-file"></a>Enumerálások a JSON-fájlban
 A következő szakasz a JSON-fájlban használható enumerálásokat határozza meg.
 
+```json
     {
         "legend": {
             "position": [
@@ -4205,3 +4211,4 @@ A következő szakasz a JSON-fájlban használható enumerálásokat határozza 
          ]
        }
     }
+```

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4dec423e991b695097134d575de8c687b518a66c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 0cad14c9d00c6d027c0235714305fb33847b5f8a
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287071"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215700"
 ---
 # <a name="add-image-text-video-and-more-to-your-dashboard"></a>Kép, szöveg, videó és egyéb elemek hozzáadása az irányítópulthoz
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
@@ -101,12 +101,12 @@ Illesszen vagy írjon be egy tetszőleges HTML-tartalmat.  A Power BI ezt a tart
 ## <a name="tips-for-embedding-web-content"></a>Tippek a webes tartalom beágyazására
 * iFrame-tartalmak esetén használjon biztonságos forrást. Ha az iFrame-alapú beágyazási kód megadásakor üres csempét kap, ellenőrizze, hogy nem a **http** előtagot használja-e az iFrame-forráshoz.  Ha igen, módosítsa **https**-re.
   
-  ```
+  ```html
   <iframe src="https://xyz.com">
   ```
 * Szerkessze meg a szélesség- és magasságadatokat. Ez a beágyazási kód beágyazza a videót, és 560 x 315 pixelre állítja be a videólejátszót.  A méret nem változik a csempe méretének módosítása esetén.
   
-  ```
+  ```html
   <iframe width="560" height="315"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
@@ -114,14 +114,14 @@ Illesszen vagy írjon be egy tetszőleges HTML-tartalmat.  A Power BI ezt a tart
   
   Ha a videólejátszót a csempe méretéhez szeretné igazítani, állítsa 100 %-ra a szélességet és a magasságot.
   
-  ```
+  ```html
   <iframe width="100%" height="100%"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
   ```
 * Ez a kód beágyazza a tweetet, és az irányítópulton külön megtartja a következő helyekre mutató hivatkozásokat: **AFK** podcast, **@GuyInACube Twitter-oldala**, **Követés**, **#statisztikák**, **válaszol**, **továbbtweetel**, és **kedvelés**.  Ha a felhasználó a csempére kattint, a Twitter-beli podcast nyílik meg.
   
-  ```
+  ```html
   <blockquote class="twitter-tweet" data-partner="tweetdeck">
   <p lang="en" dir="ltr">Listen to
   <a href="https://twitter.com/GuyInACube">@GuyInACube</a> talk to

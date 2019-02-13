@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: b8f78821ccd6f32f9b943b55a45de20b720f3f3c
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: fd311466d244e3ca9297f107edfad7b2cc930bfb
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762099"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223835"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Beágyazott alkalmazás hibaelhárítása
 
@@ -161,7 +161,7 @@ Ahhoz, hogy eldönthesse, melyik okozza a hibát, próbálja meg a következőke
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: A hozzájáruláshoz rendszergazdai engedély szükséges
 
-**_Tünetek:_**</br>
+**_Tünetek:_**<br>
 Amikor egy rendszergazdai jogokkal nem rendelkező felhasználó először próbál bejelentkezni egy alkalmazásba és a hozzájárulását adja, a következő hibaüzenetek valamelyikét kapja:
 
 * A ConsentTest folyamatnak olyan engedélyre van szüksége a cég erőforrásainak eléréséhez, amelyet csak egy rendszergazda adhat meg. Kérjen engedélyt a rendszergazdától az alkalmazáshoz, hogy használhassa azt.
@@ -171,7 +171,7 @@ Amikor egy rendszergazdai jogokkal nem rendelkező felhasználó először prób
 
 Egy rendszergazdai jogú felhasználó be tud jelentkezni, és sikeresen meg tudja adni az engedélyt.
 
-**_Alapvető ok:_**</br>
+**_Alapvető ok:_**<br>
 Felhasználói jóváhagyás le van tiltva a bérlő számára.
 
 **_Többféle javítás lehetséges:_**

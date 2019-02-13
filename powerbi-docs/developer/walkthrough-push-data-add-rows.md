@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 52ee2dec11029f7c529362fdb44e2291846449c1
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 353104bcc99b65bdabe83f58edffd2653c48731c
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55761984"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215918"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>5. lépés: Sorok hozzáadása egy Power BI-táblázathoz
 
@@ -42,7 +42,7 @@ Adja hozzá ezt a kódot a Program.cs fájlhoz.
 
 * Static void Main(string[] args):
   
-  ```
+  ```csharp
    static void Main(string[] args)
    {
   
@@ -62,7 +62,7 @@ Adja hozzá ezt a kódot a Program.cs fájlhoz.
   ```
 * AddRows() metódus hozzáadása:
 
-```
+```csharp
     #region Add rows to a Power BI table
     private static void AddRows(string datasetId, string tableName)
     {
@@ -111,6 +111,8 @@ Az alábbiakban megtalálja a [teljes kódlistát](#code).
 <a name="code"/>
 
 ## <a name="complete-code-listing"></a>Teljes kódlista
+
+```csharp
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System.Net;
@@ -307,6 +309,7 @@ Az alábbiakban megtalálja a [teljes kódlistát](#code).
             #endregion
         }
     }
+```
 
 Bár a fenti kódban azt adtuk meg, hogy **_//beszerezzük az első azonosítót_**, a megfelelő eljárás a név szerinti keresés az adathalmazban.
 

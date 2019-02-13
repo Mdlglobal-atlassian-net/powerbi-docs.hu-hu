@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 51eb5c2947dc6d621e6c2ef6d3e2361a4542a0f1
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ee7b69bbf8857f12cabb6f7147f8e1d779b2a17e
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276929"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215067"
 ---
 # <a name="high-availability-clusters-for-on-premises-data-gateway"></a>Magas rendelkezésre állású fürtök helyszíni adatátjáróhoz
 
@@ -59,13 +59,13 @@ Ahhoz, hogy a táblázatban szereplő PowerShell-parancsokat futtatni tudja, el�
 1. Nyisson meg egy PowerShell-parancssori ablakot rendszergazdai jogosítványokkal
 2. Futtassa az alábbi egyszeri PowerShell-parancsot (ez azt feltételezi, hogy ezen a gépen még soha nem futtatott PowerShell-parancsokat):
 
-    ```
+    ```powershell
     Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
     ```
 
 3. A PowerShell-ablakban keresse meg a helyszíni adatátjáró telepítési mappáját, és az alábbi parancs használatával importálja a szükséges modult:
 
-    ```
+    ```powershell
     Import-Module .\OnPremisesDataGatewayHAMgmt.psm1
     ```
 
