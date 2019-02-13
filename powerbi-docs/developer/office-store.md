@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.openlocfilehash: 850d4c01248a16029b3874548b61c2f9170560bb
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bedf9092e48b0e28c14ec510f1f3b4431e81ea27
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281505"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086402"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Egyéni vizualizációk közzététele az AppSource-ban
 
@@ -30,7 +30,7 @@ Az **AppSource** az a hely, ahol SaaS-alkalmazásokat és -bővítményeket tal�
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Az egyéni vizualizáció elküldésének előkészítése
 
-Miután végzett az egyéni vizualizáció kódolásával és tesztelésével, és becsomagolta egy pbiviz fájlba, a következőkkel is rendelkeznie kell az elküldéshez.
+Miután végzett az [egyéni vizualizáció kódolásával és tesztelésével](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), és becsomagolta egy pbiviz-fájlba, a következőkkel is rendelkeznie kell az elküldéshez.
 
 | Item | Kötelező | Leírás |
 | --- | --- | --- |

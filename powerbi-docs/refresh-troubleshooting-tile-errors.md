@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: bc53bdf6c0fd013d446c6d74cf2a422a84302f6a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bfb6178908a9d6a4bcfe81f8d3d9771ac5b12b9d
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289785"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086632"
 ---
 # <a name="troubleshooting-tile-errors"></a>Csempékkel kapcsolatos hibák elhárítása
 Az alábbiakban a csempékkel kapcsolatban felmerülő gyakori hibákat és azok magyarázatát soroltuk fel.
@@ -36,13 +36,18 @@ Nem sikerült hozzáférni az adataihoz, mert az adatforrás nem volt elérhető
 
 Forduljon az irányítópult tulajdonosához, és győződjön meg róla, hogy az adatforrások és az adatmodell léteznek és elérhetők az Ön fiókjával.
 
+**A rendszergazda letiltotta az egyéni vizualizációkat.**
+
+A Power BI-rendszergazda letiltotta az egyéni vizualizációkat a szervezete vagy a biztonsági csoportja számára. Emiatt nem használhat egyéni vizualizációkat a [Microsoft Marketplace-ről](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals), és nem importálhat privát vizualizációkat fájlból. Csak az előcsomagolt vizualizációkat használhatja.
+
+
 **Minden adathierarchizálásban legalább egy olyan csoportnak vagy számításnak kell szerepelnie, amely adatokat generál. Forduljon az irányítópult tulajdonosához.**
 
 Jelenleg nem jeleníthetők meg adatok, mert a lekérdezés üres. Próbálja meg egyes mezőket a mezőlistáról hozzáadni a vizualizációhoz, és újra rögzíteni azt.
 
 **Nem sikerült megjeleníteni az adatokat, mert a Power BI nem tudta meghatározni, hogy milyen kapcsolat van két vagy több mező között.**
 
-Két vagy több, nem kapcsolódó táblázatokból származó mezőt próbál használni. Távolítsa el a nem kapcsolódó mezőket a vizualizációból, majd hozzon létre kapcsolatot a táblák között. Miután ezt elvégezte, újból hozzáadhatja a mezőket a vizualizációhoz. Ezt a Power BI Desktopban vagy az Excel programhoz készült PowerPivot bővítményben teheti meg. [További információ](desktop-create-and-manage-relationships.md)
+Két vagy több, nem kapcsolódó táblázatokból származó mezőt próbál használni. Távolítsa el a nem kapcsolódó mezőket a vizualizációból, majd hozzon létre kapcsolatot a táblák között. Miután ezt elvégezte a módosítást, újból hozzáadhatja a mezőket a vizualizációhoz. Ezt a Power BI Desktopban vagy az Excel programhoz készült PowerPivot bővítményben teheti meg. [További információ](desktop-create-and-manage-relationships.md)
 
 **Az elsődleges és a másodlagos tengelyen lévő csoportok között átfedés van. Az elsődleges tengelyen lévő csoportok kulcsai nem egyezhetnek meg a másodlagos tengelyen lévőkével.**
 
@@ -60,7 +65,7 @@ A mezőt valószínűleg törölték vagy átnevezték. Távolítsa el a hibás 
 
 Ez általában átmeneti jellegű probléma. Ha később ismét próbálkozik, és továbbra is megjelenik ez az üzenet, forduljon a támogatási szolgálathoz.
 
-## <a name="contact-support"></a>Kapcsolatfelvétel a támogatási szolgálattal
+## <a name="contact-support"></a>Kapcsolatfelvétel az ügyfélszolgálattal
 Ha a probléma továbbra is fennáll, [kérjen támogatást](https://support.powerbi.com) a további vizsgálat érdekében.
 
 ## <a name="next-steps"></a>Következő lépések

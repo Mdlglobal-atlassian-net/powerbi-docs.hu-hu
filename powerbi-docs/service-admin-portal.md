@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 1bc7539eba4f390c02417edd52ea3f792613abe6
-ms.sourcegitcommit: 3729c88bd991e450fcb2d9b79e6ab478b6e8dc76
+ms.openlocfilehash: f7e28ce1f72a58fe2bb52103b79fa0106a0024ca
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55888233"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086471"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -236,12 +236,17 @@ A vállalati felhasználók használhatják az Azure Searchre épülő külső k
 
 ## <a name="custom-visuals-settings"></a>Egyéni vizualizációk beállításai
 
-### <a name="enable-custom-visuals-for-the-entire-organization"></a>Egyéni vizualizációk engedélyezése a teljes cég számára
+### <a name="add-and-use-custom-visuals"></a>Egyéni vizualizációk hozzáadása és használata
 
 A munkahelyi felhasználók egyéni vizualizációkat használhatnak és oszthatnak meg. [További információ](power-bi-custom-visuals.md)
 
 > [!NOTE]
-> Ez a beállítás az egész munkahelyre vonatkozik, és nem lehet korlátozni meghatározott csoportokra.
+> Ez a beállítás az egész munkahelyre vonatkozhat, de korlátozható meghatározott csoportokra.
+
+### <a name="allow-only-certified-visuals"></a>Csak hitelesített vizualizációk engedélyezése
+
+A szervezet azon felhasználói, akik engedélyt kaptak egyéni vizualizációk hozzáadására és használatára (őket „Egyéni vizualizációk hozzáadása és használata” beállítás jelzi), csak a [hitelesített egyéni vizualizációkat](https://go.microsoft.com/fwlink/?linkid=2002010) használhatják (a nem hitelesített vizualizációk le lesznek tiltva, használatuk esetén hibaüzenet jelenik meg). 
+
 
 ## <a name="r-visuals-settings"></a>R-vizualizációk beállításai
 

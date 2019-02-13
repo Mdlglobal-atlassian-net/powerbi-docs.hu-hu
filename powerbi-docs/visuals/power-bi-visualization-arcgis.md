@@ -6,24 +6,24 @@ manager: kvivek
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-visuals
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 279fea3f1b36a86e7606f3b6d69f19ab42763805
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 6b3f1c3780b60efc2ade444960a92234afecc71e
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234624"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086586"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Esri ArcGIS-térképek a Power BI szolgáltatásban és a Power BI Desktopban
-Ez az oktatóanyag az ArcGIS-térképet létrehozó személy szemszögéből van megírva. Ha a készítő megosztja az ArcGIS-térképet egy kollégájával, az illető megtekintheti és használhatja a térképet, azonban nem mentheti a módosításokat. További információ az ArcGIS-térképek megtekintéséről: [Az ArcGIS-térképek használata](../consumer/power-bi-visualizations-arcgis.md).
+Ez az oktatóanyag az ArcGIS-térképet létrehozó személy szemszögéből van megírva. Ha a készítő megosztja az ArcGIS-térképet egy kollégájával, az illető megtekintheti és használhatja a térképet, azonban nem mentheti a módosításokat. További információ az ArcGIS-térképek megtekintéséről: [Az ArcGIS-térképek használata](power-bi-visualizations-arcgis.md).
 
 Az ArcGIS-térképek és a Power BI együttes használata új lehetőségeket kínál a térképkezelésben, amelyek messze túlmutatnak a pontok térképeken való elhelyezésén. Az alaptérképekhez, helytípusokhoz, témákhoz, szimbólumstílusokhoz és referenciarétegekhez elérhető beállításokkal lenyűgöző és informatív térképes vizualizációk hozhatók létre. A térképen megjelenített mérvadó adatrétegek és a térbeli elemzés egyesítésével jobban megértheti a vizualizációban szereplő adatokat.
 
- Az ArcGIS-térképek mobileszközökön nem hozhatók létre, de megtekinthetők és használhatók. Lásd: [ArcGIS-térképek használata a Power BI-ban](../consumer/power-bi-visualizations-arcgis.md).
+ Az ArcGIS-térképek mobileszközökön nem hozhatók létre, de megtekinthetők és használhatók. Lásd: [ArcGIS-térképek használata a Power BI-ban](power-bi-visualizations-arcgis.md).
 
 > [!TIP]
 > A GIS az angol Geographic Information System (térinformatikai rendszer) kifejezés rövidítése.
@@ -175,7 +175,8 @@ A Drive Time (Utazási idő) panelen kiválaszthat egy helyet, és meghatározha
     ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
 
 1. Válassza a **Drive Time** (Utazási idő) fület, és válassza az egyszeres vagy többszörös kijelölés eszközt. Egyszeres kijelöléssel jelölje ki a Washington, D.C.-hez tartozó gombostűt
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
+
+   ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
    
    > [!TIP]
    > A hely kiválasztása egyszerűbb, ha ráközelít a térképen (a + ikon használatával).
@@ -340,7 +341,7 @@ Nem, a térképek megjelenítéséhez a Power BI-nak kapcsolódnia kell a háló
 Jelenleg nem. [Szavazzon erre az ötletre](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases), és e-mailben értesítjük, ha hozzákezdtünk a funkció fejlesztéséhez.  
 
 ## <a name="next-steps"></a>Következő lépések
-[Az Önnel megosztott ArcGIS-térképek használata](../consumer/power-bi-visualizations-arcgis.md)
+[Az Önnel megosztott ArcGIS-térképek használata](power-bi-visualizations-arcgis.md)
 
 [Az ArcGIS Maps for Power BI elérhetőségét bejelentő blogbejegyzés](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 
