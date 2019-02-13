@@ -1,6 +1,6 @@
 ---
 title: A jelentésszerkesztő bemutatása
-description: A Power BI szolgáltatásban és a Power BI Desktopban használt jelentésszerkesztő hasonló.
+description: A Power BI szolgáltatás és a Power BI Desktop jelentésszerkesztője hasonló.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,21 +8,23 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/25/2019
+ms.date: 02/07/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 51a99d59c74160d229c0d18defe2c5e7be4f48fb
-ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
+ms.openlocfilehash: 66e40462081ee2f1156840d137d4c67ad0eb7b45
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55147404"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971694"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>A Power BI jelentésszerkesztőjének bemutatása
 
-A Power BI szolgáltatásban és a Power BI Desktopban használt *jelentésszerkesztő* hasonló. A videó a Power BI Desktop, ez a cikk pedig a Power BI szolgáltatás jelentésszerkesztőjét mutatja be. 
+A Power BI szolgáltatásban és a Power BI Desktopban használt *jelentésszerkesztő* hasonló. Jelentések létrehozását általában a Power BI Desktopban kezdjük. Ezt követően a jelentéseket közzéteheti a Power BI szolgáltatásban, ahol további módosításokat is végezhet rajtuk. Ugyancsak a Power BI szolgáltatásban hozhatja létre a jelentéseken alapuló irányítópultokat.
 
-Jelentéskészítőként irányítópultokat és jelentéseket hozhat létre és szerkeszthet. Majd kioszthatja ezeket a jelentésfogyasztók számára. Ők a Power BI szolgáltatás olvasási nézetében kezelhetik az irányítópultokat és jelentéseket, de nem szerkeszthetik azokat. További információ arról, [mi mindenre használhatják a jelentésfelhasználók a Power BI szolgáltatást](consumer/end-user-reading-view.md). 
+Ha elkészült az irányítópultok és a jelentések létrehozásával, terjesztheti őket a jelentés felhasználói számára. Attól függően, hogy hogyan osztja meg őket, a végfelhasználók használhatják a jelentéseket a Power BI szolgáltatásban Olvasó nézetében, de nem szerkeszthetik azokat. További információ arról, [mi mindenre használhatják a jelentésfelhasználók a Power BI szolgáltatást](consumer/end-user-reading-view.md). 
+
+Ez a videó bemutatja a jelentésszerkesztőt a Power BI Desktopban. Ez a cikk a Power BI szolgáltatás jelentésszerkesztőjét mutatja be. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -90,6 +92,12 @@ A Szűrők panelnek egy másik hatékony funkciója is van: képes szűrést vé
 ![Szűrők panel](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
 További információ: [Szűrő hozzáadása jelentéshez](power-bi-report-add-filter.md).
+
+Új szűrési felület érhető el előzetes verzióban. Az új szűrőket úgy formázhatja, hogy azok a jelentéssel megegyezően jelenjenek meg. A szűrők zárolhatók is, és el is rejthetők a jelentés felhasználói számára. 
+
+![Új szűrőfunkciók](media/service-the-report-editor-take-a-tour/power-bi-filter-reading.png)
+
+További információ az [új szűrési felületről](power-bi-report-filter-preview.md).
 
 - - -
 ## <a name="the-fields-pane"></a>A Mezők panel

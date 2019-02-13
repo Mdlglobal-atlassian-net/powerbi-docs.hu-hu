@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4c6016119bfa41f1b6c91fff7f814474f0f806b2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c8b5728c951bc1a25e71da8885997814c5485cd4
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294403"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215987"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Irányítópultcsempék a Power BI szolgáltatás tervezői számára – bevezetés
 
@@ -82,7 +82,7 @@ Fogja meg az egyik csempét, és [mozgassa körbe az irányítópulton](service-
 Az, hogy mi történik, amikor rákattint valamelyik csempére, attól függ, hogyan lett létrehozva a csempe. Ha tartozik hozzá [egyedi hivatkozás](service-dashboard-edit-tile.md), a csempe kiválasztásakor a rendszer a hivatkozott oldalra lépteti. Ellenkező esetben a csempére kattintáskor a létrehozásához használt jelentéshez, Excel Online-munkafüzethez, helyszíni Reporting Services-jelentéshez vagy Q&A-kérdéshez irányítja a rendszer.
 
 > [!NOTE]
-> Ez alól csak a közvetlenül az irányítópulton a **Csempe hozzáadása** funkcióval létrehozott videócsempék képeznek kivételt. Amikor egy így létrehozott videócsempére kattint, a rendszer közvetlenül az irányítópulton játssza le a videót.   
+> Ez alól csak a közvetlenül az irányítópulton, a **Csempe hozzáadása** funkcióval létrehozott videócsempék képeznek kivételt. Amikor egy így létrehozott videócsempére kattint, a rendszer közvetlenül az irányítópulton játssza le a videót.   
 > 
 > 
 

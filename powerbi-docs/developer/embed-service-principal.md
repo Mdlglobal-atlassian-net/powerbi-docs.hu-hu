@@ -9,12 +9,12 @@ ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2019
-ms.openlocfilehash: a0b1722a54f1e5ea5bf01d8e5bb5fb4753351a60
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 81a40e021ecd094e5e678504f2dd60300802d909
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55763095"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971671"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Szolgáltatásnév a Power BI-jal (előzetes verzió)
 
@@ -108,9 +108,6 @@ A hagyományos fő fiók használatától eltérően a szolgáltatásnév (csak 
     Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
     ```
 
-    > [!Note]
-    > AAD-beli biztonsági csoportokat csak az AAD egy globális rendszergazdája hozhatja létre.
-
 3. A Power BI adminisztrátoraként a szolgáltatásnevet a Power BI felügyeleti portáljának **Fejlesztői beállítások** szakaszában engedélyezheti. Az Azure AD-ben létrehozott biztonsági csoportot adja hozzá a **Fejlesztői beállítások** **Adott biztonsági csoportok** szakaszához.
 
    > [!Important]
@@ -173,6 +170,7 @@ Alább egy mintaszkript látható a szolgáltatásnév objektumazonosítójának
 * A szolgáltatásnév Power BI felügyeleti portáljának fejlesztői beállításaiban történő engedélyezéséhez rendszergazdai jogosultságok szükségesek a Power BI-ban.
 * Szolgáltatásnév használatával nem telepíthet vagy kezelhet helyszíni adatátjárót.
 * A [Beágyazás a cég számára](embed-sample-for-your-organization.md) alkalmazásai nem tudják a szolgáltatásnevet használni.
+* Az [adatfolyamok](../service-dataflows-overview.md) kezelése nem támogatott.
 
 ## <a name="next-steps"></a>Következő lépések
 
