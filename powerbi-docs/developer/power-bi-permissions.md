@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
-ms.openlocfilehash: 70883adbc224f568e8a7a3a2843fb419d1c15308
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 548f84c38705e269998fd3c124b4f93d3c83d2ef
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278976"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215458"
 ---
 # <a name="power-bi-permissions"></a>Power BI-engedélyek
 
@@ -37,7 +37,7 @@ A Power BI-engedélyek lehetővé teszik az alkalmazások számára, hogy bizony
 | Az összes kapacitás olvasása és írása |Az alkalmazás megtekintheti a bejelentkezett felhasználó összes kapacitását, illetve azokat a kapacitásokat, amelyekhez a felhasználónak hozzáférése van, továbbá írhat is ezekbe a kapacitásokba. Viszont nem biztosít engedélyt új kapacitás létrehozásához. |Capacities.ReadWrite.All |
 | Az összes kapacitás olvasása |Az alkalmazás megtekintheti a bejelentkezett felhasználó összes kapacitását, illetve azokat a kapacitásokat, amelyekhez a felhasználónak hozzáférése van, továbbá írhat is ezekbe a kapacitásokba. Viszont nem biztosít engedélyt új kapacitás létrehozásához. |Capacities.Read.All |
 | A bérlőben szereplő összes tartalom olvasása és írása |Az alkalmazás megtekintheti az összes összetevőt (pl.: csoportok, jelentések, irányítópultok és adatkészletek a Power BI-ban), továbbá írhat is ezekbe az összetevőkbe. Ennek feltétele, hogy a bejelentkezett felhasználó Power BI-szolgáltatásadminisztrátor legyen. |Tenant.ReadWrite.All |
-| A bérlőben szereplő összes tartalom megtekintése |Az alkalmazás megtekintheti az összes összetevőt (pl.: csoportok, jelentések, irányítópultok és adatkészletek a Power BI-ban). Ennek feltétele, hogy a bejelentkezett felhasználó Power BI-szolgáltatásadminisztrátor legyen. |Tenant.Read.All |
+| A bérlőben szereplő összes tartalom megtekintése |Az alkalmazás láthatja a Power BI minden összetevőjét, köztük a csoportokat, a jelentéseket, az irányítópultokat és az adatkészleteket is. Ennek feltétele, hogy a bejelentkezett felhasználó Power BI-szolgáltatásadminisztrátor legyen. |Tenant.Read.All |
 
 Egy alkalmazás engedélyeket kérhet, amikor először kísérel meg bejelentkezni egy felhasználó oldalára a hívás hatókör-paraméterében a kért engedélyek megadásával. Ha megkapja az engedélyeket, a rendszer egy hozzáférési tokent ad vissza az alkalmazásnak, amely a későbbi API-hívások során használható. A hozzáférést csak adott alkalmazás használhatja.
 

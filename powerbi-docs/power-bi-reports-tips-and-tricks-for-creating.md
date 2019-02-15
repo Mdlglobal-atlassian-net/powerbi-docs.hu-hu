@@ -1,7 +1,7 @@
 ---
 title: Látványos jelentések létrehozásával kapcsolatos tippek
 description: Tippek és trükkök jelentések létrehozásához a Power BI szolgáltatásban és a Power BI Desktopban
-author: davidi
+author: davidiseminger
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 02202e8b5e89aa8d312a96d448c825f2ca44447a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d88a455b5448b92d86719251bfada6bd807a4c91
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290498"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223812"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tippek és trükkök jelentések létrehozásához a Power BI Desktopban és a Power BI szolgáltatásban
 Ahhoz, hogy a legtöbbet hozza ki az adataiból, néha szüksége van egy kis extra segítségre. Összegyűjtöttünk néhány tippet és trükköt, amelyek segítségére lehetnek, amikor jelentéseket hoz létre a Microsoft Power BI Desktopban, a Power BI szolgáltatásban *és* a Microsoft Excel 2016 vagy Excel 2013 Pro-Plus kiadásokban, amelyekben engedélyezve van a Power Pivot bővítmény, illetve telepítve és engedélyezve van a Power Query.
@@ -145,7 +145,7 @@ Ebben az esetben a kapcsolat létrehozásához létre kell hoznia egy logikai ad
 4. A **CustomerNames** (Ügyfélnevek) lekérdezésben a menüszalagon válassza a **Hozzáfűzés** lehetőséget, majd válassza ki a **Temp** (Ideiglenes) lekérdezést.
 5. A **CustomerNames** (Ügyfélnevek) lekérdezésben válassza az **Ismétlődések eltávolítása** lehetőséget.
 
-Most már rendelkezik egy dimenziótáblával, amelynek segítségével kapcsolódhat az összes értéket tartalmazó CustomerIndicents (Ügyfélincidensek) és WorkItems (Munkaelemek) adatkészlethez.  
+Most már rendelkezik egy dimenziótáblával, amelynek segítségével kapcsolódhat az összes értéket tartalmazó CustomerIncidents (Ügyfélincidensek) és WorkItems (Munkaelemek) adatkészlethez.  
 
 ### <a name="patterns-to-jump-start-your-use-of-the-query-editor"></a>Minták a Lekérdezésszerkesztő használatának megkezdéséhez
 A Lekérdezésszerkesztő erőssége, hogy módosítani lehet vele az adatokat, és át tudja alakítani, illetve meg tudja tisztítani őket, hogy készen álljanak a vizualizációra vagy a modellezésre. Van néhány minta, amelyet nem árt megismerni.

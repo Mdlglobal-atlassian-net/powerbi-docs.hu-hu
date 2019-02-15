@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/14/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 842d29978fa6a4a714b42b1665112661e0704357
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ce99539e1804746970eae20dc9396f0f0536afea
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293741"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223697"
 ---
 # <a name="create-dynamic-reference-lines-for-visuals-in-the-power-bi-service"></a>Dinamikus referenciavonalak létrehozása vizualizációkhoz a Power BI szolgáltatásban
 
@@ -54,7 +54,7 @@ Az adott vizualizáció esetében rendelkezésre álló dinamikus referenciavona
    
    ![az Átlagos vonal elemzésének testreszabása](media/service-analytics-pane/power-bi-average-line2.png)
 
-1. Az **Elemzés** panel **Átlagos vonal** eleme mellett egy szám jelenik meg. Ez adja meg a vizualizáción lévő dinamikus vonalak aktuális számát és típusát. Ha felvesz egy **Konstans vonalat** az üzletek számára kijelölt 9 célértékkel, akkor az **Elemzés** panelen látható, hogy már egy **Konstans vonal** referenciavonal is tartozik a vizualizációhoz.
+1. Az **Elemzés** panel **Átlagos vonal** eleme mellett egy szám jelenik meg. Ez a szám azt mutatja meg, hogy jelenleg hány dinamikus vonal található a vizualizáción, és hogy ezek milyen típusúak. Ha felvesz egy **Konstans vonalat** az üzletek számára kijelölt 9 célértékkel, akkor az **Elemzés** panelen látható, hogy már egy **Konstans vonal** referenciavonal is tartozik a vizualizációhoz.
    
    ![](media/service-analytics-pane/power-bi-reference-lines.png)
    

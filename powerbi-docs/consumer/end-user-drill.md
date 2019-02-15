@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d935b044e5cbe1a2c84ce5749c3a0b58c528bab0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bc5033df204fafcc7316d6708d7b39429e8e9cba
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282356"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216585"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Részletezési mód vizualizációkban a Power BI-ban
 
@@ -112,7 +112,7 @@ Ez a módszer a vizualizációk felső sarkaiban megjelenő lehatolási ikonokat
 
 2. Válassza ki a **TN**-hez tartozó *levélcsomópontot*. A fatérkép most megjeleníti az összes olyan várost Tennessee államban, amelyben van üzlet. 
 
-    ![a csak Tennessee adatait mutatót fatérkép](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![a csak Tennessee adatait mutatót faszerkezetes térkép](media/end-user-drill/power-bi-drill-down-one1.png)
 
 2. Most folytathatja a lehatolást Tennessee államra, vagy lehatolhat Tennessee egy adott városára is, de lehetőség van arra is, hogy kibontást végezzen (lásd a **Minden mező kibontása** témát alább). Most folytassuk azzal, hogy egyszerre egy-egy mezőben végzünk lehatolást.  Válassza ki a **Knoxville, TN** elemet. A fatérkép most a Knoxville-ben található üzlet postai irányítószámát mutatja. 
 
@@ -127,18 +127,18 @@ Egy olyan fatérkép, amely mindössze egy irányítószámot mutat, nem igazán
 
     ![irányítószám és üzletnév mutatása](./media/end-user-drill/power-bi-expand1.png)
 
-2. Ha meg akarja tekinteni a Tennesee-hez tartozó adatok mind a 4 hierarchiaszintjét, válassza a felhatolás nyilat addig, amíg el nem éri a fatérképen a második szintet, amely a **Total units this year by territory and city** (Összes egység ebben az évben terület és város szerint). 
+2. Ha meg szeretné tekinteni a Tennessee-hez tartozó adatok mind a négy hierarchiaszintjét, válassza a felhatolás nyilat addig, amíg el nem éri a faszerkezetes térképen a második szintet, amely a **Total units this year by territory and city** (Összes egység ebben az évben terület és város szerint). 
 
-    ![Tennessee összes adatát mutatót fatérkép](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![Tennessee összes adatát mutatót faszerkezetes térkép](media/end-user-drill/power-bi-drill-down-one1.png)
 
 
 3. Ügyeljen rá, hogy a lehatolás még be legyen kapcsolva ![lehatolás bekapcsolva](./media/end-user-drill/power-bi-drill-icon2.png), majd válassza a *kibontás lefelé* ikont ![kibontás lefelé ikon](./media/end-user-drill/power-bi-drill-icon6.png). A fatérkép most már további adatokat is megjelenít: a város és az állam mellett most már irányítószámot is mutat. 
 
     ![kettős részletezési ikon](./media/end-user-drill/power-bi-expand-one3.png)
 
-4. Válassza a *kibontás lefelé* ikont még egyszer: ezzel megjeleníti a Tennesee-hez tartozó adatok mind a 4 hierarchiaszintjét a fatérképen. Ha még több részletet szeretne, mutasson rá egy levélcsomópontra.
+4. Válassza a *kibontás lefelé* ikont még egyszer: ezzel megjeleníti a Tennesee-hez tartozó adatok mind a négy hierarchiaszintjét a fatérképen. Ha még több részletet szeretne, mutasson rá egy levélcsomópontra.
 
-   ![fatérkép Tennesee adataival](./media/end-user-drill/power-bi-expand-all.png)
+   ![faszerkezetes térkép Tennesee adataival](./media/end-user-drill/power-bi-expand-all.png)
 
 ## <a name="drilling-filters-other-visuals"></a>Más vizualizációk szűrése részletezéskor
 A Részletezés mód használatakor el kell döntenie, hogy a lehatolás és a kibontás milyen hatással legyen az oldal többi vizualizációjára. 

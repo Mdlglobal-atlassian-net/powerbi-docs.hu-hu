@@ -1,53 +1,43 @@
 ---
-title: Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)
-description: Több-a-többhöz kapcsolatok használata a Power BI Desktopban
+title: Több-a-többhöz kapcsolatok a Power BI Desktopban
+description: Több-a-többhöz számosságú kapcsolatok használata a Power BI Desktopban
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 8d32ad24fd41c33d0b1e1f37f11be39292e82742
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 3f3c901140ca4f2ae2d93d1c3bc17bb519d41212
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291073"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225960"
 ---
-# <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)
+# <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Több-a-többhöz számosságú kapcsolatok a Power BI Desktopban
 
-A Power BI Desktop *több-a-többhöz kapcsolatok* funkciójával *több-a-többhöz* számosságot használó táblák kapcsolhatók össze. A kettő vagy több adatforrást tartalmazó adatmodellek így egyszerűbb és intuitívabb módon hozhatók létre. A *több-a-többhöz kapcsolatok* funkció a Power BI Desktop tágabb *összetett modellek* képességének része.
+A Power BI Desktop *több-a-többhöz számosságú kapcsolatok* funkciójával *több-a-többhöz* számosságot használó táblák kapcsolhatók össze. A kettő vagy több adatforrást tartalmazó adatmodellek így egyszerűbb és intuitívabb módon hozhatók létre. A *több-a-többhöz számosságú kapcsolatok* funkció a Power BI Desktop tágabb *összetett modellek* funkciójának része.
 
 ![Egy több-a-többhöz kapcsolat a „Kapcsolat szerkesztése” panelen](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-A Power BI Desktopban beállítható *több-a-többhöz kapcsolatok* három összefüggő funkció együttesének egy részét képezik:
+A Power BI Desktopban beállítható *több-a-többhöz számosságú kapcsolatok* három összefüggő funkció együttesének egy részét képezik:
 
 * **Összetett modellek**: Lehetővé teszik, hogy egy jelentés kettő vagy több adatkapcsolattal, köztük DirectQuery-kapcsolatokkal és importálással, vagy ezek bármilyen kombinációjával rendelkezzen. További információért lásd: [Összetett modellek a Power BI Desktopban (előzetes verzió)](desktop-composite-models.md).
 
-* **Több a többhöz kapcsolatok**: Az *összetett modellekkel* a táblák között *több-a-többhöz kapcsolatok* hozhatók létre. Ez a megközelítés kiküszöböli, hogy egyedi értékeket kelljen használni a táblákban. Korábbi áthidaló megoldásokat is szükségtelenné tesz, például új táblák bevezetését a kapcsolatok létrehozásához. A funkcióról ez a cikk szolgáltat további információt.
+* **Több-a-többhöz számosságú kapcsolatok**: Az *összetett modellekkel* a táblák között *több-a-többhöz számosságú kapcsolatok* hozhatók létre. Ez a megközelítés kiküszöböli, hogy egyedi értékeket kelljen használni a táblákban. Korábbi áthidaló megoldásokat is szükségtelenné tesz, például új táblák bevezetését a kapcsolatok létrehozásához. A funkcióról ez a cikk szolgáltat további információt.
 
 * **Tárolási mód**: Mostantól megadható, hogy mely vizualizációk igényelnek a háttér-adatforrásokba irányuló lekérdezéseket. Azok a vizualizációk, amelyekhez nincs szükség lekérdezésre, importálva lesznek még akkor is, ha DirectQuery-alapúak. Ez a funkció segíti a teljesítmény javulását, és csökkenti a háttérrendszerek leterheltségét. Korábban még az egyszerű vizualizációk, például a szeletelők is kezdeményeztek a háttérbeli forrásokba irányuló lekérdezéseket. További információért lásd: [Tárolási mód a Power BI Desktopban (előzetes verzió)](desktop-storage-mode.md).
 
-## <a name="enable-the-many-to-many-relationships-preview-feature"></a>A *több-a-többhöz kapcsolatok* előzetes verziójú funkció engedélyezése
+## <a name="what-relationships-with-a-many-many-cardinality-solves"></a>Erre nyújtanak megoldást a *több-a-többhöz számosságú kapcsolatok*
 
-A *több-a-többhöz kapcsolatok* funkcióját engedélyezni kell a Power BI Desktopban. Az összetett modellek engedélyezéséhez válassza a **Fájl** > **Lehetőségek és beállítások** > **Lehetőségek** > **Előzetes verziójú funkciók** elemet, majd jelölje be az **Összetett modellek** jelölőnégyzetét.
+A két tábla közötti kapcsolat már definiálva volt a Power BI-ban, mielőtt a *több-a-többhöz számosságú kapcsolatok* funkciója elérhetővé vált volna. A kapcsolatot alkotó táblák legalább egyik oszlopának tartalmaznia kellett egyedi értékeket, gyakran azonban egyetlen oszlopban sem voltak egyedi értékek. 
 
-![Az „Előzetes verziójú funkciók” panel](media/desktop-composite-models/composite-models_02.png)
+Két tábla tartalmazhatott például egy-egy *Ország* oszlopot, de az *Ország* értékei egyik táblában sem voltak egyediek. Két ilyen tábla összekapcsolásához áthidaló megoldásra volt szükség. Egy ilyen áthidaló megoldás volt például a szükséges egyedi értékeket tartalmazó további táblák beépítése a modellbe. A *több-a-többhöz számosságú kapcsolatok* funkciójával ilyen táblákat közvetlenül is összekapcsolhat a **több-a-többhöz** számosságú kapcsolat segítségével.  
 
-A funkció engedélyezéséhez újra kell indítania a Power BI Desktopot.
-
-![A „Funkció újraindítást igényel” ablak](media/desktop-composite-models/composite-models_03.png)
-
-## <a name="what-many-to-many-relationships-solves"></a>A *több-a-többhöz kapcsolatok* által megoldott problémák
-
-A két tábla közötti kapcsolat már definiálva volt a Power BI-ban, mielőtt a *több-a-többhöz kapcsolatok* funkciója elérhetővé vált volna. A kapcsolatot alkotó táblák legalább egyik oszlopának tartalmaznia kellett egyedi értékeket, gyakran azonban egyetlen oszlopban sem voltak egyedi értékek. 
-
-Két tábla tartalmazhatott például egy-egy *Ország* oszlopot, de az *Ország* értékei egyik táblában sem voltak egyediek. Két ilyen tábla összekapcsolásához áthidaló megoldásra volt szükség. Egy ilyen áthidaló megoldás volt például a szükséges egyedi értékeket tartalmazó további táblák beépítése a modellbe. A *több-a-többhöz kapcsolatok* funkciójával ilyen táblákat közvetlenül is összekapcsolhat a **több-a-többhöz** számosságot használó kapcsolat segítségével.  
-
-## <a name="use-many-to-many-relationships"></a>A *több-a-többhöz kapcsolatok* használata
+## <a name="use-relationships-with-a-many-many-cardinality"></a>*Több-a-többhöz számosságú kapcsolatok* használata
 
 Amikor kapcsolatot definiál két tábla között a Power BI-ban, meg kell adnia a kapcsolat számosságát. Például a *ProductSales* (értékesítések) és *Product*&mdash;(termék) táblák közötti kapcsolat a *ProductSales[ProductCode]* és a *Product[ProductCode]*&mdash;oszlop alapján *több-az-egyhez* kapcsolatként lenne definiálva. A kapcsolatot azért definiálható így, mert egy termékhez több értékesítés is tartozhat, és a *Product* tábla *(ProductCode)* (termékkód) oszlopa egyedi. Amikor egy kapcsolat számosságaként *több-az-egyhez*, *egy-a-többhöz* vagy *egy-az-egyhez* van megadva, a Power BI ellenőrzi, hogy a megadott számosság megfelel-e a tényleges adatoknak.
 
@@ -117,14 +107,11 @@ Ha az áthidaló megoldásban az új *Sales* táblát az összes *States* mező 
 
 ![Táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
 
-Amint látható, így a *TX*&mdash;*Sales* adatokkal, de ismeretlen *Population* adatokkal&mdash;, és *New York*&mdash;ismert *Population* adatokkal, de *Sales* adatok&mdash;nélkül szintén szerepelne. Ez az áthidaló megoldás nem optimális, és számos problémával jár. A több-a-többhöz kapcsolatok létrehozásának célja ezeknek a problémáknak a megoldása, a következő bekezdésben leírtak szerint.
+Amint látható, így a *TX*&mdash;*Sales* adatokkal, de ismeretlen *Population* adatokkal&mdash;, és *New York*&mdash;ismert *Population* adatokkal, de *Sales* adatok&mdash;nélkül szintén szerepelne. Ez az áthidaló megoldás nem optimális, és számos problémával jár. A több-a-többhöz számosságú kapcsolatok megjelenésének köszönhetően orvosolhatóvá váltak a problémák, a következő bekezdésben leírtak szerint.
 
-## <a name="use-many-to-many-relationships-instead-of-the-workaround"></a>*Több-a-többhöz kapcsolatok* használata az áthidaló megoldás helyett
+## <a name="use-relationships-with-a-many-many-cardinality-instead-of-the-workaround"></a>A *több-a-többhöz számosságú kapcsolatok* használata a kerülő megoldás helyett
 
 A Power BI Desktop 2018. júliusi verziójától kezdve az előzőekben leírtakhoz hasonlóan közvetlenül összekapcsolhatók a táblák, anélkül, hogy áthidaló megoldásokra lenne szükség. A kapcsolatokat mostantól *több-a-többhöz* számosságúra is lehet állítani. Ez a beállítás jelzi, hogy egyik tábla sem tartalmaz egyedi értékeket. Ilyen kapcsolatoknál is felügyelheti, hogy melyik tábla szűrje a másikat, vagy alkalmazhat kétirányú szűrést, hogy a táblák kölcsönösen szűrjék egymást.  
-
-> [!NOTE]
-> A *több-a-többhöz kapcsolatok* létrehozásának képessége egyelőre előzetes verzióban érhető el. Amíg előzetes verzióban van, nem lehet közzétenni a *több-a-többhöz kapcsolatokat* használó Power BI-szolgáltatásmodellekhez. 
 
 A Power BI Desktop alapértelmezés szerint *több-a-többhöz* számosságot állít be, ha a meghatározása szerint egyik tábla sem tartalmaz egyedi értékeket a kapcsolatban részt vevő oszlopokban. Ilyen esetekben figyelmeztetés jelenik meg annak megerősítésére, hogy a kapcsolat beállítása szándékos, nem pedig egy adathiba nem várt következménye. 
 
@@ -136,7 +123,7 @@ Az így keletkező **Kapcsolat** nézet ekkor a két tábla közötti közvetlen
 
 ![Táblavizualizáció](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
 
-A *több-a-többhöz* kapcsolatok és a gyakoribb *több-az-egyhez* kapcsolatok közötti főbb eltérések a következők:
+A *több-a-többhöz számosságú kapcsolatok* és a gyakoribb *több-az-egyhez* kapcsolatok közötti főbb eltérések a következők:
 
 * A megjelenő értékek nem tartalmaznak üres sort, amely a másik tábla nem egyező sorainak felel meg. Olyan soroknak megfelelő értékek sincsenek, ahol a kapcsolatban használt oszlop a másik táblában null értéket tartalmaz.
 * A `RELATED()` függvény nem használható, mert egynél több sor is kapcsolódhat.
@@ -153,7 +140,7 @@ Az előbbi eltéréseket szem előtt tartva győződjön meg arról, hogy az `AL
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 
-A *több-a-többhöz kapcsolatoknak* és az összetett modelleknek erre a verziójára érvényes néhány korlátozás.
+A *több-a-többhöz számosságú kapcsolatoknak* és az összetett modelleknek erre a verziójára érvényes néhány korlátozás.
 
 Az alábbi Live Connect- (többdimenziós) források nem használhatók összetett modellekkel:
 
@@ -165,7 +152,7 @@ Az alábbi Live Connect- (többdimenziós) források nem használhatók összete
 
 Ha ezekhez a többdimenziós forrásokhoz a DirectQuery használatával csatlakozik, nem tud más DirectQuery-forráshoz csatlakozni vagy importált adatokkal kombinálni.
 
-A DirectQuery használatára vonatkozó korlátozások a *több-a-többhöz kapcsolatokra* is érvényesek. Sok ilyen korlátozás jelenleg táblánként értendő, a tábla tárolási módjától függően. Egy importált tábla egy számított oszlopa például hivatkozhat más táblákra, egy DirectQuery-tábla számított oszlopai viszont továbbra is csak a táblán belüli oszlopokra hivatkozhatnak. Más korlátozások a modell egészére vonatkoznak, ha a modellen belül bármelyik tábla DirectQuery módban van. A QuickInsights- és a Q&A-funkciók például nem érhetők el a modellben, ha a táblák bármelyikének tárolási módja DirectQuery. 
+A DirectQuery használatára vonatkozó korlátozások a *több-a-többhöz számosságú kapcsolatokra* is érvényesek. Sok ilyen korlátozás jelenleg táblánként értendő, a tábla tárolási módjától függően. Egy importált tábla egy számított oszlopa például hivatkozhat más táblákra, egy DirectQuery-tábla számított oszlopai viszont továbbra is csak a táblán belüli oszlopokra hivatkozhatnak. Más korlátozások a modell egészére vonatkoznak, ha a modellen belül bármelyik tábla DirectQuery módban van. A QuickInsights- és a Q&A-funkciók például nem érhetők el a modellben, ha a táblák bármelyikének tárolási módja DirectQuery. 
 
 ## <a name="next-steps"></a>Következő lépések
 

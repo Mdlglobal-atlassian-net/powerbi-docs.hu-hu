@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: 3aa4047f5a4b0146c534a5734d8d13a42c46fe58
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e829d0cf174cc81148287ce1b25449246300606c
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287807"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216700"
 ---
 # <a name="troubleshoot-scheduled-refresh-in-power-bi-report-server"></a>Ütemezett frissítések hibaelhárítása a Power BI jelentéskészítő kiszolgálón
 Ez a cikk a Power BI jelentéskészítő kiszolgáló ütemezett frissítéseivel kapcsolatos hibák elhárításához rendelkezésre álló forrásokat ismerteti.
@@ -25,7 +25,7 @@ Ez a cikk a Power BI jelentéskészítő kiszolgáló ütemezett frissítéseive
 Az alábbiak a jelentések frissítésének ütemezésekor fellépő leggyakoribb hibák. 
 
 ### <a name="driver-related-problems"></a>Illesztőprogrammal kapcsolatos problémák
-A különböző adatforrásokhoz való kapcsolódáshoz szükség lehet külső gyártótól származó illesztőprogramokra, melyeket a sikeres kapcsolódáshoz telepíteni kell. Ezeket nem csak arra a gépre kell telepíteni, amelyen a Power BI Desktopot használja. Arról is gondoskodnia kell, hogy az illesztőprogram telepítve legyen a jelentéskészítő kiszolgálón.
+A különféle adatforrásokhoz való kapcsolódáshoz szükség lehet külső gyártótól származó illesztőprogramokra, és ezeket a sikeres kapcsolódáshoz telepíteni kell. Ezeket nem csak arra a gépre kell telepíteni, amelyen a Power BI Desktopot használja. Arról is gondoskodnia kell, hogy az illesztőprogram telepítve legyen a jelentéskészítő kiszolgálón.
 
 Az illesztőprogramnak 32 bites és 64 bites verziója is lehet. Mindenképpen a 64 bites illesztőprogramot telepítse, hiszen a Power BI jelentéskészítő kiszolgáló 64 bites.
 
@@ -60,7 +60,7 @@ Az ütemezett frissítéseket érintő beállítások a következők. Az SQL Ser
 
 **Beállítások az rsreportserver.config fájlban:**
 
-```
+```xml
 <Configuration>
     <Service>
         <PollingInterval>10</PollingInterval>

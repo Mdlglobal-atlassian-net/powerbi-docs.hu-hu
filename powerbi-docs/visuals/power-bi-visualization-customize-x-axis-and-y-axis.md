@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c6395785c3d3e386aa2ac735439a265f5fe3fb02
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1bb6cfa195e3e6158259c9ff23cb3efdc3da4a09
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287002"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223306"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>X és Y tengely tulajdonságainak testreszabása
 Az oktatóanyag segítségével elsajátíthatja a vizualizációk X és Y tengelyének testreszabását lehetővé tevő módok végrehajtását. Nem minden vizualizáció rendelkezik tengelyekkel vagy testreszabási lehetőségekkel. Például a kördiagramoknak nincsenek tengelyei. Ráadásul a testreszabási lehetőségek minden vizualizáció esetében különböznek, és túl sok lehetőség létezik ahhoz, hogy egyetlen cikkben mindet ismertessük. Így a leggyakrabban használt tengelyek testreszabási lehetőségeit fogjuk átvenni, hogy Ön kényelmesen elsajátíthassa a vizualizációk formázási lapjának használatát a Power BI-jelentések vásznán.  
@@ -136,7 +136,7 @@ Ha a jelentés tulajdonosa az X tengelyt adat típusúként kategorizálta, akko
 ## <a name="next-steps"></a>Következő lépések
 További információk [a Power BI-jelentésekben lévő vizualizációkról](power-bi-report-visualizations.md)
 
-[C](power-bi-visualization-customize-title-background-and-legend.md)[ímek, hátterek és jelmagyarázatok testreszabása](power-bi-visualization-customize-title-background-and-legend.md)
+[Címek, hátterek és jelmagyarázatok testreszabása](power-bi-visualization-customize-title-background-and-legend.md)
 
 [Színek és tengelytulajdonságok testreszabása](service-getting-started-with-color-formatting-and-axis-properties.md)
 

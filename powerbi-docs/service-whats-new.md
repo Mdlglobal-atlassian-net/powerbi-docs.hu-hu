@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 2/9/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: d811ff6c68155d354df1785ae722829e1187543c
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 5a9fa6b5e854fc51487f0a0b4feaef8650b94057
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431085"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216861"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
@@ -31,10 +31,41 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="september-2018"></a>2018. szeptember
-* [Megjegyzések írása irányítópultokon](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) a Power BI szolgáltatásban.
 
-## <a name="previous-months-2018"></a>Korábbi hónapok (2018)
+## <a name="february-2019"></a>2019. február
+* Számítási feladatok és aktív adatkészlet mérete metrika a [kapacitásfigyelő alkalmazásban](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Exportálás PDF-be és igény szerinti e-mail (service-report-subscribe.md).
+* Tömeges műveletek a felügyeleti portálon.
+
+## <a name="previous-months-2019"></a>Korábbi hónapok (2019)
+### <a name="january-2019"></a>2019. január
+* [Biztonságos Power BI-jelentések](service-embed-secure.md) beágyazása belső portálokba és webhelyekbe.
+* Az [adatfolyamok](service-dataflows-overview.md) szerkesztője új összekötőkkel bővült, és mostantól támogatja a natív SQL-lekérdezéseket és a Power Query Online-transzformációkat.
+* [Személyes könyvjelzők](https://powerbi.microsoft.com/en-us/blog/announcing-personal-bookmarks-in-the-power-bi-service/) a Power BI szolgáltatásban.
+* Időalapú ütemezés e-mail-előfizetésekkel.
+
+## <a name="2018"></a>2018
+### <a name="december-2018"></a>2018. december
+* Mesterséges intelligencián alapuló [alkalmazásjavaslatok](https://powerbi.microsoft.com/en-us/blog/announcing-ai-powered-app-recommendations-getting-the-right-insights-to-the-right-people/) a Power BI kezdőlapján.
+* [Munkaterület-kezelés](https://powerbi.microsoft.com/en-us/blog/workspace-management-in-the-admin-portal/) a Felügyeleti portálon.
+* A Power BI adatfolyamok és az Azure Data Lake Storage Gen2 integrációjának előzetes verziója az [adatfolyamokban](service-dataflows-overview.md).
+* A Power BI-megoldássablonok nyílt forráskódúvá váltak.
+
+### <a name="november-2018"></a>2018. november
+* A Power BI Adatok előkészítése funkciója nyilvános előzetes verzióban elérhető az [adatfolyamokban](service-dataflows-overview.md).
+* A [lapszámozott jelentések](paginated-reports-report-builder-power-bi.md) nyilvános előzetes verziója a Power BI Premiumban.
+* A memóriában lévő adathalmazok adatmérete és darabszáma a [kapacitásfigyelő alkalmazásban](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+
+### <a name="october-2018"></a>2018. október
+* Aggregációk[desktop-aggregations.md] a Power BI szolgáltatásban.
+* A Power BI három új régióban is elérhető: Közép-India, Ausztrália keleti régiója, USA középső régiója (Iowa). 
+* Általánosan elérhető az Exportálás PowerPointba funkció.
+
+### <a name="september-2018"></a>2018. szeptember
+* [Megjegyzések írása irányítópultokon](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) a Power BI szolgáltatásban.
+* A [Power BI kezdőlap és a globális keresés](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/) nyilvános előzetes verziója.
+* A [lekérdezések monitorozásának](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) lehetősége a [kapacitásfigyelő alkalmazásban](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+
 ### <a name="august-2018"></a>2018. augusztus
 * [Kapacitásmonitorozó alkalmazás](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) a Power BI Premiumhoz.
 * Fejlesztések a Power BI [Jelentések URL-szűrőjében](service-url-filters.md).
@@ -78,7 +109,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 *   Ütemezett frissítéstámogatás az Azure Analysis Serviceshez (AAS).
 
 ## <a name="previous-months-2017"></a>Korábbi hónapok (2017)
-## <a name="october-and-november-2017"></a>2017. október és november
+### <a name="october-and-november-2017"></a>2017. október és november
 *   A [Power BI-alkalmazásokat](service-create-distribute-apps.md) használó tartalmak szelektív közzététele.
 *   A külső felhasználók elosztása az [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/) használatával.
 * Mesterséges intelligenciát használó alkalmazásjavaslatok.
@@ -86,7 +117,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * E-mail-előfizetések támogatása az alkalmazásokhoz. 
 * Részletes felügyeleti vezérlés a [webes közzétételhez](https://docs.microsoft.com/power-bi/service-admin-portal#export-and-sharing-settings).
 
-## <a name="september-2017"></a>2017. szeptember
+### <a name="september-2017"></a>2017. szeptember
 * A prémium szintű kapacitásban irányítópultokat oszthat meg Power BI Pro-licenccel nem rendelkező felhasználókkal.
 * Kapacitások lefoglalása az üzleti igényeknek megfelelően a virtuális magok készletezésével.
 * Azonnal, egyetlen kattintással skálázható kapacitások.

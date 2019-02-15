@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 95bbbd8402fd2f489af5d4276616ba045d1c938b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 509eebfdf2d96a2cc77d5c9413c664a10309ab9c
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287738"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216429"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Elemzések megosztása és történetek felépítése a Power BI könyvjelzőivel 
 A Power BI-ban a **könyvjelzők** használatával rögzítheti az egyes jelentésoldalak aktuális nézetkonfigurációját, beleértve a szűréseket és a vizualizációk állapotát, hogy később egyszerűen a mentett könyvjelzőre kattintva visszaállíthassa az adott állapotot. 
@@ -117,7 +117,7 @@ A szerkesztési módban Ctrl+kattintással nyithatja meg a hivatkozásokat, a sz
 
 A **Power BI Desktop** 2018. augusztusi kiadásától kezdve könyvjelzőcsoportokat is létrehozhat és használhat. A könyvjelzőcsoport az Ön által létrehozott könyvjelzők gyűjteménye, amelyeket csoportokba gyűjtve jeleníthet meg. 
 
-Könyvjelzőcsoport létrehozásához a CTRL billentyű lenyomva tartása mellett válassza ki a csoportba foglalandó könyvjelzőket, majd kattintson bármely könyvjelző melletti három pontra, és a megjelenő menüben válassza a **Csoportosítás** lehetőséget.
+Könyvjelzőcsoport létrehozásához a CTRL billentyű lenyomva tartása mellett válassza ki a csoportba foglalandó könyvjelzőket, majd kattintson valamelyik kijelölt könyvjelző mellett a három pontra, és a megjelenő menüben válassza a **Csoportosítás** lehetőséget.
 
 ![Könyvjelzőcsoport létrehozása](media/desktop-bookmarks/bookmarks_15.png)
 

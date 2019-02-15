@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8668e477a2778bfdeec8260a31ca63af9d4124a6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b68cbafd3572100d5983eb8b17f07464d39baf3f
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287692"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56217068"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Csatlakozás SSAS többdimenziós modellekhez a Power BI Desktopban
 A Power BI Desktopban hozzáférhet az **SSAS többdimenziós modellekhez** (gyakori nevükön **SSAS MD-khez**).
@@ -80,7 +80,7 @@ Az **SSAS MD** használatára bizonyos korlátozások vonatkoznak:
 
 * A kiszolgálóknak az Analysis Services SQL Server 2012 SP1 CU4 vagy azt követő verzióját kell futtatniuk, hogy a Power BI Desktop SSAS MD-összekötője megfelelően működjön.
 * A *Műveletek* és az *Elnevezett készletek* nem jelennek meg a Power BI-ban, azonban továbbra is lehet kapcsolódni a *Műveleteket* vagy *Elnevezett készleteket* is tartalmazó kockákhoz, és vizualizációkat és jelentéseket is létre lehet hozni.
-* Előfordulhat olyan hiba, hogy bár a Power BI megjeleníti az SSAS modell metaadatait, de mégsem tud adatokat beolvasni a modellből. Ez olyankor fordulhat elő, amikor a rendszerre csak az MSOLAP-szolgáltató 32-bites verziója van telepítve, és nem rendelkezik a 64-bites verzióval. Ilyenkor a 64-bites verzió telepítése megoldhatja a problémát.
+* Előfordulhat olyan hiba, hogy bár a Power BI megjeleníti az SSAS-modell metaadatait, de mégsem tud adatokat beolvasni a modellből. Ez olyankor fordulhat elő, amikor a rendszerre csak az MSOLAP-szolgáltató 32-bites verziója van telepítve, és nem rendelkezik a 64-bites verzióval. Ilyenkor a 64-bites verzió telepítése megoldhatja a problémát.
 * Többdimenziós SSAS-modellhez élő kapcsolattal rendelkező jelentés létrehozásakor nem hozhat létre „jelentésszintű” mértékeket. Csak az MD modellben definiált mértékek állnak rendelkezésre.
 
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Az SSAS MD támogatott szolgáltatásai a Power BI Desktopban

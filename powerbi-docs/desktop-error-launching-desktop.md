@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f527fa17ab242f6835ca99a3ff3ef3e2525a001f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4b859611df09d5c374ae7483a1ef406b432389ba
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277135"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223720"
 ---
 # <a name="resolve-issues-when-power-bi-desktop-will-not-launch"></a>A Power BI Desktop meghiúsult indulásával kapcsolatos hibák elhárítása
 A **Power BI Desktop** esetében azok a felhasználók, akik a **Power BI helyszíni adatátjáró** korábbi verzióit telepítették és futtatják, esetenként nem tudják elindítani a Power BI Desktopot a rendszergazdai szabályzatok korlátozásai miatt, amelyeket a Power BI helyszíni adatátjáró alkalmazott a helyi gép nevesített csöveire. 
@@ -32,7 +32,7 @@ Ha már nincs szüksége a Power BI helyszíni adatátjáróra, eltávolíthatja
 ### <a name="resolution-3-run-power-bi-desktop-with-administrator-privilege"></a>3.megoldás: Futtassa a Power BI Desktopot rendszergazdai jogosultsággal
 Harmadik lehetőségként rendszergazdai jogosultsággal is futtathatja a Power BI Desktopot, ami biztosítja annak sikeres indítását. Ekkor is javasolt azonban telepíteni a Power BI helyszíni adatátjáró legújabb verzióját, a cikkben korábban leírtaknak megfelelően.
 
-Fontos észben tartani, hogy a Power BI Desktop egy többfolyamatos architektúrával rendelkezik, amelynek számos folyamata Windows nevesített csövekkel kommunikál. Más folyamatok befolyásolhatják ezeket a nevesített csöveket. Az ilyen interferenciák leggyakoribb oka a biztonság, például azok a helyzetek, amelyekben a vírusirtó szoftver vagy a tűzfal letiltja a csöveket, vagy egy adott portra irányítja a forgalmat. Ha rendszergazdai jogosultsággal indítja el a Power BI Desktopot, az megoldhatja a problémát. Ha ez nem lehetséges, forduljon a rendszergazdához, és kérdezze meg, mely biztonsági szabályok gátolják meg a nevesített csövek megfelelő kommunikációját, valamint kérje meg, hogy helyezze engedélyezőlistára a Power BI Desktopot és annak részfolyamatait.
+Fontos észben tartani, hogy a Power BI Desktop egy többfolyamatos architektúrával rendelkezik, amelynek számos folyamata Windows nevesített csövekkel kommunikál. Más folyamatok befolyásolhatják ezeket a nevesített csöveket. Az ilyen interferenciák leggyakoribb oka a biztonság, például azok a helyzetek, amelyekben a vírusirtó szoftver vagy a tűzfal letiltja a csöveket, vagy egy adott portra irányítja a forgalmat. Ha rendszergazdai jogosultsággal indítja el a Power BI Desktopot, az megoldhatja a problémát. Ha ez nem lehetséges, forduljon a rendszergazdához, és kérdezze meg, hogy milyen biztonsági szabályok gátolják meg a nevesített csövek megfelelő kommunikációját, valamint kérje meg, hogy helyezze engedélyezőlistára a Power BI Desktopot és annak részfolyamatait.
 
 ## <a name="resolve-issues-when-connecting-to-sql-server"></a>Az SQL Serverhez történő kapcsolódással összefüggő problémák megoldása
 Ha a következőhöz hasonló hibaüzenettel találkozik, amikor SQL Server-adatbázishoz csatlakozik, a problémát legtöbbször megoldja, ha a **Power BI Desktopot** rendszergazda-módban indítja el, és csak ezután hozza létre az SQL Server-kapcsolatot:

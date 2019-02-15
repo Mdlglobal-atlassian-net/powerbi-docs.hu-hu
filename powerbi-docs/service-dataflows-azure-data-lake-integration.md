@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 763b331fd0a5ff47263ea54d17f6cb17516de79d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1c503492da52592730b82857725b388ca440f2bd
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296777"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215584"
 ---
 # <a name="dataflows-and-azure-data-lake-integration-preview"></a>Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)
 
@@ -65,7 +65,7 @@ A Power BI-fájlrendszeren belüli CDM-mappák létrehozásához és kezeléséh
 
 Az A Active Directory OAuth Bearer tulajdonosi jogkivonatok POSIX ACL-ek egyszerűbbé teszik a CDM-mappák megosztását azokkal az adatfogyasztókkal, például felhasználókkal vagy szolgáltatásokkal, amelyeknek olvasniuk kell az adatokat. Ezen a módon a rendszergazdák figyelni tudják, hogy ki fért hozzá a CDM-mappához. Az egyetlen szükséges művelet a hozzáférés biztosítása a választott Active Directory-objektum (például felhasználói csoport vagy szolgáltatás) számára a CDM-mappához. Ajánlott az adatelőállítón kívül minden identitásnak csak olvasható hozzáférést adni a CDM-mappához. Ezzel megvédhető az előállító által generált adatok integritása.
 
-Ahhoz, hogy CDM-mappákat vehessen fel a Power BI-ba, a CDM-mappát hozzáadó felhasználónak *olvasási* hozzáférési ACL-ekkel kell rendelkeznie magára a CDM-mappára, és az abban lévő fájlokra és mappákra is. Ezen felül *végrehajtási* hozzáférési ACL-ek is szükségesek a CDM-mappára és az abban lévő mappákra. A további tájékozódáshoz ajánlott a [Hozzáférés-vezérlési listák fájlokhoz és könyvtárakhoz](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-access-control#access-control-lists-on-files-and-directories) és [Az Azure Data Lake Storage Gen2 használatához ajánlott eljárások](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-best-practices) című cikkek áttekintése.
+Ahhoz, hogy CDM-mappákat vehessen fel a Power BI-ba, a CDM-mappát hozzáadó felhasználónak *olvasási* hozzáférési ACL-ekkel kell rendelkeznie magára a CDM-mappára, és az abban lévő fájlokra és mappákra is. Ezen felül *végrehajtási* hozzáférési ACL-ek is szükségesek a CDM-mappára és az abban lévő mappákra. Azt ajánljuk, hogy ismerkedjen meg a [Hozzáférés-vezérlési listák fájlokhoz és könyvtárakhoz](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-access-control#access-control-lists-on-files-and-directories) és [Az Azure Data Lake Storage Gen2 használatához ajánlott eljárások](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-best-practices) című cikkben foglalt további információkkal is.
 
 
 ### <a name="alternative-forms-of-authorization"></a>Más hitelesítési formák

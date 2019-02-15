@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e737978b7c39abd331f51fbb12e24656d54e838
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f2c7cff36639007276622b095980a9460e539285
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275916"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216746"
 ---
 # <a name="manage-your-data-source---oracle"></a>A vállalati adatforrások kezelése – Oracle
 Amint telepítette a helyszíni adatátjárót, fel kell vennie az átjáróval használható adatforrásokat. Ez a cikk bemutatja, hogyan lehet használni az átjárókat és az adatforrásokat. Az Oracle adatforrást az ütemezett frissítéshez vagy a DirectQueryhez használhatja.
@@ -155,7 +155,7 @@ Ha szerepel az átjárón belül konfigurált adatforrás **Felhasználók** lap
 ![](media/service-gateway-onprem-manage-oracle/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
-Több hibaüzenetet kaphat az Oracle-től, amikor az elnevezési szintaxis helytelen, vagy nincs megfelelően konfigurálva.
+Több hibaüzenetet kaphat az Oracle-től, ha az elnevezési szintaxis helytelen vagy nincs megfelelően konfigurálva.
 
 * ORA-12154: TNS: nem oldható fel a megadott csatlakozásazonosító  
 * ORA-12514: A TNS figyelő jelenleg nem ismeri a csatlakozásleíróban kért szolgáltatást  

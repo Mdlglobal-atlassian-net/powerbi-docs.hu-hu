@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/21/2018
-ms.openlocfilehash: ab8da0a7b1fb42158a399b5443bf737718e6a81f
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 812ac76266f8ef3299fa72b575c9ff68d2e75a79
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430418"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216355"
 ---
 # <a name="certified-custom-visuals"></a>Minősített egyéni vizualizációk
 
@@ -45,7 +45,7 @@ Az egyéni vizualizáció [minősítéséhez](#certified-custom-visuals) győző
 
 * Microsoft AppSource-jóváhagyás. Az egyéni vizualizáció megtalálható a [piactéren](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
 * Az egyéni vizualizációt a verzióval ellátott API-k 1.2-es vagy újabb verzióival kell megírni.
-* A Power BI csapata által áttekinthető kódtár (például elérhetővé tett forráskód [JavaScript vagy TypeScript] emberileg olvasható formátumban a GitHubon).
+* A Power BI csapata számára ellenőrzésre elérhetővé tett kódtár (például ember által olvasható formátumú JavaScript- vagy TypeScript- forráskód a GitHubon).
 
     >[!Note]
     > Nem kell nyilvánosan megosztania a kódot a GitHubon.

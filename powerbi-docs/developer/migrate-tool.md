@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 41ab7f06da3038e48e2d1188edc8b91edeee8d4f
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 76e6ebec14d5feefd319213c05fddb0839a55ccd
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762352"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216378"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded migrálási eszköz
 
@@ -207,7 +207,7 @@ A módosítás végrehajtásához be kell zárnia a migrálási eszközt, majd �
 
 A fenti példában az egyik klónozott jelentés nem jelezte, hogy létezik egy jelentés ugyanazon a néven. Ha megtekintjük a migrálási terv XML-fájlját, a következőt fogjuk látni.
 
-```
+```xml
 <ReportMigrationData>
     <PaaSWorkspaceCollectionName>SampleWorkspaceCollection</PaaSWorkspaceCollectionName>
     <PaaSWorkspaceId>4c04147b-d8fc-478b-8dcb-bcf687149823</PaaSWorkspaceId>
@@ -229,7 +229,7 @@ A fenti példában az egyik klónozott jelentés nem jelezte, hogy létezik egy 
 
 A hibás elemnél megváltoztathatjuk a SaaSTargetReportName nevét.
 
-```
+```xml
 <SaaSTargetReportName>cloned2</SaaSTargetReportName>
 ```
 
@@ -245,7 +245,7 @@ A Power BI-ba visszatérve láthatjuk, hogy a jelentések és az adatkészletek 
 
 Feltöltheti egy Power BI Desktop-fájl helyi verzióját is. Ehhez be kell zárnia az eszközt, szerkesztenie kell az XML-fájlt, és be kell illesztenie a helyi PBIX-fájl teljes elérési útját a **PbixPath** tulajdonságba.
 
-```
+```xml
 <PbixPath>[Full Path to PBIX file]</PbixPath>
 ```
 
