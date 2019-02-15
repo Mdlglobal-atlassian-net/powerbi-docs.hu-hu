@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f5fc52df86faa69683fa1e76f8893fb1d1a09ab9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: da269e3bb025e8d53ee3bb7707f3bb78d592e011
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281160"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225914"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 A Power BI Desktoppal különböző forrásokból származó adatokhoz csatlakozhat. Az elérhető adatforrások teljes listája az oldal alján látható.
@@ -77,11 +77,14 @@ Az **Adatbázis** kategória a következő adatkapcsolatokat biztosítja:
 * Amazon Redshift
 * Impala
 * Google BigQuery
+* Vertica
 * Snowflake
 * Essbase (bétaverzió)
-* BI-összekötő
+* Dremio
 * Exasol
-* Dremio (bétaverzió)
+* MarkLogic (bétaverzió)
+* AtScale-kockák (bétaverzió)
+* BI-összekötő
 * Jethro (bétaverzió)
 * Kyligence Enterprise (bétaverzió)
 
@@ -136,8 +139,6 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * Google Analytics
 * Adobe Analytics
 * appFigures (bétaverzió)
-* comScore Digital Analytix (bétaverzió)
-* Dynamics 365 for Customer Insights (bétaverzió)
 * Data.World – Adathalmaz lekérése (bétaverzió)
 * Facebook
 * GitHub (bétaverzió)
@@ -157,6 +158,8 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * Webtrends (bétaverzió)
 * Zendesk (bétaverzió)
 * TeamDesk (bétaverzió)
+* Emigo adatforrás (bétaverzió)
+* Microsoft Graph Security (bétaverzió)
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Online szolgáltatások** kategória ki van választva.
 
@@ -164,7 +167,6 @@ A következő képen a **Lekérdezés** ablak látható, amelyen az **Online szo
 
 Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 
-* Vertica
 * Web
 * SharePoint-lista
 * OData-adatcsatorna
@@ -176,8 +178,12 @@ Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 * Python-szkript
 * ODBC
 * OLE DB
+* Workforce Dimensions (bétaverzió)
 * Denado
 * Paxata (bétaverzió)
+* SurveyMonkey (bétaverzió)
+* QubolePresto (bétaverzió)
+* Quick Base (bétaverzió)
 * Üres lekérdezés
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Egyéb** kategória ki van választva.
@@ -190,7 +196,7 @@ A következő képen a **Lekérdezés** ablak látható, amelyen az **Egyéb** k
 ## <a name="connecting-to-a-data-source"></a>Csatlakozás adatforráshoz
 Egy adott adatforráshoz való csatlakozáshoz válassza ki azt a **Lekérdezés** ablakban, majd válassza a **Kapcsolódás** lehetőséget. A következő képen a **Web** lehetőség van kiválasztva az **Egyéb** adatkapcsolat-kategórián belül.
 
-![Webes csatlakozás](media/desktop-data-sources/data-sources_08a.png)
+![Webes csatlakozás](media/desktop-data-sources/data-sources_08.png)
 
 Ekkor megjelenik egy, az adott adatkapcsolatra jellemző csatlakozási ablak. Ha hitelesítő adatok szükségesek, a rendszer ezek megadására kéri. A következő képen a Web típusú adatforráshoz való csatlakozáshoz szükséges URL-cím megadása látható.
 

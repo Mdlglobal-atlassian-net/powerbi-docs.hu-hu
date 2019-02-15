@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a15707a36a34e083458da5fa407034e33dd570c0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1126a2cbdac7e6ed1b465d2d0ba881ae2b4f5338
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284150"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56226029"
 ---
 # <a name="using-directquery-in-power-bi"></a>DirectQuery használata a Power BI-ban
-Számos különböző adatforrást kapcsolhat össze a **Power BI Desktop** vagy a **Power BI szolgáltatás** használatával, és ezeket az adatkapcsolatokat többféleképpen is létrehozhatja. *Importálhat* adatokat a Power BI-ba, ez az adatok lekérésének leggyakoribb módja, vagy közvetlenül is csatlakozhat az eredeti forrásadattárukban lévő adatokhoz, ez az eljárás **DirectQuery** néven ismert. Ez a cikk a **DirectQuery** szolgáltatást és annak képességeit mutatja be, az alábbi témaköröket beleértve:
+Számos különböző adatforrást kapcsolhat össze a **Power BI Desktop** vagy a **Power BI szolgáltatás** használatával, és ezeket az adatkapcsolatokat többféleképpen is létrehozhatja. *Importálhat* adatokat a Power BI-ba, ez az adatok lekérésének leggyakoribb módja, vagy közvetlenül is csatlakozhat az eredeti forrásadattárukban lévő adatokhoz, ez az eljárás **DirectQuery** néven ismert. Ez a cikk a **DirectQuery** szolgáltatást és annak képességeit mutatja be:
 
 * A DirectQuery különféle kapcsolódási lehetőségei
 * Útmutatás arra vonatkozóan, hogy mikor érdemes megfontolni a DirectQuery használatát importálás helyett
@@ -27,8 +27,8 @@ Számos különböző adatforrást kapcsolhat össze a **Power BI Desktop** vagy
 
 Röviden összefoglalva az importálást a DirectQuery helyett az alábbi ajánlott eljárások szerint érdemes használni:
 
-* Amikor csak lehetősége van rá, az adatokat érdemes **importálni** a Power BI-ba. Ezzel kihasználhatók a Power BI nagy teljesítményű lekérdezési motorjának előnyei, valamint interaktív és teljes körű funkciókat biztosít az adatok használatához.
-* Ha szükséges célok nem érhetők el az adatok importálásával, fontolja meg a **DirectQuery** használatát. Ha például az adatok gyakran változnak, a jelentésekkel pedig a legfrissebb adatokat szeretné bemutatni, akkor valószínűleg a DirectQuery a legjobb választás. A DirectQuery használata azonban általában csak akkor megvalósítható, ha az alapul szolgáló adatforrások interaktív (5 másodpercnél rövidebb) lekérdezéseket biztosítanak a szokványos összesítő lekérdezésekhez, valamint képesek az ezáltal létrejött lekérdezési terhelés kezelésére. Ezen kívül a DirectQuery használatához társuló korlátozásokat a célok elérése érdekében érdemes alaposan megfontolni.
+* Amikor csak lehetősége van rá, az adatokat érdemes **importálni** a Power BI-ba. Az importálással kihasználhatók a Power BI nagy teljesítményű lekérdezési motorjának előnyei, valamint interaktív és teljes körű funkciókat biztosít az adatok használatához.
+* Ha szükséges célok nem érhetők el az adatok importálásával, fontolja meg a **DirectQuery** használatát. Ha például az adatok gyakran változnak, a jelentésekkel pedig a legfrissebb adatokat szeretné bemutatni, akkor valószínűleg a DirectQuery a legjobb választás. A DirectQuery használata azonban általában csak akkor megvalósítható, ha az alapul szolgáló adatforrások interaktív (5 másodpercnél rövidebb) lekérdezéseket biztosítanak a szokványos összesítő lekérdezésekhez, valamint képesek az ezáltal létrejött lekérdezési terhelés kezelésére. Ezenkívül a DirectQuery használatához társuló korlátozásokat érdemes alaposan megfontolni.
 
 A Power BI által nyújtott képességeket idővel mind az importálás, mind a DirectQuery esetében bővíteni és fejleszteni fogjuk. Ez vonatkozik az importált adatok használatának rugalmasságára abban az értelemben, hogy az importálás több esetben legyen használható, valamint a DirectQuery használatával kapcsolatos hátrányok kiküszöbölésére is. A fejlesztésektől függetlenül a DirectQuery esetében az alapul szolgáló adatforrás teljesítménye mindig az első számú megfontolandó szempontok közé fog tartozni. Ha az alapul szolgáló adatforrás lassú, akkor a DirectQuery használata ahhoz az adatforráshoz nem lesz megvalósítható.
 
@@ -106,7 +106,7 @@ Az alábbi tábla olyan forgatókönyveket ír le, amelyekben a DirectQueryvel v
 * Az adatok szuverenitására korlátozások vonatkoznak
 * Az forrás egy többdimenziós forrás, amely mértékeket tartalmaz (például az SAP BW)
 
-Vegye figyelembe, hogy az előző lista részletei csak a Power BI használatára vonatkoznak. Mindig ott van az a lehetőség is, hogy ehelyett importáljuk az adatokat egy külső SQL Server Analysis Services (vagy Azure Analysis Services) modell használatával, majd a Power BI segítségével kapcsolódjunk ehhez a modellhez. Habár ez a módszer nagyobb szakértelmet igényel, ugyanakkor nagyobb rugalmasságot is biztosít. Például sokkal nagyobb mennyiségű adatot lehet importálni, és nincs korlátozva az adatok frissítésének gyakorisága.
+Az előző lista részletei csak a Power BI használatára vonatkoznak. Mindig ott van az a lehetőség is, hogy ehelyett importáljuk az adatokat egy külső SQL Server Analysis Services (vagy Azure Analysis Services) modell használatával, majd a Power BI segítségével kapcsolódjunk ehhez a modellhez. Habár ez a módszer nagyobb szakértelmet igényel, ugyanakkor nagyobb rugalmasságot is biztosít. Például sokkal nagyobb mennyiségű adatot lehet importálni, és nincs korlátozva az adatok frissítésének gyakorisága.
 
 ## <a name="implications-of-using-directquery"></a>A DirectQuery használatának következményei
 A **DirectQuery** használata negatív következményekkel is járhat, amelyeket ez a szakasz ismertet. Ezen korlátozások némelyike kis mértékben különbözhet az itt leírtaktól, a pontos használt forrástól függően. Adott esetben a témakör ezt jelzi, a jelentősen különböző forrásokat pedig külön témakörök ismertetik.  
@@ -208,7 +208,7 @@ A **DirectQuery** használatának egyéb általános következményei közé tar
 * **Legfeljebb egymillió sor adható vissza bármely lekérdezésre:** Van egy olyan korlátozás, hogy legfeljebb egymillió sor adható vissza az alapul szolgáló forrás felé irányuló minden önálló lekérdezésre. Ennek általában semmilyen gyakorlati következménye nincs, mivel a vizualizációk nem jelenítenek meg ennyi pontot. Azonban olyan esetekben teljesülhet ez a határérték, amikor a Power BI nem optimalizálja teljesen az elküldött lekérdezéseket, és valamilyen köztes eredményt kérdez le, amely meghaladja ezt a határértéket. Előfordulhat még vizualizációk létrehozása közben is, a vizualizációk végső állapotának elérése előtt. Például a Customer (Ügyfél) és a TotalSalesQuantity (Értékesítések teljes száma) belefoglalásával beteljesül a határérték, ha több mint egymillió ügyfél szerepel a forrásban, hacsak nem alkalmazunk valamilyen szűrőt.
   
   Az ekkor megjelenő hibaüzenet a következő: „A külső adatforráshoz intézett lekérdezés eredményhalmaza meghaladta a(z) „1000000” maximális sorszámot.”
-* **Nem lehet az importálásról DirectQuery módra váltani:**  Vigye figyelembe, hogy habár általánosságban át lehet váltani egy modellt a DirectQuery módból az importálási mód használatára, de ez azzal jár, hogy az összes szükséges adatot importálni kell. Ezenkívül nem lehet visszaváltani (elsősorban azért, mert a DirectQuery mód nem támogatja a funkciók készletét). A többdimenziós forrásokkal, például az SAP BW-vel használt DirectQuery-modelleket szintén nem lehet átváltani DirectQuery módból importálási módba, a külső mértékek teljesen eltérő kezelése miatt.
+* **Nem lehet az importálásról DirectQuery módra váltani:**  Habár általánosságban át lehet váltani egy modellt a DirectQuery módból az importálási mód használatára, de ez azzal jár, hogy az összes szükséges adatot importálni kell. Ezenkívül nem lehet visszaváltani (elsősorban azért, mert a DirectQuery mód nem támogatja a funkciók készletét). A többdimenziós forrásokkal, például az SAP BW-vel használt DirectQuery-modelleket szintén nem lehet átváltani DirectQuery módból importálási módba, a külső mértékek teljesen eltérő kezelése miatt.
 
 ## <a name="directquery-in-the-power-bi-service"></a>DirectQuery a Power BI szolgáltatásban
 A **Power BI Desktop** által támogatott összes forrás támogatott. Egyes források elérhetők közvetlenül a **Power BI szolgáltatásból** is. Az üzleti felhasználók például megtehetik, hogy a Power BI segítségével kapcsolódnak a Salesforce-ban található adataikhoz, és azonnal lekérnek egy irányítópultot, a **Power BI Desktop** használata nélkül.
@@ -218,15 +218,15 @@ A DirectQueryt támogató források közül csak kettő érhető el közvetlenü
 * Spark
 * Azure SQL Data Warehouse
 
-Erősen ajánlott azonban az ezzel a két forrással kapcsolatos bármilyen **DirectQuery**-műveletet a **Power BI Desktopból** elindítani. Ennek az az oka, hogy a **Power BI szolgáltatásban** az első kapcsolódáskor számos kulcskorlátozás áll fenn, vagyis habár a kezdőpont (a Power BI szolgáltatásból kezdés) könnyű volt, de a jelentés további bővítése korlátokba ütközik (például nem lehet számításokat létrehozni, vagy használni számos elemzési funkciót, vagy egyáltalán frissíteni a metaadatokat, hogy tükrözzék az alapul szolgáló sémát).   
+Ajánlott azonban az ezzel a két forrással kapcsolatos bármilyen **DirectQuery**-műveletet a **Power BI Desktopból** elindítani. Ennek az az oka, hogy a **Power BI szolgáltatásban** az első kapcsolódáskor számos kulcskorlátozás áll fenn, vagyis habár a kezdőpont (a Power BI szolgáltatásból kezdés) könnyű volt, de a jelentés további bővítése korlátokba ütközik (például nem lehet számításokat létrehozni, vagy használni számos elemzési funkciót, vagy egyáltalán frissíteni a metaadatokat, hogy tükrözzék az alapul szolgáló sémát).   
 
 ## <a name="guidance-for-using-directquery-successfully"></a>Útmutatás a DirectQuery sikeres használatához
 Ha a **DirectQuery** mellett dönt, akkor ebben a szakaszban részletes útmutatást talál a használatáról. A szakaszban található útmutatás a DirectQuery használatának jelen cikkben leírt következményeiből van levezetve.
 
 ### <a name="backend-data-source-performance"></a>Háttérrendszeri adatforrások teljesítménye
-Erősen ajánlott ellenőrizni, hogy a mintavizualizációk képesek-e időben frissülni. A kellően interaktív munkavégzéshez a frissítésnek 5 másodpercen belül meg kell történnie. Ha a vizualizációk frissítése 30 másodpercnél több időt vesz igénybe, akkor igen valószínű, hogy további problémák is fel fognak lépni a jelentés közzétételét követően, így e megoldás nem használható.
+Célszerű ellenőriznie, hogy az egyszerű vizualizációk ésszerű időn belül – interaktív funkciók esetében 5 másodpercen belül – frissíthetők-e. Ha a vizualizációk frissítése 30 másodpercnél több időt vesz igénybe, akkor igen valószínű, hogy további problémák is fel fognak lépni a jelentés közzétételét követően, így e megoldás nem használható.
 
-Ha a lekérdezések lassúak, akkor először meg kell vizsgálni az alapul szolgáló forrás felé küldött lekérdezéseket, és a lekérdezések teljesítménye megfigyelésének okát. A jelen témakör nem tartalmazza az összes lehetséges alapul szolgáló forrásra vonatkozó számos ajánlott eljárást, azonban alkalmazható a legtöbb esetben érvényes szabványos adatbázis-kezelési gyakorlatokra:
+Ha a lekérdezések lassúak, akkor először meg kell vizsgálni az alapul szolgáló forrás felé küldött lekérdezéseket, és a lekérdezések teljesítménye megfigyelésének okát. A jelen cikk nem tartalmazza az összes lehetséges alapul szolgáló forrásra vonatkozó számos ajánlott eljárást, azonban alkalmazható a legtöbb esetben érvényes szabványos adatbázis-kezelési gyakorlatokra:
 
 * Az egész számokat tartalmazó oszlopokon alapuló kapcsolatok általában jobban teljesítenek, mint az egyéb adattípusú oszlopokhoz való csatlakozások
 * Létre kell hozni a megfelelő indexeket, ami általában az oszloptárindexek használatát jelenti azon forrásokban, amelyek támogatják ezeket (például az SQL Server).
@@ -237,7 +237,7 @@ Modellek meghatározásakor fontolja meg az alábbiakat:
 
 * **Kerülje az összetett lekérdezéseket a Lekérdezésszerkesztőben.** A Lekérdezésszerkesztőben meghatározott lekérdezéseket a rendszer lefordítja önálló SQL-lekérdezésekké, amelyeket aztán belefoglal az adott tábla részére elküldött összes lekérdezés részkiválasztásába. Ha ez a lekérdezés túl összetett, az rossz hatással lehet az összes elküldött lekérdezés teljesítményére. A több lépésre vonatkozó SQL-lekérdezéseket lekérheti, ha a Lekérdezésszerkesztőben az utolsó lépésnél kiválasztja a helyi menüből a *Natív lekérdezés megtekintése* lehetőséget.
 * **Használjon egyszerű mértékeket.** Ajánlott a mértékeket egyszerű összegekre korlátozni, kezdetben legalábbis. Ha ezek megfelelően teljesítenek, később összetettebb mértékeket is megadhat, de mindegyiknek figyeljen a teljesítményére.
-* **Kerülje a számított oszlopokra mutató kapcsolatokat.** Ez különösen az olyan adatbázisok esetében igaz, ahol több oszlophoz kell kapcsolódást végrehajtani. A Power BI jelenleg nem engedi, hogy a kapcsolatok több oszlopon alapuljanak – mint a Külső kulcs/Elsődleges kulcs. A leggyakoribb megkerülő megoldás az oszlopok összefűzése egy számított oszlop használatával, majd kapcsolódás ehhez az oszlophoz. Ez a megoldás importált adatok esetében jól működik, a **DirectQuery** esetében azonban azt eredményezi, hogy a kapcsolódás egy kifejezéshez vezet, ami általában meggátolja az indexek használatát és gyenge teljesítményt eredményez. Az egyetlen valós megoldás az, ha a több oszlopot az alapul szolgáló adatbázisban vonjuk össze egyetlen oszlopba.
+* **Kerülje a számított oszlopokra mutató kapcsolatokat.** Ez olyan adatbázisok esetében igaz, ahol több oszlophoz kell kapcsolódást végrehajtani. A Power BI jelenleg nem engedi, hogy a kapcsolatok több oszlopon alapuljanak – mint a Külső kulcs/Elsődleges kulcs. A leggyakoribb megkerülő megoldás az oszlopok összefűzése egy számított oszlop használatával, majd kapcsolódás ehhez az oszlophoz. Ez a megoldás importált adatok esetében jól működik, a **DirectQuery** esetében azonban azt eredményezi, hogy a kapcsolódás egy kifejezéshez vezet, ami általában meggátolja az indexek használatát és gyenge teljesítményt eredményez. Az egyetlen valós megoldás az, ha a több oszlopot az alapul szolgáló adatbázisban vonjuk össze egyetlen oszlopba.
 * **Kerülje a uniqueidentifier típusú oszlopokra mutató kapcsolatokat.** A Power BI nem támogatja natív módon a uniqueidentifier adattípust. Ezért ha egy uniqueidentifier típusú oszlophoz adunk meg egy kapcsolatot, az egy olyan lekérdezést eredményez, amelyben egy kapcsolat egyik tagja egy Cast. Ez általában szintén gyenge teljesítményt eredményez. Amíg nem kerül sor ennek az esetnek a külön optimalizálására, az egyetlen megkerülő megoldás az lesz, ha az alapul szolgáló adatbázisban más típust adunk meg az oszlopokhoz.
 * **Rejtse el a *to* oszlopot a kapcsolatokban.** A kapcsolatok *to* oszlopát (jellemzően a *to* tábla elsődleges kulcsát) érdemes elrejteni, hogy ne jelenjen meg a mezőlistában, és így ne is legyen használható a vizualizációkban. A kapcsolatok alapjául szolgáló oszlopok valójában gyakran *rendszeroszlopok* (például helyettesítő kulcsok egy adattárházban), és az ilyen oszlopokat eleve érdemes elrejteni. Ha az oszlopnak van jelentése, akkor hozzon létre egy számított oszlopot, amely látható, és egy egyszerű kifejezést tartalmaz, amely azonos az elsődleges kulccsal. Például:
   
@@ -298,6 +298,20 @@ A fenti javaslatok mellett vegye figyelembe, hogy a következő jelentéskészí
 
 * **Fontolja meg az összegzések kikapcsolását a vizualizációkban:** A táblázatok és mátrixok alapértelmezés szerint összegeket és részösszegeket is megjelenítenek. Ezeknek az eredményeknek e lekérdezéséhez azonban sok esetben külön lekérdezést kell küldeni az alapul szolgáló adatkészlethez. Ez történik minden olyan esetben, amikor *DistinctCount* összesítést használ, illetve ha az SAP BW-re vagy az SAP HANA-ra irányuló DirectQueryt használ. Ha nincs szüksége rá, ezeket az összegzéseket ajánlatos kikapcsolni (a **Formázás** panel használatával). 
 
+### <a name="maximum-number-of-connections-option-for-directquery"></a>A DirectQuery-kapcsolatok maximális számának beállítása
+
+Minden mögöttes adatforráshoz beállíthatja a DirectQuery által megnyitott kapcsolatok maximális számát, így vezérelheti az egyes adatforrásoknak egyidejűleg küldött lekérdezések számát. 
+
+Ekkor ez lesz a DirectQuery által egyidejűleg megnyitott kapcsolatok alapértelmezett maximális száma. Ezt módosíthatja az aktuális fájlhoz a **Power BI Desktop** **Fájl > Lehetőségek és beállítások > Beállítások** területén, a bal oldali panel **Aktuális fájl** szakaszában, a **DirectQuery** lehetőség kiválasztásával. 
+
+![A DirectQuery-kapcsolatok maximális számának engedélyezése](media/desktop-directquery-about/directquery-about_05b.png)
+
+Ez a beállítás csak akkor van engedélyezve, ha legalább egy DirectQuery-forrás található az aktuális jelentésben. Az érték minden DirectQuery-forrásra vonatkozik, valamint a jelentéshez adott új DirectQuery-forrásokra is.
+
+A **kapcsolatok maximális számának** (a megadott mennyiségig történő) növelésével több lekérdezés küldését teheti lehetővé a mögöttes adatforrásnak, ami hasznos lehet, ha számos vizualizáció található egyetlen lapon, vagy sok felhasználó szeretne egyszerre hozzáférni egy jelentéshez. A kapcsolatok maximális számának elérése után a lekérdezések üzenetsorba kerülnek, amíg egy kapcsolat elérhetővé nem válik. A korlát növelése nagyobb terhelést eredményez a mögöttes forráson, a beállítás használata így nem garantál jobb teljesítményt.
+
+A jelentés közzététele után a mögöttes adatforrásnak egyidejűleg küldött lekérdezések maximális száma szintén rögzített korlátokon alapul, amely pedig a közzétett jelentés célkörnyezetétől függ. Különböző környezetek (például a Power BI, a Power BI Premium vagy a Power BI jelentéskészítő kiszolgáló) különböző korlátokat szabhatnak.
+
 ### <a name="diagnosing-performance-issues"></a>Teljesítményproblémák diagnosztizálása
 Ez a szakasz leírja, hogyan diagnosztizálhatja a teljesítményproblémákat, vagy hogyan kérhet le részletesebb információkat, amelyek lehetővé teszik a jelentések optimalizálását.
 
@@ -349,7 +363,7 @@ A nyomkövetési fájl megnyitásához hajtsa végre a következő lépéseket:
 2. Írja be a jelenleg megnyitott Power BI-munkamenethez tartozó nyomkövetési fájl elérési útját, például:
    
          C:\Users\<user>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data
-3. Nyissa meg a FlightRecorderCurrent.trc fájlt.
+3. Open FlightRecorderCurrent.trc
 
 Megjelenik az aktuális munkamenet összes eseménye. Alább láthat egy jelmagyarázattal kiegészített példát, amely eseménycsoportokat emel ki. A csoportok a következőkkel rendelkeznek:
 
@@ -367,7 +381,7 @@ A további lényeges oszlopok a következők:
 * **Duration:** A DAX- vagy SQL-lekérdezés végrehajtásához szükséges időtartam, ezredmásodpercben.
 * **Error:** Jelzi, ha hiba történt (ez esetben az esemény vörös színnel jelenik meg).
 
-Megjegyzés: A fenti képen néhány kevésbé lényeges oszlop keskenyítve lett, hogy a lényeges oszlopok jobban láthatók legyenek.
+A fenti képen néhány kevésbé lényeges oszlop keskenyítve lett, hogy a lényeges oszlopok jobban láthatók legyenek.
 
 A potenciális teljesítményproblémák diagnosztizálásához szükséges nyomkövetés rögzítése az alábbi eljárással hajtható végre:
 
@@ -396,7 +410,7 @@ A Power BI azért ezt a mintát használja, mert így a használt SQL-lekérdez�
 ![](media/desktop-directquery-about/directquery-about_12.png)
 
 ## <a name="next-steps"></a>Következő lépések
-Ez a cikk a **DirectQuery** azon tulajdonságait írja le, amelyek minden adatforrás esetében közösek. Vannak bizonyos részletek, amelyek csak az egyes forrásokra érvényesek. Tekintse meg az egyes forrásokkal foglalkozó témaköröket is:
+Ez a cikk a **DirectQuery** azon tulajdonságait írja le, amelyek minden adatforrás esetében közösek. Vannak bizonyos részletek, amelyek csak az egyes forrásokra érvényesek. Tekintse meg az egyes forrásokkal foglalkozó cikkeket is:
 
 * [DirectQuery és SAP HANA](desktop-directquery-sap-hana.md)
 * [DirectQuery és SAP BW](desktop-directquery-sap-bw.md)
