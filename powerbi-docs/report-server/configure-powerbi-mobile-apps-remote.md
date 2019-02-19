@@ -1,20 +1,20 @@
 ---
 title: iOS-es mobilalkalmazás jelentéskészítő kiszolgálóhoz való távoli hozzáférésének konfigurálása
 description: Ismerje meg, hogyan konfigurálható az iOS-es mobilalkalmazás jelentéskészítő kiszolgálóhoz való távoli hozzáférése.
-author: maggiesMSFT
+author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/15/2018
-ms.author: maggies
-ms.openlocfilehash: 6a815d3b8042a53bd7196902e59019d3a6b61220
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.author: maghan
+ms.openlocfilehash: c50f9c482ba689fe81ee22b2b52564dec3cbf1d6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293580"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324369"
 ---
 # <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>A Power BI iOS-es mobilalkalmazás jelentéskészítő kiszolgálóhoz való távoli hozzáférésének konfigurálása
 
@@ -35,10 +35,10 @@ A párokat az alábbi táblázatban láthatja.
 
 |Kulcs  |Típus  |Leírás  |
 |---------|---------|---------|
-| com.microsoft.powerbi.mobile.ServerURL | Sztring | Jelentéskészítő kiszolgáló URL-címe </br> Http/https-sel kell kezdődnie |
-| com.microsoft.powerbi.mobile.ServerUsername | Sztring | [nem kötelező] </br> A kiszolgálóhoz való csatlakozáshoz használandó felhasználónév. </br> Ha még nem létezik ilyen, az alkalmazás kérni fogja a felhasználót, hogy adja meg a kapcsolathoz a felhasználónevet.| 
-| com.microsoft.powerbi.mobile.ServerDisplayName | Sztring | [nem kötelező] </br> Az alapértelmezett érték „Report server” („Jelentéskészítő kiszolgáló”) </br> Az alkalmazásban használt rövid név a kiszolgáló azonosítására | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Logikai érték | Az alapértelmezett érték True (Igaz) </br>Ha értéke „True” (Igaz), felülbírálja a Jelentéskészítő kiszolgálónak a mobileszközön lévő definícióját. A már konfigurált meglévő kiszolgálók törölve lesznek. </br> A felülbírálás True értékre állítása azt is megakadályozza, hogy a felhasználó eltávolítsa ezt a konfigurációt. </br> Ha „False” (Hamis) értéket használ, akkor a leküldött értékek hozzáadódnak, a már meglévő beállítások pedig megmaradnak. </br> Ha az adott kiszolgálói URL-cím már konfigurálva van a mobilalkalmazásban, akkor az alkalmazás ezt a konfigurációt változatlanul hagyja. Az alkalmazás nem kéri fel a felhasználót, hogy újra hitelesítse magát ugyanazon a kiszolgálón. |
+| com.microsoft.powerbi.mobile.ServerURL | Sztring | Jelentéskészítő kiszolgáló URL-címe <br> Http/https-sel kell kezdődnie |
+| com.microsoft.powerbi.mobile.ServerUsername | Sztring | [nem kötelező] <br> A kiszolgálóhoz való csatlakozáshoz használandó felhasználónév. <br> Ha még nem létezik ilyen, az alkalmazás kérni fogja a felhasználót, hogy adja meg a kapcsolathoz a felhasználónevet.| 
+| com.microsoft.powerbi.mobile.ServerDisplayName | Sztring | [nem kötelező] <br> Az alapértelmezett érték „Report server” („Jelentéskészítő kiszolgáló”) <br> Az alkalmazásban használt rövid név a kiszolgáló azonosítására | 
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Logikai érték | Az alapértelmezett érték True (Igaz) <br>Ha értéke „True” (Igaz), felülbírálja a Jelentéskészítő kiszolgálónak a mobileszközön lévő definícióját. A már konfigurált meglévő kiszolgálók törölve lesznek. <br> A felülbírálás True értékre állítása azt is megakadályozza, hogy a felhasználó eltávolítsa ezt a konfigurációt. <br> Ha „False” (Hamis) értéket használ, akkor a leküldött értékek hozzáadódnak, a már meglévő beállítások pedig megmaradnak. <br> Ha az adott kiszolgálói URL-cím már konfigurálva van a mobilalkalmazásban, akkor az alkalmazás ezt a konfigurációt változatlanul hagyja. Az alkalmazás nem kéri fel a felhasználót, hogy újra hitelesítse magát ugyanazon a kiszolgálón. |
 
 Az alábbiakban bemutatunk egy példát arra, hogyan állítható be a konfigurálási szabályzat az Intune-ban.
 

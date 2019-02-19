@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: d768956f26256bd06516981b2bae0ab17ef3ca90
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5aac4b32fc90720af4954dff2afa61243b1f1587
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296317"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249045"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>A Power BI-hoz használt Cortana hibaelhárítása
 Ez a cikk egy sorozat része. Ha még nem tette meg, javasoljuk, hogy olvassa el az alábbi cikkeket.
@@ -79,7 +79,7 @@ Továbbra is hibákat tapasztal?  Ideje futtatnia Cortana hibaelhárító eszkö
 
    ![Válaszkártya](media/service-cortana-troubleshoot/power-bi-answer-card-new.png)
 
-   </br>
+   <br>
 
    ![A Power BI Válaszkártya lapja](media/service-cortana-troubleshoot/power-bi-answer-card2.png)
 4. Egyes esetekben amikor először ír be valamit az **Utterance** (Kifejezés) mezőbe, semmi nem történik. Tekintsen erre úgy, mint a rendszer betanítására; ezzel azt adja a hibaelhárító eszköz tudtára, hogy ideje bekapcsolni. Vágja ki és illessze be, vagy pedig újból írja be az értéket a **Utterance** (Kifejezés) mezőbe. Ebben a példában a válaszkártya neve **Cortana stores** (Cortana tárolói). Ha beilleszti vagy beírja a **Cortana stores** (Cortana tárolói) kifejezést az eszközben, az egyetlen, az **Interpretations** (Értelmezések) mezőben megjelenő eredményt ad vissza. Kattintson rá a válaszkártya Cortana ablakában való megjelenítéséhez – ebben az esetben ez a **Cortana stores** (Cortana tárolói).

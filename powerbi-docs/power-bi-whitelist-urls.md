@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
 ms.custom: seodec18
-ms.openlocfilehash: 39a62950260789b50be034c2f55808e6991764db
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 07441bd0446e37353984efe97e435ac83d2c355d
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294062"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249068"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>Engedélyezési listára helyezendő Power BI URI-címek
 
@@ -69,10 +69,10 @@ Ahhoz, hogy adatokat kérhessen le bizonyos adatforrásokból, például a OneDr
 
 | Sor | Szerep | Cél(ok) | Port(ok) |
 | --- | --- | --- | --- |
-| 1 | **Kötelező:** AppSource (belső vagy külső alkalmazások a Power BI-ban) | appsource.microsoft.com </br> *.s-microsoft.com  | TCP 443 |
+| 1 | **Kötelező:** AppSource (belső vagy külső alkalmazások a Power BI-ban) | appsource.microsoft.com <br> *.s-microsoft.com  | TCP 443 |
 | 2 | **Nem kötelező:** Bejelentkezés és adatok lekérése tartalomcsomagokhoz | A használt tartalomcsomagoktól függ | A használt tartalomcsomagoktól függ |
 | 3 | **Nem kötelező:** Fájlok importálása személyes OneDrive-ból | Lásd: [A OneDrive webhelyhez megkövetelt URL-címek és portok](https://docs.microsoft.com/onedrive/required-urls-and-ports) | N.A. |
-| 4 | **Nem kötelező:** A Power BI 60 másodpercben – bemutató videó | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
+| 4 | **Nem kötelező:** A Power BI 60 másodpercben – bemutató videó | *.doubleclick.net <br> *.ggpht.com <br> *.google.com <br> *.googlevideo.com <br> *.youtube.com <br> *.ytimg.com <br> fonts.gstatic.com | TCP 443 |
 | 5 | **Nem kötelező:** PubNub streamelési adatforrások | Lásd: [PubNub dokumentáció](https://support.pubnub.com/support/solutions/articles/14000043522) | N.A. |
 | | | |
 
@@ -91,8 +91,8 @@ A Power BI-nak szüksége van bizonyos végpontokra az egyéni vizualizációkho
 
 | Sor | Szerep | Cél(ok) | Port(ok) |
 | --- | --- | --- | --- |
-| 1 | **Kötelező:** Egyéni vizualizáció importálása a Marketplace felületéről vagy egy fájlból | *.azureedge.net </br> *.blob.core.windows.net </br> store.office.com | TCP 443 |
-| 2 | **Nem kötelező:** Bing Térképek | bing.com </br> platform.bing.com </br> *.virtualearth.net | TCP 443 |
+| 1 | **Kötelező:** Egyéni vizualizáció importálása a Marketplace felületéről vagy egy fájlból | *.azureedge.net <br> *.blob.core.windows.net <br> store.office.com | TCP 443 |
+| 2 | **Nem kötelező:** Bing Térképek | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Nem kötelező:** PowerApps | Lásd a [Szükséges szolgáltatások szakaszt](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) a PowerApps rendszerkövetelményeinek webhelyén | N.A. |
 | 4 | **Nem kötelező:** Visio | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), valamint a [SharePoint Online szolgáltatást és a OneDrive Vállalati verziót](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) bemutató Office 365-dokumentációt | N.A. |
 | | | |
@@ -103,12 +103,12 @@ A Power BI más webhelyekre is hivatkozik. Ezek közé tartoznak a dokumentáci�
 
 | Sor | Szerep | Cél(ok) | Port(ok) |
 | --- | --- | --- | --- |
-| 1 | **Nem kötelező:** Közösségi webhely | community.powerbi.com </br> oxcrx34285.i.lithium.com | TCP 443 |
-| 2 | **Nem kötelező:** Dokumentációs webhely | docs.microsoft.com </br> img-prod-cms-rt-microsoft-com.akamaized.net </br> statics-uhf-eas.akamaized.net </br> cdnssl.clicktale.net </br> ing-district.clicktale.net | TCP 443 |
+| 1 | **Nem kötelező:** Közösségi webhely | community.powerbi.com <br> oxcrx34285.i.lithium.com | TCP 443 |
+| 2 | **Nem kötelező:** Dokumentációs webhely | docs.microsoft.com <br> img-prod-cms-rt-microsoft-com.akamaized.net <br> statics-uhf-eas.akamaized.net <br> cdnssl.clicktale.net <br> ing-district.clicktale.net | TCP 443 |
 | 3 | **Nem kötelező:** Letöltési webhely (Power BI Desktophoz stb.) | download.microsoft.com | TCP 443 |
-| 4 | **Nem kötelező:** Külső átirányítások | aka.ms </br> go.microsoft.com | TCP 443 |
-| 5 | **Nem kötelező:** Ötletek visszajelzési webhelye| ideas.powerbi.com </br> powerbi.uservoice.com | TCP 443 |
+| 4 | **Nem kötelező:** Külső átirányítások | aka.ms <br> go.microsoft.com | TCP 443 |
+| 5 | **Nem kötelező:** Ötletek visszajelzési webhelye| ideas.powerbi.com <br> powerbi.uservoice.com | TCP 443 |
 | 6 | **Nem kötelező:** A Power BI webhelye – kezdőlap, további információs hivatkozások, támogatási webhely, letöltési hivatkozások, partnerek bemutatása stb. | powerbi.microsoft.com | TCP 443 |
 | 7 | **Nem kötelező:** Power BI Fejlesztői központ | dev.powerbi.com | TCP 443 |
-| 8 | **Nem kötelező:** Támogatási webhely | support.powerbi.com </br> s3.amazonaws.com </br> *.olark.com </br> logx.optimizely.com </br> mscom.demdex.net </br> tags.tiqcdn.com | TCP 443 |
+| 8 | **Nem kötelező:** Támogatási webhely | support.powerbi.com <br> s3.amazonaws.com <br> *.olark.com <br> logx.optimizely.com <br> mscom.demdex.net <br> tags.tiqcdn.com | TCP 443 |
 | | | |

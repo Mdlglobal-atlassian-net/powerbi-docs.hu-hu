@@ -11,18 +11,18 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: ff9f75b216ba64dfdb0b8244bb99016d0edd4ede
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9a2fac64959ece431471eb8d3f32961c9d592c66
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276997"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324852"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Helyszíni Power BI-átjáró kezelése
 
-Miután [telepítette a Power BI-adatátjárót](service-gateway-install.md), a követelményeknek megfelelően kezelheti azt. Ebben a témakörben elsajátíthatja, hogyan vehet fel és távolíthat el adatforrásokat és felhasználókat; indíthat újra átjárókat; és helyezhet át, állíthat vissza, vehet át és távolíthat el átjárókat. 
+Miután [telepítette a Power BI-adatátjárót](service-gateway-install.md), a követelményeknek megfelelően kezelheti azt. Ebben a témakörben elsajátíthatja, hogyan vehet fel és távolíthat el adatforrásokat és felhasználókat; indíthat újra átjárókat; és helyezhet át, állíthat vissza, vehet át és távolíthat el átjárókat.
 
-Az átjárókat a Power BI szolgáltatás **Átjárók kezelése** területén, a helyi számítógépen az átjáró-alkalmazással vagy Power Shell-szkriptekkel kezelheti. Ez a cikk a Power BI szolgáltatással foglalkozik. 
+Az átjárókat a Power BI szolgáltatás **Átjárók kezelése** területén, a helyi számítógépen az átjáró-alkalmazással vagy Power Shell-szkriptekkel kezelheti. Ez a cikk a Power BI szolgáltatással foglalkozik.
 
 Ha éppen most telepített átjárót, akkor ajánlott a következő lépésben [adatforrást hozzáadni](#add-a-data-source), majd [hozzáadni a felhasználókat](#add-users-to-a-data-source), hogy elérhessék az adatforrást.
 

@@ -1,20 +1,20 @@
 ---
 title: Lapszámozott jelentés közzététele a Power BI szolgáltatásban (előzetes verzió)
 description: Ez az oktatóanyag arról szól, hogyan tehet közzé lapszámozott jelentéseket a Power BI szolgáltatásba, a helyi számítógépről feltöltve őket.
-author: maggiesMSFT
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.author: maggies
-ms.openlocfilehash: e1d26271b557c0e2fbd20324ae6fb7630a459b03
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: d1d1f3c34483737e49129176c833be8384ade999
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216010"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324715"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Lapszámozott jelentés közzététele a Power BI szolgáltatásban (előzetes verzió)
 

@@ -9,12 +9,12 @@ ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2019
-ms.openlocfilehash: 81a40e021ecd094e5e678504f2dd60300802d909
-ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
+ms.openlocfilehash: c5915f4f2792496a1521a868180d4ffc2dca3557
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "55971671"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56248907"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Szolgáltatásnév a Power BI-jal (előzetes verzió)
 
@@ -53,7 +53,7 @@ Csak akkor használhat szolgáltatásneveket, ha a Power BI-munkadarabokat és -
 
 Vannak különbségek aközött, hogy szolgáltatásnevet vagy standard fő fiókot (Power BI Pro-licenc) használ a hitelesítéshez. Az alábbi táblázat kiemel néhány jelentős különbséget.
 
-| Függvény | Fő felhasználói fiók </br> (Power BI Pro-licenc) | Szolgáltatásnév </br> (csak az alkalmazásban használható token) |
+| Függvény | Fő felhasználói fiók <br> (Power BI Pro-licenc) | Szolgáltatásnév <br> (csak az alkalmazásban használható token) |
 |------------------------------------------------------|---------------------|-------------------|
 | Bejelentkezhet a Power BI szolgáltatásba  | Igen | Nem |
 | Az engedélyezése a Power BI felügyeleti portálján történik | Nem | Igen |

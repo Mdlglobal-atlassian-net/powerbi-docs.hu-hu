@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: cef34e7be0767ce16b84b066663318b66bcbd2d0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5bf9694c42a3a70fbc65085326a03618ae62a8f6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280554"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324921"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows-preview"></a>Adatforrásokhoz való csatlakozás Power BI-adatfolyamokkal (előzetes verzió)
 
@@ -76,6 +76,7 @@ Az **Adatbázis** kategória az alábbi, adatfolyamokhoz elérhető adatkapcsola
 * SQL Server-adatbázis
 * Sybase-adatbázis
 * Teradata-adatbázis
+* Vertica
 
 A **Power BI** kategória az alábbi, adatfolyamokhoz elérhető adatkapcsolatokat tartalmazza:
 
@@ -91,6 +92,7 @@ Az **Azure** kategória az alábbi, adatfolyamokhoz elérhető adatkapcsolatokat
 
 Az **online szolgáltatások** közé az alábbi, adatfolyamokhoz elérhető adatkapcsolatok tartoznak:
 
+* Amazon Redshift
 * Common Data Service for Apps
 * Microsoft Exchange Online
 * Salesforce-objektumok
@@ -154,12 +156,8 @@ Ez után a szkript csatlakozik a megadott adatforráshoz.
 
 Az alábbi lista azokat az összekötőket sorolja fel, amelyek jelenleg használhatók az M-szkript üres lekérdezésbe másolásával:
 
-* Amazon Redshift
 * SAP Business Warehouse 
-* SAP HANA
-* Analysis Services
 * Azure Analysis Services
-* Google Analytics
 * Adobe Analytics
 * ODBC
 * OLE DB
@@ -170,7 +168,6 @@ Az alábbi lista azokat az összekötőket sorolja fel, amelyek jelenleg haszná
 * Azure HDInsight (HDFS)
 * Hadoop-fájl HDFS
 * Informix (bétaverzió)
-* Vertica
 
 Ilyen egyszerűen csatlakozhat adatforrásokhoz Power BI-adatfolyamokkal.
 
