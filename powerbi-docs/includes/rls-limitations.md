@@ -1,3 +1,16 @@
+---
+author: mgblythe
+ms.service: powerbi
+ms.topic: include
+ms.date: 02/15/2019
+ms.author: mblythe
+ms.openlocfilehash: 44ef0aa9d436f3a8a02f9a6b831847d5c996558a
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56334004"
+---
 ## <a name="limitations"></a>Korlátozások
 
 Itt találja a sorszintű biztonság felhőmodellekben érvényes aktuális korlátozásait.
@@ -8,7 +21,7 @@ Itt találja a sorszintű biztonság felhőmodellekben érvényes aktuális korl
 
 * Csak az ETL- és a DirectQuery-kapcsolatok támogatottak. Az Analysis Services élő kapcsolatait a helyszíni modellen lehet kezelni.
 
-* A Q&A és a Cortana egyelőre nem támogatott az RLS-sel. Nem fog látni Q&A beviteli mezőt az irányítópultokhoz, ha mindegyik modellhez RLS van konfigurálva. Ennek az orvoslása szerepel a terveink között, de egyelőre nem tudjuk, mikorra fog megvalósulni.
+* Cortana egyelőre nem támogatott az RLS-sel.
 
 ## <a name="known-issues"></a>Ismert problémák
 

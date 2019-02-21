@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/07/2018
+ms.date: 02/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 48e1ddbc498e234c43bf755d3a23a2e10e4cc856
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1e997f5ac7e916f10c98756f142b9f563adea05a
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290213"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426608"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>R-vizualizációk létrehozása a Power BI szolgáltatásban
 A Power BI szolgáltatás támogatja az R-parancsfájlokkal létrehozott vizualizációk megtekintését és használatát. Az R-parancsfájlokkal létrehozott, gyakran *R-vizualizációknak* nevezett vizualizációk fejlett adatformázást és elemzéseket, például előrejelzéseket kínálnak az R gazdag elemzési és megjelenítési lehetőségeinek kihasználásával.
@@ -66,11 +66,19 @@ Amikor egy R-parancsfájl futása során hiba jelentkezik, az R-vizualizáció n
 ## <a name="licensing"></a>Licencelés
 Az R-vizualizációknak [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licencre van szükségük a jelentésekben való megjelenéshez, frissüléshez, szűréshez és keresztszűréshez. A Power BI Pro-licencekről és az ingyenes licencektől való eltéréseikről a [Power BI Pro-tartalom – mi is ez?](../service-premium.md) című cikk nyújt további információt.
 
-A Power BI ingyenes felhasználói csak a velük megosztott csempéket használhatják. További információ: [A Power BI Pro megvásárlása](../service-admin-purchasing-power-bi-pro.md).
+A Power BI ingyenes felhasználói csak a velük megosztott csempéket használhatják a prémium szintű munkaterületeken. További információ: [A Power BI Pro megvásárlása](../service-admin-purchasing-power-bi-pro.md).
 
 Az alábbi táblázat az R-vizualizációk használhatóságát részletezi licencelés alapján.
 
-![](media/service-r-visuals/r-visuals-service_6a.png)
+
+|  |R-vizualizációk létrehozása a Power BI Desktopban  | PBI-szolgáltatásjelentések létrehozása R vizualizációkkal |R-vizualizációk megtekintése jelentésekben  | R-csempék megtekintése irányítópultokban |
+|---------|---------|---------|---------|--------|
+|**Vendég** (Power BI Embedded)     |  Nem releváns|  Nem releváns       | Nem támogatott  | Nem releváns |
+|**Nem felügyelt bérlő** (nem ellenőrzött tartomány) | Támogatott | Nem támogatott |  Nem támogatott |Támogatott (B2B esetén) |
+|**Felügyelt bérlő** ingyenes licenccel    |  Támogatott       |  Nem támogatott       |    Csak a Prémium szintű kapacitás támogatja    | Támogatott |
+**Felügyelt bérlő** Pro licenccel     |   Támogatott      | Támogatott      | Támogatott    |Támogatott|
+
+
 
 ## <a name="known-limitations"></a>Ismert korlátozások
 A Power BI-beli R-vizualizációkra vonatkozik néhány korlátozás:

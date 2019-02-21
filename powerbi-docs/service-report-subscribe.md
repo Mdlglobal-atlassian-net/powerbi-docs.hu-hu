@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a7c9c72dfbb75958be3119db61fa3aa03ac89171
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 09539bfd26685ffdd9866810b566699e5cdb4a41
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430947"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408115"
 ---
 # <a name="subscribe-yourself-and-others-to-a-report-or-dashboard-in-the-power-bi-service"></a>Feliratkozás és mások feliratkoztatása egy jelentésre vagy irányítópultra a Power BI szolgáltatásban
 
@@ -60,12 +60,10 @@ Függetlenül attól, hogy irányítópultra vagy jelentésre iratkozik fel, a f
 7. Válassza a **Mentés és bezárás** lehetőséget. A feliratkozott személyek a választott gyakorisággal és időpontban e-mailt kapnak, és az irányítópult vagy jelentésoldal pillanatképét. Összesen legfeljebb 24 feliratkozást hozhat létre egy jelentéshez vagy irányítópulthoz, és mindegyikhez egyedi címzetteket, időpontokat és gyakoriságokat adhat meg.  Minden olyan, irányítópultra vagy jelentésre való feliratkozás, amelynek gyakorisága **Adatfrissítések utáni**, csak az első ütemezett frissítés után küld e-mailt.   
       
    > [!TIP]
-   > Szeretné most azonnal látni az e-mailt? Váltson ki e-mail küldést az irányítópulthoz társított vagy a jelentéshez társított adathalmazok egyikének frissítésével. Ha nincs az adathalmazra vonatkozó szerkesztési engedélye, akkor kérjen meg valakit, aki rendelkezik ilyen engedéllyel, hogy frissítse Ön helyett. A kapcsolódó adathalmazok megtekintéséhez válassza a **Kapcsolódók megtekintése** ikont ![Kapcsolódók megtekintése ikon](media/service-report-subscribe/power-bi-view-related.png), amely megnyitja a **Kapcsolódó tartalom** panelt, majd válassza a frissítés ikont ![frissítés ikon](media/service-report-subscribe/power-bi-refresh.png). 
+   > Szeretné azonnal elküldeni az előfizetésből az e-mailt, vagy igény szerint küldeni azt bármely időpontban? Válassza ki a **Futtatás most** lehetőséget az előfizetésekhez a küldeni kívánt irányítópulthoz vagy jelentéshez. Megjelenik egy értesítés arról, hogy az e-mail úton van mindenkihez az adott előfizetésben.  Ezt olyan gyakran megteheti, ahányszor csak szeretné. Ez nem számít bele az jelentésenkénti vagy irányítópultonkénti napi 24 ütemezett előfizetés-futtatási korlátba. Figyelje meg, hogy ez NEM váltja ki az alapul szolgáló adathalmaz adatfrissítését. 
    > 
    > 
    
-   ![Kapcsolódó adatkészletek](media/service-report-subscribe/power-bi-view-related-screen.png)
-
 ## <a name="email-languages"></a>E-mail-nyelvek
 
 Az e-mail és a pillanatkép a Power BI beállításaiban szereplő nyelvet használja (lásd [A Power BI által támogatott nyelvek és országok/régiók](supported-languages-countries-regions.md) témakört). Ha nincs megadva nyelv, a Power BI a böngésző területi beállításait használja. A nyelvi beállításokat megtekintheti vagy módosíthatja a fogaskerék ikon ![fogaskerék ikon](media/service-report-subscribe/power-bi-settings-icon.png) > **Beállítások > Általános > Nyelv** lehetőség választásával. 
@@ -84,6 +82,7 @@ Hogy mely feliratkozások jelennek meg, az attól függ, hogy éppen melyik munk
 A feliratkozás megszűnik, ha lejár a Pro-licence, ha az irányítópultot vagy jelentést törli a tulajdonosa, vagy ha törlik a feliratkozás létrehozásához használt felhasználói fiókot.
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+* Előfordulhat, hogy a felhasználóknak küldött előfizetési e-mailekben a több mint 25 kitűzött csempével vagy négy kitűzött élő jelentésoldallal rendelkező irányítópultok nem jelennek meg teljes egészében.  Az előfizetés az ezt meghaladó számú csempét tartalmazó irányítópultokra nem lesz blokkolva, azonban ezek nem támogatottnak fognak minősülni, ha problémákba ütközik, és úgy kell módosítani őket, hogy a támogatott tartományon belül kerüljenek.
 * Az irányítópultok e-mail-feliratkozásai esetén, ha bármely csempe sorszintű biztonsággal (RLS) rendelkezik, ezek a csempék nem jelennek meg.  A jelentésekhez kapcsolódó e-mail-feliratkozások esetén, ha az adatkészlet sorszintű biztonságot használ, nem hozható létre feliratkozás.
 * A jelentésoldalakra való feliratkozás a jelentésoldal nevéhez kapcsolódik. Ha feliratkozik egy jelentésoldalra, majd átnevezi azt, akkor újra létre kell hoznia a feliratkozást.
 * Előfordulhat, hogy a szervezet konfigurált néhány beállítást az Azure Active Directory-ban, amelyek korlátozhatják a Power BI-ban az e-mail-előfizetések használatát.  A korlátozások körébe a teljesség igénye nélkül beletartoznak az erőforrások elérésekor a többtényezős hitelesítés és az IP-címtartomány korlátozásai.

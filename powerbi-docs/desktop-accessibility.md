@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d0c6222c4b10307985ad039c3b391c8648614979
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18872e65154f70e882c4f6f60c04420b17038d32
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280056"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249114"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Akadálymentesség a Power BI Desktop-jelentésekben
 A Power BI rendelkezik olyan funkciókkal, amelyek lehetővé teszik a fogyatékkal élők számára, hogy könnyedén használják és kezeljék a Power BI-jelentéseket. A funkciók közé tartozik az a lehetőség, hogy a jelentések billentyűzettel vagy képernyőolvasóval is használhatók legyenek, az oldalak objektumai léptetéssel emelhetők ki, és a jelölők használata átgondolt a vizualizációkban.
@@ -141,6 +141,11 @@ Az akadálymentesség javítására való folyamatos törekvésünk jegyében a 
 ### <a name="pane-navigation"></a>Navigáció a panelen
 | Cél           | Billentyűparancs                |
 | :------------------- | :------------------- |
+| Többszörös kijelölés | Ctrl + szóköz |
+| Egyetlen táblázat összecsukása | Balra nyíl |
+| Egyetlen táblázat kibontása | Jobbra nyíl |
+| Az összes tábla összecsukása | Alt + Shift + 1 |
+| Az összes tábla kibontása | Alt + Shift + 9 |
 | Helyi menü megnyitása | <ul><li>Windows-billentyűzet: Windows helyi menü billentyű + F10.  A Windows helyi menü billentyű a bal oldali Alt billentyű és a Balra nyílbillentyű között van</li><li>Más billentyűzeten: Shift + F10</li></ul> |
 
 ### <a name="slicer"></a>Szeletelő

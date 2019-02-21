@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 02/12/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 35d5a6f9911afea7b91b37299225c191cd4d7ac9
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 0118c9b7bb1d00daf1b6baeb7638916b49d8af49
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794852"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426769"
 ---
 # <a name="visualization-types-in-power-bi"></a>Vizualizációtípusok a Power BI-ban
 Vizualizációk találhatók jelentésekben, irányítópultokon, alkalmazásokban és a Q&A-ban is. A vizualizációk egyes típusai a Power BI részei, de vannak *egyéni vizualizációk* is. Az egyéni vizualizációk a Power BI-on kívül készülnek úgy, hogy a *jelentések tervezői* felvehessék azokat a Power BI-jelentésekbe, -irányítópultokba és -alkalmazásokba. 
@@ -98,10 +98,12 @@ A mérőműszer-diagram remek választás:
 - egyetlen mérték állapotának mutatására
 - gyorsan áttekinthető és megérthető információk megjelenítésére
 
-<!-- ### Key influencers chart
-![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
+ ### <a name="key-influencers-chart"></a>Főbb befolyásolók diagramja
+![főbb befolyásoló](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencer.png)
 
-A key influencer chart displays the major contributors to a selected result or value.  -->
+A főbb befolyásolók diagramján a kiválasztott eredmény vagy érték főbb közreműködői láthatóak.
+
+A főbb befolyásolók kiválóan megmutatja, hogy milyen tényezők befolyásolják a kulcsfontosságú metrikákat. Például azt, hogy *mi befolyásolja az ügyfeleket a második megrendelés leadásánál, *vagy* miért volt olyan magas az értékesítés tavaly júniusban*. 
 
 ### <a name="kpis"></a>KPI-k
 ![kpi](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)

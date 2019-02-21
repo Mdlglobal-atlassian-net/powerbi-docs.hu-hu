@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 02/14/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f1ddcee1e39f8704eda7cc94cffb27c1a8b6b75f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c45900d98dfa25dd991ae0cee1f165a41964c51e
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290337"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324768"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Az SAP BW Connector használata a Power BI Desktopban
 A Power BI Desktopban hozzáférhet az **SAP Business Warehouse (BW)** adataihoz.
@@ -218,6 +218,29 @@ Ez a szakasz hibaelhárítási forgatókönyveket (és megoldásokat) mutat be a
    * BAPI_IOBJ_GETDETAIL
 
    A probléma megoldásához győződjön meg arról, hogy a felhasználó hozzáfér a különböző *MDPROVIDER*-modulokhoz, valamint a *BAPI_IOBJ_GETDETAIL* függvénymodulhoz. Az ilyen vagy hasonló problémák további hibaelhárításához válassza a *Nyomkövetés engedélyezése* lehetőséget a Power BI Desktop *Beállításainak* *Diagnosztika* ablakában. Próbáljon meg aktív nyomkövetés mellett adatokat lekérni az SAP BW-ből, és további részletekért vizsgálja meg a nyomkövetési fájlt.
+
+## <a name="sap-bw-connection-support"></a>Az SAP BW-kapcsolatok támogatása
+
+Az alábbi táblázat az SAP BW aktuális támogatását ismerteti.
+
+
+
+|Termék  |Mód  |Hitelesítés  |Összekötő  |SNC-könyvtár  |Támogatott  |
+|---------|---------|---------|---------|---------|---------|
+|Power BI Desktop     |Bármelyik         | Feléhasználó/jelszó  | Alkalmazáskiszolgáló | N.A.  | Igen  |
+|Power BI Desktop     |Bármelyik         | Windows          | Alkalmazáskiszolgáló | sapcrypto + gsskrb5/gx64krb5  | Igen  |
+|Power BI Desktop     |Bármelyik         | Windows megszemélyesítésen keresztül | Alkalmazáskiszolgáló | sapcrypto + gsskrb5/gx64krb5  | Igen  |
+|Power BI Desktop     |Bármelyik         | Feléhasználó/jelszó        | Üzenetkiszolgáló | N.A.  | Igen  |
+|Power BI Desktop     |Bármelyik         | Windows        | Üzenetkiszolgáló | sapcrypto + gsskrb5/gx64krb5  | Igen  |
+|Power BI Desktop     |Bármelyik         | Windows megszemélyesítésen keresztül | Üzenetkiszolgáló | sapcrypto + gsskrb5/gx64krb5  | Igen  |
+|Power BI-átjáró     |Importálás      | A Power BI Desktoppal egyező |         |   |   |
+|Power BI-átjáró     |DirectQuery | Feléhasználó/jelszó        | Alkalmazáskiszolgáló | N.A.  | Igen  |
+|Power BI-átjáró     |DirectQuery | Windows megszemélyesítésen keresztül (rögzített felhasználó, nincs SSO) | Alkalmazáskiszolgáló | sapcrypto + gsskrb5/gx64krb5  | Igen  |
+|Power BI-átjáró     |DirectQuery | SSO használata Kerberoson keresztül a DirectQuery-lekérdezések választásakor | Alkalmazáskiszolgáló | *csak a következővel:* gsskrb5/gx64krb5   | Igen  |
+|Power BI-átjáró     |DirectQuery | Feléhasználó/jelszó        | Üzenetkiszolgáló | N.A.  | Igen  |
+|Power BI-átjáró     |DirectQuery | Windows megszemélyesítésen keresztül (rögzített felhasználó, nincs SSO) | Üzenetkiszolgáló | sapcrypto + gsskrb5/gx64krb5  | Igen  |
+|Power BI-átjáró     |DirectQuery | SSO használata Kerberoson keresztül a DirectQuery-lekérdezések választásakor | Üzenetkiszolgáló | sapcrypto + gsskrb5/gx64krb5  | Nem  |
+
 
 
 ## <a name="next-steps"></a>Következő lépések

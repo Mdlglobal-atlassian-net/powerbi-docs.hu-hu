@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: 280f60d0ae60a445d94a640af974a2624c73bb83
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 097095cda1e0ffea4f43059351f22638c502e8b4
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430004"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408069"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Útmutató további vásárlásos Power BI-vizualizációkhoz
 
@@ -22,6 +22,10 @@ Mostanáig a **piactér (AppSource)** csak ingyenes Power BI-vizualizációkat f
 
 > [!Note]
 > A vizualizáció minősítéséhez az nem kapcsolódhat külső szolgáltatásokhoz és erőforrásokhoz.
+
+> [!Note]
+> Az összes szabad vizualizáció megőrizheti ugyanazokat a korábban kínált ingyenes funkciókat. A régi ingyenes funkciók mellett felvehet választható, speciális fizetett funkciókat. Javasoljuk, hogy a speciális funkciókkal rendelkező IAP-vizualizációkat új vizualizációkként vegye fel, és ne a régi ingyeneseket frissítse.
+
 
 ## <a name="whats-changing-in-the-submission-process"></a>Mi változik a beküldési folyamatban?
 

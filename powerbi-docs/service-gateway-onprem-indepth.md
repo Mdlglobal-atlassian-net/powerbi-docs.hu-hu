@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef4f9de49619a26e17fbdf2b0df47bc56ba23f4d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18458820f98bcea32eb5288389d57808646d462c
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279320"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325014"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Helyszíni adatátjáró – részletesen
 Cége felhasználói hozzáférhetnek a helyszíni adatokhoz (amelyekhez már van hozzáférési jogosultságuk), de ahhoz, hogy ezek a felhasználók az Ön helyszíni adatforrásához kapcsolódjanak, helyszíni adatátjáró telepítésére és konfigurálására van szükség. Az átjáró gyors és biztonságos háttérbeli kommunikációt biztosít a felhőbeli felhasználótól az Ön helyszíni adatforrásáig és vissza a felhő felé.
@@ -90,7 +90,7 @@ Az Azure AD Connect használata biztosítja, hogy egyszerű felhasználónév eg
 > 
 
 ## <a name="now-this-is-where-the-gateway-comes-in"></a>Itt jut szerephez az átjáró
-Az átjáró hídként szolgál a felhő és a helyszíni kiszolgáló között. A felhő és az átjáró közötti adatátvitel biztonságát az [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview) garantálja. A Service Bus az átjáró egy kimenő kapcsolatán keresztül biztonságos csatornát hoz létre a felhő és a helyszíni kiszolgáló között.  A helyszíni tűzfalon egy kimenő kapcsolatot sem kell megnyitnia.
+Az átjáró hídként szolgál a felhő és a helyszíni kiszolgáló között. A felhő és az átjáró közötti adatátvitel biztonságát az [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview) garantálja. A Service Bus az átjáró egy kimenő kapcsolatán keresztül biztonságos csatornát hoz létre a felhő és a helyszíni kiszolgáló között.  A helyszíni tűzfalon egy kimenő kapcsolatot sem kell megnyitnia. A Power BI kezeli a Service Bust az Ön számára, tehát nincsenek további költségek, sem konfigurációs lépések, amelyeket végre kellene hajtani.
 
 Analysis Services-adatforrás használata esetén a az átjárót olyan számítógépre kell telepítenie, amely az Analysis Services-kiszolgálóval közös erdőbe/tartományba van beléptetve.
 

@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: bdb9e2dcf5e8e22aaaa3bf35035b746777a387b9
-ms.sourcegitcommit: 1574ecba7530e6e0ee97235251a3138fb0e4789b
+ms.openlocfilehash: 93181a7ecaad0ec5bcd837f55ad7863fae53772c
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40126537"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249137"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Diagnosztikai naplózás a Power BI Embedded szolgáltatáshoz az Azure-ban
 
@@ -114,8 +114,8 @@ A Motor kategória választása esetén az erőforrás az alábbi eseményeket n
 |    Naplózás kijelentkezés    |    A nyomkövetés kezdetétől minden motorkapcsolat bontása eseményt naplóz.    |
 |    Hiba    |    A nyomkövetés kezdetétől minden motorhiba eseményt naplóz.    |
 
-</br>
-</br>
+<br>
+<br>
 
 | Tulajdonság neve | Vertipaq-lekérdezés vége példa | Tulajdonságleírás |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|

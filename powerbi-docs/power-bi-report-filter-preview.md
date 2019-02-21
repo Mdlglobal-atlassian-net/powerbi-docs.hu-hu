@@ -7,21 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 02/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 13ab7ccf690c834168da8f9c6dcb0932178651ca
-ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
+ms.openlocfilehash: b130ccbe6b3fe6fa09b9a4c4efe388f79350c500
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55482706"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298822"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>A Power BI-jelentésekben elérhető új szűrési felület (előzetes verzió)
 
 Ez a cikk az új szűrési felületet ismerteti: A Power BI szűrői új funkciókat és új megjelenést kapnak. Amikor jelentéseket tervez a Power BI Desktopban vagy a Power BI szolgáltatásban, úgy alakíthatja ki a Szűrők panelt, hogy megjelenésében és viselkedésében is illeszkedjen a teljes jelentéshez. Az új felületen a régi Szűrők panel a szűrők szerkesztésére szolgál, a felhasználók viszont egyedül az új szűrőpanelt látják majd. 
  
 ![Alapértelmezett nézet (további testreszabás nélkül)](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
+
+> [!NOTE]
+> Az új szűrési felület előzetes verzióban érhető el. Az új buildek felülbírálhatják a már beállított formázást.
 
 Jelentések tervezése során a következőket érheti el az új szűrőkkel:
 
@@ -83,6 +86,7 @@ A felületet jelentős újdonsága, hogy a szűrőpanel már a jelentés megjele
 - Háttér áttetszősége
 - Szűrőpanel szegélyének be- vagy kikapcsolása
 - Szűrőpanel szegélyének színe
+- A szűrő panel címe és fejlécének betűkészlete, színe és szövegmérete
 
 Ezeket az elemeket szűrőkártyákhoz is formázhatja attól függően, hogy alkalmazva lettek (valamire beállítva), vagy elérhetők (a tartalmuk törölve van): 
 
@@ -90,6 +94,8 @@ Ezeket az elemeket szűrőkártyákhoz is formázhatja attól függően, hogy al
 - Háttér áttetszősége
 - Szegély: be- vagy kikapcsolva
 - Szegély színe
+- Betűtípus, szín és szövegméret
+- Beviteli mező színe
 
 ### <a name="set-the-format-for-the-filters-pane-and-cards"></a>A Szűrők panel és a kártyák formátumának beállítása
 
@@ -100,11 +106,11 @@ Ezeket az elemeket szűrőkártyákhoz is formázhatja attól függően, hogy al
 
 1. Bontsa ki a **Szűrő panelt**, és állítsa be a háttér, az ikonok és a bal szegély színét a jelentésoldalhoz illően.
 
-    ![A szűrőpanel kibontása](media/power-bi-report-filter-preview/power-bi-filter-format-pane.png)
+    ![A szűrőpanel kibontása](media/power-bi-report-filter-preview/power-bi-filter-format-pane-font.png)
 
 1. Bontsa ki a **Szűrőkártyák** elemet, és állítsa be az **Elérhető** és az **Alkalmazott** színt és szegélyt. Ha az elérhető és az alkalmazott kártyákhoz más színt ad meg, akkor nyilvánvaló lesz, hogy mely szűrők lettek alkalmazva. 
   
-    ![A Szűrőkártyák elem kibontása](media/power-bi-report-filter-preview/power-bi-filter-format-card.png)
+    ![A Szűrőkártyák elem kibontása](media/power-bi-report-filter-preview/power-bi-filter-format-card-font.png)
 
 ## <a name="view-filters-for-a-visual-in-reading-mode"></a>Vizualizáció szűrőinek megtekintése olvasási módban
 

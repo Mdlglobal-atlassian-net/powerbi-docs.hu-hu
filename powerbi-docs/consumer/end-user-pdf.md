@@ -8,15 +8,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: c18257f1f4e4e3f325c8d4d895e3b6abf88e900c
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 1aaa57006b9a5aac2b077d3326ed6a39e6a4206d
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794994"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298868"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Jelentések exportálása a Power BI-ból PDF-be
 A Power BI segítségével közzéteheti jelentését PDF formátumban, és könnyedén létrehozhat egy dokumentumot a Power BI-jelentés alapján. **PDF-fájlba történő exportáláskor** a Power BI-jelentés minden egyes oldalából a PDF dokumentum egy-egy oldala lesz.
@@ -28,6 +28,10 @@ A Power BI szolgáltatásban jelöljön ki egy jelentést a vásznon való megje
 
     ![Válassza a Fájl lehetőséget a menüsávon, majd az Exportálás PDF-be elemre mutató nyilat](media/end-user-pdf/power-bi-export-pdf.png)
 
+    Megjelenik egy előugró ablak, ahol kiválaszthatja az **Aktuális nézet** vagy az **Alapértelmezett nézet** lehetőséget.  Az **Aktuális nézet** az aktuális állapotban exportálja a jelentést, amely tartalmazza a szeletelő és a szűrő értékein végzett aktív módosításokat.  A legtöbb felhasználó ezt a beállítást választja.  Azt is megteheti, hogy az **Alapértelmezett nézet** lehetőség választásával az eredeti állapotában (az azt megosztó szerzőként) exportálja a jelentést, így az eredeti állapoton végzett semmilyen változtatás sem fog tükröződni.
+    
+    Emellett egy jelölőnégyzetet is bejelölhet, amellyel kiválaszthatja, hogy exportálja-e vagy sem a jelentés rejtett lapjait.  Egyszerűen bejelölje be ezt a négyzetet, ha csak a böngészőben az Ön számára látható jelentéslapokat szeretné exportálni.  Ha inkább szeretné belefoglalni az exportba az összes rejtett lapot is, akkor hagyja bejelöletlenül.  Ha a jelölőnégyzet ki van szürkítve, akkor nincsnek rejtett lapok a jelentésben.  Miután elvégezte a kijelöléseket, kattintson az Exportálás gombra a folytatáshoz.
+    
     Megjelenik egy előrehaladást jelző sáv a jobb felső sarokban. Az exportálás igénybe vehet néhány percet, de a jelentés exportálása közben Ön tovább dolgozhat a Power BI-ban.
 
     ![Exportálás előrehaladása üzenet](media/end-user-pdf/power-bi-export-message.png)
@@ -43,8 +47,6 @@ Ennyi az egész! Letöltheti a fájlt, és megnyithatja bármely PDF-megtekintő
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 Az **Exportálás PDF-be** funkció használatakor figyelembe kell vennie néhány megfontolást és korlátozást.
-
-- A munkamenet közbeni interaktivitás egyes formái, mint például a kiemelés, a szűrés és a részletezés, jelenleg még nem támogatottak a PDF-fájlba történő exportálás során. Az exportált PDF-fájl az eredeti vizualizációkat a jelentésben mentett módon mutatja be. Ha szűrőket és szeletelőket alkalmazott, és az exportban is meg szeretné őrizni őket, mentse a jelentést, és az után exportáljon.
 
 * Az **R vizualizációk** jelenleg nem támogatottak. A PDF-fájlban ezek a vizualizációk lehetnek üresek, és megjeleníthetnek egy hibaüzenetet.  
 

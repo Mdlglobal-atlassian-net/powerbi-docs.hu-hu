@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f7e28ce1f72a58fe2bb52103b79fa0106a0024ca
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: 868c1226b70bd12762c20c3af5b0ee1ff59857e5
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086471"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408184"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -172,11 +172,11 @@ Az alábbi képen az adatok exportálásának lehetősége látható egy csempé
 > [!NOTE]
 > Az **Adatok exportálása** lehetőség letiltásával azt is megakadályozhatja, hogy a felhasználók az **Elemzés az Excelben** funkciót vagy a Power BI szolgáltatás élő kapcsolatát használják.
 
-### <a name="export-reports-as-powerpoint-presentations"></a>Jelentések exportálása PowerPoint-bemutatóként
+### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Jelentések exportálása PowerPoint-bemutatóként vagy PDF-dokumentumként
 
-A munkahelyi felhasználók PowerPoint-fájlként exportálhatják a Power BI-jelentéseket. [További információ](consumer/end-user-powerpoint.md)
+A szervezeten belüli felhasználók PowerPoint-fájlként és PDF-dokumentumként is exportálhatnak Power BI-jelentéseket. [További információ](consumer/end-user-powerpoint.md)
 
-Az alábbi képen látható a **Fájl** menü egy jelentéshez, ha a **Jelentések exportálása PowerPoint-bemutatóként** beállítás engedélyezve van.
+Az alábbi képen látható a **Fájl** menü egy jelentéshez, ha a **Jelentések exportálása PowerPoint-bemutatóként vagy PDF-fájlként** beállítás engedélyezve van.
 
 ![Jelentések exportálása PowerPoint-bemutatóként](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
@@ -202,9 +202,9 @@ Az alábbi képen a **Teljes saját szervezet** lehetőség látható a tartalom
 
 ![Tartalomcsomag közzététele a szervezet számára](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### <a name="create-template-organizational-content-packs-and-apps"></a>Szervezeti tartalomcsomagok és alkalmazások sablonjainak létrehozása
+### <a name="create-template-apps"></a>Sablonalkalmazások létrehozása
 
-A munkahelyi felhasználók tartalomcsomag-sablonokat készíthetnek, amelyek a Power BI Desktop adatkészleteit használják. [További információ](template-content-pack-authoring.md)
+A munkahelyi felhasználók sablonalkalmazásokat készíthetnek, amelyek a Power BI Desktop adathalmazait használják. További információ a [sablonalkalmazásokról](template-content-pack-authoring.md)
 
 ### <a name="push-apps-to-end-users"></a>Alkalmazások küldése a végfelhasználóknak
 
@@ -301,6 +301,18 @@ A vállalati felhasználók létrehozhatnak és használhatnak adatfolyamokat. T
 
 > [!NOTE]
 > Ez a beállítás az egész munkahelyre vonatkozik, és nem lehet korlátozni meghatározott csoportokra.
+
+## <a name="template-apps-settings-preview"></a>Sablonalkalmazások beállításai (előzetes verzió)
+
+A sablonalkalmazásokat két beállítás szabályozza. 
+
+![A sablonalkalmazások beállításai a Power BI felügyeleti portálon](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
+
+Az első beállítás, a **Sablonalkalmazások létrehozása** azt szabályozza, hogy a szervezetnél ki hozhat létre sablonalkalmazásokat. A sablonalkalmazás készítői ezt követően terjeszthetik az alkalmazásokat a szervezeten kívüli ügyfelek számára az AppSource-al vagy más terjesztési módszerekkel.
+
+![Power BI felügyeleti portál, Sablonalkalmazások létrehozása beállítás](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
+
+A második beállítással, a **Sablonalkalmazások telepítése** beállítással Ön szabályozza, hogy a cégnél ki tölthet le és telepíthet sablonalkalmazásokat az AppSource-ból vagy más forrásból
 
 ## <a name="capacity-settings"></a>Kapacitásbeállítások
 

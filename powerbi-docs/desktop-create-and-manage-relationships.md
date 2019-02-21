@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: f8b9f775b43f2c1b26b7ef56c5bb0985fc3f7ca2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d4f1936f02edf4ece60b4761d4e541801384a5d2
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292052"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249344"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Kapcsolatok létrehozása és kezelése a Power BI Desktopban
 Amikor több táblázatot importál, valószínűleg az összes táblázatból származó adattal fog elemzést végezni. A táblázatok közötti kapcsolatok szükségesek az eredmények pontos kiszámításához és a jelentésekben a helyes információk megjelenítéséhez. A Power BI Desktop megkönnyíti ezen kapcsolatok létrehozását. Valójában a legtöbb esetben semmit sem kell tennie, az Automatikus észlelés funkció elvégezheti Ön helyett. Bizonyos esetekben azonban szükség lehet a kapcsolatok saját kezű létrehozására, vagy egy kapcsolat módosításaira. Mindkét esetben fontos megérteni a Power BI Desktopban lévő kapcsolatokat és azok létrehozásának és szerkesztésének módját.
@@ -58,6 +58,8 @@ A kapcsolatok létrehozásakor vagy szerkesztésekor további beállításokat i
 **Több az egyhez (\*:1)** – Ez a leggyakoribb, alapértelmezett típus. Ez azt jelenti, hogy az egyik táblázat oszlopában egy érték több példánya szerepelhet, és a másik kapcsolódó táblázatban, másnéven a keresési táblázatban az érték egy példánya szerepel.
 
 **Egy az egyhez (1:1)** – Ez azt jelenti, hogy az egyik táblázat oszlopában egy adott érték egy példánya szerepelhet, és a másik kapcsolódó táblázatban az érték egy példánya szerepel.
+
+**Több a többhöz kapcsolatok**: Az összetett modellekkel a táblák között több a többhöz kapcsolatok hozhatók létre. Ez a megközelítés kiküszöböli, hogy egyedi értékeket kelljen használni a táblákban. Korábbi áthidaló megoldásokat is szükségtelenné tesz, például új táblák bevezetését a kapcsolatok létrehozásához. Részletesebb információkért lásd: [Kapcsolatok sok a sokhoz számossággal](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
 
 A számosság módosításának idejéről további tudnivalókat a jelen cikk későbbi, „További beállítások ismertetése” című szakaszában talál.
 

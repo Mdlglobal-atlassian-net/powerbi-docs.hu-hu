@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 02/14/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 509eebfdf2d96a2cc77d5c9413c664a10309ab9c
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: fda2732ff33c324377a73ceb93480fbbcdd404bd
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216429"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325040"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Elemzések megosztása és történetek felépítése a Power BI könyvjelzőivel 
 A Power BI-ban a **könyvjelzők** használatával rögzítheti az egyes jelentésoldalak aktuális nézetkonfigurációját, beleértve a szűréseket és a vizualizációk állapotát, hogy később egyszerűen a mentett könyvjelzőre kattintva visszaállíthassa az adott állapotot. 
@@ -61,7 +61,7 @@ A **Power BI Desktop** létrehoz egy könyvjelzőt, amelynek egy általános nev
 
 Miután létrehozott egy könyvjelzőt, a megjelenítéséhez egyszerűen kattintson rá a **Könyvjelzők** panelen. 
 
-Azt is megadhatja, hogy az egyes könyvjelzők alkalmazzák-e az *adattulajdonságokat*, például a szűrőket és a szeletelőket, valamint a *megjelenítési* tulajdonságokat, például a reflektorfényt és annak láthatóságát, illetve a könyvjelző hozzáadásakor látható oldalt bemutató oldalmódosításokat. Ezek a funkciók akkor lehetnek hasznosak, ha könyvjelzőkkel szeretne váltani a vizualizációtípusok között – ekkor ugyanis célszerű kikapcsolni az adattulajdonságokat, így a szűrők nem állnak alaphelyzetbe, ha a felhasználók módosítják a vizualizációtípusokat. 
+Azt is megadhatja, hogy az egyes könyvjelzők alkalmazzák-e az *adattulajdonságokat*, például a szűrőket és a szeletelőket, valamint a *megjelenítési* tulajdonságokat, például a reflektorfényt és annak láthatóságát, illetve a könyvjelző hozzáadásakor látható oldalt bemutató oldalmódosításokat. Ezek a funkciók akkor lehetnek hasznosak, ha könyvjelzőkkel vált a jelentésnézetek és a kiválasztott vizualizációk között – ekkor ugyanis célszerű kikapcsolni az adattulajdonságokat, így a szűrők nem állnak alaphelyzetbe, ha a felhasználók nézetet váltanak egy könyvjelző kiválasztásával. 
 
 A módosítások elvégzéséhez kattintson a könyvjelző neve melletti három pontra (ahogyan azt az előző képen láthatja), majd jelölje be vagy törölje a jelölést az *Adatok*, *Megjelenítés*, és egyéb vezérlők jelölőnégyzeteiből. 
 

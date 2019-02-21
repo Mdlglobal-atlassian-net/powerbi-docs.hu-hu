@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a82bbc3e4b31dca0a304c1d3f64d4bc63e4e7fb3
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: d7ad1cc4ffb339aeb1a64cd28274fde4f8ef6af6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086770"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325151"
 ---
 # <a name="key-influencers-visualization"></a>Főbb befolyásolók vizualizáció
 A főbb befolyásolók vizualizáció segít megérteni azokat a tényezőket, amelyek az érdeklődésére számot tartó metrikát alakítják. Elemzi az adatokat, rangsorolja a lényeges tényezőket, és megjeleníti őket főbb befolyásolóként. Érdekelheti például, hogy mi befolyásolja az alkalmazotti állomány változását (az elvándorlást). Az egyik tényező lehet a munkaszerződés hossza, a másik pedig az alkalmazottak kora. 
@@ -167,11 +167,11 @@ Eben a csoportban 74,3% adott alacsony értékelést. Az átlagos ügyfél 11,7%
  
 A Főbb befolyásolók vizualizációnak jelenleg az előzetes verziója érhető el, és van néhány korlátozás, melyekről a felhasználóknak tudniuk kell. Jelenleg nem elérhető funkciók többek között: 
 - Metrikák elemzése, amelyek összesítések/mértékek 
-- A vizualizáció használata beágyazottban 
-- A vizualizáció használata Power BI-mobilalkalmazásban 
+- A vizualizáció használata a Power BI Embeddedben
+- A vizualizáció használata a Power BI-mobilalkalmazásokban
 - RLS-támogatás 
 - Közvetlen lekérdezés támogatása 
-- Élő lekérdezés támogatása 
+- Az élő kapcsolat támogatása 
  
 **Egy hibaüzenetet látok, miszerint nem találhatók befolyásolók/szegmensek. Ez miért van?**  
 
@@ -247,15 +247,16 @@ Ennek az oka az, hogy a vizualizáció az adatpontok számát is figyelembe vesz
 
 **Hogyan történik a főbb befolyásolók kiszámítása?**
 
-A színfalak mögött a mesterséges intelligencia logisztikai regressziót futtat a főbb befolyásolók kiszámításához. A logisztikai regresszió egy statisztikai modell, amely összehasonlítja a különböző csoportokat egymással. Ha azt keressük, hogy mitől függnek az alacsony értékelések, a logisztikai regressziónak meg kell vizsgálnia, hogy az alacsony pontszámot adó ügyfelek miben különböznek azoktól, akik magas pontszámot adtak. Ha több kategóriával is rendelkezünk (magas pontszám, semleges pontszám, alacsony pontszám), akkor meg kell vizsgálnunk, hogy miben különböznek azok az ügyfelek, akik alacsony pontszámot adtak azoktól, akik nem adtak alacsony pontszámot (miben különböznek azoktól, akik magas VAGY semleges értékelést adtak). 
+A színfalak mögött a mesterséges intelligencia az [ML.NET-et](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) használja logisztikai regresszió futtatásához a főbb befolyásolók kiszámításához. A logisztikai regresszió egy statisztikai modell, amely összehasonlítja a különböző csoportokat egymással. Ha azt keressük, hogy mitől függnek az alacsony értékelések, a logisztikai regressziónak meg kell vizsgálnia, hogy az alacsony pontszámot adó ügyfelek miben különböznek azoktól, akik magas pontszámot adtak. Ha több kategóriával is rendelkezünk (magas pontszám, semleges pontszám, alacsony pontszám), akkor meg kell vizsgálnunk, hogy miben különböznek azok az ügyfelek, akik alacsony pontszámot adtak azoktól, akik nem adtak alacsony pontszámot (miben különböznek azoktól, akik magas VAGY semleges értékelést adtak). 
  
 A logisztikai regresszió mintákat keres az adatokban, megvizsgálva, hogy miben különbözhetnek azok az ügyfelek, akik alacsony értékelést adtak azoktól, akik magas értékelést adtak. Előfordulhat például, hogy azok az ügyfelek, akik több támogatási jeggyel rendelkeznek magasabb %-ban adnak alacsony értékeléseket, mint azok, akiknek kevés támogatási jegyük, van vagy egyáltalán nincs.
  
 A logisztikai regresszió azt is figyelembe veszi, hány adatpont található. Ha például az adminisztrátori szerepkörű ügyfelek arányosan több negatív pontszámot adnak, de csak néhány adminisztrátor van, ez nem fog befolyásoló tényezőnek minősülni. Ez azért van, mert nincs elég adatpont, amiből mintára lehetnek következtetni. Egy statisztikai tesztet (Wald tesztet) használunk annak meghatározására, hogy a tényező befolyásoló tényező-e. A vizualizáció 0,05-os p értéket használ a küszöbérték meghatározására. 
- 
+
+
 **Hogyan történik a szegmensek kiszámítása?**
 
-A színfalak mögött az AI-vizualizáció egy döntési fát alkalmaz az érdekes alcsoportok megkeresésére. A döntési fa célja az adatpontok egy olyan alcsoportjának a megtalálása, amelyben viszonylag nagy arányban fordul elő a keresett metrika (például az alacsony értékelést adó ügyfelek). 
+A színfalak mögött az AI-vizualizáció az [ML.NET-et](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) használja, hogy egy döntési fa alkalmazásával megkeresse az érdekes alcsoportokat. A döntési fa célja az adatpontok egy olyan alcsoportjának a megtalálása, amelyben viszonylag nagy arányban fordul elő a keresett metrika (például az alacsony értékelést adó ügyfelek). 
 
 A döntési fa megvizsgálja mindegyik magyarázó tényezőt, és megpróbálja megindokolni, melyik tényező adja a legjobb „elágazást”. Ha például úgy szűrjük az adatokat, hogy azok csak nagyvállalati ügyfeleket tartalmazzanak, elkülöníti ez azokat az ügyfeleket, akik magas értékelést adtak azoktól, akik alacsonyat? Vagy esetleg jobb lesz az adatokat úgy szűrni, hogy csak a biztonsággal kapcsolatos megjegyzést írt ügyfeleket foglalják magukba? 
 

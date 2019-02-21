@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ee0063d5266c663079a9801777ee2c900957c52f
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: e77f4d6fe1963b3f229ef7f477fb86b7c5c26713
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234301"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426677"
 ---
 # <a name="visualization-types-in-power-bi"></a>Vizualizációtípusok a Power BI-ban
 ## <a name="power-bi-visualizations"></a>Power BI-vizualizációk
@@ -82,10 +82,12 @@ További információt a [Power BI tölcsérdiagramjait](power-bi-visualization-
 
 További információt a [Power BI mérőóra-diagramjait](power-bi-visualization-radial-gauge-charts.md) ismertető cikkben talál.
 
-<!-- ### Key influencers chart
-![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
+### <a name="key-influencers-chart"></a>Főbb befolyásolók diagramja
+![főbb befolyásoló](/visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers.png)
 
-A key influencer chart displays the major contributors to a selected result or value. -->
+A főbb befolyásolók diagramján a kiválasztott eredmény vagy érték főbb közreműködői láthatóak.
+
+További információt a [Főbb befolyásolók diagramja a Power BI-ban](power-bi-visualization-influencers.md) című témakörben talál.
 
 ### <a name="kpis"></a>KPI-k
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)

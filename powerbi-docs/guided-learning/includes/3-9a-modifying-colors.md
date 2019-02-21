@@ -14,7 +14,7 @@ A színt egy érték vagy mérték alapján is módosíthatja. Ehhez a Vizualiz�
 
 ![](media/3-9a-modifying-colors/3-9a_4.png)
 
-Módosíthatja az adatelemek kitöltéséhez használt színeket és a méretezést is. Választhat széttartó skálát a Diverging (Széttartó) csúszka bekapcsolásával, ami három szín között teszi lehetővé a választást. Beállíthat *Minimum*, *Közép*, és *Maximum* értékeket a táblázaton történő megjelenítéshez.
+Módosíthatja az adatelemek kitöltéséhez használt színeket és a méretezést is. Választhat széttartó skálát a Diverging (Széttartó) csúszka bekapcsolásával, ami három szín között teszi lehetővé a választást. Beállíthat *Minimum*, *Közép* és *Maximum* értékeket a táblázaton történő megjelenítéshez.
 
 ![](media/3-9a-modifying-colors/3-9a_5.png)
 

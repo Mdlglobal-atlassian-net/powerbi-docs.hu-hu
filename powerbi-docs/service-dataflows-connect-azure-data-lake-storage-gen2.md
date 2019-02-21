@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8cc1201c506e98ae33b68ef0cf802dae20b6f493
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: dc22c075c479510810b4a914fd999e38118e12e5
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216516"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426723"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)
 
@@ -70,6 +70,8 @@ Kövesse a [Szerepkör hozzárendelése biztonsági taghoz](https://docs.microso
 A **Szerepkör-hozzárendelés megadása** ablakban válassza az **Olvasó** szerepkört, hogy ez legyen a Power BI szolgáltatáshoz rendelve. Keresse meg a **Power BI szolgáltatást**. Az alábbi ábra az **Olvasó** szerepkörnek a Power BI szolgáltatáshoz rendelését mutatja be.
 
 ![Power BI szolgáltatás az Olvasó szerepkörhöz rendelve](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
+
+Megjegyzés: Legalább 30 percig tart, amíg az engedély a Power BI-ból átkerül a Portalra. A Portalon végzett bármilyen módosítás esetén 30 percig tarthat, amíg a módosítás megjelenik a Power BI-ban. 
 
 
 ### <a name="create-a-file-system-for-power-bi"></a>Fájlrendszer létrehozása a Power BI-hoz

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: b48feeaacc5ec0beff3b9b250f22b1aa605de9f7
-ms.sourcegitcommit: 6c75e38660b1ab4c1af355c85709859ffde09e25
+ms.openlocfilehash: f4e6f0204ed9832a3ed3c3ed8347a44300f606df
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068051"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249390"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Alkalmazások telepítése és használata irányítópultokkal és jelentésekkel a Power BI-ban
 Most, hogy már tisztában van az [alkalmazások alapfogalmaival](end-user-apps.md), megismerkedhet az alkalmazások megnyitásával és kezelésével. 
@@ -25,7 +25,7 @@ Mint tudja, alkalmazáshoz több módon is hozzájuthat. Egy jelentéskészítő
 
 Mobileszközén a Power BI-ban alkalmazást csak közvetlen hivatkozásról telepíthet, az AppSource-ból nem. Ha a szerző automatikusan telepíti az alkalmazást, akkor az megjelenik az Ön alkalmazásainak listájában.
 
-### <a name="install-an-app-from-a-direct-link"></a>Alkalmazás telepítése közvetlen hivatkozásról
+## <a name="install-an-app-from-a-direct-link"></a>Alkalmazás telepítése közvetlen hivatkozásról
 Új alkalmazás saját telepítésének legegyszerűbb módja az, ha közvetlen hivatkozást szerez e-mailben az alkalmazás szerzőjétől.  
 
 **A saját számítógépén** 
@@ -40,7 +40,7 @@ Ha mobileszközön nyitja meg az e-mailben szereplő hivatkozást, az alkalmazá
 
 ![Alkalmazás-tartalomlista mobileszközön](./media/end-user-app-view/power-bi-app-index-it-spend-360.png)
 
-### <a name="get-the-app-from-microsoft-appsource"></a>Alkalmazás beszerzése a Microsoft AppSource-ból
+## <a name="get-the-app-from-microsoft-appsource"></a>Alkalmazás beszerzése a Microsoft AppSource-ból
 Alkalmazásokat a Microsoft AppSource-on is találhat, és onnan telepíthet. Csak azok az alkalmazások jelennek meg, amelyekhez hozzáférése van (tehát az alkalmazás készítője jogosultságot adott hozzá Önnek vagy mindenkinek).
 
 1. Válassza az **Alkalmazások** ![Alkalmazások a bal oldali navigációs panelen](./media/end-user-apps/power-bi-apps-bar.png) > **Alkalmazások letöltése** lehetőséget. 
