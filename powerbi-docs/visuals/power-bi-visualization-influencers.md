@@ -3,19 +3,19 @@ title: Főbb befolyásolók vizualizációinak oktatóanyaga
 description: Oktatóanyag – főbb befolyásolók vizualizációjának létrehozása a Power BI-ban
 author: mihart
 manager: kvivek
-ms.reviewer: justyna
+ms.reviewer: juluczni
 ms.service: powerbi
 ms.component: powerbi-visuals
 ms.topic: tutorial
-ms.date: 02/10/2019
+ms.date: 02/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d7ad1cc4ffb339aeb1a64cd28274fde4f8ef6af6
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: c937104d570409023373a5ccbcf94e1b66e6aaab
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325151"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426792"
 ---
 # <a name="key-influencers-visualization"></a>Főbb befolyásolók vizualizáció
 A főbb befolyásolók vizualizáció segít megérteni azokat a tényezőket, amelyek az érdeklődésére számot tartó metrikát alakítják. Elemzi az adatokat, rangsorolja a lényeges tényezőket, és megjeleníti őket főbb befolyásolóként. Érdekelheti például, hogy mi befolyásolja az alkalmazotti állomány változását (az elvándorlást). Az egyik tényező lehet a munkaszerződés hossza, a másik pedig az alkalmazottak kora. 
@@ -46,7 +46,7 @@ Az elemzett metrikának kategóriamezőnek kell lennie.
 
 6. ***Jobb oldali panel*** – a jobb oldali panel egy vizualizációt tartalmaz. Ebben az esetben az oszlopdiagram megjeleníti a bal oldali panelen kiválasztott **főbb befolyásoló** **Téma** összes értékét. Az adott érték (**Használhatóság**) a bal oldali panelen zöld, és a **Téma** összes többi értéke fekete.
 
-7. ***Átlagos vonal*** – az átlag számításánál a rendszer a **Téma** összes többi lehetséges értékét figyelembe vette, a **használhatóság** kivételével. Tehát a számítás az összes fekete értékre vonatkozik. Azt mutatja, hogy a többi **Téma** milyen százalékban eredményezett alacsony értékelést. Más szóval, amikor egy ügyfél értékelést ad, ez az ügyfél az értékelés okát vagy **témáját** is leírja. Témák például a használhatóság, a sebesség, a biztonság stb. Ha a **Téma** a **Használhatóság**, ez a második legfőbb befolyásoló tényező alacsony értékelés adásakor a bal oldali panelen lévő vizualizáció szerint. Ha átlagot számítunk az összes többi témából és az **alacsony** értékeléshez adott hozzájárulásukból, akkor az itt pirossal szereplő eredményt kapjuk. 
+7. ***Átlagos vonal*** – az átlag számításánál a rendszer a **Téma** összes többi lehetséges értékét figyelembe vette, a **használhatóság** kivételével. Tehát a számítás az összes fekete értékre vonatkozik. Azt mutatja, hogy a többi **Téma** milyen százalékban eredményezett alacsony értékelést. Más szóval, amikor egy ügyfél értékelést ad, ez az ügyfél az értékelés okát vagy **témáját** is leírja. Témák például a használhatóság, a sebesség, a biztonság stb. Ha a **Téma** a **Használhatóság**, ez a második legfőbb befolyásoló tényező alacsony értékelés adásakor a bal oldali panelen lévő vizualizáció szerint. Ha átlagot számítunk az összes többi témából és az **alacsony** értékeléshez adott hozzájárulásukból, akkor az itt pirossal szereplő eredményt kapjuk. Az összes adott témának csak 11,35%-a magasabb, mint a **használhatóság**. 
 
 8. ***Jelölőnégyzet*** – csak a befolyásoló értékek megjelenítése.
 
@@ -217,7 +217,7 @@ Pontosabban azok a felhasználók, akik nem a böngészővel használják a szol
 
 ![hiba – megoldva](media/power-bi-visualization-influencers/power-bi-error3-solution.png)
 
-**Egy figyelmeztetést látok, miszerint az elemzésem nem tartalmaz mértékeket. Ez miért van?** [2052261] 
+**Egy figyelmeztetést látok, miszerint az elemzésem nem tartalmaz mértékeket. Ez miért van?** 
 
 ![hiba – nincsnek mértékek](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
 

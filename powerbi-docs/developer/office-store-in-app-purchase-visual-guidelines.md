@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: 097095cda1e0ffea4f43059351f22638c502e8b4
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: 4cbd17a08a8cb7c7253f60f29a19341598c9800f
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408069"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426539"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Útmutató további vásárlásos Power BI-vizualizációkhoz
 
@@ -33,7 +33,10 @@ A fejlesztők az Értékesítői információ-központról tölthetik fel az IAP
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Mik az IAP-funkciókkal rendelkező Power BI-vizualizációk?
 
-Az IAP-vizualizációk ingyenesek, ingyenes funkciókkal, azonban további funkciókat támogatnak, amelyek használatához külön díjszabás kapcsolódhat. A fejlesztőknek értesítenie kell a felhasználókat a vizualizáció leírásában arról, hogy mely funkciókhoz van szükség további vásárlásra. A Microsoft jelenleg nem nyújt natív alkalmazásprogramozási felületeket (API-kat) az alkalmazásokon és bővítményeken belüli vásárlások támogatásához. A fejlesztők bármilyen külső fizetési rendszert használhatnak az ilyen vásárlásokhoz. Tekintse meg az áruházzal kapcsolatos [szabályzatunkat](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
+Az IAP-vizualizációk ingyenesek, ingyenes funkciókkal, azonban további speciális funkciókat támogatnak, amelyek használatához külön díjszabás kapcsolódhat. A fejlesztőknek értesítenie kell a felhasználókat a vizualizáció leírásában arról, hogy mely funkciókhoz van szükség további vásárlásra. A Microsoft jelenleg nem nyújt natív alkalmazásprogramozási felületeket (API-kat) az alkalmazásokon és bővítményeken belüli vásárlások támogatásához. A fejlesztők bármilyen külső fizetési rendszert használhatnak az ilyen vásárlásokhoz. Tekintse meg az áruházzal kapcsolatos [szabályzatunkat](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
+
+> [!NOTE]
+> Az ingyenes funkciókkal a vízjelek nem használhatóak. A fejlesztők előugró ablakot vagy vízjelet jeleníthetnek meg, ha a speciális, fizetős funkciókat érvényes licenc nélkül használják.  
 
 ## <a name="logo-guidelines"></a>Embléma-irányelvek
 
