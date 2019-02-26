@@ -478,8 +478,6 @@ items:
         href: service-azure-sql-data-warehouse-with-direct-connect.md
       - name: Az Azure SQL Database DirectQueryvel
         href: service-azure-sql-database-with-direct-connect.md
-      - name: A Spark on HDInsight DirectQueryvel
-        href: spark-on-hdinsight-with-direct-connect.md
       - name: Az SQL Server Analysis Services élő adatai a Power BI-ban
         href: sql-server-analysis-services-tabular-data.md
     - name: Adatok frissítése
@@ -1307,9 +1305,9 @@ items:
       href: service-admin-governance.md
     - name: A Power BI és a biztonság
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: a4884b701b89ef0d92cacff12b6a75fda56c6e6e
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
+ms.openlocfilehash: 994d0f82fc92eb8e54aee92f0b4ceefa38cc8a49
+ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426815"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56826698"
