@@ -7,17 +7,17 @@ ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 12/09/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: e3b7731dec23c6fda49d31716d6e450231ab4bc5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: abf6052d7cb912f9a8ff33f064b5dc1d44f5ba3e
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276606"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56662090"
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Kapcsolódó tartalom megtekintése a Power BI szolgáltatásban
 A **Kapcsolódó tartalom** ablaktáblában megtekintheti, hogyan vannak összekapcsolva a különböző Power BI-tartalmak – irányítópultok, jelentések és adatkészletek. A Kapcsolódó tartalom panel indítási területként is funkcionál műveletek elvégzéséhez. Innen sok más mellett frissítheti, átnevezheti és létrehozhatja az információs adatokat. Ha kiválaszt egy kapcsolódó jelentést vagy irányítópultot, az megnyílik a Power BI munkaterületén.   
