@@ -40,7 +40,7 @@ Az alábbi szakaszokban megtalálhatja az általános illesztők segítségével
 Nem találja a **Power BI Desktopban** használni kívánt adatforrást? Javaslatait elküldheti a Power BI-csapatnak a [Javaslatok és kérések](https://ideas.powerbi.com/) listájában.
 
 ## <a name="data-sources-accessible-through-odbc"></a>ODBC-n keresztül elérhető adatforrások
-A **Power BI Desktop****ODBC**-összekötőjével egyszerűen egy **adatforrás nevének (DSN)** vagy egy *kapcsolati sztring* megadásával importálhat adatokat bármely harmadik féltől származó ODBC-illesztőből. Igény szerint megadhat egy, az ODBC-illesztőn végrehajtandó SQL-utasítást is.
+A **Power BI Desktop** **ODBC**-összekötőjével egyszerűen egy **adatforrás nevének (DSN)** vagy egy *kapcsolati sztring* megadásával importálhat adatokat bármely harmadik féltől származó ODBC-illesztőből. Igény szerint megadhat egy, az ODBC-illesztőn végrehajtandó SQL-utasítást is.
 
 ![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_2.png)
 
