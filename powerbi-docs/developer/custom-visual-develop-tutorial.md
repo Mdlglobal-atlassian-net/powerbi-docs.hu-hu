@@ -563,7 +563,7 @@ Módosítsa a **capabilities.json** fájlt az adatszerepkör és az adatnézet-l
     ```
     ![textValue cseréje](media/custom-visual-develop-tutorial/text-value-replace.png)
 
-3. Az **update** metódusban cserélje le a **.text(“Label”)**** részt a következőre.
+3. Az **update** metódusban cserélje le a **.text(“Label”)** részt a következőre.
 
     ```typescript
     .text(dataView.metadata.columns[0].displayName)
