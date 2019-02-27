@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: 47558c5aa7318d3ef3ff5c5e92beb6dd4b4b3d44
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 48eb26d3827f69831f2d565b26c20853906ab41d
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290467"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892183"
 ---
 # <a name="use-r-powered-custom-visuals-in-power-bi"></a>Egyéni R-vizualizációk a Power BI-ban
 
@@ -61,7 +61,7 @@ A vizualizációk az **AppSource** webhelyről történő kikeresésének és ki
 5. A rendszer az alábbi képen látható módon figyelmezteti az egyéni vizualizációk importálásával kapcsolatban:
 
    ![R visual 5](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_5.png)
-6. Lépjen arra a helyre, ahova a vizualizációt letöltötte, majd válassza ki a fájlt. A **Power BI Desktop** egyéni vizualizációi .pbivisual kiterjesztéssel rendelkeznek.
+6. Lépjen arra a helyre, ahova a vizualizációt letöltötte, majd válassza ki a fájlt. A **Power BI Desktop** egyéni vizualizációi .pbiviz kiterjesztéssel rendelkeznek.
 
    ![R visual 6](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_6.png)
 7. Amikor visszatér a Power BI Desktopba, a **Vizualizációk** ablaktáblán láthatja az új vizualizációtípust.
