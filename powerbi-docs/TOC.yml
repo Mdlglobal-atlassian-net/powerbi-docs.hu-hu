@@ -843,7 +843,13 @@ items:
     - name: Támogatott nyelvek és országok/régiók
       href: supported-languages-countries-regions.md
     - name: Tanulmányok
-      href: whitepapers.md
+      items:
+      - name: Tanulmányok áttekintése
+        href: whitepapers.md
+      - name: A Power BI biztonsága – tanulmány
+        href: whitepaper-powerbi-security.md
+      - name: A Power BI prémium üzembe helyezése
+        href: whitepaper-powerbi-premium-deployment.md
 - name: Power BI fejlesztőknek
   items:
   - name: Mire használhatják a fejlesztők a Power BI-t?
@@ -1036,6 +1042,8 @@ items:
         href: developer/walkthrough-push-data-get-datasets.md
       - name: Sorok hozzáadása egy táblához
         href: developer/walkthrough-push-data-add-rows.md
+      - name: Hitelesítő adatok konfigurálása
+        href: developer/configure-credentials.md
       - name: Hitelesítő adatok titkosítása
         href: developer/encrypt-credentials.md
     - name: Hivatkozás
@@ -1228,7 +1236,7 @@ items:
     items:
     - name: Power BI Premium
       items:
-      - name: Mit jelent a Power BI Premium?
+      - name: Mi az a Power BI Premium?
         href: service-premium.md
       - name: Prémium szintű kapacitás memóriahasználata, optimalizálás
         href: service-premium-understand-how-it-works.md
@@ -1305,9 +1313,9 @@ items:
       href: service-admin-governance.md
     - name: A Power BI és a biztonság
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 994d0f82fc92eb8e54aee92f0b4ceefa38cc8a49
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.openlocfilehash: 1d95f65528ff52931b9fbe9119f9d593db99655a
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826698"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892436"
