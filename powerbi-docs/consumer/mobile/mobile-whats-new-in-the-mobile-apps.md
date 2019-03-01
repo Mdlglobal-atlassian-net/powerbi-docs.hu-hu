@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: 771b7361efaea436d67c26ee05741f6dc3eba810
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 7c17d41d4278c292e494fe6f7203a32d93f2714d
+ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431246"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56826721"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -22,6 +22,16 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+
+## <a name="january---february-2019"></a>2019. január-február
+ 
+### <a name="visio-visuals"></a>Visio-vizualizációk
+
+A Visio-vizualizációkban engedélyezett az egyszeri bejelentkezés (SSO), így az alkalmazásban a Visio-vizualizációt tartalmazó jelentések megtekintésekor nincs szükség további bejelentkezési lépésekre. 
+
+### <a name="dashboard-commenting-is-coming-to-power-bi-mobile-windows-app"></a>A Power BI Mobile Windows-alkalmazásban megjelennek az irányítópultokkal kapcsolatos megjegyzések
+
+Az adatokkal kapcsolatos megjegyzéseket közvetlenül az irányítópultokon és az egyes csempéken is közzéteheti. Az irányítópultot megtekintő személyek látni fogják a megjegyzéseket. 
 
 ## <a name="december-2018"></a>2018. december
 

@@ -6,17 +6,17 @@ manager: kvivek
 ms.custom: ''
 ms.reviewer: cmfinlan
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1aaa57006b9a5aac2b077d3326ed6a39e6a4206d
-ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
+ms.openlocfilehash: 35efd62e6f00edd9ce6b58774dd73925a721dec5
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56298868"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56661928"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Jelentések exportálása a Power BI-ból PDF-be
 A Power BI segítségével közzéteheti jelentését PDF formátumban, és könnyedén létrehozhat egy dokumentumot a Power BI-jelentés alapján. **PDF-fájlba történő exportáláskor** a Power BI-jelentés minden egyes oldalából a PDF dokumentum egy-egy oldala lesz.
@@ -63,6 +63,8 @@ Az **Exportálás PDF-be** funkció használatakor figyelembe kell vennie néhá
 * A Power BI bérlői tartományán kívüli felhasználók jelentéseit (például olyan felhasználókét, akik nem a cég munkatársai, de megosztották Önnel a jelentést), nem lehet közzétenni PDF-fájlban.
 
 * Ha egy irányítópultot cégen kívüli felhasználóval oszt meg (tehát olyasvalakivel, aki nincs jelen a Power BI-bérlőben), akkor az a felhasználó nem tudja PDF-fájlba exportálni a megosztott irányítópulthoz kapcsolódó jelentéseket. Például ha Ön aaron@contoso.com, megoszthatja a munkáját a következővel: cassie@cohowinery.com. De cassie@cohowinery.com nem exportálhatja a kapcsolódó jelentéseket PDF-fájlba.
+
+* Előfordulhat, hogy amikor háttérképet tartalmazó jelentéseket exportál PDF-be, az Oldal háttere beállítás „Illeszkedés” értéke esetén a kép torzítva jelenik meg.  A legjobb eredmény érdekében ajánlott a „Normál” vagy „Kitöltés” beállítás használatával elkerülni az exportált dokumentummal kapcsolatos problémákat.
 
 * A Power BI szolgáltatás a PDF-exportálásnál a Power BI nyelvi beállításait alkalmazza. A nyelvi beállításokat megtekintheti vagy módosíthatja a fogaskerék ikon, majd a **Beállítások** > **Általános** > **Nyelv** lehetőség választásával.
 

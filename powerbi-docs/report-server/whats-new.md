@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: ad3025b9649529566972f75e9c447bb7558132b8
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: e645cd84b646e180114027464ea4781277d5245f
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325197"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56662457"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló újdonságai
 
@@ -41,6 +41,10 @@ Az alábbi funkciók támogatása a Power BI-jelentésekben:
 [**Útmutatók intelligens igazításhoz**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) Ha objektumokat mozgat a jelentésoldalon, intelligens igazítási útmutatók jelennek majd meg hasonlóan ahhoz, ahogyan az a PowerPointban történik, így egyszerűbben tudja az oldalon az objektumokat igazítani. Az intelligens útmutatók minden esetben megjelennek, amikor húzással áthelyez vagy átméretez valamit az oldalon. Ha egy objektumot egy másik közelébe helyez, akkor az a másik objektumhoz igazítva a megfelelő pozícióba illeszkedik.
 
 **Kisegítő lehetőségek** Olyan sok kisegítő lehetőség van, hogy a listázás nehéz. Elérhetőek például a [mezőlistázási panel kisegítő lehetőségei](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). A mezőlistázási panel teljes mértékben akadálymentes. A panelen navigálni lehet kizárólag billentyűzetet és a képernyőolvasót használva is, a helyi menüvel pedig mezőket lehet hozzáadni a jelentésoldalhoz.
+
+#### <a name="custom-visuals"></a>Egyéni vizualizációk
+
+- A kiadás a 2.3 API-verziót tartalmazza.
 
 ### <a name="administrator-settings"></a>Rendszergazdai beállítások
 
