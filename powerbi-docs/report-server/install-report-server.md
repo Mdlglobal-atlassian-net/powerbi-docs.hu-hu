@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 12/07/2018
-ms.openlocfilehash: 377e601bde58c0e0a8e5634cd798e3373ebee7b7
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 109c0f98705f81d48811f756c49150c8cb286e27
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324898"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014438"
 ---
 # <a name="install-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló telepítése
 
@@ -37,11 +37,11 @@ Javasoljuk, hogy a Power BI jelentéskészítő kiszolgáló telepítése előtt
 
 Ha a Power BI Premiumot vásárolta meg, a Power BI felügyeleti portáljának **Premium-beállítások** lapján érheti el a Power BI jelentéskészítő kiszolgáló termékkulcsát. Ezt csak a globális rendszergazdák vagy a Power BI szolgáltatásadminisztrátori szerepköréhez rendelt felhasználók érhetik el.
 
-![Premium-beállítások](../media/service-admin-premium-manage/pbirs-product-key.png "Power BI jelentéskészítő kiszolgáló kulcsa a Premium beállításaiban")
+![Premium-beállítások](../report-server/media/install-report-server/pbirs-product-key.png "Power BI jelentéskészítő kiszolgáló kulcsa a Premium beállításaiban")
 
 A **Power BI jelentéskészítő kiszolgáló kulcsának** kiválasztásakor megjelenik a termékkulcsot tartalmazó párbeszédpanel. Ezt másolhatja és használhatja a telepítéshez.
 
-![Termékkulcs](../media/service-admin-premium-manage/pbirs-product-key-dialog.png "Power BI jelentéskészítő kiszolgáló termékkulcsa")
+![Termékkulcs](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Power BI jelentéskészítő kiszolgáló termékkulcsa")
 
 #### <a name="sql-server-enterprise-software-assurance-sa"></a>SQL Server Enterprise Frissítési Garancia (SA)
 

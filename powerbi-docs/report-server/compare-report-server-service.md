@@ -4,18 +4,18 @@ description: Ez a cikk a Power BI jelentéskészítő kiszolgáló és a Power B
 keywords: ''
 author: markingmyname
 ms.author: maghan
-ms.date: 02/06/2019
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 11b910d687830e525e0495a785153daa32db042d
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.date: 02/06/2019
+ms.openlocfilehash: ba10e13062e4071e5afcc5d395836c96ed1401fd
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324461"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57327918"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása
 
@@ -56,7 +56,5 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 | Power BI Desktop | A Jelentéskészítő kiszolgálóhoz optimalizált verzió a Jelentéskészítő kiszolgálóval letölthető | A Power BI szolgáltatáshoz optimalizált verzió elérhető a Windows Áruházban | [Power BI Desktop a jelentéskészítő kiszolgálóhoz](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop a Power BI szolgáltatáshoz](http://aka.ms/pbidesktopstore) |
 
 ## <a name="next-steps"></a>Következő lépések
+
 [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
-
-
-

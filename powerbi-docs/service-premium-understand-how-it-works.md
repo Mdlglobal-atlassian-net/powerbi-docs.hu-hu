@@ -9,12 +9,12 @@ ms.author: owend
 ms.reviewer: owend
 author: minewiskan
 manager: kfile
-ms.openlocfilehash: e31f67d978471f4dcc6472860fc5f8315212e563
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: d7cebbd569d16192f4acfa1c96394130731efa17
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794869"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014576"
 ---
 # <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Microsoft Power BI Premium-kapacitások erőforrás-kezelése és optimalizálása
 
@@ -55,7 +55,7 @@ Ha interaktív lekérdezés érkezik bármelyik adatkészlethez kapcsolódóan a
 
 ### <a name="workloads"></a>Számítási feladatok
 
-A **Power BI Premium** és a **Power BI Embedded** kapacitásai alapértelmezés szerint csak a Power BI-lekérdezések felhőbeli futtatásával társított számítási feladatot támogatják. Most két további számítási feladathoz kínálunk előzetes verziójú támogatást: a **lapszámozott jelentésekhez** és az **adatfolyamokhoz**. Ha engedélyezve vannak, ezek a számítási feladatok befolyásolhatják a kapacitásán belüli memóriahasználatot. További információ: [Számítási feladatok konfigurálása](service-admin-premium-manage.md#configure-workloads).
+A **Power BI Premium** és a **Power BI Embedded** kapacitásai alapértelmezés szerint csak a Power BI-lekérdezések felhőbeli futtatásával társított számítási feladatot támogatják. Most két további számítási feladathoz kínálunk előzetes verziójú támogatást: a **lapszámozott jelentésekhez** és az **adatfolyamokhoz**. Ha engedélyezve vannak, ezek a számítási feladatok befolyásolhatják a kapacitásán belüli memóriahasználatot. 
 
 ## <a name="cpu-resource-management-in-premium-capacity"></a>A CPU erőforrás-kezelése prémium szintű kapacitás esetén
 
@@ -116,6 +116,3 @@ Használjon Power BI Embedded-kapacitást az Azure-ban, hogy a különféle term
 
 Bizonyos esetekben sokat megtudhat az adott problémáról, ha megnyitja számítógépén a modell Power BI Desktop- (PBIX-) fájlját, illetve ellenőrzi a memória- és a CPU-használatot. Kisebb modellek esetén próbálkozzon azzal, hogy megnyitja a modellt a számítógépéről, frissíti, majd lekérdezéseket küld rá. Nagyon nagy modellek esetén azonban ez nem fog működni. A modell megnyitásakor ellenőrizze a modell méretét, valamint a memória- és a CPU-felhasználást. Próbáljon meg frissíteni és lekérdezéseket indítani. A feladatkezelővel ellenőrizheti a helyi fájl processzor- és memóriafelhasználását. Néha magának a számítógépnek a metrikáiból is kiderül, hogy egy alacsonyabb (pl. P1/P2) prémium szintű kapacitás nem feltétlen elegendő az Ön számára.
 
-## <a name="next-steps"></a>Következő lépések
-
-[Kapacitáskezelés a Power BI Premiumban és a Power BI Embeddedben](service-admin-premium-manage.md)

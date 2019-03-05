@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 12/05/2018
-ms.openlocfilehash: d3563b80813b0c08377e7ecaec89439197c2014f
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 1b8653b4493e0a6de904ecb0f5bb8ec5bb6f7904
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324618"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014185"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Mik a lapszámozott jelentések a Power BI Premiumban? (Előzetes verzió)
 
@@ -24,7 +24,7 @@ A lapszámozott jelentések számos oldalból állhatnak. Ez a jelentés példá
 
 ![Lapszámozott jelentés a Power BI szolgáltatásban](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-A jelentés előnézetét megtekintheti a Jelentéskészítőben, majd közzéteheti a Power BI szolgáltatásban (http://app.powerbi.com). A szolgáltatásban csak Power BI Pro-licenccel tehet közzé jelentéseket. Lapszámozott jelentéseket a Saját munkaterületen vagy az alkalmazások munkaterületein tehet közzé, ha az adott munkaterület egy Power BI Premium-kapacitáshoz tartozik. Emellett egy Power BI-rendszergazdának engedélyeznie kell a lapszámozott jelentéseket a Power BI felügyeleti portálján. További információ a [számítási feladatok konfigurálásáról](service-admin-premium-manage.md#configure-workloads). 
+A jelentés előnézetét megtekintheti a Jelentéskészítőben, majd közzéteheti a Power BI szolgáltatásban (http://app.powerbi.com). A szolgáltatásban csak Power BI Pro-licenccel tehet közzé jelentéseket. Lapszámozott jelentéseket a Saját munkaterületen vagy az alkalmazások munkaterületein tehet közzé, ha az adott munkaterület egy Power BI Premium-kapacitáshoz tartozik. Emellett egy Power BI-rendszergazdának engedélyeznie kell a lapszámozott jelentéseket a Power BI felügyeleti portálján. 
 
 ## <a name="create-reports-in-report-builder"></a>Jelentés létrehozása a Jelentéskészítőben
 

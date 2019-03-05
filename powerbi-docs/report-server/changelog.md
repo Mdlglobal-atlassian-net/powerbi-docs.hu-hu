@@ -1,6 +1,7 @@
 ---
 title: A Power BI jelentéskészítő kiszolgáló változásnaplója
 description: Ez a változásnapló a Power BI jelentéskészítő kiszolgálóra vonatkozik, és minden kiadott buildhez felsorolja az új elemeket és hibajavításokat.
+ms.author: jtarquino
 author: jtarquino
 manager: kfile
 ms.reviewer: maggies
@@ -8,13 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.author: jtarquino
-ms.openlocfilehash: 346e1a3d096ba5e8ea8d16b49d49e02c0c65e54a
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 9589c2cf5277995459a9f43f573b6e19c4c8f748
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56224042"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57327964"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
@@ -23,6 +23,7 @@ Ez a változásnapló a Power BI jelentéskészítő kiszolgálóra vonatkozik, 
 Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonságai](whats-new.md) című cikkből tájékozódhat. 
 
 ## <a name="january-2019"></a>2019. január
+
 - **Power BI jelentéskészítő kiszolgáló**            
     - *Verzió: 1.4.6969.7395 (Build 15.0.1102.235), Kiadás dátuma: 2019. január 30.*
         - Hibajavítások
@@ -65,6 +66,7 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
         - A Power BI jelentéskészítő kiszolgálóval (2019. január) való kapcsolathoz szükséges módosításokat tartalmaz  
 
 ## <a name="august-2018"></a>2018. augusztus
+
 - **Power BI jelentéskészítő kiszolgáló**
     - *Verzió: 1.3.6816.37243 (Build: 15.0.2.557), Kiadás dátuma: 2018. augusztus 30.*
         - Hibajavítások
@@ -86,6 +88,7 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
         - A Power BI jelentéskészítő kiszolgálóval (2018. augusztus) való kapcsolathoz szükséges módosításokat tartalmaz         
         
 ## <a name="march-2018"></a>2018. március
+
 - **Power BI jelentéskészítő kiszolgáló**
     - *Verzió: 1.2.6690.34729 (Build: 15.0.2.402), Kiadás dátuma: 2018. április 27.*
         - Hibajavítások

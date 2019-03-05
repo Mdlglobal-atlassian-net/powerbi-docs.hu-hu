@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 868c1226b70bd12762c20c3af5b0ee1ff59857e5
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: a4180f211a2b31a8610d410a74e0cca25dcdad15
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408184"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014645"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -297,7 +297,7 @@ A munkahelyi felhasználók beágyazhatnak Power BI-irányítópultokat és -jel
 
 ### <a name="create-and-use-dataflows-preview"></a>Adatfolyamok létrehozása és használata (előzetes verzió)
 
-A vállalati felhasználók létrehozhatnak és használhatnak adatfolyamokat. További információ az adatfolyamokról: [Önkiszolgáló adat-előkészítés a Power BI-ban (előzetes verzió)](service-dataflows-overview.md). Az adatfolyamok prémium szintű kapacitásban való engedélyezéséről lásd: [Számítási feladatok konfigurálása](service-admin-premium-manage.md#configure-workloads).
+A vállalati felhasználók létrehozhatnak és használhatnak adatfolyamokat. További információ az adatfolyamokról: [Önkiszolgáló adat-előkészítés a Power BI-ban (előzetes verzió)](service-dataflows-overview.md). Az adatfolyamok prémium szintű kapacitásban való engedélyezéséről lásd: [Számítási feladatok konfigurálása](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > Ez a beállítás az egész munkahelyre vonatkozik, és nem lehet korlátozni meghatározott csoportokra.
@@ -321,8 +321,6 @@ A második beállítással, a **Sablonalkalmazások telepítése** beállításs
 A **Power BI Premium** lapon a munkahely által megvásárolt bármely Power BI Premium-kapacitás (EM vagy P termékváltozat) felügyelhető. A munkahely minden felhasználója láthatja a **Power BI Premium** lapot, de annak tartalma csak akkor jelenik meg, ha az adott felhasználó *kapacitás-rendszergazda* vagy rendelkezik a szükséges engedélyekkel. Ha a felhasználó nem rendelkezik ilyen engedéllyel, az alábbi üzenet jelenik meg.
 
 ![Nincs hozzáférés a Premium-beállításokhoz](media/service-admin-portal/premium-settings-no-access.png)
-
-További információ a Premium-beállítások kezeléséről: [A Power BI Premium kezelése](service-admin-premium-manage.md).
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
@@ -410,6 +408,5 @@ Rendszergazdaként megtekintheti a bérlőjében meglévő munkaterületeket. Re
 
 [A Power BI felügyelete a szervezetnél](service-admin-administering-power-bi-in-your-organization.md) [A Power BI rendszergazdai szerepkörének ismertetése](service-admin-role.md)  
 [A Power BI-naplózás használata a munkahelyen](service-admin-auditing.md)  
-[A Power BI Premium kezelése](service-admin-premium-manage.md)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
