@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 9b4ff995b1cfaede1608e976bf2715feece0ade6
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: 503a722a387c05952933a4cfa9aaa06eccc164da
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408138"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892321"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Gyakori kérdések – Power BI-beli egyéni vizualizációk
 
@@ -57,8 +57,44 @@ Igen. Az, hogy a rendszergazda letiltja az egyéni vizualizációkat a felügyel
 
 ### <a name="what-are-certified-custom-visuals"></a>Mik azok a minősített egyéni vizualizációk?
 
-A minősített egyéni vizualizációk azok a [piactéren](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) lévő vizualizációk, amelyek megfelelnek [bizonyos](power-bi-custom-visuals-certified.md), a Power BI csapata által megadott kódolási és tesztelési előírásoknak.  A végrehajtott tesztek rendeltetése annak ellenőrzése, hogy a vizualizáció nem kapcsolódik külső szolgáltatásokhoz vagy erőforrásokhoz. A külső egyéni vizualizációknak azonban nem a Microsoft a készítője. Ügyfeleinknek azt javasoljuk, hogy közvetlenül a készítővel kapcsolatba lépve ellenőrizzék az ilyen vizualizációk működését.
+A minősített egyéni vizualizációk azok a [piactéren](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) lévő vizualizációk, amelyek megfelelnek [bizonyos](power-bi-custom-visuals-certified.md), a Power BI csapata által megadott kódolási és tesztelési előírásoknak.  A végrehajtott tesztek célja annak ellenőrzése, hogy a vizualizáció nem kapcsolódik-e külső szolgáltatásokhoz vagy erőforrásokhoz. A külső felek egyéni vizualizációinak azonban nem a Microsoft a készítője, ezért azt javasoljuk ügyfeleinknek, hogy közvetlenül a készítővel kapcsolatba lépve ellenőrizzék az ilyen vizualizációk működését.
 
+### <a name="what-tests-are-done-during-the-certification-process"></a>Milyen teszteket végeznek a minősítési folyamat során?
+
+A minősítési folyamat tesztjei egyebek mellett a következők: Kódellenőrzés, statikus kódelemzés, adatszivárgás, adatbizonytalanság, behatolásvizsgálat, XSS-hozzáférési teszt, rosszindulatú adatok injektálása, bemenő adatok érvényesítése és funkcionális tesztelés.
+ 
+### <a name="do-you-certify-visuals-every-submission"></a>Minden beküldés alkalmával minősítik a vizualizációkat?
+
+Igen. Valahányszor egy minősített vizualizáció új verziója be van küldve a Marketplace-re, a vizualizáció frissítése ugyanezeken a minősítési ellenőrzéseken megy keresztül.
+
+Megjegyzés fejlesztők számára: minősített vizualizáció verziófrissítésének benyújtásakor nem szükséges külön e-mailt küldeni, mint az [első minősítéskérés](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified#process-for-submitting-a-custom-visual-for-certification) alkalmával. A verziófrissítés minősítése automatikusan megtörténik, és a visszautasítást eredményező szabálysértésekről a javításhoz szükséges teendőket is elmagyarázó e-mailt küldünk. 
+
+### <a name="is-it-possible-that-a-certified-visual-stops-being-certified-with-a-new-update"></a>Lehetséges, hogy egy minősített vizualizáció egy új frissítés után már nem lesz minősített?
+
+Nem, ez nem lehetséges. Egy vizualizáció minősítését nem szüntetheti meg egy új frissítés. A frissítés lesz elutasítva.
+ 
+### <a name="do-i-need-to-share-my-code-in-public-repository-if-i-am-submitting-to-the-certification-process"></a>Meg kell osztanom a kódomat egy nyilvános adattárban, ha minősítési eljárásra adom be?
+
+Nem, a kódját nem kell nyilvánosan megosztania. Nekünk viszont olvasási jogosultságot kell adnia, hogy ellenőrizhessük a vizualizáció kódját. Például egy privát adattárban a GitHubon.
+ 
+### <a name="do-we-have-to-publishhttpsdocsmicrosoftcompower-bideveloperoffice-store-the-visual-in-the-marketplacehttpsappsourcemicrosoftcommarketplaceappspage1productpower-bi-visuals-to-certify-it"></a>[Közzé kell tennünk](https://docs.microsoft.com/power-bi/developer/office-store) a vizualizációt a [Marketplace-en](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) a minősítéshez?
+
+Igen. A vizualizációnak a Marketplace-en való előzetes közzététele a minősítés kötelező feltétele.
+Egy egyéni vizualizáció minősítéséhez annak a mi kiszolgálóinkon kell lennie. Privát vizualizációkat nem tudunk minősíteni.
+ 
+### <a name="how-long-does-it-take-to-certify-my-visual"></a>Mennyi időt vesz igénybe a vizualizációm minősítése?
+
+Frissített verzió esetén 2 hétig tarthat. Újonnan (első minősítésre) benyújtott vizualizációknál 3 hetet is igénybe vehet. 
+
+### <a name="does-the-certification-process-ensure-that-no-data-leakage-occurs"></a>Biztosítja a minősítési eljárás, hogy ne léphessen fel adatszivárgás?
+
+A végrehajtott tesztek célja annak ellenőrzése, hogy a vizualizáció nem kapcsolódik-e külső szolgáltatásokhoz vagy erőforrásokhoz. A külső felek egyéni vizualizációinak azonban nem a Microsoft a készítője, ezért azt javasoljuk ügyfeleinknek, hogy közvetlenül a készítővel kapcsolatba lépve ellenőrizzék az ilyen vizualizációk működését.
+ 
+### <a name="are-uncertified-custom-visuals-safe-to-use"></a>Biztonságos a nem minősített egyéni vizualizációk használata?
+
+A nem minősített egyéni vizualizációk nem feltétlenül jelentenek nem biztonságos vizualizációkat.
+Egyes vizualizációk azért nincsenek minősítve, mert nem felelnek meg egy vagy több [minősítésbeli követelménynek](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Például egy külső szolgáltatáshoz (például egy térképvizualizációhoz) vagy egy kereskedelmi könyvtárakat használó vizualizációhoz csatlakozik.
+ 
 ## <a name="visuals-with-additional-purchases"></a>Vizualizációkon belüli további vásárlás
 
 ### <a name="what-is-a-visual-with-additional-purchases"></a>Mi a vizualizációkon belüli további vásárlás?
@@ -100,7 +136,6 @@ Ha az egyéni vizualizáció logót tartalmaz, akkor ellenőrizze, hogy az megfe
 Az irányelvek az ajánlott eljárásokra vonatkozó jegyzeteket is tartalmaznak.  
 > [!Note]
 > Az összes szabad vizualizáció megőrizheti ugyanazokat a korábban kínált ingyenes funkciókat. A régi ingyenes funkciók mellett felvehet választható, speciális fizetett funkciókat. Javasoljuk, hogy a speciális funkciókkal rendelkező IAP-vizualizációkat új vizualizációkként vegye fel, és ne a régi ingyeneseket frissítse.
-
 
 ### <a name="can-i-get-my-iap-custom-visual-certified"></a>Minősíttethetem az egyéni IAP-vizualizációmat?
 

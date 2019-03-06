@@ -8,21 +8,21 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/21/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f5896505d724c0704e22c95df132ee3318b23009
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 28db4891ad2ca67fefb0f6ec7d993977bbba7043
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56224019"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892252"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>A vizualizációkban megjelenő növekedések és csökkenések magyarázata a Power BI Desktop elemzéseivel (előzetes verzió)
 
 A vizualizációkban gyakran láthatunk hirtelen növekedéseket, majd gyors visszaeséseket az értékek között, ami elgondolkodtathat, hogy vajon mi okoz ilyen ingadozásokat. A **Power BI Desktop** **elemzéseivel** néhány kattintással megtudhatja ezek okát.
 
-Vegyük példaként a következő vizualizációt, amely az *Értékesítési összeget* *Év* és *Ország* szerint jeleníti meg. 2014-ben nagy csökkenést láthatunk az értékesítésnél, különösen az *1. negyedév* és a *2. negyedév* között. Az ilyen esetekben az adatok feltárásával megértheti a változás okát. 
+Vegyük példaként a következő vizualizációt, amely az *Értékesítési összeget* *Év* és *Negyedév* szerint jeleníti meg. 2014-ben nagy csökkenést láthatunk az értékesítésnél, különösen az *1. negyedév* és a *2. negyedév* között. Az ilyen esetekben az adatok feltárásával megértheti a változás okát. 
 
 ![Növekedéseket és csökkenéseket ábrázoló vizualizáció](media/desktop-insights/insights_01a.png)
 

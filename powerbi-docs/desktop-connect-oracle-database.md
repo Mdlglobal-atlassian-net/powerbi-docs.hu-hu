@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 826338a5e5524bb54c2ebb2207a3d438a8d428b1
-ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
+ms.openlocfilehash: b28c4ea9b4cacc77a7f98af5bfc006670f40af94
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899227"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892275"
 ---
 # <a name="connect-to-an-oracle-database"></a>Kapcsolódás Oracle-adatbázishoz
 Ha egy Oracle-adatbázist a **Power BI Desktophoz** szeretne csatlakoztatni, előbb telepítenie kell a megfelelő Oracle ügyfélszoftvert a Power BI Desktopot futtató számítógépre. Az Oracle ügyfélszoftver szükséges verziója attól függ, hogy a Power BI Desktop melyik verzióját telepítette – a **32 bites** verziót vagy a **64 bites** verziót.
@@ -43,8 +43,13 @@ A megfelelő Oracle ügyfélillesztő telepítése után csatlakozhat az Oracle-
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
 2. A megjelenő **Oracle-adatbázis** párbeszédpanelen adja meg a kiszolgáló nevét, és válassza a **Csatlakozás** lehetőséget. Ha biztonsági azonosítóra van szükség, azt a következő formátumban adhatja meg: *Kiszolgálónév/biztonsági azonosító*, ahol az azonosító az adatbázis egyedi neve. Ha a *Kiszolgálónév/biztonsági azonosító* formátum nem működik, használja a *Kiszolgálónév/szolgáltatásnév* formátumot, ahol a szolgáltatásnév a csatlakozáskor használt alias.
-   
+
+
    ![](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
+
+   > [!TIP]
+   > Ha ebben a lépésben akadályba ütközik a kapcsolódás, próbálja meg az alábbi formátumot használni a Kiszolgálónév mezőben: (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=host_name)(PORT=port_num))(CONNECT_DATA=(SERVICE_NAME=service_name)))
+   
 3. Ha natív adatbázis-lekérdezéssel szeretné importálni az adatokat, a lekérdezést az **SQL-utasítás** mezőben adhatja meg. Ez az **Oracle-adatbázis** párbeszédpanel **Speciális beállítások** szakaszának kibontásával érhető el.
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_4.png)

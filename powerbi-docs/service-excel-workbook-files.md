@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6a44443918fe0bb9c25343c8960aaaadd5a6977e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8568013438f6be84b2d4a48efdeffd99db352ed8
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285622"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892367"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Adatok elérése Excel-munkafüzetfájlokból
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -78,7 +78,7 @@ A **Csatlakozás** lehetőség kiválasztásakor a munkafüzet ugyanúgy jelenik
 
 A Power BI-ban nincs lehetőség a munkafüzet szerkesztésére. Ha azonban módosításokra van szüksége, a Szerkesztés elemre kattintva kiválaszthatja, hogy az Excel Online-ban szeretné szerkeszteni a munkafüzetet, vagy megnyitja azt a számítógépen, az Excelben. A rendszer menti az összes módosítást a OneDrive-on található munkafüzetbe.
 
-Ebben az esetben nem jön létre adatkészlet a Power BI-ban. A munkafüzet a Power BI-munkaterület navigációs ablaktábláján, a Jelentések területen lesz látható. A csatlakoztatott munkafüzetek egy különleges Excel-ikonnal rendelkeznek.
+Ha ezt a módszert választja, a Power BI létrehozza a megfelelő adathalmazt a csatlakoztatott munkafüzethez. Ennek az adathalmaznak a használatával szükség esetén létrehozhat egy Power BI-jelentést. A munkafüzete is látható lesz a Power BI-munkaterület navigációs ablaktábláján, a Jelentések területen. A csatlakoztatott munkafüzetek egy különleges Excel-ikonnal rendelkeznek.
 
 Válassza ezt a lehetőséget, ha csak adatok vannak a munkalapokon, vagy ha tartományokat, kimutatásokat és diagramokat szeretne az irányítópulton rögzíteni.
 

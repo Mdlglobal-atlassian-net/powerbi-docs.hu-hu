@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 02/21/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 097f0ae9da29d193fd7a337c9a164ab8c67dc4d9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2f5680df2077a306532165c62367fcc09c517227
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277664"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892482"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
 A jó döntések meghozatalában gyakran kritikus fontosságú a legfrissebb adatok lekérése. Már valószínűleg ismeri a Power BI Adatok lekérése funkcióját, amellyel adatokhoz csatlakozhat, illetve adatokat tölthet fel, és biztosan létrehozott már jelentéseket és egy irányítópultot is. Ezután célszerű meggyőződni arról, hogy az adatok valóban frissek és hibátlanok.
@@ -216,7 +216,7 @@ A valós idejű irányítópultok a Microsoft Power BI REST API-val vagy a Micro
 Az ütemezett frissítés konfigurálásával kapcsolatban további információt az [ütemezett frissítés konfigurálásáról](refresh-scheduled-refresh.md) szóló cikkben találhat.
 
 ## <a name="common-data-refresh-scenarios"></a>Gyakori adatfrissítési forgatókönyvek
-Néha a legjobb módszer az adatfrissítés megismerésére néhány példa megtekintése. Az alábbiakban néhány gyakori adatfrissítési forgatókönyvet ismertetünk:
+A Power BI-beli adatfrissítés megismerésére olykor néhány példa megtekintése a legjobb módszer. Az alábbiakban néhány gyakori adatfrissítési forgatókönyvet ismertetünk:
 
 ### <a name="excel-workbook-with-tables-of-data"></a>Excel-munkafüzet adattáblázatokkal
 Egy olyan Excel-munkafüzettel dolgozik, amely több táblázatnyi adatot is tartalmaz, azonban ezek nincsenek betöltve az Excel adatmodelljébe. Az Adatok lekérése funkcióval feltöltötte a munkafüzetet a helyi meghajtóból a Power BI-ba, és létrehozott egy irányítópultot. Azonban azóta módosította a munkafüzet táblázatait a helyi meghajtón, és szeretné frissíteni az irányítópultot a Power BI-ban az új adatokkal.

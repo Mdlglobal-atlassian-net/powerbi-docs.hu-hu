@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5e1bd67ba14ed35a97d91e5ed76f7a3bd8de56ea
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: d388812985ce30b5692a385fc44e3cf7fc49161f
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324817"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892344"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Önkiszolgáló adat-előkészítés a Power BI-ban (előzetes verzió)
 
@@ -69,7 +69,7 @@ Az Azure Data Lake Storage Gen2 minden fizetős Power BI-előfizetés része (fe
 
 A Power BI-t úgy konfigurálhatja, hogy az adatfolyam adatait a szervezeti Azure Data Lake Storage Gen2-fiókban tárolja. Az Azure-előfizetés a Power BI-jal való összekapcsolásával az adatfejlesztők és adatszakértők olyan hatékony Azure-termékeket vehetnek igénybe, mint az Azure Machine Learning, az Azure Databricks, az Azure Data Factory és számos más.
 
-A Power BI emellett sematikus, Common Data Service formátumú adatokat tartalmazó mappákhoz is csatlakozhat, amelyek a szervezet Azure Data Lake Storage-fiókjában találhatók. Ezek a mappák Azure-adatszolgáltatásokkal hozhatók létre. A mappákhoz való csatlakozással az elemzők zökkenőmentesen dolgozhatnak az adatokkal a Power BI-ban. 
+A Power BI emellett sematikus, Common Data Service formátumú adatokat tartalmazó mappákhoz is csatlakozhat, amelyek a vállalata Azure Data Lake Storage-fiókjában találhatók. Ezek a mappák Azure-adatszolgáltatásokkal hozhatók létre. A mappákhoz való csatlakozással az elemzők zökkenőmentesen dolgozhatnak az adatokkal a Power BI-ban. 
 
 Az Azure Data Lake Storage Gen2 és az adatfolyamok integrációjáról, így a vállalati Azure Data Lake-ben elhelyezkedő adatfolyamok létrehozásáról az [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md) című cikkből tájékozódhat.
 

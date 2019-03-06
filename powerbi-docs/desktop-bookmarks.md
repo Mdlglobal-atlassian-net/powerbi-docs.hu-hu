@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fda2732ff33c324377a73ceb93480fbbcdd404bd
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 59d5ccd6a7179ca4c44210854fb66abb5371ac6c
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325040"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892413"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Elemzések megosztása és történetek felépítése a Power BI könyvjelzőivel 
 A Power BI-ban a **könyvjelzők** használatával rögzítheti az egyes jelentésoldalak aktuális nézetkonfigurációját, beleértve a szűréseket és a vizualizációk állapotát, hogy később egyszerűen a mentett könyvjelzőre kattintva visszaállíthassa az adott állapotot. 
@@ -25,6 +25,9 @@ Egy tetszőleges sorrendbe rendezett teljes könyvjelzőgyűjteményt is létreh
 ![A Power BI könyvjelzői](media/desktop-bookmarks/bookmarks_01.png)
 
 A könyvjelzőknek rengeteg felhasználási módja létezik. A segítségükkel nyomon követheti, hogy hol tart épp a jelentések készítésében (a könyvjelzők hozzáadása, törlése és átnevezése nem bonyolult dolog), illetve létrehozhat belőlük egy PowerPoint-szerű bemutatót is, amely a könyvjelzőkön végigléptetve bemutat egy történetet a jelentésen keresztül. Természetesen más alkalmazási területek is elképzelhetőek aszerint, hogy Ön mire szeretné leginkább használni a könyvjelzőket.
+
+> [!TIP]
+> A Power BI szolgáltatásbeli személyes könyvjelzők használatáról a személyes könyvjelzők funkciót bejelentő [blogbejegyzésben](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) olvashat. 
 
 ### <a name="enable-the-bookmarks-preview-versions-prior-to-march-2018"></a>A könyvjelzők előzetes verziójának engedélyezése (a 2018. márciusinál korábbi verziók esetében)
 A Power BI Desktop 2018. márciusi verziójától kezdve a könyvjelzőkezelési funkció általánosan elérhető. 

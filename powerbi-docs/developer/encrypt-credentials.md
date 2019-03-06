@@ -1,22 +1,23 @@
 ---
 title: Hitelesítő adatok titkosítása
-description: Lépésenkénti útmutató – A helyszíni átjáró adatforrásaihoz tartozó hitelesítő adatok titkosítása
+description: Lépésenkénti útmutató – Helyszíni átjáró adatforrásaihoz tartozó hitelesítő adatok titkosítása
 author: mahirdiab
+ms.author: mahirdiab
 manager: eligr
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/02/2019
-ms.author: mahirdiab
-ms.openlocfilehash: 79ab3731abfdf972de1ee9d40456ebb0c5ebfa62
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.date: 02/04/2019
+ms.openlocfilehash: 6229d65e7ef28d0c9b6013166cb504cfb976f46d
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223513"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892229"
 ---
 # <a name="encrypt-credentials"></a>Hitelesítő adatok titkosítása
+
 Ha egy **vállalati helyszíni átjárón[ a [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/) használatával az ](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource)Adatforrás létrehozása[ vagy az ](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource)Adatforrás frissítése** utasítást hívja, a hitelesítő adatokat az átjáró nyilvános kulcsával kell titkosítani.
 
 Tekintse meg az alábbi kódpéldát a hitelesítő adatok .NET-ben történő titkosításához.
@@ -24,27 +25,31 @@ Tekintse meg az alábbi kódpéldát a hitelesítő adatok .NET-ben történő t
 Az alábbi EncodeCredentials metódushoz megadott hitelesítő adatok formátumának a hitelesítő adatok típusától függően az alábbiak egyikének kell lennie:
 
 **Alapszintű / windowsos hitelesítő adatok**
+
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
 ```
 
 **Kulcshitelesítő adatok**
+
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=\"}]}";
 ```
 
 **OAuth2 hitelesítő adatok**
+
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
 ```
 
-
 **Névtelen hitelesítő adatok**
+
 ```csharp
 var credentials = "{\"credentialData\":\"\"}";
 ```
 
 **Titkosított hitelesítő adatok**
+
 ```csharp
 public static class AsymmetricKeyEncryptionHelper
 {
