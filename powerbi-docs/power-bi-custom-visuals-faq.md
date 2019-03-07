@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 503a722a387c05952933a4cfa9aaa06eccc164da
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: c33ec747af514611df0ef00832acb785f04c40f1
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892321"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014162"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Gyakori kérdések – Power BI-beli egyéni vizualizációk
 
@@ -99,7 +99,7 @@ Egyes vizualizációk azért nincsenek minősítve, mert nem felelnek meg egy va
 
 ### <a name="what-is-a-visual-with-additional-purchases"></a>Mi a vizualizációkon belüli további vásárlás?
 
-A további vásárlásokat tartalmazó vizualizációk a piactéren lévő, alkalmazáson belüli vásárlást (IAP) lehetővé tevő bővítményekhez hasonlítanak. Az ilyen bővítmények áránál fel van tüntetve, hogy  **további vásárlásra lehet szükség**.
+A további vásárlásokat tartalmazó vizualizációk a piactéren lévő, alkalmazáson belüli vásárlást (IAP) lehetővé tevő bővítményekhez hasonlítanak. Az ilyen bővítmények áránál fel van tüntetve, hogy **további vásárlásra lehet szükség**.
 
 Az egyéni IAP-vizualizációk ingyenesen letölthetők – a felhasználóknak nem kell fizetniük, ha letöltik ezeket az egyéni vizualizációkat a piactérről. Az IAP-vizualizációk speciális funkciók alkalmazáson belüli megvásárlásának lehetőségét kínálják fel.  
 

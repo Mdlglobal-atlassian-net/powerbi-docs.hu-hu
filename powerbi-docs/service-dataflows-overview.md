@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/22/2019
+ms.date: 03/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d388812985ce30b5692a385fc44e3cf7fc49161f
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: 4c32f27a04b055eb67015d9c8308866b972c06a7
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892344"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226089"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Önkiszolgáló adat-előkészítés a Power BI-ban (előzetes verzió)
 
@@ -75,9 +75,7 @@ Az Azure Data Lake Storage Gen2 és az adatfolyamok integrációjáról, így a 
 
 ## <a name="dataflow-capabilities-on-power-bi-premium"></a>Adatfolyam-funkciók a Power BI Premiumban
 
-A Power BI Premium-előfizetésben használt adatfolyam-funkciókhoz és számítási feladatokhoz be kell kapcsolni az adatfolyam számítási feladatait az adott Prémium szintű kapacitásban. További információt a Power BI Premiumról a [Mi a Power BI Premium?](service-premium.md) című cikkben találhat. 
-
-A következő táblázat ismerteti az adatfolyam-funkciókat és azok kapacitásait Power BI Pro-fiók használata esetén, illetve ezek összehasonlítását a Power BI Premiummal.
+A Power BI Premium-előfizetésben használt adatfolyam-funkciókhoz és számítási feladatokhoz be kell kapcsolni az adatfolyam számítási feladatait az adott Prémium szintű kapacitásban. A következő táblázat ismerteti az adatfolyam-funkciókat és azok kapacitásait Power BI Pro-fiók használata esetén, illetve ezek összehasonlítását a Power BI Premiummal.
 
 
 |Adatfolyam-funkció | Power BI Pro |   Power BI Premium |
@@ -95,7 +93,7 @@ A következő táblázat ismerteti az adatfolyam-funkciókat és azok kapacitás
 |Adatfolyamokhoz csatolt entitások| |        +|
 |Szabványosított séma/Beépített támogatás a Common Data Service-hez|  +|  +|
 
-Az adatfolyamok számítási feladatainak prémium szintű kapacitásban történő engedélyezéséről további információt a Power BI Premium [számítási feladatok konfigurálása](service-admin-premium-manage.md#configure-workloads) cikkében talál. Adatfolyam számítási feladatok több földrajzi helyes kapacitásokban jelenleg nem érhetők el.
+Az adatfolyamok számítási feladatainak prémium szintű kapacitásban történő engedélyezéséről lásd a [Számítási feladatok konfigurálása prémium szintű kapacitásban](service-admin-premium-workloads.md) cikket. Adatfolyam számítási feladatok több földrajzi helyes kapacitásokban jelenleg nem érhetők el.
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>A big data típusú adatok önkiszolgáló adat-előkészítésének összefoglalása – Power BI
 Ahogy korábban említettük, több olyan forgatókönyv és példa is létezik, amelyben az **adatfolyamok** nagyobb mértékű vezérlést és gyorsabb elemzést biztosítanak az üzleti adatokhoz. A Common Data Servcie által meghatározott szabványos adatmodellel (sémával) az adatfolyamok importálhatják a fontos üzleti adatokat, és rövid idő alatt előkészíthetik azokat modellezéshez és BI-elemzésekhez. Mindez korábban hónapokig, vagy akár tovább is eltarthatott. 

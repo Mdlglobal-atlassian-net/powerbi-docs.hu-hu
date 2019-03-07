@@ -8,18 +8,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 02/28/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 8922bb329e4b598745fd259c67e74b063368b7be
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: b4f2d58b9e33e603b6e2dbc97972bb54c66f065c
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892390"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014139"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>A Power BI Premium megvásárlása
 
-Ez a cikk azt ismerteti, hogyan vásárolhat Power BI Premium-kapacitást (P1-P3) vállalata számára. Power BI Premium-kapacitást az Office 365 Felügyeleti központban vásárolhat, a [kapacitások felügyeletéhez](service-admin-premium-manage.md) pedig a Power BI felügyeleti portált használja. A jelenlegi díjszabással kapcsolatos és további tervezési információkat a [Power BI díjszabását ismertető oldalon](https://powerbi.microsoft.com/pricing/) és a [Power BI Premium-kalkulátor](https://powerbi.microsoft.com/calculator/) oldalán talál.
+> [!NOTE]
+> Ezt a cikket jelenleg frissítjük új funkciók leírásával, valamint további részletekkel, és javítjuk az olvashatóságot. 
+
+Ez a cikk azt ismerteti, hogyan vásárolhat Power BI Premium-kapacitást (P1-P3) vállalata számára. Power BI Premium-kapacitást az Office 365 Felügyeleti központban vásárolhat, a kapacitások felügyeletéhez pedig a Power BI felügyeleti portált használhatja. A jelenlegi díjszabással kapcsolatos és további tervezési információkat a [Power BI díjszabását ismertető oldalon](https://powerbi.microsoft.com/pricing/) és a [Power BI Premium-kalkulátor](https://powerbi.microsoft.com/calculator/) oldalán talál.
 
 A tartalmak létrehozóinak továbbra is Power BI Pro-licencre lesz szükségük, abban az esetben is, ha vállalata a Power BI Premiumot használja. Legalább egy Power BI Pro-licencet meg kell vásárolnia cége számára.
 

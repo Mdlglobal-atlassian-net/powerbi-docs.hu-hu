@@ -1,5 +1,5 @@
 ---
-title: Mik a Power BI-átjárók?
+title: Mik azok a helyszíni adatátjárók?
 description: Alapvető ismeretek a Power BI-adatátjárókról.
 author: mgblythe
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: overview
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9c88a09eccd887007df8d2539be861b964c31b5f
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: f1ae47dcb7c9281db018952d619691607d331003
+ms.sourcegitcommit: 87e81ba92f3d1d65c26f9fc007bf106f96f37bfd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324484"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461649"
 ---
-# <a name="what-are-power-bi-gateways"></a>Mik a Power BI-átjárók?
+# <a name="what-are-on-premises-data-gateways"></a>Mik azok a helyszíni adatátjárók?
 
 A Power BI-átjáró egy olyan szoftver, amelyet a helyszíni hálózaton belül telepíthet, és amely lehetővé teszi a hálózaton belüli adatok elérését. Kapuőrként figyeli a kapcsolódási kérelmeket, és csak akkor engedélyezi azokat, ha a felhasználói kérelem eleget tesz bizonyos feltételeknek. Ez lehetővé teszi, hogy a cégek az adatbázisaikat és más adatforrásaikat a helyszíni hálózaton belül tartsák, de ezzel együtt biztonságosan használhassák ezeket a helyszíni adatokat a Power BI-jelentésekhez és az irányítópultokhoz.
 
