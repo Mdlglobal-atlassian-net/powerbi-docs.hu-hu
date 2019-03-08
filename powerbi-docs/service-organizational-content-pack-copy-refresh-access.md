@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f42e9f69c3cdab945c0f000a0cc2ae4654d9ec9b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6a1834c88fbd7077f49560bc56b545539917ed3e
+ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296115"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57196436"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Céges tartalomcsomagok: Másolás, frissítés és hozzáférés
 
@@ -36,6 +36,12 @@ Hozza létre a saját, mások által nem látható másolatát a tartalomcsomagr
 2. Kattintson a **Mentés** gombra.  
 
 Ezzel lett egy másolata, amelyet módosíthat. A módosításokat más nem fogja látni.
+
+> [!NOTE]
+> Korábban minden alkalommal, amikor telepített egy tartalomcsomagot vagy létrehozott egy másolatot, megjelent egy új adatkészlet a munkaterület tartalomlistájában. Egy közelmúltbeli frissítés leegyszerűsítette a folyamatot, így csak egy, a hivatkozott adatkészlet ikonját használó elem jelenik meg:
+>
+> ![adatbázis a hivatkozás ikonnal](media/service-organizational-content-pack-copy-refresh-access/power-bi-dataset-reference-icon.png)
+> 
 
 ## <a name="help--i-can-no-longer-access-the-content-pack"></a>Segítség!  Már nem férek hozzá a tartalomcsomaghoz
 Ennek több oka is lehet:

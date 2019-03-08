@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 11/01/2018
-ms.openlocfilehash: a9d90737ed8a62f3791f0741bac1c9ff2b05cbb6
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: b24bde73c4f0e5f30c8baad7910fe9d9d924c3dc
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431200"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226158"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Beágyazás jelentéskijelzővel a SharePoint Online-ban
 
@@ -67,7 +67,7 @@ Ahhoz, hogy a jelentést beágyazza a SharePoint Online-ba, először is szüks�
 
     ![Új SP-jelentés](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)
 
-4. Illessze be a jelentés URL-címét a tulajdonság ablaktáblába. Ennek a jelentésnek az URL-címe az az URL-cím, amelyet a korábbi lépéseknél kimásolt. A jelentés automatikusan betöltődik.
+4. Illessze be a jelentés URL-címét a tulajdonság panelre. Ennek a jelentésnek az URL-címe az az URL-cím, amelyet a korábbi lépéseknél kimásolt. A jelentés automatikusan betöltődik.
 
     ![Új SP-kijelző tulajdonságai](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 8fe48becd106a91c0a57d145eab4b546985e2ba6
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 254b0c5c2e5a9b39f5d04f002a2791f1cd432c52
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324944"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226204"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sorszintű biztonság (RLS) a Power BI jelentéskészítő kiszolgálóban
 
@@ -48,7 +48,7 @@ Miután menti a jelentést a Power BI jelentéskészítő kiszolgálón, kezelhe
 1. A Power BI Desktopban mentse a jelentést a Power BI jelentéskészítő kiszolgálóra. A Power BI Desktopnak azt a verzióját kell használnia, amely a Power BI jelentéskészítő kiszolgálóhoz van optimalizálva.
 2. A Power BI jelentéskészítő kiszolgálóban válassza a jelentés melletti három pontot (**...**). 
 
-3. Válassza a  **Kezelés** > **Sorszintű biztonság** lehetőséget. 
+3. Válassza a **Kezelés** > **Sorszintű biztonság** lehetőséget. 
 
      ![Sorszintű biztonság kezelése](media/row-level-security-report-server/power-bi-report-server-rls-dialog.png)
 

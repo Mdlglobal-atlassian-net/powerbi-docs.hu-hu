@@ -1,5 +1,5 @@
 ---
-title: Kapcsolódás Azure Consumption Insights-adatokhoz (bétaverzió)
+title: Csatlakozás az Azure költség- és használati adataihoz a Power BI Desktopról
 description: Könnyedén kapcsolódhat az Azure-hoz és használati elemzésekhez juthat hozzá a Power BI Desktop segítségével
 author: davidiseminger
 manager: kfile
@@ -11,21 +11,27 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1302ede9c28cc42b3605e55705f07620f2974990
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 39678850b2e1acd16c678206feba8cccffa6477d
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216056"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57327987"
 ---
-# <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Kapcsolódás az Azure Consumption Insightshoz a Power BI Desktopban (bétaverzió)
-Az **Azure Consumption Insights** összekötő használatával a **Power BI Desktopból** kapcsolódhat az Azure-hoz, és részletes adatokat és információkat kérhet le cége Azure-szolgáltatáshasználatáról. Továbbá mértékeket, egyéni oszlopokat és vizualizációkat hozhat létre, amelyekkel jelentéseket készíthet és információkat oszthat meg cége Azure-használatáról. Az **Azure Consumption Insights** összekötő jelenleg bétaverzióban van, és később még változhat.
+# <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Az Azure költség- és használati adatainak elemzése a Power BI Desktopban
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01.png)
+A Power BI Desktopban csatlakozhat az Azure-hoz és részletes adatokat kaphat a szervezete Azure-szolgáltatásainak használatáról. Így egyéni jelentéseket és mértékeket hozhat létre, amelyekkel jobban megértheti és elemezheti az Azure-beli kiadásait.
 
-Ebből a cikkből megtudhatja, hogyan kapcsolódhat az **Azure Consumption Insights** segítségével, hogyan kérheti le a kívánt adatokat, hogyan migrálhat az Azure Enterprise Connector használatáról, valamint megtalálhatja az **ACI** (Azure Consumption Insights) API-ban elérhető *használatiadat-oszlopok* térképét.
+A Power BI jelenleg a Nagyvállalati Szerződés és az Ügyfélszerződés típusú számlázási fiókokhoz való csatlakozást támogatja.
 
-## <a name="connect-to-azure-consumption-insights"></a>Kapcsolódás az Azure Consumption Insightshoz
+A Nagyvállalati Szerződés felhasználóinak az Azure Consumption Insights-összekötővel kell csatlakozniuk. Az Ügyfélszerződés felhasználóinak az Azure Cost Management-összekötővel kell csatlakozniuk.
+
+## <a name="connect-with-azure-consumption-insights"></a>Kapcsolódás az Azure Consumption Insights segítségével
+
+Azure Consumption Insights lehetővé teszi, Azure Nagyvállalati Szerződéses számlázási fiókokhoz csatlakozzon.
+
+Ebben a szakaszban megtudhatja, hogyan kérheti le a kívánt adatokat, hogyan migrálhat az Azure Enterprise Connector használatáról, valamint megtalálhatja az **ACI** (Azure Consumption Insights) API-ban elérhető *használatiadat-oszlopok* térképét.
+
 Az **Azure Consumption Insights** összekötővel történő sikeres kapcsolódáshoz hozzáféréssel kell rendelkeznie a Vállalati szolgáltatásokhoz az Azure Portalon.
 
 Az **Azure Consumption Insights** összekötővel való kapcsolódáshoz kattintson a **Lekérdezés** gombra a **Power BI Desktop** **Kezdőlap** menüszalagján. A bal oldali kategóriák közül válassza az **Online szolgáltatások** lehetőséget, ekkor megjelenik a **Microsoft Azure Consumption Insights (Béta)**. Kattintson a **Csatlakozás** gombra.
@@ -70,7 +76,7 @@ Ha valamelyik tábla jelölőnégyzetét bejelöli, megjelenik egy előnézet. T
 > 
 > 
 
-Ha a **Betöltés** gombra kattint, a rendszer betölti az adatokat a **Power BI Desktopba**.  Az összekötő a tábla alapértelmezett időszaka alapján tölti be az adatokat.  Ha testre szeretné szabni az időszakot, [beállíthat egy egyéni lekérdezést](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights#using-azure-consumption-insights).
+Ha a **Betöltés** gombra kattint, a rendszer betölti az adatokat a **Power BI Desktopba**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
 
@@ -201,6 +207,71 @@ Az Azure Portal adatainak oszlopai és nevei hasonlóak az API-éhoz és az öss
 | Year | |Year |Nem |
 | SubscriptionId |subscriptionId |SubscriptionId |Igen |
 | SubscriptionGuid |subscriptionGuid |SubscriptionGuid |Nem |
+
+## <a name="connect-with-azure-cost-management"></a>Kapcsolódás az Azure Cost Management segítségével
+
+Ebben a szakaszban megtudhatja, hogyan csatlakozhat az Ügyfélszerződéses számlázási fiókhoz.
+
+Az **Azure Cost Management** összekötővel való csatlakozáshoz kattintson az **Adatok lekérése** gombra a **Power BI Desktop** **Kezdőlap** menüszalagján.  Válassza a bal oldali kategóriák közül az **Azure** elemet. Ekkor megjelenik az **Azure Cost Management (Beta)** elem. Kattintson a **Csatlakozás** gombra.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
+
+A megjelenő párbeszédpanelen adjon meg a *számlázási profil azonosítóját*.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-01.png)
+
+Az számlázási profil azonosítóját [Azure Portalról](https://portal.azure.com) kérheti le.  Lépjen a **Költségkezelés + számlázás** területre, válassza ki a számlázási fiókot, majd az oldalsávon a **Számlázási profilok** lehetőséget.  Válassza ki a számlázási profilját, majd válassza az oldalsávon a **Tulajdonságok** elemet.  Másolja a vágólapra a számlázási profilazonosítót.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
+
+Be kell jelentkeznie az Azure-os e-mail-címével és jelszavával.  A hitelesítést követően megjelenik egy **navigátor** ablak, amelyben tizenkét tábla található:
+
+* **Számlázási események**: Új számlák, kreditvásárlások és egyebek naplói.
+* **Budgets**: Költségvetési részleteket tartalmaz a tényleges költségek vagy használat és a költségkeret összehasonlításához. 
+* **Díjak**: Az Azure-használat, a Marketplace-díjak és a külön számlázott díjak havi szintű összefoglalása.
+* **Kreditek**: Az Azure-kreditek vásárlási részletei az adott számlázási profilhoz.
+* **Kreditösszegzés**: Az adott számlázási profil kreditösszegzése.
+* **Marketplace**: Használatalapú Azure Marketplace-díjakat tartalmaz.
+* **PriceSheets**: Az adott számlázási profil mérőnként érvényesíthető díjait tartalmazza.
+* **RI-díjak**: A fenntartott példányaival kapcsolatos utolsó 24 havi díjakat tartalmazza.
+* **RI-javaslatok (önálló)**: Fenntartott példányok vásárlására vonatkozó javaslatokat tartalmaz az egy előfizetésen belül 7, 30 vagy 60 napon át tapasztalt használati trendek alapján.
+* **RI-javaslatok (megosztott)**: Fenntartott példányok vásárlására vonatkozó javaslatokat tartalmaz az összes előfizetésen belül 7, 30 vagy 60 napon át tapasztalt használati trendek alapján.
+* **RI-használat**: Az utolsó hónapra vonatkozó fogyasztási részleteket tartalmaz meglévő fenntartott példányairól.
+* **Használat részletei**: Az adott számlázási profilazonosító fogyasztott mennyiségeinek és a becsült díjainak részletezését tartalmazza.
+
+Ha valamelyik tábla jelölőnégyzetét bejelöli, megjelenik egy előnézet.  Több táblát is kiválaszthat a nevek melletti jelölőnégyzetekkel, majd a **Betöltés** gombra kattintással.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-03.png)
+
+Ha a **Betöltés** gombra kattint, a rendszer betölti az adatokat a **Power BI Desktopba**.
+
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
+
+A kiválasztott adatok betöltése után a kiválasztott táblák és mezők láthatók lesznek a **Mezők** panelen.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-05.png)
+
+## <a name="writing-custom-queries"></a>Egyéni lekérdezések írása
+
+Ha testre szeretné szabni a hónapok számát, módosítani szeretné az API-verziót, vagy speciális logikát szeretne futtatni a visszaadott adatokon, hozzon létre egy egyéni M-lekérdezést.
+
+Ehhez a **Power BI Desktop** **Kezdőlap** menüszalagján kattintson az **Adatok lekérése** gomb alatti legördülő menüre, majd az **Üres lekérdezés** lehetőségre.  Ezt a **Lekérdezésszerkesztőben** is megteheti, ha a jobb gombbal rákattint a **Lekérdezések** elemre a bal oldali panelen, majd a megjelenő menüből kiválasztja az **Új lekérdezés > Üres menü** lehetőséget.
+
+A **szerkesztőlécen** írja be a következőt kifejezést, a `billingProfileId` elemet cserélje le a valós azonosítóra, a „charges” kifejezést pedig bármelyik érvényes táblanévre (a listát fent találhatja).
+
+```
+let
+    Source = AzureCostManagement.Tables(billingProfileId, [ numberOfMonths = 3 ]),
+    charges = Source{[Key="charges"]}[Data]
+in
+    charges
+```
+
+A `numberOfMonths` bármilyen, 1 és 36 közötti értékre történő módosítása mellett a következőket is megadhatja:
+
+* Az `apiVersion` megszabja, hogy a lekérdezés az API mely verzióját hívja meg.
+* A `lookbackWindow` önálló vagy megosztott RI-javaslatok esetén módosítja a javaslatok létrehozásának ablakát (érvényes beállítások: 7, 30 vagy 60 nap)
+
 
 ## <a name="next-steps"></a>Következő lépések
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:

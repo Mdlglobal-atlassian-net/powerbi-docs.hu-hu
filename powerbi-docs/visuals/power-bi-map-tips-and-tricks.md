@@ -8,15 +8,15 @@ featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 02/26/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 23e237428b86046cf75b02e2e98082da18d671cf
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5ae83079ae0dffca42498644f4de628bc626bb5e
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286682"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014461"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tippek és trükkök Power BI-térképvizualizációkhoz
 A Power BI integrálva van a Bing Térképekkel alapértelmezett térképkoordináták biztosításához (ez a geokódolás nevű folyamat), így térképeket hozhat létre. Együtt algoritmusokat használnak a megfelelő hely azonosításához, de ez néha csak feltételezésen alapul. Ha a Power BI nem tudja egyedül létrehozni a térkép-vizualizációt, igénybe veszi a Bing Térképek segítségét. 
@@ -31,8 +31,8 @@ A helyes geokódolás valószínűségének növelése érdekében használja az
 ## <a name="what-is-sent-to-bing-maps"></a>Mit küld el a rendszer a Bing Térképeknek?
 A Power BI szolgáltatás és a Power BI Desktop a térkép-vizualizációhoz szükséges geoadatokat küldi el a Bingnek. Ezek tartalmazhatják a **Hely**, **Szélesség** és **Hosszúság** gyűjtők adatait és a **Jelentésszintű szűrők**, **Oldalszintű szűrők** vagy a **Vizualizációszintű szűrők** gyűjtők geomezőit. Az, hogy pontosan mit küld el a rendszer, térképtípusonként eltérő. További tudnivalókért lásd a [Bing Térképek adatvédelmi tájékoztatóját](https://go.microsoft.com/fwlink/?LinkID=248686).
 
-* Térképek (buboréktérképek) esetében, ha a szélesség és a hosszúság meg van adva, akkor a rendszer nem küld adatokat a Bingnek. Egyéb esetben a Hely (és szűrő) gyűjtőkben található adatokat a rendszer elküldi a Bingnek.     
-* Kitöltött térképekhez szükség van egy mezőre a Hely gyűjtőben akkor is, ha a szélesség és hosszúság meg van adva. Bármely, a Hely, Szélesség vagy Hosszúság gyűjtőben található adatot a rendszer elküldi a Bingnek.
+* Térképek (buboréktérképek) esetében, ha a szélesség és a hosszúság meg van adva, akkor a rendszer nem küld adatokat a Bingnek. Egyéb esetben a **Hely** (és szűrő) gyűjtőkben található adatokat a rendszer elküldi a Bingnek.     
+* Kitöltött térképekhez szükség van egy mezőre a **Hely** gyűjtőben akkor is, ha a szélesség és hosszúság meg van adva. Bármely, a **Hely**, **Szélesség** vagy **Hosszúság** gyűjtőben található adatot a rendszer elküldi a Bingnek.
   
     A lenti példában a **Szállító** mező geokódoláshoz lett használva, így a Bing minden szállítói adatot megkap. A **Méret** és **Színtelítettség** gyűjtőkben lévő adatokat a rendszer nem küldi el a Bingnek.
   

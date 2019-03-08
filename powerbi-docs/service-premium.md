@@ -8,19 +8,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/15/2019
+ms.date: 02/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: a048f589b19acd1a7c38a5b81cf781d1e76b7b5b
-ms.sourcegitcommit: 187d20180d9bae5a2ec53748cede9e7301e0343e
+ms.openlocfilehash: cb9280f47f1f2d28ce6fabda2dbc173fbdc837ac
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56725340"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226135"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Mi az a Microsoft Power BI Premium?
 
-A Microsoft Power BI Premium a Power BI futtatásához dedikált erőforrásokat biztosít a cége számára. Megbízhatóbb teljesítményt biztosít és nagyobb mennyiségű adat kezelését teszi lehetővé. A Premium széles körű tartalommegosztást is lehetővé tesz anélkül, hogy a tartalomfogyasztók számára felhasználónkénti Pro-licenceket kellene beszereznie.  
+> [!NOTE]
+> Ezt a cikket jelenleg frissítjük új funkciók leírásával, valamint további részletekkel, és javítjuk az olvashatóságot. A legfrissebb információk: [Power BI Premium-kapacitások üzembe helyezése és kezelése](whitepaper-powerbi-premium-deployment.md).
+
+A Power BI Premium dedikált erőforrásokat biztosít vállalata számára a Power BI szolgáltatás futtatásához. Megbízhatóbb teljesítményt biztosít és nagyobb mennyiségű adat kezelését teszi lehetővé. A Premium széles körű tartalommegosztást is lehetővé tesz anélkül, hogy a tartalomfogyasztók számára felhasználónkénti Pro-licenceket kellene beszereznie.  
 
 ## <a name="premium-capacity-and-shared-capacity"></a>Prémium szintű kapacitás és megosztott kapacitás
 
@@ -79,9 +82,7 @@ A Power BI Premium csomópont-konfigurációkban különböző virtuálismag-kap
 
 ## <a name="workloads-in-premium-capacity"></a>Számítási feladatok prémium szintű kapacitásban
 
-Egy Power BI-beli számítási feladat felfogható a felhasználók számára felkínálható számos szolgáltatás egyikeként. A **Power BI Premium** és a **Power BI Embedded** kapacitásai alapértelmezés szerint csak a Power BI-lekérdezések felhőbeli futtatásával társított számítási feladatot támogatják.
-
-Most két további számítási feladathoz kínálunk előzetes verziójú támogatást: a **lapszámozott jelentésekhez** és az **adatfolyamokhoz**. Ezek a számítási feladatok a Power BI felügyeleti portálján, vagy a Power BI REST API-n keresztül engedélyezhetők. Beállíthatja az egyes számítási feladatok által felhasználható memória maximumát is, hogy szabályozni tudja a különböző számítási feladatok egymásra gyakorolt hatását. További információ: [Számítási feladatok konfigurálása](service-admin-premium-manage.md#configure-workloads).
+A **Power BI Premium** és a **Power BI Embedded** kapacitásai alapértelmezés szerint csak a Power BI-lekérdezések felhőbeli futtatásával társított számítási feladatot támogatják. A Premium emellett **AI**, **adatfolyamok**, és **lapszámozott jelentések** számára is támogatja a további számítási feladatokat. Ezek a számítási feladatok a Power BI felügyeleti portálján, vagy a Power BI REST API-n keresztül engedélyezhetők. Beállíthatja az egyes számítási feladatok által felhasználható memória maximumát is, hogy szabályozni tudja a különböző számítási feladatok egymásra gyakorolt hatását. További információ: [Számítási feladatok konfigurálása](service-admin-premium-workloads.md).
 
 ### <a name="default-memory-settings"></a>Alapértelmezett memóriabeállítások
 
@@ -114,10 +115,10 @@ A Power BI Premium azt is lehetővé teszi, hogy a cég a helyszínen futtassa a
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Power BI Premium – gyakori kérdések](service-premium-faq.md)
-[A Power BI Premium megvásárlása](service-admin-premium-purchase.md)
-[A Power BI Premium kezelése](service-admin-premium-manage.md)
-[Microsoft Power BI Premium-tanulmány](https://aka.ms/pbipremiumwhitepaper)
-[A Power BI Enterprise üzembehelyezési előkészületeit bemutató tanulmány](https://aka.ms/pbienterprisedeploy)
+[Power BI Premium-kapacitások üzembe helyezése és kezelése](whitepaper-powerbi-premium-deployment.md)   
+[A Power BI Premium megvásárlása](service-admin-premium-purchase.md)   
+[Power BI Premium – gyakori kérdések](service-premium-faq.md)   
+
+
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

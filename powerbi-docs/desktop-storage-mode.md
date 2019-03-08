@@ -1,5 +1,5 @@
 ---
-title: A tárolási mód használata a Power BI Desktopban (előzetes verzió)
+title: Tárolási mód használata a Power BI Desktopban
 description: A tárolási mód használatával szabályozható, hogy a Power BI Desktopban az adatok gyorsítótárazva legyenek-e a memóriában a jelentésekhez.
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 02/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 26ab2ec7dfd7a091a6a7df89ee4492dc124ed60c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f84e2f95c8ae209828eb1c21f34253015e07aefa
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279182"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555872"
 ---
-# <a name="storage-mode-in-power-bi-desktop-preview"></a>Tárolási mód a Power BI Desktopban (előzetes verzió)
+# <a name="storage-mode-in-power-bi-desktop"></a>Tárolási mód a Power BI Desktopban
 
 A Microsoft Power BI Desktopban megadható a táblák *tárolási módja*. A *tárolási mód* használatával szabályozható, hogy a Power BI Desktop gyorsítótárazza-e a memóriában a táblák adatait a jelentésekhez. 
 
@@ -37,9 +37,9 @@ A tárolási mód beállítása több előnnyel is jár. Az egyes táblák táro
 
 A Power BI Desktop tárolási mód beállítása három kapcsolódó funkció egyike:
 
-* **Összetett modellek**: Lehetővé teszik, hogy egy jelentés kettő vagy több adatkapcsolattal, köztük DirectQuery-kapcsolatokkal és importálással, vagy ezek bármilyen kombinációjával rendelkezzen. További információért lásd: [Összetett modellek a Power BI Desktopban (előzetes verzió)](desktop-composite-models.md).
+* **Összetett modellek**: Lehetővé teszik, hogy egy jelentés kettő vagy több adatkapcsolattal, köztük DirectQuery-kapcsolatokkal és importálással, vagy ezek bármilyen kombinációjával rendelkezzen. További információért lásd: [Összetett modellek a Power BI Desktopban](desktop-composite-models.md).
 
-* **Több a többhöz kapcsolatok**: Az *összetett modellekkel* a táblák között *több-a-többhöz kapcsolatok* hozhatók létre. A *több-a-többhöz kapcsolatokkal* kiküszöbölhető az egyedi értékek követelménye a táblákban. Ráadásul ez a korábbi áthidaló megoldásokat is szükségtelenné teszi, például új táblák bevezetését a kapcsolatok létrehozásához. További információk: [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md).
+* **Több a többhöz kapcsolatok**: Az *összetett modellekkel* a táblák között *több-a-többhöz kapcsolatok* hozhatók létre. A *több-a-többhöz kapcsolatokkal* kiküszöbölhető az egyedi értékek követelménye a táblákban. Ráadásul ez a korábbi áthidaló megoldásokat is szükségtelenné teszi, például új táblák bevezetését a kapcsolatok létrehozásához. További információk: [Több a többhöz kapcsolatok a Power BI Desktopban](desktop-many-to-many-relationships.md).
 
 * **Tárolási mód**: Mostantól megadható, hogy mely vizualizációk igényelnek a háttér-adatforrásokba irányuló lekérdezéseket. Azok a vizualizációk, amelyekhez nincs szükség lekérdezésre, importálva lesznek még akkor is, ha DirectQuery-alapúak. Ez a funkció segíti a teljesítmény javulását, és csökkenti a háttérrendszerek leterheltségét. Korábban még az egyszerű vizualizációk, például a szeletelők is kezdeményeztek a háttérbeli forrásokba irányuló lekérdezéseket. A tárolási módról további információt ebben a cikkben talál.
 
@@ -127,13 +127,13 @@ A következő lekérdezés érdekessége, hogy mindkét oszlop szerepel benne. E
 ![Szkript a tárolási mód diagnosztizálásához](media/desktop-storage-mode/storage-mode_08.png)
 
 > [!NOTE]
-> Ez a viselkedés más, mint a [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md) című rész által leírt viselkedés, amikor gyorsítótárazott és nem gyorsítótárazott táblák kombinálásáról van szó.
+> Ez a viselkedés más, mint a [több a többhöz kapcsolatok viselkedése a Power BI Desktopban](desktop-many-to-many-relationships.md), amikor gyorsítótárazott és nem gyorsítótárazott táblák kombinálásáról van szó.
 
 ## <a name="caches-should-be-kept-in-sync"></a>A gyorsítótárakat szinkronizálva kell tartani
 
 Az előző szakaszban bemutatott lekérdezések szemléltették, hogy a **Kettős** táblák bizonyos esetekben érintik, más esetekben elkerülik a gyorsítótárat. Emiatt előfordulhat, hogy ha a gyorsítótár elavul, a rendszer különböző értékeket ad vissza. A lekérdezések végrehajtása nem kísérli meg elfedni az adatokkal kapcsolatos problémákat például azzal, hogy a DirectQuery-eredményeket a gyorsítótárazott értékekkel való egyezés alapján szűri. Önnek kell ismernie a saját adatfolyamait, és azok alapján terveznie. Léteznek bevált módszerek az ilyen eseteknek a forrásnál való kezelésére, ha szükséges.
 
-A *Kettős* tárolási mód teljesítmény-optimalizálás. Csak úgy szabad használni, hogy ne veszélyeztesse az üzleti követelmények teljesítését. Másféle viselkedés eléréséhez fontolja meg a [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md) című cikkben ismertetett módszerek használatát.
+A *Kettős* tárolási mód teljesítmény-optimalizálás. Csak úgy szabad használni, hogy ne veszélyeztesse az üzleti követelmények teljesítését. Másféle viselkedés eléréséhez fontolja meg a [Több a többhöz kapcsolatok a Power BI Desktopban](desktop-many-to-many-relationships.md) című cikkben ismertetett módszerek használatát.
 
 ## <a name="data-view"></a>Adatnézet
 Ha az adathalmazban legalább egy tábla **Importálás** vagy **Kettős** tárolási módra van beállítva, akkor megjelenik az **Adatnézet** lap.
@@ -162,7 +162,7 @@ A DirectQuery használatára vonatkozó korlátozások az összetett modellek ha
 ## <a name="next-steps"></a>Következő lépések
 
 Az összetett modellekkel és a DirectQueryvel kapcsolatos további információkért tekintse meg a következő cikkeket:
-* [Összetett modellek a Power BI Desktopban (előzetes verzió)](desktop-composite-models.md)
-* [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md)
+* [Összetett modellek a Power BI Desktopban](desktop-composite-models.md)
+* [Több a többhöz kapcsolatok a Power BI Desktopban](desktop-many-to-many-relationships.md)
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások a Power BI-ban](desktop-directquery-data-sources.md)
