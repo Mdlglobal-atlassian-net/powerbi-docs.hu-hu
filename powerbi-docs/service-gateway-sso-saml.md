@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 03/05/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: f6a17a3e4033d5a97c5ae7744fef955aeed16eeb
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
+ms.openlocfilehash: c1ca797efa2e40bf74384a1e9f2362acd26c6f8f
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327734"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555661"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>A Security Assertion Markup Language (SAML) használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
@@ -38,6 +38,8 @@ A SAML használatához először hozzon létre egy tanúsítványt a SAML-identi
     ```
 
 1. Az SAP HANA Studio felületén kattintson a jobb gombbal az SAP HANA-kiszolgáló mezőjére, majd nyissa meg a **Security** > **Open Security Console** > **SAML Identity Provider** > **OpenSSL Cryptographic Library** (Biztonság>Biztonsági konzol megnyitása>SAML-identitásszolgáltató>OpenSSL titkosítási kódtár) elemet.
+
+    Ezek a beállítási lépések OpenSSL helyett az SAP titkosítási kódtárral (Cryptographic Library, más néven CommonCryptoLib vagy sapcrypto) is végrehajthatók. További információkat a hivatalos SAP-dokumentációban találhat.
 
 1. Válassza ki az **Import** (Importálás) lehetőséget, keresse meg a samltest.crt nevű elemet, és importálja.
 
@@ -121,6 +123,37 @@ Végül kövesse ezeket a lépéseket a tanúsítvány-ujjlenyomat az átjáró 
 Most már használhatja az **Átjáró kezelése** lapot a Power BI-ban az adatforrás konfigurálásához, a **Speciális beállítások** alatt pedig engedélyezze az SSO-t. Ezután közzétehet az adatforráshoz kötődő jelentéseket és adatkészleteket.
 
 ![Speciális beállítások](media/service-gateway-sso-saml/advanced-settings.png)
+
+## <a name="troubleshooting"></a>Hibaelhárítás
+
+Az SSO konfigurálása után a következő hibaüzenet jelenhet meg a Power BI-portálon: „A megadott hitelesítő adatok nem használhatók az SapHana forráshoz.” Ez a hiba azt jelenti, hogy az SAP HANA elutasította az SAML-hitelesítő adatokat.
+
+A hitelesítés követése részletes információt nyújt az SAP HANA hitelesítési hibáinak elhárításához. SAP HANA-kiszolgálójához az alábbi lépések végrehajtásával konfigurálhat követést.
+
+1. Az SAP HANA-kiszolgálón az alábbi lekérdezés futtatásával kapcsolhatja be a hitelesítés követését.
+
+    ```
+    ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini', 'SYSTEM') set ('trace', 'authentication') = 'debug' with reconfigure 
+    ```
+
+1. Reprodukálja a felmerült hibát.
+
+1. A HANA Studióban nyissa meg a felügyeleti konzolt, majd lépjen a **Diagnosztikai fájlok** lapra.
+
+1. Nyissa meg a legújabb indexkiszolgálói nyomkövetést, és keresse meg a SAMLAuthenticator.cpp fájlt.
+
+    Itt részletes hibaüzenetet kell találnia, amely az alábbi példához hasonlóan megadja a hiba elsődleges okát.
+
+    ```
+    [3957]{-1}[-1/-1] 2018-09-11 21:40:23.815797 d Authentication   SAMLAuthenticator.cpp(00091) : Element '{urn:oasis:names:tc:SAML:2.0:assertion}Assertion', attribute 'ID': '123123123123123' is not a valid value of the atomic type 'xs:ID'.
+    [3957]{-1}[-1/-1] 2018-09-11 21:40:23.815914 i Authentication   SAMLAuthenticator.cpp(00403) : No valid SAML Assertion or SAML Protocol detected
+    ```
+
+1. A hibaelhárítás befejezése után kapcsolja ki a hitelesítés követését az alábbi lekérdezés futtatásával.
+
+    ```
+    ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini', 'SYSTEM') UNSET ('trace', 'authentication');
+    ```
 
 ## <a name="next-steps"></a>Következő lépések
 
