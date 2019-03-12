@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/11/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 50dd529366a06cc46b2ca906bfc8987a3988cb72
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
+ms.openlocfilehash: 92b2026be33a6be25c4ad27c0d563a811eb0f4e6
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226075"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580335"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>A Power BI Desktop korábbi havi frissítései
 
@@ -107,6 +107,7 @@ Ezeket a frissítéseket az alábbi videócsatorna mutatja be. A videók a blogb
 
 > [!NOTE]
 > Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
 
 ## <a name="november-2018-update-2645285461"></a>2018. novemberi frissítés (2.64.5285.461)
 

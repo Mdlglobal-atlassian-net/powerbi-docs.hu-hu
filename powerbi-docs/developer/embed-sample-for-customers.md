@@ -10,16 +10,18 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: adeb3f09e52d039937ba3cf54afb72f8ed1287f3
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.openlocfilehash: 3e8a4f443a6784020467ef1cf3a918ef5410b209
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249160"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757415"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba az ügyfelek számára
 
 Az **Azure-beli Power BI Embedded** segítségével jelentéseket, irányítópultokat és csempéket ágyazhat be alkalmazásokba az alkalmazás tulajdonában lévő adatokkal. **Az alkalmazás tulajdonában lévő adatok** esetében egy alkalmazás a Power BI-t használja beágyazott elemzőplatformként. **ISV-fejlesztőként** létrehozhat olyan Power BI-tartalmakat, amelyek jelentéseket, irányítópultokat vagy csempéket jelenítenek meg egy teljes mértékben integrált és interaktív alkalmazásban anélkül, hogy a felhasználóknak Power BI-licenccel kellene rendelkeznie. Ez az oktatóanyag bemutatja, hogyan integrálhat jelentést ügyfelei által használt alkalmazásokba a Power BI .NET SDK és a Power BI JavaScript API segítségével, az **Azure-beli Power BI Embedded** használatával.
+
+![Power BI jelentés beágyazása](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
 Az oktatóanyag a következőket ismerteti:
 > [!div class="checklist"]
