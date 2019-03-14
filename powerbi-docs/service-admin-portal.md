@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: a4180f211a2b31a8610d410a74e0cca25dcdad15
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: ca9a2eff3d05ec10c83dde90eabb779370ca5e96
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014645"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757346"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -192,6 +192,13 @@ Az alábbi képen a jelentéshez tartozó **Fájl** menü látható, ha az **Ir�
 
 ![Jelentés nyomtatása](media/service-admin-portal/powerbi-admin-print-report.png)
 
+### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat
+Az Azure B2B-vendégfelhasználók szerkeszthetik és kezelhetik a szervezeti tartalmakat. [További információ](service-admin-azure-ad-b2b.md)
+
+A következő képen az „Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat” beállítás látható.
+
+![Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
 ## <a name="content-pack-and-app-settings"></a>Tartalomcsomag és alkalmazás beállításai
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Tartalomcsomagok és alkalmazások közzététele a teljes szervezet számára
@@ -243,10 +250,45 @@ A munkahelyi felhasználók egyéni vizualizációkat használhatnak és oszthat
 > [!NOTE]
 > Ez a beállítás az egész munkahelyre vonatkozhat, de korlátozható meghatározott csoportokra.
 
+
+A Power BI Desktop (a 2019. márciusi kiadással kezdődően) támogatja a **Csoportházirendek** használatát az egyéni vizualizációk letiltásához a cég összes üzembe helyezett számítógépén.
+
+<table>
+<tr><th>Attribútum</th><th>Érték</th>
+</tr>
+<td>key</td>
+    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
+<tr>
+<td>valueName</td>
+<td>EnableCustomVisuals</td>
+</tr>
+</table>
+
+Az 1 (decimális) érték engedélyezi az egyéni vizualizációk használatát a Power BI-ban (ez az alapértelmezett beállítás).
+
+A 0 (decimális) érték letiltja az egyéni vizualizációk használatát a Power BI-ban.
+
 ### <a name="allow-only-certified-visuals"></a>Csak hitelesített vizualizációk engedélyezése
 
 A szervezet azon felhasználói, akik engedélyt kaptak egyéni vizualizációk hozzáadására és használatára (őket „Egyéni vizualizációk hozzáadása és használata” beállítás jelzi), csak a [hitelesített egyéni vizualizációkat](https://go.microsoft.com/fwlink/?linkid=2002010) használhatják (a nem hitelesített vizualizációk le lesznek tiltva, használatuk esetén hibaüzenet jelenik meg). 
 
+
+A Power BI Desktop (a 2019. márciusi kiadással kezdődően) támogatja a **Csoportházirendek** használatát a tanúsítvány nélküli egyéni vizualizációk letiltásához a cég összes üzembe helyezett számítógépén.
+
+<table>
+<tr><th>Attribútum</th><th>Érték</th>
+</tr>
+<td>key</td>
+    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
+<tr>
+<td>valueName</td>
+<td>EnableUncertifiedVisuals</td>
+</tr>
+</table>
+
+Az 1 (decimális) érték engedélyezi a tanúsítvány nélküli egyéni vizualizációk használatát a Power BI-ban (ez az alapértelmezett beállítás).
+
+A 0 (decimális) érték letiltja a tanúsítvány nélküli egyéni vizualizációk használatát a Power BI-ban (ez a beállítás csak a [tanúsítvánnyal rendelkező egyéni vizualizációkat engedélyezi](https://go.microsoft.com/fwlink/?linkid=2002010)).
 
 ## <a name="r-visuals-settings"></a>R-vizualizációk beállításai
 

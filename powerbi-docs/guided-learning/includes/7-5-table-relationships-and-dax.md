@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: cd6ea6fd52f929e2cd254214cf0e8c96e858f6c2
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555960"
+---
 A Power BI-ban kapcsolatokat alakíthat ki egyszerre több táblázat között is, beleértve a teljesen eltérő adatforrásból származókat. Az adatmodellek kapcsolatait a Power BI Desktop **Kapcsolatok** nézetében tekintheti meg.
 
 ![](media/7-5-table-relationships-and-dax/dax-relationships_1.png)
@@ -7,7 +15,7 @@ A DAX **relációs függvényei** lehetővé teszik a létesített kapcsolatokka
 
 A DAX-függvények segítségével eredményként visszaadhatja egy adott oszlop értékét, vagy akár egy kapcsolat összes sorát.
 
-Például a **TABLE** (táblázat) függvény a kapcsolódásokat követve visszaadja egy oszlop értékét, míg a **RELATEDTABLE** (kapcsolódó táblázat) követi a kapcsolódást, és egy kapcsolódó sorokra szűrt teljes táblázatot ad vissza eredményként.
+Például a **RELATED** (kapcsolódó) függvény a kapcsolódásokat követve visszaadja egy oszlop értékét, míg a **RELATEDTABLE** (kapcsolódó táblázat) követi a kapcsolódást, és egy kapcsolódó sorokra szűrt teljes táblázatot ad vissza eredményként.
 
 ![](media/7-5-table-relationships-and-dax/dax-relationships_2.png)
 

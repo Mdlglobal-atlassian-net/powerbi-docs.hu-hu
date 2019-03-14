@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 12/10/2018
-ms.openlocfilehash: 6a6dc71d68fa7ff136d35cbfb185b96db8e0589e
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.date: 03/12/2019
+ms.openlocfilehash: 34d7ec423f3d4cb0f7487c78eff68c580ff0489e
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249436"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757461"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba a cége számára
 
@@ -26,116 +26,45 @@ A **Power BI**-ban jelentéseket, irányítópultokat és csempéket ágyazhat b
 Eben az oktatóanyagban az alábbi feladatokkal fog megismerkedni:
 > [!div class="checklist"]
 > * Alkalmazás regisztrálása az Azure-ban.
-> * Ágyazzon be egy Power BI-jelentést egy alkalmazásba.
+> * Ágyazzon be egy Power BI-jelentést egy alkalmazásba a Power BI-bérlőjével.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Első lépésként szüksége lesz egy Power BI Pro-fiókra és egy Microsoft Azure-előfizetésre:
+Első lépésként, rendelkeznie kell az alábbiakkal:
 
-* Ha még nem regisztrált a Power BI Pro szolgáltatásra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://powerbi.microsoft.com/pricing/).
-* Ha még nincs Azure-előfizetése, kezdés előtt hozzon létre egy [ingyenes fiókot](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-* Állítson be egy saját [Azure Active Directory- (Azure AD-) bérlőt](create-an-azure-active-directory-tenant.md).
-* Telepítse a [Visual Studio](https://www.visualstudio.com/) 2013-as vagy újabb verzióját.
+* Egy [Power BI Pro-fiók](../service-self-service-signup-for-power-bi.md).
+* Egy [Microsoft Azure](https://azure.microsoft.com/)-előfizetéssel.
+* Be kell állítana egy saját [Azure Active Directory-bérlőt](create-an-azure-active-directory-tenant.md).
+
+Ha még nem regisztrált a **Power BI Pro** szolgáltatásra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://powerbi.microsoft.com/pricing/).
+
+Ha még nincs Azure-előfizetése, kezdés előtt hozzon létre egy [ingyenes fiókot](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 ## <a name="set-up-your-embedded-analytics-development-environment"></a>A beágyazott elemzési fejlesztési környezet beállítása
 
-Mielőtt jelentéseket, irányítópultokat és csempéket ágyazna az alkalmazásba, győződjön meg arról, hogy a környezete be van állítva a beágyazás engedélyezéséhez. A beállítás részeként tegye a következők egyikét:
+Mielőtt jelentéseket, irányítópultokat vagy csempéket ágyazna az alkalmazásba, győződjön meg arról, hogy a környezete engedélyezi a beágyazást a Power BI-jal.
 
-* Az első lépések gyors elsajátítása érdekében követheti a [beágyazáshoz szükséges telepítési eszköz](https://aka.ms/embedsetup/UserOwnsData) lépéseit, és letölthet egy mintaalkalmazást, amely végigvezeti Önt a környezet létrehozásán és egy jelentés beágyazásán.
+Az első lépések gyors elsajátítása érdekében követheti a [beágyazáshoz szükséges telepítési eszköz](https://aka.ms/embedsetup/UserOwnsData) lépéseit, és letölthet egy mintaalkalmazást, amely végigvezeti Önt a környezet létrehozásán és egy jelentés beágyazásán.
 
-* Ha a környezet manuális létrehozása mellett dönt, hajtsa végre a következő szakaszok lépéseit.
+Ha mégis a környezet manuális létrehozása mellett dönt, folytathatja az alábbiak szerint.
 
 ### <a name="register-an-application-in-azure-active-directory"></a>Alkalmazás regisztrálása az Azure Active Directoryban
 
-Regisztrálja az alkalmazást az Azure Active Directoryban, hogy hozzáférést biztosítson számára a Power BI REST API-khoz. Ezután létrehozhat egy identitást az alkalmazás számára, és engedélyeket biztosíthat a Power BI REST-erőforrások használatához.
+[Regisztrálja az alkalmazást](register-app.md) az Azure Active Directoryban, hogy engedélyezze az alkalmazás számára a [Power BI REST API-k](https://docs.microsoft.com/rest/api/power-bi/) elérését. Az alkalmazás regisztrálásával identitást hozhat létre a számára, és meghatározhatja a Power BI REST-erőforrásokhoz kötődő engedélyeket.
 
-1. Fogadja el a [Microsoft Power BI API használati feltételeit](https://powerbi.microsoft.com/api-terms).
-
-2. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
-
-    ![Azure-irányítópult](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
-
-3. A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet. Ezután válassza az **Új alkalmazás regisztrálása** lehetőséget.
-
-    ![Alkalmazásregisztráció keresése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)<br>
-
-    ![Új alkalmazás regisztrálása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
-
-4. Kövesse az utasításokat az új alkalmazás létrehozásához. A **felhasználó tulajdonában lévő adatokkal** az **Alkalmazástípus** mezőben adja meg a **Webalkalmazás/API** beállítást. Adjon meg egy **Bejelentkezési URL-címet**, amelyet az Azure AD a jogkivonatválaszok visszaadására használ. Adja meg az alkalmazáshoz tartozó értéket. Például: `http://localhost:13526/`.
-
-    ![Alkalmazás létrehozása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-005.png)
-
-### <a name="apply-permissions-to-your-application-within-azure-active-directory"></a>Engedélyek alkalmazása a saját alkalmazásra az Azure AD-ben
-
-Engedélyeket adhat meg az alkalmazásnak azokon felül, amelyeket az alkalmazásregisztrációs oldalon megadott. Az engedélyek megadásához jelentkezzen be egy globális rendszergazdai fiókkal.
-
-### <a name="use-the-azure-active-directory-portal"></a>Az Azure Active Directory portál használata
-
-1. Az Azure Portal [Alkalmazásregisztrációk](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) szakaszában keresse meg azt az alkalmazást, amelyet a beágyazáshoz kíván használni.
-
-    ![Alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
-
-2. Kattintson a **Beállítások** elemre. Ezután az **API-hozzáférés** területen válassza a **Szükséges engedélyek** lehetőséget.
-
-    ![Szükséges engedélyek](media/embed-sample-for-your-organization/embed-sample-for-your-organization-008.png)
-
-3. Válassza a **Microsoft Azure Active Directory** elemet. Ezután győződjön meg arról, hogy a **Hozzáférés a címtárhoz a bejelentkezett felhasználóként** beállítás be van jelölve. Kattintson a **Mentés** gombra.
-
-    ![Microsoft Azure AD-engedélyek](media/embed-sample-for-your-organization/embed-sample-for-your-organization-011.png)
-
-4. Válassza a **Hozzáadás** elemet.
-
-    ![Engedélyek hozzáadása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-012.png)
-
-5. Válassza az **API kiválasztása** lehetőséget.
-
-    ![API-hozzáférés hozzáadása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-013.png)
-
-6. Válassza a **Power BI szolgáltatás** lehetőséget. Ezután kattintson a **Kiválasztás** gombra.
-
-    ![Power BI szolgáltatás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-014.png)
-
-7. Jelölje be az összes engedélyt a **Delegált engedélyek** szakaszban. Egyenként jelölje be őket, hogy menteni tudja a kijelöléseket. Ha végzett, kattintson a **Mentés** gombra.
-
-    ![Delegált engedélyek kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-015.png)
+Regisztrálnia kell egy **kiszolgálóoldali webalkalmazást**. A kiszolgálóoldali webalkalmazás egy titkos alkalmazáskód létrehozásához kell regisztrálnia.
 
 ## <a name="set-up-your-power-bi-environment"></a>A Power BI-környezet beállítása
 
 ### <a name="create-an-app-workspace"></a>Alkalmazás-munkaterület létrehozása
 
-Ha jelentéseket, irányítópultokat vagy csempéket ágyaz be az ügyfelek számára, akkor ezeket a tartalmakat egy alkalmazás-munkaterületre kell helyezni:
-
-1. Kezdjük a munkaterület létrehozásával. Válassza a **Munkaterületek** > **Alkalmazás munkaterületének létrehozása** lehetőséget. Ezen a munkaterületen kell elhelyeznie a tartalmakat, amelyekhez az alkalmazásnak hozzá kell férnie.
-
-    ![Munkaterület létrehozása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-020.png)
-
-2. Nevezze el a munkaterületet. Ha a megfelelő **munkaterület-azonosító** nem használható, szerkesztéssel hozzon létre egy egyedi azonosítót. Ez lesz az alkalmazás neve is.
-
-    ![Munkaterület elnevezése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-021.png)
-
-3. Néhány beállítást meg kell adnia. Ha **nyilvánosra** állítja a munkaterületet, a szervezet bármely tagja megtekintheti annak tartalmát. A **Privát** beállítás azt jelenti, hogy a munkaterület tartalmát csak a tagok láthatják.
-
-    ![A Nyilvános vagy a Privát beállítás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-022.png)
-
-    A Nyilvános vagy a Privát beállítás a csoport létrehozását követően nem módosítható.
-
-4. Azt is beállíthatja, hogy a tagok szerkeszthetik-e a tartalmakat vagy csak megtekintési jogosultságuk van.
-
-    ![Taghozzáférés kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-023.png)
-
-5. Vegye fel az adott személyek e-mail-címét, akiknek hozzáférést kíván adni a munkaterülethez, majd kattintson a **Hozzáadás** gombra. Csoportaliasokat nem adhat hozzá, csak egyéneket.
-
-6. Döntse le, hogy az egyes személyek egyszerű tagok vagy adminisztrátorok legyenek-e. Az adminisztrátorok szerkeszthetik magát a munkaterületet is, és tagokat is felvehetnek. A tagok a munkaterület tartalmát szerkeszthetik, amennyiben nem csak megtekintési jogosultsággal rendelkeznek. Az alkalmazást az adminisztrátorok és a tagok egyaránt közzétehetik.
-
-    Most megtekintheti az új munkaterületet. A Power BI létrehozza és megnyitja a munkaterületet. Ekkor megjelenik az olyan munkaterületek listájában, amelyeknek Ön a tagja. Mivel adminisztrátori jogosultsággal rendelkezik, a három pontra (...) kattintva visszaléphet, és szerkesztheti a munkaterületet, például új tagokat adhat hozzá vagy módosíthatja a tagok jogosultságait.
-
-    ![Alkalmazás munkaterületének létrehozása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-025.png)
+Ha jelentéseket, irányítópultokat vagy csempéket ágyaz be az ügyfelek számára, akkor ezeket a tartalmakat egy alkalmazás-munkaterületre kell helyezni. Különböző típusú munkaterületeket állíthat be: [hagyományos munkaterületeket](../service-create-workspaces.md) vagy [új munkaterületeket](../service-create-the-new-workspaces.md).
 
 ### <a name="create-and-publish-your-reports"></a>Saját jelentések létrehozása és közzététele
 
 A Power BI Desktop segítségével létrehozhatja a jelentéseit és az adathalmazait. A jelentéseket ezután közzéteheti egy alkalmazás-munkaterületen. A jelentéseket közzétevő végfelhasználónak Power BI Pro-licenccel kell rendelkeznie az alkalmazás-munkaterületen való közzétételhez.
 
-1. Töltse le a [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples) mintát a GitHubról.
+1. Töltse le a [Demo](https://github.com/Microsoft/powerbi-desktop-samples) mintát a GitHubról.
 
     ![A bemutató letöltése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026-1.png)
 
@@ -153,83 +82,129 @@ A Power BI Desktop segítségével létrehozhatja a jelentéseit és az adathalm
 
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Tartalom beágyazása a mintaalkalmazással
 
-A tartalmak mintaalkalmazással történő beágyazásához kövesse az alábbi lépéseket:
+Ez a minta szándékosan egyszerű, bemutatási céllal.
 
-1. Első lépésként töltse le a [felhasználó tulajdonában lévő adatok használatát ismertető mintát](https://github.com/Microsoft/PowerBI-Developer-Samples) a GitHubról. Három különböző mintaalkalmazás érhető el: egy a [jelentésekhez](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app), egy az [irányítópultokhoz](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app) és egy a [csempékhez](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app). Ez a cikk a **jelentések** alkalmazására hivatkozik.
+A mintaalkalmazás segítségével történő tartalombeágyazáshoz kövesse az alábbi lépéseket.
+
+1. Töltse le a [Visual Studio](https://www.visualstudio.com/) 2013-as vagy újabb verzióját. Győződjön meg róla, hogy a legújabb [NuGet-csomagot](https://www.nuget.org/profiles/powerbi) tölti le.
+
+2. A kezdéshez töltse le a [User Owns Data mintát](https://github.com/Microsoft/PowerBI-Developer-Samples) a GitHubról.
 
     ![User Owns Data alkalmazásminta](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Nyissa meg a **Cloud.config** fájlt a mintaalkalmazásban. Az alkalmazás sikeres futtatásához néhány mezőt ki kell töltenie: **ApplicationID** és **ApplicationSecret**.
+3. Nyissa meg a **Cloud.config** fájlt a mintaalkalmazásban.
+
+    Az alkalmazás futtatásához ki kell kitöltenie néhány mezőt.
+
+    | Mező |
+    |--------------------|
+    | **[Alkalmazásazonosító](#application-id)** |
+    | **[Alkalmazás titkos kódja](#application-secret)** |
+    | **[Munkaterület azonosítója](#workspace-id)** |
+    | **[Jelentésazonosító](#report-id)** |
+    | **[AADAuthorityUrl](#aadauthorityurl)** |
 
     ![Cloud.config fájl](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
-    Az **ApplicationID** mezőbe írja be az Azure-beli **alkalmazásazonosítót**. Az alkalmazás az **ApplicationID** segítségével azonosítja magát azon felhasználóknál, akiktől engedélyeket kér.
+### <a name="application-id"></a>Alkalmazásazonosító
 
-    Az **ApplicationID** beszerzéséhez kövesse az alábbi lépéseket:
+Az **applicationId** mezőbe írja be az **Azure**-beli **alkalmazásazonosítót**. Az alkalmazás az **applicationId**-vel azonosítja magát azon felhasználóknak, akiktől Ön engedélyeket kér.
 
-    1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
+Az **applicationId** beszerzéséhez kövesse az alábbi lépéseket:
 
-       ![Azure Portal irányítópultja](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+1. Jelentkezzen be az [Azure Portalon](https://portal.azure.com).
 
-    2. A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
+2. A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
 
-       ![Alkalmazásregisztráció keresése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+    ![Alkalmazásregisztráció keresése](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
-    3. Válassza ki azt az alkalmazást, amelynek használnia kell az **ApplicationID** azonosítót.
+3. Válassza ki azt az alkalmazást, amelynek használnia kell az **applicationId** azonosítót.
 
-       ![Alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Az alkalmazás kiválasztása](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-    4. Egy GUID-ként listázott **alkalmazásazonosítónak** kell megjelennie. Használja ezt az **alkalmazásazonosítót** az alkalmazás **ApplicationID** mezőjében.
+4. Van egy GUID-ként listázott **alkalmazásazonosító**. Használja ezt az **alkalmazásazonosítót** az alkalmazás **applicationId** mezőjében.
 
-        ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
+    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-    Az **ApplicationSecret**mező tartalmát az **Azure** **Alkalmazásregisztrációk** szakaszának **Kulcsok** részéből másolhatja be.
+### <a name="application-secret"></a>Alkalmazás titkos kódja
 
-    Az **ApplicationSecret** beszerzéséhez kövesse az alábbi lépéseket:
+Az **ApplicationSecret**mező tartalmát az **Azure** **Alkalmazásregisztrációk** szakaszának **Kulcsok** részéből másolhatja be.  Ez az attribútum [szolgáltatásnév](embed-service-principal.md) használatakor működik.
 
-    1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
+Az **ApplicationSecret** beszerzéséhez kövesse az alábbi lépéseket:
 
-       ![Azure Portal](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 
-    2. A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
+2. A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
 
-       ![Alkalmazásregisztráció keresése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+    ![Alkalmazásregisztráció keresése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    3. Válassza ki azt az alkalmazást, amelyhez használni kívánja az **ApplicationSecret** kulcsot.
+3. Válassza ki azt az alkalmazást, amelyhez használni kívánja az **ApplicationSecret** kulcsot.
 
-       ![Alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    4. Kattintson a **Beállítások** elemre.
+4. Kattintson a **Beállítások** elemre.
 
-       ![Beállítások kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
+    ![Beállítások kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
 
-    5. Válassza a **Kulcsok** lehetőséget.
+5. Válassza a **Kulcsok** lehetőséget.
 
-       ![Kulcsok kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+    ![Kulcsok kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    6. A **Leírás** mezőbe írjon be egy nevet, és válasszon ki egy időtartamot. Ezután kattintson a **Mentés** gombra az alkalmazás **Értékének** lekéréséhez. Ha bezárja a **Kulcsok** panelt a kulcsérték mentése után, az értékmező csak rejtettként fog megjelenni. Ebben az esetben nem tudja lekérni a kulcsértéket. Ha elveszíti kulcsértéket, hozzon létre egy újat az Azure Portalon.
+6. A **Leírás** mezőbe írjon be egy nevet, és válasszon ki egy időtartamot. Ezután kattintson a **Mentés** gombra az alkalmazás **Értékének** lekéréséhez. Ha bezárja a **Kulcsok** panelt a kulcsérték mentése után, az értékmező csak rejtettként fog megjelenni. Ebben az esetben nem tudja lekérni a kulcsértéket. Ha elveszíti kulcsértéket, hozzon létre egy újat az Azure Portalon.
 
-          ![Kulcsérték](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Kulcsérték](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
-    7. A **csoportazonosító** mezőbe írja be a Power BI szolgáltatásban lévő alkalmazás-munkaterület GUID azonosítóját.
+### <a name="workspace-id"></a>Munkaterület azonosítója
 
-       ![A csoportazonosító megadása](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+A **workspaceId** mezőbe írja be a Power BI-ban szereplő alkalmazás-munkaterület (csoport) GUID-azonosítóját. Ezt az információt beszerezheti az URL-címből, ha be van jelentkezve a Power BI szolgáltatásban vagy a PowerShell-lel.
 
-    8. A **jelentésazonosító** mezőbe írja be a Power BI szolgáltatásban lévő jelentés GUID azonosítóját.
+URL-cím <br>
 
-       ![A jelentésazonosító megadása](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+![workspaceId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-040.png)
 
-3. Futtassa az alkalmazást:
+PowerShell <br>
 
-    Válassza a **Futtatás** lehetőséget a **Visual Studióban**.
+```powershell
+Get-PowerBIworkspace -name "User Owns Embed Test"
+```
+
+   ![a PowerShell munkaterület-azonosítója](media/embed-sample-for-your-organization/embed-sample-for-your-organization-040-ps.png)
+
+### <a name="report-id"></a>Jelentésazonosító
+
+A **jelentésazonosító** mezőbe írja be a Power BI-ban szereplő jelentés GUID-azonosítóját. Ezt az információt beszerezheti az URL-címből, ha be van jelentkezve a Power BI szolgáltatásban vagy a PowerShell-lel.
+
+URL-cím <br>
+
+![jelentésazonosító](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+
+PowerShell <br>
+
+```powershell
+Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport
+```
+
+![a PowerShell jelentésazonosítója](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041-ps.png)
+
+### <a name="aadauthorityurl"></a>AADAuthorityUrl
+
+Töltse ki az **AADAuthorityUrl** adatait azzal az URL-címmel, amellyel beágyazhat a szervezeti bérlőn belül, vagy beágyazhat egy vendégfelhasználóval.
+
+A szervezeti bérlővel való beágyazáshoz használja a következő URL-címet: *https://login.microsoftonline.com/common/oauth2/authorize*.
+
+A vendéggel való beágyazáshoz használja a következő URL-címet: *https://login.microsoftonline.com/report-owner-tenant-id*. Ebben adja meg a jelentéstulajdonos bérlői azonosítóját a *report-owner-tenant-id* helyén.
+
+### <a name="run-the-application"></a>Alkalmazás futtatása
+
+1. Válassza a **Futtatás** lehetőséget a **Visual Studióban**.
 
     ![Alkalmazás futtatása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
 
-    Majd válassza a **Jelentés beolvasása** lehetőséget.
+2. Kattintson a **Jelentés beágyazása** lehetőségre. Válassza ki az alkalmazásban a jelentést, az irányítópultot vagy a csempét annak megfelelően, hogy melyiket szeretné kipróbálni.
 
     ![Tartalom kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
 
-    Most megtekintheti a jelentést a mintaalkalmazásban.
+3. Most megtekintheti a jelentést a mintaalkalmazásban.
 
     ![A jelentés megtekintése az alkalmazásban](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
@@ -255,10 +230,10 @@ A REST API-hívásához egy *Engedélyezési* fejlécet is meg kell adnia a *Tul
 
 #### <a name="get-reports-with-the-rest-api"></a>Jelentések lekérése a REST API-val
 
-A következő kódminta bemutatja, hogyan kérhet le jelentéseket a **REST API-val**:
+A következő kódminta bemutatja, hogyan kérhet le jelentéseket a REST API-val:
 
-> [!NOTE]  
-> A beágyazni kívánt tartalomelemek lekéréséről a [mintaalkalmazás](#embed-your-content-using-the-sample-application) **Default.aspx.cs** fájljában találhat példát. Van példa jelentésre, irányítópultra és csempére is.
+> [!Note]
+> A beágyazni kívánt tartalomelemek lekéréséről a [mintaalkalmazás](https://github.com/Microsoft/PowerBI-Developer-Samples) Default.aspx.cs fájljában találhat példát. Van példa jelentésre, irányítópultra és csempére is.
 
 ```csharp
 using Newtonsoft.Json;
@@ -340,7 +315,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 A JavaScript használatával egy jelentést tölthet be a div elembe a weblapon. A következő kódminta bemutatja, hogyan kérhet le jelentést egy adott munkaterületről:
 
 > [!NOTE]  
-> A beágyazni kívánt tartalomelemek betöltéséről a [mintaalkalmazás](#embed-your-content-using-the-sample-application) **Default.aspx** fájljában találhat példát. Van példa jelentésre, irányítópultra és csempére is.
+> A beágyazni kívánt tartalomelemek betöltéséről a [mintaalkalmazás](https://github.com/Microsoft/PowerBI-Developer-Samples) **Default.aspx** fájljában találhat példát.
 
 ```javascript
 <!-- Embed Report-->
@@ -439,6 +414,7 @@ A következő táblázat a [Microsoft Office 365-ben](../service-admin-premium-p
 | P3 |32 virtuális mag |16 virtuális mag, 100 GB RAM |16 virtuális mag |Másodpercenként 120 |
 | P4 |64 virtuális mag |32 virtuális mag, 200 GB RAM |32 virtuális mag |Másodpercenként 240 |
 | P5 |128 virtuális mag |64 virtuális mag, 400 GB RAM |64 virtuális mag |Másodpercenként 480 |
+
 > [!NOTE]
 > - Ha Microsoft Office-alkalmazásokkal szeretne beágyazni, az ingyenes Power BI-licenc lehetővé teszi, hogy az EM termékváltozatokat használja a tartalmak eléréséhez. A Powerbi.com vagy a Power BI Mobile használatakor azonban nem lehet hozzáférni a tartalmakhoz az ingyenes Power BI-licenccel.
 > - Ha a Powerbi.com vagy a Power BI Mobile használatával szeretne beágyazni a Microsoft Office-alkalmazásokkal, az ingyenes Power BI-licenccel hozzáférhet a tartalmakhoz.

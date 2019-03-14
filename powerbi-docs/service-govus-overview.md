@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 03/06/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a48ad26b9da5d5dba9fa04ab74301da7e1265d0b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4b017ae02ee88df47e426466c212ed6d87a2f92a
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292059"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580036"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI az USA kormányzati ügyfelei számára
 A **Power BI szolgáltatás** külön verziója érhető el az USA kormányzati ügyfeleinek az **egyesült államokbeli Office 365-közösségi** előfizetések részeként. A jelen cikkben a **Power BI szolgáltatás** kifejezetten az USA kormányzati ügyfeleinek készült verzióját tárgyaljuk, amely elkülönül és különbözik a **Power BI szolgáltatás** kereskedelmi verziójától.
@@ -54,7 +54,7 @@ A nyilvános felhőben elérhetőek az IP-tartományok, a kormányzati felhő es
 ## <a name="limitations-of-power-bi-us-government"></a>A Power BI US Government korlátozásai
 A **Power BI szolgáltatás** kereskedelmi verziójában elérhető egyes funkciók az USA kormányzati ügyfelek számára nyújtott **Power BI szolgáltatásban** *nem* elérhetők. A Power BI csapata folyamatosan dolgozik, hogy ezeket a funkciókat az USA kormányzati ügyfelek számára is elérhetővé tegye, és frissíteni fogja ezt a cikket, amikor a funkciók elérhetővé válnak.
 
-* **Beágyazás SharePoint Online-ba** – a Power BI-kijelzővel nem ágyazhatók be tartalmak a SharePoint Online-ba.
+* **Beágyazás SharePoint Online-ba** – a Power BI-kijelzővel nem ágyazhatók be tartalmak a SharePoint Online-ba. A biztonságos beágyazás azonban működik az [*Embed* kijelzővel](https://docs.microsoft.com/power-bi/service-embed-secure). Hozzá kell adnia az *app.powerbigov.us* címet a kivételek listájához, amit a [Tartalom SharePoint-oldalakon való beágyazásának engedélyezése vagy korlátozása](https://support.office.com/article/allow-or-restrict-the-ability-to-embed-content-on-sharepoint-pages-e7baf83f-09d0-4bd1-9058-4aa483ee137b) című cikk útmutatásával tehet meg.
 * A **Power BI US Government** csak **Pro licenccel** érhető el. Felügyeleti portálon (vagy felhasználók által) Power BI (ingyenes) licencre tett bármilyen hivatkozás egy kereskedelmi Power BI szolgáltatásfelhőben fut.
 * **Naplózás** – 2018. júniustól már elérhető a naplózás az Office 365 Biztonsági és Megfelelőségi portálján.
 * **Power BI-tartalom Cortanával** – A Power BI-eredmények nem jelennek meg a Cortanával végzett olyan keresések eredményeiben, amelyek a Power BI-tartalmakra (irányítópultok, jelentések és alkalmazások) vonatkoznak, valamint olyan eredményekben, amelyek meghatározott kulcsszavakhoz tartozó, Cortanára optimalizált jelentésoldalakat tartalmaznak.

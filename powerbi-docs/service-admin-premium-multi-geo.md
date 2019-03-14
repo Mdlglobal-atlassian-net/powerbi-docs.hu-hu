@@ -1,5 +1,5 @@
 ---
-title: Multi-Geo támogatás a Power BI Premiumhoz (előzetes verzió)
+title: Multi-Geo-támogatás a Power BI Premiumhoz
 description: Útmutató tartalom üzembe helyezéséhez a Power BI-bérlő saját régióján kívüli régiókban lévő adatközpontokban.
 author: minewiskan
 ms.author: owend
@@ -10,14 +10,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: bdbcb949ffe29efc4170391774da0863568e97e8
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: dfa412e32c49e0b3de406f2665fcd9bd6d1a345e
+ms.sourcegitcommit: bd1f0178fd9df152f9e9be57da415829f42116e9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794660"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57571979"
 ---
-# <a name="multi-geo-support-for-power-bi-premium-preview"></a>Multi-Geo támogatás a Power BI Premiumhoz (előzetes verzió)
+# <a name="multi-geo-support-for-power-bi-premium"></a>Multi-Geo-támogatás a Power BI Premiumhoz
 
 A Multi-Geo a Power BI Premium funkciója, amely segít a nemzetközi ügyfeleknek a regionális, üzletág-specifikus vagy vállalati adatok tárolási helyére vonatkozó előírások betartásában. Power BI Premium-ügyfélként a Power BI-bérlője saját régióján kívüli régiókban lévő adatközpontokban is helyezhet üzembe tartalmat. Egy geo (földrajzi értelemben) egynél több régiót is tartalmazhat. Az Egyesült Államok például egy geo, az USA nyugati középső régiója és az USA déli középső régiója pedig az Egyesült Államokon belüli régió. A tartalom üzembe helyezéséhez az alábbi helyek bármelyikét választhatja:
 
@@ -33,7 +33,7 @@ A Multi-Geo a Power BI Premium funkciója, amely segít a nemzetközi ügyfelekn
 
 A Multi-Geo nem elérhető a Power BI Germany, a 21Vianet által üzemeltetett Power BI China és az USA kormányzati szervei számára készült Power BI esetében.
 
-A Multi-Geo már a Power BI Embeddedben is elérhető. További információ: [Multi-Geo-támogatás a Power BI Embedded (előzetes verzió) számára](developer/embedded-multi-geo.md).
+A Multi-Geo már a Power BI Embeddedben is elérhető. További információ: [Multi-Geo-támogatás a Power BI Embedded számára](developer/embedded-multi-geo.md).
 
 ## <a name="using-multi-geo"></a>A Multi-Geo használata
 

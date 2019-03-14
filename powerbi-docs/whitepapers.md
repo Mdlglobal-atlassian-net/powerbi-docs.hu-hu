@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/09/2019
+ms.date: 03/07/2019
 ms.author: maggies
-ms.openlocfilehash: 76ea3250c3032c253b87f5f2b0713460a805787e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5af870bfd3cb6f9c925dd3d6268d0a1cb54df09b
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295810"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580013"
 ---
 # <a name="whitepapers-for-power-bi"></a>Power BI-tanulmányok
 
@@ -28,8 +28,8 @@ A tanulmányokkal behatóbban ismerheti meg a Power BI témaköreit. Itt találj
 | [Kapacitás tervezése beágyazott elemzéshez a Power BI Premiummal](https://aka.ms/pbiewhitepaper) |Ez a tanulmány útmutatást nyújt az alkalmazásfejlesztőknek/független szoftvergyártóknak a vállalat számára legmegfelelőbb kapacitás meghatározásához. | 2017. október |
 | [A Power BI Enterprise üzembehelyezési előkészületei](https://go.microsoft.com/fwlink/?linkid=2057861) |Ez egy technikai tanulmány, amely a jól teljesítő és biztonságos céges Power BI-környezettel kapcsolatos szempontokat ismerteti. | 2018. július |
 | [Kapacitástervezési útmutató a Power BI jelentéskészítő kiszolgálóhoz](report-server/capacity-planning.md) |Ez a tanulmány útmutatást nyújt a Power BI jelentéskészítő kiszolgáló kapacitástervezéséhez. Ehhez számos olyan terhelésteszt eredményét osztja meg, amelyek során különböző számítási feladatokat futtattak egy jelentéskiszolgálón. | 2018. március |
-| [Biztonság](service-admin-power-bi-security.md) |Részletes leírást nyújt a Power BI-on belüli biztonságról. | 2018. július |
-| [Power BI-tartalom terjesztése külső vendégfelhasználóknak az Azure Active Directory B2B használatával](https://aka.ms/powerbi-b2b-whitepaper)|Ez a tanulmány azt vázolja fel, hogyan terjeszthető tartalom a vállalaton kívüli felhasználóknak az Azure Active Directory vállalatközi (AAD B2B) integrációjával.| 2018. március |
+| [Biztonság](service-admin-power-bi-security.md) |Részletes leírást nyújt a Power BI-on belüli biztonságról. | 2019. március |
+| [Power BI-tartalom terjesztése külső vendégfelhasználóknak az Azure Active Directory B2B használatával](whitepaper-azure-b2b-power-bi.md)|Ez a tanulmány azt vázolja fel, hogyan terjeszthető tartalom a vállalaton kívüli felhasználóknak az Azure Active Directory vállalatközi (AAD B2B) integrációjával.| 2018. március |
 | [Fejlett elemzés a Power BI használatával](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Bemutatja a Power BI fejlett elemzési képességeit, beleértve a prediktív elemzéseket, az egyéni vizualizációkat, az R-integrációt és az adatelemzési kifejezéseket. | 2017. február |
 | [Bevált tervezési gyakorlatok jelentésekhez és vizualizációkhoz](visuals/power-bi-visualization-best-practices.md) |Ez a tanulmány a Power BI szolgáltatásban történő jelentéstervezés bevált gyakorlatait mutatja be. | 2018. június |
 | [Kétirányú szűrés](desktop-bidirectional-filtering.md) |Ismerteti a Power BI Desktopban elérhető kétirányú keresztszűrést (valamint az SQL Server Analysis Services 2016 működését is, mivel ugyanúgy viselkedik). | 2018. július |

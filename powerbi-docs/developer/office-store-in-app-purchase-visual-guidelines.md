@@ -1,30 +1,34 @@
 ---
-title: További vásárlásra lehet szükség – útmutatás Power BI-vizualizációkhoz
+title: Útmutató Power BI-vizualizációkhoz
 description: Megtudhatja, hogyan teheti közzé egyéni vizualizációit az AppSource-ban, amelyeket aztán mások is felfedezhetnek és használhatnak vásárlással.
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 11/26/2018
-ms.openlocfilehash: 92d4320026164e523297cbe48ee87ce33d9ab2f7
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.date: 03/10/2019
+ms.openlocfilehash: 02ce5146a154583d784de8030a0b0ec84740fcb3
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826583"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757300"
 ---
-# <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Útmutató további vásárlásos Power BI-vizualizációkhoz
+# <a name="guidelines-for-power-bi-visuals"></a>Útmutató Power BI-vizualizációkhoz
 
-Mostanáig a piactér (AppSource) csak ingyenes Power BI-vizualizációkat fogadott el. Ez a szabályzat megváltozott, így az AppSource-ra már a „További vásárlásra lehet szükség” címkéjű vizualizációk is beküldhetők. 
+## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Útmutató további vásárlásos Power BI-vizualizációkhoz
+
+Mostanáig a piactér (AppSource) csak ingyenes Power BI-vizualizációkat fogadott el. Ez a szabályzat megváltozott (2018. decemberben), így az AppSource-ra már a „További vásárlásra lehet szükség” címkéjű vizualizációk is beküldhetők. 
 
 A „További vásárlásra lehet szükség” típusú vizualizációk az Office áruházában található, alkalmazáson belüli vásárlást (IAP-t) lehetővé tevő bővítményekhez hasonlóak. Ilyen vizualizációkat a fejlesztők is beküldhetnek minősítésre, miután az AppSource csapata jóváhagyta azokat, illetve meggyőződtek arról, hogy megfelelnek a minősítési feltételeknek. A követelményekről a [Minősített egyéni vizualizációk](../power-bi-custom-visuals-certified.md) című cikkben talál további információt.
 
 > [!NOTE]
-> * A vizualizáció minősítéséhez az nem kapcsolódhat külső szolgáltatásokhoz és erőforrásokhoz.
-> * Minden ingyenes vizualizációnak meg kell őriznie a korábban kínált ingyenes funkciókat. A meglévő ingyenes funkciók mellett felvehet választható, speciális fizetett funkciókat. Javasoljuk, hogy a speciális funkciókkal rendelkező IAP-vizualizációkat új vizualizációkként vegye fel, és ne a meglévő ingyeneseket frissítse.
+> A vizualizáció minősítéséhez az nem kapcsolódhat külső szolgáltatásokhoz és erőforrásokhoz.
+
+>[!IMPORTANT]  
+> Ha a vizualizációt az ingyenesről „További vásárlásra lehet szükség” szintűre frissíti, a felhasználók ugyanazon szintű funkciókkal fognak rendelkezni, mint a frissítés előtt. A meglévő ingyenes funkciók mellett felvehet választható, speciális fizetett funkciókat. Javasoljuk, hogy a speciális funkciókkal rendelkező IAP-vizualizációkat új vizualizációkként vegye fel, és ne a meglévő ingyeneseket frissítse.
 
 
 ## <a name="what-changed-in-the-submission-process"></a>Mi változott a beküldési folyamatban?
@@ -33,19 +37,19 @@ A fejlesztők az Értékesítői információ-központról tölthetik fel az IAP
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Mik az IAP-funkciókkal rendelkező Power BI-vizualizációk?
 
-Az IAP-vizualizációk ingyenes funkciókat kínáló, ingyenes vizualizációk. Ezen kívül speciális funkciókkal is rendelkeznek, amelyek használatához további díjat kell fizetni. A fejlesztőknek a vizualizáció leírásában értesíteniük kell a felhasználókat arról, hogy mely funkciók használatához van szükség további vásárlásra. A Microsoft jelenleg nem nyújt natív API-kat az alkalmazások és bővítmények vásárlásának támogatásához.
+Az IAP-vizualizációk **ingyenes funkciókat** kínáló, **ingyenes** vizualizációk. Ezen kívül speciális funkciókkal is rendelkeznek, amelyek használatához további díjat kell fizetni. A fejlesztőknek a vizualizáció leírásában értesíteniük kell a felhasználókat arról, hogy mely funkciók használatához van szükség további vásárlásra. A Microsoft jelenleg nem nyújt natív API-kat az alkalmazások és bővítmények vásárlásának támogatásához.
 
 A fejlesztők bármilyen külső fizetési rendszert használhatnak az ilyen vásárlásokhoz. További információt [üzletszabályzatunkban](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads) talál.
 
 > [!NOTE]
-> Az ingyenes funkciókkal a vízjelek nem használhatóak. A fejlesztők előugró ablakot vagy vízjelet jeleníthetnek meg, ha a speciális, fizetős funkciókat érvényes licenc nélkül használják.  
+> Az ingyenes funkciókkal vagy vizualizációkkal a vízjelek nem használhatóak. A vízjelek csak az érvényes licenc nélkül használt, fizetős funkciókkal használhatók. Azt javasoljuk, hogy egy előugró ablakot jelenítsen meg, amely a licenccel kapcsolatos adatokat tartalmazza, ha a speciális, fizetős funkciókat érvényes licenc nélkül használják.  
 
 ## <a name="logo-guidelines"></a>Embléma-irányelvek
 
 Ez a szakasz az emblémák és logotipiák vizualizációkhoz való hozzáadásának részleteit ismerteti.
 
-> [!NOTE]
-> Az emblémák csak Szerkesztő módban használhatók. Az emblémák nem jelennek meg Megtekintési módban.
+> [!IMPORTANT]
+> Az emblémák **csak Szerkesztési módban** használhatók. Az emblémák **nem** jelennek meg Megtekintési módban.
 
 ![Definíciók](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d7f30dd43fe875380939520f3dc54fcbbe2f4c9c
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555941"
+---
 A **DAX** és az Excel képletei között az egyik lényeges különbség, hogy a DAX lehetővé teszi *teljes táblák* átadását a kifejezések között, és nem korlátozza azt egyetlen értékre. Ez azzal a jelentős előnnyel jár, hogy a DAX így lehetővé teszi a kifejezésekben a táblák szűrését, és ezt követően szűrt értékhalmazzal lehet műveleteket végezni.
 
 ![](media/7-6-dax-tables-and-filtering/dax-tables-filtering_1.png)

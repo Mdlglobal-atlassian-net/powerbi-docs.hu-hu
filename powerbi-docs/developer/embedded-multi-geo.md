@@ -1,5 +1,5 @@
 ---
-title: Multi-Geo-támogatás a Power BI Embedded (előzetes verzió) számára
+title: Multi-Geo-támogatás a Power BI Embedded számára
 description: Útmutató tartalom üzembe helyezéséhez a Power BI Embedded saját régióján kívüli régiókban lévő adatközpontokban.
 author: markingmyname
 ms.author: maghan
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 25627709af2faa78fd30b28cffba21d1442e0d3f
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: d139f96b6aec2db23b2eabc54c3fa326e4762766
+ms.sourcegitcommit: bd1f0178fd9df152f9e9be57da415829f42116e9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762421"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57572025"
 ---
-# <a name="multi-geo-support-for-power-bi-embedded-preview"></a>Multi-Geo-támogatás a Power BI Embedded (előzetes verzió) számára
+# <a name="multi-geo-support-for-power-bi-embedded"></a>Multi-Geo-támogatás a Power BI Embedded számára
 
-**Multi-Geo-támogatás a Power BI Embedded (előzetes verzió) számára** Ez azt jelenti, hogy az alkalmazásokat létrehozó független szoftverszolgáltatók és szervezetek, amelyek a Power BI Embeddedel ágyazzák be az elemzéseket az alkalmazásokba, már üzembe helyezhetik adataikat a világ különböző régióiban.
+A **Multi-Geo-támogatás a Power BI Embedded számára** azt jelenti, hogy az alkalmazásokat létrehozó független szoftverszolgáltatók és szervezetek, amelyek a Power BI Embeddedel ágyazzák be az elemzéseket az alkalmazásokba, már üzembe helyezhetik adataikat a világ különböző régióiban.
 
 A **Power BI Embedded** szolgáltatást használó ügyfelek már beállíthatnak egy **A kapacitást** a **Multi-Geo** beállítási lehetőségeinek használatával, ugyanazon funkciók és korlátozások alapján, amelyeket a [Power BI Premium is támogat a Multi-Geo funkció használatakor](../service-admin-premium-Multi-Geo.md).
 

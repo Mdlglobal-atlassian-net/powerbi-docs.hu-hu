@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a4f10253619393ffd9807b1e33730a4dd37a47ff
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f96e5235aba6f90e6f80286ebfb409004ccd5052
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277388"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580243"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI-irányítópult és -jelentés megosztása munkatársakkal és másokkal
 A *Megosztással* egyszerűen biztosíthatja néhány személy hozzáférését az irányítópultjaihoz és jelentéseihez. A Power BI-ban [többféle módon valósítható meg az irányítópultok és jelentések közös használata és terjesztése](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -98,13 +98,15 @@ A megosztás cégen kívüli címzettjei e-mailt kapnak a megosztott irányító
 
 Bejelentkezés után a bal oldali navigációs panel nélkül, a saját böngészőjükben tekinthetik meg a megosztott irányítópultot vagy jelentést, nem pedig a szokásos Power BI-portálon. Az irányítópult vagy jelentés jövőbeni eléréséhez menteniük kell a hivatkozást a kedvencek közé.
 
-Ennek az irányítópultnak vagy jelentésnek a tartalmát egyáltalán nem módosíthatják. Használhatják a jelentés diagramjait és megváltoztathatják a szűrőket vagy a szeletelőket, de a változásokat nem menthetik.
+Ennek az irányítópultnak vagy jelentésnek a tartalmát egyáltalán nem módosíthatják. Használhatják a jelentés diagramjait és megváltoztathatják a szűrőket vagy a szeletelőket, de a változásokat nem menthetik. 
 
 A megosztott irányítópultot vagy jelentést csak a közvetlen címzettek láthatják. Ha az e-mailt például a Vicki@contoso.com címre küldte, akkor az irányítópultot csak Vicki tekintheti meg. Az irányítópultot más még a hivatkozás birtokában sem fogja látni, és Vickinek is ugyanezt az e-mail-címet kell használnia az irányítópult eléréséhez. Ha más e-mail-címmel jelentkezik be, akkor ő sem fog hozzáférni az irányítópulthoz.
 
 A cégen kívüli személyek egyáltalán nem fogják látni az adatokat, ha szerepkör- vagy sorszintű biztonság van alkalmazva a helyszíni Analysis Services rendszerbeli táblázatos modellekben.
 
 Ha Power BI-mobilalkalmazásból küld hivatkozást cégen kívüli címzettnek, akkor a hivatkozásra kattintva az irányítópult böngészőben fog megnyílni, nem a Power BI-mobilalkalmazásban.
+
+Ha a vendégfelhasználókat az [Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat](service-admin-portal.md#export-and-sharing-settings) beállítással engedélyezte, nem vonatkoznak rájuk az alapértelmezett használati funkciók. [További információ](service-admin-azure-ad-b2b.md)
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 Irányítópultok vagy jelentések megosztásakor vegye figyelembe a következőket:
