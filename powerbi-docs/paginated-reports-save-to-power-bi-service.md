@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: d1d1f3c34483737e49129176c833be8384ade999
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 58fc7a6b8ebc5519c1c4bb1835758ca94ba225d2
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324715"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174545"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Lapszámozott jelentés közzététele a Power BI szolgáltatásban (előzetes verzió)
 
 Ebből az oktatóanyagból a helyi számítógépről feltöltött lapszámozott jelentések Power BI szolgáltatásba való közzétételét sajátíthatja el. Lapszámozott jelentéseket a saját munkaterületre, vagy bármely más munkaterületre is feltölthet, ha a munkaterület prémium szintű kapacitásban van. Keresse a gyémánt ikont ![A Power BI Premium-kapacitás gyémánt ikonja](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) a munkaterület neve mellett. 
 
-Ha jelentésének helyszíni adatforrása van, akkor a jelentés feltöltése után [átjárót kell létrehoznia](#create-a-gateway-to-an-on-premises-data-source).
+Ha jelentésének helyszíni adatforrása van, akkor a jelentés feltöltése után [átjárót kell létrehoznia](#create-a-gateway).
 
 ## <a name="add-a-workspace-to-a-premium-capacity"></a>Munkaterület hozzáadása prémium szintű kapacitáshoz
 

@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8808391d0794ec4a487526cc5bbe4216fe0f75a6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 760f469ff3b146671292efd70a3c6854aec98b5a
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275318"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174591"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-mobile-apps"></a>A Power BI mobilalkalmazásokhoz optimalizált jelentések létrehozása
-Javíthatja a felhasználói élményt a jelentések mobilalkalmazással, telefonon vagy táblagépen történő megtekintésénél. Létrehozhatja a jelentés kifejezetten telefonokra vagy táblagépekre tervezett álló tájolású elrendezését. A Power BI Desktopban és a Power BI szolgáltatásban a jelentés optimalizálása a vizualizációk átrendezését és átméretezését, jelenti a kényelmes használat érdekében. Nem szükséges mindegyiket felhasználni sem. Emellett [*rugalmas* vizualizációkat](#optimize-a-visual-for-any-size) és [rugalmas szeletelőket](#enhance-slicers-to-to-work-well-in-phone-reports) is létrehozhat, amelyek megfelelően átméretezhetők a telefonon való megtekintéshez. Ha a jelentéshez szűrőket is hozzáad, azok automatikusan megjelennek az optimalizált jelentésben. A jelentés olvasói is láthatják őket, és a használatukkal szűrhetik a jelentés adatait.
+Javíthatja a felhasználói élményt a jelentések mobilalkalmazással, telefonon vagy táblagépen történő megtekintésénél. Létrehozhatja a jelentés kifejezetten telefonokra vagy táblagépekre tervezett álló tájolású elrendezését. A Power BI Desktopban és a Power BI szolgáltatásban a jelentés optimalizálása a vizualizációk átrendezését és átméretezését, jelenti a kényelmes használat érdekében. Nem szükséges mindegyiket felhasználni sem. Emellett [*rugalmas* vizualizációkat](#optimize-a-visual-for-any-size) és [rugalmas szeletelőket](#enhance-slicers-to-work-well-in-phone-reports) is létrehozhat, amelyek megfelelően átméretezhetők a telefonon való megtekintéshez. Ha a jelentéshez szűrőket is hozzáad, azok automatikusan megjelennek az optimalizált jelentésben. A jelentés olvasói is láthatják őket, és a használatukkal szűrhetik a jelentés adatait.
 
 ![Optimalizált jelentés egy telefonon](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 98c637692b3c31e598a11c3039b60be3dec61348
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a593a918c59452c922f6061189ad6c2885478aad
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281183"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174867"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>A Power BI által támogatott nyelvek és országok/régiók
 
@@ -120,7 +120,7 @@ A Power BI Desktopot kétféle módon szerezheti be: Letöltheti vagy telepíthe
 
 * Ha [a Power BI Desktopot a Windows Áruházból telepíti](#choose-a-language-for-power-bi-desktop-installed-from-the-windows-store), akkor az minden nyelvet telepít és a Windows alapértelmezett nyelvén jelenik meg.
 * Ha [letölti a Power BI Desktopot](#choose-a-language-when-you-download-power-bi-desktop), akkor Ön választja ki a nyelvet a letöltés során. 
-* Emellett [kiválaszthatja a használni kívánt területi beállítást, amikor adatokat importál](#choose-the-locale-to-be-used-when-importing-data-into-power-bi-desktop) egy adott jelentéshez. 
+* Emellett [kiválaszthatja a használni kívánt területi beállítást, amikor adatokat importál](#choose-the-locale-for-importing-data-into-power-bi-desktop) egy adott jelentéshez.
 
 ### <a name="choose-a-language-for-power-bi-desktop-installed-from-the-windows-store"></a>Nyelv megadása a Windows Áruházból telepített Power BI Desktophoz
 1. [Telepítse a Power BI Desktopot](http://aka.ms/pbidesktopstore) a Windows Áruházból.

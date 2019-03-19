@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 145ef2da33e0d596f03f75c76aaa99e90f58c4c2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c1e8e449c2db7e751d719f8fca38b194a9a0042a
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288520"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174568"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Együttműködés a Power BI alkalmazás-munkaterületén
 A Power BI alkalmazás-munkaterületek kitűnően alkalmasak arra, hogy munkatársaival irányítópultokon, jelentéseken és adatkészleteken együttműködve hozzanak létre *alkalmazásokat*. Az együttműködés a Power BI-ban nem csupán a munkaterületekre terjed ki. Az Office 365 további csoportszolgáltatásokat is kínál, mint a fájlok megosztása a OneDrive Vállalati verziójában, az Exchange-beszélgetések, a megosztott naptár és feladatok és így tovább. További ismereteket is szerezhet az [Office 365-csoportokról](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
@@ -49,7 +49,7 @@ Az Office 365-beli együttműködés kiindulópontja a Power BI-beli alkalmazás
 2. Ebből a menüből több módon is együttműködhet a csoportjával: 
    
    * Részt vehet [csoportbeszélgetésben az Office 365-ben](service-collaborate-power-bi-workspace.md#have-a-group-conversation-in-office-365).
-   * [Eseményt ütemezhet](service-collaborate-power-bi-workspace.md#schedule-an-event-on-the-group-workspace-calendar) az alkalmazás csoport-munkaterületének naptárában.
+   * [Eseményt ütemezhet](service-collaborate-power-bi-workspace.md#schedule-an-event-on-the-apps-group-workspace-calendar) az alkalmazás csoport-munkaterületének naptárában.
    
    Az alkalmazás csoport-munkaterületének első megnyitása az Office 365-ben eltarthat egy ideig. Várjon 15-30 percet, majd frissítse az oldalt.
 

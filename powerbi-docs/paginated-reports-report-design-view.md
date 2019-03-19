@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 2ee381cae5bd0c0ed1e6a8cab1cd33361a05814f
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 7b84b967a9e6228258027302fc2e4ad4df5b0073
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324816"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174775"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Ismerkedés a lapszámozott jelentések Jelentéstervező nézetével (előzetes verzió)
 
@@ -22,12 +22,12 @@ A Jelentéskészítő Jelentéstervező nézete a Power BI szolgáltatásba köz
 
 ![A Jelentéskészítő Jelentéstervező nézete](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 
-1. [Jelentésadatok panel](#report-data-pane) 
-2. [Jelentéstervező felület](#report-design-surface)  
-3. [Paraméterek panel](#parameters-pane) 
-4. [Tulajdonságok panel](#properties-pane) 
-5. [Csoportosítás panel](#grouping-pane) 
-6. [Aktuális jelentés állapotsávja](#current-report-status-bar)  
+1. [Jelentésadatok panel](#1-report-data-pane) 
+2. [Jelentéstervező felület](#2-report-design-surface)  
+3. [Paraméterek panel](#3-parameters-pane) 
+4. [Tulajdonságok panel](#4-properties-pane) 
+5. [Csoportosítás panel](#5-grouping-pane) 
+6. [Aktuális jelentés állapotsávja](#6-current-report-status-bar)  
   
 ## <a name="1-report-data-pane"></a>1. A Jelentésadatok panel  
  A Jelentésadatok panelen a jelentéshez szükséges jelentésadatokat és -forrásokat határozhatja meg a jelentés elrendezésének megtervezése előtt. A Jelentésadatok panelre többek közt adatforrásokat, adathalmazokat, számított mezőket, jelentésparamétereket és képeket vehet fel.  

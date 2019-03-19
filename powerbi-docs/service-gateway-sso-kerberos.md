@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: e2183596a66526ced7cfa4a298420972b63a87ca
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: eb50d8096c448e1a01533a7d8570e9dcc716ef23
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226250"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174982"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
@@ -60,7 +60,7 @@ A standard telepítés során az átjáró a gép helyi szolgáltatásfiókjáva
 
 ![Képernyőkép a szolgáltatásfiókról](media/service-gateway-sso-kerberos/service-account.png)
 
-A Kerberos által korlátozott delegálás engedélyezéséhez az átjárót tartományi fiókkal kell futtatni, ha az Azure Active Directory (Azure AD) példánya még nincs szinkronizálva a helyi Active Directoryval (az Azure AD DirSync/Connect használatával). Tartományi fiókra váltáshoz tekintse meg a cikk [Átjáró váltása tartományi fiókra](#switching-the-gateway-to-a-domain-account) részét.
+A Kerberos által korlátozott delegálás engedélyezéséhez az átjárót tartományi fiókkal kell futtatni, ha az Azure Active Directory (Azure AD) példánya még nincs szinkronizálva a helyi Active Directoryval (az Azure AD DirSync/Connect használatával). Tartományi fiókra váltáshoz tekintse meg a cikk [Átjáró váltása tartományi fiókra](#switch-the-gateway-to-a-domain-account) részét.
 
 > [!NOTE]
 > Ha az Azure AD Connect konfigurálva van, és a felhasználói fiókok szinkronizálva vannak, az átjárószolgáltatásnak nem kell helyi Azure AD-kereséseket végrehajtania futásidőben. Az átjárószolgáltatáshoz használhatja a helyi szolgáltatási SID-t (azaz nincs szükség tartományi fiókra). A Kerberos által korlátozott delegálás a cikkben ismertetett konfigurációs lépései ugyanezek, mint ez a konfiguráció. Csak a tartományi fiók helyett az átjáró számítógép-objektumára kell alkalmazni az Azure AD-ben.
@@ -188,7 +188,7 @@ Ha szükséges, az átjárót helyi szolgáltatásfiók helyett tartományi fió
 
 ## <a name="configure-sap-bw-for-sso"></a>Az SAP BW konfigurálása egyszeri bejelentkezéshez
 
-Most, hogy megismerkedett a Kerberos átjáróval történő működésével, konfigurálhat egy egyszeri bejelentkezést az SAP Business Warehouse (SAP BW) szolgáltatáshoz. Az alábbi lépések azt feltételezik, hogy már [előkészült a Kerberos által korlátozott delegáláshoz](#preparing-for-kerberos-constrained-delegation) a cikkben korábban leírtak szerint.
+Most, hogy megismerkedett a Kerberos átjáróval történő működésével, konfigurálhat egy egyszeri bejelentkezést az SAP Business Warehouse (SAP BW) szolgáltatáshoz. Az alábbi lépések azt feltételezik, hogy már [előkészült a Kerberos által korlátozott delegáláshoz](#prepare-for-kerberos-constrained-delegation) a cikkben korábban leírtak szerint.
 
 Ez az útmutató próbál olyan átfogó lennie, amennyire csak lehetséges. Ha már végrehajtott ezek közül néhány lépést, azokat kihagyhatja. Például már létrehozhatott egy szolgáltatásfelhasználót az SAP BW-kiszolgálóhoz, és leképezhette rá az egyszerű szolgáltatásnevet, vagy már telepíthette a `gsskrb5` kódtárat.
 
@@ -356,7 +356,7 @@ Ha nincs konfigurálva az Azure AD Connect, kövesse ezeket a lépéseket minden
 
 ### <a name="add-a-new-sap-bw-application-server-data-source-to-the-power-bi-service"></a>Új SAP BW-alkalmazáskiszolgáló-adatforrás hozzáadása a Power BI szolgáltatáshoz
 
-Adja hozzá az SAP BW-adatforrást az átjáróhoz: kövesse a cikkben szereplő korábbi, [jelentés futtatásával](#running-a-power-bi-report) kapcsolatos utasításokat.
+Adja hozzá az SAP BW-adatforrást az átjáróhoz: kövesse a cikkben szereplő korábbi, [jelentés futtatásával](#run-a-power-bi-report) kapcsolatos utasításokat.
 
 1. Az adatforrás konfigurációs ablakában adja meg az Alkalmazáskiszolgáló **Gazdagépnév**, **Rendszer száma** és **Ügyfél-azonosító** adatait, ahogy azt a Power BI Desktopból az SAP BW-kiszolgálóba való bejelentkezés során tenné. A **Hitelesítési módszer** elemnél válassza a **Windows** lehetőséget.
 
