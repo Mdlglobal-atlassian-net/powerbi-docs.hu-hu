@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a8a7aa8ed33e5c1baa7319ea65a67b6338c41ca2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: fc403220ae45fda879802fe480853a3c94fd53c0
+ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277802"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58220954"
 ---
 # <a name="using-computed-entities-on-power-bi-premium-preview"></a>Számított entitások használata a Power BI Premiumban (előzetes verzió)
 
@@ -79,7 +79,9 @@ Fontos megjegyezni, hogy ha a munkaterületet eltávolítja a Power BI Premium-k
 
 A kifejezetten a vállalat Azure Data Lake Storage Gen2-fiókjában létrehozott adatfolyamok esetében a csatolt entitások és a számított entitások csak akkor működnek helyesen, ha ugyanabban a tárfiókban helyezkednek el. További információ: [Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
 
-Csatolt entitások a CDM-mappából létrehozott adatfolyamokhoz sem érhetők el. Lásd: [CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)](service-dataflows-add-cdm-folder.md).
+Csatolt entitások a Common Data Model- (CDM-) mappából létrehozott adatfolyamokhoz nem érhetők el. További információ: [CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)](service-dataflows-add-cdm-folder.md).
+
+Ajánlott eljárásként hozzon létre egy új entitást a számítások elvégzésére, ha a számítás helyszíni és felhőbeli adatok kombinációját használja. Ez jobban használható, mintha már meglévő entitást használna a számításokhoz, például olyan entitást, amely mindkét forrásból lekérdez adatokat, és amely in-lake típusú átalakításokat is végez.
 
 ## <a name="next-steps"></a>Következő lépések
 

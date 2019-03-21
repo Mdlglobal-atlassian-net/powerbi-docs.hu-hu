@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: fb2b169650360a7dc6a4afaee1c43abb733255c9
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 9fbd47dcefb2daf8d86c6932b5c70617b8bf7ac9
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430993"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964709"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -22,13 +22,19 @@ Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket 
 
 ## <a name="upcoming-webinars"></a>Közelgő webináriumok
 
-Még nincs tervezett webinárium. Látogasson vissza később közelgő eseményekért.
+**Kölcsönös előnyök a fogyasztási cikkek gyártói és kiskereskedői számára**
+<br>szerző: Liz McCreesh
+<br>[Regisztráció](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
 
 >[A Power BI-közösség közelgő webináriumai](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Kiemelt előadások
 
 Igény szerint elérhető népszerű előadások az első lépésekhez
+
+**A Power BI és a modern és vállalati üzleti intelligencia jövője**
+<br>szerző: Arun Ulag és Amir Netz
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
 
 **Power BI – első lépések**
 <br>by Miguel Martinez
@@ -46,13 +52,9 @@ Igény szerint elérhető népszerű előadások az első lépésekhez
 <br>előadó: Cory Hrncirik és Miguel Martinez
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
 
-**Power BI: Helyesen elvégzett elemzések**
-<br>Előadó: Gohul Shanmugalingam
-<br>[Regisztráció és megtekintés](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
-
-**Tegye Power BI-adatait láthatóvá:  Alapvető diagramtípusok és a használatuk**
-<br>by Miranda Li
-<br>[Regisztráció és megtekintés](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+**Az alkalmazások magas szintre emelése a Power BI JavaScript API használatával**
+<br>szerző: Nimrod Shalit
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-PBI-JavaScript-API-video.html)
 
 **Power BI, Excel és Office 365: Vállalati adatforrások optimalizálása**
 <br>előadó: Olaf Hubel és Miguel Martinez
@@ -62,10 +64,6 @@ Igény szerint elérhető népszerű előadások az első lépésekhez
 <br>by Miranda Li
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**A Microsoft Flow és a PowerApps teljes gazdasági hatása**
-<br>Készítette Jonathan Lipsitz és Enrique Plaza Garcia
-<br>[Regisztráció és megtekintés](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
-
 >[Böngészés közösségi szakértőink felvételről megtekinthető előadásainak könyvtárában](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
 ## <a name="on-demand-webinars"></a>Igény szerint megtekinthető előadások
@@ -74,9 +72,25 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 
 ### <a name="getting-started"></a>Első lépések
 
+**Napi üzleti folyamatok automatizálása a Power BI, a PowerApps és a Microsoft Flow használatával**
+<br>szerző: Wim Coorevits és Enrique Plaza Garcia
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
+
+**Power BI: Helyesen elvégzett elemzések**
+<br>Előadó: Gohul Shanmugalingam
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
+
+**Tegye Power BI-adatait láthatóvá:  Alapvető diagramtípusok és a használatuk**
+<br>by Miranda Li
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+
 **Útmutató: Látványos Power BI-jelentések tervezése**
 <br>Készítette Charles Sterling
 <br>[Megtekintés](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**A Microsoft Flow és a PowerApps teljes gazdasági hatása**
+<br>Készítette Jonathan Lipsitz és Enrique Plaza Garcia
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 
 **Együtt még jobb: A Power BI öt előnye az Excel-felhasználók számára**
 <br>Készítette Carlos Otero és Miguel Martinez
@@ -100,6 +114,10 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 
 ### <a name="partners"></a>Partnerek ###
 
+**Ügyféladatok átalakítása kereskedelmi előnnyé a Power BI használatával**
+<br>szerző: Angad Soni, Hitachi Solutions
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?LCID=EN-US?wt.mc_id=undefined)
+
 **Jól bevált egészségügyi megoldások javítanak a betegek eredményein és a nyereségességen**
 <br>Készítette Stephen Cracknell és Stuart Macanliss, US Medical IT
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
@@ -111,6 +129,10 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 **Alkalmazott intelligencia az értékesítésben és a szolgáltatásokban**
 <br>Készítette Ed Bobrin, Avanade
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
+
+**Egy sikeres trendkurátor 5 eljárása - Rohit Bhargava**
+<br>szerző: Rohit Bhargava, Non-Obvious
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Gyártók: Az iparága digitális átalakuláson megy keresztül – hogyan őrizheti meg vezető pozícióját, és hogyan maximalizálhatja a jövedelmezőséget az analitikai lehetőségek kiaknázásával**
 <br>Készítette Jon Thompson (Blue Margin) és Jim Pastor (Elgin Fastener Group)
