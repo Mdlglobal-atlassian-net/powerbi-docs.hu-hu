@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: 9fbd47dcefb2daf8d86c6932b5c70617b8bf7ac9
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 3a5a84bdb22996fc3b773a861a85e82985cd036c
+ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57964709"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58220977"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -39,6 +39,10 @@ Igény szerint elérhető népszerű előadások az első lépésekhez
 **Power BI – első lépések**
 <br>by Miguel Martinez
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
+
+**A Power BI mobilalkalmazás használatának első lépései**
+<br>by Maya Shenhav
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-Landing-Getting-Started-with-the-Power-BI-Mobile-App-Video.html?LCID=EN-US)
 
 **Ismerje meg 20 percben, hogyan igazodhat el a Power BI-irányítópulton**
 <br>by Miguel Martinez
