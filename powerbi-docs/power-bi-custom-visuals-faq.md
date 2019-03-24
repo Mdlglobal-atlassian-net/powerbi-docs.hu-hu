@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: d17a5875569f29da41d62ca61efcbdae3b9242e9
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: 9c5d2665f012881f951a186c3ec8c9fd94031a28
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757323"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980358"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Gyakori kérdések – Power BI-beli egyéni vizualizációk
 
@@ -23,7 +23,7 @@ ms.locfileid: "57757323"
 
 ### <a name="how-can-the-admin-manage-the-organizational-custom-visuals"></a>Hogyan felügyelheti a rendszergazda az egyéni szervezeti vizualizációkat?
 
-A felügyeleti portál „Egyéni szervezeti vizualizációk” lapján a rendszergazda megtekintheti és [felügyelheti a vállalat összes egyéni szervezeti vizualizációját](https://docs.microsoft.com/power-bi/service-admin-portal#organization-visuals): hozzáadhat, letilthat, engedélyezhet és törölhet.
+A felügyeleti portál „Egyéni szervezeti vizualizációk” lapján a rendszergazda megtekintheti és [felügyelheti a vállalat összes egyéni szervezeti vizualizációját](service-admin-portal.md#organizational-visuals): hozzáadhat, letilthat, engedélyezhet és törölhet.
 Most már nem kell ezeket a vizualizációkat e-mailek vagy megosztott mappák segítségével megosztani. A szervezeti adattárban való üzembe helyezésük után a szervezet felhasználói könnyedén megtalálhatják azokat, és közvetlenül a Power BI Desktopból vagy szolgáltatásból importálhatják az egyéni szervezeti vizualizációkat a jelentéseikbe. Az egyéni szervezeti vizualizációk a beépített áruházból érhetők el (az asztali verzióban és a szolgáltatásban is), a *SAJÁT SZERVEZET* lapon. Miután a rendszergazda feltölti egy egyéni szervezeti vizualizáció új verzióját, a szervezet összes tagja megkapja ugyanazt a frissített verziót. A jelentések létrehozóinak nem kell törölniük a vizualizációt a jelentésükből a vizualizáció új verziójának beszerzéséhez, és a rendszer automatikusan frissíti az adott vizualizációt használó összes jelentést! A frissítési mechanizmus hasonló a piactéren beszerzett vizualizációkéhoz.
 
 ### <a name="if-an-admin-uploads-a-custom-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Ha egy rendszergazda feltölt egy egyéni vizualizációt a nyilvános piactérről a szervezet áruházába, az automatikusan frissül, ha a készítője frissíti a nyilvános piactéren a vizualizációt?

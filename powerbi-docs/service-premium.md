@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: cb9280f47f1f2d28ce6fabda2dbc173fbdc837ac
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: f327cb95c10756f079778d20e62cba4871b95c02
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226135"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964939"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Mi az a Microsoft Power BI Premium?
 
@@ -66,15 +66,15 @@ A Power BI Premium csomópont-konfigurációkban különböző virtuálismag-kap
 
 * Az EM csomópontok csak beágyazott környezetekben használhatók. Az EM csomópontok nem férhetnek hozzá prémium képességekhez, például alkalmazások Power BI Pro-licenccel nem rendelkező felhasználókkal való megosztásához.
 
-| Kapacitáscsomópont | Összes virtuális mag<br/>*(Háttérrendszer + előtérrendszer)*  | Háttérrendszeri virtuális magok <sup>[1](#fn1)</sup> | Előtérrendszeri virtuális magok <sup>[2](#fn2)</sup> | DirectQuery-/élő kapcsolat korlátai | Egyidejű frissítések maximális száma |  Elérhetőség
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| EM1 (havonta megújuló) |1 virtuális mag |0,5 virtuális mag, 2,5 GB RAM |0,5 virtuális mag |Másodpercenként 3,75 |  1 | Elérhető |
-| EM2 (havonta megújuló) |2 virtuális mag |1 virtuális mag, 5 GB RAM |1 virtuális mag |Másodpercenként 7.5 |  2 | Elérhető |
-| EM3 (havonta megújuló) |4 virtuális mag |2 virtuális mag, 10 GB RAM |2 virtuális mag | | 3 |  Elérhető |
-| P1 |8 virtuális mag |4 virtuális mag, 25 GB RAM |4 virtuális mag |Másodpercenként 30 | 6 | Elérhető (havonta megújulóként is elérhető) |
-| P2 |16 virtuális mag |8 virtuális mag, 50 GB RAM |8 virtuális mag |Másodpercenként 60 | 12 | Elérhető |
-| P3 |32 virtuális mag |16 virtuális mag, 100 GB RAM |16 virtuális mag |Másodpercenként 120 | 24 | Elérhető |
-| | | | | | | |
+| Kapacitáscsomópont | Összes virtuális mag<br/>*(Háttérrendszer + előtérrendszer)*  | Háttérrendszeri virtuális magok <sup>[1](#fn1)</sup> | Előtérrendszeri virtuális magok <sup>[2](#fn2)</sup> | DirectQuery-/élő kapcsolat korlátai | Egyidejű frissítések maximális száma |
+| --- | --- | --- | --- | --- | --- |
+| EM1 (havonta megújuló) |1 virtuális mag |0,5 virtuális mag, 2,5 GB RAM |0,5 virtuális mag |Másodpercenként 3,75 |  1 |
+| EM2 (havonta megújuló) |2 virtuális mag |1 virtuális mag, 5 GB RAM |1 virtuális mag |Másodpercenként 7.5 |  2 |
+| EM3 (havonta megújuló) |4 virtuális mag |2 virtuális mag, 10 GB RAM |2 virtuális mag | 15 | 3 |
+| P1 |8 virtuális mag |4 virtuális mag, 25 GB RAM |4 virtuális mag |Másodpercenként 30 | 6 |
+| P2 |16 virtuális mag |8 virtuális mag, 50 GB RAM |8 virtuális mag |Másodpercenként 60 | 12 |
+| P3 |32 virtuális mag |16 virtuális mag, 100 GB RAM |16 virtuális mag |Másodpercenként 120 | 24 |
+| | | | | | |
 
 <a name="fn1">1</a>: A webszolgáltatásokhoz az előtérrendszeri virtuális magok használatosak. Például az irányítópultokhoz, a jelentés- és dokumentumkezeléshez, a hozzáférések kezeléséhez, az ütemezéshez, az API-khoz, a feltöltésekhez, és letöltésekhez és többnyire mindenhez, ami a felhasználói élmény részét képzi. 
 
@@ -82,32 +82,7 @@ A Power BI Premium csomópont-konfigurációkban különböző virtuálismag-kap
 
 ## <a name="workloads-in-premium-capacity"></a>Számítási feladatok prémium szintű kapacitásban
 
-A **Power BI Premium** és a **Power BI Embedded** kapacitásai alapértelmezés szerint csak a Power BI-lekérdezések felhőbeli futtatásával társított számítási feladatot támogatják. A Premium emellett **AI**, **adatfolyamok**, és **lapszámozott jelentések** számára is támogatja a további számítási feladatokat. Ezek a számítási feladatok a Power BI felügyeleti portálján, vagy a Power BI REST API-n keresztül engedélyezhetők. Beállíthatja az egyes számítási feladatok által felhasználható memória maximumát is, hogy szabályozni tudja a különböző számítási feladatok egymásra gyakorolt hatását. További információ: [Számítási feladatok konfigurálása](service-admin-premium-workloads.md).
-
-### <a name="default-memory-settings"></a>Alapértelmezett memóriabeállítások
-
-Az alábbi táblázatok a különböző elérhető [kapacitás-csomópontokon](#premium-capacity-nodes) alapuló alapértelmezett és minimális memóriaértékeket ismertetik. A memória adatfolyamokhoz dinamikusan, lapszámozott jelentésekhez viszont statikusan van lefoglalva. További információt a következő, [Szempontok lapszámozott jelentések esetén](#considerations-for-paginated-reports) című szakaszban talál.
-
-#### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office SKU-k szoftverszolgáltatásokhoz (SaaS)
-
-|                     | EM3                      | P1                       | P2                      | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Oldalakra osztott jelentések | N.A. | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% | Alapértelmezés szerint 20%; minimum 2,5% |
-| Adatfolyamok | Alapértelmezés szerint 20%; minimum 8%  | Alapértelmezés szerint 20%; minimum 4%  | Alapértelmezés szerint 20%; minimum 2% | Alapértelmezés szerint 20%; minimum 1%  |
-| | | | | |
-
-#### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Microsoft Office SKU-k platformszolgáltatásokhoz (PaaS)
-
-|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
-|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Oldalakra osztott jelentések | N.A.                      | N.A.                      | N.A.                     | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% | Alapértelmezés szerint 20%; minimum 2,5% |
-| Adatfolyamok         | Alapértelmezés szerint 27%; minimum 27% | Alapértelmezés szerint 20%; minimum 16% | Alapértelmezés szerint 20%; minimum 8% | Alapértelmezés szerint 20%; minimum 4%  | Alapértelmezés szerint 20%; minimum 2% | Alapértelmezés szerint 20%; minimum 1%   |
-
-### <a name="considerations-for-paginated-reports"></a>Szempontok lapszámozott jelentések esetén
-
-Ha a lapszámozott jelentések számítási feladatot használja, ügyeljen rá, hogy a lapszámozott jelentések lehetővé teszik, hogy a jelentés renderelése során saját kódot futtasson (például dinamikusan változtassa a szövegszínt a tartalom alapján). Ezt figyelembe véve, a Power BI Premium-kapacitás védelme érdekében a lapszámozott jelentéseket a kapacitás egy korlátozott területén belül futtatjuk. Ehhez a területhez az Ön által megadott maximális memóriát foglaljuk le, akár aktív a számítási feladat, akár nem. Ha egy kapacitásban több Power BI-jelentést vagy -adatfolyamot használ, ügyeljen rá, hogy a lapszámozott jelentésekhez kellően alacsony memóriakorlátot adjon meg, hogy azok ne befolyásolhassák hátrányosan a többi számítási feladatot.
-
-Ritkán előfordulhat, hogy a „lapszámozott jelentések” számítási feladat elérhetetlenné válik. Ilyen esetben a számítási feladat hibás állapotot jelez a felügyeleti portálon, a felhasználók pedig időtúllépést tapasztalnak a jelentés renderelése során. A probléma megoldásához tiltsa le, majd engedélyezze újra a számítási feladatot.
+A Power BI Premium és a Power BI Embedded kapacitásai alapértelmezés szerint csak a Power BI-lekérdezések felhőbeli futtatásával társított számítási feladatot támogatják. A Premium emellett **AI**, **adatfolyamok**, és **lapszámozott jelentések** számára is támogatja a további számítási feladatokat. Ahhoz, hogy a számítási feladatok használni tudják a kapacitás erőforrásait, engedélyezni kell őket a Power BI felügyeleti portálján vagy a Power REST API használatával. Minden számítási feladat rendelkezik alapértelmezett beállításokkal arra, hogy az egyes számítási feladatok milyen maximális memóriamennyiséget használhatnak. Beállíthat azonban másféle memóriafogyasztást is, így meghatározhatja, hogy a számítási feladatok milyen kapcsolatban álljanak egymással, és hogy hogyan használják a kapacitás erőforrásait. További információ: [Számítási feladatok konfigurálása](service-admin-premium-workloads.md).
 
 ## <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgáló
 

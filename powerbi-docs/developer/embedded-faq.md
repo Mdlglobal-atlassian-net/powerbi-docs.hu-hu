@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: da5394c0d1e63619229542b914ae7fd4deed7447
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 9663c7eb6921718ac4b9690ddc50d78e59c6db3b
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223743"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174890"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Gyakori kérdések – Power BI Embedded
 
@@ -137,7 +137,7 @@ Igen, vannak PowerShell-parancsmagok és Azure Resource Manager API-k, amelyeket
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Mi az a PBI Embedded elkülönített kapacitási szerepkör a PBI Embedded megoldásban?
 
-Annak érdekében, hogy a [megoldást elő lehessen léptetni az éles környezetbe](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), szükséges, hogy a Power BI-tartalom (az alkalmazásban használt alkalmazás-munkaterület) hozzá legyen rendelve egy Power BI Embedded- (A termékváltozat) kapacitáshoz.
+Annak érdekében, hogy a [megoldást elő lehessen léptetni az éles környezetbe](embed-sample-for-customers.md#move-to-production), szükséges, hogy a Power BI-tartalom (az alkalmazásban használt alkalmazás-munkaterület) hozzá legyen rendelve egy Power BI Embedded- (A termékváltozat) kapacitáshoz.
 
 ### <a name="what-are-the-azure-regions-pbi-embedded-is-available"></a>Mely Azure-régiókban érhető el a PBI Embedded?
 
@@ -167,7 +167,7 @@ AAD-token beszerzéséhez használhatja az [Azure Active Directory valamely hite
 
 ### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>Az alkalmazásom már AAD-t használ a felhasználói hitelesítéshez. Hogyan használhatjuk ezt az identitást, a „Felhasználó az adatok tulajdonosa” forgatókönyvek esetében a Power BI-ban való hitelesítésekor?
 
-Ez egy szokásos, más nevében történő OAuth-hitelesítési folyamat (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) Az alkalmazást úgy kell konfigurálni, hogy engedélyt kérjen a Power BI szolgáltatáshoz (a szükséges hatókörökkel), és ha már rendelkezik felhasználói tokennel az alkalmazáshoz, egyszerűen csak hívnia kell az ADAL API AcquireTokenAsync metódust a felhasználói hozzáférési tokennel, és meg kell adnia a Power BI-erőforrás URL-címét erőforrás-azonosítóként. Tekintse át az alábbi kódrészletet, amely bemutatja ennek módját:
+Ez egy standard OAuth-hitelesítés a folyamat részéről (<https://docs.microsoft.com/azure/active-directory/develop/web-api>). Az alkalmazást úgy kell konfigurálni, hogy az engedélyt tegyen kötelezővé a Power BI szolgáltatáshoz (a szükséges hatókörökkel). Ha már rendelkezik felhasználói jogkivonattal az alkalmazáshoz, egyszerűen meg kell hívnia az ADAL API AcquireTokenAsync-et a felhasználói hozzáférési jogkivonattal, és erőforrás-azonosítóként a Power BI-erőforrás URL-címét kell megadnia. Az alábbi kódrészletben látható, hogy ez hogyan végezhető el:
 
 ```csharp
 var context = new AD.AuthenticationContext(authorityUrl);
@@ -344,7 +344,7 @@ A **Beágyazás a cég számára** használatához mentse és csomagolja ki a *P
 
 ### <a name="how-can-i-edit-my-registered-application"></a>Hogyan szerkeszthetem a regisztrált alkalmazásomat?
 
-Az AAD-ben regisztrált alkalmazások szerkesztéséről [itt](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application) olvashat.
+Az Azure AD-ben regisztrált alkalmazások szerkesztéséről itt olvashat bővebben: [Rövid útmutató: Alkalmazás frissítése az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
 
 ### <a name="how-can-i-edit-my-power-bi-user-profile-or-data"></a>Hogyan szerkeszthetem a Power BI-felhasználói profilt vagy adatokat?
 

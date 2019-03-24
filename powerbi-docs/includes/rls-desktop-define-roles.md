@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 240045c05a35a6583b537b785c6639a39c6aa9d4
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58052045"
+---
 ## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Szerepkörök és szabályok definiálása a Power BI Desktopban
 A Power BI Desktopban meghatározhat szerepköröket és szabályokat. Amikor közzéteszi a tartalmakat a Power BI-ban, a szerepkör-definíciók is közzé lesznek téve.
 
@@ -21,7 +29,7 @@ Biztonsági szerepkörök definiálásához kövesse az alábbi lépéseket.
 7. Adja meg a DAX-kifejezéseket. A kifejezésnek igaz vagy hamis eredményt kell adnia. Például: [Entitásazonosító] = „Érték”.
    
    > [!NOTE]
-   > A kifejezésben használhatja a *username()* függvényt. Ne feledje, hogy a Power BI Desktopban a *username()* a *TARTOMÁNY\felhasználónév* formátumot követi. A Power BI szolgáltatásban és a Power BI jelentéskészítő kiszolgálóban a felhasználó felhasználói nevének (UPN) formátumában van. Használhatja a *userprincipalname()* függvényt is, amely a felhasználót minden esetben az egyszerű felhasználónevével adja vissza: *username@contoso.com*.
+   > A kifejezésben használhatja a *username()* függvényt. Ne feledje, hogy a Power BI Desktopban a *username()* a *TARTOMÁNY\felhasználónév* formátumot követi. A Power BI szolgáltatásban és a Power BI jelentéskészítő kiszolgálóban a felhasználó felhasználói nevének (UPN) formátumában van. Használhatja a *userprincipalname()* függvényt is, amely a felhasználót minden esetben az egyszerű felhasználónevével adja vissza: *felhasználónév\@contoso.com*.
    > 
    > 
    

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 9002b1871f5e7db4ef67d4f2f77b6b8769aa1de6
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 25d6c8020e500096507ba5e80a020a7a1c3052a6
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430281"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980427"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>A Power BI felügyelete – gyakori kérdések (GYIK)
 
@@ -84,7 +84,7 @@ Három forgatókönyv vonatkozhat a cégen belüli felhasználókra:
 
 Rendszergazdaként tehet olyan lépéseket, amelyek meggátolják, hogy a felhasználók csatlakozzanak a meglévő Office 365-bérlőhöz. Ha letiltja a hozzáférést, a regisztrációs kísérletek meghiúsulnak, és a cég rendszergazdájával való kapcsolatfelvételhez vezetnek. Nem kell megismételnie ezt a folyamatot, ha már letiltotta az automatikus licencterjesztést (például az Office 365 for Education for Students, Faculty és Staff esetén).
 
-A következő PowerShell-paranccsal meggátolhatja, hogy az új felhasználók a felügyelt bérlőhöz csatlakozzanak. [További információ a PowerShellről](#basic-powershell-information)
+A következő PowerShell-paranccsal meggátolhatja, hogy az új felhasználók a felügyelt bérlőhöz csatlakozzanak. ([További információ a PowerShellről][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -98,7 +98,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
 
 ### <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>Hogyan engedélyezhető, hogy a felhasználók csatlakozzanak a meglévő Office 365-bérlőhöz?
 
-A következő PowerShell-paranccsal engedélyezheti, hogy az új felhasználók a felügyelt bérlőhöz csatlakozzanak. [További információ a PowerShellről](#basic-powershell-information)
+A következő PowerShell-paranccsal engedélyezheti, hogy az új felhasználók a felügyelt bérlőhöz csatlakozzanak. ([További információ a PowerShellről][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -109,7 +109,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
 
 ### <a name="how-do-i-verify-if-i-have-the-block-on-in-the-tenant"></a>Hogyan ellenőrizhető, hogy blokkoltam-e a bérlőt?
 
-A beállítások ellenőrzéséhez használja a következő PowerShell-szkriptet. Az *AllowEmailVerifiedUsers* értékének hamisnak kell lennie. [További információ a PowerShellről](#basic-powershell-information)
+A beállítások ellenőrzéséhez használja a következő PowerShell-szkriptet. Az *AllowEmailVerifiedUsers* értékének hamisnak kell lennie. ([További információ a PowerShellről][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -122,7 +122,7 @@ Get-MsolCompanyInformation | fl allow*
 
 A jelen **AllowAdHocSubscriptions** paramétert vezérlő Azure AD-beállítás. A legtöbb bérlő esetén ez a beállítás igaz értékre van állítva, vagyis engedélyezett. Ha a Power BI-t egy partneren keresztül szerezte be, elképzelhető, hogy false (hamis) érték van megadva, amely letiltja a regisztrációt.
 
-Az alkalmi előfizetések letiltásához használja a következő PowerShell-szkriptet. [További információ a PowerShellről](#basic-powershell-information)
+Az alkalmi előfizetések letiltásához használja a következő PowerShell-szkriptet. ([További információ a PowerShellről][1].)
 
 1. Jelentkezzen be az Azure Active Directoryba az Office 365 hitelesítő adataival. Az alábbi PowerShell-szkript első sora bekéri a hitelesítő adatokat. A második sor csatlakozik az Azure Active Directoryhoz.
 
@@ -270,3 +270,5 @@ A Power BI az Office 365 alapjára épül, amely viszont Azure-szolgáltatásoko
 [Office 365 csoportfelügyelet](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+
+[1]: https://docs.microsoft.com/powershell/scripting/overview

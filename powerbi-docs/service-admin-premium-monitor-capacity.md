@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/25/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 032fae40a7e2328879ba01b6d94c3c532369b3ab
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.openlocfilehash: ac6559ccc9e6dbdf8c4be0550d8522765a4a8b23
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826675"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174913"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Prémium szintű kapacitások monitorozása az alkalmazással
 
@@ -97,7 +97,7 @@ Az irányítópult a következő metrikákat tartalmazza:
 | DirectQuery/élő kapcsolat magas kihasználtságainak száma| Az a szám, ahányszor a DirectQuery/élő kapcsolat értéke meghaladta a küszöbérték 80%-át a legutóbbi hét napban, háromperces gyűjtőkbe csoportosítva. |
 | DirectQuery/élő kapcsolat legtöbb magas kihasználtsága| A legtöbb eset, amikor a DirectQuery/élő kapcsolat értéke meghaladta a 80%-ot a legutóbbi hét napban, egyórás gyűjtőkbe csoportosítva. |
 | DirectQuery/élő kapcsolat magas kihasználtságainak maximális száma | Az a maximális szám, ahányszor a DirectQuery/élő kapcsolat értéke meghaladta a küszöbérték 80%-át a legutóbbi hét napban, háromperces gyűjtőkbe csoportosítva.|
-| DirectQuery/élő kapcsolat legnagyobb gyakoriságának időszaka | Annak a helyi ideje, amikor a DirectQuery/élő kapcsolat értéke a legtöbbször meghaladja a 80%-ot egy órán belül. |
+| DirectQuery/élő kapcsolat legnagyobb gyakoriságának időszaka | Az az UTC-idő, amikor a DirectQuery/élő kapcsolat értéke a legtöbbször meghaladja a 80%-ot egy órán belül. |
 | Frissítések összesen | A frissítések teljes száma a legutóbbi hét napban. |
 | Frissítések megbízhatósága (%) | A legutóbbi hét napban történt sikeres frissítések teljes száma elosztva a frissítések teljes számával. |
 | Frissítések átlagos időtartama (perc) | Az egyes frissítések befejezéséig átlagosan eltelt idő. |
@@ -162,8 +162,8 @@ Az Adathalmazok oldal több *területre* van felosztva, köztük a **Frissítés
 | Frissítések |  Teljes darabszám: Az egyes adathalmazok frissítéseinek teljes száma.<br>  Megbízhatóság: Az egyes adathalmazok befejezett frissítéseinek százalékos aránya.<br>  A várakozás átlagos időtartama: Az ütemezett időpont és az adathalmaz frissítésének kezdete közötti átlagos késés, percekben kifejezve.<br>  Maximális várakozási idő: Az adathalmazhoz tartozó leghosszabb várakozási idő, percekben kifejezve.<br>  Átlagos időtartam: Az adathalmaz frissítéseinek átlagos időtartama, percekben kifejezve.<br>  Maximális időtartam: Az adathalmaz leghosszabb ideig futó frissítésének időtartama, percekben kifejezve. |
 | Az első 5 adathalmaz az átlagos időtartam szerint (perc) |  Az öt leghosszabb (percekben megadott) átlagos frissítési idejű adathalmaz. |
 | Az első 5 adathalmaz az átlagos várakozási idő szerint (perc) |  Az öt leghosszabb (percekben megadott) átlagos frissítési várakozási idejű adathalmaz. |
-| Frissítések száma és GB-ban mért memóriahasználat óránként |  Sikeres és sikertelen frissítések, valamint memóriahasználat órákra lebontva, helyi idő szerint jelentve. |
-| Átlagos frissítési várakozási idő óránként (perc) |  A frissítésre várakozás átlagos időtartama órákra lebontva, helyi idő szerint jelentve. Ha több kiugróan magas frissítési várakozási érték is van, az azt jelzi, hogy a kapacitáshasználat a csúcsértékhez közelít. |
+| Frissítések száma és GB-ban mért memóriahasználat óránként |  Sikeres és sikertelen frissítések, valamint memóriahasználat órákra lebontva, UTC-idő szerint jelentve. |
+| Átlagos frissítési várakozási idő óránként (perc) |  A frissítésre várakozás átlagos időtartama órákra lebontva, UTC-idő szerint jelentve. Ha több kiugróan magas frissítési várakozási érték is van, az azt jelzi, hogy a kapacitáshasználat a csúcsértékhez közelít. |
 |  |  |
 
 #### <a name="query-durations-area"></a>A Lekérdezések időtartama terület
@@ -173,8 +173,8 @@ Az Adathalmazok oldal több *területre* van felosztva, köztük a **Frissítés
 | Lekérdezések időtartama |  Ebben a szakaszban az adatok adathalmazokra, munkaterületekre és egyórás gyűjtőkre vannak lebontva az elmúlt hét napra vonatkozóan.<br>  Összesen: Az adathalmazon futtatott lekérdezések teljes száma.<br>  Átlag: Az adathalmaz lekérdezéseinek átlagos időtartama, ezredmásodpercben megadva<br>  Max: Az adathalmaz leghosszabb ideig futó lekérdezésének időtartama, ezredmásodpercben megadva.|
 | Lekérdezések időtartamának eloszlása |  A lekérdezési időtartamok hisztogramja ezredmásodpercben mért lekérdezés-időtartamokra van osztva a következő kategóriákba: <= 30 ms, 30–100 ms, 100–300 ms, 300 ms–1 mp, 1–3 mp, 3–10 mp, 10–30 mp és > 30 mp időszakok. A hosszú lekérdezési időtartamok és a hosszú várakozási idők azt jelzik, hogy a kapacitáshasználat a csúcsértékhez közelít. Azt is jelenthetik, hogy az egyik adathalmaz problémákat okoz, és további vizsgálat szükséges. |
 | Az első 5 adathalmaz az átlagos időtartam szerint |  Az öt leghosszabb (ezredmásodpercekben megadott) átlagos lekérdezési idejű adathalmaz. |
-| Lekérdezések időtartamának eloszlása óránként |  A lekérdezések száma és az átlagos időtartam (ezredmásodpercekben) összehasonlítva a GB-ban kifejezett memóriahasználattal, óránként lebontva, helyi idő szerint jelentve. |
-| DirectQuery / élő kapcsolatok (80% feletti kihasználtság) |  Azon alkalmak száma, amikor egy DirectQuery- vagy élő kapcsolat túllépte a 80%-os CPU-kihasználtságot, óránként lebontva, helyi idő szerint jelentve. |
+| Lekérdezések időtartamának eloszlása óránként |  A lekérdezések száma és az átlagos időtartam (ezredmásodpercekben) összehasonlítva a GB-ban kifejezett memóriahasználattal, óránként lebontva, UTC-idő szerint jelentve. |
+| DirectQuery / élő kapcsolatok (80% feletti kihasználtság) |  Azon alkalmak száma, amikor egy DirectQuery- vagy élő kapcsolat túllépte a 80%-os CPU-kihasználtságot, óránként lebontva, UTC-idő szerint jelentve. |
 |  |  |
 
 #### <a name="query-waits-area"></a>Lekérdezésekre való várakozások terület
@@ -184,7 +184,7 @@ Az Adathalmazok oldal több *területre* van felosztva, köztük a **Frissítés
 | Lekérdezésekre való várakozások időtartama |  Ebben a szakaszban az adatok adathalmazokra, munkaterületekre és egyórás gyűjtőkre vannak lebontva az elmúlt hét napra vonatkozóan.<br>  Összesen: Az adathalmazon futtatott lekérdezések teljes száma.<br>  Várakozások száma: Az adathalmaz azon lekérdezéseinek számra, amelyek rendszererőforrásokra várakoztak a végrehajtás előtt.<br>  Átlag: Az adathalmaz lekérdezéseinek átlagos várakozási időtartama, ezredmásodpercben megadva.<br>  Max: Az adathalmaz leghosszabb ideig várakozó lekérdezésének időtartama, ezredmásodpercben megadva.|
 | Az első 5 adathalmaz az átlagos várakozási idő szerint |  Az az öt adathalmaz, amelynek a lekérdezések előtti, ezredmásodpercekben mért várakozási ideje a legnagyobb. |
 | Várakozási idők eloszlása |  A lekérdezési időtartamok hisztogramja ezredmásodpercekben mért lekérdezés-időtartamokra van osztva a következő kategóriákba: <= 50 ms, 50–100 ms, 100–200 ms, 200–400 ms, 400 ms–1 mp, 1–5 mp és > 5 mp. |
-| Lekérdezésekre való várakozások időtartamának eloszlása óránként |  A lekérdezésekre való várakozások száma és az átlagos várakozási időtartam (ezredmásodpercekben), összehasonlítva a GB-ban kifejezett memóriahasználattal, óránként lebontva, helyi idő szerint jelentve. |
+| Lekérdezésekre való várakozások időtartamának eloszlása óránként |  A lekérdezésekre való várakozások száma és az átlagos várakozási időtartam (ezredmásodpercekben), összehasonlítva a GB-ban kifejezett memóriahasználattal, óránként lebontva, UTC-idő szerint jelentve. |
 |  |  |
 
 #### <a name="datasets-area"></a>Adatkészletek terület
@@ -193,8 +193,8 @@ Az Adathalmazok oldal több *területre* van felosztva, köztük a **Frissítés
 | --- | --- |
 | Adathalmaz-méretek  |  Maximális méret: Az adathalmaz maximális mérete (MB) a megjelenített időszakra. |
 | Adathalmaz-kizárások száma |  Összesen: Az adathalmaz-*kizárások* teljes száma kapacitásonként. Ha egy kapacitásban magas memóriaterhelés lép fel, a csomópont egy vagy több adathalmazt kizár a memóriából. Először az inaktív adathalmazok (nincs végrehajtás alatt álló lekérdezési/frissítési művelet) lesznek kizárva. Ezután a „legrégebben használt” (LRU) paraméter értéke határozza meg a kizárási sorrendet.|
-| Óránként betöltött adatkészletek száma |  A memóriába betöltött adathalmazok és a GB-ban kifejezett memóriahasználat óránkénti bontásban, helyi idő szerint jelentve. |
-| Adathalmaz-kizárások és memóriahasználat óránként |  Adathalmaz-kizárások és a GB-ban kifejezett memóriahasználat óránkénti bontásban, helyi idő szerint jelentve. |
+| Óránként betöltött adatkészletek száma |  A memóriába betöltött adathalmazok és a GB-ban kifejezett memóriahasználat óránkénti bontásban, UTC-idő szerint jelentve. |
+| Adathalmaz-kizárások és memóriahasználat óránként |  Adathalmaz-kizárások és a GB-ban kifejezett memóriahasználat óránkénti bontásban, UTC-idő szerint jelentve. |
 | A felhasznált memória százalékos aránya |  Az összes aktív adatkészlet a memóriában a teljes memória százalékaként. Az aktív és az összes meghatározott adathalmaz közötti különbség, amely kiüríthető. Óránként megjelenítve az elmúlt hét napra. |
 |  |  |
 
@@ -205,8 +205,8 @@ Az Adathalmazok oldal több *területre* van felosztva, köztük a **Frissítés
 | Általános igénybevétel |  Összes megtekintés: Azon alkalmak száma, amikor egy felhasználó megtekintette a jelentést.<br>  Sorok száma: A jelentésben szereplő adatsorok száma.<br>  Lekérés (átlag): Az adatok jelentéshez való lekérésének átlagos időtartama, ezredmásodpercben megadva. A hosszú időtartamok lassú lekérdezésekre vagy az adatforrással kapcsolatos más problémára utalhatnak. <br>  Feldolgozás (átlag): Az adatok jelentéshez való feldolgozásának átlagos időtartama, ezredmásodpercben megadva.<br> Renderelés (átlag): A jelentés böngészőben való renderelésének átlagos időtartama, ezredmásodpercben megadva.<br>  Teljes időtartam: A jelentés összes fázisának időtartama, ezredmásodpercben megadva. |
 | Az első 5 jelentés az átlagos adatlekérési idő szerint |  Az öt, ezredmásodpercekben mérve legnagyobb átlagos adatlekérési idejű jelentés. |
 | Az első 5 jelentés a feldolgozás átlagos időtartama szerint |  Az ezredmásodpercekben mérve legnagyobb átlagos feldolgozási idejű jelentés. |
-| Eredmények óránként |  Sikeres és sikertelen frissítések, valamint memóriahasználat órákra lebontva, helyi idő szerint jelentve. |
-| Időtartamok óránként |  Adatlekérés a feldolgozási és renderelési időhöz viszonyítva, óránkénti bontásban, helyi idő szerint jelenve. |
+| Eredmények óránként |  Sikeres és sikertelen frissítések, valamint memóriahasználat órákra lebontva, UTC-idő szerint jelentve. |
+| Időtartamok óránként |  Adatlekérés a feldolgozási és renderelési időhöz viszonyítva, óránkénti bontásban, UTC-idő szerint jelenve. |
 |  |  |
 
 ### <a name="dataflows"></a>Adatfolyamok
@@ -216,8 +216,8 @@ Az Adathalmazok oldal több *területre* van felosztva, köztük a **Frissítés
 | Frissítések |  Összesen: Az egyes adatfolyamok frissítéseinek teljes száma.<br>  Megbízhatóság: az egyes adatfolyamok befejezett frissítéseinek százalékos aránya.<br>  A várakozás átlagos időtartama: Az ütemezett időpont és az adatfolyam frissítésének kezdete közötti átlagos késés, percekben kifejezve.<br>  Maximális várakozási idő: Az adatfolyamhoz tartozó leghosszabb várakozási idő, percekben kifejezve.<br>  Átlagos időtartam: Az adatfolyam frissítéseinek átlagos időtartama, percekben kifejezve.<br>  Maximális időtartam: Az adatfolyam leghosszabb ideig futó frissítésének időtartama, percekben kifejezve. |
 | Az első 5 adatfolyam a frissítés átlagos időtartama szerint |  Az öt leghosszabb (percekben megadott) átlagos frissítési idejű adatfolyam. |
 | Az első 5 adatfolyam az átlagos várakozási idő szerint |  Az öt leghosszabb (percekben megadott) átlagos frissítési várakozási idejű adatfolyam. |
-| Átlagos frissítési várakozási idő óránként |  A frissítésre várakozás átlagos időtartama órákra lebontva, helyi idő szerint jelentve. Ha több kiugróan magas frissítési várakozási érték is van, az azt jelzi, hogy a kapacitáshasználat a csúcsértékhez közelít. |
-| Frissítések száma és memóriahasználat óránként |  Sikeres és sikertelen frissítések, valamint memóriahasználat órákra lebontva, helyi idő szerint jelentve. |
+| Átlagos frissítési várakozási idő óránként |  A frissítésre várakozás átlagos időtartama órákra lebontva, UTC-idő szerint jelentve. Ha több kiugróan magas frissítési várakozási érték is van, az azt jelzi, hogy a kapacitáshasználat a csúcsértékhez közelít. |
+| Frissítések száma és memóriahasználat óránként |  Sikeres és sikertelen frissítések, valamint memóriahasználat órákra lebontva, UTC-idő szerint jelentve. |
 |  |  |
 
 ### <a name="resource-consumption"></a>Erőforrás-felhasználás

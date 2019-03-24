@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7264ef7b1057f64d6eb51ccc77cbec2a74be6d0e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2122ce9bd6eb850a51a06188ca1c10faf78f4bb1
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283989"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964663"
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Helyszíni adatátjáró proxybeállításainak konfigurálása
 Munkakörnyezete megkövetelheti, hogy proxyn keresztül érje el az Internetet. Ez megakadályozhatja, hogy a helyszíni adatátjáró a szolgáltatáshoz kapcsolódjon.
@@ -46,24 +46,41 @@ A második a Power BI szolgáltatással kommunikáló és a kérelmeket kezelő 
 ## <a name="configuring-proxy-settings"></a>Proxybeállítások konfigurálása
 Az alapértelmezett proxykonfiguráció a következő.
 
-    <system.net>
-        <defaultProxy useDefaultCredentials="true" />
-    </system.net>
+```
+<system.net>
+    <defaultProxy useDefaultCredentials="true" />
+</system.net>
+```
+
 
 Az alapértelmezett konfiguráció Windows-hitelesítéssel működik. Ha az Ön proxyja másféle hitelesítési formát használ, akkor módosítania kell a beállításokat. Ha nem biztos a dolgában, forduljon a hálózati rendszergazdához. Az alapszintű proxyhitelesítés nem ajánlott, ha alapszintű proxyhitelesítést próbál használni, az proxyhitelesítési hibákat okozhat, aminek eredményeképpen az átjáró nem lesz megfelelően konfigurálva. A feloldáshoz használjon erősebb proxyhitelesítési módot.
 
 Az alapértelmezett hitelesítő adatok használatán kívül hozzáadhat <proxy> elemet is, így részletesebben definiálhatja a proxykiszolgáló beállításait. Meghatározhatja például, hogy a helyszíni adatárjáró még a helyi erőforrásokhoz is mindig használja a proxyt, ha a bypassonlocal paramétert false (hamis) értékre állítja. Ez segíthet a hibakeresésben, ha a proxy naplófájljában nyomon szeretne követni minden olyan http-kérelmet, amely egy helyszíni adatátjáróról érkezik. Az alábbi konfigurációs példa meghatározza, hogy minden kérelemnek egy meghatározott, 192.168.1.10 IP-című proxyn keresztül kell áthaladnia.
 
-    <system.net>
-        <defaultProxy useDefaultCredentials="true">
-            <proxy  
-                autoDetect="false"  
-                proxyaddress="http://192.168.1.10:3128"  
-                bypassonlocal="false"  
-                usesystemdefault="true"
-            />  
-        </defaultProxy>
-    </system.net>
+```
+<system.net>
+    <defaultProxy useDefaultCredentials="true">
+        <proxy  
+            autoDetect="false"  
+            proxyaddress="http://192.168.1.10:3128"  
+            bypassonlocal="false"  
+            usesystemdefault="true"
+        />  
+    </defaultProxy>
+</system.net>
+```
+
+Ezen kívül ahhoz, hogy az átjáró csatlakozni tudjon a felhőbeli adatforrásokhoz proxyn keresztül, frissítse a következő fájlt: *C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe*. A fájlban bontsa ki a `<configurations>` szakaszt az alábbi tartalomhoz, majd frissítse a `proxyaddress` attribútumot a saját proxyadataival. Az alábbi példa az összes felhőbeli kérelmet egy meghatározott, 192.168.1.10 IP-című proxyn keresztül irányítja.
+
+```
+<configuration>
+<system.net>
+    <defaultProxy useDefaultCredentials="true" enabled="true">
+    <proxy proxyaddress=""http://192.168.1.10:3128" bypassonlocal="true" />
+    </defaultProxy>
+</system.net>
+</configuration>
+```
 
 A .NET-konfigurációs fájlok proxy elemeinek konfigurációjáról a [defaultProxy elem (hálózati beállítások)](https://msdn.microsoft.com/library/kd3cf2ex.aspx) című cikkből tájékozódhat.
 

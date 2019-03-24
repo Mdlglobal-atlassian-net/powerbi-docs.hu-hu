@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: b4f2d58b9e33e603b6e2dbc97972bb54c66f065c
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: 312e010bfa3ea635ef014a0b2dd913fa9e3911b6
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014139"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964847"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>A Power BI Premium megvásárlása
 
@@ -95,13 +95,15 @@ Az előfizetést az Office 365 Felügyeleti központjában szüntetheti meg. A P
 
 1. Olvassa végig az adatokat, és ha folytatni kívánja, válassza az **Előfizetés megszüntetése** lehetőséget.
 
+### <a name="when-canceling-or-your-license-expires"></a>Törlésnél, vagy amikor lejár a licenc
+
+Ha törli a Prémium előfizetést, vagy ha lejár a kapacitáslicenc, a törlés idejét vagy a licenc lejáratát követő 30 napon keresztül továbbra is hozzáférhet a prémium kapacitásokhoz. A 30 nap letelte után nem tudja majd elérni a prémium kapacitásokat és a bennük található munkaterületeket.
+
 ## <a name="next-steps"></a>Következő lépések
 
-[Power BI díjszabási oldal](https://powerbi.microsoft.com/pricing/)
-[Power BI Premium-kalkulátor](https://powerbi.microsoft.com/calculator/)
-[Mi az a Power BI Premium?](service-premium.md)
-[Power BI Premium – GYIK](service-premium-faq.md)
-[Microsoft Power BI Premium-tanulmány](https://aka.ms/pbipremiumwhitepaper)
-[A Power BI nagyvállalati üzembehelyezési előkészületeit bemutató tanulmány](https://aka.ms/pbienterprisedeploy)
+[A Power BI díjszabási oldala](https://powerbi.microsoft.com/pricing/)   
+[Power BI Premium díjszámító](https://powerbi.microsoft.com/calculator/)   
+[Power BI Premium – gyakori kérdések](service-premium-faq.md)   
+[A Power BI Enterprise üzembehelyezési előkészületeit bemutató tanulmány ](https://aka.ms/pbienterprisedeploy)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

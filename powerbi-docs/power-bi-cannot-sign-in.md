@@ -10,18 +10,20 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/12/2019
-ms.openlocfilehash: a29d251c629437184ff31de275a17c1d152abff3
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: 1605293474a7cbfefb448d74127639153e29325c
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757777"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964617"
 ---
 # <a name="troubleshooting-sign-in-issues-for-power-bi"></a>Bejelentkezési hibák elhárítása a Power BI szolgáltatásban
 
-Ez a cikk azt ismerteti, hogy hogyan hozhat létre olyan [támogatási tartalmat](https://powerbi.microsoft.com/support/), amely ismerteti a bejelentkezési problémák megoldásához szükséges lépéseket.
+Ez a cikk azt mutatja be, hogyan kaphat [támogatást](https://powerbi.microsoft.com/support/), ha probléma jelentkezik a Power BI-ba való bejelentkezéskor.
 
-Első lépésként **vegye fel a kapcsolatot a belső ügyfélszolgálatával**. Azonban ha Ön a szervezet **bérlői rendszergazdája**, és nem tud bejelentkezni a Power BI-ba, lépjen tovább a lenti információra.
+Első lépésként **vegye fel a kapcsolatot a cég belső ügyfélszolgálatával**.
+
+Azonban ha Ön a szervezet **bérlői rendszergazdája**, és nem tud bejelentkezni a Power BI-ba, lépjen tovább a lenti információra.
 
 ## <a name="engage-the-support-team"></a>Az ügyfélszolgálat felkeresése
 
@@ -30,11 +32,13 @@ Először hozzon létre egy támogatási jegyet a [Power BI támogatási oldalá
 Ha ezt nem tudja megtenni, próbáljon létrehozni egy jegyet az [Office 365 (O365) támogatási oldalán](https://support.office.com/home/contact).
 
 Ha ezt egyik oldalon sem tudja megtenni, keresse fel a telefonos ügyfélszolgálatot.
+
 * Az Egyesült Államok (US) és az amerikai országok esetén: + 1-800-936-5800
 * Európai, közel-keleti és ázsiai (EMEA) ügyfelek esetén: +44-844-800-2400
 * Indiai ügyfelek esetén: +1-800-419-5666
 
-Alternatívaként [Microsoft Premier támogatást](https://support.microsoft.com/premier) vásárolhat, és segítséget kérhet a Microsoft ügyfélszolgálatától. Ha tudja, hogy a szervezete Microsoft Premier támogatást vásárolt, azonban továbbra sem tud egyik O365- vagy Power BI-csatornán esetet létrehozni, akkor telefonon is felveheti a kapcsolatot a Premier támogatással.
+Alternatívaként [Microsoft Premier támogatást](https://support.microsoft.com/premier) vásárolhat, és segítséget kérhet a Microsoft ügyfélszolgálatától. Ha tudja, hogy a szervezete Microsoft Premier támogatást vásárolt, azonban továbbra sem tud egyik Power BI- vagy O365-csatornán esetet létrehozni, akkor telefonon is felveheti a kapcsolatot a Premier támogatással.
+
 * Az Egyesült Államok (US) és az amerikai országok esetén: + 1-800-936-3100
 * Európai, közel-keleti és ázsiai (EMEA) ügyfelek esetén: +44-844-800-8338
 * Indiai ügyfelek esetén: +1-800-425-5666

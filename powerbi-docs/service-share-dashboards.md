@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f96e5235aba6f90e6f80286ebfb409004ccd5052
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: 61aedc6c6bce52b172a92b938f9a2f278c841d6f
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580243"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964755"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI-irányítópult és -jelentés megosztása munkatársakkal és másokkal
 A *Megosztással* egyszerűen biztosíthatja néhány személy hozzáférését az irányítópultjaihoz és jelentéseihez. A Power BI-ban [többféle módon valósítható meg az irányítópultok és jelentések közös használata és terjesztése](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -38,12 +38,18 @@ Nézze meg, hogyan osztja meg Amanda az irányítópultját cégen belüli és a
 
 1. Irányítópultok vagy jelentések listájában, vagy megnyitott irányítópulton vagy jelentésben válassza a **Megosztás** ![Megosztás ikon](media/service-share-dashboards/power-bi-share-icon.png) lehetőséget.
 
-1. A felső mezőbe írja be a személyek, terjesztési csoportok vagy biztonsági csoportok teljes e-mail-címét. Dinamikus terjesztési listákkal nem oszthat meg irányítópultot. 
+2. A felső mezőbe írja be a személyek, terjesztési csoportok vagy biztonsági csoportok teljes e-mail-címét. Dinamikus terjesztési listákkal nem oszthat meg irányítópultot. 
    
    A megosztás címzettjei lehetnek a cégen kívüli címmel rendelkező személyek is, de ilyenkor figyelmeztetés jelenik meg.
    
    ![Figyelmeztetés külső megosztás esetén](media/service-share-dashboards/power-bi-share-dialog-warning.png) 
  
+   >[!NOTE]
+   >A beviteli mező legfeljebb 100 felhasználót vagy csoportot engedélyez. Többször is megoszthatja, vagy felhasználói csoporttal is megoszthat, ha egyszerre sok felhasználóval szeretne megosztani.
+   > 
+   > 
+
+
 3. Ha kívánja, hozzáfűzhet egy üzenetet. Ez nem kötelező.
 4. Jelölje be az **Irányítópult/jelentés megosztásának engedélyezése a címzetteknek** lehetőséget, hogy a munkatársai megoszthassák másokkal a tartalmakat.
    
@@ -119,6 +125,7 @@ Irányítópultok vagy jelentések megosztásakor vegye figyelembe a következő
 * Az Önnel egy e-mail-tartományban lévő munkatársai, valamint a más, de ugyanazon a bérlőn belül regisztrált tartományok tagjai másokkal is megoszthatják az irányítópultot. Legyen például a contoso.com és a contoso2.com tartomány egy bérlőn belül regisztrálva. Ha az Ön e-mail-címe konrads@contoso.com, akkor ravali@contoso.com és gustav@contoso2.com egyaránt újraoszthat, ha Ön engedélyezte számukra a megosztást.
 * Ha munkatársai már hozzáférnek egy adott irányítópulthoz vagy jelentéshez, akkor nekik az irányítópultról vagy jelentésből kimásolt közvetlen hivatkozást is küldhet. Példa: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
 * Hasonló módon [a mögöttes jelentésre mutató közvetlen hivatkozást is küldhet](service-share-reports.md) az adott irányítópulthoz hozzáféréssel rendelkező munkatársaknak. 
+* Egy megosztási műveletben legfeljebb 100 felhasználóval vagy csoporttal oszthat meg tartalmat. Egy elemhez azonban több mint 500 felhasználónak adhat hozzáférést. Ehhez megoszthatja a tartalmat többször úgy, hogy egyenként megadja a kívánt felhasználókat, vagy megoszthat egy olyan felhasználói csoportnak is, amely tartalmazza az összes kívánt felhasználót.
 
 ## <a name="troubleshoot-sharing"></a>A megosztás hibaelhárítása
 

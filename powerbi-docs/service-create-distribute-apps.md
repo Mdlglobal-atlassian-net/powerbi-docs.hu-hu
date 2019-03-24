@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 451b5967dd648d982132282d2debbd4c4f86780f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 051609c59e155cb6d5c2a982483a7e6d2d91a665
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294061"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964686"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Irányítópultokból és jelentésekből álló alkalmazások közzététele a Power BI-ban
 
@@ -121,6 +121,11 @@ Az alkalmazások leküldéses továbbítása során az alábbiakra érdemes ügy
 
 ## <a name="unpublish-an-app"></a>Alkalmazás közzétételének visszavonása
 Egy alkalmazás-munkaterület bármely tagja visszavonhatja az alkalmazás közzétételét.
+
+>[!NOTE]
+>Ha visszavonja egy alkalmazás közzétételét, az alkalmazás felhasználóinak testreszabásai elvesznek. Az alkalmazás tartalmához csatolt összes személyes könyvjelző, megjegyzés és előfizetés elvész. Alkalmazás közzétételét csak akkor szüntesse meg, ha el szeretné távolítani az alkalmazást.
+> 
+> 
 
 * Az alkalmazás-munkaterületen válassza a jobb felső sarokban a három pontot (**...**) > az **App közzétételének visszavonása** lehetőséget.
   

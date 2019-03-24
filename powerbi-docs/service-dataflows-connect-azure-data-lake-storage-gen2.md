@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: dc22c075c479510810b4a914fd999e38118e12e5
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
+ms.openlocfilehash: 875f30a6e051561f20a7ca54bc48343dd7248e79
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426723"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174752"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)
 
@@ -65,7 +65,7 @@ Kövesse az [Azure Data Lake Storage Gen2-tárfiók létrehozása](https://docs.
 
 Ezután olvasószerepkört kell adnia a Power BI szolgáltatásnak a létrehozott tárfiókban. Ez egy beépített szerepkör, tehát a lépések maguktól értetődnek. 
 
-Kövesse a [Szerepkör hozzárendelése biztonsági taghoz](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-role-to-a-security-principal) című cikkben leírt lépéseket.
+Kövesse a [Beépített RBAC-szerepkör hozzárendelése](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role) című témakör lépéseit.
 
 A **Szerepkör-hozzárendelés megadása** ablakban válassza az **Olvasó** szerepkört, hogy ez legyen a Power BI szolgáltatáshoz rendelve. Keresse meg a **Power BI szolgáltatást**. Az alábbi ábra az **Olvasó** szerepkörnek a Power BI szolgáltatáshoz rendelését mutatja be.
 
@@ -150,6 +150,9 @@ Miután beállította Azure Data Lake Storage Gen2-fiókját az Azure Portalon, 
 6. Kattintson a **Csatlakozás** gombra.
 
 Miután végrehajtotta ezeket a lépéseket, Azure Data Lake Storage Gen2-fiókja csatlakoztatva lesz a Power BI-hoz. 
+
+> [!NOTE]
+> Ahhoz, hogy kapcsolatot tudjon konfigurálni az Azure Data Lake Storage Gen2-höz a Power BI felügyeleti portálján, globális rendszergazdai jogosultságokkal kell rendelkeznie. A globális rendszergazdák azonban nem csatlakoztathatnak külső tárhelyeket a felügyeleti portálon.  
 
 Ezután engedélyt kell adnia a vállalaton belüli személyeknek munkaterületeik konfigurálására, hogy használni tudják ezt a tárfiókot adatfolyamok definiálására és adattárolásra. Erre a következő szakaszban kerül sor. 
 

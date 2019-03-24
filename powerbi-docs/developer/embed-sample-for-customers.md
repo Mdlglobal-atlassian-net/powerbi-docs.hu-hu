@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 3e8a4f443a6784020467ef1cf3a918ef5410b209
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: 5bb4a739b6a333ecaf0ddc3ee2596fc210033470
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757415"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174959"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba az ügyfelek számára
 
@@ -214,7 +214,7 @@ Az **ApplicationSecret** beszerzéséhez kövesse az alábbi lépéseket:
 
 Ez az attribútum csak a [szolgáltatásnév](embed-service-principal.md) hitelesítési típushoz szükséges.
 
-Töltse ki a **bérlő** adatait az Azure-bérlőazonosítójával. Ezt az információt beszerezheti az [Azure AD-portálról](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id#use-the-azure-ad-portal), ha be van jelentkezve a Power BI szolgáltatásban vagy a PowerShell-lel.
+Töltse ki a **bérlő** adatait az Azure-bérlőazonosítójával. Ezt az információt beszerezheti az [Azure AD felügyeleti központról](/onedrive/find-your-office-365-tenant-id), ha be van jelentkezve a Power BI szolgáltatásban, vagy a PowerShell használatával is.
 
 ### <a name="run-the-application"></a>Alkalmazás futtatása
 
@@ -304,7 +304,7 @@ A JavaScript API teljes körű mintáját a [Playground eszköz](https://microso
 
 Íme egy minta, amely az **EmbedConfig** és a **TileEmbedConfig** modellt használja egy jelentés nézeteivel együtt.
 
-*A nézetek jelentésekhez, irányítópultokhoz vagy csempékhez való hozzáadásáról példát a [mintaalkalmazás](#embed-your-content-within-a-sample-application) Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml és Views\Home\Embedtile.cshtml fájljaiban találhat.*
+*A nézetek jelentésekhez, irányítópultokhoz vagy csempékhez való hozzáadásáról példát a [mintaalkalmazás](#embed-content-using-the-sample-application) Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml és Views\Home\Embedtile.cshtml fájljaiban találhat.*
 
 ```javascript
 <script src="~/scripts/powerbi.js"></script>
