@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: f1244535259de2a5b5726d295a64229a0f92f02b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 635a64c08056e82539d33904d4cce60d4cfc00cd
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296452"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58382938"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Nem sikerült hozzáadni a Power BI-t az Office 365 típusú partneri előfizetéshez
 
@@ -33,9 +33,9 @@ Ha szeretne Power BI Pro- vagy Power BI Premium-előfizetést vásárolni, a par
 
 ## <a name="purchase-from-microsoft-or-another-channel"></a>Vásárlás a Microsofttól vagy másik forrásból
 
-A partnerével való kapcsolatától függően előfordulhat, hogy közvetlenül a Microsofttól vagy egy másik partnertől vásárolhatja meg a Power BI-t. Az Office 365 felügyeleti portálján ellenőrizheti, hogy hozzáadhat-e Power BI-előfizetéseket (ehhez Globális rendszergazda vagy Számlázási rendszergazda szerepkör szükséges).
+A partnerével való kapcsolatától függően előfordulhat, hogy közvetlenül a Microsofttól vagy egy másik partnertől vásárolhatja meg a Power BI-t. A Microsoft 365 felügyeleti portálján ellenőrizheti, hogy hozzáadhat-e Power BI-előfizetéseket (ehhez Globális rendszergazda vagy Számlázási rendszergazda szerepkör szükséges).
 
-1. Nyissa meg az [Office 365 felügyeleti portált](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. A [Microsoft 365 Felügyeleti központ](https://admin.microsoft.com/AdminPortal/Home#/homepage) megnyitása.
 
 1. A bal oldali menüben nyissa meg a **Számlázás** területet:
 
