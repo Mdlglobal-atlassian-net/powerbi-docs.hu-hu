@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 03/10/2019
-ms.openlocfilehash: 02ce5146a154583d784de8030a0b0ec84740fcb3
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
+ms.openlocfilehash: cf9a613e82b4f5b7ce9cc67f5b920760d01ccbf7
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58175471"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430300"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Útmutató Power BI-vizualizációkhoz
 
@@ -29,7 +29,6 @@ A „További vásárlásra lehet szükség” típusú vizualizációk az Offic
 
 >[!IMPORTANT]  
 > Ha a vizualizációt az ingyenesről „További vásárlásra lehet szükség” szintűre frissíti, a felhasználók ugyanazon szintű funkciókkal fognak rendelkezni, mint a frissítés előtt. A meglévő ingyenes funkciók mellett felvehet választható, speciális fizetett funkciókat. Javasoljuk, hogy a speciális funkciókkal rendelkező IAP-vizualizációkat új vizualizációkként vegye fel, és ne a meglévő ingyeneseket frissítse.
-
 
 ## <a name="what-changed-in-the-submission-process"></a>Mi változott a beküldési folyamatban?
 
@@ -51,17 +50,17 @@ Ez a szakasz az emblémák és logotipiák vizualizációkhoz való hozzáadás�
 > [!IMPORTANT]
 > Az emblémák **csak Szerkesztési módban** használhatók. Az emblémák **nem** jelennek meg Megtekintési módban.
 
-![Definíciók](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
+![Definíciók](media/guidelines-powerbi-visuals/definitions.png)
 
-![Ügyeljen az alábbiakra](media/office-store-in-app-purchase-visual-guidelines/things-to-keep-in-mind.png)
+![Ügyeljen az alábbiakra](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
 
-![Fontos megfontolások](media/office-store-in-app-purchase-visual-guidelines/things-to-avoid.png)
+![Fontos megfontolások](media/guidelines-powerbi-visuals/things-to-avoid.png)
 
-![Méret és a formátum](media/office-store-in-app-purchase-visual-guidelines/size-and-format.png)
+![Méret és a formátum](media/guidelines-powerbi-visuals/size-and-format.png)
 
-![Margók és méretezés](media/office-store-in-app-purchase-visual-guidelines/margins-and-sizes.png)
+![Margók és méretezés](media/guidelines-powerbi-visuals/margins-and-sizes.png)
 
-![Szerkesztési mód](media/office-store-in-app-purchase-visual-guidelines/logos-in-edit-mode.png)
+![Szerkesztési mód](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 ## <a name="best-practices"></a>Ajánlott eljárások
 

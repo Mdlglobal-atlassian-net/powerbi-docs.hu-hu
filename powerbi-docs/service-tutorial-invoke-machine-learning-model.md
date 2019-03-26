@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 54515259d0e258284cd5a2e86432a5ef6be89a9e
-ms.sourcegitcommit: 06ae54ed221979939699c67d63aeccba8b9dfcda
+ms.openlocfilehash: 6c63f0bbcf836c90eecf7407d2d9805fc9ab443a
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57965962"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430323"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)
 
@@ -92,7 +92,7 @@ A következő képernyőn a rendszer kérni fogja, hogy kapcsolódjon egy adatfo
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv`
 
-!Connect to data source](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
+![Kapcsolódás adatforráshoz](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 
 A Power Query-szerkesztő megjeleníti a CSV-fájl adatainak előnézetét. A parancssávon válassza a **Tábla átalakítása** elemet, majd válassza az **Első sor használata fejlécként** lehetőséget.  Ez hozzáadja az _Előléptetett fejlécek_ lekérdezési lépést a jobb oldali **Alkalmazott lépések** panelhez. A jobb oldali panelen a lekérdezést át is nevezheti, és választhat egy beszédesebb nevet is, például _Autóárak_.
 
@@ -137,7 +137,7 @@ A **Szerkesztés** ikon kiválasztásával megnyílik a Power Query-szerkesztő 
 
 Válassza a menüszalag **AI-elemzések** gombját, majd a bal oldali navigációs menü _Azure Machine Learning-modellek_ elemét.
 
-Válassza az **Azure Machine Learning Models** mappát. Azok az Azure ML-modellek, amelyekhez hozzáférést kapott, Power Query-függvényekként jelennek meg az *AzureML* előtaggal.  Ha az _AutomobilePricePrediction_ modellnek megfelelő függvényre kattint, a modell webszolgáltatásának paraméterei függvényparaméterekként lesznek listázva.
+Azok az Azure ML-modellek, amelyekhez hozzáférést kapott, Power Query-függvényekként jelennek meg az *AzureML* előtaggal.  Ha az _AutomobilePricePrediction_ modellnek megfelelő függvényre kattint, a modell webszolgáltatásának paraméterei függvényparaméterekként lesznek listázva.
 
 Az Azure ML-modell meghívásához bemenetként a kijelölt entitás bármelyik oszlopát megadhatja. Emellett megadhat egy állandó értéket is, amelyet bemenetként használhat. Ehhez a bemeneti párbeszédpanelen be kell kapcsolnia az oszlop ikont. Ha egy oszlopnév megegyezik valamelyik függvény paraméternevével, az oszlopot a rendszer automatikusan bemenetként javasolja.  Ha az oszlopnév nem egyezik, kiválaszthatja azt a legördülő listából.
 
