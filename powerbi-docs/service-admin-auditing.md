@@ -11,12 +11,12 @@ ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 59916f904c2905a6858e0c20a67a2c0eae9e8cca
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 27776b251734d025e4dcde9f525f321008647455
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980404"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383485"
 ---
 # <a name="using-auditing-within-your-organization"></a>Naplózás használata a cégnél
 
@@ -34,7 +34,7 @@ Az auditnaplók eléréséhez az alábbi követelményeknek kell megfelelnie:
 
     Ha nem rendszergazdai fiókoknak hozzáférést szeretne adni az auditnaplóhoz, akkor fel kell vennie a felhasználót ezeknek a szerepkörcsoportoknak az egyikébe. Másik lehetőségként létrehozhat egy egyéni szerepkörcsoportot az Exchange felügyeleti központjában, hozzárendelheti az auditnaplók vagy auditnaplók (csak megtekintés) szerepkört ehhez a csoporthoz, majd felveheti a nem rendszergazdai fiókot az új szerepkörcsoportba. További információ: [Szerepkörcsoportok kezelése az Exchange Online-ban](/Exchange/permissions-exo/role-groups).
 
-    Ha az Office 365 felügyeleti központjából nem éri el az Exchange felügyeleti központját, lépjen a https://outlook.office365.com/ecp weblapra, és jelentkezzen be a hitelesítő adataival.
+    Ha a Microsoft 365 Felügyeleti központjából nem éri el az Exchange felügyeleti központját, lépjen a https://outlook.office365.com/ecp weblapra, és jelentkezzen be a hitelesítő adataival.
 
 * Ha rendelkezik hozzáféréssel az auditnaplóhoz, de nem globális rendszergazda vagy a Power BI szolgáltatás rendszergazdája, nem lesz hozzáférése a Power BI felügyeleti portáljához. Ebben az esetben az [Office 365 Biztonsági és megfelelőségi központra](https://sip.protection.office.com/#/unifiedauditlog) mutató közvetlen hivatkozást kell használnia.
 
@@ -50,9 +50,9 @@ A Power BI auditnaplói közvetlenül az [Office 365 Biztonsági és megfelelős
 
 1. Válassza a **Naplók** lehetőséget.
 
-1. Válassza az **Ugrás az O365 felügyeleti központjára** lehetőséget.
+1. Válassza **A Microsoft 365 Felügyeleti központ megnyitása** lehetőséget.
 
-   ![Ugrás az O365 felügyeleti központjára](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![A Microsoft 365 Felügyeleti központ megnyitása](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ## <a name="search-only-power-bi-activities"></a>Keresés csak Power BI-tevékenységek között
 
@@ -214,7 +214,7 @@ A Power BI az alábbi tevékenységeket naplózza.
 | Power BI-adatforrás átvétele                   | TakeOverDatasource (Adatforrás átvétele)                          |                                          |
 | Power BI-adathalmaz átvétele                        | TakeOverDataset (Adatkészlet átvétele)                             |                                          |
 | Közzé nem tett Power BI-alkalmazás                          | UnpublishApp (Alkalmazás közzétételének visszavonása)                                |                                          |
-| Kapacitásforrás szabályozási beállításainak frissítése      | UpdateCapacityResourceGovernanceSettings (Kapacitásforrás szabályozási beállításai)    | Az Office 365 felügyeleti portálján jelenleg nincs használatban |
+| Kapacitásforrás szabályozási beállításainak frissítése      | UpdateCapacityResourceGovernanceSettings (Kapacitásforrás szabályozási beállításai)    | Jelenleg nem a Microsoft 365 Felügyeleti központjában van |
 | Kapacitás-rendszergazda frissítése                            | UpdateCapacityAdmins (Kapacitás-rendszergazdák frissítése)                        |                                          |
 | Kapacitás megjelenített nevének frissítése                     | UpdateCapacityDisplayName (Kapacitás megjelenített neve)                   |                                          |
 | Vállalati Power BI-beállítások frissítése          | UpdatedAdminFeatureSwitch (Frissített rendszergazdai funkciókapcsoló)                   |                                          |

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 25d6c8020e500096507ba5e80a020a7a1c3052a6
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 54bdc0cb3490cf2149f2fda51939c201cd51518f
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980427"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383439"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>A Power BI felügyelete – gyakori kérdések (GYIK)
 
@@ -60,7 +60,7 @@ A szakasz egyes folyamataihoz Windows PowerShell-szkriptek szükségesek. Ha mé
 
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Hogyan regisztrálnak a felhasználók a Power BI-ra?
 
-Rendszergazdaként a [Power BI webhelyén](https://powerbi.microsoft.com) vagy az Office 365 felügyeleti központjának [Szolgáltatások vásárlása](https://admin.microsoft.com/AdminPortal/Home#/catalog) területén regisztrálhat a Power BI szolgáltatásra. Amikor egy rendszergazda regisztrál a Power BI-ra, felhasználói licenceket rendelhet azokhoz a felhasználókhoz, akiknek hozzáférésre van szükségük.
+Rendszergazdaként a [Power BI webhelyén](https://powerbi.microsoft.com) vagy a Microsoft 365 Felügyeleti központ [Szolgáltatások vásárlása](https://admin.microsoft.com/AdminPortal/Home#/catalog) oldalán regisztrálhat a Power BI szolgáltatásra. Amikor egy rendszergazda regisztrál a Power BI-ra, felhasználói licenceket rendelhet azokhoz a felhasználókhoz, akiknek hozzáférésre van szükségük.
 
 A cég egyes felhasználói külön-külön is regisztrálhatnak a [Power BI webhelyen](https://powerbi.microsoft.com) a Power BI-ra. Amikor a vállalat egy felhasználója regisztrál a Power BI-ra, a felhasználóhoz automatikusan Power BI-licenc lesz rendelve. További információ: [Egyéni Power BI-regisztráció](service-self-service-signup-for-power-bi.md) és [Szervezeti Power BI-licencelés](service-admin-licensing-organization.md).
 
@@ -169,7 +169,7 @@ Három forgatókönyv vonatkozhat a cégen belüli felhasználókra:
 
 ### <a name="how-do-we-manage-power-bi"></a>Hogyan lehet kezelni a Power BI-t?
 
-A Power BI olyan rendszergazdai portált biztosít, amellyel megtekintheti a használattal kapcsolatos statisztikákat, kapcsolatot nyújt az Office 365 felügyeleti központhoz a felhasználók és csoportok kezeléséhez, illetve lehetővé teszi a bérlők közötti beállítások kezelését.
+A Power BI olyan rendszergazdai portált biztosít, amellyel megtekintheti a használattal kapcsolatos statisztikákat, hivatkozást biztosít a Microsoft 365 Felügyeleti központhoz a felhasználók és csoportok kezeléséhez, illetve lehetővé teszi a bérlők közötti beállítások kezelését.
 
 A Power BI felügyeleti portáljának eléréséhez fiókját **Globális rendszergazda** fiókként kell megjelölni az Office 365 vagy az Azure Active Directory szolgáltatáson belül, vagy a Power BI szolgáltatás rendszergazdai szerepkörét kell hozzárendelni. További információ: [A Power BI rendszergazdai szerepkörének ismertetése](service-admin-role.md) és [Power BI felügyeleti portál](service-admin-portal.md).
 
@@ -196,7 +196,7 @@ Ha nem tesz semmit, a rendszer minden felhasználói e-mail-tartományhoz és -a
 
 Ha egy felhasználó regisztrált a Power BI-ra, de Ön már nem szeretné, hogy hozzáférjen a Power BI-hoz, eltávolíthatja a felhasználó Power BI-licencét.
 
-1. Keresse fel az [Office 365 Felügyeleti központot](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. A [Microsoft 365 Felügyeleti központ](https://admin.microsoft.com/AdminPortal/Home#/homepage) megnyitása.
 
 1. A bal oldali navigációs sávban válassza a **Felhasználók** > **Aktív felhasználók** lehetőséget.
 
@@ -214,7 +214,7 @@ Ha egy felhasználó regisztrált a Power BI-ra, de Ön már nem szeretné, hogy
 
 A jelen program részeként a bérlőhöz csatlakozó felhasználókhoz egyedi licenc van rendelve, amely alapján szűrhet a felügyeleti irányítópult aktív felhasználó panelén. Az új nézet létrehozásához kövesse az alábbi lépéseket.
 
-1. Keresse fel az [Office 365 Felügyeleti központot](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. A [Microsoft 365 Felügyeleti központ](https://admin.microsoft.com/AdminPortal/Home#/homepage) megnyitása.
 
 1. A bal oldali navigációs sávban válassza a **Felhasználók** > **Aktív felhasználók** lehetőséget.
 
@@ -232,7 +232,7 @@ A jelen program részeként a bérlőhöz csatlakozó felhasználókhoz egyedi l
 
 Az új jelszavak létrehozásával kapcsolatos kérések növekedését tapasztalhatja. További információk erről a folyamatról: [Új jelszó kérése egy felhasználóhoz](/office365/admin/add-users/reset-passwords).
 
-A szokásos eljárással távolíthat el felhasználókat a bérlőből az Office 365 felügyeleti központban. Ha azonban egy felhasználónak még mindig a vállalattól származó e-mail-címe van, újra tud csatlakozni, amíg le nem tiltja az összes felhasználó csatlakozását.
+A Microsoft 365 Felügyeleti központban a szokásos eljárással távolíthat el felhasználókat a bérlőből. Ha azonban egy felhasználónak még mindig a vállalattól származó e-mail-címe van, újra tud csatlakozni, amíg le nem tiltja az összes felhasználó csatlakozását.
 
 ### <a name="where-is-my-power-bi-tenant-located"></a>Hol található a Power BI-bérlőm?
 

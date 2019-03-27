@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 65889d1082cee75ed56edc67ece9c99b5f344a6e
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 5da6b465adc544bf64fd4dfb090a2e1faabee59d
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430221"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383238"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Szervezeti Power BI-licencelés
 
@@ -35,7 +35,7 @@ A Power BI Pro-licenceket a Microsoft Office 365-ön keresztül vagy egy hivatal
 
 A cégben dolgozó egyéni felhasználók regisztrálhatnak a Power BI Pro próbaverziójára. További információkért lásd: [Egyéni Power BI-regisztráció](service-self-service-signup-for-power-bi.md).
 
-Az Office 365 felügyeleti portálján a szolgáltatáson belüli ingyenes Power BI Pro próbaverziót használó felhasználók nem a Power BI Pro próbaverziós felhasználóiként, hanem ingyenes Power BI-felhasználókként jelennek meg, a Power BI tárhelykezelési lapján azonban a Power BI Pro próbaverziós felhasználóiként vannak feltüntetve.
+A Microsoft 365 Felügyeleti központban a szolgáltatáson belüli ingyenes Power BI Pro-próbaverziót használó felhasználók nem a Power BI Pro próbaverziós felhasználóiként, hanem ingyenes Power BI-felhasználókként jelennek meg, a Power BI tárhelykezelési lapján azonban a Power BI Pro próbaverziós felhasználóiként vannak feltüntetve.
 
 ### <a name="power-bi-pro-trial-for-organizations"></a>A Power BI Pro próbaverziója cégeknek
 
@@ -47,7 +47,7 @@ Mielőtt regisztrálna, vegye figyelembe a következőket:
 
 * A céges próbaverziók száma bérlőnként csak egy lehet. Ez azt jelenti, hogy ha valaki már alkalmazta a Power BI Pro próbaverzióját a bérlőn, Ön nem teheti meg ugyanezt. Ha segítségre van szüksége ezzel kapcsolatban, forduljon az [Office 365 számlázási támogatási csapatához](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
 
-1. Keresse fel az [Office 365 Felügyeleti központot](https://portal.office.com/adminportal/home#/homepage).
+1. Nyissa meg a [Microsoft 365 Felügyeleti központot](https://portal.office.com/adminportal/home#/homepage).
 
 1. A bal oldali navigációs ablaktáblán kattintson a **Számlázás**, majd az **Előfizetések** lehetőségre.
 
@@ -71,7 +71,7 @@ Most [kioszthatja a licenceket az Office 365-ben](https://support.office.com/art
 
 A céghez tartozó felhasználók két különböző módon szerezhetnek be ingyenes Power BI-licenceket:
 
-* Power BI-licenceket rendelhet hozzájuk az Office 365 felügyeleti portálon.
+* Power BI-licencet rendelhet hozzájuk a Microsoft 365 Felügyeleti központban.
 
 * Ha egy felhasználó [regisztrál a Power BI Pro próbaverziójára](service-self-service-signup-for-power-bi.md), az pedig lejár, ingyenes licencet kap.
 
@@ -81,7 +81,7 @@ Ha a licencigénylés és -kiosztás folyamatát központilag szeretné felügye
 
 Ez a licenckészlet azt követően válik elérhetővé, hogy valaki egyéni felhasználóként már regisztrált a Power BI használatára. A regisztrálás során a rendszer hozzárendeli a licenckészletet a céghez, és a regisztráló felhasználónak kioszt egy licencet.
 
-1. Az Office 365 felügyeleti központjában, a **Számlázás** > **Licencek** felületen keresse a **korlátlan** lehetőséget.
+1. A Microsoft 365 Felügyeleti központban, a **Számlázás** > **Licencek** felületen keresse a **korlátlan** lehetőséget.
 
     ![Korlátlan ingyenes licenckészlet](media/service-admin-licensing-organization/unlimited-licenses.png)
 
@@ -93,7 +93,7 @@ Ez a licenckészlet azt követően válik elérhetővé, hogy valaki egyéni fel
 
 Ha a korlátlan (ingyenes) Power BI-licenckészlet nem érhető el, és nem szeretne egyéni regisztrációhoz folyamodni, eszerint kell eljárnia.
 
-1. Keresse fel az [Office 365 Felügyeleti központot](https://portal.office.com/admin/default.aspx).
+1. Nyissa meg a [Microsoft 365 Felügyeleti központot](https://portal.office.com/admin/default.aspx).
 
 1. A bal oldali navigációs ablaktáblán kattintson a **Számlázás** > **Előfizetések** lehetőségre.
 

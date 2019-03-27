@@ -2,27 +2,29 @@
 title: A Power BI és a biztonság
 description: A Power BI és a biztonság. A Power BI kapcsolata az Azure Active Directoryval és más Azure-szolgáltatásokkal. Ez a témakör egy részletesebb tanulmányra mutató hivatkozást is tartalmaz.
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/11/2019
-ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: e067ac55d606372c05da1e0ebff76e4d05f35e9c
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: b70d23d7f4f5dfab9273319ad890a21c9b74ead2
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757507"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430369"
 ---
 # <a name="power-bi-security"></a>A Power BI és a biztonság
+
 A Power BI biztonságáról részletes leírásért [olvassa el a Power BI-jal és a biztonsággal kapcsolatos tanulmányt](whitepaper-powerbi-security.md).
 
 A Power BI szolgáltatás az **Azure**-ra épül, amely a Microsoft felhőalapú számítástechnikai infrastruktúrája és platformja. A Power BI szolgáltatás architektúrája két fürtön alapul – a webes előtérrendszer (**WFE-**) fürtön és a **háttérbeli** fürtön. A WFE-fürt kezeli a kezdeti kapcsolódást és a Power BI szolgáltatás hitelesítését, a hitelesítés után a háttérbeli fürt kezeli az összes további felhasználói interakciót. A Power BI az Azure Active Directory (AAD) használatával tárolja és kezeli a felhasználói identitásokat, valamint kezeli az adatoknak és metaadatoknak az Azure BLOB és az Azure SQL Database használatával történő tárolását.
 
 ## <a name="power-bi-architecture"></a>A Power BI-architektúra
+
 Minden üzemelő Power BI-példány két fürtből áll – egy webes előtérrendszer (**WFE-**) fürtből és egy **háttérbeli** fürtből.
 
 A **WFE**-fürt kezeli a kezdeti kapcsolódást és a Power BI hitelesítési folyamatát az AAD-val hitelesítve a felhasználókat, és hozzáférési jogkivonatokat ad ki a Power BI szolgáltatással való további felhasználói kapcsolatokhoz. A Power BI az **Azure Traffic Managert** (ATM) is használja arra, hogy a felhasználói forgalmat – a kapcsolódást megkísérlő ügyfél DNS-rekordja alapján – a legközelebbi adatközponthoz irányítsa a hitelesítési elvégzéséhez és statikus tartalom és fájlok letöltéséhez. A Power BI a szükséges statikus tartalmat és fájlokat az **Azure Content Delivery Network** (CDN) használatával osztja el hatékonyan a felhasználók között a földrajzi helyzet alapján.
@@ -35,22 +37,23 @@ A hitelesített ügyfelek a **háttérbeli** fürtön kommunikálnak a Power BI 
 
 > [!IMPORTANT]
 > Fontos tisztában lenni azzal, hogy a nyilvános interneten keresztül csak az **Azure API Management** (APIM) és az **Átjáró** (GW) szerepkörök érhetők el. Ezek biztosítják a hitelesítést, az engedélyezést, a DDoS-védelmet, a szabályozást, a terheléselosztást, az útválasztást és más funkciókat.
-> 
-> 
 
 ## <a name="data-storage-security"></a>Adattárolók biztonsága
+
 A Power BI két elsődleges adattárat használ adatok tárolására és kezelésére: A felhasználóktól feltöltött adatokat általában **Azure BLOB**-tárolóra küldi, a metaadatokat és magának a rendszernek az összetevőit **Azure SQL Database**-ben tárolja.
 
 A fenti ábrán a **háttérbeli** fürt képén lévő szaggatott vonal a felhasználók által egyedül elérhető két összetevő (a szaggatott vonaltól balra) és a csak a rendszer által elérhető szerepkörök közötti határvonalat jelzi. Amikor egy hitelesített felhasználó a Power BI szolgáltatáshoz kapcsolódik, akkor a kapcsolatot és az ügyfél minden kérelmét az **átjárói szerepkör** fogadja és kezeli (és végül az **Azure API Management** kezeli), amely aztán a felhasználó nevében használja a Power BI szolgáltatás többi elemét. Amikor egy ügyfél például egy irányítópultot próbál megtekinteni, az **átjárói szerepkör** fogadja a kérelmet, majd külön kérelmet küld a **bemutatási szerepkörnek**, hogy lekérje az adatokat, amelyekre a böngészőnek az irányítópult megjelenítéséhez szüksége van.
 
 ## <a name="user-authentication"></a>Felhasználók hitelesítése
-A Power BI az Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) használatával hitelesíti a Power BI szolgáltatásra bejelentkező felhasználókat, és azután a Power BI bejelentkezési hitelesítő adatait használja, amikor egy felhasználó hitelesítést igénylő erőforrásokat próbál meg elérni. A felhasználók a Power BI-fiók létrehozásához használt e-mail-címmel jelentkeznek be a Power BI szolgáltatásba. A Power BI ezt a bejelentkezési e-mail-címet használja az *érvényes felhasználónévként*, amelyet az erőforrásoknak ad át, amikor a felhasználó adatokhoz próbál csatlakozni. Az *érvényes felhasználónév* hozzárendelődik az *egyszerű felhasználónévhez* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)), és a hozzá társított Windows-tartományi fiókká oldódik fel, amelyen megtörténik a hitelesítés.
+
+A Power BI az Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) használatával hitelesíti a Power BI szolgáltatásba bejelentkező felhasználókat, és azután a Power BI bejelentkezési hitelesítő adatait használja, amikor egy felhasználó hitelesítést igénylő erőforrásokat próbál meg elérni. A felhasználók a Power BI-fiók létrehozásához használt e-mail-címmel jelentkeznek be a Power BI szolgáltatásba. A Power BI ezt a bejelentkezési e-mail-címet használja az *érvényes felhasználónévként*, amelyet az erőforrásoknak ad át, amikor a felhasználó adatokhoz próbál csatlakozni. Az *érvényes felhasználónév* hozzárendelődik az *egyszerű felhasználónévhez* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)), és a hozzá társított Windows-tartományi fiókká oldódik fel, amelyen megtörténik a hitelesítés.
 
 Az olyan szervezeteknél, ahol vállalati e-mail-címeket használnak a Power BI-bejelentkezéshez (például <em>david@contoso.com</em>) az *érvényes felhasználónév* magától értetődően rendelődik hozzá az egyszerű névhez. Az olyan szervezeteknél, ahol nem vállalati e-mail-címeket használnak a Power BI-bejelentkezéshez (például <em>david@contoso.onmicrosoft.com</em>), az AAD és a helyszíni hitelesítő adatok egymáshoz rendelésének helyes működése [címtár-szinkronizálást](https://technet.microsoft.com/library/jj573653.aspx) kíván.
 
 A Power BI platform-szintű biztonsága magában foglalja a több-bérlős környezet biztonságát, a hálózati biztonságot és további AAD-alapú biztonsági elemek hozzáadásának lehetőségét.
 
 ## <a name="data-and-service-security"></a>Az adatok és a szolgáltatás biztonsága
+
 Ha további tájékoztatást szeretne, keresse fel a [Microsoft Adatvédelmi központot](https://www.microsoft.com/trustcenter).
 
 Ebben a cikkben már volt szó arról, hogy a helyszíni Active Directory-kiszolgálók felhasználják a felhasználó Power BI-bejelentkezési információit az egyszerű felhasználónév és a hitelesítő adatok egymáshoz rendeléséhez. **Fontos** ugyanakkor, hogy a megosztott adatokért a felhasználók felelnek: ha egy felhasználó a saját hitelesítő adataival kapcsolódik adatforrásokhoz, majd megoszt egy, ezekre az adatokra épülő jelentést (vagy irányítópultot vagy adatkészletet), akkor azok, akikkel az irányítópultot megosztotta, hozzáférnek a jelentéshez, bár nincs jogosultságuk az eredeti adatforráshoz.
@@ -66,4 +69,3 @@ Ez a kényszerítés a beállításkulcsok felügyeleti beállításával érhet
 A **Power BI Desktop** figyelembe veszi az ezekben a cikkekben leírt beállításkulcs-beállításokat, és csak az engedélyezett TLS-verzióval hoz létre kapcsolatokat ezekkel a beállításjegyzék-beállításokkal, amikor jelen vannak.
 
 Ezen beállításkulcsok beállításáról további információt a [TLS-beállításjegyzék beállításaival](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) kapcsolatos cikkben talál.
-

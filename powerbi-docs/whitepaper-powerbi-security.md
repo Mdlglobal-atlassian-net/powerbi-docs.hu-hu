@@ -2,20 +2,20 @@
 title: A Power BI biztonsága – tanulmány
 description: A Power BI biztonsági architektúráját és implementációját vizsgáló és ismertető tanulmány
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/07/2019
-ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 957c6d5fe8797f1b03eaab3a54846e7110b302fb
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: 8a86d17252bea3dbdb6ad30de35667cfbd844c8b
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580289"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430392"
 ---
 # <a name="power-bi-security-whitepaper"></a>A Power BI biztonsága – tanulmány
 
@@ -125,7 +125,7 @@ A Power BI szolgáltatás jelenleg adott régiókban érhető el, amelyeket a [M
 
 * [Power BI-adatközpontok](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
-A Microsoft önálló jogi személyek számára is biztosít adatközpontokat. A Power BI szolgáltatás szuverén felhőkben való elérhetőségéről a [Power BI szuverén felhőkről](https://powerbi.microsoft.com/clouds/) szóló oldalán tájékozódhat.
+A Microsoft önálló jogi személyek számára is biztosít adatközpontokat. A Power BI szolgáltatás országos felhőkben való elérhetőségéről a [Power BI országos felhőkről](https://powerbi.microsoft.com/clouds/) szóló oldalán tájékozódhat.
 
 Adatai tárolási helyével és használatának módjáról a [Microsoft Adatvédelmi központban](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where) talál további információt. Az inaktív ügyféladatok elhelyezésével kapcsolatos kötelezettségvállalások az **Adatfeldolgozási feltételek** vagy az [Online Microsoft-szolgáltatások feltételei](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) között vannak megadva.
 
@@ -151,11 +151,9 @@ A felhasználó Power BI szolgáltatásban történő hitelesítésnek művelets
 
 3. A WFE-fürt az **Azure Active Directory** ( **AAD** ) szolgáltatással egyeztetve hitelesíti a felhasználó Power BI-szolgáltatás-előfizetését, és beszerez egy AAD-jogkivonatot. Amikor az AAD a felhasználó sikeres hitelesítésével válaszol, és visszaad egy AAD-jogkivonatot, a WFE-fürt a bérlők listáját és azok Power BI-háttérfürtjeinek helyét kezelő **Globális Power BI**** szolgáltatással** egyeztetve meghatározza a felhasználó bérlőjét tartalmazó Power BI szolgáltatásfürtöt. A WFE-fürt ezután ahhoz a Power BI-fürthöz irányítja a felhasználót, amelyen a bérlője elhelyezkedik, majd egyszerre több mindent ad vissza a felhasználó böngészőjének:
 
-
       - Az **AAD-jogkivonatot**
       - **A munkamenetadatokat**
       - Annak a **Back-End** fürtnek a webcímét, amellyel a felhasználó kommunikálhat
-
 
 1. A felhasználó böngészője ekkor a megadott Azure CDN-hez, bizonyos fájlok esetében pedig a WFE-hez fordulva letölti a böngészőnek a Power BI szolgáltatással való együttműködéséhez szükséges megadott közös fájlok gyűjteményét. A böngészőlap így a Power BI szolgáltatás böngésző-munkamenetének időtartamára tartalmazza az AAD-jogkivonatot, a munkamenetadatokat, a társított Back End-fürt helyét, valamint az Azure CDN-ből és a WFE-fürtből letöltött fájlok gyűjteményét.
 
@@ -182,9 +180,6 @@ A következő táblázat ismerteti a Power BI-adatokat a használt lekérdezés 
 |Soradatok     |    X     |         |         |
 |Vizualizációs adatok gyorsítótárazása     |    X     |     X    |    X     |
 
-
-
-
 A DirectQuery és a más lekérdezések közötti megkülönböztetés határozza meg, hogyan kezeli a Power BI szolgáltatás az inaktív adatokat, és hogy maga a lekérdezés titkosítva van-e. A következő szakaszok az inaktív és mozgásban lévő adatokat írják le, valamint az adatok titkosítását, elhelyezkedését és kezelésük módját ismertetik.
 
 ### <a name="data-at-rest"></a>Inaktív adatok
@@ -210,9 +205,9 @@ Felhőalapú adatforrások esetén az adatáthelyezési szerepkör [Always Encry
 #### <a name="datasets"></a>Adathalmazok
 
 1. Metaadatok (táblák, oszlopok, mértékek, számítások, kapcsolati sztringek stb.)
-      
+
     a. Helyszíni Analysis Services esetén a szolgáltatásban semmi sincs tárolva az adott, az Azure SQL-ben titkosítva tárolt adatbázisra mutató hivatkozáson kívül.
- 
+
     b. Az ETL, a DirectQuery és a Push Data összes többi metaadata titkosítva van és Azure Blob-tárolóban van tárolva.
 
 1. Az eredeti adatforrásokhoz való hitelesítő adatok
@@ -255,7 +250,7 @@ A Power BI a következő módon biztosítja az adatok adatintegritási monitoroz
    a. A jelentések lehetnek Office 365-höz készült Excel-, illetve Power BI-jelentések. Az alábbiak érvényesek a metaadatokra a jelentés típusától függően:
 
        a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
-       
+
        b. Power BI reports are stored encrypted in Azure SQL database.
 
 2. Statikus adatok
@@ -358,7 +353,7 @@ Az alábbi táblázat a Power BI Mobile tanúsítványalapú hitelesítésének 
 | **Power BI** (bejelentkezés a szolgáltatásba) | támogatott | támogatott | Nem támogatott |
 | **SSRS ADFS** (csatlakozás az SSRS-kiszolgálóhoz) | Nem támogatott | Támogatott | Nem támogatott |
 
-A Power BI Mobile-alkalmazások aktívan kommunikálnak a Power BI szolgáltatással. A szolgáltatás telemetrikai adatokkal gyűjt használati statisztikákat és hasonló adatokat, amelyeket használatot és egyéb tevékenységeket monitorozó szolgáltatásoknak továbbít. Ezek nem tartalmaznak személyes azonosításra alkalmas információkat (PII-t).
+A Power BI Mobile-alkalmazások aktívan kommunikálnak a Power BI szolgáltatással. A szolgáltatás telemetrikai adatokkal gyűjt mobilalkalmazás-használati statisztikákat és hasonló adatokat, amelyeket használatot és egyéb tevékenységeket monitorozó szolgáltatásoknak továbbít. A telemetriai adatok nem tartalmaznak személyes azonosításra alkalmas adatokat.
 
 A Power BI **eszközön található alkalmazása** az alkalmazás használatát elősegítő eszközön tárolja az adatokat:
 
@@ -414,7 +409,7 @@ Az alábbiak Power BI-jal kapcsolatos gyakori biztonsági kérdések, valamint a
 
 **Hogyan működnek a Power BI-csoportok?**
 
-* A Power BI-csoportokkal a felhasználók gyorsan és könnyen, saját csapatokban működhetnek együtt irányítópultok, jelentések és adatmodellek létrehozásán. Ha például egy olyan Power BI-csoportja van, amely a közvetlen csapatának minden tagját tartalmazza, könnyen együttműködhet velük, ha kiválasztja a Csoport elemet a Power BI-ban. A Power BI-csoportok egyenértékűek az Office 365 univerzális csoportjaival (amelyeket itt [ismerhet meg](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1), [hozhat létre](https://support.office.com/Article/View-create-and-delete-Groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7) és [kezelhet](https://support.office.com/Article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)), és az Azure Active Directoryval megegyező hitelesítési mechanizmusokat alkalmazzák. [Létrehozhat csoportokat a Power BI-ban](https://support.powerbi.com/knowledgebase/articles/654250), vagy egy univerzális csoportot az Office 365 felügyeleti központjában – a Power BI-beli csoportalkotás szempontjából mindkettőnek ugyanaz az eredménye.
+* A Power BI-csoportokkal a felhasználók gyorsan és könnyen, saját csapatokban működhetnek együtt irányítópultok, jelentések és adatmodellek létrehozásán. Ha például egy olyan Power BI-csoportja van, amely a közvetlen csapatának minden tagját tartalmazza, könnyen együttműködhet velük, ha kiválasztja a Csoport elemet a Power BI-ban. A Power BI-csoportok egyenértékűek az Office 365 univerzális csoportjaival (amelyeket itt [ismerhet meg](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1), [hozhat létre](https://support.office.com/Article/View-create-and-delete-Groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7) és [kezelhet](https://support.office.com/Article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)), és az Azure Active Directoryval megegyező hitelesítési mechanizmusokat alkalmazzák. [Létrehozhat csoportokat a Power BI-ban](https://support.powerbi.com/knowledgebase/articles/654250), vagy egy univerzális csoportot a Microsoft 365 Felügyeleti központjában. A Power BI-beli csoportalkotás szempontjából mindkettőnek ugyanaz az eredménye.
 
   A Power BI-csoportokkal megosztott adatokra ugyanazok a biztonsági megfontolások vonatkoznak, mint a Power BI-ban megosztott bármilyen más adatokra. **Nem RLS**-kompatibilis adatforrások esetén a Power BI **nem** hitelesíti újra a felhasználókat az eredeti adatforráshoz. Miután az adatok feltöltődtek a Power BI-ba, az adatforrást hitelesítő felhasználó felelős azok megtekintési jogosultságaiért. További információt a dokumentum korábbi, **Felhasználói hitelesítés az adatforrásokhoz** című szakaszában találhat.
 
@@ -459,9 +454,9 @@ Az alábbiak Power BI-jal kapcsolatos gyakori biztonsági kérdések, valamint a
 
 **Mi a helyzet az adatok elkülönítésével? Üzembe helyezhetjük a bérlőket megadott földrajzi helyen lévő adatközpontokban, hogy az adatok ne kerülhessenek az országhatáron túlra?**
 
-* Egyes ügyfeleknek bizonyos földrajzi helyeken lehetősége van bérlőt létrehozni egy szuverén felhőben, ahol az adatok tárolása és feldolgozása minden más adatközponttól elkülönítve történik. A szuverén felhők némileg eltérő biztonsággal rendelkeznek, mivel a szuverén felhő Power BI szolgáltatását külön adatkezelő működteti a Microsoft nevében.
+* Egyes ügyfeleknek bizonyos földrajzi helyeken lehetősége van bérlőt létrehozni egy országos felhőben, ahol az adatok tárolása és feldolgozása minden más adatközponttól elkülönítve történik. Az országos felhők némileg eltérő biztonsággal rendelkeznek, mivel az országos felhő Power BI szolgáltatását külön adatkezelő működteti a Microsoft nevében.
 
-  Az ügyfelek úgy is dönthetnek, hogy egy adott régióban állítanak be bérlőt, az ilyen bérlőknek azonban nem lesz a Microsofttól elkülönített adatkezelője. A szuverén felhők díjszabása eltér az általánosan elérhető kereskedelmi Power BI szolgáltatásétól. A Power BI szolgáltatás szuverén felhőkben való elérhetőségéről a [Power BI szuverén felhőkről](https://powerbi.microsoft.com/clouds/) szóló oldalán tájékozódhat.
+  Az ügyfelek úgy is dönthetnek, hogy egy adott régióban állítanak be bérlőt, az ilyen bérlőknek azonban nem lesz a Microsofttól elkülönített adatkezelője. Az országos felhők díjszabása eltér az általánosan elérhető kereskedelmi Power BI szolgáltatásétól. A Power BI szolgáltatás országos felhőkben való elérhetőségéről a [Power BI országos felhőkről](https://powerbi.microsoft.com/clouds/) szóló oldalán tájékozódhat.
 
 **Hogyan kezeli a Microsoft a Power BI Premium-előfizetésekkel rendelkező ügyfelek kapcsolatait? Mások ezek a kapcsolatok, mint a nem prémium szintű Power BI szolgáltatáshoz létrehozottak?**
 
@@ -488,6 +483,6 @@ A Power BI-ról az alábbi forrásanyagokban talál további információt.
 - [A Power BI API referenciája](https://msdn.microsoft.com/library/mt147898.aspx)
 - [Helyszíni adatátjáró](service-gateway-manage.md)
 - [A Power BI és az ExpressRoute](service-admin-power-bi-expressroute.md)
-- [Power BI szuverén felhők](https://powerbi.microsoft.com/clouds/)
+- [Power BI országos felhők](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)](service-gateway-sso-overview.md)

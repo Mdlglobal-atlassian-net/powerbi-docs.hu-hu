@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/13/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 48ea3d5e60c6f6a079be1d7040266817fdf5b97b
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 536e433540d371838b027e06f857609024e213f3
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57964985"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430484"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>A Power BI Desktop korábbi havi frissítései
 
@@ -558,7 +558,7 @@ A **Power BI Desktop** júniusi újdonságai közé az alábbi frissítések tar
 
 ### <a name="other"></a>Egyéb
 
-* Szuverénfelhő-választó [[videó]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
+* Országosfelhő-választó [[videó]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
 
 
 > [!NOTE]
@@ -2250,7 +2250,7 @@ Az alábbi videóban részletesebb információkat talál erről a frissítésr�
 
 Ez a frissítés a következő szolgáltatásokat tartalmazza:
 
--   **Új adatösszekötők**: appFigures, Quickbooks Online, Zendesk, Github, Twilio és SweetIQ.
+-   **Új adatösszekötők**: appFigures, Quickbooks Online, Zendesk, GitHub, Twilio és SweetIQ.
 
 -   **Új átalakítások**: Első/utolsó karakter vagy karaktertartomány kinyerése szövegoszlopból; Lehetőség az Illesztés típusának megadására a Lekérdezések egyesítése párbeszédpanelen; Lehetőség az Idézetstílus testreszabására az Oszlop felosztása elválasztó alapján párbeszédpanelen.
 

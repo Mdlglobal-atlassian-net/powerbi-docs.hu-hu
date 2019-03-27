@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 2/9/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a9fa6b5e854fc51487f0a0b4feaef8650b94057
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 96faaf87c2aa04bdc1175f1b7cb78229bbb87a24
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216861"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383715"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
@@ -346,7 +346,7 @@ Ma számos régóta várt funkciót adtunk ki. [Olvassa el a blogbejegyzést](ht
 
 ***Felügyeleti portál***
 
-* Könnyű felhasználókezelés O365 Felügyeleti központ-kapcsolattal
+* Könnyű felhasználókezelés Microsoft 365 Felügyeleti központ-kapcsolattal
 * A webes közzététel funkció letiltása
 * Tartalomcsomagok a teljes cég számára való közzétételének letiltása a felhasználók számára
 * Külső felhasználókkal való tartalommegosztás letiltása
@@ -508,7 +508,7 @@ A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/p
 * Új hely a lokalizált Power BI-dokumentációknak
 * Továbbfejlesztett betöltési idő a jelentésekhez
 * Clges tartalomcsomagok frissítése csak a jelentésekhez kapcsolódó módosításokkal
-* A Power BI állapota az Office 365 Felügyeleti portálján
+* A Power BI állapota a Microsoft 365 Felügyeleti központban
 * KPI-k és képek a táblázatokban, mátrixokban és kártyákban
 
 A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/powerbi/archive/2015/11/11/power-bi-weekly-service-update-1110.aspx).

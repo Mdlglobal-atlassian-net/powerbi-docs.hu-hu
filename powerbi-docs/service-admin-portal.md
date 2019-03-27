@@ -1,6 +1,6 @@
 ---
 title: Power BI felügyeleti portál
-description: A felügyeleti portál a Power BI bérlői felügyeletét teszi lehetővé a munkahelyen. Olyan lehetőségeket kínál, mint például a használati metrikák, hozzáférés az Office 365 felügyeleti központjához, valamint a beállítások.
+description: A felügyeleti portál a Power BI bérlői felügyeletét teszi lehetővé a munkahelyen. Olyan lehetőségeket kínál, mint például a használati metrikák, hozzáférés a Microsoft 365 Felügyeleti központjához, valamint a beállítások.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: d592cca246b7d8bf348a9cdd889b6d8ba0e248c1
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 2b5e65ff8e9f603dad0e0537ba52e7da799bf177
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980381"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383554"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
-A felügyeleti portál segítségével kezelheti a szervezetéhez tartozó Power BI-*bérlőt*. A portál olyan lehetőségeket kínál, mint például a használati metrikák, hozzáférés az Office 365 felügyeleti központjához, valamint a beállítások.
+A felügyeleti portál segítségével kezelheti a szervezetéhez tartozó Power BI-*bérlőt*. A portál olyan lehetőségeket kínál, mint például a használati metrikák, hozzáférés a Microsoft 365 Felügyeleti központjához, valamint a beállítások.
 
 Az Office 365 minden globális rendszergazdája hozzáférhet a teljes felügyeleti portálhoz, valamint olyan felhasználók is, akik Power BI-szolgáltatásadminisztrátori szerepkört kaptak. Ha még nem kapott ilyen szerepkörbe, csak a **kapacitásbeállításokat** láthatja a portálon. A Power BI szolgáltatás rendszergazdai szerepkörére vonatkozó további információkat [a Power BI rendszergazdai szerepkörét ismertető](service-admin-role.md) témakör tartalmaz.
 
@@ -83,9 +83,9 @@ Ezek az információk valós betekintést nyújtanak abba, hogy a felhasználók
 
 ## <a name="users"></a>Felhasználók
 
-A Power BI-felhasználókat, -csoportokat és -rendszergazdákat az Office 365 felügyeleti központjában kezelheti. A **Felhasználók** lap tartalmaz egy hivatkozást a bérlő felügyeleti központjára.
+A Power BI-felhasználókat, -csoportokat és -rendszergazdákat a Microsoft 365 Felügyeleti központjában kezelheti. A **Felhasználók** lap tartalmaz egy hivatkozást a bérlő felügyeleti központjára.
 
-![Ugrás az O365 felügyeleti központjára](media/service-admin-portal/powerbi-admin-manage-users.png)
+![A Microsoft 365 Felügyeleti központ megnyitása](media/service-admin-portal/powerbi-admin-manage-users.png)
 
 ## <a name="audit-logs"></a>Auditnaplók
 

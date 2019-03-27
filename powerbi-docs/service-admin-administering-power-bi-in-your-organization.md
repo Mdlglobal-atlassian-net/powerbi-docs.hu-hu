@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 10/29/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: d00e6f2a972e6e41d4d9badc51e30a13a6dc98cc
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 214a8a3ce0fd647cecd9855b48589cef02bf01c8
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430123"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383314"
 ---
 # <a name="what-is-power-bi-administration"></a>Mit jelent a Power BI-felügyelet?
 
@@ -71,7 +71,7 @@ A Power BI-adminisztrációhoz számos eszköz használható, amelyeket az aláb
 | **Eszköz** | **Tipikus feladatok** |
 | --- | --- |
 | Power BI felügyeleti portál |<ul><li>Prémium kapacitás beszerzése és kezelése</li><li>A szolgáltatás színvonalának biztosítása</li><li>Besorolás és üzleti adatok kezelése</li><li>Tartalom közzétételére és megosztásra vonatkozó szabályzatok betartatása</li><li>Munkaterületek kezelése<br><li>Egyéni vizualizációk közzététele</li><li>A Power BI más alkalmazásokban való beágyazásához használt kódok ellenőrzése</li><li>Adathozzáférési és más problémák elhárítása</li></ul>|
-| Office 365 Felügyeleti központ |<ul><li>Felhasználók feliratkozásának kezelése</li><li>Pro-licencek vásárlása és hozzárendelése</li><li>Felhasználók Power BI-hozzáférésének letiltása</li></ul>|
+| Microsoft 365 Felügyeleti központ |<ul><li>Felhasználók feliratkozásának kezelése</li><li>Pro-licencek vásárlása és hozzárendelése</li><li>Felhasználók Power BI-hozzáférésének letiltása</li></ul>|
 | Office 365 Security & Compliance Center |<ul><li>Auditálási események áttekintése és kezelése</li></ul>|
 | Az Azure Active Directory (AAD) az Azure Portalon |<ul><li>További hozzáférési engedélyek konfigurálása a Power BI-erőforrásokhoz az AAD használatával</li><li>Power BI Embedded-kapacitás kiépítése</li></ul>|
 | PowerShell-parancsmagok |<ul><li>Munkaterületek és más Power BI-funkciók kezelése parancsfájlokkal</li></ul>|

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/06/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4b017ae02ee88df47e426466c212ed6d87a2f92a
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: d846a50ab87fe7d9f20034892e25dedde043f9ee
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580036"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430254"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI az USA kormányzati ügyfelei számára
 A **Power BI szolgáltatás** külön verziója érhető el az USA kormányzati ügyfeleinek az **egyesült államokbeli Office 365-közösségi** előfizetések részeként. A jelen cikkben a **Power BI szolgáltatás** kifejezetten az USA kormányzati ügyfeleinek készült verzióját tárgyaljuk, amely elkülönül és különbözik a **Power BI szolgáltatás** kereskedelmi verziójától.
@@ -39,7 +39,7 @@ A **Power BI US Government**-ügyfelek a következő funkciókat érhetik el, mi
 * Az Azure SQL és a Blob Storage használatával tárolt valamennyi Power BI-adat titkosítva van
 * Kapcsolódás szolgáltatásokhoz [tartalomcsomagok](service-connect-to-services.md) használatával
 
-## <a name="connectivity-between-government-and-public-azure-cloud-services"></a>Kapcsolat a kormányzati és a nyilvános Azure-felhőszolgáltatások között 
+## <a name="connectivity-between-government-and-global-azure-cloud-services"></a>Kapcsolat a kormányzati és a globális Azure-felhőszolgáltatások között 
 
 Az Azure több felhő között elosztva működik. Alapértelmezés szerint a bérlő megnyithat tűzfalszabályokat egy felhőspecifikus példányhoz, a felhők közötti kapcsolódás azonban másféle jellegű, és meghatározott tűzfalszabályokat kell megnyitni ahhoz, hogy a szolgáltatások között sikeres kommunikáció történjen. Ha Ön Power BI-ügyfélként a nyilvános felhőben meglévő SQL-példányait szeretné elérni, akkor az SQL-ben meghatározott tűzfalszabályokat kell megnyitnia az Azure Government Cloud IP-tartományban az alábbi adatközpontokhoz:
 
@@ -93,7 +93,7 @@ A következő kérdéseket (és válaszokat) azért tesszük közzé, hogy gyors
 | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
 
-**Kérdés:** A fiókom egyszerre több szuverén felhőben is regisztrálva van. A **Power BI Desktop** használatakor hogyan tudom kiválasztani, hogy melyik felhőhöz szeretnék csatlakozni?
+**Kérdés:** A fiókom egyszerre több országos felhőben is regisztrálva van. A **Power BI Desktop** használatakor hogyan tudom kiválasztani, hogy melyik felhőhöz szeretnék csatlakozni?
 
 **Válasz:** A **Power BI Desktop** 2018. júliusi verziójától kezdve a **Power BI Desktopba** történő bejelentkezéskor kiválasztható, melyik felhőhöz szeretne csatlakozni.
 

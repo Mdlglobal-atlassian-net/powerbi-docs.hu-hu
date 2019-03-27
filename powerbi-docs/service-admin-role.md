@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e4cd85e0e5b4f10ead772875434bce3bd0973505
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2de78497698af3ee00ce77ef9c389169ef460546
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287565"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58382807"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>A Power BI-szolgáltatásadminisztrátor szerepkör ismertetése
 
@@ -25,23 +25,23 @@ Megismerheti a Power BI-szolgáltatásadminisztrátor szerepkör használatát a
 
 A Power BI szolgáltatásadminisztrátori szerepkörét olyan felhasználókhoz lehet hozzárendelni, akiknek szükségük van a Power BI felügyeleti portáljához való hozzáférésre, de nem kaphatnak egyéb rendszergazdai Office 365-hozzáférést.
 
-Az Office 365 felhasználókezelő rendszergazdái az Office 365 felügyeleti központjában vagy egy PowerShell-szkripttel rendelhetnek felhasználókat a Power BI-szolgáltatásadminisztrátor szerepkörhöz. Miután a hozzárendelés megtörténik, a felhasználók hozzáférhetnek a [Power BI felügyeleti portáljához](service-admin-portal.md). A portálon hozzáférhetnek a bérlői szintű használati metrikákhoz, valamint képesek szabályozni a Power BI funkcióinak bérlői szintű használatát.
+A Microsoft 365 felhasználókezelő rendszergazdái a Microsoft 365 Felügyeleti központjában vagy egy PowerShell-szkripttel rendelhetnek felhasználókat a Power BI-szolgáltatásgazda szerepkörhöz. Miután a hozzárendelés megtörténik, a felhasználók hozzáférhetnek a [Power BI felügyeleti portáljához](service-admin-portal.md). A portálon hozzáférhetnek a bérlői szintű használati metrikákhoz, valamint képesek szabályozni a Power BI funkcióinak bérlői szintű használatát.
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 
 A Power BI-szolgáltatásadminisztrátori szerepkör nem teszi lehetővé az alábbiakat:
 
-* A felhasználók és licencek módosításának képessége az Office 365 felügyeleti központjában.
+* A felhasználók és licencek módosításának képessége a Microsoft 365 Felügyeleti központjában.
 
 * Hozzáférés az auditnaplókhoz. További információért lásd: [Naplózás használata a munkahelyen](service-admin-auditing.md).
 
 ## <a name="assign-users-to-the-admin-role-in-office-365"></a>Felhasználók hozzárendelése a rendszergazdai szerepkörhöz az Office 365-ben
 
-A Power BI rendszergazdai szerepkörének felhasználókhoz való hozzárendeléséhez kövesse az alábbi lépéseket az Office 365 felügyeleti központjában.
+A Microsoft 365 Felügyeleti központban felhasználók Power BI-rendszergazdai szerepkörhöz rendeléséhez kövesse az alábbi lépéseket:
 
-1. Az Office 365 felügyeleti központjában válassza a **Felhasználók** > **Aktív felhasználók** elemet.
+1. A Microsoft 365 Felügyeleti központjában válassza a **Felhasználók** > **Aktív felhasználók** elemet.
 
-    ![Office 365 Felügyeleti központ](media/service-admin-role/powerbi-admin-users.png)
+    ![Microsoft 365 Felügyeleti központ](media/service-admin-role/powerbi-admin-users.png)
 
 1. Válassza ki azt a felhasználót, akihez a szerepkört szeretné hozzárendelni.
 

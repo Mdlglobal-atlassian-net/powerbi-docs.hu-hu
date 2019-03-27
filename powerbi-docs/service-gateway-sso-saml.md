@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 03/05/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: c1ca797efa2e40bf74384a1e9f2362acd26c6f8f
-ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
+ms.openlocfilehash: 91a4cf3ff4fef4530c7c45712a86419298da53f4
+ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57555661"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306504"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>A Security Assertion Markup Language (SAML) használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
@@ -27,23 +27,43 @@ Jelenleg az SAP HANA használata támogatott a SAML-protokoll esetén. További 
 
 További adatforrásokat a [Kerberos](service-gateway-sso-kerberos.md) használata esetén támogatunk.
 
+Ne feledje, hogy a HANA számára a titkosítás engedélyezése **nagyon** ajánlott még az SAML SSO-kapcsolat létrehozása előtt (vagyis a HANA-kiszolgálót úgy kell konfigurálnia, hogy fogadja a titkosított kapcsolatokat, és az átjárót is úgy kell konfigurálnia, hogy titkosítást használjon a HANA-kiszolgálóval való kommunikációhoz). A HANA ODBC-illesztőprogram alapértelmezés szerint **nem** képes az SAML helyességi feltételeinek titkosítására, és bekapcsolt titkosítás nélkül az aláírt SAML típusú helyességi feltételt a rendszer az átjáróról a HANA-kiszolgálóra korlátozás nélkül küldi, így azt harmadik felek elfoghatják és újra felhasználhatják.
+
 ## <a name="configuring-the-gateway-and-data-source"></a>Az átjáró és az adatforrás konfigurálása
 
-A SAML használatához először hozzon létre egy tanúsítványt a SAML-identitásszolgáltató számára, majd társítson egy Power BI-felhasználót az identitáshoz.
+Az SAML használatához megbízhatósági kapcsolatot kell létrehoznia a HANA-kiszolgáló, amelyhez engedélyezni szeretné az SSO-t és az átjáró között, amely ebben a forgatókönyvben az SAML-identitásszolgáltatóként (IdP) szolgál. Ezt a kapcsolatot többféleképpen is létre lehet hozni, például az átjáró identitásszolgáltatója X509 szabvány szerint tanúsítványának a HANA-kiszolgálók megbízhatósági tárolójába való importálásával vagy az átjáró X509-tanúsítványának a HANA-kiszolgálók számára megbízhatónak minősülő legfelső szintű hitelesítésszolgáltató (CA) általi aláírásával. Ebben az útmutatóban az utóbbi megközelítést ismertetjük, de használhat más megközelítést is, ha az kényelmesebb.
 
-1. Állítson elő egy tanúsítványt. Győződjön meg arról, hogy az SAP HANA-kiszolgáló teljes tartománynevét (FQDN) használja a *köznapi név* kitöltése során. A tanúsítvány 365 nap után jár le.
+Azt is vegye figyelembe, hogy ebben az útmutatóban OpenSSL-t használunk a HANA-kiszolgáló titkosítási szolgáltatójaként, de OpenSSL helyett az SAP titkosítási kódtár (másként CommonCryptoLib vagy sapcrypto) is használható a beállítási lépések végrehajtásához a bizalmi kapcsolat létrehozásakor. További információt a hivatalos SAP-dokumentációban találhat.
 
-    ```
-    openssl req -newkey rsa:2048 -nodes -keyout samltest.key -x509 -days 365 -out samltest.crt
-    ```
+A következő lépések azt ismertetik, hogyan hozhat létre megbízhatósági kapcsolatot a HANA-kiszolgáló és az átjáró identitásszolgáltatója között az átjáró identitásszolgáltatója X509-tanúsítványának a HANA-kiszolgáló által megbízhatónak tekintett legfelső szintű hitelesítésszolgáltató általi aláírásával.
+
+1. Hozza létre a legfelső szintű hitelesítésszolgáltató X509-tanúsítványát és titkos kulcsát. A legfelső szintű hitelesítésszolgáltató X509-tanúsítványának és a titkos kulcsának .pem formátumban történő létrehozásához például:
+
+```
+openssl req -new -x509 -newkey rsa:2048 -days 3650 -sha256 -keyout CA_Key.pem -out CA_Cert.pem -extensions v3_ca
+```
+
+Adja hozzá a tanúsítványt (például CA_Cert.pem) a HANA-kiszolgáló megbízhatósági tárolójához, hogy a HANA-kiszolgáló megbízzon a most létrehozott legfelső szintű hitelesítésszolgáltató által aláírt minden tanúsítványban. A HANA-kiszolgáló megbízhatósági tárolójának helye az **ssltruststore** konfigurációs beállítás vizsgálatával található meg. Ha követte a SAP dokumentációját azzal kapcsolatban, hogyan konfigurálja az OpenSSL-t, akkor a HANA-kiszolgáló már megbízhat egy legfelső szintű hitelesítésszolgáltatóban, amelyet újból felhasználhat. A részletekért [olvassa el, hogyan konfigurálja az OpenSSL-t az SAP HANA Studio és az SAP HANA-kiszolgálók közötti kommunikációhoz](https://archive.sap.com/documents/docs/DOC-39571). Ha több HANA-kiszolgálóval is rendelkezik, amelyekhez engedélyezi szeretné az SAML SSO-t, győződjön meg róla, hogy mindegyik kiszolgáló megbízik ebben a legfelső szintű hitelesítésszolgáltatóban.
+
+1. Hozza létre az átjáró identitásszolgáltatója X509-tanúsítványát. Egy évig érvényes tanúsítvány-aláírási kérelemnek (IdP_Req.pem) és egy titkos kulcsnak (IdP_Key.pem) a létrehozásához például futtassa a következő parancsot:
+
+```
+ openssl req -newkey rsa:2048 -days 365 -sha256 -keyout IdP_Key.pem -out IdP_Req.pem -nodes
+```
+
+
+Írja alá a tanúsítvány-aláírási kérelmet annak a legfelső szintű hitelesítésszolgáltatónak a használatával, amelyet megbízhatóként konfigurált a HANA-kiszolgálókban. Ha például az IdP_Req.pem kérelmet a CA_Cert.pem és CA_Key.pem (a tanúsítvány és a legfelső szintű hitelesítésszolgáltató kulcsa) használatával szeretné aláírni, hajtsa végre a következő parancsot:
+
+  ```
+openssl x509 -req -days 365 -in IdP_Req.pem -sha256 -extensions usr_cert -CA CA_Cert.pem -CAkey CA_Key.pem -CAcreateserial -out IdP_Cert.pem
+```
+Az eredményül kapott identitásszolgáltatói tanúsítvány egy évig lesz érvényes (lásd a -days kapcsolót). Most importálja az identitásszolgáltatói tanúsítványát a HANA Studióban egy új SAML-identitásszolgáltató létrehozásához.
 
 1. Az SAP HANA Studio felületén kattintson a jobb gombbal az SAP HANA-kiszolgáló mezőjére, majd nyissa meg a **Security** > **Open Security Console** > **SAML Identity Provider** > **OpenSSL Cryptographic Library** (Biztonság>Biztonsági konzol megnyitása>SAML-identitásszolgáltató>OpenSSL titkosítási kódtár) elemet.
 
-    Ezek a beállítási lépések OpenSSL helyett az SAP titkosítási kódtárral (Cryptographic Library, más néven CommonCryptoLib vagy sapcrypto) is végrehajthatók. További információkat a hivatalos SAP-dokumentációban találhat.
-
-1. Válassza ki az **Import** (Importálás) lehetőséget, keresse meg a samltest.crt nevű elemet, és importálja.
-
     ![Identitásszolgáltatók](media/service-gateway-sso-saml/identity-providers.png)
+
+1. Válassza az **Import** (Importálás) lehetőséget, keresse meg az IdP_Cert.pem nevű elemet, és importálja azt.
 
 1. Az SAP HANA Studio felületén nyissa meg a **Security** (Biztonság) mappát.
 
@@ -61,10 +81,10 @@ A SAML használatához először hozzon létre egy tanúsítványt a SAML-identi
 
 Most, hogy rendelkezik a beállított tanúsítvánnyal és identitással, alakítsa át a tanúsítványt pfx-formátumúra, és konfigurálja az átjárót tartalmazó számítógépet a tanúsítvány használatára.
 
-1. Alakítsa át a tanúsítványt pfx-formátumúra a következő parancs futtatásával.
+1. Alakítsa át a tanúsítványt pfx-formátumúra a következő parancs futtatásával. Vegye figyelembe, hogy ez a parancs a „root” értéket állítja be a pfx-fájl jelszavaként.
 
     ```
-    openssl pkcs12 -inkey samltest.key -in samltest.crt -export -out samltest.pfx
+    openssl pkcs12 -export -out samltest.pfx -in IdP_Cert.pem -inkey IdP_Key.pem -passin pass:root -passout pass:root
     ```
 
 1. Másolja a pfx-fájlt az átjárót tartalmazó számítógépre:
