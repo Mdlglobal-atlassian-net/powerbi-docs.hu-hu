@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.date: 02/28/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 385a2cb41c0fa58ec3df4ea675a6f43a5b868935
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: f06b67dc0072c125d9430079fa756d963fd99f23
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014300"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473798"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Jelentések exportálása Power BI-ból PowerPointba
 A Power BI segítségével közzéteheti jelentését a **Microsoft PowerPointban**, és könnyedén létrehozhat bemutatót a Power BI-jelentés alapján. A **PowerPointba történő exportáláskor** a következő történik:
 
 * A PowerPointban a Power BI-jelentés minden lapjából külön dia lesz
-* A rendszer a Power BI-jelentés minden oldalát egyetlen, magas felbontású képként exportálja a PowerPointba <!-- * The filters and slicers settings that you added to the report are preserved. -->
+* A rendszer a Power BI-jelentés minden oldalát egyetlen, magas felbontású képként exportálja a PowerPointba
+<!-- * The filters and slicers settings that you added to the report are preserved. -->
 * A PowerPointban létrejön egy hivatkozás, amely a Power BI-jelentésre mutat 
 
 A **Power BI-jelentést** gyorsan exportálhatja a **PowerPointba**. Csak kövesse az alábbi szakaszban leírt lépéseket.
@@ -91,6 +92,7 @@ Az **Exportálás a PowerPointba** funkció használatakor figyelembe kell venni
 * Ahogy korábban említettük, a rendszer minden jelentésoldalt külön képként exportál a PowerPoint-fájlba.
 * A Power BI szolgáltatás a PowerPoint-exportálásnál a Power BI nyelvi beállításait alkalmazza. A nyelvi beállításokat megtekintheti vagy módosíthatja a fogaskerék ikon ![fogaskerék ikon](media/end-user-powerpoint/power-bi-settings-icon.png), majd a **> Beállítások > Általános > Nyelv** lehetőség választásával.
 * Az exportált PowerPoint-fájl címoldalán található **Letöltés ideje** a számítógép időzónáját követi a letöltés idején.
+* Az URL-szűrők jelenleg nem érvényesek az exportálás „Aktuális értékek” beállításánál.
 
 ## <a name="next-steps"></a>Következő lépések
 [Jelentés nyomtatása](end-user-print.md)

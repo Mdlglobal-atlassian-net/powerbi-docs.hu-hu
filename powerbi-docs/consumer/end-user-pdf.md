@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: c268bd370f32d2089b3b80c7cf4317df33e67280
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
+ms.openlocfilehash: e15cb6e09ff493512bb1b87939004c851b31fa10
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306481"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473729"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Jelentések exportálása a Power BI-ból PDF-be
 A Power BI segítségével közzéteheti jelentését PDF formátumban, és könnyedén létrehozhat egy dokumentumot a Power BI-jelentés alapján. **PDF-fájlba történő exportáláskor** a Power BI-jelentés minden egyes oldalából a PDF dokumentum egy-egy oldala lesz.
@@ -67,6 +67,8 @@ Az **Exportálás PDF-be** funkció használatakor figyelembe kell vennie néhá
 * Előfordulhat, hogy amikor háttérképet tartalmazó jelentéseket exportál PDF-be, az Oldal háttere beállítás „Normál” vagy „Illeszkedés” értéke esetén a kép torzítva jelenik meg.  A legjobb eredmény érdekében ajánlott a „Kitöltés” beállítás használatával elkerülni az exportált dokumentummal kapcsolatos problémákat.
 
 * A Power BI szolgáltatás a PDF-exportálásnál a Power BI nyelvi beállításait alkalmazza. A nyelvi beállításokat megtekintheti vagy módosíthatja a fogaskerék ikon, majd a **Beállítások** > **Általános** > **Nyelv** lehetőség választásával.
+
+* Az URL-szűrők jelenleg nem érvényesek az exportálás „Aktuális értékek” beállításánál.
 
 ## <a name="next-steps"></a>Következő lépések
 [Jelentés nyomtatása](end-user-print.md)

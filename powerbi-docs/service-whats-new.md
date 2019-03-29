@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 2/9/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 96faaf87c2aa04bdc1175f1b7cb78229bbb87a24
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: b65acda3ceb8d375cb34393828b74e191b2e5504
+ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383715"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58489591"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
@@ -32,12 +32,21 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
 
-## <a name="february-2019"></a>2019. február
-* Számítási feladatok és aktív adatkészlet mérete metrika a [kapacitásfigyelő alkalmazásban](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
-* Exportálás PDF-be és igény szerinti e-mail (service-report-subscribe.md).
-* Tömeges műveletek a felügyeleti portálon.
+## <a name="march-2019"></a>2019. március
+* A Power BI Premium Multi-Geo szolgáltatásának általános elérhetősége.
+* Power BI-tartalom támogatásának szerkesztése és kezelése az Azure B2B-hez.
 
 ## <a name="previous-months-2019"></a>Korábbi hónapok (2019)
+### <a name="february-2019"></a>2019. február
+* Számítási feladatok és aktív adatkészlet mérete metrika a [kapacitásfigyelő alkalmazásban](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Power BI-jelentések exportálása PDF-fájlba.
+* [Igény szerinti e-mail-feliratkozások](service-report-subscribe.md).
+* Tömeges műveletek a felügyeleti portálon.
+* PPT-k és PDF-ek szűrt exportálása.
+* [Súgó- és támogatási beállítások](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) a felügyeleti portálon.
+* Adatleszármaztatás [adatfolyamokhoz](service-dataflows-overview.md).
+* Hitelesített egyéni vizualizációk beállítás a felügyeleti portálon.
+
 ### <a name="january-2019"></a>2019. január
 * [Biztonságos Power BI-jelentések](service-embed-secure.md) beágyazása belső portálokba és webhelyekbe.
 * Az [adatfolyamok](service-dataflows-overview.md) szerkesztője új összekötőkkel bővült, és mostantól támogatja a natív SQL-lekérdezéseket és a Power Query Online-transzformációkat.
