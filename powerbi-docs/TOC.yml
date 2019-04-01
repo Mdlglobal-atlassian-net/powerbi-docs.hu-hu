@@ -402,6 +402,8 @@ items:
       href: service-tutorial-use-cognitive-services.md
     - name: A Machine Learning integrálása a Power BI-jal
       href: service-tutorial-invoke-machine-learning-model.md
+    - name: Machine Learning-modell létrehozása Power BI-ban (előzetes verzió)
+      href: service-tutorial-build-machine-learning-model.md
   - name: Fogalmak
     items:
     - name: A Power BI szolgáltatás újdonságai
@@ -656,6 +658,8 @@ items:
         href: service-machine-learning-integration.md
       - name: A Cognitive Services használata a Power BI-ban
         href: service-cognitive-services.md
+      - name: Automatizált Machine Learning a Power BI-ban (előzetes verzió)
+        href: service-machine-learning-automated.md
     - name: Többoldalas jelentések a Power BI-ban
       items:
       - name: Mik azok a többoldalas jelentések? (Előzetes verzió)
@@ -1327,9 +1331,9 @@ items:
       href: service-admin-governance.md
     - name: A Power BI és a biztonság
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 3259c3fe3bc8756355dd75324a84dd0322bfef3a
-ms.sourcegitcommit: c98fe18c52cd06a52b12aa9aa09d58e8a406542a
+ms.openlocfilehash: 1de602579c97a56c7db5b0b92a8b6bc9f1134ec6
+ms.sourcegitcommit: 6070b5726629dde6dee262f77e9957496405d501
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58563666"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58639368"
