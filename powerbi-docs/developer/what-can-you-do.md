@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
-ms.date: 09/17/2018
-ms.openlocfilehash: a32bdceb317f2d6a2f5945dc3911f683a306605e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 03/15/2019
+ms.openlocfilehash: 63ee9ed96ed699d116b8d81b0cd612f76994a68d
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282471"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872685"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Mire használhatják a fejlesztők a Power BI-t?
 
@@ -58,7 +58,7 @@ A [Mire használhatják a fejlesztők a Power BI API-t?](overview-of-power-bi-re
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Beágyazás a Power BI szolgáltatással](embedding.md)  
+[Beágyazás a Power BI-jal](embedding.md)  
 
 [Egyéni Power BI-vizualizáció fejlesztése](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 
