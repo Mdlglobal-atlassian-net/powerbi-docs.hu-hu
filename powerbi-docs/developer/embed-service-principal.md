@@ -8,13 +8,13 @@ ms.reviewer: nishalit
 ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/05/2019
-ms.openlocfilehash: 8d91b6cc03bb142d6d4aa101f87d8e3c1e6f3196
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.date: 03/29/2019
+ms.openlocfilehash: 9b72c1c432e7fa560862452849491c12395d29d1
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014415"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872547"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Szolgáltatásnév a Power BI-jal (előzetes verzió)
 
@@ -111,13 +111,15 @@ A hagyományos fő fiók használatától eltérően a szolgáltatásnév (csak 
 3. A Power BI adminisztrátoraként a szolgáltatásnevet a Power BI felügyeleti portáljának **Fejlesztői beállítások** szakaszában engedélyezheti. Az Azure AD-ben létrehozott biztonsági csoportot adja hozzá a **Fejlesztői beállítások** **Adott biztonsági csoportok** szakaszához.
 
    > [!Important]
-   > A szolgáltatásnevek a biztonsági csoportjukból öröklik az engedélyeket a Power BI összes bérlői beállításához. Az engedélyek korlátozásához hozzon létre egy külön biztonsági csoportot a szolgáltatásneveknek, majd adja hozzá az Egyes biztonsági csoportok kivételével listához a vonatkozó, engedélyezett Power BI-beállítások esetében.
+   > A szolgáltatásnevek hozzáférhetnek minden olyan bérlői beállításhoz, amely a teljes cégre engedélyezve vannak, vagy olyan biztonsági csoportokra terjednek ki, amelyek a csoport részeként rendelkeznek szolgáltatásnevekkel. Ha a szolgáltatásnév hozzáférését meghatározott bérlői beállításokra szeretné korlátozni, csak meghatározott biztonsági csoportokhoz engedélyezzen hozzáférést, vagy hozzon létre egy dedikált biztonsági csoportot a szolgáltatásnévhez, és zárja ki.
 
     ![Felügyeleti portál](media/embed-service-principal/admin-portal.png)
 
 4. Hozza létre a [Power BI-környezetet](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
 5. Vegye fel a szolgáltatásnevet **rendszergazdaként** a létrehozott új munkaterülethez. Ezt a feladatot kezelheti az [API-kon](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) keresztül vagy a Power BI szolgáltatásban.
+
+    ![Szolgáltatásnév hozzáadása munkaterülethez](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Most választhat, hogy egy mintaalkalmazásban vagy a saját alkalmazásában ágyazza-e be a tartalmat.
 
@@ -171,6 +173,7 @@ Alább egy mintaszkript látható a szolgáltatásnév objektumazonosítójának
 * Szolgáltatásnév használatával nem telepíthet vagy kezelhet helyszíni adatátjárót.
 * A [Beágyazás a cég számára](embed-sample-for-your-organization.md) alkalmazásai nem tudják a szolgáltatásnevet használni.
 * Az [adatfolyamok](../service-dataflows-overview.md) kezelése nem támogatott.
+* A szolgáltatásnév nem támogatja a rendszergazdai API-kat.
 
 ## <a name="next-steps"></a>Következő lépések
 

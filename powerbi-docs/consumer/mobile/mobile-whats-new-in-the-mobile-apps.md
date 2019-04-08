@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: 7c17d41d4278c292e494fe6f7203a32d93f2714d
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.openlocfilehash: 8755f48653097d5754c4c908f07ea91bdb3c0d53
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826721"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872731"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -22,6 +22,16 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+
+## <a name="march-2019"></a>2019. március
+
+### <a name="supporting-external-guest-users-in-power-bi-apps-ios-android"></a>Külső vendégfelhasználók támogatása a Power BI-alkalmazásokban (iOS, Android)
+
+Közvetlenül az alkalmazásból érheti el a más cégek által Önnel megosztott Power BI-tartalmakat (más néven B2B). A Power BI mobilalkalmazások B2B-lehetőségeiről [itt](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-now-support-azure-ad-b2b-guest-users/) olvashat bővebben.
+
+### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>A Windows bemutató módjának továbbfejlesztése diavetítéssel (Windows)
+
+A [diavetítés](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) használatával az irodában használt nyilvános kijelzőkön jeleníthet meg Power BI-jelentéseket teljes képernyős módban, a jelentésoldalak közötti automatikusan lapozással.  
 
 ## <a name="january---february-2019"></a>2019. január-február
  

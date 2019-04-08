@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 9589c2cf5277995459a9f43f573b6e19c4c8f748
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
+ms.openlocfilehash: 3897464cbc2a233f7b1aa6ee2f0fd70d39ff16aa
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327964"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872501"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
@@ -23,6 +23,13 @@ Ez a változásnapló a Power BI jelentéskészítő kiszolgálóra vonatkozik, 
 Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonságai](whats-new.md) című cikkből tájékozódhat. 
 
 ## <a name="january-2019"></a>2019. január
+
+- **Power BI jelentéskészítő kiszolgáló**          
+    - *Version 1.4.7024.16477 (Build: 15.0.1102.299), Kiadás dátuma: 2019. március 28.*
+        - Hibajavítások
+            - Power BI-jelentések
+                - Egy alapszintű hitelesítő adatokkal kapcsolatos hiba javítása közvetlen lekérdezés használatakor SAP Hana és SAP BW esetén
+                - Hibajavítás az OData-csatorna „Nem sikerült betölteni a Microsoft.OData.Core.NetFX35.V7 fájlt vagy szerelvényt” adatfrissítési hibájához.
 
 - **Power BI jelentéskészítő kiszolgáló**            
     - *Verzió: 1.4.6969.7395 (Build 15.0.1102.235), Kiadás dátuma: 2019. január 30.*
@@ -36,7 +43,7 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
             - Lapszámozott jelentések
                 - Egy megosztott adatforrás használati frissítésének javítása egy jelentésben
 
-    - *Verzió: 1.4.6960.38798 (Build 15.0.1102.222), Kiadás dátuma: 2019. január 22.*
+    - *Verzió: 1.4.6960.38798 (Build: 15.0.1102.222), Kiadás dátuma: 2019. január 22.*
         - Funkciók
             - Power BI-jelentések 
                 - Sorszintű biztonság támogatása
@@ -77,7 +84,7 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
              
             - Az adatfelirat átlátszósági hibája már ki van javítva.
             
-    - *Verzió: 1.3.6801.38816 (Build: 15.0.2.540), Kiadás dátuma: 2018. augusztus 15.*
+    - *Verzió: 1.3.6801.38816 (Build 15.0.2.540), Kiadás dátuma: 2018. augusztus 15.*
         - Funkciók
             - Már elérhető a Power BI-jelentésekhez a SAP HANA SSO Direct Query Kerberosszal támogatása
             - Ebben a kiadásban megtalálható a Custom Visual API – 1.13.0-s verzió
@@ -90,14 +97,14 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
 ## <a name="march-2018"></a>2018. március
 
 - **Power BI jelentéskészítő kiszolgáló**
-    - *Verzió: 1.2.6690.34729 (Build: 15.0.2.402), Kiadás dátuma: 2018. április 27.*
+    - *Verzió: 1.2.6690.34729 (Build 15.0.2.402), Kiadás dátuma: 2018. április 27.*
         - Hibajavítások
             - Az SQL Server Reporting Services 2017-gyűjtemények migrálásának engedélyezése
             - Power BI-jelentések (PBIX)
                 - A jelentéseket frissíteni lehet, ha a szerver egyéni hitelesítés használatára van konfigurálva
                 - A jelentés tulajdonságainak módosítása nem állítja alaphelyzetbe az adatforrás hitelesítő adatait
             - Oldalakra osztott jelentések (RDL)
-                - A `Lookup()` vagy más származtatott függvények (például a `LookupSet()` vagy a `MultiLookup()`) már nem `#Error` eredménnyel térnek vissza
+                - A `Lookup()` vagy más származtatott függvények (például a `LookupSet()` vagy a `MultiLookup()`) az RDL-kifejezésekben már nem térnek vissza ezzel az eredménnyel `#Error`
                 - A csatolt jelentések nyomtatáskor figyelembe veszik a céljelentés oldalméretét
                 - Létrehozhatók feliratkozások hierarchikus paramétereket használó csatolt jelentésekre
                 - A több értéket felvevő paraméterek alapértelmezett értékei módosíthatóak az IE11 használatakor
@@ -108,13 +115,13 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
                 - A trendvonalak frissülnek az adatok frissítésekor
             - Általános stabilitási fejlesztések
 
-    - *Verzió: 1.2.6660.39920 (Build: 15.0.2.389), Kiadás dátuma: 2018. március 28.*
+    - *Verzió: 1.2.6660.39920 (Build 15.0.2.389), Kiadás dátuma: 2018. március 28.*
         - Hibajavítások
             - A Power BI-jelentéseknél (PBIX) javítás a Power BI-vizualizációkból indított nem működő adatexportáláshoz
             - A Power BI-jelentéseknél (PBIX) javítás a nem működő URL-szűrőkhöz
             - A többoldalas jelentéseknél (RDL) javítás az IE11-ben a Power BI jelentéskészítő kiszolgáló márciusi kiadására való frissítés után nem megfelelően megjelenő képekhez
 
-    - *Verzió: 1.2.6648.38132 (Build: 15.0.2.378), Kiadás dátuma: 2018. március 19.*
+    - *Verzió: 1.2.6648.38132 (Build 15.0.2.378), Kiadás dátuma: 2018. március 19.*
         - Biztonsági frissítések
         - Javított kisegítő lehetőségek
         - Hibajavítások
@@ -133,30 +140,30 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
 ## <a name="october-2017"></a>2017. október
 
 - **Power BI jelentéskészítő kiszolgáló**
-    - *Verzió: 1.1.6582.41691 (Build: 14.0.600.442), Kiadás dátuma: 2018. január 10.*
+    - *Verzió: 1.1.6582.41691 (Build 14.0.600.442), Kiadás dátuma: 2018. január 10.*
         - Biztonsági frissítések
         - Hibajavítások
             - Hibajavítás a Model.GetParameters 400-es hibakódjára
             - Hibajavítás megosztott adathalmazok meglévő többoldalas jelentésekhez való beállításához (RDL)
             - Hibajavítás a ExecutionNotFoundException hibához jelentés PDF-be exportálásánál különböző paraméterértékekkel
 
-    - *Verzió: 1.1.6551.5155 (Build: 14.0.600.438), Kiadás dátuma: 2017. december 11.*
+    - *Verzió: 1.1.6551.5155 (Build 14.0.600.438), Kiadás dátuma: 2017. december 11.*
         - Hibajavítások
             - A frissítés után egyes Power BI Desktop-jelentések adatai nem menthetők.
 
-    - *Verzió: 1.1.6530.30789 (Build: 14.0.600.437), Kiadás dátuma: 2017. november 17.*
+    - *Verzió: 1.1.6530.30789 (Build 14.0.600.437), Kiadás dátuma: 2017. november 17.*
         - Hibajavítások
             - Hibajavítás az alapszintű hitelesítéshez 
             - Hibajavítás: A hétköznapok nem voltak kijelölhetők a Portál ütemezési oldalán az előfizetésekhez, gyorsítótár-frissítési tervekhez és előzmény-pillanatképekhez
             - Hibajavítás: Többoldalas jelentésekben (RDL) az olyan szövegmezőkben lévő kifejezéseknél, amelyeknek CanGrow tulajdonsága hamisra volt állítva, az értékek színe nem jelent meg, és a betűtípus nem volt megfelelő
             - Hibajavítás: Power BI-jelentésekben (PBIX) a jelmagyarázattal ellátott vonaldiagramok üres vizualizáció előállítását eredményezték
 
-    - *Verzió: 1.1.6514.9163 (Build: 14.0.600.434), Kiadás dátuma: 2017. november 1.*
+    - *Verzió: 1.1.6514.9163 (Build 14.0.600.434), Kiadás dátuma: 2017. november 1.*
         - Hibajavítások
             - Hibajavítás 500 MB-nál nagyobb PBIX-jelentések feltöltésének megbízhatósági problémáira
             - Hibajavítás 1 GB-nál nagyobb PBIX-jelentések adatbetöltési problémáira
 
-    - *Verzió: 1.1.6513.3500 (Build: 14.0.600.433), Kiadás dátuma: 2017. október 31.*
+    - *Verzió: 1.1.6513.3500 (Build 14.0.600.433), Kiadás dátuma: 2017. október 31.*
         - Funkciók
             - Beágyazott adatmodell-támogatás
             - Excel-munkafüzet megtekintése (az Office Online Server integráció engedélyezésével)
@@ -217,4 +224,4 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
 [A Jelentéskészítő letöltése](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Az SQL Server Data Tools (SSDT) letöltése](http://go.microsoft.com/fwlink/?LinkID=616714)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+További kérdései vannak? [Forduljon a Power BI közösségéhez](https://community.powerbi.com/)

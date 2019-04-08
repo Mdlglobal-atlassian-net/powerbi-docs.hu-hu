@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 20faef99f710ebbc3eacebe15b5101726b895688
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: da6ec79a821e7aa9659843d0461ca6ac0b11706d
+ms.sourcegitcommit: de0b72915183a8a784d3227838bd704c1c209422
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279279"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58914167"
 ---
 # <a name="analyze-in-excel"></a>Elemzés az Excelben
 Előfordulhat, hogy az Excel használatával szeretne megnézni és kezelni egy Power BI-adatkészletet. Az **Elemzés az Excelben** funkció segítségével pontosan ezt teheti meg, valamit elérheti az Excel kimutatás-, diagram- és szeletelő funkcióit a Power BI-ban létező adatkészletre vonatkozóan.
@@ -27,7 +27,8 @@ Az **Elemzés az Excelben** funkció használatának van néhány követelménye
 * Az **Elemzés az Excelben** funkciót a Microsoft Excel 2010 SP1 és újabb változatai támogatják.
 * Az Excel-kimutatások nem támogatják a numerikus mezők áthúzással való összevonását. A Power BI-adatkészletnek *rendelkeznie kell előre meghatározott mértékekkel*.
 * Egyes cégeknél olyan csoportházirendek lehetnek érvényben, amelyek megakadályozzák az **Elemzés az Excelben** funkció használatához szükséges Excel-frissítések telepítését. Ha nem tudja telepíteni ezeket a frissítéseket, forduljon a rendszergazdájához.
-* Az **Excelben való elemzéshez** Pro-licenc szükséges. A különböző licenctípusok eltérő funkcióiról bővebben a [Power BI-funkciókat licenctípus alapján](service-features-license-type.md) ismertető témakörben olvashat. 
+* Az **Elemzés az Excelben** funkcióhoz az szükséges, hogy az adatkészlet a Power BI Premiumban legyen, vagy hogy a felhasználó rendelkezzen Power BI Pro-licenccel. A különböző licenctípusok eltérő funkcióiról bővebben a [Power BI-funkciókat licenctípus alapján](service-features-license-type.md) ismertető témakörben olvashat. 
+* A felhasználók akkor csatlakozhatnak adatkészlethez az Elemzés az Excelben használatával, ha az adott adatkészlethez olvasási jogosultsággal rendelkeznek.  A felhasználó ezzel többféle módon is rendelkezhet: ha tagja egy olyan munkaterületnek, amely az adatkészletet tartalmazza; rendelkezik egy olyan jelentéssel vagy irányítópulttal, amely az adatkészletet használja; vagy hozzáférése van egy olyan alkalmazáshoz, amely az adatkészletet tartalmazza.
 
 ## <a name="how-does-it-work"></a>Hogyan működik?
 Amikor a **Power BI**-ban egy adatkészlet vagy jelentés három pont (...) menüjéből kiválasztja az **Elemzés az Excelben** lehetőséget, a Power BI létrehoz egy .ODC-fájlt, és letölti azt a böngészőből a számítógépre.
