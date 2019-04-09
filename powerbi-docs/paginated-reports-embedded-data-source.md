@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 7f919234f7635c76ce50d0bfffa393498f141da8
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 340b4d26b8beed4dfda5f7af4dc949088f3857ae
+ms.sourcegitcommit: d2805894fd372c35e11d519f724de2be98407fda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324392"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59070022"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Beágyazott adatforrás létrehozása lapszámozott jelentésekhez a Power BI szolgáltatásban (előzetes verzió)
 
@@ -22,7 +22,8 @@ Ebből a cikkből beágyazott adatforrások lapszámozott jelentésekhez való l
 
 - Azure SQL Database és Data Warehouse
 - SQL Server
-- SQL Server Analysis Services 
+- SQL Server Analysis Services
+- Azure Analysis Services
 
 A lapszámozott jelentések átjárón keresztül kapcsolódnak a helyszíni adatforrásokhoz. Az átjárót azután állíthatja be, hogy a jelentést közzéteszi a Power BI szolgáltatásban. További információ a [Power BI-átjárókról](service-gateway-getting-started.md). 
 
@@ -61,4 +62,4 @@ A lapszámozott jelentések átjárón keresztül kapcsolódnak a helyszíni ada
 ## <a name="next-steps"></a>Következő lépések
 
 - [Beágyazott adathalmaz létrehozása lapszámozott jelentéshez a Power BI szolgáltatásban](paginated-reports-create-embedded-dataset.md)
-- [Mik azok a lapszámozott jelentések a Power BI Premiumban? (előzetes verzió)](paginated-reports-report-builder-power-bi.md)
+- [Mik a lapszámozott jelentések a Power BI Premiumban? (Előzetes verzió)](paginated-reports-report-builder-power-bi.md)
