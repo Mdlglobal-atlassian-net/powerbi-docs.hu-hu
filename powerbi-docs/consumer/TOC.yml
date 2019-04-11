@@ -61,6 +61,8 @@ items:
         href: ../power-bi-visualizations-arcgis.md
     - name: Gyakori feladatok
       items:
+      - name: Adatok exportálása Excelbe
+        href: end-user-export.md
       - name: A tartalomtulajdonos és a legutóbbi frissítés dátumának kikeresése
         href: end-user-fresh.md
       - name: A tartalom nagyításának különböző módjai a Fókusz és a Teljes képernyős mód használatával
@@ -137,6 +139,8 @@ items:
         href: mobile/mobile-tiles-in-the-mobile-apps.md
       - name: Kedvencek a mobilalkalmazásokban
         href: mobile/mobile-apps-favorites.md
+      - name: A jelentéshasználat konfigurálása a mobilalkalmazásokban (csak telefon)
+        href: mobile/mobile-app-single-tap.md
       - name: Adatriasztások beállítása a Power BI mobilalkalmazásokban
         href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
       - name: Értesítések fogadása a Power BI-mobilalkalmazásokban
@@ -175,6 +179,8 @@ items:
         href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
       - name: Telefonra optimalizált jelentések megtekintése
         href: mobile/mobile-apps-view-phone-report.md
+      - name: Tartalomhoz való hozzáférés külső szervezetből
+        href: mobile/mobile-apps-b2b.md
       - name: QR-kód szkennelése a Power BI számára a telefonnal
         href: mobile/mobile-apps-qr-code.md
       - name: Jegyzetkészítés és megosztás a mobilalkalmazásokban
@@ -195,9 +201,9 @@ items:
     items:
     - name: Támogatott nyelvek a mobilalkalmazásokban
       href: mobile/mobile-apps-supported-languages.md
-ms.openlocfilehash: e32baf6ff64b485b1be29dea76bcbe864d2cdc59
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.openlocfilehash: 6f9f080de3711a6a1a28f49da0298a67932d87e5
+ms.sourcegitcommit: c0add3d749f7e714e23824a742e105e694e4c129
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56248976"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59430282"
