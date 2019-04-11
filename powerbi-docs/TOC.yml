@@ -240,6 +240,8 @@ items:
         href: desktop-what-if.md
       - name: Részletezés használata
         href: desktop-drillthrough.md
+      - name: Több jelentésre kiterjedő részletezés használata
+        href: desktop-cross-report-drill-through.md
       - name: Relatív dátumszeletelő és -szűrő használata
         href: visuals/desktop-slicer-filter-date-range.md
       - name: Csoportosítás és tárolás használata
@@ -278,6 +280,8 @@ items:
         href: power-bi-hyperlinks-in-tables.md
       - name: Táblázat feltételes formázása
         href: desktop-conditional-table-formatting.md
+      - name: Feltételes kifejezésre alapuló címformázás
+        href: desktop-conditional-format-visual-titles.md
       - name: Oszlop szerinti rendezés a Power BI Desktopban
         href: desktop-sort-by-column.md
       - name: Mobilalkalmazásokhoz optimalizált jelentések létrehozása
@@ -1331,9 +1335,9 @@ items:
       href: service-admin-governance.md
     - name: A Power BI és a biztonság
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: a804129b06b4eb92e67ae18251cbb9f950fe1beb
-ms.sourcegitcommit: ce59fa2b49658d67a2cbc77f81c53a8266a34e36
+ms.openlocfilehash: 5943c0bb07142be76241c2d4ed415920c99bc382
+ms.sourcegitcommit: 42892c281c7b1682a02efb3613fc1a75530c4830
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59053438"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59479288"
