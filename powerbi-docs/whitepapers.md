@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/07/2019
+ms.date: 03/28/2019
 ms.author: maggies
-ms.openlocfilehash: 5af870bfd3cb6f9c925dd3d6268d0a1cb54df09b
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: c0cc6b19e69ebe6400d25b77c15cf577d765c415
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "65201178"
 ---
 # <a name="whitepapers-for-power-bi"></a>Power BI-tanulmányok
 
@@ -24,12 +24,12 @@ A tanulmányokkal behatóbban ismerheti meg a Power BI témaköreit. Itt találj
 | --- | --- | --- |
 | [A Power BI és az adatfolyamok](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Ez a tanulmány technikai részletességgel ismerteti az adatfolyamokat, valamint az adatfolyamok szolgáltatásainak és funkcióinak hátterében álló képességeket és törekvéseket. | 2018. november |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Leírja a Power BI Premium kiadáskori állapotát, valamint a várható fejlődési útját is. | 2017. október |
-| [A Power BI Premium tervezése és üzembe helyezése](https://aka.ms/Premium-Capacity-Planning-Deployment)| Ez a tanulmány útmutatást nyújt és ajánlott eljárásokat mutat be a prémium szintű kapacitás meghatározott számítási feladatokhoz történő tervezéséhez és üzembe helyezéséhez.| 2017. november |
+| [A Power BI Premium tervezése és üzembe helyezése](whitepaper-powerbi-premium-deployment.md)| Ez a tanulmány útmutatást nyújt és ajánlott eljárásokat mutat be a prémium szintű kapacitás meghatározott számítási feladatokhoz történő tervezéséhez és üzembe helyezéséhez.| 2019. március |
 | [Kapacitás tervezése beágyazott elemzéshez a Power BI Premiummal](https://aka.ms/pbiewhitepaper) |Ez a tanulmány útmutatást nyújt az alkalmazásfejlesztőknek/független szoftvergyártóknak a vállalat számára legmegfelelőbb kapacitás meghatározásához. | 2017. október |
 | [A Power BI Enterprise üzembehelyezési előkészületei](https://go.microsoft.com/fwlink/?linkid=2057861) |Ez egy technikai tanulmány, amely a jól teljesítő és biztonságos céges Power BI-környezettel kapcsolatos szempontokat ismerteti. | 2018. július |
 | [Kapacitástervezési útmutató a Power BI jelentéskészítő kiszolgálóhoz](report-server/capacity-planning.md) |Ez a tanulmány útmutatást nyújt a Power BI jelentéskészítő kiszolgáló kapacitástervezéséhez. Ehhez számos olyan terhelésteszt eredményét osztja meg, amelyek során különböző számítási feladatokat futtattak egy jelentéskiszolgálón. | 2018. március |
 | [Biztonság](service-admin-power-bi-security.md) |Részletes leírást nyújt a Power BI-on belüli biztonságról. | 2019. március |
-| [Power BI-tartalom terjesztése külső vendégfelhasználóknak az Azure Active Directory B2B használatával](whitepaper-azure-b2b-power-bi.md)|Ez a tanulmány azt vázolja fel, hogyan terjeszthető tartalom a vállalaton kívüli felhasználóknak az Azure Active Directory vállalatközi (AAD B2B) integrációjával.| 2018. március |
+| [Power BI-tartalom terjesztése külső vendégfelhasználóknak az Azure Active Directory B2B használatával](whitepaper-azure-b2b-power-bi.md)|Ez a tanulmány azt vázolja fel, hogyan terjeszthető tartalom a vállalaton kívüli felhasználóknak az Azure Active Directory vállalatközi (AAD B2B) integrációjával.| 2019. március |
 | [Fejlett elemzés a Power BI használatával](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Bemutatja a Power BI fejlett elemzési képességeit, beleértve a prediktív elemzéseket, az egyéni vizualizációkat, az R-integrációt és az adatelemzési kifejezéseket. | 2017. február |
 | [Bevált tervezési gyakorlatok jelentésekhez és vizualizációkhoz](visuals/power-bi-visualization-best-practices.md) |Ez a tanulmány a Power BI szolgáltatásban történő jelentéstervezés bevált gyakorlatait mutatja be. | 2018. június |
 | [Kétirányú szűrés](desktop-bidirectional-filtering.md) |Ismerteti a Power BI Desktopban elérhető kétirányú keresztszűrést (valamint az SQL Server Analysis Services 2016 működését is, mivel ugyanúgy viselkedik). | 2018. július |
