@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 03/05/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 91a4cf3ff4fef4530c7c45712a86419298da53f4
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
+ms.openlocfilehash: 3c9fd8877347ad0eebf7db059cc791583c89f353
+ms.sourcegitcommit: af2b2238fe77eaa1b2392a19a143a0250b8665cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306504"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65533710"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>A Security Assertion Markup Language (SAML) használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
@@ -75,7 +75,7 @@ Az eredményül kapott identitásszolgáltatói tanúsítvány egy évig lesz é
 
     ![A SAML konfigurálása](media/service-gateway-sso-saml/configure-saml.png)
 
-1. Válassza ki a 2. lépésben létrehozott identitásszolgáltatót. Az **External Identity** (Külső identitás) esetén adja meg a Power BI-felhasználó egyszerű felhasználónevét, majd kattintson az **Add** (Hozzáadás) parancsra.
+1. Válassza ki a 2. lépésben létrehozott identitásszolgáltatót. A **külső azonosító**, adja meg a Power BI-felhasználó egyszerű Felhasználónevét (általában az e-mail-cím a felhasználó bejelentkezik a Power bi-bA), majd válassza ki **Hozzáadás**. Vegye figyelembe, hogy ha konfigurálta az átjáró használatához a ADUserNameReplacementProperty konfigurációs beállítást kell megadnia, amely felváltja a Power BI-felhasználó eredeti UPN értékét. Például ha a ADUserNameReplacementProperty SAMAccountName kell adnia a felhasználó SAMAccountName.
 
     ![Identitásszolgáltató kiválasztása](media/service-gateway-sso-saml/select-identity-provider.png)
 
@@ -179,7 +179,7 @@ A hitelesítés követése részletes információt nyújt az SAP HANA hitelesí
 
 A **helyszíni adatátjáróval** és a **DirectQueryvel** kapcsolatos további információkért lásd az alábbi forrásanyagokat:
 
-* [Helyszíni adatátjáró](service-gateway-onprem.md)
+* [On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások](desktop-directquery-data-sources.md)
 * [A DirectQuery és az SAP BW](desktop-directquery-sap-bw.md)
