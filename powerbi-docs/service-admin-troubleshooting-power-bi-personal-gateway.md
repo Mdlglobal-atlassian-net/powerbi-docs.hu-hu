@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2017
+ms.date: 5/06/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 642bd39cb9348bae2a1f30dbc9ee026e11ff7401
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: bc6eaccc2976266102dcca0d20df73df810fa5f3
+ms.sourcegitcommit: bf535771c9ef495f9bb658569403fa5e3dd82e6a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284518"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853633"
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>A Power BI személyes átjáró hibáinak elhárítása
-Ebben a cikkben áttekintjük a Power BI személyes átjáró használata kapcsán gyakorta felmerülő kérdéseket.
+Próbálja ki az alábbi szakaszok olyan használata a Power BI Gateway-Personal gyakori problémákat.
 
 > [!NOTE]
 > Az átjáró aktuális, személyes használatú verziója a **Helyszíni adatátjáró (személyes)**. A telepített példányt frissítve térjen át erre a verzióra.
@@ -26,68 +26,68 @@ Ebben a cikkben áttekintjük a Power BI személyes átjáró használata kapcs�
 > 
 
 ## <a name="update-to-the-latest-version"></a>Frissítés a legújabb verzióra
-Ha az átjáró verziója elavult, számos probléma felmerülhet.  Általában véve célszerű mindig a legújabb verziót használni.  Ha az átjárót már legalább egy hónapja nem frissítette, javasoljuk, hogy telepítse az átjáró legújabb verzióját, majd nézze meg, hogy jelentkezik-e ugyanaz a probléma.
+Számos probléma akkor merülhet fel, ha az átjáró verziója elavult.  Általános célszerű a legújabb verziót róla, hogy legyen. Ha egy hónapban, vagy hosszabb ideig nem frissítette az átjárót, fontolja meg az átjáró legújabb verziójának telepítéséhez. Ezután tekintse meg, ha Reprodukálja a problémát.
 
 ## <a name="installation"></a>Telepítés
-**A személyes átjáró 64 bites** ‒ Ha számítógépe 32 bites, a személyes átjárót nem fogja tudni telepíteni. A telepítéshez 64 bites operációs rendszerre van szükség. Telepítenie kell a Windows 64 bites verzióját, vagy 64 bites számítógépre kell telepítenie a személyes átjárót.
+**Személyes átjáró egy 64 bites** – Ha számítógépe 32 bites, a személyes átjáró nem telepíthető. Az operációs rendszer nem lehet 64-bites verzióján. A Windows 64 bites verzióját telepítse, vagy a személyes átjárót telepíti egy 64 bites számítógépre.
 
-**Bár Ön rendszergazda a számítógépen, a személyes átjárót nem tudja szolgáltatásként telepíteni** ‒ A telepítés meghiúsulhat, ha a felhasználó tagja a helyi Rendszergazda csoportnak, de a csoport házirendje nem engedélyezi, hogy az adott felhasználónév szolgáltatásként jelentkezzen be.  Egyelőre ellenőrizze, hogy a csoportházirend lehetővé teszi-e, hogy a felhasználó szolgáltatásként jelentkezzen be. Ennek a problémának a javításán még dolgozunk. [További információk](https://technet.microsoft.com/library/cc739424.aspx)
+**Személyes átjárót nem tudja szolgáltatásként telepíteni, annak ellenére, hogy a számítógép helyi rendszergazdai** -telepítés meghiúsulhat, ha a felhasználó szerepel-e a számítógép helyi Rendszergazdák csoportnak, de a csoportházirend nem engedélyezi a megadott felhasználónévvel jelentkezhessen be, egy a szolgáltatás. Abban a pillanatban győződjön meg arról, a csoportházirend lehetővé teszi, hogy a felhasználó szolgáltatásként jelentkezzen be. Ennek a problémának a javításán még dolgozunk. [További információ](https://technet.microsoft.com/library/cc739424.aspx)
 
-**A művelet túllépte az időkorlátot** ‒ Ez gyakran előfordul, ha a számítógép (fizikai gép vagy VM), amelyre telepíti a személyes átjárót, egymagos processzorral rendelkezik. Zárja be az alkalmazásokat, állítsa le azokat a folyamatokat, melyek nem nélkülözhetetlenek, és próbálja meg újra telepíteni az átjárót.
+**A művelet túllépte az időkorlátot** – Ez az üzenet a gyakori, ha a számítógép (fizikai gép vagy VM), amelyen a személyes átjáró telepítése egymagos processzorral rendelkezik. Zárja be az alkalmazásokat, állítsa le azokat a folyamatokat, melyek nem nélkülözhetetlenek, és próbálja meg újra telepíteni az átjárót.
 
-**Az Adatkezelési átjáró vagy az Analysis Services Connector nem telepíthető a személyes átjáróval egy gépre** – Ha a gépén már telepítve van az Analysis Services Connector vagy az Adatkezelési átjáró, távolítsa el, majd próbálja meg ismét telepíteni a személyes átjárót.
+**Adatkezelési átjáró vagy az Analysis Services Connector nem telepíthető ugyanazon a számítógépen, a személyes átjáróval** – Ha már rendelkezik az Analysis Services Connector vagy az adatkezelési átjáró telepítve van, először el kell távolítani az összekötőt, vagy az átjáró. Ezt követően próbálja meg telepíteni a személyes átjárót.
 
 > [!NOTE]
-> Ha a telepítés során problémát észlel, a telepítési napló valószínűleg tartalmaz olyan információt, amely segít megoldani a kérdést. Ezzel kapcsolatban a [telepítési naplókról](#SetupLogs) szóló részben talál további információkat.
+> Ha problémát tapasztal a telepítés során, a telepítési naplókat a probléma elhárításához információkat biztosítja. További információkért lásd: [telepítési naplók](#SetupLogs).
 > 
 > 
 
- **Proxybeállítások** Ha olyan környezetet használ, amelyben szükség van proxy használatára, problémák jelentkezhetnek a személyes átjáró telepítésekor. Ha további információkra van szüksége a proxyadatok konfigurálásával kapcsolatban, tekintse át a [Power BI-átjárók proxybeállításainak konfigurálásáról](service-gateway-proxy.md) szóló cikket.
+ **Proxykonfiguráció** a személyes átjáró konfigurálásával, ha a proxy használatát a környezetnek meg kell kapcsolatos problémák jelenhetnek meg. Ha további információkra van szüksége a proxyadatok konfigurálásával kapcsolatban, tekintse át a [Power BI-átjárók proxybeállításainak konfigurálásáról](service-gateway-proxy.md) szóló cikket.
 
 ## <a name="schedule-refresh"></a>Frissítés ütemezése
 **Hiba: The credential stored in the cloud is missing. (A felhőben tárolt hitelesítő adat hiányzik.)**
 
-Ilyen hiba az \<adatkészletek\> beállításainál jelentkezhet, ha az adatkészlethez korábban megadott ütemezett frissítést, majd eltávolította és újratelepítette a személyes átjárót. A személyes átjáró eltávolításakor a rendszer eltávolítja az adatkészletek frissítéshez szükséges adatforrás-hitelesítési adatokat a Power BI szolgáltatásból.
+Előfordulhat, hogy megjelenik a hibaüzenet a beállítások \<adatkészlet\> Ha rendelkezik egy ütemezett frissítés és majd eltávolította és újratelepítette a személyes átjárót. Személyes átjáró eltávolításakor törlődnek az adatforrás hitelesítő adatainak egy adatkészlethez, amelynek része a frissítéshez a Power BI szolgáltatásban.
 
-**Megoldás:** A Power BI-ban lépjen az adatkészletre vonatkozó beállítások frissítéséhez. Az adatforrások kezelésére szolgáló felületen mindegyik hibás adatforrásnál kattintson a Hitelesítő adatok szerkesztése lehetőségre, majd jelentkezzen be ismét az adatforrásra.
+**Megoldás:** A Power BI-ban lépjen az adatkészletre vonatkozó beállítások frissítéséhez. Az adatforrások kezelése egy hibás semmilyen adatforrás esetében válassza **hitelesítő adatok szerkesztése** , és jelentkezzen be ismét az adatforrás.
 
 **Hiba: The credentials provided for the dataset are invalid. (Az adatkészlethez megadott hitelesítő adatok érvénytelenek.) A folytatáshoz először frissítse a hitelesítő adatokat a lap frissítésével vagy az Adatforrás beállításai párbeszédpanelen.**
 
 **Megoldás**: Ha a hitelesítő adatokkal kapcsolatos üzenet jelenik meg, az a következőket jelentheti:
 
-* Ellenőrizze, hogy naprakészek-e az adatforrásokra történő bejelentkezéshez használt felhasználói nevek és jelszavak. A Power BI-ban lépjen az adatkészlet beállításainak frissítéséhez. Az adatforrások kezelési felületén kattintson az adatforrás melletti Hitelesítő adatok szerkesztése lehetőségre, majd frissítse az adatforráshoz tartozó hitelesítő adatokat.
-* Egy felhőbeli forrás és egy helyi forrás egyesített lekérdezése a személyes átjárón keresztül nem frissíthető, ha bármelyik forrás OAuth eljárást használ a hitelesítéshez. Ilyen például a CRM Online és egy helyi SQL-szerver egyesítése is. Ebben az esetben a frissítés nem fog sikerülni, mert a CRM Online használatához OAuth-hitelesítésre van szükség.
+* Ellenőrizze, hogy a felhasználónév és jelszó adatforrások bejelentkezik naprakészek legyenek. A Power BI-ban lépjen az adatkészlet beállításainak frissítéséhez. Válassza ki az adatforrások kezelése **hitelesítő adatok szerkesztése** az adatforrás hitelesítő adatainak frissítéséhez.
+* Egy felhőbeli forrás és a egy helyszíni adatforráshoz, egyetlen lekérdezésben keresztül a személyes átjárón frissítéséhez, ha a forrásokból nem használja OAuth hitelesítési sikertelen. Egy példa a probléma, CRM Online-hoz és a egy helyi SQL Server-szerver. Az Adategyesítés meghiúsul, mert a CRM Online OAuth szükséges.
   
-  Ez egy ismert probléma, foglalkozunk vele. A probléma úgy kerülhető meg, hogy külön lekérdezést használ a felhőbeli forráshoz és a helyszíni adatforráshoz, majd összefésüléssel vagy összefűzéssel egyesíti az eredményeket.
+  Ez a hiba egy ismert probléma, azt a foglalkozunk. A probléma megkerüléséhez rendelkezik külön lekérdezést használ a felhőbeli forráshoz és a helyszíni adatforráshoz. Majd összefésüléssel vagy összefűzéssel egyesíti az eredményeket.
 
 **Hiba: Unsupported data source. (Nem támogatott adatforrás.)**
 
 **Megoldás:** Ha nem támogatott adatforrásról tájékoztató üzenetet kap a frissítések ütemezése közben, az a következőket jelentheti: 
 
-* Jelenleg Power BI-ban nem támogatott az adatforrás frissítése. 
-* Az Excel-munkafüzet nem tartalmaz adatmodellt, csak munkafüzet adatokat. A Power BI jelenleg csak akkor támogatja a frissítést, ha a feltöltött Excel-munkafüzet tartalmaz adatmodellt. Ha az Excelbe a Power Query-t használva importál adatokat, válassza az Adatok betöltése adatmodellbe lehetőséget. Így gondoskodhat arról, hogy az adatokat egy adatmodellbe importálja a rendszer. 
+* Az adatforrás jelenleg nem támogatott a Power bi-ban a frissítéshez. 
+* Az Excel-munkafüzet nem tartalmaz egy adatmodellt, csak a munkalap adatainak. A Power BI jelenleg csak akkor támogatja a frissítést, ha a feltöltött Excel-munkafüzet tartalmaz adatmodellt. Ha az Excelbe a Power Query-t használva importál adatokat, válassza az Adatok betöltése adatmodellbe lehetőséget. Ez a beállítás biztosítja az adatok importálása egy adatmodellbe. 
 
-**Hiba: [Az adatok nem kombinálhatók] a &lt;lekérdezés rész&gt;/&lt;... &gt; / &lt;... &gt; olyan adatforrásokhoz próbál hozzáférni, melyek különböző adatvédelmi szintjei együtt nem használhatók. Kérjük, építse újra az adategyesítést.**
+**Hiba: [Nem kombinálhatók az adatok] &lt;lekérdezés rész&gt;/&lt;... &gt; / &lt;... &gt; fér hozzá az adatforrásokat, amelyek adatvédelmi szintjei, amely nem használható együtt. Kérjük, építse újra az adategyesítést.**
 
-**Megoldás**: Ezt a hibát az adatvédelmi szintekre vonatkozó korlátozások és az Ön által használt adatforrástípusok okozzák.
+**Megoldás**: Ezt a hibát az adatvédelmi szintekre vonatkozó korlátozások és a típusú adatforrások használata miatt van.
 
 **Hiba: Adatforráshiba: We cannot convert the value "\[Table\]" to type Table. (Adatforrás-hiba: A [Tábla] érték nem konvertálható a következő típusra: Tábla.)**
 
-**Megoldás**: Ezt a hibát az adatvédelmi szintekre vonatkozó korlátozások és az Ön által használt adatforrástípusok okozzák.
+**Megoldás**: Ezt a hibát az adatvédelmi szintekre vonatkozó korlátozások és a típusú adatforrások használata miatt van.
 
 **Hiba: Nincs elegendő szabad terület ehhez a sorhoz.**
 
-Ez a hiba akkor fordul elő, ha egyetlen sor mérete nagyobb 4 MB-nál. Állapítsa meg, hogy az adatforrás melyik soráról van szó, majd ezt a sort próbálja meg kiszűrni, vagy próbálja meg csökkenteni a méretét.
+Ez a hiba akkor fordul elő, ha egyetlen sor 4 MB-nál nagyobb méretű. Megkeresi az adatforrásból, és próbálja ki szűrni, vagy csökkenteni a méretét a sorhoz.
 
 ## <a name="data-sources"></a>Adatforrások
-**Hiányzó adatszolgáltató** – A személyes átjáró csak 64 bites verzióban érhető el. Működéséhez arra van szükség, hogy a számítógépre, amelyen a személyes átjáró üzemel, telepítve legyen az adatszolgáltató 64 bites verziója. Például, ha az adatkészletben szereplő adatforrás Microsoft Access típusú, telepítenie kell a 64 bites ACE-szolgáltatót arra a számítógépre, amelyen a személyes átjáró is fut.  
+**Hiányzó adatszolgáltató** – a személyes átjáró csak 64 bites verzió. Működéséhez arra van szükség, hogy a számítógépre, amelyen a személyes átjáró üzemel, telepítve legyen az adatszolgáltató 64 bites verziója. Például, ha az adatkészletben szereplő adatforrás Microsoft Access típusú, telepítenie kell a 64 bites ACE-szolgáltatót arra a számítógépre, amelyen a személyes átjáró is fut.  
 
 >[!NOTE]
->Ha 32 bites Excellel rendelkezik, nem fog tudni 64 bites ACE-szolgáltatót telepíteni a gépre.
+>Ha az Excel 32 bites verziója van, egy 64 bites ACE-szolgáltatót nem telepíthető ugyanazon a számítógépen.
 
-**Access-adatbázis használata esetén a Windows-hitelesítés nem támogatott** – Access-adatbázis esetén a Power BI jelenleg csak a névtelen hitelesítést támogatja. Dolgozunk azon, hogy Windows-hitelesítést lehessen használni az Access-adatbázisokhoz is.
+**Access-adatbázis használata esetén a Windows-hitelesítés nem támogatott** – Access-adatbázis esetén a Power BI jelenleg csak a névtelen hitelesítést támogatja. Még dolgozunk Access-adatbázis Windows-hitelesítés engedélyezése.
 
-**Bejelentkezési hiba az adatforrás eléréséhez használandó hitelesítő adatok beírásakor** – Ha a Windows hitelesítési adatok beírásakor ehhez hasonló hibaüzenetet kap, amikor megpróbál kapcsolódni egy adatforráshoz, elképzelhető, hogy a személyes átjáró egy régebbi verzióját használja. [Telepítse a Power BI személyes átjáró legfrissebb verzióját](https://powerbi.microsoft.com/gateway/).
+**Bejelentkezési hiba, ha egy adatforráshoz tartozó hitelesítő adatok megadása** – Ha egy adatforráshoz Windows hitelesítő adatok beírásakor ehhez hasonló hibaüzenetet kap, továbbra is valószínűleg egy régebbi verzióját, a személyes átjárót. [Telepítse a Power BI személyes átjáró legfrissebb verzióját](https://powerbi.microsoft.com/gateway/).
 
   ![](media/service-admin-troubleshooting-power-bi-personal-gateway/pbi_pg_credentialserror.jpg.png)
 
@@ -95,49 +95,49 @@ Ez a hiba akkor fordul elő, ha egyetlen sor mérete nagyobb 4 MB-nál. Állapí
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/aceoledberror.png)
 
-A Power BI jelenleg nem támogatja a Windows-hitelesítést ACE OLEDB szolgáltatót használó adatforrások esetén.
+A Power BI jelenleg nem támogatja a Windows-hitelesítést ACE OLEDB szolgáltatót használó adatforrások esetében.
 
-**Megoldás:** A hiba elkerülése érdekében válassza a Névtelen hitelesítést. A hagyományos ACE OLEDB szolgáltatók esetén a Névtelen hitelesítő adatok egyenértékűek Windows-hitelesítő adatokkal.
+**Megoldás:** Ez a hiba elkerüléséhez kiválaszthatja **névtelen hitelesítés**. A hagyományos ACE OLEDB szolgáltatók névtelen hitelesítő adatok Windows hitelesítő adatok egyenlő.
 
 ## <a name="tile-refresh"></a>Csempefrissítés
-Ha az irányítópult csempéinek frissítésével kapcsolatban kap hibaüzenetet, tekintse át a következő cikket:
+Ha az irányítópult csempéinek frissítésével hiba azért küldtük Önnek, tekintse meg a következő cikket.
 
 [Csempékkel kapcsolatos hibák elhárítása](refresh-troubleshooting-tile-errors.md)
 
 ## <a name="tools-for-troubleshooting"></a>Hibaelhárítási eszközök
 ### <a name="refresh-history"></a>Frissítési előzmények
-A **Frissítési előzmények** segítenek áttekinteni az előfordult hibákat, és hasznos adatokat biztosítanak arra az esetre, ha a támogatást nyújtó ügyfélszolgálathoz kellene fordulnia. Mind az ütemezett, mind az igény szerinti frissítéseket megtekintheti. A **Frissítési előzmények** oldalra az alábbiak szerint juthat el.
+**Frissítési előzmények** segítségével tájékozódhat a hibákat, és hasznos adatokat tesz elérhetővé, ha hozzon létre egy támogatási kérést szeretne. Ütemezett mind az igény szerinti, frissítések tekintheti meg. Itt látható, hogyan juthat el a **frissítési előzmények**.
 
 1. A Power BI navigációs ablaktáblájának **Adatkészletek** területén jelöljön ki egy adatkészletet, majd válassza a &gt;Menü megnyitása&gt; **Frissítés ütemezése** lehetőséget.
    ![](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh.png)
-2. A **Beállítások:** &gt;**Frissítés ütemezése** párbeszédablakban kattintson a **Frissítési előzmények** lehetőségre.  
+1. A **beállításai...** válassza **frissítési előzmények**.  
    ![](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh-2.png)
    
    ![](media/service-admin-troubleshooting-power-bi-personal-gateway/refresh-history.png)
 
 ### <a name="event-logs"></a>Eseménynaplók
-Több eseménynapló is létezik, melyekből tájékozódhat. Az első kettőt, a **Data Management Gateway** (Adatkezelési átjáró) és a **PowerBIGateway** (PowerBI átjáró) naplókat akkor láthatja, ha Ön rendszergazda a számítógépen.  Ha ön nem rendszergazda, és a személyes átjárót használja, a naplóbejegyzéseket az **Alkalmazásnaplóban** fogja tudni megtekinteni.
+Több eseménynapló információkkal szolgálhat. Az első két **adatkezelési átjáró** és **PowerBIGateway**, ha Ön rendszergazda a számítógépen.  Ha Ön nem rendszergazda, és a személyes átjárót használja, látni fogja a naplóbejegyzéseket a **alkalmazás** napló.
 
 A **Data Management Gateway** (Adatkezelési átjáró) és **PowerBIGateway** naplók az **Alkalmazás- és szolgáltatásnaplók** között találhatók.
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 
 ### <a name="fiddler-trace"></a>Nyomon követés a Fiddlerrel
-A [Fiddler](http://www.telerik.com/fiddler) a Telerik által kifejlesztett, HTTP-forgalmat figyelő ingyenes eszköz.  Nyomon követheti a Power BI szolgáltatás és az ügyfélszámítógép közötti adatforgalmat. Ebből kiderítheti az esetleges hibákat, illetve az egyéb kapcsolódó információkat.
+A [Fiddler](http://www.telerik.com/fiddler) a Telerik ingyenes eszköze, amely a HTTP-adatforgalom figyelésére használható. Láthatja, hogy a kommunikáció áramlását az ügyfélszámítógépen a Power BI szolgáltatással. Ez a kommunikáció valószínűleg hibák és egyéb kapcsolódó információkat.
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/fiddler.png)
 
 <a name="SetupLogs"></a>
 
 ### <a name="setup-logs"></a>Telepítési naplók
-Ha a **személyes átjárót** nem tudja telepíteni, megjelenik egy hivatkozás, melynek segítségével megjelenítheti a telepítési naplót. Itt valószínűleg további információkat talál a hibával kapcsolatban. Ezek mindegyike windowsos telepítési napló, vagy más néven MSI-napló. Ezek a bejegyzések meglehetősen összetettek és nehezen olvashatók. A hiba rendszerint alul olvasható, ugyanakkor a hiba okát nem egyszerű megállapítani. Lehet, hogy egy másik naplóban feljegyzett hibák eredményeképpen alakult ki, de az is előfordulhat, hogy egy korábbi bejegyzésben szereplő hiba miatt.
+Ha a **személyes átjáró**, nem tudja telepíteni, megjelenik egy hivatkozás, megjelenítheti a telepítési naplót. A telepítő naplóját jeleníti meg, a hiba részleteit. Ezek a naplók olyan Windows-telepítési napló, más néven MSI-napló. Ezek a bejegyzések meglehetősen összetettek és nehezen olvashatók. Általában a eredményül kapott hiba: a lap alján, de a hiba okának megállapítása nem triviális. Lehet, hogy egy másik naplóban feljegyzett hibák eredményeképpen alakult ki, de az is előfordulhat, hogy egy korábbi bejegyzésben szereplő hiba miatt.
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/setup-log.png)
 
-Másik lehetőségként megnyithatja a **Temp mappát** (%temp%), és megtekintheti a **Power\_BI\_** sztringgel kezdődő fájlokat.
+Másik lehetőségként megnyithatja az **Temp mappa** (% temp %) és kezdődő fájlokat **Power\_BI\_**.
 
 > [!NOTE]
-> Elképzelhető, hogy a %temp% használatával a Temp mappa egyik almappájába kerül.  A **Power\_BI\_**  fájljai a temp könyvtár gyökerében lesznek megtalálhatók.  Ehhez lehet, hogy egy vagy két szinttel feljebb kell lépnie.
+> Elképzelhető, hogy a %temp% használatával a Temp mappa egyik almappájába kerül. A **Power\_BI\_**  fájljai a temp könyvtár gyökerében találhatók.  Ehhez lehet, hogy egy vagy két szinttel feljebb kell lépnie.
 > 
 > 
 
