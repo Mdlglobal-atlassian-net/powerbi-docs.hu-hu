@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 58ed43768d563adfe3012e030d2c8bb795909380
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9d884df7fdfa6d0f16e7963c00a1100186d70546
+ms.sourcegitcommit: b11e908650379913d00673215e3eaf25d712b122
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292430"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65239494"
 ---
 # <a name="using-buttons-in-power-bi"></a>Gombok használata a Power BI-ban
 A Power BI-ban elérhető **gombokkal** alkalmazásokhoz hasonlóan működő jelentéseket és irányítópultokat hozhat létre, melyekben a felhasználók az elemekre kattintva és mutatva interaktívabban használhatják a Power BI-tartalmakat. Adhat hozzá gombokat a jelentésekhez a **Power BI Desktop** alkalmazásban, majd megoszthatja vagy közzéteheti ezeket a jelentéseket a Power BI szolgáltatásban, hogy elérhetők legyenek a felhasználóknak alkalmazásként működő irányítópultokként.

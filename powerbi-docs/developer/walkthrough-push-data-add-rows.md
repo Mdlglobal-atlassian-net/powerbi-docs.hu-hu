@@ -1,20 +1,20 @@
 ---
 title: Sorok hozzáadása egy táblához
 description: Útmutatás az adatok leküldéséhez – Sorok hozzáadása egy Power BI-táblához
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 353104bcc99b65bdabe83f58edffd2653c48731c
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: a355f09984bc454f74dfab8ef137e29fd5aed110
+ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215918"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65710399"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>5. lépés: Sorok hozzáadása egy Power BI-táblázathoz
 
@@ -160,7 +160,7 @@ Az alábbiakban megtalálja a [teljes kódlistát](#code).
                 string resourceUri = "https://analysis.windows.net/powerbi/api";
 
                 //OAuth2 authority Uri
-                string authorityUri = "https://login.microsoftonline.net/common/";
+                string authorityUri = "https://login.microsoftonline.com/common/";
 
                 //Get access token:
                 // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken
