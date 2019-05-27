@@ -1,20 +1,20 @@
 ---
 title: Kódrészletek a tartalmak Power BI Embeddedből való migrálásához
 description: Íme a tartalmak migrálásához szükséges alapvető műveletek néhány kódrészlete
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: c3357b89ef02d29c0518b12780339d8612c75387
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: abf45f5213a10379535d4c6ada3b54ffa625ddc5
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61269229"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kódrészletek a tartalmak Power BI-munaterületcsoportból való migrálásához
 
@@ -234,7 +234,7 @@ Ebben a kódrészletben feltételezzük, hogy a leküldhető adatkészlet már a
 [Beágyazás a Power BI-jal](embedding.md)  
 [Power BI Embedded munkaterület-csoport tartalmainak migrálása a Power BI-ba](migrate-from-powerbi-embedded.md)  
 [Power BI-irányítópultok, -jelentések és -csempék beágyazása](embedding-content.md)  
-[Power BI Premium – pontosan mi is ez?](../service-premium.md)  
+[Power BI Premium – pontosan mi is ez?](../service-premium-what-is.md)  
 [JavaScript API Git-adattár](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git-adattár](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript beágyazási minta](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

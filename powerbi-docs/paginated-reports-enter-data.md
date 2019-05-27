@@ -1,7 +1,7 @@
 ---
 title: Adatok megadása közvetlenül többoldalas jelentésben a jelentéskészítőben (előzetes verzió)
 description: Ebben a cikkben megismerheti, hogyan adhat meg közvetlenül adatokat egy jelentésben a jelentéskészítővel.
-author: markingmyname
+author: maggiesMSFT
 ms.author: maggies
 manager: kfile
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/19/2018
-ms.openlocfilehash: 27f8434b336c2d1281fb087d4e9acf83958f7329
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 3237f4751083f374ac00a959f226429b17757b50
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61424468"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Adatok megadása közvetlenül többoldalas jelentésben a jelentéskészítőben (előzetes verzió) - Power BI
 
@@ -23,7 +23,7 @@ Ebben a cikkben megismerkedhet az SQL Server 2016 jelentéskészítője új verz
 ## <a name="prerequisites"></a>Előfeltételek
 
 - Ha közvetlenül egy lapszámozott jelentésben szeretne adatokat megadni, telepítse a [jelentéskészítő új verzióját a Microsoft letöltőközpontból](https://www.microsoft.com/download/details.aspx?id=53613). 
-- A lapszámozott jelentés a Power BI szolgáltatásban való mentéséhez [Power BI Pro-fiókra](service-self-service-signup-for-power-bi.md), valamint egy [Power BI Premium kapacitásbeli](service-premium.md) munkaterület írási hozzáférésére lesz szüksége.
+- A lapszámozott jelentés a Power BI szolgáltatásban való mentéséhez [Power BI Pro-fiókra](service-self-service-signup-for-power-bi.md), valamint egy [Power BI Premium kapacitásbeli](service-premium-what-is.md) munkaterület írási hozzáférésére lesz szüksége.
 - A lapszámozott jelentés egy jelentéskészítő kiszolgálón való mentéséhez az [RsReportServer.config fájl](#upload-the-paginated-report-to-a-report-server) szerkesztésére vonatkozó engedélyre van szüksége.
 
 ## <a name="get-started"></a>Első lépések

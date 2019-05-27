@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3f3c901140ca4f2ae2d93d1c3bc17bb519d41212
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
+ms.openlocfilehash: 97718ee6411d0063aa145e768fd20d3ebb6024b6
+ms.sourcegitcommit: c9080e77ab705f1814a352c0dda6b10910a5018e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56225960"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65941432"
 ---
 # <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Több-a-többhöz számosságú kapcsolatok a Power BI Desktopban
 
@@ -25,7 +25,7 @@ A Power BI Desktop *több-a-többhöz számosságú kapcsolatok* funkciójával 
 
 A Power BI Desktopban beállítható *több-a-többhöz számosságú kapcsolatok* három összefüggő funkció együttesének egy részét képezik:
 
-* **Összetett modellek**: Lehetővé teszik, hogy egy jelentés kettő vagy több adatkapcsolattal, köztük DirectQuery-kapcsolatokkal és importálással, vagy ezek bármilyen kombinációjával rendelkezzen. További információért lásd: [Összetett modellek a Power BI Desktopban (előzetes verzió)](desktop-composite-models.md).
+* **Összetett modellek**: Lehetővé teszik, hogy egy jelentés kettő vagy több adatkapcsolattal, köztük DirectQuery-kapcsolatokkal és importálással, vagy ezek bármilyen kombinációjával rendelkezzen. További információért lásd: [Összetett modellek a Power BI Desktopban](desktop-composite-models.md).
 
 * **Több-a-többhöz számosságú kapcsolatok**: Az *összetett modellekkel* a táblák között *több-a-többhöz számosságú kapcsolatok* hozhatók létre. Ez a megközelítés kiküszöböli, hogy egyedi értékeket kelljen használni a táblákban. Korábbi áthidaló megoldásokat is szükségtelenné tesz, például új táblák bevezetését a kapcsolatok létrehozásához. A funkcióról ez a cikk szolgáltat további információt.
 
@@ -157,7 +157,7 @@ A DirectQuery használatára vonatkozó korlátozások a *több-a-többhöz szá
 ## <a name="next-steps"></a>Következő lépések
 
 Az összetett modellekkel és a DirectQueryvel kapcsolatos további információkért tekintse meg a következő cikkeket:
-* [Összetett modellek a Power BI Desktopban (előzetes verzió)](desktop-composite-models.md)
+* [Összetett modellek a Power BI Desktopban](desktop-composite-models.md)
 * [Tárolási mód a Power BI Desktopban (előzetes verzió)](desktop-storage-mode.md)
 * [A DirectQuery használata a Power BI Desktopban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások a Power BI Desktopban](desktop-directquery-data-sources.md)

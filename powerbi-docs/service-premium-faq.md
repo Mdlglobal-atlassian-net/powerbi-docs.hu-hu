@@ -1,8 +1,8 @@
 ---
 title: Power BI Premium – gyakori kérdések
 description: A Power BI Premium termékkel kapcsolatos gyakori kérdések, valamint az azokra adott válaszaink.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,16 +10,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 6aa9265a006135ad87a61979b39a709c874f8d48
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: 92b515cfa9c4d3ca796d48ac90415cc0d1d5d5a9
+ms.sourcegitcommit: 317980e9f40fb3ed6eeb91b92056f242bd814a2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383337"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65565387"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premium – gyakori kérdések
 
-Ez a cikk megválaszolja a Power BI Premiummal kapcsolatban felmerülő gyakori kérdéseket. Az áttekintésért lásd [Mi a Power BI Premium?](service-premium.md)
+Ez a cikk megválaszolja a Power BI Premiummal kapcsolatban felmerülő gyakori kérdéseket. Az áttekintésért lásd [Mi a Power BI Premium?](service-premium-what-is.md)
 
 * Ha további kérdései vannak, [forduljon a Power BI közösségéhez](http://community.powerbi.com/).
 * Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).
@@ -84,7 +84,7 @@ A további tudnivalókért lásd: [Power BI jelentéskészítő kiszolgáló has
 
 **Következő lépések**
 
-[Mi az a Power BI Premium?](service-premium.md)
+[Mi az a Power BI Premium?](service-premium-what-is.md)
 [A Power BI Premium kibocsátási megjegyzései](service-premium-release-notes.md)
 [Microsoft Power BI Premium-tanulmány](https://aka.ms/pbipremiumwhitepaper)
 [A Power BI nagyvállalati üzembehelyezési előkészületeit bemutató tanulmány](https://aka.ms/pbienterprisedeploy)
