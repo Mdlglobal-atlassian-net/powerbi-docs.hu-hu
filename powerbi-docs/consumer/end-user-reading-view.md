@@ -12,23 +12,24 @@ ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2018
+ms.date: 05/13/2019
 ms.author: mihart
-ms.openlocfilehash: 84ce069913b1c262ce4e91138f8496cf3f19dddd
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: babdcebcdbc45ce3f7f737785ca4becab50cb3be
+ms.sourcegitcommit: 187f306438d53ba8742db2c7a5532f1acc81fa36
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280121"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65608268"
 ---
-<!-- once the sample aps are live, change this so consumers can follow along -->
+<!-- once the sample apps are live, change this so consumers can follow along -->
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Rövid útmutató: A Power BI ***felhasználói*** képességeivel kapcsolatos tudnivalók
 Ebből a rövid útmutatóból megtudhatja, hogyan használhatja a Power BI-t az adatokon alapuló üzleti megállapítások felfedezéséhez. Ez a cikk nem részletes ismertető, sokkal inkább a Power BI-**felhasználók** számára elérhető műveletek rövid áttekintése.
 
 Ha még nem regisztrált a Power BI-ra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://app.powerbi.com/signupredirect?pbi_source=web).
 
 ## <a name="prerequisites"></a>Előfeltételek
-- Power BI szolgáltatás (app.powerbi.com) <!-- app from AppSource -->
+- Power BI service (app.powerbi.com)
+<!-- app from AppSource -->
 
 ## <a name="reading-view"></a>Olvasó nézet
 A Power BI szolgáltatásban az Olvasó nézet elérhető a *jelentésfelhasználók* számára. Ha egy munkatársa megoszt Önnel egy jelentést, azt az Olvasó nézetben felfedezheti és kezelheti. 
@@ -185,7 +186,7 @@ A Power BI-vizualizációk az alapul szolgáló adathalmazokból származó adat
 1. Nyisson meg egy jelentést, és válasszon ki egy vizualizációt a Power BI szolgáltatásban.  
 2. A vizualizáció mögötti adatok megjelenítéséhez kattintson a három pontra (…), és válassza az **Adatok megjelenítése** elemet.
    
-   ![Adatok megjelenítése kiválasztása](./media/end-user-show-data/power-bi-show-data2.png)
+   ![Adatok megjelenítése kiválasztása](./media/end-user-show-data/power-bi-explore-show-data.png)
 
 Ez volt a Power BI szolgáltatás **felhasználói** műveleteinek rövid áttekintése.  
 
