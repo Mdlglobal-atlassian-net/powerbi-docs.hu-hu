@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 63924dd4769b4ce452d2d8de4252228bb6d37d37
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 846f783e2a022504f192cf0c03179ce3f3c00e22
+ms.sourcegitcommit: 1dfabc8596ec2eb66ccccceb11419361f704b607
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275548"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65625080"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Csatlakozás a mintákhoz a Power BI szolgáltatásban
 
@@ -78,7 +78,7 @@ Most vizsgálja meg saját maga is az irányítópultot, az adatkészletet és a
     ![jelentésoldal kiemelt egyező vizualizációval](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Ha az adott csempe a [Power BI Q&A](consumer/end-user-q-and-a.md) szolgáltatásával lett létrehozva, akkor a Q&A oldalnak kellett volna megnyílnia. Ha a csempét az [Excelből rögzítették](service-dashboard-pin-tile-from-excel.md), akkor az Excel Online nyílt volna meg a Power BI-ban.
+   > Ha az adott csempe a [Power BI Q&A](power-bi-tutorial-q-and-a.md) szolgáltatásával lett létrehozva, akkor a Q&A oldalnak kellett volna megnyílnia. Ha a csempét az [Excelből rögzítették](service-dashboard-pin-tile-from-excel.md), akkor az Excel Online nyílt volna meg a Power BI-ban.
    > 
    > 
 1. Lépjen vissza az **Adatkészletek** lapra, ahol az adatkészlet átvizsgálását illetően számos lehetőség közül választhat.  Nem tudja megnyitni és megtekinteni az összes sort és oszlopot (ahogy a Power BI Desktop vagy az Excel esetében meg tudná tenni).  Ha valaki megoszt egy tartalomcsomagot a kollégáival, akkor jellemzően az elemzéseket kívánja megosztani, nem pedig közvetlen hozzáférést adni a kollégáinak az adatokhoz. Ez azonban nem jelenti azt, hogy ne tudná elvégezni az adatkészlet átvizsgálását.  
@@ -129,11 +129,9 @@ Most vizsgálja meg saját maga is az adatkészletet, a kapcsolatokat és a jele
 
 
 ## <a name="next-steps"></a>Következő lépések
-[Power BI – Alapfogalmak](consumer/end-user-basic-concepts.md)
 
-[Minták a Power BI szolgáltatáshoz](sample-datasets.md)
-
-[Power BI-adatforrások](service-get-data.md)
+- [Power BI – Alapfogalmak](consumer/end-user-basic-concepts.md)
+- [Minták a Power BI szolgáltatáshoz](sample-datasets.md)
+- [Power BI-adatforrások](service-get-data.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-

@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/15/2019
+ms.date: 05/11/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b97d2b44e6751f9185b02afc61ca89296fbbd5cf
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
+ms.openlocfilehash: 1b47e51ece196d6667363d91f43589c398828ff9
+ms.sourcegitcommit: 187f306438d53ba8742db2c7a5532f1acc81fa36
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661629"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65608286"
 ---
 # <a name="supported-browsers-for-power-bi"></a>A Power BI használatát támogató böngészők
 A Power BI az alábbi böngészőkben képes futni:
@@ -30,7 +30,6 @@ A Power BI az alábbi böngészőkben képes futni:
 Ezek a böngészők minden olyan platformon támogatva vannak, ahol elérhetőek.
 
 ### <a name="next-steps"></a>Következő lépések
-* [Mi az a Power BI?](../power-bi-overview.md)
 * Kérdezze meg a [Power BI közösségét](http://community.powerbi.com/)
 * Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).
 

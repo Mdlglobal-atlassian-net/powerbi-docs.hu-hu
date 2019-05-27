@@ -1,20 +1,21 @@
 ---
 title: Szolgáltatásnév a Power BI-jal
 description: Megismerheti, hogyan regisztrálhat egy alkalmazást az Azure Active Directoryban szolgáltatásnév használatával a Power BI-tartalmak beágyazásához.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
-ms.subservice: power-bi-developer
+ms.service: powerbi
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 9b72c1c432e7fa560862452849491c12395d29d1
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
+ms.openlocfilehash: 5c97eacbdbf89a9ef828dad3a5da01e794952f15
+ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872547"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65710515"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Szolgáltatásnév a Power BI-jal (előzetes verzió)
 

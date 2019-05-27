@@ -8,15 +8,15 @@ editor: davidi
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 10/21/2017
+ms.date: 05/08/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 546ae48aac10ae6c72a062665c7d8f448432a194
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 57a285b075b17b2229ec4267a476cdd4b86ea7ad
+ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292637"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65513591"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dinamikus sorszintű biztonság Analysis Services-beli táblázatos modellel
 Ez az oktatóanyag bemutatja a **sorszintű biztonság** megvalósításához szükséges lépéseket az **Analysis Services-beli táblázatos modellben**, és a Power BI-jelentésben való használatának módját. A jelen oktatóanyagban szereplő lépések célja, hogy végigvezessék és megismertessék a minta adatkészlet teljesítéséhez szükséges lépésekkel.

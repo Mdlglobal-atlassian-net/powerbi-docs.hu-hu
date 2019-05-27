@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b4aeb04958ef6f4c8454a022198232d94c14b7b6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b8d742e9238d438775115fd1ee2e287cf0ba0388
+ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284242"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65454270"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Csoportosítás és dobozolás használata a Power BI Desktopban
 Amikor a **Power BI Desktop** vizualizációkat hoz létre, az adatait az alapul szolgáló adatokban talált értékek alapján adattömbökbe (vagy csoportokba) gyűjti. Ez gyakran elegendő is, de lehetnek alkalmak, amikor finomítani szeretné az adattömbök megjelenítését. Előfordulhat például, hogy három termékkategóriát egy nagyobb kategóriában (egy *csoportban*) szeretne elhelyezni. Az is előfordulhat, hogy az eladási adatokat 1 000 000 dollár méretű dobozokban szeretné látni, nem pedig egyenlően elosztva, 923 983 dolláros részekben.
