@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b2b928ea308f546c7cf023c6ef187aa7c516987c
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
-ms.translationtype: HT
+ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426631"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61143938"
 ---
-# <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Adatfolyamok létrehozása és használata a Power BI-ban (előzetes verzió)
+# <a name="creating-and-using-dataflows-in-power-bi"></a>Adatfolyamok létrehozása és használata a Power BI-ban
 
 A **Power BI-ban** elérhető fejlett adat-előkészítéssel létrehozhatja az adatok adatfolyamnak nevezett gyűjteményét, amelyet aztán különböző forrásokból származó üzleti adatokhoz való csatlakozásra, azok tisztítására, átalakításra, és Power BI-tárolóba való betöltésre használhat.
 
@@ -34,9 +34,6 @@ Egy adatfolyam használata három fő lépésből áll:
 3. Az adathalmaz kiépítése az adatfolyam és a Power BI Desktop használatával 
 
 A következő fejezetek sorra veszik ezeket a lépéseket, és ismertetik az egyes lépések végrehajtásához kínált eszközöket. Kezdjünk hozzá.
-
-> [!NOTE]
-> Az adatfolyamok előzetes verzióban állnak rendelkezésre, és az általánosan elérhetővé válás előtt módosulhatnak és frissülhetnek.
 
 ## <a name="creating-a-dataflow"></a>Adatfolyam létrehozása
 Adatfolyam létrehozásához nyissa meg a Power BI szolgáltatást egy böngészőben, majd válasszon egy **alkalmazás-munkaterületet** a bal oldali navigációs panelen (a *saját munkaterületen* nem érhetők el adatfolyamok a Power BI szolgáltatásban), ahogy az alábbi ábrán is látható. Új munkaterületet is létrehozhat, amelyben aztán létrehozhatja új adatfolyamát. 
@@ -165,9 +162,9 @@ Előfordulhat, hogy az adatfolyamok adatforrásaihoz való kapcsolódás problé
 Ez a cikk arról szólt, hogyan hozhat létre saját **adatfolyamot**, illetve egy rá épülő adathalmazt és jelentést a **Power BI Desktopban**. Az alábbi cikkek további információkkal és példákkal segítik Önt az adatfolyamok használatában:
 
 * [Önkiszolgáló adatelőkészítés adatfolyamokkal](service-dataflows-overview.md)
-* [Számított entitások használata a Power BI Premiumban (előzetes verzió)](service-dataflows-computed-entities-premium.md)
-* [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
-* [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
+* [A Power BI Premium számított entitások használatával](service-dataflows-computed-entities-premium.md)
+* [Adatfolyamok használata a helyszíni adatforrások](service-dataflows-on-premises-gateways.md)
+* [Fejlesztői erőforrások a Power BI-adatfolyamok](service-dataflows-developer-resources.md)
 * [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md)
 
 A Common Data Modellel kapcsolatos további információt a témát áttekintő cikkben talál:

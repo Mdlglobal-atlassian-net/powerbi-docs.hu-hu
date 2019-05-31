@@ -1,32 +1,102 @@
 ---
 title: A Power BI jelentéskészítő kiszolgáló újdonságai
 description: A Power BI jelentéskészítő kiszolgáló újdonságainak bemutatása. A cikk a főbb funkciókat ismerteti és az új elemek kibocsátásakor frissül.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/22/2019
-ms.openlocfilehash: e645cd84b646e180114027464ea4781277d5245f
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 364795a25aaffb92afc4a7148c9bf6b3f88d2ac8
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662457"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187316"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló újdonságai
 
-A Power BI jelentéskészítő kiszolgáló újdonságainak bemutatása. A cikk a főbb funkciókat ismerteti, és az új elemek kibocsátásakor frissül.
-
-A Power BI jelentéskészítő kiszolgáló legújabb verziója, illetve a Power BI jelentéskészítő kiszolgálóra optimalizált Power BI Desktop letöltéséhez nyissa meg az [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) (Helyi jelentéskészítés Power BI jelentéskészítő kiszolgálóval) webhelyet.
+Ismerje meg a Power BI jelentéskészítő kiszolgáló és a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop újdonságai. A cikk a főbb funkciókat ismerteti, és az új elemek kibocsátásakor frissül.
 
 Az újdonságokra vonatkozó Power BI-információk:
 
 * [A Power BI szolgáltatás újdonságai](../service-whats-new.md)
 * [A Power BI Desktop újdonságai](../desktop-latest-update.md)
 * [A Power BI-mobilalkalmazások újdonságai](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>2019. május: Power BI Desktop a Power BI jelentéskészítő kiszolgáló
+
+Tekintse meg a [Power BI jelentéskészítő kiszolgáló 2019. május](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blogbejegyzés további információk az új funkciókról.
+
+Íme néhány a kiadás a fontosabb eseményeket:
+
+### <a name="performance-analyzer"></a>Teljesítmény-elemző eszköz 
+
+Ha a jelentés a vártnál lassabban fut, próbálja meg a Performance Analyzer a Power BI Desktopban. Indítás után, az adatait minden művelet, a jelentés létrehoz egy naplófájlt. Tudjon meg többet a [Performance Analyzer](../desktop-performance-analyzer.md).
+
+### <a name="new-modeling-view"></a>Új modellezési megtekintése
+
+Az új modellezési nézetben a Power BI Desktopban megtekintheti és sok tábla tartalmazó összetett adatkészletekkel működnek együtt. Emeli ki több diagram elrendezését tartalmazza, és a tömeges oszlopokat, mértékeket és táblák szerkesztéséhez. Tudjon meg többet [nézet modellezés](../desktop-modeling-view.md).
+
+### <a name="accessible-visual-interaction"></a>Elérhető Vizualizációk közti interakció
+
+Most már hozzáféréssel adatpont számos, a billentyűzetnavigációt beépített vizualizációkat is. Tudjon meg többet [akadálymentesség a Power BI-jelentések](../desktop-accessibility.md).
+
+### <a name="conditional-formatting-titles-and-web-url-actions"></a>Feltételes formázás a címek és a webes URL-cím műveletek
+
+Power BI-jelentések interaktívak. Az így, hogy a jelentésben szereplő dinamikus, a jelentés aktuális állapotát tükröző lenne. Kifejezés kötött formázás segítségével teheti dinamikussá a gombok, alakzatok és képek URL-címei. Tudjon meg többet [kifejezésen alapuló címek](../desktop-conditional-format-visual-titles.md).
+
+### <a name="cross-highlight-by-axis-labels"></a>Egymás közötti keresztkiemelések tengelyfeliratok szerint
+
+Válassza ki a tengely kategóriacímkék Vizualizációk keresztkiemelése egy oldalon, a többi elem, ugyanúgy, mint a kiválasztott az adatpontok egy vizualizációban. Tudjon meg többet [keresztkiemelés](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+
+### <a name="all-the-new-features"></a>Az új funkciók
+
+Itt látható az új funkciók listája:
+
+### <a name="reporting"></a>Jelentéskészítés
+
+- Egymás közötti keresztkiemelések a vonaldiagramok az egyetlen ponton 
+- Címek sortörés 
+- A keresztszűrés ¬ alapértelmezett Vizualizációk közti interakció frissítése
+- A Vizualizáció a Lekerekített sarkok 
+- Egyetlen válassza a szeletelő  
+- A Bing maps heat map támogatása  
+- Egymás közötti keresztkiemelések tengelyfeliratok szerint  
+- Alapértelmezett elemleírás formázása  
+- Statikus webhely URL-cím támogatja a gombok, alakzatokat és képeket  
+- Lap igazítása beállításai   
+- Kiválasztás panel fejlesztései  
+- Elérhető Vizualizációk közti interakció  
+- Feltételes formázás a Vizualizációk címei  
+- Feltételes formázás webes URL-cím műveletek gombok, alakzatok és képek
+- Teljesítmény-elemző eszköz panel
+- Táblák és mátrixok billentyűzetnavigációt
+- Sor adatkezelés felirat pozíciója
+- KPI visual kijelző szöveges vezérlése
+
+### <a name="analytics"></a>Elemzés
+
+- Dátumok hierarchikus mostantól általánosan elérhető megjelenítése  
+
+### <a name="modeling"></a>Modellezés
+
+- Új modellezési nézet már általánosan elérhető
+- Új DAX-függvények
+- A ALLSELECTED DAX függvény frissítése
+- Tiltsa le az új jelentések automatikus elejétől számított táblák
+
+## <a name="may-2019-power-bi-report-server"></a>2019. május: Power BI jelentéskészítő kiszolgáló
+
+### <a name="support-for-trusted-visuals"></a>Megbízható Vizualizációk támogatása
+
+A Power BI jelentéskészítő kiszolgáló megbízható Vizualizációk támogatása hozzáadtunk. Jelenleg tesztenként Mapbox és PowerOn vizualizációkat. Az ESRI, a Visio és a PowerApps nem támogatottak ebben a kiadásban.)
+
+### <a name="improved-security-features"></a>Továbbfejlesztett biztonsági funkciók
+
+**RestrictedResourceMimeTypeForUpload**, mely rendszergazdák használatával adja meg a letiltott mime-típusok, pl. szöveg/html vesszővel tagolt listája.
 
 ## <a name="january-2019"></a>2019. január
 

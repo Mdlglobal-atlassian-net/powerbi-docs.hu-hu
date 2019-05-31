@@ -1,6 +1,6 @@
 ---
 title: Szövegdobozok és alakzatok a Power BI-jelentésekben
-description: Dokumentáció szövegdobozok és alakzatok Microsoft Power BI szolgáltatással történő hozzáadásáról és létrehozásáról a jelentésekben.
+description: Adja hozzá, és szövegdobozok és alakzatok a jelentés létrehozása a Microsoft Power BI szolgáltatás használatával.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,20 +8,20 @@ featuredvideoid: _3q6VEBhGew
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/16/2019
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cf5cecc8df5c1e6c3057cab6eb41e40e934b1510
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
-ms.translationtype: HT
+ms.openlocfilehash: 26cca0f809f261144ad5e5ee5cfacae3de4f37a4
+ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406546"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66413006"
 ---
-# <a name="text-boxes-and-shapes-power-bi-reports"></a>Szövegdobozok és alakzatok Power BI-jelentésekben
-Szövegmezőket és alakzatokat a Power BI szolgáltatásban és a Power BI Desktopban is hozzá lehet adni a jelentésekhez. Mindkét esetben a jelentésre vonatkozó szerkesztési jogosultsággal kell rendelkeznie. Ha a jelentést megosztották Önnel a Power BI szolgáltatásban, akkor nem rendelkezik hozzá szerkesztési jogosultsággal. 
+# <a name="text-boxes-and-shapes-in-power-bi-reports"></a>Szövegdobozok és alakzatok a Power BI-jelentésekben
+Hozzáadhat szövegdobozok és alakzatok a jelentésekhez a Power BI szolgáltatásban és a Power BI Desktop használatával. Mindkét esetben a jelentésre vonatkozó szerkesztési jogosultsággal kell rendelkeznie. Ha egy jelentést a Power BI szolgáltatásban megosztották Önnel, nem kell szerkesztési jogosultsággal. 
 
-Figyelje meg, hogyan használja Will a Power BI Desktopot, hogy [statikus képeket adjon hozzá egy jelentéshez](guided-learning/visualizations.yml?tutorial-step=11), majd az alábbi lépéseket használva próbálja meg ugyanezt elvégezni a Power BI szolgáltatás használatával.
+Hogyan használja will a Power BI Desktop [statikus képeket hozzáadása egy jelentéshez](guided-learning/visualizations.yml?tutorial-step=11), majd kövesse az alábbi lépéseket követve próbálkozzon meg a feladattal saját maga is inkább a Power BI szolgáltatással.
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew" frameborder="0" allowfullscreen></iframe>
 > 
@@ -29,42 +29,43 @@ Figyelje meg, hogyan használja Will a Power BI Desktopot, hogy [statikus képek
 ## <a name="add-a-text-box-to-a-report"></a>Szövegmező hozzáadása egy jelentéshez
 1. Nyisson meg egy jelentést Szerkesztési nézetben.
 
-2. Vigye az egérkurzort a jelentés vásznán bármely üres helyre, és válassza a **Text Box** (Szövegmező) elemet.
+2. Vigye az egérkurzort a jelentés vásznán bármely üres területen, és válassza ki **szövegmező** a felső menüben.
    
-   ![](media/power-bi-reports-add-text-and-shapes/pbi_textbox.png)
-2. Írja be a szöveget a szövegmezőbe, és, nem kötelezően, adja meg a betűkészletet, színt és a szöveg igazítását. 
+   ![Szövegmező kiválasztása](media/power-bi-reports-add-text-and-shapes/pbi_textbox.png)
+3. Írja be a szöveget a szövegmezőbe, és beállíthatja a formátum betűkészletet, színt és a szöveg igazítását. 
    
-   ![](media/power-bi-reports-add-text-and-shapes/pbi_textbox2new.png)
-3. A szövegdoboz elhelyezéséhez jelölje ki a tetején a szürke területet, és húzza a helyére. A szövegdoboz átméretezéséhez jelölje ki és húzza a körvonalának valamelyik fogópontját. 
+   ![Adja meg a szöveg](media/power-bi-reports-add-text-and-shapes/pbi_textbox2new.png)
+4. A szövegdoboz elhelyezéséhez jelölje ki a tetején a szürke területet, és húzza a helyére. A szövegdoboz átméretezéséhez jelölje ki és húzza a körvonalának valamelyik a fogópontját. 
    
-   ![](media/power-bi-reports-add-text-and-shapes/textboxsmaller.gif)
+   ![Pozíció szövegmező](media/power-bi-reports-add-text-and-shapes/textboxsmaller.gif)
 
-4. A szövegdobozt hagyja kiválasztva, és a VIZUALIZÁCIÓK panelen végezzen el további formázási beállításokat. Ebben a példában a hátteret és a szegélyt formáztuk. A szövegdoboznak a pontos méretét és elhelyezkedését is meghatározhatja.  
+5. A szövegdoboz ki van jelölve, adja hozzá a további formázási a **Vizualizációk** ablaktáblán. Ebben a példában a hátteret és a szegélyt formáztuk. A szövegdoboznak a pontos méretét és elhelyezkedését is meghatározhatja.  
 
-   ![](media/power-bi-reports-add-text-and-shapes/power-bi-borders.png)
+   ![A szövegmező formázása](media/power-bi-reports-add-text-and-shapes/power-bi-borders.png)
 
-5. A szövegdoboz bezárásához jelöljön ki egy üres helyet a jelentés vásznán. 
+6. A szövegdoboz bezárásához jelöljön ki egy üres helyet a jelentés vásznán. 
 
-5. A szövegdoboz irányítópultra tűzéséhez kattintson a gombostű ikonra ![](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png). 
+7. Válassza a gombostű ikont,  ![Gombostű ikon](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png) a szövegdoboz irányítópultra rögzítse. 
 
 ## <a name="add-a-shape-to-a-report"></a>Alakzat hozzáadása a jelentéshez
 1. Vigye az egérkurzort a jelentés vásznán bárhová, és válassza a **Shapes** (Alakzatok) elemet.
    
-   ![](media/power-bi-reports-add-text-and-shapes/power-bi-shapes.png)
-2. A legördülő menüben válasszon egy alakzatot a jelentés vásznához adásához. Adjon hozzá egy nyilat, amely a legnagyobb összértékesítési varianciát tartalmazó boborékra mutat. 
+   ![Válassza ki az alakzatok](media/power-bi-reports-add-text-and-shapes/power-bi-shapes.png)
+2. A legördülő menüben válasszon egy alakzatot a jelentés vásznához adásához. Ebben a példában adjon hozzá egy nyilat, az a legnagyobb összértékesítési varianciát boborékra mutat. 
    
    Szabja testre az alakzatot a **Format shape** (Alakzat formázása) ablaktáblában. Ebben a példában egy sötétvörös szegélyű, piros nyilat hoztunk létre, 90 fokkal elforgatva.
    
-   ![](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
-3. Az alakzat elhelyezéséhez jelölje ki a tetején a szürke területet, és húzza a helyére. Az alakzat átméretezéséhez pedig jelölje ki és húzza a körvonalának valamelyik fogópontját. Ahogy a szövegdoboz esetén, az alakzat pontos méretét és elhelyezkedését is meghatározhatja.
+   ![Alakzat testreszabása](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
+3. Az alakzat elhelyezéséhez jelölje ki a tetején a szürke területet, és húzza a helyére. Az alakzat átméretezéséhez jelölje ki és húzza a körvonalának valamelyik a fogópontját. Ahogy a szövegdoboz esetén, az alakzat pontos méretét és elhelyezkedését is meghatározhatja.
 
-> **MEGJEGYZÉS**: Az alakzatokat nem lehet az irányítópulton rögzíteni, kivéve vizualizációk részeként [élő oldal rögzítésénél](service-dashboard-pin-live-tile-from-report.md). 
-> 
-> 
+   > [!NOTE]
+   > Az alakzatokat nem lehet az irányítópulton rögzíteni, kivéve vizualizációk részeként [élő oldal rögzítésénél](service-dashboard-pin-live-tile-from-report.md). 
+   > 
+   > 
 
-### <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>Következő lépések
 [Hivatkozás hozzáadása egy szövegdobozhoz](service-add-hyperlink-to-text-box.md)
 
-[Power BI – Alapfogalmak](consumer/end-user-basic-concepts.md)
+[A Power BI szolgáltatás felhasználói alapvető fogalmai](consumer/end-user-basic-concepts.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

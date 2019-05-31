@@ -7,14 +7,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: resource
-ms.date: 12/06/2018
+ms.date: 05/14/2019
 ms.author: mihart
-ms.openlocfilehash: 91ac7e9990844f6e4f481473d402647a47249ba6
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 4a67e7ef8171b3f342530d187590e9e018f584df
+ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662411"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412902"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -142,6 +142,8 @@ A dokumentációkban használható a Power BI-környezet (bérlő) kifejezés is
 ## <a name="h"></a>H
 **high-density visuals (nagy adatsűrűségű vizualizációk)** A Power BI által renderelhetőnél több adatponttal rendelkező vizualizációk. A Power BI az adatok mintavételezésével jeleníti meg az alakzatokat és a kiugró értékeket.
 
+**Kezdőlap** az alapértelmezett Power BI szolgáltatás felhasználók életkor üzenetsorokra. Semmit nem módosítja. Nem hívható meg a Power BI kezdőlap vagy egyszerűen kezdőlap.
+
 ## <a name="i"></a>I
 
 **insights (elemzések)** Az elemzési célú gépi tanulási algoritmusok használatával végrehajtott automatikus adatelemzések.
@@ -207,7 +209,7 @@ A kifejezés első előfordulásakor bal oldali navigációs menü, utána vagy 
 
 **pin, unpin (rögzítés, rögzítés feloldása)** A vizualizációk elhelyezése egy irányítópulton (általában egy jelentésből).
 
-**Power BI**, **Power BI service (Power BI szolgáltatás)**, **Power BI Desktop**, **Power BI Mobile**, néhány más Power BI-ajánlat. Az általános elnevezés a *Power BI*. Gyakran csak ezt használjuk a teljes terméknév, például a *Power BI szolgáltatás* vagy a *Power BI Mobile* helyett a terméknév első előfordulását követően.
+**Power BI**, **Power BI service (Power BI szolgáltatás)** , **Power BI Desktop**, **Power BI Mobile**, néhány más Power BI-ajánlat. Az általános elnevezés a *Power BI*. Gyakran csak ezt használjuk a teljes terméknév, például a *Power BI szolgáltatás* vagy a *Power BI Mobile* helyett a terméknév első előfordulását követően.
 
 **Power BI Desktop** Röviden *Desktop*. Az ingyenes Power BI Windows-alkalmazás, amelyet a helyi számítógépén telepíthet, és amellyel átalakítani és vizualizációkkal megjeleníteni kívánt adatokhoz csatlakozhat. Jelentéstervezők és rendszergazdák használják. További információ: [A Power BI bemutatása](../power-bi-overview.md).
 
@@ -288,7 +290,7 @@ A mobileszközökön a megosztás kifejezés utalhat az operációs rendszer nat
 
 **streaming data (adatok streamelése)** Lásd: *valós idejű streamelés*.
 
-**subscriptions (előfizetések)**, **Subscribe (regisztráció)**  
+**subscriptions (előfizetések)** , **Subscribe (regisztráció)**  
 Előfizethet jelentésoldalakra, alkalmazásokra és irányítópultokra, és e-mail-értesítéseket kaphat ezek pillanatképeivel. Ehhez Power BI Pro-licenccel kell rendelkeznie.
 
 **summarization (összegzés)** [Power BI Desktop] Egy adott oszlopban lévő értékekre alkalmazott művelet.

@@ -8,29 +8,37 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/29/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 43046a5fab33f384a6d9f573a992843fa84a0713
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 7148a52d7c7475fbe685f83b1e1cc325521460db
+ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662227"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66413170"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Vizualizációk közötti keresztszűrés Power BI-jelentésben
 A Power BI egyik legnagyszerűbb funkciója, hogy a jelentésoldalon szereplő vizualizációk mind kapcsolódnak egymáshoz. Ha kiválasztja a vizualizáció egyik adatpontját, az oldalon szereplő összes többi, az adott adatot tartalmazó vizualizáció módosul a kijelölés alapján. 
 
 ![videó a vizualizációk interakciójáról](media/end-user-interactions/interactions.gif)
 
-Alapértelmezés szerint a jelentésoldalakon található vizualizációk az adott oldalon található többi vizualizáció keresztszűrésére, keresztkiemelésére és részletezésére használhatók. Ha egy térkép vizualizáción kiválaszt egy államot, azzal úgy emelheti ki az oszlopdiagramot és szűrheti a vonaldiagramot, hogy a rendszer csak az adott államra vonatkozó adatokat jelenítse meg.
+Alapértelmezett, válassza az oldal egy Vizualizáció egy adatpontra fog keresztszűrés, egymás közötti keresztkiemelések és lefúrással megjelenítheti a lapon lévő többi vizualizációt. 
 
-Lásd: [Szűrés és kiemelés](../power-bi-reports-filters-and-highlighting.md). Ha pedig olyan vizualizációkkal is rendelkezik, amelyek támogatják a [részletes vizsgálatot](../power-bi-visualization-drill-down.md), akkor alapbeállítás szerint egy adott vizualizáció részletező elemzése nem lesz hatással a jelentésoldal többi vizualizációjára. 
+Ez hasznos lehet az adatok hogyan teljesít egyetlen érték azonosításához járul hozzá a másikra. Például minden oszlopához az összes egység hónap diagram szerint az adott szegmens a hozzájárulását a moderálás szegmensben válassza a perecdiagram emeli ki, és azt szűrte a vonaldiagramot a jobb oldalon.
 
-A jelentés *tervezője* állítja be, hogy pontosan milyen módon lépnek interakcióba egymással az oldalon szereplő vizualizációk. A tervezők ki- és bekapcsolhatják a vizualizációk interakcióit, és módosíthatják az alapértelmezett keresztszűrés, a keresztkiemelés és a részletezés működését.
+![Vizualizációk interakció képe](media/end-user-interactions/power-bi-interactions.png)
+
+Lásd: [Szűrés és kiemelés](../power-bi-reports-filters-and-highlighting.md). 
+
+A jelentés *tervezője* állítja be, hogy pontosan milyen módon lépnek interakcióba egymással az oldalon szereplő vizualizációk. A tervezők ki- és bekapcsolhatják a vizualizációk interakcióit, és módosíthatják az alapértelmezett keresztszűrés, a keresztkiemelés és a részletezés működését. 
   
 > [!NOTE]
 > A *keresztszűrés* és *keresztkijelölés* kifejezésekkel az itt ismertetett viselkedéseket a **Szűrők** ablaktábla szűrés és kiemelés funkciójától különböztetjük meg.  
 
-### <a name="next-steps"></a>Következő lépések
+## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+- Ha a jelentés rendelkezik egy vizualizációt, amely támogatja a [részletes elemzések kibontásáról](../power-bi-visualization-drill-down.md), alapértelmezés szerint egy Vizualizáció részletező elemzés nem befolyásolja a jelentésoldalon lévő többi vizualizációt.     
+- VisualA visualB interakcióba használatakor a rendszer visualA a Vizualizáció-szintű szűrőkről visualB alkalmazza.
+
+## <a name="next-steps"></a>Következő lépések
 [A jelentésszűrők használata](../power-bi-how-to-report-filter.md)
