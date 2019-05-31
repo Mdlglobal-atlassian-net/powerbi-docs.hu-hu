@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/05/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 440874b96b4bf01023c86e3ef053e8c77e9ef289
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.openlocfilehash: a34de25af7febf63b34d7608ff7ef40e8b653fc4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430101"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61285037"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>A Q&A használata a Power BI Desktopban a természetes nyelvű lekérdezések lehetővé tételéhez
 Hatékony eszköz a munkához, ha gyakori kifejezéseken és természetes nyelven alapuló kérdéseket tud feltenni az adataival kapcsolatban. Még hatékonyabb, ha az adatforrás válaszol is, és a **Power BI Desktop** alkalmazás Q&A szolgáltatása épp ezt teszi lehetővé.
@@ -23,7 +23,7 @@ Hatékony eszköz a munkához, ha gyakori kifejezéseken és természetes nyelve
 Annak érdekében, hogy a Q&A sikeresen értelmezni tudja azt a nagyszámú kérdést, amelynek a megválaszolására képes, feltételezéseket kell tennie a modellről. Ha a modell struktúrája ezen feltételezések közül egynek vagy többnek nem felel meg, akkor módosítania kell a modellt. A Q&A használatához elvégzendő módosítások olyan általános optimalizálási elveket követnek, amelyeket minden Power BI-modellen érdemes elvégeznie, függetlenül attól, hogy használja-e a Q&A szolgáltatást. 
 
 > [!NOTE]
-> A Q&A csak az **importált** adatokat tartalmazó modellekkel való munka során érhető el. Az SSAS- és DirectQuery-modellekkel való élő kapcsolat nem támogatott.
+> A Q & A érhető el csak egy modellt, amely tartalmazza az használatakor **importált** adatok vagy az SSAS élő kapcsolatok. Nem támogatja a DirectQuery-modellekben.
 >
 > Ha a Windowsnak a Windows 10 előtti verzióját használja, a Q&A szolgáltatásnak a következő frissítésre van szüksége a C közös nyelvi futtatókörnyezethez. Megpróbálkozhat a Windows Update fontos frissítéseinek telepítésével, vagy manuálisan is telepítheti a szükséges összetevőt a Microsoft webhelyéről (KB2999226). [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows)
 >

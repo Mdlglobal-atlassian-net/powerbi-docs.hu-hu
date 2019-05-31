@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: abc9671338e916671f243093bad455ed0cb4ef7e
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662043"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61062089"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>A tartalom részletesebb megjelenítése: fókusz mód és teljes képernyős mód
 

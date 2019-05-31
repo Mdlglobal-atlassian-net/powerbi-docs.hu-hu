@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4a9d873632853a69c835d7326653102107dd239f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263805"
+---
 A Power BI szolgáltatással saját javasolt kérdéseket adhat hozzá más felhasználók számára, akik a természetes nyelvet használják az irányítópult lekérdezésmezőjében (más néven a **Q&A** mezőben). Amikor a felhasználók egy irányítópult tetején található beviteli mezőre kattintanak, ezek a javasolt kérdések jelennek meg.
 
 ![](media/4-3a-suggested-questions/4-3a_1.png)

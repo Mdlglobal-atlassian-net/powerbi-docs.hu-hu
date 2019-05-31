@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fcf73962534ec8f1fda009304768fd43aaa0955a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255702"
+---
 A számított oszlopok létrehozásával egyszerűen lehet az adatokat bővíteni és hatékonyabbá tenni. A **számított oszlop** egy olyan új oszlop, amely a meglévő adatok közül legalább két elemet átalakító vagy összevonó számítás definiálásával jön létre. Például létre lehet hozni egy új oszlopot két oszlop összevonásával.
 
 Hasznos lehet számított oszlopokat készíteni, ha táblák közötti kapcsolatot szeretne létrehozni, amikor nem léteznek kapcsolat létrehozására szolgáló egyedi mezők. A kapcsolat hiánya akkor válik nyilvánvalóvá, amikor a felhasználó egy egyszerű, tábla típusú vizualizációt hoz létre a Power BI Desktop alkalmazásban, és ugyanazt az értéket kapja az összes bejegyzésnél annak ellenére, hogy a mögöttes adatok nyilvánvalóan eltérnek.

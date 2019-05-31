@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 867e528c43126ae9073c0113905d59a835c46a96
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397605"
+---
 A nagyszámú diagramon túl a Power BI Desktop több táblázatos megjelenítést is támogat. Sőt, ha kijelöl egy kategorikus mezőt vagy szövegmezőt, és a jelentésvászonra húzza azt, alapértelmezés szerint egy táblázatban kapja vissza az eredményt. A táblázat felfelé és lefelé görgethető, és elemei kezdetben ábécésorrendben jelennek meg.
 
 ![](media/3-6-create-tables-matrixes/3-6_1.png)

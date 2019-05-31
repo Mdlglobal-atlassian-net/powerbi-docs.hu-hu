@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b42efb2c9237baf85a71be12cfaf61da189601d4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255688"
+---
 Az importált adatok gyakran tartalmaznak olyan mezőket, amelyek ténylegesen nem szükségesek a jelentéskészítési és a vizualizációs feladatokhoz, vagy azért, mert extra információk, vagy azért, mert az adatok már elérhetők egy másik oszlopban. A Power BI Desktop rendelkezik eszközökkel az adatok optimalizálásához és használhatóbbá tételéhez a jelentések és vizualizációk létrehozásához és a megosztott jelentések megtekintéséhez.
 
 ## <a name="hiding-fields"></a>Mezők elrejtése

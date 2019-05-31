@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: eeb063707e9a81b3d3551dd4e79e9da01bfe7178
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256312"
+---
 Ez a lecke egy Power BI-jelentésnek egy weboldalon keresztül vagy e-mailben történő megosztását mutatja be néhány egyszerű lépésben. Ez a **webes közzététel** néven is ismert Power BI-funkció könnyen használható és felügyelhető.
 
 Jelölje ki a megosztani kívánt jelentést a Power BI-ban, hogy az megjelenjen a vásznon. Ekkor válassza a menüből a **Fájl > Webes közzététel** pontot.

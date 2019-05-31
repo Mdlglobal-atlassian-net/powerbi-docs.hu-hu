@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e2745c211dbb9f855bcf90589f0fbbe65857b3a3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397682"
+---
 A Power BI Desktop lehetővé teszi, hogy szabályozza a jelentésoldalak elrendezését és formázását, például a méretét és tájolását.
 
 A jelentésoldalak méretezési módjának módosításához használja a Kezdőlap **Oldal nézet** menüjét. Az elérhető lehetőségek a következők: **Laphoz igazítás** (alapértelmezett), **Szélességhez igazítás** és **Tényleges méret**.

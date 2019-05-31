@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 9eff90168ea221a269a8b5ded712645cca01cd9f
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54083967"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61265081"
 ---
 Ebben a cikkben megvizsgáljuk a **Power BI Desktop** néhány fejlettebb adatimportálási és adattisztítási módszerét. Ha az adatokat a **Lekérdezésszerkesztőben** már megfelelő formára hozta és bevitte a **Power BI Desktopba**, akkor a megtekintésükre többféle lehetősége is van. A Power BI Desktopnak három nézete van: **Jelentés** nézet, **Adat** nézet és **Kapcsolatok** nézet. Az egyes nézeteket a vászon bal felső oldalán található ikonjukra kattintva választhatja ki. A következő képen a **Jelentés** nézet van kiválasztva. Az aktív nézetet az ikonja mellett található sárga oszlop jelzi.
 

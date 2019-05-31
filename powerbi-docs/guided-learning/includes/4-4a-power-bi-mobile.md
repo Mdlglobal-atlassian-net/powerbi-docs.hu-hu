@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 3548f02e91c6ebc5a2ea985777cdaceda9661185
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256284"
+---
 Ha útközben is szeretné figyelemmel kísérni az adatait, használhatja a Power BI mobilalkalmazást iOS, Android és Windows rendszerű eszközökön.
 
 A Power BI alkalmazás használatakor először jelentkezzen be a fiókjába a Power BI szolgáltatás fiókadataival. Windows rendszerű mobileszközön (esetünkben egy táblagépen) a bejelentkezés az alábbihoz hasonlóan néz ki.

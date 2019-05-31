@@ -11,11 +11,11 @@ ms.date: 03/14/2018
 ms.author: willthom
 LocalizationGroup: Learn more
 ms.openlocfilehash: 9051ec4ea5bb9f60637e389bd77defb5590604c6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281275"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61289722"
 ---
 # <a name="power-bi-desktop-privacy"></a>A Power BI Desktop – adatvédelem
 

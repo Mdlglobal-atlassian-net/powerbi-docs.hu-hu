@@ -11,11 +11,11 @@ ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 01b0cdf70c985169d474a130ed4ad846ad708963
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284748"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61308840"
 ---
 # <a name="default-member-in-multidimensional-models-in-power-bi"></a>Alapértelmezett tag többdimenziós modellekben a Power BI-ban
 
@@ -36,7 +36,7 @@ Tegyük fel például, hogy egy *Pénznem* oszlop alapértelmezett tagja *USD-re
 * Ebben az esetben, ha meg van adva egy kártya, amely az *Összes értékesítést* mutatja, az érték az alapértelmezett tag alapján „USD-t” eredményez az értékesítésekben.
 * Ha a *Pénznem* oszlopot a szűrőkártya paneljére húzzuk, az *USD* lesz alapértelmezett értékként kijelölve. Az *Összes értékesítés* értéke változatlan marad, mivel az alapértelmezett tagot alkalmaztuk.
 * Azonban ha megszüntetjük az *USD* érték kijelölését a szűrőkártyán, a *Pénznem* alapértelmezett értéke üres lesz, az *Összes értékesítés* így minden pénznemet megjelenít.
-* Ennek következtében, ha kiválasztunk egy másik értéket a szűrőkártyán (mondjuk az *EURO* értéket) az alapértelmezett tag mellett, az *Összes értékesítés* a következő szűrőt eredményezi: *Pénznem IN {USD, EURO}*.
+* Ennek következtében, ha kiválasztunk egy másik értéket a szűrőkártyán (mondjuk az *EURO* értéket) az alapértelmezett tag mellett, az *Összes értékesítés* a következő szűrőt eredményezi: *Pénznem IN {USD, EURO}* .
 
 ## <a name="grouping-behavior"></a>A csoportosítás működése
 

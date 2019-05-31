@@ -1,20 +1,20 @@
 ---
 title: A Power BI-jelentések ütemezett frissítése a Power BI jelentéskészítő kiszolgálón
 description: A Power BI-jelentések különféle adatforrásokhoz csatlakozhatnak. Az adatok használatának módjától függően eltérő adatforrások érhetők el.
-author: markingmyname
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: maghan
-ms.openlocfilehash: 81bd3dc166a92f7be6fe9081f4b88feedc7514d3
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
-ms.translationtype: HT
+ms.author: mblythe
+ms.openlocfilehash: ca2c37a93652bf0f622c7154fe8438faf4c70ac1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394756"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051024"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>A Power BI-jelentések ütemezett frissítése a Power BI jelentéskészítő kiszolgálón
 A Power BI jelentések ütemezett frissítésének köszönhetően folyamatosan naprakészek maradnak a jelentések adatai.
@@ -34,6 +34,7 @@ A Power BI-jelentések ütemezett frissítésében számos összetevő vesz rés
 * Az adatmodellt egy Analysis Services-példányban tölti be a rendszer.
 * Bizonyos adatforrások esetében a Power Query adategyesítési motor létesít kapcsolatot az adatforrásokkal, illetve alakítja át az adatokat. Más típusú adatforrásokkal közvetlenül a Power BI jelentéskészítő kiszolgáló adatmodelljeit szolgáltató Analysis Services-példány létesíthet kapcsolatot.
 * Az új adatok az Analysis Services adatmodelljébe töltődnek be.
+* Horizontális felskálázás konfiguráció esetén az adatmodell replikálható csomópontok között.
 * Az Analysis Services feldolgozza az adatokat, és elvégzi a szükséges számításokat.
 
 A Power BI jelentéskészítő kiszolgáló működtet egy eseményvárakozási sort az ütemezett műveletek tárolására. Rendszeres időközönként lekérdezi a várakozási sort, hogy nincsenek-e új események. Alapértelmezés szerint 10 másodpercenként vizsgálja meg a várakozási sort. Az időköz az RSReportServer.config fájl **PollingInterval**, **IsNotificationService** és **IsEventService** konfigurációs beállításával módosítható. Az **IsDataModelRefreshService** is használható annak beállítására, hogy egy jelentéskészítő kiszolgáló feldolgozza-e az ütemezett eseményeket.

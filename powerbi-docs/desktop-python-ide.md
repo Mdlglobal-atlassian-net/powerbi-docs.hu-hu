@@ -11,11 +11,11 @@ ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 3e7169e1aa54db93488f0c55e701188667f70305
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289262"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61285936"
 ---
 # <a name="use-an-external-python-ide-with-power-bi"></a>Külső Python IDE használata a Power BI-jal
 A **Power BI Desktoppal** használhatja a külső Python IDE környezetet (integrált fejlesztőkörnyezetet) Python-szkriptek létrehozásához és pontosításához, majd ezután használhatja ezeket a szkripteket a Power BI-ban.

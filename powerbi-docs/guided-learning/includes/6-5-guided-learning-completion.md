@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a0510b9f9bc7303d7ed63a5a1c4c7ee9862d7c85
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256241"
+---
 Sikerült! **Gratulálunk!** Ön teljesítette a Power BI **Interaktív tanulás** oktatóanyagát. Ön végighaladt a teljes tanulási folyamaton, megismerte a Power BI alapvető elemeit, majd a szoftver funkcióit és alkotórészeit, majd pedig azt, hogy ezek hogyan működnek együtt.
 
 ![](media/6-5-guided-learning-completion/c0a0_2.png)

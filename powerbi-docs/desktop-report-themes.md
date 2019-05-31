@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 04/15/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f30ff44fbc4d99818661abc53cb99bb96cfde673
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 5f0f09c3f64795ca0530bbe5ec5cec09de6c7b53
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215735"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60989334"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Jelentéstémák használata a Power BI Desktopban
 A **Jelentéstémák** használatával egységes színtémát alkalmazhat az egész jelentésre, például a cég színeit, az évszaknak megfelelő színeket vagy bármely más színtémát. **Jelentéstémák** alkalmazásakor a jelentésben szereplő összes vizualizáció a kiválasztott téma színeit fogja használni. Ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be.
@@ -24,21 +24,7 @@ A **Jelentéstémák** használatával egységes színtémát alkalmazhat az eg�
 
 **Jelentéstéma** alkalmazásakor egy alapszintű szerkezettel rendelkező JSON-fájlra van szükség. Ezt a JSON-fájlt ezután importálhatja a Power BI Desktopba, majd alkalmazhatja a jelentésre. A JSON-fájl szerkezete és importálási folyamata egyszerű (utóbbi mindössze néhány kattintásból áll).
 
-A **Power BI Desktop** 2017. szeptemberi verziójában még több jelentéstéma-elemet határozhat meg JSON-fájl használatával. Ezen felül szinte az összes elemet testreszabhatja és szabványosíthatja. A testreszabást a JSON-fájlban kell végrehajtani, amelyet manuálisan módosíthat a **Formázás** panelen. A 2017. szeptemberi (és a későbbi) kiadások célja, hogy teljes körűen, egészen a legapróbb részletekig megszabhassa a jelentések megjelenését és működését.
-
-### <a name="enable-report-themes"></a>Jelentéstémák engedélyezése
-A **Power BI Desktop** 2018. augusztusi verziójától kezdve általánosan elérhető a jelentéstémák használata, és nem szükséges külön engedélyezni. 
-
-Ha a **Power BI Desktop** egy korábbi verzióját használja, előzetes funkcióként engedélyezheti a következő lépések végrehajtásával: 
-
-1. Válassza a **Fájl > Lehetőségek és beállítások > Beállítások > Előzetes verziójú funkciók** lehetőséget. 
-2. Ezután jelölje be a **Egyéni jelentéstémák** jelölőnégyzetét. 
-
-Miután ezt beállította, újra kell indítania a **Power BI Desktopot**.
-
-![Egyéni jelentéstémák](media/desktop-report-themes/report-themes_2.png)
-
-Javasoljuk, hogy mindig frissítsen a **Power BI Desktop** legújabb verziójára, amelyet a [Power BI Desktop beszerzése](desktop-get-the-desktop.md) hivatkozással érhet el. 
+Ezen felül szinte az összes elemet testreszabhatja és szabványosíthatja. A testreszabást a JSON-fájlban kell végrehajtani, amelyet manuálisan módosíthat a **Formázás** panelen. A cél, hogy hogyan a jelentések megjelenését, és úgy gondolja, a részletes teljes szabályozható.
 
 ## <a name="how-report-themes-work"></a>A jelentéstémák működése
 Power BI Desktop-jelentésre úgy alkalmazhat jelentéstémát, hogy kiválaszt egyet az elérhető beépített jelentéstémák közül, vagy egyéni témát importál.
@@ -113,7 +99,7 @@ A *St. Patrick’s Day.json* fájl szövege az alábbiakban látható, amely ala
 
 Itt beírhatja saját hexadecimális színkódját a kívánt színekhez.
 
-A **Power BI Desktop** 2017. szeptemberi verziójától kezdve a JSON-fájl lényegesen összetettebb is lehet. A JSON-fájlban csak azt a formázást kell megadnia, amelyet módosítani szeretne, és minden más, ami *nem* szerepel a JSON-fájlban, egyszerűen a Power BI alapértelmezett beállításai szerint fog megjelenni.
+A JSON-fájlban csak azt a formázást kell megadnia, amelyet módosítani szeretne, és minden más, ami *nem* szerepel a JSON-fájlban, egyszerűen a Power BI alapértelmezett beállításai szerint fog megjelenni.
 
 A JSON-fájlok létrehozásának számos előnye van. Megadhatja például, hogy minden diagram 12-es betűméretet használjon, vagy hogy egyes vizualizációk egy adott betűtípuscsaládot használjanak. Esetleg kikapcsolhatja az adatcíméket bizonyos diagramtípusok esetében.
 
