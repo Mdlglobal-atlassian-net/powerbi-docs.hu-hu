@@ -10,10 +10,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: a355f09984bc454f74dfab8ef137e29fd5aed110
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710399"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>5. lépés: Sorok hozzáadása egy Power BI-táblázathoz
@@ -311,7 +311,7 @@ Az alábbiakban megtalálja a [teljes kódlistát](#code).
     }
 ```
 
-Bár a fenti kódban azt adtuk meg, hogy **_//beszerezzük az első azonosítót_**, a megfelelő eljárás a név szerinti keresés az adathalmazban.
+Bár a fenti kódban azt adtuk meg, hogy ** _//beszerezzük az első azonosítót_** , a megfelelő eljárás a név szerinti keresés az adathalmazban.
 
 ## <a name="next-steps"></a>Következő lépések
 [Adatok elküldése egy Power BI-irányítópultba](walkthrough-push-data.md)  
