@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: d6cdcf47b42be4a9b541aa355efb3dd5e9667204
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514638"
 ---
 # <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Oktatóanyag: Weboldalakról származó adatok elemzése a Power BI Desktop használatával
@@ -127,7 +127,7 @@ Miután a lekérdezés betöltődött, a Power BI Desktop **Jelentés nézet** o
    ![Mezők ablaktábla](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
 >[!TIP]
 >Mindig visszatérhet a **Power Query-szerkesztőbe**, ha szerkeszteni vagy finomítani szeretné lekérdezését, amit a következőképpen tehet meg:
->- Válassza a **További beállítások** opciót jelző három pont (**...** ) lehetőséget az **Európa-kupa győztesei** mező mellett a **Mezők** ablaktáblán, majd válassza ki a **Lekérdezés szerkesztése** lehetőséget a legördülő menüből, vagy
+>- Válassza a **További beállítások** opciót jelző három pont ( **...** ) lehetőséget az **Európa-kupa győztesei** mező mellett a **Mezők** ablaktáblán, majd válassza ki a **Lekérdezés szerkesztése** lehetőséget a legördülő menüből, vagy
 >- Jelentés nézetben válassza ki a **Lekérdezések szerkesztése** > **Lekérdezés szerkesztése** lehetőséget a **Külső adatok** csoportban a **Kezdőlap** szalagfülön. 
 
 ## <a name="create-a-visualization"></a>Vizualizáció létrehozása
@@ -181,7 +181,7 @@ Ha a térképet tortadiagramra szeretné cserélni, jelölje ki a térképet, ma
 
 >[!TIP]
 >- Az **Adatszínek** formázási lehetőséggel „Németország” és „Nyugat-Németország” esetén megadhatja ugyanazt a színt. 
->- Ha szeretné csoportosítani a tortadiagramon a legtöbb győzelmet aratott országokat, válassza a három pont (**...** ) lehetőséget a vizualizáció jobb felső sarkában, majd válassza ki a **Rendezés az Évek száma szerint** lehetőséget a legördülő menüből. 
+>- Ha szeretné csoportosítani a tortadiagramon a legtöbb győzelmet aratott országokat, válassza a három pont ( **...** ) lehetőséget a vizualizáció jobb felső sarkában, majd válassza ki a **Rendezés az Évek száma szerint** lehetőséget a legördülő menüből. 
 
 A Power BI Desktop teljes körű szolgáltatást nyújt, lehetővé téve az adatok számos különféle adatforrásból való beszerzését, az elemzési igényeknek megfelelő átalakítását, valamint látványos és interaktív módon történő megjelenítését. Miután elkészült a jelentés, [felöltheti azt a Power BI-ba](desktop-upload-desktop-files.md), és létrehozhat azon alapuló irányítópultokat, amelyeket más Power BI-felhasználókkal meg is oszthat.
 

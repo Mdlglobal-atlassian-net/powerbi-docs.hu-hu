@@ -11,11 +11,11 @@ ms.date: 05/21/2018
 ms.author: v-thepet
 LocalizationGroup: Learn more
 ms.openlocfilehash: 94e40681d065591db008f8a9062d851e0bd83f61
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285760"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61368560"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Oktatóanyag: Excelből és OData-csatornáról származó értékesítési adatok összevonása
 
@@ -208,7 +208,7 @@ Először is hozzon létre egy mindkét lekérdezés mezőit használó halmozot
    
 2. Az egyes megrendelt termékek mennyiségének megtekintéséhez kattintson a **ProductName** (Terméknév) elemre a **Mezők** tábla **Termékek** területén. 
    
-3. A termékek megrendelésszám szerint csökkenő rangsorolásához kattintson a vizualizáció jobb felső sarkában lévő **További lehetőségek** három pontra (**...**), majd kattintson a **Sort By Quantity** (Rendezés mennyiség szerint) elemre.
+3. A termékek megrendelésszám szerint csökkenő rangsorolásához kattintson a vizualizáció jobb felső sarkában lévő **További lehetőségek** három pontra ( **...** ), majd kattintson a **Sort By Quantity** (Rendezés mennyiség szerint) elemre.
    
 4. Több terméknév megjelenítéséhez a sarkokban lévő fogópontokkal nagyíthatja fel a diagramot. 
    
