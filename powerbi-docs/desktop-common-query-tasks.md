@@ -11,10 +11,10 @@ ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: dc6aa42691c7caa2593b28e441f96985b1e3bcda
-ms.sourcegitcommit: b11e908650379913d00673215e3eaf25d712b122
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65239427"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Gyakori lekérdezési feladatok a Power BI Desktopban
@@ -48,7 +48,7 @@ Első lépésként válassza az **Excel** lehetőséget, és keresse meg, majd j
 
 A **Szerkesztés** gombbal módosíthatja, más néven *formázhatja* az adatokat, mielőtt betöltené azokat a Power BI Desktopba. A lekérdezések betöltés előtti szerkesztése akkor igazán hasznos, ha nagyobb adatkészletekkel dolgozik, amelyeket le szeretne szűkíteni a betöltés előtt. Pontosan ezt szeretnénk tenni, ezért kiválasztjuk a **Szerkesztés** gombot.
 
-Más típusú adatokhoz is ugyanilyen egyszerűen kapcsolódhat. Egy webes erőforráshoz is szeretnénk kapcsolódni. Válassza a **Lekérdezés \> Továbbiak...**, majd az **Egyéb \> Web** lehetőséget.
+Más típusú adatokhoz is ugyanilyen egyszerűen kapcsolódhat. Egy webes erőforráshoz is szeretnénk kapcsolódni. Válassza a **Lekérdezés \> Továbbiak...** , majd az **Egyéb \> Web** lehetőséget.
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata_other.png)
 
@@ -63,7 +63,7 @@ A többi adatkapcsolat is hasonlóan működik. Ha valamely adatkapcsolat létre
 A Power BI Desktop-adatkapcsolatok létrehozásával kapcsolatos lépésenkénti útmutatóért lásd a témakört, amely azzal foglalkozik, [hogyan kapcsolódhat adatokhoz a Power BI Desktopban](https://docs.microsoft.com/power-bi/desktop-connect-to-data).
 
 ## <a name="shape-and-combine-data"></a>Adatok formázása és egyesítése
-A Lekérdezésszerkesztővel egyszerűen formázhatja és egyesítheti az adatokat. Ebben a szakaszban bemutatunk néhány példát az adatok formázására. Az adatok formázásának és egyesítésének részletesebb bemutatójáért lásd: **[Adatok formázása és egyesítése a Power BI Desktoppal](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)**.
+A Lekérdezésszerkesztővel egyszerűen formázhatja és egyesítheti az adatokat. Ebben a szakaszban bemutatunk néhány példát az adatok formázására. Az adatok formázásának és egyesítésének részletesebb bemutatójáért lásd: **[Adatok formázása és egyesítése a Power BI Desktoppal](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)** .
 
 Az előző szakaszban két adatkészletet csatlakoztattunk, egy Excel-munkafüzetet és egy webes erőforrást. Miután betöltöttük az adatokat a Lekérdezésszerkesztőbe, a következőt látjuk, ha a webes erőforrás lekérdezése van kiválasztva (a Lekérdezésszerkesztő ablak bal oldalán, a **Lekérdezések** panelen felsorolt elérhető lekérdezések között).
 

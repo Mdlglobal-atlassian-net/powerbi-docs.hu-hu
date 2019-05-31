@@ -1,20 +1,20 @@
 ---
 title: A Kerberos konfigurálása Power BI-jelentések használatára
 description: Megtudhatja, hogyan konfigurálhatja a jelentéskészítő kiszolgálót Kerberos-hitelesítéssel a Power BI-jelentésekhez használt adatforrásokhoz egy elosztott környezetben.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: maghan
-ms.openlocfilehash: 5342f509fdd0705b2752aab3315a4968d610b681
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.author: maggies
+ms.openlocfilehash: 63bf5653ddf17097a44113324011951734f6d13c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223766"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770706"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>A Kerberos konfigurálása Power BI-jelentések használatára
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -191,7 +191,7 @@ A korlátozott delegálást protokollátvitellel konfiguráljuk. A korlátozott 
 2. Kattintson a **Delegálás** lapra.
 3. Válassza **A számítógépen csak a megadott szolgáltatások delegálhatók** lehetőséget.
 4. Válassza a **Bármely hitelesítési protokoll** lehetőséget.
-5. **A fiók az alábbi szolgáltatásokhoz használhat delegált hitelesítő adatokat:**: területen kattintson a **Hozzáadás** lehetőségre.
+5. **A fiók az alábbi szolgáltatásokhoz használhat delegált hitelesítő adatokat:** : területen kattintson a **Hozzáadás** lehetőségre.
 6. Az új párbeszédpanelen válassza a **Felhasználók és számítógépek** lehetőséget.
 7. Adja meg az Analysis Service szolgáltatásfiókját, majd kattintson az **OK** gombra.
 8. Válassza ki a létrehozott egyszerű szolgáltatásnevet. Ez az alábbi kifejezéssel kezdődik: `MSOLAPSvc.3`. Ha a teljes tartománynév és a NetBIOS egyszerű szolgáltatásnevét is hozzáadta, mindkettő ki lesz jelölve. Előfordulhat, hogy Ön csak az egyiket látja.

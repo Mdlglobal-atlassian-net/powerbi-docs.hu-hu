@@ -8,15 +8,15 @@ featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 10/25/2018
+ms.date: 05/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e2c9daf54ec18b53655043cd4a472674ee5123be
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f5eed81a5750bebb4df968a09cd1fcfd2aa069d1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295951"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710889"
 ---
 # <a name="slicers-in-power-bi"></a>Szeletelők a Power BI-ban
 A jelentést olvasók számára az összesítő értékesítési mérőszámok megjelenítése mellett az egyes körzeti vezetők teljesítményét és a különböző időkereteket is ki kell tudni mutatni. Létrehozhat különálló jelentéseket vagy összehasonlító diagramokat, illetve használhat szeletelőket. A szűrés másféle lehetőségét kínáló szeletelőkkel az adathalmaz a jelentés más vizualizációiban szereplő részére szűkíthető. 
@@ -42,7 +42,7 @@ A Power BI-szeletelőkre a következő korlátozások érvényesek:
 
 ## <a name="create-slicers"></a>Szeletelők létrehozása
 
-Új szeletelők létrehozásához válassza a szeletelő ikont, és jelölje ki a szűréshez az adatmezőt (vagy az egérrel húzza azt a **Vizualizációs elemek** ablaktábla **Mezők** szövegdobozába), vagy előbb vizualizáció létrehozásához jelölje ki vagy húzza az adatmezőt, majd vizualizáció szeletelővé való átalakításához válassza a szeletelő ikont. Különböző adattípusok különböző típusú szeletelőket hoznak létre, különböző hatásokkal és lehetőségekkel. 
+Új szeletelő létrehozásához válassza a szeletelő ikont, majd a szűrés az adatmező (vagy húzza azt a **szűrők** párbeszédpanel a **Vizualizációk** ablaktáblán), vagy válassza ki, vagy húzza az adatmezőt először a Hozzon létre egy vizualizációt, és válassza ki a szeletelő ikonra a Vizualizáció szeletelővé. Különböző adattípusok különböző típusú szeletelőket hoznak létre, különböző hatásokkal és lehetőségekkel. 
 
 Amikor először módosítja a jelentést, aktiválódik a **Visszaállítás alapértelmezettre** gomb. Ez arra emlékeztet, hogy módosította az eredeti jelentésbeállításokat. Ha kilép a jelentésből, a rendszer menti (megőrzi) a módosítást. Amikor visszatér a jelentéshez, nem kell újból szeletelnie a jelentést.  Ha azonban szeretné visszaállítani a jelentést a készítő alapértelmezett beállításaira, válassza a **Visszaállítás alapértelmezettre** gombot a felső menüsoron.
 
@@ -51,26 +51,30 @@ Amikor először módosítja a jelentést, aktiválódik a **Visszaállítás al
 > [!NOTE]
 > Ha a **Visszaállítás alapértelmezettre** gomb letiltva marad, az vagy azt jelenti, hogy a jelentés készítője letiltotta ezt a funkciót a jelentés esetében, vagy azt, hogy a jelentés egy egyéni vizualizációt tartalmaz. A magyarázatot megtalálhatja, ha egyszerűen a gombra mutat, és elolvassa az elemleírást. 
 
-**Új szeletelő létrehozása körzeti vezető szerint szűrt adatok létrehozásához**
+**Új szeletelő létrehozása körzeti vezető szerint szűrt adatok**
 
-1. A Power BI Desktopban nyissa meg a [Kiskereskedelmi elemzési mintát](../sample-retail-analysis.md). (A Power BI szolgáltatásban a bal felső részen válassza a**Jelentés szerkesztése** lehetőséget.)
-2. Új szeletelő létrehozásához az **Áttekintés** lapon (miközben a vásznon semmi ne legyen kiválasztva), a **Vizualizációk** ablaktáblán jelölje be a **Szeletelő** ikont ![szeletelő ikon](media/power-bi-visualization-slicers/slicer-icon.png). 
-3. Jelölje be az új szeletelőt, majd a szeletelő adatokkal való feltöltéséhez a **Mezők** ablaktábla **Körzet** részében válassza a **Körzeti vezető** lehetőséget. Az új szeletelő névlista formájában jelenik meg, a nevek előtt jelölőnégyzetekkel. 
+1. A Power BI Desktopban vagy a Power BI szolgáltatásban, nyissa meg a [kiskereskedelmi elemzési minta](../sample-retail-analysis.md). (A Power BI szolgáltatásban a bal felső részen válassza a**Jelentés szerkesztése** lehetőséget.)
+2. Az Áttekintés oldalon semmi ne legyen kiválasztva a vásznon válassza ki a **szeletelő** ikon ![szeletelő ikon](media/power-bi-visualization-slicers/slicer-icon.png) a a **Vizualizációk** ablaktáblán új szeletelő létrehozása. 
+3. Az új szeletelőt, a mezők panelen válassza ki a **kerület** > **DM** a szeletelő feltöltéséhez. Az új szeletelő névlista formájában jelenik meg, a nevek előtt jelölőnégyzetekkel. 
     
-    ![új szeletelő](media/power-bi-visualization-slicers/2-slicer.png)
+    ![új szeletelő](media/power-bi-visualization-slicers/power-bi-new-slicer.png)
     
 4. A szeletelő számára a szeletelő és a vásznon levő egyéb elemek átméretezésével, illetve elmozdításával biztosíthat helyet. Vegye figyelembe, hogy a szeletelő elemeit a rendszer levágja, ha a szeletelőt túl kicsire méretezi át. 
-5. Jelöljön be neveket a szeletelőn, és figyelje meg a hatást az oldalon levő más vizualizációkon. A nevek bejelölésének megszüntetéséhez kattintson ismét a jelölőnégyzetükre; egynél több név bejelöléséhez tartsa lenyomva a **Ctrl** billentyűt. Az összes név kiválasztása ugyanazzal az eredménnyel jár, mintha egyet sem választana ki. 
+5. Jelöljön be neveket a szeletelőn, és figyelje meg a hatást az oldalon levő más vizualizációkon. A nevek bejelölésének megszüntetéséhez kattintson ismét a jelölőnégyzetükre; egynél több név bejelöléséhez tartsa lenyomva a **Ctrl** billentyűt. Az összes név kiválasztása ugyanazzal az eredménnyel jár, mintha egyet sem választana ki. \
 
+6. Azt is megteheti válassza a festőhenger ikont a szeletelő formázásához. Az összes itt írja le – így kísérletezhet, és Ön működésének szeletelő létrehozása egyszerűen túl sok lehetőség van. Az alábbi példákban az első szeletelő megtakarítása érdekében legördülő lista lett konvertálva, és hozzá lett adva a "Az összes kijelölése" beállítással.  A második szeletelő formázása a színeket, betűtípusokat, méretűek, így csak egyetlen kijelölést.
+
+   ![új szeletelő](media/power-bi-visualization-slicers/power-bi-filter-examples.png)
 >[!TIP]
->Alapértelmezés szerint a szeletelő listaelemei növekvő ábécésorrendbe rendeződnek. A rendezés csökkenő irányba való módosításához kattintson a szeletelő jobb felső sarkában levő három pontra (**...**), majd a legördülő listából válassza a **Rendezés szempontja: Kerületi menedzser** lehetőséget. 
+>Alapértelmezés szerint a szeletelő listaelemei növekvő ábécésorrendbe rendeződnek. A rendezés csökkenő irányba való módosításához kattintson a szeletelő jobb felső sarkában levő három pontra ( **...** ), majd a legördülő listából válassza a **Rendezés szempontja: Kerületi menedzser** lehetőséget. 
 
 **Új szeletelő létrehozása dátumtartomány szerint szűrt adatok létrehozásához**
 
-1. Új vizualizáció létrehozásához, miközben a vásznon semmi ne legyen kiválasztva, a Mezők ablaktáblán nyissa le az **Idő** legördülő listát, majd húzza a **Hónap** (illetve a Power BI szolgáltatásban a **Dátum**) elemet a Vizualizációk ablaktáblában levő **Értékek** dobozba.
+1. Semmi ne legyen kiválasztva a vásznon, legördülő lista **dátum** a mezők panelen, és húzza **dátum** , a **értékek** mezőben hozzon létre egy új vizualizációt a Vizualizációk ablaktáblán.
 2. A vizualizáció szeletelővé való átalakításához, miután kijelölte az új vizualizációt, a Vizualizációk ablaktáblán válassza a **Szeletelő** ikont. Ez a szeletelő egy csúszkavezérlő, amely fel van töltve a dátumtartománnyal.
     
-    ![új tartomány szeletelő](media/power-bi-visualization-slicers/2a-date-slicer.png)
+    ![új tartomány szeletelő](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
+
     
 4. A szeletelő számára a szeletelő és a vásznon levő egyéb elemek átméretezésével, illetve elmozdításával biztosíthat helyet. Vegye figyelembe, hogy a szeletelő méretének módosításával a csúszka is átméreteződik, de ha a szeletelőt túl kicsire méretezi, akkor a csúszka eltűnik, és a dátumokat a rendszer levágja. 
 4. A csúszkával különféle dátumtartományokat jelölhet ki, illetve egy dátummezőt kiválasztva értéket is megadhat vagy felugró naptárt is használhat a pontosabb kijelöléshez. Figyelje meg a hatást a lapon lévő többi vizualizáción.
@@ -78,8 +82,11 @@ Amikor először módosítja a jelentést, aktiválódik a **Visszaállítás al
     >[!NOTE]
     >A numerikus és a dátum/idő adattípusok alapértelmezés szerint tartomány típusú csúszka szeletelőt eredményeznek. A Power BI 2018. februári frissítésétől kezdődően az egész szám adattípusú tartománycsúszkák már egész számértékekhez igazodnak, a tizedesjegyek megjelenítése helyett. 
 
->[!TIP]
->Bár a **Hónap** adatmező alapértelmezés szerint egy **Között** tartománycsúszka típusú szeletelőt állít elő, ez más szeletelőtípusokra és kijelölési lehetőségekre módosítható. A szeletelő típusának módosításához a szeletelő kijelölt állapota mellett mutasson az egérmutatóval a szeletelő jobb felső részére, nyissa le a megjelenő legördülő listát, majd válasszon egy másik lehetőséget, például a **Lista** vagy az **Előtt** elemet. Figyelje meg a szeletelő megjelenésének és a választási lehetőségeknek a módosulását. 
+
+5. Módosítsa a mező értékét a **dátum** való **MonthIndex**.  Ez egy **között** tartomány típusú csúszka szeletelőt alapértelmezés szerint, de a más szeletelőtípusokra és kijelölési lehetőségekre módosítható. A szeletelő típusának módosításához a szeletelő kijelölt állapota mellett mutasson az egérmutatóval a szeletelő jobb felső részére, nyissa le a megjelenő legördülő listát, majd válasszon egy másik lehetőséget, például a **Lista** vagy az **Előtt** elemet. Figyelje meg a szeletelő megjelenésének és a választási lehetőségeknek a módosulását. 
+ 
+    ![új tartomány szeletelő](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
+
 
 A dátum és numerikus típusú szeletelők létrehozásáról és használatáról a következő videóból vagy [A numerikustartomány-szeletelő használata a Power BI Desktopban](../desktop-slicer-numeric-range.md) című cikkből tájékozódhat bővebben.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 

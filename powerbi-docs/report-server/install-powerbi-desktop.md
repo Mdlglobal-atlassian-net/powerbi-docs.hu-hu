@@ -1,24 +1,22 @@
 ---
 title: A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
 description: Tudnivalók a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítéséről
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/24/2019
-ms.openlocfilehash: 7abf679c663f9c71c277c74960fe65c9aee6568d
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 54713c9c978554521d68aeb7b4c25d681ddb3d69
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324967"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187444"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
-
-Tudnivalók a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítéséről.
 
 Ha a Power BI jelentéskészítő kiszolgálóhoz szeretne Power BI-jelentéseket létrehozni, akkor le kell tölteni és telepíteni a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopot. Ez különbözik a Power BI szolgáltatáshoz használt Power BI Desktop-kiadástól. A Power BI szolgáltatáshoz készült Power BI Desktopban például olyan előzetes funkciók is megtalálhatók, amelyek a kiadásukig nem érhetők el a Power BI jelentéskészítő kiszolgálóban. Ha ezt a verziót használja, akkor a jelentéskészítő kiszolgáló a jelentések és a modell ismert verzióját használhatja. 
 
@@ -32,7 +30,7 @@ Ha ellenőrizné, hogy a Power BI jelentéskészítő kiszolgálóhoz optimaliz�
 
     ![A Power BI Desktop letöltése a webportálról](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Vagy másik lehetőségként a Microsoft letöltőközpontban válassza közvetlenül a Power BI jelentéskészítő kiszolgálóra (2019. január) optimalizált [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2055039) hivatkozást.
+    Vagy lépjen közvetlenül [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimalizált Power BI jelentéskészítő kiszolgáló – május 2019) a Microsoft Download Center.
 
 2. A letöltőközpontlapon kattintson a **Letöltés** gombra.
 
@@ -42,16 +40,16 @@ Ha ellenőrizné, hogy a Power BI jelentéskészítő kiszolgálóhoz optimaliz�
 
     - **PBIDesktopRS_x64.msi** (64 bites verzió).
 
-1. A telepítő letöltése után indítsa el a Power BI Desktop (2019. január) telepítővarázslóját.
+1. A telepítő letöltése után a Power BI Desktop (2019. május) telepítővarázsló futtatásához.
 
-2. A telepítés végén kattintson a **Power BI Desktop azonnali indítása** lehetőségre.
+2. Válassza ki a telepítés végén **indítsa el a Power BI Desktop**.
 
     A folyamat automatikusan elindul, és máris hozzákezdhet.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Annak ellenőrzése, hogy a megfelelő verziót használja-e
 Egyszerűen ellenőrizheti, hogy a megfelelő Power BI Desktopot használja-e: A Power BI Desktopban ellenőrizze az indítási képernyőt vagy a címsort. A címsor a kiadás hónapját és évét jelzi. Emellett a Power BI logószínei is fordítva jelennek meg: fekete háttéren sárga, és nem sárga háttéren fekete.
 
-![A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop címsora](media/install-powerbi-desktop/power-bi-report-server-desktop-jan-2019.png)
+![A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop címsora](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2019.png)
 
 A Power BI szolgáltatás Power BI Desktop verziójának címsorában nem szerepel a hónap és az év.
 
@@ -62,7 +60,7 @@ Ha először a Power BI Desktopot telepítette, majd a Power BI jelentéskészí
 
 Azt is megteheti, hogy először megnyitja a Power BI Desktop használni kívánt verzióját, majd megnyitja a fájlt a Power BI Desktopból.
 
-Ha egy Power BI-jelentést szerkeszt a Power BI jelentéskészítő kiszolgálóból vagy új Power BI-jelentést hoz létre a webes portálról, mindig a Power BI Desktop megfelelő verziója nyílik meg.
+A Power BI jelentéskészítő kiszolgálón egy Power BI-jelentés szerkesztése vagy új Power BI-jelentés létrehozása a webes portálról, mindig megnyitja a Power BI Desktop megfelelő verziója.
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
@@ -70,11 +68,7 @@ A Power BI jelentéskészítő kiszolgálón, a Power BI szolgáltatásban (http
 
 ### <a name="in-a-browser"></a>Böngészőben
 
-A Power BI jelentéskészítő kiszolgálón tárolt jelentések minden vizualizációt támogatnak, köztük:
-
-* Egyéni vizualizációk
-
-A Power BI jelentéskészítő kiszolgálón tárolt jelentések nem támogatják az alábbiakat:
+A Power BI jelentéskészítő kiszolgálón tárolt jelentések szinte minden vizualizációt támogatnak, beleértve az egyéni vizualizációkat. A Power BI jelentéskészítő kiszolgálón tárolt jelentések nem támogatják az alábbiakat:
 
 * R vizualizációk
 * ArcGIS-térképek
@@ -95,13 +89,13 @@ A Power BI jelentéskészítő kiszolgálón tárolt jelentések nem támogatjá
 * ArcGIS-térképek
 * Egyéni vizualizációk
 * Útkövetési eszközök
-* Geofiltering vagy vonalkódok
+* A földrajzi szűrés vagy sáv kódot
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop a Power BI jelentéskészítő kiszolgáló korábbi verzióihoz
 
-Ha a jelentéskészítő kiszolgálója korábbi verziójú, akkor a Power BI Desktop vonatkozó verzióját kell használnia. Itt található az előző verzió.
+Ha a jelentéskészítő kiszolgálója korábbi verziójú, akkor a Power BI Desktop vonatkozó verzióját kell használnia. Íme a hivatkozásra kattintva töltse le az előző verzióját.
 
-- [A Power BI jelentéskészítő kiszolgálóra (2018. augusztus) optimalizált](https://www.microsoft.com/download/details.aspx?id=57271) Microsoft Power BI Desktop
+- A Microsoft Power BI Desktop ([optimalizált Power BI jelentéskészítő kiszolgáló – január 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
 
 ## <a name="next-steps"></a>Következő lépések
 

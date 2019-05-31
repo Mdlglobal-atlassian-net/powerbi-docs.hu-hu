@@ -1,5 +1,5 @@
 ---
-title: 'Oktatóanyag: Csatlakozás GitHub-mintához a Power BI segítségével'
+title: 'Oktatóanyag: Csatlakozás egy GitHub-adattárat a Power bi-JAL'
 description: Ebben az oktatóanyagban valódi, GitHub szolgáltatásbeli adatokhoz csatlakozhat a Power BI segítségével, és automatikusan hozhat létre Power BI-irányítópultokat és -jelentéseket.
 author: maggiesMSFT
 manager: kfile
@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 05/17/2018
+ms.date: 04/19/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8f44356f79b8a77ef06fe464671dbbaaaa4187e9
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 3aeb1fc16ae200399125a2366a8993d45aad34c4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215577"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64578631"
 ---
-# <a name="tutorial-connect-to-a-github-sample-with-power-bi"></a>Oktatóanyag: Csatlakozás GitHub-mintához a Power BI segítségével
-Ebben az oktatóanyagban valódi, GitHub szolgáltatásbeli adatokhoz csatlakozhat a Power BI segítségével, és automatikusan hozhat létre Power BI-irányítópultokat és -jelentéseket. A Power BI nyilvános adattárához (más néven *tárházához*) fog csatlakozni, hogy választ kapjon a következő kérdésekre: Hány közreműködő dolgozik a nyilvános Power BI-tartalmon? kik a fő közreműködők, a hét mely napján történik a legtöbb közreműködés, és így tovább. 
+# <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Oktatóanyag: Csatlakozás egy GitHub-adattárat a Power bi-JAL
+Ebben az oktatóanyagban valódi, GitHub szolgáltatásbeli adatokhoz csatlakozhat a Power BI segítségével, és automatikusan hozhat létre Power BI-irányítópultokat és -jelentéseket. Csatlakozás a Power BI tartalom nyilvános adattár (más néven egy *tárház*), és tekintse meg hasonló kérdések: Hány közreműködő dolgozik a nyilvános Power BI-tartalmon? kik a fő közreműködők, a hét mely napján történik a legtöbb közreműködés, És további kérdések. 
 
 ![GitHub-jelentés a Power BI szolgáltatásban](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-punch-card.png)
 
@@ -40,76 +40,90 @@ Ha még nem regisztrált a Power BI-ra, a kezdés előtt [hozzon létre egy ingy
 
 Az oktatóanyag követéséhez létre kell hoznia egy GitHub-fiókot, ha nincs még fiókja. 
 
-- Hozzon létre egy [GitHub-fiókot](https://docs.microsoft.com/contribute/get-started-setup-github)
+- Regisztráljon egy [GitHub-fiók](https://docs.microsoft.com/contribute/get-started-setup-github).
 
 
 ## <a name="how-to-connect"></a>Csatlakozás
-1. Jelentkezzen be a Power BI szolgáltatásba (http://powerbi.com). 
+1. Jelentkezzen be a Power BI szolgáltatásba (https://app.powerbi.com). 
 2. A bal oldali navigációs panelen válassza az **Alkalmazások** ikont, majd az **Alkalmazások letöltése** lehetőséget.
    
    ![Power BI – Alkalmazások letöltése](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
-3. Válassza az **Alkalmazások** lehetőséget, írja be a **github** szöveget a keresőmezőbe, majd válassza a **Letöltés most** gombot.
+3. Válassza ki **alkalmazások**, típus **GitHub** kifejezést a keresőmezőbe > **Letöltés most**.
    
-   ![Power BI – a GitHub alkalmazás letöltése](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-get-it-now.png) 
+   ![Power BI – a GitHub alkalmazás letöltése](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-app-source.png) 
 
-4. Adja meg az adattár nevét és tulajdonosát. Az adattár URL-címe https://github.com/MicrosoftDocs/powerbi-docs, az **Adattár tulajdonosa** a **MicrosoftDocs**, az **Adattár** neve pedig **powerbi-docs**. 
+4. A **a Power BI-alkalmazás telepítése?** kiválasztása **telepítése**.
+5. A **készen áll az új alkalmazás**válassza **Ugrás az appra**.
+6. A **az új alkalmazás használatának első lépései**válassza **adatok**.
+
+    ![Első lépések az új alkalmazással](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
+
+7. Adja meg az adattár nevét és tulajdonosát. Az adattár URL-címe https://github.com/MicrosoftDocs/powerbi-docs, az **Adattár tulajdonosa** a **MicrosoftDocs**, az **Adattár** neve pedig **powerbi-docs**. 
    
-    ![Power BI – GitHub adattár neve](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-repo-name.png)
+    ![Power BI – GitHub adattár neve](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
 
 5. Adja meg a GitHub-fiókja hitelesítő adatait. Előfordulhat, hogy a Power BI kihagyja ezt a lépést, ha korábban már bejelentkezett a GitHubba a böngészőjében. 
 
-6. A **Hitelesítési módszer** beállításánál válassza az **oAuth2** \> **Bejelentkezés** lehetőséget.
+6. A **hitelesítési módszer**, tartsa **oAuth2** kiválasztott \> **bejelentkezés**.
 
 7. Kövesse a GitHub-hitelesítés lépéseit. Engedélyezze a Power BI-nak a GitHub-adatok elérését.
    
    A Power BI ezután már képes elérni a GitHub szolgáltatást az adatok beolvasásához.  Az adatok naponta egyszer frissülnek.
 
-8. Miután a Power BI importálta az adatokat, megjelenik az új GitHub csempe. 
+8. Miután a Power BI importálta az adatokat, láthatja a tartalmát az új GitHub-munkaterületet. 
+9. A bal oldali navigációs sávon válassza ki a munkaterület neve melletti nyílra. Megjelenik a munkaterület tartalmaz egy irányítópultot és jelentést. 
+
+    ![A bal oldali navigációs ablaktáblán található alkalmazás](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+
+10. Válassza ki az irányítópult neve melletti három pontra (...) > **átnevezése** > típus **GitHub-irányítópult**.
  
-   ![Power BI – GitHub csempe](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tile.png) 
+    ![Power BI – GitHub csempe](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 
 8. Válassza a globális navigációs ikont a bal oldali navigációs panel kis méretűre állításához, hogy több szabad hely legyen a képernyőn.
 
     ![Globális navigációs ikon](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
-10. Válassza a 8. lépésben létrehozott GitHub csempét. 
+10. Válassza ki a GitHub-irányítópult.
     
-    Ekkor megnyílik a GitHub-irányítópult. Ezek élő adatok, ezért az Ön által látott értékek eltérhetnek az itt szemléltetettől.
+    A GitHub-irányítópult élő adatokat tartalmaz, így láthatja a értékei eltérhetnek.
 
-    ![GitHub-irányítópult a Power BI-ban](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-dashboard.png)
+    ![GitHub-irányítópult a Power BI-ban](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
 
     
 
 ## <a name="ask-a-question"></a>Kérdés feltevése
 
-11. Vigye a kurzort a **Tegyen fel kérdést az adataival kapcsolatban** területre, majd válassza a **pull requests** (lekéréses kérelmek) lehetőséget. 
+1. Helyezze a kurzort **tegyen fel kérdést az adataival kapcsolatban**. Power bi-ban **kérdések az első lépéseket**. 
 
-    ![Power BI – Tegyen fel kérdést az adataival kapcsolatban](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-ask-question.png)
-
-12. Írja be a **by month** (hónap szerint) szöveget.
+1. Válassza ki **hány felhasználó vannak-e**.
  
-    ![Lekéréses kérelmek hónap szerint](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-ask-question-by-month.png)
+    ![Hány felhasználó vannak-e](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-users.png)
 
-     A Power BI ekkor létrehoz egy sávdiagramot, melyen látható a lekéréses kérelmek száma hónap szerint.
+13. A kettő között **hány** és **felhasználók vannak-e**, típus **lekéréses kérelmek /** . 
 
-13. Válassza a **Kilépés a Q&A részből** lehetőséget.
+     A Power BI létrehoz egy főre jutó pull-kérelmek számát megjelenítő oszlopdiagram.
+
+    ![Felhasználónként hány lekéréses kérelmek vannak-e](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-prs.png)
+
+
+13. Válassza ki a PIN-kódot, majd rögzítheti az irányítópulton **Kilépés a Q & A**.
 
 ## <a name="view-the-github-report"></a>GitHub-jelentés megtekintése 
 
-1. Válassza a GitHub-irányítópulton a kombinált **Pull Requests by Month** (Lekéréses kérelmek hónapok szerint) oszlop- és sávdiagramot a vonatkozó jelentés megnyitásához.
+1. A GitHub-irányítópulton, válassza ki az oszlopdiagram **lekéréses kérelmek hónap szerint** nyissa meg a kapcsolódó jelentést.
 
-    ![Lekéréses kérelmek hónapok szerint kombinált diagram](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-pull-requests-combo-chart.png)
+    ![Lekéréses kérelmek hónap oszlopdiagram szerint](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-column-chart.png)
 
-2. Válasszon egy felhasználónevet a **Total pull requests by user** (Lekéréses kérelmek összesen felhasználónként) diagramban, és láthatja, az alábbi képen szemléltetett módon, hogy az adott felhasználóhoz márciusban az átlagosnál több óra tartozik.
+2. Válassza ki a felhasználót a a **lekéréses kérelmek összesen felhasználó** diagram. Ebben a példában látható a órában a legtöbb februárban volt.
 
-    ![Power BI – Kiemelés a GitHub-jelentésben](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-report-highlight.png)
+    ![Power BI – Kiemelés a GitHub-jelentésben](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-cross-filter-total-prs.png)
 
 3. Válassza a **Punch Card** (Pontgyűjtés) fület a jelentés következő lapjának megtekintéséhez. 
  
     ![Power BI – GitHub-jelentés Punch Card lapja](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tues-3pm.png)
 
-    Úgy tűnik, hogy kedd 15 óra az a leggyakoribb nap és időpont, amikor a felhasználók *véglegesítik* a munkájukat, azaz beadják az általuk végzett módosításokat.
+    Kártevőnek "frissítő kedd" du. 3:, a legtöbb közös idő és a hét napját *véglegesítések*, ha a személyek ellenőrizze a munkájukat.
 
 ## <a name="clean-up-resources"></a>Erőforrások felszabadítása
 

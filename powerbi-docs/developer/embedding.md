@@ -1,8 +1,8 @@
 ---
 title: Beágyazott analitika a Power BI-jal
 description: A Power BI az irányítópultokhoz és jelentésekhez használható analitikák alkalmazásokba való beágyazását lehetővé tevő API-kat kínál. Útmutató a Power BI-jal PaaS- vagy SaaS-környezetben végzett beágyazáshoz, beágyazott analitikai szoftver, beágyazott analitikai eszközök vagy beágyazott üzleti intelligencia eszközök használatával.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -16,73 +16,78 @@ helpviewer_keywords:
 - user owns data
 - Power BI APIs
 ms.custom: seodec18
-ms.date: 02/05/2019
-ms.openlocfilehash: 0a4b43bd02697472a0bbdf16171ba655fc014dbc
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
-ms.translationtype: HT
+ms.date: 05/15/2019
+ms.openlocfilehash: a212691f2af877e3b86e021a4f48644f4fa6e8e3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872708"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051065"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Beágyazott analitika a Power BI-jal
 
-A Power BI szolgáltatás (SaaS) és a Power BI Embedded szolgáltatás az Azure-ban (PaaS) API-kkal is rendelkezik az irányítópultok és jelentések beágyazásához. Ez a szolgáltatás azt jelenti, hogy a tartalmak beágyazásakor hozzáférhet a képességek készletéhez, valamint a Power BI legújabb funkcióihoz – például irányítópultokhoz, átjárókhoz és alkalmazás-munkaterületekhez.
+A Power BI szolgáltatás (SaaS) és a Power BI Embedded szolgáltatás az Azure-ban (PaaS) API-kkal is rendelkezik az irányítópultok és jelentések beágyazásához. Tartalmak beágyazása során is elérheti a Power BI legújabb szolgáltatásai például irányítópultokhoz, átjárókhoz és alkalmazás-munkaterületek.
 
 A [beágyazást előkészítő eszközzel](https://aka.ms/embedsetup) gyorsan megteheti az első lépéseket és letölthet egy mintaalkalmazást.
 
 Válassza ki az Ön számára megfelelő megoldást:
 
-* Amennyiben [a cég számára végzi a beágyazást](embedding.md#embedding-for-your-organization), kibővítheti a Power BI szolgáltatást. Futtassa a [Beágyazás a cég számára](https://aka.ms/embedsetup/UserOwnsData) megoldást.
-* Amennyiben az [ügyfelei számára végez beágyazást](embedding.md#embedding-for-your-customers), irányítópultokat és jelentéseket ágyazhat be olyan felhasználók számára, akik nem rendelkeznek Power BI-fiókkal. Futtassa a [Beágyazás az ügyfelek számára](https://aka.ms/embedsetup/AppOwnsData) megoldást.
+* Amennyiben [a cég számára végzi a beágyazást](embedding.md#embedding-for-your-organization), kibővítheti a Power BI szolgáltatást. Ehhez megvalósítása a [a szervezet beágyazási](https://aka.ms/embedsetup/UserOwnsData) megoldás.
+* [Az ügyfelek számára végez beágyazást](embedding.md#embedding-for-your-customers) lehetővé teszi, hogy a beágyazott irányítópultok és jelentések, a felhasználók számára, akik nem rendelkeznek Power BI-fiókkal. Ehhez megvalósítása a [beágyazási az ügyfelek számára](https://aka.ms/embedsetup/AppOwnsData) megoldás.
 
 ![PBIE-minta](media/what-can-you-do/what-can-you-do-02.png)
 
-## <a name="using-apis"></a>API-k használata
+## <a name="use-apis"></a>API-k használata
 
-A Power BI-tartalmak beágyazása során két fő forgatókönyv képzelhető el. Egyrészt a cégen belüli felhasználók számára történő beágyazás (a felhasználóknak rendelkezniük kell Power BI-licenccel), másrészt Power BI-licencet nem kívánó beágyazás más felhasználók és ügyfelek számára. A Power BI REST API mindkét forgatókönyvet támogatja.
+A Power BI-tartalmak beágyazásához két fő forgatókönyv közül választhat:
+- (A Power BI-licenccel rendelkező) a szervezet felhasználói számára ágyaz be. 
+ 
+- A felhasználók és a Power BI-licenceket nem igénylő ügyfelek számára végez beágyazást. 
 
-Power BI-licenccel nem rendelkezők számára ugyanazt az API-t használva ágyazhat be irányítópultokat és jelentéseket egyéni alkalmazásokba függetlenül attól, hogy azt a cége vagy az ügyfele számára készíti. Az ügyfelek így megtekinthetik az alkalmazás által kezelt adatokat. A cégen belüli Power BI-felhasználók ezen kívül *saját adataikat* is megtekinthetik közvetlenül a Power BI-ban vagy a beágyazott alkalmazásban. A beágyazáshoz teljes körűen igénybe veheti a JavaScript és a REST API-k lehetőségeit.
+A [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) mindkét forgatókönyvet támogatja.
 
-Ha látni kívánja, hogyan működik a beágyazás tekintse meg a [JavaScript beágyazását szemléltető példát](https://microsoft.github.io/PowerBI-JavaScript/demo/).
+Power BI-licenccel nem rendelkezők számára ugyanazt az API-t használva ágyazhat be irányítópultokat és jelentéseket egyéni alkalmazásokba függetlenül attól, hogy azt a cége vagy az ügyfele számára készíti. Az ügyfelek így megtekinthetik az alkalmazás felügyelt adatokat. Ezenkívül a Power BI-felhasználók a szervezet rendelkezik is megtekinthetik *adataikat* közvetlenül a Power bi-ban vagy a beágyazott alkalmazás a környezetben. A beágyazáshoz teljes körűen igénybe veheti a JavaScript és a REST API-k lehetőségeit.
+
+Hogyan működik a beágyazás megismeréséhez tekintse meg a [JavaScript beágyazási minta](https://microsoft.github.io/PowerBI-JavaScript/demo/).
 
 ## <a name="embedding-for-your-organization"></a>Beágyazás a cég számára
 
-Amennyiben **a cég számára végzi a beágyazást**, kibővítheti a Power BI szolgáltatást. A vállalati beágyazáshoz az alkalmazás felhasználóinak be kell jelentkezniük a Power BI szolgáltatásba, amikor meg szeretnék tekinteni a tartalmaikat. A bejelentkező vállalati felhasználóknak csak azokhoz az irányítópultokhoz és jelentésekhez lesz hozzáférésük, amelyeknek ők a tulajdonosai, vagy amelyeket a Power BI szolgáltatásban megosztottak velük.
+Amennyiben **a cég számára végzi a beágyazást**, kibővítheti a Power BI szolgáltatást. A beágyazás megköveteli az alkalmazás felhasználók bejelentkezési tartalmak megtekintéséhez Power BI szolgáltatásba. A bejelentkező vállalati felhasználóknak csak azokhoz az irányítópultokhoz és jelentésekhez lesz hozzáférésük, amelyeknek ők a tulajdonosai, vagy amelyeket a Power BI szolgáltatásban megosztottak velük.
 
-*Példák a cégen belüli beágyazásra: belső alkalmazások, például [SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Microsoft Teams-integráció](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) (ehhez rendszergazdai jogosultsággal kell rendelkeznie), és [Microsoft Dynamics](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard).*
+Szervezet beágyazási ilyenek például a belső alkalmazások például [SharePoint online-hoz](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [(rendszergazdai jogosultsággal kell rendelkeznie) Microsoft Teams-integráció](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), és [Microsoft Dynamics](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard).
 
-Amennyiben a vállalata számára végez beágyazást, tekintse át a következőket:
-
-* [Jelentés integrálása egy alkalmazásba](embed-sample-for-your-organization.md)
+Ágyazhat be a szervezet számára, lásd: [oktatóanyag: A Power BI-tartalom beágyazása egy alkalmazásba, a szervezet](embed-sample-for-your-organization.md).
 
 Amikor Power BI-felhasználók számára végez beágyazást, az önkiszolgáló lehetőségek (pl. a szerkesztés, mentés stb.) a [JavaScript API-n](https://github.com/Microsoft/PowerBI-JavaScript) keresztül érhetők el.
 
-A [Beágyazáshoz szükséges telepítési eszközzel](https://aka.ms/embedsetup/UserOwnsData) elvégezheti a beágyazást a szervezet számára, hogy munkához láthasson, és letölthessen egy mintaalkalmazást, amely bemutatja, hogyan kell integrálni egy jelentést a szervezet számára.
+Lépkedjen végig a [beágyazása-telepítő eszköz](https://aka.ms/embedsetup/UserOwnsData) az első lépések és a egy mintaalkalmazást, amely végigvezeti a szervezet egy jelentés integrálása letöltése.
 
 ## <a name="embedding-for-your-customers"></a>Beágyazás ügyfelek számára
 
-Amennyiben az **ügyfelei számára végez beágyazást**, irányítópultokat és jelentéseket ágyazhat be olyan felhasználók számára, akik nem rendelkeznek Power BI-fiókkal. Az ügyfelek számára való beágyazást a **Power BI Embedded** végzi.
+**Az ügyfelek számára végez beágyazást** ágyazhat be irányítópultokat és jelentéseket a Power BI-fiókkal nem rendelkező felhasználók számára teszi lehetővé. Más néven a beágyazás van *Power BI Embedded*.
 
-A [Power BI Embeddeddel](azure-pbie-what-is-power-bi-embedded.md) egy **Microsoft Azure**-szolgáltatás, amellyel független szoftverszállítók (ISV-k) és a fejlesztők lenyűgöző vizualizációkat, jelentéseket és irányítópultokat adhatnak gyorsan alkalmazásaikhoz egy kapacitásalapú, óránkénti díjjal számlázott modellel.
+[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) van egy **Microsoft Azure** szolgáltatás, amely lehetővé teszi a független szoftvergyártók (ISV-k) és a fejlesztők gyorsan Vizualizációk, jelentések és irányítópultok beágyazása egy alkalmazásba. A beágyazás egy kapacitásalapú, óradíjas mért modellel történik.
 
 ![A beágyazás folyamata ügyfelek számára végzett beágyazás során](media/embedding/powerbi-embed-flow.png)
 
-A Power BI Embedded mind az ISV-k, mind a fejlesztők, mind a ügyfelek számára előnyös. Egy ISV például ingyenesen létrehozhat vizualizációkat a Power BI Desktoppal. Az ISV-k gyorsabban piacra vihetik az alkalmazásaikat a vizuális elemzési fejlesztések minimalizálásával, és kitűnhetnek versenytársaik közül az innovatív adatkörnyezeteikkel. Az ISV-k úgy is dönthetnek, hogy a beágyazott analitikákkal termelt értékért prémiumot számolnak fel.
+A Power BI Embedded mind az ISV-k, mind a fejlesztők, mind a ügyfelek számára előnyös. Egy ISV például ingyenesen létrehozhat vizualizációkat a Power BI Desktoppal. Csökkenthetik a vizuális elemzési fejlesztésekre fordított erőfeszítéseket, ISV-k elérése a gyorsabb piacra jutás és kitűnjenek a versenytársak adatkezelési élményt kínáló termékeikkel. ISV-k is dönthetnek, hogy egy prémium szintű hozhatnak létre az embedded analytics további értéket.
 
-A Power BI Embedded használatával az ügyfeleinek nem szükséges ismerniük a Power BI működését. Két különböző módszer használatával hozhat létre beágyazott alkalmazást. Az egyik lehetőség a Power BI Pro-fiók használata. A másik lehetőség a szolgáltatásnév használata. 
+A Power BI Embedded használatával az ügyfeleinek nem szükséges ismerniük a Power BI működését. Két különböző módszerek segítségével beágyazott alkalmazás létrehozásához:
+- A Power BI Pro-fiókja 
+- Szolgáltatásnév 
 
-Ez a Power BI Pro-fiók szolgál fő fiókként az alkalmazás számára (tehát ez a fő fiók tulajdonképpen egy proxyfiók). A Power BI Pro-fiók lehetővé teszi beágyazási tokenek létrehozását, amelyek hozzáférést biztosítanak a Power BI szolgáltatás olyan irányítópultjaihoz és jelentéseihez, amelyeket az alkalmazás kezel, és a tulajdonosa az alkalmazás.
+A Power BI Pro-fiók funkcionál az alkalmazás fő fiók (lényegében úgy működik, egy proxykiszolgáló-fiók). Ez a fiók lehetővé teszi beágyazási tokenek, amelyek hozzáférést biztosítanak az alkalmazás Power BI-irányítópultok és jelentések.
 
-A [Szolgáltatásnév](embed-service-principal.md) **csak az alkalmazásra vonatkozó** tokennel képes Power BI-tartalmat beágyazni az alkalmazásokba. A szolgáltatásnevek lehetővé teszi beágyazási tokenek létrehozását, amelyek hozzáférést biztosítanak a Power BI szolgáltatás olyan irányítópultjaihoz és jelentéseihez, amelyeket az alkalmazás kezel, és a tulajdonosa az alkalmazás.
+A [Szolgáltatásnév](embed-service-principal.md) **csak az alkalmazásra vonatkozó** tokennel képes Power BI-tartalmat beágyazni az alkalmazásokba. Emellett lehetővé teszi, hogy hozzon létre beágyazási tokenek, amelyek hozzáférést biztosítanak az alkalmazás Power BI-irányítópultok és jelentések.
 
-A Power BI Embeddedet használó fejlesztők az alkalmazás alapvető működésének szentelhetik az idejüket, és nem kell vizualizációk és elemzések fejlesztésével foglalkozniuk. A fejlesztők gyorsan megfelelhetnek az ügyfelek jelentésekkel és irányítópultokkal kapcsolatos igényeinek, és könnyen, teljes mértékben dokumentált API-kkal és SDK-kal ágyazhatnak be tartalmakat. A könnyen navigálható, alkalmazáson belüli adatfeltárás engedélyezésével az ISV-k ügyfelei gyors és magabiztos és döntéseket hozhatnak bármilyen eszközről.
+Power BI Embedded használatával a fejlesztők idejüket az alkalmazás fő funkciói helyett költségkeret Vizualizációk és elemzési való fókuszál. Ezeket rövid idő alatt igények figyelembevételével készült ügyfelek jelentésekre és irányítópultokra, és könnyedén beágyazhatják a teljes körű dokumentációval rendelkező API-k és SDK-k. A könnyen navigálható, alkalmazáson belüli adatfeltárás engedélyezésével az ISV-k ügyfelei gyors és magabiztos és döntéseket hozhatnak bármilyen eszközről.
 
 > [!IMPORTANT]
-> Bár a beágyazás maga igényli a Power BI szolgáltatás meglétét, az ügyfeleknek nem kell rendelkezniük Power BI-előfizetéssel. Nem kell bejelentkezniük a Power BI szolgáltatásba a beágyazott tartalmak megtekintéséhez az alkalmazásban.
+> Bár a beágyazás van szüksége a Power BI szolgáltatásban, az ügyfelek nem kell az alkalmazás beágyazott tartalmak megtekintéséhez Power BI-fiókkal rendelkezik. 
 
 Amikor készen áll az éles környezetbe való áthelyezésre, az alkalmazás-munkaterülethez hozzá kell rendelni egy dedikált kapacitást. A Power BI Embedded a Microsoft Azure-on belül elérhetővé tesz az alkalmazásban felhasználható [dedikált kapacitást](azure-pbie-create-capacity.md).
 
-A beágyazással kapcsolatos részletekért lásd: [Power BI-tartalmak beágyazása](embed-sample-for-customers.md).
+A részletek beágyazást, tekintse meg [Power BI-tartalmak beágyazása](embed-sample-for-customers.md).
 
 ## <a name="next-steps"></a>Következő lépések
 
@@ -97,4 +102,4 @@ Most már elkezdhet Power BI-tartalmat beágyazni az alkalmazásba vagy az ügyf
 > [!div class="nextstepaction"]
 >[Beágyazás az ügyfelek számára](embed-sample-for-customers.md)
 
-További kérdései vannak? [Forduljon a Power BI közösségéhez](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

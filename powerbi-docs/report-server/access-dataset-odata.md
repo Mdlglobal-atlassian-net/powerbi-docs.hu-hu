@@ -1,20 +1,20 @@
 ---
 title: Megosztott adatkészletek elérése OData-csatornákként a Microsoft Power BI jelentéskészítő kiszolgálóban
 description: A Power BI-jelentések különféle adatforrásokhoz csatlakozhatnak. Az adatok használatának módjától függően eltérő adatforrások érhetők el.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/05/2018
-ms.author: maghan
-ms.openlocfilehash: cf322fc518185d87021f2df3d4573805315e625f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.author: maggies
+ms.openlocfilehash: 7505860f7eedf62fe4384fea051a2731a932fce9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295343"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64769888"
 ---
 # <a name="accessing-shared-datasets-as-odata-feeds-in-power-bi-report-server"></a>Megosztott adatkészletek elérése OData-csatornákként a Microsoft Power BI jelentéskészítő kiszolgálóban
 A megosztott adatkészletek a Power BI Desktopból OData-csatorna használatával érhetők el.

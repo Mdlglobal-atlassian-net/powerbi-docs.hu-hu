@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 05/20/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 2b5e65ff8e9f603dad0e0537ba52e7da799bf177
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 6c9d59bbc2c6bf81242166bef4cd7584f52fb633
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383554"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65941608"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -34,7 +34,7 @@ A Power BI felügyeleti portál eléréséhez az adott fiókot **globális rends
 
     ![A felügyeleti portál beállításai](media/service-admin-portal/powerbi-admin-settings.png)
 
-A portálon hét lap található. A cikk további részében ezen lapokról olvashat.
+A portál kilenc fülek találhatók. A cikk további részében ezen lapokról olvashat.
 
 ![Navigálás a felügyeleti portálon](media/service-admin-portal/powerbi-admin-landing-page.png)
 
@@ -44,7 +44,9 @@ A portálon hét lap található. A cikk további részében ezen lapokról olva
 * [Bérlői beállítások](#tenant-settings)
 * [Kapacitásbeállítások](#capacity-settings)
 * [Beágyazási kódok](#embed-codes)
-* [Szervezeti vizualizációk](#organizational-visuals)
+* [Szervezeti vizualizációk](#organization-visuals)
+* [Adatfolyam tárolási (előzetes verzió)](#dataflowStorage)
+* [Munkaterületek](#workspaces)
 
 ## <a name="usage-metrics"></a>Használati metrikák
 
@@ -126,15 +128,27 @@ A beállítások állapota háromféle lehet:
 
 A következő néhány bekezdés a bérlői beállítások különböző típusainak áttekintését nyújtja.
 
+## <a name="help-and-support-settings"></a>Súgó és támogatás beállításai
+
+### <a name="publish-get-help-information"></a>"Súgó" adatok közzététele
+
+A szervezeten belüli felhasználók ugorjon a belső Súgó és támogatási információk a Power BI Súgó menüjében. Pontosabban ezeket a paramétereket változtathatja meg a további, a Közösség és a Get Súgó menü elemei.
+
+Akkor is közvetlen egy licencelési kérelmet egyéni megoldás a felhasználók egy URL-cím megadásához. Ez a paraméter testreszabja a célként megadott URL-címét a frissítési fiók gomb, amely a Power BI Pro-licenccel nem rendelkező felhasználó található a Power BI Pro párbeszédpanel a frissítés, valamint a személyes tárhely kezelése lapján.
+
 ## <a name="workspace-settings"></a>Munkaterület beállításai
 
-### <a name="create-workspaces-preview"></a>Munkaterületek létrehozása (előzetes verzió)
+### <a name="create-workspaces"></a>Munkaterületek létrehozása
 
-A vállalat felhasználói alkalmazás-munkaterületeket hozhatnak létre az irányítópultok, jelentések és egyéb tartalmak közös használatához. [További információ](service-create-the-new-workspaces.md)
+Segítségével a rendszergazdák a **munkaterületek létrehozása** a beállítás azt jelzi, mely a szervezet felhasználói hozhat létre közösen dolgozzon a irányítópultok, jelentések és más alkalmazás-munkaterületek tartalom. Tudjon meg többet [alkalmazás-munkaterületek](service-create-the-new-workspaces.md).
+
+A felügyeleti portál beállítások szakaszában egy másik bérlőben a munkaterületekkel kapcsolatos tudnivalók rendelkezik. Az adott szakaszt rendezheti és szűrheti a munkaterület listája, és jeleníti meg az egyes munkaterületeken. Lásd: [munkaterületek](#workspaces) részleteiről.
+
+A felügyeleti portálon azt is szabályozhatja, mely felhasználók rendelkeznek jogosultságokkal a szervezeti alkalmazások terjesztéséhez. Lásd: [tartalomcsomagok és alkalmazások közzététele a teljes szervezet számára](#publish-content-packs-and-apps-to-the-entire-organization) részleteket ebben a cikkben.
 
 ## <a name="export-and-sharing-settings"></a>Exportálási és megosztási beállítások
 
-### <a name="share-content-to-external-users"></a>Tartalom megosztása külső felhasználókkal
+### <a name="share-content-with-external-users"></a>Tartalom megosztása külső felhasználókkal
 
 A munkahelyi felhasználók külső felhasználókkal oszthatnak meg irányítópultokat. [További információ](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
 
@@ -142,7 +156,7 @@ A munkahelyi felhasználók külső felhasználókkal oszthatnak meg irányító
 
 Az alábbi képen azon üzenet látható, amely akkor jelenik meg, ha külső felhasználóval oszt meg tartalmat.
 
-![Megosztás külső felhasználóval](media/service-admin-portal/powerbi-admin-sharing-external.png)
+![Megosztás külső felhasználóval](media/service-admin-portal/powerbi-admin-sharing-external.png)  
 
 ### <a name="publish-to-web"></a>Webes közzététel
 
@@ -203,19 +217,19 @@ A következő képen az „Annak engedélyezése, hogy külső vendégfelhaszná
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Tartalomcsomagok és alkalmazások közzététele a teljes szervezet számára
 
-A munkahely felhasználói nem csupán egyes csoportok, hanem a teljes szervezet számára közzétehetik a tartalomcsomagokat és alkalmazásokat. [További információ](service-organizational-content-pack-manage-update-delete.md)
+Segítségével a rendszergazdák ezt a beállítást annak eldöntése, hogy mely felhasználók tehetnek közzé a tartalomcsomagok és alkalmazások csak bizonyos csoportok helyett a teljes szervezet számára. Tudjon meg többet [alkalmazások közzétételéhez](service-create-distribute-apps.md).
 
 Az alábbi képen a **Teljes saját szervezet** lehetőség látható a tartalomcsomag létrehozásakor.
 
 ![Tartalomcsomag közzététele a szervezet számára](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### <a name="create-template-apps"></a>Sablonalkalmazások létrehozása
+### <a name="create-template-apps-and-organizational-content-packs"></a>Sablon alkalmazások és a szervezeti tartalomcsomag létrehozása
 
-A munkahelyi felhasználók sablonalkalmazásokat készíthetnek, amelyek a Power BI Desktop adathalmazait használják. További információ a [sablonalkalmazásokról](template-content-pack-authoring.md)
+A szervezet felhasználói sablon alkalmazások és a egy adatforrást a Power BI Desktopban épülő adatkészleteket használó vállalati tartalomcsomagok hozhat létre. Tudjon meg többet [sablon alkalmazások](template-content-pack-authoring.md).
 
 ### <a name="push-apps-to-end-users"></a>Alkalmazások küldése a végfelhasználóknak
 
-A felhasználók közvetlenül is megoszthatnak alkalmazásokat a végfelhasználókkal, anélkül, hogy telepíteni kéne azokat az AppSource-ból. [További információ](service-create-distribute-apps.md)
+Jelentések létrehozói megoszthat alkalmazásokat közvetlenül a végfelhasználók számára anélkül, hogy a telepítés [AppSource](https://appsource.microsoft.com). Tudjon meg többet [alkalmazások automatikus telepítése a végfelhasználók számára](service-create-distribute-apps.md#automatically-install-apps-for-end-users).
 
 ## <a name="integration-settings"></a>Integrálási beállítások
 
@@ -335,11 +349,18 @@ A munkahelyi felhasználók a biztonsági szint besorolását jelző címkékkel
 
 A munkahelyi felhasználók beágyazhatnak Power BI-irányítópultokat és -jelentéseket szolgáltatott szoftveres (SaaS-) alkalmazásokba. A beállítás kikapcsolásával megakadályozhatja, hogy a felhasználók a REST API-k használatával Power BI-tartalmakat ágyazzanak be saját alkalmazásukba. [További információ](developer/embedding.md)
 
-## <a name="dataflow-settings-preview"></a>Adatfolyam-beállítások (előzetes verzió)
+### <a name="allow-service-principals-to-use-power-bi-apis"></a>A Power BI API-k használatának engedélyezése szolgáltatásneveknek
 
-### <a name="create-and-use-dataflows-preview"></a>Adatfolyamok létrehozása és használata (előzetes verzió)
+Web Apps alkalmazások az Azure Active Directoryban (Azure AD) regisztrált egy hozzárendelt szolgáltatásnevet fogja használni, felhasználói bejelentkezés nélkül férhetnek hozzá a Power BI API-k. Egy engedélyezett biztonsági csoportot kell szerepelnie, egy alkalmazás egyszerű szolgáltatásnév hitelesítése használja az egyszerű szolgáltatás. [További információ](developer/embed-service-principal.md)
 
-A vállalati felhasználók létrehozhatnak és használhatnak adatfolyamokat. További információ az adatfolyamokról: [Önkiszolgáló adat-előkészítés a Power BI-ban (előzetes verzió)](service-dataflows-overview.md). Az adatfolyamok prémium szintű kapacitásban való engedélyezéséről lásd: [Számítási feladatok konfigurálása](service-admin-premium-workloads.md).
+> [!NOTE]
+> A szolgáltatásnevek a biztonsági csoportjukból öröklik az engedélyeket a Power BI összes bérlői beállításához. Az engedélyek korlátozásához hozzon létre egy külön biztonsági csoportot a szolgáltatásneveknek, majd adja hozzá az Egyes biztonsági csoportok kivételével listához a vonatkozó, engedélyezett Power BI-beállítások esetében.
+
+## <a name="dataflow-settings"></a>Adatfolyam-beállítások
+
+### <a name="create-and-use-dataflows"></a>Adatfolyamok létrehozása és használata
+
+A vállalati felhasználók létrehozhatnak és használhatnak adatfolyamokat. Adatfolyamok áttekintését lásd: [önkiszolgáló adat-előkészítési a Power bi-ban](service-dataflows-overview.md). Az adatfolyamok prémium szintű kapacitásban való engedélyezéséről lásd: [Számítási feladatok konfigurálása](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > Ez a beállítás az egész munkahelyre vonatkozik, és nem lehet korlátozni meghatározott csoportokra.
@@ -350,11 +371,18 @@ A sablonalkalmazásokat két beállítás szabályozza.
 
 ![A sablonalkalmazások beállításai a Power BI felügyeleti portálon](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
-Az első beállítás, a **Sablonalkalmazások létrehozása** azt szabályozza, hogy a szervezetnél ki hozhat létre sablonalkalmazásokat. A sablonalkalmazás készítői ezt követően terjeszthetik az alkalmazásokat a szervezeten kívüli ügyfelek számára az AppSource-al vagy más terjesztési módszerekkel.
+### <a name="create-template-apps-preview"></a>Sablonalkalmazások létrehozása (előzetes verzió)
+
+A szervezet felhasználói sablon alkalmazásokat hozhat létre. Sablon alkalmazáskészítők tudja majd kioszthatja az úton cégen kívüli ügyfelek [AppSource](https://appsource.microsoft.com) és egyéb telepítési módszerek.
 
 ![Power BI felügyeleti portál, Sablonalkalmazások létrehozása beállítás](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
-A második beállítással, a **Sablonalkalmazások telepítése** beállítással Ön szabályozza, hogy a cégnél ki tölthet le és telepíthet sablonalkalmazásokat az AppSource-ból vagy más forrásból
+### <a name="install-template-apps-preview"></a>Sablon alkalmazások (előzetes verzió) telepítése
+
+A szervezeten belüli felhasználók letöltheti és telepítheti a sablon alkalmazások [AppSource](https://appsource.microsoft.com) vagy más forrásból.
+
+> [!NOTE]
+> Ez a beállítás meghatározza, hogy mely felhasználók telepíthetik a sablon alkalmazások a Power BI-fiókjuk.
 
 ## <a name="capacity-settings"></a>Kapacitásbeállítások
 
@@ -366,7 +394,7 @@ A **Power BI Premium** lapon a munkahely által megvásárolt bármely Power BI 
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
-A **Power BI Embedded** lapon megtekintheti az ügyfél számára vásárolt Power BI Embedded (A termékváltozat) kapacitásait. Mivel az A termékváltozatot csak az Azure-tól szerezheti be, a [beágyazott kapacitások Azure-ban való kezelésére](developer/azure-pbie-create-capacity.md) **az Azure Portalt** kell használnia.
+A **Power BI Embedded** lapon megtekintheti az ügyfél számára vásárolt Power BI Embedded (A termékváltozat) kapacitásait. Mivel termékváltozatok csak vásárolhat Azure-ban, akkor [beágyazott kapacitások kezelése az Azure](developer/azure-pbie-create-capacity.md) a **az Azure Portalon**.
 
 A Power BI Embedded (A termékváltozat) beállításainak kezeléséről további információért lásd a [Mi a Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md) szakaszt.
 
@@ -376,7 +404,7 @@ A rendszergazdák megnézhetik a bérlő számára generált beágyazási kódok
 
 ![Beágyazási kódok a Power BI felügyeleti portálon](media/service-admin-portal/embed-codes.png)
 
-## <a name="organizational-visuals"></a>Szervezeti vizualizációk
+## <a name="organizational-visuals">Szervezeti vizualizációk</a>
 
 A **Szervezeti vizualizációk** lapon egyéni vizualizációkat helyezhet üzembe és kezelhet a cégen belül. A szervezeti vizualizációk segítségével egyszerűen helyezhet üzembe szellemi tulajdont képező vizualizációkat, a szerzők pedig láthatják a jelentéseket és importálhatják a saját jelentéseikbe a Power BI Desktopból. [További információ](power-bi-custom-visuals-organization.md)
 
@@ -436,19 +464,21 @@ Győződjön meg róla, hogy a vizuális azonosító ugyanaz maradt. Az új fáj
 
 További információt [az egyéni vállalati vizualizációkkal kapcsolatos gyakori kérdések](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals) között talál.
 
-## <a name="dataflow-storage-preview"></a>Adatfolyam-tárolás (előzetes verzió)
+## <a name="dataflowStorage">Adatfolyam tárolási (előzetes verzió)</a>
 
 A Power BI-jal használt adatok alapértelmezés szerint a Power BI által biztosított belső tárolóban helyezkednek el. Az adatfolyamok és az Azure Data Lake Storage Gen2 (ADLS Gen2) integrációjának köszönhetően adatfolyamait vállalata Azure Data Lake Storage Gen2-fiókjában is tárolhatja. További információt az [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md) című cikkben talál.
 
-## <a name="workspaces-preview"></a>Munkaterületek (előzetes verzió)
+## <a name="workspaces"></a>Munkaterületek
 
-Rendszergazdaként megtekintheti a bérlőjében meglévő munkaterületeket. Rendezheti és szűrheti a munkaterületek listáját, és minden munkaterület adtait megjelenítheti. Lényeges, hogy a táblázat oszlopai a munkaterületek a [Power BI felügyeleti Rest API](/rest/api/power-bi/admin) által visszaadott tulajdonságainak felelnek meg. A személyes munkaterületek típusa **PersonalGroup**, az örökölt munkaterületeké **Group**, a modern munkaterületek pedig **Workspace** típusúak. További információk: [Új munkaterületek (előzetes verzió) létrehozása a Power BI-ban](service-create-the-new-workspaces.md).
+Rendszergazdaként megtekintheti a bérlőjében meglévő munkaterületeket. Rendezheti és szűrheti a munkaterületek listáját, és minden munkaterület adtait megjelenítheti. A tábla oszlopait által visszaadott tulajdonságait felel meg a [Power BI felügyeleti Rest API-t](/rest/api/power-bi/admin) munkaterületekhez. Személyes munkaterületek típusúak **PersonalGroup**, klasszikus munkaterületek típusúak **csoport**, és az új munkaterület élmény munkaterületek típusú **munkaterület**. További információkért lásd: [létrehozása az új munkaterületek a Power bi-ban](service-create-the-new-workspaces.md).
 
 ![Munkaterületek listája](media/service-admin-portal/workspaces-list.png)
 
+
 ## <a name="next-steps"></a>Következő lépések
 
-[A Power BI felügyelete a szervezetnél](service-admin-administering-power-bi-in-your-organization.md) [A Power BI rendszergazdai szerepkörének ismertetése](service-admin-role.md)  
+[A Power BI felügyelete a munkahelyen](service-admin-administering-power-bi-in-your-organization.md)  
+[A Power BI rendszergazdai szerep ismertetése](service-admin-role.md)  
 [A Power BI-naplózás használata a munkahelyen](service-admin-auditing.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

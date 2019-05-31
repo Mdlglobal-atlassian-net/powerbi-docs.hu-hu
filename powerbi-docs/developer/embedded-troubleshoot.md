@@ -1,20 +1,20 @@
 ---
 title: Beágyazott alkalmazás hibaelhárítása
 description: Ez a cikk azokat a gyakori problémákat ismerteti, amelyek Power BI-tartalmak beágyazása során merülhetnek fel.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: ebe536aad292fbd780d937cd4b35812afaedbdda
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 43cb59853e884b1e3e6a49c328aa3385e88b62fc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174821"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770476"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Beágyazott alkalmazás hibaelhárítása
 
@@ -109,7 +109,7 @@ A hiba elhárításához törölje az „oauth2/authorize/” végződést a hit
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>A hitelesítés nem sikerült: AADSTS70002 vagy AADSTS50053
 
-**_(AADSTS70002: Hiba a hitelesítő adatok ellenőrzése közben. AADSTS50053: Túl sokszor próbált bejelentkezni helytelen felhasználóazonosítóval vagy jelszóval)_**
+** _(AADSTS70002: Hiba a hitelesítő adatok ellenőrzése közben. AADSTS50053: Túl sokszor próbált bejelentkezni helytelen felhasználóazonosítóval vagy jelszóval)_ **
 
 Ha Ön a Power BI Embedded szolgáltatást használja Azure AD közvetlen hitelesítéssel, és ehhez hasonló üzeneteket kap bejelentkezéskor: ***error:unauthorized_client, error_description:AADSTS70002: Hiba a hitelesítő adatok ellenőrzése közben. AADSTS50053: Ön túl sokszor próbált bejelentkezni egy helytelen felhasználói azonosítóval vagy jelszóval***, ezért alapértelezés szerint 2018. június 14-től a közvetlen hitelesítés nincs használatban.
 
@@ -161,7 +161,7 @@ Ahhoz, hogy eldönthesse, melyik okozza a hibát, próbálja meg a következőke
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: A hozzájáruláshoz rendszergazdai engedély szükséges
 
-**_Tünetek:_**<br>
+**_Tünetek:_ **<br>
 Amikor egy rendszergazdai jogokkal nem rendelkező felhasználó először próbál bejelentkezni egy alkalmazásba és a hozzájárulását adja, a következő hibaüzenetek valamelyikét kapja:
 
 * A ConsentTest folyamatnak olyan engedélyre van szüksége a cég erőforrásainak eléréséhez, amelyet csak egy rendszergazda adhat meg. Kérjen engedélyt a rendszergazdától az alkalmazáshoz, hogy használhassa azt.
@@ -171,10 +171,10 @@ Amikor egy rendszergazdai jogokkal nem rendelkező felhasználó először prób
 
 Egy rendszergazdai jogú felhasználó be tud jelentkezni, és sikeresen meg tudja adni az engedélyt.
 
-**_Alapvető ok:_**<br>
+**_Alapvető ok:_ **<br>
 Felhasználói jóváhagyás le van tiltva a bérlő számára.
 
-**_Többféle javítás lehetséges:_**
+**_Többféle javítás lehetséges:_ **
 
 *Felhasználói beleegyezés engedélyezése a teljes bérlőnek (minden felhasználó, minden alkalmazás)*
 
@@ -184,6 +184,10 @@ Felhasználói jóváhagyás le van tiltva a bérlő számára.
     ![Hozzájárulás megadásának javítása](media/embedded-troubleshoot/consent-test-02.png)
 
 *Adjon engedélyeket* az alkalmazásnak rendszergazdaként – az egész bérlőhöz vagy egy meghatározott felhasználóhoz.
+
+### <a name="cs1061-error"></a>CS1061 hiba
+
+Töltse le [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) tapasztal egy ""AuthenticationContext"neobsahuje definici"AcquireToken"és a nem elérhető"AcquireToken"típus első argumentumának elfogadása" AuthenticationContext "található (hiányzik egy az irányelv vagy postrádáte odkaz nA sestavení?)" hiba történt.
 
 ## <a name="data-sources"></a>Adatforrások
 

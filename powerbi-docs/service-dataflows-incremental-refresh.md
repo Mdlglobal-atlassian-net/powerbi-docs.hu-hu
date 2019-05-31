@@ -1,23 +1,23 @@
 ---
 title: Növekményes frissítések használata Power BI-adatfolyamokkal
 description: A növekményes frissítés konfigurálása adatfolyamokhoz
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
-ms.author: davidi
+ms.date: 04/02/2019
+ms.author: mblythe
 LocalizationGroup: Data from files
-ms.openlocfilehash: 224fc07fccc2b12b0a28c016f427a4d5f4613290
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 1bc9e0d5de909c5d0859b6d31185cf0cb27bda23
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293710"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136663"
 ---
-# <a name="using-incremental-refresh-with-power-bi-dataflows-preview"></a>Növekményes frissítések használata Power BI-adatfolyamokkal (előzetes verzió)
+# <a name="using-incremental-refresh-with-power-bi-dataflows"></a>Növekményes frissítések használata Power BI-adatfolyamokkal
 
 Az adatfolyamokkal nagy mennyiségű adatot tölthet be a Power BI-ba, így meggyőző jelentéseket és elemzéseket készíthet. Bizonyos esetekben azonban nem érdemes az összes forrásadatot frissíteni minden frissítés alkalmával. Ennek jó alternatívája a **növekményes frissítés**, amely az alábbi előnyöket nyújtja az adatfolyamokhoz:
 
@@ -27,13 +27,13 @@ Az adatfolyamokkal nagy mennyiségű adatot tölthet be a Power BI-ba, így megg
 
 ![Növekményes frissítés adatfolyamokhoz](media/service-dataflows-incremental-refresh/dataflows-incremental-refresh_03.png)
 
-A növekményes frissítés Power BI-adatfolyamokkal történő használatához az adatfolyamot tartalmazó munkaterületnek egy [Prémium szintű kapacitásban](service-premium.md) kell lennie, az adatfolyamba betöltött adatforrásnak pedig egy *datetime* mezővel kell rendelkeznie, amelyet szűrhet a növekményes frissítés. 
+A növekményes frissítés Power BI-adatfolyamokkal történő használatához az adatfolyamot tartalmazó munkaterületnek egy [Prémium szintű kapacitásban](service-premium-what-is.md) kell lennie, az adatfolyamba betöltött adatforrásnak pedig egy *datetime* mezővel kell rendelkeznie, amelyet szűrhet a növekményes frissítés. 
 
 ## <a name="configuring-incremental-refresh-for-dataflows"></a>Növekményes frissítés konfigurálása adatfolyamokhoz
 
 Egy adatfolyam számos entitást tartalmazhat. A növekményes frissítés az entitások szintjén működik, egy adatfolyam így teljes mértékben frissített s növekményesen frissített entitásokat is tartalmazhat.
 
-Növekményesen frissített entitás beállításához először konfigurálnia kell az entitást, ahogyan azt egyébként is tenné. További információ az adatfolyamok beállításáról: [Önkiszolgáló adat-előkészítés a Power BI-ban (előzetes verzió)](service-dataflows-overview.md).
+Növekményesen frissített entitás beállításához először konfigurálnia kell az entitást, ahogyan azt egyébként is tenné. Állítsa be a adatfolyamot kapcsolatos további információkért lásd: [önkiszolgáló adat-előkészítési a Power bi-ban](service-dataflows-overview.md).
 
 Az adatfolyam létrehozása és mentése után válassza a **növekményes frissítés** ikont az entitásnézetben, ahogyan azt a következő képen is láthatja:
 
@@ -156,8 +156,8 @@ Ez a cikk az adatfolyamok növekményes frissítését ismertette. Az alábbi ci
 
 * [Önkiszolgáló adatelőkészítés adatfolyamokkal](service-dataflows-overview.md)
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
-* [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
-* [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
+* [Adatfolyamok használata a helyszíni adatforrások](service-dataflows-on-premises-gateways.md)
+* [Fejlesztői erőforrások a Power BI-adatfolyamok](service-dataflows-developer-resources.md)
 
 A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)

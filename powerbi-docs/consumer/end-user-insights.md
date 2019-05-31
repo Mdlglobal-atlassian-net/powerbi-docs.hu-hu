@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: fcfb16de53b4e6c67b7c46fec87ab614d07cb9b1
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661560"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61049231"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Adatelemzési eredmények megtekintése irányítópult-csempéken a Power BI-jal
 Az irányítópulton található vizualizációs csempék mindegyike nagyszerű lehetőséget biztosít az adatfeltárással való ismerkedéshez. Ha rákattint egy csempére, megnyílik egy jelentés, amelyben szűrheti és rendezheti a jelentés alapjául szolgáló adathalmazt, és részletes elemzést végezhet rajta. Elemzések futtatásakor pedig a Power BI elvégzi Ön helyett az adatok felderítését.
@@ -59,7 +59,7 @@ Az eredeti elemzéseket tartalmazó vászonra a bal felső sarokban látható **
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 - Az **Elemzések megtekintése** nem működik a DirectQueryvel, csak a Power BI-ba feltöltött adatokkal használható.
-- Az **Elemzések megtekintése** az irányítópult nem minden csempetípusával használható. Például egyéni vizualizációkhoz nem érhető el.<!--[custom visuals](end-user-custom-visuals.md)-->
+- Az **Elemzések megtekintése** az irányítópult nem minden csempetípusával használható. Például, nem áll rendelkezésre az egyéni vizualizációkat.<!--[custom visuals](end-user-custom-visuals.md)-->
 
 
 ## <a name="next-steps"></a>Következő lépések

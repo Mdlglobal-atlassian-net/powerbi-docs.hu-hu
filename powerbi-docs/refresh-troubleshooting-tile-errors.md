@@ -1,22 +1,22 @@
 ---
 title: Csempékkel kapcsolatos hibák elhárítása
 description: A csempék Power BI-beli frissítésének megkísérlésekor előforduló gyakori hibák
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: bfb6178908a9d6a4bcfe81f8d3d9771ac5b12b9d
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
-ms.translationtype: HT
+ms.openlocfilehash: c1df7e6293db703922f37c3f28546bb296d1a46a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086632"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66050997"
 ---
 # <a name="troubleshooting-tile-errors"></a>Csempékkel kapcsolatos hibák elhárítása
 Az alábbiakban a csempékkel kapcsolatban felmerülő gyakori hibákat és azok magyarázatát soroltuk fel.
@@ -64,6 +64,17 @@ A mezőt valószínűleg törölték vagy átnevezték. Távolítsa el a hibás 
 **Nem sikerült betölteni a látványelem adatait. Próbálkozzon újra később.**
 
 Ez általában átmeneti jellegű probléma. Ha később ismét próbálkozik, és továbbra is megjelenik ez az üzenet, forduljon a támogatási szolgálathoz.
+
+**Csempék továbbra is nem szűrt adatok megjelenítése az egyszeri bejelentkezés (SSO) engedélyezése után.**
+
+Ez akkor fordulhat elő, ha az alapul szolgáló adatkészlet egy helyszíni adatátjárón keresztül a DirectQuery módban, vagy az Analysis Services élő kapcsolat használatára van konfigurálva. Ebben az esetben a csempék továbbra is a nem szűrt adatok után SSO engedélyezése az adatforrás, amíg a következő csempefrissítés határideje. A következő csempék frissítését, a Power BI az egyszeri bejelentkezés konfigurálva, és a csempék megjelenítése a felhasználói identitás alapján szűri az adatokat. 
+
+Ha szeretné azonnal meg is tekintheti a szűrt adatokat, egy csempefrissítés kényszerítheti a egy irányítópultot, a jobb felső sarokban a három pontra (...) kiválasztásával **az irányítópult csempéinek frissítése**.
+
+Egy adatkészlet tulajdonosa is módosíthatja a csempe frissítési gyakoriságot és beállíthatja azt a 15 perc és gyorsítsa fel a csempe frissítése. Kattintson a fogaskerék ikonra a Power BI szolgáltatás jobb felső sarokban, majd válassza ki **beállítások**. Az a **beállítások** lapon válassza ki a **adatkészletek** fülre. Bontsa ki a **ütemezett gyorsítótár-frissítés** , és módosítsa **frissítési gyakoriság**. Ellenőrizze, hogy konfigurációjának visszaállítása az eredeti frissítési gyakoriságot, miután a Power BI a következő csempék frissítését hajtja végre.
+
+> [!NOTE]
+> A **ütemezett gyorsítótár-frissítés** szakaszban csak adatkészleteket a DirectQuery/LiveConnection módban érhető el. Adatkészleteket az importálási mód nem igényel külön csempék frissítését, mert a csempék automatikusan frissülnek a következő ütemezett frissítés során.
 
 ## <a name="contact-support"></a>Kapcsolatfelvétel az ügyfélszolgálattal
 Ha a probléma továbbra is fennáll, [kérjen támogatást](https://support.powerbi.com) a további vizsgálat érdekében.

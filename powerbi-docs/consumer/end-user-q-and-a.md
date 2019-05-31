@@ -1,5 +1,5 @@
 ---
-title: A Q&A használata a Power BI szolgáltatásban – áttekintés
+title: A Q & A a Power BI fogyasztók számára
 description: 'Q&A szolgáltatás: Természetes nyelvi kérdések a Power BI-ban – Dokumentáció'
 author: mihart
 manager: kvivek
@@ -8,19 +8,20 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/01/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: e6f95eedbd84ad5f512bbc1a1255cee7130a60d7
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 35ff71d5956c1c48c304324c121f79addf04cb56
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661975"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65625112"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Q&A a Power BI-**ügyfelek** számára
 ## <a name="what-is-qa"></a>Mi a Q&A?
-Ha válaszokat keres az adatokban, néha az a leggyorsabb megoldás, ha természetes nyelven kérdez. Például: „what were total sales last year (mennyi volt az összes értékesítés tavaly).”  
+Ha válaszokat keres az adatokban, néha az a leggyorsabb megoldás, ha természetes nyelven kérdez. Például: „what were total sales last year (mennyi volt az összes értékesítés tavaly).”
+
 A Q&A szolgáltatás könnyen használható, természetes nyelvi funkciókat kínál az adatok elemzéséhez, és kérdéseire grafikonok vagy diagramok formájában ad választ. A Q&A nem keresőmotor – csak a Power BI-ban lévő adatokról szolgáltat eredményeket.
 
 A **Power BI Q&A** csak angol nyelven támogatja a természetes nyelven írt lekérdezések megválaszolását. Elérhető egy előzetes verzió spanyol nyelven, amelyet a Power BI-rendszergazda engedélyezhet.
@@ -35,7 +36,7 @@ A kérdés megfogalmazása csak az első lépés.  Pontosíthatja vagy kibővít
 Valóban interaktív élmény... és gyors! A memóriabeli tárolás segítségével szinte egy pillanat alatt megkapja a választ.
 
 ## <a name="where-can-i-use-qa"></a>Hol találom a Q&A-t?
-A Q&A a Power BI szolgáltatás irányítópultjain, a Power BI mobilalkalmazás irányítópultjának alján és a Power BI Embeddedben látható vizualizáció felett érhető el. Ha a tervező nem adott Önnek szerkesztési jogosultságot, a Q&A-vel feltárhatja az adatokat, azonban nem mentheti a Q&A használatával létrehozott vizualizációkat.
+Látni fogja a Q & A az irányítópultokat és jelentéseket a Power BI szolgáltatásban, és a Power BI-ban az irányítópult alján mobil. Ha a tervező nem adott Önnek szerkesztési jogosultságot, a Q&A-vel feltárhatja az adatokat, azonban nem mentheti a Q&A használatával létrehozott vizualizációkat.
 
 ![kérdésmező](media/end-user-q-and-a/powerbi-qna.png)
 
@@ -68,7 +69,7 @@ Utasíthatja is a Q&A-t, hogy melyik vizualizációt használja, ha hozzáfűzi 
 **1. válasz**: Ha nem látja a kérdésmezőt, először ellenőrizze a beállításokat. Ehhez kattintson a Power BI-eszköztár jobb felső sarkában lévő fogaskerék ikonra.   
 ![fogaskerék ikon](media/end-user-q-and-a/power-bi-settings.png)
 
-Ezután válassza a **Beállítások** > **Irányítópultok** elemet. Ellenőrizze, hogy látható-e pipa a **Q&A-keresőmező megjelenítése ezen az irányítópulton** beállítás mellett.
+Ezután válassza a **Beállítások** > **Irányítópultok** elemet. Ellenőrizze, hogy látható-e pipa a **Q&A-keresőmező megjelenítése ezen az irányítópulton** beállítás mellett.    
 ![Irányítópult Q&A-beállításai](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 

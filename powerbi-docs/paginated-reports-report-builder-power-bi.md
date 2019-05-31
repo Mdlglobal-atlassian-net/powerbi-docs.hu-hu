@@ -1,20 +1,20 @@
 ---
 title: Mik a lapszámozott jelentések a Power BI Premiumban? (Előzetes verzió)
 description: A lapszámozott jelentések, melyek az SQL Server Reporting Services szabványos jelentéstípusát képviselik már régóta, mostantól elérhetők a Power BI szolgáltatásban. Ezek a jelentések kinyomtathatók vagy megoszthatók. Elrendezésük pontosan vezérelhető. Minden adatot egy táblázatban jelenítenek meg, akkor is, ha az több oldalon keresztül fut.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 12/05/2018
-ms.openlocfilehash: 1b8653b4493e0a6de904ecb0f5bb8ec5bb6f7904
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
-ms.translationtype: HT
+ms.date: 05/20/2019
+ms.openlocfilehash: 8da24bb8f7d3b8d507dbb6792556004083b673fe
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014185"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65991073"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Mik a lapszámozott jelentések a Power BI Premiumban? (Előzetes verzió)
 
@@ -26,17 +26,21 @@ A lapszámozott jelentések számos oldalból állhatnak. Ez a jelentés példá
 
 A jelentés előnézetét megtekintheti a Jelentéskészítőben, majd közzéteheti a Power BI szolgáltatásban (http://app.powerbi.com). A szolgáltatásban csak Power BI Pro-licenccel tehet közzé jelentéseket. Lapszámozott jelentéseket a Saját munkaterületen vagy az alkalmazások munkaterületein tehet közzé, ha az adott munkaterület egy Power BI Premium-kapacitáshoz tartozik. Emellett egy Power BI-rendszergazdának engedélyeznie kell a lapszámozott jelentéseket a Power BI felügyeleti portálján. 
 
-## <a name="create-reports-in-report-builder"></a>Jelentés létrehozása a Jelentéskészítőben
+## <a name="create-reports-in-power-bi-report-builder"></a>Jelentések létrehozása a Power BI jelentéskészítő
 
-A lapszámozott jelentésekhez saját eszköz tartozik: a Jelentéskészítő. Ez ugyanaz az eszköz és verzió, mint amellyel a Power BI jelentéskészítő kiszolgálóhoz vagy az SQL Server Reporting Serviceshez (SSRS) hozott létre lapszámozott jelentéseket. Sőt az SSRS 2016-os és 2017-es verziójában vagy a helyszíni Power BI jelentéskészítő kiszolgálóban létrehozott lapszámozott jelentések kompatibilisek a Power BI szolgáltatással. A Power BI szolgáltatás megtartja az előző verziókkal való kompatibilitást, így a jelentésekhez új verziót használhat, és frissítheti a korábbi lapszámozott jelentéseket is. Megjelenéskor nem minden jelentésfunkció érhető el. Részletekért tekintse meg a cikk [Korlátozások és szempontok](#limitations-and-considerations) című szakaszát.
+Többoldalas jelentéseket a saját tervezési eszköz, a Power BI jelentéskészítő rendelkezik. Egy új eszköz, amely az azonos alaprendszert, az eszközöket kellett korábban használt többoldalas jelentések létrehozása a Power BI jelentéskészítő kiszolgáló vagy az SQL Server Reporting Services (SSRS). Sőt az SSRS 2016-os és 2017-es verziójában vagy a helyszíni Power BI jelentéskészítő kiszolgálóban létrehozott lapszámozott jelentések kompatibilisek a Power BI szolgáltatással. A Power BI szolgáltatás megtartja az előző verziókkal való kompatibilitást, így a jelentésekhez új verziót használhat, és frissítheti a korábbi lapszámozott jelentéseket is. Megjelenéskor nem minden jelentésfunkció érhető el. Részletekért tekintse meg a cikk [Korlátozások és szempontok](#limitations-and-considerations) című szakaszát.
      
 ## <a name="report-from-a-variety-of-data-sources"></a>Számos adatforrásból készített jelentés
 
-Egy lapszámozott jelentés több különböző adatforrással is rendelkezhet. A Power BI-jelentésekkel ellentétben nem tartozik hozzá mögöttes adatmodell. A lapszámozott jelentések első Power BI-os megjelenésekor Ön beágyazott adatforrásokat és adathalmazokat hoz létre magában a jelentésben. Egyelőre nem használhat megosztott adatforrásokat vagy megosztott adatkészleteket. A jelentéseket a Jelentéskészítőben, a helyi számítógépen hozza létre. Ha egy jelentés helyszíni adatokhoz kapcsolódik, a jelentés a Power BI szolgáltatásba való feltöltése után létre kell hoznia egy átjárót, majd átirányítani az adatkapcsolatot. Az első kiadásban a következő adatforrásokhoz csatlakozhat:
+Egy lapszámozott jelentés több különböző adatforrással is rendelkezhet. A Power BI-jelentésekkel ellentétben nem tartozik hozzá mögöttes adatmodell. A lapszámozott jelentések első Power BI-os megjelenésekor Ön beágyazott adatforrásokat és adathalmazokat hoz létre magában a jelentésben. Egyelőre nem használhat megosztott adatforrásokat vagy megosztott adatkészleteket. A jelentéseket a Jelentéskészítőben, a helyi számítógépen hozza létre. Ha egy jelentés helyszíni adatokhoz kapcsolódik, a jelentés a Power BI szolgáltatásba való feltöltése után létre kell hoznia egy átjárót, majd átirányítani az adatkapcsolatot. Az alábbiakban azokat az adatforrásokat, jelenleg csatlakozhat:
 
 - Azure SQL Database és Data Warehouse
+- Az Azure Analysis Services (SSO) n keresztül
 - SQL Server egy átjárón keresztül
 - SQL Server Analysis Services egy átjárón keresztül
+- A Power BI prémium szintű Adatkészleteiket
+- Oracle
+- Teradata
  
 Az előzetes verziós időszakban további adatforrásokat adunk hozzá.
 
@@ -62,7 +66,13 @@ Lapszámozott jelentés tervezésekor valójában egy *jelentésdefiníciót ké
 
 ## <a name="view-your-paginated-report"></a>A lapszámozott jelentés megtekintése
 A lapszámozott jelentést a böngészős Power BI szolgáltatásban és a Power BI mobilalkalmazásokban is megtekintheti. A Power BI szolgáltatásból exportálhatja a jelentést több formátumban, így például HTML, MHTML, PDF, XML, CSV, TIFF, Word és Excel formátumokban. Emellett megoszthatja másokkal.  
-  
+
+## <a name="create-a-subscription-to-your-report"></a>A jelentés-előfizetés létrehozása
+
+Most már beállíthat e-mailes feliratkozások többoldalas jelentéseket a Power BI szolgáltatás saját maga és mások. A folyamat általában ugyanaz, mint a feliratkozás jelentésekre és irányítópultokra a Power BI szolgáltatásban. Előfizetések beállításában úgy dönt, milyen gyakran szeretne az e-mailt kapni: napi, heti vagy óránként. Az előfizetés tartalmazza a jelentés teljes kimenet egy PDF-mellékletet.
+
+További információkért lásd: a cikk [többoldalas jelentéseket a Power BI szolgáltatás saját maga és mások Feliratkozás](paginated-reports-subscriptions.md). 
+
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 
 Íme néhány funkció, amely nem támogatott az első megjelenéskor:
@@ -70,15 +80,12 @@ A lapszámozott jelentést a böngészős Power BI szolgáltatásban és a Power
 - Jelentésoldalak és vizualizációk rögzítése a Power BI irányítópultjain. Továbbra is rögzíthet vizualizációkat Power BI-irányítópultokra helyszíni lapszámozott jelentésből egy Power BI, vagy Reporting Services jelentéskészítő kiszolgálón. További információ: [Reporting Services-elemek rögzítése Power BI-irányítópultokra](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
 - Interaktív funkciók, például dokumentumtérképek és Megjelenítés/elrejtés gombok.
 - Segédjelentések és részletezések.
-- Előfizetések.
 - Megosztott adatforrások és a megosztott adathalmazok.
-- Power BI-adathalmazok.
 - Power BI-jelentések vizualizációi.
-- Lapszámozott jelentések az alkalmazásokban. Az alkalmazás-munkaterületek lapszámozott jelentéseit megoszthatja, azonban nem foglalhatja bele az alkalmazásba annak munkaterületről történő közzétételekor.
  
 ## <a name="next-steps"></a>Következő lépések
 
-- [A Jelentéskészítő telepítése a Microsoft letöltőközpontból](http://go.microsoft.com/fwlink/?LinkID=734968)
+- [Telepítse a Power BI jelentéskészítő a Microsoft letöltőközpontból](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Oktatóanyag: Lapszámozott jelentés létrehozása](paginated-reports-quickstart-aw.md)
 - [Adatok megadása közvetlenül többoldalas jelentésben](paginated-reports-enter-data.md)
 

@@ -11,11 +11,11 @@ ms.date: 04/26/2018
 ms.author: mshenhav
 ms.custom: ''
 ms.openlocfilehash: 1e30efc917b7c064bc93e06a09df3d099cd6e7e2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278423"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61046612"
 ---
 # <a name="what-are-the-power-bi-mobile-apps"></a>Mik a Power BI-mobilalkalmazások?
 A Power BI iOS, Android és Windows 10 rendszerekhez is kínál mobilalkalmazásokat. A mobilalkalmazásban a felhőbeli és helyszíni adatokhoz csatlakozhat, és használhatja ezeket az adatokat. 

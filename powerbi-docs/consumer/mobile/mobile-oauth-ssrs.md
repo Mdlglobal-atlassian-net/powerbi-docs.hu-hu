@@ -1,20 +1,20 @@
 ---
 title: OAuth használata a Power BI jelentéskészítő kiszolgáló és az SSRS csatlakoztatásához
 description: Megtudhatja, hogyan konfigurálhatja a környezetét OAuth-hitelesítés támogatására a Power BI mobilalkalmazásban az SQL Server Reporting Services 2016 (vagy újabb) szolgáltatáshoz való csatlakozáshoz.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
-ms.openlocfilehash: 6e0b1c5d4a067925e4898cf23968cc14fd3f8fd6
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: ae56a27393ba476828ff87d7f458815318ea79c1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383623"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770370"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>OAuth használata a Power BI jelentéskészítő kiszolgáló és az SSRS csatlakoztatásához
 
@@ -25,7 +25,7 @@ Megtudhatja, hogyan konfigurálhatja a környezetét OAuth-hitelesítés támoga
 Az OAuth-hitelesítést a Power BI jelentéskészítő kiszolgálóhoz való csatlakozásra használhatja, a Reporting Services-t pedig mobiljelentések és KPI-k megjelenítésére. A Windows Server 2016 webalkalmazás-proxyhoz (WAP) biztosított fejlesztései lehetővé tették az ilyen típusú hitelesítés használatát.
 
    > [!NOTE]
-   > Ne feledje, hogy a Microsoft Power BI jelentéskészítő kiszolgálón üzemeltetett Power BI-jelentések megtekintéséhez a WAP-on keresztül végzett hitelesítés jelenleg hivatalosan nem támogatott.
+   > A Power BI jelentéskészítő kiszolgálón tárolt Power BI-jelentések megtekintése WAP használatával hitelesíti a jelenleg támogatott csak az iOS-alkalmazásban. Android-alkalmazás a jelenleg nem hivatalosan támogatott.
 
 ## <a name="requirements"></a>Követelmények
 
@@ -118,7 +118,7 @@ Az alkalmazáscsoportot az alábbi lépéseket követve hozhatja létre.
    > [!NOTE]
    > Ez az URL-cím megkülönbözteti a kis- és nagybetűket!
 
-   *https://<url to report server>/reports*
+   *https://< a jelentéskészítő kiszolgáló URL-cím > / reports*
 
    ![ADFS Alkalmazáscsoport-varázsló 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Kattintson a **Tovább** gombra.
@@ -191,7 +191,7 @@ A korlátozott delegálás konfigurálásához a következőket kell tennie.
 Bár közzétehet alkalmazásokat a Jelentéshozzáférés-felügyeleti konzolon, mi az alkalmazást a PowerShellen keresztül szeretnénk létrehozni. Itt látható az alkalmazás hozzáadására szolgáló parancs.
 
 ```powershell
-Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/reports/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/reports/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
+Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
 | Paraméter | Megjegyzések |

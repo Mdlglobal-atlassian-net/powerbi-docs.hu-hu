@@ -7,34 +7,42 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 05/14/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4ab0fe4e3398a37da34af02282a847f316f3f727
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 37108c88b3a4f1efe2d324d2b182276252072d78
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383153"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710422"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>A Power BI szolgáltatás állapotának követése az Office 365-ben
 
-A Microsoft 365 Felügyeleti központban fontos eszközök állnak a Power BI-rendszergazdák rendelkezésére, köztük a szolgáltatás állapotának jelenlegi és előzményadatai is. Ezen adatok eléréséhez a következő szerepkörök egyikével kell rendelkeznie: Power BI szolgáltatásadminisztrátor vagy Office 365 globális rendszergazda. További információk a szerepkörökről: [A Power BI-jal kapcsolatos rendszergazdai szerepkörök](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
+A Microsoft 365 felügyeleti központ a Power BI-rendszergazdák számára fontos eszközöket biztosít. Az eszközök a service health aktuális és előzménynézeteket információkat tartalmaznak. Service health adatok eléréséhez a következő szerepkörök valamelyikében kell lennie:
+
+* Power BI-szolgáltatásadminisztrátor
+
+* Office 365 globális rendszergazda
+
+Szerepkörökkel kapcsolatban további információkért lásd: [rendszergazdai szerepköröket a Power bi-hoz kapcsolódó](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
 1. Jelentkezzen be a [Microsoft 365 Felügyeleti központba](https://portal.office.com/adminportal).
 
-1. Kattintson a **Szolgáltatás állapota** csempére.
+1. A bal oldali navigációs sávon válassza **az összes megjelenítése** > **egészségügyi** > **szolgáltatás állapota**. A Service health-oldal jelenik meg:
 
-    ![Szolgáltatás állapota csempe](media/service-admin-health/service-health-tile.png)
+    ![Képernyőkép – a Microsoft 365 felügyeleti központban emelte ki a állapotát és a Service health lehetőségekkel.](media/service-admin-health/service-health-tile.png)
 
-1. A jelenlegi listában kattintson az **N advisories** (Tanácsadás) vagy az **N incidents** (Incidensek) elemre, és tekintse át az eredményeket. Az alábbi ábrán három aktív tanácsadás közül láthatja az egyiket.
+1. Az a **minden szolgáltatás** listáról válassza ki **tanácsadók** vagy **incidensek** , és tekintse át az eredményeket. Az alábbi képernyőképen valamelyikét látja három aktív tanácsadók.
 
-    ![Aktív tanácsadások](media/service-admin-health/active-advisories.png)
+    ![Képernyőkép – a Power bi-ban és a Show részletei lehetőség emelte ki a három tanácsadók a Service health-oldal.](media/service-admin-health/active-advisories.png)
 
-1. További információkért kattintson a **Részletek megjelenítése** elemre az adott témánál. Az alábbi ábrán további részletek láthatók, köztük a legutóbbi állapotfrissítések.
+1. További információkért kattintson a **Részletek megjelenítése** elemre az adott témánál. Az alábbi képernyőképen a további részletek, köztük a legutóbbi állapot látható.
 
-    ![Tanácsadások részletei](media/service-admin-health/advisory-details.png)
+    ![Képernyőkép a tanácsadó részletei.](media/service-admin-health/advisory-details.png)
 
     Több információ megtekintéséhez görgessen lejjebb, majd ha elkészült, zárja be az ablaktáblát.
 
-1. Az összes szolgáltatás előzményadatait megnézheti, ha a főlista jobb felső sarkán az **Előzmények megtekintése** elemre kattint. Válassza **Az elmúlt 7 nap** vagy **Az elmúlt 30 nap** lehetőséget. A szolgáltatás jelenlegi állapotához a **Jelenlegi állapot megtekintése** elemre kattintva térhet vissza.
+1. Előzményadatok megtekintheti az összes szolgáltatásban a jobb felső sarkában a **szolgáltatás állapota** lapon jelölje be **előzményeinek megtekintése**. Válassza **Az elmúlt 7 nap** vagy **Az elmúlt 30 nap** lehetőséget. 
+
+1. A szolgáltatás jelenlegi állapotához a **Jelenlegi állapot megtekintése** elemre kattintva térhet vissza.

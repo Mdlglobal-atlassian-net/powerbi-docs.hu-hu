@@ -9,44 +9,40 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/28/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: f38110e743018f66249c471705b8a25652ef2a3a
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: c6da58ff5902a95c0e032cd4ed30a6ef0cae1e55
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661676"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374998"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Kedvenc irányítópultok, jelentések és alkalmazások a Power BI szolgáltatásban
-Ha egy tartalmat hozzáad a *Kedvencekhez*, akkor azt minden munkaterületéről elérheti.  A kedvencek azok a helyek, amelyeket általában a leggyakrabban látogat.
+Ha Ön megkönnyíti a tartalom egy *kedvenc*, fogja tudni elérni a gyors a **Kedvencek** tartalmak listája és a **kezdőlap Power BI**  >   **Kedvencek és gyakori elemek**.  A Kedvencek azok általában tartalom a leggyakrabban látogat, és a egy sárga csillag jelöli.
 
-> [!NOTE]
-> Ez a témakör csak a Power BI szolgáltatásra vonatkozik, a Power BI Desktopra nem.
-> 
-> 
+   ![Kedvenc ikon](./media/end-user-favorite/power-bi-favorite-nav.png)
 
-A Power BI szolgáltatásban arra is lehetősége van, hogy egyetlen irányítópultot [Kiemelt irányítópultként](end-user-featured.md) jelöljön meg.
+   ![Kedvenc ikon](./media/end-user-favorite/power-bi-home.png)
+
+Egyetlen irányítópultot is választhat egy [kiemelt irányítópultként](end-user-featured.md) a Power BI szolgáltatásban.
 
 ## <a name="add-a-dashboard-or-report-as-a-favorite"></a>Irányítópult vagy jelentés hozzáadása a *kedvencekhez*
-Tekintse meg, hogy Amanda miképpen adja hozzá a kedvenceket egy munkaterülethez, majd kövesse a részletes utasításokat a videó alatt.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
-
 
 1. Nyisson meg egy gyakran használt irányítópultot vagy jelentést. Olyan tartalmak is lehetnek *kedvencek*, amelyeket mások osztottak meg Önnel.
-2. A Power BI szolgáltatás jobb felső sarkában kattintson a **Kedvenc** elemre, vagy a csillag ![csillag ikon](./media/end-user-favorite/power-bi-favorite-icon.png)  ikonra.
+
+2. Válassza ki a Power BI szolgáltatás felső menüszalagról **kedvenc** vagy a csillag ![csillag ikon](./media/end-user-favorite/power-bi-favorite-icon.png) ikonra.
    
    ![Kedvenc ikon](./media/end-user-favorite/powerbi-dashboard-favorite.png)
    
-   Az irányítópultot vagy jelentést a munkaterület **Irányítópultok** vagy **Jelentések** lapján is hozzáadhatja a kedvencekhez.
+   Is hozzáadhatja a Kedvencekhez irányítópult vagy jelentés bárhonnan, tekintse meg a csillag ikont, például a kezdőlap, legutóbbi, alkalmazások és megosztott velem megosztva. 
    
-   ![Irányítópult lap sárga csillaggal](./media/end-user-favorite/power-bi-dashboard-favorite.png)
+   ![Irányítópult lap sárga csillaggal](./media/end-user-favorite/power-bi-recent.png)
 
 ## <a name="add-an-app-as-a-favorite"></a>Alkalmazás felvétele a *kedvencek* közé
 
-1. A bal oldali navigációs panelen válassza az **Alkalmazások** lehetőséget.
+1. A navigációs panelen válassza ki a **alkalmazások**.
 
    ![irányítópult](./media/end-user-favorite/power-bi-favorite-apps.png)
 
@@ -55,10 +51,10 @@ Tekintse meg, hogy Amanda miképpen adja hozzá a kedvenceket egy munkaterületh
    ![vigye az egérmutatót az alkalmazás fölé](./media/end-user-favorite/power-bi-favorite-app.png)
 
 ## <a name="working-with-favorites"></a>A *kedvencek* kezelése
-1. A bármely munkaterülethez tartozó kedvencek eléréséhez kattintson az úszó panel nyilára a **Kedvencek** elem mellett jobbra.  Innen kiválaszthatja a megnyitni kívánt kedvenc tartalmat. A listán csak öt kedvenc szerepel (betűrendben). Ha ötnél több kedvence van, az **Összes megtekintése** lehetőséget választva megnyithatja a kedvencek képernyőjét (lásd alább a 2. ábrát). 
+1. A Kedvencek eléréséhez, válassza a jobbra található nyílra úszó menü **Kedvencek**.  Innen kiválaszthatja a megnyitni kívánt kedvenc tartalmat. A listán csak öt kedvenc szerepel (betűrendben). Ha több mint öt rendelkezik, válassza ki a **összes** nyissa meg a tartalom a Kedvencek listában (#2, lásd alább). 
    
-   ![Kedvencek úszó menü](./media/end-user-favorite/power-bi-favorite-flyout-new.png)
-2. A kedvencként hozzáadott **összes** tartalom megtekintéséhez kattintson a **Kedvencek** elemre vagy a Kedvencek ![csillag ikon](./media/end-user-favorite/power-bi-favorites-icon.png)  ikonra a bal oldali navigációs ablaktáblán.  
+   ![Kedvencek úszó menü](./media/end-user-favorite/power-bi-favorite-flyout.png)
+2. Megtekintéséhez **összes** hozzáadott Kedvencek, a navigációs ablaktáblában jelölje ki a tartalom **Kedvencek** vagy a Kedvencek ![csillag ikon](./media/end-user-favorite/power-bi-favorites-icon.png) ikonra.  
    
     ![kedvenc ablak](./media/end-user-favorite/power-bi-favorites-screen.png)
    
@@ -72,13 +68,14 @@ Már nem használja olyan gyakran a tartalmat?  Eltávolíthatja a kedvencek kö
    ![Kedvencek képernyő](./media/end-user-favorite/power-bi-unfavorites-screen.png)
 2. A kedvencnek jelölés visszavonásához kattintson a tartalom melletti sárga csillagra.
 
-> **MEGJEGYZÉS**: Irányítópult, jelentés vagy alkalmazás kedvencnek jelölése is visszavonható. Ehhez egyszerűen nyissa meg a tartalmat, és szüntesse meg a sárga ikon bejelölését.   
+> [!NOTE]
+> Irányítópult, jelentés vagy alkalmazás kedvencnek jelölése is visszavonható. Ehhez egyszerűen nyissa meg a tartalmat, és szüntesse meg a sárga ikon bejelölését.   
 > 
 > 
+## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
+Az aktuális időpontban akkor az alkalmazás megjelölése kedvencként, és ez automatikusan Kedvencek összes jelentést és irányítópultokat az adott alkalmazáshoz. Nem alkalmas az egyes alkalmazásokra kedvenc jelentések vagy irányítópultok. 
 
 ## <a name="next-steps"></a>Következő lépések
-[Mi az a Power BI?](../power-bi-overview.md)
-
 [Power BI – Alapfogalmak](end-user-basic-concepts.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

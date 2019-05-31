@@ -1,6 +1,6 @@
 ---
 title: Hivatkozások táblázathoz adása
-description: A Power BI Desktop használatával hivatkozásokat hozhat létre. Ezeket a hivatkozásokat aztán a Power BI Desktop vagy a Power BI szolgáltatás segítségével adhatja hozzá a jelentések táblázataihoz és a mátrixokhoz.
+description: A Power BI Desktop használatával hivatkozásokat hozhat létre. Majd használja a Power BI Desktop vagy a Power BI szolgáltatásban ezek a hivatkozások hozzáadása a jelentések táblázataihoz és a mátrixokhoz.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/16/2019
+ms.date: 04/09/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 972abb3781cbaaff8a9617b70988c21f7389d4f9
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
-ms.translationtype: HT
+ms.openlocfilehash: 9611d8cd45eba89854fd6cbb485c52097f77f4c0
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406661"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61421579"
 ---
 # <a name="add-hyperlinks-to-a-table"></a>Hivatkozások táblázathoz adása
 Ez a témakör azt mutatja be, hogyan hozhatók létre hivatkozások a Power BI Desktopban. Ezeket a hivatkozásokat aztán a Power BI Desktop vagy a Power BI szolgáltatás segítségével adhatja hozzá a jelentések táblázataihoz és a mátrixokhoz. 
@@ -24,11 +24,11 @@ Ez a témakör azt mutatja be, hogyan hozhatók létre hivatkozások a Power BI 
 ![Hivatkozásokat tartalmazó táblázat](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
 > [!NOTE]
-> Az [irányítópultok csempéin](service-dashboard-edit-tile.md) és az [irányítópultok szövegdobozain](service-dashboard-add-widget.md) lévő hivatkozásokat a Power BI szolgáltatással hozhatja létre menet közben. A [jelentések szövegdobozaiban](service-add-hyperlink-to-text-box.md) lévő hivatkozásokat a Power BI szolgáltatással és a Power BI Desktoppal is létrehozhatja menet közben.
+> Hiperhivatkozások hozhat létre [irányítópultok csempéin](service-dashboard-edit-tile.md) és [irányítópultok](service-dashboard-add-widget.md) a működés közbeni a Power BI szolgáltatás használatával. Hiperhivatkozások hozhat létre [lévő jelentések](service-add-hyperlink-to-text-box.md) a működés közbeni Power BI szolgáltatásban és a Power BI Desktop használatával.
 > 
 
 ## <a name="to-create-a-hyperlink-in-a-table-or-matrix-using-power-bi-desktop"></a>Hivatkozás létrehozása táblázatban vagy mátrixban a Power BI Desktop segítségével
-A táblázatokban és mátrixokban lévő hivatkozásokat csak a Power BI Desktoppal hozhatja létre, a Power BI szolgáltatással nem. A hivatkozásokat az Excel Power Pivotban is létrehozhatja, mielőtt a munkafüzeteket a Power BI-ba importálná. Az alábbiakban mindkét módszer leírása megtalálható.
+A hivatkozások a táblákban és a Power BI Desktopban, de nem a Power BI szolgáltatásban a mátrixokban hozhat létre. Az Excel Power Pivot hivatkozásokat is létrehozhat, a munkafüzet a Power BI-ba történő importálása előtt. Az alábbiakban mindkét módszer leírása megtalálható.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-power-bi-desktop"></a>Hivatkozás létrehozása táblázatban vagy mátrixban a Power BI Desktop használatával
 A hivatkozás felvételének menete attól függ, hogy importálta az adatokat, vagy a DirectQuery segítségével csatlakozott hozzájuk. Az alábbiakban mindkét eset leírása megtalálható.
@@ -49,10 +49,15 @@ A hivatkozás felvételének menete attól függ, hogy importálta az adatokat, 
    
 1. Ha nem szeretne hosszú URL-címet megjeleníteni a táblázatban, egy hivatkozásikont is megjeleníthet  ![Hivatkozásikon](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) helyette. Figyelem: a mátrixokban nem jeleníthet meg ikonokat.
    
-   * A diagram aktiválásához kattintson a diagramra.
-   * Válassza a festőhenger ikont ![Festőhenger ikon](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) a Formázás lap megnyitásához.
-   * Bontsa ki az **Értékek** elemet, keresse meg az **URL-ikont**, és kapcsolja **Be**.
-6. (Nem kötelező.) [A Desktopról származó jelentést közzéteheti a Power BI szolgáltatásban](guided-learning/publishingandsharing.yml?tutorial-step=2), és megnyithatja a Power BI szolgáltatáson belül. A hivatkozások itt is működni fognak.
+    A diagram aktiválásához kattintson a diagramra.
+
+    A Formázás ikon kiválasztása ![Festőhenger ikon](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) a Formázás lap megnyitásához.
+
+    Bontsa ki az **Értékek** elemet, keresse meg az **URL-ikont**, és kapcsolja **Be**.
+
+    ![URL ikon bekapcsolása](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
+
+1. (Nem kötelező.) [A Desktopról származó jelentést közzéteheti a Power BI szolgáltatásban](guided-learning/publishingandsharing.yml?tutorial-step=2), és megnyithatja a Power BI szolgáltatáson belül. A hivatkozások itt is működni fognak.
 
 ### <a name="for-data-connected-with-directquery"></a>DirectQuery segítségével csatlakoztatott adatok
 DirectQuery módban nem hozhat létre új oszlopot.  Az adatokban már meglévő URL-címeket viszont átalakíthatja hivatkozásokká.

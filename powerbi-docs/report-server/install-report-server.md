@@ -1,30 +1,32 @@
 ---
 title: A Power BI jelentéskészítő kiszolgáló telepítése
 description: Ismerje meg, hogyan telepítheti a Power BI jelentéskészítő kiszolgálót.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/07/2018
-ms.openlocfilehash: 109c0f98705f81d48811f756c49150c8cb286e27
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 02104acdbff6e6a1a4e785553b689a3e74183a4d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014438"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187728"
 ---
 # <a name="install-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló telepítése
 
 Ismerje meg, hogyan telepítheti a Power BI jelentéskészítő kiszolgálót.
 
- **Letöltés** ![letöltés](media/install-report-server/download.png "letöltés")
+## <a name="download-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló letöltése
 
-A Power BI jelentéskészítő kiszolgáló letöltéséhez látogasson el a [Helyszíni jelentéskészítés a Power BI jelentéskészítő kiszolgálóval](https://powerbi.microsoft.com/report-server/) című lapra, és válassza az **Ingyenes próbaverzió letöltése** lehetőséget. 
+[Töltse le a Power BI jelentéskészítő kiszolgáló](https://www.microsoft.com/download/details.aspx?id=56722) a Microsoft letöltőközpontból.
 
-## <a name="before-you-begin"></a>Előkészületek
+Emellett van egy ingyenes próbaverzióját. Az a [helyszíni jelentéskészítés a Power BI jelentéskészítő kiszolgáló](https://powerbi.microsoft.com/report-server/) lapon jelölje be **ingyenes próbaverzió letöltése**.
+
+## <a name="before-you-install"></a>Telepítése előtt
 
 Javasoljuk, hogy a Power BI jelentéskészítő kiszolgáló telepítése előtt tekintse át a [Power BI jelentéskészítő kiszolgáló telepítésének hardver- és szoftverkövetelményeit](system-requirements.md).
 
@@ -32,6 +34,13 @@ Javasoljuk, hogy a Power BI jelentéskészítő kiszolgáló telepítése előtt
  > Bár a Power BI jelentéskészítő kiszolgáló telepíthető írásvédett tartományvezérlővel (RODC-vel) rendelkező környezetben is, a Power BI jelentéskészítő kiszolgálónak a megfelelő működés érdekében hozzáféréssel kell rendelkeznie egy írható tartományvezérlőhöz. Ha a Power BI jelentéskészítő kiszolgáló csak egy írásvédett tartományvezérlőhöz (RODC-hez) fér hozzá, akkor hibákat tapasztalhat a szolgáltatás felügyelete során.
 
 ### <a name="power-bi-report-server-product-key"></a>Power BI jelentéskészítő kiszolgáló termékkulcsa
+
+A termékkulcs két különböző forrásokból származó Power BI jelentéskészítő kiszolgáló kaphat:
+
+- Power BI Premium
+- SQL Server Enterprise Frissítési Garancia (SA)
+
+A részletekért Olvasson tovább.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
@@ -66,8 +75,8 @@ A telepítés során nincs szükség elérhető SQL Server adatbázismotor-kiszo
 
     ![2. kiadás](media/install-report-server/pbireportserver-choose-edition2.png)
 
-    A másik lehetőség, hogy a kiszolgálóhoz megadja azt a termékkulcsot, amelyet a Power BI szolgáltatástól vagy a Mennyiségi licencszolgáltatási központtól kapott. A termékkulcs beszerzéséhez az [Előkészületek](#before-you-begin) című részben talál további információkat.
-4. Olvassa el és fogadja el a licencfeltételeket, majd kattintson a **Tovább** elemre.
+    Ellenkező esetben adja meg a termékkulcsot, vagy a Power BI szolgáltatásban, vagy a mennyiségi licenc-szolgáltatási központon helyről. A termékkulcs beszerzéséhez kapcsolatos további információkért lásd: a [telepítése előtt](#before-you-install) című fenti szakaszban.
+4. Olvassa el és fogadja el a licencfeltételeket, majd válassza ki **tovább**.
 
     ![Licencfeltételek](media/install-report-server/pbireportserver-eula.png)
 5. A jelentéskészítő kiszolgáló adatbázisának tárolásához elérhető adatbázismotorra van szüksége. Ha csak a jelentéskészítő kiszolgálót kívánja telepíteni, kattintson a **Tovább** elemre.
@@ -83,7 +92,7 @@ A telepítés során nincs szükség elérhető SQL Server adatbázismotor-kiszo
 
     ![A jelentéskészítő kiszolgáló konfigurálása](media/install-report-server/pbireportserver-configure.png)
 
-## <a name="configuring-your-report-server"></a>A jelentéskészítő kiszolgáló beállítása
+## <a name="configure-your-report-server"></a>A jelentéskészítő kiszolgáló konfigurálása
 
 Ha kiválasztotta a **Jelentéskészítő kiszolgáló konfigurálása** lehetőséget a telepítés során, megnyílik a Reporting Services konfigurációkezelő. További információkért tekintse meg a [Reporting Services konfigurációkezelő](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode) oldalt.
 

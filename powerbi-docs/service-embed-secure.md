@@ -1,27 +1,27 @@
 ---
 title: Jelentés beágyazása egy biztonságos portálon vagy webhelyen
-description: A Power BI jelentések biztonságos beágyazását lehetővé tevő funkciójával engedélyezheti a felhasználóknak, hogy könnyen és biztonságosan beágyazzanak jelentéseket belső webportálokon.
-author: markingmyname
-ms.author: maghan
+description: A Power BI egyszerűen beágyazza a funkció lehetővé teszi, hogy felhasználók számára, és biztonságos belső webes portálok a jelentéseket beágyazhatja.
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2019
+ms.date: 05/20/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: b816b504d3eed3aa91eb25c0bb3c6189d3075d1f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: bf9d7bcdf6ddaf7d0063843a5314233989b2dadd
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285829"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66222232"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Jelentés beágyazása egy biztonságos portálon vagy webhelyen
 
-A Power BI jelentéseinek új, biztonságos **beágyazás** funkciójával engedélyezheti a felhasználóknak, hogy könnyen és biztonságosan beágyazzanak jelentéseket belső, **felhőalapú** vagy **helyszínen üzemeltetett** webportálokon, például a SharePoint 2019-ben. Az így beágyazott jelentések minden elemengedélyt tiszteletben tartanak, az adatbiztonsággal együtt egészen a sorszintű biztonságig (RLS). A funkció célja, hogy lehetővé tegye a kód nélküli beágyazást bármilyen portálon, amely elfogad beágyazható URL-eket vagy iFrame-eket.
+Az új **beágyazási** lehetőséget a Power bi-jelentések, egyszerűen és biztonságosan beágyazhat jelentéseket a belső webes portálok. Ezeken a portálokon jelenleg lehet **felhőalapú** vagy **a helyileg üzemeltetett**, például a SharePoint 2019. Beágyazott jelentések veszik figyelembe az összes elem engedélyek és az adatok biztonsági keresztül [sorszintű biztonság (RLS)](service-admin-rls.md). Bármilyen portál, amely egy URL-cím vagy egy IFRAME-keret beágyazási kódot nem biztosítanak. 
 
-A **beágyazás** lehetőséget az [URL-szűrőket](service-url-filters.md) és az URL-beállításokat is támogatja. A **beágyazás** lehetőséggel kevés kódot használó, alapszintű HTML- és JavaScript-szakértelmet kívánó megközelítéssel integrálhat portálokkal.
+A **beágyazási** beállítást támogatja [URL-szűrőkhöz](service-url-filters.md) és URL-beállítások. Csekély programozást igénylő csak alapszintű HTML és JavaScript Tudásbázis módszerével portálok integrálását lehetővé teszi.
 
 ## <a name="how-to-embed-power-bi-reports-into-portals"></a>Power BI-jelentések **beágyazása** portálokba
 
@@ -29,66 +29,66 @@ A **beágyazás** lehetőséget az [URL-szűrőket](service-url-filters.md) és 
 
     ![Biztonságos beágyazás lehetőség – legördülő elem](media/service-embed-secure/secure-embed-drop-down-menu.png)
 
-2. Válassza a Beágyazás lehetőséget, amellyel megnyit egy párbeszédpanelt, ahol egy, a jelentés biztonságos beágyazásához szükséges hivatkozás és egy iFrame található.
+2. Válassza ki a **beágyazási** beállítás, amely tartalmaz egy hivatkozást, és használhatja a jelentés biztonságos beágyazása az iFrame párbeszédpanel megnyitásához.
 
     ![Beágyazás lehetőség – párbeszédpanel](media/service-embed-secure/secure-embed-code-dialog.png)
 
-3. Az URL a webportálon való beágyazása után vagy az URL közvetlen megnyitása után a felhasználót hitelesíteni kell, mielőtt hozzáférhetne a jelentéshez. A lenti példában a felhasználó nem jelentkezett be a Power BI szolgáltatásba a böngésző munkamenetében. Amikor a **Bejelentkezés** gombra kattintanak, új böngészőablakot vagy -lapot kell megnyitni. Ha nem lát bejelentkezési kérelmet, ellenőrizze, hogy nincsenek-e letiltva a felugró ablakok.
+3. E egy felhasználó megnyitja a jelentés URL-címet közvetlenül, vagy egy olyan webes portál ágyazva, jelentés-hozzáférés hitelesítést igényel. A következő képernyő jelenik meg, ha a felhasználó még nincs bejelentkezve a Power bi-bA a böngésző-munkamenetet a. Ha kiválaszt **bejelentkezési**, megnyithat egy új böngészőablakban vagy lapon. Kell őket előugró blockers keresése, ha nem kérni, jelentkezzen be.
 
     ![Jelentkezzen be a jelentés megtekintéséhez](media/service-embed-secure/secure-embed-sign-in.png)
 
-4. Miután a felhasználó bejelentkezett, a jelentés megnyílik, és megjelennek az adatok. A felhasználók ekkor szabadon navigálhatnak az oldalak között, és megadhatnak szűrőket. A jelentést csak azon felhasználók láthatják, akiknek erre engedélyük van a Power BI-ban. Minden sorszintű biztonsági (RLS) szabály érvényben van. Végül a felhasználónak rendelkeznie kell a megfelelő licenccel. Vagy Power BI Pro-licencre van szüksége, vagy a jelentésnek kell Power BI Premium-kapacitáson lévő munkaterületen lennie. A felhasználónak minden alkalommal be kell jelentkeznie, amikor megnyit egy új böngészőablakot, azonban egyszeri bejelentkezés után minden jelentés automatikusan betöltődik.
+4. Miután a felhasználó jelentkezett be, megnyílik a jelentés, adatait jeleníti meg, és lehetővé teszi a lapok közötti navigálásról és -szűrő beállítása. Csak olyan felhasználók, akik rendelkeznek engedély megtekintése a jelentést a Power bi-ban látható. Az összes [sorszintű biztonság (RLS)](service-admin-rls.md) szabályok is vonatkoznak. Végül a felhasználónak rendelkeznie kell a megfelelő licenccel. Vagy Power BI Pro-licencre van szüksége, vagy a jelentésnek kell Power BI Premium-kapacitáson lévő munkaterületen lennie. A felhasználónak kell minden alkalommal, amikor megnyitják egy új böngészőablakban jelentkezzen be. Azonban ha már bejelentkezett, más jelentések automatikusan betöltődik.
 
     ![Jelentés beágyazása](media/service-embed-secure/secure-embed-report.png)
 
-5. Az iFrame lehetőség használatakor célszerű szerkesztenie a megadott HTML-t, így megszabhatja a kívánt magasságot és szélességet, a portál weboldalához igazítva.
+5. Egy IFRAME elembe használatakor szükség lehet szerkeszteni a **magasság** és **szélesség** , hogy illeszkedjen a portálon a weblapon.
 
     ![Magasság és szélesség megadása](media/service-embed-secure/secure-embed-size.png)
 
-## <a name="granting-access-to-reports"></a>Hozzáférés biztosítása a jelentésekhez
+## <a name="granting-report-access"></a>A jelentés-hozzáférés biztosítása
 
-A Beágyazás lehetőség nem engedélyezi automatikusan felhasználóknak a jelentés megtekintését. A megtekintési engedélyeket a Power BI szolgáltatásban kell beállítani.
+A **beágyazási** beállítás automatikusan nem engedélyezheti a felhasználóknak a jelentés megtekintéséhez. Engedélyek megtekintése a Power BI szolgáltatásban vannak beállítva.
 
-Ha hozzáférést szeretne nyújtani a jelentéshez a Power BI szolgáltatásban, megoszthatja azt azokkal a felhasználókkal, akiknek a beágyazott jelentéshez való hozzáférésre van szükségük. Ha egy Office 365-csoportot használ, akkor a felhasználót hozzáadhatja az alkalmazás-munkaterülethez a Power BI szolgáltatásban. További információkért lásd: [Alkalmazás-munkaterület kezelése](service-manage-app-workspace-in-power-bi-and-office-365.md).
+A Power BI szolgáltatásban megoszthatja beágyazott jelentések hozzáférést igénylő felhasználók. Ha Office 365-csoportot használ, mint egy alkalmazás-munkaterületen tag listázhatja a felhasználó. További információkért lásd: hogyan [kezelheti az alkalmazás-munkaterülethez a Power BI és az Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="licensing"></a>Licencelés
 
-A beágyazott jelentést megtekintő felhasználónak vagy Power BI Pro-licencre van szüksége, vagy a tartalomnak kell [Power BI Premium-kapacitáson (EM vagy P termékváltozat)](service-admin-premium-purchase.md) lévő munkaterületen lennie.
+A beágyazott jelentés megtekintéséhez, felhasználók vagy a Power BI Pro licencre van szüksége, vagy a tartalomnak kell lennie, amely a munkaterület egy [Power BI Premium-kapacitás (EM vagy P Termékváltozat)](service-admin-premium-purchase.md).
 
 ## <a name="customize-your-embed-experience-using-url-settings"></a>A beágyazás testreszabása URL-beállításokkal
 
-A beágyazási URL-cím számos bemeneti beállítást támogat, amelyekkel testreszabhatja a beágyazást. Ha a megadott iFrame-et használja, ügyeljen rá, hogy frissítse az URL-t az iFrame src-beállításaiban.
+Testre szabhatja a felhasználói élmény a beágyazási URL-cím beviteli beállítások használatával. A megadott IFrame-keretben, az URL-címet is frissítheti **src** beállításait.
 
 | Tulajdonság  | Leírás  |  |  |  |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| pageName  | A **pageName** lekérdezési karakterlánc paraméterével beállíthatja, hogy a jelentés mely oldala nyíljon meg. A **pageName** érték a jelentés URL-címének végének felel meg, ha a jelentést a Power BI szolgáltatásban tekinti meg, a lenti ábrához hasonlóan. |  |  |  |
-| URL-szűrők  | A beágyazás tartalmának szűréséhez használhatja a Power BI felhasználói felületén kapott beágyazási URL-cím [URL-szűrőit](service-url-filters.md). Így alacsony kódigényű integrációkat fejleszthet, csupán alapszintű HTML- és JavaScript-tapasztalattal.  |  |  |  |
+| pageName  | Használhatja a **pageName** lekérdezési karakterlánc paraméterének be, hogy melyik jelentés lap megnyitásához. Annak ezt az értéket a jelentés URL-cím végén egy jelentést a Power BI szolgáltatásban megtekintésekor alább látható módon. |  |  |  |
+| URL-szűrők  | Használhat [URL-szűrőkhöz](service-url-filters.md) a beágyazási URL-ben kapott a Power BI felhasználói felületén a beágyazott tartalom szűrése. Így alacsony kódigényű integrációkat fejleszthet, csupán alapszintű HTML- és JavaScript-tapasztalattal.  |  |  |  |
 
-## <a name="set-which-page-opens-when-the-report-is-embedded"></a>A jelentés megnyitásakor megjelenő oldal beállítása
+## <a name="set-which-page-opens-for-an-embedded-report"></a>Mely lap, melyen a beágyazott jelentések beállítása 
 
-A *pageName* beállításban megadott érték a jelentés URL-címének végének felel meg, ha a jelentést a Power BI szolgáltatásban tekinti meg.
+Annak a **pageName** a Power BI szolgáltatás bármely jelentésének megtekintésekor a jelentés URL-cím végén értékét.
 
-1. Nyissa meg a jelentést a Power BI szolgáltatásból a böngészőben, és másolja a vágólapra az URL-címet a címsorból.
+1. Nyissa meg a jelentést a Power BI szolgáltatásból a webböngészőben, és ezután másolja az URL-címe sáv.
 
     ![Jelentésszakasz](media/service-embed-secure/secure-embed-report-section.png)
 
-2. Fűzze a *pageName* beállítást az URL-címhez.
+2. Fűzze a **pageName** beállítást az URL-címhez.
 
     ![pageName hozzáfűzése](media/service-embed-secure/secure-embed-append-page-name.png)
 
-## <a name="filter-report-content-using-url-filters"></a>Jelentés tartalmának szűrése URL-szűrőkkel
+## <a name="filter-report-content-using-url-filters"></a>Jelentés tartalmának szűrése URL-szűrőkkel 
 
-Az [URL-szűrőkkel](service-url-filters.md) bizonyos speciális funkciókat is elérhet, amelyekkel további megoldásokat készíthet a jelentést használva. Az alábbi URL például úgy szűri a jelentést, hogy az az energiaipar adatait jelenítse meg.
+Használhat [URL-szűrőkhöz](service-url-filters.md) nézetek különböző jelentést biztosít. Az alábbi URL például úgy szűri a jelentést, hogy az az energiaipar adatait jelenítse meg.
 
 A **pageName** és az [URL-szűrők](service-url-filters.md) együttes használata rendkívül hatékony lehet. Megoldásokat alapszintű HTML- és JavaScript-szakértelemmel is fejleszthet.
 
-Például a következőképp adhat hozzá egy gombot egy HTML-laphoz:
+Ha például a következő egy HTML-oldalt is hozzáadhat egy gombot:
 
 ```html
 <button class="textLarge" onclick='show("ReportSection", "Energy");' style="display: inline-block;">Show Energy</button>
 ```
 
-A gomb lenyomáskor meghív egy függvényt, amely frissíti az iFrame-et egy új URL-címmel, amely tartalmazza az energiaiparra vonatkozó szűrőt.
+Kiválasztásakor a a gomb meghív egy függvényt, frissítheti az IFRAME-keret egy frissített URL-CÍMÉT, amely tartalmazza az energia iparági szűrő.
 
 ```javascript
 function show(pageName, filterValue)
@@ -124,20 +124,20 @@ Tetszőleges számú gombot hozzáadhat, így alacsony kódigényű megoldást k
 
 * A biztonságos beágyazás a Power BI szolgáltatásban közzétett jelentésekkel működik.
 
-* A felhasználónak be kell jelentkeznie a jelentés megtekintéséhez minden alkalommal, amikor megnyit egy új böngészőablakot.
+* A felhasználónak kell bejelentkezni, amikor egy új böngészőablakban megnyitja a jelentés megtekintéséhez.
 
-* Egyes böngészőkben előfordulhat, hogy frissíteni kell a lapot a bejelentkezést követően, kifejezetten InPrivate vagy inkognitó módban való használatkor.
+* Egyes böngészők szükséges, hogy a bejelentkezés után frissítse az oldalt, különösen akkor, ha InPrivate vagy Inkognitó módban.
 
-* Egyszeri bejelentkezéses használathoz használja a Beágyazás SharePoint Online-ban lehetőséget, vagy fejlesszen egyéni integrációt a [felhasználó az adatok tulajdonosa](developer/embed-sample-for-your-organization.md) módszerrel. További információ a [felhasználó az adatok tulajdonosa](developer/embed-sample-for-your-organization.md) megközelítésről.
+* Egy egyszeri bejelentkezéses működést érhet el, a beágyazási használata a SharePoint online-hoz lehetőséget vagy egy egyéni integrációs használatával a [felhasználó az adatok tulajdonosa](developer/embed-sample-for-your-organization.md) metódus beágyazásához. 
 
-* A **beágyazás** lehetőség automatikus hitelesítés funkciója nem működik a Power BI JavaScript API-jával. A Power BI JavaScript API-hoz a [felhasználó az adatok tulajdonosa](developer/embed-sample-for-your-organization.md) módszert kell használnia. További információ a [felhasználó az adatok tulajdonosa](developer/embed-sample-for-your-organization.md) megközelítésről.
+* A **Beágyazás** lehetőség automatikus hitelesítés funkciója nem működik a Power BI JavaScript API-jával. A Power BI JavaScript API használata a [felhasználó az adatok tulajdonosa](developer/embed-sample-for-your-organization.md) metódus beágyazásához. 
 
 ## <a name="next-steps"></a>Következő lépések
 
-* [A munka megosztásának módjai](service-how-to-collaborate-distribute-dashboards-reports.md)
+* [Megoszthatja a munkáját a Power bi-ban módjai](service-how-to-collaborate-distribute-dashboards-reports.md)
 
-* [URL-szűrők](service-url-filters.md)
+* [A jelentések szűrhetők az URL-cím lekérdezési karakterlánc paraméterei az](service-url-filters.md)
 
-* [SharePoint Online jelentéskijelző](service-embed-report-spo.md)
+* [Beágyazás jelentéskijelzővel a SharePoint online-hoz](service-embed-report-spo.md)
 
-* [Webes közzététel](service-publish-to-web.md)
+* [A Power BI webes közzététel](service-publish-to-web.md)

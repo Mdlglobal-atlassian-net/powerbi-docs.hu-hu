@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 04/26/2019
 ms.author: maggies
-ms.openlocfilehash: 445f5f087bd9589b18f798e8db40a63b0ddceafe
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 0ea8f19fa36bf1f9ceb5f8f0b92bd53ebdfa2a01
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249994"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64578511"
 ---
 # <a name="what-are-power-bi-template-apps-preview"></a>Mik azok a Power BI-sablonalkalmazások? (előzetes verzió)
 
@@ -24,10 +24,10 @@ A sablonalkalmazások a jelenlegi szolgáltatás-tartalomcsomagokat helyettesít
 
 Létrehozhat sablonalkalmazásokat, amelyeket az ügyfelei a fiókjukhoz kapcsolhatnak és példányosíthatnak. Tartományszakértőkként könnyen fogyaszthatóvá tehetik az adatokat az üzleti felhasználók számára.  
 
-Beküldheti a partner által készített sablonalkalmazásokat a Cloud Partner Portalra. Az alkalmazások ekkor nyilvánosan elérhetővé válnak a Power BI alkalmazáskatalógusában (app.powerbi.com/getdata/services) és a Microsoft AppSource-ban (appsource.microsoft.com). Íme egy példa a nyilvános sablonalkalmazás felhasználói felületére.  
+Sablon alkalmazásait, a Cloud Partner portálra való elküldését. Az alkalmazások ekkor nyilvánosan elérhetővé válnak a Power BI alkalmazáskatalógusában (app.powerbi.com/getdata/services) és a Microsoft AppSource-ban (appsource.microsoft.com). Ez a sablon nyilvános alkalmazás-létrehozási folyamatának áttekintése.  
 
-## <a name="overview"></a>Áttekintés
-A sablonalkalmazások fejlesztésének és elküldésének általános eljárása több szakaszból áll, melyek közül néhány egyszerre több tevékenység végzésével jár.
+## <a name="process"></a>Folyamat
+És egy sablon alkalmazás beküldésének általános folyamata magában foglalja a több lépésből áll. Egyes szakaszai tartalmazhatnak egynél több tevékenység egy időben.
 
 
 | Szakasz | Power BI Desktop |  |Power BI szolgáltatásban  |  |Cloud Partner Portal  |

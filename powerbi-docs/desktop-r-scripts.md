@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 188669525a210afc516cc9740d5d7e7c5682ea93
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514721"
 ---
 # <a name="run-r-scripts-in-power-bi-desktop"></a>R-szkriptek futtatása a Power BI Desktopban
@@ -41,7 +41,7 @@ Az R-szkriptek előkészítésére és a Power BI Desktopban való futtatására
 * Az R-szkriptekben a munkakönyvtárak megadásánál teljes és nem relatív elérési utat *kell* megadni.
 
 ### <a name="run-your-r-script-and-import-data"></a>R-szkriptek futtatása és az adatok importálása
-1. A Power BI Desktopban az R-szkriptek adatösszekötője az **Adatok lekérése** menüpontban található. Az R-szkript futtatásához válassza az **Adatok lekérése &gt; Továbbiak...**, majd az **Egyéb &gt; R-szkript** lehetőséget, amint az az alábbi ábrán is látható:
+1. A Power BI Desktopban az R-szkriptek adatösszekötője az **Adatok lekérése** menüpontban található. Az R-szkript futtatásához válassza az **Adatok lekérése &gt; Továbbiak...** , majd az **Egyéb &gt; R-szkript** lehetőséget, amint az az alábbi ábrán is látható:
    
    ![](media/desktop-r-scripts/r-scripts-1.png)
 2. Ha az R telepítve van a helyi gépen, a rendszer a legfrissebb telepített verziót választja R-motorként. Egyszerűen másolja a szkriptet a szkriptablakba, és kattintson az **OK** gombra.

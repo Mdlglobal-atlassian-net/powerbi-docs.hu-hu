@@ -1,18 +1,18 @@
 ---
 title: Power BI-munkaterületcsoport tartalmainak migrálása a Power BI-ba
 description: A cikk azt mutatja be, hogyan migrálhatja az adatokat a Power BI-munkaterületcsoportokból a Power BI Embeddedbe, és hogyan aknázhatja ki az alkalmazásokba való beágyazás nyújtotta fejlett lehetőségeket.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 23907633ec92a172a9cdd392ad62b43d367260b3
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223605"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61270455"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI-munkaterületcsoport tartalmainak migrálása a Power BI Embeddedbe
 
@@ -131,7 +131,7 @@ Gyorsítótárazott adatkészletek alatt olyan PBIX-fájlokat értünk, amelyek 
 3. Mentse a PBIX-fájlt.
 4. Hívja meg az Import PBIX API-t a SaaS-munkaterületre.
 5. Kapcsolati sztring frissítése ezzel a hívással: POST https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. GW-azonosító és adatforrás-azonosító lekérdezése ezzel a hívással: GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+6. Az Átjáró, valamint az adatforrás-azonosítók beolvasása meghívásával – LEKÉRÉSE https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
 7. A felhasználó hitelesítő adatainak frissítése: PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### <a name="old-dataset--reports"></a>Régi adatkészlet és jelentések
@@ -200,7 +200,7 @@ Takarítson az Azure-ban.
 [Migrálási eszköz a Power BI-munkaterületcsoporthoz](migrate-tool.md)  
 [Kódrészletek a tartalmak Power BI-munaterületcsoportból való migrálásához](migrate-code-snippets.md)  
 [Power BI-irányítópultok, -jelentések és -csempék beágyazása](embedding-content.md)  
-[Power BI Premium – pontosan mi is ez?](../service-premium.md)  
+[Power BI Premium – pontosan mi is ez?](../service-premium-what-is.md)  
 [JavaScript API Git-adattár](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git-adattár](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript beágyazási minta](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

@@ -7,25 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5fc013df4526c62a9f2e1aa25328119983aaa30e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d5259ba22287a8a2ade3107e4320c39713dcb45e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278101"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65239739"
 ---
 # <a name="customizing-tooltips-in-power-bi-desktop"></a>Elemleírások testreszabása a Power BI Desktopban
 Az elemleírások használatával elegáns módon lehet kiegészítő környezeti információkat és részleteket megjeleníteni a vizualizációkban lévő adatpontokról. Az alábbi képen egy diagramhoz hozzáadott elemleírás látható a Power BI Desktopban.
 
 ![Alapértelmezett elemleírás](media/desktop-custom-tooltips/custom-tooltips-1.png)
 
-A képi megjelenítés létrehozásakor az alapértelmezett elemleírás az adatpont értékét és kategóriáját jeleníti meg. Számos esetben bizonyulhat hasznosnak az elemleírásban megjelenő információk testreszabása, mivel így további kontextus és információk biztosíthatók a vizualizációt megtekintő felhasználóknak. Az egyéni elemleírásokkal további adatpontokat adhat meg, amelyek az elemleírás részeként jelennek meg.
+A képi megjelenítés létrehozásakor az alapértelmezett elemleírás az adatpont értékét és kategóriáját jeleníti meg. Nincsenek számos hasznos az elemleírásban megjelenő információk testreszabása, és valószínűleg tartalmaz olyan további kontextus és információk biztosíthatók a vizualizációt megtekintő felhasználóknak. Az egyéni elemleírásokkal további adatpontokat adhat meg, amelyek az elemleírás részeként jelennek meg.
 
 ## <a name="how-to-customize-tooltips"></a>Az elemleírások testreszabása
-Az elemleírások testreszabásához a **Képi megjelenítések** ablaktábla **Mezők** területén egyszerűen húzzon át egy mezőt az **Elemleírások** gyűjtőbe az alábbi ábrán látható módon. Az alábbi ábrán két mező van az **Elemleírások** gyűjtőbe húzva.
+Hozhat létre egy egyéni elemleírás a **mezők** , valamint a **Vizualizációk** ablaktáblán húzzon egy mezőt a **elemleírások** gyűjtőbe, akkor az alábbi képen látható. Az alábbi ábrán két mező van az **Elemleírások** gyűjtőbe húzva.
 
 ![Elemleírás-mezők hozzáadása](media/desktop-custom-tooltips/custom-tooltips-2.png)
 
@@ -38,5 +38,5 @@ Lehetősége van az eszközelemek további testreszabására aggregátumfüggvé
 
 ![Elemleírás Gyorsszámítással](media/desktop-custom-tooltips/custom-tooltips-4.png)
 
-Az **Elemleírások** számos módon testreszabhatók az adatkészlet bármely elérhető mezőjének használatával, így gyors információk és betekintések biztosíthatók az irányítópultokat és a jelentéseket megtekintő felhasználók számára.
+Számos módon szabhatja testre **elemleírások**, közvetíteni gyors információk és az irányítópultokat és jelentéseket megtekintő felhasználók számára elérhető, az adatkészlet bármely mező használatával.
 

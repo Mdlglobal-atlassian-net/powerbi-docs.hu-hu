@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 8762be72353aa779281d721ac8038b6e3dd16aa2
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454227"
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Beágyazott hierarchiák feliratainak használata a Power BI Desktopban
@@ -51,7 +51,7 @@ Az alábbiakban bemutatunk egy másik diagramot olyan adatokkal, amelyek közt i
 
 ![Diagram informális hierarchiával](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand.png)
 
-Ha a **Kibontás a következő szintre** lehetőséget választja, megjelenik a következő szint a hierarchiák feliratainak beágyazott megjelenítésével. Alapértelmezés szerint a beágyazott hierarchiák a mértékérték alapján vannak rendezve, ebben az esetben a **Quantity** érték alapján. Ha a beágyazott hierarchiák feliratai be vannak kapcsolva, az adatokat hierarchia szerint is rendezheti a felső sarokban található három pont (**...**), majd pedig a **Rendezés szempontja: ShipCountry** lehetőség kiválasztásával, az alábbi képen látható módon.
+Ha a **Kibontás a következő szintre** lehetőséget választja, megjelenik a következő szint a hierarchiák feliratainak beágyazott megjelenítésével. Alapértelmezés szerint a beágyazott hierarchiák a mértékérték alapján vannak rendezve, ebben az esetben a **Quantity** érték alapján. Ha a beágyazott hierarchiák feliratai be vannak kapcsolva, az adatokat hierarchia szerint is rendezheti a felső sarokban található három pont ( **...** ), majd pedig a **Rendezés szempontja: ShipCountry** lehetőség kiválasztásával, az alábbi képen látható módon.
 
 ![Informális hierarchiát tartalmazó diagram alapértelmezett rendezéssel](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sort-quantity.png)
 

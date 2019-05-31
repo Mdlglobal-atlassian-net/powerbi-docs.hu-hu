@@ -7,27 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2017
+ms.date: 04/30/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 849c377a140cd0dd31f55760987336fc3711bc79
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 6fb02e6cbaca30859aa00f58ae07c9a3fd7f6fe0
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285859"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65101493"
 ---
 # <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>Hiba: Nem található adat az Excel-munkafüzetben
 
->[!NOTE]
+>[!NOTE]  
 >Ez a cikk az Excel 2007-es vagy újabb verzióira vonatkozik.
 
 Excel-munkafüzet Power BI-ba történő importálásakor a következő hiba jelenhet meg:
 
-*Hiba: Nem található adat az Excel-munkafüzetben. Lehet, hogy az adatok nem megfelelő formátumúak. A munkafüzetet szerkesztenie kell az Excelben, majd újra kell importálnia.*
+*Hiba: Nem sikerült megtalálni az adatok táblázatként vannak formázva. Az Excelből importálja a Power BI szolgáltatásban, formázhatja az adatokat táblázatként kell. Válassza ki az összes adatot a táblázatba szeretne, és nyomja le a Ctrl + T billentyűkombinációt.*
 
-![Nem található adat a munkafüzetben](media/service-admin-troubleshoot-excel-workbook-data/pbi_wecouldntfindanydata.png)
+![Nem található adat a munkafüzetben](media/service-admin-troubleshoot-excel-workbook-data/power-bi-we-couldnt-find-any-data.png)
 
 ## <a name="quick-solution"></a>Gyors megoldás
 1. Szerkessze a munkafüzetet az Excelben.
@@ -47,28 +47,28 @@ Excel-munkafüzet importálásakor a Power BI ezeket a táblázatokat keresi, ma
     >[!NOTE]
     >Ezek a képek az Excel 2013-ból valók. Ha más verziót használ, a megjelenés eltérő lehet, de a lépések ugyanazok.
     
-    ![Munkafüzet megnyitása](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht1.png)
+    ![Munkafüzet megnyitása](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-worksheet-1.png)
 2. Válassza ki az adatokat tartalmazó cellatartományt. Az első sornak az oszlopfejléceket (oszlopneveket) kell tartalmaznia:
    
-    ![Cellatartomány kijelölése](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht2.png)
+    ![Cellatartomány kijelölése](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-worksheet-2.png)
 3. A **BESZÚRÁS** lap menüszalagján kattintson a **Táblázat** elemre. (Vagy használja a **Ctrl + T** billentyűparancsot.)
    
-    ![Táblázat beszúrása](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht3.png)
+    ![Táblázat beszúrása](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-worksheet-3.png)
 4. A következő párbeszédpanel jelenik meg. Ellenőrizze, hogy a **Táblázatban vannak fejlécek** lehetőség ki van jelölve, majd nyomja le az **OK** gombot:
    
-    ![Táblázat létrehozása](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlcreatetbl.png)
+    ![Táblázat létrehozása](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-create-table.png)
 5. Az adatok most már táblázatként vannak formázva:
    
-    ![Táblázatként formázott adatok](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xltbl.png)
+    ![Táblázatként formázott adatok](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-table.png)
 6. Mentse a munkafüzetet.
 7. Térjen vissza a Power BI-ba. Kattintson az Adatok lekérése elemre a bal oldali navigációs ablaktábla alján.
    
-    ![Adatok lekérése](media/service-admin-troubleshoot-excel-workbook-data/pbi_getdata.png)
+    ![Adatok lekérése](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-data.png)
 8. A **Fájlok** mezőben válassza a **Beolvasás** lehetőséget.
    
-    ![Fájlok lekérése](media/service-admin-troubleshoot-excel-workbook-data/pbi_getfiles.png)
+    ![Fájlok lekérése](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-files.png)
 9. Importálja újra az Excel-munkafüzetet. Az importálási folyamatnak most már sikeresen meg kell találnia a táblázatot.
    
     Ha az importálás még mindig sikertelen, hozza a tudomásunkra a Súgó menü **Közösség ** lehetőségére kattintva:
    
-    ![Közösségi hivatkozás](media/service-admin-troubleshoot-excel-workbook-data/pbi_questionmenucommunity.png)
+    ![Közösségi hivatkozás](media/service-admin-troubleshoot-excel-workbook-data/power-bi-question-menu-community.png)

@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6c63f0bbcf836c90eecf7407d2d9805fc9ab443a
-ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
-ms.translationtype: HT
+ms.openlocfilehash: 31c1cd7a8455232fdaa3bb3d391fb93e87ad5062
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58430323"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61404398"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)
 
@@ -90,7 +90,7 @@ Adatforrásként válassza a **Szöveg/CSV-fájl** lehetőséget.
 
 A következő képernyőn a rendszer kérni fogja, hogy kapcsolódjon egy adatforráshoz. Illessze be azoknak az adatoknak a hivatkozását, amelyet az Azure ML-modell létrehozásához is használt. Ha az _Autógyártási árak_ adatokat használta, az alábbi hivatkozást illessze be a **Fájl elérési útja vagy URL-cím** szövegmezőbe, majd válassza a **Következő** elemet.
 
-`https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv`
+`https://raw.githubusercontent.com/MicrosoftLearning/Principles-of-Machine-Learning-Python/master/Module7/Automobile%20price%20data%20_Raw_.csv`
 
 ![Kapcsolódás adatforráshoz](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 

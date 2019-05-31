@@ -1,20 +1,20 @@
 ---
 title: Sorszintű biztonság (RLS) a Power BI jelentéskészítő kiszolgálóban
 description: Információ a sorszintű biztonság (RLS) a Power BI jelentéskészítő kiszolgálóban való használatáról.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 5a39c976a9b9812754ade2e30eac13aa922fd7f9
-ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
-ms.translationtype: HT
+ms.openlocfilehash: b4a5d11697cff2cae8d137916636907967a7c276
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58489568"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64769821"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sorszintű biztonság (RLS) a Power BI jelentéskészítő kiszolgálóban
 
@@ -46,7 +46,7 @@ Miután menti a jelentést a Power BI jelentéskészítő kiszolgálón, kezelhe
  Ha a jelentés nem rendelkezik a szükséges szerepkörökkel, nyissa meg a jelentést a Power BI Desktopban, adjon hozzá szerepköröket vagy módosítsa azokat, majd ismét mentse azt a Power BI jelentéskészítő kiszolgálón. 
 
 1. A Power BI Desktopban mentse a jelentést a Power BI jelentéskészítő kiszolgálóra. A Power BI Desktopnak azt a verzióját kell használnia, amely a Power BI jelentéskészítő kiszolgálóhoz van optimalizálva.
-2. A Power BI jelentéskészítő kiszolgálóban válassza a jelentés melletti három pontot (**...**). 
+2. A Power BI jelentéskészítő kiszolgálóban válassza a jelentés melletti három pontot ( **...** ). 
 
 3. Válassza a **Kezelés** > **Sorszintű biztonság** lehetőséget. 
 

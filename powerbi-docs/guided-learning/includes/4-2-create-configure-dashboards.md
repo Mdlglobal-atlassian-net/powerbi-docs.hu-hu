@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 94ff18339d2eb14faebf124786cab7f9ac66393e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263859"
+---
 A Power BI **irányítópultjai** olyan, vizualizációkat tartalmazó egyoldalas gyűjtemények, amelyeket a Power BI szolgáltatásban hoztak létre. Irányítópultokat az Ön által a Power BI Desktopban létrehozott és közzétett jelentések vizualizációinak **rögzítésével**, vagy magán a Power BI szolgáltatáson belül létrehozott vizualizációkkal hozhat létre. A vizualizációk **rögzítése** olyan, mint egy kép kitűzése egy táblára: a kép mások számára is megtekinthetővé válik egy adott helyen, rögzített formában. Vizualizációk rögzítéséhez nyissa meg a hozzájuk tartozó jelentést a Power BI szolgáltatásban. Helyezze a kurzort a rögzíteni kívánt vizualizáció felé, és kattintson a **rajzszög** ikonra.
 
 ![](media/4-2-create-configure-dashboards/4-2_1.png)

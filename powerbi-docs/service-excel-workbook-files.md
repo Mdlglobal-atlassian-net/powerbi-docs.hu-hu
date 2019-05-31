@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 54108b8d4fd02730cb1aa027d2fefbad2bbfd9fb
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513106"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Adatok elérése Excel-munkafüzetfájlokból
@@ -119,7 +119,7 @@ Az Excel 2016 **Közzététel a Power BI-ban** funkciója a fájlok importálás
 ## <a name="troubleshooting"></a>Hibaelhárítás
 Túl nagy a munkafüzetfájl? Tekintse meg az [Excel-munkafüzet a Power BI-ban történő megtekintéshez való méretcsökkentését](reduce-the-size-of-an-excel-workbook.md) ismertető szakaszt.
 
-Az Importálás funkció kiválasztása esetén a Power BI jelenleg csak a nevesített táblákban vagy egy adatmodellben található adatokat importálja. Ennek következtében, ha a munkafüzet nem tartalmaz nevesített táblákat, Power View-lapokat vagy Excel-adatmodelleket, az alábbi hibaüzenet jelenhet meg: **„Nem található adat az Excel-munkafüzetben”**. [Ez a cikk](service-admin-troubleshoot-excel-workbook-data.md) ismerteti, hogyan javíthatja ki a munkafüzet hibáit, és importálhatja azt újra.
+Az Importálás funkció kiválasztása esetén a Power BI jelenleg csak a nevesített táblákban vagy egy adatmodellben található adatokat importálja. Ennek következtében, ha a munkafüzet nem tartalmaz nevesített táblákat, Power View-lapokat vagy Excel-adatmodelleket, az alábbi hibaüzenet jelenhet meg: **„Nem található adat az Excel-munkafüzetben”** . [Ez a cikk](service-admin-troubleshoot-excel-workbook-data.md) ismerteti, hogyan javíthatja ki a munkafüzet hibáit, és importálhatja azt újra.
 
 ## <a name="next-steps"></a>Következő lépések
 **Az adatok áttekintése** – Miután a fájlból a Power BI-ba helyezte az adatokat és jelentéseket, ideje áttekinteni azokat. Kattintson a jobb gombbal az új adatkészletre, majd kattintson a Tallózás elemre. Ha a 4. lépésben egy OneDrive-on tárolt fájl csatlakoztatása mellett döntött, a munkafüzet a Jelentések területen fog megjelenni. Ha rákattint, a munkafüzet ugyanúgy megnyílik, mintha Excel Online-ban lenne.

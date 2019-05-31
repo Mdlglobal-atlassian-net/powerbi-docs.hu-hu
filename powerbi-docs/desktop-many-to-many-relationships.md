@@ -11,10 +11,10 @@ ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: 97718ee6411d0063aa145e768fd20d3ebb6024b6
-ms.sourcegitcommit: c9080e77ab705f1814a352c0dda6b10910a5018e
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/20/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65941432"
 ---
 # <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Több-a-többhöz számosságú kapcsolatok a Power BI Desktopban
@@ -39,7 +39,7 @@ Két tábla tartalmazhatott például egy-egy *Ország* oszlopot, de az *Ország
 
 ## <a name="use-relationships-with-a-many-many-cardinality"></a>*Több-a-többhöz számosságú kapcsolatok* használata
 
-Amikor kapcsolatot definiál két tábla között a Power BI-ban, meg kell adnia a kapcsolat számosságát. Például a *ProductSales* (értékesítések) és *Product*&mdash;(termék) táblák közötti kapcsolat a *ProductSales[ProductCode]* és a *Product[ProductCode]*&mdash;oszlop alapján *több-az-egyhez* kapcsolatként lenne definiálva. A kapcsolatot azért definiálható így, mert egy termékhez több értékesítés is tartozhat, és a *Product* tábla *(ProductCode)* (termékkód) oszlopa egyedi. Amikor egy kapcsolat számosságaként *több-az-egyhez*, *egy-a-többhöz* vagy *egy-az-egyhez* van megadva, a Power BI ellenőrzi, hogy a megadott számosság megfelel-e a tényleges adatoknak.
+Amikor kapcsolatot definiál két tábla között a Power BI-ban, meg kell adnia a kapcsolat számosságát. Például a *ProductSales* (értékesítések) és *Product*&mdash;(termék) táblák közötti kapcsolat a *ProductSales[ProductCode]* és a *Product[ProductCode]* &mdash;oszlop alapján *több-az-egyhez* kapcsolatként lenne definiálva. A kapcsolatot azért definiálható így, mert egy termékhez több értékesítés is tartozhat, és a *Product* tábla *(ProductCode)* (termékkód) oszlopa egyedi. Amikor egy kapcsolat számosságaként *több-az-egyhez*, *egy-a-többhöz* vagy *egy-az-egyhez* van megadva, a Power BI ellenőrzi, hogy a megadott számosság megfelel-e a tényleges adatoknak.
 
 Vegyük például az alábbi képen látható egyszerű modellt:
 

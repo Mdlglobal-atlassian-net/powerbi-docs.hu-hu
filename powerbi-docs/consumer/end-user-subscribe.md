@@ -1,5 +1,5 @@
 ---
-title: Saját feliratkozás jelentésekre és irányítópultokra
+title: Saját maga és mások feliratkozás jelentésekre és irányítópultokra
 description: Útmutató saját maga vagy munkatársai Power BI-jelentések vagy -irányítópultok e-mailben továbbított pillanatképére történő feliratkozásához.
 author: mihart
 ms.author: mihart
@@ -9,17 +9,17 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 05/11/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 99501c6acc54188e2e87f0ae93354cac8116273c
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
-ms.translationtype: HT
+ms.openlocfilehash: 472b2736dae2dbc5a1633d0afb6e8e8f32b7ea3c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327941"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65607842"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Feliratkozás egy jelentésre vagy irányítópultra a Power BI szolgáltatásban 
-Minden eddiginél egyszerűbb naprakésznek lenni a legfontosabb irányítópultokkal és jelentésekkel kapcsolatban. Feliratkozhat az Önnek leginkább fontos jelentésoldalakra és irányítópultokra, a Power BI pedig pillanatképeket küld e-mailben a postafiókjába. Megadhatja a Power BI-nak, hogy milyen gyakran szeretne ilyen e-mailt kapni: naponta, hetente vagy az adatok frissítésekor. Akár az e-mailek küldésének pontos időpontját is megadhatja a Power BI-nak, vagy futtathatja most.  
+Minden eddiginél egyszerűbb naprakésznek lenni a legfontosabb irányítópultokkal és jelentésekkel kapcsolatban. Fizessen elő a jelentésoldalakon, és irányítópultokat, amelyek az Önnek leginkább fontos, és a Power BI e-mailt küld egy pillanatképet a Beérkezett üzenetek mappájába. Megadhatja a Power BI-nak, hogy milyen gyakran szeretne ilyen e-mailt kapni: naponta, hetente vagy az adatok frissítésekor. Akár az e-mailek küldésének pontos időpontját is megadhatja a Power BI-nak, vagy futtathatja most.  
 
 Az e-mail és a pillanatkép a Power BI beállításaiban szereplő nyelvet fogja használni (lásd [A Power BI által támogatott nyelvek és országok/régiók](../supported-languages-countries-regions.md) témakört). Ha nincs megadva nyelv, a Power BI a böngésző területi beállításait használja. A nyelvi beállításokat megtekintheti vagy módosíthatja a fogaskerék ikon ![fogaskerék ikon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Beállítások > Általános > Nyelv** lehetőség választásával. 
 
@@ -41,13 +41,15 @@ Függetlenül attól, hogy irányítópultra vagy jelentésre iratkozik fel, a f
    
    ![Feliratkozás ikon](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![Feliratkozás ablak](./media/end-user-subscribe/power-bi-emails-new.png)
+   ![Feliratkozás ablak](./media/end-user-subscribe/power-bi-emails-newer.png)
     
     A bal oldali képernyő akkor jelenik meg, ha egy irányítópulton választja a **Feliratkozás** lehetőséget. A jobb oldali képernyő akkor jelenik meg, ha egy jelentésoldalon választja a **Feliratkozás** lehetőséget. Ha egy jelentésben több oldalra is fel szeretne iratkozni, válassza a **Másik előfizetés hozzáadása** lehetőséget, és válasszon ki egy másik oldalt. 
 
 4. A feliratkozást a sárga csúszkával kapcsolhatja be és ki.  A csúszkával történő kikapcsolás nem törli a feliratkozást. A feliratkozás törléséhez válassza a kuka ikont.
 
-4. Ha szeretné, az e-mail-üzenet részleteit is megadhatja. 
+4. Az e-mail-címét automatikusan hozzáadódik a **előfizetés** mező. Részre vagy mások számára a szervezetben, adjon hozzá, valamint itt e-mail címüket. 
+
+5. Ha szeretné, az e-mail-üzenet részleteit is megadhatja. 
 
 5. Válasszon **Gyakoriságot** feliratkozásához.  Napi, Heti, vagy Adatfrissítések utáni (Napi) gyakoriságot választhat.  Ha az e-mailt, amelyre feliratkozott, csak bizonyos napokon szeretné megkapni, válassza a **Heti** értéket, majd jelölje ki a napokat.  Ha például az e-mailt csak munkanapokon szeretné megkapni, válassza a **Heti** gyakoriságot, majd távolítsa el a jelölést a szombat és a vasárnap jelölőnégyzetéből.   
 
@@ -57,26 +59,26 @@ Függetlenül attól, hogy irányítópultra vagy jelentésre iratkozik fel, a f
 
 8. Az előfizetés megtekintéséhez és kipróbálásához válassza a **Futtatás most** lehetőséget.  Ezzel azonnal elküldi az e-mailt magának. 
 
-8. Ha minden jónak látszik, az előfizetés mentéséhez válassza a **Mentés és bezárás** lehetőséget. Az beállított ütemezés szerint e-mailt fog kapni az irányítópult vagy jelentés pillanatképével. Minden olyan feliratkozás, amelynek gyakorisága **Adatfrissítések utáni**, csak az adott napi első ütemezett frissítés után küld e-mailt.
+8. Ha minden jónak látszik, az előfizetés mentéséhez válassza a **Mentés és bezárás** lehetőséget. Ön és kollégái előfizetett kap egy e-mailek és az irányítópult vagy jelentés a megadott ütemterv alapján beállíthat pillanatképét. Minden olyan feliratkozás, amelynek gyakorisága **Adatfrissítések utáni**, csak az adott napi első ütemezett frissítés után küld e-mailt.
    
    ![az irányítópult e-mailes pillanatképe](media/end-user-subscribe/power-bi-subscribe-email.png)
    
-    A jelentésoldal frissítésével az adathalmaz nem frissül. Egy adathalmaz manuális frissítését csak annak tulajdonosa végezheti el. Az alapul szolgáló adathalmaz(ok) nevének megkereséséhez kattintson a felső menüsávon található **Kapcsolódó megtekintése** elemre.
+    A jelentésoldal frissítésével az adathalmaz nem frissül. Egy adathalmaz manuális frissítését csak annak tulajdonosa végezheti el. Keresse ki az alapul szolgáló adatkészlet(ek) tulajdonos nevét, válassza ki a **kapcsolódó megtekintése** a felső menüsávon vagy keresse meg a eredeti előfizetés e-mailt.
    
     ![Kapcsolódó adatkészletek](./media/end-user-subscribe/power-bi-view-related-screen.png)
 
 
 ## <a name="manage-your-subscriptions"></a>Feliratkozások kezelése
-Csak Ön kezelheti az előfizetéseit. Válassza ismét az **Előfizetés** lehetőséget, és válassza **Az összes előfizetés kezelése** elemet a bal alsó sarokban (lásd a fenti képernyőképet). 
+Csak kezelheti az előfizetést hoz létre. Válassza ismét az **Előfizetés** lehetőséget, és válassza **Az összes előfizetés kezelése** elemet a bal alsó sarokban (lásd a fenti képernyőképet). 
 
 ![összes előfizetés megtekintése a Saját munkaterületen](./media/end-user-subscribe/power-bi-manage.png)
 
 A feliratkozás megszűnik, ha lejár a Pro-licence, ha az irányítópultot vagy jelentést törli a tulajdonosa, vagy ha törlik a feliratkozás létrehozásához használt felhasználói fiókot.
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
-* Előfordulhat, hogy a felhasználóknak küldött előfizetési e-mailekben a több mint 25 kitűzött csempével vagy négy kitűzött élő jelentésoldallal rendelkező irányítópultok nem jelennek meg teljes egészében. Javasoljuk, hogy az e-mail megfelelő megjelenítése érdekében csökkentse a kitűzött csempék számát 25 alá, a kitűzött élő jelentések számát pedig négy alá.  
+* Előfordulhat, hogy a felhasználóknak küldött előfizetési e-mailekben a több mint 25 kitűzött csempével vagy négy kitűzött élő jelentésoldallal rendelkező irányítópultok nem jelennek meg teljes egészében. Javasoljuk, hogy forduljon az irányítópult-tervező, és kérje meg őket a rögzített csempék csökkentheti a 25-nél kisebb és rögzített élő jelentések kevesebb mint négy, győződjön meg arról, hogy az az e-mailben megfelelően jelenik meg.  
 * Az irányítópultok e-mail-feliratkozásai esetén, ha bármely csempe sorszintű biztonsággal (RLS) rendelkezik, ezek a csempék nem jelennek meg.  A jelentésekhez kapcsolódó e-mail-feliratkozások esetén, ha az adatkészlet sorszintű biztonságot használ, nem hozható létre feliratkozás.
-* A jelentésoldalakra való feliratkozás a jelentésoldal nevéhez kapcsolódik. Ha feliratkozik egy jelentés oldalára, és annak megváltozik a neve, újból létre kell hoznia az előfizetést
+* A jelentésoldalakra való feliratkozás a jelentésoldal nevéhez kapcsolódik. Ha előfizet az egy jelentésoldalon, és lekérdezi átnevezésük, akkor újra létre kell hoznia az előfizetés.
 * Ha nem tudja használni a feliratkozás funkciót, forduljon a rendszergazdához. Lehetséges, hogy vállalata hitelesítési vagy más okból letiltotta ezt a funkciót.  
 * Az e-mailekre való feliratkozások az [egyéni vizualizációk](../power-bi-custom-visuals.md) többségét nem támogatják.  Ez alól kivétel a [minősített](../power-bi-custom-visuals-certified.md) egyéni vizualizációk esete.  
 * Az e-mailekre való feliratkozások jelenleg nem támogatják az R-alapú egyéni vizualizációkat.  

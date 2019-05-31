@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 5c97eacbdbf89a9ef828dad3a5da01e794952f15
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.openlocfilehash: 8fa11926a66b5e295ee23fa6c5b90bfedb2b9761
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65710515"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375105"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Szolgáltatásnév a Power BI-jal (előzetes verzió)
 
@@ -120,7 +120,7 @@ A hagyományos fő fiók használatától eltérően a szolgáltatásnév (csak 
 
 5. Vegye fel a szolgáltatásnevet **rendszergazdaként** a létrehozott új munkaterülethez. Ezt a feladatot kezelheti az [API-kon](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) keresztül vagy a Power BI szolgáltatásban.
 
-    ![Szolgáltatásnév hozzáadása munkaterülethez](media/embed-service-principal/add-service-principal-in-the-UI.png)
+    ![Egyszerű szolgáltatás-rendszergazdaként hozzá egy munkaterületet](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Most választhat, hogy egy mintaalkalmazásban vagy a saját alkalmazásában ágyazza-e be a tartalmat.
 
@@ -174,10 +174,11 @@ Alább egy mintaszkript látható a szolgáltatásnév objektumazonosítójának
 * Szolgáltatásnév használatával nem telepíthet vagy kezelhet helyszíni adatátjárót.
 * A [Beágyazás a cég számára](embed-sample-for-your-organization.md) alkalmazásai nem tudják a szolgáltatásnevet használni.
 * Az [adatfolyamok](../service-dataflows-overview.md) kezelése nem támogatott.
-* A szolgáltatásnév nem támogatja a rendszergazdai API-kat.
+* Egyszerű szolgáltatás jelenleg nem támogatja minden olyan felügyeleti API-k.
 
 ## <a name="next-steps"></a>Következő lépések
 
 * [Alkalmazás regisztrálása](register-app.md)
 * [Power BI Embedded az ügyfelek számára](embed-sample-for-customers.md)
 * [Alkalmazás- és szolgáltatásnév-objektumok az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+* [Sorszintű biztonság a helyszíni adatátjáró használatával az egyszerű szolgáltatás (előzetes verzió)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)

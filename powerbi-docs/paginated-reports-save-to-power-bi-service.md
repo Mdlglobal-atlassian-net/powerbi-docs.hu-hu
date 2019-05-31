@@ -1,20 +1,20 @@
 ---
 title: Lapszámozott jelentés közzététele a Power BI szolgáltatásban (előzetes verzió)
 description: Ez az oktatóanyag arról szól, hogyan tehet közzé lapszámozott jelentéseket a Power BI szolgáltatásba, a helyi számítógépről feltöltve őket.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 58fc7a6b8ebc5519c1c4bb1835758ca94ba225d2
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 93b712d385b78ea806e57769da72bdf41fbaefc3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174545"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61424008"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Lapszámozott jelentés közzététele a Power BI szolgáltatásban (előzetes verzió)
 
@@ -26,7 +26,7 @@ Ha jelentésének helyszíni adatforrása van, akkor a jelentés feltöltése ut
 
 Lehetséges, hogy a munkaterület mellett nincs gyémánt ikon. ![A Power BI Premium-kapacitás gyémánt ikonja](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) Ilyenkor hozzá kell adnia a munkaterületet egy prémium szintű kapacitáshoz. 
 
-1. Válassza a **Munkaterületek** elemet, a munkaterület neve melletti három pontot (**...**), majd a **Munkaterület szerkesztése** lehetőséget.
+1. Válassza a **Munkaterületek** elemet, a munkaterület neve melletti három pontot ( **...** ), majd a **Munkaterület szerkesztése** lehetőséget.
 
     ![A Munkaterület szerkesztése elem kiválasztása](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace.png)
 

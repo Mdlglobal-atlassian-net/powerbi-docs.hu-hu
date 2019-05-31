@@ -9,13 +9,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/10/2019
-ms.openlocfilehash: a9f8c6248f9754192009e12bab34d3f1427269c2
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.date: 05/9/2019
+ms.openlocfilehash: 8c806f0de021c3857039649876864f47e1fffdb2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174798"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65454562"
 ---
 # <a name="certified-custom-visuals"></a>Minősített egyéni vizualizációk
 
@@ -44,11 +44,34 @@ A Microsoft saját belátása szerint eltávolíthatja a vizualizációkat a [Mi
 Az egyéni vizualizáció [minősítéséhez](#certified-custom-visuals) győződjön meg róla, hogy az megfelel az alábbi feltételeknek:  
 
 * Microsoft AppSource-jóváhagyás. Az egyéni vizualizáció megtalálható a [piactéren](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Az egyéni vizualizációt a verzióval ellátott API-k 1.2-es vagy újabb verzióival kell megírni.
-* A Power BI csapata számára ellenőrzésre elérhetővé tett kódtár (például ember által olvasható formátumú JavaScript- vagy TypeScript- forráskód a GitHubon).
+* A rendszerverzióval ellátott írt egyéni Vizualizáció **API v2.5** vagy újabb verziója.
+* A kódtár érhető el Power BI csapata által (a példány, a forráskód (JavaScript- vagy TypeScript) emberi olvasható formátumban érhető el, hanem a hozzánk a Githubon keresztül).
 
     >[!Note]
     > Nem kell nyilvánosan megosztania a kódot a GitHubon.
+* Kód tárház követelmények:
+   * Tartalmaznia kell a szükséges minimálisan szükséges fájlok:
+      * .gitignore
+      * capabilities.json
+      * pbiviz.json
+      * package.json
+      * package-lock.json
+      * tsconfig.json
+   * Nem tartalmazhat node_modules mappa (node_modules hozzá .gitingore fájl)
+   * **az npm telepítése** parancs nem ad vissza hibát.
+   * **az npm naplózási** parancs nesmí vracet vlastnost figyelmeztetéseket magas vagy közepes szintűek.
+   * **pbiviz csomag** parancs nem ad vissza hibát.
+   * Tartalmaznia kell [Microsoft TSlint](https://www.npmjs.com/package/tslint-microsoft-contrib) felülbírált konfiguráció nélkül, és ez a parancs nem adja vissza minden lint hibákat.
+   * A lefordított csomag, az egyéni Vizualizáció meg kell egyeznie az elküldött csomag (mindkét fájl md5-kivonat egyenlőnek kell lennie).
+* Forrás kód követelmények:
+   * A Vizualizáció támogatnia kell a [események API leképezési](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Győződjön meg arról, tetszőleges/dinamikus kódot nem fut (hibás: eval(), nem biztonságos settimeout(), requestAnimationFrame(), setinterval (néhány felhasználói bevitel függvényt), a futó felhasználói bevitel/adatok használata).
+   * Győződjön meg arról, biztonságosan-n DOM (hibás: mielőtt hozzáadná a értük el innerHTML tulajdonságot, D3.html (< felhasználói/adatok bemeneti adatokat >), használja az felhasználói bevitel/adatok tisztító
+   * Győződjön meg arról, a bemeneti adatokat a böngészőbeli konzolon nincs javascript-hibák és kivételek szerepelnek. Felhasználók előfordulhat, hogy a Vizualizáció használata váratlan adatokat számos különböző, így a Vizualizáció nem hiúsul meg kell. Használhat [a mintajelentés](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) teszt adatkészletként.
+
+* Ha módosítják a capabilities.json tulajdonságokat, ellenőrizze, hogy azok nem hibásodik meglévő felhasználói jelentések.
+
+* Ellenőrizze, hogy a Vizualizáció megfelel a [útmutató a Power BI-Vizualizációk](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Nincs a vízjelek engedélyezettek**.
 
 * Csak nyilvánosan véleményezhető OSS-összetevők használata (nyilvános JS-kódtárak vagy nyilvános TypeScript. A forráskód véleményezhető, és nincsenek ismert biztonsági rései). Kereskedelmi összetevővel rendelkező egyéni vizualizációt nem minősíthetünk.
 

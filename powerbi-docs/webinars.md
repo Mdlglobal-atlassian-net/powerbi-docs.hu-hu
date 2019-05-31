@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: 3a5a84bdb22996fc3b773a861a85e82985cd036c
-ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
-ms.translationtype: HT
+ms.openlocfilehash: b0a6b3027e548becf56cc5f0d7036e35c9316cd4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58220977"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187707"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -22,9 +22,7 @@ Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket 
 
 ## <a name="upcoming-webinars"></a>Közelgő webináriumok
 
-**Kölcsönös előnyök a fogyasztási cikkek gyártói és kiskereskedői számára**
-<br>szerző: Liz McCreesh
-<br>[Regisztráció](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
+Még nincs tervezett webinárium. Látogasson vissza később közelgő eseményekért.
 
 >[A Power BI-közösség közelgő webináriumai](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -80,6 +78,10 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 <br>szerző: Wim Coorevits és Enrique Plaza Garcia
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
 
+**Power BI Embedded kezelésére vonatkozó ajánlott eljárások a több-Bérlős központi telepítés Analytics**
+<br>szerző: Nimrod Shalit
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html?LCID=EN-US)
+
 **Power BI: Helyesen elvégzett elemzések**
 <br>Előadó: Gohul Shanmugalingam
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
@@ -117,6 +119,10 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 <br>[Megtekintés](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
 ### <a name="partners"></a>Partnerek ###
+
+**Kölcsönös előnyök a fogyasztási cikkek gyártói és kiskereskedői számára**
+<br>Liz McCreesh a Thorogood szerint
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
 
 **Ügyféladatok átalakítása kereskedelmi előnnyé a Power BI használatával**
 <br>szerző: Angad Soni, Hitachi Solutions

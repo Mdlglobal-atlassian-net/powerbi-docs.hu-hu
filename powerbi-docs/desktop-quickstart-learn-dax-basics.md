@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 64957fa71249c551b4f69b619a12baf03fae6b06
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513720"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>A DAX alapszintű használata a Power BI Desktopban
@@ -47,7 +47,7 @@ A szintaxis képletet alkotó elemei a következők:
 
 **A.** A mérték neve a **Total Sales** (Értékesítések teljes összege).
 
-**B.** Az egyenlőségjel operátor (**=**) jelöli a képlet kezdetét. A kiszámításakor a képlet egy eredményt ad vissza.
+**B.** Az egyenlőségjel operátor ( **=** ) jelöli a képlet kezdetét. A kiszámításakor a képlet egy eredményt ad vissza.
 
 **C.** A **SUM** DAX-függvény összegzi a **Sales[SalesAmount]** (Értékesítések[ÉrtékesítésekÖsszege]) oszlopban lévő összes számot. A függvényekre a későbbiekben térünk vissza.
 
@@ -91,11 +91,11 @@ A feladat végrehajtásához nyissa meg a Contoso értékesítési minta Power B
 
    A CALCULATE függvénnyel a függvénynek átadott argumentum alapján szűrheti az összegezni kívánt összegeket. Ezt nevezzük a függvények beágyazásának. A CALCULATE függvény legalább két argumentumot vesz fel. Az első a kiértékelendő kifejezés, a második pedig egy szűrő.
    
-4. A **CALCULATE** függvény nyitó zárójele **(** után írja be a **SUM** függvényt, majd nyisson még egy zárójelet **(**. Most adja meg a SUM függvény argumentumát.
+4. A **CALCULATE** függvény nyitó zárójele **(** után írja be a **SUM** függvényt, majd nyisson még egy zárójelet **(** . Most adja meg a SUM függvény argumentumát.
 
-5. Kezdje el begépelni a **Sal** kifejezést, majd válassza ki a **Sales[SalesAmount]** argumentumot, és zárja be a zárójelet **)**. Ez a CALCULATE függvény első kifejezésargumentuma.
+5. Kezdje el begépelni a **Sal** kifejezést, majd válassza ki a **Sales[SalesAmount]** argumentumot, és zárja be a zárójelet **)** . Ez a CALCULATE függvény első kifejezésargumentuma.
     
-6. Írjon be egy vesszőt (**,**), aztán egy szóközt az első szűrő megadásához, majd írja be a **PREVIOUSQUARTER** kifejezést. Ez lesz a szűrőnk.
+6. Írjon be egy vesszőt ( **,** ), aztán egy szóközt az első szűrő megadásához, majd írja be a **PREVIOUSQUARTER** kifejezést. Ez lesz a szűrőnk.
     
    A PREVIOUSQUARTER időintelligencia-függvény segítségével szűrhetjük a SUM eredményeit az előző negyedévre.
     
@@ -176,7 +176,7 @@ A szintaxis képletet alkotó elemei a következők:
 
 **A.** A mérték neve a **Store Sales** (Áruházi értékesítés).
 
-**B.** Az egyenlőségjel operátor (**=**) jelöli a képlet kezdetét.
+**B.** Az egyenlőségjel operátor ( **=** ) jelöli a képlet kezdetét.
 
 **C.** A **CALCULATE** függvény a megadott szűrők által módosított környezetben értékel ki egy argumentumként megadott kifejezést.
 
@@ -184,9 +184,9 @@ A szintaxis képletet alkotó elemei a következők:
 
 **E.** A **[Total Sales]** mérték ugyanabban a táblázatban kifejezésként. A Total Sales mérték képlete: =SUM(Sales[SalesAmount]).
 
-**F.** Pontosvessző (**;**) választja el az első kifejezés argumentumát a szűrőargumentumtól.
+**F.** Pontosvessző ( **;** ) választja el az első kifejezés argumentumát a szűrőargumentumtól.
 
-**G.** A hivatkozott oszlop teljes neve: **Channel[ChannelName]**. Ez a sorkörnyezetünk. Ebben az oszlopban minden sor egy értékesítési csatornát ad meg: Store (Áruház), Online stb.
+**G.** A hivatkozott oszlop teljes neve: **Channel[ChannelName]** . Ez a sorkörnyezetünk. Ebben az oszlopban minden sor egy értékesítési csatornát ad meg: Store (Áruház), Online stb.
 
 **H.** Az adott **Store** érték mint szűrő. Ez a szűrőkörnyezetünk.
 

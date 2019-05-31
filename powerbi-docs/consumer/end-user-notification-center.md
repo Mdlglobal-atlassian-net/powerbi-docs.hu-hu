@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 34bb77c84d1813e32421b87e957e24a946f282f7
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661997"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61066233"
 ---
 # <a name="view-power-bi-notifications"></a>Power BI-értesítések megtekintése
 Az értesítési központ a Power BI használatával kapcsolatos információkból álló szekvenciális hírcsatorna. A megnyitásakor az Önnel megosztott új irányítópultokkal, a csoport munkaterületének változásaival, a Power BI-eseményekre és -értekezletekre vonatkozó értesítésekkel és egyebekkel kapcsolatos üzenetek láthatók. [Riasztásokat beállíthat a Power BI szolgáltatásban](../service-set-data-alerts.md) és a Power BI-mobilalkalmazásokban is.

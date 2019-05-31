@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f81300becc8a79b8a169aebe2ce3c56991c03262
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256256"
+---
 Üdvözli a Power BI **Interaktív tanulás** oktatóanyagának **Közzététel és megosztás** szakasza.
 
 Most, hogy már tudja, milyen gördülékenyen működik együtt az Excel és a Power BI, és megtanulta, hogyan készíthet vizualizációkat a jelentésekhez és az irányítópultokhoz, ideje megtudni, miként tudja őket megosztani munkatársaival és barátaival. A Power BI használatával a **közzététel és megosztás** könnyen megoldható.

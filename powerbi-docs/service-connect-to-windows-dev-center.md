@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 81498dff9c70deaf8135faf244db96509b1cf18d
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008833"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61163968"
 ---
 # <a name="connect-to-windows-dev-center-with-power-bi"></a>Kapcsolódás a Windows fejlesztői központhoz a Power BI-jal
 A Power BI-tartalomcsomag használatával a Power BI-ban vizsgálhatja és figyelheti a Windows fejlesztői központ alkalmazáselemzési adatait. Az adatok naponta egyszer automatikusan frissülnek.
@@ -66,7 +66,7 @@ Ez a tartalomcsomag megkövetel legalább egy, a Windows Áruházban közzétett
 ## <a name="finding-parameters"></a>Paraméterek keresése
 Egy alkalmazás azonosítóját az Alkalmazáskezelés alatti Alkalmazásidentitás lap megnyitásával találhatja meg.
 
-Az alkalmazás azonosítója a Windows 10 Áruházbeli URL-cím végén található (https://www.microsoft.com/store/apps/ **{alkalmazásazonosító}**)
+Az alkalmazás azonosítója a Windows 10 Áruházbeli URL-cím végén található (https://www.microsoft.com/store/apps/ **{alkalmazásazonosító}** )
 
 ## <a name="next-steps"></a>Következő lépések
 [Első lépések a Power BI-ban](service-get-started.md)

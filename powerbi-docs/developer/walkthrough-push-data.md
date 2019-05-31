@@ -1,26 +1,26 @@
 ---
 title: Adatok elküldése adatkészletbe
 description: Adatok elküldése Power BI-adatkészletbe
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: 642a8e7dd118838b5ea12c8758841ee44a8e6595
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 9eb81610044f795b6f9dc5c58aeefad13de06542
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762260"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66222156"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Adatok elküldése Power BI-adatkészletbe
 
-A Power BI API-val adatokat küldhet egy Power BI-adatkészletbe. Tegyük fel például, hogy ki szeretne bővíteni egy már meglévő üzleti munkafolyamatot kulcsfontosságú adatoknak az adatkészletbe történő elküldésével. Ebben az esetben egy Termék táblát tartalmazó Értékesítési marketing adatkészletet kíván elküldeni egy adatkészletbe.
+A Power BI API lehetővé teszi adatok leküldése a Power BI-adatkészletbe. Ebben a cikkben bemutatjuk, hogyan küldhet be egy meglévő adatkészlet egy termék táblát tartalmazó értékesítési Marketing adatkészletet.
 
-Mielőtt elkezdené az adatok adatkészletbe való elküldését, szüksége lesz egy Azure Active Directoryra (Azure AD) és egy [Power BI-fiókra](create-an-azure-active-directory-tenant.md).
+Az első lépések előtt kell egy Azure Active Directory (Azure AD) és a egy [Power BI-fiókja](create-an-azure-active-directory-tenant.md).
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Adatok adatkészletbe történő elküldésének lépései
 
@@ -34,7 +34,7 @@ A következő szakasz egy általános ismertetés az adatok küldésére haszná
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Adatok küldésére használt Power BI API-műveletek
 
-A Power BI REST API-val adatforrásokat küldhet a Power BI-ba. Amikor egy alkalmazás sorokat ad hozzá egy adatkészlethez, az irányítópulton lévő csempék automatikusan frissülnek az új adatokkal. Adatokat a [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets), és a [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) műveletekkel küldhet. Egy adatkészlet kereséséhez használja az [Adatkészletek lekérése](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) műveletet. A fenti műveletek bármelyike esetében átadhat egy csoportazonosítót a csoporttal való munkavégzéshez. A [Csoportok lekérése](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) művelettel lekérheti a csoportazonosítók listáját.
+A Power BI REST API-val adatforrásokat küldhet a Power BI-ba. Amikor egy alkalmazás sorokat ad hozzá egy adatkészlethez, irányítópult-csempék frissítés automatikusan az új adatokkal. Az adatok leküldéséhez használja a [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset) és [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) műveleteket. Egy adatkészlet kereséséhez használja a [adatkészletek lekérése](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) műveletet. Megadhat egy csoportot a fenti műveletek bármelyike dolgozni egy csoport azonosítója. Egy azonosító listájának lekéréséhez használja a [csoportok lekérése](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) műveletet.
 
 Az adatok adatkészletbe történő elküldéséhez használható műveletek az alábbiak:
 
@@ -59,7 +59,7 @@ Az adatkészletek JSON-sztringjének formátuma a következő:
         ]
     }
 
-Az Értékesítési marketing-adatkészlet példájában tehát az alábbihoz hasonló JSON-sztringet kellene átadnia. Ebben a példában a **SalesMarketing** az adatkészlet, a **Product** (Termék) pedig a tábla neve. A tábla meghatározása után a táblasémát kell meghatározni. A **SalesMarketing** adatkészlet esetében a táblaséma az alábbi oszlopokat tartalmazza: ProductID (Termékazonosító), Manufacturer (Gyártó), Category (Kategória), Segment (Szegmens), Product (Termék) és IsComplete (Kész állapot).
+Értékesítési Marketing adatkészletet példa ahogy az alábbi JSON-karakterláncot kellene átadnia. Ebben a példában **SalesMarketing** az adatkészlet neve, és **termék** a tábla neve. A tábla meghatározása, után határozza meg a következő tábla sémáját. A **SalesMarketing** adatkészlet esetében a táblaséma az alábbi oszlopokat tartalmazza: ProductID (Termékazonosító), Manufacturer (Gyártó), Category (Kategória), Segment (Szegmens), Product (Termék) és IsComplete (Kész állapot).
 
 **Példa adatkészlet-objektum JSON-ra**
 
@@ -105,10 +105,10 @@ Power BI-táblaséma esetén az alábbi adattípusok használhatók.
 | **Adattípus** | **Korlátozások** |
 | --- | --- |
 | Int64 |Az Int64.MaxValue és Int64.MinValue érték nem engedélyezett. |
-| Double |A Double.MaxValue és Double.MinValue érték nem engedélyezett. A számtól eltérő értékek (NaN) nem támogatottak. +Infinity és -Infinity értékek nem támogatottak egyes függvényekben (pl.: Min, Max). |
-| Boolean |Nincsenek |
-| Datetime |Az adatok betöltése során kvantáljuk az értékeket a napok törtrészével az 1/300 másodperc (3,33 ms) egész többszörösévé. |
-| Sztring |Jelenleg legfeljebb 128 ezer karakter hosszú lehet. |
+| Double |A Double.MaxValue és Double.MinValue érték nem engedélyezett. Nem támogatott NaN. + Infinity és - Infinity értékek nem támogatottak egyes függvényekben (például, Min, Max). |
+| Logikai érték |Nincsenek |
+| Datetime |Adatok betöltése során kvantáljuk az értékeket a 1/300 másodperc (3,33 ezredmásodperc) egész többszöröseiként. |
+| Sztring |Jelenleg lehetővé teszi, hogy legfeljebb 128 ezer karakter hosszú lehet. |
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>További információk az adatoknak a Power BI-ba leküldésével kapcsolatban
 

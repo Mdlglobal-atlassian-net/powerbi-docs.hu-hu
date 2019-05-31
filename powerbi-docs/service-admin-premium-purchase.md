@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
 ms.openlocfilehash: bc55d290e10832034ed96d7092c5baa4b7cc20d1
-ms.sourcegitcommit: 317980e9f40fb3ed6eeb91b92056f242bd814a2c
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/14/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65565283"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>A Power BI Premium megvásárlása
@@ -48,7 +48,7 @@ Premium-kapacitás vásárlásához kövesse az alábbi lépéseket.
 
 1. Az **Egyéb csomagok** területen keresse meg a Power BI Premium ajánlatait. Itt az alábbi lehetőségek közül választhat: P1-től P3-ig, valamint EM3 és P1 (havonta megújuló).
 
-1. Helyezze a kurzort a három pont fölé (**. . .**), majd válassza a **Vásárlás** lehetőséget.
+1. Helyezze a kurzort a három pont fölé ( **. . .** ), majd válassza a **Vásárlás** lehetőséget.
 
     ![Vásárlás](media/service-admin-premium-purchase/premium-purchase.png)
 

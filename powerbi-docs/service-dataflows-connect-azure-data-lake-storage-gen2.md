@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/10/2019
+ms.date: 04/15/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 875f30a6e051561f20a7ca54bc48343dd7248e79
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 79bba3b65d508716bc451c1c4876a8674242fcc2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174752"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61139252"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)
 
 A Power BI-munkaterületeket konfigurálhatja úgy, hogy az adatfolyamokat a szervezeti Azure Data Lake Storage Gen2-fiókban tárolják. Ez a cikk az ehhez szükséges általános lépéseket útmutatással és az ajánlott eljárásokkal együtt ismerteti. A munkaterületek Data Lake-beli adatfolyam-definíciók és adatfájlok tárolására való konfigurálása egyebek mellett az alábbi előnyökkel jár:
 
 * Az Azure Data Lake Storage Gen2 kitűnően méretezhető tárolási lehetőséget kínál az adatokhoz
-* Az adatfolyam-adatokat és a definíciós fájlokat az informatikai fejlesztők is felhasználhatják az Azure Data és a mesterséges intelligencia (AI) kiaknázására az [Azure Data Servicesből származó github-mintákat](https://aka.ms/cdmadstutorial) ismertető cikkben leírtak szerint
-* A vállalati fejlesztők a belső alkalmazásokba és üzletági megoldásokba integrálhatják az adatfolyamok adatait, az adatfolyamokhoz és az Azure-hoz készült fejlesztői források használatával
+* Adatfolyam adatok és definíciós fájlokat is javítható az informatikai részleg a fejlesztők az Azure adatok és mesterséges intelligencia (AI) szolgáltatások, ahogyan az a [GitHub-minták az Azure-adatszolgáltatások](https://aka.ms/cdmadstutorial)
+* Lehetővé teszi a fejlesztők a szervezet belső alkalmazásokat és üzleti megoldások, fejlesztői erőforrások adatfolyamok és az Azure-adatfolyam adatok integrálása
 
 Az Azure Data Lake Storage Gen2 adatfolyamokhoz való felhasználásához az alábbiak szükségesek:
 
@@ -31,11 +31,13 @@ Az Azure Data Lake Storage Gen2 adatfolyamokhoz való felhasználásához az al�
 * **Globális rendszergazdafiók** – ez a fiókra akkor van szükség, ha csatlakozni szeretne a Power BI-hoz, és úgy szeretné konfigurálni a Power BI-t, hogy az Azure Data Lake Storage Gen2-fiókjában tárolja az adatfolyam-definíciót és az -adatokat
 * **Azure-előfizetés** – az Azure Data Lake Storage Gen2 használatához Azure-előfizetés szükséges
 * **Erőforráscsoport** – használhat meglévő erőforráscsoportot, vagy létrehozhat egy újat
-* **Azure Storage-fiók a Data Lake Storage Gen2 (előzetes verzió) funkció engedélyezésével** – az Azure Data Lake Storage Gen2-höz való csatlakozáshoz regisztrálnia kell a nyilvános előzetes verzióra
+* **Data Lake Storage Gen2 szolgáltatás engedélyezve van az Azure Storage-fiók** 
 
 > [!TIP]
 > Ha még nincs Azure-előfizetése, kezdés előtt hozzon létre egy [ingyenes fiókot](https://azure.microsoft.com/free/).
 
+> [!WARNING]
+> Az adatfolyam-tároló helye a konfigurálás után már nem módosítható. Tekintse meg a [megfontolandó szempontok és korlátozások](#considerations-and-limitations) szakasz egyéb fontos elemet kell figyelembe venni a jelen cikk vége felé.
 
 ## <a name="prepare-your-azure-data-lake-storage-gen2-for-power-bi"></a>Az Azure Data Lake Storage Gen2 előkészítése a Power BI-hoz
 
@@ -49,9 +51,6 @@ Mielőtt Azure Data Lake Storage Gen2-fiókkal konfigurálná a Power BI-t, elő
 6. A Power BI-szolgáltatásoknak engedéllyel kell rendelkezniük a létrehozott **powerbi** fájlrendszerre.
 
 Az alábbi szakaszok az Azure Data Lake Storage Gen2-fiók konfigurálásához szükséges lépéseket írják le részletesen.
-
-> [!NOTE]
-> Az adatfolyamok előzetes verzióban állnak rendelkezésre, és az általánosan elérhetővé válás előtt módosulhatnak és frissülhetnek.
 
 ### <a name="create-the-storage-account"></a>A tárfiók létrehozása
 
@@ -71,7 +70,9 @@ A **Szerepkör-hozzárendelés megadása** ablakban válassza az **Olvasó** sze
 
 ![Power BI szolgáltatás az Olvasó szerepkörhöz rendelve](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
 
-Megjegyzés: Legalább 30 percig tart, amíg az engedély a Power BI-ból átkerül a Portalra. A Portalon végzett bármilyen módosítás esetén 30 percig tarthat, amíg a módosítás megjelenik a Power BI-ban. 
+
+> [!NOTE]
+> Engedélyezése legalább 30 percig engedély propagálása a Power bi-bA a portálról. Bármikor módosíthatja a portálon, az engedélyek lehetővé teszik, hogy ilyen engedéllyel, hogy a Power BI 30 perc. 
 
 
 ### <a name="create-a-file-system-for-power-bi"></a>Fájlrendszer létrehozása a Power BI-hoz
@@ -114,7 +115,7 @@ Bérlői alkalmazásait az alábbi lépésekkel találhatja meg:
 
     ![Power-alkalmazások keresése](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Jelölje ki és másolja ki a Power BI szolgáltatás és a Power BI prémium mindkét objektumazonosítóját a keresési eredmények közül. Ezeket az értékeket a következő lépések során fogja beilleszteni.
+5. Válassza ki, és másolja a Power BI szolgáltatás objektumazonosítói mind online a Power Query az a keresési eredmények közül. Ezeket az értékeket a következő lépések során fogja beilleszteni.
 
 7. Ezután az **Azure Storage Explorer** használatával navigáljon az előző szakaszban létrehozott *powerbi* fájlrendszerhez. Hajtsa végre a [Fájl- és könyvtárszintű engedélyek kezelése az Azure Storage Explorerrel](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) című cikk [Hozzáférés-kezelés](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) szakaszának utasításait.
 
@@ -132,15 +133,15 @@ Bérlői alkalmazásait az alábbi lépésekkel találhatja meg:
 
 ## <a name="connect-your-azure-data-lake-storage-gen2-to-power-bi"></a>Az Azure Data Lake Storage Gen2 csatlakoztatása a Power BI-hoz
 
-Miután beállította Azure Data Lake Storage Gen2-fiókját az Azure Portalon, a **Power BI felügyeleti portálon** csatlakoztassa a Power BI-hoz. A Power BI-adatfolyamok tárolóját is kezelheti a Power BI felügyeleti portál **Adatfolyam-tároló (előzetes verzió)** beállításainak szakaszában. Az indításról és az alapszintű használatról [A felügyeleti portál elérése](service-admin-portal.md) című cikk nyújt részletes útmutatást.
+Miután beállította az Azure Data Lake Storage Gen2-fiókot az Azure Portalon, a Power BI csatlakoztatása a **Power BI felügyeleti portáljához**. Is kezelheti a Power BI adatfolyam tárolási a **adatfolyam tárolási** beállítások szakaszában a Power BI felügyeleti portáljához. Az indításról és az alapszintű használatról [A felügyeleti portál elérése](service-admin-portal.md) című cikk nyújt részletes útmutatást.
 
 **Azure Data Lake Storage Gen2**-fiókjához az alábbi lépésekben kapcsolódhat:
 
-1. Nyissa meg az **Adatfolyam-beállítások (előzetes verzió)** lapot a **Power BI felügyeleti portálon**
+1. Keresse meg a **adatfolyamot beállítások** lapján a **Power BI felügyeleti portál**
 
-    ![Power BI felügyeleti portál](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_08.jpg) 
+    ![Power BI felügyeleti portál](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-08b.png) 
 
-2. Válassza a **Csatlakozás az Azure Data Lake Storage Gen2 előzetes verziójához** gombot. Az alábbi ablak jelenik meg.
+2. Válassza ki a **csatlakoztatása az Azure Data Lake Storage Gen2** gombra. Az alábbi ablak jelenik meg.
 
     ![Azure Data Lake Storage Gen2](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_09.jpg) 
 
@@ -161,7 +162,7 @@ Ezután engedélyt kell adnia a vállalaton belüli személyeknek munkaterülete
 
 Az adatfolyam-definíciók és az adatfájlok alapértelmezés szerint a Power BI által biztosított tárolóban helyezkednek el. A saját tárfiókban lévő adatfolyamfájlok eléréséhez a munkaterület rendszergazdáinak először konfigurálnia kell a munkaterület úgy, hogy lehetővé tegye adatfolyamok hozzárendelését és tárolását az új tárfiókban. Ahhoz, hogy konfigurálni tudja az adatfolyam tárolási beállításait, a munkaterület rendszergazdájának tároló-hozzárendelési jogosultságot kell adni a **Power BI felügyeleti portálján**.
 
-Tároló-hozzárendelési jogosultság megadásához nyissa meg az **Adatfolyam-beállítások (előzetes verzió)** lapot a **Power BI felügyeleti portálján**. Az *Annak engedélyezése, hogy a munkaterület-rendszergazdák munkaterületeket rendelhessenek hozzá ehhez a tárfiókhoz* választógombot az **engedélyezés** lehetőségre kell állítani. Az engedély megadása után válassza az **Alkalmaz** gombot a módosítások érvénybe léptetéséhez. 
+Tárolási hozzárendelési engedélyeket, nyissa meg a **adatfolyamot beállítások** lapján a **Power BI felügyeleti portáljához**. Az *Annak engedélyezése, hogy a munkaterület-rendszergazdák munkaterületeket rendelhessenek hozzá ehhez a tárfiókhoz* választógombot az **engedélyezés** lehetőségre kell állítani. Az engedély megadása után válassza az **Alkalmaz** gombot a módosítások érvénybe léptetéséhez. 
 
 ![Munkaterületek hozzárendelésének engedélyezése rendszergazdák számára](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_10.jpg) 
 
@@ -183,7 +184,7 @@ Power BI Desktop-ügyfél csak akkor fér hozzá az **Azure Data Lake-tárfióko
 
 1. Anna új alkalmazás-munkaterületet hozott létre, amelyet úgy konfigurált, hogy a vállalati data lake-ben tárolja az adatfolyamokat. 
 2. Dávid, aki szintén tagja az Anna által létrehozott munkaterületnek, a Power BI Desktop és az adatfolyam-összekötő használatával szeretne adatokhoz jutni az Anna által létrehozott adatfolyamból.
-3. Dávid az alábbi ábrához hasonló hibajelenséget tapasztal, ugyanis nem rendelkezik jogosultsággal az adatfolyam lake-beli CDM-mappájára
+3. Ben hasonló hibaüzenetet kap, mert ő volt nem jogosult a tó az adatfolyamot CDM-mappában.
 
 Gyakori kérdések és válaszok többek között az alábbiak:
 
@@ -209,9 +210,9 @@ Az adatfolyamokról, a CDM-ről és az Azure Data Lake Storage Gen2-ről az alá
 Az adatfolyamokról általánosságban a következő cikkek szólnak:
 
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
-* [Számított entitások használata a Power BI Premiumban (előzetes verzió)](service-dataflows-computed-entities-premium.md)
-* [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
-* [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
+* [A Power BI Premium számított entitások használatával](service-dataflows-computed-entities-premium.md)
+* [Adatfolyamok használata a helyszíni adatforrások](service-dataflows-on-premises-gateways.md)
+* [Fejlesztői erőforrások a Power BI-adatfolyamok](service-dataflows-developer-resources.md)
 
 Az Azure Storage szolgáltatással kapcsolatban az alábbi cikkeket érdemes elolvasni:
 * [Azure Storage – biztonsági útmutató](https://docs.microsoft.com/azure/storage/common/storage-security-guide)

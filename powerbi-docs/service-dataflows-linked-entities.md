@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 52876f05eba098466b3f0b8cebc614d10a3cd277
-ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
-ms.translationtype: HT
+ms.openlocfilehash: d766730185a9064241621d15efc9faf31334fe95
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58220908"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136495"
 ---
-# <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Entitások csatolása adatfolyamok között a Power BI-ban (előzetes verzió)
+# <a name="link-entities-between-dataflows-in-power-bi"></a>Entitások csatolása adatfolyamok között a Power BI-ban
 
 A Power BI-beli adatfolyamok használata esetén elég egyetlen vállalati forrásadattárral rendelkeznie, ahol az üzleti elemzők egyszer készítik elő és kezelik az adatokat, amelyeket aztán a vállalaton belüli különböző elemzőalkalmazások többször is felhasználhatnak. 
 
@@ -29,7 +29,7 @@ A csatolt entitások **csak olvashatók**. Ha átalakításokat akar létrehozni
 
 ## <a name="linked-entity-availability"></a>Csatolt entitás elérhetősége
 
-A csatolt entitások frissítéséhez [Power BI Premium](service-premium.md) előfizetés szükséges. Csatolt entitások a Power BI Premium-kapacitásokban üzemeltetett munkaterületek bármely adatfolyamában elérhetők. A forrásadatfolyamra nem vonatkoznak korlátozások.
+A csatolt entitások frissítéséhez [Power BI Premium](service-premium-what-is.md) előfizetés szükséges. Csatolt entitások a Power BI Premium-kapacitásokban üzemeltetett munkaterületek bármely adatfolyamában elérhetők. A forrásadatfolyamra nem vonatkoznak korlátozások.
 
 A csatolt entitások csak új Power BI-munkaterületeken működnek megfelelően. Az [új Power BI-munkaterületekről](service-create-the-new-workspaces.md) további információ is rendelkezésére áll. A megfelelő működéshez minden csatolt adatfolyamnak új munkaterületen kell elhelyezkednie.
 
@@ -88,11 +88,11 @@ A csatolt entitásokkal végzett munka során tekintetbe kell venni néhány kor
 
 Az alábbi cikkek hasznosak lehetnek adatfolyamok létrehozása, vagy a velük végzett munka során. 
 
-* [Önkiszolgáló adat-előkészítés a Power BI-ban (előzetes verzió)](service-dataflows-overview.md)
+* [Önkiszolgáló adat-előkészítési a Power bi-ban](service-dataflows-overview.md)
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
-* [Számított entitások használata a Power BI Premiumban (előzetes verzió)](service-dataflows-computed-entities-premium.md)
-* [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
-* [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
+* [A Power BI Premium számított entitások használatával](service-dataflows-computed-entities-premium.md)
+* [Adatfolyamok használata a helyszíni adatforrások](service-dataflows-on-premises-gateways.md)
+* [Fejlesztői erőforrások a Power BI-adatfolyamok](service-dataflows-developer-resources.md)
 
 A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)

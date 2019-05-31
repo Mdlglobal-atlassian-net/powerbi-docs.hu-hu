@@ -6,21 +6,21 @@ manager: kfile
 ms.reviewer: lukasz
 ms.service: powerbi
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4f8db4ddfc646ca60dcb3158c1b39a583fafa36c
-ms.sourcegitcommit: 4695f5ef54cc9929828320132f890317b4c3018e
-ms.translationtype: HT
+ms.openlocfilehash: 52b7748b6b634caf87de01ddc965576339a04b8b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "54239175"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61174990"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-app-workspace"></a>Csatlakozás a Power BI alkalmazás munkaterületéhez tartozó OneDrive-ban tárolt fájlokhoz
-Miután [létrehozott egy alkalmazás-munkaterületet a Power BI-ban](service-create-distribute-apps.md), a Power BI alkalmazás-munkaterülethez tartozó OneDrive Vállalati verzióban tárolhatja az Excel-, CSV-, és Power BI Desktop-fájlokat. A OneDrive-ban tárolt fájlokat továbbra is frissítheti, a frissítések pedig automatikusan megjelennek a fájlokon alapuló Power BI-jelentésekben és irányítópultokon. 
+Miután [létrehozott egy alkalmazás-munkaterületet a Power BI-ban](service-create-distribute-apps.md), a Power BI alkalmazás-munkaterülethez tartozó OneDrive Vállalati verzióban tárolhatja az Excel-, CSV-, és Power BI Desktop-fájlokat. Továbbra is a OneDrive-ban tárolt fájlok frissítése. Ezeket a frissítéseket automatikusan megjelennek a Power BI-jelentések és irányítópultok a fájlokon alapuló. 
 
 > [!NOTE]
-> Az új munkaterületi felhasználói felület előzetes verziójában megváltozik a Power BI-munkaterületek és az Office 365-csoportok közötti kapcsolat. A rendszer nem fog automatikusan létrehozni Office 365-csoportokat minden alkalommal, amikor egy új munkaterület jön létre. További információ az [új munkaterületek létrehozásáról (előzetes verzió)](service-create-the-new-workspaces.md)
+> Az új munkaterületi felhasználói felület változik a Power BI-munkaterületeket és az Office 365-csoportok közötti kapcsolatot. Nem automatikusan hoz létre az Office 365-csoport minden alkalommal, amikor egy új munkaterületet hoz létre. További információ [új munkaterület létrehozása](service-create-the-new-workspaces.md)
 
 A fájlokat két lépésben adhatja hozzá az alkalmazás-munkaterülethez: 
 
@@ -30,10 +30,9 @@ A fájlokat két lépésben adhatja hozzá az alkalmazás-munkaterülethez:
 > [!NOTE]
 > Az alkalmazás-munkaterületek csak a [Power BI Proban](service-features-license-type.md) érhetők el.
 > 
-> 
 
 ## <a name="1-upload-files-to-the-onedrive-for-business-for-your-app-workspace"></a>1 Fájlok feltöltése az alkalmazás-munkaterülethez tartozó OneDrive Vállalati verzióba
-1. A Power BI szolgáltatásban kattintson a Munkaterületek melletti nyílra > kattintson a három pontra (**…**) a munkaterület neve mellett. 
+1. A Power BI szolgáltatásban kattintson a Munkaterületek melletti nyílra > kattintson a három pontra ( **…** ) a munkaterület neve mellett. 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
 2. Kattintson a **Fájlok** elemre az alkalmazás-munkaterülethez tartozó OneDrive Vállalati verzió megnyitásához az Office 365-ben.
@@ -49,7 +48,7 @@ A fájlokat két lépésben adhatja hozzá az alkalmazás-munkaterülethez:
 ## <a name="2-import-excel-files-as-datasets-or-as-excel-online-workbooks"></a>2 Excel-fájlok importálása adatkészletek vagy Excel Online-munkafüzetek formájában
 Miután a fájlok bekerültek a alkalmazás-munkaterülethez tartozó OneDrive Vállalati verzióba, kétféle választása van. A következőket teheti: 
 
-* [Adatkészletként importálhatja az adatokat az Excel-munkafüzetből](service-get-data-from-files.md), és használatukkal jelentéseket és irányítópultokat hozhat létre, amelyeket webböngészőben vagy mobileszközökön tekinthet meg.
+* [Az adatok importálása az Excel-munkafüzet, adatkészlet](service-get-data-from-files.md). Az adatok használatával hozhat létre jelentéseket és irányítópultokat egy webböngészőben vagy mobileszközökön is megtekintheti.
 * Vagy [csatlakozhat egy teljes Excel-munkafüzethez a Power BI-ban](service-excel-workbook-files.md), és pontosan olyan formában jelenítheti meg, ahogy az Excel Online-ban látható.
 
 ### <a name="import-or-connect-to-the-files-in-your-app-workspace"></a>Fájlok importálása vagy csatlakozás hozzájuk az alkalmazás-munkaterületen
@@ -65,7 +64,7 @@ Miután a fájlok bekerültek a alkalmazás-munkaterülethez tartozó OneDrive V
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
 5. Válassza ki a kívánt fájlt > **Csatlakozás**.
    
-    Itt döntheti el, hogy [importálja az adatokat az Excel-munkafüzetből](service-get-data-from-files.md), vagy [teljes Excel-munkafüzetekhez csatlakozik](service-excel-workbook-files.md).
+    Ezen a ponton eldöntheti, hogy e [az adatok importálása Excel-munkafüzetekből](service-get-data-from-files.md), vagy [teljes Excel-munkafüzetekhez csatlakozik](service-excel-workbook-files.md).
 6. Válassza az **Importálás** vagy a **Csatlakozás** lehetőséget.
    
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_importexceldataorwholecrop.png)

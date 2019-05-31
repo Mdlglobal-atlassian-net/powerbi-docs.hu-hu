@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2019
+ms.date: 05/15/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: da269e3bb025e8d53ee3bb7707f3bb78d592e011
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
-ms.translationtype: HT
+ms.openlocfilehash: f045e9076cdd8552d6e35e72b9c5f6e2319add68
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56225914"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65853455"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 A Power BI Desktoppal különböző forrásokból származó adatokhoz csatlakozhat. Az elérhető adatforrások teljes listája az oldal alján látható.
@@ -51,7 +51,7 @@ A **Fájl** kategória a következő adatkapcsolatokat biztosítja:
 * XML
 * JSON
 * Mappa
-* PDF (bétaverzió)
+* PDF
 * SharePoint-mappa
 
 A következő képen a **Lekérdezés** ablak látható, amelyen a **Fájl** kategória ki van választva.
@@ -79,14 +79,16 @@ Az **Adatbázis** kategória a következő adatkapcsolatokat biztosítja:
 * Google BigQuery
 * Vertica
 * Snowflake
-* Essbase (bétaverzió)
-* Dremio
-* Exasol
-* MarkLogic (bétaverzió)
+* Essbase
 * AtScale-kockák (bétaverzió)
 * BI-összekötő
+* Dremio
+* Exasol
+* Indexima (bétaverzió)
+* InterSystems IRIS (Beta)
 * Jethro (bétaverzió)
 * Kyligence Enterprise (bétaverzió)
+* MarkLogic (bétaverzió)
 
 > [!NOTE]
 > Egyes adatbázis-összekötőket engedélyezni kell a **Fájl > Lehetőségek és beállítások > Beállítások** elem, majd az **Előzetes verziójú funkciók** lehetőség kiválasztásával és az adott összekötő engedélyezésével. Ha a fentiekben említett összekötők nem jelennek meg itt, és használni kívánja őket, ellenőrizze az **Előzetes verziójú funkciók** beállításait. Vegye figyelembe azt is, hogy a *bétaverzió* vagy *előzetes verzió* felirattal ellátott adatforrások támogatása és működése korlátozott, használatuk éles környezetben nem ajánlott.
@@ -98,7 +100,7 @@ A következő képen a **Lekérdezés** ablak látható, amelyen az **Adatbázis
 A **Power BI** kategória a következő adatkapcsolatokat biztosítja:
 
 * Power BI-adathalmazok
-* Power BI-adatfolyamok (bétaverzió)
+* Power BI-adatfolyamok
 
 A következő képen az **Lekérdezés** ablak látható, amelyen az **Power BI** kategória ki van választva.
 
@@ -112,11 +114,12 @@ Az **Azure** kategória a következő adatkapcsolatokat biztosítja:
 * Azure Blob-tároló
 * Azure Table Storage
 * Azure Cosmos DB (bétaverzió)
-* Azure Data Lake Storage
+* Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight interaktív lekérdezés
-* Azure Data Explorer (bétaverzió)
+* Az Azure Data Explorer (Kusto)
+* Az Azure Cost Management (bétaverzió)
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Azure** kategória ki van választva.
 
@@ -157,9 +160,10 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * tyGraph (bétaverzió)
 * Webtrends (bétaverzió)
 * Zendesk (bétaverzió)
-* TeamDesk (bétaverzió)
 * Emigo adatforrás (bétaverzió)
+* IndustrialAppStore (bétaverzió)
 * Microsoft Graph Security (bétaverzió)
+* TeamDesk (bétaverzió)
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Online szolgáltatások** kategória ki van választva.
 
@@ -178,12 +182,16 @@ Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 * Python-szkript
 * ODBC
 * OLE DB
-* Workforce Dimensions (bétaverzió)
+* BI360 - költségvetési & pénzügyi jelentéskészítési (bétaverzió)
 * Denado
-* Paxata (bétaverzió)
-* SurveyMonkey (bétaverzió)
+* Információk rács (bétaverzió)
+* Paxata 
 * QubolePresto (bétaverzió)
 * Quick Base (bétaverzió)
+* Roamler (bétaverzió)
+* SurveyMonkey (bétaverzió)
+* Tenforce (bétaverzió)
+* Workforce Dimensions (bétaverzió)
 * Üres lekérdezés
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Egyéb** kategória ki van választva.

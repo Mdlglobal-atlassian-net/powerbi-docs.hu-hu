@@ -1,36 +1,36 @@
 ---
-title: 'Új jelentés létrehozása adatkészletből '
-description: Hozzon létre egy új Power BI-jelentést egy adatkészletből.
+title: Jelentés létrehozása adatkészletből
+description: A Power BI-jelentés létrehozása adatkészletből.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/24/2018
+ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: b46896a06c9d7ed66e643aa218ec7dbd3da8c9ee
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 6b69c2b1fa811d395a26403de852c44af33491c7
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216953"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770232"
 ---
-# <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Új jelentés létrehozása a Power BI szolgáltatásban adatkészlet importálásával
-Már elolvasta a [Jelentések a Power BI-ban](consumer/end-user-reports.md) című cikket, és szeretne létrehozni egy saját jelentést. A jelentések több különböző módon is létrehozhatók. Ebben a cikkben kezdésként egy Excel-adatkészletből egy alapszintű jelentést fogunk létrehozni a Power BI szolgáltatásban. Ha már megismerte a jelentés létrehozásának alapjait, akkor a lap alján található **Következő lépések** hivatkozással továbbhaladhat a jelentésekkel kapcsolatos összetettebb témakörökre is.  
+# <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Hozzon létre egy jelentést a Power BI szolgáltatásban adatkészlet importálásával
+Már elolvasta a [Jelentések a Power BI-ban](consumer/end-user-reports.md) című cikket, és szeretne létrehozni egy saját jelentést. Különböző módon hozhat létre egy jelentést. Ebben a cikkben fogja először létrehozunk egy alapszintű jelentést egy Excel-adatkészletből a Power BI szolgáltatásban. Ha már megismerte a jelentés létrehozásának alapjait, tekintse meg a [további lépések](#next-steps) további végén speciális jelentés témaköröket.  
 
 ## <a name="prerequisites"></a>Előfeltételek
-> - A Power BI szolgáltatás (arról, hogy hogyan hozhat létre jelentést a Power BI Desktopban lásd: [Desktop jelentés nézet](desktop-report-view.md) )  
-> - A Kiskereskedelmi elemzési minta adatkészlete
+- [Regisztráció a Power BI szolgáltatásra](service-self-service-signup-for-power-bi.md). A jelentések készítéséhez a Power BI Desktop használatával, lásd: [Desktop jelentés nézet](desktop-report-view.md). 
+- [Töltse le a kiskereskedelmi elemzési minta Excel-adatkészletét](http://go.microsoft.com/fwlink/?LinkId=529778) , és mentse helyileg vagy a vállalati OneDrive-bA.
 
 ## <a name="import-the-dataset"></a>Adatkészlet importálása
-Ha ezzel a módszerrel hoz létre egy jelentést, akkor annak kiindulópontja egy adatkészlet és egy üres jelentésvászon lesz. Ahhoz, hogy követhesse a lépéseket, [töltse le a Kiskereskedelmi elemzési minta Excel-adatkészletét](http://go.microsoft.com/fwlink/?LinkId=529778), és mentse a OneDrive Vállalati verzióra (javasolt) vagy lokálisan a számítógépére.
+Ha ezzel a módszerrel hoz létre egy jelentést, akkor annak kiindulópontja egy adatkészlet és egy üres jelentésvászon lesz. A kiskereskedelmi elemzési minta Excel-adatkészletét a tudja követni.
 
-1. A jelentést a Power BI szolgáltatás egy munkaterületén fogjuk létrehozni, ezért válasszon ki egy meglévő munkaterületet, vagy hozzon létre egy újat.
+1. Azt fogjuk a jelentés létrehozása egy Power BI szolgáltatás munkaterületén, ezért válasszon ki egy meglévő munkaterületet vagy hozzon létre egy egyet.
    
    ![Alkalmazás-munkaterületek listája](media/service-report-create-new/power-bi-workspaces2.png)
-2. A bal oldali navigációs panelen válassza az **Adatok lekérése** elemet.
+2. A bal oldali navigációs ablaktábla alján válassza **adatok**.
    
    ![Adatok lekérése](media/service-report-create-new/power-bi-get-data3.png)
 3. Válassza a **Fájlok** lehetőséget, majd navigáljon arra a helyre, ahova a Kiskereskedelmi elemzési mintát mentette.
@@ -46,8 +46,8 @@ Ha ezzel a módszerrel hoz létre egy jelentést, akkor annak kiindulópontja eg
    
    ![jelentésszerkesztő](media/service-report-create-new/power-bi-blank-report.png)
 
-> **TIPP**: Ha nem ismeri a jelentésszerkesztő vásznat, vagy szeretné felfrissíteni ismereteit, [Tekintse át a jelentésszerkesztőt](service-the-report-editor-take-a-tour.md), mielőtt továbbhaladna.
-> 
+> [!TIP]
+> Ha ismeri a Jelentésszerkesztő vásznat, vagy felfrissíteni ismereteit, [a Jelentésszerkesztő bemutatása](service-the-report-editor-take-a-tour.md) a folytatás előtt. > 
 > 
 
 ## <a name="add-a-radial-gauge-to-the-report"></a>Mérőműszer felvétele jelentésbe
@@ -62,7 +62,7 @@ Most hogy már importáltuk az adatkészletünket, kezdjük el megválaszolni a 
 3. Húzza a **Sales** > **This Year Sales** > **Cél** elemet a **Célérték** gyűjtőbe. Úgy látszik, nagyon közel vagyunk a célkitűzésünk eléréséhez.
    
     ![Mérőműszer vizualizáció a Cél elemmel mint Célérték](media/service-report-create-new/power-bi-report-step3.png)
-4. Érdemes [menteni a jelentést](service-report-save.md).
+4. Most már lehet egy időben, a jelentés mentéséhez.
    
    ![Fájl menü](media/service-report-create-new/powerbi-save.png)
 
@@ -78,7 +78,7 @@ Meg kell válaszolnunk a marketingigazgató újabb kérdéseit. Szeretné tudni,
    
     ![jelentésszerkesztő aktív Területdiagrammal](media/service-report-create-new/power-bi-report-step5.png)
 5. A vizualizáció időszakok szerinti rendezéséhez válassza a három pontot (...), majd a **Rendezés szempontja: Időszak** lehetőséget.
-6. És most vegyük fel a szeletelőt. Válassza ki a vászon egy üres területét, majd a Szeletelő ![Szeletelő ikon](media/service-report-create-new/power-bi-slicer-icon.png)    sablont. Ez felvesz a vásznunkra egy üres szeletelőt.
+6. És most vegyük fel a szeletelőt. Válassza ki a vászon egy üres területét, majd a Szeletelő ![Szeletelő ikon](media/service-report-create-new/power-bi-slicer-icon.png) sablont. A vászon egy üres szeletelő most már van.
    
     ![A jelentésvászon](media/service-report-create-new/power-bi-report-step6.png)    
 7. A Mezők ablaktáblán válassza a **District** > **District** elemet. Helyezze át és méretezze át a szeletelőt.

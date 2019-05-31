@@ -1,30 +1,30 @@
 ---
 title: Beágyazott adathalmaz létrehozása a Power BI lapszámozott jelentéséhez (előzetes verzió)
 description: Ebből a cikkből elsajátíthatja, hogyan hozhat létre beágyazott adathalmazt egy beágyazott adatforrás alapján lapszámozott jelentéshez a Power BI szolgáltatásban.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/5/2018
-ms.openlocfilehash: c625f394fd35c0b1c6b7ccf0fc617f5653533ea1
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: 3e095da10e9f96c7ec0f10ffbb94995d44effab4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324553"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61423737"
 ---
 # <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service-preview"></a>Beágyazott adathalmaz létrehozása lapszámozott jelentéshez a Power BI szolgáltatásban (előzetes verzió)
 
-Ebből a cikkből elsajátíthatja, hogyan hozhat létre beágyazott adathalmazt egy beágyazott adatforrás alapján lapszámozott jelentéshez a Power BI szolgáltatásban. A beágyazott adatkészleteket egyetlen lapszámozott jelentés tartalmazza a jelentésben való használathoz. Jelenleg a Power BI szolgáltatásban közzétett lapszámozott jelentésekhez beágyazott adathalmazok és beágyazott adatforrások szükségesek. A beágyazott adatforrást és adatkészletet a Jelentéskészítőben hozhatja létre a jelentés létrehozásakor. 
+Ebből a cikkből elsajátíthatja, hogyan hozhat létre beágyazott adathalmazt egy beágyazott adatforrás alapján lapszámozott jelentéshez a Power BI szolgáltatásban. A beágyazott adatkészleteket egyetlen lapszámozott jelentés tartalmazza a jelentésben való használathoz. Jelenleg a Power BI szolgáltatásban közzétett lapszámozott jelentésekhez beágyazott adathalmazok és beágyazott adatforrások szükségesek. Hozza létre a beágyazott adatforrásra és az adatkészletet a Power BI jelentéskészítő során hoz létre a jelentést. 
 
 Az adathalmaz létrehozása előtt létre kell hoznia egy adatforrást. Ennek mikéntjéről a Power BI szolgáltatásban a [Beágyazott adatforrások lapszámozott jelentésekhez](paginated-reports-embedded-data-source.md) című cikkből tájékozódhat.
   
 ## <a name="create-an-embedded-dataset"></a>Beágyazott adathalmaz létrehozása
   
-1. Válassza ki a Jelentésadatok panelen a Jelentéskészítőben az **Új** > **Adatkészlet** lehetőséget.
+1. A a Power BI jelentéskészítő jelentésadatok ablaktábla, válassza a **új** > **adatkészlet**.
 
 1. Adjon egy nevet az adathalmaznak az **Adatkészlet tulajdonságai**párbeszédpanel**Lekérdezés** lapján. A beágyazott adatforrás már szerepel az **Adatforrás** mezőben, vagy az **Új** lehetőség kiválasztásával létrehozhat egy másik beágyazott adatforrást.
  

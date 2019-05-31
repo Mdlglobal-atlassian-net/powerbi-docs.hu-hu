@@ -1,8 +1,8 @@
 ---
 title: Beágyazás jelentéskijelzővel a SharePoint Online-ban
 description: A Power BI új beágyazás jelentéskijelzővel a SharePoint Online-ban funkciójának használatával interaktív Power BI-jelentéseit könnyedén SharePoint Online-oldalakba illesztheti.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
@@ -10,64 +10,61 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 11/01/2018
-ms.openlocfilehash: a27a6f9ce1eac861415a8231eb50ec898900202e
-ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
-ms.translationtype: HT
+ms.date: 05/16/2019
+ms.openlocfilehash: c8789d47ed1b67f9fd6808865514120457a29dfe
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58430346"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051265"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Beágyazás jelentéskijelzővel a SharePoint Online-ban
 
 A Power BI új beágyazás jelentéskijelzővel a SharePoint Online-ban funkciójának használatával interaktív Power BI-jelentéseit könnyedén SharePoint Online-oldalakba illesztheti.
 
-Az új **Beágyazás a SharePoint Online-ban** funkció használatával a beágyazott jelentések teljes biztonságban vannak, így könnyedén hozhat létre biztonságos belső portálokat.
+Ha az új **beágyazás a SharePoint online-hoz** beállítást, a beágyazott jelentések teljes biztonságban, így könnyedén hozhat létre biztonságos belső portálokat.
 
 ## <a name="requirements"></a>Követelmények
 
-Ahhoz, hogy a **Beágyazás a SharePoint Online-ban** funkció működjön, teljesülnie kell néhány követelménynek.
+A **beágyazás a SharePoint online-hoz** jelentéseinek működéséhez szükség a következő:
 
-* Power BI Pro-licenc vagy Power BI-licenccel rendelkező [Power BI Premium-kapacitás (EM vagy P termékváltozat)](service-premium.md#premium-capacity-nodes) szükséges.
+* Power BI Pro-licenc vagy egy [Power BI Premium-kapacitás (EM vagy P Termékváltozat)](service-premium-what-is.md) Power BI-licenccel rendelkező.
 * A Power BI-jelentéskijelző a SharePoint Online-hoz csak [Modern weblapokkal](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b) működik.
 
 ## <a name="embed-your-report"></a>A jelentés beágyazása
+A jelentés beágyazása a SharePoint online-hoz, kell a jelentés URL-cím lekérése és használata a SharePoint Online új Power BI-kijelző.
 
-Ahhoz, hogy a jelentést beágyazza a SharePoint Online-ba, először is szükség van a jelentés URL-címére, amelyet majd a Power BI-kijelzőben kell megadni a SharePoint Online-ban.
+### <a name="get-a-report-url"></a>A jelentés URL-cím beszerzése
 
-### <a name="get-a-url-to-your-report"></a>A jelentésre mutató URL-cím beszerzése
+1. Power BI-ban a jelentés megtekintéséhez.
 
-1. Nyissa meg a jelentést a Power BI szolgáltatásban.
-
-2. Válassza ki a **Fájl** menüpont.
-
-3. Válassza a **Beágyazás a SharePoint Online-ban** lehetőséget.
+2. Válassza ki a **fájl** legördülő menüben, majd válassza ki **beágyazás a SharePoint online-hoz**.
 
     ![Fájl menü](media/service-embed-report-spo/powerbi-file-menu.png)
 
-4. Másolja be az URL-címet a párbeszédpanelről.
+3. Másolja a jelentés URL-CÍMÉT a párbeszédpanelről.
 
     ![Hivatkozás beágyazása](media/service-embed-report-spo/powerbi-embed-link-sharepoint.png)
 
 ### <a name="add-the-power-bi-report-to-a-sharepoint-online-page"></a>A Power BI-jelentés hozzáadása a SharePoint Online laphoz
 
-1. Nyissa meg a kívánt lapot a SharePoint Online-ban, és válassza ki a **Szerkesztés** lehetőséget.
+1. Nyissa meg a cél lap a SharePoint online-ban, és válassza ki **szerkesztése**.
 
     ![SP-szerkesztések lap](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
 
-    Vagy hozzon létre egy új modern weblapot a SharePoint Online-ban a **+ Új** lehetőség kiválasztásával.
+    Vagy a Sharepoint Online-ban válassza **+ új** hozhat létre egy új modern weblapot.
 
     ![Új SP-lap](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
 
-2. Válassza a **+** lehetőséget, ezután pedig a **Power BI**-kijelzőt.
+2. Válassza ki a **+** legördülő listából, majd a **Power BI**.
 
     ![Új SP-kijelző](media/service-embed-report-spo/powerbi-sharepoint-new-web-part.png)
 
 3. Válassza ki a **Jelentés hozzáadása** lehetőséget.
 
-    ![Új SP-jelentés](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)
+    ![Új SP-jelentés](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)  
 
-4. Illessze be a jelentés URL-címét a tulajdonság panelre. Ennek a jelentésnek az URL-címe az az URL-cím, amelyet a korábbi lépéseknél kimásolt. A jelentés automatikusan betöltődik.
+4. Illessze be a korábban másolt a jelentés URL-CÍMÉT a **Power BI-jelentés hivatkozása** ablaktáblán. A jelentés automatikusan betöltődik.
 
     ![Új SP-kijelző tulajdonságai](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
@@ -77,74 +74,70 @@ Ahhoz, hogy a jelentést beágyazza a SharePoint Online-ba, először is szüks�
 
 ## <a name="grant-access-to-reports"></a>Hozzáférés biztosítása a jelentésekhez
 
-Egy jelentés beágyazása a SharePoint Online-ba még nem ad automatikusan engedélyt a felhasználóknak arra, hogy megtekinthessék a jelentést. A megtekintési engedélyeket a Power BI szolgáltatásban kell beállítani.
+Egy jelentés beágyazása a SharePoint online-hoz nem automatikusan engedélyt a felhasználóknak a jelentés megtekintéséhez,-be kell állítani az engedélyek megtekintése a Power bi-ban.
 
 > [!IMPORTANT]
 > Tekintse át kik láthatják a jelentést a Power BI szolgáltatásban, és adjon hozzáférést azoknak, akik még nem szerepelnek a listában.
 
-A Power BI szolgáltatásban kétféleképpen lehet egy jelentéshez hozzáférést adni. Ha a SharePoint Online-csoportwebhely létrehozásához Office 365-csoportot használ, akkor a felhasználót hozzáadhatja az **alkalmazás-munkaterülethez a Power BI szolgáltatásban** és a **SharePoint-oldalon**. További információkért lásd: [Alkalmazás-munkaterület kezelése](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Két módon adja meg a jelentés-hozzáférés a Power bi-ban. Az első módszer, ha a SharePoint online-hoz csoportwebhely létrehozásához Office 365-csoportot használ, hogy a felhasználó listából, amelynek a **alkalmazás-munkaterületet a Power BI szolgáltatásban** és a **SharePoint-lapba**. További információkért lásd: [Alkalmazás-munkaterület kezelése](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
-Másik lehetőségként úgy is megoszthatja közvetlenül a felhasználókkal, ha a jelentést beágyazza egy alkalmazásba. A jelentés néhány lépésben beágyazható az alkalmazásba.  
+A másik lehetőség, hogy az alkalmazáson belül-jelentés beágyazása, és megoszthatja közvetlenül felhasználók:  
 
-1. Az alkalmazás szerzője Pro felhasználó.
+1. A szerző (kell lennie a Pro-felhasználó) létrehoz egy jelentést az alkalmazás-munkaterületen. Megosztja **Power BI free-felhasználókkal a**, az alkalmazás-munkaterületre kell állítani egy **prémium munkaterületeken**.
 
-2. A szerző jelentést hoz létre egy alkalmazás-munkaterületen. *Ahhoz, hogy az alkalmazás-munkaterület megosztható legyen az **ingyenes Power BI-felhasználókkal**, az alkalmazás-munkaterületet **Premium munkaterületként** kell beállítani.*
+2. A szerző tesz közzé az alkalmazást, és telepíti azt. A szerző kell, hogy a jelentés URL-cím, amellyel a beágyazás a SharePoint online-hoz való hozzáférést az alkalmazás telepítéséhez.
 
-3. A szerző közzéteszi, majd telepíti az alkalmazást. *A szerzőnek telepítenie kell az alkalmazást, hogy hozzáférhessen a jelentés URL-címéhez, amely a SharePoint Online-on való beágyazáshoz szükséges.*
-
-4. Mostantól az összes végfelhasználónak is telepítenie kell az alkalmazást. Az alkalmazás előtelepítettként is beállítható a végfelhasználók számára az **Alkalmazás automatikus telepítése** funkcióval, amely a [Power BI felügyeleti portálján](service-admin-portal.md) engedélyezhető.
+3. Mostantól az összes végfelhasználónak is telepítenie kell az alkalmazást. Is használhatja a **alkalmazás automatikus telepítése** szolgáltatást, amely engedélyezheti a [Power BI felügyeleti portáljához](service-admin-portal.md), hogy az alkalmazás előre telepítve van a végfelhasználók számára.
 
    ![Alkalmazás automatikus telepítése](media/service-embed-report-spo/install-app-automatically.png)
 
-5. A szerző megnyitja az alkalmazást és a jelentést.
+4. A szerző megnyitja az alkalmazást és a jelentést.
 
-6. A szerző bemásolja a jelentés beágyazásának URL-címét az alkalmazás által telepített jelentésből. *Ne használja az eredeti jelentés URL-címét az alkalmazás-munkaterületről.*
+5. A szerző másolja a beágyazási jelentés URL-címet a jelentés az alkalmazás telepítve van. **Ne használja az eredeti jelentés URL-címe az alkalmazás-munkaterületről.**
 
-7. Hozzon létre egy új csoportwebhelyet a SharePoint Online-ban.
+6. Hozzon létre egy új csoportwebhelyet a SharePoint Online-ban.
 
-8. Adja hozzá a Power BI webes részéhez a 6. lépésben kimásolt URL-címet.
+7. A Power BI-kijelző hozzáadása a jelentés korábban másolt URL-címe.
 
-9. Vegye fel az összes olyan felhasználót és/vagy csoportot, akik dolgozni fognak a létrehozott SharePoint Online oldalon és a Power BI alkalmazásban.
+8. Vegye fel az összes olyan felhasználót és/vagy csoportot, akik dolgozni fognak a létrehozott SharePoint Online oldalon és a Power BI alkalmazásban.
 
     > [!NOTE]
     > **Ahhoz, hogy a felhasználók és a csoportok a SharePoint Online-oldalon láthassák a jelentést, hozzá kell férniük a SharePoint Online-oldalhoz és a Power BI-ban lévő jelentéshez.**
 
-10. Mostantól a végfelhasználó hozzáfér a SharePoint Online-on lévő csoportwebhelyhez, és láthatja rajta a jelentést.
+Mostantól a végfelhasználó hozzáfér a SharePoint Online-on lévő csoportwebhelyhez, és láthatja rajta a jelentést.
 
 ## <a name="multi-factor-authentication"></a>Többtényezős hitelesítés
 
-Ha a Power BI-környezetbe való bejelentkezéshez többtényezős hitelesítésre van szükség, akkor előfordulhat, hogy a rendszer arra kéri, hogy személyazonossága igazolásához jelentkezzen be egy biztonsági eszközzel. Ez olyankor fordul elő, amikor a SharePoint Online-ba nem többtényezős hitelesítés használatával jelentkezik be, a Power BI-környezetbe való belépéshez viszont biztonsági eszközzel igazolt fiók szükséges.
+Ha a Power BI-környezetbe való bejelentkezéshez többtényezős hitelesítésre van szükség, akkor előfordulhat, hogy a rendszer arra kéri, hogy személyazonossága igazolásához jelentkezzen be egy biztonsági eszközzel. Ez akkor fordul elő, ha Ön nem jelentkeztek be a SharePoint online multi-factor authentication szolgáltatás használatával, de a Power BI-környezetbe egy biztonsági eszköz egy fiók érvényesítéséhez szükséges.
 
 > [!NOTE]
-> A többtényezős hitelesítést az Azure Active Directory 2.0 még nem támogatja. A felhasználók egy *Hiba* feliratú üzenetet fognak kapni. Ha a felhasználó egy biztonsági eszköz használatával újból bejelentkezik a SharePoint Online-ba, akkor megtekintheti a jelentést.
+> Az Azure Active Directory 2.0 nem támogatja a multi-factor authentication - felhasználók egy hibaüzenetet fog látni. Ha a felhasználó egy biztonsági eszköz használatával újból bejelentkezik a SharePoint Online-ba, akkor megtekintheti a jelentést.
 
 ## <a name="web-part-settings"></a>A jelentéskijelző beállításai
 
-Alább megtekintheti a SharePoint Online Power BI-kijelzőjének módosítható beállításait és azok leírását.
+Az alábbiakban a beállíthatja a SharePoint online-hoz a Power BI-kijelző beállításait.
 
 ![SP-kijelző tulajdonságai](media/service-embed-report-spo/powerbi-sharepoint-web-part-properties.png)
 
 | Tulajdonság | Leírás |
 | --- | --- |
-| Oldal neve |Beállítja a jelentéskijelzőn alapértelmezetten megjelenő oldalt. Válasszon ki egy értéket a legördülő listából. Ha nem jelenik meg egyetlen oldal sem a listában, akkor vagy csak egyetlen oldalból áll a jelentés, vagy a bemásolt URL-cím már tartalmazza az egyik oldal nevét. Ahhoz, hogy a listából választhasson ki egy adott oldalt, el kell távolítani a jelentésre hivatkozó szakaszt az URL-címből. |
-| Megjelenítés |A jelentés SharePoint Online-oldalon belüli igazítására szolgáló beállítás. |
+| Oldal neve |Megadja a kijelző alapértelmezett oldal. Válasszon ki egy értéket a legördülő listából. Ha nem jelenik meg egyetlen oldal sem a listában, akkor vagy csak egyetlen oldalból áll a jelentés, vagy a bemásolt URL-cím már tartalmazza az egyik oldal nevét. Ahhoz, hogy a listából választhasson ki egy adott oldalt, el kell távolítani a jelentésre hivatkozó szakaszt az URL-címből. |
+| Megjelenítés |Itt állíthatja be, hogy a jelentés megfelel-e a SharePoint Online-oldal. |
 | Navigációs ablaktábla megjelenítése |Megjeleníti vagy elrejti az oldal navigációs ablaktábláját. |
 | Szűrés ablaktábla megjelenítése |Megjeleníti vagy elrejti a szűrés ablaktábláját. |
 
 ## <a name="reports-that-do-not-load"></a>Nem betöltődő jelentések
 
-Előfordulhat, hogy a jelentés nem töltődik be a Power BI-kijelző felületén, hanem a következő hibaüzenet olvasható:
+Ha a jelentés nem töltődik a Power BI-kijelző, a következő üzenetet láthatja:
 
-*Ez a tartalom nem érhető el.*
-
-![A jelentés nem található üzenet](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
+![Ez a tartalom nem érhető el üzenet](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
 
 Ennek általában két oka lehet:
 
-1. Nem rendelkezik hozzáféréssel az adott jelentéshez.
+1. Nem rendelkezik a jelentésekhez való hozzáférés.
 2. A jelentést időközben törölték.
 
-A probléma elhárításához lépjen kapcsolatba a SharePoint Online-oldal tulajdonosával.
+Lépjen kapcsolatba a SharePoint Online lap tulajdonosát, hogy a probléma megoldásához.
 
 ## <a name="licensing"></a>Licencelés
 
@@ -158,7 +151,7 @@ Egy jelentést SharePointban megtekintő felhasználónak vagy **Power BI Pro**-
   
   1. Jelentkezzen ki a SharePointból, majd jelentkezzen be ismét. Ügyeljen rá, hogy az összes böngészőablakot bezárja az újbóli bejelentkezés előtt.
 
-  2. Ha a felhasználói fiókba való belépéshez többtényezős hitelesítés szükséges, ügyeljen rá, hogy a többtényezős hitelesítéshez használt eszközzel jelentkezzen be a SharePoint Online-ba (telefonalkalmazás, intelligens kártya stb.).
+  2. Ha a felhasználói fiókot igényel a többtényezős hitelesítés (MFA), majd jelentkezzen be a SharePoint használata az MFA-eszköz (telefonalkalmazás, intelligens kártya, stb.).
   
   3. Az Azure B2B-vendégfelhasználói fiókok nem támogatottak. A felhasználók a kijelző betöltését mutató Power BI-logót látják, de a jelentés nem jelenik meg.
 
@@ -177,7 +170,7 @@ Egy jelentést SharePointban megtekintő felhasználónak vagy **Power BI Pro**-
 * [Modern weboldalak végfelhasználók általi létrehozásának engedélyezése vagy letiltása](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 * [Alkalmazások létrehozása és terjesztése a Power BI-ban](service-create-distribute-apps.md)  
 * [Irányítópult megosztása munkatársakkal és másokkal](service-share-dashboards.md)  
-* [Mi a Power BI Premium?](service-premium.md)
+* [Mi a Power BI Premium?](service-premium-what-is.md)
 * [Jelentés beágyazása egy biztonságos portálon vagy webhelyen](service-embed-secure.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

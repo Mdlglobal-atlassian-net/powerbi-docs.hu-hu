@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/17/2018
+ms.date: 04/21/2019
 ms.author: mshenhav
-ms.openlocfilehash: 037cab2435abddc0988d076f6598ab8313b4dda6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: bee60dd6f3254b049f2445e6e985c625933caf5b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281574"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65565406"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Jelentések vizsgálata a Power BI mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -32,89 +32,78 @@ A Power BI jelentés egy interaktív nézet az adatokról különböző, az adat
 ## <a name="open-a-power-bi-report-in-the-mobile-app"></a>Power BI jelentések megnyitása a mobilalkalmazásban
 A Power BI jelentéseket a rendszer a beszerzési helyük függvényében különböző helyeken tárolja a mobilalkalmazásban. Lehetnek az Alkalmazások, a Velem megosztva, a Munkaterületek (beleértve a Saját munkaterületet) területen vagy egy jelentéskészítő kiszolgálón. Néha át kell lépnie egy kapcsolódó irányítópultra egy jelentésért, néha pedig listázva vannak.
 
-* Egy irányítópulton koppintson a három pont (...) ikonra a csempe jobb felső sarkában > válassza a **Jelentés megnyitása** lehetőséget.
+A listákat és menüket megtalálja a jelentés neve melletti ikon tisztában vele, hogy ezt az elemet a jelentés segít. 
+
+![a jelentéseket a saját munkaterületen](./media/mobile-reports-in-the-mobile-apps/reports-my-workspace.png) 
+
+Nincsenek két ikon közül a jelentések a Power BI Mobile-alkalmazások:
+
+* ![jelentésikon](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) azt jelzi, hogy egy jelentést, amely fekvő tájolás esetén, az alkalmazásban megjelenik, és azok ugyanúgy néznek hogyan jelenik meg a böngészőben.
+
+* ![Telefonos jelentés ikon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) azt jelzi, hogy egy jelentést, amelyben legalább egy telefonos optimalizált jelentésoldal, álló megjelenik. 
+
+Megjegyzés: A telefonon fekvő birtoklása, mindig megjelenik a Fekvő elrendezés akkor is, ha a jelentés oldal rendelkezik telefonos elrendezés. 
+
+Egy jelentés beolvasása egy irányítópultot, koppintson a csempe jobb felső sarkában a három pontra (...) > **nyissa meg a jelentés**.
   
   ![Jelentés megnyitása](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
   Nem minden csempénél van lehetőség a jelentés megnyitására. Azok a csempék például, amelyek egy, a Q&A mezőben feltett kérdéssel jöttek létre, nem nyitnak meg jelentéseket a rájuk koppintáskor. 
   
-  Telefonon a jelentés fekvő tájolásban jelenik meg, kivéve, ha [telefonos megtekintésre van optimalizálva](mobile-reports-in-the-mobile-apps.md#view-reports-optimized-for-phones).
-  
-  ![Jelentés telefonon fekvő tájolásban](./media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
+## <a name="interacting-with-reports"></a>A jelentések
+Miután az alkalmazásban megnyitott egy jelentést, elkezdhet dolgozni vele. Számos dolgot a jelentést és adatokat is végezhet. A jelentés láblécének található meg a jelentésben, és koppintson és hosszú koppintson a jelentés is szeletelni és az adatok menően megjelenített adatok az elvégezhető műveleteket.
 
-## <a name="view-reports-optimized-for-phones"></a>Telefonra optimalizált jelentések megtekintése
-A Power BI-jelentések szerzői létrehozhatnak kifejezetten a telefonokra optimalizált jelentéselrendezést. A telefonokra optimalizált jelentésoldalak további funkciókkal is rendelkeznek: többek között részletes elemzés végezhető, a vizualizációk rendezhetők, és elérhetők [azok a szűrők is, amelyeket a szerző adott hozzá a jelentésoldalhoz](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). A jelentés azokra a weben beállított értékekre szűrve jelenik meg a telefonon egy üzenettel, hogy az oldalon aktív szűrő működik. A szűrők a telefonon módosíthatók.
+### <a name="using-tap-and-long-tap"></a>Koppintson a használatával, és koppintson hosszan
+Kattintson az egér koppintson tárolóhellyel. Így közötti jelöljön ki egy adatpontot alapuló jelentést szeretne, koppintson az adott adatok pontokon.
+Koppintson egy szeletelő értékének a, lehetővé teszi a kiválasztott érték és a jelentés többi szeletelés szerint ezt az értéket. Koppintson a hivatkozásra, gomb vagy a könyvjelzők lesz az aktiválást a művelet a szerző által megadott alapján.
 
-A jelentések listáján az optimalizált jelentésnek speciális ikonja van ![Telefonos jelentés ikon](./media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
+Valószínűleg észrevette, hogy ha egy Vizualizáció koppint, szegély jelenik meg. A szegély jobb felső sarkában a három pontra (...). Koppintson rá állítaniuk műveleteket végezhet el, hogy a vizualizációt tartalmazó menü.
 
-![Telefonos jelentés megnyitása](./media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
+![a jelentés vizuális és menü](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
-Az ilyen jelentések álló tájolásban nyílnak meg telefonon.
+### <a name="tooltip-and-drill-actions"></a>Elemleírás és részletezési műveletek
 
-![Jelentés álló tájolásban](./media/mobile-reports-in-the-mobile-apps/07-power-bi-phone-report-portrait.png)
+Ha hosszú rákoppint (Koppintson és tartsa) egy adatpont elemleírásokban jelennek meg az értékeket az adatponthoz jelöli bemutatása. 
 
- Egy jelentés állhat a telefonokra optimalizált és a telefonokra nem optimalizált oldalakból. Ha ez a helyzet, a jelentés végiglapozása során a nézet az egyes oldalaknál váltani fog a fekvő és az álló tájolás között.
+![a jelentés elemleírása](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
 
-További információ a [telefonos megtekintésre optimalizált jelentésekről](mobile-apps-view-phone-report.md).
+Jelentések szerzői hierarchiák adhatja meg az adatokat és a jelentésoldalak közötti kapcsolatokat. Hierarchia lehetővé teszi, hogy a Lehatolási, Részletezés fel, és áthatoló részletezést egy vizualizációt és a egy értéke a másik jelentésoldalra. Tehát hosszú koppintva egy értéket, az elemleírás mellett a kapcsolódó részletes elemzési lehetőség fog megjelenni a láblécben. 
 
-## <a name="use-slicers-to-filter-a-report"></a>Szeletelők használta egy jelentés szűréséhez
-Ha jelentéseket hoz létre a Power BI Desktopban vagy a Power BI szolgáltatásban, érdemes lehet [szeletelőket hozzáadni a jelentésoldalhoz](../../visuals/power-bi-visualization-slicers.md). A szeletelőkkel egyszerűen lehet szűrni az oldalt böngészőben és mobilalkalmazásban is. Ha telefonon jelenítik meg a jelentést, a szeletelőket a telefonra optimalizált fekvő és álló tájolással is lehet használni. A szeletelőkben vagy szűrőkben kijelölt értékek akkor is ki lesznek jelölve, amikor az oldalt a mobilalkalmazásban nyitja meg. Egy üzenet tájékoztat arról, hogy az oldalon aktív szűrés van érvényben.  
+![a jelentés részletezési műveletek](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
-* Amikor kiválaszt egy értéket egy szeletelőben a jelentésoldalon, az szűri az oldalon lévő többi vizualizációt.
-  
-  ![Jelentésszeletelő](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-slicer.png)
-  
-  Ezen az ábrán a szeletelő az oszlopdiagramot szűri, hogy csak a júliusi értékeket jelenítse meg.
-
-## <a name="cross-filter-and-highlight-a-report"></a>Keresztszűrés és kiemelés a jelentésekben
-Amikor kiválaszt egy értéket egy vizualizációban, az más vizualizációkat nem szűr. Kiemeli a kapcsolódó értékeket a többi vizualizációban.
-
-* Koppintson egy vizualizáció egy értékére.
-  
-  ![Oldal keresztszűrése](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-highlight.png)
-  
-  Ha a Nagy oszlopra koppint az egyik vizualizációban, a rendszer kiemeli a többi vizualizációban a kapcsolódó értékeket. 
-
-## <a name="sort-a-visual-on-an-ipad-or-a-tablet"></a>Vizualizáció rendezése iPaden vagy táblagépen
-* Koppintson a diagramra, koppintson a három pontra (**...**), és koppintson a mező nevére.
-  
-   ![Vizualizáció rendezése](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
-* A rendezés irányának megfordításához koppintson ismét a három pontra (**...**), és koppintson újra ugyanarra a mezőnévre.
-
-## <a name="drill-down-and-up-in-a-visual"></a>Vizualizációk részletes elemzése és visszatérés az átfogó nézetre
-Ha egy jelentésszerző hozzáadta a részletezés funkciót a vizualizációhoz, akkor a vizualizáció részletezésével megtekintheti az annak egy részét felépítő adatokat. A [részletes elemzési képességet egy vizualizációhoz](../end-user-drill.md) a Power BI Desktopban vagy a Power BI szolgáltatásban adhatja hozzá. 
-
-* Az vizualizációban az eszköztipp megjelenítéséhez koppintson egy meghatározott sávra vagy pontra, és tartsa rajta az ujját. Ha rendelkezik részletezési funkcióval, akkor az elemleírás alján nyilak jelennek meg, melyekre rákoppinthat. 
-  
-  ![Vizualizációk részletes elemzése](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
-
-* A felhatoláshoz koppintson a felfelé mutató nyílra az elemleírásban.
-  
-  ![Felhatolás](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-tooltip.png)
-
-* Részletezésre a vizualizáció összes adatpontjában van lehetőség. Nyissa meg a vizualizációt fókusz módban, koppintson a Vizsgálat ikonra, majd válassza a teljes következő szint megjelenítése lehetőséget, vagy kibontással megjelenítheti a jelenlegi és a következő szintet.
-
-   ![Részletes elemzés a Power BI összes adatpontjában](./media/mobile-reports-in-the-mobile-apps/power-bi-drill-down-all.png)
-
-## <a name="drill-through-from-one-page-to-another"></a>Részletező oldal megjelenítése egy másik oldalról
-
-*Részletezés* használatakor, ha rákoppint a vizualizáció egy meghatározott részére, a Power BI a jelentés egy másik oldalára irányítja, amelyet annak az értéknek az alapján szűr, amelyre koppintott. A jelentés szerzője definiálhat egy vagy több részletező beállítást, amelyek mindegyike egy másik oldalra irányítja át. Ebben az esetben kiválaszthatja, hogy melyiket szeretné részletesen megjeleníteni. A következő példában amikor a kijelző egy értékére koppint, választhat, hogy a **kiadások üzleti terület szerint** vagy a **tervezés üzleti terület szerint** részletező oldalakat jeleníti-e meg.
-
-![Részletező jelentés a Power BI Mobile-ban](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-through-it-spent-report.png)
-
-Részletezés használatakor a vissza gomb visszaviszi a jelentés előző oldalára.
+*Részletezés* használatakor, ha rákoppint a vizualizáció egy meghatározott részére, a Power BI a jelentés egy másik oldalára irányítja, amelyet annak az értéknek az alapján szűr, amelyre koppintott.  A jelentés szerzője definiálhat egy vagy több részletező beállítást, amelyek mindegyike egy másik oldalra irányítja át. Ebben az esetben kiválaszthatja, hogy melyiket szeretné részletesen megjeleníteni. A vissza gomb visszatér az előző jelentésoldalra.
 
 Olvassa el, hogyan [adhat hozzá részletezést a Power BI Desktopban](../../desktop-drillthrough.md).
+   
+   > [!IMPORTANT]
+   > A Power BI Mobile app mátrix-és a részletezés csak egy cella értékét, és nem a oszlopok és sorok fejlécek engedélyezve van.
+   
+   
+   
+### <a name="using-the-actions-in-the-report-footer"></a>A jelentés láblécének műveletekkel
+A jelentés láblécének végezhet műveleteket tartalmaz, a jelentés aktuális oldalán vagy a teljes jelentés. A lábléc gyors hozzáfér a leghasznosabb műveleteket, és minden műveletet a három pontra (...) érhetők el.
 
-## <a name="show-data-and-copy-values"></a>Adatok megjelenítése és az értékek másolása
+![jelentés láblécének](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
-Ha egy telefonos jelentés egy vizualizációjának jobb felső sarkában a három pont (**...**) menüelemet, majd az **Adatok megjelenítése** lehetőséget választja, megtekintheti a vizualizáció hátterében álló adatokat.
+A lábléc elvégezheti a műveletek a következők:
+1) A jelentés szűrőjének alaphelyzetbe, és több jelölje ki a beállításokat az eredeti állapotába.
+2) Nyissa meg a beszélgetési panelen megtekintéséhez, vagy adjon hozzá megjegyzéseket a jelentés.
+3) Nyissa meg a szűrő panelen megtekintheti, és módosítsa a szűrőt, jelenleg a jelentés a alkalmazni.
+4) Ez a jelentés összes oldalára listája. Koppintson a lap neve betölti és adott oldalon található.
+Jelentésoldalak közötti áthelyezése érintőképernyőn az Edge, a képernyő közepéhez elvégezhető.
+5) Tekintse meg a jelentés összes műveletet.
 
-![Power BI mobil adatok megjelenítése menüpont](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.png)
+#### <a name="all-report-actions"></a>Minden jelentés műveletei
+A koppintva a... a jelentés láblécének beállításra kattint, a műveleteket hajthat végre egy jelentés állapotba kerül. 
 
-Hosszan a megjelenő táblázat egy cellájára koppintva felugrik a natív kijelölési és másolási menü, amelyből kiválaszthatja a táblázat adatai (vagy a teljes táblázat) másolását.
+![jelentés az összes művelet](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
 
-![Részletező jelentés a Power BI Mobile-ban](./media/mobile-reports-in-the-mobile-apps/copy-data-table.png)
+Műveletek némelyike le lehetnek tiltva, mivel azok függenek meghatározott jelentéssel kapcsolatos lehetőségét.
+Például:
+1) **Aktuális hely szűrés** engedélyezve van, ha a jelentésben szereplő adatok kategorizálása a szerző földrajzi adatokkal. [Ismerje meg a jelentésben szereplő földrajzi adatok azonosítása](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
+2) **Vizsgálat szeretné szűrni a jelentést a vonalkód szerint** engedélyezve van, csak akkor, ha az adatkészlet a jelentés a vonalkód lett megjelölve. [Hogyan vonalkódok címkézése a Power BI Desktopban](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
+3) **Meghívás** engedélyezve van, csak akkor, ha rendelkezik engedéllyel a jelentés megosztásához másokkal. Csak akkor, ha Ön a jelentés tulajdonosa, vagy ha a tulajdonos újraosztás engedélyt kapott engedélyt kell.
+4) **Jegyzetkészítés és megosztás** lehet tiltsa le, ha van egy [az Intune alkalmazásvédelmi szabályzat](https://docs.microsoft.com/intune/app-protection-policies) a szervezetben, hogy a megosztás Power BI Mobile app. 
 
 ## <a name="next-steps"></a>Következő lépések
 * [Telefonra optimalizált Power BI-jelentések megtekintése és használata](mobile-apps-view-phone-report.md)

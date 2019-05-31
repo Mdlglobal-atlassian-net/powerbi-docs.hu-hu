@@ -1,8 +1,8 @@
 ---
 title: Prémium szintű Power BI-kapacitás újraindítása
 description: Útmutató teljesítmény-problémák kezeléséhez prémium szintű Power BI-kapacitás újraindításával.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7fbd8bd9c7712dbd2476544fef900547310f35fa
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
-ms.translationtype: HT
+ms.openlocfilehash: 214b9fe48d5254e1bd2d436dd873b3c2d1d35f98
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794959"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65564909"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Prémium szintű Power BI-kapacitás újraindítása
 
@@ -31,7 +31,7 @@ A Power BI egyre fejlettebb módokon védi a prémium szintű kapacitások felha
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Biztonságos az újraindítási eljárás? Veszíthetek adatot?
 
-A kapacitásában lévő összes mentett adat, definíció, jelentés és irányítópult teljesen sértetlen marad az újraindítás során. Egy kapacitás újraindításának idejére minden folyamatban lévő ütemezett vagy alkalmi frissítés le lesz állítva. A frissítések ismét elindulnak, amikor a kapacitás elérhetővé válik. A kapacitást használó felhasználók nem mentett munkája elvész. Nekik az újraindítás befejeződése után frissíteniük kell a böngészőjüket.
+A kapacitásában lévő összes mentett adat, definíció, jelentés és irányítópult teljesen sértetlen marad az újraindítás során. Egy kapacitás újraindításának idejére minden folyamatban lévő ütemezett vagy alkalmi frissítés le lesz állítva. A szolgáltatás megkísérli újra frissül, amikor a kapacitás érhető el. A kapacitást használó felhasználók nem mentett munkája elvész. Nekik az újraindítás befejeződése után frissíteniük kell a böngészőjüket.
 
 ## <a name="how-do-i-restart-a-capacity"></a>Hogyan indíthatok újra egy kapacitást?
 
@@ -57,6 +57,6 @@ Emellett javasoljuk a [kapacitások rendszeres figyelését](service-admin-premi
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Mi a Power BI Premium?](service-premium.md)
+[Mi a Power BI Premium?](service-premium-what-is.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

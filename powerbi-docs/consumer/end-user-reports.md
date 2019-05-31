@@ -8,63 +8,59 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 5/10/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 42648c4b2ad82eb3091ee1aa9ca75af1c87edd42
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 02652bd027d7dab8a40d77fb92c5aae8f09d8820
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662181"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65607893"
 ---
 # <a name="reports-in-power-bi"></a>Jelentések a Power BI-ban
 ## <a name="what-is-a-power-bi-report"></a>Mi a Power BI-jelentés?
-A Power BI-***jelentés*** többféle nézőpontból jeleníti meg az adathalmazokat, különböző, az adott adathalmazból származó eredményeket és meglátásokat bemutató vizualizációkkal.  Egy jelentés állhat egyetlen vizualizációból vagy vizualizációkkal megtöltött lapokból. Feladatkörétől függően Ön lehet a jelentések *létrehozója* és/vagy egy azokat *feldolgozó* vagy felhasználó személy.
+A Power BI ***jelentés*** adatkészletbe, az adott adathalmazból származó eredményeket és meglátásokat különböző bemutató képviselő Vizualizációk nézőpontból nézet.  Egy jelentés egyetlen vizualizáción vagy a Vizualizációk teljes oldalak rendelkezhetnek. Függően, hogy lehet olyan személy akik *tervek* jelentéseket, illetve előfordulhat, hogy lehet olyan személy, aki *használ fel* vagy jelentéseket használ.
 
-![jelentés oldala](./media/end-user-reports/reportview.png)
+![jelentés oldala](./media/end-user-reports/power-bi-report.png)
 
-Ez a jelentés 3 lapot tartalmaz, és jelenleg az „Üzleti értékesítések áttekintése” lapot látjuk. Ez a lap 6 különböző vizualizációt és egy lapcímet tartalmaz. A vizualizációk *rögzíthetők* az irányítópultokra, és a rögzített vizualizációk választásakor megnyílik a jelentés, amelyből a vizualizáció származik.
+Ez a jelentés hat oldalak (vagy lapok) rendelkezik, és jelenleg nézi, hogy a róluk szóló véleményeket lap. Ezen az oldalon a következők 6 különböző vizualizációt és egy lapcímet.  
 
 Ha először használja a Power BI-t, sok mindent megtudhat, ha elolvassa a [Power BI alapvető fogalmai](end-user-basic-concepts.md) című témakört.
 
-A jelentések a Power BI szolgáltatásban és a Power BI Desktop alkalmazásban érhetők el. A jelentések használatának élménye a két környezet esetében csaknem azonos. Mobileszközről azonban nem tud jelentést létrehozni, hanem csak [megtekintheti, megoszthatja és jegyzetekkel láthatja el](mobile/mobile-reports-in-the-mobile-apps.md) őket.
+Jelentések megtekintését, megosztását és a mobileszközök jegyzetkészítés érhetők el. További információkért lásd: [mobil Power BI-jelentések](mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="advantages-of-reports"></a>A jelentések előnyei
-A jelentések egyetlen adathalmazon alapulnak. A jelentésben lévő vizualizációk egy-egy információmorzsát képviselnek. A vizualizációk nem statikusak: hozzáadhat és eltávolíthat adatokat, módosíthatja a vizualizációtípusokat, és az elemzésekhez és a válaszok kereséséhez az adatok mélyebb szintjére lehatolva szűrőket és szeletelőket alkalmazhat. A jelentések rendkívül interaktívak és nagymértékben testre szabhatók (éppen úgy, ahogyan az irányítópultok – sőt, még inkább), a vizualizációk pedig frissülnek az alapjukul szolgáló adatok változásakor.
+A jelentések egyetlen adatkészleten alapulnak. A jelentés hozzák létre a jelentésekben a vizualizációkban *tervezők* , és olyan információk nuget képviseli. A Vizualizációk nem statikusak; és használhatja a vizualizációkat és szűrőket szintjére lehatolva elemzésekhez és a válaszok kereséséhez az adatok. Például egy irányítópultot azonban más –, egy jelentés így interaktív és nagymértékben testre szabható, és a Vizualizációk frissítése az alapul szolgáló adatok változásának megfelelően.
 
-## <a name="dashboards-versus-reports"></a>Az irányítópultok és a jelentések különbségei
-Az [irányítópultokat](end-user-dashboards.md) sokan összetévesztik a jelentésekkel, mert ezek is vizualizációkat tartalmazó vásznak. Vannak azonban lényeges különbségek a két elem között.  
+### <a name="safely-interact-with-content"></a>A tartalom biztonságos kezelése
+Fedezze fel és kezelheti a tartalmat, szűrés, tovább szeletelve, feliratkozik, és exportálása, biztosítják nyugalmát; a munkahelyi nem befolyásolja az alapjául szolgáló adatkészletet vagy az eredeti megosztott tartalmak (irányítópultok, jelentések és alkalmazások).
+ 
+> [!NOTE]
+> Ne feledje, hogy nem csökkentheti a adatait. A Power BI a nagyszerű hely ismerje meg, és nem kell, hogy "elront" bármit kísérletezhet.
+
+### <a name="save-your-changes-or-revert-to-the-default-settings"></a>Mentse a módosításokat, vagy az alapértelmezett beállítások visszaállítása
+Ez nem jelenti azt, nem tudja menteni a módosításokat; Igen, de ezek a módosítások csak a tartalom a megjelenített hatással. Visszaállítás az eredeti alapértelmezett nézet a visszaállítás az alapértelmezett gomb kiválasztásával beállítható.
+
+## <a name="dashboards-versus-reports"></a>Irányítópultok és jelentések
+[Az irányítópultok](end-user-dashboards.md) általában a jelentésekkel, mert ezek is összetévesztik a vizualizációkat. Azonban van köztük néhány alapvető különbség.  
 
 | **Képesség** | **Irányítópultok** | **Jelentések** |
 | --- | --- | --- |
 | Oldalak |Egy oldal |Egy vagy több oldal |
 | Adatforrások |Egy vagy több jelentés és egy vagy több adatkészlet irányítópultonként |Egyetlen adatkészlet jelentésenként |
-| Elérhető a Power BI Desktopban |Nem |Igen, a jelentések létrehozhatók és megtekinthetők a Desktopban |
-| Rögzítés |Csak az aktuális irányítópultról képes a létező vizualizációkat (csempéket) más irányítópultokra rögzíteni |Bármelyik irányítópultra képes rögzíteni a vizualizációkat (csempékként). Teljes oldalakat rögzíthet a jelentésből bármely irányítópultra. |
-| Előfizetés |Nem fizethet elő irányítópultra |Előfizethet jelentésoldalakra |
 | Szűrés |Nem lehet szűrni és szeletelni |Számos szűrési, kiemelési és szeletelési móddal rendelkezik |
 | Riasztások beállítása |Létrehozhat olyan riasztásokat, amelyek e-mailen keresztül értesítik, ha a feltételek teljesülnek |Nem |
 | Kiemelés |Kiválaszthat és beállíthat egy „kiemelt” irányítópultot |Nem hozhat létre kiemelt jelentést |
-| Természetes nyelven történő lekérdezések |Elérhető az irányítópultból |Nem érhető el a jelentésekből |
-| Megváltoztathatja a vizualizáció típusát |Nem. Ha egy jelentéstulajdonos megváltoztatja a vizualizáció típusát a jelentésen belül, az irányítópulton rögzített vizualizáció nem fog frissülni |Igen |
-| Láthatja az alapul szolgáló adatkészlet-táblázatokat és -mezőket |Nem. Exportálhatja az adatokat, de magán az irányítópulton nem fogja látni a táblázatokat és a mezőket. |Igen. Láthatja az adatkészlet-táblázatokat, -mezőket és -értékeket. |
-| Létrehozhat vizualizációkat |Csak a widgetek irányítópulthoz történő hozzáadása lehetséges a „Csempe hozzáadása” lehetőség használatával |A Szerkesztési engedéllyel létrehozhat számos különböző vizualizációtípust, egyéni vizualizációkat adhat hozzá és szerkeszthet stb. |
-| Testreszabás |Mozgathatja és rendezheti a vizualizációkat (csempéket), újraméretezheti őket és hivatkozásokat adhat hozzájuk, valamint átnevezheti, törölheti vagy teljes képernyőn jelenítheti meg őket. Maguk az adatok és a vizualizációk azonban csak olvashatók. |Az olvasási nézetben közzétehet, beágyazhat, szűrhet és exportálhat adatokat, letölthet .pbix-ként, megtekintheti a vonatkozó tartalmakat, QR-kódokat generálhat, exceles elemzést hajthat végre stb.  Szerkesztő nézetben ugyanezek mellett rengeteg más művelet is elérhető. |
+| Láthatja az alapul szolgáló adatkészlet-táblázatokat és -mezőket |Nem. Is exportálhat adatokat, de nem láthatják az adatkészlet-táblázatokat és a mezők magán az irányítópulton. |Igen. Adatkészlet-táblázatokat és mezők és értékek megtekintéséhez engedélyekkel rendelkező látható. |
+| Testreszabás |Nem  |Is szűrheti, exportálása, kapcsolódó tartalom megtekintése, a Könyvjelzők hozzáadása, QR-kódokat generálhat, elemzés az Excelben és más.   |
+
+<!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |
+| Pinning |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards. | -->
 
 ## <a name="report-creators-and-report-consumers"></a>Jelentések ***létrehozói*** és ***felhasználói***
-A szerepkörétől függően Ön lehet olyan személy, aki jelentéseket hoz létre saját használatra vagy a munkatársakkal való megosztáshoz. Ez esetben a jelentések létrehozásáról és megosztásáról kell ismereteket szereznie. Vagy lehet olyan személy is, aki jelentéseket kap másoktól. Ez esetben azt kell tudnia, hogy hogyan értelmezheti és használhatja a jelentéseket.
+A szerepkör függően előfordulhat, hogy lehet egy *designer*, személy, aki jelentéseket a saját használatra, illetve a munkatársakkal való megosztásáról hoz létre. Ez esetben a jelentések létrehozásáról és megosztásáról kell ismereteket szereznie. Vagy lehet olyan személy is, aki jelentéseket kap másoktól. Ez esetben azt kell tudnia, hogy hogyan értelmezheti és használhatja a jelentéseket. Ha egy jelentés **fogyasztói**, ezek a hivatkozások akkor az Ön számára. 
 
-A szerepkörének megfelelő alábbi témakörök kiváló kiindulási pontot nyújtanak.
-
-### <a name="if-you-will-be-creating-and-sharing-reports"></a>Jelentések létrehozásához és megosztásához
-* Kezdje a [Power BI szolgáltatás áttekintésével](end-user-basic-concepts.md), melyből megtudhatja, hol találhatja meg a jelentéseket és a jelentéseszközöket.
-* Ismerkedjen meg a [jelentésszerkesztővel](../service-the-report-editor-take-a-tour.md).
-* Tudja meg, [hogyan hozhat létre jelentést egy adatkészletből](../service-report-create-new.md).
-* Ismerkedjen meg a [vizualizációk, lapok és jelentésszintű szűrők használatával](end-user-report-filter.md).
-* Fedezze fel, milyen különféle módokon [oszthatja meg a jelentéseket a munkatársaival](../service-share-dashboards.md).
-
-### <a name="if-you-will-be-receiving-and-consuming-reports"></a>Jelentések fogadásához és felhasználásához
 * Kezdje a [Power BI szolgáltatás áttekintésével](end-user-basic-concepts.md), melyből megtudhatja, hol találhatja meg a jelentéseket és a jelentéseszközöket.
 * Ismerje meg, hogyan tud [megnyitni egy jelentést](end-user-report-open.md), és fedezze fel az [Olvasó nézetben](end-user-reading-view.md) elérhető műveleteket.
 * Gyakorolja a jelentések használatát az egyik [mintánk](../sample-tutorial-connect-to-the-samples.md) segítségével.  

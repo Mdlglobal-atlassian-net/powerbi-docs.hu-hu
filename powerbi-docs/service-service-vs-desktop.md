@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 4e3b465648d5b827d1ed53550207879f555c38f9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 8d690e8fd19ab988192c2aa36053416d2bb3d45c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284104"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61403438"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>A Power BI Desktop és a Power BI szolgáltatás összehasonlítása
 
@@ -48,7 +48,7 @@ Ez a videó bemutatja a jelentésszerkesztőt a Power BI Desktopban.
 
 ## <a name="collaborating-in-the-power-bi-service"></a>Együttműködés a Power BI szolgáltatásban
 
-Miután létrehozta a jelentéseket, mentheti őket egy *munkaterületre* a **Power BI szolgáltatásban**, ahol együttműködhet a munkatársaival. Ezekhez a jelentésekhez létrehozhat *irányítópultokat*. Majd ezeket az irányítópultokat és jelentések megoszthatja a szervezeten belüli és kívüli jelentésfogyasztókkal. A jelentésfogyasztók a Power BI szolgáltatásban [Olvasó nézetben](consumer/end-user-reading-view.md), tekinthetik meg ezeket, nem Szerkesztési nézetben. Ők nem férhetnek hozzá a jelentés létrehozói számára elérhető összes funkcióhoz. 
+Miután létrehozta a jelentéseket, mentheti őket egy *munkaterületre* a **Power BI szolgáltatásban**, ahol együttműködhet a munkatársaival. Ezekhez a jelentésekhez létrehozhat *irányítópultokat*. Majd ezeket az irányítópultokat és jelentések megoszthatja a szervezeten belüli és kívüli jelentésfogyasztókkal. A jelentésfogyasztók a Power BI szolgáltatásban [Olvasó nézetben](consumer/end-user-reading-view.md), tekinthetik meg ezeket, nem Szerkesztési nézetben. Ezek nem férnek hozzá a jelentés létrehozói számára elérhető összes funkciót. 
 
 ## <a name="next-steps"></a>Következő lépések
 

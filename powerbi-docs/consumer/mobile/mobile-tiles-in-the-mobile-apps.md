@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: aa0827c0be31d65db7bff2c6e2476e5db59b2895
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286404"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60978244"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Ismerkedés a Power BI-mobilalkalmazások csempéivel
 A következőkre vonatkozik:
@@ -71,7 +71,7 @@ Ezek a csempék aztán a Power BI mobilalkalmazásban fókusz módban megnyithat
    * A diagramra koppintva áthelyezheti egy vonal-, sáv-, oszlop- vagy buborékdiagram egy sávját és megtekintheti a vizualizáció egy adott pontjához tartozó értékeket.  
    * A Pillanatkép megosztása ikonra ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) koppintva [megjegyzésekkel láthat el egy csempét és megoszthatja](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) másokkal.
    * A Jelentés megnyitása ikonra ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) koppintva [megtekintheti a jelentést](mobile-reports-in-the-mobile-apps.md) a mobilalkalmazásban.
-3. Az irányítópult létrehozója hivatkozást adhat egy csempéhez. Ilyen esetben a függőleges három pontra (**...**) koppintva megjelenik a **Hivatkozás megnyitása** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) lehetőség:
+3. Az irányítópult létrehozója hivatkozást adhat egy csempéhez. Ilyen esetben a függőleges három pontra ( **...** ) koppintva megjelenik a **Hivatkozás megnyitása** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) lehetőség:
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    

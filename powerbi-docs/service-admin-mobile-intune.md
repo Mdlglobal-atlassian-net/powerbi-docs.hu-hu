@@ -11,10 +11,10 @@ ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: d28a27d69d6e8799f08ddaa05e734ded62150c8f
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/16/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710944"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Mobilalkalmazások konfigurálása a Microsoft Intune-nal
@@ -50,11 +50,11 @@ iOS rendszer esetén az alkalmazás URL-címét az iTunes-ból kell beszerezni.
 
     ![iTunes-alkalmazás URL-címe](media/service-admin-mobile-intune/itunes-url.png)
 
-Az alábbihoz hasonlóan kell kinéznie: *https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8*.
+Az alábbihoz hasonlóan kell kinéznie: *https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8* .
 
 ### <a name="get-android-url"></a>URL-cím lekérése Android rendszer esetén
 
-A Google Play Áruház URL-címét a [Power BI Mobile oldaláról](https://powerbi.microsoft.com/mobile/) szerezheti be. A **Download from Google Play** (Letöltés a Google Play Áruházból) ikonra kattintva léphet az alkalmazás lapjára. A böngésző címsorából másolhatja az URL-címet. Az alábbihoz hasonlóan kell kinéznie: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim*.
+A Google Play Áruház URL-címét a [Power BI Mobile oldaláról](https://powerbi.microsoft.com/mobile/) szerezheti be. A **Download from Google Play** (Letöltés a Google Play Áruházból) ikonra kattintva léphet az alkalmazás lapjára. A böngésző címsorából másolhatja az URL-címet. Az alábbihoz hasonlóan kell kinéznie: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim* .
 
 ## <a name="step-2-create-a-mobile-application-management-policy"></a>2. lépés: Mobilalkalmazás-felügyeleti szabályzat létrehozása
 

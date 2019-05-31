@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5c4bf7c1e1abb8fd87b97c48bfa94b57d5481b00
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 16114793b190996b3ef9e800e562dd0caf62089c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295857"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65514811"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>A németországi felhőszolgáltatás (Germany Cloud) Power BI-felhasználói számára készült gyakori kérdések
 A **Power BI szolgáltatás** egyik verziója kifejezetten az Európai Unió és az Európai Szabadkereskedelmi Társulás (EU és EFTA) országaiban lévő ügyfeleknek készült, és Microsoft Cloud Deutschland (MCD) néven hivatkozunk rá. A jelen cikkben a **Power BI szolgáltatás** EU- és EFTA-ügyfelek részére készült verzióját tárgyaljuk, amely elkülönül és különbözik a **Power BI szolgáltatás** kereskedelmi verziójától és a kormányzati ügyfelek részére biztosított Power BI-szolgáltatásoktól.
@@ -32,10 +32,10 @@ Az alábbi kérdések és válaszok fontos információkat nyújtanak a Microsof
    Az EU- és EFTA-ügyfelek részére készült Power BI szolgáltatás – más néven a Microsoft Cloud Deutschland (MCD) – az EU és az EFTA előírásainak megfelelő felhő, amely németországi adatközpontokból biztosítja a Power BI szolgáltatást. Az EU-/EFTA-felhőhöz készült Power BI szolgáltatáshoz kapcsolódó minden ügyféladatot Németországban tárolunk a független németországi adatkezelési megbízott, a T-Systems közreműködésével, az adatokhoz való fizikai és logikai hozzáférés pedig a németországi jogszabályokkal összhangban történik. Az EU/EFTA-felhőhöz készült Power BI szolgáltatáshoz a Power BI kereskedelmi verziójától különböző és különálló verziójú fiók szükséges. További információt a Microsoft Cloud Deutschland szolgáltatásról [itt](https://www.microsoft.com/trustcenter/cloudservices/nationalcloud) talál.
 2. **Hol találom a Power BI Germany Cloud felhőre vonatkozó árakat és regisztrációs útmutatót?**
    
-   A [Power BI Germany Cloud weboldalán](https://powerbi.microsoft.com/power-bi-germany/) rengeteg információ érhető el, köztük az árak is. Az oldalon egy hivatkozást is talál, amelyet követve regisztrálhat a **Power BI Pro szolgáltatás** 30 napos, 25 felhasználói licencet biztosító próbaverziójára. A próbaverzióra történő regisztráció után további előfizetéseket vásárolhat vagy vehet fel, ha szükséges. Nagyvállalati szerződéshez kötött, kormányzati és nonprofit díjszabást kínálunk. További információért forduljon a Microsoft ügyfélszolgálatához.
+   A [Power BI Germany Cloud weboldalán](https://powerbi.microsoft.com/power-bi-germany/) rengeteg információ érhető el, köztük az árak is. A oldalon, keresse meg, regisztráljon egy hivatkozást **Power BI Pro szolgáltatást** 30 napos próbaverziójára, 25 felhasználói licencet. Próba-előfizetés részeként vásárolhat vagy vehet fel további licenceket, szükség szerint lehetőség van. Nagyvállalati szerződéshez kötött, kormányzati és nonprofit díjszabást kínálunk. További részletekért forduljon a Microsoft ügyfélszolgálatához.
 3. **A németországi felhőben rendelkezem bérlővel, amely az Azure Germany- és/vagy az Office 365 Germany-előfizetésem része. Használhatom a meglévő bérlőmet a Power BI Germany szolgáltatásba történő regisztrációhoz?**
    
-   Igen. A regisztráció során lehetőség van arra, hogy meglévő Germany Cloud-bérlői rendszergazdai fiókkal jelentkezzen be, és a Power BI Pro szolgáltatásbeli licenceit meglévő, Germany Cloud-beli bérlőjében vegye fel. Vegye figyelembe, hogy a Germany Cloud-bérlők és -felhasználói fiókok különböznek a németországi felhőhöz készült Power BI szolgáltatásbeliektől.
+   Igen. A regisztráció során lehetőség van arra, hogy meglévő Germany Cloud-bérlői rendszergazdai fiókkal jelentkezzen be, és a Power BI Pro szolgáltatásbeli licenceit meglévő, Germany Cloud-beli bérlőjében vegye fel. Vegye figyelembe, hogy a Germany Cloud-bérlők és felhasználói fiókok különböznek a Németországi felhőhöz készült Power BI szolgáltatásban.
 4. **A németországi felhőhöz készült Power BI szolgáltatásnak létezik ingyenes verziója?**
    
    Nem. A németországi felhőhöz készült Power BI szolgáltatás nem érhető el ingyenes licencű verzióban. Helyette azt ajánljuk, hogy regisztráljon [az ingyenes Power BI szolgáltatásra a nyilvános felhőnkben](https://powerbi.microsoft.com/get-started/), ha az ingyenes Power BI funkcióinak köre megfelel cége igényeinek.
@@ -56,7 +56,7 @@ Az alábbi kérdések és válaszok fontos információkat nyújtanak a Microsof
    * Power BI Embedded (különállóan mért független szoftverszállítói licencek; a jövőben a [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/) keretében lesz elérhető)
 7. **Hol találom a németországi felhőhöz készült Power BI szolgáltatás konfigurációs segédletét az alkalmazásaimban való felhasználás és integráció céljából?**
    
-   Frissítettük a [fejlesztői szolgáltatottszoftver-beágyazási mintákat](https://github.com/Microsoft/PowerBI-Developer-Samples), amelyek közt immár szerepelnek a németországi és más Power BI-felhők egyedi konfigurációs adatai. A **Cloud Configs** (Felhőkonfigurációk) nevű mappában a felhőspecifikus konfigurációs végpontok mintáit találja. Az alábbi táblázat a németországi felhőhöz készült Power BI szolgáltatás különböző végpontjait tartalmazza (a nyilvános felhőre mutató hivatkozásokat is közöljük, összevetési alapul).
+   Frissítettük a [fejlesztői szolgáltatottszoftver-beágyazási mintákat](https://github.com/Microsoft/PowerBI-Developer-Samples), amelyek közt immár szerepelnek a németországi és más Power BI-felhők egyedi konfigurációs adatai. Tekintse meg a **Cloud Configs** mappában a felhőspecifikus konfigurációs végpontok minták. Az alábbi táblázat a németországi felhőhöz készült Power BI szolgáltatás különböző végpontjait tartalmazza (a nyilvános felhőre mutató hivatkozásokat is közöljük, összevetési alapul).
 
 | **Végpont neve és/vagy használat** | **A németországi felhőhöz készült Power BI szolgáltatás URL-címe** | **A neki megfelelő URL-cím a nyilvános felhőben (összevetési alapul)** |
 | --- | --- | --- |
@@ -68,7 +68,7 @@ Az alábbi kérdések és válaszok fontos információkat nyújtanak a Microsof
 | Power BI szolgáltatásbeli erőforrás-URI |[https://analysis.cloudapi.de/powerbi/api](https://analysis.cloudapi.de/powerbi/api) |[https://analysis.windows.net/powerbi/api](https://analysis.windows.net/powerbi/api) |
 | Egyéni vizualizációtár |[https://app.powerbi.de/visuals/](https://app.powerbi.de/visuals/) |[https://app.powerbi.com/visuals/](https://app.powerbi.com/visuals/) |
 | Alkalmazás regisztrációja a Power BI-ba (az Embedded szolgáltatáshoz) |[https://app.powerbi.de/apps](https://app.powerbi.de/apps) |[https://app.powerbi.com/apps](https://app.powerbi.com/apps) |
-| Azure Portal (az Embedded szolgáltatáshoz) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
+| Az Azure portal (az Embedded) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Közösség |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |
 
 ## <a name="next-steps"></a>Következő lépések

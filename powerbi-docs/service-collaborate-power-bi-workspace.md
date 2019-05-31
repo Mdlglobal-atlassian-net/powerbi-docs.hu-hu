@@ -11,11 +11,11 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: c1e8e449c2db7e751d719f8fca38b194a9a0042a
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174568"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61181673"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Együttműködés a Power BI alkalmazás-munkaterületén
 A Power BI alkalmazás-munkaterületek kitűnően alkalmasak arra, hogy munkatársaival irányítópultokon, jelentéseken és adatkészleteken együttműködve hozzanak létre *alkalmazásokat*. Az együttműködés a Power BI-ban nem csupán a munkaterületekre terjed ki. Az Office 365 további csoportszolgáltatásokat is kínál, mint a fájlok megosztása a OneDrive Vállalati verziójában, az Exchange-beszélgetések, a megosztott naptár és feladatok és így tovább. További ismereteket is szerezhet az [Office 365-csoportokról](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
@@ -43,7 +43,7 @@ Ha közzétesz egy Power BI Desktop-fájlt a Power BI alkalmazás-munkaterület�
 ## <a name="collaborate-in-office-365"></a>Együttműködés az Office 365-ben
 Az Office 365-beli együttműködés kiindulópontja a Power BI-beli alkalmazás-munkaterület.
 
-1. A Power BI szolgáltatásban válassza a Munkaterületek elem melletti nyilat, majd a munkaterület neve melletti három pontot (**...**). 
+1. A Power BI szolgáltatásban válassza a Munkaterületek elem melletti nyilat, majd a munkaterület neve melletti három pontot ( **...** ). 
    
    ![A Munkaterületek menü](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. Ebből a menüből több módon is együttműködhet a csoportjával: 
@@ -64,7 +64,7 @@ Az Office 365-beli együttműködés kiindulópontja a Power BI-beli alkalmazás
 2. További információ az [Office 365 Outlook-csoportbeszélgetésekről](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="schedule-an-event-on-the-apps-group-workspace-calendar"></a>Esemény ütemezése az alkalmazás csoport-munkaterületének naptárában
-1. Válassza a munkaterület neve melletti három pontot (**...**) \> **Naptár**. 
+1. Válassza a munkaterület neve melletti három pontot ( **...** ) \> **Naptár**. 
    
    ![A Naptár fül](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
