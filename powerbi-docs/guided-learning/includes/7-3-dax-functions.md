@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 06ee6ad7ade46d811c6340d905150c6dd3810c55
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61273390"
+---
 A DAX számos függvényt biztosít az adatok alakításához, formálásához vagy más típusú elemzéséhez. Ezek a függvények az alábbi kategóriákba sorolhatók:
 
 * **Összesítésfüggvények**

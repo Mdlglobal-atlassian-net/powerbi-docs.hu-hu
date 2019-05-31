@@ -1,5 +1,5 @@
 ---
-title: Csatlakozás PDF-fájlhoz a Power BI Desktopban (előzetes verzió)
+title: Csatlakozás egy PDF-fájlt a Power BI Desktopban
 description: Egyszerű csatlakozás PDF-fájlokhoz, és az azokban tárolt adatok használata a Power BI Desktopban
 author: davidiseminger
 manager: kfile
@@ -7,36 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ff61c4d2cc8ec3570e7eee45b7e43ec81f8f7161
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 0c63a62edfce62a5cee13bef3c68014027313e8b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275111"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65513972"
 ---
-# <a name="connect-to-a-pdf-file-in-power-bi-desktop-preview"></a>Csatlakozás PDF-fájlhoz a Power BI Desktopban (előzetes verzió)
+# <a name="connect-to-a-pdf-file-in-power-bi-desktop"></a>Csatlakozás egy PDF-fájlt a Power BI Desktopban
 A Power BI Desktopban csatlakozhat egy **PDF-fájlhoz**, és úgy használhatja a fájlban lévő adatokat, mint a Power BI Desktop bármely más adatforrását.
 
 ![Csatlakozás PDF-fájlban lévő adatokhoz](media/desktop-connect-pdf/connect-pdf_04.png)
 
 A következő bekezdések a **PDF-fájlhoz** való csatlakozást, az adatok kijelölését és az adatoknak a **Power BI Desktopba** való beolvasását ismertetik.
 
-## <a name="enable-the-pdf-connector"></a>A PDF-összekötő engedélyezése
-A PDF-összekötő előzetes verzióban érhető el a **Power BI Desktophoz**, ezért engedélyezni kell. A PDF-összekötő engedélyezéséhez válassza a **Fájl > Lehetőségek és beállítások > Lehetőségek > Előzetes funkciók** menüpontot, majd jelölje be az **Adatok beolvasása PDF-fájlokból** elem melletti jelölőnégyzetet. 
-
-![A PDF-összekötő engedélyezése a Beállítások > Előzetes funkciók lehetőséggel](media/desktop-connect-pdf/connect-pdf_01.png)
-
-Miután ezt beállította, újra kell indítania a **Power BI Desktopot**.
-
-A **PDF- (bétaverzió)** összekötő első használatakor figyelmeztetést kap arról, hogy a PDF-összekötő fejlesztés alatt áll, és a jövőben módosulhat. Az összekötő használatához válassza a **Tovább** lehetőséget.
-
 Javasoljuk, hogy mindig frissítsen a **Power BI Desktop** legújabb verziójára, amelyet a [Power BI Desktop beszerzése](desktop-get-the-desktop.md) hivatkozással érhet el. 
 
 ## <a name="connect-to-a-pdf-file"></a>Csatlakozás PDF-fájlhoz
-Ha csatlakozni kíván egy **PDF-fájlhoz**, válassza az **Adatok lekérése** lehetőséget a Power BI Desktop **Kezdőlap** menüszalagján. A bal oldali kategóriák közül válassza az **Fájl** lehetőséget, ekkor megjelenik a **PDF (bétaverzió)**.
+Ha csatlakozni kíván egy **PDF-fájlhoz**, válassza az **Adatok lekérése** lehetőséget a Power BI Desktop **Kezdőlap** menüszalagján. A bal oldali kategóriák közül válassza az **Fájl** lehetőséget, ekkor megjelenik a **PDF (bétaverzió)** .
 
 ![PDF kiválasztása az Adatok lekérésénél](media/desktop-connect-pdf/connect-pdf_01.png)
 

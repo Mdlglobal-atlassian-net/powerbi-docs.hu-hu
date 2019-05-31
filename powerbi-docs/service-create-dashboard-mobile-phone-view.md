@@ -1,5 +1,5 @@
 ---
-title: Power BI-irányítópult mobiltelefonos nézetének létrehozása
+title: Egy irányítópultot a mobiltelefonokhoz – Power BI optimalizálása
 description: Útmutató egy irányítópult mobiltelefonon való megtekintésre készült egyéni nézetének létrehozásához a Power BI szolgáltatásban.
 author: maggiesMSFT
 manager: kfile
@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cd7df8383ad22d273ebf396fc1cf8297f110dde5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288152"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61158265"
 ---
-# <a name="create-a-view-of-a-power-bi-dashboard-optimized-for-mobile-phones"></a>Power BI-irányítópult mobiltelefonra optimalizált nézetének létrehozása
-Amikor a telefonján irányítópultokat tekint a Power BI-mobilalkalmazásban, észreveheti, hogy az irányítópult-csempék egymás után sorakoznak, egyforma méretben. A Power BI szolgáltatásban bármely saját tulajdonú irányítópultnak létrehozható az egyéni, telefonos nézete.
+# <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Egy irányítópultot a mobiltelefonokhoz – Power BI optimalizálása 
+Az irányítópultok álló tájolású módban a telefonon való megtekintésekor láthatja, hogy az irányítópult-csempék sorakoznak egymás után, egyforma méretben. A Power BI szolgáltatásban létrehozhat egy irányítópultot, kifejezetten a telefonokon tájolással egyéni nézetét. Akkor is, ha Ön a telefonhoz tervezte hoz létre egy telefonos nézetet, az irányítópulton láthatja a szolgáltatásban foglalt.
 
-A telefont oldalra fordítva az irányítópult elrendezése olyan lesz, mint a szolgáltatásban, nem pedig ahogyan a telefonhoz tervezte.
+Keres egy mobileszközön irányítópultok megjelenítésével kapcsolatos információkat? Próbálja ki az ebben a rövid útmutatóban [áttekintheti az irányítópultokat és jelentéseket a Power BI-mobilalkalmazásokban](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md) helyette.
 
 > [!NOTE]
 > A telefonos nézet szerkesztése közben azok, akik telefonon tekintik meg az irányítópultot, valós időben látják a módosításokat. Ha például az összes csempe rögzítését feloldja az irányítópult telefonos nézetében, akkor az irányítópultról a telefonon hirtelen minden csempe eltűnik. 

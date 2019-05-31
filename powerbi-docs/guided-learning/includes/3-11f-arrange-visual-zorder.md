@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 2019376373268ff57802525ba5b7ee6b7a8ff32e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397785"
+---
 Ha sokféle elem található egy jelentésben, a Power BI lehetővé teszi az egyes elemek átfedési módjának kezelését. Az elemek rétegezése – vagyis azok egymás feletti réteges elhelyezése – gyakran mélységi sorrendként ismert.
 
 A jelentésekben található mélységi sorrend kezeléséhez válasszon egy elemet, majd használja a menüszalag **kezdőlapjának** **Elrendezés** gombját a mélységi sorrend módosításához.

@@ -3,7 +3,7 @@ title: Hibaelhárítás – frissítéshez nem támogatott adatforrás
 description: Hibaelhárítás – frissítéshez nem támogatott adatforrás
 author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.date: 12/06/2017
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 340c3fe2dc18fadb6be0ac47556547e6131833bc
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: bd0ea66b8caf32e3244ed4e5eef648100fc5169e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280401"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61188054"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Hibaelhárítás – frissítéshez nem támogatott adatforrás
 Előfordulhat, hogy hibaüzenetet tapasztal, amikor egy adatkészletet ütemezett frissítését próbálja konfigurálni.
@@ -41,7 +41,7 @@ Ha nem biztos abban, hogy milyen adatforrást használt, akkor a következő lé
 ## <a name="next-steps"></a>Következő lépések
 [Adatfrissítés](refresh-data.md)  
 [Power BI Gateway – Personal](service-gateway-personal-mode.md)  
-[Helyszíni adatátjáró](service-gateway-onprem.md)  
+[On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)  
 [A Helyszíni adatátjáróval kapcsolatos hibák elhárítása](service-gateway-onprem-tshoot.md)  
 [A személyes Power BI Gateway hibáinak elhárítása](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 

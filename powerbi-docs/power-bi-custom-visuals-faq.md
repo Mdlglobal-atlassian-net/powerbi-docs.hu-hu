@@ -11,11 +11,11 @@ ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
 ms.openlocfilehash: 9c5d2665f012881f951a186c3ec8c9fd94031a28
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980358"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60977202"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Gyakori kérdések – Power BI-beli egyéni vizualizációk
 
@@ -149,7 +149,7 @@ Mint tudja, a minősítés választható eljárás. Ön döntheti el, hogy minő
 
 ### <a name="how-to-get-support"></a>Hogyan kérhetek segítséget?
 
-Ha bármilyen kérdése, megjegyzése vagy problémája van, vegye fel a kapcsolatot az egyéni vizualizációk csapatával a  *pbicvsupport@microsoft.com*  címen.  
+Ha bármilyen kérdése, megjegyzése vagy problémája van, vegye fel a kapcsolatot az egyéni vizualizációk csapatával a  *pbicvsupport@microsoft.com*   címen.  
 
 ## <a name="next-steps"></a>Következő lépések
 

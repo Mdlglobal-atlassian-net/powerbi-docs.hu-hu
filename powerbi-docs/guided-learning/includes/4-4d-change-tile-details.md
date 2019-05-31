@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8fc17759ea38cc96c69e7639ed25172e782a9d4d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263802"
+---
 A Power BI szolgáltatásban az irányítópult **csempéi* létrehozás után szerkeszthetők is, ha formázási változtatásokat szeretne elvégezni rajtuk.
 
 Ha módosítani szeretné, mutasson a csempére, és válassza a három pont jelet. Ekkor megjelennek azok az ikonok, amelyekkel módosíthatja a csempét.

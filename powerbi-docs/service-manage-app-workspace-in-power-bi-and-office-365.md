@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: dda23e6b41613e76d5507d272e792f9f9130f982
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d900d8622f086ef28f39ee050e9e9f1639dfd53d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282241"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61231580"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Az alkalmazás-munkaterület kezelése a Power BI-ban és az Office 365-ben
 Az Office 365-ben vagy a [Power BI-ban az alkalmazás-munkaterület](service-create-distribute-apps.md) létrehozójaként vagy rendszergazdájaként Ön kezeli a Power BI munkaterületének egyes funkcióit. Más funkciókat az Office 365-ben kezelhet. 
@@ -36,10 +36,10 @@ Az Office 365-ben vagy a [Power BI-ban az alkalmazás-munkaterület](service-cre
 * A csoport e-mail-címének megtekintése.
 * A csoport törlése.
 
-Ahhoz, hogy alkalmazás-munkaterület rendszergazdája vagy tagja lehessen, [Power BI Pro-licencre](service-features-license-type.md) van szüksége. Az alkalmazás felhasználóinak szintén Power BI Pro-licenccel kell rendelkezniük, kivéve, ha az alkalmazás-munkaterület Power BI Premium-kapacitásban található. Részletek: [Mi a Power BI Premium?](service-premium.md).
+Ahhoz, hogy alkalmazás-munkaterület rendszergazdája vagy tagja lehessen, [Power BI Pro-licencre](service-features-license-type.md) van szüksége. Az alkalmazás felhasználóinak szintén Power BI Pro-licenccel kell rendelkezniük, kivéve, ha az alkalmazás-munkaterület Power BI Premium-kapacitásban található. Részletek: [Mi a Power BI Premium?](service-premium-what-is.md).
 
 ## <a name="edit-your-app-workspace-in-power-bi"></a>Az alkalmazás-munkaterület szerkesztése a Power BI-ban
-1. A Power BI szolgáltatásban válassza a **Munkaterületek** elem melletti nyilat, majd a munkaterület neve melletti három pontot (**...**), aztán a **Munkaterület szerkesztése** menüpontot. 
+1. A Power BI szolgáltatásban válassza a **Munkaterületek** elem melletti nyilat, majd a munkaterület neve melletti három pontot ( **...** ), aztán a **Munkaterület szerkesztése** menüpontot. 
    
    ![Munkaterületek szerkesztése a Power BI-ban](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
    
@@ -53,14 +53,14 @@ Ahhoz, hogy alkalmazás-munkaterület rendszergazdája vagy tagja lehessen, [Pow
 3. Kattintson a **Mentés** vagy a **Mégse** gombra.
 
 ## <a name="edit-power-bi-app-workspace-properties-in-office-365"></a>A Power BI-beli alkalmazás-munkaterület tulajdonságainak szerkesztése az Office 365-ben
-1. A Power BI szolgáltatásban válassza a **Munkaterületek** elem melletti nyilat, majd a munkaterület neve melletti három pontot (**...**), aztán a **Tagok** menüpontot. 
+1. A Power BI szolgáltatásban válassza a **Munkaterületek** elem melletti nyilat, majd a munkaterület neve melletti három pontot ( **...** ), aztán a **Tagok** menüpontot. 
    
    ![Munkaterületek szerkesztése a Power BI-ban](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
    
    Ezzel megnyílik az alkalmazás-munkaterület Office 365 Outlook csoportnézete.
    
    Lehet, hogy be kell jelentkeznie a vállalati fiókjába.
-2. Koppintson a tag neve melletti három pontra (**...**) a rendszergazdává alakításához, vagy törölje a tagot az alkalmazás-munkaterületről. 
+2. Koppintson a tag neve melletti három pontra ( **...** ) a rendszergazdává alakításához, vagy törölje a tagot az alkalmazás-munkaterületről. 
    
    ![Office 365-beli csoportok szerkesztése](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_managegroupo365.png)
 

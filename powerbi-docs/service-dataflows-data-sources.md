@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5bf9694c42a3a70fbc65085326a03618ae62a8f6
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: 81449d7a07bec3c142930573154ecd13a0ceff49
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324921"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61141382"
 ---
-# <a name="connect-to-data-sources-for-power-bi-dataflows-preview"></a>Adatforrásokhoz való csatlakozás Power BI-adatfolyamokkal (előzetes verzió)
+# <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Kapcsolódás az adatforrásokhoz a Power BI-adatfolyamok
 
 Power BI-adatfolyamokkal sokféle adatforráshoz csatlakozhat, hogy új adatforrásokat hozzon létre, vagy új entitásokat adjon egy meglévő adatfolyamhoz.
 
 Ez a cikk felsorolja az adatfolyamok létrehozásához vagy a hozzáadáshoz elérhető számos adatforrást, és leírja, hogyan hozhatók létre ezek az adatfolyamok a használatukkal.
 
-Adatfolyamok létrehozásáról és használatáról a [Adatfolyamok létrehozása és használata a Power BI-ban (előzetes verzió)](service-dataflows-create-use.md) című cikk nyújt áttekintést.
+Bemutatja, hogyan hozhat létre és használhat adatfolyamok áttekintéséhez lásd: [létrehozása és adatfolyamok használata a Power bi-ban](service-dataflows-create-use.md).
 
 ## <a name="create-a-dataflow-from-a-data-source"></a>Adatfolyam létrehozása adatforrásból
 
@@ -176,11 +176,11 @@ Ilyen egyszerűen csatlakozhat adatforrásokhoz Power BI-adatfolyamokkal.
 
 Ez a cikk azokat az adatforrásokat ismertette, amelyekhez adatfolyamokkal csatlakozhat. A következő cikkekben részletes információkat találhat az adatfolyamok gyakori használati forgatókönyveiről. 
 
-* [Önkiszolgáló adat-előkészítés a Power BI-ban (előzetes verzió)](service-dataflows-overview.md)
+* [Önkiszolgáló adat-előkészítési a Power bi-ban](service-dataflows-overview.md)
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
-* [Számított entitások használata a Power BI Premiumban (előzetes verzió)](service-dataflows-computed-entities-premium.md)
-* [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
-* [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
+* [A Power BI Premium számított entitások használatával](service-dataflows-computed-entities-premium.md)
+* [Adatfolyamok használata a helyszíni adatforrások](service-dataflows-on-premises-gateways.md)
+* [Fejlesztői erőforrások a Power BI-adatfolyamok](service-dataflows-developer-resources.md)
 * [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md)
 
 A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:

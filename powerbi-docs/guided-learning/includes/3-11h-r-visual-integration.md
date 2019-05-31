@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 226fdd59b00dc2daa625f9b1941599d21cc35087
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397625"
+---
 A Power BI Desktop segítségével analitikus és statisztikai elemzést hajthat végre, R-rel integrálva pedig lenyűgöző vizualizációs elemeket hozhat létre, amelyeket elhelyezhet a Power BI Desktop-jelentésekben.
 
 Amikor a **Vizualizációk** ablaktábláról kiválasztja az **R-vizualizáció** ikont, a Power BI létrehoz egy helyőrzőt a vásznon, amelyben elhelyezhető az R-vizualizáció, majd megjelenít egy R- szkript-szerkesztőt, amelyet közvetlenül ott a vásznon használhat. Miközben mezőket vesz fel az R-vizualizációba, a Power BI Desktop hozzáadja azokat az R-szkript-szerkesztő paneljére.

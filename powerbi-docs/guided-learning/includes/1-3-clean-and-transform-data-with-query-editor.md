@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e8b920763ea619fe74af2b71730164183f333a95
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61265130"
+---
 **A Power BI Desktop** **Lekérdezésszerkesztője** hatékony eszköz az adatoknak a modellek és vizualizációk számára való (át)alakításához. A Kezelő Szerkesztés elemére kattintva megnyílik a Lekérdezésszerkesztő, amely az adatforrásban kijelölt táblázatokat vagy egyéb entitásokat jeleníti meg.
 
 A **Lekérdezésszerkesztőt** közvetlenül a **Power BI Desktop** felületén is megnyithatja a **Kezdőlap** menüszalag **Lekérdezések szerkesztése** gombjával.

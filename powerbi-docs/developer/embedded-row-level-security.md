@@ -1,20 +1,20 @@
 ---
 title: Sorszintű biztonság használata beágyazott Power BI tartalommal
 description: Megismerheti Power BI-tartalmak az alkalmazásba való beágyazásának lépéseit.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: fdc4e90c65ef02f7416ffce9a41b0b2ed028abc8
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
-ms.translationtype: HT
+ms.date: 03/27/2019
+ms.openlocfilehash: 4fc35b88496674206437507ae866e9eb8cb5dd39
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57328010"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61354140"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sorszintű biztonság a Power BI Embeddeddel
 
@@ -64,7 +64,7 @@ Ezt a következőképpen teheti meg:
 2. Hozzon létre egy **Manager** (Menedzser) nevű új szerepkört.
 
     ![Új szerepkör létrehozása](media/embedded-row-level-security/powerbi-embedded-new-role.png)
-3. A **District** (Kerület) táblában írja be ezt a DAX-kifejezést: **[District Manager] = USERNAME()**.
+3. A **District** (Kerület) táblában írja be ezt a DAX-kifejezést: **[District Manager] = USERNAME()** .
 
     ![DAX-utasítás RLS-szabályhoz](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
 4. A szabályok működésének biztosítása érdekében a **Modellezés** lapon válassza a **Megtekintés szerepkörökként** lehetőséget, majd válassza ki a most létrehozott **Manager** szerepkört és az **Egyéb felhasználó** szerepkört is. Írja be felhasználóként az **AndrewMa** nevet.
@@ -98,7 +98,7 @@ var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync(GroupId, report.Id, generateTokenRequestParameters);
 ```
 
-erre:
+to
 
 ```csharp
 var generateTokenRequestParameters = new GenerateTokenRequest("View", null, identities: new List<EffectiveIdentity> { new EffectiveIdentity(username: "username", roles: new List<string> { "roleA", "roleB" }, datasets: new List<string> { "datasetId" }) });
@@ -214,6 +214,8 @@ Az alábbi lépések követésével megkezdheti a CustomData() függvény beáll
     ![PBI-jelentésminta](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
 7. Használja a Power BI API-kat a CustomData funkció használatára az alkalmazásában.  Ha a CustomData funkcióval hoz létre tokent, felhasználónévvel kell rendelkeznie. A felhasználónévnek meg kell egyeznie a fő felhasználó egyszerű felhasználónevével. A fő felhasználónak a létrehozott szerepkör tagjának kell lennie. Ha nincs szerepkör megadva, akkor a rendszer minden szerepkört felhasznál az RLS kiértékelésére, amelynek a fő felhasználó a tagja.
+
+    Ha dolgozik egy [szolgáltatásnév](embed-service-principal.md), is kell tennie, hogy a fenti lépéseket a fő fiók használata helyett. Ha generálása beágyazási token, a [szolgáltatás azonosítója](embed-service-principal.md#how-to-get-the-service-principal-object-id) felhasználóneve.
 
     > [!Note]
     > Ha készen áll az alkalmazás éles környezetben történő üzembe helyezésére, a fő felhasználói fiók mezője vagy beállítása nem lehet látható a végfelhasználó számára.

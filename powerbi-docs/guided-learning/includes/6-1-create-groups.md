@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e3d62b182f9b142f912a608bee693b7356b1a68d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256263"
+---
 Ebben a leckében először létrehozunk egy *csoportot*. A **csoport** határozza meg azon felhasználókat, akik hozzáférhetnek a megadott irányítópultokhoz, jelentésekhez és adatokhoz.
 
 A csoportok a Power BI-ban az Office 365 csoportjain alapulnak, így ha Office 365-csoportokat használt a csoport e-mailjeinek, naptárának és dokumentumainak kezeléséhez, látni fogja, hogy a Power BI ugyanazon szolgáltatásokon felül többet nyújt. Amikor a Power BI-ban létrehoz egy csoportot, valójában Office 365-csoportot hoz létre.

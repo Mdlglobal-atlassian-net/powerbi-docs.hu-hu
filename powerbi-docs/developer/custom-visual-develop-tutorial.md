@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: 4efb4e2c02671671d42d9f66c1f9f57ee028c9a1
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: e7afdddc6d87b9494fa9264bdd253a3f93de6192
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174677"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61383616"
 ---
 # <a name="tutorial-developing-a-power-bi-custom-visual"></a>Oktatóanyag: Egyéni Power BI-vizualizáció fejlesztése
 
@@ -79,7 +79,7 @@ Telepítenie kell a **pbviz** csomagot.
     pbiviz --create-cert
     ```
 
-  A visszaadott eredmény létrehoz egy *jelszót*. Ebben az esetben a *jelszó* a következő: **_15105661266553327_**.
+  A visszaadott eredmény létrehoz egy *jelszót*. Ebben az esetben a *jelszó* a következő: **_15105661266553327_** .
 
   ![PowerShell-lel létrehozott tanúsítvány](media/custom-visual-develop-tutorial/cert-create.png)
 
@@ -95,7 +95,7 @@ Telepítenie kell a **pbviz** csomagot.
 
 4. Az **Importálandó fájl** lépésnél kattintson a *Tovább* gombra.
 
-5. A **Titkos kulcs védelme** lépésnél a Jelszó mezőbe illessze be a tanúsítvány létrehozásakor kapott jelszót.  Az esetünkben ez az **_15105661266553327_**.
+5. A **Titkos kulcs védelme** lépésnél a Jelszó mezőbe illessze be a tanúsítvány létrehozásakor kapott jelszót.  Az esetünkben ez az **_15105661266553327_** .
 
       ![Jelszó másolása](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
 
@@ -559,14 +559,14 @@ Módosítsa a **capabilities.json** fájlt az adatszerepkör és az adatnézet-l
 
     Ez az utasítás társítja a *dataView* objektumot egy változóhoz a könnyebb hozzáférés érdekében, és meghatározza, hogy a változó a *DataView* objektumra hivatkozzon.
 
-2. Az **update** metódusban cserélje le a .text(“Value”)** részt a következőre.
+2. Az a **frissítése** metódus, cserélje le **.text("Value")** az alábbira.
 
     ```typescript
     .text(dataView.single.value as string)
     ```
     ![textValue cseréje](media/custom-visual-develop-tutorial/text-value-replace.png)
 
-3. Az **update** metódusban cserélje le a **.text(“Label”)** részt a következőre.
+3. Az a **frissítése** metódus, cserélje le **.text("Label")** az alábbira.
 
     ```typescript
     .text(dataView.metadata.columns[0].displayName)

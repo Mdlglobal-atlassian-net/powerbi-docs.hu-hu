@@ -12,11 +12,11 @@ ms.date: 01/16/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6484046f6c69f47e01e14b56c38c4c9a5871b28b
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406592"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61199522"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Hivatkozás hozzáadása szövegmezőhöz egy jelentésben
 A szövegmezőket hozzáadhatja jelentésekhez, irányítópultokon rögzítheti a jelentésekből, és közvetlenül is felveheti az irányítópultokra. Bárhol helyezkedik el a szövegmező, mindig felvehető hozzá hivatkozás.  

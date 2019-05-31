@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
 ms.openlocfilehash: c479b2600dad31756101c57ba2b1c5fc7fa19b2f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296662"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60976743"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló kapacitástervezési útmutatója
 A Power BI jelentéskészítő kiszolgáló olyan önkiszolgáló BI és céges jelentéskészítő megoldás, amelyet az ügyfelek helyben telepíthetnek a saját tűzfal mögé. A Power BI Desktop interaktív jelentéskészítő képességét kombinálja az SQL Server Reporting Services helyi kiszolgálói platformjával. Az elemzések és a jelentések gyakori és növekvő céges használatának köszönhetően a hardveres infrastruktúrák és a vállalati felhasználói bázis skálázásához szükséges szoftverlicencek költségbecslése kihívást jelenthet. A jelen dokumentum célja, hogy útmutatást nyújtson a Power BI jelentéskészítő kiszolgálójának kapacitástervezéséhez, és megossza a jelentéskészítő kiszolgáló különböző számítási feladataihoz tartozó terhelési tesztek végrehajtási eredményeit. Bár a cégek jelentései, lekérdezései és használati mintái eltérőek lehetnek, a jelen dokumentumban ismertetett eredmények – a ténylegesen használt tesztekkel és azok végrehajtásának részletes bemutatásával – hivatkozási pontként szolgálnak bárkinek, aki a Power BI jelentéskészítő kiszolgáló üzembe helyezésének korai tervezési szakaszában van.
@@ -42,7 +42,7 @@ A Power BI jelentéskészítő kiszolgáló üzemelő példánya az alábbi virt
 
 * Active Directory-tartományvezérlő: az SQL Server adatbázismotor, az SQL Server Analysis Services és a Power BI jelentéskészítő kiszolgáló igényelte ezt az összes kérés biztonságos hitelesítéséhez.
 * SQL Server adatbázismotor és SQL Server Analysis Services: itt tároltuk a jelentések megjelenítésekor használt összes adatbázist.
-* Power BI jelentéskészítő kiszolgálón
+* Power BI jelentéskészítő kiszolgáló
 * A Power BI jelentéskészítő kiszolgáló adatbázisa. A jelentéskészítő kiszolgáló adatbázisa a Power BI jelentéskészítő kiszolgálótól eltérő gépen található, így annak nem kell osztoznia az SQL Server adatbázismotorral a memórián, a CPU-n, a hálózaton és a lemezerőforrásokon.
 
 ![](media/capacity-planning/report-server-topology.png)

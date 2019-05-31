@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: eb7cba03daee47f6772fc46be50419731b41765e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61193838"
+---
 ## <a name="validate-the-roles-within-power-bi-desktop"></a>Szerepkörök érvényesítése a Power BI Desktopban
 A szerepkör létrehozása után tesztelheti a szerepkör hatásait a Power BI Desktopban.
 

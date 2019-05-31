@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 87a55881a9b6551dc9c7814696aa8d8252482a09
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256234"
+---
 Előfordulhat, hogy szeretne magával vinni egy kinyomtatott jelentést vagy irányítópultot az értekezletre, vagy szeretné azt megosztani másokkal. A Power BI szolgáltatásban többféle lehetőség van a vizualizációk kinyomtatására.
 
 A Power BI szolgáltatásban válassza a szolgáltatás jobb felső részén található három pontot, majd válassza az **Irányítópult nyomtatása** elemet.

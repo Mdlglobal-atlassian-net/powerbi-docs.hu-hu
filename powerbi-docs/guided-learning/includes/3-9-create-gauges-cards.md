@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 3fd97374836978a4902a878da141865c271df643
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397665"
+---
 A vizualizációs elemek általában két vagy több különböző érték összehasonlítására szolgálnak. Néha azonban a jelentések készítése során érdemes egyszerűen csak egy fő teljesítménymutató (KPI) vagy metrika alakulását követnie az idő múlásával. Ennek módja a Power BI Desktopban egy **mérőműszer** vagy **egyetlen szám** kártyavizualizáció. Bármelyik típusú üres diagram létrehozásához válassza annak ikonját a **Vizualizációk** ablaktáblán.
 
 ![](media/3-9-create-gauges-cards/3-9_1.png)

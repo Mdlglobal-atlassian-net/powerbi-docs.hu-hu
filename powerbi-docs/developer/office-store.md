@@ -8,13 +8,13 @@ ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 10/30/2018
-ms.openlocfilehash: 2db993a9521b25db28973a5a987edfde4271c5cd
-ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
-ms.translationtype: HT
+ms.date: 3/27/2019
+ms.openlocfilehash: cf9b3335b10b7a2cd3abcc3f02c651ed4416184e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57695196"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61269814"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Egyéni vizualizációk közzététele az AppSource-ban
 
@@ -30,7 +30,7 @@ Az **AppSource** az a hely, ahol SaaS-alkalmazásokat és -bővítményeket tal�
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Az egyéni vizualizáció elküldésének előkészítése
 
-Miután végzett az [egyéni vizualizáció kódolásával és tesztelésével](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), és becsomagolta egy pbiviz-fájlba, a következőkkel is rendelkeznie kell az elküldéshez.
+Miután elkészült olvasásakor a [Power BI-Vizualizációk irányelvek](guidelines-powerbi-visuals.md), kódolási és [teszteléséhez az egyéni Vizualizáció](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) van csomagolva, és egy pbiviz fájlba is rendelkeznie kell a következő készen áll az elküldéshez.
 
 | Item | Kötelező | Leírás |
 | --- | --- | --- |

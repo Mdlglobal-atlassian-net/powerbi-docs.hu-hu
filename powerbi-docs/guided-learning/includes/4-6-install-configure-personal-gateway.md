@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ea958349988cade1045e80b073254ab1f29bbe9e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263841"
+---
 Az előző témakörökben áttekintettük, hogyan használható a Power BI adatforrásokhoz történő csatlakozásra, és hogyan frissíthetők a Power BI szolgáltatásba feltöltött adatkészletek manuálisan. Ugyanakkor, ha nem szeretne minden adatváltozás alkalmával mindent frissíteni, a Power BI segítségével beállíthat ütemezett frissítést is, amely kapcsolódik az adatforrásokhoz, és automatikusan közzéteszi a változásokat a Power BI szolgáltatásban. Bármilyen helyi adatforrást, többek között Excel-fájlokat, Access-adatbázisokat, SQL-adatbázisokat és sok minden mást is csatlakoztathat így a szolgáltatáshoz.
 
 A helyszíni adatforrások Power BI szolgáltatáshoz történő csatlakoztatását lehetővé tevő rendszer neve **adatátjáró**. Az adatátjáró egy, a felhasználó számítógépén futó kis alkalmazás. Előre összeállított ütemezés alapján kapcsolódik az adatokhoz, összegyűjti a frissítéseket, és elküldi azokat a Power BI szolgáltatásba. A **személyes átjáró** az **adatátjáró** olyan verziója, amelyet nem szükséges a rendszergazdának konfigurálnia.

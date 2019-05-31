@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2019
+ms.date: 04/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4c32f27a04b055eb67015d9c8308866b972c06a7
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
-ms.translationtype: HT
+ms.openlocfilehash: 55571cda4558b5dd9ba28f757f6e11ad4b45f939
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226089"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136371"
 ---
-# <a name="self-service-data-prep-in-power-bi-preview"></a>Önkiszolgáló adat-előkészítés a Power BI-ban (előzetes verzió)
+# <a name="self-service-data-prep-in-power-bi"></a>Önkiszolgáló adat-előkészítési a Power bi-ban
 
 Az adatmennyiség növekedésével egyre nagyobb kihívássá válik az adatok megfelelően formázott, döntéstámogató információkká való alakítása. Olyan adatokkal szeretünk dolgozni, amelyek elemzésre készek, és feltölthetők velük a vizualizációk, a jelentések és az irányítópultok, így gyorsan döntéstámogató elemzésekké formálhatjuk őket. A big data típusú adatok **önkiszolgáló adat-előkészítése** a Power BI-ban lehetővé teszi, hogy néhány kattintással Power BI-elemzéseket készítsen az adatokból.
 
@@ -26,10 +26,6 @@ Az adatmennyiség növekedésével egyre nagyobb kihívássá válik az adatok m
 A Power BI **adatfolyamokkal** segít szervezeteknek egységesíteni a különféle forrásokból származó adatokat, valamint előkészíteni azokat modellezésre. Az elemzők könnyen, jól ismert és önkiszolgáló eszközökkel hozhatnak létre adatfolyamokat. Az adatfolyamokkal big data típusú adatokat tölthet be, alakíthat át, integrálhat és egészíthet ki. Ehhez adatforrás-kapcsolatokat, ETL logikát, frissítésütemezést és egyéb funkciókat definiálhat. Az adatfolyamok új modellalapú számítási motorja emellett könnyebben kezelhetővé, determinisztikusabbá és egyszerűbbé teszi az adat-előkészítést adatelemzők és jelentéskészítők számára. A táblázatok érintett képleteinek újraszámításához hasonlóan az adatfolyamok is az Ön nevében kezelik egy entitás vagy adatelem módosításait, valamint automatizálják a frissítéseket és feleslegessé teszik az időigényes logikai ellenőrzéseket. Az adatfolyamokkal a korábban adatszakértők felügyeletét (és több órát vagy akár napokat is) igénylő feladatok mostantól néhány kattintással kezelhetők elemzők és jelentéskészítők által. 
 
 Az adatok entitásként vannak tárolva [a **Common Data Service-ben**](https://docs.microsoft.com/powerapps/common-data-model/overview), az Azure Data Lake Storage Gen2 részeként. Adatfolyamokat a Power BI szolgáltatással, alkalmazás-munkaterületeken hozhat létre és kezelhet.  
-
-> [!NOTE]
-> Az adatfolyamok előzetes verzióban állnak rendelkezésre, és az általánosan elérhetővé válás előtt módosulhatnak és frissülhetnek.
-
  
 Az **adatfolyamok** a **Common Data Service**, a Microsoft által kiadott szabványosított, moduláris, kiterjeszthető adatséma-gyűjtemény használatához lettek kialakítva, amellyel könnyebben fejleszthet, használhat és elemezhet adatokat. Ezzel a modellel szinte terhelés nélkül válthat adatforrásokról Power BI-irányítópultokra.
 
@@ -112,10 +108,10 @@ Az üzleti adatok a **Common Data Service** szabványosított formátumában val
 Ez a cikk áttekintést nyújtott a big data típusú adatok Power BI-beli önkiszolgáló adat-előkészítéséről és annak számos használati módjáról. A következő cikkekben részletes információkat találhat az adatfolyamok gyakori használati forgatókönyveiről. 
 
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
-* [Számított entitások használata a Power BI Premiumban (előzetes verzió)](service-dataflows-computed-entities-premium.md)
-* [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
-* [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
-* [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md)
+* [A Power BI Premium számított entitások használatával](service-dataflows-computed-entities-premium.md)
+* [Adatfolyamok használata a helyszíni adatforrások](service-dataflows-on-premises-gateways.md)
+* [Fejlesztői erőforrások a Power BI-adatfolyamok](service-dataflows-developer-resources.md)
+* [Adatfolyamok és az Azure Data Lake-integráció](service-dataflows-azure-data-lake-integration.md)
 
 A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)

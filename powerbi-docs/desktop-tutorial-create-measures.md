@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 306738f4df765638c591c9612adf885facdceda0
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513853"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Oktatóanyag: Saját mértékek létrehozása a Power BI Desktopban
@@ -97,7 +97,7 @@ A nettó értékesítések értékét szeretné kiszámítani azzal a módszerre
     
     
 5.  A másik két oszlop kivonásához:
-    1. Miután bezárta az első kifejezés zárójelét, írjon be egy szóközt, egy mínusz operátort (**-**), majd egy újabb szóközt. 
+    1. Miután bezárta az első kifejezés zárójelét, írjon be egy szóközt, egy mínusz operátort ( **-** ), majd egy újabb szóközt. 
     2. Adjon meg egy másik SUM függvényt, és kezdje el a „DiscountAmount” kifejezés beírását, amíg ki tudja választani argumentumként a **Sales[DiscountAmount]** oszlopot. Írja be a záró zárójelet. 
     3. Írjon be egy szóközt, még egy mínusz operátort, még egy SUM függvényt a **Sales[ReturnAmount]** argumentummal, és egy záró zárójelet.
     
@@ -164,11 +164,11 @@ Annak kimutatásához, hogy értékesített darabszámra vetítve melyik termék
     
     ![Képlet a Net Sales használatával](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2a.png)
     
-    A mértékekre úgy is hivatkozhat, ha csak egy nyitó szögletes zárójelet (**[**) ír be. A javaslati listában csak a képlethez hozzáadható mértékek jelennek meg.
+    A mértékekre úgy is hivatkozhat, ha csak egy nyitó szögletes zárójelet ( **[** ) ír be. A javaslati listában csak a képlethez hozzáadható mértékek jelennek meg.
     
     ![A szögletes zárójelben csak mértékek jelennek meg](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2b.png)
     
-3.  Írjon be egy szóközt, egy osztási operátort (**/**), majd még egy szóközt, egy SUM függvényt, és gépelje be a **Quantity** (Mennyiség) kifejezést. A javaslati lista az összes olyan oszlopot tartalmazza, amelyeknek a nevében szerepel a Quantity (Mennyiség) kifejezés. Válassza a **Sales[SalesQuantity]** lehetőséget, zárja be a zárójelet, majd nyomja le az ENTER billentyűt, vagy kattintson a pipa jelre a képlet érvényesítéséhez. A képletnek ilyennek kell lennie:
+3.  Írjon be egy szóközt, egy osztási operátort ( **/** ), majd még egy szóközt, egy SUM függvényt, és gépelje be a **Quantity** (Mennyiség) kifejezést. A javaslati lista az összes olyan oszlopot tartalmazza, amelyeknek a nevében szerepel a Quantity (Mennyiség) kifejezés. Válassza a **Sales[SalesQuantity]** lehetőséget, zárja be a zárójelet, majd nyomja le az ENTER billentyűt, vagy kattintson a pipa jelre a képlet érvényesítéséhez. A képletnek ilyennek kell lennie:
     
     `Net Sales per Unit = [Net Sales] / SUM(Sales[SalesQuantity])`
     

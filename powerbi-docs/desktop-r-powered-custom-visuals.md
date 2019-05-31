@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
 ms.openlocfilehash: d79164ea5b66fe003f913742436a817d76d798e0
-ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57695127"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61278650"
 ---
 # <a name="use-r-powered-custom-visuals-in-power-bi"></a>Egyéni R-vizualizációk a Power BI-ban
 
 A **Power BI Desktopban** és a **Power BI szolgáltatásban** az R ismerete és R-parancsfájlok használata nélkül is lehetősége van egyéni R-vizualizációk használatára. Ez lehetővé teszi az R-vizualizációk és R-szkriptek elemzési és vizuális sokoldalúságának kihasználását anélkül, hogy meg kellene tanulnia az R programozási nyelvet, vagy bármit is programoznia kellene.
 
-Az egyéni R-vizualizációk használatához először ki kell választania és le kell töltenie a használni kívánt egyéni vizualizációt a Power BI **egyéni vizualizációinak** [**AppSource-**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) katalógusából.
+Az egyéni R-vizualizációk használatához először ki kell választania és le kell töltenie a használni kívánt egyéni vizualizációt a Power BI **egyéni vizualizációinak** [**AppSource-** ](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) katalógusából.
 
 ![R visual 1a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_1a.png)
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 9aac366f04d53da56b62c10fdb85229d0d412834
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397702"
+---
 Amikor egy *dátum* mezőt ad hozzá a *Tengely* mezőgyűjtőhöz, a Power BI automatikusan felvesz egy időhierarchiát *Év*, *Negyedév*, *Hónap* és *Nap* bontással. Ezáltal a Power BI lehetővé teszi a vizualizációk időalapú kezelését a jelentést olvasók számára azáltal, hogy a felhasználók kibonthatják a különböző időszinteket.
 
 ![](media/3-11g-visual-hierarchies-drilling/3-11g_1.png)

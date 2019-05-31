@@ -9,17 +9,17 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: mshenhav
-ms.openlocfilehash: e96095cd63a9f2bd01b17f16392319167ef3354c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: ac9072c69edfd245454e92855dcefa461e80cc23
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274835"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61338250"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Jelentések és irányítópultok megjelenítése bemutató módban a Surface Hubon és Windows 10-eszközökön
 A bemutató mód használatával teljes képernyőn jeleníthet meg jelentéseket és irányítópultokat Windows 10-eszközökön és a Surface Hubon. 
 
-![Jelentés teljes képernyős módban](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode.png)
+![Jelentés teljes képernyős módban](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
 A bemutató mód hasznos, ha a Power BI-t értekezleteken, konferenciákon vagy egy dedikált irodai kivetítőn kívánja megjeleníteni, vagy ha a lehető legnagyobb méretű képet szeretné megjeleníteni egy kisebb kijelzőn. 
 
@@ -36,19 +36,20 @@ Bemutató módban a Windows 10 rendszerre készült Power BI-mobilalkalmazásban
 A Power BI-mobilalkalmazást a **Teljes képernyő** lehetőségre koppintva állíthatja teljes képernyősre.
 ![Teljes képernyő ikon](././media/mobile-windows-10-app-presentation-mode/power-bi-full-screen-icon.png) Az alkalmazás szegélyei eltűnnek, és megjelenik egy eszköztár a képernyő alján, vagy jobb és bal oldalán (a képernyőmérettől függően).
 
-![Jelentés teljes képernyős módban, oldalsó eszköztárakkal](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode2.png)
+![Jelentés teljes képernyős módban, oldalsó eszköztárakkal](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
 Az eszköztáron a következő műveleteket végezheti el:
 
 1. A vissza ikonra ![vissza ikon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) koppintva visszaléphet az előző oldalra. Ha hosszan koppint az ikonra, megjelennek a navigációs ablakok, amelyekkel megnyithatja a jelentést vagy irányítópultot tartalmazó mappát.
 2. A tinta ikonnal ![tinta ikon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png) kiválaszthatja a Surface toll színét, amellyel a jelentésoldalra rajzol vagy jegyzetel. 
 3. Az oldalak ikonnal ![oldalak ikon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) az éppen bemutatott jelentésoldalt változtathatja meg.
-4. Koppintson a keresés ikonra ![Keresés ikon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) más Power BI-összetevők kereséséhez.
-5. A bemutató módból való kilépéshez koppintson a két egymás felé mutató nyilat ábrázoló ikonra ![Kilépés a teljes képernyős módból](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) az eszköztáron.
+4. A lejátszás ikonra  ![Lejátszás ikonra](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) lesz a művelet sávon elrejtéséhez, és indítsa el diavetítés, ahol az alkalmazás fogja Automatikus elforgatás a jelentésoldalak között. 
+5. Koppintson a keresés ikonra ![Keresés ikon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) más Power BI-összetevők kereséséhez.
+6. A bemutató módból való kilépéshez koppintson a két egymás felé mutató nyilat ábrázoló ikonra ![Kilépés a teljes képernyős módból](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) az eszköztáron.
 
 Az rögzítésének feloldásával azt bárhová áthúzhatja a képernyőn. Ez nagy képernyőkön hasznos, ha a jelentés egy adott területével szeretne foglalkozni úgy, hogy az eszközök kéznél legyenek mellette. Ehhez elég az eszköztárra helyeznie az ujját, és áthúznia azt a jelentésvászonra.
 
-![Jelentés bemutató módban, feloldott rögzítésű eszköztárral](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar.png)
+![Jelentés bemutató módban, feloldott rögzítésű eszköztárral](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar-2.png)
 
 
 ## <a name="next-steps"></a>Következő lépések

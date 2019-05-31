@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 29a274bb847c6c0395d3cdba868024ded326290e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397645"
+---
 Ha egyazon jelentésoldalon több vizualizáció van, a kattintással vagy szeletelővel történő szegmensválasztás az oldal összes vizualizációt befolyásolni fogja. Mégis előfordulhat, hogy csak egyes vizualizációkat kíván szeletelni. Ez különösen érvényes az olyan elemek használatánál, mint a pontdiagram, ahol az adatok egy bizonyos szegmensre való korlátozása alapvető fontosságú információt távolít el. Szerencsére a Power BI Desktop lehetővé teszi a vizualizációk közti interakció szabályozását.
 
 A vizualizációk közti interakció módosításához a **Home** menüszalagon lévő Visuals (Látványelemek) szakasz **Edit** (Szerkesztés) elemére kattintva kapcsolja be a **Szerkesztési módot**.

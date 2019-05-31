@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 68645069b22163ca7ae2a64310e43f1a801434f5
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256249"
+---
 A Power BI Desktopban létrehozott és a Power BI szolgáltatásba korábban közzétett jelentéseket és adatkészleteket frissíteni is tudja. Ehhez válassza a szalagon **Kezdőlap** > **Közzététel** lehetőséget.
 
 ![](media/4-5-manually-republish-reports/4-5_0.png)

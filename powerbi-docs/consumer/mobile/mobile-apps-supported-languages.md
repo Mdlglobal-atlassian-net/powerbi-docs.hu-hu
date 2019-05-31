@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mshenhav
 ms.openlocfilehash: 8a6ee2e16b5c5190c969c6017101257f331775f9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276772"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61269395"
 ---
 # <a name="supported-languages-in-the-power-bi-mobile-apps"></a>Támogatott nyelvek a Power BI-mobilalkalmazásokban
 A Power BI mobilalkalmazások jelenleg az alábbi nyelveket támogatják:

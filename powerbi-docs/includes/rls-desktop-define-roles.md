@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 240045c05a35a6583b537b785c6639a39c6aa9d4
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58052045"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61193826"
 ---
 ## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Szerepkörök és szabályok definiálása a Power BI Desktopban
 A Power BI Desktopban meghatározhat szerepköröket és szabályokat. Amikor közzéteszi a tartalmakat a Power BI-ban, a szerepkör-definíciók is közzé lesznek téve.

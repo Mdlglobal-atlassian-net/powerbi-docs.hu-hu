@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 39678850b2e1acd16c678206feba8cccffa6477d
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
-ms.translationtype: HT
+ms.openlocfilehash: 383d28a9e24165b12cda73ee254541a32db4391c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327987"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61325005"
 ---
 # <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Az Azure költség- és használati adatainak elemzése a Power BI Desktopban
 
@@ -24,7 +24,9 @@ A Power BI Desktopban csatlakozhat az Azure-hoz és részletes adatokat kaphat a
 
 A Power BI jelenleg a Nagyvállalati Szerződés és az Ügyfélszerződés típusú számlázási fiókokhoz való csatlakozást támogatja.
 
-A Nagyvállalati Szerződés felhasználóinak az Azure Consumption Insights-összekötővel kell csatlakozniuk. Az Ügyfélszerződés felhasználóinak az Azure Cost Management-összekötővel kell csatlakozniuk.
+* **Nagyvállalati szerződés** a felhasználók csatlakozni a **Azure Consumption Insights-összekötő**.
+
+* **Ügyfélszerződéséhez** a felhasználók csatlakozni a **Azure Cost Management-összekötő**.
 
 ## <a name="connect-with-azure-consumption-insights"></a>Kapcsolódás az Azure Consumption Insights segítségével
 
@@ -34,7 +36,7 @@ Ebben a szakaszban megtudhatja, hogyan kérheti le a kívánt adatokat, hogyan m
 
 Az **Azure Consumption Insights** összekötővel történő sikeres kapcsolódáshoz hozzáféréssel kell rendelkeznie a Vállalati szolgáltatásokhoz az Azure Portalon.
 
-Az **Azure Consumption Insights** összekötővel való kapcsolódáshoz kattintson a **Lekérdezés** gombra a **Power BI Desktop** **Kezdőlap** menüszalagján. A bal oldali kategóriák közül válassza az **Online szolgáltatások** lehetőséget, ekkor megjelenik a **Microsoft Azure Consumption Insights (Béta)**. Kattintson a **Csatlakozás** gombra.
+Az **Azure Consumption Insights** összekötővel való kapcsolódáshoz kattintson a **Lekérdezés** gombra a **Power BI Desktop** **Kezdőlap** menüszalagján. A bal oldali kategóriák közül válassza az **Online szolgáltatások** lehetőséget, ekkor megjelenik a **Microsoft Azure Consumption Insights (Béta)** . Kattintson a **Csatlakozás** gombra.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
 
@@ -212,6 +214,11 @@ Az Azure Portal adatainak oszlopai és nevei hasonlóak az API-éhoz és az öss
 
 Ebben a szakaszban megtudhatja, hogyan csatlakozhat az Ügyfélszerződéses számlázási fiókhoz.
 
+> [!NOTE]
+> Az Azure Cost Management-összekötő jelenleg támogatja az ügyfelek a **Ügyfélszerződéséhez**.  **Nagyvállalati szerződés** ügyfelek kell használnia a Microsoft Azure Consumption Insights-összekötő.
+> 
+> 
+
 Az **Azure Cost Management** összekötővel való csatlakozáshoz kattintson az **Adatok lekérése** gombra a **Power BI Desktop** **Kezdőlap** menüszalagján.  Válassza a bal oldali kategóriák közül az **Azure** elemet. Ekkor megjelenik az **Azure Cost Management (Beta)** elem. Kattintson a **Csatlakozás** gombra.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
@@ -234,8 +241,8 @@ Be kell jelentkeznie az Azure-os e-mail-címével és jelszavával.  A hitelesí
 * **Marketplace**: Használatalapú Azure Marketplace-díjakat tartalmaz.
 * **PriceSheets**: Az adott számlázási profil mérőnként érvényesíthető díjait tartalmazza.
 * **RI-díjak**: A fenntartott példányaival kapcsolatos utolsó 24 havi díjakat tartalmazza.
-* **RI-javaslatok (önálló)**: Fenntartott példányok vásárlására vonatkozó javaslatokat tartalmaz az egy előfizetésen belül 7, 30 vagy 60 napon át tapasztalt használati trendek alapján.
-* **RI-javaslatok (megosztott)**: Fenntartott példányok vásárlására vonatkozó javaslatokat tartalmaz az összes előfizetésen belül 7, 30 vagy 60 napon át tapasztalt használati trendek alapján.
+* **RI-javaslatok (önálló)** : Fenntartott példányok vásárlására vonatkozó javaslatokat tartalmaz az egy előfizetésen belül 7, 30 vagy 60 napon át tapasztalt használati trendek alapján.
+* **RI-javaslatok (megosztott)** : Fenntartott példányok vásárlására vonatkozó javaslatokat tartalmaz az összes előfizetésen belül 7, 30 vagy 60 napon át tapasztalt használati trendek alapján.
 * **RI-használat**: Az utolsó hónapra vonatkozó fogyasztási részleteket tartalmaz meglévő fenntartott példányairól.
 * **Használat részletei**: Az adott számlázási profilazonosító fogyasztott mennyiségeinek és a becsült díjainak részletezését tartalmazza.
 

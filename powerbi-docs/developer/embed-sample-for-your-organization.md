@@ -1,21 +1,21 @@
 ---
 title: Beágyazott analitika Power BI-tartalom beágyazásához egy alkalmazásba a saját vállalat számára
 description: Útmutató jelentés, irányítópult vagy csempe alkalmazásba való integrálásához vagy beágyazásához a vállalat számára, a beágyazott analitikákhoz készült Power BI API-k használatával. Útmutató a Power BI alkalmazásba való integrálásához beágyazott analitikai szoftver, beágyazott analitikai eszközök vagy beágyazott üzletiintelligencia-eszközök használatával.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 03/12/2019
-ms.openlocfilehash: 34d7ec423f3d4cb0f7487c78eff68c580ff0489e
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
-ms.translationtype: HT
+ms.date: 04/02/2019
+ms.openlocfilehash: 53311929aa6277efd621fb2b944ea062ab99999d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757461"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61355515"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba a cége számára
 
@@ -116,17 +116,17 @@ Az **applicationId** beszerzéséhez kövesse az alábbi lépéseket:
 
 2. A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
 
-    ![Alkalmazásregisztráció keresése](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
-
 3. Válassza ki azt az alkalmazást, amelynek használnia kell az **applicationId** azonosítót.
 
-    ![Az alkalmazás kiválasztása](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
+    ![Az alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
 4. Van egy GUID-ként listázott **alkalmazásazonosító**. Használja ezt az **alkalmazásazonosítót** az alkalmazás **applicationId** mezőjében.
 
-    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 
 ### <a name="application-secret"></a>Alkalmazás titkos kódja
+
+Ez az attribútum csak a [szolgáltatásnév](embed-service-principal.md) hitelesítési típushoz szükséges.
 
 Az **ApplicationSecret**mező tartalmát az **Azure** **Alkalmazásregisztrációk** szakaszának **Kulcsok** részéből másolhatja be.  Ez az attribútum [szolgáltatásnév](embed-service-principal.md) használatakor működik.
 
@@ -136,23 +136,17 @@ Az **ApplicationSecret** beszerzéséhez kövesse az alábbi lépéseket:
 
 2. A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
 
-    ![Alkalmazásregisztráció keresése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
-
 3. Válassza ki azt az alkalmazást, amelyhez használni kívánja az **ApplicationSecret** kulcsot.
 
-    ![Alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
-4. Kattintson a **Beállítások** elemre.
+4. Válassza ki **tanúsítványok és titkos kulcsok** alatt **kezelés**.
 
-    ![Beállítások kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
-
-5. Válassza a **Kulcsok** lehetőséget.
-
-    ![Kulcsok kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+5. Válassza ki **új titkos ügyfélkulcsot**.
 
 6. A **Leírás** mezőbe írjon be egy nevet, és válasszon ki egy időtartamot. Ezután kattintson a **Mentés** gombra az alkalmazás **Értékének** lekéréséhez. Ha bezárja a **Kulcsok** panelt a kulcsérték mentése után, az értékmező csak rejtettként fog megjelenni. Ebben az esetben nem tudja lekérni a kulcsértéket. Ha elveszíti kulcsértéket, hozzon létre egy újat az Azure Portalon.
 
-    ![Kulcsérték](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Kulcsérték](media/embed-sample-for-your-organization/embed-sample-for-your-organization-046.png)
 
 ### <a name="workspace-id"></a>Munkaterület azonosítója
 
@@ -190,9 +184,9 @@ Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport
 
 Töltse ki az **AADAuthorityUrl** adatait azzal az URL-címmel, amellyel beágyazhat a szervezeti bérlőn belül, vagy beágyazhat egy vendégfelhasználóval.
 
-A szervezeti bérlővel való beágyazáshoz használja a következő URL-címet: *https://login.microsoftonline.com/common/oauth2/authorize*.
+A szervezeti bérlővel való beágyazáshoz használja a következő URL-címet: *https://login.microsoftonline.com/common/oauth2/authorize* .
 
-A vendéggel való beágyazáshoz használja a következő URL-címet: *https://login.microsoftonline.com/report-owner-tenant-id*. Ebben adja meg a jelentéstulajdonos bérlői azonosítóját a *report-owner-tenant-id* helyén.
+A vendéggel való beágyazáshoz használja a következő URL-címet: *https://login.microsoftonline.com/report-owner-tenant-id* . Ebben adja meg a jelentéstulajdonos bérlői azonosítóját a *report-owner-tenant-id* helyén.
 
 ### <a name="run-the-application"></a>Alkalmazás futtatása
 
@@ -400,7 +394,7 @@ Most, hogy elkészült az alkalmazás fejlesztésével, ideje dedikált kapacit�
 
 ### <a name="create-a-dedicated-capacity"></a>Dedikált kapacitás létrehozása
 
-Dedikált kapacitás létrehozásával kihasználhatja annak az előnyeit, hogy egy dedikált erőforrás áll rendelkezésre az alkalmazás-munkaterületen a tartalom számára. Dedikált kapacitást a [Power BI Premium](../service-premium.md) segítségével hozhat létre.
+Dedikált kapacitás létrehozásával kihasználhatja annak az előnyeit, hogy egy dedikált erőforrás áll rendelkezésre az alkalmazás-munkaterületen a tartalom számára. Dedikált kapacitást a [Power BI Premium](../service-premium-what-is.md) segítségével hozhat létre.
 
 A következő táblázat a [Microsoft Office 365-ben](../service-admin-premium-purchase.md) elérhető Power BI Premium-termékváltozatokat sorolja fel:
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8d9388977c088c51094cf2835c8dab9e7d019a59
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260446"
+---
 A Power BI-ban végzett összes művelet lebontható néhány egyszerű **alkotóelemre**. Miután megértette ezeknek az alkotóelemeknek a működését, kibővítheti őket, és megkezdheti a bonyolultabb jelentések létrehozását. Hiszen a látszólag összetett dolgok is egyszerű alkotóelemekből állnak – az épületek például fából, acélból, betonból és üvegből, az autók pedig fémből, szövetekből és gumiból. Természetesen az épületek és az autók lehetnek egyszerűek és bonyolultak is, függően attól, hogy ezek az alapvető alkotóelemek miként vannak elrendezve.
 
 Az alábbiakban sorra vesszük az alapvető alkotóelemeket, ismertetjük, hogy milyen egyszerűbb dolgokat tud építeni velük, majd pedig betekintést nyújtunk az összetett dolgok létrehozásába is.

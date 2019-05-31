@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 5c2b254f20bd1eba97840a464a1b554cc4fe1238
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61273378"
+---
 A **változók** a DAX-kifejezések rendkívül hatékonyan használható részei.
 
 ![](media/7-4-dax-expressions/dax-variables_1.png)

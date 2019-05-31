@@ -1,35 +1,36 @@
 ---
-title: Új munkaterületek létrehozása (előzetes verzió) – Power BI
-description: Tudja meg, hogyan hozhat létre új munkaterületeket, olyan irányítópultokból és jelentésekből álló gyűjteményeket, amelyek célja az alapvető metrikák biztosítása a vállalat számára.
+title: Hozzon létre az új munkaterületek – Power bi-ban
+description: Ismerje meg, hogyan hozhat létre az új munkaterületek, irányítópultok, jelentések és a szervezet alapvető metrikákat biztosít oldalakra osztott jelentések gyűjteményei.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eba4e740f6fd08ffd60b95dfc437551dfb95e7b8
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d0c0781ea5d3864f1cf3627cd42d53cca632102d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293700"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61142066"
 ---
-# <a name="create-the-new-workspaces-preview-in-power-bi"></a>Új munkaterületek létrehozása a Power BI-ban (előzetes verzió)
+# <a name="create-the-new-workspaces-in-power-bi"></a>Az új munkaterületek létrehozása a Power bi-ban
 
-A Power BI egy előzetes verziójú, új munkaterületi felhasználói felületet mutat be. A munkaterületeken együttműködhet munkatársaival, hogy irányítópult- és jelentésgyűjteményeket hozzanak létre, amelyeket *alkalmazásokba* csomagolhatnak, majd közzétehetik a teljes vállalat, vagy egy adott személy vagy csoport számára. 
+A Power BI-ban bevezetjük új munkaterületi felhasználói élményt. Munkaterületek még hátravan a hely, ahol együttműködhet munkatársaival az irányítópultok, jelentések és tördelt jelentések gyűjteményeit hozhatja létre. Akkor is kötegeli az adott gyűjtemény egy *alkalmazás* és osztja el a teljes cég számára, vagy adott személyek vagy csoportok számára. 
 
-![Power BI – új munkaterületek (előzetes verzió)](media/service-create-the-new-workspaces/power-bi-new-workspaces-preview.png)
-
-Az előzetes verziójú munkaterületekkel a következőket végezheti el:
+Íme, mi a. Az új munkaterületek a következőket teheti:
 
 - Munkaterület-szerepköröket rendelhet felhasználói csoportokhoz: biztonsági csoportokhoz, terjesztési listákhoz, Office 365-csoportokhoz és egyéni felhasználókhoz.
 - Office 365-csoport létrehozása nélkül hozhat létre egy Power BI-munkaterületet.
 - Részletesebb munkaterület-szerepköröket használhat, amelyekkel rugalmasabb engedélykezelést érhet el a munkaterületeken.
 
-További háttér-információkért lásd az [Új munkaterületek (előzetes verzió)](service-new-workspaces.md) cikket.
+> [!NOTE]
+> Sorszintű biztonság (RLS) a Power BI Pro felhasználói munkaterületen lévő tartalom tallózása kényszerítéséhez továbbra is az [klasszikus munkaterületek](service-create-workspaces.md). Válassza ki a **tagok csak a Power BI-tartalmak megtekintésére** lehetőséget. Azt is megteheti Power BI alkalmazások közzététele a felhasználók számára, vagy a tartalom terjesztése a megosztás használatával. A soron következő megjelenítő szerepkör lehetővé teszi az ebben a forgatókönyvben a jövőben az új munkaterületi felhasználói élményt munkaterületek.
+
+A további háttér-információkért lásd: a [új munkaterületek](service-new-workspaces.md) cikk.
 
 ## <a name="create-one-of-the-new-app-workspaces"></a>Új típusú alkalmazás-munkaterület létrehozása
 
@@ -37,29 +38,111 @@ További háttér-információkért lásd az [Új munkaterületek (előzetes ver
    
      ![Alkalmazás munkaterületének létrehozása](media/service-create-the-new-workspaces/power-bi-create-app-workspace.png)
 
-2. A **Továbbfejlesztett munkaterületek** – előzetes verzió területen válassza a **Kipróbálás** lehetőséget.
+2. Kivéve, ha úgy dönt, automatikusan hoz létre egy frissített munkaterület **visszatér a klasszikus**.
    
-     ![Továbbfejlesztett munkaterületek – előzetes verzió](media/service-create-the-new-workspaces/power-bi-preview-improved-workspaces.png)
+     ![Új munkaterületi felhasználói élmény](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
+     
+     Ha **visszatér a klasszikus**, akkor hozzon létre egy munkaterületet, az Office 365-csoport alapján. Használja ezt a beállítást, ha van szüksége a **tagok csak a Power BI-tartalmak megtekintésére** szeretné kényszeríteni a sorszintű biztonság (RLS) a munkaterület tagjainak lehetőséget.
 
-2. Nevezze el a munkaterületet. Ha a név nem használható, szerkesztéssel hozzon létre egy egyedi azonosítót.
+2. Nevezze el a munkaterületet. Ha a név nem érhető el, hozzon létre egy egyedi nevet a szerkesztése.
    
-     Az alkalmazás neve meg fog egyezni a munkaterület nevével.
+     Az alkalmazás a munkaterülethez, a munkaterület neve és ikon tartalmaz.
    
-1. Ha kívánja, hozzáadhat egy képe. A fájlméret nem haladhatja meg a 45 kilobájtot.
- 
-    ![A munkaterület elnevezése és kép hozzáadása](media/service-create-the-new-workspaces/power-bi-name-workspace.png)
+1. Az alábbiakban néhány beállíthatja, hogy a munkaterület nem kötelező elemek:
+
+    Töltse fel a **munkaterület lemezkép**. Fájlok .png vagy .jpg formátumú lehet. Fájl mérete nem lehet kisebb, mint legfeljebb 45 KB.
+    
+    [Adjon hozzá egy **ügyfél lista**](#workspace-contact-list). Alapértelmezés szerint a munkaterületek rendszergazdái olyan ügyfeleket. 
+    
+    [Adjon meg egy **munkaterület OneDrive** ](#workspace-onedrive) csak a meglévő Office 365-csoportot, nem az URL-cím név beírásával. Ez a munkaterület mostantól használhatja az adott Office 365-csoport fájl tárolási helyéhez. 
+
+    ![Adjon meg egy OneDrive-helyre](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+
+    A munkaterület hozzárendelése egy **dedikált kapacitás**, az a **prémium** lapon válassza **dedikált kapacitás**.
+     
+    ![Dedikált kapacitás](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
 
 1. Kattintson a **Mentés** gombra.
 
-    Az új munkaterület **üdvözlőképernyőjén** adatokat adhat hozzá. 
+    A Power BI létrehozza és megnyitja a munkaterületet. Megjelenik az olyan munkaterületek listájában, amelyeknek Ön a tagja. 
+
+## <a name="workspace-contact-list"></a>Ismerősök listájának munkaterület
+
+A munkaterület új ismerősök listájának megadása, hogy mely felhasználók kapják a munkaterületen előforduló problémákról értesítést teszi lehetővé. Alapértelmezés szerint minden olyan felhasználó vagy csoport a megadott munkaterületként rendszergazda értesítést kap, de testre szabhatja a listában. Felhasználók vagy csoportok, a kapcsolattartási listában felsorolt megjelenik a felhasználói felületen (UI) segítségével a munkaterülethez kapcsolódó felhasználók segítséget.
+
+1. Hozzáférés az új **ügyfél lista** beállítása a két módszer egyikével:
+
+    Az a **hozzon létre egy munkaterületet** panelen, amikor először hoz létre azt.
+
+    A bal oldali navigációs ablaktáblán válassza ki a nyíl melletti **munkaterületek**, válassza ki a munkaterület neve melletti három pontra (...) > **munkaterület beállításainak**. A **beállítások** panel nyílik meg.
+
+    ![Munkaterület beállításai](media/service-create-the-new-workspaces/power-bi-workspace-settings.png)
+
+2. Alatt **speciális** > **ügyfél lista**, fogadja el az alapértelmezett **munkaterületek rendszergazdái**, vagy adja hozzá a saját listája **adott felhasználók vagy csoportok**. 
+3. Kattintson a **Mentés** gombra.
+
+## <a name="workspace-onedrive"></a>Munkaterület onedrive vállalati verzió
+
+A munkaterület OneDrive funkcióval konfigurálja az Office 365-csoportot, amelynek SharePoint-dokumentumtárban fájltároló munkaterület felhasználók számára érhető el. Először hozzon létre a Power BI szolgáltatáson kívül a csoportot. 
+
+A Power BI engedélyeit a felhasználók vagy csoportok, akiknek vannak konfigurálva az Office 365-csoport tagsággal rendelkező munkaterület-hozzáférés nem szinkronizálja. Az ajánlott eljárás az azonos Office 365-csoportot, amelynek ez a beállítás az Office 365 csoport konfigurálja a file storage van ad [hozzáférést a munkaterület](#give-access-to-your-workspace). Munkaterület-hozzáférés kezelését az Office 365-csoport tagságának kezeléséhez. 
+
+1. Hozzáférés az új **munkaterület OneDrive** beállítása a két módszer egyikével:
+
+    Az a **hozzon létre egy munkaterületet** panelen, amikor először hoz létre azt.
+
+    A bal oldali navigációs ablaktáblán válassza ki a nyíl melletti **munkaterületek**, válassza ki a munkaterület neve melletti három pontra (...) > **munkaterület beállításainak**. A **beállítások** panel nyílik meg.
+
+    ![Munkaterület beállításai](media/service-create-the-new-workspaces/power-bi-workspace-settings.png)
+
+2. A **speciális** > **munkaterület OneDrive**, írja be a korábban létrehozott Office 365-csoport nevét. A Power BI automatikusan felveszi a onedrive vállalati verzió, a csoport számára.
+
+    ![Adjon meg egy OneDrive-helyre](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+
+3. Kattintson a **Mentés** gombra.
+
+### <a name="access-the-workspace-onedrive-location"></a>A munkaterület helye a onedrive vállalati verzió eléréséhez
+
+Miután konfigurálta a OneDrive-helyre, érheti el azt a több különböző helyen, a munkaterület:
+
+- Válassza ki **munkaterületek** > *munkaterületnév* > a három pontra ( **...** ) menü > **fájlok**. 
+
+    ![Munkaterület-fájlok helyét](media/service-new-workspaces/power-bi-new-workspace-files.png)
+
+- Kattintson a három pontra ( **...** ) menüben a munkaterület jobb felső sarkában > **fájlok**.
+
+    ![Munkaterület-fájlok helyét](media/service-new-workspaces/power-bi-new-workspace-files-2.png)
+    
+- Az a **adatok lekérése** > **fájlok** tapasztalható. A **onedrive – vállalati verzió** bejegyzés a saját OneDrive vállalati verzióba. A második onedrive vállalati verzió hozzáadott lesz.
+
+    ![Munkaterület-fájlok helye – az adatok beszerzése](media/service-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
+
+## <a name="add-content-to-your-app-workspace"></a>Tartalom hozzáadása az alkalmazás-munkaterülethez
+
+Miután létrehozott egy új munkaterületi felhasználói élményt munkaterületet, ideje adhat hozzá a tartalmat. Tartalom hozzáadása az új és klasszikus munkaterületen hasonlít. A Létrehozás gombra, vagy adatok lekérése használatával adja hozzá a tartalmat a munkaterülethez.
+
+1. Az a **üdvözlő** képernyő az új munkaterülethez tartozó tartalmat adhat hozzá. 
 
     ![Az új munkaterület üdvözlőképernyője](media/service-create-the-new-workspaces/power-bi-workspace-welcome-screen.png)
 
 1. Válassza például a **Minták** > **Ügyfél-jövedelmezőségi minta** lehetőséget.
 
-    Ekkor a munkaterület tartalomlistájában megjelenik az **Új előzetes verziós munkaterületek** elem. Mivel Ön rendszergazda, egy új művelet is megjelenik, a **Hozzáférés**.
+> [!NOTE]
+> Az új munkaterületek, a vállalati tartalomcsomagok vagy külső tartalomcsomagok nem lehet felhasználni. Alkalmazások érhetők el az összes külső tartalomra, csomagok korábban használt. Klasszikus munkaterületet használja, ha használatával tartalomcsomagok továbbra is kell. Tartalomcsomagok elavultak, így az alkalmazások használata ajánlott.
 
-    ![Előzetes verziós munkaterületek tartalomlistája](media/service-create-the-new-workspaces/power-bi-workspaces-preview-content-list.png)
+Ha egy alkalmazás-munkaterület tartalomlistájában tekint meg tartalmat, az alkalmazás-munkaterület neve tulajdonosként lesz feltüntetve.
+
+### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Az új munkaterületek külső szolgáltatásokhoz való csatlakozás
+
+Az új munkaterületek felületén az *alkalmazásokra* helyezzük a hangsúlyt. A külső szolgáltatások alkalmazásaival a felhasználók könnyen lekérhetik a használt szolgáltatások, például a Microsoft Dynamics CRM, a Salesforce vagy a Google Analytics adatait.
+
+Az új munkaterületi felhasználói felület nem hozható létre vagy vállalati tartalomcsomagok használata. Ehelyett a megadott alkalmazásokkal csatlakozhat külső szolgáltatásokhoz, vagy megkérheti a belső csapatokat, hogy szolgáltassanak alkalmazásokat a jelenleg használt tartalomcsomagokhoz. 
+
+## <a name="give-access-to-your-workspace"></a>A munkaterülethez való hozzáférést
+
+1. A munkaterület tartalmak listájában, mivel adminisztrátori jogosultsággal megjelenik egy új művelet **hozzáférés**.
+
+    ![Munkaterületek tartalmak listája](media/service-create-the-new-workspaces/power-bi-workspace-content-list.png)
 
 1. Válassza a **Hozzáférés** lehetőséget.
 
@@ -69,35 +152,15 @@ További háttér-információkért lásd az [Új munkaterületek (előzetes ver
 
 9. Válassza a **Hozzáadás** > **Bezárás** lehetőséget.
 
-1. A Power BI létrehozza és megnyitja a munkaterületet. Megjelenik az olyan munkaterületek listájában, amelyeknek Ön a tagja. Mivel adminisztrátori jogosultsággal rendelkezik, a három pontra (...) kattintva visszaléphet, és módosíthatja a munkaterület beállításait, például új tagokat adhat hozzá vagy módosíthatja a tagok jogosultságait.
-
-     ![Munkaterület beállításainak és hozzáférésének módosítása](media/service-create-the-new-workspaces/power-bi-edit-workspace.png)
-
-## <a name="add-content-to-your-app-workspace"></a>Tartalom hozzáadása az alkalmazás-munkaterülethez
-
-Az új típusú alkalmazás-munkaterület létrehozása után ideje feltölteni azt tartalommal. A tartalom hozzáadása hasonlóan működik a régi és új típusú munkaterületeken is, egyetlen kivétellel. Amíg valamelyik alkalmazás-munkaterületen van, feltölthet tartalmat vagy csatlakozhat fájlokhoz, pont mintha a Saját munkaterületén lenne. Az új munkaterületeken azonban nem csatlakozhat szervezeti, valamint külső tartalomcsomagokhoz, például a Microsoft Dynamics CRM-hez, a Salesforce-hoz és a Google Analyticshez. A jelenlegi munkaterületen csatlakozhat tartalomcsomagokhoz.
-
-Ha egy alkalmazás-munkaterület tartalomlistájában tekint meg tartalmat, az alkalmazás-munkaterület neve tulajdonosként lesz feltüntetve.
-
-### <a name="connecting-to-third-party-services-in-new-workspaces-preview"></a>Csatlakozás a külső szolgáltatásokhoz az új munkaterületeken (előzetes verzió)
-
-Az új munkaterületek felületén az *alkalmazásokra* helyezzük a hangsúlyt. A külső szolgáltatások alkalmazásaival a felhasználók könnyen lekérhetik a használt szolgáltatások, például a Microsoft Dynamics CRM, a Salesforce vagy a Google Analytics adatait.
-A szervezeti alkalmazásokkal a felhasználók megkaphatják a szükséges belső adatokat. Tervezzük szervezeti alkalmazásfunkciók hozzáadását is, így a felhasználók testreszabhatják az alkalmazások tartalmait. Ezekkel a funkciókkal nem lesz szükség tartalomcsomagokra. 
-
-Az előzetes verziójú, új munkaterületekkel nem lehet létrehozni vagy telepíteni céges tartalomcsomagokat. Ehelyett a megadott alkalmazásokkal csatlakozhat külső szolgáltatásokhoz, vagy megkérheti a belső csapatokat, hogy szolgáltassanak alkalmazásokat a jelenleg használt tartalomcsomagokhoz. 
 
 ## <a name="distribute-an-app"></a>Alkalmazások terjesztése
 
-Ha a tartalom elkészült, kiválaszthatja a közzétenni kívánt irányítópultokat és jelentéseket, amelyeket közzétehet *alkalmazásként*. Minden munkaterületről létrehozhat egy alkalmazást. A munkatársai különböző módokon férhetnek hozzá az alkalmazáshoz. Ha a Power BI rendszergazda engedélyezi, automatikusan telepítheti az alkalmazást a munkatársai Power BI-fiókjába. Ha nem, megkereshetik az alkalmazást a Microsoft AppSource-ban, és telepíthetik, vagy küldhet nekik egy közvetlen hivatkozást. A rendszer automatikusan frissíti az alkalmazásokat, és szabályozható, milyen gyakran frissüljenek az adatok. További információ: [Irányítópultokból és jelentésekből álló alkalmazások közzététele a Power BI-ban](service-create-distribute-apps.md).
+Ha egy nagy célközönség számára a szervezeten belül hivatalos tartalmat terjeszteni szeretné, a munkaterületről közzétehet alkalmazásokat.  Amikor készen áll a tartalom, válassza ki, mely irányítópultokat és jelentéseket közzé szeretné tenni, és tegye közzé azt egy *alkalmazás*. Minden munkaterületről létrehozhat egy alkalmazást.
 
-## <a name="convert-old-app-workspaces-to-new-app-workspaces"></a>Régi alkalmazás-munkaterületek konvertálása új alkalmazás-munkaterületekké
-
-Az előzetes verzió időtartama alatt nem konvertálhat automatikusan régi típusú alkalmazás-munkaterületeket új típusúakká. Létrehozhat azonban egy új alkalmazás-munkaterületet, és közzéteheti rajta a tartalmait. 
-
-Az új típusú munkaterületek általános elérhetővé válásakor igény szerint automatikusan migrálhatja a régi munkaterületeket. Az általános elérhetővé válás után egy idővel kötelező lesz a migrálás.
+További információ [tegyünk közzé egy alkalmazást, az új munkaterületek](service-create-distribute-apps.md)
 
 ## <a name="next-steps"></a>Következő lépések
-* Olvassa el a [munka rendszerezése az új munkaterületen (előzetes verzió) a Power BI-ban](service-new-workspaces.md) szakaszt.
-* [Jelenlegi munkaterületek létrehozása](service-create-workspaces.md)
-* [Alkalmazások telepítése és használata a Power BI-ban](service-create-distribute-apps.md)
+* További információ [rendszerezéséhez az új munkaterületek funkció a Power bi-ban végzett munka](service-new-workspaces.md)
+* [Klasszikus munkaterületek létrehozása](service-create-workspaces.md)
+* [Az új munkaterületek az alkalmazás közzététele a Power bi-ban](service-create-distribute-apps.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: dc117c9b17e9d20d1e5be6e6fedd18cb7aa3ae61
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279228"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61140607"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Irányítópultok és jelentések megtekintése a Power BI-mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -87,7 +87,7 @@ A „csippentés” kézmozdulattal nagyíthatja és kicsinyítheti az irányít
    
    * A sárga csillagok ![Kedvenc csillag](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) a kedvenc irányítópultokat jelzik. 
    * Az irányítópultok neve (ebben az esetben „MBI”) ![Adatok besorolása](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) alatti jelölés az egyes irányítópultok adatainak besorolását jeleníti meg. A [Power BI adatbesorolásairól itt talál](../../service-data-classification.md) további információkat.
-3. A munkaterületéről megoszthatja az irányítópultokat. Koppintson az irányítópult csempéjének jobb alsó sarkában lévő három pontra (**...**), és koppintson a **Mások meghívása** lehetőségre.
+3. A munkaterületéről megoszthatja az irányítópultokat. Koppintson az irányítópult csempéjének jobb alsó sarkában lévő három pontra ( **...** ), és koppintson a **Mások meghívása** lehetőségre.
    
    ![Meghívás ikon](./media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
 4. Egy irányítópultra koppintva meg is nyithatja azt és láthatja az irányítópulton lévő csempéket. Az irányítópulton a következőket teheti:

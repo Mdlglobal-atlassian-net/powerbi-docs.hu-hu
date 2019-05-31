@@ -11,11 +11,11 @@ ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: d9b171052bd095afc918a312ecbadba89a2471cd
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283575"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61187165"
 ---
 # <a name="using-the-same-account-for-power-bi-and-azure"></a>Ugyanazon bejelentkezési fiók használata a Power BI-hoz és az Azure-hoz
 Ha Ön a Power BI és az Azure felhasználója, ugyanazokat a bejelentkezési adatokat használhatja mindkét szolgáltatásban, így nem kell kétszer megadnia a jelszót.

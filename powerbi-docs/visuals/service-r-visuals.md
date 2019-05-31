@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1e997f5ac7e916f10c98756f142b9f563adea05a
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
-ms.translationtype: HT
+ms.openlocfilehash: 587cc5b5d81ca57e809a3973c700c71a214dc045
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426608"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61389855"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>R-vizualizációk létrehozása a Power BI szolgáltatásban
 A Power BI szolgáltatás támogatja az R-parancsfájlokkal létrehozott vizualizációk megtekintését és használatát. Az R-parancsfájlokkal létrehozott, gyakran *R-vizualizációknak* nevezett vizualizációk fejlett adatformázást és elemzéseket, például előrejelzéseket kínálnak az R gazdag elemzési és megjelenítési lehetőségeinek kihasználásával.
@@ -64,7 +64,7 @@ Amikor egy R-parancsfájl futása során hiba jelentkezik, az R-vizualizáció n
 ![](media/service-r-visuals/r-visuals-service_5.png)
 
 ## <a name="licensing"></a>Licencelés
-Az R-vizualizációknak [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licencre van szükségük a jelentésekben való megjelenéshez, frissüléshez, szűréshez és keresztszűréshez. A Power BI Pro-licencekről és az ingyenes licencektől való eltéréseikről a [Power BI Pro-tartalom – mi is ez?](../service-premium.md) című cikk nyújt további információt.
+Az R-vizualizációknak [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licencre van szükségük a jelentésekben való megjelenéshez, frissüléshez, szűréshez és keresztszűréshez. A Power BI Pro-licencekről és az ingyenes licencektől való eltéréseikről a [Power BI Pro-tartalom – mi is ez?](../service-premium-what-is.md) című cikk nyújt további információt.
 
 A Power BI ingyenes felhasználói csak a velük megosztott csempéket használhatják a prémium szintű munkaterületeken. További információ: [A Power BI Pro megvásárlása](../service-admin-purchasing-power-bi-pro.md).
 

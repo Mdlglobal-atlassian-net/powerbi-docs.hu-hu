@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/22/2019
+ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1dc085d822463ecf394d6257741d4af82d72b8c0
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 81987b864224b6afd254a3bffe17ecbb019198d0
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661593"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65608331"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Irányítópultok a Power BI szolgáltatás felhasználói számára
 
@@ -24,7 +24,7 @@ A Power BI-***irányítópult*** egy gyakran vászonnak is nevezett oldal, amely
 
 ![irányítópult](media/end-user-dashboards/power-bi-dashboard2.png)
 
-Az irányítópulton látható vizualizációkat *csempéknek* nevezik, és a jelentéstervezők *rögzítik* őket az irányítópultra. A csempe kiválasztásával arra a jelentésoldalra jut, amelyen a vizualizációt létrehozták. Ha csak most kezdte el használni a Power BI-t, a [Power BI alapfogalmait](end-user-basic-concepts.md) elolvasva egyszerűen elsajátíthatja az alapokat.
+Az irányítópulton látható vizualizációkat az úgynevezett *csempék* és *rögzített* jelentésében az irányítópulton *tervezők*. A legtöbb esetben egy csempére kattintva megnyílik a jelentés oldalon hol jött létre a vizualizációt. Ha csak most kezdte el használni a Power BI-t, a [Power BI alapfogalmait](end-user-basic-concepts.md) elolvasva egyszerűen elsajátíthatja az alapokat.
 
 > [!NOTE]
 > Az irányítópultok [megtekinthetők és megoszthatók mobileszközökön](mobile/mobile-apps-view-dashboard.md).
@@ -39,7 +39,7 @@ Az irányítópulton megjelenő vizualizációk a jelentéseken, az egyes jelent
 ## <a name="advantages-of-dashboards"></a>Az irányítópultok előnyei
 Az irányítópultok segítségével nagyszerűen nyomon követheti üzletmenetét, választ találhat kérdéseire, és egyetlen pillantással megtekintheti a legfontosabb mérőszámokat. Az irányítópulton található vizualizációk egy vagy több adatkészletből vagy jelentésből is származhatnak. Az irányítópult a helyi és a felhőben keletkezett adatokat ötvözi, és egyesített nézetet biztosít függetlenül attól, hogy az adatok hol találhatók.
 
-Az irányítópult nem csak egy tetszetős kép, hanem egy interaktív, egyénre szabható funkció, amelyben az egyes csempék az alapul szolgáló adatok változásának megfelelően frissülnek.
+Irányítópult nem csak egy tetszetős kép; interaktív, és a csempék frissülni az alapul szolgáló adatok változásának megfelelően.
 
 ## <a name="dashboards-versus-reports-for-power-bi-consumers"></a>Irányítópultok és jelentések összehasonlítása a Power BI ***felhasználói*** számára
 A jelentéseket könnyű összekeverni az irányítópultokkal, mivel mind a kettő egy vizualizációkkal teli vászon. Azonban van köztük néhány alapvető különbség a Power BI *felhasználói* számára.
@@ -48,11 +48,9 @@ A jelentéseket könnyű összekeverni az irányítópultokkal, mivel mind a ket
 | --- | --- | --- |
 | Oldalak |Egy oldal |Egy vagy több oldal |
 | Adatforrások |Egy vagy több jelentés és egy vagy több adatkészlet irányítópultonként |Egyetlen adatkészlet jelentésenként |
-| Előfizetés |Feliratkozhat irányítópult-e-mailekre |Feliratkozhat jelentésoldal-e-mailekre |
 | Szűrés |Nem lehet szűrni és szeletelni |Számos szűrési, kiemelési és szeletelési móddal rendelkezik |
 | Riasztások beállítása |Létrehozhat olyan riasztásokat, amelyek e-mailen keresztül értesítik, ha a feltételek teljesülnek |Nem |
 | Kiemelt |Kiválaszthat és beállíthat egy „kiemelt” irányítópultot |Nem hozhat létre kiemelt jelentést |
-| Természetes nyelven történő lekérdezések |Elérhető az irányítópultból |Nem érhető el a jelentésekből |
 | Láthatja az alapul szolgáló adatkészlet-táblázatokat és -mezőket |Nem. Exportálhatja az adatokat, de magán az irányítópulton nem fogja látni a táblázatokat és a mezőket. |Igen. Láthatja az adatkészlet-táblázatokat, -mezőket és -értékeket. |
 
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0e29076a33a17b6097fd3fbf1db411f97ff45818
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271378"
+---
 Üdvözli a Power BI **Interaktív tanulás** oktatóanyagának **A Power BI és az Excel** című fejezete.
 
 Minden bizonnyal használta már az **Excelt**. Talán jelentéseket, kördiagramokat vagy más vizualizációkat is létrehozott vele. Esetleg inkább technikai jellegű megoldásokat készített a **Power Pivot** vagy a **Power Query** használatával. Ha így van, akkor azonnal ismerősnek fogja érezni a Power BI-t, ahová a munkafüzetei is illenek.

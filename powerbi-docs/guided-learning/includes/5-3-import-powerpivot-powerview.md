@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e87ea8470464e458c1da2037f25adfcee857361e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271392"
+---
 Ha az Excel speciális BI-funkcióit használja, mint a **Power Query** (az Excel 2016-ban **Beolvasás és átalakítás**) az adatok lekérdezéséhez és betöltéséhez, a **Power Pivot** a hatékony adatmodellek létrehozásához, vagy a **Power View** a dinamikus jelentésekhez, akkor ezeket is importálhatja a Power BI-ba.
 
 ![](media/5-3-import-powerpivot-powerview/5-3_1.png)
@@ -8,5 +16,5 @@ Az sem jelent problémát, ha munkafüzete **Power View-lapokat** tartalmaz. A P
 
 ![](media/5-3-import-powerpivot-powerview/5-3_2.png)
 
-Íme a Power BI egyik nagyszerű funkciója: ha a Power Query vagy a Power Pivot segítségével csatlakozik a külső adatforrásokhoz, kérdezi és tölti le azokat, a munkafüzet Power BI-ba történő importálása után máris beállíthatja az **ütemezett frissítést**. Az ütemezett frissítés révén a Power BI a munkafüzetben található csatlakozási információt fogja felhasználni ahhoz, hogy közvetlenül csatlakozzon a módosított adatokhoz, lekérdezze és letöltse őket. A jelentések vizualizációi szintén automatikusan frissülnek.
+És a egy Power BI nagyszerű funkciója: A Power Query vagy Power Pivot használatával csatlakoznak, lekérdezze és beolvassa az adatokat egy külső adatforrásból a munkafüzetet a Power BI-ba történő importálása után, ha állíthat **az ütemezett frissítés**. Az ütemezett frissítés révén a Power BI a munkafüzetben található csatlakozási információt fogja felhasználni ahhoz, hogy közvetlenül csatlakozzon a módosított adatokhoz, lekérdezze és letöltse őket. A jelentések vizualizációi szintén automatikusan frissülnek.
 

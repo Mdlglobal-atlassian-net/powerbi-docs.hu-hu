@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa6296485897b983c3ca4044ffa2875de3326dec
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61265108"
+---
 A Power BI szinte bármilyen forrásból képes adatokat importálni, azonban a modellezési és vizualizációi az oszlopos adatok esetén működnek a legjobban. Előfordulhat, hogy az adatok nem egyszerű oszlopok formájában találhatók meg, ami az Excel-táblázatok esetén gyakori, ahol az emberi szemnek kényelmes táblázatos elrendezés nem feltétlenül optimális automatikus lekérdezésekre. Az alábbi táblázatban például több oszlopon átnyúló fejlécek is találhatók.
 
 ![](media/1-5-cleaning-irregular-data/1-5_1.png)

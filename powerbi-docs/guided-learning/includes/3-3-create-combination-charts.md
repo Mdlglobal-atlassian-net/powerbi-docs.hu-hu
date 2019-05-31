@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: c7af7eb4a75ebe22416dba74a40c2edcf00c1194
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397782"
+---
 Ha különböző skálákkal rendelkező két mértéket akar megjeleníteni (például bevétel és egységek), rendkívül hasznosnak bizonyulhat a vonalat és sávot eltérő tengelyskálákkal ábrázoló **kombinált diagram**. A Power BI számos különböző típusú kombinált diagramot támogat alapértelmezés szerint, beleértve a népszerű **Vonal** és a **Halmozott oszlopok** típusú diagramokat.
 
 ![](media/3-3-create-combination-charts/3-3_1.png)

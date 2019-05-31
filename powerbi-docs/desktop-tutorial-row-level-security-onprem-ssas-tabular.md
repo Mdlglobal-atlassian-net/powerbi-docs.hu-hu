@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 57a285b075b17b2229ec4267a476cdd4b86ea7ad
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513591"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dinamikus sorszintű biztonság Analysis Services-beli táblázatos modellel
@@ -70,7 +70,7 @@ Számos közzétett cikkben található leírás arról, hogy hogyan állíthat�
 6. Ebben a lépésben a **LOOKUPVALUE** függvény használatával egy oszlop értékeit adjuk vissza, amelyben a Windows-felhasználónév megegyezik a **USERNAME** függvény által visszaadott felhasználónévvel. A lekérdezéseket ezután korlátozhatók arra, ahol a **LOOKUPVALUE** által visszaadott értékek megegyeznek az ugyanazon vagy a kapcsolódó táblában találhatókkal. A **DAX-szűrő** oszlopba írja be a következő képletet:
    
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
-    Ebben a képletben a **LOOKUPVALUE** függvény a **DimUserSecurity[SalesTerritoryID]** oszlop minden értékét visszaadja, ahol a **DimUserSecurity[UserName]** megegyezik az aktuálisan bejelentkezett Windows-felhasználónévvel, az **DimUserSecurity[SalesTerritoryID]** pedig ugyanaz, mint a **DimSalesTerritory[SalesTerritoryKey]**.
+    Ebben a képletben a **LOOKUPVALUE** függvény a **DimUserSecurity[SalesTerritoryID]** oszlop minden értékét visszaadja, ahol a **DimUserSecurity[UserName]** megegyezik az aktuálisan bejelentkezett Windows-felhasználónévvel, az **DimUserSecurity[SalesTerritoryID]** pedig ugyanaz, mint a **DimSalesTerritory[SalesTerritoryKey]** .
    
     > [!IMPORTANT]
     > Ügyeljen arra, hogy sorszintű biztonság használatakor a [USERELATIONSHIP](https://msdn.microsoft.com/query-bi/dax/userelationship-function-dax) DAX-függvény nem támogatott.

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e3f21c41bb0cf97db8b988a80d9792e1ba0b0b4f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397745"
+---
 A szeletelő a megjelenítések leghatékonyabb típusai közé tartozik, különösen a részletes jelentések részeként. A **szeletelő** egy vásznon használható vizuális szűrő a **Power BI Desktop** alkalmazásban, amely lehetővé teszi a jelentést megtekintők számára az adatok szegmentálását adott érték szerint (például év vagy földrajzi hely).
 
 A szeletelők jelentéshez való hozzáadásához válassza a **Vizualizációk** ablaktábla **Szeletelő** elemét.

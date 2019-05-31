@@ -12,11 +12,11 @@ ms.date: 01/02/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
 ms.openlocfilehash: d57cd2db38e099fffc73c813f0298cfea5a34aad
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296156"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61193823"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sorszintű biztonság (RLS) a Power BI-ban
 
@@ -39,7 +39,7 @@ További információt a [Kétirányú keresztszűrés a DirectQuery használat�
 
 Az adatmodell biztonságának kezeléséhez a következő lépéseket hajthatja végre.
 
-1. Az adatmodellnél kattintson a **három pontra (…)**.
+1. Az adatmodellnél kattintson a **három pontra (…)** .
 2. Válassza a **Biztonság** elemet.
    
    ![Biztonsági szűrők alkalmazása mindkét irányba](media/service-admin-rls/rls-security.png)
@@ -70,7 +70,7 @@ A tagokat a nevük mellett látható X elemre kattintva távolíthatja el.
 
 Az adott szerepkör megfelelő működését a szerepkör tesztelésével ellenőrizheti. 
 
-1. Kattintson a szerepkör mellett látható **három pontra (...)**.
+1. Kattintson a szerepkör mellett látható **három pontra (...)** .
 2. Kattintson az **Adatok tesztelése szerepkörökként** elemre.
 
 ![Tesztelés szerepkörként](media/service-admin-rls/rls-test-role.png)

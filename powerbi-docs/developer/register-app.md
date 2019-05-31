@@ -1,20 +1,20 @@
 ---
 title: Alkalmazás regisztrálása Power BI-tartalmak beágyazásához
 description: Megismerheti, hogyan kell regisztrálni egy alkalmazást az Azure Active Directoryban Power BI-tartalmak beágyazásához.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: 2fb633c8f23d5d9d70dc6a01c2467debb169da54
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
-ms.translationtype: HT
+ms.date: 04/02/2019
+ms.openlocfilehash: 73cca097ce6693c3bbee538eb1518a2ede19beab
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762375"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61269697"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Azure AD-alkalmazás regisztrálása a Power BI-ban való használathoz
 
@@ -53,7 +53,7 @@ Az alábbiak szerint regisztrálhatja alkalmazását a Power BI alkalmazásregis
 
     ![Alkalmazástípus](media/register-app/register-app-new-design-app-type.png)
 
-5. Ha alkalmazástípusként a **Kiszolgálóoldali webalkalmazás** lehetőséget választotta, akkor folytassa a **Kezdőlap URL-címe** és az **Átirányítási URL-cím** értékének megadásával. Az **Átirányítási URL-cím** bármilyen érvényes URL-címmel működik, és meg kell felelnie a létrehozott alkalmazásnak. Ha a **Natív** értéket választotta, folytassa a 6. lépéssel.
+5. Ha alkalmazástípusként a **Kiszolgálóoldali webalkalmazás** lehetőséget választotta, akkor folytassa a **Kezdőlap URL-címe** és az **Átirányítási URL-cím** értékének megadásával. A **átirányítási URL-cím** bármilyen érvényes URL-címmel működik, és meg kell egyeznie a létrehozott alkalmazáshoz. Ha a **Natív** értéket választotta, folytassa a 6. lépéssel.
 
 6. Válassza ki azokat a Power BI API-kat, amelyekre az alkalmazásnak szüksége van. További információt a Power BI hozzáférési engedélyeiről a [Power BI engedélyeit](power-bi-permissions.md) ismertető témakörben talál. Válassza a **Regisztráció** lehetőséget.
 
@@ -62,7 +62,7 @@ Az alábbiak szerint regisztrálhatja alkalmazását a Power BI alkalmazásregis
     > [!Important]
     > Ha engedélyezi a szolgáltatásnevek használatát a Power BI-ban, az Azure Active Directory-engedélyek többé nem lépnek életbe. Az engedélyek kezelése a Power BI felügyeleti portálján keresztül történik.
 
-7. Ha alkalmazástípusként a **Natív** lehetőséget választja, akkor egy **alkalmazásazonosítót** kap. Ha alkalmazástípusként a **Kiszolgálóoldali webalkalmazás** lehetőséget választja, akkor kap egy **alkalmazásazonosítót** és egy **titkos kódot az alkalmazáshoz**.
+7. Ha úgy dönt, **natív** számára az alkalmazás típusát, majd használ majd a megadott egy **Alkalmazásazonosító**. Ha alkalmazástípusként a **Kiszolgálóoldali webalkalmazás** lehetőséget választja, akkor kap egy **alkalmazásazonosítót** és egy **titkos kódot az alkalmazáshoz**.
 
     > [!Note]
     > Az **Alkalmazásazonosító** értékét szükség esetén később is lekérheti az Azure Portalról. Amennyiben elveszíti az **alkalmazás titkos kódját**, egy újat kell létrehoznia az Azure Portalon.
@@ -83,16 +83,11 @@ Az alkalmazást közvetlenül az Azure Portalon is regisztrálhatja. Az alkalmaz
 
 3. Az oldal jobb felső részén kattintson a fiókra, és válassza ki az Azure AD-bérlőt.
 
-4. A bal oldali navigációs ablakban válassza az **Összes szolgáltatás**, **Azure Active Directory** lehetőséget, és kattintson az **Alkalmazásregisztráció**, majd az **Új alkalmazás regisztrálása** elemre.
-
-    ![Új alkalmazás regisztrálása](media/register-app/azuread-new-app-registration.png)
+4. Lépjen a bal oldali navigációs ablaktáblán **minden szolgáltatás**válassza **Alkalmazásregisztrációk** majd **új regisztrációs**.
 
 5. Kövesse az utasításokat az új alkalmazás létrehozásához.
 
-   * Webalkalmazások esetén adja meg a Bejelentkezési URL-címet, vagyis az alkalmazás alap URL-címét, amelyen a felhasználók bejelentkezhetnek (például: `http://localhost:13526`).
-   * Natív alkalmazások esetén adja meg az **Átirányítási URI-t**, amelyet az Azure AD a jogkivonatválaszok visszaadására használ. Ügyeljen rá, hogy az alkalmazáshoz tartozó értéket adjon meg, például: `http://myapplication/Redirect`.
-
-További információt az alkalmazások Azure Active Directoryban történő regisztrálásáról az [alkalmazások Azure Active Directoryval való integrálását](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) ismertető témakörben talál.
+   Az Azure Active Directory-alkalmazások regisztrálását kapcsolatos további információkért lásd: [alkalmazás regisztrálása az Azure Active Directoryval](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-register-an-app)
 
 ## <a name="how-to-get-the-application-id"></a>Az alkalmazásazonosító beszerzése
 
@@ -112,30 +107,21 @@ Vagy a beágyazáshoz használt *fő* fiókkal, vagy egy globális rendszergazda
 
 1. Az Azure Portal [Alkalmazásregisztrációk](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) szakaszában keresse meg azt az alkalmazást, amelyet a beágyazáshoz kíván használni.
 
-    ![Az Azure AD-ban regisztrált alkalmazások](media/register-app/powerbi-embedded-azuread-registered-apps.png)
-2. Válassza az **API-hozzáférés**, majd a **Szükséges engedélyek** lehetőséget.
+2. Válassza ki **API-engedélyek** alatt **kezelés**.
 
-    ![Az Azure AD-alkalmazás számára szükséges engedélyek](media/register-app/powerbi-embedded-azuread-app-required-permissions.png)
-
-3. A **Szükséges engedélyek** listán válassza ki a **Power BI szolgáltatás (Power BI)** elemet.
+3. Belül **API-engedélyek**válassza **adjon hozzá egy engedélyt**, majd **Power BI szolgáltatás**.
 
     ![Alkalmazásengedélyek (03)](media/register-app/powerbi-embedded-azuread-app-permissions03.png)
 
-   > [!NOTE]
-   > Amennyiben az alkalmazást közvetlenül az Azure AD portálon hozta létre, előfordulhat, hogy a **Power BI szolgáltatás (Power BI)** nem jelenik meg. Ebben az esetben kattintson a **+ Hozzáadás** gombra, és válassza az **1 Kiválasztás és API** lehetőséget. Válassza a **Power BI szolgáltatás** elemet az API-k listájából, és kattintson a **Kiválasztás** gombra.  Amennyiben a **Power BI szolgáltatás (Power BI)** nem érhető el a **+ Hozzáadás** listából sem, regisztráljon a Power BI szolgáltatásra legalább egy felhasználóval.
+4. Válassza ki a szükséges konkrét engedélyeket **delegált engedélyek**. Egyenként jelölje be őket, hogy menteni tudja a kijelöléseket. Ha végzett, kattintson a **Mentés** gombra.
 
-4. Jelölje be az összes engedélyt a **Delegált engedélyek** szakaszban. Egyenként jelölje be őket, hogy menteni tudja a kijelöléseket. Ha végzett, kattintson a **Mentés** gombra.
+5. Válassza ki **Grant hozzájárulási**.
 
-    ![Alkalmazásengedélyek (04)](media/register-app/powerbi-embedded-azuread-app-permissions04.png)
-5. A **Szükséges engedélyek** listában kattintson az **Engedélyek megadása** elemre.
-
-    Az **Engedélyek megadása** műveletre azért van szükség, hogy a *fő fióknál* ne kelljen Azure AD-hozzájárulást kérni. Amennyiben globális rendszergazdai fiókkal végzi el a műveletet, a cég összes felhasználója megkapja az engedélyeket ehhez az alkalmazáshoz. Amennyiben a *fő fiókkal*, és nem a globális rendszergazdai fiókkal hajtja végre a műveletet, csak a *fő fiók* számára adja meg az engedélyeket ehhez az alkalmazáshoz.
-
-    ![Engedélyek megadása a Szükséges engedélyek párbeszédpanelen](media/register-app/powerbi-embedded-azuread-app-grant-permissions.png)
+    A **Grant hozzájárulási** művelet van szüksége a *fő fióknál* elkerülése érdekében az Azure AD-hozzájárulást kérni. Amennyiben globális rendszergazdai fiókkal végzi el a műveletet, a cég összes felhasználója megkapja az engedélyeket ehhez az alkalmazáshoz. Amennyiben a *fő fiókkal*, és nem a globális rendszergazdai fiókkal hajtja végre a műveletet, csak a *fő fiók* számára adja meg az engedélyeket ehhez az alkalmazáshoz.
 
 ### <a name="applying-permissions-programmatically"></a>Engedélyek szoftveres alkalmazása
 
-1. Be kell szereznie a bérlőn belül meglévő egyszerű szolgáltatásneveket (felhasználókat). További információt ennek menetéről a [Get servicePrincipal](https://developer.microsoft.com/graph/docs/api-reference/beta/api/serviceprincipal_get) használatát ismertető témakörben talál.
+1. Be kell szereznie a bérlőn belül meglévő egyszerű szolgáltatásneveket (felhasználókat). A módjáról további információkért lásd: [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
     Ha azonosító {ID} megadása nélkül hívja meg a *Get servicePrincipal* API-t, a bérlőben megtalálható összes egyszerű szolgáltatást lekéri.
 
@@ -161,7 +147,7 @@ Vagy a beágyazáshoz használt *fő* fiókkal, vagy egy globális rendszergazda
    A **consentType** értéke megadhatja az **AllPrincipals** vagy a **Principal** értéket.
 
    * Az **AllPrincipals** csak a bérlői rendszergazda által használható, hogy a bérlő minden felhasználója nevébe engedélyeket adjon.
-   * A **Principal** értéket választva egy konkrét felhasználó nevében lehet engedélyt adni. Ebben az esetben egy további tulajdonságot hozzá kell adni a kérelem törzsében: *principalId={User_ObjectId}*.
+   * A **Principal** értéket választva egy konkrét felhasználó nevében lehet engedélyt adni. Ebben az esetben egy további tulajdonságot hozzá kell adni a kérelem törzsében: *principalId={User_ObjectId}* .
 
      Az *Engedélyek megadása* műveletre azért van szükség, hogy a fő fióknál ne kelljen Azure AD-hozzájárulást kérni, hiszen az nem interaktív bejelentkezés esetén lehetetlen volna.
 
@@ -190,8 +176,8 @@ Vagy a beágyazáshoz használt *fő* fiókkal, vagy egy globális rendszergazda
 
    A **consentType** értéke megadhatja az **AllPrincipals** vagy a **Principal** értéket.
 
-   * Az **AllPrincipals** csak a bérlői rendszergazda által használható, hogy a bérlő minden felhasználója nevébe engedélyeket adjon.
-   * A **Principal** értéket választva egy konkrét felhasználó nevében lehet engedélyt adni. Ebben az esetben egy további tulajdonságot hozzá kell adni a kérelem törzsében: *principalId={User_ObjectId}*.
+   * **AllPrincipals** csak segítségével szerint egy bérlői rendszergazdai engedélyek a bérlő összes felhasználója esetében.
+   * **Egyszerű** egy adott felhasználó engedélyek megadására szolgál. Ebben az esetben egy további tulajdonságot hozzá kell adni a kérelem törzsében: *principalId={User_ObjectId}* .
 
    Az *Engedélyek megadása* műveletre azért van szükség, hogy a fő fióknál ne kelljen Azure AD-hozzájárulást kérni, hiszen az nem interaktív bejelentkezés esetén lehetetlen volna.
 

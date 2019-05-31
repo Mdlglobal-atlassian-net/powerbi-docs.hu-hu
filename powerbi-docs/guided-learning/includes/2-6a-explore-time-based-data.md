@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 48e553ebd81632cb0baa9a2c9c6a761860c3c9c6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255709"
+---
 A Power BI segítségével könnyen elemezhetők az idő alapú adatok. A Power BI Desktop modellezési eszközei automatikusan létrehoznak olyan mezőket, melyek alapján egyetlen kattintással le lehet hatolni az évek, negyedévek, hónapok és napok szintjére.  
 
 Amikor a felhasználó dátum mezőt használva jelenít meg egy táblát jelentésében, a Power BI Desktop automatikusan megjeleníti az időszakonkénti bontást. Az alábbi ábrán látható **Dátum** tábla egyetlen dátum mezőjét például automatikusan évre, negyedévre, hónapra és napra bontotta a Power BI.
@@ -23,7 +31,7 @@ Ha dátumhierarchia használata helyett az egyes dátumokkal szeretne dolgozni, 
 ![](media/2-6a-explore-time-based-data/2-6a_5.png)
 
 ## <a name="next-steps"></a>Következő lépések
-**Gratulálunk!** Ön teljesítette a Power BI **Interaktív tanulás** oktatóanyagának ezt a fejezetét. Most, hogy megismerkedett az adatok *modellezésével*, készen áll arra, hogy továbblépjen a következő rész izgalmas témájához, a **vizualizációkhoz**.
+**Gratulálunk!** Ön teljesítette a Power BI **Interaktív tanulás** oktatóanyagának ezt a fejezetét. Most, hogy megismerkedett *modellezés* adatok, készen áll izgalmas továbblépjen a következő szakaszban: **Vizualizációk**.
 
 Ahogy arról korábban már szó esett, ez az oktatóanyag a Power BI használatával végzett munka szokásos menetét követve bővíti az Ön ismereteit:
 

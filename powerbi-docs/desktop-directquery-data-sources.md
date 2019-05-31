@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 04/10/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 84e40e9fbce07716a2250a58bfcbd396a40d2842
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
-ms.translationtype: HT
+ms.openlocfilehash: 3bb7de9685a1e0fc9fa423328ad9e1e5faa53603
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826560"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61305455"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>A DirectQuery által támogatott adatforrások a Power BI-ban
 
@@ -24,24 +24,27 @@ A **Power BI Desktopban** és a **Power BI szolgáltatásban** számos adatforr�
 A következő adatforrások támogatják a DirectQueryt a Power BI-ban:
 
 * Amazon Redshift
-* Azure HDInsight Spark (bétaverzió)
+* Az AtScale (bétaverzió)
+* Azure HDInsight Spark
 * Azure SQL Database
 * Azure SQL Data Warehouse
-* Google BigQuery (bétaverzió)
+* Google BigQuery
+* HDInsight interaktív lekérdezés
 * IBM DB2-adatbázis
-* IBM Netezza (bétaverzió)
+* IBM Netezza
 * Impala (2.x-es verzió)
 * Oracle Database (12-es és újabb verzió)
+* Oracle Essbase
 * SAP Business Warehouse-alkalmazáskiszolgáló
-* SAP Business Warehouse üzenetkezelési kiszolgáló (bétaverzió)
+* SAP Business Warehouse üzenetkezelési kiszolgáló
 * SAP HANA
 * Snowflake
-* Spark (bétaverzió) (0.9-es és újabb)
+* Spark (0,9 verzió vagy újabb verzió)
 * SQL Server
 * Teradata-adatbázis
-* Vertica (bétaverzió)
+* Vertica
 
-Azok az adatforrások, amelyek neve mögött szerepel a **(bétaverzió)** vagy az **(előzetes verzió)**, módosulhatnak, és a használatuk éles környezetben nem támogatott. Az is előfordulhat, hogy akkor sem támogatottak, miután közzétett egy jelentést a **Power BI szolgáltatásban**, és ezért egy közzétett jelentés megnyitása vagy az adatkészlet felderítése hibát okozhat.
+Azok az adatforrások, amelyek neve mögött szerepel a **(bétaverzió)** vagy az **(előzetes verzió)** , módosulhatnak, és a használatuk éles környezetben nem támogatott. Az is előfordulhat, hogy akkor sem támogatottak, miután közzétett egy jelentést a **Power BI szolgáltatásban**, és ezért egy közzétett jelentés megnyitása vagy az adatkészlet felderítése hibát okozhat.
 
 Az egyetlen különbség a **(bétaverzió)** és az **(előzetes verzió)** kifejezéssel jelölt adatforrások között, hogy az **(előzetes verziójú)** forrásokat engedélyezni kell Előzetes verziójú funkcióként, mielőtt használni lehetne őket. Egy **(előzetes verziójú)** adatösszekötő engedélyezéséhez a **Power BI Desktopban** lépjen a **Fájl > Lehetőségek és beállítások > Beállítások** területre, és válassza az **Előzetes verziójú funkciók** lehetőséget.
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 1db5f34ce7a08b32b665409322836eba483be927
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397685"
+---
 A Power BI-ban tulajdonságokat rendelhet a modell mezőihez, így világosabban számolhat be az adatokról, jelenítheti meg és mutathatja be őket. Például előfordulhat, hogy átlagolni akar egy számsort, de a Power BI automatikusan összeadja az elemeket. A Power BI segítségével beállíthatja a számsorok összegzésének módját.
 
 ## <a name="numeric-control-over-summarization"></a>Numerikus összegzések szabályozása

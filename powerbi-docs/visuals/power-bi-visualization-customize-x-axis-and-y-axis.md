@@ -12,11 +12,11 @@ ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 1bb6cfa195e3e6158259c9ff23cb3efdc3da4a09
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223306"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61068583"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>X és Y tengely tulajdonságainak testreszabása
 Az oktatóanyag segítségével elsajátíthatja a vizualizációk X és Y tengelyének testreszabását lehetővé tevő módok végrehajtását. Nem minden vizualizáció rendelkezik tengelyekkel vagy testreszabási lehetőségekkel. Például a kördiagramoknak nincsenek tengelyei. Ráadásul a testreszabási lehetőségek minden vizualizáció esetében különböznek, és túl sok lehetőség létezik ahhoz, hogy egyetlen cikkben mindet ismertessük. Így a leggyakrabban használt tengelyek testreszabási lehetőségeit fogjuk átvenni, hogy Ön kényelmesen elsajátíthassa a vizualizációk formázási lapjának használatát a Power BI-jelentések vásznán.  
