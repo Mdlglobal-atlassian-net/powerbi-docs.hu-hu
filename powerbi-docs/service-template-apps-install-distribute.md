@@ -7,26 +7,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/07/2019
+ms.date: 04/19/2019
 ms.author: maggies
-ms.openlocfilehash: cd3a1f94aa4c965327ea3e5bcb7271326aa3514d
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 2b7b2630e665fca9013920718ff58dd973f01392
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249839"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64578565"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi-preview"></a>Sablonalkalmazások telepítése és terjesztése a szervezetnél – Power BI (előzetes verzió)
 
-A Power BI új *sablonalkalmazásai* lehetővé teszik a Power BI-partnerek részére, hogy kevés kódolással vagy anélkül hozzanak létre Power BI-alkalmazásokat, és helyezzék azokat üzembe a Power BI bármely ügyfele számára. Ez a cikk Power BI-elemzők számára készült. Azt ismerteti, hogyan telepíthet, szabhat testre és terjeszthet egy Power BI-partner által létrehozott sablonalkalmazást. Ha érdekli, hogyan hozhat létre sablonalkalmazásokat, hogy saját maga terjeszthesse azokat, akkor olvassa el a [Sablonalkalmazás létrehozása a Power BI-ban](service-template-apps-create.md) cikket.
+Ön a Power BI-elemző? Ha tehát ez a cikk bemutatja, hogyan telepíti *sablon alkalmazások* számos, a például a Salesforce, a Microsoft Dynamics és a Google Analytics vállalkozása működtetéséhez használt olyan szolgáltatásokhoz való kapcsolódáshoz. Módosíthatja az irányítópultot és jelentéseket a szervezet igényeinek, és kioszthatja a munkatársai, egy *alkalmazás*. 
 
 ![Telepített Power BI-alkalmazások](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-Amikor telepít egy Power BI-partner által létrehozott sablonalkalmazást, módosíthatja azt, hogy megfeleljen a szervezet követelményeinek, majd terjesztheti azt alkalmazásként a munkatársainak.  
+Ha érdekli, hogyan hozhat létre sablonalkalmazásokat, hogy saját maga terjeszthesse azokat, akkor olvassa el a [Sablonalkalmazás létrehozása a Power BI-ban](service-template-apps-create.md) cikket. A Power BI partnerek alig vagy egyáltalán nem kódolási Power BI-alkalmazások készítéséhez, és telepítse őket a Power BI-ügyfél. 
 
 ## <a name="prerequisites"></a>Előfeltételek  
 
-Az alábbiakban a sablonalkalmazások telepítésének, testreszabásának és terjesztésének követelményeit olvashatja:  
+Az alábbiakban a sablonalkalmazások telepítésének, testreszabásának és terjesztésének követelményeit olvashatja: 
 
 - Egy [Power BI Pro-licenc](service-self-service-signup-for-power-bi.md)
 - A [Power BI alapvető fogalmainak](service-basic-concepts.md) ismerete
