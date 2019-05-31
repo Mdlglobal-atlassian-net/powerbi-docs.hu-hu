@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: ef29c6b73a9a430fda35c2274dd278d11bd29dcc
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: f32a5704d611153e5b4a0f3a485f2a4a25f93e8b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661951"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61059949"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Gyakori kérdések – Power BI
 * Ha bármilyen egyéb kérdése van, [kérdezze a Power BI-közösséget](http://community.powerbi.com/).
@@ -31,8 +31,9 @@ A Power BI Pro egyéni licenc, amely hozzáférést biztosít a Power BI szolgá
 A Premium szint fenntartott kapacitást biztosít, amellyel konzisztensebb teljesítmény érhető el, és amely nagyobb adatméreteket támogat a Power BI-ban. Egyéni felhasználók esetén a Premium szint lehetővé teszi, hogy a Pro-felhasználók széles körben megoszthassák a tartalmat úgy, hogy ehhez nincs szükségük arra, hogy a tartalom címzettjei felhasználónkénti licencekkel rendelkezzenek.
 
 ## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Mi történik, ha a Power BI Pro-licenc lejár?
-A Power BI Pro-licenc lejárata után 30 napos türelmi időszak biztosított.
-A Power BI Pro előfizetési életciklusa megegyezik az Office 365-ével. További információkért lásd: [Mi történik az adatokkal és a hozzáféréssel, amikor az Office 365 vállalati verzióra szóló előfizetés befejeződik?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
+A Power BI Pro-licenc lejárata után egy türelmi időszak biztosított. A mennyiségi licenc részeként megvásárolt licencekre a türelmi időszak 90 nap. Közvetlenül vásárolt licencre a türelmi időszak 30 nap.
+
+A Power BI Pro előfizetési életciklusa megegyezik az Office 365-ével. További információkért lásd: [mi történik az adatokkal és a hozzáférés, ha az Office 365 üzleti előfizetési befejeződik?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Mi a teendő, ha kérdéseim vannak a Power BI Premium verzióval kapcsolatban?
 A Power BI Premium verzióval kapcsolatos kérdésekért lásd: [Power BI Premium – gyakori kérdések](../service-premium-faq.md).
@@ -91,12 +92,7 @@ A Power BI Pro licenceit közvetlenül vásárolhatja meg, vagy cseveghet egy k�
 
 Megkereshet egy [Microsoft-partnert](https://partner.microsoft.com/) is a Power BI implementációjának támogatásával kapcsolatban.
 
-## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Mi történik, ha a Power BI Pro-licenc lejár?
-A Power BI Pro-licenc lejárata után egy türelmi időszak biztosított. A mennyiségi licenc részeként megvásárolt licencekre a türelmi időszak 90 nap. Közvetlenül vásárolt licencre a türelmi időszak 30 nap.
-
-A Power BI Pro előfizetési életciklusa megegyezik az Office 365-ével. További információkért lásd: [Mi történik az adatokkal és a hozzáféréssel, amikor az Office 365 vállalati verzióra szóló előfizetés befejeződik?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
-
-## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Eleget tesz a Power BI az országos, regionális, illetve iparágra jellemző megfelelőségi követelményeknek?
+## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Teljesíti a Power BI az országos, a regionális és az iparág-specifikus megfelelőségi követelményeket?
 További információ a Power BI megfelelőségéről a [Microsoft Adatvédelmi központban](http://go.microsoft.com/fwlink/?LinkId=785324) található.
 
 ## <a name="where-can-i-learn-more-about-security"></a>Hol tájékozódhatok a biztonságról?

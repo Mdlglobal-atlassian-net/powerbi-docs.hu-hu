@@ -1,26 +1,26 @@
 ---
 title: Paraméterek létrehozása lapszámozott jelentésekhez a Power BI szolgáltatásban (előzetes verzió)
 description: Ebből a cikkből megismerheti, hogyan hozhat létre paramétereket lapszámozott jelentésekhez a Power BI szolgáltatásban.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 2240d2bf622122527d4d052a9d7098be648e368d
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: d58d1c84199c698089f4b3abccb26f9dbaea76d6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324609"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60987676"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service-preview"></a>Paraméterek létrehozása lapszámozott jelentésekhez a Power BI szolgáltatásban (előzetes verzió)
 
 Ebből a cikkből megismerheti, hogyan hozhat létre paramétereket lapszámozott jelentésekhez a Power BI szolgáltatásban.  A jelentésparaméter módot kínál a jelentés adatainak kiválasztására és a megjelenésének módosítására. Megadhat egy alapértelmezett értéket és a rendelkezésre álló értékek listáját, és a jelentés olvasói kiválaszthatják a nekik tetszőeket.  
 
-Az alábbi ábrán a Tervező nézet látható a Jelentéskészítőben egy jelentéshez a következő paraméterekkel: @BuyingGroup, @Customer, @FromDate és @ToDate. 
+A paraméterekkel a jelentés az alábbi ábrán látható az a Power BI jelentéskészítő Tervező nézetben @BuyingGroup, @Customer, @FromDate, és @ToDate. 
   
 ![Paraméterek a Jelentéskészítőben](media/paginated-reports-parameters/power-bi-paginated-parameters-report-builder.png)
   
@@ -37,7 +37,7 @@ Az alábbi ábrán a Tervező nézet látható a Jelentéskészítőben egy jele
   
 ## <a name="create-or-edit-a-report-parameter"></a>Jelentésparaméter létrehozása vagy szerkesztése  
   
-1.  Nyissa meg a lapszámozott jelentést a Jelentéskészítőben.
+1.  Nyissa meg a többoldalas jelentést a Power BI jelentéskészítő.
 
 1. A **Jelentésadatok** panelen kattintson a jobb gombbal a **Paraméterek** csomópontra, majd kattintson a **Paraméter hozzáadása** elemre. Megnyílik a **Jelentésparaméter tulajdonságai** párbeszédpanel.  
   

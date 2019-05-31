@@ -11,11 +11,11 @@ ms.date: 08/22/2018
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: 8e444c78c1f6f9f3f0be1375f96f7381489cc069
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282900"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61143693"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Irányítópult-témák használata a Power BI szolgáltatásban
 Az **Irányítópult-témák** használatával egységes színtémát alkalmazhat az egész irányítópultra, például a cég színeit, az évszaknak megfelelő színeket vagy bármely más színtémát, amit csak szeretne. **Irányítópult-témák** alkalmazásakor az irányítópulton szereplő összes vizualizáció a kiválasztott téma színeit fogja használni (ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be).

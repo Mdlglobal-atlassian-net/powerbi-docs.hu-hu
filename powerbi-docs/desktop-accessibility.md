@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e3dd7d9120b524dd09d6f0d60764385185210d83
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
-ms.translationtype: HT
+ms.openlocfilehash: 54c842a91684eec1cf60eca4442592500d1bcb11
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306297"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770412"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Akadálymentesség a Power BI Desktop-jelentésekben
 A Power BI rendelkezik olyan funkciókkal, amelyek lehetővé teszik a fogyatékkal élők számára, hogy könnyedén használják és kezeljék a Power BI-jelentéseket. A funkciók közé tartozik az a lehetőség, hogy a jelentések billentyűzettel vagy képernyőolvasóval is használhatók legyenek, az oldalak objektumai léptetéssel emelhetők ki, és a jelölők használata átgondolt a vizualizációkban.
@@ -144,6 +144,12 @@ Az akadálymentesség javítására való folyamatos törekvésünk jegyében a 
 | Többszörös kijelölés | Ctrl + Enter vagy Ctrl + Szóköz |
 | Jobb gombos kattintás | <ul><li>Windows-billentyűzet: Windows helyi menü billentyű + F10.  A Windows helyi menü billentyű a bal oldali Alt billentyű és a Balra nyílbillentyű között van</li><li>Más billentyűzeten: Shift + F10</li></ul> |
 | Kijelölés törlése | Ctrl + Shift + C |
+
+### <a name="table--matrix-navigation"></a>Tábla és mátrix navigáció
+| Cél           | Billentyűparancs                |
+| :------------------- | :------------------- |
+| Fókusz mozgatása felfelé és lefelé cellát (közötti összes celláját minden terület)  | Felfelé mutató nyíl, kulcs / le nyílbillentyű |
+| Áthelyezés jobbra-balra egy cella összpontosítson (közötti összes celláját minden terület)  | Bal nyílbillentyű / jobb nyílbillentyű |
 
 ### <a name="pane-navigation"></a>Navigáció a panelen
 | Cél           | Billentyűparancs                |

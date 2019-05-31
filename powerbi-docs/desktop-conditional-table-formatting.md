@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4b45c6708f2f4c1ec0f8df2a330dcbb683210926
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e23fd2aca90ee14c2376b0175c7c8b5132cf9a9f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292045"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66222265"
 ---
 # <a name="conditional-formatting-in-tables"></a>Táblázatok feltételes formázása 
 A táblázatok feltételes formázásával a cellák értéke, illetve más értékek vagy mezők alapján határozhat meg egyéni cellaszíneket, akár színátmenetek használatával is. A cellák értékei adatsávokkal is megjeleníthetők. 
@@ -129,6 +129,12 @@ Az eredmények pedig az alábbi mátrix szerint jelennek majd meg.
 ![Mátrixvizualizáció KPI-értékeken alapuló színnel](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
 
 A fantáziáját és egy kis DAX-ot felhasználva számtalan egyéb változatot is létrehozhat.
+
+Bármilyen érték szerepel a CSS-szín specifikációja, [ https://www.w3.org/TR/css-color-3/ ](https://www.w3.org/TR/css-color-3/) kiszínezheti a Vizualizációk:
+* 3, 6 vagy 8 jegyű hexadecimális kódok pl. #3E4AFF. Adja meg a # szimbólum elején a kódot. "3E4AFF" nem elfogadható. 
+* RGB- vagy RGBA értékek például RGBA (234, 234, 234, 0,5)
+* HSL vagy HSLA értékek például HSLA (123, 75 %-os, 75 %-os, 0,5)
+* Szín-neveket például a zöld, SkyBlue, PeachPuff 
 
 ## <a name="next-steps"></a>Következő lépések
 További információkat a következő cikkekben talál:  

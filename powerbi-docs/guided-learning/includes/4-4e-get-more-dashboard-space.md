@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 605ef74cc97843cc475a677f5fa2ebdbdaec909a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263820"
+---
 Előfordulhat, hogy időnként saját irányítópultok létrehozásakor több tartalommal rendelkezik mint ami a vászonra kifér. Néhány megoldás segíthet kezelni az irányítópult területének megjelenését, hogy az irányítópult teljes tartalmát áttekinthessem.
 
 A legegyszerűbb módszer a teljes irányítópult egy képernyőn való megjelenítéséhez a **Teljes képernyős mód** gombra kattintás az irányítópult jobb felső sarkában.

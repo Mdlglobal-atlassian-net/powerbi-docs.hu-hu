@@ -1,20 +1,20 @@
 ---
 title: Hitelesítési hozzáférési token beszerzése
 description: Útmutatás az adatok leküldéséhez – Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 0840d01a53a8d1f2c19ef1d5d263bf9a3d2d8f81
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 4a0b0f5e7d697c137da343576d05fbcc91b4a4f7
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216562"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710352"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>2. lépés: Hitelesítési hozzáférési jogkivonat beszerzése
 
@@ -27,13 +27,11 @@ A továbbiakban ismertetjük, hogyan szerezhet be a hitelesítéshez szükséges
 ## <a name="get-an-authentication-access-token"></a>Hitelesítési hozzáférési jogkivonat beszerzése
 
 > **MEGJEGYZÉS**: Mielőtt elkezdené, győződjön meg arról, hogy követte az [adatok leküldése az adatkészletbe](walkthrough-push-data.md) bemutatóban található korábbi lépéseket.
-> 
-> 
 
-1. A Visual Studio 2015-ben hozzon létre egy **Konzolalkalmazás** projektet.
-2. Telepítse az [Azure AD Authentication Library for .NET NuGet csomagot](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). Ha egy .NET-alkalmazásban szeretne beszerezni hitelesítéshez szükséges biztonsági jogkivonatot, használja ezt a csomagot. A csomagot az alábbiakban leírt módon telepítheti:
+1. A Visual Studióban (2015-ös vagy újabb), hozzon létre egy **Konzolalkalmazás** projekt.
+2. Telepítse az [Azure AD Authentication Library for .NET NuGet csomagot](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Ha egy .NET-alkalmazásban szeretne beszerezni hitelesítéshez szükséges biztonsági jogkivonatot, használja ezt a csomagot. A csomagot az alábbiakban leírt módon telepítheti:
 
-     a. A Visual Studio 2015-ben válassza a **Tools** (Eszközök) > **NuGet Package Manager** (NuGet-csomagkezelő) > **Package Manager Console** (Csomagkezelő konzol) elemet.
+     a. A (2015-ös vagy újabb) a Visual Studióban válassza **eszközök** > **NuGet-Csomagkezelő** > **Package Manager Console**.
 
      b. A **csomagkezelő konzolban** lépjen be az Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612 elembe.
 3. Adja az alábbi kódot a Program {...} osztályba.
@@ -152,7 +150,7 @@ namespace walkthrough_push_data
             string resourceUri = "https://analysis.windows.net/powerbi/api";
 
             //OAuth2 authority Uri
-            string authorityUri = "https://login.microsoftonline.net/common/";
+            string authorityUri = "https://login.microsoftonline.com/common/";
 
             //Get access token:
             // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken

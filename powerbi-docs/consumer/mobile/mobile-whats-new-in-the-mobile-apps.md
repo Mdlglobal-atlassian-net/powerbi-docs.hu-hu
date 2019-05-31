@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 8755f48653097d5754c4c908f07ea91bdb3c0d53
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
-ms.translationtype: HT
+ms.openlocfilehash: 967af5bc560d5312cd26964e5ca6b2b7eafd60d7
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872731"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65991042"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -22,6 +22,17 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+
+## <a name="april-2019"></a>Április 2019
+
+### <a name="key-influencers-visual"></a>Kulcs Véleményvezérek visual 
+Kulcs Véleményvezérek visual már elérhető a mobilalkalmazásban. Ez a Vizualizáció fő elemzésének végre az adatok néhány TAP-oknak teszi lehetővé.
+
+### <a name="add-comments-to-report-content-android-and-ios"></a>Megjegyzések hozzáadása a jelentés tartalmának (Android és iOS)
+Most már használhatja megjegyzések együttműködésre, és ossza meg velünk véleményét a jelentésoldalak és Vizualizációk. További információk a jelentést a Power BI szolgáltatásban és a Mobile megjegyzéseket [a blog](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
+
+### <a name="maximize-the-view-with-full-screen-mode-android-and-ios"></a>Maximalizálhatja a nézet a teljes képernyős mód (Android és iOS)
+Hozzáadott új gomb, amelyekkel szabályozhatja, mikor jelentés fejlécek és láblécek eltávolításával, és a jelentések megtekintése az maximális lemezterület biztosít az adatok összpontosíthat.
 
 ## <a name="march-2019"></a>2019. március
 
@@ -31,7 +42,20 @@ Közvetlenül az alkalmazásból érheti el a más cégek által Önnel megoszto
 
 ### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>A Windows bemutató módjának továbbfejlesztése diavetítéssel (Windows)
 
-A [diavetítés](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) használatával az irodában használt nyilvános kijelzőkön jeleníthet meg Power BI-jelentéseket teljes képernyős módban, a jelentésoldalak közötti automatikusan lapozással.  
+A [Diavetítés](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) nyilvános megjeleníti, az Office használhatja a Power BI jelentések futtatásához, amelyek a rendszer automatikusan teljes képernyős rotálása jelentésoldalak között.  
+
+### <a name="supporting-pbi-rs-reports-over-adfs-and-wap-configuration-ios-only"></a>PBI-RS jelentéseket támogató keresztül AD FS és WAP-konfigurációja (csak iOS)
+
+A Power BI jelentéseknél (PBIX) keresztül AD FS konfigurációs PBI-RS-ban üzemeltetett Power bi-ban iOS-alkalmazás most már elérhetők.
+
+### <a name="enabling-single-tap-interaction-with-report-visuals"></a>Egyetlen koppintással interakció jelentésvizualizációk engedélyezése
+
+A jelentés kapcsolati úgy módosítottuk, ezért azt csak egy koppintson egy vizualizációra, gomb vagy a szeletelő az adatok azonnal kezeléséhez szükséges. Felhasználóknak már nem kell koppintson egy vizualizációra, válassza ki, és koppintson rá ismét interaktívan, egyetlen koppintással azokat is elvégzi.
+
+![Egyetlen koppintással interakció](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
+
+> [!NOTE]
+> Kapcsolja be ezt a viselkedést az alkalmazás-beállítás, a meglévő felhasználók kell. További információkért lásd: a [konfigurálása egyetlen koppintással jelentés kapcsolati](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) cikk.
 
 ## <a name="january---february-2019"></a>2019. január-február
  

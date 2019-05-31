@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 6974e0eccd8c16bdb06a050873e40f1a5be6f75f
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514536"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Oktatóanyag: Számított oszlopok létrehozása a Power BI Desktopban
@@ -44,7 +44,7 @@ Ez az oktatóanyag bemutatja néhány számított oszlop létrehozását és jel
     
     ![Szerkesztőléc](media/desktop-tutorial-create-calculated-columns/create3.png)
     
-2.  Alapértelmezés szerint az új számított oszlop neve egyszerűen Oszlop lesz. Ha nem nevezi át, akkor a további új oszlopok neve Oszlop 2, Oszlop 3 lesz, és így tovább. Az oszlopnak célszerű informatívabb nevet adni, ezért mivel az **Oszlop** neve már ki van jelölve a szerkesztőlécen, a **ProductFullCategory** név beírásával nevezze át, majd írjon be egy egyenlőségjelet (**=**).
+2.  Alapértelmezés szerint az új számított oszlop neve egyszerűen Oszlop lesz. Ha nem nevezi át, akkor a további új oszlopok neve Oszlop 2, Oszlop 3 lesz, és így tovább. Az oszlopnak célszerű informatívabb nevet adni, ezért mivel az **Oszlop** neve már ki van jelölve a szerkesztőlécen, a **ProductFullCategory** név beírásával nevezze át, majd írjon be egy egyenlőségjelet ( **=** ).
     
 3.  Az a cél, hogy az új oszlopban lévő értékek a ProductCategory névvel kezdődjenek. Mivel ez az oszlop egy másik, de kapcsolódó táblában található, a lekéréséhez a [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) függvény használható.
     
@@ -61,14 +61,14 @@ Ez az oktatóanyag bemutatja néhány számított oszlop létrehozását és jel
     > [!TIP]
     > A szintaktikai hibákat leggyakrabban a hiányzó vagy máshová írt záró zárójelek okozzák, bár egyes esetekben a Power BI Desktop automatikusan hozzáadja.
     
-4. Az új értékekben kötőjelekkel és szóközökkel kellene elválasztani a ProductCategories és a ProductSubcategories elemeket, ezért az első kifejezés záró zárójele után írja be a következőket: szóköz, „és”-jel (**&**), idézőjel (**"**), szóköz, kötőjel (**-**), szóköz, idézőjel, „és”-jel. A képletnek most így kell kinéznie:
+4. Az új értékekben kötőjelekkel és szóközökkel kellene elválasztani a ProductCategories és a ProductSubcategories elemeket, ezért az első kifejezés záró zárójele után írja be a következőket: szóköz, „és”-jel ( **&** ), idézőjel ( **"** ), szóköz, kötőjel ( **-** ), szóköz, idézőjel, „és”-jel. A képletnek most így kell kinéznie:
     
     `ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &`
     
     > [!TIP]
     > Ha több helyre van szüksége, válassza a lefelé mutató sávnyilat a szerkesztőléc jobb oldalán a képletszerkesztő kibontásához. A szerkesztőben nyomja le az **Alt + Enter** billentyűkombinációt, hogy lejjebb menjen egy sorral, és a **Tab** billentyűt az elmozgatáshoz.
     
-5.  Írjon be egy nyitó szögletes zárójelet (**[**), majd válassza a **[ProductSubcategory]** oszlopot a képlet befejezéséhez. 
+5.  Írjon be egy nyitó szögletes zárójelet ( **[** ), majd válassza a **[ProductSubcategory]** oszlopot a képlet befejezéséhez. 
     
     ![Válassza a ProductSubcategory elemet](media/desktop-tutorial-create-calculated-columns/create6.png)
     
@@ -106,15 +106,15 @@ Szerencsére az Üzletek táblának van egy **Állapot** nevű oszlopa, amelyben
     
     ![Válassza ki az IF függvényt](media/desktop-tutorial-create-calculated-columns/if1.png)
     
-3.  Az IF függvény első argumentuma annak logikai ellenőrzése, hogy az adott üzlet Állapot értéke „On”-e. Írjon be egy nyitó szögletes zárójelet **[**, am oszlopokat listáz a Stores táblából, majd válassza a **[Status]** elemet.
+3.  Az IF függvény első argumentuma annak logikai ellenőrzése, hogy az adott üzlet Állapot értéke „On”-e. Írjon be egy nyitó szögletes zárójelet **[** , am oszlopokat listáz a Stores táblából, majd válassza a **[Status]** elemet.
     
     ![Válassza a Status elemet](media/desktop-tutorial-create-calculated-columns/if2.png)
     
-4.  Közvetlenül a **[Status]** után írja be a következőt: **= "On"**, majd írjon be egy vesszőt (**,**) az argumentum befejezéséhez. Az eszköztipp azt javasolja, hogy most adja meg a kiadandó értéket arra az esetre, ha az eredmény TRUE (igaz).
+4.  Közvetlenül a **[Status]** után írja be a következőt: **= "On"** , majd írjon be egy vesszőt ( **,** ) az argumentum befejezéséhez. Az eszköztipp azt javasolja, hogy most adja meg a kiadandó értéket arra az esetre, ha az eredmény TRUE (igaz).
     
     ![TRUE érték hozzáadása](media/desktop-tutorial-create-calculated-columns/if3.png)
     
-5.  Ha az üzlet Állapot értéke „On”, akkor meg kell jeleníteni az üzlet nevét. Írjon be egy nyitó szögletes zárójelet **[**, és válassza ki a **[StoreName]** oszlopot, majd írjon be egy újabb vesszőt. Az eszköztipp most azt jelzi, hogy adja meg a kiadandó értéket arra az esetre, ha az eredmény FALSE (hamis). 
+5.  Ha az üzlet Állapot értéke „On”, akkor meg kell jeleníteni az üzlet nevét. Írjon be egy nyitó szögletes zárójelet **[** , és válassza ki a **[StoreName]** oszlopot, majd írjon be egy újabb vesszőt. Az eszköztipp most azt jelzi, hogy adja meg a kiadandó értéket arra az esetre, ha az eredmény FALSE (hamis). 
     
     ![HAMIS érték hozzáadása](media/desktop-tutorial-create-calculated-columns/if4.png)
     

@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 5afb79f52c4717887ba16d9ca43f913ba3446627
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008373"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61178356"
 ---
 # <a name="connect-to-at-internet-bridge-with-power-bi"></a>Csatlakozás az AT Internet Bridge-hez Power BI-jal
 Az AT Internet digitális analitikus platformját, az Analytics Suite-ot használva azonnal értékes információkhoz juthat adataiból. A Power BI-hoz készített AT Internet Bridge tartalomcsomag webhelyéhez használható adatlátogatásokat, forrásokat, honosításokat és eszközöket tartalmaz.

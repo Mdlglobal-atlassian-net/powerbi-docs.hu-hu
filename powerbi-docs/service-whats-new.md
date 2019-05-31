@@ -7,16 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 2/9/2019
+ms.date: 05/28/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b65acda3ceb8d375cb34393828b74e191b2e5504
-ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
-ms.translationtype: HT
+ms.openlocfilehash: 06ba5835a568b7158a204ea6676e92844d40414d
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58489591"
----
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375267"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
 Ezen az oldalon a **Power BI szolgáltatás** ismert problémáit és új funkcióit ismertetjük. Az újdonságokra vonatkozó kapcsolódó információk:
@@ -31,16 +30,32 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-
-## <a name="march-2019"></a>2019. március
-* A Power BI Premium Multi-Geo szolgáltatásának általános elérhetősége.
-* Power BI-tartalom támogatásának szerkesztése és kezelése az Azure B2B-hez.
+## <a name="may-2019"></a>2019. május
+* [Egyéni navigációs](service-create-distribute-apps.md) Power BI-alkalmazások számára.
+* További mellékletek típusok (PPTX, XLSX, DOCX, CSV, XML) e-mail subcriptions többoldalas jelentésekben érhető el.
 
 ## <a name="previous-months-2019"></a>Korábbi hónapok (2019)
+### <a name="april-2019"></a>Április 2019
+* A Power BI általános elérhetőségét [adatfolyamok](service-dataflows-overview.md).
+* Az új munkaterületek felület általános elérhetőségét.
+* Új Power BI-Franciaországban és koreai régió.
+* Frissített Q & A élmény az irányítópultok.
+* Támogatás az Azure Analysis Services belül [oldalakra osztott jelentések](paginated-reports-report-builder-power-bi.md).
+* Többoldalas jelentéseket a Power BI-alkalmazások támogatott.
+* [E-mail előfizetések](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) többoldalas jelentéseket PDF mellékletekkel rendelkező.
+* A Power BI Premium támogatja a felügyeleti portálon összegzése és a számítási feladatok metrikák
+* [Lekérdezés gyorsítótárazás](power-bi-query-caching.md) Power BI Premium szolgáltatásban érhető el.
+* Általános elérhetőségét [Power BI kezdőlap](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
+
+### <a name="march-2019"></a>2019. március
+* A Power BI Premium Multi-Geo szolgáltatásának általános elérhetősége.
+* Power BI-tartalom támogatásának szerkesztése és kezelése az Azure B2B-hez.
+* Nyilvános előzetes verziója csak olvasható [XMLA-végpontja](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
+
 ### <a name="february-2019"></a>2019. február
 * Számítási feladatok és aktív adatkészlet mérete metrika a [kapacitásfigyelő alkalmazásban](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 * Power BI-jelentések exportálása PDF-fájlba.
-* [Igény szerinti e-mail-feliratkozások](service-report-subscribe.md).
+* [Igény szerinti e-mail előfizetések](service-report-subscribe.md).
 * Tömeges műveletek a felügyeleti portálon.
 * PPT-k és PDF-ek szűrt exportálása.
 * [Súgó- és támogatási beállítások](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) a felügyeleti portálon.
@@ -72,8 +87,8 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 
 ### <a name="september-2018"></a>2018. szeptember
 * [Megjegyzések írása irányítópultokon](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) a Power BI szolgáltatásban.
-* A [Power BI kezdőlap és a globális keresés](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/) nyilvános előzetes verziója.
-* A [lekérdezések monitorozásának](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) lehetősége a [kapacitásfigyelő alkalmazásban](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Nyilvános előzetes verziója [kezdőlap Power BI és a globális keresés](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
+* Lehetővé teszi [lekérdezések figyelése](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) a a [kapacitás Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### <a name="august-2018"></a>2018. augusztus
 * [Kapacitásmonitorozó alkalmazás](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) a Power BI Premiumhoz.
@@ -194,7 +209,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * A [Jira projektkezelési adatainak](https://powerbi.microsoft.com/blog/explore-your-jira-data-with-power-bi/) feltárása egy Power BI-tartalomcsomaggal.
 * A [Insightcentr adatainak](https://powerbi.microsoft.com/blog/explore-your-insightcentr-data-with-power-bi/) feltárása egy Power BI-tartalomcsomaggal.
 * Infografikák gyors létrehozása az [infografikatervező egyéni vizualizációval](https://powerbi.microsoft.com/blog/quickly-create-infographics-with-the-infographic-designer-custom-visual-for-power-bi/).
-* Privát előzetes verzió: Streamelési csempék létrehozásához használható Power BI-streamelési adatkészletek készítése az [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) szolgáltatással.
+* Előzetes verzió: Streamelési csempék létrehozásához használható Power BI-streamelési adatkészletek készítése az [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) szolgáltatással.
 * Előzetes verzió: [ESRI ArcGIS Maps vizualizációk](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) hozzáadása a jelentésekhez és az irányítópultokhoz.
 
 ### <a name="october-2016"></a>2016. október
@@ -222,7 +237,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 A részletekről a [Power BI-csapat blogján](https://powerbi.microsoft.com/blog/power-bi-july-update-for-service-and-mobile/) olvashat.
 
 ### <a name="june-2016"></a>2016. június
-***Gyors elemzések***
+***Quick Insights (Gyors elemzések)***
 
 * A gyors elemzések működnek az összetett szűrőkkel: Boldogan jelenthetjük, hogy az egyetlen csempére alkalmazott gyors elemzések mostantól megértik az összetett szűrőket.
 
@@ -333,9 +348,9 @@ Ebben a hónapban frissítettük az irányítópultokat, a gyors elemzéseket é
 * Teljes képernyős mód: A **Szélességhez igazítás** funkcióval kibonthatja a csempéket, így azok kitöltik a teljes vásznat, és kevesebb üres területet hagynak.
 * A mozaikfolyammal automatikusan a vászon bal felső sarkához igazíthatja a csempéket.
 
-***Gyors elemzések***
+***Quick Insights (Gyors elemzések)***
 
-* A trendekkel és korrelációkkal kapcsolatos elemzések mostantól trendvonalakkal emelik ki az adatokban megjelenő mintákat.
+* A Trend és korrelációs insights most már trendvonalak könnyebb adatok megtekintéséhez.
 
 ***Q&A***
 
@@ -487,7 +502,7 @@ Részletes információkat, többek között egy, a frissítéseket ismertető v
 * [VMob-adatok megjelenítése a Power BI-ban](http://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
 * [Power BI-integráció a Cortanával](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [A Vállalati Power BI Gateway előzetes verziója](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
-* Új tartalomcsomag: [A Bing keresési elemzései a Power BI-irányítópultokon](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
+* Egy új tartalomcsomag bemutatása: [A Bing keresési elemzései a Power BI-irányítópultokon](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
 * Új fejlesztőközpontú fejlesztések: [Két új API és könnyebb alkalmazásregisztráció](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
 
 **2015. november 24.**
@@ -498,7 +513,7 @@ Részletes információkat, többek között egy, a frissítéseket ismertető v
 * A helyszíni jelentések betöltésének javítása
 * Irányítópultok megosztása közvetlenül egy másik felhasználó munkaterületén
 * Továbbfejlesztett Google Analytics-összekötős funkciók
-* A Power BI-fiók lezárása
+* Zárja be a Power BI-fiók
 
 A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-weekly-service-update-1124.aspx).
 
@@ -699,7 +714,7 @@ További információt a [blogunkban](http://blogs.msdn.com/b/powerbi/archive/20
 
 **2015. április 15.**
 
-* Mostantól az új tartalomcsomagunkkal megjelenítheti és feltárhatja a **Google Analytics-adatait**. A Google Analytics tartalomcsomag egy irányítópultot, egy jelentést és egy adatkészletet tartalmaz, amelyekkel az utóbbi 6 hónap webhelyhasználati adatait elemezheti. További információt ebben a [blogbejegyzésben](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx) és a [dokumentációban](service-connect-to-google-analytics.md) találhat.
+* Mostantól az új tartalomcsomagunkkal megjelenítheti és feltárhatja a **Google Analytics-adatait**. A Google Analytics tartalomcsomag egy irányítópultot, egy jelentést és egy adatkészletet tartalmaz, amelyekkel az utóbbi 6 hónap webhelyhasználati adatait elemezheti. Tudjon meg [foglalkozó blogbejegyzést](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
 * Mostantól **minden kártyát rögzíthet**, kivéve a KPI-ket és a Q&A-jelentések képeit tartalmazó kártyákat.
 * Mostantól a lekérdezés végére helyezett „as card” kifejezéssel **használhat kártyákat a Q&A-ben**.
 

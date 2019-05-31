@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 04/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9a0e87eca537fc8c22dffaad6a725dc949b2b121
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 02beb69148c347847f346c170651ef31ddd1e786
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275571"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60987919"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Kapcsolódás a Power BI szolgáltatásban lévő adatkészletekhez a Power BI Desktopból
 Létrehozhat élő kapcsolatot a Power BI szolgáltatás egy megosztott adatkészletével, és számos különböző jelentést hozhat létre ugyanabból az adatkészletből. Ez azt jelenti, hogy létrehozhatja a tökéletes adatmodellt a Power BI Desktopban, közzéteheti azt a Power BI szolgáltatásban, majd mások létrehozhatnak több különböző jelentést (külön .pbix fájlokban) a közös adatmodellből. Ennek a szolgáltatásnak **Élő kapcsolat Power BI szolgáltatással** a neve.
@@ -77,9 +77,8 @@ Ha kész, a **Power BI Desktop** tájékoztatja a sikerről, és biztosítja a h
 Ezután nézzük meg, hogyan csatlakozhatnak az adatkészlethez, majd hozhatják létre a saját jelentéseiket a csapattársak, akiknek hozzáférésük van a munkaterülethez, ahol a jelentés (és az adatkészlet) közzé lett téve.
 
 ### <a name="establish-a-power-bi-service-live-connection-to-the-published-dataset"></a>Az Élő kapcsolat Power BI-szolgáltatással létrehozása a közzétett adatkészlethez
-Ha csatlakozni szeretne a közzétett jelentéshez, és létre szeretné hozni a saját jelentését a közzétett adatkészlet alapján, válassza az **Adatok lekérése** lehetőséget a **Power BI Desktop** **Kezdőlap** menüszalagján, és válassza a **Power BI szolgáltatás** lehetőséget. Ezt elérheti az a következőképp is: **Adatok lekérése > Online szolgáltatások > Power BI szolgáltatás**.
+A közzétett jelentés egy kapcsolatot, és hozhat létre a saját jelentését a közzétett adatkészlet alapján, válassza ki a **adatok lekérése** származó a **kezdőlap** menüszalagján **Power BI Desktop** , válassza ki **Power BI** a bal oldali panelen, és válassza ki a **Power BI-adatkészletek**.
 
-![](media/desktop-report-lifecycle-datasets/report-lifecycle_08.png)
 
 Ha még nem jelentkezett be a Power BI-ba, a rendszer felkéri erre. Ha már bejelentkezett, megjelenik egy ablak, amely mutatja, melyik munkaterületeken tag. Innen kiválaszthatja, melyik munkaterület tartalmazza az adatkészletet, amelyhez létre szeretné hozni az **Élő kapcsolat Power BI-szolgáltatással** kapcsolatot.
 

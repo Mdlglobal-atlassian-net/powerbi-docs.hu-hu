@@ -1,21 +1,21 @@
 ---
 title: Munkaterület adatfolyam-beállításainak konfigurálása
-description: Alkalmazás-munkaterület konfigurálása a Power BI-ban adatfolyam-definíciók és adatfájlok Azure Data Lake Storage Gen2-beli tárolására
+description: A Power bi-ban tárolja a az adatfolyam definíciójának és az adatfájlokat az Azure Data Lake Storage Gen2 egy alkalmazás-munkaterület konfigurálása
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8c17a7b4ad455077d383eaff9b35a5d1004fce11
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.openlocfilehash: 52ef3f57276e7f7560b9d7df7bc1be465d842eb3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223628"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61168554"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Munkaterület adatfolyam-beállításainak konfigurálása (előzetes verzió)
 
@@ -53,14 +53,11 @@ Ezután bontsa ki az **Alkalmazás-munkaterület létrehozása** párbeszédpane
 
 Az új munkaterület létrehozásához válassza a **Mentés** lehetőséget. Az ezen a munkaterületen létrehozott új adatfolyamok már a vállalati Azure Data Lake Storage Gen2-fiókban fogják tárolni definíciós fájljukat (a Model.json fájlt) és adataikat. 
 
-> [!NOTE]
-> Az adatfolyamok előzetes verzióban állnak rendelkezésre, és az általánosan elérhetővé válás előtt módosulhatnak és frissülhetnek.
-
 ## <a name="update-dataflow-storage-for-an-existing-workspace"></a>Adatfolyam-tárolás frissítése meglévő munkaterület esetén
 
 Új munkaterület létrehozása helyett egy meglévőt is frissíthet úgy, hogy a definíciós fájlokat és az adatokat a vállalat Azure Data Lake Storage Gen2-fiókjában tárolja. Fontos tudnivaló, hogy az adatfolyam-tárolási beállítások csak akkor módosíthatók, ha a munkaterület nem tartalmaz adatfolyamot.
 
-Alkalmazás-munkaterület szerkesztéséhez válassza a három pont **(...)**, majd a **Munkaterület szerkesztése** lehetőséget. 
+Alkalmazás-munkaterület szerkesztéséhez válassza a három pont **(...)** , majd a **Munkaterület szerkesztése** lehetőséget. 
 
 ![Munkaterület szerkesztése](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_05.jpg)
 
@@ -75,7 +72,7 @@ Ezután válassza a **Mentés** lehetőséget, és az ezen a munkaterületen lé
 
 Miután létrehozott egy adatfolyamot egy, a vállalata Azure Data Lake-fiókjához rendelt munkaterületen, közvetlenül is elérheti annak definíciós és adatfájljait. A helyük az **Adatfolyam beállításai** oldalon látható. Ide a következő lépésekkel juthat el:
 
-Válassza a munkaterületen az **Adatfolyamok** alatti listában szereplő adatfolyamok egyike melletti három pontot **(...)**. A megjelenő menüben válassza a **Beállítások** lehetőséget.
+Válassza a munkaterületen az **Adatfolyamok** alatti listában szereplő adatfolyamok egyike melletti három pontot **(...)** . A megjelenő menüben válassza a **Beállítások** lehetőséget.
 
 ![Adatfolyamfájlok URI-jának megállapítása](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_07.jpg)
 

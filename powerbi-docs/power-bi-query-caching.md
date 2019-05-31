@@ -7,15 +7,15 @@ ms.reviewer: bhmerc
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/03/2019
+ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: ''
-ms.openlocfilehash: fbfd8c98743144e0c9604aca4174d6ef32916e77
-ms.sourcegitcommit: de0b72915183a8a784d3227838bd704c1c209422
-ms.translationtype: HT
+ms.openlocfilehash: c981a3e2a05129a470c8d26675226bfb42c1bb68
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58914276"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64769530"
 ---
 # <a name="query-caching-in-power-bi-premium"></a>Lekérdezések gyorsítótárazása a Power BI Premiumban
 
@@ -26,9 +26,7 @@ A Power BI Premiummal rendelkező cégek kihasználhatják a *lekérdezések gyo
 
 A gyorsítótárazott lekérdezéseredmények adott felhasználói és adatkészlet-kontextusokra vonatkoznak, és mindig megfelelnek a biztonsági szabályoknak is. A szolgáltatás jelenleg csak a kezdőlaphoz végez lekérdezési gyorsítótárazást. Ez azt jelenti, hogy a jelentés használata közben a lekérdezések nem lesznek gyorsítótárazva. A gyorsítótár figyelembe veszi a személyes könyvjelzőket és az állandó szűrőket is. A lekérdezés gyorsítótárazásánál az ugyanazokat a lekérdezések használó [irányítópult-csempék](service-dashboard-tiles.md) is használhatják a gyorsítótárat. A teljesítményt ez leginkább akkor növeli, ha egy adatkészletet gyakran kell elérni, és ha azt nem kell gyakran frissíteni. A lekérdezés gyorsítótárazása a prémium szintű kapacitásra háruló terhelést is csökkentheti, mivel csökkenti a lekérdezések teljes számát.
 
-A lekérdezések gyorsítótárazásának szabályozását a Power BI szolgáltatásban az adott adatkészlet **Beállítások** lapján végezheti el. Három beállítást tartalmaz:
-
-- **Alapértelmezett kapacitás**: Az adatkészlet a prémium szintű kapacitásból örökli a beállítást. Az alapértelmezett kapacitást a Power BI Premium kapacitásadminisztrátora vezérli.
+A lekérdezések gyorsítótárazásának szabályozását a Power BI szolgáltatásban az adott adatkészlet **Beállítások** lapján végezheti el. Rendelkezik két lehetséges beállítások:
 
 - **Ki**: Ne használjon lekérdezési gyorsítótárazást ehhez az adatkészlethez.
 

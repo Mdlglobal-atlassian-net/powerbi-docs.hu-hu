@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: fc403220ae45fda879802fe480853a3c94fd53c0
-ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
-ms.translationtype: HT
+ms.openlocfilehash: ccd8569650bd4f3da1a05c0999ad510029e5ab49
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58220954"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61138219"
 ---
-# <a name="using-computed-entities-on-power-bi-premium-preview"></a>Számított entitások használata a Power BI Premiumban (előzetes verzió)
+# <a name="using-computed-entities-on-power-bi-premium"></a>Számított entitások használata a Power BI Premiumban
 
 Ha Power BI Premium-előfizetéssel használ **adatfolyamokat**, **tárolón belüli számításokat** hajthat végre. Ezáltal meglévő adatfolyamain végezhet számításokat, az általuk visszaadott eredmények pedig lehetővé teszik, hogy Ön a jelentéskészítésre és az elemzésekre összpontosítson. 
 
@@ -31,10 +31,6 @@ Adatfolyambeli adatokat két módon csatlakoztathat a Power BI-hoz:
 * Külső adatfolyam használatával
 
 A következő szakaszok számított entitások adatfolyambeli adatok alapján történő létrehozását ismertetik.
-
-> [!NOTE]
-> Az adatfolyamok előzetes verzióban állnak rendelkezésre, és az általánosan elérhetővé válás előtt módosulhatnak és frissülhetnek.
-
 
 ## <a name="how-to-create-computed-entities"></a>Számított entitások létrehozása 
 
@@ -89,8 +85,8 @@ Ez a cikk a Power BI szolgáltatásban elérhető számított entitásokat és a
 
 * [Önkiszolgáló adatelőkészítés adatfolyamokkal](service-dataflows-overview.md)
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
-* [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
-* [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
+* [Adatfolyamok használata a helyszíni adatforrások](service-dataflows-on-premises-gateways.md)
+* [Fejlesztői erőforrások a Power BI-adatfolyamok](service-dataflows-developer-resources.md)
 * [Munkaterület adatfolyam-beállításainak konfigurálása (előzetes verzió)](service-dataflows-configure-workspace-storage-settings.md)
 * [CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)](service-dataflows-add-cdm-folder.md)
 * [Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)](service-dataflows-connect-azure-data-lake-storage-gen2.md)

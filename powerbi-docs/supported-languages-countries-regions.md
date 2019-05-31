@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: a593a918c59452c922f6061189ad6c2885478aad
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 02fbe26fc4d0c8be0439ca656151ef7712d201b6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174867"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61399098"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>A Power BI által támogatott nyelvek és országok/régiók
 
-A cikkben a Power BI szolgáltatás, a Power BI Desktop és a Power BI dokumentációja által támogatott nyelvek és országok/régiók listája érhető el.
+Ez a cikk felsorolja a támogatott nyelvek és országok/régiók a Power BI szolgáltatásban, a Power BI Desktop és a Power BI dokumentációjában.
 
 ## <a name="countries-and-regions-where-power-bi-is-available"></a>Országok és régiók, ahol a Power BI elérhető
 Azon országok és régiók listáját, ahol a Power BI elérhető, a [Nemzetközi elérhetőség](https://products.office.com/business/international-availability) oldalon találja meg. 
@@ -73,11 +73,11 @@ A Power BI szolgáltatás (a böngészőben) a következő 44 nyelven érhető e
 * Vietnami – Tiếng Việt
 
 ### <a name="whats-translated"></a>Lefordított elemek
-A menük, gombok és a kezelőfelület más elemei le vannak fordítva az Ön nyelvére, megkönnyítve a Power BI kezelését és használatát.
+A Power BI lefordítja a menük, gombok, üzeneteket és más elemek a tapasztalattal az Ön nyelvére.
 
 Néhány funkció jelenleg csak angol nyelven érhető el:
 
-* Irányítópultok és jelentések, amelyeket a Power BI hoz létre olyan szolgáltatásokhoz való kapcsolódáskor, mint a Microsoft Dynamics CRM, Google Analytics, Salesforce és mások. (Ettől függetlenül Ön létrehozhat saját irányítópultokat és jelentéseket a saját nyelvén.)
+* Irányítópultok és jelentések Power BI által létrehozott szolgáltatások, mint a Microsoft Dynamics CRM, a Google Analytics és a Salesforce-hoz való csatlakozáskor. Létrehozhat saját irányítópultokat és jelentéseket a saját nyelvén.
 * Adatok vizsgálata a Q&A-val.
 
 Figyelje az értesítéseket, mert dolgozunk további funkciók más nyelvekre való átültetésén. 
@@ -142,7 +142,7 @@ A Power BI Desktophoz megadott nyelv befolyásolja a számok és dátumok megjel
 A Power BI Desktop nyelvének megváltoztatásához térjen vissza a letöltési oldalra és töltse le másik nyelven.
 
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Az adatok a Power BI Desktopba való importálásához használni kívánt területi beállítás megadása
-Akár letölti, akár a Windows Áruházból telepíti a Power BI Desktopot, egy adott jelentéshez a saját Power BI Desktop-verziójáétól eltérő területi beállításokat is megadhat. Ez határozza meg az adatforrásból importált adatok értelmezését, például hogy a "3/4/2017" dátum április 3-a vagy március 4-e. 
+Akár letölti, akár a Windows Áruházból telepíti a Power BI Desktopot, egy adott jelentéshez a saját Power BI Desktop-verziójáétól eltérő területi beállításokat is megadhat. A területi beállítás változások, az adatok megjelenítésének értelmezi az adatok importálásakor a forrás, például hogy "3/4/2017" értékként értelmezi április 3 vagy március 4. 
 
 1. A Power BI Desktopban lépjen a **Fájl** > **Lehetőségek és beállítások** > **Beállítások** területre.
 2. A **Aktuális fájl** alatt válassza a **Területi beállítások** lehetőséget.
@@ -193,5 +193,5 @@ A súgó a következő 10 nyelven van honosítva:
 ## <a name="next-steps"></a>További lépések
 * A Power BI-mobilalkalmazások egyikét használja? Ismerkedjen meg a [Támogatott nyelvek a Power BI-mobilalkalmazásokban](consumer/mobile/mobile-apps-supported-languages.md) című cikk tartalmával.
 * Kérdése van? Kérdezze meg [a Power BI közösségét](http://community.powerbi.com/).
-* Továbbra is problémába ütközik? Látogasson el a [Power BI támogatási oldalára](https://powerbi.microsoft.com/support/).
+* Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).
 

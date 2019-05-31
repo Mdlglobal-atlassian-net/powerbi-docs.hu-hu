@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa891e06c83a21ac8fea299f068e3b95ad019062
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61265103"
+---
 Üdvözli a Power BI **Interaktív tanulás** oktatóanyagának második, **Adatok beolvasása** című szakasza. Ez a szakasz a Power BI számos adatközpontú funkcióját és eszközét mutatja be a Power BI Desktop alkalmazásra koncentrálva. Számos eszköz vonatkozik a Power BI szolgáltatásra is, így duplán hatékony munkát végez ennek a szakasznak az elsajátításával.
 
 A kapott adatok nem feltétlenül felelnek meg az elvárt formátumnak vagy *tisztaságnak*. Ebben a szakaszban megismerheti az adatok beolvasását és tisztítását (ez a fogalom néha *tisztításként* vagy *adatátalakításként* ismert), valamint olyan speciális trükköket sajátíthat el, amelyekkel egyszerűsítheti az adatok beolvasását.

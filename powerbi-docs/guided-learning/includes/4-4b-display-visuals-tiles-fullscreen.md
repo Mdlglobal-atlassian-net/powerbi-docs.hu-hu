@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8d44e24e1f81ab03e85438ef8e5505c308b01e1d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263787"
+---
 Amikor irányítópultokat vagy jelentéseket tekint meg a Power BI szolgáltatásban, időnként hasznos lehet, hogy egyetlen diagramra vagy vizuális elemre tudjon fókuszálni. Ezt két különböző módon is megteheti.
 
 Ha irányítópultot tekint meg, mutasson az egérrel az egyik csempére, hogy a kezelési lehetőségek ikonjai megjelenjenek a jobb felső sarokban. Ha kiválasztja a három ponttal jelölt ikont, megjelennek az adott csempe beállítási lehetőségeit reprezentáló további ikonok.

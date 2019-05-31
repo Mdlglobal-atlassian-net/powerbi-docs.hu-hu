@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b7f2dbd4fa58e86598c0258c432d31cf2f775ecf
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260440"
+---
 Vegyük át röviden az első szakaszban tárgyalt témaköröket.
 
 A **Power BI** szoftveres szolgáltatások, alkalmazások és összekötők gyűjteménye, amelyek egymással együttműködve az adatokat interaktív elemzésekké alakítják. Az adatok származhatnak egyetlen egyszerű forrásból, mint például egy Excel-munkafüzet, de több adatbázisból és felhőbeli forrásból származó adatokból is létrehozhatók összetett adatkészletek és jelentések. A Power BI lehet olyan egyszerű, amilyennek Ön szeretné, vagy éppen nagyvállalati használatra kész, az összetett globális üzleti igényeknek megfelelően.

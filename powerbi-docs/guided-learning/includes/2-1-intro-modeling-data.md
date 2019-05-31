@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a98c06ac1e164328a9a88081e2b4b734b4d62ef1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255667"
+---
 Üdvözöljük a Power BI **Interaktív tanulás** oktatóanyagának **Modellezés** szakaszában. Ebben a szakaszban megtudhatja, hogyan készítheti elő használatra a csatlakoztatott adatokat a Power BI Desktop segítségével. Jelentések létrehozásához gyakran több adatforráshoz is kapcsolódni szükséges, és az is elengedhetetlen, hogy minden adat összehangolt együttműködésre legyen képes. A modellezés éppen ezt a célt szolgálja.
 
 **Kapcsolat** létrehozásával a különböző adatforrások közötti logikai kapcsolatot állíthat fel. Az adatforrások közötti kapcsolat teszi lehetővé a Power BI számára, hogy felismerje a táblák közötti kapcsolatokat, és ezt felhasználva látványos vizualizációs elemeket és jelentéseket lehet létrehozni vele. Ez a szakasz a *kapcsolatokat* mutatja be (itt kizárólag az adatközpontú kapcsolatokról lesz szó), sőt azt is érinti, hogyan lehet kapcsolatokat létrehozni, ha még egy sem létezik belőlük.

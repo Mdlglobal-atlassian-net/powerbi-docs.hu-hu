@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d600581b9d1df8c8436da45e9629fccb79873c21
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260479"
+---
 Ahogy megtudtuk, a Power BI-ban való munka leggyakoribb folyamata az, hogy létrehozunk egy jelentést a Power BI Desktop alkalmazásban, közzétesszük azt a Power BI szolgáltatásba, majd megosztjuk másokkal, hogy megtekinthessék a szolgáltatáson vagy a mobilalkalmazáson keresztül.
 
 Vannak, akik először a Power BI szolgáltatással kezdenek, ezért röviden bemutatjuk a szolgáltatást, illetve a Power BI-vizualizációk létrehozásának egy egyszerű és közkedvelt módját: a *tartalomcsomagokat*.

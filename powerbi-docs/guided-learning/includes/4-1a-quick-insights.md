@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d6424f63d992eaa7c8a4a8a5f76765b6aeb6104d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263838"
+---
 Ha a Power BI szolgáltatásban egy irányítópulttal, jelentéssel vagy adatkészlettel dolgozik, akkor lekérheti a Power BI-tól az adatok gyors elemzéseit. A Power BI szolgáltatásban bal oldalon az **Adatkészletek** részen válassza a *...* (három pont) lehetőséget az elemezni kívánt adatkészlet mellett. Ekkor megjelenik egy menü, amelynek a jobb szélén lesz egy **Gyors elemzések lekérése** nevű lehetőség.
 
 ![](media/4-1a-quick-insights/4-1a_1.png)

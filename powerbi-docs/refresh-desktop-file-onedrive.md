@@ -1,22 +1,22 @@
 ---
 title: Adathalmaz frissítése a OneDrive-ról vagy a SharePoint Online-ból
 description: Power BI Desktop-fájlból létrehozott adatkészlet frissítése a OneDrive vagy a SharePoint Online szolgáltatásban
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 112/06/2018
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 4a1ffa112420fd061655747c0d86760626705145
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 4120240b0f4de530bc62587f91bfe1fd4ff7d3df
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285415"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60973866"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>A OneDrive vagy a SharePoint Online szolgáltatásban tárolt adatkészletek frissítése
 A fájlok importálása a OneDrive vagy a SharePoint Online szolgáltatásból a Power BI szolgáltatásba nagyszerű mód arra, hogy biztosítsa, hogy a **Power BI Desktopban** végzett munkája szinkronban maradjon a Power BI szolgáltatással.

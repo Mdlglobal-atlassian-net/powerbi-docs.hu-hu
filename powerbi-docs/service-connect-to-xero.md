@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: d09936f2cce1d7835efdb82929d9e8eed2291163
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223352"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61156317"
 ---
 # <a name="connect-to-xero-with-power-bi"></a>Csatlakozás a Xerohoz a Power BI szolgáltatással
 A Xero egy egyszerűen használható online számviteli program, amelyet kifejezetten kisvállalkozások számára terveztek. Ezzel a Power BI-tartalomcsomaggal lenyűgöző vizualizációkat készíthet a Xero pénzügyi adatai alapján. Az alapértelmezett irányítópulton számos kisvállalati mérőszám található, többek között a likviditás, a bevétel és kiadások, az eredménytrend, a kintlévőség-behajtási arányszám és a megtérülés.

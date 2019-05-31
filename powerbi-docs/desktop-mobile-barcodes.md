@@ -2,21 +2,22 @@
 title: Vonalkód mező címkézése mobilalkalmazásokhoz a Power BI Desktopban
 description: Ha felcímkéz egy vonalkódmezőt a modellben a Power BI Desktopban, automatikusan szűrheti az adatokat vonalkód szerint az iPhone-ja Power BI alkalmazásában.
 author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/16/2018
-ms.author: maggies
 LocalizationGroup: Model your data
-ms.openlocfilehash: 584947dcd92078ea025468f5a38fc7fed3e2616a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 43d722e6667114ce5c3705270a0b55b541685108
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289900"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61293586"
 ---
 # <a name="tag-barcodes-in-power-bi-desktop-for-the-mobile-apps"></a>Vonalkódok címkézése mobilalkalmazásokhoz a Power BI Desktopban
+
 A Power BI Desktopban [kategorizálhatja](desktop-data-categorization.md) egy oszlop adatait, így a Power BI Desktop tudja, hogyan kezelje az értékeket egy jelentésben a vizualizációkban. Kategorizálhat egy oszlopot is **Vonalkódként**. Ha akár Ön, akár a kollégái [beolvassák egy termék vonalkódját a Power BI alkalmazással](consumer/mobile/mobile-apps-scan-barcode-iphone.md) egy iPhone-on, megjelenik az összes, az adott vonalkódot tartalmazó jelentés. Amikor megnyitja a jelentést a mobilalkalmazásban, a Power BI automatikusan szűri a jelentést az adott vonalkódhoz kapcsolódó adatokra.
 
 1. A Power BI Desktopban váltson Adatnézetre.

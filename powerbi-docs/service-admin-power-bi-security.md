@@ -11,21 +11,21 @@ ms.topic: conceptual
 ms.date: 03/11/2019
 LocalizationGroup: Administration
 ms.openlocfilehash: b70d23d7f4f5dfab9273319ad890a21c9b74ead2
-ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58430369"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61187382"
 ---
 # <a name="power-bi-security"></a>A Power BI és a biztonság
 
 A Power BI biztonságáról részletes leírásért [olvassa el a Power BI-jal és a biztonsággal kapcsolatos tanulmányt](whitepaper-powerbi-security.md).
 
-A Power BI szolgáltatás az **Azure**-ra épül, amely a Microsoft felhőalapú számítástechnikai infrastruktúrája és platformja. A Power BI szolgáltatás architektúrája két fürtön alapul – a webes előtérrendszer (**WFE-**) fürtön és a **háttérbeli** fürtön. A WFE-fürt kezeli a kezdeti kapcsolódást és a Power BI szolgáltatás hitelesítését, a hitelesítés után a háttérbeli fürt kezeli az összes további felhasználói interakciót. A Power BI az Azure Active Directory (AAD) használatával tárolja és kezeli a felhasználói identitásokat, valamint kezeli az adatoknak és metaadatoknak az Azure BLOB és az Azure SQL Database használatával történő tárolását.
+A Power BI szolgáltatás az **Azure**-ra épül, amely a Microsoft felhőalapú számítástechnikai infrastruktúrája és platformja. A Power BI szolgáltatás architektúrája két fürtön alapul – a webes előtérrendszer (**WFE-** ) fürtön és a **háttérbeli** fürtön. A WFE-fürt kezeli a kezdeti kapcsolódást és a Power BI szolgáltatás hitelesítését, a hitelesítés után a háttérbeli fürt kezeli az összes további felhasználói interakciót. A Power BI az Azure Active Directory (AAD) használatával tárolja és kezeli a felhasználói identitásokat, valamint kezeli az adatoknak és metaadatoknak az Azure BLOB és az Azure SQL Database használatával történő tárolását.
 
 ## <a name="power-bi-architecture"></a>A Power BI-architektúra
 
-Minden üzemelő Power BI-példány két fürtből áll – egy webes előtérrendszer (**WFE-**) fürtből és egy **háttérbeli** fürtből.
+Minden üzemelő Power BI-példány két fürtből áll – egy webes előtérrendszer (**WFE-** ) fürtből és egy **háttérbeli** fürtből.
 
 A **WFE**-fürt kezeli a kezdeti kapcsolódást és a Power BI hitelesítési folyamatát az AAD-val hitelesítve a felhasználókat, és hozzáférési jogkivonatokat ad ki a Power BI szolgáltatással való további felhasználói kapcsolatokhoz. A Power BI az **Azure Traffic Managert** (ATM) is használja arra, hogy a felhasználói forgalmat – a kapcsolódást megkísérlő ügyfél DNS-rekordja alapján – a legközelebbi adatközponthoz irányítsa a hitelesítési elvégzéséhez és statikus tartalom és fájlok letöltéséhez. A Power BI a szükséges statikus tartalmat és fájlokat az **Azure Content Delivery Network** (CDN) használatával osztja el hatékonyan a felhasználók között a földrajzi helyzet alapján.
 

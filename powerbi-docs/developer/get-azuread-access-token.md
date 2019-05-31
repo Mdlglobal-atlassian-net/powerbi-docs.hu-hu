@@ -1,26 +1,26 @@
 ---
 title: Felhasználók hitelesítése és Azure AD hozzáférési token beszerzése az alkalmazáshoz
 description: Megismerheti, hogyan regisztrálhat egy alkalmazást az Azure Active Directoryban Power BI-tartalmak beágyazásához.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 7b2249964f2fff26bc68fea19fd0010d8990110b
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
-ms.translationtype: HT
+ms.openlocfilehash: a38547807fbbcf3c76366f32caa46945e57ca8bc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762536"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710324"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Azure AD hozzáférési jogkivonat beszerzése a Power BI-alkalmazáshoz
 
 Megtudhatja, hogyan hitelesíthet felhasználókat a Power BI-alkalmazásban, és hogyan kérhet le hozzáférési jogkivonatot a REST API-val való használathoz.
 
-A Power BI REST API hívásához egy Azure Active Directory (Azure AD) **hitelesítési hozzáférési tokenre** (hozzáférési tokenre) van szüksége. A **hozzáférési jogkivonattal** engedélyezhető, hogy az alkalmazás hozzáférjen a **Power BI**-irányítópultokhoz, -csempékhez és -jelentésekhez. Az Azure Active Directory **hozzáférési token** folyamatával kapcsolatos további információkért lásd az [Azure AD hozzáférési kód engedélyezési folyamatával](https://msdn.microsoft.com/library/azure/dn645542.aspx) kapcsolatos cikket.
+A Power BI REST API hívásához egy Azure Active Directory (Azure AD) **hitelesítési hozzáférési tokenre** (hozzáférési tokenre) van szüksége. A **hozzáférési jogkivonattal** engedélyezhető, hogy az alkalmazás hozzáférjen a **Power BI**-irányítópultokhoz, -csempékhez és -jelentésekhez. Az Azure Active Directory **hozzáférési token** folyamatával kapcsolatos további információkért lásd az [Azure AD hozzáférési kód engedélyezési folyamatával](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code) kapcsolatos cikket.
 
 A tartalom beágyazási módjától függően eltérő módon kérhető le a hozzáférési jogkivonat. Ebben a cikkben két különböző megközelítést használunk.
 
@@ -56,7 +56,7 @@ var @params = new NameValueCollection
 
 A lekérdezési sztring összeállítása után átirányítja azt az **Azure AD-be** **hozzáférési kód** lekéréséhez.  Az alábbiakban egy teljes C# metódus látható **hozzáférési kód** lekérdezési sztringjének elkészítésére és az **Azure AD-ba** való átirányítására. Ha megvan a hozzáférési kód, a **hozzáférési kóddal** lekér egy **hozzáférési jogkivonatot**.
 
-A redirect.aspx.cs fájlban az [AuthenticationContext.AcquireTokenByAuthorizationCode](https://msdn.microsoft.com/library/azure/dn479531.aspx) hívás létrehozza a tokent.
+A redirect.aspx.cs fájlban az [AuthenticationContext.AcquireTokenByAuthorizationCode](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) hívás létrehozza a tokent.
 
 #### <a name="get-authorization-code"></a>Hozzáférési kód lekérése
 
@@ -89,7 +89,7 @@ protected void signInButton_Click(object sender, EventArgs e)
 
     //Redirect authority
     //Authority Uri is an Azure resource that takes a client id to get an Access token
-    // AADAuthorityUri = https://login.microsoftonline.net/common/
+    // AADAuthorityUri = https://login.microsoftonline.com/common/
     string authorityUri = Properties.Settings.Default.AADAuthorityUri;
     var authUri = String.Format("{0}?{1}", authorityUri, queryString);
     Response.Redirect(authUri);
@@ -196,6 +196,10 @@ var authenticationContext = new AuthenticationContext(AuthorityUrl);
 
 m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 ```
+
+## <a name="troubleshoot"></a>Hibaelhárítás
+
+* Töltse le [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) tapasztal egy ""AuthenticationContext"neobsahuje definici"AcquireToken"és a nem elérhető"AcquireToken"típus első argumentumának elfogadása" AuthenticationContext "található (hiányzik egy az irányelv vagy postrádáte odkaz nA sestavení?)" hiba történt.
 
 ## <a name="next-steps"></a>Következő lépések
 

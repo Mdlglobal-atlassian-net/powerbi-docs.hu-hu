@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 9a7afafaa14ed890e10e77507aafb637755cd87f
-ms.sourcegitcommit: 06ae54ed221979939699c67d63aeccba8b9dfcda
-ms.translationtype: HT
+ms.openlocfilehash: 6c09392566805f2857c50784f16c0e3f9d4b5697
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57965978"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61232501"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi-preview"></a>Az Azure Machine Learning integrálása a Power BI-jal (Előzetes verzió)
 
@@ -51,7 +51,7 @@ A cikk lépései ismertetik, hogyan adhat hozzáférést egy Power BI-felhaszná
 
     ![Az előfizetés kiválasztása](media/service-machine-learning-integration/machine-learning-integration_02.png)
 
-4. Válassza a **Hozzáférés-vezérlés (IAM)**, majd a **Hozzáadás** lehetőséget.
+4. Válassza a **Hozzáférés-vezérlés (IAM)** , majd a **Hozzáadás** lehetőséget.
 
     ![Hozzáférés-vezérlés AIM](media/service-machine-learning-integration/machine-learning-integration_03.png)
 
@@ -106,9 +106,9 @@ Ez a cikk áttekintést nyújtott a Machine Learning a Power BI szolgáltatásba
 
 Az adatfolyamokkal szolgáltatással kapcsolatban az alábbi cikkeket érdemes elolvasni:
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
-* [Számított entitások használata a Power BI Premiumban (előzetes verzió)](service-dataflows-computed-entities-premium.md)
-* [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
-* [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
+* [A Power BI Premium számított entitások használatával](service-dataflows-computed-entities-premium.md)
+* [Adatfolyamok használata a helyszíni adatforrások](service-dataflows-on-premises-gateways.md)
+* [Fejlesztői erőforrások a Power BI-adatfolyamok](service-dataflows-developer-resources.md)
 * [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md)
 
 

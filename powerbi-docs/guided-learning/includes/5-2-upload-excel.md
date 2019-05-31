@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: cff8e70e43496b264fd0dd549759f939bf90e33f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271385"
+---
 Ez a témakör elsőként azt tárgyalja, hogyan tölthető fel egy egyetlen **táblázatot** tartalmazó Excel-munkafüzetfájl a helyi meghajtóról a Power BI-ba. Ez után megtudhatja, hogyan fedezheti fel a táblázat adatait a Power BI-ban egy jelentést létrehozva.
 
 ## <a name="make-sure-your-data-is-formatted-as-a-table"></a>Az adatok táblázatként legyenek formázva

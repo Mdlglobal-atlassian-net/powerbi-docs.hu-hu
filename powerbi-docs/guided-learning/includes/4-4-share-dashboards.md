@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d6755233733c4500865615c28850793aae7972d9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263823"
+---
 Bemutattuk hogyan segít a Power BI az adatok keresésében, azok adatmodellbe való gyűjtésében, és abban, hogy az adatokból jelentéseket és vizualizációkat készíthessen. Azt is bemutattuk, hogyan tudja ezeket a jelentéseket a Power BI szolgáltatásban közzétenni, és irányítópultokat létrehozni, amelyekkel nyomon követheti az információk változását. Mindezek a funkciók még hatékonyabbak lehetnek, ha a cégen belül másokkal is megoszthatja következtetéseit. Szerencsére az irányítópultokat könnyedén megoszthatja.
 
 Ahhoz, hogy megosszon egy irányítópultot, nyissa meg a Power BI szolgáltatásban és válassza a **Megosztás** hivatkozást a jobb felső sarokban.

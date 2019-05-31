@@ -1,5 +1,5 @@
 ---
-title: Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)
+title: Fejlesztői erőforrások a Power BI-adatfolyamok
 description: Erőforrások keresése fejlesztéshez és a Power BI-adatfolyamokhoz
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 20bd8cd06e2a183d284752dc378a8aa1440c3aef
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 9a4caed97881e176d075527c90ae8d5eff213676
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274697"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136762"
 ---
-# <a name="developer-resources-for-power-bi-dataflows-preview"></a>Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)
+# <a name="developer-resources-for-power-bi-dataflows"></a>Fejlesztői erőforrások a Power BI-adatfolyamok
 
 Számos módon használhatók adatfolyamok kód nélkül, entitások létrehozásával vagy csatlakoztatásával a Power BI szolgáltatásban és a hozzájuk való csatlakozással a Power BI Desktopban. Sok szervezet szeretne rendelkezni a saját megoldás fejlesztésének rugalmasságával. Ez a cikk a Power BI REST API-t és egyéb fejlesztői erőforrásokat ismertet.
 
@@ -38,8 +38,8 @@ Ebben a cikkben az adatfolyamok fejlesztői erőforrásaira vonatkozó informác
 
 * [Önkiszolgáló adatelőkészítés adatfolyamokkal](service-dataflows-overview.md)
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
-* [Számított entitások használata a Power BI Premiumban (előzetes verzió)](service-dataflows-computed-entities-premium.md)
-* [Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)](service-dataflows-on-premises-gateways.md)
+* [A Power BI Premium számított entitások használatával](service-dataflows-computed-entities-premium.md)
+* [Adatfolyamok használata a helyszíni adatforrások](service-dataflows-on-premises-gateways.md)
 
 CDM-fejlesztői forrásokkal és oktatóanyagokkal kapcsolatos információt az alábbi helyeken talál:
 * [Common Data Model – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)

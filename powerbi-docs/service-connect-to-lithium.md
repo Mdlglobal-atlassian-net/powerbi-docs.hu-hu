@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 9029d5b6268cacf17fc862a4c0a3d19f440f7de1
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54007933"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61164014"
 ---
 # <a name="connect-to-lithium-with-power-bi"></a>Kapcsolódás a Power BI-ból a Lithiumhoz
 A Lithium megbízható kapcsolatokat épít ki a világ legjobb márkái és az ügyfeleik között, és segít az embereknek választ kapni a kérdéseikre és megosztani a tapasztalataikat. Ha csatlakoztatja a Lithium-tartalomcsomagot a Power BI-hoz, akkor mérni tudja az online közössége legfontosabb metrikáit, így serkentheti az eladásokat, csökkentheti a szolgáltatási díjakat és növelheti ügyfelei hűségét. 
@@ -35,7 +35,7 @@ Kapcsolódjon a Power BI-hoz készült [Lithium-tartalomcsomaghoz](https://app.p
 3. Válassza a **Lithium** \> **Beolvasás** lehetőséget.
    
    ![](media/service-connect-to-lithium/lithiumconnect.png)
-4. Adja meg a Lithium-közössége URL-címét. Ennek formátuma: *https://community.yoursite.com*.
+4. Adja meg a Lithium-közössége URL-címét. Ennek formátuma: *https://community.yoursite.com* .
    
    ![](media/service-connect-to-lithium/params.png)
 5. Amikor a rendszer kéri, adja meg a Lithium-fiókja hitelesítő adatait. Válassza ki az **oAuth 2** hitelesítési mechanizmust, kattintson a **Bejelentkezés** elemre, majd kövesse a Lithium-fiók hitelesítési folyamatát.

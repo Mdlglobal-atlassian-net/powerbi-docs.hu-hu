@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 285c22347f049e6b99cb97fa19efc6363d9b57cb
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008649"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61163698"
 ---
 # <a name="connect-to-servicenow-with-power-bi-for-incident-reporting"></a>Csatlakozás a ServiceNow-hoz a Power BI használatával incidensjelentések készítéséhez
 A ServiceNow több terméket és megoldást is kínál a vállalkozások számára, köztük üzleti, üzemeltetési és informatikai felügyeleti megoldásokat. A tartalomcsomag több jelentést és elemzést is tartalmaz a nyitott, a nemrég megoldott és a nemrég lezárt incidensekkel kapcsolatban.  

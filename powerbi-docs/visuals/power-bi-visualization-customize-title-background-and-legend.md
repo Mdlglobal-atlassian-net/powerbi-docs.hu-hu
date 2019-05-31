@@ -11,19 +11,19 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cce99c8a0e0908ef901408cbb19397fa098bac38
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d7a8c1600de65ba39b075d89f3c2d95e0b0c7cde
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289601"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051236"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>A vizualizáció címeinek, jelmagyarázatainak és háttereinek testreszabása
 Ezen oktatóanyag segítségével elsajátíthatja a vizualizációk testre szabására szolgáló különböző módszereket.   Számos lehetőség van a vizualizációk testreszabására. A legjobban a Formátum panel felfedezésével ismerheti meg ezeket (kattintson a festőhenger ikonra).  Az első lépésekhez megtételéhez ez a cikk bemutatja, hogyan szabhatja testre a vizualizáció címét, jelmagyarázatát és hátterét.  
 
 Nem minden vizualizáció szabható testre. Tekintse meg [a teljes listát](#list).  
 
-Tekintse meg, ahogyan Amanda testre szabja a vizualizációkat a jelentésében (tekerjen előre 4:50-hez a videóban). Ezután a videó alatt látható utasításokat követve próbálkozzon meg a saját adatai testre szabásával.
+Ugorjunk 4:50 a videó bemutatja, hogyan készíthetők Vizualizációk bemutató célokra. Ezután a videó alatt látható utasításokat követve próbálkozzon meg a saját adatai testre szabásával.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 

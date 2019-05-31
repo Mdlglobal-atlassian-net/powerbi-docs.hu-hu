@@ -1,8 +1,8 @@
 ---
 title: Multi-Geo-támogatás a Power BI Premiumhoz
 description: Útmutató tartalom üzembe helyezéséhez a Power BI-bérlő saját régióján kívüli régiókban lévő adatközpontokban.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,14 +10,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: dfa412e32c49e0b3de406f2665fcd9bd6d1a345e
-ms.sourcegitcommit: bd1f0178fd9df152f9e9be57da415829f42116e9
-ms.translationtype: HT
+ms.openlocfilehash: 7735ce3d6d28f51ca95efbe12394c2e0cb2cba29
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57571979"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65564950"
 ---
-# <a name="multi-geo-support-for-power-bi-premium"></a>Multi-Geo-támogatás a Power BI Premiumhoz
+# <a name="configure-multi-geo-support-for-power-bi-premium"></a>A Power BI Premium Multi-földrajzi támogatásának konfigurálása
 
 A Multi-Geo a Power BI Premium funkciója, amely segít a nemzetközi ügyfeleknek a regionális, üzletág-specifikus vagy vállalati adatok tárolási helyére vonatkozó előírások betartásában. Power BI Premium-ügyfélként a Power BI-bérlője saját régióján kívüli régiókban lévő adatközpontokban is helyezhet üzembe tartalmat. Egy geo (földrajzi értelemben) egynél több régiót is tartalmazhat. Az Egyesült Államok például egy geo, az USA nyugati középső régiója és az USA déli középső régiója pedig az Egyesült Államokon belüli régió. A tartalom üzembe helyezéséhez az alábbi helyek bármelyikét választhatja:
 
@@ -35,7 +35,7 @@ A Multi-Geo nem elérhető a Power BI Germany, a 21Vianet által üzemeltetett P
 
 A Multi-Geo már a Power BI Embeddedben is elérhető. További információ: [Multi-Geo-támogatás a Power BI Embedded számára](developer/embedded-multi-geo.md).
 
-## <a name="using-multi-geo"></a>A Multi-Geo használata
+## <a name="enable-and-configure"></a>Engedélyezése és konfigurálása
 
 Új kapacitásokat érhet el, ha a legördülő listából az alapértelmezettől eltérő régiót választva engedélyezi a Multi-Geo használatát.  Minden elérhető kapacitásnál megjelenik a régió, ahol jelenleg elhelyezkedik, például az **USA nyugati középső régiója**.
 
@@ -68,7 +68,7 @@ A következő elemek a bérlő saját régiójában maradnak:
 - Engedélyek
 - Adathalmaz hitelesítő adatai
 
-## <a name="view-capacity-regions"></a>Kapacitások és régiók megtekintése
+## <a name="view-capacity-regions"></a>Kapacitás régiók megtekintése
 
 A felügyeleti portálom megtekinthető a Power BI-bérlő összes kapacitása, és a régiók, ahol azok jelenleg elhelyezkednek.
 
@@ -98,7 +98,7 @@ A munkaterületek kétféle módon vonhatók ki a Multi-Geo-kapacitásból:
 
 ## <a name="next-steps"></a>Következő lépések
 
-- [Power BI Premium: Mi ez?](service-premium.md)
+- [Mi a Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo a Power BI Embedded-kapacitásokhoz](developer/embedded-multi-geo.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

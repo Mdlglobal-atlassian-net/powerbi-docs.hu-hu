@@ -7,25 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 408009ad87f02808edac6f382f708f336dff02be
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 948ead2cfa551d6342f9bab87b281d9b6d1e15bc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287462"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65514123"
 ---
 # <a name="multi-select-data-elements-in-visuals-using-power-bi-desktop"></a>Adatelemek többszörös kiválasztása a Power BI Desktop használatával
 
-A **Power BI Desktopban** a vizualizációkban az adatpontok egyszerű kattintással emelhetők ki. Ha például egy fontos sávdiagram-elem található valamely vizualizációban, és azt szeretné, ha a jelentésoldal többi vizualizációja is kiemeléssel jelölje azt, akkor az egyik vizualizációban az adatpontra kattinthat, és ennek hatására az oldal többi vizualizációja is megjeleníti az eredményt. Ezt nevezzük alapszintű vagy egyszeres kijelöléses kiemelésnek. Az alábbi képen alapszintű kiemelés látható. 
+A Power BI Desktopban jelöljön ki egy adatpontot, egy adott Vizualizáció a vizualizációban az adatpontra egyszerűen kattintson rá. Ha például egy fontos sávdiagram-elem található valamely vizualizációban, és azt szeretné, ha a jelentésoldal többi vizualizációja is kiemeléssel jelölje azt, akkor az egyik vizualizációban az adatpontra kattinthat, és ennek hatására az oldal többi vizualizációja is megjeleníti az eredményt. Ezt nevezzük alapszintű vagy egyszeres kijelöléses kiemelésnek. Az alábbi képen alapszintű kiemelés látható. 
 
-![](media/desktop-multi-select/multi-select_01.png)
+![Egyetlen adatpont van kiválasztva](media/desktop-multi-select/multi-select_01.png)
 
 A többszörös kijelöléssel azonban most már több adatpont is kijelölhető a **Power BI Desktop** jelentésoldalain, és így is kiemelhetők az eredmények az oldal vizualizációiban. Ez egy **and** utasításnak felel meg, azaz olyannak, amely például ezt mondja: „emeld ki az Idaho **és** Virginia államokra vonatkozó eredményeket”. A vizualizációkban a **CTRL + kattintás** művelettel választható ki több adatpont. Az alábbi képen **több adatpont van kiválasztva** többszörös kiválasztást használva.
 
-![](media/desktop-multi-select/multi-select_02.png)
+![Több adatpontot kiválasztva](media/desktop-multi-select/multi-select_02.png)
 
 Ez a funkció meglehetősen egyszerűnek tűnhet, valójában azonban ennek köszönhetően válik lehetővé számos lehetőség a jelentések létrehozásánál, megosztásánál és használatánál. 
 

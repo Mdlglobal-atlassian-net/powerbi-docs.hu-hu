@@ -11,11 +11,11 @@ ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
 ms.openlocfilehash: d88a455b5448b92d86719251bfada6bd807a4c91
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223812"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60973617"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tippek és trükkök jelentések létrehozásához a Power BI Desktopban és a Power BI szolgáltatásban
 Ahhoz, hogy a legtöbbet hozza ki az adataiból, néha szüksége van egy kis extra segítségre. Összegyűjtöttünk néhány tippet és trükköt, amelyek segítségére lehetnek, amikor jelentéseket hoz létre a Microsoft Power BI Desktopban, a Power BI szolgáltatásban *és* a Microsoft Excel 2016 vagy Excel 2013 Pro-Plus kiadásokban, amelyekben engedélyezve van a Power Pivot bővítmény, illetve telepítve és engedélyezve van a Power Query.

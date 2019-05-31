@@ -1,5 +1,13 @@
+---
+ms.openlocfilehash: b05b5b0b5212f39b9b47cb63e2fc8522fff2f8e3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61193809"
+---
 ## <a name="faq"></a>Gyakori kérdések
-**Kérdés:** Mi történik, ha korábban már hoztam létre szerepköröket és szabályokat egy adatkészlethez a Power BI szolgáltatásban? Akkor is működnek, ha nem teszek semmit?  
+**Kérdés:** Mi történik, ha korábban létrehoztam szerepköröket és szabályokat egy adatkészlethez a Power BI szolgáltatásban? Akkor is működnek, ha nem teszek semmit?  
 **Válasz:** Nem. A vizualizációk nem fognak megfelelően renderelődni. Újból létre kell hoznia a szerepköröket és szabályokat a Power BI Desktopban, majd közzé kell tennie őket a Power BI szolgáltatásban.
 
 **Kérdés:** Létrehozhatom ezeket a szerepköröket Analysis Services-adatforrásokhoz?  

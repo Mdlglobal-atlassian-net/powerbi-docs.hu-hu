@@ -1,20 +1,20 @@
 ---
 title: A Power BI jelentéskészítő kiszolgáló támogatási ütemterve
 description: A Power BI jelentéskészítő kiszolgáló verzióinak és azok elérhetőségének listája.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/24/2019
-ms.openlocfilehash: 06946f4f838446113d244d4acec74b9f66a60a45
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 9eaef23963c369d9fa124124c616b20d4d8a4752
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324621"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187399"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló támogatási ütemterve
 
@@ -36,6 +36,7 @@ Ezzel a támogatási házirenddel az újítások gyorsan eljutnak az ügyfelekhe
 | 2018. március | 2018. március 19. | 2019. március 19. |
 | 2018. augusztus | 2018. augusztus 15. | 2019. augusztus 15. |
 | 2019. január | 2019. január 23. | 2020. január 23. |
+| 2019. május | 2019. május 22. | 2020. május 22. |
 
 A Power BI jelentéskészítő kiszolgáló, illetve a Power BI jelentéskészítő kiszolgálóra optimalizált Power BI Desktop letöltéséhez nyissa meg az [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) (Helyi jelentéskészítés Power BI jelentéskészítő kiszolgálóval) webhelyet.
 

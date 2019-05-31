@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/31/2019
+ms.date: 04/24/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 3f9195ecb4b8679ab65ad6535a85d4d271582d7d
-ms.sourcegitcommit: e05b3863c7758f639894d771193b98b12b93022a
-ms.translationtype: HT
+ms.openlocfilehash: cf640be131e1bffb571ad3c2ae2713dee1c4c0ca
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55648697"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051291"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával
 
@@ -43,11 +43,11 @@ URL-cím?filter=***Tábla***/***Mező*** eq '***érték***'
 
 ### <a name="reports-in-apps"></a>Jelentések az alkalmazásokban
 
-Ha URL-szűrőt szeretne felvenni egy alkalmazás egyik jelentésébe, annak formázása kissé eltérő lesz. Az alkalmazáson belüli jelentések hivatkozásai lekérdezésparamétert (ctid-t) tartalmaznak, amely az URL-hez kapcsolódik. A lekérdezési paramétereket és jellel (&) kell elválasztani. Így a lekérdezést az „&filter=” kifejezéssel kell bővítenie (a ctid paraméter után) a „?filter=” helyett. 
+Ha URL-szűrőt szeretne felvenni egy alkalmazás egyik jelentésébe, annak formázása kissé eltérő lesz. Az alkalmazáson belüli jelentések hivatkozásai lekérdezésparamétert (ctid-t) tartalmaznak, amely az URL-hez kapcsolódik. A lekérdezési paraméterek elválasztás ampersand (&). Tartsa "? filter =", és helyezze át a ctid paraméter az URL-cím végéhez megelőzik az ampersand (&). 
 
 Íme egy példa:
 
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?ctid=*ctid*&filter=*Table*/*Field* eq '*value*'
+App.powerbi.com/groups/Me/Apps/*app-id*/reports/ *-Jelentésazonosító*/ReportSection? filter =*tábla*/*mező* EQ '*érték*& "ctid =*ctid*
 
 ### <a name="field-types"></a>Mezőtípusok
 
@@ -83,7 +83,7 @@ Ha úgy szeretné szűrni a jelentést, hogy csak az Észak-Karolinában („NC�
 
 A jelentés szűrve lett Észak-Karolinára, és a jelentés oldalán található összes vizualizáció csak Észak-Karolina adatait jeleníti meg.
 
-![](media/service-url-filters/power-bi-report4.png)
+![Észak-Karolina szűrt jelentés](media/service-url-filters/power-bi-report4.png)
 
 ## <a name="filter-on-multiple-fields"></a>Szűrés több mező alapján
 
@@ -133,19 +133,19 @@ A Power BI URL-címekben a szűrők az alábbi formátumú számokat tartalmazha
 
 ### <a name="date-data-types"></a>Dátum adattípusok
 
-A Power BI az OData V3 és V4 **Date** és **DateTimeOffset** adattípusokat is támogatja.  A dátumok megadása EDM formátumban (2019-02-12T00:00:00) történik, tehát he megad egy dátumot ÉÉÉÉ-HH-NN formátumban, a Power BI ezt ÉÉÉÉ-HH-NNT00:00:00 időpontként értelmezi.
+A Power BI az OData V3 és V4 **Date** és **DateTimeOffset** adattípusokat is támogatja.  Dátumok vannak megadva a következő EDM-formátumban (a 2019-02-12T00:00:00), így egy: éééé-hh-nn"dátum megadása esetén a Power BI értelmezi azt" éééé-hh-DDT00:00:00 ".
 
-Miért számít ez a megkülönböztetés? Tegyük fel, hogy létrehoz egy **Table/Date gt 2018-08-03** lekérdezésisztring-paramétert.  Az eredmények között lesz 2018. augusztus 3., vagy csak 2018. augusztus 4-étől kezdődnek? Mivel a Power BI **Táblázat/Dátum gt 2018-08-03T00:00:00** formátumra fordítja le a lekérdezést, az eredményekben minden nem nulla időösszetevővel rendelkező dátum szerepel, mert azok a **2018-08-03T00:00:00** dátumnál nagyobbak.
+Miért számít ez a megkülönböztetés? Tegyük fel, hozzon létre egy lekérdezési karakterlánc paramétereként **tábla és a dátum gt "2018-08-03"** .  Az eredmények között lesz 2018. augusztus 3., vagy csak 2018. augusztus 4-étől kezdődnek? Óta a Power bi-ban a rendszer lefordítja a lekérdezés **tábla és a dátum gt "2018-08-03T00:00:00"** , az eredmények tartalmazzák a tetszőleges dátum, amely lehet nullától eltérő idő tartozik, mert ezek dátumait lehet nagyobb, mint **"2018-08-03T00:00:00"** .
 
 ## <a name="special-characters-in-url-filters"></a>Speciális karakterek URL-szűrőkben
 
-A speciális karakterek és szóközök igényelnek némi további formázást. Ha a lekérdezés szóközöket, kötőjeleket vagy egyéb nem ASCII-karaktereket tartalmaz, a speciális karakterek előtagjaként használjon olyan *feloldókaraktert*, amely aláhúzásjellel és egy X karakterrel (**_x**) kezdődik, majd a 4 számjegyű **Unicode**-karakter után még egy aláhúzásjelet tartalmaz. Ha a Unicode-karakter kevesebb mint négy számjegyből áll, akkor nullákkal kell kiegészítenie. Az alábbiakban néhány példa következik.
+A speciális karakterek és szóközök igényelnek némi további formázást. Ha a lekérdezés szóközöket, kötőjeleket vagy egyéb nem ASCII-karaktereket tartalmaz, a speciális karakterek előtagjaként használjon olyan *feloldókaraktert*, amely aláhúzásjellel és egy X karakterrel ( **_x**) kezdődik, majd a 4 számjegyű **Unicode**-karakter után még egy aláhúzásjelet tartalmaz. Ha a Unicode-karakter kevesebb mint négy számjegyből áll, akkor nullákkal kell kiegészítenie. Az alábbiakban néhány példa következik.
 
 |Azonosító  |Unicode  | Kódolás a Power BI-ban  |
 |---------|---------|---------|
 |**Táblázat neve**     | A szóköz kódja: 0x20        |  Table_x0020_Name       |
 |**Column**@**Number**     |   A @ kódja: 0x40     |  Column_x0040_Number       |
-|**[Column]**     |  A [ kódja: 0x0058, a ] kódja pedig: 0x0050       |  _x005B_Column_x005D       |
+|**[Column]**     |  A [ kódja: 0x0058, a ] kódja pedig: 0x0050       |  _x0058_Column_x0050_       |
 |**Column+Plus**     | A + kódja: 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3 ![speciális karaktereket megjelenítő táblázatvizualizáció](media/service-url-filters/power-bi-special-characters1.png)
@@ -177,7 +177,7 @@ Lekérdezésisztring-paraméterek használatakor néhány szemponttal érdemes t
 
 * Az *in* használatakor az *in* operátortól jobbra lévő értékeket zárójelek közötti, vesszővel elválasztott listaként kell megadni.    
 * A Power BI jelentéskészítő kiszolgálón [adhat át jelentésparamétereket](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) úgy, hogy belefoglalja őket a jelentés URL-címébe. Ezek az URL-paraméterek nincsenek előtaggal ellátva, mert a rendszer közvetlenül átadja őket a jelentésfeldolgozó motornak.
-* A lekérdezési sztringgel végzett szűrés a [webes közzététellel](service-publish-to-web.md) együtt nem működik.
+* Lekérdezési sztringgel végzett szűrés nem működik az [webes közzététel](service-publish-to-web.md) vagy [PDF-fájlba exportálása](consumer/end-user-pdf.md).
 * [A SharePoint Online-ban jelentéskijelzővel történő beágyazás](service-embed-report-spo.md) nem támogatja az URL-szűrőket.
 * A long adattípus maximális értéke a JavaScript korlátozásai miatt 2^53-1.
 * A jelentés URL-címének szűrői legfeljebb 10 kifejezést tartalmazhatnak (10 kifejezést, AND operátorral).

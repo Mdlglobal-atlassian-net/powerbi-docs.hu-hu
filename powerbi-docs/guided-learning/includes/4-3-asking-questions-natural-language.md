@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 2a0ec80120e30d8d652eb2bd28461b9f88f7610a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263784"
+---
 A Power BI hatékony nyelvfelismerő motorja lehetővé teszi kérdések feltételét az adatokról társalgási kifejezéseket és kérdések használatával. Ezért a Power BI-ban a jelentések és a vizualizációs elemek készítése mellett létrehozhat diagramokat vagy grafikonokat egyszerű kérdések feltételével is.
 
 Ha kérdést szeretne feltenni az adatokról, nyisson meg egy irányítópultot a Power BI-ban, és a képernyő felső részén található beviteli mezőben felteheti a megjelenített adatokra vonatkozó kérdéseit. Ez a funkció más néven a *Kérdések és válaszok*, vagy gyakrabban csak **Q&A**-nek nevezzük.

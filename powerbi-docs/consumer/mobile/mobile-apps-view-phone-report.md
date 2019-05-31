@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 04/22/2019
 ms.author: mshenhav
-ms.openlocfilehash: 99f40837f4b2c188120c4ca0311be3e9ded5fe95
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 79ca47f83bb39ab9d6df141b5a26dcb54e00c72c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276906"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65101004"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Telefonra optimalizált Power BI-jelentések megtekintése
 
@@ -24,9 +24,7 @@ A következőkre vonatkozik:
 |:--- |:--- |
 | iPhone-ok |Android rendszerű telefonok |
 
-Amikor létrehoz egy Power BI-jelentést a Power BI Desktopban vagy a Power BI szolgáltatásban, [létrehozhatja a Power BI telefonos alkalmazásokban való megtekintésre optimalizált jelentésverziót](../../desktop-create-phone-report.md).
-
-Ezután, ha megnyit egy Power BI-jelentést a telefonján, a Power BI felderíti, ha a jelentésnek van telefonra optimalizált változata, és automatikusan azt nyitja meg álló tájolásban.
+A Power BI-jelentés telefonon való megtekintésekor a Power BI ellenőrzi, hogy ha a jelentés telefonra optimalizált. Ha igen, a Power BI automatikusan nyitja meg álló tájolásban.
 
 ![Jelentés álló tájolásban](./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -40,7 +38,7 @@ A Power BI jelentések többi funkciója továbbra is működik a telefonra opti
 * [Jelentések Android telefonokon](mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="filter-the-report-page-on-a-phone"></a>Jelentésoldalak szűrése telefonon
-Ha egy telefonra optimalizált jelentéshez szűrők vannak definiálva, a jelentés telefonon való megtekintésekor alkalmazhatja ezeket a szűrőket. A jelentés azokra a weben beállított értékekre szűrve jelenik meg a telefonon egy üzenettel, hogy az oldalon aktív szűrő működik. A szűrők a telefonon módosíthatók.
+Ha egy telefonra optimalizált jelentéshez szűrők vannak definiálva, a jelentés telefonon való megtekintésekor alkalmazhatja ezeket a szűrőket. Ekkor megnyílik a jelentés a telefonján, a jelentés a weben beállított értékekre szűrve. Egy üzenet tájékoztat arról, hogy az oldalon aktív szűrés van érvényben. A szűrők a telefonon módosíthatók.
 
 1. Koppintson a Szűrő ikonra ![Szűrő ikon a telefonon](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) a lap alján. 
 2. Az alapszintű és a speciális szűrők használatával az Ön számára érdekes eredményeket jelenítheti meg.
@@ -48,7 +46,7 @@ Ha egy telefonra optimalizált jelentéshez szűrők vannak definiálva, a jelen
     ![Telefonos BI-jelentés speciális szűrője](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## <a name="cross-highlight-visuals"></a>Vizualizációk keresztkiemelése
-A vizualizációk keresztkiemelése telefonos jelentésekben ugyanúgy működik, mint a Power BI szolgáltatásban, és telefonokon a fekvő tájolású jelentésekben: Ha egy vizualizáción ki van jelölve egy adat, akkor az ahhoz kapcsolódó adatok is ki lesznek emelve az oldal többi vizualizációjában.
+Vizualizációk keresztkiemelése a fekvő nézetben ugyanúgy működik, a Power BI szolgáltatásban és a fekvő tájolású: Ha egy vizualizáción ki van jelölve egy adat, akkor az ahhoz kapcsolódó adatok is ki lesznek emelve az oldal többi vizualizációjában.
 
 A [Power BI szűrés és kiemelés funkcionalitásáról itt talál](../../power-bi-reports-filters-and-highlighting.md) további információkat.
 
@@ -58,13 +56,13 @@ Amikor a telefonos jelentésekben kijelöl egy vizualizációt, a telefonos jele
 Ha egy vizualizáció van kijelölve, azon belül végezhet különféle mozdulatokat, például görgetést. A vizualizáció kijelölésének megszüntetéséhez csak érintse meg a képernyőt a vizualizáció területén kívül.
 
 ## <a name="open-visuals-in-focus-mode"></a>Vizualizáció megnyitása fókusz módban
-A telefonos jelentések is rendelkeznek fókusz móddal, így ezekben is kinagyíthatja az egyes vizualizációkat azok és a jelentés részletesebb vizsgálata céljából.
+Telefonos jelentések is rendelkeznek fókusz móddal: Kinagyíthatja az egyes visual, és Fedezze fel egyszerűen.
 
-* A telefonos jelentésben koppintson a vizualizáció jobb felső sarkában a három pontra (**...**), majd a **Kiterjesztés fókusz módra** lehetőségre.
+* A telefonos jelentésben koppintson a vizualizáció jobb felső sarkában a három pontra ( **...** ), majd a **Kiterjesztés fókusz módra** lehetőségre.
   
     ![Kiterjesztés fókusz módra](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
-A fókusz módban végrehajtott módosítások megjelennek a jelentésvásznon és viszont, így a részletes vizsgálat zökkenőmentesen végezhető. Ha például kiemel egy értéket egy vizualizációban, majd visszavált a teljes jelentésre, a teljes jelentés a vizualizációban kiemelt értékre szűrve jelenik meg.
+Ehhez a csempét fókusz módban végrehajtott módosítások megjelennek a jelentésvásznon és viszont. Például ha jelöljön ki egy értéket egy vizualizációban, majd térjen vissza a teljes jelentésre, a jelentés szűrt a vizualizációban kiemelt értékre.
 
 Egyes műveletek a képernyőméret-korlátok miatt csak fókusz módban hajthatóak végre:
 
@@ -72,21 +70,33 @@ Egyes műveletek a képernyőméret-korlátok miatt csak fókusz módban hajthat
 * A vizualizációban lévő értékek **rendezése**.
 * **Visszaállítás**: A vizualizáció vizsgálata során végrehajtott lépések törlése, és a jelentés létrehozásakor megadott definíciók visszaállítása.
   
-    Az összes vizsgálati lépés a vizualizációról való törléséhez koppintson a három pontra (**...**), majd a **Visszaállítás** lehetőségre.
+    Az összes vizsgálati lépés a vizualizációról való törléséhez koppintson a három pontra ( **...** ), majd a **Visszaállítás** lehetőségre.
   
     ![Visszaállítás](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
   
-    A visszaállítás a jelentés szintjén (az összes vizualizáció minden vizsgálati lépésének törlése) vagy az egyes vizualizációk szintjén (egy adott vizualizáció minden vizsgálati lépésének törlése) lehetséges.   
+    Visszaállítás a jelentés szintjén, minden Vizualizáció vizsgálati törlése vagy törlése a kijelölt Vizualizáció feltárása, a Vizualizáció szintjén érhető el.   
 
 ## <a name="drill-down-in-a-visual"></a>Vizualizációk részletes elemzése
-Ha a vizualizációban vannak hierarchiaszintek definiálva, részletes elemzést végezhet a vizualizációban megjelenő részletes információk szintjén majd onnan vissza léphet. A [vizualizációk részletes elemzési funkcionalitását](../end-user-drill.md) a Power BI szolgáltatásban vagy a Power BI Desktopban adhatja hozzá. A részletes elemzés telefonon csak a telefonra optimalizált Power BI-jelentésekben elérhető. 
+Ha a vizualizációban vannak hierarchiaszintek definiálva, részletes elemzést végezhet a vizualizációban megjelenő részletes információk szintjén majd onnan vissza léphet. A [vizualizációk részletes elemzési funkcionalitását](../end-user-drill.md) a Power BI szolgáltatásban vagy a Power BI Desktopban adhatja hozzá.
 
-1. A telefonos jelentésben koppintson a jobb felső sarokban a három pontra (**...**), majd a **Kiterjesztés fókusz módra** lehetőségre.
+Részletezés néhány típusa van:
+
+### <a name="drill-down-on-a-value"></a>Részletezés érték
+1. Mennyi ideig koppintson egy egy vizualizációban az adatpontra (Koppintson és tartsa).
+2. Elemleírás fog megjelenni, és ha hierarchiában van megadva, majd az elemleírás élőláb jeleníti meg részletes elemzés és Felhatolás nyílra.
+3. Koppintson a lefelé mutató nyílra a részletezés
+
+    ![Koppintson a részletezés](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    
+4. Koppintson a Felhatolás a felfelé mutató nyílra.
+
+### <a name="drill-to-next-level"></a>A következő szintre feltárása
+1. A telefonos jelentésben koppintson a jobb felső sarokban a három pontra ( **...** ), majd a **Kiterjesztés fókusz módra** lehetőségre.
    
     ![Kiterjesztés fókusz módra](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     Ebben a példában a sávok az államokra vonatkozó értékeket mutatják.
-2. Koppintson a Vizsgálat ikonra ![Vizsgálat ikon](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) a bal alsó sarokban.
+2. Koppintson a Vizsgálat ikonra ![Vizsgálat ikon](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) a bal alsó.
    
     ![Vizsgálat mód](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-mode.png)
 3. Koppintson **A következő szint megjelenítése** vagy a **Kibontás a következő szintre** lehetőségre.
@@ -99,11 +109,28 @@ Ha a vizualizációban vannak hierarchiaszintek definiálva, részletes elemzés
 4. Ha a bal felső sarokban lévő nyílra koppint, visszatérhet a telefonos jelentéshez, miközben az értékek még mindig az alsóbb szinten vannak kibontva.
    
     ![Még mindig az alsóbb szinten kibontva](./media/mobile-apps-view-phone-report/power-bi-back-to-phone-report-expanded-levels.png)
-5. Az eredeti szintre való visszalépéshez koppintson ismét a három pontra (**...**), majd a **Visszaállítás** lehetőségre.
+5. Az eredeti szintre való visszalépéshez koppintson ismét a három pontra ( **...** ), majd a **Visszaállítás** lehetőségre.
    
     ![Visszaállítás](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
 
-## <a name="next-steps"></a>További lépések
+## <a name="drill-through-from-a-value"></a>Áthatoló részletezést értékét a
+Jelenítse meg a jelentés egyéb oldalain egy jelentésoldalon, az értékek kapcsolódik. Áthatoló részletezést-ből egy adatpont másik jelentésoldalra, amikor az adatpontérték segítségével szűrheti a feltárása oldalán keresztül, vagy a kijelölt adatok kontextusában lesz.
+Jelentések szerzői is [jelenítse meg a definiálása](https://docs.microsoft.com/power-bi/desktop-drillthrough) a jelentés létrehozásakor.
+
+1. Mennyi ideig koppintson egy egy vizualizációban az adatpontra (Koppintson és tartsa).
+2. Elemleírás fog megjelenni, és ha jelenítse meg van adva, majd az elemleírás élőláb jeleníti meg jelenítse meg a nyíl.
+3. Koppintson a nyílra a kódig
+
+    ![Koppintson a részletezés](././media/mobile-apps-view-phone-report/report-drill-through1.png)
+
+4. Válassza ki, melyik jelentésoldal áthatoló részletezést
+
+    ![Válassza ki a jelentésoldal](././media/mobile-apps-view-phone-report/report-drill-through2.png)
+
+5. A Vissza gombot, használja az alkalmazás fejléc a használatát a lapra való visszatéréshez.
+
+
+## <a name="next-steps"></a>Következő lépések
 * [A Power BI telefonos alkalmazásokhoz optimalizált jelentések létrehozása](../../desktop-create-phone-report.md)
 * [Power BI-irányítópult telefonos nézetének létrehozása](../../service-create-dashboard-mobile-phone-view.md)
 * [Bármely méretre optimalizált rugalmas vizualizációk létrehozása](../../visuals/desktop-create-responsive-visuals.md)

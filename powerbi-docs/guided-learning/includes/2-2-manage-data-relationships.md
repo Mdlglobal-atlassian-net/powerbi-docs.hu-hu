@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b1658a9351c05a8673c6cc582a4e54ad982791fc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255695"
+---
 A Power BI lehetővé teszi, hogy a táblák vagy más elemek közötti kapcsolatot vizuális módon állítsa be. Az adatok diagramnézetben való megtekintéséhez használja a **Kapcsolatok nézetet**, amely a képernyő bal szélén, a jelentésvászon mellett található.
 
 ![](media/2-2-manage-data-relationships/2-2_1.png)

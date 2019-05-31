@@ -1,5 +1,5 @@
 ---
-title: A Modellező nézet használata a Power BI Desktopban (előzetes verzió)
+title: A Power BI Desktop modellezési nézet használata
 description: A Modellező nézet használata összetett adathalmazok vizuális megjelenítéséhez a Power BI Desktopban
 author: davidiseminger
 manager: kfile
@@ -7,30 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ccb78c8d22fdb7b9fecbb202dca488c44d36a15d
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 1fdb6058a6306f63f53c770812f85ccd9f9113ea
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216309"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65941343"
 ---
-# <a name="modeling-view-in-power-bi-desktop-preview"></a>A Modellező nézet a Power BI Desktopban (előzetes verzió)
+# <a name="modeling-view-in-power-bi-desktop"></a>A Power BI Desktop modellezési megtekintése
 
-A **Power BI Desktopban** a **Modellező nézettel** sok táblát tartalmazó, összetett adathalmazokat tekinthet meg és használhat. A Modellező nézettel a következőkre nyílik lehetősége:
+A **Power BI Desktopban** a **Modellező nézettel** sok táblát tartalmazó, összetett adathalmazokat tekinthet meg és használhat.
 
-
-## <a name="enabling-the-modeling-view-preview-feature"></a>A Modellező nézet előzetes verziójú funkció engedélyezése
-
-A Modellező nézet előzetes verziójú funkció, amelyet a **Power BI Desktopban** engedélyezni kell. A Modellező nézet engedélyezéséhez válassza a **Fájl > Lehetőségek és beállítások > Beállítások > Előzetes verziójú funkciók** lehetőséget, majd az alábbi ábrán látható módon jelölje be a **Modellező nézet** jelölőnégyzetet.
-
-![A Modellező nézet előzetes verziójú funkció engedélyezése a Power BI Desktopban](media/desktop-modeling-view/modeling-view_01.png)
-
-A rendszer értesíti, hogy az előzetes verziójú funkció engedélyezéséhez újra kell indítania a **Power BI Desktopot**. 
-
-![A Power BI Desktop újraindítása az előzetes verziójú funkciók engedélyezéséhez](media/desktop-modeling-view/modeling-view_01b.png)
 
 ## <a name="using-modeling-view"></a>A Modellező nézet használata
 
@@ -66,9 +56,9 @@ Módosíthatja például a diagramon szereplő több tábla [tárolási módját
 Az alábbi cikkek bővebben ismertetik az adatmodelleket, és a DirectQuery részletes leírását is tartalmazzák.
 
 * [Aggregációk a Power BI Desktopban (előzetes verzió)](desktop-aggregations.md)
-* [Összetett modellek a Power BI Desktopban (előzetes verzió)](desktop-composite-models.md)
+* [Összetett modellek a Power BI Desktopban](desktop-composite-models.md)
 * [Tárolási mód a Power BI Desktopban (előzetes verzió)](desktop-storage-mode.md)
-* [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md)
+* [Több a többhöz kapcsolatok a Power BI Desktopban](desktop-many-to-many-relationships.md)
 
 
 A DirectQuery-vel kapcsolatos cikkek:

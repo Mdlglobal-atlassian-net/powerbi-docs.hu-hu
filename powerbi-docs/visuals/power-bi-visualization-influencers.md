@@ -1,280 +1,344 @@
 ---
 title: Főbb befolyásolók vizualizációinak oktatóanyaga
-description: Oktatóanyag – főbb befolyásolók vizualizációjának létrehozása a Power BI-ban
+description: 'Oktatóanyag: Hozzon létre egy fontos Véleményformálók vizualizációt a Power bi-ban'
 author: mihart
 manager: kvivek
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 02/12/2019
+ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1f55a12e306af8a28e297e9feab2f2c0ae0cd60b
-ms.sourcegitcommit: 87e81ba92f3d1d65c26f9fc007bf106f96f37bfd
-ms.translationtype: HT
+ms.openlocfilehash: 8d2d6755d01a8ea9d5dad9813fcd7f4b4c1f8232
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57461672"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051615"
 ---
 # <a name="key-influencers-visualization"></a>Főbb befolyásolók vizualizáció
-A főbb befolyásolók vizualizáció segít megérteni azokat a tényezőket, amelyek az érdeklődésére számot tartó metrikát alakítják. Elemzi az adatokat, rangsorolja a lényeges tényezőket, és megjeleníti őket főbb befolyásolóként. Érdekelheti például, hogy mi befolyásolja az alkalmazotti állomány változását (az elvándorlást). Az egyik tényező lehet a munkaszerződés hossza, a másik pedig az alkalmazottak kora. 
+A vizuális fontos Véleményformálók segítségével megismerheti a tényezők a meghajtó egy Önt érdeklő metrikát. Elemzi az adatokat, rangsorolja a lényeges tényezőket, és megjeleníti őket főbb befolyásolóként. Tegyük fel például, döntse el, hogy milyen hatású alkalmazott a forgalom, amely más néven churn szeretné. Egy tényező lehet, hogy foglalkoztatási szerződés hossza, és a egy másik tényező lehet, hogy alkalmazott kora. 
  
-## <a name="when-to-use-key-influencers"></a>Mikor érdemes használni a főbb befolyásolókat? 
-A főbb befolyásolók vizualizáció remek választás a következőkhöz: 
-- Megtekintheti, milyen tényezők befolyásolják az elemzett metrikát.
-
-- Összevetheti ezeknek a tényezőknek a relatív fontosságát. Nagyobb hatása van az alkalmazotti állomány változására például a rövid távú szerződéseknek, mint a hosszú távúaknak? 
+## <a name="when-to-use-key-influencers"></a>Mikor érdemes használni a fontos Véleményformálók 
+A fontos Véleményformálók Vizualizáció használata nagyszerű választás, ha azt szeretné, a: 
+- Tekintse meg, milyen tényezők befolyásolják a metrika az elemezni.
+- Ellentétben ezek a tényezők a relatív fontosságát. Nagyobb hatása van az alkalmazotti állomány változására például a rövid távú szerződéseknek, mint a hosszú távúaknak? 
 
 ## <a name="key-influencer-requirements"></a>A főbb befolyásolók használati követelményei 
-Az elemzett metrikának kategóriamezőnek kell lennie.    
+A metrika elemez kell lennie a numerikus vagy kategorikus mező (összesítések és a mértékek még nem támogatottak).
 
+## <a name="features-of-the-key-influencers-visual"></a>A vizuális fontos Véleményformálók funkciói
 
-## <a name="features-of-the-key-influencer-visual"></a>A főbb befolyásoló vizualizáció funkciói
+![Számozott funkciók](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)
 
-![számozott funkciók](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)    
+1. **Lapok**: Váltás a nézetek a fület választva. **Kulcs véleményvezérek** azt mutatja be, a Kiemelt közreműködők, a kiválasztott metrika értékének. **Az első szegmensek** jeleníti meg, hogy a felső szegmens, amely hozzájárul a kiválasztott metrika értékének. Egy *szegmens* értékek kombinációjából tevődik össze. Például egy szegmens lehet a fogyasztók számára, akik legalább 20 éve már az ügyfelek és a nyugati régióban élő. 
 
-1. ***Lapfülek*** – kiválaszthatja a lapfület a nézetek közötti váltáshoz. A főbb befolyásolók vizualizációval láthatók a kiválasztott metrika értékét leginkább befolyásoló tényezők. A felső szegmensekkel láthatók a metrika értékét leginkább befolyásoló felső szegmensek. Egy *szegmens* értékek kombinációjából tevődik össze.  Az egyik szegmens állhat olyan felhasználókból, akik legalább húsz éve ügyfelek, és a nyugati régióban élnek. 
+2. **Legördülő lista**: A vizsgált mérőszám értéke. Ebben a példában tekintse meg a metrika **minősítés**. A kijelölt érték **alacsony**.
 
-2. ***Legördülő lista*** – az elemzett metrika értéke. Ebben a példában megnézzük a metrika **érékelését**, és az általunk kiválasztott érték **alacsony**.    
+3. **Szűrőutasítás**: Ez segít értelmezni a Vizualizáció a bal oldali panelen.
 
-3. ***Átértékelés*** – segít értelmezni a bal oldali panelen látható vizualizációt. 
+4. **Bal oldali panelen**: A bal oldali ablaktáblában egy Vizualizáció tartalmazza. Ebben az esetben a bal oldali ablaktáblán a felső fontos Véleményformálók listája látható.
 
-4. ***Bal oldali panel*** – a bal oldali panel egy vizualizációt tartalmaz.  Ebben az esetben a bal oldali panel a főbb befolyásolók listáját mutatja.
+5. **Szűrőutasítás**: Ez segít értelmezni a vizualizációt, a jobb oldali ablaktáblán.
 
-5. ***Átértékelés*** – segít értelmezni a jobb oldali panelen látható vizualizációt.
+6. **Jobb oldali ablaktáblában**: A jobb oldali ablaktáblában egy Vizualizáció tartalmazza. Ebben az esetben az oszlopdiagram értékét jeleníti meg az összes számára a legfontosabb befolyással bíró személy **téma** , amely a bal oldali panelen kiválasztott. A megadott érték **használhatósági** zöld megjelenik a bal oldali ablaktáblán. Az összes többi értékeit **téma** fekete színnel jelennek meg.
 
-6. ***Jobb oldali panel*** – a jobb oldali panel egy vizualizációt tartalmaz. Ebben az esetben az oszlopdiagram megjeleníti a bal oldali panelen kiválasztott **főbb befolyásoló** **Téma** összes értékét. Az adott érték (**Használhatóság**) a bal oldali panelen zöld, és a **Téma** összes többi értéke fekete.
+7. **Átlagos vonal**: Minden egyéb lehetséges értékei kiszámítja az átlagos **téma** kivételével **használhatósági**. Tehát a számítás az összes fekete értékre vonatkozik. Megadja, hogy hány százaléka, a másik **témák** kaptunk egy alacsony-besorolása. Más szóval minősítést kap egy ügyfél által, amikor adott ügyfél azt is leírja az okból, vagy a minősítés témáját. Egyes témák használhatóságát, a sebesség és a biztonság. 
 
-7. ***Átlagos vonal*** – az átlag számításánál a rendszer a **Téma** összes többi lehetséges értékét figyelembe vette, a **használhatóság** kivételével. Tehát a számítás az összes fekete értékre vonatkozik. Azt mutatja, hogy a többi **Téma** milyen százalékban eredményezett alacsony értékelést. Más szóval, amikor egy ügyfél értékelést ad, ez az ügyfél az értékelés okát vagy **témáját** is leírja. Témák például a használhatóság, a sebesség, a biztonság stb. Ha a **Téma** a **Használhatóság**, ez a második legfőbb befolyásoló tényező alacsony értékelés adásakor a bal oldali panelen lévő vizualizáció szerint. Ha átlagot számítunk az összes többi témából és az **alacsony** értékeléshez adott hozzájárulásukból, akkor az itt pirossal szereplő eredményt kapjuk. Az összes adott témának csak 11,35%-a magasabb, mint a **használhatóság**. 
+   **Téma használhatóságra** van, a második kulcs befolyással bíró személy, egy alacsony besorolása alapján a Vizualizáció a bal oldali panelen. Ha a más témák és a egy minősítése hozzájárulásuk átlagos **alacsony**, vörös színnel jelenik meg az eredményt kapja meg. Az összes a más témák megadott, csak 11.35 % magasabbak **használhatósági**.
 
-8. ***Jelölőnégyzet*** – csak a befolyásoló értékek megjelenítése.
+8. **Jelölőnégyzet**: **Csak a véleményvezérek értékek megjelenítése**.
 
 ## <a name="create-a-key-influencers-visual"></a>Főbb befolyásolók vizualizáció létrehozása 
  
-Ebben a videóban megtekintheti, hogyan hozhat létre főbb befolyásolók vizualizációt, majd az alábbi lépéseket követve maga is létrehozhat egyet. 
+Ebben a videóban megtudhatja, hogyan hozhat létre egy fontos Véleményformálók visual. Ezután kövesse az alábbi lépéseket, hozzon létre egyet. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-A termékmenedzser szeretné megtudni, milyen tényezők befolyásolják az ügyfeleket, amikor negatív értékelést adnak a felhőszolgáltatással kapcsolatban.  A lépések követéséhez nyissa meg az [Ügyfélvisszajelzések PBIX-fájlját](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) a Power BI Desktopban. Az [Ügyfélvisszajelzések Excel-fájlját is letöltheti a Power BI szolgáltatáshoz vagy a Power BI Desktophoz](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
+A termék főnöke döntse el, amely számításba érdeklődő ügyfelek számára, hogy a felhőalapú szolgáltatással kapcsolatos negatív felülvizsgálatok hagyja. A lépések követéséhez nyissa meg az [Ügyfélvisszajelzések PBIX-fájlját](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) a Power BI Desktopban. Emellett letöltheti a [Vásárlói visszajelzési Excel-fájlt a Power BI szolgáltatásban vagy a Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
 
 > [!NOTE]
-> Az Ügyfélvisszajelzések adathalmazának alapja: [Moro et al., 2014] S. Moro, P. Cortez és P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. (Adatvezérelt megközelítés a banki telemarketing sikerességének előrejelzéséhez.) Decision Support Systems, Elsevier, 62:22-31, 2014. június 
+> Az Ügyfélvisszajelzések adatkészlet alapján a [Moro et al., 2014] S. Moro o. Cortez és o. Rita. "Egy adatvezérelt megközelítéssel Bank Telemarketing sikeres előrejelzésére." *Döntési támogató rendszerekhez*, Elsevier, 62:22-31, 2014. június. 
 
-1. Nyissa meg a jelentést, és válassza a főbb befolyásolók ikonját.  
+1. Nyissa meg a jelentést, és válassza ki a **véleményvezérek kulcs** ikonra. 
 
     ![A Vizualizációk panelen válassza a Főbb befolyásolók sablont](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
-2. Húzza át az elemezni kívánt metrikát az **Elemzés** mezőbe. Az **Elemzés** mező csak kategorikus (nem folytonos) változókat támogat. Az érdekel bennünket, hogy min alapul a szolgáltatás **alacsony** ügyfélértékelése, ezért az **Ügyféltábla** > **Érékelés** lehetőséget választjuk.    
-3. Ezután húzza azokat a mezőket, amelyekről úgy gondolja, hogy befolyásolhatták az **értékelést** a **Magyarázó** mezőbe. Tetszőleges számú mezőt áthúzhat. Ebben az esetben ezekkel kezdünk: 
+2. A metrika az vizsgálni kívánt áthelyezése a **elemzés** mező. A **elemzés** a mező csak a kategorikus, vagy nem folyamatos, változókat támogatja. Vezérli az ügyfelek tekintheti minősítés alacsony, a szolgáltatás kiválasztása **ügyfél tábla** > **minősítés**. 
+3. Úgy gondolja, hogy befolyásolhatja áthelyezési mezők **minősítés** be a **által ismertetik** mező. Továbbléphet a legtöbb mezővel. Ebben az esetben indítsa el:
     - Ország, régió 
     - Szervezeti szerepkör 
     - Előfizetés típusa 
     - Cégméret 
-    - Téma     
-4. Bennünket a negatív értékelések érdeklenek, ezért válassza az **Alacsony** értéket a **Mi befolyásolja az értékelést** legördülő listában.  
+    - Téma 
+1. A negatív minősítések összpontosíthat, válassza ki a **alacsony** a a **mi befolyásolja a minősítés kell** legördülő listából.  
 
-    ![válassza a legördülő listából az alacsony lehetőséget](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
+    ![A legördülő listából válassza ki a alacsony](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
 
-Az elemzés az elemzett mező táblaszintjén fut. Ebben az esetben az **Értékelés** metrika érdekel bennünket, amelynek meghatározása az ügyfél szintjén történik (az egyes ügyfelek magas vagy alacsony pontszámot adnak). A magyarázó tényezők mindegyikét az ügyfél szintjén kell meghatározni, hogy a vizualizáció használni tudja őket. 
+Az elemzés futtatja a mező az elemezni kívánt tábla szintjét. Ebben az esetben azt a **minősítés** metrikát. Ez a metrika egy ügyfél szintjén van meghatározva. Minden ügyfél megkapta a magas pontszám vagy alacsony pontszámmal. A magyarázó tényezők definiálni kell az ügyfél győződjön meg arról, hogy a Vizualizáció szintjén is. 
 
-A fenti példában minden egyes magyarázó tényező egy az egyhez vagy sok az egyhez kapcsolatban áll a metrikával. Az egyes pontszámokhoz például pontosan egy téma van társítva (az ügyfélértékelés fő témája). Hasonlóképp az ügyfelek egy országból érkeztek, és egy tagsági típussal és szerepkörrel rendelkeznek a szervezetben. A magyarázó tényezőink tehát már az ügyfél attribútumai, és nincs szükség átalakításokra, vagyis a vizualizáció azonnal használhatja őket. 
+Az előző példában minden, a magyarázó tényezők rendelkezik egy-az-egyhez vagy a mérőszám a több-az-egyhez kapcsolat. Ebben az esetben minden pontszám van társítva pontosan egy témát. Ez a téma volt a fő téma ügyfél felülvizsgálat. Hasonlóképpen ügyfelek egyik országból egy tagsági típussal rendelkeznek, és hajtsa végre egy szerepkört a szervezetben való származnak. A magyarázó tényezők már egy ügyfél attribútumai, és nincs átalakítások van szükség. A Vizualizáció teheti őket az azonnal használható. 
 
-A későbbiekben az oktatóanyagban összetettebb példákat fogunk megnézni, melyekben egy a többhöz kapcsolatok szerepelnek. Ezekben az esetekben az oszlopokat először összesíteni kell az ügyfél szintjére az elemzés futtatása előtt.  
+Az oktatóanyag későbbi részében tekinti meg, amelyek egy-a-többhöz kapcsolatok összetettebb példákat. Ezekben az esetekben az oszlopokat kell először összesíteni az ügyfél szintre az elemzés futtatása előtt. 
 
-A magyarázó tényezőkként használt mértékek és összesítések értékelése szintén az **Elemzés** metrika táblaszintjén történik, és ebben a cikkben a későbbiekben néhány további példát is láthatunk. 
+Mértékek és összesítések magyarázó tényezők is értékeli ki a tábla szintjén használt a **elemzés** metrikát. Néhány példa a cikk későbbi részében látható. 
 
-## <a name="interpreting-categorical-key-influencers"></a>A kategorikus főbb befolyásolók értelmezése 
-Vessünk egy pillantást a főbb befolyásolókra az alacsony értékeléseknél. 
+## <a name="interpret-categorical-key-influencers"></a>Kategorikus fontos Véleményformálók értelmezése 
+Vessünk egy pillantást a fontos Véleményformálók az alacsony értékelésekhez. 
 
-### <a name="top-single-factor-influencing-likelihood-of-a-low-rating"></a>Az alacsony értékelés valószínűségét befolyásoló leggyakoribb egyetlen tényező
+### <a name="top-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Felső egyetlen szolgáltatás, amely befolyásolja az alacsony értékelésnek valószínűségét
 
-A szervezetben három szerepkör van: felhasználók, rendszergazdák és kiadók. Láthatjuk, hogy az alacsony értékeléshez hozzájáruló legfontosabb tényező az, hogy felhasználó-e az értékelő. 
+Ebben a példában a szervezet három szerepkört tartalmaz: fogyasztói, a rendszergazda és a közzétevő. A legfontosabb tényező, amely hozzájárul az alacsony értékelésnek egy fogyasztó folyamatban. 
 
-![a kiválasztott szervezeti szerepkör a felhasználó](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
+![a szervezeti szerepkör kiválasztása a fogyasztói](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
 
-Pontosabban a felhasználók 2,57x nagyobb valószínűséggel adnak negatív pontszámot. A főbb befolyásoló diagramjában **A szervezetnél betöltött szerepkör a felhasználói** a bal oldali lista első helyén szerepel. **A szervezetnél betöltött szerepkör a felhasználói** kiválasztásával a Power BI további részleteket jelenít meg a jobb oldali panelen, mégpedig az egyes **szerepkörök** egymáshoz viszonyított hatását az alacsony értékelés adásakor.
+Pontosabban a felhasználók valószínűbb 2.57 alkalommal adni a szolgáltatás egy negatív pontszám. A fontos Véleményformálók diagram listák **fogyasztói szerepe a szervezeti** a bal oldali listában szereplő első. Kiválasztásával **fogyasztói szerepe a szervezeti**, Power bi-ban a jobb oldali ablaktáblában további részleteket jeleníti meg. Az összehasonlító hatással az egyes szerepkörök egy alacsony értékelésnek valószínűségét jelenik meg.
   
-- A felhasználók 14,93%-a ad alacsony pontszámot  
-- Az összes többi szerepkör átlagosan ugyanakkor 5,78%-ban ad alacsony pontszámot 
-- A felhasználók ezért 2,57x valószínűbben adnak alacsony pontszámot, mint az összes többi szerepkör tagjai (a zöld sáv és a piros pontozott vonal különbsége) 
+- a fogyasztók 14.93 % biztosítanak alacsony pontszámmal. 
+- Átlagosan a többi szerepkör biztosítanak alacsony pontszámmal 5.78 idő %-a.
+- A fogyasztók 2.57 alkalommal nagyobb valószínűséggel biztosítanak alacsony pontszámmal a többi szerepkör képest. Megadhatja, hogy ez a piros pontozott vonal a zöld sáv halmozódik. 
 
-### <a name="second-single-factor-influencing-likelihood-of-a-low-rating"></a>Az alacsony értékelés valószínűségét befolyásoló második leggyakoribb egyetlen tényező
+### <a name="second-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Második egyetlen szolgáltatás, amely befolyásolja az alacsony értékelésnek valószínűségét
 
-A főbb befolyásolók vizualizáció sok különböző változó tényezőit képes összehasonlítani és rangsorolni.  A második befolyásolónak semmi köze sincs a **Szervezeti szerepkör** értékéhez.  Válassza ki a listában a második befolyásoló tényezőt, amely **A téma a használhatóság**. 
+A vizuális fontos Véleményformálók hasonlítja össze, és rangsorolja a számos különböző változók tényezők. A második befolyással bíró személy nem rendelkező **szerepkör a szervezeti**. Válassza ki a listából, amely a második befolyással bíró személy **bennük, használhatóság**. 
 
-![a kiválasztott a téma a használhatóság](media/power-bi-visualization-influencers/power-bi-theme.png)
+![Válassza ki a téma használhatósági](media/power-bi-visualization-influencers/power-bi-theme.png)
 
-Itt látható, hogy a második legfontosabb tényező az ügyfélvélemény témájával kapcsolatos. Azok az ügyfelek, akik megjegyzést fűztek a termék *használhatóságához* 2,21x nagyobb valószínűséggel adtak alacsony pontszámot azokhoz az ügyfelekhez képest, akik más témákhoz, például a megbízhatósághoz, a tervezéshez vagy a sebességhez fűztek megjegyzést. 
+A második legfontosabb tényező a téma az ügyfél felülvizsgálat kapcsolódik. Ügyfelek, akik a termék használhatósága kapcsolatos ellátva voltak 2.55 alkalommal nagy valószínűséggel biztosítanak alacsony pontszámmal ügyfelek, akik más témákban, például a megbízhatóság, tervezési és sebesség ellátva képest. 
 
-Látható a vizualizációk között, hogy az átlag (piros pontozott vonal) 5,78%-ról 11,34%-ra változott. Az átlag dinamikusan jön létre, mert az összes többi érték átlagán alapul. Az első befolyással bíró személy esetén az átlag nem tartalmazta az ügyfél szerepkörét, a második esetében viszont a használhatóság témáját nem tartalmazta. 
+A Vizualizációk között az átlagos, amely a piros pontozott vonal jelenik meg, beállítás változása: 5.78 % 11.34 %. Az átlagos-alapú, az összes érték átlagát azért dinamikus. Az első befolyással bíró személy, az átlagos kizárt a felhasználói szerepkör. A második befolyással bíró személy, az ki lesz zárva a használhatósági téma. 
  
-A vizualizáció alján található négyzet bejelölésével a vizualizáció csak a befolyásoló értékek (ebben az esetben az alacsony pontszámot okozó szerepkörök) szerint lesz szűrve. Ezért ezentúl nem a 12 témát látjuk, hanem azt a négyet, amelyet a Power BI az alacsony értékelések okaként azonosított. 
+Válassza ki a **csak a véleményvezérek értékek megjelenítése** melletti jelölőnégyzetet, hogy csak a befolyásos értékek alapján szűrni. Ebben az esetben a szerepköröket, amelyek alacsony pontszámmal meghajtó zajlik. A Power BI azonosított, amelyek alacsony minősítések meghajtó témák négy tizenkét témák csökkentik. 
 
-![bejelölt négyzet](media/power-bi-visualization-influencers/power-bi-only-show.png)
+![Jelölje be jelölőnégyzetet](media/power-bi-visualization-influencers/power-bi-only-show.png)
 
-## <a name="interacting-with-other-visuals"></a>Interakció más vizualizációkkal 
+## <a name="interact-with-other-visuals"></a>Más Vizualizációk 
  
-Minden alkalommal, amikor egy felhasználó rákattint egy szeletelőre, szűrőre vagy más vizualizációra a vásznon, a főbb befolyásolók vizualizáció újrafuttatja az új adatrészre vonatkozó elemzését. Húzza át például a cégméretet a jelentésbe, és használja szeletelőként. Azt szeretnénk látni, hogy a főbb befolyásolók nagyvállalati ügyfeleink körében (50 000 alkalmazottnál nagyobb vállalatméretnél) eltérőek-e az általános népességhez viszonyítva.  
+Minden alkalommal, amikor kiválaszt egy szeletelőt, szűrő vagy más vizualizációhoz a vásznon, a vizuális fontos Véleményformálók Újrafuttatja az elemzést az adatok új része. Például átválthat **Cégméret** a jelentést és a egy szeletelő szeretné használni. Ezzel a nagyvállalati vásárlók számára a fontos Véleményformálók eltérnek-e a lakosság megtekintéséhez. Egy vállalati vállalati mérete nagyobb, mint 50 000 alkalmazottak.
  
-A **>50 000** választásával újrafuttatja az elemezést, és láthatjuk, hogy a befolyásoló tényezők megváltoztak. A nagyvállalati ügyfeleknél az alacsony értékelések legfőbb befolyásoló tényezője a **biztonsággal** kapcsolatos **Téma**. Előfordulhat, hogy további elemzésekkel azt is meg kell vizsgálni, hogy vannak-e olyan meghatározott biztonsági funkciók, amelyekkel a nagyvállalati ügyfelek nem elégedettek. 
+Kiválasztásával **> 50 000** elemzését, és láthatja, hogy megváltozott-e a véleményvezérek ismétlések. A nagyvállalati ügyfelek a felső befolyással bíró személy alacsony minősítéseket a biztonsággal kapcsolatos téma van. Előfordulhat, hogy szeretné tovább lásd: vizsgálja meg, ha vannak az adott biztonsági funkciók nagy ügyfelei véleménypontszáma kapcsolatos. 
 
-![szeletelés vállalatméret alapján](media/power-bi-visualization-influencers/power-bi-filter.png)
+![Szelet Cégméret szerint](media/power-bi-visualization-influencers/power-bi-filter.png)
 
-## <a name="interpreting-continuous-key-influencers"></a>Folyamatos főbb befolyásolók értelmezése 
+## <a name="interpret-continuous-key-influencers"></a>Folyamatos fontos Véleményformálók értelmezése 
  
-Az eddigiekben a vizualizációt arra használtuk, hogy megtudjuk, hogyan befolyásolják a különböző kategóriákba tartozó mezők az alacsony értékeléseket. Folyamatosan érvényesülő tényezőket (például kor, magasság, ár) is át lehet húzni a Magyarázó mezőbe. Nézzük, mi történik, ha a Bérleti idő elemet húzzuk át az Ügyfél táblából a Magyarázó mezőbe. A Bérleti idő azt mutatja meg, hogy mennyi ideje használja az ügyfél a szolgáltatást. 
+Az eddigi megtudhatta, hogyan használhatja a Vizualizáció különböző kategorikus mezőket alacsony minősítések befolyásolhatja. Az is előfordulhat, hogy folyamatos tényező befolyásolja, például az életkor, a magasságra és a díj a **által ismertetik** mező. Nézzük, mi történik, amikor **bérleti idő** áthelyezik az ügyfél tábláról **által ismertetik**. Bérleti idő ábrázolja mennyi ügyfél használta a szolgáltatást. 
  
-Úgy találtuk, hogy a **Bérleti idő** növekedésével az alacsony értékelés kapásának valószínűsége is növekszik. Ez a trend azt jelenti, hogy a hosszútávú ügyfeleink valójában valószínűbben adnak alacsony pontszámot, ami elég érdekes megállapítás, és a későbbiekben érdemes lehet további elemzésre.  
+Növeli a bérleti idő, alacsonyabb minősítést fogadása valószínűségét is növekszik. Erre az irányra javasolja, hogy a hosszabb távú azokat az ügyfeleket több negatív pontszám biztosíthat. Az ilyen elemzések az érdekes, és a egy követéséhez később érdemes. 
  
-A vizualizáció azt tudja velünk, hogy a bérleti idő minden 13,44 hónapja után az alacsony értékelés valószínűsége 1,23x-ra nő. Ebben az esetben 13,44 hónap a bérleti idő szórását jelenti. Tehát a kapott megállapítás arra vonatkozik, hogy a bérleti idő standard mennyiséggel (a bérleti idő szórásával) való növelése hogyan befolyásolja az alacsony értékelés kapásának valószínűségét. 
+A Vizualizáció látható, hogy minden alkalommal, amikor a bérleti idő 13.44 hónappal megnő, átlagosan alacsony értékelésnek valószínűségét növeli 1,23 alkalommal. Ebben az esetben 13,44 hónap a bérleti idő szórását jelenti. Így a kap elemzés néz ki, hogyan lehet a valószínűségét, hogy egy alacsony értékelésnek fogadása bérleti idő növelésével standard értékkel, amely a bérleti idő szórása, hatással van. 
  
-A jobb oldali szórásdiagram az alacsony értékelések átlagos %-os arányát ábrázolja a bérleti idő egyes értékeihez viszonyítva, és tartalmaz egy trendvonalat is a diagram lejtésének kiemeléséhez.  
+A jobb oldali ablaktáblán a pontdiagram átlagos százalékos aránya alacsony minősítések az egyes bérleti idő értékét jeleníti meg. Kiemeli a trendvonal-görbét.
 
 
-![szórásdiagram a bérleti időhöz](media/power-bi-visualization-influencers/power-bi-tenure.png)
+![A pont a bérleti idő](media/power-bi-visualization-influencers/power-bi-tenure.png)
 
-## <a name="interpreting-measuresaggregate-as-key-influencers"></a>Mértékek/összesítés értelmezése főbb befolyásolókként 
+## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Fontos Véleményformálók mértékek és összesítések értelmezés 
  
-Végezetül pedig a felhasználók a mértékeket és összesítéseket magyarázó tényezőkként is használhatják az elemzésekben. Például előfordulhat, hogy meg szeretnénk tekinteni, milyen hatással van az ügyfelek támogatási jegyeinek száma vagy a nyitott jegyek átlagos időtartama a kapott pontszámra. 
+Használhatja mértékek és összesítések magyarázó tényezők belül az elemzést. Például érdemes tekintse meg a pontszám rendelkezik ügyfél-támogatási jegyek száma és a egy nyitott jegyet az átlagos időtartama hatásának kapja. 
  
-Ebben az esetben látni szeretnénk, hogy az ügyfél támogatási jegyeinek száma befolyásolja-e a kapott pontszámot. Behívjuk a támogatási jegy azonosítóját a támogatási jegyek táblájából. Mivel az ügyfél több támogatási jeggyel is rendelkezhet, összesítenünk kell az azonosítót az ügyfél szintjén. Ez az összesítés fontos, mert az elemzést az ügyfél szintjén végezzük, ezért az összes befolyásoló tényezőt ezen a részletességi szinten kell definiálni. 
+Ebben az esetben érdemes tekintse meg, ha a támogatási jegyeket, amely egy ügyfél rendelkezik száma befolyásolja a pontszám biztosítanak. Most már Ön is betöltheti **támogatja a Jegyazonosító** a támogatási jegy táblából. Mivel egy ügyfél több támogatási jegyeket, a vevő szint azonosító összevonásakor. Összesítés fontos, mert az elemzés a felhasználói szinten fut, így minden illesztőprogramját a részletesség szintjét kell definiálni. 
  
-Meg fogjuk nézni az azonosítók számát (mivel mindegyik ügyfélsorhoz hozzátartozik a társított támogatási jegyek száma). Ebben az esetben azt láthatja, hogy a támogatási jegyek számának növekedésével az alacsony értékelések valószínűsége 5,51x növekszik. A jobb oldali vizualizáció megjeleníti a támogatási jegyek átlagos számát az eltérő értékelések szerint (az ügyfél szintjén kiértékelve). 
+Tekintsük át a azonosítók száma. Minden ügyfél sor nullértékkel rendelkezik egy hozzá társított támogatási jegyek száma. Ebben az esetben a támogatási jegyek növekszik, száma, az értékelés folyamatban valószínűségét alacsony megnő 5.51 alkalommal. A Vizualizáció jobb a támogatási jegyeket átlagos számát mutatja különböző **minősítés** értékek értékeli ki a vásárlói szintjén. 
 
-![a támogatásijegy-azonosító hatása](media/power-bi-visualization-influencers/power-bi-support-ticket.png)
+![egyes támogatási jegy azonosító](media/power-bi-visualization-influencers/power-bi-support-ticket.png)
 
 
-
-## <a name="interpreting-the-results-top-segments"></a>Az eredmények értelmezése: felső szegmensek 
+## <a name="interpret-the-results-top-segments"></a>Az eredmények értelmezését: Felső szegmensek 
  
-A Főbb befolyásolók lap lehetővé teszi a felhasználóknak az egyes tényezők értékelését külön-külön, a felhasználók ugyanakkor átválthatnak a Felső szegmensekre, hogy megtekinthessék, hogyan befolyásolja a különböző tényezők kombinációja az elemzett metrikát. 
+Használhatja a **véleményvezérek kulcs** fülre, és külön-külön értékeli az egyes tényezőket. Használhatja még a **szegmensek leggyakoribb** lapján megtekintheti, milyen hatással van a tényező kombinációját az elemzett metrika. 
  
-A felső szegmens kezdetben megjelenítik a Power BI által felfedezett összes szegmens áttekintését. Az alábbi példában látható, hogy hat szegmens található. Ezekben a szegmensekben a rangsorolás a szegmenseken belüli alacsony értékelések %-os aránya alapján történik. Láthatjuk például, hogy az 1. szegmensben az alacsony ügyfélértékelések aránya 74,3%-os.  Minél magasabban van a buborék, annál nagyobb az alacsony értékelések aránya. A buborék mérete viszont attól függ, hogy hány ügyfél található a szegmensben. 
+Felső szegmens kezdetben megjelenítése a Power BI által felderített szegmensek áttekintése. Az alábbi példa bemutatja, hogy hat szegmens található. Ezekben a szegmensekben százalékos aránya alacsony minősítéseket a szegmensben szerint vannak rangsorolva. 1, szegmens például 74.3 % vevő minősítése, amelyek alacsony rendelkezik. Minél magasabban van a buborék, annál nagyobb az alacsony értékelések aránya. A buborék méretét jelzi, hogy hány ügyfél vannak a szegmensben. 
 
-![kiválasztott lapfül a felső szegmensekhez](media/power-bi-visualization-influencers/power-bi-top-segments-tab.png)
+![Válassza ki a felső szegmensek lap](media/power-bi-visualization-influencers/power-bi-top-segments-tab.png)
 
-Egy buborék kiválasztásával megjelenítheti az adott szegmens részleteit. Ha például az 1. szegmenst választja, akkor láthatja, hogy az viszonylag hűséges ügyfelekből áll (több mint 29 hónapja vannak velünk), akik sok támogatási jeggyel rendelkeznek (4-nél többel). Végül pedig ők nem publikálók (tehát vagy ügyfelek vagy adminisztrátorok).  
+Egy buborék kiválasztásával megjelenítheti az adott szegmens részleteit. Ha szegmens 1, például találja, hogy áll, akkor viszonylag meglévő ügyfelek. Ezeket a ügyfelek már több mint 29 másik hónapon keresztül, és legfeljebb négy támogatási jegyek rendelkezik. Végül azok még nem kiadóknak, hogy azok a fogyasztók vagy a rendszergazdák. 
  
-Eben a csoportban 74,3% adott alacsony értékelést. Az átlagos ügyfél 11,7%-ban ad alacsony értékelést, tehát ebben a szegmensben az alacsony értékelések aránya szignifikánsan nagyobb (63 százalékponttal magasabb). Azt is látjuk, hogy az 1. szegmens az adatok kb. 2,2%-át tartalmazza, tehát a populáció egy körülhatárolható részét képviseli. 
+Ebben a csoportban 74.3 %-a az ügyfelek adott egy alacsony-besorolása. Az átlagos ügyfél adott 11,7 %-ában minősítés, így ez a szakasz egy kis minősítések nagyobb hányadát alacsony. 63 százalékos pontok nagyobb legyen. Szegmens 1 az adatok körülbelül 2.2 % is tartalmaz, így ez azt jelenti, hogy a lakosság-címmel rendelkező része. 
 
-![első felső szegmens kiválasztása](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
+![Válassza ki az első felső szegmens](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
+
+## <a name="working-with-numerical-data"></a>Numerikus adatok használata
+
+Ha egy numerikus mezőt a **elemzés** mező, választhat, hogy hogyan legyen kezelve a forgatókönyvhöz. Módosíthatja a Vizualizáció viselkedését megnyitom a **formázás ablaktábla** közötti váltáskor és **Kategorikus elemzéstípus** és **folyamatos elemzés típusa**.
+
+![A folyamatos a kategorikus módosítása](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
+
+A **Kategorikus elemzéstípus** a fent leírt módon. Például ha meg lettek beállításnak 1 és 10 közötti felmérés pontszámok megnézzük, megkérheti "Mi befolyásolja a felmérés pontszámok határa 1?"
+
+A **folyamatos elemzéstípus** folyamatos egy módosítja a kérdést. A fenti példában az új kérdést lenne, "Mi befolyásolja a felmérés pontszámok növelheti/csökkentheti a?"
+
+Ezt a különbséget nagyon hasznos, amikor a rendszer elemzése mezőben egyedi értékeket számos lehetősége van. Az alábbi példában áttekintjük ház árak. Már nem nagyon könnyen értelmezhető kérje meg a "Mi befolyásolja a ház ár kell 156,214?" mivel nagyon specifikus, és valószínűleg nem elegendő az adatokat egy minta célszámítógéppel.
+
+Ehelyett előfordulhat, hogy szeretnénk kérje meg, "Mi befolyásolja ház ár növelése"? amely lehetővé teszi számunkra, hogy a ház árak kezelje a különböző értékeket, hanem egy tartományt.
+
+![Numerikus kérdés](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
+
+## <a name="interpret-the-results-key-influencers"></a>Az eredmények értelmezését: Főbb befolyásolók 
+
+Ebben a forgatókönyvben áttekintjük, "Mi befolyásolja ház ár növelése érdekében". Mi helyzet magyarázó tényező, amelyek hatással lehetnek például a ház ár **év beépített** (a ház készítették év), **KitchenQual** (megjelenítő kijelzőket a konyhai minőség) és **YearRemodAdd** (a ház újra lett modellezett év). 
+
+Az alábbi példában áttekintjük a felső befolyással bíró személy, amely megjelenítő kijelzőket a konyhai minőségi … kitűnő folyamatban van. Az eredmények nagyon hasonlóak az azt láttuk, hogy is elemzésekor, hogy néhány fontos különbség a kategorikus metrikák azokat:
+
+- Az oszlopdiagram a jobb oldali fér hozzá az átlagokat helyett. Ezért megmutatja a ház és a egy kiváló konyhai átlagos ház ára mi (zöld sávok) nélkül egy kiváló konyhai (szaggatott vonal) egy adott átlagos ház ára képest
+- A szám a buborékra a továbbra is a különbség a piros pontozott vonal és sáv zöld, de számos alkalmazásának ($158.49-K) helyett egy elágazás (1.93 x). Átlagos stb, a kiváló konyha házak szinte $160K drágábbak, mint házak kiváló konyha nélkül.
+
+![Numerikus cél kategorikus véleményvezérek](media/power-bi-visualization-influencers/power-bi-ki-numeric-categorical.png)
+
+Az alábbi példában azt a hatást helyzet a folyamatos tényezőt (ház újra lett modellezett év) ház ár rendelkezik. Hogyan tudjuk elemezni folyamatos véleményvezérek kategorikus mérőszámhoz képest különbségek a következők:
+
+-   A jobb oldali ablaktáblán a pontdiagram jeleníti meg mindegyik eltérő értékhez újra modellezett év átlagos ház díja. 
+-   A buborék értékét jeleníti meg, mennyi az átlagos ház által ár növeli (ebben az esetben 2 USD. 87-k) Ha az év, a ház volt újra modellezett növeli a szórás (ebben az esetben 20 évben) által
+
+![Numerikus cél folyamatos véleményvezérek](media/power-bi-visualization-influencers/power-bi-ki-numeric-continuous.png)
+
+Mi helyzet az átlagos év mértékek esetén végül egy ház lett létrehozva. Itt az elemzést a következőképpen történik:
+
+-   A jobb oldali ablaktáblán a teszteredményekből jeleníti meg a tábla mindegyik eltérő értékhez átlagos ház díjszabása
+-   A buborék értékét jeleníti meg, mennyi az átlagos ház által ár növeli (ebben az esetben 1 USD. 35-K) Ha az átlagos év növeli a szórás (ebben az esetben 30 év)
+
+![Numerikus cél méri a véleményvezérek](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
+
+## <a name="interpret-the-results-top-segments"></a>Az eredmények értelmezését: Felső szegmens
+
+Felső szegmens a numerikus célok megjelenítése csoportok, a ház átlagosan díjai magasabbak, mint a teljes adatkészletben. Például az alábbiakban látható, amely **szegmens 1** áll házak ahol **GarageCars** (a garázsnak illeszkednek autók száma) értéke nagyobb, mint 2 és a **RoofStyle** közreműködés van. Házak adott jellemzőkkel rendelkezik egy átlagos ára, 355 Ft az összesített átlagos az adatokban, amely 180 Ft.
+
+![Numerikus cél méri a véleményvezérek](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás 
  
-**Mik az előzetes verzió korlátai?** 
+**Mik a korlátozások az előzetes verzióra?** 
  
-A Főbb befolyásolók vizualizációnak jelenleg az előzetes verziója érhető el, és van néhány korlátozás, melyekről a felhasználóknak tudniuk kell. Jelenleg nem elérhető funkciók többek között: 
-- Metrikák elemzése, amelyek összesítések/mértékek 
-- A vizualizáció használata a Power BI Embeddedben
-- A vizualizáció használata a Power BI-mobilalkalmazásokban
-- RLS-támogatás 
-- Közvetlen lekérdezés támogatása 
-- Az élő kapcsolat támogatása 
+A vizuális fontos Véleményformálók jelenleg nyilvános előzetes verzióban érhető el, és bizonyos korlátozásokkal rendelkezik. Tartalmazza a Funkciók, amelyek jelenleg nem érhető el: 
+- Összesítések vagy mértékeket ítélt elemzése.
+- A Vizualizáció a Power BI Embedded felhasználása.
+- A Vizualizáció a Power BI mobile-alkalmazások felhasználása.
+- Támogatja a rls-t.
+- Közvetlen lekérdezés támogatása.
+- Élő kapcsolat támogatása.
+
+![Numerikus kérdés](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
+
+**Látható, amely nem véleményvezérek szegmensek találhatók vagy hiba. Ez miért van?** 
+
+![Nem található hiba véleményvezérek](media/power-bi-visualization-influencers/power-bi-error1.png)
+
+
+Ez a hiba akkor fordul elő, amikor mezőket tartalmazza **által ismertetik** , de nincs véleményvezérek találhatók. 
+- Voltak elemzése a metrika szerepelni mindkét **elemzés** és **által ismertetik**. Távolítsa el a **által ismertetik**. 
+- A magyarázó mezők túl sok kevés megfigyeléssel rendelkező kategóriával rendelkeznek. Ebben a helyzetben lehetővé teszi annak meghatározására, hogy mely tényezők véleményvezérek a vizualizációhoz tartozó rögzített. Meglehetősen nehéz általánosításához csak néhány megfigyelések alapján. Ha egy numerikus mező, van elemzése átállás érdemes **Kategorikus elemzési** való **végzett folyamatos elemzés** a a **formázás ablaktábla** alatt a  **Elemzés** kártya.
+- A magyarázó tényezők van elég megfigyelések általánosítani, de a Vizualizáció nem találta meg a jelentés minden jelentéssel bíró összefüggéseket.
  
-**Egy hibaüzenetet látok, miszerint nem találhatók befolyásolók/szegmensek. Ez miért van?**  
+**Látható, hogy a metrika I vagyok elemzése nem rendelkezik elegendő adat az elemzés futtatása hibát. Ez miért van?** 
 
-![hiba – nem találhatók befolyásolók](media/power-bi-visualization-influencers/power-bi-error1.png)
+![Nincs elég adat hiba](media/power-bi-visualization-influencers/power-bi-not-enough-data.png)
 
+A Vizualizáció megnézzük az adatok egy csoport más csoportokhoz képest működik. Ha például ügyfelek, akik a megadott alacsony minősítések képest, akiknek adott nagy minősítési keresi. Ha az adatokat a modell csak néhány megfigyelések, minták megtalálása nehezebb. Ha a Vizualizáció nem rendelkezik elegendő jelentéssel bíró véleményvezérek az adatokat, az azt jelzi, hogy a több adatra van szükség az elemzést futtatni. 
 
-Ez a hiba akkor fordul elő, ha felvesz mezőket a **Magyarázó** elembe, de nem találhatók befolyásolók.   
-- Az elemzett metrikát felvette az Elemzés és a Magyarázó elembe is (el kell távolítani a **Magyarázó** elemből) 
-- A magyarázó mezők túl sok kevés megfigyeléssel rendelkező kategóriával rendelkeznek. Ez nehézzé teszi a vizualizációk számára annak a megállapítását, hogy melyek a befolyásoló tényezők, mivel nehéz néhány megfigyelés alapján általánosítani 
-- A magyarázó tényezők megfelelő számú megfigyeléssel rendelkeznek az általánosításokhoz, de a vizualizáció nem találta semmilyen jelentős korrelációt, amelyről jelentést készíthetne 
+Azt javasoljuk, hogy rendelkezik-e a kiválasztott állam legalább 100 megfigyeléseket. Ebben az esetben az állapot az ügyfelek, akik a vásárlói lemorzsolódás. Is szüksége lesz legalább 10 megfigyeléseket az államok összehasonlító használja. Ebben az esetben az összehasonlítás állapota vásárlók lemorzsolódásának nem.
+
+Ha egy numerikus mező, van elemzése átállás érdemes **Kategorikus elemzési** való **végzett folyamatos elemzés** a a **formázás ablaktábla** alatt a  **Elemzés** kártya.
+
+**Egy hibát, amely egy mezőre *által ismertetik* egyedileg nem kapcsolódik a metrika I vagyok elemzése tartalmazó tábla. Ez miért van?**
  
-**Egy hibaüzenet jelent meg, miszerint az éppen elemzett metrika nem rendelkezik elég adattal az elemzés futtatásához. Ez miért van?**  
+Az elemzés futtatja a mező az elemezni kívánt tábla szintjét. Például a szolgáltatás vásárlói visszajelzéseket elemez, akkor előfordulhat, hogy van-e egy táblát, amely tájékoztatja, hogy egy ügyfél rendelte egy nagy minősítési vagy egy alacsony értékelésnek. Ebben az esetben az elemzési fut az ügyfél tábla szintjén. 
 
-![hiba – nincs elég adat](media/power-bi-visualization-influencers/power-bi-not-enough-data.png)
-
-A vizualizáció úgy működik, hogy mintákat keres az adatokban az egyik csoportban (például az alacsony értékeléseket adott ügyfelek között) a többi csoporttal (például a magas értékelést adott ügyfelekkel) összehasonlítva. Ha a modellben lévő adatok nagyon kevés megfigyeléssel rendelkeznek, akkor nehéz mintákat találni. Ha a vizualizáció nem rendelkezik elegendő adattal jelentős befolyásolók találásához, akkor jelzi, hogy több adatra van szükség az elemzés futtatásához. Azt javasoljuk, hogy rendelkezzen legalább 100 megfigyeléssel a kiválasztott állapothoz (más szolgáltatóra váltó ügyfelek) és legalább 10 megfigyeléssel az összehasonlításhoz használt állapotokhoz (más szolgáltatóra nem váltó ügyfelek).  
+Ha a tábla, amely tartalmazza a mérőszám, mint a részletes szintű egy kapcsolódó tábla meghatározott, ez a hibaüzenet jelenik meg. Íme egy példa: 
  
-**Egy hibaüzenet jelenik meg, miszerint a Magyarázó egyik mezője nem rendelkezik egyedi kapcsolattal az elemzett metrikát tartalmazó táblához. Ez miért van?**  
+- Az ügyfelek számára biztosítanak alacsony minősítéseket a szolgáltatás vezérli elemez.
+- Meg szeretné tekinteni a Ha az eszköz, amelyen az ügyfél is használja a szolgáltatás befolyásolja a felülvizsgálatok biztosítanak.
+- Egy ügyfél több különböző módon lehet igénybe venni a szolgáltatást.
+- A következő példában 10000000 ügyfél használja a böngésző és a egy táblagépen használják a szolgáltatást.
+
+![Egy kapcsolódó tábla meg van határozva egy részletesebb szintet, mint a metrika tartalmazó tábla](media/power-bi-visualization-influencers/power-bi-error2.png)
+
+Az eszköz oszlop használata egy magyarázó tényezőként meg, a következő hiba jelenik meg: 
+
+![Hibás hiba](media/power-bi-visualization-influencers/power-bi-error3.png)
+
+Ez a hiba akkor jelenik meg, mert az eszköz nincs definiálva az ügyfél szintjén. Egy ügyfél több eszközre a szolgáltatást használhatják. Minták keresése a vizualizációhoz tartozó az eszköz attribútummal kell rendelkeznie az ügyfél. Nincsenek számos olyan megoldást, amely az üzleti ismeretekkel függ: 
  
-Az elemzés az elemzett mező táblaszintjén fut. Ha például Ön a szolgáltatásai ügyfélvisszajelzéseit elemzi, akkor rendelkezhet egy táblával, amelyben megtalálható, hogy az ügyfél magas vagy alacsony értékelést adott. Ebben az esetben az elemzés az ügyfél táblaszintjén fog futni. 
-
-Ezzel a hibával akkor találkozik, ha van egy olyan kapcsolódó táblája, amelynek a meghatározása a metrikát tartalmazó táblánál nagyobb részletességi szinten történt. Szemléltessük ezt egy példával: 
+- Módosíthatja az összesítést az eszközök számát. Például használja a száma, ha az eszközök száma befolyásolhatja a pontszám, amely egy ügyfél ad. 
+- Az eszköz oszlopban megtekintheti, ha a szolgáltatást, meghatározott eszközre felhasználása befolyásolja egy vevő minősítése is forgáspont.
  
-- Elemzést végez azzal kapcsolatban, hogy mi befolyásolja az ügyfeleket, amikor alacsony értékeléseket adnak a szolgáltatására 
-- Önt az érdekli, hogy befolyásolja-e az az eszköz, amelyen az ügyfél a szolgáltatást használja az általa adott értékeléseket 
-- Az ügyfél többféleképpen is használhatja a szolgáltatást   
-- Az alábbi példában a 10000000 ügyfél böngészővel táblagéppel is használja a szolgáltatást 
+Ebben a példában az adatokat böngésző-, mobil-, az új oszlopok létrehozásához, és táblagépes volt problémakörrel. Most már használhatja az adott megismerkedéshez **által ismertetik**. Minden eszköz kapcsolja véleményvezérek lennie, és a böngésző ügyfél pontszám a legnagyobb hatással van.
 
-![hiba – ha rendelkezik egy olyan kapcsolódó táblával, amely nagyobb részletességi szinten van meghatározva, mint a metrikát tartalmazó tábla](media/power-bi-visualization-influencers/power-bi-error2.png)
+Ügyfeleink, akik nem a böngészőben a szolgáltatás felhasználásához, pontosabban 3.79 alkalommal több várhatóan alacsony pontszámmal, mint az ügyfelek, akik tegye lehetővé. Alacsonyabb lefelé a listában, a mobile inverz is igaz. Ügyfeleink, akik a mobilalkalmazás valószínűbb, hogy alacsony pontszámmal, mint az ügyfelek, akik nem. 
 
-Ha az eszköz oszlopot próbálja magyarázó tényezőként használni, akkor a következő hibát fogja látni: 
+![Megoldott](media/power-bi-visualization-influencers/power-bi-error3-solution.png)
 
-![hiba – nem megfelelő oszlop](media/power-bi-visualization-influencers/power-bi-error3.png)
+**Látható, hogy a mértékek nem szerepel a saját elemzési figyelmeztetést. Ez miért van?** 
 
-Ennek az oka az, hogy az eszköz nincs definiálva az ügyfél szintjén – egy ügyfél több eszközön is használhatja a szolgáltatást. Ahhoz, hogy a vizualizáció mintákat találjon, az eszköznek az ügyfél attribútumává kell válnia. Ebben az esetben több megoldás is létezik, attól függően, mennyire értem a vállalat működését: 
+![Mértékek nem tartalmazza a hiba](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
+
+
+Az elemzés futtatja a mező az elemezni kívánt tábla szintjét. Vásárlók lemorzsolódásának elemzése, ha lehetséges, hogy egy táblát, amely tájékoztatja, hogy egy ügyfél előforduló vagy sem. Ebben az esetben az elemzést az ügyfél tábla szintjén futtatja.
  
-- Az eszközök összegzését is módosíthatom, például megszámlálhatom, hogy az eszközök száma befolyásolhatja-e az ügyfél által adott pontszámot 
-- Forgathatom az eszköz oszlopot annak megtekintéséhez, hogy a szolgáltatás egy meghatározott eszközön való használata befolyásolja-e az ügyfél értékelését  
+Mértékek és összesítések tábla szintű elemzett alapértelmezés szerint is. Ha egy mértéket az átlagos havi kiadások, azt kellene elemezheti az ügyfél tábla szintjén. 
+
+Ha az ügyfél táblázat nem rendelkezik egy egyedi azonosítót, az mértékcsoport nem értékelhető, és az elemzés által figyelmen kívül. Ezen helyzet elkerülése érdekében győződjön meg a metrika az a tábla egyedi azonosítója. Ebben az esetben az ügyfél táblázat és az egyedi azonosító felhasználó azonosítója. A rendszer is könnyedén adhat hozzá egy indexoszlopot Power Query használatával.
  
-Ebben a példában forgattam az adatokat, hogy új oszlopokat hozzak létre böngésző, mobil és tábla néven. Ezeket most felhasználhatom a Magyarázó felületen. Azt találtuk, hogy minden eszköz befolyásoló tényező, és a böngésző van a legnagyobb hatással az ügyfél által adott pontszámra. 
+**Látható, hogy rendelkezik-e 10-nél több egyedi értékeket a metrika I vagyok elemzése és, hogy ez a mennyiség hatással lehet a saját elemzési minőségét figyelmeztetést. Ez miért van?** 
 
-Pontosabban azok a felhasználók, akik nem a böngészővel használják a szolgáltatást, 3,79x nagyobb valószínűséggel adnak alacsony pontszámot azoknál, akik azzal használják. A listában lejjebb látható, hogy a mobilok esetében ennek az ellenkezője az igaz. A mobilalkalmazást használók nagyobb valószínűséggel adnak alacsony pontszámot, mint azok, akik nem azt használják.  
+A mesterséges Intelligencia Vizualizáció elemezheti a kategorikus és numerikus mezőket. Kategorikus mezőket, például lehet Lemorzsolódási van Igen vagy nem, és ügyfél-elégedettséget magas, közepes vagy alacsony. Kategóriák elemzéséhez számának növelésével azt jelenti, hogy kevesebb megfigyelések kategória szerinti. Ez a helyzet megnehezíti a mintákat találni az adatok a vizualizációt. 
 
-![hiba – megoldva](media/power-bi-visualization-influencers/power-bi-error3-solution.png)
+Amikor elemzi a numerikus mezők választhat, hogy való kezelése a numerikus mezők, például szöveg, ebben az esetben fog futni az azonos elemzése, ahogy olyan kategorikus adatok között (**Kategorikus elemzési**). Ha számos különböző értékeket, javasoljuk, hogy váltson az elemzés **végzett folyamatos elemzés** , ez azt jelenti, hogy is kikövetkeztetni a mintákat, amikor számok növeléséhez vagy csökkentéséhez ahelyett kezeli őket a különböző értékeket. Válthat a **Kategorikus elemzési** való **végzett folyamatos elemzés** a a **formázás ablaktábla** alatt a **elemzési** kártya.
 
-**Egy figyelmeztetést látok, miszerint az elemzésem nem tartalmaz mértékeket. Ez miért van?** 
+Erősebb véleményvezérek található, javasoljuk, hogy hasonló értékek egyetlen egységbe. Például ha ár metrikája, Ön valószínűleg jobb eredmények eléréséhez létre hasonló árak magas, közepes és alacsony kategóriák és az egyes Árpontok szerint. 
 
-![hiba – nincsnek mértékek](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
+![Több mint 10 egyedi tényezők figyelmeztetés](media/power-bi-visualization-influencers/power-bi-error4.png)
 
 
-Az elemzés az elemzett mező táblaszintjén fut. Ha az ügyfelek lemorzsolódását elemzi, rendelkezhet egy táblával, amely tartalmazza, hogy az ügyfél lemorzsolódott-e vagy sem. Ebben az esetben az elemzés az ügyfél táblaszintjén fog futni.
+**Tényezők a saját adatok, amelyek úgy tűnik, fontos Véleményformálók lehetnek, de ezek nem. Hogyan fordulhat ez elő?**
+
+A következő példában a felhasználók, akiket a fogyasztók alacsony minősítés az értékelések, amelyek túl alacsonyak 14.93: % meghajtó. A rendszergazda szerepkör is rendelkezik alacsony minősítések 13.42 %-os, nagy arányban, de ez nem tekinthető az befolyással bíró személy. 
+
+Ez a döntés oka, hogy a Vizualizáció is figyelembe veszi az adatpontok száma ha véleményvezérek talál. Az alábbi példa a több mint 29,000 fogyasztók és 10-szer kevesebb rendszergazdák, körülbelül 2,900 rendelkezik. Ezek közül csak 390 alacsony értékelésnek adott. A Vizualizáció nem rendelkezik elegendő adat határozza meg, hogy talált egy minta-rendszergazda értékeléssel, vagy csak egy alkalommal keresése. 
+
+![Hogyan véleményvezérek határozza meg](media/power-bi-visualization-influencers/power-bi-error5.png)
+
+**Hogyan kiszámítása kategorikus elemzéshez fontos Véleményformálók?**
+
+A színfalak mögött a mesterséges Intelligencia vizualizációt használ [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) , futtasson logisztikai regressziót a fontos Véleményformálók kiszámításához. A logisztikai regresszió egy statisztikai modell, amely összehasonlítja a különböző csoportokat egymással. 
+
+Ha meg szeretné tekinteni a alacsony minősítések vezérli, megvizsgálja a logisztikai regressziós hogyan az ügyfelek, akik alacsony pontszámmal rendelte az ügyfeleknek, akik rendelte a magas pontszám eltérnek. Ha több kategóriát, például magas, semleges és alacsony pontszámok, hogyan az ügyfeleknek, akik alacsony minősítést kapott eltérnek-e az ügyfelek, akik egy alacsony-besorolása nem tekinti meg. Ebben az esetben hogyan hajtsa végre az ügyfeleknek, akik alacsony pontszámmal rendelte különbözik az ügyfeleknek, akik nagy minősítési vagy semleges minősítést kapott? 
  
-A mértékek és összesítések elemzése alapértelmezés szerint ezen a táblaszinten történik. Ha van egy mértékünk az „Átlagos havi kiadások”-hoz, annak az elemzése az ügyfél táblaszintjén fog történni.  
-
-Ha az ügyfél táblája nem rendelkezik egyedi azonosítóval, nem fogjuk tudni kiértékelni a mértéket, és az elemzés figyelmen kívül fogja azt hagyni. Ennek elkerülése érdekében a metrikával rendelkező táblának (ebben az esetben az ügyfél táblának) egyedi azonosítójának (például ügyfélazonosító) kell lennie. A Power Queryvel könnyen felvehet index oszlopot is.
+A logisztikai regressziós adatok keresi, és hogyan eltérhetnek az ügyfelek, akik egy alacsony értékelésnek rendelte a nagy minősítési rendelte a felhasználókat keres. Ez előfordulhat, hogy a található, például, hogy további támogatási jegyek rendelkező ügyfelek biztosítanak alacsony minősítések néhány vagy nincs támogatási jegyek rendelkező ügyfelek, mint nagyobb százalékban.
  
-**Megjelenik egy figyelmeztetés, miszerint az elemzett metrika több mint 10 egyedi értékkel rendelkezik, és hogy ez befolyásolhatja az elemzésem minőségét. Ez miért van?**  
+A logisztikai regressziós is figyelembe veszi, hány adatpontok jelen. Például ha az ügyfelek, akik a rendszergazdai szerepet adjon arányosan negatív értékeket, de van néhány csak rendszergazdák, ez nem tekinthető meggyőző. Ezt a döntést, mert nincs elegendő adatpont következtetnek ki egy minta érhető el. Egy statisztikai teszt, más néven egy Wald teszt e tényező számít egy befolyással bíró személy meghatározására szolgál. A vizualizáció 0,05-os p értéket használ a küszöbérték meghatározására. 
 
-A mesterséges intelligencián alapuló vizualizáció a kategóriák elemzésére van optimalizálva (például a lemorzsolódás lehet Igen vagy Nem, az ügyfél-elégedettség lehet Magas, Közepes vagy Alacsony stb.) Az elemzendő kategóriák számának emelése azt jelenti, hogy kategóriánként kevesebb megfigyeléssel fogunk rendelkezni, ami miatt a vizualizáció nehezebben fog mintát találni az adatokban. 
+**Hogyan kiszámítása numerikus elemzéshez fontos Véleményformálók?**
 
-Erősebb befolyásoló tényezők találása érdekében javasoljuk, hogy a hasonló értékeket csoportosítsa egyetlen egységbe. Ha például az árhoz rendelkezik metrikával, valószínű, hogy jobb eredményeket kap, ha a hasonló árakat olyan gyűjtőkben csoportosítja, mint a Magas, a Közepes és az Alacsony ahelyett, hogy egyéni árpontokat használna. 
+A színfalak mögött a mesterséges Intelligencia vizualizációt használ [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) futtatásához egy lineáris regressziós a fontos Véleményformálók kiszámításához. Lineáris regresszió statisztikai modell, amely megállapítja, hogy hogyan változik a rendszer elemzése a mező eredményét a magyarázó tényezők alapján.
 
-![hiba – több mint tíz egyedi tényező](media/power-bi-visualization-influencers/power-bi-error4.png)
+Például elemzünk ház árak, ha egy lineáris regressziós fogja végignézni a hatás having egy kiváló konyhai lesz, a ház díja. A kiváló konyha házak általában rendelkeznek kisebb vagy nagyobb ház díjak nélkül kiváló konyha házak képest?
 
-
-**Az adataimban vannak olyan tényezők, amelyek főbb befolyásolóknak látszanak, de valójában nem azok. Hogyan fordulhat ez elő?**
-
-Az alábbi példában látható, hogy azok az ügyfelek, akik felhasználók alacsony értékeléseket adnak (az értékelések 14,93%-a alacsony). Érdekes módon az adminisztrátori szerepkörhöz szintén nagy arányú alacsony értékelések (13,42%) tartoznak, de ez nem számít befolyásoló tényezőnek. 
-
-Ennek az oka az, hogy a vizualizáció az adatpontok számát is figyelembe veszi a befolyásoló tényezők keresésekor. Az alábbi példában több mint 29 000 felhasználó és 10-szer kevesebb adminisztrátor (nagyjából 2900) van. Ráadásul ezek közül csak 390 adott alacsony értékelést. A vizualizáció ezért nem rendelkezik elegendő adattal annak meghatározásához, hogy valóban mintát talált-e az adminisztrátori értékeléseknél, vagy csak véletlenszerűségről van szó.  
-
-![hiba – a befolyásoló tényezők meghatározása](media/power-bi-visualization-influencers/power-bi-error5.png)
-
-**Hogyan történik a főbb befolyásolók kiszámítása?**
-
-A színfalak mögött a mesterséges intelligencia az [ML.NET-et](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) használja logisztikai regresszió futtatásához a főbb befolyásolók kiszámításához. A logisztikai regresszió egy statisztikai modell, amely összehasonlítja a különböző csoportokat egymással. Ha azt keressük, hogy mitől függnek az alacsony értékelések, a logisztikai regressziónak meg kell vizsgálnia, hogy az alacsony pontszámot adó ügyfelek miben különböznek azoktól, akik magas pontszámot adtak. Ha több kategóriával is rendelkezünk (magas pontszám, semleges pontszám, alacsony pontszám), akkor meg kell vizsgálnunk, hogy miben különböznek azok az ügyfelek, akik alacsony pontszámot adtak azoktól, akik nem adtak alacsony pontszámot (miben különböznek azoktól, akik magas VAGY semleges értékelést adtak). 
- 
-A logisztikai regresszió mintákat keres az adatokban, megvizsgálva, hogy miben különbözhetnek azok az ügyfelek, akik alacsony értékelést adtak azoktól, akik magas értékelést adtak. Előfordulhat például, hogy azok az ügyfelek, akik több támogatási jeggyel rendelkeznek magasabb %-ban adnak alacsony értékeléseket, mint azok, akiknek kevés támogatási jegyük, van vagy egyáltalán nincs.
- 
-A logisztikai regresszió azt is figyelembe veszi, hány adatpont található. Ha például az adminisztrátori szerepkörű ügyfelek arányosan több negatív pontszámot adnak, de csak néhány adminisztrátor van, ez nem fog befolyásoló tényezőnek minősülni. Ez azért van, mert nincs elég adatpont, amiből mintára lehetnek következtetni. Egy statisztikai tesztet (Wald tesztet) használunk annak meghatározására, hogy a tényező befolyásoló tényező-e. A vizualizáció 0,05-os p értéket használ a küszöbérték meghatározására. 
-
+A lineáris regressziós is figyelembe veszi az adatpontok száma. Például ha a teniszpályák házak rendelkezik magasabb árakat, de csekély házak, amelyek egy Teniszpálya van, ez nem számít meggyőző. Ezt a döntést, mert nincs elegendő adatpont következtetnek ki egy minta érhető el. Egy statisztikai teszt, más néven egy Wald teszt e tényező számít egy befolyással bíró személy meghatározására szolgál. A vizualizáció 0,05-os p értéket használ a küszöbérték meghatározására. 
 
 **Hogyan történik a szegmensek kiszámítása?**
 
-A színfalak mögött az AI-vizualizáció az [ML.NET-et](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) használja, hogy egy döntési fa alkalmazásával megkeresse az érdekes alcsoportokat. A döntési fa célja az adatpontok egy olyan alcsoportjának a megtalálása, amelyben viszonylag nagy arányban fordul elő a keresett metrika (például az alacsony értékelést adó ügyfelek). 
+A színfalak mögött a mesterséges Intelligencia vizualizációt használ [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) érdekes alcsoportok található döntési fa futtatásához. A döntési fa célja kialakított, amelyek viszonylag magas a az Önt érdeklő metrika adatpontok csoport alcsoportja. Ennek az lehet az ügyfeleknek alacsony válasszák vagy magas árakkal házak.
 
-A döntési fa megvizsgálja mindegyik magyarázó tényezőt, és megpróbálja megindokolni, melyik tényező adja a legjobb „elágazást”. Ha például úgy szűrjük az adatokat, hogy azok csak nagyvállalati ügyfeleket tartalmazzanak, elkülöníti ez azokat az ügyfeleket, akik magas értékelést adtak azoktól, akik alacsonyat? Vagy esetleg jobb lesz az adatokat úgy szűrni, hogy csak a biztonsággal kapcsolatos megjegyzést írt ügyfeleket foglalják magukba? 
+A döntési fa minden magyarázó tényezőt vesz igénybe, és mely tényezőt biztosít, a legjobb OK megpróbálja *felosztása*. Például ha csak a nagyvállalati ügyfelek tartalmazza az adatok szűrése, fog, amely külön ügyfelek, akik egy nagy minősítési és a egy alacsony értékelésnek adott ki? Vagy esetleg jobban, szűrje az adatokat csak a biztonsággal kapcsolatos ellátva felhasználókat felvenni? 
 
-A döntési fa az elágazás után már az adatoknak ezt az alcsoportját veszi figyelembe (például a biztonsággal kapcsolatos megjegyzést írt ügyfeleket), és megpróbálja eldönteni, mi lehet a következő legjobb elágazás csak ezeknél az adatoknál. Az egyes elágazások után megfontolja, hogy az adott alcsoport elegendő adatpontot tartalmaz-e ahhoz, hogy reprezentatív csoportnak számítson a mintára való következtetéshez, vagy pedig csak adatanomáliáról van szó és nem valódi szegmensről. (Másik statisztikai tesztet alkalmazunk az elágazási feltétel statisztikai jelentőségének ellenőrzésére 0,05-os p értékkel.) 
+A döntési fa egy felosztási bekövetkezik, miután vesz igénybe a alcsoport az adatok, és határozza meg, hogy az adatok a következő ajánlott felosztás. Ebben az esetben a alcsoport az ügyfelek, akik biztonsági ellátva. Minden egyes felosztás után azt is figyelembe veszi-e elegendő adatpont a csoport is reprezentatívnak tekinthető elég a mintát, vagy hogy az adatok és a egy valódi szegmens anomáliát célszámítógéppel rendelkezik. A felosztás feltétel statisztikai vételének 0,05 p-értékkel ellenőrzése egy másik statisztikai teszt alkalmazható. 
 
-A döntési fa a futásának befejezése után az elágazások felhasználásával (biztonsági megjegyzések, nagyvállalatok) létrehozza a Power BI-szűrőket. A szűrőknek ez a kombinációja egy szegmensbe csomagolva szerepel a vizualizációban. 
+A döntési fa végeztével biztonsági megjegyzések és a nagyvállalati, például az összes elágazást vesz igénybe, és hozza létre a Power BI szűrők. A szűrőknek ez a kombinációja egy szegmensbe csomagolva szerepel a vizualizációban. 
  
-**Miért válnak bizonyos tényezők befolyásolóvá vagy szűnnek meg befolyásolók lenni, miközben további mezőket húzok át a Magyarázó területre?**
+**Miért ne bizonyos tényezőket véleményvezérek válnak vagy leállítása folyamatban van a véleményvezérek módon be további mezők áthelyezem a *által ismertetik* mező?**
 
-A vizualizáció az összes magyarázó tényezőt együttesen értékeli. Ez azt jelenti, hogy miközben önmagában egy tényező lehet befolyásoló, ha azt más tényezőkkel együtt vizsgáljuk, már lehet, hogy nem az. Képzelje el, hogy azt vizsgáljuk, mitől függ a ház magas ára a hálószobák számát és a ház méretét véve magyarázó tényezőknek: 
-- Önmagában a hálószobák száma okozhatja a magas házárakat 
-- Ha belefoglaljuk a ház méretét az elemzésbe az azt jelenti, hogy azt vizsgáljuk, mi történik a hálószobákkal, miközben a ház mérete állandó marad 
-- Ha a ház méretét 139 m2-ben (1500 sq ft) rögzítjük, nem valószínű, hogy a hálószobák számának folyamatos növelésével drámai módon növekedne a ház ára, tehát a hálószobák száma már lehet, hogy nem olyan fontos tényező, mint a ház méretének figyelembevétele előtt volt. 
+A vizualizáció az összes magyarázó tényezőt együttesen értékeli. Egy tényező lehet, hogy az befolyással bíró személy önmagában, de ha akkor számít, a többi tényező nem lehet-e. Tegyük fel, hogy egy adott díja hirdetései és magyarázó tényezők ház méret magas vezérli elemezni szeretné:
+
+- Önmagában további hirdetései lehet magas ház árak illesztőprogramját.
+- Többek között ház mérete az elemzés azt jelenti, hogy kell kinéznie, hogy mi történik a Hálószobák közben ház méretű állandó marad.
+- Ház mérete 1500 négyzetláb van rögzítve, ha nem valószínű, hogy a Hálószobák száma jelenti folyamatos növekedése jelentősen növeli a ház ár. 
+- Előfordulhat, hogy hirdetései nem, a legfontosabb tényező előtti ház mérete tekintették. 
 
 
 
 
 ## <a name="next-steps"></a>Következő lépések
-[Kombinált diagramok a Power BI-ban](power-bi-visualization-combo-chart.md)
-
-[Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Kombinált diagramok a Power BI-ban](power-bi-visualization-combo-chart.md)
+- [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)

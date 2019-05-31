@@ -1,24 +1,24 @@
 ---
 title: 'Oktatóanyag: Lapszámozott jelentés létrehozása és feltöltése a Power BI szolgáltatásba (előzetes verzió)'
 description: Ebben az oktatóanyagban egy Azure SQL-mintaadatbázishoz csatlakozik. Ezután a Jelentéskészítő varázslójával létrehoz egy lapszámozott jelentést. Ezt követően feltölti a lapszámozott jelentést a Power BI szolgáltatás Prémium szintű kapacitásának egyik munkaterületére.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 15c7d9e922ef7041c6b0f021382cae8d2aca84e9
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: e7baff9a6427578266e08e7bde91be664e46edb9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325243"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60989908"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Oktatóanyag: Lapszámozott jelentés létrehozása és feltöltése a Power BI szolgáltatásba (előzetes verzió)
 
-Ebben az oktatóanyagban egy Azure SQL-mintaadatbázishoz csatlakozik. Ezután a Jelentéskészítő varázslójával létrehoz egy lapszámozott jelentést egy több oldalon átívelő táblázattal. Ezt követően feltölti a lapszámozott jelentést a Power BI szolgáltatás Prémium szintű kapacitásának egyik munkaterületére. A Power BI szolgáltatás lapszámozott jelentései jelenleg előzetes verzióban érhetők el.
+Ebben az oktatóanyagban egy Azure SQL-mintaadatbázishoz csatlakozik. Ezután egy varázsló segítségével a Power BI jelentéskészítő többoldalas jelentés létrehozása egy táblával, amely több oldalra. Ezt követően feltölti a lapszámozott jelentést a Power BI szolgáltatás Prémium szintű kapacitásának egyik munkaterületére. A Power BI szolgáltatás lapszámozott jelentései jelenleg előzetes verzióban érhetők el.
 
 ![Lapszámozott jelentés a Power BI szolgáltatásban](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -26,7 +26,7 @@ A jelen oktatóanyagban az alábbi lépéseket fogja végrehajtani:
 
 > [!div class="checklist"]
 > * Azure-mintaadatbázis létrehozása.
-> * Mátrix létrehozása a Jelentéskészítőben egy varázslóval.
+> * Hozzon létre egy mátrix Power BI jelentéskészítő egy varázsló segítségével.
 > * A jelentés formázása címmel, oldalszámokkal és oszlopfejlécekkel minden oldalon.
 > * A pénznem formázása.
 > * Jelentés feltöltése a Power BI szolgáltatásba.
@@ -37,18 +37,18 @@ Ha még nincs Azure-előfizetése, kezdés előtt hozzon létre egy [ingyenes fi
 
 Lapszámozott jelentések létrehozásának előfeltételei:
 
-- Telepítse a [Jelentéskészítőt a Microsoft letöltőközpontból](http://go.microsoft.com/fwlink/?LinkID=734968). 
+- Telepítés [Power BI jelentéskészítő a Microsoft letöltőközpontból](https://go.microsoft.com/fwlink/?linkid=2086513). 
 
 - Kövese az [Azure SQL-mintaadatbázis létrehozása az Azure Portalon](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) című rövid útmutató lépéseit. Másolja ki és mentse az **Áttekintés** lap **Kiszolgálónév** mezőjének értékét. Jegyezze meg az Azure-ban létrehozott felhasználónevet és jelszót.
 
 A lapszámozott jelentés a Power BI szolgáltatásba való feltöltésének előfeltételei:
 
 - [Power BI Pro-licencre](service-admin-power-bi-pro-in-your-organization.md) lesz szüksége.
-- Egy [Power BI Premium-kapacitásban](service-premium.md) található alkalmazás-munkaterület. A munkaterület neve mellett egy gyémánt ikon látható ![prémium gyémánt ikon](media/paginated-reports-quickstart-aw/premium-diamond.png).
+- Egy [Power BI Premium-kapacitásban](service-premium-what-is.md) található alkalmazás-munkaterület. A munkaterület neve mellett egy gyémánt ikon látható ![prémium gyémánt ikon](media/paginated-reports-quickstart-aw/premium-diamond.png).
 
 ## <a name="create-the-matrix-with-a-wizard"></a>A mátrix létrehozása a varázslóval
   
-1.  Indítsa el a Jelentéskészítőt a számítógépen.  
+1.  Indítsa el a Power BI jelentéskészítő a számítógépről.  
   
      Ekkor megjelenik az **Első lépések** párbeszédpanel.  
   
@@ -249,7 +249,7 @@ A jelentés futtatásakor megfigyelhette, hogy a dollárban megadott mennyisége
 
     ![Pénznemértékkel rendelkező cellák kijelölése](media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png)
 
-2. A **kezdőlapon** válassza a dollárjel (**$**) pénznemszimbólumot, majd válassza a **Helyőrzőstílusok** > **Mintaértékek** elem melletti nyilat.
+2. A **kezdőlapon** válassza a dollárjel ( **$** ) pénznemszimbólumot, majd válassza a **Helyőrzőstílusok** > **Mintaértékek** elem melletti nyilat.
  
     ![Mintaértékek megjelenítése](media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png)
 

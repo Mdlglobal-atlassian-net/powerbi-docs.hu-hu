@@ -11,11 +11,11 @@ ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 6d8471833dac99aa3c54b40f5839e65edfaa03de
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008971"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61164480"
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Kapcsolódás a Microsoft Dynamics NAV-hoz a Power BI-jal
 A Power BI használatával egyszerűen elemezheti Microsoft Dynamics NAV-adatait. A Power BI lekéri az értékesítési és a pénzügyi adatokat is, majd irányítópultot és jelentést is magában foglaló alkalmazást készít az adatok alapján. A Power BI-nak szüksége van az Ön engedélyeire az adatokat tartalmazó táblákhoz, ebben az esetben az értékesítési és pénzügyi adatokhoz. A követelményekről alább talál további információkat. Az alkalmazás telepítése után az irányítópultot és a jelentéseket a Power BI szolgáltatásban ([https://powerbi.com](https://powerbi.com)) és a Power BI-mobilalkalmazásokban is megtekintheti. 

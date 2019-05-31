@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 2de78497698af3ee00ce77ef9c389169ef460546
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: aad02103903837afbb7bbce48ab9607b5dbf62c3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58382807"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65099637"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>A Power BI-szolgáltatásadminisztrátor szerepkör ismertetése
 
@@ -39,7 +39,7 @@ A Power BI-szolgáltatásadminisztrátori szerepkör nem teszi lehetővé az al�
 
 A Microsoft 365 Felügyeleti központban felhasználók Power BI-rendszergazdai szerepkörhöz rendeléséhez kövesse az alábbi lépéseket:
 
-1. A Microsoft 365 Felügyeleti központjában válassza a **Felhasználók** > **Aktív felhasználók** elemet.
+1. Az a [Microsoft 365 felügyeleti központban](https://portal.office.com/adminportal/home#/homepage)válassza **felhasználók** > **aktív felhasználók**.
 
     ![Microsoft 365 Felügyeleti központ](media/service-admin-role/powerbi-admin-users.png)
 
@@ -61,9 +61,14 @@ Most már láthatja, hogy a **Power BI-szolgáltatásadminisztrátor** megjelöl
 
 ## <a name="assign-users-to-the-admin-role-with-powershell"></a>Felhasználók hozzárendelése a rendszergazdai szerepkörhöz a PowerShellben
 
-Felhasználókat a PowerShell-lel is hozzárendelhet szerepkörökhöz. Őket az Azure Active Directoryban (Azure AD) kezelheti. Ha még nem rendelkezik az Azure AD PowerShell-modullal, [töltse le és telepítse a legújabb verziót](https://www.powershellgallery.com/packages/AzureAD/).
+Felhasználókat a PowerShell-lel is hozzárendelhet szerepkörökhöz. Felhasználók kezelése az Azure Active Directoryban (Azure AD) történik. Ha még nem rendelkezik az Azure AD PowerShell-modullal, [töltse le és telepítse a legújabb verziót](https://www.powershellgallery.com/packages/AzureAD/).
 
-1. Elsőként be kell szereznie a **Power BI-szolgáltatásadminisztrátor** szerepkörhöz tartozó **ObjectId** paramétert. Az **ObjectId** beszerzéséhez futtathatja a [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) parancsot
+1. Először csatlakozzon az Azure ad-hez:
+   ```
+   PS C:\Windows\system32> Connect-AzureAD
+   ```
+
+1. Második, lekérése a **ObjectId** számára a **Power BI-Szolgáltatásadminisztrátor** szerepkör. Az **ObjectId** beszerzéséhez futtathatja a [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) parancsot
 
     ```
     PS C:\Windows\system32> Get-AzureADDirectoryRole
@@ -85,7 +90,7 @@ Felhasználókat a PowerShell-lel is hozzárendelhet szerepkörökhöz. Őket az
 1. Ezután szerezze be a felhasználó **ObjectId** paraméterét. Ezt a [Get-AzureADUser](/powershell/module/azuread/get-azureaduser) parancs futtatásával szerezheti be.
 
     ```
-    PS C:\Windows\system32> Get-AzureADUser -SearchString 'tim@contoso.com'
+    PS C:\Windows\system32> Get-AzureADUser -ObjectId 'tim@contoso.com'
 
     ObjectId                             DisplayName UserPrincipalName      UserType
     --------                             ----------- -----------------      --------
