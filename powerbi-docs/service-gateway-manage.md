@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9a2fac64959ece431471eb8d3f32961c9d592c66
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: 5d9e468ecf3bf1fdc2e138ac06202820bbd96bcf
+ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324852"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469798"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Helyszíni Power BI-átjáró kezelése
 
@@ -38,26 +38,26 @@ A Power BI sokféle helyszíni adatforrást támogat, és ezek mindegyikéhez sa
 
     ![Átjárók kezelése](media/service-gateway-manage/manage-gateways.png)
 
-2. Választhat egy átjárót, majd az **Adatforrás hozzáadása** lehetőséget, vagy választhatja az Átjárók alatti **Adatforrás hozzáadása** lehetőséget.
+1. Választhat egy átjárót, majd az **Adatforrás hozzáadása** lehetőséget, vagy választhatja az Átjárók alatti **Adatforrás hozzáadása** lehetőséget.
 
     ![Adatforrás hozzáadása](media/service-gateway-manage/add-data-source.png)
 
-3. Válassza ki az **Adatforrás típusát**.
+1. Válassza ki az **Adatforrás típusát**.
 
     ![SQL Server kiválasztása](media/service-gateway-manage/select-sql-server.png)
 
 
-4. Adja meg az adatforrás adatait. Itt adható meg például a **Kiszolgáló**, az **Adatbázis** és több más információ is.  
+1. Adja meg az adatforrás adatait. Itt adható meg például a **Kiszolgáló**, az **Adatbázis** és több más információ is.  
 
     ![Adatforrás beállításai](media/service-gateway-manage/data-source-settings.png)
 
-5. Az SQL Serverhez a **Windows** vagy az **Alapszintű** (SQL-hitelesítés) **Hitelesítési módszer** választható.  Ha az **Alapszintűt** választja, akkor meg kell adnia az adatforrás eléréséhez szükséges hitelesítő adatokat.
+1. Az SQL Serverhez a **Windows** vagy az **Alapszintű** (SQL-hitelesítés) **Hitelesítési módszer** választható.  Ha az **Alapszintűt** választja, akkor meg kell adnia az adatforrás eléréséhez szükséges hitelesítő adatokat.
 
-6. A **Speciális beállítások** alatt beállíthatja az adatforráshoz alkalmazandó [adatvédelmi szintet](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)) (a [DirectQuery](desktop-directquery-about.md)-re nem érvényes).
+1. A **Speciális beállítások** alatt beállíthatja az adatforráshoz alkalmazandó [adatvédelmi szintet](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) (a [DirectQuery](desktop-directquery-about.md)-re nem érvényes).
 
     ![Speciális beállítások](media/service-gateway-manage/advanced-settings.png)
 
-7. Válassza a **Hozzáadás** elemet. Ha a folyamat sikerrel zárult, megjelenik a *Sikeres csatlakozás* üzenet.
+1. Válassza a **Hozzáadás** elemet. Ha a folyamat sikerrel zárult, megjelenik a *Sikeres csatlakozás* üzenet.
 
     ![Sikeres csatlakozás](media/service-gateway-manage/connection-successful.png)
 
