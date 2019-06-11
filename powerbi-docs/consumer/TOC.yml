@@ -176,12 +176,20 @@
           items:
             - name: Első lépések az iOS-alkalmazással
               href: mobile/mobile-iphone-app-get-started.md
+            - name: 'Védelem a Face ID, a Touch ID vagy PIN-kód használatával'
+              href: mobile/mobile-ios-native-secure-access.md
             - name: Q&A virtuális elemző az iOS-es mobilalkalmazásokban
               href: mobile/mobile-apps-ios-qna.md
+            - name: Power BI mobilalkalmazás-integráció Siri-parancsikonokkal
+              href: mobile/mobile-apps-iOS-siri-Shortcuts.md
+            - name: iOS-eszköz keresési integrációja
+              href: mobile/mobile-apps-iOS-search-integration.md
             - name: Apple Watchra készült Power BI alkalmazás
               href: mobile/mobile-apple-watch.md
             - name: Vonalkód beolvasása az iPhone-ján lévő alkalmazásból
               href: mobile/mobile-apps-scan-barcode-iphone.md
+            - name: Konfigurálás mobileszköz-kezelés használatával
+              href: mobile/mobile-app-configuration.md
         - name: Androidos eszközök
           items:
             - name: Első lépések az Android-alkalmazással
