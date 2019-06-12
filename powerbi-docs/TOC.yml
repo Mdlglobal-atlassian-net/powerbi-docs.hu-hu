@@ -681,9 +681,9 @@
               href: service-dataflows-configure-workspace-storage-settings.md
             - name: CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)
               href: service-dataflows-add-cdm-folder.md
-            - name: A Machine Learning integrálása a Power BI-jal (forhåndsversjon)
+            - name: A Machine Learning integrálása a Power BI-jal
               href: service-machine-learning-integration.md
-            - name: Cognitive Services-szolgáltatások használata a Power BI-ban (Előzetes verzió)
+            - name: A Cognitive Services használata a Power BI-ban
               href: service-cognitive-services.md
             - name: Automatizált Machine Learning a Power BI-ban (előzetes verzió)
               href: service-machine-learning-automated.md
@@ -745,8 +745,6 @@
               href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Nem támogatott adatforrás frissítési hibáinak elhárítása
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-            - name: Szövegként visszaadott beágyazott értékek hibaelhárítása
-              href: service-troubleshooting-nested-values.md
             - name: Az Azure SQL Database ütemezett frissítési hibáinak elhárítása
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: 'Hiba: Nem található adat az Excel-munkafüzetben'
@@ -927,6 +925,8 @@
           href: service-premium-incremental-refresh.md
         - name: Multi-Geo konfigurálása
           href: service-admin-premium-multi-geo.md
+        - name: A saját titkosítási kulcsok használata
+          href: service-encryption-byok.md
         - name: Prémium szintű kapacitás újraindítása
           href: service-admin-premium-restart.md
         - name: Csatlakozás adatkészletekhez ügyfélalkalmazásokkal és ügyféleszközökkel
