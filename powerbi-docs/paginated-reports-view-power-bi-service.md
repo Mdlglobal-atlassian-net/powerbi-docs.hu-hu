@@ -1,5 +1,5 @@
 ---
-title: Lapszámozott jelentés megtekintése a Power BI szolgáltatásban (előzetes verzió)
+title: Lapszámozott jelentés megtekintése a Power BI szolgáltatásban
 description: Ebből az oktatóanyagból elsajátíthatja, hogyan tekinthet meg lapszámozott jelentéseket a Power BI szolgáltatásban.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 8a87cb292da1a1fb3f4fc3e14d569ad8c97c60b6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f80b13ccd1393e98199acbcaabfbf80ad63707c8
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769672"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839587"
 ---
-# <a name="view-a-paginated-report-in-the-power-bi-service-preview"></a>Lapszámozott jelentés megtekintése a Power BI szolgáltatásban (előzetes verzió)
+# <a name="view-a-paginated-report-in-the-power-bi-service"></a>Lapszámozott jelentés megtekintése a Power BI szolgáltatásban
 
 Ebből a cikkből elsajátíthatja, hogyan tekinthet meg lapszámozott jelentéseket a Power BI szolgáltatásban. A lapszámozott jelentéseket a Jelentéskészítőben hozzák létre, és bármely munkaterületre feltölthetik egy prémium szintű kapacitásban. Keresse a gyémánt ikont ![A Power BI Premium-kapacitás gyémánt ikonja](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) a munkaterület neve mellett. 
 
@@ -55,4 +55,4 @@ A lapszámozott jelentéseket számos formátumba exportálhatja:
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Mik a lapszámozott jelentések a Power BI Premiumban? (előzetes verzió)](paginated-reports-report-builder-power-bi.md)
+[Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 08a2de32b092ba24b66ddd9f173be1eaea8819ab
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3400071c6b8cee472bb61475e6d3482189680563
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61394464"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66840119"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Szalagdiagramok használata a Power BI-ban
 Szalagdiagramok használatával megjelenítheti az adatokat, és gyorsan felderítheti a legmagasabb rangú (legnagyobb értéket képviselő) adatkategóriát. A szalagdiagramokkal hatékonyan ábrázolható a rangok időbeli változása: minden időszakban a legmagasabb rangú (értékű) kategória látható felül. 
@@ -27,7 +27,7 @@ A leírás követéséhez nyissa meg a [Kiskereskedelmi elemzési minta jelenté
 
 1. Szalagdiagram létrehozásához válassza a **szalagdiagram** lehetőséget a **Vizualizációk** panelen.
 
-    ![vizualizációs sablonok](media/desktop-ribbon-charts/ribbon-charts_02.png)
+    ![vizualizációs sablonok](media/desktop-ribbon-charts/power-bi-template.png)
 
     A szalagdiagramok szalagok segítségével kapcsolják az adatkategóriákat a vizualizált időfolyamhoz, így megtekintheti, hogy az egyes kategóriák milyen rangsorban állnak egymáshoz képest a diagram x tengelyén (amely általában az idővonal).
 

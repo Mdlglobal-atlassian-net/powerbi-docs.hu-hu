@@ -1,5 +1,5 @@
 ---
-title: Paraméterek megtekintése lapszámozott jelentésekhez a Power BI szolgáltatásban (előzetes verzió)
+title: Lapszámozott jelentések paramétereinek megtekintése a Power BI szolgáltatásban
 description: Ebből a cikkből a lapszámozott jelentések paramétereinek kezelését sajátíthatja el a Power BI szolgáltatásban.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: ea186b5fa3bbbe7968c386604066f91b90ec5821
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 100d8b5d25f7d844ea4f44d63a4d2cb9737f57a9
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61422224"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839504"
 ---
-# <a name="view-parameters-for-paginated-reports-in-the-power-bi-service-preview"></a>Paraméterek megtekintése lapszámozott jelentésekhez a Power BI szolgáltatásban (előzetes verzió)
+# <a name="view-parameters-for-paginated-reports-in-the-power-bi-service"></a>Lapszámozott jelentések paramétereinek megtekintése a Power BI szolgáltatásban
 
 Ebből a cikkből a lapszámozott jelentések paramétereinek kezelését sajátíthatja el a Power BI szolgáltatásban.  A jelentés paraméterei a jelentésadatok szűrésére kínálnak módot. A paraméterek az elérhető értékek listáját kínálják fel, amelyek közül Ön egyet vagy többet választhat. Bizonyos esetekben a paraméterek alapértelmezett értékkel rendelkeznek, más esetekben értéket kell választania, hogy megtekinthesse a jelentést.  
 

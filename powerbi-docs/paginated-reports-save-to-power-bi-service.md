@@ -1,5 +1,5 @@
 ---
-title: Lapszámozott jelentés közzététele a Power BI szolgáltatásban (előzetes verzió)
+title: Lapszámozott jelentés közzététele a Power BI szolgáltatásban
 description: Ez az oktatóanyag arról szól, hogyan tehet közzé lapszámozott jelentéseket a Power BI szolgáltatásba, a helyi számítógépről feltöltve őket.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 93b712d385b78ea806e57769da72bdf41fbaefc3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1e5f4a4fda8c6d11ead487ce2891e5c085463b75
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61424008"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839602"
 ---
-# <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Lapszámozott jelentés közzététele a Power BI szolgáltatásban (előzetes verzió)
+# <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Lapszámozott jelentés közzététele a Power BI szolgáltatásban
 
 Ebből az oktatóanyagból a helyi számítógépről feltöltött lapszámozott jelentések Power BI szolgáltatásba való közzétételét sajátíthatja el. Lapszámozott jelentéseket a saját munkaterületre, vagy bármely más munkaterületre is feltölthet, ha a munkaterület prémium szintű kapacitásban van. Keresse a gyémánt ikont ![A Power BI Premium-kapacitás gyémánt ikonja](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) a munkaterület neve mellett. 
 
@@ -89,5 +89,5 @@ Az átjárók jelenleg nem támogatják a többértékű paramétereket.
 ## <a name="next-steps"></a>Következő lépések
 
 - [Lapszámozott jelentés megtekintése a Power BI szolgáltatásban](paginated-reports-view-power-bi-service.md)
-- [Mik azok a lapszámozott jelentések a Power BI Premiumban? (előzetes verzió)](paginated-reports-report-builder-power-bi.md)
+- [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)
 

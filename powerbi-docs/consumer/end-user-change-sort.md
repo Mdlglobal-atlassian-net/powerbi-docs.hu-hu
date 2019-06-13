@@ -1,24 +1,24 @@
 ---
 title: A diagramok rendezésének módosítása egy jelentésben
-description: A diagramok rendezésének módosítása egy Power BI-jelentésben
+description: Diagramok rendezésének módosítása Power BI-jelentésekben
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: Conceptual
+ms.topic: conceptual
 ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 67246168b5387f49e7bda22e470f5a908a4bff9b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: aa6193045ba1c399eaae1b48bf813738edba99f1
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65608241"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66750840"
 ---
-# <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>A diagramok rendezésének módosítása egy Power BI-jelentésben
+# <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Diagramok rendezésének módosítása Power BI-jelentésekben
 A Power BI-jelentésekben a legtöbb vizualizációt rendezheti a kategóriáinak neve alapján betűrendben vagy az egyes kategóriák számértéke szerint. Ez a diagram például az **üzlet neve** kategória szerint van rendezve.
 
 ![sávdiagram ábécé szerint rendezett X-tengellyel](media/end-user-change-sort/pbi_chartsortcategory.png)
