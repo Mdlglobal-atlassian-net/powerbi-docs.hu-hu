@@ -257,8 +257,6 @@
               href: desktop-add-column-from-example.md
             - name: Egyéni oszlop hozzáadása
               href: desktop-add-custom-column.md
-            - name: Környezethez alkalmazkodó vizuális elemek létrehozása
-              href: visuals/desktop-create-responsive-visuals.md
             - name: Beágyazott hierarchiák feliratainak használata a Power BI Desktopban
               href: desktop-inline-hierarchy-labels.md
             - name: Numerikustartomány-szeletelő használata
@@ -689,24 +687,6 @@
               href: service-machine-learning-automated.md
         - name: Többoldalas jelentések a Power BI-ban
           items:
-            - name: Mik azok a többoldalas jelentések? (Előzetes verzió)
-              href: paginated-reports-report-builder-power-bi.md
-            - name: Gyakori kérdések a többoldalas jelentésekről (előzetes verzió)
-              href: paginated-reports-faq.md
-            - name: Többoldalas jelentés készítése és feltöltése (előzetes verzió)
-              href: paginated-reports-quickstart-aw.md
-            - name: Eligazodás a Jelentéstervező nézetben (előzetes verzió)
-              href: paginated-reports-report-design-view.md
-            - name: Adatok megadása közvetlenül többoldalas jelentésben (előzetes verzió)
-              href: paginated-reports-enter-data.md
-            - name: Beágyazott adatforrás létrehozása (előzetes verzió)
-              href: paginated-reports-embedded-data-source.md
-            - name: Beágyazott adatkészlet létrehozása (előzetes verzió)
-              href: paginated-reports-create-embedded-dataset.md
-            - name: Paraméterek létrehozása (előzetes verzió)
-              href: paginated-reports-parameters.md
-            - name: Többoldalas jelentés közzététele (előzetes verzió)
-              href: paginated-reports-save-to-power-bi-service.md
             - name: Többoldalas jelentés megtekintése (előzetes verzió)
               href: paginated-reports-view-power-bi-service.md
             - name: Paraméterek használata (előzetes verzió)
@@ -931,6 +911,52 @@
           href: service-admin-premium-restart.md
         - name: Csatlakozás adatkészletekhez ügyfélalkalmazásokkal és ügyféleszközökkel
           href: service-premium-connect-tools.md
+- name: A Power BI többoldalas jelentéskészítője
+  items:
+    - name: Áttekintés
+      items:
+        - name: Mik azok a többoldalas jelentések?
+          href: paginated-reports-report-builder-power-bi.md
+        - name: Jelentéskészítő a Power BI-ban
+          href: report-builder-power-bi.md
+    - name: Oktatóanyagok
+      items:
+        - name: Többoldalas jelentés készítése és feltöltése
+          href: paginated-reports-quickstart-aw.md
+    - name: Fogalmak
+      items:
+        - name: Eligazodás a Jelentéstervező nézetben
+          href: paginated-reports-report-design-view.md
+        - name: Jelentés megtervezése
+          href: report-builder-planning-report.md
+        - name: Jelentéskészítő adatai
+          href: report-builder-data.md
+        - name: Tervezési tippek
+          href: report-builder-design-tips.md
+        - name: 'Táblák, mátrixok, listák'
+          href: report-builder-tables-matrices-lists.md
+        - name: Paraméterek
+          href: report-builder-parameters.md
+        - name: Kifejezések
+          href: report-builder-expressions.md
+        - name: Példák kifejezésekre
+          href: report-builder-expression-examples.md
+        - name: Jelentések megtekintése előnézetben
+          href: report-builder-previewing-reports.md
+        - name: Gyakori kérdések a többoldalas jelentésekről
+          href: paginated-reports-faq.md
+    - name: Útmutató
+      items:
+        - name: Adatok megadása közvetlenül többoldalas jelentésben
+          href: paginated-reports-enter-data.md
+        - name: Beágyazott adatforrás létrehozása
+          href: paginated-reports-embedded-data-source.md
+        - name: Beágyazott adathalmaz létrehozása
+          href: paginated-reports-create-embedded-dataset.md
+        - name: Paraméterek létrehozása
+          href: paginated-reports-parameters.md
+        - name: Többoldalas jelentés közzététele
+          href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI fejlesztőknek
   items:
     - name: Mire használhatják a fejlesztők a Power BI-t?
