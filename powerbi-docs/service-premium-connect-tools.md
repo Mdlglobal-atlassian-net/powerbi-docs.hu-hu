@@ -1,6 +1,6 @@
 ---
-title: Csatlakozás a Power BI Premium-adatkészletek (előzetes verzió) eszközök és az ügyfélalkalmazások számára
-description: Csatlakozás adathalmazokhoz a Power BI Premium ügyfélalkalmazások és az eszközök módját ismerteti.
+title: Csatlakozás Power BI Premium-adathalmazokhoz ügyfélalkalmazásokkal és eszközökkel (előzetes verzió)
+description: A Power BI Premiumbeli adathalmazokhoz ügyfélalkalmazásokkal és eszközökkel való kapcsolódás leírása.
 author: minewiskan
 ms.author: owend
 manager: kfile
@@ -8,111 +8,109 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 05/31/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 063f43cb2345ccb3d1fec5c414100beb8ccde451
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b671d2f55135312fb529d4b4b30af3941c525a26
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65941499"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448321"
 ---
-# <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Csatlakozás adathalmazokhoz az ügyfél-alkalmazások és eszközök (előzetes verzió)
+# <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Csatlakozás adathalmazokhoz ügyfélalkalmazásokkal és eszközökkel (előzetes verzió)
 
-A Power BI Premium-munkaterületek és adatkészletek támogatási *csak olvasható* kapcsolatok a Microsoft és külső ügyfél-alkalmazások és eszközök. 
+A Power BI Premium-munkahelyek és -adathalmazok *csak olvasási* kapcsolatokat támogatnak microsoftos és külső ügyfélalkalmazásoktól és eszközöktől. 
 
 > [!NOTE]
-> Ez a cikk csak be a Power BI prémium szintű munkaterületeken és az adatkészletek csak olvasható kapcsolat célja. Ez *nem* programozhatóság, eszközöket és alkalmazásokat, architektúra és felügyeleti munkaterületet, és az adatkészlet kapcsolatos részletes információk megadására szolgál. Az itt ismertetett témák Analysis Services táblázatos modellű adatbázis-architektúra és felügyeleti alapos ismerete szükséges.
+> Ennek a cikknek csak az a célja, hogy bemutassa a csak olvasási kapcsolódást a Power BI Premium-munkahelyekhez és adathalmazokhoz. *Nem* célja részletes információt nyújtani a programozhatóságról, az egyes eszközökről és alkalmazásokról, az architektúráról és a munkaterület- és adathalmaz-kezelésről. Az itt ismertetett témák az Analysis Services táblázatos modellű adatbázis-architektúrájának és felügyeletének alapos ismeretét igénylik.
 
 ## <a name="protocol"></a>Protokoll
 
-A Power BI Premium használja a [XML for Analysis](https://docs.microsoft.com/bi-reference/xmla/xml-for-analysis-xmla-reference) (XMLA) protokoll ügyfél-alkalmazások és a motor, amely a-munkaterületek és adatkészletek közötti kommunikációhoz. Ezek a kommunikációk rendszer milyen gyakran nevezik XMLA végpontok. Az XMLA ugyanazt a kommunikációs protokollt használják a Microsoft Analysis Services motort, amely technikai részletek, futtatja a Power BI szemantikai modellezés, cégirányítási, életciklusát és data management. 
+A Power BI Premium az [XML for Analysis](https://docs.microsoft.com/bi-reference/xmla/xml-for-analysis-xmla-reference) (XMLA) protokoll használja az ügyfélalkalmazások és a munkaterületeket és adathalmazokat kezelő motor közötti kommunikációhoz. Ez a kommunikáció az úgynevezett XMLA-végpontok között zajlik. Az XMLA ugyanaz a kommunikációs protokoll, amelyet a Microsoft Analysis Services motorja használ, a háttérben pedig ez működteti a Power BI-beli szemantikai modellezést, irányítást, életciklusokat és adatkezelést. 
 
-Ügyfél-alkalmazások és eszközök túlnyomó többsége nem explicit módon kommunikálnak a motor az XMLA-végpont használatával. Például az MSOLAP ADOMD és AMO klienskódtárak ehelyett az ügyfélalkalmazás és a motor, amely kizárólag az XMLA használatával kommunikál közötti közvetítőként használnak.
+Az ügyféloldali alkalmazások és eszközök túlnyomó többsége nem célzottan kommunikál a motorral az XMLA-végpontok használatával. Ehelyett ügyféloldali (például MSOLAP, ADOMD és AMO) kódtárakat használnak közvetítőként az ügyfélalkalmazás és a kizárólag XMLA használatával kommunikáló motor között.
 
 
 ## <a name="supported-tools"></a>Támogatott eszközök
 
-Ezek az eszközök támogatják a Power BI prémium szintű munkaterületeken és az adatkészletek a csak olvasható hozzáférést:
+A Power BI Premium-munkaterületekhez és -adathalmazokhoz való csak olvasási hozzáférést az alábbi eszközök támogatják:
 
-**Az SQL Server Management Studio (SSMS)** – támogatja a DAX, MDX, XMLA és TraceEvent lekérdezéseket. 18.0 verzióját igényli. Töltse le [Itt](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
+**SQL Server Management Studio (SSMS)** – Támogatja a DAX-, MDX-, XMLA- és TraceEvent-lekérdezéseket. 18\.0-ás verziót igényel. Letölthető [itt](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
 
-**Az SQL Server Profiler** – SSMS 18.0 (előzetes verzió) részét képező, az eszköz biztosít nyomkövetéséhez és a kiszolgáló eseményeit. Rögzítése, és mentse kapcsolatos minden egyes esemény egy fájlhoz vagy tábla később elemzéséhez. Az SQL Server hivatalosan elavult, bár a Profiler továbbra is szerepelnie az ssms-ben, és továbbra is a támogatott Analysis Services és a most már a Power BI Premium. További tudnivalókért lásd: [SQL Server Profiler](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler).
+**SQL Server Profiler** – Ez az SSMS 18.0 (előzetes verzió) által tartalmazott eszköz a kiszolgálói események nyomkövetését és hibakeresését biztosítja. Minden esemény adatai rögzíthetők és fájlba vagy táblázatba menthetők a későbbi elemzéshez. Bár az SQL Serverhez hivatalosan kivontuk, a Profilert továbbra is tartalmazza az SSMS, a támogatása megmarad az Analysis Serviceshez, és most a Power BI Premiumhoz is. További információt az [SQL Server Profiler](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler) című cikkben talál.
 
-**A DAX-Studio** – nyílt forráskódú, közösségi eszköz végrehajtása és elemzése a DAX lekérdezés Analysis Services. Szükséges 2.8.2-es verzió vagy újabb verziója. További tudnivalókért lásd: [daxstudio.org](https://daxstudio.org/).
+**DAX Studio** – Nyílt forráskódú, közösségi eszköz DAX-lekérdezések végrehajtásához és elemzéséhez az Analysis Servicesen. 2\.8.2-es vagy újabb verziót igényel. További információt a [daxstudio.org](https://daxstudio.org/) webhelyen talál.
 
-**Excel-kimutatások** - vagy újabb 16.0.11326.10000 az Office Kattintásra kattintson verzióra szükség.
+**Excel kimutatások** – Az Office Kattintásra 16.0.11326.10000 vagy újabb verzióját igényli.
 
-**Harmadik féltől származó** - ügyfélalkalmazások adatokat Vizualizációk és kapcsolódhatnak az eszközök, lekérdezés, és adatkészleteket a Power BI Premium a felhasználni. A legtöbb az eszközök csak a legújabb verziókat MSOLAP-klienskódtár, de néhány ADOMD használhatja.
+**Külső eszközök** – Ide tartoznak azok az adatvizualizációs alkalmazások és eszközök, amelyek képesek kapcsolódni, lekérdezéseket végezni és adatokat használni Power BI Premium-beli adathalmazokban. Az eszközök többsége az MSOLAP-ügyfélkönyvtárak legújabb verzióit igényli, néhány viszont az ADOMD-t használja.
 
 ## <a name="client-libraries"></a>Ügyfélkódtárak
 
-Ügyféloldali függvénytárak is ügyfélalkalmazások és az eszközök csatlakozni a Power BI Premium-munkaterület szükséges. Az Analysis Serviceshez való csatlakozáshoz használt azonos ügyfélkódtárak is támogatottak a Power BI Premium. Microsoft ügyfélalkalmazások, mint az Excel, az SQL Server Management Studio (SSMS) és az SQL Server Data Tools (SSDT) telepítése mindhárom ügyfélkódtárat, és frissítse azokat rendszeres alkalmazásfrissítéseknél együtt. Különösen a harmadik féltől származó alkalmazások és eszközök, bizonyos esetekben szükség lehet a klienskódtárak újabb verzióját telepítse. Ügyfélkódtárak havonta frissülnek. További tudnivalókért lásd: [klienskódtárak csatlakozik az Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
+Ahhoz, hogy az ügyféloldali alkalmazások és eszközök csatlakozni tudjanak a Power BI Premium-munkaterületekhez, ügyfélkódtárakra van szükség. Az Analysis Serviceshez való kapcsolódáshoz használt ügyfélkódtárak a Power BI Premiumban is támogatva vannak. Az olyan Microsoft-ügyfélalkalmazások, mint az Excel, az SQL Server Management Studio (SSMS) és az SQL Server Data Tools (SSDT) mindhárom ügyfélkódtárat telepítik és a rendszeres alkalmazásfrissítésekkel együtt frissítik. Bizonyos esetekben a külső alkalmazásokhoz és eszközökhöz szükség lehet az ügyfélkódtárak újabb verzióinak telepítésére. Az ügyfélkódtárak havonta vannak frissítve. További információt az [Ügyfélkódtárak az Analysis Serviceshez való csatlakozáshoz](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) című cikkben talál.
 
-## <a name="connecting-to-a-premium-workspace"></a>Csatlakozás egy prémium munkaterület
+## <a name="connecting-to-a-premium-workspace"></a>Csatlakozás Premium-munkaterülethez
 
-Dedikált prémium szintű kapacitások rendelt munkaterületek csatlakozhat. Egy dedikált kapacitáshoz rendelve munkaterületekre egy kapcsolati karakterláncot az URL-formátum. 
+Csatlakozhat a prémium szintű dedikált kapacitásokhoz rendelt munkaterületekhez. A dedikált kapacitáshoz rendelt munkaterületnek van egy URL-formátumú kapcsolati sztringje. 
 
-A munkaterület-kapcsolati karakterlánc lekérése a Power BI-ban a **munkaterület beállításainak**, a a **prémium szintű** lap **munkaterület kapcsolat**, kattintson a **másolása**.
+A munkaterület kapcsolati sztringjét úgy kaphatja meg, hogy a Power BI-ban a **Prémium** lapon a **Munkaterület beállításai** alatt a **Munkaterület kapcsolata** mező **Másolás** lehetőségére kattint.
 
-![Munkaterület kapcsolati karakterlánc](media/service-premium-connect-tools/connect-tools-workspace-connection.png)
+![Munkaterület kapcsolati sztringje](media/service-premium-connect-tools/connect-tools-workspace-connection.png)
 
-Munkaterület kapcsolatok formátuma a következő URL-cím használatával oldja meg a munkaterület, mintha egy Analysis Services-kiszolgáló neve:   
+A munkaterület-kapcsolati sztringek a következő URL-formátumban úgy hivatkoznak a munkaterületre, mintha egy Analysis Services-kiszolgáló neve lenne:   
 `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]` 
 
-Ha például `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`
-> [!NOTE]
-> `[workspace name]` a kis-és nagybetűket, és szóközöket is tartalmazhatnak. 
+Például: `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`
 
-### <a name="to-connect-in-ssms"></a>Csatlakozás az ssms-ben
+### <a name="to-connect-in-ssms"></a>Csatlakozás az SSMS-ben
 
-A **kapcsolódás a kiszolgálóhoz** > **kiszolgálótípus**válassza **Analysis Services**. A **kiszolgálónév**, adja meg az URL-címet. A **hitelesítési**válassza **Active Directory - Universal MFA-támogatással rendelkező**, majd **felhasználónév**, adja meg a szervezeti felhasználói azonosítóját. 
+A **Csatlakozás kiszolgálóhoz** > **Kiszolgáló típusa** beállításnál válassza az **Analysis Services** lehetőséget. A **Kiszolgálónév** mezőben adja meg az URL-címet. A **Hitelesítés** beállításnál válassza az **Active Directory – Univerzális, MFA-támogatással** lehetőséget, majd a **Felhasználónév** mezőben adja meg vállalati felhasználói azonosítóját. 
 
-Ha csatlakoztatva van, a munkaterület jelenik meg, mint egy Analysis Services-kiszolgálón, és a munkaterület adatkészletek adatbázisok jelennek meg.  
+A csatlakoztatott munkaterület Analysis Services-kiszolgálóként jelenik meg, a munkaterületen belüli adathalmazok pedig adatbázisokként.  
 
 ![SSMS](media/service-premium-connect-tools/connect-tools-ssms.png)
 
 ### <a name="initial-catalog"></a>Kezdeti katalógus
 
-Bizonyos eszközök, például az SQL Server Profiler, előfordulhat, hogy kell adnia egy *Initial Catalog*. Adja meg a munkaterület egy adatkészletet (adatbázis). A **kapcsolódás a kiszolgálóhoz**, kattintson a **beállítások**. Az a **kapcsolódás a kiszolgálóhoz** párbeszédpanelen, a a **kapcsolat tulajdonságai** lap **csatlakozhat az adatbázishoz**, adja meg az adatkészlet nevét.
+Egyes eszközöknek, például az SQL Server Profilernek esetleg *kezdeti katalógust* kell megadnia. Adja meg a munkaterületen lévő adathalmazok (adatbázisok) egyikét. A **Csatlakozás kiszolgálóhoz** panelen kattintson a **Beállítások** lehetőségre. A **Csatlakozás kiszolgálóhoz** párbeszédpanel **Kapcsolat tulajdonságai** lapján adja meg az adatbázis nevét a **Csatlakozás adatbázishoz** mezőben.
 
-### <a name="duplicate-workspace-name"></a>Ismétlődő munkaterület neve
+### <a name="duplicate-workspace-name"></a>Kettős munkaterületnév
 
-A munkaterület neve megegyezik egy másik munkaterülethez való csatlakozáskor a következő hiba jelenhet meg: **Nem lehet csatlakozni a powerbi://api.powerbi.com/v1.0/ [bérlő neve] / [munkaterületnév].**
+Ha egy munkaterülethez egy másik munkaterületével megegyező névvel próbál csatlakozni, a következő hibaüzenetet kaphatja: **Nem lehet csatlakozni a következőhöz: powerbi://api.powerbi.com/v1.0/[bérlőnév]/[munkaterületnév].**
 
-Ez a hiba, a munkaterület neve mellett eléréséhez adja meg, amely a munkaterület objectID az URL-cím átmásolható a Objektumazonosítóguid. Az objectID hozzáfűzése a kapcsolati URL-cím. For example, `powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales - 9d83d204-82a9-4b36-98f2-a40099093830'
+A hiba kiküszöbölése érdekében az URL-címben a munkaterület neve mellett adja meg az ObjectIDGuid értékét is, amely az munkaterület ObjectID értékéből másolhat ki. Fűzze hozzá az objectID-t a kapcsolati URL-címhez. Például: „powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales - 9d83d204-82a9-4b36-98f2-a40099093830”
 
-### <a name="duplicate-dataset-name"></a>Ismétlődő adatkészlet neve
+### <a name="duplicate-dataset-name"></a>Kettős adathalmaznév
 
-Egy adatkészlet neve megegyezik egy másik adatkészlet ugyanazon a munkaterületen való csatlakozáskor hozzáfűzése a adatkészlet globálisan egyedi azonosítót az adatkészlet nevét. Megjelenik a két adatkészlet neve *és* guid, a munkaterület az ssms-ben való csatlakozáskor. 
+Ha egy adott munkaterületen belüli másik adathalmazéval megegyező nevű adathalmazhoz csatlakozik, az adathalmaz nevéhez fűzze hozzá annak GUID-azonosítóját. Az adathalmaz nevét *és* GUID-azonosítóját is megkaphatja, miután az SSMS-szel csatlakozik a munkaterülethez. 
 
-### <a name="delay-in-datasets-shown"></a>Az adatkészletek látható késleltetés
+### <a name="delay-in-datasets-shown"></a>A megjelenített adathalmazok késése
 
-Ha kapcsolódik egy munkaterületet, az új, törölt és átnevezett adatkészletekből származó módosítások jelennek meg, akár 5 percet is igénybe vehet. 
+Munkaterülethez csatlakozáskor az új, törölt és átnevezett adathalmazok módosításainak megjelenéséig akár 5 perc is eltelhet. 
 
-### <a name="unsupported-datasets"></a>Nem támogatott adatkészlet
+### <a name="unsupported-datasets"></a>Nem támogatott adathalmazok
 
-Az alábbi adatkészletekben az XMLA-végpontok nem érhetők el. Ezek az adatkészletek *nem lesz* az ssms-ben vagy más eszközök munkaterületen jelennek meg: 
+Az alábbi adathalmazok nem érhetők el XMLA-végpontok használatával. Ezek az adathalmazok *nem* jelennek meg a munkaterület alatt az SSMS-ben vagy más eszközben: 
 
-- Egy Analysis Services-modellekhez történő élő kapcsolattal rendelkező adatkészletek. 
-- Adatok leküldése a REST API-val rendelkező adatkészletek.
-- Excel-munkafüzet adatkészletek. 
+- Analysis Services-modellekkel élő kapcsolatban lévő adathalmazok. 
+- A REST API használatával leküldött adatokat tartalmazó adathalmazok.
+- Excel-munkafüzet adathalmazok. 
 
-A következő adatkészlet nem támogatottak a Power BI szolgáltatásban:   
+Az alábbi adathalmazok nem támogatottak a Power BI szolgáltatásban:   
 
-- A Power BI-adatkészlethez élő kapcsolattal rendelkező adatkészletek.
+- Power BI-adathalmazzal élő kapcsolatban lévő adathalmazok.
 
 ## <a name="audit-logs"></a>Auditnaplók 
 
-Ha ügyfél-alkalmazások és eszközök csatlakoznak egy munkaterületet, XMLA kapcsolódó végpontok hozzáférésének be van jelentkezve a Power BI-naplók alatt a **GetWorkspaces** műveletet. További tudnivalókért lásd: [Power BI-naplózás](service-admin-auditing.md).
+A munkaterülethez csatlakozó ügyfélalkalmazások és -eszközök XMLA-végponton keresztüli hozzáférése a Power BI auditnaplóiban a **GetWorkspaces** művelet alatt van naplózva. További információ: [Naplózás a Power BI-ban](service-admin-auditing.md).
 
 ## <a name="see-also"></a>Lásd még:
 
-[Analysis Services-hivatkozások](https://docs.microsoft.com/bi-reference/#pivot=home&panel=home-all)   
+[Analysis Services referenciák](https://docs.microsoft.com/bi-reference/#pivot=home&panel=home-all)   
 [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-ssms)   
-[SQL Server Analysis Services táblázatos protokoll](https://docs.microsoft.com/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
-[Dinamikus felügyeleti nézetekkel (DMV-kkel)](https://docs.microsoft.com/sql/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services)   
+[SQL Server Analysis Services Tabular Protocol](https://docs.microsoft.com/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
+[Dinamikus felügyeleti nézetek (DMV-k)](https://docs.microsoft.com/sql/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services)   
 
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

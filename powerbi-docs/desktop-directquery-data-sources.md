@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/10/2019
+ms.date: 05/31/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3bb7de9685a1e0fc9fa423328ad9e1e5faa53603
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: dae93a2555101a42f072158f8536319783b3f973
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61305455"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809106"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>A DirectQuery által támogatott adatforrások a Power BI-ban
 
@@ -24,10 +24,11 @@ A **Power BI Desktopban** és a **Power BI szolgáltatásban** számos adatforr�
 A következő adatforrások támogatják a DirectQueryt a Power BI-ban:
 
 * Amazon Redshift
-* Az AtScale (bétaverzió)
+* AtScale (bétaverzió)
+* Azure Data Explorer
 * Azure HDInsight Spark
-* Azure SQL Database
-* Azure SQL Data Warehouse
+* [Azure SQL Database](service-azure-sql-database-with-direct-connect.md)
+* [Az Azure SQL Data Warehouse](service-azure-sql-data-warehouse-with-direct-connect.md)
 * Google BigQuery
 * HDInsight interaktív lekérdezés
 * IBM DB2-adatbázis
@@ -39,12 +40,12 @@ A következő adatforrások támogatják a DirectQueryt a Power BI-ban:
 * SAP Business Warehouse üzenetkezelési kiszolgáló
 * SAP HANA
 * Snowflake
-* Spark (0,9 verzió vagy újabb verzió)
+* Spark (0.9 és újabb verzió)
 * SQL Server
 * Teradata-adatbázis
 * Vertica
 
-Azok az adatforrások, amelyek neve mögött szerepel a **(bétaverzió)** vagy az **(előzetes verzió)** , módosulhatnak, és a használatuk éles környezetben nem támogatott. Az is előfordulhat, hogy akkor sem támogatottak, miután közzétett egy jelentést a **Power BI szolgáltatásban**, és ezért egy közzétett jelentés megnyitása vagy az adatkészlet felderítése hibát okozhat.
+Azok az adatforrások, amelyek neve mögött szerepel a **(bétaverzió)** vagy az **(előzetes verzió)**, módosulhatnak, és a használatuk éles környezetben nem támogatott. Az is előfordulhat, hogy akkor sem támogatottak, miután közzétett egy jelentést a **Power BI szolgáltatásban**, és ezért egy közzétett jelentés megnyitása vagy az adatkészlet felderítése hibát okozhat.
 
 Az egyetlen különbség a **(bétaverzió)** és az **(előzetes verzió)** kifejezéssel jelölt adatforrások között, hogy az **(előzetes verziójú)** forrásokat engedélyezni kell Előzetes verziójú funkcióként, mielőtt használni lehetne őket. Egy **(előzetes verziójú)** adatösszekötő engedélyezéséhez a **Power BI Desktopban** lépjen a **Fájl > Lehetőségek és beállítások > Beállítások** területre, és válassza az **Előzetes verziójú funkciók** lehetőséget.
 
@@ -57,22 +58,39 @@ Az alábbi tábla meghatározza, hogy szükség van-e **helyszíni adatátjáró
 
 | Forrás | Szükség van átjáróra? |
 | --- | --- |
-| SQL Server |Igen |
+| Amazon Redshift |Nem |
+| Azure HDInsight Spark (bétaverzió) |Nem |
 | Azure SQL Database |Nem |
 | Azure SQL Data Warehouse |Nem |
-| SAP HANA |Igen |
-| Oracle Database |Igen |
-| Teradata-adatbázis |Igen |
-| Amazon Redshift |Nem |
-| Impala (2.x-es verzió) |Igen |
-| Snowflake |Igen |
-| Spark (bétaverzió) (0.9-es és újabb) |Igen |
-| Azure HDInsight Spark (bétaverzió) |Nem |
+| Google BigQuery |Nem |
 | IBM Netezza |Igen |
+| Impala (2.x-es verzió) |Igen |
+| Oracle Database |Igen |
 | SAP Business Warehouse-alkalmazáskiszolgáló |Igen |
 | SAP Business Warehouse üzenetkezelési kiszolgáló |Még nem támogatott a **Power BI szolgáltatásban** |
-| Google BigQuery |Nem |
+| SAP HANA |Igen |
+| Snowflake |Igen |
+| Spark (bétaverzió) (0.9-es és újabb) |Igen |
+| SQL Server |Igen |
+| Teradata-adatbázis |Igen |
 
+## <a name="single-sign-on-sso-for-directquery-sources"></a>Egyszeri bejelentkezés (SSO) DirectQuery-forrásokhoz
+
+Ha az egyszeri bejelentkezési beállítás engedélyezve van, és a felhasználók használják az adatforrásra épülő jelentéseket, a Power BI elküldi a hitelesített Azure AD-beli hitelesítő adataikat a lekérdezésekben a mögöttes adatforrásnak. Ez lehetővé teszi a Power BI számára, hogy figyelembe vegye az adatforrás szintjén konfigurált biztonsági beállításokat.
+
+Az egyszeri bejelentkezési beállítás az adatforrást használó összes adathalmazra érvényes lesz. Az importálási forgatókönyvekhez használt hitelesítési módszerre nincs hatással. Az alábbi adatforrások támogatják az egyszeri bejelentkezést a DirectQuery-n keresztüli kapcsolatokhoz:
+
+- Azure SQL Database
+- Azure SQL Data Warehouse
+- Impala
+- SAP HANA
+- SAP BW
+- Spark
+- SQL Server
+- Teradata
+
+> [!Note]
+> Az Azure Multi-Factor Authentication (MFA) nem támogatott. Azokat a felhasználókat, akik egyszeri bejelentkezést kívánnak használni a DirectQueryvel, ki kell vonni az MFA hatálya alól.
 
 ## <a name="next-steps"></a>Következő lépések
 Ha többet szeretne megtudni a DirectQueryről, tekintse át a következő forrásanyagokat:
