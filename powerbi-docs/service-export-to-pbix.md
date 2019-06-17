@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 5c42b633b3c8746d2e26656eb5310b1f74cb2500
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 296970466505f01ae9ad11f994fe2008563f4884
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61159769"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720200"
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Jelentés exportálása a Power BI szolgáltatásból a Desktopba (előzetes verzió)
 A Power BI Desktopban exportálhat (más kifejezéssel *letölthet*) jelentést a Power BI szolgáltatásba, ha menti a jelentést, és a **Közzététel** lehetőséget választja. Exportálhat a másik irányba is, és letöltheti a jelentést a Power BI szolgáltatásból a Desktopba. Az exportált fájlok kiterjesztése mindkét irány esetében *.pbix*.
@@ -67,10 +67,10 @@ Tekintse meg a **Guy in a Cube** csatorna erről a funkcióról szóló egyperce
 
 Néhány további cikk is segíthet elsajátítani a **Power BI szolgáltatás** használatát:
 
-* [Jelentések a Power BI-ban](consumer/end-user-reports.md)
-* [Power BI – Alapfogalmak](consumer/end-user-basic-concepts.md)
+* [Power BI-jelentések](consumer/end-user-reports.md)
+* [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 
-A **Power BI Desktop** telepítése után a következő tartalmak segíthetnek a gyors kezdésben:
+A **Power BI Desktop** telepítése után a következő tartalmak segíthetnek a használatának gyors megkezdésében:
 
 * [Első lépések a Power BI Desktop alkalmazással](desktop-getting-started.md)
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: b0a6b3027e548becf56cc5f0d7036e35c9316cd4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a2db3f8c88231663ecb115c4609d3af177d96292
+ms.sourcegitcommit: 9da792d470dfe43dc6e15ddef5d471f3f6c50970
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187707"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66453783"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -78,7 +78,7 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 <br>szerző: Wim Coorevits és Enrique Plaza Garcia
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
 
-**Power BI Embedded kezelésére vonatkozó ajánlott eljárások a több-Bérlős központi telepítés Analytics**
+**A több-bérlős üzembe helyezések Power BI Embedded-elemzéseinek kezeléshez ajánlott eljárások**
 <br>szerző: Nimrod Shalit
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html?LCID=EN-US)
 
@@ -118,10 +118,11 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 <br>Készítette Reid Havens
 <br>[Megtekintés](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
-### <a name="partners"></a>Partnerek ###
+### <a name="partner-solutions-series"></a>Partneri megoldások sorozat ###
+[Sorozat megtekintése](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
 
 **Kölcsönös előnyök a fogyasztási cikkek gyártói és kiskereskedői számára**
-<br>Liz McCreesh a Thorogood szerint
+<br>Liz McCreesh, a Thorogood képviselője
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
 
 **Ügyféladatok átalakítása kereskedelmi előnnyé a Power BI használatával**

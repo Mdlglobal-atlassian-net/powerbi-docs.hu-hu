@@ -8,20 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/27/2019
+ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 5a8db746606e42b4e9b094dc6d17d6d2e0f08f67
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 68e21e14227aff538c56951249edbddc249d68eb
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565312"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66497974"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Prémium szintű kapacitások monitorozása az alkalmazással
 
 A kapacitások figyelése elengedhetetlen a megalapozott döntések meghozatalához, hogy a prémium szintű kapacitás erőforrásait a legjobban használhassa ki. A kapacitás monitorozható a felügyeleti portálon vagy a **Power BI Premium kapacitásmetrikák** alkalmazással. Ez a cikk a Prémium szintű kapacitásmetrikák alkalmazás használatát ismerteti. Az alkalmazás adja a legmélyrehatóbb információkat a kapacitások teljesítményéről. Az elmúlt hét nap átlagos használatára vonatkozó metrikák magasabb szintű áttekintésére használhatja a felügyeleti portált. A monitorozás portálon történő használatáról további információt a [Prémium szintű kapacitások monitorozása a felügyeleti portálon](service-admin-premium-monitor-portal.md) szakaszban talál.
 
-Az alkalmazás rendszeresen új szolgáltatásokkal és funkciókkal frissül. Ellenőrizze, hogy a legújabb verziót futtat. Ha az alkalmazásnak már telepítve van egy korábbi verziója, célszerű törölni az alkalmazások közül, majd lenyomni a CTRL+F5 billentyűket a frissítéshez. 
+Az alkalmazás rendszeresen új szolgáltatásokkal és funkciókkal frissül. Győződjön meg róla, hogy a legújabb verziót futtatja. Ha az alkalmazásnak már telepítve van egy korábbi verziója, célszerű törölni az alkalmazások közül, majd lenyomni a CTRL+F5 billentyűket a frissítéshez. 
 
 ## <a name="install-the-app"></a>Az alkalmazás telepítse
 
@@ -49,7 +49,7 @@ A legutóbbi frissítés jelenik meg, vagy kattintson a **Frissítési előzmén
 
 ## <a name="monitor-capacities-with-the-app"></a>Kapacitások monitorozása az alkalmazással
 
-Az alkalmazás telepítése után már megtekintheti a szervezet kapacitásaira vonatkozó metrikákat. Az alkalmazás metrikák összegzéseket tartalmazó irányítópult és részletes mérőszámokat jelentéseket biztosít.
+Az alkalmazás telepítése után már megtekintheti a szervezet kapacitásaira vonatkozó metrikákat. Az alkalmazás a metrika-összegzéseket tartalmazó irányítópultot és részletes metrikákat tartalmazó jelentéseket kínál.
 
 ### <a name="dashboard"></a>Irányítópult
 
@@ -133,18 +133,18 @@ Az irányítópult a következő metrikákat tartalmazza:
 | Memória – lapszámozott jelentések átlaga (GB) | A lapszámozott jelentések munkaterheléseinek átlagos memóriahasználata a legutóbbi hét nap folyamán. |
 |||
 
-#### <a name="ai-summary"></a>Mesterséges Intelligencia összegzése
+#### <a name="ai-summary"></a>Mesterséges intelligencia összegzése
 
 | Mérték | Leírás |
 | --- | --- |
-| Frissítések összesen | A frissítések teljes száma a legutóbbi hét napban. |
-| Frissítések megbízhatósága (%) | A legutóbbi hét napban történt sikeres frissítések teljes száma elosztva a frissítések teljes számával. |
-| CPU maximális száma (%)| Maximális processzorhasználatot a mesterséges Intelligencia munkaterhelés szerint az elmúlt hét napban. |
-| Memória maximális száma (GB) | Maximális memóriát a mesterséges Intelligencia munkaterhelés szerint az elmúlt hét napban.|
-| Frissíti a maximális várakozási idő (MS) | Maximális mennyisége a frissítés megkezdése előtt. |
-| Frissítések átlagos várakozási idő (MS)| Az egyes frissítések indításáig átlagosan eltelt idő. |
-| Frissítések maximális időtartama (MS) | Teljes frissítés maximális időtartama. |
-| Frissítések átlagos időtartama (MS)| Az egyes frissítések befejezéséig átlagosan eltelt idő. |
+| Mesterségesintelligencia-függvények végrehajtása | A végrehajtások teljes száma a legutóbbi hét napban. |
+| Mesterségesintelligencia-függvények végrehajtásának megbízhatósága (%) | A legutóbbi hét napban történt sikeres végrehajtások teljes száma elosztva a végrehajtások teljes számával. |
+| CPU maximum (%)| A mesterséges intelligencia munkaterhelése általi legmagasabb CPU-kihasználtság a legutóbbi hét nap folyamán. |
+| Memória maximum (GB) | A mesterséges intelligencia munkaterhelése általi legmagasabb memóriafelhasználás a legutóbbi hét nap folyamán.|
+| Mesterségesintelligencia-függvények végrehajtásának maximális várakozási ideje (ms) | A végrehajtás kezdetéig eltelt idő maximuma. |
+| Mesterségesintelligencia-függvények végrehajtásának átlagos várakozási ideje (ms)| A végrehajtások kezdetéig eltelt idő átlaga. |
+| Mesterségesintelligencia-függvények végrehajtásának maximális időtartama (ms) | A végrehajtás befejezéséig eltelt idő maximuma. |
+| Mesterségesintelligencia-függvények végrehajtásának átlagos időtartama (ms)| Az egyes végrehajtások befejezéséig átlagosan eltelt idő. |
 | | |
 
 ### <a name="reports"></a>Jelentések
@@ -156,7 +156,7 @@ A jelentés alján öt *lapfül* található:
 [**Adathalmazok**](#datasets) – Részletes metrikákat nyújt a kapacitásokon belüli Power BI-adathalmazok állapotáról.
 [**Lapszámozott jelentések**](#paginated-reports) – Részletes metrikákat nyújt a kapacitásokon belüli lapszámozott jelentések állapotáról.
 [**Adatfolyamok**](#dataflows) – Részletes frissítési metrikákat nyújt a kapacitásokon belüli adatfolyamokról.
-[**Mesterséges Intelligencia** ](#ai) – Ez a témakör részletes mérőszámokat a mesterséges Intelligencia funkciók a kapacitások használt állapotát.
+[**Mesterséges intelligencia**](#ai) – Részletes mérőszámokat biztosít a kapacitásokban használt mesterségesintelligencia-függvények állapotáról.
 [**Erőforrás-felhasználás**](#resource-consumption) – Részletes erőforrás-metrikákat nyújt többek között a memória és a processzor magas kihasználtságáról.
 [**Azonosítók és információ**](#ids-and-info) Kapacitások, munkaterülete és számítási feladatok neve, azonosítója és tulajdonosa.
 
@@ -170,7 +170,7 @@ Az Adathalmazok oldal több *területre* van felosztva, köztük a **Frissítés
 
 | Jelentésszakasz | Metrikák |
 | --- | --- |
-| Frissítések |  Teljes darabszám: Az egyes adathalmazok frissítéseinek teljes száma.<br>  Megbízhatóság: Az egyes adatkészletek elvégzett frissítések százalékos értéke.<br>  A várakozás átlagos időtartama: Az ütemezett időpont és az adathalmaz frissítésének kezdete közötti átlagos késés, percekben kifejezve.<br>  Maximális várakozási idő: Az adathalmazhoz tartozó leghosszabb várakozási idő, percekben kifejezve.<br>  Átlagos időtartam: Az adathalmaz frissítéseinek átlagos időtartama, percekben kifejezve.<br>  Maximális időtartam: Az adathalmaz leghosszabb ideig futó frissítésének időtartama, percekben kifejezve. |
+| Frissítések |  Teljes darabszám: Az egyes adathalmazok frissítéseinek teljes száma.<br>  Megbízhatóság: Az egyes adathalmazok befejezett frissítéseinek százalékos aránya.<br>  A várakozás átlagos időtartama: Az ütemezett időpont és az adathalmaz frissítésének kezdete közötti átlagos késés, percekben kifejezve.<br>  Maximális várakozási idő: Az adathalmazhoz tartozó leghosszabb várakozási idő, percekben kifejezve.<br>  Átlagos időtartam: Az adathalmaz frissítéseinek átlagos időtartama, percekben kifejezve.<br>  Maximális időtartam: Az adathalmaz leghosszabb ideig futó frissítésének időtartama, percekben kifejezve. |
 | Az első 5 adathalmaz az átlagos időtartam szerint (perc) |  Az öt leghosszabb (percekben megadott) átlagos frissítési idejű adathalmaz. |
 | Az első 5 adathalmaz az átlagos várakozási idő szerint (perc) |  Az öt leghosszabb (percekben megadott) átlagos frissítési várakozási idejű adathalmaz. |
 | Frissítések száma és GB-ban mért memóriahasználat óránként |  Sikeres és sikertelen frissítések, valamint memóriahasználat órákra lebontva, UTC-idő szerint jelentve. |
@@ -224,22 +224,20 @@ Az Adathalmazok oldal több *területre* van felosztva, köztük a **Frissítés
 
 | **Jelentésszakasz** | **Metrikák** |
 | --- | --- |
-| Frissítések |  Összesen: Az egyes adatfolyamok frissítéseinek teljes száma.<br>  Megbízhatóság: Az egyes adatfolyamot elvégzett frissítések százalékos értéke.<br>  A várakozás átlagos időtartama: Az ütemezett időpont és az adatfolyam frissítésének kezdete közötti átlagos késés, percekben kifejezve.<br>  Maximális várakozási idő: Az adatfolyamhoz tartozó leghosszabb várakozási idő, percekben kifejezve.<br>  Átlagos időtartam: Az adatfolyam frissítéseinek átlagos időtartama, percekben kifejezve.<br>  Maximális időtartam: Az adatfolyam leghosszabb ideig futó frissítésének időtartama, percekben kifejezve. |
+| Frissítések |  Összesen: Az egyes adatfolyamok frissítéseinek teljes száma.<br>  Megbízhatóság: Az egyes adatfolyamok befejezett frissítéseinek százalékos aránya.<br>  A várakozás átlagos időtartama: Az ütemezett időpont és az adatfolyam frissítésének kezdete közötti átlagos késés, percekben kifejezve.<br>  Maximális várakozási idő: Az adatfolyamhoz tartozó leghosszabb várakozási idő, percekben kifejezve.<br>  Átlagos időtartam: Az adatfolyam frissítéseinek átlagos időtartama, percekben kifejezve.<br>  Maximális időtartam: Az adatfolyam leghosszabb ideig futó frissítésének időtartama, percekben kifejezve. |
 | Az első 5 adatfolyam a frissítés átlagos időtartama szerint |  Az öt leghosszabb (percekben megadott) átlagos frissítési idejű adatfolyam. |
 | Az első 5 adatfolyam az átlagos várakozási idő szerint |  Az öt leghosszabb (percekben megadott) átlagos frissítési várakozási idejű adatfolyam. |
 | Átlagos frissítési várakozási idő óránként |  A frissítésre várakozás átlagos időtartama órákra lebontva, UTC-idő szerint jelentve. Ha több kiugróan magas frissítési várakozási érték is van, az azt jelzi, hogy a kapacitáshasználat a csúcsértékhez közelít. |
 | Frissítések száma és memóriahasználat óránként |  Sikeres és sikertelen frissítések, valamint memóriahasználat órákra lebontva, UTC-idő szerint jelentve. |
 |  |  |
 
-### <a name="ai"></a>AI
+### <a name="ai"></a>Mesterséges intelligencia
 
 | **Jelentésszakasz** | **Metrikák** |
 | --- | --- |
-| Általános igénybevétel | Teljes száma: AI funkciók egy munkaterületet vagy adatfolyamot száma. <br> Megbízhatóság: Befejezett frissítések százalékos értéke.<br> Átl. Várakozási idő: Az ütemezett időpont és a egy frissítés, ezredmásodpercben kezdete közötti átlagos késés.<br> Maximális várakozási idő: A maximális várakozási idő, ezredmásodpercben.<br> Átl. Időtartam: Az átlagos időtartama ezredmásodpercben, frissítését.<br> Maximális időtartam: A leghosszabb ideig futó időtartama (MS) frissítése.<br> Átlagos bemenet mérete: Átlagos mérete bájtban adatfolyamot frissítését hajtja végre a mesterséges Intelligencia függvényéhez adjon meg.<br> Átlagos kimeneti méret: Az átlagos mérete bájtban, a mesterséges Intelligencia függvény adatfolyamot frissítését hajtja végre a kimeneti. |
-| Első 5 AI függvények által átlagos időtartama | A leghosszabb átlagosan öt együttműködik frissítse az időtartam, ezredmásodpercben. |
-| Első 5 AI függvények által bemeneti átlagos mérete | Az öt függvényt a legnagyobb átlagos adatokkal bemeneti mérete bájtban. |
-| Frissítések száma és memóriahasználat óránként | Sikeres és sikertelen frissítések, valamint memóriahasználat órákra lebontva, UTC-idő szerint jelentve. |
-| Óránkénti átlagos időtartama | Ossza fel egy órás gyűjtők, frissítés, az átlagos időtartama jelentett UTC időben. |
+| A mesterséges intelligencia memóriahasználata | A GB-ban kifejezett memóriahasználat óránkénti bontásban, UTC-idő szerint jelentve. |
+| Mesterségesintelligencia-függvények végrehajtása és átlagos várakozási ideje óránként | A mesterségesintelligencia-függvények végrehajtása és ezredmásodpercekben megadott átlagos várakozási ideje óránkénti bontásban, UTC-idő szerint jelentve. |
+| Általános igénybevétel | Teljes darabszám: A mesterségesintelligencia-függvények száma egy munkaterületen vagy adatfolyamban. <br> Rendszer megbízhatósága: A befejezett végrehajtások százalékos aránya.<br> Átl. várakozási idő: Az átlagos késés az ütemezett időpont és a végrehajtás kezdete között, ezredmásodpercekben megadva.<br> Maximális várakozási idő: A maximális várakozási idő ezredmásodpercekben megadva.<br> Átl. időtartam: A végrehajtás átlagos időtartama ezredmásodpercekben megadva.<br> Maximális időtartam: A leghosszabb ideig futó végrehajtás időtartama, ezredmásodpercekben megadva.<br> Átlagos teljes méret: A mesterségesintelligencia-függvény bemeneti és kimeneti adatainak átlagos mérete bájtokban kifejezve. |
 | | |
 
 ### <a name="resource-consumption"></a>Erőforrás-felhasználás
@@ -296,7 +294,7 @@ A Power BI Premium Capacity Metrics alkalmazással az *A termékváltozat* (SKU)
 
 1. Nyissa meg a kapacitást az Azure Portalon.
 
-1. Kattintson a **Hozzáférés-vezérlés (IAM)** lehetőségre, majd adja hozzá a **Power BI Premium** alkalmazást az Olvasó szerepkörhöz. Ha nem tudja az alkalmazás keresése név alapján, azt is megteheti, ügyfél-azonosítóval: `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
+1. Kattintson a **Hozzáférés-vezérlés (IAM)** lehetőségre, majd adja hozzá a **Power BI Premium** alkalmazást az Olvasó szerepkörhöz. Ha az alkalmazást nem találja név szerint, az ügyfélazonosító használatával is hozzáadhatja azt: `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
 
     ![Engedélyek a Power BI Embeddedhez](media/service-admin-premium-monitor-capacity/embedded-permissions.png)
 
@@ -307,4 +305,4 @@ A Power BI Premium Capacity Metrics alkalmazással az *A termékváltozat* (SKU)
 ## <a name="next-steps"></a>Következő lépések
 
 > [!div class="nextstepaction"]
-> [A Power BI Premium-kapacitásait optimalizálása](service-premium-capacity-optimize.md)
+> [Power BI Premium-kapacitások optimalizálása](service-premium-capacity-optimize.md)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d4c9e6a925a783d810bc4d097ec18806c3d33d99
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 62bec222a3f948612db63c386e10c0afe9762bb4
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61226572"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721425"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Power BI szervezeti tartalomcsomaggal létesített kapcsolat eltávolítása
 
@@ -36,6 +36,6 @@ Az adatkészlet eltávolítása minden hozzárendelt jelentést és irányítóp
 ## <a name="next-steps"></a>Következő lépések
 * [Szervezeti tartalomcsomagok: bevezetés](service-organizational-content-pack-introduction.md) 
 * [Alkalmazások létrehozása és terjesztése a Power BI-ban](service-create-distribute-apps.md) 
-* [A Power BI alapvető fogalmai](consumer/end-user-basic-concepts.md)  
+* [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)  
 * További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5afb79f52c4717887ba16d9ca43f913ba3446627
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 41b390190f8ce3c071f790edcdf86f0e3bd4a0c2
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61178356"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721302"
 ---
 # <a name="connect-to-at-internet-bridge-with-power-bi"></a>Csatlakozás az AT Internet Bridge-hez Power BI-jal
 Az AT Internet digitális analitikus platformját, az Analytics Suite-ot használva azonnal értékes információkhoz juthat adataiból. A Power BI-hoz készített AT Internet Bridge tartalomcsomag webhelyéhez használható adatlátogatásokat, forrásokat, honosításokat és eszközöket tartalmaz.
@@ -61,5 +61,5 @@ Ez a tartalomcsomag az elmúlt 45 nap adatait tartalmazza az alábbi táblákban
 ## <a name="next-steps"></a>Következő lépések
 [Mi az a Power BI?](power-bi-overview.md)
 
-[Power BI – Alapfogalmak](consumer/end-user-basic-concepts.md)
+[A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 

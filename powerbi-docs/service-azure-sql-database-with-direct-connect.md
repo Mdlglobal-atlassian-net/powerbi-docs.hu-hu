@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/20/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: f03f4933566a8c18510ef0ce07b71db61ecfa8fd
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5365c076b75d0989df8db15c1dc16f4e11bc3f09
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770604"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448384"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Az Azure SQL Database DirectQueryvel
 
@@ -42,28 +42,15 @@ Ezek a korlátozások és megjegyzések a kezelőfelület további fejlesztése 
 
 A Power BI Desktop használata szükséges ahhoz, hogy az Azure SQL Database-hez DirectQueryvel kapcsolódhasson. Ez a megközelítés nagyobb rugalmasságot és további képességeket biztosít. A Power BI Desktoppal létrehozott jelentések közzétehetők a Power BI szolgáltatásban. További tudnivalók arról, hogyan kapcsolódhat az [Azure SQL Database-hez DirectQuery használatával](desktop-use-directquery.md) a Power BI Desktopban.
 
-## <a name="single-sign-on"></a>Egyszeri bejelentkezés
-
-Miután közzétett egy Azure SQL DirectQuery-adathalmazt a szolgáltatásban, engedélyezheti az Azure Active Directory (Azure AD) OAuth2 használatával való egyszeri bejelentkezést (SSO) a végfelhasználók számára.
-
-Az egyszeri bejelentkezés engedélyezéséhez nyissa meg az adathalmaz beállításait, majd az **Adatforrások** lapot, és jelölje be az Egyszeri bejelentkezés jelölőnégyzetet.
-
-![Az Azure SQL DQ konfigurálása párbeszédpanel](media/service-azure-sql-database-with-direct-connect/sso-dialog.png)
-
-Ha az egyszeri bejelentkezési beállítás engedélyezve van, és a felhasználók használják az adatforrásra épülő jelentéseket, a Power BI elküldi a hitelesített Azure AD-beli hitelesítő adataikat a lekérdezésekben az Azure SQL Database-adatbázisnak. Ez lehetővé teszi a Power BI számára, hogy figyelembe vegye az adatforrás szintjén konfigurált biztonsági beállításokat.
-
-Az egyszeri bejelentkezési beállítás az adatforrást használó összes adathalmazra érvényes lesz. Az importálási forgatókönyvekhez használt hitelesítési módszerre nincs hatással.
-
-> [!Note]
-> Az Azure Multi-Factor Authentication (MFA) nem támogatott. Azokat a felhasználókat, akik egyszeri bejelentkezést kívánnak használni az Azure SQL DirectQueryvel, ki kell vonni az MFA hatálya alól.
-
 ## <a name="finding-parameter-values"></a>Paraméterértékek megkeresése
 
-A teljes szervernevet és adatbázisnevet az Azure Portalon találhatja meg.
+A teljes kiszolgálónevet és adatbázisnevet az Azure Portalon találhatja meg.
 
-![Új Azure-port update](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
+![Új Azure Portal-frissítés](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
 
-![Az Azure portál frissítése](media/service-azure-sql-database-with-direct-connect/azureportal_update.png)
+![Azure Portal-frissítés](media/service-azure-sql-database-with-direct-connect/azureportal_update.png)
+
+[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
 
 ## <a name="next-steps"></a>Következő lépések
 

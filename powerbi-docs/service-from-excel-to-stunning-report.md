@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/28/2018
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: d1e3d6b50b91643dc7c1e658094a5ae7763edc8f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cd75aebb09c7b6c54c1ff3f68635bfd5033c7f80
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61140645"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721468"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Excel-munkafüzettől egy lenyűgöző jelentésig villámgyorsan
 A főnöke azt szeretné, hogy még ma készítsen el egy kombinált jelentést a tavalyi év értékesítési mutatóiról és az előző kampánnyal kapcsolatos benyomásairól. A legutóbbi adatok azonban különböző külső gyártók rendszerein és a saját laptopján lévő fájlokban találhatók. Korábban több óráig is eltartott egy vizualizáció létrehozása és egy jelentés formázása. Kezd nyugtalan lenni?
@@ -97,7 +97,7 @@ A Power BI ekkor megjeleníti az Irányítópult megosztása oldalt. A felső r�
 Következő lépések
 
 * [A Power BI szolgáltatás használatának első lépései](service-get-started.md)
-* [Első lépések a Power BI Desktoppal](desktop-getting-started.md)
-* [Power BI – Alapfogalmak](consumer/end-user-basic-concepts.md)
+* [Első lépések a Power BI Desktopban](desktop-getting-started.md)
+* [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 * További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

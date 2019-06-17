@@ -1,6 +1,6 @@
 ---
 title: Bejelentkezett Power BI-felhasználók keresése
-description: Ha Ön Bérlői rendszergazda, és szeretné megtekinteni a Power BI-bA bejelentkezett felhasználók listáját, az Azure Active Directory hozzáférési és használati jelentések segítségével nagyobb láthatóságot érhet el.
+description: Ha Ön bérlői rendszergazda, és szeretné megtekinteni a Power BI-ba bejelentkezett felhasználók listáját, használhatja ehhez az Azure Active Directory hozzáférési és használati jelentéseit.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -10,27 +10,25 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e513607dd89aee15f10145cf62bd461621cc12c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7149d8601aa7a834f91a8d98f3a7a9deac7bf43b
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64906766"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721336"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Bejelentkezett Power BI-felhasználók keresése
 
-Ha Ön Bérlői rendszergazda, és szeretné megtekinteni a Power bi-ba, használati bejelentkezett felhasználók listáját a [Azure Active Directory hozzáférési és használati jelentések](/azure/active-directory/reports-monitoring/concept-sign-ins) számára.
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/1AVgh9w9VM8?showinfo=0" frameborder="0" allowfullscreen></iframe>
+Ha Ön bérlői rendszergazda, és szeretné megtekinteni a Power BI-ba bejelentkezett felhasználók listáját, használja ehhez az [Azure Active Directory hozzáférési és használati jelentéseit](/azure/active-directory/reports-monitoring/concept-sign-ins).
 
 > [!NOTE]
-> A **bejelentkezések** a jelentésben a hasznos adatok, de azt nem azonosítja a minden felhasználó rendelkezik licenccel. A licencek megtekintésére a Microsoft 365 Felügyeleti központját használhatja.
+> A **Bejelentkezések** jelentés fontos információkat közöl, de azt nem jelzi, hogy az egyes felhasználók milyen licenccel rendelkeznek. A licencek megtekintésére a Microsoft 365 Felügyeleti központját használhatja.
 
 ## <a name="requirements"></a>Követelmények
 
 A saját bejelentkezéseit bármely felhasználó (nem rendszergazda is) megtekintheti, de az összes felhasználóra vonatkozó jelentés megtekintése csak a következő feltételekkel lehetséges.
 
-* A bérlőnek rendelkeznie kell egy hozzá társított Azure Active Directory Premium-licencet.
+* A bérlőnek prémium szintű Microsoft Azure Active Directory-licenccel kell rendelkeznie.
 
 * A következő szerepkörök egyikével kell rendelkeznie: Globális rendszergazda, biztonsági rendszergazda, biztonsági olvasó.
 
@@ -42,29 +40,29 @@ A bejelentkezési tevékenység megtekintéséhez kövesse az alábbi lépéseke
 
 1. A **Figyelés** területen kattintson a **Bejelentkezések** elemre.
    
-    ![Képernyőkép: az Azure felhasználói felületén, a kiemelt Azure Active Directory és a bejelentkezések lehetőségekkel.](media/service-admin-access-usage/azure-portal-sign-ins.png)
+    ![Az Azure felhasználói felületének képernyőképe az Azure Active Directory és a Bejelentkezések beállítások kiemelésével.](media/service-admin-access-usage/azure-portal-sign-ins.png)
 
 1. Szűrjön a kívánt alkalmazásra a **Microsoft Power BI** vagy a **Power BI Gateway** lehetőség választásával, majd kattintson az **Alkalmaz** elemre.
 
-    **A Microsoft Power BI** bejelentkezési tevékenységeket, hogy a szolgáltatáshoz kapcsolódó, mivel a **Power BI Gateway** szűrőket a bejelentkezési tevékenységre jellemző a helyszíni adatátjáró.
+    A **Microsoft Power BI** lehetőség a szolgáltatáshoz kapcsolódó bejelentkezési tevékenységekre, a **Power BI Gateway** a helyszíni adatátjáróhoz kapcsolódó bejelentkezési adatokra szűr.
    
-    ![Képernyőkép – a bejelentkezések szűrő a kiemelt alkalmazások mezőt.](media/service-admin-access-usage/sign-in-filter.png)
+    ![A Bejelentkezések szűrő képernyőképe az Alkalmazások mező kiemelésével.](media/service-admin-access-usage/sign-in-filter.png)
 
 ## <a name="export-the-data"></a>Az adatok exportálása
 
-Is [bejelentkezési jelentés letöltése](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) két formátumok egyikével: CSV-fájl, vagy egy JSON-fájlt.
+A [bejelentkezési jelentés letöltése](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) két formátumban lehetséges: CSV-fájlként vagy JSON-fájlként.
 
-![Képernyőfelvétel a Letöltés gombra.](media/service-admin-access-usage/download-sign-in-data-csv.png)
+![A letöltés gomb képernyőképe.](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
-Felső részén a **bejelentkezések** jelentésben válassza **letöltése** , majd válassza ki az alábbi lehetőségek közül:
+A **Bejelentkezések** jelentés felső részén válassza a **Letöltés** lehetőséget, majd az alábbi két lehetőség egyikét:
 
-* **Fürt megosztott kötetei szolgáltatás** töltheti le a szűrt adatokat egy CSV-fájlban.
+* **CSV**, ha CSV-fájlként szeretné letölteni a jelenleg szűrt adatokat.
 
-* **JSON** a szűrt adatokat egy JSON-fájl letöltéséhez.
+* **JSON**, ha JSON-fájlként szeretné letölteni a jelenleg szűrt adatokat.
 
 ## <a name="data-retention"></a>Adatmegőrzés
 
-A bejelentkezéshez kapcsolódó adatok legfeljebb 30 napig érhetők el. További információ: [Azure Active Directory-jelentések adatmegőrzési szabályzatában](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
+A bejelentkezéshez kapcsolódó adatok legfeljebb 30 napig érhetők el. Bővebb információt az [Azure Active Directory-jelentések adatmegőrzési szabályzatában](/azure/active-directory/reports-monitoring/reference-reports-data-retention) találhat.
 
 ## <a name="next-steps"></a>Következő lépések
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 06b60e5d493532efbdb49932ace48897e17961c1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7eb30d00cdb03c0f0f879d0cb4b0ab152d1dae37
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61238885"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721505"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service-apppowerbicom"></a>Oktatóanyag: Első lépések a Power BI szolgáltatásban (app.powerbi.com)
 Ez az oktatóanyag segít az első lépések megtételében a ***Power BI szolgáltatásban***. Ha szeretné megérteni, hogyan illeszkedik a Power BI szolgáltatás a többi Power BI-ajánlathoz, javasoljuk, először olvassa el a [Mi az a Power BI](power-bi-overview.md) című szakaszt.
@@ -53,13 +53,13 @@ Nézze meg [lejátszási listánkat a YouTube-on](https://www.youtube.com/playli
 > 
 
 ## <a name="what-is-the-power-bi-service"></a>Mi az a Power BI szolgáltatás?
-A Microsoft Power BI szolgáltatás más néven Power BI online vagy app.powerbi.com néven ismert. A Power BI segítségével naprakész maradhat az Ön számára fontos információkkal.  A Power BI szolgáltatásban az ***irányítópultokkal*** ujjait a cége ütőerén tarthatja.  Az irányítópulton ***csempék*** találhatók, amelyekre kattintva ***jelentéseket*** nyithat meg a további vizsgálódásokhoz.  Több ***adatkészlethez*** is kapcsolódhat, hogy minden releváns adatát egy helyen tekinthesse meg. Segítségre van szüksége a Power BI építőköveinek megértéséhez?  Lásd: [Power BI – Alapfogalmak](consumer/end-user-basic-concepts.md).
+A Microsoft Power BI szolgáltatás más néven Power BI online vagy app.powerbi.com néven ismert. A Power BI segítségével naprakész maradhat az Ön számára fontos információkkal.  A Power BI szolgáltatásban az ***irányítópultokkal*** ujjait a cége ütőerén tarthatja.  Az irányítópulton ***csempék*** találhatók, amelyekre kattintva ***jelentéseket*** nyithat meg a további vizsgálódásokhoz.  Több ***adatkészlethez*** is kapcsolódhat, hogy minden releváns adatát egy helyen tekinthesse meg. További segítségre van szüksége annak megértéséhez, hogy milyen elemekből épül fel a Power BI?  Lásd: [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md).
 
 Ha Excel- vagy CSV-fájlokba mentett fontos adatokkal rendelkezik, létrehozhat egy Power BI-irányítópultot, hogy tájékozott maradhasson, bárhol is van, és másokkal is megoszthassa az elemzéseket.  Előfizetett valamilyen SaaS-alkalmazásra, például a Salesforce-ra?  A gyors kezdéshez csatlakozzon a Salesforce-hoz, hogy automatikusan irányítópultot hozhasson létre az ott található adatokból, vagy [tekintse meg a többi SaaS-alkalmazást](service-get-data.md), amelyhez csatlakozhat. Ha egy cégnél dolgozik, nézze meg, hogy nem tettek-e közzé valamilyen [alkalmazást](service-create-distribute-apps.md) az Ön számára.
 
 Olvassa el, milyen más módokon [kérhet még le adatokat a Power BI-ban](service-get-data.md).
 
-## <a name="step-1-get-data"></a>1. lépés: Adatok lekérése
+## <a name="step-1-get-data"></a>1\. lépés: Adatok lekérése
 Íme egy példa adatok CSV-fájlból való lekérésére. Szeretné követni az oktatóanyagban leírtakat? [Töltse le ezt a CSV-mintafájlt](http://go.microsoft.com/fwlink/?LinkID=521962).
 
 1. [Jelentkezzen be a Power BI-ba](http://www.powerbi.com/). Még nincs fiókja? Ne aggódjon, regisztrálhat ingyenes próbaverzióra.
@@ -93,7 +93,7 @@ Olvassa el, milyen más módokon [kérhet még le adatokat a Power BI-ban](servi
    > 
  
 
-## <a name="step-2-start-exploring-your-dataset"></a>2. lépés: Az adatkészlet feltárása
+## <a name="step-2-start-exploring-your-dataset"></a>2\. lépés: Az adatkészlet feltárása
 Most, hogy adatokhoz csatlakozott, megismerkedhet a felülettel.  Ha valami érdekeset talál, létrehozhat egy irányítópultot, hogy figyelje, és hogy ellenőrizze, hogyan változik az idő múlásával. Nézzük meg, hogyan is működik ez.
     
 1. A jelentésszerkesztőben a lap jobb oldalán található **Mezők** ablaktábla használatával fogunk létrehozni egy vizualizációt.  Jelölje be a **Gross Sales** (Bruttó értékesítés) és a **Date** (Dátum) melletti jelölőnégyzetet.
@@ -128,7 +128,7 @@ Most, hogy adatokhoz csatlakozott, megismerkedhet a felülettel.  Ha valami érd
    
    A jelentéshez bármikor visszatérhet, ha az új csempét választja az irányítópulton. A Power BI a jelentéshez lépteti vissza Olvasó nézetben. A felső menüsorban a **Jelentés szerkesztése** lehetőséget választva váltson vissza a Szerkesztési nézetre. Miután a Szerkesztési nézetre váltott, folytassa a felülettel való ismerkedést és a csempék rögzítését. 
 
-## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>3. lépés:  A felülettel való ismerkedés folytatása a Q&A-val (a természetes nyelvű lekérdezésekkel)
+## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>3\. lépés:  A felülettel való ismerkedés folytatása a Q&A-val (a természetes nyelvű lekérdezésekkel)
 1. Az adatok gyors feltárásához próbáljon kérdést feltenni a Q&A mezőben. A Q&A-kérdésmező az irányítópult tetején (**Tegyen fel kérdést az adataival kapcsolatban**), illetve a jelentés felső menüsorában (**Kérdés feltevése**) található. Próbálja meg beírni például a „what segment had the most revenue” („melyik szegmensben volt a legnagyobb árbevétel”) kérdést.
    
    ![Q&A-vászon](media/service-get-started/powerbi-qna.png)

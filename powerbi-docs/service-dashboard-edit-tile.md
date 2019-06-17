@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ab0cbc7b4c882f08d20fdd00516fafcce96cb773
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c1b6f7434724540a9ad5b579030c3ed54b32abed
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61145009"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720577"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Irányítópult-csempék szerkesztése és eltávolítása
 
@@ -144,9 +144,9 @@ Alapértelmezés szerint egy csempe kiválasztásával megnyílik az jelentés, 
 ## <a name="next-steps"></a>Következő lépések
 [Irányítópult-csempék a Power BI-ban](consumer/end-user-tiles.md)
 
-[Irányítópultok a Power BI-ban](consumer/end-user-dashboards.md)
+[A Power BI-irányítópultok](consumer/end-user-dashboards.md)
 
-[Power BI – Alapfogalmak](consumer/end-user-basic-concepts.md)
+[A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

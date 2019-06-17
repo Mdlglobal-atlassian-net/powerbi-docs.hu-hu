@@ -1,6 +1,6 @@
 ---
 title: Hivatkozások táblázathoz adása
-description: A Power BI Desktop használatával hivatkozásokat hozhat létre. Majd használja a Power BI Desktop vagy a Power BI szolgáltatásban ezek a hivatkozások hozzáadása a jelentések táblázataihoz és a mátrixokhoz.
+description: A Power BI Desktop használatával hivatkozásokat hozhat létre. Ezeket a hivatkozásokat aztán a Power BI Desktop vagy a Power BI szolgáltatás segítségével adhatja hozzá a jelentések táblázataihoz és a mátrixokhoz.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9611d8cd45eba89854fd6cbb485c52097f77f4c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 386c52908d54833e350a7b1a6d846f78c7b88c6d
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61421579"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721380"
 ---
 # <a name="add-hyperlinks-to-a-table"></a>Hivatkozások táblázathoz adása
 Ez a témakör azt mutatja be, hogyan hozhatók létre hivatkozások a Power BI Desktopban. Ezeket a hivatkozásokat aztán a Power BI Desktop vagy a Power BI szolgáltatás segítségével adhatja hozzá a jelentések táblázataihoz és a mátrixokhoz. 
@@ -24,11 +24,11 @@ Ez a témakör azt mutatja be, hogyan hozhatók létre hivatkozások a Power BI 
 ![Hivatkozásokat tartalmazó táblázat](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
 > [!NOTE]
-> Hiperhivatkozások hozhat létre [irányítópultok csempéin](service-dashboard-edit-tile.md) és [irányítópultok](service-dashboard-add-widget.md) a működés közbeni a Power BI szolgáltatás használatával. Hiperhivatkozások hozhat létre [lévő jelentések](service-add-hyperlink-to-text-box.md) a működés közbeni Power BI szolgáltatásban és a Power BI Desktop használatával.
+> A Power BI szolgáltatással menet közben hozhatja létre az [irányítópultok csempéin](service-dashboard-edit-tile.md) és az [irányítópultok szövegdobozaiban](service-dashboard-add-widget.md) lévő hivatkozásokat. A [jelentések szövegdobozaiban](service-add-hyperlink-to-text-box.md) lévő hivatkozásokat a Power BI szolgáltatással és a Power BI Desktoppal is létrehozhatja menet közben.
 > 
 
 ## <a name="to-create-a-hyperlink-in-a-table-or-matrix-using-power-bi-desktop"></a>Hivatkozás létrehozása táblázatban vagy mátrixban a Power BI Desktop segítségével
-A hivatkozások a táblákban és a Power BI Desktopban, de nem a Power BI szolgáltatásban a mátrixokban hozhat létre. Az Excel Power Pivot hivatkozásokat is létrehozhat, a munkafüzet a Power BI-ba történő importálása előtt. Az alábbiakban mindkét módszer leírása megtalálható.
+A táblázatokban és mátrixokban lévő hivatkozásokat csak a Power BI Desktoppal hozhatja létre, a Power BI szolgáltatással nem. Hivatkozásokat az Excel Power Pivotban is létrehozhat, mielőtt a munkafüzetet a Power BI-ba importálná. Az alábbiakban mindkét módszer leírása megtalálható.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-power-bi-desktop"></a>Hivatkozás létrehozása táblázatban vagy mátrixban a Power BI Desktop használatával
 A hivatkozás felvételének menete attól függ, hogy importálta az adatokat, vagy a DirectQuery segítségével csatlakozott hozzájuk. Az alábbiakban mindkét eset leírása megtalálható.
@@ -55,7 +55,7 @@ A hivatkozás felvételének menete attól függ, hogy importálta az adatokat, 
 
     Bontsa ki az **Értékek** elemet, keresse meg az **URL-ikont**, és kapcsolja **Be**.
 
-    ![URL ikon bekapcsolása](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
+    ![URL-ikon bekapcsolása](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
 
 1. (Nem kötelező.) [A Desktopról származó jelentést közzéteheti a Power BI szolgáltatásban](guided-learning/publishingandsharing.yml?tutorial-step=2), és megnyithatja a Power BI szolgáltatáson belül. A hivatkozások itt is működni fognak.
 
@@ -97,9 +97,9 @@ VÁLASZ: Nem. Csak hivatkozás ikont lehet használni. Ha a hivatkozáshoz egyé
 
 
 ## <a name="next-steps"></a>Következő lépések
-[Vizualizációk a Power BI jelentéseiben](visuals/power-bi-report-visualizations.md)
+[Vizualizációk a Power BI-jelentésekben](visuals/power-bi-report-visualizations.md)
 
-[Power BI – Alapfogalmak](consumer/end-user-basic-concepts.md)
+[A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

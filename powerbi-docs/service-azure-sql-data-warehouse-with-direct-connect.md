@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/20/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 896e58b95f253c403bf7cd4bc3e1c069b3628f69
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 69b40b81677de8af259f9c8ce871c39f5303c09a
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770246"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448434"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>Az Azure SQL Data Warehouse használata DirectQueryvel
 
@@ -40,7 +40,7 @@ Ezek a korlátozások és figyelmeztetések a felhasználói felületek fejleszt
 
 Az SQL Data Warehouse és a Power BI között a legegyszerűbben az Azure Portalon elérhető **Megnyitás Power BI-ban** gombot használva mozoghat. Ez a gomb lehetővé teszi, hogy fennakadások nélkül kezdhessen új irányítópultokat létrehozni a Power BI-t használva.
 
-1. Kiindulásképpen lépjen az SQL Data Warehouse-példányhoz az Azure Portalon. Vegye figyelembe, hogy az SQL Data Warehouse jelenleg még csak az Azure előzetes verziós portáljáról érhető el.
+1. Kiindulásképpen lépjen az SQL Data Warehouse-példányhoz az Azure Portalon. Megjegyzendő, hogy az SQL Data Warehouse jelenleg csak az Azure Portalon található meg.
 
 2. Kattintson a **Megnyitás Power BI-ban** gombra
 
@@ -64,13 +64,13 @@ Az SQL Data Warehouse a Power BI Adatok lekérése oldaláról is elérhető.
 
 3. Válassza az **SQL Data Warehouse** \> **Kapcsolódás** lehetőséget.
 
-    ![Az Azure SQL DW-t közvetlen csatlakoztatása](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
+    ![Azure SQL Data Warehouse közvetlen kapcsolattal](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
 
 4. Adja meg a kapcsolódáshoz szükséges információkat. A **Paraméterek megkeresése** szakaszban olvashat arról, hol találja meg a szükséges adatokat az Azure Portalon.
 
     ![Kiszolgáló neve](media/service-azure-sql-data-warehouse-with-direct-connect/servername.png)
 
-    ![Speciális kiszolgáló neve](media/service-azure-sql-data-warehouse-with-direct-connect/servernamewithadvanced.png)
+    ![Speciális kiszolgálónév](media/service-azure-sql-data-warehouse-with-direct-connect/servernamewithadvanced.png)
 
     ![Felhasználónév](media/service-azure-sql-data-warehouse-with-direct-connect/username.png)
 
@@ -79,20 +79,22 @@ Az SQL Data Warehouse a Power BI Adatok lekérése oldaláról is elérhető.
 
 5. Az új csempére vagy a csillaggal jelölt újonnan létrehozott adatkészletre kattintva kezdje meg az adatkészlet feltárását. Az adatkészlet neve meg fog egyezni az adatbázis nevével.
 
-    ![Adatkészlet 2](media/service-azure-sql-data-warehouse-with-direct-connect/dataset2.png)
+    ![Adathalmaz 2](media/service-azure-sql-data-warehouse-with-direct-connect/dataset2.png)
 
 6. Ön mindegyik táblát és oszlopot feltárhatja. Amikor kiválaszt egy oszlopot, a rendszer egy lekérdezést küld az adatforráshoz, és dinamikusan létrehozza a vizualizációt. A szűrőket szintén az adattárházba küldött lekérdezésekké alakítja a rendszer. Ezek a vizualizációk menthetők egy új jelentésbe, és kitűzhetők az irányítópultra.
 
-    ![Ismerje meg a 3](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
+    ![Tallózás 3](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
 
 ## <a name="finding-parameter-values"></a>Paraméterértékek megkeresése
 
-A teljes kiszolgálónevet és adatbázisnevet az Azure Portalon találhatja meg. Vegye figyelembe, hogy az SQL Data Warehouse jelenleg még csak az Azure előzetes verziós portáljáról érhető el.
+A teljes kiszolgálónevet és adatbázisnevet az Azure Portalon találhatja meg. Megjegyzendő, hogy az SQL Data Warehouse jelenleg csak az Azure Portalon található meg.
 
 ![Azure Portal](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
 > [!NOTE]
 > Ha a Power BI-bérlője ugyanabban a régióban található, mint az Azure SQL Data Warehouse, akkor nem kell kimenő forgalmi díjat fizetnie. A Power BI-bérlője helyének ellenőrzéséhez [kövesse ezeket az utasításokat](https://docs.microsoft.com/power-bi/service-admin-where-is-my-tenant-located).
+
+[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
 
 ## <a name="next-steps"></a>Következő lépések
 

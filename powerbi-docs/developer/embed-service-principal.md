@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 8fa11926a66b5e295ee23fa6c5b90bfedb2b9761
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: 1b0386d523e4a89b7687506564f575e31b55f2e7
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375105"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720329"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Szolgáltatásnév a Power BI-jal (előzetes verzió)
 
@@ -120,7 +120,7 @@ A hagyományos fő fiók használatától eltérően a szolgáltatásnév (csak 
 
 5. Vegye fel a szolgáltatásnevet **rendszergazdaként** a létrehozott új munkaterülethez. Ezt a feladatot kezelheti az [API-kon](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) keresztül vagy a Power BI szolgáltatásban.
 
-    ![Egyszerű szolgáltatás-rendszergazdaként hozzá egy munkaterületet](media/embed-service-principal/add-service-principal-in-the-UI.png)
+    ![Szolgáltatásnév hozzáadása munkaterülethez rendszergazdaként](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Most választhat, hogy egy mintaalkalmazásban vagy a saját alkalmazásában ágyazza-e be a tartalmat.
 
@@ -168,17 +168,17 @@ Alább egy mintaszkript látható a szolgáltatásnév objektumazonosítójának
 
 * A szolgáltatásnév csak az [új alkalmazás-munkaterületen](../service-create-the-new-workspaces.md) működik.
 * A **Saját munkaterület** nem támogatott szolgáltatásnév használatakor.
-* Az éles üzemre való átálláshoz dedikált Prémium kapacitás szükséges.
+* Az éles üzemre való átálláshoz dedikált kapacitás szükséges.
 * A Power BI Portalra szolgáltatásnévvel nem lehet bejelentkezni.
 * A szolgáltatásnév Power BI felügyeleti portáljának fejlesztői beállításaiban történő engedélyezéséhez rendszergazdai jogosultságok szükségesek a Power BI-ban.
 * Szolgáltatásnév használatával nem telepíthet vagy kezelhet helyszíni adatátjárót.
 * A [Beágyazás a cég számára](embed-sample-for-your-organization.md) alkalmazásai nem tudják a szolgáltatásnevet használni.
 * Az [adatfolyamok](../service-dataflows-overview.md) kezelése nem támogatott.
-* Egyszerű szolgáltatás jelenleg nem támogatja minden olyan felügyeleti API-k.
+* A szolgáltatásnév jelenleg nem támogat rendszergazdai API-kat.
 
 ## <a name="next-steps"></a>Következő lépések
 
 * [Alkalmazás regisztrálása](register-app.md)
 * [Power BI Embedded az ügyfelek számára](embed-sample-for-customers.md)
 * [Alkalmazás- és szolgáltatásnév-objektumok az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
-* [Sorszintű biztonság a helyszíni adatátjáró használatával az egyszerű szolgáltatás (előzetes verzió)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)
+* [Helyszíni adatátjárót szolgáltatásnévvel használó sorszintű biztonság (előzetes verzió)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)

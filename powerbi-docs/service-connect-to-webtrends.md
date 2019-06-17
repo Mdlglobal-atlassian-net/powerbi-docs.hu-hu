@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1166808dc827448f94bb84cc37bf4000df178c1d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e24e6f86cddcf328497c050f82612d36efa3a4ed
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61138048"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720494"
 ---
 # <a name="connect-to-webtrends-with-power-bi"></a>Csatlakozás a Webtrends eszközhöz a Power BI használatával
 A Power BI Webtrends-tartalomcsomagja számos azonnal használatba vehető metrikát tartalmaz, így például az összes oldalmegtekintést és az adatforgalmi forrás szerinti látogatásokat. A Webtrends-adatok Power BI-ben történő vizualizációja a Webtrends-fiókhoz való csatlakozással kezdődik. Használhatja a mellékelt irányítópultot és jelentéseket, vagy testre szabhatja őket úgy, hogy az Ön számára legfontosabb adatokat emeljék ki.  Az adatok naponta egyszer automatikusan frissülnek.
@@ -103,5 +103,5 @@ A tartalomcsomag betöltése közben, a hitelesítő adatok megadása után prob
 ## <a name="next-steps"></a>Következő lépések
 [Mi az a Power BI?](power-bi-overview.md)
 
-[Power BI – Alapfogalmak](consumer/end-user-basic-concepts.md)
+[A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 

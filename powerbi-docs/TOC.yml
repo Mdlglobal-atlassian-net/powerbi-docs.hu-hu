@@ -703,6 +703,8 @@
               href: service-template-apps-tips.md
             - name: Sablonalkalmazások telepítése és terjesztése
               href: service-template-apps-install-distribute.md
+            - name: 'Power BI-sablonalkalmazás frissítése, törlése és kivonása'
+              href: service-template-update-delete-extract.md
         - name: Hibaelhárítás
           items:
             - name: Elfelejtette a Power BI-hoz használatos jelszavát?

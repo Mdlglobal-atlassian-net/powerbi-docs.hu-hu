@@ -11,23 +11,23 @@ ms.topic: conceptual
 ms.date: 04/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 45d029d5f3aa51057a9ff9c3a18c5c324d21fac1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 49c16e083b2119e94f23a78b10ea014efcd70c3c
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61206377"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721486"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Milyen mintaadatok használhatók a Power BI-ban?
-Tegyük fel, hogy kezdő felhasználó a Power BI-ban, és egyelőre adatok nélkül szeretné kipróbálni.  Vagy már van egy adatkészletet. Mivel (még), nem ismeri a Power BI működését, hogy miatt aggódnia, előfordulhat, hogy valahogy kárt tesz az adatkészletben?
+Tegyük fel, hogy kezdő felhasználó a Power BI-ban, és egyelőre adatok nélkül szeretné kipróbálni.  Esetleg már van egy adathalmaza. Mivel (egyelőre) nem ismeri a Power BI működését, aggódik, hogy valahogy kárt tesz az adathalmazban.
 
-Aggodalomra semmi ok! Az obviEnce ([www.obvience.com](http://www.obvience.com/)) és a Microsoft jóvoltából több mintát is kipróbálhat, amíg jobban meg nem ismeri a Power BI-t.  Az adatok névtelenek, és különböző szektorokhoz tartoznak: pénzügy, HR, értékesítés és egyebek. Emellett meg online dokumentációnkat használja ezeket a mintákat oktatóanyagokkal és példákkal úgy is elérheti, hogy követni tudja.      
+Aggodalomra semmi ok! Az obviEnce ([www.obvience.com](http://www.obvience.com/)) és a Microsoft jóvoltából több mintát is kipróbálhat, amíg jobban meg nem ismeri a Power BI-t.  Az adatok névtelenek, és különböző szektorokhoz tartoznak: pénzügy, HR, értékesítés és egyebek. Online dokumentációnk is ugyanezeket a mintákat használja az oktatóanyagokban és példákban, így ezeket könnyű nyomon követni.      
 
    ![Rendelkezésre álló minták](media/sample-datasets/power-bi-samples.png)
 
-Ezek a minták több formátumban is elérhetők: tartalomcsomagként, különálló Excel-munkafüzetként és .pbix-fájlként is. Ha nem tudja, ezek mik, vagy hogyan veheti őket használatba, ne aggódjon. A cikk későbbi szakaszaiban ezekre is kitérünk. Minden mintához készítettünk egy *bemutató*. Bemutatók olyan cikkek, amelyek a minta cikkfajta, és végigvezeti Önt a különböző helyzetekhez. Ilyen forgatókönyv lehet például a felettesi kérdésekre való válaszadás, a versenyképes elemzések keresése, a megosztható jelentések és irányítópultok létrehozása vagy egy üzleti váltás megmagyarázása.   
+Ezek a minták több formátumban is elérhetők: tartalomcsomagként, különálló Excel-munkafüzetként és .pbix-fájlként is. Ha nem tudja, ezek mik, vagy hogyan veheti őket használatba, ne aggódjon. A cikk későbbi szakaszaiban ezekre is kitérünk. Minden mintánkhoz létrehoztunk egy *bemutatót*. Ezek a bemutatók olyan cikkek, amelyek leírják a minták háttértörténetét, és végigvezetik Önt a különböző használati helyzeteken. Ilyen forgatókönyv lehet például a felettesi kérdésekre való válaszadás, a versenyképes elemzések keresése, a megosztható jelentések és irányítópultok létrehozása vagy egy üzleti váltás megmagyarázása.   
 
-Mielőtt, az alábbiakban a minták használatáról szóló a jogi útmutatót. Ezt követően azt a mintákat, és bemutatják, hogyan használhatja őket.   
+Mielőtt hozzálátnánk, ejtsünk szót a minták használatának jogi irányelveiről. Ez után bemutatjuk a mintákat és azok használatát.   
 
 ## <a name="usage-guidelines-for-the-power-bi-sample-excel-workbooks"></a>A Power BI Excel-mintamunkafüzeteinek használati útmutatója
 
@@ -39,7 +39,7 @@ A munkafüzeteket és a kapcsolódó adatokat az obviEnce szolgáltatja. [www.ob
 
 Az obviEnce egy független szoftverszállító és szellemitulajdon-inkubátor, amely a Microsoft üzleti intelligenciájával foglalkozik. A cég szorosan együttműködik a Microsofttal az ajánlott eljárások kidolgozásában és a Microsoft üzletiintelligencia-megoldásainak kreatív tervezésében, fejlesztésében és üzembe helyezésében.
 
-A munkafüzetek és az adatok tulajdonság obvience LLC, és kizárólag a Power BI-funkció elérhetővé válik az iparági mintaadatokat bemutatásához megosztott.
+A munkafüzetek és azok adatai az obviEnce LLC tulajdonát képezik, és kizárólag a Power BI iparági mintaadatokkal használható funkcióinak bemutatására szolgálnak.
 
 A munkafüzetek és/vagy azok adatainak használata csak a fenti esetre terjedhet ki (amely minden munkafüzet Info munkalapján is megtalálható). A munkafüzetet és minden vizualizációt az alábbi szerzői jogi nyilatkozattal kell ellátni: obviEnce ©.
 
@@ -51,17 +51,17 @@ Nyolc különböző mintát használhat.  Mindegyik egy-egy szektorhoz kapcsoló
 ### <a name="customer-profitability-sample--customer-profitability-samplemediasample-datasetspower-bi-cp2png"></a>Ügyfél-jövedelmezőségi minta  ![Ügyfél-jövedelmezőségi minta](media/sample-datasets/power-bi-cp2.png)
 [Ügyfél-jövedelmezőségi minta: bemutató](sample-customer-profitability.md)
 
-Ez az iparági minta egy pénzügyi igazgató az Igazgatókra kulcsfontosságú metrikákhoz kaphat elemzi a vállalat vezetők, -termékekre és-ügyfeleknek. Segítségével megvizsgálhatja, hogy milyen tényezők befolyásolják a cég jövedelmezőségét.
+Ez az iparági minta egy pénzügyi igazgató a vállalat igazgatóira, termékeire és ügyfeleire vonatkozó fő mérőszámait elemzi. Segítségével megvizsgálhatja, hogy milyen tényezők befolyásolják a cég jövedelmezőségét.
 
 ### <a name="human-resources-sample--human-resources-samplemediasample-datasetspower-bi-hrpng"></a>Emberi erőforrások minta  ![Emberi erőforrások minta](media/sample-datasets/power-bi-hr.png)
 [Emberi erőforrások minta: bemutató](sample-human-resources.md)
 
-Ez az iparági minta az alkalmazási stratégiában a vállalat elemzésével, újonnan felvett alkalmazottak, aktív alkalmazottak és alkalmazottak, akik még maradt összpontosít.  Az adatok elemzésével trendeket azonosíthat a távozásokra és a felvételi stratégia esetleges előítéleteire nézve.
+Ez az iparági minta egy cég felvételi stratégiájával foglalkozik, és az újonnan felvett, az aktív és a már máshol dolgozó alkalmazottakat elemzi.  Az adatok elemzésével trendeket azonosíthat a távozásokra és a felvételi stratégia esetleges előítéleteire nézve.
 
 ### <a name="it-spend-analysis-sample-it-spend-analysis-samplemediasample-datasetspower-bi-itpng"></a>Informatikaköltség-elemzési minta ![Informatikaköltség-elemzési minta](media/sample-datasets/power-bi-it.png)
 [Informatikaköltség-elemzési minta: bemutató](sample-it-spend.md)
 
-Ez az iparági minta elemezzük a tervezett és a egy cég informatikai részlegének tényleges költségek. Az összevetés segít megérteni, hogy milyen pontosan tervezte a cég az idei évet, és feltárhatóvá teszi a tervtől jelentősen eltérő területeket. A példában szereplő cég egy éves tervezési cikluson halad végig, és minden negyedévben friss becslést készít (Latest Estimate - LE) a pénzügyi év informatikai költségeiben bekövetkezett változások elemzéséhez.
+Ez az iparági minta egy cég informatikai részlegének tervezett és valós kiadásait hasonlítja össze. Az összevetés segít megérteni, hogy milyen pontosan tervezte a cég az idei évet, és feltárhatóvá teszi a tervtől jelentősen eltérő területeket. A példában szereplő cég egy éves tervezési cikluson halad végig, és minden negyedévben friss becslést készít (Latest Estimate - LE) a pénzügyi év informatikai költségeiben bekövetkezett változások elemzéséhez.
 
 ### <a name="opportunity-analysis-sample--opportunity-analysis-samplemediasample-datasetspower-bi-oapng"></a>Lehetőségelemzési minta  ![Lehetőségelemzési minta](media/sample-datasets/power-bi-oa.png)
 [Lehetőségelemzési minta: bemutató](sample-opportunity-analysis.md)
@@ -71,7 +71,7 @@ Ez az iparági minta egy szoftvercég értékesítési csatornáit elemzi. Az é
 ### <a name="procurement-analysis-sample--procurement-analysis-samplemediasample-datasetspower-bi-papng"></a>Beszerzéselemzési minta  ![Beszerzéselemzési minta](media/sample-datasets/power-bi-pa.png)
 [Beszerzéselemzési minta: bemutató](sample-procurement.md)
 
-Ez az iparági minta egy pénzügyi igazgató az Igazgatókra kulcsfontosságú metrikákhoz kaphat elemzi a vállalat vezetők, -termékekre és-ügyfeleknek. Segítségével megvizsgálhatja, hogy milyen tényezők befolyásolják a cég jövedelmezőségét.
+Ez az iparági minta egy pénzügyi igazgató a vállalat igazgatóira, termékeire és ügyfeleire vonatkozó fő mérőszámait elemzi. Segítségével megvizsgálhatja, hogy milyen tényezők befolyásolják a cég jövedelmezőségét.
 
 ### <a name="retail-analysis-sample--retail-analysis-samplemediasample-datasetspower-bi-rspng"></a>Kiskereskedelmi elemzési minta  ![Kiskereskedelmi elemzési minta](media/sample-datasets/power-bi-rs.png)
 [Kiskereskedelmi elemzési mintaa: bemutató](sample-retail-analysis.md)
@@ -91,14 +91,14 @@ Ez az iparági minta az ellátási láncok egyik tipikus problémájára, a szá
 Most már ismeri a választási lehetőségeket. Ideje megismerni a minták beszerzésének módját is.  
 
 ## <a name="how-to-get-the-samples"></a>A minták beszerzése
-Ahogyan fent olvashatta, a minták több formátumban elérhetők: tartalomcsomagként, Excel-munkafüzetként és .pbix-fájlként. Ismertetjük az egyes ezek a formátumok tartalomcsomagokkal kezdve.
+Ahogyan fent olvashatta, a minták több formátumban elérhetők: tartalomcsomagként, Excel-munkafüzetként és .pbix-fájlként. Ezeket a formátumokat egyesével ismertetjük, a tartalomcsomagokkal kezdve.
 
 ## <a name="the-power-bi-samples-as-content-packs"></a>Power BI-minták tartalomcsomagként
-A tartalomcsomag az egyetlen olyan mintaformátum, amely a Power BI szolgáltatáson belül elérhető, és nem máshonnan kell beszerezni. Egy tartalomcsomag lényegében egy csomag egy vagy több irányítópultok, adatkészleteket és jelentéseket, amelyek valaki hoz létre, és a Power BI szolgáltatással, amely használható. A tartalomcsomagokat általában munkatársakkal osztják meg. Mindegyik Power BI-beli minta-tartalomcsomag tartalmaz egy adatkészletet, egy jelentést és egy irányítópultot.  A tartalomcsomagok a Power BI Desktopban nem érhetők el. További információ a tartalomcsomagokról: [A Power BI tartalomcsomagjai – bevezetés](service-organizational-content-pack-introduction.md).
+A tartalomcsomag az egyetlen olyan mintaformátum, amely a Power BI szolgáltatáson belül elérhető, és nem máshonnan kell beszerezni. A tartalomcsomagok alapvetően egy vagy több irányítópultból, adatkészletből és jelentésből álló csomagok, amelyeket felhasználók hoznak létre, és a Power BI-ban használhatók. A tartalomcsomagokat általában munkatársakkal osztják meg. Mindegyik Power BI-beli minta-tartalomcsomag tartalmaz egy adatkészletet, egy jelentést és egy irányítópultot.  A tartalomcsomagok a Power BI Desktopban nem érhetők el. További információ a tartalomcsomagokról: [A Power BI tartalomcsomagjai – bevezetés](service-organizational-content-pack-introduction.md).
 
 ### <a name="get-and-open-a-sample-content-pack-in-power-bi-service"></a>Minta-tartalomcsomag beszerzése és megnyitása a Power BI szolgáltatásban
-1. Nyissa meg a Power BI szolgáltatásban (app.powerbi.com), és jelentkezzen be.
-2. A bal alsó sarokban válassza **adatok**.
+1. Nyissa meg a Power BI-t (app.powerbi.com), és jelentkezzen be.
+2. A bal alsó sarokban válassza az **Adatok lekérése** lehetőséget.
 
     ![Adatbeolvasás ikon](media/sample-datasets/power-bi-get-data.png)
 3. Ekkor megjelenik az Adatok lekérése lap. Itt kattintson a **Minták** ikonra.
@@ -128,17 +128,17 @@ A minta-tartalomcsomagok Excel-munkafüzetként is elérhetők. Az Excel-munkaf�
    * [Értékesítési és marketing minta](http://go.microsoft.com/fwlink/?LinkId=529785)
 2. Mentse a letöltött fájlt. Fontos, hogy hova menti a fájlt.
 
-   * ![Helyi meghajtó](media/sample-datasets/power-bi-local-file2.png) **Helyi meghajtó** – Ha a fájlt a saját számítógépére vagy a cég valamilyen más helyére mentette, a Power BI-ból importálhatja a fájlt Power BI-ba. A fájl ténylegesen marad a helyi meghajtón, így a teljes fájl nem importálja a Power BI-bA. Mi történik, akkor egy új adatkészlet jön létre a Power BI-webhelyén, és az adatokat, és olykor az adatmodellbe, töltődnek be az adatkészletbe. Ha a fájlban vannak jelentések, ezeket a jelentéseket a Power BI-webhely jelentések területén jelennek meg.
-   * ![OneDrive vállalati](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive vállalati verzió** – Ha OneDrive vállalati verzióba és jelentkezik be a Power BI-, OneDrive for Business messze a legjobb hely az Excelben, hogy a használt fiókkal jelentkezik be, Power bi-ban, vagy egy. CSV fájl szinkronban maradjon az adatkészlet, jelentések és irányítópultok Power BI-ban. Mivel a Power BI és a OneDrive egyaránt a felhőben található, a Power BI nagyjából óránként kapcsolódik a OneDrive-on található fájlhoz. Ha módosításokat talál, az adatkészlet, a jelentések és az irányítópultok automatikusan frissülnek a Power BI-ban.
+   * ![Helyi meghajtó](media/sample-datasets/power-bi-local-file2.png) **Helyi meghajtó** – Ha a fájlt a saját számítógépére vagy a cég valamilyen más helyére mentette, a Power BI-ból importálhatja a fájlt Power BI-ba. A fájl valójában a helyi meghajtón marad, tehát a teljes fájl nem lesz importálva a Power BI-ba. Annyi történik, hogy létrejön egy új adatkészlet az Ön Power BI-webhelyén, a rendszer pedig betölti abba az adatokat, és bizonyos esetekben az adatmodellt is. Ha a fájlban vannak jelentések, azok a Power BI-webhely Jelentések területén jelennek meg.
+   * ![OneDrive Vállalati verzió](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – Vállalati verzió** – Ha OneDrive Vállalati verzióval rendelkezik, és a Power BI-hoz is használt fiókkal jelentkezik be oda, akkor a OneDrive vállalati verziója a legjobb megoldás arra, hogy az Excelben vagy a Power BI Desktopban készült munkái vagy .CSV-fájljai szinkronban maradjanak az adathalmazzal, a jelentésekkel és az irányítópultokkal a Power BI-ban. Mivel a Power BI és a OneDrive egyaránt a felhőben található, a Power BI nagyjából óránként kapcsolódik a OneDrive-on található fájlhoz. Ha módosításokat talál, az adatkészlet, a jelentések és az irányítópultok automatikusan frissülnek a Power BI-ban.
    * ![OneDrive személyes](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – személyes** – Ha a saját OneDrive-fiókjába menti a fájlokat, számos olyan előnyre tehet szert, mint a OneDrive Vállalati verziójának használatakor. A legnagyobb különbség az, hogy amikor először csatlakozik a fájlhoz (az Adatok lekérése > Fájlok > OneDrive – személyes paranccsal), a Microsoft-fiókjával kell bejelentkeznie a OneDrive-ra, amely általában különbözik a Power BI-ba való bejelentkezéskor használt fióktól. Amikor a Microsoft-fiókjával jelentkezik be a OneDrive-ba, mindenképp jelölje be a Bejelentkezve szeretnék maradni lehetőséget. Így a Power BI képes óránként csatlakozni a fájlhoz, hogy biztosítsa a Power BI-ban lévő adatok szinkronizálását.
    * ![SharePoint-csoportwebhelyek](media/sample-datasets/power-bi-sharepoint2.png) **SharePoint-csoportwebhelyek** – A Power BI-ban lévő fájloknak a SharePoint-csoportwebhelyekre történő mentése nagyjából ugyanúgy zajlik, mint a OneDrive Vállalati verzió esetében. A legnagyobb különbség a fájlhoz a Power BI-ból való csatlakozás módja. Megadhat egy URL-címet vagy csatlakozhat a gyökérmappához.
-1. Nyissa meg a Power BI szolgáltatásban (app.powerbi.com), és jelentkezzen be.
+1. Nyissa meg a Power BI-t (app.powerbi.com), és jelentkezzen be.
 
    > [!TIP]
    > Ezen a ponton célszerű létrehozni egy új irányítópultot, és az importálni kívánt fájl után elnevezni.  Ellenkező esetben amikor importálja az Excel-adatkészletet, a Power BI nem hoz létre egy új, a minta után elnevezett irányítópultot, hanem egy csempét ad az aktuálisan megnyitott irányítópulthoz. A csempére kattintva megnyithatja az adatkészlet jelentését. Ez nem nagy probléma, mivel később bármikor létrehozhat egy új irányítópultot, de ha egy új irányítópulttal kezdi a munkát, azzal átugorhat néhány lépést.
    >
    >
-4. A bal alsó sarokban válassza **adatok**.
+4. A bal alsó sarokban válassza az **Adatok lekérése** lehetőséget.
 
     ![Adatbeolvasás ikon](media/sample-datasets/power-bi-get-data.png)
 5. Ekkor megjelenik az Adatok lekérése lap. Itt válassza a **Fájlok > Lekérés** lehetőséget.
@@ -147,27 +147,27 @@ A minta-tartalomcsomagok Excel-munkafüzetként is elérhetők. Az Excel-munkaf�
 6. Nyissa meg a letöltött minta helyét.
 
    ![Az a hely, ahová a mintát mentette](media/sample-datasets/power-bi-files3.png)
-7. Ebben az esetben válassza ki a fájl **beszerzéselemzési minta.xlsx**, amely lett mentve a OneDrive vállalati verzióba, és válassza a **Connect**.
+7. Jelölje ki a OneDrive Vállalati verzióra mentett fájlt (ebben az esetben a **Beszerzéselemzés.xlsx-t**), majd válassza a **Csatlakozás** lehetőséget.
 
    ![One Drive Vállalati verzió > Csatlakozás](media/sample-datasets/power-bi-connect2.png)
 8. Döntse el, hogy importálni szeretné az adatokat, vagy inkább megnyitná a munkafüzetet a Power BI-ban, és megtekintené úgy, ahogy az az Excel Online-ban szerepel.
 
     ![Importálás vagy Csatlakozás](media/sample-datasets/power-bi-import.png)
 9. Ha az **Importálás** lehetőséget választja, a Power BI importálja a minta-munkafüzetet, és egy új adatkészletként adja hozzá, amelyet **Beszerzéselemzési mintának** nevez el.  Ha a munkafüzet tartalmaz Power View-lapokat, -táblákat, -tartományokat vagy egy adatmodellt, a Power BI egy azonos nevű jelentést is létrehoz. Ha pedig még nincs megnyitva irányítópult, a Power BI létrehoz egy újat. (Ha már megnyitott egy irányítópultot, mielőtt az **Adatok lekérése** lehetőséget választotta, egy üres csempe jelenik meg rajta.  A csempére kattintva az imént hozzáadott adatkészlet jelentésére léphet). Az új tartalom neve megegyezik a minta nevével, a program pedig egy sárga csillaggal jelöli.
-10. Amikor megjelenik **Az adatkészlet készen áll.** képernyő, válassza **adatkészlet megtekintése** vagy **gyors elemzések lekérése** vagy a Power BI bal oldali navigációs sáv segítségével keresse meg és nyissa meg a társított jelentést vagy irányítópultot.  
+10. Amikor megjelenik **Az adatkészlet készen áll.** képernyő, válassza az **Adathalmaz megtekintése** vagy a **Gyors elemzések lekérése** lehetőséget, vagy a Power BI bal oldali navigációs sávján keresse és nyissa meg a társított jelentést vagy irányítópultot.  
 
      ![Adathalmaz megtekintése](media/sample-datasets/power-bi-ready.png)
 
 ### <a name="optional-take-a-look-at-the-excel-samples-from-inside-excel-itself"></a>(Nem kötelező) Az Excel-minták megtekintése magában az Excelben
 Szeretné tudni, hogyan alakulnak át az Excel-munkafüzet adatai Power BI-adatkészletekké és -jelentésekké? Ha megnyitja a mintákat az ***Excelben***, és végignézi a munkalapokat, megértheti a konvertálás működését.
 
-* Amikor először nyit meg egy minta-munkafüzetet az Excelben, két figyelmeztetés jelenhet meg. Az első figyelmeztetés azt jelzi, hogy a munkafüzet védett nézetben van. Kattintson a **Szerkesztés engedélyezése** lehetőségre. A második figyelmeztetést tudatja Önnel, hogy a munkafüzet külső adatkapcsolatokkal rendelkezik. Válassza a **Tartalom engedélyezése** lehetőséget.
-* Minden munkafüzet több Power View-lapokat tartalmaz. Ha meg szeretné tekinteni a az Excel Power View-lapokat, kell [engedélyezése a Power View bővítmény](https://support.office.com/article/flash-silverlight-and-shockwave-controls-blocked-in-microsoft-office-55738f12-a01d-420e-a533-7cef1ff6aeb1) beállításkulcsok csomag letöltésével.
-* Hol vannak a tényleges adatok? A Power Pivot-adatmodellben. A Power View-lapokat, az adatok megtekintéséhez nem szükséges. Az a **PowerPivot** lapon jelölje be **kezelés**.
+* Amikor először nyit meg egy minta-munkafüzetet az Excelben, két figyelmeztetés jelenhet meg. Az első figyelmeztetés tudatja Önnel, hogy a munkafüzet védett nézetben van. Kattintson a **Szerkesztés engedélyezése** lehetőségre. A második figyelmeztetés tudatja Önnel, hogy a munkafüzet külső adatkapcsolatokkal rendelkezik. Válassza a **Tartalom engedélyezése** lehetőséget.
+* Mindegyik munkafüzet több Power View-munkalapot tartalmaz. Ha látni szeretné a Power View-munkalapokat az Excelben, [engedélyeznie kell a Power View beépülő modult](https://support.office.com/article/flash-silverlight-and-shockwave-controls-blocked-in-microsoft-office-55738f12-a01d-420e-a533-7cef1ff6aeb1) a beállításkulcs-csomag letöltésével.
+* Hol vannak a tényleges adatok? A Power Pivot-adatmodellben. Az adatok megtekintéséhez nincs szükség a Power View-munkalapokra. A **Power Pivot** lapon válassza a **Kezelés** lehetőséget.
 
-    Nem találja a **Power Pivot** lapon? [Engedélyezze a Power Pivot bővítményt](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8).
+    Nem látja a **Power Pivot** lapot? [Engedélyezze a Power Pivot bővítményt](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8).
 
-    A Power Pivotban láthatja az összes alapul szolgáló tábla, valamint a DAX-képletek az adatokat. 
+    A Power Pivotban az összes mögöttes táblában lévő adatot és az összes DAX-képletet is látni fogja. 
 
 * Az Info lapon a minta készítőjéről, az obviEnce-ről találhat információkat.
 
@@ -192,7 +192,7 @@ A minta-tartalomcsomagok .pbix-fájlként is elérhetők. A .pbix-fájlok a Powe
 4. A Power BI Desktopban történő megnyitáshoz kattintson a .pbix-fájlra.
 
 ## <a name="next-steps"></a>Következő lépések
-[Power BI – Alapfogalmak](consumer/end-user-basic-concepts.md)
+[A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 
 [Oktatóanyag: Csatlakozás a Power BI-mintákhoz](sample-tutorial-connect-to-the-samples.md)
 
