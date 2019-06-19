@@ -1,6 +1,6 @@
 ---
 title: Azure Active Directory-bérlő létrehozása a Power BI szolgáltatással való használathoz
-description: Ismerje meg, hogyan hozhat létre új Azure Active Directory-bérlőt (Azure AD-bérlőt) az egyéni alkalmazásokkal való használathoz a Power BI REST API-k segítségével.
+description: Ismerje meg, hogyan hozhat létre új Azure Active Directory-bérlőt (Azure AD-bérlőt) a Power BI REST API-kat meghívó egyéni alkalmazásokhoz.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -8,35 +8,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/30/2017
-ms.openlocfilehash: ae3d15cce7c0beb8122542e3768a0ec10ca0a1ae
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 05/28/2019
+ms.openlocfilehash: 73dddd00b6f811cd29c76c97b04136358d6e6b7a
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61381697"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809200"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Azure Active Directory-bérlő létrehozása a Power BI szolgáltatással való használathoz
 
-Ismerje meg, hogyan hozhat létre új Azure Active Directory-bérlőt (Azure AD-bérlőt) az egyéni alkalmazásokkal való használathoz a Power BI REST API-k segítségével.
+Ismerje meg, hogyan hozhat létre új Azure Active Directory-bérlőt (Azure AD-bérlőt) a [Power BI REST API-kat](rest-api-reference.md) meghívó egyéni alkalmazásokhoz.
 
 A bérlők a szervezetek képviselői az Azure Active Directoryban. Ez az Azure AD szolgáltatás egy dedikált példánya, amelyet a szervezetek megkapnak és a tulajdonukban áll, amikor regisztrálnak egy Microsoft-felhőszolgáltatásra, például az Azure, a Microsoft Intune vagy az Office 365 szolgáltatásra. Mindegyik Azure AD-bérlő önálló, és elkülönül a többi Azure AD-bérlőtől.
 
-Ha már rendelkezik Azure AD-bérlővel, megadhat egy alkalmazást, és hozzárendelhet engedélyeket, így az alkalmazás használhatja a Power BI REST API-kat.
+Ha már rendelkezik Azure AD-bérlővel, megadhat egy alkalmazást, és hozzárendelhet engedélyeket, így az meghívhatja a [Power BI REST API-kat](rest-api-reference.md).
 
-Lehet, hogy a szervezete már rendelkezik egy Azure AD-bérlővel, amelyet az alkalmazásához használhat. Használhatja azt a bérlőt, amelyre az alkalmazásnak szüksége van, vagy létrehozhat egy új bérlőt csak ehhez az alkalmazáshoz. Ez a cikk bemutatja egy új bérlő létrehozásának módját.
+Lehet, hogy a szervezete már rendelkezik egy Azure AD-bérlővel, amelyet az alkalmazásához használhat. Emellett létre is hozhat egy új bérlőt kifejezetten az alkalmazáshoz. Ez a cikk bemutatja egy új bérlő létrehozásának módját.
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Azure Active Directory-bérlő létrehozása
 
-A Power BI egyéni alkalmazásokba integrálásához meg kell adnia egy alkalmazást az Azure AD-ban. Ehhez egy címtárra van szüksége az Azure AD-ban. Ez az Ön bérlője. Ha a cége még nem rendelkezik bérlővel, mert nem használ Power BI-t vagy Office 365-öt, [létre kell hoznia egyet](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Akkor is létre kell hoznia egyet, ha nem szeretné az alkalmazást keverni a szervezet bérlőjével. Így elkülönítve tarthatja a dolgokat.
+A Power BI egyéni alkalmazásokba integrálásához meg kell adnia egy alkalmazást az Azure AD-ben, amelyhez Azure AD-címtár szükséges. Ez a címtár az Ön *bérlője*. Ha a cége még nem rendelkezik bérlővel, mert nem használ Power BI-t vagy Office 365-öt, [be kell állítania egy fejlesztői környezetet](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Akkor is létre kell hoznia egyet, ha nem szeretné az alkalmazást keverni a szervezet bérlőjével, így elkülönítve tarthatja azt. Vagy csak létrehozhat egy bérlőt tesztelési célra is.
 
-Vagy csak létrehozhat egy bérlőt tesztelési célra is.
-
-Új Azure AD-bérlő létrehozásához tegye a következőket.
+Új Azure AD-bérlő létrehozásához tegye a következőket:
 
 1. Nyissa meg az [Azure Portalt](https://portal.azure.com), és jelentkezzen be egy Azure-előfizetéssel rendelkező fiókkal.
 
-2. Válassza ki a **plusz ikont (+)** és keresse meg az *Azure Active Directoryt*.
+2. Válassza ki a **plusz ikont (+)** és keresse meg az **Azure Active Directoryt**.
 
     ![Plusz ikon (+)](media/create-an-azure-active-directory-tenant/new-directory.png)
 
@@ -46,20 +44,20 @@ Vagy csak létrehozhat egy bérlőt tesztelési célra is.
 
 4. Kattintson a **Létrehozás** gombra.
 
-5. Adja meg a **szervezet nevét** a **kezdeti tartománynevet**. Ezután kattintson a **Létrehozás** elemre. Ezzel létrejön a címtár.
+5. Adja meg a **szervezet nevét** és a **kezdeti tartománynevet**. Ezután kattintson a **Létrehozás** elemre. A címtár létrehozása megtörtént.
 
     ![Szervezet és a tartomány](media/create-an-azure-active-directory-tenant/organization-and-domain.png)
 
    > [!NOTE]
-   > A kezdeti tartománynév az onmicrosoft.com része lesz. Egyéb tartományneveket később adhat hozzá. Egy bérlő címtára több hozzárendelt tartománnyal is rendelkezhet.
+   > A kezdeti tartománynév az onmicrosoft.com része. Egyéb tartományneveket később adhat hozzá. Egy bérlő címtára több hozzárendelt tartománnyal is rendelkezhet.
 
 6. A címtár létrehozása után válassza az információs dobozt az új címtár kezeléséhez.
 
-A címtár létrehozása megtörtént. Ezután hozzáadunk egy felhasználót a bérlőhöz.
+A következő lépésben bérlői felhasználókat adhat hozzá.
 
-## <a name="create-some-users-in-your-azure-active-directory-tenant"></a>Néhány felhasználó létrehozása az Azure Active Directory-bérlőben
+## <a name="create-azure-active-directory-tenant-users"></a>Az Azure Active Directory-bérlő felhasználóinak létrehozása
 
-Most, hogy már rendelkezésre áll a címtár, hozzunk létre legalább két felhasználót. Az egyik a bérlő globális rendszergazdája, a másik pedig a beágyazás fő felhasználója. Gondoljon erre úgy, mint egy szolgáltatásfiókra.
+Most, hogy már rendelkezésre áll a címtár, hozzunk létre legalább két felhasználót. Az egyik a bérlő globális rendszergazdája, a másik pedig a beágyazási főfelhasználó. Gondoljon az utóbbira úgy, mint egy szolgáltatásfiókra.
 
 1. Győződjön meg arról, hogy az Azure Portal Azure Active Directory lapján tartózkodik.
 
@@ -68,31 +66,36 @@ Most, hogy már rendelkezésre áll a címtár, hozzunk létre legalább két fe
     Ha más helyen van, válassza az Azure Active Directory ikont a bal oldali szolgáltatások sávon.
 
     ![](media/create-an-azure-active-directory-tenant/aad-service.png)
-2. A **Kezelés** menüpontban válassza a **Felhasználók és csoportok** lehetőséget.
+
+2. A **Kezelés** menüpontban válassza a **Felhasználók** lehetőséget.
 
     ![](media/create-an-azure-active-directory-tenant/users-and-groups.png)
+
 3. Válassza a **Minden felhasználó**, majd az **+ Új felhasználó** lehetőséget.
-4. Adjon meg egy nevet és egy felhasználónevet ennek a felhasználónak. Ez lesz a bérlő globális rendszergazdája. Érdemes módosítani a **Címtárszerepkört** *Globális rendszergazdára*. Megjelenítheti az ideiglenes jelszót is. Ha elkészült, kattintson a **Létrehozás** gombra.
+
+4. Adjon meg egy **nevet** és **felhasználónevet** a bérlő globális rendszergazdájának. A **Címtárszerepkört** módosítsa **Globális rendszergazdára**. Megjelenítheti az ideiglenes jelszót is. Ha elkészült, válassza a **Létrehozás** lehetőséget.
 
     ![](media/create-an-azure-active-directory-tenant/global-admin.png)
 
-5. Célszerű ugyanezt megtenni a bérlő normál felhasználója esetében is. Ez használható a fő beágyazó fiókhoz is. Ezúttal a **Címtárszerepkört** *Felhasználó* értéken hagyjuk. Ügyeljen arra, hogy feljegyezze a jelszót. Ezután kattintson a **Létrehozás** elemre.
+5. Járjon el ugyanígy a hagyományos bérlői felhasználóval is. Ez a fiók használható a fő beágyazó fiókhoz is. Ezúttal a **Címtárszerepkört** hagyja **Felhasználó** értéken. Írja le a jelszót, majd válassza a **Létrehozás** elemet.
 
     ![](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
-6. Regisztráljon a Power BI-ra az 5. lépésben létrehozott felhasználói fiókkal. Ezt úgy teheti meg, hogy ellátogat a [powerbi.com](https://powerbi.microsoft.com/get-started/) oldalra, és kiválasztja a **Próbálja ki ingyen** lehetőséget a *Power BI – Felhőbeli együttműködés és megosztás* résznél.
+
+6. Regisztráljon a Power BI-ra az 5. lépésben létrehozott felhasználói fiókkal. Lépjen a [powerbi.com](https://powerbi.microsoft.com/get-started/) oldalra, és válassza a **Próbálja ki ingyen** lehetőséget a **Power BI – Felhőbeli együttműködés és megosztás** résznél.
 
     ![](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
-    Amikor regisztrál, a rendszer felkéri a Power BI Pro 60 napig tartó, ingyenes kipróbálására. Elfogadhatja ezt, és pro felhasználóvá válhat. Most elkezdheti egy beágyazott megoldás fejlesztését is, ha ezt szeretné tenni.
+    Amikor regisztrál, a rendszer felkéri a Power BI Pro 60 napig tartó, ingyenes kipróbálására. Ezt választva Pro-felhasználó lehet, amelynek keretében [beágyazott megoldást fejleszthet](embedding-content.md).
 
    > [!NOTE]
-   > Győződjön meg arról, hogy azzal az e-mail-címmel regisztrál, amelyet a felhasználói fiókhoz adott meg.
+   > Győződjön meg arról, hogy azzal a felhasználói fiók e-mail-címével regisztrál.
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 
-Most, hogy már rendelkezik Azure AD-bérlővel, használhatja ezt a bérlőt a Power BI-ben található elemek teszteléséhez, és/vagy továbbléphet a Power BI irányítópultok és jelentések alkalmazásba való beágyázáshoz. Elemek beágyazásával kapcsolatos további információk: [Power BI irányítópultok, jelentések és csempék beágyazása](embedding-content.md).
+Most, hogy már rendelkezik Azure AD-bérlővel, használhatja ezt a bérlőt a Power BI-ben található elemek teszteléséhez. Emellett Power BI-irányítópultokat és -jelentéseket ágyazhat az alkalmazásába. További információ: [Power BI-irányítópultok, -jelentések és -csempék beágyazása](embedding-content.md).
 
-[Mi az az Azure AD-címtár?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)  
-[Azure AD-bérlő beszerzése](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
+[Mi az Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 
+ 
+[Rövid útmutató: Fejlesztői környezet beállítása](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

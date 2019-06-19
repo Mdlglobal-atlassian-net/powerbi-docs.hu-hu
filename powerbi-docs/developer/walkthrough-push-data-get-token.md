@@ -1,5 +1,5 @@
 ---
-title: Hitelesítési hozzáférési token beszerzése
+title: Hitelesítési hozzáférési jogkivonat lekérése
 description: Útmutatás az adatok leküldéséhez – Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése
 author: rkarlin
 ms.author: rkarlin
@@ -8,42 +8,49 @@ ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: 4a0b0f5e7d697c137da343576d05fbcc91b4a4f7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 05/29/2019
+ms.openlocfilehash: 5cb741d194d787014fec39f963e19d04de59a668
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710352"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809095"
 ---
-# <a name="step-2-get-an-authentication-access-token"></a>2. lépés: Hitelesítési hozzáférési jogkivonat beszerzése
+# <a name="step-2-get-an-authentication-access-token"></a>2\. lépés: Hitelesítési hozzáférési jogkivonat lekérése
 
-Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-data.md) ismertető részletes útmutató része.
+Ez a cikk az [Adatok elküldése Power BI-adatkészletbe](walkthrough-push-data.md) című sorozat második lépése.
 
-Az adatok adatkészletbe történő leküldésének **1. lépésében** ([Alkalmazás regisztrálása az Azure AD-vel](walkthrough-push-data-register-app-with-azure-ad.md)) regisztrált egy ügyfélalkalmazást az Azure AD-ben. Ebben a lépésben hitelesítéshez szükséges hozzáférési jogkivonatot fogja beszerezni. A Power BI-alkalmazások integrálva vannak az **Azure AD**-vel, hogy biztonságos bejelentkezést és hitelesítést biztosítsanak az alkalmazáshoz. Az **Azure AD**-hitelesítéshez és a Power BI-erőforrásokhoz való hozzáféréshez jogkivonatokat használhat.
+Az 1. lépésben [regisztrált egy ügyfélalkalmazást az Azure AD-ben](walkthrough-push-data-register-app-with-azure-ad.md). Ebben a lépésben hitelesítéshez szükséges hozzáférési jogkivonatot fogja beszerezni. A Power BI-alkalmazások integrálva vannak az Azure Active Directoryval, hogy biztonságos bejelentkezést és hitelesítést biztosítsanak az alkalmazáshoz. Az Azure AD-hitelesítéshez és a Power BI-erőforrásokhoz való hozzáféréshez az alkalmazás jogkivonatokat használ.
 
-A továbbiakban ismertetjük, hogyan szerezhet be a hitelesítéshez szükséges hozzáférési jogkivonatot.
+## <a name="get-an-authentication-access-token"></a>Hitelesítési hozzáférési jogkivonat lekérése
 
-## <a name="get-an-authentication-access-token"></a>Hitelesítési hozzáférési jogkivonat beszerzése
+A kezdés előtt győződjön meg róla, hogy elvégezte az [Adatok leküldése Power BI-adatkészletekbe](walkthrough-push-data.md) sorozat [előző lépését](walkthrough-push-data-register-app-with-azure-ad.md). 
 
-> **MEGJEGYZÉS**: Mielőtt elkezdené, győződjön meg arról, hogy követte az [adatok leküldése az adatkészletbe](walkthrough-push-data.md) bemutatóban található korábbi lépéseket.
+Ehhez az eljáráshoz a Visual Studio 2015 vagy újabb verziója szükséges.
 
-1. A Visual Studióban (2015-ös vagy újabb), hozzon létre egy **Konzolalkalmazás** projekt.
-2. Telepítse az [Azure AD Authentication Library for .NET NuGet csomagot](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Ha egy .NET-alkalmazásban szeretne beszerezni hitelesítéshez szükséges biztonsági jogkivonatot, használja ezt a csomagot. A csomagot az alábbiakban leírt módon telepítheti:
+1. A Visual Studióban hozzon létre egy új C# **Konzolalkalmazás** projektet.
 
-     a. A (2015-ös vagy újabb) a Visual Studióban válassza **eszközök** > **NuGet-Csomagkezelő** > **Package Manager Console**.
+2. Telepítse az [Azure AD Authentication Library for .NET NuGet csomagot](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). A .NET-alkalmazásnak szüksége van erre a csomagra a hitelesítéshez szükséges biztonsági jogkivonat beszerzéséhez. 
 
-     b. A **csomagkezelő konzolban** lépjen be az Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612 elembe.
-3. Adja az alábbi kódot a Program {...} osztályba.
-4. Cserélje le a „{ClientID}” kifejezést az alkalmazás regisztrálásakor kapott **ügyfél-azonosítóra**. Lásd az [alkalmazás Azure AD-vel történő regisztrálását](walkthrough-push-data-register-app-with-azure-ad.md) ismertető cikket.
-5. A Microsoft.IdentityModel.Clients.ActiveDirectory csomag telepítése után adja a **using Microsoft.IdentityModel.Clients.ActiveDirectory;** kifejezést a Program.cs fájlhoz.
-6. Futtassa a Konzolalkalmazást, és jelentkezzen be a Power BI-fiókjába. A konzolablakban látnia kell egy jogkivonatsztringet.
+     a. Válassza az **Eszközök** > **NuGet-csomagkezelő** > **Package Csomagkezelő konzol** elemet.
+
+     b. Írja be az **Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612** kifejezést
+
+     c. Adja hozzá a Program.cs-hez az alábbi kifejezést: `using Microsoft.IdentityModel.Clients.ActiveDirectory;`.
+
+3. Adja hozzá a lépések után található mintakódot a Program.cs fájlhoz.
+
+4. Cserélje le a „{ClientID}” kifejezést az [előző cikkben](walkthrough-push-data-register-app-with-azure-ad.md) az alkalmazás regisztrálásakor kapott **ügyfél-azonosítóra**.
+
+5. Futtassa a Konzolalkalmazást, és jelentkezzen be a Power BI-fiókjába. 
+
+   A konzolablakban látnia kell egy jogkivonatsztringet.
 
 **Hitelesítéshez szükséges biztonsági jogkivonat beszerzésére szolgáló mintakód**
 
 Adja ezt a kódot a Program {...} elemhez.
 
-* Műveletek hívására szolgáló jogkivonat-változó:
+* Műveletek hívására szolgáló jogkivonat-változó: 
   
   ```csharp
   private static string token = string.Empty;
@@ -104,15 +111,12 @@ Adja ezt a kódot a Program {...} elemhez.
        #endregion
 ```
 
-A hitelesítési jogkivonat beszerzése után bármilyen Power BI-műveletet hívhat. A következő lépés bemutatja, hogyan hívhatja meg a [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) műveletet adatkészlet létrehozásához, hogy az adatokat irányítópultokra küldhesse.
+A hitelesítési jogkivonat beszerzése után bármilyen Power BI-műveletet hívhat.
 
-A következő lépés bemutatja, hogyan [hozhat létre adatkészletet a Power BI-ban](walkthrough-push-data-create-dataset.md).
+A sorozat következő cikke bemutatja, hogyan [hozhat létre adatkészletet a Power BI-ban](walkthrough-push-data-create-dataset.md).
 
-Az alábbiakban megtalálja a [teljes kódlistát](#code).
 
-<a name="code"/>
-
-## <a name="complete-code-listing"></a>Teljes kódlista
+## <a name="complete-code-listing"></a>Kódlistázás befejezése
 
 ```csharp
 using System;
@@ -175,14 +179,13 @@ namespace walkthrough_push_data
 }
 ```
 
-[Következő lépés >](walkthrough-push-data-create-dataset.md)
+
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Adatkészlet létrehozása a Power BI-ban](walkthrough-push-data-create-dataset.md)  
-[Alkalmazás regisztrálása az Azure AD-ben](walkthrough-push-data-register-app-with-azure-ad.md)  
-[Azure AD Authentication Library for .NET NuGet csomag](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
-[Adatok leküldése Power BI-adatkészletekbe](walkthrough-push-data.md)  
+[A sorozat következő cikke > Adatkészlet létrehozása a Power BI-ban](walkthrough-push-data-create-dataset.md)
+
 [A Power BI REST API áttekintése](overview-of-power-bi-rest-api.md)  
-[A Power BI REST API-jainak leírása](https://docs.microsoft.com/rest/api/power-bi/)  
+[Power BI REST API-k](https://docs.microsoft.com/rest/api/power-bi/)  
+
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

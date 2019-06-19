@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e3092c320008df760ef72408c93f601dde26cdef
-ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
-ms.translationtype: MT
+ms.openlocfilehash: f06632e80bad8796ded3e3616836832967435b24
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66051161"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809240"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Útmutató adatátjáró üzembe helyezéséhez a Power BI számára
 
@@ -42,7 +42,7 @@ A **Power BI** szolgáltatásban van egy korlátozás, amely szerint *jelentése
 ### <a name="connection-type"></a>Kapcsolat típusa
 A **Power BI-ban** kétféle kapcsolattípus áll rendelkezésre: A **DirectQuery** és az **Importálás**. Nem mindegyik adatforrás támogatja mindkét kapcsolattípust, és több szemponttól is függ, mikor melyiket érdemes használni, például a biztonsági követelményektől, a teljesítménytől, az adatkorláttól és az adatmodell méretétől. A kapcsolattípusokról és a támogatott adatforrásokról bővebben a *Helyszíni adatátjáró cikk* [Elérhető adatforrástípusok listája](service-gateway-onprem.md) című szakaszában olvashat.
 
-Attól függően, hogy milyen típusú kapcsolat használata esetén átjáró mértéke eltérő lehet. Például, amikor csak lehet, különítse el a **DirectQuery** típusú adatforrásokat az **Ütemezett frissítés** típusú adatforrásoktól (feltéve, hogy különböző jelentésekben vannak, és elkülöníthetőek). Ez megakadályozza, hogy az átjáró ezreinek **DirectQuery** kérelmek várólistára, a reggeli ütemezett frissítése egy nagy méretű adatmodell, hogy a cég fő irányítópultjához használt egyszerre. Lássuk milyen szempontokat érdemes figyelembe venni a kapcsolattípusoknál:
+A használt kapcsolat típusától függően az átjáróhasználat mértéke eltérő lehet. Például, amikor csak lehet, különítse el a **DirectQuery** típusú adatforrásokat az **Ütemezett frissítés** típusú adatforrásoktól (feltéve, hogy különböző jelentésekben vannak, és elkülöníthetőek). Ezzel megakadályozható, hogy **DirectQuery**-kérelmek ezreinek kelljen várni sorukra az átjárónál addig, amíg a cég fő irányítópultjához használt nagy méretű adatmodell reggeli ütemezett frissítése történik. Lássuk milyen szempontokat érdemes figyelembe venni a kapcsolattípusoknál:
 
 * **Ütemezett frissítés**: A lekérdezések mérete és a napi frissítések száma alapján eldöntheti, hogy elég a javasolt minimális hardverkövetelményeknek megfelelő számítógépet használni, vagy nagyobb teljesítményű számítógépre lesz szüksége. Ha az adott lekérdezés nem kiszolgáló oldali transzformációkból áll, akkor a transzformációkat az átjáró fogja végezni, és ilyenkor hasznos lehet, ha a számítógépen, amelyen az átjáró telepítve van, több memória áll rendelkezésre.
 * **DirectQuery**: A rendszer lekérdezést küld minden esetben, amikor egy felhasználó megnyitja a jelentést, vagy adatokat tekint meg. Ezért, ha várhatóan több mint 1000 felhasználó fog egyidejűleg hozzáférni az adatokhoz, érdemes gondoskodni arról, hogy a számítógép kellőképp robusztus és hatékony hardverrel rendelkezzen. **DirectQuery**-kapcsolat esetén több processzormag nagyobb teljesítményt eredményez.
@@ -104,14 +104,34 @@ Az átjáró egy kimenő kapcsolatot hoz létre az **Azure Service Bushoz**. Az 
 
 Az átjáró használatához *nincs* szükség bejövő portokra. A fenti listában az átjáró használatához szükséges összes port fel van sorolva.
 
-Javasoljuk, hogy engedélyezze a tűzfalán az adatterületéhez tartozó IP-címeket. Az IP-címek listáját innen érheti el és töltheti le: [A Microsoft Azure-adatközpontok IP-listája](https://www.microsoft.com/download/details.aspx?id=41653) A lista hetente frissül. Az átjáró a teljes tartománynév (FQDN) használata mellett a megadott IP-cím használatával fog kommunikálni az **Azure Service Busszal**. Ha az átjárót HTTPS-kommunikáció használatára kényszeríti, az átjáró kizárólag a teljes tartománynevet fogja használni, és egyáltalán nem fog IP-cím használatával kommunikálni.
+Ajánlott az adatrégió IP-címeit hozzáadni a tűzfal engedélyezési listájához. Az IP-címek listáját innen érheti el és töltheti le: [A Microsoft Azure-adatközpontok IP-listája](https://www.microsoft.com/download/details.aspx?id=41653) A lista hetente frissül. Az átjáró a teljes tartománynév (FQDN) használata mellett a megadott IP-cím használatával fog kommunikálni az **Azure Service Busszal**. Ha az átjárót HTTPS-kommunikáció használatára kényszeríti, az átjáró kizárólag a teljes tartománynevet fogja használni, és egyáltalán nem fog IP-cím használatával kommunikálni.
 
-#### <a name="forcing-https-communication-with-azure-service-bus"></a>HTTPS-kommunikáció kényszerítése az Azure Service Bus felé
-Kényszerítheti az átjárót arra, hogy közvetlen TCP-kapcsolat helyett HTTPS használatával kommunikáljon az **Azure Service Busszal**. Ez kis mértékben csökkenteni fogja a teljesítményt. Már az átjáró felhasználói felületéről is beállíthatja, hogy az átjáró HTTPS használatával kommunikáljon az **Azure Service Busszal** (az átjáró 2017. márciusi kiadásától kezdődően).
+#### <a name="forcing-https-communication-with-azure-service-bus"></a>A HTTPS-kommunikáció kényszerítése az Azure Service Busszal
 
-Ehhez az átjáróban válassza a **Hálózat** lehetőséget, majd kapcsolja **Be** az **Azure Service Bus kapcsolódási módja** beállítást.
+Kényszerítheti, hogy az átjáró a közvetlen TCP helyett a HTTPS-sel kommunikáljon az Azure Service Busszal.
 
-![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_04.png)
+> [!NOTE]
+> A 2019. júniusi kiadástól kezdve az új telepítések (nem frissítések) alapértelmezés szerint a HTTPS-t használják a TCP helyett az Azure Service Bus ajánlatai alapján.
+
+A HTTPS-kommunikáció kényszerítéséhez módosítsa a *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* fájl `AutoDetect` értékét `Https` értékre, ahogyan azt a bekezdés utáni kódrészlet mutatja. Ez a fájl (alapértelmezés szerint) a *C:\Program Files\On-premises data gateway* helyen található.
+
+```xml
+<setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
+    <value>Https</value>
+</setting>
+```
+
+A *ServiceBusSystemConnectivityModeString* paraméter értéke megkülönbözteti a kis- és nagybetűket. Az érvényes értékek az *AutoDetect* és a *Https*.
+
+Alternatív megoldásként az átjáró felhasználói felületén is kényszerítheti az átjárót erre a működésre. Az átjáró felhasználói felületén válassza a **Hálózat** lehetőséget, és állítsa az **Azure Service Bus kapcsolódási módja** beállítást **Be** értékűre.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
+
+Ha a módosítás után az **Alkalmaz** gombra kattint (a gomb csak akkor jelenik meg, ha valamilyen módosítás történt), az *átjáró Windows-szolgáltatás* automatikusan újraindul, és a változtatás érvénybe lép.
+
+A későbbiekben újraindíthatja az *átjáró Windows-szolgáltatást* a felhasználói felületi párbeszédablakban a **Szolgáltatásbeállítások**, majd az *Újraindítás most* lehetőség kiválasztásával.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
 ### <a name="additional-guidance"></a>További útmutatás
 Ez a szakasz további útmutatást nyújt az átjárók telepítésével és kezelésével kapcsolatban.

@@ -5,24 +5,24 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/22/2019
 ms.author: maggies
-ms.openlocfilehash: 653050fbe5c860ef1902a4700c3a70a8af2f7092
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2dc9ae7eb7ecd82cdd6c9ea7ddbc6aa1fc70ca8b
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514926"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751186"
 ---
 # <a name="create-a-template-app-in-power-bi-preview"></a>Sablonalkalmazás létrehozása a Power BI-ban (előzetes verzió)
 
 A Power BI új *sablonalkalmazásai* lehetővé teszik a Power BI-partnerek részére, hogy kevés kódolással vagy anélkül hozzanak létre Power BI-alkalmazásokat, és helyezzék azokat üzembe a Power BI bármely ügyfele számára.  Ez a cikk lépésekre bontott utasításokat tartalmaz Power BI-sablonalkalmazás létrehozásához.
 
-Ha a Power BI-jelentéseket és irányítópultokat hozhat létre, Ön is egy *sablon app builder* , és hozza létre, és az elemzési tartalommal csomagok egy *alkalmazás*. Előfordulhat, hogy más Power BI-bérlők bármely elérhető platformról, például az appsource-ban, vagy saját webes szolgáltatás használatával telepíti az alkalmazását. A jelentéskészítő, hozhat létre védett analytics-csomagot a terjesztési lehetősége van.
+Ha létre tud hozni Power BI-jelentéseket és -irányítópultokat, akkor *sablonalkalmazás-létrehozóvá* válhat, aki elemzési tartalmat hozhat létre és csomagolhat egy *alkalmazásba*. Ezt követően üzembe helyezheti az alkalmazást más Power BI-bérlőkben bármely elérhető platformon, például az AppSource-on keresztül, vagy úgy, hogy a saját webszolgáltatásában használja. Készítőként létrehozhat védett elemzési csomagokat terjesztéshez.
 
-A Power BI bérlői rendszergazdái szabályozzák, hogy a vállalatuknál ki hozhat létre sablonalkalmazásokat, és ki telepítheti azokat. Ezek a felhasználók, akik jogosultak a sablonalapú alkalmazásként telepítheti, majd módosítsa, és osztja el a Power BI közvetítését a szervezet.
+A Power BI bérlői rendszergazdái szabályozzák, hogy a vállalatuknál ki hozhat létre sablonalkalmazásokat, és ki telepítheti azokat. Azok a felhasználók, akik számára ez engedélyezett telepíthetik a sablonalkalmazást, majd módosíthatják és terjeszthetik azt a vállalatuk Power BI-felhasználói számára.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -30,7 +30,7 @@ A sablonalkalmazások létrehozásának követelményei az alábbiak:
 
 - Egy [Power BI Pro-licenc](service-self-service-signup-for-power-bi.md)
 - A [Power BI Desktop telepítése](desktop-get-the-desktop.md) (nem kötelező)
-- Való ismerkedés során bizonyulhat a [alapvető fogalmait, Power bi-ban](service-basic-concepts.md)
+- A [Power BI alapvető fogalmainak](service-basic-concepts.md) ismerete
 - Sablonalkalmazás létrehozásához szükséges engedélyek. Részletekért tekintse meg a Power BI [felügyeleti portálján a sablonalkalmazás beállításait](service-admin-portal.md#template-apps-settings-preview).
 
 ## <a name="enable-app-developer-mode"></a>Alkalmazásfejlesztői mód engedélyezése
@@ -66,7 +66,7 @@ Ha más Power BI-bérlőkbe terjeszthető sablonalkalmazást szeretne létrehozn
 
 5. Kattintson a **Mentés** gombra.
 >[!NOTE]
->A sablon alkalmazások előléptetni a Power BI rendszergazdáit engedélyre van szükségük.
+>A sablonalkalmazások előléptetéséhez engedélyre van szüksége a Power BI rendszergazdájától.
 
 ## <a name="create-the-content-in-your-template-app"></a>Tartalom létrehozása a sablonalkalmazásban
 
@@ -86,43 +86,43 @@ Most, hogy van tartalom a munkaterületen, készen áll, hogy becsomagolja azt e
 
     ![Alkalmazás létrehozása](media/service-template-apps-create/power-bi-create-app.png)
 
-    Itt töltse ki további épület beállítások a sablon alkalmazás öt kategóriákban:
+    Itt további buildelési beállításokat adhat meg a sablonalkalmazáshoz öt kategóriában:
 
     **Védjegyezés**
 
     ![Védjegyezés](media/service-template-apps-create/power-bi-create-branding.png)
     - Alkalmazás neve
     - Leírás
-    - Támogatási webhely (hivatkozás van alatt alkalmazásadatok után bemutatott verziójának terjesztése a szervezeti app alkalmazást sablon)
-    - Alkalmazásembléma (45K fájl maximális mérete, 1:1 képarányú, .png, .jpg .jpeg formátumokat)
-    - Alkalmazás téma színe
+    - Támogatási webhely (a hivatkozás az alkalmazásadatok alatt, a sablonalkalmazás szervezeti alkalmazásként való újraelosztása után jelenik meg)
+    - Alkalmazásembléma (45K fájlméretkorlát, 1:1 oldalarány, .png .jpg .jpeg formátum)
+    - Alkalmazás témájának színe
 
     **Tartalom**
 
-    **App kezdőlapja:** Adja meg egy jelentést vagy irányítópultot az lehet az alkalmazás kezdőlapjára a kezdőlapja, amely a megfelelő benyomást ad használja:
+    **Alkalmazás kezdőlapja:** Egy jelentés vagy irányítópult meghatározása, amely az alkalmazás kezdőlapja lesz. Olyan kezdőlapot használjon, amely a megfelelő benyomást kelti:
 
     ![Tartalom](media/service-template-apps-create/power-bi-create-content.png)
 
     **Vezérlő**
 
-    Állítsa be, amely az alkalmazás felhasználói számára az alkalmazás a tartalommal fog rendelkezni korlátozások. Ez a vezérlő segítségével szellemi tulajdon védelme az alkalmazásban.
+    Beállíthat az alkalmazás felhasználói számára érvényes korlátozásokat az alkalmazás tartalmára vonatkozóan. Ezzel a vezérlővel védelmet biztosíthat az alkalmazásban található szellemi tulajdonokhoz.
 
     ![Vezérlő](media/service-template-apps-create/power-bi-create-control.png)
 
     >[!NOTE]
-    >.Pbix formátumba exportálás mindig blokkolva van a felhasználók számára az alkalmazás telepítése.
+    >A .pbix formátumba való exportálás mindig le van tiltva az alkalmazást telepítő felhasználók számára.
 
     **Paraméterek**
 
-    Ez a kategória segítségével kezelheti a paraméter viselkedés, adatforrásokhoz való kapcsolódáskor. Tudjon meg többet [létrehozása a lekérdezési paraméterek](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
+    Ezzel a kategóriával kezelhető a paraméterek viselkedése az adatforrásokhoz való csatlakozáskor. További információ a [lekérdezési paraméterek létrehozásáról](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
 
     ![Paraméterek](media/service-template-apps-create/power-bi-create-parameters.png)
-    - **Érték**: alapértelmezett paraméter értéke.
-    - **Szükséges**: használja ezt a telepítőt adjon meg egy felhasználó-specifikus paraméter szükséges.
-    - **Zárolási**: Zárolása megakadályozza, hogy a telepítő egy paraméter frissítése.
-    - **Statikus**: Abban az esetben, ha az alkalmazás tartalmaz engedélyezése *csak* mintaadatokkal. Ha bejelöli **statikus**, a telepítővarázsló nem kér a felhasználóktól egy adatforráshoz csatlakozni.
+    - **Value** (Érték): az alapértelmezett paraméterérték.
+    - **Required** (Kötelező): ezzel megkövetelheti a telepítőtől, hogy egy felhasználóspecifikus paramétert adjon meg.
+    - **Lock** (Zárolás): A zárolás megakadályozza, hogy a telepítő frissítsen egy paramétert.
+    - **Static** (Statikus): Akkor engedélyezze, ha az alkalmazás *csak* mintaadatokat tartalmaz. A **Static** paraméter kiválasztásakor a telepítővarázsló nem kéri adatforrások csatlakoztatásáta felhasználóktól.
 
-    **Hozzáférés** a tesztelési fázisban döntse el, mely a szervezet más telepítheti és tesztelheti az alkalmazást. Ne aggódjon, mindig visszatérhet, és ezek a beállítások később módosíthatók (a beállítás nincs hatással a sablon elosztott alkalmazás hozzáférést).
+    **Access** (Hozzáférés): A tesztelési fázisban eldöntheti, hogy kik azok a szervezetnél, akik telepíthetik és tesztelhetik az alkalmazását. Ne aggódjon, később is visszatérhet, és megváltoztathatja ezeket a beállításokat (a beállítás nem vonatkozik az elosztott sablonalkalmazáshoz való hozzáférésre).
 
 2. Válassza az **Alkalmazás létrehozása** lehetőséget.
 
@@ -141,9 +141,9 @@ Mielőtt nyilvánosan kiadná ezt a sablonalkalmazást szeretne meggyőződni r�
 - Üzem előtti csomag előléptetése üzemi szakaszba: termékverzió.
 - Az összes csomag törlése vagy újrakezdés az előző szakasztól.
 
-Az URL-címe nem módosul, kiadási szakaszok közötti váltáskor. Előléptetés nem befolyásolja az URL-cím magát.
+Az URL-címe nem módosul a kiadási szakaszok között. Az előléptetés nem befolyásolja az URL-címet.
 
-Vegyük a szakaszok keresztül:
+Vegyük sorra a szakaszokat:
 
 1. A sablonalkalmazás munkaterületén válassza a **Kiadáskezelés** lehetőséget.
 
@@ -171,15 +171,15 @@ Vegyük a szakaszok keresztül:
     ![Az alkalmazás használatának első lépései](media/service-template-apps-create/power-bi-template-app-get-started.png)
 8. Válassza **Az alkalmazás felfedezése** lehetőséget a tesztalkalmazás mintaadatokkal történő ellenőrzéséhez.
 9. Ha valamilyen módosítást szeretne végezni, térjen vissza az alkalmazáshoz az eredeti munkaterületen. Frissítse a tesztalkalmazást, amíg elégedett nem lesz az eredménnyel.
-10. Ha készen áll az éles üzem előtti további tesztelésre a bérlőn kívüli alkalmazás előléptetni, lépjen vissza a **Kiadáskezelés** ablaktáblán, és válassza ki **előléptetés alkalmazás**. 
+10. Ha készen áll az alkalmazás előléptetésére az üzem előtti állapotba a bérlőn kívüli további teszteléshez, térjen vissza a **Kiadáskezelés** panelre, és válassza az **Alkalmazás előléptetése** lehetőséget. 
 
     ![Alkalmazás előléptetése üzem előtti állapotba](media/service-template-apps-create/power-bi-template-app-promote.png)
 
     >[!NOTE]
-    > Ha az alkalmazás hitelesítenie kelljen magát válik nyilvánosan elérhető, a szervezeten kívül.
+    > Az alkalmazás előléptetése után az nyilvánosan elérhetővé válik a cégen kívül.
 
 11. A választás megerősítéséhez válassza az **Előléptetés** lehetőséget.
-12. Másolja le ezt az új URL-címet, hogy megoszthassa a bérlőn kívül a teszteléshez. Ez a hivatkozás is, kezdje meg az alkalmazás az appsource-on terjesztése létrehozásával terjeszt egy olyan [Cloud Partner portálra az új ajánlat](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Küldje el a Cloud Partner portálra mutató csak az üzem előtti. Csak azután az alkalmazás jóvá van hagyva, és az appsource-ban közzétett értesítést kap, majd előléptetheti ezt a csomagot az éles környezetben, a Power bi-ban.
+12. Másolja le ezt az új URL-címet, hogy megoszthassa a bérlőn kívül a teszteléshez. Ezt a hivatkozást kell elküldenie az alkalmazás AppSource-ban történő terjesztési folyamatának megkezdéséhez is. Ehhez hozzon létre egy [új Cloud Partner Portal-ajánlatot](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). A Cloud Partner Portalra csak éles üzem előtti hivatkozásokat küldjön be. A csomagot Power BI-gyártáshoz csak az alkalmazás jóváhagyása és az AppSource-on való sikeres közzététele után léptetheti elő.
 13. Ha az alkalmazás készen áll az üzemi használatra vagy az AppSource-on keresztüli megosztásra, térjen vissza a **Kiadáskezelés** panelre, és válassza az **Alkalmazás előléptetése** lehetőséget az **Üzem előtti** elem mellett.
 14. A választás megerősítéséhez válassza az **Előléptetés** lehetőséget.
 
@@ -202,11 +202,11 @@ Most, hogy az alkalmazása üzemi környezetbe került, újrakezdheti a tesztel�
 
     ![A sablonalkalmazás két verziója](media/service-template-apps-create/power-bi-template-app-2-versions.png)
 
-5. Ha készen áll az éles üzem előtti további tesztelésre a bérlőn kívüli alkalmazás előléptetni, lépjen vissza a Kiadáskezelés panelen, és válassza ki **előléptetés alkalmazás** melletti **tesztelés**.
-6. A hivatkozás már élő, küldheti el újra a Cloud Partner portálra a következő lépéseket követve [ajánlat frissítése a Power BI alkalmazás](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
+5. Ha készen áll az alkalmazás előléptetésére az üzem előtti állapotba a bérlőn kívüli további teszteléshez, térjen vissza a Kiadáskezelés panelre, és válassza a **Tesztelés** mellett az **Alkalmazás előléptetése** lehetőséget.
+6. A hivatkozás már használható, küldje tehát be újra a Cloud Partner Portalra a [Power BI-alkalmazásajánlat frissítéséről](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer) szóló cikk lépéseit követve.
 
 >[!NOTE]
->Léptesse elő az alkalmazás éles szakaszba, csak akkor, ha az alkalmazást jóváhagyta Cloud Partner portálra, és közzétette azt.
+>Az alkalmazást csak akkor léptetheti elő a gyártási fázisra, ha jóvá lett hagyva a Cloud Partner Portalon, valamint már közzétette.
 
 ## <a name="next-steps"></a>Következő lépések
 

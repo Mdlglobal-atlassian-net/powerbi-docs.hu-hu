@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: eb50d8096c448e1a01533a7d8570e9dcc716ef23
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
+ms.openlocfilehash: d8cebda3ad0db9fba48804fb8d2dd029c1c07f8d
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174982"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809274"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
@@ -50,11 +50,11 @@ További információt az SAP HANA egyszeri bejelentkezésének a Kerberosszal t
 
 Számos elemet kell konfigurálni ahhoz, hogy a Kerberos által korlátozott delegálás megfelelően működjön, beleértve a *szolgáltatás egyszerű szolgáltatásneveit* (SPN) és a delegálási beállításokat a szolgáltatásfiókokhoz.
 
-### <a name="prerequisite-1-install-and-configure-the-microsoft-on-premises-data-gateway"></a>1. előfeltétel: A Microsoft helyszíni adatátjáró telepítése és konfigurálása
+### <a name="prerequisite-1-install-and-configure-the-microsoft-on-premises-data-gateway"></a>1\. előfeltétel: A Microsoft helyszíni adatátjáró telepítése és konfigurálása
 
 A helyszíni adatátjáró ezen kiadása támogatja a helyben történő frissítést, valamint a meglévő átjárók beállításainak átvételét.
 
-### <a name="prerequisite-2-run-the-gateway-windows-service-as-a-domain-account"></a>2. előfeltétel: Az átjáró Windows-szolgáltatásának futtatása tartományi fiókként
+### <a name="prerequisite-2-run-the-gateway-windows-service-as-a-domain-account"></a>2\. előfeltétel: Az átjáró Windows-szolgáltatásának futtatása tartományi fiókként
 
 A standard telepítés során az átjáró a gép helyi szolgáltatásfiókjával fut (ebben az esetben: *NT Service\PBIEgwService*).
 
@@ -65,7 +65,7 @@ A Kerberos által korlátozott delegálás engedélyezéséhez az átjárót tar
 > [!NOTE]
 > Ha az Azure AD Connect konfigurálva van, és a felhasználói fiókok szinkronizálva vannak, az átjárószolgáltatásnak nem kell helyi Azure AD-kereséseket végrehajtania futásidőben. Az átjárószolgáltatáshoz használhatja a helyi szolgáltatási SID-t (azaz nincs szükség tartományi fiókra). A Kerberos által korlátozott delegálás a cikkben ismertetett konfigurációs lépései ugyanezek, mint ez a konfiguráció. Csak a tartományi fiók helyett az átjáró számítógép-objektumára kell alkalmazni az Azure AD-ben.
 
-### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>3. előfeltétel: Tartományi rendszergazdai jogosultsággal kell rendelkezni az SPN-ek (SetSPN) és a Kerberos által korlátozott delegálási beállítások konfigurálásához
+### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>3\. előfeltétel: Tartományi rendszergazdai jogosultsággal kell rendelkezni az SPN-ek (SetSPN) és a Kerberos által korlátozott delegálási beállítások konfigurálásához
 
 Nem ajánlott, hogy egy tartományi rendszergazda ideiglenesen vagy véglegesen jogosultságot adjon valaki másnak az egyszerű szolgáltatásnevek és a Kerberos-delegálás konfigurálására anélkül, hogy rendszergazdai jogosultságot követelne meg. A következő szakaszban részletezzük az ajánlott konfigurációs lépéseket.
 
@@ -195,9 +195,7 @@ Ez az útmutató próbál olyan átfogó lennie, amennyire csak lehetséges. Ha 
 ### <a name="set-up-gsskrb5-on-client-machines-and-the-sap-bw-server"></a>A gsskrb5 telepítése az ügyfélgépekre és az SAP BW-kiszolgálóra
 
 > [!NOTE]
-> A `gsskrb5` kódtárat már nem támogatja az SAP. További információt az [SAP 352295 megjegyzés](https://launchpad.support.sap.com/#/notes/352295) című cikkben talál. Vegye figyelembe azt is, hogy a `gsskrb5` nem teszi lehetővé az adatátjáróból az SAP BW üzenetkiszolgálóba irányuló SSO-kapcsolatokat. Csak az SAP BW-alkalmazáskiszolgálóba irányuló kapcsolatok lehetségesek.
-
-A `gsskrb5`-öt az ügyfélnek és a kiszolgálónak is használnia kell az SSO-kapcsolat átjárón keresztüli létrehozásához. A közös titkosítási kódtár (sapcrypto) jelenleg nem támogatott.
+> A `gsskrb5` kódtárat már nem támogatja az SAP. További információt az [SAP 352295 megjegyzés](https://launchpad.support.sap.com/#/notes/352295) című cikkben talál. Vegye figyelembe azt is, hogy a `gsskrb5` nem teszi lehetővé az adatátjáróból az SAP BW üzenetkiszolgálóba irányuló SSO-kapcsolatokat. Csak az SAP BW-alkalmazáskiszolgálóba irányuló kapcsolatok lehetségesek. A `gsskrb5`-öt az ügyfélnek és a kiszolgálónak is használnia kell az SSO-kapcsolat átjárón keresztüli létrehozásához. Már támogatott a közös titkosítási kódtár (sapcrypto) az SAP BW-hez.
 
 1. Töltse le a `gsskrb5` - `gx64krb5` dll-fájlokat az [SAP Note 2115486](https://launchpad.support.sap.com/) oldaláról (ehhez szükséges egy SAP S-felhasználó). Győződjön meg arról, hogy a gsskrb5.dll és a gx64krb5.dll legalább 1.0.11.x verziójával rendelkezik.
 
@@ -398,7 +396,7 @@ Az eredmény az, hogy az átjáró nem tudja megfelelően megszemélyesíteni az
 
 A **helyszíni adatátjáróval** és a **DirectQueryvel** kapcsolatos további információkért lásd az alábbi forrásanyagokat:
 
-* [Helyszíni adatátjáró](service-gateway-onprem.md)
+* [On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások](desktop-directquery-data-sources.md)
 * [A DirectQuery és az SAP BW](desktop-directquery-sap-bw.md)

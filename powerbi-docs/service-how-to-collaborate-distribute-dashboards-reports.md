@@ -8,57 +8,54 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 06/07/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 10f287c72cbdec8885952dd7cec766420eabfb2e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 00574228fbfa8954b8cfb9cb026a9230eb1bd73e
+ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61234903"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66816546"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>A munka megosztásának módjai a Power BI-ban
 
-Ön az irányítópultokat és jelentéseket létrehozó személy. Előfordulhat, hogy a munkatársaival együtt dolgozott rajtuk. Ezután szeretné, hogy mások is elérhessék, amit létrehozott. Mi a terjesztésük legjobb módja?
-
-Ebben a témakörben összehasonlítjuk a Power BI-ban való közös munka és megosztás alábbi lehetőségeit:
+Ön az irányítópultokat és jelentéseket létrehozó személy. Előfordulhat, hogy a munkatársaival együtt dolgozott rajtuk. Ezután szeretné, hogy mások is elérhessék, amit létrehozott. Mi a terjesztésük legjobb módja? Ebben a témakörben összehasonlítjuk a Power BI-ban való közös munka és megosztás alábbi lehetőségeit:
 
 * Jelentések és irányítópultok létrehozása a munkatársakkal a *munkaterületeken*.
-* A létrehozott irányítópultok és jelentések egyesítése *alkalmazásként*, és ezek közzététele egy nagyobb csoport vagy a teljes cég számára.
-* Az irányítópultok és jelentések megosztása csak néhány személlyel, a szolgáltatásból vagy a Power BI-mobilalkalmazásokból.
+* A létrehozott irányítópultok és jelentések egyesítése *alkalmazásként*, és ezek terjesztése egy nagyobb csoport vagy a teljes cég számára.
+* *Megosztott adatkészletek* létrehozása, amelyekkel a munkatársak jelentéseket készíthetnek saját munkaterületeiken.
+* *Sablonalkalmazás* létrehozása, amelyet külső Power BI-felhasználóknak terjeszthet a Microsoft AppSource segítségével.
+* Irányítópultok és jelentések megosztása csak néhány személlyel, a szolgáltatásból vagy a Power BI-mobilalkalmazásokból.
 * Jelentések nyomtatása.
-* A jelentéseket biztonságos portálokon vagy nyilvános webhelyeken is beágyazhatja.
+* Jelentések *beágyazása* biztonságos portálokon vagy nyilvános webhelyeken.
 
-Bármelyik lehetőséget is válassza, az irányítópultok megosztásához [Power BI Pro licenccel](service-features-license-type.md) kell rendelkeznie, vagy a tartalmat [prémium szintű kapacitásban](service-premium-what-is.md) kell elhelyeznie. Az irányítópultokat megtekintő munkatársakra vonatkozó licenckövetelményeket a választott lehetőség határozza meg. Az alábbi szakaszokban megtalálhatja a részleteket. 
+Bármelyik lehetőséget is választja, a tartalom megosztásához [Power BI Pro-licenccel](service-features-license-type.md) kell rendelkeznie, vagy a tartalmat [prémium szintű kapacitásban](service-premium-what-is.md) kell elhelyeznie. A tartalmat megtekintő munkatársakra vonatkozó licenckövetelményeket a választott lehetőség határozza meg. Az alábbi szakaszokban megtalálhatja a részleteket. 
 
 ![Alkalmazások a Power BI szolgáltatásban](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
 
 *Alkalmazások a Power BI szolgáltatásban*
 
-## <a name="collaborate-with-coworkers-in-a-workspace"></a>Együttműködés a munkatársakkal egy munkaterületen
+## <a name="collaborate-in-a-workspace"></a>Együttműködés a munkaterületen
 
-Amikor a csapatok együtt dolgoznak, ugyanazon dokumentumokhoz való hozzáférésre van szükség a gyors együttműködés céljából. A Power BI szolgáltatásban teams jár együtt a tulajdonosi és kezelését az irányítópultok, jelentések, adatkészletek és munkafüzetek megosztása. Néha a Power BI-felhasználók a saját munkaterületeiket a céges struktúrák alapján hozzák létre, míg máskor konkrét projektekhez készítenek munkaterületeket. Más cégek több munkaterületet használnak a jelentések és az irányítópultok különböző verzióinak tárolására. 
+Amikor a csapatok együtt dolgoznak, ugyanazon dokumentumokhoz való hozzáférésre van szükség a gyors együttműködés céljából. A Power BI munkaterületein a csapatok megoszthatják egymással irányítópultok, jelentések, adatkészletek és munkafüzetek tulajdonjogát és felügyeletét. Néha a Power BI-felhasználók a saját munkaterületeiket a céges struktúrák alapján hozzák létre, míg máskor konkrét projektekhez készítenek munkaterületeket. Más cégek több munkaterületet használnak a jelentések és az irányítópultok különböző verzióinak tárolására. 
 
-A munkaterületek olyan szerepköröket biztosítanak, amelyek meghatározzák a munkatársak adott jogosultságait. Az ilyen szerepkörökkel meghatározható, hogy kik kezelhetik a teljes munkaterületet, és kik bővíthetik azt tartalommal.
+A munkaterületek olyan szerepköröket biztosítanak, amelyek meghatározzák a munkatársak adott jogosultságait. Az ilyen szerepkörökkel meghatározható, hogy kik kezelhetik a teljes munkaterületet, és kik szerkeszthetik, valamint oszthatják meg annak tartalmát.
 
 ![Munkaterületek](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
 
-Egyes felhasználók természetes módon helyeznek el tartalmat a Saját munkaterületen, és osszák meg azt. A munkaterületek jobb együttműködést biztosítanak a Saját munkaterülethez képest, mivel lehetővé teszik a tulajdonjog megosztását. Ön és csapata egyszerűen végezhet frissítéseket, vagy biztosíthat hozzáférést másoknak. A Saját munkaterület egyszeri használatra vagy személyes tartalom esetén nyújt optimális megoldást az egyéni felhasználóknak.
+Előfordulhat, hogy természetes módon helyez el tartalmat a Saját munkaterületen, és osztja meg azt. A munkaterületek azonban jobb együttműködést biztosítanak a Saját munkaterülethez képest, mivel lehetővé teszik a tulajdonjog megosztását. Ön és csapata egyszerűen végezhet frissítéseket, vagy biztosíthat hozzáférést másoknak. A Saját munkaterület egyszeri használatra vagy személyes tartalom esetén nyújt optimális megoldást az egyéni felhasználóknak.
 
 Tegyük fel, hogy van egy kész irányítópultja, amelyet szeretne megosztani a munkatársaival. Mi a legjobb módszer az irányítópult munkatársakkal való megosztásának? A válasz számos tényezőtől függ. 
 
-- Ha munkatársai kell maradjon naprakész az irányítópultot, vagy a munkaterület összes tartalomhoz való hozzáférésre van szükségük, fontolja meg, hozzáadását a munkaterület. 
-- Ha munkatársai egyszerűen, az irányítópult és a munkaterület nem minden tartalmát, alternatív megoldások újra rendelkezik. 
-- Ha az irányítópult része egy nagyobb tartalomcsomagnak, amelyet számos munkatárssal kell megosztani, akkor valószínűleg egy alkalmazás közzététele a legjobb választás. 
-- Azonban ha munkatársai egyszerűen egy irányítópultot, majd megosztják az irányítópult lehet a legjobb megoldás.
+- Ha a munkatársaknak naprakészen kell tartaniuk az irányítópultot, vagy a munkaterület minden tartalmához hozzá kell férniük, akkor célszerű, ha hozzáadja őket a munkaterülethez. 
+- Ha a kollégáknak a munkaterület összes tartalma helyett csak az adott irányítópultot kell látniuk, ismét több alternatíva közül lehet választani. Ha néhány felhasználónak csak egyetlen irányítópultra van szüksége, az adott irányítópult megosztása lehet a legjobb megoldás.
+- Azonban ha az irányítópult része egy nagyobb tartalomcsomagnak, amelyet számos munkatárssal kell megosztani, akkor valószínűleg egy *alkalmazás* közzététele a legjobb választás.
 
-További információ a [munkaterületek létrehozásáról](service-create-workspaces.md).
+A Power BI új munkaterületi felhasználói felületet kínál. Az [Új munkaterületek létrehozása](service-create-the-new-workspaces.md) című cikkben további információt talál a munkaterületek változásairól. 
 
-**Tudta?** A Power BI rendelkezik az új munkaterületi felhasználói élményt. Olvasási [létrehozása az új munkaterületek](service-create-the-new-workspaces.md) megtekintéséhez, hogyan változnak a munkaterületek. 
+## <a name="distribute-insights-in-an-app"></a>Elemzések terjesztése egy alkalmazásban
 
-## <a name="distribute-data-and-insights-by-creating-an-app"></a>Adatok és betekintések terjesztése alkalmazás létrehozásával
-
-Tegyük fel, hogy szeretné széles közönséggel megosztani az irányítópultját. Ön és a munkatársai létrehoztak egy *munkaterületet*, majd a munkaterületen létrehozták és kidolgozták az irányítópultokat, jelentéseket és adatkészleteket. Következő lépésként ki kell jelölnie a kívánt irányítópultokat és jelentéseket, és közzé kell tennie őket alkalmazásként &#151; egy adott csoportnak vagy a teljes cégnek.
+Tegyük fel, hogy szeretné széles vállalati közönséggel megosztani az irányítópultját. Ön és a munkatársai létrehoztak egy *munkaterületet*, majd a munkaterületen létrehozták és kidolgozták az irányítópultokat, jelentéseket és adatkészleteket. Következő lépésként ki kell jelölnie a kívánt irányítópultokat és jelentéseket, és közzé kell tennie őket alkalmazásként &#151; egy adott csoportnak vagy a teljes cégnek.
 
 ![Alkalmazás közzététele ikon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
@@ -68,7 +65,13 @@ Miután a munkatársai telepítik az alkalmazást, megtekinthetik azt a böngés
 
 Ahhoz, hogy a felhasználók megtekinthessék az alkalmazást, vagy Power BI Pro licenccel kell rendelkezniük nekik is, vagy pedig Power BI Premium-kapacitásban kell elhelyeznie az alkalmazást. Részletek: [Mi a Power BI Premium?](service-premium-what-is.md).
 
-Alkalmazásokat munkahelyen kívüli személyeknek is közzétehet. Az ilyen személyek megtekinthetik az alkalmazás tartalmát, műveleteket végezhetnek vele, de megosztani nem tudják azt másokkal.
+Alkalmazásokat munkahelyen kívüli személyeknek is közzétehet. Az ilyen személyek megtekinthetik az alkalmazás tartalmát, műveleteket végezhetnek vele, de megosztani nem tudják azt másokkal. Létrehozhat *sablonalkalmazásokat*, amelyeket bármelyik Power BI-ügyfélnek üzembe helyezhet.
+
+## <a name="share-a-dataset"></a>Adatkészlet megosztása
+
+Lássuk be, egyes felhasználók tehetségesebbek, ha kiváló minőségű, pontosan megtervezett adatmodellek létrehozásáról van szó. Ez lehet akár Ön is. Ugyanazon pontosan kialakított adatmodellek használatából a teljes vállalat előnyre tehet szert. Ezt a szerepet töltik be a *megosztott adatkészletek*. Amikor egy olyan jelentést hoz létre, amely egy mindenki által használandó adatmodellre épül, elmentheti a jelentést a Power BI szolgáltatásban, majd használati jogosultságot adhat a megfelelő felhasználóknak. Ezután saját jelentéseket készíthetnek az Ön adatkészlete alapján. Így minden felhasználó ugyanazon adatokra alapozza a jelentéseit, aminek köszönhetően megegyezik azok igazságértéke.
+
+További információ a [megosztott adatkészletek létrehozásáról](service-datasets-across-workspaces.md).
 
 ## <a name="share-dashboards-and-reports"></a>Irányítópultok és jelentések megosztása
 
@@ -98,20 +101,29 @@ A Windows 10-eszközökön futó Power BI alkalmazásból is [megoszthatja a cse
 
 A Power BI szolgáltatásban nyomtathat vagy menthet PDF-fájlként (illetve más formátumú statikus fájlként) egy teljes irányítópultot, egy irányítópult-csempét, egy jelentéslapot vagy egy vizualizációt. A jelentéseket csak laponként tudja nyomtatni – nem nyomtathatja a teljes jelentést egyszerre. Többet is megtudhat a [nyomtatásról és a statikus fájlba mentésről](consumer/end-user-print.md).
 
-## <a name="embed-reports-in-secure-portals-or-public-websites"></a>A jelentéseket biztonságos portálokon vagy nyilvános webhelyeken is beágyazhatja
+## <a name="embed-reports-in-secure-portals-or-public-web-sites"></a>Jelentések beágyazása biztonságos portálokon vagy nyilvános webhelyeken
+
+### <a name="embed-in-secure-portals"></a>Biztonságos portálok beágyazása
 
 A Power BI-jelentéseket beágyazhatja biztonságos portálokon és webhelyeken is, ahol a felhasználók azokat meg szeretnék tekinteni.  
 A Power BI szolgáltatás **Beágyazás a SharePoint Online-ban** és **Beágyazás** funkciói lehetővé teszik, hogy Ön biztonságosan ágyazhasson be jelentéseket a belső felhasználók számára. 
 
-- **Beágyazás a SharePoint online-hoz** működik együtt a Power BI-kijelző SharePoint online-hoz. Hogyan van beágyazva a jelentés felett irányítással rendelkező biztosít egyszeri bejelentkezés használatát. 
-- **Beágyazási** bármilyen portál vagy a webhely, amely támogatja a beágyazási tartalom URL-címet vagy egy iFrame használatával működik. 
+- A **Beágyazás a SharePoint Online-ban** funkció a SharePoint Online Power BI-kijelzővel működik. Ez egy egyszeri bejelentkezéses megoldást alkalmaz, segítségével pedig megszabható a jelentés beágyazásának módja. 
+- A **Beágyazás** funkció bármely olyan portállal vagy webhellyel működik, amely támogatja tartalom beágyazását URL vagy iFrame használatával. 
 
-Bármelyik lehetőséget is választja, a Power BI kikényszeríti összes engedélyek és adatvédelem előtt a felhasználók számára látható tartalmat. A jelentést csak akkor nézheti meg bárki, ha ahhoz rendelkezik a megfelelő engedélyekkel. Többet is megtudhat [beágyazása a SharePoint online-hoz](service-embed-report-spo.md) és a [beágyazási](service-embed-secure.md) lehetőséget a Power bi-ban.
+Bármelyik lehetőséget is választja, a Power BI megköveteli az engedélyeket és az adatbiztonságot, mielőtt a felhasználók megnézhetnék a jelentést. A jelentést csak akkor nézheti meg bárki, ha ahhoz rendelkezik a megfelelő engedélyekkel. További információ a Power BI [Beágyazás a SharePoint Online-ban](service-embed-report-spo.md) és [Beágyazás](service-embed-secure.md) funkcióiról.
+
+### <a name="publish-to-public-web-sites"></a>Közzététel nyilvános webhelyeken
 
 A **Közzététel a weben** lehetőséggel megoszthatja a Power BI-jelentéseit a teljes internettel úgy, hogy interaktív vizualizációkat ágyaz be blogbejegyzésekbe, weblapokra, közösségi webhelyekre és más online kommunikációs tartalmakba. Ezt bármilyen eszközről megteheti. Ha így tesz, bárki megtekintheti a jelentéseit az interneten, és nem felügyelheti, hogy ki láthatja a közzétett tartalmait. A felhasználóknak nem kell Power BI-licenccel rendelkezniük. A webes közzététel csak azokhoz a jelentésekhez érhető el, amelyeknek jogosult a szerkesztésére. Nem tehet közzé jelentéseket az interneten, ha azokat csak megosztották Önnel, vagy ha azok egy alkalmazásban vannak. Többet is megtudhat a [webes közzétételről](service-publish-to-web.md).
 
 >[!Warning]
 >A [Webes közzététel](service-publish-to-web.md) lehetőség a tartalmak nyilvános megosztására, nem pedig belső megosztásra szolgál.
+
+## <a name="create-and-deploy-template-apps"></a>Sablonalkalmazások létrehozása és üzembe helyezése
+
+A *sablonalkalmazások* nyilvános, gyakran a Microsoft AppSource-on keresztüli megosztáshoz lettek kialakítva. Ha létrehozott egy alkalmazást kevés kódolással vagy anélkül, azt üzembe helyezheti bármely Power BI-ügyfél részére. Az ügyfelek saját adataikhoz csatlakozhatnak, és saját fiókot példányosíthatnak. További információ a [Power BI sablonalkalmazásairól](service-template-apps-overview.md).
+
 
 ## <a name="next-steps"></a>Következő lépések
 

@@ -7,42 +7,42 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 05/30/2018
+ms.date: 05/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: ca035762f16d2e8e6c7ffb59220a2457daf10545
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: bc562c1c75f72e0ada23580aa0698f6463c129bb
+ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61172025"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814293"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Csatlakozás a Salesforce-hoz a Power BI-ban
-A Power BI használatával könnyedén csatlakozhat a Salesforce.com-fiókjához. A létrehozott kapcsolat lekéri az adatokat, és automatikusan a rendelkezésére bocsátja az adatokhoz kapcsolódó irányítópultot és jelentéseket.
+A Power BI használatával könnyedén csatlakozhat a Salesforce.com-fiókjához. Ezzel a kapcsolattal lekérheti a Salesforce-adatokat, és automatikusan a rendelkezésére bocsáthat egy irányítópultot és jelentéseket.
 
-Kapcsolódjon a Power BI-hoz készült [Salesforce tartalomcsomaghoz](https://app.powerbi.com/getdata/services/salesforce), vagy tájékozódjon tovább a [Salesforce és a Power BI integrációjáról](https://powerbi.microsoft.com/integrations/salesforce).
+További információ a Power BI és a [Salesforce-integrációjáról](https://powerbi.microsoft.com/integrations/salesforce).
 
-## <a name="how-to-connect"></a>A kapcsolódás menete
-1. Kattintson az **Adatok lekérdezése** elemre a bal oldalon lévő navigációs ablaktábla alján.
+## <a name="how-to-connect"></a>Csatlakozás
+1. A Power BI bal oldali navigációs panelének alján kattintson az **Adatok lekérése** elemre.
    
    ![](media/service-connect-to-salesforce/pbi_getdata.png) 
-2. A **Szolgáltatások** dobozban kattintson a **Beolvasás** elemre.
+2. A **Szolgáltatások** mezőben kattintson a **Lekérés** elemre.
    
    ![](media/service-connect-to-salesforce/pbi_getservices.png) 
-3. Válassza a **Salesforce** lehetőséget, majd kattintson a **Beolvasás** elemre.  
+3. Válassza az **Analytics for Salesforce** lehetőséget, majd kattintson a **Lekérés** elemre.  
    
    ![](media/service-connect-to-salesforce/salesforce.png)
-4. A **Bejelentkezés** gombra kattintva kezdeményezze a bejelentkezési folyamatot.
+4. A bejelentkezési folyamat elindításához válassza a **Bejelentkezés** lehetőséget.
    
     ![](media/service-connect-to-salesforce/dialog.png)
-5. Amikor a rendszer kéri, adja meg a Salesforce-fiókja hitelesítő adatait. Az **Engedélyezés** gombra kattintva tegye elérhetővé az alapvető Salesforce-információkat és -adatokat a Power BI számára.
+5. Amikor a rendszer kéri, adja meg a Salesforce-fiókja hitelesítő adatait. Válassza az **Engedélyezés** lehetőséget, és tegye elérhetővé az alapvető Salesforce-információkat és -adatokat a Power BI számára.
    
    ![](media/service-connect-to-salesforce/sf_authorize.png)
 6. A legördülő menü alábbi beállításával adja meg, hogy mit szeretne importálni a Power BI-ba:
    
    * **Irányítópult**
      
-     Válasszon ki egy személyen (például **Értékesítési igazgató**) alapuló, előre meghatározott irányítópultot. Az ilyen irányítópultok a Salesforce adott szabvány-adatkészletét jelenítik meg, és nem tartalmaznak egyéni mezőket.
+     Válasszon ki egy személyen (például **Értékesítési igazgató**) alapuló, előre meghatározott irányítópultot. Az ilyen irányítópultok a Salesforce adott szabványadatkészletét jelenítik meg, és nem tartalmaznak egyéni mezőket.
      
      ![](media/service-connect-to-salesforce/pbi_salesforcechooserole.png)
    * **Jelentések**
@@ -52,37 +52,46 @@ Kapcsolódjon a Power BI-hoz készült [Salesforce tartalomcsomaghoz](https://ap
      ![](media/service-connect-to-salesforce/pbi_salesforcereports.png)
      
      Ha nem lát jelentést, vegye fel vagy hozza létre a Salesforce-fiókban, majd kísérelje meg újra a csatlakozást.
-7. Az importálás megkezdéséhez kattintson a **Csatlakozás** lehetőségre. Az importálás során megjelenik egy értesítés, hogy az importálás folyamatban van. Ha az importálás befejeződött, a bal oldali navigációs ablaktáblán megjelenik a Salesforce-adatokat tartalmazó irányítópult, jelentés és adatkészlet.
+
+7. Az importálás megkezdéséhez válassza a **Csatlakozás** lehetőséget. Az importálás során megjelenik egy értesítés, hogy az importálás folyamatban van. Ha az importálás befejeződött, a bal oldali navigációs panelen megjelenik a Salesforce-adatokat tartalmazó irányítópult, jelentés és adatkészlet.
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
-Az adatok igény szerinti megjelenítéséhez tetszés szerint módosíthatja az irányítópultot. Kérdéseket tehet fel a Q&A használatával – Vagy kattintson egy csempére [az alapjául szolgáló jelentés megnyitásához](consumer/end-user-tiles.md), és [módosítsa a csempéket](service-dashboard-edit-tile.md) az irányítópulton.
+Az adatok igény szerinti megjelenítéséhez tetszés szerint módosíthatja az irányítópultot. Kérdéseket tehet fel a Q&A használatával, vagy egy [csempe kiválasztásával](consumer/end-user-tiles.md) megnyithatja az alapjául szolgáló jelentést, és [módosíthatja a csempéket](service-dashboard-edit-tile.md) az irányítópulton.
 
-**Hogyan tovább?**
+**Mi a következő lépés?**
 
-* [Tegyen fel egy kérdést a Q&A mezőben](consumer/end-user-q-and-a.md), amely az irányítópult tetején található
-* [Módosítsa a csempéket](service-dashboard-edit-tile.md) az irányítópulton
+* [Kérdéseket tehet fel a Q&A mezőben](consumer/end-user-q-and-a.md) az irányítópult tetején.
+* [Csempe szerkesztése vagy eltávolítása](service-dashboard-edit-tile.md) az irányítópulton
 * [Kattintson egy csempére](service-dashboard-tiles.md) az alapjául szolgáló jelentés megnyitásához
-* Noha az adatkészlet napi frissítésre van ütemezve, módosíthatja a frissítési ütemezést, vagy igény szerint frissíthet az **Azonnali frissítés** gombbal.
+* Noha az adatkészlet napi frissítésre van ütemezve, módosíthatja a frissítési ütemezést, vagy igény szerint frissíthet az **Azonnali frissítés** gombbal
 
 ## <a name="system-requirements-and-considerations"></a>Rendszerkövetelmények és megfontolandó szempontok
+
 - Kapcsolódás egy éles környezetben lévő Salesforce-fiókhoz, amelyen engedélyezve van az API-hozzáférés
+
 - Engedély a Power BI alkalmazásnak a bejelentkezéskor
+
 - Elegendő elérhető API-hívás a fiók számára az adatok lekéréséhez és frissítéséhez
-- A frissítéshez érvényes hitelesítési jogkivonatra van szükség. Ellenőrizze, hogy 5, vagy annál kevesebb Salesforce-adatkészletet importált-e, mert a Salesforce legfeljebb 5 hitelesítési jogkivonatot engedélyez alkalmazásonként
+
+- A frissítéshez érvényes hitelesítési jogkivonatra van szükség. Ellenőrizze, hogy öt vagy annál kevesebb Salesforce-adatkészletet importált-e, mert a Salesforce legfeljebb öt hitelesítési jogkivonatot engedélyez alkalmazásonként.
+
 - A Salesforce-jelentések API a korlátozás miatt legfeljebb 2000 adatsort támogat.
 
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
-Ha hibát észlel, tekintse át a fenti követelményeket. Azt is vegye figyelembe, hogy az egyéni vagy tesztkörnyezeti tartományba való bejelentkezés jelenleg nem támogatott.
+
+Ha hibát észlel, tekintse át a fenti követelményeket. 
+
+Az egyéni vagy tesztkörnyezeti tartományba való bejelentkezés jelenleg nem támogatott.
 
 ### <a name="unable-to-connect-to-the-remote-server-message"></a>„Nem sikerült csatlakozni a távoli kiszolgálóhoz” üzenet
 
-Ha a „Nem sikerült csatlakozni a távoli kiszolgálóhoz” üzenet jelenik meg, amikor megpróbál kapcsolódni a Salesforce-fiókjához, tekintse meg a következő megoldást az Outsystems fórumon: [A Salesforce-összekötő bejelentkezési hibaüzenete: Nem sikerült csatlakozni a távoli kiszolgálóhoz](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
+Ha a „Nem sikerült csatlakozni a távoli kiszolgálóhoz” üzenet jelenik meg, amikor megpróbál kapcsolódni a Salesforce-fiókjához, tekintse meg a következő megoldást az alábbi fórumon: [A Salesforce-összekötő bejelentkezési hibaüzenete: Nem sikerült csatlakozni a távoli kiszolgálóhoz](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
 
 
 ## <a name="next-steps"></a>Következő lépések
 [Mi az a Power BI?](power-bi-overview.md)
 
-[Adatok lekérése](service-get-data.md)
+[Adatforrások a Power BI szolgáltatásban](service-get-data.md)
 
