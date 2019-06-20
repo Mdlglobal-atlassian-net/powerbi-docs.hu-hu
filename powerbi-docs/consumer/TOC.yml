@@ -106,6 +106,8 @@
       items:
         - name: Szószedet és szakkifejezések
           href: end-user-glossary.md
+        - name: Gyakori kérdések
+          href: end-user-faq.md
         - name: Támogatott böngészők
           href: end-user-browsers.md
         - name: A Power BI által támogatott gyors elemzések típusai
