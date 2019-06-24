@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/26/2019
 ms.author: maggies
-ms.openlocfilehash: 0ea8f19fa36bf1f9ceb5f8f0b92bd53ebdfa2a01
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 600e2ed603773cada415f603202cc72f22e0d25b
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64578511"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751112"
 ---
 # <a name="what-are-power-bi-template-apps-preview"></a>Mik azok a Power BI-sablonalkalmazások? (előzetes verzió)
 
@@ -24,10 +24,10 @@ A sablonalkalmazások a jelenlegi szolgáltatás-tartalomcsomagokat helyettesít
 
 Létrehozhat sablonalkalmazásokat, amelyeket az ügyfelei a fiókjukhoz kapcsolhatnak és példányosíthatnak. Tartományszakértőkként könnyen fogyaszthatóvá tehetik az adatokat az üzleti felhasználók számára.  
 
-Sablon alkalmazásait, a Cloud Partner portálra való elküldését. Az alkalmazások ekkor nyilvánosan elérhetővé válnak a Power BI alkalmazáskatalógusában (app.powerbi.com/getdata/services) és a Microsoft AppSource-ban (appsource.microsoft.com). Ez a sablon nyilvános alkalmazás-létrehozási folyamatának áttekintése.  
+Beküldheti a sablonalkalmazásokat a Cloud Partner Portalra. Az alkalmazások ekkor nyilvánosan elérhetővé válnak a Power BI alkalmazáskatalógusában (app.powerbi.com/getdata/services) és a Microsoft AppSource-ban (appsource.microsoft.com). Íme egy magas szintű áttekintés a nyilvános sablonalkalmazás létrehozási folyamatáról.  
 
 ## <a name="process"></a>Folyamat
-És egy sablon alkalmazás beküldésének általános folyamata magában foglalja a több lépésből áll. Egyes szakaszai tartalmazhatnak egynél több tevékenység egy időben.
+A sablonalkalmazások létrehozásának és beküldésének általános folyamata több lépésből áll. Egyes szakaszokhoz egyszerre több műveletet is el kell végezni.
 
 
 | Szakasz | Power BI Desktop |  |Power BI szolgáltatásban  |  |Cloud Partner Portal  |

@@ -5,17 +5,17 @@ author: christianwade
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/10/2019
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: b338044433d1d87f07ab38d64c15974a1cfaa173
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 55676dc2ba2978fb2847543c670726582c589d53
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65536142"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751141"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Növekményes frissítés a Power BI Premium szolgáltatásban
 
@@ -163,4 +163,4 @@ in
 
 ## <a name="limitations"></a>Korlátozások
 
-Jelenleg a [összetett modellek](desktop-composite-models.md), a növekményes frissítés támogatott az SQL, Oracle, és a Teradata adatforrásokhoz csak.
+[Összetett modellek](desktop-composite-models.md) esetén jelenleg a növekményes frissítést csak az SQL, az Oracle és a Teradata típusú adatforrások támogatják.

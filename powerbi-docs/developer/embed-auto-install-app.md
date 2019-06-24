@@ -1,43 +1,43 @@
 ---
-title: Automatikus telepítés a Power BI-alkalmazások, ha a szervezete számára ágyaz be
-description: 'Útmutató: alkalmazások telepítése a Power BI automatikusan, ha a szervezete számára ágyaz be.'
+title: Power BI-alkalmazások automatikus telepítése szervezeti beágyazáskor
+description: Megtudhatja, hogyan telepíthet Power BI-alkalmazásokat automatikusan szervezeti beágyazáskor.
 ms.subservice: powerbi-developer
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
-ms.topic: how-to
+ms.topic: conceptual
 ms.service: powerbi
 ms.custom: ''
 ms.date: 04/16/2019
-ms.openlocfilehash: bb9ba5531c2a23f15ccbf98261e246ab7080aecb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 50040731ec5602dc38d9d323fe916e4e2e239d27
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61376222"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751044"
 ---
-# <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>Ha a szervezete számára ágyaz be automatikus telepítés Power BI-alkalmazások
+# <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>Power BI-alkalmazások automatikus telepítése szervezeti beágyazáskor
 
-Az alkalmazás-tartalmak beágyazásához, rendelkeznie kell a felhasználót, hogy van-e beágyazási [elérhetik az alkalmazást](../service-create-distribute-apps.md). Ha az alkalmazás telepítve van a felhasználó számára, majd a beágyazás zökkenőmentesen működik. További információkért lásd: [jelentések vagy irányítópultok alkalmazásból beágyazási](embed-from-apps.md). Adjon meg a powerbi.com-on, amely az összes alkalmazás lehet [telepítése automatikusan](https://powerbi.microsoft.com/blog/automatically-install-apps/). Ez a művelet azonban bérlői szinten történik, és minden alkalmazásokra vonatkozik.
+Egy alkalmazás tartalmának beágyazásához a beágyazó felhasználónak [hozzáféréssel kell rendelkeznie az alkalmazáshoz](../service-create-distribute-apps.md). Ha az alkalmazás telepítve van a felhasználó számára, a beágyazás zökkenőmentesen működik. További információ: [Jelentések és irányítópultok beágyazása alkalmazásokból](embed-from-apps.md). A PowerBI.com oldalon megszabható,hogy minden alkalmazás [telepítése automatikusan történjen](https://powerbi.microsoft.com/blog/automatically-install-apps/). Ez a művelet azonban bérlői szinten végezhető el, és minden alkalmazásra vonatkozik.
 
-## <a name="auto-install-app-on-embedding"></a>Automatikus telepítés alkalmazás beágyazása
+## <a name="auto-install-app-on-embedding"></a>Alkalmazások automatikus telepítése beágyazáskor
 
-Ha a felhasználó férhet hozzá az alkalmazáshoz, de az alkalmazás nincs telepítve, majd beágyazás meghiúsul. Ezek a hibák elkerülése beágyazása az alkalmazásokból során, így lehetővé tehetik a beágyazása után az alkalmazás automatikus telepítése. Ez a művelet azt jelenti, ha a felhasználó megpróbál ágyazhat be az alkalmazás nincs telepítve, az automatikusan települ az Ön számára. Ezért csak a kívánt tartalom beolvasása beágyazott azonnal, a felhasználó egy zökkenőmentes élményt eredményez.
+Ha a felhasználó hozzáfér egy alkalmazáshoz, azonban az nincs telepítve, a beágyazás meghiúsul. Az ilyen hibák elkerülése érdekében engedélyezze az alkalmazás automatikus telepítését a beágyazás során. Így ha a felhasználó által beágyazni kívánt alkalmazás nincs telepítve, a rendszer automatikusan telepíti azt. A kívánt tartalom így azonnal beágyazásra kerül, ami zökkenőmentes felhasználói élményt biztosít.
 
-## <a name="embed-for-power-bi-users-user-owns-data"></a>Beágyazás a Power BI-felhasználók (a felhasználó az adatok tulajdonosa)
+## <a name="embed-for-power-bi-users-user-owns-data"></a>Beágyazás Power BI-felhasználók esetén (a felhasználó az adatok tulajdonosa)
 
-Ahhoz, hogy az alkalmazások automatikus telepítése a felhasználók számára, akkor engedélyeznie kell az alkalmazást a tartalom létrehozása során [az alkalmazás regisztrálása](register-app.md#register-with-the-power-bi-application-registration-tool), vagy adja hozzá, ha már regisztrálta az alkalmazást.
+Ha engedélyezni szeretné az alkalmazások automatikus telepítését a felhasználók számára, az alkalmazásnak tartalomlétrehozási engedélyt kell adnia [az alkalmazás regisztrálásakor](register-app.md#register-with-the-power-bi-application-registration-tool), vagy azt követően.
 
-![Alkalmazás regisztrálása tartalmat hoz létre.](media/embed-auto-install-app/register-app-create-content.png)
+![Alkalmazásregisztráció – tartalomlétrehozás](media/embed-auto-install-app/register-app-create-content.png)
 
-Ezután meg kell adnia az Alkalmazásazonosító a beágyazási URL-címben. Ahhoz, hogy az alkalmazás azonosítója, az alkalmazás létrehozóját először meg kell telepíteni az alkalmazást, majd használja a támogatott operációs rendszerek egyikét [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/) hívások - [jelentések lekérése](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) vagy [Get Dashboards](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). Ezután az alkalmazás létrehozóját kell vennie a beágyazási URL-címet a REST API-válaszból. Az Alkalmazásazonosító az URL-cím jelenik meg, ha a tartalom-alkalmazások.  Miután a beágyazási URL-címet, ágyazhat be rendszeresen használhatja.
+Következő lépésként meg kell adnia az alkalmazás azonosítóját a beágyazási URL-címben. Az alkalmazásazonosító megadásához az alkalmazás létrehozójának telepítenie kell az alkalmazást, majd a támogatás [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/)-hívások egyikét kell használnia, a [Jelentések lekérése](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) vagy az [Irányítópultok lekérése](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards) hívást. Az alkalmazás létrehozójának ezután ki kell nyernie a beágyazási URL-címet a REST API-válaszból. Az alkalmazásazonosító megjelenik az URL-címben, ha a tartalom egy alkalmazásból származik.  A beágyazási URL-cím beszerzése után azzal rendszeresen beágyazhat.
 
-## <a name="secure-embed"></a>Biztonságos beágyazása
+## <a name="secure-embed"></a>Biztonságos beágyazás
 
-Alkalmazások automatikus telepítése használatához az alkalmazás létrehozóját először meg kell telepíteni az alkalmazást, majd nyissa meg a PowerBI.com webhelyen alkalmazásra, keresse meg a jelentést, és a hivatkozás beszerzése a szokásos módon. Az alkalmazás által használható a hivatkozás hozzáféréssel rendelkező más felhasználók is be a jelentést.
+Az alkalmazások automatikus telepítéséhez az alkalmazás létrehozójának először telepítenie kell az alkalmazást, majd megnyitnia azt a PowerBI.com oldalon, és a jelentésre lépve lekérnie a hivatkozást. Az alkalmazáshoz hozzáféréssel rendelkező és a hivatkozást használni képes felhasználók beágyazhatják a jelentést.
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
-* Csak beágyazhat jelentéseket és irányítópultokat ehhez a forgatókönyvhöz.
+* Ehhez a forgatókönyvhöz csak jelentéseket és irányítópultokat ágyazhat be.
 
-* Ez a funkció jelenleg nem támogatott az alkalmazás tulajdonában lévő adatok és a SharePoint beágyazása forgatókönyveket.
+* Ez a funkció jelenleg nem támogatott az alkalmazás tulajdonában lévő adatokhoz és a SharePoint beágyazási forgatókönyveihez.

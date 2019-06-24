@@ -1,7 +1,7 @@
 ---
 title: A Power BI jelentéskészítő kiszolgáló változásnaplója
 description: Ez a változásnapló a Power BI jelentéskészítő kiszolgálóra vonatkozik, és minden kiadott buildhez felsorolja az új elemeket és hibajavításokat.
-ms.author: jtarquino
+ms.author: jaimeta
 author: jtarquino
 manager: kfile
 ms.reviewer: maggies
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: bb25bfb9b3278ef5eccfd54436a6de430d17677d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d7d3bf85661284835271b68c476ee53ec2c474bc
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65990628"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751134"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
@@ -25,31 +25,31 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
 ## <a name="may-2019"></a>2019. május
 
 - **Power BI jelentéskészítő kiszolgáló**          
-    - *Verzió 1.5.7074.36177 (Build 15.0.1102.371), kiadás dátuma: 2019. május 21.*
+    - *Verzió: 1.5.7074.36177 (Build 15.0.1102.371), Kiadás dátuma: 2019. május 21*
         - Hibajavítások
             - Lapszámozott jelentések
-                - Javítsa ki, mindig a pdf-készítésre engedélyezéséhez.
-                - Hibajavítás: a cookie-kat, mint a biztonságos https-kapcsolaton keresztül küldött beállítása
-                - Hibajavítás: a pop problémái ups parancsprogram-hibák miatt
-                - Android rendszerű telefonokon mobilalkalmazás megjelenítési problémák javítása
-                - Javítás a jelentés időkezelő Mobile, a megfelelő hét sorszáma attól függetlenül, a pénzügyi év kezdete
-                - A hozzáadott "RestrictedResourceMimeTypeForUpload" beállítható tulajdonság megadása rendszergazdák számára le van tiltva MIME-típusok
+                - Javítás a PDF-ek betűtípus-beágyazásának engedélyezéséhez.
+                - Javítás a HTTPS-en keresztül küldött cookie-k Biztonságos állapotra állításához
+                - Szkripthibák miatt felugró ablakok hibáinak javítása
+                - A mobilalkalmazás megjelenítési hibáinak javítása Android rendszerű telefonokhoz
+                - A mobiljelentések időkezelőjének javítása a megfelelő hetek számainak a pénzügyi év kezdetétől független megjelenítéséhez
+                - A „RestrictedResourceMimeTypeForUpload” konfigurálható tulajdonság hozzáadva a rendszergazdákhoz a letiltott MIME-típusok megadásához
          - Funkciók
-            - Megbízható Vizualizációk támogatása PBIRS hozzáadása
+            - Megbízható vizualizációk támogatásának hozzáadása a PBIRS-hez
 
 - **Power BI Desktop (a Power BI jelentéskészítő kiszolgálóra optimalizálva)**
-    - *Verzió: 2.69.5467.1801 (2019. május), kiadás dátuma: 2019. május 21.*
+    - *Verzió: 2.69.5467.1801 (2019. május), Kiadás dátuma: 2019. május 21*
         - Hibajavítások
-            - Hibajavítás: a hitelesítő adatok újbóli beléptetésére elkerülése PBIRS PBIX feltöltése során
-            - Javítások a fájlnév # tartalmazó dokumentumok megnyitása
-            - Vissza navigációs PBIRS kiválasztása ablakban hozzáadva könnyebb hivatkozás
-            - Javítsa ki a vissza gomb megjelenítéséhez figyelmeztető üzeneteket vizuális megjelenítés PBIRS kontrasztos módra.
-            - Kiválasztás panel, a felhasználói felület javításokat vászonalapú méretezést.
+            - Javítás a hitelesítő adatok ismételt megadásának elkerüléséhez a PBIX-feltöltés során
+            - Javítás a fájlnévben # karaktert tartalmazó dokumentumok megnyitásához
+            - A PBIRS kijelölési ablakát könnyebb visszalépési hivatkozással bővítettük
+            - Javítás a PBIRS kontrasztos megjelenítési módjához, amely megjeleníti a Vissza gombot és a figyelmeztető üzeneteket.
+            - Javítások a felhasználói felület Kiválasztás paneléhez és a vászonméretezéshez.
 
 ## <a name="january-2019"></a>2019. január
 
 - **Power BI jelentéskészítő kiszolgáló**          
-    - *Verzió 1.4.7024.16477 (Build 15.0.1102.299), kiadás dátuma: 2019. március 28.*
+    - *Verzió: 1.4.7024.16477 (Build 15.0.1102.299), Kiadás dátuma: 2019. március 28.*
         - Hibajavítások
             - Power BI-jelentések
                 - Egy alapszintű hitelesítő adatokkal kapcsolatos hiba javítása közvetlen lekérdezés használatakor SAP Hana és SAP BW esetén

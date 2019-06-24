@@ -6,15 +6,15 @@ ms.custom: seodec18
 author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: resource
+ms.topic: conceptual
 ms.date: 05/14/2019
 ms.author: mihart
-ms.openlocfilehash: 4a67e7ef8171b3f342530d187590e9e018f584df
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.openlocfilehash: 6a66d134a3399fed3ee03eddd7059265b5cf7c13
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412902"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751003"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -142,7 +142,7 @@ A dokumentációkban használható a Power BI-környezet (bérlő) kifejezés is
 ## <a name="h"></a>H
 **high-density visuals (nagy adatsűrűségű vizualizációk)** A Power BI által renderelhetőnél több adatponttal rendelkező vizualizációk. A Power BI az adatok mintavételezésével jeleníti meg az alakzatokat és a kiugró értékeket.
 
-**Kezdőlap** az alapértelmezett Power BI szolgáltatás felhasználók életkor üzenetsorokra. Semmit nem módosítja. Nem hívható meg a Power BI kezdőlap vagy egyszerűen kezdőlap.
+**Kezdőlap** A Power BI szolgáltatás felhasználóinak alapértelmezett kezdőlapja. Semmit nem módosít. Hívható Power BI-kezdőlapnak vagy egyszerűen Kezdőlapnak.
 
 ## <a name="i"></a>I
 
