@@ -8,13 +8,13 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/27/2019
-ms.openlocfilehash: 4fc35b88496674206437507ae866e9eb8cb5dd39
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/10/2019
+ms.openlocfilehash: 6aebc45f2341f098f0f54dad66652967077c2a08
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61354140"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823413"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sorszintű biztonság a Power BI Embeddeddel
 
@@ -215,7 +215,7 @@ Az alábbi lépések követésével megkezdheti a CustomData() függvény beáll
 
 7. Használja a Power BI API-kat a CustomData funkció használatára az alkalmazásában.  Ha a CustomData funkcióval hoz létre tokent, felhasználónévvel kell rendelkeznie. A felhasználónévnek meg kell egyeznie a fő felhasználó egyszerű felhasználónevével. A fő felhasználónak a létrehozott szerepkör tagjának kell lennie. Ha nincs szerepkör megadva, akkor a rendszer minden szerepkört felhasznál az RLS kiértékelésére, amelynek a fő felhasználó a tagja.
 
-    Ha dolgozik egy [szolgáltatásnév](embed-service-principal.md), is kell tennie, hogy a fenti lépéseket a fő fiók használata helyett. Ha generálása beágyazási token, a [szolgáltatás azonosítója](embed-service-principal.md#how-to-get-the-service-principal-object-id) felhasználóneve.
+    Ha [szolgáltatásnévvel](embed-service-principal.md) dolgozik, fő fiók használata helyett a fenti lépéseket kell elvégeznie. Beágyazási token létrehozásakor a felhasználónévnek használja a [szolgáltatásnév objektumazonosítóját](embed-service-principal.md#how-to-get-the-service-principal-object-id) felhasználónévként.
 
     > [!Note]
     > Ha készen áll az alkalmazás éles környezetben történő üzembe helyezésére, a fő felhasználói fiók mezője vagy beállítása nem lehet látható a végfelhasználó számára.
@@ -310,7 +310,7 @@ Az identitásblobban megadott értéknek az Azure SQL Serverhez érvényes hozz�
 
    ![Alkalmazásregisztráció](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
 
-## <a name="on-premises-data-gateway-with-service-principal-preview"></a>Helyszíni adatátjáró szolgáltatásnévvel (előzetes verzió)
+## <a name="on-premises-data-gateway-with-service-principal"></a>Helyszíni adatátjáró szolgáltatásnévvel
 
 Azok az ügyfelek, akik SQL Server Analysis Services (SSAS) helyszíni, élő kapcsolatú adatforrásával konfigurálják a sorszintű biztonságot (RLS), használhatják az új [szolgáltatásnév](embed-service-principal.md) képességet a felhasználók és adatelérésük kezelésére az SSAS-ben a **Power BI Embeddeddel** létrehozott integráció során.
 

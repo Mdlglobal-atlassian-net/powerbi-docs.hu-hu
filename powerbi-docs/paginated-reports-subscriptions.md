@@ -1,6 +1,6 @@
 ---
-title: Fizessen elő a többoldalas jelentéseket a Power BI szolgáltatásban
-description: Ebből a cikkből megtudhatja, többoldalas jelentéseket a Power BI szolgáltatásban való előfizetéssel kapcsolatos szem előtt tartani.
+title: Oldalakra osztott jelentések előfizetése a Power BI szolgáltatásban
+description: Ebből a cikkből megtudhatja, hogy mire érdemes figyelnie, ha többoldalas jelentésekre iratkozik fel a Power BI szolgáltatásban.
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
@@ -9,37 +9,37 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 05/24/2019
-ms.openlocfilehash: ccec6658808d94728f2a4f14de67c36da0f51def
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 472606fcb3b823cdcb722c9d8d6421d0ec652d24
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222203"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839553"
 ---
-# <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Feliratkozás saját maga és mások többoldalas jelentéseket a Power BI szolgáltatásban 
+# <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Feliratkozás és mások feliratkoztatása többoldalas jelentésre a Power BI szolgáltatásban 
 
-Most már beállíthat e-mailes feliratkozások többoldalas jelentéseket a Power BI szolgáltatás saját maga és mások. A folyamat általában ugyanaz, mint [feliratkozás jelentésekre és irányítópultokra a Power BI szolgáltatásban](service-report-subscribe.md). Ez a cikk határozza meg a különbségek és szempontok. 
+Most már beállíthat e-mailes előfizetéseket saját maga és mások számára többoldalas jelentésekre a Power BI szolgáltatásban. A folyamat általánosságban ugyanaz, mint [a Power BI szolgáltatás jelentéseire és irányítópultjaira való feliratkozás](service-report-subscribe.md) esetében. Ez a cikk az eltéréseket és a megfontolandó szempontokat ismerteti. 
 
-Előfizetések beállításában úgy dönt, milyen gyakran szeretne az e-mailt kapni: napi, heti vagy óránként. Ha úgy dönt, napi vagy heti, kiválaszthatja az idő az előfizetés futtatni szeretné. Az összes beállíthatja a jelentések naponta legfeljebb 24 eltérő előfizetésekben. 
+Feliratkozás beállításakor kiválaszthatja, hogy milyen gyakorisággal szeretné fogadni az e-maileket: naponta, hetente vagy óránként. Napi vagy heti gyakoriság esetén megadhatja a feliratkozás futásának időpontját. Egy napra legfeljebb 24 különböző feliratkozást állíthat be az összes jelentéshez. 
 
-## <a name="considerations-for-paginated-report-subscriptions"></a>Többoldalas jelentés-előfizetések szempontjai 
+## <a name="considerations-for-paginated-report-subscriptions"></a>Szempontok többoldalas jelentésekre való feliratkozás esetén 
 
-- Előfizetések irányítópultjának vagy a Power BI-jelentések, ellentétben az előfizetés tartalmazza a jelentés teljes kimenet melléklet.  A következő melléklet típusok támogatottak: PDF-fájlt, PowerPoint-bemutató (PPTX), az Excel-munkafüzet (XLSX), a Word-dokumentum (DOCX), CSV-fájl és XML.
+- Az irányítópultokra és Power BI-jelentésekre való feliratkozásokkal ellentétben ez a feliratkozás a teljes jelentés kimenetét tartalmazza mellékletként.  A következő melléklettípusok vannak támogatva: PDF, PowerPoint-bemutató (PPTX), Excel-munkafüzet (XLSX), Word-dokumentum (DOCX), CSV-fájl és XML.
 
-- A jelentés az e-mail törzsének nincs előnézeti kép van.  Azt tervezi, hogy rendelkezik egy választható elem a jelentés első oldalán képe. 
+- Az e-mail szövegtörzsében nem található előnézeti kép a jelentésről.  Azt tervezzük, hogy a jelentés első oldalának képe választható elem legyen. 
 
-- A jelentés maximális mellékletméretét érték 25 MB. 
+- A jelentés maximális mellékletméretének értéke 25 MB. 
 
-- A lapokra tördelt jelentésekhez bármely jelenleg támogatott adatforrások, beleértve az Azure Analysis Services vagy a Power BI-adatkészletek csatlakozó többi felhasználó regisztrálhat egyet. A jelentés melléklet tükrözi az adatokat, az engedélyek alapján, ugyanúgy mint az SQL Server Reporting Services jelenleg szem előtt tartani. 
+- Bármely másik felhasználót felírathat bármely jelenleg támogatott adatforráshoz – így például Azure Analysis Services- vagy Power BI-adatkészletekhez – csatlakozó oldalakra osztott jelentésekre. Ne feledje, hogy a jelentésmelléklet az engedélyein alapuló adatokat tükrözi, csakúgy mint az SQL Server Reporting Services jelenleg. 
 
-- A jelentés jelentésoldalakra a jelentés nevére.  
+- A jelentésoldalakra való feliratkozás a jelentés nevéhez kapcsolódik.  
 
-- E-mailes feliratkozások lesznek elküldve a jelentés alapértelmezett paraméterértékeket. 
+- Az e-mailes feliratkozások a jelentés paramétereinek alapértelmezett értékeit alkalmazva lesznek elküldve. 
 
-- Nincs nem **után adatfrissítési** a többoldalas jelentések gyakoriságának beállítása. Mindig a legújabb értékeket le az alapul szolgáló adatforrás. 
+- A többoldalas jelentések esetében nincs **Adatfrissítés után** gyakorisági beállítás. Mindig az alapul szolgáló adatforrásból származó legújabb értékeket fogja kapni. 
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Saját maga és mások feliratkozás jelentésekre és irányítópultokra a Power BI szolgáltatásban](service-report-subscribe.md)
+[Feliratkozás és mások feliratkoztatása jelentésekre és irányítópultokra a Power BI szolgáltatásban](service-report-subscribe.md)
 
-[Mik a lapszámozott jelentések a Power BI Premiumban? (előzetes verzió)](paginated-reports-report-builder-power-bi.md)
+[Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)

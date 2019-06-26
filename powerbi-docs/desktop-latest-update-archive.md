@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d2a4e168b49ef0d9c3b656c91001ae9306dfe42d
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: cc2c9cbc15240e3dc4d46c7f02ef0b0d82bb36f8
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375031"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823429"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>A Power BI Desktop korábbi havi frissítései
 
@@ -34,10 +34,9 @@ A **legújabb frissítésekről** szóló videót az elejétől is végignézhet
 
 Az alábbi szakaszok a **Power BI Desktop** korábbi havi frissítéseit ismertetik.
 
+## <a name="may-2019-update-26954671251"></a>2019. májusi frissítés (2.69.5467.1251)
 
-## <a name="april-2019-update-2685432361"></a>Április 2019 frissítés (2.68.5432.361)
-
-Az április frissítések lettek csomagolt teljes frissítések, amelyeket a spring a lépésben Esős napokon. 
+Májusi frissítéseinkből meggyőző új funkciókkal, ragyogóan színes és látványos vizualizációkkal gazdagított, nagyszerű jelentések születtek. 
 
 [A Power BI Desktop legújabb verziója](https://powerbi.microsoft.com/desktop) már letölthető. Ha Windows 10 operációs rendszert használ, a **Power BI Desktopot** a Windows Áruházból is letöltheti. A havi verziók a **Power BI Desktop** telepítésének módjától függetlenül megegyeznek, bár a verziószámok különbözhetnek. További információkért tekintse meg [ezt a cikket](desktop-get-the-desktop.md). 
 
@@ -53,43 +52,121 @@ A **legújabb frissítésekről** szóló videót az elejétől is végignézhet
 Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**:
 
 ### <a name="reporting"></a>Jelentéskészítés
-* Szűrés panel fejlesztései [[videó]](https://youtu.be/vih35kSrEHU?t=9)[[cikk]](power-bi-report-filter-preview.md)[[blog]    ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#filterPane) 
-* Feltételes formázásával a Vizualizációk címei [[videó]](https://youtu.be/vih35kSrEHU?t=254)[[cikk]](desktop-conditional-format-visual-titles.md)[[blog]    ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicTitles)
-* Feltételes formázás a webes URL-cím műveletek gombok, alakzatok és képek [[videó]](https://youtu.be/vih35kSrEHU?t=439)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicURLs)
+* Teljesítményelemző panel  [[videó]](https://youtu.be/O8GlHDz8xUQ?t=10)  [[cikk]](desktop-performance-analyzer.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#perfAnalyzer) 
+* Szűrő panel fejlesztései (előzetes verzió)  [[videó]](https://youtu.be/O8GlHDz8xUQ?t=377)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#filterPane)
+* Navigálás billentyűzettel táblákban és mátrixokban [[videó]](https://youtu.be/O8GlHDz8xUQ?t=518)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#accessibility)
+* Vonal-adatfelirat helyzetének vezérlése [[videó]](https://youtu.be/O8GlHDz8xUQ?t=572)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#dataLabels)
+* KPI vizuális kijelző szövegméretének vezérlése [[videó]](https://youtu.be/O8GlHDz8xUQ?t=664)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#kpi)
 
 
 ### <a name="analytics"></a>Elemzés
-* Különböző jelentések részletezési [[videó]](https://youtu.be/vih35kSrEHU?t=567)[[cikk]](desktop-cross-report-drill-through.md)[[blog]    ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#drillthrough) 
-* Kulcs Véleményvezérek visual mostantól támogatja a folyamatos elemzés numerikus célok [[videó]](https://youtu.be/vih35kSrEHU?t=753)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#keyInfluencers) 
-* Általánosan elérhető podpora Pythonu [[videó]](https://youtu.be/vih35kSrEHU?t=889)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#python) 
-* A Q & a feltételek megfelelő részleges szinonimát [[videó]](https://youtu.be/vih35kSrEHU?t=912)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#partialMatching) 
+* Fejlesztések a főbb befolyásolók vizualizációjához (előzetes verzió) [[videó]](https://youtu.be/O8GlHDz8xUQ?t=717)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#keyInfluencers) 
+    * Dobozolás támogatása 
+    * Formázási lehetőségek
+    * Mobiltámogatás
 
 
 ### <a name="modeling"></a>Modellezés
-* Új DAX-függvény - ALLCROSSFILTERED [[videó]](https://youtu.be/vih35kSrEHU?t=970)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dax) 
+* Dátumtáblák automatikus létrehozásának letiltása új jelentések esetén [[videó]](https://youtu.be/O8GlHDz8xUQ?t=984)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#autoDate) 
+* Az ALLSELECTED DAX-függvény frissítése [[videó]](https://youtu.be/O8GlHDz8xUQ?t=1080)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#dax) 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
-* Egy új egyéni Vizualizáció [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#rainbowGauge) 
+
+### <a name="visuals"></a>Vizualizációk
+* ArcGIS Maps for Power BI-frissítések  [[videó]](https://youtu.be/O8GlHDz8xUQ?t=1093)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#esri) 
+* Hat új egyéni vizualizáció és frissítések    [[videó]](https://youtu.be/O8GlHDz8xUQ?t=1199)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#mapbox) 
 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
-* A Power BI-adatfolyamok összekötő már általánosan elérhető [[videó]](https://youtu.be/vih35kSrEHU?t=983)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dataflows) 
-* Oracle Essbase-összekötő mostantól támogatja a DirectQuery és általánosan elérhető [[videó]](https://youtu.be/vih35kSrEHU?t=1011)[[blog]   ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#oracleEssbase) 
-* PDF-összekötő általánosan elérhető [[videó]](https://youtu.be/vih35kSrEHU?t=1042)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#pdf) 
-* Minta alapján webes összekötő – automatikus táblázat következtetésekhez [[videó]](https://youtu.be/vih35kSrEHU?t=1089)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#webByExample) 
-* Intersystems IRIS összekötő [[videó]](https://youtu.be/vih35kSrEHU?t=1186)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#intersystemsIRIS) 
-* Indexima összekötő [[videó]](https://youtu.be/vih35kSrEHU?t=1215)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#indexima) 
-* Luminis InformationGrid összekötő [[videó]](https://youtu.be/vih35kSrEHU?t=1236)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#luminisInformationGrid) 
-* Solver BI360 összekötő [[videó]](https://youtu.be/vih35kSrEHU?t=1255)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#solverBI360) 
-* Paxata összekötő [[videó]](https://youtu.be/vih35kSrEHU?t=1268)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#paxata) 
+* Essbase-összekötő – támogatás a natív lekérdezéshez (MDX) [[videó]](https://youtu.be/O8GlHDz8xUQ?t=2518)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#essbase) 
+* Intune Data Warehouse-összekötő  [[videó]](https://youtu.be/O8GlHDz8xUQ?t=2538)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#intune) 
+* Tenforce-összekötő [[videó]](https://youtu.be/O8GlHDz8xUQ?t=2560)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#tenforce) 
+* Roamler-összekötő [[videó]](https://youtu.be/O8GlHDz8xUQ?t=2596)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#roamler) 
 
-### <a name="data-preparation"></a>Adatok előkészítése
-* Adatok Profilace fejlesztések és az általános elérhetőség [[videó]](https://youtu.be/vih35kSrEHU?t=1299)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#profiling) 
-* Intelligens egyesítési fejlesztést és az általános rendelkezésre állás [[videó]](https://youtu.be/vih35kSrEHU?t=1447)[[blog]   ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#fuzzyMerge) 
-* M Intellisense támogatott a szerkesztőlécen és egyéni oszlop párbeszédpanel, és általánosan elérhető [[videó]](https://youtu.be/vih35kSrEHU?t=1491)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#intellisense) 
 
 ### <a name="other"></a>Egyéb
-* A Power BI jelentéskészítő többoldalas [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#paginatedReports) 
+* Lekérdezések automatikus megszakítása a Power BI Desktop alkalmazásban [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#queryCancellation) 
+
+> [!NOTE]
+> Megtekintheti továbbá [a Power BI Desktophoz elérhető adatforrások teljes listáját](desktop-data-sources.md). A lista folyamatosan bővül, ezért érdemes gyakran visszatérnie.
+
+További információkra kíváncsi ezekről a frissítésekről? Olvassa el [blogbejegyzésünket](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/), amely részletes információkkal szolgál az új funkciókról (ez ugyanaz a blogbejegyzés, amelyre a fenti lista hivatkozik).
+
+
+Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzésben is megtekinthető.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O8GlHDz8xUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verzióit is. Azt javasoljuk azonban, hogy a régebbiek helyett mindig a Power BI Desktop legújabb verzióját használja. Minden korábbi verzióra vonatkoznak az alábbi korlátozások:
+
+* A Power BI Desktop korábbi kiadásait nem frissítjük: a legújabb frissítéseket és funkciókat mindig a legújabb kiadással érheti el.
+* Előfordulhat, hogy a Power BI Desktop korábbi verzióival nem tud majd megnyitni egy újabb verzióban létrehozott vagy mentett fájlt. 
+* Ha a Power BI Desktop újabb verziójában mentett jelentés betöltésekor figyelmeztetés jelenik meg, és Ön a jelentést a korábbi verzióban menti, az új funkciókkal kapcsolatos minden információ elvész.
+* Csak az angol nyelvű Power BI Desktop-verziókat archiváljuk.
+
+A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
+
+* [A Power BI Desktop 2019. májusi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-05.msi)
+* [A Power BI Desktop 2019. májusi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-05_x64.msi)
+
+
+## <a name="april-2019-update-2685432361"></a>2019. áprilisi frissítés (2.68.5432.361)
+
+Áprilisi frissítéseinket olyan frissítésekkel töltöttük meg, amelyekkel nehezebb körülmények között is magabiztosan dolgozhat. 
+
+[A Power BI Desktop legújabb verziója](https://powerbi.microsoft.com/desktop) már letölthető. Ha Windows 10 operációs rendszert használ, a **Power BI Desktopot** a Windows Áruházból is letöltheti. A havi verziók a **Power BI Desktop** telepítésének módjától függetlenül megegyeznek, bár a verziószámok különbözhetnek. További információkért tekintse meg [ezt a cikket](desktop-get-the-desktop.md). 
+
+Az egyes frissítések mellett szereplő hivatkozások a következőket jelentik:
+
+* A **[videókivonatok]** új böngészőablakban nyílnak meg, és a funkció ismertetését tartalmazzák.
+* Egyes funkciókról további **[cikkekben]** olvashat részletesen.
+* A legtöbb funkciót a havi frissítésről szóló **[blogbejegyzésben]** mutatjuk be.
+* Az említetteken kívül pedig vannak olyan funkciók, amelyek működése magától értetődő, ezért az ilyen esetekben nincs szükség magyarázó cikkre vagy videóra.
+
+A **legújabb frissítésekről** szóló videót az elejétől is végignézheti ezen a cikken belül. Ehhez kattintson a frissítések listája alatti videóképen található **lejátszás** ikonra.
+
+Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**:
+
+### <a name="reporting"></a>Jelentéskészítés
+* A szűrőpanel fejlesztései [[videó]](https://youtu.be/vih35kSrEHU?t=9)  [[cikk]](power-bi-report-filter-preview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#filterPane) 
+* Vizualizációk címeinek feltételes formázása [[videó]](https://youtu.be/vih35kSrEHU?t=254)  [[cikk]](desktop-conditional-format-visual-titles.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicTitles)
+* A gombok, alakzatok és képek webes URL-műveleteinek feltételes formázása [[videó]](https://youtu.be/vih35kSrEHU?t=439)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicURLs)
+
+
+### <a name="analytics"></a>Elemzés
+* Jelentések részletezése [[videó]](https://youtu.be/vih35kSrEHU?t=567)  [[cikk]](desktop-cross-report-drill-through.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#drillthrough) 
+* A Főbb befolyásolók vizualizációja már támogatja a numerikus célok folyamatos elemzését [[videó]](https://youtu.be/vih35kSrEHU?t=753)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#keyInfluencers) 
+* Általánosan elérhető a Python-támogatás [[videó]](https://youtu.be/vih35kSrEHU?t=889)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#python) 
+* Szinonimák részleges egyezésének keresése a Q&A-kifejezésekben [[videó]](https://youtu.be/vih35kSrEHU?t=912)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#partialMatching) 
+
+
+### <a name="modeling"></a>Modellezés
+* Új DAX-függvény - ALLCROSSFILTERED [[videó]](https://youtu.be/vih35kSrEHU?t=970)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dax) 
+
+### <a name="custom-visuals"></a>Egyéni vizualizációk
+* Egy új egyéni vizualizáció  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#rainbowGauge) 
+
+
+### <a name="data-connectivity"></a>Adatkapcsolatok
+* Mostantól általánosan elérhető a Power BI-adatfolyamok összekötő[[videó]](https://youtu.be/vih35kSrEHU?t=983)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dataflows) 
+* Az Oracle Essbase-összekötő már támogatja a DirectQuery üzemmódot, és általánosan elérhető  [[videó]](https://youtu.be/vih35kSrEHU?t=1011)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#oracleEssbase) 
+* Mostantól általánosan elérhető a PDF-összekötő [[videó]](https://youtu.be/vih35kSrEHU?t=1042)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#pdf) 
+* Web By Example-összekötő – automatikus tábla-következtetés [[videó]](https://youtu.be/vih35kSrEHU?t=1089)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#webByExample) 
+* Intersystems IRIS-összekötő [[videó]](https://youtu.be/vih35kSrEHU?t=1186)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#intersystemsIRIS) 
+* Indexima-összekötő [[videó]](https://youtu.be/vih35kSrEHU?t=1215)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#indexima) 
+* Luminis InformationGrid -összekötő [[videó]](https://youtu.be/vih35kSrEHU?t=1236)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#luminisInformationGrid) 
+* Solver BI360-összekötő [[videó]](https://youtu.be/vih35kSrEHU?t=1255)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#solverBI360) 
+* Paxata-összekötő [[videó]](https://youtu.be/vih35kSrEHU?t=1268)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#paxata) 
+
+### <a name="data-preparation"></a>Adatok előkészítése
+* Az adatprofil-készítés fejlesztései és általános rendelkezésre állása [[videó]](https://youtu.be/vih35kSrEHU?t=1299)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#profiling) 
+* Az intelligens egyesítés teljesítményjavító fejlesztései és általános rendelkezésre állása [[videó]](https://youtu.be/vih35kSrEHU?t=1447)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#fuzzyMerge) 
+* Az M Intellisense támogatott a szerkesztőlécben és az egyéni oszlop-párbeszédpanelen, és általánosan elérhető [[videó]](https://youtu.be/vih35kSrEHU?t=1491)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#intellisense) 
+
+### <a name="other"></a>Egyéb
+* A Power BI többoldalas jelentéskészítője [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#paginatedReports) 
 
 
 
@@ -116,13 +193,13 @@ Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verz
 
 A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
 
-* [Power BI Desktop - 32 bites verzióját 2019. április](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04.msi)
-* [A Power BI Desktop - 64 bites verzióját 2019. április](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04_x64.msi)
+* [A Power BI Desktop 2019. áprilisi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04.msi)
+* [A Power BI Desktop 2019. áprilisi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04_x64.msi)
 
 
 ## <a name="march-2019-update-2675404581"></a>2019. márciusi frissítés (2.67.5404.581)
 
-A márciusi frissítése után is csomagolt teljes vonzó és hasznos frissítések, és Reméljük, hogy ezek a fejlesztések győződjön meg arról, Ön is nagy egy négy – levél jetelové keresése. 
+Márciusi frissítésünkben számos lenyűgöző és hasznos frissítés található, és reméljük, hogy ezekkel a továbbfejlesztésekkel Ön is maradéktalanul elégedett lesz. 
 
 [A Power BI Desktop legújabb verziója](https://powerbi.microsoft.com/desktop) már letölthető. Ha Windows 10 operációs rendszert használ, a **Power BI Desktopot** a Windows Áruházból is letöltheti. A havi verziók a **Power BI Desktop** telepítésének módjától függetlenül megegyeznek, bár a verziószámok különbözhetnek. További információkért tekintse meg [ezt a cikket](desktop-get-the-desktop.md). 
 
@@ -156,7 +233,7 @@ A **Power BI Desktop** márciusi újdonságai közé az alábbi frissítések ta
 
 
 ### <a name="modeling"></a>Modellezés
-* A nézet már általánosan elérhető új modellezési [[videó]](https://youtu.be/rBPGH6eYlT0?t=417)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
+* Mostantól általánosan elérhető az új modellezési nézet [[videó]](https://youtu.be/rBPGH6eYlT0?t=417)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
 * Új DAX-függvények [[videó]](https://youtu.be/rBPGH6eYlT0?t=560)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#DAX) 
 
 ### <a name="custom-visuals"></a>Egyéni vizualizációk
@@ -195,11 +272,11 @@ Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verz
 
 A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
 
-* [A Power BI Desktop - 32 bites verzióját 2019. március](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03.msi)
-* [A Power BI Desktop - 64 bites verzióját 2019. március](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03_x64.msi)
+* [A Power BI Desktop 2019. márciusi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03.msi)
+* [A Power BI Desktop 2019. márciusi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03_x64.msi)
 
 
-## <a name="february-2019-update-26653761681"></a>2019. február (2.66.5376.1681) frissítése
+## <a name="february-2019-update-26653761681"></a>2019. februári frissítés (2.66.5376.1681)
 
 Februári frissítéseink is nagy örömre adtak okot: új adatösszekötők, funkciók és analitikai továbbfejlesztések szerepeltek közöttük. Olyan, mint egy doboz bonbon: meglepetésekkel teli... de ennek a februári frissítésnek minden darabja édes, sőt egyenesen hihetetlenül finom volt. 
 
@@ -400,7 +477,7 @@ A **Power BI Desktop** novemberi újdonságai közé az alábbi frissítések ta
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
 
-* Az Azure fejlesztői műveletek Server-összekötő [[videó]](https://youtu.be/1xsXXoyTxfk?t=2641)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
+* Azure Developer Operations Server-összekötő [[videó]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
 * A Start Page és az End Page paraméter támogatása PDF-összekötőben  [[videó]](https://youtu.be/1xsXXoyTxfk?t=2667)   [[cikk]](desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23pdf) 
 * Továbbfejlesztett Azure Consumption Insights-összekötő  [[videó]](https://youtu.be/1xsXXoyTxfk?t=2704)  [[cikk]](desktop-connect-azure-consumption-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23consumptionInsights) 
 
@@ -1710,7 +1787,7 @@ A Power BI Desktop szeptemberi újdonságai közé az alábbi frissítések tart
 -   Függvényhívás hozzáadása oszlop [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 -   Oszlopok kibontása és összesítése – a *Továbbiak betöltése* funkció értékeinek támogatása [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 -   Új átalakítás – táblázatoszlop konvertálása lista formátumra [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
--   Előkészítési kulcs – támogatása *intelligens gépelés* legördülő menükben [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   Billentyűzetkezelés – az *intelligens gépelés* támogatása legördülő menükben [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 
 
 ### <a name="other-improvements"></a>Egyéb fejlesztések
@@ -2554,7 +2631,7 @@ Ebben a frissítésben a következő funkciók vagy azok továbbfejlesztett vál
   -   Táblák kibontása/összecsukása
   -   Mezők elrejtése/felfedése
   -   Optimalizált elrendezés (térköz, margók és betűkészletek)
-- Jelentésoldal-navigáció – kulcs felszállás támogatása
+- Jelentésoldal-navigáció – Billentyűzethasználat támogatása
 - Számos hibajavítás
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>

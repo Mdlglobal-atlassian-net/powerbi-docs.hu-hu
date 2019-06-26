@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 967af5bc560d5312cd26964e5ca6b2b7eafd60d7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d491855a268c57d7958d52b7c1e9e9191c28601e
+ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65991042"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67038917"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -23,16 +23,45 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
 
-## <a name="april-2019"></a>Április 2019
+## <a name="may-2019"></a>2019. május
 
-### <a name="key-influencers-visual"></a>Kulcs Véleményvezérek visual 
-Kulcs Véleményvezérek visual már elérhető a mobilalkalmazásban. Ez a Vizualizáció fő elemzésének végre az adatok néhány TAP-oknak teszi lehetővé.
+### <a name="siri-shortcuts-support-ios"></a>Siri-parancsikonok támogatása (iOS)
+A felhasználók a jelentéseikre és irányítópultjaikra mutató Siri-parancsikonokat hozhatnak létre, majd ezeket közvetlenül Siri hangos kezelőfelületéről nyithatják meg. [Útmutató Siri-parancsikonok iOS-es Power BI-alkalmazásban való használatához](https://powerbi.microsoft.com/blog/introducing-siri-integration-with-power-bi-mobile-ios-app-preview/).
 
-### <a name="add-comments-to-report-content-android-and-ios"></a>Megjegyzések hozzáadása a jelentés tartalmának (Android és iOS)
-Most már használhatja megjegyzések együttműködésre, és ossza meg velünk véleményét a jelentésoldalak és Vizualizációk. További információk a jelentést a Power BI szolgáltatásban és a Mobile megjegyzéseket [a blog](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
+### <a name="device-search-ios"></a>Keresés az eszközön (iOS)
+A Power BI integrációja az iOS-es eszközökön végzett kereséssel (kiemelt). Az iPhone-on vagy iPad-en végzett tartalomkeresés már Power BI-elemekre is kiterjed. Amikor a felhasználók az eszköz natív keresési lehetőségét használják, az eredmények között a feltételeknek megfelelő Power BI-jelentések, -irányítópultok, -alkalmazások, -munkaterületek és személyek is megjelennek. [Tovább tájékozódhat a blogbejegyzés megnyitásával](https://powerbi.microsoft.com/blog/introducing-siri-integration-with-power-bi-mobile-ios-app-preview/).
 
-### <a name="maximize-the-view-with-full-screen-mode-android-and-ios"></a>Maximalizálhatja a nézet a teljes képernyős mód (Android és iOS)
-Hozzáadott új gomb, amelyekkel szabályozhatja, mikor jelentés fejlécek és láblécek eltávolításával, és a jelentések megtekintése az maximális lemezterület biztosít az adatok összpontosíthat.
+
+### <a name="single-tap-report-interaction---ga"></a>Egykoppintásos jelentéskezelés – általános elérhetőség
+
+Az egykoppintásos kezelés már általánosan elérhető, és új felhasználók számára már ez lesz az alapértelmezett érintőképernyős kezelési mód. A felhasználók ezt kikapcsolhatják, és választhatják a kettős koppintást az alkalmazás beállításaiban.
+
+### <a name="enhanced-conditional-access-protection-ios-android"></a>Továbbfejlesztett feltételes hozzáférés-védelem (iOS, Android)
+
+Az AAD [új alkalmazásvédelem-alapú feltételes hozzáférési képességével](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) való integráció azáltal fokozza a biztonságot, hogy már az alkalmazásszabályzat alkalmazása előtt korlátozza a Power BI-hoz való hozzáférést.
+
+### <a name="device-protection-ios"></a>Eszközvédelem (iOS)
+
+A felhasználók az eszköz beépített védelmével tehetik biztonságossá a Power BI-t arcfelismerés, ujjlenyomat vagy PIN-kód megkövetelésével a Power BI eléréséhez. Ezt szabályozhatja a felhasználó az alkalmazásbeállításokkal, a rendszergazdák pedig az Intune vagy bármely más MDM-eszköz használatával. [További információ](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access).
+
+### <a name="one-page-report-slideshow-windows"></a>Egyoldalas jelentés diavetítésben (Windows)
+
+Az automatikus frissítés egyoldalas jelentésekhez is támogatott diavetítés során. Így ha a jelentés alapját képező adatforrást módosítják, a rendszer észleli ezt, és frissíti az oldalon megjelenő adatokat.
+
+
+## <a name="april-2019"></a>2019. április
+
+### <a name="key-influencers-visual"></a>Főbb befolyásolók vizualizáció 
+
+A Főbb befolyásolók vizualizáció már elérhető a mobilalkalmazásban. A vizualizáció lehetővé teszi, hogy néhány koppintással elvégezze az adatok fő meghatározóinak elemzését.
+
+### <a name="add-comments-to-report-content-android-and-ios"></a>Megjegyzések hozzáadása egy jelentés tartalmához (Android és iOS)
+
+Az együttműködéshez és a visszajelzések megosztásához mostantól a jelentésoldalakon és vizualizációkon elhelyezett megjegyzések is használhatók. A jelentésekhez a Power BI szolgáltatásban és Mobile-ban adható megjegyzésekről [ebben a blogban](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) olvashat bővebben. 
+
+### <a name="maximize-the-view-with-full-screen-mode-android-and-ios"></a>Nézet maximalizálása teljes képernyős módban (Android és iOS)
+
+Egy új gombbal szabályozhatja, hogy mikor szeretné kiemelni az adatokat a jelentés fejlécének és láblécének eltávolításával, a lehető legtöbb helyet biztosítva a jelentés megtekintéséhez.
 
 ## <a name="march-2019"></a>2019. március
 
@@ -42,20 +71,20 @@ Közvetlenül az alkalmazásból érheti el a más cégek által Önnel megoszto
 
 ### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>A Windows bemutató módjának továbbfejlesztése diavetítéssel (Windows)
 
-A [Diavetítés](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) nyilvános megjeleníti, az Office használhatja a Power BI jelentések futtatásához, amelyek a rendszer automatikusan teljes képernyős rotálása jelentésoldalak között.  
+[Diavetítés](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) használatával az irodában használt nyilvános kijelzőkön jeleníthet meg Power BI-jelentéseket teljes képernyős módban, a jelentésoldalak közötti automatikusan lapozással.  
 
-### <a name="supporting-pbi-rs-reports-over-adfs-and-wap-configuration-ios-only"></a>PBI-RS jelentéseket támogató keresztül AD FS és WAP-konfigurációja (csak iOS)
+### <a name="supporting-pbi-rs-reports-over-adfs-and-wap-configuration-ios-only"></a>PBI-RS-jelentések támogatása ADFS- és WAP-konfiguráción (csak iOS)
 
-A Power BI jelentéseknél (PBIX) keresztül AD FS konfigurációs PBI-RS-ban üzemeltetett Power bi-ban iOS-alkalmazás most már elérhetők.
+A PBI-RS-ben ADFS-konfigurációval üzemeltetett Power BI-jelentések mostantól elérhetők iOS-es Power BI-alkalmazásból.
 
-### <a name="enabling-single-tap-interaction-with-report-visuals"></a>Egyetlen koppintással interakció jelentésvizualizációk engedélyezése
+### <a name="enabling-single-tap-interaction-with-report-visuals"></a>Jelentésvizualizációk egykoppintásos kezelésének engedélyezése
 
-A jelentés kapcsolati úgy módosítottuk, ezért azt csak egy koppintson egy vizualizációra, gomb vagy a szeletelő az adatok azonnal kezeléséhez szükséges. Felhasználóknak már nem kell koppintson egy vizualizációra, válassza ki, és koppintson rá ismét interaktívan, egyetlen koppintással azokat is elvégzi.
+Módosítottuk a jelentések kezelését, így elég egyszer koppintani egy vizualizációra, gombra vagy szeletelőre, hogy kezelni tudja annak adatait. A felhasználóknak többé nem kell egy vizualizációra koppintva kijelölni azt, majd újra koppintani, hogy kezelni tudják. Egy koppintással mindkettő elérhető.
 
-![Egyetlen koppintással interakció](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
+![Egykoppintásos kezelés](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
 
 > [!NOTE]
-> Kapcsolja be ezt a viselkedést az alkalmazás-beállítás, a meglévő felhasználók kell. További információkért lásd: a [konfigurálása egyetlen koppintással jelentés kapcsolati](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) cikk.
+> A meglévő felhasználóknak ezt a viselkedést az alkalmazás beállításaiban kell bekapcsolniuk. További információt a [Jelentés egykoppintásos kezelésének konfigurálása](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) című cikkben talál.
 
 ## <a name="january---february-2019"></a>2019. január-február
  
