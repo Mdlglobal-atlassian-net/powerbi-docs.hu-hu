@@ -1,279 +1,327 @@
 ---
 title: Adatfrissítés a Power BI-ban
-description: Adatfrissítés a Power BI-ban
+description: Ez a cikk elméleti szinten ismerteti a Power BI adatfrissítési funkcióit és azok függőségeit.
 author: mgblythe
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 149f6963cc59c70342bee824579f6ae4c97a16d1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 24a559fe35291c5256a5280b3c7d63d110868f4a
+ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60974363"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67039115"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
-A jó döntések meghozatalában gyakran kritikus fontosságú a legfrissebb adatok lekérése. Már valószínűleg ismeri a Power BI Adatok lekérése funkcióját, amellyel adatokhoz csatlakozhat, illetve adatokat tölthet fel, és biztosan létrehozott már jelentéseket és egy irányítópultot is. Ezután célszerű meggyőződni arról, hogy az adatok valóban frissek és hibátlanok.
 
-Sok esetben ehhez nem kell tennie semmit. Egyes adatok, például a Salesforce vagy a Marketo tartalomcsomagjai automatikusan frissülnek. Ha a kapcsolata élő kapcsolatot vagy DirectQueryt alkalmaz, az adatok naprakészek maradnak. Azonban más esetekben, például külső online vagy helyszíni adatforráshoz csatlakozó Excel-munkafüzetek vagy Power BI Desktop-fájlok esetén kézi frissítésre vagy frissítésütemezésre van szükség ahhoz, hogy a Power BI frissíthesse a jelentések és irányítópultok adatait.
+A Power BI segítségével gyorsan eljuthat az adatoktól az elemzési eredményeken át a cselekvésig, ugyanakkor gondoskodnia kell arról, hogy a Power BI-jelentések és irányítópultok adatai naprakészek legyenek. Az adatfrissítés módjának ismerete gyakran elengedhetetlen a pontos eredmények biztosításához.
 
-Ez a cikk (és néhány másik) segít megérteni a Power BI adatfrissítésének működését és az ehhez szükséges teendőket attól függetlenül, hogy Önnek kell-e frissítésütemezést beállítania.
+Ez a cikk elméleti szinten ismerteti a Power BI adatfrissítési funkcióit és azok függőségeit. Emellett ajánlott eljárásokat és tippeket is kínál a gyakori frissítési problémák elkerüléséhez. A cikk tartalma megalapozza az adatfrissítés működésének megértését. Az adatfrissítés konfigurálásának célzott, lépésenkénti ismertetését a Következő lépések szakaszban, a cikk végén felsorolt oktatóanyagokban és útmutatókban találhatja meg.
 
 ## <a name="understanding-data-refresh"></a>Az adatfrissítés ismertetése
-A frissítés beállítása előtt fontos megérteni a frissítendő adatok mivoltát és azok forrását.
 
-Az *adatforrás* a jelentésekben és az irányítópultokon található adatok forrása. Ez lehet például online szolgáltatás, mint a Google Analytics vagy a QuickBooks, egy felhőbeli adatbázis, mint az Azure SQL Database, vagy a cége egy helyi számítógépén vagy kiszolgálóján tárolt adatbázis vagy fájl. Ezek mind adatforrások. Az adatforrás típusa határozza meg az adatfrissítés módját. Az egyes adatforrástípusok frissítéséről részletesen a [Mit lehet frissíteni?](#what-can-be-refreshed) című szakaszban írunk.
+Az adatok frissítésekor a Power BI-nak le kell kérdeznie a mögöttes adatforrásokat, esetleg be kell töltenie a forrást egy adathalmazba, hogy frissíthesse az éppen frissített adathalmazra épülő jelentések és irányítópultok vizualizációit. A teljes folyamat az alábbi szakaszokban kifejtettek szerint az adathalmazok tárolási módjától függően több fázisból áll.
 
-Amikor az Adatok lekérése funkcióval egy tartalomcsomaghoz vagy fájlhoz kapcsolódik, és adatokat tölt fel, vagy amikor egy élő adatforráshoz kapcsolódik, akkor a Power BI-ban automatikusan létrejön egy *adatkészlet*. A Power BI Desktopban és az Excel 2016-ban közzé is teheti a fájlt közvetlenül a Power BI szolgáltatásban, ami pont úgy működik, mint az Adatok lekérése funkció.
+Az adathalmazok, jelentések és irányítópultok Power BI általi frissítésének megértéséhez tisztában kell lennie az alábbi fogalmakkal:
 
-Bármelyik esetet választja, az adatkészlet a Power BI Saját munkaterület vagy Saját csoport területének tárolóiban jön létre. Az adatkészletek melletti **három pontra (…)**  kattintva részletesen megtekintheti egy jelentésben az adatokat, szerkesztheti a beállításokat, és beállíthatja a frissítést.
+- **Tárolási módok és adathalmaz-típusok**: A Power BI által támogatott tárolási módok és adathalmaz-típusok különböző frissítési követelményekkel járnak. Dönthet úgy, hogy újra importálja az adatokat a Power BI-ba, hogy lássa az összes változást, vagy lekérdezheti az adatokat közvetlenül a forrásnál is.
+- **Frissítési típusok a Power BI-ban**: A különböző frissítési típusok ismerete az adathalmaz sajátosságaitól függetlenül is segíthet megérteni, hogy mit végez el a Power BI a frissítési műveletek során. Ezek a részletek a tárolási mód jellemzőivel együtt segítenek megérteni, hogy mit tesz pontosan a Power BI, amikor Ön az **Azonnali frissítés** lehetőséget választja egy adathalmazhoz.
 
-![](media/refresh-data/dataset-menu.png)
+### <a name="storage-modes-and-dataset-types"></a>Tárolási módok és adathalmaz-típusok
 
-Az adatkészletek egy vagy több adatforrásból kérhetik le az adatokat. A Power BI Desktoppal például lekérhet adatokat egy SQL-adatbázisból, más típusú adatokat pedig egy online OData-csatornáról. Amikor közzéteszi a fájlt a Power BI-ban, egyetlen adatkészlet jön létre, az adatforrásai azonban az SQL-adatbázisra és az OData-csatornára is mutatnak majd.
+A Power BI-adathalmazok az alábbi módszerekkel férhetnek hozzá különböző adatforrások adataihoz. További információt a [Tárolási mód a Power BI Desktopban](desktop-storage-mode.md) című cikkben talál.
 
-Az adatkészletek az adatforrást leíró információt, az adatforrásbeli hitelesítő adatokat, legtöbb esetben pedig az adatoknak egy, az adatforrásból másolt részhalmazát is tartalmazzák. Amikor vizualizációkat hoz létre a jelentésekben és az irányítópultokon, az adatkészlet adataival dolgozik. Élő kapcsolat (például az Azure SQL Database) esetén az adatkészlet határozza meg az adatforrásból megjelenő adatokat. Ha élő kapcsolattal kapcsolódik az Analysis Services szolgáltatáshoz, az adatkészlet definíciója közvetlenül az Analysis Services szolgáltatástól érkezik.
+- Importálás mód
+- DirectQuery mód
+- LiveConnect mód
+- Leküldés mód
 
-> *Az adatok frissítésekor az adatforrásból a Power BI-ban tárolt adatkészlet adatai frissíti. Ez a frissítés teljes, és nem fokozatos.*
-> 
-> 
+Az alábbi diagram a különböző adatfolyamokat szemlélteti a tárolási mód alapján. A leglényegesebb szempont, hogy csak az Importálás módú adathalmazok igénylik a forrásadatok frissítését. Ez a frissítés azért szükséges, mert az ilyen típusú adathalmaz importálja az adatokat az adatforrásból, és az importált adatok rendszeresen vagy alkalmi jelleggel frissítve lehetnek. A DirectQuery módú adathalmazok, és az Analysis Serviceshez LiveConnect módban kapcsolódó adathalmazok nem importálnak adatokat. Ezek minden felhasználói beavatkozáskor lekérdezik a mögöttes adatforrást. A Leküldés módú adathalmazok egyetlen adatforráshoz sem férnek hozzá közvetlenül, hanem a Power BI-ba leküldött adatokra várnak. Az adathalmaz-frissítés követelményei a tárolási módtól és az adathalmaz típusától függően változnak.
 
-Amikor egy adatkészlet adatait frissíti – akár az Azonnali frissítés, akár egy ütemezett frissítés segítségével –, a Power BI az adatkészlet információival csatlakozik a definiált adatforrásokhoz, lekéri a frissített adatokat, majd betölti azokat az adatkészletbe. A jelentések és irányítópultok olyan vizualizációi, amelyek ezeken az adatokon alapulnak, automatikusan frissülnek.
+![Tárolási módok és adathalmaz-típusok](media/refresh-data/storage-modes-dataset-types-diagram.png)
 
-Mielőtt továbbmennénk, fontos leszögeznünk valamit:
+#### <a name="datasets-in-import-mode"></a>Importálás módú adathalmazok
 
-> *Függetlenül attól, hogy milyen gyakran frissíti az adatkészletet, vagy milyen gyakran tekinti meg az élő adatokat, az adatforrás adatainak kell először naprakésznek lenniük.*
-> 
-> 
+A Power BI az eredeti adatforrásokból az adathalmazba importálja az adatokat. A Power BI-jelentések és irányítópultok adathalmazra irányuló lekérdezései az importált táblákból és oszlopokból adják vissza az eredményeket. Egy ilyen adathalmaz pillanatképszerű másolatként is felfogható. Mivel a Power BI másolatot készít az adatokról, az adathalmazt frissíteni kell, hogy beolvassa a változásokat a mögöttes adatforrásokból.
 
-A legtöbb cég naponta egyszer dolgozza fel az adatait, általában éjszaka. Ha egy olyan adatkészlet frissítését ütemezi, amelyet egy helyszíni adatbázishoz csatlakozó Power BI Desktop-fájlból hoztak létre, az informatikai részleg pedig ezt az SQL-adatbázist dolgozza fel esténként egyszer, csak napi egyszeri futásra kell beállítania az ütemezett frissítést. Ez történhet például az adatbázis feldolgozása után, de a munkaidő kezdete előtt. Természetesen nem minden eset ehhez hasonló. A Power BI szolgáltatással számos módon csatlakozhat olyan adatforrásokhoz, amelyek gyakran vagy valós időben frissülnek.
+Mivel a Power BI gyorsítótárazza az adatokat, az Importálás módú adathalmazok mérete jelentős lehet. Az alábbi táblázat a maximális adathalmaz-méretet tartalmazza kapacitásonként. Érdemes jóval a maximális adathalmaz-méret alatt maradni az olyan frissítési problémák elkerülése érdekében, amelyek akkor lépnek fel, ha az adathalmaz a rendelkezésre álló erőforrásoknál többet igényelne a frissítési művelet során.
 
-## <a name="types-of-refresh"></a>Frissítéstípusok
-A Power BI négy fő frissítéstípussal rendelkezik. Csomagfrissítés, modell-/adatfrissítés, csempefrissítés és vizuálistároló-frissítés.
+| Kapacitástípus | Maximális adathalmaz-méret |
+| --- | --- |
+| Megosztott, A1, A2 vagy A3 | 1 GB |
+| A4 vagy P1 | 3 GB |
+| A4 vagy P2 | 6 GB |
+| A6 vagy P3 | 10 GB |
+| | |
 
-### <a name="package-refresh"></a>Csomagfrissítés
-Ez szinkronizálja a Power BI Desktop- vagy Excel-fájlt a Power BI és a OneDrive vagy a SharePoint Online között. Ez a funkció nem kér le adatot az eredeti adatforrásból. A Power BI adatkészlete csak a OneDrive-ban vagy a SharePoint Online-ban található fájl adataival frissül.
+#### <a name="datasets-in-directqueryliveconnect-mode"></a>DirectQuery/LiveConnect módú adathalmazok
 
-![](media/refresh-data/package-refresh.png)
+DirectQuery/LiveConnect módban működő kapcsolatokban a Power BI nem importál adatokat. Ehelyett az adathalmaz ad vissza eredményeket a mögöttes adatforrásból, amikor egy jelentés vagy irányítópult lekérdezi az adathalmazt. A Power BI átalakítja és az adatforráshoz továbbítja a lekérdezéseket.
 
-### <a name="modeldata-refresh"></a>Modell-/adatfrissítés
-Ez a Power BI adatkészletének frissítése az eredeti adatforrás adataival. Ezt ütemezheti, de azonnal is végrehajthatja. Ehhez a funkcióhoz egy átjáró szükséges a helyszíni adatforrásokhoz.
+Bár a DirectQuery mód és LiveConnect mód hasonlít abban, hogy a Power BI a forráshoz továbbítja a lekérdezéseket, fontos megjegyezni, hogy LiveConnect módban a Power BI-nak nem kell átalakítania a lekérdezéseket. A lekérdezéseket közvetlenül, a megosztott kapacitás vagy prémium szintű kapacitás erőforrásainak felhasználása nélkül megkapja az adatbázist üzemeltető Analysis Services-példány.
 
-### <a name="tile-refresh"></a>Csempefrissítés
-A csempefrissítés frissíti a gyorsítótár csempevizualizációit az irányítópulton az adatok módosulása után. Ez körülbelül 15 percenként történik meg. A csempefrissítést kényszerítheti is az irányítópult jobb felső sarkában található **három pontra (…)** , majd a **Az irányítópult csempéinek frissítése** lehetőségre kattintva.
+Mivel a Power BI nem importálja az adatokat, adatfrissítés futtatására nincs szükség. A Power BI azonban végez csempefrissítéseket és esetleg jelentésfrissítéseket is a frissítési típusokról szóló következő szakaszban leírtak szerint. A csempék irányítópultra rögzített jelentésvizualizációk, és az irányítópultok csempéinek frissítése körülbelül óránként megtörténik, hogy a csempéken naprakész eredmények legyenek láthatók. Az ütemezés az adathalmaz beállításaiban, az alábbi képernyőképen látható módon módosítható, vagy manuálisan kikényszeríthető az irányítópult frissítése az **Azonnali frissítés** lehetőség használatával.
 
-![](media/refresh-data/dashboard-tile-refresh.png)
-
-További információ a gyakori csempefrissítési hibákról: [Csempékkel kapcsolatos hibák elhárítása](refresh-troubleshooting-tile-errors.md).
-
-### <a name="visual-container-refresh"></a>Vizuálistároló-frissítés
-A vizuális tároló frissítése frissíti a jelentés gyorsítótárazott vizualizációit az adatok módosulása után.
-
-## <a name="what-can-be-refreshed"></a>Mit lehet frissíteni?
-A Power BI-ban általában az Adatok lekérése paranccsal importál adatokat egy helyi meghajtó, a OneDrive vagy a SharePoint Online egy fájljából, illetve ezzel tesz közzé jelentéseket a Power BI Desktopból, valamint csatlakozik közvetlenül egy felhőbeli céges adatbázishoz. A Power BI szinte minden adata frissíthető, ennek szükségessége azonban attól függ, hogy hogyan jött létre az adatkészlet, valamint milyen adatforrásokhoz kapcsolódik. Nézzük, hogyan zajlik az adatfrissítés.
-
-Mielőtt továbbmennénk, ismertetünk néhány fontos definíciót:
-
-**Automatikus frissítés** – Ez azt jelenti, hogy nincs szükség felhasználói konfigurációra az adatkészlet rendszeres frissítéséhez. Az adatfrissítés beállításait a Power BI konfigurálja. Online szolgáltatók esetében a frissítés általában naponta egyszer történik. A OneDrive-ról betöltött fájlok esetében az automatikus frissítés körülbelül óránként történik az olyan adatoknál, amelyek nem egy külső adatforrásból származnak. Bár konfigurálhat különböző frissítésütemezési beállításokat és frissíthet manuálisan, erre valószínűleg nem lesz szüksége.
-
-**Felhasználó által konfigurált kézi vagy ütemezett frissítés** – Ez azt jelenti, hogy kézzel frissíthet egy adatkészletet az Azonnali frissítés funkcióval, vagy beállíthat egy frissítésütemezést a Frissítés ütemezése funkcióval az adatkészlet beállításai között. Ez a frissítéstípus kötelező az olyan Power BI Desktop-fájlok és Excel-munkafüzeten esetében, amelyek külső online és helyszíni adatforrásokhoz csatlakoznak.
+![Frissítési ütemezés](media/refresh-data/refresh-schedule.png)
 
 > [!NOTE]
-> Az ütemezett frissítés idejének konfigurálásakor előfordulhat egy egy órás késés.
-> 
-> 
+> Az **Adathalmazok** lap **Ütemezett gyorsítótár-frissítés** szakasza Importálás módú adathalmazokhoz nem érhető el. Ezek az adathalmazok nem igényelnek külön csempefrissítést, mert a Power BI automatikusan frissíti a csempéket az ütemezett vagy igény szerinti adatfrissítések során.
 
-**Élő/DirectQuery** – Ez azt jelenti, hogy élő kapcsolat található a Power BI és az adatforrás között. A helyszíni adatforrások esetében a rendszergazdáknak konfigurálniuk kell egy adatforrást a céges átjáróban, felhasználói műveletekre azonban nincs szükség.
+#### <a name="push-datasets"></a>Leküldéses adathalmazok
 
-> [!NOTE]
-> A teljesítmény növelése érdekében a DirectQuery segítségével csatlakoztatott adatokat tartalmazó irányítópultok automatikusan frissülnek. A csempéket kézzel is frissítheti a **Továbbiak** menüben.
-> 
-> 
-
-## <a name="local-files-and-files-on-onedrive-or-sharepoint-online"></a>Helyi fájlok és a OneDrive-ban vagy a SharePoint Online-ban tárolt fájlok
-Az adatfrissítés az olyan Power BI Desktop-fájlok és Excel-munkafüzeten esetében támogatott, amelyek külső online vagy helyszíni adatforrásokhoz csatlakoznak. Ez csak a Power BI adatkészletének adatait frissíti, a helyi fájlt nem.
-
-A fájlok a OneDrive-ban vagy a SharePoint Online-ban való tárolása, valamint a Power BI-ból való kapcsolódás hozzájuk jelentős rugalmasságot nyújt. Azonban ezt a legnehezebb megérteni is. A OneDrive-ban vagy a SharePoint Online-ban tárolt fájlok ütemezett frissítése eltér a csomagfrissítéstől. További információt a [Frissítéstípusok](#types-of-refresh) szakaszban találhat.
-
-### <a name="power-bi-desktop-file"></a>Power BI Desktop-fájl
-
-| **Adatforrás** | **Automatikus frissítés** | **Felhasználó által konfigurált kézi vagy ütemezett frissítés** | **Átjáró szükséges** |
-| --- | --- | --- | --- |
-| A menüszalagon található Adatok lekérése funkcióval csatlakozhat az adatokhoz, valamint lekérheti azokat bármelyik listázott online adatforrásból. |Nem |Igen |Nem (lásd alább) |
-| Az Adatok lekérése funkcióval csatlakozhat egy Analysis Services-adatforráshoz, és részletesen megtekintheti az adatait. |Igen |Nem |Igen |
-| Az Adatok lekérése funkcióval csatlakozhat egy támogatott helyszíni DirectQuery-adatforráshoz, és részletesen megtekintheti az adatait. |Igen |Nem |Igen |
-| Az Adatok lekérése funkcióval csatlakozhat az Azure SQL Database, az Azure SQL Data Warehouse és az Azure HDInsight Spark szolgáltatásokhoz, és lekérhet innen adatokat. |Igen |Igen |Nem |
-| Az Adatok lekérése funkcióval csatlakozhat bármelyik listázott helyszíni adatforráshoz, és lekérhet innen adatokat. Ez alól kivételek a Hadoop-fájlok (HDFS) és a Microsoft Exchange. |Nem |Igen |Igen |
+A Leküldés módú adathalmazok nem tartalmaznak adatforrás-definíciót, ezért nem igényelnek adatfrissítést a Power BI-ban. A frissítésükhöz olyan külső szolgáltatáson vagy folyamaton keresztül kell leküldeni az adatokat az adathalmazba, mint az Azure Stream Analytics. Ezt a módszert gyakran alkalmazzák a Power BI-jal végzett valós idejű elemzésekhez. A Power BI ilyenkor is végez gyorsítótár-frissítéseket a leküldéses adathalmazra épülő csempékhez. Részletes útmutatást az [Oktatóanyag: A Stream Analytics és a Power BI: Valós idejű elemzési irányítópult streamelési adatokhoz](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
 
 > [!NOTE]
-> Ha a [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) függvényt használja, szüksége lesz egy átjáróra, ha az adatkészletet vagy a jelentést 2016. november 18. után újra közzétette.
-> 
-> 
+> A Leküldés módra vonatkozik néhány, [A Power BI REST API korlátozásai](developer/api-rest-api-limitations.md) című cikkben dokumentált korlátozása.
 
-További információ: [Power BI Desktop-fájlból létrehozott adatkészlet frissítése a OneDrive-ban](refresh-desktop-file-onedrive.md).
+### <a name="power-bi-refresh-types"></a>Frissítési típusok a Power BI-ban
 
-### <a name="excel-workbook"></a>Excel-munkafüzet
+A Power BI frissítési műveletei többféle frissítéstípusból állhatnak. Ilyen az adatfrissítés, a OneDrive-frissítés, a lekérdezési gyorsítótárak frissítése, a csempefrissítés és a jelentésbeli vizualizációk frissítése. Bár a Power BI automatikusan határozza meg az egy adott adathalmazhoz szükséges frissítési lépéseket, érdemes tudni, hogy ezek hogyan járulnak hozzá a frissítési művelet összetettségéhez és időtartamához. Gyors áttekintést nyújt az alábbi táblázat.
 
-| **Adatforrás** | **Automatikus frissítés** | **Felhasználó által konfigurált kézi vagy ütemezett frissítés** | **Átjáró szükséges** |
-| --- | --- | --- | --- |
-| Az Excel adatmodelljébe be nem töltött munkalap adattáblái. |Igen, óránként *(csak a OneDrive/SharePoint Online esetében* |Csak kézzel *(csak a OneDrive/SharePoint Online esetében* |Nem |
-| Az Excel adatmodelljének egyik táblájához csatolt munkalap adattáblái. |Igen, óránként *(csak a OneDrive/SharePoint Online esetében* |Csak kézzel *(csak a OneDrive/SharePoint Online esetében* |Nem |
-| A Power Query* szolgáltatással csatlakozhat bármelyik listázott online adatforráshoz, és lekérhet innen adatokat, majd betöltheti őket az Excel adatmodelljébe. |Nem |Igen |Nem |
-| A Power Query* szolgáltatással csatlakozhat bármelyik listázott helyszíni adatforráshoz, és lekérhet innen adatokat, majd betöltheti őket az Excel adatmodelljébe. Ez alól kivételek a Hadoop-fájlok (HDFS) és a Microsoft Exchange. |Nem |Igen |Igen |
-| A Power Pivot szolgáltatással csatlakozhat bármelyik listázott online adatforráshoz, és lekérhet innen adatokat, majd betöltheti őket az Excel adatmodelljébe. |Nem |Igen |Nem |
-| A Power Pivot szolgáltatással csatlakozhat bármelyik listázott helyszíni adatforráshoz, és lekérhet innen adatokat, majd betöltheti őket az Excel adatmodelljébe. |Nem |Igen |Igen |
+| Tárolási mód | Adatfrissítés | OneDrive-frissítés | Lekérdezési gyorsítótárak | Csempefrissítés | Jelentésvizualizációk |
+| --- | --- | --- | --- | --- | --- |
+| Importálás | Ütemezett és igény szerinti | Igen, csatlakoztatott adathalmazokhoz | Ha engedélyezve van prémium szintű kapacitásban | Automatikus és igény szerinti | Nem |
+| DirectQuery | Nem értelmezhető | Igen, csatlakoztatott adathalmazokhoz | Ha engedélyezve van prémium szintű kapacitásban | Automatikus és igény szerinti | Nem |
+| LiveConnect | Nem értelmezhető | Igen, csatlakoztatott adathalmazokhoz | Ha engedélyezve van prémium szintű kapacitásban | Automatikus és igény szerinti | Igen |
+| Leküldés | Nem értelmezhető | Nem értelmezhető | Nem praktikus | Automatikus és igény szerinti | Nem |
+| | | | | | |
 
-*\* A Power Query az Excel 2016-ban Adatok beolvasása és átalakítása néven található meg.*
+#### <a name="data-refresh"></a>Adatfrissítés
 
-További részletes információ: [A OneDrive-on található Excel-munkafüzetből létrehozott adatkészlet frissítése](refresh-excel-file-onedrive.md).
+A Power BI-felhasználók szempontjából az adatfrissítés általában azzal jár, hogy ütemezetten vagy igény szerint adatokat importálnak az eredeti adatforrásokból egy adathalmazba. Naponta több adathalmaz-frissítés is végrehajtható, és szükséges is lehet, ha a mögöttes adatforrás gyakran módosul. A Power BI megosztott kapacitásban lévő adathalmazokon naponta legfeljebb nyolc frissítést engedélyez. Ha az adathalmaz prémium szintű kapacitásban van, naponta legfeljebb 48 frissítés hajtható végre. További információt a cikk egy későbbi részében, az Ütemezett frissítés konfigurálása című szakaszban talál.
 
-### <a name="comma-separated-value-csv-file-on-onedrive-or-sharepoint-online"></a>Vesszővel tagolt adatfájl (.csv) a OneDrive-ban vagy a SharePoint Online-ban
+Azt is fontos hangsúlyozni, hogy a napi frissítések számának korlátja az ütemezett és igény szerinti frissítések számának összegére vonatkozik. Igény szerinti frissítést az adathalmaz menüjének **Azonnali frissítés** elemét választva indíthat az alábbi képernyőképen látható módon. Adatfrissítést programozottan is aktiválhat a Power BI REST API használatával. Ha saját frissítési megoldást szeretne készíteni, az [Adathalmazok – Adathalmaz frissítése](/rest/api/power-bi/datasets/refreshdataset) című cikkből tájékozódhat.
 
-| **Adatforrás** | **Automatikus frissítés** | **Felhasználó által konfigurált kézi vagy ütemezett frissítés** | **Átjáró szükséges** |
-| --- | --- | --- | --- |
-| Egyszerű, vesszővel tagolt adatfájl (.csv) |Igen, óránként |Csak kézzel |Nem |
-
-További részletes információ: [A OneDrive-ban tárolt, vesszővel tagolt (.csv) fájlból létrehozott adatkészlet frissítése](refresh-csv-file-onedrive.md).
-
-## <a name="content-packs"></a>Tartalomcsomagok
-A Power BI kétféle tartalomcsomaggal rendelkezik:
-
-**Online szolgáltatások tartalomcsomagjai**: például Adobe Analytics, SalesForce és Dynamics CRM Online. Az online szolgáltatásokból létrehozott adatkészletek naponta egyszer automatikusan frissülnek. Bár ez valószínűleg nem szükséges, kézzel is frissítheti őket, vagy beállíthat egy frissítésütemezést. Mivel az online szolgáltatások a felhőben találhatók, nincs szükség átjáróra.
-
-**Céges tartalomcsomagok**: a saját cég felhasználói által létrehozott és megosztott csomagok. A tartalomcsomag fogyasztói nem állíthatnak be frissítésütemezést vagy kézi frissítést. Csak a tartalomcsomag készítője állíthatja be a csomag adatkészleteinek frissítését. Az adatkészlet frissítési beállításai öröklődnek.
-
-### <a name="content-packs-from-online-services"></a>Online szolgáltatások tartalomcsomagjai
-
-| **Adatforrás** | **Automatikus frissítés** | **Felhasználó által konfigurált kézi vagy ütemezett frissítés** | **Átjáró szükséges** |
-| --- | --- | --- | --- |
-| Online szolgáltatások az Adatok lekérése &gt; Szolgáltatások területen |Igen |Igen |Nem |
-
-### <a name="organizational-content-packs"></a>Céges tartalomcsomagok
-A céges tartalomcsomagok adatkészleteinek frissítési jellemzői az adatkészlettől függnek. Ehhez lásd fentebb a helyi fájlok, a OneDrive és a SharePoint Online fájljaival kapcsolatos információkat.
-
-További információ: [Céges tartalomcsomagok: bevezetés](service-organizational-content-pack-introduction.md).
-
-## <a name="live-connections-and-directquery-to-on-premises-data-sources"></a>Élő kapcsolatok és DirectQuery a helyszíni adatforrásokhoz
-A Helyszíni adatátjáróval a Power BI felületéről a helyszíni adatforrások számára küldhet lekérdezéseket. Amikor egy vizualizációt használ, a lekérdezések a Power BI-ból közvetlenül az adatbázisba érkeznek. A frissített adatok ezután visszatérnek, a vizualizációk pedig frissülnek. Mivel közvetlen kapcsolat van a Power BI és az adatbázis között, nincs szükség frissítésütemezésre.
-
-Amikor egy SQL Service Analysis Services (SSAS) adatforráshoz csatlakozik élő kapcsolattal, a DirectQueryvel ellentétben az élő kapcsolat a gyorsítótárazás ellenében, a jelentés betöltésekor is futhat. Ez a viselkedés javítja a jelentés betöltési teljesítményét. Az SSAS-adatforrás legfrissebb adatait lekérheti a **frissítés** gombbal. Az SSAS-adatforrások tulajdonosai konfigurálhatják az adatkészlet ütemezett gyorsítótár-frissítésének gyakoriságát, így biztosíthatják, hogy a jelentések igény szerint frissüljenek. 
-
-Amikor egy adatforrást konfigurál a Helyszíni adatátjáróval, az adatforrást használhatja ütemezett frissítési lehetőségként, ahelyett, hogy a személyes átjárót használná.
+![Azonnali frissítés](media/refresh-data/refresh-now.png)
 
 > [!NOTE]
-> Ha az adatkészletet egy élő vagy DirectQuery-kapcsolathoz konfigurálta, az adatkészletek körülbelül óránként, vagy az adatok használatakor frissülnek. A *frissítési gyakoriságot* kézzel állíthatja be a Power BI *Ütemezett gyorsítótár-frissítés* beállításában.
-> 
-> 
+> Az adatfrissítéseknek kevesebb mint 2 óra alatt be kell fejeződniük. Ha adathalmaza ennél hosszabb frissítési műveleteket igényel, fontolja meg az adathalmaz áthelyezését prémium szintű kapacitásba. Prémium szinten a frissítés maximális időtartama 5 óra.
 
-| **Adatforrás** | **Élő lekérdezés/DirectQuery** | **Felhasználó által konfigurált kézi vagy ütemezett frissítés** | **Átjáró szükséges** |
-| --- | --- | --- | --- |
-| Analysis Services – táblázatos |Igen |Igen |Igen |
-| Többdimenziós Analysis Services |Igen |Igen |Igen |
-| SQL Server |Igen |Igen |Igen |
-| SAP HANA |Igen |Igen |Igen |
-| Oracle |Igen |Igen |Igen |
-| Teradata |Igen |Igen |Igen |
+#### <a name="onedrive-refresh"></a>OneDrive-frissítés
 
-További információt a [helyszíni adatátjárókkal](service-gateway-onprem.md) foglalkozó témakörben találhat.
+Ha a OneDrive-ban vagy a SharePoint Online-ban tárolt Power BI Desktop-fájl, Excel-munkafüzet vagy vesszővel tagolt (.csv) adatfájl alapján hozott létre adathalmazokat és jelentéseket, akkor a Power BI egy másik típusú frissítést, úgynevezett OneDrive-frissítést hajt végre. További információ: [Adatok beolvasása a Power BI-ba fájlokból](service-get-data-from-files.md).
 
-## <a name="databases-in-the-cloud"></a>Felhőadatbázisok
-A DirectQueryvel közvetlen kapcsolat jön létre a Power BI és a felhőadatbázis között. Amikor egy vizualizációt használ, a lekérdezések a Power BI-ból közvetlenül az adatbázisba érkeznek. A frissített adatok ezután visszatérnek, a vizualizációk pedig frissülnek. És mivel mind a Power BI, mind az adatforrás a felhőben található, nincs szükség személyes átjáróra.
+Az olyan adathalmaz-frissítésekkel ellentétben, amikor a Power BI egy adatforrásól importál adatokat egy adathalmazba, a OneDrive-frissítés az adathalmazokat és jelentéseket szinkronizálja azok forrásfájljaival. A Power BI alapértelmezés szerint körülbelül óránként ellenőrzi, hogy egy OneDrive-ban vagy SharePoint Online-ban tárolt fájlhoz csatlakozó adathalmaz igényel-e szinkronizálást. A múltbeli szinkronizálási ciklusokat a frissítési előzmények OneDrive lapján tekintheti át. Az alábbi képernyőképen egy mintaadathalmaz egy befejezett szinkronizálási ciklusa látható.
 
-Ha a vizualizációk esetében nincs felhasználói tevékenység, az adatok körülbelül óránként automatikusan frissülnek. A frissítési gyakoriságot az *Ütemezett gyorsítótár-frissítés* beállítással módosíthatja.
+![Frissítési előzmények](media/refresh-data/refresh-history.png)
 
-A gyakoriság beállításához kattintson a Power BI szolgáltatás jobb felső sarkában található **fogaskerék** ikonra, majd a **Beállítások** lehetőségre.
+Ahogy a fenti képernyőképen látható, a Power BI **Ütemezett** frissítésként azonosította a OneDrive-frissítést, de a frissítési időköz nem konfigurálható. A OneDrive-frissítés csak az adathalmaz beállításaiban kapcsolható ki. A frissítést akkor hasznos kikapcsolni, ha nem szeretné, hogy a Power BI-beli adathalmazai és jelentései automatikusan átvegyék a forrásfájlokban történt módosításokat.
 
-![](media/refresh-data/refresh-data_2.png)
+Lényeges, hogy az adathalmaz beállításainak oldalán csak akkor jelenik meg a **OneDrive-beli hitelesítő adatok** és a **OneDrive-frissítés** szakasz, ha az adathalmaz egy OneDrive- vagy SharePoint Online-beli fájlhoz csatlakozik, ahogyan az alábbi képernyőképen látható. Olyan adathalmazoknál, amelyek nem csatlakoznak a OneDrive-ban vagy a SharePoint Online-ban tárolt forrásfájlokhoz, ezek a szakaszok nem láthatók.
 
-Ekkor megjelenik a **Beállítások** lap, ahol kiválaszthatja, melyik adatkészlet esetében szeretné módosítani a gyakoriságot. A lapon kattintson fent az **Adatkészletek** fülre.
+![OneDrive-beli hitelesítő adatok és OneDrive-frissítés](media/refresh-data/onedrive-credentials-refresh.png)
 
-![](media/refresh-data/refresh-data_3.png)
+Ha egy adathalmazhoz letiltja a OneDrive-frissítést, igény szerint továbbra is szinkronizálhatja az adathalmazt az adathalmaz **Azonnali frissítés** menüpontjával. Az igény szerinti frissítés részeként a Power BI ellenőrzi, hogy a OneDrive-ban vagy a SharePoint Online-ban tárolt forrásfájl újabb-e a Power BI-beli adathalmaznál, és ha így van, szinkronizálja az adathalmazt. A **Frissítési előzmények** között ezek a műveletek igény szerinti frissítésekként jelennek meg a **OneDrive** lapon.
 
-Válassza ki az adatkészletet. Ekkor a jobb oldali ablaktáblában megjelennek az elérhető beállítások. A DirectQuery/élő kapcsolathoz a frissítési gyakoriságot az alábbi illusztrációnak megfelelően a legördülő menüből választhatja ki. Ez 15 percenkénti frissítéstől heti egy alkalomig terjedhet.
+Ne feledje, hogy a OneDrive-frissítés nem kér le adatokat az eredeti adatforrásokból. A OneDrive-frissítés csak a .pbix-, .xlsx- vagy .csv-fájlokból származó metaadatokkal és adatokkal frissíti a Power BI-beli erőforrásokat, ahogyan az alábbi ábrán látható. Annak érdekében, hogy az adathalmaz az adatforrások legfrissebb adataival rendelkezzen, a Power BI az igény szerinti frissítsek részeként adatfrissítést is indít. Erről meggyőződhet a **Frissítési előzményekben**, ha az **Ütemezett** lapra vált.
 
-![](media/refresh-data/refresh-data_1.png)
+![OneDrive-frissítés diagramja](media/refresh-data/onedrive-refresh-diagram.png)
 
-| **Adatforrás** | **Élő lekérdezés/DirectQuery** | **Felhasználó által konfigurált kézi vagy ütemezett frissítés** | **Átjáró szükséges** |
-| --- | --- | --- | --- |
-| SQL Azure Data Warehouse |Igen |Igen |Nem |
-| Spark on HDInsight |Igen |Igen |Nem |
+Ha a OneDrive-frissítést engedélyezve hagyja egy OneDrive-hoz vagy SharePoint Online-hoz csatlakozó adathalmazhoz, és ütemezetten szeretne adatfrissítést végrehajtani, az ütemezést úgy konfigurálja, hogy a Power BI az adatfrissítést a OneDrive-frissítés után hajtsa végre. Ha például saját szolgáltatást vagy folyamatot hozott létre, amely a OneDrive- vagy SharePoint Online-beli forrásfájlt minden éjszaka 1 órakor frissíti, akkor az ütemezett frissítést konfigurálhatja 02:30-ra, így elég időt adva a Power BI-nak, hogy befejezze a OneDrive-frissítést az adatfrissítés megkezdése előtt.
 
-További információ: [Az Azure és a Power BI](service-azure-and-power-bi.md).
+#### <a name="refresh-of-query-caches"></a>Lekérdezési gyorsítótárak frissítése
 
-## <a name="real-time-dashboards"></a>Valós idejű irányítópultok
-A valós idejű irányítópultok a Microsoft Power BI REST API-val vagy a Microsoft Stream Analytics segítségével ellenőrzik, hogy az adatok naprakészek-e. Mivel a valós idejű irányítópultokhoz nincs szükség frissítéskonfigurálásra, nem esnek a jelen cikk hatókörébe.
+Ha adathalmaza prémium szintű kapacitásban helyezkedik el, akkor esetleg javíthatja a hozzá társított jelentések és irányítópultok teljesítményét a lekérdezési gyorsítótár engedélyezésével, ahogyan az alábbi ábrán látható. A lekérdezések gyorsítótárazása arra utasítja a prémium szintű kapacitást, hogy a helyi gyorsítótárazási szolgáltatását használja a lekérdezések eredményeinek megtartására, így elkerülhető, hogy a mögöttes adatforrás végezze el az eredmények kiszámítását. További információ: [Lekérdezések gyorsítótárazása a Power BI Premiumban](power-bi-query-caching.md).
 
-| **Adatforrás** | **Automatikus** | **Felhasználó által konfigurált kézi vagy ütemezett frissítés** | **Átjáró szükséges** |
-| --- | --- | --- | --- |
-| A Power BI REST API-val vagy a Microsoft Stream Analytics szolgáltatással fejlesztett egyéni alkalmazások |Igen, élő streaming |Nem |Nem |
+![Lekérdezések gyorsítótárazása](media/refresh-data/query-caching.png)
 
-## <a name="configure-scheduled-refresh"></a>Ütemezett frissítés beállítása
-Az ütemezett frissítés konfigurálásával kapcsolatban további információt az [ütemezett frissítés konfigurálásáról](refresh-scheduled-refresh.md) szóló cikkben találhat.
+Egy adatfrissítés után azonban a korábban gyorsítótárazott lekérdezési eredmények már nem érvényesek. A Power BI elveti ezeket a gyorsítótárazott eredményeket, és újra össze kell gyűjtenie azokat. Emiatt a lekérdezések gyorsítótárazása nem feltétlenül előnyös nagyon gyakran, például naponta 48 alkalommal frissített adathalmazokhoz társított jelentések és irányítópultok esetében.
 
-## <a name="common-data-refresh-scenarios"></a>Gyakori adatfrissítési forgatókönyvek
-A Power BI-beli adatfrissítés megismerésére olykor néhány példa megtekintése a legjobb módszer. Az alábbiakban néhány gyakori adatfrissítési forgatókönyvet ismertetünk:
+#### <a name="tile-refresh"></a>Csempefrissítés
 
-### <a name="excel-workbook-with-tables-of-data"></a>Excel-munkafüzet adattáblázatokkal
-Egy olyan Excel-munkafüzettel dolgozik, amely több táblázatnyi adatot is tartalmaz, azonban ezek nincsenek betöltve az Excel adatmodelljébe. Az Adatok lekérése funkcióval feltöltötte a munkafüzetet a helyi meghajtóból a Power BI-ba, és létrehozott egy irányítópultot. Azonban azóta módosította a munkafüzet táblázatait a helyi meghajtón, és szeretné frissíteni az irányítópultot a Power BI-ban az új adatokkal.
+A Power BI az irányítópult minden csempevizualizációjához fenntart egy gyorsítótárat, és előre frissíti a csempék gyorsítótárait, ha az adatok módosulnak. Ez annyit jelent, hogy adatfrissítés után a csempék frissítése automatikusan megtörténik. Ez az ütemezett és az igény szerinti frissítési műveletekre is igaz. A csempefrissítést kényszerítheti is az irányítópult jobb felső sarkában található három pontra (…), majd **Az irányítópult csempéinek frissítése** lehetőséget választva.
 
-Sajnos ebben az esetben a frissítés nem támogatott. Az irányítópult adatkészletének frissítéséhez újra fel kell töltenie a munkafüzetet. Van azonban egy remek megoldás: Helyezze el munkafüzet-fájlját a OneDrive-on vagy a SharePoint Online-on!
+![Az irányítópult csempéinek frissítése](media/refresh-data/refresh-dashboard-tiles.png)
 
-Amikor egy OneDrive-on vagy a SharePoint Online-on tárolt fájlhoz csatakozik, a jelentések és az irányítópultok a fájlhoz hűen jelenítik meg az adatokat. Ebben az esetben ugyanúgy, mint ahogy az Excel-munkafüzetben szerepelnek. A Power BI automatikusan, körülbelül óránként ellenőrzi a fájlt, frissítéseket keresve. Ha módosítja a OneDrive-on vagy a SharePoint Online-on tárolt munkafüzetet, a módosítások az irányítópulton és a jelentésekben is megjelennek egy órán belül. A frissítést nem kell kézzel beállítania. Azonban ha azonnal látni szeretné a frissítéseket a Power BI-ban, kézzel frissítheti az adatkészletet az Azonnali frissítés funkcióval.
+Mivel automatikusan megtörténik, a csempefrissítés az adatfrissítés részének tekinthető. Sok más mellett az is megfigyelhető, hogy a frissítések időtartama a csempék számával együtt növekszik. A csempefrissítés jelentős többletterheléssel is járhat.
 
-További információ: [Excel-adatok a Power BI-ban](service-excel-workbook-files.md), vagy [A OneDrive-on található Excel-munkafüzetből létrehozott adatkészlet frissítése](refresh-excel-file-onedrive.md).
+A Power BI alapértelmezés szerint minden csempéhez egyetlen gyorsítótárat tart fenn, de ha az adatokhoz való hozzáférés dinamikus biztonsággal, felhasználói szerepkörök alapján van korlátozva, a [Sorszintű biztonság (RLS) a Power BI-ban](service-admin-rls.md) című cikkben ismertetett módon, akkor a Power BI-nak minden szerepkörhöz és csempéhez külön gyorsítótárat kell fenntartania. A csempe-gyorsítótárak száma annyiszorosára nő, amennyi a szerepkörök száma.
 
-### <a name="excel-workbook-connects-to-a-sql-database-in-your-company"></a>Egy céges SQL-adatbázishoz kapcsolódó Excel-munkafüzet
-Tegyük fel, hogy egy SalesReport.xlsx nevű Excel-munkafüzettel dolgozik a helyi számítógépén. Az Excel Power Query funkciójával csatlakozott egy céges kiszolgálón található SQL-adatbázishoz, és lekérte az értékesítési adatokat, amelyeket betöltött az adatmodellbe. Minden reggel, amikor megnyitotta a munkafüzetet, a Frissítés paranccsal frissítette a kimutatásokat.
+A helyzet tovább bonyolódhat, ha az adathalmaz élő kapcsolatban van egy sorszintű biztonsággal rendelkező Analysis Services-adatmodellel, ahogyan erre a [Dinamikus sorszintű biztonság Analysis Services-beli táblázatos modellel](desktop-tutorial-row-level-security-onprem-ssas-tabular.md) című oktatóanyag rávilágít. Ilyen helyzetben a Power BI-nak gyorsítótárat kell fenntartania és frissítenie minden csempéhez és minden felhasználóhoz, aki valaha megtekintette az irányítópultot. Nem ritka eset, hogy az ilyen adatfrissítési műveletek idejéből több kell a csempefrissítéshez, mint az adatoknak a forrásból való betöltéséhez. További információ a csempefrissítésről: [Csempékkel kapcsolatos hibák elhárítása](refresh-troubleshooting-tile-errors.md).
 
-Most szeretné a Power BI-ban megtekinteni az értékesítési adatokat, így az Adatok lekérése funkcióval csatlakozik a helyi meghajtón található SalesReport.xlsx munkafüzethez, és feltölti azt.
+#### <a name="refresh-of-report-visuals"></a>Jelentésvizualizációk frissítése
 
-Ebben az esetben kézzel frissítheti a SalesReport.xlsx adatkészletének adatait, vagy beállíthat egy frissítésütemezést. Mivel az adatok valójában a céges SQL-adatbázisból származnak, le kell töltenie és telepítenie kell egy átjárót. Amikor ezzel kész, és konfigurálta az átjárót, nyissa meg a SalesReport adatkészletének beállításait, és jelentkezzen be az adatforrásba. Ezt csak egyszer kell elvégeznie. Ezután beállíthat egy frissítésütemezést, a Power BI így automatikusan csatlakozik az SQL-adatbázishoz, és lekéri az adatokat. A jelentések és az irányítópultok is automatikusan frissülnek.
+Ez a frissítési folyamat kevésbé fontos, mert csak az Analysis Services-zel való élő kapcsolat esetén játszik szerepet. Ilyen kapcsolatoknál a Power BI gyorsítótárazza a jelentésvizualizációk utolsó állapotát, így a jelentés újabb megtekintésekor a Power BI-nak nem kell lekérdeznie az Analysis Services-beli táblázatos modellt. A jelentés kezelése során, például egy jelentésszűrő kicserélésekor a Power BI lekérdezi a táblázatos modellt, és automatikusan frissíti a jelentés vizualizációit. Ha úgy véli, hogy a jelentés elavult adatokat mutat, a jelentés Frissítés gombját választva elindíthatja az összes jelentésvizualizáció frissítését az alábbi ábrán bemutatott módon.
+
+![Jelentésvizualizációk frissítése](media/refresh-data/refresh-report-visuals.png)
+
+## <a name="review-data-infrastructure-dependencies"></a>Az adatinfrastruktúra-függőségek áttekintése
+
+A tárolási módoktól függetlenül egyetlen adatfrissítés sem lehet sikeres, ha a mögöttes adatforrások nem elérhetők. Az adatokhoz való hozzáférésnek három fő forgatókönyve van:
+
+- Egy adathalmaz helyszíni adatforrásokat használ
+- Egy adathalmaz felhőbeli adatforrásokat használ
+- Egy adathalmaz helyszíni és felhőbeli adatforrásokat is használ
+
+### <a name="connecting-to-on-premises-data-sources"></a>Csatlakozás helyszíni adatforrásokhoz
+
+Ha az adathalmaz olyan adatforrást használ, amelyhez a Power BI nem fér hozzá közvetlen hálózati kapcsolaton keresztül, akkor csak úgy engedélyezhet frissítési ütemezést vagy hajthat végre igény szerinti adatfrissítést, ha átjárókapcsolatot konfigurál ehhez az adathalmazhoz. Az adatátjárókról és azok működéséről a [Mik azok a helyszíni adatátjárók?](service-gateway-getting-started.md) című cikkből tájékozódhat.
+
+Az alábbi lehetőségek állnak rendelkezésére:
+
+- Kiválaszt egy vállalati adatátjárót a kívánt adatforrás-definícióval
+- Személyes adatátjárót helyez üzembe
 
 > [!NOTE]
-> Ez csak a Power BI adatkészletén belül frissíti az adatokat. A helyi fájl nem fog frissülni.
-> 
-> 
+> Az adatátjárót igénylő adatforrástípusok listáját [Az adatforrás kezelése – Importálás/Ütemezett frissítés](service-gateway-enterprise-manage-scheduled-refresh.md) című cikkben találhatja meg.
 
-További információ: [Excel-adatok a Power BI-ban](service-excel-workbook-files.md), [Power BI Gateway – Personal](service-gateway-personal-mode.md), [Helyszíni adatátjáró](service-gateway-onprem.md), [Excel-munkafüzetből létrehozott adatkészlet frissítése helyi meghajtón](refresh-excel-file-local-drive.md).
+#### <a name="using-an-enterprise-data-gateway"></a>Vállalati adatátjáró használata
 
-### <a name="power-bi-desktop-file-with-data-from-an-odata-feed"></a>Power BI Desktop-fájl egy OData-csatorna adataival
-Ebben az esetben a Power BI Desktop Adatok lekérése funkciójával csatlakozott egy OData-csatorna fontos népszámlálási adataihoz, majd importálta őket.  Több jelentést is létrehozott a Power BI Desktopban, majd a fájlt WACensus néven mentette egy céges megosztón. Ezután közzétette a fájlt a Power BI-ban.
+A Microsoft személyes átjáró helyett vállalati adatátjáró használatát javasolja az adathalmazok helyszíni adatforráshoz csatlakoztatására. Ügyeljen arra, hogy az átjáró megfelelően legyen konfigurálva, tehát rendelkezzen a legújabb frissítésekkel és minden szükséges adatforrás-definícióval. Az adatforrás-definíciók adják meg a Power BI-nak egy adott forrás kapcsolati adatait, köztük a kapcsolati végpontokat, a hitelesítési módot és a hitelesítő adatokat. Az átjárón adatforrásainak kezeléséről [Az adatforrás kezelése – Importálás/Ütemezett frissítés](service-gateway-enterprise-manage-scheduled-refresh.md) című cikkben talál további információt.
 
-Ebben az esetben kézzel frissítheti a WACensus adatkészletének adatait, vagy beállíthat egy frissítésütemezést. Mivel az adatforrás adatai egy online OData-csatornáról származnak, nem kell telepítenie egy átjárót, azonban a WACensus adatkészletének beállításai között be kell jelentkeznie az OData-adatforrásába. Ezután beállíthat egy frissítésütemezést, a Power BI így automatikusan csatlakozik az OData-csatornához, és lekéri az adatokat. A jelentések és az irányítópultok is automatikusan frissülnek.
+Az adathalmazok vállalati átjáróhoz csatlakoztatása viszonylag magától értetődő művelet az átjáró rendszergazdái számára. Rendszergazdai jogosultságokkal gyorsan frissíthet egy átjárót, és szükséges esetén hozzáadhatja a hiányzó adatforrásokat. Ami azt illeti, egy hiányzó adatforrást közvetlenül az adathalmaz beállításainak oldalán hozzáadhat az átjáróhoz. A váltógomb kibontásával megtekintheti az adatforrásokat, és kiválaszthatja az **Hozzáadás átjáróhoz** hivatkozást, ahogyan az alábbi képernyőképen látható. Ha Ön nem az átjáró rendszergazdája, a megjelenő kapcsolattartási adatok használatával a szükséges adatforrás-definíció hozzáadására vonatkozó kérést küldhet egy átjáró-rendszergazdának.
 
-További információ: [Közzététel a Power BI Desktopból](desktop-upload-desktop-files.md), [Power BI Desktop-fájlból létrehozott adatkészlet frissítése helyi meghajtón](refresh-desktop-file-local-drive.md), [Power BI Desktop-fájlból létrehozott adatkészlet frissítése a OneDrive-on](refresh-desktop-file-onedrive.md).
+![Hozzáadás átjáróhoz](media/refresh-data/add-to-gateway.png)
 
-### <a name="shared-content-pack-from-another-user-in-your-organization"></a>A cég egy másik felhasználója által megosztott tartalomcsomag
-Csatlakozott egy céges tartalomcsomaghoz. Ez tartalmaz egy irányítópultot, több jelentést és egy adatkészletet.
+> [!NOTE]
+> Egy adathalmaz csak egyetlen átjárókapcsolatot használhat. Másként fogalmazva helyszíni adatforrásokat nem lehet egynél több átjárókapcsolaton keresztül elérni. Ennek megfelelően minden szükséges adatforrás-definíciót ugyanahhoz az adatforráshoz kell hozzáadni.
 
-Ebben a forgatókönyvben nem állíthat be frissítést az adatkészlet számára. A tartalomcsomagot létrehozó adatelemző felelőssége az adatkészlet frissítése, az adatforrásoktól függően.
+#### <a name="deploying-a-personal-data-gateway"></a>Személyes adatátjáró üzembe helyezése
 
-Ha a tartalomcsomag irányítópultjai és jelentései nem frissülnek, lépjen kapcsolatba a tartalomcsomagot létrehozó adatelemzővel.
+Ha nincs hozzáférése vállalati adatátjáróhoz, és egyedül Ön kezel adatforrásokat, és ezért nem kell adatforrásokat másokkal megosztania, személyes üzemmódban is üzembe helyezhet adatátjárót. Az **Átjárókapcsolat** szakaszban a **Nincs telepítve személyes adatátjáró** alatt válassza a **Telepítés most** lehetőséget. A személyes adatátjáróra vonatkozik néhány, a [Helyszíni adatátjáró (személyes mód)](service-gateway-personal-mode.md) című cikkben dokumentált korlátozás.
 
-További információ: [Céges tartalomcsomagok: bevezetés](service-organizational-content-pack-introduction.md), [A céges tartalomcsomagok működése](service-organizational-content-pack-copy-refresh-access.md).
+A vállalati adatátjárótól eltérően egy személyes adatátjáróhoz nem kell adatforrás-definíciókat hozzáadnia. Az adatforrások konfigurációját ehelyett az adathalmaz-beállítások **Adatforrásbeli hitelesítő adatok** szakaszában konfigurálhatja, ahogyan az alábbi képernyőképen látható.
 
-### <a name="content-pack-from-an-online-service-provider-like-salesforce"></a>Egy online szolgáltatótól (például a Salesforce-tól) származó tartalomcsomag
-A Power BI-ban az Adatok lekérése funkcióval csatlakozott egy online szolgáltató, például a Salesforce adataihoz, amelyeket aztán importált. Itt nincs más teendője. A Salesforce-adatkészlet minden nap automatikusan frissül. 
+![Adatforrás hitelesítő adatainak konfigurálása átjáróhoz](media/refresh-data/configure-data-source-credentials-gateway.png)
 
-A legtöbb online szolgáltatóhoz hasonlóan a Salesforce is naponta egyszer frissíti az adatait, általában éjjel. Kézzel is frissítheti a Salesforce-adatkészletet, vagy beállíthat egy frissítésütemezést, de erre nincs szükség, mivel a Power BI automatikusan frissíti az adatkészletet, a jelentéseket és az irányítópultokat.
+> [!NOTE]
+> A személyes adatátjáró nem támogat DirectQuery/LiveConnect módú adathalmazokat. Az adathalmaz-beállítások oldala kérheti a telepítését, de ha csak személyes átjáróval rendelkezik, nem konfigurálhat átjárókapcsolatot. Az ilyen típusú adathalmazok támogatásához mindig vállalati adatátjárót kell használnia.
 
-További információ: [A Power BI-hoz készült Salesforce-tartalomcsomag](service-connect-to-salesforce.md).
+### <a name="accessing-cloud-data-sources"></a>Felhőbeli adatforrások elérése
 
-## <a name="troubleshooting"></a>Hibaelhárítás
-Általában azért történnek hibák, mert a Power BI nem tud bejelentkezni az adatforrásokba, vagy az adatkészlet helyszíni adatforráshoz csatlakozik, mert az átjáró offline állapotban van. Győződjön meg arról, hogy a Power BI be tud jelentkezni az adatforrásokba. Ha az adatforrásokba való bejelentkezéshez használt jelszó megváltozik, vagy ha a Power BI kijelentkezik az adatforrásból, próbáljon meg ismét bejelentkezni az adatforrásokba az Adatforrás azonosító adatai részben.
+Azok az adathalmazok, amelyek olyan felhőbeli adatforrásokat használnak, mint az Azure SQL DB, nem igényelnek adatátjárót, ha a Power BI közvetlen hálózati kapcsolatot tud létesíteni a forrással. Emiatt az ilyen adatforrások konfigurációját az adathalmaz-beállítások **Adatforrásbeli hitelesítő adatok** szakaszának használatával kezelheti. Ahogyan az alábbi képernyőképen látható, átjárókapcsolatot nem kell konfigurálnia.
 
-Hibaelhárítással kapcsolatos további információ: [Frissítéssel kapcsolatos hibák hibaelhárítási eszközei](service-gateway-onprem-tshoot.md) és [Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása](refresh-troubleshooting-refresh-scenarios.md).
+![Adatforrásbeli hitelesítő adatok konfigurálása átjáró nélkül](media/refresh-data/configure-data-source-credentials.png)
 
-## <a name="next-steps"></a>További lépések
+### <a name="accessing-on-premises-and-cloud-sources-in-the-same-source-query"></a>Helyszíni és felhőbeli források elérése egyetlen forráslekérdezésben
+
+Egy adathalmaz több forrásból is nyerhet adatokat, ezek a források pedig helyszíniek és felhőbeliek is lehetnek. Egy adathalmaz azonban, ahogyan már említettük, csak egyetlen átjárókapcsolatot használhat. Bár a felhőbeli adatforrások nem feltétlenül igényelnek átjárót, az átjáróra szükség van akkor, ha egy adathalmaz egyetlen adategyesítési lekérdezésben helyszíni és felhőbeli forrásokhoz is kapcsolódik. Ilyen helyzetben a Power BI-nak a felhőbeli adatforrásokhoz is átjárót kell használnia. Az alábbi ábra azt szemlélteti, ahogyan egy ilyen adathalmaz hozzáfér az adatforrásaihoz.
+
+![Felhőbeli és helyszíni adatforrások](media/refresh-data/cloud-on-premises-data-sources-diagram.png)
+
+> [!NOTE]
+> Ha egy adathalmaz külön adategyesítési lekérdezésekkel kapcsolódik a helyszíni és a felhőbeli forrásokhoz, akkor a Power BI átjárókapcsolatot használ a helyszíni források eléréséhez, és közvetlen hálózati kapcsolatot a felhőbeli forrásokhoz. Ha egy adategyesítési lekérdezés helyszíni és felhőbeli forrásokból származó adatokat egyesít vagy fűz össze, akkor a Power BI a felhőbeli forrásoknál is áttér az átjárókapcsolat használatára.
+
+A Power BI-adathalmazok a Power Query segítségével érik el és kérik le a forrásbeli adatokat. Az alábbi adategyesítési lista egyszerű példa olyan lekérdezésre, amely helyszíni és felhőbeli forrásokból származó adatokat egyesít.
+
+```
+Let
+
+    OnPremSource = Sql.Database("on-premises-db", "AdventureWorks"),
+
+    CloudSource = Sql.Databases("cloudsql.database.windows.net", "AdventureWorks"),
+
+    TableData1 = OnPremSource{[Schema="Sales",Item="Customer"]}[Data],
+
+    TableData2 = CloudSource {[Schema="Sales",Item="Customer"]}[Data],
+
+    MergedData = Table.NestedJoin(TableData1, {"BusinessEntityID"}, TableData2, {"BusinessEntityID"}, "MergedData", JoinKind.Inner)
+
+in
+
+    MergedData
+```
+
+Egy adatátjáró kétféleképpen konfigurálható helyszíni és felhőbeli források adatainak egyesítéséhez vagy összefűzéséhez:
+
+- A helyszíni adatforrásoké mellett a felhőbeli forrás adatforrás-definícióját is hozzáadja az adatátjáróhoz.
+- Bejelöli **Az ezen átjárófürtön keresztüli frissítés engedélyezése a felhasználó felhőbeli adatforrásai számára** jelölőnégyzetet.
+
+![Frissítés átjárófürtön keresztül](media/refresh-data/refresh-gateway-cluster.png)
+
+Ha a fenti képernyőképen látható módon bejelöli **Az ezen átjárófürtön keresztüli frissítés engedélyezése a felhasználó felhőbeli adatforrásai számára** jelölőnégyzetet az átjáró konfigurációjában, akkor a Power BI használhatja azt a konfigurációt, amelyet a felhasználó adott meg a felhőbeli forráshoz az **Adatforrásbeli hitelesítő adatok** alatt az adathalmaz beállításaiban. Ez hozzájárulhat az átjáró konfigurálásával járó többletmunka csökkentéséhez. Ha azonban jobban kézben szeretné tartani az átjáró által létesített kapcsolatokat, nem érdemes bejelölnie ezt a jelölőnégyzetet. Ilyen esetben minden felhőbeli forráshoz, amelyet támogatni szeretne explicit adatforrás-definíciót kell hozzáadnia az átjáróhoz. Azt is megteheti, hogy bejelöli a jelölőnégyzetet, és a felhőbeli forrásokhoz explicit adatforrás-definíciókat ad hozzá az átjáróhoz. Ebben az esetben az átjáró minden megfelelő forráshoz az adatforrás-definíciókat fogja használni.
+
+### <a name="configuring-query-parameters"></a>Lekérdezési paraméterek konfigurálása
+
+A Power Queryvel létrehozott adategyesítési lekérdezések összetettsége az egyszerű lépésektől a paraméterezett szerkezetekig változhat. Az alábbi minta egy kis adategyesítési lekérdezésminta, amely egy _SchemaName_ és egy _TableName_ nevű paraméterrel fér hozzá egy AdventureWorks adatbázis megadott táblájához.
+
+```
+let
+
+    Source = Sql.Database("SqlServer01", "AdventureWorks"),
+
+    TableData = Source{[Schema=SchemaName,Item=TableName]}[Data]
+
+in
+
+    TableData
+```
+
+> [!NOTE]
+> A lekérdezési paraméterek csak Importálás módú adathalmazokhoz támogatottak. A DirectQuery/LiveConnect mód nem támogatja a lekérdezési paraméterek definiálását.
+
+Ahhoz, hogy egy paraméteres adathalmaz a megfelelő adatokhoz férjen hozzá, konfigurálnia kell az adategyesítési lekérdezés paramétereit az adathalmaz beállításaiban. A paramétereket programozottan is módosíthatja a [Power BI REST API](/rest/api/power-bi/datasets/updateparametersingroup) használatával. Az alábbi képernyőképen látható felhasználói felületen a fenti adategyesítési lekérdezést használó adathalmaz lekérdezési paraméterei konfigurálhatók.
+
+![Lekérdezési paraméterek konfigurálása](media/refresh-data/configure-query-parameters.png)
+
+> [!NOTE]
+> A Power BI jelenleg nem támogatja a paraméteres adatforrás-definíciókat, más néven dinamikus adatforrásokat. Az Sql.Database("SqlServer01", "AdventureWorks") adathozzáférési függvény például nem paraméterezhető. Ha adathalmaza dinamikus adatforrásokra épül, a Power BI azt jelzi, hogy ismeretlen vagy nem támogatott adatforrásokat észlelt. Az adathozzáférési függvények paramétereit statikus értékekre kell cserélnie ha azt szeretné, hogy a Power BI azonosítani tudja az adatforrásokat, és kapcsolódni tudjon azokhoz. További információ: [Nem támogatott adatforrás frissítési hibáinak elhárítása](service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
+
+## <a name="configure-scheduled-refresh"></a>Ütemezett frissítés konfigurálása
+
+A Power BI és az adatforrások közötti kapcsolat kialakítása az adatfrissítés konfigurálásának kiemelkedően legnagyobb részfeladata. A további lépések viszonylag egyértelműek. Ezek közé tartozik a frissítési ütemezés beállítása és a sikertelen frissítésekről szóló értesítések engedélyezése. Ehhez az [Ütemezett frissítés konfigurálása](refresh-scheduled-refresh.md) című cikk nyújt lépésenkénti útmutatást.
+
+### <a name="setting-a-refresh-schedule"></a>Frissítési ütemezés beállítása
+
+Az **Ütemezett frissítés** szakaszban határozhatja meg az adatkészletek frissítésének gyakoriságát és időszakait. Bizonyára emlékszik, hogy naponta legfeljebb nyolc időpontot konfigurálhat, ha az adathalmaz megosztott kapacitásban van, és 48 időpontot a Power BI Premiumban. Az alábbi képernyőkép egy tizenkét óránként ütemezett frissítés látható.
+
+![Ütemezett frissítés konfigurálása](media/refresh-data/configure-scheduled-refresh.png)
+
+Frissítési ütemezés konfigurálása után az adathalmaz beállításainak oldala a fenti képernyőképen látható módon tájékoztatja a következő frissítés időpontjáról. Ha ennél hamarabb szeretné frissíteni az adatokat, például az átjáró és az adatforrás konfigurációjának teszteléséhez, igény szerinti frissítést hajthat végre a bal oldali navigációs panel Adathalmaz menüjében található Azonnali frissítés lehetőséggel. Az igény szerinti frissítések nem befolyásolják a következő ütemezett frissítés időpontját, de a cikk korábbi részében leírtak szerint beleszámítanak a napi frissítési korlátba.
+
+Azt is vegye figyelembe, hogy a frissítés konfigurált időpontja nem feltétlenül az a pontos időpont, amikor a Power BI elindítja a következő ütemezett folyamatot. A Power BI törekszik a frissítési ütemezés minél pontosabb betartására. A cél az, hogy a frissítés az ütemezett időponttól legfeljebb 15 perc eltéréssel elinduljon, de akár egyórás késés is előfordulhat, ha a szolgáltatás nem tudja korábban lefoglalni a szükséges erőforrásokat.
+
+> [!NOTE]
+> A Power BI inaktiválja a frissítési ütemezést, ha négy egymás utáni alkalommal sikertelen marad, vagy ha a szolgáltatás olyan konfigurációmódosítást igénylő, helyrehozhatatlan hibát észlel, mint az érvénytelen vagy lejárt hitelesítő adatok. Az egymást követő sikertelen próbálkozások számának küszöbértéke nem módosítható.
+
+### <a name="getting-refresh-failure-notifications"></a>Értesítés a sikertelen frissítésekről
+
+A Power BI alapértelmezés szerint e-mail-értesítést küld az adathalmaz tulajdonosának a sikertelen frissítésekről, hogy a tulajdonos időben közbe tudjon lépni frissítési problémák esetén. A Power BI akkor is értesítést küld, ha a szolgáltatás a sorozatos sikertelenség miatt letiltja az ütemezést. A Microsoft az **Értesítést kérek e-mailben, ha sikertelen a frissítés** jelölőnégyzet bejelölve hagyását javasolja.
+
+Fontos, hogy a Power BI nem csak a sikertelen frissítésekről küld értesítést, hanem akkor is, ha a szolgáltatás inaktivitás miatt szüneteltet egy ütemezett frissítést. Ha két hónapon át egyetlen felhasználó sem látogatott meg az adathalmazon alapuló egyetlen irányítópultot és jelentést sem, a Power BI inaktívnak minősíti az adathalmazt. Ilyen esetben a Power BI e-mailt küld az adathalmaz tulajdonososának, amelyben jelzi, hogy a szolgáltatás letiltotta az adathalmaz frissítési ütemezését. Az alábbi képernyőkép az ilyen értesítésekre mutat egy példát.
+
+![Szüneteltetett frissítésről tájékoztató e-mail](media/refresh-data/email-paused-refresh.png)
+
+Az ütemezett frissítés folytatásához nyisson meg egy jelentést vagy irányítópultot, amely ennek az adathalmaznak a használatával készült, vagy frissítse manuálisan az adathalmazt az **Azonnali frissítés** lehetőséggel.
+
+### <a name="checking-refresh-status-and-history"></a>A frissítési állapot és az előzmények ellenőrzése
+
+A sikertelenségről szóló értesítések mellett időnként érdemes ellenőrizni az adathalmazokat, hogy nem történtek-e frissítési hibák. Ennek egy gyors módja az adathalmazok listájának megtekintése a munkaterületen. A hibát tartalmazó adathalmazok mellett kis figyelmeztető ikon látható. A figyelmeztető ikon kijelölésével további információkhoz juthat, ahogyan az alábbi képernyőképen látható. Az egyes frissítési hibák elhárításáról a [Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása](refresh-troubleshooting-refresh-scenarios.md) című cikk nyújt további információkat.
+
+![Frissítési állapot – figyelmeztetés](media/refresh-data/refresh-status-warning.png)
+
+A figyelmeztetés ikon segít az adathalmazzal kapcsolatos aktuális problémák felismerésében, de emellett érdemes időnként a frissítési előzményeket is megvizsgálni. Ahogyan a nevéből kikövetkeztető, a frissítési előzményekben áttekinthető a múltbéli szinkronizálási ciklusok sikeres vagy sikertelen állapota. Előfordulhat például, hogy egy átjáró rendszergazdája lejárt adatbázisbeli hitelesítő adatokat frissített. Az alábbi képernyőképen a frissítési előzményekből jól látható, hogy mikor kezdett ismét működni az érintett frissítés.
+
+![Frissítési előzmények – üzenetek](media/refresh-data/refresh-history-messages.png)
+
+> [!NOTE]
+> A frissítési előzmények megjelenítéséhez az adathalmaz beállításai között található hivatkozás. A frissítési előzményeket programozottan is lekérheti a [Power BI REST API](/rest/api/power-bi/datasets/getrefreshhistoryingroup) használatával. Egyéni megoldás használatával több adathalmaz frissítési előzményeit is központosítottan figyelheti.
+
+## <a name="best-practices"></a>Ajánlott eljárások
+
+Az adathalmazok frissítési előzményeinek rendszeres ellenőrzése az egyik legfontosabb ajánlott eljárás, amellyel biztosítható, hogy jelentései és irányítópultjai aktuális adatokat használjanak. Ha problémákat tapasztal, azonnal kezelje azokat, szükség esetén az adatforrás-tulajdonosok és az átjáró-rendszergazdák bevonásával.
+
+Emellett az alábbi javaslatok szem előtt tartásával alakíthat ki és tarthat fenn megbízható adatfrissítési folyamatokat az adathalmazokhoz:
+
+- Ütemezze a frissítéseket a kevésbé forgalmas időszakokra, főleg akkor, ha adathalmazai a Power BI Premiumban vannak. Ha tágabb időtartományra osztja szét a frissítési ciklusokat, elkerülheti a kiugró terheléseket, amelyek egyébként túlterhelhetnék a rendelkezésre álló erőforrásokat. A frissítési ciklusok késése a rendszer túlterhelésére utalhat. Ha egy prémium szintű kapacitás teljesen túl van terhelve, a Power BI akár ki is hagyhat egy frissítési ciklust.
+- Tartsa szem előtt a frissítésre vonatkozó korlátozásokat. Gyorsan változó forrásadatok vagy nagy adattömeg esetén az Importálás mód helyett érdemesebb lehet DirectQuery/LiveConnect módot használni, ha annak a forrásra háruló többletterhelése és a lekérdezési teljesítményben megmutatkozó következménye elfogadható. Kerülje az Importálás módú adathalmazok folyamatos frissítését. A DirectQuery/LiveConnect mód ugyanakkor több korlátozással is jár, ilyen például a visszaadott adatokra vonatkozó egymillió soros korlátozás és a futó lekérdezések 225 másodperces válaszidő-korlátja, [A DirectQuery használata a Power BI Desktopban](desktop-use-directquery.md) című dokumentációnak megfelelően. Ezen korlátozások miatt rákényszerülhet, hogy mindenképpen Importálás módot használjon. Nagyon nagy adattömeg esetén fontolja meg a [Power BI-beli összesítések](desktop-aggregations.md) használatát.
+- Ügyeljen rá, hogy az adathalmaz frissítéséhez szükséges idő ne lépje túl a frissítési időtartam maximumát. A frissítés időtartamát a Power BI Desktoppal ellenőrizheti. Ha 2 óránál többet vesz igénybe, fontolja meg az adathalmaz áthelyezését a Power BI Premiumba. Előfordulhat, hogy az adathalmaz megosztott kapacitáson nem frissíthető. Olyan adathalmazokhoz, amelyek 1 GB-nál nagyobbak vagy a frissítésük több órát vesz igénybe, érdemes lehet a [Power BI Premiumban növekményes frissítést](service-premium-incremental-refresh.md) használni.
+- Optimalizálhatja adathalmazait, hogy csak a jelentések és irányítópultok által használt táblákat és oszlopokat tartalmazzák. Optimalizálja az adategyesítési lekérdezéseket, és ha csak lehetséges, kerülje a dinamikus adatforrás-definíciók és költséges DAX-számítások használatát. Nagy memóriaigényük és a számítási többletterhelés miatt különösen kerülendők azok a DAX-függvények, amelyek egy tábla összes sorát megvizsgálják.
+- A Power BI Desktopban használtakkal azonos adatvédelmi beállítások alkalmazásával biztosíthatja, hogy a Power BI hatékony forráslekérdezéseket generálhasson. Ne feledje, hogy a Power BI Desktop nem tesz közzé adatvédelmi beállításokat. Ezeket a beállításokat manuálisan kell újra alkalmaznia az adatforrás-definíciókban az adathalmaz közzététele után.
+- Ne használjon túl sok vizualizációt az irányítópultokon, főleg ha [sorszintű biztonságot (RLS)](service-admin-rls.md) használ. A cikkben korábban kifejtettek alapján az irányítópult-csempék túl magas száma jelentősen növelheti a frissítés időtartamát.
+- Adathalmazait megbízható nagyvállalati adatátjáró-példány használatával csatlakoztassa a helyszíni adatforrásokhoz. Ha az átjáró által okozott frissítési hibákat tapasztal például az átjáró elérhetetlensége vagy túlterheltsége miatt, akkor forduljon az átjáró rendszergazdáihoz, hogy további átjárókat adjanak egy meglévő fürthöz, vagy új fürtöt helyezzenek üzembe (vertikális vagy horizontális felméretezés).
+- Használjon külön adatátjárókat az Importálás és a DirectQuery/LiveConnect adathalmazokhoz, hogy az ütemezett frissítésekkel járó adatimportálás ne befolyásolja a DirectQuery/LiveConnect-adathalmazokra épülő jelentések és irányítópultok teljesítményét, amelyek minden felhasználói tevékenység esetén lekérdezik az adatforrásokat.
+- Gondoskodjon róla, hogy a Power BI értesítést küldhessen Önnek a sikertelen frissítésekről. A levélszemét-szűrők blokkolhatják ezeket az üzeneteket, és más mappába helyezhetik át azokat, ahol nem tűnnek fel azonnal.
+
+## <a name="next-steps"></a>Következő lépések
+
+[Ütemezett frissítés beállítása](refresh-scheduled-refresh.md)  
 [Frissítéssel kapcsolatos hibák hibaelhárítási eszközei](service-gateway-onprem-tshoot.md)  
 [Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása](refresh-troubleshooting-refresh-scenarios.md)  
-[Power BI Gateway – Personal](service-gateway-personal-mode.md)  
-[Helyszíni adatátjáró](service-gateway-onprem.md)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-

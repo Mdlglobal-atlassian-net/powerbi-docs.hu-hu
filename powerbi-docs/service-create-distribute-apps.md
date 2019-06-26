@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 67678a150b4fce802bef2b287211cf438b832e82
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: eccda071b6c6abc92640024c3587bafa71038dee
+ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66459566"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66826646"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Alkalmazás közzététele a Power BI-ban
 
@@ -35,8 +35,8 @@ Az alkalmazást saját beépített navigációval is létrehozhatja, hogy a felh
 ## <a name="licenses-for-apps"></a>Licencek alkalmazásokhoz
 Alkalmazás létrehozásához vagy frissítéséhez Power BI Pro-licenccel kell rendelkeznie. Az alkalmazás *fogyasztói* esetében két lehetőség van.
 
-* 1. lehetőség: Minden üzleti felhasználónak **Power BI Pro** licencre van szüksége az alkalmazás megtekintéséhez. 
-* 2. lehetőség: A vállalat ingyenes felhasználói megtekinthetik az alkalmazás tartalmát, ha az alkalmazás munkaterülete egy Power BI Premium kapacitásban található. Részletek: [Mi a Power BI Premium?](service-premium.md).
+* 1\. lehetőség: Minden üzleti felhasználónak **Power BI Pro** licencre van szüksége az alkalmazás megtekintéséhez. 
+* 2\. lehetőség: A vállalat ingyenes felhasználói megtekinthetik az alkalmazás tartalmát, ha az alkalmazás munkaterülete egy Power BI Premium kapacitásban található. Részletek: [Mi a Power BI Premium?](service-premium.md).
 
 ## <a name="publish-your-app"></a>Az alkalmazás közzététele
 Ha a munkaterület irányítópultjai és jelentései elkészültek, kiválaszthatja a közzétenni kívánt irányítópultokat és jelentéseket, majd alkalmazásként közzéteheti. 
@@ -61,9 +61,17 @@ Ha a munkaterület irányítópultjai és jelentései elkészültek, kiválaszth
    
      ![Alkalmazásnavigáció](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
-5. A **Jogosultság** panelen adhatja meg, hogy ki férhet hozzá az alkalmazáshoz, és mit tehet vele. 
+5. A **Jogosultságok** panelen adhatja meg, hogy ki férhet hozzá az alkalmazáshoz, és mit tehet vele. 
     - [Klasszikus munkaterületeken](service-create-workspaces.md): a vállalatnál mindenki, megadott személyek vagy Azure Active Directory (AAD) biztonsági csoportok.
-    - [Új felületű munkaterületeken](service-create-the-new-workspaces.md): megadott személyek, AAD biztonsági csoportok és terjesztési listák, valamint Office 365-csoportok.
+    - [Új felületű munkaterületeken](service-create-the-new-workspaces.md): megadott személyek, AAD biztonsági csoportok és terjesztési listák, valamint Office 365-csoportok. A munkaterület minden felhasználója automatikusan hozzáférést kap az alkalmazáshoz a munkaterületen.
+    - Az Összeállítási engedéllyel engedélyezheti az alkalmazás felhasználóinak, hogy az alkalmazás mögöttes adathalmazaihoz csatlakozzanak. Az adathalmazok az adathalmaz-keresési felületen jelennek meg.
+    - Engedélyezheti az alkalmazás felhasználóinak, hogy az alkalmazásbeli jelentéseket saját munkaterületükre másolják. 
+    
+    >[!IMPORTANT]
+    >Ha alkalmazása más munkaterületeken lévő adathalmazokra épül, akkor Önnek kell gondoskodnia arról, hogy az alkalmazás összes felhasználója rendelkezzen a mögöttes adathalmazokhoz való hozzáféréssel.
+> 
+>     
+
 
 6. Az alkalmazást automatikusan telepítheti a címzettek számára, ha Power BI-rendszergazdája engedélyezte Önnek ezt a beállítást a Power BI Felügyeleti portálon. Az [Alkalmazás automatikus telepítéséről](#automatically-install-apps-for-end-users) bővebben is szó lesz ebben a cikkben.
 
@@ -152,6 +160,14 @@ Az alkalmazások leküldéses továbbítása során az alábbiakra érdemes ügy
 
 * Azoknál a vendégfelhasználóknál, akik nem fogadták el a meghívást, az alkalmazások nem lesznek automatikusan telepítve.  
 
+## <a name="allowing-users-to-connect-to-the-apps-underlying-datasets"></a>Az alkalmazás mögöttes adathalmazaihoz való csatlakozás engedélyezése felhasználók számára
+Ha bejelöli azt a beállítást, hogy minden felhasználó csatlakozhasson az alkalmazás mögöttes adathalmazaihoz, akkor az alkalmazás felhasználói Összeállítási engedélyt kapnak a mögöttes adathalmazra. Ez lehetővé teszi, hogy a felhasználók [több munkaterületen is használják az alkalmazás adathalmazait](service-datasets-across-workspaces.md) az adathalmazok Power BI Desktopbeli keresése során és a szolgáltatás adatbetöltési felületén, valamint hogy jelentéseket és irányítópultokat hozzanak létre ezeknek az adathalmazoknak a használatával. 
+
+Ha kikapcsolja ezt a beállítást, az alkalmazáshoz felvett új felhasználóknak már nem lesz megadva az Összeállítási engedély. A mögöttes adathalmazra vonatkozó meglévő engedélyek viszont nem módosulnak. A rendelkezésre álló felhasználói felületen manuálisan is megvonhatja az Összeállítási engedélyt azoktól a felhasználóktól, akiknek már nem kell rendelkezniük vele. További információ: [Összeállítási engedély](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+
+## <a name="allowing-users-to-make-a-copy-of-the-reports-in-the-app"></a>Az alkalmazásbeli jelentések másolásának engedélyezése felhasználók számára
+Ha bejelöli **A felhasználók másolatot készíthetnek az alkalmazásbeli jelentésekről** beállítást, azzal engedélyezi a felhasználóknak, hogy az alkalmazás bármelyik jelentését a saját munkaterületükre mentsék. Ez után egyéni igényeik szerint testreszabhatják a jelentéseket. Ez a beállítás megköveteli a **Minden felhasználó csatlakozhat az alkalmazás mögöttes adathalmazaihoz az Összeállítási engedély használatával** beállítás engedélyezését. Ennek a képességnek a viselkedése megegyezik a [jelentések másolása más munkaterületekről](service-datasets-copy-reports.md) képességével.
+
 ## <a name="unpublish-an-app"></a>Alkalmazás közzétételének visszavonása
 Egy alkalmazás-munkaterület bármely tagja visszavonhatja az alkalmazás közzétételét.
 
@@ -160,7 +176,7 @@ Egy alkalmazás-munkaterület bármely tagja visszavonhatja az alkalmazás közz
 > 
 > 
 
-* Az alkalmazás-munkaterületen válassza a jobb felső sarokban a három pontot (**...**) > az **App közzétételének visszavonása** lehetőséget.
+* Az alkalmazás-munkaterületen válassza a jobb felső sarokban a három pontot ( **...** ) > az **App közzétételének visszavonása** lehetőséget.
   
      ![App közzétételének visszavonása](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 

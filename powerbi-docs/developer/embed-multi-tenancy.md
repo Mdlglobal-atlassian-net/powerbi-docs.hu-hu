@@ -6,15 +6,15 @@ ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
-ms.subservice: powerbi - developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 31222828d1a12a5f46fd7c04b3aa32240ff35736
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 56b417cb60f7c149b926f4307be0a50b33c278d6
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61374688"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751041"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Több-bérlős konfiguráció kezelése Power BI Embedded-analitikával
 
@@ -142,9 +142,9 @@ További elkülönítés érhető el, ha az alkalmazásfejlesztő több munkater
 
 ### <a name="scalability"></a>Méretezhetőség
 
-Ennek a modellnek az egyik előnye az, hogy az adatok bérlőnkénti adathalmazokra való felosztása enyhíti az [egy adathalmaz méretére vonatkozó korlátozást](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (jelenleg 10 GB egy kapacitásban). Ha a kapacitás túl van terhelve, azt is kizárása a szabad memória aktív adatkészlet a nem használt adatkészleteket. Ez egyetlen nagy adathalmazzal nem oldható meg. Több adathalmaz használata mellett a bérlők szükség esetén több Power BI-kapacitásba is elkülöníthetők.
+Ennek a modellnek az egyik előnye az, hogy az adatok bérlőnkénti adathalmazokra való felosztása enyhíti az [egy adathalmaz méretére vonatkozó korlátozást](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (jelenleg 10 GB egy kapacitásban). Ha a kapacitás betelik, kizárhatja a nem használt adathalmazokat, hogy memóriát szabadítson fel az aktív adathalmazok számára. Ez egyetlen nagy adathalmazzal nem oldható meg. Több adathalmaz használata mellett a bérlők szükség esetén több Power BI-kapacitásba is elkülöníthetők.
 
-Mindezen előnyök ellenére érdemes átgondolni, hogy milyen méretet érhet el az SaaS-alkalmazás a jövőben. Megtörténhet például, hogy a kezelhető összetevők száma ér el egy korlátot. Erről a cikk üzembe helyezési [korlátozásokról](#summary-comparison-of-the-different-approaches) szóló szakaszában talál további részleteket. A kapacitás SKU használt adatkészleteket kell ahhoz, hogy elférjen, hány frissítését futtathatja egy időben és a maximális gyakorisága adatfrissítéseket memória mérete korlátozva mutatja be. Több száz, vagy több ezer adathalmaz felügyelete estén ezt ajánlatos tesztelni. Ajánlott még figyelembe venni a használat átlagos mértékét és csúcsértékét, valamint a nagy adathalmazokat vagy eltérő használati mintákat használó, a többi bérlőtől eltérő módon kezelt bérlőket is.
+Mindezen előnyök ellenére érdemes átgondolni, hogy milyen méretet érhet el az SaaS-alkalmazás a jövőben. Megtörténhet például, hogy a kezelhető összetevők száma ér el egy korlátot. Erről a cikk üzembe helyezési [korlátozásokról](#summary-comparison-of-the-different-approaches) szóló szakaszában talál további részleteket. A használt kapacitás-SKU korlátozza be az egyes adathalmazok számára elérhető memória mennyiségét, az egyidejűleg futtatható frissítések számát, és az adatfrissítések gyakoriságát. Több száz, vagy több ezer adathalmaz felügyelete estén ezt ajánlatos tesztelni. Ajánlott még figyelembe venni a használat átlagos mértékét és csúcsértékét, valamint a nagy adathalmazokat vagy eltérő használati mintákat használó, a többi bérlőtől eltérő módon kezelt bérlőket is.
 
 ### <a name="automation--operational-complexity"></a>Automatizálás és az üzemeltetés bonyolultsága
 
