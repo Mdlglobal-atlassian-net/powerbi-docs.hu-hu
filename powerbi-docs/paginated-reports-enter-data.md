@@ -1,5 +1,5 @@
 ---
-title: Adatok megadása közvetlenül többoldalas jelentésben a jelentéskészítőben (előzetes verzió)
+title: Adatok megadása közvetlenül többoldalas jelentésben a jelentéskészítőben
 description: Ebben a cikkben megismerheti, hogyan adhat meg közvetlenül adatokat egy jelentésben a jelentéskészítővel.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/19/2018
-ms.openlocfilehash: 3237f4751083f374ac00a959f226429b17757b50
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: fd000ffd0d47935f36e72f6d0000d548623edf0a
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61424468"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839103"
 ---
-# <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Adatok megadása közvetlenül többoldalas jelentésben a jelentéskészítőben (előzetes verzió) - Power BI
+# <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Adatok megadása közvetlenül többoldalas jelentésben a jelentéskészítőben – Power BI
 
 Ebben a cikkben megismerkedhet az SQL Server 2016 jelentéskészítője új verziójának egy funkcióját, amellyel közvetlenül egy RDL-jelentésben adhat meg adatokat beágyazott adatkészletként.  Ez a funkció hasonlóan működik a Power BI Desktophoz. Az adatokat közvetlenül a jelentés egy adatkészletében adhatja meg, vagy beillesztheti egy másik programból, például a Microsoft Excelből. Miután létrehozta az adatkészletet az adatok megadásával, azt ugyanúgy használhatja, mint bármely más beágyazott adatkészletet. Emellett több táblázatot is hozzáadhat, és egyikkel szűrheti a másikat. Ez a funkció különösen hasznos kisebb méret, statikus adatkészletekhez, amelyeket a jelentésben kell használnia, például a jelentésparaméterekhez.
  
@@ -76,7 +76,7 @@ Az adatkészletet használhatja a jelentés adatvizualizációinak alapjaként. 
 
 ## <a name="upload-the-paginated-report-to-the-power-bi-service"></a>A lapszámozott jelentés feltöltése a Power BI szolgáltatásba
 
-Mivel a Power BI szolgáltatás már előzetes verzióban támogatja a lapszámozott jelentéseket, feltöltheti a jelentését a Prémium szintű kapacitásba. További információ: [Lapszámozott jelentés feltöltése](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report).
+Mivel a Power BI szolgáltatás már támogatja a lapszámozott jelentéseket, feltöltheti a jelentését a Prémium szintű kapacitásba. További információ: [Lapszámozott jelentés feltöltése](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report).
 
 ## <a name="upload-the-paginated-report-to-a-report-server"></a>A lapszámozott jelentés feltöltése egy jelentéskészítő kiszolgálóra
 
@@ -98,5 +98,5 @@ Kész is van! Mostantól ezt az új funkciót használó jelentéseket is közz�
 
 ## <a name="next-steps"></a>Következő lépések
 
-- [Mik a lapszámozott jelentések a Power BI Premiumban? (előzetes verzió)](paginated-reports-report-builder-power-bi.md)
+- [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)
 - [Mi a Power BI jelentéskészítő kiszolgáló?](report-server/get-started.md)

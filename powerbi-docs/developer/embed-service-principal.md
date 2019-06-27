@@ -10,14 +10,14 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 1b0386d523e4a89b7687506564f575e31b55f2e7
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 97903b4e6f906f2cb09f6285832ad6eb9a5a8dca
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720329"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823298"
 ---
-# <a name="service-principal-with-power-bi-preview"></a>Szolgáltatásnév a Power BI-jal (előzetes verzió)
+# <a name="service-principal-with-power-bi"></a>Szolgáltatásnév a Power BI-jal
 
 **Szolgáltatásnévvel** beágyazhat tartalmat egy alkalmazásba, és használhat automatizálást a Power BI-jal **csak az alkalmazásra vonatkozó** token használatával. A szolgáltatásnév előnyös a **Power BI Embedded** használatakor vagy **Power BI-feladatok és -folyamatok automatizálásakor**.
 
@@ -94,7 +94,7 @@ A hagyományos fő fiók használatától eltérően a szolgáltatásnév (csak 
    > [!Important]
    > Ha engedélyezi a szolgáltatásnevek használatát a Power BI-ban, az alkalmazás AD-engedélyei többé nem lesznek érvényesek. Az alkalmazás engedélyeit ekkor a Power BI felügyeleti portálján lehet kezelni.
 
-2. Hozzon létre egy [biztonsági csoportot az Azure Active Directoryban (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal), és adja hozzá a létrehozott alkalmazást ehhez a biztonsági csoporthoz. AAD-beli biztonsági csoportot létrehozhat a [PowerShell-lel](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+2.  **Javasolt** – Hozzon létre egy [biztonsági csoportot az Azure Active Directoryban (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal), és adja hozzá a létrehozott alkalmazást ehhez a biztonsági csoporthoz. AAD-beli biztonsági csoportot létrehozhat a [PowerShell-lel](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
     Az alábbiakban egy mintaszkript látható új biztonsági csoport létrehozásához és alkalmazás felvételéhez ebbe a biztonsági csoportba.
 
@@ -109,7 +109,7 @@ A hagyományos fő fiók használatától eltérően a szolgáltatásnév (csak 
     Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
     ```
 
-3. A Power BI adminisztrátoraként a szolgáltatásnevet a Power BI felügyeleti portáljának **Fejlesztői beállítások** szakaszában engedélyezheti. Az Azure AD-ben létrehozott biztonsági csoportot adja hozzá a **Fejlesztői beállítások** **Adott biztonsági csoportok** szakaszához.
+3. A Power BI adminisztrátoraként a szolgáltatásnevet a Power BI felügyeleti portáljának **Fejlesztői beállítások** szakaszában engedélyezheti. Az Azure AD-ben létrehozott biztonsági csoportot adja hozzá a **Fejlesztői beállítások** Adott biztonsági csoportok szakaszához. Emellett szolgáltatásnév-hozzáférést is engedélyezhet a teljes szervezet számára. Ebben az esetben a 2. lépésre nincs szükség.
 
    > [!Important]
    > A szolgáltatásnevek hozzáférhetnek minden olyan bérlői beállításhoz, amely a teljes cégre engedélyezve vannak, vagy olyan biztonsági csoportokra terjednek ki, amelyek a csoport részeként rendelkeznek szolgáltatásnevekkel. Ha a szolgáltatásnév hozzáférését meghatározott bérlői beállításokra szeretné korlátozni, csak meghatározott biztonsági csoportokhoz engedélyezzen hozzáférést, vagy hozzon létre egy dedikált biztonsági csoportot a szolgáltatásnévhez, és zárja ki.
@@ -181,4 +181,4 @@ Alább egy mintaszkript látható a szolgáltatásnév objektumazonosítójának
 * [Alkalmazás regisztrálása](register-app.md)
 * [Power BI Embedded az ügyfelek számára](embed-sample-for-customers.md)
 * [Alkalmazás- és szolgáltatásnév-objektumok az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
-* [Helyszíni adatátjárót szolgáltatásnévvel használó sorszintű biztonság (előzetes verzió)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)
+* [Helyszíni adatátjárót szolgáltatásnévvel használó sorszintű biztonság](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e24218e2a465619fdfbfc279d3cc45370202dd6e
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814829"
+---
 ## <a name="sign-in-account"></a>Bejelentkezési fiók
 
 A felhasználók munkahelyi vagy iskolai fiókjukkal jelentkeznek be. Ez a fiók az Ön **szervezeti fiókja**. Ha feliratkozott egy Office 365-ajánlatra, és nem adta meg a tényleges munkahelyi e-mail-címét, lehetséges, hogy így fog kinézni a cím: nancy@contoso.onmicrosoft.com. A fiókját az Azure Active Directory (AAD) egy bérlőben tárolja. A legtöbb esetben AAD-fiókja egyszerű felhasználóneve megegyezik az e-mail-címével.
@@ -15,33 +23,40 @@ Amennyiben hitelesítési problémák lépnek fel a proxykiszolgálón, cserélj
 
 Az átjáró kimenő kapcsolatot hoz létre az Azure Service Bus felé. A következő kimenő portokon kommunikál: TCP 443 (alapértelmezett), 5671, 5672, 9350-9354.  Az átjáró nem igényel bejövő portokat.
 
-Ajánlott az adatrégió IP-címeit felvenni a tűzfal engedélyezési listájára. Töltse le a [Microsoft Azure Datacenter IP-listáját](https://www.microsoft.com/download/details.aspx?id=41653), amelyet hetente frissítünk. Az átjáró az IP-cím és a teljes tartománynév (FQDN) használatával kommunikál az Azure Service Busszal. Amennyiben kényszeríti az átjáró, hogy HTTPS használatával kommunikáljon, az csak a teljes tartománynevet használja majd, és nem kommunikál az IP-címeken keresztül.
+Ajánlott az adatrégió IP-címeit hozzáadni a tűzfal engedélyezési listájához. Töltse le a [Microsoft Azure Datacenter IP-listáját](https://www.microsoft.com/download/details.aspx?id=41653), amelyet hetente frissítünk. Másik lehetőségként a szükséges portok listáját egy [hálózati portteszt](../service-gateway-onprem-tshoot.md#network-ports-test) végrehajtásával is megkaphatja a helyszíni adatátjáró alkalmazásán. Az átjáró az IP-cím és a teljes tartománynév (FQDN) használatával kommunikál az Azure Service Busszal. Amennyiben kényszeríti az átjáró, hogy HTTPS használatával kommunikáljon, az csak a teljes tartománynevet használja majd, és nem kommunikál az IP-címeken keresztül.
+
 
 > [!NOTE]
 > Az Azure Datacenter listájában szereplő IP-címek a CIDR-jelölésrendszer használatával vannak megadva. Tehát a 10.0.0.0/24 jelölés nem a 10.0.0.0 és 10.0.0.24 közötti tartományt jelöli. További információk a [CIDR-jelölésrendszerről](http://whatismyipaddress.com/cidr).
 
 Az átjáró által használt teljes tartománynevek listája az alábbiakban látható.
 
-| Tartománynevek | Kimenő portok | Leírás |
-| --- | --- | --- |
-| *.download.microsoft.com |80 |A telepítő letöltéséhez használt HTTP-cím. |
-| *.powerbi.com |443 |HTTPS |
-| *.analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
-| *.servicebus.windows.net |5671-5672 |Advanced Message Queueing Protocol (AMQP) |
-| *.servicebus.windows.net |443, 9350-9354 |A Service Bus Relay figyelői a TCP-n (443-as portot igényel a hozzáférés-vezérlési token beszerzéséhez) |
-| *.frontend.clouddatahub.net |443 |HTTPS |
-| *.core.windows.net |443 |HTTPS |
-| login.microsoftonline.com |443 |HTTPS |
-| *.msftncsi.com |443 |Az internetkapcsolat tesztelésére használatos, ha az átjáró nem érhető el a Power BI szolgáltatással. |
-| *.microsoftonline-p.com |443 |Hitelesítésre használható a konfigurációtól függően. |
+| Tartománynevek | Kimenő portok | Leírás |  |
+|-----------------------------|----------------|--------------------------------------------------------------------------------------------------------------------|---|
+| *.download.microsoft.com | 80 | A telepítő letöltéséhez szükséges. Az adatátjáró alkalmazás emellett ezzel ellenőrzi a verziót és az adatátjáró régióját. |  |
+| *.powerbi.com | 443 | A megfelelő Power BI-fürt azonosításához szükséges. |  |
+| *.analysis.windows.net | 443 | A megfelelő Power BI-fürt azonosításához szükséges. |  |
+| *.login.windows.net | 443 | Az adatátjáró alkalmazás az Azure Active Directory/OAuth2 szolgáltatással való hitelesítéséhez szükséges. |  |
+| *.servicebus.windows.net | 5671-5672 | Az Advanced Message Queueing Protocolhoz (AMQP) szükséges. |  |
+| *.servicebus.windows.net | 443, 9350-9354 | A Service Bus Relay a TCP-n működő figyelőihez szükséges (443-as portot igényel a hozzáférés-vezérlési token beszerzéséhez). |  |
+| *.frontend.clouddatahub.net | 443 | Elavult – már nem kötelező. A jövőben kikerül a dokumentációból. |  |
+| *.core.windows.net | 443 | A Power BI adatfolyamai használják az Azure Data Lake-be való adatíráshoz. |  |
+| login.microsoftonline.com | 443 | Az adatátjáró alkalmazás az Azure Active Directory/OAuth2 szolgáltatással való hitelesítéséhez szükséges. |  |
+| *.msftncsi.com | 443 | Az internetkapcsolat, valamint az átjáró a Power BI szolgáltatással való elérhetőségének tesztelésére használatos. |  |
+| *.microsoftonline-p.com | 443 | Az adatátjáró alkalmazás az Azure Active Directory/OAuth2 szolgáltatással való hitelesítéséhez szükséges. |  |
+| | |
 
 > [!NOTE]
-> A visualstudio.com vagy a visualstudioonline.com webhelyekre irányuló adatforgalmat az App Insights használja, és nem szükséges az átjáró működéséhez.
+> Az átjáró telepítése és regisztrációja után csak az Azure Service Bushoz szükséges portok és IP-címek kötelezők. A szükséges portok listáját egy [hálózati portteszt](../service-gateway-onprem-tshoot.md#network-ports-test) végrehajtásával is megkaphatja a helyszíni adatátjáró alkalmazásán.
 
 ## <a name="forcing-https-communication-with-azure-service-bus"></a>A HTTPS-kommunikáció kényszerítése az Azure Service Busszal
 
-Kényszerítheti, hogy az átjáró a közvetlen TCP helyett a HTTPS-sel kommunikáljon az Azure Service Busszal. a HTTPS használata befolyásolhatja a teljesítményt. Ehhez módosítsa a *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* fájl `AutoDetect` értékét `Https` értékre, ahogyan azt a bekezdés utáni kódrészlet mutatja. Ez a fájl (alapértelmezés szerint) a *C:\Program Files\On-premises data gateway* helyen található.
+Kényszerítheti, hogy az átjáró a közvetlen TCP helyett a HTTPS-sel kommunikáljon az Azure Service Busszal.
+
+> [!NOTE]
+> A 2019. júniusi kiadástól kezdve az új telepítések (nem frissítések) alapértelmezés szerint a HTTPS-t használják a TCP helyett az Azure Service Bus ajánlatai alapján.
+
+A HTTPS-kommunikáció kényszerítéséhez módosítsa a *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* fájl `AutoDetect` értékét `Https` értékre, ahogyan azt a bekezdés utáni kódrészlet mutatja. Ez a fájl (alapértelmezés szerint) a *C:\Program Files\On-premises data gateway* helyen található.
 
 ```xml
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">

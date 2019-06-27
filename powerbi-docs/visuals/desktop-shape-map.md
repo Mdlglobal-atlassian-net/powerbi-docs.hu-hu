@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 163fc60052c4124e7c6cbac60f1486a185c35f17
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0789d7e77e3ae501cc2aec92c366c9c2608edd52
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61394796"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839279"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Az Alakzatleképezések funkció a Power BI Desktopban (előzetes verzió)
 Hozzon létre egy **Alakzatleképezés** vizualizációt a régiók különböző színek használatával történő összehasonlításához a térképen. A **Leképezés** vizualizációval szemben az **Alakzatleképezés** vizualizáció nem képes az adatpontok pontos földrajzi helyének megjelenítésére a térképen. Ehelyett alkalmazásának fő célja a régiók relatív összehasonlításának megjelenítése egy térképen eltérő színezéssel.
@@ -27,15 +27,15 @@ Az **Alakzatleképezés**-vezérlőt az előzetes verzióhoz mellékelt térkép
 
 Az **Alakzatleképezés** vizualizáció előzetes verziójú funkció, és azt a Power BI Desktopban engedélyezni kell. Az **Alakzat leképezése** funkció engedélyezéséhez válassza a **Fájl > Lehetőségek és beállítások > Lehetőségek > Előzetes verziójú funkciók** lehetőséget, majd jelölje be az **Alakzatleképezés vizualizációja** jelölőnégyzetet. Miután ezt beállította, újra kell indítania a Power BI Desktopot.
 
-![](media/desktop-shape-map/shape-map_1a.png)
+![az előzetes verziójú Alakzat leképezése funkció engedélyezése](media/desktop-shape-map/power-bi-preview-features.png)
 
-Az **Alakzat leképezése** funkció engedélyezését követően kattintson az **Alakzat leképezése** vezérlőre a **Megjelenítések** panelen.
+Az **Alakzat leképezése** funkció engedélyezését követően válassza az **Alakzat leképezése** ikont a **Vizualizációk** panelen.
 
-![](media/desktop-shape-map/shape-map_2.png)
+![az alakzat leképezési sablonjának kiválasztása](media/desktop-shape-map/power-bi-shape-map-template2.png)
 
 A Power BI Desktop létrehoz egy üres **Alakzat leképezése** vizualizációs tervezési vásznat.
 
-![](media/desktop-shape-map/shape-map_3.png)
+![megjelenik egy üres alakzatleképezés a vásznon](media/desktop-shape-map/shape-map-3.png)
 
 A következő lépések végrehajtásával hozhat létre **Alakzatleképezést**:
 
@@ -46,26 +46,23 @@ A következő lépések végrehajtásával hozhat létre **Alakzatleképezést**
    > 
    > 
 
-   ![](media/desktop-shape-map/shape-map_3a.png)
+   ![alakzatleképezés elkészítése](media/desktop-shape-map/shape-map-3a.png)
 2. A **Formátum** beállítási panelen bontsa ki az **Alakzat** pontot, és válasszon ki egy lehetőséget a **Szabványos térképek** legördülő listából az adatok megjelenítéséhez. Ekkor a renderelés megjelenik, ahogy az a következő képen látható.
 
-   ![](media/desktop-shape-map/shape-map_3b.png)
+   ![a Formázás panel megnyitása és az Alakzat elem kiválasztása](media/desktop-shape-map/shape-map-3b-new.png)
 
    > [!NOTE]
    > A jelen cikk végén lévő **Régiókulcsok** szakaszban megtalálja a térképes régiók kulcsainak táblázatos gyűjteményét, amelynek segítségével elvégezheti az **Alakzat leképezése** vizualizáció tesztelését.
    > 
    > 
-3. Ezt követően a **Formátum** beállítási panelen módosíthatja a térképvetület- és a nagyítási beállításokat, valamint az adatpontok színeit. Módosíthatja a nagyítási beállításokat is. Többek között módosíthatja például a színeket, vagy maximális/minimális értékeket állíthat be.
-
-   ![](media/desktop-shape-map/shape-map_3d.png)
-4. Hozzáadhat kategória-szintű adatoszlopot is a **Jelmagyarázat** gyűjtőhöz, így a térképes régiókat kategóriák alapján osztályozhatja.
+3. Ezután módosíthatja a térképet a formázási beállításokkal, például az **Alapértelmezett szín**, a **Nagyítás** és egyéb lehetőségekkel. Emellett hozzáadhat kategória-szintű adatoszlopot is a **Jelmagyarázat** gyűjtőhöz, így a térképes régiókat kategóriák alapján osztályozhatja.
 
 ## <a name="use-custom-maps"></a>Egyéni térképek használata
 Egyéni térképek használatára is lehetőség van az **Alakzatleképezés** funkcióval, ha azok formátuma **TopoJSON**. Ha a térkép más formátumban van, különböző online eszközök (például a [**Map Shaper**](http://mapshaper.org/)) segítségével konvertálhatja *alakzatfájljait* vagy *GeoJSON* formátumú térképeit **TopoJSON** formátumba.
 
 A **TopoJSON** formátumú térképfájl használatához vegyen fel egy Alakzatleképezés vizualizációt a jelentésbe, valamint néhány adatot a *Hely* és az *Színtelítettség* gyűjtőkbe. Ezt követően jelölje ki a **Vizualizációk** panelen a **Formátum** szakaszt (az alábbi képen (1) számmal jelölve), majd bontsa ki az **Alakzat** szakaszt, és válassza a **+ Térkép hozzáadása** lehetőséget.
 
-![](media/desktop-shape-map/shape-map_6.png)
+![a Formázás panel megnyitása és a Térkép hozzáadása elem kiválasztása](media/desktop-shape-map/shape-map-6-new.png)
 
 ## <a name="sample-custom-map"></a>Egyéni mintatérkép
 Az *Amerikai Egyesült Államok ügyvédi hivatala* minden évben egy éves pénzügyi jelentést ad ki a peres ügyeikhez kapcsolódó adatokról.  Minden jelentés megtalálható a lenti hivatkozáson.
@@ -74,11 +71,11 @@ https://www.justice.gov/usao/resources/annual-statistical-reports
 
 Mivel az államok több körzetre oszthatók, egy egyéni térképet kell használnunk.  Az Egyesült Államok igazságügyi körzeteit tartalmazó **TopoJSON** térkép a **Power BI Desktopba** való importálásával vizualizálhatjuk az éves pénzügyi adatokat kerületi ügyészségekre bontva.  Az alábbi kép egy példa erről a térképről.
 
-![](media/desktop-shape-map/shape-map_7a.png)
+![egyéni alakzatleképezés](media/desktop-shape-map/shape-map-7a.png)
 
 Az egyes államtérképekkel is érdekes műveleteket végezhet, és még részletesebb adatokat jeleníthet meg a bennük található körzetek alapján. 
 
-![](media/desktop-shape-map/shape-map_7b.png)
+![Texas alakzatleképezése](media/desktop-shape-map/shape-map-7b.png)
 
 Ha szeretne ezzel az adatkészlettel és vizualizációval kísérletezni, a következő hivatkozással letöltheti a jelentés létrehozásához használt eredeti PBIX-fájlt.
 
@@ -87,11 +84,11 @@ Ha szeretne ezzel az adatkészlettel és vizualizációval kísérletezni, a kö
 ## <a name="getting-map-data"></a>Térképadatok lekérése
 Az adatoknak a modellbe történő gyors betöltéséhez (erre az **Alakzat leképezése** funkció teszteléséhez van szükség) kimásolhatja a cikk végén található egyik táblát, majd válassza az **Adatbevitel** lehetőséget a **Kezdőlap** menüszalagján.
 
-![](media/desktop-shape-map/shape-map_4.png)
+![Az Adatbevitel elem kiválasztása a Desktopban](media/desktop-shape-map/shape-map-4-new.png)
 
 Ha többoszlopos adatokkal rendelkezik, akkor illessze be az adatokat egy szerkesztő alkalmazásba, például az Excelbe, majd másolja le egyenként az adatoszlopokat. Ezután beillesztheti az adatokat a Power BI Desktopba. A rendszer a felső sort automatikusan fejlécként azonosítja.
 
-![](media/desktop-shape-map/shape-map_5.png)
+![Táblázat létrehozása panel](media/desktop-shape-map/shape-map-5.png)
 
 Megadhat egy új oszlopot úgy, hogy egyszerűen begépeli az új oszlop nevét (a jobb oldali üres oszlopba), majd értékeket vesz fel mindegyik cellába, ahogy az Excelben is tenné. Ha végzett, válassza a **Betöltés** lehetőséget, és a tábla hozzáadódik a Power BI Desktop adatmodelljéhez.
 

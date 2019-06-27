@@ -1,5 +1,5 @@
 ---
-title: Az Azure Machine Learning integrálása a Power BI-jal (Előzetes verzió)
+title: Az Azure Machine Learning integrálása a Power BI-jal
 description: Tudnivalók az Azure Machine Learning a Power BI szolgáltatással történő használatáról
 author: davidiseminger
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 86fab3a760eb8bb12ed1955fd5bf357790090e0e
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: 10ee974b73372fb2243febdcb4431b5decebdf4b
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448335"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823488"
 ---
-# <a name="azure-machine-learning-integration-in-power-bi-preview"></a>Az Azure Machine Learning integrálása a Power BI-jal (Előzetes verzió)
+# <a name="azure-machine-learning-integration-in-power-bi"></a>Az Azure Machine Learning integrálása a Power BI-jal
 
 Számos szervezet használja a **Machine Learning** modelljeit hatékonyabb üzleti elemzések és előrejelzések készítéséhez. A modellekből kinyerhető információk (valamint ezek megjelenítése) a jelentésekben, irányítópultokban és egyéb elemzésekben segít az üzleti felhasználóknak értelmezni ezeket az adatokat.  A Power BI mostantól egérrel végezhető műveletekkel egyszerűen beépíthetővé teszi az Azure Machine Learning Service modelljeinek elemzéseit.
 
@@ -51,7 +51,7 @@ A cikk lépései ismertetik, hogyan adhat hozzáférést egy Power BI-felhaszná
 
     ![Az előfizetés kiválasztása](media/service-machine-learning-integration/machine-learning-integration_02.png)
 
-4. Válassza a **Hozzáférés-vezérlés (IAM)**, majd a **Hozzáadás** lehetőséget.
+4. Válassza a **Hozzáférés-vezérlés (IAM)** , majd a **Hozzáadás** lehetőséget.
 
     ![Hozzáférés-vezérlés AIM](media/service-machine-learning-integration/machine-learning-integration_03.png)
 
@@ -75,7 +75,7 @@ A belépési szkript *@input_schema* és *@output_schema* függvénye az *input_
 A belépési szkript módosításakor ezeket a sémagenerálási utasításokat kell alkalmazni az Azure Machine Learning SDK-val végzett automatizált gépi tanulási kísérletek használatával létrehozott modellekre is.
 
 > [!NOTE]
-> Az Azure Machine Learning szolgáltatás vizuális interfészének (előzetes verzió) használatával létrehozott modellek jelenleg nem támogatják a sémagenerálást, de a későbbi kiadásokban már fogják. 
+> Az Azure Machine Learning szolgáltatás vizuális interfészének használatával létrehozott modellek jelenleg nem támogatják a sémagenerálást, de a későbbi kiadásokban már fogják. 
 
 ## <a name="invoking-the-azure-ml-model-in-power-bi"></a>Az Azure ML-modell meghívása a Power BI-ban
 
@@ -107,11 +107,11 @@ Az adatfolyam mentése után a rendszer az entitástábla minden új vagy friss�
 
 Ez a cikk áttekintést nyújtott a Machine Learning a Power BI szolgáltatásba való integrálásáról. Az alábbi cikkeket is érdekesnek találhatja. 
 
-* [Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)](service-tutorial-invoke-machine-learning-model.md)
+* [Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban](service-tutorial-invoke-machine-learning-model.md)
 * [Oktatóanyag: A Cognitive Services használata a Power BI-ban](service-tutorial-use-cognitive-services.md)
-* [A Cognitive Services a Power BI-ban (Előzetes verzió)](service-cognitive-services.md)
+* [Cognitive Services-szolgáltatások a Power BI-ban](service-cognitive-services.md)
 
-Az adatfolyamokkal szolgáltatással kapcsolatban az alábbi cikkeket érdemes elolvasni:
+Az adatfolyamokkal kapcsolatban az alábbi cikkeket érdemes elolvasni:
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
 * [Számított entitások használata a Power BI Premiumban](service-dataflows-computed-entities-premium.md)
 * [Adatfolyamok használata helyszíni adatforrásokkal](service-dataflows-on-premises-gateways.md)

@@ -8,20 +8,20 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ef03a562351b8f4487e4822ef28b89009ee5cbb4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2fa8fa5248ee1e4330804205b2cedb64021b1913
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61145421"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839803"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Kitöltött (koropletikus) tematikus térképek a Power BI-ban
 A tematikus térképek árnyalással, színezéssel vagy mintázattal jelenítik meg egy értéknek egy földrajzi területen vagy régión belüli viszonylagos eltéréseit.  A viszonylagos eltérések gyorsan megjeleníthetők a világostól (ritkább/kevesebb) a sötétig (gyakrabb/több) terjedő árnyalással.    
 
-![USA-térkép](media/power-bi-visualization-filled-maps-choropleths/large_map.png)
+![USA-térkép](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
 
 ## <a name="what-is-sent-to-bing"></a>Mit küld el a rendszer a Bingnek
 A Power BI a Binggel integrálva adja meg az alapértelmezett térkép-koordinátákat (a geokódolás nevű eljárással). Amikor térképi vizualizációt hoz létre a Power BI szolgáltatásban vagy a Power BI Desktopban, akkor a **Hely**, **Szélesség** és **Hosszúság** gyűjtőben lévő (a vizualizáció létrehozásához használt) adatok továbbítódnak a Bingnek.
@@ -55,10 +55,11 @@ Ezen a videón Kim egy egyszerű térképet hoz létre és alakít át kitöltö
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 ### <a name="get-data-and-add-a-new-blank-page-to-the-report"></a>Adatok lekérése, illetve új üres lap hozzáadása a jelentéshez
-1. Saját tematikus térkép létrehozásához jelentkezzen be a Power BI-ba, majd az **Adatok beolvasása \> Minták \> Értékesítés és Marketing \> Csatlakozás** lehetőség választásával [töltse le az Értékesítés és Marketing mintát](../sample-datasets.md).
-2. A sikert jelző üzenet megjelenése után zárja be az üzenetet, és kattintson a **Jelentések** lapra. A jelentés megnyitásához válassza az **Értékesítési és marketingminta** lehetőséget.
+1. Saját tematikus térkép létrehozásához jelentkezzen be a Power BI-ba, majd az **Adatok beolvasása \> Minták \> Értékesítés és Marketing \> Csatlakozás** lehetőség választásával [töltse le az Értékesítés és Marketing mintát](../sample-datasets.md). Vagy szerezze be a **Power BI Sales and Marketing** alkalmazást az appsource.com oldalról. 
 
-   ![Jelentés tartalomjegyzéke](media/power-bi-visualization-filled-maps-choropleths/power-bi-content-reports2.png)
+2. Nyissa meg az értékesítési és marketingjelentést.
+
+   ![Megnyílik az értékesítési és marketingjelentés](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
 3. A Power BI megnyitja a jelentést. Válassza a **Jelentés szerkesztése** elemet a jelentés [szerkesztési nézetben](../service-interact-with-a-report-in-editing-view.md) való megnyitásához.
 
 4. A vászon aljánál lévő sárga plusz ikonra kattintva adjon hozzá egy új oldalt.
@@ -123,13 +124,13 @@ A kitöltött térképek egyes helyeinek kiemelésével a rendszer keresztszűri
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 A térképadatok nem feltétlenül egyértelműek.  Van például egy Paris nevű város (Párizs) Franciaországban, de van egy Paris Texasban is. A földrajzi adatok feltehetően külön oszlopokban tárolódnak – Egy oszlopban a városok nevei, egy oszlopban az államoké vagy tartományoké, stb. – így a Bing nem mindig tudja eldönteni, hogy melyik Paris nevű városról van szó. Ha az adatkészlet földrajzi szélesség- és hosszúság-adatokat is tartalmaz, akkor a Power BI speciális mezőkkel támogatja a térképadatok egyértelművé tételét. Ehhez elég a szélesség értékét tartalmazó mezőt a Megjelenítések \> Szélesség területre húzni.  Tegye ugyanezt a hosszúsági adatokkal.    
 
-![A Vizualizációk és a Mezők panel](media/power-bi-visualization-filled-maps-choropleths/pbi_latitude.png)
+![A Vizualizációk és a Mezők panel](media/power-bi-visualization-filled-maps-choropleths/pbi-latitude.png)
 
 Ha rendelkezik az adatkészlet Power BI Desktopban történő szerkesztéséhez szükséges jogosultsággal, akkor tekintse meg ezt a térképek kétértelműségének feloldásában segítő videót.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
 
-Ha nem fér hozzá a szélességi és hosszúsági adatokhoz, akkor [kövesse ezt az útmutatást az adatkészlet frissítéséhez](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
+Ha nem fér hozzá a szélességi és hosszúsági adatokhoz, azonban szerkesztheti az adatkészletet, [kövesse ezt az útmutatást az adatkészlet frissítéséhez](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
 A térképi vizualizációkhoz további segítséget nyújt a [Tippek és trükkök térképi vizualizációkhoz](../power-bi-map-tips-and-tricks.md) című cikk.
 

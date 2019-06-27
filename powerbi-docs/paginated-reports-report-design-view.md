@@ -1,5 +1,5 @@
 ---
-title: Ismerkedés a lapszámozott jelentések Jelentéstervező nézetével (előzetes verzió)
+title: Ismerkedés a lapszámozott jelentések Jelentéstervező nézetével
 description: A Jelentéskészítő Jelentéstervező nézete a Power BI szolgáltatásban közzétehető lapszámozott jelentések létrehozására szolgáló tervezési felület.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 2e9c402c09bc6f504729b8d6057ef5052f489f41
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 76c12cf411f49fda9f9fe042a6d1aafa457bf914
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61423362"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839537"
 ---
-# <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Ismerkedés a lapszámozott jelentések Jelentéstervező nézetével (előzetes verzió)
+# <a name="getting-around-in-report-design-view-for-paginated-reports"></a>Ismerkedés a lapszámozott jelentések Jelentéstervező nézetével
 
-Jelentéskészítő Tervező nézete a Power BI jelentéskészítő a tervezési terület is közzéteheti a Power BI szolgáltatásban a többoldalas jelentések létrehozásához. A tervezőfelület a Jelentéskészítő közepén található, menüsávokkal és panelekkel körülvéve. A tervezőfelületen vehetők fel és rendezhetők el a jelentés elemei. Ez a cikk a jelentés forrásainak hozzáadására, kiválasztására és elrendezésére, valamint a jelentéselemek tulajdonságainak szerkesztésére használható paneleket ismerteti.  
+A Power BI Jelentéskészítő Jelentéstervező nézete a Power BI szolgáltatásba közzétehető lapszámozott jelentések létrehozására szolgáló tervezési felület. A tervezőfelület a Jelentéskészítő közepén található, menüsávokkal és panelekkel körülvéve. A tervezőfelületen vehetők fel és rendezhetők el a jelentés elemei. Ez a cikk a jelentés forrásainak hozzáadására, kiválasztására és elrendezésére, valamint a jelentéselemek tulajdonságainak szerkesztésére használható paneleket ismerteti.  
 
 ![A Jelentéskészítő Jelentéstervező nézete](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 
@@ -29,7 +29,7 @@ Jelentéskészítő Tervező nézete a Power BI jelentéskészítő a tervezési
 5. [Csoportosítás panel](#5-grouping-pane) 
 6. [Aktuális jelentés állapotsávja](#6-current-report-status-bar)  
   
-## <a name="1-report-data-pane"></a>1. A Jelentésadatok panel  
+## <a name="1-report-data-pane"></a>1\. A Jelentésadatok panel  
  A Jelentésadatok panelen a jelentéshez szükséges jelentésadatokat és -forrásokat határozhatja meg a jelentés elrendezésének megtervezése előtt. A Jelentésadatok panelre többek közt adatforrásokat, adathalmazokat, számított mezőket, jelentésparamétereket és képeket vehet fel.  
   
  Miután felvette az elemeket a Jelentésadatok panelre, mezőket húzhat a jelentéselemekre a tervezési felületen, így meghatározhatja, hogy hol jelenjenek meg az adatok a jelentésben.  
@@ -44,7 +44,7 @@ Jelentéskészítő Tervező nézete a Power BI jelentéskészítő a tervezési
 > [!NOTE]  
 >  Az **Új** gombbal új elemet vehet fel a Jelentésadatok panelre. Ugyanabból vagy másik adatforrásból több adathalmazt is hozzáadhat a jelentéshez. Új adathalmazt azonos adatforrásból úgy vehet fel, hogy a jobb gombbal az adatforrásra kattint, majd az **Adathalmaz hozzáadása** lehetőséget választja.  
   
-## <a name="2-report-design-surface"></a>2. A Jelentéstervező felület  
+## <a name="2-report-design-surface"></a>2\. A Jelentéstervező felület  
  A Jelentéskészítő jelentéstervező felülete a jelentés tervezése során használandó fő terület. Jelentéselemeket, például adatterületeket, segédjelentéseket, szövegmezőket, képeket, téglalapokat és vonalakat úgy helyezhet el a jelentésben, hogy a menüszalagról vagy a Jelentésrészek tárából veszi fel őket a tervezési felületre. Itt csoportokat, kifejezéseket, paramétereket, szűrőket, műveleteket, valamint láthatóságot és formázást állíthat be a jelentéselemekhez.  
   
  Módosíthatja továbbá a következőket:  
@@ -62,12 +62,12 @@ A tervezőfelület mérete eltérhet a jelentés nyomtatásához megadott nyomta
   
 - A vonalzó megjelenítéséhez jelölje be a **Vonalzó** jelölőnégyzetet a **Nézet** lapon.  
   
-## <a name="3-parameters-pane"></a>3. A Paraméterek panel  
+## <a name="3-parameters-pane"></a>3\. A Paraméterek panel  
  Jelentésparaméterekkel szabályozhatja a jelentés adatait, összekötheti a kapcsolódó jelentéseket, és megváltoztathatja a jelentések bemutatásának módját. A Paraméterek panel a jelentésparaméterek rugalmas elrendezését kínálja.  
   
  További információ a jelentésparaméterekről   
   
-## <a name="4-properties-pane"></a>4. A Tulajdonságok panel
+## <a name="4-properties-pane"></a>4\. A Tulajdonságok panel
  Egy jelentés minden eleme, köztük minden adatterület, kép, szövegmező és maga a jelentés törzse is rendelkezik tulajdonságokkal. Egy szövegmező BorderColor tulajdonsága például a szövegmező szegélyének szín értékét, a jelentés PageSize tulajdonsága pedig a jelentés oldalméretét mutatja.  
   
  Ezek a tulajdonságok a Tulajdonságok panelen jelennek meg. A panelen látható tulajdonságok a kijelölt jelentéselemtől függően változnak.  
@@ -93,7 +93,7 @@ A tervezőfelület mérete eltérhet a jelentés nyomtatásához megadott nyomta
  A Tulajdonság panel tetején három gomb található: **Kategória**, **Ábécé** és **Tulajdonságlap**. A Tulajdonságok panel nézetei között a Kategória és az Ábécé gombokkal válthat. A **Tulajdonságlap** gombbal a kijelölt jelentéselem tulajdonságainak párbeszédablakát nyithatja meg.  
   
   
-## <a name="5-grouping-pane"></a>5. A Csoportosítás panel
+## <a name="5-grouping-pane"></a>5\. A Csoportosítás panel
 
  A csoportokkal vizuális hierarchiába rendezhetők a jelentés adatai, és kiszámíthatók az összegek. Az egy adatterületen belüli sor- és oszlopcsoportok a tervezőfelületen és a Csoportosítás panelen is megtekinthetők. A Csoportosítás panelen két további panel érhető el: Sorcsoportok és Oszlopcsoportok. Az adatterület kiválasztása után a Csoportosítás panel az adott adatterületen belüli összes csoportot hierarchikus listában jeleníti meg: A gyermekcsoportok a szülőcsoport alatt, behúzással jelennek meg.  
   
@@ -103,13 +103,13 @@ A tervezőfelület mérete eltérhet a jelentés nyomtatásához megadott nyomta
   
  További információt a Csoportosítás panel és a Csoportok ismertetése című cikkben talál.  
   
-## <a name="6-current-report-status-bar"></a>6. Az aktuális jelentés állapotsávja
+## <a name="6-current-report-status-bar"></a>6\. Az aktuális jelentés állapotsávja
 
 Az aktuális jelentés állapotsávján annak a kiszolgálónak a neve látható, amelyhez a jelentés csatlakoztatva van, vagy a „Nincs aktuális jelentéskiszolgáló” felirat jelenik meg. A **Csatlakozás** lehetőséget választva csatlakozhat egy kiszolgálóhoz.
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Mik a lapszámozott jelentések a Power BI Premiumban? (előzetes verzió)](paginated-reports-report-builder-power-bi.md) 
+[Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md) 
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Beágyazott adatforrások lapszámozott jelentésekhez a Power BI szolgáltatásban (előzetes verzió)
+title: Beágyazott adatforrások lapszámozott jelentésekhez a Power BI szolgáltatásban
 description: Ebből a cikkből beágyazott adatforrások lapszámozott jelentésekben való létrehozását és módosítását sajátíthatja el a Power BI szolgáltatásban.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/16/2019
-ms.openlocfilehash: 4dd9ad935a9f7b286aa64d977a78364f2aed0e0f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: 7b687fd67f844e000811ae00a53772ab9403ab90
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65853382"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66838932"
 ---
-# <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Beágyazott adatforrás létrehozása lapszámozott jelentésekhez a Power BI szolgáltatásban (előzetes verzió)
+# <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Beágyazott adatforrás létrehozása lapszámozott jelentésekhez a Power BI szolgáltatásban
 
 Ebből a cikkből beágyazott adatforrások lapszámozott jelentésekhez való létrehozását és módosítását sajátíthatja el a Power BI szolgáltatásban. Beágyazott adatforrást egyetlen jelentéshez definiálhat, és csak ebben a jelentésben használhatja fel. A Power BI szolgáltatásban közzétett lapszámozott jelentések jelenleg beágyazott adathalmazokat és beágyazott adatforrásokat igényelnek, és a következő adatforrásokhoz kapcsolódhatnak:
 
@@ -26,16 +26,18 @@ Ebből a cikkből beágyazott adatforrások lapszámozott jelentésekhez való l
 - Oracle 
 - Teradata 
 
-Ezeket az adatforrásokat, használja a [SQL Server Analysis Services-kapcsolat](service-premium-connect-tools.md) lehetőséget:
+A következő adatforrások esetében használja az [SQL Server Analysis Services-kapcsolat](service-premium-connect-tools.md) lehetőséget:
 
 - Azure Analysis Services
-- A Power BI prémium szintű adatkészleteiket
+- Power BI Premium-adatkészletek
 
-A lapszámozott jelentések átjárón keresztül kapcsolódnak a helyszíni adatforrásokhoz. Az átjárót azután állíthatja be, hogy a jelentést közzéteszi a Power BI szolgáltatásban. További információ a [Power BI-átjárókról](service-gateway-getting-started.md). 
+A lapszámozott jelentések átjárón keresztül kapcsolódnak a [Power BI-átjáróhoz](service-gateway-getting-started.md). Az átjárót azután állíthatja be, hogy a jelentést közzéteszi a Power BI szolgáltatásban.
+
+További információ: [Jelentésadatok a Power BI Jelentéskészítőben](report-builder-data.md).
 
 ## <a name="create-an-embedded-data-source"></a>Beágyazott adatforrás létrehozása
   
-1. Nyissa meg a Power BI jelentéskészítő.
+1. Nyissa meg a Power BI Jelentéskészítőt.
 
 1. A Jelentésadatok panel eszköztárán válassza az **Új** > **Adatforrás** lehetőséget. Ekkor megnyílik az **Adatforrás tulajdonságai** párbeszédpanel.
 
@@ -68,4 +70,4 @@ A lapszámozott jelentések átjárón keresztül kapcsolódnak a helyszíni ada
 ## <a name="next-steps"></a>Következő lépések
 
 - [Beágyazott adathalmaz létrehozása lapszámozott jelentéshez a Power BI szolgáltatásban](paginated-reports-create-embedded-dataset.md)
-- [Mik azok a lapszámozott jelentések a Power BI Premiumban? (előzetes verzió)](paginated-reports-report-builder-power-bi.md)
+- [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)

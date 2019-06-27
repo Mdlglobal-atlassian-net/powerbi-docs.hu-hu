@@ -7,29 +7,25 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: sample
-ms.date: 06/23/2018
+ms.date: 06/11/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: c508a97d10c1ac16df5c5a006900257d7003ed43
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1227179a143ccfb4f313a298f9ab8eaacae9c652
+ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61200391"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67038890"
 ---
-# <a name="download-the-financial-sample-workbook-for-power-bi"></a>A Power BI-hoz készült Pénzügyi minta munkafüzet letöltése
-Adatokra van szüksége a Power BI szolgáltatás kipróbálásához? Összeállítottunk egy pénzügyi adatokat tartalmazó, egyszerű Excel-munkafüzetet, amelyet letölthet.  Innen töltheti le:
+# <a name="download-the-financial-sample-workbook-for-power-bi"></a>A Pénzügyi minta munkafüzet letöltése a Power BI-hoz
+Adatokra van szüksége a Power BI szolgáltatás kipróbálásához? Összeállítottunk egy pénzügyi adatokat tartalmazó, egyszerű Excel-munkafüzetet, amelyet letölthet: [Pénzügyi minta – Excel-munkafüzet](http://go.microsoft.com/fwlink/?LinkID=521962).
 
-Pénzügyi adatokat tartalmazó minta Excel-munkafüzet: [a minta közvetlen letöltése](http://go.microsoft.com/fwlink/?LinkID=521962).
-
-A munkafüzet piaci szegmensenként és országonként/régiónként egy adattáblát tartalmaz értékesítési és nyereségadatokkal.
+A munkafüzet piaci szegmensenként és országonként egy adattáblát tartalmaz értékesítési és nyereségadatokkal.
 
 ### <a name="next-steps"></a>Következő lépések
-[Adatok lekérése](service-get-data.md)
+[Adatok lekérése Excel-munkafüzetekből](service-excel-workbook-files.md).
 
-[Excel-adatok importálása](service-excel-workbook-files.md)
+[A Power BI-ban tesztelhető mintaadatok](sample-datasets.md).
 
-[A Power BI-ban tesztelhető egyéb adatok – mintaadatkészletek és tartalomcsomagok](sample-datasets.md)
-
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
 

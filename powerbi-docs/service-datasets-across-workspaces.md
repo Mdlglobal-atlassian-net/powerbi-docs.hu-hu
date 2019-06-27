@@ -7,19 +7,21 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 06/07/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a5e4b41b36dfbf6cca14a348268b96eaad21b00e
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: d893088978d7a412d0e005ca7b3280824974c76c
+ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461856"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66816678"
 ---
 # <a name="use-datasets-across-workspaces-preview"></a>Adathalmazok használata több munkaterületen (előzetes verzió)
 
 Az üzleti intelligencia együttműködésen alapuló tevékenység. Fontos az egységes adathalmazok létrehozása, amelyek „egyetlen információforrásaként” használhatók. Sok múlik az ilyen egységes adathalmazok megismerésén és ismételt felhasználásán. Ha vállalata adatmodellező szakértői optimalizált adathalmazokat hoznak létre és osztanak meg, a jelentéskészítők ezekből az adathalmazokból kiindulva pontos jelentéseket készíthetnek. Így a vállalat egységes adatok alapján hozhat döntéseket, és megfelelő adatkultúrával fog rendelkezni.
+
+![Megosztott adatkészlet kiválasztása](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
 A Power BI egyszerűvé teszi az adathalmazok létrehozói számára az adathalmazok minősítését és megismertetését, hogy mások felfedezhessék azokat. A jelentéskészítők így minőségi, hivatalos adathalmazokra találhatnak, amelyeket bárhol felhasználhatnak a Power BI-ban. Az adathalmazok tulajdonosai az [összeállítási engedély](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) használatával szabályozhatják, hogy ki férhet hozzá az adataikhoz. A bérlői rendszergazdák egy új bérlői beállítással [szabályozhatják az adathalmazok több munkaterületen való felhasználását](service-datasets-admin-across-workspaces.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Cognitive Services-szolgáltatások a Power BI-ban (Előzetes verzió)
+title: Cognitive Services-szolgáltatások a Power BI-ban
 description: Útmutató a Cognitive Services Power BI-ban való használatához
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 63de805b357fd5b4d15aeea2231dc952ec9e7077
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 267534198d40b91a5550321162b42ecd45500673
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61182014"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823503"
 ---
-# <a name="cognitive-services-in-power-bi-preview"></a>Cognitive Services-szolgáltatások a Power BI-ban (Előzetes verzió)
+# <a name="cognitive-services-in-power-bi"></a>Cognitive Services-szolgáltatások a Power BI-ban 
 
 A Power BI-beli Cognitive Services segítségével az [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) különböző algoritmusait használhatja fel az adatok gazdagítására azoknak az adatfolyamokhoz való önkiszolgáló előkészítése során.
 
@@ -25,7 +25,7 @@ A támogatott szolgáltatások jelenleg a következők: [Hangulatelemzés](https
 
 ## <a name="enabling-ai-features"></a>**Mesterségesintelligencia-funkciók engedélyezése**
 
-A Cognitive Services prémium szintű kapacitásbeli EM2, A2 vagy P1 és magasabb csomópontokhoz támogatott. A kapacitáson külön MI-számítási feladat szolgál a Cognitive Services-szolgáltatások futtatására. A nyilvános előzetes verzió időtartama alatt ez a számítási feladat alapértelmezés szerint le van tiltva. Ahhoz, hogy a Cognitive Services használható legyen a Power BI-ban, a mesterségesintelligencia-számítási feladatot engedélyezni kell a felügyeleti portál kapacitásbeállításai között. Az MI-számítási feladat a Számítási feladatok szakaszban kapcsolható be, és itt adható meg a számítási feladat által maximálisan felhasználható memória mennyisége. A javasolt memóriakorlát 20%. Ennek a korlátnak a túllépése lelassítja a lekérdezést.
+A Cognitive Services prémium szintű kapacitásbeli EM2, A2 vagy P1 és magasabb csomópontokhoz támogatott. A kapacitáson külön MI-számítási feladat szolgál a Cognitive Services-szolgáltatások futtatására. A nyilvános előzetes verzió időtartama alatt (2019. június előtt) ez a számítási feladat alapértelmezés szerint le volt tiltva. Ahhoz, hogy a Cognitive Services használható legyen a Power BI-ban, a mesterségesintelligencia-számítási feladatot engedélyezni kell a felügyeleti portál kapacitásbeállításai között. Az MI-számítási feladat a Számítási feladatok szakaszban kapcsolható be, és itt adható meg a számítási feladat által maximálisan felhasználható memória mennyisége. A javasolt memóriakorlát 20%. Ennek a korlátnak a túllépése lelassítja a lekérdezést.
 
 ![Cognitive Services-szolgáltatások a Power BI-ban](media/service-cognitive-services/cognitive-services_01.png)
 
@@ -95,14 +95,14 @@ Ez a függvény képre mutató URL-címet vagy Base64-mezőt vár bemeneteként.
 
 Ez a cikk a Cognitive Services-szolgáltatásoknak a Power BI szolgáltatással való használatáról nyújtott áttekintést. Az alábbi cikkek is érdekesek és hasznosak lehetnek. 
 
-* [Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)](service-tutorial-invoke-machine-learning-model.md)
-* [Az Azure Machine Learning integrálása a Power BI-jal (Előzetes verzió)](service-machine-learning-integration.md)
+* [Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban](service-tutorial-invoke-machine-learning-model.md)
+* [Az Azure Machine Learning integrálása a Power BI-jal](service-machine-learning-integration.md)
 * [Oktatóanyag: A Cognitive Services használata a Power BI-ban](service-tutorial-use-cognitive-services.md)
 
 
 Az adatfolyamokkal kapcsolatban az alábbi cikkeket érdemes elolvasni:
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
-* [A Power BI Premium számított entitások használatával](service-dataflows-computed-entities-premium.md)
-* [Adatfolyamok használata a helyszíni adatforrások](service-dataflows-on-premises-gateways.md)
-* [Fejlesztői erőforrások a Power BI-adatfolyamok](service-dataflows-developer-resources.md)
+* [Számított entitások használata a Power BI Premiumban](service-dataflows-computed-entities-premium.md)
+* [Adatfolyamok használata helyszíni adatforrásokkal](service-dataflows-on-premises-gateways.md)
+* [Fejlesztői erőforrások Power BI-adatfolyamokhoz](service-dataflows-developer-resources.md)
 * [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md)
