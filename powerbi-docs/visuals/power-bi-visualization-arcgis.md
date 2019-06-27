@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
-ms.subservice: powerbi-visuals
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b3f1c3780b60efc2ade444960a92234afecc71e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 74c4468cbb764d8bd7720845939b3b7fbdf66b06
+ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61253032"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67299469"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Esri ArcGIS-térképek a Power BI szolgáltatásban és a Power BI Desktopban
 Ez az oktatóanyag az ArcGIS-térképet létrehozó személy szemszögéből van megírva. Ha a készítő megosztja az ArcGIS-térképet egy kollégájával, az illető megtekintheti és használhatja a térképet, azonban nem mentheti a módosításokat. További információ az ArcGIS-térképek megtekintéséről: [Az ArcGIS-térképek használata](power-bi-visualizations-arcgis.md).

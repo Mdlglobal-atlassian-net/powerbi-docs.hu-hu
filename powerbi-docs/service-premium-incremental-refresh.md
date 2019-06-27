@@ -1,21 +1,21 @@
 ---
 title: Növekményes frissítés a Power BI Premium szolgáltatásban
 description: Megismerheti, hogyan használhat rendkívül nagyméretű adatkészleteket a Power BI Premium szolgáltatásban.
-author: christianwade
+author: mgblythe
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/10/2019
-ms.author: chwade
+ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 55676dc2ba2978fb2847543c670726582c589d53
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: ee5ec87e04517ce93589b371e97116acbcb02e87
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751141"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408591"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Növekményes frissítés a Power BI Premium szolgáltatásban
 
@@ -41,7 +41,7 @@ A potenciálisan több milliárd sort tartalmazó nagyméretű adatkészletek ne
 
 #### <a name="rangestart-and-rangeend-parameters"></a>RangeStart és RangeEnd paraméter
 
-A növekményes frissítés esetén az adatokat dátum/idő típusú Power Query-paraméterekkel szűrheti, amelyeknek a **RangeStart** és a **RangeEnd** fenntartott nevet kell adnia, a kis- és nagybetűk különbségére is ügyelve. Ezekkel a paraméterekkel szűrhetők a Power BI Desktopba importált adatok, valamint dinamikusan tartományokba particionálhatók, miután közzétette őket a Power BI szolgáltatásban. A paraméterértékeket a szolgáltatás helyettesíti az egyes partíciók szűréséhez. A közzététel után a paraméterek értékét automatikusan felülbírálja a Power BI szolgáltatás. Nem szükséges a szolgáltatásban az adatkészlet beállításainál megadnia őket. A közzététel után a paraméterek értékét automatikusan felülbírálja a Power BI szolgáltatás. 
+A növekményes frissítés esetén az adatokat dátum/idő típusú Power Query-paraméterekkel szűrheti, amelyeknek a **RangeStart** és a **RangeEnd** fenntartott nevet kell adnia, a kis- és nagybetűk különbségére is ügyelve. Ezekkel a paraméterekkel szűrhetők a Power BI Desktopba importált adatok, valamint dinamikusan tartományokba particionálhatók, miután közzétette őket a Power BI szolgáltatásban. A paraméterértékeket a szolgáltatás helyettesíti az egyes partíciók szűréséhez. Nem szükséges a szolgáltatásban az adatkészlet beállításainál megadnia őket. A közzététel után a paraméterek értékét automatikusan felülbírálja a Power BI szolgáltatás.
 
 A Power Query-szerkesztőben válassza a **Paraméterek kezelése** lehetőséget a paraméterek alapértelmezett értékkel való definiálásához.
 

@@ -10,14 +10,15 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 083d78552c124c3a53d669357678fb473dfcd5f2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0a80a75765d6e25f42163953e28b544171e8fdb2
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514563"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408336"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Az Elemzés az Excelben hibaelhárítása
+
 Előfordulhat az Elemzés az Excelben funkció használata során, hogy nem várt eredményt kap, vagy nem a kívánt módon működik. Ez az oldal az Elemzés az Excelben használata során felmerülő gyakori problémákra nyújt megoldást.
 
 > [!NOTE]
@@ -57,8 +58,6 @@ Az Excel OLE DB-szolgáltatói kódtárak legújabb verzióját az előző szaka
 Ha az Excel OLE DB-szolgáltatói ügyfélkódtárak naprakészek, a rendszer egy ehhez hasonló párbeszédablakot jelenít meg:
 
 ![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
-
-C:\Users\davidi\Desktop\powerbi-content-pr\articles\media\powerbi-desktop-troubleshooting-analyze-in-excel
 
 Amennyiben a telepíteni kívánt verzió újabb, mint a számítógépen lévő, az alábbi párbeszédablak jelenik meg:
 
