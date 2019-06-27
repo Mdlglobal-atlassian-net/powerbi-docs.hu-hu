@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 1050cf5ee5060a19e4f38b98fb6766b6e5510451
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750989"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389536"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -23,10 +23,6 @@ Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket 
 ## <a name="upcoming-webinars"></a>Közelgő webináriumok
 
 Regisztráljon a Power BI-szakértők előadásaira, ahol lehetősége van élőben feltenni kérdéseit.
-
-**A Microsoft Power BI-t használ: a Power BI használata modern kincstári környezetekben**
-<br>Előadó: Pankaj Gudimella és Guru Kirthigavasan
-<br>[Regisztráljon a június 25-i megtekintéshez (10:00–11:00 Csendes-óceáni téli idő)](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Power BI: Elemzések készítése munkanapok HR-adataiból**
 <br>Előadó: Iman Eftekhari, Julia Paton az Agilis Analyticstől Shahram Karimi a QBE Insurance-től
@@ -61,6 +57,10 @@ Igény szerint elérhető népszerű előadások az első lépésekhez
 **A Microsoft Power BI-t használ – pénzügyi tervezés és elemzés egyszerűen**
 <br>előadó: Cory Hrncirik és Miguel Martinez
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**A Microsoft Power BI-t használ: a Power BI használata modern kincstári környezetekben**
+<br>Előadó: Pankaj Gudimella és Guru Kirthigavasan
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Az alkalmazások magas szintre emelése a Power BI JavaScript API használatával**
 <br>szerző: Nimrod Shalit
@@ -141,17 +141,9 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 <br>Készítette Stephen Cracknell és Stuart Macanliss, US Medical IT
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
-**A Power BI továbbfejlesztése helyadatokkal**
-<br>Előadó: Scott Ball az Esritől és Enrique Plaza a Microsofttól
-<br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
-
 **Alkalmazott intelligencia az értékesítésben és a szolgáltatásokban**
 <br>Készítette Ed Bobrin, Avanade
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
-
-**Egy sikeres trendkurátor 5 eljárása - Rohit Bhargava**
-<br>szerző: Rohit Bhargava, Non-Obvious
-<br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Gyártók: Az iparága digitális átalakuláson megy keresztül – hogyan őrizheti meg vezető pozícióját, és hogyan maximalizálhatja a jövedelmezőséget az analitikai lehetőségek kiaknázásával**
 <br>Készítette Jon Thompson (Blue Margin) és Jim Pastor (Elgin Fastener Group)
@@ -160,6 +152,14 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 **Nyilvános vagy privát adatkészletek vizualizációja az új Power BI- és data.world-összekötőkkel**
 <br>előadó: Patrick McGarry és Miguel Martinez
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
+
+**A Power BI továbbfejlesztése helyadatokkal**
+<br>Előadó: Scott Ball az Esritől és Enrique Plaza a Microsofttól
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
+
+**Egy sikeres trendkurátor 5 eljárása - Rohit Bhargava**
+<br>szerző: Rohit Bhargava, Non-Obvious
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 ### <a name="community"></a>Közösség ###
 
