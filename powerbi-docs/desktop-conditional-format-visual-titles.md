@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: b90ef66d2c118a70f1b18ed4fe302ce1db23e45c
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64769737"
@@ -57,7 +57,7 @@ Miután létrehozta a mező a modellben létrehozott DAX-kifejezése, alkalmazza
 
 Válassza ki a mezőt, és alkalmazza azt, hogy nyissa meg a **Vizualizációk** ablaktáblán. Az a **formátum** területen válassza **cím** a Vizualizáció a cím lehetőségeinek megjelenítéséhez. 
 
-Amikor a jobb gombbal **címszöveget**, egy helyi menü megjelenik, amely lehetővé teszi, hogy válasszon ***fx * feltételes formázás**. A menüelem kiválasztásakor egy **címszöveget** párbeszédpanel jelenik meg. 
+Amikor a jobb gombbal **címszöveget**, egy helyi menü megjelenik, amely lehetővé teszi, hogy válasszon ***fx* feltételes formázás**. A menüelem kiválasztásakor egy **címszöveget** párbeszédpanel jelenik meg. 
 
 ![Képernyőkép a cím szövegének párbeszédpanel](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 
