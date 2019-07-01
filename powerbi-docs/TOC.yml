@@ -417,50 +417,46 @@
           href: service-whats-new.md
         - name: Alapfogalmak
           items:
-            - name: Alapfogalmak tervezőknek
+            - name: A Power BI szolgáltatás ismertetése
               href: service-basic-concepts.md
-            - name: Adattípusok a Power BI-ban
-              href: service-get-data.md
             - name: A jelentésszerkesztő bemutatása
               href: service-the-report-editor-take-a-tour.md
-        - name: Munkafolyamat a Power BI-ban
+            - name: Adatforrások a Power BI-hoz
+              href: service-get-data.md
+            - name: Adatfrissítés a Power BI-ban
+              href: refresh-data.md
+        - name: Együttműködés a Power BI-ban
           items:
             - name: A munka szervezése
               href: service-new-workspaces.md
-            - name: A munka megosztásának módjai
+            - name: Hogyan oszthatja meg munkáját
               href: service-how-to-collaborate-distribute-dashboards-reports.md
-            - name: Az adatok frissen tartása
-              href: refresh-data.md
-            - name: A használat monitorozása
+            - name: A Power BI-felhasználás monitorozása
               href: service-usage-metrics.md
         - name: Licencelés
           items:
-            - name: Önkiszolgáló regisztráció
+            - name: Regisztráció a Power BI-ra
               href: service-self-service-signup-for-power-bi.md
-            - name: Licencelés a cégnél
+            - name: Power BI-licencek kezelése
               href: service-admin-licensing-organization.md
             - name: Funkciók licenctípusok szerint
               href: service-features-license-type.md
-        - name: További fogalmak
+            - name: Power BI az USA kormányzati szervei számára
+              href: service-govus-overview.md
+            - name: Gyakori kérdések a Germany Cloud-ügyfelek számára
+              href: service-govde-faq.md
+        - name: Segítség és támogatás kérése
           items:
-            - name: 10 tanács segítségkéréshez
-              href: service-tips-for-finding-help.md
             - name: A Power BI támogatási lehetőségei
               href: service-support-options.md
-            - name: A licencelés speciális esetei
-              items:
-                - name: A Kiterjesztett Pro-próbaverzió aktiválása
-                  href: service-extended-pro-trial.md
-                - name: Power BI az USA kormányzati szervei számára
-                  href: service-govus-overview.md
-                - name: Gyakori kérdések a Germany Cloud-ügyfelek számára
-                  href: service-govde-faq.md
-            - name: Egyéb
-              items:
-                - name: A Microsoft Flow és a Power BI
-                  href: service-flow-integration.md
-                - name: Első lépések harmadik féltől származó alkalmazásokkal
-                  href: service-power-bi-get-started-third-party-apps.md
+            - name: 10 tanács segítségkéréshez
+              href: service-tips-for-finding-help.md
+        - name: A Power BI kiterjesztése
+          items:
+            - name: A Microsoft Flow és a Power BI
+              href: service-flow-integration.md
+            - name: Külső alkalmazások használata
+              href: service-power-bi-get-started-third-party-apps.md
     - name: Útmutató
       items:
         - name: Adatok lekérdezése fájlból
@@ -859,14 +855,12 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: Tartalomcsomaggal való kapcsolat eltávolítása
                   href: service-organizational-content-pack-disconnect.md
+        - name: Hivatkozás
+          items:
+            - name: Támogatott nyelvek és országok/régiók
+          href: supported-languages-countries-regions.md
     - name: Erőforrások
       items:
-        - name: Videók
-          href: videos.md
-        - name: Webináriumok
-          href: webinars.md
-        - name: Támogatott nyelvek és országok/régiók
-          href: supported-languages-countries-regions.md
         - name: Tanulmányok
           items:
             - name: Tanulmányok áttekintése
@@ -877,6 +871,10 @@
               href: whitepaper-powerbi-premium-deployment.md
             - name: Power BI-tartalom külső terjesztése az Azure Active Directory B2B használatával
               href: whitepaper-azure-b2b-power-bi.md
+        - name: Videók
+          href: videos.md
+        - name: Webináriumok
+          href: webinars.md
 - name: Power BI Premium
   items:
     - name: Áttekintés

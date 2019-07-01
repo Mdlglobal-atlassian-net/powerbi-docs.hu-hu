@@ -9,18 +9,20 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 7b687fd67f844e000811ae00a53772ab9403ab90
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 3dcc8211f6752d272d550dfaff343374866187c9
+ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66838932"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67345497"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Beágyazott adatforrás létrehozása lapszámozott jelentésekhez a Power BI szolgáltatásban
 
 Ebből a cikkből beágyazott adatforrások lapszámozott jelentésekhez való létrehozását és módosítását sajátíthatja el a Power BI szolgáltatásban. Beágyazott adatforrást egyetlen jelentéshez definiálhat, és csak ebben a jelentésben használhatja fel. A Power BI szolgáltatásban közzétett lapszámozott jelentések jelenleg beágyazott adathalmazokat és beágyazott adatforrásokat igényelnek, és a következő adatforrásokhoz kapcsolódhatnak:
 
-- Azure SQL Database és Data Warehouse
+- Azure Analysis Services
+- Azure SQL Database és 
+- Azure SQL Data Warehouse
 - SQL Server
 - SQL Server Analysis Services
 - Oracle 
@@ -28,7 +30,6 @@ Ebből a cikkből beágyazott adatforrások lapszámozott jelentésekhez való l
 
 A következő adatforrások esetében használja az [SQL Server Analysis Services-kapcsolat](service-premium-connect-tools.md) lehetőséget:
 
-- Azure Analysis Services
 - Power BI Premium-adatkészletek
 
 A lapszámozott jelentések átjárón keresztül kapcsolódnak a [Power BI-átjáróhoz](service-gateway-getting-started.md). Az átjárót azután állíthatja be, hogy a jelentést közzéteszi a Power BI szolgáltatásban.
@@ -66,6 +67,30 @@ További információ: [Jelentésadatok a Power BI Jelentéskészítőben](repor
 5.  Kattintson az **OK** gombra.  
   
      Az adatforrás megjelenik a Jelentésadatok panelen.  
+     
+## <a name="limitations-and-considerations"></a>Korlátozások és megfontolandó szempontok
+
+A Power BI-adatkészletekhez csatlakozó többoldalas jelentések kisebb eltérésektől eltekintve ugyanazokat a szabályokat követik, mint amelyek a Power BI-beli megosztott adatkészletekre vonatkoznak.  Annak érdekében, hogy a felhasználók megfelelően tudják megtekinteni a Power BI-adatkészleteket használó többoldalas jelentéseket, és hogy kötelezővé tegye a sorszintű biztonság (RLS) engedélyezését a megtekintéshez, mindenképpen kövesse az alábbi szabályokat:
+
+### <a name="classic-apps-and-app-workspaces"></a>Klasszikus alkalmazások és alkalmazás-munkaterületek
+
+- .rdl ugyanabban a munkaterületben, mint az adatkészlet (ugyanazon tulajdonos): Támogatott
+- .rdl más munkaterületben, mint az adatkészlet (ugyanazon tulajdonos): Támogatott
+- Megosztott .rdl: Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén
+- Megosztott alkalmazás: Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén
+- .rdl ugyanabban a munkaterületben, mint az adatkészlet (eltérő tulajdonos): Támogatott
+- .rdl más munkaterületben, mint az adatkészlet (eltérő tulajdonos): Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén
+- Sorszintű biztonság: Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén a kötelezővé tételhez.
+
+### <a name="new-experience-apps-and-app-workspaces"></a>Új felhasználói móddal rendelkező alkalmazások és alkalmazás-munkaterületek
+
+- .rdl ugyanabban a munkaterületben, mint az adatkészlet: Támogatott
+- .rdl más munkaterületben, mint az adatkészlet (ugyanazon tulajdonos): Támogatott
+- Megosztott .rdl: Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén
+- Megosztott alkalmazás: Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén
+- .rdl ugyanabban a munkaterületben, mint az adatkészlet (eltérő tulajdonos) – támogatott
+- .rdl más munkaterületben, mint az adatkészlet (eltérő tulajdonos): Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén
+- Sorszintű biztonság: Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén a kötelezővé tételhez
 
 ## <a name="next-steps"></a>Következő lépések
 

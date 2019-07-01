@@ -8,15 +8,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2fa8fa5248ee1e4330804205b2cedb64021b1913
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 0123d8123170cfa78b3d13a55ed2f367af0447ae
+ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839803"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67299382"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Kitöltött (koropletikus) tematikus térképek a Power BI-ban
 A tematikus térképek árnyalással, színezéssel vagy mintázattal jelenítik meg egy értéknek egy földrajzi területen vagy régión belüli viszonylagos eltéréseit.  A viszonylagos eltérések gyorsan megjeleníthetők a világostól (ritkább/kevesebb) a sötétig (gyakrabb/több) terjedő árnyalással.    
@@ -70,10 +70,10 @@ Ezen a videón Kim egy egyszerű térképet hoz létre és alakít át kitöltö
 1. A Mezők panelen válassza a **Geo** \> **Állam** mezőt.    
 
    ![Állapot melletti sárga pipa](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
-5. [Alakítsa át a diagramot](power-bi-report-change-visualization-type.md) tematikus térképpé. Figyelje meg, hogy az **Állam** a **Hely** alatt jelenik meg. A Bing Térképek a **Hely** alatti mezőt használja a térkép létrehozásához.  A hely többféle létező földrajzi hely lehet: országok, államok, megyék, városok, irányítószámok vagy más postai kódok, stb. A Bing Térképek világszerte sok helyhez biztosít kitöltött térképformákat. A Hely alatt bevitt érvényes érték nélkül a Power BI nem tudja létrehozni a tematikus térképet.  
+2. [Alakítsa át a diagramot](power-bi-report-change-visualization-type.md) tematikus térképpé. Figyelje meg, hogy az **Állam** a **Hely** alatt jelenik meg. A Bing Térképek a **Hely** alatti mezőt használja a térkép létrehozásához.  A hely többféle létező földrajzi hely lehet: országok, államok, megyék, városok, irányítószámok vagy más postai kódok, stb. A Bing Térképek világszerte sok helyhez biztosít kitöltött térképformákat. A Hely alatt bevitt érvényes érték nélkül a Power BI nem tudja létrehozni a tematikus térképet.  
 
    ![sablonok kiemelt kartogramikonnal](media/power-bi-visualization-filled-maps-choropleths/img003.png)
-6. Szűrje a térképet úgy, hogy csak az Egyesült Államok szárazföldi területeit mutassa.
+3. Szűrje a térképet úgy, hogy csak az Egyesült Államok szárazföldi területeit mutassa.
 
    a.  Keresse meg a **Szűrők** területet a Megjelenítések panel alján.
 
@@ -83,21 +83,24 @@ Ezen a videón Kim egy egyszerű térképet hoz létre és alakít át kitöltö
    c.  Tegyen pipát a **Mind** lehetőség mellé, és távolítsa el a pipát az **AK** elem mellől.
 
    ![Államok legördülő menüje kijelöletlen Minden és AK elemmel](media/power-bi-visualization-filled-maps-choropleths/img005.png)
-7. A **SalesFact** \> **Vélemény** választásával adja azt hozzá a **Színtelítettség** alatt. A **Színtelítettség** alatti mezők szabják meg a térkép árnyalását.  
-   ![Vélemény a Színtelítettség mezőben](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map.png)
-8. A kitöltött térkép zöld és piros árnyalattal jelenik meg, ahol a piros az alacsonyabb véleménypontszámot, a zöld pedig a magasabb, pozitívabb véleménypontszámot jelöli.  Ezen a képen Wyoming-állam (WY) van kijelölve, és látható, hogy az elégedettség nagyon magas, értéke 74.  
-   ![fekete párbeszédpanel az Állam és a Vélemény elemekkel](media/power-bi-visualization-filled-maps-choropleths/power-bi-wy.png)
-9. [Mentse a jelentést](../service-report-save.md).
-##    <a name="adjust-the-color-formatting"></a>A színformázás módosítása
-A Power BI-ban számos lehetőség van a kitöltött térkép megjelenésének szabályozására.
-1. A Formátum ablaktábla megnyitásához válassza a festőhenger ikont.
+4. A Formátum ablaktábla megnyitásához válassza a festőhenger ikont, majd válassza az **Adatszínek** lehetőséget.
 
-    ![Formázás ablaktábla](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-colors.png)
+    ![A formázás panel az Adatszínek beállítással](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-color.png)
 
-2. Adatszínek beállításainak megjelentéséhez kattintson az **Adatszínek** elemre.
-3. A minimális és a maximális érték legyen a sárga és a kék. A minimális és maximális értékeket pedig adja hozzá az adatok alapján. A vezérlők használatával elérheti a kívánt külalakot. 
+5. Válassza a három pontot, majd a **Feltételes formázás** elemet.
 
-    ![nem széttartó színek használata](media/power-bi-visualization-filled-maps-choropleths/power-bi-color.png)
+    ![Adatszínek feltételes formázás gomb](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional-formatting.png)
+
+6. Az **Alapértelmezett színek – Adatszínek** képernyőn ellenőrizheti, milyen színárnyalatokkal jelenik majd meg a tematikus térkép. Beállíthatja többek között, hogy melyik mezőre alapuljon a színárnyalat, és hogy hogyan legyen alkalmazva. Ebben a példában a **SalesFact** > **Vélemények** mezőt használjuk, a legkisebb értékű véleményhez piros színt, a legmagasabbhoz pedig zöld értéket állítunk be. A maximális és a minimális közötti értékek a piros és a zöld árnyalataiban jelennek majd meg. A képernyő alján található illusztráció azt mutatja meg, hogy milyen színskálát lehet használni. 
+
+    ![Alapértelmezett színpanel, kiválasztva a Vélemények](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
+
+7. A kitöltött térkép zöld és piros árnyalattal jelenik meg, ahol a piros az alacsonyabb véleménypontszámot, a zöld pedig a magasabb, pozitívabb véleménypontszámot jelöli.  További részletek megjelenítéséhez húzza a mezőt az Elemleírások területre.  Itt hozzáadtunk egy **Vélemények különbséget**, és kiemeltük Idaho (ID) államot, és az látszik, hogy a véleménykülönbség alacsony: 6.
+   ![tematikus térkép Idaho elemleírásának megjelenítésével](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-idaho.png)
+
+10. [Mentse a jelentést](../service-report-save.md).
+
+A Power BI lehetővé teszi, hogy nagy mértékben megszabhassa a tematikus térkép megjelenését. Próbálkozzon ezekkel az adatszín vezérlőelemekkel, amíg megfelelő megjelenést nem kap. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Kiemelés és keresztszűrés
 További információ a Szűrök ablaktábla használatáról: [Szűrők hozzáadása jelentésekhez](../power-bi-report-add-filter.md).
