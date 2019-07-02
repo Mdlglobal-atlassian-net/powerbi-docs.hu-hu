@@ -231,6 +231,8 @@
               href: desktop-bookmarks.md
             - name: Jelentéstémák használata
               href: desktop-report-themes.md
+            - name: Szűrőtípusok
+              href: power-bi-report-filter-types.md
             - name: Az új szűrőfunkciók kipróbálása
               href: power-bi-report-filter-preview.md
             - name: Gyors mértékek használata
@@ -523,8 +525,6 @@
               href: refresh-csv-file-onedrive.md
             - name: Lekérdezések gyorsítótárazása a Power BI Premiumban
               href: power-bi-query-caching.md
-            - name: Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása
-              href: refresh-troubleshooting-refresh-scenarios.md
         - name: Irányítópultok
           items:
             - name: Az irányítópult bemutatása
@@ -705,6 +705,8 @@
           items:
             - name: Elfelejtette a Power BI-hoz használatos jelszavát?
               href: service-admin-forgot-your-password.md
+            - name: Nem tud bejelentkezni?
+              href: power-bi-cannot-sign-in.md
             - name: További diagnosztikai adatok gyűjtése a Power BI számára
               href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
             - name: Másodlagos e-mail-cím a Power BI-hoz
@@ -713,26 +715,26 @@
               href: service-admin-how-to-use-the-same-account-as-azure.md
             - name: Dedikált Office 365 – ismert problémák
               href: service-admin-office-365-dedicated-known-issues.md
-            - name: Cortana hibaelhárítása
-              href: service-cortana-troubleshoot.md
-            - name: Elemzési problémák elhárítása az Excelben
-              href: desktop-troubleshooting-analyze-in-excel.md
-            - name: Helyszíni adatátjárókkal kapcsolatos hibák elhárítása
-              href: service-gateway-onprem-tshoot.md
-            - name: A Power BI-átjáró hibáinak elhárítása – személyes
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
+            - name: Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása
+              href: refresh-troubleshooting-refresh-scenarios.md
             - name: Nem támogatott adatforrás frissítési hibáinak elhárítása
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
             - name: Az Azure SQL Database ütemezett frissítési hibáinak elhárítása
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
-            - name: 'Hiba: Nem található adat az Excel-munkafüzetben'
-              href: service-admin-troubleshoot-excel-workbook-data.md
             - name: Csempékkel kapcsolatos hibák elhárítása
               href: refresh-troubleshooting-tile-errors.md
+            - name: A helyszíni adatátjáró hibaelhárítása
+              href: service-gateway-onprem-tshoot.md
+            - name: A Power BI Gateway hibaelhárítása – Personal
+              href: service-admin-troubleshooting-power-bi-personal-gateway.md
+            - name: Az Elemzés az Excelben hibaelhárítása
+              href: desktop-troubleshooting-analyze-in-excel.md
+            - name: 'Hiba: Nem található adat az Excel-munkafüzetben'
+              href: service-admin-troubleshoot-excel-workbook-data.md
+            - name: Cortana hibaelhárítása
+              href: service-cortana-troubleshoot.md
             - name: A Xero tartalomcsomag hitelesítő adatainak frissítése frissítési hiba esetén
               href: service-refresh-xero-credentials.md
-            - name: Nem lehet bejelentkezni
-              href: power-bi-cannot-sign-in.md
         - name: Egyéb feladatok
           items:
             - name: Tartalom átnevezése a Power BI-ban
@@ -855,9 +857,9 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: Tartalomcsomaggal való kapcsolat eltávolítása
                   href: service-organizational-content-pack-disconnect.md
-        - name: Hivatkozás
-          items:
-            - name: Támogatott nyelvek és országok/régiók
+    - name: Hivatkozás
+      items:
+        - name: Támogatott nyelvek és országok/régiók
           href: supported-languages-countries-regions.md
     - name: Erőforrások
       items:
@@ -1331,7 +1333,7 @@
           href: service-gateway-personal-mode.md
         - name: Egyéni összekötők
           href: service-gateway-custom-connectors.md
-        - name: A helyszíni adatátjáróval kapcsolatos hibák elhárítása
+        - name: A helyszíni adatátjáró hibaelhárítása
           href: service-gateway-onprem-tshoot.md
     - name: Erőforrások
       items:
