@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: b1d0914f146ea56697ada2a64c59744690595054
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: e7b2f03d561faa7df582b4ad5a975d09d617f98f
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498063"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264622"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Feliratkozás és mások feliratkoztatása jelentésekre és irányítópultokra a Power BI szolgáltatásban
 
@@ -28,8 +28,12 @@ Feliratkozásokat csak a Power BI szolgáltatásban hozhat létre. E-mailt kap a
 
 ## <a name="requirements"></a>Követelmények
 
-- Az előfizetések **létrehozása** a Power BI Pro egyik funkciója.
-- A tartalomra (irányítópultra vagy jelentésre) nem kell szerkesztési jogosultsággal rendelkeznie ahhoz, hogy önmagának hozzon létre feliratkozást, másnak viszont csak akkor tud létrehozni egyet, ha szerkesztési jogosultsággal rendelkezik. 
+Feliratkozás a következőképp **hozható létre**:
+
+- Power BI Pro-licenccel rendelkező felhasználók által
+- A Premium-munkaterületeken vagy -alkalmazásokban található tartalmat megtekintő felhasználók is feliratkozhatnak a tartalomra, akár Power BI Pro-licenc nélkül is.
+
+A tartalomra (irányítópultra vagy jelentésre) nem kell szerkesztési jogosultsággal rendelkeznie ahhoz, hogy önmagának hozzon létre feliratkozást, másnak viszont csak akkor tud létrehozni egyet, ha szerkesztési jogosultsággal rendelkezik. 
 
 ## <a name="subscribe-to-a-dashboard-report-page-or-paginated-report"></a>Feliratkozás irányítópultra, jelentésoldalra vagy lapszámozott jelentésre
 
@@ -87,7 +91,6 @@ A feliratkozás megszűnik, ha lejár a Pro-licence, ha az irányítópultot vag
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 
 * Előfordulhat, hogy a felhasználóknak küldött előfizetési e-mailekben a több mint 25 kitűzött csempével vagy négy kitűzött élő jelentésoldallal rendelkező irányítópultok nem jelennek meg teljes egészében.  Az ennél több csempét tartalmazó irányítópultokra való feliratkozás nincs blokkolva. Ha azonban problémát tapasztal, nem támogatottnak minősülnek. Ajánlott ezeket úgy módosítani, hogy a támogatott tartományba essenek.
-* Ez a feliratkozási feladat kezdési időpontja. Bizonyos helyzetekben eltelhet néhány perc, amíg az e-mail megérkezik a Beérkezett üzenetek közé.
 * Ritkán előfordulhat, hogy az e-mail-feliratkozások kézbesítése 15 percnél többet is igénybe vesz. Ilyen esetben a megfelelő kézbesítési idő érdekében ajánlott más időpontokban futtatni az adatfrissítést és az e-mail-feliratkozását. Ha a probléma továbbra is fennáll, forduljon a Power BI-ügyfélszolgálathoz.
 * Az irányítópultok e-mail-feliratkozásai esetén, ha bármely csempe sorszintű biztonsággal (RLS) rendelkezik, ezek a csempék nem jelennek meg.  
 * A jelentésekhez kapcsolódó e-mail-feliratkozások esetén, ha az adatkészlet sorszintű biztonságot használ, nem hozhat létre feliratkozást saját magának. Nem írathat fel másokat sorszintű biztonsággal (RLS) rendelkező jelentésekre.

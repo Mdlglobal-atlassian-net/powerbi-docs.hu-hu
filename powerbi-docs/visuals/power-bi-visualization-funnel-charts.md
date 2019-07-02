@@ -8,15 +8,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 071b45a4ad9cbd9c753c44de5c55a352767bccbf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b12b2035d7686667535dfdddba42b4b8ca014d96
+ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61067989"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161135"
 ---
 # <a name="funnel-charts"></a>Tölcsérdiagramok
 A tölcsérdiagramok segítségével vizualizálhatja az egymást követő összekapcsolt fázisokból álló lineáris folyamatokat. Ilyen például egy értékesítési tölcsér, amelyen keresztül az ügyfelek nyomon követhetőek az egyes fázisokban: Érdeklődő \> Minősített érdeklődő \> Lehetséges ügyfél \> Szerződés \> Zárás.  A tölcsér alakja egyetlen pillantásra megmutatja a lekövetett folyamat állapotát.
@@ -61,7 +61,7 @@ Ezek az utasítások a Lehetőségelemzési minta használatát feltételezik. A
 2. [Konvertálja a diagramot](power-bi-report-change-visualization-type.md) egy tölcsérré. Láthatja, hogy a **Sales Stage** mező a **Csoport** területen található. 
 3. A **Mezők** ablaktáblán válassza a **Fact** \> **Opportunity Count** lehetőséget.
    
-    ![tölcsérdiagram létrehozása](media/power-bi-visualization-funnel-charts/power-bi-funnel.png)
+    ![tölcsérdiagram létrehozása](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. A mutatót az egyes sávok fölé húzva a rendszer rengeteg információt jelenít meg.
    
    * A fázis neve

@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 06/18/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: b671d2f55135312fb529d4b4b30af3941c525a26
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: 48513ea163847ee3bf1df07151e9985c5bce9656
+ms.sourcegitcommit: 5f22dcda8885d840b7da344d38e89329d02b14fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448321"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67235077"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Csatlakozás adathalmazokhoz ügyfélalkalmazásokkal és eszközökkel (előzetes verzió)
 
@@ -36,7 +36,7 @@ Az ügyféloldali alkalmazások és eszközök túlnyomó többsége nem célzot
 
 A Power BI Premium-munkaterületekhez és -adathalmazokhoz való csak olvasási hozzáférést az alábbi eszközök támogatják:
 
-**SQL Server Management Studio (SSMS)** – Támogatja a DAX-, MDX-, XMLA- és TraceEvent-lekérdezéseket. 18\.0-ás verziót igényel. Letölthető [itt](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
+**SQL Server Management Studio (SSMS)** – Támogatja a DAX-, MDX-, XMLA- és TraceEvent-lekérdezéseket. 18.0-ás verziót igényel. Letölthető [itt](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
 
 **SQL Server Profiler** – Ez az SSMS 18.0 (előzetes verzió) által tartalmazott eszköz a kiszolgálói események nyomkövetését és hibakeresését biztosítja. Minden esemény adatai rögzíthetők és fájlba vagy táblázatba menthetők a későbbi elemzéshez. Bár az SQL Serverhez hivatalosan kivontuk, a Profilert továbbra is tartalmazza az SSMS, a támogatása megmarad az Analysis Serviceshez, és most a Power BI Premiumhoz is. További információt az [SQL Server Profiler](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler) című cikkben talál.
 
@@ -100,6 +100,10 @@ Az alábbi adathalmazok nem érhetők el XMLA-végpontok használatával. Ezek a
 Az alábbi adathalmazok nem támogatottak a Power BI szolgáltatásban:   
 
 - Power BI-adathalmazzal élő kapcsolatban lévő adathalmazok.
+
+### <a name="roles-and-role-memberships"></a>Szerepkörök és szerepkörtagságok
+
+A modellszerepkörök és a szerepkörtagságok jelenleg nem fedezhetők fel és jeleníthetők meg XMLA-végpontokkal.
 
 ## <a name="audit-logs"></a>Auditnaplók 
 

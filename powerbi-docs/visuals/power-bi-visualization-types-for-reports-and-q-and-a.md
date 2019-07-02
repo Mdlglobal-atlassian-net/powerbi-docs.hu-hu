@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 202fa85fa930de45f4f6838202733d8d1098256d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c039f4adc196e619dc81af38fb52cd07e89992f0
+ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61388781"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161175"
 ---
 # <a name="visualization-types-in-power-bi"></a>Vizualizációtípusok a Power BI-ban
 ## <a name="power-bi-visualizations"></a>Power BI-vizualizációk
@@ -27,7 +27,7 @@ Tekintse meg továbbá a [Microsoft AppSource](https://appsource.microsoft.com/m
 Ezek a vizualizációk mind hozzáadhatók a Power BI-jelentésekhez, megadhatók a Q&A-ben, illetve rögzíthetők az irányítópultokon.
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Területdiagramok: Alapszintű (rétegzett) és halmozott
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
+![területdiagramok](media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
 
 >[!TIP]
 >Az alapszintű területdiagram a vonaldiagramon alapul, és a tengely és a vonal közötti terület fel van töltve.
@@ -35,23 +35,23 @@ Ezek a vizualizációk mind hozzáadhatók a Power BI-jelentésekhez, megadható
 További információt az [alapszintű területdiagramot](power-bi-visualization-basic-area-chart.md) ismertető cikkben talál.
 
 ### <a name="bar-and-column-charts"></a>Sáv- és oszlopdiagramok
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bar.png)
+![sávdiagram](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bar.png)
 
- ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_col.png)
+ ![oszlopdiagram](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_col.png)
 
 >[!TIP]
 >A sávdiagram egy adott érték különböző kategóriákban való megjelenítésének alapvető eszköze.
 
 ### <a name="cards-multi-row"></a>Kártyák: Többsoros
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
+![többsoros kártya](media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
 ### <a name="cards-single-number"></a>Kártyák: Egyszámos
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
+![számkártya](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
 
 További információt a [Kártya létrehozása (nagy számot tartalmazó csempe)](power-bi-visualization-card.md) című témakörben talál.
 
 ### <a name="combo-charts"></a>Kombinált diagramok
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/combosmall.png)
+![kombinált diagramok](media/power-bi-visualization-types-for-reports-and-q-and-a/combosmall.png)
 
 >[!TIP]
 >A kombinált diagram egy oszlopdiagram és egy vonaldiagram egyesítésével jön létre. *Vonal- és halmozott oszlopdiagram*, illetve *Vonal- és csoportosított oszlopdiagram* közül választhat.
@@ -59,7 +59,7 @@ További információt a [Kártya létrehozása (nagy számot tartalmazó csempe
 További információt a [Power BI kombinált diagramjait](power-bi-visualization-combo-chart.md) ismertető cikkben talál.
 
 ### <a name="doughnut-charts"></a>Perecdiagramok
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/donutsmall.png)
+![perecdiagram](media/power-bi-visualization-types-for-reports-and-q-and-a/donutsmall.png)
 
 >[!TIP]
 >A perecdiagramok a kördiagramokhoz hasonlítanak.  A részek egészhez való viszonyát ábrázolják.
@@ -67,7 +67,7 @@ További információt a [Power BI kombinált diagramjait](power-bi-visualizatio
 További információt a [Power BI perecdiagramjait](power-bi-visualization-doughnut-charts.md) ismertető cikkben talál.
 
 ### <a name="funnel-charts"></a>Tölcsérdiagramok
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_funnel.png)
+![tölcsérdiagram](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_funnel.png)
 
 >[!TIP]
 >A tölcsérdiagramokkal megjeleníthetők a szakaszos folyamatok úgy, hogy az egyes elemek sorban haladnak egyik szakaszról a másikra.  Akkor használjon tölcsérdiagramot, ha az egyes szakaszok közötti fokozatos változást szeretné megjeleníteni, például egy értékesítési folyamatot, amely értékesítési lehetőségekkel kezdődik, és a vásárlás teljesítésével végződik.
@@ -75,7 +75,7 @@ További információt a [Power BI perecdiagramjait](power-bi-visualization-doug
 További információt a [Power BI tölcsérdiagramjait](power-bi-visualization-funnel-charts.md) ismertető cikkben talál.
 
 ### <a name="gauge-charts"></a>Mérőóra-diagramok
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/gauge_m.png)
+![tárcsadiagram](media/power-bi-visualization-types-for-reports-and-q-and-a/gauge_m.png)
 
 >[!TIP]
 >Az adatok jelenlegi állását szemléltetik egy adott célhoz képest.
@@ -90,7 +90,7 @@ A főbb befolyásolók diagramján a kiválasztott eredmény vagy érték főbb 
 További információt a [Főbb befolyásolók diagramja a Power BI-ban](power-bi-visualization-influencers.md) című témakörben talál.
 
 ### <a name="kpis"></a>KPI-k
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
+![KPI-diagram](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
 
 >[!TIP]
 >Egy mérhető cél elérésében megtett előrehaladást ábrázolják.
@@ -98,13 +98,13 @@ További információt a [Főbb befolyásolók diagramja a Power BI-ban](power-b
 További információt a [Power BI KPI-jeit](power-bi-visualization-kpi.md) ismertető cikkben talál.
 
 ### <a name="line-charts"></a>Vonaldiagramok
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_line.png)
+![vonaldiagram](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_line.png)
 
 >[!TIP]
 >Egy teljes értéksorozat összesített formáját szemléltetik, legtöbbször az idő függvényében.
 
 ### <a name="maps-basic-maps"></a>Térképek: Alapszintű térképek
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy_viz_map.png)
+![alapszintű térkép](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy_viz_map.png)
 
 >[!TIP]
 >A kategorikus és mennyiségi információk térbeli helyekhez való társítására szolgálnak.
@@ -112,12 +112,12 @@ További információt a [Power BI KPI-jeit](power-bi-visualization-kpi.md) isme
 További információ: [Tippek és trükkök térképes vizualizációkhoz](power-bi-map-tips-and-tricks.md).
 
 ### <a name="maps-arcgis-maps"></a>Térképek: ArcGIS-térképek
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
+![ArcGIS-térkép](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
 További információt a [Power BI ArcGIS-térképeit](power-bi-visualization-arcgis.md) ismertető cikkben talál.
 
 ### <a name="maps-filled-maps-choropleth"></a>Térképek: Kitöltött térképek (Choropleth)
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
+![kartogram](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
 
 >[!TIP]
 >Minél intenzívebb egy szín, annál nagyobb értéket jelez.
@@ -125,7 +125,7 @@ További információt a [Power BI ArcGIS-térképeit](power-bi-visualization-ar
 További információt a [Power BI kitöltött térképeit](power-bi-visualization-filled-maps-choropleths.md) ismertető cikkben talál.
 
 ### <a name="maps-shape-maps"></a>Térképek: Alakzatleképezések
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-shape-map2.png)
+![Texas alakzatleképezése](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-shape-map2.png)
 
 >[!TIP]
 >Az egyes régiókat szín alapján hasonlítja össze.
@@ -134,22 +134,37 @@ További információt a [Power BI alakzatleképezéseit](desktop-shape-map.md) 
 
 
 ### <a name="matrix"></a>Mátrix
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
+![mátrix](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
+
+>[!TIP]
+>Egy tábla két dimenziót támogat, egy mátrixszal azonban könnyebben megjeleníthetők a fontos adatok több dimenzióban, ez ugyanis lépcsőzetes elrendezést is támogat. A mátrix automatikusan összesíti az adatokat és elérhetővé teszi a részletezést. 
 
 További információt a [Power BI mátrixvizualizációit](desktop-matrix-visual.md) ismertető cikkben talál.
 
 ### <a name="pie-charts"></a>Tortadiagramok
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
+![tortadiagramok](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
 
-A tortadiagramok a részek egészhez való viszonyát ábrázolják. 
+>[!TIP]
+>A tortadiagramok a részek egészhez való viszonyát ábrázolják. 
+
+### <a name="r-script-visuals"></a>R-szkriptek vizualizációi
+![R vizualizációk](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)
+
+>[!TIP]
+>Az R-parancsfájlokkal létrehozott, gyakran *R-vizualizációknak* nevezett vizualizációk fejlett adatformázást és elemzéseket, például előrejelzéseket kínálnak az R gazdag elemzési és megjelenítési lehetőségeinek kihasználásával. R-vizualizációk a Power BI Desktopban hozhatók létre, és a Power BI szolgáltatásban tehetők közzé.   
+
+További információt a [Power BI R-vizualizációit](service-r-visuals.md) ismertető cikkben talál.
 
 ### <a name="ribbon-chart"></a>Szalagdiagram
 ![menüszalag-diagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-ribbon.png)
 
-A szalagdiagramokon jól látható, hogy melyik adatkategória a legmagasabb rangú (értékű). A szalagdiagramokkal hatékonyan ábrázolható a rangok időbeli változása: minden időszakban a legmagasabb rangú (értékű) kategória látható felül.
+>[!TIP]
+>A szalagdiagramokon jól látható, hogy melyik adatkategória a legmagasabb rangú (értékű). A szalagdiagramokkal hatékonyan ábrázolható a rangok időbeli változása: minden időszakban a legmagasabb rangú (értékű) kategória látható felül.
+
+További információt a [Szalagdiagramok a Power BI-ban](desktop-ribbon-charts.md) című témakörben talál.
 
 ### <a name="scatter-and-bubble-charts"></a>Pont- és buborékdiagramok
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bubble.png)
+![buborékdiagram](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bubble.png)
 
 >[!TIP]
 >2 (pont) vagy 3 (buborék) numerikus érték kapcsolatát jelenítik meg – van-e kapcsolat, mi a sorrend stb.
@@ -157,7 +172,7 @@ A szalagdiagramokon jól látható, hogy melyik adatkategória a legmagasabb ran
 További információt a [Power BI pontdiagramjait](power-bi-visualization-scatter.md) ismertető cikkben talál.
 
 ### <a name="scatter-high-density"></a>Nagy pontsűrűség
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter.png)
+![nagy sűrűségű pontdiagram](media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter.png)
 
 >[!TIP]
 >Ha a vizualizációban túl sok adatpont van, az lelassíthatja és túl zsúfolttá teheti, ezért egy kifinomult mintavételezési algoritmus biztosítja a vizualizáció pontosságát.
@@ -165,17 +180,17 @@ További információt a [Power BI pontdiagramjait](power-bi-visualization-scatt
 További információt a [Power BI nagy sűrűségű pontdiagramjait](desktop-high-density-scatter-charts.md) ismertető cikkben talál.
 
 ### <a name="slicers"></a>Szeletelők
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
+![slicer](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
 
 További információt a [Power BI szeletelőit](power-bi-visualization-slicers.md) ismertető cikkben talál.
 
 ### <a name="standalone-images"></a>Önálló képek
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_image.png)
+![önálló képvizualizáció](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_image.png)
 
 További információkért lásd: [Képwidget hozzáadása egy irányítópulthoz](../service-dashboard-add-widget.md).
 
 ### <a name="tables"></a>Táblák
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
+![táblavizualizáció](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
 
 >[!TIP]
 >Jól használhatók olyan elemek mennyiségi összehasonlításához, amelyek sok kategóriába sorolhatók be.
@@ -183,7 +198,7 @@ További információkért lásd: [Képwidget hozzáadása egy irányítópultho
 További információ: [Táblák használata a Power BI-ban](power-bi-visualization-tables.md).
 
 ### <a name="treemaps"></a>Fatérképek
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_tree.png)
+![fatérkép](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_tree.png)
 
 További információt a [Power BI fatérképeit](power-bi-visualization-treemaps.md) ismertető cikkben talál.
 
@@ -191,7 +206,7 @@ További információt a [Power BI fatérképeit](power-bi-visualization-treemap
 >Ezek a diagramok színes téglalapokból állnak, amelyek a méretükkel jelölik az értékeket.  Lehetnek hierarchikusak, a fő téglalapokban található kisebb téglalapokkal.
 
 ### <a name="waterfall-charts"></a>Vízesésdiagramok
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/waterfallsmall.png)
+![vízesésdiagram](media/power-bi-visualization-types-for-reports-and-q-and-a/waterfallsmall.png)
 
 >[!TIP]
 >A vízesésdiagramok göngyölített összeget jelenítenek meg az értékek összeadásakor vagy kivonásakor.

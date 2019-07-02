@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7adcfeec771796aa9fe322512f8ca8584559cea0
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: 5c93a50ce481c5fad899c1911b30100dca7cb841
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829388"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264487"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Saját titkosítási kulcsok használata a Power BI-hoz (előzetes verzió)
 
@@ -27,18 +27,17 @@ BYOK használatával egyszerűbben eleget tehet a kulcsokkal kapcsolatban a felh
 
 ## <a name="data-source-and-storage-considerations"></a>Adatforrásokkal kapcsolatos és tárolási szempontok
 
-BYOK használatához adatokat kell feltöltenie a Power BI szolgáltatásba egy Power BI Desktop- (PBIX-) fájlból. Amikor a Power BI Desktopból adatforrásokhoz csatlakozik, Importálás tárolási módot kell megadnia. Nem használhat BYOK-t a következő helyzetekben:
+BYOK használatához adatokat kell feltöltenie a Power BI szolgáltatásba egy Power BI Desktop- (PBIX-) fájlból. Nem használhat BYOK-t a következő helyzetekben:
 
-- DirectQuery
 - Élő Analysis Services-kapcsolat
 - Excel-munkafüzetek (ha az adatok nincsenek a Power BI Desktopba importálva)
 - Leküldéses adathalmazok
 
-A következő szakaszban elsajátíthatja az Azure Key Vault konfigurálását, ahol a BYOK-hoz használt titkosítási kulcsokat tárolja.
+A BYOK csak a PBIX-fájlhoz társított adatkészletre vonatkozik, a csempék és vizualizációk lekérdezési eredményeinek gyorsítótáraira nem.
 
 ## <a name="configure-azure-key-vault"></a>Az Azure Key Vault konfigurálása
 
-Az Azure Key Vault titkos kódok, köztük titkosítási kulcsok biztonságos tárolására és elérésére szolgáló eszköz. Titkosítási kulcsok tárolásához használhat meglévő kulcstartót, vagy újat is létrehozhat, amelyet csak a Power BI-hoz használ.
+Ebben a szakaszban megtudhatja, hogyan konfigurálhatja az Azure Key Vaultot, amely egy titkos kódok, köztük titkosítási kulcsok biztonságos tárolására és elérésére szolgáló eszköz. Titkosítási kulcsok tárolásához használhat meglévő kulcstartót, vagy újat is létrehozhat, amelyet csak a Power BI-hoz használ.
 
 Az ebben a szakaszban leírtak feltételezik az Azure Key Vault alapszintű ismeretét. További információ: [Mi az Azure Key Vault?](/azure/key-vault/key-vault-whatis). Kulcstartóját az alábbi módon konfigurálhatja:
 
@@ -86,7 +85,7 @@ Az Azure Key Vault megfelelő konfigurálása után már engedélyezheti bérlő
 
 ## <a name="enable-byok-on-your-tenant"></a>BYOK engedélyezése a bérlőben
 
-BYOK úgy engedélyezhető a bérlői szinten a PowerShell használatával, hogy először bevezeti Power BI-bérlőjében a létrehozott és az Azure Key Vaultban tárolt titkosítási kulcsait. Ez után prémium szintű kapacitásonként kioszthatja ezeket a titkosítási kulcsokat a kapacitásbeli tartalom titkosításához.
+BYOK úgy engedélyezhető a bérlői szinten a [PowerShell](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt.Admin) használatával, hogy először bevezeti Power BI-bérlőjében a létrehozott és az Azure Key Vaultban tárolt titkosítási kulcsait. Ez után prémium szintű kapacitásonként kioszthatja ezeket a titkosítási kulcsokat a kapacitásbeli tartalom titkosításához.
 
 ### <a name="important-considerations"></a>Fontos szempontok
 
@@ -98,7 +97,7 @@ BYOK engedélyezése előtt vegye figyelembe a következőket:
 
 ### <a name="enable-byok"></a>BYOK engedélyezése
 
-BYOK engedélyezéséhez bérlői rendszergazdának kell lennie a Power BI szolgáltatásban, a `Connect-PowerBIServiceAccount` parancsmag használatával bejelentkezve. Ez után az `Add-PowerBIEncryptionKey` paranccsal engedélyezheti a BYOK-ot, az alábbi példán bemutatott módon:
+BYOK engedélyezéséhez bérlői rendszergazdának kell lennie a Power BI szolgáltatásban, a `Connect-PowerBIServiceAccount` parancsmag használatával bejelentkezve. Ez után az [`Add-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/Add-PowerBIEncryptionKey) paranccsal engedélyezheti a BYOK-ot, az alábbi példán bemutatott módon:
 
 ```powershell
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
@@ -110,23 +109,27 @@ A parancsmag két kapcsolóparamétert fogad el, amelyek a jelenlegi és jövőb
 
 - `-Default`: Azt jelzi, hogy ez a kulcs mostantól az egész bérlőben alapértelmezett. Új kapacitás létrehozásakor a kapacitás örökli ezt a kulcsot.
 
-- `-DefaultAndActivate`: Azt jelzi, hogy ez a kulcs az összes meglévő kapacitáshoz, és minden létrehozott új kapacitáshoz használva lesz.
+A `-Default` kapcsoló megadása esetén a bérlőben ettől kezdve létrehozott összes kapacitás a megadott kulccsal (vagy egy frissített alapértelmezett kulccsal) lesz titkosítva. Az alapértelmezett művelet nem vonható vissza, így többé nem tud olyan prémium szintű kapacitást létrehozni a bérlőben, amely nem használ BYOK-ot.
 
-A `-Default` vagy a `-DefaultAndActivate` kapcsoló megadása esetén a bérlőben ettől kezdve létrehozott összes kapacitás a megadott kulccsal (vagy egy frissített alapértelmezett kulccsal) lesz titkosítva. Az alapértelmezett művelet nem vonható vissza, így többé nem tud olyan prémium szintű kapacitást létrehozni a bérlőben, amely nem használ BYOK-ot.
-
-Azt szabályozni tudja, hogy hogyan használja a BYOK-ot a bérlőben. Egyetlen kapacitás titkosításához például hívja meg az `Add-PowerBIEncryptionKey` parancsot az `-Activate`, `-Default` és `-DefaultAndActivate` kapcsoló nélkül. Ez után hívja meg a `Set-PowerBICapacityEncryptionKey` parancsot arra a kapacitásra, amelyen engedélyezni kívánja a BYOK-ot.
+Azt szabályozni tudja, hogy hogyan használja a BYOK-ot a bérlőben. Egyetlen kapacitás titkosításához például hívja meg az `Add-PowerBIEncryptionKey` parancsot az `-Activate` vagy a `-Default` kapcsoló nélkül. Ez után hívja meg a `Set-PowerBICapacityEncryptionKey` parancsot arra a kapacitásra, amelyen engedélyezni kívánja a BYOK-ot.
 
 ## <a name="manage-byok"></a>BYOK felügyelete
 
 A Power BI további parancsmagokat kínál a BYOK egyszerű bérlőbeli felügyeletéhez:
 
-- A `Get-PowerBIEncryptionKey` használatával lekérheti a bérlő által jelenleg használt kulcsot:
+- A [`Get-PowerBICapacity`](/powershell/module/microsoftpowerbimgmt.capacities/get-powerbicapacity) használatával lekérheti a kapacitás által jelenleg használt kulcsot:
+
+    ```powershell
+    Get-PowerBICapacity -Scope Organization -ShowEncryptionKey
+    ```
+
+- A [`Get-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiencryptionkey) használatával lekérheti a bérlő által jelenleg használt kulcsot:
 
     ```powershell
     Get-PowerBIEncryptionKey
     ```
 
-- A `Get-PowerBIWorkspaceEncryptionStatus` használatával megállapíthatja, hogy a munkaterületen lévő adathalmazok titkosítva vannak-e, és hogy titkosítási állapotuk szinkronban van-e a munkaterülettel:
+- A [`Get-PowerBIWorkspaceEncryptionStatus`](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiworkspaceencryptionstatus) használatával megállapíthatja, hogy a munkaterületen lévő adathalmazok titkosítva vannak-e, és hogy titkosítási állapotuk szinkronban van-e a munkaterülettel:
 
     ```powershell
     Get-PowerBIWorkspaceEncryptionStatus -Name'Contoso Sales'
@@ -134,13 +137,13 @@ A Power BI további parancsmagokat kínál a BYOK egyszerű bérlőbeli felügye
 
     Lényeges, hogy a titkosítás a kapacitás szintjén van engedélyezve, de a titkosítás állapotát az adathalmaz szintjén kapja meg a megadott munkaterülethez.
 
-- A Power BI-kapacitáshoz megadott titkosítási kulcs a `Set-PowerBICapacityEncryptionKey` paranccsal frissíthető:
+- A Power BI-kapacitáshoz megadott titkosítási kulcs a [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) paranccsal frissíthető:
 
     ```powershell
     Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
     ```
 
-- A titkosításhoz jelenleg használt kulcs a `Use Switch-PowerBIEncryptionKey` paranccsal váltható (_forgatható_). A parancsmag csak a `-Name` kulcs `-KeyVaultKeyUri` értékét módosítja:
+- A titkosításhoz használt kulcs verziója a [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) paranccsal váltható (vagy _forgatható_). A parancsmag csak a `-Name` kulcs `-KeyVaultKeyUri` értékét módosítja:
 
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'

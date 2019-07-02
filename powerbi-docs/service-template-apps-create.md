@@ -1,22 +1,22 @@
 ---
-title: Sablonalkalmazások létrehozása a Power BI-ban (előzetes verzió)
+title: Sablonalkalmazások létrehozása a Power BI-ban
 description: Bármely Power BI-ügyfél számára terjeszthető sablonalkalmazás létrehozása a Power BI-ban.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/22/2019
-ms.author: maggies
-ms.openlocfilehash: 2dc9ae7eb7ecd82cdd6c9ea7ddbc6aa1fc70ca8b
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/10/2019
+ms.author: tebercov
+ms.openlocfilehash: 8e08557c475f06c8a32cebb0b7ca0fe1054cf266
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751186"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264547"
 ---
-# <a name="create-a-template-app-in-power-bi-preview"></a>Sablonalkalmazás létrehozása a Power BI-ban (előzetes verzió)
+# <a name="create-a-template-app-in-power-bi"></a>Sablonalkalmazás létrehozása a Power BI-ban
 
 A Power BI új *sablonalkalmazásai* lehetővé teszik a Power BI-partnerek részére, hogy kevés kódolással vagy anélkül hozzanak létre Power BI-alkalmazásokat, és helyezzék azokat üzembe a Power BI bármely ügyfele számára.  Ez a cikk lépésekre bontott utasításokat tartalmaz Power BI-sablonalkalmazás létrehozásához.
 
@@ -31,20 +31,7 @@ A sablonalkalmazások létrehozásának követelményei az alábbiak:
 - Egy [Power BI Pro-licenc](service-self-service-signup-for-power-bi.md)
 - A [Power BI Desktop telepítése](desktop-get-the-desktop.md) (nem kötelező)
 - A [Power BI alapvető fogalmainak](service-basic-concepts.md) ismerete
-- Sablonalkalmazás létrehozásához szükséges engedélyek. Részletekért tekintse meg a Power BI [felügyeleti portálján a sablonalkalmazás beállításait](service-admin-portal.md#template-apps-settings-preview).
-
-## <a name="enable-app-developer-mode"></a>Alkalmazásfejlesztői mód engedélyezése
-
-Ha más Power BI-bérlőkbe terjeszthető sablonalkalmazást szeretne létrehozni, akkor alkalmazásfejlesztői módba kell lépnie. Máskülönben csak a saját cégében hoz létre alkalmazást a Power BI-felhasználók számára.
-
-1. Nyissa meg a Power BI szolgáltatást egy böngészőben.
-2. Lépjen a **Beállítások** > **Általános** > **Fejlesztő** > **A sablonalkalmazás fejlesztői módjának engedélyezése** beállításra.
-
-    ![Sablonalkalmazások engedélyezése](media/service-template-apps-create/power-bi-dev-template-app.png)
-
-    Ha ez a lehetőség nem jelenik meg, a lépjen kapcsolatba a felügyeleti portálon a Power BI rendszergazdájával, hogy adjon az Ön számára [engedélyeket sablonalkalmazások fejlesztéséhez](service-admin-portal.md#template-apps-settings-preview).
-
-3. Kattintson az **Alkalmaz** elemre.
+- Sablonalkalmazás nyilvános megosztásához szükséges engedélyek. Részletekért tekintse meg a Power BI [felügyeleti portálján a sablonalkalmazás beállításait](service-admin-portal.md#template-apps-settings).
 
 ## <a name="create-the-template-app-workspace"></a>A sablonalkalmazás munkaterületének létrehozása
 
@@ -54,9 +41,9 @@ Ha más Power BI-bérlőkbe terjeszthető sablonalkalmazást szeretne létrehozn
 
     ![Alkalmazás munkaterületének létrehozása](media/service-template-apps-create/power-bi-new-workspace.png)
 
-2. Az **Alkalmazás munkaterületének létrehozása** **Továbbfejlesztett munkaterületek – előzetes verzió** alatt válassza a **Kipróbálás** lehetőséget.
+2. Az **Alkalmazás-munkaterület létrehozása** területen válassza a **Frissítés az újra** lehetőséget.
 
-    ![Új munkaterületek kipróbálása](media/service-template-apps-create/power-bi-try-now-new-workspace.png)
+    ![Új munkaterületek kipróbálása](media/service-template-apps-create/power-bi-upgrade-new.png)
 
 3. Adjon meg egy nevet, leírást (nem kötelező) és egy embléma képét (nem kötelező) az alkalmazás-munkaterülethez.
 
@@ -70,13 +57,13 @@ Ha más Power BI-bérlőkbe terjeszthető sablonalkalmazást szeretne létrehozn
 
 ## <a name="create-the-content-in-your-template-app"></a>Tartalom létrehozása a sablonalkalmazásban
 
-Csakúgy, mint a szokásos Power BI-munkaterületeknél, a következő lépés a tartalmak létrehozása a munkaterületen.  A sablonalkalmazásoknak ebben az előzetes verziójában a következő típusok közül csak egy támogatott: egy adathalmaz, egy jelentés és egy irányítópult.
+Csakúgy, mint a szokásos Power BI-munkaterületeknél, a következő lépés a tartalmak létrehozása a munkaterületen.  
 
 - [Power BI-tartalom létrehozása](power-bi-creator-landing.md) az alkalmazás-munkaterületen.
 
 Ha paramétereket használ a Power Queryben, győződjön meg róla, hogy jól meghatározott típussal (például szöveg) rendelkeznek-e. A bármely és a bináris típusok nem támogatottak.
 
-A [Tippek sablonalkalmazások készítéséhez a Power BI-ban (előzetes verzió)](service-template-apps-tips.md) szakasz javaslatokat tartalmaz, amelyeket megfontolhat, amikor jelentéseket és irányítópultokat hoz létre a sablonalkalmazásához.
+A [Tippek sablonalkalmazások készítéséhez a Power BI-ban](service-template-apps-tips.md) szakasz javaslatokat tartalmaz, amelyeket megfontolhat, amikor jelentéseket és irányítópultokat hoz létre a sablonalkalmazásához.
 
 ## <a name="create-the-test-template-app"></a>Tesztcélú sablonalkalmazás létrehozása
 
@@ -174,10 +161,10 @@ Vegyük sorra a szakaszokat:
 10. Ha készen áll az alkalmazás előléptetésére az üzem előtti állapotba a bérlőn kívüli további teszteléshez, térjen vissza a **Kiadáskezelés** panelre, és válassza az **Alkalmazás előléptetése** lehetőséget. 
 
     ![Alkalmazás előléptetése üzem előtti állapotba](media/service-template-apps-create/power-bi-template-app-promote.png)
-
     >[!NOTE]
     > Az alkalmazás előléptetése után az nyilvánosan elérhetővé válik a cégen kívül.
 
+    Ha ez a lehetőség nem jelenik meg, a lépjen kapcsolatba a felügyeleti portálon a Power BI rendszergazdájával, hogy adjon az Ön számára [engedélyeket sablonalkalmazások fejlesztéséhez](service-admin-portal.md#template-apps-settings).
 11. A választás megerősítéséhez válassza az **Előléptetés** lehetőséget.
 12. Másolja le ezt az új URL-címet, hogy megoszthassa a bérlőn kívül a teszteléshez. Ezt a hivatkozást kell elküldenie az alkalmazás AppSource-ban történő terjesztési folyamatának megkezdéséhez is. Ehhez hozzon létre egy [új Cloud Partner Portal-ajánlatot](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). A Cloud Partner Portalra csak éles üzem előtti hivatkozásokat küldjön be. A csomagot Power BI-gyártáshoz csak az alkalmazás jóváhagyása és az AppSource-on való sikeres közzététele után léptetheti elő.
 13. Ha az alkalmazás készen áll az üzemi használatra vagy az AppSource-on keresztüli megosztásra, térjen vissza a **Kiadáskezelés** panelre, és válassza az **Alkalmazás előléptetése** lehetőséget az **Üzem előtti** elem mellett.
@@ -188,25 +175,6 @@ Vegyük sorra a szakaszokat:
     ![Alkalmazás üzemi környezetben](media/service-template-apps-create/power-bi-template-app-production.png)
 
 Az alkalmazás világszerte több ezer Power BI-felhasználó számára történő elérhetővé tételéhez javasoljuk, hogy töltse fel az AppSource-ba. Részletekért tekintse át [A Power BI-alkalmazásra vonatkozó ajánlat](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) weblapot.
-
-## <a name="update-your-app"></a>Alkalmazás frissítése
-
-Most, hogy az alkalmazása üzemi környezetbe került, újrakezdheti a tesztelési fázist anélkül, hogy az üzemi környezetben lévő alkalmazás működését megzavarná.
-
-1. A **Kiadáskezelés** panelen válassza az **Alkalmazás létrehozása** lehetőséget.
-2. Menjen végig ismét az alkalmazás-létrehozási folyamaton.
-3. Miután megadta a **Védjegyezés**, a **Tartalom**, a **Vezérlő** és a **Hozzáférés** beállításait, válassza ismét az **Alkalmazás létrehozása** lehetőséget.
-4. Válassza a **Bezárás** lehetőséget, és térjen vissza **Kiadáskezelés** panelre.
-
-   Láthatja, hogy most már két verzióval rendelkezik: Egy verzióval üzemi környezetben, valamint egy új tesztelési verzióval.
-
-    ![A sablonalkalmazás két verziója](media/service-template-apps-create/power-bi-template-app-2-versions.png)
-
-5. Ha készen áll az alkalmazás előléptetésére az üzem előtti állapotba a bérlőn kívüli további teszteléshez, térjen vissza a Kiadáskezelés panelre, és válassza a **Tesztelés** mellett az **Alkalmazás előléptetése** lehetőséget.
-6. A hivatkozás már használható, küldje tehát be újra a Cloud Partner Portalra a [Power BI-alkalmazásajánlat frissítéséről](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer) szóló cikk lépéseit követve.
-
->[!NOTE]
->Az alkalmazást csak akkor léptetheti elő a gyártási fázisra, ha jóvá lett hagyva a Cloud Partner Portalon, valamint már közzétette.
 
 ## <a name="next-steps"></a>Következő lépések
 
