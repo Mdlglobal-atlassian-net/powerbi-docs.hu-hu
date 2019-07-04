@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: ec50369715efdd7bcb9ab764a3240acceb72508e
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389536"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418641"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -22,11 +22,7 @@ Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket 
 
 ## <a name="upcoming-webinars"></a>Közelgő webináriumok
 
-Regisztráljon a Power BI-szakértők előadásaira, ahol lehetősége van élőben feltenni kérdéseit.
-
-**Power BI: Elemzések készítése munkanapok HR-adataiból**
-<br>Előadó: Iman Eftekhari, Julia Paton az Agilis Analyticstől Shahram Karimi a QBE Insurance-től
-<br>[Regisztráljon a június 27-i megtekintéshez (13:30–14:30 Csendes-óceáni téli idő)](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
+Még nincs tervezett webinárium. Látogasson vissza később közelgő eseményekért.
 
 >[A Power BI-közösség közelgő webináriumai](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -128,6 +124,10 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 
 ### <a name="partner-solutions-series"></a>Partneri megoldások sorozat ###
 [Sorozat megtekintése](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
+
+**Power BI: Elemzések készítése munkanapok HR-adataiból**
+<br>Előadó: Iman Eftekhari, Julia Paton az Agilis Analyticstől Shahram Karimi a QBE Insurance-től
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 **Kölcsönös előnyök a fogyasztási cikkek gyártói és kiskereskedői számára**
 <br>Liz McCreesh, a Thorogood képviselője
