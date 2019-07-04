@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 24a559fe35291c5256a5280b3c7d63d110868f4a
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67039115"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418792"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
 
@@ -262,7 +262,7 @@ Ahhoz, hogy egy paraméteres adathalmaz a megfelelő adatokhoz férjen hozzá, k
 > [!NOTE]
 > A Power BI jelenleg nem támogatja a paraméteres adatforrás-definíciókat, más néven dinamikus adatforrásokat. Az Sql.Database("SqlServer01", "AdventureWorks") adathozzáférési függvény például nem paraméterezhető. Ha adathalmaza dinamikus adatforrásokra épül, a Power BI azt jelzi, hogy ismeretlen vagy nem támogatott adatforrásokat észlelt. Az adathozzáférési függvények paramétereit statikus értékekre kell cserélnie ha azt szeretné, hogy a Power BI azonosítani tudja az adatforrásokat, és kapcsolódni tudjon azokhoz. További információ: [Nem támogatott adatforrás frissítési hibáinak elhárítása](service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
 
-## <a name="configure-scheduled-refresh"></a>Ütemezett frissítés konfigurálása
+## <a name="configure-scheduled-refresh"></a>Ütemezett frissítés beállítása
 
 A Power BI és az adatforrások közötti kapcsolat kialakítása az adatfrissítés konfigurálásának kiemelkedően legnagyobb részfeladata. A további lépések viszonylag egyértelműek. Ezek közé tartozik a frissítési ütemezés beállítása és a sikertelen frissítésekről szóló értesítések engedélyezése. Ehhez az [Ütemezett frissítés konfigurálása](refresh-scheduled-refresh.md) című cikk nyújt lépésenkénti útmutatást.
 
@@ -270,9 +270,9 @@ A Power BI és az adatforrások közötti kapcsolat kialakítása az adatfrissí
 
 Az **Ütemezett frissítés** szakaszban határozhatja meg az adatkészletek frissítésének gyakoriságát és időszakait. Bizonyára emlékszik, hogy naponta legfeljebb nyolc időpontot konfigurálhat, ha az adathalmaz megosztott kapacitásban van, és 48 időpontot a Power BI Premiumban. Az alábbi képernyőkép egy tizenkét óránként ütemezett frissítés látható.
 
-![Ütemezett frissítés konfigurálása](media/refresh-data/configure-scheduled-refresh.png)
+![Ütemezett frissítés beállítása](media/refresh-data/configure-scheduled-refresh.png)
 
-Frissítési ütemezés konfigurálása után az adathalmaz beállításainak oldala a fenti képernyőképen látható módon tájékoztatja a következő frissítés időpontjáról. Ha ennél hamarabb szeretné frissíteni az adatokat, például az átjáró és az adatforrás konfigurációjának teszteléséhez, igény szerinti frissítést hajthat végre a bal oldali navigációs panel Adathalmaz menüjében található Azonnali frissítés lehetőséggel. Az igény szerinti frissítések nem befolyásolják a következő ütemezett frissítés időpontját, de a cikk korábbi részében leírtak szerint beleszámítanak a napi frissítési korlátba.
+Frissítési ütemezés konfigurálása után az adathalmaz beállításainak oldala a fenti képernyőképen látható módon tájékoztatja a következő frissítés időpontjáról. Ha ennél hamarabb szeretné frissíteni az adatokat, például az átjáró és az adatforrás konfigurációjának teszteléséhez, igény szerinti frissítést hajthat végre a bal oldali navigációs panel Adathalmaz menüjében található **Azonnali frissítés** lehetőséggel. Az igény szerinti frissítések nem befolyásolják a következő ütemezett frissítés időpontját, de a cikk korábbi részében leírtak szerint beleszámítanak a napi frissítési korlátba.
 
 Azt is vegye figyelembe, hogy a frissítés konfigurált időpontja nem feltétlenül az a pontos időpont, amikor a Power BI elindítja a következő ütemezett folyamatot. A Power BI törekszik a frissítési ütemezés minél pontosabb betartására. A cél az, hogy a frissítés az ütemezett időponttól legfeljebb 15 perc eltéréssel elinduljon, de akár egyórás késés is előfordulhat, ha a szolgáltatás nem tudja korábban lefoglalni a szükséges erőforrásokat.
 
@@ -283,7 +283,7 @@ Azt is vegye figyelembe, hogy a frissítés konfigurált időpontja nem feltétl
 
 A Power BI alapértelmezés szerint e-mail-értesítést küld az adathalmaz tulajdonosának a sikertelen frissítésekről, hogy a tulajdonos időben közbe tudjon lépni frissítési problémák esetén. A Power BI akkor is értesítést küld, ha a szolgáltatás a sorozatos sikertelenség miatt letiltja az ütemezést. A Microsoft az **Értesítést kérek e-mailben, ha sikertelen a frissítés** jelölőnégyzet bejelölve hagyását javasolja.
 
-Fontos, hogy a Power BI nem csak a sikertelen frissítésekről küld értesítést, hanem akkor is, ha a szolgáltatás inaktivitás miatt szüneteltet egy ütemezett frissítést. Ha két hónapon át egyetlen felhasználó sem látogatott meg az adathalmazon alapuló egyetlen irányítópultot és jelentést sem, a Power BI inaktívnak minősíti az adathalmazt. Ilyen esetben a Power BI e-mailt küld az adathalmaz tulajdonososának, amelyben jelzi, hogy a szolgáltatás letiltotta az adathalmaz frissítési ütemezését. Az alábbi képernyőkép az ilyen értesítésekre mutat egy példát.
+Fontos, hogy a Power BI nem csak a sikertelen frissítésekről küld értesítést, hanem akkor is, ha a szolgáltatás inaktivitás miatt szüneteltet egy ütemezett frissítést. Ha két hónapon át egyetlen felhasználó sem látogatott meg az adathalmazon alapuló egyetlen irányítópultot és jelentést sem, a Power BI inaktívnak minősíti az adathalmazt. Ilyen esetben a Power BI e-mailt küld az adathalmaz tulajdonososának, amelyben jelzi, hogy a szolgáltatás szüneteltette az adathalmaz frissítési ütemezését. Az alábbi képernyőkép az ilyen értesítésekre mutat egy példát.
 
 ![Szüneteltetett frissítésről tájékoztató e-mail](media/refresh-data/email-paused-refresh.png)
 
