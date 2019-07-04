@@ -1,6 +1,6 @@
 ---
-title: Feliratkozás és mások feliratkoztatása jelentésekre és irányítópultokra
-description: Útmutató saját maga vagy munkatársai Power BI-jelentések vagy -irányítópultok e-mailben továbbított pillanatképére történő feliratkozásához.
+title: Saját feliratkozás jelentésekre és irányítópultokra
+description: Útmutató Power BI-jelentések vagy -irányítópultok e-mailben továbbított pillanatképére való feliratkozáshoz.
 author: mihart
 ms.author: mihart
 manager: kvivek
@@ -9,16 +9,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/11/2019
+ms.date: 06/26/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d452b036c7890d59e27df328ae12ad7f5b3b8dbb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 85976d191fba627b75f8b415acc312817d11ed34
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497943"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408535"
 ---
-# <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Feliratkozás egy jelentésre vagy irányítópultra a Power BI szolgáltatásban 
+# <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Feliratkozás jelentésre vagy irányítópultra a Power BI szolgáltatásban 
 Minden eddiginél egyszerűbb naprakésznek lenni a legfontosabb irányítópultokkal és jelentésekkel kapcsolatban. Feliratkozhat az Önnek leginkább fontos jelentésoldalakra és irányítópultokra, a Power BI pedig pillanatképeket küld e-mailben a postafiókjába. Megadhatja a Power BI-nak, hogy milyen gyakran szeretne ilyen e-mailt kapni: naponta, hetente vagy az adatok frissítésekor. Akár az e-mailek küldésének pontos időpontját is megadhatja a Power BI-nak, vagy futtathatja most.  
 
 Az e-mail és a pillanatkép a Power BI beállításaiban szereplő nyelvet fogja használni (lásd [A Power BI által támogatott nyelvek és országok/régiók](../supported-languages-countries-regions.md) témakört). Ha nincs megadva nyelv, a Power BI a böngésző területi beállításait használja. A nyelvi beállításokat megtekintheti vagy módosíthatja a fogaskerék ikon ![fogaskerék ikon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Beállítások > Általános > Nyelv** lehetőség választásával. 
@@ -29,7 +29,7 @@ Amikor e-mail érkezik, abban szerepel egy „ugrás a jelentésre vagy irányí
 
 
 ## <a name="requirements"></a>Követelmények
-Az előfizetések **létrehozása** a Power BI Pro egyik funkciója.   
+Ha előfizetést szeretne **létrehozni** saját magának, ahhoz Power BI Pro-licencre van szükség. A Premium-munkaterületeken vagy -alkalmazásokban található tartalmat megtekintő felhasználók is feliratkozhatnak a tartalomra, akár Power BI Pro-licenc nélkül is. **Mások feliratkoztatása** csak az irányítópult tulajdonosa számára elérhető. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Feliratkozás irányítópultra vagy jelentésoldalra
 Függetlenül attól, hogy irányítópultra vagy jelentésre iratkozik fel, a folyamat hasonló. Ugyanazzal a gombbal iratkozhat fel a Power BI szolgáltatás irányítópultjaira és jelentéseire.
@@ -41,15 +41,13 @@ Függetlenül attól, hogy irányítópultra vagy jelentésre iratkozik fel, a f
    
    ![Feliratkozás ikon](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![Feliratkozás ablak](./media/end-user-subscribe/power-bi-emails-newer.png)
+   ![Feliratkozás ablak](./media/end-user-subscribe/power-bi-emails-newest.png)
     
     A bal oldali képernyő akkor jelenik meg, ha egy irányítópulton választja a **Feliratkozás** lehetőséget. A jobb oldali képernyő akkor jelenik meg, ha egy jelentésoldalon választja a **Feliratkozás** lehetőséget. Ha egy jelentésben több oldalra is fel szeretne iratkozni, válassza a **Másik előfizetés hozzáadása** lehetőséget, és válasszon ki egy másik oldalt. 
 
 4. A feliratkozást a sárga csúszkával kapcsolhatja be és ki.  A csúszkával történő kikapcsolás nem törli a feliratkozást. A feliratkozás törléséhez válassza a kuka ikont.
 
-4. Az e-mail-címe automatikusan hozzá lesz adva a **Feliratkozás** mezőhöz. Vállalatánál másokat úgy iratkoztathat fel, hogy az ő e-mail-címüket is hozzáadja. 
-
-5. Ha szeretné, az e-mail-üzenet részleteit is megadhatja. 
+5. Ha szeretné, az e-mail-üzenet tárgyát és részleteit is megadhatja. 
 
 5. Válasszon **Gyakoriságot** feliratkozásához.  Napi, Heti, vagy Adatfrissítések utáni (Napi) gyakoriságot választhat.  Ha az e-mailt, amelyre feliratkozott, csak bizonyos napokon szeretné megkapni, válassza a **Heti** értéket, majd jelölje ki a napokat.  Ha például az e-mailt csak munkanapokon szeretné megkapni, válassza a **Heti** gyakoriságot, majd távolítsa el a jelölést a szombat és a vasárnap jelölőnégyzetéből.   
 
@@ -59,7 +57,7 @@ Függetlenül attól, hogy irányítópultra vagy jelentésre iratkozik fel, a f
 
 8. Az előfizetés megtekintéséhez és kipróbálásához válassza a **Futtatás most** lehetőséget.  Ezzel azonnal elküldi az e-mailt magának. 
 
-8. Ha minden jónak látszik, az előfizetés mentéséhez válassza a **Mentés és bezárás** lehetőséget. Ön és minden feliratkozott munkatársa a beállított ütemezés szerint e-mailt fog kapni az irányítópult vagy jelentés pillanatképével. Minden olyan feliratkozás, amelynek gyakorisága **Adatfrissítések utáni**, csak az adott napi első ütemezett frissítés után küld e-mailt.
+8. Ha minden jónak látszik, az előfizetés mentéséhez válassza a **Mentés és bezárás** lehetőséget. Az beállított ütemezés szerint e-mailt fog kapni az irányítópult vagy jelentés pillanatképével. Minden olyan feliratkozás, amelynek gyakorisága **Adatfrissítések utáni**, csak az adott napi első ütemezett frissítés után küld e-mailt.
    
    ![az irányítópult e-mailes pillanatképe](media/end-user-subscribe/power-bi-subscribe-email.png)
    

@@ -1,22 +1,22 @@
 ---
-title: Mik azok a Power BI-sablonalkalmazások? (előzetes verzió)
+title: Mik azok a Power BI-sablonalkalmazások?
 description: Ez a cikk a Power BI sablonalkalmazási programjáról nyújt áttekintést. Ismerje meg, hogyan hozhat létre Power BI-alkalmazásokat kevés kódolással vagy anélkül, és hogyan helyezheti üzembe azokat bármely Power BI-ügyfél részére.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/26/2019
-ms.author: maggies
-ms.openlocfilehash: 600e2ed603773cada415f603202cc72f22e0d25b
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/24/2019
+ms.author: tebercov
+ms.openlocfilehash: c05b53a5fd61d348b6d304b17123d5f2497ab647
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751112"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408214"
 ---
-# <a name="what-are-power-bi-template-apps-preview"></a>Mik azok a Power BI-sablonalkalmazások? (előzetes verzió)
+# <a name="what-are-power-bi-template-apps"></a>Mik azok a Power BI-sablonalkalmazások?
 
 A Power BI új *sablonalkalmazásai* lehetővé teszik a Power BI-partnerek részére, hogy kevés kódolással vagy anélkül hozzanak létre Power BI-alkalmazásokat, és helyezzék azokat üzembe a Power BI bármely ügyfele számára.  Ez a cikk a Power BI sablonalkalmazási programjáról nyújt áttekintést.
 
@@ -37,7 +37,7 @@ A sablonalkalmazások létrehozásának és beküldésének általános folyamat
 | **Három** | |  | Léptesse elő a vizsgálati csomagot az üzem előtti fázisba a Power BI-bérlőn kívüli ellenőrzéshez, és küldje el az AppSource-nak  |  | Az üzem előtti csomaggal hozzon létre egy sablonalkalmazás-ajánlatot a Power BI-ban, és indítsa el az ellenőrzési folyamatot |
 | **Négy** | |  | Az üzem előtti csomag előléptetése üzemi csomaggá |  | Go Live |
 
-## <a name="requirements"></a>Követelmények
+## <a name="before-you-begin"></a>Előkészületek
 
 A sablonalkalmazás létrehozásához engedély szükséges. Részletekért tekintse meg a Power BI felügyeleti portálján a sablonalkalmazás beállításait. 
 
@@ -66,9 +66,11 @@ Az alábbiakban a magas szintű lépésekről olvashat.
 
 ## <a name="requirements"></a>Követelmények
 
-A sablonalkalmazás létrehozásához engedély szükséges. Részletekért tekintse meg a Power BI [felügyeleti portálján a sablonalkalmazás beállításait](service-admin-portal.md#template-apps-settings-preview). 
+A sablonalkalmazás létrehozásához engedély szükséges. Részletekért tekintse meg a Power BI [felügyeleti portálján a sablonalkalmazás beállításait](service-admin-portal.md#template-apps-settings). 
 
 Egy sablonalkalmazás Power BI szolgáltatásban és AppSource-ban történő közzétételéhez meg kell felelnie a [felhőbeli piactér kiadójává váláshoz](https://docs.microsoft.com/azure/marketplace/become-publisher) szükséges feltételeknek.
+ > [!NOTE] 
+ > Sablonalkalmazások beküldését a [Cloud Partner Portalon](https://cloudpartner.azure.com) lehet kezelni. A bejelentkezéshez használja ugyanazt a Microsoft Fejlesztői Központhoz tartozó fiókot. Az AppSource-ajánlatokhoz csak egy Microsoft-fiókkal kell rendelkeznie. A fiókok ne legyenek egyes szolgáltatásokhoz vagy ajánlatokhoz kötve.
 
 ## <a name="tips"></a>Tippek 
 
@@ -78,7 +80,7 @@ Egy sablonalkalmazás Power BI szolgáltatásban és AppSource-ban történő k�
 - Fontolja meg több sablonalkalmazás felajánlását különféle egyéni forgatókönyvekhez. 
 - Engedélyezze az adatok testreszabását, támogassa például az egyéni kapcsolatokat és a paraméterek konfigurálását a telepítőprogramban.
 
-További javaslatokért lásd: [Tippek sablonalkalmazások készítéséhez a Power BI-ban (előzetes verzió)](service-template-apps-tips.md).
+További javaslatokért lásd: [Tippek sablonalkalmazások készítéséhez a Power BI-ban](service-template-apps-tips.md).
 
 ## <a name="support"></a>Támogatás
 Ha a fejlesztési fázisban van szüksége támogatásra, használja a következő webhelyet: [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Ezt a webhelyet a Microsoft aktívan figyeli és felügyeli. Az ügyfélincidensek gyorsan eljutnak a megfelelő csapathoz.

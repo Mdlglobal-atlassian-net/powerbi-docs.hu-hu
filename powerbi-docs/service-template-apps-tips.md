@@ -1,22 +1,22 @@
 ---
-title: Tippek sablonalkalmazások készítéséhez a Power BI-ban (előzetes verzió)
+title: Tippek sablonalkalmazások készítéséhez a Power BI-ban
 description: Tippek lekérdezések, adatmodellek, jelentések és irányítópultok létrehozásához, hogy jó sablonalkalmazásokat készíthessen
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/19/2019
-ms.author: maggies
-ms.openlocfilehash: 83049a16ecd42b41375da57a5a99a374596a9846
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/26/2019
+ms.author: tebercov
+ms.openlocfilehash: 59d581697091df68df827ec699c8999a6993daef
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514863"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408360"
 ---
-# <a name="tips-for-authoring-template-apps-in-power-bi-preview"></a>Tippek sablonalkalmazások készítéséhez a Power BI-ban (előzetes verzió)
+# <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tippek sablonalkalmazások készítéséhez a Power BI-ban
 
 Ha [sablonalkalmazást készít](service-template-apps-create.md) a Power BI-ban, annak részét képezi a munkaterület létrehozásához, annak teszteléséhez és üzemi környezetbe helyezéséhez szükséges logisztika. De a másik fontos rész nyilvánvalóan a jelentés és az irányítópult elkészítése. Az elkészítési folyamatot négy fő összetevőre bonthatjuk. Az ezeken az összetevőkön végzett munka lehetővé teszi a lehető legjobb sablonalkalmazás létrehozását:
 
@@ -24,7 +24,7 @@ Ha [sablonalkalmazást készít](service-template-apps-create.md) a Power BI-ban
 * Az **adatmodell** a [kapcsolatok](desktop-create-and-manage-relationships.md) és [mértékek](desktop-measures.md) létrehozását, valamint a Kérdések és válaszok fejlesztését teszi lehetővé.  
 * A **[jelentésoldalak](desktop-report-view.md)** vizualizációkat és szűrőket tartalmaznak, amelyek betekintést nyújtanak az adatokba.  
 * Az **[irányítópultok](consumer/end-user-dashboards.md)** és a [csempék](service-dashboard-create.md) a belefoglalt elemzések áttekintésére adnak lehetőséget.
-* Mintaadatok lehetővé teszi az alkalmazás észlelhető azonnal a telepítés után.
+* A mintaadatokkal az alkalmazás a telepítést követően azonnal felfedezhető lesz.
 
 Az egyes összetevőket meglévő Power BI-funkciókként ismerheti. Sablonalkalmazás készítésekor további szempontokat is figyelembe kell venni minden egyes összetevőnél. További részleteket az alábbi szakaszokban talál.
 
@@ -36,12 +36,10 @@ A sablonalkalmazások esetében a Power BI Desktopban fejlesztett lekérdezések
 ### <a name="connect-to-your-api"></a>Csatlakozás az API-hoz
 Első lépésként csatlakoznia kell az API-hoz a Power BI Desktopból, hogy megkezdhesse a lekérdezések felépítését.
 
-A Power BI Desktopban részét képező azonnal használható Adatösszekötőkkel csatlakozhat az API-hoz. A webes adatösszekötővel (Adatok lekérése -> Web) csatlakozhat a Rest API-hoz, az OData összekötővel (Adatok lekérése -> OData-csatorna) pedig az OData-csatornához. Ezek az összekötők csak akkor állnak használatra készen, ha az API támogatja az Alapszintű hitelesítést.
+A Power BI Desktopban részét képező Adatösszekötőkkel csatlakozhat az API-hoz. A webes adatösszekötővel (Adatok lekérése -> Web) csatlakozhat a Rest API-hoz, az OData összekötővel (Adatok lekérése -> OData-csatorna) pedig az OData-csatornához.
 
 > [!NOTE]
-> Ha az API más hitelesítéstípusokat használ, például az OAuth 2.0-t vagy webes API-kulcsot, akkor saját adatösszekötőt kell fejlesztenie, hogy a Power BI Desktop sikeresen csatlakozhasson az API-hoz, és végrehajthassa a hitelesítést. Az egyéni összekötő hozzá kell adni ahhoz, hogy a sablon telepítő elérni PBI-szolgáltatáshoz. <br> A sablonalkalmazáshoz a saját adatösszekötő fejlesztésével kapcsolatos részleteket az [Adatösszekötők dokumentációjában](https://aka.ms/DataConnectors) talál. 
->
->
+> A sablonalkalmazások jelenleg nem támogatják az egyéni összekötőket. Egyes kapcsolati helyzetek esetén ajánlatos lehet használni az Odatafeed Auth 2.0-át migráláshoz, vagy elküldheti az összekötőt hitelesítésre. Az [Adatösszekötők dokumentációjában](https://aka.ms/DataConnectors) részletes információt talál összekötők fejlesztéséről és tanúsításáról.
 
 ### <a name="consider-the-source"></a>Tartsa szem előtt a forrást
 A lekérdezések határozzák meg az adatmodellben szereplő adatokat. A rendszer méretétől függően ezeknek a lekérdezéseknek szűrőket is tartalmazniuk kell, hogy az ügyfelek kezelhető mérettel legyen dolguk a vállalati forgatókönyvnek megfelelően.
@@ -116,40 +114,40 @@ Ha létre szeretne hozni egy irányítópultot a sablonalkalmazáshoz, egyszerű
 * Érdemes megfontolni különböző csoportosítások használatát a különféle forgatókönyvekhez az irányítópulton, függőlegesen vagy vízszintesen.  
 
 ## <a name="sample-data"></a>Mintaadatok
-Sablon alkalmazások, az alkalmazás létrehozása fázis részeként becsomagolja a gyorsítótárazott adatok a munkaterületen, az alkalmazás részeként:
+A sablonalkalmazások az alkalmazáskészítés részeként az alkalmazásba foglalva becsomagolják a munkaterület gyorsítótárazott adatait:
 
-* Lehetővé teszi, hogy a telepítő a funkciók és az alkalmazás célját megértéséhez adatok összekapcsolása előtt.
-* Létrehoz egy szolgáltatás, amely a telepítő részletesebb megismerése alkalmazásképességeket, ami az alkalmazás adatkészlet csatlakoztatása.
+* Lehetővé teszi, hogy a telepítő átlássa az alkalmazás célját és funkcióit, mielőtt adatokat csatlakoztatna.
+* Olyan felhasználói élményt nyújt, amely arra ösztönzi a telepítőt, hogy részletesebben is megismerje az alkalmazás képességeit, ami az alkalmazás adatkészletének csatlakoztatásához vezet.
 
-Azt javasoljuk, hogy minőségi mintaadatok kellene az alkalmazás létrehozása előtt. Győződjön meg arról, a jelentéskészítő alkalmazás és az irányítópultok adatokkal van feltöltve.
+Azt javasoljuk, hogy minőségi mintaadatokat használjon, mielőtt létrehozná az alkalmazást. gondoskodjon arról, hogy az alkalmazás jelentése és irányítópultjai fel legyenek töltve adatokkal.
 
-## <a name="publishing-on-appsource"></a>Közzététel az appsource-on
-Sablon alkalmazások tehetők közzé az appsource-on, mielőtt beküldi az alkalmazást az appsource-ban az alábbiakra:
+## <a name="publishing-on-appsource"></a>Közzététel az AppSource-on
+A sablonalkalmazásokat közzé lehet tenni az AppSource-on. Mielőtt közzétenné az alkalmazást az AppSource-on, kövesse az alábbi útmutatót:
 
-* Ellenőrizze, hogy a mintaadatokat, amelyek segítségével megismerheti, mit teheti meg az alkalmazás a telepítő vonzó sablonalapú alkalmazásként hoz létre (üres jelentés és irányítópulton nem jóváhagyott lesz).
-Sablon alkalmazásokat támogatja a mintaalkalmazások adatok egyetlen, mindenképpen jelölje be a statikus alkalmazás jelölőnégyzetet. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Az érvényesítés csapat kövesse, amely tartalmazza a hitelesítő adatok és az adatokhoz való csatlakozáshoz szükséges paramétereket utasítás rendelkezik.
-* Alkalmazás tartalmaznia kell az alkalmazás ikonjára a Power bi-ban és a CPP ajánlatát. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* A kezdőlap konfigurálva. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Ügyeljen arra, hogy kövesse a dokumentáció a [Power BI alkalmazás ajánlat](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
-* Abban az esetben, ha egy irányítópult az alkalmazás része, ellenőrizze, hogy nem üres.
-* Telepítse az alkalmazást, mielőtt elküldené azokat az alkalmazásra mutató hivatkozás segítségével, győződjön meg arról, hogy az adatkészlet csatlakozhat, és az alkalmazás felhasználói felülete, a tervek szerint.
-* Mielőtt feltöltené bpix a sablon alkalmazás-munkaterületre, ügyeljen arra, hogy távolítsa el a felesleges kapcsolatokat.
-* Hajtsa végre a Power BI [ajánlott eljárások jelentések és Vizualizációk megalkotásához](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) a felhasználók és az első terjesztési engedélyezett maximális gyakorolt eléréséhez.
+* A sablonalkalmazásokat érdekes mintaadatokkal töltse fel, amelyek segítenek majd a telepítőnek megérteni az alkalmazás képességeit (üres jelentés és irányítópult nem engedélyezett).
+A sablonalkalmazások csak mintaadatokkal szerepelhetnek, ügyeljen rá, hogy be kell jelölnie a statikus alkalmazás jelölőnégyzetet. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Rendelkezzen útmutatóval az érvényesítési csapat számára, amely tartalmazza az adatokhoz való csatlakozáshoz szükséges hitelesítő adatokat és paramétereket is.
+* Az alkalmazásnak tartalmaznia kell egy alkalmazásikont a Power BI-ban és a CPP-ajánlatban is. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Konfigurált kezdőlap. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Kövesse a [Power BI-alkalmazások ajánlat](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) dokumentációját.
+* Ha az alkalmazáshoz irányítópult is tartozik, ügyeljen rá, hogy az ne legyen üres.
+* A beküldés előtt az alkalmazást az alkalmazáshivatkozás használatával telepítse, ellenőrizze, hogy lehet-e csatlakozni az adatkészlethez, és hogy az alkalmazás a tervek szerint használható-e.
+* Mielőtt feltöltené a bpix-et a sablonalkalmazás munkaterületére, távolítson el minden felesleges kapcsolatot.
+* Kövesse a Power BI [Ajánlott tervezési eljárások jelentésekhez és vizualizációkhoz](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) című dokumentumában foglaltakat, hogy maximalizálhassa a felhasználókra gyakorolt hatást, és hogy jóváhagyást szerezhessen a terjesztéshez.
 
 ## <a name="known-limitations"></a>Ismert korlátozások
 
 | Funkció | Ismert korlátozás |
 |---------|---------|
 |Tartalom:  Adathalmazok   | Pontosan egy adatkészletnek kell jelen lennie. Csak a Power BI Desktopban (.pbix-fájlok) készült adatkészletek használata engedélyezett. <br>Nem támogatott: Más sablonalkalmazásokból származó adatkészletek, munkaterületeken átnyúló adatkészletek, lapszámozott jelentések (.rdl-fájlok), Excel-munkafüzetek |
-|Tartalom: Irányítópultok | Valós idejű csempék nem engedélyezett (más szóval nem támogatott leküldéses vagy streamelési adatkészletekhez) |
+|Tartalom: Irányítópultok | A valós idejű csempék nem engedélyezettek (más szóval nem támogatott a leküldéses vagy a folyamatos átvitelű adatkészlet) |
 |Tartalom: Adatfolyamok | Nem támogatott: Adatfolyamok |
 |Fájlok tartalmai | Csak a PBIX-fájlok engedélyezettek. <br>Nem támogatott: .rdl-fájlok (lapszámozott jelentések), Excel-munkafüzetek   |
-| Adatforrások | A felhőbeli ütemezett adatfrissítéshez támogatott adatforrások engedélyezettek. <br>Nem támogatott: <li> DirectQuery</li><li>Élő kapcsolatok (nem Azure AS)</li> <li>A helyszíni adatforrások (a személyes és a vállalati átjárókat nem támogatottak)</li> <li>Valós idejű (nem támogatja a leküldéses adatkészletek)</li> <li>Összetett modellek</li></ul> |
+| Adatforrások | A felhőbeli ütemezett adatfrissítéshez támogatott adatforrások engedélyezettek. <br>Nem támogatott: <li> DirectQuery</li><li>Élő kapcsolatok (nem Azure AS)</li> <li>Helyszíni adatforrások (a személyes és a vállalati átjárók nem támogatottak)</li> <li>Valós idejű (a leküldéses adatkészlet nem támogatott)</li> <li>Összetett modellek</li></ul> |
 | Adatkészlet: munkaterületeken átnyúló | Munkaterületeken átnyúló adatkészletek használata nem engedélyezett  |
 | Lekérdezési paraméterek | Nem támogatott: „Any” típusú paraméterek vagy „Binary” típusú blokkfrissítési művelet az adatkészlethez |
 | Egyéni vizualizációk | Csak a nyilvánosan elérhető egyéni vizualizációk támogatottak. A [céges egyéni vizualizációk](power-bi-custom-visuals-organization.md) nem támogatottak |
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Mik azok a Power BI-sablonalkalmazások? (előzetes verzió)](service-template-apps-overview.md)
+[Mik azok a Power BI-sablonalkalmazások?](service-template-apps-overview.md)

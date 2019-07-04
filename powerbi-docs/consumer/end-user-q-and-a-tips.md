@@ -8,28 +8,28 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 06/26/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 97beaa749855d29f0ac559776a99f4be851489fb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4f6dc7167d64385182ecbd448b6c400fa7f829df
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61048134"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408195"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tippek kérdések feltevéséhez a Power BI Q&A-ben
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Szavak és kifejezések, amelyeket a Q&A felismer
 Az oldalon található kulcsszavak listája nem teljes.  A legjobban úgy ellenőrizheti, hogy a Power BI felismer-e egy adott kulcsszót, hogy megpróbálja azt beírni a kérdésmezőbe.  Ha a szó vagy kifejezés szürkén jelenik meg, az azt jelenti, hogy a Power BI nem ismeri fel.
 
-Az alábbi lista jelen idejű kifejezéseket tartalmaz, de a rendszer a legtöbb esetben az összes igealakot felismeri. Például az angol nyelvű „is” ige magában foglalja a következő igealakokat is: **are**, **was**, **were**, **will be**, **have**, **has**, **had**, **will have**, **has got**, **do**, **does**, **did**.  A „sort” ige pedig magában foglalja a **sorted** és a **sorting** alakokat is.  A Power BI felismeri és magában foglalja a szavak többes és egyes számú verzióit. 
+Az alábbi lista jelen idejű kifejezéseket tartalmaz, de a rendszer a legtöbb esetben az összes igealakot felismeri. Például az angol nyelvű „is” ige magában foglalja a következő igealakokat is: **are**, **was**, **were**, **will be**, **have**, **has**, **had**, **will have**, **has got**, **do**, **does**, **did**.  A „sort” ige pedig magában foglalja a **sorted** és a **sorting** alakokat is.  A Power BI felismeri és magában foglalja a szavak többes és egyes számú verzióit is. 
 
 > [!NOTE]
 > A Q&A szolgáltatás a [Microsoft Power BI iOS-hez készült alkalmazásában iPadeken, iPhone-okon, és iPod Touch eszközökön](mobile/mobile-apps-ios-qna.md) is rendelkezésre áll.
 >  
 
 
-|Kategória  |Kulcsszavak  |3. oszlop  |
+|Kategória  |Kulcsszavak  |3\. oszlop  |
 |---------|---------|---------|
 |**Összesítések**     | total, sum, amount, number, quantity, count, average, most, least, fewest, largest, smallest, highest, biggest, maximum, max, greatest, lowest, littlest, minimum, min          |
 |     |         |         
@@ -41,7 +41,7 @@ Az alábbi lista jelen idejű kifejezéseket tartalmaz, de a rendszer a legtöbb
 |     |         |         |
 |**Kötőszavak**     |  and, or, each of, with, versus, &, and, but, nor, along with, in addition to       |         
 |          |         |
-|**Összevonásokat**     |  A Q&A szinte minden összevonást felismer, próbálja csak ki.  Íme néhány angol nyelvű példa: didn’t, haven’t, he’d, he’s, isn’t, it’s, she’ll, they’d, weren’t, where’ll, who’s, won’t, wouldn’t          |
+|**Összevonásokat**     |  A Q&A szinte minden összevonást felismer, próbálja csak ki.  Íme néhány angol nyelvű példa: didn’t, haven’t, he’d, he’s, isn’t, it’s, she’ll, they’d, weren’t, who’s, won’t, wouldn’t          |
 |        |         |
 |**Dátumok**     |       A Power BI felismeri a legtöbb dátummal kapcsolatos angol nyelvű kifejezést (day, week, month, year, quarter, decade stb.), valamint a különböző formátumokban írt dátumokat is (lásd alább). A Power BI felismeri a következő kulcsszavakat: MonthName, Days 1-31, decade. Angol nyelvű Példák: January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, hónapok nevei         |
 |        |         |
@@ -66,15 +66,15 @@ Az alábbi lista jelen idejű kifejezéseket tartalmaz, de a rendszer a legtöbb
 |  |  |
 |**Felső N**     |     (rendezés, rangsorolás): top, bottom, highest, lowest, first, last, next, earliest, newest, oldest, latest, most recent, next            |
 |        |         |
-|**Vizualizációtípusok**     |  A Power BI minden vizualizációs típust natívan támogat.  Ha a Megjelenítések ablaktábla egyik beállításáról van szó, szerepelhet a kérdésben.  A kivételt ez alól az [egyéni vizualizációk](../power-bi-custom-visuals.md) képezik, amelyeket manuálisan vett fel a Megjelenítések ablaktáblán.  |
+|**Vizualizációtípusok**     |  A Power BI minden vizualizációs típust natívan támogat.  Ha a Megjelenítések ablaktábla egyik beállításáról van szó, szerepelhet a kérdésben.  A kivételt ez alól a szabály alól az [egyéni vizualizációk](../power-bi-custom-visuals.md) képezik, amelyeket manuálisan vett fel a Megjelenítések ablaktáblán.  |
 |  |  Angol nyelvű példa: show districts by month and sales total as bar chart               |
 |        |         |
 |**Kérdőszavak (kapcsolat, minősített)**  | when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what                |
 
 ## <a name="qa-helps-you-phrase-the-question"></a>A Q&A segít megfogalmazni a kérdést
-A Q&A mindent elkövet, hogy a feltett kérdéseket megértse és válaszolni tudjon rá. Ezt többféle módon teszi. Az összes ilyen megoldás esetében a műveletet teljes mértékben, részletesen vagy egyáltalán nem lehet elfogadni. A kérdés beírásakor a Q&A az alábbiakat teszi:
+A Q&A mindent elkövet, hogy a feltett kérdéseket megértse és válaszolni tudjon rá. A megértést többféleképpen megkísérli. Az összes ilyen kifejezés esetében a műveletet teljes mértékben, részletesen vagy egyáltalán nem lehet elfogadni. A kérdés beírásakor a Q&A az alábbiakat teszi:
 
-* automatikusan kiegészíti a szavakat és a kérdéseket. Különböző stratégiákat használ, beleértve a felismert szavak és a korábban használt és érvényes válaszokat eredményező kérdések automatikus kiegészítését. Egynél több automatikus kiegészítés esetén a rendszer a lehetőségeket egy legördülő listában jeleníti meg.
+* automatikusan kiegészíti a szavakat és a kérdéseket. Különböző stratégiákat használ, beleértve a felismert szavak, a tárolt kérdések és a korábban használt és érvényes válaszokat eredményező kérdések automatikus kiegészítését. Egynél több automatikus kiegészítés esetén a rendszer a lehetőségeket egy legördülő listában jeleníti meg.
 * kijavítja a helyesírási hibákat.
 * vizualizáció formájában jeleníti meg a válasz előnézetét. A vizualizáció a kérdés beírása és szerkesztése közben frissül (a rendszer nem várja meg, amíg a felhasználó lenyomja az Enter billentyűt).
 * helyettesítő kifejezéseket javasol a mögöttes adatkészlet(ek)ből, ha a felhasználó a kurzort a kérdésmezőbe helyezi.

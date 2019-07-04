@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e2412fe72d62549277001b64121ecf9db2ea5502
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5633370259662141296550aa3d5d2343ac4fedaa
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239538"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408555"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Egyéni oszlop hozzáadása a Power BI Desktopban
 A **Power BI Desktop** **Lekérdezésszerkesztőjével** egyszerűen adhat hozzá új egyéni adatoszlopokat a modellekhez. Ha egyéni oszlopokat szeretne létrehozni vagy átnevezni, egyszerű gombműveletekkel az egyéni oszlopot definiáló [M képleteket](https://msdn.microsoft.com/library/mt270235.aspx) hozhat létre. Az M képlet egy [átfogó függvényreferencia-tartalomkészlettel](https://msdn.microsoft.com/library/mt779182.aspx) rendelkezik. 
@@ -68,6 +68,5 @@ A **Speciális szerkesztő** teljes körű vezérlését biztosít a lekérdezé
 Egyéb módokon is létrehozhat egyéni oszlopot, például a **Lekérdezésszerkesztőben** megadott példák alapján. A következő cikkben további információt talál az egyéni oszlopok példákból való létrehozásáról:
 
 * [Oszlop hozzáadása példából a Power BI Desktopban](desktop-add-column-from-example.md)
-* [Bevezetés az M-képletes nyelvbe](https://msdn.microsoft.com/library/mt270235.aspx)
-* [Az M-függvény segédanyagai](https://msdn.microsoft.com/library/mt779182.aspx)  
+* [Power Query M-referencia](/powerquery-m/power-query-m-reference)  
 
