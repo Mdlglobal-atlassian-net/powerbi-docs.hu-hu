@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 0013080f3640c4c4d3d717104dcc069ccce3923a
+ms.sourcegitcommit: 952afd75fe8ddcf9350bd9aae88e1a4c438d0f3e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418792"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67561791"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
 
@@ -177,6 +177,8 @@ A Microsoft személyes átjáró helyett vállalati adatátjáró használatát 
 Az adathalmazok vállalati átjáróhoz csatlakoztatása viszonylag magától értetődő művelet az átjáró rendszergazdái számára. Rendszergazdai jogosultságokkal gyorsan frissíthet egy átjárót, és szükséges esetén hozzáadhatja a hiányzó adatforrásokat. Ami azt illeti, egy hiányzó adatforrást közvetlenül az adathalmaz beállításainak oldalán hozzáadhat az átjáróhoz. A váltógomb kibontásával megtekintheti az adatforrásokat, és kiválaszthatja az **Hozzáadás átjáróhoz** hivatkozást, ahogyan az alábbi képernyőképen látható. Ha Ön nem az átjáró rendszergazdája, a megjelenő kapcsolattartási adatok használatával a szükséges adatforrás-definíció hozzáadására vonatkozó kérést küldhet egy átjáró-rendszergazdának.
 
 ![Hozzáadás átjáróhoz](media/refresh-data/add-to-gateway.png)
+
+Ügyeljen rá, hogy a megfelelő adatforrás-definíciót kapcsolja össze az adatforrással. Ahogy a fenti képernyőképen látható, az átjáró rendszergazdái több definíciót is létrehozhatnak egyetlen átjárón, melyek mindegyike ugyanahhoz az adatforráshoz csatlakozik, és mindegyik definícióhoz más-más hitelesítő adatok tartoznak. A fenti példában az Értékesítési osztály adattulajdonosa az AdventureWorksProducts-Sales adatforrás-definíciót választaná, míg a Támogatási osztály munkatársa az adatkészlethez az AdventureWorksProducts-Support adatforrás-definíciót rendelné. Ha az adatforrás-definíciók nevei nem érthetőek első látásra, kérdezze meg az átjáró rendszergazdáját, hogy melyiket kell választania.
 
 > [!NOTE]
 > Egy adathalmaz csak egyetlen átjárókapcsolatot használhat. Másként fogalmazva helyszíni adatforrásokat nem lehet egynél több átjárókapcsolaton keresztül elérni. Ennek megfelelően minden szükséges adatforrás-definíciót ugyanahhoz az adatforráshoz kell hozzáadni.

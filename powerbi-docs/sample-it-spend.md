@@ -7,117 +7,124 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/23/2018
+ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 0a71a0e0fe7af3c074c94ab26083839ff114f815
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3fc93f255d6645ffa6f15676b9a70f24326fcfdc
+ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61232788"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67349264"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Informatikaköltség-elemzési minta a Power BI-hoz: Bemutató megtekintése
 
 ## <a name="overview-of-the-it-spend-analysis-sample"></a>Informatikaköltség-elemzési minta: áttekintés
-Az Informatikaköltség-elemzés [tartalomcsomag](service-organizational-content-pack-introduction.md) (irányítópult, jelentés és adatkészlet) egy informatikai osztály költségeinek terv- és tényadatait elemzi. Az összevetés segít megérteni, hogy milyen pontosan tervezte a cég az idei évet, és feltárhatóvá teszi a tervtől jelentősen eltérő területeket. A példában szereplő cég egy éves tervezési cikluson halad végig, és minden negyedévben friss becslést készít (Latest Estimate - LE) a pénzügyi év informatikai költségeiben bekövetkezett változások elemzéséhez.
+Az Informatikaköltség-elemzési minta tartalomcsomag egy irányítópultot, jelentést és adathalmazt tartalmaz, és egy informatikai osztály költségeinek terv- és tényadatait elemzi. Az összevetés segít megérteni, hogy milyen pontosan tervezte a cég az idei évet, és feltárhatóvá teszi a tervtől jelentősen eltérő területeket. A példában szereplő cég egy éves tervezési cikluson halad végig, és minden negyedévben friss becslést készít (Latest Estimate - LE) a pénzügyi év informatikai költségeiben bekövetkezett változások elemzéséhez.
 
-![](media/sample-it-spend/it1.png)
+![Az Informatikaköltség-elemzési minta irányítópultja](media/sample-it-spend/it1.png)
 
-Ez a minta abba a sorozatba tartozik, amely a Power BI üzleti jellegű adatokkal, jelentésekkel, és irányítópultokkal történő használatát mutatja be. Az adatok az obviEnce-től (<http://obvience.com/>) származó valós, de anonimizált adatok.
+Ez a minta abba a sorozatba tartozik, amely a Power BI üzleti jellegű adatokkal, jelentésekkel, és irányítópultokkal történő használatát mutatja be. Az [obviEnce](http://www.obvience.com/)-től származó valós adatokkal lett létrehozva, melyeket anonimizáltunk. Az adatok többféle formátumban is elérhetők: tartalomcsomagként vagy alkalmazásként, .pbix kiterjesztésű Power BI Desktop-fájlként és Excel-munkafüzetként is. [Power BI-minták](sample-datasets.md) megtekintése. 
+
+Ebben az oktatóanyagban a Power BI szolgáltatást és az Informatikaköltség-elemzési minta tartalomcsomagot használjuk. Mivel azonban a jelentéssel való munka nagyon hasonló, a Power BI Desktopot is használhatja a .pbix-mintafájllal, hogy követni tudja a bemutatott műveleteket.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
- Használat előtt a mintát [tartalomcsomagként](https://docs.microsoft.com/power-bi/sample-it-spend#get-the-content-pack-for-this-sample), [.pbix-fájlként](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix) vagy [Excel-munkafüzetként](http://go.microsoft.com/fwlink/?LinkId=529783) le kell töltenie.
+ Használat előtt a mintát [tartalomcsomagként](#get-the-content-pack-for-this-sample), [.pbix-fájlként](#get-the-pbix-file-for-this-sample) vagy [Excel-munkafüzetként](#get-the-excel-workbook-for-this-sample) le kell töltenie.
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Tartalomcsomag letöltése ehhez a mintához
 
-1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), és jelentkezzen be.
+1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), jelentkezzen be, majd nyissa meg azt a munkaterületet, ahol a mintát szeretné menteni.
+
 2. A bal alsó sarokban válassza az **Adatok lekérése** lehetőséget.
    
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. Ekkor megjelenik az Adatok lekérése lap. Itt kattintson a **Minták** ikonra.
+   ![Az Adatok beolvasása lehetőség kiválasztása](media/sample-datasets/power-bi-get-data.png)
+3. Ekkor megjelenik az **Adatok lekérése** lap. Itt válassza a **Minták** lehetőséget.
    
-   ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Válassza a **Informatikaköltség-elemzési mintát**, majd a **Csatlakozás** lehetőséget.  
+4. Válassza az **Informatikaköltség-elemzési mintát**, majd a **Csatlakozás** lehetőséget.  
   
-   ![Adatok beolvasása](media/sample-it-spend/it-connect.png)
+   ![Csatlakozás mintához](media/sample-it-spend/it-connect.png)
    
-5. A Power BI importálja a tartalomcsomagot, és egy új irányítópultot, jelentést és adatkészletet ad hozzá az aktuális munkaterülethez. Az új tartalmakat sárga csillag jelöli. 
+5. A Power BI importálja a tartalomcsomagot, és egy új irányítópultot, jelentést és adatkészletet ad hozzá az aktuális munkaterülethez.
    
-   ![Csillag](media/sample-it-spend/it-asterisk.png)
+   ![Az Informatikaköltség-elemzési minta listaelem](media/sample-it-spend/it-spend-analysis-sample-entry.png)
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>.pbix-fájl letöltése ehhez a mintához
 
-Lehetőség van a mintát .pbix-fájlként is letölteni, amelyet a Power BI Desktoppal való használatra terveztek. 
-
- * [Informatikaköltség-elemzési minta](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
+Az Informatikaköltség-elemzési mintát a Power BI Desktoppal való használatra tervezett [.pbix-fájlként](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix) is letöltheti.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Excel-munkafüzet letöltése ehhez a mintához
-Letöltheti [kizárólag a minta adatkészletét (Excel-munkafüzetét) is](http://go.microsoft.com/fwlink/?LinkId=529783). A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatokat a **Power Pivot > Kezelés** lehetőségre kattintva nézheti meg.
 
+Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](http://go.microsoft.com/fwlink/?LinkId=529783) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
 
-## <a name="the-it-spend-analysis-sample-dashboard"></a>Az Informatikaköltség-elemzés minta irányítópultja
-Az irányítópulton látható két számcsempe, a **Var Plan %** (Tervtől való százalékos eltérés) és a **Variance Latest Estimate % Quarter 3** (A 3. negyedévi friss becsléstől való százalékos eltérés) bemutatja a cég általános teljesítményét a tervhez és a friss negyedévi becsléshez képest (LE3 = 3. negyedévi friss becslés). A tervtől való átlagos eltérés körülbelül 6 %. Tárja fel az eltérés okát – mikor, hol, és mely kategóriában jelentkezik?
+## <a name="it-spend-analysis-sample-dashboard"></a>Az Informatikaköltség-elemzés minta irányítópultja
+Az irányítópulton bal oldalán látható két számcsempe, a **Var Plan %** (Tervtől való százalékos eltérés) és a **Variance Latest Estimate % Quarter 3** (A 3. negyedévi friss becsléstől való százalékos eltérés) bemutatja a cég általános teljesítményét a tervhez és a friss negyedévi becsléshez képest (LE3 = 3. negyedévi friss becslés). A tervtől való átlagos eltérés körülbelül 6 %. Tárja fel az eltérés okát – mikor, hol, és mely kategóriában jelentkezik?
 
-## <a name="ytd-it-spend-trend-analysis-page"></a>„Idei informatikaköltségek trendanalízise” oldal
-Ha a **Var Plan % by Sales Region** (Tervtől való százalékos eltérés értékesítési régiók szerint) csempére kattint, megnyílik az Informatikaköltség-elemzés mintajelentés „informatikaköltségek trendanalízise ” oldala. Egy pillantással felmérheti, hogy az USA és Európa területén pozitív, Kanadában, Latin-Amerikában és Ausztráliában negatív az eltérés. Míg az USA területén körülbelül +6 % az eltérés a legfrissebb becsléshez képest, Ausztráliában ez az érték körülbelül -7 %.
+## <a name="ytd-it-spend-trend-analysis-page"></a>Idei informatikaköltségek trendanalízise oldal
+Amikor a **Var Plan % by Sales Region** (Tervtől való százalékos eltérés értékesítési régiók szerint) csempét választja, az megjeleníti az Informatikaköltség-elemzés mintajelentés **Idei informatikaköltségek trendanalízise** oldalát. Egy pillantással felmérheti, hogy az Egyesült Államok és Európa területén pozitív, Kanadában, Latin-Amerikában és Ausztráliában negatív az eltérés. Míg az Egyesült Államok területén körülbelül +6 % az eltérés a legfrissebb becsléshez képest, Ausztráliában ez az érték körülbelül -7 %.
 
-![](media/sample-it-spend/it2.png)
+![Terv var. (%) értékesítési régió szerint](media/sample-it-spend/it2.png)
 
-De ha csupán ezt az egy diagramot vizsgálja, téves következtetésre juthat. A nagyobb összefüggések megértéséhez meg kell vizsgálnia a dollárban kifejezett tényleges összegeket is.
+Ha azonban csupán ezt az egy diagramot vizsgálja, téves következtetésre juthat. A nagyobb összefüggések megértéséhez meg kell vizsgálnia a dollárban kifejezett tényleges összegeket is.
 
-1. A „Tervtől való százalékos eltérés régiók szerint” diagramon jelölje ki **Ausztráliát és Új-Zélandot**, és tekintse meg a „Tervtől való eltérés informatikai terület szerint” diagramot.
+1. A **Tervtől való százalékos eltérés régiók szerint** diagramon jelölje ki **Ausztráliát és Új-Zélandot**, és tekintse meg a **Tervtől való eltérés informatikai terület szerint** diagramot.
 
-   ![](media/sample-it-spend/it3.png)
-2. Most válassza ki az **USA** elemet. Így már világosabb a kép – a teljes költség Ausztráliára eső része elenyésző az USA-hoz képest.
+   ![Idei informatikaköltségek trendanalízise oldal](media/sample-it-spend/it3.png)
+2. Most válassza ki az **USA** elemet. Megfigyelheti, hogy Ausztrália és Új-Zéland egészen kis hányadát teszi ki a teljes költségnek az Egyesült Államokhoz viszonyítva.
 
-    Mi a teendő most, hogy leszűkítette az elemzést az USA területére? Vizsgálja meg, hogy az USA területén belül melyik kategória okozza az eltérést.
+    Most vizsgálja meg, hogy az USA területén belül melyik kategória okozza az eltérést.
 
 ## <a name="ask-questions-of-the-data"></a>Kérdések az adatokról
-1. A felső navigációs sávon, az **Informatikaköltség-elemzés minta** lehetőségre kattintva visszatérhet az irányítópultokhoz.
-2. A kérdés mezőbe írja be a következőt: „show IT areas, var plan % and var le3 % bar chart” (mutassa az informatikai területeket, a tervtől való százalékos eltérést, és a le3 értéktől való százalékos eltérést).
+1. A felső navigációs sávon, az **Informatikaköltség-elemzés minta** lehetőségre kattintva visszatérhet a minta irányítópultjához.
+2. Válassza a **Tegyen fel kérdést az adataival kapcsolatban** lehetőséget.
+3. A bal oldali **Az első lépésekkel kapcsolatos kérdések** listában válassza a **what is the plan by IT area** (mi az informatikai terület szerinti terv) lehetőséget.
 
-   ![](media/sample-it-spend/it4.png)
+   ![Informatikai terület szerinti terv diagram](media/sample-it-spend/it-area-chart.png)
 
-   Az első informatikai területen (**Infrastruktúra**), igen jelentős a százalékos különbség az eredeti tervhez és a legfrissebb becsléshez képest mért eltérés között.
+4. Törölje a Q&A-mezőből az előző bevitelt, és írja be a *show IT areas, var plan % and var le3 % bar chart* (mutasd az informatikai területek, a tervtől való százalékos eltérés és a 3. negyedévi friss becsléstől való százalékos eltérés sávdiagramját).
 
-## <a name="ytd-spend-by-cost-elements-page"></a>„Idei költségelemek szerinti ráfordítás” oldal
-Térjen vissza az irányítópulthoz, és tekintse meg a **Var Plan %, Var LE3%** (Tervtől való százalékos eltérés és a LE3 értéktől való százalékos eltérés) csempét.
+   ![a tervtől való százalékos eltérés és a 3. negyedévi friss becsléstől való százalékos eltérés informatikai területek szerinti diagramja](media/sample-it-spend/it4.png)
 
-![](media/sample-it-spend/it5.png)
+   Az első informatikai területen, amely az **Infrastruktúra**, igen jelentős a százalékos különbség az eredeti tervhez és a legfrissebb becsléshez képest mért eltérés között.
 
-Az infrastruktúra területe a tervtől való hatalmas pozitív eltéréssel tűnik ki.
+## <a name="ytd-spend-by-cost-elements-page"></a>Idei költségelemek szerinti ráfordítás oldal
 
-1. Ha erre a csempére kattint, megnyílik az Informatikaköltség-elemzés minta jelentésének „Idei költségelemek szerinti ráfordítás” oldala.
-2. Kattintson az **Infrastruktúra** sávra a bal alsó „Var Plan % and Var LE3 % by IT Area” (tervtől való százalékos eltérés, és a LE3 értéktől való százalékos eltérés informatikai területek szerint) diagramon, és tekintse meg a balra található „Var Plan % by Sales Region" (tervtől való százalékos eltérés értékesítési régiók szerint) diagramot.
+1. Térjen vissza az irányítópulthoz, és nézze meg **Tervtől való százalékos eltérés és a 3. negyedévi friss becsléstől való százalékos eltérés** irányítópult-csempét.
 
-    ![](media/sample-it-spend/it6.png)
-3. A jelentősen eltérő költségelem megtalálásához kattintson a szeletelőben az egyes költségelemcsoportokra.
-4. A legnagyobb eltérést mutató részterület megtalálásához az **Egyéb** elem kijelölése mellett kattintson az informatikai terület **Infrastruktúra** elemére, és kattintson az „Informatikai részterületek” szeletelő elemeire.  
+   ![a tervtől való százalékos eltérés és a 3. negyedévi friss becsléstől való százalékos eltérés csempe](media/sample-it-spend/it5.png)
 
-   A **Hálózatkezelés** részterületen jelentős eltérés mutatkozik.
+   Megfigyelheti, hogy az Infrastruktúra kiemelkedően nagy pozitív eltérést mutat a tervhez képest.
 
-   Úgy látszik, a cég juttatásként telefonos szolgáltatásokat osztott ki az alkalmazottainak, de ez nem szerepelt a tervben.
+1. A csempe kiválasztásával megnyithatja a jelentést, és megtekintheti az **Idei költségek költségelemenként** oldalt.
+2. Jelölje ki az **Infrastruktúra** sávra a jobb alsó **Var Plan % and Var LE3 % by IT Area** (tervtől való százalékos eltérés, és a LE3 értéktől való százalékos eltérés informatikai területek szerint) diagramon, és figyelje meg a bal alsó **Var Plan % by Sales Region** (tervtől való százalékos eltérés értékesítési régiók szerint) diagramot.
 
-## <a name="plan-variance-analysis-page"></a>„Tervtől való eltérés elemzése” oldal
-Maradjon a jelentésben, és kattintson az alul látható „Plan Variance Analysis” (Tervtől való eltérés elemzése) lapra, amely megnyitja a jelentés 3.oldalát.
+    ![Idei költségelemek szerinti ráfordítás oldal](media/sample-it-spend/it6.png)
+3. A **Költségelem-csoport** szeletelőben szereplő neveket egymás után kiválasztva megtalálhatja a legnagyobb eltérést mutató költségelemet.
+4. A legnagyobb eltérést mutató részterület megtalálásához az **Egyéb** elem kijelölése mellett jelölje ki az **Informatikai terület** szeletelő **Infrastruktúra** elemét, majd egyenként jelölje ki az **Informatikai részterület** szeletelő elemeit.  
 
-Ha a bal oldali „Var Plan, and Var Plan % by Business Area” (Tervtől való eltérés és Tervtől való százalékos eltérés üzleti területek szerint) összetett diagramon az Infrastruktúra oszlopra kattint, az oldal többi részén kiemelheti az infrastruktúra értékeit.
+   Figyelje meg a **Hálózat** elemnél mutatkozó nagy eltérést. A jelek szerint a vállalat úgy döntött, hogy telefonos szolgáltatásokat ad alkalmazottainak juttatásként, bár ezt nem tervezték előre.
 
-![](media/sample-it-spend/it7.png)
+## <a name="plan-variance-analysis-page"></a>Tervtől való eltérés elemzése oldal
 
-A „Var plan% by Month and Business Area” (Tervtől való százalékos eltérés hónapok és üzleti területek szerint) diagramon megfigyelheti, hogy az infrastruktúránál február körül pozitív eltérés jelent meg, amelynek mértéke azóta is növekszik. Szintén figyelje meg az infrastruktúra tervtől való eltérését országok szerint, és vesse ezt össze az összes üzleti területre vonatkozó értékkel. A jobb oldali „Informatikai terület” és „Informatikai részterület” szeletelők használatával kiemelés helyett szűrheti az oldal többi részén látható értékeket. Az adatok másféle elemzéséhez kattintson a jobb oldalon látható különböző informatikai területekre. Az informatikai részterületek kijelölésével a részterületek szintjén tekintheti meg az eltéréseket.
+1. Válassza a **Tervtől való eltérés elemzése** lapfület az oldal alján.
+
+2. Ha a bal oldali **Var Plan, and Var Plan % by Business Area** (Tervtől való eltérés és Tervtől való százalékos eltérés üzleti területek szerint) diagramon kijelöli az **Infrastruktúra** oszlopot, az oldal többi részén kiemelheti az infrastruktúra üzleti terület értékeit.
+
+    ![Tervtől való eltérés elemzése oldal](media/sample-it-spend/it7.png)
+
+   A **Tervtől való százalékos eltérés hónap és üzleti terület szerint** diagramon megfigyelheti, hogy az infrastruktúra üzleti terület februárban kezdett pozitív eltérést mutatni. Azt is megfigyelheti, hogy ennek az üzleti területnek a tervtől való eltérése országonként változik, összevetve az összes üzleti területre vonatkozó értékkel. 
+
+3. A jobb oldali **Informatikai terület** és **Informatikai részterület** szeletelők használatával szűrheti az oldal többi részén látható értékeket, és ismerkedhet az adatokkal. 
 
 ## <a name="edit-the-report"></a>A jelentés szerkesztése
-Kattintson a **Jelentés szerkesztése** elemre a bal felső sarokban, és nyissa meg a Szerkesztési nézetet.
+Válassza a **Jelentés szerkesztése** elemet a bal felső sarokban, és nyissa meg a Szerkesztési nézetet:
 
-* Áttekintheti a lapok felépítését – a mezőket az egyes diagramokban és a szűrőket az oldalakon
-* Lapokat és diagramokat vehet fel ugyanazon adatok alapján
-* Módosíthatja az egyes diagramok vizualizációjának típusát
-* Rögzítheti a diagramokat az irányítópulton
+* Áttekintheti a lapok felépítését – a mezőket az egyes diagramokban és a szűrőket az oldalakon.
+* Lapokat és diagramokat vehet fel ugyanazon adatok alapján.
+* Módosíthatja az egyes diagramok vizualizációjának típusát.
+* Az érdekesnek ítélt diagramokat rögzítheti az irányítópulton.
 
-Ebben a környezetben nyugodtan kísérletezhet. Mindig hozhat olyan döntést, hogy nem menti a módosításokat. De ha mégis menteni szeretné őket, bármikor lekérheti a minta új másolatát az Adatok lekérése lehetőséggel.
+Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
 
 ## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
-Reméljük, hogy ez a bemutató segített megérteni, hogy miképpen elemezheti az informatikai költségek adatait a Power BI irányítópultok, a Q&A és a jelentések használatával. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További tudnivalók a [Power BI használatának első lépéseiről](service-get-started.md).
+Reméljük, hogy ez a bemutató segített megérteni, hogy miképpen elemezheti az informatikai költségek adatait a Power BI irányítópultok, a Q&A és a jelentések használatával. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).

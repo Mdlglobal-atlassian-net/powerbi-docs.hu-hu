@@ -8,36 +8,38 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 06/04/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2acdada1a0b6955fb7d85f445bdbf5895b795bb4
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 5d704e32a9e5f85f280e17042ae4eb799058d739
+ms.sourcegitcommit: 7d52401f50944feaaa112c84113ee47f606dbf68
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751169"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67124017"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>A OneDrive vagy a SharePoint Online szolgáltatásban tárolt adatkészletek frissítése
-A fájlok importálása a OneDrive vagy a SharePoint Online szolgáltatásból a Power BI szolgáltatásba nagyszerű mód arra, hogy biztosítsa, hogy a **Power BI Desktopban** végzett munkája szinkronban maradjon a Power BI szolgáltatással.
+A fájlok importálása a OneDrive vagy a SharePoint Online szolgáltatásból a Power BI szolgáltatásba nagyszerű mód annak biztosítására, hogy a Power BI Desktopban végzett munkája szinkronban maradjon a Power BI szolgáltatással.
 
 ## <a name="advantages-of-storing-a-power-bi-desktop-file-on-onedrive-or-sharepoint-online"></a>A Power BI Desktop-fájlok OneDrive vagy SharePoint Online szolgáltatásban való tárolásának előnyei
-Ha egy **Power BI Desktop**-fájlt a OneDrive vagy a SharePoint Online szolgáltatásban tárol, a rendszer a fájl modelljébe töltött összes adatot importálja az adatkészletbe, és a fájlban létrehozott összes jelentést betölti a Power BI szolgáltatásba a **Jelentések** közé. Amikor módosítja a fájlt a OneDrive vagy SharePoint Online szolgáltatásban, például új mértékeket ad hozzá, módosítja az oszlopneveket vagy szerkeszti a vizualizációkat, a fájl mentésekor ezek a módosítások a Power BI szolgáltatásban is frissülnek, általában egy órán belül.
+Ha egy Power BI Desktop-fájlt a OneDrive vagy a SharePoint Online szolgáltatásban tárol, a rendszer a fájl modelljébe töltött összes adatot importálja az adatkészletbe. A fájlban létrehozott összes jelentés be lesz töltve a Power BI szolgáltatásba a **Jelentések** közé. Tegyük fel, hogy módosítja a OneDrive-on vagy a SharePoint Online-ban tárolt fájlt. A módosítások során új mértékeket ad hozzá, oszlopneveket változtat meg, vagy vizualizációkat szerkeszt. A fájl mentése után a Power BI szolgáltatás ezeket a módosításokat is szinkronizálja, általában körülbelül egy órán belül.
 
-Közvetlenül a Power BI Desktopban végezhet egyszeri, manuális frissítést, ha a Kezdőlap szalagon a Frissítés lehetőséget választja. Amikor itt a Frissítés elemet választja, a *fájl* modelljében lévő adatok az eredeti adatforrásból származó frissített adatokkal frissülnek. Ez a frissítéstípus, amely teljes mértékben magából a Power BI Desktop alkalmazásból történik, különbözik a Power BI manuális vagy ütemezett frissítésétől, és fontos megérteni ezt a különbséget.
+Közvetlenül a Power BI Desktopban is végezhet egyszeri, manuális frissítést, ha a **Kezdőlap** szalagon a **Frissítés** lehetőséget választja. Amikor a **Frissítés** lehetőséget választja, a fájlbeli modell az eredeti adatforrásból származó adatokkal lesz frissítve. Ez a fajta frissítés teljes egészében a Power BI Desktop alkalmazásból megy végbe. Különbözik a Power BI-beli manuális vagy ütemezett frissítéstől, és fontos tisztában lenni az eltérésekkel.
 
 ![](media/refresh-desktop-file-onedrive/pbix-refresh.png)
 
-Amikor a Power BI Desktop-fájlt a OneDrive-ról vagy a SharePoint Online-ról importálja, a rendszer az adatokat a modellel kapcsolatos más információkkal együtt a Power BI egy adatkészletébe tölti. A Power BI szolgáltatásban (nem a Power BI Desktopban) azért érdemes frissíteni az adatkészletben lévő adatokat, mert ezen alapulnak a Power BI szolgáltatásban lévő jelentések. Mivel az adatforrások külső adatforrások, manuálisan frissítheti az adatkészletet az **Azonnali frissítéssel**, vagy beállíthat egy frissítési ütemtervet a **Frissítés ütemezésével**.
+Amikor a Power BI Desktop-fájlt a OneDrive-ról vagy a SharePoint Online-ról importálja, az adatokat és a modellel kapcsolatos információkat egy Power BI-beli adathalmazba tölti. Azért frissíti a Power BI szolgáltatásban lévő adathalmazt, mert a jelentései arra épülnek. Mivel az adatforrások külső adatforrások, manuálisan frissítheti az adatkészletet az **Azonnali frissítéssel**, vagy beállíthat egy frissítési ütemtervet a **Frissítés ütemezésével**. 
 
-Az adatkészlet frissítésekor a Power BI nem csatlakozik a OneDrive vagy a SharePoint Online szolgáltatásban lévő fájlhoz a frissített adatok lekérdezéséhez. Az adatkészletben lévő információkkal közvetlenül az adatforrásokhoz csatlakozik a frissített adatok lekérdezése érdekében, majd az adatkészletbe tölti azokat. Az adatkészlet frissített adatait a rendszer nem szinkronizálja vissza a OneDrive vagy a SharePoint Online szolgáltatásban lévő fájllal.
+![](media/refresh-desktop-file-onedrive/powerbi-service-refresh.png)
+
+Az adathalmaz frissítésekor a Power BI nem csatlakozik a OneDrive vagy a SharePoint Online szolgáltatásban lévő fájlhoz a frissített adatok lekérdezéséhez. Az adathalmazban lévő információkkal közvetlenül az adatforrásokhoz csatlakozik a frissített adatok lekérdezése érdekében. Ezeket az adatokat aztán betölti az adathalmazba. Az adathalmaz frissített adatait a rendszer nem szinkronizálja vissza a OneDrive vagy a SharePoint Online szolgáltatásban lévő fájllal.
 
 ## <a name="whats-supported"></a>Mi támogatott?
-A Power BI-ban az Azonnali frissítés és a Frissítés ütemezése támogatott a helyi meghajtóról importált Power BI Desktop fájlokból létrehozott adatkészletek esetében, ahol az Adatok lekérése/Lekérdezésszerkesztő használatával történik a csatlakozás a következő adatforrásokhoz, illetve az adatbetöltés azokról:
+A Power BI-ban a **Frissítés** és a **Frissítés ütemezése** támogatott a helyi meghajtóról importált Power BI Desktop fájlokból létrehozott adathalmazok esetében, ahol a következő adatforrásokhoz való csatlakozás, illetve az azokról való adatbetöltés **Adatok lekérése** vagy a **Lekérdezésszerkesztő** használatával történik.
 
 ### <a name="power-bi-gateway---personal"></a>Személyes Power BI-átjáró
-* A Power BI Desktop Adatok lekérése és Lekérdezésszerkesztő területein látható összes online adatforrás.
-* A Power BI Desktop Adatok lekérése és Lekérdezésszerkesztő területein látható összes helyszíni adatforrás a Hadoop-fájl (HDFS) és a Microsoft Exchange kivételével.
+* A Power BI Desktop **Adatok lekérése** és **Lekérdezésszerkesztő** területein látható összes online adatforrás.
+* A Power BI Desktop **Adatok lekérése** és **Lekérdezésszerkesztő** területein látható összes helyszíni adatforrás a Hadoop-fájl (HDFS) és a Microsoft Exchange kivételével.
 
 <!-- Refresh Data sources-->
 [!INCLUDE [refresh-datasources](./includes/refresh-datasources.md)]
@@ -48,33 +50,34 @@ A Power BI-ban az Azonnali frissítés és a Frissítés ütemezése támogatott
 > 
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive vagy OneDrive Vállalati verzió. Mi közöttük a különbség?
-Ha rendelkezik személyes OneDrive-val és OneDrive Vállalati verzióval is, a Power BI-ba importálni kívánt fájlokat ajánlott a OneDrive Vállalati verziójában tartani. Ennek oka a következő: Ön minden bizonnyal két külön fiókot használ a két szolgáltatáshoz.
+Ha rendelkezik személyes OneDrive-val és OneDrive vállalati verzióval is, a Power BI-ba importálni kívánt fájlokat érdemes a OneDrive vállalati verziójában tartani. Ennek oka a következő: Ön minden bizonnyal két külön fiókot használ a két szolgáltatáshoz.
 
-A OneDrive Vállalati verziójához való csatlakozás a Power BI szolgáltatásban általában zökkenőmentes, mert a Power BI-ba való bejelentkezéshez használt fiók gyakran megegyezik a OneDrive vállalati verziójához használttal. A személyes OneDrive-hoz viszont valószínűleg egy másik [Microsoft-fiókot](https://account.microsoft.com) használ.
+A Power BI-ban egyszerűen csatlakozhat a OneDrive vállalati verziójához, mert a Power BI-fiók gyakran megegyezik a OneDrive vállalati verzióhoz használt fiókkal. Személyes OneDrive esetén valószínűleg másik [Microsoft-fiókkal](https://account.microsoft.com) jelentkezik be.
 
-Amikor bejelentkezik a Microsoft-fiókjával, mindenképp jelölje be a Bejelentkezve szeretnék maradni lehetőséget. A Power BI ezután szinkronizálni tudja a Power BI Desktopban végrehajtott fájlfrissítéseket a Power BI adatkészleteivel.  
-    ![](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)
+Amikor bejelentkezik a Microsoft-fiókjával, mindenképp jelölje be a **Bejelentkezve szeretnék maradni** lehetőséget. A Power BI ezután szinkronizálni tudja a Power BI Desktopban végrehajtott fájlfrissítéseket a Power BI adatkészleteivel.
 
-Ha olyan módosítást hajt végre a OneDrive-on lévő fájlon, amely nem szinkronizálható a Power BI-ban található adatkészlettel vagy jelentésekkel, mert esetleg megváltoztak a Microsoft-fiók hitelesítő adatai, csatlakoznia kell, és ismét importálnia kell a fájlt a személyes OneDrive-járól.
+![](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)
 
-## <a name="how-do-i-schedule-refresh"></a>Hogyan ütemezhetem a frissítést?
-Frissítés ütemezésének beállításakor a Power BI közvetlenül az adatforrásokhoz csatlakozik az adatkészletben lévő csatlakozási információkkal és hitelesítő adatokkal a frissített adatok lekérdezése érdekében, majd a frissített adatokat az adatkészletbe tölti. A jelentésekben és irányítópultokon a Power BI szolgáltatás ezen adatkészletére alapuló összes vizualizáció is frissül.
+Ha módosította a microsoftos hitelesítő adatait, nem tudja szinkronizálni a módosításokat a OneDrive-on lévő fájl és a Power BI-beli adathalmaz között. Ismét csatlakoznia kell, hogy újra importálja a fájlt a OneDrive-ról.
 
-Az ütemezett frissítés beállításáról további részleteket az [ütemezett frissítés konfigurálásáról szóló részben](refresh-scheduled-refresh.md) olvashat.
+## <a name="how-do-i-schedule-refresh"></a>Hogyan ütemezhetek frissítést?
+Frissítési ütemezés beállításakor a Power BI közvetlenül az adatforrásokhoz csatlakozik. A Power BI az adathalmazbeli kapcsolódási információk és hitelesítő adatok használatával kérdezi le a módosított adatokat. A Power BI az adathalmazba tölti a módosított adatokat. Ez után a Power BI szolgáltatásban erre az adathalmazra épülő összes jelentésvizualizációt és irányítópultot is frissíti.
+
+Az ütemezett frissítés beállításáról az [Ütemezett frissítés konfigurálása](refresh-scheduled-refresh.md) című cikkben talál további részleteket.
 
 ## <a name="when-things-go-wrong"></a>Hiba esetén
-Általában azért történnek hibák, mert a Power BI nem tud bejelentkezni az adatforrásokba, vagy ha az adatkészlet helyszíni adatforráshoz csatlakozik, mert az átjáró offline állapotban van. Győződjön meg arról, hogy a Power BI be tud jelentkezni az adatforrásokba. Ha az adatforrásokba való bejelentkezéshez használt jelszó megváltozik, vagy ha a Power BI kijelentkezik az adatforrásból, próbáljon meg ismét bejelentkezni az adatforrásokba az Adatforrás azonosító adatai részben.
+Ha hiba lép fel, annak általában az az oka, hogy a Power BI nem tud bejelentkezni az adatforrásokba. Az is hibát okozhat, ha az adathalmaz helyszíni adatforráshoz próbál csatlakozni, de az átjáró offline állapotban van. Ezek a problémák elkerülhetők, ha gondoskodik róla, hogy a Power BI be tudjon jelentkezni az adatforrásokba. Próbáljon meg bejelentkezni adatforrásaiba az **Adatforráshoz tartozó hitelesítő adatok** alatt. Előfordulhat, hogy az adatforrásba való bejelentkezéshez használt jelszó megváltozik, vagy a rendszer kijelentkezteti a Power BI-t az adatforrásból.
 
-Ha módosításokat végez egy OneDrive-on tárolt Power BI Desktop-fájlon, és menti azt, majd ezek a módosítások nem jelennek meg a Power BI-ban nagyjából egy órán belül, ennek az lehet az oka, hogy a Power BI nem tud csatlakozni a OneDrive-hoz. Próbáljon meg ismét csatlakozni a OneDrive-on tárolt fájlhoz. Ha a rendszer arra kéri, hogy jelentkezzen be, ügyeljen arra, hogy bejelölje a Bejelentkezve szeretnék maradni lehetőséget. Mivel a Power BI nem tudott csatlakozni a OneDrive szolgáltatáshoz, és így nem tudta szinkronizálni a fájl adatait, újra importálnia kell az adott fájlt.
+Ha menti egy OneDrive-on tárolt Power BI Desktop-fájl módosításait, majd ezek a módosítások nem jelennek meg a Power BI-ban nagyjából egy órán belül, ennek az lehet az oka, hogy a Power BI nem tud csatlakozni a OneDrive-hoz. Próbáljon meg ismét csatlakozni a OneDrive-on tárolt fájlhoz. Ha a rendszer arra kéri, hogy jelentkezzen be, feltétlenül jelölje be a **Bejelentkezve szeretnék maradni** lehetőséget. Mivel a Power BI nem tudott csatlakozni a OneDrive szolgáltatáshoz, és így nem tudta szinkronizálni a fájl adatait, újra importálnia kell az adott fájlt.
 
 Mindenképpen hagyja bejelölve az **Értesítést kérek e-mailben, ha sikertelen a frissítés** jelölőnégyzetet. Azonnal tudnia kell, ha egy ütemezett frissítés meghiúsul.
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
-Néha az adatok frissítése nem a várt módon történik. Ezt általában egy átjáróval kapcsolatos hiba okozza. Az átjáró-hibaelhárítással kapcsolatos cikkekben találja az eszközöket és az ismert hibákat.
+Néha az adatok frissítése nem a várt módon történik. Adatfrissítési problémák általában átjáróval való csatlakozáskor lépnek fel. Az átjáró-hibaelhárítással kapcsolatos cikkekben találja az eszközöket és az ismert hibákat.
 
 [A Helyszíni adatátjáróval kapcsolatos hibák elhárítása](service-gateway-onprem-tshoot.md)
 
 [A személyes Power BI Gateway hibáinak elhárítása](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? Forduljon a [Power BI közösségéhez](http://community.powerbi.com/).
 

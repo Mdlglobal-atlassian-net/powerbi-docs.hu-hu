@@ -8,138 +8,210 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1bb6cfa195e3e6158259c9ff23cb3efdc3da4a09
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3bfe84acdf73fcb5ace791c9a84943262d0f73ab
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61068583"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67390240"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>X és Y tengely tulajdonságainak testreszabása
-Az oktatóanyag segítségével elsajátíthatja a vizualizációk X és Y tengelyének testreszabását lehetővé tevő módok végrehajtását. Nem minden vizualizáció rendelkezik tengelyekkel vagy testreszabási lehetőségekkel. Például a kördiagramoknak nincsenek tengelyei. Ráadásul a testreszabási lehetőségek minden vizualizáció esetében különböznek, és túl sok lehetőség létezik ahhoz, hogy egyetlen cikkben mindet ismertessük. Így a leggyakrabban használt tengelyek testreszabási lehetőségeit fogjuk átvenni, hogy Ön kényelmesen elsajátíthassa a vizualizációk formázási lapjának használatát a Power BI-jelentések vásznán.  
+
+Az oktatóanyag segítségével sokféle módot elsajátíthat a vizualizációk X és Y tengelyének testreszabására. Nem minden vizualizációnak vannak tengelyei. A tortadiagramoknak például nincs tengelyük. A testreszabási lehetőségek pedig vizualizációnként változnak. Több beállítási lehetőség van annál, amennyit egyetlen cikkben bemutathatnánk, így a leggyakrabban használt tengelyek testreszabási lehetőségeit fogjuk átvenni, hogy Ön kényelmesen elsajátíthassa a vizualizációk **Formázás** paneljének használatát a Power BI-jelentések vásznán.  
 
 > [!NOTE]
-> A tartalom a Power BI szolgáltatásra és a Power BI Desktopra is vonatkozik. Azok a testreszabási lehetőségek, amelyek a **Formázás** elem (a festőhenger ikon ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller.png)) kiválasztásával érhetők el, a Power BI Desktopban is elérhetők.  
->
->
+> A tartalom a Power BI szolgáltatásra és a Power BI Desktopra is vonatkozik. Azok a testreszabási lehetőségek, amelyek a **Formázás** (festőhenger ![A festőhenger ikon képernyőképe.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller.png)) ikon kiválasztásával érhetők el, a Power BI Desktopban is elérhetők.
 
-Figyelje meg, ahogy Amanda testreszabja az X és Y tengelyt, és bemutatja az összefűző vezérlésének különböző módjait a felhatolás és lehatolás használatakor. Ezután a videó alatt látható részletes utasításokat követve próbálkozzon meg a feladat elvégzésével, a Kiskereskedelmi elemzési minta használatával.
+Figyelje meg, hogyan szabja testre Amanda az X és az Y tengelyt. Különböző módszereket mutat be az összefűzés szabályozására a részletesség növelése és csökkentése során.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9DeAKM4SNJM" frameborder="0" allowfullscreen></iframe>
 
+## <a name="prerequisites"></a>Előfeltételek
 
-## <a name="customizing-visualization-x-axes-in-reports"></a>Az X tengely vizualizációjának testreszabása jelentésekben
-## <a name="create-a-stacked-chart-visualization"></a>Halmozott diagramos vizualizáció létrehozása
-Jelentkezzen be a Power BI szolgáltatásba, és nyissa meg a **Kiskereskedelmi elemzési minta** jelentést [Szerkesztési nézetben](../service-interact-with-a-report-in-editing-view.md). A további lépések követéséhez [kapcsolódjon a Kiskereskedelmi elemzési mintához](../sample-datasets.md).
+- A Power BI szolgáltatás
 
-1. Hozzon létre egy oszlopdiagramot, amely az idei és az előző évi értékesítések értékét jeleníti meg pénzügyi hónapok szerinti bontásban.
-2. Alakítsa át a diagramot halmozott oszlopdiagrammá.
+- Kiskereskedelmi elemzési mintajelentés
 
-    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-create-chart.png)
+## <a name="customize-visualization-x--and-y-axes-in-reports"></a>Vizualizáció X és Y tengelyének testreszabása jelentésekben
 
-## <a name="customize-the-x-axis"></a>Az X tengely testreszabása
-1. A Vizualizációk és szűrők ablaktáblán válassza a **Formázás** lehetőséget (a festőhenger ikont ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller.png)), hogy láthatóvá váljanak a testreszabási lehetőségek.
-2. Bontsa ki az X tengely beállításait.
+Hogy követni tudja a lépéseket, jelentkezzen be a [Power BI szolgáltatásba](https://app.powerbi.com), és nyissa meg a [Kiskereskedelmi elemzési minta](../sample-datasets.md) jelentést a [Jelentés szerkesztése](../service-interact-with-a-report-in-editing-view.md) nézetben.
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-axis.png)
-3. A Be (vagy Ki) csúszka kiválasztásával be- és kikapcsolhatja az X tengelyt. Egyelőre hagyja **Be** állásban.  Az X tengely kikapcsolásának az egyik lehetséges oka az lehet, hogy ezzel helyet hagyjunk még több adatnak.
+### <a name="create-a-stacked-column-chart-visualization"></a>Halmozott oszlopdiagramos vizualizáció létrehozása
 
-    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/onoffslider.png)
-4. Formázza a szöveg színét, méretét és betűtípusát. Ebben a példában a **szöveg színe** fekete, a **szöveg mérete** 14 értékű, a **betűtípus** pedig az Arial Black.  
-5. Kapcsolja **Be** az X tengely címét, és jelenítse meg az X tengely nevét, ami ebben az esetben **Pénzügyi hónap**.  
-6. Formázza a cím szövegének színét, méretét és betűtípusát.  Ebben a példában a **Cím színe** narancssárga, a **Tengely címe** **Pénzügyi hónap**, a **Cím szövegének mérete** pedig 21.
-7. A pénzügyi hónap szerinti rendezéshez a diagram jobb felső sarkában kattintson a három pontra (…), és válassza a **Pénzügyi hónap szerinti rendezés** lehetőséget.
+A vizualizációt először létre kell hoznia, hogy testre szabhassa.
 
-    A testreszabás elvégzése után az oszlopdiagramnak a következőhöz hasonlóan kell kinéznie:
+1. A Power BI szolgáltatásban bontsa ki a **Saját munkaterületet**.
 
-     ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-customize-axis.png)
+1. Görgessen lefelé, és válassza ki a **Kiskereskedelmi elemzési mintát** az **Adathalmazok** listájából.
 
-Az X tengelyen eddig végrehajtott testreszabások visszavonásához válassza a **Visszaállítás alapértelmezettre** lehetőséget az **X tengely** testreszabási ablaktáblájának alján.
+1. A **Vizualizációk** panelen válassza a halmozott oszlopdiagram ikont.
 
-## <a name="customize-the-y-axis"></a>Az Y tengely testreszabása
+    ![A Vizualizációk panel és egy üres halmozott oszlopdiagram képernyőképe](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-stacked-column-chart.png)
+
+1. Az X tengely értékeinek beállításához válassza a **Mezők** panelről az **Idő** > **Pénzügyi hónap** elemet.
+
+1. Az Y tengely értékeinek beállításához a **Mezők** panelről válassza az **Értékesítések** > **Múlt évi értékesítések** és az **Értékesítések** > **Folyó évi értékesítések** > **Érték** elemet.
+
+    ![Az adatokkal feltöltött halmozott oszlopdiagram képernyőképe.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-create-chart.png)
+
+### <a name="customize-the-x-axis"></a>Az X tengely testreszabása
+
+Most már testre szabhatja az X tengelyt.
+
+1. A **Vizualizációk** panelen válassza a **Formázás** (festőhenger ikon ![A festőhenger ikon képernyőképe.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller.png)) lehetőséget a testreszabási beállítások megjelenítéséhez.
+
+1. Bontsa ki az X tengely beállításait.
+
+   ![Az X tengely beállításainak képernyőképe.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-axis.png)
+
+1. Állítsa az **X tengely** csúszkát **Be** helyzetbe.
+
+    ![A Be állású csúszka képernyőképe.](media/power-bi-visualization-customize-x-axis-and-y-axis/onoffslider.png)
+
+    Az X tengely kikapcsolásának az egyik lehetséges oka az lehet, hogy ezzel helyet hagyjunk még több adatnak.
+
+1. Formázza a szöveg színét, méretét és betűtípusát:
+
+    - **Szín**: Válassza a feketét
+
+    - **Szövegméret**: Adja meg a *14* értéket
+
+    - **Betűtípus**: Válassza az **Arial Black** típust
+
+1. Húzza a **Cím** csúszkát **Be** állásba az X tengely nevének megjelenítéséhez. Ez ebben az esetben **Pénzügyi hónap**.
+
+1. Formázza a cím szövegének színét, méretét és betűtípusát:
+
+    - **Cím színe**: Válassza a narancssárgát
+
+    - **Tengelycím**: Írja be a *Pénzügyi hónap* nevet
+
+    - **Cím szövegmérete**: Adja meg a *21* értéket
+
+A testreszabás befejezése után a halmozott oszlopdiagram az alábbihoz lesz hasonló:
+
+![A testreszabott halmozott oszlopdiagram képernyőképe.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-customize-axis.png)
+
+Mentse a végrehajtott módosításokat és haladjon tovább a következő részre.
+
+Az összes módosítás visszavonásához válassza a **Visszaállítás alapértelmezettre** lehetőséget az **X tengely** testreszabási panel alján.
+
+### <a name="customize-the-y-axis"></a>Az Y tengely testreszabása
+
+Most az Y tengelyt szabhatja testre.
+
 1. Bontsa ki az Y tengely beállításait.
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis.png)
+   ![Az Y tengely beállításainak képernyőképe.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis.png)
 
-2. A Be (vagy Ki) csúszka kiválasztásával be- és kikapcsolhatja az Y tengelyt. Egyelőre hagyja **Be** állásban.  Az Y tengely kikapcsolásának az egyik lehetséges oka az lehet, hogy ezzel helyet hagyjunk még több adatnak.
-   
-    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/onoffslider.png)
-3. Állítsa át az Y tengely **Pozícióját** a jobb oldalra.
-4. Formázza a szöveg színét, méretét és betűtípusát. Ebben a példában a **szöveg színe** fekete, a **szöveg mérete** 14 értékű, a **betűtípus** pedig az Arial Black.  
-5. Hagyja meg a **Megjelenítési egységek** beállításnál a milliók, az **Értékek tizedesjegyei** beállításnál pedig a 0 értéket.
-6. Ennél a vizualizációnál az Y tengely címe nem tesz hozzá a vizualizációhoz, így hagyja a **Cím** beállítást kikapcsolva.  
-7. Emeljük ki a rácsvonalakat úgy, hogy a **Szín** beállítást sötétszürkére változtatjuk, a **Vonás vastagsága** beállítást pedig 2-re növeljük.
+1. Állítsa az **Y tengely** csúszkát **Be** helyzetbe.  
 
-    A testreszabás elvégzése után az oszlopdiagramnak a következőhöz hasonlóan kell kinéznie:
+    ![A Be állású csúszka képernyőképe.](media/power-bi-visualization-customize-x-axis-and-y-axis/onoffslider.png)
 
-     ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-complete.png)
+    Az Y tengely kikapcsolásának az egyik lehetséges oka az lehet, hogy ezzel helyet hagyjunk még több adatnak.
+
+1. Állítsa az Y tengely **Helyzetét** a **Jobb** oldalra.
+
+1. Formázza a szöveg színét, méretét és betűtípusát:
+
+    - **Szín**: Válassza a feketét
+
+    - **Szövegméret**: Adja meg a *14* értéket
+
+    - **Betűtípus**: Válassza az **Arial Black** típust
+
+1. A **Megjelenítési egység** értéket állítsa **milliókra**, az **Érték tizedesjegyeit** pedig *0*-ra.
+
+1. Ennél a vizualizációnál az Y tengely címe nem tesz hozzá a vizualizációhoz, így hagyja a **Cím** beállítást **kikapcsolva**.  
+
+1. Emelje ki a rácsvonalat a szín módosításával és a vonalvastagság növelésével:
+
+    - **Szín**: Válassza a sötétszürkét
+
+    - **Vonalvastagság**: Adja meg a *2* értéket
+
+A testreszabás elvégzése után az oszlopdiagramnak a következőhöz hasonlóan kell kinéznie:
+
+![A diagram képernyőképe a testreszabott Y tengellyel.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-complete.png)
 
 ## <a name="customizing-visualizations-with-dual-y-axes"></a>Dupla Y tengellyel rendelkező vizualizációk testreszabása
-Először létrehozunk egy kombinált diagramot, amely azt ábrázolja, hogy a boltok számának milyen hatása van az értékesítésekre.  Ez a diagram ugyanaz, amelyet a [Kombinált diagram oktatóanyagban](power-bi-visualization-combo-chart.md) létrehoztunk. Ezután megformázzuk a dupla Y tengelyt.
+
+Először létrehozunk egy kombinált diagramot, amely azt ábrázolja, hogy a boltok számának milyen hatása van az értékesítésekre. Ez a diagram ugyanaz, amelyet a [Kombinált diagram oktatóanyagban](power-bi-visualization-combo-chart.md) létrehoztunk. Ez után megformázhatja a dupla Y tengelyt.
 
 ### <a name="create-a-chart-with-two-y-axes"></a>Két Y tengellyel rendelkező diagram létrehozása
+
 1. Hozzon létre egy új vonaldiagramot, amely az **Értékesítés > Tavalyi bruttó nyereség (%)** adatokat követi **Idő > Pénzügyi hónap** szerint.
-2. A vizualizáció hónapok szerinti rendezéséhez válassza a három pontot (…), majd a **Rendezés hónapok szerint** lehetőséget.
 
-    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
+    ![Képernyőkép az új sordiagramról.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
 
-    > [NOTE]: For help sorting by month, see [sorting by other criteria](../consumer/end-user-change-sort.md#other)
+    > [!NOTE]
+    > A hónapok szerinti rendezéshez a [Rendezés más feltételek alapján](../consumer/end-user-change-sort.md#other) szakasz nyújt segítséget.
 
-    A januári bruttó nyereség 35% volt, áprilisban egy 45%-os csúcs következett, amelyet júliusban egy esés, augusztusban pedig egy újabb csúcs követett. Az idei év értékesítéseire vonatkozóan is hasonló mintát fogunk látni, mint tavaly?
-     
-3. Adja hozzá a vonaldiagramhoz az **Idei értékesítés > Érték** és a **Múlt évi értékesítés** mezőt. A **Tavalyi bruttó nyereség (%)** (a 0%-os rácsvonal mellett futó kék vonal) mérete sokkal kisebb, mint az **Értékesítés** mérete, ami megnehezíti az összehasonlítást. Az Y tengely címkéjének százalékos értékei pedig nevetségesek.      
+    Januárban a százalékos bruttó nyereség 35% volt, áprilisban elérte a 45%-os csúcsot, júniusban csökkent, majd augusztusban újabb csúcsot ért el. Az idei év értékesítéseire vonatkozóan is hasonló mintát fogunk látni, mint tavaly?
 
-    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
+1. Adja hozzá a vonaldiagramhoz az **Idei értékesítés > Érték** és a **Múlt évi értékesítés** mezőt.
 
-5. Annak érdekében, hogy a vizualizáció könnyebben olvasható és értelmezhető legyen, alakítsa át a vonaldiagramot egy vonal- és halmozott oszlopdiagrammá.
+    ![A vonaldiagram képernyőképe az új hozzáadott adatokkal.](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/converttocombo_new.png)
+    A **Tavalyi bruttó nyereség (%)** (a **0%-os** rácsvonal mellett futó kék vonal) mérete sokkal kisebb, mint az **Értékesítés** mérete, ami megnehezíti az összehasonlítást. Az Y tengely címkéjének százalékos értékei pedig nevetségesek.
 
-6. Húzza át a **Tavalyi bruttó nyereség (%)** értéket az **Oszlopértékek** közül a **Sorértékek** közé. Ekkor a fentebb létrehozott halmozott oszlopdiagramot látjuk, ***valamint*** egy vonaldiagramot.  (Tetszés szerint a fentebb ismertetett módon a tengelyek betűszíne és betűmérete is formázható.)
-   
-   A Power BI létrehoz két tengelyt, ezzel lehetővé téve az adatkészletek eltérő skálázását: a bal tengely méri a pénzösszeget, a jobb pedig a százalékokat.
+1. Annak érdekében, hogy a vizualizáció könnyebben olvasható és értelmezhető legyen, alakítsa át a vonaldiagramot egy vonal- és halmozott oszlopdiagrammá.
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes-new.png)
+   ![Képernyőkép a Vizualizációk panelről, a vonal- és halmozott oszlopdiagram ikon kiemelésével.](media/power-bi-visualization-customize-x-axis-and-y-axis/converttocombo_new.png)
+
+1. Húzza át a **Tavalyi bruttó nyereség (%)** értéket az **Oszlopértékek** közül a **Sorértékek** közé.
+
+    ![A vonal- és halmozott oszlopdiagram képernyőképe, amelyen mindhárom érték jól látható.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes.png)
+
+    Így megkapta az első szakaszban létrehozott halmozott oszlopdiagramot, egy azt átfedő vonaldiagrammal. Tetszés szerint a fentebb ismertetett módon a tengelyek betűszíne és betűmérete is formázható.
+
+   ![A testreszabott vonal- és halmozott oszlopdiagram képernyőképe.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes-new.png)
+
+   A Power BI két Y tengelyt hoz létre, a szolgáltatás így különböző léptékben kezelheti az adathalmazokat. A bal oldali dollárban mér, a jobb oldali pedig a százalékban.
 
 ### <a name="format-the-secondary-y-axis"></a>A másodlagos Y tengely formázása
-1. A **Vizualizációk** ablaktáblán válassza a festőhenger ikont, hogy láthatóvá váljanak a formázási lehetőségek.    
-2. Bontsa ki az Y tengely beállításait a lefelé mutató nyílra kattintva.    
-3. Görgessen lefelé a listában, amíg meg nem látja a **Másodlagos megtekintése** lehetőség beállításait. Állítsa a **Másodlagos megtekintése** lehetőséget **Ki** állásból **Be** állásba.    
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/combo3.png)
+1. A **Vizualizációk** ablaktáblán válassza a festőhenger ikont, a formázási lehetőségek megjelenítéséhez.
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes.png)
+1. Bontsa ki az Y tengely beállításait.
 
-4. (Opcionális) Szabja testre a két tengelyt. Ha átállítja akár az oszloptengely, akár a sortengely **Pozíció** beállítását, akkor a két tengely helyet cserél.
+1. Görgessen lefelé, amíg meg nem találja a **Másodlagos mutatása** beállítást. Ellenőrizze, hogy ez **Be** van-e kapcsolva.
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axes-options.png)
+   ![A Másodlagos mutatása beállítás képernyőképe.](media/power-bi-visualization-customize-x-axis-and-y-axis/combo3.png)
+
+1. (Opcionális) Szabja testre a két tengelyt. Ha átállítja akár az oszloptengely, akár a sortengely **Pozíció** beállítását, akkor a két tengely helyet cserél.
 
 ### <a name="add-titles-to-both-axes"></a>Címek hozzáadása a tengelyekhez
+
 Ilyen összetett vizualizációk esetében sokat segíthet, ha címeket adunk a tengelyeknek.  A címek segítségével a munkatársai jobban megérthetik a vizualizáció által elmondott történetet.
 
 1. Állítsa a **Cím** lehetőséget **Be** állásba az **Y tengely (Oszlop)** és az **Y tengely (Sor)** esetén is.
-2. Állítsa be a **Stílus** beállításnál a **Csak a cím megjelenítése** lehetőséget.
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)    
-3. A kombinált diagram ekkor a dupla tengelyt címekkel együtt jeleníti meg.
+1. A **Stílus** beállításnál mindkettőhöz válassza a **Csak a cím megjelenítése** lehetőséget.
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo-chart.png)
+   ![A Cím és Stílus beállítások képernyőképe.](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)
 
-További információkért lásd [a színek formázásához, a címkézéshez és a tengelyek tulajdonságainak beállítására szolgáló tippeket és trükköket](service-tips-and-tricks-for-color-formatting.md).
+1. A kombinált diagram ekkor a dupla tengelyt címekkel együtt jeleníti meg.
+
+   ![A testreszabott dupla Y tengellyel rendelkező diagram képernyőképe.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo-chart.png)
+
+További információ: [Tippek és trükkök a színformázáshoz a Power BI-ban](service-tips-and-tricks-for-color-formatting.md).
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+
 Ha a jelentés tulajdonosa az X tengelyt adat típusúként kategorizálta, akkor megjelenik a **Típus** beállítás, amelynél a folyamatos és a kategorikus beállítások közül lehet választani.
 
 ## <a name="next-steps"></a>Következő lépések
-További információk [a Power BI-jelentésekben lévő vizualizációkról](power-bi-report-visualizations.md)
 
-[Címek, hátterek és jelmagyarázatok testreszabása](power-bi-visualization-customize-title-background-and-legend.md)
+- [Vizualizációk a Power BI-jelentésekben](power-bi-report-visualizations.md)
 
-[Színek és tengelytulajdonságok testreszabása](service-getting-started-with-color-formatting-and-axis-properties.md)
+- [A vizualizáció címeinek, jelmagyarázatainak és háttereinek testreszabása](power-bi-visualization-customize-title-background-and-legend.md)
 
-[Power BI – Alapfogalmak](../consumer/end-user-basic-concepts.md)
+- [Bevezetés a színformázás és tengelytulajdonságok használatába](service-getting-started-with-color-formatting-and-axis-properties.md)
+
+- [A Power BI szolgáltatás alapfogalmai felhasználók számára](../consumer/end-user-basic-concepts.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

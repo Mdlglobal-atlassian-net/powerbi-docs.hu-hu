@@ -8,118 +8,163 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/22/2018
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d7a8c1600de65ba39b075d89f3c2d95e0b0c7cde
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6228ed70dd78ffca6cd3c8803518b2b27674576f
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051236"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389889"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>A vizualizáció címeinek, jelmagyarázatainak és háttereinek testreszabása
-Ezen oktatóanyag segítségével elsajátíthatja a vizualizációk testre szabására szolgáló különböző módszereket.   Számos lehetőség van a vizualizációk testreszabására. A legjobban a Formátum panel felfedezésével ismerheti meg ezeket (kattintson a festőhenger ikonra).  Az első lépésekhez megtételéhez ez a cikk bemutatja, hogyan szabhatja testre a vizualizáció címét, jelmagyarázatát és hátterét.  
 
-Nem minden vizualizáció szabható testre. Tekintse meg [a teljes listát](#list).  
+Ezen oktatóanyag segítségével elsajátíthatja a vizualizációk testre szabására szolgáló különböző módszereket. A vizualizációk testreszabására számtalan lehetőség áll rendelkezésre. Ezek megismerésére a legjobb módszer a **Formázás** panel felfedezése (válassza a festőhenger ikont). Az első lépésekhez megtételéhez ez a cikk bemutatja, hogyan szabhatja testre a vizualizáció címét, jelmagyarázatát és hátterét.
 
-Ugorjunk 4:50 a videó bemutatja, hogyan készíthetők Vizualizációk bemutató célokra. Ezután a videó alatt látható utasításokat követve próbálkozzon meg a saját adatai testre szabásával.
+Nem minden vizualizáció szabható testre. A részleteket a vizualizációk [teljes listájában](#visualization-types-that-you-can-customize) találja meg.
+
+A videót 4:50-nél kezdve mutatja be a vizualizációk testreszabását:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-### <a name="prerequisites"></a>Előfeltételek
-- Power BI szolgáltatás vagy Power BI Desktop
-- Kiskereskedelmi elemzési minta
+Most az alábbi utasításokat követve megpróbálkozhat a saját adatai testre szabásával.
+
+## <a name="prerequisites"></a>Előfeltételek
+
+- A Power BI szolgáltatás vagy a Power BI Desktop
+
+- A Kiskereskedelmi elemzési minta jelentés
 
 ## <a name="customize-visualization-titles-in-reports"></a>Vizualizáció címének testreszabása jelentésekben
-Hogy követni tudja a lépéseket, jelentkezzen be a Power BI szolgáltatásba (app.powerbi.com), és [nyissa meg a Kiskereskedelmi elemzési minta](../sample-datasets.md) jelentést [Szerkesztési nézetben](../service-interact-with-a-report-in-editing-view.md).
+
+Hogy követni tudja a lépéseket, jelentkezzen be a [Power BI szolgáltatásba](https://app.powerbi.com), és nyissa meg a [Kiskereskedelmi elemzési minta](../sample-datasets.md) jelentést a [Jelentés szerkesztése](../service-interact-with-a-report-in-editing-view.md) nézetben.
 
 > [!NOTE]
-> Ha rögzít egy vizualizációt az irányítópulton, az irányítópult-csempévé válik.  Maguk a csempék is testre szabhatók [új címekkel és alcímekkel, hiperhivatkozásokkal, és átméretezhetők](../service-dashboard-edit-tile.md).
-> 
-> 
+> Ha rögzít egy vizualizációt az irányítópulton, az irányítópult-csempévé válik. Maguk a csempék is testre szabhatók [új címekkel és alcímekkel és hiperhivatkozásokkal, és átméretezhetők](../service-dashboard-edit-tile.md).
 
-1. Navigáljon a jelentés „New Stores” (Új üzletek) lapjára, és válassza az „Open Store Count by Open Month...” (Megnyitott üzletek száma a megnyitás hónapja alapján) oszlopdiagramot.
-2. A Vizualizációk panelen kattintson a festőhenger ikonra, hogy láthatóvá váljanak a formázási lehetőségek.  Ezután a **Cím** lehetőség kiválasztásával bontsa ki az adott szakaszt.  
+1. Nyissa meg a **Kiskereskedelmi elemzési minta** **Új üzletek** oldalát.
 
-   ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
-3. A Be (vagy Ki) csúszka kiválasztásával be- és kikapcsolhatja a **Címet**. Egyelőre hagyja **Be** állásban.  
+1. Válassza a **Nyitva lévő üzletek száma nyitási hónap és üzletlánc szerint** fürtözött oszlopdiagramot.
 
-   ![](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
-4. A **Címszöveg** módosításához írja be a szövegmezőbe azt, hogy **Store count by month opened** (Üzletszám a megnyitás hónapja alapján).  
-5. Módosítsa a **Betűszínt** narancssárgára, és a **Háttérszínt** citromsárgára.
+1. A **Vizualizációk** panelen válassza a festőhenger ikont, hogy láthatóvá váljanak a formázási lehetőségek.
 
-   * Kattintson a legördülő listára, és válasszon egy színt a **Téma színei**, **Legutóbbi színek** vagy **Egyéni szín** közül.
-   * Kattintson a legördülő listára a színablak bezárásához.  
-     ![](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
+1. A **Cím** lehetőség kiválasztásával bontsa ki az adott szakaszt.
 
-   Mindig visszaállíthatja az alapértelmezett színeket a **Visszaállítás az alapértelmezettre** lehetőséggel a színablakban.
-6. Növelje a szövegméretet 12-esre.
-7. A diagram címének utolsó testre szabásaként a vizualizáció közepére igazítjuk azt. Alapértelmezés szerint a cím pozíciója balra igazított.  
-   ![](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
+   ![A Formázás panel képernyőképe a festőhenger ikon kiemelésével és a Cím legördülő menüre mutató nyíllal.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
 
-    Az oktatóanyag ezen pontján az oszlopdiagramja **címének** körülbelül így kellene kinéznie:  
-    ![](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
+1. Állítsa át a **Cím** kapcsolót a **Be** állásba.
 
-    A címen eddig végrehajtott testreszabások visszavonásához válassza a **Visszaállítás az alapértelmezettre** lehetőséget a **Cím** testreszabás panel alján.  
-    ![](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
+   ![Képernyőkép a bekapcsolt kapcsolóról.](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
+
+1. A cím módosításához írja be az *Üzletek száma nyitási hónap szerint* szöveget a **Címszöveg** mezőbe.
+
+1. Módosítsa a **Betűszínt** narancssárgára, és a **Háttérszínt** citromsárgára.
+
+    1. Válassza a legördülő listát, és válasszon egy színt a **Téma színei**, **Legutóbbi színek** vagy **Egyéni szín** közül.
+
+        ![A Betűszín és a Háttérszín beállítások képernyőképe.](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
+
+    1. A színablak bezárásához válassza a legördülő menüt.
+
+       Mentse a végrehajtott módosításokat.
+
+       Ha vissza szeretné vonni a módosításokat, visszatérhet az alapértelmezett színekhez a színablak **Visszaállítás alapértelmezettre** lehetőségét választva.
+
+1. Növelje a betűméretet a **12 pt** értékre.
+
+1. A diagram címének utolsó testre szabásaként igazítsa azt a vizualizáció közepére.
+
+    ![Az Igazítás vezérlők képernyőképe a Középre beállítás kijelölésével.](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
+
+Az oktatóanyag ezen pontján a fürtözött oszlopdiagram címe az alábbihoz hasonló:
+
+![Képernyőkép az újonnan konfigurált fürtözött oszlopdiagramról.](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
+
+Mentse a végrehajtott módosításokat és haladjon tovább a következő részre.
+
+Az összes módosítás visszavonásához válassza a **Visszaállítás alapértelmezettre** lehetőséget a **Cím** testreszabási panel alján.
+
+![A Visszaállítás alapértelmezettre lehetőség képernyőképe.](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
 
 ## <a name="customize-visualization-backgrounds"></a>Vizualizáció hátterek testreszabása
-Ugyanazt az oszlopdiagramot kiválasztva bontsa ki a Háttér beállításokat.
 
-1. A Be (vagy Ki) csúszka kiválasztásával be- és kikapcsolhatja a hátteret. Egyelőre hagyja **Be** állásban.
-2. Módosítsa a háttérszínt 74%-os szürkére.
+Ugyanazt a fürtözött oszlopdiagramot kiválasztva bontsa ki a **Háttér** beállításokat.
 
-   * Kattintson a legördülő listára, és válasszon egy szürke színt a **Téma színei**, **Legutóbbi színek** vagy **Egyéni szín** közül.
-   * Módosítsa az átlátszóságot 74%-ra.   
-     ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
+1. Állítsa **Be** értékre a **Háttér** kapcsolót.
 
-   Az eddig végrehajtott testreszabások visszavonásához válassza a **Visszaállítás az alapértelmezettre** lehetőséget a **Háttér** testreszabás panel alján.
+1. Válassza a legördülő listát, és válasszon egy szürke árnyalatot.
+
+1. Módosítsa az **Átlátszóságot** **74%** -ra.
+
+Az oktatóanyag ezen pontján a fürtözött oszlopdiagram háttere az alábbihoz hasonló:
+
+![A módosított háttérszínű fürtözött oszlopdiagram képernyőképe.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
+
+Mentse a végrehajtott módosításokat és haladjon tovább a következő részre.
+
+Az összes módosítás visszavonásához válassza a **Visszaállítás alapértelmezettre** lehetőséget a **Háttér** testreszabási panel alján.
 
 ## <a name="customize-visualization-legends"></a>Vizualizáció jelmagyarázatának testreszabása
-1. Nyissa meg az **Overview** (Áttekintés) jelentésoldalt, és válassza ki a „Total Sales Variance by FiscalMonth and District Manager” (Teljes értékesítési szórásnégyzet pénzügyi hónap és kerületi menedzser szerint) diagramot.
-2. A Vizualizáció lapon a Festőhenger ikonra kattintva nyissa meg a Formátum panelt.  
-3. Bontsa ki a **Jelmagyarázat** beállításait.
 
-      ![](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
-4. A Be (vagy Ki) csúszka kiválasztásával be- és kikapcsolhatja a jelmagyarázatot. Egyelőre hagyja **Be** állásban.
-5. Helyezze át a jelmagyarázatot a vizualizáció bal oldalára.    
-6. A **Cím** **Be** helyzetbe váltásával, és a **Jelmagyarázat neve** mezőbe a **Managers** (Menedzserek) szó beírásával adja meg a jelmagyarázat címét.
-   ![](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
+1. Nyissa meg az **Overview** (Áttekintés) jelentésoldalt, és válassza ki a **Total Sales Variance by FiscalMonth and District Manager** (Teljes értékesítési szórásnégyzet pénzügyi hónap és kerületi menedzser szerint) diagramot.
 
-   A jelmagyarázaton eddig végrehajtott testreszabások visszavonásához válassza a **Visszaállítás az alapértelmezettre** lehetőséget a **Jelmagyarázat** testreszabás panel alján.
+1. A **Vizualizáció** lapon a festőhenger ikonra kattintva nyissa meg a Formátum panelt.
 
-<a name="list"></a>
+1. Bontsa ki a **Jelmagyarázat** beállításait:
 
-## <a name="visualization-types-that-can-be-customized"></a>Testre szabható vizualizációtípusok
+      ![A Jelmagyarázat beállítás képernyőképe.](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
+
+1. Állítsa a **Jelmagyarázat** kapcsolót **Be** helyzetbe.
+
+1. Helyezze át a jelmagyarázatot a vizualizáció bal oldalára.
+
+1. Adjon címet a jelmagyarázathoz a **Cím** lehetőség **Bekapcsolásával**.
+
+1. A **Jelmagyarázat neve** mezőbe írja be a *Vezetők* nevet.
+
+Az oktatóanyag ezen pontján a fürtözött oszlopdiagram jelmagyarázata az alábbihoz hasonló:
+
+![A fürtözött oszlopdiagram módosított jelmagyarázatának képernyőképe.](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
+
+Mentse a végrehajtott módosításokat és haladjon tovább a következő részre.
+
+Az összes módosítás visszavonásához válassza a **Visszaállítás alapértelmezettre** lehetőséget a **Jelmagyarázat** testreszabási panel alján.
+
+## <a name="visualization-types-that-you-can-customize"></a>Testre szabható vizualizációtípusok
+
+Az alábbi lista a vizualizációkat és az azokhoz elérhető testreszabási lehetőségeket foglalja össze:
 
 | Vizualizáció | Cím | Háttér | Jelmagyarázat |
 |:--- |:--- |:--- |:--- |
-| terület |igen |igen |igen |
-| sáv |igen |igen |igen |
-| card |igen |igen |n.a. |
-| többsoros kártya |igen |igen |n.a. |
-| oszlop |igen |igen |igen |
-| kombinált |igen |igen |igen |
-| gyűrű |igen |igen |igen |
-| kartogram |igen |igen |igen |
-| tölcsér |igen |igen |n.a. |
-| mérőműszer |igen |igen |n.a. |
-| kpi |igen |igen |n.a. |
-| vonal |igen |igen |igen |
-| térkép |igen |igen |igen |
-| mátrix |igen |igen |n.a. |
-| torta |igen |igen |igen |
-| pont |igen |igen |igen |
-| szeletelő |igen |igen |n.a. |
-| tábla |igen |igen |n.a. |
-| szövegmező |nem |igen |n.a. |
-| fatérkép |igen |igen |igen |
-| vízesés |igen |igen |igen |
+| Terület | igen | igen |igen |
+| Sáv | igen | igen |igen |
+| Kártya | igen | igen |n.a. |
+| Többsoros kártya | igen | igen | n.a. |
+| Oszlop | igen | igen | igen |
+| Kombinált | igen | igen | igen |
+| Gyűrű | igen | igen | igen |
+| Kartogram | igen | igen | igen |
+| Tölcsér | igen | igen | n.a. |
+| Kijelző | igen | igen | n.a. |
+| KPI | igen | igen | n.a. |
+| Vonal | igen | igen | igen |
+| Térkép | igen | igen | igen |
+| Mátrix | igen | igen | n.a. |
+| Torta | igen | igen | igen |
+| Pont | igen | igen | igen |
+| Szeletelő | igen | igen | n.a. |
+| Tábla | igen | igen | n.a. |
+| Szövegmező | nem | igen | n.a. |
+| Fatérkép | igen | igen | igen |
+| Vízesés | igen | igen | igen |
 
 ## <a name="next-steps"></a>Következő lépések
-[X és Y tengely testreszabása](power-bi-visualization-customize-x-axis-and-y-axis.md)  
-[Színek és tengelytulajdonságok testreszabása](service-getting-started-with-color-formatting-and-axis-properties.md)  
-[Power BI – Alapfogalmak](../consumer/end-user-basic-concepts.md)  
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 
+- [X és Y tengely tulajdonságainak testreszabása](power-bi-visualization-customize-x-axis-and-y-axis.md)
+
+- [Bevezetés a színformázás és tengelytulajdonságok használatába](service-getting-started-with-color-formatting-and-axis-properties.md)
+
+- [A Power BI szolgáltatás alapfogalmai felhasználók számára](../consumer/end-user-basic-concepts.md)
+
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
