@@ -683,9 +683,9 @@
               href: service-machine-learning-automated.md
         - name: Többoldalas jelentések a Power BI-ban
           items:
-            - name: Többoldalas jelentés megtekintése (előzetes verzió)
+            - name: Többoldalas jelentés megtekintése
               href: paginated-reports-view-power-bi-service.md
-            - name: Paraméterek használata (előzetes verzió)
+            - name: Paraméterek használata
               href: paginated-reports-view-parameters.md
             - name: Önmaga és mások regisztrálása
               href: paginated-reports-subscriptions.md
