@@ -1,5 +1,5 @@
 ---
-title: Munka szervezése az új munkaterületeken – Power BI
+title: Munka szervezése az új munkaterületeken a Power BI-ban
 description: Bemutatjuk az új munkaterületeket, olyan irányítópultokból és jelentésekből álló gyűjteményeket, amelyek célja az alapvető metrikák biztosítása a vállalat számára.
 author: maggiesMSFT
 manager: kfile
@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 06/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 419cd2137b8924f153009843d6f60db594219059
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.openlocfilehash: a3982716ac2eb64f7512ba6ef606af299f1c5f46
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345538"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418662"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Munka szervezése az új munkaterületeken a Power BI-ban
 
@@ -135,7 +135,7 @@ A jelenlegi munkaterületek egyes funkciói másképp működnek, mint az új mu
 - A tagok újbóli megosztási jogosultsága: ennek helyét a Közreműködő szerepkör vette át
 - Csak olvasható munkaterületek: Ahelyett, hogy csak olvasási hozzáférést adna a felhasználóknak, hozzárendelheti őket a Megtekintő szerepkörhöz, amely hasonló, csak olvasási hozzáférést biztosít a munkaterületen lévő tartalomhoz.
 - A Pro-licenccel nem rendelkező felhasználók akkor is hozzáférnek a Power BI Premium-kapacitásban lévő munkaterülethez, ha csak Megtekintő szerepkörrel rendelkeznek.
-- A Megtekintő szerepkörrel rendelkező felhasználók számára úgy engedélyezheti az adatexportálást, hogy Összeállítási engedélyt ad nekik a munkaterületen lévő adathalmazokra.
+- A Megtekintő szerepkörrel rendelkező felhasználók számára úgy engedélyezheti az adatexportálást, hogy Összeállítási engedélyt ad nekik a munkaterületen lévő adathalmazokra. További információ az [adathalmazok összeállítási engedélyéről](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 - Nincs **Kilépés a munkaterületből** gomb.
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
