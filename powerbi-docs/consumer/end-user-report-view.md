@@ -8,43 +8,52 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/10/2018
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: e2d3bec59078577e2b4d4595c0925753b2cbb53a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d740dd012c6041893a2fa5fc5f1a97a74dcf1566
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65608144"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67532380"
 ---
-# <a name="change-the-display-of-a-report-page"></a>A jelentésoldal megjelenítését módosítása
-Jelentések tekinthetők meg a különböző képernyőméretekhez és nézik számos különböző eszközökön.  Megváltoztathatja a jelentésoldalak saját igényei szerint jeleníti meg.    
+# <a name="change-the-display-of-a-report-page"></a>Jelentésoldal megjelenésének módosítása
 
-![a jelentés vásznon jeleníti meg](media/end-user-report-view/power-bi-report.png)
+A jelentések számos különféle eszközön is megtekinthetőek, amelyek képernyője mind-mind eltérő méretű vagy méretarányú. A jelentésoldal megjelenési jellemzői az igényeinek megfelelően módosíthatók.
 
-## <a name="explore-the-view-menu"></a>Ismerje meg a Nézet menü
-A Nézet menü lehetőségei jelentésoldalak megjelenítése a méret és a választott szélessége rugalmasságot biztosítanak.
+![Képernyőkép arról, hogyan jelenik meg egy jelentés a vásznon.](media/end-user-report-view/power-bi-report.png)
 
-- Tegyük fel, megtekintett jelentés egy kis eszközön, és tekintse meg a címeket és a jelmagyarázatokat nehéz.  Válassza ki **nézet** > **tényleges méret** a jelentésoldal méretének növeléséhez. A jelentés Navigálás a görgetősávok használatával. 
+## <a name="explore-the-view-menu"></a>Ismerkedés a Nézet menüvel
 
-    ![a jelentés megjelenik a vásznon két görgetősávval](media/end-user-report-view/power-bi-actual-size-new.png)
+![Képernyőkép a Nézet legördülő menü beállításairól.](media/end-user-report-view/power-bi-view-menu.png)
 
 
-- Egy másik lehetőség az, hogy illeszkedjen a képernyő szélessége a jelentés kiválasztásával **szélességhez igazítás**. Ez továbbra is szükség lehet egy függőleges görgetősáv használatát.
+A **Nézet** menü beállításai kellő rugalmasságot biztosítanak a jelentésoldalak igény szerinti méretben és szélességben történő megjelenítéséhez:
 
-  ![a jelentés jeleníti meg, hogy használatával a teljes vásznat szélessége](media/end-user-report-view/power-bi-fit-to-width-new.png)
+- Tegyük fel, hogy egy kis méretű eszközön tekinti meg a jelentést, így a címek és jelmagyarázatok nehezen olvashatók.  A **Nézet** > **Tényleges méret** kiválasztásával növelheti a jelentésoldal méretét. A jelentésen belül a görgetősávokkal mozoghat.
 
-- Ha nem szeretné semmilyen görgetősávok, de a képernyőméret használható a leghatékonyabban kívánja.  Válassza ki **laphoz igazítás**.
+    ![Képernyőkép egy Tényleges méret beállítású jelentésről, amelynek a két görgetősávja ki van emelve.](media/end-user-report-view/power-bi-actual-size-new.png)
 
-   ![a jelentés megjeleníti a görgetősávok nélkül](media/end-user-report-view/power-bi-fit-to-width.png)
+- Egy másik lehetőség a jelentés képernyőhöz igazítására a **Szélességhez igazítás**. Mivel ez csak a szélességre vonatkozik, a magasságra nem, előfordulhat, hogy a függőleges görgetősávot is használni kell.
 
-   
-- Az utolsó lehetőség **teljes képernyős**, megjeleníti a jelentésoldalon menüsávok és fejlécek nélkül. Teljes képernyős megfelelő választás az olyan kisebb képernyőkön nehéz tekintse meg a részleteket amelyeknél lehet.  Teljes képernyős is jó választás, személyek megtekinthetik, de nem működhet a nagy méretű képernyőkön jelentésoldalak Segédben.  
+  ![Képernyőkép egy Szélességhez igazítás beállítású jelentésről, amelynek a függőleges görgetősávja ki van emelve.](media/end-user-report-view/power-bi-fit-to-width-new.png)
 
-    ![a jelentés teljes képernyős jeleníti meg.](media/end-user-report-view/power-bi-full-screen.png)
+- Ha a görgetősávok használata nélkül szeretné a lehető legjobban kihasználni a képernyő méretét, válassza a **Laphoz igazítás** lehetőséget.
 
-Amikor kilép a jelentésből, a nézet beállítások mentése nem történik meg, de visszaállítás az alapértelmezettre. Ha fontos, hogy ezek a beállítások mentéséhez, [könyvjelzők](end-user-bookmarks.md). 
+   ![Képernyőkép egy Laphoz igazítás beállítású jelentésről.](media/end-user-report-view/power-bi-fit-to-width.png)
+
+- Emellett négy **Kontrasztos színes** beállítás közül lehet választani: Kontrasztos – 1, kontrasztos – 2, kontrasztos fekete és kontrasztos fehér. Ez egy kisegítő lehetőség, amellyel a jelentések a gyengénlátók számára is jobban olvashatóak:
+
+    ![Képernyőkép egy Kontrasztos – 1 beállítású jelentésről.](media/end-user-report-view/power-bi-high-contrast-1.png)![Képernyőkép egy Kontrasztos – 2 beállítású jelentésről.](media/end-user-report-view/power-bi-high-contrast-2.png)
+    ![Képernyőkép egy Kontrasztos fekete beállítású jelentésről.](media/end-user-report-view/power-bi-high-contrast-black.png)![Képernyőkép egy Kontrasztos fehér beállítású jelentésről.](media/end-user-report-view/power-bi-high-contrast-white.png)
+
+- Az utolsó lehetőség, a **Teljes képernyős** beállítás a menüsávok és fejlécek nélkül jeleníti meg a jelentésoldalt. A teljes képernyős beállítás lehet a megfelelő választás a kis képernyők esetében, ahol a részletek nehezen olvashatók.  A teljes képernyős megjelenítést érdemes választani akkor is, ha nagy képernyőre kell kivetíteni a jelentésoldalakat olyanok számára, akik csak megtekintik, de nem használják azokat.  
+
+    ![a jelentés teljes képernyőn jelenik meg](media/end-user-report-view/power-bi-full-screen.png)
+
+Amikor kilép a jelentésből, a **Nézet** beállítások nem lesznek mentve, hanem az alapértelmezett beállításokra állnak vissza. Ha mindenképp menteni szeretné ezeket a beállításokat, használja a [könyvjelzőket](end-user-bookmarks.md).
 
 ## <a name="next-steps"></a>Következő lépések
-[Jelentés létrehozása Cortanához](../service-cortana-answer-cards.md)
+
+* [Ismerkedés a jelentések Szűrők panelével](end-user-report-filter.md)

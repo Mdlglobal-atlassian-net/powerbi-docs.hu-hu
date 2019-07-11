@@ -8,104 +8,124 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/30/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: dcf62925d8e5eef07fb6295f8d8141413947f8fb
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.openlocfilehash: ef7e4f556832f1323043a80cf219678a16511c9e
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66413123"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67532976"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Ismerkedés a jelentések Szűrők panelével
-Ez a cikk a jelentések szűrők panelének tekintse meg a Power BI szolgáltatásban vesz igénybe. A szűrők segítségével az adatok új elemzéseket deríthet fel.
 
-Az adatok szűrésének számos módja áll rendelkezésre a Power BI-ban, ezért javasoljuk, hogy először olvassa el a [szűrőkkel és a kiemeléssel](../power-bi-reports-filters-and-highlighting.md) foglalkozó szakaszt.
+Ez a cikk a jelentések **Szűrők** paneljét mutatja be a Power BI szolgáltatásban. A szűrőkkel új megállapításokat nyerhet ki az adatokból.
 
-![jelentés a böngészőben](media/end-user-report-filter/power-bi-browser-new2.png)
+Az adatok szűrésének számos módja érhető el a Power BI-ban. A szűrőkkel kapcsolatos további információkért tekintse meg a [Power BI- jelentések szűrőivel és kiemeléseivel](../power-bi-reports-filters-and-highlighting.md) foglalkozó részt.
+
+![Képernyőkép egy jelentésről a böngészőben, amelyen a nyíl a Szűrők beállításra mutat.](media/end-user-report-filter/power-bi-browser-new2.png)
 
 ## <a name="working-with-the-report-filters-pane"></a>A jelentések Szűrők panelének használata
-Amikor a munkatársa megoszt Önnel egy jelentést, mindenképp keresse meg a **Szűrők** panelt. Előfordulhat, hogy össze van csukva a jelentés jobb szélén. Kattintson rá a kibontáshoz.   
 
-![jelentés a böngészőben](media/end-user-report-filter/power-bi-filter-pane.png)
+Amikor a munkatársa megoszt Önnel egy jelentést, mindenképp keresse meg a **Szűrők** panelt. Előfordulhat, hogy össze van csukva a jelentés jobb szélén. Kattintson rá a kibontáshoz.
 
-A Szűrők panel olyan szűrőket tartalmaz, amelyekkel a jelentés *tervezője* látta el a jelentést. *A fogyasztók* , kezelhetik a meglévő szűrőket, és mentse a módosításokat, de nem adhatnak hozzá új szűrőket a jelentéshez. A fenti képernyőképen például a tervező két oldalszintű szűrőt adott hozzá: Szegmens és futó éves. Kezelheti és módosíthatja ezeket a szűrőket, de nem adhat hozzá egy harmadik oldalszintű szűrőt.
+![Képernyőkép a jelentésről, amelyen a Szűrők panel ki van bontva.](media/end-user-report-filter/power-bi-filter-pane.png)
 
-A Power BI szolgáltatásban a jelentések megtartják a szűrők panel választja ki, és ezek a módosítások is alkalmazzák őket a jelentés mobilos verziójára. A Szűrő panelnek a tervező alapértelmezett értékeire való visszaállításához válassza ki a felső menüsáv **Visszaállítás alapértelmezettre** lehetőségét.  
+A **Szűrők** panel olyan szűrőket tartalmaz, amelyekkel a jelentés *tervezője* látta el a jelentést. A *felhasználók* kezelhetik a meglévő szűrőket és menthetik a módosításokat, azonban nem adhatnak hozzá új szűrőket a jelentéshez. A fenti képernyőképen például a tervező két oldalszintű szűrőt adott hozzá: a **Segment** és a **Year** szűrőt. Kezelheti és módosíthatja ezeket a szűrőket, de nem adhat hozzá egy harmadik lapszintű szűrőt.
 
-![Alapértelmezések visszaállítása](media/end-user-report-filter/power-bi-reset-to-default.png)   
+A Power BI szolgáltatásban a jelentések megőrzik a **Szűrők** panelen végzett módosításokat. A szolgáltatás emellett a jelentés mobilos verziójára is alkalmazza őket.
 
-## <a name="view-all-the-filters-for-a-report-page"></a>A jelentésoldal összes szűrők megjelenítése
-A szűrők panel megjelenik a jelentés által hozzáadott összes szűrőt a *designer*. A szűrők panel is az a terület, ahol a szűrőkkel kapcsolatos információk megtekintéséhez és interakcióba lép velük. Mentheti a módosításokat, akkor győződjön meg arról, vagy használjon **visszaállítás alapértelmezettre** visszaállítani az eredeti szűrési beállítások.
+A **Szűrő** panelnek a tervező alapértelmezett értékeire való visszaállításához válassza a ![Képernyőkép a Visszaállítás alapértelmezettre beállításról](media/end-user-report-filter/power-bi-reset.png) elemet a felső menüsávon.
 
-Ha szeretné menteni a módosításokat, személyes könyvjelző is létrehozhat.  További információkért lásd: [könyvjelző hozzáadása egy jelentéshez](end-user-bookmarks.md).
+## <a name="view-all-the-filters-for-a-report-page"></a>Jelentésoldal összes szűrőjének megtekintése
 
-Nincsenek számos különböző típusú Jelentésszűrők, amelyek jelenik meg, és a szűrők panelen, a felügyelt alkalmazott a vizualizációhoz, a jelentésoldal és a teljes jelentéshez.
+A **Szűrők** panel a tervező által a jelentéshez adott összes szűrőt megjeleníti. A **Szűrők** panel egyben az a terület is, ahol a szűrőkkel kapcsolatos információk megtekinthetőek és kezelhetőek. Mentheti az elvégzett módosításokat vagy a **Visszaállítás alapértelmezettre** beállítással visszaállíthatja az eredeti szűrőbeállításokat.
 
-Ebben a példában egy vizualizációt, 2 szűrőket választottuk ki. A jelentés oldalon is rendelkezik, alatt felsorolt szűrők a **ezen az oldalon szűrők** fejléc. És a teljes jelentés dátum szűrő van.
+Ha menteni szeretné a módosításokat, létrehozhat egy személyes könyvjelzőt is.  További információért tekintse meg [a könyvjelzőket](end-user-bookmarks.md) bemutató cikket.
 
-![szűrők listája](media/end-user-report-filter/power-bi-all-filters2.png)
+A **Szűrők** panel különböző típusú jelentésszűrőket kezel és jelenít meg. Ezek alkalmazhatók egy vizualizációra, jelentésoldalra vagy a teljes jelentésre is.
 
-Némelyik szűrő mellett a **Mind** szó szerepel, ami azt jelzi, hogy a szűrő az összes értékre kiterjed.  Ha például **Segment(All)** a fenti képernyőképen tudatja velünk, hogy a jelentésoldal összes termék szegmens adatait tartalmazza.  Másfelől, a lapszintű szűrő **régió van Nyugat** tudatja velünk, hogy a jelentésoldal csak tartalmazza az adatokat a nyugati régiójában.
+Ebben a példában egy olyan vizualizációt választottunk, amelyhez két szűrő tartozik. A jelentésoldalon szintén találhatók szűrők, ezek **Az ezen a lapon megtalálható szűrők** fejléc alatt vannak felsorolva. Emellett a teljes jelentés rendelkezik a **Date** szűrővel.
+
+![Képernyőkép egy jelentésről a vizualizáció és a kapcsolódó szűrők megjelenítésével.](media/end-user-report-filter/power-bi-all-filters2.png)
+
+Némelyik szűrő mellett az **(Összes)** szó szerepel. Az **(Összes)** azt jelenti, hogy a szűrő az összes értékre kiterjed. A fenti képernyőképen a **Segment (Összes)** azt jelzi, hogy a jelentésoldal az összes termékszegmens adatait tartalmazza. A **Region is West** lapszintű szűrő kiválasztása esetén a jelentésoldal csak a nyugati régióra vonatkozó adatokat tartalmazza.
 
 Bárki, aki megtekinti a jelentést, kezelheti ezeket a szűrőket.
 
-### <a name="view-only-those-filters-applied-to-a-visual"></a>Csak ezeket a szűrőket alkalmazott a vizualizációhoz megtekintése
-Egy adott Vizualizáció alkalmazott szűrőkről közelebbről lekéréséhez a Vizualizáció megjelenítéséhez a szűrő ikon fölé ![ikon](media/end-user-report-filter/power-bi-filter-icon.png). Válassza ki a szűrő ikonjára a szűrőket, szeletelők és így tovább, amely hatással van a Vizualizáció egy előugró ablak. A szűrő az előugró ugyanazon jelenik meg a **szűrők** ablaktáblán. 
+### <a name="view-only-those-filters-applied-to-a-visual"></a>Csak a vizualizációra alkalmazott szűrők megtekintése
 
-![szűrők listája](media/end-user-report-filter/power-bi-hover-visual-filter.png)
+Egy adott vizualizációra alkalmazott szűrők alaposabb vizsgálatához vigye az egérmutatót a vizualizáció fölé a ![Szűrőikon képernyőképe](media/end-user-report-filter/power-bi-filter-icon.png) szűrőikon megjelenítéséhez. Válassza ki ezt a szűrőikont a vizualizációra ható összes szűrőt, szeletelőt stb. tartalmazó előugró ablak megjelenítéséhez. Az előugró ablakon található szűrők ugyanazok, amelyek a **Szűrők** panelen is megjelennek.
 
- 
-Az alábbiakban az ebben a nézetben jelenítheti szűrők típusai:
+![Képernyőfelvétel a szűrők listájáról, amelyen nyilak mutatják, hogy ezek a szűrők hol találhatók a Szűrők panelen.](media/end-user-report-filter/power-bi-hover-visual-filter.png)
+
+Ebben a nézetben a következő szűrőtípusok jelenhetnek meg:
+
 - Alapszintű szűrők
+
 - Szeletelők
+
 - Keresztkijelölés
+
 - Keresztszűrés
+
 - Speciális szűrők
+
 - Felső N szűrők
+
 - Relatív dátum szerinti szűrők
+
 - Szinkronszűrők
+
 - Belefoglalási/kizárási szűrők
+
 - URL-címen keresztül átadott szűrők
 
+A következő példában:
 
+1. Látható, hogy az oszlopdiagram esetében keresztszűrés történt.
 
-A példában az alábbi:
-1. Láthatjuk, hogy az oszlopdiagram keresztszűrhető lett.
-2. **Foglalt** tudatja velünk, hogy a keresztszűrés vonatkozik **szegmens**, és három járnak. 
-3. A szeletelők alkalmazott **negyedév**.
-4. **Régió** Ez a jelentés oldalon alkalmazott szűrő és
-5. **isVanArsdel** és **év** vannak szűrők a vizualizációra.
+1. Az **Included** azt jelzi, hogy a keresztszűrő a **Segment** értékre vonatkozik, és három ilyen van.
 
+1. A **Negyedévre** egy szeletelő lett alkalmazva.
 
-![szűrők listája](media/end-user-report-filter/power-bi-visual-pop-up.png)
+1. A **Region** szűrő lett alkalmazva erre a jelentésoldalra.
+
+1. Az **isVanArsdel** és a **Year** szűrő lett alkalmazva erre a vizualizációra.
+
+![Képernyőkép egy jelentésről és annak szűrőiről, amelyen a szűrők listájának számozása megfelel a fenti számozott listának.](media/end-user-report-filter/power-bi-visual-pop-up.png)
 
 ### <a name="search-in-a-filter"></a>Keresés szűrőben
-Néha egy szűrő rendelkezhet értékek hosszú listáját. Használja a keresőmezőt, és jelölje ki a kívánt értéket. 
 
-![Keresés szűrőben](media/end-user-report-filter/power-bi-fiter-search.png)
+Egy szűrő olykor hosszú értéklistával rendelkezhet. A keresőmezővel keresse meg, és válassza ki a kívánt értéket.
 
-### <a name="display-filter-details"></a>Megjelenítési szűrő részletei
-Szeretné megtudni, egy szűrőt, tekintse meg a rendelkezésre álló értékek és számát.  A szűrő részleteinek megtekintéséhez viszi, majd kijelöli a nyilat a szűrő neve mellett. 
+![Képernyőkép a szűrőben történő keresés bemutatására.](media/end-user-report-filter/power-bi-fiter-search.png)
+
+### <a name="display-filter-details"></a>Szűrő részleteinek megjelenítése
+
+A szűrők megértéséhez vessen egy pillantást az elérhető értékekre és számokra.  Ha az egérmutatót a szűrő neve melletti nyílra viszi, majd kiválasztja a nyilat, megtekintheti a szűrő részleteit.
   
-![a kijelölt Lindseys megjelenítése](media/end-user-report-filter/power-bi-expand-filter.png)
+![Képernyőkép egy szűrőről, amelyen a nyugati régió van kiválasztva.](media/end-user-report-filter/power-bi-expand-filter.png)
 
-### <a name="change-filter-selections"></a>Változás szűrési lehetőségek
-Egy data összefüggéseket módja kezelhetik a szűrőket. A mező neve melletti legördülő nyílra használatával szűrőkiválasztást módosíthatja.  A szűrő és a szűrni kívánt adatok típusától függően a lehetőségek azonosítása dátumok vagy tartományok listáját egyszerű kijelölései fog terjedhet. Az alábbi speciális szűrő módosítottuk a szűrő **teljes egységek év elejétől számított** a fatérképen 2000 és 3000 kell esnie. Figyelje meg, hogy ezzel eltávolítja a fatérképen Prirum. 
+### <a name="change-filter-selections"></a>Szűrők beállításának módosítása
+
+Az adatokkal kapcsolatos megállapítások kinyerésének egyik módja a szűrők használata. A szűrők kiválasztott beállításait a mező neve melletti legördülő nyílra kattintva lehet módosítani.  A szűrőtől és a Power BI által szűrt adattípusoktól függően számos lehetőség érhető el az egyszerű listából való kiválasztástól a dátum- vagy számtartományok megadásáig. Az alábbi speciális szűrő esetében módosítottuk a **Total Units YTD** szűrőt a fatérképen, hogy az érték 2000 és 3000 között legyen. Látható, hogy ennek hatására eltűnik a Prirum a fatérképről.
   
-![a kijelölt Fashion Direct megjelenítése](media/end-user-report-filter/power-bi-filter-treemap.png)
+![Képernyőkép egy jelentésről és a szűrőiről, amelyen a Fashion Direct van kiválasztva.](media/end-user-report-filter/power-bi-filter-treemap.png)
 
 > [!TIP]
-> Egyszerre több szűrőérték kijelöléséhez tartsa lenyomva a CTRL billentyűt. A legtöbb szűrők támogatja a többszörös kijelöléssel. 
+> Egyszerre több szűrőérték kiválasztásához tartsa lenyomva a CTRL billentyűt. A legtöbb szűrő támogatja a több elem kiválasztását.
 
-### <a name="reset-filter-to-default"></a>Az alapértelmezett szűrő alaphelyzetbe állítása
-Ha szeretne készíteni a tartományon kívül az összes módosítást a szűrőket, jelölje be végrehajtott **visszaállítás alapértelmezettre** a felső menüsávon.  Ez a szűrőket az eredeti állapotukba visszaáll a jelentés által beállított *designer*. 
+### <a name="reset-filter-to-default"></a>Szűrő alaphelyzetbe állítása
 
-![Alapértelmezések visszaállítása](media/end-user-report-filter/power-bi-reset-to-default.png)
-    
+Ha szeretné visszaállítani a szűrőkön végzett összes módosítást, válassza a felső menüsávon a **Visszaállítás alapértelmezettre** lehetőséget.  Ez visszaállítja a szűrők eredeti állapotát, amelyet a jelentés tervezője állított be.
+
+![Képernyőkép a Visszaállítás alapértelmezettre lehetőségről.](media/end-user-report-filter/power-bi-reset.png)
+
 ### <a name="clear-a-filter"></a>Szűrők törlése
-Ha van egy szűrő, adja meg, ha szeretné **(összes)** , törölje a jelölést a radír ikon kiválasztásával ![ radír ikonnal ](media/end-user-report-filter/power-bi-eraser-icon.png) a szűrő neve mellett.
+
+Ha csak egy szűrő esetében szeretné megadni az **(Összes)** beállítást, a szűrő neve melletti radír ikonnal ![Képernyőkép a radír ikonról](media/end-user-report-filter/power-bi-eraser-icon.png) kikapcsolhatja a szűrőt.
   
 <!--  too much detail for consumers
 
@@ -145,4 +165,5 @@ If the field values represent date or time, you can specify a start/end time whe
 -->
 
 ## <a name="next-steps"></a>Következő lépések
-[Ismerje meg, hogyan és miért történik keresztszűrés és keresztkiemelés a vizualizációknál a jelentésoldalakon.](end-user-interactions.md)
+
+Tudnivalók arról, hogyan és miért történik [keresztszűrés és keresztkiemelés a vizualizációknál a jelentésoldalakon](end-user-interactions.md)

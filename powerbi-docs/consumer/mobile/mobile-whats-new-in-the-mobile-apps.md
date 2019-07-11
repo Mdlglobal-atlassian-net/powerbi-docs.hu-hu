@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: d491855a268c57d7958d52b7c1e9e9191c28601e
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: a6718ed8f582150ad8f13d638308700f9004a354
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67038917"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558987"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -22,6 +22,15 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+
+## <a name="june-2019"></a>2019. június
+
+### <a name="barcode-scanning-is-now-available-in-android"></a>A vonalkód-leolvasás mostantól Androidon is elérhető
+Mostantól androidos eszközön (telefonon és táblagépen) is használhatja a Power BI alkalmazást a termékeken vagy az üzlet polcain lévő vonalkódok beolvasásához, és megjelenítheti a kapcsolódó Power BI-jelentéseket a beolvasott értékek alapján szűrve. További információk [az adatok vonalkódokkal való szűréséről](mobile-apps-scan-barcode-iphone.md).
+
+### <a name="supporting-pbix-reports-hosted-in-pbi-rs-over-adfs-configuration-ios-android"></a>A PBI-RS-ben ADFS-konfigurációval üzemeltetett PBIX-jelentések támogatása (iOS, Android)
+
+A PBI-RS-ben ADFS-konfigurációval üzemeltetett Power BI-jelentések (PBIX) mostantól elérhetők a Power BI mobilalkalmazásokból is.
 
 ## <a name="may-2019"></a>2019. május
 

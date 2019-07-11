@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 5c93a50ce481c5fad899c1911b30100dca7cb841
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 96939c3ad29418ad868175dfd8093847ab427187
+ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264487"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67498977"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Saját titkosítási kulcsok használata a Power BI-hoz (előzetes verzió)
 
@@ -103,13 +103,22 @@ BYOK engedélyezéséhez bérlői rendszergazdának kell lennie a Power BI szolg
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
 ```
 
-A parancsmag két kapcsolóparamétert fogad el, amelyek a jelenlegi és jövőbeli kapacitások titkosítását befolyásolják. Alapértelmezés szerint egyik kapcsoló sincs beállítva:
+Több kulcs hozzáadásához futtassa az `Add-PowerBIEncryptionKey` parancsmagot különböző értékeket megadva a -`-Name` és a `-KeyVaultKeyUri` számára. 
 
-- `-Activate`: Azt jelzi, hogy ez a kulcs a bérlőben meglévő összes kapacitáshoz használva lesz.
+A parancsmag két kapcsolóparamétert fogad el, amelyek a jelenlegi és jövőbeli kapacitások titkosítását befolyásolják. Alapértelmezés szerint a kapcsolók egyike sincs beállítva:
+
+- `-Activate`: Azt jelzi, hogy a rendszer ezt a kulcsot fogja használni a bérlőben meglévő minden olyan kapacitáshoz, amely még nem lett titkosítva.
 
 - `-Default`: Azt jelzi, hogy ez a kulcs mostantól az egész bérlőben alapértelmezett. Új kapacitás létrehozásakor a kapacitás örökli ezt a kulcsot.
 
-A `-Default` kapcsoló megadása esetén a bérlőben ettől kezdve létrehozott összes kapacitás a megadott kulccsal (vagy egy frissített alapértelmezett kulccsal) lesz titkosítva. Az alapértelmezett művelet nem vonható vissza, így többé nem tud olyan prémium szintű kapacitást létrehozni a bérlőben, amely nem használ BYOK-ot.
+> [!IMPORTANT]
+> A `-Default` kapcsoló megadása esetén a bérlőben ettől kezdve létrehozott összes kapacitás a megadott kulccsal (vagy egy frissített alapértelmezett kulccsal) lesz titkosítva. Az alapértelmezett művelet nem vonható vissza, így többé nem tud olyan prémium szintű kapacitást létrehozni a bérlőben, amely nem használ BYOK-t.
+
+Miután engedélyezte a BYOK-t a bérlőben, a [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) használatával állíthatja be a titkosítási kulcsot egy vagy több Power BI-kapacitáshoz:
+
+```powershell
+Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
+```
 
 Azt szabályozni tudja, hogy hogyan használja a BYOK-ot a bérlőben. Egyetlen kapacitás titkosításához például hívja meg az `Add-PowerBIEncryptionKey` parancsot az `-Activate` vagy a `-Default` kapcsoló nélkül. Ez után hívja meg a `Set-PowerBICapacityEncryptionKey` parancsot arra a kapacitásra, amelyen engedélyezni kívánja a BYOK-ot.
 
@@ -136,12 +145,6 @@ A Power BI további parancsmagokat kínál a BYOK egyszerű bérlőbeli felügye
     ```
 
     Lényeges, hogy a titkosítás a kapacitás szintjén van engedélyezve, de a titkosítás állapotát az adathalmaz szintjén kapja meg a megadott munkaterülethez.
-
-- A Power BI-kapacitáshoz megadott titkosítási kulcs a [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) paranccsal frissíthető:
-
-    ```powershell
-    Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
-    ```
 
 - A titkosításhoz használt kulcs verziója a [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) paranccsal váltható (vagy _forgatható_). A parancsmag csak a `-Name` kulcs `-KeyVaultKeyUri` értékét módosítja:
 

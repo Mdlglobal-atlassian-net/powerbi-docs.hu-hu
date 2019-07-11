@@ -1,21 +1,21 @@
 ---
 title: Az Alakzatleképezések funkció használata a Power BI Desktopban (előzetes verzió)
-description: Relatív összehasonlítások létrehozása régiókhoz az Alakzatleképezések funkció használatával a Power BI Desktopban
+description: Relatív összehasonlítások létrehozása régiókhoz az Alakzatleképezések funkcióval a Power BI Desktopban
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 0789d7e77e3ae501cc2aec92c366c9c2608edd52
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 2e0fc8ae6a6d2b01121ffb1c52c29652af21f21e
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839279"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67533086"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Az Alakzatleképezések funkció a Power BI Desktopban (előzetes verzió)
 Hozzon létre egy **Alakzatleképezés** vizualizációt a régiók különböző színek használatával történő összehasonlításához a térképen. A **Leképezés** vizualizációval szemben az **Alakzatleképezés** vizualizáció nem képes az adatpontok pontos földrajzi helyének megjelenítésére a térképen. Ehelyett alkalmazásának fő célja a régiók relatív összehasonlításának megjelenítése egy térképen eltérő színezéssel.
@@ -108,11 +108,12 @@ Néhány megfontolandó szempont és követelmény az **Alakzat leképezése** f
 * Az **Alakzat leképezése** vizualizáció legfeljebb 1000 adatpontot tud majd ábrázolni.
 
 ## <a name="region-keys"></a>Régiókulcsok
-Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régiókulcsaival** tesztelhető.
+
+Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régiókulcsaival**tesztelhető.
 
 ### <a name="australia-states"></a>Ausztrália: Államok
 
-| `id` | `abbr` | `iso` | `name` | `postal` |
+| azonosító | röv | iso | név | ir.szám |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Nyugat-Ausztrália |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -125,7 +126,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="austria-states"></a>Ausztria: Államok
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| azonosító | iso | név | név (magyarul) | ir.szám |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Bécs |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -139,7 +140,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="brazil-states"></a>Brazília: Államok
 
-| `id` |
+| azonosító |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -175,7 +176,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="canada-provinces"></a>Kanada: Tartományok
 
-| `id` | `iso` | `name` | `postal` |
+| azonosító | iso | név | ir.szám |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Északnyugati területek |NT |
@@ -193,7 +194,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="france-regions"></a>Franciaország: Régiók
 
-| `id` | `name` | `name-en` |
+| azonosító | név | név (magyarul) |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
@@ -220,7 +221,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="germany-states"></a>Németország: Államok
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| azonosító | iso | név | név (magyarul) | ir.szám |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Türingia |TH |
@@ -241,7 +242,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="ireland-counties"></a>Írország: Megyék
 
-| `id` |
+| azonosító |
 | --- |
 | Wicklow |
 | Wexford |
@@ -272,7 +273,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="italy-regions"></a>Olaszország: Régiók
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| azonosító | iso | név | név (magyarul) | ir.szám |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Valle d'Aosta |VD |
@@ -297,7 +298,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="mexico-states"></a>Mexikó: Államok
 
-| `id` | `abreviatura` | `iso` | `name` | `name-en` | `postal` |
+| azonosító | rövidítés | iso | név | név (magyarul) | ir.szám |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatán |YU |
@@ -334,7 +335,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="netherlands-provinces"></a>Hollandia: Tartományok
 
-| `id` | `iso` | `name` | `name-en` |
+| azonosító | iso | név | név (magyarul) |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |Dél-Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -351,7 +352,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="uk-countries"></a>Egyesült Királyság: Országok
 
-| `id` | `iso` | `name` |
+| azonosító | iso | név |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Skócia |
@@ -360,7 +361,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="usa-states"></a>USA: Államok
 
-| `id` | `name` | `postal` |
+| azonosító | név | ir.szám |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaszka |AK |
@@ -415,6 +416,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | us-wa |Washington |WA |
 
 ## <a name="next-steps"></a>Következő lépések
-[Mátrix vizualizációk a Power BI-ban](desktop-matrix-visual.md)
 
-[Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Mátrix vizualizációk a Power BI-ban](desktop-matrix-visual.md)
+
+* [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)

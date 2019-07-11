@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: b0de20cc32c32360f4f37c70e673dba01740a860
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2de1b866a237a0193c33c552078ca70bd5e632ce
+ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61137436"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67498990"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Első lépések az iOS-eszközökhöz készült Power BI mobilalkalmazással
 Az iPhone-on, iPaed és iPod Touchon futó iOS-es Microsoft Power BI alkalmazás mobil BI-élményt kínál a Power BI-hoz, a Power BI jelentéskészítő kiszolgálóhoz és a Reporting Services-hez. Az élő, érintéssel vezérelhető mobil hozzáférés révén bárhonnan megtekintheti és kezelheti vállalata helyszíni és felhőbeli irányítópultjait. Fedezze fel az adatokat az irányítópultokon, és ossza meg eredményeit munkatársaival e-mailben vagy SMS-ben. Kísérje figyelemmel a legidőszerűbb adatokat [Appla Watch](mobile-apple-watch.md)on.  
@@ -33,7 +33,7 @@ Ismerje meg [a Power BI mobilalkalmazások újdonságait](mobile-whats-new-in-th
 ## <a name="download-the-app"></a>Alkalmazás letöltése
 [iOS-alkalmazás letöltése](http://go.microsoft.com/fwlink/?LinkId=522062 "iOS-alkalmazás letöltése") az Apple App Store-ból iPhone-ra, iPadre vagy iPod Touchra.
 
-Az iOS-es Power BI-alkalmazás iOS 10 vagy újabb rendszerű iPhone 5 és újabb eszközön futtatható. Futtatható iOS 10 vagy újabb rendszerű iPaden vagy iPod Touch eszközön is. 
+Az iOS-es Power BI alkalmazást az iOS 11 vagy újabb rendszert futtató eszközök bármelyikén futtathatja. 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Regisztráció a Power BI szolgáltatásra
 Ha még nem regisztrált, látogasson el a [powerbi.com](https://powerbi.microsoft.com/get-started/) webhelyre, és a **Power BI - Felhőbeli együttműködés és megosztás** területen válassza az **Ingyenes próba** lehetőséget.

@@ -1,16 +1,37 @@
+---
+title: Munkaterület létrehozása – Power BI
+description: Munkaterület létrehozása – tartalmazza
+services: powerbi
+author: maggiesMSFT
+ms.service: powerbi
+ms.topic: include
+ms.date: 04/04/2019
+ms.author: maggies
+ms.custom: include file
+ms.openlocfilehash: bbd1f47b2d798e662f84f009b3260a11d39cb23d
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67534645"
+---
 1. Kezdjük a munkaterület létrehozásával. Válassza a **Munkaterületek** > **Alkalmazás munkaterületének létrehozása** lehetőséget. 
    
      ![Alkalmazás munkaterületének létrehozása](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
    
-    Ez az a terület, ahová a tartalmak kerülnek, amelyen Ön és kollégái együtt dolgoznak majd.
+    Erre a területre kerülnek majd azok a tartalmak, amelyeken Ön és munkatársai együtt dolgoznak.
 
-2. Nevezze el a munkaterületet. Ha a megfelelő **munkaterület-azonosító** nem használható, szerkesztéssel hozzon létre egy egyedi azonosítót.
+2. A **Frissített munkaterület hoz létre** szalagon kattintson a **Visszaállítás klasszikusra** lehetőségre. 
+
+    ![Visszaállítás klasszikus munkaterületre beállítás](media/powerbi-service-create-app-workspace/power-bi-revert-classic-workspace.png)
+
+3. Nevezze el a munkaterületet. Ha a megfelelő **munkaterület-azonosító** nem használható, szerkesztéssel hozzon létre egy egyedi azonosítót.
    
-     Ez lesz az alkalmazás neve is.
+     Az alkalmazás neve ugyanaz lesz.
    
      ![A munkaterület elnevezése](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-name.png)
 
-3. Néhány beállítást meg kell adnia. Ha **nyilvánosra** állítja a munkaterületet, a szervezet bármely tagja megtekintheti annak tartalmát. A **Privát** beállítás ezzel szemben azt jelenti, hogy a munkaterület tartalmát csak a tagok láthatják.
+3. Néhány beállítást meg kell adnia. Ha **nyilvánosra** állítja a munkaterületet, a szervezet bármely tagja megtekintheti annak tartalmát. A **Privát** beállítás azt jelenti, hogy a munkaterület tartalmát csak a tagok láthatják.
    
      ![Nyilvános vagy Privát beállítás](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-private-public.png)
    

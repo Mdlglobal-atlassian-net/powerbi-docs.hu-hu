@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5d9e468ecf3bf1fdc2e138ac06202820bbd96bcf
-ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
-ms.translationtype: MT
+ms.openlocfilehash: 8acc0e403c983de79657cd01a7aa7f458bfb01ad
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469798"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559055"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Helyszíni Power BI-átjáró kezelése
 
@@ -31,6 +31,8 @@ Ha éppen most telepített átjárót, akkor ajánlott a következő lépésben 
 
 A Power BI sokféle helyszíni adatforrást támogat, és ezek mindegyikéhez saját követelmények tartoznak. Egy átjáró használható egyetlen adatforráshoz vagy több adatforráshoz. Az itt tárgyalt példában adatforrásként SQL Server hozzáadását mutatjuk be, de a lépések más adatforrások esetén is hasonlóak.
 
+> [!NOTE]
+> Az átjáró rendszergazdái mostantól létrehozhatnak több, azonos forráshoz csatlakozó, de különböző hitelesítő adatokkal rendelkező adatforrást, és ezek mindegyikéhez hozzáadhatnak felhasználókat a hozzáférési szintjük alapján.
 
 ### <a name="add-a-data-source"></a>Adatforrások felvétele
 
@@ -53,7 +55,12 @@ A Power BI sokféle helyszíni adatforrást támogat, és ezek mindegyikéhez sa
 
 1. Az SQL Serverhez a **Windows** vagy az **Alapszintű** (SQL-hitelesítés) **Hitelesítési módszer** választható.  Ha az **Alapszintűt** választja, akkor meg kell adnia az adatforrás eléréséhez szükséges hitelesítő adatokat.
 
-1. A **Speciális beállítások** alatt beállíthatja az adatforráshoz alkalmazandó [adatvédelmi szintet](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) (a [DirectQuery](desktop-directquery-about.md)-re nem érvényes).
+1. Ha ez az adatforrás jelenleg nem érhető el vagy lassú, válassza a **Kapcsolat tesztelésének kihagyása** lehetőséget. Ellenkező esetben az adatforrás létrehozása meghiúsulhat.
+
+    > [!NOTE]
+    > A tesztkapcsolat kihagyása az Analysis Services esetében nem támogatott.
+
+1. A **Speciális beállítások** alatt beállíthatja az adatforráshoz alkalmazandó [adatvédelmi szintet](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)) (a [DirectQuery](desktop-directquery-about.md)-re nem érvényes).
 
     ![Speciális beállítások](media/service-gateway-manage/advanced-settings.png)
 
@@ -74,7 +81,7 @@ Az eltávolításához lépjen az adatforráshoz, és válassza az **Eltávolít
 
 ## <a name="manage-users-and-administrators"></a>Felhasználók és rendszergazdák kezelése
 
-Miután hozzáadott egy adatforrást az átjáróhoz, felhasználóknak és biztonsági csoportoknak adhat hozzáférést az adott adatforráshoz (nem a teljes átjáróhoz). Az adatforrás felhasználóinak listája csak azt szabja meg, hogy ki tehet közzé az adatforrásból származó adatokat tartalmazó jelentést. A jelentéstulajdonosok létrehozhatnak irányítópultokat, tartalomcsomagokat és alkalmazásokat, és megoszthatják azokat más felhasználókkal.
+Miután hozzáadott egy adatforrást az átjáróhoz, felhasználóknak és levelezési biztonsági csoportoknak adhat hozzáférést az adott adatforráshoz (nem a teljes átjáróhoz). Az adatforrás felhasználóinak listája csak azt szabja meg, hogy ki tehet közzé az adatforrásból származó adatokat tartalmazó jelentést. A jelentéstulajdonosok létrehozhatnak irányítópultokat, tartalomcsomagokat és alkalmazásokat, és megoszthatják azokat más felhasználókkal.
 
 Felhasználóknak és biztonsági csoportoknak rendszergazdai hozzáférést is adhat az átjáróhoz.
 
@@ -98,14 +105,14 @@ Ennyi az egész. Ne feledje, hogy a felhasználókat minden adatforráshoz hozz�
 
 ### <a name="remove-users-from-a-data-source"></a>Felhasználók eltávolítása egy adatforrásból
 
-Az adatforráshoz tartozó **Felhasználók** lapon eltávolíthat az adatforrás használatára jogosult felhasználókat vagy biztonsági csoportokat.
+Az adatforráshoz tartozó **Felhasználók** lapon eltávolíthat az adatforrás használatára jogosult felhasználókat vagy levelezési biztonsági csoportokat.
 
 ![Felhasználó eltávolítása](media/service-gateway-manage/remove-user.png)
 
 
 ### <a name="add-and-remove-administrators"></a>Rendszergazdák hozzáadása és eltávolítása
 
-Az átjárókhoz tartozó **Rendszergazdák** lapon felvehet és eltávolíthat az átjáró kezelésére jogosult felhasználókat (vagy biztonsági csoportokat).
+Az átjárókhoz tartozó **Rendszergazdák** lapon felvehet és eltávolíthat az átjáró kezelésére jogosult felhasználókat (vagy levelezési biztonsági csoportokat).
 
 ![Rendszergazdák lap](media/service-gateway-manage/administrators-tab.png)
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
-ms.openlocfilehash: ae56a27393ba476828ff87d7f458815318ea79c1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9673217cfd7c5af70bdd293e8d5df51e5e7dee07
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770370"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559089"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>OAuth használata a Power BI jelentéskészítő kiszolgáló és az SSRS csatlakoztatásához
 
@@ -25,7 +25,7 @@ Megtudhatja, hogyan konfigurálhatja a környezetét OAuth-hitelesítés támoga
 Az OAuth-hitelesítést a Power BI jelentéskészítő kiszolgálóhoz való csatlakozásra használhatja, a Reporting Services-t pedig mobiljelentések és KPI-k megjelenítésére. A Windows Server 2016 webalkalmazás-proxyhoz (WAP) biztosított fejlesztései lehetővé tették az ilyen típusú hitelesítés használatát.
 
    > [!NOTE]
-   > A Power BI jelentéskészítő kiszolgálón tárolt Power BI-jelentések megtekintése WAP használatával hitelesíti a jelenleg támogatott csak az iOS-alkalmazásban. Android-alkalmazás a jelenleg nem hivatalosan támogatott.
+   > A Power BI jelentéskészítő kiszolgálón üzemeltetett Power BI-jelentések megtekintéséhez a WAP-on keresztül végzett hitelesítés mostantól támogatott iOS- és Android-alkalmazások esetében.
 
 ## <a name="requirements"></a>Követelmények
 
@@ -63,7 +63,7 @@ Információk a megfelelő egyszerű szolgáltatásnév (SPN) konfigurálásár�
 
 ### <a name="enabling-negotiate-authentication"></a>Egyeztetéses hitelesítés engedélyezése
 
-Ha engedélyezni szeretné a Kerberos-hitelesítés használatát, konfigurálnia kell a hitelesítés típusát a jelentéskészítő kiszolgálón RSWindowsNegotiate értékre. Ezt az rsreportserver.config fájlban teheti meg.
+Ha engedélyezni szeretné a Kerberos-hitelesítés használatát, konfigurálnia kell a hitelesítés típusát a jelentéskészítő kiszolgálón RSWindowsNegotiate értékre. Ezt az rsreportserver.config fájlban végezheti el.
 
 ```xml
 <AuthenticationTypes>  
@@ -81,7 +81,7 @@ Konfigurálnia kell az ADFS-t egy, a környezetén belül lévő Windows 2016-ki
 
 ### <a name="create-an-application-group"></a>Alkalmazáscsoport létrehozása
 
-Az AD FS-kezelő képernyőjén létre kell hoznia egy alkalmazáscsoportot a Reporting Serviceshez, amelyben majd szerepelhetnek a Power BI mobilalkalmazásokhoz tartozó adatok.
+Az AD FS-kezelő képernyőjén hozzon létre egy alkalmazáscsoportot a Reporting Serviceshez, amelyben majd szerepelnek a Power BI mobilalkalmazásokhoz tartozó adatok.
 
 Az alkalmazáscsoportot az alábbi lépéseket követve hozhatja létre.
 
@@ -118,7 +118,7 @@ Az alkalmazáscsoportot az alábbi lépéseket követve hozhatja létre.
    > [!NOTE]
    > Ez az URL-cím megkülönbözteti a kis- és nagybetűket!
 
-   *https://< a jelentéskészítő kiszolgáló URL-cím > / reports*
+   *https://< jelentéskészítő kiszolgáló URL-címe >/jelentések*
 
    ![ADFS Alkalmazáscsoport-varázsló 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Kattintson a **Tovább** gombra.
@@ -141,7 +141,7 @@ Ha elkészült, az alkalmazáscsoport tulajdonságainak az alábbihoz hasonlóan
 
 ## <a name="web-application-proxy-wap-configuration"></a>Webalkalmazás-proxy (WAP) konfigurációja
 
-Érdemes engedélyeznie a Webalkalmazás-proxy (szerepkör) Windows-szerepkört a környezete egy kiszolgálóján. Ennek egy Windows 2016-kiszolgálón kell lennie. További információ: [Webalkalmazás-proxy a Windows Server 2016-ban](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) és [Alkalmazások közzététele AD FS előhitelesítéssel](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
+Érdemes engedélyeznie a Webalkalmazás-proxy (szerepkör) Windows-szerepkört a környezete egy kiszolgálóján. Ennek egy Windows Server 2016-on kell lennie. További információ: [Webalkalmazás-proxy a Windows Server 2016-ban](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) és [Alkalmazások közzététele AD FS előhitelesítéssel](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
 
 ### <a name="constrained-delegation-configuration"></a>Korlátozott delegálás konfigurálása
 
@@ -239,7 +239,7 @@ A többtényezős hitelesítés engedélyezésével még biztonságosabbá tehet
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 
-### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-please-verify-server-configuration"></a>A következő üzenet jelenik meg: Nem sikerült a bejelentkezés az SSRS-kiszolgálóra. Ellenőrizze a kiszolgálókonfigurációt.
+### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-verify-server-configuration"></a>A következő üzenet jelenik meg: Nem sikerült a bejelentkezés az SSRS-kiszolgálóra. Ellenőrizze a kiszolgálókonfigurációt.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 

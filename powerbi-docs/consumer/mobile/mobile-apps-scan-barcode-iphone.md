@@ -1,5 +1,5 @@
 ---
-title: Vonalkód beolvasása iPhone-nal a Power B mobilalkalmazásból
+title: Vonalkód beolvasása a Power BI mobilalkalmazásból
 description: Beolvashatja a való világbeli vonalkódokat, hogy közvetlenül a szűrt BI-adatokhoz jusson a Power BI mobilalkalmazásban.
 author: mshenhav
 manager: kfile
@@ -9,21 +9,28 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: mshenhav
-ms.openlocfilehash: 3fd2d4888f76490a01c0742e68e6820c7055326e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 432b65f8d7f461ac1942cf8996f9cc67e756fc7f
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61137332"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559017"
 ---
-# <a name="scan-a-barcode-with-your-iphone-from-the-power-bi-mobile-app"></a>Vonalkód beolvasása iPhone-nal a Power BI mobilalkalmazásból
+# <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Vonalkód beolvasása saját eszközzel a Power BI mobilalkalmazásból
 Beolvashatja a való világbeli vonalkódokat, hogy közvetlenül a szűrt BI-adatokhoz jusson a Power BI mobilalkalmazásban.
 
-![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+
+A következőkre vonatkozik:
+
+| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | 
+|:--- |:--- |
+| iPhone | Android (telefon, táblagép) | 
 
 Tegyük fel, hogy az egyik munkatársa [megcímkézett egy vonalkódmezőt egy jelentésben a Power BI Desktopban](../../desktop-mobile-barcodes.md), majd megosztotta ezt a jelentést Önnel. 
 
-Amikor beolvassa egy termék vonalkódját a Power BI alkalmazás olvasójával az iPhone-ján, akkor megjelenik a vonalkóddal rendelkező jelentés (vagy a jelentések listája). Megnyithatja ezt a jelentést az iPhone-on, a vonalkód alapján szűrve.
+![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+
+Amikor beolvassa egy termék vonalkódját a Power BI alkalmazás olvasójával az eszközén, megjelenik a vonalkódot tartalmazó jelentés (vagy a jelentések listája). Ezt a jelentést megnyithatja a vonalkód alapján szűrve.
 
 ## <a name="scan-a-barcode-with-the-power-bi-scanner"></a>Vonalkód beolvasása a Power BI-olvasóval
 1. A Power BI mobilalkalmazásban nyissa meg a fő navigációs menüt ![](media/mobile-apps-scan-barcode-iphone/pbi_iph_navmenu.png) a bal felső sarokban. 
@@ -34,10 +41,10 @@ Amikor beolvassa egy termék vonalkódját a Power BI alkalmazás olvasójával 
 4. Irányítsa az olvasót egy termék vonalkódjára. 
    
     Megjelenik a vonalkódhoz társított jelentések listája.
-5. Koppintson a jelentés nevére, hogy megnyissa az iPhone-on a vonalkód alapján automatikusan szűrve.
+5. A jelentés nevére koppintva megnyithatja az adott jelentést az eszközén, a vonalkód alapján automatikusan szűrve.
 
 ## <a name="filter-by-other-barcodes-while-in-a-report"></a>A jelentés szűrése más vonalkódok alapján
-Az iPhone-on megtekintett, vonalkód alapján szűrt jelentést más vonalkódok alapján is szűrheti.
+Az eszközön megtekintett, vonalkód alapján szűrt jelentést más vonalkódok alapján is szűrheti.
 
 * Ha a vonalkód ikonon szűrő ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png) látható, akkor a szűrő aktív, és a jelentés már szűrve van egy vonalkód alapján. 
 * Ha az ikon nem tartalmaz szűrőt ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), akkor a szűrő nem aktív, és a jelentés nincs vonalkód alapján szűrve. 

@@ -1,6 +1,6 @@
 ---
-title: Egyetlen koppintással való jelentés interakciók konfigurálása
-description: Ismerje meg, hogyan egyszeres vagy kettős koppintson a jelentés interakciók konfigurálása.
+title: Jelentések egykoppintásos kezelésének beállítása
+description: Megismerheti, hogyan lehet beállítani a jelentések egy- vagy duplakoppintásos kezelését.
 author: mshenhav
 manager: kfile
 ms.reviewer: ''
@@ -9,14 +9,14 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: c7f5476ed9d47cc42f275d51801a44c4ee3482ca
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c553b921ebeb30b8fb8ec7ba9f7bce74f6c31dee
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61340636"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558955"
 ---
-# <a name="configure-report-interaction-to-single-tap-or-double-tap-preview"></a>A jelentés interakciók egyetlen koppintással vagy dupla koppintással (előzetes verzió) konfigurálása
+# <a name="configure-report-interaction-to-single-tap-or-double-tap"></a>Jelentések egy- és duplakoppintásos kezelésének beállítása
 A következőkre vonatkozik:
 
 | ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android rendszerű telefon](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | 
@@ -25,24 +25,24 @@ A következőkre vonatkozik:
 
 A Power BI jelentés egy interaktív nézet az adatokról különböző, az adatokból származó eredményeket és elemzéseket bemutató vizualizációkkal.
 
-Beállíthatja, hogy hogyan kommunikálnak az adatokkal. Eldöntheti, hogy szeretné-e egyetlen koppintással beavatkozás vagy kettős koppintson az interakció.
+Beállíthatja, hogyan kívánja kezelni az adatait. Eldöntheti, hogy az egykoppintásos vagy a duplakoppintásos kezelési módot választja.
 
-* Dupla koppintással beavatkozás az első koppintson egy vizualizációra kijelöli azt, és csak a második koppintson egy Vizualizáció műveletet hajtja végre, mint például a szeletelő a kiválasztott elemeket, keresztkijelölés, vagy kattintson egy hivatkozás, gombra, és így tovább.
+* Duplakoppintásos beállítás esetén először a vizualizációra koppintva kiválasztja a műveletet, amelyet a második koppintás fog végrehajtani, ilyen például a szeletelő elemeinek kiválasztása, a keresztkijelölés vagy a hivatkozásra, gombra történő kattintás és így tovább.
 
-* Egyetlen koppintással beavatkozás egyetlen koppintással esetén mindkét, - választja ki a vizualizációt, és végrehajtja a műveletet.
-![A Power BI mobil egyetlen koppintással](./media/mobile-app-single-tap/single-tap-2.gif)
+* Az egykoppintásos beállításnál egyetlen koppintás hajtja végre mindkét lépést, vagyis a vizualizáció kijelölését és a művelet végrehajtását is.
+![Power BI Mobile – egykoppintásos működés](./media/mobile-app-single-tap/single-tap-2.gif)
 
 
-A Power BI iOS-és 112540 18.0 Alkalmazásverzió kezdve az Android, az összes új telepítések lesz konfigurálva egyetlen koppintással egy alapértelmezett viselkedésként.
-Váltson át egyetlen koppintással, amely már telepítve van a telefonján a Power BI és frissíti az új verziók, a felhasználók kínáljuk.
+A Power BI alkalmazás 18.0-s iOS-es és 112540-es androidos verziójától kezdve az összes új telepítés alapértelmezés szerint egykoppintásos működésű lesz.
+Azok a felhasználók, akiknek a Power BI már telepítve van a telefonján, az új verziók telepítésekor dönthetnek úgy, hogy az egykoppintásos működésre váltanak.
 
-## <a name="change-interaction-behavior"></a>Interakció viselkedésének módosítása
+## <a name="change-interaction-behavior"></a>A kezelés működésének módosítása
 
-Interakció változtathatja meg, nyissa meg az alkalmazás beállításait, és be- és kikapcsolása egyetlen koppintással interakciót.
+A kezelés működésének módosításához az alkalmazás beállításai között be- vagy kikapcsolhatja az egykoppintásos kezelést.
 
-![A Power BI mobilalkalmazásban jelentés kapcsolati módosítása](./media/mobile-app-single-tap/configure-single-tap.png)
+![Power BI Mobile – jelentésének kezelésének módosítása](./media/mobile-app-single-tap/configure-single-tap.png)
 
-Ez a cikk mindkét fekvő és a telefonos jelentések vonatkozik.
+Ez a cikk a fekvő tájolású és a telefonos jelentésekre is vonatkozik.
 
 ## <a name="next-steps"></a>Következő lépések
 * [Telefonra optimalizált Power BI-jelentések megtekintése és használata](mobile-apps-view-phone-report.md)
