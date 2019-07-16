@@ -7,137 +7,140 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/23/2018
+ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 18b99bf86f49f1355d4ab9f20ff6e8a83c89731d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 17a4a3770cb2c3e2adff2bcce64c3e101688e002
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61233866"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791871"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Beszerzéselemzési minta a Power BI-hoz: Bemutató megtekintése
 
-## <a name="overview-of-the-procurement-analysis-sample"></a>A Beszerzéselemzési minta áttekintése
-Ez az iparági mintaként szolgáló irányítópult és a mögöttes jelentés egy gyártással foglalkozó cég beszállítói költségeit elemzi kategória és hely szerint. A mintában az alábbi területek ismerhetők meg:
+A Beszerzéselemzési minta tartalomcsomag egy irányítópultot, jelentést és adathalmazt tartalmaz, amely egy gyártó cég beszállítói költségeit elemzi kategória és hely szerint. A mintában az alábbi területek ismerhetők meg:
 
 * Kik a fő beszállítók?
 * Mely kategóriák költségei a legmagasabbak?
 * Mely beszállítók biztosítják a legnagyobb kedvezményeket, és mikor?
 
-Ez a minta egy olyan sorozat részét képezi, amely bemutatja, hogyan használhatja a Power BI-t üzleti adatokkal, jelentésekkel és irányítópultokkal. Az adatok az obviEnce-től ([www.obvience.com](http://www.obvience.com/)) származó valós, de anonimizált adatok.
+![A Beszerzéselemzési minta irányítópultja](media/sample-procurement/procurement1.png)
 
-![](media/sample-procurement/procurement1.png)
+Ez a minta abba a sorozatba tartozik, amely a Power BI üzleti jellegű adatokkal, jelentésekkel, és irányítópultokkal történő használatát mutatja be. Az [obviEnce](http://www.obvience.com/)-től származó valós adatokkal lett létrehozva, melyeket anonimizáltunk. Az adatok többféle formátumban: tartalomcsomagként, .pbix kiterjesztésű Power BI Desktop-fájlként és Excel-munkafüzetként is elérhetők. [Power BI-minták](sample-datasets.md) megtekintése. 
 
-## <a name="prerequisites"></a>Előfeltételek
+Ebben az oktatóanyagban a Power BI szolgáltatásban vizsgáljuk meg a Beszerzéselemzési minta tartalomcsomagot. Mivel azonban a jelentéssel való munka hasonló a Power BI Desktopban és a szolgáltatásban, a bemutatót akkor is követni tudja, ha a .pbix-mintafájlt a Power BI Desktopban használja. 
 
- Használat előtt a mintát [tartalomcsomagként](https://docs.microsoft.com/power-bi/sample-procurement#get-the-content-pack-for-this-sample), [.pbix-fájlként](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix) vagy [Excel-munkafüzetként](http://go.microsoft.com/fwlink/?LinkId=529784) le kell töltenie.
+A minták Power BI Desktopban való vizsgálatához nincs szükség Power BI-licencre. Ha nem rendelkezik Power BI Pro-licenccel, a mintát a Saját munkaterületre mentheti a Power BI szolgáltatásban. 
+
+## <a name="get-the-sample"></a>A minta beszerzése
+
+Használat előtt a mintát [tartalomcsomagként](#get-the-content-pack-for-this-sample), [.pbix-fájlként](#get-the-pbix-file-for-this-sample) vagy [Excel-munkafüzetként](#get-the-excel-workbook-for-this-sample) le kell töltenie.
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Tartalomcsomag letöltése ehhez a mintához
 
-1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), és jelentkezzen be.
+1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), jelentkezzen be, majd nyissa meg azt a munkaterületet, ahol a mintát szeretné menteni. 
+
+    Ha nem rendelkezik Power BI Pro-licenccel, a mintát a Saját munkaterületre mentheti.
+
 2. A bal alsó sarokban válassza az **Adatok lekérése** lehetőséget.
-   
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. Ekkor megjelenik az Adatok lekérése lap. Itt kattintson a **Minták** ikonra.
-   
-   ![](media/sample-datasets/power-bi-samples-icon.png)
+
+    ![Az Adatok beolvasása lehetőség kiválasztása](media/sample-datasets/power-bi-get-data.png)
+3. Ekkor megjelenik az **Adatok lekérése** lap. Itt válassza a **Minták** lehetőséget.
+
 4. Válassza a **Beszerzéselemzési minta** elemet, majd a **Kapcsolódás** lehetőséget.  
   
-   ![Adatok beolvasása](media/sample-procurement/procurement1a.png)
+   ![Csatlakozás mintához](media/sample-procurement/procurement1a.png)
    
-5. A Power BI importálja a tartalomcsomagot, és egy új irányítópultot, jelentést és adatkészletet ad hozzá az aktuális munkaterülethez. Az új tartalmakat sárga csillag jelöli. 
+5. A Power BI importálja a tartalomcsomagot, és egy új irányítópultot, jelentést és adathalmazt ad hozzá az aktuális munkaterülethez.
    
-   ![Csillag](media/sample-procurement/procurement1b.png)
+   ![Beszerzéselemzési minta listaelem](media/sample-procurement/procurement-entry.png)
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>.pbix-fájl letöltése ehhez a mintához
 
-Lehetőség van a mintát .pbix-fájlként is letölteni, amelyet a Power BI Desktoppal való használatra terveztek. 
-
- * [Beszerzéselemzési minta](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
+A Beszerzéselemzési mintát a Power BI Desktoppal való használatra tervezett [.pbix-fájlként](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix) is letöltheti. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Excel-munkafüzet letöltése ehhez a mintához
-Letöltheti [kizárólag a minta adatkészletét (Excel-munkafüzetét) is](http://go.microsoft.com/fwlink/?LinkId=529784). A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatokat a **Power Pivot > Kezelés** lehetőségre kattintva nézheti meg.
+
+Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](http://go.microsoft.com/fwlink/?LinkId=529784) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
 
 
 ## <a name="spending-trends"></a>Költési trendek
 Először nézzük meg a költési trendeket kategória és hely szerint.  
 
-1. A munkaterületen nyissa meg az **Irányítópultok** lapot, és válassza a Beszerzéselemzés nevű irányítópultot.
-2. Válassza ki a **Teljes számla ország/régió szerint** nevű csempét az irányítópulton. Megjelenik a Beszerzéselemzési minta című jelentés Költések áttekintése nevű lapja.
+1. A munkaterületen, amelyre a mintát mentette, nyissa meg az **Irányítópultok** lapot, majd keresse meg és jelölje ki a **Beszerzéselemzési minta** irányítópultot. 
+2. Válassza a **Számlák összege ország/régió szerint** irányítópult-csempét, amely a **Beszerzéselemzési minta** jelentés **Költségek áttekintése** oldalát nyitja meg.
 
-    ![](media/sample-procurement/procurement2.png)
+    ![Költségek áttekintése oldal](media/sample-procurement/procurement2.png)
 
-Az alábbiak figyelhetők meg:
+Figyelje meg a következő részleteket:
 
-* A **Teljes számla hónap és kategória szerint** vonaldiagramon: A **Közvetlen** kategória következetes költéssel rendelkezik, a **Logisztika** kategória csúcsértéke decemberben van, míg az **Egyéb** nevű kategóriáé februárban.
-* A **Teljes számla ország/régió szerint** térképen: A kiadások nagy része az USA-ban található.
-* A **Teljes számla alkategória szerint** oszlopdiagramon: A **Hardver**, valamint a **Közvetett termékek és szolgáltatások** képviselik a legnagyobb költési kategóriát.
-* A Teljes számla szint szerint nevű sávdiagramon: Az ügyfelek többsége 1. szintű (első 10-be tartozó) beszállítónak minősül. Ez segít a beszállítói kapcsolatok jobb kezelésében.
+* A **Teljes számla hónap és kategória szerint** nevű vonaldiagramon a **Közvetlen** kategória viszonylag következetes kiadásokat mutat, a **Logisztika** kategória csúcsértéke decemberben van, míg az **Egyéb** nevű kategóriáé februárban.
+* A **Számlák összege ország/régió szerint** nevű térképen a kiadások többsége az Egyesült Államokban mutatkozik.
+* A **Számlák összege alkategória szerint** nevű oszlopdiagramon a **Hardver**, valamint a **Közvetett termékek és szolgáltatások** képviselik a legnagyobb kiadási kategóriát.
+* A **Számlák összege szint szerint** nevű sávdiagramon az ügyfelek többsége 1. szintű (első 10-be tartozó) beszállítónak minősül. Ezáltal jobban kezelhetők a beszállítói kapcsolatok.
 
 ## <a name="spending-in-mexico"></a>Mexikói költések
 Nézzük meg a mexikói költési területeket.
 
-1. A tortadiagramon válassza ki a **Mexikó** nevű térképbuborékot. Látható, hogy a Teljes számla alkategória szerint nevű oszlopdiagramon a legtöbb kategóriát a **Közvetett termékek és szolgáltatások** alkategória képviseli.
+1. A **Számlák összege ország/régió szerint** térképen válassza a **Mexikó** buborékot. Látható, hogy a **Számlák összege alkategória szerint** nevű oszlopdiagramon a legtöbb kiadást a **Közvetett termékek és szolgáltatások** alkategória képviseli.
 
-   ![](media/sample-procurement/pbi_procsample_spendmexico.png)
+   ![Mexikó és a Kiadások áttekintése oldal kiválasztása](media/sample-procurement/pbi_procsample_spendmexico.png)
 2. Részletezheti a **Közvetett termékek és szolgáltatások** nevű oszlopot:
 
-   * Válassza ki a lehatolási nyilat ![](media/sample-procurement/pbi_drilldown_icon.png) a diagram jobb felső sarkában.
+   * A **Számlák összege alkategória szerint** diagramon válassza a részletezés nyilat ![Részletezés nyíl](media/sample-procurement/pbi_drilldown_icon.png) a diagram jobb felső sarkában.
    * Válassza ki a **Közvetett termékek és szolgáltatások** nevű oszlopot.
 
-      Ebben a kategóriában a legnagyobb költést az értékesítés és a marketing képviseli.
+      Látható, hogy a költség kiugróan az **Értékesítés és marketing** alkategóriában a legmagasabb.
    * Válassza ki újra **Mexikót** a térképen.
 
-      A legnagyobb mexikói költés ebben a kategóriában a karbantartás és a javítás.
+      Mexikóban a legnagyobb kiadás a **Karbantartás és javítás** alkategóriában jelentkezik.
 
-      ![](media/sample-procurement/pbi_procsample_drill_mexico.png)
+      ![Közvetett termékek és szolgáltatások Mexikóra vonatkozó részletezése](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Válassza ki a felfelé mutató nyilat a diagram bal felső sarkában a felhatoláshoz.
-4. Válassza ki a nyilat újra a lehatolás kikapcsolásához.  
-5. A **Power BI** elem felső navigációs sávon való kiválasztásával térhet vissza a munkaterületre.
+4. Válassza újra a részletező nyilat újra a részletezés kikapcsolásához.  
+5. A felső navigációs sávon a **Beszerzéselemzési minta** lehetőségre kattintva visszatérhet az irányítópulthoz.
 
 ## <a name="evaluate-different-cities"></a>Különböző városok értékelése
 A kiemelések használatával értékelheti a különböző városokat.
 
-1. Válassza ki a **Teljes számla és kedvezményszázalék hónap szerint** nevű csempét az irányítópulton. A jelentésben megnyílik a Kedvezmény elemzése lap.
-2. A **Teljes számla város szerint** fatérképen az egyes városok kiválasztásával hasonlíthatja össze őket. A Miamihoz tartozó szinte összes számla 1. szintű beszállítóktól származik.
+1. Válassza a **Számlák összege, százalékos kedvezmény hónap szerint** irányítópult-csempét, amely a **Beszerzéselemzési minta** jelentés **Kedvezmények elemzése** oldalát nyitja meg.
+2. A **Számlák összege város szerint** fatérképen jelölje ki egymás után a városokat, hogy összehasonlíthassa azokat. Megfigyelheti, hogy a Miamihoz tartozó szinte összes számla 1. szintű beszállítóktól származik.
 
-   ![](media/sample-procurement/pbi_procsample_miamitreemap2.png)
+   ![Városok és százalékos kedvezmények szint szerint](media/sample-procurement/pbi_procsample_miamitreemap2.png)
 
 ## <a name="vendor-discounts"></a>Beszállítói kedvezmények
-Most tekintsük át a beszállítóktól származó kedvezményeket, valamint azokat az időszakokat, amikor a legtöbb kedvezményt kapjuk.
-
-![](media/sample-procurement/procurement4.png)
-
-Pontosabban az alábbi kérdéseket tehetjük fel:
-
-* A kedvezmények eltérnek-e havonként, vagy megegyeznek minden egyes hónapban?
+Most tekintsük át a beszállítóktól származó kedvezményeket, valamint azokat az időszakokat, amikor a legtöbb kedvezményt kapjuk:
+* Havonta változnak a kedvezmények, vagy ugyanazok maradnak?
 * Egyes városok több kedvezményt kapnak-e más városokhoz képest?
 
-### <a name="discount-by-month"></a>Kedvezmény havonta
-A **Teljes számla és kedvezményszázalék hónap szerint** nevű kombinált diagramon látható, hogy **február** a leginkább, és **szeptember** a legkevésbé forgalmas hónap. Most nézzük meg az ezekhez a hónapokhoz tartozó kedvezményszázalékot.
-Látható, hogy a mennyiség növekedésével a kedvezmény mértéke csökken, valamint ha a mennyiség alacsony, a kedvezmény megnő. Minél több kedvezményre van szükség, annál kedvezőtlenebb ajánlatot kapunk.
+![Kedvezmények elemzése oldal](media/sample-procurement/procurement4.png)
 
-![](media/sample-procurement/procurement5.png)
+### <a name="discount-by-month"></a>Kedvezmény havonta
+A **Számlák összege és százalékos kedvezmény hónap szerint** nevű kombinált diagramon látható, hogy február a leginkább, és szeptember a legkevésbé forgalmas hónap. 
+
+Figyelje meg a százalékos kedvezményt ezekben a hónapokban: a forgalom növekedésekor a kedvezmény csökken, alacsony forgalom idején a kedvezmény emelkedik. Minél nagyobb szükségünk volna a kedvezményre, annál kedvezőtlenebb ajánlatot kapunk.
+
+![Számlák összege és százalékos kedvezmény hónap szerint diagram](media/sample-procurement/procurement5.png)
 
 ### <a name="discount-by-city"></a>Kedvezmény városonként
-Egy másik feltárható terület a városonként kapott kedvezmény. Válassza ki az egyes városokat a fatérképen, és láthatja, hogyan változik a többi diagram.
+Egy másik feltárható terület a városonként kapott kedvezmény. Válassza ki egyenként a városokat a fatérképen, és láthatja, hogyan változik a többi diagram:
 
-* St. Louis-ban (Missouri) csúcsértéket ért el februárban a teljes számlaérték, valamint áprilisban esett a legalacsonyabb szintre a kedvezményekkel elérhető megtakarítás.
-* A mexikói Mexikóvárosban a legmagasabb a kedvezményszázalék értéke (11,05%), míg Atlantában (Georgia) a legkisebb (0,08%).
+* St. Louis-ban februárban kiugróan magas csúcsértéket ért el a teljes számlaérték, áprilisban viszont a legalacsonyabb szintre esett vissza a kedvezményekkel elérhető megtakarítás.
+* A kedvezmény mértéke Mexikóvárosban a legmagasabb (11,05%), Atlantában pedig a legalacsonyabb (0,08%).
 
-![](media/sample-procurement/procurement6.png)
+![A Mexikóvárosra vonatkozó kedvezménygrafikon](media/sample-procurement/procurement6.png)
 
 ### <a name="edit-the-report"></a>A jelentés szerkesztése
-Válassza ki a **Jelentés szerkesztése** elemet a bal felső sarokban, és nyissa meg a szerkesztési nézetet.
+Válassza ki a **Jelentés szerkesztése** elemet a bal felső sarokban, és nyissa meg a szerkesztési nézetet:
 
-* Áttekintheti a lapok felépítését
-* Lapokat és diagramokat vehet fel ugyanazon adatok alapján
-* Módosíthatja a diagram vizualizációs típusát – például fatérképről gyűrűdiagramra
-* Rögzítheti azokat az irányítópulton
-
-Ebben a környezetben nyugodtan kísérletezhet. Nem kötelező menteni a módosításokat. Ha mégis menti őket, az **Adatok lekérése** lehetőséggel bármikor letöltheti a minta egy új másolatát.
+* Áttekintheti a lapok felépítését.
+* Lapokat és diagramokat vehet fel ugyanazon adatok alapján.
+* Módosíthatja a diagram vizualizációtípusát, például fatérképről gyűrűdiagramra.
+* Rögzítheti a diagramokat az irányítópulton.
 
 ## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
-Reméljük, ez a bemutató segített megérteni a Power BI-beli irányítópultok és jelentések segítségével történő beszerzési adatelemzést. Most Önön a sor &#151; kapcsolódjon a saját adataihoz. A Power BI-jal számos adatforráshoz kapcsolódhat. További tudnivalók a [Power BI használatának első lépéseiről](service-get-started.md).
+Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
+
+Reméljük, hogy ez a bemutató segített megérteni a mintaadatok Power BI irányítópultok, Q&A és jelentések segítségével történő elemzését. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).
+

@@ -7,21 +7,19 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 507af4de9d57d2d54fe3e28bca8b1aff7da5cf30
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 2db4c23b50071e387913ed79b4d01daeafb928a4
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461465"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567379"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Jelentések másolása más munkaterületekről (előzetes verzió)
 
-Megtudhatja, hogyan másolhat ki egy jelentést egy munkaterületről, és hogyan mentheti azt egy másik munkaterületen. Ezt követően módosíthatja a jelentést, vizualizációkat vagy más elemeket adhat hozzá vagy törölhet.
-
-Ha egy munkaterületen vagy alkalmazásban Önnek megfelelő jelentést talál, másolatot készíthet róla, amelyet igényeinek megfelelően módosíthat. Az adatmodell elkészítésével nem kell foglalkoznia. Azt már létrehozták az Ön számára. Egy meglévő jelentést ráadásul sokkal egyszerűbb módosítani, mint egy üresből kiindulni.
+Ha egy munkaterületen vagy alkalmazásban Önnek megfelelő jelentést talál, másolatot készíthet róla, amelyet egy másik munkaterületre menthet. Ezt követően módosíthatja a jelentést, vizualizációkat vagy más elemeket adhat hozzá vagy törölhet. Az adatmodell elkészítésével nem kell foglalkoznia. Azt már létrehozták az Ön számára. Egy meglévő jelentést ráadásul sokkal egyszerűbb módosítani, mint egy üresből kiindulni. A jelentés másolatát azonban nem teheti közzé alkalmazásban az új munkaterületről. A további [szempontok és korlátozások](service-datasets-across-workspaces.md#considerations-and-limitations) listáját az „Adathalmazok használata több munkaterületen” című cikkben tekintheti meg.
 
 ## <a name="save-a-copy-of-a-report"></a>Jelentés másolatának mentése
 
@@ -61,6 +59,21 @@ A munkaterületén lévő jelentésekről érdemes tudni, hogy melyik adathalmaz
 1. A **Kapcsolódó tartalom** párbeszédpanelen az összes kapcsolódó elem megjelenik. Ebben a listában az adathalmaz nem különbözik a többitől. Nem látható rajta, hogy más munkaterületen helyezkedik el. Ez a probléma ismert.
  
     ![Kapcsolódó tartalom párbeszédpanel](media/service-datasets-copy-reports/power-bi-dataset-related.png)
+
+## <a name="delete-a-report-and-its-shared-dataset"></a>Jelentés és megosztott adathalmaz törlése
+
+Dönthet úgy, hogy többé nem kívánja munkaterületén tartani a jelentést és az azzal társított megosztott adathalmazt.
+
+1. Törölje a jelentést. A munkaterületen a jelentések listájában válassza a **Törlés** ikont.
+
+    ![Jelentés törlése ikon](media/service-datasets-across-workspaces/power-bi-datasets-delete-report.png)
+
+2. Az adathalmazok listájában azt láthatja, hogy a megosztott adathalmazokhoz nem tartozik **Törlés** ikon. Frissítse az oldalt, vagy lapozzon másik oldalra, és térjen vissza. Az adathalmaz már nem lesz ott. Ha nem így van, ellenőrizze a **Kapcsolódó elemek megtekintése** lehetőséget. Lehetséges, hogy egy másik táblához kapcsolódik a munkaterületen belül.
+
+    ![Kapcsolódó megtekintése ikont](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
+
+    > [!NOTE]
+    > A megosztott adathalmaz törlése erről a munkaterületről nem törli az adathalmazt. Csak az arra való hivatkozás lesz törölve.
 
 
 ## <a name="next-steps"></a>Következő lépések

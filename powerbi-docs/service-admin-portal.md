@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 06/27/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 992524d3467ebe9bb130b3c61476301ab2bc563c
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: a871a7475dd8282f9ce63646c371182548504357
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67409171"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67568085"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -50,7 +50,7 @@ A portálon kilenc lap található. A cikk további részében ezen lapokról ol
 
 ## <a name="usage-metrics"></a>Használati metrikák
 
-A **Használati metrikák** segítségével nyomon követheti a szervezet Power BI-használatát. Ezenkívül azt is mutatja, hogy mely munkahelyi felhasználók és csoportok a legaktívabbak a Power BI-ban.
+A **Használati metrikák** segítségével nyomon követheti a szervezet Power BI-használatát. Ezenkívül azt is mutatja, hogy mely munkahelyi felhasználók és csoportok a legaktívabbak a Power BI-ban. 
 
 > [!NOTE]
 > Az irányítópult első használatakor, vagy ha hosszú idő elteltével keresi fel újra az irányítópultot, egy betöltési képernyő jelenik meg az irányítópult betöltése során.
@@ -82,6 +82,40 @@ Az alábbiakban az egyes csempéknél megjelenő részletes információkat isme
 A második szakasz ugyanezeket az információkat tartalmazza – a csoportok alapján. Lehetővé teszi annak megtekintését, hogy a munkahely mely csoportjai a legaktívabbak, és milyen típusú tartalmakat használnak fel.
 
 Ezek az információk valós betekintést nyújtanak abba, hogy a felhasználók miként használják a Power BI-t a munkahelyen, és mely munkahelyi felhasználók és csoportok számítanak különösen aktívnak.
+
+## <a name="control-usage-metrics"></a>Használati metrikák szabályozása
+
+A használati metrikai jelentés olyan funkció, amelyet a Power BI vagy Office 365 rendszergazdája kapcsolhat be vagy ki. A rendszergazdák részletesen szabályozhatják, hogy mely felhasználók férnek hozzá használati metrikákhoz. Ezek alapértelmezés szerint minden vállalati felhasználó számára **engedélyezve** vannak.
+
+A rendszergazdák azt is meghatározhatják, hogy a tartalomkészítők láthatják-e a felhasználónkénti adatokat a használati metrikák között. 
+
+Magukról a jelentésekről a [Power BI-irányítópultok és -jelentések használati metrikáinak figyelése](service-usage-metrics.md) című szakaszban olvashat részleteket.
+
+### <a name="usage-metrics-for-content-creators"></a>Használati metrikák tartalomkészítők számára
+
+1. A Felügyeleti portálon válassza a **Bérlői beállítások** > **Tartalomkészítőknek szánt használati metrikák** lehetőséget.
+
+    ![Felügyeleti portál, bérlői beállítások, használati metrikák](media/service-admin-portal/power-bi-admin-usage-metrics.png)
+
+1. Engedélyezze (vagy tiltsa le) a használati metrikákat > **Alkalmaz**.
+
+    ![Használati metrikák engedélyezve](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
+
+
+### <a name="per-user-data-in-usage-metrics"></a>Felhasználónkénti adatok a használati metrikákban
+
+Alapértelmezés szerint a felhasználónkénti adatok engedélyezve vannak a használati metrikákhoz, a tartalomfelhasználói fiókadatok pedig szerepelnek a metrikajelentésekben. Ha ezt az információt nem szeretné belefoglalni egyes felhasználók esetében, tiltsa le a funkciót megadott biztonsági csoportok, vagy a teljes szervezet számára. A fiókadatok ekkor *névtelenként* jelennek meg a jelentésben.
+
+![Felhasználónkénti használati adatok](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
+
+### <a name="delete-all-existing-usage-metrics-content"></a>Az összes meglévő használati metrikai tartalom törlése
+
+Ha letiltják a használati metrikákat az egész vállalat számára, a rendszergazdák az alábbi két lehetőség egyikét, vagy mindkettőt is kiválaszthatják:
+
+- Az **összes meglévő használati metrikai tartalom törlése** lehetőséggel törölni tudnak minden meglévő jelentést és irányítópult-csempét, amely a használati metrikai jelentések és adathalmazok használatával készült. Ezen a módon minden használati metrikai adat hozzáférhetetlenné válik a szervezet valamennyi felhasználója számára, akik esetleg már használják is azokat. 
+- Az **összes meglévő felhasználói adat törlése az aktuális használati metrikai tartalomban** lehetőséggel minden felhasználónkénti adat hozzáférhetetlenné válik a szervezet valamennyi felhasználója számára, akik esetleg már használják is azokat. 
+
+Fontolja meg ezt a lépést, mert a meglévő használati és felhasználónkénti metrikai tartalom törlése nem vonható vissza.
 
 ## <a name="users"></a>Felhasználók
 

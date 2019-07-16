@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: mblythe
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1bc9e0d5de909c5d0859b6d31185cf0cb27bda23
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7e9d8779480eb7a00dacfc9fc52fc81987629e7b
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136663"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791936"
 ---
 # <a name="using-incremental-refresh-with-power-bi-dataflows"></a>Növekményes frissítések használata Power BI-adatfolyamokkal
 
@@ -33,7 +33,7 @@ A növekményes frissítés Power BI-adatfolyamokkal történő használatához 
 
 Egy adatfolyam számos entitást tartalmazhat. A növekményes frissítés az entitások szintjén működik, egy adatfolyam így teljes mértékben frissített s növekményesen frissített entitásokat is tartalmazhat.
 
-Növekményesen frissített entitás beállításához először konfigurálnia kell az entitást, ahogyan azt egyébként is tenné. Állítsa be a adatfolyamot kapcsolatos további információkért lásd: [önkiszolgáló adat-előkészítési a Power bi-ban](service-dataflows-overview.md).
+Növekményesen frissített entitás beállításához először konfigurálnia kell az entitást, ahogyan azt egyébként is tenné. További információ az adatfolyamok beállításáról: [Önkiszolgáló adat-előkészítés a Power BI-ban](service-dataflows-overview.md).
 
 Az adatfolyam létrehozása és mentése után válassza a **növekményes frissítés** ikont az entitásnézetben, ahogyan azt a következő képen is láthatja:
 
@@ -96,7 +96,7 @@ Adatfolyam növekményesről teljes frissítésre váltásakor a növekményes f
 
 ## <a name="dataflow-incremental-refresh-and-datasets"></a>Adatfolyamok növekményes frissítése és adatkészletek
 
-Az adatfolyamok és az adatkészletek növekményes frissítése közös működéshez lett kialakítva. Igény szerint növekményesen frissítheti egy adatfolyam entitását, amelyet teljes mértékben egy adatkészletben tölt be, vagy egy adatfolyam teljes mértékben beöltött entitását, amelyet növekményesen tölt be egy adatkészletbe. 
+Az adatfolyamok és az adatkészletek növekményes frissítése közös működéshez lett kialakítva. Igény szerint növekményesen frissítheti egy adatfolyam entitását, amelyet teljes mértékben egy adathalmazba tölt be, vagy egy adatfolyam teljes mértékben beöltött entitását, amelyet növekményesen tölt be egy adathalmazba. 
 
 Mindkét módszernél a saját frissítési beállításdefinícióit használhatja.
 További információ a növekményes frissítésről: [Növekményes frissítés a Power BI Premium szolgáltatásban](service-premium-incremental-refresh.md).
@@ -156,8 +156,8 @@ Ez a cikk az adatfolyamok növekményes frissítését ismertette. Az alábbi ci
 
 * [Önkiszolgáló adatelőkészítés adatfolyamokkal](service-dataflows-overview.md)
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
-* [Adatfolyamok használata a helyszíni adatforrások](service-dataflows-on-premises-gateways.md)
-* [Fejlesztői erőforrások a Power BI-adatfolyamok](service-dataflows-developer-resources.md)
+* [Adatfolyamok használata helyszíni adatforrásokkal](service-dataflows-on-premises-gateways.md)
+* [Fejlesztői erőforrások Power BI-adatfolyamokhoz](service-dataflows-developer-resources.md)
 
 A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)

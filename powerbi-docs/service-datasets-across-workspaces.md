@@ -7,29 +7,29 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d893088978d7a412d0e005ca7b3280824974c76c
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 17a8e1c9e0d46a56d6b6ff3e46c0fda6da8ffe12
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816678"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567843"
 ---
 # <a name="use-datasets-across-workspaces-preview"></a>Adathalmazok használata több munkaterületen (előzetes verzió)
 
-Az üzleti intelligencia együttműködésen alapuló tevékenység. Fontos az egységes adathalmazok létrehozása, amelyek „egyetlen információforrásaként” használhatók. Sok múlik az ilyen egységes adathalmazok megismerésén és ismételt felhasználásán. Ha vállalata adatmodellező szakértői optimalizált adathalmazokat hoznak létre és osztanak meg, a jelentéskészítők ezekből az adathalmazokból kiindulva pontos jelentéseket készíthetnek. Így a vállalat egységes adatok alapján hozhat döntéseket, és megfelelő adatkultúrával fog rendelkezni.
+Az üzleti intelligencia együttműködésen alapuló tevékenység. Fontos az egységes adathalmazok létrehozása, amelyek „egyetlen információforrásaként” használhatók. Lényeges, hogy ez után ezeket a szabványosított adathalmazokat fedezze fel és hasznosítsa újra. Ha vállalata adatmodellező szakértői optimalizált adathalmazokat hoznak létre és osztanak meg, a jelentéskészítők ezekből az adathalmazokból kiindulva pontos jelentéseket készíthetnek. Így a vállalat egységes adatok alapján hozhat döntéseket, és megfelelő adatkultúrával fog rendelkezni.
 
 ![Megosztott adatkészlet kiválasztása](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-A Power BI egyszerűvé teszi az adathalmazok létrehozói számára az adathalmazok minősítését és megismertetését, hogy mások felfedezhessék azokat. A jelentéskészítők így minőségi, hivatalos adathalmazokra találhatnak, amelyeket bárhol felhasználhatnak a Power BI-ban. Az adathalmazok tulajdonosai az [összeállítási engedély](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) használatával szabályozhatják, hogy ki férhet hozzá az adataikhoz. A bérlői rendszergazdák egy új bérlői beállítással [szabályozhatják az adathalmazok több munkaterületen való felhasználását](service-datasets-admin-across-workspaces.md).
+A Power BI-ban az adathalmazok létrehozói *minősíthetik* vagy *meghirdethetik* az adathalmazokat, hogy mások felfedezhessék azokat. A jelentéskészítők ez alapján tudhatják, hogy melyek a jó minőségű és hivatalos adathalmazok, és ezeket használhatják mindahhoz, amit a Power BI-ban készítenek. Az adathalmazok tulajdonosai az [összeállítási engedély](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) használatával szabályozhatják, hogy ki férhet hozzá az adataikhoz. A bérlői rendszergazdák egy új bérlői beállítással [szabályozhatják az adathalmazok több munkaterületen való felhasználását](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Adathalmazok megosztása és az új munkaterületi felhasználói felület
 
 Az adathalmazokon alapuló jelentések különböző munkaterületeken végzett készítése és a jelentések munkaterületek közötti másolása szorosan összefügg az [új munkaterületi felhasználói felülettel](service-create-the-new-workspaces.md):
 
-- Amikor új munkaterületi felületen nyit meg adathalmaz-katalógust a szolgáltatásban, ebben a katalógusban csak a saját munkaterületén és az új felületű munkaterületeken lévő adathalmazok jelennek meg. 
+- Amikor új munkaterületi felületen nyit meg adathalmaz-katalógust a szolgáltatásban, ebben a katalógusban csak a saját munkaterületén és más új felületű munkaterületeken lévő adathalmazok jelennek meg. 
 - Ha az adathalmaz-katalógust klasszikus munkaterületről nyitja meg, csak az azon a munkaterületen lévő adathalmazok jelennek meg, a más munkaterületeken lévők nem.
 - Élő tartalmú jelentéseket tehet közzé a Desktopban, ha azok adathalmazai új felületű munkaterületeken vannak.
 - Jelentések munkaterületek közötti másolásakor a célmunkaterületnek új felületű munkaterületnek kell lennie.

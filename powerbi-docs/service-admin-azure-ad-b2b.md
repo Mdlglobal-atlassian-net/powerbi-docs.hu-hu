@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 2d1e9e32fcec67647bb75ac14ed872e6c51fef96
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cf384d8c346ddc3292699189bfe59f124e283f32
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65101809"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596501"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Power BI tartalmak terjesztése Azure AD B2B külső vendégfelhasználóknak
 
@@ -25,17 +25,17 @@ Emellett engedélyezheti külső vendégfelhasználóknak, hogy szerkesszék és
 
 ## <a name="enable-access"></a>Hozzáférés engedélyezése
 
-Ne feledje engedélyezni az [tartalom megosztása külső felhasználókkal](service-admin-portal.md#export-and-sharing-settings) funkció a Power BI felügyeleti portál vendégfelhasználók meghívása előtt.
+Vendégfelhasználók meghívása előtt mindenképpen engedélyezze a [Tartalom megosztása külső felhasználókkal](service-admin-portal.md#export-and-sharing-settings) funkciót a Power BI felügyeleti portálján.
 
-Is használhatja a [külső vendégfelhasználóknak szerkeszthetik és kezelhetik a szervezeten belüli tartalom engedélyezése](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) funkció. Lehetővé teszi, hogy melyik vendégfelhasználó tekintse meg, és a tartalom létrehozása a munkaterületeken, beleértve a szervezet a Power BI-böngészés válassza.
+Használhatja az [Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) funkciót is. Ezzel kijelölheti azokat a vendégfelhasználókat, akik megtekinthetnek és létrehozhatnak tartalmat a munkaterületeken, beleértve a vállalati Power BI tallózását.
 
 ## <a name="who-can-you-invite"></a>Kit lehet meghívni?
 
-Meghívhat vendégfelhasználókat bármely e-mail címmel, közöttük személyes fiókokkal például hotmail.com, gmail.com és Outlook.com-os. Az Azure AD B2B meghívja ezeket a címeket *közösségi identitások*.
+Bármilyen e-mail-címet, akár olyan személyes fiókot használó vendégfelhasználókat is meghívhat, mint a gmail.com, az outlook.com és a hotmail.com. Az Azure AD B2B szóhasználatával ezek a *közösségi identitások*.
 
 ## <a name="invite-guest-users"></a>Vendégfelhasználók meghívása
 
-Vendégfelhasználók csak szükség meghívók először felkéri őket a szervezet számára. Felhasználó meghívása kétféleképpen: tervezett szóló meghívásokról tájékoztató és ad-hoc meghívók.
+A vendégfelhasználóknak csak az első alkalommal van szükségük meghívóra, amikor meghívják őket a vállalathoz. Kétféleképpen hívhat meg felhasználót: tervezett meghívással vagy alkalmi meghívással.
 
 ### <a name="planned-invites"></a>Tervezett meghívások
 
@@ -45,13 +45,13 @@ Meghívó az Azure Portalon való küldéséhez kövesse az alábbi lépéseket.
 
 1. Az [Azure Portalon](https://portal.azure.com) válassza az **Azure Active Directory** lehetőséget.
 
-1. A **kezelés**válassza **felhasználók** > **minden felhasználó** > **új vendégfelhasználó**.
+1. A **Kezelés** szakaszban válassza a **Felhasználók** > **Minden felhasználó** > **Új vendégfelhasználó** elemet.
 
-    ![Képernyőkép az Azure Portalon, a Vendég felhasználó új lehetőség a kiemeltük.](media/service-admin-azure-ad-b2b/azure-ad-portal-new-guest-user.png)
+    ![Az Azure Portal képernyőképe az Új vendégfelhasználó beállítás kiemelésével.](media/service-admin-azure-ad-b2b/azure-ad-portal-new-guest-user.png)
 
 1. Adja meg az **e-mail-címet** és egy **személyes üzenetet**.
 
-    ![Képernyőkép az Azure AD Portal új vendégfelhasználó párbeszédpanelről.](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
+    ![Az Azure AD portál képernyőképe az Új vendégfelhasználó párbeszédpanellel.](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
 
 1. Kattintson a **Meghívás** lehetőségre.
 
@@ -59,84 +59,84 @@ Ha egynél több vendéget szeretne meghívni, használja a PowerShellt. Ha tov�
 
 A vendégfelhasználónak az e-mailben kapott meghívóban rá kell majd kattintania az **Első lépések** (Get Started) lehetőségre. A rendszer ezután hozzá fogja adni a vendégfelhasználót a bérlőhöz.
 
-![Képernyőfelvétel: a Vendég felhasználói e-mailes meghívót.](media/service-admin-azure-ad-b2b/guest-user-invite-email.png)
+![Vendégfelhasználó e-mailes meghívásának képernyőképe.](media/service-admin-azure-ad-b2b/guest-user-invite-email.png)
 
-### <a name="ad-hoc-invites"></a>Az ad hoc meghívások
+### <a name="ad-hoc-invites"></a>Alkalmi meghívás
 
-Egy külső felhasználó meghívása tetszőleges időpontban, adja hozzá őket az irányítópultjához vagy jelentéséhez a megosztási felületen, illetve az alkalmazásához a hozzáférési lapon. Az alábbi példán látható, hogy mi a teendő, amikor külső felhasználót hív meg egy alkalmazás használatára.
+Külső felhasználó meghívásához bármikor hozzáadhatja őt az irányítópultjához vagy jelentéséhez a megosztási felületen, illetve az alkalmazásához a hozzáférési lapon. Az alábbi példán látható, hogy mi a teendő, amikor külső felhasználót hív meg egy alkalmazás használatára.
 
-![A Power BI alkalmazás-hozzáférési listához hozzáadott képernyőképen külső felhasználó.](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
+![Képernyőkép külső felhasználó alkalmazás-hozzáférési listára való felvételéről a Power BI-ban.](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
 
-A vendégfelhasználó fog kapni egy e-mailt, amely azt jelzi, hogy az alkalmazás velük megosztott.
+A vendégfelhasználó e-mailt fog kapni, amely tudatja, hogy Ön megosztotta vele az alkalmazást.
 
-![Képernyőkép az e-mailben vendégfelhasználóval megosztott alkalmazásról](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
+![Vendégfelhasználóval megosztott alkalmazásról szóló e-mail képernyőképe](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
 
-A vendégfelhasználónak a céges e-mail-címével kell bejelentkeznie. Fogadja el a meghívást, a bejelentkezést követően felszólítást kap. Bejelentkezés után az alkalmazás megnyílik a meghívott felhasználónak. Ahhoz, hogy később visszaléphessen az alkalmazásba, könyvjelzőzheti a hivatkozást vagy elmentheti az e-mailt.
+A vendégfelhasználónak a céges e-mail-címével kell bejelentkeznie. Bejelentkezés után a rendszer kérni fogja a meghívó elfogadását. Bejelentkezés után az alkalmazás megnyílik a vendégfelhasználó számára. Ahhoz, hogy később visszaléphessen az alkalmazásba, könyvjelzőzheti a hivatkozást vagy elmentheti az e-mailt.
 
 ## <a name="licensing"></a>Licencelés
 
-A meghívott felhasználónak rendelkeznie kell a megfelelő licencre megosztott tartalmak megtekintéséhez. Győződjön meg arról, hogy a megfelelő licenccel rendelkező három módja van: a Power BI Premium használja, a Power BI Pro licenc hozzárendelése vagy a Vendég a Power BI Pro-licenccel.
+A vendégfelhasználónak megfelelő licenccel kell rendelkeznie ahhoz, hogy megtekinthesse a megosztott tartalmat. Három módon biztosítható, hogy a felhasználó megfelelő licenccel rendelkezzen: a Power BI Premium használata, egy Power BI Pro-licenc hozzárendelése a felhasználóhoz, vagy a vendég saját Power BI Pro- licencének használata.
 
 Az [Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) funkció használatakor a munkaterületekhez tartalmat adó vagy másokkal tartalmat megosztó vendégfelhasználóknak Power BI Pro-licencre van szüksége.
 
 ### <a name="use-power-bi-premium"></a>Prémium szintű Power BI használata
 
-Az alkalmazás-munkaterületét a [Power BI Premium-kapacitás](service-premium-what-is.md) lehetővé teszi, hogy a meghívott felhasználónak az alkalmazás használata a Power BI Pro-licenc nélkül. A Power BI Premium is lehetővé teszi alkalmazások, például a nagyobb gyakoribb frissítéseket, dedikált kapacitást és nagy modellméretet egyéb képességek előnyeit.
+Ha az alkalmazás munkaterületét [Power BI Premium-kapacitáshoz](service-premium-what-is.md) rendeli, a vendégfelhasználó Power BI Pro-licenc nélkül is használhatja az alkalmazást. A Power BI Premium az alkalmazások tekintetében további előnyöket, például gyakoribb frissítéseket, dedikált kapacitást és nagy modellméretet biztosít.
 
-![Vendég felhasználói élmény a Power BI Premium diagramja.](media/service-admin-azure-ad-b2b/license-approach-1.png)
+![Vendégfelhasználói felület ábrája a Power BI Premiummal.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
 ### <a name="assign-a-power-bi-pro-license-to-guest-user"></a>Power BI Pro-licenc hozzárendelése a vendégfelhasználóhoz
 
-Power BI Pro-licenc hozzárendelése a vendégfelhasználóhoz a bérlőn belül való lehetővé teszi, hogy a Vendég felhasználói tartalom megtekintése a bérlőben.
+Ha a vendégfelhasználóhoz Power BI Pro-licencet rendel a bérlőben, a vendégfelhasználó meg tudja tekinteni a bérlőben lévő tartalmat.
 
-![Rendelje hozzá a Pro-licenccel rendelkező Vendég felhasználói élmény diagramja.](media/service-admin-azure-ad-b2b/license-approach-2.png)
+![Vendégfelhasználói felület ábrája a bérlőből hozzárendelt Pro-licenccel.](media/service-admin-azure-ad-b2b/license-approach-2.png)
 
 ### <a name="guest-user-brings-their-own-power-bi-pro-license"></a>A vendégfelhasználók hozzák saját Power BI Pro-licencüket
 
 A vendégfelhasználó saját bérlőjén már rendelkezik Power BI Pro-licenccel.
 
-![Vendég felhasználói élményt, amikor azok a saját licenc használata diagramja.](media/service-admin-azure-ad-b2b/license-approach-3.png)
+![Vendégfelhasználói felület ábrája saját licenc használata esetén.](media/service-admin-azure-ad-b2b/license-approach-3.png)
 
 ## <a name="guest-users-who-can-edit-and-manage-content"></a>Tartalom szerkesztésére és kezelésére jogosult vendégfelhasználók 
 
-Használatakor a [külső vendégfelhasználóknak szerkeszthetik és kezelhetik a szervezeten belüli tartalom engedélyezése](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) funkció, a megadott vendég felhasználók is hozzáférhetnek a szervezet Power bi-bA. Megjelenik az bármilyen tartalmat, amely engedéllyel rendelkeznek. Megtekinthetik kezdőlap eléréséhez, keresse meg a munkaterületek, alkalmazások telepítése, hogy hol vannak a hozzáférési listán, és munkaterületek tartalmat közreműködőként. Létrehozhatnak olyan munkaterületeket, illetve ezek rendszergazdái lehetnek, amelyek az új munkaterületi felületet alkalmazzák. Bizonyos korlátozások érvényesek. A szempontok és korlátozások szakaszban korlátozások listája.
+Az [Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) funkció használatakor a megadott vendégfelhasználók hozzáférést kapnak a vállalati Power BI-hoz. Bármilyen tartalmat megtekinthetnek, amelyre jogosultak. Hozzáférhetnek a kezdőlaphoz, böngészhetnek a munkaterületek között, alkalmazásokat telepíthetnek, megtekinthetik azok helyét a hozzáférési listán, és tartalmakkal bővíthetik a munkaterületeket. Létrehozhatnak olyan munkaterületeket, illetve ezek rendszergazdái lehetnek, amelyek az új munkaterületi felületet alkalmazzák. Bizonyos korlátozások érvényesek. Ezeket a Szempontok és korlátozások szakasz sorolja fel.
  
-Annak érdekében, jelentkezzen be a Power BI ezeket a felhasználókat, adja meg azokat a bérlői URL-címet. A bérlői URL-cím megkereséséhez kövesse az alábbi lépéseket.
+Ha elő szeretné segíteni ezen felhasználók könnyebb bejelentkezését a Power BI szolgáltatásba, ossza meg velük a bérlői URL-címet. A bérlői URL-cím megkereséséhez kövesse az alábbi lépéseket.
 
 1. A Power BI szolgáltatásban a felső menüből válassza ki a Súgó ( **?** ), majd **A Power BI bemutatása** lehetőséget.
 
-2. A **Bérlői URL-cím** melletti értékre van szüksége. A bérlői URL-címet, megoszthatja a vendégfelhasználók értéke.
+2. A **Bérlői URL-cím** melletti értékre van szüksége. Ez az érték a bérlői URL-cím, amelyet megoszthat a vendégfelhasználókkal.
 
-    ![Képernyőfelvétel: a Power BI névjegye párbeszédpanel a Vendég felhasználó bérlői URL-cím kiemeltük.](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
+    ![Képernyőkép a Power BI Névjegy párbeszédpaneljéről a vendégfelhasználói bérlői URL-cím kiemelésével.](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
-* Alapértelmezés szerint a külső Azure AD B2B korlátozza a tartalomhoz csak a vendégek. Külső Azure AD B2B-vendégek megtekintheti az alkalmazásokat, irányítópultokat, jelentéseket, adatok exportálása és e-mailes feliratkozások irányítópultok és jelentések készítése. Nem férhetnek hozzá azonban munkaterületekhez, és nem tehetik közzé saját tartalmaikat. Azonban nem vonatkoznak ezek a korlátozások vendégfelhasználók számára keresztül hozzáférhet a [külső vendégfelhasználóknak szerkeszthetik és kezelhetik a szervezeten belüli tartalom engedélyezése](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) funkció.
+* A vendégeknek a külső Azure AD B2B alapértelmezés szerint csak olvasási jogosultságot ad a tartalomhoz. A külső Azure AD B2B-vendégek megtekinthetnek alkalmazásokat, irányítópultokat, jelentéseket, illetve adatokat exportálhatnak, és irányítópultokhoz és jelentésekhez kapcsolódó e-mail-értesítéseket hozhatnak létre. Nem férhetnek hozzá azonban munkaterületekhez, és nem tehetik közzé saját tartalmaikat. Ezek a korlátozások azonban nem vonatkoznak azokra a vendégfelhasználókra, akik az [Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) funkcióval kaptak hozzáférést.
 
-* A vendégfelhasználók számára keresztül engedélyezhető a [külső vendégfelhasználóknak szerkeszthetik és kezelhetik a szervezeten belüli tartalom engedélyezése](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) funkció, bizonyos elemek nem érhetők el hozzájuk. Jelentések frissítéséhez vagy közzétételéhez nekik a Power BI szolgáltatás webes felületét kell használniuk, így a Power BI Desktop-fájlok feltöltéséhez az Adatok lekérése lehetőséget.  A következő funkciókat nem támogatottak:
+* Az [Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) funkcióval engedélyezett vendégfelhasználók számára egyes elemek nem elérhetők. Jelentések frissítéséhez vagy közzétételéhez nekik a Power BI szolgáltatás webes felületét kell használniuk, így a Power BI Desktop-fájlok feltöltéséhez az Adatok lekérése lehetőséget.  Az alábbi használati módok nem támogatottak:
     * Közvetlen közzététel a Power BI Desktopból a Power BI szolgáltatásba
-    * Vendégfelhasználók nem csatlakozhat a Power BI desktop szolgáltatás adatkészleteket a Power BI szolgáltatásban
+    * A vendégfelhasználók nem csatlakozhatnak a Power BI szolgáltatás szolgáltatói adathalmazaihoz a Power BI Desktoppal
     * Office 365-csoportokhoz kötött klasszikus munkaterületek:
-        * A vendégfelhasználók nem hozhatók létre, és ezek a munkaterületek rendszergazdái lehet
-        * Vendég felhasználók is lehetnek tagjai
-    * Ad-hoc meghívók küldését munkaterület hozzáférés listák esetében nem támogatott
-    * Excelhez készült Power BI Publisher nem támogatott a vendégfelhasználók számára
-    * Vendégfelhasználók nem tudja telepíteni a Power BI Gateway, és csatlakoztassa a szervezet
-    * Vendég felhasználók nem telepíthetnek alkalmazásokat közzétenni a teljes szervezet számára
-    * Vendégfelhasználók nem használja, létrehozása, frissítése vagy telepítése vállalati tartalomcsomagok
-    * Vendég felhasználók nem használhatnak az elemzés az Excelben
-    * Nem lehet a vendégfelhasználók @mentioned a megjegyzéseket
-    * Vendég felhasználók nem használhatják az előfizetéseket
-    * Azon vendégfelhasználóknak, akik ezt a funkciót veszik igénybe, munkahelyi vagy iskolai fiókkal kell rendelkezniük. Személyes fiókot használó vendégfelhasználókat tapasztalható további korlátozások miatt a korlátozások bejelentkezni.
+        * A vendégfelhasználók nem hozhatnak létre ilyen munkaterületeket, és nem lehetnek ezek rendszergazdái
+        * A vendégfelhasználók lehetnek tagok
+    * Alkalmi meghívók küldése munkaterület-hozzáférési listák esetén nem támogatott
+    * Az Excelhez készült Power BI Publisher vendégfelhasználók esetén nem támogatott
+    * A vendégfelhasználók nem telepíthetik a Power BI Gateway szolgáltatást, és nem csatlakoztathatják az Ön vállalatához
+    * A vendégfelhasználók nem telepíthetnek alkalmazásokat, és nem tehetnek közzé tartalmakat a teljes vállalat számára
+    * A vendégfelhasználók nem használhatnak, hozhatnak létre, frissíthetnek vagy telepíthetnek vállalati tartalomcsomagokat
+    * A vendégfelhasználók nem használhatják az Elemzés az Excelben funkciót
+    * A vendégfelhasználók nem szerepelhetnek @mentioned minőségben a megjegyzésekben
+    * A vendégfelhasználók nem használhatnak feliratkozásokat
+    * Azon vendégfelhasználóknak, akik ezt a funkciót veszik igénybe, munkahelyi vagy iskolai fiókkal kell rendelkezniük. A személyes fiókkal rendelkező vendégfelhasználók további bejelentkezési korlátozásokat tapasztalhatnak.
 
-* Ez a funkció jelenleg nem érhető el a Power BI SharePoint Online jelentéskijelzővel.
+* Ez a funkció a Power BI SharePoint Online-jelentés kijelzőjéhez jelenleg nem érhető el.
 
-* Nincsenek külső vendég felhasználók mit tehetnek a teljes szervezetben korlátozni tudja Active Directory-beállítások. Amely a a Power BI-környezetbe is vonatkozik. Ezeket a beállításokat a következő dokumentáció ismerteti:
-    * [Külső együttműködési beállítások kezelése](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations#control-who-can-invite)
+* Egyes Active Directory-beállítások, az egész vállalaton belül korlátozhatják a külső vendégfelhasználók jogosultságait. Ezek a Power BI-környezetre is vonatkoznak. Ezeket a beállításokat a következő dokumentáció ismerteti:
+    * [Külső együttműködési beállítások kezelése](/azure/active-directory/b2b/delegate-invitations#configure-b2b-external-collaboration-settings)
     * [Adott szervezetek B2B-felhasználók felé irányuló meghívásainak engedélyezése vagy letiltása](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)  
 
 ## <a name="next-steps"></a>Következő lépések
 
-További részletes információ, beleértve a sorszintű biztonság működik tekintse meg a tanulmány megnyitása: [Power BI-tartalmak terjesztése Azure AD B2B külső vendégfelhasználóinak](https://aka.ms/powerbi-b2b-whitepaper).
+Ha részletesebb információkra van szüksége például a sorszintű adatvédelem működésével kapcsolatban, olvassa el ezt a tanulmányt: [Power BI-tartalmak terjesztése Azure AD B2B külső vendégfelhasználóinak](https://aka.ms/powerbi-b2b-whitepaper).
 
-Az Azure AD B2B kapcsolatos információkért lásd: [Mi az Azure AD B2B együttműködés?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).
+Az Azure AD B2B szolgáltatással kapcsolatos további információt a [Mi az Azure AD B2B-csoportmunka?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/) című cikkben találhat.
