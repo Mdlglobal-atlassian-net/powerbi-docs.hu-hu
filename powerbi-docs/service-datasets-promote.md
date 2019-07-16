@@ -7,21 +7,21 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 366f80ccb1db2d226a80528da610b15082c44ed6
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 681cd9f65713738e2b842bfa3404511f9e3a98f4
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461373"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567358"
 ---
 # <a name="promote-your-dataset-preview"></a>Adathalmaz meghirdetése (előzetes verzió)
 
 Lehetséges, hogy a Power BI-jelentéskészítők jelenleg számos különböző adathalmazhoz férnek hozzá, ezért a vállalatoknak kell a megbízható, jó minőségű adathalmazokhoz irányítania őket. A Power BI két módot kínál az adathalmazok *támogatására*:
 
-- **Meghirdetés**: Mint adathalmaz-tulajdonos, meghirdetheti adathalmazait, amikor azok készen állnak a széles körű felhasználásra. A meghirdetés elősegíti az adathalmazok együttműködési célú terjesztését a vállalatnál. Ez a cikk az adathalmazok meghirdetését ismerteti.
+- **Meghirdetés**: Mint adathalmaz-tulajdonos, meghirdetheti adathalmazait, amikor azok készen állnak a széles körű felhasználásra. Egy adathalmazt a munkaterület minden írás engedéllyel rendelkező tagja meghirdethet. Nem vonatkoznak korlátozások arra, hogy ki hirdethet meg egy adathalmazt. A meghirdetés elősegíti az adathalmazok együttműködési célú terjesztését a vállalatnál. Ez a cikk az adathalmazok meghirdetését ismerteti.
 - **Minősítés**: Kérheti egy meghirdetett adathalmaz minősítését. Az **Adathalmaz-minősítés** bérlői rendszergazdai beállítás által meghatározott szűk felhasználói csoport dönti el, hogy mely adatbázisok lesznek minősítve. További információ: [Adathalmazok minősítése (előzetes verzió)](service-datasets-certify.md).
 
 ## <a name="promote-a-dataset"></a>Adathalmaz meghirdetése

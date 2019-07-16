@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e790afee5b57b73a756ca3c1afd564b00e778186
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 915fb9d10b69142621554f29a7fd77e7a41932e5
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461327"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567337"
 ---
 # <a name="certify-datasets-preview"></a>Adathalmazok minősítése (előzetes verzió)
 
@@ -23,8 +23,8 @@ Vállalata minősítheti azokat az adathalmazokat, amelyek a kritikus fontosság
 
 Lehetséges, hogy a Power BI-felhasználók jelenleg számos különböző adathalmazhoz férnek hozzá, ezért a vállalatoknak kell a megbízható, jó minőségű adathalmazokhoz irányítania őket. A Power BI két módot kínál az adathalmazok *támogatására*:
 
-- **Meghirdetés**: Az adathalmaz-tulajdonosok meghirdethetik adathalmazaikat, amikor azok készen állnak a széles körű felhasználásra. Részleteket az [Adathalmaz meghirdetése](service-datasets-promote.md) című cikkben talál. 
-- **Minősítés**: Az adathalmaz-tulajdonosok kérhetik a meghirdetett adathalmazok minősítését. Az **Adathalmaz-minősítés** bérlői rendszergazdai beállítás által meghatározott szűk felhasználói csoport dönti el, hogy mely adatbázisok lesznek minősítve.
+- **Meghirdetés**: Az adathalmaz-tulajdonosok és egy munkaterületen belül mások is meghirdethetik adathalmazaikat, amikor azok készen állnak a széles körű felhasználásra. Részleteket az [Adathalmaz meghirdetése](service-datasets-promote.md) című cikkben talál. 
+- **Minősítés**: Az adathalmaz-tulajdonosok kérhetik a meghirdetett adathalmazok minősítését. Az **Adathalmaz-minősítés** bérlői rendszergazdai beállítás által meghatározott szűk felhasználói csoport dönti el, hogy mely adatbázisok lesznek minősítve. Az adathalmaz minősítőjének neve elemleírásban jelenik meg az adathalmazok felderítési felületén. Akkor látható, ha a kurzort a **Minősített** címkére viszik.
 
 ## <a name="certify-a-dataset"></a>Adathalmaz minősítése
 

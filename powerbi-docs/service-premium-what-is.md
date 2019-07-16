@@ -8,28 +8,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 07/06/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1c2f867140c5a717c80d39db75b3a54e40bd1e34
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 21518d2c5160c8e5a696c193d3d6f4d352a02271
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721050"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596535"
 ---
 # <a name="what-is-power-bi-premium"></a>Mi az a Power BI Premium?
 
 A Power BI Premium dedikált és továbbfejlesztett erőforrásokat biztosít vállalata számára a Power BI szolgáltatás futtatásához. Például:
 
-- Nagyobb méretek és teljesítmény
-- A kapacitás szerinti licencelés rugalmassága
-- Az önkiszolgáló és a nagyvállalati üzleti intelligencia egységesítése
-- A helyszíni jelentéskészítés kiterjesztése a Power BI jelentéskészítő kiszolgálóval
-- Régiónkénti adattárolás (Multi-Geo) támogatása
-- Adatok megosztása bárkivel, felhasználónkénti licencek vásárlása nélkül
+> [!div class="checklist"]
+> * Nagyobb méretek és teljesítmény
+> * A kapacitás szerinti licencelés rugalmassága
+> * Az önkiszolgáló és a nagyvállalati üzleti intelligencia egységesítése
+> * A helyszíni jelentéskészítés kiterjesztése a Power BI jelentéskészítő kiszolgálóval
+> * Régiónkénti adattárolás (Multi-Geo) támogatása
+> * Adatok megosztása bárkivel, felhasználónkénti licencek vásárlása nélkül
 
-Ennek a cikknek nem célja a Power BI Premium minden funkciójának részletes bemutatása – inkább csak átfogó képet nyújt. Ahol szükséges, megadjuk a részletesebb információkat nyújtó cikkekre mutató hivatkozásokat.
+Ez a cikk a Power BI Premium fő funkcióit ismerteti. Ahol szükséges, megadjuk a részletesebb információkat nyújtó cikkekre mutató hivatkozásokat.
 
 ## <a name="subscriptions-and-licensing"></a>Előfizetések és licencelés
 
@@ -52,7 +53,7 @@ Power BI Premium-előfizetéseket rendszergazdák szerezhetnek be a Microsoft 36
 
 A Power BI Premiummal *dedikált kapacitások* járnak. Ellentétben a megosztott kapacitásokkal, ahol a számítási feladatok más ügyfelekkel megosztott erőforrásokon futnak, egy dedikált kapacitást kizárólag a vállalat használhat. El van különítve, és dedikált számítási erőforrásokkal nyújt megbízható és állandó teljesítményt az üzemeltetett tartalomhoz. 
 
-A munkaterületek a kapacitásokon belül helyezkednek el. Minden Power BI-felhasználó rendelkezik **Saját munkaterülettel**. Az együttműködéshez és a fejlesztéshez további munkaterületek is létrehozhatók, ezeket **Alkalmazás-munkaterületeknek** nevezzük. Alapértelmezés szerint a munkaterületek, így a személyes munkaterületek is a megosztott kapacitásban lesznek létrehozva. Prémium szintű kapacitások esetén a saját munkaterületek és az alkalmazás-munkaterületek is prémium szintű kapacitásokhoz rendelhetők.
+A munkaterületek a kapacitásokon belül helyezkednek el. Minden Power BI-felhasználó rendelkezik **Saját munkaterülettel**. Az együttműködéshez további munkaterületek, úgynevezett **alkalmazás-munkaterületek** is létrehozhatók. Alapértelmezés szerint a munkaterületek, így a személyes munkaterületek is a megosztott kapacitásban lesznek létrehozva. Prémium szintű kapacitások esetén a saját munkaterületek és az alkalmazás-munkaterületek is prémium szintű kapacitásokhoz rendelhetők.
 
 ### <a name="capacity-nodes"></a>Kapacitás-csomópontok
 
@@ -102,7 +103,7 @@ Az importált modellek ezért a használatnak megfelelően vannak betöltve a me
 
 A modell memóriából való eltávolítását *kiürítésnek* nevezzük. Ezt a műveletet a Power BI gyorsan el tudja végezni, a modellek méretétől függően. Ha a kapacitásban nem lép fel memóriahiány, akkor a modellek egyszerűen be lesznek töltve a memóriába, és ott maradnak. Ha azonban nem áll rendelkezésre elég memória egy modell betöltéséhez, a Power BI szolgáltatásnak először memóriát kell felszabadítania. A memória felszabadításához az inaktívvá vált modelleket észleli olyan modellek keresésével, amelyek az utolsó három percben \[[1](#endnote-1)\] nem voltak használatban, majd kiüríti ezeket. Ha nincsenek kiüríthető inaktív modellek, akkor a Power BI szolgáltatás a háttérbeli műveletekhez betöltött modellek kiürítésére törekszik. Végső megoldásként, 30 másodperc sikertelen próbálkozás után \[[1](#endnote-1)\] az interaktív művelet sikertelenül zárul. Ilyen esetben a jelentés felhasználója értesítést kap a hibáról azzal a javaslattal, hogy rövid idő múlva próbálkozzon újra. Egyes esetekben a modellek szolgáltatási műveletek miatt lehetnek eltávolítva a memóriából.
 
-Hangsúlyozandó, hogy az adathalmazok kiürítése normális és elvárt viselkedés. A célja a memória maximális kihasználása olyan modellek betöltésével és eltávolításával, amelyek együttes mérete meghaladja a rendelkezésre álló memóriáét. Ez szándékos, és teljesen átlátható a jelentésfelhasználók számára. A kiürítések magas számából nem feltétlenül következik, hogy a kapacitás nem rendelkezik elegendő erőforrással. Azonban aggodalomra adhat okot akkor, ha a lekérdezések vagy a frissítések válaszkészsége csökken a sok kiürítés miatt.
+Hangsúlyozandó, hogy az adathalmazok kiürítése normális és elvárt viselkedés. A célja a memória maximális kihasználása olyan modellek betöltésével és eltávolításával, amelyek együttes mérete meghaladja a rendelkezésre álló memóriáét. Ez szándékos, és átlátható a jelentésfelhasználók számára. A kiürítések magas számából nem feltétlenül következik, hogy a kapacitás nem rendelkezik elegendő erőforrással. Azonban aggodalomra adhat okot akkor, ha a lekérdezések vagy a frissítések válaszkészsége csökken a sok kiürítés miatt.
 
 Az importált modellek frissítésének mindig nagy a memóriaigénye, mivel a modelleket be kell tölteni a memóriába. A feldolgozáshoz további memóriára van szükség. Egy teljes frissítés a modell számára szükséges memória mintegy kétszeresét is felhasználhatja. Ez biztosítja, hogy a modell a feldolgozás ideje alatt is lekérdezhető legyen, a lekérdezések ugyanis a meglévő modellhez lesznek küldve a frissítés befejezéséig, amikor az új modell adatai elérhetővé válnak. A növekményes frissítés kevesebb memóriát igényel, és gyorsabban befejeződhet, így jelentősen csökkenheti a kapacitás erőforrásainak terhelését. A modellek frissítése CPU-igényes is lehet, különösen azoknál, amelyek összetett Power Query-transzformációkat vagy olyan számított táblákat/oszlopokat tartalmaznak, amelyek összetettek vagy nagy táblákon alapulnak.
 
@@ -175,7 +176,7 @@ A következő táblázatban a különböző méretű .pbix-fájlokhoz ajánlott 
    |P2    | < 6 GB        |
    |P3, P4, P5    | legfeljebb 10 GB   |
 
-A Power BI Embedded A4 termékváltozata a P1 SKU-val, az A5 a P2-vel, az A6 pedig a P3-mal egyezik meg. Fontos tudni, hogy nagy modellek A és EM SKU-kba való közzététele olyan hibát eredményezhet, amely nem a megosztott kapacitásbeli modellméret-korlátozási hibával függ össze. Nagy modellek A és EM SKU-kban fellépő frissítési hibái feltehetően időtúllépésre utalnak. 
+A Power BI Embedded A4 termékváltozata a P1 SKU-val, az A5 a P2-vel, az A6 pedig a P3-mal egyezik meg. Nagy modellek A és EM SKU-kba való közzététele olyan hibát eredményezhet, amely nem a megosztott kapacitásbeli modellméret-korlátozási hibával függ össze. Nagy modellek A és EM SKU-kban fellépő frissítési hibái feltehetően időtúllépésre utalnak. 
 
 A .pbix-fájlok *nagy mértékben tömörített állapotban* tartalmazzák az adatokat. Az adatok mérete valószínűleg többszörösére fog nőni a memóriába való betöltéskor, és ehhez képest is a többszörösére nőhet az adatok frissítése során.
 
