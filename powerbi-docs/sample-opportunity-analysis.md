@@ -7,121 +7,135 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/20/2018
+ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 7f7b9d09b3761a5a02bdf4f706c6470b7d8cf2b6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 41d35eb9e078a63e499bb65dead05fe7dbbc2985
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61231291"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791876"
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Lehetőségelemzési minta a Power BI-hoz: Bemutató megtekintése
 
-## <a name="overview-of-the-opportunity-analysis-sample"></a>A Lehetőségelemzési minta áttekintése
-A **Lehetőségelemzési minta** egy olyan szoftvercég irányítópultját (és ahhoz kapcsolódó jelentését) tartalmazza, amely 2 értékesítési csatornával rendelkezik: egy *közvetlen-* és egy *partnercsatornával*. Ezt az irányítópultot az értékesítési vezető azért hozta létre, hogy követni lehessen vele az üzleti lehetőségeket és a bevételeket a régiók, az ügylet mérete és a csatorna szerinti eloszlásban.
+A Lehetőségelemzési minta tartalomcsomag egy két értékesítési csatornával: *közvetlen* és *partnercsatornával* rendelkező szoftvervállalathoz tartozó irányítópultot, jelentést és adathalmazt tartalmaz. Ezt az irányítópultot az értékesítési vezető hozta létre, hogy követni lehessen vele az üzleti lehetőségeket és a bevételeket a régiók, az ügylet mérete és a csatorna szerinti eloszlásban.
 
-Az értékesítési vezető a bevétel tekintetében két adatra támaszkodik:
+A minta két bevételi mértékre támaszkodik:
 
-* **Bevétel** – A bevétel értékesítő által becsült összege.
-* **Faktorált bevétel** – Bevétel X valószínűségi % képlettel számított érték. Általánosan elfogadott, hogy ez az érték pontosabb előrejelzést ad a ténylegesen várható értékesítési bevételről. A valószínűséget az határozza meg, hogy az ügylet melyik ***Értékesítési szakasznál*** tart.
-  * Lead (Érdeklődés) ‒ 10%  
-  * Qualify (Minősített) – 20%  
-  * Solution (Megoldás kiválasztása) – 40%  
-  * Proposal (Ajánlattétel) – 60%  
-  * Finalize (Véglegesítés) – 80%
+* Bevétel: A várható bevétel értékesítői becslése.
+* Faktorált bevétel: Bevétel X valószínűségi % képlettel számított érték, amelyről elfogadott, hogy pontosabb előrejelzést ad a ténylegesen várható értékesítési bevételről. A valószínűséget az határozza meg, hogy az ügylet melyik *Értékesítési szakasznál* tart:
+  * Érdeklődés: 10%  
+  * Minősítés: 20%  
+  * Megoldás: 40%  
+  * Ajánlattétel: 60%  
+  * Véglegesítés: 80%
 
-  ![](media/sample-opportunity-analysis/opportunity1.png)
+![A Lehetőségelemzési minta irányítópultja](media/sample-opportunity-analysis/opportunity1.png)
 
-Ez a minta egy olyan sorozat részét képezi, amely bemutatja, hogyan használhatja a Power BI-t üzleti adatokkal, jelentésekkel és irányítópultokkal. Az adatok az obviEnce-től ([www.obvience.com](http://www.obvience.com/)) származó valós, de anonimizált adatok.
+Ez a minta abba a sorozatba tartozik, amely a Power BI üzleti jellegű adatokkal, jelentésekkel, és irányítópultokkal történő használatát mutatja be. Az [obviEnce](http://www.obvience.com/)-től származó valós adatokkal lett létrehozva, melyeket anonimizáltunk. Az adatok többféle formátumban: tartalomcsomagként, .pbix kiterjesztésű Power BI Desktop-fájlként és Excel-munkafüzetként is elérhetők. [Power BI-minták](sample-datasets.md) megtekintése. 
 
-## <a name="prerequisites"></a>Előfeltételek
+Ebben az oktatóanyagban a Power BI szolgáltatásban vizsgáljuk meg a Lehetőségelemzési minta tartalomcsomagot. Mivel azonban a jelentéssel való munka hasonló a Power BI Desktopban és a szolgáltatásban, a bemutatót akkor is követni tudja, ha a .pbix-mintafájlt a Power BI Desktopban használja. 
 
- Használat előtt a mintát [tartalomcsomagként](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample), [.pbix-fájlként](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix) vagy [Excel-munkafüzetként](http://go.microsoft.com/fwlink/?LinkId=529782) le kell töltenie.
+A minták Power BI Desktopban való vizsgálatához nincs szükség Power BI-licencre. Ha nem rendelkezik Power BI Pro-licenccel, a mintát a Saját munkaterületre mentheti a Power BI szolgáltatásban. 
+
+## <a name="get-the-sample"></a>A minta beszerzése
+
+Használat előtt a mintát [tartalomcsomagként](#get-the-content-pack-for-this-sample), [.pbix-fájlként](#get-the-pbix-file-for-this-sample) vagy [Excel-munkafüzetként](#get-the-excel-workbook-for-this-sample) le kell töltenie.
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Tartalomcsomag letöltése ehhez a mintához
 
-1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), és jelentkezzen be.
+1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), jelentkezzen be, majd nyissa meg azt a munkaterületet, ahol a mintát szeretné menteni. 
+
+    Ha nem rendelkezik Power BI Pro-licenccel, a mintát a Saját munkaterületre mentheti.
+
 2. A bal alsó sarokban válassza az **Adatok lekérése** lehetőséget.
-   
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. Ekkor megjelenik az Adatok lekérése lap. Itt kattintson a **Minták** ikonra.
-   
-   ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Válassza a **Lehetőségelemzési mintát**, majd a **Kapcsolódás** lehetőséget.  
-  
-   ![Adatok beolvasása](media/sample-opportunity-analysis/opportunity-connect.png)
-   
-5. A Power BI importálja a tartalomcsomagot, és egy új irányítópultot, jelentést és adatkészletet ad hozzá az aktuális munkaterülethez. Az új tartalmakat sárga csillag jelöli. 
-   
-   ![Csillag](media/sample-opportunity-analysis/opportunity-asterisk.png)
-  
+
+    ![Az Adatok beolvasása lehetőség kiválasztása](media/sample-datasets/power-bi-get-data.png)
+3. Ekkor megjelenik az **Adatok lekérése** lap. Itt válassza a **Minták** lehetőséget.
+
+4. Válassza a **Lehetőségelemzési minta** elemet, majd a **Kapcsolódás** lehetőséget.  
+
+   ![Csatlakozás mintához](media/sample-opportunity-analysis/opportunity-connect.png)
+5. A Power BI importálja a tartalomcsomagot, és egy új irányítópultot, jelentést és adathalmazt ad hozzá az aktuális munkaterülethez.
+
+   ![Lehetőségelemzési minta listaelem](media/sample-opportunity-analysis/opportunity-entry.png)
+
 ### <a name="get-the-pbix-file-for-this-sample"></a>.pbix-fájl letöltése ehhez a mintához
 
-Lehetőség van a mintát .pbix-fájlként is letölteni, amelyet a Power BI Desktoppal való használatra terveztek. 
-
- * [Lehetőségelemzési minta](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
+Az Lehetőségelemzési mintát a Power BI Desktoppal való használatra tervezett [.pbix-fájlként](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix) is letöltheti.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Excel-munkafüzet letöltése ehhez a mintához
-Letöltheti [kizárólag a minta adatkészletét (Excel-munkafüzetét) is](http://go.microsoft.com/fwlink/?LinkId=529782). A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatokat a **Power Pivot > Kezelés** lehetőségre kattintva nézheti meg.
 
+Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](http://go.microsoft.com/fwlink/?LinkId=529782) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Mi olvasható le az irányítópultról?
-Az irányítópultot az értékesítési vezető azért hozta létre, hogy nyomon követhesse a számára legfontosabb mutatókat. Ha észrevesz valami érdekeset, az adott csempére kattintva le tud hatolni a mélyebb adatszintekre.
+Az irányítópultot az értékesítési vezető azért hozta létre, hogy nyomon követhesse a számára legfontosabb mutatókat. Amint észrevesz valami érdekeset, a vezető az adott csempére kattintva megtekintheti az adatokat:
 
-1. A vállalati bevétel 2 milliárd dollár, a faktorált bevétel pedig 461 millió dollár.
-2. Az üzleti lehetőségek száma és a bevétel a jól ismert tölcsér mintát követik, vagyis az összesített értékek értékesítési szakaszonként csökkenő tendenciát mutatnak.
-3. A legtöbb üzleti lehetőség a keleti (East) régióban van.
-4. A nagyobb üzleti lehetőségek több bevételt generálnak, mint a közepes, vagy a kis lehetőségek.
-5. A partnerek nagy ügyletei több bevételt generálnak: 8 millió dollárt, a közvetlen értékesítésből származó 6 millió dolláros bevétellel szemben.
+- A vállalati bevétel 2 milliárd dollár, a faktorált bevétel pedig 461 millió dollár.
+- Az üzleti lehetőségek száma és a bevétel a jól ismert tölcsér mintát követi, vagyis az összesített értékek értékesítési szakaszonként csökkenő tendenciát mutatnak.
+- A legtöbb üzleti lehetőség a keleti (East) régióban van.
+- A nagyobb üzleti lehetőségek több bevételt generálnak, mint a közepes, vagy a kis lehetőségek.
+- A nagy partnerekkel kötött üzletek több bevételt hoznak: átlagosan 8 millió dollárt a közvetlen értékesítésekből származó 6 millióval szemben.
 
-Ahhoz, hogy az üzlet létrejöjjön, ugyanannyi energiát kell fektetni a nagynak, a közepesnek és a kicsinek minősülő lehetőségekbe is, ezért érdemes mélyebbre ásni, és többet kideríteni a nagy lehetőségekkel kapcsolatos adatokból.
+Ahhoz, hogy az üzlet létrejöjjön, ugyanannyi energiát kell fektetni a nagynak, a közepesnek és a kicsinek minősülő lehetőségekbe is, ezért érdemes elemezni és többet kideríteni a nagy lehetőségekkel kapcsolatos adatokból.
 
-A jelentés első oldalának a megnyitásához kattintson az **Opportunity Count by Partner Driven and Sales Stage** (Partnerek hatáskörébe tartozó üzleti lehetőségek értékesítési szakaszonként) feliratú csempére.  
-![](media/sample-opportunity-analysis/opportunity2.png)
+1. A munkaterületen, amelyre a mintát mentette, nyissa meg az **Irányítópultok** lapot, majd keresse meg és jelölje ki a **Lehetőségelemzési minta** irányítópultot.
 
-## <a name="explore-the-pages-in-the-report"></a>A jelentés oldalainak felfedezése
-### <a name="page-1-of-our-report-is-titled-opportunity-count-overview"></a>A jelentés első oldalának címe "Opportunity Count Overview" (Lehetőségek számának áttekintése).
-![](media/sample-opportunity-analysis/opportunity3.png)
+2. Válassza a **Partnerek hatáskörébe tartozó lehetőségek száma értékesítési fázis szerint** csempét a Lehetőségelemzési mintajelentés elő oldalának megnyitásához. 
 
+    ![Partnerek hatáskörébe tartozó lehetőségek száma értékesítési fázis szerint csempe](media/sample-opportunity-analysis/opportunity2.png)
+
+## <a name="explore-the-pages-in-the-report"></a>A jelentés oldalainak feltárása
+
+A jelentés bármelyik oldalát megtekintheti az alsó oldalfülek kiválasztásával.
+
+### <a name="opportunity-count-overview-page"></a>Lehetőségek száma – áttekintő oldal
+![Lehetőségek száma oldal](media/sample-opportunity-analysis/opportunity3.png)
+
+Figyelje meg a következő részleteket:
 * A lehetőségek száma szempontjából a keleti régió vezet.  
-* A lap szűréséhez válasszon ki egy-egy régiót a tortadiagramról. A partnerek mindegyik régióban több nagy lehetőségekkel rendelkeznek.   
-* Az Opportunity Count by Partner Driven and Opportunity Size (Partnerek hatáskörébe tartozó üzleti lehetőségek száma és az üzleti lehetőségek mérete) oszlop jól mutatja, hogy a legtöbb nagy lehetőség partnerek hatáskörébe tartozó (Partner driven) lehetőség, ugyanakkor a közepes és kis lehetőségek nagyobb része a közvetlen céges (nem partnervezérelt) értékesítéshez tartozik.
-* A regionális számok közötti különbség megtekintéséhez kattintson az egyes értékesítési szakaszok (Sales Stage) nevére. Látni fogja, hogy bár szám szerint a keleti (East) régióban van a legtöbb lehetőség, a Solution (Megoldás kiválasztása), Proposal (Ajánlattétel) és Finalize (Véglegesítés) szakaszokban már hasonló számú lehetőséggel rendelkezik mindhárom régió. Ez azt jelenti, hogy a középső (Central) és a nyugati (West) régióban több ügyletet sikerül végigvinni.
+* A **Lehetőségek száma régiónként** tortadiagramon az egyes régiók kijelölésével régiónként szűrheti az oldalt. Megfigyelheti, hogy a partnerek mindegyik régióban jelentősen több nagy lehetőségekkel rendelkeznek.   
+* Az **Partnerek hatáskörébe tartozó lehetőségek száma és a lehetőségek mérete** oszlop azt mutatja, hogy a legtöbb nagy lehetőség partnerek hatáskörébe tartozik, ugyanakkor a közepes és kis lehetőségek többsége a közvetlen vállalati értékesítéshez tartozik.
+* A **Lehetőségek száma értékesítési fázis szerint** sávdiagramon az egyes **Értékesítési fázisokat** egyenként kijelölve láthatja a régiónkénti darabszámok eltérését. Megfigyelheti, hogy bár a lehetőségek száma a Keleti régióban a legmagasabb, a Megoldás, Ajánlattétel és Véglegesítés fázisban mindhárom régió hasonló számokkal rendelkezik. Ez az eredmény azt jelenti, hogy a Középső és a Nyugati régióban az ügyletek nagyobb hányadát sikerül végigvinni.
 
-### <a name="page-2-of-our-report-is-titled-revenue-overview"></a>A jelentés második oldalának címe „Revenue Overview” (Bevétel áttekintése).
-Ez a lap hasonló nézőpontot kínál az adatokhoz, de a lehetőségek száma helyett a bevételt jeleníti meg.  
-![](media/sample-opportunity-analysis/opportunity4.png)
+### <a name="revenue-analysis-page"></a>Bevételelemzés oldal
+Ez az oldal hasonló nézőpontot kínál az adatokhoz, de a lehetőségek száma helyett a bevételt jeleníti meg.  
 
-* A keleti (East) régió nem csak a lehetőségek száma, de jövedelem tekintetében is vezet.  
-* Ha a megjelenített lehetőségeket a partnerek hatáskörébe tartozó lehetőségekre szűkíti (a jobb felső sarokban megjelenő **Yes** (Igen) gombot használva), 1,5 millárd dolláros és 294 millió dolláros bevétel látható. Hasonlítsa ezt össze a 644 millió dolláros és a 166 millió dolláros közvetlen céges értékesítésből várható (nem partnervezérelt) bevétellel.  
-* A nagy ügyfelekhez kapcsolódó, partnerek hatókörébe tartozó üzleti lehetőségek átlagos bevétele (8 millió) nagyobb, mint a közvetlen céges értékesítéshez tartozó nagy üzleteké (6 millió).  
-* A partnerek hatókörébe tartozó üzletek között a nagy lehetőségekhez tartozó átlagos bevétel majdnem kétszerese a közepes lehetőségekhez tartozó átlagos bevételnek (4 millió).  
+![Bevétel áttekintése oldal](media/sample-opportunity-analysis/opportunity4.png)
+
+Figyelje meg a következő részleteket:
+* A Keleti régió nem csak a lehetőségek száma, de bevétel tekintetében is vezet.  
+* Ha a **Bevétel értékesítési fázis és partneri hatókör szerint** diagramot a **Partneri hatókör** beállítás **Igen** értékét választva szűri, akkor 1,5 milliárd dolláros bevételt és 294 millió dolláros faktorált bevételt fog látni. Hasonlítsa össze ezeket az összegeket a nem partneri hatókörbe tartozó 644 milliós, illetve 166 milliós bevétellel. 
+* A nagy ügyfelekhez kapcsolódó, partnerek hatókörébe tartozó üzleti lehetőségek átlagosan 8 milliós bevétele nagyobb, mint a közvetlen vállalati értékesítéshez tartozó nagy üzletek 6 milliós bevételénél.  
+* A partnerek hatókörébe tartozó üzletek között a nagy lehetőségekhez tartozó átlagos bevétel majdnem kétszerese a közepes lehetőségekhez tartozó átlagos bevételnek.  
 * A partnerek hatókörébe tartozó és közvetlen céges értékesítéshez tartozó kis és közepes üzleti lehetőségek átlagos bevétele nagyságrendileg hasonló.   
 
-Mindezekből tisztán látszik, hogy a partnerek eredményesebbek az ügyfelek felé történő értékesítés tekintetében.  Valószínűleg érdemes lenne több ügyletet lecsatornázni a partnerekhez.
+Mindezekből tisztán látszik, hogy a partnerek eredményesebbek az ügyfelek felé történő értékesítés terén, mint a közvetlen vállalati értékesítők. Valószínűleg érdemes lenne több ügyletet lecsatornázni a partnerekhez.
 
-### <a name="page-3-of-our-report-is-titled-region-stage-counts"></a>A jelentés harmadik oldalának címe "Region Stage Counts" (Lehetősége száma régiónként és értékesítési szintenként).
-Ez az oldal hasonló adatokat tekint át, csak régiók és értékesítési szakasz szerinti bontásban.  
-![](media/sample-opportunity-analysis/opportunity5.png)
+### <a name="opportunity-count-by-region-and-stage"></a>Lehetőségek számra régió és fázis szerint
+A jelentésnek ez az oldala az előző oldaléhoz hasonló adatokat vizsgál, de régiónként és fázisonként lebontva. 
 
-* Ha a keleti régió adataira szűr (a tortadiagram **East** (Kelet) szeletére kattintva), megláthatja, hogy a keleti régióban majdnem azonos arányban oszlanak meg az üzleti lehetőségek a partnerek és a céges értékesítés között.
+![Régiónkénti és fázisonkénti számok oldala](media/sample-opportunity-analysis/opportunity5.png)
+
+Figyelje meg a következő részleteket:
+* Ha a **Lehetőségek szám régió** szerint tortadiagramon a **Kelet** kijelölésével erre a régióra szűr, látni fogja, hogy ebben a régióban a lehetőségek közel egyenlően oszlanak meg a partneri hatókörbe tartozó és közvetlen értékesítés között.
 * A legtöbb nagy lehetőség a központi régióhoz tartozik, a legtöbb kis lehetőség a keleti régióhoz, a közepes lehetőségek száma pedig a nyugati régióban a legnagyobb.
 
-### <a name="page-4-of-our-report-is-titled-upcoming-opportunities"></a>A Jelentés negyedik oldalának címe: „Upcoming Opportunities” (Várható lehetőségek)
-Ismét hasonló tényezőket vizsgálunk, de most az idő perspektívájából.  
-![](media/sample-opportunity-analysis/opportunity6.png)
+### <a name="upcoming-opportunities-by-month-page"></a>Jövőbeli lehetőségek hónap szerint oldal
+Ezen az oldalon hasonló tényezőket vizsgálunk, de most a dátum és az idő szempontjából. 
+ 
+![Jövőbeli lehetőségek oldala](media/sample-opportunity-analysis/opportunity6.png)
 
-A pénzügyi vezető ezt az oldalt használja a munkaterhelés időbeli elosztásához. Ha megvizsgálja az értékesítési szakaszonként és havonta várható bevétel lehetőségeket, előre tud tervezni.
+A pénzügyi vezető ezt az oldalt használja a munkaterhelés időbeli elosztásához. Ha megvizsgálja az értékesítési szakaszonként és havonta várható bevétel lehetőségeket, ennek megfelelően tud előre tervezni.
 
-* A Finalize (Véglegesítés) szinthez tartozó átlagos bevétel a legmagasabb. Ezeknek az ügyleteknek a lezárása élvezi a legmagasabb prioritást.
-* A hónapok szerinti szűrés (a jobb oldali sávban látható hónapnevek kiválasztásával) azt mutatja, hogy Januárban nagy arányban várhatók véglegesítési (Finalize) szakaszba kerülő üzleti lehetőségek, 75 millió dollárnyi faktorált bevétellel. Februárban ugyanakkor többnyire közepes méretű ügyletek kerülnek majd megoldásválasztási (Solution) és ajánlattételi (Proposal) szakaszba.
-* A faktorált bevétellel kapcsolatos számok az értékesítési szakasztól, a lehetőségek számától és az ügylet méretétől függően váltakoznak. Ha szeretne további összefüggéseket felfedezni, vegyen fel további szűrőket a jobboldali Szűrők ablaktáblát használva.
-
-Ebben a környezetben nyugodtan kísérletezhet. Bármikor dönthet úgy, hogy nem menti a változtatásokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőséggel.
+Figyelje meg a következő részleteket:
+* A Véglegesítés értékesítési szinthez tartozó átlagos bevétel a legmagasabb. Ezeknek az ügyleteknek a lezárása élvezi a legmagasabb prioritást.
+* Ha hónap szerint szűr (egy hónap kijelölésével a **Hónap** szeletelőben), látni fogja, hogy januárban nagy arányban várhatók Véglegesítés értékesítési fázisba kerülő üzleti lehetőségek, 75 millió dollárnyi faktorált bevétellel. Februárban ugyanakkor többnyire közepes méretű ügyletek lépnek majd a Megoldás és az Ajánlattétel értékesítési fázisba.
+* A faktorált bevétellel kapcsolatos számok az értékesítési szakasztól, a lehetőségek számától és az ügylet méretétől függően váltakoznak. Ha szeretne további összefüggéseket felfedezni, vegyen fel további szűrőket ezekhez a tényezőkhöz a jobboldali **Szűrők** panel használatával.
 
 ## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
-Reméljük, hogy ez a bemutató segített megérteni, hogyan tárhat fel összefüggéseket a lehetőségkövetési adatokból a Power BI irányítópultokat, Q&A-t és jelentéseket használva. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. Tudjon meg többet a [Power BI használatának első lépéseiről](service-get-started.md).
+Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
 
-[Minták letöltése](sample-datasets.md)  
+Reméljük, hogy ez a bemutató segített megérteni a mintaadatok Power BI irányítópultok, Q&A és jelentések segítségével történő elemzését. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).
+

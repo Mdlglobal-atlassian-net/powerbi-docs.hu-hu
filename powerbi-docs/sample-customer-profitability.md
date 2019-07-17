@@ -7,15 +7,15 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: af20d5842664311a0d543ee189ef671f7865058b
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 333403ca74c5c5a13c94cbd41100915c7260e304
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418756"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67792011"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Ügyfél-jövedelmezőségi minta a Power BI-hoz: Bemutató megtekintése
 
@@ -23,17 +23,21 @@ Az Ügyfél-jövedelmezőségi minta nevű tartalomcsomag egy marketinganyagokat
 
 ![Az Ügyfél-jövedelmezőségi mintához tartozó irányítópult](media/sample-customer-profitability/power-bi-dash.png)
 
-Ez a minta abba a sorozatba tartozik, amely a Power BI üzleti jellegű adatokkal, jelentésekkel, és irányítópultokkal történő használatát mutatja be. Az [obviEnce](http://www.obvience.com/)-től származó valós adatokkal lett létrehozva, melyeket anonimizáltunk. Az adatok többféle formátumban is elérhetők: tartalomcsomagként vagy alkalmazásként, .pbix kiterjesztésű Power BI Desktop-fájlként és Excel-munkafüzetként is. [Power BI-minták](sample-datasets.md) megtekintése. 
+Ez a minta abba a sorozatba tartozik, amely a Power BI üzleti jellegű adatokkal, jelentésekkel, és irányítópultokkal történő használatát mutatja be. Az [obviEnce](http://www.obvience.com/)-től származó valós adatokkal lett létrehozva, melyeket anonimizáltunk. Az adatok többféle formátumban: tartalomcsomagként, .pbix kiterjesztésű Power BI Desktop-fájlként és Excel-munkafüzetként is elérhetők. [Power BI-minták](sample-datasets.md) megtekintése. 
 
-Ebben az oktatóanyagban a Power BI szolgáltatást és az Ügyfél-jövedelmezőségi minta tartalomcsomagot használjuk. Mivel azonban a jelentéssel való munka nagyon hasonló, a Power BI Desktopot is használhatja a .pbix-mintafájllal, hogy követni tudja a bemutatott műveleteket. 
+Ez az oktatóanyag a Power BI szolgáltatásban mutatja be az Ügyfél-jövedelmezőségi minta tartalomcsomagot. Mivel azonban a jelentéssel való munka hasonló a Power BI Desktopban és a szolgáltatásban, a bemutatót akkor is követni tudja, ha a .pbix-mintafájlt a Power BI Desktopban használja. 
 
-## <a name="prerequisites"></a>Előfeltételek
+A minták Power BI Desktopban való vizsgálatához nincs szükség Power BI-licencre. Ha nem rendelkezik Power BI Pro-licenccel, a mintát a Saját munkaterületre mentheti a Power BI szolgáltatásban. 
+
+## <a name="get-the-sample"></a>A minta beszerzése
 
 Használat előtt a mintát [tartalomcsomagként](#get-the-content-pack-for-this-sample), [.pbix-fájlként](#get-the-pbix-file-for-this-sample) vagy [Excel-munkafüzetként](#get-the-excel-workbook-for-this-sample) le kell töltenie.
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Tartalomcsomag letöltése ehhez a mintához
 
 1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), jelentkezzen be, majd nyissa meg azt a munkaterületet, ahol a mintát szeretné menteni.
+
+   Ha nem rendelkezik Power BI Pro-licenccel, a mintát a Saját munkaterületre mentheti.
 
 2. A bal alsó sarokban válassza az **Adatok lekérése** lehetőséget.
 
@@ -135,8 +139,8 @@ Nézzük meg két csapattag teljesítményét részletesen, és lássuk, mely ad
 1. A bal oldali **Vezetők** szeletelőben Andrew nevének kiválasztásával szűrheti a jelentésoldalt, így csak Andrew adatai jelennek meg:
 
    * A KPI gyors áttekintéséhez nézze meg Andrew **Bevételi állapot (Év)** mutatóját; ez zöld, ami azt jelenti, hogy jó a teljesítménye.
-   * A **Százalékos, költségvetéshez viszonyított bevételvariancia hónap és vezető szerint** diagram azt mutatja, hogy a februári csökkenést leszámítva Andrew összességében jól teljesít. Domináns területe a keleti régió, 49 ügyfelet kezel, és 5 termékkel foglalkozik (a 7 termékből). A százalékos bruttó árrése nem a legmagasabb, de nem is a legkisebb.
-   * Az **Éves bevétel és a költségvetéshez viszonyított bevételvariancia hónap szerint** diagram állandó, egyenletes profiteloszlást mutat. Ha azonban szűrést végez a **Középső** négyzetet kiválasztva a régiótérképen, akkor látható, hogy Andrewnak csak márciusban és csak Indianában van bevétele. Ez vajon szándékos, vagy alaposabb vizsgálatot igényel?
+   * A **Százalékos, költségvetéshez viszonyított bevételvariancia hónap és vezető szerint** diagram azt mutatja, hogy a februári csökkenést leszámítva Andrew jól teljesít. Domináns területe a keleti régió, 49 ügyfelet kezel, és a hét termékből öttel foglalkozik. A százalékos bruttó árrése nem a legmagasabb, de nem is a legkisebb.
+   * Az **Éves bevétel és a költségvetéshez viszonyított bevételvariancia hónap szerint** diagram állandó, egyenletes profiteloszlást mutat. Ha azonban szűrést végez a **Középső** négyzetet kiválasztva a régiótérképen, akkor látható, hogy Andrewnak csak márciusban és csak Indianában van bevétele. Vajon szándékos ez a trend, vagy alaposabb vizsgálatot igényel?
 
 2. Most térjünk át Valeryre. A **Vezetők** szeletelőben Valery nevének kiválasztásával szűrheti a jelentésoldalt, így csak Valery adatai jelennek meg. 
 
@@ -205,5 +209,5 @@ Vessen egy pillantást a Forgalmazás iparágra.
 ## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
 Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
 
-Reméljük, hogy ez a bemutató segített megérteni a Power BI-irányítópultok, a Q&A és a jelentések segítségével történő ügyféladat-elemzést. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).
+Reméljük, hogy ez a bemutató segített megérteni a mintaadatok Power BI irányítópultok, Q&A és jelentések segítségével történő elemzését. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).
 

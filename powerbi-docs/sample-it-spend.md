@@ -7,15 +7,15 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: eea93888cf3a8ea5c7ca7b6eb9389cbabc79dc9c
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 75fa566b4b60e9f15e1641a49ea3c5ffa95420a9
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418726"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791911"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Informatikaköltség-elemzési minta a Power BI-hoz: Bemutató megtekintése
 
@@ -23,17 +23,21 @@ Az Informatikaköltség-elemzési minta tartalomcsomag egy irányítópultot, je
 
 ![Az Informatikaköltség-elemzési minta irányítópultja](media/sample-it-spend/it1.png)
 
-Ez a minta abba a sorozatba tartozik, amely a Power BI üzleti jellegű adatokkal, jelentésekkel, és irányítópultokkal történő használatát mutatja be. Az [obviEnce](http://www.obvience.com/)-től származó valós adatokkal lett létrehozva, melyeket anonimizáltunk. Az adatok többféle formátumban is elérhetők: tartalomcsomagként vagy alkalmazásként, .pbix kiterjesztésű Power BI Desktop-fájlként és Excel-munkafüzetként is. [Power BI-minták](sample-datasets.md) megtekintése. 
+Ez a minta abba a sorozatba tartozik, amely a Power BI üzleti jellegű adatokkal, jelentésekkel, és irányítópultokkal történő használatát mutatja be. Az [obviEnce](http://www.obvience.com/)-től származó valós adatokkal lett létrehozva, melyeket anonimizáltunk. Az adatok többféle formátumban: tartalomcsomagként, .pbix kiterjesztésű Power BI Desktop-fájlként és Excel-munkafüzetként is elérhetők. [Power BI-minták](sample-datasets.md) megtekintése. 
 
-Ebben az oktatóanyagban a Power BI szolgáltatást és az Informatikaköltség-elemzési minta tartalomcsomagot használjuk. Mivel azonban a jelentéssel való munka nagyon hasonló, a Power BI Desktopot is használhatja a .pbix-mintafájllal, hogy követni tudja a bemutatott műveleteket.
+Ebben az oktatóanyagban a Power BI szolgáltatásban vizsgáljuk meg az Informatikaköltség-elemzési minta tartalomcsomagot. Mivel azonban a jelentéssel való munka hasonló a Power BI Desktopban és a szolgáltatásban, a bemutatót akkor is követni tudja, ha a .pbix-mintafájlt a Power BI Desktopban használja. 
 
-## <a name="prerequisites"></a>Előfeltételek
+A minták Power BI Desktopban való vizsgálatához nincs szükség Power BI-licencre. Ha nem rendelkezik Power BI Pro-licenccel, a mintát a Saját munkaterületre mentheti a Power BI szolgáltatásban. 
+
+## <a name="get-the-sample"></a>A minta beszerzése
 
  Használat előtt a mintát [tartalomcsomagként](#get-the-content-pack-for-this-sample), [.pbix-fájlként](#get-the-pbix-file-for-this-sample) vagy [Excel-munkafüzetként](#get-the-excel-workbook-for-this-sample) le kell töltenie.
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Tartalomcsomag letöltése ehhez a mintához
 
 1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), jelentkezzen be, majd nyissa meg azt a munkaterületet, ahol a mintát szeretné menteni.
+
+   Ha nem rendelkezik Power BI Pro-licenccel, a mintát a Saját munkaterületre mentheti.
 
 2. A bal alsó sarokban válassza az **Adatok lekérése** lehetőséget.
    
@@ -126,4 +130,4 @@ Válassza a **Jelentés szerkesztése** elemet a bal felső sarokban, és nyissa
 ## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
 Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
 
-Reméljük, hogy ez a bemutató segített megérteni, hogy miképpen elemezheti az informatikai költségek adatait a Power BI irányítópultok, a Q&A és a jelentések használatával. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).
+Reméljük, hogy ez a bemutató segített megérteni a mintaadatok Power BI irányítópultok, Q&A és jelentések segítségével történő elemzését. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).

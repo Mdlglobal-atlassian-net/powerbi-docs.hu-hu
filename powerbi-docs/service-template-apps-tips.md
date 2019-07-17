@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 59d581697091df68df827ec699c8999a6993daef
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 5e34601c3ebacb3cfd8a4a5ddeb282756d0f700b
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408360"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791807"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tippek sablonalkalmazások készítéséhez a Power BI-ban
 
@@ -126,6 +126,7 @@ A sablonalkalmazásokat közzé lehet tenni az AppSource-on. Mielőtt közzéten
 
 * A sablonalkalmazásokat érdekes mintaadatokkal töltse fel, amelyek segítenek majd a telepítőnek megérteni az alkalmazás képességeit (üres jelentés és irányítópult nem engedélyezett).
 A sablonalkalmazások csak mintaadatokkal szerepelhetnek, ügyeljen rá, hogy be kell jelölnie a statikus alkalmazás jelölőnégyzetet. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Általában csak értékes funkciókkal rendelkező alkalmazások hagyhatók jóvá általános felhasználásra az AppSource-on. A csak mintaadat-tartalommal rendelkező alkalmazásoknak útmutatóként vagy statisztikai szempontból kell értékesnek lenniük.
 * Rendelkezzen útmutatóval az érvényesítési csapat számára, amely tartalmazza az adatokhoz való csatlakozáshoz szükséges hitelesítő adatokat és paramétereket is.
 * Az alkalmazásnak tartalmaznia kell egy alkalmazásikont a Power BI-ban és a CPP-ajánlatban is. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Konfigurált kezdőlap. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)

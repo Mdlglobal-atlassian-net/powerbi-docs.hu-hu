@@ -7,15 +7,15 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 762a28d2340a691316b1aaf26b7ce62d45cc7496
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: bf10d6a87cb97e1c1ca5164580d0aa556ffc86fc
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418740"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791946"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Emberi erőforrások minta a Power BI-hoz: Bemutató megtekintése
 
@@ -27,17 +27,21 @@ Az Emberi erőforrások minta tartalomcsomag egy irányítópultot, egy jelenté
 
 ![Az Emberi erőforrások mintához készült irányítópult](media/sample-human-resources/hr1.png)
 
-Ez a minta abba a sorozatba tartozik, amely a Power BI üzleti jellegű adatokkal, jelentésekkel, és irányítópultokkal történő használatát mutatja be. Az [obviEnce](http://www.obvience.com/)-től származó valós adatokkal lett létrehozva, melyeket anonimizáltunk. Az adatok többféle formátumban is elérhetők: tartalomcsomagként vagy alkalmazásként, .pbix kiterjesztésű Power BI Desktop-fájlként és Excel-munkafüzetként is. [Power BI-minták](sample-datasets.md) megtekintése. 
+Ez a minta abba a sorozatba tartozik, amely a Power BI üzleti jellegű adatokkal, jelentésekkel, és irányítópultokkal történő használatát mutatja be. Az [obviEnce](http://www.obvience.com/)-től származó valós adatokkal lett létrehozva, melyeket anonimizáltunk. Az adatok többféle formátumban: tartalomcsomagként, .pbix kiterjesztésű Power BI Desktop-fájlként és Excel-munkafüzetként is elérhetők. [Power BI-minták](sample-datasets.md) megtekintése. 
 
-Ebben az oktatóanyagban a Power BI szolgáltatást és az Emberi erőforrás minta tartalomcsomagot használjuk. Mivel azonban a jelentéssel való munka nagyon hasonló, a Power BI Desktopot is használhatja a .pbix-mintafájllal, hogy követni tudja a bemutatott műveleteket. 
+Ez az oktatóanyag a Power BI szolgáltatásban mutatja be az Emberi erőforrás minta tartalomcsomagot. Mivel azonban a jelentéssel való munka hasonló a Power BI Desktopban és a szolgáltatásban, a bemutatót akkor is követni tudja, ha a .pbix-mintafájlt a Power BI Desktopban használja. 
 
-## <a name="prerequisites"></a>Előfeltételek
+A minták Power BI Desktopban való vizsgálatához nincs szükség Power BI-licencre. Ha nem rendelkezik Power BI Pro-licenccel, a mintát a Saját munkaterületre mentheti a Power BI szolgáltatásban. 
+
+## <a name="get-the-sample"></a>A minta beszerzése
 
 Használat előtt a mintát [tartalomcsomagként](#get-the-content-pack-for-this-sample), [.pbix-fájlként](#get-the-pbix-file-for-this-sample) vagy [Excel-munkafüzetként](#get-the-excel-workbook-for-this-sample) le kell töltenie.
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Tartalomcsomag letöltése ehhez a mintához
 
 1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), jelentkezzen be, majd nyissa meg azt a munkaterületet, ahol a mintát szeretné menteni.
+
+   Ha nem rendelkezik Power BI Pro-licenccel, a mintát a Saját munkaterületre mentheti.
 
 2. A bal alsó sarokban válassza az **Adatok lekérése** lehetőséget.
    
@@ -161,4 +165,4 @@ Az irányítópult [Q&A-kérdésmezőjében](power-bi-tutorial-q-and-a.md) term�
 ## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
 Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
 
-Reméljük, hogy ez a bemutató segített megérteni, hogy miképpen elemezheti az emberi erőforrások adatait a Power BI irányítópultok, a Q&A és a jelentések használatával. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).
+Reméljük, hogy ez a bemutató segített megérteni a mintaadatok Power BI irányítópultok, Q&A és jelentések segítségével történő elemzését. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).

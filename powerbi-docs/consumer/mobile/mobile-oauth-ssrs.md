@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/07/2018
-ms.openlocfilehash: 9673217cfd7c5af70bdd293e8d5df51e5e7dee07
-ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.date: 07/03/2019
+ms.openlocfilehash: 7067d4c7fdc3fc328db417e5d6733569ecc7be01
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559089"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567815"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>OAuth használata a Power BI jelentéskészítő kiszolgáló és az SSRS csatlakoztatásához
 
 Megtudhatja, hogyan konfigurálhatja a környezetét OAuth-hitelesítés támogatására a Power BI mobilalkalmazásban a Power BI jelentéskészítő kiszolgáló és az SQL Server Reporting Services 2016 (vagy újabb) csatlakoztatásához.
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
+![Csatlakozás kiszolgálóhoz](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
 Az OAuth-hitelesítést a Power BI jelentéskészítő kiszolgálóhoz való csatlakozásra használhatja, a Reporting Services-t pedig mobiljelentések és KPI-k megjelenítésére. A Windows Server 2016 webalkalmazás-proxyhoz (WAP) biztosított fejlesztései lehetővé tették az ilyen típusú hitelesítés használatát.
 
@@ -118,7 +118,7 @@ Az alkalmazáscsoportot az alábbi lépéseket követve hozhatja létre.
    > [!NOTE]
    > Ez az URL-cím megkülönbözteti a kis- és nagybetűket!
 
-   *https://< jelentéskészítő kiszolgáló URL-címe >/jelentések*
+   *https://< jelentéskészítő kiszolgáló URL-címe>/*
 
    ![ADFS Alkalmazáscsoport-varázsló 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Kattintson a **Tovább** gombra.
@@ -209,7 +209,7 @@ A WAP-alkalmazás hozzáadása után be kell állítania a BackendServerAuthenti
 Get-WebApplicationProxyApplication “Contoso Reports” | fl
 ```
 
-![](media/mobile-oauth-ssrs/wap-application-id.png)
+![Alkalmazáscsoport hozzáadása](media/mobile-oauth-ssrs/wap-application-id.png)
 
 Futtassa az alábbi parancsot a BackendServerAuthenticationMode beállításához a WAP-alkalmazás azonosítójával.
 
@@ -217,21 +217,19 @@ Futtassa az alábbi parancsot a BackendServerAuthenticationMode beállításáho
 Set-WebApplicationProxyApplication -id 30198C7F-DDE4-0D82-E654-D369A47B1EE5 -BackendServerAuthenticationMode IntegratedWindowsAuthentication
 ```
 
-![](media/mobile-oauth-ssrs/wap-application-backendauth.png)
+![Alkalmazáscsoport hozzáadása varázsló](media/mobile-oauth-ssrs/wap-application-backendauth.png)
 
 ## <a name="connecting-with-the-power-bi-mobile-app"></a>Csatlakozás a Power BI mobilalkalmazással
 
 A Power BI mobilalkalmazással csatlakoznia kell a Reporting Services-példányhoz. Ehhez adja meg a WAP-alkalmazása **Külső URL-címét**.
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
+![Kiszolgáló címének beírása](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
 
 Amikor a **Csatlakozás** lehetőséget választja, a rendszer átirányítja az ADFS bejelentkezési oldalára. Adjon meg érvényes hitelesítő adatokat a tartományhoz.
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
+![Bejelentkezés az ADFS-be](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 Miután a **Bejelentkezés** lehetőséget választja, megjelennek a Reporting Services-kiszolgáló elemei.
-
-![](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 ## <a name="multi-factor-authentication"></a>Többtényezős hitelesítés
 
@@ -239,9 +237,9 @@ A többtényezős hitelesítés engedélyezésével még biztonságosabbá tehet
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 
-### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-verify-server-configuration"></a>A következő üzenet jelenik meg: Nem sikerült a bejelentkezés az SSRS-kiszolgálóra. Ellenőrizze a kiszolgálókonfigurációt.
+### <a name="you-receive-the-error-failed-to-login-to-ssrs-server"></a>A következő üzenet jelenik meg: „Nem sikerült a bejelentkezés az SSRS-kiszolgálóra”
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
+![„Nem sikerült a bejelentkezés az SSRS-kiszolgálóra” hibaüzenet](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
 Beállíthatja a [Fiddlert](http://www.telerik.com/fiddler) proxynak a mobileszközökhöz, hogy lássa, meddig jutott a kérés. Ha engedélyezni szeretné a Fiddler-proxyt a telefonján, be kell állítania az [iOS és Android rendszerhez készült CertMaker](http://www.telerik.com/fiddler/add-ons) eszközt a Fiddlert futtató számítógépen. Ez egy Telerik-bővítmény a Fiddlerhez.
 
