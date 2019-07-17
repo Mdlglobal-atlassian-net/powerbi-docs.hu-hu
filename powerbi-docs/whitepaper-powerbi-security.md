@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 9aa80c336fa7918632b71b25f8f57b2798fa52e5
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: dd656f81cb0fdb32f9637f969ef538e263e20053
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418684"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271986"
 ---
 # <a name="power-bi-security-whitepaper"></a>A Power BI biztonsága – tanulmány
 
@@ -225,7 +225,7 @@ Felhőalapú adatforrások esetén az adatáthelyezési szerepkör [Always Encry
         - Ha az adatkészlet frissítésre van konfigurálva, a hitelesítő adatokat az adatáthelyezési erőforrás Azure SQL Database szolgáltatása tárolja. A titkosítási kulcsot az átjárót futtató számítógép tárolja az ügyfél infrastruktúráján.
         - Ha az adatkészlet nincsen frissítésre konfigurálva, a rendszer nem tárol hitelesítő adatokat az adatforrásokhoz
 
-1. Adatok
+1. Data
 
     a. Helyszíni Analysis Services és DirectQuery – semmi nincs tárolva a Power BI-szolgáltatásban.
 
@@ -302,7 +302,7 @@ Nem felejtő eszközök azok az eszközökhöz, memória, amely továbbra is fen
     c. Leküldéses adatok – Nincs (nem alkalmazható)
 
     d. ETL – nincs (a rendszer semmit sem tárol a számítási csomóponton, minden az **Inaktív adatok** szekcióban fentebb leírtak szerint történik)
-4. Adatok
+4. Data
 
     Előfordulhat, hogy néhány adatösszetevőt a rendszer korlátozott ideig a számítási csomópont merevlemezén tárol.
 
@@ -382,7 +382,7 @@ Az alábbiak Power BI-jal kapcsolatos gyakori biztonsági kérdések, valamint a
 
 * **Power BI-hitelesítő adatok és tartományi hitelesítő adatok:** A felhasználók egy e-mail-címmel jelentkeznek be a Power BI szolgáltatásba. Amikor egy felhasználó megpróbál egy adatforráshoz csatlakozni, a Power BI a hozzá használt e-mail-címet adja meg hitelesítő adatként. Tartományhoz csatlakozó (helyszíni vagy felhőalapú) erőforrások esetén a bejelentkezési e-mail-címhez egy _egyszerű felhasználónevet_ ([UPN-t](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) is társít a címtárszolgáltatás, amellyel meghatározza, hogy megfelelőek-e a hitelesítő adatok a hozzáféréshez. A Power BI-ba való bejelentkezéshez munkahelyi e-mail-címeket (ugyanazt az e-mail-címet, mint amelyet munkahelyi erőforrások eléréséhez használnak, például _david@contoso.com_ ) használó szervezetek esetén a leképezés gördülékeny. Az olyan szervezetek esetén, amelyek nem munkahelyi e-mail-címeket használnak (például _david@contoso.onmicrosoft.com_ ), címtárleképezést kell alkalmazni, hogy a felhasználók Power BI-hitelesítő adatokkal hozzáférést kaphassanak a helyszíni erőforrásokhoz.
 
-* **SQL Server Analysis Services és a Power BI:** Helyszíni SQL Server Analysis Servicest használó szervezetek a Power BI helyszíni adatátjáróját (a korábbi szakaszokban **átjáró**) használhatják.  A Power BI helyszíni adatátjárója szerepkörszintű biztonságot (RLS-t) képes kényszeríteni az adatforrásokon. További információt az RLS-ről a dokumentum korábbi, **Az adatforrások felhasználói hitelesítése** című szakaszában találhat. Emellett egy részletes cikket is elolvashat a [Power BI Gatewayről](service-gateway-manage.md).
+* **SQL Server Analysis Services és a Power BI:** Helyszíni SQL Server Analysis Servicest használó szervezetek a Power BI helyszíni adatátjáróját (a korábbi szakaszokban **átjáró**) használhatják.  A Power BI helyszíni adatátjárója szerepkörszintű biztonságot (RLS-t) képes kényszeríteni az adatforrásokon. További információt az RLS-ről a dokumentum korábbi, **Az adatforrások felhasználói hitelesítése** című szakaszában találhat. Az átjárókkal kapcsolatos további információkért lásd: [a helyszíni adatátjáró](service-gateway-onprem.md).
 
   A szervezetek az **egyszeri bejelentkezéshez** (SSO-hoz) a Kerberost is használhatják, amellyel zökkenőmentesen csatlakozhatnak a Power BI-ból a helyszíni adatforrásokhoz, például az SQL Serverhez, az SAP HANA-hoz és a Teradatához. További információ és a konkrét konfigurációs követelmények: [**A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)** ](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
@@ -422,7 +422,7 @@ Az alábbiak Power BI-jal kapcsolatos gyakori biztonsági kérdések, valamint a
 
 **Milyen portokat használ a helyszíni adatátjáró és a személyes adatátjáró? Vannak bizonyos tartománynevek, amelyeket a könnyebb csatlakozáshoz engedélyezni kell?**
 
-* Erre a kérdésre a részletes válasz a következő hivatkozáson érhető el: [Power BI Gateway](service-gateway-manage.md)
+* Erre a kérdésre a részletes válasz a következő hivatkozáson érhető el: [Átjáró-portok](/data-integration/gateway/service-gateway-communication#ports)
 
 **Hogyan kell használni a helyreállítási kulcsokat a helyszíni adatátjáróban, és hol tárolja ezeket a rendszer? Mi a helyzet a biztonságos hitelesítőadat-kezeléssel?**
 
@@ -438,7 +438,7 @@ Az alábbiak Power BI-jal kapcsolatos gyakori biztonsági kérdések, valamint a
 
   - **AMQP 1.0 – TCP + TLS** : Ehhez a protokollhoz a következő portokat kell megnyitni a kimenő kommunikációhoz: 443, 5671–5672 és 9350–9354. Az átjáró ezt a protokollt részesíti előnyben, mivel ennek kisebb a kommunikációs terhelése.
 
-  - **HTTPS – WebSocket és HTTPS + TLS** : Ez a protokoll csak a 443-as portot használja. A WebSocketet egyetlen HTTP CONNECT üzenet indítja el. A csatorna létrejötte után a kommunikáció gyakorlatilag kizárólag TCP+TLS. Ha az átjárót ezen protokoll használatára szeretné kényszeríteni, ahhoz módosítania kell egy beállítást [a helyszíni átjáróról szóló cikk](service-gateway-manage.md) útmutatása szerint.
+  - **HTTPS – WebSocket és HTTPS + TLS** : Ez a protokoll csak a 443-as portot használja. A WebSocketet egyetlen HTTP CONNECT üzenet indítja el. A csatorna létrejötte után a kommunikáció gyakorlatilag kizárólag TCP+TLS. Kényszerítheti az átjárót, ez a protokoll használatára egy leírt beállítások módosításával a [a helyszíni átjárókkal foglalkozó cikk](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
 
 **Mi az Azure CDN szerepe a Power BI-ban?**
 
@@ -486,10 +486,9 @@ A Power BI-ról az alábbi forrásanyagokban talál további információt.
 
 - [Csoportok a Power BI-ban](https://support.powerbi.com/knowledgebase/articles/654247)
 - [Első lépések a Power BI Desktopban](https://support.powerbi.com/knowledgebase/articles/471664)
-- [Power BI Gateway](service-gateway-manage.md)
 - [Power BI REST API – Áttekintés](https://msdn.microsoft.com/library/dn877544.aspx)
 - [A Power BI API referenciája](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway (Helyszíni adatátjáró)](service-gateway-manage.md)
+- [On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)
 - [A Power BI és az ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Power BI országos felhők](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
