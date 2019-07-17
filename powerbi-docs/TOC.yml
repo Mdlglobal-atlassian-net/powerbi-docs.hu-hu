@@ -723,10 +723,6 @@
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: Csempékkel kapcsolatos hibák elhárítása
               href: refresh-troubleshooting-tile-errors.md
-            - name: A helyszíni adatátjáró hibaelhárítása
-              href: service-gateway-onprem-tshoot.md
-            - name: A Power BI Gateway hibaelhárítása – Personal
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Az Elemzés az Excelben hibaelhárítása
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Hiba: Nem található adat az Excel-munkafüzetben'
@@ -1279,38 +1275,38 @@
   items:
     - name: Áttekintés
       items:
-        - name: Mik a Power BI-átjárók?
-          href: service-gateway-getting-started.md
-    - name: Oktatóanyagok
-      items:
-        - name: Csatlakozás SQL Server-adatokhoz
-          href: service-gateway-sql-tutorial.md
+        - name: Mi az a helyszíni adatátjáró?
+          href: service-gateway-onprem.md
     - name: Fogalmak
       items:
         - name: Útmutató adatátjáró üzembe helyezéséhez
           href: service-gateway-deployment-guidance.md
         - name: Helyszíni adatátjáró – GYIK
-          href: service-gateway-onprem-faq.md
+          href: service-gateway-power-bi-faq.md
     - name: Útmutató
       items:
-        - name: Átjárók telepítése
-          href: service-gateway-install.md
-        - name: Átjárók kezelése
-          href: service-gateway-manage.md
-        - name: Átjáró teljesítményének monitorozása
-          href: service-gateway-performance-monitoring.md
-        - name: A vállalati adatforrások kezelése – Analysis Services
-          href: service-gateway-enterprise-manage-ssas.md
-        - name: A vállalati adatforrások kezelése – SAP HANA
-          href: service-gateway-enterprise-manage-sap.md
-        - name: A vállalati adatforrások kezelése – SQL
-          href: service-gateway-enterprise-manage-sql.md
-        - name: A vállalati adatforrások kezelése – Oracle
-          href: service-gateway-onprem-manage-oracle.md
-        - name: A vállalati adatforrások kezelése – importálás és ütemezett frissítés
-          href: service-gateway-enterprise-manage-scheduled-refresh.md
-        - name: Helyszíni és felhőbeli adatforrások egyesítése
-          href: service-gateway-mashup-on-premises-cloud.md
+        - name: Helyszíni adatátjáró – részletes
+          href: service-gateway-onprem-indepth.md
+        - name: Helyszíni adatátjáró (személyes mód)
+          href: service-gateway-personal-mode.md
+        - name: Felhasználók és rendszergazdák kezelése
+          href: service-gateway-manage-admins.md
+        - name: Adatforrások kezelése
+          items:
+            - name: Adatforrások kezelése
+              href: service-gateway-data-sources.md
+            - name: A vállalati adatforrások kezelése – Analysis Services
+              href: service-gateway-enterprise-manage-ssas.md
+            - name: A vállalati adatforrások kezelése – SAP HANA
+              href: service-gateway-enterprise-manage-sap.md
+            - name: A vállalati adatforrások kezelése – SQL
+              href: service-gateway-enterprise-manage-sql.md
+            - name: A vállalati adatforrások kezelése – Oracle
+              href: service-gateway-onprem-manage-oracle.md
+            - name: A vállalati adatforrások kezelése – importálás és ütemezett frissítés
+              href: service-gateway-enterprise-manage-scheduled-refresh.md
+            - name: Helyszíni és felhőbeli adatforrások egyesítése
+              href: service-gateway-mashup-on-premises-cloud.md
         - name: Az egyszeri bejelentkezés (SSO) engedélyezése
           items:
             - name: Egyszeri bejelentkezés (SSO) – áttekintés
@@ -1321,24 +1317,16 @@
               href: service-gateway-sso-kerberos-resource.md
             - name: Egyszeri bejelentkezés (SSO) – SAML
               href: service-gateway-sso-saml.md
-        - name: Proxybeállítások konfigurálása
-          href: service-gateway-proxy.md
-        - name: Magas rendelkezésre állású fürtök helyszíni adatátjáróhoz
-          href: service-gateway-high-availability-clusters.md
-        - name: Helyszíni adatátjáró
-          href: service-gateway-onprem.md
-        - name: Helyszíni adatátjáró – részletes
-          href: service-gateway-onprem-indepth.md
-        - name: Helyszíni adatátjáró (személyes mód)
-          href: service-gateway-personal-mode.md
-        - name: Egyéni összekötők
-          href: service-gateway-custom-connectors.md
-        - name: A helyszíni adatátjáró hibaelhárítása
+        - name: Az átjáró hibáinak elhárítása
           href: service-gateway-onprem-tshoot.md
+        - name: A privát átjáró hibáinak elhárítása
+          href: service-admin-troubleshooting-power-bi-personal-gateway.md
+        - name: Egyéni összekötők használata
+          href: service-gateway-custom-connectors.md
     - name: Erőforrások
       items:
         - name: Havi átjáró-frissítések
-          href: service-gateway-monthly-updates.md
+          href: 'https://review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master'
 - name: Felügyelet
   items:
     - name: Áttekintés
