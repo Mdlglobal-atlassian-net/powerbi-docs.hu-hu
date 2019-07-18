@@ -1289,8 +1289,6 @@
           href: service-gateway-onprem-indepth.md
         - name: Helyszíni adatátjáró (személyes mód)
           href: service-gateway-personal-mode.md
-        - name: Felhasználók és rendszergazdák kezelése
-          href: service-gateway-manage-admins.md
         - name: Adatforrások kezelése
           items:
             - name: Adatforrások kezelése
