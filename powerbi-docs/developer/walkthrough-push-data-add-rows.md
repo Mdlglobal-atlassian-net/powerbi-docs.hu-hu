@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: a355f09984bc454f74dfab8ef137e29fd5aed110
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710399"
 ---
-# <a name="step-5-add-rows-to-a-power-bi-table"></a>5. lépés: Sorok hozzáadása egy Power BI-táblázathoz
+# <a name="step-5-add-rows-to-a-power-bi-table"></a>5\. lépés: Sorok hozzáadása egy Power BI-táblázathoz
 
 Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-data.md) ismertető részletes útmutató része.
 

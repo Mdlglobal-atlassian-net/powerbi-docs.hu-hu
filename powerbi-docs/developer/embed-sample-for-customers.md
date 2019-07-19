@@ -12,7 +12,7 @@ ms.custom: seodec18
 ms.date: 04/02/2019
 ms.openlocfilehash: e945e19505d7342cf3ba2236b4811e87a69730ab
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710959"
@@ -365,7 +365,7 @@ Az alábbi táblázatból megtudhatja, milyen kapacitású Power BI Embedded-kap
 | A5 |16 virtuális mag |8 mag, 50 GB RAM |8 mag |Másodpercenként 60 |
 | A6 |32 virtuális mag |16 mag, 100 GB RAM |16 mag |Másodpercenként 120 |
 
-**_A termékváltozatokkal nem férhet hozzá a Power BI-tartalmakhoz INGYENES Power BI-licenccel._ **
+**_A termékváltozatokkal nem férhet hozzá a Power BI-tartalmakhoz INGYENES Power BI-licenccel._**
 
 A PRO licenccel a beágyazási tokenek elsődlegesen fejlesztési tesztelésre használhatók, ezért a Power BI fő fiókja vagy a szolgáltatásnév csak korlátozott mennyiségű tokent tud előállítani. Éles környezetben használt beágyazásokhoz dedikált kapacitás szükséges. Dedikált kapacitásokkal nincs korlátja a beágyazási tokenek előállításának. Az [Elérhető szolgáltatások](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) oldalon ellenőrizheti a használati értéket, amely százalékosan jelzi az aktuális beágyazott használatot. A használati mennyiséget fő fiókonként számoljuk.
 
