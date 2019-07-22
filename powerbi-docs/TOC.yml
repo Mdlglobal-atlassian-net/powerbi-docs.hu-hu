@@ -55,7 +55,7 @@
           href: desktop-latest-update.md
         - name: A Modellező nézet a Power BI Desktopban
           href: desktop-modeling-view.md
-        - name: Aggregációk a Power BI Desktopban (előzetes verzió)
+        - name: Aggregációk a Power BI Desktopban
           href: desktop-aggregations.md
         - name: Összetett modellek a Power BI Desktopban
           href: desktop-composite-models.md
@@ -234,7 +234,7 @@
             - name: Szűrőtípusok
               href: power-bi-report-filter-types.md
             - name: Az új szűrőfunkciók kipróbálása
-              href: power-bi-report-filter-preview.md
+              href: power-bi-report-filter.md
             - name: Gyors mértékek használata
               href: desktop-quick-measures.md
             - name: Feltételes eset paraméterek használata
@@ -453,6 +453,8 @@
               href: service-support-options.md
             - name: 10 tanács segítségkéréshez
               href: service-tips-for-finding-help.md
+            - name: Szolgáltatáskimaradásokkal kapcsolatos értesítések
+              href: service-interruption-notifications.md
         - name: A Power BI kiterjesztése
           items:
             - name: A Microsoft Flow és a Power BI
@@ -685,6 +687,8 @@
           items:
             - name: Többoldalas jelentés megtekintése
               href: paginated-reports-view-power-bi-service.md
+            - name: Támogatott adatforrások
+              href: paginated-reports-data-sources.md
             - name: Paraméterek használata
               href: paginated-reports-view-parameters.md
             - name: Önmaga és mások regisztrálása

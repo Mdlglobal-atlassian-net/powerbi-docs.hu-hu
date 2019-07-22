@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 6e28af5a03fd799f088d428f16621358c2a4f7c5
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: eec8f3b74646fa7f783888b95e95c1ed8d922260
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823308"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270991"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Beágyazott alkalmazás hibaelhárítása
 
@@ -26,7 +26,7 @@ Ez a cikk azokat a gyakori problémákat ismerteti, amelyek Power BI-tartalmak b
 
 A [Fiddler](http://www.telerik.com/fiddler) a Telerik ingyenes eszköze, amely a HTTP-adatforgalom figyelésére használható.  A Power BI API-k használatával megtekintheti a forgalmat az ügyfélszámítógépen. Az eszköz hibaüzenetek és egyéb, kapcsolódó információk megjelenítésére is képes.
 
-![Nyomon követés a Fiddlerrel](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
+![Nyomon követés a Fiddlerrel](media/embedded-troubleshoot/fiddler.png)
 
 ### <a name="f12-in-browser-for-front-end-debugging"></a>F12 billentyű a böngészőben a kezelőfelületen történő hibakereséshez
 

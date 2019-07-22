@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 68e21e14227aff538c56951249edbddc249d68eb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 0ef74a776e7220477a36d652ce1a48ebbf60c267
+ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497974"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "68362718"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Prémium szintű kapacitások monitorozása az alkalmazással
 
@@ -41,7 +41,7 @@ Legyen türelemmel. A metrikák telepítése és frissítése eltart néhány pe
 
 A Premium Capacity Metrics alkalmazás legutóbbi frissítési időpontjának ellenőrzéséhez kattintson a **Beállítások** > **Adatkészletek** > **Power BI Premium-kapacitásmetrikák** > **Frissítési előzmények** elemre. 
 
-![Frissítési előzmények a beállításokban](media/settings-refresh-history.png)
+![Frissítési előzmények a beállításokban](media/service-admin-premium-monitor-capacity/settings-refresh-history.png)
 
 A legutóbbi frissítés jelenik meg, vagy kattintson a **Frissítési előzmények** elemre az ütemezett és az igény szerinti frissítések megtekintéséhez.
 

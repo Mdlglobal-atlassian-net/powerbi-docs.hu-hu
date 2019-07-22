@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 695d1f219b3438f07125447db04aad3ba971683a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: dc1a034a062ca07fd9f31a847378913fd7ee4002
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61385383"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289843"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Diagnosztikai naplózás a Power BI Embedded szolgáltatáshoz az Azure-ban
 
@@ -22,7 +22,6 @@ Az [Azure-erőforrások diagnosztikai naplóinak](https://docs.microsoft.com/azu
 A diagnosztika több különféle helyzetben is használható, például:
 
 * Hosszan futó vagy hibás lekérdezések felismerése.
-* Hibák észlelése a kapacitás korlátjának elérésekor.
 * [Kapacitásmetrikák](https://powerbi.microsoft.com/blog/power-bi-developer-community-april-update/) származtatása.
 * Meghatározott adatkészletek használatának nyomon követése.
 
@@ -127,9 +126,6 @@ A Motor kategória választása esetén az erőforrás az alábbi eseményeket n
 | JobID | 0 | A folyamat feladatazonosítója. |
 | ObjectID | 464 | Objektumazonosító |
 | ObjectType | 802012 | ObjectType |
-| ObjectName | SalesLT Customer | ObjectName |
-| ObjectPath | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527.Model.SalesLT Customer | Objektum elérési útja. A szülők vesszővel tagolt listája, amely az objektum szülőjével kezdődik. |
-| ObjectReference | <Object><Table>SalesLT Customer</Table><Model>Model</Model><Database>5eaa550e-06ac-4adf-aba9-dbf0e8fd1527</Database></Object> | Objektumhivatkozás. Minden szülő esetében XML formátumban van kódolva, és az objektum leírására címkéket használ. |
 | EndTime | 2018-04-06T18:30:11.9137358Z | Az esemény befejezésének ideje. |
 | Időtartam | 0 | Az esemény időtartama (ezredmásodpercben). |
 | SessionType | Felhasználó | Munkamenet típusa (milyen entitás indította a műveletet). |
@@ -138,7 +134,6 @@ A Motor kategória választása esetén az erőforrás az alábbi eseményeket n
 | Severity | 0 | Egy kivétel súlyossági szintje. |
 | Siker | 1 | 1 = sikeres. 0 = sikertelen (például engedélyek ellenőrzésekor az 1 azt jelenti, hogy a művelet sikeres volt, a 0 pedig azt, hogy sikertelen). |
 | Hiba | 0 | Az adott esemény hibaszáma. |
-| TextData | SET DC_KIND=\"AUTO\";  SELECT  [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)]  FROM [SalesLT Customer (464)]; [Estimated size (volume marshalling bytes): 850 6800] | Az eseményhez tartozó szöveges adatok. |
 | ConnectionID | 3 | Egyedi kapcsolatazonosító. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | Annak az adatkészletnek az azonosítója, amelyben a felhasználó utasítása fut. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | A munkamenet GUID-azonosítója. |
@@ -146,8 +141,7 @@ A Motor kategória választása esetén az erőforrás az alábbi eseményeket n
 | ClientProcessID | null | Az ügyfélalkalmazás folyamatazonosítója. |
 | ApplicationName | null | Annak az ügyfélalkalmazásnak a neve, amely a kiszolgálóhoz való csatlakozást létrehozta. |
 | CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | A Power BI Embedded-kapacitás erőforrásának neve. |
-| RequestParameters |  |  |
-| RequestProperties |  |  |
+
 
 ### <a name="allmetrics"></a>AllMetrics
 
