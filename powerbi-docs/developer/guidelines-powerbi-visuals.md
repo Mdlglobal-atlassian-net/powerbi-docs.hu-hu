@@ -8,15 +8,41 @@ ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 03/10/2019
-ms.openlocfilehash: cf9a613e82b4f5b7ce9cc67f5b920760d01ccbf7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 07/16/2019
+ms.openlocfilehash: ea1ae18f877793da9ac47023c236ba8a24f78ccf
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61342765"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271187"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Útmutató Power BI-vizualizációkhoz
+Mielőtt [közzétenné](https://docs.microsoft.com/power-bi/developer/office-store) a vizualizációt az AppSource-on, hogy azt mások is felfedezhessék és használhassák, ügyeljen rá, hogy az útmutatók használatával magas színvonalú felhasználói élményt alakítson ki. 
+
+## <a name="context-menu"></a>Helyi menü
+A helyi menü egy jobb gombbal történő kattintással előhozható menü, amely akkor jelenik meg, amikor a felhasználó a vizualizáció fölé viszi a kurzort.
+A Power BI minden vizualizációnál engedélyezni kell a helyi menüt, hogy egységes felhasználói élményt nyújthasson. [Ebben a cikkben](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md) talál információt arról, hogyan adható hozzá helyi menü.
+
+
+## <a name="logo-guidelines"></a>Embléma-irányelvek
+
+Ez a szakasz az emblémák és logotipiák vizualizációkhoz való hozzáadásának részleteit ismerteti.
+
+> [!IMPORTANT]
+> Az emblémák *csak Szerkesztési módban* használhatók. Az emblémák *nem* jelennek meg Megtekintési módban.
+
+![Definíciók](media/guidelines-powerbi-visuals/definitions.png)
+
+![Ügyeljen az alábbiakra](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
+
+![Fontos megfontolások](media/guidelines-powerbi-visuals/things-to-avoid.png)
+
+![Méret és a formátum](media/guidelines-powerbi-visuals/size-and-format.png)
+
+![Margók és méretezés](media/guidelines-powerbi-visuals/margins-and-sizes.png)
+
+![Szerkesztési mód](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
+
 
 ## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Útmutató további vásárlásos Power BI-vizualizációkhoz
 
@@ -36,31 +62,13 @@ A fejlesztők az Értékesítői információ-központról tölthetik fel az IAP
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Mik az IAP-funkciókkal rendelkező Power BI-vizualizációk?
 
-Az IAP-vizualizációk **ingyenes funkciókat** kínáló, **ingyenes** vizualizációk. Ezen kívül speciális funkciókkal is rendelkeznek, amelyek használatához további díjat kell fizetni. A fejlesztőknek a vizualizáció leírásában értesíteniük kell a felhasználókat arról, hogy mely funkciók használatához van szükség további vásárlásra. A Microsoft jelenleg nem nyújt natív API-kat az alkalmazások és bővítmények vásárlásának támogatásához.
+Az IAP-vizualizációk *ingyenes funkciókat* kínáló, *ingyenes* vizualizációk. Ezen kívül speciális funkciókkal is rendelkeznek, amelyek használatához további díjat kell fizetni. A fejlesztőknek a vizualizáció leírásában értesíteniük kell a felhasználókat arról, hogy mely funkciók használatához van szükség további vásárlásra. A Microsoft jelenleg nem nyújt natív API-kat az alkalmazások és bővítmények vásárlásának támogatásához.
 
 A fejlesztők bármilyen külső fizetési rendszert használhatnak az ilyen vásárlásokhoz. További információt [üzletszabályzatunkban](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads) talál.
 
 > [!NOTE]
 > Az ingyenes funkciókkal vagy vizualizációkkal a vízjelek nem használhatóak. A vízjelek csak az érvényes licenc nélkül használt, fizetős funkciókkal használhatók. Azt javasoljuk, hogy egy előugró ablakot jelenítsen meg, amely a licenccel kapcsolatos adatokat tartalmazza, ha a speciális, fizetős funkciókat érvényes licenc nélkül használják.  
 
-## <a name="logo-guidelines"></a>Embléma-irányelvek
-
-Ez a szakasz az emblémák és logotipiák vizualizációkhoz való hozzáadásának részleteit ismerteti.
-
-> [!IMPORTANT]
-> Az emblémák **csak Szerkesztési módban** használhatók. Az emblémák **nem** jelennek meg Megtekintési módban.
-
-![Definíciók](media/guidelines-powerbi-visuals/definitions.png)
-
-![Ügyeljen az alábbiakra](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
-
-![Fontos megfontolások](media/guidelines-powerbi-visuals/things-to-avoid.png)
-
-![Méret és a formátum](media/guidelines-powerbi-visuals/size-and-format.png)
-
-![Margók és méretezés](media/guidelines-powerbi-visuals/margins-and-sizes.png)
-
-![Szerkesztési mód](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 ## <a name="best-practices"></a>Ajánlott eljárások
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 1e5f4a4fda8c6d11ead487ce2891e5c085463b75
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 81e079be6c8bec27c006c68eccb3ea1091b813df
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839602"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271217"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Lapszámozott jelentés közzététele a Power BI szolgáltatásban
 
@@ -79,7 +79,7 @@ Mint minden Power BI-jelentésnél, itt is érvényes, hogy ha a jelentésnek he
 
    ![A lapszámozott jelentés kezelése](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-manage.png)
 
-1. A részleteket és a további teendőket a Power BI szolgáltatásról szóló, [Átjáró telepítése](service-gateway-install.md) című cikkben találja meg.
+1. A részleteket és a következő lépéseket a [Mi az a helyszíni adatátjáró](service-gateway-onprem.md) című Power BI szolgáltatás-cikkben találja meg.
 
 ### <a name="gateway-limitations"></a>Átjárókra vonatkozó korlátozások
 

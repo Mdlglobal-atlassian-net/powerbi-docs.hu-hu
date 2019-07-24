@@ -1,5 +1,5 @@
 ---
-title: Aggregációk használata a Power BI Desktopban (előzetes verzió)
+title: Aggregációk használata a Power BI Desktopban
 description: Interaktív big data-elemzések végrehajtása a Power BI Desktopban
 author: davidiseminger
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f14b6878d44510631822dd26458bdaa17c1fe3a0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 54264a645160542d7bda6a964164af65bfa45dfd
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239592"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325219"
 ---
-# <a name="aggregations-in-power-bi-desktop-preview"></a>Aggregációk a Power BI Desktopban (előzetes verzió)
+# <a name="aggregations-in-power-bi-desktop"></a>Aggregációk a Power BI Desktopban
 
 A Power BI-ban az **aggregációk** olyan big data-elemzéseket tesznek lehetővé, amelyekre korábban nem volt lehetőség. Az **aggregációk** nagymértékben csökkenthetik a nagyméretű adatkészletek döntéshozáshoz szükséges feloldásának költségeit.
 
@@ -36,16 +36,6 @@ A táblaszintű tárolás használata általában az aggregációk funkcióval e
 Az aggregációk használata dimenziós modellek adatforrásaival történik, például adattárházakkal, data martokkal, és Hadoop-alapú big data-forrásokkal. Ez a cikk azt ismerteti, hogy miben különbözik az egyes adatforrások modellezése a Power BI-ban.
 
 A Power BI összes Importált forrásán és (nem többdimenziós) DirectQuery-forrásán használhatók aggregációk.
-
-## <a name="enabling-the-aggregations-preview-feature"></a>Az előzetes verziójú aggregációk funkció engedélyezése
-
-Az **aggregációk** egy előzetes verziójú funkció, amelyet engedélyezni kell a **Power BI Desktopban**. Az **aggregációk** funkció engedélyezéséhez válassza a **Fájl > Lehetőségek és beállítások > Lehetőségek > Előzetes verziójú funkciók** lehetőséget, majd jelölje be az **Összetett modellek** és az **Aggregációk kezelése** jelölőnégyzeteket. 
-
-![előzetes funkciók engedélyezése](media/desktop-aggregations/aggregations_01.jpg)
-
-Ahhoz, hogy a funkció engedélyezve legyen, újra kell indítania a **Power BI Desktopot**.
-
-![a változások érvénybe léptetéséhez újraindítás szükséges](media/desktop-composite-models/composite-models_03.png)
 
 ## <a name="aggregations-based-on-relationships"></a>Kapcsolatokon alapuló aggregációk
 
@@ -103,8 +93,10 @@ A *források közötti* kapcsolatok csak abban az esetben számítanak erősnek,
 
 Az olyan, *források közötti* aggregációs találatokat, amelyek nem függnek kapcsolatoktól, az oszlop szerinti csoportosításon alapuló aggregációról szóló későbbi bekezdés ismerteti.
 
-### <a name="aggregation-table-is-hidden"></a>Az aggregációs tábla rejtett
-A **Sales Agg** (Aggr. értékesítések) tábla rejtett. Az aggregációs tábláknak ajánlott mindig rejtettnek lenniük az adathalmaz fogyasztói előtt. A felhasználók és a lekérdezések nem az aggregációs, hanem a részlettáblára hivatkoznak, így nem is kell tudniuk arról, hogy létezik aggregációs tábla.
+### <a name="aggregation-tables-are-not-addressable"></a>Az összesítési táblák nem címezhetők
+Az adatkészlethez csak olvasási jogosultsággal rendelkező felhasználók nem kérdezhetik le az aggregációs táblákat. Ezzel elkerülhetők a biztonsági problémák az RLS használatánál. A felhasználók és a lekérdezések nem az aggregációs, hanem a részlettáblára hivatkoznak, így nem is kell tudniuk arról, hogy létezik aggregációs tábla.
+
+Ezért a **Sales Agg** táblának rejtettnek kell lennie. Ha nem rejtett, akkor az Aggregációk kezelése párbeszédpanel rejtettre állítja, amikor az Alkalmaz gombra kattint.
 
 ### <a name="manage-aggregations-dialog"></a>Az Aggregációk kezelése párbeszédablak
 A következő lépésben meghatározzuk az aggregációkat. Kattintson a jobb gombbal a **Sales Agg** (Aggr. értékesítések) táblára, majd válassza ki a helyi menüjéből az **Aggregációk kezelése** lehetőséget.
@@ -136,11 +128,7 @@ A párbeszédablak a következő jelentősebb ellenőrzéseket kényszeríti ki:
 * A kiválasztott részletoszlop adattípusának meg kell egyeznie az aggregációs oszlopéval, a Darabszám és a Tábla sorainak száma összegzési függvények kivéve. A Darabszám és a Tábla sorainak száma függvényeket csak egész szám típusú oszlopok esetén kínálja fel a rendszer, és nem kell megadni hozzájuk megfelelő adattípust.
 * Három vagy több táblát lefedő láncolt aggregációk nem engedélyezettek. Nem lehetséges például beállítani egy olyan aggregációt az **A táblára**, amely a **B táblára** hivatkozik, ha ebben a táblában találhatók **C táblára** hivatkozó aggregációk.
 * Nem engedélyezettek duplikált aggregációk, amelyek ugyanazt az összegzési funkciót használják, és ugyanarra a részlettáblára vagy részletoszlopra hivatkoznak.
-
-Az **aggregációk** funkció nyilvános előzetes verziójának ideje alatt az alábbi ellenőrzések is érvényben vannak. Ezeket az ellenőrzéseket szándékunkban áll eltávolítani az általános elérhetőségű verzióból.
-
-* Az aggregációk nem használhatók sorszintű biztonság (RLS) mellett. *A nyilvános előzetes verzió korlátozásai.*
-* A részlettábla tárolási módja csak DirectQuery lehet, Importált nem. *A nyilvános előzetes verzió korlátozásai.*
+* A részlettábla tárolási módja csak DirectQuery lehet, Importált nem.
 
 A legtöbb ilyen ellenőrzés kikényszerítése a legördülő menü elemeinek letiltásával és egy magyarázó elemleírás megjelenítésével történik, ahogyan a következő ábra mutatja.
 
@@ -149,6 +137,9 @@ A legtöbb ilyen ellenőrzés kikényszerítése a legördülő menü elemeinek 
 ### <a name="group-by-columns"></a>Csoportosítás oszlopok szerint
 
 Ebben a példában nem kötelező a három GroupBy (Csoportosítási szempont) bejegyzés, ugyanis az aggregációs működésre nincsenek hatással (kivéve a DISTINCTCOUNT (Eltérő értékek száma) példalekérdezésben, amely a következő képen látható). Ezek elsősorban a könnyebb olvashatóságot szolgálják. Az aggregációk a kapcsolatok alapján ezek nélkül a GroupBy (Csoportosítási szempont) bejegyzések nélkül is adnának vissza találatokat. Ez egy másfajta működés, mint a kapcsolatok nélküli aggregációk esetén, amelyet a cikk egy későbbi, a big data-példával foglalkozó része ismertet.
+
+### <a name="inactive-relationships"></a>Inaktív kapcsolatok
+Nem támogatott az inaktív kapcsolat által használt külsőkulcs-oszlop szerinti csoportosítás és a USERELATIONSHIP függvényre való támaszkodás az aggregációnál.
 
 ### <a name="detecting-whether-aggregations-are-hit-or-missed-by-queries"></a>Annak észlelése, hogy a lekérdezések az aggregációkból adnak-e vissza találatot vagy nem
 
@@ -191,6 +182,17 @@ Az aggregációk bizonyos esetekben hasznosak a DISTINCTCOUNT (Eltérő értéke
 
 ![példalekérdezés](media/desktop-aggregations/aggregations-code_07.jpg)
 
+### <a name="rls"></a>RLS
+A sorszintű biztonsági (RLS) kifejezéseknek a megfelelő működéshez mind az aggregációs táblát, mind a részletező táblát szűrniük kell. A példát követve az RLS-kifejezés működni fog a **Geography** táblán, mert a Geography a kapcsolatok szűrési oldalán van mind a **Sales**, mind a **Sales Agg** táblánál. Azok a lekérdezések, amelyek az aggregációs táblából kérnek le találatokat és azok, amelyek nem, sikeresen alkalmazzák az RLS-t.
+
+![az aggregációk kezelik a szerepköröket](media/desktop-aggregations/manage-roles.jpg)
+
+A **Product** táblán egy RLS-kifejezés csak a **Sales** táblát fogja szűrni, de nem szűri a **Sales Agg** táblát. Ez nem ajánlott. Azok a lekérdezések, amelyeket olyan felhasználók küldenek be, akik az adatkészletet ennek a szerepkörnek a használatával érik el, nem fogják tudni kihasználni az aggregációs találatokat. Mivel az aggregációs tábla a részletek tábla adatainak egy újabb reprezentációja, nem lenne biztonságos lekérdezésekre választ adni az aggregációs táblából, mert az RLS-szűrő nem alkalmazható.
+
+Magán a **Sales Agg** táblán futtatott RLS-kifejezés csak az aggregációs táblát szűrné, és nem a részletek táblát. Ez nem engedélyezett.
+
+![az aggregációk kezelik a szerepköröket](media/desktop-aggregations/filter-agg-error.jpg)
+
 ## <a name="aggregations-based-on-group-by-columns"></a>Oszlopok szerinti csoportosításon alapuló aggregációk 
 
 A Hadoop-alapú big data-modellek a dimenziós modellektől eltérő tulajdonságokkal rendelkeznek. Hogy elkerülhető legyen a nagy méretű táblák összekapcsolása, ezek legtöbbször nem függenek a kapcsolatok használatától. Helyette a dimenziós attribútumokat gyakran ténytáblákká denormalizálják. Az ilyen big data-modelleket oszlopok szerinti csoportosításon alapuló **aggregációkkal** lehet feloldani az interaktív elemzésekhez.
@@ -225,6 +227,10 @@ A következő lekérdezés azért az aggregációból ad vissza találatot, mert
 
 ![szűrő párbeszédablak](media/desktop-aggregations/aggregations_12.jpg)
 
+### <a name="rls"></a>RLS
+
+Az aggregációkhoz használható fent bemutatott, kapcsolatokon alapuló RLS-szabályok az oszlopok szerinti csoportosításon alapuló aggregációkra is alkalmazhatóak függetlenül attól, hogy az RLS-kifejezés az aggregációs táblát, a részletező táblát vagy mindkettőt szűri-e. A példában a **Driver Activity** táblára alkalmazott RLS-kifjezés használható a **Driver Activity Agg** tábla szűrésére is, mert az aggregációs táblában az összes oszloponkénti csoportosítást lefedi a részletező tábla. A **Driver Activity Agg** táblára alkalmazott RLS-szűrő azonban nem alkalmazható a **Driver Activity** táblára, ezért ez nem engedélyezett.
+
 ## <a name="aggregation-precedence"></a>Aggregációk prioritása
 
 Az aggregációk prioritásának köszönhetően egyetlen beágyazott lekérdezés több aggregációs táblát is figyelembe vehet.
@@ -232,8 +238,11 @@ Az aggregációk prioritásának köszönhetően egyetlen beágyazott lekérdez�
 Tekintse meg a következő példát. Ez egy több DirectQuery-forrást is tartalmazó [összetett modell](desktop-composite-models.md).
 
 * A **Driver Activity Agg2** (Aggr. sofőrtevékenység2) Importált tábla magas részletességre van állítva, mert a csoportosítási szempont alapját képező attribútumokból kevés van, és kicsi a számosságuk is. A sorok száma mindössze néhány ezer, így könnyedén elfér a memóriában tárolt gyorsítótárban. Ezeket az attribútumokat történetesen egy, a figyelem központjában álló vezetői irányítópult használja, így a rájuk irányuló lekérdezéseknek a lehető leggyorsabbnak kell lenniük.
-* A **Driver Activity Agg** (Aggr. sofőrtevékenység) tábla egy DirectQuery módú köztes aggregációs tábla. Több milliárd sort tartalmaz, és az oszlopcentrikus indexek használatával a forrásban van optimalizálva.
+* A **Driver Activity Agg** (Aggr. sofőrtevékenység) tábla egy DirectQuery módú köztes aggregációs tábla. Több milliárd sort tartalmaz az Azure SQL Data Warehouse-ban, és az oszlopcentrikus indexek használatával a forrásban van optimalizálva.
 * A **Driver Activity** (Sofőrtevékenység) tábla DirectQuery módú, és több billiárd sornyi IoT-adatot tartalmaz, amelyek forrása egy big data-rendszer. Részletezési lekérdezéseket szolgált ki, hogy az IoT-adatok egy kezelhető és szűrt környezetben legyenek megtekinthetők.
+
+> [!NOTE]
+> Azok a DirectQuery-aggregációs táblák, amelyek a részletező táblától eltérő adatforrást használnak, csak akkor vannak támogatva, ha az aggregációs tábla forrása egy SQL Server-, egy Azure SQL- vagy Azure SQL DW-forrás.
 
 Ez a modell viszonylag kicsi memóriaigényű, mégis egy hatalmas adatkészletet old fel. Ez egy kiegyensúlyozott architektúrát képvisel, mert az architektúra egyes komponenseinek erősségét kihasználva osztja szét a lekérdezési terhelést.
 
@@ -261,8 +270,6 @@ Az alábbi táblázatban a **Sales Agg** (Aggr. értékesítések) tábla **Aggr
 
 ![A Sales Agg (Aggr. értékesítések) aggregációs tábla](media/desktop-aggregations/aggregations-table_04.jpg)
 
-> Megjegyzés: Ennél a modellnél a **Date** (Dátum) táblának – mivel egy részlettábla – DirectQuery módban kell lennie ahhoz, hogy ki tudja tölteni az aggregációk kezelésének párbeszédablakát. Ez az előzetes verzió korlátozása, amelyet szándékunkban áll eltávolítani az általános elérhetőségű verzióból.
-
 ### <a name="query-examples"></a>Példák lekérdezésekre
 
 A következő lekérdezés azért az aggregációból ad vissza találatot, mert a CalendarMonth (NaptáriHónap) attribútumot lefedi az aggregációs tábla, és a CategoryName (KategóriaNév) elérhető one-to-many (egy-a-többhöz) kapcsolatokkal. A **SalesAmount** (Értékesítési összeg) Sum (Összeg) aggregációja van használatban.
@@ -285,9 +292,9 @@ Azok az **aggregációk**, amelyek kombinálják a DirectQuery és az Importált
 
 Az alábbi cikkek bővebben ismertetik az összetett modelleket, és a DirectQuery részletes leírását is tartalmazzák.
 
-* [Összetett modellek a Power BI Desktopban (előzetes verzió)](desktop-composite-models.md)
-* [Több-a-többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md)
-* [Tárolási mód a Power BI Desktopban (előzetes verzió)](desktop-storage-mode.md)
+* [Összetett modellek a Power BI Desktopban](desktop-composite-models.md)
+* [Több a többhöz kapcsolatok a Power BI Desktopban](desktop-many-to-many-relationships.md)
+* [Tárolási mód a Power BI Desktopban](desktop-storage-mode.md)
 
 A DirectQuery-vel kapcsolatos cikkek:
 

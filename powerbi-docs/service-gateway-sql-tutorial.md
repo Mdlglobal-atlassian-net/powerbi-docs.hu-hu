@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
-ms.date: 05/03/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1c77c272bf5c03ce7df0a5173d194a4c0583ccf2
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 54ef11b51fb02b6913b4d591967a140c5affc1b8
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596637"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68307402"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Adatok frissítése helyszíni SQL Server-adatbázisból
 
@@ -36,7 +36,7 @@ A jelen oktatóanyagban az alábbi lépéseket fogja végrehajtani:
 - Mielőtt nekikezdene az oktatóanyagnak, regisztráljon a [Power BI ingyenes próba-előfizetésére](https://app.powerbi.com/signupredirect?pbi_source=web), ha még nem rendelkezik vele.
 - [Telepítse a Power BI Desktopot](https://powerbi.microsoft.com/desktop/) egy helyi számítógépen.
 - [Telepítse az SQL Servert](/sql/database-engine/install-windows/install-sql-server) egy helyi számítógépen, és állítsa vissza a [mintaadatbázist egy biztonsági másolatból](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). Az AdventureWorksszel kapcsolatos további információkért tekintse meg az [AdventureWorks telepítését és konfigurálását](/sql/samples/adventureworks-install-configure) ismertető témakört.
-- [Telepítsen egy helyszíni adatátjárót](service-gateway-install.md) azon a helyi számítógépen, amelyen az SQL Servert is telepítette (éles környezetben ez általában egy másik számítógép lenne).
+- [Telepítsen egy helyszíni adatátjárót](service-gateway-onprem.md) azon a helyi számítógépen, amelyen az SQL Servert is telepítette (éles környezetben ez általában egy másik számítógép lenne).
 
 > [!NOTE]
 > Ha Ön nem átjáró-rendszergazda, és nem szeretné saját maga telepíteni az átjárót, forduljon a szervezet átjáró-rendszergazdájához. Ő létrehozhatja az adathalmaznak az SQL Server-adatbázishoz való csatlakoztatásához szükséges adatforrás-definíciót.
@@ -202,6 +202,6 @@ Ha a továbbiakban nem kívánja használni a mintaadatokat, törölje az adatb�
 
 Ebben az oktatóanyagban megtudta, hogyan importálhat adatokat helyszíni SQL Server-adatbázisból Power BI-adathalmazba, és hogyan frissítheti az adathalmazt ütemezetten vagy igény szerint az őt használó jelentések és irányítópultok naprakészen tartásához a Power BI-ban. A továbbiakban alaposabban megismerkedhet az adatátjárók és adatforrások Power BI-ban történő kezelésével. Érdemes lehet áttekinteni az „Adatfrissítés a Power BI-ban” című elméleti cikket.
 
-- [Helyszíni Power BI-átjáró kezelése](service-gateway-manage.md)
+- [Helyszíni adatátjáró kezelése](/data-integration/gateway/service-gateway-manage)
 - [Adatforrások kezelése – Importálás/ütemezett frissítés](service-gateway-enterprise-manage-scheduled-refresh.md)
 - [Adatfrissítés a Power BI-ban](refresh-data.md)
