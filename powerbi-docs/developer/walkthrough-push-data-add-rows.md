@@ -311,7 +311,7 @@ Az alábbiakban megtalálja a [teljes kódlistát](#code).
     }
 ```
 
-Bár a fenti kódban azt adtuk meg, hogy ** _//beszerezzük az első azonosítót_** , a megfelelő eljárás a név szerinti keresés az adathalmazban.
+Bár a fenti kódban azt adtuk meg, hogy **_//beszerezzük az első azonosítót_** , a megfelelő eljárás a név szerinti keresés az adathalmazban.
 
 ## <a name="next-steps"></a>Következő lépések
 [Adatok elküldése egy Power BI-irányítópultba](walkthrough-push-data.md)  
