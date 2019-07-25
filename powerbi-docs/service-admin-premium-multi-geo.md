@@ -10,14 +10,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7735ce3d6d28f51ca95efbe12394c2e0cb2cba29
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fcef4b7bc9feaee0912a8e0e9ea8098d52c66e3a
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564950"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289835"
 ---
-# <a name="configure-multi-geo-support-for-power-bi-premium"></a>A Power BI Premium Multi-földrajzi támogatásának konfigurálása
+# <a name="configure-multi-geo-support-for-power-bi-premium"></a>Multi-Geo-támogatás konfigurálása a Power BI Premiumhoz
 
 A Multi-Geo a Power BI Premium funkciója, amely segít a nemzetközi ügyfeleknek a regionális, üzletág-specifikus vagy vállalati adatok tárolási helyére vonatkozó előírások betartásában. Power BI Premium-ügyfélként a Power BI-bérlője saját régióján kívüli régiókban lévő adatközpontokban is helyezhet üzembe tartalmat. Egy geo (földrajzi értelemben) egynél több régiót is tartalmazhat. Az Egyesült Államok például egy geo, az USA nyugati középső régiója és az USA déli középső régiója pedig az Egyesült Államokon belüli régió. A tartalom üzembe helyezéséhez az alábbi helyek bármelyikét választhatja:
 
@@ -35,7 +35,7 @@ A Multi-Geo nem elérhető a Power BI Germany, a 21Vianet által üzemeltetett P
 
 A Multi-Geo már a Power BI Embeddedben is elérhető. További információ: [Multi-Geo-támogatás a Power BI Embedded számára](developer/embedded-multi-geo.md).
 
-## <a name="enable-and-configure"></a>Engedélyezése és konfigurálása
+## <a name="enable-and-configure"></a>Engedélyezés és konfigurálás
 
 Új kapacitásokat érhet el, ha a legördülő listából az alapértelmezettől eltérő régiót választva engedélyezi a Multi-Geo használatát.  Minden elérhető kapacitásnál megjelenik a régió, ahol jelenleg elhelyezkedik, például az **USA nyugati középső régiója**.
 
@@ -68,7 +68,7 @@ A következő elemek a bérlő saját régiójában maradnak:
 - Engedélyek
 - Adathalmaz hitelesítő adatai
 
-## <a name="view-capacity-regions"></a>Kapacitás régiók megtekintése
+## <a name="view-capacity-regions"></a>Kapacitások és régiók megtekintése
 
 A felügyeleti portálom megtekinthető a Power BI-bérlő összes kapacitása, és a régiók, ahol azok jelenleg elhelyezkednek.
 
@@ -94,7 +94,7 @@ A munkaterületek kétféle módon vonhatók ki a Multi-Geo-kapacitásból:
 - A távoli régiókban tárolt gyorsítótárazott lekérdezések inaktív állapotban abban a régióban maradnak. Más átvitt adatok azonban oda-vissza mozoghatnak több földrajzi hely között.
 - Ha Multi-Geo-környezetben adatot mozgat egy régióból egy másikba, a forrásadatok akár 30 napon át is megmaradhatnak abban a régióban, ahonnan mozgatta őket. Ebben az időszakban a végfelhasználók nem férnek hozzájuk. A 30 napos időszak után az adatok el lesznek távolítva ebből a régióból, és meg lesznek semmisítve.
 - A Multi-Geo általában nem eredményez jobb teljesítményt. A jelentések és irányítópultok betöltéséhez továbbra is szükségesek a saját régióból lekért metaadatok.
-- Az [adatfolyamok](service-dataflows-overview.md) funkció (előzetes verzió) jelenleg nem támogatott Multi-GEO használatával.
+- Az [adatfolyamok](service-dataflows-overview.md) funkció jelenleg nem támogatott Multi-GEO használatával.
 
 ## <a name="next-steps"></a>Következő lépések
 

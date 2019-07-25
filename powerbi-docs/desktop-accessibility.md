@@ -7,73 +7,74 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 06/17/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 54c842a91684eec1cf60eca4442592500d1bcb11
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d67ca5a4c8014dc295f3ffc458eca3dc5496282a
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770412"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68307163"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Akadálymentesség a Power BI Desktop-jelentésekben
 A Power BI rendelkezik olyan funkciókkal, amelyek lehetővé teszik a fogyatékkal élők számára, hogy könnyedén használják és kezeljék a Power BI-jelentéseket. A funkciók közé tartozik az a lehetőség, hogy a jelentések billentyűzettel vagy képernyőolvasóval is használhatók legyenek, az oldalak objektumai léptetéssel emelhetők ki, és a jelölők használata átgondolt a vizualizációkban.
 
-![Különböző jelölők használata a vonal- és területdiagramokhoz az akadálymentesítés érdekében](media/desktop-accessibility/accessibility_01.png)
+![Különböző jelölők használata a vonal- és területdiagramokhoz az akadálymentesítés érdekében](media/desktop-accessibility/accessibility-01.png)
 
 ## <a name="consuming-a-power-bi-desktop-report-with-a-keyboard-or-screen-reader"></a>Power BI Desktop-jelentések használata billentyűzet vagy képernyőolvasó segítségével
-A **Power BI Desktop** 2017. szeptemberi kiadásával kezdve a **?** billentyű lenyomásával megjeleníthet egy ablakot, amely ismerteti a **Power BI Desktopban** elérhető akadálymentességi billentyűparancsokat.
+A **Power BI Desktop** 2017. szeptemberi kiadásával kezdve a **Shift+?** billentyűkombináció lenyomásával megjeleníthet egy ablakot, amely ismerteti a **Power BI Desktopban** elérhető akadálymentességi billentyűparancsokat.
 
-![A ? billentyű lenyomásával a Power BI Desktopban megjelenítheti az akadálymentességi billentyűparancsokat](media/desktop-accessibility/accessibility_03.png)
+![A Shift + ? billentyűkombináció lenyomásával a Power BI Desktopban megjelenítheti az akadálymentességi billentyűparancsokat](media/desktop-accessibility/accessibility-03.png)
 
 Az akadálymentességi fejlesztéseknek köszönhetően a Power BI-jelentések billentyűzettel vagy képernyőolvasóval is használhatók az alábbi technikák segítségével:
 
-A jelentések megtekintésekor általában előnyös, ha ki van kapcsolva a vizsgálati mód.
+> [!NOTE]
+> A jelentések megtekintésekor általában előnyös, ha ki van kapcsolva a vizsgálati mód.
 
 Fókuszt válthat a jelentés lapfülei vagy egy adott jelentésoldal objektumai között a **Ctrl+F6** billentyűkombinációval.
 
-* Ha a fókusz a *jelentés lapfülein* van, a *Tab* vagy a *nyíl*billentyűk használatával válthat fókuszt az egyik jelentésoldalról a következőre. A képernyőolvasó felolvassa a jelentésoldal címét, valamint azt, hogy jelenleg ki van-e választva. A jelenleg aktív lévő jelentésoldal betöltéséhez nyomja le az *Enter* vagy a *Szóköz* billentyűt.
-* Ha a fókusz egy betöltött *jelentésoldalon* van, a *Tab* billentyű használatával válthat fókuszt az oldal egyes objektumaira, beleértve a szövegdobozokat, képeket, alakzatokat és diagramokat. A képernyőolvasó felolvassa az objektum típusát, az objektum címét, ha van címe és az objektum leírását, ha a jelentés szerzője létrehozta azt. 
+* Ha a fókusz a jelentés lapfülein van, a **Tab** vagy a **nyílbillentyűk** használatával válthat fókuszt az egyik jelentésoldalról a következőre. A képernyőolvasó felolvassa a jelentésoldal címét, valamint azt, hogy jelenleg ki van-e választva. A jelenleg fókuszban lévő jelentésoldal betöltéséhez nyomja le az **Enter** vagy a Szóköz billentyűt.
+* Ha a fókusz egy betöltött jelentésoldalon van, a **Tab** billentyűvel válthat fókuszt az oldal egyes objektumaira, beleértve a szövegdobozokat, képeket, alakzatokat és diagramokat is. A képernyőolvasó felolvassa az objektum típusát és annak címét (amennyiben rendelkezik ilyennel). A képernyőolvasó emellett felolvassa az objektum leírását, ha a jelentés szerzője létrehozta azt. 
 
-A vizualizációk között navigálva megnyomhatja az **Alt+Shift+F10** billentyűkombinációt, hogy a kurzor a vizualizáció fejlécére kerüljön, ahol különféle lehetőségek állnak rendelkezésre, például leválogatás, a diagram alapjául szolgáló adatok exportálása és fókusz mód. 
+A vizualizációk között váltogatva az **Alt+Shift+F10** billentyűparanccsal a vizualizáció fejlécére helyezheti a fókuszt. A vizualizáció fejlécén különféle lehetőségek állnak rendelkezésre, például leválogatás, a diagram alapjául szolgáló adatok exportálása és fókusz mód. 
 
-![A Power BI Desktopban nyomja le az Alt + Shift + F10 billentyűparancsot a fókusz a vizualizáció fejlécére való helyezéséhez](media/desktop-accessibility/accessibility_08.png)
+![A Power BI Desktopban nyomja le az Alt+Shift+F10 billentyűparancsot a fókusz a vizualizáció fejlécére való helyezéséhez](media/desktop-accessibility/accessibility-08.png)
 
-Az **Alt+Shift+F11** billentyűkombinációval megjelenítheti az *Adatok megjelenítése* ablak akadálymentesített verzióját. Ez lehetővé teszi a vizualizációban használt adatok feltárását egy HTML-táblában, ugyanazokkal a billentyűparancsokkal, amelyeket máskor is használni szokott a képernyőolvasóban. 
+Az **Alt+Shift+F11** billentyűkombinációval megjelenítheti az **Adatok megjelenítése** ablak akadálymentesített verzióját. Ez lehetővé teszi a vizualizációban használt adatok feltárását egy HTML-táblában, ugyanazokkal a billentyűparancsokkal, amelyeket máskor is használni szokott a képernyőolvasóban. 
 
-![Az Alt+Shift+F11 billentyűkombináció lenyomásával a Power BI Desktopban az egyes vizualizációk Adatok megjelenítése ablakának akadálymentesített változatát jelenítheti meg](media/desktop-accessibility/accessibility_04.png)
+![Az Alt+Shift+F11 billentyűkombináció lenyomásával a Power BI Desktopban az egyes vizualizációk Adatok megjelenítése ablakának akadálymentesített változatát jelenítheti meg](media/desktop-accessibility/accessibility-04.png)
 
 > [!NOTE]
-> Az Adatok megjelenítése funkció a képernyőolvasóban csak ezzel a billentyűparanccsal érhető el. Ha az Adatok megjelenítése funkciót a vizualizáció fejlécében lévő beállítással nyitja meg, akkor az nem lesz elérhető a képernyőolvasó számára. Ha bekapcsolja a vizsgálati módot az Adatok megjelenítése funkció használata alkalmával, minden olyan billentyűparancsot használhat, amely elérhető a képernyőolvasóban.
+> Az **Adatok megjelenítése** funkció a képernyőolvasóban csak ezzel a billentyűparanccsal érhető el. Ha az **Adatok megjelenítése** funkciót a vizualizáció fejlécében lévő beállítással nyitja meg, akkor az nem lesz elérhető a képernyőolvasó számára. Ha bekapcsolja a vizsgálati módot az **Adatok megjelenítése** funkció használata alkalmával, minden olyan billentyűparancsot használhat, amely elérhető a képernyőolvasóban.
 
-A **Power BI Desktop** 2018. júliusi verziójától kezdve az akadálymentességi funkciók a szeletelőkbe is be vannak építve. Egy kijelölt szeletelő értékének beállításakor a Ctrl+jobb nyíl (a Ctrl és a jobbra mutató nyíl billentyű) használatával lehet végiglépkedni a szeletelő különböző vezérlőin. Ha például először a Ctlr+jobb nyíl kombinációt nyomja le, akkor a radír ikon lesz kiemelve, és a SZÓKÖZ billentyű lenyomása azzal egyenértékű, mintha a radírra kattintott volna. Ezzel minden értéket töröl a szeletelőn. 
+A **Power BI Desktop** 2018. júliusi verziójától kezdve az akadálymentességi funkciók a szeletelőkbe is be vannak építve. Egy kijelölt szeletelő értékének beállításakor a **Ctrl+jobb nyílbillentyű** használatával lehet végiglépkedni a szeletelő különböző vezérlőin. Amikor például először nyomja le a **Ctrl+jobb nyílbillentyű** kombinációt, a fókusz a radírra kerül. A szóköz billentyű lenyomása ekkor azzal egyenértékű, mintha a radírra kattintott volna. Ezzel minden értéket töröl a szeletelőn. 
 
-Egy szeletelő vezérlőiben a TAB billentyűvel lépkedhet. Ha a radír ikonon állva nyomja le a TAB billentyűt, továbblép a legördítő gombra. A TAB ismételt lenyomásával továbblép a szeletelő első értékére (ha a szeletelőhöz több érték, például egy tartomány tartozik). 
+Egy szeletelő vezérlőiben a **Tab** billentyűvel lépkedhet. Ha a radír ikonon állva nyomja le a **Tab** billentyűt, továbblép a legördítő gombra. A **Tab** ismételt lenyomásával továbblép a szeletelő első értékére (ha a szeletelőhöz több érték, például egy tartomány tartozik). 
 
-![A Power BI Desktopban a Ctrl+jobb nyíl billentyű lenyomásával állíthatók be egy szeletelő elemei vagy értékei. Az elem kiválasztásához és értéke beállításához nyomja le a SZÓKÖZ billentyűt.](media/desktop-accessibility/accessibility_07.png)
+![A Power BI Desktopban a Ctrl+jobb nyílbillentyű lenyomásával állíthatók be egy szeletelő elemei vagy értékei. Az elem kiválasztásához és értéke beállításához nyomja le a szóköz billentyűt](media/desktop-accessibility/accessibility-07.png)
 
-Ezek az akadálymentesítési kiegészítések azért készültek, hogy a felhasználók képernyőolvasó és billentyűzetnavigáció segítségével is teljes mértékben használhassák a Power BI-jelentéseket.
+Ezekkel az akadálymentesítési kiegészítésekkel a felhasználók képernyőolvasó és billentyűzetnavigáció segítségével is teljes mértékben használhatják a Power BI-jelentéseket.
 
 ## <a name="tips-for-creating-accessible-reports"></a>Akadálymentesített jelentések létrehozásával kapcsolatos tippek
 Az alábbi tippek segítségével olyan **Power BI Desktop** jelentéseket hozhat létre, amelyek akadálymentesebbek.
 
 ### <a name="general-tips-for-accessible-reports"></a>Általános tippek az akadálymentesített jelentésekhez
 
-* A **Vonal**, **Terület** és **Kombinált** vizualizációkhoz, valamint a **Pont** és **Buborék** vizualizációkhoz kapcsolja be a jelölőket, és használjon eltérő *Jelölőalakzatot* minden vonalhoz.
+* A **Vonal**, **Terület** és **Kombinált** vizualizációkhoz, valamint a **Pont** és **Buborék** vizualizációkhoz kapcsolja be a **Jelölők megjelenítése** beállítást, és használjon eltérő **Jelölőalakzatot** minden vonalhoz.
   
-  * A *Jelölők* bekapcsolásához válassza ki a **Formátum** szakaszt a **Vizualizációk** panelen, bontsa ki az **Alakzatok** szakaszt, majd görgessen lefelé a **Jelölők** kapcsolóig, és állítsa *Be* állapotba.
-  * Ezután válassza ki az egyes vonalak (vagy területek, ha **Terület** diagramot használ) nevét a legördülő listából az **Alakzatok** szakaszban. A legördülő lista alatt megadhatja az adott vonalhoz használt jelölő számos beállítását, például az alakját, a színét és a méretét.
+  * A **Jelölők megjelenítése** beállítás bekapcsolásához válassza a **Formázás** panel **Vizualizációk** szakaszát, és bontsa ki az **Alakzatok** szakaszt. Görgessen le a **Jelölők megjelenítése** beállításhoz, majd kapcsolja **be**.
+  * Az egyes sorok testreszabásához keresse meg a **Sorozatok testreszabása** beállítást, és kapcsolja **be**. Ezután válassza ki az egyes vonalak (vagy területek, ha **Terület** diagramot használ) nevét a legördülő listából az **Alakzatok** szakaszban. A legördülő lista alatt megadhatja az adott vonalhoz használt jelölő számos beállítását, például az alakját, a színét és a méretét.
   
-  ![Különböző jelölők használata a vonal- és területdiagramokhoz az akadálymentesítés érdekében](media/desktop-accessibility/accessibility_01.png)
+    ![Különböző jelölők használata a vonal- és területdiagramokhoz az akadálymentesítés érdekében](media/desktop-accessibility/accessibility-format-section.png)
   
-  * A különböző *jelölőalakzatok* használata az egyes vonalakhoz megkönnyíti a jelentés használóinak a vonalak (vagy területek) elkülönítését egymástól.
+  * A különböző **jelölőalakzatok** használata az egyes vonalakhoz megkönnyíti a jelentés használóinak a vonalak (vagy területek) elkülönítését egymástól.
 * Az előző pontból következik az is, hogy ne használjon színt információ közlésére. Az alakzatok, vonal- és pontdiagramok használatán túl az is fontos, hogy ne alkalmazzon feltételes formázást a táblákban és matricákban a betekintő adatok biztosítására. 
 * Válasszon ki egy szándékolt rendezési sorrendet a jelentésben szereplő minden vizualizációhoz. Amikor a képernyőolvasót használók a diagram alapjául szolgáló adatokat böngészik, azok ugyanabban a rendezési sorrendben fognak sorra kerülni, mint a vizualizációban.
-* Válasszon olyan *témát* a témakatalógusból, ami kontrasztos és színvakbarát, és importálja a [**Témák** előzetes verzióként elérhető szolgáltatás](desktop-report-themes.md) segítségével.
-* A jelentés minden objektumához adjon meg *helyettesítő szöveget*. Ezzel biztosíthatja, hogy a jelentése felhasználói megértsék, mi a kommunikációs célja a vizualizációval, akkor is, ha nem látják a vizualizációt, a képet, az alakzatot vagy a szövegdobozt. A **Power BI Desktop** jelentés bármely objektumához megadhat *helyettesítő szöveget*, ha kijelöli az objektumot (például vizualizációt, alakzatot stb.), és a **Vizualizációk** panelen kiválasztja a **Formázás** szakaszt, kibontja az **Általános** elemet, majd legörget az aljára, és kitölti a **Helyettesítő szöveg** szövegdobozt.
+* Válasszon olyan témát a témakatalógusból, amely kontrasztos és színvakbarát. Importálja a [**Témák** előzetes verzióként elérhető szolgáltatás](desktop-report-themes.md) segítségével.
+* A jelentés minden objektumához adjon meg helyettesítő szöveget. Ezzel biztosíthatja, hogy a jelentése felhasználói megértsék, mi a kommunikációs célja a vizualizációval. Ez akkor is jól jöhet, ha nem látják a vizualizációt, a képet, az alakzatot vagy a szövegdobozt. A **Power BI Desktop**-jelentés bármely objektumához megadhat helyettesítő szöveget, ha kijelöli az objektumot (például vizualizációt, alakzatot stb.), és a **Vizualizációk** panelen kiválasztja a **Formázás** szakaszt. Ezután bontsa ki az **Általános** elemet, görgessen az aljára, és töltse ki a **Helyettesítő szöveg** szövegdobozt.
   
-  ![Egy jelentés bármely objektumához a Vizualizációk > Formázás > Általános > Helyettesítő szöveg mezőben adhat meg helyettesítő szöveget](media/desktop-accessibility/accessibility_02.png)
+  ![Egy jelentés bármely objektumához a Vizualizációk > Formázás > Általános > Helyettesítő szöveg mezőben adhat meg helyettesítő szöveget](media/desktop-accessibility/accessibility-02.png)
 * Győződjön meg arról, hogy elég kontraszt legyen a jelentéseiben a szöveg és a háttérszínek között. Többféle eszköz, például a [Color Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/) (Színkontrasztelemző) is rendelkezésre áll a jelentés színeinek ellenőrzésére. 
 * Könnyen olvasható szövegméretet és betűtípusokat használjon. A kis betűméret vagy a nehezen olvasható betűtípusok nehezítik a használatot.
 * Adjon meg címet, tengelyfeliratokat és adatfeliratokat minden vizualizációhoz.
@@ -83,115 +84,112 @@ Az alábbi tippek segítségével olyan **Power BI Desktop** jelentéseket hozha
 ### <a name="arranging-items-in-field-buckets"></a>Elemek elrendezése mező gyűjtőkbe
 A **Power BI Desktop** 2018. októberi kiadásától kezdve a **Mezők** területen navigálhat a billentyűzettel, és képernyőolvasókat használhat. 
 
-A jelentések képernyőolvasókkal való létrehozási folyamatának javítása érdekében elérhető egy helyi menü, amely lehetővé teszi a területen lévő mezők felfelé vagy lefelé mozgatását a **Mezők** listában, vagy a mező más területekre (például a **Jelmagyarázat**, az **Érték** vagy más területekre) mozgatását.
+Emellett helyi menüt is igénybe vehet, amely megkönnyíti a jelentések képernyőolvasókkal történő létrehozását. A menü lehetővé teszi, hogy a **Mezők** listában felfelé vagy lefelé mozgasson mezőket. Emellett más területre is áthelyezheti a mezőket, például a **Jelmagyarázat** vagy az **Érték** területre.
 
-![A Mezők területen lévő helyi menüvel a mezőket felfelé, lefelé vagy más területre mozgathatja](media/desktop-accessibility/accessibility_09.png)
+![A Mezők területen lévő helyi menüvel a mezőket felfelé, lefelé vagy más területre mozgathatja](media/desktop-accessibility/accessibility-09.png)
 
 ## <a name="high-contrast-support-for-reports"></a>Kontrasztos megjelenítés a jelentésekhez
 
 Ha kontrasztos üzemmódot használ a Windowsban, akkor a rendszer a kiválasztott beállításokat és palettát a **Power BI Desktop** jelentéseire is alkalmazza. 
 
-![A Windows kontrasztos beállítása](media/desktop-accessibility/accessibility_05.png)
+![A Windows kontrasztos beállítása](media/desktop-accessibility/accessibility-05.png)
 
 A **Power BI Desktop** automatikusan észleli, milyen kontrasztos témát használ a Windowsban, és alkalmazza ezeket a beállításokat a jelentésekre. Ezek a kontrasztos színek megmaradnak a jelentésben a Power BI szolgáltatásban vagy máshol való közzétételkor.
 
-![A Windows kontrasztos beállítása](media/desktop-accessibility/accessibility_05b.png)
+![A Windows kontrasztos beállítása](media/desktop-accessibility/accessibility-05b.png)
 
-A Power BI szolgáltatás megpróbálja a Windowshoz kiválasztott kontrasztos beállításokat is felderíteni, de ennek a felderítésnek a hatékonysága és pontossága a Power BI szolgáltatáshoz használt böngészőbeállításoktól függ. Ha manuálisan szeretné beállítani a témát a Power BI szolgáltatásban, kiválaszthatja a **Nézet > Kontrasztos színes** beállítást, majd a témát, amelyet a jelentésre szeretne alkalmazni.
+A Power BI szolgáltatás észleli a Windowsban beállított kontrasztos beállítást. Az észlelés hatékonysága és pontossága a Power BI szolgáltatást megjelenítő böngészőtől függ. Ha manuálisan szeretné beállítani a témát a Power BI szolgáltatásban, kiválaszthatja a **Nézet** > **Kontrasztos színek** beállítást, majd a témát, amelyet a jelentésre szeretne alkalmazni.
 
-![Kontrasztos megjelenítés beállítása a Power BI szolgáltatásban](media/desktop-accessibility/accessibility_06.png)
-
-Miután megnyitotta a **Power BI Desktop** alkalmazást, vegye észere, hogy bizonyos területek, például a **Vizualizációk** és a **Mezők** nem a kiválasztott kontrasztos Windows-színsémákat használják.
-
+![Kontrasztos megjelenítés beállítása a Power BI szolgáltatásban](media/desktop-accessibility/accessibility-06.png)
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
-Az akadálymentességi funkciók néhány ismert hibáját és korlátait az alábbi lista ismerteti:
+Az akadálymentességi funkciók rendelkeznek néhány ismert hibájával és korláttal. Ezek leírását az alábbi lista ismerteti:
 
-* Ha képernyőolvasót használ a **Power BI Desktoppal**, a legjobb élményben új lesz része, ha a választott képernyőolvasót még azelőtt megnyitja, mielőtt bármilyen fájlt megnyitott volna a Power BI Desktopban.
-* Ha narrátort használ, akkor néhány korlátozás van érvényben az Adatok megjelenítése adatainak HTML-táblaként való böngészésekor.
+* Ha képernyőolvasót használ a **Power BI Desktoppal**, a legjobb élményben új lesz része, ha a képernyőolvasót még azelőtt megnyitja, mielőtt bármilyen fájlt megnyitott volna a **Power BI Desktopban**.
+* Ha narrátort használ, akkor néhány korlátozás van érvényben az **Adatok megjelenítése** adatainak HTML-táblaként való böngészésekor.
 
 ## <a name="keyboard-shortcuts"></a>Billentyűparancsok
-A billentyűparancsok segítenek a Power BI-jelentésekben a billentyűzettel való navigálásban. Az alábbi táblázatok a Power BI-jelentésekben elérhető billentyűparancsokat ismertetik. Ezek a billentyűparancsok a Power BI Desktopon kívül a következő felületeken is működnek:
+A billentyűparancsok segítenek a Power BI-jelentésekben a billentyűzettel való navigálásban. Az alábbi táblázatok a Power BI-jelentésekben elérhető billentyűparancsokat ismertetik. Ezek a billentyűparancsok a **Power BI Desktopon** kívül a következő felületeken is működnek:
 
-* Q & A Explorer párbeszédpanel
-* Első lépések párbeszédpanel
-* Fájl menü és Névjegy párbeszédpanel
-* Figyelmeztetés sáv
-* Fájlvisszaállítás párbeszédpanel
-* Rosszallások párbeszédpanel
+* **Q&A Explorer** párbeszédpanel
+* **Első lépések** párbeszédpanel
+* **Fájl** menü és **Névjegy** párbeszédpanel
+* **Figyelmeztetés** sáv
+* **Fájlvisszaállítás** párbeszédpanel
+* **Rosszallások** párbeszédpanel
 
 Az akadálymentesség javítására való folyamatos törekvésünk jegyében a fenti felületek a képernyőolvasókat és a kontrasztos beállításokat is támogatják.
 
 
 ### <a name="frequently-used-shortcuts"></a>Gyakran használt billentyűparancsok
-| Cél           | Billentyűparancs                |
+| A művelet menete           | Billentyűparancs                |
 | :------------------- | :------------------- |
-| Fókusz áthelyezése a szakaszok között  | Ctrl + F6 |
-| Fókusz mozgatása előre a szakaszban | Tab         |
-| Fókusz mozgatása visszafelé a szakaszban | Shift + Tab |
-| Objektum kijelölése, vagy a kijelölésének megszüntetése | Enter vagy szóköz |
-| Objektumok többszörös kijelölése | Ctrl + szóköz |
+| Fókusz áthelyezése a szakaszok között  | **Ctrl+F6** |
+| Fókusz mozgatása előre a szakaszban | **Tab**         |
+| Fókusz mozgatása visszafelé a szakaszban | **Shift+Tab** |
+| Objektum kijelölése vagy a kijelölés törlése | **Enter** vagy **szóköz** |
+| Objektumok többszörös kijelölése | **Ctrl+szóköz** |
 
 ### <a name="on-visual"></a>A vizualizációban
-| Cél           | Billentyűparancs                |
+| A művelet menete           | Billentyűparancs                |
 | :------------------- | :------------------- |
-| Fókusz áthelyezése a Vizualizáció menüre | Alt + Shift + F10 |
-| Adatok megjelenítése | Alt + Shift + F11  |
-| Vizualizáció megadása | Ctrl + Jobbra nyíl |
-| Réteg megadása | Adat |
-| Kilépés a rétegből vagy vizualizációból | Esc |
-| Adatpont kijelölése vagy a kijelölésének megszüntetése | Enter vagy szóköz |
-| Többszörös kijelölés | Ctrl + Enter vagy Ctrl + Szóköz |
-| Jobb gombos kattintás | <ul><li>Windows-billentyűzet: Windows helyi menü billentyű + F10.  A Windows helyi menü billentyű a bal oldali Alt billentyű és a Balra nyílbillentyű között van</li><li>Más billentyűzeten: Shift + F10</li></ul> |
-| Kijelölés törlése | Ctrl + Shift + C |
+| Fókusz áthelyezése a Vizualizáció menüre | **Alt+Shift+F10** |
+| Adatok megjelenítése | **Alt+Shift+F11**  |
+| Vizualizáció megadása | **Ctrl+Jobb nyílbillentyű** |
+| Réteg megadása | **Enter** |
+| Kilépés a rétegből vagy vizualizációból | **Esc** |
+| Adatpont kijelölése vagy a kijelölés törlése | **Enter** vagy **szóköz** |
+| Többszörös kijelölés | **Ctrl+Enter** vagy **Ctrl+szóköz** |
+| Kattintás jobb gombbal | <ul><li>Windows-billentyűzet: **Windows helyi menü billentyű+F10**. A Windows helyi menü billentyű a bal oldali Alt billentyű és a Balra nyílbillentyű között van</li><li>Más billentyűzeten: **Shift+F10**</li></ul> |
+| Kijelölés törlése | **Ctrl+Shift+C** |
 
-### <a name="table--matrix-navigation"></a>Tábla és mátrix navigáció
-| Cél           | Billentyűparancs                |
+### <a name="table--matrix-navigation"></a>Táblázat és mátrix navigációja
+| A művelet menete          | Billentyűparancs                |
 | :------------------- | :------------------- |
-| Fókusz mozgatása felfelé és lefelé cellát (közötti összes celláját minden terület)  | Felfelé mutató nyíl, kulcs / le nyílbillentyű |
-| Áthelyezés jobbra-balra egy cella összpontosítson (közötti összes celláját minden terület)  | Bal nyílbillentyű / jobb nyílbillentyű |
+| Fókusz felfelé/lefelé mozgatása egy cellával (az összes cellán belül, minden területen)  | **Fel nyílbillentyű** / **Le nyílbillentyű** |
+| Fókusz balra/jobbra mozgatása egy cellával (az összes cellán belül, minden területen)  | **Bal nyílbillentyű** / **Jobb nyílbillentyű** |
 
 ### <a name="pane-navigation"></a>Navigáció a panelen
-| Cél           | Billentyűparancs                |
+| A művelet menete           | Billentyűparancs                |
 | :------------------- | :------------------- |
-| Többszörös kijelölés | Ctrl + szóköz |
-| Egyetlen táblázat összecsukása | Balra nyíl |
-| Egyetlen táblázat kibontása | Jobbra nyíl |
-| Az összes tábla összecsukása | Alt + Shift + 1 |
-| Az összes tábla kibontása | Alt + Shift + 9 |
-| Helyi menü megnyitása | <ul><li>Windows-billentyűzet: Windows helyi menü billentyű + F10.  A Windows helyi menü billentyű a bal oldali Alt billentyű és a Balra nyílbillentyű között van</li><li>Más billentyűzeten: Shift + F10</li></ul> |
+| Többszörös kijelölés | **Ctrl+szóköz** |
+| Egyetlen táblázat összecsukása | **Bal nyílbillentyű** |
+| Egyetlen táblázat kibontása | **Jobb nyílbillentyű** |
+| Az összes tábla összecsukása | **Alt+Shift+1** |
+| Az összes tábla kibontása | **Alt+Shift+9** |
+| Helyi menü megnyitása | <ul><li>Windows-billentyűzet: **Windows helyi menü billentyű+F10**.  A Windows helyi menü billentyű a bal oldali Alt billentyű és a Balra nyílbillentyű között van</li><li>Más billentyűzeten: **Shift+F10**</li></ul> |
 
 ### <a name="slicer"></a>Szeletelő
-| Cél           | Billentyűparancs                |
+| A művelet menete         | Billentyűparancs                |
 | :------------------- | :------------------- |
-| Szeletelő vezérlése | CTRL + Jobbra nyíl |
+| Szeletelő vezérlése | **Ctrl+Jobb nyílbillentyű** |
 
 ### <a name="selection-pane"></a>Kiválasztás panel
-| Cél           | Billentyűparancs                |
+| A művelet menete           | Billentyűparancs                |
 | :------------------- | :------------------- |
-| A Kiválasztás panel aktiválása | F6 |
-| Objektum feljebb helyezése a rétegekben | Ctrl + Shift + F |
-| Objektum lejjebb helyezése a rétegekben | Ctrl + Shift + B |
-| Objektum elrejtése/megjelenítése | Ctrl + Shift + S |
+| A Kiválasztás panel aktiválása | **F6** |
+| Objektum feljebb helyezése a rétegekben | **Ctrl+Shift+F** |
+| Objektum lejjebb helyezése a rétegekben | **Ctrl+Shift+B** |
+| Objektum elrejtése/megjelenítése | **Ctrl+Shift+S** |
 
 ### <a name="dax-editor"></a>DAX Editor
-| Cél           | Billentyűparancs                |
+| A művelet menete          | Billentyűparancs                |
 | :------------------- | :------------------- |
-| Sor mozgatása felfelé/lefelé | Alt + Felfelé nyíl/Lefelé nyíl |
-| Sor másolása felfelé/lefelé | Shift + Alt + Felfelé nyíl/Lefelé nyíl |
-| Sor beszúrása alá | Ctrl + Enter |
-| Sor beszúrása fölé | Ctrl + Shift + Enter |
-| Ugrás az egyező zárójelre | Ctrl + Shift + \ |
-| Sor behúzása/behúzásának csökkentése | Ctrl + ] / [ |
-| Kurzor beszúrása | Alt + kattintás |
-| Aktuális sor kijelölése | Ctrl + I |
-| Az aktuális kijelölés összes előfordulásának kijelölése | Ctrl + Shift + L |
-| Az aktuális szó összes előfordulásának kijelölése | Ctrl + F2 |
+| Sor mozgatása felfelé/lefelé | **Alt+Fel nyílbillentyű** / **Le nyílbillentyű** |
+| Sor másolása felfelé/lefelé | **Shift+Alt+Fel nyílbillentyű** / **Le nyílbillentyű** |
+| Sor beszúrása alá | **Ctrl+Enter** |
+| Sor beszúrása fölé | **Ctrl+Shift+Enter** |
+| Ugrás az egyező zárójelre | **Ctrl+Shift+**  \ |
+| Vonal behúzása/vonal kiterjesztése a margóra | **Ctrl+]**  /  **[** |
+| Kurzor beszúrása | **Alt+Kattintás** |
+| Aktuális sor kijelölése | **Ctrl+I** |
+| Az aktuális kijelölés összes előfordulásának kijelölése | **Ctrl+Shift+L** |
+| Az aktuális szó összes előfordulásának kijelölése | **Ctrl+F2** |
 
 ### <a name="enter-data"></a>Adatbevitel
-| Cél           | Billentyűparancs                |
+| A művelet menete           | Billentyűparancs                |
 | :------------------- | :------------------- |
-| Kilépés a szerkeszthető rácsból | Ctrl + Tab |
+| Kilépés a szerkeszthető rácsból | **Ctrl+Tab** |
 
 
 ## <a name="next-steps"></a>Következő lépések

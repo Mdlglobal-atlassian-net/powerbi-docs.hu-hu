@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: a6718ed8f582150ad8f13d638308700f9004a354
-ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.openlocfilehash: 8600dce5012abb41c37b202dcc8eb204da11fa33
+ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558987"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230210"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -22,6 +22,18 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+
+## <a name="july-2019"></a>2019. július
+
+### <a name="report-page-tooltips"></a>Jelentésoldal elemleírásai
+
+A jelentésoldalakhoz készült elemleírások már támogatottak, ha mobilalkalmazásban tekinti meg a jelentéseket. Elég hosszan rákoppintani egy jelentéshez készült elemleírással rendelkező vizualizációra, hogy az elemleírás megjelenjen.  
+
+![Jelentésvászonhoz készült elemleírás](./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png)
+
+> [!NOTE]
+> A jelentésekhez készült elemleírások 640 pixelnél nagyobb eszközökön, 320-as megjelenítéssel támogatottak. A kisebb eszközök az alapértelmezett elemleírásokat használják.
+
 
 ## <a name="june-2019"></a>2019. június
 

@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/18/2019
-ms.openlocfilehash: 10ac6ed9f49241103d03f2667ccc8db5d619db6c
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.date: 07/15/2019
+ms.openlocfilehash: 10135e0fa725cd4093802cd1416cab302174e21d
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345509"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270779"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Többoldalas jelentések a Power BI-ban: Gyakori kérdések 
 
@@ -119,10 +119,10 @@ Ha egy nem támogatott funkcióval rendelkező fájlt próbál meg feltölteni a
 
 A következő adatforrásokat támogatjuk: 
 
-- Power BI Premium-adathalmazok
+- Power BI-adatkészletek (egyszeri bejelentkezéssel (SSO))
 - Azure Analysis Services (egyszeri bejelentkezés (SSO) vagy oAuth használatával)
 - Azure SQL Data Warehouse
-- Azure SQL Database (felhasználónév/jelszó és oAuth)
+- Azure SQL Database (felhasználónév/jelszó,SSO és oAuth)
 - SQL Server*
 - SQL Server Analysis Services (SSAS) táblázatos (DAX) és többdimenziós (MDX) modellek* 
 - Oracle* 
@@ -134,11 +134,11 @@ Az SSAS az átjárón keresztül történő megnyitásakor a tárolt hitelesít�
 
 ### <a name="what-authentication-methods-do-you-support"></a>Milyen hitelesítési módszerek támogatottak?
 
-Az egyszeri bejelentkezést az Azure Analysis Services- és Power BI Premium-adatforrásokhoz is támogatjuk, az Azure SQL Database-hez pedig támogatjuk az oAuth és az egyszeri bejelentkezés használatát.  Más adatforrások esetén egyelőre tárolnia kell az adatforráshoz tartozó felhasználónevet és jelszót a portálon vagy az átjárón.  
+Az egyszeri bejelentkezést az Azure Analysis Services, az Azure SQL Database és a Power BI-adatforrások esetén támogatjuk.  Az Azure SQL Database és az Azure Analysis Services esetén az OAuth szolgáltatást is támogatjuk.  Más adatforrások esetén egyelőre tárolnia kell az adatforráshoz tartozó felhasználónevet és jelszót a portálon vagy az átjárón.  
 
 ### <a name="can-i-use-a-power-bi-dataset-as-a-data-source-for-my-paginated-report"></a>Használhatok Power BI-adatkészletet a lapszámozott jelentés adatforrásaként?
 
-Igen, támogatjuk a Power BI Premium-adathalmazok lapszámozott jelentések adatforrásaiként való használatát.
+Igen, támogatjuk a Power BI-adatkészletek többoldalas jelentések adatforrásaiként való használatát.
 
 ### <a name="can-i-use-stored-procedures-through-the-gateway"></a>Használhatok tárolt eljárásokat az átjárón keresztül?
 
@@ -179,10 +179,6 @@ Terveink szerint a jelentések ugyanazokat a főbb szolgáltatásbeli forgatók�
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Tervben van egy migrálási eszköz létrehozása, amellyel az SSRS-ügyfelek áthelyezhetik a meglévő jelentéseiket és eszközeiket a Power BI-ba?
 
 Jelenleg vizsgáljuk azokat a lehetőségeket, amelyekkel automatikusan lehet tartalmat áthelyezni a Power BI-ba, de ez csak az általános elérhetőség után esedékes.
-
-### <a name="will-i-ever-be-able-to-create-both-paginated-reports-and-power-bi-reports-in-a-single-authoring-tool"></a>Létrehozhatok a jövőben lapszámozott jelentéseket és Power BI-jelentéseket is egyetlen szerkesztőeszközben?
-
-Kerestük azt ezt lehetővé tévő megoldást, de ez jelenleg nem szerepel a terveink között.
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Létezik jelentésmegjelenítő vezérlőelem a Power BI szolgáltatásban a lapszámozott jelentésekhez?
 

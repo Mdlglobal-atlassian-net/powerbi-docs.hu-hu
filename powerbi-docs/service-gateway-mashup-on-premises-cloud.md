@@ -7,24 +7,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 06/06/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7b863af882604be8c2c59fd21f26cd8441f9e170
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 39f5a01a396e45207777b1a5e58e73808ddf3f88
+ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54272651"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68352172"
 ---
 # <a name="merge-or-append-on-premises-and-cloud-data-sources"></a>Helyszíni és felhőbeli adatforrások egyesítése vagy összefűzése
 
-A helyszíni adatátjáró lehetővé teszi, hogy a helyszíni és a felhőbeli adatforrásokat egyesítse vagy összefűzze ugyanazon a lekérdezésen belül. Ez a funkció olyankor hasznos, ha különböző adatforrásokból kíván adatokat lekérni, de nem szeretne több külön lekérdezést használni.
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+
+A helyszíni adatátjáró lehetővé teszi, hogy a helyszíni és a felhőbeli adatforrásokat egyesítse vagy összefűzze ugyanazon a lekérdezésen belül. Ez a funkció olyankor hasznos, ha különböző adatforrásokból kíván adatokat egyesíteni, de nem szeretne több külön lekérdezést használni.
+
+>[!NOTE]
+>Ez a cikk csak olyan adatkészletekre vonatkozik, amelyekben egyesítve vagy hozzáfűzve, egyetlen lekérdezésben szerepelnek a felhőbeli és a helyszíni adatforrások. A különálló lekérdezéseket (egy helyszíni, illetve egy felhőbeli adatforráshoz csatlakozó lekérdezést) tartalmazó adatkészletek esetén a felhőbeli adatforrást alkalmazó lekérdezést a rendszer nem az átjárón keresztül hajtja végre.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-- A helyi számítógépen [telepített átjáró](service-gateway-install.md).
+- A helyi számítógépen [telepített átjáró](/data-integration/gateway/service-gateway-install).
 - Egy Power BI Desktop-fájl, amely helyszíni és felhőbeli adatforrásokat kombináltan használó lekérdezéseket tartalmaz.
+
+>[!NOTE]
+>A felhőbeli adatforrások eléréséhez biztosítania kell az átjárónak az adatforrásokhoz való hozzáférést.
 
 1. Válassza a Power BI szolgáltatás jobb felső sarkában lévő fogaskerék ikont ![Beállítások fogaskerék ikonja](media/service-gateway-mashup-on-premises-cloud/icon-gear.png) > **Átjárók kezelése**.
 
@@ -46,10 +54,11 @@ A helyszíni adatátjáró lehetővé teszi, hogy a helyszíni és a felhőbeli 
 
    - Az **Adatforrás azonosító adatai** szakasznál szükség szerint módosítsa az adatforrás azonosító adatait.
 
+    Ügyeljen arra, hogy a felhőbeli és a helyszíni adatforrások adatvédelmi szintje is megfelelően legyen beállítva, így az összekapcsolások kezelése biztonságos maradhat.
+
      ![Adathalmaz beállításai](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
 7. Most, hogy beállította a felhőbeli hitelesítéseket, a **Frissítés most** lehetőség választásával azonnal frissítheti az adathalmazt, de ütemezhet rendszeres frissítést is.
-
 
 ## <a name="next-steps"></a>Következő lépések
 
