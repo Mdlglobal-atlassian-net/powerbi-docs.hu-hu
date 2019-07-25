@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/30/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a5f3f5003eb1d22b0667698691471150f04553d8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b3fa7fd07a4c7f1992623871ed408b959582a125
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61196911"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270607"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Gyakori kérdések a Power BI-beli magas rendelkezésre állással, feladatátvétellel és vészhelyreállítással kapcsolatban
 
@@ -65,7 +65,7 @@ A Power BI szolgáltatás példányai a feladatátvételt okozó probléma megol
 Ha a vállalatánál használt Power BI-megoldásnak része az alábbi elemek egyike, akkor a megoldás magas rendelkezése állásának garantálása érdekében Önnek is meg kell tennie bizonyos intézkedéseket:
 
 - Ha vállalata a Power BI Premiumot használja, gondoskodjon róla, hogy a prémium szintű kapacitás az üzemelő példány követelményeinek megfelelően legyen méretezve.  A [Power BI Premium tervezéséről és üzembe helyezéséről szóló tanulmány](https://aka.ms/Premium-Capacity-Planning-Deployment), valamint a [Power BI Premium-kapacitásmetrikák alkalmazás](service-admin-premium-monitor-capacity.md) segíthet ennek a követelménynek a tervezésében és betartásában. Segítségképpen a metrikaalkalmazáshoz és a felügyeleti portálhoz rendszeresen adunk új funkciókat a Power BI-ban.
-- Ha vállalata Power BI helyszíni átjáró használatával fér hozzá helyszíni adatforrásokhoz, akkor az átjárót az [ebben a cikkben ismertetett módon](service-gateway-high-availability-clusters.md) kell beállítania, hogy támogassa a magas rendelkezésre állást. Kövesse ezt az útmutatót, ha importálás módban frissít jelentéseket, vagy ha DirectQuery vagy élő kapcsolat használatával fér hozzá adatokhoz vagy adatmodellekhez.
+- Ha vállalata helyszíni adatátjáró használatával fér hozzá helyszíni adatforrásokhoz, akkor az átjárót az [ebben a cikkben ismertetett módon](/data-integration/gateway/service-gateway-high-availability-clusters) kell beállítania, hogy támogassa a magas rendelkezésre állást. Kövesse ezt az útmutatót, ha importálás módban frissít jelentéseket, vagy ha DirectQuery vagy élő kapcsolat használatával fér hozzá adatokhoz vagy adatmodellekhez.
 
 ## <a name="will-gateways-function-when-in-failover-mode"></a>Működnek az átjárók feladatátvételi módban?
 

@@ -1,5 +1,5 @@
 ---
-title: Szűrők és kiemelések a Power BI-jelentések
+title: Szűrők és kiemelés a Power BI-jelentésekben
 description: Szűrők és kiemelés a Power BI-jelentésekben
 author: maggiesMSFT
 manager: kfile
@@ -10,25 +10,25 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 8084b8dbbc27c856633d84c6628727dcd426964d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4584ad0f8c083a765b1a1a9943496b40a3ed4bdf
+ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187547"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68342155"
 ---
-# <a name="filters-and-highlighting-in-power-bi-reports"></a>Szűrők és kiemelések a Power BI-jelentések
- Ez a cikk bemutatja, hogy a szűrők és kiemelések a Power BI szolgáltatásban. A funkciók szinte ugyanúgy működnek, mint a Power BI Desktop szolgáltatásban. A *szűrők* használatával minden olyan adatot eltávolíthat, amelyek az Ön szempontjából lényegtelenek. *Kiemelés* szűrése nem. Az adatok nem távolítja el, hanem ehelyett kiemeli a látható adatok egy részét Nincs kijelölve adatok láthatóak maradnak.
+# <a name="filters-and-highlighting-in-power-bi-reports"></a>Szűrők és kiemelés a Power BI-jelentésekben
+ Ez a cikk bevezetést nyújt a Power BI szűrő és kiemelő funkcióiba. A funkciók szinte ugyanúgy működnek, mint a Power BI Desktop szolgáltatásban. A *szűrők* használatával minden olyan adatot eltávolíthat, amelyek az Ön szempontjából lényegtelenek. A *Kiemelés* nem szűrés. Nem távolítja el az adatokat, hanem kiemeli a látható adatok egy részét, miközben a ki nem emelt adatok halványan láthatóak maradnak.
 
 A Power BI-ban sokféleképpen szűrheti és kiemelheti a jelentések adatait. Ha az összes információt egyetlen cikkbe sűrítenénk, az nehezen lenne áttekinthető, ezért a tudnivalókat a következő szakaszokra bontottuk fel:
 
-* Bevezetés a szűrők és kiemelések, a cikk amelyet most olvas.
-* Hogyan [létrehozása és használata a szűrők a szerkesztési nézetében](power-bi-report-add-filter.md) Power BI Desktop és a Power BI szolgáltatás jelentéseiben. Ha szerkesztési engedélye van egy jelentéshez, akkor létrehozhatja, módosíthatja és törölheti a szűrőket a jelentésekben.
-* Hogyan Vizualizációk [szűrheti és kiemelheti az Önnel megosztott jelentésekben](consumer/end-user-interactions.md), a jelentés olvasó nézete a Power BI szolgáltatásban. A cselekvés korlátozott, de még így is számos lehetőség marad a szűrésre és a kiemelésre.  
-* Részletes bemutatása a [szűrési és kiemelési vezérlők szerkesztő nézetben elérhető](power-bi-report-add-filter.md) a Power BI Desktop és a Power BI szolgáltatásban. A cikk egy dátum és idő, szám, például szűrők típusai pillantást részletes és a szöveges vesz igénybe. Emellett ismerteti az alapszintű és speciális lehetőségek közötti eltéréseket.
+* Bevezetés a szűrők és a kiemelés használatába (a cikk, amelyet most olvas).
+* [Szűrők létrehozása és használata szerkesztési nézetben](power-bi-report-add-filter.md) a Power BI Desktop és a Power BI szolgáltatás jelentéseiben. Ha szerkesztési engedélye van egy jelentéshez, akkor létrehozhatja, módosíthatja és törölheti a szűrőket a jelentésekben.
+* Így működik a [szűrés és a kiemelés az Önnel megosztott jelentésekben,](consumer/end-user-interactions.md) a jelentés Olvasó nézetében, valamint a Power BI szolgáltatásban. A cselekvés korlátozott, de még így is számos lehetőség marad a szűrésre és a kiemelésre.  
+* Részletes bemutató a [Szerkesztés nézetben elérhető szűrési és kiemelési lehetőségekről](power-bi-report-add-filter.md) a Power BI Desktopban és a Power BI szolgáltatásban. A cikk részletesen bemutatja a szűrők (például dátum és idő, numerikus és szöveges) típusait. Ezenfelül az alapvető és a speciális beállítások közötti különbségeket is ismerteti.
 * Ha már megismerte a szűrők és a kiemelés alapértelmezés szerinti működését, nézze meg, [miképpen módosíthatja azt, ahogy az oldal vizualizációi egymást szűrik és kiemelik](service-reports-visual-interactions.md)
 
-**Tudta?** A Power BI új szűrési felülettel rendelkezik, egyelőre előzetes verzióban. Bővebben is tájékozódhat [a Power BI-jelentésekben elérhető új szűrési felületről](power-bi-report-filter-preview.md).
+**Tudta?** A Power BI új szűrési felülettel rendelkezik, egyelőre előzetes verzióban. Bővebben is tájékozódhat [a Power BI-jelentésekben elérhető új szűrési felületről](power-bi-report-filter.md).
 
 ![Új szűrőfunkciók](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading.png)
 
@@ -67,32 +67,32 @@ A jelentésoldalnak tehát hat oldalszintű és egy jelentésszintű szűrője v
 
 Minden vizualizáció tartalmaz szűrőket a saját összes mezőjéhez, és a jelentés szerzője továbbiakat is felvehet. Az alábbi képen szereplő buborék diagram hat szűrőt tartalmaz.
 
-![Vizualizáció-szintű szűrő](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
+![Vizualizációszintű szűrő](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
 
 Olvasás nézetben a meglévő szűrők módosításával tárhatja fel az adatokat. A módosításokat menti a rendszer a jelentéssel együtt, még akkor is, ha mobilalkalmazásban nyitja meg a jelentést. Ennek a módját [a Szűrők panel bemutatójában](consumer/end-user-report-filter.md) ismerheti meg.
 
 Amikor kilép a jelentésből, a szűrők mentve lesznek. Ha visszavonná a szűrést, és visszatérne a jelentés készítője által beállított alapértelmezett szűrő-, szeletelő-, részletezési és rendezési készlethez, válassza a **Visszaállítás alapértelmezettre** lehetőséget a felső menüsoron.
 
-![Visszaáll az alapértelmezett ikonja](media/power-bi-reports-filters-and-highlighting/power-bi-reset-to-default.png)
+![Visszaállítás alapértelmezettre ikon](media/power-bi-reports-filters-and-highlighting/power-bi-reset-to-default.png)
 
 ### <a name="filters-in-editing-view"></a>Szűrők Szerkesztés nézetben
 Ha tulajdonosi engedélye van a jelentéshez, és Szerkesztés nézetben nyitja meg azt, akkor látni fogja, hogy a **Szűrők** panel csak az egyike a rendelkezésre álló szerkesztési ablaktábláknak.
 
-![Szűrők ablaktábla Szerkesztés nézetben](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
+![Szűrők ablaktábla a Szerkesztés nézetben](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
 
 Hasonlóan az Olvasás nézethez, a jelentésoldalnak itt is hat oldalszintű és egy jelentésszintű szűrője van. A buborék diagram kijelölésekor látható, hogy arra hat vizuális szintű szűrőt alkalmaztak.
 
 Szerkesztés nézetben több lehetőség van a szűrők és a kiemelés használatára. A legfontosabb, hogy új szűrőket lehet felvenni. [Szűrők hozzáadása a jelentésekhez](power-bi-report-add-filter.md) és más tudnivalók.
 
-## <a name="ad-hoc-highlighting"></a>Ad hoc kiemelése
-Válassza ki a megfelelő értéket, vagy a tengely címkét egy vizualizációban, kiemelheti a többi vizualizációt az oldalon. A minőségbiztosítás eltávolításához válassza ki újra az értéket, vagy jelölje ki bármely üres helyet ugyanabban a vizualizációban. Kiemelés egy szórakoztató módja az adathatások. Az ilyen típusú keresztkiemelés finombeállításához lásd: [Vizualizációk interakciói](service-reports-visual-interactions.md).
+## <a name="ad-hoc-highlighting"></a>Eseti kiemelés
+Az oldal többi vizualizációjának kiemeléséhez jelöljön ki egy értéket vagy tengelyfeliratot a jelentésvásznon. A kiemelés eltávolításához jelölje ki ismét az értéket, vagy válasszon ki egy üres helyet a vizualizációban. A kiemeléssel gyorsan feltárhatja az adatok hatásait. Az ilyen típusú keresztkiemelés finombeállításához lásd: [Vizualizációk interakciói](service-reports-visual-interactions.md).
 
 ![Keresztkijelölés](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Az új szűrő funkció a Power BI-jelentésekben](power-bi-report-filter-preview.md)
+[A Power BI-jelentésekben elérhető új szűrési felület](power-bi-report-filter.md)
 
 [Szűrő hozzáadása jelentéshez (Szerkesztés nézetben)](power-bi-report-add-filter.md)
 

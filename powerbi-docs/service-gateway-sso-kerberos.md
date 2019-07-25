@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: d8cebda3ad0db9fba48804fb8d2dd029c1c07f8d
-ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.openlocfilehash: 1a0ec90d3f6a1de5a542da7ee98f956dfcef67b1
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66809274"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325151"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
@@ -60,7 +60,7 @@ A standard telepítés során az átjáró a gép helyi szolgáltatásfiókjáva
 
 ![Képernyőkép a szolgáltatásfiókról](media/service-gateway-sso-kerberos/service-account.png)
 
-A Kerberos által korlátozott delegálás engedélyezéséhez az átjárót tartományi fiókkal kell futtatni, ha az Azure Active Directory (Azure AD) példánya még nincs szinkronizálva a helyi Active Directoryval (az Azure AD DirSync/Connect használatával). Tartományi fiókra váltáshoz tekintse meg a cikk [Átjáró váltása tartományi fiókra](#switch-the-gateway-to-a-domain-account) részét.
+A Kerberos által korlátozott delegálás engedélyezéséhez az átjárót tartományi fiókkal kell futtatni, ha az Azure Active Directory (Azure AD) példánya még nincs szinkronizálva a helyi Active Directoryval (az Azure AD DirSync/Connect használatával). Ha szeretne tartományi fiókra váltani, lásd: [Az átjárószolgáltatás-fiók módosítása](/data-integration/gateway/service-gateway-service-account).
 
 > [!NOTE]
 > Ha az Azure AD Connect konfigurálva van, és a felhasználói fiókok szinkronizálva vannak, az átjárószolgáltatásnak nem kell helyi Azure AD-kereséseket végrehajtania futásidőben. Az átjárószolgáltatáshoz használhatja a helyi szolgáltatási SID-t (azaz nincs szükség tartományi fiókra). A Kerberos által korlátozott delegálás a cikkben ismertetett konfigurációs lépései ugyanezek, mint ez a konfiguráció. Csak a tartományi fiók helyett az átjáró számítógép-objektumára kell alkalmazni az Azure AD-ben.
@@ -99,7 +99,7 @@ A második konfigurációs követelmény a delegálási beállítások konfigur�
 
 A Kerberos által korlátozott delegálást protokollváltással kell konfigurálni. Korlátozott delegálás esetén explicit módon kell meghatároznia, hogy melyik szolgáltatásokhoz szeretne delegálni. Például csak az SQL Server vagy az SAP HANA-kiszolgáló fogad delegálási hívást az átjáró szolgáltatásfiókjától.
 
-Ez a szakasz azt feltételezi, hogy már konfigurálta az egyszerű szolgáltatásneveket az alapul szolgáló adatforrásokhoz (például SQL Server, SAP HANA, Teradata és Spark.). Az adatforrás-kiszolgálók egyszerű szolgáltatásneveinek konfigurálásával az adott adatbázis-kiszolgáló műszaki dokumentációjában ismerkedhet meg. Emellett a blogbejegyzésben megtekintheti, hogy [milyen egyszerű szolgáltatásnévre van szükség az alkalmazásához.](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/)
+Ez a szakasz azt feltételezi, hogy már konfigurálta az egyszerű szolgáltatásneveket az alapul szolgáló adatforrásokhoz (például SQL Server, SAP HANA, Teradata és Spark.). Az adatforrás-kiszolgálók egyszerű szolgáltatásneveinek konfigurálásával az adott adatbázis-kiszolgáló műszaki dokumentációjában ismerkedhet meg. Érdemes elolvasni az [Ellenőrző lista a Kerberoshoz](https://techcommunity.microsoft.com/t5/SQL-Server-Support/My-Kerberos-Checklist-8230/ba-p/316160) című blogbejegyzés *Milyen SPN-re van szükség az alkalmazáshoz?* részét.
 
 A következő lépésekben egy helyszíni környezetet feltételezünk két géppel: egy átjárót tartalmazó géppel és egy SQL Servert futtató adatbázis-kiszolgálóval. A példa kedvéért a következő beállításokat és neveket is feltételezzük:
 
@@ -118,21 +118,21 @@ A delegálási beállítások konfigurálása:
 
 4. Válassza **A számítógépen csak a megadott szolgáltatások delegálhatók** > **Bármely hitelesítési protokoll használatával** elemet.
 
-6. **A fiók az alábbi szolgáltatásokhoz használhat delegált hitelesítő adatokat** szakaszban kattintson a **Hozzáadás** elemre.
+5. **A fiók az alábbi szolgáltatásokhoz használhat delegált hitelesítő adatokat** szakaszban kattintson a **Hozzáadás** elemre.
 
-7. Az új párbeszédpanelen válassza a **Felhasználók vagy számítógépek** elemet.
+6. Az új párbeszédpanelen válassza a **Felhasználók vagy számítógépek** elemet.
 
-8. Adja meg az SQL Server-adatforrás szolgáltatásfiókját (**PBIEgwTest\SQLService**), és kattintson az **OK** gombra.
+7. Adja meg az adatforrás szolgáltatásfiókját, például az SQL Server-adatforrások a következőhöz hasonló szolgáltatásfiókot használnak: **PBIEgwTest\SQLService**. Miután hozzáadta a fiókot, kattintson az **OK** gombra.
 
-9. Válassza ki azt az egyszerű szolgáltatásnevet, amelyet létrehozott az adatbázis-kiszolgálóhoz. A példánkban az egyszerű szolgáltatásnév az **MSSQLSvc** kifejezéssel kezdődik. Ha megadta az adatbázis-szolgáltatás teljes tartománynevét és a NetBIOS egyszerű szolgáltatásnevét is, válassza ki mindkettőt. Lehet, hogy csak az egyiket látja.
+8. Válassza ki azt az egyszerű szolgáltatásnevet, amelyet létrehozott az adatbázis-kiszolgálóhoz. A példánkban az egyszerű szolgáltatásnév az **MSSQLSvc** kifejezéssel kezdődik. Ha megadta az adatbázis-szolgáltatás teljes tartománynevét és a NetBIOS egyszerű szolgáltatásnevét is, válassza ki mindkettőt. Lehet, hogy csak az egyiket látja.
 
-10. Kattintson az **OK** gombra. Ekkor az SPN-nek meg kell jelennie a listában.
+9. Kattintson az **OK** gombra. Ekkor az SPN-nek meg kell jelennie a listában.
 
     Ha szeretné, kiválaszthatja a **Kibontva** lehetőséget, hogy a teljes tartománynév és a NetBIOS egyszerű szolgáltatásnév is megjelenjen. A párbeszédpanel az alábbihoz hasonlít, ha bejelölte a **Kibontva** lehetőséget. Kattintson az **OK** gombra.
 
     ![Képernyőkép az Átjáró-összekötő tulajdonságai párbeszédpanelről](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
-Végül az átjárószolgáltatást futtató gépen (a példánkban **PBIEgwTestGW**) az átjárószolgáltatás-fióknak meg kell adnia az **Ügyfél megszemélyesítése hitelesítés után** helyi szabályzatot. Ezt a Helyi csoportszabályzat-szerkesztőben hajthatja végre és ellenőrizheti (**gpedit**).
+Végül az átjárószolgáltatást futtató gépen (a példánkban **PBIEgwTestGW**) az átjárószolgáltatás-fióknak meg kell adnia az **Ügyfél megszemélyesítése hitelesítés után** helyi szabályzatot és **Az operációs rendszer részeként való működés (SeTcbPrivilege)** jogosultságot. Ezt a konfigurációt a Helyi csoportszabályzat-szerkesztőben hajthatja végre és ellenőrizheti (**gpedit**).
 
 1. Az átjárót tartalmazó számítógépen futtassa a következőt: *gpedit.msc*.
 
@@ -170,40 +170,26 @@ A konfigurációs lépések elvégzése után konfigurálja az adatforrást a Po
 
 Ez a konfiguráció a legtöbb esetben működik. A Kerberos esetében azonban más konfigurációkra lehet szükség a környezettől függően. Ha a jelentés továbbra sem töltődik be, forduljon a tartományi rendszergazdájához a probléma részletesebb kivizsgálásához.
 
-## <a name="switch-the-gateway-to-a-domain-account"></a>Átjáró váltása tartományi fiókra
-
-Ha szükséges, az átjárót helyi szolgáltatásfiók helyett tartományi fiókként történő futtatására válthatja a **Helyszíni adatátjáró** felhasználói felületén. Ezt a következőképpen teheti meg:
-
-1. Nyissa meg a **helyszíni adatátjáró** konfigurációs eszközét.
-
-   ![Képernyőkép az átjáró asztali alkalmazásának indítási lehetőségéről](media/service-gateway-sso-kerberos/gateway-desktop-app.png)
-
-2. A főoldalon kattintson a **Bejelentkezés** gombra, majd jelentkezzen be Power BI-fiókjával.
-
-3. A sikeres bejelentkezés után válassza a **Szolgáltatásbeállítások** fület.
-
-4. Válassza a **Fiók módosítása** elemet a részletes útmutató elindításához.
-
-   ![Képernyőkép a helyszíni adatátjáró asztali alkalmazásáról, kiemelt Fiók módosítása elemmel](media/service-gateway-sso-kerberos/change-account.png)
-
 ## <a name="configure-sap-bw-for-sso"></a>Az SAP BW konfigurálása egyszeri bejelentkezéshez
 
 Most, hogy megismerkedett a Kerberos átjáróval történő működésével, konfigurálhat egy egyszeri bejelentkezést az SAP Business Warehouse (SAP BW) szolgáltatáshoz. Az alábbi lépések azt feltételezik, hogy már [előkészült a Kerberos által korlátozott delegáláshoz](#prepare-for-kerberos-constrained-delegation) a cikkben korábban leírtak szerint.
 
 Ez az útmutató próbál olyan átfogó lennie, amennyire csak lehetséges. Ha már végrehajtott ezek közül néhány lépést, azokat kihagyhatja. Például már létrehozhatott egy szolgáltatásfelhasználót az SAP BW-kiszolgálóhoz, és leképezhette rá az egyszerű szolgáltatásnevet, vagy már telepíthette a `gsskrb5` kódtárat.
 
-### <a name="set-up-gsskrb5-on-client-machines-and-the-sap-bw-server"></a>A gsskrb5 telepítése az ügyfélgépekre és az SAP BW-kiszolgálóra
+### <a name="set-up-gsskrb5gx64krb5-on-client-machines-and-the-sap-bw-server"></a>A gsskrb5/gx64krb5 telepítése az ügyfélgépekre és az SAP BW-kiszolgálóra
 
 > [!NOTE]
-> A `gsskrb5` kódtárat már nem támogatja az SAP. További információt az [SAP 352295 megjegyzés](https://launchpad.support.sap.com/#/notes/352295) című cikkben talál. Vegye figyelembe azt is, hogy a `gsskrb5` nem teszi lehetővé az adatátjáróból az SAP BW üzenetkiszolgálóba irányuló SSO-kapcsolatokat. Csak az SAP BW-alkalmazáskiszolgálóba irányuló kapcsolatok lehetségesek. A `gsskrb5`-öt az ügyfélnek és a kiszolgálónak is használnia kell az SSO-kapcsolat átjárón keresztüli létrehozásához. Már támogatott a közös titkosítási kódtár (sapcrypto) az SAP BW-hez.
+> A `gsskrb5/gx64krb5` kódtárat már nem támogatja az SAP. További információt az [SAP 352295 megjegyzés](https://launchpad.support.sap.com/#/notes/352295) című cikkben talál. Vegye figyelembe azt is, hogy a `gsskrb5/gx64krb5` nem teszi lehetővé az adatátjáróból az SAP BW üzenetkiszolgálóba irányuló SSO-kapcsolatokat. Csak az SAP BW-alkalmazáskiszolgálóba irányuló kapcsolatok lehetségesek. Mostantól a sapcrypto/CommonCryptoLib is használható SNC-kódtárként, ami leegyszerűsíti a telepítés folyamatát. 
 
-1. Töltse le a `gsskrb5` - `gx64krb5` dll-fájlokat az [SAP Note 2115486](https://launchpad.support.sap.com/) oldaláról (ehhez szükséges egy SAP S-felhasználó). Győződjön meg arról, hogy a gsskrb5.dll és a gx64krb5.dll legalább 1.0.11.x verziójával rendelkezik.
+A `gsskrb5`-öt az ügyfélnek és a kiszolgálónak is használnia kell az SSO-kapcsolat átjárón keresztüli létrehozásához.
+
+1. A kívánt bitszámtól függően töltse le a `gsskrb5` vagy a `gx64krb5` elemet a [SAP Note 2115486](https://launchpad.support.sap.com/) oldalról (ehhez szükséges egy SAP S-felhasználó). Legalább az 1.0.11.x verzióval kell rendelkeznie.
 
 1. Helyezze a kódtárat egy olyan helyre az átjárót tartalmazó számítógépen, amely hozzáférhető átjárópéldánya számára (és az SAP GUI számára is, ha szeretné tesztelni az egyszeri bejelentkezési kapcsolatot az SAP Logon használatával).
 
 1. Helyezzen egy másik másolatot az SAP BW-kiszolgálógépre egy, az SAP BW-kiszolgáló által hozzáférhető helyre.
 
-1. Az ügyfélgépen és a kiszolgálógépen állítsa be az `SNC\_LIB` és az `SNC\_LIB\_64` környezeti változókat úgy, hogy azok a gsskrb5.dll és a gx64krb5.dll helyeire mutassanak.
+1. Az ügyfélgépen és a kiszolgálógépen állítsa be az `SNC_LIB` és az `SNC_LIB_64` környezeti változókat úgy, hogy azok a gsskrb5.dll vagy a gx64krb5.dll helyeire mutassanak. Ne feledje, hogy csak az egyik kódtárra van szükség, nem mindkettőre.
 
 ### <a name="create-a-sap-bw-service-user-and-enable-snc-communication"></a>BW-szolgáltatásfelhasználó létrehozása és SNC-kommunikáció engedélyezése
 
@@ -262,7 +248,7 @@ Képezzen le egy Active Directory-felhasználót egy SAP BW-alkalmazáskiszolgá
 
     ![Képernyőkép az SAP BW Felhasználó-karbantartás képernyőjéről](media/service-gateway-sso-kerberos/user-maintenance.png)
 
-1. Válassza az **SNC** lapot. Az SNC-név beviteli mezőjében adja meg a p:\<Active Directory-felhasználó\>@\<tartománynév\> sztringet. Vegye figyelembe, hogy a kötelező p: elemnek meg kell előznie az Active Directory-felhasználó egyszerű felhasználónevét. A megadott Active Directory-felhasználónak ahhoz a személyhez vagy szervezethez kell tartoznia, amely számára engedélyezni szeretné az egyszeri bejelentkezési hozzáférést az SAP BW-alkalmazáskiszolgálójához. Ha például a [testuser@TESTDOMAIN.COM](mailto:testuser@TESTDOMAIN.COM) felhasználó számára szeretné engedélyezni az egyszeri bejelentkezési hozzáférést, adja meg a p:testuser@TESTDOMAIN.COM sztringet.
+1. Válassza az **SNC** lapot. Az SNC-név beviteli mezőjében adja meg a p:\<Active Directory-felhasználó\>@\<tartománynév\> sztringet. Vegye figyelembe, hogy a kötelező p: elemnek meg kell előznie az Active Directory-felhasználó egyszerű felhasználónevét. A megadott Active Directory-felhasználónak ahhoz a személyhez vagy szervezethez kell tartoznia, amely számára engedélyezni szeretné az egyszeri bejelentkezési hozzáférést az SAP BW-alkalmazáskiszolgálójához. Ha például a testuser\@TESTDOMAIN.COM felhasználó számára szeretné engedélyezni az egyszeri bejelentkezési hozzáférést, adja meg a p:testuser@TESTDOMAIN.COM sztringet.
 
     ![Képernyőkép az SAP BW Felhasználók karbantartása képernyőjéről](media/service-gateway-sso-kerberos/maintain-users.png)
 
@@ -290,17 +276,17 @@ Győződjön meg arról, hogy be tud jelentkezni a kiszolgálóra. Használja az
 
 Ha bármilyen problémát tapasztal, kövesse az alábbi lépéseket a gsskrb5-telepítés és az egyszeri bejelentkezési kapcsolatok SAP Logon programból történő hibaelhárításához.
 
-- A kiszolgálónaplók (…work\dev\_w0 a kiszolgálógépen) megtekintése hasznos lehet a gsskrb5 telepítésének lépései során tapasztalt hibák elhárításában. Ez különösen igaz akkor, ha az SAP BW-kiszolgáló nem indul el a profilparaméterek módosítása után.
+* A kiszolgálónaplók (…work\dev\_w0 a kiszolgálógépen) megtekintése hasznos lehet a gsskrb5 telepítésének lépései során tapasztalt hibák elhárításában. Ez különösen igaz akkor, ha az SAP BW-kiszolgáló nem indul el a profilparaméterek módosítása után.
 
-- Ha nem tudja elindítani az SAP BW szolgáltatást egy bejelentkezési hiba miatt, előfordulhat, hogy rossz jelszót adott meg az SAP BW indítási felhasználójának beállításakor. Ellenőrizze a jelszót úgy, hogy bejelentkezik egy Active Directory-környezetben található gépre az SAP BW-szolgáltatásfelhasználóként.
+* Ha nem tudja elindítani az SAP BW szolgáltatást egy bejelentkezési hiba miatt, előfordulhat, hogy rossz jelszót adott meg az SAP BW indítási felhasználójának beállításakor. Ellenőrizze a jelszót úgy, hogy bejelentkezik egy Active Directory-környezetben található gépre az SAP BW-szolgáltatásfelhasználóként.
 
-- Ha az SQL hitelesítő adatok meggátolják, hogy a kiszolgáló elinduljon, és ezért hibába ütközik, ellenőrizze, hogy biztosított-e hozzáférést a szolgáltatásfelhasználónak az SAP BW-adatbázishoz.
+* Ha az SQL hitelesítő adatok meggátolják, hogy a kiszolgáló elinduljon, és ezért hibába ütközik, ellenőrizze, hogy biztosított-e hozzáférést a szolgáltatásfelhasználónak az SAP BW-adatbázishoz.
 
-- Ekkor a következő üzenet jelenhet meg: „(GSS-API) specified target is unknown or unreachable.”(„(GSS-API) a megadott cél ismeretlen vagy elérhetetlen”). Ez általában azt jelenti, hogy rossz SNC-nevet adott meg. Ügyeljen arra, hogy az ügyfélalkalmazásban csak a „p:” elemet használja, ne a „p:CN=”-t vagy bármi mást, amely a szolgáltatásfelhasználó egyszerű felhasználónevétől eltér.
+* Ekkor a következő üzenet jelenhet meg: „(GSS-API) specified target is unknown or unreachable.”(„(GSS-API) a megadott cél ismeretlen vagy elérhetetlen”). Ez általában azt jelenti, hogy rossz SNC-nevet adott meg. Ügyeljen arra, hogy az ügyfélalkalmazásban csak a „p:” elemet használja, ne a „p:CN=”-t vagy bármi mást, amely a szolgáltatásfelhasználó egyszerű felhasználónevétől eltér.
 
-- Ekkor a következő üzenet jelenhet meg: „(GSS-API) An invalid name was supplied.” („(GSS-API) érvénytelen név lett megadva”). Győződjön meg arról, hogy a „p:” szerepel a kiszolgáló SNC-azonosítójának profilparaméter-értékében.
+* Ekkor a következő üzenet jelenhet meg: „(GSS-API) An invalid name was supplied.” („(GSS-API) érvénytelen név lett megadva”). Győződjön meg arról, hogy a „p:” szerepel a kiszolgáló SNC-azonosítójának profilparaméter-értékében.
 
-- Ekkor a következő üzenet jelenhet meg: „(SNC error) the specified module could not be found.” („(SNC-hiba) a megadott modul nem található”). Ezt általában az okozza, hogy a `gsskrb5.dll/gx64krb5.dll` olyan helyen található, amelynek hozzáféréséhez megemelt jogosultsági szint (rendszergazdai jogosultság) szükséges.
+* Ekkor a következő üzenet jelenhet meg: „(SNC error) the specified module could not be found.” („(SNC-hiba) a megadott modul nem található”). Ezt általában az okozza, hogy a `gsskrb5.dll/gx64krb5.dll` olyan helyen található, amelynek hozzáféréséhez megemelt jogosultsági szint (rendszergazdai jogosultság) szükséges.
 
 ### <a name="add-registry-entries-to-the-gateway-machine"></a>Beállításjegyzékbeli bejegyzések hozzáadása az átjárót tartalmazó számítógépen
 
@@ -356,13 +342,13 @@ Ha nincs konfigurálva az Azure AD Connect, kövesse ezeket a lépéseket minden
 
 Adja hozzá az SAP BW-adatforrást az átjáróhoz: kövesse a cikkben szereplő korábbi, [jelentés futtatásával](#run-a-power-bi-report) kapcsolatos utasításokat.
 
-1. Az adatforrás konfigurációs ablakában adja meg az Alkalmazáskiszolgáló **Gazdagépnév**, **Rendszer száma** és **Ügyfél-azonosító** adatait, ahogy azt a Power BI Desktopból az SAP BW-kiszolgálóba való bejelentkezés során tenné. A **Hitelesítési módszer** elemnél válassza a **Windows** lehetőséget.
+1. Az adatforrás konfigurációs ablakában adja meg az Alkalmazáskiszolgáló **Gazdagépnév**, **Rendszer száma** és **Ügyfél-azonosító** adatait, ahogy azt a Power BI Desktopból az SAP BW-kiszolgálóba való bejelentkezés során tenné.
 
 1. Az **SNC-partner neve** mezőben adja meg a p: \<az SAP BW-szolgáltatás felhasználójára leképezett egyszerű szolgáltatásnév\> értéket. Ha például az SPN SAP/BWServiceUser@MYDOMAIN.COM, adja meg a p:SAP/BWServiceUser@MYDOMAIN.COM értéket az **SNC-partner neve** mezőben.
 
-1. Az SNC-kódtárnál válassza az **SNC\_LIB** vagy az **SNC\_LIB\_64** lehetőséget.
+1. Az SNC-kódtárnál válassza az **SNC_LIB** vagy az **SNC_LIB_64** lehetőséget. 32 bites forgatókönyvekhez használja az **SNC_LIB**, 64 bites forgatókönyvekhez pedig az **SNC_LIB_64** lehetőséget. Ellenőrizze, hogy ezek a környezeti változók a gsskrb5.dll vagy a gx64krb5.dll fájlra mutatnak-e (a bitszámtól függően).
 
-1. A **Felhasználónév** és a **Jelszó** adatoknak egy olyan Active Directory-felhasználó felhasználónevének és jelszavának kell lenniük, amely engedéllyel rendelkezik az SAP BW-kiszolgálóba való bejelentkezéshez egyszeri bejelentkezés használatával. Más szóval ezek egy olyan Active Directory-felhasználóhoz tartoznak, amely le lett képezve egy SAP BW-felhasználóra az SU01 tranzakció használatával. Ezek a hitelesítő adatok csak akkor lesznek használva, ha az **Egyszeri bejelentkezés használata a Kerberoson keresztül DirectQuery-lekérdezésekhez** jelölőnégyzet nincs bejelölve.
+1. Ha a **Windows** lehetőséget választotta a **Hitelesítési módszer** beállításnál, a **Felhasználónév** és a **Jelszó** adatoknak egy olyan Active Directory-felhasználó felhasználónevének és jelszavának kell lenniük, amely engedéllyel rendelkezik az SAP BW-kiszolgálóba való bejelentkezéshez egyszeri bejelentkezés használatával. Más szóval ezek egy olyan Active Directory-felhasználóhoz tartoznak, amely le lett képezve egy SAP BW-felhasználóra az SU01 tranzakció használatával. Ha az **Alapszintű** lehetőséget választotta, a **Felhasználónév** és a **Jelszó** adatoknál a SAP BW-felhasználó felhasználónevét és jelszavát kell megadnia. Ezek a hitelesítő adatok csak akkor lesznek használva, ha az **Egyszeri bejelentkezés használata a Kerberoson keresztül DirectQuery-lekérdezésekhez** jelölőnégyzet nincs bejelölve.
 
 1. Jelölje be az **Egyszeri bejelentkezés használata a Kerberoson keresztül DirectQuery-lekérdezésekhez** jelölőnégyzetet, majd válassza az **Alkalmaz** lehetőséget. Ha a tesztkapcsolat nem volt sikeres, ellenőrizze, hogy az előző telepítési és konfigurációs lépések megfelelően lettek elvégezve.
 
@@ -396,7 +382,7 @@ Az eredmény az, hogy az átjáró nem tudja megfelelően megszemélyesíteni az
 
 A **helyszíni adatátjáróval** és a **DirectQueryvel** kapcsolatos további információkért lásd az alábbi forrásanyagokat:
 
-* [On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)
+* [Mi az a helyszíni adatátjáró?](/data-integration/gateway/service-gateway-getting-started)
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások](desktop-directquery-data-sources.md)
 * [A DirectQuery és az SAP BW](desktop-directquery-sap-bw.md)

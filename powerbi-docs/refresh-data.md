@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 0013080f3640c4c4d3d717104dcc069ccce3923a
-ms.sourcegitcommit: 952afd75fe8ddcf9350bd9aae88e1a4c438d0f3e
+ms.openlocfilehash: 7492651d2b5be8a63c97594fce3f3399b1122cc3
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67561791"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325038"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
 
@@ -55,7 +55,7 @@ Mivel a Power BI gyorsítótárazza az adatokat, az Importálás módú adathalm
 | --- | --- |
 | Megosztott, A1, A2 vagy A3 | 1 GB |
 | A4 vagy P1 | 3 GB |
-| A4 vagy P2 | 6 GB |
+| A5 vagy P2 | 6 GB |
 | A6 vagy P3 | 10 GB |
 | | |
 
@@ -160,7 +160,7 @@ A tárolási módoktól függetlenül egyetlen adatfrissítés sem lehet sikeres
 
 ### <a name="connecting-to-on-premises-data-sources"></a>Csatlakozás helyszíni adatforrásokhoz
 
-Ha az adathalmaz olyan adatforrást használ, amelyhez a Power BI nem fér hozzá közvetlen hálózati kapcsolaton keresztül, akkor csak úgy engedélyezhet frissítési ütemezést vagy hajthat végre igény szerinti adatfrissítést, ha átjárókapcsolatot konfigurál ehhez az adathalmazhoz. Az adatátjárókról és azok működéséről a [Mik azok a helyszíni adatátjárók?](service-gateway-getting-started.md) című cikkből tájékozódhat.
+Ha az adathalmaz olyan adatforrást használ, amelyhez a Power BI nem fér hozzá közvetlen hálózati kapcsolaton keresztül, akkor csak úgy engedélyezhet frissítési ütemezést vagy hajthat végre igény szerinti adatfrissítést, ha átjárókapcsolatot konfigurál ehhez az adathalmazhoz. Az adatátjárókról és azok működéséről a [Mik azok a helyszíni adatátjárók?](service-gateway-onprem.md) című cikkből tájékozódhat.
 
 Az alábbi lehetőségek állnak rendelkezésére:
 
@@ -174,7 +174,10 @@ Az alábbi lehetőségek állnak rendelkezésére:
 
 A Microsoft személyes átjáró helyett vállalati adatátjáró használatát javasolja az adathalmazok helyszíni adatforráshoz csatlakoztatására. Ügyeljen arra, hogy az átjáró megfelelően legyen konfigurálva, tehát rendelkezzen a legújabb frissítésekkel és minden szükséges adatforrás-definícióval. Az adatforrás-definíciók adják meg a Power BI-nak egy adott forrás kapcsolati adatait, köztük a kapcsolati végpontokat, a hitelesítési módot és a hitelesítő adatokat. Az átjárón adatforrásainak kezeléséről [Az adatforrás kezelése – Importálás/Ütemezett frissítés](service-gateway-enterprise-manage-scheduled-refresh.md) című cikkben talál további információt.
 
-Az adathalmazok vállalati átjáróhoz csatlakoztatása viszonylag magától értetődő művelet az átjáró rendszergazdái számára. Rendszergazdai jogosultságokkal gyorsan frissíthet egy átjárót, és szükséges esetén hozzáadhatja a hiányzó adatforrásokat. Ami azt illeti, egy hiányzó adatforrást közvetlenül az adathalmaz beállításainak oldalán hozzáadhat az átjáróhoz. A váltógomb kibontásával megtekintheti az adatforrásokat, és kiválaszthatja az **Hozzáadás átjáróhoz** hivatkozást, ahogyan az alábbi képernyőképen látható. Ha Ön nem az átjáró rendszergazdája, a megjelenő kapcsolattartási adatok használatával a szükséges adatforrás-definíció hozzáadására vonatkozó kérést küldhet egy átjáró-rendszergazdának.
+Az adathalmazok vállalati átjáróhoz csatlakoztatása viszonylag magától értetődő művelet az átjáró rendszergazdái számára. Rendszergazdai jogosultságokkal gyorsan frissíthet egy átjárót, és szükséges esetén hozzáadhatja a hiányzó adatforrásokat. Ami azt illeti, egy hiányzó adatforrást közvetlenül az adathalmaz beállításainak oldalán hozzáadhat az átjáróhoz. A váltógomb kibontásával megtekintheti az adatforrásokat, és kiválaszthatja az **Hozzáadás átjáróhoz** hivatkozást, ahogyan az alábbi képernyőképen látható. Ha azonban Ön nem az átjáró rendszergazdája, forduljon az átjáró rendszergazdájához, és kérje meg, hogy adja hozzá a szükséges adatforrás-definíciót.
+
+> [!NOTE]
+> Az átjáróhoz kizárólag az átjáró rendszergazdája adhat adatforrásokat. Ellenőrizze azt is, hogy az átjáró rendszergazdája hozzáadta-e az Ön felhasználói fiókját azoknak a felhasználóknak a listájához, akiknek engedélyezett az adatforrás használata. Az Adathalmaz beállításai oldalon csak olyan vállalati átjárót választhat ki, amelynek adatforrásának használatára Ön engedélyt kapott.
 
 ![Hozzáadás átjáróhoz](media/refresh-data/add-to-gateway.png)
 
@@ -284,6 +287,8 @@ Azt is vegye figyelembe, hogy a frissítés konfigurált időpontja nem feltétl
 ### <a name="getting-refresh-failure-notifications"></a>Értesítés a sikertelen frissítésekről
 
 A Power BI alapértelmezés szerint e-mail-értesítést küld az adathalmaz tulajdonosának a sikertelen frissítésekről, hogy a tulajdonos időben közbe tudjon lépni frissítési problémák esetén. A Power BI akkor is értesítést küld, ha a szolgáltatás a sorozatos sikertelenség miatt letiltja az ütemezést. A Microsoft az **Értesítést kérek e-mailben, ha sikertelen a frissítés** jelölőnégyzet bejelölve hagyását javasolja.
+
+Érdemes lehet további címzetteket is megadni. Ehhez használja **A felhasználók e-mailben való értesítése sikertelen frissítés esetén** szövegmezőt. Ebben az esetben a rendszer az adathalmaz tulajdonosán kívül a megadott címzetteknek is elküldi a sikertelen frissítésekre vonatkozó értesítéseket. Megadhatja például egy munkatársát, aki vállalta, hogy foglalkozik az adathalmazokkal, amíg Ön szabadságon van. De megadhatja akár az osztály vagy a szervezet frissítési problémáiért felelős támogatási csapat e-mail-aliasát is. Azzal, hogy az adathalmaz tulajdonosán kívül másoknak is elküldi a sikertelen frissítésekre vonatkozó értesítéseket, hozzájárulhat ahhoz, hogy a problémákat időben észrevegyék és megoldják.
 
 Fontos, hogy a Power BI nem csak a sikertelen frissítésekről küld értesítést, hanem akkor is, ha a szolgáltatás inaktivitás miatt szüneteltet egy ütemezett frissítést. Ha két hónapon át egyetlen felhasználó sem látogatott meg az adathalmazon alapuló egyetlen irányítópultot és jelentést sem, a Power BI inaktívnak minősíti az adathalmazt. Ilyen esetben a Power BI e-mailt küld az adathalmaz tulajdonososának, amelyben jelzi, hogy a szolgáltatás szüneteltette az adathalmaz frissítési ütemezését. Az alábbi képernyőkép az ilyen értesítésekre mutat egy példát.
 

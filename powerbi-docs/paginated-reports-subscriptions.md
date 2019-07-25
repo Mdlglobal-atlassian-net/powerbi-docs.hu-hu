@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/24/2019
-ms.openlocfilehash: 472606fcb3b823cdcb722c9d8d6421d0ec652d24
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.date: 07/15/2019
+ms.openlocfilehash: 2d48892450bbf6ab09a4bc88cd2be9a58bbdc863
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839553"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68307067"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Feliratkozás és mások feliratkoztatása többoldalas jelentésre a Power BI szolgáltatásban 
 
@@ -26,15 +26,15 @@ Feliratkozás beállításakor kiválaszthatja, hogy milyen gyakorisággal szere
 
 - Az irányítópultokra és Power BI-jelentésekre való feliratkozásokkal ellentétben ez a feliratkozás a teljes jelentés kimenetét tartalmazza mellékletként.  A következő melléklettípusok vannak támogatva: PDF, PowerPoint-bemutató (PPTX), Excel-munkafüzet (XLSX), Word-dokumentum (DOCX), CSV-fájl és XML.
 
-- Az e-mail szövegtörzsében nem található előnézeti kép a jelentésről.  Azt tervezzük, hogy a jelentés első oldalának képe választható elem legyen. 
+- Az e-mail szövegtörzsében előnézeti képet is elhelyezhet a jelentésről.  Ez nem kötelező, és az előnézet némileg eltérhet a csatolt jelentésdokumentum első oldalától, a kiválasztott mellékletformátumtól függően. 
 
 - A jelentés maximális mellékletméretének értéke 25 MB. 
 
 - Bármely másik felhasználót felírathat bármely jelenleg támogatott adatforráshoz – így például Azure Analysis Services- vagy Power BI-adatkészletekhez – csatlakozó oldalakra osztott jelentésekre. Ne feledje, hogy a jelentésmelléklet az engedélyein alapuló adatokat tükrözi, csakúgy mint az SQL Server Reporting Services jelenleg. 
 
-- A jelentésoldalakra való feliratkozás a jelentés nevéhez kapcsolódik.  
+- Az e-mailes feliratkozásokat az aktuálisan kiválasztott vagy a jelentéshez tartozó alapértelmezett paraméterekkel is elküldheti.  A jelentéshez létrehozott egyes feliratkozásokhoz különböző paraméterértékeket állíthat be. 
 
-- Az e-mailes feliratkozások a jelentés paramétereinek alapértelmezett értékeit alkalmazva lesznek elküldve. 
+- Ha a jelentés szerzője kifejezésalapú paramétereket állított be (például az alapértelmezett érték mindig a mai dátum), a feliratkozás ezt fogja alapértelmezett értékként használni. Módosíthatja más paraméterek értékeit, és beállíthatja az aktuális értékek használatát, de – hacsak nem módosítja kifejezetten ezt az értéket is – a feliratkozás a kifejezésalapú paramétert fogja használni.
 
 - A többoldalas jelentések esetében nincs **Adatfrissítés után** gyakorisági beállítás. Mindig az alapul szolgáló adatforrásból származó legújabb értékeket fogja kapni. 
 

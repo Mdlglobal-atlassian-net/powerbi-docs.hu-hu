@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/15/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b689a4d0718c92608fe7fc0cdb34d27803015269
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: 8d8e77d8fe4ebea5b457ba282014bb8dc738191a
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823542"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68324836"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 A Power BI Desktoppal különböző forrásokból származó adatokhoz csatlakozhat. Az elérhető adatforrások teljes listája az oldal alján látható.
@@ -114,6 +114,7 @@ Az **Azure** kategória a következő adatkapcsolatokat biztosítja:
 * Azure Blob-tároló
 * Azure Table Storage
 * Azure Cosmos DB (bétaverzió)
+* Azure Data Lake Storage Gen2 (béta)
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
@@ -167,6 +168,7 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * Microsoft Graph Security (bétaverzió)
 * Quick Base
 * TeamDesk (bétaverzió)
+* Dynamics 365 Customer Insights (béta)
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Online szolgáltatások** kategória ki van választva.
 
