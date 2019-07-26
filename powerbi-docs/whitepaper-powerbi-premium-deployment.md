@@ -1,6 +1,6 @@
 ---
-title: Üzembe helyezése és kezelése a Power BI prémium szintű kapacitások
-description: Ismerje meg a Power BI Premium lehetséges, és megtudhatja, hogyan megtervezésére, üzembe helyezése, figyelése és hibaelhárítása a méretezhető megoldások.
+title: Power BI Premium kapacitások üzembe helyezése és kezelése
+description: Ismerkedjen meg Power BI Premium lehetséges lehetőségeivel, és Ismerje meg, hogyan tervezhet, helyezhet üzembe, figyelheti és elháríthatja a méretezhető megoldásokat.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -10,55 +10,55 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: fbae2a8b577c52ae597d44bd6ea9913510c4c65c
-ms.sourcegitcommit: dc73e932c9982a4aa0b0ec5297fb9f94c6156bc5
+ms.openlocfilehash: 783f82ecd5c6dea5c26b096b8b1bfcffe388864b
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66518563"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391455"
 ---
-# <a name="deploying-and-managing-power-bi-premium-capacities"></a>Üzembe helyezése és kezelése a Power BI prémium szintű kapacitások
+# <a name="deploying-and-managing-power-bi-premium-capacities"></a>Power BI Premium kapacitások üzembe helyezése és kezelése
 
-**Összefoglalás:** A Power BI Premium stabilabb teljesítményt, a nagyméretű kötetek támogatása és a egy egységes önkiszolgáló és az enterprise BI platform rugalmasságát biztosítja a szervezet minden tagja számára. A szint 300 műszaki tanulmány kifejezetten a Power BI-rendszergazdák, és a tartalom szerzők és közzétevők került. Segíthet eligazodni a Power BI Premium lehetséges, és azt ismertetik, hogyan megtervezésére, üzembe helyezése, figyelése és hibaelhárítása a méretezhető megoldások célja.
+**Összefoglalás:** A Power BI Premium konzisztens teljesítményt nyújt, támogatja a nagyméretű adatmennyiségeket, és egy egységesített önkiszolgáló és nagyvállalati BI-platform rugalmasságát biztosítja a szervezet minden tagja számára. Ezt a 300-es szintű technikai tanulmányt kifejezetten Power BI-rendszergazdák, valamint a tartalmi szerzők és kiadók írták. Ennek célja, hogy segítsen megérteni a Power BI Premium rejlő lehetőségeket, valamint azt, hogy miként lehet megtervezni, üzembe helyezni, figyelni és elhárítani a méretezhető megoldásokat.
 
-**Szerző:** [Peter Myers](https://www.linkedin.com/in/peterjsmyers) (Data Platform MVP és bitenként megoldásokkal független BI-Szakértővé)
+**Szerző** [Peter Myers](https://www.linkedin.com/in/peterjsmyers) (Adatplatform MVP és független BI Expert bitenkénti-megoldásokkal)
 
-**Műszaki véleményezők:** ADAM Saxton, Akshai Mirchandani, Bhavik kereskedőnél, David Magar, Josh Caplan, Michael Blythe, Nimrod Shalit, Olivier Matrat, Swati Gupta
+**Műszaki véleményezők:** Adam Saxton, Akshai Mirchandani, kereskedelmi, David-beli, Josh Caplan, Michael Blythe, Nimród Shalit, Olivier Matrat, SWAT Gupta
 
-**A következőkre vonatkozik:** A Power BI szolgáltatásban, a Power BI Premium és az Azure Power BI Embedded-kapacitások
+**A következőkre vonatkozik:** Power BI szolgáltatás, Power BI Premium és az Azure Power BI Embedded kapacitása
 
 > [!NOTE]
 > A tanulmányt a böngésző **Nyomtatás** > **Mentés PDF-ként** lehetőségével mentheti vagy kinyomtathatja.
 
 ## <a name="introducing-power-bi"></a>A Power BI bemutatása
 
-A Power BI egy üzleti elemzési szolgáltatás elemzéseket kínálnak, amelyek lehetővé teszik a gyors és megalapozott üzleti döntésekhez. A 2015-ben kiadása óta gyorsan vált egy népszerű szolgáltatás, amely a legkisebb szervezetek megoldásokat nyújtsanak a legnagyobb vállalatok.
+A Power BI egy üzleti elemzési szolgáltatás, amely gyors és tájékozott döntéseket tevő elemzéseket tesz lehetővé. A 2015-as kiadás óta gyorsan elérhetővé vált egy népszerű szolgáltatás, amely a legkevesebb szervezet számára kínál megoldásokat a legnagyobb vállalatoknak.
 
-Teszi elérhetővé két módon: Felhőalapú szolgáltatás, és a egy helyszíni jelentéskészítő megoldás nevű **Power BI jelentéskészítő kiszolgáló**. \[[1](#endnote-01)\]
+Két módon érhető el: Felhőalapú szolgáltatásként és **Power bi jelentéskészítő kiszolgáló**nevű helyszíni jelentéskészítési megoldásként. \[[1](#endnote-01)\]
 
-Power bi-ban, mert egy felhőszolgáltatás-as-szoftverszolgáltatások (SaaS) \[ [2](#endnote-02)\]. Azt jelöli, szolgáltatások és alkalmazások, amelyek lehetővé teszik a szervezetek számára, hogy fejlesztése, üzembe helyezése, kezelése, oszthat meg megoldásokat üzleti figyelése.
+A Power bi felhőalapú szolgáltatásként (SaaS) \[ [2](#endnote-02)\]. Olyan szolgáltatásokat és alkalmazásokat képvisel, amelyek lehetővé teszik, hogy a szervezetek fejlesszenek, telepítsék, kezeljék és megosszák a vállalatuk monitorozási megoldásait.
 
-Már nem ez a tanulmány a Power BI szolgáltatás átfogó leírást adhat a szándéka. Ehelyett arra összpontosít, a Power BI Premium tárgya témákról. A Power BI kapcsolatos általános információkért tekintse meg a teljes körű [a Power BI dokumentációja](service-admin-premium-multi-geo.md). A Power BI szolgáltatásban és a hangsúly ezúttal informatikusainak jól teljesítő vállalati üzemelő példánya részletes leírását, tekintse meg a teljes körű [egy Power BI Enterprise üzembehelyezési tervezés](https://aka.ms/pbienterprisedeploy) tanulmány.
+Nem a tanulmány célja, hogy átfogó leírást nyújtson a Power BI szolgáltatás. Ehelyett a Power BI Premium tárgyára vonatkozó témakörökre koncentrál. Az Power BIával kapcsolatos általános információkért tekintse meg az átfogó [Power bi dokumentációját](service-admin-premium-multi-geo.md). Ha részletesebb tájékoztatást szeretne arról, hogy Power BI szolgáltatás a nagyvállalati környezetek nagy teljesítményű üzembe helyezésének megvalósítására összpontosítson, tekintse meg a [Power bi vállalati üzembe helyezési](https://aka.ms/pbienterprisedeploy) tanulmány átfogó megtervezése című témakört.
 
-Tulajdonos. Ez a tanulmány összefüggésében ez a szakasz bemutatja, és ismerteti a kapacitások, a Power BI tartalomtípusokat, modell tárolási módok és licencelés. Ezek a témakörök megértése alapvető fontosságú sikeres üzembe helyezése és kezelése a Power BI Premium.
+Ebben a tanulmány tárgyában ez a szakasz bemutatja és leírja a kapacitásokat, Power BI a tartalomtípusokat, a modell tárolási módjait és licencelését. A témakörök megismerése elengedhetetlen a Power BI Premium sikeres üzembe helyezéséhez és kezeléséhez.
 
 ### <a name="capacities"></a>Kapacitások
 
-**Kapacitások** vannak a Power BI alapfogalom több erőforrást (storage, a processzor és memória) üzemeltetésére, és más Power bi-ban használt jelölő tartalom. Kapacitások vagy megosztott vagy dedikált. A **megosztott kapacitás** van osztva más Microsoft-ügyfelekkel, miközben egy **dedikált kapacitás** elkötelezett egyetlen ügyfél számára. Dedikált kapacitást a jelennek meg a [prémium szintű kapacitások](#premium-capacities) témakör.
+A kapacitások egy alapszintű Power bi koncepció, amely a Power bi-tartalmak üzemeltetéséhez és továbbításához használt erőforrás-készletet (tárhely, processzor és memória) jelenti. A kapacitások megosztottak vagy dedikáltak. A **megosztott kapacitás** megoszlik más Microsoft-ügyfelekkel, míg a **dedikált kapacitás** teljes mértékben elkötelezett egyetlen ügyfél számára. A dedikált kapacitások a [prémium](#premium-capacities) szintű kapacitások témakörben jelennek meg.
 
-Egy megosztott kapacitásban a számítási feladatok a más ügyfelekkel megosztott számítási erőforrásokon futnak. A kapacitás erőforrásokat kell osztani, annak biztosítása érdekében a "tisztességes play", például a modell maximális mérete (1 GB) és a maximális napi frissítési gyakoriságot nyolc alkalommal száma (naponta) korlátozásokat vezetnek be.
+A megosztott kapacitásban a munkaterhelések más ügyfelekkel megosztott számítási erőforrásokon futnak. Mivel a kapacitásnak meg kell osztania az erőforrásokat, korlátozásokra van szükség a "Fair Play" biztosításához, mint például a modell maximális mérete (1 GB) és a napi frissítési gyakoriság (naponta nyolc alkalommal).
 
 ### <a name="workspaces"></a>Munkaterületek
 
-Kapacitások található Power BI-munkaterületeket, és biztonsági, az együttműködés és a központi telepítési tárolók jelölnek. Minden Power BI-felhasználó rendelkezik személyes munkaterületek néven **saját munkaterület**. További munkaterületek és a központi telepítési hozható létre, és ezek **alkalmazás-munkaterületek**. Alapértelmezés szerint – beleértve a személyes munkaterületeket - munkaterületek a megosztott kapacitásban jönnek létre.
+Power BI munkaterületek a kapacitáson belül találhatók, és biztonsági, együttműködési és üzembe helyezési tárolókat jelentenek. Minden Power BI-felhasználó rendelkezik **Saját munkaterülettel**. Az együttműködéshez és a fejlesztéshez további munkaterületek is létrehozhatók, ezeket **Alkalmazás-munkaterületeknek** nevezzük. Alapértelmezés szerint a munkaterületek – beleértve a személyes munkaterületeket is – a megosztott kapacitásban jönnek létre.
 
-### <a name="power-bi-content-types"></a>A Power BI-tartalom típusa
+### <a name="power-bi-content-types"></a>Power BI tartalomtípusok
 
-A Power BI Premium témakörök bevezetni, fontos, az alapvető tartalomtípusok többek között a Power BI-architektúra alapos vita indítása.
+Power BI Premium témakörök bevezetéséhez fontos, hogy a Power BI architektúra alapos megvitatására legyen szó, beleértve az alapvető tartalomtípusokat is.
 
-Minden Power BI-tartalmak tárolja és kezeli a munkaterületeken, amelyek olyan tárolók, a Power BI-tartalmakat. Minden Power BI-felhasználó saját munkaterületét rendelkezik, de az általánosan bevált gyakorlat szerint az alkalmazás-munkaterületek létrehozásához. Alkalmazás-munkaterületek művelésének tartalom és a tartalom közös használata lehetővé teszi lehetővé. Akkor is lehetővé teszi a előkészítéséhez és az alkalmazások széles tartalmak terjesztése.
+A rendszer minden Power BI tartalmat tárol és kezel a munkaterületeken, amelyek Power BI tartalmak tárolói. Minden Power BI felhasználó saját személyes munkaterülettel rendelkezik, de az általános ajánlott eljárás az alkalmazás-munkaterületek létrehozása. Az alkalmazás-munkaterületek lehetővé teszik a tartalmak közös tulajdonlását, valamint a tartalommal való együttműködés lehetőségét. Emellett lehetővé teszik a tartalom előkészítését és terjesztését a széles közönség számára alkalmazásokként.
 
-A következő Power BI-tartalmak a munkaterületeken tárolja:
+A következő Power BI tartalmat tárolja a munkaterületek:
 
 - Adatfolyamok
 - Adathalmazok
@@ -68,810 +68,812 @@ A következő Power BI-tartalmak a munkaterületeken tárolja:
 
 #### <a name="dataflows"></a>Adatfolyamok
 
-A Power BI-adatfolyamok segítségével a szervezetek egyesítheti a különböző forrásokból származó adatokat. Lehessen venni azokat adatként, előkészített és előkészített használható modellek, de azok nem használható közvetlen forrásként a jelentéskészítéshez. A Microsoft adatösszekötők engedélyezése az adatfeldolgozást az adatok helyszíni és felhőbeli adatforrások rengeteg képesek kihasználni.
+Power BI adatfolyamok a különböző forrásokból származó adatok egyesítését segítik. Ezeket a modellekben felkészített és előkészített adatként is figyelembe vehetik, de nem használhatók közvetlenül a jelentéskészítés forrásaként. Kihasználják a Microsoft adatösszekötők széles gyűjteményét, amely lehetővé teszi a helyszíni és a felhőalapú adatforrásokból származó adatok betöltését.
 
-Adatfolyamok csak is létrehozhatók és kezelhetők az alkalmazás-munkaterületek, és az a közös adatok modell (CDM) az Azure Data Lake Storage Gen2 entitásokként vannak tárolva. Általában ütemezett naprakész adatokat tárolni rendszeres frissítéséhez.
+Az adatfolyamok csak alkalmazás-munkaterületeken hozhatók létre és kezelhetők, és a közös adatmodellben (CDM) található entitásként tárolódnak Azure Data Lake Storage Gen2. Általában rendszeres időközönként frissülnek a naprakész adatok tárolására szolgáló ütemezett frissítések.
 
-További információkért tekintse meg a [önkiszolgáló adat-előkészítési a Power bi-ban (előzetes verzió)](service-dataflows-overview.md) dokumentumot.
+További információkért tekintse meg az [önkiszolgáló adatok előkészítését Power bi (előzetes verzió)](service-dataflows-overview.md) dokumentumban.
 
 #### <a name="datasets"></a>Adathalmazok
 
-A Power BI-adatkészletek az adatforrást készen áll a jelentéskészítő és vizualizációs képviseli. Az adatkészletek, által létrehozott számos típusa van:
+Power BI adatkészletek adatforrást jelentenek a jelentéskészítéshez és a vizualizációhoz. Számos típusú adatkészletet hoztak létre:
 
-- Csatlakozás egy meglévő data modell, amelyet egy Power BI-kapacitás nem üzemeltet
-- Egy modellt tartalmazó Power BI Desktop-fájl feltöltése
-- Egy Excel-munkafüzet (amely tartalmaz egy vagy több Excel-táblák és/vagy egy munkafüzet adatmodell) fel- vagy egy Comma-Separated érték (CSV) fájl feltöltése
-- A Power BI szolgáltatás használatával leküldéses, streaming vagy hibrid streamelési adatkészlet létrehozása
+- Csatlakozás egy meglévő adatmodellhez, amely nem Power BIi kapacitásban van tárolva
+- Modellt tartalmazó Power BI Desktop-fájl feltöltése
+- Excel-munkafüzet (egy vagy több Excel-táblázatot és/vagy munkafüzet-adatmodellt tartalmazó) feltöltése, vagy vesszővel tagolt (CSV) fájl feltöltése
+- A Power BI szolgáltatás használata leküldéses, streaming vagy hibrid adatfolyam-adatkészletek létrehozásához
 
-Kivéve a streamelési adatkészletek \[ [3](#endnote-03)\], az adatkészlet jelöli, amely kihasználja az érett modellezési technológiák az Analysis Services adatmodellt.
+A \[ [](#endnote-03)3.\]adatfolyam-adatkészletek kivételével az adatkészlet olyan adatmodellt képvisel, amely a Analysis Services érett modellezési technológiáit használja.
 
-Vegye figyelembe, hogy a dokumentáció, néha a terminológiát adatkészleteket és a modellek felcserélhetők. Általában a Power BI szolgáltatás szempontjából, a neve egy **adatkészlet** , és azt nevezzük fejlesztési szemszögből egy **modell**. Ez a tanulmány összefüggésében, sokkal ugyanazt jelenti.
+Vegye figyelembe, hogy a dokumentációban előfordul, hogy a terminológiai adatkészletek és modellek felcserélhetők. Általában egy Power BI szolgáltatás nézőpontból egy adatkészletnek nevezzük, és  egy fejlesztési perspektívából **modellnek**nevezzük. Ennek a tanulmánynak a kontextusában ugyanezt a dolgot értjük.
 
-##### <a name="externally-hosted-models"></a>Externally-Hosted Models
+##### <a name="externally-hosted-models"></a>Külsőleg üzemeltetett modellek
 
-Telepítését is magában foglalja egy külsőleg üzemeltetett modellhez csatlakozik a [On-Premises Data Gateway](service-gateway-onprem.md) szeretne csatlakozni az SQL Server Analysis Services, hogy a helyszíni vagy Virtuálisgép-ban üzemeltetett infrastruktúra--szolgáltatásként (IaaS). Az Azure Analysis Services nem szükséges az átjáró. Ebben a forgatókönyvben gyakran értelme Ha bármit modell létezik, általában az a vállalati adatok adattárház (EDW) részét képező. Lehetővé teszi a Power BI végrehajtásához egy **élő kapcsolat** (LC) Analysis Services és a rendszer úgy valósítja meg a Power BI-jelentés felhasználó identitásának használatával adatokhoz jogosultságok kényszerítésével. Az SQL Server Analysis Services többdimenziós modellek (kockák) és a táblázatos modellek támogatottak. Ahogy az az alábbi képen is látható, az élő kapcsolatos adatkészlet lekérdezések külsőleg üzemeltetett modellek továbbítja.
+A külsőleg üzemeltetett modellhez való csatlakozás magában foglalja a [](service-gateway-onprem.md) helyszíni adatátjáró telepítését SQL Server Analysis Serviceshoz való csatlakozáshoz, függetlenül attól, hogy a helyszíni vagy a virtuális gép által üzemeltetett infrastruktúra-szolgáltatás (IaaS). Azure Analysis Services nem igényel átjárót. Ez a forgatókönyv gyakran logikus, ha meglévő modell-beruházások léteznek, jellemzően a vállalati adattárház (EDW) részét képezik. Lehetővé teszi, hogy a Power BI **élő kapcsolatokat** (LC) végezzenek Analysis Services, és ezt az adatengedélyek érvényesítésével hajtsa végre az Power bi jelentés felhasználójának identitásával. SQL Server Analysis Services esetében a többdimenziós modellek (kockák) és a táblázatos modellek is támogatottak. Ahogy az az alábbi ábrán is látható, egy élő kapcsolódási adatkészlet lekérdezéseket továbbít a külsőleg üzemeltetett modellekhez.
 
-![Egy élő kapcsolat adatkészletet továbbítja a lekérdezések külsőleg üzemeltetett modellek](media/whitepaper-premium-deployment/live-connection-dataset.png)
+![Az élő kapcsolatok adatkészletei a külsőleg üzemeltetett modellekhez továbbítják a lekérdezéseket](media/whitepaper-premium-deployment/live-connection-dataset.png)
 
-##### <a name="power-bi-desktop-developed-models"></a>A Power BI Desktop fejlett modellek
+##### <a name="power-bi-desktop-developed-models"></a>Power BI Desktop által fejlesztett modellek
 
-A Power BI Desktop - egy Power bi-ban fejlesztési ügyfélalkalmazás - olyan modell, amely lényegében egy Analysis Services táblázatos modell használható. Modellek fejleszthetők adatok adatfolyamok, amely majd integrálható legyen más adatforrásokkal történő importálásával. Bár a részletekről a hogyan modellezési érhető el ebben a tanulmányban hatókörén kívül fontos megérteni, hogy nincsenek-e három különböző típusú - vagy módok - modellek, amelyek a Power BI Desktop használatával fejleszthetők. Módokban határozza meg, hogy az adatok importálása a modellbe, vagy hogy marad az adatforrás. A három mód a következők: Importálás, a DirectQuery és az összetett. Minden mód teljes hatásának a megbeszélését típushelyzetben az [modell tárolási módok](#model-storage-modes) témakör.
+Power BI Desktop – Power BI fejlesztésre szánt ügyfélalkalmazás olyan modell fejlesztésére használható, amely gyakorlatilag egy Analysis Services táblázatos modell. A modellek a adatfolyamok-ből származó adatok importálásával fejleszthetők, amely aztán más adatforrásokkal is integrálható. Habár a modellezési lehetőségek megvalósításának sajátosságai kívül esnek a tanulmány hatókörén, fontos tisztában lennie azzal, hogy három különböző típust vagy módot kell kifejleszteni a Power BI Desktop használatával. Ezek a módok határozzák meg, hogy az adatimportálás a modellbe történik-e, vagy az adatforrásban marad-e. A három mód a következők: Importálás, DirectQuery és összetett. Az egyes üzemmódok teljes körű megvitatását a [modell tárolási módjai](#model-storage-modes) című témakör ismerteti.
 
-Külsőleg üzemeltetett modellek és a Power BI desktop fejlett modellek kényszerítheti a sorszintű biztonság (RLS), amely egy bizonyos felhasználó lekérhető adatok körét. Az értékesítők alkalmazásbiztonsági csoporthoz rendelt felhasználók például csak tekintheti meg a jelentés adatai, amelyhez hozzá van rendelve az értékesítési régió(k) esetében. RLS-szerepkörök lehet dinamikus vagy statikus. **Dinamikus szerepkörök** szűrő a jelentés felhasználó közben **statikus szerepkörök** a alkalmazni a szerepkörhöz rendelt minden felhasználó számára ugyanazokat a szűrőket.
+A Power BI Desktopban fejlesztett külsőleg üzemeltetett modellek és modellek kikényszerítik a soros szintű biztonságot (RLS), hogy korlátozzák az egyes felhasználók számára lekérhető adatforrásokat. Az értékesítők biztonsági csoporthoz rendelt felhasználók például csak azokat az értékesítési régió (k) jelentéseit tekinthetik meg, amelyekhez hozzá vannak rendelve. Az RLS-szerepkörök lehetnek dinamikusak vagy statikusak. A **dinamikus szerepkörök** szűrése a jelentés felhasználója szerint, míg a **statikus szerepkörök** ugyanazt a szűrőt alkalmazzák a szerepkörhöz rendelt összes felhasználónál.
 
-##### <a name="excel-workbook-models"></a>Az Excel-munkafüzet modellek
+##### <a name="excel-workbook-models"></a>Excel-munkafüzet modelljei
 
-Excel-munkafüzetek vagy CSV-alapú adatkészletek létrehozása fájlokat eredményez a modell létrehozásához. Importálandó Excel-táblák és a CSV-adatokat adatmodell-táblák létrehozása közben egy Excel-munkafüzet adatmodelljébe fog felcserélődhet, hozhat létre egy Power BI-modellben. Minden esetben a fájlokban tárolt adatokhoz importálni egy modellt.
+Az Excel-munkafüzetek vagy CSV-fájlok alapján létrehozott adatkészletek létrehozása a modell automatikus létrehozását eredményezi. Az Excel-táblázatok és CSV-adatmodellek importálása a modell-táblázatok létrehozásához történik, míg az Excel-munkafüzetek adatmodelljének áttelepítését Power BI modell létrehozásához. A rendszer minden esetben importálja a fájlokat a modellbe.
 
-Díjszabásban, ezt követően végezhető Power BI-adatkészleteket, amelyek modellek:
+Ezeket a különbségeket a modelleket jelölő Power BI adatkészletek esetében lehet elvégezni:
 
-- A Power BI szolgáltatásban vagy üzemeltetett, vagy külsőleg üzemeltetett az Analysis Services
-- Importált adatok tárolhatják, vagy azok is továbbító lekérdezés küldött kérések kiadására alapul szolgáló adatforrások vagy mindkét vegyes
+- Azokat a Power BI szolgáltatás üzemelteti, vagy a szolgáltatás kívülről Analysis Services
+- Tárolhatják az importált adatokat, vagy kiadhatnak átadó lekérdezési kérelmeket az alapul szolgáló adatforrásokhoz, vagy a kettő kombinációját
 
-A következő fontos alapvető tudnivalók a Power BI-adatkészleteket, amelyek modellek összefoglalása:
+Az alábbiakban a modelleket reprezentáló Power BI adatkészletekkel kapcsolatos fontos tudnivalók összegzése látható:
 
-- Az SQL Server Analysis Services üzemeltetett modellek lekérdezésekben LC végrehajtásához átjáró szükséges.
-- A Power BI-ban üzemeltetett modellek, amelyek az adatok importálása
-  - Teljes mértékben a memóriába betöltött kell lennie, hogy lekérdezhetők legyenek
-  - Frissítsen az adatok naprakészen igényelnek, és az átjárók kell magában foglalja, ha a forrásadatok nem érhető el közvetlenül az interneten keresztül
-- A Power BI-ban üzemeltetett modellek, amelyek (DQ) a DirectQuery tárolási mód a forrásadatokhoz való kapcsolatot igényelnek. A modell kérdeznek le, amikor a Power BI lekérdezések problémák az aktuális adatok lekéréséhez a forrásadatokat. Ebben a módban magában kell foglalnia átjárók, ha a forrásadatok nem érhető el közvetlenül az interneten keresztül.
-- Modellek léptethet RLS-szabályokat, a szűrők megadásával korlátozhatja az egyes felhasználók adatelérési kényszerítése
+- SQL Server Analysis Services üzemeltetett modellekhez az LC-lekérdezések elvégzéséhez átjáró szükséges
+- Az adatimportálást Power BI üzemeltetett modellek
+  - Teljes mértékben be kell tölteni a memóriába, hogy le lehessen kérdezni
+  - A frissítés megkövetelése az adatkezeléshez, és az átjárókat is be kell vonni, ha az adatforrás nem érhető el közvetlenül az interneten keresztül
+- A DirectQuery-(DQ-) tárolási módot használó, Power BI által üzemeltetett modelleknek kapcsolódniuk kell a forrásadatok eléréséhez. A modell lekérése után Power BI a lekérdezéseket a forrásadatok számára a jelenlegi adatforrások lekéréséhez. Ebben a módban átjáróknak kell szerepelniük, ha a forrásadatok nem érhetők el közvetlenül az interneten keresztül.
+- A modellek kikényszerítik az RLS-szabályokat, a szűrők betartatásával bizonyos felhasználók számára az adathozzáférés korlátozását
 
-Sikeres telepítéséhez és a Power BI Premium kezelése, fontos modellek üzemeltető, azok tárolási módot, az átjárókat, az importált adatok mérete függőségek megértéséhez, és frissítse a típusát és gyakoriságát. Ezek az összes jelentős hatással lehet a Power BI Premium-erőforrásokon. Emellett a modell felépítésének maga többek között az adatok előkészítési lekérdezései és számításokat is hozzáadhat kapcsolatos szempontok keveréke.
+Power BI Premium sikeres üzembe helyezéséhez és kezeléséhez fontos megérteni, hogy a modellek hol vannak tárolva, a tárolási mód, az átjárókkal kapcsolatos függőségek, az importált adatmennyiség és a frissítés típusa és gyakorisága. Ezek mind jelentős hatással lehetnek a Power BI Premium erőforrásokra. Emellett a modell maga is megtervezhető, beleértve az adatok előkészítésével kapcsolatos lekérdezéseket és számításokat is.
 
-Is fontos tudni, hogy a Power BI-ban üzemeltetett importálás modellek frissítési ütemezés szerint, vagy lehet aktivált igény szerint a felhasználó a Power BI szolgáltatásban.
+Fontos tisztában lenni azzal is, hogy Power BI által üzemeltetett importálási modellek a Power BI szolgáltatás egy felhasználója szerint frissíthetik vagy igény szerint indíthatják azt.
 
-Optimalizált modellek kialakítása a következő cikkben később a műszaki tanulmány a a [optimalizálása modellek](#optimizing-models) témakör.
+Az optimalizált modellek megtervezése a [modellek optimalizálása](#optimizing-models) című témakör későbbi részében található.
 
 #### <a name="workbooks"></a>Munkafüzetek
 
-A Power BI munkafüzetek a Power BI-tartalom típusát \[ [4](#endnote-04)\]. Azok az Excel-munkafüzeteket, amely fel lett töltve a Power BI szolgáltatásba, és nem lehet a feltöltött Excel-munkafüzetek (modellek)-adatkészletek létrehozása. A munkafüzet tartalomtípus jelöli, amely vagy tölthető fel a Power BI szolgáltatásban, vagy maradjon a felhőalapú tárolás, a OneDrive vagy SharePoint online-hoz egy munkafüzettel létesített kapcsolatot.
+Power bi a munkafüzetek egy Power bi Content Type \[ [4](#endnote-04)\]. Ezek az Excel-munkafüzetek, amelyeket feltöltöttek a Power BI szolgáltatásba, és nem tévesztendő össze az adatkészleteket (modelleket) létrehozó feltöltött Excel-munkafüzetekkel. A munkafüzet tartalmának típusa a munkafüzethez való kapcsolódás, amely a Power BI szolgáltatás tölthető fel, vagy a OneDrive vagy a SharePoint Online Felhőbeli tárolójában maradhat.
 
-Fontos megérteni, hogy a tartalom típusa nem érhető el a Power BI-adatmegjelenítéseket adatforrásként. Ehelyett azt segítségével lehet megnyitni a munkafüzetet a Power BI szolgáltatásban, az Excel online-ban. A tartalomtípus fő szándéka az, hogy lehetővé tegyék a régi Excel munkafüzet jelentéseket a Power BI szolgáltatásban érhető el, és lehetővé teszi az adatvizualizációk a Power BI-irányítópultok rögzíthetők.
+Fontos tisztában lenni azzal, hogy ez a tartalomtípus nem érhető el adatforrásként Power BI adatvizualizációk számára. Ehelyett az Excel online használatával munkafüzetként is megnyitható a Power BI szolgáltatásban. Ennek a tartalomtípusnak a fő célja, hogy lehetővé tegye a régi Excel-munkafüzet jelentéseinek elérhetővé tételét a Power BI szolgáltatáson belülről, és lehetővé teszi az adatvizualizációk rögzítését Power BI irányítópultokon.
 
-További információkért tekintse meg a [adatok lekérése Excel-munkafüzetből](service-excel-workbook-files.md) dokumentumot.
+További információkért tekintse meg az [adatok lekérése Excel-munkafüzetből](service-excel-workbook-files.md) című dokumentumot.
 
 #### <a name="reports"></a>Jelentések
 
-A jelentések két típusa van: Power BI-jelentések és tördelt jelentések.
+Két típusú jelentés létezik: Power BI jelentések és többoldalas jelentések.
 
-**Power BI-jelentések** adjon meg egy interaktív adatábrázolás élményt, amely csak egyetlen adatkészlet csatlakozik. Jelentések gyakran tervezték, hogy ösztönző felhasználói való részvétel lehetővé teheti, hogy szolgáltatásokat rendkívüli tömbjét interakcióba szűréshez, tovább szeletelve, beleértve a tartományok közötti, szűrés és kiemelés, Felhatolás, részletezéseket, részletes elemzések kibontásáról keresztül, a Q & A természetes nyelvi kihallgatásában, összpontosító, lapok közötti navigálásról, spotlighting, megtekinti a könyvjelzők és egyéb.
+**Power bi a jelentések** interaktív adatvizualizációs funkciókat biztosítanak, amelyek csak egyetlen adatkészlethez csatlakoznak. A jelentések gyakran úgy vannak kialakítva, hogy ösztönözzék a felhasználók részvételét, így lehetővé teszik a funkciók rendkívüli körének használatát, beleértve a szűrést, a szeletelést, a szűrést és a kiemelést, a fúrást, a lefúrást, a Q & A természetes nyelvi kérdések, fókuszálás, oldal navigáció, reflektorfény, könyvjelzők megtekintése és sok más.
 
-Ez a tanulmány összefüggésében fontos tudni, hogy a Power BI-architektúra, Power BI-jelentés tervezési és a felhasználói műveletet az összes hatással lehet a Power BI szolgáltatás-erőforrások:
+A tanulmány kontextusában fontos tisztában lenni azzal, hogy a Power BI architektúra, Power BI a jelentések tervezése és a felhasználói interakciók milyen hatással lehetnek a Power BI szolgáltatás erőforrásokra:
 
-- Betölteni és importált modelleken alapuló jelentések kezelése, a modell teljes betöltése a memóriába (akár a Power BI szolgáltatásban üzemeltetett vagy külsőleg üzemeltetett) kell lennie
-- Minden egyes jelentésvizualizáció kiad egy lekérdezést, a modell lekérdezésével adatok lekéréséhez
-- Szűrő és a szeletelő interakciók általában magában foglalja a modell lekérdezése. Például egy szeletelő-kijelölés módosítása – alapértelmezés szerint - szükséges újbóli betöltéséből minden vizualizációt az oldalon \[ [5](#endnote-05)\]
-- Power BI-jelentések megjelenítése az aktuális adatok nem garantálják, és előfordulhat, hogy a felhasználónak betölti a jelentésoldalt és a benne lévő vizualizációkat a jelentés frissítéséhez
-- Felhasználók is érhet el a Q & a tegyen fel kérdéseket, a Power BI jelentéskészítő Tervező biztosít a természetes nyelvi szolgáltatás lehetővé teszi, és a az adatkészlet jelöli az modell egy Power BI-ban üzemeltetett adatok importálása vagy LC adatkészletet úgy konfigurálva, hogy a Q & A engedélyezése
+- Az importálási modellek alapján történő betöltéshez és az azokkal való interakcióhoz a modellt teljes mértékben be kell tölteni a memóriába (függetlenül attól, hogy az Power BI szolgáltatás vagy külsőleg van-e tárolva)
+- Minden jelentés vizualizáció a modell lekérdezésével lekérdezi az Adatlekérdezési lekérdezést.
+- Általában a Filter és a szeletelő interakciója magában foglalja a modell lekérdezését. Például a szeletelők kijelölésének módosítása – alapértelmezés szerint – az egyes vizualizációk újbóli betöltését igénylik \[az [5](#endnote-05) . oldalon\]
+- Power BI a jelentések nem garantálják az aktuális adatmegjelenítést, és szükség lehet arra, hogy a felhasználó frissítse a jelentést a jelentés oldalának és a vizualizációinak újratöltéséhez
+- A felhasználók felhasználhatják a Q & természetes nyelvi funkcióját, hogy kérdéseket tegyenek fel, amelyek lehetővé teszik a Power BI jelentés kialakítását, és az adatkészlet egy Power BI által üzemeltetett adatimportálási modellt vagy egy LC-adathalmazt jelöl, amely lehetővé teszi a Q & A
 
-**Oldalakra osztott jelentések** lehetővé teszi a kiadványt, és az SQL Server Reporting Services (SSRS) jelentések megjelenítése (\*.rdl formátumban). Ahogy a nevük is sugallja, többoldalas jelentések gyakran használják, ha igények miatt rögzített oldalméret nyomtatás szüksége, vagy ha a változó listák, amelyek teljes körűen kell kibontani. Például egy többoldalas renderelési (nem pedig a vizualizáción belül görgetés) készült számla és a nyomtatási.
+A többoldalas **jelentések** lehetővé teszik SQL Server Reporting Services (SSRS) jelentések (\*. rdl formátum) közzétételét és megjelenítését. Ahogy a nevük is sugallja, a többoldalas jelentéseket általában akkor kell használni, ha a követelmények megkövetelik, hogy egy rögzített papírméretre kell nyomtatni, vagy ha vannak olyan változók, amelyeknek teljesen ki kell bontania az adathalmazokat. Például többoldalas megjelenítésre tervezett számla (vizualizáción belüli görgetés helyett) és nyomtatás.
 
-A két támogatott jelentéstípusok választási lehetőséget biztosítson a jelentéskészítők, lehetővé téve számukra az válassza ki a követelmények alapján, és használatra szánt. A Power BI-jelentések általában interaktív élmény a felhasználók vizsgálata, és Fedezze fel a elemezheti az adatait, miközben oldalakra osztott jelentések alkalmasabbak paraméterekkel lapelrendezés ideális.
+A két támogatott Jelentéstípusok a jelentések szerzői számára választhatók, így a követelmények és a kívánt felhasználás alapján választhatják ki a típust. A Power BI jelentések általában olyan interaktív élmények, amelyek lehetővé teszik a felhasználó számára az adatok feltárását és elemzését, míg a többoldalas jelentések a paraméterek által vezérelt lapelrendezések számára alkalmasabbak.
 
-Jelentéstípus, függetlenül válaszol-e a jelentés betöltése és az adatok frissítések elérése (Ha a szűrők vagy paraméterek módosítva) elengedhetetlen, megbízható és jól teljesítő felhasználói élmény.
+A jelentés típusától függetlenül, a rugalmas jelentések betöltésének és az adatfrissítéseknek (a szűrők vagy paraméterek változásakor) elengedhetetlen a megbízható és jól teljesítő felhasználói élmény megvalósítása.
 
 #### <a name="dashboards"></a>Irányítópultok
 
-A Power BI-irányítópultok célja, hogy a monitorozási élményeket nyújthat és adatbázistáblákhoz jelentősen különbözik a Power BI-jelentéseket. Az irányítópultok értékeket és adatokat Vizualizációk a csempék Express tekinthesse egyetlen ablaktábla megjelenítése tervezték. Általában a irányítópultokat kínál néhány irányítópult-tervek várt nincs szükség beavatkozásra, mint a Power BI-jelentések kevesebb interakció környezeteket. Ha például egy felügyelet nélküli irányítópult kiszolgáló szoba beavatkozást nem igénylő képernyőn jelenik meg. Egy másik jelentős különbség az, hogy a irányítópultok csempék, amelyek több adatkészlet, miközben a Power BI a forrásadatok jelentés minden eddiginél csak egyetlen adatkészlet alapján is jelenthet.
+Power BI irányítópultok célja a figyelési tapasztalatok továbbítása, és fogalmilag nagyon különböznek a Power BI jelentésekből. Az irányítópultok úgy vannak kialakítva, hogy egyetlen ablaktáblán jelenjenek meg az értékek és az adatvizualizációk csempén való megjelenítéséhez. Az irányítópultok általában kevesebb interakciós tapasztalatot kínálnak, mint Power BI jelentésekhez, és egyes irányítópult-kialakítások nem várnak interakciót. Például egy felügyelet nélküli irányítópultot, amely egy nem érintőképernyős képernyőn jelenik meg egy kiszolgáló helyiségben. Egy másik jelentős különbség az, hogy az irányítópultok olyan csempéket is tartalmazhatnak, amelyek több adatkészletből származó adatokat is tartalmaznak, míg egy Power BI jelentés csak egyetlen adatkészleten alapulhat.
 
-Fontos megérteni, hogy egy irányítópult az célja, hogy gyorsan betölteni és Express a legfrissebb adatok (vagyis a Power BI szolgáltatásba) minden alkalommal. Csempe lekérdezési eredmények gyorsítótárazásával éri ezt, és az egyes irányítópultok teszi ezt. Tulajdonképpen azt kell megtennie minden olyan felhasználóhoz, egy irányítópultot, amely azon alapul, amelyeket a dinamikus RLS modellek hozzáféréssel rendelkezik.
+Fontos tisztában lenni azzal, hogy egy irányítópultot úgy terveztek, hogy a lehető leggyorsabban betöltsön és a legfrissebb (a Power BI szolgáltatásnak nevezett) adatértékek kifejezzék. Ezt a gyorsítótárazási csempe lekérdezési eredményeivel érheti el, és minden egyes irányítópultnál ezt teszi. Valójában ezt minden olyan felhasználónak el kell végeznie, akinek van hozzáférése a dinamikus RLS-t kényszerítő modelleken alapuló irányítópulthoz.
 
-A Power BI szolgáltatás automatikusan frissíti irányítópult lekérdezési gyorsítótárak, importálása a Power BI-ban üzemeltetett modellek frissítése után azonnal. LC és DQ modellek esetén az adatkészlet tulajdonosa szabályozhatja, hogy milyen gyakran a a Power BI szolgáltatásban frissíti a gyorsítótár, amely akár 15 perces gyakoriságra gyakran vagy ritkán egyszeri konfigurálható egy bizonyos fokú. Vegye figyelembe, hogy LC lekérdezés gyorsítótár-frissítések először lekérdezési modellje a metaadatok a határozza meg, hogy a modell frissítése megtörtént az utolsó gyorsítótár-frissítés óta, és nem folytatódik a gyorsítótár frissítése, amikor a frissítés óta nem történt. Ez az ellenőrzés nem lehetséges DQ modellekhez, és így gyorsítótárazása történik az adatok módosultak-e vagy sem.
+A Power BI szolgáltatás automatikusan frissíti az irányítópult-lekérdezés gyorsítótárait a Power BI által üzemeltetett importálási modellek frissítését követően. Az LC és a DQ modellek esetében az adatkészlet tulajdonosa egy bizonyos fokú ellenőrzés alatt áll, hogy a Power BI szolgáltatás milyen gyakran frissíti a gyorsítótárat, amely 15 percenként, vagy ritkán, akár hetente egyszer is konfigurálható. Vegye figyelembe, hogy az LC-lekérdezés gyorsítótár-frissítései először a modell metaadatainak lekérdezésével határozzák meg, hogy a modell frissítése a legutóbbi gyorsítótár-frissítés óta megtörtént-e, és nem folytatja a gyorsítótár frissítését, ha a frissítés azóta nem történt meg. Ez az ellenőrzési mód nem lehetséges a DQ modellek esetében, ezért a gyorsítótár frissítései a forrásadatok megváltozása után történnek.
 
-Irányítópult-gyorsítótár lekérdezés alapján DQ frissíti, és LC modellek jelentős hatással lehet a Power BI szolgáltatás-erőforrások és a külső adatforrásokhoz. Fontolja meg egy irányítópultot, és a 20 csempék, mind az Azure Analysis Services-modell, amely előírja, hogy dinamikus rls-t, amely óránként frissülnek, és 100 felhasználóval megosztott irányítópult alapján. Ha az adatkészlet frissítéséhez óránként van beállítva, ez azt eredményezi, legalább a 2000 (20 x 100) lekérdezésekben LC. Ez egy hatalmas mennyiségű betöltési tudta elhelyezni a Power BI szolgáltatásban és a külső adatforrásokhoz, és azt is túllépheti a rendelkezésre álló erőforrások vonatkozó korlátozások. Kapacitás erőforrásokat és korlátokat ismertetik a [kapacitás-csomópontokat](#capacity-nodes) témakör.
+A DQ és LC modellek alapján az irányítópult-lekérdezési gyorsítótár frissítései jelentősen befolyásolhatják mind a Power BI szolgáltatás erőforrásait, mind a külső adatforrásokat. Vegyünk egy 20 csempét tartalmazó irányítópultot, amely egy Azure Analysis Services modellen alapul, amely kikényszeríti a dinamikus RLS-t, és minden órában frissül, és hogy ez az irányítópult 100 felhasználókkal van megosztva. Ha az adatkészlet óránkénti frissítésre van konfigurálva, ez legalább 2000 (20 x 100) LC-lekérdezést eredményezhet. Ez óriási terhelést jelenthet a Power BI szolgáltatás és a külső adatforrások számára, és a rendelkezésre álló erőforrásokra vonatkozó korlátokat is meghaladhatja. A kapacitási erőforrások és a korlátok a [Kapacitási csomópontok](#capacity-nodes) témakörben olvashatók.
 
-Felhasználók egy irányítópultot a Power BI szolgáltatás erőforrásainak igénylő többféle módon léphetnek interakcióba. Pontosabban ezek a következők:
+A felhasználók különböző módokon kezelhetik az irányítópultokat, amelyek Power BI szolgáltatás erőforrásokat igényelnek. Pontosabban a következőket tehetik meg:
 
-- Aktiválhatja az irányítópult-csempék, amely egy igény szerinti frissítést az összes kapcsolódó adatok a Power BI-ban üzemeltetett importált modelleken eredményezhet
-- Kapcsolatba léphet a tehet fel és (amely az irányítópult-tervező lehetővé teszi, hogy és az adatkészlet a Power BI-ban üzemeltetett adatmodell importálás vagy LC adatkészletet úgy konfigurálva, hogy engedélyezze a Q & A) a Q & A természetes nyelvi szolgáltatás
-- A gyors elemzések a funkciót, a Power BI használata felderítése is használható elemzéseket készítsenek egy alapul szolgáló adatkészlet, és vizualizációkat, amelyek ismertetik azokat (amely az, hogy a csempe alapul-e egy adatkészletet, amely a Power BI-ban üzemeltetett importálás adatmodell) és válaszol.
-- Riasztások beállítása az irányítópult-csempék a Power BI szolgáltatásban annak értékek – valószínűleg gyakorisággal óránkénti - csempét, és a felhasználók értesítése, ha a küszöbérték túllépése küszöbértékek összehasonlítása (biztosítása, hogy a csempe egyetlen numerikus érték, és alapul egy a Power BI-ban üzemeltetett importálás adatmodell adatkészlet)
+- Az irányítópultok csempéi frissítésének indítása, amely az összes kapcsolódó Power BI üzemeltetett adatimportálási modell igény szerinti frissítését eredményezheti
+- A Q & természetes nyelvi funkciójának használata a kérdések megtételéhez (az irányítópult kialakításának biztosítása lehetővé teszi, hogy az adatkészlet egy Power BI által üzemeltetett adatimportálási modell vagy egy LC-adatkészlet, amely lehetővé teszi a Q & A-t)
+- A gyors elemzések funkció használatával Power BIheti az alapul szolgáló adatkészletből származó elemzéseket, és válaszolhat azokra a vizualizációkkal, amelyek megjelenítik és leírják őket (ami azt mutatja, hogy a csempe egy Power BI által üzemeltetett adatimportálási modellt használó adatkészleten alapul)
+- Konfigurálja a riasztásokat az irányítópult-csempén, amely megköveteli, hogy a Power BI szolgáltatás összehasonlítsa a küszöbértékeket a csempék értékeinek – valószínűleg az óránkénti gyakorisággal –, és a felhasználók értesítése, ha túllépi a küszöbértékeket (feltéve, hogy a csempe egyetlen numerikus értéket jelenít meg, és Power BI által üzemeltetett adatimportálási modell adatkészlete)
 
-### <a name="model-storage-modes"></a>Modell tárolási módok
+### <a name="model-storage-modes"></a>Modell tárolási módjai
 
-Ne felejtse el, hogy a Power BI Desktop lehetővé teszi, hogy három módok egyikében modell fejlesztéséhez. Fontos tudni, hogy az egyes data model tárolási mód és a Power BI szolgáltatás-erőforrások lehetséges hatások logikáját. Ez a szakasz az összes három mód mutatja be. Ezeket később az ebben a tanulmányban a modell optimalizálása témakörben részletesen tárgyalja.
+Ne felejtse el, hogy Power BI Desktop lehetővé teszi a modell fejlesztését a három mód egyikében. Fontos tisztában lenni az egyes adatmodellek tárolási módjának indoklásával és a Power BI szolgáltatás erőforrásokkal kapcsolatos lehetséges hatásokkal. Ez a szakasz mindhárom módot ismerteti. Ezeket a tanulmányokban a modellek optimalizálása témakör későbbi részében részletesebben ismertetjük.
 
 #### <a name="import-mode"></a>Importálási mód
 
-Importálási mód érték a leggyakoribb módja modellek fejlesztése miatt a rendkívül gyors teljesítmény társított memóriabeli kérdez le, a Tervező rugalmasságnak modelers, és támogatja a megadott Power BI szolgáltatás képességeit (Q & A használatára, gyors elemzések stb.). Egy új Power BI Desktop-megoldás létrehozása esetén az alapértelmezett módban.
+Az importálási mód a modellek fejlesztéséhez használt leggyakoribb mód a memóriában történő lekérdezéshez kapcsolódó rendkívül gyors teljesítmény, a modellezések számára elérhető tervezési rugalmasság, valamint az adott Power BI szolgáltatás képességek (Q & A, gyors elemzések stb.). Új Power BI Desktop-megoldás létrehozásakor ez az alapértelmezett mód.
 
-Fontos tudni, hogy importált adatok mindig tárolja a lemezre, és teljes betöltése a memóriába lekérdezni vagy frissíteni kell lennie. A memóriában, egyszer importált modelleken processzoroknak kibővítése a lekérdezési eredmények eléréséhez. Is fontos tudni, hogy nincs-e egy modell importálása folyamatban részben a memóriába betöltött fogalma nem.
+Fontos tisztában lenni azzal, hogy az importált adatmennyiség mindig lemezre van tárolva, és a memóriába való teljes betöltésének lekérdezése vagy frissítése szükséges. A memóriában az importálási modellek villámgyors gyors lekérdezési eredményeket érnek el. Azt is fontos megjegyezni, hogy az importálási modellnek nincs olyan fogalma, amely részben betöltődik a memóriába.
 
-Frissítés, az adatokat tömörített és optimalizált és tárolja a lemez tárolási VertiPaq motor által. A memóriába betöltött lemezről, esetén megállapíthatja, hogy 10 szörös tömörítés, és ezért indokolt várható, hogy 10 GB-os forrásadatok tömörítheti, körülbelül 1 GB méretű. Tárméret lemezen érheti el a 20 %-os felül. \[[6](#endnote-06)\]
+A frissítéskor az adatok tömörítése és optimalizálása, majd lemezre történő tárolása a VertiPaq-tároló motorja által történik. A lemezről a memóriába való betöltéskor megtekinthető a 10x-es tömörítés, ezért ésszerű, hogy a 10 GB-nyi adatforrás körülbelül 1 GB méretűre tömöríthető legyen. A lemezen lévő tárterület mérete 20%-os csökkentést érhet el. \[[6](#endnote-06)\]
 
-Tervezhetőség háromféleképpen lehet elérni. Adatmodellezők a következőket teheti:
+A tervezési rugalmasság három módon érhető el. Az adatmodellező a következőket teheti:
 
-- Több adatforrás - adatforrás típusa és a formátum függetlenül származó adatok gyorsítótárazásával adatok integrálása
-- Adatok előkészítése lekérdezések létrehozásakor használja ki a Power Query-a képlet nyelven (más néven M) funkciók teljes készletét
-- A Data Analysis Expressions (DAX) funkciók teljes készletét használata esetén a modell az üzleti logikát, számított oszlopok, a számított táblázatok és mértékek elért továbbfejlesztésének épülő
+- Adatok integrálása több adatforrásból származó adatok gyorsítótárazásával – az adatforrás típusától és formátumtól függetlenül
+- Az adatelőkészítési lekérdezések létrehozásakor használja a Power Query Formula nyelvének teljes készletét (nem hivatalosan M) függvényt.
+- A teljes adatelemzési kifejezések (DAX) funkcióinak kihasználása a modell üzleti logikával való fejlesztésekor, számított oszlopokkal, számított táblázatokkal és mértékekkel megvalósítva
 
-Ahogy az az alábbi képen is látható, az importálás modell integrálja a támogatott adatforrástípusok tetszőleges számú származó adatok.
+Ahogy az az alábbi ábrán is látható, az importálási modell tetszőleges számú támogatott adatforrás-típusból képes integrálni az adatok mennyiségét.
 
-![Egy modell importálása integrálhatja adatait tetszőleges számú támogatott adatforrástípusok](media/whitepaper-premium-deployment/import-model.png)
+![Az importálási modell tetszőleges számú támogatott adatforrás-típusból képes integrálni az adatok mennyiségét](media/whitepaper-premium-deployment/import-model.png)
 
-Áll importált modelleken társított meggyőző előnyeit, amelyek előfordulhatnak azonban olyan hátrányait túl:
+Ugyanakkor az importálási modellekhez kapcsolódó kényszerített előnyök is fennállnak:
 
-- A teljes modellt kell betöltve a memória, mielőtt a Power BI lekérdezhesse a modell, amely helyezheti nyomás a rendelkezésre álló erőforrások számát és méretét, a modellek növekedésével
-- Modell adatok csak az aktuális, a legújabb frissítés, és így importált modelleken frissíteni kell, lehetőleg ütemezés alapján
-- Teljes frissítés fog eltávolít minden adatot az összes táblából, és töltse be újra az adatforrásból. Ez nagyon drága időt és erőforrásokat a Power BI szolgáltatásban és a adatforrás(ok) tekintetében is lehet. A Power BI rendelkezik a növekményes frissítés, amely elkerülheti a teljes tábla csonkolása és átrakodás támogatása, és ez tárgyalja a [Optimizing Power BI-Hosted modellek](#optimizing-power-bi-hosted-models) témakör.
+- Ahhoz, hogy Power BI le tudja kérdezni a modellt, a teljes modellt be kell tölteni a memóriába, ami nyomást gyakorolhat a rendelkezésre álló erőforrásokra a modellek számának és méretének növekedésével
+- A modell adatai csak a legújabb frissítésnek megfelelőek, így az importálási modelleket lehetőleg ütemezett alapon kell frissíteni.
+- A teljes frissítés eltávolítja az összes tábla összes adatát, és újratölti azt az adatforrásból. Ez nagyon költséges lehet a Power BI szolgáltatás és az adatforrás (ok) hoz tartozó idő és erőforrások tekintetében. Power BI támogatja a növekményes frissítést, amely elkerülheti a teljes táblák csonkítása és újratöltését, és ez a [Power bi által üzemeltetett modellek optimalizálása](#optimizing-power-bi-hosted-models) témakörben látható.
 
-A Power BI szolgáltatás erőforrás szempontjából importált modelleken van szükség:
+Power BI szolgáltatás erőforrás szempontjából az importálási modellek a következőket igénylik:
 
-- Elegendő memória a modell betöltése során kérdezhető le, vagy frissíteni
-- Feldolgozási erőforrásokat és a további memória-erőforrások adatainak frissítése
+- Elegendő memória a modell betöltéséhez a lekérdezés vagy a frissítés során
+- Erőforrások és további memória-erőforrások feldolgozása az adatfrissítéshez
 
-#### <a name="directquery-mode"></a>DirectQuery módban
+#### <a name="directquery-mode"></a>DirectQuery mód
 
-Fejlett (DQ) a DirectQuery módban lévő modellek ne importálja az adatokat. Ehelyett csak a metaadatok állnak, hogy amikor az alapul szolgáló adatforrás problémák natív lekérdezés kérdezhető le.
+Az DirectQuery (DQ) módban fejlesztett modellek nem importálnak adattípust. Ehelyett csak olyan metaadatokat tartalmaznak, amelyekkel a lekérdezés az alapul szolgáló adatforrásra vonatkozó natív lekérdezésekkel kapcsolatos problémákat okoz.
 
-![A DirectQuery modellben az alapul szolgáló adatforrás problémák az natív lekérdezések](media/whitepaper-premium-deployment/direct-query-model.png)
+![A DirectQuery-modell natív lekérdezéseket bocsát ki az alapul szolgáló adatforráshoz](media/whitepaper-premium-deployment/direct-query-model.png)
 
-Nincsenek két fő oka a DQ modellt érdemes lehet. Az első ilyen OK akkor, ha az adatkötetek túl nagy méretű – akkor is, ha a csökkentési metody dat érvényesek - modellbe betöltése vagy gyakorlatilag frissítése. A második ok akkor, ha a jelentések és irányítópultok kell "közel valós idejű" adatokat, megjelenítésen túlmutató módokon lehet (48 naponta alkalommal egy dedikált kapacitás). az ütemezett frissítés korlátokon belül.
+A DQ-modellek fejlesztésének két fő oka van. Az első ok az, ha az adatmennyiség túl nagy – még akkor is, ha az adatcsökkentési módszereket alkalmazták – a modellbe vagy a gyakorlatilag frissítésbe való betöltésre. A második ok az, amikor a jelentéseknek és az irányítópultoknak "közel valós idejű" adatra van szükségük, ami azt jelenti, hogy az ütemezett frissítési korlátokon belül is megvalósítható (napi 48 alkalommal egy dedikált kapacitás esetén).
 
-Nincsenek társított DQ modellek több előnye is van:
+A DQ-modellekkel kapcsolatos előnyök többek között a következők:
 
-- Importálás modell mérete korlátozások nem érvényesek
-- Modellek nem igényelnek frissítést
-- Jelentésfelhasználók a legfrissebb adatok jelenik meg a jelentés szűrőket és szeletelőket, való interakció során, és frissítheti a teljes jelentés az aktuális adatainak letöltése
-- Irányítópult-csempék, DQ modellek, alapján automatikusan frissítheti akár 15 percenként
+- Az importálási modell méretének korlátai nem érvényesek.
+- A modellekhez nem szükséges frissítés
+- A jelentés felhasználói láthatják a legfrissebb adataikat a jelentések szűrőinek és szeletelők használatakor, és frissíthetik a teljes jelentést az aktuális információk lekéréséhez.
+- Az irányítópult-csempék a DQ modellek alapján automatikusan frissülnek a 15 percenkénti gyakorisággal
 
-Vannak azonban számos hátrányait és társított DQ modellek korlátai:
+A DQ-modellekkel kapcsolatban azonban számos hátránya és korlátozás vonatkozik:
 
-- A modell alapján kell egy támogatott adatforráshoz, és ezért semmilyen Adatintegráció már kell elérni az adatforrásban. Támogatott adatforrások relációs és elemző rendszerek támogatásával, számos népszerű adattár \[ [7](#endnote-07)\].
-- Lehet, hogy a teljesítmény lassú, potenciálisan negatív hatással lenne a a Power BI szolgáltatásban (nagyon nagy processzorigényű lekérdezések lehet), és az adatforrás (ami előfordulhat, hogy nem lesz optimalizálva a elemzési lekérdezések)
-- A Power Query lekérdezéseket nem lehet túl összetett, és legfeljebb M kifejezések és függvények, amelyek az adatforrás által ismert a natív lekérdezéseket is lehet felcserélődhet
-- A DAX-függvények korlátozva, amelyek az is lehet helyett a natív lekérdezéseket az adatforrás által ismert, és nem támogatott a számított táblázatokat vagy időintelligencia beépített képességei
-- Alapértelmezés szerint sikertelen lesz, több mint egy millió sort lekérési igénylő lekérdezések modell
-- Jelentések és irányítópultok több vizualizációt jelöl is inkonzisztens eredményeket megjeleníteni, különösen akkor, ha az adatforrás ideiglenes
-- A Q & A és a gyors elemzések nem támogatottak.
+- A modellnek egyetlen támogatott adatforráson kell alapulnia, ezért minden adatintegrációnak már el kell jutnia az adatforrásban. A támogatott adatforrások a kapcsolatok és az analitikus rendszerek, és számos népszerű adattár \[\]támogatásával rendelkeznek. [](#endnote-07)
+- A teljesítmény lassú, potenciálisan negatív hatással lehet a Power BI szolgáltatásra (a lekérdezések nagyon nagy CPU-igényesek lehetnek) és az adatforráson (amely nem optimalizálható analitikus lekérdezésekhez)
+- Power Query lekérdezések nem lehetnek túlságosan összetettek, és legfeljebb M kifejezésre és függvényre alkalmazhatók, amelyek áttelepíthetők az adatforrás által értelmezhető natív lekérdezésekre.
+- A DAX-függvények azokra korlátozódnak, amelyek áttelepíthetők az adatforrás által értelmezett natív lekérdezésekre, és nem támogatottak a számított táblák vagy a beépített időintelligencia-képességek.
+- Alapértelmezés szerint a több mint 1 000 000 sor lekérését igénylő lekérdezési lekérdezések sikertelenek lesznek
+- A több vizualizációt tartalmazó jelentések és irányítópultok inkonzisztens eredményeket jelenítenek meg, különösen akkor, ha az adatforrás változékony
+- A Q & A és A gyors elemzések nem támogatott
 
-A Power BI szolgáltatás erőforrás szempontjából DQ modellek van szükség:
+Egy Power BI szolgáltatás erőforrás perspektívából a DQ modellek a következőket igénylik:
 
-- Minimális memória betölteni a modellt (csak metaadatai) Ha vannak lekérdezve
-- Egyes esetekben jelentős processzor-erőforrások létrehozásához és az adatforrás felé küldött lekérdezések feldolgozása
+- Minimális memória a modell betöltéséhez (csak metaadatok) a lekérdezéskor
+- Időnként jelentős processzor-erőforrások az adatforrásba küldött lekérdezések létrehozásához és feldolgozásához
 
-További információkért tekintse meg a [közvetlen lekérdezés a Power BI Desktopban](desktop-use-directquery.md) dokumentumot.
+További információkért tekintse meg a [közvetlen lekérdezés használata Power bi Desktop](desktop-use-directquery.md) dokumentumban.
 
 #### <a name="composite-mode"></a>Összetett mód
 
-Összetett módban fejlett modellek lehetővé teszik az egyes adatmodell-táblák tárolását módjának konfigurálása. Ezért importálása és DQ táblázatok támogatja. A számított táblázatok (a DAX definiált) és a DQ több adatforráshoz is támogatja.
+Az összetett módban fejlesztett modellek lehetővé teszik a tárolási mód konfigurálását az egyes modellek tábláihoz. Ezért az importálási és DQ táblák együttes használatát is támogatja. Emellett támogatja a számított táblákat (a DAX-ben definiált) és több DQ-adatforrást is.
 
-Tábla tárolási mód importálás, DirectQuery vagy kettős konfigurálható. A tábla konfigurált kettős tárolási mód importálás és a DirectQuery, és ez lehetővé teszi, hogy a Power BI szolgáltatásban a leghatékonyabb mód használata egy lekérdezést a lekérdezési alapon meghatározni.
+A Table Storage mód importálás, DirectQuery vagy Dual lehet. A kettős tárolási üzemmódként konfigurált tábla mind az importálási, mind a DirectQuery, ami lehetővé teszi a Power BI szolgáltatás számára, hogy a lekérdezésen alapuló leghatékonyabb módot határozza meg lekérdezési alapon.
 
-![Egy összetett modell az importálás és DQ tárolási mód esetén tábla szintjén konfigurált kombinációja](media/whitepaper-premium-deployment/composite-model.png)
+![Az összetett modell az importálási és DQ tárolási módok kombinációja, amely a táblázat szintjén van konfigurálva.](media/whitepaper-premium-deployment/composite-model.png)
 
-Összetett modellek arra törekszik, hogy az importálási és DirectQuery módok legjavát. Ha megfelelően konfigurálta, a lekérdezési teljesítmény memórián belüli modellek lehetővé teszi az beolvasni a közel valós idejű adatokat adatforrásokból származó kombinálhatók.
+Az összetett modellek a legjobb importálási és DirectQuery módokat igyekeznek megvalósítani. Ha megfelelően van konfigurálva, a memóriában lévő modellek nagy lekérdezési teljesítményét kombinálhatja a közel valós idejű adatok adatforrásokból való lekérésének lehetőségével.
 
-Összetett modellek fejlesztő adatmodellezők valószínűleg dimenziótípusnak táblázatok konfigurálása az importálás vagy kettős tárolási mód és a tény-típusú táblázatok DirectQuery módban. Például vegyünk egy termék dimenziótípusnak tábla modell a kettős üzemmódú és a egy értékesítési tény-típusú táblázat DirectQuery módban. A Product tábla sikerült gyorsan és hatékonyan kérdezhető le a memóriában való jelentésszeletelőben jelennek meg. A DirectQuery módban a termék táblát csatlakozik majd lehet lekérdezni a Sales táblában. Az utóbbi lekérdezés sikerült engedélyezni a termék- és Sales táblák és a szeletelő értékei alapján történő szűrést csatlakozni egyetlen hatékony natív lekérdezés generációja.
+Az összetett modelleket fejlesztő adatmodellező adatmodellek valószínűleg a dimenzió típusú táblákat importálják importálási vagy kettős tárolási módban, valamint a tény típusú táblákat DirectQuery módban. Tegyük fel például, hogy egy modell egy termék dimenzió típusú táblával kettős módban, valamint egy értékesítési egyedkapcsolat típusú tábla DirectQuery módban. A Product tábla hatékonyan és gyorsan lekérdezhető a memóriából a jelentés szeletelő megjelenítéséhez. A Sales táblát ezután DirectQuery módban lehet lekérdezni a kapcsolódó termék táblához. Az utóbbi lekérdezés lehetővé teszi egyetlen hatékony natív lekérdezés létrehozását a termék-és értékesítési táblákhoz való csatlakozáshoz és a szeletelő értékei szerinti szűréshez.
 
-Általánosságban véve előnyeit és hátrányait, minden egyes modell mód társított tekinthető tábla tárolási mód összetett modellek a alkalmazni.
+Általánosságban elmondható, hogy az egyes modellek üzemmódokhoz kapcsolódó előnyök és hátrányok az összetett modellekben a Table Storage üzemmódra vonatkoznak.
 
-További információkért tekintse meg a [összetett modellek használata a Power BI Desktopban](desktop-composite-models.md) dokumentumot.
+További információkért tekintse meg az [összetett modellek használata Power bi Desktop](desktop-composite-models.md) dokumentumban.
 
 ### <a name="licensing"></a>Licencelés
 
-A Power BI három licenccel rendelkezik:
+Power BI három licenccel rendelkezik:
 
 - Power BI Free
 - Power BI Pro
 - Power BI Premium
 
-A **Power BI ingyenes** licenc lehetővé teszi, hogy jelentkezzen be a Power BI szolgáltatásban és a modellek és a jelentéseket tegye közzé saját munkaterületét belül működik a munkatársak számára. Fontos megérteni, hogy már nem a Power BI-tartalmak megosztása a jelen licenc használatával. Ezt a licencet, mert a neve is sugallja, díjmentes.
+A **Power bi ingyenes** licenc lehetővé teszi, hogy az egyén bejelentkezzen a Power bi szolgáltatásba, és a saját munkaterületén belül működjön együtt a modellek és jelentések közzétételével. Fontos megérteni, hogy a licenc használatával nem lehet megosztani Power BI tartalmakat. Ez a licenc, ahogy a neve is mutatja, ingyenes.
 
-A **Power BI Pro** licenc lehetővé teszi, hogy hozzon létre és együttműködés belüli alkalmazás-munkaterületek és a megosztás és a Power BI egyéni tartalom. Ezenkívül konfigurálhatják a automatikusan adatokat naprakészen tartása, beleértve a helyszíni adatforrásokból származó adatkészletek frissítése. Emellett azok naplózása, és szabályozhatja a adatok elérhető és használható. A licencre szükség a megosztott tartalom fogadására mások, kivéve, ha a felhasználó egy Power BI Premium dedikált kapacitás társítva.
+A **Power bi Pro** licenc lehetővé teszi, hogy az egyén az alkalmazás-munkaterületeken belül hozzon létre és működjön együtt, és Power bi tartalmat osszon meg és terjesszen. Az adatkészletek frissítését is megadhatják, hogy automatikusan tartsák naprakészen az adatokat, beleértve a helyszíni adatforrásokat is. Emellett az adatok hozzáférésének és használatának módját is naplózhatja és szabályozhatja. Erre a licencre azért van szükség, hogy megosztott tartalmat kapjon másoktól, kivéve, ha a felhasználó egy Power BI Premium dedikált kapacitáshoz van társítva.
 
-A **a Power BI Premium** licenc bérlői szintű licencre, és azt a következő cikkben a [bemutatása a Power BI Premium](#introducing-power-bi-premium) szakaszban.
+A **Power bi Premium** licenc a bérlői szintű licenc, és a bevezetési [Power bi Premium](#introducing-power-bi-premium) szakaszban is tárgyaljuk.
 
-A Power BI licenceléssel kapcsolatos további információkért tekintse meg a [Power BI díjszabásának oldalán](https://powerbi.microsoft.com/pricing/) lapot.
+A Power BI licenceléssel kapcsolatos további információkért tekintse meg a [Power bi díjszabását](https://powerbi.microsoft.com/pricing/) ismertető oldalt.
 
-## <a name="introducing-power-bi-premium"></a>A Power BI Premium bemutatása
+## <a name="introducing-power-bi-premium"></a>Power BI Premium bemutatása
 
-A Power BI Premium egy egységes önkiszolgáló és az enterprise BI platform méretezési, megbízható teljesítmény és kiszámítható költségeket biztosít. Ez elsősorban éri ezt azáltal, hogy futtassa a Power BI szolgáltatásban a szervezet számára dedikált erőforrásokkal.
+A Power BI Premium egységes önkiszolgáló és nagyvállalati BI platformot kínál, amely méretezhető, megbízható teljesítményt és kiszámítható költségeket biztosít. Ezt elsősorban úgy éri el, hogy dedikált erőforrásokat biztosít a szervezet Power BI szolgáltatásának futtatásához.
 
-Emellett a Power BI Premium számos vállalati szolgáltatást kínál:
+Emellett a Power BI Premium számos vállalati funkciót nyújt:
 
-- Költséghatékony tartalomterjesztést, a Power BI-tartalmak korlátlan számú Power BI Free felhasználó, beleértve a külső felhasználók számára való megosztásának engedélyezése
-- Támogatása a nagyobb adatkészletek mérete \[ [8](#endnote-08)\]
-- Magasabb frissítési érvényes adatfolyamok és adatkészletek (akár 48 alkalommal / nap)
-- Növekményes frissítési adatfolyamok és adatkészletek
-- Adatfolyam társított entitásokat, és a párhuzamos végrehajtás átalakítások
+- Költséghatékony tartalom terjesztése, amely lehetővé teszi Power BI tartalom megosztását korlátlan Power BI ingyenes felhasználók számára, beleértve a külső felhasználókat is
+- Nagyobb adatkészletek méretének \[támogatása [8](#endnote-08)\]
+- A adatfolyamok és az adatkészletek magasabb frissítési sebessége (akár 48-szor naponta)
+- Adatfolyamok és adatkészletek növekményes frissítése
+- Adatfolyam csatolt entitások és átalakítások párhuzamos végrehajtása
 - Oldalakra osztott jelentések
-- A Power BI jelentéskészítő kiszolgáló helyszíni reporting
-- Lehetővé teszi a tartalom beágyazása alkalmazásokba nevében. alkalmazás felhasználóinak (PaaS)
+- Power BI jelentéskészítő kiszolgáló helyszíni jelentéskészítéshez
+- Tartalom beágyazása az alkalmazásokban az alkalmazás felhasználói (Péter) nevében
 
-Ezek közül számos is javítható, hatékony és méretezhető vállalati megoldásokat, és szerepelnek a [optimalizálása prémium szintű kapacitások](#optimizing-premium-capacities) szakaszban.
+Ezen funkciók közül sok kihasználható a hatékony és méretezhető nagyvállalati megoldások megvalósítása érdekében, és a [prémium szintű kapacitások optimalizálása](#optimizing-premium-capacities) című szakaszban olvashat.
 
-### <a name="subscriptions-and-licensing"></a>Előfizetések és licencek
+### <a name="subscriptions-and-licensing"></a>Előfizetések és licencelés
 
-A Power BI Premium egy bérlői szintű Office 365-előfizetéssel elérhető két (készletkezelési egység) Termékváltozat-családokra:
+A Power BI Premium bérlői szintű Office 365-előfizetés, amely két SKU- (termékváltozat-) családban érhető el:
 
-- **EM** termékváltozatok (EM1-EM3) számára végez beágyazást, egy éves kötelezettségvállalást igénylő után számlázunk havonta
-- **P** termékváltozatok (P1-P3) beágyazása és nagyvállalati funkciókat, havi vagy éves kötelezettségvállalás, hogy havonta számlázzuk, és tartalmaz licencet helyszíni Power BI jelentéskészítő kiszolgáló telepítése
+- **Em** SKU (EM1-EM3) a beágyazáshoz, amely az éves kötelezettségvállalás megkövetelése után havi díjat számol fel
+- **P** SKU (P1-P3) a beágyazáshoz és a nagyvállalati funkciókhoz, a havi vagy az éves kötelezettségvállalás megkövetelése után, valamint a Power bi jelentéskészítő kiszolgáló helyszíni telepítéséhez szükséges licencet tartalmaz.
 
-Egy alternatív módszer is megvásárolható az Azure Power BI Embedded előfizetéssel rendelkező egyetlen Termékváltozat-család: **A** termékváltozatok (A1-A6) beágyazáshoz és a kapacitás csak tesztelési célokra.
+Alternatív módszer egy olyan Azure Power BI Embedded-Előfizetés vásárlása, amely egyetlen SKU-családdal rendelkezik: **Olyan** SKU (a1-A6), amely csak beágyazási és kapacitás-tesztelési célokat szolgál.
 
-A termékváltozatokat nyújthat magok a kapacitások létrehozása \[ [9](#endnote-09)\], azonban a EM termékváltozatok a következők korlátozott kisebb méretezési beágyazásához. A lépéseknek az ismertetése, ez a tanulmány ugyan a P SKU-k a Mi a következő cikkben számos fontos is is, a termékváltozatok.
+Az összes SKU-nak a v-magokat kell létrehoznia \[ [a kapacitások](#endnote-09)\]létrehozásához, de az em SKU-ket kisebb méretű beágyazásra korlátozzák. A tanulmány fókusza pedig a P SKU-ról szól, és a tárgyalt elemek nagy része szintén a SKU-ra vonatkozik.
 
-A Premium szintű előfizetéssel szakembereket SKU-k, az Azure termékváltozatokat szükséges idő kötelezettségvállalás nélkül, és óradíjat kell fizetni. Azok teljes rugalmasságát, felfelé méretezés engedélyezése kézbesítéséhez, vertikális leskálázás, szüneteltetése, folytatása és törlése.
+A Premium-előfizetések termékváltozataival szemben az Azure-termékváltozatok nem igényelnek időbeli kötelezettségvállalást, és óránként vannak számlázva. Biztosítják a fel- és leméretezés, szüneteltetés, folytatás és törlés teljes rugalmasságát.
 
-Az Azure Power BI Embedded nagyrészt az ebben a tanulmányban hatókörén kívül, de a tesztelési módszer témakör gyakorlati és gazdasági lehetőségként teszteléséhez, és mérheti a számítási feladatok tárgyalja.
+Az Azure Power BI Embedded nagyrészt a tanulmány hatókörén kívül esik, de a tesztelési módszerekkel foglalkozó témakörben tárgyaljuk a munkaterhelések teszteléséhez és méréséhez szükséges gyakorlati és gazdasági lehetőséget.
 
-Az Azure termékváltozatokat kapcsolatos további információkért tekintse meg a [Azure Power BI Embedded dokumentációja](/azure/power-bi-embedded/).
+Az Azure SKU-ról további információt az [azure Power bi Embedded dokumentációjában](/azure/power-bi-embedded/)találhat.
 
-A Power BI Premium-előfizetések rendszergazdái a Microsoft 365 felügyeleti központban vásárolhatók meg. Csak az Office 365 globális rendszergazdák vagy a rendszergazdák számlázási pontosabban vásárolhat az SKU-k.
+Power BI Premium-előfizetéseket rendszergazdák szerezhetnek be a Microsoft 365 Felügyeleti központban. Konkrétan csak az Office 365 globális rendszergazdák vagy számlázási rendszergazdák vásárolhatnak SKU-t.
 
-Miután megvásárolta, a bérlő kap a kapacitás - hozzárendelése virtuális magok megfelelő számú ez más néven **magok készletezésével**. Például egy P3 SKU megvásárlása nyújt a bérlő 32 virtuális magot.
+A vásárlást követően a bérlő megfelelő számú v-magot kap a kapacitásokhoz való hozzárendeléshez – ez az úgynevezett **v-Core készletezés**. Egy P3 termékváltozat megvásárlása például 32 virtuális magot biztosít a bérlőnek.
 
-További információkért tekintse meg a [hogyan tudja megvásárolni a Power BI Premium](service-admin-premium-purchase.md) dokumentumot.
+További információkért tekintse meg a [Power bi Premium-](service-admin-premium-purchase.md) dokumentum megvásárlását ismertető dokumentumot.
 
-### <a name="premium-capacities"></a>Premium Capacities
+### <a name="premium-capacities"></a>Prémium szintű kapacitások
 
-Egy megosztott kapacitásban, amelyben a számítási feladatok más ügyfelekkel megosztott számítási erőforrásokon futnak szakembereket egy **dedikált kapacitás** kizárólagos használatra a szervezet által. Elkülönített és dedikált számítási erőforrást, amely megbízható és következetes teljesítményt szolgáltatott tartalom.
+Ezzel szemben egy megosztott kapacitással, amelyben a számítási feladatok más ügyfelekkel megosztott számítási erőforrásokon futnak, a szervezet kizárólagos használatára **dedikált kapacitást** biztosít. Elkülönített számítási erőforrásokkal rendelkezik, amelyek megbízható és konzisztens teljesítményt biztosítanak a szolgáltatott tartalmak számára.
 
-Az ebben a tanulmányban célja **prémium szintű kapacitás** , ami azt jelenti, hogy társítva, az EM vagy a P termékváltozatokat.
+A tanulmány célja a prémium szintű **kapacitás** , ami azt jelenti, hogy az em vagy a P SKU-hoz van társítva.
 
-#### <a name="capacity-nodes"></a>A kapacitás csomópontok
+#### <a name="capacity-nodes"></a>Kapacitás-csomópontok
 
-Az előfizetésekről és a licencelésről a témakörben ismertetett, mint a következők két Power BI Premium SKU-család: EM és. o. Minden Power BI Premium-termékváltozatokat a processzor, memória és tárolási erőforrások időkereten jelölő kapacitás-csomópontként érhető el. Erőforrások mellett minden Termékváltozat esetében működési korlátozások száma másodpercenként (DQ) a DirectQuery és élő kapcsolat (LC) kapcsolatok számától függ, és a párhuzamos modell száma frissíti.
+Az előfizetések és a licencelés témakörben leírtak szerint két Power BI Premium SKU-család létezik: EM és P. Az összes Power BI Premium SKU kapacitási csomópontként érhető el, és mindegyik a processzor, a memória és a tárterület által meghatározott mennyiségű erőforrást jelöl. Az erőforrásokon kívül minden SKU működési korláttal rendelkezik a másodpercenkénti DirectQuery (DQ) és az élő kapcsolat (LC) kapcsolatok számával és a párhuzamos modellek frissítéseivel.
 
-Feldolgozási számú mag, háttér és előtérbeli között egyenlően osztja használatával érhető el.
+A feldolgozást a háttér- és az előtérrendszer között egyenlően elosztott, adott számú virtuális mag valósítja meg.
 
-**Háttérbeli virtuális magok** felelősek a Power BI alapvető funkciókat, beleértve a lekérdezések feldolgozásához, a gyorsítótár kezeléséhez, R services, a modellfrissítéshez, természetes nyelvi feldolgozást (Q & A) és a jelentések és képek kiszolgálóoldali megjelenítés futtatásához. Háttérbeli virtuális magok hozzá vannak rendelve egy rögzített méretű memória, amely elsődleges használt gazdagép modellekhez, amely aktív adatkészlet is nevezzük.
+A **háttérrendszeri virtuális magok** a Power BI alapfunkcióit, például a lekérdezések feldolgozását, a gyorsítótár kezelését, R-szolgáltatások futtatását, modellfrissítést, természetes nyelvi feldolgozást (Q&A) valamint a jelentések és képek megjelenítését végzik el. A háttérbeli v-magok olyan rögzített mennyiségű memóriát kapnak, amelyet elsődlegesen az aktív adatkészleteknek is nevezett modellek üzemeltetéséhez használnak.
 
-**Előtérbeli virtuális magok** felelős a webes szolgáltatás, az irányítópult és jelentés dokumentumkezeléshez, access, ütemezés, API-k, feltölti és tölti le, és általában minden vonatkozó a felhasználói élmény.
+A **frontend v-magok** felelősek a webszolgáltatás, az irányítópult és a jelentési dokumentumok kezelése, a hozzáférési jogosultságok kezelése, az ütemezés, az API-k, a feltöltések és a letöltések, valamint általában a felhasználói élményhez kapcsolódóan.
 
-Tárolási kapacitás csomópontonként 100 TB-ra van beállítva.
+A tárterület 100 TB/kapacitás csomópontra van beállítva.
 
-Az erőforrások és a korlátok minden prémium szintű termékváltozat (és év méretezni A Termékváltozat) a következő táblázat ismerteti.
+Az alábbi táblázat ismerteti az egyes prémium SKU-k erőforrásait és korlátait (és az azzal egyenértékű méretű SKU-t).
 
-| A kapacitás csomópontok | Összes virtuális mag | Háttérrendszeri virtuális magok | MEMÓRIA (GB) | Előtérrendszeri virtuális magok | DQ/LC (/ mp) | Modell frissítése párhuzamos végrehajtás |
+| Kapacitás-csomópontok | Összes virtuális mag | Háttérrendszeri virtuális magok | Memória (GB) | Előtérrendszeri virtuális magok | DQ/LC (/s) | Párhuzamosan végrehajtható modellfrissítések |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3.75 | 1 |
-| EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
+| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3,75 | 1 |
+| EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
 | | | | | | | |
 
-#### <a name="capacity-workloads"></a>A kapacitás számítási feladatokhoz
+#### <a name="capacity-workloads"></a>Kapacitásbeli számítási feladatok
 
-A kapacitás számítási feladatokat a felhasználók számára elérhetővé tett szolgáltatások. Alapértelmezés szerint az Azure és a prémium szintű kapacitások támogatja a csak egy adatkészlet munkaterhelés nem tiltható le, amely a Power BI-lekérdezések futtatása társított.
+A kapacitás-munkaterületek a felhasználók számára elérhetővé tett szolgáltatások. Alapértelmezés szerint a prémium és az Azure-kapacitások csak a futó Power BI lekérdezésekhez társított adathalmaz-munkaterhelést támogatják, amely nem tiltható le.
 
-További számítási feladatok oldalakra osztott jelentések, adatfolyamok és mesterséges Intelligencia esetén is engedélyezhető. Minden további számítási feladat beállítását igényli a maximális memóriát (a teljes szabad memória százalékaként), a munkaterhelés szerint használható.
+A többoldalas jelentések, a adatfolyamok és az AI esetében további számítási feladatok is engedélyezhetők. Minden további munkaterheléshez a munkaterhelés által használható maximális memória (a teljes rendelkezésre álló memória százalékában) konfigurálására van szükség.
 
-#### <a name="how-capacities-function"></a>Hogyan működik a kapacitások
+#### <a name="how-capacities-function"></a>A kapacitások funkció
 
-Az összes időpontokban a Power BI szolgáltatás nagy hangsúlyt fektet a, hogy a kapacitás-erőforrások ajánlott használatát, amíg nem haladja meg a korlátok a kapacitás kivetett.
+A Power BI szolgáltatás mindig a kapacitás-erőforrások legjobb kihasználására törekszik, miközben a kapacitásra vonatkozó korlátokat nem lépi túl.
 
-A kapacitás műveletek besorolt vagy interaktív vagy a háttérben. Interaktív műveletek közé tartozik a kérelmek megjelenítése, és válaszol a felhasználói tevékenységeket (szűrés, a Q & A lekérdezése, stb.). Általában a importálás modell lekérdezésére, a memória erőforrás-igényes, viszont LC/DQ modellek lekérdezésekor a CPU-igényes. Háttérbeli műveletek közé tartozik az adatfolyamot, és importálja a modell frissül, és az irányítópult lekérdezés gyorsítótárazása.
+A kapacitási műveletek interaktív vagy háttérként vannak osztályozva. Az interaktív műveletekhez tartoznak a képmegjelenítési kérések és a felhasználói beavatkozásra való reagálás (szűrés, Q&A-lekérdezés stb.). Általánosságban elmondható, hogy a modell-lekérdezések importálása a memória erőforrás-igényes, míg az LC/DQ-modellek lekérdezése CPU-igényes. A háttérbeli műveletekhez tartoznak az adatfolyamok és az importált modellek frissítései, valamint az irányítópult-lekérdezések gyorsítótárazása.
 
-Fontos tudni, hogy interaktív műveletekhez mindig szándék a lehető legjobb felhasználói élmény biztosítása érdekében a háttérbeli műveletek. Ha rendelkezésre áll elegendő erőforrás, a háttérbeli műveletek feldolgozással, ha az erőforrások felszabadítása várólistába lesz hozzáadva. Adatkészlet frissítések és a mesterséges Intelligencia funkciók, például a háttérbeli műveletek a Power BI szolgáltatás által leállítva közepes folyamat lehet, és hozzáadja egy üzenetsorba.
+Fontos tisztában lenni azzal, hogy az interaktív műveletek mindig a háttérbeli műveletekhez vannak rangsorolva, így biztosítva a lehető legjobb felhasználói élményt. Ha nem áll rendelkezésre elégséges erőforrás, akkor a háttérbeli műveletek egy várakozási sorhoz lesznek adva, és csak erőforrások felszabadulása esetén lesznek feldolgozva. A háttérben futó műveleteket, például az adatkészletek frissítéseit és az AI-függvényeket a Power BI szolgáltatás folyamata leállíthatja, és hozzáadhatja egy várólistához.
 
-Importált modelleken teljes mértékben a memóriába betöltött kell lennie, hogy a lekérdezett vagy frissíteni. A Power BI szolgáltatás kezeli a memória kihasználtsága használatával kifinomult algoritmusok maximálisan kihasználható a rendelkezésre álló memória biztosítása érdekében, és a szükségesnél nagyobb kapacitás érhető el: Bár lehetséges, hogy a kapacitás számos importálás tárolja a modellek (akár 100 TB prémium szintű kapacitás kiszolgálónként), amikor azok összesített lemezterület meghaladja a támogatott memória (és további memóriára szükség, lekérdezéséhez és frissítés), majd azokat az összes betöltése nem sikerült a memóriába egy időben.
+Az importálási modelleket teljes egészében be kell tölteni a memóriába, hogy le lehessen kérdezni vagy frissíteni lehessen őket. A Power BI szolgáltatás kifinomult algoritmusok használatával kezeli a memóriát, így biztosítva a rendelkezésre álló memória maximális kihasználtságát, és a kapacitás túllépését is elérheti: Habár lehetőség van arra, hogy a kapacitás több importálási modellt is tároljon (akár 100 TB-os prémium szintű kapacitással), ha a kombinált lemezes tárterület meghaladja a támogatott memóriát (és további memóriát igényel a lekérdezéshez és a frissítéshez), akkor azok nem tölthetők be a memóriába egy időben.
 
-Ezért be - és távolítva - memória kihasználtsága alapján importált modelleken. Az importálás modell be van töltve, amikor éppen lekérdezett (interaktív művelet) és még nincs a memóriában, vagy ha frissíteni kell (háttér-művelet).
+Az importálási modellek ezért be lesznek töltve a memóriába, és a használat alapján törlődnek a memóriából. Az importálási modell betöltődik a lekérdezéskor (interaktív művelet), még nem a memóriában, vagy ha frissíteni kell (háttérben futó művelet).
 
-Az Eltávolítás a memóriából a modell más néven **kiürítési** , és egy műveletet, amely a Power bi-ban gyorsan hajthat végre a modellek méretétől függően. Ha a kapacitás minden rendelkezésre álló memória mennyisége nem tapasztalja, modellek egyszerűen a memóriába betöltött és helyükön maradnak. \[[10](#endnote-10) \] azonban, ha nincs elég memória a modell betöltése érhető el, a Power BI szolgáltatásban először szabadítson fel memóriát. Azt szabadít fel memória azzal, amelyet nem használtak az elmúlt három percben modellek inaktívvá vált modellek észlelésével \[ [11](#endnote-11)\], és ezután kizárásának őket. Ha nem inaktív modellek fürtből, a Power BI szolgáltatásban arra törekszik, hogy kizárandó modelleket, a háttérbeli műveletek betöltése. Ebbe beletartozik a kiürítési, a háttérben futó számítási feladatokhoz – például a mesterséges Intelligencia munkaterhelés. Végső megoldásként, a sikertelen kísérletek 30 másodperc múlva \[ [11](#endnote-11)\], hogy az interaktív művelet sikertelen. Ebben az esetben a jelentés felhasználó szabályosan értesítést kap, próbálkozzon újra hamarosan javaslatot hiba.
+A modellnek a memóriából való eltávolítását nevezik **kizárásnak** , és ez egy olyan művelet, amely Power bi a modellek méretétől függően gyorsan elvégezhető. Ha a kapacitásban nem lép fel memóriahiány, akkor a modellek egyszerűen be lesznek töltve a memóriába, és ott maradnak. \[[10 Ha azonban](#endnote-10) nem áll rendelkezésre elegendő memória a modell betöltéséhez, akkor a Power bi szolgáltatás először memóriát szabadít fel.\] Az elmúlt \[ [három percben](#endnote-11)\]nem használt modellek keresésével felszabadítja a memóriát, ha olyan modelleket észlel, amelyek inaktívak lesznek, majd kizárja őket. Ha nincsenek kiüríthető inaktív modellek, akkor a Power BI szolgáltatás a háttérbeli műveletekhez betöltött modellek kiürítésére törekszik. Ez magában foglalhatja a háttérbeli számítási feladatok kizárását, például az AI számítási feladatait. Az utolsó, a \[ [sikertelen kísérleteket](#endnote-11)\]követő 30 másodperc után az interaktív művelet sikertelen lesz. Ebben az esetben a jelentés felhasználója szabályosan értesítést kap a hibáról, és egy javaslattal hamarosan újra próbálkozik.
 
-Fontos, hogy hangsúlyozzák az, hogy az adatkészlet kiürítési egy normál és az elvárt működés. Arra törekszik, betöltés és a modellek, amelyek összesített mérete meghaladhatja a rendelkezésre álló memória memóriából memóriafelhasználása maximalizálása érdekében. Ez a Tervező, és teljes mértékben átlátható jelentésfelhasználók. Magas kiürítési díjait nem jelenti a kapacitást nem megfelelően van forrásokat. Is, azonban válnak a veszélye, ha a lekérdezés vagy a frissítés válaszkészségének érte miatt magas kiürítési díjait.
+Fontos hangsúlyozni, hogy az adatkészlet kizárása normális és várt viselkedés. A célja a memória maximális kihasználása olyan modellek betöltésével és eltávolításával, amelyek együttes mérete meghaladja a rendelkezésre álló memóriáét. Ez szándékos, és teljesen átlátható a jelentésfelhasználók számára. A kiürítések magas számából nem feltétlenül következik, hogy a kapacitás nem rendelkezik elegendő erőforrással. Azonban aggodalomra adhat okot akkor, ha a lekérdezések vagy a frissítések válaszkészsége csökken a sok kiürítés miatt.
 
-Frissíti az importálás modellek mindig memóriaigényes modellek kell betölti a memóriába, és további memóriára szükség a feldolgozás céljából. Teljes frissítés körülbelül double a modell által igényelt memória mennyisége használhatja. Ez biztosítja, hogy a modell lekérdezhetők, akkor is, ha a feldolgozás alatt (küldi a lekérdezéseket a meglévő modellt, amíg a frissítés befejeződött, és az új modell adatainak érhető el). Vegye figyelembe, növekményes frissítési kevesebb memória van szükség, és gyorsabban sikerült végrehajtani, és így jelentősen csökkentheti nyomás kapacitás erőforrásokon. Frissítések is lehet a CPU-igényes modellekhez, különösen az összetett Power Query-átalakítások vagy számított táblákat/oszlopokat, amelyek összetett, vagy nagy táblák alapulnak.
+Az importálási modellek frissítése mindig a memóriában történik, mivel a modelleket be kell tölteni a memóriába, és a feldolgozáshoz további memóriára van szükség. Egy teljes frissítés a modell számára szükséges memória mintegy kétszeresét is felhasználhatja. Ez biztosítja, hogy a modell a feldolgozás során is lekérdezhető legyen (a lekérdezéseket a rendszer a meglévő modellbe küldi, amíg a frissítés befejeződik, és az új modell adatai elérhetők). Vegye figyelembe, hogy a Növekményes frissítés kevesebb memóriát igényel, és gyorsabb működést tesz lehetővé, így jelentősen csökkentheti a kapacitási erőforrások terhelését. A modellek frissítése CPU-igényes is lehet, különösen azoknál, amelyek összetett Power Query-transzformációkat vagy olyan számított táblákat/oszlopokat tartalmaznak, amelyek összetettek vagy nagy táblákon alapulnak.
 
-Frissítések – például a lekérdezések - van szükség, hogy a modell a memóriába. Ha nincs elég memória, a Power BI szolgáltatás megkísérli kizárandó inaktív modelleket, és ha ez nem lehetséges (is minden modell nem aktív), a frissítési feladat várólistára van-e állítva. Frissítések általában nagyon nagy Processzorteljesítményt, még akkor is inkább, lekérdezéseket. Ebből kifolyólag nincsenek egyidejű frissítések, állítsa be a háttér virtuális magokkal kerekítve száma x 1.5-ös számú kapacitásának korlátjáig. Ha túl sok egyidejű frissítések, egy ütemezett frissítés várólistára kerül. Ezekben a helyzetekben fordulhat elő, ha hosszabb ideig tart a frissítés befejezéséhez. Vegye figyelembe, hogy a igény szerinti frissítések (egy felhasználói kérelem vagy API-hívás által aktivált) három alkalommal próbálkozik \[ [11](#endnote-11)\], és akkor sikertelen, ha még nem áll elég erőforrás.
+Frissítések – hasonló lekérdezések – megkövetelheti a modell betöltését a memóriába. Ha nincs elég memória, a Power BI szolgáltatás megkísérli a nem aktív modellek kiürítését, és ha ez nem lehetséges (mert minden modell aktív), a frissítési feladat várakozási sorba kerül. A frissítések általában nagyon nagy CPU-igényesek, még inkább a lekérdezéseknél. Emiatt kapacitáskorlát van érvényben az egyidejű frissítések számára. Ez a háttérbeli virtuális magok számának másfélszerese, felfelé kerekítve. Túl sok egyidejű frissítés esetén egy ütemezett frissítés várakozási sorba lesz helyezve. Ilyen helyzetben a frissítés hosszabb idő alatt fejeződik be. Vegye figyelembe, hogy az igény szerinti frissítés (amelyet egy felhasználói kérelem vagy API-hívás indít el) háromszor \[\]újra próbálkozik, majd sikertelen lesz, ha még nem áll rendelkezésre elegendő erőforrás. [](#endnote-11)
 
-## <a name="managing-power-bi-premium"></a>A Power BI Premium kezelése
+## <a name="managing-power-bi-premium"></a>Power BI Premium kezelése
 
-Előfizetések vásárlása és létrehozását, kezelését és figyelését a prémium szintű kapacitások kezelése a Power BI Premium foglalja magában.
+A Power BI Premium kezelése magában foglalja az előfizetések vásárlását, valamint a prémium szintű kapacitások létrehozását, kezelését és figyelését.
 
-### <a name="creating-and-managing-capacities"></a>Létrehozása és kezelése a kapacitások
+### <a name="creating-and-managing-capacities"></a>Kapacitások létrehozása és kezelése
 
-A **Kapacitásbeállítások** lapján a **Power BI felügyeleti** portál megjeleníti a vásárolt virtuális magok száma és a rendelkezésre álló (pl. még, hozzá kell rendelni egy kapacitáshoz) és a prémium szintű kapacitások sorolja fel. A lap lehetővé teszi, hogy az Office 365 globális rendszergazdák vagy a Power BI szolgáltatás-rendszergazdák elérhető virtuális magok a prémium szintű kapacitások létrehozása vagy meglévő prémium szintű kapacitást módosítani.
+A **Power bi felügyeleti** portál **Capacity Settings (kapacitás beállításai** ) lapja megjeleníti a megvásárolt és elérhető v-magok számát (azaz a kapacitáshoz való hozzárendelést), és felsorolja a prémium szintű kapacitásokat. A lap lehetővé teszi, hogy az Office 365 globális rendszergazdái vagy Power BI szolgáltatás rendszergazdák prémium szintű kapacitást hozzanak létre az elérhető virtuális magokból, vagy módosíthatják a meglévő prémium kapacitásokat.
 
-Amikor hoz létre egy prémium szintű kapacitás, a rendszergazda meghatározásához szükséges:
+A prémium szintű kapacitás létrehozásakor a rendszergazdának meg kell határoznia a következőket:
 
 - Kapacitás neve (a bérlőn belül egyedi)
-- A kapacitás admin(s)
+- Kapacitás-rendszergazda (k)
 - Kapacitás mérete
-- Az adatok fizikai tárolási helye régió \[ [12](#endnote-12)\]
+- Adattárolási \[régió [12](#endnote-12)\]
 
-Legalább egy kapacitás-rendszergazda kell hozzárendelni. A kapacitás-rendszergazdák hozzárendelt felhasználók:
+Legalább egy kapacitás-rendszergazdát hozzá kell rendelni. A kapacitás-rendszergazdaként hozzárendelt felhasználók a következőket tehetik:
 
-- Munkaterületek hozzárendelése kapacitáshoz
-- További kapacitás-rendszergazdák vagy (ahhoz, hogy munkaterületeket rendeljen a kapacitás) hozzárendelési engedélyekkel rendelkező felhasználók hozzáadása a felhasználói engedélyek kezelése
-- Többoldalas jelentések és adatfolyamok számítási feladatok maximális memóriahasználat konfigurálása a számítási feladatok kezelése
-- Indítsa újra a kapacitás, alaphelyzetbe állítása minden művelet esetén a rendszer túlterhelési \[ [13](#endnote-13)\]
+- Munkaterületek kiosztása a kapacitáshoz
+- Felhasználói engedélyek kezelése további kapacitás-rendszergazdák vagy hozzárendelési engedélyekkel rendelkező felhasználók hozzáadásához (a munkaterületek kapacitáshoz való hozzárendelésének engedélyezéséhez)
+- A munkaterhelések kezelése, a többoldalas jelentések és a adatfolyamok számítási feladatok maximális memóriahasználat konfigurálása
+- A kapacitás újraindítása, az összes művelet alaphelyzetbe állítása \[, ha a rendszertúlterhelés [13](#endnote-13)\]
 
-Kapacitás-rendszergazdák nem férhetnek hozzá a munkaterület tartalomhoz (kivéve, ha explicit módon hozzárendelt munkaterület-engedélyek), és nem hozzáféréssel rendelkeznek minden Power BI rendszergazdai felületéhez (kivéve, ha explicit módon hozzárendelt) például a használati metrikákat, a naplókhoz és a bérlői beállításokat. Ami fontosabb a kapacitás-rendszergazdák nincs engedélye új kapacitások létrehozása vagy meglévő kapacitások skálázhatja. Emellett hozzá vannak rendelve a egy kapacitás-alapon történik, csak is biztosítva megtekintése és kezelése a kapacitást, amelyhez hozzá van rendelve.
+A kapacitás-rendszergazdák nem férhetnek hozzá a munkaterület tartalmához (kivéve, ha explicit módon hozzárendelt munkaterület-engedélyeket), és nem férnek hozzá az összes Power BI felügyeleti területhez (hacsak nincs explicit módon hozzárendelve), például használati metrikákat, naplókat vagy bérlői beállításokat. Fontos, hogy a kapacitás-rendszergazdáknak nincs engedélye új kapacitások létrehozására vagy a meglévő kapacitások méretezésére. Emellett a kapacitásuk alapján vannak kiosztva, így biztosítva, hogy csak a hozzájuk rendelt kapacitásokat tudják megtekinteni és kezelni.
 
-Kapacitás mérete listából egy rendelkezésre álló SKU beállítások korlátozza a készlet elérhető magok száma alapján kell jelölni. Lehetséges, hozzon létre több kapacitás a készlet, amely egy sikerült beolvasva, vagy további megvásárolható SKU-k. Ha például egy P3 SKU (32 mag) hozzon létre három kapacitások használható: egy P2 (16 mag), és két P1 (2 x 8 mag). Továbbfejlesztett teljesítmény és méret elérhető kisebb méretű kapacitások létrehozásával, és ez a témakör a következő cikkben a [optimalizálása prémium szintű kapacitások](#optimizing-premium-capacities) szakaszban. Az alábbi képen egy példa a telepítő a fiktív Contoso szervezet öt prémium szintű kapacitások álló (P1, és 2 x 3 x P3) minden egyes tartalmazó alkalmazás-munkaterületek, és számos munkaterületek megosztott kapacitáshoz tartoznak.
+A kapacitás méretét ki kell választani az SKU-beállítások elérhető listájából, amelyet a készletben elérhető v-magok száma korlátoz. A készletből több olyan kapacitás is létrehozható, amely egy vagy több megvásárolt SKU-ból származhat. Például egy P3 SKU (32 v-magok) használatával három kapacitás hozható létre: egy P2 (16 v-mag) és két P1 (2 x 8 v-mag). A jobb teljesítmény és méretezés a kisebb méretű kapacitások létrehozásával érhető el, és ez a témakör a [prémium szintű kapacitások optimalizálása](#optimizing-premium-capacities) című szakaszban található. Az alábbi képen egy példa látható a fiktív contoso-szervezet számára, amely öt prémium szintű kapacitást (3 x P1 és 2 x P3) tartalmaz, amelyek mindegyike tartalmazza az alkalmazás-munkaterületeket és több munkaterületet a közös kapacitásban.
 
-![Egy példa a telepítő a fiktív Contoso szervezet számára](media/whitepaper-premium-deployment/contoso-organization-example.png)
+![Példa a fiktív contoso-szervezet telepítésére](media/whitepaper-premium-deployment/contoso-organization-example.png)
 
-Prémium szintű kapacitáshoz melyik adatközpontra (meghatározott földrajzi régiókban) keresztül Power BI-tartalom található rendszergazdai felügyelet biztosít a Power BI-bérlő otthoni régiója régióban is hozzárendelhető. \[[12](#endnote-12)\]
+A prémium szintű kapacitás a Power BI bérlő otthoni régiójától eltérő régióhoz rendelhető, amely lehetővé teszi, hogy az adatközpontok (meghatározott földrajzi régiókban) Power BI a tartalom hol található. \[[12](#endnote-12)\]
 
-A Power BI szolgáltatás-rendszergazdák és az Office 365 globális rendszergazdái módosíthatják a prémium szintű kapacitások. Pontosabban ezek a következők:
+Power BI szolgáltatás a rendszergazdák és az Office 365 globális rendszergazdák módosíthatják a prémium szintű kapacitást. Pontosabban a következőket tehetik meg:
 
-- Vertikális felskálázás vagy leskálázás erőforrások a kapacitás méretének módosítása. Azonban nincs lehetőség alacsonyabbra a P SKU-EM termékváltozatra cserélni, vagy a verziófrissítésre ez fordítva is igaz.
-- Adja hozzá, vagy távolítsa el a kapacitás-rendszergazdák
-- A hozzárendelési engedéllyel rendelkező felhasználók hozzáadása vagy eltávolítása
-- Adja hozzá, vagy távolítsa el a további munkaterhelések
-- Régió módosítása
+- Módosítsa a kapacitás méretét az erőforrások vertikális felskálázásához vagy leskálázásához. Azonban nem lehet visszaminősíteni egy P SKU-t egy EM SKU-ra, vagy a frissítést fordítva.
+- Kapacitás-rendszergazdák hozzáadása vagy eltávolítása
+- Hozzárendelési engedélyekkel rendelkező felhasználók hozzáadása vagy eltávolítása
+- További munkaterhelések hozzáadása vagy eltávolítása
+- Régiók módosítása
 
-A hozzárendelési engedéllyel kell rendelnie a munkaterületet egy adott prémium szintű kapacitáshoz. Az engedélyek az egész vállalattal, adott felhasználókra vagy csoportokra is megadható.
+Hozzárendelési engedélyek szükségesek ahhoz, hogy egy munkaterületet egy adott prémium szintű kapacitáshoz rendeljen. Az engedélyek a teljes szervezet, adott felhasználók vagy csoportok számára is megadhatók.
 
-Alapértelmezés szerint prémium szintű kapacitások támogatja a Power BI-lekérdezések futtatásával kapcsolatos számítási feladatokhoz. Három további számítási feladatokat is támogatja: **Oldalakra osztott jelentések**, **adatfolyamok**, és **AI**. Minden számítási feladathoz szükséges konfigurálása a maximális memóriát (a teljes szabad memória százalékaként), a munkaterhelés szerint használható. Fontos megérteni, hogy növelje a maximális memórialefoglalások befolyásolhatja a üzemeltethető aktív modellek számát és az átviteli sebességet a frissítések.
+Alapértelmezés szerint a prémium szintű kapacitások támogatják a futó Power BI lekérdezésekhez társított munkaterheléseket. Emellett három további munkaterhelést is támogat: Többoldalas **jelentések**, **adatfolyamok**és **AI**. Minden munkaterheléshez meg kell adni a maximális memóriát (a teljes rendelkezésre álló memória százalékában), amelyet a munkaterhelés használhat. Fontos tisztában lenni azzal, hogy a maximális memória-kiosztások nagyobb mértékben befolyásolhatják a szolgáltatható aktív modellek számát és a frissítések sebességét.
 
-A memória adatfolyamokhoz dinamikusan, lapszámozott jelentésekhez viszont statikusan van lefoglalva. A maximális memóriafoglalás statikusan oka, hogy oldalakra osztott jelentések futtathatók a kapacitás biztonságos tartalmazott szóközzel. Ha a beállítás többoldalas jelentések memória, mivel csökkenti a rendelkezésre álló memória a modell betöltése gondot kell fordítani.
+A memória adatfolyamokhoz dinamikusan, lapszámozott jelentésekhez viszont statikusan van lefoglalva. A maximális memória statikus kiosztásának oka az, hogy a többoldalas jelentések a kapacitás biztonságos tárolóhelyén futnak. A többoldalas jelentések memóriájának beállításakor körültekintően kell eljárni, mivel ez csökkenti a rendelkezésre álló memóriát a modellek betöltéséhez.
 
 |                     | EM3                      | P1                       | P2                      | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Oldalakra osztott jelentések | N.A. | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% | Alapértelmezés szerint 20%; minimum 2,5% |
+| Oldalakra osztott jelentések | – | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% | Alapértelmezés szerint 20%; minimum 2,5% |
 | Adatfolyamok | Alapértelmezés szerint 20%; minimum 8%  | Alapértelmezés szerint 20%; minimum 4%  | Alapértelmezés szerint 20%; minimum 2% | Alapértelmezés szerint 20%; minimum 1%  |
-| AI | N.A. | 20 %-os alapértelmezett; 20 %-os minimális  | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5%  |
+| Mesterséges intelligencia | – | 20% alapértelmezett; legalább 20%  | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5%  |
 | | | | | |
 
-Prémium-kapacitás törlése lehetséges, és nem eredményez a munkaterületekről és a tartalom törlését. Ehelyett azt át minden egyes munkaállomásokra koncentrálják megosztott kapacitásra. A prémium szintű kapacitás egy másik régióban lett létrehozva, amikor a munkaterület megosztott kapacitás az otthoni régió kerül.
+A prémium szintű kapacitás törlése lehetséges, és nem eredményezi a munkaterület és a tartalom törlését. Ehelyett a hozzárendelt munkaterületeket áthelyezi a megosztott kapacitásba. Ha a prémium szintű kapacitás egy másik régióban lett létrehozva, a munkaterület a hazai régió megosztott kapacitására kerül.
 
-### <a name="assigning-workspaces-to-capacities"></a>Munkaterületek hozzárendelése kapacitások
+### <a name="assigning-workspaces-to-capacities"></a>Munkaterületek kiosztása a kapacitásokhoz
 
-Munkaterületek hozzárendelheti egy prémium szintű kapacitást a **Power BI felügyeleti** **portál** vagy - alkalmazás-munkaterület – az a **munkaterület** ablaktáblán.
+A munkaterületek egy prémium szintű kapacitáshoz társíthatók a **Power bi felügyeleti**  **portálon** vagy egy alkalmazás-munkaterületen – a **munkaterület** ablaktáblán.
 
-Kapacitás-rendszergazdák, valamint az Office 365 globális rendszergazdák vagy a Power BI szolgáltatás-rendszergazdák, tömegesen rendelhet hozzá munkaterületeket, a **Power BI felügyeleti** **portál**. Hozzárendelt tömeges alkalmazhatók:
+A kapacitás-rendszergazdák, valamint az Office 365 globális rendszergazdák vagy Power BI szolgáltatás rendszergazdák tömegesen rendelhetnek munkaterületeket a **Power bi felügyeleti**  **portálon**. A tömeges hozzárendelés a következőkre alkalmazható:
 
-- **Munkaterületek felhasználók szerint** : Minden munkaterület tulajdonosa a felhasználókat, beleértve a személyes munkaterületeket, a prémium szintű kapacitás vannak hozzárendelve. Ide tartoznak a ismételt hozzárendelése után a munkaterületeket, amikor már hozzá van rendelve egy másik prémium szintű kapacitáshoz. Emellett a felhasználók is hozzárendelt munkaterület-hozzárendelési engedélyt.
+- **Munkaterületek felhasználók szerint** : A felhasználók tulajdonában lévő összes munkaterület, beleértve a személyes munkaterületeket is, a prémium szintű kapacitáshoz rendeli. Ez magában foglalja a munkaterületek újbóli hozzárendelését, ha azok már hozzá vannak rendelve egy másik prémium szintű kapacitáshoz. Emellett a felhasználók munkaterület-hozzárendelési engedélyeket is kapnak.
 
 - **Adott munkaterületek**
-- **A teljes cég munkaterületei** : Minden munkaterület, beleértve a személyes munkaterületeket a prémium szintű kapacitás vannak hozzárendelve. Emellett az összes jelenlegi és jövőbeli felhasználónak hozzárendelt munkaterület-hozzárendelési engedélyt. \[[14](#endnote-14)\]
+- **A teljes szervezet** munkaterületei: Az összes munkaterület, beleértve a személyes munkaterületeket is, a prémium szintű kapacitáshoz van rendelve. Emellett minden aktuális és jövőbeli felhasználóhoz hozzá van rendelve a munkaterület-hozzárendelési engedélyek. \[[14](#endnote-14)\]
 
-Egy prémium szintű kapacitáshoz is hozzáadhatók a munkaterület használatával a **munkaterület** ablaktáblán, lehetővé téve a felhasználó mindkét munkaterület-rendszergazda, és a hozzárendelési engedéllyel rendelkezik.
+Egy munkaterületet a munkaterületet **tartalmazó ablaktábla használatával** adhat hozzá egy prémium szintű kapacitáshoz, amely a felhasználó számára a munkaterület-rendszergazda, valamint a hozzárendelési engedélyekkel rendelkezik.
 
-![A munkaterület ablak használó rendelnie a munkaterületet egy prémium szintű kapacitáshoz](media/whitepaper-premium-deployment/assign-workspace-capacity.png)
+![Munkaterület kiosztása egy prémium szintű kapacitáshoz a munkaterület ablaktáblán](media/whitepaper-premium-deployment/assign-workspace-capacity.png)
 
-Munkaterületek rendszergazdái eltávolíthatják a munkaterületet egy kapacitáshoz (a megosztott kapacitás) anélkül, hogy a hozzárendelési engedéllyel. A munkaterület eltávolítása a munkaterület dedikált kapacitás hatékonyan helyez át a megosztott kapacitásra. Vegye figyelembe, hogy egy munkaterületet egy prémium szintű kapacitáshoz eltávolítása negatív következményekkel eredményez, például a megosztott tartalom a Power BI ingyenes elérhetetlenné lehetnek licenccel rendelkező felhasználók vagy az ütemezett frissítés felfüggesztését a támogatott keretek túllépésekor megosztott kapacitás.
+A munkaterület-rendszergazdák hozzárendelési engedély nélkül eltávolíthatják a munkaterületet a kapacitásból (megosztott kapacitásra). A munkaterületek dedikált kapacitásokból való eltávolítása hatékonyan visszakeresi a munkaterületet a megosztott kapacitásra. Vegye figyelembe, hogy a prémium kapacitású munkaterületek eltávolítása negatív következményekkel járhat, például a megosztott tartalom elérhetetlenné válása Power BI ingyenes licenccel rendelkező felhasználók számára, vagy az ütemezett frissítés felfüggesztése, ha túllépik a támogatott kedvezményeket megosztott kapacitások alapján.
 
-A Power BI szolgáltatásban a gyémánt ikon jelzi, hogy a munkaterület neve adorns egy munkaterületet egy prémium szintű kapacitáshoz rendelve könnyedén azonosíthatók.
+A Power BI szolgáltatás egy prémium szintű kapacitáshoz rendelt munkaterületet könnyen azonosítható a Diamond ikon, amely a munkaterület nevét díszíti.
 
-![Egy munkaterületet egy prémium szintű kapacitáshoz rendelve azonosítása](media/whitepaper-premium-deployment/premium-diamond-icon.png)
+![Egy prémium szintű kapacitáshoz rendelt munkaterület azonosítása](media/whitepaper-premium-deployment/premium-diamond-icon.png)
 
-### <a name="monitoring-capacities"></a>Figyelési kapacitások
+### <a name="monitoring-capacities"></a>Kapacitások figyelése
 
-Prémium szintű kapacitások figyelés segítségével a rendszergazdák hogyan hajtja végre a kapacitások megismerése. Kapacitások használatával figyelhető a [Power BI Premium kapacitás-metrikák alkalmazás](service-admin-premium-monitor-capacity.md) vagy a [Power BI felügyeleti portáljához](service-admin-premium-monitor-portal.md).
+A prémium szintű kapacitások figyelése biztosítja a rendszergazdák számára a kapacitások végrehajtásának megértését. A kapacitást a [Power bi Premium Capacity metrika alkalmazás](service-admin-premium-monitor-capacity.md) vagy a [Power bi felügyeleti portál](service-admin-premium-monitor-portal.md)használatával lehet figyelni.
 
 #### <a name="interpreting-metrics"></a>Metrikák értelmezése
 
-Metrikák ellenőrizni kell létesíteni egy erőforrás-használat és a számítási feladatok tevékenység alapvető ismeretekkel. Ha a kapacitás lassú, fontos tudni, hogy milyen metrikákat kíván monitorozni, és teheti következtetéseket.
+A mérőszámokat úgy kell figyelni, hogy az erőforrás-használat és a munkaterhelés-tevékenységek alapismereteket hozzanak létre. Ha a kapacitás lassú, fontos tisztában lennie a figyelni kívánt mérőszámokkal, valamint az elvégezhető következtetésekkel.
 
-Ideális esetben lekérdezések szolgáltatásszintről egy második rugalmas élményeket nyújthat a felhasználóknak a jelentés és a magasabb szintű lekérdezési teljesítmény engedélyezéséhez. Ez általában a kisebb aggodalomra ad okot amikor – beleértve a frissítések – háttérfolyamatok végrehajtásához hosszabb időt is igénybe.
+Ideális esetben a lekérdezéseknek egy másodpercen belül kell elvégezniük, hogy a felhasználók jelentésére és a nagyobb lekérdezési teljesítményre való reagálásra alkalmas tapasztalatokat adja Általában kevésbé fontos, ha a háttérben futó folyamatok – beleértve a frissítéseket – hosszabb időt is igénybe vehetik.
 
-Lassú jelentések általában arra utalhat, hogy egy túlzott fűtésrendszerek kapacitást is lehet. Nem sikerült betölteni a jelentéseket, ha ez az arra utalhat, hogy egy túlterhelt fűtött kapacitást. Mindkét esetben a fő ok lehet tulajdonítható sok tényező befolyásolja, többek között:
+Általánosságban elmondható, hogy a lassú jelentések egy túlmelegedési kapacitást jelezhetnek. Ha a jelentések nem töltődnek be, ez egy túlzottan fűtött kapacitás jelzése. Mindkét esetben a kiváltó ok számos tényezőhöz kapcsolható, többek között:
 
-- **Sikertelen lekérdezések** természetesen jelzi a rendelkezésre álló memória mennyisége, és hogy a modell nem tölthető be a memóriába. A Power BI szolgáltatás megkísérli betölteni a modell 30 másodpercig, mielőtt hibát jelentene.
+- A **sikertelen lekérdezések** egyértelműen jelzik a memória terhelését, és azt, hogy a modell nem tölthető be a memóriába. A Power BI szolgáltatás a hiba előtt 30 másodpercig kísérli meg betölteni a modell betöltését.
 
-- **Túl sok lekérdezés várakozási idők** számos oka lehet:
-  - A Power BI szolgáltatásban, először szükség a modellek fürtből, és töltsön be a to-be lekérdezett modell (visszaírási, hogy magasabb adatkészlet kiürítési önálló összeg nem arra utalhat, hogy kapacitás stress, kivéve, ha hosszú lekérdezési várakozási időt memóriaakadozás jelző fűzni)
-  - Modell betöltése időpontokban (különösen a nagy modell betöltése a memóriába várakozás)
+- A **túlzott lekérdezési várakozási idő** több okból is lehetséges:
+  - A Power BI szolgáltatás szükséges a modell (ek) első kizárásához, majd a betöltéshez a lekérdezett modell betöltéséhez (ne felejtse el, hogy a nagyobb adatkészlet-kizárási arányok nem jelzik a kapacitási terhelést, kivéve, ha a hosszú lekérdezési várakozási idő a memória kiverését jelzi)
+  - Modell betöltési ideje (különösen a várakozás a nagy méretű modellek memóriába való betöltésére)
   - Hosszú ideig futó lekérdezések
-  - Túl sok LC\DQ kapcsolat (kapacitáskorlátait meghaladó)
-  - CPU színtelítettség
-  - A jelentés összetett tervek a Vizualizáció túl sok (visszaírási, hogy minden egyes vizuális elem lekérdezés) lapon
-- **Hosszú lekérdezés időtartamának összegénél** azt jelzi, hogy modell tervek nem vannak optimalizálva, különösen akkor, ha több adatkészlet kapacitásban aktív, és csak egy adatkészlet van előállító hosszú lekérdezés időtartamának összegénél. Ez azt sugallja, hogy a kapacitás elég ellátva erőforrással, és hogy az kérdés adatkészlet az optimálisnál rosszabb vagy csak lassú. Hosszú ideig futó lekérdezések problémás lehet, mert akkor képes blokkolni a hozzáférést, más folyamatok által igényelt erőforrások.
-- **Frissítése hosszú várakozási idők vagy AI hívás várakozási idők** memóriát sok az aktív modellek miatt nincs elég memória, de akár (meghaladó párhuzamos frissítés korlátok), hogy problémás frissítést blokkolja a többi frissíti.
+  - Túl sok LC\DQ-kapcsolat (meghaladja a kapacitási korlátokat)
+  - CPU-telítettség
+  - Összetett jelentések nagy számú vizualizációval egy oldalon (emlékeztetve arra, hogy minden vizualizáció egy lekérdezés)
+- A **hosszú lekérdezések időtartama** azt jelezheti, hogy a modellek nem optimalizáltak, különösen akkor, ha több adathalmaz aktív a kapacitásban, és csak egy adatkészlet hosszú lekérdezési időtartamokat állít elő. Ez azt sugallja, hogy a kapacitás elég újraforrású, és hogy a szóban forgó adatkészletek optimálisak vagy csak lassúak. A hosszú ideig futó lekérdezések problémát okozhatnak, mivel letilthatják a más folyamatok által igényelt erőforrásokhoz való hozzáférést.
+- A **hosszú frissítési várakozási idő vagy a mesterséges intelligencia-hívások várakozási ideje** a memóriát használó számos aktív modell miatt nem elegendő memóriát jelez, vagy ha egy problémás frissítés blokkolja a többi frissítést (a párhuzamos frissítési korlátokat meghaladja).
 
-A mérőszámok használatát bemutató részletesebb magyarázatáért foglalkozik mellett a [optimalizálása prémium szintű kapacitások](#optimizing-premium-capacities) szakaszban.
+A metrikák használatának részletes ismertetését a [prémium szintű kapacitás optimalizálása](#optimizing-premium-capacities) szakasz következő részében találja.
 
-## <a name="optimizing-premium-capacities"></a>Prémium szintű kapacitások optimalizálása
+## <a name="optimizing-premium-capacities"></a>A prémium szintű kapacitások optimalizálása
 
-Ha prémium szintű kapacitás teljesítménybeli problémák merülnek fel, a közös először megközelítést az optimalizálásában vagy finomhangolása a már telepített megoldások elfogadható válaszidők visszaállításához. A legfontosabb közösségértékek, hogy kerülje a további prémium szintű kapacitás vásárlásával, kivéve, ha igazolható.
+Ha a prémium szintű kapacitással kapcsolatos problémák merülnek fel, a közös első módszer a már üzembe helyezett megoldások optimalizálása vagy finomhangolása az elfogadható válaszidő visszaállítása érdekében. A kényszerített ésszerűség a további prémium kapacitás megvásárlásának elkerülése, kivéve, ha ez indokolt lehet.
 
-Ha további prémium szintű kapacitáshoz szükség, két lehetőség van, amely ebben a szakaszban később tárgyalja:
+Ha további prémium szintű kapacitásra van szükség, két lehetőség közül választhat, amelyek a jelen szakasz későbbi részében jelennek meg:
 
-- Vertikális felskálázás a prémium szintű kapacitás
-- Adjon hozzá egy új prémium szintű kapacitás
+- A prémium szintű kapacitás vertikális felskálázása
+- Új prémium kapacitás hozzáadása
 
-Végül tesztelési módszer és a prémium szintű kapacitás méretezése bétaszolgáltatás ebben a szakaszban.
+Végezetül, a tesztelési megközelítések és a prémium szintű kapacitás méretezése ezt a szakaszt fogja megkötni.
 
-### <a name="general-best-practices"></a>Általános – gyakorlati tanácsok
+### <a name="general-best-practices"></a>Általános ajánlott eljárások
 
-Mindent megtesz érhet el a legjobban kihasználtságát és a teljesítményt van néhány ajánlott eljárást, amely is veszik a általános ajánlásként. Ezek a következők:
+A legjobb kihasználtság és teljesítmény elérésére törekedve van néhány ajánlott eljárás, amely általános javaslatokként is elvégezhető. Ezek a következők:
 
-- Alkalmazás-munkaterületek helyett személyes munkaterületek használatával
-- Üzletileg kritikus és önkiszolgáló bi-ban (összetett) elkülönítésére, különböző kapacitások
+- Alkalmazás-munkaterületek használata személyes munkaterületek helyett
+- Üzleti szempontból kritikus és önkiszolgáló BI (SSBI) elkülönítése különböző kapacitásokra
 
-  ![Kritikus fontosságú üzleti és az önkiszolgáló BI szétválasztása eltérő kapacitások be](media/whitepaper-premium-deployment/separate-capacities.png)
+  ![Üzleti szempontból kritikus és önkiszolgáló BI elkülönítése különböző kapacitásokra](media/whitepaper-premium-deployment/separate-capacities.png)
 
-- Ha a tartalom megosztása csak a Power BI Pro-felhasználók, előfordulhat, nem kell tárolnia a tartalmat a dedikált kapacitás
-- Dedikált kapacitás használja, ha egy adott frissítés idejének eléréséhez, illetve a funkciók szükség, például nagyméretű adatkészletek vagy többoldalas jelentés
+- Ha csak Power BI Pro felhasználókkal oszt meg tartalmat, előfordulhat, hogy a tartalmat nem kell dedikált kapacitásban tárolnia
+- Használjon dedikált kapacitást, ha egy adott frissítési időt szeretne elérni, vagy ha konkrét funkciókra van szükség, például nagyméretű adathalmazok vagy többoldalas jelentések esetén
 
-### <a name="addressing-common-questions"></a>Addressing Common Questions
+### <a name="addressing-common-questions"></a>Gyakori kérdések kezelése
 
-A Power BI Premium üzemelő példányok optimalizálásához munkaterhelési követelményeinek, a rendelkezésre álló erőforrások és azok hatékony felhasználása megismerése érintő összetett témakör.
+Power BI Premium központi telepítések optimalizálása egy összetett témakör, amely a számítási feladatok követelményeinek, a rendelkezésre álló erőforrások és a hatékony használatnak a megértését foglalja magában.
 
-Ez a témakör hét gyakori kérdésekre, leíró lehetséges problémák és magyarázatok és hogyan azonosíthatja és megoldhatja őket, a címeket.
+Ebben a témakörben hét általános támogatási kérdés található, amely leírja a lehetséges problémákat és magyarázatokat, valamint az azok azonosításával és megoldásával kapcsolatos információkat.
 
-#### <a name="why-is-the-capacity-slow-and-what-can-i-do"></a>Miért van a lassú kapacitást, és mi a teendő?
+#### <a name="why-is-the-capacity-slow-and-what-can-i-do"></a>Miért lassú a kapacitás, és mit tehetek?
 
-Nincsenek számos oka lehet, amely hozzájárulhat a lassú prémium-kapacitás. Ez a kérdés további információra van szüksége, megismerheti, mit kell érteni lassú. Azok a jelentések betöltődni? Vagy azok sikertelen betöltéséhez? Lassúak a jelentésvizualizációk betölteni vagy frissíteni, ha a felhasználók használják a jelentést? Frissítések tart hosszabb, mint a várt, vagy a korábban észlelt?
+Számos oka lehet a lassú prémium szintű kapacitásnak. Ebben a kérdésben további információkra van szükség a lassú működésének megismeréséhez. Lassú a jelentések betöltése? Vagy nem sikerül betölteni? A jelentésekben a vizualizációk lassan töltődnek be vagy frissülnek, amikor a felhasználók együttműködnek a jelentéssel? A frissítések a vártnál több időt vesznek igénybe, vagy korábban már tapasztaltak?
 
-Kellene szerzett megértéséhez okát, majd elkezdheti vizsgálatára. Az alábbi hat kérdésekre adott válaszok segítségével történő több konkrét problémák.
+Miután megértette az okát, megkezdheti a vizsgálatát. A következő hat kérdésre adott válaszok segítenek a konkrétabb problémák megoldásában.
 
-#### <a name="what-content-is-using-up-my-capacity"></a>Milyen tartalmat használ fel saját kapacitása?
+#### <a name="what-content-is-using-up-my-capacity"></a>Milyen tartalmat használ a kapacitásom?
 
-Használhatja a **Power BI Premium kapacitás-metrikák** alkalmazás szűrés a kapacitást, és tekintse át a munkaterület-tartalom a teljesítmény-mérőszámon. Tekintse át a teljesítmény-mérőszámok és erőforrás-használatra óránként egy prémium szintű kapacitáson belül tárolt összes tartalom az elmúlt hét nap, lehetőség. Ez gyakran az az első lépés, ha a prémium szintű kapacitás teljesítményével kapcsolatos általános gondja hibaelhárítás.
+A **Power bi Premium kapacitás metrikái** alkalmazással szűrheti a kapacitást, és áttekintheti a munkaterület-tartalmak teljesítmény-mérőszámait. A prémium szintű kapacitáson belül tárolt összes tartalom esetében az elmúlt hét napban a teljesítmény-mérőszámok és az erőforrás-használat óránként ellenőrizhető. Ez gyakran az első lépés a prémium szintű kapacitás teljesítményével kapcsolatos általános aggályok elhárítása során.
 
-Alapvető metrikák figyelése a következők:
+A figyelni kívánt fő mérőszámok a következők:
 
-- Átlagos CPU és a magas kihasználtság száma
-- Átlagos memória és a magas kihasználtság száma és a memóriahasználat, adott adatkészletek, adatfolyamok és oldalakra osztott jelentések
-- A memóriában aktív adatkészlet
-- Átlagos és maximális lekérdezési időtartamok
-- A lekérdezés átlagos várakozási idő
-- Átlagos adatkészletet és adatfolyam alkalommal frissítése
-- Átlagos mesterséges Intelligencia alkalommal hívja, és a várakozási idő
+- Átlagos CPU-és magas kihasználtsági szám
+- Az átlagos memória és a magas kihasználtságok száma, valamint az egyes adatkészletek, a adatfolyamok és a többoldalas jelentések memóriájának használata
+- Memóriában betöltött aktív adatkészletek
+- Lekérdezések átlagos és maximális időtartama
+- Lekérdezési várakozási idő átlagos ideje
+- Adatkészletek és adatfolyam-frissítési idők átlagos száma
+- Az AI-hívások átlagos ideje és várakozási ideje
 
-Ezenkívül a Power BI alkalmazásban prémium szintű kapacitás metrikák, aktív memória jeleníti meg egy jelentést, amely nem zárható ki, mert az elmúlt három percben használja kiosztott memória teljes mennyisége. Egy nagy és/vagy aktív adatkészlet frissítési várakozási idő kiugróan magas sikerült megfeleltetendő.
+Emellett a Power BI Premium kapacitás Metrikái alkalmazásban az aktív memória egy jelentéshez lefoglalt teljes memória mennyiségét jeleníti meg, amelyet nem lehet kizárni, mert az elmúlt három percben használatban van. A frissítési várakozási idő magas csúcsa nagy és/vagy aktív adatkészlettel is korrelálható.
 
-A "Top 5 által átlagos időtartam" diagram emeli ki, az az öt legaktívabb adatkészletek, többoldalas jelentések, adatfolyamok és AI-hívások kapacitás erőforrásokat. Az első öt listák tartalom deduplikációra vizsgálat és a lehetséges optimalizálás.
+A "Top 5 by Average időtartam" diagram kiemeli az első öt adatkészletet, a többoldalas jelentéseket, a adatfolyamok és a kapacitási erőforrásokat használó AI-hívásokat. Az első öt listán szereplő tartalom a vizsgálat és a lehetséges optimalizálás szempontjából jelöltek.
 
-#### <a name="why-are-reports-slow"></a>Miért olyan jelentések lassú?
+#### <a name="why-are-reports-slow"></a>Miért lassú a jelentések?
 
-Az alábbi táblázat ismerteti a lehetséges problémákat, és hogy hogyan azonosíthatja és kezelni őket.
+Az alábbi táblázatokban láthatók a lehetséges problémák, valamint az azok azonosításának és kezelésének módjai.
 
-##### <a name="insufficient-capacity-resources"></a>Nincs elegendő kapacitás erőforrások
+##### <a name="insufficient-capacity-resources"></a>Nincs elegendő kapacitási erőforrás
 
-| Lehetséges magyarázata | Azonosítása | Megoldását |
+| Lehetséges magyarázatok | Az azonosítás módja | Megoldás |
 | --- | --- | --- |
-| Összes aktív magas memóriahasználat (modell nem zárható ki, mert használja az elmúlt három perc)<br><br> Lekérdezés több magas kiugrások várakozási idő<br><br> Frissítés várakozási időt több magas kiugrások | Figyelheti a mérőszámokat memória \[ [18](#endnote-18)\], és a kizárási \[ [19](#endnote-19)\] | Csökkentse a modell mérete, vagy a DirectQuery mód átalakítása – lásd a [optimalizálása modellek](#optimizing-models) ebben a szakaszban a témakör<br><br> Vertikális felskálázás a kapacitás<br><br> Rendelje hozzá a tartalmat egy másik kapacitás |
+| Magas teljes aktív memória (a modellt nem lehet kizárni, mert az elmúlt három percben használatban van)<br><br> Több nagy tüskék a lekérdezési várakozási időpontokban<br><br> Több nagy tüskék a frissítés várakozási idején | Figyelje a memória mérőszámait \[ [18](#endnote-18)\], és a kiürítési számok [19](#endnote-19) \[\] | A modell méretének csökkentése vagy átalakítás DirectQuery módba – lásd a [modellek optimalizálása](#optimizing-models) témakört ebben a szakaszban<br><br> A kapacitás vertikális felskálázása<br><br> A tartalom kiosztása egy másik kapacitáshoz |
 
-##### <a name="inefficient-report-designs"></a>A jelentés nem elég hatékony tervek
+##### <a name="inefficient-report-designs"></a>Nem hatékony jelentés-kialakítások
 
-| Lehetséges magyarázata | Azonosítása | Megoldását |
+| Lehetséges magyarázatok | Az azonosítás módja | Megoldás |
 | --- | --- | --- |
-| Jelentésoldalak (interaktív szűrés is indíthat vizualizációnként legalább egy lekérdezést) számos olyan vizualizációkat tartalmaznak<br><br> Vizualizációk a szükségesnél több adat lekérése | Tekintse át a jelentés tervek<br><br> Interjú jelentés felhasználóknak megérteni, hogyan kommunikáljanak a jelentések<br><br> Adatkészlet lekérdezés metrikák figyelése \[ [20](#endnote-20)\] | Egy-egy lapon kevesebb vizualizációt tartalmazó újratervezése jelentések |
+| A jelentés lapjai számos vizualizációt tartalmaznak (az interaktív szűrés egy vizualizáción legalább egy lekérdezést indíthat el)<br><br> A vizualizációk a szükségesnél több adattal kérdeznek le | Jelentések tervének áttekintése<br><br> Interjú jelentés a felhasználóknak, hogy megértsék, hogyan hatnak a jelentésekre<br><br> Adatkészlet lekérdezési metrikáinak \[figyelése [20](#endnote-20)\] | Jelentések újratervezése oldalanként kevesebb vizualizációval |
 
-##### <a name="dataset-slow-especially-when-reports-have-previously-performed-well"></a>Adatkészlet lassú (különösen ha jelentéseket korábban végrehajtása után is)
+##### <a name="dataset-slow-especially-when-reports-have-previously-performed-well"></a>Adathalmaz lassú (különösen akkor, ha a jelentések korábban jól elvégezték)
 
-| Lehetséges magyarázata | Azonosítása | Megoldását |
+| Lehetséges magyarázatok | Az azonosítás módja | Megoldás |
 | --- | --- | --- |
-| Egyre inkább nagy mennyiségű adatok importálása<br><br> Összetett vagy nem elég hatékony számítási logikát, beleértve az RLS-szerepkörök<br><br> A modell nem teljes mértékben optimalizálva<br><br> (DQ/LC) Átjáró késés<br><br> Lassú DQ adatforrás lekérdezési válaszidők | Tekintse át a modell tervek<br><br> Átjáró-teljesítményszámlálók figyelése | Tekintse meg a [optimalizálása modellek](#optimizing-models) ebben a szakaszban a témakör |
+| Egyre nagyobb mennyiségű importálási érték<br><br> Összetett vagy nem hatékony számítási logika, beleértve az RLS-szerepköröket<br><br> A modell nincs teljesen optimalizálva<br><br> (DQ/LC) Átjáró késése<br><br> Lassú DQ-forrás lekérdezési válaszideje | Modell kialakításának áttekintése<br><br> Átjáró-teljesítményszámlálók figyelése | Lásd a jelen szakasz [modellek optimalizálása](#optimizing-models) témakörét. |
 
-##### <a name="high-concurrent-report-usage"></a>Egyidejű jelentés magas kihasználtsága
+##### <a name="high-concurrent-report-usage"></a>Magas párhuzamos jelentéskészítés
 
-| Lehetséges magyarázata | Azonosítása | Megoldását |
+| Lehetséges magyarázatok | Az azonosítás módja | Megoldás |
 | --- | --- | --- |
-| A lekérdezési várakozási időt<br><br> CPU színtelítettség<br><br> Túllépte a DQ/LC kapcsolat korlátai | Monitorozhatja a processzorkihasználtságot \[ [21](#endnote-21)\], lekérdezés várakozási idő és a DQ/LC kihasználtság \[ [22-es](#endnote-22) \] metrikák + lekérdezés időtartamának összegénél – Ha ingadozik is egyidejűségi problémák jelzi | Vertikális felskálázás a kapacitást, vagy rendelje hozzá a tartalmat egy másik kapacitás<br><br> Egy-egy lapon kevesebb vizualizációt tartalmazó újratervezése jelentések |
+| Nagy lekérdezési várakozási idő<br><br> CPU-telítettség<br><br> Túllépte a DQ/LC-kapcsolatok korlátait | A CPU-kihasználtság \[ [21](#endnote-21)\], a lekérdezési várakozási idő és a DQ/ \[LC kihasználtsága [22](#endnote-22) \] mérőszámok és lekérdezések időtartamának figyelése – ha az ingadozás a párhuzamossági problémákat jelez | A kapacitás vertikális felskálázása vagy a tartalom más kapacitáshoz rendelése<br><br> Jelentések újratervezése oldalanként kevesebb vizualizációval |
 
-#### <a name="why-are-reports-not-loading"></a>Miért van a jelentések nem töltődik be?
+#### <a name="why-are-reports-not-loading"></a>Miért nem töltődik be a jelentések?
 
-Ha jelentéseket feltöltheti azokat, a legrosszabb, valamint arról, hogy a kapacitás nem rendelkezik elég memóriával és túlterhelt fűtött bejelentkezési. Ez akkor fordulhat elő, amikor az összes betöltött modellek vannak aktívan kérdeznek le, és ezért nem dobható, és frissítési műveleteket már fel van függesztve vagy késleltetett. A Power BI szolgáltatás megkísérli az adatkészlet betöltése 30 másodpercet, és a felhasználó szabályosan értesítést kap, próbálkozzon újra hamarosan javaslatot a hiba.
+Ha a jelentések nem töltődnek be, az egy legrosszabb ESET, és biztos lehet abban, hogy a kapacitás nem rendelkezik elegendő memóriával, és a szolgáltatás túlfűtött. Ez akkor fordulhat elő, ha az összes betöltött modell aktívan le van kérdezve, ezért nem zárható ki, és minden frissítési művelet szüneteltetve vagy késleltetve lett. A Power BI szolgáltatás 30 másodpercig kísérli meg betölteni az adatkészletet, és a felhasználó szabályosan értesítést kap a hibáról, és egy javaslattal hamarosan újra próbálkozik.
 
-Jelenleg nincs nincs a mérőszám a jelentés betöltési hibák figyelése. A probléma lehetséges monitorozási rendszer memóriájában, kifejezetten legmagasabb kihasználtsággal és idővel a legnagyobb kihasználtságú alapján azonosíthatja. Magas adatkészlet adatbázislap és hosszú az adatkészlet frissítési átlagos várakozási idő sikerült javasoljuk, hogy a probléma jelentkezett.
+Jelenleg nincs mérőszám a jelentés betöltési hibáinak figyelésére. A probléma lehetséges okait a rendszermemória figyelésével, pontosabban a legmagasabb kihasználtsággal és a legnagyobb kihasználtsággal kapcsolatos időponttal derítheti fel. A magas adatkészlet-kizárások és a hosszú adatkészlet-frissítés átlagos várakozási ideje arra utalhat, hogy ez a probléma előfordul.
 
-Ez néha csak nagyon történik, ha ez nem tekinthetők a prioritás a probléma. A jelentés felhasználók üzenetet kapnak, hogy a szolgáltatás foglalt, és, hogy azok kell próbálkoznia rövid idő múlva. Ha túl gyakran történik, a probléma a prémium szintű kapacitás vertikális felskálázásával, vagy a tartalom hozzárendelése egy másik kapacitás lehet orvosolni.
+Ha ez csak nagyon ritkán fordul elő, akkor ez nem tekinthető prioritási problémanak. A jelentés felhasználói tájékoztatják, hogy a szolgáltatás foglalt, és rövid idő elteltével újra kell próbálkoznia. Ha ez túl gyakran fordul elő, a probléma feloldható a prémium kapacitás növelésével vagy a tartalom más kapacitáshoz való hozzárendelésével.
 
-A kapacitás rendszergazdák (és a Power BI szolgáltatás-rendszergazdák) figyelheti a **sikertelen lekérdezések** metrika meghatározni, ha ez történik. Akkor is újraindíthatja a kapacitás, minden művelet esetén a rendszer túlterhelési alaphelyzetbe állítása.
+A kapacitás-rendszergazdák (és Power BI szolgáltatás rendszergazdák) a **lekérdezési hibák** metrikájának figyelésével határozzák meg, hogy mikor történnek. Emellett újraindíthatják a kapacitást, és alaphelyzetbe állíthatja az összes műveletet.
 
-#### <a name="why-are-refreshes-not-starting-on-schedule"></a>Miért vannak frissítések nem indul el ütemezés szerint?
+#### <a name="why-are-refreshes-not-starting-on-schedule"></a>Miért nem kezdődnek az ütemezett frissítések?
 
-Az ütemezett frissítés kezdési idejének nem garantált. Ne felejtse el, hogy a Power BI szolgáltatás mindig rangsorolja interaktív műveletekhez háttérműveletekhez keresztül. Frissítés a háttérben futó művelet, amely akkor fordulhat elő, amikor két feltétel teljesül:
+Az ütemezett frissítés indítási időpontja nem garantált. Ne felejtse el, hogy a Power BI szolgáltatás mindig rangsorolja az interaktív műveleteket a háttérben futó műveletekben. A frissítés egy háttérbeli művelet, amely akkor fordulhat elő, ha két feltétel teljesül:
 
-- Nincs elegendő memória
-- A prémium szintű kapacitás esetén támogatott egyidejű frissítések száma nem lett túllépve
+- Elegendő memória van
+- A prémium szintű kapacitáshoz tartozó támogatott párhuzamos frissítések száma nem lépi túl
 
-Ha a feltételek nem teljesülnek, a frissítés várólistára van állítva, addig, amíg kedvező feltételek.
+Ha a feltételek nem teljesülnek, a frissítés várólistára kerül, amíg a feltételek nem megfelelőek.
 
-A teljes frissítés, amely az aktuális adatkészlet memória méretének legalább duplán visszaírási szükség. Ha nem áll rendelkezésre elegendő memória áll rendelkezésre, majd a frissítés nem kezdhetik meg modell kiürítési szabadít fel memória – Ez azt jelenti, hogy késések mindaddig, amíg egy vagy több adatkészletet inaktívvá válik, és képes eltávolítani kívánt.
+A teljes frissítéshez ne felejtse el, hogy legalább kétszer meg kell adnia az aktuális adatkészlet memóriájának méretét. Ha nem áll rendelkezésre elegendő memória, a frissítés nem kezdődhet el addig, amíg a modell kiürítése fel nem szabadítja a memóriát – ez azt jelenti, hogy késést okoz, amíg egy vagy több adathalmaz inaktívvá válik, és ki lehet zárni.
 
-Ne felejtse el, hogy a támogatott maximális egyidejű frissítések számát értéke 1,5-szerese a háttérbeli virtuális magokkal lesz kerekítve.
+Ne felejtse el megállapítani, hogy a maximális párhuzamos frissítés támogatott száma 1,5 alkalommal van beállítva a háttérbeli v-magoknál, felkerekítve.
 
-Egy ütemezett frissítés meghiúsul, ha azt nem akkor kezdődik, a következő ütemezett frissítés határideje megkezdése előtt. Egy igény szerinti frissítést, a felhasználói felületen manuálisan aktivált megpróbálja legfeljebb három alkalommal futtatása korábban sikertelen.
+Az ütemezett frissítés sikertelen lesz, ha nem kezdődhet el, mielőtt a következő ütemezett frissítés megkezdődik. A felhasználói felületről manuálisan indított igény szerinti frissítés legfeljebb háromszor próbálkozik a művelet végrehajtása előtt.
 
-A kapacitás rendszergazdák (és a Power BI szolgáltatás-rendszergazdák) figyelheti a **átlagos frissítése várakozási idő (perc)** metrika meghatározni a megadott időpont és a művelet kezdete közötti átlagos késés.
+A kapacitás-rendszergazdák (és a Power BI szolgáltatás rendszergazdák) megfigyelheti az **átlagos frissítési várakozási idő (perc)** mérőszámot az ütemezett idő és a művelet megkezdése közötti átlagos késés megállapításához.
 
-Amíg egy rendszergazda prioritás, kereskedelmi adatok általában nem frissül, győződjön meg arról, hogy elegendő memória áll rendelkezésre. Ez magában foglalhatja adatkészleteket, ismert elegendő erőforrással rendelkező kapacitások elkülönítése. Lehetőség arra is, hogy a rendszergazdák sikerült egyeztessen a az adatkészlet tulajdonosa szinkronizálások eltolása vagy ütemezett adatok frissítési idejének ütközések minimálisra csökkentése érdekében. Vegye figyelembe, hogy már nem a rendszergazda a frissítési várólista megtekintéséhez, vagy az adatkészlet lekéréséhez ütemezi.
+Habár általában nem adminisztratív prioritás, az időigényes adatfrissítések befolyásolása érdekében győződjön meg arról, hogy elegendő memória áll rendelkezésre. Ez magában foglalhatja az adatkészletek a megfelelő erőforrásokkal való elkülönítését. Az ütközések minimalizálása érdekében az is lehetséges, hogy a rendszergazdák összehangolják az adatkészletek tulajdonosait az ütemezett adatfrissítési idők lépcsőzetes vagy csökkentése érdekében. Vegye figyelembe, hogy a rendszergazdák nem tudják megtekinteni a frissítési várólistát, vagy beolvasni az adatkészlet-ütemterveket.
 
-#### <a name="why-are-refreshes-slow"></a>Miért vannak lassú frissítések?
+#### <a name="why-are-refreshes-slow"></a>Miért lassú a frissítés?
 
-Frissítések lassú - vagy észlelhető (mint az előző gyakori kérdés címek) lassú lehet.
+A frissítések lassúak lehetnek, vagy lassúnak tekinthetik (az előző gyakori kérdések esetében).
 
-Ha a frissítés tulajdonképpen lassú, számos oka lehet:
+Ha a frissítés valójában lassú, számos oka lehet:
 
-- Nem elegendő Processzor (a frissítés nagyon CPU-igényes lehet)
-- Nincs elég memória, a frissítés (amely a kezdenie, ha feltételek esetén a mellőzésére kedvező újrabetöltést igényel) felfüggesztése eredményez
-- Nem-kapacitási okokból, beleértve az adatok forrása rendszer válaszideje, hálózati késés, érvénytelen engedélyek vagy átjáró teljesítménye
-- Adatmennyiség - csak jó okkal konfigurálása növekményes frissítése, ahogy az alábbiakban tárgyalt
+- Nem elegendő processzor (a frissítés nagyon nagy CPU-igényű lehet)
+- Nincs elég memória, ami a frissítés szüneteltetését eredményezi (amelyhez a frissítés szükséges, amikor a feltételek kedvezőbbek az újraindításhoz)
+- Nem kapacitási okok, beleértve az adatforrás-rendszerválaszadást, a hálózati késést, az érvénytelen engedélyeket vagy az átjáró átviteli sebességét
+- Adatmennyiség – a Növekményes frissítés konfigurálásának jó oka az alább leírtak szerint
 
-Kapacitás rendszergazdák (és a Power BI szolgáltatás-rendszergazdák) figyelheti a **frissítése átlagos időtartam (perc)** összehasonlítás a teljesítményteszt meghatározni az idő múlásával metrika és a **átlagos frissítése várakozási idő (perc)** mérőszámok megállapításához közötti átlagos késés átlagos az ütemezett idő és a művelet megkezdése között.
+A kapacitás-rendszergazdák (és Power BI szolgáltatás rendszergazdák) megfigyelheti az **átlagos frissítési időtartam (perc)** metrikáját, hogy meghatározza az összehasonlítási időközt az idő múlásával, valamint a **várakozási idő átlagát (percben)** az átlagos késés megállapításához. az ütemezett idő és a művelet megkezdése közötti átlagos késések között.
 
-Növekményes frissítési adatok frissítés időtartama, különösen a nagy méretű adatmodell-táblák jelentősen csökkentheti. Nincsenek a növekményes frissítés négy előnye:
+A Növekményes frissítés jelentősen csökkentheti az Adatfrissítés időtartamát, különösen a nagyméretű modellek táblái esetében. A Növekményes frissítés négy előnnyel jár:
 
-- **Frissítések gyorsabbak** : Egy tábla csak egy részhalmazát kell betöltése során, és csökkenti a Processzor- és használati és párhuzamosság magasabb lehet, ha több partíció frissítése
-- **Frissítés történik, csak szükség esetén** : Növekményes frissítési szabályzatok beállíthatók úgy, hogy csak amikor adatok változtak betöltése
-- **Frissítések megbízhatóbb** : Ideiglenes adatforrásként szolgáló rendszerekben futó rövidebb kapcsolatok kevésbé érzékenyek, adott válaszának
-- **Modellek maradnak vágás** : Növekményes frissítési szabályzatok beállíthatók úgy, hogy automatikusan eltávolítja az előzmények túl egy csúszóablakban idő
+- **A frissítések gyorsabbak** : A tábla csak egy részhalmaza szükséges, ami csökkenti a processzor-és memóriahasználat használatát, és a párhuzamosság nagyobb lehet, ha több partíciót frissít.
+- A frissítés **csak akkor történik meg, ha szükséges** : A növekményes frissítési szabályzatok úgy konfigurálhatók, hogy csak az adatváltozások esetén legyenek betöltve
+- **A frissítések megbízhatóbbak** : Az illékony adatforrás-rendszerekhez való rövidebb ideig futó kapcsolatok kevésbé hajlamosak a leválasztásra
+- A **modellek továbbra is a Trim** : A növekményes frissítési szabályzatok beállítható úgy, hogy a rendszer automatikusan eltávolítsa az előzményeket a lecsúszott időszakon túl
 
-További információkért tekintse meg a [növekményes frissítés a Power BI Premium](service-premium-incremental-refresh.md) dokumentumot.
+További információkért tekintse meg a [növekményes frissítést Power bi Premium](service-premium-incremental-refresh.md) dokumentumban.
 
-#### <a name="why-are-data-refreshes-not-completing"></a>Miért van az adatok frissítése feladatom befejezése meghiúsul?
+#### <a name="why-are-data-refreshes-not-completing"></a>Miért nem fejeződik be az Adatfrissítés?
 
-Amikor az Adatfrissítés megkezdése, de nem lehetett végrehajtani, számos oka lehet:
+Ha az Adatfrissítés megkezdődik, de a folyamat nem fejeződik be, akkor a következő okok miatt több oka is lehet:
 
-- Nincs elég memória, akkor is, ha csak egy modell található a prémium szintű kapacitás, azaz a modell mérete nagyon nagy
-- Nem-kapacitási okokból, beleértve a data source rendszer leválasztásának, érvénytelen engedélyek vagy átjáró hiba
+- Nincs elég memória, még akkor is, ha csak egy modell van a prémium szintű kapacitásban, azaz a modell mérete nagyon nagy
+- Nem kapacitási okok, beleértve az adatforrás-rendszerek leválasztását, az érvénytelen engedélyeket vagy az átjáró hibáját
 
-A kapacitás rendszergazdák (és a Power BI szolgáltatás-rendszergazdák) figyelheti a **frissítése hibák miatt nincs elegendő szabad memória** metrika.
+A kapacitás-rendszergazdák (és Power BI szolgáltatás rendszergazdák) a **memória-metrika miatt** nem tudják figyelni a frissítési hibákat.
 
-#### <a name="why-are-ai-calls-failing"></a>Miért vannak az AI-hívások sikertelenek?
+#### <a name="why-are-ai-calls-failing"></a>Miért nem sikerül az AI-hívások futtatása?
 
-AI-hívás több okból meghiúsulhat. A minimális memória elindításához a mesterséges Intelligencia munkaterhelés 5 GB-os, de ez nem minden esetben az egyes bemeneti adatkészlet szükséges. Például automatikus machine learning-modell betanítása szükséges legalább kétszer, és néha többször is feldolgozza a bemeneti adatkészlet méretét. Egy AI-hívás megszakadt is, ha több mint két órát vesz igénybe. Az automatizált machine learning-modell betanítási hívás, amely nem végezte el két órán belül, a legjobb modellt ezen két órán belül található adja vissza.  AI-hívások is interaktív kérelmek, amelyek elsőbbséget szerint lehet megszakítani.
+Az AI-hívások több okból is sikertelenek lehetnek. Az AI-munkaterhelések elindításához szükséges minimális memória 5 GB, de előfordulhat, hogy egyes bemeneti adatkészletek esetében ez nem elegendő. Például az automatizált Machine learning-modellek betanításához legalább kétszer kell lennie, és néha többször is a bemeneti adatkészlet méretét. Emellett egy AI-hívás is megszakad, ha a művelet elvégzése két óránál hosszabb időt vesz igénybe. A gépi tanulási modell olyan betanítási hívások esetén, amelyek két órán belül nem fejeződött be, a rendszer az adott két órában talált legjobb modellt adja vissza.  Az AI-hívásokat az interaktív kérések is megszakítják, amelyek elsőbbséget élveznek.
 
-A rendszergazdák célszerű figyelemmel kísérni más kérelmek figyelembe vételével jeleit AI várakozási időt. A rendszergazdák is biztosíthatja, hogy elegendő memória áll rendelkezésre, a mesterséges Intelligencia terheléshez bemeneti adatméretek útként. Ez magába foglaló AI számítási feladatok ismert, hogy elegendő erőforrással kapacitások elkülönítése. Lehetőség arra is, hogy a rendszergazdák sikerült egyeztessen a adatfolyamot tulajdonosok szinkronizálások eltolása, vagy csökkentse az adatfolyamot frissítési idejének ütközések minimalizálása érdekében. Vegye figyelembe, hogy már nem rendszergazdai a mesterséges Intelligencia hívás várólista megtekintéséhez.
+A rendszergazdáknak meg kell figyelniük a mesterséges intelligencia várakozási idejét a többi kérelemre vonatkozó elsőbbségi jelek miatt. A rendszergazdák azt is biztosíthatják, hogy elegendő memória álljon rendelkezésre az AI-munkaterheléshez a bemeneti adatméretekhez képest. Ez magában foglalhatja az AI-munkaterhelések elkülönítését olyan kapacitások számára, amelyek ismerete elegendő erőforrással rendelkezik. Emellett lehetséges, hogy a rendszergazdák összehangolják a adatfolyam-tulajdonosokkal, hogy az ütközések minimalizálása érdekében a adatfolyam-frissítési idők lépcsőzetes vagy alacsonyabb szintre csökkenjenek. Megjegyzés: nem lehetséges, hogy a rendszergazda megtekintse az AI-hívási várólistát.
 
 ### <a name="optimizing-models"></a>Modellek optimalizálása
 
-Optimális modell felépítésének elengedhetetlen egy hatékony és méretezhető megoldások kidolgozását. Azonban ebben a tanulmányban hatókörén kívül esik, adja meg a teljes leírása. Ehelyett ez a szakasz biztosít legfontosabb szempont modellek optimalizálása.
+Az optimális modell kialakítása elengedhetetlen a hatékony és méretezhető megoldás megvalósításához. Azonban ez a tanulmány a teljes körű vitát is tartalmazza. Ehelyett ez a szakasz kulcsfontosságú területeket biztosít a modellek optimalizálásához.
 
-#### <a name="optimizing-power-bi-hosted-models"></a>A Power BI-ban üzemeltetett modellek optimalizálása
+#### <a name="optimizing-power-bi-hosted-models"></a>Power BI üzemeltetett modellek optimalizálása
 
-Az adatok (ok) hoz és a modell rétegeken prémium kapacitásban lévő üzemeltetett optimalizálása modellek érhető el.
+A prémium szintű kapacitásban üzemeltetett modellek optimalizálása az adatforrás (ok) és a modell rétegeiben is elérhető.
 
-Vegye figyelembe az importálás modell optimalizálási lehetőségeit:
+Tekintse át az importálási modell optimalizálási lehetőségeit:
 
-![Az importálás modell optimalizálási lehetőségekkel](media/whitepaper-premium-deployment/import-model-optimizations.png)
+![Az importálási modell optimalizálási lehetőségei](media/whitepaper-premium-deployment/import-model-optimizations.png)
 
-Az adatok forrása rétegben:
+Az adatforrás rétegében:
 
-- Relációs adatforrások előre integráló adatokat, alkalmazza a megfelelő indexeket, olyan táblapartíciók meghatározása a növekményes frissítés időszakokra és számítások materializálása segítségével optimalizálható a leggyorsabb lehetséges frissítési biztosításához (helyén kiszámítása táblák és oszlopok modell) vagy a számítási logika hozzáadása a nézetekhez
-- Nem relációs adatforrások előre integrálható relációs adattárak
-- Győződjön meg arról, hogy átjárók lehetőleg gépeken dedikált, elegendő hálózati sávszélesség és adatforrások hálózatbővítési elegendő erőforrással rendelkezik
+- A kapcsolódó adatforrások optimalizálva lehetnek a lehető leggyorsabb frissítéshez az adatok előzetes integrálásával, a megfelelő indexek alkalmazásával, a növekményes frissítési időszakokhoz illeszkedő megvalósulni meghatározásával, valamint a számítások (a számított érték helyett) táblázatok és oszlopok modellezése) vagy számítási logika hozzáadása a nézetekhez
+- A nem összehasonlítható adatforrások előre integrálhatók a kapcsolódó adattárakkal
+- Győződjön meg arról, hogy az átjárók elegendő erőforrással rendelkeznek, lehetőleg dedikált gépeken, megfelelő hálózati sávszélességgel és az adatforrások közelében
 
-A modell rétegben:
+A modell rétegében:
 
-- A Power Query lekérdezést tervek is minimálisra csökkentése vagy összetett átalakítások, és különösen azokkal, amelyek a különböző adatforrások (data warehouse-adattárházak ennek érdekében a kinyerési, átalakítási-betöltési szakaszában) egyesítése. Is biztosítva, hogy a megfelelő az adatforrások adatvédelmi szintjeit vannak beállítva, így elkerülhető igénylő lekérdezések között egy összesített eredményt teljes eredmények betöltése a Power bi-ban.
-- A modell szerkezetét meghatározza, hogy az adatok betöltése, és a modell mérete közvetlen hatással van. Azt is úgy, hogy elkerülje a felesleges adatokat (különösen előzményadatok) sorok eltávolítását, szükségtelen oszlopok eltávolításával vagy összegzett adatokat jelez (rovására részletes adatok betöltése) betöltése. Drámai méretének csökkentése nagy számosságú oszlopokat (különösen a szöveges oszlopok), amely tárolja és nem nagyon hatékonyan tömörítése eltávolításával érhető el.
-- Egyetlen irányra kapcsolatok konfigurálásával, kivéve, ha van egy jelentős indok arra, hogy engedélyezze a kétirányú szűrés modell lekérdezési teljesítmény javítása érdekében. Fontolja meg továbbá a CROSSFILTER függvény kétirányú szűrés helyett.
-- A táblákban összesítési kibővítése a lekérdezési válaszok betöltésével előre összegzett adatok, érhető el, azonban ez a modell és az eredmény mérete megnő a frissítés hosszabb időt. Általában a táblákban összesítési számára lefoglalt nagyon nagy méretű modellek vagy összetett modell műveletekhez.
-- Számított táblázatokat, oszlopokat modell méretének növeléséhez és a frissítés hosszabb időt eredményez. Általában egy kisebb tárméret és gyorsabb frissítés érhető el, a tényleges táblán alapuló vagy az adatforrás alapján számítjuk ki. Ha ez nem lehetséges, egyéni oszlopokat a Power Query használatával elérhetővé teheti még több tárterület-tömörítést.
-- Előfordulhat, hogy lehetőség a DAX-kifejezésekben a mértékek és RLS-szabályokat, például újraírását logikát, elkerülheti a költséges képletek finomhangolása
-- A növekményes frissítés frissítési idő csökkentése érdekében jelentősen, és takarítson meg a memória és CPU. A növekményes frissítés eltávolítása modellméretet vágás tartja előzményadatok is konfigurálható.
-- Ha másik, ütköző lekérdezési minták modell sikerült újratervezve két modell szerint. Például bizonyos összes előzmények, valamint is jelen magas szintű összesítések 24 órányi késéssel ugyan jelentéseket. Más jelentések mai adatokat tartalmazó aggódik, és az egyes tranzakciók részletes hozzáférésre van szükségük. Ahelyett, hogy tervezzen egy adott modellt felel meg az összes jelentés az egyes követelményekhez optimalizált két modell létrehozása.
+- Power Query lekérdezési tervek csökkenthetik vagy eltávolíthatják az összetett átalakításokat, különösen azokat, amelyek különböző adatforrásokat egyesítenek (az adattárházak ezt a kinyerési átalakítási fázisban érik el). Emellett a megfelelő adatforrások adatvédelmi szintjeinek megadásának biztosításával elkerülhető, hogy Power BI a teljes eredmények betöltését, hogy összevont eredményt hozzon létre a lekérdezések között.
+- A modell szerkezete meghatározza a betöltendő adatmennyiséget, és közvetlen hatással van a modell méretére. A megoldás célja, hogy elkerülje a szükségtelen adatbevitelt az oszlopok eltávolításával, a sorok eltávolításával (különösen a régi adatmennyiséggel) vagy az összegzett információk betöltésével (a részletes információk betöltésének rovására). A jelentős mértékű csökkentés a nagy kardinális oszlopok (különösen szöveges oszlopok) eltávolításával érhető el, amelyek nem tárolják és nem tömörítik nagyon hatékonyan.
+- A modell lekérdezési teljesítménye javítható egy egyirányú kapcsolat konfigurálásával, kivéve, ha a kétirányú szűrést nem kényszeríti a rendszer. A kétirányú szűrés helyett érdemes a CROSSFILTER függvényt is használni.
+- Az összesítési táblázatok gyors lekérdezési válaszokat tudnak elérni az előre összefoglalt adatmennyiségek betöltésével, azonban ez növeli a modell méretét, és a frissítési időt is eredményezi. Általában az összesítési táblákat nagyon nagy modellekhez vagy összetett modellekhez kell foglalni.
+- A számított táblák és oszlopok a modell méretének növelését és a hosszú frissítési idő megnövekedését eredményezik. Általánosságban elmondható, hogy egy kisebb tárterület-méret és gyorsabb frissítési idő érhető el, ha az adatok az adatforrásból származnak vagy számítanak. Ha ez nem lehetséges, Power Query egyéni oszlopok használatával javítható a tárolók tömörítése.
+- Lehetséges, hogy a mértékek és az RLS-szabályok DAX-kifejezéseit is beállíthatja, például a logikát újraírni a költséges képletek elkerüléséhez
+- A Növekményes frissítés jelentősen csökkentheti a frissítési időt, és megőrizheti a memóriát és a PROCESSZORt. A Növekményes frissítés úgy is konfigurálható, hogy eltávolítsa a korábbi adattárolási modell méretét.
+- A modelleket két modellként lehet újratervezni, ha különböző és ütköző lekérdezési minták vannak. Például egyes jelentések magas szintű összesítéseket mutatnak az összes előzményben, és elérhetik a 24 órás késést. Más jelentések a mai adatokat érintik, és az egyes tranzakciókhoz részletesen hozzá kell férniük. Ahelyett, hogy egyetlen modellt tervezzen az összes jelentés kielégítéséhez, hozzon létre két, az egyes követelményekhez optimalizált modellt.
 
-Fontolja meg a DirectQuery modellben optimalizálási lehetőségeit. Ahogy a modellben a lekérdezésekre vonatkozó kérelmek az alapul szolgáló adatforrás problémák, data source optimalizálási fontos rugalmas adatbázismodell lekérdezések továbbítása.
+Tekintse át a DirectQuery-modell optimalizálási lehetőségeit. Mivel a modell az alapul szolgáló adatforrásra vonatkozó lekérdezési kérelmeket ad ki, kritikus fontosságú a rugalmas modellek lekérdezésének továbbítása.
 
- ![Egy DirectQuery-modell optimalizálási lehetőségek](media/whitepaper-premium-deployment/direct-query-model-optimizations.png)
+ ![DirectQuery-modell optimalizálási lehetőségei](media/whitepaper-premium-deployment/direct-query-model-optimizations.png)
 
-Az adatok forrása rétegben:
+Az adatforrás rétegében:
 
-- Az adatforrás is lehet optimalizálni annak érdekében, hogy a leggyorsabb lehetséges lekérdezése előre integrálja az adatokat (ez nem lehetséges a modell rétegben), alkalmazza a megfelelő indexeket, táblapartíciók materializálása meghatározása összegzett adatok (az indexelt nézetek), és számítási végfelhasználónak. A legjobb élményt érhető el, ha a csatlakoztatott lekérdezések csak szűrése, és hajtsa végre a belső illesztések indexelt táblák vagy nézetek között van szükség.
-- Győződjön meg arról, hogy átjárók lehetőleg gépeken dedikált, elegendő hálózati sávszélesség és az adatforrás hálózatbővítési elegendő erőforrással rendelkezik
+- Az adatforrás optimalizálható úgy, hogy biztosítsa a lehető leggyorsabb lekérdezést az adatok előzetes integrálásával (amely nem lehetséges a modell rétegében), a megfelelő indexek alkalmazásával, a tábla partícióinak definiálásával, a megvalósulni összegzett adatokkal (indexelt nézetekkel), valamint a számítási mennyiség minimalizálása. A legjobb megoldás akkor érhető el, ha az átadó lekérdezéseknek csak szűrniük kell, és el kell végezniük az indexelt táblák vagy nézetek közötti belső illesztéseket.
+- Győződjön meg arról, hogy az átjárók elegendő erőforrással rendelkeznek, lehetőleg dedikált gépeken, megfelelő hálózati sávszélességgel és az adatforrás közelében
 
-A modell rétegben:
+A modell rétegében:
 
-- Power Query lekérdezéssel formátumukban kell lehetőleg átalakítások nem – ellenkező esetben megkísérlik kívül tartani átalakításokat is az abszolút minimális
-- Egyetlen irányra kapcsolatok konfigurálásával, kivéve, ha van egy jelentős indok arra, hogy engedélyezze a kétirányú szűrés modell lekérdezési teljesítmény javítása érdekében. Ezenkívül modell, kapcsolatokat konfigurálni kell, hogy feltételezik, hogy hivatkozási integritás (Ha ez a helyzet) és hatékonyabb belső illesztések használata (nem a külső illesztések) adatforrás-lekérdezéseket eredményez.
-- Ne hozzon létre a Power Query lekérdezést egyéni oszlopot és a modell számított oszlop – a tényleges táblává alakíthatóak ezeket az adatforrás, amikor lehetséges
-- Előfordulhat, hogy lehetőség a DAX-kifejezésekben a mértékek és RLS-szabályokat, például újraírását logikát, elkerülheti a költséges képletek finomhangolása
+- Power Query a lekérdezési terveknek lehetőleg nem kell átalakításokat alkalmazniuk – máskülönben nem kell megtartania az átalakításokat abszolút minimumra
+- A modell lekérdezési teljesítménye javítható egy egyirányú kapcsolat konfigurálásával, kivéve, ha a kétirányú szűrést nem kényszeríti a rendszer. Emellett a modell kapcsolatait úgy kell konfigurálni, hogy a hivatkozási integritás feltételezésére legyenek kényszerítve (ebben az esetben), és az adatforrás-lekérdezéseket hatékonyabb belső illesztések (a külső illesztések helyett) használatával fogják eredményezni.
+- Ne hozzon létre Power Query lekérdezés egyéni oszlopait vagy a modell számított oszlopát – ha lehetséges, ezeket az adatforrásban kell megvalósulni.
+- Lehetséges, hogy a mértékek és az RLS-szabályok DAX-kifejezéseit is beállíthatja, például a logikát újraírni a költséges képletek elkerüléséhez
 
-Fontolja meg egy összetett modell az optimalizálási lehetőségekkel. Ne felejtse el, hogy egy összetett modell lehetővé teszi, hogy importálási és DirectQuery táblákat.
+Tekintse át az összetett modell optimalizálási lehetőségeit. Ne felejtse el, hogy az összetett modell lehetővé teszi az importálási és DirectQuery táblák együttes használatát.
 
-![Egy összetett modell optimalizálási lehetőségek](media/whitepaper-premium-deployment/composite-model-optimizations.png)
+![Összetett modell optimalizálási lehetőségei](media/whitepaper-premium-deployment/composite-model-optimizations.png)
 
-- Az importálási és DirectQuery-modellek az optimalizálási témakörök általában ezek tárolási módot használó összetett adatmodell-táblák vonatkoznak.
-- Általában arra törekszik, hogy egy elosztott terhelésű kialakítás megvalósítása dimenziótípusnak táblák (üzleti entitásokat képviselő) konfigurálásával táblákként kettős tárolási mód és a tény-type (gyakran nagy táblák, operatív tények képviselő), DirectQuery tárolási mód. Kettős tárolási mód azt jelenti, hogy a is importálhatja, és a DirectQuery tárolási mód, és ez lehetővé teszi, hogy a Power BI szolgáltatás meghatározni a csatlakoztatott egy natív lekérdezés generálása során használandó leghatékonyabb tárolási módját.
-- Győződjön meg arról, hogy átjárók lehetőleg gépeken dedikált, elegendő hálózati sávszélesség és adatforrások hálózatbővítési elegendő erőforrással rendelkezik
-- Tárolási mód importálás biztosíthat DirectQuery tárolási mód (tény) típusú táblák összegzéséhez drámai lekérdezési teljesítményt érintő továbbfejlesztés összesítések táblák konfigurálva. Ebben az esetben összesítési táblák a modell méretének növekedését és növelheti a frissítés idejét, és gyakran ez a lekérdezések egy elfogadható kompromisszum.
+- Az importálási és DirectQuery modellekre vonatkozó optimalizálási témakörök általában az ezeket a tárolási módokat használó összetett modell-táblákra vonatkoznak.
+- Általában úgy törekszünk, hogy kiegyensúlyozott kialakítást alakítsanak ki úgy, hogy a dimenzió típusú táblákat (az üzleti entitásokat jelképezve) kettős tárolási mód és egyedkapcsolat típusú táblák (gyakran nagy táblák, működési tényeket jelképező táblázatok) használatával DirectQuery tárolási módban. A kettős tárolási mód az importálási és a DirectQuery tárolási módot is jelenti, és ez lehetővé teszi az Power BI szolgáltatás számára, hogy meghatározza a leghatékonyabb tárolási módot, amelyet az átadó natív lekérdezésének létrehozásakor használ.
+- Győződjön meg arról, hogy az átjárók elegendő erőforrással rendelkeznek, lehetőleg dedikált gépeken, megfelelő hálózati sávszélességgel és az adatforrások közelében
+- Az importálási tárolási üzemmódként konfigurált összesítési táblázatok drámai lekérdezési teljesítménybeli fejlesztéseket nyújthatnak, ha a DirectQuery tárolási mód egyedkapcsolat-típusú tábláinak összegzésére használják. Ebben az esetben az összesítési táblázatok növelik a modell méretét és növelik a frissítési időt, és gyakran ez a gyorsabb lekérdezések elfogadható kompromisszuma.
 
-#### <a name="optimizing-externally-hosted-models"></a>Optimizing Externally-Hosted Models
+#### <a name="optimizing-externally-hosted-models"></a>Külsőleg üzemeltetett modellek optimalizálása
 
-Számos optimalizálási lehetőségekkel tárgyalt a [Optimizing Power BI-Hosted modellek](#optimizing-power-bi-hosted-models) a témakör a modellek az Azure Analysis Services és az SQL Server Analysis Services fejlesztett is vonatkozik. Egyértelmű kivétel bizonyos funkciók, amely jelenleg nem támogatottak, többek között összetett modelleket és összesítési táblák.
+A [Power bi által üzemeltetett modellek optimalizálása](#optimizing-power-bi-hosted-models) témakörben tárgyalt számos optimalizálási lehetőség a Azure Analysis Services és a SQL Server Analysis Services fejlesztett modellekre is vonatkozik. A kivételek törlése olyan szolgáltatások, amelyek jelenleg nem támogatottak, beleértve az összetett modelleket és az összesítési táblákat.
 
-Egy további szempont, külsőleg üzemeltetett adatkészletek esetében, az adatbázis-üzemeltetési viszonyítva a Power BI szolgáltatásban. Az Azure Analysis Services esetén ez azt jelenti, hogy az Azure-erőforrás létrehozása a Power BI-bérlő (otthoni régiója) ugyanabban a régióban. Az SQL Server Analysis Services esetén az IaaS Ez azt jelenti, hogy ugyanabban a régióban a virtuális Gépet üzemeltető, és a helyszínen, az azt jelenti, hogy egy hatékony átjáró telepítőjének biztosítása.
+A külsőleg üzemeltetett adatkészletek esetében a További szempontok a Power BI szolgáltatáshoz kapcsolódó adatbázis. Azure Analysis Services esetén ez azt jelenti, hogy az Azure-erőforrást ugyanabban a régióban hozza létre, mint a Power BI bérlőt (otthoni régió). A IaaS esetében ez azt jelenti, hogy a virtuális gépet ugyanabban a régióban üzemeltetik, és a helyszíni használatra az átjárók hatékony telepítésének biztosítását jelenti. SQL Server Analysis Services
 
-Egy feltöltési, érdemes lehet, fontos megjegyezni, hogy az Azure Analysis Services-adatbázisokat és SQL Server Analysis Services táblázatos adatbázisok megkövetelése, hogy a modellek a memóriába teljes-lekérdezése támogatásához, hogy azok továbbra is van minden alkalommal. A Power BI szolgáltatásban, például szükség van elegendő memória a frissítés, ha a modell online kell maradnia a frissítés során. Ellentétben a Power BI szolgáltatásban, és nincs modellek automatikusan elavult adataikkal memória kihasználtsága alapján. A Power BI Premium, ezért maximalizálhatja a modell lekérdezés alacsonyabb memóriahasználat a hatékonyabb megközelítést kínál.
+Előfordulhat, hogy fontos megjegyezni, hogy Azure Analysis Services adatbázisokhoz és a táblázatos adatbázisokhoz SQL Server Analysis Services a modelleket teljes egészében be kell tölteni a memóriába, és a lekérdezés támogatásához mindig ott maradnak. A Power BI szolgáltatáshoz hasonlóan a frissítéshez elegendő memória szükséges a frissítéshez, ha a modellnek online állapotban kell maradnia. A Power BI szolgáltatástól eltérően nincs olyan fogalom, amely alapján a modellek a használattól függően automatikusan és elfogynak a memóriában. A Power BI Premium ezért hatékonyabb megoldást kínál a modell lekérdezésének maximalizálására az alacsonyabb memóriahasználat használatával.
 
 ### <a name="capacity-planning"></a>Kapacitástervezés
 
-Prémium-kapacitás mérete határozza meg, a rendelkezésre álló memória és a processzor-erőforrások és a kapacitás vonatkozó korlátozások. A prémium szintű kapacitások számát is fontos szempont, mint létrehozása több prémium szintű kapacitások segíthet egymástól számítási feladatok elkülönítésére. Vegye figyelembe, hogy storage 100 TB-os kapacitás csomópontonként, és ez valószínűleg több mint elegendő, ha bármilyen számítási feladatot.
+A prémium szintű kapacitás mérete határozza meg a rendelkezésre álló memória-és processzor-erőforrásokat és a kapacitásra vonatkozó korlátozásokat. A prémium szintű kapacitások száma is megfontolásos, mivel a több prémium szintű kapacitás létrehozása segíthet a munkaterhelések elkülönítésében. Vegye figyelembe, hogy a tárterület 100 TB-os kapacitású csomópont, és ez valószínűleg több, mint bármely munkaterhelés esetében elegendő.
 
-Amely meghatározza, hogy a méretét és a prémium szintű kapacitások kihívást jelenthet, kifejezetten rendszergazdák számára a kezdeti kapacitások hoz létre. Az első lépés, ha kapacitásméretezést munkaterhelés átlagos jelölő várt mindennapos használatának megértéséhez. Fontos tudni, hogy nem minden munkaterhelésről sem egyenlő. Például: a álló kínálat - egyik végén 100 egyidejű felhasználó fér hozzá egyetlen vizualizációt tartalmazó egyetlen jelentésoldalon könnyen elérhető. Még - - spektrum másik végén 100 egyidejű felhasználó fér hozzá a különböző jelentések 100, egyenként 100 Vizualizációk a jelentés oldalon lévő hozom létre kapacitás-erőforrások különböző igényeknek.
+A prémium szintű kapacitások méretének és számának meghatározása kihívást jelenthet, különösen az Ön által létrehozott kezdeti kapacitások esetében. A kapacitás méretezésének első lépése a napi használatot jelölő átlagos munkaterhelés megismerése. Fontos tisztában lenni azzal, hogy nem minden munkaterhelés egyenlő. Például – az egyidejű felhasználók egyetlen vizualizációt tartalmazó jelentés oldalának egyik végén a 100 egyidejű felhasználó egyszerűen elérhető. Még – a spektrum másik végén – a 100 egyidejű felhasználó fér hozzá a 100 különböző jelentésekhez, amelyek mindegyike 100 vizualizációkkal rendelkezik a jelentés oldalán.
 
-Kapacitás-rendszergazdák ezért figyelembe kell vennie a sok tényező befolyásolja a környezet, a tartalom és a várható használat. Maximalizálhatja a tárolókapacitás kihasználtságát konzisztens gyorsaság elfogadható várakozási időt és kiürítési díjak adatbáziscsoportok legfontosabb célja. Tényezőket veszi figyelembe a következők lehetnek:
+A kapacitás-rendszergazdáknak ezért számos, a környezetre, a tartalomra és a várható használatra jellemző tényezőt kell figyelembe venniük. A kényszerített célkitűzés a kapacitás kihasználtságának maximalizálása a konzisztens lekérdezési időpontok, a várakozási idő és a kiürítési arányok megvalósítása mellett. A Megfontolandó tényezők a következők lehetnek:
 
-- **Modell mérete és az adatok jellemzői** : Importált modelleken teljes betöltése a memóriába, hogy a lekérdezés vagy frissíteni kell. LC/DQ adatkészletek jelentős processzoridő- és valószínűleg jelentős összetett mértékeket és az RLS-szabályok kiértékelése lehet szükség. Memória és a feldolgozó mérete és a LC/DQ lekérdezések átviteli sebességére is korlátozza a kapacitás méretét.
-- **Egyidejű aktív modellek** : Különböző importált modelleken egyidejű lekérdezését fog nyújtani ajánlott válaszidejét és teljesítmény, ha azokat a memóriában marad. Gazdagép összes erősen lekérdezett modelleket, hogy a frissítéshez további memória elegendő memóriával kell lennie.
-- **Importálás a modellfrissítéshez** : Az alkalmazásfrissítési típus (teljes vagy növekményes), az időtartam és a Power Query lekérdezéseket, és a számított tábla vagy oszlop logikai összetettsége befolyásolhatja a memória és a processzor terhelését is különösen. Egyidejű frissítések csak korlátozottan működik, a kapacitás méretét (1,5 x backend mag, kerekítve) szerint.
-- **Egyidejű lekérdezések** : Számos egyidejű lekérdezéseket eredményezhet a nem válaszoló jelentések mikor processzor- és LC/DQ kapcsolatok meghaladja a kapacitási korlátot. Ez különösen a helyzet sok vizualizációt tartalmazó jelentésoldalak.
-- **Adatfolyamok, többoldalas jelentések és a mesterséges Intelligencia funkciók** : A kapacitás a adatfolyamok, a többoldalas jelentések és a mesterséges Intelligencia funkciók, a kapacitás memóriával konfigurálható maximális százalékos igénylő konfigurálható. Adatfolyamot dinamikusan lefoglalja a memóriát, de ennek statikusan a többoldalas jelentések és a mesterséges Intelligencia számítási feladatok számára.
+- **Modell mérete és az adatok jellemzői** : Az importálási modelleket teljes mértékben be kell tölteni a memóriába a lekérdezések és a frissítés lehetővé tételéhez. Az LC/DQ adatkészletek jelentős processzor-időt és valószínűleg jelentős memóriát igényelhetnek az összetett mértékek vagy az RLS-szabályok kiértékeléséhez. A memória és a processzor mérete, valamint az LC/DQ lekérdezési sebességét a kapacitás mérete korlátozza.
+- **Egyidejű aktív modellek** : A különböző importálási modellek egyidejű lekérdezése biztosítja a legjobb rugalmasságot és teljesítményt, amikor a memóriában maradnak. Elegendő memóriának kell lennie az összes nagymértékben lekérdezett modell üzemeltetéséhez, és további memóriával kell rendelkeznie a frissítéshez.
+- **Importálási modell frissítése** : A frissítési típus (teljes vagy növekményes), az Power Query lekérdezések és a számított tábla/oszlop logikai értékének hossza és összetettsége hatással lehet a memóriára és különösen a processzor használatára. Az egyidejű frissítést a kapacitás mérete (1,5 x háttér-v-magok, felkerekített) korlátozza.
+- **Egyidejű lekérdezések** : Számos egyidejű lekérdezés nem válaszoló jelentést eredményezhet, ha a processzor vagy az LC/DQ kapcsolatok túllépik a kapacitási korlátot. Ez különösen igaz a több vizualizációt tartalmazó jelentés lapjaira.
+- **Adatfolyamok, többoldalas jelentések és AI függvények** : A kapacitás beállítható úgy, hogy támogassa a adatfolyamok, a többoldalas jelentéseket és a mesterséges intelligencia-függvényeket, és mindegyikhez konfigurálható maximális kapacitási arányt igényel. A memória dinamikusan van kiosztva a adatfolyamok, de statikusan van lefoglalva a többoldalas jelentésekhez és az AI-munkaterhelésekhez.
 
-Ezek a tényezők mellett a kapacitás-rendszergazdák is érdemes lehet létrehozni több kapacitások. Több kapacitás lehetővé teszik a számítási feladatok elkülönítése és beállítható úgy, hogy prioritást számítási feladatok rendelkezik garantált erőforrások biztosítása. Ha például két kapacitások üzleti szempontból kritikus fontosságú számítási feladatok elkülönítése önkiszolgáló BI összetett számítási feladatok is létrehozható. Az üzleti szempontból kritikus fontosságú kapacitása nagy vállalati modellek, így azokat a garantált erőforrásokkal rendelkező authoring hozzáférés csak az informatikai részleg számára biztosított elkülönítéséhez használható. Az összetett kapacitás, kisebb modelleket egyre nagyobb számban üzemeltetéséhez az üzleti elemzők számára biztosított hozzáférés használható. Az összetett kapacitás esetenként tapasztalhat, amelyek tolerálható lekérdezés vagy a frissítés vár.
+Ezen tényezők mellett a kapacitás-rendszergazdák több kapacitás létrehozását is fontolóra vehetik. Több kapacitás is lehetővé teszi a munkaterhelések elkülönítését, és konfigurálható úgy, hogy biztosítsa a Kiemelt számítási feladatok garantált erőforrásait. Az önkiszolgáló BI-(SSBI-) munkaterhelések esetében például két kapacitást lehet létrehozni az üzleti szempontból kritikus fontosságú munkaterhelések elkülönítéséhez. Az üzleti szempontból kritikus kapacitás felhasználható a nagy vállalati modellek elkülönítésére, amelyek garantált erőforrásokkal rendelkeznek, és a szerzői hozzáférés csak az informatikai részleg számára biztosított. A SSBI kapacitás több kisebb modell futtatására is használható, az üzleti elemzők számára biztosított hozzáféréssel. A SSBI kapacitása időnként lekérdezési vagy frissítési várakozások esetén is elfogadható.
 
-Az idő múlásával a kapacitás-rendszergazdák tudja osztani a munkaterületek kapacitások között munkaterületek, vagy a munkaterületek között kapacitások közötti áthelyezése a tartalmat, és a kapacitások kiterjesztése vagy szűkítése. Általában nagyobb üzemeltetni, vertikális felskálázás és a magasabb szintű egyidejűség érdekében, modellek horizontális felskálázás.
+Az idő múlásával a kapacitás-rendszergazdák a munkaterületek közötti egyensúlyba helyezhetik a munkaterületeket, és a kapacitások közötti munkaterületek, illetve a kapacitások felfelé vagy lefelé skálázásával is áthelyezhetők. Általában nagyobb méretű, vertikális felskálázást és nagyobb párhuzamosságot biztosítunk.
 
-Ne felejtse el, hogy a bérlő virtuális magok licencet vásárol biztosít. Vásárlása egy **P3** előfizetés segítségével hozzon létre egyet, vagy akár négy prémium szintű kapacitás, azaz P3 vagy a x P2 2 vagy 4 x 1 x P1. Emellett egy P2 szintű kapacitás, P3 kapacitásokhoz Továbbfejlesztő, mielőtt is mérlegelni történő felosztásának eredménye a virtuális magok két P1 szintű kapacitások létrehozása.
+Ne felejtse el, hogy a licencek megvásárlása biztosítja a bérlőt a virtuális magokkal. A **P3** -előfizetés megvásárlásával létrehozhat egy vagy legfeljebb négy prémium kapacitást, például 1 x P3 vagy 2 x P2 vagy 4 x P1. Továbbá, mielőtt a P2-kapacitást egy P3-es kapacitásra szeretné kialakítani, figyelembe kell venni a virtuális magok felosztását két P1 kapacitás létrehozásához.
 
-### <a name="testing-approaches"></a>Tesztelési módszer
+### <a name="testing-approaches"></a>Tesztelési módszerek
 
-A kapacitás méretét dönthető el, ha tesztelési végezhető létrehozása az ellenőrzött környezetben. A gyakorlati és gazdaságos lehetőség, hogy hozzon létre egy Azure (termékváltozatok) kapacitást, megjegyezni, hogy a P1 kapacitás, az A4 kapacitás, a P2 az azonos méretű és P3 kapacitások akkora, mint a A5 és az a6-os kapacitások jelölik. Azure kapacitások gyorsan létrehozhatók és óradíjat számítjuk fel. Tehát tesztelés befejezése után a egyszerűen törölje őket keletkezhetnek költségek leállítása.
+A kapacitás méretének eldöntése után a tesztelést egy ellenőrzött környezet létrehozásával végezheti el. A gyakorlati és gazdasági lehetőség egy Azure-(SKU-) kapacitás létrehozása, amely megállapítja, hogy egy P1-es kapacitás mérete megegyezik egy A4-es kapacitással, és a P2 és a P3 kapacitása megegyezik az A5-ös és az A6-os kapacitással. Az Azure-kapacitások gyorsan létrehozhatók, és óradíjat kell fizetniük. Így a tesztelés befejezése után egyszerűen törölheti a költségeket.
 
-A vizsgálati tartalom is hozzáadhatók a munkaterületek létrehozása az Azure kapacitás, és egyéni felhasználóként is jelentések futtatásával hozzon létre egy valósághű és reprezentatív munkaterhelés-lekérdezések. Ha importált modelleken, is minden modell frissítésének kell végrehajtani. Monitorozási eszközökkel, majd segítségével minden metrika erőforrás-használat megértéséhez tekintse át.
+A teszt tartalma hozzáadható az Azure-kapacitásban létrehozott munkaterületekhez, majd egyetlen felhasználó futtathat jelentéseket a lekérdezések reális és reprezentatív számítási feladatainak létrehozásához. Ha vannak importálási modellek, az egyes modellek frissítését is el kell elvégezni. A figyelési eszközök segítségével az összes mérőszámot áttekintheti az erőforrások kihasználtságának megismeréséhez.
 
-Fontos, hogy a vizsgálatok megismételhető: Tesztek többször kell futtatni, és továbbítsa körülbelül ugyanazt az eredményt, azok minden alkalommal, amikor. Ezekkel az eredményekkel átlagosan extrapolálja, és megbecsülheti a számítási feladatok valódi éles körülmények között is használható.
+Fontos, hogy a tesztek ismételhetők legyenek: A teszteket többször kell futtatni, és minden alkalommal nagyjából ugyanazt az eredményt kell megadniuk. Ezeknek az eredményeknek az átlagát használva kikövetkeztetheti és megbecsülheti a számítási feladatokat az igaz üzemi körülmények között.
 
-Szeretne létrehozni egy terhelési teszt, érdemes a terhelésteszt valósághű számítási feladatok szimulálásához alkalmazás lehet. Hogyan érhető ez tulajdonságairól ebben a tanulmányban hatókörén kívül vannak. További információk egy kódmintát, tekintse meg a [terhelési tesztelés a Power BI-alkalmazások a Visual Studio terhelési teszt](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/) webináriumra.
+Ha már rendelkezik kapacitással és a tesztek betöltéséhez szükséges jelentésekkel, a [PowerShell Load generáló eszköz](https://aka.ms/PowerBILoadTestingTool) használatával gyorsan létrehozhat egy terhelési tesztet. Az eszköz segítségével megbecsülheti, hogy a kapacitás hány példánya futhat egy órán belül. Az eszközzel kiértékelheti a kapacitást az egyes jelentések megjelenítéséhez vagy párhuzamosan több különböző jelentés megjelenítéséhez. További információkért tekintse meg a Microsoft [Power bi videót: Prémium szintű](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw)kapacitás.
 
-## <a name="exploring-real-world-scenarios"></a>Valós Életből vett felfedezése
+Összetettebb teszt létrehozásához érdemes lehet olyan terheléses tesztelési alkalmazást fejleszteni, amely reális számítási feladatokat szimulál. További információkért tekintse meg a Webinar [Load testing Power bi alkalmazások a Visual Studio Load testtel](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/)című témakört.
 
-Ebben a szakaszban számos való életből vett forgatókönyv jelenik meg a gyakori problémák vagy kihívásokat, hogyan azonosíthatja azokat, és hogyan oldhatja meg őket:
+## <a name="exploring-real-world-scenarios"></a>Valós forgatókönyvek feltárása
 
-- [Az adatkészletek naprakészen tartása](#keeping-datasets-up-to-date)
-- [Az adatkészletek lassan válaszol azonosítása](#identifying-slow-responding-datasets)
-- [Okainak azonosítása vonatkozó szórványosan lassú-adatkészletek](#identifying-causes-for-sporadically-slow-responding-datasets)
-- [Meghatározása, hogy van-e elegendő memória](#determining-whether-there-is-enough-memory)
-- [Amely meghatározza, hogy van-e elegendő Processzor](#determining-whether-there-is-enough-cpu)
+Ebben a szakaszban számos valós forgatókönyvet vezetünk be a gyakori problémák vagy kihívások leírására, az azonosításuk módjára és a megoldásuk elősegítésére:
 
-A lépéseket, valamint különböző példákkal diagram és táblázat származnak az **Power BI Premium-kapacitás metrikák alkalmazás** (alkalmazás), hogy a Power BI-rendszergazda hozzáférést kap.
+- [Adatkészletek naprakészen tartása](#keeping-datasets-up-to-date)
+- [A lassú válaszú adatkészletek azonosítása](#identifying-slow-responding-datasets)
+- [A szórványosan lassan válaszoló adatkészletek okainak azonosítása](#identifying-causes-for-sporadically-slow-responding-datasets)
+- [Annak megállapítása, hogy van-e elegendő memória](#determining-whether-there-is-enough-memory)
+- [Annak megállapítása, hogy van-e elég CPU](#determining-whether-there-is-enough-cpu)
 
-### <a name="keeping-datasets-up-to-date"></a>Az adatkészletek fel tartja a mai napig
+A lépéseket, valamint a diagram-és táblázatos példákat a **Power bi Premium Capacity metrika alkalmazásból** (alkalmazás) származik, amelyhez a Power bi-rendszergazda hozzáférhet.
 
-Ebben a forgatókönyvben vizsgálat lett elindítva, amikor a felhasználók kifogásolt, hogy a jelentés adatokat néha tűnt, régi vagy "elavult".
+### <a name="keeping-datasets-up-to-date"></a>Adatkészletek naprakészen tartása
 
-Az alkalmazásban a rendszergazda kommunikál a **frissíti** vizualizációt, a rendezés adatkészletek a **maximális várakozási idő** statisztika csökkenő sorrendben. Ez segít azokat az adatkészleteket, amelyek rendelkeznek a leghosszabb idő, a munkaterület neve szerint csoportosítva várjon felfedéséhez.
+Ebben a forgatókönyvben egy vizsgálatot váltott ki, amikor a felhasználók azt kifogásolták, hogy a jelentési adatjelentések időnként elavultak vagy elavultak.
 
-![Adatkészlet frissítések maximális várakozási idő, munkaterület szerint csoportosítva csökkenő sorrendben rendezve](media/whitepaper-premium-deployment/dataset-refreshes.png)
+Az alkalmazásban a rendszergazda a **frissítések** vizualizációját, a **maximális várakozási idő** statisztikái alapján csökkenő sorrendbe rendezi az adathalmazokat. Ez segít felfedni azokat az adatkészleteket, amelyek a leghosszabb várakozási idővel rendelkeznek, a munkaterület neve szerint csoportosítva.
 
-Ezenkívül a **óránkénti átlagos frissítése várakozási idők** vizualizációval, figyelje meg, hogy a frissítés várakozási időt kiugró következetesen körülbelül 4 du minden nap.
+![Adatkészletek frissítése a csökkenő maximális várakozási idő szerint rendezve, munkaterület szerint csoportosítva](media/whitepaper-premium-deployment/dataset-refreshes.png)
 
-![Frissítés vár csúcs rendszeres időközönként du. 4:](media/whitepaper-premium-deployment/peak-refresh-waits.png)
+Emellett az **átlagos frissítési várakozási idő** vizualizációja azt jelzi, hogy a frissítési várakozási idő csúcsa minden nap 16:00 körül van.
 
-Nincs magyarázatairól több ezeket az eredményeket:
+![A várakozási idő csúcsa 16:00-kor](media/whitepaper-premium-deployment/peak-refresh-waits.png)
 
-- Túl sok frissítési kísérlet sikerült kell zajló egyszerre, meghaladja a határoz meg a kapacitás-csomópontot (hat egyidejű frissíti az alapértelmezett memória mennyiségét a P1 szintű)
+Az eredmények több lehetséges magyarázattal is rendelkeznek:
 
-- Lehet, hogy frissíteni kell az adatkészletek túl nagy rendelkezésre álló memória (legalább 2 x teljes memóriaigényének lesz szükség)
-- Nem elég hatékony Power Query-logika előfordulhat, hogy lehet eredményez memória kihasználtsága ugrásszerű adatkészlet frissítése során. A foglalt kapacitás a fizikai korlátot, a frissítés sikertelen, és potenciálisan érintő műveletek más jelentés megtekintése a kapacitás esetenként ezt is elérheti.
-- Gyakran lekérdezett adatkészleteket szeretne maradni a memóriában befolyásolhatja az egyéb adatkészletek frissítéséhez, mert korlátozott rendelkezésre álló memória
+- Túl sok frissítési kísérlet zajlik egyszerre, ami meghaladja a kapacitási csomópont által megszabott korlátokat (hat egyidejű frissítés a P1-ben az alapértelmezett memória-kiosztással)
 
-A Power BI rendszergazdája ez vizsgálatáról be is keressen:
+- Előfordulhat, hogy a frissítendő adatkészletek túl nagyok ahhoz, hogy a rendelkezésre álló memóriába illeszkedjenek (legalább 2x memóriát igényel a teljes frissítéshez)
+- Az adatkészletek frissítése során nem hatékony Power Query logika okozhatja a memóriahasználat terhelését. Egy foglalt kapacitás esetén ez esetenként elérheti a fizikai korlátot, a frissítés meghiúsul, és potenciálisan hatással lehet más jelentési nézet műveleteire a kapacitáson.
+- A memóriában lévő, gyakran lekérdezett adatkészletek a korlátozott rendelkezésre álló memória miatt befolyásolhatják a más adatkészletek frissítésének képességét.
 
-- Az adatok frissítése, ha rendelkezésre álló memória kevesebb, mint a frissítendő adatkészlet mérete x 2 időpontjában alacsony memória
-- Adatkészletek, amely is nem frissülnek, és a memória, a frissítés előtt nem voltak, de amely interaktív forgalom megjelenítése során (nagy erőforrásigényű) frissítési idejének megkezdődött. Megtekintheti, mely adatkészleteket is a memóriába betöltött egy adott időpontban egy Power BI rendszergazdai tekintse meg az adatkészletek területén **adatkészletek** egy adott idő alatt, kattintson a sávok az alkalmazást, és több szűrő lapján a **óránként Adatkészlet Counts betöltött**. (Az alábbi képen látható) helyi ugrásszerű azt jelzi, hogy egy órát, amikor több adatkészlet is betölti a memóriába, amely késhet tárhelyének kezdete
-- Nagyobb adatkészletet adatbázislap véve helyezze el, amikor ütemezett adatfrissítéseket indul el, jelezve a magas rendelkezésre álló memória mennyisége túl sok különböző interaktív jelentéseket frissítés időpontja előtt szolgáltató által okozott hiba történt. A **óránkénti adatkészlet adatbázislap és memóriát** visual adatbázislap kiugrások egyértelműen utalhat.
+Ennek a vizsgálatnak a kivizsgálása érdekében a Power BI-rendszergazda megkeresheti a következőket:
 
-Az alábbi képen látható helyi ugrásszerű betöltött adatkészletekben, ami arra utal, interaktív lekérdezés késleltetett frissítések kezdete. Egy adott időszakban az kiválasztása a **óránkénti betöltött adatkészlet Counts** Vizualizáció keresztszűrő a **adatkészlet méretű** visual.
+- Kevés a rendelkezésre álló memória az Adatfrissítés időpontjában, ha a rendelkezésre álló memória mérete kisebb, mint 2 – a frissíteni kívánt adatkészlet mérete
+- Azokat az adatkészleteket, amelyeket nem frissítettek, és a frissítés előtt nem voltak a memóriában, de a nagy frissítési idő során megkezdődött az interaktív forgalom megjelenítése. Ha szeretné megtekinteni, hogy mely adatkészletek lettek a memóriába betöltve, egy Power BI rendszergazda megtekintheti az alkalmazás adatkészletek **lapján található** adatkészletek lapot, és megvizsgálhatja a szűrőt egy adott időpontra az **óránként betöltött adatkészlet**számának egyik sávjára kattintva. Egy helyi csúcs (az alábbi képen látható) azt jelzi, hogy egy óra, ha több adatkészlet töltődik be a memóriába, ami késleltetheti az ütemezett frissítések indítását.
+- Megnövelt adatkészlet-kizárások zajlanak az adatfrissítések ütemezésekor, ami azt jelzi, hogy a frissítés időpontját megelőzően túl sok különböző interaktív jelentés szolgál a nagy memória-nyomás miatt. Az **óránkénti adatkészlet-kizárások és a memória-felhasználás** vizualizációja egyértelműen jelzi a kizárásokban lévő tüskéket.
 
-![A betöltött adatkészletek helyi ugrásszerű javasol frissíti az interaktív lekérdezési Késleltetett indítás](media/whitepaper-premium-deployment/hourly-loaded-dataset-counts.png)
+Az alábbi képen egy helyi csúcs látható a betöltött adatkészletekben, ami a frissítések késleltetett kezdésének interaktív lekérdezését javasolja. Ha kijelöl egy időszakot az **óránként betöltött adatkészlet** megszámlálása során, a vizualizáció keresztben szűri az adathalmazok **méretét** .
 
-A Power BI rendszergazdája is megkísérelheti a probléma megoldásához, győződjön meg arról, hogy elegendő memória áll rendelkezésre, az adatok frissülni fognak, első lépésként lépések végrehajtásával:
+![A betöltött adatkészletek helyi csúcsa a frissítések késleltetett kezdetének interaktív lekérdezését javasolja](media/whitepaper-premium-deployment/hourly-loaded-dataset-counts.png)
 
-- Kapcsolatfelvétel az adatkészlet tulajdonosai és a rendszer arra szinkronizálások eltolása és a lemezterület-adatai frissítése ütemezések
-- Adatkészlet csökkenti a szükségtelen irányítópultok vagy az irányítópult eltávolításával lekérdezési terhelése csempéket, különösen azokkal, amelyek a sorszintű biztonság kényszerítése
-- Modell adatfrissítéseket felgyorsítva a Power Query logikai optimalizálással, számított oszlopok vagy táblázatok, csökkenti az adatkészletek mérete, vagy annak konfigurálását a nagyobb adatkészletből a végrehajtásához a növekményes adatok frissítése
+A Power BI rendszergazdája a következő lépések végrehajtásával próbálkozhat a probléma megoldásához szükséges lépésekkel, így biztosítva, hogy elegendő memória álljon rendelkezésre az adatfrissítéshez:
 
-### <a name="identifying-slow-responding-datasets"></a>Az adatkészletek lassan válaszol azonosítása
+- Kapcsolatfelvétel az adatkészlet-tulajdonosokkal, és az adatfrissítési ütemezések lépcsőzetes és kilépésének megkérdezése
+- Az adatkészlet-lekérdezések terhelésének csökkentése a szükségtelen irányítópultok és irányítópult-csempék eltávolításával, különösen azokkal, amelyek a sor szintű biztonságot kényszerítik
+- Az adatok frissítésének felgyorsítása Power Query logika optimalizálásával, számított oszlopok vagy táblák modellezésével, az adathalmazok méretének csökkentésével, vagy nagyobb adatkészletek konfigurálásával a növekményes adatok frissítése érdekében
 
-Ebben a forgatókönyvben a vizsgálat lett elindítva, amikor a felhasználók kifogásolt, hogy bizonyos jelentések megnyitásához hosszú időbe telt-e, és esetenként lenne lefagy.
+### <a name="identifying-slow-responding-datasets"></a>A lassú Válaszú adatkészletek azonosítása
 
-Az alkalmazás a Power BI-rendszergazda használhat a **lekérdezés időtartamának összegénél** vizualizációt a legrosszabbul teljesítő adatkészletek meghatározása szerint csökkenő sorrendben rendezi a adatkészletek **átlagos időtartam**. Ez a Vizualizáció is látható adatkészlet lekérdezések száma, így láthatja, hogy milyen gyakran az adatkészletek a rendszer megkérdezi.
+Ebben a forgatókönyvben egy vizsgálatot indítottak, amikor a felhasználók arról panaszkodtak, hogy bizonyos jelentések hosszú ideig tartanak nyitva, és időnként lefagynak.
 
-![Hogy felfedné legrosszabbul teljesítő adatkészletek](media/whitepaper-premium-deployment/worst-performing-datasets.png)
+Az alkalmazásban a Power BI rendszergazdája használhatja a lekérdezési **időtartamok** vizualizációját, hogy meghatározza a legrosszabb teljesítményt nyújtó adatkészleteket az adathalmazok csökkenő **átlagos időtartam**szerinti rendezésével. Ez a vizualizáció az adatkészlet-lekérdezések számát is megjeleníti, így láthatja, hogy az adatkészletek milyen gyakran kérdeznek le.
 
-A Power BI rendszergazdája olvassa el a **lekérdezés időtartamok eloszlása** visual, amely bemutatja egy általános elosztásának bucketed lekérdezési teljesítmény (< 30ms, = 0 – 100 MS, stb.) a szűrt időszakra. Általában a lekérdezéseket, hogy hajtsa végre a megfelelő egy másodperc vagy kevesebb által figyelembe veendő válaszol-e a felhasználók többsége; Hozzon létre egy rossz teljesítmény érzete általában lekérdezéseket, amelyek hosszabb időt vesz igénybe.
+![A legrosszabb teljesítményt nyújtó adatkészletek feltárása](media/whitepaper-premium-deployment/worst-performing-datasets.png)
 
-A **óránkénti lekérdezés időtartamok eloszlása** Vizualizáció lehetővé teszi, hogy a Power BI rendszergazdáját, hogy ha a kapacitás teljesítmény sikerült rendelkezik lett által tapasztalt óránként időszakainak, gyenge. Minél nagyobb a sáv szegmensek, amelyek lekérdezési időtartamok több mint egy másodperc, a nagyobb a kockázat, hogy a felhasználók lássák fog gyenge teljesítményt eredményez.
+A Power BI rendszergazdája hivatkozhat a lekérdezési **időtartam eloszlási** vizualizációra, amely a szűrt időszakra vonatkozóan a gyűjtő lekérdezési teljesítmény (< = 30ms, 0 100ms stb.) teljes eloszlását mutatja. Általában egy másodpercet vagy annál kisebb lekérdezéseket a legtöbb felhasználó válaszol. a hosszabb időt igénylő lekérdezések a rossz teljesítmény érzékelését idézik elő.
 
-A Vizualizáció interaktív, és ha a sáv szegmens választja, a megfelelő **lekérdezés időtartamának összegénél** visual a jelentés oldalon lévő táblázat keresztszűrhető jelöli, az adatkészletek megjelenítése. A keresztszűrés lehetővé teszi, hogy a Power BI rendszergazdáját, hogy könnyen azonosíthassa, amely adatkészletek lassan válaszol.
+Az **óránkénti lekérdezés időtartamának eloszlási** vizualizációja lehetővé teszi, hogy a Power bi rendszergazdája egy órás időszakot azonosítson, ha a kapacitás teljesítménye gyengenak bizonyulhat. Minél nagyobb a lekérdezési időtartamokat jelképező sáv egy másodpercen keresztül, annál nagyobb a kockázata, hogy a felhasználók a gyenge teljesítményt fogják észlelni.
 
-Az alábbi képen látható Vizualizáció szűrve **óránkénti lekérdezés időtartama Disztribúciók**, fókuszáló óránként gyűjtők a legrosszabbul teljesítő adatkészleteken. 
+A vizualizáció interaktív, és a sáv egy szegmensének kiválasztásakor a jelentés oldalának megfelelő **lekérdezési időtartam** a táblázat vizualizációja az általa képviselt adatkészletek megjelenítéséhez. Ez a szűrés lehetővé teszi, hogy a Power BI rendszergazda könnyedén azonosítsa, hogy mely adatkészletek lassan válaszolnak.
 
-![Szűrt óránkénti lekérdezés időtartama Disztribúciók visual látható a még rosszabb adatkészletek végrehajtása](media/whitepaper-premium-deployment/hourly-query-duration-distributions.png)
+Az alábbi képen egy, az óránkénti **lekérdezés időtartamának eloszlása**alapján szűrt vizualizáció látható, amely a legrosszabb teljesítményű adatkészletekre összpontosít egy órás gyűjtőben. 
 
-A gyenge teljesítő adatkészlet egy adott 1 órás időtartam azonosítja, miután a Power BI rendszergazdája segítségével megvizsgálhatja, hogy gyenge teljesítményt egy túlterhelt kapacitást okozza, vagy egy rosszul miatt tervezett adatkészlet vagy jelentés. Ennek érdekében is hivatkozhatnak a **várjon gyorsaság** Vizualizáció, és a lekérdezések átlagos várakozási idő csökkenő rendezés adatkészletek. Lekérdezések álló várnak, ha az adatkészlet egy nagy kereslet okozza valószínűleg a sok lekérdezést vár. Ha az átlagos lekérdezési idő jelentősen kell (> 100 ms), akkor érdemes lehet megfontolni áttekintése az adatkészlet és jelentés megtekintéséhez, ha optimalizálást lehet végrehajtani. Például esetleg kevesebb vizualizációt megadott jelentésoldalak vagy a DAX-kifejezés optimalizálása.
+![A szűrt óránkénti lekérdezés időtartama eloszlások vizualizációja a rosszabb teljesítményt nyújtó adatkészleteket mutatja](media/whitepaper-premium-deployment/hourly-query-duration-distributions.png)
 
-![A lekérdezés várakozási idők Vizualizáció segít a gyengén teljesítő adatkészlet feltárása](media/whitepaper-premium-deployment/query-wait-times.png)
+Ha azonosítják a gyenge teljesítményű adatkészletet egy adott 1 órás TimeSpan, akkor a Power BI rendszergazdája megvizsgálhatja, hogy a gyenge teljesítményt okozta-e túlterhelt kapacitás, vagy egy rosszul megtervezett adatkészlet vagy jelentés miatt. Ennek eléréséhez hivatkozhat a **lekérdezés várakozási idejének** vizualizációra, és rendezheti az adatkészleteket az átlagos lekérdezési várakozási idő csökkenő sorrendbe állításával. Ha a lekérdezések nagy hányada várakozik, az adatkészlet nagy igénye valószínűleg a sok lekérdezési várakozás oka. Ha az átlagos lekérdezési várakozási idő jelentős (> 100ms), érdemes megtekinteni az adatkészletet és a jelentést, és megtudhatja, hogy lehet-e optimalizálást végezni. Előfordulhat például, hogy a jelentés lapjain kevesebb vizualizációt vagy egy DAX-kifejezés optimalizálását adja meg.
 
-Nincsenek lekérdezési várakozási idő Összeállíthatunk adatkészletei több lehetséges oka:
+![A lekérdezés várakozási idejének vizualizációja segít a gyengén teljesítő adatkészletek megjelenítésében](media/whitepaper-premium-deployment/query-wait-times.png)
 
-- Ez az optimálisnál rosszabb modell kialakítást, a mértékkifejezéseik vagy még jelentéstervező – minden körülmények között, amelyek hozzájárulhatnak a hosszú ideig futó lekérdezéseket, amelyek nagy mértékű CPU felhasználását. Ez kényszeríti, várja meg, amíg a szálak CPU elérhetővé válnak, és hozhat létre üzleti csúcsidőben fordul elő egy convoy hatás (csávából gondolkodási forgalmat), új lekérdezéseket. A **lekérdezési várakozások** fog a lap a fő erőforrást annak megállapításához, hogy adatkészletek rendelkeznek-e a lekérdezések magas átlagos várakozási időt.
-- Nagyszámú egyidejű kapacitás felhasználók (több és több ezer) ugyanaz a jelentés vagy adatkészlet felhasználása. Akkor is a jól megtervezett adatkészletek egy egyidejűségi küszöbérték rosszul hajthat végre. Ez jelentősen nagyobb értéket megjelenítő, a lekérdezés számolja, mint a többi adatkészletek megjelenítése egyetlen adatkészlet általában jelzi (azaz 300K képest egy adatkészlet lekérdezései < 30K lekérdezések minden adathalmaz esetében). A lekérdezési várakozások ehhez az adatkészlethez ütemtervét elindul, és ez lesz látható a bármikor a **lekérdezés időtartamának összegénél** visual.
-- Számos különböző adatkészletek egyidejűleg lekérdezett memóriaakadozás okoz, a memória adataikkal gyakran ciklus adatkészletek. Ennek eredményeképpen a felhasználók teljesítménycsökkenést tapasztal, ha az adatkészlet betölti a memóriába. Ennek ellenőrzéséhez a Power BI-rendszergazdák az itt található a **óránkénti adatkészlet adatbázislap és memóriát** visual, ez arra utalhat, hogy nagy számú adatkészletek a memóriába betöltött vannak ismételten a kiürítés alatt.
+Több lehetséges oka van annak, hogy a lekérdezések várakozási ideje felépíthető az adatkészletekben:
 
-### <a name="identifying-causes-for-sporadically-slow-responding-datasets"></a>Okainak azonosítása vonatkozó szórványosan lassú-adatkészletek
+- Optimális modell-kialakítás, mérték kifejezés, vagy akár jelentés tervezése – minden olyan körülmény, amely hozzájárulhat a nagy mennyiségű CPU-t használó hosszú távú lekérdezésekhez. Ez kényszeríti az új lekérdezéseket, hogy várjon, amíg a CPU-szálak elérhetővé válnak, és létre tud hozni egy konvoj-hatást (gondolja a forgalmi dugót), amelyet általában a munkaidőben láthat. A **lekérdezési várakozások** oldal lesz a fő erőforrás, amely meghatározza, hogy az adatkészletek nagy átlagos lekérdezési várakozási idővel rendelkeznek-e.
+- Nagy számú egyidejű kapacitású felhasználó (több százezer) ugyanazt a jelentést vagy adatkészletet felhasználva. Még a jól megtervezett adathalmazok is rosszul végezhetők el a egyidejűségi küszöbértékeken túl. Ezt általában egyetlen adatkészlet jelzi, amely jóval magasabb értéket mutat a lekérdezési számokhoz, mint a többi adatkészletnél (azaz az egyik adathalmaz 300K-lekérdezései, mint az összes többi adatkészlet < 30K-lekérdezése). Egy ponton a lekérdezés várakozási ideje, hogy ez az adatkészlet megdöbbentő lesz, és ezt a **lekérdezés időtartamainak** vizualizációja fogja látni.
+- Számos különböző adatkészlet egyidejűleg kérdezi le az adatokat, így az adathalmazok gyakran a memóriában és a memóriában is leállnak. Ez azt eredményezi, hogy a felhasználók lassú teljesítményt tapasztalnak, amikor az adatkészlet betöltődik a memóriába. Ennek megerősítéséhez az Power BI rendszergazdája hivatkozhat az **óránkénti adatkészlet kizárására és a memóriahasználat** vizualizációra, ami arra utalhat, hogy a memóriába betöltött adathalmazok nagy száma ismételten ki van zárva.
 
-Ebben a forgatókönyvben a vizsgálat volt aktiválódik, ha a felhasználók ismerteti, hogy a jelentés-Vizualizációk néha korábban úgy tűnt lassan válaszol, vagy válaszképtelenné válik, de máskor voltak intézkedéseket válaszol-e.
+### <a name="identifying-causes-for-sporadically-slow-responding-datasets"></a>A szórványosan lassan válaszoló adatkészletek okainak azonosítása
 
-Az alkalmazáson belüli a **lekérdezés időtartamának összegénél** szakaszban használt keresse meg a hibát okozó adatkészlet a következő módon:
+Ebben a forgatókönyvben egy vizsgálatot váltott ki, amikor a felhasználók azt írják le, hogy a jelentés vizualizációi néha lassúak, vagy nem válaszolnak, de más időpontokban elfogadhatóan reagálnak.
 
-- Az a **lekérdezés időtartamának összegénél** vizuális a rendszergazda adatkészlet adatkészletet (a felső adatkészletek lekérdezett-gyel kezdődik) szerint szűrt és megvizsgálta a keresztszűrés szűrt sávok a **óránkénti lekérdezés Disztribúciók** visual.
-- Ha egy egyetlen óránként sáv bemutatta az összes lekérdezés időtartama csoportokat és más óránként sávok az adott adatkészlethez aránya jelentős változásokat (azaz a arányok a színek között változik jelentősen), azt jelenti, hogy ez az adatkészlet bemutatott szórványos módosítása teljesítmény.
-- A bemutató egy gyengén teljesítő lekérdezések szabálytalan része egy órás sávok jelzett timespan, ahol az adatkészlet egy zajos szomszédok hatást, egyéb adatkészletekhez tevékenységek által okozott hatással volt.
+Az alkalmazáson belül a **lekérdezési időtartamok** szakaszban a következő módon találta meg a bűnös adatkészletet:
 
-Egy adatkészlet teljesítmény jelentős setback történt, ahol a "(3,10s]"végrehajtási időtartamgyűjtő mérete által jelzett a január 30-án egy órán keresztül az alábbi kép. Adott egy órás sávon kattintással tárja fel az összes adathalmaz ideje alatt a memóriába betöltött így felszínre hozza a jelölt sokkal adatkészletek zajos szomszédok hatása okozza.
+- A **lekérdezés időtartama alatt** a rendszergazda szűrt adatkészletet az adatkészlet alapján (a legfelső szintű adatkészletek kiindulásával), majd megvizsgálta az **óránkénti lekérdezés eloszlások** vizualizációjában lévő, szűrt sávokat.
+- Ha egy egyórás sáv az összes lekérdezési időtartam csoport és az adott adatkészlethez tartozó egyéb egyórás sávok közötti arányban jelentős változásokat mutatott (azaz a színek közötti arányok drasztikusan változnak), ez azt jelenti, hogy ez az adatkészlet szórványos változást mutat be a következőben: teljesítmény.
+- Az egyórás sávok a rossz teljesítményű lekérdezések szabálytalan részét mutatják, jelezve egy TimeSpan, amelyben az adathalmazt egy zajos szomszédi hatás befolyásolta, amelyet más adatkészletek tevékenységei okoztak.
 
-![Sáv megjelenítése a legrosszabb teljesítmény nagy által](media/whitepaper-premium-deployment/worst-performing-queries.png)
+Az alábbi képen egy óra jelenik meg január 30-ig, ahol jelentős visszaesés történt az adatkészlet teljesítményében, amelyet a "(3, tízes]" végrehajtási időtartam gyűjtője jelez). Ha az egyórás sáv elemre kattint, a rendszer az adott időszakban a memóriába betöltött összes adatkészletet felfedi, így a jelölt bűnös adatkészleteket felszínre helyezi, ami a zajos szomszéd hatást
 
-Miután problémás lehet timespan van (azaz során azonosított január 30 a fenti képen) a Power BI rendszergazdája adatkészlet összes szűrő eltávolítása, majd csak az adott időtartam meghatározni, melyik adatkészleteket aktívan kérdeztek ebben az időszakban szűrése. A felső lekérdezett adatkészlet vagy egy a leghosszabb átlagos lekérdezési idő általában a zajos szomszédok hatása sokkal adatkészlete.
+![A legrosszabb teljesítmény nagy részre mutató sáv](media/whitepaper-premium-deployment/worst-performing-queries.png)
 
-Egy megoldás erre a problémára lehet terjeszteni a különböző munkaterületekhez különböző prémium szintű kapacitások vagy a megosztott kapacitás, ha az adatkészlet méretét, a felhasználási követelményeket és az adatok frissítése minták keresztül adatkészletek támogatottak nem sokkal.
+A problémás TimeSpan észlelése után (azaz a fenti képen látható január 30-ig) a Power BI rendszergazdája eltávolíthatja az összes adatkészlet szűrőjét, majd a szűrést csak az adott TimeSpan alapján határozhatja meg, hogy mely adatkészletek aktívan voltak lekérdezve ebben az időszakban. A zajos szomszéd effektushoz tartozó bűnös adatkészlet általában a legfelső lekérdezési adatkészlet, vagy az a leghosszabb átlagos lekérdezési időtartammal rendelkező egy.
 
-Fordítva is igaz lehet. A Power BI rendszergazdája sikerült alkalommal, amikor egy adatkészlet lekérdezés jelentősen javítja a teljesítményt, azonosítása, majd keresse meg mi eltűnt. Adott időpontban hiányzik a bizonyos adatokat, majd, amely segíthet a okozó probléma mutasson.
+A probléma megoldásához a bűnös adatkészleteket különböző munkaterületeken, eltérő prémium szintű kapacitáson vagy megosztott kapacitáson lehet terjeszteni, ha az adatkészlet mérete, a felhasználási követelmények és az adatfrissítési minták támogatottak.
 
-### <a name="determining-whether-there-is-enough-memory"></a>Meghatározó e nincs elég memória
+A fordított érték is igaz lehet. A Power BI rendszergazdája azonosíthatja az időpontokat, amikor egy adatkészlet lekérdezési teljesítménye drasztikusan javul, majd megkeresi, hogy milyen eltűntek. Ha bizonyos információk hiányoznak ezen a ponton, akkor ez segíthet a problémát okozó problémára mutatni.
 
-Annak megállapításához, hogy van-e elegendő memória a kapacitás a számítási feladatok végrehajtásához, a Power BI-rendszergazdák az itt található a **felhasznált memória százalékos** Vizualizáció a a **adatkészletek** az alkalmazás lapján. **Az összes** memória (összesen) a betölti a memóriába, függetlenül attól, hogy aktívan kérdezhető le, vagy azok feldolgozott adatkészletek által felhasznált memóriát jelenti. **Aktív** memória a aktívan feldolgozott adatkészletek által felhasznált memóriát jelenti.
+### <a name="determining-whether-there-is-enough-memory"></a>Annak megállapítása, hogy van-e elegendő memória
 
-A megfelelő minőségben a Vizualizáció fog kinézni a, megjelenítése egy minden (összesen) közötti résnek és aktív memória:
+Annak megállapításához, hogy van-e elegendő memória a kapacitáshoz a munkaterhelések teljesítéséhez, a Power BI rendszergazdája a **felhasznált memória százalékos arányát** az alkalmazás adatkészletek lapján tekintheti meg. **Az összes** (Total) memória a memóriába betöltött adatkészletek által felhasznált memóriát jelenti, függetlenül attól, hogy a rendszer aktívan kérdezi le vagy dolgozza fel azokat. Az **aktív** memória az aktívan feldolgozott adatkészletek által felhasznált memóriát jelenti.
 
-![Egy megfelelő kapacitást jelennek meg minden (összesen) közötti eseményáramlási kimaradást és aktív memória](media/whitepaper-premium-deployment/memory-healthy-capacity.png)
+A vizualizáció a következőképpen fog kinézni, így az összes (összesen) és az aktív memória közötti hézag látható:
 
-Tapasztal memóriaterhelés minőségben ugyanabban a vizualizációban egyértelműen jelennek meg a aktív memória és a teljes memória beépül, ami azt jelenti, hogy nem lehet további adatkészletek betölti a memóriába abban az időpontban. Ebben az esetben a Power BI rendszergazdája kattintva **indítsa újra a kapacitás** (a **speciális beállítások** a kapacitás beállításai terület a felügyeleti portál). Újraindítás a kapacitás eredmények összes adatkészletek folyamatban van a memóriából a kiürített, és lehetővé teheti, hogy újra betölti a memóriába (lekérdezések vagy az adatok frissítése) igényeinek megfelelően.
+![Az egészséges kapacitás az összes (összesen) és az aktív memória közötti hézagot jeleníti meg](media/whitepaper-premium-deployment/memory-healthy-capacity.png)
 
-![** Aktív ** memória beépül a ** minden ** memória](media/whitepaper-premium-deployment/memory-unhealthy-capacity.png)
+A memória-nyomást észlelő kapacitás esetén ugyanaz a vizualizáció egyértelműen megjeleníti az aktív memóriát és a teljes memória-átszervezést, ami azt jelenti, hogy az adott időpontban nem lehet további adatkészleteket betölteni a memóriába. Ebben az esetben a Power BI rendszergazdája a kapacitás- **Újraindítás** lehetőségre is kattinthat (a felügyeleti portál kapacitás beállításai területének **speciális beállításaiban** ). Ha újraindítja a kapacitást, a rendszer a memóriából kiüríti az összes adatkészletet, és lehetővé teszi, hogy a szükséges módon töltse be a memóriába (lekérdezés vagy Adatfrissítés alapján).
 
-### <a name="determining-whether-there-is-enough-cpu"></a>Meghatározó e nincs elegendő CPU
+![\* * Az aktív * * memória a * * minden * * memóriával konvergál](media/whitepaper-premium-deployment/memory-unhealthy-capacity.png)
 
-Általában egy kapacitáshoz átlagos CPU-kihasználtsága 80 % alatt kell maradnia. Ez az érték meghaladja a kapacitás mérete hamarosan eléri a Processzor színtelítettség jelenti.
+### <a name="determining-whether-there-is-enough-cpu"></a>Annak megállapítása, hogy van-e elég CPU
 
-CPU színtelítettség hatásait ki, a műveletek, a kapacitás sok CPU-környezet kapcsolók végez, akkor próbálja meg minden művelet feldolgozása miatt kell tovább tart a vártnál. Nagy számú lekérdezést a lekérdezési Ez jelzi a prémium szintű kapacitást várakozási idők. A lekérdezési várakozási időt következménye a szokásosnál lassabban válaszképességét. A Power BI rendszergazdai amikor megtekinti a Processzor megtelt könnyen azonosítható a **óránkénti lekérdezés várakozási idő Disztribúciók** visual. Lekérdezés rendszeres csúcsok várakozási számát jelzi a lehetséges CPU színtelítettség idő.
+Általánosságban elmondható, hogy a kapacitás átlagos CPU-kihasználtsága 80% alatt marad. Ez az érték meghaladja azt, hogy a kapacitás közeledik a CPU-telítettséghez.
 
-![Lekérdezés rendszeres csúcsok várakozási számát jelzi a lehetséges CPU színtelítettség idő](media/whitepaper-premium-deployment/peak-query-wait-times.png)
+A CPU-telítettség hatásait a működésük hosszabb ideig tarthatja, mint amennyi a CPU-környezet számos olyan kapcsolójának kapacitása miatt, amely az összes művelet feldolgozását kísérli meg. A nagy mennyiségű egyidejű lekérdezéssel rendelkező prémium kapacitásban ezt a lekérdezési várakozási idő jelzi. A nagy lekérdezések várakozási idejének következményei a szokásosnál lassabban reagálnak. A Power BI rendszergazdája könnyedén azonosíthatja, hogy mikor telített a CPU az **óránkénti lekérdezés várakozási ideje eloszlások** vizualizációjának megtekintésével. A lekérdezési várakozási idő időszakos csúcsai a lehetséges CPU-telítettséget jelzik.
 
-Hasonló mintát néha is észlelhető a háttérbeli műveletek, ha azok hozzájárulnak CPU színtelítettség. A Power BI-rendszergazdák is keresni rendszeres ugrásszerű CPU színtelítettség (valószínűleg miatt más folyamatban lévő adatkészlet frissíti és/vagy interaktív lekérdezések) időben jelezheti egy adott adatkészlet frissítési időpont. Ebben a példányban hivatkozó a **rendszer** megtekintése az alkalmazásban esetleg nem feltétlenül mutatja, hogy van-e a CPU 100 %-os. A **rendszer** a nézet jeleníti meg az óradíjas átlagok, de a Processzor is legyen telített (nagy erőforrásigényű) művelet több percig ami megjelenik-e csúcsok, várakozási időt.
+![A lekérdezések várakozási idejének ismétlődő csúcsai CPU-túlterhelést jelezhetnek](media/whitepaper-premium-deployment/peak-query-wait-times.png)
 
-Nincsenek egyéb CPU színtelítettség hatásának további részleteiről. Fontos, hogy várjon lekérdezések száma, amíg lekérdezés várakozási idő mindig akkor történik meg bizonyos mértékig lekérdezésteljesítmény teljesítményromlást okozó nélkül. Bizonyos adatkészletek (a hosszabb átlagos lekérdezési idő, jelezve összetettségére vagy nagy méretére) jobban ki CPU színtelítettség hatásait a többinél. Könnyedén azonosíthatja ezeket az adatkészleteket, a Power BI rendszergazdája is keresse meg a szín összeállításban gyűjteménye a módosításokat a **óránkénti várakozási idő terjesztési** visual. Után gyorsabban egy rendkívüli sáv, akkor keresse meg az adatkészleteket, akinek lekérdezést vár ebben az időszakban és is tekintse meg a lekérdezés átlagos várakozási idő átlagos lekérdezési idő képest. Ha két metrikák ugyanolyan nagyságrendű, és a lekérdezési számítási feladatok az adatkészlet nem triviális, valószínű, hogy az adatkészlet nem elegendő Processzor hatással van.
+A háttérben futó műveletekben hasonló minta is észlelhető, ha azok a CPU-telítettséghez járulnak hozzá. Egy Power BI rendszergazda megkeresheti a frissítési időpontokban egy időszakos csúcsot egy adott adatkészlethez, amely a CPU-telítettséget jelzi (valószínűleg más, folyamatban lévő adatkészlet-frissítések és/vagy interaktív lekérdezések miatt). Ebben az esetben előfordulhat, hogy az alkalmazás **rendszernézetére** hivatkozva nem feltétlenül mutatja, hogy a processzor 100%-os. A **rendszernézet** óránkénti átlagokat jelenít meg, de a processzor több percig is telített lehet, és a várakozási idő során tüskék láthatók.
 
-Ennek a hatásnak nyilvánvaló, különösen akkor lehet, ha rövid adatlöketekkel nagyon gyakori lekérdezések (azaz a betanítási munkamenet), a több felhasználó által CPU színtelítettség során minden egyes burst eredményez az adatkészlet használja fel. Ebben az esetben az adatkészlethez jelentős várakozási időt is észlelt és az egyéb adatkészletekhez a kapacitást (zajos szomszédok hatás), mely negatív hatással.
+A CPU-telítettség hatásának megjelenítéséhez több finomításra van lehetőség. A várakozást okozó lekérdezések száma azonban fontos, a lekérdezési várakozási idő mindig bizonyos mértékig fog történni anélkül, hogy ez a teljesítmény felismerhető legyen. Egyes adatkészletek (a hosszabb átlagos lekérdezési ideje, ami az összetettséget vagy a méretet jelzi) hajlamosabbak a CPU-telítettség hatásaira, mint mások. Az adatkészletek egyszerű azonosításához a Power BI rendszergazdája megkeresheti a sávok színösszeállításának változásait az óránkénti **várakozási idő eloszlási** vizualizációjában. A kiugró sáv megfigyelése után megkereshetik azokat az adatkészleteket, amelyeken a lekérdezés megvárja az időt, és az átlagos lekérdezési várakozási időt is megtekintheti az átlagos lekérdezési időtartamhoz képest. Ha ez a két metrika azonos nagyságrendű, és az adatkészlet lekérdezési munkaterhelése nem triviális, valószínű, hogy az adatkészletet a nem elegendő processzor befolyásolja.
 
-Bizonyos esetekben a Power BI-rendszergazdák kérheti, hogy az adatkészlet tulajdonosa hozzon létre egy kisebb felejtő lekérdezési számítási feladatok létrehoz egy irányítópultot (melyik lekérdezések rendszeres időközönként minden olyan adatkészletben a gyorsítótárban lévő csempék frissítése) helyett egy jelentést. Ez megakadályozhatja ugrásszerűen az irányítópult betöltésekor. Ez a megoldás nem mindig lehetséges a megadott üzleti követelményeknek, ugyanakkor anélkül, hogy módosítja az adatkészletet CPU telítettséget elkerülése érdekében hatékony módja lehet.
+Ez a hatás különösen akkor lehet hasznos, ha egy adatkészletet több felhasználó (például egy betanítási munkamenetben) rövid, nagy gyakoriságú lekérdezései használják fel, ami a CPU-telítettséget eredményezi az egyes adattörések során. Ebben az esetben az adatkészlet jelentős lekérdezési várakozási idejét is tapasztalhatja, és hatással lehet a kapacitásban lévő többi adatkészletre (a zajos szomszéd hatás).
+
+Bizonyos esetekben Power BI rendszergazdák kérhetik, hogy az adatkészletek tulajdonosai a jelentés helyett hozzon létre egy kevésbé változékony lekérdezési munkaterhelést egy irányítópult létrehozásával (amely rendszeresen lekérdezi a gyorsítótárazott csempék adatkészlet-frissítését). Ez segít megakadályozni a tüskéket az irányítópult betöltésekor. Előfordulhat, hogy ez a megoldás nem mindig lehetséges az adott üzleti követelmények esetében, azonban a CPU-telítettség elkerülésének hatékony módja lehet az adatkészlet módosítása nélkül.
 
 ## <a name="conclusion"></a>Összegzés
 
-A Power BI Premium stabilabb teljesítményt, a nagyméretű kötetek támogatása és a egy egységes önkiszolgáló és az enterprise BI platform rugalmasságát biztosítja a szervezet minden tagja számára. A szint 300 műszaki tanulmány kifejezetten a Power BI-rendszergazdák, és a tartalom szerzők és közzétevők került. Segíthet eligazodni a Power BI Premium lehetséges, és azt ismertetik, hogyan megtervezésére, üzembe helyezése, figyelése és hibaelhárítása a méretezhető megoldások célja.
+A Power BI Premium konzisztens teljesítményt nyújt, támogatja a nagyméretű adatmennyiségeket, és egy egységesített önkiszolgáló és nagyvállalati BI-platform rugalmasságát biztosítja a szervezet minden tagja számára. Ezt a 300-es szintű technikai tanulmányt kifejezetten Power BI-rendszergazdák, valamint a tartalmi szerzők és kiadók írták. Ennek célja, hogy segítsen megérteni a Power BI Premium rejlő lehetőségeket, valamint azt, hogy miként lehet megtervezni, üzembe helyezni, figyelni és elhárítani a méretezhető megoldásokat.
 
-Telepíti és kezeli a Power BI Premium kapacitásaihoz, hogy a rendszergazdák és fejlesztők modell nagyon jó ismerete kell kapacitások funkciót, akkor is lehet felügyelt és figyelésének a menete és hogyan modellek is lehet optimalizálni, annak érdekében, hogy megfelelően válaszolnak teljesítménybeli problémák és a szűk keresztmetszeteket esetleg felmerülő.
+Power BI Premium kapacitások üzembe helyezéséhez és kezeléséhez a rendszergazdáknak és a modell-fejlesztőknek nagyon jól kell ismerniük, hogy a kapacitások hogyan működnek, hogyan kezelhetők és figyelhetők, valamint hogyan optimalizálható a modellek a megfelelő reagálás érdekében teljesítménnyel kapcsolatos problémák és szűk keresztmetszetek.
 
 ## <a name="end-notes"></a>Záró megjegyzések
 
-<a name="endnote-01"></a>\[1\] a műszaki tanulmány a Power BI Premiumot, amely csak a Power BI felhőalapú szolgáltatás által támogatott érintett, és így a Power BI jelentéskészítő kiszolgáló cím nem része az hatókör, kivéve a licenc telepítéséhez szükséges állapotba a Power BI jelentéskészítő kiszolgáló részét képezi néhány A Power BI Premium SKU-k.
+<a name="endnote-01"></a>\[1\] ez a technikai dokumentum olyan Power bi Premium vonatkozik, amelyet csak a Power bi Cloud Service támogat, és így Power bi jelentéskészítő kiszolgáló nincs a hatókörben, azzal a kivétellel, hogy az Power bi jelentéskészítő kiszolgáló telepítéséhez szükséges licenc tartalmaz néhányat Power BI Premium SKU-ket.
 
-<a name="endnote-02"></a>\[2\] power BI egy felhőalapú szolgáltatás, application felhasználók nevében-tartalmak beágyazásához használatakor a Platform--szolgáltatásként (PaaS). Ilyen típusú beágyazással a másik két termék, amelyek egyike a Power BI Premium érhető el.
+<a name="endnote-02"></a>\[2\] Power bi felhőalapú szolgáltatásként, ha a tartalom beágyazására használatos a felhasználók nevében, a szolgáltatásként nyújtott platform (Péter). Ezt a beágyazási típust különböző két termékkel lehet megvalósítani, amelyek közül az egyik Power BI Premium.
 
-<a name="endnote-03"></a>\[3\] leküldéses streamelési és a hibrid adatkészletek nem kerülnek be a prémium szintű kapacitások, ezért nem veszi figyelembe telepítése, kezelése és figyelése a prémium szintű kapacitások során.
+<a name="endnote-03"></a>\[3\] a leküldéses, a folyamatos átviteli és a hibrid adatkészletek nem a prémium szintű kapacitásban tárolódnak, ezért nem veszik figyelembe a prémium szintű kapacitások üzembe helyezése, kezelése és monitorozása során.
 
-<a name="endnote-04"></a>\[4\] Excel-munkafüzetek a Power BI-tartalom típusát, nem kerülnek be a prémium szintű kapacitások, és ezért nem üzembe helyezésekor, kezelése és figyelése a prémium szintű kapacitások veszi figyelembe.
+<a name="endnote-04"></a>\[4\] az Excel-munkafüzetek Power bi tartalomtípusa nem a prémium szintű kapacitásban van tárolva, ezért nem veszi figyelembe a prémium szintű kapacitások üzembe helyezése, kezelése vagy figyelése során.
 
-<a name="endnote-05"></a>\[5\] Vizualizációk figyelmen kívül hagyja a szeletelők kezelése konfigurálható. További információkért tekintse meg a [Vizualizációk interakciói a Power BI-jelentés](service-reports-visual-interactions.md) dokumentumot.
+<a name="endnote-05"></a>\[5\] vizualizáció konfigurálható a szeletelők interakcióinak figyelmen kívül hagyásához. További információkért tekintse meg a [vizualizációk interakcióit egy Power bi jelentési](service-reports-visual-interactions.md) dokumentumban.
 
-<a name="endnote-06"></a>\[6\] mérete közötti különbség a Power BI Desktop-fájl mérete az Feladatkezelő memória használata a fájl összehasonlításával lehet meghatározni.
+<a name="endnote-06"></a>\[6\] a méret különbsége a Power bi Desktop fájl méretének és a Feladatkezelő memóriájának a fájlhoz való összehasonlításával határozható meg.
 
-<a name="endnote-07"></a>\[7\] Microsoft-adatforrások támogatása az SQL Server, az Azure Data tégla, az Azure HDInsight Spark (bétaverzió), Azure SQL Database és Azure SQL Data Warehouse tartalmazza. További források kapcsolatos információkért tekintse meg a [Direct Query, a Power BI által támogatott adatforrások](desktop-directquery-data-sources.md) dokumentumot.
+<a name="endnote-07"></a>\[7\] a Microsoft-adatforrások támogatása többek között az SQL Server, az Azure-adattéglák, a Azure HDInsight Spark (bétaverzió), a Azure SQL Database és a Azure SQL Data Warehouse. További információk a további forrásokról: [közvetlen lekérdezés által támogatott adatforrások Power bi](desktop-directquery-data-sources.md) dokumentumban.
 
-<a name="endnote-08"></a>\[8\] a power BI Premium támogatja a legfeljebb egy 10 GB méretű Power BI Desktop (.pbix) fájlt feltölteni. Feltöltése után egy adatkészlet növelhető legfeljebb 12 GB méretű frissítés miatt. SKU maximális feltöltési méretének eltérő. További információkért tekintse meg a [nagy adatkészletek támogatása a Power BI Premium](service-premium-large-datasets.md) dokumentumot.
+<a name="endnote-08"></a>\[a\] 8 Power bi Premium legfeljebb 10 GB méretű Power bi Desktop-(. pbix-) fájlok feltöltését támogatja. A feltöltést követően egy adatkészlet akár 12 GB-ot is nőhet a frissítés eredményeképpen. A feltöltés maximális mérete az SKU-tól függ. További információkért tekintse meg a [nagyméretű adatkészletek Power bi Premium támogatását](service-premium-large-datasets.md) ismertető dokumentumot.
 
-<a name="endnote-09"></a>\[9\] Termékváltozatait kisebb, mint négy magot nem futtathatók a dedikált infrastruktúra. Ez magában foglalja a EM1, EM2, A1 és a2-es termékváltozatokat.
+<a name="endnote-09"></a>\[a legfeljebb négy virtuális maggal rendelkezőSKU-ranemfutdedikáltinfrastruktúra.\] Ez magában foglalja a EM1, a EM2, az a1 és az a2 SKU-t.
 
-<a name="endnote-10"></a>\[10\] bár ritka, modellek memóriából szolgáltatási műveletek miatt lehet.
+<a name="endnote-10"></a>\[10\] míg ritka, a modellek a szolgáltatás műveletei miatt el lesznek távolítva a memóriából.
 
-<a name="endnote-11"></a>\[11\] ezek időzítésüket, bármikor módosulhatnak.
+<a name="endnote-11"></a>\[11\] ezek az időzítések bármikor módosulhatnak.
 
-<a name="endnote-12"></a>\[12\] ezt nevezik multi-földrajzi, jelenleg előzetes verzióban érhető el. A közösségértékek multi-földrajzi központi telepítés általában van a vállalati vagy kormányzati megfelelőségi, hanem teljesítmény és méretezhetőség. Jelentés és irányítópult betöltésekor továbbra is magában foglalja a kérelmeket a metaadatokat az otthoni régiója. További információkért tekintse meg a [Multi-földrajzi támogatása a Power BI Premium (előzetes verzió)](service-admin-premium-multi-geo.md) dokumentumot.
+<a name="endnote-12"></a>\[12\] ez az úgynevezett több földrajzi terület, amely jelenleg előzetes verzióban érhető el. A többrégiós telepítésre való ésszerűség a teljesítmény és a méretezés helyett általában a vállalati és a kormányzati megfelelőség szempontjából szükséges. A jelentés és az irányítópult betöltése továbbra is magában foglalja a metaadatokat a hazai régióban. További információkért tekintse meg a [Power bi Premium (előzetes verzió) dokumentációjának multi-geo támogatása](service-admin-premium-multi-geo.md) című dokumentumot.
 
-<a name="endnote-13"></a>\[13\] lehetséges, hogy felhasználók a Power BI szolgáltatásban a feladatok terhelve, túl összetett lekérdezések írásának módját, stb. a körkörös hivatkozások létrehozása teljesítmény problémákat okozhat.
+<a name="endnote-13"></a>\[13\] lehetséges, hogy a felhasználók teljesítménybeli problémákat okozhatnak, ha túlterhelik a Power bi szolgáltatást a feladatokkal, a túlságosan összetett lekérdezéseket, a körkörös hivatkozások létrehozását stb.
 
-<a name="endnote-14"></a>\[14\] a teljes szervezet munkaterületeinek hozzárendeléséhez a beállítást nem ajánlott, és a egy további, jobban célzott módszer használata ajánlott. Általában a nem éles tartalom személyes munkaterületek használata ajánlott.
+<a name="endnote-14"></a>\[14\] a teljes szervezet munkaterületek hozzárendelésének lehetősége nem ajánlott, és célzottabb megközelítés javasolt. Általában nem ajánlott a személyes munkaterületeket használni éles tartalomhoz.
 
-<a name="endnote-15"></a>\[15\] lehetséges termékváltozatok figyelheti az alkalmazást vagy az Azure Portalon, de nem található a Power BI felügyeleti Portáljához. Termékváltozatok figyeléséhez, a jelentés meghiúsul, ha az alkalmazás még nem lett hozzáadva az erőforrás az Olvasó szerepkörhöz. További információkért tekintse meg a [figyelő Power BI Premium és a Power BI Embedded-kapacitások](service-admin-premium-monitor-capacity.md) dokumentumot.
+<a name="endnote-15"></a>\[15\] az alkalmazásban vagy a Azure Portalban is figyelheti az SKU-t, de nem a Power bi felügyeleti portálon. Egy SKU figyeléséhez a jelentés frissítése sikertelen lesz, ha az alkalmazás nem lett hozzáadva az erőforrás olvasó szerepköréhez. További információkért tekintse meg a [figyelő Power bi Premium és Power bi Embedded](service-admin-premium-monitor-capacity.md) a kapacitások című dokumentumot.
 
-<a name="endnote-16"></a>\[16\] frissítések várhat, ha nem, akkor elegendő CPU és memória elindításához.
+<a name="endnote-16"></a>\[a\] 16 frissítés megvárhatja, ha nincs elegendő CPU vagy memória a kezdéshez.
 
-<a name="endnote-17"></a>\[17\] az adatkészlet méretét, a memória a lemezen, akár 20 %-kal nagyobb lehet.
+<a name="endnote-17"></a>\[17\] az adathalmaz mérete a memóriában nagyobb lehet, mint a lemez mérete akár 20%-kal.
 
-<a name="endnote-18"></a>\[18\] átlagos memóriahasználat (GB) és a legmagasabb memóriát (GB)
+<a name="endnote-18"></a>\[18\] átlagos memóriahasználat (GB) és a maximális memóriahasználat (GB)
 
-<a name="endnote-19"></a>\[19\] adatkészlet adatbázislap
+<a name="endnote-19"></a>\[19\] adatkészlet kizárása
 
-<a name="endnote-20"></a>\[20\] adatkészlet lekérdezések, az adatkészlet átlagos lekérdezési idő (ms), a adatkészlet várjon száma és az adatkészlet átlagos várakozási idő (ms)
+<a name="endnote-20"></a>\[20\] adatkészlet-lekérdezés, adatkészlet átlagos lekérdezési időtartama (MS), adatkészlet várakozási száma és adatkészletek átlagos várakozási ideje (MS)
 
-<a name="endnote-21"></a>\[21\] magas CPU-kihasználtság száma és a CPU-idő a legnagyobb kihasználtságú (elmúlt hét napban)
+<a name="endnote-21"></a>\[21\] CPU – magas kihasználtsági szám és a legmagasabb kihasználtságú CPU-idő (az elmúlt hét napban)
 
-<a name="endnote-22"></a>\[22-es\] DQ/LC magas kihasználtság száma és DQ/LC ideje legnagyobb kihasználtságú (elmúlt hét napban)
+<a name="endnote-22"></a>\[22\] DQ/LC – magas kihasználtsági szám és DQ/LC a legmagasabb kihasználtsági idő (az elmúlt hét napban)
