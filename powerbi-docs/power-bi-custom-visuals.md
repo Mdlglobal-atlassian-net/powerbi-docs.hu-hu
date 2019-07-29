@@ -1,5 +1,5 @@
 ---
-title: Egyéni vizualizációk a Power BI-ban
+title: Vizualizációk a Power BI-ban
 description: Egyéni vizualizációk a Power BI-ban
 author: sranins
 ms.author: rasala
@@ -10,14 +10,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 23436fb8e21e1be3a863986a773d7d969da65122
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 68048968bf6a3f85f2bc24e55fd1288073be1d56
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498040"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415404"
 ---
-# <a name="custom-visuals-in-power-bi"></a>Egyéni vizualizációk a Power BI-ban
+# <a name="visuals-in-power-bi"></a>Vizualizációk a Power BI-ban
 
 Power BI-jelentések létrehozása vagy szerkesztése során számos különböző vizualizációtípust használhat. Ezeknek a vizualizációknak az ikonjai a **Vizualizációk** panelen jelennek meg. Ezek a vizualizációk azonnal elérhetők a [Power BI Desktop](https://powerbi.microsoft.com/desktop/) letöltésekor vagy a [Power BI szolgáltatás](https://app.powerbi.com) megnyitásakor.
 

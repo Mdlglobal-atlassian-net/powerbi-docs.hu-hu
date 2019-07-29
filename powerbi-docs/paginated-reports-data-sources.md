@@ -1,20 +1,20 @@
 ---
 title: A Power BI többoldalas jelentéseihez használható támogatott adatforrások
 description: Ebből a cikkből megtudhatja, hogy milyen adatforrásokat támogatnak a Power BI szolgáltatás többoldalas jelentései, és megismerheti az Azure SQL Database-adatforrások csatlakoztatásának módját.
-author: maggiesMSFT
-ms.author: maggies
+author: onegoodsausage
+ms.author: andremi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/19/2019
-ms.openlocfilehash: 91ddcfca56ac7c08736c35c7232df04082e4e921
-ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
+ms.openlocfilehash: f055cd27f25af399b63336e66aaad526ed740de2
+ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352976"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68462317"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>A Power BI többoldalas jelentéseihez használható támogatott adatforrások
 

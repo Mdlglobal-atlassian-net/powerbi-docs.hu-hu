@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c074d6aa4fc7bdc530aa52f125f7f3d898b402c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f18ed2b0e370ad4617b7eccae4fbf043233fe4c0
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514524"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590531"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Elemleírások létrehozása jelentésoldalak alapján a Power BI Desktopban
 A **Power BI Desktopban** létrehozott jelentésoldalak alapján sokatmondóan látványos **jelentés-elemleírásokat** készíthet, amelyek akkor jelennek meg, ha az egérmutató a vizualizáció felett van. Elemleírásként szolgáló jelentésoldal létrehozásakor az egyéni elemleírásokban vizualizációk, képek és a jelentésoldalon létrejött bármely más elemek gyűjteményei is szerepelhetnek. 
@@ -113,7 +113,6 @@ Ha egy jelentés vizualizációja keresztkiemeléssel készült, akkor a jelent�
 Az **elemleírásokra** vonatkozik néhány korlátozás és egyéb szempont.
 
 * A **Power BI Desktop** 2018. decemberi kiadásától kezdve a gomb vizualizációk az elemleírásokat is támogatják.
-* A jelentésekhez készült elemleírások nem támogatottak, ha mobilalkalmazásokban tekinti meg a jelentéseket. 
 * A jelentésekhez készült elemleírások egyéni vizualizációkhoz való használata nem támogatott. 
 * A fürtök mezőként történő megjelenítése a jelentésekhez készült elemleírásokban jelenleg nem támogatott. 
 * Ha az elemleírásban megjeleníteni kívánt mező egy kategóriát helyettesít, akkor a mezőt tartalmazó vizualizációknál csak akkor jelenik meg az adott elemleírás, ha a kiválasztott mezők összegzése megegyezik. 

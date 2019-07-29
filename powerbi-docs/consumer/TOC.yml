@@ -8,6 +8,8 @@
           href: end-user-consumer.md
         - name: Alapfogalmak és szakkifejezések Power BI-felhasználók számára
           href: end-user-basic-concepts.md
+        - name: Navigálás az „új megjelenésen”
+          href: ../service-new-look.md
     - name: Rövid útmutatók
       items:
         - name: Navigáció a Power BI szolgáltatásban
