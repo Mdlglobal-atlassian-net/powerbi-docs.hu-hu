@@ -165,6 +165,8 @@
               href: desktop-connect-azure-consumption-insights.md
             - name: Az SAP HANA használata a Power BI Desktopban
               href: desktop-sap-hana.md
+            - name: Az SAP HANA titkosításának engedélyezése
+              href: desktop-sap-hana-encryption.md
             - name: Az Analysis Services táblázatos adatai a Power BI Desktopban
               href: desktop-analysis-services-tabular-data.md
             - name: A DirectQuery használata a Power BI Desktopban
