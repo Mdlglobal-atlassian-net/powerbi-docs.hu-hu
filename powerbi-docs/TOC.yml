@@ -947,6 +947,8 @@
           href: report-builder-expressions.md
         - name: Példák kifejezésekre
           href: report-builder-expression-examples.md
+        - name: Jelentés oldalakra tördelése
+          href: paginated-reports-pagination.md
         - name: Jelentések megtekintése előnézetben
           href: report-builder-previewing-reports.md
         - name: Gyakori kérdések a többoldalas jelentésekről
