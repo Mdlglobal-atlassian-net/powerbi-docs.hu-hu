@@ -11,20 +11,20 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 449d47606829c8555e0b64e7f07d1b414b99fea7
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: cb0870bf6f1cdca3cb1f95dc516f5f9124422327
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375215"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523360"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>A Power BI-hoz használt Cortana hibaelhárítása
 Ez a cikk egy sorozat része. 
 
 > [!IMPORTANT]
-> Cortana-integráció a Power bi-ban elavulttá válik. Június 11-től kezdődően Cortana nem fog működni az irányítópultok és jelentések sem.
+> A Power BI Cortana-integrációja elavult. Június 11-től a Cortana nem fog működni az irányítópultokban és jelentésekben.
 
-Ha problémába ütközik Cortana a Power BI integrálható, jó helyen jár. Az alábbi lépésekkel diagnosztizálhatja és megoldhatja a problémát.
+Ha problémákba ütközik Cortana a Power BI szolgáltatással való integrálása során, akkor jó helyen jár. Az alábbi lépésekkel diagnosztizálhatja és megoldhatja a problémát.
 
 ## <a name="why-doesnt-cortana-find-answers-from-my-power-bi-reports-or-dashboards"></a>Miért nem talál Cortana válaszokat a Power BI-jelentésekben és irányítópultokon?
 1. Van Power BI-fiókja?  Ha még nincs, [regisztráljon ingyenes próbára](https://powerbi.microsoft.com/get-started/).
