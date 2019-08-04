@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/16/2019
-ms.openlocfilehash: ea1ae18f877793da9ac47023c236ba8a24f78ccf
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 6a2fce59171ec36241cd5de03d41f6a27f54c664
+ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271187"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68380212"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Útmutató Power BI-vizualizációkhoz
 Mielőtt [közzétenné](https://docs.microsoft.com/power-bi/developer/office-store) a vizualizációt az AppSource-on, hogy azt mások is felfedezhessék és használhassák, ügyeljen rá, hogy az útmutatók használatával magas színvonalú felhasználói élményt alakítson ki. 
@@ -26,7 +26,7 @@ A Power BI minden vizualizációnál engedélyezni kell a helyi menüt, hogy egy
 
 ## <a name="logo-guidelines"></a>Embléma-irányelvek
 
-Ez a szakasz az emblémák és logotipiák vizualizációkhoz való hozzáadásának részleteit ismerteti.
+Ez a szakasz az emblémák és logotipiák vizualizációkhoz való hozzáadásának részleteit ismerteti. Az emblémák nem kötelezőek. Ha szerepelnek, akkor követniük kell ezeket az irányelveket. 
 
 > [!IMPORTANT]
 > Az emblémák *csak Szerkesztési módban* használhatók. Az emblémák *nem* jelennek meg Megtekintési módban.

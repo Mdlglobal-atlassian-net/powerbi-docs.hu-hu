@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8b68f6ee5e475c1b53f914c84372a0875fe87b5d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: cccbfb6bbe43e70ebcea94322923f7600d58aca8
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839117"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590511"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Kapcsolódás a Power BI szolgáltatásban lévő adatkészletekhez a Power BI Desktopból
 Létrehozhat élő kapcsolatot a Power BI szolgáltatás egy megosztott adatkészletével, és számos különböző jelentést hozhat létre ugyanabból az adatkészletből. Ez annyit jelent, hogy létrehozhatja a tökéletes adatmodellt a Power BI Desktopban, majd közzéteheti a Power BI szolgáltatásban. Ezután Ön és mások különböző jelentéseket (külön .pbix-fájlokat) készíthetnek ugyanabból a közös adatmodellből, és ezeket különböző munkaterületekre menthetik. Ennek a szolgáltatásnak **Élő kapcsolat Power BI szolgáltatással** a neve.
@@ -28,18 +28,18 @@ A szolgáltatásnak számos előnye van, beleértve a jelen cikkben később tá
 A Power BI népszerűségével kapcsolatban az egyik kihívást a jelentések, irányítópultok és az alapul szolgáló adatmodellek elterjedése jelenti. Ennek a következő az oka: egyszerű lenyűgöző jelentéseket létrehozni a **Power BI Desktopban**, majd megosztani ([közzétenni](desktop-upload-desktop-files.md)) ezeket a jelentéseket a **Power BI szolgáltatásban**, majd nagyszerű irányítópultokat létrehozni az adatkészletekből. Minthogy oly sokan tettek így, az azonos (vagy majdnem azonos) adatkészletek használata, annak észben tartása, hogy melyik jelentés melyik adatkészleten alapult – és melyik adatkészlet mennyire naprakész –, gyakran már komoly kihívást jelent. Az **Élő kapcsolat Power BI-szolgáltatással** a válasz erre a kihívásra, hiszen egyszerűbbé és konzisztenssé teszi a közös adatkészleten alapuló jelentések és irányítópultok létrehozását, megosztását és bővítését.
 
 ### <a name="create-a-dataset-everyone-can-use-then-share-it"></a>Mindenki által használható adatkészletek létrehozása, majd megosztása
-Tegyük fel, hogy Anna (egy üzleti elemző) a csapata tagja, és nagyon ért a jó adatmodellek (más néven adatkészletek) létrehozásához. Anna a szakértelmére támaszkodva létrehoz egy adatkészletet és egy jelentést, majd megosztja a jelentést a **Power BI szolgáltatásban**.
+Tegyük fel, hogy Anna (egy üzleti elemző) a csapata tagja, és jól ért a jó adatmodellek (más néven adatkészletek) létrehozásához. Anna a szakértelmére támaszkodva létrehoz egy adatkészletet és egy jelentést, majd megosztja a jelentést a **Power BI szolgáltatásban**.
 
 ![Közzététel a Power BI szolgáltatásban](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
-Mindenki rajong a jelentésért és az adatkészletért, és itt kezdődik a gond – a csapat összes tagja megpróbálja létrehozni Anna adatkészletéből a *saját verzióját*, majd megosztják a jelentéseket a csapattal. Hirtelen különböző adatkészletekre támaszkodó jelentések egész hada jelenik meg a csapat munkaterületén a **Power BI szolgáltatásban**. Melyik a legújabb? Egyeznek vajon az adatkészletek, vagy csak majdnem? Milyen különbségeik vannak? Az **Élő kapcsolat Power BI-szolgáltatással** révén a helyzet sokkal egyszerűbbé válik. A következő szakaszban meglátjuk, hogyan tudják felhasználni mások Anna közzétett adathalmazát a saját jelentéseikhez a saját munkaterületeiken, és hogyan használhatja mindenki ugyanazt a stabil, ellenőrzött és megosztott adathalmazt a saját egyedi jelentéseihez.
+Mindenki rajong Anna jelentéséért és az adatkészletéért, és itt kezdődik a gond – a csapat összes tagja megpróbálja létrehozni Anna adatkészletéből a *saját verzióját*, majd megosztják a jelentéseket a csapattal. Hirtelen különböző adatkészletekre támaszkodó jelentések egész hada jelenik meg a csapat munkaterületén a **Power BI szolgáltatásban**. Melyik a legújabb? Egyeznek vajon az adatkészletek, vagy csak majdnem? Milyen különbségeik vannak? Az **Élő kapcsolat Power BI-szolgáltatással** révén a helyzet sokkal egyszerűbbé válik. A következő szakaszban meglátjuk, hogyan tudják felhasználni mások Anna közzétett adathalmazát a saját jelentéseikhez a saját munkaterületeiken, és hogyan használhatja mindenki ugyanazt a stabil, ellenőrzött és megosztott adathalmazt a saját egyedi jelentéseihez.
 
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Csatlakozás a Power BI szolgáltatás adatkészletéhez élő kapcsolattal
-Amint Anna létrehozza a jelentést (és az adatkészletet, amelyen az alapul), és közzéteszi a **Power BI szolgáltatásban**, megjelenik a csapata munkaterületén a Power BI szolgáltatásban. Ha egy *új felületű munkaterületen* menti, akkor beállíthatja az Összeállítási engedélyt, hogy a munkaterületen belül és azon kívül mindenki számára elérhetővé, láthatóvá és használhatóvá tegye.
+Amint Anna létrehozza a jelentést (és az adatkészletet, amelyen az alapul), és közzéteszi a **Power BI szolgáltatásban**, megjelenik a csapata munkaterületén a Power BI szolgáltatásban. Ha Anna egy *új felületű munkaterületen* menti, akkor beállíthatja az Összeállítási engedélyt, hogy a munkaterületen belül és azon kívül mindenki számára elérhetővé, láthatóvá és használhatóvá tegye.
 
 További információ az új felületű munkaterületekről: [Alkalmazás-munkaterületek](service-new-workspaces.md).
 
-A munkaterületen belülii és azon kívüli más tagok ekkor létrehozhatnak egy élő kapcsolatot Anna megosztott adatmodelljével (az **Élő kapcsolat Power BI szolgáltatással** szolgáltatás révén), és létrehozhatják az *ő eredeti adathalmaza* alapján a saját egyedi jelentéseiket a *saját új felületű munkaterületükön*.
+A munkaterületen belüli és azon kívüli más tagok ekkor létrehozhatnak egy élő kapcsolatot Anna megosztott adatmodelljével (az **Élő kapcsolat Power BI szolgáltatással** szolgáltatás révén), és létrehozhatják az *ő eredeti adathalmaza* alapján a saját egyedi jelentéseiket a *saját új felületű munkaterületükön*.
 
 A következő ábrán láthatjuk, hogy Anna létrehoz egy **Power BI Desktop**-jelentést, majd közzéteszi (az adatmodellel együtt) a **Power BI szolgáltatásban**. Ekkor mások is csatlakozhatnak Anna adatmodelljéhez az **Élő kapcsolat Power BI szolgáltatással** használatával, és létrehozhatják a saját egyedi jelentéseiket a saját munkaterületükön Anna adathalmaza alapján.
 
@@ -58,11 +58,11 @@ Az első lépés, ha egy jelentés életciklusát az **Élő kapcsolat Power BI-
 
 ![Jelentés közzététele](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
-Ha nincs bejelentkezve a Power BI szolgáltatásfiókjába, a rendszer felkéri erre.
+Ha Anna nincs bejelentkezve a Power BI szolgáltatás fiókjába, az előugró ablak erre kéri majd.
 
 ![Bejelentkezés a Power BI Desktopba](media/desktop-report-lifecycle-datasets/report-lifecycle_04.png)
 
-Innen kiválaszthatja a cél munkaterületet, ahol közzéteszi a jelentést és az adatkészletet. Bizonyára emlékszik, hogy ha egy új felületű munkaterületre menti azt, akkor az Összeállítási engedéllyel rendelkezők mind hozzáférhetnek ehhez az adathalmazhoz. Az Összeállítási engedély be lesz állítva a Power BI szolgáltatásban a közzététel után. Ha klasszikus munkaterületre ment, csak olyan csapattagok férhetnek hozzá a jelentés adathalmazához az **Élő kapcsolat Power BI-szolgáltatással** segítségével, akik rendelkeznek hozzáféréssel a munkaterülethez, ahol a jelentés közzé van téve.
+Innen Anna kiválaszthatja a cél munkaterületet, ahol közzéteszi a jelentést és az adatkészletet. Bizonyára emlékszik, hogy ha Anna egy új felületű munkaterületre menti azt, akkor az Összeállítási engedéllyel rendelkezők mind hozzáférhetnek ehhez az adathalmazhoz. Az Összeállítási engedély be lesz állítva a Power BI szolgáltatásban a közzététel után. Ha klasszikus munkaterületre menti a munkát, csak olyan csapattagok férhetnek hozzá a jelentés adathalmazához az **Élő kapcsolat Power BI-szolgáltatással** segítségével, akik rendelkeznek hozzáféréssel a munkaterülethez, ahol a jelentés közzé van téve.
 
 ![Közzététel a Power BI szolgáltatásban](media/desktop-report-lifecycle-datasets/report-lifecycle_05.png)
 
@@ -100,8 +100,8 @@ Az **Élő kapcsolat Power BI-szolgáltatással** használatára vonatkozik néh
 
 * Egy közzétett adathalmazhoz csak azok a felhasználók csatlakozhatnak az **Élő kapcsolat Power BI szolgáltatással** segítségével, akik Összeállítási engedéllyel rendelkeznek az adathalmazon. 
 * Az ingyenes felhasználók csak a saját és a Premium-alapú munkaterületeken lévő adathalmazokat látják.
-* Mivel ez egy élő kapcsolat, a bal oldali navigációs sáv és a modellezés le van tiltva, hasonlóan ahhoz, amikor az **SQL Server Analysis Services** szolgáltatáshoz kapcsolódik.
-* Mivel ez egy élő kapcsolat, az RLS (sor- és szerepkörszintű biztonság), a OneDrive Vállalati verzió és más hasonló kapcsolati viselkedések kényszerítettek, épp úgy, mint amikor az **SQL Server Analysis Services** szolgáltatáshoz csatlakozik.
+* Mivel ez egy élő kapcsolat, a bal oldali navigációs sáv és a modellezés le van tiltva, hasonlóan ahhoz, amikor az **SQL Server Analysis Services** szolgáltatáshoz kapcsolódik, és minden jelentésben csak egy adatkészlethez csatlakozhat.
+* Mivel ez egy élő kapcsolat, az RLS (sor- és szerepkörszintű biztonság) és más hasonló kapcsolati viselkedések kényszerítettek, épp úgy, mint amikor az **SQL Server Analysis Services** szolgáltatáshoz csatlakozik.
 * Ha tulajdonos módosítja az eredeti .pbix fájlt, azzal felülírja a **Power BI szolgáltatásban** megosztott adatkészletet és jelentést. Az erre az adathalmazra alapuló jelentések nem lesznek felülírva, de a jelentés tükrözni fogja az adathalmaz módosításait.
 * Munkaterület tagjai az eredetileg megosztott jelentést nem cserélhetik ki. Ha ezzel próbálkozik, a rendszer felszólítja a fájl átnevezésére és közzétételére.
 * Ha törli a **Power BI szolgáltatásban** megosztott adathalmazt, akkor az adathalmazra alapuló más jelentések nem működnek jól, vagy nem tudják megjeleníteni a vizualizációkat.

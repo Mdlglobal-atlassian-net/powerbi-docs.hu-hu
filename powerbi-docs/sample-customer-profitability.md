@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 333403ca74c5c5a13c94cbd41100915c7260e304
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: ddda7d6aaacbcde2d71371b316d14a9cd411bd43
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67792011"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523426"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Ügyfél-jövedelmezőségi minta a Power BI-hoz: Bemutató megtekintése
 
-Az Ügyfél-jövedelmezőségi minta nevű tartalomcsomag egy marketinganyagokat készítő céghez tartozó irányítópultot, jelentést és adatkészletet tartalmaz. Az irányítópult létrehozásával a pénzügyi vezető figyelni tudja az 5 üzleti egység kezelőjéhez (vezetőjéhez), a termékekhez, az ügyfelekhez és a bruttó árréshez tartozó fontosabb metrikákat. A pénzügyi vezető egyetlen pillantással láthatja, hogy mely tényezők vannak hatással a jövedelmezőségre.
+Az Ügyfél-jövedelmezőségi minta nevű tartalomcsomag egy marketinganyagokat készítő céghez tartozó irányítópultot, jelentést és adatkészletet tartalmaz. Az irányítópult létrehozásával a pénzügyi vezető figyelni tudja az 5 üzleti egység kezelőjéhez (vezetőjéhez), a termékekhez, az ügyfelekhez és a bruttó árréshez tartozó fontosabb metrikákat. Egyetlen pillantással láthatja, hogy mely tényezők vannak hatással a jövedelmezőségre.
 
 ![Az Ügyfél-jövedelmezőségi mintához tartozó irányítópult](media/sample-customer-profitability/power-bi-dash.png)
 
-Ez a minta abba a sorozatba tartozik, amely a Power BI üzleti jellegű adatokkal, jelentésekkel, és irányítópultokkal történő használatát mutatja be. Az [obviEnce](http://www.obvience.com/)-től származó valós adatokkal lett létrehozva, melyeket anonimizáltunk. Az adatok többféle formátumban: tartalomcsomagként, .pbix kiterjesztésű Power BI Desktop-fájlként és Excel-munkafüzetként is elérhetők. [Power BI-minták](sample-datasets.md) megtekintése. 
+Ez a minta abba a sorozatba tartozik, amely a Power BI üzleti jellegű adatokkal, jelentésekkel, és irányítópultokkal történő használatát mutatja be. Az [obviEnce](http://www.obvience.com/) által lett létrehozva valós adatokkal, melyeket anonimizáltunk. Az adatok többféle formátumban: tartalomcsomagként, .pbix kiterjesztésű Power BI Desktop-fájlként és Excel-munkafüzetként is elérhetők. [Power BI-minták](sample-datasets.md) megtekintése. 
 
 Ez az oktatóanyag a Power BI szolgáltatásban mutatja be az Ügyfél-jövedelmezőségi minta tartalomcsomagot. Mivel azonban a jelentéssel való munka hasonló a Power BI Desktopban és a szolgáltatásban, a bemutatót akkor is követni tudja, ha a .pbix-mintafájlt a Power BI Desktopban használja. 
 
@@ -89,7 +89,7 @@ Az vezetőre vonatkozó irányítópult-csempék elemzésével a következő meg
 
 - Carlos kivételével minden vezető meghaladta az értékesítési célkitűzést. Ezzel együtt azonban Carlos tényleges értékesítési adatai a legmagasabbak.
 - Annelie százalékos bruttó árrése a legalacsonyabb, de folyamatos növekedés tapasztalható március óta.
-- Valery százalékos bruttó árrése jelentősen csökken.
+- Valery százalékos bruttó árrése azonban jelentősen csökken.
 - Andrew pedig ingadozó értékeket produkált az évben.
 
 ## <a name="explore-the-dashboards-underlying-data"></a>Az irányítópult alapjául szolgáló adatok megismerése
@@ -139,7 +139,7 @@ Nézzük meg két csapattag teljesítményét részletesen, és lássuk, mely ad
 1. A bal oldali **Vezetők** szeletelőben Andrew nevének kiválasztásával szűrheti a jelentésoldalt, így csak Andrew adatai jelennek meg:
 
    * A KPI gyors áttekintéséhez nézze meg Andrew **Bevételi állapot (Év)** mutatóját; ez zöld, ami azt jelenti, hogy jó a teljesítménye.
-   * A **Százalékos, költségvetéshez viszonyított bevételvariancia hónap és vezető szerint** diagram azt mutatja, hogy a februári csökkenést leszámítva Andrew jól teljesít. Domináns területe a keleti régió, 49 ügyfelet kezel, és a hét termékből öttel foglalkozik. A százalékos bruttó árrése nem a legmagasabb, de nem is a legkisebb.
+   * A **Százalékos, költségvetéshez viszonyított bevételvariancia hónap és vezető szerint** diagram azt mutatja, hogy a februári csökkenést leszámítva Andrew jól teljesít. Andrew legdominánsabb területe a keleti régió, amely 49 ügyfelet és a hét termékből ötöt foglal magában. Andrew százalékos bruttó árrése nem a legmagasabb, de nem is a legkisebb.
    * Az **Éves bevétel és a költségvetéshez viszonyított bevételvariancia hónap szerint** diagram állandó, egyenletes profiteloszlást mutat. Ha azonban szűrést végez a **Középső** négyzetet kiválasztva a régiótérképen, akkor látható, hogy Andrewnak csak márciusban és csak Indianában van bevétele. Vajon szándékos ez a trend, vagy alaposabb vizsgálatot igényel?
 
 2. Most térjünk át Valeryre. A **Vezetők** szeletelőben Valery nevének kiválasztásával szűrheti a jelentésoldalt, így csak Valery adatai jelennek meg. 
@@ -147,10 +147,10 @@ Nézzük meg két csapattag teljesítményét részletesen, és lássuk, mely ad
    ![Valery adatai](media/sample-customer-profitability/customer3.png)
 
    * Vegye észre, hogy a **Teljes éves bevétel állapota** nevű KPI piros színű. Ez az elem mindenképpen további vizsgálatot igényel.
-   * A bevételvariancia is aggasztó képet fest – Valery nem teljesíti a bevételi árrés követelményeit.
+   * Valery bevételvarianciája is aggasztó képet fest – Valery nem teljesíti a bevételi árrés követelményeit.
    * Valery csak 9 ügyféllel rendelkezik, mindössze 2 terméket kezel, és szinte kizárólag északi régióban foglalkozik ügyfelekkel. Ez a specializáció magyarázhatja a metrikákban tapasztalható túlzott ingadozást.
    * Az **Észak** négyszög kiválasztásával a fatérképen látható, hogy Valery bruttó árrése az északi régióban összhangban van az általános árrésre vonatkozó teljesítménnyel.
-   * A többi **Bevétel régiónként** négyszöget kiválasztva érdekes jelenséget láthatunk: a százalékos bruttó árrés értéke 23% és 79% között mozog. Bevételi mutatói az északi régiót kivéve minden régióban rendkívül szezonálisak.
+   * A többi **Bevétel régiónként** négyszöget kiválasztva érdekes jelenséget láthatunk: a százalékos bruttó árrés értéke 23% és 79% között mozog. Valery bevételi mutatói az északi régiót kivéve minden régióban rendkívül szezonálisak.
 
 3. A feltárás folytatásával kideríthető, hogy Valery régiója miért is nem teljesít jól. Nézze meg a régiókat, a többi üzleti egységet, valamint a jelentés következő lapját: **Iparági árrés elemzése**.
 
@@ -166,9 +166,9 @@ Ez a jelentéslap az adatok egy másik szeletét mutatja meg. A teljes iparág b
 3. Amikor kijelöl egy vezetőt a diagramon, figyelje meg a következő részleteket:
    * Andrew teljesítménye több különböző iparági szegmensben érzékelhető a jelentősen eltérő százalékos bruttó árrésnek (elsősorban a pozitív oldalon) és a százalékos varianciának köszönhetően.
    * Annelie diagramja hasonló, azzal a különbséggel, hogy ő csak pár iparági szegmensre koncentrál (a szövetségi szegmensre és a Gladius nevű termékre fókuszálva).
-   * Carlos egyértelműen a szolgáltatási szegmensre koncentrál, és szép profitot termel. Nagy mértékben növelte a százalékos varianciát a high-tech szektorban, és egy számára új szegmensben (ipar) rendkívül jó teljesítményt ért el a költségvetéshez viszonyítva.
+   * Carlos egyértelműen a szolgáltatási szegmensre koncentrál, és szép profitot termel. Carlos nagy mértékben növelte a százalékos varianciát is a high-tech szektorban, és egy új szegmensben (ipar) rendkívül jó teljesítményt ért el a költségvetéshez viszonyítva.
    * Tina több szegmensre koncentrál, és ő rendelkezik a legmagasabb százalékos bruttó árréssel, de a buborékok jellemzően kis mérete azt mutatja, hogy a cég profitjára gyakorolt hatása minimális.
-   * Valery, aki csak egy termékért felel, mindössze 5 iparági szegmensre koncentrál. Az iparági befolyása szezonális, de mivel mindig nagy méretű buborékokat hoz létre, jelentős hatást gyakorol a cég profitjára. Magyarázható az iparági szegmensekkel a csökkenő teljesítmény?
+   * Valery, aki csak egy termékért felel, mindössze 5 iparági szegmensre koncentrál. Valery iparági befolyása szezonális, de mivel mindig nagy méretű buborékokat hoz létre, jelentős hatást gyakorol a cég profitjára. Magyarázható az iparági szegmensekkel a csökkenő teljesítményét?
 
 ### <a name="executive-scorecard"></a>Vezetők mutatószámai
 Ez a lap Cortana-válaszkártya formátumú. További információ: [Egyéni Cortana-válaszkártyák létrehozása](service-cortana-answer-cards.md).

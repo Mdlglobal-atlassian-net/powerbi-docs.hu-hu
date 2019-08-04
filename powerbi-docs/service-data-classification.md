@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: amac
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b7d9bdf0982ea7ad4f57225e5a1eaf8c9da90b50
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e687c72ae058f56ca4f528783c5e2326d82db6bb
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61139625"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523136"
 ---
 # <a name="dashboard-data-classification"></a>Irányítópult adatainak besorolása
 Minden irányítópult különbözik, és attól függően, hogy milyen adatforráshoz kapcsolódik, Önnek, és azoknak, akikkel az információkat megosztja, más-más intézkedéseket kell tennie az érzékeny adatok védelme érdekében. Néhány irányítópultot soha sem szabad kinyomtatni vagy cégen kívül megosztani, míg másokat szabadon lehet terjeszteni. Az irányítópultok adatainak a besorolásával fel tudja hívni az irányítópultokat megtekintő felhasználók figyelmét arra, hogy milyen szintű adatvédelmet kell alkalmazniuk. Az irányítópultokat felcímkézheti az IT osztály által definiált besorolásokkal, így az adatok érzékenységéről mindenki egyformán tájékozódhat, aki a tartalmat megtekinti.
@@ -45,7 +45,7 @@ A rendszergazdák URL-címet is beállíthatnak a címkéhez, ahol kiegészítő
 ## <a name="setting-a-dashboards-classification"></a>Irányítópult besorolásának beállítása
 Ha a cégen belül be van kapcsolva az adatbesorolások használata, minden irányítópult egy alapértelmezett besorolással indul. Ezt a beállítást az irányítópult tulajdonosa módosíthatja, hogy megfeleljen a saját irányítópultjaihoz használt adatvédelmi szintnek.
 
-A besorolás típusának a módosításához tegye a következőket.
+A besorolás típusának a módosításához tegye a következőket:
 
 1. Nyissa meg az irányítópult beállításait az irányítópult neve melletti **három pontra** kattintva és a **Beállítások** lehetőséget választva.
    
@@ -58,7 +58,7 @@ A besorolás típusának a módosításához tegye a következőket.
 A változtatás érvényesítése után mindenki, akivel az irányítópultot megosztja, látni fogja a frissített értéket, amikor betölti az irányítópultot.
 
 ## <a name="working-with-data-classification-tags-as-an-admin"></a>Adatbesorolási címkék kezelése rendszergazdaként
-Az adatbesorolás alkalmazását a globális rendszergazda állíthatja be a cég számára. Az adatbesorolás bekapcsolásához tegye a következőket.
+Az adatbesorolás alkalmazását a globális rendszergazda állíthatja be a cég számára. Az adatbesorolás bekapcsolásához tegye a következőket:
 
 1. Kattintson a Beállítások fogaskerekére, majd kattintson a **Felügyeleti portál** lehetőségre.
    
@@ -79,7 +79,7 @@ Ha megadta a besorolási típusokat az űrlapon, a változtatások mentéséhez 
 
 ![](media/service-data-classification/filled_in_classification_form.png)
 
-Ekkor a rendszer az összes irányítópulthoz hozzárendeli az alapértelmezett besorolást, az irányítópultok tulajdonosai pedig frissíteni tudják majd azt a megjelenített tartalomnak megfelelő módon. Később is bármikor visszatérhet ide, ha besorolási típust szeretne felvenni vagy eltávolítani, vagy módosítani szeretné az alapértelmezett értéket.  
+Ezen a ponton az összes irányítópulthoz az alapértelmezett besorolás lesz hozzárendelve. Az irányítópult-tulajdonosok mostantól módosíthatják a besorolási típust a tartalmuknak megfelelő típusra. Később is bármikor visszatérhet ide, ha besorolási típust szeretne felvenni vagy eltávolítani, vagy módosítani szeretné az alapértelmezett értéket.  
 
 > [!NOTE]
 > Néhány dolgot fontos lesz majd emlékezetébe idéznie, amikor változtatási céllal tér vissza:

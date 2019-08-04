@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 4395884dfbc7ef5ebfb0df34e416d69ee553ebd3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d46fa8be055186d2430ca4d3c387fae93b91acc3
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514157"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523215"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mértékek a Power BI Desktopban
 
@@ -41,13 +41,13 @@ A mértékek kifejezésképletekből számítják ki az eredményeket. Az egyén
 A DAX-képletek nagyon hasonlóak az Excel-képletekhez. A DAX nyelvben számos Excel-függvény megtalálható, például a DATE, a SUM vagy a LEFT. A DAX-függvények azonban relációs adatok használatához készültek, amilyeneket a Power BI Desktop is használ.
 
 ## <a name="lets-look-at-an-example"></a>Vegyünk egy példát.
-Jan a Contoso egyik értékesítési vezetője. Viszonteladói értékesítési előrejelzéseket kell készítenie a következő pénzügyi évre. Jan úgy dönt, hogy a becsléseket a múlt évben értékesített mennyiségek alapján számítja ki, és hat százalékos éves növekedéssel számol a következő hat hónapra tervezett különféle promóciók várható eredményeként.
+Jan a Contoso egyik értékesítési vezetője. Jannak viszonteladói értékesítési előrejelzéseket kell készítenie a következő pénzügyi évre. Jan úgy dönt, hogy a becsléseket a múlt évben értékesített mennyiségek alapján számítja ki, és hat százalékos éves növekedéssel számol a következő hat hónapra tervezett különféle promóciók várható eredményeként.
 
-A becslések jelentéséhez az elmúlt év értékesítési adatait importálja a Power BI Desktopba. Megkeresi a Reseller Sales (Viszonteladói értékesítések) tábla SalesAmount (Értékesítési mennyiségek) mezőjét. Mivel az importált adatok csak a múlt évre vonatkozó értékesített mennyiségeket tartalmazzák, Jan átnevezi a SalesAmount mezőt, és a Last Years Sales (Tavalyi értékesítések) nevet adja neki. Ezután ráhúzza a Last Years Sales mezőt a jelentésvászonra. Ez egy diagramvizualizációban egyetlen értékként jelenik meg, amely a múlt évi összes viszonteladói értékesítés összegét adja meg.
+A becslések jelentéséhez az elmúlt év értékesítési adatait importálja a Power BI Desktopba. Jan megkeresi a Reseller Sales (Viszonteladói értékesítések) tábla SalesAmount (Értékesítési mennyiségek) mezőjét. Mivel az importált adatok csak a múlt évre vonatkozó értékesített mennyiségeket tartalmazzák, Jan átnevezi a SalesAmount mezőt, és a Last Years Sales (Tavalyi értékesítések) nevet adja neki. Ezután ráhúzza a Last Years Sales mezőt a jelentésvászonra. Ez egy diagramvizualizációban egyetlen értékként jelenik meg, amely a múlt évi összes viszonteladói értékesítés összegét adja meg.
 
 Jan észreveszi, hogy bár ő maga nem adott meg számítást, a rendszer automatikusan készített egyet. A Power BI Desktop létrehozott egy saját mértéket a Last Years Sales mezőben lévő értékek összege alapján.
 
-Jannek azonban egy olyan mértékre van szüksége, amely a következő évre vonatkozó előrejelzéseket adja meg, ami az elmúlt év értékesítési adatainak 1,06-szorosa, figyelembe véve a várható 6 százalékos üzleti növekedést. Ehhez a számításhoz létrehoz egy egyéni mértéket. Az Új mérték funkcióval létrehoz egy új mértéket, amelyben a következő DAX-képletet adja meg:
+Jannek azonban egy olyan mértékre van szüksége, amely a következő évre vonatkozó előrejelzéseket adja meg, ami az elmúlt év értékesítési adatainak 1,06-szorosa, figyelembe véve a várható 6 százalékos üzleti növekedést. Ehhez a számításhoz Jan létrehoz egy egyéni mértéket. Az Új mérték funkcióval létrehoz egy új mértéket, amelyben a következő DAX-képletet adja meg:
 
     Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 

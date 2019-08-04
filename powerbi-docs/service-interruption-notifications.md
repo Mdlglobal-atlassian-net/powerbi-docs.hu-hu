@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.author: mblythe
-ms.openlocfilehash: 0bb78e29cc3e9b9792d5916050179703281aa01a
-ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
+ms.openlocfilehash: a33ace000917311cbd060c853e0122034a396ae2
+ms.sourcegitcommit: 4595a6231615d253aead315cb3f85472e2f189e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "68366749"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501735"
 ---
 # <a name="service-interruption-notifications"></a>Szolgáltatáskimaradásokkal kapcsolatos értesítések
 
@@ -28,10 +28,10 @@ Jelenleg a következő _megbízhatósági eseményekről_küld e-mailt a rendsze
 - Modell frissítési megbízhatósága
 - Lekérdezés frissítési megbízhatósága
 
-Ha az incidens megoldódott, arról is e-mailt küldünk.
+Ilyen értesítések lehetnek például olyan esetekben, amikor a felhasználók hosszabb késleltetést tapasztalnak olyan műveletekben, mint a jelentések megnyitása, az adatkészlet frissítése vagy a lekérdezés-végrehajtás. Ha az incidens megoldódott, arról is e-mailt küldünk.
 
 > [!NOTE]
-> Ez a funkció jelenleg csak a Power BI Premium dedikált kapacitásainak esetében érhető el. A megosztott kapacitások esetében nem érhető el.
+> Ez a funkció jelenleg csak a Power BI Premium dedikált kapacitásainak esetében érhető el. A megosztott vagy beágyazott kapacitások esetében nem érhető el.
 
 ## <a name="enable-notifications"></a>Értesítések engedélyezése
 
