@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: da5a36454e52891df7906b444b29b4df2db44d7f
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: b9c308e0593ac207e323df5b78619f0279f95594
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721195"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523434"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Bevezetés a Power BI szervezeti tartalomcsomagjainak használatába
 > [!NOTE]
@@ -54,12 +54,12 @@ Az életciklus nagyjából így alakul:
    > 
    > 
 2. Szabolcs e-mailben értesíti a terjesztési csoport tagjait az új tartalomcsomagról.
-3. A Power BI Próban Borbála, a Marketing terjesztési csoport tagja rátalál erre a tartalomcsomagra, és kapcsolódik hozzá az AppSource-ban. Ezzel egy csak olvasható példányhoz jut hozzá.  Tisztában van vele, hogy a csomag csak olvasható, mert a navigációs panelen a megosztást jelző ikon látható az irányítópult neve és a jelentés neve mellett. És amikor kiválasztja az irányítópultot, egy lakatot ábrázoló ikon jelzi neki, hogy egy tartalomcsomag irányítópultjával van dolga. 
-4. Tegyük fel, hogy testre szabja a csomagot. Így már saját példánya van az irányítópultból és a jelentésekből. A munkája nem érinti a forrást, sem az eredeti tartalomcsomagot, és a terjesztési csoport többi tagját sem. Az irányítópult és a jelentés saját példányán dolgozik.
+3. A Power BI Próban Borbála, a Marketing terjesztési csoport tagja rátalál erre a tartalomcsomagra, és kapcsolódik hozzá az AppSource-ban. Ezzel egy csak olvasható példányhoz jut hozzá. Tisztában van vele, hogy a csomag csak olvasható, mert a navigációs panelen a megosztást jelző ikon látható az irányítópult neve és a jelentés neve mellett. És amikor kiválasztja az irányítópultot, egy lakatot ábrázoló ikon jelzi neki, hogy egy tartalomcsomag irányítópultjával van dolga. 
+4. Tegyük fel, hogy testreszabja a csomagot. Így már saját példánya van az irányítópultból és a jelentésekből. A munkája nem érinti a forrást, sem az eredeti tartalomcsomagot, és a terjesztési csoport többi tagját sem. Ők már saját irányítópult- és jelentéspéldányukon dolgoznak.
 5. Szabolcs módosítja az irányítópultot, és amikor elkészült, közzéteszi a tartalomcsomag új verzióját.
    
    * Géza, a terjesztési csoport egy másik tagja nem szabta testre az eredeti tartalomcsomagot. A módosítások így automatikusan érvénybe lépnek a tartalomcsomag ezen verziójában.  
-   * Borbála azonban testre szabta a tartalomcsomagot. Értesítést kap az új verzióról.  Ha megnyitja az AppSource-ot, akkor letöltheti a frissített tartalomcsomagot, de a saját verziója is megmarad. Ezzel már két verziója van: a személyre szabott és a frissített tartalomcsomag.
+   * Borbála azonban testre szabta a tartalomcsomagot. Értesítést kap az új verzióról.  Ha megnyitja az AppSource-ot, akkor letöltheti a frissített tartalomcsomagot, de a saját verziója is megmarad. Így már két verziója lesz: a személyre szabott és a frissített tartalomcsomag.
 6. Tegyük fel, hogy Szabolcs módosítja a biztonsági beállításokat. Géza és Borbála ettől kezdve nem fér hozzá a tartalomhoz. Vagy feltételezzük azt, hogy törlik őket a Marketing terjesztési csoportból.
    
    * Géza nem szabta testre az eredeti tartalomcsomagot, így a tartalom automatikusan törlődik. 

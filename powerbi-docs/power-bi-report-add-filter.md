@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 903883290def07ee6467dbebab1c7b31dec80b74
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: dcc273dd6bf356d9149086b38b9126e721fe63a2
+ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342198"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68380273"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Szűrő hozzáadása Power BI-jelentéshez
 
@@ -76,6 +76,8 @@ Ez a folyamat a Kiskereskedelmi elemzési mintát használja, ha le szeretné t�
     A vizualizáció módosul az új szűrőnek megfelelően. Ha menti a jelentést a szűrővel, a jelentés olvasói megtekinthetik a szűrt vizualizációt, és használhatják a szűrőt Olvasás nézetben: kiválaszthatnak vagy törölhetnek értékeket.
      
     ![A szűrt vizualizáció](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
+    
+    Amikor a szűrőt egy olyan mezőre alkalmazza, amely a mezőt összesítő vizualizációban (összeg, átlag vagy szám) található, az egyes adatpontok *összesített* értékére szűr. A fenti vizualizáció szűrésekor tehát a **This Year Sales > 500000** (Folyó évi értékesítések > 500 000) az jelenti, hogy eredményként csak a **13 - Charleston Fashion Direct** adatpont jelenne meg. A [modellmértékekre](desktop-measures.md) vonatkozó szűrők mindig az adatpont összesített értékére vonatkoznak.
 
 ### <a name="filter-with-a-field-thats-not-in-the-visual"></a>Egy, a vizualizációban nem szereplő mező szűrése
 
@@ -94,6 +96,8 @@ Most vegyünk fel egy új mezőt a vizualizációhoz vizualizáció szintű szű
     ![A szűrt vizualizáció](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
 
     Ha menti a jelentést a szűrővel, a jelentés olvasói használhatják a **District Manager** szűrőt Olvasás nézetben: kiválaszthatnak vagy törölhetnek értékeket.
+    
+    Ha egy *numerikus oszlopot* húz a szűrőpanelre egy vizualizációszintű szűrő létrehozásához, a szűrő a *mögöttes adatsorokra* fog vonatkozni. Ha például egy szűrőt ad a **UnitCost** mezőhöz, majd **UnitCost** > 20 értékre állítja, az csak azon Termék kategóriájú sorok adatait jelenítené meg, amelyekben az egységár nagyobb volt 20-nál, a vizualizációban megjelenő adatpontok összesített egységárától függetlenül.
 
 ## <a name="add-a-filter-to-an-entire-page"></a>Szűrő hozzáadása az egész oldalhoz
 
@@ -158,10 +162,6 @@ Lássuk, hogy működik a részletezési szűrő.
 1. A vissza nyilat kiválasztva térhet vissza az előző jelentésoldalra.
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
-
-- Bizonyos helyzetekben a vizualizációszintű és az oldalszintű szűrő különböző eredményt adhat.  Például amikor vizualizációszintű szűrőt ad meg, a Power BI az összesített eredményeket szűri.  Az alapértelmezett összesítés a Sum, de [az összesítés típusa módosítható](service-aggregates.md).  
-
-    Amikor ezután oldalszintű szűrőt ad meg, a Power BI összesítés nélkül végzi el a szűrést.  Azért nem összegez, mert egy oldalon több, különböző típusú összesítést használó vizualizáció is lehet.  Így a rendszer minden egyes adatsorra külön alkalmazza a szűrőt.
 
 - Ha nem látja a Mezők panelt, győződjön meg arról, hogy a jelentés [Szerkesztési nézetében](service-interact-with-a-report-in-editing-view.md) van.    
 - Ha nagy mennyiségű módosítást végzett a szűrőkön, és szeretne visszatérni a jelentés készítőjének alapértelmezett beállításaihoz, válassza a **Visszaállítás alapértelmezettre** lehetőséget a felső menüsoron.

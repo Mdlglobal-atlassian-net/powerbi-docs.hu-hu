@@ -1,5 +1,5 @@
 ---
-title: Egyéni Power BI-vizualizáció létrehozása
+title: Power BI-vizualizáció fejlesztése
 description: Oktatóanyag egyéni Power BI-vizualizációk létrehozásához
 author: sranins
 ms.author: rasala
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: d21a0ab1bada981a563e04ba26815f661664f51a
-ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.openlocfilehash: 2dc1d0a316319867513dc9f25a195c3f2d1140b9
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161215"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415436"
 ---
-# <a name="tutorial-developing-a-power-bi-custom-visual"></a>Oktatóanyag: Egyéni Power BI-vizualizáció fejlesztése
+# <a name="tutorial-developing-a-power-bi-visual"></a>Oktatóanyag: Power BI-vizualizáció fejlesztése
 
 Lehetővé tesszük a fejlesztők számára, hogy könnyedén hozzáadjanak a Power BI-hoz az irányítópultokon és a jelentésekben használható egyéni vizualizációkat. Hogy segítsük az első lépések megtételét, közzétettük az összes vizualizációnk kódját a GitHubon.
 
@@ -79,35 +79,35 @@ Telepítenie kell a **pbviz** csomagot.
     pbiviz --install-cert
     ```
 
-  A visszaadott eredmény létrehoz egy *jelszót*. Ebben az esetben a *jelszó* **_15105661266553327_** , amely elindítja a Tanúsítványimportáló varázslót.
+    A visszaadott eredmény létrehoz egy *jelszót*. Ebben az esetben a *jelszó* a következő: **_15105661266553327_** . Ez a tanúsítványimportáló varázslót is elindítja.
 
-  ![PowerShell-lel létrehozott tanúsítvány](media/custom-visual-develop-tutorial/cert-create.png)
+    ![PowerShell-lel létrehozott tanúsítvány](media/custom-visual-develop-tutorial/cert-create.png)
 
-3. A Tanúsítványimportáló varázslóban figyeljen arra, hogy a tárolás helye az Aktuális felhasználó legyen. Ezután kattintson a *Tovább* gombra.
+2. A Tanúsítványimportáló varázslóban figyeljen arra, hogy a tárolás helye az Aktuális felhasználó legyen. Ezután kattintson a *Tovább* gombra.
 
       ![Tanúsítvány telepítése](media/custom-visual-develop-tutorial/install-cert-PowerShell.png)
 
-4. Az **Importálandó fájl** lépésnél kattintson a *Tovább* gombra.
+3. Az **Importálandó fájl** lépésnél kattintson a *Tovább* gombra.
 
-5. A **Titkos kulcs védelme** lépésnél a Jelszó mezőbe illessze be a tanúsítvány létrehozásakor kapott jelszót.  Az esetünkben ez az **_15105661266553327_** .
+4. A **Titkos kulcs védelme** lépésnél a Jelszó mezőbe illessze be a tanúsítvány létrehozásakor kapott jelszót.  Az esetünkben ez az **_15105661266553327_** .
 
       ![Jelszó másolása](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
 
-6. A **Tanúsítványtároló** lépésnél válassza ki a **Minden tanúsítvány tárolása ebben a tárolóban** lehetőséget. Kattintson a *Tallózás* elemre.
+5. A **Tanúsítványtároló** lépésnél válassza ki a **Minden tanúsítvány tárolása ebben a tárolóban** lehetőséget. Kattintson a *Tallózás* elemre.
 
       ![Minden tanúsítvány ebben a tárolóban](media/custom-visual-develop-tutorial/all-certs-in-the-following-store.png)
 
-7. A **Tanúsítványtároló kiválasztása** ablakban válassza a **Megbízható legfelső szintű hitelesítésszolgáltatók** tárolót, majd kattintson az *OK* gombra. Ezután kattintson a *Tovább* gombra a **Tanúsítványtároló** képernyőn.
+6. A **Tanúsítványtároló kiválasztása** ablakban válassza a **Megbízható legfelső szintű hitelesítésszolgáltatók** tárolót, majd kattintson az *OK* gombra. Ezután kattintson a *Tovább* gombra a **Tanúsítványtároló** képernyőn.
 
       ![Megbízható legfelső szintű tanúsítvány](media/custom-visual-develop-tutorial/trusted-root-cert.png)
 
-8. Az importálás befejezéséhez kattintson a **Befejezés** gombra.
+7. Az importálás befejezéséhez kattintson a **Befejezés** gombra.
 
-9. Ha megjelenik egy biztonsági figyelmeztetés, kattintson az **Igen** válaszra.
+8. Ha megjelenik egy biztonsági figyelmeztetés, kattintson az **Igen** válaszra.
 
     ![Biztonsági figyelmeztetés](media/custom-visual-develop-tutorial/cert-security-warning.png)
 
-10. Ha megjelenik egy értesítés arról, hogy az importálás sikeres volt, kattintson az **OK** gombra.
+9. Ha megjelenik egy értesítés arról, hogy az importálás sikeres volt, kattintson az **OK** gombra.
 
     ![A tanúsítvány importálása sikeres volt](media/custom-visual-develop-tutorial/cert-import-successful.png)
 

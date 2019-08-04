@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/08/2018
-ms.openlocfilehash: 063ab8083c3091a7a41ca30e9045ce3a791112d2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 07/23/2019
+ms.openlocfilehash: fea28cd1c6541ae9255acd4be14cc85c2c2c5bed
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770028"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415373"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló telepítésének hardver- és szoftverkövetelményei
 
@@ -50,6 +50,7 @@ Ha a jelentéskészítő kiszolgáló adatbázisát egy távoli számítógépen
 
 A Power BI jelentéskészítő kiszolgáló az alapvető beállításokat a működéséhez szükséges alapértelmezett értékekkel telepíti. Ehhez a következő követelményeknek kell teljesülniük:
 
+* A Power BI jelentéskészítő kiszolgáló támogatott nyelvei: angol, német, spanyol, japán, olasz, francia, orosz, kínai (egyszerűsített), kínai (hagyományos), portugál (brazíliai), koreai
 * Rendelkezésre kell állnia egy SQL Server adatbázismotornak a jelentéskészítő kiszolgáló telepítése után, de még a jelentéskészítő kiszolgáló adatbázisának konfigurációja előtt. A jelentéskészítő kiszolgáló adatbázisát, amelyet a Reporting Services konfigurációkezelő fog létrehozni, az adatbázismotor-példány üzemelteti. A tényleges telepítési felületen nem szükséges az adatbázismotor megadása.
 * A [Reporting Services Features Supported by the Editions of SQL Server](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) (Az SQL Server kiadásai által támogatott Reporting Services-funkciók) az SQL Server kiadásai közötti különbségeket ismerteti.
 * A telepítés futtatásához használt felhasználói fióknak a helyi Rendszergazdák csoport tagjának kell lennie.

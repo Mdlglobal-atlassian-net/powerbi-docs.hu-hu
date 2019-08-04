@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 07/24/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 48513ea163847ee3bf1df07151e9985c5bce9656
-ms.sourcegitcommit: 5f22dcda8885d840b7da344d38e89329d02b14fb
+ms.openlocfilehash: 4c39cf5a60786f7cc1748155ce7004254d40ad00
+ms.sourcegitcommit: ebac79f8c2871d4a7e54c1e99ce6d2409345b060
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67235077"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68475635"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Csatlakozás adathalmazokhoz ügyfélalkalmazásokkal és eszközökkel (előzetes verzió)
 
-A Power BI Premium-munkahelyek és -adathalmazok *csak olvasási* kapcsolatokat támogatnak microsoftos és külső ügyfélalkalmazásoktól és eszközöktől. 
+A Power BI Premium-munkahelyek és -adathalmazok *csak olvasási* kapcsolatokat támogatnak microsoftos és külső ügyfélalkalmazásoktól és eszközöktől. Alapértelmezés szerint a kapcsolatok engedélyezve vannak
 
 > [!NOTE]
 > Ennek a cikknek csak az a célja, hogy bemutassa a csak olvasási kapcsolódást a Power BI Premium-munkahelyekhez és adathalmazokhoz. *Nem* célja részletes információt nyújtani a programozhatóságról, az egyes eszközökről és alkalmazásokról, az architektúráról és a munkaterület- és adathalmaz-kezelésről. Az itt ismertetett témák az Analysis Services táblázatos modellű adatbázis-architektúrájának és felügyeletének alapos ismeretét igénylik.
@@ -104,6 +104,10 @@ Az alábbi adathalmazok nem támogatottak a Power BI szolgáltatásban:
 ### <a name="roles-and-role-memberships"></a>Szerepkörök és szerepkörtagságok
 
 A modellszerepkörök és a szerepkörtagságok jelenleg nem fedezhetők fel és jeleníthetők meg XMLA-végpontokkal.
+
+## <a name="disable-connectivity"></a>Az összekapcsolhatóság letiltása
+
+Alapértelmezés szerint az XMLA-végpontok összekapcsolhatósága engedélyezve az adatkészlete számítási feladatához. Ezt a [számítási feladatok beállításai](service-admin-premium-workloads.md#workload-settings) között tilthatja le.
 
 ## <a name="audit-logs"></a>Auditnaplók 
 

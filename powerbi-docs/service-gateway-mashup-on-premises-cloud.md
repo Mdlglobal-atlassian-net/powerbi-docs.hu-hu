@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 39f5a01a396e45207777b1a5e58e73808ddf3f88
-ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
+ms.openlocfilehash: 1a2415ba840a1b88f4c7a215a520d0cc88f70e49
+ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352172"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68462217"
 ---
 # <a name="merge-or-append-on-premises-and-cloud-data-sources"></a>Helyszíni és felhőbeli adatforrások egyesítése vagy összefűzése
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-A helyszíni adatátjáró lehetővé teszi, hogy a helyszíni és a felhőbeli adatforrásokat egyesítse vagy összefűzze ugyanazon a lekérdezésen belül. Ez a funkció olyankor hasznos, ha különböző adatforrásokból kíván adatokat egyesíteni, de nem szeretne több külön lekérdezést használni.
+A helyszíni adatátjáró használata a helyszíni és a felhőbeli adatforrások egyesítésére vagy összeűzésére egyetlen lekérdezésbe. Ez a megoldás olyankor hasznos, ha különböző adatforrásokból kíván adatokat egyesíteni, de nem szeretne több külön lekérdezést használni.
 
 >[!NOTE]
 >Ez a cikk csak olyan adatkészletekre vonatkozik, amelyekben egyesítve vagy hozzáfűzve, egyetlen lekérdezésben szerepelnek a felhőbeli és a helyszíni adatforrások. A különálló lekérdezéseket (egy helyszíni, illetve egy felhőbeli adatforráshoz csatlakozó lekérdezést) tartalmazó adatkészletek esetén a felhőbeli adatforrást alkalmazó lekérdezést a rendszer nem az átjárón keresztül hajtja végre.
@@ -51,14 +51,13 @@ A helyszíni adatátjáró lehetővé teszi, hogy a helyszíni és a felhőbeli 
 6. Az új adathalmazhoz tartozó **Adathalmaz beállításai** lapon:
 
    - A helyszíni adatforrásnál válassza ki az adatforráshoz társított átjárót.
-
    - Az **Adatforrás azonosító adatai** szakasznál szükség szerint módosítsa az adatforrás azonosító adatait.
 
     Ügyeljen arra, hogy a felhőbeli és a helyszíni adatforrások adatvédelmi szintje is megfelelően legyen beállítva, így az összekapcsolások kezelése biztonságos maradhat.
 
      ![Adathalmaz beállításai](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
-7. Most, hogy beállította a felhőbeli hitelesítéseket, a **Frissítés most** lehetőség választásával azonnal frissítheti az adathalmazt, de ütemezhet rendszeres frissítést is.
+7. Most, hogy beállította a felhőbeli hitelesítéseket, a **Frissítés most** lehetőség választásával azonnal frissítheti az adathalmazt. De ütemezhet rendszeres frissítést is.
 
 ## <a name="next-steps"></a>Következő lépések
 

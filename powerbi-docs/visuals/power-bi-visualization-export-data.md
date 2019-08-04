@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d001c75d006838f46ce40a8f81bad0a9a058b148
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 86a3faf2095ff5100bc372a68b7d56861eb94806
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299441"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523352"
 ---
 # <a name="export-data-from-visualizations"></a>Adatok exportálása vizualizációkból
 
@@ -150,9 +150,9 @@ Ezek a korlátozások és szempontok a Power BI Desktopra és a Power BI szolgá
 
 - Adatok vizualizációból való exportálásához rendelkeznie kell [a mögöttes adathalmazra érvényes Összeállítási engedéllyel](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
 
--  A **Power BI Desktop** és a **Power BI szolgáltatás** által *.csv*-fájlba exportálható sorok maximális száma 30 000.
+-  A **Power BI Desktop** és a **Power BI szolgáltatás** által egy **importálási módú jelentésből** egy *.csv*-fájlba exportálható sorok maximális száma 30 000.
 
-- Az alkalmazás által *.xlsx*-fájlba exportálható sorok maximális száma 150 000.
+- Az alkalmazás által egy **importálási módú jelentésből** egy *.xlsx*-fájlba exportálható sorok maximális száma 150 000.
 
 - A *mögöttes adatokat* használó exportálás nem működik a következő esetekben:
 
@@ -166,7 +166,7 @@ Ezek a korlátozások és szempontok a Power BI Desktopra és a Power BI szolgá
 
 - A *mögöttes adatokat* használó exportálás nem működik, ha engedélyezi az *Adatot nem tartalmazó elemek megjelenítése* lehetőséget a Power BI által exportált vizualizációra.
 
-- DirectQuery használata esetén az adatok Power BI által maximálisan exportálható mennyisége 16 MB. Nem kívánt eredményként előfordulhat, hogy a sorok maximálás számánál kevesebbet exportál. Ez a következő esetekben valószínű:
+- DirectQuery használata esetén az adatok Power BI által maximálisan exportálható mennyisége 16 MB (tömörítés nélkül). Nem kívánt eredményként előfordulhat, hogy a sorok maximálás számánál kevesebbet exportál. Ez a következő esetekben valószínű:
 
     - Sok oszlop van.
 

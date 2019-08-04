@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/28/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 28fe39788dab6f22845d3ffcb7115fb1da5cb268
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: 6bfcb218f92c2b6e8a3349261e15e6b71b9512b2
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66826651"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523244"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dinamikus sorszintű biztonság Analysis Services-beli táblázatos modellel
 
@@ -33,7 +33,7 @@ Az alábbi lépéseket egy minta-adathalmazzal végrehajtva ebből az oktatóany
 
 Ehhez az oktatóanyaghoz szüksége lesz az [**AdventureworksDW2012** adatbázisra](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks).
 
-## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>1. feladat: A felhasználói biztonság tábla létrehozása és az adatkapcsolat meghatározása
+## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>1\. feladat: A felhasználói biztonság tábla létrehozása és az adatkapcsolat meghatározása
 
 Számos cikkben találhat leírást arról, hogy hogyan állítható be a sorszintű dinamikus biztonság az **SQL Server Analysis Services-beli (SSAS) táblázatos** modellel. Ehhez a mintához a [Dinamikus biztonság implementálása sorszűrőkkel](https://msdn.microsoft.com/library/hh479759.aspx) című cikket használjuk. 
 
@@ -63,9 +63,9 @@ Az itt ismertetett lépésekhez az **AdventureworksDW2012** relációs adatbázi
 
    A képen a **2. lépésben** létrehozott kapcsolatnak köszönhetően látszik, hogy ki felel az egyes értékesítési régiókért. Látható például, hogy **John Doe** felelős **Ausztráliáért**. 
 
-## <a name="task-2-create-the-tabular-model-with-facts-and-dimension-tables"></a>2. feladat: A táblázatos modell létrehozása a tény- és dimenziótáblákkal
+## <a name="task-2-create-the-tabular-model-with-facts-and-dimension-tables"></a>2\. feladat: A táblázatos modell létrehozása a tény- és dimenziótáblákkal
 
-1. Miután a relációs adattárház elérhető, meg kell határoznia a táblázatos modellt. A modellt létrehozhatja az [**SQL Server Data Tools (SSDT)**](https://docs.microsoft.com/sql/ssdt/sql-server-data-tools) használatával. További információ: [Új táblázatos modellprojekt létrehozása](https://msdn.microsoft.com/library/hh231689.aspx).
+1. Miután a relációs adattárház elérhető, meg kell határoznia a táblázatos modellt. A modellt létrehozhatja az [**SQL Server Data Tools (SSDT)** ](https://docs.microsoft.com/sql/ssdt/sql-server-data-tools) használatával. További információ: [Új táblázatos modellprojekt létrehozása](https://msdn.microsoft.com/library/hh231689.aspx).
 
 2. Importáljon minden szükséges táblát a modellbe a lent látható módon.
    
@@ -85,7 +85,7 @@ Az itt ismertetett lépésekhez az **AdventureworksDW2012** relációs adatbázi
    
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
 
-    Ebben a képletben a **LOOKUPVALUE** függvény a **DimUserSecurity[SalesTerritoryID]** oszlop minden értékét visszaadja, ahol a **DimUserSecurity[UserName]** megegyezik az aktuálisan bejelentkezett Windows-felhasználónévvel, az **DimUserSecurity[SalesTerritoryID]** pedig ugyanaz, mint a **DimSalesTerritory[SalesTerritoryKey]**.
+    Ebben a képletben a **LOOKUPVALUE** függvény a **DimUserSecurity[SalesTerritoryID]** oszlop minden értékét visszaadja, ahol a **DimUserSecurity[UserName]** megegyezik az aktuálisan bejelentkezett Windows-felhasználónévvel, az **DimUserSecurity[SalesTerritoryID]** pedig ugyanaz, mint a **DimSalesTerritory[SalesTerritoryKey]** .
    
     > [!IMPORTANT]
     > Sorszintű biztonság használatakor a [USERELATIONSHIP](https://msdn.microsoft.com/query-bi/dax/userelationship-function-dax) DAX-függvény nem támogatott.
@@ -100,7 +100,7 @@ Az itt ismertetett lépésekhez az **AdventureworksDW2012** relációs adatbázi
 
 8. Most fel kell dolgoznia és üzembe kell helyeznie a modellt. További információkat az [Üzembe helyezés című cikkben](https://msdn.microsoft.com/library/hh231693.aspx) talál.
 
-## <a name="task-3-add-data-sources-within-your-on-premises-data-gateway"></a>3. feladat: Adatforrások hozzáadása a helyszíni adatátjáróban
+## <a name="task-3-add-data-sources-within-your-on-premises-data-gateway"></a>3\. feladat: Adatforrások hozzáadása a helyszíni adatátjáróban
 
 Miután üzembe helyezte a táblázatos modellt, és az készen áll a használatára, egy adatforrás-kapcsolatot kell hozzáadnia a helyszíni Analysis Services-beli táblázatos kiszolgálóhoz.
 
@@ -112,7 +112,7 @@ Miután üzembe helyezte a táblázatos modellt, és az készen áll a használa
 
   Ha az előző lépés kész, az átjáró konfigurálva van, és készen áll a helyszíni **Analysis Services**-adatforrással való kommunikációra.
 
-## <a name="task-4-create-report-based-on-analysis-services-tabular-model-using-power-bi-desktop"></a>4. feladat: Analysis Services-beli táblázatos modellen alapuló jelentés létrehozása a Power BI Desktop segítségével
+## <a name="task-4-create-report-based-on-analysis-services-tabular-model-using-power-bi-desktop"></a>4\. feladat: Analysis Services-beli táblázatos modellen alapuló jelentés létrehozása a Power BI Desktop segítségével
 
 1. Indítsa el a **Power BI Desktop** szolgáltatást, és válassza az **Adatok lekérése > Adatbázis** lehetőséget.
 
@@ -138,7 +138,7 @@ Miután üzembe helyezte a táblázatos modellt, és az készen áll a használa
 
 7. Ha elkészült a jelentés, közvetlenül közzé teheti azt a Power BI portálon. A **Power BI Desktop** **Kezdőlap** szalagján válassza a **Közzététel** lehetőséget.
 
-## <a name="task-5-create-and-share-a-dashboard"></a>5. feladat: Irányítópult létrehozása és megosztása
+## <a name="task-5-create-and-share-a-dashboard"></a>5\. feladat: Irányítópult létrehozása és megosztása
 
 1. Létrehozta a jelentést, és közzétette a **Power BI** szolgáltatásban. A korábbi lépésekben létrehozott példát használva most próbára teheti a modell biztonságát.
    
@@ -160,7 +160,7 @@ Miután üzembe helyezte a táblázatos modellt, és az készen áll a használa
 
     Gratulálunk! A **Power BI szolgáltatásban** a helyszíni **Analysis Services-beli** táblázatos modellben meghatározott sorszintű biztonság van érvényben. A Power BI az **EffectiveUserName** tulajdonságot használja az aktuális Power BI felhasználói hitelesítő adatok helyszíni adatforrásokhoz történő elküldésére, hogy azok futtassák a lekérdezéseket.
 
-## <a name="task-6-understand-what-happens-behind-the-scenes"></a>6. feladat: Ami a színfalak mögött történik
+## <a name="task-6-understand-what-happens-behind-the-scenes"></a>6\. feladat: Ami a színfalak mögött történik
 
 Ez a feladat feltételezi az [SQL Profiler](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler) ismeretét, ugyanis egy SQL Server Profiler-nyomkövetést kell rögzítenie a helyszíni SSAS-beli táblázatos példányon.
 

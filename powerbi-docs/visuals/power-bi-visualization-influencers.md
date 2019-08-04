@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cf07318b5866d3f893d745fc8a8bba85cc9680d9
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: d41fc5991a95b51f71d0db522d4de84454de4ca2
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751273"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590605"
 ---
 # <a name="key-influencers-visualization"></a>Főbb befolyásolók vizualizáció
 A főbb befolyásolók vizualizáció segít megérteni azokat a tényezőket, amelyek az érdeklődésére számot tartó metrikát alakítják. Elemzi az adatokat, rangsorolja a lényeges tényezőket, és megjeleníti őket főbb befolyásolóként. Tegyük fel például, hogy meg szeretné tudni, mi befolyásolja az alkalmazotti állomány változását (más szóval az elvándorlást). Az egyik tényező lehet a munkaszerződés hossza, a másik pedig az alkalmazottak kora. 
@@ -132,8 +132,13 @@ A vizualizáció azt tudatja Önnel, hogy a bérleti idő minden 13,44 hónapja 
  
 A jobb oldali ablaktábla pontdiagramja a bérleti idő egyes értékeihez tartozó alacsony értékelések átlagos százalékos arányát számítja ki. A lejtést trendvonallal emeli ki.
 
-
 ![Pontdiagram a bérleti időhöz](media/power-bi-visualization-influencers/power-bi-tenure.png)
+
+## <a name="binned-continuous-key-influencers"></a>Dobozolt folyamatos főbb befolyásolók
+
+Bizonyos esetekben előfordulhat, hogy a folyamatos tényezők automatikusan kategorikussá váltak. Ennek az az oka, hogy a változók közötti kapcsolat nem lineáris, ezért nem lehet egyszerűen növekvőként vagy csökkenőként leírni a kapcsolatot (mint például a fenti példában).
+
+Korrelációs tesztekkel meghatározzuk, hogy mennyire lineáris a befolyásoló a célpontra nézve. Ha a cél folyamatos, Pearson-korrelációt futtatunk, ha pedig kategorikus, pontbiszeriális korrelációs tesztet végzünk. Ha azt észleljük, hogy a kapcsolat nem megfelelően lineáris, felügyelt dobozolást hajtunk végre, amellyel legfeljebb öt dobozt hozunk létre. Annak megállapításához, hogy mely dobozokat érdemes használni, felügyelt dobozolási módszert alkalmazunk, amely a magyarázó tényező és az elemzett célpont közti kapcsolatot vizsgálja.
 
 ## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Mértékek és összesítések értelmezése főbb befolyásolókként 
  
@@ -209,15 +214,14 @@ A numerikus célok felső szegmensei azokat a csoportokat jelenítik meg, amelye
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás 
  
-**Mik az előzetes verzió korlátai?** 
+**Mik a vizualizáció korlátai?** 
  
-A Főbb befolyásolók vizualizációnak jelenleg a nyilvános előzetes verziója érhető el, amely bizonyos korlátozásokkal rendelkezik. Jelenleg nem elérhető funkciók többek között: 
-- Metrikák elemzése, amelyek összesítések vagy mértékek.
-- A vizualizáció használata a Power BI Embeddedben.
-- A vizualizáció használata a Power BI-mobilalkalmazásokban.
-- RLS-támogatás.
-- Közvetlen lekérdezés támogatása.
-- Az élő kapcsolat támogatása.
+A főbb befolyásoló vizualizáció rendelkezik bizonyos korlátokkal:
+
+- A Direct Query nem támogatott
+- Az Azure Analysis Services és az SQL Server Analysis Services szolgáltatásokhoz való élő kapcsolat nem támogatott
+- A webes közzététel nem támogatott
+- A .NET-keretrendszer 4.6-os vagy újabb verzió szükséges hozzá
 
 ![Numerikus kérdés](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 
@@ -263,7 +267,7 @@ Ez a hiba azért jelenik meg, mert az eszköz nincs definiálva az ügyfél szin
 - Módosíthatja az eszközök összesítést az eszközök számára. Ez akkor lehet hasznos például, ha az eszközök száma hatással lehet az ügyfél által adott pontszámra. 
 - Elforgathatja az eszköz oszlopot annak megtekintéséhez, hogy a szolgáltatás egy meghatározott eszközön való használata befolyásolja-e az ügyfél értékelését.
  
-Ebben a példában az adatok úgy lettek elforgatva, hogy új oszlopok jöjjenek létre böngészőhöz, mobilhoz és táblagéphez. Ezeket az eszközöket most felhasználhatja a **Magyarázó** felületen. Láthatjuk, hogy minden eszköz befolyásoló tényező, és a böngésző van a legnagyobb hatással az ügyfél által adott pontszámra.
+Ebben a példában az adatokat elforgatva hoztunk létre új oszlopokat böngészőhöz, a mobilokhoz és a táblagépekhez (győződjön meg róla, hogy a modellezési nézetben újra létrehozza a kapcsolatokat az adatok forgatása után). Ezeket az eszközöket most felhasználhatja a **Magyarázó** felületen. Láthatjuk, hogy minden eszköz befolyásoló tényező, és a böngésző van a legnagyobb hatással az ügyfél által adott pontszámra.
 
 Pontosabban azok a felhasználók, akik nem a böngészővel használják a szolgáltatást, 3,79-szer nagyobb valószínűséggel adnak alacsony pontszámot azoknál, akik azzal használják. A listában lejjebb látható, hogy a mobilok esetében ennek az ellenkezője az igaz. A mobilalkalmazást használók nagyobb valószínűséggel adnak alacsony pontszámot, mint azok, akik nem azt használják. 
 

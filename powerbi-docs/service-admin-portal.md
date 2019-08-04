@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/27/2019
+ms.date: 07/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: a871a7475dd8282f9ce63646c371182548504357
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 751bcb5ee3b383853f0087bab406d59a2271b588
+ms.sourcegitcommit: 4595a6231615d253aead315cb3f85472e2f189e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67568085"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501790"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -133,7 +133,7 @@ Az auditnaplók használatához engedélyezze a [**Vizsgálati naplók létrehoz
 
 A **Bérlői beállítások** lap lehetővé teszi a szervezet számára elérhetővé tett funkciók finomhangolt szabályozását. Ha aggályai vannak a bizalmas adatokkal kapcsolatban, a funkciók némelyike esetlegesen nem megfelelő a munkahely számára, vagy csak egy adott funkciót szeretne engedélyezni egy adott csoportnak.
 
-Az alábbi képen a **Bérlői beállítások** lap első két szakasza látható.
+Az alábbi képen a **Bérlői beállítások** lap néhány beállítása látható.
 
 ![Bérlői beállítások](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
@@ -169,6 +169,10 @@ A következő néhány bekezdés a bérlői beállítások különböző típusa
 A vállalati felhasználók belső súgó és támogatási forrásokhoz fordulhatnak a Power BI súgó menüjében. Ezek a paraméterek pontosabban a Tanulás, Közösség és Segítség kérése menüelemek viselkedését módosítják.
 
 Megadható egy URL-cím is, amely licencelési kérdésekben egy egyéni megoldáshoz irányítja a felhasználókat. Ez a paraméter a Fiók bővítése gomb cél-URL-címét szabja testre, amelyet a Power BI Pro-licenccel nem rendelkező felhasználók a Bővítés Power BI Próra párbeszédpanelen és a Személyes tárhely kezelése oldalon is megtalálhatnak.
+
+### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>E-mail-értesítések fogadása szolgáltatásbeli kimaradásokról vagy incidensekről
+
+Az e-mail-küldést engedélyező biztonsági csoportok e-mail-értesítéseket fognak kapni, ha ezt a bérlőt érinti egy szolgáltatáskimaradás vagy egy incidens. További információ a [Szolgáltatáskimaradásokkal kapcsolatos értesítésekről](service-interruption-notifications.md).
 
 ## <a name="workspace-settings"></a>Munkaterület beállításai
 
