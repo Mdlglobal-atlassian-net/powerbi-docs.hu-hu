@@ -8,128 +8,132 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: dfa8ff694a1f4a4ba4e5078fe93300e4bf26cc73
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 3577c19342d9f2dc5b0e3ab9908f47f82430e6db
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721390"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391509"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Csatlakozás a mintákhoz a Power BI szolgáltatásban
 
-Ez az oktatóanyag az alábbi témákat ismerteti: 
+Ez az oktatóanyag az alábbi témákat mutatja be: 
 - Tartalomcsomag-minta importálása, a Power BI szolgáltatáshoz való hozzáadása, és a tartalom megnyitása. A *tartalomcsomagok* olyan típusú minták, ahol az adatkészlethez irányítópult és jelentés is mellékelve van. 
 - Nyissa meg a sample.pbix fájlt a Power BI Desktopban.
 
-Ha több háttérismerettel szeretne belekezdeni, ajánlott először [A Power BI-hoz használható mintaadathalmazok](sample-datasets.md) című cikket elolvasni. Ebben a cikkben megismerkedhet a mintákkal, azok beszerzésével, mentési helyével, használatával, valamint az egyes mintákhoz kapcsolódó történetekkel. Ha pedig már tisztában van az alapokkal, akkor térjen vissza ehhez az oktatóanyaghoz.   
+További háttérinformációkat [A Power BI-hoz használható mintaadathalmazok](sample-datasets.md) témakörben talál. Abban a cikkben megismerkedhet a mintákkal, azok beszerzésével, mentési helyével, használatával, valamint az egyes mintákhoz kapcsolódó történetekkel. 
 
 ## <a name="prerequisites"></a>Előfeltételek
 A minták elérhetőek a Power BI szolgáltatáshoz és a Power BI Desktophoz is. A lépésekhez a Kiskereskedelmi elemzési mintát fogjuk használni.
 
 Az ebben az oktatóanyagban használt *Kiskereskedelmi elemzési* minta tartalomcsomag irányítópultot, jelentést és adatkészletet is tartalmaz.
-Ahhoz, hogy megismerkedjen az adott tartalomcsomaggal és az ahhoz tartozó forgatókönyvvel, lehetséges, hogy először érdemes megtekintenie [a Kiskereskedelmi elemzési minta bemutatóját](sample-retail-analysis.md).
+Annak érdekében, hogy megismerkedhessen ezzel a tartalomcsomaggal és annak felhasználási helyzetével, tekintse meg a [Kiskereskedelmi elemzési minta – Power BI: Bemutató](sample-retail-analysis.md) témakört a kezdés előtt.
 
-## <a name="samples-and-power-bi-service"></a>Minták és a Power BI szolgáltatás
+## <a name="samples-in-the-power-bi-service"></a>Minták a Power BI szolgáltatásban
 
-1. Nyissa meg a Power BI szolgáltatást, és jelentkezzen be (app.powerbi.com).
-2. A bal oldali navigációs ablaktábla alján kattintson az **Adatok lekérése** elemre. Ha nem látja az **Adatok lekérése** elemet, a ![hamburger](media/sample-tutorial-connect-to-the-samples/expand-nav.png) ikon kiválasztásával bővítse ki a navigációs panelt.
-   
-   ![adatok lekérése ikon](media/sample-tutorial-connect-to-the-samples/pbi_getdata.png)
-5. Válassza a **Minták** lehetőséget.  
-   
-   ![Minták gomb](media/sample-tutorial-connect-to-the-samples/pbi_samplesdownload.png)
-6. Válassza a *Kiskereskedelmi elemzési minta* elemet, majd a **Kapcsolódás** lehetőséget.   
-   
-   ![sárga kapcsolódás gomb](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
+1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), jelentkezzen be, majd nyissa meg azt a munkaterületet, ahol a mintát szeretné menteni. 
 
-## <a name="what-exactly-was-imported"></a>Pontosan mit is importáltunk?
-A mintaként használható tartalomcsomagok esetében a **Kapcsolódás** lehetőség kiválasztásakor a Power BI tulajdonképpen az adott tartalomcsomag másolatát tölti be és tárolja az Ön számára a felhőben. Mivel a tartalomcsomagot létrehozó személy adatkészletet, jelentést és irányítópultot is foglalt a csomagba – a **Kapcsolódás** lehetőségre történő kattintáskor mindezek lekérése megtörténik. 
+    Ha nem rendelkezik Power BI Pro-licenccel, a mintát a Saját munkaterületre mentheti.
 
-1. A Power BI létrehozza az új irányítópultot, és felveszi azt az **Irányítópultok** lapon található listára. Sárga csillag jelzi, hogy új elemről van szó.
+2. A bal oldali navigációs ablaktábla alján kattintson az **Adatok lekérése** elemre. 
+
+   ![Az Adatok beolvasása lehetőség kiválasztása](media/sample-datasets/power-bi-get-data.png)
+
+   Ha nem jelenik meg az **Adatok lekérése** elem, bontsa ki a navigációs panelt a panel tetején található következő ikon választásával: ![hamburger ikon](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
+
+5. Ekkor megjelenik az **Adatok lekérése** lap. Itt válassza a **Minták** lehetőséget.
    
-   ![sikert jelző üzenet](media/sample-tutorial-connect-to-the-samples/power-bi-new-dashboard.png)
-2. Nyissa meg a **Jelentések** lapot.  Itt egy új, *Retail Analysis Sample* (Kiskereskedelmi elemzési minta) nevű jelentést fog látni.
+6. Válassza a **Kiskereskedelmi elemzési minta** elemet, majd a **Kapcsolódás** lehetőséget.   
    
-   ![vörös mező a Kiskereskedelmi elemzési minta és a sárga csillag körül](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
+   ![Csatlakozás gomb](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
+
+## <a name="what-was-imported"></a>Mi lett importálva?
+A mintaként használható tartalomcsomagok esetében a **Kapcsolódás** lehetőség kiválasztásakor a Power BI az adott tartalomcsomag másolatát kéri le és tárolja az Ön számára a felhőben. Mivel a tartalomcsomagot létrehozó személy adatkészletet, jelentést és irányítópultot is foglalt a csomagba – a **Kapcsolódás** lehetőség választásakor mindezek lekérése megtörténik. 
+
+1. A **Kapcsolódás** lehetőség választásakor a Power BI létrehozza az új irányítópultot, és felveszi azt az **Irányítópultok** lapon található listára. 
    
-   Ezt követően tekintse meg az **Adatkészletek** lapot.  Található itt egy új adatkészlet is.
+   ![Kiskereskedelmi elemzési minta listalem](media/sample-retail-analysis/retail-entry.png)
+2. Nyissa meg a **Jelentések** lapot. Itt egy új, *Kiskereskedelmi elemzési minta* nevű jelentést fog látni.
    
-   ![vörös mező a Kiskereskedelmi elemzési minta körül](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
+   ![Kiskereskedelmi elemzési mintajelentés listaelem](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
+   
+   Tekintse meg az **Adathalmazok** lapot; itt is új adathalmaz jelenik meg.
+   
+   ![A Kiskereskedelmi elemzési minta-adathalmaz listaelem](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
 
 ## <a name="explore-your-new-content"></a>Az új tartalmak vizsgálata
-Most vizsgálja meg saját maga is az irányítópultot, az adatkészletet és a jelentést. Számos lehetséges módja van az irányítópultok, jelentések és adatkészletek közötti navigációnak, az alábbiakban ezek közül csupán egyet mutatunk be.  
+Most vizsgálja meg saját maga is az irányítópultot, az adatkészletet és a jelentést. Számos lehetséges módja van az irányítópultok, jelentések és adatkészletek közötti navigációnak. Az alábbiakban ezek egyikét mutatjuk be.  
 
-> [!TIP]
-> Szeretne egy kis kezdeti segítséget?  [A Kiskereskedelmi elemzési minta bemutatója](sample-retail-analysis.md) részletes útmutatóval szolgál ehhez a mintához.
-> 
-> 
+1. Lépjen vissza az **Irányítópultok** lapra, majd válassza a **Kiskereskedelmi elemzési minta** irányítópultot annak megnyitásához.       
 
-1. Lépjen vissza az **Irányítópultok** lapra, és válassza a *Retail Analysis Sample* (Kiskereskedelmi elemzési minta) irányítópultot annak megnyitásához.    
+   Megnyílik a többféle vizualizáció-csempét tartalmazó irányítópult.   
+ 
+1. Válassza ki az irányítópult egyik csempéjét az alapjául szolgáló jelentés megnyitásához. Ebben a példában a **Folyó évi értékesítések, Tavalyi értékesítések Pénzügyi hónap szerint** területdiagramot választjuk.  
+
+   ![A Kiskereskedelmi elemzési minta irányítópultja kiemelt vizualizációval](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
+
+   A jelentés a választott területdiagramot tartalmazó oldallal, ebben az esetben a jelentés **Körzeti havi értékesítés** oldalával nyílik meg.
    
-   ![Irányítópult lap kijelölve](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards.png)
-2. Ekkor megnyílik az irányítópult.  Az irányítópulton számos vizualizáció-csempe található.
-   
-   ![irányítópult kiemelt vizualizációval](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
-3. Válassza ki az egyik csempét az alapul szolgáló jelentés megnyitásához.  Ebben a példában a területdiagramot (rózsaszín kerettel jelöltük az előző képen) választjuk ki. A jelentés a területdiagramot tartalmazó oldalnál nyílik meg.
-   
-    ![jelentésoldal kiemelt egyező vizualizációval](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
+   ![Kerületi havi értékesítés jelentésoldal](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Ha az adott csempe a [Power BI Q&A](power-bi-tutorial-q-and-a.md) szolgáltatásával lett létrehozva, akkor a Q&A oldalnak kellett volna megnyílnia. Ha a csempét az [Excelből rögzítették](service-dashboard-pin-tile-from-excel.md), akkor az Excel Online nyílt volna meg a Power BI-ban.
+   > Ha a csempe a [Power BI Q&A](power-bi-tutorial-q-and-a.md) használatával lett létrehozva, akkor helyette a Q&A oldala nyílik meg. Ha a csempét az [Excelből rögzítették](service-dashboard-pin-tile-from-excel.md), akkor az Excel Online nyílik meg a Power BI-ban.
    > 
    > 
-1. Lépjen vissza az **Adatkészletek** lapra, ahol az adatkészlet átvizsgálását illetően számos lehetőség közül választhat.  Nem tudja megnyitni és megtekinteni az összes sort és oszlopot (ahogy a Power BI Desktop vagy az Excel esetében meg tudná tenni).  Ha valaki megoszt egy tartalomcsomagot a kollégáival, akkor jellemzően az elemzéseket kívánja megosztani, nem pedig közvetlen hozzáférést adni a kollégáinak az adatokhoz. Ez azonban nem jelenti azt, hogy ne tudná elvégezni az adatkészlet átvizsgálását.  
+1. Ha valaki megoszt egy tartalomcsomagot a kollégáival, akkor jellemzően csak az elemzési eredményeket kívánja megosztani, nem pedig közvetlen hozzáférést adni az adatokhoz. Az **Adathalmazok** lapon számos lehetősége van az adathalmaz vizsgálatára. Az adatsorokat és -oszlopokat azonban nem tekintheti meg úgy, ahogyan a Power BI Desktopban vagy az Excelben tehetné. 
    
-   ![Adatkészletek lap](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon2.png)
+   ![A Kiskereskedelmi elemzési minta-adathalmaz listaelem](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    
-   * Az adatkészlet átvizsgálásának egyik módja, ha az alapoktól kezdve létrehozza saját vizualizációit és jelentéseit.  Kattintson a diagramikonra ![jelentésikon](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) az adatkészlet jelentésszerkesztési módban történő megnyitásához.
+1. Az adatkészlet átvizsgálásának egyik módja, ha az alapoktól kezdve létrehozza saját vizualizációit és jelentéseit. Kattintson a diagramikonra ![Diagram ikon](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) az adatkészlet jelentésszerkesztési módban történő megnyitásához.
      
-       ![új jelentés](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
-   * Az adatkészlet átvizsgálásának másik módja a [Gyors elemzések](consumer/end-user-insights.md) szolgáltatás futtatása. Kattintson a három pontra (...), és válassza az **Elemzések lekérése** lehetőséget. Ha az elemzések elkészültek, válassza az **Elemzések megtekintése** lehetőséget.
+   ![Vadonatúj jelentés](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
+
+1. Az adathalmaz átvizsgálásának másik módja a [Gyors elemzések](consumer/end-user-insights.md) szolgáltatás futtatása. Válassza a három pontot (...), majd a **Gyors elemzések lekérése** lehetőséget. Ha az elemzések elkészültek, válassza az **Elemzések megtekintése** lehetőséget.
      
-       ![Megállapítási jelentés](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
+    ![Megállapítási jelentés](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
-## <a name="samples-and-power-bi-desktop"></a>Minták és a Power BI Desktop 
-Amikor először nyitja meg a PBIX-fájlt, az Jelentés nézetben nyílik meg, amelyben bármennyi, vizualizációt tartalmazó jelentésoldalt megvizsgálhat, létrehozhat és módosíthat. A Jelentés nézet felülete nagyjából ugyanazzal a kialakítással rendelkezik, mint egy jelentés Szerkesztési nézete a Power BI szolgáltatásban. Többek között áthelyezheti a vizualizációkat, vagy másolhatja, beillesztheti és egyesítheti őket.
+## <a name="samples-in-power-bi-desktop"></a>Minták a Power BI Desktopban 
+Amikor először nyitja meg a minta .pbix-fájlt a Power BI Desktopban, az Jelentés nézetben nyílik meg, amelyben bármennyi, vizualizációt tartalmazó jelentésoldalt megvizsgálhat, létrehozhat és módosíthat. A Jelentés nézet felülete nagyjából ugyanazzal a kialakítással rendelkezik, mint egy jelentés Szerkesztési nézete a Power BI szolgáltatásban. Többek között áthelyezheti a vizualizációkat, vagy másolhatja, beillesztheti és egyesítheti őket. 
 
-A különbség az, hogy ha a Power BI Desktopot használja, dolgozhat lekérdezésekkel, és modellezheti az adatokat annak érdekében, hogy az adatai a legjobb elemzést tegyék lehetővé a jelentésekben. Ezután mentheti a Power BI Desktop-fájlt bárhová, ahová szeretné, legyen az a helyi lemez vagy a felhő.
+A jelentés Power BI szolgáltatásban végzett szerkesztésétől eltérően a Power BI Desktopban dolgozhat lekérdezésekkel is, és modellezheti az adatokat annak érdekében, hogy azok a legjobb elemzést tegyék lehetővé a jelentésekben. Ezután mentheti a Power BI Desktop-fájlt bárhová, ahová szeretné, legyen az a helyi lemez vagy a felhő.
 
-1. Nyissa meg a [Kiskereskedelmi elemzési minta .pbix-fájlját](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) a Power BI Dekstopban. 
+1. Töltse le a [Kiskereskedelmi elemzési minta .pbix-fájlját](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), és nyissa meg a Power BI Desktopban. 
 
-    ![A Power BI Jelentés nézetében megnyitott minta](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
+    ![Minta a Power BI Jelentés nézetében](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
-1. A fájl Jelentés nézetben nyílik meg. Figyelje meg, hogy a jelentésszerkesztő alján négy lapfül jelenik meg. Ez azt jelzi, hogy a jelentés 4 oldalt tartalmaz, és az aktuálisan kiválasztott oldal a „New Stores” (Új üzletek). 
+1. A fájl Jelentés nézetben nyílik meg. Figyelje meg a négy lapfület a jelentésszerkesztő alján; ezek a jelentés négy oldalának felelnek meg. Ebben a példában éppen az **Új üzletek** oldal van kiválasztva. 
 
-    ![közeli kép az alsó lapokról és a kiemelt New Stores (Új üzletek) elemről](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png).
+    ![Az Új üzletek lap kijelölése](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png).
 
-3. Ha a jelentésszerkesztőt részletesebben is szeretné megismerni, olvassa el [A jelentésszerkesztő bemutatása](service-the-report-editor-take-a-tour.md) című témakört.
+1. Ha a jelentésszerkesztőt részletesebben is szeretné megismerni, olvassa el [A jelentésszerkesztő bemutatása](service-the-report-editor-take-a-tour.md) című témakört.
 
-## <a name="what-exactly-was-imported"></a>Pontosan mit is importáltunk?
-Amikor a Desktopban megnyitja a minta PBIX-fájlt, a Power BI valójában az adatok másolatát használja, és az adatokat a felhőben tárolja. A Desktopból elérhető a jelentés és az ***alapul szolgáló adatkészlet*** is. Az adatok betöltésekor a Power BI Desktop megkísérli megkeresni és létrehozni a kapcsolatokat Ön helyett.  
+## <a name="whats-in-your-report"></a>Mit tartalmaz a jelentés?
+A minta .pbix-fájl letöltésekor nem csak a jelentést, de a *mögöttes adathalmazt* is letöltötte. A fájl megnyitásakor a Power BI Desktop betölti az adatokat és az azokhoz tartozó lekérdezéseket és kapcsolatokat. A mögöttes adatokat és kapcsolatokat megtekintheti, de a mögöttes lekérdezéseket nem tekintheti meg a Lekérdezésszerkesztőben.
+
 
 1. A táblázat ikont ![táblázat ikont](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png) választva válthat [Adatnézetre](desktop-data-view.md).
  
     ![A Desktop Adatok nézete](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png)
 
-    Az Adatnézet segítségével megvizsgálhatja, felderítheti és megismerheti Power BI Desktop-modellben lévő adatokat. Az adatnézettel másképp tekintheti meg a táblákat, oszlopokat és adatokat, mint a Lekérdezésszerkesztőben. Az adatnézettel a modellbe való betöltésük után tekintheti meg az adatokat.
+    Adatnézetben megvizsgálhatja, felderítheti és megismerheti Power BI Desktop-modellben lévő adatokat. Az adatnézettel másképp tekintheti meg a táblákat, oszlopokat és adatokat, mint a Lekérdezésszerkesztőben. Az adatnézetben látott adatok már be vannak töltve a modellbe.
 
-    Az adatok modellezésekor előfordulhat, hogy csak meg szeretné tekinteni egy tábla vagy oszlop aktuális tartalmát anélkül, hogy ehhez egy vizualizációt vagy jelentésvásznat kellene létrehoznia akár a sorok szintjéig. Ez különösen jellemző, amikor mértékeket vagy számított oszlopokat hoz létre, vagy amikor azonosítani szeretné az adatok típusát vagy kategóriáját.
+    Az adatok modellezésekor előfordulhat, hogy csak meg szeretné tekinteni egy tábla sorainak és oszlopainak tényleges tartalmát anélkül, hogy ehhez egy vizualizációt vagy jelentésvásznat kellene létrehoznia. Ez különösen jellemző, amikor mértékeket vagy számított oszlopokat hoz létre, vagy amikor azonosítani szeretné az adatok típusát vagy kategóriáját.
 
-1. A ![3 összekapcsolt mezőt ábrázoló](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png) ikont választva válthat [Kapcsolat nézetre](desktop-relationship-view.md).
+1. Váltson [Kapcsolatok nézetre](desktop-relationship-view.md) a következő ikonnal: ![Kapcsolatok nézet ikon](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
  
-    ![kapcsolat nézet a Power BI Desktop szolgáltatásban](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
+    ![Kapcsolatok nézet a Power BI Desktopban](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
 
     A Kapcsolat nézet megjeleníti a modellben szereplő összes táblát, oszlopot és kapcsolatot. Itt létrehozhat kapcsolatokat, valamint megtekintheti és módosíthatja is azokat.
 
-## <a name="explore-your-new-content"></a>Az új tartalmak vizsgálata
-Most vizsgálja meg saját maga is az adatkészletet, a kapcsolatokat és a jelentést. Az első lépésekhez segítséget kaphat az [Első lépések a Desktop használatához](desktop-getting-started.md) című témakörben.    
-
-
 ## <a name="next-steps"></a>Következő lépések
+Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
 
+Reméljük, hogy ez a bemutató segített megérteni a mintaadatok Power BI irányítópultok, adathalmazok, kapcsolatok és jelentések segítségével történő elemzését. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információt az [Első lépések a Power BI szolgáltatással](service-get-started.md) és az [Első lépések a Power BI Desktoppal](desktop-getting-started.md) című témakörökben találhat.  
+
+További információ:  
 - [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 - [Minták a Power BI szolgáltatáshoz](sample-datasets.md)
 - [Power BI-adatforrások](service-get-data.md)

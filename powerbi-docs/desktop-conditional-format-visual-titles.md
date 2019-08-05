@@ -1,6 +1,6 @@
 ---
-title: Címek kifejezésen alapuló Power BI desktopban
-description: A dinamikus címek létrehozása a Power BI Desktopban módosító programozott arckifejezések alapján programozott feltételes formázás használatával
+title: Kifejezésalapú címek a Power BI Desktopban
+description: Dinamikus, programozott kifejezések alapján változó címek létrehozása feltételes programozott formázás használatával a Power BI Desktopban
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,32 +10,32 @@ ms.topic: reference
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b90ef66d2c118a70f1b18ed4fe302ce1db23e45c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1b4e134ef6f8da43a1856c8a5458c8c09b2c42b5
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769737"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522183"
 ---
-# <a name="expression-based-titles-in-power-bi-desktop"></a>Címek kifejezésen alapuló Power BI desktopban
+# <a name="expression-based-titles-in-power-bi-desktop"></a>Kifejezésalapú címek a Power BI Desktopban
 
-Létrehozhat dinamikus, testre szabott, hogy a Power BI-Vizualizációk címei. Data Analysis Expressions (DAX) mezőket, változóit vagy egyéb programozható elemek alapján hoz létre, a Vizualizáció címét is automatikusan szükség szerint módosítsa. Ezek a változások szűrőket, beállításokat is, vagy más felhasználói interakció érdekében és konfigurációk alapulnak.
+Dinamikus, testreszabott címeket hozhat létre Power BI-vizualizációihoz. Mezőkön, változókon és más programozott elemeken alapuló adatelemzési (DAX-) kifejezések létrehozásával elérheti, hogy a vizualizáció címei automatikusan az igényeihez igazodjanak. Ezek a változások szűrőkön, kijelöléseken és más felhasználói beavatkozásokon és konfigurációkon alapulnak.
 
-![Képernyőfelvétel: a Power BI Desktop feltételes formázási lehetőség](media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png)
+![Képernyőkép a Power BI Desktop feltételes formázási lehetőségéről](media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png)
 
-Más néven dinamikus címek létrehozása *kifejezésen alapuló címek*, nagyon egyszerű. 
+A dinamikus, más néven *kifejezésalapú címek* kézenfekvő módon hozhatók létre. 
 
-## <a name="create-a-field-for-your-title"></a>A cím mező létrehozása
+## <a name="create-a-field-for-your-title"></a>Mező létrehozása a cím számára
 
-Az első lépés egy kifejezésen alapuló cím létrehozása, ha egy mezőt a modellben a cím használatára. 
+A kifejezésalapú cím létrehozásának első lépése a címhez használandó mező létrehozása a modellben. 
 
-Számos adatforráshoz creative módja is van a Vizualizáció címének tükrözzék, mit kíván tegyük fel, vagy szeretné express. Vessünk egy pillantást néhány példa erre.
+Sokféle ötletes módon elérhető, hogy a vizualizáció címe azt tükrözze, amit tudatni akar általa, vagy amit ki szeretne fejezni vele. Tekintsünk át néhány példát.
 
-Létrehozhat egy kifejezés, amely a szűrőkörnyezet, amely a Vizualizáció megkapja a termék márkáját neveként függően változik. Az alábbi képen látható a DAX-képlet ilyen mező.
+Létrehozhat egy kifejezést, amely a vizualizáció által kapott, a termék márkanevére vonatkozó szűrőkörnyezet alapján változik. Az alábbi ábra egy ilyen mező DAX-képletét mutatja be.
 
-![Képernyőkép a DAX-képlet](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
+![DAX-képlet képernyőképe](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
 
-Egy másik példa, amely a felhasználó nyelvi és kulturális környezet függően változik dinamikus címet használ. A DAX-mérték a nyelvspecifikus címek is létrehozhat a `USERCULTURE()` függvény. Ez a függvény a felhasználó számára, hogy operációs rendszer vagy a böngésző beállításai alapján a kulturális környezet kódot adja vissza. A következő DAX-switch utasítás segítségével válassza ki a megfelelő lefordított értéket. 
+Egy másik példa a felhasználó nyelve vagy kultúrája alapján változó dinamikus cím használata. Egy DAX-mértékben a `USERCULTURE()` függvény használatával hozhat létre nyelvspecifikus címeket. Ez a függvény a felhasználó kultúrakódját adja vissza az operációs rendszer vagy a böngésző beállításai alapján. Az helyes lefordított érték a következő elágazási DAX-utasítással választható ki. 
 
 ```
 SWITCH (
@@ -46,33 +46,35 @@ SWITCH (
 )
 ```
 
-Vagy lehet lekérdezni a karakterlánc egy keresési táblázat, amely tartalmazza a megjelenő fordításokat. A modell helyez, hogy a táblázat. 
+A sztringet egy olyan keresőtáblázatból is beszerezheti, amely minden fordítást tartalmaz. Ezt a táblázatot el kell helyeznie a modellben. 
 
-Ezek a példák segítségével dinamikus, kifejezésalapú címek, hogy a Vizualizációk létrehozása a Power BI Desktopban néhány. Mire képes a címek a korlátozottak, csak a képzelete, és a modell által.
+Ez csak néhány példa arra, ahogyan a dinamikus, kifejezésalapú címeket használhatja vizualizációkhoz a Power BI Desktopban. Hogy mit valósít meg ezekkel a címekkel, annak csak a képzelete és a modell szab határt.
 
 
-## <a name="select-your-field-for-your-title"></a>Válassza ki a mezőt, a cím
+## <a name="select-your-field-for-your-title"></a>A címhez tartozó mező kiválasztása
 
-Miután létrehozta a mező a modellben létrehozott DAX-kifejezése, alkalmazza a Vizualizáció címének kell.
+A modellben létrehozott mezőhöz tartozó DAX-kifejezés létrehozása után alkalmaznia kell azt a vizualizáció címére.
 
-Válassza ki a mezőt, és alkalmazza azt, hogy nyissa meg a **Vizualizációk** ablaktáblán. Az a **formátum** területen válassza **cím** a Vizualizáció a cím lehetőségeinek megjelenítéséhez. 
+A mező kiválasztásához és alkalmazásához nyissa meg a **Vizualizációk** panelt. A **Formázás** területen válassza a **Cím** lehetőséget a vizualizáció címére vonatkozó beállítások megjelenítéséhez. 
 
-Amikor a jobb gombbal **címszöveget**, egy helyi menü megjelenik, amely lehetővé teszi, hogy válasszon ***fx* feltételes formázás**. A menüelem kiválasztásakor egy **címszöveget** párbeszédpanel jelenik meg. 
+Ha jobb gombbal a **Title text** (Cím szövege) elemre kattint, megjelenik egy helyi menü, amelyből kiválaszthatja az ***fx*Conditional formatting** (Feltételes formázás) elemet. Ha erre a menüelemre kattint, megjelenik egy **Cím szövege** párbeszédpanel. 
 
-![Képernyőkép a cím szövegének párbeszédpanel](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
+![A Cím szövege párbeszédpanel képernyőképe](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 
-Ezt az ablakot kiválaszthatja a mező, a cím használni létrehozott.
+Ebben az ablakban kiválaszthatja a cím számára létrehozott mezőt.
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 
-Néhány korlátozás címeit kifejezésen alapuló vizualizációkat az aktuális végrehajtásával:
+A vizualizációk kifejezésalapú címeinek aktuális implementációjára vonatkozik néhány korlátozás:
 
-* Kifejezés alapú formázás jelenleg nem támogatott Vizualizációk Python, R-Vizualizációk vagy a kulcs Véleményvezérek vizualizációt.
-* A hoz létre, a cím mező kifejezésnek karakteres adattípusúnak kell lennie. Mértékek, szám vagy dátum/idő (vagy bármely más adattípussal) visszaadó jelenleg nem támogatottak.
+* A kifejezésalapú formázás jelenleg nincs támogatva Python-vizualizációkban, R-vizualizációkban és a Főbb befolyásolók vizualizációban.
+* A címhez létrehozott mezőnek szöveges adattípusúnak kell lennie. A számokat vagy dátumot és időt (vagy más adattípust) visszaadó mértékek jelenleg nincsenek támogatva.
+* A kifejezésalapú címek nem vihetők át, amikor egy vizualizációt rögzít az irányítópulton.
 
 ## <a name="next-steps"></a>Következő lépések
 
-Ez a cikk ismerteti a létrehozása, amely szerint a jelentések használata a felhasználók használják módosíthatók dinamikus mezők a Vizualizációk címei információkká DAX-kifejezésekre. Hasznosak lehetnek a következő cikkeket is.
+Ez a cikk a vizualizációk címeit dinamikus, a jelentés felhasználónak tevékenysége alapján változó mezőkké alakító DAX-kifejezések létrehozását ismertette. A következő cikkeket is hasznosnak találhatja.
 
-* [Kereszt-jelentés részletezés használata a Power BI Desktopban](desktop-cross-report-drill-through.md)
+* [Táblázatok feltételes formázása](desktop-conditional-table-formatting.md)
+* [Jelentésközi részletezés a Power BI Desktopban](desktop-cross-report-drill-through.md)
 * [Részletezés használata a Power BI Desktopban](desktop-drillthrough.md)
