@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 8600dce5012abb41c37b202dcc8eb204da11fa33
-ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
+ms.openlocfilehash: a7e26fd96066ce35e7d61443a8d7c32c64011d5e
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68230210"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665439"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -649,8 +649,6 @@ Olvassa el a [Power BI mobilalkalmazásairól szóló 2016. márciusi blogbejegy
 Az irányítópultokat [fekvő tájolásban is megtekintheti androidos telefonokon](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone). 
 
 #### <a name="power-bi-app-for-windows-10-devices"></a>Windows 10-es eszközökhöz készült Power BI alkalmazás
-Az irányítópultokat [fekvő tájolásban is megtekintheti Windows 10 rendszerű telefonokon](mobile-apps-view-dashboard.md#view-dashboards-on-your-windows-10-device).
-
 Megtekintheti [a jelentéseket Windows 10 rendszerű telefonján](mobile-reports-in-the-mobile-apps.md).
 
 Gyorsabb [elemzési eredmények Windows 10-es mobil-irányítópultjain](mobile-tiles-in-the-mobile-apps.md): Csempepillanatképet oszthat meg, vagy jelentést nyithat meg közvetlenül az irányítópultról.

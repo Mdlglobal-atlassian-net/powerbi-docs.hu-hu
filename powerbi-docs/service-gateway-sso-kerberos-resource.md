@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6dc530305634b44415ddccb9c42952c0bfbe2e5f
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: b6cd8df15080e10b1da73e6f4da41c5354dd867a
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271919"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68624002"
 ---
 # <a name="use-resource-based-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Az erőforrás-alapú Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
@@ -141,7 +141,7 @@ Ez a konfiguráció a legtöbb esetben működik. A Kerberos esetében azonban m
 
 A **helyszíni adatátjáróval** és a **DirectQueryvel** kapcsolatos további információkért lásd az alábbi forrásanyagokat:
 
-* [Mi az a helyszíni adatátjáró?](/data-integration/gateway/service-gateway-onprem.md)
+* [Mi az a helyszíni adatátjáró?](/data-integration/gateway/service-gateway-onprem)
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások](desktop-directquery-data-sources.md)
 * [A DirectQuery és az SAP BW](desktop-directquery-sap-bw.md)

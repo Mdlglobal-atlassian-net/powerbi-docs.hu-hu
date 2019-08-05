@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 07/25/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1a0ec90d3f6a1de5a542da7ee98f956dfcef67b1
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: bea8b954cb1c0743745ef6d3bf9d48aa8513f2fe
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325151"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68624050"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
@@ -170,9 +170,96 @@ A konfigurációs lépések elvégzése után konfigurálja az adatforrást a Po
 
 Ez a konfiguráció a legtöbb esetben működik. A Kerberos esetében azonban más konfigurációkra lehet szükség a környezettől függően. Ha a jelentés továbbra sem töltődik be, forduljon a tartományi rendszergazdájához a probléma részletesebb kivizsgálásához.
 
-## <a name="configure-sap-bw-for-sso"></a>Az SAP BW konfigurálása egyszeri bejelentkezéshez
+## <a name="configure-sap-bw-for-sso-using-commoncryptolib"></a>Az SAP BW konfigurálása egyszeri bejelentkezéshez a CommonCryptoLib használatával
 
 Most, hogy megismerkedett a Kerberos átjáróval történő működésével, konfigurálhat egy egyszeri bejelentkezést az SAP Business Warehouse (SAP BW) szolgáltatáshoz. Az alábbi lépések azt feltételezik, hogy már [előkészült a Kerberos által korlátozott delegáláshoz](#prepare-for-kerberos-constrained-delegation) a cikkben korábban leírtak szerint.
+
+> [!NOTE]
+> Ezek az utasítások az SAP BW **Alkalmazáskiszolgáló** egyszeri bejelentkezéses telepítését ismertetik. A Microsoft jelenleg nem támogatja az SSO-kapcsolatokat az SAP BW **Üzenetkezelő** kiszolgálóihoz.
+
+1. Ellenőrizze, hogy a BW-kiszolgáló megfelelően van-e konfigurálva a Kerberos egyszeri bejelentkezéshez. Ha igen, akkor használhatja az egyszeri bejelentkezést a BW-kiszolgáló eléréséhez egy SAP-eszköz, például az SAP GUI használatával. A telepítés lépéseivel kapcsolatos további információkért lásd: [SAP egyszeri bejelentkezés: Hitelesítés Kerberos/SPNEGO használatával](https://blogs.sap.com/2017/07/27/sap-single-sign-on-authenticate-with-kerberosspnego/). A BW-kiszolgálónak a CommonCryptoLib-et kell használnia a SNC-kódtárként, és rendelkeznie kell egy „CN =” résszel (például: „CN = BW1”) kezdődő SNC-névvel. Az SNC-nevekre vonatkozó követelményekkel kapcsolatos további információkért lásd: [SNC-paraméterek Kerberos-konfigurációhoz](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/360534094511490d91b9589d20abb49a.html) (az SNC/Identity/as paraméter).
+
+1. Ha még nem tette meg, végezze el a [Felkészülés a Kerberos által korlátozott delegálásra](https://docs.microsoft.com/power-bi/service-gateway-sso-kerberos#prepare-for-kerberos-constrained-delegation) című témakörben ismertetett lépéseket. Ügyeljen rá, hogy az átjáró Szolgáltatás felhasználója úgy legyen konfigurálva, hogy delegált hitelesítő adatokat nyújtson a Active Directory-környezetben a BW-alkalmazáskiszolgálót képviselő Szolgáltatás felhasználójának.
+
+1. Ha még nem tette meg, telepítse az [SAP .NET-összekötő](https://support.sap.com/en/product/connectors/msnet.html) x64-es verzióját azon a számítógépen, amelyen az átjáró telepítve van. Azt, hogy az összetevő telepítve van-e, úgy ellenőrizheti, ha a BW-kiszolgálóhoz megpróbál kapcsolódni a Power BI Desktopban. Ha nem tud kapcsolatot létesíteni a 2.0-ás implementációval, a .NET-összekötő nincs telepítve.
+
+1. Ügyeljen rá, hogy az SAP biztonságos bejelentkezési ügyfél (SLC) ne fusson azon a számítógépen, amelyen az átjáró telepítve van. Az SLC olyan módon gyorsítótárazza a Kerberos-jegyeket, amely zavarhatja az átjárók számára a Kerberos használatát az egyszeri bejelentkezéshez. Ha az SLC telepítve van, távolítsa el, vagy lépjen ki az SAP biztonságos bejelentkezési ügyfélből: kattintson a jobb gombbal a tálcán található ikonra, és válassza a Kijelentkezés és Kilépés lehetőséget, mielőtt az átjáróval egyszeri bejelentkezést használna. Az SLC nem támogatott a Windows Server rendszerű gépeken. További információt az [SAP 2780475 megjegyzés](https://launchpad.support.sap.com/#/notes/2780475) című cikkben talál (s-felhasználó szükséges hozzá).
+
+    ![SAP biztonságos bejelentkezési ügyfél](media/service-gateway-sso-kerberos/sap-secure-login-client.png)
+
+    Ha eltávolítja az SLC-t, vagy ha a **Kijelentkezés** és **Kilépés** lehetőséget választotta, nyisson meg egy parancsablakot, és a `klist purge` paranccsal törölje a gyorsítótárazott Kerberos-jegyeket, mielőtt az átjárón keresztül egyszeri bejelentkezést használna.
+
+1. Töltse le a CommonCryptoLib (sapcrypto.dll) **8.5.25 vagy újabb** verzióját az SAP Launchpadből, és másolja azt az átjárót tartalmazó számítógép egyik mappájába. Ugyanabban a könyvtárban, ahová a sapcrypto.dll fájlt másolta, hozzon létre egy sapcrypto.ini nevű fájlt a következő tartalommal:
+
+    ```
+    ccl/snc/enable\_kerberos\_in\_client\_role = 1
+    ```
+
+    Az .ini fájl tartalmazza a CommonCryptoLib által az SSO engedélyezéséhez szükséges konfigurációs adatokat az átjárót használó forgatókönyvekben.
+
+    > [!NOTE]
+    > Ezeket a fájlokat ugyanazon a helyen kell tárolni; más szóval a _/Path/to/sapcrypto/_ könyvtárnak tartalmaznia kell a sapcrypto.ini és a sapcrypto.dll fájlt is.
+
+    Mind az átjáró-szolgáltatás felhasználójának, mind pedig a Szolgáltatás felhasználó által megszemélyesített Active Directory- (AD-) felhasználónak rendelkeznie kell olvasási és végrehajtási engedélyekkel mindkét fájlhoz. Javasoljuk, hogy az .ini és a .dll kiterjesztésű fájlokra vonatkozó engedélyeket adja meg a Hitelesített felhasználók csoport számára. Tesztelési célból ezeket az engedélyeket explicit módon megadhatja az átjáró Szolgáltatás felhasználója és a megszemélyesített felhasználó számára is. Az alábbi képernyőképen a Hitelesített felhasználók csoport számára **olvasási &amp; végrehajtási** engedélyeket adtuk meg a sapcrypto.dll fájlhoz:
+
+    ![Hitelesített felhasználók](media/service-gateway-sso-kerberos/authenticated-users.png)
+
+1. Ha nem rendelkezik SAP Business Warehouse-kiszolgáló adatforrással, a Power BI szolgáltatás **Átjárók kezelése** lapján adjon hozzá egy adatforrást. Ha már rendelkezik olyan BW-adatforrással, amely ahhoz az átjáróhoz van társítva, amelyen az SSO-csatlakozást szeretné használni, készítse elő szerkesztésre.
+
+    Az **SNC-kódtár** esetében válassza vagy az **SNC\_LIB vagy az SNC\_LIB\_64 környezeti változót** vagy az **Egyéni** lehetőséget. Ha az **SNC\_LIB** beállítást választja, akkor az átjárógépen az SNC\_LIB\_64 környezeti változó értékét a sapcrypto.dll fájlnak az átjárógépen található példányára mutató abszolút elérési útra kell beállítania, ami lehet például: C:\Users\Test\Desktop\sapcrypto.dll. Ha az **Egyéni** lehetőséget választja, illessze be a sapcrypto.dll fájl abszolút elérési útját az egyéni SNC-kódtár elérési útja mezőbe, amely az **Átjárók kezelése** oldalon jelenik meg.
+
+    A **Speciális beállítások** területen jelölje be az **Egyszeri bejelentkezés használata Kerberosszal DirectQuery-lekérdezéseknél** jelölőnégyzetet. A megadott felhasználónévnek csak a BW-kiszolgálóhoz való kapcsolódáshoz kell engedéllyel rendelkeznie, és elsősorban arra szolgál, hogy az adatforrás-kapcsolatot a létrehozása után tesztelni tudja. A felhasználó az importálási alapú adatkészletből létrehozott jelentések frissítéséhez is használható, ha van ilyen. Ha **Alapszintű** hitelesítést választ, meg kell adnia egy BW-felhasználót. Ha a **Windows**-hitelesítés lehetőséget választja, meg kell adnia egy olyan Windows Active Directory felhasználót, aki a BW-felhasználóhoz van hozzárendelve az SAP grafikus felhasználói felületén lévő SU01 tranzakción keresztül. A többi mezőnek (**Rendszer száma **,** Ügyfél-azonosító **,** SNC-partner neve** stb.) meg kell egyeznie azzal az információval, amelyet a Power BI Desktopban adna meg ahhoz, hogy a BW kiszolgálóhoz egyszeri bejelentkezéssel csatlakozzon. Válassza az **Alkalmaz** lehetőséget, és tesztelje a kapcsolatot.
+
+    ![Hitelesítési módszer](media/service-gateway-sso-kerberos/authentication-method.png)
+
+1. Hozzon létre egy CCL\_PROFILE rendszerkörnyezeti változót, amely a sapcrypto.ini fájlra mutat:
+
+    ![A CCL\_PROFILE rendszerkörnyezeti változó](media/service-gateway-sso-kerberos/ccl-profile-variable.png)
+
+    Ne feledje, hogy a sapcrypto .dll és .ini kiterjesztésű fájloknak ugyanazon a helyen kell lenniük. A fenti példában az sapcrypto.ini az asztalon található, ezért a sapcrypto.dll fájlt is az asztalon kell elhelyezni.
+
+1. Indítsa újra az átjárószolgáltatást:
+
+    ![Az átjárószolgáltatás újraindítása](media/service-gateway-sso-kerberos/restart-gateway-service.png)
+
+1. Tegyen közzé egy **DirectQuery-alapú** BW-jelentést a Power BI Desktopból. Ennek a jelentésnek azokat az adatokat kell használnia, amelyek elérhetőek annak a BW-felhasználónak a számára, aki ahhoz az Azure Active Directory- (AAD-) felhasználóhoz van rendelve, amelyik bejelentkezik a Power BI szolgáltatásba. A frissítés működése miatt az importálás helyett a DirectQueryt kell használnia. Importálási alapú jelentések frissítésekor az átjáró azokat a hitelesítő adatokat használja, amelyet a BW-adatforrás létrehozásakor a **Felhasználónév** és **Jelszó** mezőkbe beírt. Más szóval a Kerberos SSO **nincs** használatban. A közzétételkor ügyeljen arra, hogy azt az átjárót válassza ki, amelyet a BW egyszeri bejelentkezéshez konfigurált, ha több átjáróval rendelkezik. A Power BI szolgáltatásban most már frissítheti a jelentést, és létrehozhat új jelentést is a közzétett adatkészlet alapján.
+
+### <a name="troubleshooting"></a>Hibaelhárítás
+
+Ha nem tudja frissíteni a jelentést a Power BI szolgáltatásban, a probléma diagnosztizálásához használhatja az átjáró nyomkövetését, a CPIC-nyomkövetést és a CommonCryptoLib-nyomkövetést is. A CPIC-nyomkövetés és a CommonCryptoLib SAP-termékek, így a Microsoft nem tud közvetlen támogatást biztosítani hozzájuk. Azon Active Directory felhasználók számára, akik SSO-hozzáférést kapnak a BW-hez, egyes Active Directory konfigurációknál előfordulhat, hogy a felhasználóknak a rendszergazdák csoport tagjainak kell lenniük azon a gépen, amelyen az átjáró telepítve van.
+
+1. **Átjárónaplók:** Reprodukálja a problémát, nyissa meg az [átjáró alkalmazást](https://docs.microsoft.com/data-integration/gateway/service-gateway-app), lépjen a **Diagnosztika** lapra, és válassza a **Naplók exportálása** lehetőséget:
+
+    ![Átjárónaplók exportálása](media/service-gateway-sso-kerberos/export-gateway-logs.png)
+
+1. **CPIC-nyomkövetés:** A CPIC-nyomkövetés engedélyezéséhez állítsa be a következő két környezeti változót: CPIC\_TRACE és CPIC\_TRACE\_DIR. Az első változó beállítja a nyomkövetési szintet, a második változó pedig beállítja a nyomkövetési fájl könyvtárát. A címtárnak olyan helyen kell lennie, amelyet a Hitelesített felhasználók csoport tagjai írhatnak. A CPIC\_TRACE értékét állítsa 3-ra, a CPIC\_TRACE\_DIR értékét pedig arra a könyvtárra, amelybe a nyomkövetési fájlokat szeretné írni.
+
+    ![CPIC-nyomkövetés](media/service-gateway-sso-kerberos/cpic-tracing.png)
+
+    Reprodukálja a problémát, és ellenőrizze, hogy a CPIC\_TRACE\_DIR tartalmaz-e nyomkövetési fájlokat.
+
+1. **CommonCryptoLib-nyomkövetés:** Kapcsolja be a CommonCryptoLib-nyomkövetést úgy, hogy két sort ad hozzá a korábban létrehozott sapcrypto.ini fájlhoz:
+
+    ```
+    ccl/trace/level=5
+    ccl/trace/directory=\\<drive\\>:\logs\sectrace
+    ```
+
+    Fontos, hogy a _ccl/trace/directory_ beállítást olyan hely megadásával módosítsa, amelyre a Hitelesített felhasználók csoport tagjai írni tudnak. Másik lehetőségként létrehozhat egy új .ini fájlt a viselkedés módosításához. Az sapcrypto.ini és az sapcrypto.dll fájlok könyvtárában hozzon létre egy sectrace.ini nevű fájlt az alábbi tartalommal.  Cserélje le a DIRECTORY beállítást a számítógépének egy olyan helyére, amelyet a Hitelesített felhasználó írni tud:
+
+    ```
+    LEVEL = 5
+    
+    DIRECTORY = \\<drive\\>:\logs\sectrace
+    ```
+
+    Most reprodukálja a problémát, és ellenőrizze, hogy a DIRECTORY beállításban megadott hely tartalmaz-e nyomkövetési fájlokat. Ha elkészült, kapcsolja ki a CPIC- és a CCL-nyomkövetést.
+
+    A CommonCryptoLib-nyomkövetésről az [SAP 2491573 megjegyzésben](https://launchpad.support.sap.com/#/notes/2491573) talál további információt (s-felhasználó szükséges).
+
+## <a name="configure-sap-bw-for-sso-using-gsskrb5gx64krb5"></a>Az SAP BW konfigurálása egyszeri bejelentkezéshez gsskrb5/gx64krb5 használatával
+
+Ha nem tudja használni a CommonCryptoLib-et SNC-kódtárként, használja helyette a gsskrb5/gx64krb5-öt. A telepítési lépések azonban lényegesen összetettebbek, és az SAP már nem nyújt támogatást az gsskrb5-höz.
 
 Ez az útmutató próbál olyan átfogó lennie, amennyire csak lehetséges. Ha már végrehajtott ezek közül néhány lépést, azokat kihagyhatja. Például már létrehozhatott egy szolgáltatásfelhasználót az SAP BW-kiszolgálóhoz, és leképezhette rá az egyszerű szolgáltatásnevet, vagy már telepíthette a `gsskrb5` kódtárat.
 
@@ -382,7 +469,7 @@ Az eredmény az, hogy az átjáró nem tudja megfelelően megszemélyesíteni az
 
 A **helyszíni adatátjáróval** és a **DirectQueryvel** kapcsolatos további információkért lásd az alábbi forrásanyagokat:
 
-* [Mi az a helyszíni adatátjáró?](/data-integration/gateway/service-gateway-getting-started)
+* [Mi az a helyszíni adatátjáró?](/data-integration/gateway/service-gateway-onprem)
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások](desktop-directquery-data-sources.md)
 * [A DirectQuery és az SAP BW](desktop-directquery-sap-bw.md)

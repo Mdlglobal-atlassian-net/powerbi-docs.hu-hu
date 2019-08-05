@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2e0fc8ae6a6d2b01121ffb1c52c29652af21f21e
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: 1d07c678b02f77689d24d067ca58a4e28ac70cb0
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67533086"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623917"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Az Alakzatleképezések funkció a Power BI Desktopban (előzetes verzió)
 Hozzon létre egy **Alakzatleképezés** vizualizációt a régiók különböző színek használatával történő összehasonlításához a térképen. A **Leképezés** vizualizációval szemben az **Alakzatleképezés** vizualizáció nem képes az adatpontok pontos földrajzi helyének megjelenítésére a térképen. Ehelyett alkalmazásának fő célja a régiók relatív összehasonlításának megjelenítése egy térképen eltérő színezéssel.
@@ -323,11 +323,11 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | mx-gro |Gro. |MX-GRO |Guerrero |Guerrero |GR |
 | mx-gua |Gto. |MX-GUA |Guanajuato |Guanajuato |GT |
 | mx-dur |Dgo. |MX-DUR |Durango |Durango |DU |
-| mx-dif |Col. |MX-DIF |Ciudad de México |Mexikóváros |DF |
-| mx-col |Coah. |MX-COL |Colima |Colima |CL |
-| mx-coa |Chis. |MX-COA |Coahuila |Coahuila |CA |
+| mx-dif |CDMX. |MX-DIF |Ciudad de México |Mexikóváros |DF |
+| mx-col |Col. |MX-COL |Colima |Colima |CL |
+| mx-coa |Coah. |MX-COA |Coahuila |Coahuila |CA |
 | mx-chh |Chih. |MX-CHH |Chihuahua |Chihuahua |CH |
-| mx-chp |CDMX. |MX-CHP |Chiapas |Chiapas |CP |
+| mx-chp |Chis. |MX-CHP |Chiapas |Chiapas |CP |
 | mx-cam |Camp. |MX-CAM |Campeche |Campeche |CM |
 | mx-bcs |B.C.S. |MX-BCS |Déli-Alsó-Kalifornia |Déli-Alsó-Kalifornia |BS |
 | mx-bcn |B.C. |MX-BCN |Alsó-Kalifornia |Alsó-Kalifornia |BN |
