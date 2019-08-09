@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 07/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 86a3faf2095ff5100bc372a68b7d56861eb94806
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 21fa3c5c3907e8c1aa4d40bd3e6332c77ff62b98
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523352"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730089"
 ---
 # <a name="export-data-from-visualizations"></a>Adatok exportálása vizualizációkból
 
@@ -79,6 +79,8 @@ Annak érdekében, hogy követni tudja a lépéseket, nyissa meg a [Beszerzésel
     ![Az Adatok exportálása panel képernyőképe az Összesített adatok, az xlsx és az Exportálás lehetőségek kiemelésével.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 
     Ha szűrőket alkalmazott a vizualizációhoz, az exportált adatok szűrve lesznek exportálva. Ha az **Exportálás** lehetőséget választja, a böngésző megkéri, hogy mentse a fájlt. A mentés után nyissa meg a fájlt az Excelben.
+    
+    A rendszer a hierarchia által használt összes adatot exportálja, nem csak a vizualizáció aktuális részletezési szintjéhez használtakat. Ha például a vizualizáció nincs fentről lefelé részletezve, az exportált adatok a hierarchia minden adatát tartalmazni fogják, nem csak a vizualizáció jelenlegi részletezési szintjéhez használt adatokat.
 
     **Összesített adatok**: Válassza ezt a lehetőséget, ha a vizualizációban látható adatokat szeretné exportálni.  Az ilyen típusú export csak azokat az adatokat (oszlopokat és méréseket) jeleníti meg, amelyekkel létrehozta a vizualizációt.  Ha a vizualizáció összesítést tartalmaz, exportálja az összesített adatokat. Például ha egy négy sávot megjelenítő sávdiagrammal rendelkezik, négy sornyi adatot fog kapni. Az összesített adatok *.xlsx*- és *.csv*-fájlként érhetők el.
 
@@ -92,6 +94,8 @@ Annak érdekében, hogy követni tudja a lépéseket, nyissa meg a [Beszerzésel
     > A mögöttes adatok exportálására a jelentésbeállításoktól függően van vagy nincs lehetősége.
 
     Ha szűrőket alkalmazott a vizualizációhoz, az exportált adatok szűrve lesznek exportálva. Ha az **Exportálás** lehetőséget választja, a böngésző megkéri, hogy mentse a fájlt. A mentés után nyissa meg a fájlt az Excelben.
+    
+    A rendszer a hierarchia által használt összes adatot exportálja, nem csak a vizualizáció aktuális részletezési szintjéhez használtakat. Ha például a vizualizáció nincs fentről lefelé részletezve, az exportált adatok a hierarchia minden adatát tartalmazni fogják, nem csak a vizualizáció jelenlegi részletezési szintjéhez használt adatokat.
 
     >[!WARNING]
     >A mögöttes adatok exportálása lehetővé teszi a felhasználók számára, hogy az összes részletes adatot (az adatokban szereplő minden sort) megtekintsék. A Power BI szolgáltatás rendszergazdái ezt kikapcsolhatják a vállalatnál. Ha Ön egy adathalmaz tulajdonosa, a jogvédett oszlopokat **rejtett** állapotúra állíthatja, így azok nem jelennek meg a **Mezők** listájában a Desktopban vagy a Power BI szolgáltatásban.

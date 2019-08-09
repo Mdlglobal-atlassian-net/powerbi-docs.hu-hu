@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d46fa8be055186d2430ca4d3c387fae93b91acc3
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 431c1738a5d2e975fd96a8209ca8245cd4414d40
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523215"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730135"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mértékek a Power BI Desktopban
 
 A **Power BI Desktop** segítségével néhány kattintással készíthet elemzéseket adatairól. Néha azonban az adatok nem tartalmaznak minden információt, amelyre a legfontosabb kérdések megválaszolásához szüksége van. Ezeket a mértékek segítségével szerezheti meg.
 
-Mértékeket a leggyakoribb adatelemzéseknél is használunk. Például összegeket, átlagokat, minimum- és maximumértékeket, darabszámokat vagy a DAX-képletek használatával létrehozott speciális felhasználói számításokat. A mértékek számított eredménye a jelentések használata során folyamatosan változik, ami lehetővé teszi az adatok gyors és dinamikus alkalmi felderítését. Lássuk mindezt közelebbről.
+Mértékeket a leggyakoribb adatelemzéseknél is használunk. Az egyszerű összesítések, például az összegek, átlagok, minimum, maximum és szám értékek a Mezők területen állíthatók be, ahogyan azt az [összegzési és kategóriabeállításokról](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=16) szóló videó is ismerteti. Fejlettebb számításokat egy DAX-képlettel készíthet. A mértékek számított eredménye a jelentések használata során folyamatosan változik, ami lehetővé teszi az adatok gyors és dinamikus alkalmi felderítését. Lássuk mindezt közelebbről.
 
 ## <a name="understanding-measures"></a>A mértékek ismertetése
 
@@ -64,6 +64,25 @@ Mértékekhez adatkategóriák is kiválaszthatók.
 Ez többek között lehetővé teszi, hogy mértékek használatával dinamikusan hozzon létre URL-eket, és hogy az adatkategóriát webes URL-ként jelölje meg. 
 
 Például létrehozhat táblázatokat, amelyben a mértékek webes URL-címekként jelennek meg, és a kiválasztásnak megfelelően a létrehozott URL-címek kattinthatók is lesznek. Ez különösen hasznos, ha más Power BI-jelentésekhez szeretne hivatkozásokat létrehozni [URL-szűrő paraméterekkel](service-url-filters.md).
+
+
+## <a name="organizing-your-measures"></a>A mértékek szervezése
+
+A mértékek egy *Kezdőlap* táblával rendelkeznek, amely meghatározza, hogy ezek a mezőlistában hol találhatók. Módosíthatja a helyüket, ha kiválaszt egy helyet a modell tábláiból.
+
+![Tábla kiválasztása a mértékhez](media/desktop-measures/measures-03.png)
+
+Egy tábla mezőit *megjelenítési mappákba* is rendezheti. A Power BI Desktop ablakának bal oldalán válassza a **Modellnézet** lehetőséget, majd válassza ki a vásznon megjelenő mezők közül azt, amelyiket át szeretné helyezni. A Tulajdonságok panelen egy szövegmező jelenik meg a **megjelenítési mappához**. A **Megjelenítési mappa** mezőbe írt név létrehozza a mappát, majd a mappába helyezi a kijelölt mezőt.
+
+![Mező létrehozása mértékekhez](media/desktop-measures/measures-04.gif)
+
+Almappákat a fordított perjel karakterrel hozhat létre. A *Finance\Currencies* például egy *Finance* (Pénzügy) mappát hoz létre, abban pedig egy *Currencies* (Pénznemek) mappát.
+
+Egy mezőt több mappában is megjeleníthet, ha egy pontosvesszővel választja el a mappaneveket. Például a *Products\Names;Departments* kifejezés egy, a *Departments* (Részlegek) mappában megjelenő mezőt eredményez, amely emellett a *Products* (Termékek) mappa *Names* (Nevek) mappájában is megjelenik.
+
+Végül létrehozhat egy speciális táblát, amely csak mértékeket tartalmaz, és mindig a **mezőlista** tetején jelenik meg. Ehhez hozzon létre egy egy oszloppal rendelkező táblát. Ezt az **Adatbevitel** lehetőséggel teheti meg. Ezután helyezze át a mértékeket a táblába. Végül rejtse el a létrehozott oszlopot (nem a táblázatot). A Power BI Desktop a **mezőlista** bezárása és újbóli megnyitása után jeleníti meg azt megfelelően. Ehhez kattintson a **mezőlista** tetején található sávnyílra.
+
+![Mértékek rendezése és a mezlista tetején tartása](media/desktop-measures/measures-05.png)
 
 ## <a name="learn-more"></a>További információ
 Itt csak egy rövid áttekintést adtunk a mértékekről, azonban ennél sokkal több információ áll rendelkezésre, amelyek alapján megtanulhat saját mértékeket létrehozni. Tekintse meg a következő [oktatóanyagot: Egyéni mértékek létrehozása a Power BI Desktopban](desktop-tutorial-create-measures.md). Ebben a cikkben egy letöltött mintafájlon keresztül lépésenként sajátíthatja el a mértékek létrehozását.  

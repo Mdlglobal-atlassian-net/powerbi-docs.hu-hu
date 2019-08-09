@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 76361bba2690e0ab6ae8fa49008d7a6accae900e
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: 60d97d8b2226e9a3f9aba2bf043bd9c6aade161a
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325085"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665315"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-csomagok a Power BI szolgáltatásban
 A hatékony [R programozási nyelv](https://www.r-project.org/) használatával vizualizációkat hozhat létre a Power BI szolgáltatásban. A Power BI szolgáltatás számos R-csomagot támogat (és a támogatott csomagok száma folyamatosan nő), egyes csomagok viszont nem támogatottak.
@@ -29,6 +29,7 @@ A **Power BI szolgáltatás** által támogatott R-csomagok megtalálhatók a k�
 ## <a name="requirements-and-limitations-of-r-packages"></a>R-csomagokra vonatkozó követelmények és korlátozások
 Az R-csomagokra néhány követelmény és korlátozás is vonatkozik:
 
+* Aktuális R-futtatókörnyezet: Microsoft R 3.4.4
 * A Power BI szolgáltatás többnyire támogatja az olyan ingyenes és nyílt forráskódú szoftverlicencekkel rendelkező R-csomagokat, mint a GPL-2, GPL-3, MIT+, és sok más.
 * A Power BI szolgáltatás támogatja a CRAN-en közzétett csomagokat. A szolgáltatás nem támogatja a privát vagy egyéni R-csomagokat. A felhasználóknak ajánlott a CRAN-en elérhetővé tenni privát csomagjaikat, mielőtt kérelmezik a csomag elérhetővé tételét a Power BI szolgáltatásban.
 * A **Power BI Desktophoz** az R-csomagoknak két változata létezik:

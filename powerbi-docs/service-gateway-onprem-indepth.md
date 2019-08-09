@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: de3400989e6d8fe62c03d6b21707559fac0fd7bf
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 7d6948f7b5be25b7027a4aa2adaf244a2cde836a
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271441"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68729972"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Helyszíni adatátjáró – részletesen
 
@@ -55,9 +55,9 @@ Lásd: [Azure Active Directory](/data-integration/gateway/service-gateway-onprem
 
 Lásd: [Honnan tudhatom meg, mi az UPN-em?](/data-integration/gateway/service-gateway-onprem-indepth#how-do-i-tell-what-my-upn-is)
 
-## <a name="mapping-usernames-for-analysis-services-data-sources"></a>Felhasználónevek és Analysis Services-adatforrások egymáshoz rendelése
+## <a name="map-user-names-for-analysis-services-data-sources"></a>Felhasználónevek és Analysis Services-adatforrások egymáshoz rendelése
 
-Lásd: [Felhasználónevek és Analysis Services-adatforrások egymáshoz rendelése](service-gateway-enterprise-manage-ssas.md#mapping-usernames-for-analysis-services-data-sources).
+[Felhasználónevek és Analysis Services-adatforrások egymáshoz rendelése](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
 ## <a name="synchronize-an-on-premises-active-directory-with-azure-active-directory"></a>Helyszíni Active Directory szinkronizálása az Azure Active Directoryval
 

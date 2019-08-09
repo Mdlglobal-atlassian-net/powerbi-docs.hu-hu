@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: d7d3bf85661284835271b68c476ee53ec2c474bc
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 031274f4f35ef1e36ec17648c2cbf967f5436020
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751134"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68729795"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
@@ -45,6 +45,10 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
             - A PBIRS kijelölési ablakát könnyebb visszalépési hivatkozással bővítettük
             - Javítás a PBIRS kontrasztos megjelenítési módjához, amely megjeleníti a Vissza gombot és a figyelmeztető üzeneteket.
             - Javítások a felhasználói felület Kiválasztás paneléhez és a vászonméretezéshez.
+
+    - *Verzió: 2.69.5467.5201 (2019. május), Kiadás dátuma: 2019. július 30.*
+        - Hibajavítások
+            - Javítás a helytelen telemetrianaplózáshoz
 
 ## <a name="january-2019"></a>2019. január
 
@@ -93,8 +97,11 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
         - A Power BI jelentéskészítő kiszolgáló eltávolítása után továbbra is megmaradnak a parancsikonok és a rögzített ikonok
         - A Power BI jelentéskészítő kiszolgáló a Start menübe való rögzítésekor jelentkező fekete szöveg és fekete ikon javítása
 
-    - *Verzió: 2.65.5313.1421 (2019. január), Kiadás dátuma: 2019. január 22.*
-        - A Power BI jelentéskészítő kiszolgálóval (2019. január) való kapcsolathoz szükséges módosításokat tartalmaz  
+    - *Verzió: 2.65.5313.1421 (2019. január), Kiadás dátuma: 2019. január 22.* (új build és verzió)
+        - A Power BI jelentéskészítő kiszolgálóval (2019. január) való kapcsolathoz szükséges módosításokat tartalmaz 
+    - *Verzió: 2.65.5313.5141 (2019. január), Kiadás dátuma: 2019. július 31.* (új build és verzió)
+        - Hibajavítások
+            - Javítás a helytelen telemetrianaplózáshoz
 
 ## <a name="august-2018"></a>2018. augusztus
 

@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
+ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: dc117c9b17e9d20d1e5be6e6fedd18cb7aa3ae61
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4629b78379ba87d58c31f8102b855e1f62565abd
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61140607"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665460"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Irányítópultok és jelentések megtekintése a Power BI-mobilalkalmazásokban
 A következőkre vonatkozik:
 
-| ![iPhone](./media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Android rendszerű telefon](./media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Android rendszerű táblagép](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | ![Windows 10-eszközök](./media/mobile-apps-view-dashboard/win-10-logo-50-px.png) |
+| ![iPhone](./media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Android rendszerű telefon](./media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Android rendszerű táblagép](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | 
 |:--- |:--- |:--- |:--- |:--- |
-| [iPhone-ok](mobile-apps-view-dashboard.md#view-dashboards-on-your-iphone) |[iPadek](mobile-apps-view-dashboard.md#view-dashboards-on-your-ipad) |[Android rendszerű telefonok](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone) |[Android rendszerű táblagépek](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-tablet) |[Windows 10-eszközök](mobile-apps-view-dashboard.md#view-dashboards-on-your-windows-10-device) |
+| [iPhone-ok](mobile-apps-view-dashboard.md#view-dashboards-on-your-iphone) |[iPadek](mobile-apps-view-dashboard.md#view-dashboards-on-your-ipad) |[Android rendszerű telefonok](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone) |[Android rendszerű táblagépek](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-tablet) |
 
 Az irányítópultok betekintést nyújtanak és hozzáférést biztosítanak a vállalat életciklusához és folyamataihoz. Az irányítópult egy központi helyet biztosít, ahonnan áttekintheti és nyomon követheti vállalkozása aktuális állapotát.
 
@@ -145,45 +145,6 @@ A „csippentés” kézmozdulattal nagyíthatja és kicsinyítheti az irányít
     ![Útkövetés](./media/mobile-apps-view-dashboard/power-bi-android-tablet-breadcrumb.png)
 
     A „csippentés” kézmozdulattal nagyíthatja és kicsinyítheti az irányítópult különböző területeit, és pásztázhat a navigáláshoz. Továbbra is [koppinthat a csempékre](mobile-tiles-in-the-mobile-apps.md), hogy Fókusz módban nyissa meg a csempét és használhassa az adatokat.
-
-## <a name="view-dashboards-on-your-windows-10-device"></a>Irányítópultok megtekintése Windows 10 eszközön
-1. Nyissa meg a Power BI alkalmazást a Windows 10 eszközön, és jelentkezzen be.
-   
-   Előbb [le szeretné tölteni az alkalmazást](http://go.microsoft.com/fwlink/?LinkID=526478)?
-2. Koppintson egy irányítópultra a megnyitásához.   
-   
-   ![Irányítópult kezdőlapja](./media/mobile-apps-view-dashboard/power-bi-windows-10-device-dashboard-home.png)
-   
-   * A fekete csillagok a kedvenc irányítópultokat jelzik. 
-   * Az irányítópultok neve (ebben a példában **MBI**) alatti jelölés az egyes irányítópultok adatainak besorolását jeleníti meg. A [Power BI adatbesorolásairól itt talál](../../service-data-classification.md) további információkat.
-   
-   A Power BI irányítópultok kissé máshogy néznek ki a Windows 10 rendszerű telefonokon. Minden csempe ugyanolyan szélesen jelenik meg, és felülről lefelé egymás után vannak rendezve.
-   
-   ![Irányítópult álló tájolásban](./media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-0928.png)
-   
-    Oldalra is fordíthatja a telefont, hogy fekvő tájolású módban lássa az irányítópultokat a telefonon.
-   
-   > [!TIP]
-   > Ha Ön az irányítópult tulajdonosa, a Power BI szolgáltatásban [létrehozhat egy kifejezetten telefonokhoz való nézetet](../../service-create-dashboard-mobile-phone-view.md) álló tájolású módban. 
-   > 
-   > 
-3. Az irányítópulton a következőket teheti:
-   
-   * [Koppintson egy csempére](mobile-tiles-in-the-mobile-apps.md) annak megnyitásához és használatához.
-   * Koppintson a **Teljes képernyő** ikonra ![Teljes képernyő ikon](./media/mobile-apps-view-dashboard/power-bi-windows-10-full-screen-icon.png), hogy szegélyek és menük nélkül jelenjen meg a Power BI irányítópult, mint a PowerPoint **Diavetítés** nézetében.
-   * Koppintson a **Meghívás** ikonra ![Meghívás ikon](./media/mobile-apps-view-dashboard/pbi_andr_inviteicon.png), hogy [megossza az irányítópultot](mobile-share-dashboard-from-the-mobile-apps.md) egy munkatárssal.
-   * Koppintson a ![Kedvenc csillagra](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png), hogy [kedvencként jelöljön meg egy irányítópultot](mobile-apps-favorites.md).
-   * Koppintson a **Kitűzés a kezdőképernyőre** ikonra, hogy [kitűzze az irányítópultot a Windows kezdőképernyőre](mobile-pin-dashboard-start-screen-windows-10-phone-app.md). 
-4. Ha vissza szeretne lépni az irányítópultok kezdőlapjára, koppintson az irányítópult nevére az útkövetés megnyitásához, majd koppintson a **Saját munkaterület** elemre:
-   
-    ![Útkövetés](./media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-breadcrumb.png)
-
-### <a name="view-dashboards-in-landscape-mode-on-your-windows-10-phone"></a>Irányítópultok megtekintése fekvő tájolásban Windows 10 rendszerű telefonon
-Fekvő tájolással is megjelenítheti az irányítópultokat a telefon elfordításával. Az irányítópult elrendezése a csempék sorozatáról a teljes irányítópult nézetére vált – úgy látja az irányítópult összes csempéjét, ahogyan a Power BI szolgáltatásban vannak elrendezve.
-
-![Irányítópult fekvő tájolása](./media/mobile-apps-view-dashboard/pbi_iph_landscape.png)
-
-A „csippentés” kézmozdulattal nagyíthatja és kicsinyítheti az irányítópult különböző területeit, és pásztázhat a navigáláshoz. Továbbra is [koppinthat a csempékre](mobile-tiles-in-the-mobile-apps.md), hogy Fókusz módban nyissa meg a csempét és használhassa az adatokat.
 
 ## <a name="create-a-phone-view-of-a-dashboard-in-the-power-bi-service"></a>Irányítópult telefonos nézetének létrehozása a Power BI szolgáltatásban
 Ha Ön az irányítópult tulajdonosa, *a Power BI szolgáltatásban* létrehozhat egy kifejezetten telefonokhoz való nézetet álló tájolású módban. 

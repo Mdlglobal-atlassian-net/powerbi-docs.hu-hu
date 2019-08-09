@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/18/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 775abf014f571b508832c5cb9a52a62aad455a7b
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: fcad10a77ad531562443470296c9d712b2aa9724
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324799"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757616"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>A DirectQuery használata a Power BI Desktopban
 A **Power BI Desktop** használatával az adatforrásokhoz való kapcsolódáskor mindig importálhat egy másolatot az adatokról a **Power BI Desktopba**. Egyes adatforrások esetében egy alternatív módszer is használható: ha közvetlenül kapcsolódik az adatforráshoz a **DirectQuery** használatával.
@@ -62,10 +62,9 @@ A **DirectQuery** használata érdemes számításba vennie a következő három
   
   A forrásadatbázis terhelését is érdemes figyelembe vennie a közzétett jelentést használó Power BI-felhasználók száma alapján. A *Sorszintű biztonság* (RLS) használatának is jelentős hatása lehet a teljesítményre: a több felhasználó által megosztott, nem sorszintű biztonságra konfigurált irányítópultcsempék egyetlen lekérdezést küldenek az adatbázisnak, a sorszintű biztonság használatával azonban *felhasználónként* egy lekérdezés szükséges a csempe frissítéséhez, ami jelentősen növeli a forrásadatbázis terhelését, így gyengülhet a teljesítmény.
   
-  A Power BI a lehető leghatékonyabb lekérdezéseket állítja elő. Bizonyos helyzetekben azonban az összeállított lekérdezés nem elég hatékonyan kerüli el a sikertelen frissítéseket. Egy példa egy ilyen helyzetre, amikor egy előállított lekérdezés túlzottan nagy számú (1 milliónál több) sort kérne le a háttéradatforrásból, és ebben az esetben a következő hiba lép fel:
+  A Power BI a lehető leghatékonyabb lekérdezéseket állítja elő. Bizonyos helyzetekben azonban az összeállított lekérdezés nem elég hatékonyan kerüli el a sikertelen frissítéseket. Egy példa egy ilyen helyzetre, amikor egy előállított lekérdezés túlzottan nagy számú sort kérne le a háttéradatforrásból, és ebben az esetben a következő hiba lép fel:
   
       The resultset of a query to external data source has exceeded
-      the maximum allowed size of '1000000' rows.
   
   Ez a helyzet olyan egyszerű diagramok esetén fordulhat elő, amelyek tartalmaznak egy nagyon nagy számosságú oszlopot, és amelyekben az összesítési beállítás az *Összegzés mellőzése*. A vizualizáció legfeljebb 1 milliós számosságú oszlopokat tartalmazhat, vagy megfelelő szűrőket kell alkalmazni rá.
 * **Biztonság** – A közzétett jelentéseket használó minden felhasználó a Power BI szolgáltatásban való közzététel után megadott hitelesítő adatokkal kapcsolódik a háttéradatforrásra. Ez ugyanaz a helyzet, mint az importált adatok esetében: minden felhasználó ugyanazokat az adatokat látja, függetlenül a háttérforráson definiált biztonsági szabályoktól. A felhasználószintű biztonságra vágyó ügyfeleknek DirectQuery-forrásokat és sorszintű biztonságot érdemes használniuk. [További információk a sorszintű biztonságról](service-admin-rls.md).

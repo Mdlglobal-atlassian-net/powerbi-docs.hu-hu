@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/24/2019
+ms.date: 07/25/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 1d1371fa63af51f50a631739e4b2eed5550dc7ee
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 9e2b1132e48e824b70ddb0e0d86bfed4efedff2f
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523325"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623888"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával
 
@@ -53,9 +53,9 @@ app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter
 
 A mezőtípus lehet szám, dátum és idő vagy sztring, és a használt típusnak egyeznie kell az adathalmazban megadottal.  Egy tábla oszlopának „sztring” beállítása például nem működik, ha dátum, idő vagy numerikus értéket keres egy adathalmaz dátumként beállított oszlopában, például a Table/StringColumn eq 1 oszlopban.
 
-* A **sztringeket** aposztrófok között kell megadni – ’vezető neve’.
-* A **számok** nem igényelnek különleges formázást
-* A **dátumokat és időpontokat** aposztrófok között kell megadni. Az OData v3-ban ezeket a datetime szónak kell megelőznie. Az OData v4-ben ez nem szükséges.
+* A **sztringeket** aposztrófok között kell megadni – „vezető neve”.
+* A **számok** nem igényelnek különleges formázást. További információt a [Numerikus adattípusok](#numeric-data-types) című cikkben találhat.
+* **Dátumok és időpontok** – Lásd a cikk [Dátum adattípusok](#date-data-types) című szakaszát. 
 
 Ha egyelőre nem minden világos, akkor olvasson tovább, és bővebb kifejtést is találhat.  
 
@@ -133,9 +133,17 @@ A Power BI URL-címekben a szűrők az alábbi formátumú számokat tartalmazha
 
 ### <a name="date-data-types"></a>Dátum adattípusok
 
-A Power BI az OData V3 és V4 **Date** és **DateTimeOffset** adattípusokat is támogatja.  A dátumok megadása EDM formátumban (2019-02-12T00:00:00) történik, tehát he megad egy dátumot ÉÉÉÉ-HH-NN formátumban, a Power BI ezt ÉÉÉÉ-HH-NNT00:00:00 időpontként értelmezi.
+A Power BI az OData V3 és V4 **Date** és **DateTimeOffset** adattípusokat is támogatja. Odata V3 estén a dátumokat aposztrófok között kell megadni, és eléjük be kell szúrni a datetime szót. Az Odata V4 esetén nincs szükség az aposztrófokra és a datetime szóra. 
+  
+A dátumok az EDM formátum (2019-02-12T00:00:00) használatával vannak ábrázolva: Ha a dátum ÉÉÉÉ-HH-NN formátumban van megadva, akkor a Power BI azt ÉÉÉÉ-HH-NNT00:00:00 formátumban értelmezi. Ügyeljen arra, hogy a hónap és nap kétjegyű formátumú legyen, HH és NN.
 
-Miért számít ez a megkülönböztetés? Tegyük fel, hogy létrehoz egy **Table/Date gt 2018-08-03** lekérdezésisztring-paramétert.  Az eredmények között lesz 2018. augusztus 3., vagy csak 2018. augusztus 4-étől kezdődnek? Mivel a Power BI **Táblázat/Dátum gt ’2018-08-03T00:00:00’** formátumra fordítja le a lekérdezést, az eredményekben minden nem nulla időösszetevővel rendelkező dátum szerepel, mert azok a **’2018-08-03T00:00:00’** dátumnál nagyobbak.
+Miért számít ez a megkülönböztetés? Tegyük fel, hogy létrehoz egy **Table/Date gt 2018-08-03** lekérdezésisztring-paramétert.  Az eredmények között lesz 2018. augusztus 3., vagy csak 2018. augusztus 4-étől kezdődnek? A Power BI a lekérdezést **Table/Date gt '2018-08-03T00:00:00'** formátumra fordítja le. Az eredményekben így minden nem nulla időösszetevővel rendelkező dátum szerepel, mert azok a **’2018-08-03T00:00:00’** dátumnál nagyobbak.
+
+A V3 és a V4 között további különbségek is megfigyelhetők. Az OData V3 nem támogatja a dátumokat, csak a DateTime formátumot. A V3 formátum használata esetén így a teljes dátumot és időt meg kell adni. A V3 nem támogatja a „datetime'2019-05-20'” típusú adatkonstansokat. A V4 formátumban azonban elég a „2019-05-20” szöveget használnia. Íme két egyenértékű szűrőlekérdezés V3, illetve V4 formátumban:
+
+- OData V4 formátum: filter=Table/Date gt 2019-05-20
+- OData V3 formátum: filter=Table/Date gt datetime'2019-05-20T00:00:00'
+
 
 ## <a name="special-characters-in-url-filters"></a>Speciális karakterek URL-szűrőkben
 

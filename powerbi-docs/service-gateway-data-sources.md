@@ -11,32 +11,28 @@ ms.date: 07/15/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3a4b343894f23d6f5720d95eb6c92436259befaa
-ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
+ms.openlocfilehash: c46a5c419c242ae25ecca74428362ec27f234afd
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352193"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730227"
 ---
 # <a name="manage-data-sources"></a>Adatforrások kezelése
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-A Power BI sokféle helyszíni adatforrást támogat, és ezek mindegyikéhez saját követelmények tartoznak. Egy átjáró használható egyetlen adatforráshoz vagy több adatforráshoz. Az itt tárgyalt példában adatforrásként SQL Server hozzáadását mutatjuk be, de a lépések más adatforrások esetén is hasonlóak.
+A Power BI sokféle helyszíni adatforrást támogat, és ezek mindegyikéhez saját követelmények tartoznak. Egy átjáró használható egyetlen adatforráshoz vagy több adatforráshoz. Az itt tárgyalt példában adatforrásként SQL Server hozzáadását mutatjuk be. A lépések más adatforrások esetén is hasonlók.
 
->[!NOTE]
->Az adatforrás-kezelési műveletek többsége API-k használatával is végrehajtható. További információ: [REST API-k (Átjárók)](/rest/api/power-bi/gateways).
+Az adatforrás-kezelési műveletek többsége API-k használatával is végrehajtható. További információ: [REST API-k (Átjárók)](/rest/api/power-bi/gateways).
 
 ## <a name="add-a-data-source"></a>Adatforrások felvétele
-
->[!NOTE]
->E-mail-cím nélküli csoportok nem vehetők fel.
 
 1. Válassza a Power BI szolgáltatás jobb felső sarkában lévő fogaskerék ikont ![Beállítások fogaskerék ikonja](media/service-gateway-data-sources/icon-gear.png) > **Átjárók kezelése**.
 
     ![Átjárók kezelése](media/service-gateway-data-sources/manage-gateways.png)
 
-2. Választhat egy átjárót, majd az **Adatforrás hozzáadása** lehetőséget, vagy választhatja az Átjárók alatti **Adatforrás hozzáadása** lehetőséget.
+2. Válasszon ki egy átjárót, majd válassza az **Adatforrás hozzáadása** lehetőséget. Másik lehetőségként lépjen az **Átjárók** > **Adatforrás hozzáadása** területre.
 
     ![Adatforrás hozzáadása](media/service-gateway-data-sources/add-data-source.png)
 
@@ -44,7 +40,7 @@ A Power BI sokféle helyszíni adatforrást támogat, és ezek mindegyikéhez sa
 
     ![SQL Server kiválasztása](media/service-gateway-data-sources/select-sql-server.png)
 
-4. Adja meg az adatforrás adatait. Itt adható meg például a **Kiszolgáló**, az **Adatbázis** és több más információ is.  
+4. Adja meg az adatforrás adatait. Itt adható meg például a **Kiszolgáló**, az **Adatbázis** és több más információ is. 
 
     ![Adatforrás beállításai](media/service-gateway-data-sources/data-source-settings.png)
 
@@ -62,13 +58,13 @@ Most már használhatja az adatforrást, hogy az SQL Server adatait felhasználj
 
 ## <a name="remove-a-data-source"></a>Adatforrás eltávolítása
 
-A már nem használt adatforrást el is távolíthatja. Ügyeljen arra, hogy egy adatforrás eltávolítása után az arra épülő irányítópultok és jelentések nem működnek megfelelően.
+A már nem használt adatforrást el is távolíthatja. Egy adatforrás eltávolítása után az arra épülő irányítópultok és jelentések nem működnek megfelelően.
 
 Az eltávolításához lépjen az adatforráshoz, és válassza az **Eltávolítás** lehetőséget.
 
 ![Adatforrás eltávolítása](media/service-gateway-data-sources/remove-data-source.png)
 
-## <a name="using-the-data-source-for-scheduled-refresh-or-directquery"></a>Az adatforrás használata ütemezett frissítéshez vagy DirectQueryhez
+## <a name="use-the-data-source-for-scheduled-refresh-or-directquery"></a>Az adatforrás használata ütemezett frissítéshez vagy DirectQueryhez
 
 Miután létrehozta az adatforrást, használhatja azt DirectQuery-kapcsolatokkal vagy ütemezett frissítéssel is.
 
@@ -104,11 +100,11 @@ Felhasználóknak és biztonsági csoportoknak rendszergazdai hozzáférést is 
 
     ![Felhasználók lap](media/service-gateway-data-sources/users-tab.png)
 
-4. Válassza a **Hozzáadás** lehetőséget, és az új tag megjelenik az ablakban.
+4. Válassza a **Hozzáadás** lehetőséget, és az új tag neve megjelenik az ablakban.
 
     ![Felhasználó hozzáadása](media/service-gateway-data-sources/add-user.png)
 
-Ennyi az egész. Ne feledje, hogy a felhasználókat minden adatforráshoz hozzá kell adnia, amelyhez hozzáférést kíván adni nekik. Minden adatforrás külön felhasználólistával rendelkezik, és a felhasználókat minden adatforráshoz külön kell hozzáadni.
+Ne feledje, hogy a felhasználókat minden adatforráshoz hozzá kell adnia, amelyhez hozzáférést kíván adni nekik. Minden adatforrás külön felhasználói listával rendelkezik. A felhasználókat külön adja hozzá az egyes adatforrásokhoz.
 
 ### <a name="remove-users-from-a-data-source"></a>Felhasználók eltávolítása egy adatforrásból
 
@@ -116,9 +112,9 @@ Az adatforráshoz tartozó **Felhasználók** lapon eltávolíthat az adatforrá
 
 ![Felhasználó eltávolítása](media/service-gateway-data-sources/remove-user.png)
 
-## <a name="storing-encrypted-credentials-in-the-cloud"></a>Titkosított hitelesítő adatok felhőbeli tárolása
+## <a name="store-encrypted-credentials-in-the-cloud"></a>Titkosított hitelesítő adatok felhőbeli tárolása
 
-Amikor hozzáad egy adatforrást az átjáróhoz, meg kell adnia az adatforrás hitelesítő adatait. Az adatforrás felé irányuló összes lekérdezés ezen hitelesítő adatok segítségével fut. A hitelesítő adatok titkosítása biztonságos szimmetrikus titkosítással még a felhőbe kerülésük előtt megtörténik, így az adatokat a felhőben nem lehet visszafejteni. Amikor az adatforráshoz hozzáférnek, a hitelesítő adatok visszafejtését a helyszíni átjárót futtató számítógép végzi.
+Amikor hozzáad egy adatforrást az átjáróhoz, meg kell adnia az adatforrás hitelesítő adatait. Az adatforrás felé irányuló összes lekérdezés ezen hitelesítő adatok segítségével fut. A hitelesítő adatok titkosítása biztonságos. Ez szimmetrikus titkosítással, még a felhőbe kerülésük előtt megtörténik, így az adatokat a felhőben nem lehet visszafejteni. Amikor az adatforráshoz hozzáférnek, a hitelesítő adatok visszafejtését a helyszíni átjárót futtató számítógép végzi.
 
 ## <a name="list-of-available-data-source-types"></a>Elérhető adatforrástípusok listája
 
@@ -126,11 +122,11 @@ A helyszíni adatátjáró az alábbi adatforrásokat támogatja a Power BI-hoz.
 
 | **Adatforrás** | **Élő lekérdezés/DirectQuery** | **Felhasználó által konfigurált kézi vagy ütemezett frissítés** |
 | --- | --- | --- |
-| ActiveDirectory |Nem |Igen |
 | Amazon Redshift |Igen |Igen |
-| Analysis Services |Igen |Igen |
 | AtScale-kockák |Igen |Igen |
-| Azure Blob-tároló |Nem |Igen |
+| Azure Active Directory |Nem |Igen |
+| Azure Analysis Services |Igen |Igen |
+| Azure Blob Storage |Nem |Igen |
 | Azure DevOps Server |Nem |Igen |
 | Azure Table Storage |Nem |Igen |
 | BI-összekötő |Igen |Igen |
@@ -153,7 +149,7 @@ A helyszíni adatátjáró az alábbi adatforrásokat támogatja a Power BI-hoz.
 | MySQL |Nem |Igen |
 | ODBC |Nem |Igen |
 | OData |Nem |Igen |
-| OleDb |Nem |Igen |
+| OLE DB |Nem |Igen |
 | Oracle |Igen |Igen |
 | PostgreSQL |Nem |Igen |
 | QubolePresto |Igen |Igen |
@@ -182,4 +178,4 @@ A helyszíni adatátjáró az alábbi adatforrásokat támogatja a Power BI-hoz.
 * [Adatforrások kezelése – Importálás/ütemezett frissítés](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Útmutató adatátjáró üzembe helyezéséhez](service-gateway-deployment-guidance.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? Kérdezze meg [a Power BI közösségét](http://community.powerbi.com/).

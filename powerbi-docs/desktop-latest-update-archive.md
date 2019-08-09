@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 55ffc166d5a42e850bc4e2dedf80de1c6b9f8634
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: 80bb78d6074fde907fe6b2d3bbb835cdc5e82976
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342151"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623850"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>A Power BI Desktop korábbi havi frissítései
 
@@ -114,8 +114,8 @@ Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verz
 
 A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
 
-* [A Power BI Desktop 2019. májusi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06.msi)
-* [A Power BI Desktop 2019. májusi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06_x64.msi)
+* [A Power BI Desktop 2019. júniusi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06.msi)
+* [A Power BI Desktop 2019. júniusi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06_x64.msi)
 
 
 ## <a name="may-2019-update-26954671251"></a>2019. májusi frissítés (2.69.5467.1251)
@@ -516,19 +516,6 @@ Ezeket a frissítéseket az alábbi videócsatorna mutatja be. A videók a blogb
 > Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
-Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verzióit is. Azt javasoljuk azonban, hogy a régebbiek helyett mindig a Power BI Desktop legújabb verzióját használja. Minden korábbi verzióra vonatkoznak az alábbi korlátozások:
-
-* A Power BI Desktop korábbi kiadásait nem frissítjük: a legújabb frissítéseket és funkciókat mindig a legújabb kiadással érheti el.
-* Előfordulhat, hogy a Power BI Desktop korábbi verzióival nem tud majd megnyitni egy újabb verzióban létrehozott vagy mentett fájlt. 
-* Ha a Power BI Desktop újabb verziójában mentett jelentés betöltésekor figyelmeztetés jelenik meg, és Ön a jelentést a korábbi verzióban menti, az új funkciókkal kapcsolatos minden információ elvész.
-* Csak az angol nyelvű Power BI Desktop-verziókat archiváljuk.
-
-A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
-
-* [A Power BI Desktop 2018. decemberi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-12.msi)
-* [A Power BI Desktop 2018. decemberi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-12_x64.msi)
-
-
 ## <a name="november-2018-update-2645285582"></a>2018. novemberi frissítés (2.64.5285.582)
 
 Novemberi frissítéseink új szolgáltatások és funkciók bőséges szüretét kínálják. Üljön asztalhoz adatszakértőivel és elemzőivel, és lássanak hozzá a frissítés-lakomához. 
@@ -578,20 +565,6 @@ Ezeket a frissítéseket az alábbi videócsatorna mutatja be. A videók a blogb
 
 > [!NOTE]
 > Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
-
-
-
-Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verzióit is. Azt javasoljuk azonban, hogy a régebbiek helyett mindig a Power BI Desktop legújabb verzióját használja. Minden korábbi verzióra vonatkoznak az alábbi korlátozások:
-
-* A Power BI Desktop korábbi kiadásait nem frissítjük: a legújabb frissítéseket és funkciókat mindig a legújabb kiadással érheti el.
-* Előfordulhat, hogy a Power BI Desktop korábbi verzióival nem tud majd megnyitni egy újabb verzióban létrehozott vagy mentett fájlt. 
-* Ha a Power BI Desktop újabb verziójában mentett jelentés betöltésekor figyelmeztetés jelenik meg, és Ön a jelentést a korábbi verzióban menti, az új funkciókkal kapcsolatos minden információ elvész.
-* Csak az angol nyelvű Power BI Desktop-verziókat archiváljuk.
-
-A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
-
-* [A Power BI Desktop 2018. novemberi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-11.msi)
-* [A Power BI Desktop 2018. novemberi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-11_x64.msi)
 
 
 ## <a name="october-2018-update-263327240262"></a>2018. októberi frissítés (2.63.3272.40262)
@@ -653,21 +626,6 @@ Ezeket a frissítéseket az alábbi videócsatorna mutatja be. A videók a blogb
 > Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
-
-Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verzióit is. Azt javasoljuk azonban, hogy a régebbiek helyett mindig a Power BI Desktop legújabb verzióját használja. Minden korábbi verzióra vonatkoznak az alábbi korlátozások:
-
-* A Power BI Desktop korábbi kiadásait nem frissítjük: a legújabb frissítéseket és funkciókat mindig a legújabb kiadással érheti el.
-* Előfordulhat, hogy a Power BI Desktop korábbi verzióival nem tud majd megnyitni egy újabb verzióban létrehozott vagy mentett fájlt. 
-* Ha a Power BI Desktop újabb verziójában mentett jelentés betöltésekor figyelmeztetés jelenik meg, és Ön a jelentést a korábbi verzióban menti, az új funkciókkal kapcsolatos minden információ elvész.
-* Csak az angol nyelvű Power BI Desktop-verziókat archiváljuk.
-
-A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
-
-* [A Power BI Desktop 2018. októberi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-10.msi)
-* [A Power BI Desktop 2018. októberi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-10_x64.msi)
-
-
-
 ## <a name="september-2018-update-2625222582"></a>2018. szeptemberi frissítés (2.62.5222.582)
 
 A szeptemberi frissítések az iskolakezdés izgalmas hangulatát idézték. Reméljük, hogy legalább olyan hasznosnak találta ezeket a frissítéseket, mint egy maréknyi frissen hegyezett HB-s ceruzát. 
@@ -713,20 +671,6 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 
 > [!NOTE]
 > Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
-
-
-Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verzióit is. Azt javasoljuk azonban, hogy a régebbiek helyett mindig a Power BI Desktop legújabb verzióját használja. Minden korábbi verzióra vonatkoznak az alábbi korlátozások:
-
-* A Power BI Desktop korábbi kiadásait nem frissítjük: a legújabb frissítéseket és funkciókat mindig a legújabb kiadással érheti el.
-* Előfordulhat, hogy a Power BI Desktop korábbi verzióival nem tud majd megnyitni egy újabb verzióban létrehozott vagy mentett fájlt. 
-* Ha a Power BI Desktop újabb verziójában mentett jelentés betöltésekor figyelmeztetés jelenik meg, és Ön a jelentést a korábbi verzióban menti, az új funkciókkal kapcsolatos minden információ elvész.
-* Csak az angol nyelvű Power BI Desktop-verziókat archiváljuk.
-
-A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
-
-* [A Power BI Desktop 2018. szeptemberi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-09.msi)
-* [A Power BI Desktop 2018. szeptemberi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-09_x64.msi)
-
 
 
 
@@ -776,21 +720,6 @@ Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzés
 
 > [!NOTE]
 > Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](mobile-whats-new-in-the-mobile-apps.md).
-
-
-
-Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verzióit is. Azt javasoljuk azonban, hogy a régebbiek helyett mindig a Power BI Desktop legújabb verzióját használja. Minden korábbi verzióra vonatkoznak az alábbi korlátozások:
-
-* A Power BI Desktop korábbi kiadásait nem frissítjük: a legújabb frissítéseket és funkciókat mindig a legújabb kiadással érheti el.
-* Előfordulhat, hogy a Power BI Desktop korábbi verzióival nem tud majd megnyitni egy újabb verzióban létrehozott vagy mentett fájlt. 
-* Ha a Power BI Desktop újabb verziójában mentett jelentés betöltésekor figyelmeztetés jelenik meg, és Ön a jelentést a korábbi verzióban menti, az új funkciókkal kapcsolatos minden információ elvész.
-* Csak az angol nyelvű Power BI Desktop-verziókat archiváljuk.
-
-A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
-
-* [A Power BI Desktop 2018. augusztusi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-08.msi)
-* [A Power BI Desktop 2018. augusztusi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-08_x64.msi)
-
 
 
 

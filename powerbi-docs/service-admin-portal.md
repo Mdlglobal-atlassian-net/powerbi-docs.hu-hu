@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 751bcb5ee3b383853f0087bab406d59a2271b588
-ms.sourcegitcommit: 4595a6231615d253aead315cb3f85472e2f189e6
+ms.openlocfilehash: 6a1ce47d7af41df51b7c439240f3e9db0dd28397
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68501790"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757715"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -375,7 +375,7 @@ A munkahelyi felhasználók láthatják az általuk létrehozott jelentések és
 
 A tartalmak szerzőinek használati metrikáiban szerepel a tartalmakhoz hozzáférő felhasználók megjelenítendő neve és e-mail-címe. [További információ](service-usage-metrics.md)
 
-A felhasználónkénti adatok alapértelmezés szerint engedélyezve vannak a használati metrikákhoz, a tartalomkészítői fiókadatok pedig szerepelnek a metrikák jelentéseiben. Ha ezt az információt nem szeretné belefoglalni egyes felhasználók esetében, tiltsa le a funkciót megadott biztonsági csoportok, vagy a teljes szervezet számára. A fiókadatok ekkor *névtelenként* jelennek meg a jelentésben.
+A felhasználónkénti adatok alapértelmezés szerint engedélyezve vannak a használati metrikákhoz, a tartalomkészítői fiókadatok pedig szerepelnek a metrikák jelentéseiben. Ha ezt az információt nem szeretné összegyűjteni az összes felhasználó esetében,letilthatja a funkciót megadott biztonsági csoportok vagy a teljes szervezet számára. A fiókadatok a kizárt felhasználók esetén ekkor *névtelenként* jelennek meg a jelentésben.
 
 ## <a name="dashboard-settings"></a>Irányítópult beállításai
 

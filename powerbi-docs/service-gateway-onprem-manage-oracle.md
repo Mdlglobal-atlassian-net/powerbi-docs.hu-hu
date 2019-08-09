@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: af3ebd421a82448ce8a3f13661801ffc1d0051e0
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 3e3e51bf13a904e46552529d9131dbbb4665cb7d
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271484"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730238"
 ---
 # <a name="manage-your-data-source---oracle"></a>A vállalati adatforrások kezelése – Oracle
 
@@ -73,7 +73,7 @@ Miután kiválasztotta az Oracle-t adatforrásként, ki kell töltenie az adatfo
 **Hitelesítési módszert** is választania kell.  Ez **Windows** vagy **Alapszintű** lehet.  Akkor érdemes az **Alapszintűt** választani, ha Windows-hitelesítés helyett egy, az Oracle-ben létrehozott fiókot fog használni. Ezután írja be az adatforráshoz használni kívánt hitelesítő adatokat.
 
 > [!NOTE]
-> Az adatforrás felé irányuló összes lekérdezés ezen hitelesítő adatok segítségével fut. A [Titkosított hitelesítő adatok tárolása a felhőben](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud) című témakörben további információt talál a hitelesítő adatok tárolásáról.
+> Az adatforrás felé irányuló összes lekérdezés ezen hitelesítő adatok segítségével fut. A [Titkosított hitelesítő adatok tárolása a felhőben](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud) című témakörben további információt talál a hitelesítő adatok tárolásáról.
 
 ![Adatforrás-beállítások kitöltése](media/service-gateway-onprem-manage-oracle/data-source-oracle2.png)
 

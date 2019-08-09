@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: b1d84e9de9ae6d6fd8306fce4865977a8d273652
-ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.openlocfilehash: a240d84b20f63542c33bb7cbbb9a9c97af7db2f7
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68289948"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757678"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>A Security Assertion Markup Language (SAML) használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)
 
@@ -33,7 +33,7 @@ Ne feledje, hogy a HANA számára a titkosítás engedélyezése **nagyon** ajá
 
 Az SAML használatához megbízhatósági kapcsolatot kell létrehoznia a HANA-kiszolgáló, amelyhez engedélyezni szeretné az SSO-t és az átjáró között, amely ebben a forgatókönyvben az SAML-identitásszolgáltatóként (IdP) szolgál. Ezt a kapcsolatot többféleképpen is létre lehet hozni, például az átjáró identitásszolgáltatója X509 szabvány szerint tanúsítványának a HANA-kiszolgálók megbízhatósági tárolójába való importálásával vagy az átjáró X509-tanúsítványának a HANA-kiszolgálók számára megbízhatónak minősülő legfelső szintű hitelesítésszolgáltató (CA) általi aláírásával. Ebben az útmutatóban az utóbbi megközelítést ismertetjük, de használhat más megközelítést is, ha az kényelmesebb.
 
-Azt is vegye figyelembe, hogy ebben az útmutatóban OpenSSL-t használunk a HANA-kiszolgáló titkosítási szolgáltatójaként, de OpenSSL helyett az SAP titkosítási kódtár (másként CommonCryptoLib vagy sapcrypto) is használható a beállítási lépések végrehajtásához a bizalmi kapcsolat létrehozásakor. További információt a hivatalos SAP-dokumentációban találhat.
+Azt is vegye figyelembe, hogy ebben az útmutatóban OpenSSL-t használunk a HANA-kiszolgáló titkosítási szolgáltatójaként, de OpenSSL helyett az SAP által ajánlott SAP titkosítási kódtár (másként CommonCryptoLib vagy sapcrypto) használata javasolt a beállítási lépések végrehajtásához a bizalmi kapcsolat létrehozásakor. További információt a hivatalos SAP-dokumentációban találhat.
 
 A következő lépések azt ismertetik, hogyan hozhat létre megbízhatósági kapcsolatot a HANA-kiszolgáló és az átjáró identitásszolgáltatója között az átjáró identitásszolgáltatója X509-tanúsítványának a HANA-kiszolgáló által megbízhatónak tekintett legfelső szintű hitelesítésszolgáltató általi aláírásával.
 
@@ -180,7 +180,7 @@ A kiszolgálóoldali hitelesítés követése részletes információt nyújt az
 
 A **helyszíni adatátjáróval** és a **DirectQueryvel** kapcsolatos további információkért lásd az alábbi forrásanyagokat:
 
-* [Mi az a helyszíni adatátjáró?](/data-integration/gateway/service-gateway-getting-started)
+* [Mi az a helyszíni adatátjáró?](/data-integration/gateway/service-gateway-onprem)
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások](desktop-directquery-data-sources.md)
 * [A DirectQuery és az SAP BW](desktop-directquery-sap-bw.md)

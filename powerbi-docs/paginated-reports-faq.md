@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 07/15/2019
-ms.openlocfilehash: 10135e0fa725cd4093802cd1416cab302174e21d
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 2e59499b93f4d1b4879cdec5b807f863a80718aa
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270779"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665372"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Többoldalas jelentések a Power BI-ban: Gyakori kérdések 
 
@@ -162,7 +162,7 @@ Igen, az SSRS-hez hasonlóan itt is támogatjuk kódok futtatását.
 
 ### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Használhatom a Power BI Embedded szolgáltatást lapszámozott jelentések egy általam üzemeltetett alkalmazásba történő beágyazásához?
 
-Az SaaS-beágyazás támogatása a júniusi időszakra várható.  A PaaS-beágyazásnak a meglévő Power BI API-kkal való támogatását is tervezzük, de egyelőre nincs határidőnk ennek elérhetőségére.
+Az SaaS-beágyazás már támogatott. A PaaS-beágyazás jelenleg nem támogatott.
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Végezhetek részletezést egy Power BI-jelentésből egy lapszámozott jelentésbe?
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: db0ea02237a2279c26f2c47cecd3bae794a5cba4
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 9f3131749a484380a1352d39ae35ea409f6dc697
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840303"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68624148"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Példák kifejezésekre a Power BI Jelentéskészítőben
 A Power BI Lapszámozott jelentéskészítővel készülő lapszámozott jelentésekben gyakran használnak kifejezéseket a tartalom és a jelentés megjelenése szabályozására. A kifejezések Microsoft Visual Basicben vannak írva, és beépített függvényeket, egyéni kódot, jelentés- és csoportváltozókat és felhasználó által definiált változókat is használhatnak. A kifejezések egyenlőségjellel (=) kezdődnek.   
@@ -40,7 +40,7 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
 ##  <a name="VisualBasicFunctions"></a> Visual Basic-függvények  
  Visual Basic-függvényekkel kezelheti az adatokat, amelyek megjelennek a szövegdobozokban, vagy paraméterekhez, tulajdonságokhoz vagy a jelentés más területeihez lesznek használva. Ez a szakasz néhány ilyen függvény bemutatására kínál példákat. További információt [A Visual Basic futtatókörnyezeti kódtár tagjai](https://go.microsoft.com/fwlink/?LinkId=198941) című cikkben talál az MSDN webhelyén.  
   
- A .NET-keretrendszer számos egyéni formátumbeállítást kínál például adott dátumformátumokhoz. További információt a [Típusok formázása](https://go.microsoft.com/fwlink/?LinkId=112024) című cikkben talál az MSDN webhelyén.  
+ A .NET-keretrendszer számos egyéni formátumbeállítást kínál például adott dátumformátumokhoz. További információt a [Típusok formázása](/dotnet/standard/base-types/formatting-types) című cikkben találhat.  
   
 ### <a name="math-functions"></a>Matematikai függvények  
   

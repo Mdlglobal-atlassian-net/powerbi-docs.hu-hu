@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 93d2c4358b0f4b4090a2c8bea3daa8eec71c4982
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: b910f20935c76f8723d8ca876cb57d811976772b
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270864"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68729941"
 ---
 # <a name="use-personal-gateways-in-power-bi"></a>Privát átjárók használata a Power BI-ban
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-A (privát) helyszíni adatátjáró a helyszíni adatátjáró egy verziója, amely csak a Power BI-jal működik. A privát átjárók lehetővé teszik, hogy valaki átjárót telepítsen a saját számítógépére, és helyszíni adatokhoz kapjon hozzáférést.
+A (privát) helyszíni adatátjáró a helyszíni adatátjáró egy verziója, amely csak a Power BI-jal működik. Egy privát átjáróval átjárót telepíthet a saját számítógépére, és helyszíni adatokhoz kaphat hozzáférést.
 
 > [!NOTE]
 > Power BI-felhasználónként csak egy személyes módú átjáró futtatható. Ha egy második személyes módú átjárót telepít egy adott felhasználó számára – akár egy másik számítógépen is –, a legutóbbi telepítés a korábbi telepítések helyébe lép.
@@ -46,15 +46,15 @@ A (privát) helyszíni adatátjáró a következő módon telepíthető:
 
 1. [Töltse le a helyszíni adatátjárót](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409).
 
-2. A telepítőben válassza a (privát) helyszíni adatátjáró lehetőséget, majd a **Tovább** gombot.
+2. A telepítőben válassza a (privát) helyszíni adatátjáró lehetőséget, majd a **Tovább** lehetőséget.
 
    ![A (privát) helyszíni adatátjáró kiválasztása](media/service-gateway-personal-mode/personal-gateway-select.png)
 
-Miután a telepítést sikeresen befejezte és bejelentkezett, az alábbi képernyőt fogja látni.
+Az átjárófájlok a _"%localappdata%\Microsoft\On-premises data gateway (personal mode)_ helyen vannak telepítve. Miután a telepítést sikeresen befejezte és bejelentkezett, az alábbi képernyőt fogja látni.
 
 ![(Privát) helyszíni adatátjáró sikeres telepítése](media/service-gateway-personal-mode/personal-gateway-complete.png)
 
-## <a name="using-fast-combine-with-the-personal-gateway"></a>Gyors összevonás használata a személyes átjáróval
+## <a name="use-fast-combine-with-the-personal-gateway"></a>Gyors összevonás használata a személyes átjáróval
 
 A privát átjárón használt gyors összevonás használatával a lekérdezések végrehajtása során figyelmen kívül hagyhatja a megadott adatvédelmi szinteket. Az alábbi módon engedélyezhető, hogy a gyors összevonás működjön a (privát) helyszíni adatátjáróval:
 
@@ -70,31 +70,31 @@ A privát átjárón használt gyors összevonás használatával a lekérdezés
     </setting>
     ```
 
-3. Ha elkészült, a beállítás körülbelül egy perc után lép életbe. A megfelelő működés ellenőrzéséhez próbáljon meg elvégezni a **Power BI szolgáltatásban** egy igény szerinti frissítést, amivel ellenőrizheti, hogy a **Gyors összevonás** működik-e.
+3. Ha elkészült, a beállítás körülbelül egy perc után lép életbe. A megfelelő működés ellenőrzéséhez próbáljon meg elvégezni a Power BI szolgáltatásban egy igény szerinti frissítést, amivel ellenőrizheti, hogy a Gyors összevonás működik-e.
 
 ## <a name="frequently-asked-questions-faq"></a>Gyakori kérdések (GYIK)
 
-**Kérdés:** Futtathatom egyszerre a **helyszíni adatátjárót (személyes mód)** és a **helyszíni adatátjárót** (korábbi nevén az átjáró Vállalati verzióját)?
+**Kérdés:** Futtathatom egyszerre a helyszíni adatátjárót (személyes mód) és a helyszíni adatátjárót (korábbi nevén az átjáró Vállalati verzióját)?
   
 **Válasz:** Igen, futhat mindkettő egyszerre.
 
-**Kérdés:** Futtathatom a **helyszíni adatátjárót (személyes mód)** szolgáltatásként?
+**Kérdés:** Futtathatom a helyszíni adatátjárót (személyes mód) szolgáltatásként?
   
-**Válasz:** Nem. A **helyszíni adatátjáró (személyes mód)** csak alkalmazásként futtatható. Ha az átjárót szolgáltatásként vagy rendszergazda módban kell futtatnia, fontolja meg a [**helyszíni adatátjáró**](/data-integration/gateway/service-gateway-onprem) (korábbi nevén a Vállalati átjáró) használatát.
+**Válasz:** Nem. A helyszíni adatátjáró (személyes mód) csak alkalmazásként futtatható. Ha az átjárót szolgáltatásként vagy rendszergazda módban kell futtatnia, fontolja meg a [helyszíni adatátjáró](/data-integration/gateway/service-gateway-onprem) (korábbi nevén a Vállalati átjáró) használatát.
 
-**Kérdés:** Milyen gyakran frissül a **helyszíni adatátjáró (személyes mód)** ?
+**Kérdés:** Milyen gyakran frissül a helyszíni adatátjáró (személyes mód)?
   
 **Válasz:** A személyes átjárót havonta tervezzük frissíteni.
 
 **Kérdés:** Miért kell frissítenem a hitelesítő adataim?
   
-**Válasz:** Számos helyzet kiválthatja a hitelesítő adatok bekérését. A leggyakoribb eset az, ha a **helyszíni adatátjáró (személyes mód)** egy másik gépen lett újratelepítve, mint a **személyes Power BI-átjáró**. Az is lehet, hogy az adatforrásban áll fenn egy probléma, és a Power BI nem tudott tesztkapcsolatot létesíteni, illetve időtúllépés vagy rendszerhiba történt. A hitelesítő adatok frissítéséhez a **Power BI szolgáltatásban** kattintson a **fogaskerék ikonra**, válassza a **Beállítások**, majd az **Adatkészletek** elemet, keresse meg az adott adatkészletet, majd válassza az **Adatforrásbeli hitelesítő adatok** elemet.
+**Válasz:** Számos helyzet kiválthatja a hitelesítő adatok bekérését. A leggyakoribb eset az, ha a helyszíni adatátjáró (személyes mód) egy másik gépen lett újratelepítve, mint a személyes Power BI-átjáró. Az is lehet, hogy az adatforrásban áll fenn egy probléma, és a Power BI nem tudott tesztkapcsolatot létesíteni, illetve időtúllépés vagy rendszerhiba történt. A Power BI szolgáltatás hitelesítő adatainak frissítéséhez válassza a fogaskerék ikont, majd a **Beállítások** > **Adatkészletek** lehetőséget. Keresse meg a szóban forgó adatkészletet, és válassza az **Adatforrás azonosító adatai** lehetőséget.
 
 **Kérdés:** Mennyi ideig lesz az előző személyes átjáróm offline állapotú a frissítés során?
   
 **Válasz:** A személyes átjáró új verziójára való frissítési folyamat csak néhány percig tart.
 
-**Kérdés:** R- és Python-szkripteket használok. Ez támogatott?
+**Kérdés:** R- és Python-szkripteket használok. Ezeket támogatja a szolgáltatás?
   
 **Válasz:** Az R- és Python-szkriptek támogatottak privát módban.
 
@@ -102,5 +102,4 @@ A privát átjárón használt gyors összevonás használatával a lekérdezés
 
 * [Helyszíni adatátjáró proxybeállításainak konfigurálása](/data-integration/gateway/service-gateway-proxy)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).

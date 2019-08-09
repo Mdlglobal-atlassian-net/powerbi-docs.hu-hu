@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: d1a057f56237a0609f3330d4728c7dfcded84a71
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 1e836dd9fe4be1c0267a0ba4008c2455cf59e2e2
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391137"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665386"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Saját titkosítási kulcsok használata a Power BI-hoz (előzetes verzió)
 
@@ -64,6 +64,9 @@ Az ebben a szakaszban leírtak feltételezik az Azure Key Vault alapszintű isme
     ![PBIX-fájl összetevői](media/service-encryption-byok/service-principal.png)
 
 1. Válassza az **OK**, majd a **Mentés** lehetőséget.
+
+> [!NOTE]
+> Ha a jövőben meg szeretné vonni a Power BI az adatokhoz való hozzáférését, távolítsa el az adott szolgáltatásnév hozzáférési jogosultságait az Azure Key Vaultból.
 
 ### <a name="create-an-rsa-key"></a>RSA-kulcs létrehozása
 

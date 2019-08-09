@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: cf9b3335b10b7a2cd3abcc3f02c651ed4416184e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cb21d3baf9523a90b0446b44704587b5af73904f
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269814"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623816"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Egyéni vizualizációk közzététele az AppSource-ban
 
@@ -22,7 +22,7 @@ Megtudhatja, hogyan teheti közzé egyéni vizualizációit az AppSource-ban, am
 
 Miután létrehozta egyéni vizualizációját, közzéteheti az AppSource-ban, hogy mások felfedezhessék és használhassák. Ehhez először el kell végezni néhány előkészítő lépést. Az egyéni vizualizációk létrehozásáról az [egyéni Power BI-vizualizáció fejlesztését](custom-visual-develop-tutorial.md) ismertető cikkben talál további információkat.
 
-   ![Office Áruház](media/office-store/AppSource_01.jpg)
+   ![Office Áruház](media/office-store/appsource-01.png)
 
 ## <a name="what-is-appsource"></a>Mi az az AppSource?
 
@@ -30,7 +30,7 @@ Az **AppSource** az a hely, ahol SaaS-alkalmazásokat és -bővítményeket tal�
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Az egyéni vizualizáció elküldésének előkészítése
 
-Miután elkészült olvasásakor a [Power BI-Vizualizációk irányelvek](guidelines-powerbi-visuals.md), kódolási és [teszteléséhez az egyéni Vizualizáció](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) van csomagolva, és egy pbiviz fájlba is rendelkeznie kell a következő készen áll az elküldéshez.
+Miután elolvasta a [Power BI-vizualizációk útmutatóját](guidelines-powerbi-visuals.md), végzett az [egyéni vizualizáció kódolásával és tesztelésével](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), és becsomagolta egy pbiviz-fájlba, a következőkkel is rendelkeznie kell az elküldéshez.
 
 | Item | Kötelező | Leírás |
 | --- | --- | --- |

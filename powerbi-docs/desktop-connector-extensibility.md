@@ -10,48 +10,50 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 16b96d91a9dd37fa8a502bbcca772438c703cb63
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.openlocfilehash: 7d5d743dda31d05df0beb528648c5a43ffc6b335
+ms.sourcegitcommit: 32a44dd17a44ccfd4a2d86a0d235251c2fda1c5c
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412970"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68702113"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Összekötők bővíthetősége a Power BI-ban
 
-A Power BI-ügyfelek és a fejlesztők kiterjesztheti az adatforrásokat, számos módon csatlakoznak. Általános adatforrások (például ODBC, OData, Oledb, Web, CSV, XML vagy JSON) és a meglévő összekötők használata. Vagy a fejlesztők, hozzon létre adatkiterjesztések néven **egyéni összekötők**, és azokat **hitelesített összekötők**.
+A Power BI felhasználói és fejlesztői számos módon kiterjeszthetik az adatforrásokat, amelyekhez csatlakozhatnak. Meglévő összekötőket és általános adatforrásokat (például ODBC, OData, Oledb, Web, CSV, XML, JSON) használhatnak. A fejlesztők emellett adatkiterjesztéseket hozhatnak létre (más néven **egyéni összekötőket**), ezekből pedig **hitelesített összekötőket** készíthetnek.
 
-Jelenleg engedélyezi **egyéni összekötők** egyéni kód lehetővé teheti a rendszerben szintjének használatával egy menüt, amelyben biztonságosan szabályozhatja. Kiválaszthatja az összes egyéni összekötők vagy csak a hitelesített, és a Microsoft által terjesztett összekötők a **adatok lekérése** párbeszéd.
+Az **egyéni összekötők** jelenleg egy olyan menüben engedélyezhetők, amelyekkel biztonságosan vezérelhetők a rendszerben futtatni kívánt egyéni kódok. Az **Adatok lekérése** párbeszédpanelen kiválaszthatja az összes összekötőt vagy csak a Microsoft-összekötőket.
 
 ## <a name="custom-connectors"></a>Egyéni összekötők
 
-**Egyéni összekötők** lehetnek lehetőségek széles skáláját, és a kis méretű API-k kritikus fontosságú üzleti nagy iparág-specifikus szolgáltatások, a Microsoft nyilvánosan nem összekötő. Számos összekötő a szállító által oszlanak meg. Ha egy adott adatösszekötő szüksége van, lépjen kapcsolatba szállító.
+Az **egyéni összekötők** számos lehetőséget hordoznak magukban a kis méretű, üzleti szempontból kritikus API-któl kezdve a nagyszabású, iparágra jellemző szolgáltatásokig, amelyekhez a Microsoft nem adott ki összekötőt. Számos összekötőt szállítók szolgáltatnak. Így ha Önnek egy adott adatösszekötőre van szüksége, célszerű a szállítóval felvennie a kapcsolatot.
 
-Használata egy **egyéni összekötő**, helyezni, a  *\[dokumentumok]\\Power BI Desktop\\egyéni összekötők* mappát, és módosítsa úgy a biztonsági beállításokat a leírtak szerint a következő szakaszt.
+**Egyéni összekötők** használatához helyezze őket a *\[Dokumentumok]\\Power BI Desktop\\Egyéni összekötők* mappába, majd a következő szakaszban ismertetettek szerint módosítsa a biztonsági beállításokat.
 
 A **hitelesített összekötők** használatához nem kell módosítania a biztonsági beállításokat.
 
 ## <a name="data-extension-security"></a>Adatkiterjesztés biztonsága
 
-Az adatok kiterjesztése biztonsági beállítások módosításához **Power BI Desktop** kiválasztása **fájl > lehetőségek és beállítások > Beállítások > biztonsági**.
+Az adatkiterjesztések beállításainak módosításához a **Power BI Desktopban** válassza a **Fájl > Lehetőségek és beállítások > Lehetőségek > Biztonság** elemet.
 
-![Szabályozhatja, hogy szeretné-e az egyéni összekötők az adatok kiterjesztése biztonsági beállítások betöltése](media/desktop-connector-extensibility/data-extension-security-1.png)
+![Annak szabályozása, hogy betölthet-e adatkiterjesztési biztonsági beállításokkal rendelkező egyéni összekötőket](media/desktop-connector-extensibility/data-extension-security-1.png)
 
 Az **Adatkiterjesztések** területen két biztonsági szint közül választhat:
 
 * (Ajánlott) Csak a tanúsítvánnyal rendelkező bővítmények betöltésének engedélyezése
 * (Nem ajánlott) Bármilyen bővítmény betöltésének engedélyezése figyelmeztetés nélkül
 
-Ha azt tervezi, hogy használatával **egyéni összekötők** vagy jelöljön kidolgoztunk, vagy egy harmadik féltől származó összekötők **"(Not Recommended) minden figyelmeztetés nélkül betölteni a bővítmény engedélyezése"** . Ez a beállítás nem ajánlott, kivéve, ha az egyéni összekötőkhöz teljesen megbízható. Mivel a kódot az itt lévő hitelesítő adatait, beleértve a HTTP-n keresztül elküldi azokat kezelni és adatvédelmi szintek figyelmen kívül.
+Ha **egyéni összekötőket** vagy olyan összekötőket szeretne használni, amelyeket Ön vagy egy külső fél fejlesztett, válassza a **„(Nem ajánlott) Bármilyen bővítmény betöltésének engedélyezése figyelmeztetés nélkül”** lehetőséget. Nem javasoljuk ezt a biztonsági beállítást, hacsak nem bízik meg teljes mértékben az egyéni összekötőkben. Ez azért van, mert az itteni kód képes kezelni a hitelesítő adatokat – beleértve azok HTTP-n keresztüli küldését is –, és figyelmen kívül hagyni az adatvédelmi szinteket.
 
-Jelenleg a **"(ajánlott)"** biztonsági beállítást, ha a rendszer az egyéni összekötők, hibaüzenet jelenik meg, amely leírja az összekötőket, amelyek biztonsági miatt nem tölthető be.
+Az **„(Ajánlott)”** biztonsági beállításban, ha egyéni összekötőket használ a rendszer, a „The following connector has not been certified, and we are unable to verify that is secure to use” (A következő összekötő nincs hitelesítve, ezért nem biztonságos a használata) hibaüzenet jelenik meg, amelyet a biztonságosan betölthető összekötők listája követ.
 
-![Egy párbeszédpanel, írja le egyéni összekötőkhöz, mely biztonsági beállításai, a ez megkülönbözteti a kis TripPin miatt nem tölthető be](media/desktop-connector-extensibility/data-extension-security-2.png)
+![Egy párbeszédpanel ismerteti azokat az egyéni összekötőket, amelyek biztonsági okokból nem tölthetők be, ebben az esetben a TripPint](media/desktop-connector-extensibility/data-extension-security-2.png)
 
-Hárítsa el a hibát, és ezeket az összekötőket használ, módosítsa a biztonsági beállításokat a **"(Not Recommended) minden figyelmeztetés nélkül betölteni a bővítmény engedélyezése"** beállítása a korábban leírtaknak megfelelően. Ezután indítsa újra **Power BI Desktop**.
+A probléma a biztonság módosítása nélküli megoldásához távolítsa el a nem aláírt összekötőket az „Egyéni összekötők” mappából.
+
+A hiba elhárításához és az összekötők használatához módosítsa a biztonsági beállításokat a **„(Nem ajánlott) Bármilyen bővítmény betöltésének engedélyezése figyelmeztetés nélkül”** beállításra a korábban ismertetett módon. Ezután indítsa újra a **Power BI Desktopot**.
 
 ## <a name="certified-connectors"></a>Hitelesített összekötők
 
-Adatkiterjesztések korlátozott részhalmaza számít **Certified**. A hitelesített összekötők eléréséhez a **adatok lekérése** párbeszéd. De a külső fejlesztő, aki létrehozta az összekötő feladata a karbantartási és támogatási. Bár a Microsoft elosztja az összekötők, akkor sem felelős a teljesítmény vagy a folyamatos függvény.
+Az adatkiterjesztések egy korlátozott részhalmazát **hitelesítettnek** tekintjük. A hitelesített összekötőket az **Adatok lekérése** párbeszédpanelen érheti el. Az összekötő fenntartásáért és támogatásáért azonban a külső fejlesztő felelős, aki létrehozta azt. Bár a Microsoft kínál ilyen összekötőket, nem vállalunk felelősséget a teljesítményükért és a folyamatos működésükért.
 
 Ha hitelesíteni szeretne egy egyéni összekötőt, kérje meg a szállítót, hogy lépjen kapcsolatba a dataconnectors@microsoft.com képviselőivel.

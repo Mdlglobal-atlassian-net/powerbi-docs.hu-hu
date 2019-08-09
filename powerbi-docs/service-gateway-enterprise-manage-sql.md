@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7d9e670d2567181a0dc99c23997ac3bc2d35f3c9
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 2c21792f97445b336709038f7ec2ec39d041312b
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271601"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730058"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Adatforrások kezelése – SQL Server
 
@@ -37,7 +37,7 @@ Ekkor meg kell adni az adatforrás információit, például a **Kiszolgálót**
 **Hitelesítési módszert** is választania kell. Ez **Windows** vagy **Alapszintű** lehet. Az **Egyszerű** lehetőséget akkor kell választani, ha Windows-hitelesítés helyett SQL-hitelesítést fog használni. Ezután írja be az adatforráshoz használni kívánt hitelesítő adatokat.
 
 > [!NOTE]
-> Az adatforráson minden lekérdezés ezekkel a hitelesítő adatokkal fog futni, hacsak nincs hozzá konfigurálva és engedélyezve a Kerberos használata egyszeri bejelentkezéshez (SSO). Egyszeri bejelentkezés (SSO) használata esetén az importált adatkészletek a tárolt hitelesítő adatokat használják, a DirectQuery-adatkészletek viszont az aktuális Power BI-felhasználó nevében, SSO használatával futtatják a lekérdezéseket. A hitelesítő adatok tárolási módjáról a [Titkosított hitelesítő adatok tárolása a felhőben](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud), vagy [a Kerberos használata egyszeri bejelentkezéshez (SSO) a Power BI-ból helyszíni adatforrásokba](service-gateway-sso-kerberos.md) című cikkből tájékozódhat.
+> Az adatforráson minden lekérdezés ezekkel a hitelesítő adatokkal fog futni, hacsak nincs hozzá konfigurálva és engedélyezve a Kerberos használata egyszeri bejelentkezéshez (SSO). Egyszeri bejelentkezés (SSO) használata esetén az importált adatkészletek a tárolt hitelesítő adatokat használják, a DirectQuery-adatkészletek viszont az aktuális Power BI-felhasználó nevében, SSO használatával futtatják a lekérdezéseket. A hitelesítő adatok tárolási módjáról a [Titkosított hitelesítő adatok tárolása a felhőben](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud), vagy [a Kerberos használata egyszeri bejelentkezéshez (SSO) a Power BI-ból helyszíni adatforrásokba](service-gateway-sso-kerberos.md) című cikkből tájékozódhat.
 
 ![Adatforrás-beállítások kitöltése](media/service-gateway-enterprise-manage-sql/datasourcesettings3.png)
 

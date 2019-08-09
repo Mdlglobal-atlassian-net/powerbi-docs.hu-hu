@@ -1,6 +1,6 @@
 ---
 title: Beágyazott analitika Power BI-tartalom beágyazásához egy alkalmazásba a saját vállalat számára
-description: Útmutató jelentés, irányítópult vagy csempe alkalmazásba való integrálásához vagy beágyazásához a vállalat számára, a beágyazott analitikákhoz készült Power BI API-k használatával. Útmutató a Power BI alkalmazásba való integrálásához beágyazott analitikai szoftver, beágyazott analitikai eszközök vagy beágyazott üzletiintelligencia-eszközök használatával.
+description: Útmutató (Power BI- vagy lapszámozott) jelentés, irányítópult vagy csempe alkalmazásba való integrálásához vagy beágyazásához a vállalat számára, a beágyazott analitikákhoz készült Power BI API-k használatával. Útmutató a Power BI alkalmazásba való integrálásához beágyazott analitikai szoftver, beágyazott analitikai eszközök vagy beágyazott üzletiintelligencia-eszközök használatával.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -9,24 +9,24 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 04/02/2019
-ms.openlocfilehash: 53311929aa6277efd621fb2b944ea062ab99999d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 07/29/2019
+ms.openlocfilehash: 02e11e167d859d3ef23124fed4f9f699766db8fe
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61355515"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665557"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba a cége számára
 
-A **Power BI**-ban jelentéseket, irányítópultokat és csempéket ágyazhat be az alkalmazásokba a felhasználó tulajdonában lévő adatokkal. **A felhasználó az adatok tulajdonosa** forgatókönyv lehetővé teszi, hogy az alkalmazás kiterjessze a Power BI szolgáltatást a beágyazott analitika használatára. Az oktatóanyag bemutatja, hogyan integrálhat jelentéseket az alkalmazásokba. A Power BI .NET SDK és a Power BI JavaScript API segítségével beágyazza a Power BI-t egy alkalmazásba a vállalat számára.
+A **Power BI**-ban (Power BI- vagy lapszámozott) jelentéseket, irányítópultokat és csempéket ágyazhat be az alkalmazásokba a felhasználó tulajdonában lévő adatokkal. **A felhasználó az adatok tulajdonosa** forgatókönyv lehetővé teszi, hogy az alkalmazás kiterjessze a Power BI szolgáltatást a beágyazott analitika használatára. Az oktatóanyag bemutatja, hogyan integrálhat (Power BI- vagy lapszámozott) jelentéseket az alkalmazásokba. A Power BI .NET SDK és a Power BI JavaScript API segítségével beágyazza a Power BI-t egy alkalmazásba a vállalat számára.
 
 ![Power BI jelentés beágyazása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 Eben az oktatóanyagban az alábbi feladatokkal fog megismerkedni:
 > [!div class="checklist"]
 > * Alkalmazás regisztrálása az Azure-ban.
-> * Ágyazzon be egy Power BI-jelentést egy alkalmazásba a Power BI-bérlőjével.
+> * Ágyazzon be egy Power BI- vagy lapszámozott jelentést egy alkalmazásba a Power BI-bérlőjével.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -35,6 +35,7 @@ Első lépésként, rendelkeznie kell az alábbiakkal:
 * Egy [Power BI Pro-fiók](../service-self-service-signup-for-power-bi.md).
 * Egy [Microsoft Azure](https://azure.microsoft.com/)-előfizetéssel.
 * Be kell állítana egy saját [Azure Active Directory-bérlőt](create-an-azure-active-directory-tenant.md).
+* Lapszámozott jelentések beágyazásához legalább egy A4/P1-kapacitásra van szüksége [Milyen méretű Prémium szintű kapacitás szükséges a lapszámozott jelentésekhez?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 Ha még nem regisztrált a **Power BI Pro** szolgáltatásra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://powerbi.microsoft.com/pricing/).
 
@@ -44,9 +45,9 @@ Ha még nincs Azure-előfizetése, kezdés előtt hozzon létre egy [ingyenes fi
 
 Mielőtt jelentéseket, irányítópultokat vagy csempéket ágyazna az alkalmazásba, győződjön meg arról, hogy a környezete engedélyezi a beágyazást a Power BI-jal.
 
-Az első lépések gyors elsajátítása érdekében követheti a [beágyazáshoz szükséges telepítési eszköz](https://aka.ms/embedsetup/UserOwnsData) lépéseit, és letölthet egy mintaalkalmazást, amely végigvezeti Önt a környezet létrehozásán és egy jelentés beágyazásán.
+Az első lépések gyors elsajátítása érdekében követheti a [beágyazáshoz szükséges telepítési eszköz](https://aka.ms/embedsetup/UserOwnsData) lépéseit, és letölthet egy mintaalkalmazást, amely végigvezeti Önt a környezet létrehozásán és egy jelentés beágyazásán. Lapszámozott jelentések beágyazásához legalább egy A4/P1-kapacitásra van szüksége a létrehozott alkalmazás-munkaterületen.
 
-Ha mégis a környezet manuális létrehozása mellett dönt, folytathatja az alábbiak szerint.
+Ha a környezet manuális létrehozása mellett dönt, folytathatja az alábbiak szerint.
 
 ### <a name="register-an-application-in-azure-active-directory"></a>Alkalmazás regisztrálása az Azure Active Directoryban
 
@@ -60,7 +61,7 @@ Regisztrálnia kell egy **kiszolgálóoldali webalkalmazást**. A kiszolgálóol
 
 Ha jelentéseket, irányítópultokat vagy csempéket ágyaz be az ügyfelek számára, akkor ezeket a tartalmakat egy alkalmazás-munkaterületre kell helyezni. Különböző típusú munkaterületeket állíthat be: [hagyományos munkaterületeket](../service-create-workspaces.md) vagy [új munkaterületeket](../service-create-the-new-workspaces.md).
 
-### <a name="create-and-publish-your-reports"></a>Saját jelentések létrehozása és közzététele
+### <a name="create-and-publish-your-power-bi-reports"></a>Saját Power BI-jelentések létrehozása és közzététele
 
 A Power BI Desktop segítségével létrehozhatja a jelentéseit és az adathalmazait. A jelentéseket ezután közzéteheti egy alkalmazás-munkaterületen. A jelentéseket közzétevő végfelhasználónak Power BI Pro-licenccel kell rendelkeznie az alkalmazás-munkaterületen való közzétételhez.
 
@@ -79,7 +80,11 @@ A Power BI Desktop segítségével létrehozhatja a jelentéseit és az adathalm
     A jelentést mostantól online megtekintheti a Power BI szolgáltatásban.
 
    ![Power BI Desktop-jelentés megtekintése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-029.png)
+   
+### <a name="create-and-publish-your-paginated-reports"></a>Saját lapszámozott jelentések létrehozása és közzététele
 
+Lapszámozott jelentéseket a [Power BI jelentéskészítővel](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) hozhat létre. Ezután [feltöltheti](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) a jelentést egy alkalmazás-munkaterületre, amelyhez legalább egy A4/P1-kapacitás van rendelve. A jelentést feltöltő végfelhasználónak Power BI Pro-licencre van szüksége, ha közzé szeretne tenni valamit egy alkalmazás-munkaterületen.
+   
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Tartalom beágyazása a mintaalkalmazással
 
 Ez a minta szándékosan egyszerű, bemutatási céllal.
@@ -124,30 +129,6 @@ Az **applicationId** beszerzéséhez kövesse az alábbi lépéseket:
 
     ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 
-### <a name="application-secret"></a>Alkalmazás titkos kódja
-
-Ez az attribútum csak a [szolgáltatásnév](embed-service-principal.md) hitelesítési típushoz szükséges.
-
-Az **ApplicationSecret**mező tartalmát az **Azure** **Alkalmazásregisztrációk** szakaszának **Kulcsok** részéből másolhatja be.  Ez az attribútum [szolgáltatásnév](embed-service-principal.md) használatakor működik.
-
-Az **ApplicationSecret** beszerzéséhez kövesse az alábbi lépéseket:
-
-1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
-
-2. A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
-
-3. Válassza ki azt az alkalmazást, amelyhez használni kívánja az **ApplicationSecret** kulcsot.
-
-    ![Alkalmazás kiválasztása](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
-
-4. Válassza ki **tanúsítványok és titkos kulcsok** alatt **kezelés**.
-
-5. Válassza ki **új titkos ügyfélkulcsot**.
-
-6. A **Leírás** mezőbe írjon be egy nevet, és válasszon ki egy időtartamot. Ezután kattintson a **Mentés** gombra az alkalmazás **Értékének** lekéréséhez. Ha bezárja a **Kulcsok** panelt a kulcsérték mentése után, az értékmező csak rejtettként fog megjelenni. Ebben az esetben nem tudja lekérni a kulcsértéket. Ha elveszíti kulcsértéket, hozzon létre egy újat az Azure Portalon.
-
-    ![Kulcsérték](media/embed-sample-for-your-organization/embed-sample-for-your-organization-046.png)
-
 ### <a name="workspace-id"></a>Munkaterület azonosítója
 
 A **workspaceId** mezőbe írja be a Power BI-ban szereplő alkalmazás-munkaterület (csoport) GUID-azonosítóját. Ezt az információt beszerezheti az URL-címből, ha be van jelentkezve a Power BI szolgáltatásban vagy a PowerShell-lel.
@@ -168,9 +149,17 @@ Get-PowerBIworkspace -name "User Owns Embed Test"
 
 A **jelentésazonosító** mezőbe írja be a Power BI-ban szereplő jelentés GUID-azonosítóját. Ezt az információt beszerezheti az URL-címből, ha be van jelentkezve a Power BI szolgáltatásban vagy a PowerShell-lel.
 
-URL-cím <br>
+Power BI-jelentés URL-címe <br>
 
-![jelentésazonosító](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+![PBI reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+
+Lapszámozott jelentés URL-címe <br>
+
+
+
+Lapszámozott jelentés URL-címe<br>
+
+![Lapszámozott reportId](media/embed-sample-for-your-organization/paginated-reports-url.png)
 
 PowerShell <br>
 
@@ -214,7 +203,7 @@ Az alkalmazásban be kell szereznie egy hozzáférési tokent az Azure AD-ből, 
 
 ### <a name="get-a-report"></a>Jelentés lekérése
 
-Power BI-jelentés lekéréséhez használja a [Jelentések lekérése](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) műveletet, amely a Power BI-jelentések listáját kéri le. A jelentések listájából lekérheti a jelentésazonosítót.
+Power BI- vagy lapszámozott jelentés lekéréséhez használja a [Jelentések lekérése](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) műveletet, amely a Power BI- és lapszámozott jelentések listáját kéri le. A jelentések listájából lekérheti a jelentésazonosítót.
 
 ### <a name="get-reports-by-using-an-access-token"></a>Jelentések lekérése hozzáférési token használatával
 
@@ -275,6 +264,7 @@ public class PBIReports
 public class PBIReport
 {
     public string id { get; set; }
+    public string reportType { get; set }
     public string name { get; set; }
     public string webUrl { get; set; }
     public string embedUrl { get; set; }
@@ -394,7 +384,7 @@ Most, hogy elkészült az alkalmazás fejlesztésével, ideje dedikált kapacit�
 
 ### <a name="create-a-dedicated-capacity"></a>Dedikált kapacitás létrehozása
 
-Dedikált kapacitás létrehozásával kihasználhatja annak az előnyeit, hogy egy dedikált erőforrás áll rendelkezésre az alkalmazás-munkaterületen a tartalom számára. Dedikált kapacitást a [Power BI Premium](../service-premium-what-is.md) segítségével hozhat létre.
+Dedikált kapacitás létrehozásával kihasználhatja annak az előnyeit, hogy egy dedikált erőforrás áll rendelkezésre az alkalmazás-munkaterületen a tartalom számára. Lapszámozott jelentésekhez az alkalmazás-munkaterületnek legalább A4/P1-kapacitással kell rendelkeznie. Dedikált kapacitást a [Power BI Premium](../service-premium-what-is.md) használatával hozhat létre.
 
 A következő táblázat a [Microsoft Office 365-ben](../service-admin-premium-purchase.md) elérhető Power BI Premium-termékváltozatokat sorolja fel:
 
@@ -435,7 +425,7 @@ A globális rendszergazdák vagy a Power BI szolgáltatás-rendszergazdái be- �
 
 ## <a name="next-steps"></a>Következő lépések
 
-Ez az oktatóanyag bemutatta, hogyan ágyazhat be Power BI-tartalmat egy alkalmazásba a Power BI szervezeti fiók használatával. Most már elkezdhet Power BI-tartalmakat beágyazni egy alkalmazásba az alkalmazások segítségével. Megpróbálkozhat Power BI-tartalom beágyazásával az ügyfelei számára is:
+Ez az oktatóanyag bemutatta, hogyan ágyazhat be Power BI-tartalmat egy alkalmazásba a Power BI szervezeti fiók használatával. Most már elkezdhet Power BI-tartalmakat beágyazni egy alkalmazásba az alkalmazások segítségével. Megpróbálkozhat Power BI-tartalom beágyazásával az ügyfelei számára is (ez egyelőre nem támogatja lapszámozott jelentések beágyazását):
 
 > [!div class="nextstepaction"]
 > [Beágyazás alkalmazásokból](embed-from-apps.md)
