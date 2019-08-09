@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4351804330982b32582c4c782ef7c2fa0e92f197
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 5a0c29f04e7329373eec5f60af840e503ec22b3c
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271723"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68729995"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Útmutató adatátjáró üzembe helyezéséhez a Power BI számára
 
@@ -31,31 +31,33 @@ Mielőtt telepítené a helyszíni adatátjárót a Power BI felhőszolgáltatá
 
 ### <a name="number-of-users"></a>Felhasználók száma
 
-A felhasználók száma, akik az átjáró használatával fognak a jelentésekkel dolgozni, fontos szempont annak eldöntésében, hogy hová telepítsük az átjárót. Néhány szempont, amelyet érdemes figyelembe venni:
+Az átjárót használó jelentéssel dolgozó felhasználók száma lényeges metrika az átjáró telepítési helyéről hozott döntéshez. Néhány szempont, amelyet érdemes figyelembe venni:
 
 * A felhasználók eltérő napszakokban használják ezeket a jelentéseket?
 * Milyen típusú kapcsolatot használnak (DirectQueryt vagy importálást)?
 * Minden felhasználó ugyanazt a jelentést használja?
 
-Ha a felhasználók minden nap ugyanakkor kívánják elérni az adott jelentést, akkor gondoskodni kell róla, hogy az átjáró egy olyan számítógépen legyen telepítve, amely képes az összes kérelmet kezelni (segítségképpen a következő szakaszokból megismerheti a teljesítményszámlálókat és a minimális hardverkövetelményeket).
+Ha az összes felhasználó ugyanabban a napszakban fér hozzá egy adott jelentéshez, akkor az átjárót olyan gépre kell telepíteni, amely képes kiszolgálni ezeket a kéréseket. A következő szakaszokban azokról a teljesítményszámlálókról és minimális követelményekről olvashat, amelyek alapján eldöntheti, hogy egy gép megfelelő-e.
 
-A **Power BI** szolgáltatásban van egy korlátozás, amely szerint *jelentésenként* csak *egy* átjáró használható, tehát hiába használ a jelentés több adatforrást, az összes adat ezen az egy átjárón fog áthaladni. Viszont, egy olyan irányítópultnál, amely *több* jelentésen alapul, mindegyik jelentéshez egy-egy dedikált átjárót használhat, így eloszthatja az átjárók terhelését az irányítópultot alkotó jelentések között.
+A Power BI-ban érvényes korlátozás *jelentésenként* csak *egy* átjáró használatát teszi lehetővé. Akkor is minden adatforrásnak ugyanazon az átjárón kell áthaladnia, ha a jelentés több adatforráson alapul. Ha egy jelentés *több* jelentésre épül, akkor minden ahhoz tartozó jelentéshez dedikált átjárót használhat. Így megosztja az egyetlen irányítópulthoz tartozó több jelentés által az átjáróra rótt terhelést.
 
 ### <a name="connection-type"></a>Kapcsolat típusa
 
-A **Power BI-ban** kétféle kapcsolattípus áll rendelkezésre: A **DirectQuery** és az **Importálás**. Nem mindegyik adatforrás támogatja mindkét kapcsolattípust, és több szemponttól is függ, mikor melyiket érdemes használni, például a biztonsági követelményektől, a teljesítménytől, az adatkorláttól és az adatmodell méretétől. A kapcsolattípusokról és a támogatott adatforrásokról bővebben az [elérhető adatforrástípusok listájában](service-gateway-data-sources.md#list-of-available-data-source-types) olvashat.
+A Power BI-ban kétféle kapcsolattípus áll rendelkezésre: A DirectQuery és az Importálás. Nem minden adatforrás támogatja mindkét kapcsolattípust. Számos tényező befolyásolhatja a választást, például a biztonsági követelmények, a teljesítmény, az adatkorlátok és az adatmodellek mérete. A kapcsolattípusokról és a támogatott adatforrásokról bővebben az [elérhető adatforrástípusok listájában](service-gateway-data-sources.md#list-of-available-data-source-types) olvashat.
 
-A használt kapcsolat típusától függően az átjáróhasználat mértéke eltérő lehet. Például, amikor csak lehet, különítse el a **DirectQuery** típusú adatforrásokat az **Ütemezett frissítés** típusú adatforrásoktól (feltéve, hogy különböző jelentésekben vannak, és elkülöníthetőek). Ezzel megakadályozható, hogy DirectQuery-kérelmek ezreinek kelljen várni sorukra az átjárónál addig, amíg a cég fő irányítópultjához használt nagy méretű adatmodell reggeli ütemezett frissítése történik. Lássuk milyen szempontokat érdemes figyelembe venni a kapcsolattípusoknál:
+A használt kapcsolat típusától függően az átjáróhasználat mértéke eltérő lehet. Törekedjen például a DirectQuery-adatforrások és az ütemezetten frissített adatforrások elkülönítésére, ha csak lehetséges. Feltételezhető, hogy ezek külön jelentésben vannak, és különválaszthatók. A források elkülönítésével megakadályozható, hogy DirectQuery-kérelmek ezreinek kelljen várni sorukra az átjárónál addig, amíg a cég fő irányítópultjához használt nagy méretű adatmodell reggeli ütemezett frissítése történik. 
 
-* **Ütemezett frissítés**: A lekérdezések mérete és a napi frissítések száma alapján eldöntheti, hogy elég a javasolt minimális hardverkövetelményeknek megfelelő számítógépet használni, vagy nagyobb teljesítményű számítógépre lesz szüksége. Ha az adott lekérdezés nem kiszolgáló oldali transzformációkból áll, akkor a transzformációkat az átjáró fogja végezni, és ilyenkor hasznos lehet, ha a számítógépen, amelyen az átjáró telepítve van, több memória áll rendelkezésre.
+Az egyes kapcsolattípusoknál az alábbiakat érdemes figyelembe venni:
 
-* **DirectQuery**: A rendszer lekérdezést küld minden esetben, amikor egy felhasználó megnyitja a jelentést, vagy adatokat tekint meg. Ezért, ha várhatóan több mint 1000 felhasználó fog egyidejűleg hozzáférni az adatokhoz, érdemes gondoskodni arról, hogy a számítógép kellőképp robusztus és hatékony hardverrel rendelkezzen. **DirectQuery**-kapcsolat esetén több processzormag nagyobb teljesítményt eredményez.
+* **Ütemezett frissítés**: A lekérdezések mérete és a napi frissítések száma alapján eldöntheti, hogy elég a javasolt minimális hardverkövetelményeknek megfelelő számítógépet használni, vagy nagyobb teljesítményű számítógépre lesz szüksége. Ha az adott lekérdezés nem kiszolgáló oldali transzformációkból áll, akkor a transzformációkat az átjáró fogja végezni. Ennek eredményeként az átjáró számítógépén több memória áll rendelkezésre.
+
+* **DirectQuery**: A rendszer lekérdezést küld minden esetben, amikor egy felhasználó megnyitja a jelentést, vagy adatokat tekint meg. Ezért, ha várhatóan több mint 1000 felhasználó fog egyidejűleg hozzáférni az adatokhoz, gondoskodjon arról, hogy a számítógép kellőképp robusztus és hatékony hardverrel rendelkezzen. DirectQuery-kapcsolat esetén több processzormag nagyobb teljesítményt eredményez.
 
 Arról, hogy milyen követelmények vonatkoznak arra a gépre, amelyen a telepítést végzi, a helyszíni adatátjáró [telepítési követelményeiben](/data-integration/gateway/service-gateway-install#requirements) olvashat.
 
 ### <a name="location"></a>Hely
 
-Az átjáró földrajzi helyzete jelentős hatással lehet a lekérdezési teljesítményre, ezért a hálózati késleltetés minimalizálása érdekében gondoskodjon róla, hogy az átjáró, az adatforrások és a Power BI-bérlő földrajzilag a lehető legközelebb helyezkedjenek el egymáshoz. A Power BI-bérlő földrajzi helyzetének meghatározásához a Power BI szolgáltatásban válassza a **?** ikont a jobb felső sarokban, majd válassza **A Power BI névjegye** lehetőséget.
+Az átjáró földrajzi helyzete jelentős hatással lehet a lekérdezési teljesítményre. A hálózati késés csökkentése érdekében lehetőség szerint gondoskodjon róla, hogy az átjáró, az adatforrások és a Power BI-bérlő földrajzilag a lehető legközelebb helyezkedjenek el egymáshoz. A Power BI-bérlő földrajzi helyzetének meghatározásához a Power BI szolgáltatásban válassza a **?** ikont a jobb felső sarokban. Ez után válassza **A Power BI névjegye** lehetőséget.
 
 ![A Power BI-bérlő helyének meghatározása](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_02.png)
 
@@ -67,5 +69,5 @@ Ha a Power BI-átjárót az Azure Analysis Services szolgáltatással együtt ha
 * [Átjárók hibaelhárítása – Power BI](service-gateway-onprem-tshoot.md)  
 * [Helyszíni adatátjáró – GYIK – Power BI](service-gateway-power-bi-faq.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? Kérdezze meg [a Power BI közösségét](http://community.powerbi.com/).
 
