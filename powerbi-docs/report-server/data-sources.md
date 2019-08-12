@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: 6e3bed0cf8dda765722c0076086f59a91f1f380d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fe8ad0b951fedb17a97007e48808d2bfd7467e88
+ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770813"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68808213"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>A Power BI-jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón
 A Power Bi-jelentések számos adatforráshoz csatlakozhatnak. Az adatok használatának módjától függően eltérő adatforrások érhetők el. Az adatok importálhatók, vagy közvetlenül DirectQuery- vagy élő SQL Server Analysis Services-kapcsolattal lehet lekérdezni azokat.
@@ -202,7 +202,7 @@ A Power BI jelentéskészítő kiszolgáló nem támogatja az OAuth-alapú hites
 | Azure SQL Database |Nem |Nem |Igen |Nem |Nem |
 | Azure SQL Data Warehouse |Nem |Nem |Igen |Nem |Nem |
 | Oracle Database |Nem |Nem |Igen |Igen |Igen |
-| SAP Business Warehouse-kiszolgáló |Nem |Nem |Igen |Nem |Igen |
+| SAP Business Warehouse-kiszolgáló |Nem |Nem |Igen |Nem |Nem |
 | SAP HANA-adatbázis |Nem |Nem |Igen |Igen |Nem |
 | Teradata-adatbázis |Nem |Nem |Igen |Igen |Igen |
 
