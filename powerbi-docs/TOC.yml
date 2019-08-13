@@ -593,6 +593,8 @@
               href: service-export-to-pbix.md
             - name: Jelentés szűrése az URL-címekben szereplő paraméterekkel
               href: service-url-filters.md
+            - name: SAP-változók szerkesztése
+              href: service-edit-sap-variables.md
             - name: Ajánlott eljárások gyors és megbízható jelentések készítéséhez
               href: power-bi-reports-performance.md
         - name: Kérdések az adatokról
