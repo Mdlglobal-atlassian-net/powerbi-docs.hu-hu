@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3a5b6b89984064101b683532cbfb77ae5540c307
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: cd3afd0ed3ba1f5b734aab2106cbd70f65f29006
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730267"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867050"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Helyszíni adatátjáró – Gyakori kérdések – Power BI
 
@@ -23,9 +23,9 @@ ms.locfileid: "68730267"
 
 ## <a name="power-bi"></a>Power BI
 
-**Kérdés:** Kell frissítenem a személyes átjárót? 
+**Kérdés:** Frissítenem kell a helyszíni privát adatátjárót?
 
-**Válasz:** Nem, a személyes átjárót továbbra is használhatja a Power BI-hoz.
+**Válasz:** Nem, továbbra is használhatja a privát adatátjárót a Power BI-hoz.
 
 **Kérdés:** Szükség van különleges engedélyekre az átjárók telepítéséhez és a Power BI szolgáltatásban való kezeléséhez?
 
@@ -41,7 +41,7 @@ ms.locfileid: "68730267"
 
 **Kérdés:** Miért nem tudok kapcsolódni az Oracle-kiszolgálómhoz? 
 
-**Válasz:** Előfordulhat, hogy telepítenie kell az Oracle-ügyfelet, és konfigurálnia a tnsnames.ora fájlt a megfelelő kiszolgálóadatokkal, hogy kapcsolódni tudjon az Oracle-kiszolgálójához. Ez egy külön telepítés, amely az átjárón kívül esik. További információ: [Az Oracle-ügyfél telepítése](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+**Válasz:** Előfordulhat, hogy telepítenie kell az Oracle-ügyfelet, és konfigurálnia a tnsnames.ora fájlt a megfelelő kiszolgálóadatokkal, hogy kapcsolódni tudjon az Oracle-kiszolgálójához. Ez egy külön telepítés, amely az átjárón kívül esik. További információ: [Az Oracle-ügyfél telepítése](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
 
 **Kérdés:** Működik az átjáró az Azure ExpressRoute-tal? 
 

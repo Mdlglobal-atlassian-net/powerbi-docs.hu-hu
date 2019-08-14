@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: c039b00ced1bf62c8be72d218177d04a9fd3accf
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: e1dfda3c759d225019cc50d36cfe746976bd797a
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67532751"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867094"
 ---
 # <a name="use-a-relative-date-slicer-and-filter-in-power-bi-desktop"></a>Relatív dátumszeletelő és -szűrő használata a Power BI Desktopban
 
@@ -75,7 +75,7 @@ Ha kiválasztja a **Hónapok** lehetőséget a listából, és megadja a *2* ér
 
 * a szeletelő által korlátozott vizualizációk adatai az előző két hónapra korlátozva jelennek meg,
 
-* ami a május 20-tól július 20-ig (a mai napig) tartó időszakot jelenti.
+* ami a május 21-tól július 20-ig (a mai napig) tartó időszakot jelenti.
 
 Összehasonlításképp, ha a *Hónapok (naptár)* elemet választotta volna, a vizualizációk a május 1-től június 30-ig tartó időszakra (az utolsó két teljes naptári hónapra) lennének korlátozva.
 

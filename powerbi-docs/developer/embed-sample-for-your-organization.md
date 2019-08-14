@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: 02e11e167d859d3ef23124fed4f9f699766db8fe
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: ce13b161f0a9bf5291f2c0d127106b0db2c6fa29
+ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665557"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68808246"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba a cége számára
 
@@ -83,7 +83,7 @@ A Power BI Desktop segítségével létrehozhatja a jelentéseit és az adathalm
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Saját lapszámozott jelentések létrehozása és közzététele
 
-Lapszámozott jelentéseket a [Power BI jelentéskészítővel](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) hozhat létre. Ezután [feltöltheti](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) a jelentést egy alkalmazás-munkaterületre, amelyhez legalább egy A4/P1-kapacitás van rendelve. A jelentést feltöltő végfelhasználónak Power BI Pro-licencre van szüksége, ha közzé szeretne tenni valamit egy alkalmazás-munkaterületen.
+Többoldalas jelentéseket a [Power BI jelentéskészítővel](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) hozhat létre. Ezután [feltöltheti a jelentést](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) egy legalább A4/P1-kapacitáshoz rendelt alkalmazás-munkaterületre. A jelentést feltöltő végfelhasználónak Power BI Pro-licencre van szüksége, ha közzé szeretne tenni valamit egy alkalmazás-munkaterületen.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Tartalom beágyazása a mintaalkalmazással
 
