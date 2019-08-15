@@ -99,7 +99,7 @@ Ha YouTube- vagy Vimeo-videócsempét ad hozzá az irányítópulthoz, a lejáts
 1. A **Csempe hozzáadása** ablakban válassza a **Videó** > **Tovább** lehetőséget.
 2. Adja meg a videó adatait a **Videócsempe felvétele** ablakban:   
    
-   a. Ha azt szeretné, hogy cím jelenjen meg a videócsempe fölött, válassza a **Cím és alcím megjelenítése** lehetőséget, majd írjon be egy **Címet**, és igény szerint egy **Alcímet** is. Ebben a példában **Alcímet** adunk meg, amelyet aztán a teljes YouTube lejátszási listaára mutató hivatkozássá konvertálunk.
+   a. Ha azt szeretné, hogy cím jelenjen meg a videócsempe fölött, válassza a **Cím és alcím megjelenítése** lehetőséget, majd írjon be egy **Címet**, és igény szerint egy **Alcímet** is. Ebben a példában **Alcímet** adunk meg, amelyet aztán a teljes YouTube lejátszási listára mutató hivatkozássá konvertálunk.
 
    b. Adja meg a **Videó URL-címét**.
 
@@ -116,10 +116,10 @@ Ha YouTube- vagy Vimeo-videócsempét ad hozzá az irányítópulthoz, a lejáts
 5. A YouTube lejátszási listájának felkereséséhez kattintson az alcímre.
 
 ## <a name="add-streaming-data"></a>Streamelési adatok hozzáadása
-A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy érzékelő-adatokat adhat az irányítópult egy csempéjéhez. A Power BI integrációt hozott létre az adatok PubNub-tól való átvételére. Will most elmagyarázza a működését.
+A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy érzékelőadatokat adhat az irányítópult csempéjéhez. A Power BI integrációt hozott létre az adatok PubNubtól való átvételére. Will most elmagyarázza a működését.
    
 
-A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy érzékelő-adatokat adhat az irányítópult egy csempéjéhez. A Power BI integrációt hozott létre az adatok PubNub-tól való átvételére. Will most elmagyarázza a működését. 
+A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy érzékelőadatokat adhat az irányítópult csempéjéhez. A Power BI integrációt hozott létre az adatok PubNubtól való átvételére. Will most elmagyarázza a működését. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
 
@@ -137,7 +137,7 @@ A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy
 10. Válassza a **Tengely**, **Jelmagyarázat** és **Értékek** lehetőségeket.
 11. Határozza meg a megjeleníteni kívánt időtartamot másodpercben, percben vagy órában.
 12. Kattintson a **Tovább** gombra.
-13. Adjon meg **Címet** és **Alcímet**, ha szeretné.
+13. Ha szeretné, megadhat **Címet** és **Alcímet** is.
 14. Rögzítse az irányítópulton.
 
 

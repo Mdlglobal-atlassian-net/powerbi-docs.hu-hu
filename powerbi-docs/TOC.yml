@@ -1289,6 +1289,8 @@
               href: report-server/configure-kerberos-powerbi-reports.md
             - name: Mobilalkalmazások hozzáférésének távoli konfigurálása
               href: report-server/configure-powerbi-mobile-apps-remote.md
+            - name: Távoli mobilhozzáférés az Azure AD-vel
+              href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
             - name: Excel-munkafüzetek üzemeltetése
               href: report-server/excel-oos.md
     - name: Hivatkozás
@@ -1424,3 +1426,7 @@
           href: service-admin-governance.md
         - name: A Power BI és a biztonság
           href: service-admin-power-bi-security.md
+- name: Útmutató
+  items:
+    - name: Mi az a csillagséma?
+      href: guidance/star-schema.md

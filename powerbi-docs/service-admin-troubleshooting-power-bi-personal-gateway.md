@@ -142,7 +142,7 @@ Ha a privát átjárót nem tudja telepíteni, megjelenik egy hivatkozás, melyn
 Másik lehetőségként megnyithatja a Temp mappát (%temp%), és megkeresheti a *Power\_BI\_* sztringgel kezdődő fájlokat.
 
 > [!NOTE]
-> Elképzelhető, hogy a %temp% használatával a Temp mappa egyik almappájába kerül. A *Power\_BI\_* fájlok a Temp mappa gyökerében találhatók. Ehhez esetleg, hogy egy vagy két szinttel feljebb kell lépnie.
+> Elképzelhető, hogy a %temp% használatával a Temp mappa egyik almappájába kerül. A *Power\_BI\_* fájlok a Temp mappa gyökerében találhatók. Ehhez esetleg egy vagy két szinttel feljebb kell lépnie.
 > 
 > 
 

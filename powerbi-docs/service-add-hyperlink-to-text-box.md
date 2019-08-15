@@ -26,7 +26,7 @@ Megfigyelheti, hogyan hoz létre Will Thompson egy szövegdobozt, és hogyan ad 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew#t=0m55s" frameborder="0" allowfullscreen></iframe>
 
-A Power BI-táblázatokban és -mátrixokban használható hivatkozáskoról a [Hivatkozások hozzáadása táblázathoz](power-bi-hyperlinks-in-tables.md) című cikkben talál információt. Szövegdobozok irányítópulthoz adásáról a [Képek, videók és egyebek hozzáadása az irányítópulthoz](service-dashboard-add-widget.md) című cikkből tájékozódhat. 
+A Power BI-táblázatokban és -mátrixokban használható hivatkozáskoról a [Hivatkozások hozzáadása táblázathoz](power-bi-hyperlinks-in-tables.md) című cikkben talál információt. A szövegdobozok irányítópulthoz történő hozzáadásáról a [Képek, videók és egyebek hozzáadása az irányítópulthoz](service-dashboard-add-widget.md) című cikkből tájékozódhat. 
 
 ## <a name="to-add-a-hyperlink-to-a-text-box"></a>Hivatkozás szövegdobozhoz adása
 1. Nyisson meg egy jelentést, [hozzon létre egy szövegdobozt](power-bi-reports-add-text-and-shapes.md), és írjon bele valamilyen szöveget. 

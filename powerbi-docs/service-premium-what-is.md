@@ -39,9 +39,9 @@ A Power BI Premium bérlői szintű Office 365-előfizetés, amely két SKU- (te
 - **EM** termékváltozatok (EM1-EM3) beágyazáshoz, éves kötelezettségvállalással, havi számlázással. Az EM1 és az EM2 SKU csak mennyiségi licenccsomagban érhető el. Ezek közvetlenül nem megvásárolhatók.
 - **P** termékváltozatok (P1-P3) beágyazáshoz és nagyvállalati funkciókhoz, havi vagy éves kötelezettségvállalással, havi számlázással. Ezek tartalmaznak egy licencet a Power BI jelentéskészítő kiszolgáló helyszíni telepítéséhez.
 
-Egy másik megoldás egy **Azure Power BI Embedded**-előfizetés megvásárlása, amely egyetlen **A**-családbeli (A1-A6) SKU-t tartalmaz, kizárólag beágyazási és kapacitástesztelési célra. Minden SKU biztosít virtuális magokat kapacitások létrehozásához, de az EM termékváltozatok kisebb méretű beágyazásra vannak korlátozva. A négynél kevesebb virtuális magot biztosító EM1, EM2, A1 és A2 SKU nem fut dedikált infrastruktúrán.
+Egy másik megoldás egy **Azure Power BI Embedded**-előfizetés megvásárlása, amely egyetlen **A**-családbeli (A1-A6) SKU-t tartalmaz, kizárólag beágyazási és kapacitástesztelési célra. Minden SKU biztosít virtuális magokat kapacitások létrehozásához, de az EM termékváltozatok kisebb méretű beágyazásra vannak korlátozva. A négynél kevesebb virtuális magot biztosító EM1, EM2, A1 és A2 termékváltozat nem dedikált infrastruktúrán fut.
 
-Bár ez a cikk elsősorban a P termékváltozatokkal foglalkozik, a leírtak nagy része az A termékváltozatokra is vonatkozik. A Premium-előfizetések termékváltozataival szemben az Azure-termékváltozatok nem igényelnek időbeli kötelezettségvállalást, és óránként vannak számlázva. Biztosítják a fel- és leméretezés, szüneteltetés, folytatás és törlés teljes rugalmasságát. 
+Bár ez a cikk elsősorban a P termékváltozatokkal foglalkozik, a leírtak nagy része az A termékváltozatokra is vonatkozik. A Premium-előfizetések termékváltozataival szemben az Azure-termékváltozatok nem igényelnek időbeli kötelezettségvállalást, és óránként vannak számlázva. Biztosítják a vertikális fel- és leskálázás, a szüneteltetés, a folytatás és a törlés teljes rugalmasságát. 
 
 Az Azure Power BI Embedded többnyire túlmutat ennek a cikknek a témakörén, de a Prémium szintű kapacitások optimalizálása című cikk [Tesztelési módszerek](service-premium-capacity-optimize.md#testing-approaches) szakaszában leírtak szerint praktikus és gazdaságos megoldást kínál a számítási folyamatok tesztelésére és mérésére. Az Azure-termékváltozatokról az [Azure Power BI Embedded dokumentációjában](https://azure.microsoft.com/services/power-bi-embedded/) tájékozódhat.
 
@@ -126,7 +126,7 @@ Kapacitások létrehozásakor a felügyeleti feladatok többsége a [Felügyelet
 
 ![Felügyeleti portál](media/service-premium-what-is/premium-admin-portal.png)
 
-A kapacitás-rendszergazdák munkaterületeket rendelhetnek a kapacitáshoz, kezelhetik a felhasználói jogosultságokat, és más rendszergazdákat jelölhetnek ki. A kapacitás-rendszergazdák ezen kívül konfigurálhatják a számítási feladatokat, beállíthatják a memórialefoglalásokat, és ha szükséges, újraindíthatnak egy kapacitást, alaphelyzetbe állítva a műveleteket a kapacitás túlterhelése esetén.
+A kapacitás-rendszergazdák munkaterületeket rendelhetnek a kapacitáshoz, kezelhetik a felhasználói jogosultságokat, és más rendszergazdákat jelölhetnek ki. A kapacitás-rendszergazdák ezen kívül konfigurálhatják a számítási feladatokat, beállíthatják a memóriafoglalásokat, és szükség esetén újraindíthatják a kapacitásokat, alaphelyzetbe állítva a műveleteket egy kapacitás túlterhelése esetén.
 
 ![Felügyeleti portál](media/service-premium-what-is/premium-admin-portal-mgmt.png)
 
@@ -176,7 +176,7 @@ A következő táblázatban a különböző méretű .pbix-fájlokhoz ajánlott 
    |P2    | < 6 GB        |
    |P3, P4, P5    | legfeljebb 10 GB   |
 
-A Power BI Embedded A4 termékváltozata a P1 SKU-val, az A5 a P2-vel, az A6 pedig a P3-mal egyezik meg. Nagy modellek A és EM SKU-kba való közzététele olyan hibát eredményezhet, amely nem a megosztott kapacitásbeli modellméret-korlátozási hibával függ össze. Nagy modellek A és EM SKU-kban fellépő frissítési hibái feltehetően időtúllépésre utalnak. 
+A Power BI Embedded A4 termékváltozata a P1 SKU-val, az A5 a P2-vel, az A6 pedig a P3-mal egyezik meg. Nagy modellek A és EM termékváltozatban való közzététele olyan hibákat eredményezhet, amelyek nem a megosztott kapacitásbeli modellméret-korlátozási hibával függenek össze. Nagy modellek A és EM SKU-kban fellépő frissítési hibái feltehetően időtúllépésre utalnak. 
 
 A .pbix-fájlok *nagy mértékben tömörített állapotban* tartalmazzák az adatokat. Az adatok mérete valószínűleg többszörösére fog nőni a memóriába való betöltéskor, és ehhez képest is a többszörösére nőhet az adatok frissítése során.
 

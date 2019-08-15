@@ -19,7 +19,7 @@ ms.locfileid: "68867113"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Jelentés beágyazása egy biztonságos portálon vagy webhelyen
 
-A Power BI jelentések új **Beágyazás** beállításával egyszerűen és biztonságosan ágyazhat be jelentéseket belső webportálokon. Ezek a portálok lehetnek **felhőalapúak** vagy **helyszínen üzemeltetettek**, mint a SharePoint 2019. A beágyazott jelentések minden elemengedélyt tiszteletben tartanak, az adatbiztonsággal együtt egészen a [sorszintű biztonságig (RLS)](service-admin-rls.md). Kód nélküli beágyazást kínálnak bármilyen portálon, amely elfogad URL-eket vagy iFrame-eket. 
+A Power BI jelentések új **Beágyazás** beállításával egyszerűen és biztonságosan ágyazhat be jelentéseket belső webportálokon. Ezek a portálok lehetnek **felhőalapúak** vagy **helyszínen üzemeltetettek**, mint például a SharePoint 2019. A beágyazott jelentések minden elemengedélyt tiszteletben tartanak, az adatbiztonsággal együtt egészen a [sorszintű biztonságig (RLS)](service-admin-rls.md). Kód nélküli beágyazást kínálnak bármilyen portálon, amely elfogad URL-eket vagy iFrame-eket. 
 
 A **Beágyazás** lehetőség az [URL-szűrőket](service-url-filters.md) és az URL-beállításokat is támogatja. Kevés kódot használó, csupán alapszintű HTML- és JavaScript-szakértelmet kívánó megközelítéssel integrálhat portálokkal.
 
@@ -33,7 +33,7 @@ A **Beágyazás** lehetőség az [URL-szűrőket](service-url-filters.md) és az
 
     ![Beágyazás lehetőség – párbeszédpanel](media/service-embed-secure/secure-embed-code-dialog.png)
 
-3. Akár közvetlenül az URL-címmel, akár egy webportálon beágyazva nyit meg egy felhasználó egy jelentést, a hozzáférés hitelesítést követel. Ha a felhasználó a böngészőbeli munkamenet során nem jelentkezett be a Power BI-ba, a következő képernyő jelenik meg. Amikor a **Bejelentkezés** gombot választják, új böngészőablak vagy -lap nyílhat meg. Ha nem látják a bejelentkezési felszólítást, ellenőriztesse velük a felugró ablakok tiltását.
+3. Akár közvetlenül az URL-címmel, akár egy webportálon beágyazva nyit meg egy felhasználó egy jelentést, a hozzáférés hitelesítést követel. Ha a felhasználó a böngészőbeli munkamenet során nem jelentkezett be a Power BI-ba, a következő képernyő jelenik meg. Amikor a **Bejelentkezés** gombot választják, új böngészőablak vagy -lap nyílhat meg. Ha nem látják a bejelentkezési felszólítást, ellenőriztesse velük, hogy nincsenek-e letiltva a felugró ablakok.
 
     ![Jelentkezzen be a jelentés megtekintéséhez](media/service-embed-secure/secure-embed-sign-in.png)
 
@@ -53,7 +53,7 @@ A Power BI szolgáltatásban megoszthatja a beágyazott jelentéseket a hozzáf�
 
 ## <a name="licensing"></a>Licencelés
 
-Ahhoz, hogy a beágyazott jelentést megtekinthesse, a felhasználónak vagy Power BI Pro-licencre van szüksége, vagy a tartalomnak kell [Power BI Premium-kapacitáson (EM vagy P termékváltozat)](service-admin-premium-purchase.md) lévő munkaterületen lennie.
+Ahhoz, hogy a beágyazott jelentést megtekinthesse, a felhasználónak vagy Power BI Pro-licencre van szüksége, vagy a tartalomnak kell [Power BI prémium szintű kapacitáson (EM vagy P termékváltozat)](service-admin-premium-purchase.md) lévő munkaterületen lennie.
 
 ## <a name="customize-your-embed-experience-using-url-settings"></a>A beágyazás testreszabása URL-beállításokkal
 
