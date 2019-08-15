@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 02fbe26fc4d0c8be0439ca656151ef7712d201b6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1c4a16d0dbe22a154dacfd296bfedab8acb97e81
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61399098"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867127"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>A Power BI által támogatott nyelvek és országok/régiók
 
-Ez a cikk felsorolja a támogatott nyelvek és országok/régiók a Power BI szolgáltatásban, a Power BI Desktop és a Power BI dokumentációjában.
+Ez a cikk a Power BI szolgáltatás, a Power BI Desktop és a Power BI dokumentációja által támogatott nyelveket és országokat/régiókat sorolja fel.
 
 ## <a name="countries-and-regions-where-power-bi-is-available"></a>Országok és régiók, ahol a Power BI elérhető
 Azon országok és régiók listáját, ahol a Power BI elérhető, a [Nemzetközi elérhetőség](https://products.office.com/business/international-availability) oldalon találja meg. 
@@ -73,11 +73,11 @@ A Power BI szolgáltatás (a böngészőben) a következő 44 nyelven érhető e
 * Vietnami – Tiếng Việt
 
 ### <a name="whats-translated"></a>Lefordított elemek
-A Power BI lefordítja a menük, gombok, üzeneteket és más elemek a tapasztalattal az Ön nyelvére.
+A Power BI az Ön saját nyelvére fordítja le a menüket, gombokat, üzeneteket és a felhasználói felület más elemeit. A jelentések olyan elemei, mint az automatikusan generált címek, szűrők és elemleírások le vannak fordítva, de az adatok nem lesznek automatikusan lefordítva. A jelentéseken belül a vizualizációk elrendezése nem módosul akkor sem, ha Ön jobbról balra író nyelvet, például hébert használ.
 
 Néhány funkció jelenleg csak angol nyelven érhető el:
 
-* Irányítópultok és jelentések Power BI által létrehozott szolgáltatások, mint a Microsoft Dynamics CRM, a Google Analytics és a Salesforce-hoz való csatlakozáskor. Létrehozhat saját irányítópultokat és jelentéseket a saját nyelvén.
+* Irányítópultok és jelentések, amelyeket a Power BI hoz létre olyan szolgáltatásokhoz való kapcsolódáskor, mint a Microsoft Dynamics CRM, a Google Analytics és a Salesforce. Ettől függetlenül Ön létrehozhat saját irányítópultokat és jelentéseket a saját nyelvén.
 * Adatok vizsgálata a Q&A-val.
 
 Figyelje az értesítéseket, mert dolgozunk további funkciók más nyelvekre való átültetésén. 
@@ -134,15 +134,20 @@ A Power BI Desktopot kétféle módon szerezheti be: Letöltheti vagy telepíthe
    
      A Power BI Desktop a következő indításakor az alapértelmezettként beállított nyelvet fogja használni. 
 
+A következőket kell tennie, ha felül szeretné bírálni az alapértelmezést, és a Power BI Desktopot a Windowsétól eltérő nyelven szeretné használni.
+1. A Power BI Desktopban lépjen a **Fájl** > **Lehetőségek és beállítások** > **Beállítások** területre.
+2. A **Globális beállítások** szakaszban válassza a **Területi beállítások** lehetőséget.
+3. Az **Alkalmazás nyelve** mezőben adjon meg egy más területi beállítást. 
+
+A Power BI Desktop nyelvi támogatása az Alkalmazás nyelve legördülő listában megjelenő nyelvekre korlátozódik.
+
 ### <a name="choose-a-language-when-you-download-power-bi-desktop"></a>Nyelv megadása letöltött Power BI Desktophoz
-A Power BI Desktophoz megadott nyelv befolyásolja a számok és dátumok megjelenési formátumát a jelentésekben. 
+Ha a Power BI Desktop telepítőjének .msi változatát használja, a nyelv a letöltéskor van meghatározva. Nyelvet [A Power BI Desktop letöltése](https://www.microsoft.com/en-us/download/details.aspx?id=45331) oldalon választhat. 
 
-* A nyelvet a [Power BI Desktop letöltésekor](https://powerbi.microsoft.com/desktop) kell megadnia. 
-
-A Power BI Desktop nyelvének megváltoztatásához térjen vissza a letöltési oldalra és töltse le másik nyelven.
+Az így telepített Power BI Desktop nyelvének megváltoztatásához térjen vissza a letöltési oldalra és töltse le másik nyelven.
 
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Az adatok a Power BI Desktopba való importálásához használni kívánt területi beállítás megadása
-Akár letölti, akár a Windows Áruházból telepíti a Power BI Desktopot, egy adott jelentéshez a saját Power BI Desktop-verziójáétól eltérő területi beállításokat is megadhat. A területi beállítás változások, az adatok megjelenítésének értelmezi az adatok importálásakor a forrás, például hogy "3/4/2017" értékként értelmezi április 3 vagy március 4. 
+Akár letölti, akár a Windows Áruházból telepíti a Power BI Desktopot, egy adott jelentéshez a saját Power BI Desktop-verziójáétól eltérő területi beállításokat is megadhat. Ez a területi beállítás határozza meg az adatforrásból importált adatok értelmezését, például hogy a "3/4/2017" dátum április 3-a vagy március 4-e. 
 
 1. A Power BI Desktopban lépjen a **Fájl** > **Lehetőségek és beállítások** > **Beállítások** területre.
 2. A **Aktuális fájl** alatt válassza a **Területi beállítások** lehetőséget.

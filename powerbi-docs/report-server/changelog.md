@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 031274f4f35ef1e36ec17648c2cbf967f5436020
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 0aa1d964485297c5e0dae3f4a309cc0dd15b92b2
+ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729795"
+ms.lasthandoff: 08/10/2019
+ms.locfileid: "68940903"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
@@ -124,7 +124,10 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
 - **Power BI Desktop (a Power BI jelentéskészítő kiszolgálóra optimalizálva)**
     - *Verzió: 2.61.5192.641 (2018. augusztus), Kiadás dátuma: 2018. augusztus 15.*
         - A Power BI jelentéskészítő kiszolgálóval (2018. augusztus) való kapcsolathoz szükséges módosításokat tartalmaz         
-        
+    - *Verzió: 2.61.5192.7701 (2018. augusztus), Kiadás dátuma: 2019. augusztus 8.* (új build és verzió)
+        - Hibajavítások
+            - Javítás a helytelen telemetrianaplózáshoz
+            
 ## <a name="march-2018"></a>2018. március
 
 - **Power BI jelentéskészítő kiszolgáló**
