@@ -53,6 +53,8 @@
       items:
         - name: Újdonságok a Power BI Desktop legújabb frissítésében
           href: desktop-latest-update.md
+        - name: Vizualizációk csoportosítása a Power BI Desktopban
+          href: desktop-grouping-visuals.md
         - name: A Modellező nézet a Power BI Desktopban
           href: desktop-modeling-view.md
         - name: Aggregációk a Power BI Desktopban
