@@ -76,7 +76,7 @@ Lásd az adatforrásokról szóló cikkeket:
 
 ## <a name="where-things-can-go-wrong"></a>Hibalehetőségek
 
-Lásd: [A helyszíni adatátjáróval kapcsolatos hibák elhárítása[ és ](/data-integration/gateway/service-gateway-tshoot)Az átjárókkal kapcsolatos hibák elhárítása – Power BI](service-gateway-onprem-tshoot.md).
+Lásd: [A helyszíni adatátjáróval kapcsolatos hibák elhárítása](/data-integration/gateway/service-gateway-tshoot) és [Az átjárókkal kapcsolatos hibák elhárítása – Power BI](service-gateway-onprem-tshoot.md).
 
 ## <a name="sign-in-account"></a>Bejelentkezési fiók
 
