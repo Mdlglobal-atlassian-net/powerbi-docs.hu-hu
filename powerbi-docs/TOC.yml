@@ -489,9 +489,9 @@
               href: reduce-the-size-of-an-excel-workbook.md
         - name: Adatok beolvasása megosztott adatkészletekből
           items:
-            - name: Adatkészletek használata több munkaterülettel
+            - name: Adathalmazok használata több munkaterülettel
               href: service-datasets-across-workspaces.md
-            - name: Adatkészletek létrehozása és megosztása (előzetes verzió)
+            - name: Adatkészletek megosztása (előzetes verzió)
               href: service-datasets-build-permissions.md
             - name: Adatkészleteken alapuló jelentések létrehozása
               href: service-datasets-discover-across-workspaces.md
@@ -1432,3 +1432,5 @@
   items:
     - name: Mi az a csillagséma?
       href: guidance/star-schema.md
+    - name: Az adatmodell méretének csökkentése
+      href: guidance/import-modeling-data-reduction.md
