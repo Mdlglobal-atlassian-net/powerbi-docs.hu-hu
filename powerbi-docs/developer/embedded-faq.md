@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: af3c22197e4d6783787bd72c9cf010bf6db64bc1
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 62b5498558b2c89a23e2ed2caf3dacdf343d3a79
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270973"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490332"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Gyakori kérdések – Power BI Embedded
 
@@ -66,9 +66,10 @@ Itt látható egy részlet a funkcióeltérések listájából.
 
 | Funkció | Power BI Embedded | Power BI Premium-kapacitás | Power BI Premium-kapacitás |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
-|   | (A termékváltozatok) | (EM termékváltozatok) | (P termékváltozatok) |
-| Összetevők beágyazása Power BI alkalmazás munkaterületeiről | Azure-kapacitás | Office 365-kapacitás | Office 365-kapacitás |
-| Power BI-jelentések használata Embedded-alkalmazásokban | Igen | Igen | Igen |
+|   | A SKU-k – Azure-kapacitás | EM SKU-k – O365-kapacitás | P SKU-k – O365-kapacitás |
+| Összetevők beágyazása Power BI alkalmazás munkaterületeiről | Igen | Igen | Igen |
+| Power BI-jelentések használata beágyazott alkalmazásokban – Saas | Nem | Igen | Igen |
+| Power BI-jelentések használata beágyazott alkalmazásokban – Paas | Igen | Igen | Igen |
 | Power BI-jelentések használata SharePointban | Nem | Igen | Igen |
 | Power BI-jelentések használata Dynamicsben | Nem | Igen | Igen |
 | Power BI-jelentések használata Teamsben (a mobil alkalmazás kivételével) | Nem | Igen | Igen |

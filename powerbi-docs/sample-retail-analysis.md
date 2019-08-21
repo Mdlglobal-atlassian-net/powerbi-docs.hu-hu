@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 5391fee3c5a05d1c34cac4f3a097a0577ce5d191
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: b3adcf3ba97e83875187a11116fdb7b642e5560b
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462389"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68962240"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Kiskereskedelmi elemzési minta – Power BI: Bemutató megtekintése
 
@@ -92,10 +92,10 @@ Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkaf
 ## <a name="review-a-tile-created-with-power-bi-qa"></a>A Power BI Q&A funkcióban létrehozott csempe áttekintése
 Tárja fel a részleteket.
 
-1. Módosítsa a kérdést a következőre: *folyó évi értékesítések **körzet szerint***. Tekintse meg az eredményt: A Q&A a választ automatikusan egy sávdiagramba helyezi, és további kifejezéseket javasol:
+1. Módosítsa a kérdést a következőre: _folyó évi értékesítések **körzet szerint**_ . Tekintse meg az eredményt: A Q&A a választ automatikusan egy sávdiagramba helyezi, és további kifejezéseket javasol:
 
    ![Folyó évi értékesítések körzet szerint a Q&A-ban](media/sample-retail-analysis/retail8.png)
-2. Most módosítsa a kérdést a következőre: *folyó évi értékesítések **irányítószám és üzletlánc szerint***.
+2. Most módosítsa a kérdést a következőre: _folyó évi értékesítések **irányítószám és üzletlánc szerint**_ .
 
    Figyelje meg, hogy a Power BI hogyan válaszol a megfelelő diagramokkal az éppen beírt kérdésre.
 3. Kísérletezzen többféle kérdéssel, és tekintse meg a válaszul kapott eredményeket.

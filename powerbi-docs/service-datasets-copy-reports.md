@@ -7,19 +7,22 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2db4c23b50071e387913ed79b4d01daeafb928a4
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: af0ffa5a879a2249c34ac73895103dfdf63e4d27
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567379"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530613"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Jelentések másolása más munkaterületekről (előzetes verzió)
 
-Ha egy munkaterületen vagy alkalmazásban Önnek megfelelő jelentést talál, másolatot készíthet róla, amelyet egy másik munkaterületre menthet. Ezt követően módosíthatja a jelentést, vizualizációkat vagy más elemeket adhat hozzá vagy törölhet. Az adatmodell elkészítésével nem kell foglalkoznia. Azt már létrehozták az Ön számára. Egy meglévő jelentést ráadásul sokkal egyszerűbb módosítani, mint egy üresből kiindulni. A jelentés másolatát azonban nem teheti közzé alkalmazásban az új munkaterületről. A további [szempontok és korlátozások](service-datasets-across-workspaces.md#considerations-and-limitations) listáját az „Adathalmazok használata több munkaterületen” című cikkben tekintheti meg.
+Ha egy munkaterületen vagy alkalmazásban Önnek megfelelő jelentést talál, másolatot készíthet róla, amelyet egy másik munkaterületre menthet. Ezt követően módosíthatja a jelentés másolatát, és vizualizációkat vagy más elemeket adhat hozzá vagy törölhet. Az adatmodell elkészítésével nem kell foglalkoznia. Azt már létrehozták az Ön számára. Egy meglévő jelentést ráadásul sokkal egyszerűbb módosítani, mint egy üresből kiindulni. Azonban amikor az új munkaterületen hoz létre egy alkalmazást, előfordulhat, hogy nem teheti közzé az alkalmazásban a jelentés másolatát. További információt az [„Adathalmazok használata több munkaterületen” című cikk szempontjai és korlátozásai](service-datasets-across-workspaces.md#considerations-and-limitations) között találhat.
+
+> [!NOTE]
+> Másolat készítéséhez Pro-licencre van szüksége, még akkor is, ha az eredeti jelentés egy Premium-kapacitásbeli munkaterületen található.
 
 ## <a name="save-a-copy-of-a-report"></a>Jelentés másolatának mentése
 

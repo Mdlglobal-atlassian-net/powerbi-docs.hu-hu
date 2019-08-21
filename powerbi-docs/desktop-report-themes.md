@@ -7,24 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/12/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f0f09c3f64795ca0530bbe5ec5cec09de6c7b53
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0c098baa42e4fdc45b23519856eed824dbab5cad
+ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60989334"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69023389"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Jelentéstémák használata a Power BI Desktopban
-A **Jelentéstémák** használatával egységes színtémát alkalmazhat az egész jelentésre, például a cég színeit, az évszaknak megfelelő színeket vagy bármely más színtémát. **Jelentéstémák** alkalmazásakor a jelentésben szereplő összes vizualizáció a kiválasztott téma színeit fogja használni. Ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be.
+A **Jelentéstémák** használatával egységes színtémát alkalmazhat az egész jelentésre, például a cég színeit, az évszaknak megfelelő színeket, ikonkészleteket vagy bármely más színtémát. **Jelentéstémák** alkalmazásakor a jelentésben szereplő összes vizualizáció a kiválasztott téma színeit fogja használni. Ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be.
 
 ![Jelentéstémák](media/desktop-report-themes/report-themes_1.png)
 
 **Jelentéstéma** alkalmazásakor egy alapszintű szerkezettel rendelkező JSON-fájlra van szükség. Ezt a JSON-fájlt ezután importálhatja a Power BI Desktopba, majd alkalmazhatja a jelentésre. A JSON-fájl szerkezete és importálási folyamata egyszerű (utóbbi mindössze néhány kattintásból áll).
 
-Ezen felül szinte az összes elemet testreszabhatja és szabványosíthatja. A testreszabást a JSON-fájlban kell végrehajtani, amelyet manuálisan módosíthat a **Formázás** panelen. A cél, hogy hogyan a jelentések megjelenését, és úgy gondolja, a részletes teljes szabályozható.
+Ezen felül szinte az összes elemet testreszabhatja és szabványosíthatja. A testreszabást a JSON-fájlban kell végrehajtani, amelyet manuálisan módosíthat a **Formázás** panelen. A cél az, hogy teljes körűen, egészen a legapróbb részletekig megszabhassa a jelentések megjelenését és működését.
 
 ## <a name="how-report-themes-work"></a>A jelentéstémák működése
 Power BI Desktop-jelentésre úgy alkalmazhat jelentéstémát, hogy kiválaszt egyet az elérhető beépített jelentéstémák közül, vagy egyéni témát importál.

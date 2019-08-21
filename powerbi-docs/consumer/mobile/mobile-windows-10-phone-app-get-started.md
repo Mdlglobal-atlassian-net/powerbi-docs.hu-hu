@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
+ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: aa41e1e2869ad4d2f77224e3bec99dc00c59c536
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0a60fe526e83e5220e9b310097c8ba37682a396e
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61337341"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995216"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Windows 10-hez készült Power BI mobilalkalmazás – első lépések
-A Windows 10-hez készült Power BI alkalmazással táblagépen és mobilon is használhatja a Power BI-t: naprakész, érintéses használatra optimalizált mobil hozzáférést kap a vállalati információkhoz. Bárhol megtekintheti és használhatja a vállalati irányítópultjait – közvetlenül a [Windows kezdőképernyőjéről](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
+A Windows 10-hez készült Power BI alkalmazással táblagépen és mobilon is használhatja a Power BI-t. Naprakész, érintéses használatra optimalizált mobil hozzáférést kaphat a vállalati információkhoz. Bárhol megtekintheti és használhatja a vállalati irányítópultjait – közvetlenül a [Windows kezdőképernyőjéről](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
-![Windows Live csempe](./media/mobile-windows-10-phone-app-get-started/pbi_win10_livetile.gif)
+![Windows élő csempe](./media/mobile-windows-10-phone-app-get-started/pbi_win10_livetile.gif)
 
 A [Power BI szolgáltatással irányítópultokat és jelentéseket hozhat létre](../../service-get-started.md) az adataiból. 
 
@@ -28,12 +28,12 @@ Ezután felhasználhatja az irányítópultokat és a jelentéseket, kutathat az
 ## <a name="first-things-first"></a>Először a lényeg
 * [**Töltse le a Windows 10-hez készült Power BI mobilalkalmazást**](http://go.microsoft.com/fwlink/?LinkID=526478) a Windows Áruházból.
   
-  Az eszközön a Windows 10 operációs rendszernek kell futnia. Az alkalmazás működéséhez 3 GB RAM és 8 GB belső tárterület szükséges.
+  Az eszközön a Windows 10 rendszernek kell futnia. Az alkalmazás működéséhez 3 GB RAM és 8 GB belső tárterület szükséges.
    
 * Ismerje meg [a Power BI mobilalkalmazások újdonságait](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Regisztráció a Power BI szolgáltatásra a weben
-Ha meg nem regisztrált, lépjen a [Power BI szolgáltatásra](http://powerbi.com/), és hozzon létre egy saját fiókot, ahol irányítópultokat és jelentéseket hozhat létre és tárolhat, valamint összevonhatja az adatait. Ezután lépjen be a Power BI szolgáltatásba a Windows 10-eszközről, hogy bárhonnan megtekinthesse a saját irányítópultjait.
+Ha még nem regisztrált, nyissa meg a [Power BI szolgáltatást.](http://powerbi.com/) Regisztráljon egy saját fiókot, ahol létrehozhat és tárolhat irányítópultokat és jelentéseket, valamint összegezheti az adatait. Ezután lépjen be a Power BI szolgáltatásba a Windows 10-eszközről, hogy bárhonnan megtekinthesse a saját irányítópultjait.
 
 1. A Power BI szolgáltatásban koppintson a [Regisztráció](http://go.microsoft.com/fwlink/?LinkID=513879) gombra a Power BI-fiók létrehozásához.
 2. Hozzáláthat a [saját irányítópultok és jelentések létrehozásához](../../service-get-started.md).
@@ -53,7 +53,7 @@ Ha meg nem regisztrált, lépjen a [Power BI szolgáltatásra](http://powerbi.co
 A Power BI- és Reporting Services-mintákat regisztráció nélkül is próbálhatja. Az alkalmazás letöltése után megtekintheti a mintákat, vagy belekezdhet a használatba. Az irányítópultok kezdőlapjáról bármikor visszatérhet a példákhoz.
 
 ### <a name="power-bi-samples"></a>Power BI-példák
-Megtekintheti és felhasználhatja a Power BI irányítópult-mintáit, de van néhány dolog, amit nem tehet velük. Nem nyithatja meg a jelentéseket az irányítópultok mögött, nem oszthatja meg a mintákat másokkal, és nem jelölheti őket kedvencnek.
+Megtekintheti és felhasználhatja a Power BI irányítópult-mintáit. Azonban van néhány dolog, amit nem tehet velük. Nem nyithatja meg a jelentéseket az irányítópultok mögött, nem oszthatja meg a mintákat másokkal, és nem jelölheti őket kedvencnek.
 
 1. Koppintson a globális navigációs gombra ![Globális navigációs gomb](././media/mobile-windows-10-phone-app-get-started/power-bi-windows-10-navigation-icon.png) a bal felső sarokban.
 2. Koppintson a **Beállítások** ikonra ![Beállítások ikon](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-settings-icon.png), koppintson a nevére, majd a **Minták megtekintése** lehetőségre.
@@ -92,7 +92,7 @@ Az irányítópultokat és jelentéseket a rendszer különböző helyeken táro
 ![Power BI bal oldali navigáció](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-left-nav.png)
 
 ## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>A kedvenc irányítópultjának, KPI-jeinek és jelentéseinek megtekintése
-Megtekintheti összes kedvenc Power BI-irányítópultját a Reporting Services KPI-jeivel és mobiljelentéseivel együtt a mobilalkalmazások Kedvencek oldalán. Amikor *kedvencnek* jelöl meg egy irányítópultot a Power BI mobilalkalmazásban, más eszközökről is hozzáférhet, beleértve a böngészőben a Power BI szolgáltatást is. 
+Megtekintheti kedvenc Power BI-irányítópultjait a Reporting Services KPI-jeivel és mobiljelentéseivel együtt a mobilalkalmazások Kedvencek oldalán. Amikor *kedvencnek* jelöl meg egy irányítópultot a Power BI mobilalkalmazásban, más eszközökről is hozzáférhet, beleértve a böngészőben a Power BI szolgáltatást is. 
 
 * Koppintson a **Kedvencek** elemre.
   
@@ -104,8 +104,8 @@ Megtekintheti összes kedvenc Power BI-irányítópultját a Reporting Services 
 
 További információ a [kedvencekről a Power BI mobilalkalmazásokban](mobile-apps-favorites.md).
 
-## <a name="next-steps"></a>További lépések
-A Windows 10-eszközökhöz készült Power BI alkalmazásban többek között a következőket viheti végbe irányítópultokkal és jelentésekkel Power BI-ban, illetve a Reporting Services mobiljelentésekkel és KPI-kkel a Reporting Services webes portálon
+## <a name="next-steps"></a>Következő lépések
+A Windows 10-eszközökhöz készült Power BI alkalmazásban többek között a következőket viheti végbe irányítópultokkal és jelentésekkel Power BI-ban, illetve a Reporting Services mobiljelentésekkel és KPI-kkel a Reporting Services webes portálon.
 
 ### <a name="power-bi-dashboards-and-reports"></a>A Power BI irányítópultok és jelentések
 * [Az alkalmazásai](../../service-create-distribute-apps.md) megtekintése.
