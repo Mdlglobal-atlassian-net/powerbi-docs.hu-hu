@@ -1,38 +1,39 @@
 ---
-title: Jelentés beágyazása iFrame használatával
-description: Power BI jelentéskészítő kiszolgálóval készült jelentés beágyazása iFrame-keretben a SharePoint Serverben
+title: Power BI jelentéskészítő kiszolgálóval készült jelentés beágyazása iFrame-keretben a SharePoint Serverben
+description: Ennek a cikknek a témája a Power BI jelentéskészítő kiszolgálóval készült jelentések beágyazása iFrame-keretben a SharePoint Serverben
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/04/2018
-ms.topic: quickstart
+ms.date: 08/12/2019
+ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: ca26770c652c12573bf28e24b218b214bf1196fa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e1787863d2b5db50cdb9a8d09907fbee6623972f
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769859"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995014"
 ---
-# <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Rövid útmutató: Power BI jelentéskészítő kiszolgálóval készült jelentés beágyazása iFrame-keretben a SharePoint Serverben
+# <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Power BI jelentéskészítő kiszolgálóval készült jelentés beágyazása iFrame-keretben a SharePoint Serverben
 
-Ezzel a rövid útmutatóval megtanulhatja egy Power BI jelentéskészítő kiszolgálóval készült jelentés iFrame használatával történő beágyazását egy SharePoint oldalba. Ha a SharePoint Online-nal dolgozik, akkor a Power BI jelentéskészítő kiszolgálónak nyilvánosan elérhetőnek kell lennie. A SharePoint Online-ban a Power BI szolgáltatással együttműködő Power BI jelentéskijelző nem működik együtt a Power BI jelentéskészítő kiszolgálóval. 
+Ebből a cikkből elsajátíthatja egy Power BI jelentéskészítő kiszolgálóval készült jelentés iFrame használatával történő beágyazását egy SharePoint oldalba. Ha a SharePoint Online-nal dolgozik, akkor a Power BI jelentéskészítő kiszolgálónak nyilvánosan elérhetőnek kell lennie. A SharePoint Online-ban a Power BI szolgáltatással együttműködő Power BI jelentéskijelző nem működik együtt a Power BI jelentéskészítő kiszolgálóval.  
 
 ![iFrame-minta](media/quickstart-embed/quickstart_embed_01.png)
+
 ## <a name="prerequisites"></a>Előfeltételek
-* Szüksége lesz a telepített és konfigurált [Power BI jelentéskészítő kiszolgálóra](https://powerbi.microsoft.com/report-server/).
-* A [Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopnak](install-powerbi-desktop.md) telepítve kell lennie.
-* Szüksége lesz még egy telepített és konfigurált [SharePoint](https://docs.microsoft.com/sharepoint/install/install)-környezetre.
+* Telepített és konfigurált [Power BI jelentéskészítő kiszolgáló](https://powerbi.microsoft.com/report-server/).
+* Telepített [Power BI Desktop a Power BI jelentéskészítő kiszolgálóhoz optimalizálva](install-powerbi-desktop.md).
+* Telepített és konfigurált [SharePoint](https://docs.microsoft.com/sharepoint/install/install)-környezet.
 
-## <a name="creating-the-power-bi-report-server-report-url"></a>A Power BI jelentéskészítő kiszolgálóval készült jelentés URL-címének létrehozása
+## <a name="create-the-power-bi-report-url"></a>A Power BI-jelentés URL-címének létrehozása
 
-1. Töltse le a mintát a GitHubról – [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples).
+1. Töltse le a mintát a GitHubról: [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples). Válassza a **Klónozás vagy letöltés**, majd a **ZIP letöltése** lehetőséget.
 
-    ![minta PBIX-fájl letöltése](media/quickstart-embed/quickstart_embed_14.png)
+    ![Minta PBIX-fájl letöltése](media/quickstart-embed/quickstart_embed_14.png)
 
-2. Nyissa meg a GitHubról származó PBIX-fájlt a **Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopban**.
+2. Tömörítse ki a fájlt, majd nyissa meg a minta .pbix-fájlt a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopban.
 
     ![PBI RS asztali eszköz](media/quickstart-embed/quickstart_embed_02.png)
 
@@ -40,27 +41,27 @@ Ezzel a rövid útmutatóval megtanulhatja egy Power BI jelentéskészítő kisz
 
     ![PBI RS mentés](media/quickstart-embed/quickstart_embed_03.png)
 
-4. Jelentés megtekintése a **webes portálon**.
+4. Tekintse meg a jelentést a Power BI jelentéskészítő kiszolgáló webportálján.
 
-    ![webes portál](media/quickstart-embed/quickstart_embed_04.png)
+    ![Webes portál](media/quickstart-embed/quickstart_embed_04.png)
 
-### <a name="capturing-the-url-parameter"></a>Az URL-paraméter rögzítése
+### <a name="capture-the-url-parameter"></a>Az URL-paraméter rögzítése
 
-Ha megvan az URL-cím, létrehozhat egy SharePoint-oldalon egy iFrame-et, amely megjeleníti a jelentést. A Power BI jelentéskészítő kiszolgálóval készült jelentések URL-címéhez hozzáfűzhető a `?rs:embed=true` lekérdezési sztring amely egy iFrame-be ágyazza be a jelentést. 
+Ha már megvan az URL-cím, létrehozhat egy SharePoint-oldalon egy iFrame-et, amely megjeleníti a jelentést. Bármely Power BI jelentéskészítő kiszolgálóval készült jelentés URL-címéhez a következő lekérdezésisztring-paramétert kell hozzáfűznie a jelentés SharePoint iFrame-be való beágyazásához: `?rs:embed=true`.
 
    Például:
     ``` 
     http://myserver/reports/powerbi/Sales?rs:embed=true
     ```
-## <a name="embedding-a-power-bi-report-server-report-in-a-sharepoint-iframe"></a>Power BI jelentéskészítő kiszolgálóval készült jelentés beágyazása SharePoint iFrame-keretben
+## <a name="embed-the-report-in-a-sharepoint-iframe"></a>A jelentés beágyazása SharePoint iFrame-be
 
 1. Nyissa meg a SharePoint **Webhely tartalma** oldalát.
 
-    ![Webhely tartalma oldal](media/quickstart-embed/quickstart_embed_05.png)
+    ![A Webhely tartalma oldal](media/quickstart-embed/quickstart_embed_05.png)
 
 2. Válassza ki az oldalt, amelyhez hozzá kívánja adni a jelentést.
 
-    ![Webhely tartalma oldal alkalmazás](media/quickstart-embed/quickstart_embed_06.png)
+    ![A Webhely tartalma oldal alkalmazás](media/quickstart-embed/quickstart_embed_06.png)
 
 3. Válassza a jobb felső sarokban lévő fogaskerék ikont, majd az **Oldal szerkesztése** lehetőséget.
 
@@ -68,21 +69,17 @@ Ha megvan az URL-cím, létrehozhat egy SharePoint-oldalon egy iFrame-et, amely 
 
 4. Válassza a **Kijelző hozzáadása** lehetőséget.
 
-    ![Kijelző hozzáadása](media/quickstart-embed/quickstart_embed_08.png)
+5. A **Kategóriák** területen válassza a **Multimédia és tartalom** elemet. A **Kijelzők** területen válassza a **Tartalomszerkesztő**, majd a **Hozzáadás** lehetőséget.
 
-5. A **Kategóriák** alatt válassza a **Média és tartalom** elemet, a **Kijelzők** között pedig a **Tartalomszerkesztő** elemet, majd a **Hozzáadás** lehetőséget.
-
-    ![Tartalomszerkesztő webes kijelző kiválasztása](media/quickstart-embed/quickstart_embed_09.png) ![Hozzáadás kiválasztása](media/quickstart-embed/quickstart_embed_091.png)
+    ![A Tartalomszerkesztő webes kijelző](media/quickstart-embed/quickstart_embed_09.png)
 
 6. Válassza az **Új tartalom hozzáadásához kattintson ide** elemet.
 
-    ![Új tartalom hozzáadása](media/quickstart-embed/quickstart_embed_10.png)
-
-7. A szalagon válassza a **Szöveg formázása** lapot, majd a **Forrás szerkesztése** lehetőséget.
+7. A felső menüben válassza a **Szöveg formázása**, majd a **Forrás szerkesztése** lehetőséget.
 
      ![Forrás szerkesztése](media/quickstart-embed/quickstart_embed_11.png)
 
-8. A Forrás szerkesztése ablakban illessze be iFrame-kódját és válassza az OK lehetőséget.
+8. A **Forrás szerkesztése** ablakban illessze be az iFrame-kódot a **HTML forrás** mezőbe és válassza az **OK** lehetőséget.
 
     ![iFrame-kód](media/quickstart-embed/quickstart_embed_12.png)
 
@@ -91,17 +88,17 @@ Ha megvan az URL-cím, létrehozhat egy SharePoint-oldalon egy iFrame-et, amely 
      <iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
      ```
 
-9. A szalagon válassza az **Oldal** lapot, majd a **Szerkesztés befejezése** lehetőséget.
+9. A felső menüben válassza az **Oldal**, majd a **Szerkesztés befejezése** lehetőséget.
 
     ![Szerkesztés befejezése](media/quickstart-embed/quickstart_embed_13.png)
 
-10. A jelentésnek meg kell jelennie az oldalon.
+    A jelentés megjelenik az oldalon.
 
     ![iFrame-minta](media/quickstart-embed/quickstart_embed_01.png)
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Rövid útmutató: Power BI-jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz](quickstart-create-powerbi-report.md)  
-[Rövid útmutató: Többoldalas jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz](quickstart-create-paginated-report.md)  
+- [Power BI-jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz](quickstart-create-powerbi-report.md).  
+- [Többoldalas jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz](quickstart-create-paginated-report.md).  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/) 
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/). 

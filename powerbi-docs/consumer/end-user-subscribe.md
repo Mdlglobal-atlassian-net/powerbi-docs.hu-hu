@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 08/12/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 85976d191fba627b75f8b415acc312817d11ed34
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 2b0554729824b170fecbe6493141c6f3a8354002
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408535"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68961678"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Feliratkozás jelentésre vagy irányítópultra a Power BI szolgáltatásban 
 Minden eddiginél egyszerűbb naprakésznek lenni a legfontosabb irányítópultokkal és jelentésekkel kapcsolatban. Feliratkozhat az Önnek leginkább fontos jelentésoldalakra és irányítópultokra, a Power BI pedig pillanatképeket küld e-mailben a postafiókjába. Megadhatja a Power BI-nak, hogy milyen gyakran szeretne ilyen e-mailt kapni: naponta, hetente vagy az adatok frissítésekor. Akár az e-mailek küldésének pontos időpontját is megadhatja a Power BI-nak, vagy futtathatja most.  
@@ -76,6 +76,7 @@ A feliratkozás megszűnik, ha lejár a Pro-licence, ha az irányítópultot vag
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 * Előfordulhat, hogy a felhasználóknak küldött előfizetési e-mailekben a több mint 25 kitűzött csempével vagy négy kitűzött élő jelentésoldallal rendelkező irányítópultok nem jelennek meg teljes egészében. Javasoljuk, hogy forduljon az irányítópult tervezőjéhez, és kérje meg, hogy az e-mail megfelelő megjelenítése érdekében csökkentse a kitűzött csempék számát 25 alá, a kitűzött élő jelentések számát pedig négy alá.  
 * Az irányítópultok e-mail-feliratkozásai esetén, ha bármely csempe sorszintű biztonsággal (RLS) rendelkezik, ezek a csempék nem jelennek meg.  A jelentésekhez kapcsolódó e-mail-feliratkozások esetén, ha az adatkészlet sorszintű biztonságot használ, nem hozható létre feliratkozás.
+* Ha az e-mailben lévő (a tartalomra mutató) hivatkozás már nem működik, akkor lehetséges, hogy a tartalmat eltávolították. Az e-mailben a képernyőkép alatt ellenőrizheti, hogy Ön iratkozott-e fel, vagy valaki más iratkoztatta fel Önt. Ha valaki más tette, kérje meg azt a munkatársát, hogy vagy ne küldjön több e-mailt, vagy újra iratkoztassa fel Önt.
 * A jelentésoldalakra való feliratkozás a jelentésoldal nevéhez kapcsolódik. Ha feliratkozik egy jelentés oldalára, és annak megváltozik a neve, újból létre kell hoznia az előfizetést.
 * Ha nem tudja használni a feliratkozás funkciót, forduljon a rendszergazdához. Lehetséges, hogy vállalata hitelesítési vagy más okból letiltotta ezt a funkciót.  
 * Az e-mailekre való feliratkozások az [egyéni vizualizációk](../power-bi-custom-visuals.md) többségét nem támogatják.  Ez alól kivétel a [minősített](../power-bi-custom-visuals-certified.md) egyéni vizualizációk esete.  

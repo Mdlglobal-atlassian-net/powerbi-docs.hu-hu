@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: ce13b161f0a9bf5291f2c0d127106b0db2c6fa29
-ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.openlocfilehash: 1c110022c27cf0e213484619a750140a63a7d0dc
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808246"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490387"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba a cége számára
 
@@ -35,7 +35,7 @@ Első lépésként, rendelkeznie kell az alábbiakkal:
 * Egy [Power BI Pro-fiók](../service-self-service-signup-for-power-bi.md).
 * Egy [Microsoft Azure](https://azure.microsoft.com/)-előfizetéssel.
 * Be kell állítana egy saját [Azure Active Directory-bérlőt](create-an-azure-active-directory-tenant.md).
-* Lapszámozott jelentések beágyazásához legalább egy A4/P1-kapacitásra van szüksége [Milyen méretű Prémium szintű kapacitás szükséges a lapszámozott jelentésekhez?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
+* Többoldalas jelentések beágyazásához legalább P1-kapacitás szükséges: [Milyen méretű Prémium szintű kapacitás szükséges a többoldalas jelentésekhez?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 Ha még nem regisztrált a **Power BI Pro** szolgáltatásra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://powerbi.microsoft.com/pricing/).
 
@@ -45,7 +45,7 @@ Ha még nincs Azure-előfizetése, kezdés előtt hozzon létre egy [ingyenes fi
 
 Mielőtt jelentéseket, irányítópultokat vagy csempéket ágyazna az alkalmazásba, győződjön meg arról, hogy a környezete engedélyezi a beágyazást a Power BI-jal.
 
-Az első lépések gyors elsajátítása érdekében követheti a [beágyazáshoz szükséges telepítési eszköz](https://aka.ms/embedsetup/UserOwnsData) lépéseit, és letölthet egy mintaalkalmazást, amely végigvezeti Önt a környezet létrehozásán és egy jelentés beágyazásán. Lapszámozott jelentések beágyazásához legalább egy A4/P1-kapacitásra van szüksége a létrehozott alkalmazás-munkaterületen.
+Az első lépések gyors elsajátítása érdekében követheti a [beágyazáshoz szükséges telepítési eszköz](https://aka.ms/embedsetup/UserOwnsData) lépéseit, és letölthet egy mintaalkalmazást, amely végigvezeti Önt a környezet létrehozásán és egy jelentés beágyazásán. Többoldalas jelentések beágyazásához legalább P1-kapacitást kell a létrehozott alkalmazás-munkaterülethez rendelnie.
 
 Ha a környezet manuális létrehozása mellett dönt, folytathatja az alábbiak szerint.
 
@@ -83,7 +83,7 @@ A Power BI Desktop segítségével létrehozhatja a jelentéseit és az adathalm
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Saját lapszámozott jelentések létrehozása és közzététele
 
-Többoldalas jelentéseket a [Power BI jelentéskészítővel](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) hozhat létre. Ezután [feltöltheti a jelentést](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) egy legalább A4/P1-kapacitáshoz rendelt alkalmazás-munkaterületre. A jelentést feltöltő végfelhasználónak Power BI Pro-licencre van szüksége, ha közzé szeretne tenni valamit egy alkalmazás-munkaterületen.
+A többoldalas jelentéseket a [Power BI Jelentéskészítő](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) használatával hozhatja létre. Ez után [feltöltheti a jelentést](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) egy legalább P1-kapacitáshoz rendelt alkalmazás-munkaterületre. A jelentést feltöltő végfelhasználónak Power BI Pro-licencre van szüksége, ha közzé szeretne tenni valamit egy alkalmazás-munkaterületen.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Tartalom beágyazása a mintaalkalmazással
 
@@ -152,9 +152,6 @@ A **jelentésazonosító** mezőbe írja be a Power BI-ban szereplő jelentés G
 Power BI-jelentés URL-címe <br>
 
 ![PBI reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
-
-Lapszámozott jelentés URL-címe <br>
-
 
 
 Lapszámozott jelentés URL-címe<br>
@@ -384,7 +381,7 @@ Most, hogy elkészült az alkalmazás fejlesztésével, ideje dedikált kapacit�
 
 ### <a name="create-a-dedicated-capacity"></a>Dedikált kapacitás létrehozása
 
-Dedikált kapacitás létrehozásával kihasználhatja annak az előnyeit, hogy egy dedikált erőforrás áll rendelkezésre az alkalmazás-munkaterületen a tartalom számára. Lapszámozott jelentésekhez az alkalmazás-munkaterületnek legalább A4/P1-kapacitással kell rendelkeznie. Dedikált kapacitást a [Power BI Premium](../service-premium-what-is.md) használatával hozhat létre.
+Dedikált kapacitás létrehozásával kihasználhatja annak az előnyeit, hogy egy dedikált erőforrás áll rendelkezésre az alkalmazás-munkaterületen a tartalom számára. Többoldalas jelentésekhez az alkalmazás-munkaterülethez legalább P1-kapacitást kell biztosítania. Dedikált kapacitást a [Power BI Premium](../service-premium-what-is.md) segítségével hozhat létre.
 
 A következő táblázat a [Microsoft Office 365-ben](../service-admin-premium-purchase.md) elérhető Power BI Premium-termékváltozatokat sorolja fel:
 
@@ -425,7 +422,7 @@ A globális rendszergazdák vagy a Power BI szolgáltatás-rendszergazdái be- �
 
 ## <a name="next-steps"></a>Következő lépések
 
-Ez az oktatóanyag bemutatta, hogyan ágyazhat be Power BI-tartalmat egy alkalmazásba a Power BI szervezeti fiók használatával. Most már elkezdhet Power BI-tartalmakat beágyazni egy alkalmazásba az alkalmazások segítségével. Megpróbálkozhat Power BI-tartalom beágyazásával az ügyfelei számára is (ez egyelőre nem támogatja lapszámozott jelentések beágyazását):
+Ez az oktatóanyag bemutatta, hogyan ágyazhat be Power BI-tartalmat egy alkalmazásba a Power BI szervezeti fiók használatával. Most már elkezdhet Power BI-tartalmakat beágyazni egy alkalmazásba az alkalmazások segítségével. Megpróbálkozhat Power BI-tartalom beágyazásával az ügyfelei számára is (ez többoldalas jelentések beágyazásához egyelőre nem támogatott):
 
 > [!div class="nextstepaction"]
 > [Beágyazás alkalmazásokból](embed-from-apps.md)

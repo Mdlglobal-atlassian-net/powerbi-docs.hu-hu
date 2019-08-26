@@ -1,6 +1,6 @@
 ---
-title: A Power BI-tartalomcsomag (Azure AD B2B) külső vendég felhasználók megtekintése
-description: Külső szervezet Önnel megosztott tartalmak megtekintéséhez Power BI-mobilalkalmazásokat használja.
+title: Power BI tartalom megtekintése külső vendég felhasználóként (Azure AD B2B)
+description: Power BI-mobilalkalmazások használatával megtekintheti a külső vállalat által Önnel megosztott tartalmat.
 author: mshenhav
 manager: kfile
 ms.reviewer: ''
@@ -9,16 +9,16 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/27/2019
 ms.author: mshenhav
-ms.openlocfilehash: a15da4349ce97e34c8321909abc862e424b2839c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 900c7b57c2b6283c44e4a1923dd223d7dfd40ef7
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61338699"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490368"
 ---
-# <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>A külső szervezet Önnel megosztott tartalom megtekintése a Power BI
+# <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Külső vállalat által Önnel megosztott Power BI-tartalom megtekintése
 
-A Power BI integrálható az Azure Active Directory-vállalatok (Azure AD B2B), hogy a Power BI-tartalmakat cégen kívüli biztonságos terjesztését. És külső vendégfelhasználóknak használhatja a Power BI mobilalkalmazásban a velük megosztott Power BI-tartalmak eléréséhez. 
+A Power BI integrálható az Azure Active Directory vállalatközi felhasználásra szánt verziójával (Azure AD B2B), ami lehetővé teszi, hogy a Power BI-tartalmakat a vállalatán kívüli vendégfelhasználókkal is biztonságosan meg tudja osztani. A külső vendégfelhasználók a Power BI-mobilalkalmazás használatával férhetnek hozzá a velük megosztott Power BI-tartalomhoz. 
 
 
 A következőkre vonatkozik:
@@ -27,28 +27,30 @@ A következőkre vonatkozik:
 |:--- |:--- |:--- |:--- |
 | iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |
 
-## <a name="accessing-shared-content"></a>A megosztott tartalom elérése
+## <a name="accessing-shared-content"></a>Hozzáférés megosztott tartalomhoz
 
-**Először meg kell adnia a külső szervezet megosztani egy elemet.** Ha valaki [elem megoszt Önnel](../../service-share-dashboards.md), ugyanazon a szervezeten belül vagy külső szervezet, kap egy e-mailt, amely a megosztott elem hivatkozását. A következő hivatkozás a mobileszközén megnyitása a Power BI mobilalkalmazásban. Ha az alkalmazás felismeri, hogy a cikk a külső szervezet megosztották, az alkalmazás újracsatlakozik a személyazonosság az adott szervezet. Az alkalmazás betölt, amely a szervezetben lévő Önnel megosztott összes elemet.
+**Az első lépés, hogy valaki egy külső vállalattól megosszon Önnel valamit.** Amikor valaki a vállalaton belül vagy egy külső vállalatnál [megoszt Önnel egy elemet](../../service-share-dashboards.md), Ön e-mailt kap a megosztott elemre mutató hivatkozással. Ha a mobileszközén követi ezt a hivatkozást, megnyílik a Power BI-mobilalkalmazás. Ha az alkalmazás azt észleli, hogy az elem egy külső vállalatnál lett megosztva Önnel, az alkalmazás újracsatlakozik ahhoz a vállalathoz az Ön identitásával. Az alkalmazás ez után betölti az annál a vállalatnál Önnel megosztott összes elemet.
 
-![Power bi-ban nyissa meg a megosztott elem, e-mailből ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
+![Megosztott Power BI-elem megnyitása e-mailből ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
 
 > [!NOTE]
-> Ha ez az első elem, az Önnel megosztott, külső Vendég felhasználóként, meg kell jogcím egy böngészőben a meghívót. Nem igényelhet a meghívó a Power BI alkalmazásban.
+> Ha ez az első elem, amelyet külső vendégfelhasználóként Önnel megosztottak, a meghívót egy böngészőben kell elfogadnia. A meghívót a Power BI-alkalmazásban nem fogadhatja el.
 
-Mindaddig, amíg egy külső szervezet csatlakozik, az alkalmazás egy fekete fejléc jelenik meg. Ez a fejléc jelzi, hogy nem csatlakozik a szervezet. Vissza a saját szervezethez csatlakozó, a Vendég módból való kilépés.
+Amíg külső vállalathoz van csatlakoztatva, az alkalmazásban fekete fejléc látható. Ez a fejléc jelzi, hogy nem a saját vállalatához csatlakozik. A saját vállalatához úgy csatlakozhat újra, hogy kilép a vendég módból.
 
-![A Power BI Vendég felhasználó fejléc](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
+![Power BI vendégfelhasználói fejléc](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
 
-Annak ellenére, hogy a Power bi-ban való csatlakozáshoz külső szervezet, miután az alkalmazás vált összetevő hivatkozás van szüksége, az Önnel megosztott (nem csak az elem, nyithatók meg az e-mailben) összes elemet is elérheti. A külső szervezet elérheti az összes elem megtekintéséhez nyissa meg az alkalmazás menüjében, és válassza **velem megosztott**. A **alkalmazások** is használható alkalmazásokat kereshet.
+A külső vállalathoz való csatlakozáshoz egy Power BI-elemre mutató hivatkozás szükséges, de miután az alkalmazás vált, az összes Önnel megosztott elemhez hozzáférhet (nem csak ahhoz, amelyet az e-mailből nyitott meg). A külső vállalatnál elérhető összes elem megtekintéséhez válassza az alkalmazás menüjének **Velem megosztva** elemét. Az **Alkalmazások** területen olyan alkalmazásokat is talál, amelyeket használhat.
 
-![A Power BI alkalmazás menüjében Vendég külső felhasználóként](./media/mobile-apps-b2b/mobile-b2b-menu.png)
+![A Power BI alkalmazásmenüje külső vendégfelhasználóként](./media/mobile-apps-b2b/mobile-b2b-menu.png)
 
 ## <a name="limitations"></a>Korlátozások
 
-- Feltételes hozzáférés és egyéb Intune-szabályzatok nem támogatottak az Azure AD B2B és a Power BI mobilalkalmazásban. Ez azt jelenti, hogy az alkalmazás kikényszeríti csak a saját szervezet szabályzatainak, ha vannak ilyenek.
-- Leküldéses értesítések fogadott csak a szervezet helyről (még ha a felhasználó csatlakozik a külső szervezet vendégként). Nyissa meg az értesítést az alkalmazásnak, hogy a felhasználó otthoni szervezet webhelyén újra kapcsolódik a szolgáltatáshoz.
-- Ha a felhasználó leállítja az alkalmazást, amikor újra megnyitni az alkalmazás automatikusan csatlakozik a felhasználó otthoni szervezete.
-- Ha csatlakozik a külső szervezet, bizonyos műveletek le vannak-e tiltva: kedvenc elemmel, Adatriasztások megjegyzéseket és megosztása érdekében.
-- Offline adatok nem érhető el, miközben külső szervezet csatlakozik.
-- Ha a vállalati portál alkalmazás telepítve van az eszközén, majd az eszköz regisztrálva kell lenniük.
+- A felhasználóknak aktív Power BI-fiókkal és saját bérlővel kell rendelkezniük.
+- Ahhoz, hogy hozzáférjenek a külső bérlőből velük megosztott tartalomhoz, a felhasználóknak be kell jelentkezniük a saját Power BI-bérlőjükbe.
+- Az Azure AD B2B és a Power BI Mobile nem támogatja a feltételes hozzáférést és más Intune-szabályzatokat. Ez azzal jár, hogy az alkalmazás csak a saját vállalat szabályzatait érvényesíti, ha vannak ilyenek.
+- Csak a saját vállalat webhelyéről származó leküldéses értesítések lesznek fogadva (még akkor is, ha a felhasználó vendégként egy külső vállalathoz van csatlakoztatva). Az értesítés megnyitása újra a felhasználó saját vállalatának webhelyéhez csatlakoztatja az alkalmazást.
+- Ha a felhasználó bezárja az alkalmazást, akkor a legközelebbi megnyitásakor az alkalmazás automatikusan a felhasználó saját vállalatához csatlakozik.
+- Külső vállalathoz csatlakoztatva bizonyos műveletek le vannak tiltva: kedvenc elemek, adatriasztások, megjegyzések és megosztás.
+- Amíg külső vállalathoz csatlakozik, nem érhetők el offline adatok.
+- Ha a Céges portál alkalmazás telepítve van az eszközön, akkor az eszközt regisztrálni kell.
