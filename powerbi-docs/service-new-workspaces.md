@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a3982716ac2eb64f7512ba6ef606af299f1c5f46
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: e25a004098c5bfe5cf607f5ee4b26dfda09d792d
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418662"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530501"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Munka szervezése az új munkaterületeken a Power BI-ban
 
@@ -36,7 +36,7 @@ Az új munkaterületekkel a következőket végezheti el:
 Amikor létrehoz egy új munkaterületet, nem hoz létre egy mögöttes, társított Office 365-csoportot is. A munkaterület felügyelete kizárólag a Power BI-ban zajlik. Az új munkaterületi felületen Office 365-csoportot is felvehet a munkaterület-hozzáférési listára, hogy a felhasználók tartalomhoz való hozzáférését továbbra is Office 365-csoportokkal szabályozhassa.
 
 ## <a name="administering-new-workspace-experience-workspaces"></a>Az új felületű munkaterületek felügyelete
-Az új felületű munkaterületek felügyelete átkerült a Power BI-ba. A Power BI-rendszergazdák dönthetik el, hogy a vállalaton belül ki hozhat létre munkaterületeket. Ők végezhetik a munkaterületek kezelését és helyreállítását is. Ehhez a Power BI felügyeleti portálját, vagy a Power Shell-parancsmagokat kell használniuk. Az Office 365-csoportokon alapuló klasszikus munkaterületek felügyelete továbbra is az Office 365 felügyeleti portálján és az Azure Active Directoryban történik.
+Az új felületű munkaterületek felügyelete átkerült a Power BI-ba. A Power BI-rendszergazdák dönthetik el, hogy a vállalaton belül ki hozhat létre munkaterületeket. Ők kezelik és állítják helyre a munkaterületeket is a Power BI Felügyeleti portál vagy PowerShell-parancsmagok használatával. Az Office 365-csoportokon alapuló klasszikus munkaterületek felügyelete továbbra is az Office 365 felügyeleti portálján és az Azure Active Directoryban történik.
 
 A felügyeleti portálon a **Munkaterület-beállítások** között a rendszergazdák a Munkaterületek létrehozása (új munkaterületi felület) beállítással a vállalatnál mindenki számára engedélyezhetik vagy tilthatják új felületű munkaterületek létrehozását. Korlátozhatják is meghatározott biztonsági csoportok tagjaira a létrehozást.
 
@@ -59,9 +59,9 @@ Az új, továbbfejlesztett munkaterületek és a meglévő klasszikus munkaterü
 
 A szerepkörökkel kezelheti, hogy mely felhasználók milyen műveleteket végezhetnek a munkaterületeken, így elősegítheti a csapatok együttműködését. Az új munkaterületekkel szerepköröket rendelhet egyénekhez és felhasználói csoportokhoz: biztonsági csoportokhoz, Office 365-csoportokhoz és terjesztési listákhoz. 
 
-Szerepkörök felhasználói csoportokhoz való hozzárendelésekor a csoport felhasználói hozzáférnek a tartalomhoz. Ha beágyaz felhasználói csoportokat, minden tag jogosultságot kap. Azok a felhasználók, akik több, különböző szerepkörrel rendelkező felhasználói csoport tagjai is, a legmagasabb szintű jogosultságot kapják. 
+Szerepkörök felhasználói csoportokhoz való hozzárendelésekor a csoport felhasználói hozzáférnek a tartalomhoz. Ha beágyaz felhasználói csoportokat, minden tag jogosultságot kap.
 
-Az új munkaterületek négy szerepkört kínálnak: rendszergazdák, tagok, közreműködők és megtekintők.
+A négy szerepkör (rendszergazdák, tagok, közreműködők és megtekintők) képességei a következők:
 
 |Képesség   | Rendszergazda  | Tag  | Közreműködő  | Megtekintő |
 |---|---|---|---|---|
@@ -74,19 +74,22 @@ Az új munkaterületek négy szerepkört kínálnak: rendszergazdák, tagok, kö
 | Létrehozhatnak, szerkeszthetnek és törölhetnek tartalmakat a munkaterületen.  |  X | X  | X  |   |
 | Közzétehetnek jelentéseket a munkaterületen, és törölhetnek tartalmakat.  |  X | X  | X  |   |
 | Egy elem megtekintése. |  X | X  | X  | X  |
- 
+| Jelentést hozhatnak létre másik munkaterületen egy ezen a munkaterületen lévő adathalmaz alapján. |  X | X  | X  | X <sup>1</sup>  |
+| Jelentés másolása. | X | X | X | X <sup>1</sup> |
+
+**1** Ehhez Power BI Pro-licenc és [az adathalmazokra vonatkozó összeállítási engedély](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) szükséges. 
  
 ## <a name="licensing"></a>Licencelés
 A megosztott kapacitásban a munkaterülethez felvett személyek mindegyikének Power BI Pro-licenccel kell rendelkeznie. A munkaterületen a felhasználók együttműködhetnek az irányítópultokon és jelentéseken, amelyeket a szélesebb közönség vagy akár a teljes vállalat elé szeretne tárni. 
 
 Ha másokkal is megszeretné osztani a tartalmat a szervezeten belül, rendeljen hozzájuk Power BI Pro-licencet, vagy helyezze a munkaterületet egy Power BI Prémium szintű kapacitásba.
 
-Ha a munkaterület Power BI Premium-kapacitásban van, a Megtekintő szerepkörrel rendelkező felhasználók akkor is hozzáférnek a munkaterülethez, ha nem rendelkeznek Power BI Pro-licenccel. Ha azonban magasabb, például rendszergazda, tag vagy közreműködő szerepkört rendel ezekhez a felhasználókhoz, ők nem férnek hozzá a munkaterülethez. A rendszer egy Pro-próbaidőszak indítását ajánlja fel nekik, ha megkísérelnek hozzáférni a munkaterülethez. A Megtekintő képességet akkor használhatja ki a Pro-licenc nélküli felhasználóknál, ha a Megtekintő szerepkörben lévő felhasználók egyénileg és felhasználói csoporton keresztül sem rendelkeznek másik szerepkörrel. 
+Ha a munkaterület Power BI Premium-kapacitásban van, a Megtekintő szerepkörrel rendelkező felhasználók akkor is hozzáférnek a munkaterülethez, ha nem rendelkeznek Power BI Pro-licenccel. Ha azonban magasabb, például rendszergazda, tag vagy közreműködő szerepkört rendel ezekhez a felhasználókhoz, a rendszer Pro-próbaidőszak indítására szólítja fel őket, amikor megkísérelnek hozzáférni a munkaterülethez. A Megtekintő képességet akkor használhatja ki a Pro-licenc nélküli felhasználóknál, ha a Megtekintő szerepkörben lévő felhasználók egyénileg és felhasználói csoporton keresztül sem rendelkeznek másik szerepkörrel. 
 
 > [!NOTE]
 > Az jelentések közzététele az új munkaterületi felületen a jelenlegi licencelési szabályok szigorúbb érvényesítésével történik. A Power BI Desktopból vagy más ügyféleszközből Pro-licenc nélkül közzétételt megkísérlő felhasználók a „Csak Power BI Pro-licenccel rendelkező felhasználók tehetnek közzé tartalmakat ezen a munkaterületen.” hibaüzenetet kapják.
 
-## <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Miben különböznek az új munkaterületek a jelenlegi munkaterületektől?
+## <a name="how-the-new-workspaces-are-different"></a>Az új munkaterületek eltérései
 
 Az új munkaterületekkel újraterveztünk néhány funkciót. Az alábbi módosítások várhatóan véglegesek. 
 

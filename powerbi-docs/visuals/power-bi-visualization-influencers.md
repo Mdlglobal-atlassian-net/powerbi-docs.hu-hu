@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d41fc5991a95b51f71d0db522d4de84454de4ca2
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: a3e88d853f59a0e9a188d6d6796559ad2d9059a9
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590605"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995290"
 ---
 # <a name="key-influencers-visualization"></a>Főbb befolyásolók vizualizáció
 A főbb befolyásolók vizualizáció segít megérteni azokat a tényezőket, amelyek az érdeklődésére számot tartó metrikát alakítják. Elemzi az adatokat, rangsorolja a lényeges tényezőket, és megjeleníti őket főbb befolyásolóként. Tegyük fel például, hogy meg szeretné tudni, mi befolyásolja az alkalmazotti állomány változását (más szóval az elvándorlást). Az egyik tényező lehet a munkaszerződés hossza, a másik pedig az alkalmazottak kora. 
@@ -24,9 +24,6 @@ A főbb befolyásolók vizualizáció segít megérteni azokat a tényezőket, a
 A főbb befolyásolók vizualizáció remek választás a következőkhöz: 
 - Annak megtekintése, hogy milyen tényezők befolyásolják az elemzett metrikát.
 - Ezen tényezők relatív fontosságának összevetése. Nagyobb hatása van az alkalmazotti állomány változására például a rövid távú szerződéseknek, mint a hosszú távúaknak? 
-
-## <a name="key-influencer-requirements"></a>A főbb befolyásolók használati követelményei 
-Az elemzett metrikának kategorikus vagy numerikus mezőnek kell lennie (a program egyelőre nem támogat összesítéseket és mértékeket).
 
 ## <a name="features-of-the-key-influencers-visual"></a>A főbb befolyásoló vizualizáció funkciói
 
@@ -44,15 +41,13 @@ Az elemzett metrikának kategorikus vagy numerikus mezőnek kell lennie (a progr
 
 6. **Jobb oldali panel**: A jobb oldali panel egy vizualizációt tartalmaz. Ebben az esetben az oszlopdiagram megjeleníti a bal oldali panelen kiválasztott főbb befolyásoló **Témájának** összes értékét. A bal oldali panel **használhatóság** értéke zölddel jelenik meg. A **Téma** többi értéke feketén jelenik meg.
 
-7. **Átlagos vonal**: Az átlag számításánál a rendszer a **Téma** összes többi lehetséges értékét figyelembe vette, a **használhatóság** kivételével. Tehát a számítás az összes fekete értékre vonatkozik. Azt mutatja, hogy a többi **Téma** milyen százalékban eredményezett alacsony értékelést. Más szóval, amikor egy ügyfél értékelést ad, ez az ügyfél az értékelés okát vagy témáját is leírja. Témák például a használhatóság, a sebesség és a biztonság. 
+7. **Átlagos vonal**: Az átlag számításánál a rendszer a **Téma** összes lehetséges értékét figyelembe veszi a **használhatóság** kivételével (amely a kiválasztott befolyásoló). Tehát a számítás az összes fekete értékre vonatkozik. Azt mutatja, hogy a többi **Téma** milyen százalékban eredményezett alacsony értékelést. Ebben az esetben 11,35% adott alacsony értékelést (ezt mutatja a pontozott vonal).
 
-   **A téma a használhatóság** a második legfőbb befolyásoló tényező alacsony értékelés adásakor a bal oldali panelen lévő vizualizáció szerint. Ha átlagot számít az összes többi témából és az **alacsony** értékeléshez adott hozzájárulásukból, akkor az itt pirossal szereplő eredményt kapja. Az összes adott témának csak 11,35%-a magasabb, mint a **használhatóság**.
+8. **Jelölőnégyzet**: Szűri a jobb oldali panelen lévő vizualizációt, hogy csak az adott mezőt befolyásoló értékeket mutassa. Ebben a példában a használhatóságra, biztonságra és navigációra szűri a vizualizációt.
 
-8. **Jelölőnégyzet**: **Csak a befolyásoló értékek megjelenítése**.
-
-## <a name="create-a-key-influencers-visual"></a>Főbb befolyásolók vizualizáció létrehozása 
+## <a name="analyze-a-metric-that-is-categorical"></a>Kategorikus metrika elemzése
  
-Ebben a videóban megtekintheti, hogyan hozhat létre főbb befolyásolók vizualizációt. Az alábbi lépéseket követve maga is létrehozhat egyet. 
+Ebben a videóban megtekintheti, hogyan hozhat létre főbb befolyásolók vizualizációt kategorikus metrikával. Az alábbi lépéseket követve maga is létrehozhat egyet. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -65,20 +60,24 @@ A termékmenedzsere szeretné, ha Ön kiderítené, milyen tényezők befolyáso
 
     ![A Vizualizációk panelen válassza a Főbb befolyásolók sablont](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
-2. Húzza át az elemezni kívánt metrikát az **Elemzés** mezőbe. Az **Elemzés** mező csak kategorikus (nem folytonos) változókat támogat. Annak megértéséhez, hogy min alapul a szolgáltatás alacsony ügyfélértékelése, válassza az **Ügyféltábla** > **Értékelés** lehetőséget. 
+2. Húzza át az elemezni kívánt metrikát az **Elemzés** mezőbe. Annak megértéséhez, hogy min alapul a szolgáltatás alacsony ügyfélértékelése, válassza az **Ügyféltábla** > **Értékelés** lehetőséget.
+
 3. Húzza azokat a mezőket, amelyekről úgy gondolja, hogy befolyásolhatták az **értékelést** a **Magyarázó** mezőbe. Tetszőleges számú mezőt mozgathat. Ebben az esetben kezdje a következőkkel:
     - Ország, régió 
     - Szervezeti szerepkör 
     - Előfizetés típusa 
     - Cégméret 
-    - Téma 
-1. A negatív értékelések kiemeléséhez válassza az **Alacsony** értéket a **Mi befolyásolja az értékelést** legördülő listában.  
+    - Téma
+    
+4. A **Kibontandó** mezőt hagyja üresen. Ez a mező csak mérték vagy összesített mező elemzésekor használatos. 
+
+5. A negatív értékelések kiemeléséhez válassza az **Alacsony** értéket a **Mi befolyásolja az értékelést** legördülő listában.  
 
     ![Az Alacsony lehetőség választása a legördülő listában](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
 
 Az elemzés az elemzett mező táblaszintjén fut. Ebben az esetben ez az **Értékelés** metrika. Ez a metrika az ügyfélszinten van definiálva. Minden ügyfél megadott egy magas vagy egy alacsony pontszámot. A magyarázó tényezők mindegyikét az ügyfél szintjén kell meghatározni, hogy a vizualizáció használni tudja őket. 
 
-Az előző példában minden egyes magyarázó tényező egy az egyhez vagy sok az egyhez kapcsolatban áll a metrikával. Ebben az esetben minden pontszámhoz pontosan egy téma tartozik. Ez a téma volt az ügyfélértékelések fő témája. Hasonlóképp az ügyfelek egy országból érkeztek, és egy tagsági típussal és szerepkörrel rendelkeznek a szervezetben. A magyarázó tényezők már az ügyfél attribútumai, és nincs szükség átalakításokra. A vizualizáció azonnal használhatja őket. 
+Az előző példában minden egyes magyarázó tényező egy az egyhez vagy sok az egyhez kapcsolatban áll a metrikával. Ebben az esetben minden ügyfél egy témát adott meg az értékeléshez. Hasonlóképp az ügyfelek egy országból érkeztek, és egy tagsági típussal és szerepkörrel rendelkeznek a szervezetben. A magyarázó tényezők már az ügyfél attribútumai, és nincs szükség átalakításokra. A vizualizáció azonnal használhatja őket. 
 
 A későbbiekben az oktatóanyagban összetettebb példákat tekinthet meg, melyekben egy a többhöz kapcsolatok szerepelnek. Ezekben az esetekben az oszlopokat először összesíteni kell az ügyfél szintjére az elemzés futtatása előtt. 
 
@@ -89,7 +88,7 @@ Vessünk egy pillantást a főbb befolyásolókra az alacsony értékeléseknél
 
 ### <a name="top-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Az alacsony értékelés valószínűségét befolyásoló leggyakoribb egyéni tényező
 
-A példaszervezetben három szerepkör van: fogyasztó, rendszergazda és kiadó. Az alacsony értékeléshez hozzájáruló legfontosabb tényező az, hogy fogyasztó-e az értékelő. 
+A példában szereplő ügyfél háromféle szerepet tölthet be: fogyasztó, rendszergazda és közzétevő. Az alacsony értékeléshez hozzájáruló legfontosabb tényező az, hogy fogyasztó-e az értékelő. 
 
 ![A kiválasztott szervezeti szerepkör a fogyasztó](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
@@ -138,7 +137,7 @@ A jobb oldali ablaktábla pontdiagramja a bérleti idő egyes értékeihez tarto
 
 Bizonyos esetekben előfordulhat, hogy a folyamatos tényezők automatikusan kategorikussá váltak. Ennek az az oka, hogy a változók közötti kapcsolat nem lineáris, ezért nem lehet egyszerűen növekvőként vagy csökkenőként leírni a kapcsolatot (mint például a fenti példában).
 
-Korrelációs tesztekkel meghatározzuk, hogy mennyire lineáris a befolyásoló a célpontra nézve. Ha a cél folyamatos, Pearson-korrelációt futtatunk, ha pedig kategorikus, pontbiszeriális korrelációs tesztet végzünk. Ha azt észleljük, hogy a kapcsolat nem megfelelően lineáris, felügyelt dobozolást hajtunk végre, amellyel legfeljebb öt dobozt hozunk létre. Annak megállapításához, hogy mely dobozokat érdemes használni, felügyelt dobozolási módszert alkalmazunk, amely a magyarázó tényező és az elemzett célpont közti kapcsolatot vizsgálja.
+Korrelációs tesztekkel meghatározzuk, hogy mennyire lineáris a befolyásoló a célpontra nézve. Ha a cél folytonos, Pearson-korrelációt futtatunk, ha pedig kategorikus, pontbiszeriális korrelációs teszteket végzünk. Ha azt észleljük, hogy a kapcsolat nem megfelelően lineáris, felügyelt dobozolást hajtunk végre, amellyel legfeljebb öt dobozt hozunk létre. Annak megállapításához, hogy mely dobozokat érdemes használni, felügyelt dobozolási módszert alkalmazunk, amely a magyarázó tényező és az elemzett célpont közti kapcsolatot vizsgálja.
 
 ## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Mértékek és összesítések értelmezése főbb befolyásolókként 
  
@@ -165,9 +164,29 @@ Ennek a csoportnak a 74,3 %-a adott alacsony értékelést. Az átlagos ügyfél
 
 ![Első felső szegmens kiválasztása](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
 
-## <a name="working-with-numerical-data"></a>Numerikus adatok használata
+## <a name="adding-counts"></a>Darabszámok hozzáadása
 
-Ha az **Elemzés** mezőbe egy numerikus mezőt helyez, több lehetőség áll Ön előtt. A **Formázás panelen** a **kategorikus elemzéstípus** és a **folyamatos elemzéstípus** közül választhat, így módosítva a vizualizáció viselkedését.
+Előfordul, hogy egy befolyásolónak nagy hatása van, de csak nagyon kevés adatot tartalmaz. A **Témánál** például a **használhatóság** az alacsony értékelések második legnagyobb befolyásolója. Mégis lehetséges, hogy a használhatóság miatt csak néhány ügyfél panaszkodott. A darabszámok segítenek fontossági sorrendbe állítani azokat a befolyásolókat, amelyekkel foglalkozni szeretne.
+
+A számlálást a formázási panel **Elemzés kártyáján** kapcsolhatja be.
+
+![Számlálók hozzáadása](media/power-bi-visualization-influencers/power-bi-ki-counts-toggle.png)
+
+A számlálók bekapcsolása esetén minden befolyásoló buborékja körül egy körív jelenik meg, amely a befolyásoló által tartalmazott adatok hozzávetőleges arányát mutatja. Minél hosszabb a buborék körüli ív, annál több benne az adat. Látható, hogy a **használhatóság** **Téma** csak az adatok nagyon kis hányadát tartalmazza.
+
+![Darabszámok megjelenítése](media/power-bi-visualization-influencers/power-bi-ki-counts-ring.png)
+
+Az alsó Rendezés kapcsolóval a buborékok a befolyás helyett a darabszám szerint is rendezhetők. Darabszám alapján a legnagyobb befolyásoló az, ha az **Előfizetés típusa** **Premier**.
+
+![Rendezés darabszám szerint](media/power-bi-visualization-influencers/power-bi-ki-counts-sort.png)
+
+Ha a körív teljes kör, az azt jelenti, hogy ez a befolyásoló tartalmazza az adatok 100%-át. A formázási panel **Elemzés kártyájának** a **Számláló típusa** legördülő listájában számláló típusa úgy is módosítható, hogy a befolyásolók maximumához legyen viszonyítva. Ilyenkor a legtöbb adatot tartalmazó befolyásolót teljes kör jelöli, a többi pedig ennek arányában lesz ábrázolva.
+
+![Relatív darabszámok megjelenítése](media/power-bi-visualization-influencers/power-bi-ki-counts-type.png)
+
+## <a name="analyze-a-metric-that-is-numeric"></a>Numerikus metrika elemzése
+
+Ha az **Elemzés** mezőbe egy nem összesített numerikus mezőt helyez, több lehetőség áll Ön előtt. A **Formázás panelen** a **kategorikus elemzéstípus** és a **folyamatos elemzéstípus** közül választhat, így módosítva a vizualizáció viselkedését.
 
 ![Váltás kategorikusról folyamatos elemzésre](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
 
@@ -212,6 +231,30 @@ A numerikus célok felső szegmensei azokat a csoportokat jelenítik meg, amelye
 
 ![Numerikus cél mértékbefolyásolói](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
+## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Mérték vagy összesített oszlop metrika elemzése
+
+Mérték vagy összesített oszlop esetében az elemzés alapértelmezése a [fent](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric) ismertetett **folytonos elemzéstípus**. Ez nem módosítható. Mérték vagy összesített oszlop elemzése esetén a nem összesített numerikus oszlopéhoz képest a fő eltérés az elemzés futtatásának szintje.
+
+Nem összesített oszlopoknál az elemzés mindig a tábla szintjén fut. A fenti ingatlanos példában az **Ingatlanár** metrika elemzésével állapítottuk meg, hogy mi befolyásolja az ingatlanárak emelkedését és csökkenését. Az elemzés automatikusan a tábla szintjén fut. A tábla minden házhoz egyedi azonosítót tartalmaz, tehát az elemzés a házak szintjén fut.
+
+![Mértéket tartalmazó tábla](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
+
+Mértékek és összesített oszlopok esetén nem azonnal nyilvánvaló, hogy azokat milyen szinten elemezzük. Ha az **Ingatlanár** **átlagként** lett összesítve, akkor figyelembe kell vennünk, hogy milyen szinten szeretnénk kiszámítani az ingatlanárak átlagát. Ez az adott környéken átlagos ingatlanár? Esetleg regionális szintű?
+
+A mértékek és az összesített oszlopok automatikusan a használt **Magyarázó** mezők alapján vannak elemezve. Tegyük fel, hogy a **Magyarázó** mezők között három olyan van, amely minket érdekel: **Konyha minősége**, **Épület jellege** és **Légkondicionálás**. Az **átlagos ingatlanár** a három mező minden egyedi kombinációjára ki lesz számítva. Sokszor érdemesebb táblázatos nézetre váltani, és átnézni az éppen kiértékelt adatokat.
+
+![Mértéket tartalmazó tábla](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
+
+Ez erősen összesített elemzés, így a regressziós modell nehezen talál olyan mintázatot az adatok között, amelyből tanulhat. A jobb eredmény érdekében az elemzést részletesebb szinten kellene lefuttatnunk. Ha az ingatlanok árát az egyes ingatlanok szintjén szeretnénk elemezni, akkor az elemzésbe fel kellene vennünk az **ID** (azonosító) mezőt. Azt azonban nem szeretnénk, hogy az ingatlanazonosító befolyásolónak minősüljön. Nem volna hasznos ismeret, hogy a nagyobb azonosítójú ingatlanok ára magasabb. Itt jut szerephez a **Kibontandó** mezőgyűjtő. A **Kibontandó** gyűjtőbe azokat a mezőket vehetjük fel, amelyeket az elemzés szintjének beállításához szeretnénk használni anélkül, hogy új befolyásolókat keresnénk.
+
+Vizsgáljuk meg a vizualizációt, amelyet akkor kapunk, ha az **ID** mezőt felvesszük a **Kibontandó** gyűjtőbe. Ha a mérték kiértékelésének szintje már meg van határozva, a befolyásolók pontosan ugyanúgy értelmezhetők, mint a [nem összesített numerikus oszlopok](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric) esetén.
+
+![Mértéket tartalmazó tábla](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
+
+Ha szeretne még alaposabban megismerkedni a mértékeknek a főbb befolyásolók vizualizációval végzett elemzésével, tekintse meg az alábbi oktatóanyagot.
+
+<iframe width="1167" height="631" src="https://www.youtube.com/embed/2X1cW8oPtc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás 
  
 **Mik a vizualizáció korlátai?** 
@@ -244,6 +287,12 @@ A vizualizáció úgy működik, hogy mintákat keres az adatokban az egyik csop
 Azt javasoljuk, hogy a kijelölt állapothoz legalább 100 megfigyelést használjon. Ebben az esetben az állapot az elvándorló ügyfeleket jelenti. Az összehasonlításként használt állapotokhoz is legalább 10 megfigyelésre van szüksége. Ebben az esetben az összehasonlítás állapota a nem elvándorló ügyfeleket jelenti.
 
 Ha numerikus mezőt elemez célszerű a **kategorikus elemzésről** való **folyamatos elemzésre** váltani a **Formázás panel**  **Elemzés** területén.
+
+**Hibaüzenet jelenik meg, amely szerint nem összesített elemzés esetén az elemzés mindig a szülőtábla sorainak szintjén fut. A szintnek a „Kibontandó” mezőkkel való módosítása nem megengedett. Ez miért van?**
+
+Numerikus vagy kategorikus oszlop elemzésekor az elemzés mindig a tábla szintjén fut. Ha például ingatlanárakat elemez, és a tábla azonosító oszlopot tartalmaz, az elemzés automatikusan az ingatlanazonosítók szintjén fog futni. 
+
+Mérték vagy összesített oszlop elemzésekor pontosan meg kell adnia, hogy milyen szinten szeretné futtatni az elemzést. Mértékekhez és összesített oszlopokhoz a **Kibontandó** gyűjtőben módosítható az elemzés szintje új befolyásolók felvétele nélkül. Ha az **Ingatlanár** mértékként lett definiálva, akkor az elemzés szintjét úgy módosíthatja, hogy felveszi az ingatlanazonosító oszlopot a **Kibontandó** gyűjtőbe.
 
 **Egy hibaüzenet jelenik meg, miszerint a *Magyarázó* egyik mezője nem rendelkezik egyedi kapcsolattal az elemzett metrikát tartalmazó táblához. Ez miért van?**
  

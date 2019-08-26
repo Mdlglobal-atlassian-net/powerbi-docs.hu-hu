@@ -1,5 +1,5 @@
 ---
-title: Adathalmazok létrehozása és megosztása (előzetes verzió) – Power BI
+title: Adathalmaz megosztása (előzetes verzió)
 description: Adathalmaz-tulajdonosként adathalmazokat hozhat létre és oszthat meg, hogy mások használhassák azokat. Ismerje meg, hogyan szabályozhatja az Összeállítási engedély használatával, hogy ki férhet hozzá az adatokhoz.
 author: maggiesMSFT
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 22339b3d5062c01b3795086eede24ed6a8e7d7e7
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 17c3322ed5f24d106412bafb9c4235ee15a626aa
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461764"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530511"
 ---
-# <a name="create-and-share-datasets-preview"></a>Adathalmazok létrehozása és megosztása (előzetes verzió)
+# <a name="share-a-dataset-preview"></a>Adathalmaz megosztása (előzetes verzió)
 
 Ha *adatmodelleket* hoz létre a Power BI Desktopban, *adathalmazokként* megoszthatja azokat a Power BI szolgáltatásban. A jelentéskészítők így könnyen felfedezhetik és felhasználhatják az Ön által megosztott adathalmazokat. Megismerheti a megosztás módját, és hogy hogyan szabályozhatja az adatokhoz való hozzáférést az Összeállítási engedély használatával.
 
@@ -31,7 +31,7 @@ Ha *adatmodelleket* hoz létre a Power BI Desktopban, *adathalmazokként* megosz
     
     Ennek a munkaterületnek a többi tagja máris készíthet ezen az adathalmazon alapuló jelentéseket más munkaterületeken.
 
-1. Ez után [alkalmazást hozhat létre](service-create-distribute-apps.md) erről a munkaterületről. Ennek során az **Engedélyek** oldalon megadhatja, hogy ki rendelkezik engedélyekkel, és mit tehetnek meg.
+1. Erről a munkaterületről [alkalmazást is közzétehet](service-create-distribute-apps.md). Ennek során az **Engedélyek** oldalon megadhatja, hogy ki rendelkezik engedélyekkel, és mit tehetnek meg.
 
     > [!NOTE]
     > Ha a **Teljes vállalat** lehetőséget választja, akkor a vállalatnál senki sem fog Összeállítási engedéllyel rendelkezni. Ez a probléma már ismert. Ehelyett adjon meg e-mail-címeket az **Adott személyek vagy csoportok** beállításnál.  Ha azt szeretné, hogy a vállalatnál mindenki rendelkezzen Összeállítási engedéllyel, adja meg a teljes vállalat egy e-mail-aliasát.
@@ -46,6 +46,8 @@ Az Összeállítási engedély típus csak adathalmazokra értelmezhető. Az ezz
 
 A felhasználók többféle módon is megkaphatják az Összeállítási engedélyt:
 
+- Ha legalább közreműködői szerepkörrel rendelkező tag egy munkaterületen, automatikusan összeállítási engedéllyel rendelkezik az adathalmazokhoz, és jogosult a jelentések másolására.
+ 
 - Annak a munkaterületek egy tagja, ahol az adathalmaz található, adott személyekhez vagy biztonsági csoportokhoz rendelheti az engedélyt az Engedélykezelési központban. Válassza az adathalmaz melletti három pontot (...), majd az **Engedélyek kezelése** menüpontot.
 
     ![A három pont kiválasztása](media/service-datasets-build-permissions/power-bi-dataset-manage-permissions.png)
@@ -54,7 +56,7 @@ A felhasználók többféle módon is megkaphatják az Összeállítási engedé
 
     ![Engedélykezelési központ](media/service-datasets-build-permissions/power-bi-dataset-permissions.png)
 
-- Egy rendszergazda, vagy annak a munkaterületek egy tagja, ahol az adathalmaz található, az alkalmazás közzététele során eldöntheti, hogy az alkalmazásra vonatkozó engedéllyel rendelkező felhasználók a mögöttes adathalmazokra vonatkozó Összeállítási engedéllyel is rendelkezzenek-e. Részletesebb leírást az [Adathalmaz megosztásának lépései](#steps-to-sharing-your-dataset) című szakaszban talál.
+- Egy rendszergazda, vagy annak a munkaterületek egy tagja, ahol az adathalmaz található, az alkalmazás közzététele során eldöntheti, hogy az alkalmazásra vonatkozó engedéllyel rendelkező felhasználók a mögöttes adathalmazokra vonatkozó Összeállítási engedéllyel is rendelkezzenek-e. Részletesebb leírást ennek a cikknek az [Adathalmaz megosztásának lépései](#steps-to-sharing-your-dataset) című szakaszában talál.
 
 - Tegyük fel, hogy Újraosztási és Összeállítási engedéllyel rendelkezik egy adathalmazhoz. Amikor egy erre az adathalmazra épülő jelentést vagy irányítópultot oszt meg, beállíthatja, hogy a címzettek a mögöttes adathalmazra vonatkozó Összeállítási engedélyt is megkapják-e.
 

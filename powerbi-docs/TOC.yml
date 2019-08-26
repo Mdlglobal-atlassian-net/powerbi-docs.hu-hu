@@ -1426,3 +1426,5 @@
       href: guidance/star-schema.md
     - name: Az adatmodell méretének csökkentése
       href: guidance/import-modeling-data-reduction.md
+    - name: A DIVIDE függvény és a divide operátor (/)
+      href: guidance/dax-divide-function-operator.md

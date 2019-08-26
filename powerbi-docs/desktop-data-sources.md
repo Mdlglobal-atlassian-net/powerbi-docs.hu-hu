@@ -7,29 +7,31 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/15/2019
+ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8d8e77d8fe4ebea5b457ba282014bb8dc738191a
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: 5004b55fa48cdf98aedd019749b738352d68c4cd
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324836"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560885"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 A Power BI Desktoppal különböző forrásokból származó adatokhoz csatlakozhat. Az elérhető adatforrások teljes listája az oldal alján látható.
 
 Az adatokhoz való csatlakozáshoz válassza a **Kezdőlap** menüszalag **Lekérdezés** lehetőségét. A lefelé mutató nyíl vagy a gomb **Lekérdezés** feliratának kiválasztásával megjelenik a **Leggyakoribb** adattípusok menüje, ahogyan az a következő képen látható:
 
-![Adatok lekérése a Power BI Desktopban](media/desktop-data-sources/data-sources_01.png)
+![Adatok lekérése a Power BI Desktopban](media/desktop-data-sources/data-sources-01.png)
 
 A **Továbbiak...** lehetőség a **Leggyakoribb** menüből való kiválasztásakor megjelenik a **Lekérdezés** ablak. A **Lekérdezés** ablakot (a **Leggyakoribb** menü kihagyásával) a **Lekérdezés** **ikongomb** közvetlen kiválasztásával is megjelenítheti.
 
-![Adatok lekérése gomb](media/desktop-data-sources/data-sources_02.png)
+![Adatok lekérése gomb](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> A Power BI csapata folyamatosan bővíti a **Power BI Desktop** és a **Power BI szolgáltatás** számára elérhető adatforrásokat. Ezért gyakran láthatja majd a fejlesztés alatt álló adatforrások előzetes verzióit *bétaverzió* vagy *előzetes verzió* felirattal. A *bétaverzió* vagy *előzetes verzió* felirattal ellátott adatforrások támogatása és működése korlátozott, használatuk éles környezetben nem ajánlott.
+> A Power BI csapata folyamatosan bővíti a **Power BI Desktop** és a **Power BI szolgáltatás** számára elérhető adatforrásokat. Ezért gyakran láthatja majd a fejlesztés alatt álló adatforrások előzetes verzióit *bétaverzió* vagy *előzetes verzió* felirattal. A *bétaverzió* vagy *előzetes verzió* felirattal ellátott adatforrások támogatása és működése korlátozott, használatuk éles környezetben nem ajánlott. 
+
+> Emellett a **Power BI Desktophoz** *Béta* vagy *Előzetes verzióként* megjelölt adatforrások nem feltétlenül használhatók a **Power BI szolgáltatásban** vagy más Microsoft-szolgáltatásban, amíg az adatforrás általánosan elérhető nem lesz.
 
 ## <a name="data-sources"></a>Adatforrások
 Az adattípusok a következő kategóriákba vannak csoportosítva:
@@ -56,7 +58,7 @@ A **Fájl** kategória a következő adatkapcsolatokat biztosítja:
 
 A következő képen a **Lekérdezés** ablak látható, amelyen a **Fájl** kategória ki van választva.
 
-![Lekérdezés > Fájl](media/desktop-data-sources/data-sources_03.png)
+![Lekérdezés > Fájl](media/desktop-data-sources/data-sources-03.png)
 
 Az **Adatbázis** kategória a következő adatkapcsolatokat biztosítja:
 
@@ -95,16 +97,18 @@ Az **Adatbázis** kategória a következő adatkapcsolatokat biztosítja:
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Adatbázis** kategória ki van választva.
 
-![Lekérdezés > Adatbázisok](media/desktop-data-sources/data-sources_04.png)
+![Lekérdezés > Adatbázisok](media/desktop-data-sources/data-sources-04.png)
 
-A **Power BI** kategória a következő adatkapcsolatokat biztosítja:
+A **Power Platform** kategória a következő adatkapcsolatokat biztosítja:
 
 * Power BI-adathalmazok
 * Power BI-adatfolyamok
+* Common Data Service
+* Power Platform-adatfolyamok (bétaverzió)
 
-A következő képen az **Lekérdezés** ablak látható, amelyen az **Power BI** kategória ki van választva.
+A következő képen a **Lekérdezés** ablak látható, amelyen a **Power Platform** kategória van kiválasztva.
 
-![Lekérdezés > Power BI](media/desktop-data-sources/data-sources_05.png)
+![Lekérdezés > Power BI](media/desktop-data-sources/data-sources-05.png)
 
 Az **Azure** kategória a következő adatkapcsolatokat biztosítja:
 
@@ -113,7 +117,7 @@ Az **Azure** kategória a következő adatkapcsolatokat biztosítja:
 * Azure Analysis Services-adatbázis
 * Azure Blob-tároló
 * Azure Table Storage
-* Azure Cosmos DB (bétaverzió)
+* Azure Cosmos DB
 * Azure Data Lake Storage Gen2 (béta)
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
@@ -124,7 +128,7 @@ Az **Azure** kategória a következő adatkapcsolatokat biztosítja:
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Azure** kategória ki van választva.
 
-![Lekérdezés > Azure](media/desktop-data-sources/data-sources_06.png)
+![Lekérdezés > Azure](media/desktop-data-sources/data-sources-06.png)
 
 Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztosítja:
 
@@ -134,7 +138,6 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * Dynamics NAV
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (helyszíni)
-* Common Data Service
 * Microsoft Azure Consumption Insights (bétaverzió)
 * Azure DevOps (bétaverzió)
 * Azure DevOps Server (bétaverzió)
@@ -161,6 +164,7 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * tyGraph (bétaverzió)
 * Webtrends (bétaverzió)
 * Zendesk (bétaverzió)
+* Dynamics 365 Customer Insights (béta)
 * Emigo adatforrás (bétaverzió)
 * Entersoft Business Suite (bétaverzió)
 * Industrial App Store
@@ -168,11 +172,11 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * Microsoft Graph Security (bétaverzió)
 * Quick Base
 * TeamDesk (bétaverzió)
-* Dynamics 365 Customer Insights (béta)
+
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Online szolgáltatások** kategória ki van választva.
 
-![Lekérdezés > Online szolgáltatások](media/desktop-data-sources/data-sources_07.png)
+![Lekérdezés > Online szolgáltatások](media/desktop-data-sources/data-sources-07.png)
 
 Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 
@@ -200,7 +204,7 @@ Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Egyéb** kategória ki van választva.
 
-![Lekérdezés > Egyéb](media/desktop-data-sources/data-sources_08.png)
+![Lekérdezés > Egyéb](media/desktop-data-sources/data-sources-08.png)
 
 > [!NOTE]
 > Jelenleg nem lehetséges olyan egyéni adatforrásokhoz csatlakozni, amelyek védelmét az Azure Active Directory biztosítja.
@@ -208,15 +212,15 @@ A következő képen a **Lekérdezés** ablak látható, amelyen az **Egyéb** k
 ## <a name="connecting-to-a-data-source"></a>Csatlakozás adatforráshoz
 Egy adott adatforráshoz való csatlakozáshoz válassza ki azt a **Lekérdezés** ablakban, majd válassza a **Kapcsolódás** lehetőséget. A következő képen a **Web** lehetőség van kiválasztva az **Egyéb** adatkapcsolat-kategórián belül.
 
-![Webes csatlakozás](media/desktop-data-sources/data-sources_08.png)
+![Webes csatlakozás](media/desktop-data-sources/data-sources-08.png)
 
 Ekkor megjelenik egy, az adott adatkapcsolatra jellemző csatlakozási ablak. Ha hitelesítő adatok szükségesek, a rendszer ezek megadására kéri. A következő képen a Web típusú adatforráshoz való csatlakozáshoz szükséges URL-cím megadása látható.
 
-![webes URL-cím bevitele](media/desktop-data-sources/datasources_fromwebbox.png)
+![webes URL-cím bevitele](media/desktop-data-sources/datasources-fromwebbox.png)
 
 Az URL-cím vagy az erőforrás csatlakozási adatainak megadása után kattintson az **OK** gombra. A Power BI Desktop csatlakozik az adatforráshoz, és megjeleníti az elérhető adatforrásokat a **Kezelőben**.
 
-![Kezelőképernyő](media/desktop-data-sources/datasources_fromnavigatordialog.png)
+![Kezelőképernyő](media/desktop-data-sources/datasources-fromnavigatordialog.png)
 
 Az adatokat betöltheti a **Kezelő** panel alján található **Betöltés** gombbal, vagy szerkesztheti a lekérdezést az adatok betöltése előtt a **Szerkesztés** gombbal.
 

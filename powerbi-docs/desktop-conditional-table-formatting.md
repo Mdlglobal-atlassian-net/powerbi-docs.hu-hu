@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e23fd2aca90ee14c2376b0175c7c8b5132cf9a9f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 35f60c0e41a06c8f13931d158fe092184da8838d
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222265"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69561064"
 ---
 # <a name="conditional-formatting-in-tables"></a>Táblázatok feltételes formázása 
 A táblázatok feltételes formázásával a cellák értéke, illetve más értékek vagy mezők alapján határozhat meg egyéni cellaszíneket, akár színátmenetek használatával is. A cellák értékei adatsávokkal is megjeleníthetők. 
@@ -130,11 +130,17 @@ Az eredmények pedig az alábbi mátrix szerint jelennek majd meg.
 
 A fantáziáját és egy kis DAX-ot felhasználva számtalan egyéb változatot is létrehozhat.
 
-Bármilyen érték szerepel a CSS-szín specifikációja, [ https://www.w3.org/TR/css-color-3/ ](https://www.w3.org/TR/css-color-3/) kiszínezheti a Vizualizációk:
-* 3, 6 vagy 8 jegyű hexadecimális kódok pl. #3E4AFF. Adja meg a # szimbólum elején a kódot. "3E4AFF" nem elfogadható. 
-* RGB- vagy RGBA értékek például RGBA (234, 234, 234, 0,5)
-* HSL vagy HSLA értékek például HSLA (123, 75 %-os, 75 %-os, 0,5)
-* Szín-neveket például a zöld, SkyBlue, PeachPuff 
+A vizualizációk színezéséhez a [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/) helyen a CSS-színek között felsorolt értékek bármelyikét használhatja:
+* 3, 6 vagy 8 jegyű hexadecimális kódok, például #3E4AFF. A kód első karaktereként mindig írja be a # jelet. A „3E4AFF” formát a rendszer nem fogadja el. 
+* RGB vagy RGBA értékek, például RGBA(234, 234, 234, 0.5)
+* HSL vagy HSLA értékek, például HSLA(123, 75%, 75%, 0.5)
+* Színek nevei, például Green, SkyBlue, PeachPuff 
+
+## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
+A feltételes táblázatformázás használatakor érdemes figyelembe venni néhány szempontot:
+
+* A feltételes formázás csak **Mátrix** vizualizációkra lesz alkalmazva, és nem vonatkozik a részösszegekre és a teljes összegekre. 
+
 
 ## <a name="next-steps"></a>Következő lépések
 További információkat a következő cikkekben talál:  

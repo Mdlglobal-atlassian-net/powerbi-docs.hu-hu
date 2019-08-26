@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fcad10a77ad531562443470296c9d712b2aa9724
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: 6664924a10b89e057765d70499208aede2d7fdad
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757616"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654787"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>A DirectQuery használata a Power BI Desktopban
 A **Power BI Desktop** használatával az adatforrásokhoz való kapcsolódáskor mindig importálhat egy másolatot az adatokról a **Power BI Desktopba**. Egyes adatforrások esetében egy alternatív módszer is használható: ha közvetlenül kapcsolódik az adatforráshoz a **DirectQuery** használatával.
@@ -49,10 +49,13 @@ A **DirectQueryt** [a Power BI és a DirectQuery használatát bemutató](deskto
 Íme a **DirectQuery** használatának néhány korlátozása:
 
 * Ha nem [kompozit modelleket](desktop-composite-models.md) használ, minden táblának egyetlen adatbázisból kell származnia
+
 * Ha a **Lekérdezésszerkesztőben** megadott lekérdezés túl összetett, hiba történik. A hiba javításához törölnie kell a **Lekérdezésszerkesztőben** a problémás lépést, vagy a **DirectQuery** használata helyett *importálnia* kell az adatokat. A többdimenziós forrásokhoz, amilyen az SAP Business Warehouse is, nincs **Lekérdezésszerkesztő**.
-* A kapcsolatok szűrése az egyik irányra van korlátozva mindkét irány helyett (bár már elérhető a kétirányú keresztszűrés a **DirectQueryvel**). A többdimenziós forrásokhoz, amilyen az SAP Business Warehouse is, nincsenek kapcsolatok meghatározva a modellben.
+
 * Az időintelligencia-képességek nem érhetők el a **DirectQueryben**. Például a dátumoszlopok (év, negyedév, hónap, nap stb.) speciális kezelése **DirectQuery** módban nem támogatott.
+
 * Annak érdekében, hogy biztosítható legyen a háttéradatforrásra küldött lekérdezések elfogadható teljesítménye, a mértékekben megengedett DAX-kifejezésekre korlátozások vonatkoznak.
+
 * A **DirectQuery** használatával legfeljebb egy millió sornyi adat adható vissza. Ez csak a visszaadott sorok számát érinti, a **DirectQuery** használatával visszaadott adatkészlet létrehozásához alkalmazott összesítéseket és számításokat nem. Például akár 10 millió sort is összesíthet egy, az adatforráson futó lekérdezéssel, és pontosan visszaadathatja az összesítésadatait a Power BI-ba a **DirectQuery** használatával, ha a Power BI-ba visszaadott sorok száma nem haladja meg az 1 milliót. Ha 1 milliónál több sort kellene visszaadnia a **DirectQueryből**, a Power BI hibát jelez.
 
 ## <a name="important-considerations-when-using-directquery"></a>Lényeges szempontok a DirectQuery használatához

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/03/2019
+ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 637a6476af6368fae2bcfed8d89aeb9f43276a6b
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61370462"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560831"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Adatot nem tartalmazó elemek megjelenítése a Power BI-ban
 
@@ -25,7 +25,7 @@ A Power BI segítségével különféle forrásokból származó sokféle adatb�
 
 ## <a name="determining-relevant-data"></a>A releváns adatokat meghatározása
 
-Első lépésként annak megértéséhez, hogyan határozza meg a Power BI, milyen adatok megjelenítése a releváns, vegyünk egy egyszerű példát, egy asztalt. Fontolja meg, hogy a cikk végén található minták szakaszban jelölt modell használatával létrehoz egy táblát a következő beállításokkal:
+Első lépésként annak megértéséhez, hogyan határozza meg a Power BI, milyen adatok megjelenítése a releváns, vegyünk egy egyszerű példát, egy asztalt. Fontolja meg, hogy a cikk végén található [példa-adatmodell](#example-data-model) szakaszban bemutatott modell használatával létrehoz egy táblát a következő beállításokkal:
 
 **1. Csoportok ugyanabból a táblából:** *Termék[Szín] - Termék[méret]*
 
@@ -152,6 +152,25 @@ Ha az **Adatot nem tartalmazó elemek megjelenítése** funkció be van kapcsolv
 |Vörös     |Fényes         |         |
 
 Ebben az esetben figyelje meg, hogy a *Termékstílus[Felület]=Nincs* nem jelenik meg a táblában. Ez azért van így, mert a Power BI először az összes *Szín* értéket választotta ki a *Termék* táblában. Ekkor az egyes színekhez a Power BI kiválasztotta a megfelelő *Felület* értékeket, amelyek tartalmaztak adatokat. Mivel a *Nincs* egyetlen *Szín* kombinációjában sem jelenik meg, ez nem lett kiválasztva.
+
+
+## <a name="power-bi-visual-behavior"></a>Power BI-vizualizációk viselkedése
+
+Ha az **Adatot nem tartalmazó elemek megjelenítése** engedélyezve van a vizualizáció egy mezőjéhez, a funkció automatikusan engedélyezve lesz az összes vele azonos *vizualizációbeli gyűjtőben* vagy hierarchiában lévő mezőre is. Egy vizualizáció gyűjtője vagy hierarchiája lehet a **Tengely**, **Jelmagyarázat**, **Kategória**, **Sorok** vagy **Oszlopok**.
+
+![Mezők tengelyhez és jelmagyarázathoz](media/desktop-show-items-no-data/show-items-no-data-04.png)
+
+Például ha egy Mátrix vizualizációnak négy mezője van a **Sorok** gyűjtőben, és egy mezőre engedélyezve van az **Adatot nem tartalmazó elemek megjelenítése**, az a mátrix összes elemére engedélyezve lesz. Az alábbi ábrán az **Adatot nem tartalmazó elemek megjelenítése** engedélyezve van a **Sorok** gyűjtő első mezőjére, a *SupplierID* mezőre. Automatikusan a **Sorok** gyűjtő többi mezőjére is engedélyezve van.
+
+![Az ugyanabban a vizualizációban lévő mezők automatikusan engedélyezik az adatot nem tartalmazó elemek megjelenítését](media/desktop-show-items-no-data/show-items-no-data-05.png)
+
+Ezzel ellentétben az **Oszlopok** gyűjtőben látható *Continent* mezőre *nincs* automatikusan engedélyezve az **Adatot nem tartalmazó mezők megjelenítése**. 
+
+A vizualizációnak ez a viselkedése gyakran tapasztalható akkor, ha a vizualizációt más típusúra konvertálják át, például egy Mátrix vizualizációt táblázattá konvertálnak. Ilyen konverzió esetén az **Adatot nem tartalmazó elemek megjelenítése** automatikusan engedélyezve lesz minden olyan gyűjtőbe áthelyezett mezőre, amelyben az egyik mezőre a funkció már engedélyezve van. Ha az előző példában a *SupplierID* mezőre engedélyezve van az **Adatot nem tartalmazó elemek megjelenítése** funkció, és a vizualizációt táblázattá konvertálják, a *Continent* mező (a **Sorok** gyűjtőben lévő mezőkkel együtt) át lesz helyezve az **Oszlopok** gyűjtőből a táblázatos vizualizációban használt egyetlen gyűjtőbe, amely az **Értékek** gyűjtő. Emiatt az **Értékek** gyűjtőben lévő összes mezőre engedélyezve lesz az **Adatot nem tartalmazó elemek megjelenítése**.
+
+### <a name="exporting-data"></a>Adatok exportálása
+
+Az **Összesített adatok exportálása** funkció használatakor az **Adatot nem tartalmazó elemek megjelenítése** funkció ugyanúgy viselkedik, mintha a kimenet táblázatos vizualizációvá lenne konvertálva. Emiatt egy olyan vizualizáció exportálásakor, mint egy diagrammátrix vizualizáció, az exportált adatok másként jelenhetnek meg, mint a vizualizációban. Ennek az az oka, hogy az exportálási folyamat részeként végrehajtott táblázatos vizualizációvá konvertálás az összes exportált mezőre engedélyezi az **Adatot nem tartalmazó elemek megjelenítését**. 
 
 ## <a name="example-data-model"></a>Példa adatmodell
 

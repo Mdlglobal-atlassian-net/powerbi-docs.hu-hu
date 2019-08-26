@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2019
+ms.date: 08/15/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 9fa79bc17e87863d094afbc479d664c8bbf9daaf
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: 8b92bd2917165cd6dc89e0c9f9a94e83d69f1c2a
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590474"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560849"
 ---
 # <a name="get-power-bi-desktop"></a>A Power BI Desktop beszerzése
 A **Power BI Desktop** segítségével az adatok megjelenítésére szolgáló speciális lekérdezések, modellek és jelentések állíthatók össze. A **Power BI Desktop** használatával adatmodelleket állíthat össze, jelentéseket hozhat létre és megoszthatja a munkáját a Power BI szolgáltatásba való közzététellel.  A **Power BI Desktop** ingyenesen letölthető.
 
 A **Power BI Desktopot** kétféleképpen szerezheti be. Ezen módszerek leírását megtalálja a következő szakaszokban:
 
-* Közvetlen **letöltés** (egy MSI-csomag letöltésével és telepítésével a számítógépen)
+* Közvetlen **letöltés** (egy csomag letöltésével és telepítésével a számítógépen)
 * Telepítés alkalmazásként a **Microsoft Store-ból**
 
 Mindkét módszerrel a **Power BI Desktop** legfrissebb verzióját szerzi be, de néhány különbséget érdemes kiemelni. Ezeket a különbségeket a következő szakaszok ismertetik.
@@ -30,21 +30,23 @@ Mindkét módszerrel a **Power BI Desktop** legfrissebb verzióját szerzi be, d
 ## <a name="download-power-bi-desktop"></a>A Power BI Desktop letöltése
 A **Power BI Desktop** legfrissebb verziójának letöltését elvégezheti úgy, hogy kiválasztja a Power BI szolgáltatás jobb felső sarkában lévő letöltés ikont, majd a **Power BI Desktop** lehetőséget.
 
-![](media/desktop-get-the-desktop/getpbid_downloads.png)
+![A Power BI Desktop legújabb verziójának letöltése](media/desktop-get-the-desktop/getpbid_downloads.png)
 
 Vagy a következő letöltési oldalról is letöltheti a Power BI Desktop legfrissebb verzióját:
 
-* [**A Power BI Desktop letöltése** (32 és 64 bites verzió)](https://powerbi.microsoft.com/desktop).
+* [**A Power BI Desktop letöltése** (32 bites és 64 bites verzió)](https://powerbi.microsoft.com/desktop).
   
-  [![](media/service-admin-power-bi-security/PBI_Security_01.png)](https://powerbi.microsoft.com/desktop)
+  [![A Power BI Desktop legújabb verziójának letöltése](media/service-admin-power-bi-security/PBI_Security_01.png)](https://powerbi.microsoft.com/desktop)
 
 A választott letöltési módszertől függetlenül a **Power BI Desktop** letöltése után a rendszer a telepítőfájl futtatását kéri:
 
-![](media/desktop-get-the-desktop/getpbid_3.png)
+![A Power BI Desktop telepítőfájljának futtatása](media/desktop-get-the-desktop/getpbid_3.png)
 
-A **Power BI Desktop** alkalmazásként lesz telepítve, amely a számítógépe asztalán fut.
+A 2019. júliusi kiadástól kezdve a **Power BI Desktop** egyetlen .exe telepítőcsomagként szerezhető be, amely az összes támogatott nyelvet tartalmazza. Külön .exe-fájl tartozik a 32 bites és a 64 bites verzióhoz. Az .msi-csomagokat a 2019. szeptemberi kiadástól kezdve nem forgalmazzuk. Ezután a telepítést a végrehajtható .exe használatával kell elvégeznie. Ez sokkal egyszerűbbé és kényelmesebbé teszi a terjesztést, a frissítéseket és a telepítést (elsősorban a rendszergazdák számára). A telepítési folyamatot testre is szabhatja parancssori paraméterek használatával, a cikk egy későbbi, [parancssori beállítások használata a telepítés során](#using-command-line-options-during-installation) című szakaszában leírtak szerint.
 
-![](media/desktop-get-the-desktop/designer_gsg_install.png)
+A telepítőcsomag indítása után a **Power BI Desktop** alkalmazásként lesz telepítve, és az asztalon fut.
+
+![A Power BI Desktop alkalmazás az asztalon fut](media/desktop-get-the-desktop/designer_gsg_install.png)
 
 > [!NOTE]
 > Nem támogatott a **Power BI Desktop** letöltött (MSI-) verziójának és **Microsoft Store-ból** elérhető verziójának telepítése ugyanarra a számítógépre (ez más néven a *párhuzamos* telepítés).
@@ -56,20 +58,20 @@ A **Power BI Desktopot** a Microsoft Store-ból is beszerezheti a következő hi
 
 * [A **Power BI Desktop** telepítése a **Microsoft Store-ból**](http://aka.ms/pbidesktopstore)
 
-![](media/desktop-get-the-desktop/getpbid_04.png)
+  ![A Power BI Desktop beszerzése a Microsoft Store-ból](media/desktop-get-the-desktop/getpbid_04.png)
 
 A következő előnyökkel jár, ha a Microsoft Store-ból szerzi be a **Power BI Desktopot**:
 
 * **Automatikus frissítések** – A Windows automatikusan letölti a legfrissebb verziót a háttérben, amint elérhetővé válik, így a verziója mindig naprakész marad.
 * **Kisebb letöltések** – A **Microsoft Store** csak azokat az összetevőket tölti le a gépre, amelyek az egyes frissítések során megváltoztak, így frissítéskor kisebb méretű fájlokat kell letölteni.
-* **Nincs szükség rendszergazdai jogosultságokra** – ha közvetlenül tölti le és telepíti az MSI-fájlt, a telepítés sikeres elvégzéséhez rendszergazdának kell lennie. Ha a Microsoft Store-ból szerzi be a **Power BI Desktopot**, *nincs* szükség rendszergazdai jogosultságra.
+* **Nincs szükség rendszergazdai jogosultságokra** – ha közvetlenül tölti le és telepíti a csomagot, a telepítés sikeres elvégzéséhez rendszergazdának kell lennie. Ha a Microsoft Store-ból szerzi be a **Power BI Desktopot**, *nincs* szükség rendszergazdai jogosultságra.
 * **Engedélyezett az informatikai bevezetés** – a **Microsoft Store-ból** elérhető verzió könnyebben telepíthető vagy *vezethető be* a cég összes felhasználója számára, és a **Power BI Desktop** elérhetővé tehető a **Microsoft Store Vállalatoknak** segítségével.
-* **Nyelv észlelése** – a **Microsoft Store-ból** elérhető verzió tartalmazza az összes támogatott nyelvet, és minden indításkor ellenőrzi, hogy mely nyelveket használják a számítógépen. Ez a **Power BI Desktopban** létrehozott modellek honosítására is hatással van: a beépített dátumhierarchiák például megfelelnek a **Power BI Desktop** által a .pbix fájl létrehozásakor használt nyelvnek.
+* **Nyelv észlelése** – a **Microsoft Store-ból** elérhető verzió tartalmazza az összes támogatott nyelvet, és minden indításkor ellenőrzi, hogy mely nyelvet használják a számítógépen. Ez a **Power BI Desktopban** létrehozott modellek honosítására is hatással van: a beépített dátumhierarchiák például megfelelnek a **Power BI Desktop** által a .pbix fájl létrehozásakor használt nyelvnek.
 
 A **Power BI Desktop** Microsoft Store-ból való telepítésével kapcsolatban megfontolandó szempontok és korlátozások többek között a következők:
 
 * Ha az SAP-összekötőt használja, lehet, hogy a *Windows\System32* mappába kell helyeznie az SAP-illesztő fájljait.
-* A **Power BI Desktop** Microsoft Store-ból való telepítésével nem történik meg az MSI-verzióból származó felhasználói beállítások másolása. Elképzelhető, hogy újra kell csatlakoztatni a legutóbbi adatforrásokat, és ismét meg kell adni az adatforrások hitelesítő adatait. 
+* A **Power BI Desktop** Microsoft Store-ból való telepítésével nem történik meg a .exe-verzióból származó felhasználói beállítások másolása. Elképzelhető, hogy újra kell csatlakoztatni a legutóbbi adatforrásokat, és ismét meg kell adni az adatforrások hitelesítő adatait. 
 
 > [!NOTE]
 > Nem támogatott a **Power BI Desktop** letöltött (MSI-) verziójának és **Microsoft Store-ból** elérhető verziójának telepítése ugyanarra a számítógépre (ez más néven a *párhuzamos* telepítés). A **Power BI Desktop** manuális eltávolítására van szükség a **Microsoft Store-ból** való letöltés előtt
@@ -82,7 +84,7 @@ A **Power BI Desktop** Microsoft Store-ból való telepítésével kapcsolatban 
 ## <a name="using-power-bi-desktop"></a>A Power BI Desktop használata
 A **Power BI Desktop** elindításakor megjelenik egy *Üdvözlőképernyő*.
 
-![](media/desktop-get-the-desktop/getpbid_05.png)
+![A Power BI Desktop üdvözlő képernyője](media/desktop-get-the-desktop/getpbid_05.png)
 
 Ha most először használja a **Power BI Desktopot** (ha a telepítés nem frissítés), a rendszer a folytatás előtt arra kéri, hogy töltsön ki egy űrlapot, és válaszoljon néhány kérdésre, vagy jelentkezzen be a **Power BI szolgáltatásba**.
 
@@ -102,6 +104,25 @@ A következő lista a **Power BI Desktop** futtatásához szükséges minimális
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
 Mindig igyekszünk a lehető legjobb élményt biztosítani a Power BI Desktop felhasználóinak. Előfordulhat, hogy a Power BI Desktop használata során problémák merülnek fel, ezért ez a szakasz megoldásokat és javaslatokat kínál a különböző esetekre. 
+
+
+### <a name="using-command-line-options-during-installation"></a>Parancssori beállítások használata a telepítés során 
+
+A Power BI Desktop telepítésekor tulajdonságokat és beállításokat adhat meg parancssori kapcsolókkal. Ez elsősorban a rendszergazdák számára hasznos, akik több vállalatnál kezelik vagy bonyolítják le a Power BI Desktop telepítését. Ezek a lehetőségek .msi és .exe telepítésekor is használhatók. 
+
+
+|Parancssori beállítás  |Működés  |
+|---------|---------|
+|-q, -quiet, -s, -silent     |néma telepítés         |
+|-passive     |telepítés közben csak a folyamatjelző sáv látható         |
+|-norestart     |a számítógép újraindítási követelményének mellőzése         |
+|-forcerestart     |a számítógép kérdés nélküli újraindítása a telepítés után         |
+|-promptrestart     |a felhasználó értesítése, ha a számítógép újraindítása szükséges (alapértelmezés)         |
+|-l<>, -log<>     |a telepítés naplózása a <> jelek között megadott fájlba         |
+|-uninstall     |a Power BI Desktop eltávolítása         |
+|-repair     |a telepítés javítása (vagy telepítés, ha jelenleg nincs telepítve)         |
+|-package, -update     |a Power BI Desktop telepítése (alapértelmezés, ha nincs megadva az -uninstall vagy a -repair kapcsoló)         |
+
 
 ### <a name="issues-when-using-previous-releases-of-power-bi-desktop"></a>Problémák a Power BI Desktop előző kiadásainak használata során
 
