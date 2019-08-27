@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ecd58ca21e7fb6c5fb0bc2d3410788e2563efa9b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d1739d97b0741c67e29ed7ab9a35a70bf4fdc484
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454521"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654848"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Első lépések a Power BI Desktopban
 Üdvözöljük a **Power BI Desktop Első lépések útmutatójában**. Ebben a rövid bemutatóban megismerkedhet a Power BI Desktop használatával, képességeivel, és megtudhatja, hogyan állíthat össze gyorsan nagy teljesítményű adatmodelleket és lenyűgöző jelentéseket, amelyek megalapozottabb üzleti döntéseket eredményeznek. 
@@ -130,7 +130,7 @@ Először is a legtöbb minősítés egész számként került be a **Lekérdez�
 
 Az oszlopokat módosíthatja is, vagy *átalakíthatja* szövegből fejléccé az **Átalakítás** menüszalagon. A képen az **Átalakítás** menüszalag látható. A nyíl az **Adattípus** gombra mutat, amellyel az adott adattípust egy másikká alakíthatja.
 
- ![](media/desktop-getting-started/shapecombine_changetype.png)
+ ![](media/desktop-getting-started/shapecombine-changetype-b.png)
 
 Vegye figyelembe, hogy a **Lekérdezés beállításai** **Alkalmazott lépések** területén megjelennek a végrehajtott módosítások. Ha el szeretne távolítani egy lépést a formázási folyamatból, egyszerűen válassza ki a lépést, majd kattintson az adott lépés bal oldalán található **X** jelre.
 
