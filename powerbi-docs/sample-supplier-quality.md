@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 75e5a6387574c6cc4a9620955a3e7c15479830c2
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 76e053d34dcd7f1f199f4cbf9f02196e8efc6232
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391202"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621313"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Szállítói minőségelemzési minta a Power BI-hoz: Bemutató megtekintése
 
@@ -144,9 +144,9 @@ Azokat az anyagokat kezelik a legjobban, amelyek a legkevesebb állásidőt okoz
     Sokkal több hibás nyersanyag volt 2014-ben, mint 2013-ban.  
 
     ![Kérdés: anyagtípusok, év és összes hibás mennyiség megjelenítése](media/sample-supplier-quality/supplier12.png)  
-6. Változtassa meg a kérdést a *show material types, year and total **downtime minutes*** (mutassa az anyagtípusokat, az évet és az állásidő összesített perceit) kérdésre.  
+6. Változtassa meg a kérdést a _show material types, year and total **downtime minutes**_ (mutassa az anyagtípusokat, az évet és az állásidő összesített perceit) kérdésre.  
 
-   ![Kérdés: anyagtípus, év és összes üzemen kívüli perc megjelenítése](media/sample-supplier-quality/supplier13.png)
+   ![Q&A-kérdés: anyagtípus, év és összes üzemen kívüli perc megjelenítése](media/sample-supplier-quality/supplier13.png)
 
    Megfigyelheti, hogy a nyersanyagok által okozott állásidők nagyjából megegyeztek 2013-ban és 2014-ben, dacára annak, hogy 2014-ben sokkal több nyersanyag volt hibás. Úgy tűnik, hogy 2014-ben a hibás nyersanyagok megnövekedett száma nem vonta maga után a hibás nyersanyagok által okozott állásidő növekedését.
 

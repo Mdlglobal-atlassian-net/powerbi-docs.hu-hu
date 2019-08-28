@@ -1,5 +1,5 @@
 ---
-title: Eligazodás a Power BI szolgáltatás új külsején
+title: A Power BI szolgáltatás új külseje
 description: A Power BI szolgáltatás (app.powerbi.com) külseje megújult. Ez a cikk bemutatja, hogyan navigálhat a jelentésekben az új külsővel.
 author: maggiesMSFT
 manager: kfile
@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/24/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: aa7de324e77b8f2b1c58e558c0814df97d997631
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 6c752b6083d2f3baecf7e1a9ce20f77e8c5a46d0
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68471307"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654914"
 ---
-# <a name="navigate-the-new-look-of-the-power-bi-service"></a>Eligazodás a Power BI szolgáltatás új külsején
+# <a name="the-new-look-of-the-power-bi-service"></a>A Power BI szolgáltatás új külseje
 
-A Power BI szolgáltatás külseje megújult. Egyszerűbbé tettük a jelentések megtekintését. Az új arculat egy modern felületet nyújt, amely egyszerűbb, és a többi Microsoft-termékhez hasonlít. A Power BI szolgáltatás minden területén a jelentések tartalmát helyeztük a középpontba. Ehhez egy világosabb színtémát választottunk, és frissítettük az ikonokat. Íme az új külső áttekintése. Részletekért tekintse meg a számozott szakaszokat:
+A Power BI szolgáltatás (app.powerbi.com) új arculattal rendelkezik, amely megkönnyíti a jelentések megtekintését és kezelését. Az új arculat egy modern felületet nyújt, amely egyszerűbb, és a többi Microsoft-termékhez hasonlít. A Power BI szolgáltatás minden területén a jelentések tartalmát helyeztük a középpontba. Ehhez egy világosabb színtémát választottunk, és frissítettük az ikonokat. Íme az új külső áttekintése. Részletekért tekintse meg a számozott szakaszokat:
 
 ![A változások áttekintése az új arculatban](media/service-new-look/power-bi-new-look-changes.png)
 
@@ -35,7 +35,7 @@ Az új megjelenést bármelyik Power BI-felhasználó kipróbálhatja. Ehhez vá
 
 ![Az új megjelenés kipróbálása](media/service-new-look/power-bi-new-look-off.png)
 
-Ha vissza szeretne térni a régi külsőhöz, kattintson a jobb felső sarokban található három pontra.
+Ha vissza szeretne térni a régi nézethez, váltson vissza **kikapcsolt** értékre ![Új megjelenés bekapcsolva](media/service-new-look/power-bi-new-look-toggle-on.png). Ha nem látja ezt a beállítást, kattintson a jobb felső sarokban található három pontra.
 
 ![A régi megjelenés visszaállítása](media/service-new-look/power-bi-new-look-on.png)
 

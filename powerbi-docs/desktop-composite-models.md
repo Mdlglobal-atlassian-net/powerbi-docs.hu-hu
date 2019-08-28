@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/09/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f3d67d0b57f2f04a31d99fb36476871c164aad4d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ae896fb737eda6f95efa1589f2b3384e7426cf30
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65533592"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654584"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Összetett modellek használata a Power BI Desktopban
 
-Korábban a Power BI Desktopban egy jelentés, nem a többi adatkapcsolat - a DirectQuery használatakor Directqueryt vagy importálást - volt engedélyezett-e meg a jelentést. Az összetett modellekkel ez a kötöttség megszűnik. Egy jelentés problémamentesen tartalmazhat több, DirectQuery vagy importálás típusú adatkapcsolatot bármilyen kívánt kombinációban.
+Ha korábban a Power BI Desktopban DirectQueryt használt egy jelentésben, akkor más, akár DirectQuery vagy Importálás módú adatkapcsolatra sem volt lehetőség az adott jelentésben. Az összetett modellekkel ez a kötöttség megszűnik. Egy jelentés problémamentesen tartalmazhat több, DirectQuery vagy importálás típusú adatkapcsolatot bármilyen kívánt kombinációban.
 
 ![Összetett modellek a Power BI Desktopban](media/desktop-composite-models/composite-models_01.png)
 
@@ -39,7 +39,7 @@ Az összetett modellek használatának lehetősége a Power BI Desktopban három
 * Az adatok a Power BI-ba importálásával, ami az adatok lekérésének leggyakoribb módja.
 * Közvetlen csatlakozással az adatokhoz az eredeti forrásadattárban a DirectQuery használatával. Ha szeretne többet megtudni a DirectQueryről, tekintse meg [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md) című részt.
 
-DirectQuery használatakor *összetett modellek* létrehozása egy Power BI-modellben lehetővé teszik, hogy (például egy *.pbix* Power BI Desktop-fájl), amely nem vagy mindkét alábbi:
+DirectQuery használata esetén *összetett modellekkel* létrehozható egy olyan Power BI-modell (például egy különálló *.pbix* Power BI Desktop-fájl), amely a következőket vagy azok közül valamelyiket elvégzi:
 
 * Egy vagy több DirectQuery-forrásból származó adatokat egyesít.
 * A DirectQuery-forrásokból származó és az importált adatokat egyesíti.
@@ -100,7 +100,7 @@ A **Mezők** listában szereplő mezők bármelyikének felhasználásával lét
 
 ![A Mezők panel](media/desktop-composite-models/composite-models_11.png)
 
-Az alábbi példa megjeleníti az Általános eset egy *dimenzió* tábla – például *termék* vagy *ügyfél* –, amely ki van bővítve valahol máshol importált további adatokat. A táblázatok a DirectQuery használatával is csatlakozhatnak különböző forrásokhoz. A példát továbbgondolva tegyük fel, hogy az értékesítési célok (*Sales Targets*) országonként (*Country*) és időszakonként (*Period*) egy részleg egy külön adatbázisában vannak tárolva. Ezekhez az adatokhoz a szokásos módon csatlakozhat a *GetData* használatával, ahogyan az az alábbi képen látható: 
+A következő példa azt a gyakori esetet szemlélteti, amikor egy *dimenziótáblát*, amilyen a *Product* (Termék) vagy a *Customer* (Ügyfél), más helyről importált adatokkal bővítenek ki. A táblázatok a DirectQuery használatával is csatlakozhatnak különböző forrásokhoz. A példát továbbgondolva tegyük fel, hogy az értékesítési célok (*Sales Targets*) országonként (*Country*) és időszakonként (*Period*) egy részleg egy külön adatbázisában vannak tárolva. Ezekhez az adatokhoz a szokásos módon csatlakozhat a *GetData* használatával, ahogyan az az alábbi képen látható: 
 
 ![A Kezelő ablaka](media/desktop-composite-models/composite-models_12.png)
 
@@ -125,6 +125,9 @@ A tárolási mód az egyes táblázatok elemleírásán is megtekinthető.
 A DirectQueryből származó és importált táblázatokat is tartalmazó Power BI Desktop-fájlok ( *.pbix fájlok*) esetén az állapotsor úgynevezett **Vegyes** tárolási módot jelenít meg. Az állapotsorban erre a kifejezésre kattintva minden táblázat egyszerűen átállítható Importálás értékűre.
 
 A tárolási móddal kapcsolatos további információért lásd: [Tárolási mód a Power BI Desktopban (előzetes verzió)](desktop-storage-mode.md).  
+
+> [!NOTE]
+> A *Vegyes* tárolási módot a Power BI Desktopban és a Power BI szolgáltatásban használhatja.
 
 ## <a name="calculated-tables"></a>Számított táblák
 
@@ -152,7 +155,7 @@ Hasonló okokból nagy körültekintéssel kell eljárni nem megbízható forrá
 
 A DirectQuery használata során mindig figyelembe kell venni a teljesítményt, elsősorban annak érdekében, hogy a háttérbeli forrás elegendő erőforrással rendelkezzen a jó felhasználói élmény biztosításához. A jó felhasználói élmény azt jelenti, hogy a vizualizációk legfeljebb öt másodperc alatt frissülnek. Érdemes betartani [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md) című cikk teljesítménnyel kapcsolatos ajánlásait is. 
 
-Az összetett modellek használata további teljesítménnyel kapcsolatos szempontokat von maga után. Egyetlen vizualizáción lekérdezéseket küld a több forrásból, amelyek gyakran visszaküldik az eredményeket egy lekérdezést egy második adatforrás eredményezhet. Ez a következő végrehajtási módokhoz vezethet:
+Az összetett modellek használata további teljesítménnyel kapcsolatos szempontokat von maga után. Egyetlen vizualizáció több forráshoz is küldhet lekérdezéseket, és gyakran adja át a lekérdezés eredményeit egy második forrásnak. Ez a következő végrehajtási módokhoz vezethet:
 
 * **Nagy számú literál értéket tartalmazó SQL-lekérdezés**: Például egy olyan vizualizáció, amely a teljes értékesített mennyiséget (*Sales Amount*) kéri a termékmenedzserek (*Product Managers*) egy adott köréhez, először ki kell keresnie az adott termékmenedzserekhez tartozó termékeket (*Products*). Ennek a folyamatnak végbe kell mennie, mielőtt a vizualizáció elküldi azt az SQL-lekérdezést, amely az összes termékazonosítót tartalmazza egy *WHERE* záradékban.
 
@@ -160,7 +163,7 @@ Az összetett modellek használata további teljesítménnyel kapcsolatos szempo
 
 * **Több SQL-lekérdezés, csoportosítási szempontonként egy**: Ha az aggregáció a **DistinctCount** függvényt használja, és egy másik forrásban lévő oszlop alapján van csoportosítva, és ha a külső forrás nem támogatja a csoportosítást meghatározó nagy számú literál érték hatékony átadását, szükségessé válhat csoportosítási szempontonként külön SQL-lekérdezést küldeni. 
 
-   Például egy olyan vizualizációnak, amely a *CustomerAccountNumber* mező egyedi értékeinek számát kéri (az SQL Serveren lévő táblából) termékmenedzserenként (*Product Manager*) (a munkafüzetből importálva), meg kellene adnia a *Product Managers* táblázat adatait az SQL Servernek elküldött lekérdezésben. Más erőforrások (például a Redshift) használatával ez a művelet nem végezhető el. Ehelyett lenne egy SQL-lekérdezést küld *értékesítési vezető* – néhány gyakorlati korlátig, ekkor a lekérdezés meghiúsulna. 
+   Például egy olyan vizualizációnak, amely a *CustomerAccountNumber* mező egyedi értékeinek számát kéri (az SQL Serveren lévő táblából) termékmenedzserenként (*Product Manager*) (a munkafüzetből importálva), meg kellene adnia a *Product Managers* táblázat adatait az SQL Servernek elküldött lekérdezésben. Más erőforrások (például a Redshift) használatával ez a művelet nem végezhető el. Ehelyett *Sales Manager* értékenként egy SQL-lekérdezés lenne elküldve egy adott gyakorlati korlátig, amely felett a lekérdezés sikertelen lenne. 
 
 Ezen esetek mindegyike befolyásolja a teljesítményt, és a pontos részletek adatforrásonként változnak. A két forrást összekötő kapcsolatban használt oszlopok számossága alacsony (néhány ezer), azonban ennek a teljesítményt nem szabad befolyásolnia. A számosság növekedésével egyre több figyelmet kell fordítani a végső teljesítményre gyakorolt hatásra. Ezt az útmutatást használhatja alapelvként. 
 
@@ -168,9 +171,9 @@ A *több a többhöz* kapcsolatok használata ráadásul azzal jár, hogy minden
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 
-Ebben a kiadásban a modellek összetett mutat be, hogy néhány korlátozás vonatkozik:
+Az összetett modelleknek erre a kiadására néhány korlátozás érvényes:
 
-Jelenleg [növekményes frissítés](service-premium-incremental-refresh.md) csatlakozik az SQL-, Oracle és Teradata adatforrásokat csak összetett modellek esetén támogatott.
+Összetett modellek esetén jelenleg a [növekményes frissítést](service-premium-incremental-refresh.md) csak az SQL, az Oracle és a Teradata típusú adatforrások támogatják.
 
 Az alábbi Live Connect- (többdimenziós) források nem használhatók összetett modellekkel:
 

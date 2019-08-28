@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 08/19/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 92b515cfa9c4d3ca796d48ac90415cc0d1d5d5a9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 747ff7788ce30f5d4f61c48cc70a737bc74cd612
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565387"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654268"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premium – gyakori kérdések
 
@@ -51,7 +51,7 @@ Igen. A Power BI Pro szükséges a jelentések közzétételéhez, az irányít�
 **Láthatnék egy példát arra, hogyan elégítheti ki a Power BI Pro és a Power BI Premium együttes használata egy cég modern üzletiintelligencia-igényeit?**  
 A következő példákban felvázoljuk, miként elégítheti ki cége üzletiintelligencia-igényeit a Power BI Pro és a Power BI Premium együttes használatával.
 
-| 1. példa | 2. példa | 3. példa | 4. példa |
+| 1\. példa | 2\. példa | 3\. példa | 4\. példa |
 | --- | --- | --- | --- |
 | Egy cégnek vagy részlegnek arra van szüksége, hogy minden egyes alkalmazott hozzáférjen egy önkiszolgáló üzletiintelligencia-szolgáltatáshoz, és képesek legyenek együttműködni egymással (irányítópultok megosztása, alkalmi elemzések végrehajtása és jelentések közzététele). | Egy cég vagy részleg felhasználóinak egy része önkiszolgáló üzleti intelligencia-szolgáltatást és együttműködést igényel, míg egyes felhasználók csak az üzletiintelligencia-tartalmak felhasználói lennének. | Egy cég vagy részleg felhasználóinak önkiszolgáló üzletiintelligencia-szolgáltatásra és együttműködési eszközökre van szükségük, ezenkívül a helyszínen kell tárolniuk a jelentéseiket. | Egy pénzügyi részleg több nagy méretű adatkészlet elemzésén dolgozik egy pénzügyi jelentés előkészítése keretében, a számítási feladatok elvégzéséhez pedig nem szabályozott, elkülönített kapacitásra van szüksége. |
 | **Megoldás:**<br/><br/>1. Power BI Pro minden felhasználó számára<br/><br/>2. Meg kell vizsgálni, hogy a Power BI Premium beszerzése milyen lehetőségeket teremtene – lásd a további példákat |**Megoldás:**<br/><br/>1. Power BI Pro az önkiszolgáló üzleti intelligenciát és együttműködést igénylő felhasználók számára<br/><br/>2. A Power BI Premium hozzáadása után az üzletiintelligencia-tartalom szétosztható azon felhasználók között, akik csak a fogyasztói annak |**Megoldás:**<br/><br/>1. Power BI Pro az önkiszolgáló üzleti intelligenciát és együttműködést igénylő felhasználók számára<br/><br/>2. A Power BI Premium hozzáadását követően a jelentések közzétehetők a helyszínen, és tetszőleges ütemben továbbíthatók a felhőbe |**Megoldás:**<br/><br/>1. Power BI Pro a pénzügyi részleg összes felhasználója számára<br/><br/>2. A Power BI Premium hozzáadásával a felhőben elérhető dedikált erőforrásokat a pénzügyi részleg kizárólagos rendelkezésére lehet bocsátani, ami jobb skálázhatóságot és teljesítményt eredményez |
@@ -76,9 +76,9 @@ A Power BI Premium a Power BI Pro bővítménye. Az Office 365 E5 tartalmazza a 
 
 **Mi a Power BI jelentéskészítő kiszolgáló? Elérhetővé teszi a Power BI-t a helyszínen is?**
 
-A Power BI jelentéskészítő kiszolgáló egy helyszíni kiszolgáló, amely lehetővé teszi interaktív Power BI-jelentések és lapokra tördelt jelentések használatát és kiosztását a helyszínen, teljes egészében a cég tűzfala mögött. A Power BI jelentéskészítő kiszolgáló a Power BI Premium részeként, illetve az SQL Server Enterprise Editiont Frissítési Garanciával használó ügyfelek számára díjtalan juttatásként érhető el. További információért forduljon Microsoft-képviselőjéhez.
+A Power BI jelentéskészítő kiszolgáló egy helyszíni kiszolgáló, amely lehetővé teszi interaktív Power BI-jelentések és lapokra tördelt jelentések használatát és kiosztását a helyszínen, teljes egészében a cég tűzfala mögött. A Power BI jelentéskészítő kiszolgáló a Power BI Premium részeként, illetve az SQL Server Enterprise Editiont Frissítési Garanciával használó ügyfelek számára díjtalan juttatásként érhető el. További információ a licencelésről: [A Power BI jelentéskészítő kiszolgáló licencelése](report-server/get-started.md#licensing-power-bi-report-server). További információért forduljon Microsoft-képviselőjéhez.
 
-A Power BI Premium használatával a cég által a felhőben fenntartott számú virtuális magot a helyszínen is telepíteni lehet a Power BI jelentéskészítő kiszolgálóval, és nem szükséges megosztani a kapacitást. A cégek a felhőbe menthetik a Power BI-tartalmakat, illetve a Power BI jelentéskészítő kiszolgálóval a helyszínen tárolhatják azokat, és tetszőleges ütem szerint tölthetik fel a tartalmakat a felhőbe.
+A Power BI Premiummal a cég által a felhőben fenntartott számú virtuális magot a helyszínen is telepíteni lehet a Power BI jelentéskészítő kiszolgálóval, és nem szükséges megosztani a kapacitást. A cégek a felhőbe menthetik a Power BI-tartalmakat, illetve a Power BI jelentéskészítő kiszolgálóval a helyszínen tárolhatják azokat, és tetszőleges ütem szerint tölthetik fel a tartalmakat a felhőbe.
 
 A további tudnivalókért lásd: [Power BI jelentéskészítő kiszolgáló használatának első lépéseit](report-server/get-started.md) ismertető cikket.
 

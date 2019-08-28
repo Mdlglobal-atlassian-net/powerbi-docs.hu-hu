@@ -9,14 +9,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: df8a7b2f8564c8862a5c2db3177df42640ce295d
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: bb8c0582e08d8e1e05c78c30df0b59bd89aafbd0
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68996059"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985784"
 ---
-# <a name="understand-a-star-schema-and-the-importance-for-power-bi"></a>A csillagséma és a Power BI-ban játszott szerepének a bemutatása
+# <a name="understand-star-schema-and-the-importance-for-power-bi"></a>A csillagséma és a Power BI-ban játszott szerepének a bemutatása
 
 Ez a cikk a Power BI Desktopot használó adatmodellezőknek szól. Ismerteti a csillagséma tervezését és annak jelentőségét a teljesítményre és használhatóságra optimalizált Power BI-adatmodellek fejlesztésében.
 
@@ -66,7 +66,7 @@ Egy Power BI-modellben a csillagséma-kialakítással kapcsolatos sok további f
 
 Csillagséma kialakításánál a **mérték** egy táblabeli oszlopot jelent, amely összesítendő adatokat tartalmaz.
 
-A Power BI-modellekben a **mérték** definíciója más, de ehhez hasonló. Egy [adatelemzési kifejezésként (DAX)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference) megírt képlet, amely elvégzi az összesítést. A mértékkifejezések gyakran hasznosítanak olyan összesítési DAX-függvényeket, mint a SUM, MIN, MAX, AVERAGE stb., így skaláris értéket állítva elő a lekérdezés idejére (az értékek soha nincsenek a modellben tárolva). A mértékkifejezések egy oszlop egyszerű összegzésétől olyan kidolgozott képletekig terjedhetnek, amelyek felülírják a szűrési környezetet és/vagy a kapcsolatok továbbítását. További információt [A DAX alapjai a Power BI Desktopban](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics) című cikkben találhat. További információ hivatkozás?
+A Power BI-modellekben a **mérték** definíciója más, de ehhez hasonló. Egy [adatelemzési kifejezésként (DAX)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference) megírt képlet, amely elvégzi az összesítést. A mértékkifejezések gyakran hasznosítanak olyan összesítési DAX-függvényeket, mint a SUM, MIN, MAX, AVERAGE stb., így skaláris értéket állítva elő a lekérdezés idejére (az értékek soha nincsenek a modellben tárolva). A mértékkifejezések egy oszlop egyszerű összegzésétől olyan kidolgozott képletekig terjedhetnek, amelyek felülírják a szűrési környezetet és/vagy a kapcsolatok továbbítását. További információt [A DAX alapjai a Power BI Desktopban](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics) című cikkben találhat.
 
 Fontos tudnivaló, hogy a Power BI-modellek egy másféle összegzési módot is támogatnak. Bármely – általában numerikus – oszlop összegezhető jelentésbeli vizualizáció vagy Q&A használatával. Ez kényelmes megoldás a modellfejlesztők számára, hiszen sokszor szükségtelenné teszi a mértékek létrehozását. Az Adventure Works viszonteladói értékesítéseinek **Értékesítési összeg** oszlopa például többféleképpen összesíthető (összeg, darabszám, átlag, medián, minimum, maximum stb.) anélkül, hogy minden lehetséges összesítési típushoz külön mértéket kellene létrehozni.
 

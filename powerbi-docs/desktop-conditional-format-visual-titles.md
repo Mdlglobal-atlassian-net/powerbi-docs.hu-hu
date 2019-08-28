@@ -10,12 +10,12 @@ ms.topic: reference
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b4e134ef6f8da43a1856c8a5458c8c09b2c42b5
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 7917edc17bd93d96c22641b14c4c70bfe3222e10
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522183"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621278"
 ---
 # <a name="expression-based-titles-in-power-bi-desktop"></a>Kifejezésalapú címek a Power BI Desktopban
 
@@ -57,7 +57,7 @@ A modellben létrehozott mezőhöz tartozó DAX-kifejezés létrehozása után a
 
 A mező kiválasztásához és alkalmazásához nyissa meg a **Vizualizációk** panelt. A **Formázás** területen válassza a **Cím** lehetőséget a vizualizáció címére vonatkozó beállítások megjelenítéséhez. 
 
-Ha jobb gombbal a **Title text** (Cím szövege) elemre kattint, megjelenik egy helyi menü, amelyből kiválaszthatja az ***fx*Conditional formatting** (Feltételes formázás) elemet. Ha erre a menüelemre kattint, megjelenik egy **Cím szövege** párbeszédpanel. 
+Ha jobb gombbal a **Title text** (Cím szövege) elemre kattint, megjelenik egy helyi menü, amelyből kiválaszthatja az **<em>fx</em>Conditional formatting** (Feltételes formázás) elemet. Ha erre a menüelemre kattint, megjelenik egy **Cím szövege** párbeszédpanel. 
 
 ![A Cím szövege párbeszédpanel képernyőképe](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 

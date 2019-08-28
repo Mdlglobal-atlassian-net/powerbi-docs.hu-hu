@@ -7,25 +7,24 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 08/21/2019
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: c743f56de101cb63db2357acf869aba80162c181
-ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.openlocfilehash: 4f3c709c0ea699c0c9ad7ebee61889e6c7bceef8
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559030"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985756"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Növekményes frissítés a Power BI Premium szolgáltatásban
 
 A növekményes frissítés lehetővé teszi a rendkívül nagyméretű adatkészletek használatát a Power BI Premium szolgáltatásban az alábbi előnyökkel:
 
-- **Gyorsabb frissítés** – Csak a módosult adatokat szükséges frissíteni. Frissítheti például egy 10 éves adatkészletnek csak az utolsó öt napját.
-
-- **Megbízhatóbb frissítés** – Nem szükséges a továbbiakban hosszú futású kapcsolatokat fenntartani alacsony megbízhatóságú forrásrendszerekkel.
-
-- **Csökkentett erőforrás-felhasználás** – A kevesebb frissítendő adat csökkenti a frissítési művelet által igényelt memóriamennyiséget és más erőforrásokat.
+> [!div class="checklist"]
+> * **Gyorsabb frissítés** – Csak a módosult adatokat szükséges frissíteni. Frissítheti például egy 10 éves adatkészletnek csak az utolsó öt napját.
+> * **Megbízhatóbb frissítés** – Nem szükséges a továbbiakban hosszú futású kapcsolatokat fenntartani alacsony megbízhatóságú forrásrendszerekkel.
+> * **Csökkentett erőforrás-felhasználás** – A kevesebb frissítendő adat csökkenti a frissítési művelet által igényelt memóriamennyiséget és más erőforrásokat.
 
 ## <a name="configure-incremental-refresh"></a>A növekményes frissítés konfigurálása
 
@@ -51,9 +50,13 @@ A paraméterek definiálása után alkalmazhatja a szűrőt úgy, hogy az **Egy�
 
 ![Egyéni szűrő](media/service-premium-incremental-refresh/custom-filter.png)
 
-A sorokat úgy kell szűrnie, hogy az oszlopérték *nem korábbi, mint* szűrőjéhez a **RangeStart** paramétert választja, a *korábban, mint* szűrőjéhez pedig a **RangeEnd** paramétert.
+A sorokat úgy kell szűrnie, hogy az oszlopérték *nem korábbi, mint* szűrőjéhez a **RangeStart** paramétert választja, a *korábban, mint* szűrőjéhez pedig a **RangeEnd** paramétert. Egyéb szűrőkombinációk a sorok kétszer számolását eredményezhetik.
 
 ![Sorok szűrése](media/service-premium-incremental-refresh/filter-rows.png)
+
+> [!IMPORTANT]
+> Ellenőrizze, hogy a lekérdezések **RangeStart** vagy **RangeEnd** eleme tartalmaz-e egyenlőségjelet (=). Mindkettőben nem szerepelhet. Ha az egyenlőségjel (=) mindkét paraméterben szerepel, egy sor két partíció feltételeinek is megfelelhet, amely ismétlődő adatokat eredményez a modellben. Például:  
+> A \#"Filtered Rows" = Table.SelectRows(dbo_Fact, each [OrderDate] **>= RangeStart** and [OrderDate] **<= RangeEnd**) ismétlődő adatokat eredményezhet.
 
 > [!TIP]
 > A paraméterek adattípusának dátum/időnek kell lennie, de átkonvertálhatja őket, hogy megfeleljenek az adatforrás követelményeinek. Az alábbi Power Query-függvény például átkonvertálja a dátum/idő értéket oly módon, hogy az egész szám típusú helyettes kulcsot alkosson *ééééhhnn* formátumban, melynek használata elterjedt gyakorlat az adatraktárakban. A függvényt a szűrési lépéssel hívhatja meg.
@@ -152,7 +155,7 @@ Ezután készen áll a modell frissítésére. Az első frissítés tovább tart
 
 A [frissítéssel kapcsolatos hibák elhárítását tárgyaló cikkünk](https://docs.microsoft.com/power-bi/refresh-troubleshooting-refresh-scenarios) kitér rá, hogy a Power BI időtúllépés miatt leállíthatja a frissítési műveleteket. A lekérdezéseket emellett az adatforrás alapértelmezett időtúllépési beállítása is korlátozhatja. A legtöbb relációs forrás támogatja az időtúllépési érték M kifejezésben való felülbírálását. Az alábbi kifejezés például az [SQL Server data-access függvényével](https://msdn.microsoft.com/query-bi/m/sql-database) 2 órára állítja az időtúllépést. A szabályzatban megadott tartomány minden egyes időszaka elküld egy lekérdezést, mely tartalmazza ezt az időtúllépési beállítást.
 
-```
+```powerquery-m
 let
     Source = Sql.Database("myserver.database.windows.net", "AdventureWorks", [CommandTimeout=#duration(0, 2, 0, 0)]),
     dbo_Fact = Source{[Schema="dbo",Item="FactInternetSales"]}[Data],
@@ -164,3 +167,4 @@ in
 ## <a name="limitations"></a>Korlátozások
 
 Jelenleg az [összetett modellek](desktop-composite-models.md) esetében a növekményes frissítés csak az SQL Server, az Azure SQL Database, az SQL Data Warehouse, az Oracle és a Teradata adatforrásokhoz támogatott.
+

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6a1ce47d7af41df51b7c439240f3e9db0dd28397
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: 260860ba1ac875b097b12a1ac32ef09e983fe08d
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757715"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655156"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -188,7 +188,7 @@ A felügyeleti portálon azt is szabályozhatja, hogy mely felhasználók rendel
 
 ### <a name="share-content-with-external-users"></a>Tartalom megosztása külső felhasználókkal
 
-A munkahelyi felhasználók külső felhasználókkal oszthatnak meg irányítópultokat. [További információ](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
+A munkahelyi felhasználók külső felhasználókkal oszthatnak meg irányítópultokat. További információ a [külső megosztásról](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![Külső felhasználók beállítás](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 

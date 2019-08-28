@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 08/16/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0af278171a00c792e466bbd0e21a3efb5ffa8962
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 93b3be374707b3e49f87d0875795d160f4530410
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389728"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655004"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>R-vizualizációk létrehozása a Power BI szolgáltatásban
 A Power BI szolgáltatás támogatja az R-parancsfájlokkal létrehozott vizualizációk megtekintését és használatát. Az R-parancsfájlokkal létrehozott, gyakran *R-vizualizációknak* nevezett vizualizációk fejlett adatformázást és elemzéseket, például előrejelzéseket kínálnak az R gazdag elemzési és megjelenítési lehetőségeinek kihasználásával.
 
 > [!NOTE]
-> Az [R programozási nyelv](https://www.r-project.org/) a statisztikusok, adatelemzők és üzleti elemzők körében legelterjedtebb programozási nyelvek egyike. Az R nyelv nyílt forráskódját gondozó közösség a széles körben használt R-felhasználói csoportok mellett több mint 7000 bővítménycsomagot is kínál. Az R-nek a Power BI szolgáltatással telepített verziója a következő: *Revolution R Open 3.2.2.*
+> Az [R programozási nyelv](https://www.r-project.org/) a statisztikusok, adatelemzők és üzleti elemzők körében legelterjedtebb programozási nyelvek egyike. Az R nyelv nyílt forráskódját gondozó közösség a széles körben használt R-felhasználói csoportok mellett több mint 7000 bővítménycsomagot is kínál. Az R-nek a Power BI szolgáltatással telepített verziója a következő: *Microsoft R 3.4.4.*
 > 
 > 
 

@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: overview
-ms.date: 05/30/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: d6c9eb47d5f88a2d835c1ba6835e871b0c64bf1c
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: 0e12d110708c955e0c63e11f7578523222375448
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324776"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654998"
 ---
 # <a name="what-is-power-bi"></a>A Power BI bemutatása
 A **Power BI** olyan szoftverszolgáltatások, alkalmazások és összekötők gyűjteménye, amellyel az egymástól független adatforrásokat egymással együttműködő, vizuálisan megragadó, interaktív elemzésekké alakítja. Az adatok lehetnek akár egy Excel-táblában, vagy felhőalapú és helyszíni hibrid adattárházak gyűjteményében is. A Power BI-jal egyszerűen csatlakozhat az adatforrásokhoz, vizuálisan megjelenítheti és feltárhatja a fontos részeket, és ezt bárkivel meg is oszthatja.
@@ -25,11 +25,11 @@ A Power BI használható egyszerű és gyors módon – készíthet például gy
 
 ## <a name="the-parts-of-power-bi"></a>A Power BI részei
 Power BI a következőkből áll: 
-- Egy **Power BI Desktop** nevű asztali Windows-alkalmazás
-- Egy online SaaS-szolgáltatás (más néven *szolgáltatott szoftver*), melynek **Power BI szolgáltatás** a neve 
-- Power BI **mobilalkalmazások** Windows, iOS és Android rendszerű eszközökre
+- Egy **Power BI Desktop** nevű asztali Windows-alkalmazás.
+- Egy online SaaS-szolgáltatás (más néven *szolgáltatott szoftver*), melynek **Power BI szolgáltatás** a neve. 
+- Power BI **mobilalkalmazások** Windows, iOS és Android rendszerű eszközökre.
 
-![Power BI Desktop, szolgáltatás, mobil](media/power-bi-overview/power-bi-blocks.png)
+![Power BI Desktop, szolgáltatás, mobil](media/power-bi-overview/power-bi-overview-blocks.png)
 
 Ez a három elem – a &mdash;Power BI Desktop, a szolgáltatás és a mobilalkalmazások&mdash; – úgy lett tervezve, hogy a szerepkörük szerinti leghatékonyabb módon segítse a felhasználókat az üzleti elemzések létrehozásában, megosztásában és felhasználásában.
 

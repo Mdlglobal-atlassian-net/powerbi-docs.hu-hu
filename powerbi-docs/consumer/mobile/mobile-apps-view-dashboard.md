@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: 4629b78379ba87d58c31f8102b855e1f62565abd
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: e5e8df2be443b215a02f196c4f676af1cbff6275
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665460"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654625"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Irányítópultok és jelentések megtekintése a Power BI-mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -31,7 +31,7 @@ Az irányítópultok betekintést nyújtanak és hozzáférést biztosítanak a 
 Az irányítópultok és jelentések mobileszközön való megtekintéséhez létre kell hoznia őket, vagy csatlakozna kell hozzájuk egy webböngészőből. 
 
 1. Nyissa meg a Power BI szolgáltatást ([https://www.powerbi.com](https://www.powerbi.com)), és [hozzon létre egy fiókot](../../service-self-service-signup-for-power-bi.md).
-2. [Létrehozhatja saját Power BI-irányítópultjait és -jelentéseit](../../service-get-started.md), vagy csatlakozhat meglévő [Power BI alkalmazásokhoz](../../service-connect-to-services.md), és számos szolgáltatást érhet el, például a [Microsoft Dynamics CRM](../../service-connect-to-microsoft-dynamics-crm.md) vagy az [Adobe Analytics](../../service-connect-to-adobe-analytics.md) szolgáltatást.
+2. [Létrehozhatja saját Power BI-irányítópultjait és -jelentéseit](../../service-get-started.md), vagy csatlakozhat meglévő [Power BI alkalmazásokhoz](../../service-connect-to-services.md), és számos szolgáltatást érhet el, például a [Microsoft Dynamics CRM-et](../../service-connect-to-microsoft-dynamics-crm.md).
 
 Így néz ki egy Power BI-irányítópult a Power BI szolgáltatásban:
 

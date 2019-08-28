@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/22/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 591a837bb085ba901316e672112b568923995718
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: 11de32b8119e8b6922dcc1a971750e4256812932
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590536"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654752"
 ---
 # <a name="using-directquery-in-power-bi"></a>DirectQuery használata a Power BI-ban
 Számos különböző adatforrást kapcsolhat össze a **Power BI Desktop** vagy a **Power BI szolgáltatás** használatával, és ezeket az adatkapcsolatokat többféleképpen is létrehozhatja. *Importálhat* adatokat a Power BI-ba, ez az adatok lekérésének leggyakoribb módja, vagy közvetlenül is csatlakozhat az eredeti forrásadattárukban lévő adatokhoz, ez az eljárás **DirectQuery** néven ismert. Ez a cikk a **DirectQuery** szolgáltatást és annak képességeit mutatja be:
@@ -140,11 +140,8 @@ A **DirectQuery** használatával ezen modellbővítések nagy részét el lehet
 * **Számított oszlopok korlátozásai:** A számított oszlopoknak soron belülinek kell lenniük, azaz csak ugyanazon tábla más oszlopainak értékeire hivatkozhatnak, összesítési függvények használata nélkül. Emellett a DAX skaláris függvények (pl. LEFT ()) közül csak azok engedélyezettek, amelyek egyszerűen leküldhetők az alapul szolgáló forrás felé – hogy ezek melyek, az a forrás konkrét képességeitől függ. A nem támogatott függvények nem lesznek felsorolva az automatikus kiegészítési lehetőségek között a számított oszlop DAX-függvényeinek szerkesztésekor, és ha használni próbálja őket, hibát eredményeznek.
 * **A szülő–gyermek DAX-függvények nem támogatottak:** A DirectQuery modellben nem használható a DAX PATH() függvénycsalád, amely általában a szülő–gyermek struktúrákat kezeli (például fiókok ábrázolásakor vagy az alkalmazotti hierarchiákban).
 * **A számított táblák nem támogatottak:** A DirectQuery módban nem támogatott a számított táblázatok meghatározása egy DAX-kifejezés használatával.
-* **A kapcsolatok szűrése egy irányra korlátozódik:** A DirectQuery használatakor nem lehet a kapcsolatok keresztszűrésének irányánál a „Mindkettő” értéket beállítani. Az alábbi három tábla esetében például nem lehet olyan vizualizációt létrehozni, amely megjeleníti a Customer[Gender] \(Ügyfél[Nem]) értékeket, és az ezekhez tartozó Product[Category] \(Termék[Kategória]) értékeket. Az ilyen kétirányú szűrés használatát [ez a tanulmány](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) ismerteti részletesebben (a tanulmány az SQL Server Analysis Services kontextusában hoz példákat, de az alapvető pontok a Power BI-ra is ugyanúgy érvényesek).
-  
-  ![](media/desktop-directquery-about/directquery-about_01.png)
-  
-  Ez a korlátozás szintén a teljesítményproblémák miatt áll fenn. Ennek különösen fontos alkalmazási esete az, amikor a jelentés sorszintű biztonsági intézkedéseket tartalmaz, mivel gyakran „sok–sok” típusú kapcsolat áll fenn a felhasználók és az általuk hozzáférhető entitások között, ennek fenntartásához pedig szükséges a kétirányú szűrés. Azonban a DirectQuery-modellek kétirányú szűrését megfontoltan kell használni, számolva a teljesítményre gyakorolt esetleges negatív hatással.  
+* **Kapcsolatszűrés:** A kétirányú szűrés használatát [ez a tanulmány](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) ismerteti részletesebben (a tanulmány az SQL Server Analysis Services kontextusában hoz példákat, de az alapvető pontok a Power BI-ra is ugyanúgy érvényesek).
+
 * **Nincs fürtszolgáltatás:** A DirectQuery használatakor nem használható a Fürtszolgáltatás funkció csoportok automatikus megkereséséhez.
 
 ### <a name="reporting-limitations"></a>Jelentéskészítési korlátozások

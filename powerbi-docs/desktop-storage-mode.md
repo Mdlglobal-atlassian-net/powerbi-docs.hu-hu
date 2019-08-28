@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f84e2f95c8ae209828eb1c21f34253015e07aefa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 67cd57a981f7c1fcab118652dc5424fa935ecd13
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61364358"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654737"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Tárolási mód a Power BI Desktopban
 
@@ -63,6 +63,10 @@ A tárolási mód értéke háromféle lehet:
 
 Egy tábla **Importálás** értékűre állítása *visszafordíthatatlan* művelet. Ezt a tulajdonságot nem lehet visszaállítani DirectQuery vagy Kettős értékre.
 
+> [!NOTE]
+> A *Kettős* tárolási módot a Power BI Desktopban és a Power BI szolgáltatásban használhatja.
+
+
 ## <a name="constraints-on-directquery-and-dual-tables"></a>A DirectQuery és Kettős táblákra vonatkozó megkötések
 
 A Kettős táblákra a DirectQuery-táblákéval azonos funkcionális megkötések érvényesek. Ezek közé tartozik az M átalakítások korlátozása és a DAX-függvények korlátozott használata a számított oszlopokban. Bővebb információért olvassa el [a DirectQuery használatának következményeit](desktop-directquery-about.md#implications-of-using-directquery) bemutató cikket.
@@ -85,7 +89,7 @@ A propagálási logika csak az **egy-a többhöz** kapcsolatok „egy” oldalá
 ## <a name="storage-mode-usage-example"></a>Példa a tárolási mód használatára
 Folytatva az előző szakaszban megkezdett példát, tegyük fel, hogy a következő tárolásimód-beállításokat alkalmaztuk:
 
-| Tábla                   | Tárolási mód         |
+| Táblázat                   | Tárolási mód         |
 | ----------------------- |----------------------| 
 | *Sales*                 | DirectQuery          | 
 | *SurveyResponse*        | Importálás               | 

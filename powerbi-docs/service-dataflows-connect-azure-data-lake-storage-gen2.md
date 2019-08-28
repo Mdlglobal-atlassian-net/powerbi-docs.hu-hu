@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: dee2ff4376242883d30f606e687184c0dde43ffe
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 8000397e5d8f26847349c35b541aa82c5907292e
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523488"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621236"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)
 
@@ -177,6 +177,7 @@ Ez a funkció előzetes verziójú, és a viselkedése a megjelenés időpontjá
 * Alapértelmezés szerint csak az Azure Data Lake Storage Gen2-ben tárolt adatfolyam tulajdonosa férhet hozzá az adatfolyam adataihoz. Az Azure-ban tárolt adatfolyamokhoz további személyeknek úgy adhat hozzáférést, hogy hozzáadja őket az adatfolyam CDM-mappájához 
 * Hivatkozott entitásokkal csak akkor hozható létre adatfolyam, ha ugyanabban a tárfiókban vannak tárolva
 * Megosztott Power BI-kapacitásokban lévő helyszíni adatforrások nem támogatottak a vállalati data lake-ben tárolt adatfolyamokban
+* Az ADLS Gen 2 nem törli automatikusan a pillanatképeket. Ha tárhelyet szeretne felszabadítani, egy Azure-függvény létrehozásával rendszeresen törölheti a régi pillanatképeket.
 
 Létezik néhány ismert probléma is. Ezeket az alábbi szakasz ismerteti.
 

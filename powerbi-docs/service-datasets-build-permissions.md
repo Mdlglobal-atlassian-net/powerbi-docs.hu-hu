@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 17c3322ed5f24d106412bafb9c4235ee15a626aa
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: c5b880132255fbdf37996273dc6c70029e548df6
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530511"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654899"
 ---
 # <a name="share-a-dataset-preview"></a>Adathalmaz megosztása (előzetes verzió)
 
@@ -42,7 +42,7 @@ Ha *adatmodelleket* hoz létre a Power BI Desktopban, *adathalmazokként* megosz
 
 ## <a name="build-permissions-for-shared-datasets"></a>Megosztott adathalmazokra vonatkozó összeállítási engedélyek
 
-Az Összeállítási engedély típus csak adathalmazokra értelmezhető. Az ezzel rendelkező felhasználók új tartalmat, például jelentéseket, irányítópultokat, a Q&A-ból rögzített csempéket és Insights-felfedezéseket állíthatnak össze az adathalmaz alapján. Az adathalmazból a Power BI-on kívül, például Excel-munkalapokon is készíthetnek új tartalmat az Elemzés az Excelben funkció, XMLA és exportálás használatával.
+Az Összeállítási engedély típus csak adathalmazokra értelmezhető. Az ezzel rendelkező felhasználók új tartalmat, például jelentéseket, irányítópultokat, a Q&A-ból rögzített csempéket és Insights-felfedezéseket állíthatnak össze az adathalmaz alapján. Az adathalmazból a Power BI-on kívül, például Excel-munkalapokon is készíthetnek új tartalmat az Elemzés az Excelben funkció, az XMLA és a mögöttes adatok exportálása használatával.
 
 A felhasználók többféle módon is megkaphatják az Összeállítási engedélyt:
 
@@ -72,7 +72,7 @@ A részletesebben beállítható Összeállítás engedéllyel megadhatja, hogy 
 
 Ha az adathalmazt egy annak munkaterületén kívüli jelentés használja, akkor az adathalmazt nem törölheti. Ehelyett hibaüzenet jelenik meg.
 
-Az Összeállítási engedélyeket el is távolíthatja. Ilyen esetben azok, akiknek az engedélyét visszavonta, továbbra is látni fogják a jelentést, de már nem szerkeszthetik azt.
+Az Összeállítási engedélyeket el is távolíthatja. Ilyen esetben azok, akiknek az engedélyét visszavonta, továbbra is látni fogják a jelentést, de már nem szerkeszthetik azt, és nem exportálhatják a mögöttes adatokat. A csak olvasási engedéllyel rendelkező felhasználók továbbra is exportálhatják az összegzett adatokat. 
 
 ## <a name="track-your-dataset-usage"></a>Adathalmaz használatának nyomon követése
 

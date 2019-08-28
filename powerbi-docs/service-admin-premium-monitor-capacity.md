@@ -10,25 +10,25 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 0ef74a776e7220477a36d652ce1a48ebbf60c267
-ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
+ms.openlocfilehash: b57f444f11c9592d80ffccf7a80be5fa9c7dcf3b
+ms.sourcegitcommit: c2197c3ad1d747b4ad490ab75771a0d32d0ae208
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "68362718"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70008114"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Prémium szintű kapacitások monitorozása az alkalmazással
 
 A kapacitások figyelése elengedhetetlen a megalapozott döntések meghozatalához, hogy a prémium szintű kapacitás erőforrásait a legjobban használhassa ki. A kapacitás monitorozható a felügyeleti portálon vagy a **Power BI Premium kapacitásmetrikák** alkalmazással. Ez a cikk a Prémium szintű kapacitásmetrikák alkalmazás használatát ismerteti. Az alkalmazás adja a legmélyrehatóbb információkat a kapacitások teljesítményéről. Az elmúlt hét nap átlagos használatára vonatkozó metrikák magasabb szintű áttekintésére használhatja a felügyeleti portált. A monitorozás portálon történő használatáról további információt a [Prémium szintű kapacitások monitorozása a felügyeleti portálon](service-admin-premium-monitor-portal.md) szakaszban talál.
 
-Az alkalmazás rendszeresen új szolgáltatásokkal és funkciókkal frissül. Győződjön meg róla, hogy a legújabb verziót futtatja. Ha az alkalmazásnak már telepítve van egy korábbi verziója, célszerű törölni az alkalmazások közül, majd lenyomni a CTRL+F5 billentyűket a frissítéshez. 
+Az alkalmazás rendszeresen új szolgáltatásokkal és funkciókkal frissül. Győződjön meg róla, hogy a legújabb verziót futtatja. Ha az alkalmazásnak már telepítve van egy korábbi verziója, célszerű törölni az alkalmazások közül, majd lenyomni a CTRL+F5 billentyűket a frissítéshez.
 
 ## <a name="install-the-app"></a>Az alkalmazás telepítse
 
 A [Premium Capacity Metrics alkalmazást](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics) közvetlenül is megnyithatja, de ha szeretné, ugyanúgy telepítheti is, mint bármely más alkalmazást a Power BI-ban.
 
+1. A Power BI-ban kattintson az **Alkalmazások** elemre.
 
-1. A Power BI-ban kattintson az **Alkalmazások** elemre.   
     ![Ugrás az alkalmazásokra](media/service-admin-premium-monitor-capacity/apps.png)
 
 2. A jobb oldalon kattintson az **Alkalmazások beszerzése** lehetőségre.
@@ -59,7 +59,7 @@ Az **Irányítópultok** alatt a **Power BI Premium-kapacitásmetrikák** lehet�
 
 Az irányítópult a következő metrikákat tartalmazza:
 
-#### <a name="top"></a>Fent
+#### <a name="top"></a>Felső
 
 | Mérték | Leírás |
 | --- | --- |
@@ -245,7 +245,7 @@ Az Adathalmazok oldal több *területre* van felosztva, köztük a **Frissítés
 | **Jelentésszakasz** | **Metrikák** |
 | --- | --- |
 | CPU-kihasználtság |  Számítási feladatonkénti használat a teljes CPU-kapacitás százalékában. Óránként megjelenítve az elmúlt hét napra. |
-| Memóriahasználat |  Számítási feladatonkénti memóriahasználat GB-ban (folytonos vonal) és számítási feladatonkénti korlát (pontozott vonal). Óránként megjelenítve az elmúlt hét napra. |
+| Memóriahasználat |  Számítási feladatonkénti maximális memóriahasználat egy óra alatt, GB-ban (folytonos vonal) és számítási feladatonkénti korlát (pontozott vonal). Óránként megjelenítve az elmúlt hét napra. |
 |  |  |
 
 ### <a name="ids-and-info"></a>Azonosítók és információk

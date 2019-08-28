@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7965751740384c5a5f1cc663389a559e0c1bd1c0
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: e28306532714369830df46304aa4a1ebff67bd8f
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69563666"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985643"
 ---
 # <a name="using-templates-in-power-bi-desktop"></a>Sablonok használata a Power BI Desktopban
 
@@ -70,7 +70,10 @@ A paraméterek és az adatok megadása után létrejön egy jelentés, amely az 
 Ennyi az egész. A Power BI Desktopban egyszerűen hozhat létre és használhat jelentéssablonokat, így könnyedén megismételheti egy jelentés jól sikerült elrendezését és más jellemzőit, és másokkal is megoszthatja azokat.
 
 ## <a name="next-steps"></a>Következő lépések
-A Power BI Desktop műveletek és lehetőségek széles tárházát tartalmazza. A program képességeivel kapcsolatos további információkért lásd az alábbi forrásanyagokat:
+További információ a **lekérdezési paraméterről**:
+* [Lekérdezési paraméterek használata a Power BI Desktopban](https://docs.microsoft.com/power-query/power-query-query-parameters)
+
+A Power BI Desktop emellett műveletek és lehetőségek széles tárházát tartalmazza. A program képességeivel kapcsolatos további információkért lásd az alábbi forrásanyagokat:
 
 * [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)

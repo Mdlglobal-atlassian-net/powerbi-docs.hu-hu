@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 148f4881f78b5bba9b6936f5688ba6aaea3a0145
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: 73db8f9741685549042dbaf1172e57a55a26ab36
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68346224"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654438"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>A Power BI-jelentésekben elérhető új szűrési felület
 
@@ -48,6 +48,10 @@ Az új jelentésekben alapértelmezés szerint be van kapcsolva az új szűrési
 3. A **Szűrési felület** alatt jelölje be a **Frissített szűrőpanel engedélyezése, valamint a szűrők megjelenítése a jelentés vizualizációjának fejlécében** lehetőséget.
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Új szűrők bekapcsolása meglévő jelentéshez a szolgáltatásban
+
+Ha bekapcsolta a Power BI szolgáltatás **új megjelenését** ![bekapcsolt új megjelenés](media/power-bi-report-filter/power-bi-new-look-on.png), az új szűrők automatikusan engedélyezve lesznek. Tájékozódjon tovább [a Power BI szolgáltatás új megjelenéséről](service-new-look.md).
+
+Ha nem kapcsolta be az új megjelenést, az alábbi lépésekkel továbbra is megtekintheti az új szűrőket.
 
 1. A Power BI szolgáltatásban válassza a **Jelentések** fület egy munkaterület tartalomlistájában.
 2. Keresse meg az engedélyezni kívánt jelentést, majd válassza a **Beállítások** ikont ![Jelentés beállításai ikon](media/power-bi-report-filter/power-bi-settings-icon.png) a jelentés mellett.
@@ -121,15 +125,13 @@ Ezeket az elemeket szűrőkártyákhoz is formázhatja attól függően, hogy al
 1. A jelentésben kattintson magára a jelentésre vagy a háttérre (*háttérkép*), majd a **Vizualizációk** panelen válassza a **Formátum** lehetőséget. 
     Itt találja meg a formázási lehetőségeket a jelentésoldalhoz, a háttérképhez, valamint a Szűrők panelhez és a szűrőkártyákhoz is.
 
-    ![A Formázás ikon kiválasztása](media/power-bi-report-filter/power-bi-filter-format.png)    
-
 1. Bontsa ki a **Szűrő panelt**, és állítsa be a háttér, az ikonok és a bal szegély színét a jelentésoldalhoz illően.
 
-    ![A szűrőpanel kibontása](media/power-bi-report-filter/power-bi-filter-format-pane-font.png)
+    ![A szűrőpanel kibontása](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
 1. Bontsa ki a **Szűrőkártyák** elemet, és állítsa be az **Elérhető** és az **Alkalmazott** színt és szegélyt. Ha az elérhető és az alkalmazott kártyákhoz más színt ad meg, akkor nyilvánvaló lesz, hogy mely szűrők lettek alkalmazva. 
   
-    ![A Szűrőkártyák elem kibontása](media/power-bi-report-filter/power-bi-filter-format-card-font.png)
+    ![A Szűrőkártyák elem kibontása](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
 ## <a name="theming-for-filter-pane"></a>Témák a Szűrők panelhez
 A szűrőpanel alapértelmezett beállításai témafájllal módosíthatók. Az alábbi kódrészlet-minta segít az első lépéseknél:
