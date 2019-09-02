@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: 508f304e2f5033c301db683e3b7557856fb3731b
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61386293"
@@ -48,7 +48,7 @@ Név  |Típus  |Leírás  |Csak olvasható  |Kötelező
 ---------|---------|---------|---------|---------
 név     |  Sztring        | Az oszlop felhasználó által meghatározott neve.        |  Hamis       | Igaz       
 dataType     |  Sztring       |  Támogatott [EDM-adattípusok](https://msdn.microsoft.com/library/ee382832.aspx) és korlátozások. Lásd: [Adattípus-korlátozások](#DataTypeRestrictions).      |  Hamis       | Igaz        
-formatString     | Sztring        | Egy karakterlánc, amely leírja, hogyan kell formázni az értéket a megjelenésekor. A sztringek formázásáról további információért olvassa el a [FORMAT_STRING tartalmakat](https://msdn.microsoft.com/library/ms146084.aspx).      | Hamis        | Hamis        
+formatString     | Sztring        | Egy sztring, amely leírja, hogyan kell formázni az értéket a megjelenésekor. A sztringek formázásáról további információért olvassa el a [FORMAT_STRING tartalmakat](https://msdn.microsoft.com/library/ms146084.aspx).      | Hamis        | Hamis        
 sortByColumn    | Sztring        |   Ugyanazon tábla oszlopának a sztringneve, amelyet a jelenlegi oszlop elrendezésére használ.     | Hamis        | Hamis       
 dataCategory     | Sztring        |  Az ebben az oszlopban lévő adatokat leíró adatkategóriához használható sztringérték. Néhány gyakori érték például: Address, City, Continent, Country, Image, ImageUrl, Latitude, Longitude, Organization, Place, PostalCode, StateOrProvince, WebUrl       |  Hamis       | Hamis        
 isHidden    |  Logikai érték       |  Tulajdonság, amely azt jelzi, hogy az oszlop rejtett-e a nézetben. Az alapértelmezett értéke a hamis.       | Hamis        | Hamis        
@@ -60,7 +60,7 @@ Név  |Típus  |Leírás  |Csak olvasható  |Kötelező
 ---------|---------|---------|---------|---------
 név     | Sztring        |  A mérték felhasználó által meghatározott neve.       |  Hamis       | Igaz        
 kifejezés     | Sztring        | Egy érvényes DAX-kifejezés.        | Hamis        |  Igaz       
-formatString     | Sztring        |  Egy karakterlánc, amely leírja, hogyan kell formázni az értéket a megjelenésekor. A sztringek formázásáról további információért olvassa el a [FORMAT_STRING tartalmakat](https://msdn.microsoft.com/library/ms146084.aspx).       | Hamis        | Hamis        
+formatString     | Sztring        |  Egy sztring, amely leírja, hogyan kell formázni az értéket a megjelenésekor. A sztringek formázásáról további információért olvassa el a [FORMAT_STRING tartalmakat](https://msdn.microsoft.com/library/ms146084.aspx).       | Hamis        | Hamis        
 isHidden     | Sztring        |  Ha az értéke igaz, a tábla rejtett lesz az ügyféleszközök elől.       |  Hamis       | Hamis       
 
 ## <a name="relationship"></a>Kapcsolat
