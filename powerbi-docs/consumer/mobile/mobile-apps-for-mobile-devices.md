@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 04/26/2018
 ms.author: mshenhav
 ms.custom: ''
-ms.openlocfilehash: 7f81dc1c33cf1c7cc48dfddecce81f43fd3146c4
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 40dd5a0ed03a7d6bd258de39bb9c29dcd7390cd9
+ms.sourcegitcommit: 2b340946ed5f1deedeace4071845e1720ea155c9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654332"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70064670"
 ---
 # <a name="what-are-the-power-bi-mobile-apps"></a>Mik a Power BI-mobilalkalmazások?
 A Power BI iOS, Android és Windows 10 rendszerekhez is kínál mobilalkalmazásokat. A mobilalkalmazásban a felhőbeli és helyszíni adatokhoz csatlakozhat, és használhatja ezeket az adatokat. 
@@ -23,6 +23,10 @@ A Power BI iOS, Android és Windows 10 rendszerekhez is kínál mobilalkalmazás
 ![Power BI a mobileszközökön](./media/mobile-apps-for-mobile-devices/power-bi-mobile-apps-all-up.png)
 
 Jelentéseket a Power BI Desktopban hozhat létre. Irányítópultok létrehozására, valamint irányítópultok és jelentések megtekintésére a Power BI jelentéskészítő szolgáltatást használhatja ([https://powerbi.com](https://powerbi.com)). A helyszíni Power BI-jelentéseket a [Power BI jelentéskészítő kiszolgáló](../../report-server/get-started.md) használatával nézheti meg. Mindezek a jelentések és irányítópultok elérhetőek a Power BI mobilalkalmazásokban is, függetlenül attól, hogy azok a helyszínen vagy a felhőben vannak-e. Próbálja ki ezek megtekintését és kezelését a mobileszközén – legyen az akár iOS (iPad, iPhone, iPod touch vagy Apple Watch), androidos telefon vagy táblagép, vagy egy Windows 10-es eszköz.
+
+### <a name="get-the-app-from-the-application-store"></a>Alkalmazás beszerzése az alkalmazás-áruházból 
+
+[![A Power BI megnyitása az App Store áruházban](./media/mobile-apps-for-mobile-devices/mobile-apps-app-store.png)](https://go.microsoft.com/fwlink/?LinkId=526218&clcid=0x409) [![A Power BI megnyitása a Google Play áruházban](./media/mobile-apps-for-mobile-devices/mobile-apps-google-play.png)](https://go.microsoft.com/fwlink/?LinkId=544867&clcid=0x409) [![A Power BI megnyitása a Windows Áruházban](./media/mobile-apps-for-mobile-devices/mobile-apps-windows-store.png)](https://go.microsoft.com/fwlink/?LinkId=526478&clcid=0x409)
 
 ## <a name="mobile-apps-for-different-devices"></a>Mobilalkalmazások különböző eszközökhöz
 
@@ -33,10 +37,6 @@ Jelentéseket a Power BI Desktopban hozhat létre. Irányítópultok létrehozá
 | [![Android rendszerű telefon](media/mobile-apps-for-mobile-devices/android-phone-logo-50-px.png)](mobile-android-app-get-started.md) |Az **androidos telefonokhoz** készült Power BI alkalmazással zsebre vághatja a Power BI-t, és naprakész, érintéssel vezérelhető mobil hozzáférést kaphat üzleti adataihoz. A jelentéseket [földrajzi hely alapján is szűrheti](mobile-apps-geographic-filtering.md). Azt is megteheti, hogy [beolvas egy QR-kódot androidos telefonján](mobile-apps-qr-code.md), és közvetlenül egy Power BI-irányítópultra vagy -jelentésre ugrik. <br/>[Az Androidhoz készült Power BI mobilalkalmazás](mobile-android-app-get-started.md) használatának első lépései. |
 | [![Android rendszerű táblagép](./media/mobile-apps-for-mobile-devices/android-tablet-logo-50-px.png)](mobile-android-app-get-started.md) |Ez a mobilalkalmazás számos különböző **androidos táblagépen** futtatható, így naprakész, érintéssel vezérelhető mobil hozzáférést kaphat üzleti adataihoz. Az androidos táblagépen a Power BI mobilalkalmazás úgy jeleníti meg az irányítópultokat és jelentéseket, ahogyan azokat a Power BI szolgáltatáshoz tervezték. [Megjelölheti kedvenc irányítópultjait és jelentéseit kedvencként](mobile-apps-favorites.md), így kedvenc Power BI jelentéskészítő kiszolgálójával és Reporting Services-KPI-jeivel és -jelentéseivel együtt gyorsan megtekintheti azokat. <br/>[Az Androidhoz készült Power BI mobilalkalmazás](mobile-android-app-get-started.md) használatának első lépései. |
 | [![Windows rendszerű eszközök](./media/mobile-apps-for-mobile-devices/win-10-logo-50-px.png)](../../desktop-getting-started.md) |A Windows 10-hez készült Power BI mobilalkalmazás bármilyen Windows 10-es eszközön futtatható, beleértve a Windows 10-es telefonokat is. A többi mobilalkalmazás által nyújtott szolgáltatások mellett a Windows 10-hez készült Power BI mobilalkalmazás további speciális funkciókat is kínál. Megteheti például, hogy [kitűz egy Power BI-irányítópultot a Windows 10 kezdőképernyőjére](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) a Power BI mobilalkalmazásból. Továbbá [futtathatja a Power BI szolgáltatást bemutató üzemmódban a Surface Hubon](mobile-windows-10-app-presentation-mode.md) és a Windows 10-hez készült Power BI mobilalkalmazásban. <br/>[A Windows 10-es eszközökhöz készült Power BI mobilalkalmazás](mobile-windows-10-phone-app-get-started.md) használatának első lépései. ||| 
-
-### <a name="get-the-app-from-the-application-store"></a>Alkalmazás beszerzése az alkalmazás-áruházból 
-
-[![A Power BI megnyitása az App Store áruházban](./media/mobile-apps-for-mobile-devices/mobile-apps-app-store.png)](https://go.microsoft.com/fwlink/?LinkId=526218&clcid=0x409) [![A Power BI megnyitása a Google Play áruházban](./media/mobile-apps-for-mobile-devices/mobile-apps-google-play.png)](https://go.microsoft.com/fwlink/?LinkId=544867&clcid=0x409) [![A Power BI megnyitása a Windows Áruházban](./media/mobile-apps-for-mobile-devices/mobile-apps-windows-store.png)](https://go.microsoft.com/fwlink/?LinkId=526478&clcid=0x409)
 
 ## <a name="enterprise-support-for-the-power-bi-mobile-apps"></a>Nagyvállalati támogatás a Power BI mobilalkalmazásaihoz
 A cégek a Microsoft Intune használatával kezelhetik az eszközöket és alkalmazásokat, beleértve az Android és iOS rendszerhez készült Power BI-mobilalkalmazásokat.

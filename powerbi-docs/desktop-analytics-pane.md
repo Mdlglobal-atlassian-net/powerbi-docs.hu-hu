@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3919d869c696617fa97351f352084e5a57e6b06e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 861a1d43f023e3ceba17fba90bcbc703e3195c84
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239529"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160177"
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Az Elemzés panel használata a Power BI Desktopban
 A **Power BI Desktop** **Elemzés** paneljén dinamikus *referenciavonalak* adhatók hozzá a vizualizációkhoz, így irányítva rá a figyelmet a fontos trendekre vagy elemzésekre. Az **Elemzési** panel a Power BI Desktop **Vizualizációs elemek** területén található.
@@ -84,7 +84,6 @@ A dinamikus vonalak teljes körű alkalmazása a következő vizualizációk ese
 * Területdiagram
 * Vonaldiagram
 * Pontdiagram
-* Fürtözött oszlopdiagram
 * Fürtözött sávdiagram
 
 A következő vizualizációk esetében csak az *Állandó-vonal* típus érhető el az **Elemzés** panelen:
@@ -105,7 +104,7 @@ Végül pedig a nem Descartes-féle vizualizációk esetében jelenleg nem alkal
 * Mátrix
 * Tortadiagram
 * Gyűrű
-* Tábla
+* Táblázat
 
 A percentilis vonal csak akkor áll rendelkezésre, ha importált adatokat használ a **Power BI Desktop** alkalmazásban, vagy ha élő kapcsolatban van az **Analysis Service 2016** vagy újabb verzióját vagy az **Azure Analysis Services** szolgáltatást futtató kiszolgálón található modellel vagy a Power BI szolgáltatásban egy adatkészlettel. 
 

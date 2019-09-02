@@ -939,8 +939,8 @@
           href: report-builder-tables-matrices-lists.md
         - name: Paraméterek
           href: report-builder-parameters.md
-        - name: Kifejezések
-          href: report-builder-expressions.md
+        - name: URL-paraméterek a többoldalas jelentésekben
+          href: report-builder-url-parameters.md
         - name: Példák kifejezésekre
           href: report-builder-expression-examples.md
         - name: Jelentés oldalakra tördelése
@@ -959,6 +959,8 @@
           href: paginated-reports-create-embedded-dataset.md
         - name: Paraméterek létrehozása
           href: paginated-reports-parameters.md
+        - name: Jelentésparaméter átadása URL-címben
+          href: report-builder-url-pass-parameters.md
         - name: Többoldalas jelentés közzététele
           href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI fejlesztőknek
