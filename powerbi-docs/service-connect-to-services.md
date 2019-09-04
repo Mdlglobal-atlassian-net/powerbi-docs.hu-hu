@@ -1,36 +1,39 @@
 ---
 title: Kapcsolódás a Power BI segítségével a használt szolgáltatásokhoz
-description: Számos, a például a Salesforce, a Microsoft Dynamics CRM és a Google Analytics vállalkozása működtetéséhez használt olyan szolgáltatásokhoz csatlakozhat.
+description: Könnyedén kapcsolódhat a vállalkozása működtetéséhez használt olyan szolgáltatásokhoz, mint például a Salesforce, a Microsoft Dynamics CRM és a Google Analytics.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
-ms.date: 04/19/2019
+ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 53abb5f82b75773817c72b53dd3e522cb4ccc63e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: abecc9b0c5e450d24f29230ad75417b1494e6ce9
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64578754"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160003"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Kapcsolódás a Power BI segítségével a használt szolgáltatásokhoz
-A Power bi-ban kapcsolódhat a többhöz a például a Salesforce, a Microsoft Dynamics és a Google Analytics vállalkozása működtetéséhez használt olyan szolgáltatásokhoz. A Power BI elindítja a hitelesítő adatok használatával csatlakozni a szolgáltatáshoz. Létrehoz egy Power BI *munkaterület* irányítópultot és a egy készlete, amelyek automatikusan megjelenítik adatait, és az üzleti információk vizuális elemzést biztosítanak a Power BI-jelentéseket.
+A Power BI-jal könnyedén kapcsolódhat a vállalkozása működtetéséhez használt olyan szolgáltatásokhoz, mint például a Salesforce, a Microsoft Dynamics CRM és a Google Analytics. Power BI az indulásakor kapcsolódik a szolgáltatáshoz az Ön hitelesítő adataival. Ezt követően létrehoz egy irányítópulttal rendelkező *Power BI-munkaterületet* és néhány jelentést, amelyek automatikusan megjelenítik adatait, és vizuális elemzést biztosítanak az üzletmenetről.
 
-Jelentkezzen be a Power bi-bA az összes megtekintése a [szolgáltatásokhoz csatlakozhat](https://app.powerbi.com/getdata/services). 
+>[!IMPORTANT]
+>2019. szeptember 25-én több tartalomcsomagot kivonunk. A már telepített tartalomcsomagok továbbra is működni fognak, de már nem fog tudni újabbakat telepíteni. A szolgáltatás-tartalomcsomagokat a [sablonalkalmazások](https://docs.microsoft.com/power-bi/service-template-apps-overview) váltják fel.
+
+Ha meg szeretné tekinteni azon [szolgáltatásokat, amelyekhez kapcsolódni tud](https://app.powerbi.com/getdata/services), jelentkezzen be a Power BI-ba. 
 
 ![AppSource alkalmazások](media/service-connect-to-services/overview.png)
 
-Miután telepítette az alkalmazást, megtekintheti az irányítópultot és jelentéseket az alkalmazás és a munkaterületet a Power BI szolgáltatásban ([https://app.powerbi.com](https://app.powerbi.com)). Is megtekintheti őket a Power BI-mobilalkalmazásokban. A munkaterületen módosíthatja az irányítópultot és jelentéseket a szervezet igényeinek, és majd kioszthatja a munkatársai, mint az egy *alkalmazás*. 
+Az alkalmazás telepítése után az irányítópultot és a jelentéseket a Power BI szolgáltatásban ([https://app.powerbi.com](https://app.powerbi.com)) megtekintheti az alkalmazásban és a munkaterületen. Ezen kívül megtekintheti őket a Power BI-mobilalkalmazásokban is. A munkaterületen módosíthatja az irányítópultot és a jelentéseket, hogy megfeleljen a szervezet követelményeinek, majd terjesztheti azokat *alkalmazásként* a munkatársainak. 
 
 ![Google Analytics alkalmazás a Power BI mobilalkalmazásban](media/service-connect-to-services/power-bi-service-mobile-app-240.png)
 
 ## <a name="get-started"></a>Első lépések
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-## <a name="edit-the-dashboard-and-reports"></a>Az irányítópult és jelentések szerkesztése
+## <a name="edit-the-dashboard-and-reports"></a>Az irányítópult és a jelentések szerkesztése
 Az importálás befejezésekor az új alkalmazás megjelenik az Alkalmazások lapon.
 
 1. A bal oldali navigációs panelen válassza az **Alkalmazások** ikont > válassza ki az alkalmazást.
@@ -40,34 +43,34 @@ Az importálás befejezésekor az új alkalmazás megjelenik az Alkalmazások la
    
     ![Google Analytics irányítópult](media/service-connect-to-services/googleanalytics2.png)
    
-    Az irányítópult és a jelentés a szervezet igényei szerint módosíthatja. Majd [a munkatársai az alkalmazást](service-create-distribute-apps.md)
+    Módosítsa az irányítópultot és a jelentést úgy, hogy megfeleljen a szervezet igényeinek. Ezután [ossza meg alkalmazásait a munkatársaival](service-create-distribute-apps.md)
 
 ## <a name="whats-included"></a>Tartalom
-Miután csatlakozott a szolgáltatáshoz, látni egy újonnan létrehozott alkalmazást, és a munkaterület egy irányítópultot, jelentéseket és adatkészletet. A szolgáltatásból származó adatok egy adott forgatókönyvre vonatkoznak, és nem feltétlenül tartalmazzák a szolgáltatással kapcsolatos összes információt. Az adatok naponta egyszer automatikusan frissülnek. Az adatkészlet kiválasztásával Ön határozhatja meg az ütemezést.
+A szolgáltatáshoz való csatlakozást követően látni fog egy irányítópulttal, jelentésekkel és adatkészlettel rendelkező újonnan létrehozott alkalmazást és munkaterületet. A szolgáltatásból származó adatok egy adott forgatókönyvre vonatkoznak, és nem feltétlenül tartalmazzák a szolgáltatással kapcsolatos összes információt. Az adatok naponta egyszer automatikusan frissülnek. Az adatkészlet kiválasztásával Ön határozhatja meg az ütemezést.
 
-Emellett [számos szolgáltatás a Power BI Desktopban csatlakozhat](desktop-data-sources.md), például a Google Analyticshez, és létrehozhatja saját személyre szabott irányítópultok és jelentések.  
+A [Power BI Desktopban számos szolgáltatáshoz kapcsolódhat](desktop-data-sources.md), például a Google Analyticshez, és létrehozhatja saját, személyre szabott irányítópultjait és jelentéseit.  
 
-Adott szolgáltatásokhoz való csatlakozásról további információért tekintse meg a súgóoldalakat.
+Ha szeretne többet megtudni az egyes szolgáltatásokhoz való csatlakozásról, olvassa el a megfelelő súgóoldalakat.
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 **Üres csempék**  
-Amikor a Power BI először kapcsolódik egy adott szolgáltatáshoz, lehetséges, hogy üres csempéket fog látni az irányítópulton. Ha 2 óra elteltével is csak üres csempéket lát, a kapcsolat valószínűleg megszakadt. Ha a probléma megoldására vonatkozó információt tartalmazó hibaüzenet nem látja, küldjön egy támogatási jegyet.
+Amikor a Power BI először kapcsolódik egy adott szolgáltatáshoz, lehetséges, hogy üres csempéket fog látni az irányítópulton. Ha 2 óra elteltével is csak üres csempéket lát, a kapcsolat valószínűleg megszakadt. Ha nem jelenik meg a probléma megoldására vonatkozó információt tartalmazó hibaüzenet, hozzon létre egy támogatási jegyet.
 
 * Válassza ki a kérdőjel ikont ( **?** ) a jobb felső sarokban >  **Segítségkérés**.
   
     ![Segítségkérés ikon](media/service-connect-to-services/power-bi-service-get-help.png)
 
 **Hiányzó információ**  
-Az irányítópult és jelentések összpontosítani egy adott forgatókönyv a szolgáltatás tartalmát is. Ha az alkalmazás egy bizonyos metrikát keres, és nem látja, tartalomcsomagban a [Power BI támogatási](https://support.powerbi.com/forums/265200-power-bi) lapot.
+Az irányítópult és a jelentések egy adott forgatókönyvre vonatkozó szolgáltatásból származó tartalmakat foglalnak magukba. Ha egy adott mérőszámot keres az alkalmazásban, és nem találja, küldjön be egy javaslatot a [Power BI-támogatás](https://support.powerbi.com/forums/265200-power-bi) oldalán.
 
 ## <a name="suggesting-services"></a>Szolgáltatások javaslása
 Használ olyan szolgáltatást, amelyből szeretné, ha Power BI-alkalmazás készülne? Keresse fel a [Power BI támogatási](https://support.powerbi.com/forums/265200-power-bi) oldalát, és írja meg nekünk, melyik szolgáltatásra gondol.
 
-Ha érdekli, hogyan hozhat létre sablonalkalmazásokat, hogy saját maga terjeszthesse azokat, akkor olvassa el a [Sablonalkalmazás létrehozása a Power BI-ban](service-template-apps-create.md) cikket. A Power BI partnerek alig vagy egyáltalán nem kódolási Power BI-alkalmazások készítéséhez, és telepítse őket a Power BI-ügyfél. 
+Ha érdekli, hogyan hozhat létre sablonalkalmazásokat, hogy saját maga terjeszthesse azokat, akkor olvassa el a [Sablonalkalmazás létrehozása a Power BI-ban](service-template-apps-create.md) cikket. A Power BI-partnerek kevés kódolással vagy anélkül hozhatnak létre Power BI-alkalmazásokat, és helyezhetik üzembe azokat bármely Power BI-ügyfél részére. 
 
 ## <a name="next-steps"></a>Következő lépések
-* [A munkatársai alkalmazások terjesztéséhez](service-create-distribute-apps.md)
-* [Az új munkaterületek létrehozása a Power bi-ban](service-create-the-new-workspaces.md)
+* [Alkalmazások terjesztése munkatársaknak](service-create-distribute-apps.md)
+* [Új munkaterületek létrehozása a Power BI-ban](service-create-the-new-workspaces.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 * További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

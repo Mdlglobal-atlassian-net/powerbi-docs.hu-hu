@@ -1,7 +1,7 @@
 ---
 title: A Power BI iOS-beli alkalmazáskonfigurációs beállításai
 description: Az iOS Power BI viselkedésének testreszabása egy MDM-eszközzel
-author: mshenhav
+author: paulinbar
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2019
 ms.author: mshenhav
-ms.openlocfilehash: a0883927f3a0a09bbe4d1ed618b7d5f708807464
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: bc9c6dd8cd892ab0304cc5a99a3bb780486f32f0
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66817007"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160161"
 ---
 # <a name="remotely-configure-power-bi-ios-app-using-mobile-device-management-mdm-tool"></a>Az iOS Power BI alkalmazás távoli konfigurálása egy mobileszköz-kezelési (MDM-) eszközzel
 
@@ -34,7 +34,7 @@ Az iOS Power BI alkalmazással a rendszergazdák távolról küldhetnek le konfi
 | com.microsoft.powerbi.mobile.ServerURL | Sztring | Jelentéskészítő kiszolgáló URL-címe.<br><br>Http/https-sel kell kezdődnie.|
 | com.microsoft.powerbi.mobile.ServerUsername | Sztring | [nem kötelező]<br><br>A kiszolgálóhoz való csatlakozáshoz használandó felhasználónév.<br><br>Ha még nem létezik ilyen, az alkalmazás kérni fogja a felhasználót, hogy adja meg a kapcsolathoz a felhasználónevet.|
 | com.microsoft.powerbi.mobile.ServerDisplayName | Sztring | [nem kötelező]<br><br>Az alapértelmezett érték „Report server” („Jelentéskészítő kiszolgáló”)<br><br>Az alkalmazásban használt rövid név a kiszolgáló azonosítására. |
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Logikai érték | [nem kötelező]<br><br>Az alapértelmezett érték True (Igaz). Ha értéke True (Igaz), felülbírálja a Jelentéskészítő kiszolgálónak a mobileszközön lévő definícióját. A már konfigurált meglévő kiszolgálók törölve lesznek. A felülbírálás True értékre állítása azt is megakadályozza, hogy a felhasználó eltávolítsa ezt a konfigurációt.<br><br>Ha értéke False (Hamis), az hozzáadja a leküldött értékeket, és meghagyja a meglévő beállításokat. Ha az adott kiszolgálói URL-cím már konfigurálva van a mobilalkalmazásban, akkor az alkalmazás ezt a konfigurációt változatlanul hagyja. Az alkalmazás nem kéri fel a felhasználót, hogy újra hitelesítse magát ugyanazon a kiszolgálón. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Logikai érték | [nem kötelező]<br><br>Az alapértelmezett érték True (Igaz). Ha értéke True (Igaz), felülbírálja a Jelentéskészítő kiszolgálónak a mobileszközön lévő definícióját. A már konfigurált meglévő kiszolgálók törölve lesznek. A felülbírálás True értékre állítása azt is megakadályozza, hogy a felhasználó eltávolítsa ezt a konfigurációt.<br><br>Ha „False” (Hamis) értéket használ, akkor a leküldött értékek hozzáadódnak, a már meglévő beállítások pedig megmaradnak. Ha az adott kiszolgálói URL-cím már konfigurálva van a mobilalkalmazásban, akkor az alkalmazás ezt a konfigurációt változatlanul hagyja. Az alkalmazás nem kéri fel a felhasználót, hogy újra hitelesítse magát ugyanazon a kiszolgálón. |
 
 ## <a name="data-protection-setting"></a>Adatvédelmi beállítások
 

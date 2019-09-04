@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d6d6ca0b9a1a2ec312a9168aad7a7cc93981e396
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 21a7bf05330373febe1e9f121f07df6de0779c69
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816693"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200945"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Adatforrások a Power BI szolgáltatásban
 A Power BI legfontosabb összetevői maguk az adatok. Tegyük fel, hogy adatfeltárást végez. Ezt megteheti diagramok és irányítópultok létrehozásával vagy **Q&A**-beli kérdésfeltevéssel. A látott vizualizációk és válaszok egy adatkészletből merítik az adatokat. De honnan származik ez az adatkészlet? Egy adatforrásból.
@@ -46,13 +46,13 @@ Az **Új tartalom létrehozása** szakaszban több opciót is találhat tartalom
 ### <a name="files"></a>Fájlok
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** (*.xlsx*, *.xlsm*) – az Excel egyedi. Az Excel munkafüzetei különböző adattípusokat tartalmazhatnak. Tartalmazhatnak például olyan adatokat, amelyeket Ön adott meg munkalapokon. Olyan adatokat is tartalmazhatnak, amelyeket külső adatforrásokból kérdezett le és töltött be a Power Query segítségével. A Power Query az Excel 2016-ban vagy a Power Pivotben az **Adatok beolvasása és átalakítása** művelettel használható. Adatokat munkalapok táblázataiból vagy egy adatmodellből importálhat. További információ: [Adatok beolvasása a Power BI-ba fájlokból](service-get-data-from-files.md).
+**Excel** ( *.xlsx*, *.xlsm*) – Az Excel munkafüzetei különböző adattípusokat tartalmazhatnak. Tartalmazhatnak például olyan adatokat, amelyeket Ön adott meg munkalapokon. Olyan adatokat is tartalmazhatnak, amelyeket külső adatforrásokból kérdezett le és töltött be a Power Query segítségével. A Power Query az Excel 2016-ban vagy a Power Pivotben az **Adatok beolvasása és átalakítása** művelettel használható. Adatokat munkalapok táblázataiból vagy egy adatmodellből importálhat. További információ: [Adatok beolvasása a Power BI-ba fájlokból](service-get-data-from-files.md).
 
-**Power BI Desktop** (*.pbix*) – A Power BI Desktop használatával lekérdezhet és beolvashat külső adatforrásban lévő adatokat, és jelentéseket hozhat létre. Emellett mértékekkel és adatkapcsolatokkal bővítheti az adatmodellt, vagy importálhatja a Power BI Desktop-fájlt a Power BI-webhelyre. A Power BI Desktop a haladó felhasználók számára ideális. Ezek a felhasználók általában jól ismerik az adatforrásaikat. Emellett tisztában vannak az adatlekérdezéssel és -átalakítással, valamint az adatmodellezés fogalmaival. További információt a [Kapcsolódás adatokhoz a Power BI Desktopban](desktop-connect-to-data.md) című cikkben talál.
+**Power BI Desktop** ( *.pbix*) – A Power BI Desktop használatával lekérdezhet és beolvashat külső adatforrásban lévő adatokat, és jelentéseket hozhat létre. Emellett mértékekkel és adatkapcsolatokkal bővítheti az adatmodellt, vagy importálhatja a Power BI Desktop-fájlt a Power BI-webhelyre. A Power BI Desktop a haladó felhasználók számára ideális. Ezek a felhasználók általában jól ismerik az adatforrásaikat. Emellett tisztában vannak az adatlekérdezéssel és -átalakítással, valamint az adatmodellezés fogalmaival. További információt a [Kapcsolódás adatokhoz a Power BI Desktopban](desktop-connect-to-data.md) című cikkben talál.
 
-**Vesszővel tagolt értékek** (*.csv*) – Ezek a fájlok adatsorokat tartalmazó, egyszerű szöveges fájlok. Minden sor egy vagy több értéket tartalmaz, vesszővel elválasztva. Egy név- és címadatokat tartalmazó *.csv* fájl például számos sorral rendelkezhet. Minden sor tartalmazhat keresztnévre, vezetéknévre, utcanévre, városra, államra és hasonlókra vonatkozó értékeket. *.csv*-fájlba nem importálhat adatokat, de sok alkalmazás, például az Excel képes egy különálló táblázat adatait *.csv*-fájlba menteni.
+**Vesszővel tagolt értékek** ( *.csv*) – Ezek a fájlok adatsorokat tartalmazó, egyszerű szöveges fájlok. Minden sor egy vagy több értéket tartalmaz, vesszővel elválasztva. Egy név- és címadatokat tartalmazó *.csv* fájl például számos sorral rendelkezhet. Minden sor tartalmazhat keresztnévre, vezetéknévre, utcanévre, városra, államra és hasonlókra vonatkozó értékeket. *.csv*-fájlba nem importálhat adatokat, de sok alkalmazás, például az Excel képes egy különálló táblázat adatait *.csv*-fájlba menteni.
 
-Más fájltípusok, például XML-táblázatok (*.xml*) vagy szöveges fájlok (*.txt*) esetében az adatok először a **Beolvasás és átalakítás** funkcióval kérdezhetők le, alakíthatók át és olvashatók be egy Excel- vagy egy Power BI Desktop-fájlba. Ezután importálhatja az Excel- vagy Power BI Desktop-fájlt a Power BI-ba.
+Más fájltípusok, például XML-táblázatok ( *.xml*) vagy szöveges fájlok ( *.txt*) esetében az adatok először a **Beolvasás és átalakítás** funkcióval kérdezhetők le, alakíthatók át és olvashatók be egy Excel- vagy egy Power BI Desktop-fájlba. Ezután importálhatja az Excel- vagy Power BI Desktop-fájlt a Power BI-ba.
 
 Az is sokat számít, hogy hol tárolja a fájlokat. A OneDrive Vállalati verzió biztosítja a legnagyobb rugalmasságot és az integrációt a Power BI-jal. A fájlokat a helyi meghajtón is tárolhatja. Azonban ilyen esetben néhány további lépéssel jár az adatok frissítése. További információkat az alábbi cikkekben találhat.
 
@@ -102,9 +102,9 @@ Ha a fájlokat a OneDrive Vállalati verziójára vagy a SharePoint-csapatwebhel
 
 A szolgáltatásokból származó tartalomcsomagok automatikusan frissülnek. Ez legtöbbször naponta egyszer történik meg. Frissíthet manuálisan is, de hogy megjelennek-e a frissített adatok, az a szolgáltatótól függ. A cége más tagjaitól származó tartalomcsomagok frissítései a felhasznált adatforrásoktól függnek. Az is számít, hogy a tartalomcsomag létrehozója hogyan állította be a frissítést.
 
-Az Azure SQL Database, az Azure SQL Data Warehouse, és a Spark on Azure HDInsight különlegessége az, hogy mind felhőbeli adatforrások. Mivel a Power BI szolgáltatás is a felhőben fut, a Power BI élőben kapcsolódhat hozzájuk a **DirectQuery** használatával. A Power BI-ban látható tartalom mindig szinkronizálva van, ezért nincs szükség ütemezett frissítés beállítására.
+Az Azure SQL Database, az Azure SQL Data Warehouse, és a Spark on Azure HDInsight mind felhőbeli adatforrások. Mivel a Power BI szolgáltatás is a felhőben fut, a Power BI élőben kapcsolódhat hozzájuk a **DirectQuery** használatával. A Power BI-ban látható tartalom mindig szinkronizálva van, ezért nincs szükség ütemezett frissítés beállítására.
 
-Az SQL Server Analysis Services egy egyedi szolgáltatás. Amikor a Power BI-ból kapcsolódik hozzá, élő kapcsolat jön létre, egy felhőbeli Azure-adatbázishoz hasonlóan. A különbség az, hogy az adatbázis egy saját céges kiszolgálón található. Az ilyen típusú kapcsolathoz Power BI-átjáró szükséges, amelyet az informatikai részleg konfigurál.
+Amikor a Power BI-ból kapcsolódik az SQL Server Analysis Serviceshez, élő kapcsolat jön létre, egy felhőbeli Azure-adatbázishoz hasonlóan. A különbség az, hogy az adatbázis egy saját céges kiszolgálón található. Az ilyen típusú kapcsolathoz Power BI-átjáró szükséges, amelyet az informatikai részleg konfigurál.
 
 Az adatfrissítés kiemelten fontos a Power BI-ban, és túlságosan mély témakör ahhoz, hogy itt kifejtsük. Ha szeretné alaposan körüljárni, akkor olvassa el az [Adatfrissítés a Power BI-ban](refresh-data.md) című cikket.
 

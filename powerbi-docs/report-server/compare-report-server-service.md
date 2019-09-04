@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.date: 05/22/2019
-ms.openlocfilehash: c4254420ae949b1fae6a1407cd045589c23da3c8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 08/29/2019
+ms.openlocfilehash: 0755b41fbeef1f62d2722e3529007dc4f8773634
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187691"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70186083"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása
 
@@ -44,10 +44,10 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 | Oldalakra osztott jelentések | Igen | Igen | A prémium szintű kapacitásban előzetes verzióban [elérhetők a Power BI szolgáltatás lapszámozott jelentései](../paginated-reports-report-builder-power-bi.md) |
 | Power BI – mobilalkalmazások | Igen | Igen | [Power BI-mobilalkalmazások áttekintése](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | ArcGIS-térképek | Nem | Igen | [Esri ArcGIS-térképek a Power BI szolgáltatásban és a Power BI Desktopban](../visuals/power-bi-visualization-arcgis.md) |
-| E-mail-előfizetés Power BI-jelentésekre | Nem | Igen | [Feliratkozás és mások feliratkoztatása](../service-report-subscribe.md) egy jelentésre vagy irányítópultra a Power BI szolgáltatásban |
-| E-mail-előfizetés többoldalas jelentésekre | Igen | Nem | [E-mail-kézbesítés a jelentéskészítő szolgáltatásban](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  |
+| E-mail-előfizetés Power BI-jelentésekre | Igen | Igen | [Feliratkozás és mások feliratkoztatása](../service-report-subscribe.md) egy jelentésre vagy irányítópultra a Power BI szolgáltatásban |
+| E-mail-előfizetés többoldalas jelentésekre | Igen | Igen | [Feliratkozás és mások feliratkoztatása többoldalas jelentésre a Power BI szolgáltatásban](../paginated-reports-subscriptions.md)<br><br>[E-mail-kézbesítés a Reporting Servicesben](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  |
 | Adatriasztások | Nem | Igen | [Adatriasztások](../service-set-data-alerts.md) a Power BI szolgáltatásban
-| Sorszintű biztonság (RLS) | Igen | Igen | Elérhető DirectQuery- (adatforrással) és Import-módban is <br>Sorszintű biztonság (RLS) a [Power BI szolgáltatásban](../service-admin-rls.md) <br>Sorszintű biztonság (RLS) a [Power BI jelentéskészítő kiszolgálóban](row-level-security-report-server.md) |
+| Sorszintű biztonság (RLS) | Igen | Igen | Elérhető DirectQuery- (adatforrással) és Import-módban is <br><br>Sorszintű biztonság (RLS) a [Power BI szolgáltatásban](../service-admin-rls.md) <br><br>Sorszintű biztonság (RLS) a [Power BI jelentéskészítő kiszolgálóban](row-level-security-report-server.md) |
 | Teljes képernyős mód | Nem | Igen | [Teljes képernyős mód](../consumer/end-user-focus.md) a Power BI szolgáltatásban |
 | Fejlett Office 365-együttműködés | Nem | Igen | [Együttműködés egy alkalmazás-munkaterületen](../service-collaborate-power-bi-workspace.md) az Office 365 használatával |
 | R vizualizációk | Nem | Igen | A Power BI Desktopban [R-vizualizációkat](../desktop-r-visuals.md) hozhat létre, és közzéteheti őket a Power BI szolgáltatásban. Az R-vizualizációt tartalmazó Power BI-jelentéseket nem lehet menteni a Power BI jelentéskészítő kiszolgálón.  |

@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 80eb366015de3822b9c8c455f1ee386a34e1f457
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: 0474bc4182f77e7084ca8cb78062ba0f2063e7ae
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560991"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160202"
 ---
 # <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Az Azure költség- és használati adatainak elemzése a Power BI Desktopban
 
@@ -27,6 +27,10 @@ A Power BI jelenleg a Nagyvállalati Szerződés és az Ügyfélszerződés típ
 * A **Nagyvállalati Szerződés** felhasználóinak az **Azure Consumption Insights-összekötővel** kell csatlakozniuk. (Lásd alább.)
 
 * Az **Ügyfélszerződés** felhasználóinak az [**Azure Cost Management-összekötővel**](#connect-with-azure-cost-management) kell csatlakozniuk.
+
+> [!NOTE]
+> Ha Ön Nagyvállalati Szerződéses ügyfélként használja az Azure Cost Management-összekötőt, és nem jelenik meg a *Számlázási profil azonosítója* a Cost Management panelen, az azt jelenti, hogy Ön nem a modern kereskedelmi platformot használja. Ilyen esetekben használja az Azure Consumption Insights-összekötőt, amely a Nagyvállalati Szerződés regisztrációs számát kéri, nem pedig a *Számlázási profil azonosítóját*.
+
 
 ## <a name="connect-with-azure-consumption-insights"></a>Kapcsolódás az Azure Consumption Insights segítségével
 

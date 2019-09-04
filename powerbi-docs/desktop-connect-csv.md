@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f1e02197f36da66a64fac95209fe8fabaa67b6c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8eecbfdaa948163ab6d0623a70f237d479fcdb88
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514183"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200925"
 ---
 # <a name="connect-to-csv-files-in-power-bi-desktop"></a>Csatlakozás CSV-fájlokhoz a Power BI Desktopban
 A Power BI Desktopban a vesszővel tagolt adatfájlhoz (*CSV*) való csatlakozás hasonlít az Excel-munkafüzethez való csatlakozáshoz. Mindkettő egyszerű, és ez a cikk lépésről lépésre bemutatja, hogyan csatlakozhat bármely CSV-fájlhoz, amelyhez hozzáfér.
@@ -44,6 +44,10 @@ Miután betöltötte az adatokat a Power BI Desktopba, megjelenik a táblázat �
 Mindössze ennyit kell tennie. A CSV-fájl adatai már a Power BI Desktopban vannak.
 
 Most már felhasználhatja a Power BI Desktopba bevitt adatokat vizualizációk és jelentések készítéséhez, vagy más olyan adatokkal való kommunikációhoz, amelyekhez később csatlakozni szeretne vagy amelyeket importálna, mint például Excel táblázatok, adatbázisok vagy más egyéb adatforrás.
+
+> [!IMPORTANT]
+> CSV-fájl importálásakor a Power BI Desktop a Power Query-szerkesztőben az egyik lépésként létrehoz egy *columns=x* kifejezést (ahol az *x* a CSV-fájlban található oszlopok száma a kezdeti importáláskor). Ha később további oszlopokat ad hozzá, és az adatforrás frissítése be van állítva, a rendszer az oszlopok kezdeti *x* számát nem frissíti a további oszlopokkal. 
+
 
 ## <a name="next-steps"></a>Következő lépések
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:

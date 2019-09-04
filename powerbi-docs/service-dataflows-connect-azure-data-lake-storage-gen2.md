@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8000397e5d8f26847349c35b541aa82c5907292e
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 1e4d589702bb471a2abc6af9448a6846825adbfe
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621236"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160371"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)
 
@@ -115,19 +115,19 @@ Bérlői alkalmazásait az alábbi lépésekkel találhatja meg:
 
     ![Power-alkalmazások keresése](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Jelölje ki és másolja ki a Power BI szolgáltatás és a Power Query online mindkét objektumazonosítóját a keresési eredmények közül. Ezeket az értékeket a következő lépések során fogja beilleszteni.
+5. Jelölje ki és másolja ki a Power BI Premium szolgáltatás és a Power Query online mindkét objektumazonosítóját a keresési eredmények közül. Ezeket az értékeket a következő lépések során fogja beilleszteni.
 
-7. Ezután az **Azure Storage Explorer** használatával navigáljon az előző szakaszban létrehozott *powerbi* fájlrendszerhez. Hajtsa végre a [Fájl- és könyvtárszintű engedélyek kezelése az Azure Storage Explorerrel](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) című cikk [Hozzáférés-kezelés](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) szakaszának utasításait.
+6. Ezután az **Azure Storage Explorer** használatával navigáljon az előző szakaszban létrehozott *powerbi* fájlrendszerhez. Hajtsa végre a [Fájl- és könyvtárszintű engedélyek kezelése az Azure Storage Explorerrel](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) című cikk [Hozzáférés-kezelés](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) szakaszának utasításait.
 
-8. Az 5. lépésben begyűjtött Power BI-objektumazonosítók mindegyikéhez rendelje hozzá az **olvasási**, **írási** és **végrehajtási** hozzáférést, valamint az alapértelmezett ACL-eket a *powerbi* fájlrendszerre.
+7. Az 5. lépésben begyűjtött Power BI Premium-objektumazonosítók mindegyikéhez rendelje hozzá az **olvasási**, **írási** és **végrehajtási** hozzáférést, valamint az alapértelmezett ACL-eket a *powerbi* fájlrendszerre.
 
    ![mindhárom hozzárendelése mindkettőhöz](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
 
-9. A 4. lépésben beszerzett Power Query-objektumazonosítóhoz rendelje hozzá az **írási** és **végrehajtási** hozzáférést, valamint az alapértelmezett ACL-eket a *powerbi* fájlrendszerre.
+8. A 4. lépésben beszerzett Power Query-objektumazonosítóhoz rendelje hozzá az **írási** és **végrehajtási** hozzáférést, valamint az alapértelmezett ACL-eket a *powerbi* fájlrendszerre.
 
    ![írási és végrehajtási jog hozzárendelése](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
 
-10. Ezen kívül rendelje hozzá a **végrehajtási** hozzáférést és az alapértelmezett ACL-eket az **Egyéb** elemhez is.
+9. Ezen kívül rendelje hozzá a **végrehajtási** hozzáférést és az alapértelmezett ACL-eket az **Egyéb** elemhez is.
 
     ![végrehajtási jog hozzárendelése az egyebekhez](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
 

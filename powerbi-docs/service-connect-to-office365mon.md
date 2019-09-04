@@ -1,31 +1,31 @@
 ---
 title: Kapcsolódás az Office365Mon tartalomcsomaghoz a Power BI-jal
 description: A Power BI-hoz készült Office365Mon tartalomcsomag
-author: SarinaJoan
+author: teddybercovitz
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
-ms.author: sarinas
+ms.date: 8/29/2019
+ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: cce886edbed00075efaa43bae9c8a712929e8b9a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 364220d5d900004252e51184fc9cbd7e03b45b2d
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61170224"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159904"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Kapcsolódás az Office365Mon tartalomcsomaghoz a Power BI-jal
-Az Office 365 leállásainak és az állapot teljesítményadatainak elemzése egyszerű a Power BI-jal és az Office365Mon tartalomcsomaggal. A Power BI lekéri az adatokat, többek között a leállásokat és az állapotmintákat, majd ezeken az adatokon alapuló, használatra kész irányítópultot és jelentéseket hoz létre.
+Az Office 365 leállásainak és az állapot teljesítményadatainak elemzése egyszerű a Power BI-jal és az Office365Mon sablonalkalmazással. A Power BI lekéri az adatokat, többek között a leállásokat és az állapotmintákat, majd ezeken az adatokon alapuló, használatra kész irányítópultot és jelentéseket hoz létre.
 
-Csatlakozzon a Power BI-hoz készült [Office365Mon tartalomcsomaghoz](https://app.powerbi.com/groups/me/getdata/services/office365mon).
+Csatlakozzon a Power BI-hoz készült [Office365Mon sablonalkalmazáshoz](https://app.powerbi.com/groups/me/getdata/services/office365mon).
 
 >[!NOTE]
->A Power BI-tartalomcsomag betöltéséhez Office365Mon rendszergazdai fiók szükséges.
+>A Power BI-sablonalkalmazás betöltéséhez Office365Mon rendszergazdai fiók szükséges.
 
-## <a name="how-to-connect"></a>A csatlakozás menete
+## <a name="how-to-connect"></a>Csatlakozás
 1. A bal oldali navigációs ablaktábla alján kattintson az **Adatok lekérése** elemre.
    
    ![](media/service-connect-to-office365mon/pbi_getdata.png)

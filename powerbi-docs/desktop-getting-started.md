@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d1739d97b0741c67e29ed7ab9a35a70bf4fdc484
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 2049d996c9f6130718e203a8f6d27a2a7fac911f
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654848"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70201029"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Első lépések a Power BI Desktopban
 Üdvözöljük a **Power BI Desktop Első lépések útmutatójában**. Ebben a rövid bemutatóban megismerkedhet a Power BI Desktop használatával, képességeivel, és megtudhatja, hogyan állíthat össze gyorsan nagy teljesítményű adatmodelleket és lenyűgöző jelentéseket, amelyek megalapozottabb üzleti döntéseket eredményeznek. 
@@ -105,6 +105,9 @@ Miután kiválasztjuk a **Szerkesztés** elemet, elindul a Lekérdezésszerkeszt
  ![](media/desktop-getting-started/designer_gsg_editquery.png)
 
 További információ az adatokhoz való csatlakozásról: [Csatlakozás adatokhoz a Power BI Desktopban](desktop-connect-to-data.md).
+
+> [!NOTE]
+> Az ebben a cikkben említett táblaadatok idővel változhatnak. Ennek megfelelően a követendő lépések eltérhetnek az alábbiakban bemutatottakról, így a lépések és eredmények saját helyzetre való alkalmazása némi kreativitást kíván – de ezt tekintse úgy, mint a tanulás izgalmának egyik részét. 
 
 A következő szakaszban az igényeink szerint módosítjuk az adatokat. A csatlakoztatott adatok módosításának folyamata az adatok *formázása*.
 

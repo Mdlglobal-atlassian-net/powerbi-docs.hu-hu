@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cccbfb6bbe43e70ebcea94322923f7600d58aca8
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: 5477d7772681f0dd5ac4426335521f6ab1a7844e
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590511"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160351"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Kapcsolódás a Power BI szolgáltatásban lévő adatkészletekhez a Power BI Desktopból
 Létrehozhat élő kapcsolatot a Power BI szolgáltatás egy megosztott adatkészletével, és számos különböző jelentést hozhat létre ugyanabból az adatkészletből. Ez annyit jelent, hogy létrehozhatja a tökéletes adatmodellt a Power BI Desktopban, majd közzéteheti a Power BI szolgáltatásban. Ezután Ön és mások különböző jelentéseket (külön .pbix-fájlokat) készíthetnek ugyanabból a közös adatmodellből, és ezeket különböző munkaterületekre menthetik. Ennek a szolgáltatásnak **Élő kapcsolat Power BI szolgáltatással** a neve.
@@ -108,4 +108,5 @@ Az **Élő kapcsolat Power BI-szolgáltatással** használatára vonatkozik néh
 * Tartalomcsomagok esetében először létre kell hoznia egy másolatot a tartalomcsomagról, mielőtt alapul használhatná egy .pbix jelentés és adatkészlet megosztására a **Power BI szolgáltatásban**.
 * A *Saját szervezet* tartalomcsomagjai esetében, ha már másolva lettek, nem lehet kicserélni a szolgáltatáson létrehozott jelentést és/vagy egy élő kapcsolattal rendelkező tartalomcsomag másolása részeként létrehozott jelentést. Ha ezzel próbálkozik, a rendszer felszólítja a fájl átnevezésére és közzétételére. Ebben a helyzetben csak a közzétett élő kapcsolattal rendelkező jelentéseket cserélheti le.
 * Ha töröl egy megosztott adathalmazt a **Power BI szolgáltatásból**, akkor senkinek sem lesz tovább hozzáférése ahhoz az adathalmazhoz a **Power BI Desktopban**.
+* A Power BI szolgáltatásban adatkészletet használó jelentések nem támogatják az automatikus üzembe helyezést a Power BI REST API használatával.
 

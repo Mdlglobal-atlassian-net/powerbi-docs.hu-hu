@@ -7,18 +7,21 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4131758dad29b28de56e3ac450bed22d64c25e46
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 66dcbd76d76de04675204674626c2942aef515fa
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61172809"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200999"
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Kapcsolódás a Marketo eszközhöz a Power BI használatával
 A Marketo eszközhöz készült Power BI-tartalomcsomag az érdeklődőkhöz és tevékenységeikhez kapcsolódó adatokkal segíti a Marketo-fiók elemzését. A kapcsolat lekéri az adatokat, és automatikusan a rendelkezésére bocsátja a rájuk épülő irányítópultot, valamint a kapcsolódó jelentéseket.
+
+>[!IMPORTANT]
+>Ezt a tartalomcsomagot 2019. szeptember 4-én kivonjuk. Ha az előtt telepíti a tartalomcsomagot, az továbbra is működni fog, de azt követően már nem fog tudni újabbakat telepíteni. A szolgáltatás-tartalomcsomagokat a sablonalkalmazások váltják fel.
 
 Kapcsolódás a Power BI-hoz készült [Marketo tartalomcsomaghoz](https://app.powerbi.com/getdata/services/marketo).
 

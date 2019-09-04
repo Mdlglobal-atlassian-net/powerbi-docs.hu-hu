@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/22/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b28c4ea9b4cacc77a7f98af5bfc006670f40af94
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3dce16287c9cdcb7882e332e338137f7598b4010
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61315007"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200910"
 ---
 # <a name="connect-to-an-oracle-database"></a>Kapcsolódás Oracle-adatbázishoz
 Ha egy Oracle-adatbázist a **Power BI Desktophoz** szeretne csatlakoztatni, előbb telepítenie kell a megfelelő Oracle ügyfélszoftvert a Power BI Desktopot futtató számítógépre. Az Oracle ügyfélszoftver szükséges verziója attól függ, hogy a Power BI Desktop melyik verzióját telepítette – a **32 bites** verziót vagy a **64 bites** verziót.
@@ -64,3 +64,5 @@ Ha a Power BI Desktopot a Microsoft Store-ból töltötte le, előfordulhat, hog
 * A Power BI Desktopot inkább a https://powerbi.microsoft.com/desktop helyről töltse le.
 
 * Ha a Microsoft Store-ban elérhető verziót szeretné használni: a helyi számítógépén másolja az oraons.dll fájlt a _12.X.X\client_X_ helyről a _12.X.X\client_X\bin_ helyre. Az X a verzió és a könyvtár száma helyett áll.
+
+Ha az Oracle-adatbázishoz való csatlakozáskor a Power BI Gatewayben az *Objektumhivatkozás nincs beállítva* hibaüzenet látható, lehetséges, hogy a problémát elháríthatja az [Adatforrás kezelése – Oracle](service-gateway-onprem-manage-oracle.md) című cikkben található útmutatót követve.

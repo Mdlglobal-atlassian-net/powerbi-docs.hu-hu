@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f67f73dd66da7f1d3e8d84a3373a15d20f81645e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 69e458d966e656847a4e2122df148e90c1834a58
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513802"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160320"
 ---
 # <a name="publish-from-power-bi-desktop"></a>Közzététel a Power BI Desktopból
 Amikor közzétesz egy **Power BI Desktop-fájlt** a **Power BI szolgáltatásban**, a rendszer a modellben található adatokat és a **Jelentés** nézetben létrehozott jelentéseket közzéteszi az Ön Power BI-munkaterületén. A munkaterület-kezelőben megjelenik egy ugyanilyen nevű új adatkészlet, valamint az összes jelentés.
@@ -28,7 +28,7 @@ A **Power BI Desktopból** való közzétételnek az eredménye ugyanaz, mintha 
 > 
 
 ## <a name="to-publish-a-power-bi-desktop-dataset-and-reports"></a>Power BI Desktop-adatkészletek és -jelentések közzététele
-1. A Power BI Desktopban válassza **fájl** \> **közzététel** \> **közzététel a Power BI** , vagy kattintson **közzététel** a a a menüszalagon.  
+1. A Power BI Desktopban kattintson a **Fájl** \> **Közzététel** \> **Közzététel a Power BI-ban** lehetőségre, vagy a menüszalagon a **Közzététel** elemre.  
 
    ![Közzététel gomb](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 
@@ -44,10 +44,11 @@ Amikor végzett, egy hivatkozást kap, amely a jelentésére mutat. A hivatkozá
 ## <a name="re-publish-or-replace-a-dataset-published-from-power-bi-desktop"></a>Egy Power BI Desktoppal közzétett adatkészlet újbóli közzététele vagy cseréje
 Egy **Power BI Desktop-fájl** közzétételekor a rendszer a **Power BI Desktopban** létrehozott adatkészletet és jelentéseket közzéteszi az Ön Power BI-webhelyén. Egy **Power BI Desktop-fájl** újbóli közzétételekor a rendszer a Power BI-webhelyen található adatkészletet lecseréli a **Power BI Desktop-fájlból** származó frissített adatkészletre.
 
-Ez az összes egyszerű, de néhány dolgot tudnia kell:
+Mindez egyszerű, de van néhány dolog, amit érdemes tudni:
 
 * Ha a Power BI-ban kettő vagy több adatkészletnek ugyanaz a neve, mint a **Power BI Desktop-fájlnak**, akkor a közzététel meghiúsulhat. Ügyeljen arra, hogy a Power BI-ban csak egy adatkészletnek legyen ugyanaz a neve. Át is nevezheti a fájlt, és közzéteheti úgy, amivel létrehoz egy új, a fájllal megegyező nevű adatkészletet.
 * Ha átnevez vagy töröl egy oszlopot vagy mértéket, a Power BI-ban az adott mezőre hivatkozó vizualizációk meghibásodhatnak. 
 * A Power BI a meglévő oszlopok esetében bizonyos formázási módosításokat figyelmen kívül hagy. Ilyen például, ha egy oszlop formátumát 0,25-ről 25%-ra módosítjuk.
 * Ha a Power BI-ban egy meglévő adatkészlethez konfigurálva van egy frissítési ütemezés, és a fájlhoz új adatforrásokat adunk hozzá, majd újra közzétesszük a fájlt, akkor az ütemezett frissítést megelőzően be kell jelentkezni az adatforrásokba az *Adatforrások kezelése* felületen.
+* Amikor újból közzétesz egy a **Power BI Desktopban** közzétett adatkészletet, és egy frissítési ütemterv van meghatározva, az adatkészlet frissítése az ismételt közzététel után azonnal megkezdődik. 
 

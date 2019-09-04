@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 757a2ca5a88e8ee98aa1c460c30e001f14bc6789
-ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.openlocfilehash: f18dae9ecd0eff0b7f62a3152fc59c81f1292ba4
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66814342"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160388"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Oktatóanyag: Excelből és OData-csatornáról származó értékesítési adatok összevonása
 
@@ -119,7 +119,7 @@ A Power Query-szerkesztővel számításokat és egyéni mezőket vehet fel az a
    
 2. Az **Egyéni oszlop** párbeszédpanelen írja be a **LineTotal** (Sorösszeg) kifejezést az **Új oszlop neve** mezőbe.
 
-3. Az **Egyéni oszlop képlete** mezőben a **= jel után adja meg az **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** adatokat. (A mezőneveket a **Megjeleníthető oszlopok** görgetőgombon is kijelölheti, és a begépelés helyett kattinthat a **<< Beillesztés** elemre.) 
+3. Az **Egyéni oszlop képlete** mezőben a *=* jel után adja meg az **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** adatokat. (A mezőneveket a **Megjeleníthető oszlopok** görgetőgombon is kijelölheti, és a begépelés helyett kattinthat a **<< Beillesztés** elemre.) 
 
 4. Kattintson az **OK** gombra.
    

@@ -1,35 +1,32 @@
 ---
-title: 'Oktatóanyag: Adatriasztások beállítása a Power BI szolgáltatásban'
-description: Ezen oktatóanyagból megtudhatja, hogyan állíthat be riasztásokat, amelyek figyelmeztetik, ha az irányítópultjain lévő adatok változásai meghaladják a Microsoft Power BI szolgáltatásban beállított korlátokat.
+title: 'Oktatóanyag: Adatriasztások beállítása a Power BI szolgáltatás irányítópultjain'
+description: Ezen oktatóanyagból megtudhatja, hogyan állíthat be riasztásokat, amelyek figyelmeztetik, ha az irányítópultjain lévő adatok változásai meghaladják a Microsoft Power BI szolgáltatáshoz beállított korlátokat.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-featuredvideoid: JbL2-HJ8clE
-ms.custom: seodec18
+featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: tutorial
-ms.date: 12/06/2018
+ms.date: 08/26/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 64da077e079ca3df11ce2a89da546e24865eaf0e
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 16639f6e9bf005d04c64fc3ae6a331338efdd5d4
+ms.sourcegitcommit: 2b340946ed5f1deedeace4071845e1720ea155c9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522888"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70064515"
 ---
-# <a name="tutorial-set-data-alerts-in-power-bi-service"></a>Oktatóanyag: Adatriasztások beállítása a Power BI szolgáltatásban
-Riasztásokat állíthat be, amelyek figyelmeztetik, ha az irányítópultjain lévő adatok változásai meghaladják a beállított korlátokat.  
+# <a name="tutorial-set-dashboard-alerts-on-power-bi-dashboards"></a>Oktatóanyag: Irányítópult-riasztások beállítása Power BI-irányítópultokon
+Riasztásokat állíthat be, amelyek figyelmeztetik, ha az irányítópultjain lévő adatok változásai a beállított korlátok alá vagy fölé esnek. A riasztások működnek a mérőműszereken, KPI-ken és a kártyákon. Ezt a funkciót még fejlesztjük, ezért olvassa el [az alábbi Tippek és hibaelhárítás szakaszt](#tips-and-troubleshooting).
 
-Ha Power BI Pro-licenccel rendelkezik, vagy ha egy [prémium szintű kapacitásból](../service-premium-what-is.md) osztottak meg Önnel egy irányítópultot, beállíthat riasztásokat a csempékhez. Csak a jelentések vizualizációiról rögzített csempéken, és kizárólag mérőműszerekhez, KPI-khez és kártyákhoz állíthatók be riasztások. A riasztásokat beállíthatja a jelentésekből az irányítópultokra rögzített streamelési adatkészletekről készített vizualizációkon, azonban az irányítópultokon a **Csempe hozzáadása** > **Egyedi folyamatos átviteli adatok** paranccsal közvetlenül létrehozott streamelési csempéken nem. 
+![csempe, kártya, KPI](media/end-user-alerts/card-gauge-kpi.png)
 
 Mindenki csak a saját riasztásait látja, még az irányítópult megosztása esetén is. A rendszer teljes mértékben szinkronizálja az adatriasztásokat a platformok között, így [a Power BI mobilalkalmazásokban](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) és a Power BI szolgáltatásban is beállíthatja és megtekintheti őket. 
 
-![címek](../media/service-set-data-alerts/powerbi-alert-types-new.png)
-
 > [!WARNING]
-> Az adatalapú riasztások értesítései az adatokkal kapcsolatos információkat tartalmaznak. Ha Power BI-adatait egy mobileszközön követi, és az adott eszközt ellopják, javasoljuk, hogy a Power BI szolgáltatásban tiltsa le az összes adatalapú riasztási szabályt.
+> Ezek a riasztások az adatokkal kapcsolatos információval szolgálnak. Ha Power BI-adatait egy mobileszközön követi, és az adott eszközt ellopják, javasoljuk, hogy a Power BI szolgáltatásban tiltsa le az összes riasztást.
 > 
 
 Ez az oktatóanyag a következőket mutatja be.
@@ -38,79 +35,82 @@ Ez az oktatóanyag a következőket mutatja be.
 > * Mely vizualizációk támogatják a riasztásokat
 > * Kik láthatják a riasztásaimat
 > * Működnek-e a riasztások a Power BI Desktopban és Mobile-ban
-> * Hogyan hozhatok létre riasztást
+> * Riasztás létrehozásának módja
 > * Hol fogom megkapni a riasztásaimat
 
 Ha még nem regisztrált a Power BI-ra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://app.powerbi.com/signupredirect?pbi_source=web).
 
-## <a name="set-data-alerts-in-power-bi-service"></a>Adatriasztások beállítása a Power BI szolgáltatásban
-Tekintse meg, ahogy Amanda riasztásokat ad hozzá egyes csempékhez az irányítópultján. Ezután a videó alatt látható részletes utasításokat követve próbálkozzon meg a feladat elvégzésével.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
-
-A példában Amanda a [Retail Analysis](http://go.microsoft.com/fwlink/?LinkId=529778) (Kiskereskedelmi elemzés) minta-irányítópultról származó kártyacsempét használ.
+Ebben a példában egy irányítópult kártyacsempéjét használjuk az Értékesítés és Marketing mintaalkalmazásból. Ez az alkalmazás a [Microsoft AppSource-on](https://appsource.microsoft.com) érhető el. Az alkalmazás beszerzésével kapcsolatban az [Alkalmazások telepítése és használata a Power BI-ban](end-user-app-view.md) című témakörben tájékozódhat.
 
 1. Az irányítópult egyik mérőműszer-, KPI- vagy kártyacsempéjén kattintson a három pontra (…).
    
-   ![Összes üzlet csempe](media/end-user-alerts/powerbi-card.png)
+   ![kártyacsempe](media/end-user-alerts/power-bi-cards.png)
 2. A harang ikon ![riasztás ikon](media/end-user-alerts/power-bi-bell-icon.png) vagy a **Riasztások kezelése** kiválasztásával adhat hozzá egy vagy több riasztást a **Total Stores** (Összes üzlet) csempéhez.
+
+   ![kártya csempéje kijelölt ellipszisekkel](media/end-user-alerts/power-bi-ellipses.png)
+
    
 1. A **Riasztások kezelése** panelen válassza a **+ Riasztási szabály hozzáadása** lehetőséget.  Ügyeljen rá, hogy a csúszka **Be** állásba legyen kapcsolva, és adjon címet a riasztásnak. A címek segítségével könnyebben felismerheti a riasztásokat.
    
-   ![Riasztások kezelése ablak](media/end-user-alerts/powerbi-alert-title.png)
-4. Görgessen le, és adja meg a riasztás adatait.  Ebben a példában most egy olyan riasztást állítunk be, amely napi küld értesítést, ha az üzletek száma 100 fölé emelkedik. A riasztások az Értesítési központban jelennek meg. Azt is beállítjuk, hogy a Power BI egy e-mailt is küldjön.
+   ![Riasztások kezelése ablak](media/end-user-alerts/power-bi-manage-alert.png)
+4. Görgessen le, és adja meg a riasztás adatait.  Ebben a példában most egy olyan riasztást hozunk létre, amely naponta küld értesítést, ha a piaci részesedésünk eléri vagy meghaladja a 35 értéket. A riasztások az Értesítési központban jelennek meg. Azt is beállítjuk, hogy a Power BI egy e-mailt is küldjön.
    
-   ![Riasztások kezelése ablak, küszöbérték beállítása](media/end-user-alerts/power-bi-set-alert-details.png)
+   ![Riasztások kezelése ablak, küszöbérték beállítása](media/end-user-alerts/power-bi-manage-alert-details.png)
 5. Válassza a **Mentés és bezárás** lehetőséget.
+ 
+   > [!NOTE]
+   > A riasztások kizárólag a frissített adatokon működnek. Az egyes adatok frissítésekor a Power BI ellenőrzi, hogy az adott adathoz van-e beállítva riasztás. Ha az adott adat elérte a riasztási küszöböt, a riasztás aktiválódik. 
+   > 
 
 ## <a name="receiving-alerts"></a>Riasztások fogadása
 Ha egy követett adat eléri valamelyik beállított küszöböt, több dolog történik. Először is a Power BI ellenőrzi, hogy eltelt-e legalább egy óra vagy 24 óra (a választott beállítástól függően) az utolsó riasztás óta. Ha az adat meghaladja a küszöböt, a rendszer mindenképp riasztást küld.
 
 Ezután a Power BI egy riasztást küld az Értesítési központba, valamint választhatóan az e-mail-fiókjába is. Az egyes riasztásokban közvetlen hivatkozás mutat az adatokra. Kattintson a hivatkozásra a vonatkozó csempe megtekintéséhez.  
 
-1. Ha úgy konfigurálta a riasztást, hogy az e-mailben is értesítse, valami ilyesmit talál majd a bejövő levelei közt.
+1. Ha úgy konfigurálta a riasztást, hogy az e-mailben is értesítse, valami ilyesmit talál majd a bejövő levelei közt. Ezt a riasztást egy másik irányítópulton állítottuk be. Ez az irányítópult a Használhatósági csapat által elvégzett feladatokat követi nyomon.
    
-   ![Riasztási e-mail](media/end-user-alerts/powerbi-alerts-email.png)
+   ![Riasztási e-mail](media/end-user-alerts/power-bi-alert-email.png)
 2. A Power BI egy üzenetet küld az **Értesítési központba**, és egy új riasztás ikont jelenít meg az érintett csempén.
    
-   ![Értesítési ikon a Power BI szolgáltatásban](media/end-user-alerts/powerbi-alert-notifications.png)
+   ![Értesítési ikon a Power BI szolgáltatásban](media/end-user-alerts/power-bi-task-alert.png)
 3. A riasztás részleteinek megtekintéséhez nyissa meg az Értesítési központot.
    
-    ![riasztás olvasása](media/end-user-alerts/powerbi-alert-notification.png)
+    ![riasztás olvasása](media/end-user-alerts/power-bi-notification.png)
    
-   > [!NOTE]
-   > A riasztások kizárólag a frissített adatokon működnek. Az egyes adatok frissítésekor a Power BI ellenőrzi, hogy az adott adathoz van-e beállítva riasztás. Ha az adott adat elérte a riasztási küszöböt, a riasztás aktiválódik.
-   > 
-   > 
+  
 
 ## <a name="managing-alerts"></a>Riasztások kezelése
+
 A riasztásokat többféle módon is kezelheti: Magán az irányítópult csempén, a Power BI Beállítások menüből, az egyes csempéken a [Power BI mobilalkalmazásban iPhone-on](mobile/mobile-set-data-alerts-in-the-mobile-apps.md), vagy [Windows 10-en a Power BI mobilalkalmazásban](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### <a name="from-the-tile-itself"></a>Magáról a csempéről
+
 1. Ha módosítani vagy törölni szeretné egy adott csempe valamelyik riasztását, nyissa meg újra a **Riasztások kezelése** ablakot a harang ikon ![riasztás ikon](media/end-user-alerts/power-bi-bell-icon.png) kiválasztásával. Az adott csempéhez beállított összes riasztás megjelenik.
    
-    ![Riasztások kezelése ablak](media/end-user-alerts/powerbi-see-alerts.png).
+    ![Riasztások kezelése ablak](media/end-user-alerts/power-bi-manage-alerts.png).
 2. A riasztás módosításához válassza a neve mellett balra található nyilat.
    
-    ![Riasztás neve melletti nyíl](media/end-user-alerts/powerbi-see-alerts-arrow.png).
+    ![Riasztás neve melletti nyíl](media/end-user-alerts/power-bi-modify-alert.png).
 3. A riasztás módosításához válassza a neve mellett jobbra található kukát.
    
-      ![Kuka ikon kiválasztva](media/end-user-alerts/powerbi-see-alerts-delete.png)
+      ![Kuka ikon kiválasztva](media/end-user-alerts/power-bi-alert-delete.png)
 
 ### <a name="from-the-power-bi-settings-menu"></a>A Power BI Beállítások menüjéből
+
 1. Kattintson a fogaskerék ikonra a Power BI menüsorán.
    
     ![fogaskerék ikon](media/end-user-alerts/powerbi-gear-icon.png).
 2. A **Beállítások** alatt válassza a **Riasztások** elemet.
    
-    ![Riasztások fül a Beállítások ablakban](media/end-user-alerts/powerbi-alert-settings.png)
+    ![Riasztások fül a Beállítások ablakban](media/end-user-alerts/power-bi-alert-settings.png)
 3. Erről a felületről be- és kikapcsolhatja a riasztásokat, megnyithatja a **Riasztások kezelése** ablakot a riasztás módosításához, vagy akár törölheti is a riasztást.
 
-## <a name="tips-and-troubleshooting"></a>Tippek és hibaelhárítás
-* A Bing-csempék, illetve a dátum/idő mértékekkel rendelkező kártyacsempék jelenleg nem támogatják a riasztásokat.
-* A riasztások kizárólag numerikus adattípusokkal működnek.
-* A riasztások kizárólag a frissített adatokon működnek. Statikus adatokon nem.
-* A riasztások a streamelési adatkészleteken csak akkor működnek, ha felépít egy KPI-/kártya-/mérőműszer-jelentési vizualizációt, majd rögzíti az irányítópulton.
+## <a name="tips-and-troubleshooting"></a>Tippek és hibaelhárítás 
+
+* Riasztásokat csak mérőműszereken, KPI-ken és kártyákon lehet beállítani.
+* Ha nem tud riasztást beállítani mérőműszerre, KPI-re vagy kártyára, kérjen segítséget a rendszergazdától. Időnként a riasztások ki vannak kapcsolva, vagy nem érhetők el az irányítópulthoz vagy az irányítópult-csempék bizonyos típusaihoz.
+* A riasztások kizárólag a frissített adatokon működnek. Statikus adatokon nem. A Microsoft által megadott minták többsége statikus. 
+
 
 ## <a name="clean-up-resources"></a>Erőforrások felszabadítása
 A riasztások törlésére vonatkozó utasítások fent olvashatók. Röviden összefoglalva válassza a fogaskerék ikont a Power BI menüsorán. A **Beállítások** alatt válassza a **Riasztások** elemet, és törölje a riasztást.

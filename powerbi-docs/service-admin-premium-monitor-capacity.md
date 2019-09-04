@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: b57f444f11c9592d80ffccf7a80be5fa9c7dcf3b
-ms.sourcegitcommit: c2197c3ad1d747b4ad490ab75771a0d32d0ae208
+ms.openlocfilehash: 9f5e2715af5b3fd898d3c7f0486c8b75463a1c42
+ms.sourcegitcommit: 9eae2a52af6926cda4d6b03de4d50d7fa8b2f216
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70008114"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70030191"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Prémium szintű kapacitások monitorozása az alkalmazással
 
@@ -244,7 +244,7 @@ Az Adathalmazok oldal több *területre* van felosztva, köztük a **Frissítés
 
 | **Jelentésszakasz** | **Metrikák** |
 | --- | --- |
-| CPU-kihasználtság |  Számítási feladatonkénti használat a teljes CPU-kapacitás százalékában. Óránként megjelenítve az elmúlt hét napra. |
+| CPU-kihasználtság |  Számítási feladatonkénti maximális CPU-felhasználás a teljes CPU-kapacitás százalékában. Óránként megjelenítve az elmúlt hét napra. |
 | Memóriahasználat |  Számítási feladatonkénti maximális memóriahasználat egy óra alatt, GB-ban (folytonos vonal) és számítási feladatonkénti korlát (pontozott vonal). Óránként megjelenítve az elmúlt hét napra. |
 |  |  |
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7a25a9cc220dcb9f4620b7fb77e6bac264a47256
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 848019a020e4a91e80caf342acb15c0d9b7e3121
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514742"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160219"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Csatlakozás SSAS többdimenziós modellekhez a Power BI Desktopban
 A Power BI Desktopban hozzáférhet az **SSAS többdimenziós modellekhez** (gyakori nevükön **SSAS MD-khez**).
@@ -35,7 +35,7 @@ Az alábbi táblázat a többdimenziós objektumok és a Power BI Desktopba viss
 | BISM – többdimenziós objektum | Táblázatos metaadatok |
 | --- | --- |
 | Kocka |Modell |
-| Kockadimenzió |Tábla |
+| Kockadimenzió |Táblázat |
 | Dimenzióattribútumok (kulcsok), Név |Oszlopok |
 | Mértékcsoport |Tábla |
 | Mérték |Mérték |
@@ -79,6 +79,7 @@ A többdimenziós modellek támogatják a dimenzió- és cellaszintű biztonság
 Az **SSAS MD** használatára bizonyos korlátozások vonatkoznak:
 
 * A kiszolgálóknak az Analysis Services SQL Server 2012 SP1 CU4 vagy azt követő verzióját kell futtatniuk, hogy a Power BI Desktop SSAS MD-összekötője megfelelően működjön.
+* Az SQL Server 2012-nek és az SQL Server 2014-nek csak az Enterprise és a BI kiadásai támogatják az élő kapcsolatokat. Az SQL Server standard verziója esetén az SQL Server 2016 vagy újabb verzió szükséges az élő kapcsolatokhoz.
 * A *Műveletek* és az *Elnevezett készletek* nem jelennek meg a Power BI-ban, azonban továbbra is lehet kapcsolódni a *Műveleteket* vagy *Elnevezett készleteket* is tartalmazó kockákhoz, és vizualizációkat és jelentéseket is létre lehet hozni.
 * Előfordulhat olyan hiba, hogy bár a Power BI megjeleníti az SSAS-modell metaadatait, de mégsem tud adatokat beolvasni a modellből. Ez olyankor fordulhat elő, amikor a rendszerre csak az MSOLAP-szolgáltató 32-bites verziója van telepítve, és nem rendelkezik a 64-bites verzióval. Ilyenkor a 64-bites verzió telepítése megoldhatja a problémát.
 * Többdimenziós SSAS-modellhez élő kapcsolattal rendelkező jelentés létrehozásakor nem hozhat létre „jelentésszintű” mértékeket. Csak az MD modellben definiált mértékek állnak rendelkezésre.

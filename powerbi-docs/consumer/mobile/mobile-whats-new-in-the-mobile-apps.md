@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: a7e26fd96066ce35e7d61443a8d7c32c64011d5e
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 5b0921689a923b5c787a5e4208fe35a863372878
+ms.sourcegitcommit: 9eae2a52af6926cda4d6b03de4d50d7fa8b2f216
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665439"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70030167"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -22,6 +22,12 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+
+## <a name="august-2019"></a>2019. augusztus
+
+### <a name="secured-access-with-azure-active-directory-ad-application-proxy"></a>Biztonságos hozzáférés az Azure Active Directory (AD) alkalmazásproxyján keresztül
+
+Az Azure Active Directory csapatával együttműködve integráltuk a Power BI mobilalkalmazásokat az Azure Active Directory (AAD) alkalmazásproxyjával. Ezzel a konfigurációval csatlakozhat a vállalati határokon belül futtatott jelentéskészítő kiszolgálóhoz a Power BI mobilalkalmazásból anélkül, hogy bonyolult helyszíni konfigurációt kellene beállítania. További információ: [A Power BI Mobile és az Azure AD alkalmazásproxyjának integrációja](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Ismerje meg, [hogyan konfigurálható az Azure AD alkalmazásproxyja és a Power BI](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>2019. július
 
