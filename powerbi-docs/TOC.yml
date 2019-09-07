@@ -403,6 +403,8 @@
       items:
         - name: A Power BI bemutatása
           href: power-bi-overview.md
+        - name: Mi az a Power BI szolgáltatás?
+          href: power-bi-service-overview.md
         - name: A Power BI Desktop és a szolgáltatás összehasonlítása
           href: service-service-vs-desktop.md
     - name: Oktatóanyagok
