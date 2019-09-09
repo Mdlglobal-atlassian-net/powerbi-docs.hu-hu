@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ed3a65e25694c23e1852a554742e0f8a6e6ff668
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 5d0ace5c2986b30436838d33037ae3019bd8bdce
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530581"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751576"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Alkalmazás közzététele a Power BI-ban
 
@@ -127,7 +127,7 @@ Az alábbiakat általában érdemes szem előtt tartani az új navigáció kész
 Amikor hivatkozásokat ad az alkalmazásnavigációhoz és a Tartalomterület lehetőséget választja:
 * Ellenőrizze, hogy a hivatkozás beágyazható-e. Bizonyos szolgáltatások blokkolják a tartalmuk beágyazását olyan külső webhelyeken, amilyen a Power BI.
 * Olyan Power BI-szolgáltatástartalmak, mint a jelentések és irányítópultok más munkaterületeken való beágyazása nem támogatott. 
-* Power BI jelentéskészítő kiszolgáló-tartalmat annak natív beágyazási URL-tartalmával ágyazhat be annak helyszíni üzemelő példányából. Az URL beszerzéséhez hajtsa végre a [Power BI jelentéskészítő kiszolgálóval készült jelentés URL-címének létrehozása](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#creating-the-power-bi-report-server-report-url) című szakaszban leírt lépéseket. Tartsa szem előtt, hogy a szokásos hitelesítési szabályok érvényesek, így a tartalom megtekintéséhez a helyszíni kiszolgálóval való VPN-kapcsolat szükséges. 
+* Power BI jelentéskészítő kiszolgáló-tartalmat annak natív beágyazási URL-tartalmával ágyazhat be annak helyszíni üzemelő példányából. Az URL beszerzéséhez hajtsa végre a [Power BI jelentéskészítő kiszolgálóval készült jelentés URL-címének létrehozása](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url) című szakaszban leírt lépéseket. Tartsa szem előtt, hogy a szokásos hitelesítési szabályok érvényesek, így a tartalom megtekintéséhez a helyszíni kiszolgálóval való VPN-kapcsolat szükséges. 
 * A beágyazott tartalom felső részén figyelmeztetés jelenik meg arról, hogy a tartalom nem Power BI-beli.
 
 

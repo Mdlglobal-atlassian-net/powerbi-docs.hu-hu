@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 848019a020e4a91e80caf342acb15c0d9b7e3121
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: b089c3e51ce80fdb776455519f2569ee8fa24572
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160219"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751632"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Csatlakozás SSAS többdimenziós modellekhez a Power BI Desktopban
 A Power BI Desktopban hozzáférhet az **SSAS többdimenziós modellekhez** (gyakori nevükön **SSAS MD-khez**).
@@ -87,7 +87,7 @@ Az **SSAS MD** használatára bizonyos korlátozások vonatkoznak:
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Az SSAS MD támogatott szolgáltatásai a Power BI Desktopban
 Az SSAS MD következő szolgáltatásai támogatottak a Power BI Desktopban:
 
-* Az alábbi elemek használata támogatott az **SSAS MD** jelen kiadásában (a szolgáltatásokkal kapcsolatban [további információk](https://msdn.microsoft.com/library/jj969574.aspx) is rendelkezésre állnak):
+* Az alábbi elemek használata támogatott az **SSAS MD** jelen kiadásában (a szolgáltatásokkal kapcsolatban [további információk](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/understanding-power-view-for-multidimensional-models?view=sql-server-2014) is rendelkezésre állnak):
   * Megjelenítési mappák
   * KPI-trendek
   * Alapértelmezett tagok

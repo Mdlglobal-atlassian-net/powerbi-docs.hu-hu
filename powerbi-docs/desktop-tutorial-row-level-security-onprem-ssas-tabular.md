@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/28/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6bfcb218f92c2b6e8a3349261e15e6b71b9512b2
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: bbd40173bd10abf312ff382a9452f7636234bc95
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523244"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751674"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dinamikus sorszintű biztonság Analysis Services-beli táblázatos modellel
 
@@ -35,7 +35,7 @@ Ehhez az oktatóanyaghoz szüksége lesz az [**AdventureworksDW2012** adatbázis
 
 ## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>1\. feladat: A felhasználói biztonság tábla létrehozása és az adatkapcsolat meghatározása
 
-Számos cikkben találhat leírást arról, hogy hogyan állítható be a sorszintű dinamikus biztonság az **SQL Server Analysis Services-beli (SSAS) táblázatos** modellel. Ehhez a mintához a [Dinamikus biztonság implementálása sorszűrőkkel](https://msdn.microsoft.com/library/hh479759.aspx) című cikket használjuk. 
+Számos cikkben találhat leírást arról, hogy hogyan állítható be a sorszintű dinamikus biztonság az **SQL Server Analysis Services-beli (SSAS) táblázatos** modellel. Ehhez a mintához a [Dinamikus biztonság implementálása sorszűrőkkel](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) című cikket használjuk. 
 
 Az itt ismertetett lépésekhez az **AdventureworksDW2012** relációs adatbázist kell használnia.
 
