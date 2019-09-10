@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 07/15/2019
-ms.openlocfilehash: 2e59499b93f4d1b4879cdec5b807f863a80718aa
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.date: 09/04/2019
+ms.openlocfilehash: 2be953c31ba3090e83e58f8e5626bb83e249556e
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665372"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302696"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Többoldalas jelentések a Power BI-ban: Gyakori kérdések 
 
@@ -26,11 +26,11 @@ Ez a cikk számos, a Power BI Premium lapszámozott jelentéseivel, valamint a J
 
 ### <a name="what-size-premium-capacity-do-i-need-for-paginated-reports"></a>Milyen méretű Prémium szintű kapacitás szükséges a lapszámozott jelentésekhez?
 
-A lapszámozott jelentések számítási feladatai a P1–P3 termékváltozatokon érhetők el.  SaaS-beágyazási helyzetekben az A4–A6 termékváltozatokban is használhatók.
+A lapszámozott jelentések számítási feladatai a P1–P3 termékváltozatokon érhetők el.  Beágyazási vagy tesztelési/fejlesztési helyzetekben az A4–A6 termékváltozatokkal is használható.
 
 ### <a name="what-is-the-maximum-memory-threshold-i-can-put-for-paginated-reports-in-my-capacity"></a>Mi a kapacitásom lapszámozott jelentéseihez megadható maximális memóriaküszöb?
 
-2019 júniusának végéig a memóriának akár 100%-át is felhasználhatja ehhez a számítási feladathoz. 
+A memóriának akár 100%-át is felhasználhatja ehhez a számítási feladathoz.
 
 ### <a name="how-does-user-access-work-for-paginated-reports"></a>Hogyan működik a felhasználói hozzáférés lapszámozott jelentések esetén?
 
@@ -152,7 +152,7 @@ Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF, .CSV, XML, és MHTML
 
 Igen, nyomtatás is lehetséges a lapszámozott jelentéseknél, és egy új, továbbfejlesztett előnézet is használható. 
 
-### <a name="are-e-mail-subscriptions-available-yet-for-paginated-reports"></a>Léteznek már e-mail-előfizetések a lapszámozott jelentésekhez?
+### <a name="are-e-mail-subscriptions-available-for-paginated-reports"></a>Léteznek e-mailes feliratkozások a többoldalas jelentésekhez?
 
 Igen, az e-mail-feliratkozások teljes mértékben támogatottak a lapszámozott jelentésekre, és ehhez hat különböző fájlformátum és paraméterérték támogatása is járul.
 
@@ -166,7 +166,7 @@ Az SaaS-beágyazás már támogatott. A PaaS-beágyazás jelenleg nem támogatot
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Végezhetek részletezést egy Power BI-jelentésből egy lapszámozott jelentésbe?
 
-Még nem, de a jövőben ezt mindenképp lehetővé tesszük.
+Igen, ez úgy valósítható meg, hogy URL-paramétereket használ a többoldalas jelentésekhez.
 
 ### <a name="can-i-share-my-paginated-report-content-through-a-power-bi-app"></a>Megoszthatom a lapszámozott jelentésem tartalmát egy Power BI-alkalmazáson keresztül?
 
