@@ -4,20 +4,19 @@ description: Ez a témakör azt mutatja be a Power BI-felhasználóknak és -vé
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 8/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
-ms.openlocfilehash: 0896d397c7cc78ce36109cf1c975b34d081169a1
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: e02d7bfa295b3bd18b0b6b9c64c688ed668c8389
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70184676"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391753"
 ---
-# <a name="view-a-report-in-power-bi-service-for-consumers"></a>Jelentés megtekintése az *ügyfeleknek* készült Power BI szolgáltatásban
+# <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>A *felhasználóknak* készült Power BI szolgáltatásban jelentéseket tekinthet meg
 A jelentések egy vagy több oldalnyi vizualizációból állnak. A jelentéseket a Power BI *tervezői* hozzák létre, és [megosztják őket a *felhasználókkal* közvetlenül](end-user-shared-with-me.md) vagy egy [alkalmazás](end-user-apps.md) részeként. 
 
 A jelentések megnyitásának számos különböző módja van, amelyek közül most kettőt mutatunk be: a kezdőlapról, és az irányítópultról történő megnyitást. 
@@ -31,7 +30,7 @@ Nyissunk meg egy Önnel közvetlenül megosztott jelentést, majd egy olyat, ame
    ![Kezdőlap](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Önnel megosztott jelentés megnyitása
-A Power BI *tervezői* közvetlenül megoszthatják a jelentést Önnel. Az ezúton megosztott tartalmak a bal oldali navigációs sávon található **Velem megosztva** tárolóban, valamint a kezdőlap **Velem megosztva** szakaszában jelennek meg.
+A Power BI-*tervezők* megoszthatnak egy adott jelentést közvetlenül Önnel e-mailes hivatkozással vagy a Power BI kezdőlapjához való hozzáadással. Az ezúton megosztott tartalmak a bal oldali navigációs sávon található **Velem megosztva** tárolóban, valamint a kezdőlap **Velem megosztva** szakaszában jelennek meg.
 
 1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com).
 
@@ -45,13 +44,13 @@ A Power BI *tervezői* közvetlenül megoszthatják a jelentést Önnel. Az ezú
 
 4. A jelentés megnyitásához egyszerűen válassza ki az egyik *jelentéskártyát*.
 
-   ![jelentés oldala](./media/end-user-report-open/power-bi-report-open.png)
+   ![jelentés oldala](./media/end-user-report-open/power-bi-open.png)
 
 5. Figyelje meg a bal oldalon található lapokat.  Minden fül egy *jelentésoldalt* jelöl. Jelenleg a *Growth Opportunity* (Növekedési lehetőség) lap van megnyitva. A jelentésoldal megnyitásához válassza ki az *Idei bevétel kategóriát*. 
 
    ![jelentésoldal fülei](./media/end-user-report-open/power-bi-ytd.png)
 
-6. Most a jelentés teljes oldalát látjuk. Az oldal megjelenítésének módosításához (kinagyításához) válassza a Nézet legördülő elemet a jobb felső sarokban ( **>** ), és válassza a **Tényleges méret** lehetőséget.
+6. Most a jelentés teljes oldalát látjuk. Az oldal megjelenítésének módosításához (kinagyításához) válassza a Nézet legördülő elemet a jobb felső sarokban, majd válassza a **Tényleges méret** lehetőséget.
 
    ![nagyítás módosítása](./media/end-user-report-open/power-bi-fit-new.png)
 
@@ -66,7 +65,7 @@ A munkatársaitól kapott vagy az AppSource-ból szerzett alkalmazásokat a kezd
 
    ![Kezdőlap](./media/end-user-report-open/power-bi-my-apps.png)
 
-8. A megnyitáshoz kattintson az egyik alkalmazásra. Az alkalmazás *tervezője* által megadott beállításoktól függően az alkalmazás egy irányítópultot, egy jelentést vagy egy alkalmazás tartalomjegyzékét nyitja meg. Ha az alkalmazásra kattintva:
+8. A megnyitáshoz kattintson az egyik alkalmazásra. Az alkalmazás *tervezője* által megadott beállításoktól függően az alkalmazás egy irányítópultot vagy egy jelentést nyit meg. Ha az alkalmazásra kattintva:
     - megnyílik a jelentés, készen is van.
     - egy irányítópult nyílik meg, tekintse meg a következő szakaszt: ***Jelentés megnyitása irányítópultról***.
 
@@ -95,5 +94,5 @@ Ha már otthonosabban mozog a Power BI szolgáltatásban, minden bizonnyal tudni
 - és még néhány további lehetőség
 
 ## <a name="next-steps"></a>Következő lépések
-[A jelentéseket számos különböző módon kezelheti](end-user-reading-view.md).  Kezdésként kattintson a jelentésvászon oldalán található fülekre.
+[Jelentés megnyitása és megtekintése](end-user-dashboard-open.md)
 

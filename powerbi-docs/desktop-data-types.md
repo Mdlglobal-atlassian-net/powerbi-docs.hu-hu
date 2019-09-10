@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: reference
-ms.date: 04/10/2019
+ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 00ff6a901ef4056e15ccc0087f0783826b1a64b2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ccde7f01968a9fdcdd74903819b7083a552479b0
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61309004"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391767"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Adattípusok a Power BI Desktopban
 A cikk a Power BI Desktop és a Data Analysis Expressions (DAX) által támogatott adattípusokat ismerteti. 
@@ -44,7 +44,7 @@ A Power BI Desktop három számtípust támogat:
 
 **Fixpontos tizedes tört** – A tizedeselválasztó rögzített helyen található. A tizedeselválasztótól jobbra minden esetben négy számjegy található, és a szám legfeljebb 19 helyiértéket tartalmazhat.  A legnagyobb érték 922 337 203 685 477,5807 lehet (pozitív vagy negatív).  A Fixpontos tizedes tört típus olyan esetekben hasznos, amikor a kerekítés hibákhoz vezethet.  Ha sok olyan számmal dolgozik, amelyeknek kicsi a tört része, ezek összeadódhatnak, és az eredmény hibás lehet.  Mivel a tizedesjeltől több mint négy pozícióval jobbra található értékek le vannak vágva, a Fixpontos tizedes tört segít elkerülni ezeket a hibákat.   Amennyiben jártas az SQL Server használatában, ez az adattípus megegyezik az SQL Server Tizedes tört (19,4) típusával vagy a Power Pivot Pénznemadat típusával. 
 
-**Egész szám** – Egy 64 bites (nyolc bájtos), egész számot jelöl. Mivel egész számról van szó, nincsenek számjegyek a tizedeselválasztótól jobbra. Legfeljebb 19 számjegyet tartalmazhat, és pozitív vagy negatív egész számokat jelölhet -9 223 372 036 854 775 808 (-2^63) és 9 223 372 036 854 775 807 (2^63-1) között.  A különféle szám adattípusok közül ez a típus jelölheti a lehető legnagyobb értékű számot.  Ahogy a Fixpontos tizedes tört szám típus, az Egész szám típus is hasznos lehet olyan esetekben, ahol felügyelet alatt szeretné tartani a kerekítést. 
+**Egész szám** – Egy 64 bites (nyolc bájtos), egész számot jelöl. Mivel egész számról van szó, nincsenek számjegyek a tizedeselválasztótól jobbra. Legfeljebb 19 számjegyet tartalmazhat, és pozitív vagy negatív egész számokat jelölhet -9 223 372 036 854 775 807 (-2^63+1) és 9 223 372 036 854 775 806 (2^63-2) között. A különféle szám adattípusok közül ez a típus jelölheti a lehető legnagyobb értékű számot.  Ahogy a Fixpontos tizedes tört szám típus, az Egész szám típus is hasznos lehet olyan esetekben, ahol felügyelet alatt szeretné tartani a kerekítést. 
 
 > [!NOTE]
 >  A Power BI Desktop-adatmodell 64 bites egész számokat támogat, de a vizualizációk által biztonságosan kifejezhető legnagyobb szám 9 007 199 254 740 991 (2^53-1) a JavaScript-korlátozások miatt. Ha az adatmodellben ennél nagyobb számokkal dolgozik, akkor számításokkal csökkentheti azokat, mielőtt hozzáadná egy vizualizációhoz 

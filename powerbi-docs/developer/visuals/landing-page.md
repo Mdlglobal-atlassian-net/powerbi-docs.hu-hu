@@ -1,6 +1,6 @@
 ---
-title: Kezdőlap
-description: Kezdőlap hozzáadása Power BI-vizualizációkhoz
+title: Kezdőlap hozzáadása Power BI-vizualizációkhoz
+description: Ez a cikk azt ismerteti, hogy hogyan adhat kezdőlapot a Power BI-vizualizációkhoz.
 author: sranins
 ms.author: rasala
 manager: rkarlin
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 44cc9314b31803c97d3203d4aab846685d8f88fa
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: d15c52134fe3c8638625e50a1374867a4abed3c1
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424884"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236708"
 ---
-# <a name="landing-page"></a>Kezdőlap
+# <a name="add-a-landing-page-to-your-power-bi-visuals"></a>Kezdőlap hozzáadása Power BI-vizualizációkhoz
 
-Az API 2.3.0-val kezdőlapot adhat a vizualizációihoz. Ehhez adja hozzá a `supportsLandingPage` elemet a funkciókhoz, majd állítsa igazra. A vizualizáció így már azelőtt elindul és frissül, hogy adatokat adna hozzá (azaz nem jelenít meg vízjelet), Ön pedig megtervezheti, hogyan nézzen ki saját kezdőlapja, amíg a vizualizáció nem tartalmaz adatokat.
+Az API 2.3.0-val kezdőlapot adhat a Power BI-vizualizációkhoz. Ehhez adja hozzá a `supportsLandingPage` elemet a funkciókhoz, majd állítsa igaz értékre. Ez a művelet inicializálja és frissíti a vizualizációt, mielőtt Ön adatokat adna hozzá. Mivel a vizualizáció már nem jelenít meg vízjelet, saját kezdőlapot tervezhet, amely az adatokat nem tartalmazó vizualizáción jelenik meg.
 
 ```typescript
 export class BarChart implements IVisual {
@@ -57,6 +57,6 @@ export class BarChart implements IVisual {
     }
 ```
 
-Minta
+A következő képen egy példát láthat a kezdőlapra:
 
 ![képernyőkép a kezdőlapról](./media/landing-page.png)

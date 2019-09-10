@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 09/04/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5455a5f3b4bda6cf6d63825222822c4acfa5f03a
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 59c55d2e9322b0b7d76a35f4eec0863efe4959e0
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70159947"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302638"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>A DirectQuery által támogatott adatforrások a Power BI-ban
 
@@ -29,14 +29,16 @@ A következő adatforrások támogatják a DirectQueryt a Power BI-ban:
 * Azure HDInsight Spark
 * [Azure SQL Database](service-azure-sql-database-with-direct-connect.md)
 * [Az Azure SQL Data Warehouse](service-azure-sql-data-warehouse-with-direct-connect.md)
+* Denodo
 * Google BigQuery
 * HDInsight interaktív lekérdezés
-* IBM DB2-adatbázis
+* IBM DB2 (Microsoft Provider))
 * IBM Netezza
 * Impala (2.x-es verzió)
 * MarkLogic
 * Oracle Database (12-es és újabb verzió)
 * Oracle Essbase
+* PostgreSQL
 * SAP Business Warehouse-alkalmazáskiszolgáló
 * SAP Business Warehouse üzenetkezelési kiszolgáló
 * SAP HANA
@@ -65,15 +67,24 @@ Az alábbi tábla meghatározza, hogy szükség van-e **helyszíni adatátjáró
 | Azure SQL Data Warehouse |Nem |
 | Google BigQuery |Nem |
 | IBM Netezza |Igen |
+| IBM DB2 (IBM Provider) |Igen |
+| IBM DB2 (Microsoft Provider) |Nem |
+| IBM Informix-adatbázis |Nem |
 | Impala (2.x-es verzió) |Igen |
+| MySQL |Igen |
+| ODBC |Igen |
 | Oracle Database |Igen |
+| PostgreSQL |Igen |
 | SAP Business Warehouse-alkalmazáskiszolgáló |Igen |
 | SAP Business Warehouse üzenetkezelési kiszolgáló |Még nem támogatott a **Power BI szolgáltatásban** |
 | SAP HANA |Igen |
 | Snowflake |Igen |
 | Spark (bétaverzió) (0.9-es és újabb) |Igen |
 | SQL Server |Igen |
+| Sybase |Igen |
 | Teradata-adatbázis |Igen |
+| Vertica |Igen |
+
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Egyszeri bejelentkezés (SSO) DirectQuery-forrásokhoz
 

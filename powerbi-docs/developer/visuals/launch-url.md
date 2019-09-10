@@ -1,6 +1,6 @@
 ---
-title: Indítási URL-cím
-description: A Power BI vizualizációk új lapon nyithatnak meg URL-címeket
+title: Indítási URL-cím létrehozása
+description: Ez a cikk bemutatja, hogyan nyithat meg egy URL-címet egy új lapon Power BI-vizualizációkkal.
 author: Guy-Moses
 ms.author: guymos
 manager: rkarlin
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 1a7002c3b45f341c0cbc0db683bc4f8a113e21f9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 3ef6be9383b606ce865b4bcd3ccda397e471301b
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424861"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236653"
 ---
-# <a name="launch-url"></a>Indítási URL-cím
+# <a name="create-a-launch-url"></a>Indítási URL-cím létrehozása
 
-Az Indítási URL-címmel új böngészőlap (vagy -ablak) nyitható meg a tényleges munka a Power BI-nak való delegálásával.
+Indítási URL-cím létrehozásával új böngészőlapot (vagy -ablakot) nyithat meg a tényleges munka a Power BI-nak való delegálásával.
 
 ## <a name="sample"></a>Minta
 
@@ -36,18 +36,21 @@ this.host.launchUrl('http://some.link.net');
 
 ## <a name="restrictions"></a>Korlátozások
 
-* Csak abszolút útvonalakat használjon, relatívokat ne. A `http://some.link.net/subfolder/page.html` útvonal megfelel, a `/page.html` azonban nem nyitható meg.
-* Jelenleg csak a `http` és `https` protokollok támogatottak. Ne használjon `ftp` és `mailto`, illetve hasonló protokollokat.
+* Csak abszolút elérési utakat használjon, relatívokat ne. Példa egy abszolút elérési útra: `http://some.link.net/subfolder/page.html`. A `/page.html` relatív elérési út nem nyílik meg.
+
+* Jelenleg csak a *HTTP* és *HTTPS* protokollok támogatottak. Ne használjon *FTP*, *MAILTO* és hasonló protokollokat.
 
 ## <a name="best-practices"></a>Ajánlott eljárások
 
-1. A legtöbb esetben célszerű csak egy felhasználó explicit műveletére reagálva megnyitni egy hivatkozást. Tegye könnyen érthetővé a felhasználó számára, hogy a hivatkozásra vagy gombra kattintva új lap nyílik meg. Egy `launchUrl()` hívás aktiválása felhasználói művelet nélkül vagy egy másik művelet mellékhatásaként zavaró és bosszantó lehet a felhasználónak.
-2. Ha a hivatkozás nem elengedhetetlen a vizualizáció megfelelő működéséhez, érdemes lehetővé tenni a jelentés szerzőjének, hogy letilthassa és elrejtse a hivatkozást. Ez különösen fontos különleges Power BI-forgatókönyvekben, például egy jelentés külső alkalmazásba való beágyazásakor vagy a weben való közzétételekor.
-3. Ne indítson `launchUrl()` hívást hurkon belül, a vizualizáció `update` függvényén belül, vagy egyéb gyakran ismétlődő kódban.
+* A legtöbb esetben célszerű csak egy felhasználó explicit műveletére reagálva megnyitni egy hivatkozást. Tegye könnyen érthetővé a felhasználó számára, hogy a hivatkozásra vagy gombra kattintva új lap nyílik meg. Egy `launchUrl()` hívás aktiválása felhasználói művelet nélkül vagy egy másik művelet mellékhatásaként zavaró és bosszantó lehet a felhasználónak.
 
-## <a name="step-by-step-example"></a>Részletes példa
+* Ha a hivatkozás nem elengedhetetlen a vizualizáció megfelelő működéséhez, érdemes lehetővé tenni a jelentés szerzőjének, hogy letilthassa és elrejtse a hivatkozást. Ez különösen fontos különleges Power BI-forgatókönyvekben, például egy jelentés külső alkalmazásba való beágyazásakor vagy a weben való közzétételekor.
 
-### <a name="adding-a-link-launching-element"></a>Hivatkozásindítási elem hozzáadása
+* Ne indítson `launchUrl()` hívást hurkon belül, a vizualizáció `update` függvényén belül, vagy egyéb gyakran ismétlődő kódban.
+
+## <a name="a-step-by-step-example"></a>Részletes példa
+
+### <a name="add-a-link-launching-element"></a>Hivatkozásindítási elem hozzáadása
 
 A vizualizáció `constructor` függvényéhez a következő sorok lettek hozzáadva:
 
@@ -56,7 +59,7 @@ A vizualizáció `constructor` függvényéhez a következő sorok lettek hozzá
     options.element.appendChild(this.helpLinkElement);
 ```
 
-Emellett bővült egy privát függvénnyel, amely a horgonyelemet hozza létre és csatolja:
+Bővült egy privát függvénnyel, amely a horgonyelemet hozza létre és csatolja:
 
 ```typescript
 private createHelpLinkElement(): Element {
@@ -71,7 +74,7 @@ private createHelpLinkElement(): Element {
 };
 ```
 
-Végül a visual.less fájl egyik bejegyzése definiálja a hivatkozási elem stílusát:
+Végül a *visual.less* fájl egyik bejegyzése definiálja a hivatkozási elem stílusát:
 
 ```less
 .helpLink {
@@ -103,10 +106,11 @@ Végül a visual.less fájl egyik bejegyzése definiálja a hivatkozási elem st
 }
 ```
 
-### <a name="adding-a-toggling-mechanism"></a>Váltómechanizmus hozzáadása
+### <a name="add-a-toggling-mechanism"></a>Váltómechanizmus hozzáadása
 
-Ehhez egy statikus objektumot kell hozzáadni (lásd [a statikus objektumokról szóló oktatóanyagot](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties)), hogy a jelentés szerzője váltani tudjon a hivatkozáselem láthatósági beállításai között (az alapértelmezett beállítás az elrejtett állapot).
-Egy `showHelpLink` logikai statikus objektumot adtunk a `capabilities.json` objektumbejegyzéshez:
+Váltómechanizmus hozzáadásához egy statikus objektumot kell hozzáadnia, hogy a jelentés szerzője váltani tudjon a hivatkozáselem láthatósági beállításai között. (Az alapértelmezett beállítás a *rejtett* állapot.) További információért tekintse meg a [statikus objektumok oktatóanyagát](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties).
+
+A *capabilities.json* fájl objektumainak bejegyzése egy `showHelpLink` logikai statikus objektummal bővült, ahogyan az a következő kódban látható:
 
 ```typescript
 "objects": {
@@ -136,4 +140,4 @@ if (settings.generalView.showHelpLink) {
 }
 ```
 
-A `hidden` osztály a visual.less fájlban van definiálva, és az elem megjelenítését vezérli.
+A *rejtett* osztály a *visual.less* fájlban van definiálva, és az elem megjelenítését vezérli.

@@ -1,6 +1,6 @@
 ---
-title: Vizualizációk interakciói
-description: Annak ellenőrzése, hogy a Power BI-vizualizáció engedélyezi-e a vizualizáció-interakciókat
+title: Vizuális interakciók a Power BI-vizualizációkban
+description: Ez a cikk ismerteti, hogyan ellenőrizhető, hogy a Power BI-vizualizációk engedélyezik-e a vizualizációk interakcióit.
 author: shaym83
 ms.author: shaym
 manager: rkarlin
@@ -9,26 +9,25 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 739e59c6da3c1e464e0462a928bc4f33ea0d01f8
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: f2fb2d451deb63b5e9c08472654e28d0e1a469db
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424493"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236624"
 ---
-# <a name="visuals-interactions"></a>Vizualizációk interakciói
+# <a name="visual-interactions-in-power-bi-visuals"></a>Vizuális interakciók a Power BI-vizualizációkban
 
-A vizualizációk lekérdezhetik az „allowInteractions” jelzőt, amely azt jelzi, hogy a vizualizáció engedélyezi-e a vizualizáció-interakciókat.
-A vizualizációk például interaktívak a jelentések megtekintése vagy szerkesztése közben, azonban nem, amikor egy irányítópulton tekintik meg őket.
-Az ilyen interakciók a kattintás, a pásztázás, a nagyítás, a kijelölés és hasonlók.
-Az elemleírásokat minden forgatókönyvben engedélyezni kell, a jelzőtől függetlenül.
+A vizualizációk lekérdezhetik az `allowInteractions` jelző értékét, amely azt jelzi, hogy a vizualizáció engedélyezi-e a vizualizáció-interakciókat. A vizualizációk például interaktívak a jelentések megtekintése vagy szerkesztése közben, azonban nem, amikor egy irányítópulton tekintik meg őket. Az ilyen interakciók a *kattintás*, a *pásztázás*, a *nagyítás*, a *kijelölés* és hasonlók. 
 
-Az „allowInteractions” jelző logikai értékként jelenik meg a vizualizáció indításakor, az IVisualHost interfész tagjaként.
+> [!NOTE]
+> Minden forgatókönyvben engedélyeznie kell az elemleírásokat, függetlenül attól, hogy melyik jelölő van megadva.
 
-Az olyan Power BI-forgatókönyvekben, amelyekben a vizualizációk nem lehetnek interaktívak (például az irányítópult-csempéken), az „allowInteractions” jelző értéke hamis lesz.
-Ellenkező esetben (például jelentésekben) az „allowInteractions” értéke igaz.
+Az `allowInteractions` jelző logikai értékként jelenik meg a vizualizáció indításakor, az IVisualHost interfész tagjaként.
 
-További információt a [SampleBarChart vizualizációs adattárban](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/59a47935d8f5272ce145fe804193599ddb7e2001) találhat
+Az olyan Power BI-forgatókönyvekben, amelyekben a vizualizációk nem lehetnek interaktívak (például az irányítópult-csempéken), az `allowInteractions` jelző értéke `false`. Ellenkező esetben (például jelentéseknél) az `allowInteractions` értéke `true`.
+
+További információt a [SampleBarChart vizualizációs adattárban](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/59a47935d8f5272ce145fe804193599ddb7e2001) találhat.
 
 ```typescript
    ...

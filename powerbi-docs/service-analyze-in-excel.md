@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 09/04/2019
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 6f4beb98c195c5af9967f988015959806d485696
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 5dbfa400f25f6981f7a73bffe1afad2acf735334
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70159972"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391885"
 ---
 # <a name="analyze-in-excel"></a>Elemzés az Excelben
 Előfordulhat, hogy az Excel használatával szeretne megnézni és kezelni egy Power BI-adatkészletet. Az **Elemzés az Excelben** funkció segítségével pontosan ezt teheti meg, valamit elérheti az Excel kimutatás-, diagram- és szeletelő funkcióit a Power BI-ban létező adatkészletre vonatkozóan.
@@ -67,7 +67,7 @@ Bár a böngészőjében bejelentkezett a Power BI-ba, azonban amikor először 
 ### <a name="users-with-multiple-power-bi-accounts"></a>Több Power BI-fiókkal rendelkező felhasználók
 Bizonyos felhasználók több Power BI-fiókkal is rendelkeznek, és olyan helyzetbe kerülhetnek, hogy az egyik fiókkal bejelentkeztek a Power BI-ba, de az Elemzés az Excelben szolgáltatásban használt adatkészlethez egy másik fiókjuknak van hozzáférése. Ilyen esetekben egy **Tiltott** hibaüzenet vagy sikertelen bejelentkezési hibaüzenet jelenhet meg, amikor a felhasználó megpróbál hozzáférni egy Elemzés az Excelben-munkafüzetben használt adatkészlethez.
 
-Ekkor lehetősége van újra bejelentkezni azzal a Power BI-fiókkal, amelynek hozzáférése van az Elemzés az Excelben által elért adatkészlethez. Másik lehetőségként kiválaszthatja az Excel **Power BI** menüszalagjának **Profil** elemét, ami azonosítja, hogy jelenleg melyik fiókkal van bejelentkezve, és megad hivatkozást, amelyen keresztül a felhasználó kijelentkezhet (majd újra be, egy másik fiókkal).
+Ekkor lehetősége van újra bejelentkezni azzal a Power BI-fiókkal, amelynek hozzáférése van az Elemzés az Excelben által elért adatkészlethez. Másik lehetőségként kiválaszthatja az Excel **Power BI** menüszalagjának **Profil** elemét, ami azonosítja, hogy jelenleg melyik fiókkal van bejelentkezve, és megad hivatkozást, amelyen keresztül a felhasználó kijelentkezhet (majd újra be, egy másik fiókkal). Ha még nincs telepítve, [letöltheti az Excelhez készült Power BI Publisher](https://www.microsoft.com/download/details.aspx?id=50729) alkalmazást, amellyel telepíthető a Power BI-menüszalag az Excelben.
 
 ![](media/service-analyze-in-excel/pbi_anlz_excel_profile.png)
 

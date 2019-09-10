@@ -1,30 +1,29 @@
 ---
-title: Jelentés megtekintése a Power BI-ban
-description: Jelentések a Power BI-ban
+title: Jelentések a Power BI szolgáltatásban
+description: Jelentések a Power BI szolgáltatásban, felhasználók számára
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 08/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 9a844ff813435328df63240aa46aff3430117f6e
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: c13398ff08722c54a9f0c373a1c103e4d684c9bb
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67532182"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391352"
 ---
 # <a name="reports-in-power-bi"></a>Jelentések a Power BI-ban
 
 A Power BI-jelentések az adathalmazok többszempontú nézetei, amelyek az adathalmazból származó különféle eredményeket és megállapításokat bemutató vizualizációkat tartalmaznak.  A jelentések egyetlen vagy akár több oldalnyi vizualizációt is tartalmazhatnak. Munkahelyi szerepkörétől függően lehet, hogy Ön jelentéseket *tervez*. Előfordulhat az is, hogy jelentéseket *használ*.
 
-![Képernyőkép egy jelentésoldalról.](./media/end-user-reports/power-bi-report.png)
+![Képernyőkép egy jelentésoldalról.](./media/end-user-reports/power-bi-reports.png)
 
-Ez a jelentés négy oldallal (vagy lappal) rendelkezik, és jelenleg a **Hangulat** oldalt látja. Ezen az oldalon öt különböző vizualizáció és egy oldalcím található.
+Ez a jelentés hat oldallal (vagy lappal) rendelkezik, és jelenleg a **Hangulat** oldalt látja. Ezen az oldalon öt különböző vizualizáció és egy oldalcím található. A *Szűrők* panelen láthatjuk, hogy egy szűrő van alkalmazva minden jelentésoldalra. A Szűrők panel összecsukásához válassza a nyilat ( **>** ).
 
 Ha csak most kezdte el használni a Power BI-t, a [Power BI szolgáltatás felhasználói számára az alapfogalmakat](end-user-basic-concepts.md) ismertető cikket elolvasva egyszerűen elsajátíthatja az alapokat. A jelentések megtekinthetők és megoszthatók mobileszközön, illetve jegyzetek fűzhetők hozzájuk. További információ: [Jelentések vizsgálata a Power BI-mobilalkalmazásokban](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -42,6 +41,8 @@ A tartalmak kezelése és használata (szűrés, szeletelés, feliratkozás és 
 ### <a name="save-your-changes-or-revert-to-the-default-settings"></a>Módosítások mentése vagy visszaállítás az alapértelmezett beállításokra
 
 Ez nem azt jelenti, hogy a módosításait nem mentheti. Megteheti, a módosítások azonban egyedül azt befolyásolják, ahogyan Ön látja a tartalmakat. A jelentés eredeti alapértelmezett nézetének visszaállításához válassza a **Visszaállítás alapértelmezettre** elemet.
+
+![A Visszaállítás alapértelmezettre ikon képernyőképe.](./media/end-user-reports/power-bi-reset.png)
 
 ## <a name="dashboards-versus-reports"></a>Irányítópultok és jelentések
 
@@ -76,6 +77,5 @@ Lehet *felhasználó* is, aki másoktól kap jelentéseket. Ez esetben azt kell 
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Mi az a Power BI?](../power-bi-overview.md)
-
-[A Power BI szolgáltatás alapfogalmai felhasználók számára](end-user-basic-concepts.md)
+[Jelentés megnyitása és megtekintése](end-user-report-open.md)    
+[Irányítópultok a Power BI szolgáltatásban](end-user-dashboards.md)
