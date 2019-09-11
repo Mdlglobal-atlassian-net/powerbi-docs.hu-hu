@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e25a004098c5bfe5cf607f5ee4b26dfda09d792d
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 9add7ce3c5caf675fde15fd15eea03d9d9b49d9b
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530501"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70750906"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Munka szervezése az új munkaterületeken a Power BI-ban
 
@@ -61,7 +61,7 @@ A szerepkörökkel kezelheti, hogy mely felhasználók milyen műveleteket vége
 
 Szerepkörök felhasználói csoportokhoz való hozzárendelésekor a csoport felhasználói hozzáférnek a tartalomhoz. Ha beágyaz felhasználói csoportokat, minden tag jogosultságot kap.
 
-A négy szerepkör (rendszergazdák, tagok, közreműködők és megtekintők) képességei a következők:
+A négy szerepkör (rendszergazdák, tagok, közreműködők és megtekintők) képességei a következők: Ezekhez a képességekhez az utolsó kivételével Power BI Pro-licenc szükséges.
 
 |Képesség   | Rendszergazda  | Tag  | Közreműködő  | Megtekintő |
 |---|---|---|---|---|
@@ -73,9 +73,9 @@ A négy szerepkör (rendszergazdák, tagok, közreműködők és megtekintők) k
 | Engedélyezhetik másoknak az elemek újbóli megosztását. |  X | X  |   |   |
 | Létrehozhatnak, szerkeszthetnek és törölhetnek tartalmakat a munkaterületen.  |  X | X  | X  |   |
 | Közzétehetnek jelentéseket a munkaterületen, és törölhetnek tartalmakat.  |  X | X  | X  |   |
-| Egy elem megtekintése. |  X | X  | X  | X  |
 | Jelentést hozhatnak létre másik munkaterületen egy ezen a munkaterületen lévő adathalmaz alapján. |  X | X  | X  | X <sup>1</sup>  |
 | Jelentés másolása. | X | X | X | X <sup>1</sup> |
+| Egy elem megtekintése és kezelése. |  X | X  | X  | X  |
 
 **1** Ehhez Power BI Pro-licenc és [az adathalmazokra vonatkozó összeállítási engedély](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) szükséges. 
  

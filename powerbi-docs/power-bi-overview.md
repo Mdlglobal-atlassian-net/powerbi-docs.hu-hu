@@ -6,22 +6,18 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: overview
-ms.date: 08/19/2019
+ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 0e12d110708c955e0c63e11f7578523222375448
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 3ee116f4467abaeecf8c96f6e7e469f3265a9ebe
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654998"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751607"
 ---
 # <a name="what-is-power-bi"></a>A Power BI bemutatása
 A **Power BI** olyan szoftverszolgáltatások, alkalmazások és összekötők gyűjteménye, amellyel az egymástól független adatforrásokat egymással együttműködő, vizuálisan megragadó, interaktív elemzésekké alakítja. Az adatok lehetnek akár egy Excel-táblában, vagy felhőalapú és helyszíni hibrid adattárházak gyűjteményében is. A Power BI-jal egyszerűen csatlakozhat az adatforrásokhoz, vizuálisan megjelenítheti és feltárhatja a fontos részeket, és ezt bárkivel meg is oszthatja.
-
-![a Power BI bemeneti forrásait bemutató diagram](media/power-bi-overview/power-bi-input-new.png)
-
-A Power BI használható egyszerű és gyors módon – készíthet például gyors elemzéseket Excel-táblák vagy helyi adatbázis alapján. De a Power BI emellett egy robusztus, nagyvállalati szintű megoldás is, mely kiterjedt lehetőségeket kínál modellezéshez, valós idejű elemzésekhez, illetve egyéni fejlesztésekhez. Így tehát szolgálhat mind az Ön személyes jelentéskészítő és vizualizációs eszközeként, mind pedig projektek, részlegek vagy teljes nagyvállalatok analitikai és döntéshozatali motorjaként.
 
 ## <a name="the-parts-of-power-bi"></a>A Power BI részei
 Power BI a következőkből áll: 
@@ -31,14 +27,14 @@ Power BI a következőkből áll:
 
 ![Power BI Desktop, szolgáltatás, mobil](media/power-bi-overview/power-bi-overview-blocks.png)
 
-Ez a három elem – a &mdash;Power BI Desktop, a szolgáltatás és a mobilalkalmazások&mdash; – úgy lett tervezve, hogy a szerepkörük szerinti leghatékonyabb módon segítse a felhasználókat az üzleti elemzések létrehozásában, megosztásában és felhasználásában.
+Ez a három elem &mdash; a Power BI Desktop, a szolgáltatás és a mobilalkalmazások &mdash; úgy lett tervezve, hogy a szerepkörük szerinti leghatékonyabb módon segítse Önt és szerepkörét az üzleti elemzések létrehozásában, megosztásában és felhasználásában.
 
 A **Power BI jelentéskészítő kiszolgáló** a negyedik elem. Ezzel a Power BI Desktopban létrehozott Power BI-jelentéseket lehet közzétenni helyszíni jelentéskészítő kiszolgálón. További információ: [Power BI jelentéskészítő kiszolgáló](#on-premises-reporting-with-power-bi-report-server).
 
 ## <a name="how-power-bi-matches-your-role"></a>A Power BI illeszkedése az Ön szerepköréhez
 A Power BI szolgáltatás használata függhet attól, hogy Ön milyen szerepkört tölt be egy projektben vagy egy csapatban. A Power BI-t mindenki saját szerepkörének megfelelően különbözőképpen használja.
 
-Előfordulhat például, hogy Ön elsősorban a **Power BI szolgáltatást** használja. A számításokat végző és üzleti jelentéseket létrehozó munkatársa azonban nagy mértékben támaszkodik a **Power BI Desktop** alkalmazásra, és a jelentéseket közzéteszi a Power BI szolgáltatásban, ahol Ön aztán megtekintheti őket. Elképzelhető, hogy egy másik, értékesítési osztályon dolgozó munkatárs a **Power BI mobilalkalmazást** használja az értékesítési kvótái előrehaladásának figyeléséhez, illetve az új értékesítések részleteinek vizsgálatához.
+Lehetséges például, hogy Ön elsősorban a **Power BI szolgáltatást** használja jelentések és irányítópultok megtekintésére. A számításokat végző és üzleti jelentéseket létrehozó munkatársa esetleg nagy mértékben támaszkodik a **Power BI Desktop** alkalmazásra, és a jelentéseket közzéteszi a Power BI szolgáltatásban, ahol Ön aztán megtekinti azokat. Elképzelhető, hogy egy másik, értékesítési osztályon dolgozó munkatárs a **Power BI mobilalkalmazást** használja az értékesítési kvóták előrehaladásának figyeléséhez, illetve az új értékesítések részleteinek vizsgálatához.
 
 Fejlesztőként használhatja a Power BI API-jait arra, hogy az adatokat adatkészletekbe töltse be, vagy hogy irányítópultokat és jelentéseket ágyazzon be egyéni alkalmazásaiba. Javaslata van új vizualizációra? Hozza létre, és ossza meg másokkal is.  
 
@@ -47,10 +43,10 @@ A Power BI egyes elemeit használhatja emellett felváltva is attól függően, 
 A Power BI használatát az határozza meg, hogy e Power BI melyik funkciója vagy szolgáltatása a legmegfelelőbb az adott helyzetben. Például a Power BI Desktop alkalmazással jelentéseket hozhat létre a saját csapatának az ügyfélkapcsolati statisztikákról, és megtekintheti a leltárat és a gyártási folyamat állapotát a szolgáltatás egy valós idejű irányítópultján. A Power BI minden elemét elérheti, ami nagy mértékű rugalmasságot jelent.
 
 A szerepköréhez kapcsolódó dokumentumok elemzése:
-- Power BI [***tervezők***](desktop-what-is-desktop.md) számára
-- Power BI [***felhasználók***](consumer/end-user-consumer.md) számára
-- Power BI [***fejlesztők***](developer/what-can-you-do.md) számára
-- Power BI [***rendszergazdák***](service-admin-administering-power-bi-in-your-organization.md) számára
+- Power BI Desktop [*tervezők*](desktop-what-is-desktop.md) számára
+- Power BI [*felhasználók*](consumer/end-user-consumer.md) számára
+- Power BI [*fejlesztők*](developer/what-can-you-do.md) számára
+- Power BI [*rendszergazdák*](service-admin-administering-power-bi-in-your-organization.md) számára
 
 ## <a name="the-flow-of-work-in-power-bi"></a>A Power BI-ban való munka folyamata
 A Power BI-ban a leggyakoribb munkafolyamat első lépése az adatforrásokhoz való csatlakozás, majd pedig jelentések létrehozása a Power BI Desktopban. A jelentést ezt követően közzéteheti a Power BI Desktopból a Power BI szolgáltatásba és megoszthatja azt, így a végfelhasználók megtekinthetik azt a szolgáltatásban és a mobileszközökön is.
@@ -58,10 +54,11 @@ Ez egy nagyon gyakori munkafolyamat, és jól látszik benne, hogy hogyan egész
 
 Az alábbiakban [a Power BI Desktop és a Power BI szolgáltatás részletes összehasonlítását](service-service-vs-desktop.md) találja.
 
-De mi történik, ha Ön nem áll még készen arra, hogy a felhőbe települjön át, és jelentéseit egy vállalati tűzfal mögött szeretné tartani?  Olvasson tovább.
-
 ## <a name="on-premises-reporting-with-power-bi-report-server"></a>Helyszíni jelentéskészítés a Power BI jelentéskészítő kiszolgálóval
-A Power BI mobil és többoldalas jelentések létrehozása, telepítése és felügyelete a helyszínen a Power BI jelentéskészítő kiszolgáló által biztosított, használatra kész eszközökkel.
+
+De mi történik, ha Ön nem áll még készen arra, hogy a felhőbe települjön át, és jelentéseit egy vállalati tűzfal mögött kell tartania?  Olvasson tovább.
+
+Mobil és többoldalas Power BI-jelentéseket hozhat létre, telepíthet és felügyelhet a helyszínen a Power BI jelentéskészítő kiszolgáló által biztosított, használatra kész eszközökkel.
 
 ![a helyszíni diagramja](media/power-bi-overview/power-bi-report-server2.png)
 
