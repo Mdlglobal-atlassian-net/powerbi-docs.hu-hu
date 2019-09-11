@@ -7,111 +7,164 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/18/2018
+ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7390f029144e5cb37830921071ad5c2c678b2d4d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b41a50ae7c4aaf8f70c9d7745ea4767b7644a62f
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61285580"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70303120"
 ---
 # <a name="create-power-bi-visuals-using-python"></a>Power BI-vizualizációk létrehozása a Python használatával
 A **Power BI Desktopban** a **Python** használatával vizualizálhatja az adatokat.
 
-## <a name="install-python"></a>A Python telepítése
-A **Power BI Desktop** nem tartalmazza, helyezi üzembe vagy telepíti a **Python**-motort. A Python-szkriptek **Power BI Desktopban** való futtatásához külön kell telepítenie a **Pythont** a helyi számítógépen. A **Pythont** számos helyről ingyen letöltheti és telepítheti, például a [Python hivatalos letöltési oldaláról](https://www.python.org/) vagy az [Anacondáról](https://anaconda.org/anaconda/python/). A Power BI Desktopban használható Python-szkriptek jelenlegi kiadása támogatja a Unicode karaktereket és a szóközöket (üres karaktereket) a telepítési útvonalban.
+## <a name="prerequisites"></a>Előfeltételek
 
-## <a name="enable-python-visuals"></a>Python-vizualizációk engedélyezése
-A Python-vizualizációk engedélyezéséhez válassza ki a **Fájl > Lehetőségek és beállítások > Beállítások** lehetőséget, majd a megjelenő **Beállítások** lapon gondoskodjon arról, hogy a **Beállítások** ablak **Python-szkriptelés** szakaszában meg legyen adva a Python helyi telepítési útvonala, ahogy az a következő képen látható. A következő képen a Python helyi telepítési útvonala **C:\Python27**, és ez az elérési út van megadva a szövegdobozban. Gondoskodjon arról, hogy a megjelenő elérési út megegyezzen annak a helyi Python-telepítésnek a helyével, amelyet a **Power BI Desktoppal** használni kíván.
-   
-   ![](media/desktop-python-visuals/python-visuals-1.png)
+Végezze el a [Python-szkriptek futtatása a Power BI Desktopban](desktop-python-scripts.md) oktatóanyagot az alábbi Python-szkript használatával:
 
-Miután megadta a Python telepítési helyét, készen áll a Python-vizualizációk létrehozására.
+```python
+import pandas as pd 
+df = pd.DataFrame({ 
+    'Fname':['Harry','Sally','Paul','Abe','June','Mike','Tom'], 
+    'Age':[21,34,42,18,24,80,22], 
+    'Weight': [180, 130, 200, 140, 176, 142, 210], 
+    'Gender':['M','F','M','M','F','M','M'], 
+    'State':['Washington','Oregon','California','Washington','Nevada','Texas','Nevada'],
+    'Children':[4,1,2,3,0,2,0],
+    'Pets':[3,2,2,5,0,1,5] 
+}) 
+print (df) 
+```
+A [Python-szkriptek futtatása a Power BI Desktopban](desktop-python-scripts.md) című cikkből megtudhatja, hogyan lehet telepíteni a Pythont a helyi számítógépen, és hogyan lehet engedélyezni a Python-szkriptelést a **Power BI Desktopban**. Ez az oktatóanyag a fenti szkriptből származó adatok használatával szemlélteti a Python-vizualizációk létrehozását.
 
 ## <a name="create-python-visuals-in-power-bi-desktop"></a>Python-vizualizációk létrehozása a Power BI Desktopban
-1. Egy Python-vizualizáció hozzáadásához kattintson a **Python-vizualizáció** ikonra a **Vizualizáció** panelen, ahogy az a következő képen látható.
+1. A **Vizualizáció** panelen válassza a **Python-vizualizáció** ikont.
    
    ![](media/desktop-python-visuals/python-visuals-2.png)
 
-   Ha hozzáadunk egy jelentéshez egy Python-vizualizációt, a **Power BI Desktop** a következőket teszi:
-   
-   - Megjelenik a jelentésvásznon egy helyőrző Python-vizualizációs kép.
-   
-   - A középső panel aljánál megjelenik a **Python-szkriptszerkesztő**.
-   
-   ![](media/desktop-python-visuals/python-visuals-3.png)
+1.  A megjelenő **Parancsfájlok vizualizációinak engedélyezése** párbeszédpanelen válassza az **Engedélyezés** lehetőséget. 
 
-2. Ezután adja meg a **Mezők** területen az **Értékek** szakaszban, hogy a Python-szkript mely mezőket használja fel, ahogy azt a **Power BI Desktop** bármely más vizualizációja esetében is tenné. 
-    
-    A Python-szkript számára csak a **Mezők** területhez hozzáadott mezők érhetők el. A **Power BI Desktop Python-szkriptszerkesztőjében** a Python-szkripten dolgozva új mezőket adhat hozzá, vagy eltávolíthatja a szükségtelen mezőket a **Mezők** területről. A **Power BI Desktop** automatikusan észleli, hogy mely mezők lettek hozzáadva vagy eltávolítva.
+    Ha hozzáadunk egy jelentéshez egy Python-vizualizációt, a **Power BI Desktop** a következő műveleteket végzi el:
+   
+     - Megjelenik a jelentésvásznon egy helyőrző Python-vizualizációs kép.
+   
+     - A középső panel aljánál megjelenik a **Python-szkriptszerkesztő**.
+   
+    ![](media/desktop-python-visuals/python-visuals-3.png)
+
+1. Ezt követően húzza az **Age**, **Children**, **Fname**, **Gender**, **Pets**, **State** és **Weight** mezőket az **Értékek** szakaszba, ahol az „**Adatmezők hozzáadása itt**” szöveg látható. 
+
+    ![](media/desktop-python-visuals/python-visuals-15.png)
+
+   A Python-szkript csak az **Értékek** szakaszhoz már hozzáadott mezőket használhatja. A Python-parancsfájl használata közben hozzáadhat vagy eltávolíthat mezőket az **Értékek** szakaszból. A **Power BI Desktop** automatikusan észleli a mezők változásait.
    
    > [!NOTE]
    > A Python-vizualizációk összesítésének alapértelmezett típusa a *nincs összegzés*.
    > 
    > 
    
-3. Ezután a kiválasztott adatok alapján létrehozhat egy rajzot. 
+1. Ezután a kiválasztott adatok alapján létrehozhat egy rajzot. 
 
-    A mezők kiválasztásakor a **Python-szkriptszerkesztő** létrehozza a támogató Python-szkriptkötő kódot az alapján, hogy a szerkesztőpanel tetején, a szürke részen mely mezők lettek kiválasztva. Ahogy további mezőket adunk hozzá vagy távolítunk el, a Python-szkriptszerkesztő automatikusan létrehozza vagy eltávolítja a hozzájuk tartozó támogató kódot.
-   
-   A következő képen látható példában három mezőt választottunk ki: hp, gear és drat. Ennek eredményeképp a Python-szkriptszerkesztő a következő kötési kódot hozta létre:
-   
-   * Létrejött egy **dataset** nevű adathalmaz
-     * Az adathalmaz a felhasználó által kiválasztott különböző mezőkből áll
-   * Az alapértelmezett összesítés a *Nincs összegzés*
-   * A táblavizualizációkhoz hasonlóan a rendszer csoportosítja a mezőket, és a duplikált sorok csak egyszer jelennek meg
-   
-   ![](media/desktop-python-visuals/python-visuals-4.png)
-   
-   > [!TIP]
-   > Bizonyos esetekben szükség lehet arra, hogy a rendszer ne végezzen automatikus csoportosítást, vagy minden sort megjelenítsen, a duplikáltakat is beleértve. Ebben az esetben hozzáadhat egy indexmezőt az adatkészlethez, amelynek hatására a rendszer minden sort egyedinek tekint, így megakadályozza a csoportosítást.
-   > 
-   > 
-   
-   A létrejött adathalmaz neve **dataset**, a kiválasztott oszlopok pedig a saját neveik alapján érhetők el. Például a gear mező úgy érhető el, ha a Python-szkriptbe beírja a *dataset["gear"]* kifejezést.
+    Ahogy mezőket adunk hozzá vagy távolítunk el, a Python-szkriptszerkesztő automatikusan létrehozza vagy eltávolítja a hozzájuk tartozó támogató kódot. 
+    
+    Ennek eredményeképp a Python-szkriptszerkesztő a következő kötési kódot hozta létre.
 
-4. Mivel az adathalmaz automatikusan létrejön a kiválasztott mezők alapján, most már írhat olyan Python-szkripteket, amelyek a Python alapértelmezett eszközére küldik az ábrázolást. Ha a szkript elkészült, kattintson a **Futtatás** lehetőségre a **Python-szkriptszerkesztőben** (**Futtatás** lehetőség a címsor jobb oldalán).
+    * A szerkesztő létrehozott egy **adatkészlet** dataframe-et az Ön által hozzáadott mezőkkel. 
+    * Az alapértelmezett összesítés a *Nincs összegzés*.
+    * A táblavizualizációkhoz hasonlóan a rendszer csoportosítja a mezőket, és a duplikált sorok csak egyszer jelennek meg.
+
+        ![](media/desktop-python-visuals/python-visuals-10.png)
    
-    A **Futtatás** lehetőség kiválasztásakor a **Power BI Desktop** azonosítja az ábrázolást, és megjeleníti azt a vásznon. Mivel a folyamat végrehajtása a helyi Python-telepítésen történik, győződjön meg arról, hogy a szükséges csomagok telepítve vannak-e.
+     > [!TIP] 
+     > Bizonyos esetekben szükség lehet arra, hogy a rendszer ne végezzen automatikus csoportosítást, vagy minden sort megjelenítsen, a duplikáltakat is beleértve. Ebben az esetben hozzáadhat egy indexmezőt az adatkészlethez, amelynek hatására a rendszer minden sort egyedinek tekint, így megakadályozza a csoportosítást.
    
+   Az adatkészlet oszlopai a saját nevük alapján érhetők el. Például a Python-szkriptben a dataset["Age"] használatával hozzáférhet az age (kor) mezőhöz.
+
+1. Mivel az adathalmaz automatikusan létrejön a kiválasztott mezők alapján, most már írhat olyan Python-szkripteket, amelyek a Python alapértelmezett eszközére küldik az ábrázolást. Ha a szkript elkészült, válassza a **Futtatás** lehetőséget a **Python-szkriptszerkesztő** címsorában.
+
    A **Power BI Desktop** újrarajzolja a vizualizációt, ha a következő események bármelyike előfordul:
    
    * Ha a **Futtatás** lehetőséget választja a **Python-szkriptszerkesztő** címsorán
    * Ha az adatok frissítés, szűrés vagy kiemelés miatt változnak
+   
+   Ha egy Python-szkript futtatása hibát eredményez, a rendszer nem ábrázolja a Python-vizualizációt, hanem egy hibaüzenetet jelenít meg a vásznon. A hiba részleteinek megtekintéséhez az üzenetben válassza a **Részletek megjelenítése** lehetőséget.
 
-    A következő képen egy példa látható a korrelációrajzolási kódra, amely a különböző típusú gépkocsik tulajdonságai közötti korrelációkat ábrázolja.
+   A vizualizációk nagyobb méretű megtekintése érdekében a **Python-szkriptszerkesztő** kis méretűre állítható.
 
-    ![](media/desktop-python-visuals/python-visuals-5.png)
+Most hozzunk létre néhány vizualizációt.
 
-5. A vizualizációk nagyobb méretű megtekintése érdekében a **Python-szkriptszerkesztő** kis méretűre állítható. Természetesen a **Power BI Desktop** egyéb vizualizációihoz hasonlóan a korrelációs ábrázoláson keresztszűrést is alkalmazhat úgy, ha csak a sportkocsikat választja ki a gyűrűdiagramon (a fenti példaképen a jobb oldali kerek vizualizáció).
+## <a name="create-a-scatter-plot"></a>Pontdiagram létrehozása
 
-    ![](media/desktop-python-visuals/python-visuals-6.png)
+Hozzunk létre egy pontdiagramot, hogy megnézhessük, van-e összefüggés a kor és a súly között. 
 
-6. Emellett módosíthatja a Python-szkriptet a vizualizáció testreszabásához, és a Python képességeit kihasználva paramétereket adhat az ábrázolási parancshoz.
+1. Az **Illessze vagy gépelje be R-szkriptje kódját** területen írja be az alábbi kódot:
 
-    Az eredeti ábrázolási parancs a következő volt:
+   ```python
+   import matplotlib.pyplot as plt 
+   dataset.plot(kind='scatter', x='Age', y='Weight', color='red')
+   plt.show() 
+   ```  
+   A Python parancsfájl-szerkesztő paneljének ekkor az alábbihoz hasonlóan kell kinéznie:
 
-    plt.matshow(dataset.corr('pearson'))
+   ![](media/desktop-python-visuals/python-visuals-11.png)
 
-    A Python-szkript néhány módosításával a parancs most a következő:
+   A rendszer importálja a **matplotlib** kódtárat a vizualizációk ábrázolásához és létrehozásához.
 
-    plt.matshow(dataset.corr('kendall'))
+1. Ha a parancsfájl **futtatása** gombra kattint, a következő pontdiagram jön létre a helyőrző Python-vizualizációs képen.
 
-    Ennek eredményeként a Python-vizualizáció a Kendall Tau korrelációs együtthatóval végzi az ábrázolást, ahogyan az a következő képen látható.
+   ![](media/desktop-python-visuals/python-visuals-12.png)
 
-    ![](media/desktop-python-visuals/python-visuals-7.png)
+## <a name="create-a-line-plot-with-multiple-columns"></a>Vonaldiagram létrehozása több oszloppal
 
-    Ha egy Python-szkript futtatása hibát eredményez, a rendszer nem ábrázolja a Python-vizualizációt, hanem egy hibaüzenetet jelenít meg a vásznon. A hiba részleteinek megtekintéséhez kattintson a **Részletek megtekintése** lehetőségre a vásznon megjelenő Python-vizualizációs hibaüzenetben.
+ Minden személyhez hozzunk létre egy vonaldiagramot, amely a gyerekeik és kisállataik számát mutatja. Az **Illessze vagy gépelje be R-szkriptje kódját** területen távolítsa el vagy helyezze megjegyzések közé a kódot, és írja be az alábbi Python-kódot:
 
-    ![](media/desktop-python-visuals/python-visuals-8.png)
+ ```python
+ import matplotlib.pyplot as plt 
+ax = plt.gca() 
+dataset.plot(kind='line',x='Fname',y='Children',ax=ax) 
+dataset.plot(kind='line',x='Fname',y='Pets', color='red', ax=ax) 
+plt.show() 
+```
+Ha a parancsfájl **futtatása** gombra kattint, megjelenik a következő többoszlopos vonaldiagram.
 
-    > **Python-szkriptek biztonsága:** A Python-vizualizációk alapjait a Python-szkriptek jelentik, amelyek biztonsági vagy adatvédelmi kockázatot jelentő kódot tartalmazhatnak. Egy Python-vizualizáció első alkalommal való megtekintésekor vagy használatakor egy biztonsági figyelmeztető üzenet jelenik meg. Csak akkor engedélyezze a Python-vizualizációkat, ha megbízik a szerzőben és a forrásban, vagy ha már áttekintette és értelmezte a Python-szkriptet.
-    > 
-    > 
+![](media/desktop-python-visuals/python-visuals-13.png) 
+
+## <a name="create-a-bar-plot"></a>Sávdiagram létrehozása
+
+Hozzunk létre egy sávdiagramot minden személy korához. Az **Illessze vagy gépelje be R-szkriptje kódját** területen távolítsa el vagy helyezze megjegyzések közé a kódot, és írja be az alábbi Python-kódot:
+
+```python
+import matplotlib.pyplot as plt 
+dataset.plot(kind='bar',x='Fname',y='Age') 
+plt.show() 
+```
+
+Ha a **Futtatás** gombra kattint, megjelenik a következő sávdiagram:
+
+![](media/desktop-python-visuals/python-visuals-14.png) 
+
+## <a name="security"></a>Biztonság
+
+> [!IMPORTANT] 
+  > **Python-szkriptek biztonsága:** A Python-vizualizációk alapjait a Python-szkriptek jelentik, amelyek biztonsági vagy adatvédelmi kockázatot jelentő kódot tartalmazhatnak. Egy Python-vizualizáció első alkalommal való megtekintésekor vagy használatakor egy biztonsági figyelmeztető üzenet jelenik meg. Csak akkor engedélyezze a Python-vizualizációkat, ha megbízik a szerzőben és a forrásban, vagy ha már áttekintette és értelmezte a Python-szkriptet. 
+  >  
+
+## <a name="more-information-about-plotting-with-matprolib-pandas-and-python"></a>További információ ábrázolásáról a Matprolib, a Pandas és a Python használatával
+
+Ez az oktatóanyag segítséget nyújt az első lépésekhez vizualizációk Python használatával történő létrehozásához a **Power BI Desktopban**. Csak egy kis részletét mutatja be annak a sok-sok lehetőségnek és funkciónak, melyek elérhetőek vizualizációs jelentések létrehozásához a Python, a Pandas és a Matprolib kódtár használatával. Ezen kívül számos más forrás is elérhető még, de az első lépésekhez az alábbi néhány hivatkozást is használhatja.
+
+* Dokumentáció a [Matplotlib](https://matplotlib.org/) webhelyén. 
+* [Matplotlib-oktatóanyag: Alapszintű útmutató a Matplotlib és a Python használatához](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) 
+* [Matplotlib-oktatóanyag – Python Matplotlib-kódtár példákkal](https://www.edureka.co/blog/python-matplotlib-tutorial/) 
+* [Pandas API-referencia](http://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
+* [Python-vizualizációk a Power BI szolgáltatásban](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service/) 
+* [Python-vizualizációk használata Power BI-ban](https://www.absentdata.com/how-to-user-python-and-power-bi/)
+
 
 ## <a name="known-limitations"></a>Ismert korlátozások
+
 A **Power BI Desktopban** a Python-vizualizációkra vonatkozik néhány korlátozás:
 
 * Adatmennyiség korlátozásai – a Python-vizualizációk által az ábrázoláshoz felhasznált adatmennyiség 150 000 sorban van korlátozva. 150 000-nél több sor kiválasztásakor a rendszer csak az első 150 000 sort használja fel, és megjelenít egy üzenetet a képen.
@@ -122,8 +175,9 @@ A **Power BI Desktopban** a Python-vizualizációkra vonatkozik néhány korlát
 * A vásznon csak az alapértelmezett Python megjelenítőeszközön ábrázolt ábrázolások jelennek meg helyesen. Kerülje az eltérő Python megjelenítőeszközök használatát.
 
 ## <a name="next-steps"></a>Következő lépések
+
 Tekintse meg az alábbi, a Python programozási nyelv Power BI-ban történő használatára vonatkozó további információkat.
 
 * [Python-szkriptek futtatása a Power BI Desktopban](desktop-python-scripts.md)
-* [Külső Python IDE használata a Power BI-jal](desktop-python-ide.md)
+* [Külső Python-IDE használata a Power BI-ban](desktop-python-ide.md)
 
