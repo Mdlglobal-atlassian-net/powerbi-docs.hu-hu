@@ -1,6 +1,6 @@
 ---
-title: Események renderelése
-description: A Power BI vizualizációi értesíthetik a Power BI-t arról, hogy készen állnak a PowerPointba vagy PDF-be való exportálásra
+title: Renderelési események Power BI-vizualizációkban
+description: A Power BI-vizualizációk értesíthetik a Power BI-t arról, hogy készek a PowerPointba vagy PDF-fájlba exportálásra.
 author: Yarovinsky
 ms.author: alexyar
 manager: rkarlin
@@ -9,22 +9,22 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 46166b3503a770e033b98474fcf9240235296cc2
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: b481ce94e5025045466a05d71e30a00f02be7ead
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425091"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237167"
 ---
-# <a name="event-service"></a>Eseményszolgáltatás
+# <a name="render-events-in-power-bi-visuals"></a>Renderelési események Power BI-vizualizációkban
 
-Az új API három metódusból áll (elindítva, befejezve vagy sikertelen), amelyet a renderelés során kell meghívni.
+Az új API három olyan metódusból áll (`started`, `finished` vagy `failed`), amelyeket a renderelés során kell meghívni.
 
-A renderelés indításakor az egyéni vizualizációs kódja meghívja a renderingStarted metódust, amely jelzi, hogy a renderelési folyamat elindult.
+A renderelés indításakor a Power BI-vizualizáció kódja meghívja a `renderingStarted` metódust, amely jelzi, hogy a renderelési folyamat elindult.
 
-Ha a renderelés sikeres volt, az egyéni vizualizáció kódja azonnal meghívja a `renderingFinished` metódust, amely értesíti a figyelőket (**elsősorban az „Exportálás PDF-be” és az „Exportálás PowerPointba”** figyelőt), hogy a vizualizáció képe készen áll.
+Ha a renderelés sikeres volt, a Power BI-vizualizáció kódja azonnal meghívja a `renderingFinished` metódust, amely értesíti a figyelőket (elsősorban az *Exportálás PDF-be* és az *Exportálás PowerPointba* figyelőt), hogy a vizualizáció képe exportálásra kész.
 
-Ha a renderelés során hiba történik, az meggátolja, hogy az egyéni vizualizáció sikeresen végbemenjen. Az egyéni vizualizáció kódja ekkor meghívja a `renderingFailed` metódust, amely értesíti a figyelőt arról, hogy a renderelési folyamat nem fejeződött be. Ez a metódus emellett egy választható sztringet is nyújt a hiba okáról.
+Ha a folyamat közben probléma lép fel, a Power BI-vizualizáció sikeres renderelése meghiúsul. A Power BI-vizualizáció kódjának ekkor a `renderingFailed` metódus hívásával kell értesítenie a figyelőket arról, hogy a renderelési folyamat nem fejeződött be. Ez a metódus emellett választhatóan egy sztringet is visszaadhat, amely a hiba okáról nyújt tájékoztatást.
 
 ## <a name="usage"></a>Használat
 
@@ -38,31 +38,31 @@ export interface IVisualHost extends extensibility.IVisualHost {
  */
 export interface IVisualEventService {
     /**
-     * Should be called just before the actual rendering was started. 
-     * Usually at the very start of the update method.
+     * Should be called just before the actual rendering starts, 
+     * usually at the start of the update method
      *
-     * @param options - the visual update options received as update parameter
+     * @param options - the visual update options received as an update parameter
      */
     renderingStarted(options: VisualUpdateOptions): void;
 
     /**
-     * Shoudl be called immediately after finishing successfull rendering.
+     * Should be called immediately after rendering finishes successfully
      * 
-     * @param options - the visual update options received as update parameter
+     * @param options - the visual update options received as an update parameter
      */
     renderingFinished(options: VisualUpdateOptions): void;
 
     /**
-     * Called when rendering failed with optional reason string
+     * Called when rendering fails, with an optional reason string
      * 
-     * @param options - the visual update options received as update parameter
-     * @param reason - the option failure reason string
+     * @param options - the visual update options received as an update parameter
+     * @param reason - the optional failure reason string
      */
     renderingFailed(options: VisualUpdateOptions, reason?: string): void;
 }
 ```
 
-### <a name="simple-sample-the-visual-hasnt-any-animations-on-rendering"></a>Egyszerű minta. A vizualizáció nem rendelkezik renderelendő animációkkal
+### <a name="sample-the-visual-displays-no-animations"></a>Minta: A vizualizáció nem jelenít meg animációt
 
 ```typescript
     export class Visual implements IVisual {
@@ -83,9 +83,9 @@ export interface IVisualEventService {
         }
 ```
 
-### <a name="sample-the-visual-with-animation"></a>Minta. A vizualizáció animációval
+### <a name="sample-the-visual-displays-animations"></a>Minta: A vizualizáció animációkat jelenít meg
 
-Ha a vizualizációban animációval vagy aszinkron renderelési függvényekkel bír, a `renderingFinished` metódust kell meghíni az animáció után vagy az aszinkron függvényben.
+Ha a vizualizáció animációkat vagy aszinkron renderelési függvényeket tartalmaz, a `renderingFinished` metódust az animáció után vagy az aszinkron függvényen belül kell meghíni.
 
 ```typescript
     export class Visual implements IVisual {
@@ -104,7 +104,7 @@ Ha a vizualizációban animációval vagy aszinkron renderelési függvényekkel
         public update(options: VisualUpdateOptions) {
             this.events.renderingStarted(options);
             ...
-            // read more https://github.com/d3/d3-transition/blob/master/README.md#transition_end
+            // Learn more at https://github.com/d3/d3-transition/blob/master/README.md#transition_end
             d3.select(this.element).transition().duration(100).style("opacity","0").end().then(() => {
                 // renderingFinished called after transition end
                 this.events.renderingFinished(options);
@@ -114,4 +114,4 @@ Ha a vizualizációban animációval vagy aszinkron renderelési függvényekkel
 
 ## <a name="rendering-events-for-visual-certification"></a>Események renderelése a vizualizáció minősítéséhez
 
-A vizualizációk minősítésének egyik követelménye az események renderelésének támogatása. További információ a [minősítési követelményekről](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements)
+A vizualizációk minősítésének egyik követelménye a renderelési eseményeknek a vizualizáció általi támogatása. További információt a [minősítési követelményekben](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements) talál.

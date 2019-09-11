@@ -1,6 +1,6 @@
 ---
-title: Egységtesztek – bevezetés
-description: Egységtesztek írása Power BI-vizualizációs projektekhez
+title: Egységtesztek hozzáadása Power BI-vizualizációs projektekhez - Bevezetés
+description: Ez a cikk egységtesztek írását mutatja be Power BI-vizualizációs projektekhez
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -9,31 +9,29 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 4b16eaad9b541bf6e5d8df49ffda99d9bbd5bbf2
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: f0040ef53fbbce8c7133e5f645bcbddb0bbfadea
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424539"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236723"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Oktatóanyag: Egységtesztek hozzáadása Power BI-vizualizációs projektekhez
 
-Ez az oktatóanyag a Power BI-vizualizációkhoz készült egységtesztek írásának alapjait ismerteti.
+Ez a cikk a Power BI-vizualizációkhoz készült egységtesztek írásának alapjait ismerteti, köztük az alábbiakat:
 
-Az oktatóanyagban a következőkkel foglalkozunk
-
-* a karma.js tesztfuttató és a jasmine.js tesztelési keretrendszer használata
-* a powerbi-visuals-utils-testutils csomag használata
-* utánzatok és hamis elemek beállítása a Power BI-vizualizációk egységtesztelésének leegyszerűsítéséhez.
+* A Karma JavaScript-tesztfuttatási keretrendszer, a Jasmine beállítása.
+* A powerbi-visuals-utils-testutils csomag használata.
+* Utánzatok és hamis elemek beállítása a Power BI-vizualizációk egységtesztelésének leegyszerűsítéséhez.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-* Egy Power BI-vizualizációs projekt
-* Konfigurált Node.JS-környezet
+* Telepített Power BI-vizualizációs projekt
+* Konfigurált Node.js-környezet
 
-## <a name="install-and-configure-karmajs-and-jasmine"></a>A karma.js és a jasmine telepítése és konfigurálása
+## <a name="install-and-configure-the-karma-javascript-test-runner-and-jasmine"></a>A Karma JavaScript-tesztfuttató és a Jasmine telepítése és konfigurálása
 
-Adja hozzá a szükséges kódtárakat a package.json fájlhoz, a `devDependencies` szakaszban:
+Vegye fel a szükséges kódtárakat a *package.json* fájl `devDependencies` szakaszába:
 
 ```json
 "@babel/polyfill": "^7.2.5",
@@ -67,19 +65,19 @@ Adja hozzá a szükséges kódtárakat a package.json fájlhoz, a `devDependenci
 "webpack": "4.26.0"
 ```
 
-A csomagról további információt a lenti leírásban találhat.
+A csomagról a következő helyen talál további információt.
 
-Mentse a `package.json` fájlt, és hajtsa végre a parancssorban a `package.json` helyen:
+Mentse a *package.json* fájl, majd futtassa az alábbi parancsot a `package.json`-fájl helyén:
 
 ```cmd
 npm install
 ```
 
-A csomagkezelő telepíti a `package.json` fájlhoz adott összes új csomagot
+A csomagkezelő telepíti a *package.json* fájlba felvett összes új csomagot.
 
-Egységtesztek futtatásához konfigurálnunk kell a tesztfuttatót és a `webpack` konfigurációját. A konfiguráció mintája itt megtalálható
+Egységtesztek futtatásához konfigurálja a tesztfuttatót és a `webpack` konfigurációját.
 
-Minta – `test.webpack.config.js`:
+Az alábbi kód a *test.webpack.config.js* fájlra mutat egy példát:
 
 ```typescript
 const path = require('path');
@@ -147,7 +145,7 @@ module.exports = {
 };
 ```
 
-Minta – `karma.conf.ts`
+Az alábbi kód a *karma.conf.ts* fájlra mutat egy példát:
 
 ```typescript
 "use strict";
@@ -250,33 +248,31 @@ module.exports = (config: Config) => {
 };
 ```
 
-Ha szükséges, módosíthatja ezt a konfigurációt.
+Ezt a konfigurációt szükség esetén módosíthatja.
 
-Néhány beállítás – `karma.conf.js`:
+A *karma.conf.js* a következő változókat tartalmazza:
 
-* A `recursivePathToTests` változó megkeresi a tesztek kódjainak helyét.
+* `recursivePathToTests`: A teszt kódjának helyét adja meg
 
-* a `srcRecursivePath` változó a fordítás után megkeresi a kimeneti JS-kódot.
+* `srcRecursivePath`: A JavaScript kimenet fordítás utáni helyét adja meg
 
-* A `srcCssRecursivePath` változó a fordítás után megkeresi a kimeneti CSS-t.
+* `srcCssRecursivePath`: A CSS kimenet helyét adja meg stílusokat tartalmazó Less-fájlok fordítása után
 
-* A `srcOriginalRecursivePath` változó megkeresi a vizualizáció forráskódját.
+* `srcOriginalRecursivePath`: A vizualizáció forráskódjának helyét adja meg
 
-* A `coverageFolder` változó meghatározza a jelentés létrehozásának helyét.
+* `coverageFolder`: Meghatározza, hogy a rendszer létrehozzon-e lefedettségi jelentést
 
-A konfiguráció néhány tulajdonsága:
+A konfigurációs fájl az alábbi tulajdonságokat tartalmazza:
 
-* `singleRun: true` – teszteli a futtatást a CI-rendszeren. Elég egy alkalommal használni.
-A tesztek hibakereséséhez `false` értékre módosíthatja. A Karma továbbra is futtatja a böngészőt, segítségével pedig a konzollal elvégezheti a hibakeresést.
+* `singleRun: true`: A tesztek futhatnak folyamatos integrációs (CI) rendszeren, vagy egy alkalommal. A tesztek hibakereséséhez a *false* értékre módosíthatja ezt a beállítást. A Karma futni hagyja a böngészőt, hogy használhassa a konzolt a hibakereséshez.
 
-* `files: [...]` – Ebben a tömbben beállíthatja a böngészőbe betöltendő fájlokat.
-Itt általában forrásfájlok, tesztelési esetek és kódtárak (jasmine, test utils) találhatók. Igény szerint bővítheti a listát.
+* `files: [...]`: Ebben a tömbben a böngészőbe betöltendő fájlokat adhatja meg. Itt általában forrásfájlok, tesztesetek és kódtárak (jasmine, tesztelési segédprogramok) találhatók. Igény szerint további fájlokat is felvehet a listára.
 
-* `preprocessors` – A konfiguráció ezen szakaszában a műveleteket konfigurálhatja, amelyek az egységtesztek végrehajtása előtt aktiválódnak. Ezek a TypeScriptet JS-ként fordítják, majd előkészítik a térképfájlokat, és egy kódlefedési jelentést hoznak létre. A `coverage` elemet letilthatja a tesztek hibakereséséhez. A lefedettség további kódokat hoz létre a tesztlefedettséghez, amely bonyolíthatja a hibakeresési teszteket.
+* `preprocessors`: Ebben a szakaszban az egységtesztek előtt futtatandó műveleteket konfigurálhatja. Ezek előfordítják a TypeScriptet JavaScriptre, majd előkészítik a térképfájlokat, és egy kódlefedési jelentést hoznak létre. A tesztek hibakeresése alatt a `coverage` letiltható. A lefedettség további kódokat hoz létre a tesztlefedettséghez, ez pedig bonyolíthatja a hibakeresési teszteket.
 
-**A karma.js [dokumentációjában](https://karma-runner.github.io/1.0/config/configuration-file.html) található összes konfiguráció leírása**
+Az összes Karma-konfiguráció leírását megtalálhatja a [Karma konfigurációs fájlját](https://karma-runner.github.io/1.0/config/configuration-file.html) ismertető oldalon.
 
-A megfelelő használat érdekében adja hozzá a tesztparancsot a `scripts` elemhez:
+A kényelem érdekében felvehet egy tesztelési parancsot a `scripts` szakaszba:
 
 ```json
 {
@@ -292,15 +288,15 @@ A megfelelő használat érdekében adja hozzá a tesztparancsot a `scripts` ele
 }
 ```
 
-Most már készen áll az egységtesztek írásának megkezdésére.
+Már minden készen áll az egységtesztek írásának megkezdéséhez.
 
-## <a name="simple-unit-test-for-check-dom-element-of-the-visual"></a>Egyszerű egységteszt a vizualizáció DOM elemének ellenőrzéséhez
+## <a name="check-the-dom-element-of-the-visual"></a>A vizualizáció DOM-elemének ellenőrzése
 
-A vizualizáció teszteléséhez létre kell hoznunk a vizualizáció egy példányát.
+A vizualizáció teszteléséhez először hozza létre annak egy példányát.
 
-### <a name="creating-visual-instance-builder"></a>Vizualizációpéldány-készítő létrehozása
+### <a name="create-a-visual-instance-builder"></a>Vizualizációpéldány-készítő létrehozása
 
-Adja a `visualBuilder.ts` fájlt a `test` mappához a következő kóddal:
+A *test* könyvtárba vegyen fel egy *visualBuilder.ts*fájlt az alábbi kód használatával:
 
 ```typescript
 import {
@@ -329,13 +325,13 @@ export class BarChartBuilder extends VisualBuilderBase<VisualClass> {
 }
 ```
 
-A vizualizációpéldány létrehozásához használja a `build` metódust. A `mainElement` egy GET metódus, amely a „root” DOM elem egy példányát adja vissza a vizualizációban. A beolvasó használata nem kötelező, de megkönnyíti az egységteszt írását.
+A vizualizációpéldány létrehozásához használja a `build` metódust. A `mainElement` egy GET metódus, amely a „root” dokumentum-objektummodell (DOM) elem egy példányát adja vissza a vizualizációban. A beolvasó használata nem kötelező, de megkönnyíti az egységteszt írását.
 
-Elkészült a vizualizáció egy példányának szerkesztője. Írjuk meg a tesztelési esetet. A tesztelési eset ellenőrzi a vizualizáció megjelenésekor létrehozott SVG-elemeket.
+Most már rendelkezik a vizualizáció egy példányának egy buildjével. Írjuk meg a tesztelési esetet. A teszteset a vizualizáció megjelenésekor létrehozott SVG-elemeket ellenőrzi.
 
-### <a name="creating-typescript-file-to-write-test-cases"></a>TypeScript-fájl létrehozása tesztelési esetek írásához
+### <a name="create-a-typescript-file-to-write-test-cases"></a>TypeScript-fájl létrehozása a tesztesetek írásához
 
-A tesztelési esetekhez adja hozzá a `visualTest.ts` fájlt az alábbi kódokkal:
+Vegyen fel egy *visualTest.ts* fájlt a tesztesetekhez az alábbi kód használatával:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -362,40 +358,36 @@ describe("BarChart", () => {
 });
 ```
 
-Több metódust is meg kell hívni.
+Több metódus van meghívva:
 
-* A [`describe`](https://jasmine.github.io/api/2.6/global.html#describe) metódus a tesztelési esetet ismerteti. Egy jasmine-keretrendszerben ezt gyakran csomagnak vagy specifikációcsoportnak nevezik.
+* [`describe`](https://jasmine.github.io/api/2.6/global.html#describe): A tesztesetet írja le. A Jasmine-keretrendszerben gyakran specifikációcsomagot vagy -csoportot ír le.
 
-* A `beforeEach` metódus minden `it` metódus előtt lesz meghívva, amely a [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach) metódusban van meghatározva.
+* `beforeEach`: Az `it` metódus minden hívása előtt meg lesz hívva, amely a [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach) metódusban van definiálva.
 
-* Az `it` egyetlen specifikációt definiál. Az [`it`](https://jasmine.github.io/api/2.6/global.html#it) metódusnak egy vagy több `expectations` elemet kell tartalmaznia.
+* [`it`](https://jasmine.github.io/api/2.6/global.html#it): Egyetlen specifikációt definiál. Az `it` metódusnak egy vagy több `expectations` elemet kell tartalmaznia.
 
-* [`expect`](https://jasmine.github.io/api/2.6/global.html#expect) – ez a metódus egy specifikáció elvárásait hozza létre. A specifikáció akkor sikeres, ha minden elvárás hiba nélkül megvalósul.
+* [`expect`](https://jasmine.github.io/api/2.6/global.html#expect): Egy specifikáció elvárásait hozza létre. A specifikáció akkor sikeres, ha minden elvárás hiba nélkül megvalósul.
 
-* `toBeInDOM` – ez az egyik az egyeztetési módszer. Az egyezésekről a jasmine-keretrendszer [dokumentációjában](https://jasmine.github.io/api/2.6/matchers.html) olvashat.
+* `toBeInDOM`: Az *egyeztetési* metódusok egyike. Az egyeztetőkről a [Jasmin névtér: egyeztetők](https://jasmine.github.io/api/2.6/matchers.html) című cikkben olvashat.
 
-**További információ a jasmine-keretrendszerről a hivatalos [dokumentációban](https://jasmine.github.io/).**
-
-Ezután a parancssorba beírt paranccsal futtathatja az egységtesztet.
-
-Ez a teszt ellenőrzi, létrejött-e a vizualizációk SVG-gyökéreleme.
+A Jasmine keretrendszerről a [Jasmine keretrendszer dokumentációs](https://jasmine.github.io/) oldalán talál további információt.
 
 ### <a name="launch-unit-tests"></a>Egységtesztek elindítása
 
-Az egységteszt futtatásához írja be ezt a parancsot a parancssorba.
+Ez a teszt ellenőrzi, létrejött-e a vizualizációk SVG-gyökéreleme. Az egységteszt futtatásához írja be az alábbi parancsot a parancssori eszközbe:
 
 ```cmd
 npm run test
 ```
 
-A `karma.js` futtatja a Chrome böngészőt, és végrehajtja a tesztelési esetet.
+A `karma.js` a Chrome böngészőben futtatja a tesztesetet.
 
-![A Chrome-ban indított KarmaJS](./media/karmajs-chrome.png)
+![A Chrome böngészőben futó Karma-JavaScript](./media/karmajs-chrome.png)
 
 > [!NOTE]
-> A Google Chrome-ot helyileg kell telepíteni.
+> A Google Chrome böngészőt helyileg kell telepítenie.
 
-A parancssorban a következő kimenet jelenik meg:
+A parancssori ablakban a következő kimenet jelenik meg:
 
 ```cmd
 > karma start
@@ -418,7 +410,7 @@ Lines        : 20.85% ( 44/211 )
 
 ### <a name="how-to-add-static-data-for-unit-tests"></a>Statikus adatok hozzáadása egységtesztekhez
 
-Hozza létre a `visualData.ts` fájlt a `test` mappában. Használja ezeket a kódokat:
+A *test* könyvtárban hozza lére a *visualData.ts*fájlt az alábbi kód használatával:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -458,19 +450,19 @@ export class SampleBarChartDataBuilder extends TestDataViewBuilder {
 }
 ```
 
-A `SampleBarChartDataBuilder` osztály kiterjeszti a `TestDataViewBuilder` elemet, és a `getDataView` absztrakt metódust implementálja.
+A `SampleBarChartDataBuilder` osztály kiterjeszti a `TestDataViewBuilder` elemet, és implementálja a `getDataView` absztrakt metódust.
 
 Amikor adatmezőgyűjtőkbe helyezi az adatokat, a Power BI egy kategorikus `dataview` objektumot hoz létre az adatok alapján.
 
-![Mezőgyűjtők](./media/fields-buckets.png)
+![Adatmezőgyűjtők](./media/fields-buckets.png)
 
-Az egységteszteket nem reprodukálhatja a Power BI alapvető funkcióival. A statikus adatokat azonban kategorikus `dataview` elemekre kell leképeznie. Az `TestDataViewBuilder` osztály ebben segít.
+Az egységtesztek során nem állnak rendelkezésére a Power BI alapvető funkciói az adatok reprodukálásához. A statikus adatokat azonban le kell képeznie a kategorikus `dataview` elemekre. A leképezésben a `TestDataViewBuilder` osztály segíthet.
 
-[További információ a DataViewMapping elemről](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md)
+Az adatnézet-leképezésről a [DataViewMappings](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md) oldalon talál további információt.
 
-A `getDataView` metódusban csak a `createCategoricalDataViewBuilder` metódust hívja meg az adataival.
+A `getDataView` metódusban a `createCategoricalDataViewBuilder` metódust hívja meg az adatokkal.
 
-A `sampleBarChart` vizualizáció [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/capabilities.json#L2) fájljában egy dataRoles és egy dataViewMapping-objektum található:
+A `sampleBarChart` vizualizáció [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/capabilities.json#L2) fájljában dataRoles és dataViewMapping-objektumok találhatók:
 
 ```json
 "dataRoles": [
@@ -549,21 +541,21 @@ Ugyanezen leképezés létrehozásához a következő paramétereket a `createCa
 ], columnNames)
 ```
 
-Ahol a `this.valuesCategory` kategóriák egy tömbje.
+Itt `this.valuesCategory` egy kategóriákból álló tömb:
 
 ```ts
 public valuesCategory: string[] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 ```
 
-a `this.valuesMeasure` pedig az egyes kategóriák mértékeinek tömbje. Például:
+A `this.valuesMeasure` viszont mértékekből álló tömb az egyes kategóriákhoz:
 
 ```ts
 public valuesMeasure: number[] = [742731.43, 162066.43, 283085.78, 300263.49, 376074.57, 814724.34, 570921.34];
 ```
 
-Most már használhatja a `SampleBarChartDataBuilder` osztályt az egységtesztben.
+Most már felhasználhatja a `SampleBarChartDataBuilder` osztályt az egységtesztben.
 
-A `powerbi-visuals-utils-testutils` csomagban definiált `ValueType` osztály. A `createCategoricalDataViewBuilder` metódushoz a `lodash` címtár szükséges.
+A `ValueType` osztály a powerbi-visuals-utils-testutils csomagban van definiálva. A `createCategoricalDataViewBuilder` metódushoz a `lodash` kódtár szükséges.
 
 Adja hozzá ezeket a csomagokat a függőségekhez.
 
@@ -582,7 +574,7 @@ npm install
 
 a `lodash-es` címtár telepítéséhez.
 
-Most már futtathatja újra az egységtesztet. Ennek a kimenetnek kell megjelennie
+Most már futtathatja újra az egységtesztet. Az alábbi kimenetet kell kapnia:
 
 ```cmd
 > karma start
@@ -603,27 +595,25 @@ Lines        : 52.83% ( 112/212 )
 ================================================================================
 ```
 
-A vizualizációban pedig az elindult Chrome böngészőnek kell megjelennie.
+A vizualizáció az alábbi ábrán látható módon megnyílik a Chrome böngészőben:
 
 ![UT-indítások a Chrome-ban](./media/karmajs-chrome-ut-runned.png)
 
-Növelje a figyelemlefedettség összegzését. További információt az aktuális kódlefedettségről itt találhat: `coverage\index.html`
+Az összegzés a lefedettség növekedését mutatja. Az aktuális kódlefedettségről a következő helyen találhat további információkat: `coverage\index.html`.
 
 ![UT-lefedettségi index](./media/code-coverage-index.png)
 
-Vagy az `src` mappa hatókörében
+Megtekintheti az `src` könyvtár hatókörét is:
 
-![Az src mappa lefedettsége](./media/code-coverage-src-folder.png)
+![Az scr könyvtár lefedettsége](./media/code-coverage-src-folder.png)
 
-A fájl hatókörében megtekintheti a forráskódot. A `Coverage` segédeszközei pirosra állítják a sor hátterét, ha a kód nem futott az egységtesztek alatt.
+A fájl hatókörében megtekintheti a forráskódot. A `Coverage` segédprogramok piros színnel emelik ki a sort, ha valamely kód nincs végrehajtva az egységteszt során.
 
 ![A visual.ts fájl kódlefedettsége](./media/code-coverage-visual-src.png)
 
 > [!IMPORTANT]
-> A kódlefedettség azonban nem jelenti azt, hogy jó a vizualizáció funkciólefedettsége. Az `src\visual.ts` helyen egyetlen egyszerű egységteszt több mint 96%-os lefedettséget nyújtott.
+> A kódlefedettség nem jelenti azt, hogy jó a vizualizáció funkciólefedettsége. Egy egyszerű egységteszt több, mint 96%os lefedettséget biztosít a `src\visual.ts` fájlban.
 
 ## <a name="next-steps"></a>Következő lépések
 
-Ha a vizualizáció elkészült, közzéteheti.
-
-[További információ a vizualizációk az AppSource-on való közzétételéről](../office-store.md)
+A kész vizualizációt beküldheti közzétételre. További információ: [Egyéni vizualizációk közzététele az AppSource-ban](../office-store.md).

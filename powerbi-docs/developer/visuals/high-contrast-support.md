@@ -1,6 +1,6 @@
 ---
-title: Kontrasztos mód támogatása
-description: Kontrasztos mód támogatásának hozzáadása Power BI-vizualizációkhoz
+title: Kontrasztos mód támogatása Power BI-vizualizációkban
+description: Ez a cikk azt írja le, hogyan adható hozzá a kontrasztos mód támogatása Power BI-vizualizációkhoz.
 author: sranins
 ms.author: rasala
 manager: rkarlin
@@ -9,28 +9,20 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: cb77ea012fdfdbd5be62c58c6f9b94a0355db1a9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: f7f1a2277b3cdf38554039136010ab60c8f09bae
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424930"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237186"
 ---
-# <a name="high-contrast-mode-support"></a>Kontrasztos mód támogatása
+# <a name="high-contrast-mode-support-in-power-bi-visuals"></a>Kontrasztos mód támogatása Power BI-vizualizációkban
 
-A Windows *Kontrasztos* beállításával a szövegek és alkalmazások a jobban elkülönülő színek használatának köszönhetően jobban láthatók lesznek.
-További tudnivalók a [kontrasztos mód Power BI általi támogatásáról](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast).
+A Windows *Kontrasztos* beállításával a szövegek és alkalmazások a jobban elkülönülő színek megjelenítésének köszönhetően jobban láthatók lesznek. Ez a cikk azt ismerteti, hogyan adható hozzá a kontrasztos mód támogatása Power BI-vizualizációkhoz. További információ: [Kontrasztos mód támogatása a Power BI-ban](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast).
 
-A kontrasztos mód vizualizációkhoz való felvételéhez a következők szükségesek:
+A kontrasztos mód támogatásának egy implementációját tekintheti meg a [PowerBI-visuals-sampleBarChart vizualizáció adattárában](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
 
-1. Inicializáláskor: Annak észlelése, hogy a Power BI kontrasztos módban van-e, és ha igen, akkor az aktuális kontrasztos színek lekérése.
-2. Minden frissítéskor: A vizualizáció renderelési módjának módosítása a jobb láthatóság érdekében.
-
-A PowerBI-visuals-sampleBarChart vizualizációban implementálva van a kontrasztos megjelenítés támogatása.
-
-További információt a [PowerBI-visuals-sampleBarChart vizualizáció adattárában](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6) találhat
-
-## <a name="on-init"></a>Inicializáláskor
+## <a name="on-initialization"></a>Inicializáláskor
 
 Az `options.host` colorPalette tagja számos tulajdonsággal rendelkezik a kontrasztos módhoz. Ezen a tulajdonságok alapján határozható meg, hogy aktív-e a kontrasztos mód, és ha igen, milyen színek használhatók.
 
@@ -40,7 +32,7 @@ Ha a `host.colorPalette.isHighContrast` értéke `true`, akkor a kontrasztos mó
 
 ### <a name="get-high-contrast-colors"></a>A kontrasztos színek lekérése
 
-Kontrasztos módban a vizualizációnak az alábbi színekre kell szorítkoznia:
+Kontrasztos módban a vizualizációnak az alábbi beállításokra kell szorítkoznia:
 
 * Az **előtér** színével rajzol minden vonalat, ikont, szöveget, valamint az alakzatok körvonalát vagy kitöltését.
 * A **háttér** színét használja háttérként, valamint a körvonalas alakzatok kitöltőszíneként.
@@ -50,7 +42,7 @@ Kontrasztos módban a vizualizációnak az alábbi színekre kell szorítkoznia:
 > [!NOTE]
 > Ha másodlagos színre van szükség, akkor az előtérszín bizonyos mértékű átlátszósággal (natív Power BI-vizualizációk esetén 40%) használható. Ez ritkán használandó, hogy a vizualizáció részletei jól láthatóak maradjanak.
 
-Ezeket az értékeket tárolhatja az inicializálás során:
+Az inicializálás során a következő értékeket tárolhatja:
 
 ```typescript
 private isHighContrast: boolean;
@@ -78,24 +70,24 @@ Azt is megteheti, hogy inicializáláskor a `host` objektumot tárolja, és fris
 
 ## <a name="on-update"></a>Frissítéskor
 
-A kontrasztos mód támogatásának egyes implementációi vizualizációnként változnak és a grafikai kivitel részleteitől függnek. A kontrasztos mód általában az alapértelmezettől kissé eltérő tervezést igények, hogy a lényeges részletek kevesebb szín használata mellett is jól elkülönüljenek.
+A kontrasztos mód támogatásának egyes implementációi vizualizációnként változnak és a grafikai kivitel részleteitől függnek. A kontrasztos mód általában az alapértelmezettől kissé eltérő tervezést igényel, hogy a lényeges részletek kevesebb szín használata mellett is jól elkülönüljenek.
 
-Az alábbiak a natív Power BI-vizualizációk által betartott irányelvek:
+A Power BI natív vizualizációi az alábbi irányelveket követik:
 
 * Minden adatpont ugyanazt a színt használja (előtér).
-* Minden szöveg, tengely, nyíl, vonal stb. az előtérszínt használja.
+* Minden szöveg, tengely, vonal és egyéb az előtérszínt használja.
 * A vastag alakzatok körvonalakkal vannak megrajzolva, vastag (legalább kettő képpontos) vonalakkal, és a háttérszínnel vannak kitöltve.
-* Szükség esetén az adatpontok eltérő jelölőalakzatokkal, az adatvonalak pedig különböző szaggatással vannak megkülönböztetve.
+* A lényeges adatpontok eltérő jelölőalakzatokkal, az adatvonalak pedig különböző szaggatással vannak megkülönböztetve.
 * Egy adatelem kiemelésekor az összes többi elem átlátszósága 40%-ra módosul.
 * Szeletelők esetén az aktív szűrőelemek a kijelölési előtérszínt használják.
 
-A sampleBarChart esetében például minden sáv két képpontos előtérszínű körvonallal, a háttérszínnel kitöltve jelenik meg. Összehasonlíthatja az alapértelmezett színekkel és néhány kontrasztos témával megjelenő változatokat:
+Az alábbi minta-sávdiagramon például minden sáv két képpontos előtérszínű körvonallal, a háttérszínnel kitöltve jelenik meg. Összehasonlíthatja az alapértelmezett színekkel és néhány kontrasztos témával megjelenő változatokat:
 
 ![A sampleBarChart szabványos színekben](./media/hc-samplebarchart-standard.png)
 ![A sampleBarChart a *Sötét #2* téma használatával](./media/hc-samplebarchart-dark2.png)
 ![A sampleBarChart a *Fehér* téma használatával](./media/hc-samplebarchart-white.png)
 
-Az alábbi a `visualTransform` függvény egyik részlete, amely a kontrasztos mód támogatásához lett módosítva, és a renderelés részeként van meghívva `update` során:
+A következő szakasz a `visualTransform` függvény egy olyan részeltét mutatja be, amely a kontrasztos mód támogatása érdekében lett módosítva. Ez a frissítés során a renderelés részeként van meghívva.
 
 ### <a name="before"></a>Előtte
 

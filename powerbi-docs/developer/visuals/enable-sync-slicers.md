@@ -1,6 +1,6 @@
 ---
-title: Szeletelők szinkronizálásának engedélyezése
-description: A szeletelők szinkronizálásának engedélyezése Power BI-vizualizációkban
+title: A szeletelők szinkronizálásának engedélyezése Power BI-vizualizációkban
+description: Ez a cikk azt írja le, hogyan engedélyezhető a szeletelők szinkronizálása Power BI-vizualizációkban.
 author: EugeneElkin
 ms.author: v-evelk
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 9966475e8bcaccad2090451b47ef09ef0a9af125
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 4d7b73a5d06f34fd197464d4444d0e19d6c1c026
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425022"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237212"
 ---
-# <a name="sync-slicers"></a>Szeletelők szinkronizálása
+# <a name="sync-slicers-in-power-bi-visuals"></a>Szeletelők szinkronizálása Power BI-vizualizációkban
 
-A [szeletelők szinkronizálásának](https://docs.microsoft.com/power-bi/desktop-slicers) támogatásához az egyéni szeletelő vizualizációjának az API 1.13-at vagy újabb verziót kell használnia.
+A [szeletelők szinkronizálása](https://docs.microsoft.com/power-bi/desktop-slicers) funkció támogatásához az egyéni szeletelővizualizációnak az API 1.13-as vagy újabb verzióját kell használnia.
 
-A második szükséges elem a `capabilities.json` fájlban engedélyezett beállítás (lásd a lenti mintát).
+Ezen felül a beállítást a *capabilities.json* fájlban is engedélyezni kel az alábbi kódban látható módon:
 
 ```json
 {
@@ -34,11 +34,11 @@ A második szükséges elem a `capabilities.json` fájlban engedélyezett beáll
 }
 ```
 
-A `capabilities.json` módosítása után megjelenik a Szeletelők szinkronizálása panel, amikor az egyéni szeletelővizualizációra kattint.
+A *capabilities.json* fájl módosítása után az egyéni szeletelővizualizáció kiválasztásakor megtekintheti a **Szeletelők szinkronizálása** beállításait.
 
 > [!NOTE]
-> Ha a szeletelő több mint 1 mezőt (kategóriát vagy mértéket) tartalmaz, a funkció le lesz tiltva, mert a szeletelők szinkronizálása nem támogat több mezőt.
+> A Szeletelők szinkronizálása funkció nem támogat egynél több mezőt. Ha a szeletelő egynél több (**Kategória** vagy **Mérték**) mezőt tartalmaz, a funkció le van tiltva.
 
-![Szeletelők szinkronizálása panel](./media/sync-slicers-panel.png)
+![A „Szeletelők szinkronizálása” panel](./media/sync-slicers-panel.png)
 
-A panelen láthatja, hogy a szeletelő láthatósága és szűrése több jelentésoldalra is alkalmazható.
+A **Szeletelők szinkronizálása** panelen láthatja, hogy a szeletelő láthatósága és szűrése több jelentésoldalra is alkalmazható.

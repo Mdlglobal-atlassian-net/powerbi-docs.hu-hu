@@ -1,6 +1,6 @@
 ---
-title: Az Elemzési panel
-description: Dinamikus referenciavonalak létrehozása a Power BI-vizualizációkban
+title: Az Elemzés panel Power BI-vizualizációkban
+description: Ez a cikk a dinamikus referenciavonalak Power BI-vizualizációkban való létrehozását ismerteti.
 author: Guy-Moses
 ms.author: guymos
 manager: rkarlin
@@ -9,34 +9,36 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: b3b50f8dbcf40a3923e86422e24f8ed020894445
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 208c6cbbd4cd8cdabde039c53aab536ee989bc7d
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425528"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237315"
 ---
-# <a name="analytics-pane-in-power-bi-visuals"></a>Az Elemzés panel Power BI-vizualizációkban
+# <a name="the-analytics-pane-in-power-bi-visuals"></a>Az Elemzés panel Power BI-vizualizációkban
 
-Az **Elemzés panel** 2018 novemberében lett [bevezetve natív vizualizációkhoz](https://docs.microsoft.com/power-bi/desktop-analytics-pane).
-Egyéni vizualizációk az API 2.5.0-ás verziójával jeleníthetik meg és kezelhetik tulajdonságaikat az **Elemzés panelen**.
+Az **Elemzés panel** 2018 novemberében lett bevezetve [natív vizualizációkhoz](https://docs.microsoft.com/power-bi/desktop-analytics-pane).
+Ez a cikk azt ismerteti, hogy hogyan jeleníthetik meg és kezelhetik tulajdonságaikat a Power BI-vizualizációk az API 2.5.0-ás verziójával az **Elemzés panelen**.
 
-![Elemzés panel](./media/visualization-pane-analytics-tab.png)
+![Az Elemzés panel](./media/visualization-pane-analytics-tab.png)
 
-A kezelése a [tulajdonságok Formázás panelen végzett kezeléséhez](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options) hasonlóan, a vizualizáció capabilities.json fájljában definiált objektummal végezhető. 
+## <a name="manage-the-analytics-pane"></a>Az Elemzés panel kezelése
 
-A különbségek a következők:
+Az **Elemzés** panel kezelése a tulajdonságok [**Formátum** panelen](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options) végzett kezeléséhez hasonlóan, a vizualizáció *capabilities.json* fájljában definiált objektummal végezhető. 
 
-1. Az `object` definíciója alatt egy 2 értékű `objectCategory` objektumot kell felvenni.
+Az **Elemzés** panel esetében az eltérések a következők:
+
+* Az objektum definíciója alatt egy **objectCategory** mezőt is fel kell venni a 2 értékkel.
 
     > [!NOTE]
-    > Az `objectCategory` az API 2.5.0 verziójában bevezetett választható mező. A vizualizációnak az objektum által vezérelt jellemzőjét határozza meg (1 = Formázás, 2 = Elemzés). A „Formázás” a megjelenésre, színekre, tengelyekre, címkékre stb. vonatkozik. Az „Elemzés” előrejelzésekhez, trendvonalakhoz, referenciavonalakhoz, alakzatokhoz és hasonlókhoz használható.
+    > A nem kötelező `objectCategory` mező az API 2.5.0-ás verziójában lett bevezetve. A vizualizációnak az objektum által vezérelt jellemzőjét határozza meg (1 = Formázás, 2 = Elemzés). A `Formatting` olyan elemekre vonatkozik, mint a megjelenés, a színek, a tengelyek és a címkék. Az `Analytics` előrejelzésekhez, trendvonalakhoz, referenciavonalakhoz, alakzatokhoz és hasonló elemekhez használható.
     >
-    > Ha nincs megadva, az `objectCategory` alapértelmezett értéke „Formázás”.
+    > Ha az érték nincs megadva, az `objectCategory` alapértelmezett értéke „Formázás”.
 
-2. Az objektumnak rendelkeznie kell az alábbi két tulajdonsággal:
-    1. A `show` logikai típusú, alapértelmezetten hamis.
-    2. A `displayName` szöveg típusú. Ennek az alapértelmezettnek választott értéke lesz a példány kezdeti megjelenítendő neve.
+* Az objektumnak rendelkeznie kell az alábbi két tulajdonsággal:
+    * A `show` típusa `bool`, alapértelmezett értéke `false`.
+    * A `displayName` típusa `text`. Ennek az alapértelmezettnek választott értéke lesz a példány kezdeti megjelenítendő neve.
 
 ```json
 {
@@ -63,13 +65,13 @@ A különbségek a következők:
 }
 ```
 
-Minden más tulajdonság a formázási objektumoknál is használt módon határozható meg. Az objektumenumerálás pontosan úgy végezhető, mint a **Formázás panelen**.
+Más tulajdonságok is a **Formátum** objektumoknál használt módon határozhatók meg. Az objektumok enumerálása pontosan úgy végezhető el, ahogyan a **Formátum** panelen.
 
-***Ismert korlátozások és problémák***
+## <a name="known-limitations-and-issues-of-the-analytics-pane"></a>Az Elemzés panel ismert korlátozásai és problémái
 
-  1. Több példány egyelőre nem támogatott. Az objektumokhoz nem tartozhat más [selector](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector), csak statikus (tehát „selector”: null), és az egyéni vizualizációk nem rendelkezhetnek egy kártya több, felhasználó által definiált példányával.
-  2. Az `integer` típusú tulajdonságok megjelenítése nem megfelelő. Ennek elkerülésére használható a `numeric` típus.
+* Az **Elemzés** panel egyelőre nem támogat több példányt. Az objektumokhoz nem tartozhat más [selector](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector), csak statikus (tehát „selector”: null), és a Power BI-vizualizációk nem rendelkezhetnek egy kártya több, felhasználó által definiált példányával.
+* Az `integer` típusú tulajdonságok nem megfelelően jelennek meg. Ennek elkerülésére használható a `numeric` típus.
 
 > [!NOTE]
-> Az Elemzési panelt csak olyan objektumokhoz érdemes használni, amelyek új információkat nyújtanak, vagy új megvilágításba helyezik a megjelenített információt. Ilyenek például a lényeges trendeket bemutató dinamikus referenciavonalak.
-> A vizualizáció megjelenését szabályozó beállításokat, például a formázást ajánlott a Formázás panelen tartani.
+> * Az **Elemzés** panelt csak olyan objektumokhoz érdemes használni, amelyek új információkat nyújtanak, vagy új megvilágításba helyezik a megjelenített információt (ilyenek például a fontos trendeket szemléltető dinamikus referenciavonalak).
+> * A vizualizáció megjelenését szabályozó beállításokat (tehát a formázást) ajánlott a **Formátum** panelen tartani.

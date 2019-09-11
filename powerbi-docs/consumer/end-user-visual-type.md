@@ -1,5 +1,5 @@
 ---
-title: Vizualizációtípusok a Power bi-ban a fogyasztók számára
+title: Vizualizációtípusok a Power BI-ban felhasználók számára
 description: Vizualizációtípusok a Power BI szolgáltatásban
 author: mihart
 manager: kvivek
@@ -7,26 +7,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: acee7e78a19986a0f83e13836ba6d77f7c35fdce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 875e154dbac063c0e4b9d5dc4208387e6d529a93
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65711154"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302516"
 ---
-# <a name="visual-types-in-power-bi"></a>Vizualizációtípusok a Power bi-ban
-Vizualizációk találja a jelentések, irányítópultok, alkalmazások, és a Q & A. Ezek vizualizációtípusok némelyikét a Power BI-jal vannak csomagolva, és néhány *egyéni Vizualizációk*. Az egyéni vizualizációk a Power BI-on kívül készülnek úgy, hogy a *jelentések tervezői* felvehessék azokat a Power BI-jelentésekbe, -irányítópultokba és -alkalmazásokba. 
+# <a name="visual-types-in-power-bi"></a>Vizualizációtípusok a Power BI-ban
+Vizualizációk találhatók jelentésekben, irányítópultokon, és a Q&A-ban is. A vizualizációk egyes típusai a Power BI részei, de vannak *egyéni vizualizációk* is. Az egyéni vizualizációk a Power BI-on kívül készülnek úgy, hogy a jelentések *tervezői* felvehessék azokat a Power BI-jelentésekbe, és -irányítópultokba. 
 
-Ez a cikk a Power BI-jal csomagolt Vizualizáció nyújt áttekintést.  Ezek a leggyakrabban előforduló Vizualizációk. 
+Ez a cikk a Power BI-szolgáltatás részét képező vizualizációtípusokat tekinti át.  Többnyire ezekkel a vizualizációtípusokkal fog találkozni. Ezen vizualizációk bármelyikéről részletes információkat találhat a [vizualizációsablonok Power BI-jelentések *tervezői* számára készült dokumentációjában](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
 > Ha az egyéni vizualizációkkal szeretne megismerkedni, ilyeneket a [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) **Power BI-vizualizációk** szakaszában kereshet. Minden vizualizációhoz tartozik leírás, a létrehozója adatai, és képernyőkép vagy videó. 
 
-## <a name="list-of-visuals-available-in-power-bi"></a>A Power bi-ban elérhető Vizualizációk listája
-Itt látható Vizualizációk mindegyikét tekintheti meg a Power BI-alkalmazásokat, irányítópultokat, jelentéseket, és [a Q & a megadott](end-user-q-and-a.md). A Vizualizációk kezelésével kapcsolatos információkért lásd: [vizualizációkat a jelentések, irányítópultok és alkalmazások kezelése](end-user-visualizations.md)
+## <a name="list-of-visuals-available-in-power-bi"></a>A Power BI-ban rendelkezésre álló vizualizációk listája
+Ez alábbi vizualizációk mind megtalálhatók Power BI-irányítópultokon és -jelentésekben, és [megadhatók a Q&A-ban](end-user-q-and-a.md). Ha szeretné megtudni, hogyan kezelje a vizualizációkat, olvassa el az [Interakció vizualizációkkal jelentésekben, irányítópultokon és alkalmazásokban](end-user-visualizations.md) szakaszt
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Területdiagramok: Alapszintű (rétegzett) és halmozott
 ![területdiagram](media/end-user-visual-type/basic-area-map-small.png)
@@ -59,7 +59,7 @@ A kombinált diagram egy oszlopdiagram és egy vonaldiagram egyesítésével jö
 A kombinált diagramok használata nagyszerű választás, ha:
 - van egy vonaldiagramja és egy oszlopdiagramja, amelyek ugyanazt az X tengelyt használják;
 - több, különböző értéktartományú mértéket szeretne összehasonlítani
-- az egyik vizualizációban két mérték korrelációját mutatja be
+- egyetlen vizualizáción szeretné bemutatni két mérték korrelációját
 - szeretné ellenőrizni, hogy egy mérték elér-e egy adott célt, amelyet egy másik mérték határoz meg;
 - kevesebb helyet szeretne felhasználni a vásznon
 
@@ -76,14 +76,6 @@ A tölcsérdiagramokkal megjeleníthetők a szakaszos folyamatok úgy, hogy az e
 Ilyen például egy értékesítési tölcsér, amelyen keresztül az ügyfelek nyomon követhetőek az egyes fázisokban: Érdeklődő > Minősített érdeklődő > Lehetséges ügyfél > Szerződés > Zárás. A tölcsér alakja egyetlen pillantásra megmutatja a lekövetett folyamat állapotát.
 A tölcsér minden egyes szakasza a teljes mennyiséghez viszonyított százalékos arányt mutatja. Így az esetek többségében a tölcsérdiagram alakja valóban egy tölcsérhez hasonlít – az első szakasz a legszélesebb, majd a rákövetkező szakaszok egyre szűkülnek. Persze a körte alakú tölcsérek is hasznosak – segítenek azonosítani a problémákat. Általában véve azonban az első, a „bemeneti” szakasz a legszélesebb.
 
-A tölcsérdiagram remek választás a következő esetekben:
-- ha az adatok egymás követik, és legalább 4 fázisban következnek egymásból,
-- ha az első fázis „elemeinek” száma várhatóan meghaladja az utolsó fáziséit,
-- a fázisonkénti lehetőségek (bevétel/értékesítés/szerződések/stb.) számításához,
-- a konverziós és megtartási arányok számításához,
-- a lineáris folyamatok szűk keresztmetszeteinek felfedéséhez,
-- a bevásárlókosár-munkafolyamatok nyomon követéséhez,
-- az átkattintásos reklám-/marketingkampányok haladásának és sikerességének nyomon követéséhez.
 
 ### <a name="gauge-charts"></a>Mérőóra-diagramok
 ![mérőműszer-diagram](media/end-user-visual-type/gauge-m.png)
@@ -127,7 +119,7 @@ Az egyszerű térképek kategorikus és mennyiségi információk térbeli helye
 ### <a name="maps-arcgis-maps"></a>Térképek: ArcGIS-térképek
 ![ArcGIS-térkép](media/end-user-visual-type/power-bi-esri-map-theme2.png)
 
-Az ArcGIS-térképek és a Power BI együttes használata új lehetőségeket kínál a térképkezelésben, amelyek messze túlmutatnak a pontok térképeken való elhelyezésén. Az elérhető lehetőségek az alaptérképek, alaptérképekhez, helytípusokhoz, szimbólumstílusokhoz és referenciafóliákon referenciarétegekhez informatív térképi vizualizációt hoz létre. Mérvadó adatrétegek (például népszámlálási adatok) egy térképen, és a térbeli elemzés egyesítésével jobban megértheti a vizualizációban szereplő adatokat.
+Az ArcGIS-térképek és a Power BI együttes használata új lehetőségeket kínál a térképkezelésben, amelyek messze túlmutatnak a pontok térképeken való elhelyezésén. Az alaptérképekhez, helytípusokhoz, témákhoz, szimbólumstílusokhoz és referenciarétegekhez elérhető beállítások segítségével lenyűgöző és informatív térképi megjelenítések hozhatók létre. A térképen megjelenített mérvadó adatrétegek (például népszámlálási adatok) és a térbeli elemzés egyesítésével jobban megértheti a képi megjelenítésben szereplő adatokat.
 
 ### <a name="maps-filled-maps-choropleth"></a>Térképek: Kitöltött térképek (Choropleth)
 ![kartogram](media/end-user-visual-type/pbi-nancy-viz-filledmap.png)
@@ -137,7 +129,7 @@ A tematikus térképek árnyalással, színezéssel vagy mintázattal jelenítik
 ### <a name="maps-shape-maps"></a>Térképek: Alakzatleképezések
 ![alakzatleképezés](media/end-user-visual-type/power-bi-shape-map2.png)
 
-Az alakzatleképezés vizualizációk a régiók különböző színek használatával történő összehasonlítására szolgálnak. A térkép vizualizációval szemben az alakzatleképezés vizualizáció nem képes az adatpontok pontos földrajzi helyének megjelenítésére a térképen. Ehelyett alkalmazásának fő célja a régiók relatív összehasonlításának megjelenítése egy térképen eltérő színezéssel.
+Az alakzatleképezés vizualizációk a régiók különböző színek használatával történő összehasonlítására szolgálnak. Az alakzatleképezés vizualizációk nem képesek az adatpontok pontos földrajzi helyének megjelenítésére a térképen. Ehelyett alkalmazásának fő célja a régiók relatív összehasonlításának megjelenítése egy térképen eltérő színezéssel.
 
 ### <a name="matrix"></a>Mátrix
 ![mátrix](media/end-user-visual-type/matrix.png)
@@ -163,12 +155,16 @@ A pontdiagramok mindig két értéktengellyel rendelkeznek. A vízszintes tengel
 
 A buborékdiagramokban az adatpontok helyett buborékok szerepelnek, és a buborékok mérete az adatok egy további dimenzióját jelöli.
 
-A pöttydiagram hasonlít a buborék- és pontdiagramokra, ám ez numerikus vagy kategorizált adatokat is ábrázolhat az X tengely mentén.
+
+
+A pöttydiagram hasonlít a buborék- és pontdiagramokra, ám ez numerikus vagy kategorizált adatokat is ábrázolhat az X tengely mentén. Ez a példa történetesen négyzeteket használ körök helyett, és az X tengelyen ábrázolja az értékesítéseket.
+
+![pöttydiagram](media/end-user-visual-type/power-bi-dot-plot-squares.png)
 
 ### <a name="scatter-high-density"></a>Nagy pontsűrűség
 ![nagy sűrűségű pontdiagram](media/end-user-visual-type/density-scatter.png)
 
-Definíció szerint nagy sűrűségű adatok mintavételezése a Vizualizációk meglehetősen gyors, amelyek a lehessenek létrehozása. A nagy sűrűségű mintavételezés algoritmusa kiiktatja az átfedő pontokat, és biztosítja, hogy a vizualizáción az adathalmaz összes pontja megjelenjen. Nem csupán az adatok egy reprezentatív mintáját jeleníti meg.  
+Meghatározás szerint a nagy sűrűségű adatok mintavételezése a vizualizációk meglehetősen gyors és interakciókra reagáló módon való létrehozása érdekében történik. A nagy sűrűségű mintavételezés algoritmusa kiiktatja az átfedő pontokat, és biztosítja, hogy a vizualizáción az adathalmaz összes pontja megjelenjen. Nem csupán az adatok egy reprezentatív mintáját jeleníti meg.  
 
 Így a legjobb összetételben biztosítja a válaszképességet, valamint a teljes adathalmaz minden kulcsfontosságú pontjának megfelelő ábrázolását és megőrzését.
 
@@ -220,14 +216,14 @@ A vízesésdiagramok göngyölített összeget jelenítenek meg az értékek ös
 Az oszlopok színkódolással rendelkeznek, így gyorsan megállapíthatja az értékek növekedését és csökkenését. A kezdeti és végértékeket tartalmazó oszlopok gyakran a vízszintes tengelyről indulnak, míg a középső értékek lebegő oszlopokat képeznek. Emiatt a megjelenés miatt a vízesésdiagramokat híddiagramoknak is nevezik.
 
 A vízesésdiagram remek választás a következőkhöz:
-- ha a mérték az idősorok vagy különböző kategóriák között is változik;
+- ha a mérték az időben vagy különböző kategóriák között is változik;
 - ha naplózni kívánja az összértéket befolyásoló főbb változásokat;
 - ha a vállalat éves profitját szeretné ábrázolni különféle bevételi források megjelenítésével, majd az összbevétel (vagy veszteség) kiemelésével;
 - ha a vállalat alkalmazottainak számát szeretné ábrázolni az év eleji és év végi értékekkel;
 - ha szeretné megjeleníteni, hogy mennyi pénzt keresett és költött az egyes hónapok során, valamint a fiók folyóegyenlegét.
 
-## <a name="qna"></a>Mondja el, a Q & A használandó vizualizációt
-A Power BI Q & A természetes nyelvű lekérdezések beírásakor megadhatja a Látványelem típusát a lekérdezésben.  Például:
+## <a name="qna"></a>A Q&A által használandó vizualizáció megadása
+Ha természetes nyelvű lekérdezéseket ír a Power BI Q&A használatával, megadhatja a vizualizáció típusát a lekérdezésben.  Például:
 
 
 „***értékesítés államonként fatérképen***”
@@ -235,5 +231,5 @@ A Power BI Q & A természetes nyelvű lekérdezések beírásakor megadhatja a L
 ![q&a munkamenet](media/end-user-visual-type/qa-treemap.png)
 
 ## <a name="next-steps"></a>Következő lépések
-[Vizualizációk, jelentések, irányítópultok és alkalmazások](end-user-visualizations.md)    
+[Interakció vizualizációkkal jelentésekben, irányítópultokon és alkalmazásokban](end-user-visualizations.md)    
 [A megfelelő vizualizáció – referenciaanyag az sqlbi.com-on](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

@@ -1,24 +1,23 @@
 ---
 title: A diagramok rendezésének módosítása egy jelentésben
-description: Diagramok rendezésének módosítása Power BI-jelentésekben
+description: A diagramok rendezésének módosítása egy Power BI-jelentésben
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: aa6193045ba1c399eaae1b48bf813738edba99f1
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 98a91b0651e7a357f0ba0462f6ba8734c64ab162
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750840"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302716"
 ---
-# <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Diagramok rendezésének módosítása Power BI-jelentésekben
+# <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>A diagramok rendezésének módosítása egy Power BI-jelentésben
 A Power BI-jelentésekben a legtöbb vizualizációt rendezheti a kategóriáinak neve alapján betűrendben vagy az egyes kategóriák számértéke szerint. Ez a diagram például az **üzlet neve** kategória szerint van rendezve.
 
 ![sávdiagram ábécé szerint rendezett X-tengellyel](media/end-user-change-sort/pbi_chartsortcategory.png)
@@ -31,12 +30,12 @@ A rendezés könnyedén módosítható egy kategóriáról (store name – üzle
    ![videó emelkedő, majd csökkenő sorrendű rendezés kiválasztásáról](media/end-user-change-sort/sort.gif)
 
 > [!NOTE]
-> Nem minden vizualizáció rendezhető. A következő vizualizációkat például nem lehet rendezni: Fatérkép, térkép, kartogram, pontdiagram, mérőműszer, kártya, többsoros kártya, vízesés.
+> Nem minden vizualizáció rendezhető. A következő vizualizációkat például nem lehet rendezni: fatérkép, térkép, kartogram, pontdiagram, mérőműszer, kártya, vízesés.
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>A rendezési sorrend módosításainak mentése
-A Power BI-jelentések megőrzik a szűrőket, a szeletelőket, a rendezést és az adatnézetek egyéb módosításait. Így ha kilép egy jelentésből, majd később visszatér, a módosítások mentve lesznek.  Ha szeretné visszaállítani a módosításokat a jelentés tervezőjének beállításaira, válassza a **Visszaállítás alapértelmezettre** lehetőséget a felső menüsorban. 
+A Power BI-jelentések megőrzik a szűrőket, a szeletelőket, a rendezést és az adatnézetek egyéb módosításait. Így ha kilép egy jelentésből, majd később visszatér, a módosítások mentve lesznek.  Ha szeretné visszaállítani a módosításokat a jelentés tervezőjének beállításaira, válassza a **Visszaállítás alapértelmezettre** lehetőséget a felső menüsávon. 
 
-![megőrzött rendezés](media/end-user-change-sort/power-bi-reset-to-default.png)
+![megőrzött rendezés](media/end-user-change-sort/power-bi-reset.png)
 
 Ha azonban a **Visszaállítás alapértelmezettre** gomb szürke színnel jelenik meg, az azt jelenti, hogy a jelentés tervezője letiltotta a módosítások mentésének (megőrzésének) lehetőségét.
 

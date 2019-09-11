@@ -1,6 +1,6 @@
 ---
-title: Objektum és tulajdonságok
-description: Power BI-vizualizációk testreszabható tulajdonságai
+title: A Power BI-vizualizációk objektumai és tulajdonságai
+description: Ez a cikk a Power BI-vizualizációk testreszabható tulajdonságait ismerteti.
 author: MrMeison
 ms.author: rasala
 manager: rkarlin
@@ -9,20 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: c22a1cfb281c9902d490e2320b85c2f6bbb63468
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: e15d80af35ff7c56879dab4380d4ae0c9fdd0e8a
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424608"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236615"
 ---
-# <a name="object-and-properties"></a>Objektum és tulajdonságok
+# <a name="objects-and-properties-of-power-bi-visuals"></a>A Power BI-vizualizációk objektumai és tulajdonságai
 
-Az objektumok a vizualizációhoz társított testreszabható tulajdonságokat írják le.
-Az objektumok több tulajdonsággal rendelkezhetnek, és mindegyik tulajdonsághoz tartozik egy típus.
-A típusok azt jelzik, hogy mi lesz a tulajdonság. Alább további információt találhat a típusokról.
+Az objektumok a vizualizációkhoz társított testreszabható tulajdonságokat írják le. Egy objektum több tulajdonsággal is rendelkezhet, és minden tulajdonsághoz egy típus van társítva, amely leírja, hogy mi lesz ez a tulajdonság. Ez a cikk az objektumokról és a tulajdonságtípusokról nyújt információkat.
 
-`myCustomObject` az objektumra a `dataView` és `enumerateObjectInstances` metóduson belüli hivatkozáshoz használt belső név
+A `myCustomObject` az objektumra a `dataView` és az `enumerateObjectInstances` metóduson belüli hivatkozáshoz használt belső név.
 
 ```json
 "objects": {
@@ -39,7 +37,7 @@ A típusok azt jelzik, hogy mi lesz a tulajdonság. Alább további információ
 
 ## <a name="properties"></a>Tulajdonságok
 
-`properties` a fejlesztő által definiált tulajdonságok leképezése.
+A `properties` a fejlesztő által definiált tulajdonságok leképezése.
 
 ```json
 "properties": {
@@ -66,12 +64,13 @@ Például:
 
 ### <a name="property-types"></a>Tulajdonságtípusok
 
-A tulajdonságtípusoknak két típusa van: `ValueTypeDescriptor` és `StructuralTypeDescriptor`.
+Két tulajdonságtípus van: `ValueTypeDescriptor` (értéktípus-leíró) és `StructuralTypeDescriptor` (szerkezettípus-leíró).
 
 #### <a name="value-type-descriptor"></a>Értéktípus-leíró
 
 A `ValueTypeDescriptor` típusok többnyire primitívek, és általában statikus objektumokként vannak használva.
-Az alábbiak például gyakori `ValueTypeDescriptor` típusok
+
+Az alábbiak például gyakori `ValueTypeDescriptor`-elemek:
 
 ```typescript
 export interface ValueTypeDescriptor {
@@ -85,7 +84,7 @@ export interface ValueTypeDescriptor {
 #### <a name="structural-type-descriptor"></a>Szerkezettípus-leíró
 
 A `StructuralTypeDescriptor` típusokat többnyire adathoz kötött objektumokhoz használják.
-A leggyakoribb `StructuralTypeDescriptor` a Fill (kitöltés)
+A leggyakoribb `StructuralTypeDescriptor`-típus a *fill*.
 
 ```typescript
 export interface StructuralTypeDescriptor {
@@ -95,8 +94,9 @@ export interface StructuralTypeDescriptor {
 
 ## <a name="gradient-property"></a>A Gradient (színátmenet) tulajdonság
 
-A színátmenet tulajdonság nem állítható be standard tulajdonságként. Ehelyett egy szabályt kell felállítani a színválasztó tulajdonság (kitöltési típus) helyettesítésére.
-Ez az alábbi példán látható:
+A színátmenet tulajdonság nem állítható be standard tulajdonságként. Ehelyett egy szabályt kell felállítani a színválasztó tulajdonság (*kitöltési* típus) helyettesítésére.
+
+Erre mutat be egy példát az alábbi kód:
 
 ```json
 "properties": {
@@ -137,13 +137,13 @@ Ez az alábbi példán látható:
 }
 ```
 
-Figyelje meg a `"fill"` és a `"fillRule"` tulajdonságot. Az első a színválasztó, a második a `visually` „fill” tulajdonság helyét a feltételek teljesülése esetén átvevő színátmenet helyettesítési szabálya.
+Figyelje meg a *fill* és a *fillRule* tulajdonságot. Az első a színválasztó, a második pedig a *fill tulajdonság* helyét a feltételek teljesülése esetén átvevő színátmenet `visually` helyettesítési szabálya.
 
-A fill tulajdonság és a helyettesítési szabály közötti kapcsolatot a `"fillRule"` tulajdonság `"rule"`->`"output"` szakasza állítja be.
+A *fill* tulajdonság és a helyettesítési szabály közötti kapcsolatot a *fillRule* tulajdonság `"rule"`>`"output"` szakasza állítja be.
 
-A `"Rule"`->`"InputRole"` állítja be, melyik adatszerepkör hozza működésbe a szabályt (feltétel). Ebben a példában ha a `"Gradient"` szerepkör adatokat tartalmaz, a szabály alkalmazva lesz a `"fill"` tulajdonságra.
+A `"Rule"`>`"InputRole"` tulajdonság állítja be, melyik adatszerepkör hozza működésbe a szabályt (feltétel). Ebben a példában ha a `"Gradient"` szerepkör adatokat tartalmaz, a szabály alkalmazva van a `"fill"` tulajdonságra.
 
-Az alábbi példa a kitöltési szabályt (`the last item`) aktiváló adatszabályt mutatja be.
+A kitöltési szabályt (`the last item`) aktiváló adatszerepkörre mutat be példát az alábbi kód:
 
 ```json
 {
@@ -170,9 +170,9 @@ Az alábbi példa a kitöltési szabályt (`the last item`) aktiváló adatszab�
 }
 ```
 
-## <a name="enumerateobjectinstances-method"></a>Az `enumerateObjectInstances` metódus
+## <a name="the-enumerateobjectinstances-method"></a>Az enumerateObjectInstances metódus
 
-Az objektumok hatékony használatához egy `enumerateObjectInstances` nevű függvényre lesz szükség az egyéni vizualizációban. Ez a függvény tölti fel objektumokkal a tulajdonságpanelt, és azt is meghatározza, hogy hová legyenek kötve az objektumok a DataView nézeten belül.  
+Az objektumok hatékony használatához egy `enumerateObjectInstances` nevű függvényre lesz szükség az egyéni vizualizációban. Ez a függvény tölti fel objektumokkal a tulajdonságpanelt, és azt is meghatározza, hogy hová legyenek kötve az objektumok a dataView nézeten belül.  
 
 Egy jellegzetes beállítás a következő:
 
@@ -197,7 +197,7 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 
 ### <a name="properties"></a>Tulajdonságok
 
-A `enumerateObjectInstances` metódusban szereplő tulajdonságok a képességek között definiált tulajdonságokat tükrözik. Ez látható a lap alján található példában.
+A `enumerateObjectInstances` metódusban szereplő tulajdonságok a képességek között definiált tulajdonságokat tükrözik. Erre a cikk végén találhat egy példát.
 
 ### <a name="objects-selector"></a>Az objektumokra vonatkozó selector
 
@@ -205,7 +205,7 @@ A `enumerateObjectInstances` metódusbeli selector határozza meg, hogy hová le
 
 #### <a name="static"></a>Statikus
 
-Ez az objektum a `dataviews[index].metadata.objects` metaadatokhoz lesz kötve
+Az objektum az itt látható módon a `dataviews[index].metadata.objects` metaadatokhoz van kötve.
 
 ```typescript
 selector: null
@@ -213,7 +213,7 @@ selector: null
 
 #### <a name="columns"></a>oszlopok
 
-Ez az objektum oszlopokhoz lesz kötve a megfelelő `QueryName` alapján.
+Ez az objektum oszlopokhoz van kötve a megfelelő `QueryName` alapján.
 
 ```typescript
 selector: {
@@ -223,7 +223,7 @@ selector: {
 
 #### <a name="selector"></a>selector
 
-Ez az objektum ahhoz az elemhez lesz kötve, amelyhez létre lett hozva `selectionID`. Ebben a példában feltételezzük, hogy egyes adatpontokhoz létrehoztunk `selectionID` azonosítókat, és ezeken lépkedünk végig ciklikusan.
+Ez az objektum ahhoz az elemhez van kötve, amelyhez létre lett hozva `selectionID`. Ebben a példában feltételezzük, hogy egyes adatpontokhoz létrehoztunk `selectionID` azonosítókat, és ezeken lépkedünk végig ciklikusan.
 
 ```typescript
 for (let dataPoint in dataPoints) {
@@ -234,7 +234,7 @@ for (let dataPoint in dataPoints) {
 
 #### <a name="scope-identity"></a>Hatókör-identitás
 
-Ez az objektum adott értékekhez lesz kötve csoportok egyesítésénél. Ha adottak például a `["Jan", "Feb", "March", ...]` kategóriák és a `["Small", "Medium", "Large"]` sorozat, szükség lehet egy objektumra a `Feb` és a `Large` érték találkozásánál. Ez elérhető úgy, hogy mindkét oszlop `DataViewScopeIdentity` értékét lekérdezzük, elhelyezzük az `identities` változóban, és ezt a szintaxist használjuk a selectorral.
+Ez az objektum adott értékekhez van kötve csoportok metszetében. Ha adottak például a `["Jan", "Feb", "March", ...]` kategóriák és a `["Small", "Medium", "Large"]` sorozat, szükség lehet egy objektumra a `Feb` és a `Large` érték találkozásánál. Ez elérhető úgy, hogy mindkét oszlop `DataViewScopeIdentity` értékét lekérdezzük, elhelyezzük az `identities` változóban, és ezt a szintaxist használjuk a selectorral.
 
 ```typescript
 selector: {
@@ -244,7 +244,7 @@ selector: {
 
 ##### <a name="example"></a>Példa
 
-Ez a példa azt mutatja be, milyen lenne egy objectEnumeration metódus egy customColor objektummal, amelynek egyetlen tulajdonsága a `fill`. A cél az, hogy ez az objektum statikusan legyen a `dataViews[index].metadata.objects` elemhez kötve
+A következő példa azt mutatja be, milyen lenne egy objectEnumeration metódus egy customColor objektummal, amelynek egyetlen tulajdonsága a *fill*. A cél az, hogy ez az objektum az itt látható módon statikusan legyen a `dataViews[index].metadata.objects` elemhez kötve:
 
 ```typescript
 objectEnumeration.push({

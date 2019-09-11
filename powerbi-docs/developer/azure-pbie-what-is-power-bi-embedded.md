@@ -1,9 +1,9 @@
 ---
 title: Az Azure Power BI Embedded és a beágyazott analitika ismertetése | Microsoft Docs
 description: A Power BI Embedded beágyazott analitika eszköznek készült, mellyel a független szoftverszállítók lenyűgöző vizualizációkat, jelentéseket és irányítópultokat adhatnak gyorsan alkalmazásaikhoz, így leegyszerűsíthetik a Power BI funkcióit. Útmutató beágyazott analitikai szoftver, beágyazott analitikai eszközök, vagy beágyazott üzleti intelligencia eszközök alkalmazásához a Power BI Embedded használatával.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: nishalit
 ms.service: power-bi-embedded
 ms.subservice: ''
@@ -11,16 +11,16 @@ ms.devlang: csharp, javascript
 ms.topic: overview
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: 6e91b2e958a738961255f9ad9b6b0514fed759bb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c74bd97a3323f28ba6d66fad03307f28c1b0c270
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61385017"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391471"
 ---
 # <a name="what-is-power-bi-embedded-in-azure"></a>A Power BI Embedded az Azure-ban ismertetése
 
-A Power BI Embedded a beágyazott analitikákkal a Power BI-funkciók használatát teszi egyszerűbbé független szoftverszolgáltatók és fejlesztők számára. A Power BI Embeddeddel lenyűgöző vizualizációkat, jelentéseket és irányítópultokat adhat gyorsan alkalmazásaihoz, így leegyszerűsítheti a Power BI funkcióit. A Microsoft Azure-on fejlesztett alkalmazásokhoz hasonlóan Machine Learning és IoT szolgáltatásokat is használ. A könnyen navigálható, alkalmazáson belüli adatfeltárás engedélyezésével a független szoftverszállítók ügyfelei gyors és tájékozott döntéseket hozhatnak.
+A Power BI Embedded a beágyazott analitikákkal a Power BI-funkciók használatát teszi egyszerűbbé független szoftverszolgáltatók és fejlesztők számára. A Power BI Embedded azzal egyszerűsíti a Power BI képességeinek kihasználását, hogy segít gyorsan felvenni az alkalmazásokba a látványos vizualizációkat, jelentéseket és irányítópultokat. A Microsoft Azure-on fejlesztett alkalmazásokhoz hasonlóan használja a Machine Learning és IoT szolgáltatásokat. A könnyen navigálható, alkalmazáson belüli adatfeltárás engedélyezésével a független szoftverszállítók ügyfelei gyors és tájékozott döntéseket hozhatnak.
 
 > [!VIDEO https://www.youtube.com/embed/iEHfUuoZseo]
 

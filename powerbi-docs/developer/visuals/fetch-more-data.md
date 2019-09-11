@@ -1,6 +1,6 @@
 ---
-title: További adatok lekérése
-description: Nagyméretű adatkészletek szegmentált beolvasásának engedélyezése Power BI-vizualizációkhoz
+title: Több adat beolvasása a Power BI-ból
+description: Ez a cikk azt írja le, hogyan engedélyezhető nagyméretű adathalmazok szegmentált beolvasása Power BI-vizualizációkhoz.
 author: AviSander
 ms.author: asander
 manager: rkarlin
@@ -9,23 +9,22 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: bc8ff673927fd66bf44164e4e9950c279b98c6c1
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 7e5ecc0e317a21d10e76e9413926822ac4d6760b
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425068"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237138"
 ---
 # <a name="fetch-more-data-from-power-bi"></a>Több adat beolvasása a Power BI-ból
 
-Az API-val több adatot tölthet be, és meghaladhatja a 30-K adatpont korlátját. Az adatokat részletenként olvashatja be. Az adatrészletek mérete úgy konfigurálható, hogy javítsa a teljesítményt a használati eset alapján.  
+Ez a cikk azt írja le, hogyan tölthető be több adat az adatpontokra vonatkozó rögzített 30 kB-os korlát megkerülésével. Ez a megközelítés szegmensekben biztosítja az adatokat. A teljesítmény javítása érdekében a szegmensek méretét a felhasználási helyzetnek megfelelően konfigurálhatja.  
 
-## <a name="enable-segmented-fetch-of-large-datasets"></a>Nagyméretű adatkészletek szegmentált beolvasásának engedélyezése
+## <a name="enable-a-segmented-fetch-of-large-datasets"></a>Nagyméretű adathalmazok szegmentált beolvasásának engedélyezése
 
-A `dataview` szegmentálási módhoz definiáljon egy „ablakot” (dataReductionAlgorithm) a szükséges dataViewMapping elemhez a vizualizáció `capabilities.json` fájljában.
-A `count` meghatározza az ablak méretét, amely korlátozza az új frissítések `dataview` elemét kiegészítő új adatsorok számát.
+A `dataview` szegmentálási mód használatához szükséges dataViewMapping leképezéshez definiálnia kell egy ablakméretet a dataReductionAlgorithm algoritmushoz a vizualizáció *capabilities.json* fájljában. A `count` határozza meg az ablak méretét, amely korlátozza az egyes frissítések során a `dataview` adatnézethez fűzhető új adatsorok számát.
 
-Hozzáadás a capabilities.json fájlhoz
+Illessze be az alábbi kódot a *capabilities.json* fájlba:
 
 ```typescript
 "dataViewMappings": [
@@ -47,9 +46,9 @@ Hozzáadás a capabilities.json fájlhoz
 
 Az új szegmenseket a rendszer a meglévő `dataview` elemhez fűz, valamint megadja a vizualizációnak `update` hívásként.
 
-## <a name="usage-in-the-custom-visual"></a>Használat egyéni vizualizációkban
+## <a name="usage-in-the-power-bi-visual"></a>Felhasználás a Power BI-vizualizációban
 
-Az, hogy az adatok léteznek-e, a `dataView.metadata.segment` elem meglétének ellenőrzésével állapítható meg:
+Az adatok meglétét a `dataView.metadata.segment` meglétének ellenőrzésével állapíthatja meg:
 
 ```typescript
     public update(options: VisualUpdateOptions) {
@@ -59,9 +58,7 @@ Az, hogy az adatok léteznek-e, a `dataView.metadata.segment` elem meglétének 
     }
 ```
 
-Az `options.operationKind` ellenőrzésével megállapíthatja azt is, hogy ez az első vagy egy későbbi frissítés.
-
-A `VisualDataChangeOperationKind.Create` jelenti az első szegmenst, míg a `VisualDataChangeOperationKind.Append` a további szegmenseket.
+Az `options.operationKind` ellenőrzésével azt is megállapíthatja, hogy ez az első, vagy egy későbbi frissítés. Az alábbi kódban `VisualDataChangeOperationKind.Create` az első szegmensre, `VisualDataChangeOperationKind.Append` későbbi szegmensekre hivatkozik.
 
 Egy példamegvalósítást találhat az alábbi kódrészletben:
 
@@ -73,7 +70,7 @@ public update(options: VisualUpdateOptions) {
 
     }
 
-    // on second or subesquent segments:
+    // on second or subsequent segments:
     if (options.operationKind == VisualDataChangeOperationKind.Append) {
 
     }
@@ -82,24 +79,24 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-A `fetchMoreData` metódus is meghívható egy felhasználói felületi eseménykezelőből
+A `fetchMoreData` metódust egy felhasználói felületi eseménykezelőből is meghívhatja az alábbiak szerint:
 
 ```typescript
 btn_click(){
 {
-    // check if more data is expected for the current dataview
+    // check if more data is expected for the current data view
     if (dataView.metadata.segment) {
-        //request for more data if available, as resopnce Power BI will call update method
+        //request for more data if available; as a response, Power BI will call update method
         let request_accepted: bool = this.host.fetchMoreData();
         // handle rejection
         if (!request_accepted) {
-            // for example when the 100 MB limit has been reached
+            // for example, when the 100 MB limit has been reached
         }
     }
 }
 ```
 
-A Power BI a `this.host.fetchMoreData` metódusra adott válaszként meghívja a vizualizáció `update` metódusát az új adatszegmensekkel.
+A Power BI a `this.host.fetchMoreData` metódus hívására válaszul meghívja a vizualizáció `update` metódusát egy új adatszegmenssel.
 
 > [!NOTE]
-> A Power BI a beolvasott adatmennyiséget **100 MB-ban** korlátozza, hogy ne forduljon elő memóriakorlátozás az ügyféloldalon. Ha a fetchMoreData() függvény „false” választ eredményez, meghaladta a korlátot.*
+> A Power BI jelenleg összesen 100 MB-ra korlátozza a teljes beolvasott adatmennyiséget, hogy ne ütközzön az ügyfél memóriakorlátozásaiba. A korlát elérése abból látható, hogy ekkor a fetchMoreData() visszatérési értéke `false`.

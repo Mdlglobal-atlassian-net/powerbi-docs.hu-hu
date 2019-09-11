@@ -1,6 +1,6 @@
 ---
-title: Funkciók
-description: A Power BI-vizualizációk funkciói és tulajdonságai
+title: Power BI-vizualizációk képességei és tulajdonságai
+description: Ez a cikk a Power BI-vizualizációk képességeit és tulajdonságait ismerteti.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: f6bb4293a44f98f2f8098fb197c7b406b618d211
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5c32a1679f09e05d134da7f27ffa0cee90d75fab
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425459"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237290"
 ---
-# <a name="power-bi-visual-capabilities"></a>A Power BI-vizualizációk funkciói
+# <a name="capabilities-and-properties-of-power-bi-visuals"></a>Power BI-vizualizációk képességei és tulajdonságai 
 
-A funkciók a vizualizációval kapcsolatos információkat közlik a gazdagéppel. A Funkciók modell tulajdonságai mind `optional`
+A képességek használatával a vizualizációról közölhet információkat a gazdagéppel. A képességek modell egyik tulajdonságának megadása sem kötelező (`optional`).
 
-A vizualizációk funkcióinak gyökérobjektumai a `dataRoles`, `dataViewMappings`és így tovább.
+A vizualizáció képességeinek gyökérobjektumai a `dataRoles`, a `dataViewMappings` és így tovább.
 
 ```json
 {
@@ -34,29 +34,29 @@ A vizualizációk funkcióinak gyökérobjektumai a `dataRoles`, `dataViewMappin
 
 ```
 
-## <a name="define-the-data-fields-your-visual-expects---dataroles"></a>Adja meg a vizualizáció által várt adatmezőket – `dataRoles`
+## <a name="define-the-data-fields-that-your-visual-expects-dataroles"></a>A vizualizáció által várt adatmezők megadása: dataRoles
 
-Az adatokhoz köthető mezők definiálásához a `dataRoles` elemet használjuk, amely `DataViewRole`-objektumok egy tömbjét veszi alapul, és meghatározza a szükséges tulajdonságokat.
+Az adatokhoz köthető mezők definiálására a `dataRoles` elem használható. A `dataRoles` `DataViewRole`-objektumok egy tömbjét veszi alapul, amely az összes szükséges tulajdonságot meghatározza.
 
 ### <a name="properties"></a>Tulajdonságok
 
-* **name** – az adatmező belső neve (egyedinek kell lennie)
-* **kind** – a mező jellege:
-    * `Grouping` – A mértékmezők csoportosításához használt, különálló értékek
-    * `Measure` – Numerikus adatértékek
-    * `GroupingOrMeasure` – Csoportosításként vagy mértékként is használható
-* **displayName** – a Tulajdonságok panelen a felhasználó számára megjelenő név
-* **description** – a mező rövid leírása (választható)
-* **requiredTypes** – az adatszerepkörhöz szükséges adattípus. A nem egyező értékek null értékre lesznek állítva (választható)
-* **preferredTypes** – az adatszerepkörhöz választott adattípus (választható)
+* **name** (név): Az adatmező belső neve (egyedinek kell lennie).
+* **kind**: A mező jellege:
+    * `Grouping`: Mértékmezők csoportosítására használt diszkrét értékek.
+    * `Measure`: Numerikus adatértékek.
+    * `GroupingOrMeasure`: Csoportosításként vagy mértékként is használható értékek.
+* **displayName**: A **Tulajdonságok** panelen a felhasználó számára megjelenő név.
+* **description**: A mező rövid leírása (nem kötelező).
+* **requiredTypes**: Az ehhez az adatszerepkörhöz szükséges adattípusok. A nem egyező értékek a null értékre lesznek módosítva (nem kötelező).
+* **preferredTypes**: Az ehhez az adatszerepkörhöz előnyben részesített adattípusok (nem kötelező).
 
-### <a name="valid-data-types-in-requiredtypes-and-preferredtypes"></a>A „requiredTypes” és a „preferredTypes” érvényes adattípusai
+### <a name="valid-data-types-in-requiredtypes-and-preferredtypes"></a>A requiredTypes és a preferredTypes érvényes adattípusai
 
-* **bool** – logikai érték
-* **integer** – egész szám értéke
-* **numeric** – numerikus érték
-* **text** – szöveges érték
-* **geography** – földrajzi adatok
+* **bool**: Logikai érték
+* **integer**: Egész szám
+* **numeric**: Numerikus érték
+* **text**: Szöveges érték
+* **geography**: Földrajzi adat
 
 ### <a name="example"></a>Példa
 
@@ -157,15 +157,15 @@ Az adatokhoz köthető mezők definiálásához a `dataRoles` elemet használjuk
 ]
 ```
 
-A fenti adatszerepkörök a következő mezőket hozzák létre
+A fenti adatszerepkörök a következő képen látható mezőket hozzák létre:
 
-![Megjelenített adatszerepkör](./media/data-role-display.png)
+![Adatszerepkör mezők](./media/data-role-display.png)
 
-## <a name="define-how-you-want-the-data-mapped---dataviewmappings"></a>Az adatleképezés módjának megadása – `dataViewMappings`
+## <a name="define-how-you-want-the-data-mapped-dataviewmappings"></a>Az adatleképezés kívánt módjának megadása: dataViewMappings
 
-A DataViewMapping azt írja le, hogy az adatszerepkörök hogyan kapcsolódnak egymáshoz, és lehetővé teszi a rájuk vonatkozó feltételes követelmények megadását is.
+A DataViewMappings tulajdonság azt írja le, hogy az adatszerepkörök hogyan kapcsolódnak egymáshoz, és lehetővé teszi a rájuk vonatkozó feltételes követelmények megadását is.
 
-A legtöbb vizualizáció egyetlen leképezést biztosít, Ön azonban több dataViewMappings elemet is megadhat. Minden érvényes leképezés létrehoz egy DataView elemet eredményez. 
+A legtöbb vizualizáció egyetlen leképezést biztosít, Ön azonban több dataViewMappings elemet is megadhat. Minden érvényes leképezés egy adatnézetet állít elő. 
 
 ```json
 "dataViewMappings": [
@@ -179,13 +179,11 @@ A legtöbb vizualizáció egyetlen leképezést biztosít, Ön azonban több dat
 ]
 ```
 
-[További információ a DataViewMappings elemekről](dataview-mappings.md)
+További információ: [A Power BI-vizualizációkban végzett adatnézet-leképezések ismertetése](dataview-mappings.md).
 
-## <a name="define-property-pane-options---objects"></a>A Tulajdonságok panel beállításainak meghatározása – `objects`
+## <a name="define-property-pane-options-objects"></a>A Tulajdonságok panel beállításainak meghatározása: objects
 
-Az objektumok a vizualizációhoz társított testreszabható tulajdonságokat írják le.
-Az objektumok több tulajdonsággal rendelkezhetnek, és mindegyik tulajdonsághoz tartozik egy típus.
-A típusok azt jelzik, hogy mi lesz a tulajdonság. Alább további információt találhat a típusokról.
+Az objektumok a vizualizációkhoz társított testreszabható tulajdonságokat írják le. Az objektumok több tulajdonsággal rendelkezhetnek, és mindegyik tulajdonsághoz tartozik egy típus. A típusok azt jelzik, hogy mi lesz a tulajdonság. 
 
 ```json
 "objects": {
@@ -196,24 +194,22 @@ A típusok azt jelzik, hogy mi lesz a tulajdonság. Alább további információ
 }
 ```
 
-[További információ az objektumokról](objects-properties.md)
+További információ: [A Power BI-vizualizációk objektumai és tulajdonságai](objects-properties.md).
 
-## <a name="handle-partial-highlighting---supportshighlight"></a>Részleges kiemelés kezelése – `supportsHighlight`
+## <a name="handle-partial-highlighting-supportshighlight"></a>Részleges kiemelés kezelése: supportsHighlight
 
-Alapértelmezés szerint ez az érték false (hamis), ami azt jelenti, hogy az „Értékek” terület automatikusan szűrve lesz, ha Ön kijelöl valamit az oldalon. Ez frissíti a vizualizációt, és csak a kijelölt értéket jeleníti meg. Ha meg szeretné jeleníteni az összes adatot, azonban csak a kijelölt elemeket szeretné kiemelni, a `supportsHighlight` elem értékét igazra kell állítania a capabilities.json fájlban.
+Ennek az értéknek az alapértelmezett beállítása `false`, ami azt jelenti, hogy az értékek automatikusan szűrve lesznek, ha az oldalon valamit kijelölnek. Ez az automatikus szűrés a vizualizációt is frissíti, hogy az csak a kijelölt értéket jelenítse meg. Ha az összes adatot meg szeretné jeleníteni úgy, hogy csak a kijelöltek legyenek kiemelve, a `supportsHighlight` értékét kell `true`-ra állítania a *capabilities.json* fájlban.
 
-[További információ a kiemelésről](highlight.md)
+További információ: [Adatpontok kiemelése Power BI-vizualizációkban](highlight.md).
 
-## <a name="handle-advanced-edit-mode---advancededitmodesupport"></a>Speciális szerkesztési mód kezelése – `advancedEditModeSupport`
+## <a name="handle-advanced-edit-mode-advancededitmodesupport"></a>Speciális szerkesztési mód kezelése: advancedEditModeSupport
 
-A vizualizációk támogathatják a Speciális szerkesztési módot.
-Alapértelmezés szerint a vizualizációk nem támogatják a Speciális szerkesztési módot, kivéve, ha a capabilities.json fájl máshogy nem szabja meg.
+A vizualizációk deklarálhatják, hogy támogathatják a speciális szerkesztési módot. A vizualizációk alapértelmezés szerint nem támogatják a speciális szerkesztési módot, kivéve ha ez a *capabilities.json* fájlban másként van megadva.
 
-[További információ az advancedEditModeSupport beállításról](advanced-edit-mode.md)
+További információ: [Speciális szerkesztési mód Power BI-vizualizációkban](advanced-edit-mode.md).
 
-## <a name="data-sorting-options-for-visual---sorting"></a>Adatrendezési beállítások a vizualizációhoz – `sorting`
+## <a name="data-sorting-options-for-visual-sorting"></a>Adatrendezési beállítások vizualizációkhoz: sorting
 
-A vizualizációk a funkcióikkal definiálhatják rendezési viselkedésüket.
-Alapértelmezés szerint a vizualizáció nem támogatja a rendezési sorrend módosítását, kivéve, ha a capabilities.json fájl máshogy nem szabja meg.
+A vizualizációk a funkcióikkal definiálhatják rendezési viselkedésüket. A vizualizációk alapértelmezés szerint nem támogatják a rendezési sorrend módosítását, kivéve ha ez a *capabilities.json* fájlban másként van megadva.
 
-[További információ a rendezésről](sort-options.md)
+További információ: [A Power BI-vizualizációk rendezési beállításai](sort-options.md).

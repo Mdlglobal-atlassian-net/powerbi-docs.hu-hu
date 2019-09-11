@@ -1,7 +1,7 @@
 ---
 title: Power BI QR-kód beolvasása mobileszközzel
 description: A Power BI-ban lévő QR-kódok a való világból bármit közvetlenül összekapcsolhatnak az iPhone-okhoz vagy Android-eszközökhöz készült Power BI mobilalkalmazás kapcsolódó BI-információival.
-author: mshenhav
+author: KesemSharabi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: mshenhav
-ms.openlocfilehash: 8b994dfd44a999b877a906571027f5fcb55d9924
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 69c0e5279389c186471aa0a6068d88917cf6fc65
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60972858"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236746"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Power BI QR-kód beolvasása mobileszközzel
 A következőkre vonatkozik:

@@ -1,6 +1,6 @@
 ---
-title: Adatnézet-leképezések
-description: Hogyan alakítja át a Power BI az adatokat, mielőtt átadja őket a vizualizációknak
+title: A Power BI-vizualizációkban végzett adatnézeti-leképezések ismertetése
+description: Ez a cikk azt írja le, hogy hogyan alakítja át a Power BI az adatokat, mielőtt továbbadná azokat a vizualizációknak.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -9,19 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: ff70b2f12921694617a736164484df1326471eea
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 07989183688045f34d78e71cdaad5045d080f436
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425183"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237242"
 ---
-# <a name="data-view-mappings-in-power-bi-visuals"></a>Adatnézeti leképezések Power BI-vizualizációkban
+# <a name="understand-data-view-mapping-in-power-bi-visuals"></a>A Power BI-vizualizációkban végzett adatnézeti-leképezések ismertetése
 
-A `dataViewMappings` azt írja le, hogy az adatszerepkörök hogyan kapcsolódnak egymáshoz, és lehetővé teszi a rájuk vonatkozó feltételes követelmények megadását is.
-Minden `dataMappings` rendelkezik egy szakasszal.
+Ez a cikk az adatnézet-leképezést ismerteti, valamint leírja, hogy az adatszerepkörök milyen viszonyban állnak egymással, és hogyan teszik lehetővé a rájuk vonatkozó feltételes követelmények megadását. A cikk a `dataMappings` egyes típusait is ismerteti.
 
-Minden érvényes leképezés létrehoz egy `DataView`-t, de jelenleg egy vizualizációban csak egy lekérdezést támogatunk, így a legtöbb esetben csak egy `DataView` szerepel majd. Ugyanakkor több, különböző feltételekkel rendelkező adatleképezést is biztosíthat, amelyek lehetővé teszik a következőt
+Minden érvényes leképezés állít elő adatnézetet, de jelenleg vizualizációnként csak egy leképezés végrehajtását támogatjuk. Általában csak egy adatnézet áll elő. Bizonyos feltételek mellett azonban több adatleképezést is megadhat. Ilyenkor használható a következő:
 
 ```json
 "dataViewMappings": [
@@ -35,10 +34,10 @@ Minden érvényes leképezés létrehoz egy `DataView`-t, de jelenleg egy vizual
 ]
 ```
 
-> [!NOTE]
-> Fontos megjegyezni, hogy Power BI kizárólag akkor hoz létre leképezést DataView-ra, ha az érvényes leképezés ki van töltve a `dataViewMappings`-ben.
+A Power BI csak akkor hoz létre leképezést az adatokhoz, ha az érvényes leképezés szerepel a `dataViewMappings` listában.
 
-Más szóval, ha a `categorical` definiálva van a `dataViewMappings`-ben, de más leképezések, például a `table` vagy a `single` nincs, a következő példához hasonlóan:
+Másként fogalmazva a `categorical` esetleg definiálva van a `dataViewMappings` szakaszban, más leképezések, például a `table` vagy a `single` viszont nem. Például:
+
 ```json
 "dataViewMappings": [
     {
@@ -47,7 +46,8 @@ Más szóval, ha a `categorical` definiálva van a `dataViewMappings`-ben, de m�
 ]
 ```
 
-A Power BI létrehoz egy `DataView`-t egyetlen `categorical` leképezéssel (a `table` és az egyéb leképezések `undefined` lesznek):
+A Power BI egyetlen `categorical` leképezéssel állít elő adatnézetet, a `table` és a többi leképezés pedig nincs definiálva:
+
 ```javascript
 {
     "categorical": {
@@ -60,16 +60,16 @@ A Power BI létrehoz egy `DataView`-t egyetlen `categorical` leképezéssel (a `
 
 ## <a name="conditions"></a>Feltételek
 
-Egy adott adatleképezés feltételeit írja le. Több feltételcsoportot is megadhat, és ha az adat megfelel a feltételcsoportok valamelyikének, a vizualizáció érvényesként fogadja el az adathalmazt.
+Ez a szakasz egy adott adatleképezés feltételeit írja le. Több feltételcsoportot is megadhat, és ha az adatok megfelelnek a feltételcsoportok valamelyikének, a vizualizáció érvényesként fogadja el az adathalmazt.
 
-Jelenleg minden mezőnél megadhatja a minimum és a maximum értéket. Ez az adatszerepkörhöz köthető mezők számát jelöli. 
+Jelenleg minden mezőnél megadhatja a minimum és a maximum értéket. Ez az érték az adatszerepkörhöz köthető mezők számát jelöli. 
 
 > [!NOTE]
 > Ha a feltétel nem tartalmaz adatszerepkört, akkor tetszőleges számú mezővel rendelkezhet.
 
 ### <a name="example-1"></a>1\. példa
 
-Több mezőt is áthúzhat az egyes adatszerepkörökbe. Ebben a példában a kategóriát egy adatmezőre korlátozzuk, a mértéket pedig két adatmezőre.
+Több mezőt is áthúzhat az egyes adatszerepkörökbe. Ebben a példában a kategória egy adatmezőre, a mérték pedig két adatmezőre van korlátozva.
 
 ```json
 "conditions": [
@@ -79,7 +79,9 @@ Több mezőt is áthúzhat az egyes adatszerepkörökbe. Ebben a példában a ka
 
 ### <a name="example-2"></a>2\. példa
 
-Ebben a példában két feltétel egyikét kell megadnia. Vagy pontosan egy kategóriába tartozó adatmező és pontosan két mérték, vagy pedig pontosan két kategória és pontosan egy mérték.
+Ebben a példában két feltétel egyikét kell megadnia:
+* Pontosan egy kategória-adatmező és pontosan kettő mérték
+* Pontosan két kategória és pontosan egy mérték.
 
 ```json
 "conditions": [
@@ -92,10 +94,10 @@ Ebben a példában két feltétel egyikét kell megadnia. Vagy pontosan egy kate
 
 Az egyirányú adatleképezés az adatleképezés legegyszerűbb formája. Egyetlen mértékmezőt fogad el, és megadja a teljes értéket. Ha a mező numerikus, akkor az összeget adja. Ellenkező esetben az egyedi értékek számát adja.
 
-Egyirányú adatleképezés használatához meg kell adnia a leképezni kívánt adatszerepkör nevét. Ez a leképezés csak egyetlen mértékmezővel működik. Ha hozzá van rendelve egy második mező, a rendszer nem hoz létre adatnézetet. ezért érdemes egy olyan feltételt is felvenni, amely egyetlen mezőre korlátozza az adatokat.
+Egyirányú adatleképezés használatához meg kell adnia a leképezni kívánt adatszerepkör nevét. Ez a leképezés csak egyetlen mértékmezővel működik. Egy újabb mező hozzárendelése esetén nem lesz adatnézet generálva, tehát ajánlott olyan feltételt is megadni, amely egyetlen mezőre korlátozza az adatokat.
 
 > [!NOTE]
-> Ez az adatleképezés nem használható más adatleképezéssel együtt. A célja az, hogy egyetlen numerikus értékre csökkentse az adatokat.
+> Ez az adatleképezés más adatnézettel együtt nem használható. A célja az, hogy egyetlen numerikus értékre csökkentse az adatokat.
 
 ### <a name="example-3"></a>3\. példa
 
@@ -110,7 +112,7 @@ Egyirányú adatleképezés használatához meg kell adnia a leképezni kívánt
 }  
 ```
 
-Az eredményül kapott adatnézet továbbra is tartalmazni fogja a többi típust (táblázatos, kategorikus stb.), de minden leképezés csak egyetlen értéket fog tartalmazni. Az ajánlott eljárás az, ha csak az egyedi értékhez fér hozzá.
+Az eredményül kapott adatnézet továbbra is tartalmazza a többi típust (táblázatos, kategorikus stb.), de minden leképezés csak egyetlen értéket tartalmaz. Az ajánlott eljárás az, ha csak az egyedi értékhez fér hozzá.
 
 ```JSON
 {
@@ -135,7 +137,7 @@ A kategorikus adatleképezés használatával egy vagy két független adatcsopo
 
 ### <a name="example-4"></a>4\. példa
 
-Itt látható a definíció, amelyet az adatszerepkörökről szóló előző példában láttunk.
+Itt az előző példában használt adatszerepkörök definíciója látható:
 
 ```json
 "dataRole":[
@@ -152,7 +154,7 @@ Itt látható a definíció, amelyet az adatszerepkörökről szóló előző p�
 ]
 ```
 
-A leképezés pedig:
+Ez pedig a leképezés:
 
 ```json
 "dataViewMappings": {
@@ -169,14 +171,14 @@ A leképezés pedig:
 }
 ```
 
-Ez egy egyszerű példa, amely egyszerű szavakkal fogalmazva így néz ki: „Képezd le a `category` adatszerepkörömet úgy, hogy minden olyan mezőnél, amelyet áthúzok a `category` területre, a mező adatai a `categorical.categories`-ra legyenek leképezve. A `measure` adatszerepkörömet pedig képezd le a `categorical.values`-ra.”
+A példa egyszerű. Emberi nyelven így szól: „Képezd le a `category` adatszerepkörömet úgy, hogy minden olyan mezőnél, amelyet áthúzok a `category` területre, a mező adatai a `categorical.categories`-ra legyenek leképezve. A `measure` adatszerepkörömet pedig képezd le a `categorical.values`-ra.”
 
-* **for...in** – Ebben az adatszerepkörben minden elemet vegyen fel az adatlekérdezésbe.
-* **bind...to** – Ugyanazt az eredményt adja, mint a for...in, azonban azt várja, hogy a DataRole feltétele egyetlen mezőre lesz korlátozva.
+* **for...in**: Ebben az adatszerepkörben minden elemet vegyen fel az adatlekérdezésbe.
+* **bind...to**: Ugyanazt az eredményt adja, mint a *for...in*, azonban azt várja, hogy a DataRole feltétele egyetlen mezőre lesz korlátozva.
 
 ### <a name="example-5"></a>5\. példa
 
-Ebben a példában az előző példában szereplő első két DataRoles-t fogjuk használni, továbbá definiálni fogjuk a `grouping` és a `measure2` mezőket.
+Ez a példa az előző példában szereplő első két adatszerepkört használja, továbbá definiálja a `grouping` és a `measure2` mezőt.
 
 ```json
 "dataRole":[
@@ -203,7 +205,7 @@ Ebben a példában az előző példában szereplő első két DataRoles-t fogjuk
 ]
 ```
 
-A leképezés pedig:
+Ez pedig a leképezés:
 
 ```json
 "dataViewMappings":{
@@ -224,11 +226,11 @@ A leképezés pedig:
 }
 ```
 
-Itt a különbség a categorical.values leképezése lesz. Itt azt mondjuk, hogy „Képezd le a `measure` és a `measure2` adatszerepkört úgy, hogy a `grouping` adatszerepkör alapján legyenek csoportosítva.”
+Itt a különbség a categorical.values leképezése lesz. Ez ennyit jelent: „Képezd le a `measure` és a `measure2` adatszerepkört úgy, hogy a `grouping` adatszerepkör alapján legyenek csoportosítva.”
 
 ### <a name="example-6"></a>6\. példa
 
-Itt vannak az adatszerepkörök.
+Az alábbiak az adatszerepkörök:
 
 ```json
 "dataRoles": [
@@ -250,7 +252,7 @@ Itt vannak az adatszerepkörök.
 ]
 ```
 
-Ez pedig a dataViewMapping.
+Ez pedig az adatnézet-leképezés:
 
 ```json
 "dataViewMappings": [
@@ -277,7 +279,7 @@ Ez pedig a dataViewMapping.
 ]
 ```
 
-A kategorikus `dataview` a következőképpen jeleníthető meg.
+A kategorikus adatnézet a következő módon jeleníthető meg:
 
 | Kategorikus |  |  | | | |
 |-----|-----|------|------|------|------|
@@ -288,7 +290,7 @@ A kategorikus `dataview` a következőképpen jeleníthető meg.
 | Mexikó | | 300 | x | x | x |
 | Egyesült Királyság | | x | x | 75 | x |
 
-A Power BI ezt kategorikus adatnézetként fogja létrehozni. Ez a kategóriák csoportja.
+A Power BI ezt a kategorikus adatnézetként állítja elő. Ez a kategóriák csoportja.
 
 ```JSON
 {
@@ -310,7 +312,7 @@ A Power BI ezt kategorikus adatnézetként fogja létrehozni. Ez a kategóriák 
 }
 ```
 
-Minden kategória egy értékcsoportra van leképezve. Az értékek mindegyike sorozat alapján van csoportosítva, ami itt az éveket jelenti.
+Minden kategória egy értékcsoportra van leképezve. Az értékek mindegyike sorozat szerint van csoportosítva, ami években van kifejezve.
 
 Például Kanada értékesítése 2013-ra null értékű, 2014-re pedig 50.
 
@@ -393,7 +395,7 @@ A megadott képességekkel:
 ]
 ```
 
-A táblázatos `dataview` a következőképpen jeleníthető meg.  
+A táblázatos adatnézetet a következő módon képezheti le:  
 
 | Ország| Év | Értékesítés |
 |-----|-----|------|
@@ -405,7 +407,7 @@ A táblázatos `dataview` a következőképpen jeleníthető meg.
 | Egyesült Királyság | 2014 | 150 |
 | USA | 2015 | 75 |
 
-A Power BI ezt táblázatos adatnézetként fogja létrehozni. Rendezés nem feltétlenül van.
+A Power BI a táblázatos adatnézetként jeleníti meg az adatokat. Nem feltételezhető, hogy az adatok rendezve vannak.
 
 ```JSON
 {
@@ -452,13 +454,13 @@ A Power BI ezt táblázatos adatnézetként fogja létrehozni. Rendezés nem fel
 }
 ```
 
-Az adatokat összesíteni lehet a kívánt mező kiválasztásával, majd a Sum (összeg) lehetőségre kattintva.  
+Összesítheti is az adatokat, ha kijelöli a kívánt mezőt, majd az összegzést választja.  
 
 ![Adatösszesítés](./media/data-aggregation.png)
 
 ## <a name="matrix-data-mapping"></a>Mátrixos adatleképezés
 
-A mátrixos adatleképezés hasonló a táblázatos adatleképezéshez, de a sorok hierarchikusan jelennek meg. Az `dataRole` értékek egyike pedig oszlop fejlécének értékeként is használható.
+A mátrixos adatleképezés hasonló a táblázatos adatleképezéshez, de a sorok hierarchikusan jelennek meg. Bármelyik adatszerepkör-érték használható oszlopfejléc értékeként.
 
 ```json
 {
@@ -510,7 +512,7 @@ A mátrixos adatleképezés hasonló a táblázatos adatleképezéshez, de a sor
 }
 ```
 
-A Power BI hierarchikus adatstruktúrát hoz létre. A fa gyökerében a `Category` adatszerepkör első oszlopában található adatok szerepelnek az adatszerepkör második oszlopában lévő gyermekekkel.
+A Power BI hierarchikus adatstruktúrát hoz létre. A fahierarchia gyökere tartalmazza a `Category` szerepkör **Szülőelemek** oszlopából származó adatokat, az adatszerepkör-tábla **Gyermekelemek** oszlopából származó gyermekelemekkel.
 
 Adatkészlet:
 
@@ -533,11 +535,11 @@ Adatkészlet:
 | Parent2 | Child3 | Grand child8 | Col1 | 10 |
 | Parent2 | Child3 | Grand child8 | Col2 | 13 |
 
-Power BI Core Matrix vizualizációja ezt táblázatként jeleníti meg.
+A Power BI alap mátrix vizualizációja az adatokat táblázatként jeleníti meg.
 
 ![Mátrix vizualizáció](./media/matrix-visual-smaple.png)
 
-A vizualizáció az alább leírtak szerint kapja meg az adatszerkezetet (csak az első két sor jelenik meg):
+A vizualizáció az alábbi kódban leírtak alapján kap adatstruktúrát (itt csak az első két táblázatsor látható):
 
 ```json
 {
@@ -614,9 +616,9 @@ A vizualizáció az alább leírtak szerint kapja meg az adatszerkezetet (csak a
 
 ## <a name="data-reduction-algorithm"></a>Adatcsökkentési algoritmus
 
-A `DataReductionAlgorithm` akkor alkalmazható, ha szabályozni szeretné a DataView által fogadott adatmennyiséget.
+Az adatnézetben kapott adatok mennyiségének szabályozására adatcsökkentési algoritmust alkalmazhat.
 
-Alapértelmezés szerint minden egyéni vizualizációnál alkalmazva van a top DataReductionAlgorithm, és a „Count” értéke 1000 adatpontra van beállítva. Ez egyenértékű a következő tulajdonságok beállításával a capabilities.json fájlban:
+Alapértelmezés szerint minden egyéni vizualizációnál alkalmazva van a top adatcsökkentési algoritmus, és a *count* (darabszám) értéke 1000 adatpontra van beállítva. Ez ugyanazzal az eredménnyel jár, mint a következő tulajdonságok módosítása a *capabilities.json* fájlban:
 
 ```json
 "dataReductionAlgorithm": {
@@ -626,23 +628,23 @@ Alapértelmezés szerint minden egyéni vizualizációnál alkalmazva van a top 
 }
 ```
 
-A „Count” értékét tetszőleges egész számra módosíthatja, amely akár 30000 is lehet. Az R-alapú egyéni vizualizációk akár 150000 sort is támogatnak.
+A *count* értékét tetszőleges egész számra módosíthatja, amely akár 30000 is lehet. Az R-alapú egyéni vizualizációk akár 150000 sort is támogatnak.
 
 ## <a name="data-reduction-algorithm-types"></a>Az adatcsökkentési algoritmusok típusai
 
-A `DataReductionAlgorithm` beállításainak négyféle típusa létezik:
+Az adatcsökkentési algoritmusok négyféle típusa állítható be:
 
-* `top` – Ha korlátozni kívánja az adatokat az adatkészlet elejétől kapott értékekre. Az első „count” számú érték lesz felhasználva az adatkészletből.
-* `bottom` – Ha korlátozni kívánja az adatokat az adatkészlet végéről kapott értékekre. Az utolsó „count” számú érték lesz felhasználva az adatkészletből.
-* `sample` – csökkenti az adatkészletet egy egyszerű mintavételezési algoritmussal, amely „count” számú elemre korlátozódik. Ez azt jelenti, hogy az első és az utolsó elem is szerepel, és a köztük lévő elemek száma „count” lesz, melyek között egyenlő távolság lesz.
-Például ha van egy adatkészlete [0, 1, 2,... 100], és egy `count: 9` beállítása, akkor a következő értékeket fogja kapni: [0, 10, 20... 100]
-* `window` - egyszerre egy „Count” számú elemet tartalmazó „ablakot” tölt be. Jelenleg a `top` és a `window` egyenértékű. Folyamatban van egy ablakkezelő-beállítás teljes körű támogatása.
+* `top`: Ha az adatokat az adathalmaz elejétől kapott értékekre kívánja korlátozni. Az első *count* számú érték lesz felhasználva az adathalmazból.
+* `bottom`: Ha az adatokat az adathalmaz végéről kapott értékekre kívánja korlátozni. Az utolsó „count” számú érték lesz felhasználva az adathalmazból.
+* `sample`: Egy egyszerű mintavételezési algoritmussal csökkenti az adatok mennyiségét, amely *count* számú elemre korlátozódik. Ez azt jelenti, hogy az első és az utolsó elem is szerepel, és az összesen *count* számú elem között egyenlők a távolságok.
+Ha az adathalmaz például {0; 1; 2;... 100}, és a *count* értéke 9, a következő értékeket fogja kapni: {0; 10; 20;... 100}.
+* `window`: Egyszerre az adatpontok egy *count* számú elemet tartalmazó *tartományát* tölti be. A `top` és a `window` jelenleg egyenértékű. A tartomány beállítás teljes támogatásán még dolgozunk.
 
-## <a name="data-reduction-algorithm-usage"></a>Az adatcsökkentési algoritmusok használata
+## <a name="data-reduction-algorithm-usage"></a>Az adatcsökkentési algoritmus használata
 
-A `DataReductionAlgorithm` használható a kategorikus, a tábla vagy a mátrix típusú `dataview`-leképezésben.
+Az adatcsökkentési algoritmus kategorikus, táblázatos vagy mátrix adatnézet-leképezésben használható.
 
-Beállítható `categories` és/vagy `values` csoportszakaszaira a kategorikus adatleképezéshez.
+Kategorikus adatleképezéshez az algoritmust beállíthatja a `categories`-ra, és/vagy a `values` csoportszakaszaira.
 
 ### <a name="example-8"></a>8\. példa
 
@@ -677,7 +679,7 @@ Beállítható `categories` és/vagy `values` csoportszakaszaira a kategorikus a
 }
 ```
 
-Az adatcsökkentési algoritmus alkalmazható egy táblázat `dataview`-leképezésének `rows` szakaszára.
+Az adatcsökkentési algoritmust alkalmazhatja az adatnézet-leképezési táblázat `rows` szakaszára.
 
 ### <a name="example-9"></a>9\. példa
 
@@ -700,4 +702,4 @@ Az adatcsökkentési algoritmus alkalmazható egy táblázat `dataview`-leképez
 ]
 ```
 
-Az adatcsökkentési algoritmus alkalmazható egy `matrix` `dataview`-leképezésének `rows` vagy `columns` szakaszára.
+Az adatcsökkentési algoritmust alkalmazhatja az adatnézet-leképezési mátrix `rows` és `columns` szakaszára.
