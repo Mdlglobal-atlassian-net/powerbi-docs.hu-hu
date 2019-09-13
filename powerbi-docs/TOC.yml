@@ -283,6 +283,8 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Hivatkozások a táblázatokban
               href: power-bi-hyperlinks-in-tables.md
+            - name: Egyéni formátumsztringek
+              href: desktop-custom-format-strings.md
             - name: Táblázat feltételes formázása
               href: desktop-conditional-table-formatting.md
             - name: Feltételes kifejezésre alapuló címformázás
@@ -675,6 +677,8 @@
               href: service-dataflows-linked-entities.md
             - name: Növekményes frissítések használata adatfolyamokkal
               href: service-dataflows-incremental-refresh.md
+            - name: Adatfolyamokhoz ajánlott eljárások
+              href: service-dataflows-best-practices.md
             - name: Az adatfolyamokkal kapcsolatos fejlesztői források
               href: service-dataflows-developer-resources.md
             - name: Csatlakozás adatfolyamokhoz a Power BI Desktopban
@@ -715,6 +719,8 @@
               href: service-template-apps-install-distribute.md
             - name: 'Power BI-sablonalkalmazás frissítése, törlése és kivonása'
               href: service-template-update-delete-extract.md
+            - name: Sablonalkalmazás-minták
+              href: service-template-apps-samples.md
         - name: Hibaelhárítás
           items:
             - name: Elfelejtette a Power BI-hoz használatos jelszavát?
