@@ -283,6 +283,8 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Hivatkozások a táblázatokban
               href: power-bi-hyperlinks-in-tables.md
+            - name: Képek megjelenítése táblázatokban
+              href: power-bi-images-tables.md
             - name: Egyéni formátumsztringek
               href: desktop-custom-format-strings.md
             - name: Táblázat feltételes formázása
@@ -569,8 +571,6 @@
               href: service-create-dashboard-mobile-phone-view.md
             - name: QR-kód létrehozása csempéhez
               href: service-create-qr-code-for-tile.md
-            - name: Kép felvétele irányítópultra
-              href: service-dashboard-add-image.md
             - name: Irányítópult adatainak besorolása
               href: service-data-classification.md
             - name: Irányítópult-témák
