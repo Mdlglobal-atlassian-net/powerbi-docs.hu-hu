@@ -677,8 +677,6 @@
               href: service-dataflows-linked-entities.md
             - name: Növekményes frissítések használata adatfolyamokkal
               href: service-dataflows-incremental-refresh.md
-            - name: Adatfolyamokhoz ajánlott eljárások
-              href: service-dataflows-best-practices.md
             - name: Az adatfolyamokkal kapcsolatos fejlesztői források
               href: service-dataflows-developer-resources.md
             - name: Csatlakozás adatfolyamokhoz a Power BI Desktopban
@@ -1432,6 +1430,8 @@
           href: service-admin-power-bi-security.md
 - name: Útmutató
   items:
+    - name: Adatfolyamokhoz ajánlott eljárások
+      href: service-dataflows-best-practices.md
     - name: Mi az a csillagséma?
       href: guidance/star-schema.md
     - name: Az adatmodell méretének csökkentése
