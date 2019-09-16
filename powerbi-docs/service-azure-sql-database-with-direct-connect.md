@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/13/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 2363b9da3ac46ce9fd49f19a00950a4a3cf23502
-ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
+ms.openlocfilehash: 96bf1a8d95f26014be09a32c1e83fb2af90f9fc0
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468102"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70986993"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Az Azure SQL Database DirectQueryvel
 
@@ -27,7 +27,7 @@ A DirectQuery használatával, miközben a jelentés nézetben feltárja az adat
 **Megjegyzések:**
 
 * A kapcsolódáskor a teljes szervernevet adja meg (további részleteket lejjebb talál).
-* Győződjön meg arról, hogy az adatbázisra vonatkozó tűzfalszabályokban konfigurálva van az „[Azure-szolgáltatásokhoz való hozzáférés engedélyezése](https://msdn.microsoft.com/library/azure/ee621782.aspx)”.
+* Győződjön meg arról, hogy az adatbázisra vonatkozó tűzfalszabályokban konfigurálva van az „[Azure-szolgáltatásokhoz való hozzáférés engedélyezése](https://docs.microsoft.com/azure/sql-database/sql-database-networkaccess-overview#allow-azure-services)”.
 * Minden művelet, mint például egy oszlop kiválasztása vagy egy szűrő felvétele, visszaküld egy lekérdezést az adatbázisnak.
 * A csempék óránként frissülnek (a frissítést nem szükséges ütemezni). A frissítés gyakoriságát a Speciális beállítások között módosíthatja a csatlakozáskor.
 * A Q&A nem érhető el a DirectQuery-adatkészletek esetén.

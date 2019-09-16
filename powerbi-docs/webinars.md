@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 5a5dca5c3fb4b3b375d3fbb603703e8aaaf91c6c
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: e02d50a7990eb90405d6a864fe294fee8e946e10
+ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023435"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936267"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -22,9 +22,7 @@ Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket 
 
 ## <a name="upcoming-webinars"></a>Közelgő webináriumok
 
-**A Power BI használata a Dynamics 365 Finance and Operations szolgáltatással**
-<br>szerző: Kevin Horlock
-<br>[Regisztráljon a szeptember 11-i megtekintéshez](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
+Még nincs tervezett webinárium. Látogasson vissza később közelgő eseményekért.
 
 >[A Power BI-közösség közelgő webináriumai](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -51,6 +49,10 @@ Igény szerint elérhető népszerű előadások az első lépésekhez
 **Az adatmodellezési készségek fejlesztése a Power BI segítségével**
 <br>Készítette Kasper de Jonge
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
+
+**A Power BI használata a Dynamics 365 Finance and Operations szolgáltatással**
+<br>szerző: Kevin Horlock
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
 
 **A Microsoft Power BI-t használ – pénzügyi tervezés és elemzés egyszerűen**
 <br>előadó: Cory Hrncirik és Miguel Martinez
