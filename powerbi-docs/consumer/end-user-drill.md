@@ -13,10 +13,10 @@ ms.date: 6/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 29823a2f1ca7f1448df54282e0ce081310974eb3
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "67265268"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Részletezési mód vizualizációkban a Power BI-ban
@@ -228,7 +228,7 @@ A vizualizáción kívül az egyes jelentések adataiban is láthatjuk a hierarc
 |Kibontás módja|Év|Negyedév|Hónap|Nap|
 | --- |:---:|:---:|:---:|---|
 |Egyirányú|![egy év](./media/end-user-drill/power-bi-hierarchical-year.png)|![egy negyedév](media/end-user-drill/power-bi-hierarchical-quarter.png)|![egy hónap](./media/end-user-drill/power-bi-hierarchical-one-month.png)|![egy nap](media/end-user-drill/power-bi-hierarchical-one-day.png)|
-|Összes|![összes év](./media/end-user-drill/power-bi-hierarchical-year.png)|![összes negyedév](media/end-user-drill/power-bi-hierarchical-quarter.png)|![összes hónap](./media/end-user-drill/power-bi-hierarchical-all-month.png)|![összes nap](media/end-user-drill/power-bi-hierarchical-all-day.png)|
+|Az összes|![összes év](./media/end-user-drill/power-bi-hierarchical-year.png)|![összes negyedév](media/end-user-drill/power-bi-hierarchical-quarter.png)|![összes hónap](./media/end-user-drill/power-bi-hierarchical-all-month.png)|![összes nap](media/end-user-drill/power-bi-hierarchical-all-day.png)|
 
 Az adatok megegyeznek a **negyedév** és az **év** jelentéseiben. Ha lehatol az **Értékek** részletességi szintjéig, az egyetlen hónapra vonatkozó jelentés konkrétabb adatokat jelenít meg, az összes hónapra vonatkozó jelentés pedig több adatot tartalmaz.
 
@@ -260,7 +260,7 @@ A vizualizáción kívül az egyes jelentések adataiban is láthatjuk a hierarc
 | Kibontás módja|Terület|Település|Irányítószám|Név|
 | ---|:---:|:---:|:---:|---|
 |Egyirányú|![egy terület](./media/end-user-drill/power-bi-hierarchical-territory.png)|![egy város](media/end-user-drill/power-bi-hierarchical-one-territory-city.png)|![egy irányítószám](./media/end-user-drill/power-bi-hierarchical-one-territory-city-postal.png)|![egy név](media/end-user-drill/power-bi-hierarchical-one-territory-city-postal-name.png)|
-|Összes|![összes terület](./media/end-user-drill/power-bi-hierarchical-territory.png)|![összes város](media/end-user-drill/power-bi-hierarchical-all-territory-city.png)|![összes irányítószám](./media/end-user-drill/power-bi-hierarchical-all-territory-city-postal.png)|![összes név](media/end-user-drill/power-bi-hierarchical-all-territory-city-postal-name.png)|
+|Az összes|![összes terület](./media/end-user-drill/power-bi-hierarchical-territory.png)|![összes város](media/end-user-drill/power-bi-hierarchical-all-territory-city.png)|![összes irányítószám](./media/end-user-drill/power-bi-hierarchical-all-territory-city-postal.png)|![összes név](media/end-user-drill/power-bi-hierarchical-all-territory-city-postal-name.png)|
 
  A lehatolás során láthatja, hogy az **egyetlen** területre vonatkozó jelentés konkrétabb adatokat jelenít meg, az **összes** területre vonatkozó jelentés pedig több adatot tartalmaz.
 

@@ -4,19 +4,18 @@ description: A Power BI használatát támogató böngészők listájának megte
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/11/2019
+ms.date: 09/11/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 1b47e51ece196d6667363d91f43589c398828ff9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f713ab679f49ca2e3226f9a6c2a7bf9f2588fede
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65608286"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073204"
 ---
 # <a name="supported-browsers-for-power-bi"></a>A Power BI használatát támogató böngészők
 A Power BI az alábbi böngészőkben képes futni:
@@ -30,6 +29,7 @@ A Power BI az alábbi böngészőkben képes futni:
 Ezek a böngészők minden olyan platformon támogatva vannak, ahol elérhetőek.
 
 ### <a name="next-steps"></a>Következő lépések
+* [Mi az a Power BI?](../power-bi-overview.md)
 * Kérdezze meg a [Power BI közösségét](http://community.powerbi.com/)
 * Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).
 
