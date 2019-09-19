@@ -1,6 +1,6 @@
 - name: A Power BI felhasználók számára
   href: power-bi-consumer-landing.md
-- name: Power BI-szolgáltatások a felhasználók számára
+- name: A Power BI szolgáltatás felhasználók számára
   items:
     - name: Áttekintés
       items:
@@ -8,6 +8,8 @@
           href: end-user-consumer.md
         - name: Alapfogalmak és szakkifejezések Power BI-felhasználók számára
           href: end-user-basic-concepts.md
+        - name: Tartalom keresése a Kezdőlap használatával
+          href: end-user-home.md
         - name: Navigálás az „új megjelenésen”
           href: ../service-new-look.md
     - name: Rövid útmutatók
