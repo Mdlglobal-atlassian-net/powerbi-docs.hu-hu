@@ -1,5 +1,5 @@
 ---
-title: A Vizualizáció létrehozásához használt adatok megjelenítése
+title: A vizualizáció létrehozásához használt adatok megjelenítése
 description: Ez a dokumentum azt ismerteti, hogyan jeleníthetik meg a Power BI-ügyfelek a vizualizációk létrehozásához használt adatokat.
 author: mihart
 manager: kvivek
@@ -12,18 +12,18 @@ ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 5b36ded0863685726f9af3104b43c507b9a3c4d0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65607961"
 ---
-# <a name="show-the-data-that-was-used-to-create-the-visual"></a>A Vizualizáció létrehozásához használt adatok megjelenítése
+# <a name="show-the-data-that-was-used-to-create-the-visual"></a>A vizualizáció létrehozásához használt adatok megjelenítése
 
-Power BI-vizualizációkban adatokból jönnek létre a mögöttes adathalmazok. Ha látni szeretné a háttérfolyamatokat, a Power BI-jal *megjelenítheti* a vizualizáció létrehozásához használt adatokat. Ha bejelöli **adatok megjelenítése**, a Power BI megjeleníti az adatok alatt (vagy mellett) a Vizualizáció.
+A Power BI-vizualizációk az alapul szolgáló adathalmazokból származó adatokból jönnek létre. Ha látni szeretné a háttérfolyamatokat, a Power BI-jal *megjelenítheti* a vizualizáció létrehozásához használt adatokat. Amikor az **Adatok megjelenítése** elemet választja, a Power BI megjeleníti a vizualizáció alatt (vagy mellett) lévő adatokat.
 
 
-1. A Power BI szolgáltatásban [nyisson meg egy jelentést](end-user-report-open.md) és válasszon egy vizualizációt.  
+1. [Nyisson meg egy jelentést](end-user-report-open.md), és válasszon ki egy vizualizációt a Power BI szolgáltatásban.  
 2. A vizualizáció mögötti adatok megjelenítéséhez kattintson a három pontra (…), és válassza az **Adatok megjelenítése** elemet.
    
    ![Adatok megjelenítése kiválasztása](./media/end-user-show-data/power-bi-explore-show-data-newer.png)

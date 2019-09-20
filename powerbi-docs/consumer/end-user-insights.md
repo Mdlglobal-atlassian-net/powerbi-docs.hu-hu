@@ -13,10 +13,10 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: fcfb16de53b4e6c67b7c46fec87ab614d07cb9b1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61049231"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Adatelemzési eredmények megtekintése irányítópult-csempéken a Power BI-jal
@@ -59,7 +59,7 @@ Az eredeti elemzéseket tartalmazó vászonra a bal felső sarokban látható **
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 - Az **Elemzések megtekintése** nem működik a DirectQueryvel, csak a Power BI-ba feltöltött adatokkal használható.
-- Az **Elemzések megtekintése** az irányítópult nem minden csempetípusával használható. Például, nem áll rendelkezésre az egyéni vizualizációkat.<!--[custom visuals](end-user-custom-visuals.md)-->
+- Az **Elemzések megtekintése** az irányítópult nem minden csempetípusával használható. Például egyéni vizualizációkhoz nem érhető el.<!--[custom visuals](end-user-custom-visuals.md)-->
 
 
 ## <a name="next-steps"></a>Következő lépések

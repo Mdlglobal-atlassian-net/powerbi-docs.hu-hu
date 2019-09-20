@@ -13,10 +13,10 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 4bb69c8ead92bf69671107fdd5bfa0eef0ae5c0d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61054868"
 ---
 # <a name="recent-content-in-power-bi-service"></a>A **Legutóbbi** tartalom megtekintése a Power BI szolgáltatásban
@@ -37,7 +37,7 @@ Ha ötnél több elemet tekintett meg, kattintson az **Összes megjelenítése**
 
 ![az összes legutóbbi tartalom megjelenítése](./media/end-user-recent/power-bi-recent-list.png)
 
-Itt kezelheti a tartalmat az egyes mint [ **irányítópultok**](end-user-dashboards.md), [ **jelentések**](end-user-reports.md), és  **Munkafüzetek** lapokat, és az alkalmazások <!--[**Apps**](end-user-apps.md)--> képernyő.
+Innen ugyanúgy használhatja a tartalmakat, ahogyan az [**Irányítópultok**](end-user-dashboards.md), [**Jelentések**](end-user-reports.md), **Munkafüzetek** egyes lapjairól, illetve az Alkalmazások <!--[**Apps**](end-user-apps.md)--> képernyőről.
 
 ## <a name="next-steps"></a>Következő lépések
 <!--[Power BI service Apps](end-user-apps.md)-->

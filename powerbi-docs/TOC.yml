@@ -1347,13 +1347,21 @@
               href: service-gateway-mashup-on-premises-cloud.md
         - name: Az egyszeri bejelentkezés (SSO) engedélyezése
           items:
-            - name: Egyszeri bejelentkezés (SSO) – áttekintés
+            - name: Az SSO áttekintése
               href: service-gateway-sso-overview.md
-            - name: Egyszeri bejelentkezés (SSO) – Kerberos
-              href: service-gateway-sso-kerberos.md
-            - name: Egyszeri bejelentkezés (SSO) – Kerberos – erőforrás-alapú
-              href: service-gateway-sso-kerberos-resource.md
-            - name: Egyszeri bejelentkezés (SSO) – SAML
+            - name: Kerberos-alapú egyszeri bejelentkezés
+              items:
+                - name: Kerberos-alapú egyszeri bejelentkezés konfigurálása
+                  href: service-gateway-sso-kerberos.md
+                - name: Adatforrás-alapú konfiguráció
+                  items:
+                    - name: SAP HANA
+                      href: service-gateway-sso-kerberos-sap-hana.md
+                    - name: SAP BW - sapcrypto.dll (Common Crypto kódtár)
+                      href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
+                    - name: SAP BW - gx64krb5.dll és gsskrb5.dll
+                      href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+            - name: SAML-alapú egyszeri bejelentkezés
               href: service-gateway-sso-saml.md
         - name: Az átjáró hibáinak elhárítása
           href: service-gateway-onprem-tshoot.md

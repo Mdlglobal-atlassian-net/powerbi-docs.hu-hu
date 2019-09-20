@@ -10,107 +10,107 @@ ms.topic: conceptual
 ms.date: 04/24/2019
 ms.author: mshenhav
 ms.openlocfilehash: 4e09b10e38b018f8e5572343b343a243ace3bf81
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "64906538"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>A Power BI-mobilalkalmazásokon belül egy meghatározott helyre mutató hivatkozás létrehozása
-Hivatkozások segítségével közvetlenül a Power BI-ban meghatározott elemek eléréséhez: Jelentés, az irányítópult és a csempe.
+A hivatkozásokkal közvetlenül férhet hozzá a Power BI adott elemeihez: jelentésekhez, irányítópultokhoz és csempékhez.
 
-A hivatkozások használata a Power BI Mobile nagyrészt két forgatókönyv közül választhat: 
+Hivatkozásokat általában két esetben használunk a Power BI Mobile-ban: 
 
-* Nyissa meg a Power bi-ban való **az alkalmazáson kívül**, valamint az adott tartalmon (jelentés vagy irányítópult vagy alkalmazás). Ez általában a-integrációs forgatókönyv, ha meg szeretné nyitni a Power BI Mobile más alkalmazásból. 
-* A **lépjen** belüli Power bi-ban. Ez akkor általában akkor, ha szeretne létrehozni egy egyéni navigáció a Power bi-ban.
+* A Power BI megnyitása az **alkalmazáson kívülről**, és adott tartalomra való ugrás (jelentésre/irányítópultra/alkalmazásra). Ez általában integrációs helyzetekben fordul elő, amelyekben a Power BI Mobile-t egy másik alkalmazásból szeretné megnyitni. 
+* **Navigálás** a Power BI-on belül. Ez általában akkor történik, ha egyéni navigálást szeretne létrehozni a Power BI-ban.
 
 
-## <a name="use-links-from-outside-of-power-bi"></a>Hivatkozásokat a Power BI szolgáltatáson kívül
-Egy hivatkozást a Power BI alkalmazáson kívül használatakor szeretne-e győződjön meg arról, hogy azt nyitja meg az alkalmazást, és ha az alkalmazás nincs telepítve az eszközön, majd telepítheti a felhasználónak. A speciális hivatkozás formátuma hoztunk létre, amely pontosan támogatása érdekében. Ezt a hivatkozási formátumot, győződjön meg arról, hogy az eszköz a hivatkozás megnyitásához használja az alkalmazást, és ha az alkalmazás nincs telepítve az eszközön, akkor a felhasználót, hogy a Store áruházból való letöltés felajánlja lesz.
+## <a name="use-links-from-outside-of-power-bi"></a>Hivatkozások használata Power BI-on kívülről
+Ha Power BI alkalmazáson kívüli hivatkozást használ, ellenőrizze, hogy az alkalmazás megnyitja-e az alkalmazást, és ha az alkalmazás nincs telepítve az eszközön, akkor érdemes felajánlani a felhasználónak, hogy telepítse azt. Létrehoztunk egy speciális hivatkozásformátumot, amely pontosan ezt támogatja. Ez a hivatkozásformátum gondoskodik arról, hogy az eszköz az alkalmazás használatával nyissa meg a hivatkozást, és ha az alkalmazás nincs telepítve az eszközön, akkor felajánlja a felhasználónak, hogy azt az áruházból beszerezze.
 
-A hivatkozás a következő webalkalmazásokba  
+A hivatkozásnak a következővel kell kezdődnie  
 ```html
 https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 ```
 
 > [!IMPORTANT]
-> Ha a tartalom üzemel, a speciális adatközpont, például a kormány Esettanulmányának, Kína, stb. A hivatkozás el kell indulnia a megfelelő Power BI-címmel, például `app.powerbigov.us` vagy `app.powerbi.cn`.   
+> Ha a tartalma speciális adatközpontban található, amilyen például a Government, a China stb. A hivatkozásnak a megfelelő Power BI-címmel kell kezdődnie, például `app.powerbigov.us` vagy `app.powerbi.cn`.   
 >
 
 
-A **lekérdezési paraméterei** vannak:
-* **action** (mandatory) = OpenApp / OpenDashboard / OpenTile / OpenReport
-* **identifikátor appId** =, ha meg szeretné nyitni egy jelentést vagy irányítópultot egy alkalmazás részét képező 
-* **groupObjectId** =, ha meg szeretné nyitni egy jelentést vagy irányítópultot munkaterület (de nem a saját munkaterület) részét képező
-* **dashboardObjectId** = irányítópult objektum azonosítója (Ha a művelet OpenDashboard vagy OpenTile)
-* **reportObjectId** = jelentésobjektum Azonosítójának (Ha a művelet JelentésMegnyitása)
-* **tileObjectId** = csempe objektum azonosítója (Ha a művelet OpenTile)
-* **reportPage** =, ha meg szeretné nyitni a meghatározott jelentésre hivatkozó szakaszt (Ha a művelet JelentésMegnyitása)
-* **ctId** = elem a szervezet azonosítója (B2B a forgatókönyvhöz kapcsolódó. Ez elhagyható, ha a cikk a felhasználó szervezete tartozik).
+A **QUERY PARAMS** a következőkből áll:
+* **action** (kötelező) = OpenApp / OpenDashboard / OpenTile / OpenReport
+* **appId** = ha egy alkalmazás részét képező jelentést vagy irányítópultot szeretne megnyitni 
+* **groupObjectId** = ha egy olyan jelentést vagy irányítópultot szeretne megnyitni, amely a munkaterület részét képezi (de nem a saját munkaterületet)
+* **dashboardObjectId** = az irányítópult objektum azonosítója (ha a művelet OpenDashboard vagy OpenTile)
+* **reportObjectId** = a jelentés objektum azonosítója (ha a művelet az OpenReport)
+* **tileObjectId** = a csempe objektum azonosítója (ha a művelet OpenTile)
+* **reportPage** = ha egy adott jelentésszakaszt szeretne megnyitni (ha a művelet OpenReport)
+* **ctid** = elem szervezetazonosító (B2B-forgatókönyvek esetén. Ez kihagyható, ha az elem a felhasználó szervezetéhez tartozik).
 
 **Példák:**
 
-* Nyissa meg az alkalmazásra mutató hivatkozás 
+* Alkalmazáshivatkozás megnyitása 
   ```html
   https://app.powerbi.com/Redirect?action=OpenApp&appId=appidguid&ctid=organizationid
   ```
 
-* Egy alkalmazás részét képező irányítópult megnyitása 
+* Alkalmazás részét képező irányítópult megnyitása 
   ```html
   https://app.powerbi.com/Redirect?action=OpenDashboard&appId=**appidguid**&dashboardObjectId=**dashboardidguid**&ctid=**organizationid**
   ```
 
-* Nyissa meg a jelentést, amely része egy munkaterületet
+* Munkaterület részét képező jelentés megnyitása
   ```html
   https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**reportidguid**&groupObjectId=**groupidguid**&reportPage=**ReportSectionName**
   ```
 
-### <a name="how-to-get-the-right-link-format"></a>A megfelelő hivatkozás formátuma beszerzése
+### <a name="how-to-get-the-right-link-format"></a>A megfelelő hivatkozásformátum beszerzése
 
-#### <a name="links-of-apps-and-items-in-app"></a>Az alkalmazások és az alkalmazás elemeinek hivatkozások
+#### <a name="links-of-apps-and-items-in-app"></a>Alkalmazások és elemek hivatkozásai az alkalmazásban
 
-A **alkalmazások és a jelentések és irányítópult-alkalmazás részét képező**, szerezzen be a hivatkozást a legegyszerűbb módja az, hogy nyissa meg az alkalmazás-munkaterületet, és válassza az "App frissítése". Ekkor megnyílik a "közzététel" alkalmazásélményről, és a hozzáférési lapon található egy **hivatkozások** szakaszban. Bővülő, hogy szakaszban fog megjelenni az alkalmazások listájában, és minden tartalom hivatkozik, amely segítségével közvetlenül érheti el őket.
+Az **alkalmazások és az alkalmazás részét képező jelentések és irányítópultok** esetében a hivatkozás elérésének legegyszerűbb módja, ha az alkalmazás-munkaterületre lép, és az „Alkalmazás frissítése” lehetőséget választja. Ekkor megnyílik az „Alkalmazás közzététele” felület, és a Hozzáférés lapon megtalálja a **Hivatkozások** szakaszt. A szakasz kibontásával megtekintheti az alkalmazás és annak összes tartalmi hivatkozását, amelyekkel azok közvetlenül elérhetők.
 
-![A Power BI alkalmazás hivatkozások közzététele ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
+![Alkalmazás közzététele hivatkozások a Power BI-ban ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
-#### <a name="links-of-items-not-in-app"></a>Hivatkozások elemek nincs alkalmazás 
+#### <a name="links-of-items-not-in-app"></a>Az alkalmazásban nem szereplő elemek hivatkozásai 
 
-A jelentéseket és irányítópultokat, amelyek nem részei egy alkalmazást az azonosítók kinyerni az elem URL-címet kell.
+Olyan jelentésekhez és irányítópultokhoz, amelyek nem részei egy alkalmazásnak, az azonosítókat az elem URL-címéből kell kinyernie.
 
-Például keresse meg a 36 karakterből álló **irányítópult** objektumazonosító, lépjen az adott irányítópultra a Power BI szolgáltatásban 
+Például a 36 karakterből álló **irányítópultobjektum-azonosító** megkereséséhez lépjen a Power BI szolgáltatásban az adott irányítópultra 
 
 ```html
 https://app.powerbi.com/groups/me/dashboards/**dashboard guid comes here**?ctid=**organization id comes here**`
 ```
 
-A 36 karakterből álló található **jelentés** objektumazonosító, keresse meg az adott jelentéshez a Power BI szolgáltatásban.
-Ez a jelentés egy példa a "Saját munkaterület"
+A 36 karakterből álló **jelentésobjektum-azonosító** megkereséséhez navigáljon a Power BI szolgáltatásban az adott jelentéshez
+Ez egy példa a „Saját munkaterületen” található jelentésre
 
 ```html
 https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**`
 ```
-A fenti URL-cím is tartalmazza, adott jelentésoldal **"ReportSection3"** .
+A fenti URL-cím a konkrét **„ReportSection3”** jelentéslapot is tartalmazza.
 
-Itt látható egy példa a jelentés egy munkaterületről (nem a saját munkaterület)
+Ez egy példa egy munkaterületen található jelentésre (nem a Saját munkaterületen lévő)
 
 ```html
 https://app.powerbi.com/groups/**groupid comes here**/reports/**reportid comes here**/ReportSection1?ctid=**organizationid comes here**
 ```
 
-## <a name="use-links-inside-power-bi"></a>Power bi-ban lévő hivatkozások
+## <a name="use-links-inside-power-bi"></a>Hivatkozások használata Power BI-on belül
 
-Hivatkozások belüli Power bi-ban a mobilalkalmazások pontosan hasonlóan a Power BI szolgáltatás működik.
+A Power BI-on belüli hivatkozások a mobilalkalmazásokban ugyanúgy működnek, mint a Power BI szolgáltatásban.
 
-Ha szeretné hozzáadhat a jelentéshez, egy másik Power BI-cikk mutató hivatkozás, csak másolhat adott elem URL-CÍMÉT a böngésző címsorában. Tudjon meg többet [hivatkozás hozzáadása szövegmezőhöz egy jelentésben szövegmező hogyan](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
+Ha a jelentésre mutató hivatkozást szeretne felvenni, amely egy másik Power BI-elemre mutat, egyszerűen kimásolhatja az elem URL-címét a böngésző címsorában. További információt olvashat arról, [hogyan adhat hozzá hivatkozást egy jelentésbeli szövegdobozhoz](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
 
-## <a name="use-report-url-with-filter"></a>Használati jelentés URL-cím szűrővel
-Ugyanaz, mint a Power BI szolgáltatásban, a Power BI Mobile-alkalmazások is támogatja a jelentés URL-címe, amely egy szűrő lekérdezés param tartalmazza. Nyisson meg egy jelentést a Power BI Mobile app és a meghatározott állapotba szűrheti azokat. Például az URL-címet az értékesítési jelentés megnyitása és szűrés a területén
+## <a name="use-report-url-with-filter"></a>Jelentés URL-címének használata szűrővel
+Ahogy a Power BI szolgáltatás, úgy a Power BI Mobile alkalmazások is támogatják a jelentés URL-címét, amely egy szűrő lekérdezési paraméterét tartalmazza. Megnyithat egy jelentést Power BI Mobile alkalmazásban, és szűrheti azt adott állapotra. Ez az URL-cím például megnyitja az értékesítési jelentést, és a terület alapján szűri azt
 
 ```html
 https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**&filter=Store/Territory eq 'NC'
 ```
 
-További tudnivalók a [hozhat létre a lekérdezés param szűrése jelentések](https://docs.microsoft.com/power-bi/service-url-filters).
+További információ: [Lekérdezési paraméterek készítése a jelentések szűréséhez](https://docs.microsoft.com/power-bi/service-url-filters).
 
 ## <a name="next-steps"></a>Következő lépések
 A visszajelzése segít eldönteni, hogy milyen fejlesztésekre koncentráljunk a jövőben, ezért kérjük, ne mulasszon el szavazni más szolgáltatásokra, amelyeket szívesen látna a Power BI-mobilalkalmazásokban. 

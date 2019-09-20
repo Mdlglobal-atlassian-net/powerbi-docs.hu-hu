@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: mshenhav
 ms.openlocfilehash: ac9072c69edfd245454e92855dcefa461e80cc23
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61338250"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Jelentések és irányítópultok megjelenítése bemutató módban a Surface Hubon és Windows 10-eszközökön
@@ -43,7 +43,7 @@ Az eszköztáron a következő műveleteket végezheti el:
 1. A vissza ikonra ![vissza ikon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) koppintva visszaléphet az előző oldalra. Ha hosszan koppint az ikonra, megjelennek a navigációs ablakok, amelyekkel megnyithatja a jelentést vagy irányítópultot tartalmazó mappát.
 2. A tinta ikonnal ![tinta ikon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png) kiválaszthatja a Surface toll színét, amellyel a jelentésoldalra rajzol vagy jegyzetel. 
 3. Az oldalak ikonnal ![oldalak ikon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) az éppen bemutatott jelentésoldalt változtathatja meg.
-4. A lejátszás ikonra  ![Lejátszás ikonra](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) lesz a művelet sávon elrejtéséhez, és indítsa el diavetítés, ahol az alkalmazás fogja Automatikus elforgatás a jelentésoldalak között. 
+4. A lejátszás ikon  ![A lejátszás ikon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) elrejti a műveleti sávot, és elindítja a diavetítést, ahol az alkalmazás automatikusan vált majd a jelentés oldalai között. 
 5. Koppintson a keresés ikonra ![Keresés ikon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) más Power BI-összetevők kereséséhez.
 6. A bemutató módból való kilépéshez koppintson a két egymás felé mutató nyilat ábrázoló ikonra ![Kilépés a teljes képernyős módból](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) az eszköztáron.
 

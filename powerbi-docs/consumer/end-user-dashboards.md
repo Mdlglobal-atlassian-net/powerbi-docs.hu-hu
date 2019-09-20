@@ -12,10 +12,10 @@ ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 81987b864224b6afd254a3bffe17ecbb019198d0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65608331"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Irányítópultok a Power BI szolgáltatás felhasználói számára
@@ -24,7 +24,7 @@ A Power BI-***irányítópult*** egy gyakran vászonnak is nevezett oldal, amely
 
 ![irányítópult](media/end-user-dashboards/power-bi-dashboard2.png)
 
-Az irányítópulton látható vizualizációkat az úgynevezett *csempék* és *rögzített* jelentésében az irányítópulton *tervezők*. A legtöbb esetben egy csempére kattintva megnyílik a jelentés oldalon hol jött létre a vizualizációt. Ha csak most kezdte el használni a Power BI-t, a [Power BI alapfogalmait](end-user-basic-concepts.md) elolvasva egyszerűen elsajátíthatja az alapokat.
+Az irányítópulton látható vizualizációkat *csempéknek* nevezik, és a jelentés *tervezői* *rögzítik* őket az irányítópultra. A legtöbb esetben a csempe kiválasztásával arra a jelentésoldalra jut, amelyen a vizualizációt létrehozták. Ha csak most kezdte el használni a Power BI-t, a [Power BI alapfogalmait](end-user-basic-concepts.md) elolvasva egyszerűen elsajátíthatja az alapokat.
 
 > [!NOTE]
 > Az irányítópultok [megtekinthetők és megoszthatók mobileszközökön](mobile/mobile-apps-view-dashboard.md).
@@ -39,7 +39,7 @@ Az irányítópulton megjelenő vizualizációk a jelentéseken, az egyes jelent
 ## <a name="advantages-of-dashboards"></a>Az irányítópultok előnyei
 Az irányítópultok segítségével nagyszerűen nyomon követheti üzletmenetét, választ találhat kérdéseire, és egyetlen pillantással megtekintheti a legfontosabb mérőszámokat. Az irányítópulton található vizualizációk egy vagy több adatkészletből vagy jelentésből is származhatnak. Az irányítópult a helyi és a felhőben keletkezett adatokat ötvözi, és egyesített nézetet biztosít függetlenül attól, hogy az adatok hol találhatók.
 
-Irányítópult nem csak egy tetszetős kép; interaktív, és a csempék frissülni az alapul szolgáló adatok változásának megfelelően.
+Az irányítópult nem csak egy tetszetős kép, hanem egy interaktív funkció, amelyben az egyes csempék az alapul szolgáló adatok változásának megfelelően frissülnek.
 
 ## <a name="dashboards-versus-reports-for-power-bi-consumers"></a>Irányítópultok és jelentések összehasonlítása a Power BI ***felhasználói*** számára
 A jelentéseket könnyű összekeverni az irányítópultokkal, mivel mind a kettő egy vizualizációkkal teli vászon. Azonban van köztük néhány alapvető különbség a Power BI *felhasználói* számára.

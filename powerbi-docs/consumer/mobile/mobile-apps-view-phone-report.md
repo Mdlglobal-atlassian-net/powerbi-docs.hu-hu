@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 04/22/2019
 ms.author: mshenhav
 ms.openlocfilehash: 79ca47f83bb39ab9d6df141b5a26dcb54e00c72c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65101004"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Telefonra optimalizált Power BI-jelentések megtekintése
@@ -24,7 +24,7 @@ A következőkre vonatkozik:
 |:--- |:--- |
 | iPhone-ok |Android rendszerű telefonok |
 
-A Power BI-jelentés telefonon való megtekintésekor a Power BI ellenőrzi, hogy ha a jelentés telefonra optimalizált. Ha igen, a Power BI automatikusan nyitja meg álló tájolásban.
+Ha egy Power BI-jelentést a telefonon tekint meg, a Power BI ellenőrzi, hogy a jelentés optimalizálva lett-e telefonokra. Ha igen, a Power BI automatikusan álló nézetben nyitja meg az optimalizált jelentést.
 
 ![Jelentés álló tájolásban](./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -38,7 +38,7 @@ A Power BI jelentések többi funkciója továbbra is működik a telefonra opti
 * [Jelentések Android telefonokon](mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="filter-the-report-page-on-a-phone"></a>Jelentésoldalak szűrése telefonon
-Ha egy telefonra optimalizált jelentéshez szűrők vannak definiálva, a jelentés telefonon való megtekintésekor alkalmazhatja ezeket a szűrőket. Ekkor megnyílik a jelentés a telefonján, a jelentés a weben beállított értékekre szűrve. Egy üzenet tájékoztat arról, hogy az oldalon aktív szűrés van érvényben. A szűrők a telefonon módosíthatók.
+Ha egy telefonra optimalizált jelentéshez szűrők vannak definiálva, a jelentés telefonon való megtekintésekor alkalmazhatja ezeket a szűrőket. A jelentés a weben beállított értékekre szűrve jelenik meg a telefonon. Egy üzenet tájékoztat arról, hogy az oldalon aktív szűrés van érvényben. A szűrők a telefonon módosíthatók.
 
 1. Koppintson a Szűrő ikonra ![Szűrő ikon a telefonon](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) a lap alján. 
 2. Az alapszintű és a speciális szűrők használatával az Ön számára érdekes eredményeket jelenítheti meg.
@@ -46,7 +46,7 @@ Ha egy telefonra optimalizált jelentéshez szűrők vannak definiálva, a jelen
     ![Telefonos BI-jelentés speciális szűrője](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## <a name="cross-highlight-visuals"></a>Vizualizációk keresztkiemelése
-Vizualizációk keresztkiemelése a fekvő nézetben ugyanúgy működik, a Power BI szolgáltatásban és a fekvő tájolású: Ha egy vizualizáción ki van jelölve egy adat, akkor az ahhoz kapcsolódó adatok is ki lesznek emelve az oldal többi vizualizációjában.
+A vizualizációk keresztkiemelése telefonos jelentésekben ugyanúgy működik, mint a Power BI szolgáltatásban, és telefonokon a fekvő tájolású jelentésekben: Ha egy vizualizáción ki van jelölve egy adat, akkor az ahhoz kapcsolódó adatok is ki lesznek emelve az oldal többi vizualizációjában.
 
 A [Power BI szűrés és kiemelés funkcionalitásáról itt talál](../../power-bi-reports-filters-and-highlighting.md) további információkat.
 
@@ -56,13 +56,13 @@ Amikor a telefonos jelentésekben kijelöl egy vizualizációt, a telefonos jele
 Ha egy vizualizáció van kijelölve, azon belül végezhet különféle mozdulatokat, például görgetést. A vizualizáció kijelölésének megszüntetéséhez csak érintse meg a képernyőt a vizualizáció területén kívül.
 
 ## <a name="open-visuals-in-focus-mode"></a>Vizualizáció megnyitása fókusz módban
-Telefonos jelentések is rendelkeznek fókusz móddal: Kinagyíthatja az egyes visual, és Fedezze fel egyszerűen.
+A telefonos jelentések a fókusz módot is támogatják: Nagyobb áttekintést kaphat egy adott vizualizációról, és könnyebben megismerheti azt.
 
 * A telefonos jelentésben koppintson a vizualizáció jobb felső sarkában a három pontra ( **...** ), majd a **Kiterjesztés fókusz módra** lehetőségre.
   
     ![Kiterjesztés fókusz módra](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
-Ehhez a csempét fókusz módban végrehajtott módosítások megjelennek a jelentésvásznon és viszont. Például ha jelöljön ki egy értéket egy vizualizációban, majd térjen vissza a teljes jelentésre, a jelentés szűrt a vizualizációban kiemelt értékre.
+A fókusz módban végrehajtott módosítások megjelennek a jelentésvásznon és viszont. Ha például kiemel egy értéket egy vizualizációban, majd visszavált a teljes jelentésre, a jelentés a vizualizációban kiemelt értékre szűrve jelenik meg.
 
 Egyes műveletek a képernyőméret-korlátok miatt csak fókusz módban hajthatóak végre:
 
@@ -74,29 +74,29 @@ Egyes műveletek a képernyőméret-korlátok miatt csak fókusz módban hajthat
   
     ![Visszaállítás](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
   
-    Visszaállítás a jelentés szintjén, minden Vizualizáció vizsgálati törlése vagy törlése a kijelölt Vizualizáció feltárása, a Vizualizáció szintjén érhető el.   
+    A visszaállítás a jelentés szintjén (az összes vizualizáció minden vizsgálati lépésének törlése) vagy az egyes vizualizációk szintjén (egy kiválasztott vizualizáció minden vizsgálati lépésének törlése) lehetséges.   
 
 ## <a name="drill-down-in-a-visual"></a>Vizualizációk részletes elemzése
 Ha a vizualizációban vannak hierarchiaszintek definiálva, részletes elemzést végezhet a vizualizációban megjelenő részletes információk szintjén majd onnan vissza léphet. A [vizualizációk részletes elemzési funkcionalitását](../end-user-drill.md) a Power BI szolgáltatásban vagy a Power BI Desktopban adhatja hozzá.
 
-Részletezés néhány típusa van:
+A részletezésnek néhány típusa van:
 
-### <a name="drill-down-on-a-value"></a>Részletezés érték
-1. Mennyi ideig koppintson egy egy vizualizációban az adatpontra (Koppintson és tartsa).
-2. Elemleírás fog megjelenni, és ha hierarchiában van megadva, majd az elemleírás élőláb jeleníti meg részletes elemzés és Felhatolás nyílra.
-3. Koppintson a lefelé mutató nyílra a részletezés
+### <a name="drill-down-on-a-value"></a>Részletezés egy érték alapján
+1. Hosszú koppintás (koppintás és nyomva tartás) egy vizualizáció adatpontjára.
+2. Megjelenik az elemleírás, és ha definiálva van a hierarchia, akkor az elemleírás láblécében megjelenik a részletezés felfelé és lefelé mutató nyila.
+3. Koppintson a lefelé mutató nyílra a részletezéshez
 
-    ![Koppintson a részletezés](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    ![Koppintás a részletezésre](././media/mobile-apps-view-phone-report/report-drill-down.png)
     
-4. Koppintson a Felhatolás a felfelé mutató nyílra.
+4. Koppintson a felfelé mutató nyílra a felhatoláshoz.
 
-### <a name="drill-to-next-level"></a>A következő szintre feltárása
+### <a name="drill-to-next-level"></a>Részletezés a következő szintre
 1. A telefonos jelentésben koppintson a jobb felső sarokban a három pontra ( **...** ), majd a **Kiterjesztés fókusz módra** lehetőségre.
    
     ![Kiterjesztés fókusz módra](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     Ebben a példában a sávok az államokra vonatkozó értékeket mutatják.
-2. Koppintson a Vizsgálat ikonra ![Vizsgálat ikon](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) a bal alsó.
+2. Koppintson a Vizsgálat ikonra ![Vizsgálat ikon](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) a bal alsó sarokban.
    
     ![Vizsgálat mód](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-mode.png)
 3. Koppintson **A következő szint megjelenítése** vagy a **Kibontás a következő szintre** lehetőségre.
@@ -113,21 +113,21 @@ Részletezés néhány típusa van:
    
     ![Visszaállítás](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
 
-## <a name="drill-through-from-a-value"></a>Áthatoló részletezést értékét a
-Jelenítse meg a jelentés egyéb oldalain egy jelentésoldalon, az értékek kapcsolódik. Áthatoló részletezést-ből egy adatpont másik jelentésoldalra, amikor az adatpontérték segítségével szűrheti a feltárása oldalán keresztül, vagy a kijelölt adatok kontextusában lesz.
-Jelentések szerzői is [jelenítse meg a definiálása](https://docs.microsoft.com/power-bi/desktop-drillthrough) a jelentés létrehozásakor.
+## <a name="drill-through-from-a-value"></a>Részletezés egy értékről
+Az áthatolásos részletezés az egyik jelentésoldal értékeit más jelentésoldalakkal kapcsolja össze. Ha egy adatpontról egy másik jelentéslapra végez részletezést, a rendszer az adatpontok értékeit használja az áthatolásos részletezésű oldal szűrésére, vagy a kijelölt adatok kontextusát használja majd.
+A jelentés szerzője a jelentés létrehozásakor [definiálhatja az áthatolásos részletezést](https://docs.microsoft.com/power-bi/desktop-drillthrough).
 
-1. Mennyi ideig koppintson egy egy vizualizációban az adatpontra (Koppintson és tartsa).
-2. Elemleírás fog megjelenni, és ha jelenítse meg van adva, majd az elemleírás élőláb jeleníti meg jelenítse meg a nyíl.
-3. Koppintson a nyílra a kódig
+1. Hosszú koppintás (koppintás és nyomva tartás) egy vizualizáció adatpontjára.
+2. Megjelenik az elemleírás, és ha definiálva van az áthatolás, akkor az elemleírás láblécében megjelenik az áthatolást jelző nyíl.
+3. Koppintson az áthatolást jelző nyílra
 
-    ![Koppintson a részletezés](././media/mobile-apps-view-phone-report/report-drill-through1.png)
+    ![Koppintás az áthatolásra](././media/mobile-apps-view-phone-report/report-drill-through1.png)
 
-4. Válassza ki, melyik jelentésoldal áthatoló részletezést
+4. Az áthatoláshoz használandó jelentésoldal kiválasztása
 
-    ![Válassza ki a jelentésoldal](././media/mobile-apps-view-phone-report/report-drill-through2.png)
+    ![Jelentésoldal kiválasztása](././media/mobile-apps-view-phone-report/report-drill-through2.png)
 
-5. A Vissza gombot, használja az alkalmazás fejléc a használatát a lapra való visszatéréshez.
+5. Az alkalmazás fejlécében található Vissza gombbal visszaléphet arra az oldalra, ahonnan indult.
 
 
 ## <a name="next-steps"></a>Következő lépések

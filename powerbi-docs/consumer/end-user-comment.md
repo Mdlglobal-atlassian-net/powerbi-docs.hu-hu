@@ -9,15 +9,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 04/30/2019
+ms.date: 09/16/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 2796b29ee553ece77846f5edc8af4b2523fd48c6
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: d09ada0d3309a9cb2b93a8cd4fa3d6740e69ba77
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522796"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073534"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Megjegyzés hozzáadása irányítópulthoz vagy jelentéshez
 Hozzáadhat személyes megjegyzéseket, vagy az irányítópultra vagy a jelentésre vonatkozó beszélgetést kezdeményezhet a munkatársaival. A **megjegyzés** csak az egyik olyan funkció a sok közül, amely lehetővé teszi a *felhasználó* számára a másokkal való együttműködést. 
@@ -25,16 +25,18 @@ Hozzáadhat személyes megjegyzéseket, vagy az irányítópultra vagy a jelent�
 ![Megjegyzések videó](media/end-user-comment/comment.gif)
 
 ## <a name="how-to-use-the-comments-feature"></a>A Megjegyzések funkció használata
-Megjegyzések fűzhetők egy teljes irányítópulthoz, annak egyes vizualizációihoz, egy jelentésoldalhoz, valamint annak egyes vizualizációihoz. Felvehet általános, vagy egy bizonyos munkatársaknak szánt megjegyzést is.  
+Megjegyzések fűzhetők egy teljes irányítópulthoz, annak egyes vizualizációihoz, egy jelentésoldalhoz, egy lapszámozott jelentéshez, valamint annak egyes vizualizációihoz. Felvehet általános, vagy egy bizonyos munkatársaknak szánt megjegyzést is.  
 
 Amikor megjegyzést ad hozzá egy jelentéshez, a Power BI rögzíti az aktuális szűrő- és szeletelőértékeket. Ez azt jelenti, hogy amikor kijelöl egy megjegyzést, vagy válaszol rá, a jelentésoldal vagy a jelentés vizualizációja úgy változhat, hogy megjelenítse a megjegyzés első hozzáadásakor aktív szűrő- és szeletelőkijelöléseket.  
 
 ![videó a szűrőkkel ellátott jelentésről](media/end-user-comment/comment-reports-with-filters/comment-reports-with-filters.gif)
 
-Mi ennek a jelentősége? Tegyük fel, hogy egy munkatársa egy olyan szűrőt alkalmazott, amely érdekes elemzést eredményezett, és ezt meg szeretné osztani a csoporttal. A szűrő kijelölése nélkül a megjegyzés értelmét vesztheti. 
+Mi ennek a jelentősége? Tegyük fel, hogy egy munkatársa egy olyan szűrőt alkalmazott, amely érdekes elemzést eredményezett, és ezt meg szeretné osztani a csoporttal. A szűrő kijelölése nélkül a megjegyzés értelmét vesztheti.
+
+Ha lapszámozott jelentést használ, akkor csak általános megjegyzéseket fűzhet a jelentéshez.  A jelentések egyes vizualizációihoz nem lehet megjegyzéseket fűzni.
 
 ### <a name="add-a-general-comment-to-a-dashboard-or-report"></a>Általános megjegyzés hozzáadása irányítópulthoz vagy jelentéshez
-Az irányítópultok és a jelentések esetén hasonló a megjegyzések hozzáadásának menete. Ebben a példában egy irányítópultot használunk. 
+Az irányítópultok és a jelentések esetén hasonló a megjegyzések hozzáadásának menete.  Ebben a példában egy irányítópultot használunk. 
 
 1. Nyisson meg egy Power BI-irányítópultot vagy -jelentést, és válassza a **Megjegyzések** ikont. Ekkor megnyílik a Megjegyzések párbeszédpanel.
 

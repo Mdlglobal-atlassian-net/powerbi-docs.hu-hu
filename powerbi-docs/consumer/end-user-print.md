@@ -1,6 +1,6 @@
 ---
-title: Nyomtatás a Power BI-ból
-description: Egy irányítópult, csempe vagy jelentésoldal nyomtatása a Power BI szolgáltatásból.
+title: Nyomtatás a Power BI szolgáltatásból
+description: Irányítópult, csempe vagy jelentésoldal nyomtatása a Power BI szolgáltatásból.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -13,21 +13,21 @@ ms.date: 05/13/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 02aed3d69ee5d6ce344138a57853bd0b2a06036b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65608516"
 ---
-# <a name="printing-from-the-power-bi-service"></a>Nyomtatás a Power BI-ból
-Nyomtassa ki a teljes irányítópultok, irányítópult-csempék, jelentésoldalak vagy egy jelentésbeli Vizualizáció a Power BI szolgáltatásból. A jelentésekből alkalmanként csak egy oldal nyomatható ki, a teljes jelentést nem lehet egyszerre kinyomtatni.
+# <a name="printing-from-the-power-bi-service"></a>Nyomtatás a Power BI szolgáltatásból
+Útmutató teljes irányítópultok, irányítópult-csempék, jelentésoldalak, jelentés-vizualizációk Power BI-ból történő nyomtatásához. A jelentésekből alkalmanként csak egy oldal nyomatható ki, a teljes jelentést nem lehet egyszerre kinyomtatni.
 
    > [!NOTE]
    > Az, hogy milyen nyomtatási párbeszédablak jelenik meg attól függ, hogy milyen böngészőt használ.
    > 
 ## <a name="print-a-dashboard"></a>Irányítópult nyomtatása
 1. Nyissa meg azt az irányítópultot, amelyet ki szeretne nyomtatni.
-2. A bal felső sarokban, válassza az exportálás, és válassza **ezt oldal nyomtatása**.
+2. A bal felső sarokban válassza az Exportálás elemet, majd az **Oldal nyomtatása** lehetőséget.
    
     ![Irányítópult nyomtatása lehetőség](./media/end-user-print/power-bi-dashboard-print.png)
 3. Ekkor megjelenik a böngésző Nyomtatás ablaka. Adja meg a beállításokat és a nyomtatási célt, majd válassza a **Nyomtatás** elemet.
@@ -37,8 +37,8 @@ Nyomtassa ki a teljes irányítópultok, irányítópult-csempék, jelentésolda
     ![nyomtatási párbeszédpanel](./media/end-user-print/pbi_print_dash_new2.png)
 
 ## <a name="print-a-dashboard-tile"></a>Irányítópult-csempe nyomtatása
-1. Nyissa meg az irányítópultot a [teljes képernyős mód](end-user-focus.md) a teljes képernyő ikon kiválasztásával ![teljes képernyő ikon](./media/end-user-print/power-bi-full-screen-icon.png) a felső menüsorban.
-3. [Nyissa meg a csempét fókusz módban](end-user-focus.md) viszi megjelenítéséhez a három pontra (...), majd válassza a **Megnyitás fókusz módban** vagy a fókusz ikonra ![fókusz ikon](./media/end-user-print/power-bi-focus-icon.png).
+1. A felső menüsáv teljes képernyő ikonjára ![teljes képernyő ikon](./media/end-user-print/power-bi-full-screen-icon.png) kattintva nyissa meg az irányítópultot [teljes képernyős módban](end-user-focus.md).
+3. [Nyissa meg a csempét fókusz módban](end-user-focus.md) rámutatással és a három pont (...) megjelenítésével, és válassza a **Megnyitás fókusz módban** vagy a fókusz ikon ![fókusz ikon](./media/end-user-print/power-bi-focus-icon.png) kiválasztásával.
    
     ![három pont menü](./media/end-user-print/power-bi-menu-options.png)
 4. A kurzort a csempe fölé húzva jelenítheti meg a válaszható lehetőségek menüjét.
@@ -50,7 +50,7 @@ Nyomtassa ki a teljes irányítópultok, irányítópult-csempék, jelentésolda
 ## <a name="print-a-report-page"></a>Jelentésoldal nyomtatása
 A jelentésekből egyszerre egy oldal nyomtatható ki.
 
-1. Nyissa meg a jelentést, és válasszon **exportálása** > **nyomtatása** az aktuális jelentésoldal nyomtatásához.
+1. Az aktuális oldal nyomtatásához nyissa meg a jelentést, és válassza az **Exportálás** > **Nyomtatás** lehetőséget.
    
     ![Power BI Fájl menü](./media/end-user-print/power-bi-report-print.png)
 3. Ekkor megjelenik a böngésző Nyomtatás ablaka.
@@ -60,7 +60,7 @@ A jelentésekből egyszerre egy oldal nyomtatható ki.
 ## <a name="print-a-report-visual"></a>Jelentés-vizualizáció nyomtatása
 1. A kurzort a csempe fölé húzva, majd jobb felső sarokban látható Fókusz ikonra ![Fókusz ikon](./media/end-user-print/power-bi-focus-icon.png) kattintva [nyissa meg a vizualizációt fókusz módban](end-user-focus.md).
 
-2. A bal felső sarokban, válassza ki a **exportálása** > **nyomtatása** a Vizualizáció nyomtatása.
+2. A vizualizáció nyomtatásához a bal felső sarokban válassza az **Exportálás** > **Nyomtatás** lehetőséget.
 
     ![Power BI Fájl menü](./media/end-user-print/power-bi-report-print.png)
 
@@ -75,7 +75,7 @@ A jelentésekből egyszerre egy oldal nyomtatható ki.
 * KÉRDÉS: A **Nyomtatásra** kattintás után nem az itt bemutatott képernyő jelenik meg.    
 * VÁLASZ: A Nyomtatási képernyők böngészőnként és szoftververziónként változnak.
 * KÉRDÉS: A nyomtatásra kerülő anyag nincs megfelelően méretezve.  Az irányítópult nem fér el az oldalon. Méretezéssel és tájolással kapcsolatos egyéb problémák.    
-* VÁLASZ: Nem tudjuk garantálni, hogy a nyomtatott példány pontosan ugyanazok lesznek, akkor jelenik meg, a Power BI szolgáltatásban. A kicsinyítést és nagyítást, a margókat, a megjelenítési részleteket, a tájolást és a méretet nem a Power BI szolgáltatás vezérli. Az ilyen kérdésekkel kapcsolatban a böngésző súgójában találhat információt.      
+* VÁLASZ: Nem tudjuk garantálni, hogy a nyomtatott példány pontosan meg fog egyezni azzal, ami a Power BI szolgáltatásban látható. A kicsinyítést és nagyítást, a margókat, a megjelenítési részleteket, a tájolást és a méretet nem a Power BI szolgáltatás vezérli. Az ilyen kérdésekkel kapcsolatban a böngésző súgójában találhat információt.      
 
 ## <a name="next-steps"></a>További lépések
 [Irányítópultok és jelentések megosztása munkatársakkal és más személyekkel](../service-share-dashboards.md)
