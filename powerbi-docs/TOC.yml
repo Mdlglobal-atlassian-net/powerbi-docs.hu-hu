@@ -269,6 +269,8 @@
               href: desktop-inline-hierarchy-labels.md
             - name: Numerikustartomány-szeletelő használata
               href: desktop-slicer-numeric-range.md
+            - name: A relatív dátumszeletelő használata
+              href: desktop-slicer-filter-date-range.md
             - name: Átméretezhető szeletelő létrehozása
               href: power-bi-slicer-filter-responsive.md
             - name: Egyéni válaszkártyák létrehozása Cortanához
