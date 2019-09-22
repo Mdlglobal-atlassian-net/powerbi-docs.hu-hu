@@ -7,14 +7,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: 6a66d134a3399fed3ee03eddd7059265b5cf7c13
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: b9622a08506c6f5ade900296d91b449c64dc374c
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751003"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903656"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -60,14 +60,19 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 **calculation (számítás)** Valamely elem méretének vagy mennyiségének matematikai meghatározása.
 
+**kártya** (vizualizációsablon) Power BI-[vizualizációsablon](end-user-visual-type.md).
+
+**kártya** (Power BI kezdőlapja) A Power BI kezdőlapján téglalap és négyzet alakú képek láthatók, amelyek irányítópultoknak, jelentéseknek, alkalmazásoknak és sok másnak is megfelelhetnek. Ezeket a képeket *kártyáknak* is nevezzük.
+
 **certified custom visual (minősített egyéni vizualizáció)** Egy Power BI-vizualizáció, amely megfelel bizonyos előírásoknak, és átment a szigorú biztonsági ellenőrzéseken.
 
 **classification (besorolás)** Más néven adatbesorolás. Ennek a beállításnak az engedélyezésével a Power BI-rendszergazda felhívhatja a figyelmet az irányítópult által megkövetelt biztonsági szintre. A besorolástípusokat a cég testre szabhatja.
 
 **connect live (élő csatlakozás)** Az SQL Server Analysis Services-adatmodellekhez való csatlakozás módja. Az élő kapcsolat kifejezés is használható.
 
-**content (tartalom)**
+**tároló** A navigációs sáv részterületei a *tárolók*. A navigációs sávon a következők tárolói láthatók: Kedvenc, Legutóbbiak, Alkalmazások, Velem megosztva és Kezdőlap. 
 
+**tartalom** A Power BI szolgáltatás tartalmát általában irányítópultok, jelentések és alkalmazások alkotják. Emellett szerepelhetnek benne munkafüzetek és adathalmazok is.
 
 **content list (tartalomjegyzék)** Egy alkalmazás tartalommutatója.
 
@@ -109,7 +114,8 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 **Editing View (Szerkesztési nézet)** Az az üzemmód, amelyben a *tervező* közelebbről is megvizsgálhatja, megtervezheti, összeállíthatja és megoszthatja a jelentéseket.
 
-**ellipsis (három pont)** ...
+**ellipsis (három pont)** ...    
+A három pont kiválasztásakor további menüpontok jelennek meg.
 
 **embed code (beágyazási kód)** Egy általános internetes szabvány. A Power BI-ban a beágyazási kódok létrehozásával és beillesztésével a felhasználó tartalmakat, például jelentésvizualizációkat helyezhet el a webhelyeken és blogokban.
 
@@ -158,7 +164,8 @@ A dokumentációkban használható a Power BI-környezet (bérlő) kifejezés is
 
 ## <a name="l"></a>L
 
-**left navigation (left nav) (bal oldali navigációs menü (bal oldali menü))** A Power BI szolgáltatás bal oldali vezérlőelemei.
+**bal oldali navigáció** Ennek helyét a **navigációs sáv** vette át, de egyes dokumentációkban még előfordulhat.    
+A Power BI szolgáltatás bal szélén látható vezérlőelemek.
 
 A kifejezés első előfordulásakor bal oldali navigációs menü, utána vagy helyszűke esetén csak bal oldali menü.
 
@@ -176,7 +183,11 @@ A kifejezés első előfordulásakor bal oldali navigációs menü, utána vagy 
 
 **native (natív)** A termék részét képező. A Power BI például több *natív* vizualizációtípust is tartalmaz. Ezek mellett más típusokat, például egyéni vizualizációkat is importálhat.
 
-**navigation pane (navigációs panel)** Lásd: **bal oldali navigációs menü**
+**Navigációs sáv** vagy **bal sáv** A Power BI szolgáltatás bal szélén látható vezérlőelemek.
+
+A kifejezés első előfordulásakor navigációs sáv, utána vagy helyszűke esetén csak bal sáv
+
+**navigációs panel** Lásd: **navigációs sáv**
 
 **notification (értesítés)** A Power BI értesítési központja által küldött és fogadott üzenetek.  
 

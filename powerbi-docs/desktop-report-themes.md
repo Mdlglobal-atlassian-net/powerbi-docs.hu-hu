@@ -7,42 +7,53 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0c098baa42e4fdc45b23519856eed824dbab5cad
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 37304f9d23c514c7223b3eca481bf3b7b2258ac4
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023389"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70904241"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Jelentéstémák használata a Power BI Desktopban
-A **Jelentéstémák** használatával egységes színtémát alkalmazhat az egész jelentésre, például a cég színeit, az évszaknak megfelelő színeket, ikonkészleteket vagy bármely más színtémát. **Jelentéstémák** alkalmazásakor a jelentésben szereplő összes vizualizáció a kiválasztott téma színeit fogja használni. Ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be.
+A **Jelentéstémák** használatával olyan tervezési módosításokat hajthat végre az egész jelentésen, mint a vállalati színek, a változó ikonkészletek, vagy egy új alapértelmezett vizualizációs formázás. **Jelentéstéma** alkalmazásakor a jelentésben szereplő összes vizualizáció a kiválasztott téma színeit és formázását fogja használni. Ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be.
 
-![Jelentéstémák](media/desktop-report-themes/report-themes_1.png)
+![Jelentéstémák](media/desktop-report-themes/report-themes-1a.png)
 
-**Jelentéstéma** alkalmazásakor egy alapszintű szerkezettel rendelkező JSON-fájlra van szükség. Ezt a JSON-fájlt ezután importálhatja a Power BI Desktopba, majd alkalmazhatja a jelentésre. A JSON-fájl szerkezete és importálási folyamata egyszerű (utóbbi mindössze néhány kattintásból áll).
+Egyedi **Jelentéstéma** alkalmazásakor egy alapszintű szerkezettel rendelkező JSON-fájlra van szükség. Ezt a JSON-fájlt ezután importálhatja a Power BI Desktopba, majd alkalmazhatja a jelentésre.
 
-Ezen felül szinte az összes elemet testreszabhatja és szabványosíthatja. A testreszabást a JSON-fájlban kell végrehajtani, amelyet manuálisan módosíthat a **Formázás** panelen. A cél az, hogy teljes körűen, egészen a legapróbb részletekig megszabhassa a jelentések megjelenését és működését.
+A téma JSON-fájlja segítségével a **Formázás** ablaktáblán látható elemek szinte mindegyikét testre szabhatja és egységesítheti. A cél az, hogy teljes körűen, egészen a legapróbb részletekig megszabhassa a jelentések megjelenését és működését.
 
 ## <a name="how-report-themes-work"></a>A jelentéstémák működése
 Power BI Desktop-jelentésre úgy alkalmazhat jelentéstémát, hogy kiválaszt egyet az elérhető beépített jelentéstémák közül, vagy egyéni témát importál.
 
 | Beépített jelentéstéma | Alapértelmezett színsorrend    |
 |------ |---------- |
-| Alapértelmezett   | ![#01B8AA](https://placehold.it/20/01B8AA/000000?text=+) ![#374649](https://placehold.it/20/374649/000000?text=+) ![#FD625E](https://placehold.it/20/FD625E/000000?text=+) ![#F2C80F](https://placehold.it/20/F2C80F/000000?text=+) ![#5F6B6D](https://placehold.it/20/5F6B6D/000000?text=+) ![#8AD4EB](https://placehold.it/20/8AD4EB/000000?text=+) ![#FE9666](https://placehold.it/20/FE9666/000000?text=+) ![#A66999](https://placehold.it/20/A66999/000000?text=+)|
-| Városi park     | ![#73B761](https://placehold.it/20/73B761/000000?text=+) ![#4A588A](https://placehold.it/20/4A588A/000000?text=+) ![#ECC846](https://placehold.it/20/ECC846/000000?text=+) ![#CD4C46](https://placehold.it/20/CD4C46/000000?text=+) ![#71AFE2](https://placehold.it/20/71AFE2/000000?text=+) ![#8D6FD1](https://placehold.it/20/8D6FD1/000000?text=+) ![#EE9E64](https://placehold.it/20/EE9E64/000000?text=+) ![#95DABB](https://placehold.it/20/95DABB/000000?text=+)|
-| Osztályterem     | ![#4A8DDC](https://placehold.it/20/4A8DDC/000000?text=+) ![#4C5D8A](https://placehold.it/20/4C5D8A/000000?text=+) ![#F3C911](https://placehold.it/20/F3C911/000000?text=+) ![#DC5B57](https://placehold.it/20/DC5B57/000000?text=+) ![#33AE81](https://placehold.it/20/33AE81/000000?text=+) ![#95C8F0](https://placehold.it/20/95C8F0/000000?text=+) ![#DD915F](https://placehold.it/20/DD915F/000000?text=+) ![#9A64A0](https://placehold.it/20/9A64A0/000000?text=+)|
-| Színvakok által is használható   | ![#074650](https://placehold.it/20/074650/000000?text=+) ![#009292](https://placehold.it/20/009292/000000?text=+) ![#FE6DB6](https://placehold.it/20/FE6DB6/000000?text=+) ![#FEB5DA](https://placehold.it/20/FEB5DA/000000?text=+) ![#480091](https://placehold.it/20/480091/000000?text=+) ![#B66DFF](https://placehold.it/20/B66DFF/000000?text=+) ![#B5DAFE](https://placehold.it/20/B5DAFE/000000?text=+) ![#6DB6FF](https://placehold.it/20/6DB6FF/000000?text=+)|
-| Elektromos  | ![#118DFF](https://placehold.it/20/118DFF/000000?text=+) ![#750985](https://placehold.it/20/750985/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FF985E](https://placehold.it/20/FF985E/000000?text=+) ![#1DD5EE](https://placehold.it/20/1DD5EE/000000?text=+) ![#42F7C0](https://placehold.it/20/42F7C0/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#F64F5C](https://placehold.it/20/F64F5C/000000?text=+)|
-| Kontrasztos     | ![#107C10](https://placehold.it/20/107C10/000000?text=+) ![#002050](https://placehold.it/20/002050/000000?text=+) ![#A80000](https://placehold.it/20/A80000/000000?text=+) ![#5C2D91](https://placehold.it/20/5C2D91/000000?text=+) ![#004B50](https://placehold.it/20/004B50/000000?text=+) ![#0078D7](https://placehold.it/20/0078D7/000000?text=+) ![#D83B01](https://placehold.it/20/D83B01/000000?text=+) ![#B4009E](https://placehold.it/20/B4009E/000000?text=+)|
-| Naplemente    | ![#B6B0FF](https://placehold.it/20/B6B0FF/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#FF994E](https://placehold.it/20/FF994E/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FFBBED](https://placehold.it/20/FFBBED/000000?text=+) ![#42F9F9](https://placehold.it/20/42F9F9/000000?text=+) ![#00B2D9](https://placehold.it/20/00B2D9/000000?text=+) ![#FFD86C](https://placehold.it/20/FFD86C/000000?text=+)|
-| Alkonyat  | ![#F17925](https://placehold.it/20/F17925/000000?text=+) ![#004753](https://placehold.it/20/004753/000000?text=+) ![#CCAA14](https://placehold.it/20/CCAA14/000000?text=+) ![#4B4C4E](https://placehold.it/20/4B4C4E/000000?text=+) ![#D82C20](https://placehold.it/20/D82C20/000000?text=+) ![#A3D0D4](https://placehold.it/20/A3D0D4/000000?text=+) ![#536F18](https://placehold.it/20/536F18/000000?text=+) ![#46ABB0](https://placehold.it/20/46ABB0/000000?text=+)|
+| Alapértelmezett   | ![alapértelmezett](media/desktop-report-themes/report-themes-color-scheme-default.png)|
+| Toronyház  | ![toronyház](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
+| Vezető     | ![vezető](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
+| Határ  | ![határ](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
+| Innovatív    | ![innovatív](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
+| Virágzás     | ![virágzás](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
+| Hullámzás | ![hullámzás](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
+| Hőmérséklet   | ![hőmérséklet](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
+| Nap | ![nap](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
+| Széttartó     | ![széttartó](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
+| Vihar     | ![vihar](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
+| Klasszikus   | ![klasszikus](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
+| Városi park     | ![városi park](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
+| Osztályterem     | ![osztályterem](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
+| Színvakok által is használható   | ![színvakok által is használható](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+| Elektromos  | ![elektromos](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
+| Kontrasztos     | ![kontrasztos](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
+| Naplemente    | ![naplemente](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
+| Alkonyat  | ![alkonyat](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
 
 Az elérhető beépített jelentéstémák közül úgy választhat, hogy a **Kezdőlap** menüsávjának **Témaváltás** gombját választja, majd kijelöl egyet a legördülő menüben látható témák közül.
 
-![Jelentéstéma kiválasztása](media/desktop-report-themes/report-themes_2a.png)
+![Jelentéstéma kiválasztása](media/desktop-report-themes/report-themes-2a.png)
 
 A jelentéstéma alkalmazva lesz a jelentésre, és folytathatja a munkát.
 
@@ -50,7 +61,7 @@ A jelentéstéma alkalmazva lesz a jelentésre, és folytathatja a munkát.
 
 Egyéni jelentéstéma importálásához válassza a **Témaváltás** lehetőséget a menüszalag **Kezdőlap** lapján. Válassza a **Téma importálása** elemet a legördülő menüből.
 
-![Téma importálása](media/desktop-report-themes/report-themes_3.png)
+![Téma importálása](media/desktop-report-themes/report-themes-3a.png)
 
 Ekkor megjelenik egy ablak, amelyben megkeresheti a JSON-témafájl helyét. A Power BI Desktop JSON kiterjesztésű fájlokat keres, mert ez a Power BI-jelentéstémák fájltípusa. Az alábbi képen néhány ünnepi témafájl szerepel. Példánkban egy márciushoz illő ünnepi témát fogunk kiválasztani.
 
@@ -60,7 +71,7 @@ A Power BI Desktop jelzi, ha a téma sikeresen betöltődött.
 
 ![A téma importálása sikerült](media/desktop-report-themes/report-themes_5.png)
 
-A témafájl sikeres importálása után tekintsük meg a JSON-fájl egyszerű és kézenfekvő szerkezetét.
+A témafájl sikeres importálása után tekintsük meg a JSON-fájl szerkezetét.
 
 ## <a name="structure-of-a-report-theme-json-file"></a>Egy jelentéstémát tartalmazó JSON-fájl szerkezete
  Ha az előző szakaszban kiválasztott alapszintű JSON-fájlt (*St. Patrick’s Day.json*) megnyitjuk egy szerkesztőben, a következő képernyőképhez hasonlóan fog kinézni:
@@ -73,17 +84,7 @@ Ez a JSON-fájl az alábbi kötelező sorokat tartalmazza:
 
 * **dataColors** (adatszínek): A Power BI Desktop vizualizációiban szereplő adatokhoz használható hexadecimális színkódok listája. A lista annyi színt tartalmazhat, amennyit csak szeretne.
 
-* **background** (háttér), **foreground** (előtér) és **tableAccent** (táblázat jelölőszíne): A különböző típusú vizualizációkban alkalmazandó színek. 
-  - A **foreground** (előtérszín) érték a szövegmezők, a KPI-célok, a többsoros kártyák, a kártyaértékek, a mérőkiolvasások és a függőleges szeletelőelemek szövegére, valamint a **táblázatok** és **mátrixok** összegeire és értékeire vonatkozik. 
-  - A **background** (háttérszín) érték a gombok kitöltésére és a kombinált diagramok címkéinek hátterére vonatkozik. A színek használatának módja az alkalmazott vizualizációs stílustól függ. 
-  - A **tábla** és **mátrix** típusú vizualizációk alapértelmezés szerint alkalmazzák ezeket a stílusokat.
-
-Stílus **tábla** vagy **mátrix** típusú vizualizációkra való alkalmazásához kövesse az alábbi lépéseket: 
-1. Válassza ki a vizualizációt. 
-2. Ezt követően a **Vizualizációk** panelen válassza a **Formátum** szakaszt.
-3. Bontsa ki a **Mátrix stílusa** elemet, majd válasszon egy stílust a **Stílus** legördülő listából.
-
-![Stílus legördülő lista](media/desktop-report-themes/report-themes_7.png)
+* **background** (háttér), **foreground** (előtér) és **tableAccent** (táblázat jelölőszíne): Több színosztály. A színosztályokat később részletesen is tárgyalja a cikk, de érdemes megjegyezni, hogy a színosztályok segítségével egyszerre több színt is beállíthat a jelentésben.
 
 A *St. Patrick’s Day.json* fájl szövege az alábbiakban látható, amely alapján létrehozhat egy saját JSON-fájlt:
 
@@ -97,7 +98,7 @@ A *St. Patrick’s Day.json* fájl szövege az alábbiakban látható, amely ala
     }
 ```
 
-Itt beírhatja saját hexadecimális színkódját a kívánt színekhez.
+Ha csak a jelentés alapszíneit szeretné megváltoztatni, elég a nevet és a hexadecimális kódot módosítania a fájlban, és megkapja a saját, importálásra kész JSON-fájlját.
 
 A JSON-fájlban csak azt a formázást kell megadnia, amelyet módosítani szeretne, és minden más, ami *nem* szerepel a JSON-fájlban, egyszerűen a Power BI alapértelmezett beállításai szerint fog megjelenni.
 
@@ -116,10 +117,12 @@ A **Formátum** panel **Adatszínek** szakaszában megjelenik a választott jele
 
 Látja ezt a sok zöld árnyalatot? Ez azért jelenik meg így, mert ezek a színek az előzőleg importált és alkalmazott **jelentéstéma** részei.
 
-### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Milyen helyzetekben nem társulnak a jelentéshez a jelentéstéma színei?
-Tegyük fel, hogy egy egyéni színkészletet (vagy egyedi színt) alkalmaz egy vizualizáció adott adatpontjára. Ha ezután egy jelentéstémát alkalmaz, azzal *nem* fogja felülírni az imént testre szabott adatpontot.
+A színpaletta színei az éppen használatban lévő témához is kapcsolódnak. Ha tehát például kijelöli egy adatpont felső sorának harmadik színét, és később egy másik témára vált, az adatpont színe automatikusan frissülni fog a felső sor harmadik színének megfelelően, ahogy az a Microsoft Office témaváltásainál is történik.
 
-Arra is lehetősége van, hogy manuálisan beállítsa egy adatpont színét a Téma színei szakaszban. Új jelentéstéma alkalmazásakor ezek a színek *nem* fognak frissülni. Az alapértelmezett színek visszaállításához (ha azt szeretné, hogy azok új jelentéstéma alkalmazásakor frissüljenek) válassza a **Visszaállítás alapértelmezettre** lehetőséget a **Téma színei** palettán.
+### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Milyen helyzetekben nem társulnak a jelentéshez a jelentéstéma színei?
+Tegyük fel, hogy egyéni színkészletet (vagy egyedi színt) alkalmaz egy vizualizáció valamelyik adatpontjára a színválasztó Egyedi szín lehetőségének segítségével. Ha ezután egy jelentéstémát alkalmaz, azzal *nem* fogja felülírni az imént testre szabott adatpontot.
+
+Arra is lehetősége van, hogy manuálisan beállítsa egy adatpont színét a Téma színei szakaszban. Új jelentéstéma alkalmazásakor ezek a színek *nem* fognak frissülni. Az alapértelmezett színek visszaállításához (ha azt szeretné, hogy azok frissüljenek egy új jelentéstéma alkalmazásakor) válassza a **Visszaállítás alapértelmezettre** lehetőséget, vagy egy színt a színválasztóban a **Téma színei** palettán.
 
 ![Visszaállítás alapértelmezettre](media/desktop-report-themes/report-themes_9.png)
 
@@ -166,13 +169,139 @@ A **jelentéstémák** színek segítségével tükrözhetik az Ön személyisé
 * [High contrast](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597)
 
 ## <a name="report-theme-json-file-format"></a>Jelentéstémát tartalmazó JSON-fájlok formátuma
-Az alapszintű JSON-fájl öt kötelező sort tartalmaz:
+A téma JSON-fájljának alapesetben csak egyetlen kötelező sora van: a **név**. 
 
-* **name** (név): A téma neve, amely az egyetlen kötelezően kitöltendő mező.
-* **dataColors** (adatszínek): A Power BI Desktop vizualizációiban szereplő adatokhoz használható hexadecimális színkódok listája. A lista annyi színt tartalmazhat, amennyit csak szeretne.
-* **background** (háttér), **foreground** (előtér) és **tableAccent** (táblázat jelölőszíne): A különböző típusú vizualizációkban alkalmazandó színek. A **foreground** (előtérszín) a szövegmezők, a KPI-célok, a többsoros kártyák, a kártyaértékek, a mérőkiolvasások és a függőleges szeletelőelemek szövegére, valamint a **táblázatok** és **mátrixok** összegeire és értékeire vonatkozik. A **background** (háttérszín) érték a gombok kitöltésére és a kombinált diagramok címkéinek hátterére vonatkozik. A színek használatának módja az alkalmazott vizualizációs stílustól függ. A **tábla** és **mátrix** típusú vizualizációk alapértelmezés szerint alkalmazzák ezeket a stílusokat.
+```json
+    {
+        "name": "Custom Theme",
+    }
+```
 
-Ha bővített, a formázást sokkal részletesebben szabályozó JSON-fájlt szeretne létrehozni, akkor egy **visualStyles** nevű szakaszt kell beszúrnia a JSON-fájlba. A formázási jellemzőket a **visualStyles** szakaszba kell beágyazni. A **visualStyles** szakasz az alábbi formátumhoz fog hasonlítani:
+A *név* kivételével minden más szabadon választható, így a témafájlhoz csak a formázni kívánt tulajdonságokat kell hozzáadnia, a többihez tovább használhatja a Power BI alapértelmezett beállításait. 
+
+A név alatt az adatok színéhez kapcsolódó alapvető tulajdonságokat veheti fel. 
+
+
+* **dataColors** (adatszínek): A Power BI Desktop vizualizációiban szereplő adatokhoz használható hexadecimális színkódok listája. A lista annyi színt tartalmazhat, amennyit csak szeretne. Ha a lista összes színét felhasználta, és a vizualizációhoz további színek szükségesek, a rendszer automatikusan visszavált a Power BI alapértelmezett színpalettájára. 
+* **jó, semleges, rossz**: Ezek állítják be a vízesésdiagram és a KPI-vizualizáció által használt állapotszíneket.
+* **maximum, közép, minimum, null**: Ezek a színek állítják be a különböző színátmeneteket a feltételes formázás párbeszédpanelen.  
+
+A színeket meghatározó alapszintű téma a következőhöz hasonló:
+
+```json
+    {
+        "name": "Custom Theme",
+          "dataColors": [
+                "#118DFF",
+                "#12239E", 
+                "#E66C37", 
+                "#6B007B", 
+                "#E044A7",
+                "#744EC2", 
+                "#D9B300", 
+                "#D64550",
+                "#197278", 
+                "#1AAB40"
+    ],
+        "good": "#1AAB40",
+        "neutral": "#D9B300",
+        "bad": "#D64554",
+        "maximum": "#118DFF",
+        "center": "#D9B300",
+        "minimum": "#DEEFFF",
+        "null": "#FF7F48"
+    }
+```
+
+A következő lépésben felveheti a különböző színosztályokat. A színosztályok használatával a jelentéshez több színt is beállíthat egy sorban a hasonló és általában ugyanazt a színt tartalmazó vizuális tulajdonságok csoportosítása révén. 
+
+A formázható hat színosztály az alábbi táblázatban látható.
+
+
+|Színosztály  |Ezt formázza  |
+|---------|---------|
+|előtér | Feliratok háttérszíne (ha az adatpontok kívül vannak) <br> Trendvonal színe <br>  Szövegdoboz alapértelmezett színe <br> Táblázat- és mátrix-értékek és összegek betűszínek Adatsávok tengely színe <br> Kártya-adatfeliratok <br> Kijelző képfelirat értékének színe <br> KPI cél színe <br>  KPI szöveg színe <br> Szeletelő elem színe (Fókusz módban)  <br> Szeletelő legördülő elem betűszíne <br> Szeletelő numerikus bevitel betűszíne <br> Szeletelő fejléc betűszíne <br> Pontdiagram arányvonal színe <br> Vonaldiagram előrejelzés-vonal színe <br> Térképvezető vonal színe <br> Szűrő ablaktábla és kártya szövegszíne|
+|foregroundNeutralSecondary |Címkék színe  <br> Jelmagyarázat címke színe <br> Tengely címke színe <br> Táblázat és mátrix fejlécének betűszíne <br> Kijelző cél és célvezető vonal színe <br>  KPI trend tengelyének színe <br> Szeletelő csúszka színe <br> Szeletelő elem betűszíne <br> Szeletelő körvonalának színe <br> Vonaldiagram színe rámutatáskor <br> Többsoros kártya címének színe <br> Menüszalag-diagram vonás színe <br> Alakzat leképezésének szegélyszíne <br> Gomb szövegének betűszíne <br> Gomb ikon vonalszíne <br> Gomb körvonalának színe |
+| foregroundNeutralTertiary | jelmagyarázat halvány színe <br> Kártya kategóriacímke színe <br> Többsoros kártya kategóriacímke színe <br> Többsoros kártya sávszíne <br> Tölcsérdiagram konverziós ráta vonás színe 
+| backgroundLight | Tengely rácsvonalának színe <br> Táblázat és mátrix rács színe <br> Szeletelő fejléc háttérszíne (Fókusz módban)  <br> Többsoros kártya körvonalának színe  <br> Alakzatkitöltés színe <br> Kijelző ív háttérszíne <br> Alkalmazott szűrőkártya háttérszíne <br> |
+backgroundNeutral | Táblázat- és mátrixrács körvonalának színe <br> Alakzat leképezésének alapértelmezett színe <br> Menüszalag-diagram kitöltőszíne (ha a sorozategyeztetés ki van kapcsolva) |
+háttér | Címkék háttérszíne (ha az adatpontok belül vannak) <br> Szeletelő legördülő elemeinek háttérszíne  <br> Fánkdiagram vonás színe <br> Fatérkép vonás színe <br> Kombinált diagram háttérszíne <br> Gomb kitöltőszíne <br> Szűrő ablaktábla és elérhető szűrőkártya háttérszíne |
+tableAccent | Felülbírálja a táblázat- és mátrixrács körvonalának színét, ha van |
+
+
+Ez a témaminta a színosztályok beállítását mutatja be:
+
+```json
+    {
+        "name": "Custom Theme",
+        "foreground": "#252423",
+          "foregroundNeutralSecondary": "#605E5C",
+          "foregroundNeutralTertiary": "#B3B0AD",
+        "background": "#FFFFFF",
+          "backgroundLight": "#F3F2F1",
+          "backgroundNeutral": "#C8C6C4",
+        "tableAccent": "#118DFF"
+    }
+```
+
+A JSON-fájlhoz a továbbiakban szövegosztályokat adhat hozzá, amelyek hasonlítanak a színosztályokhoz, de a funkciójuk az, hogy a jelentésben szereplő szövegcsoportok betűinek nagyságát, színét és családját frissíthesse velük. 12 szövegosztály van, de elég, ha csak négyet állít be a jelentésben szereplő különböző szövegcsoportokhoz: ezek az úgynevezett *elsődleges osztályok*. A többi szövegosztály, a *másodlagos osztályok*, automatikusan öröklik vagy származtatják tulajdonságaikat a társított elsődleges osztályokból. A másodlagos osztályok gyakran származtatnak halványabb színárnyalatot vagy nagyobb, illetve kisebb szövegméretet az elsődleges osztályokból. 
+
+Vegyük példának a *címke* osztályt. A címke osztályának alapértelmezett formázása a Segoe UI, #252423 (egy sötétszürke szín), és 12 pont, a program pedig ezt az osztályt használja a táblázatban és mátrixban szereplő értékek formázásához. A táblázatban és a mátrixban szereplő végösszegek általában hasonló formázást kapnak, de a kiemelés kedvéért félkövér változatban, így a félkövér címkeosztályt használják. Ezt azonban nem kell külön megadnia a téma JSON-fájljában. A Power BI automatikusan végrehajtja a műveletet. Ha később úgy dönt, hogy 14 pontos betűméretre váltana a címkéknél, és szeretné ezt a témában megadni, nem kell frissítenie a félkövér címkeosztályt, mert az megörökli az összes szövegformázást a címkeosztályból, és emellett végzi el a betűk félkövérre váltását is. 
+
+A táblázatlista a következőket tartalmazza:
+* A négy elsődleges szövegosztályt, az általuk elvégzett formázást, és az alapértelmezett beállításokat
+* Az összes másodlagos osztályt, az általuk végrehajtott formázásokat, és azt az alapértelmezett beállítást, ami egyedi az elsődleges osztályhoz képest
+
+
+|Elsődleges osztály  |Másodlagos osztályok  |Osztálynév a JSON-ban  |Beállítások  |Társított vizualizációs objektumok  |
+|---------|---------|---------|---------|---------|
+| Képfelirat   | N.A.   | képfelirat | DIN <br> #252423 <br> 45pt |Kártya-adatfeliratok <br> KPI-kijelzők|
+|Fejléc|N.A.|fejléc|Segoe UI Semibold <br> #252423 <br> 12pt |Főbb befolyásolók fejlécei |
+| Cím || cím    |DIN <br> #252423 <br> 12pt |Kategória tengely neve <br> Értéktengely neve <br> Többsoros kártya címe * <br> Szeletelő fejléce|
+|-| Nagy cím | largeTitle    |14pt   |Vizualizáció címe |
+|Címke ||címke |Segoe UI<br>#252423<br>10pt |Tábla és mátrix oszlopainak fejlécei <br> Mátrix sorazonosítók<br>Táblázat és mátrix rács<br>Táblázat és mátrix értékek |
+|-|Félkövér |semiboldLabel| Segoe UI Semibold   | Főbb befolyásolók profiljának szövege
+|-|Nagy    |largeLabel |12pt   | Többsoros kártya-adatfeliratok |
+|-|Kicsi    |smallLabel |9pt    |Referenciavonalak címkéi * <br>Szeletelő adattartomány címkéi<br> Szeletelő numerikus bevitel szövegstílusa<br>Szeletelő keresődoboz<br>Főbb befolyásolók befolyásolószövegei|
+|-|Világos    |lightLabel |#605E5C    |Jelmagyarázat szövege<br>Gomb szövege<br>Kategória tengelycímkék<br>Tölcsérdiagram adatcímkék<br>Tölcsérdiagram konverziós ráta címkék<br>Kijelző cél<br>Pontdiagram kategóriacímke<br>Szeletelő elemek|
+|-|Félkövér |boldLabel  |Segoe UI Bold  |Mátrix részösszegek<br>Mátrix végösszegek<br>Táblázat végösszegek |
+|-|Nagy és világos  |largeLightLabel    |#605E5C<br>12pt    |Kártya kategóriacímkék<br>Kijelző címkék<br>Többsoros kártya kategóriacímkék |
+|-|Kicsi és világos  |smallLightLabel    |#605E5C<br>9pt |Adatfeliratok<br>Érték tengelycímkék|
+
+
+A témafájlban nem kell beállítania a másodlagos osztályokat, mert azok az elsődleges osztályokból örökölnek, de ha nincs megelégedve az öröklési szabályokkal (például nem szeretné, ha a végösszegek a táblázat többi értékének félkövér változatában szerepelnének), explicit módon is formázhatja a témafájlban található másodlagos osztályokat, az elsődleges osztályokhoz hasonlóan.
+
+Ez a mintatéma csak az elsődleges szövegosztályokat állítja be: 
+
+```json
+    {
+            "name": "Custom Theme",
+          "textClasses": {
+                "callout": {
+                    "fontSize": 45,
+                    "fontFace": "wf_standard-font",
+                    "color": "#252423"
+                },
+                "title": {
+                    "fontSize": 12,
+                    "fontFace": "wf_standard-font",
+                    "color": "#252423"
+                },
+                "header": {
+                    "fontSize": 12,
+                    "fontFace": "Segoe UI Semibold",
+                    "color": "#252423"
+                },
+                "label": {
+                    "fontSize": 10,
+                    "fontFace": "Segoe UI",
+                    "color": "#252423"
+                }
+        }    
+    }
+```
+
+Végül pedig, ha egy bővített, a teljes vizualizációs formázást jóval részletesebben szabályozó JSON-fájlt szeretne létrehozni, akkor beszúrhat egy **visualStyles** nevű szakaszt a JSON-fájlba. A formázási jellemzőket a **visualStyles** szakaszba kell beágyazni. A **visualStyles** szakasz az alábbi formátumhoz fog hasonlítani:
 
     visualStyles: {
         visualName: {
@@ -184,7 +313,52 @@ Ha bővített, a formázást sokkal részletesebben szabályozó JSON-fájlt sze
         }
     }
 
-A **visualName** és a **cardName** szakaszokban használjon egy adott vizualizáció- és kártyanevet. Használja a csillag karaktert („\*”), ha a beállítást minden olyan vizualizációra vagy kártyára alkalmazni szeretné, amely rendelkezik az adott vizualizáció egy tulajdonságával. A csillag („\*”) karaktert akkor is bármikor alkalmazhatja, ha azt szeretné, hogy egy beállítás az egész jelentésre vonatkozzon (példa: vizualizációk betűmérete vagy adott betűtípuscsaládja).
+A **visualName** és a **cardName** szakaszokban használjon egy adott vizualizáció- és kártyanevet. Jelenleg a **styleName** mindig egy csillag jel ("*"), de egy későbbi kiadásban különböző stílusokat hozhat létre a vizualizációkhoz, és elnevezheti őket (a táblázat és mátrix stílus-funkciójához hasonlóan). A **propertyName** a konkrét formázási lehetőség neve, a **propertyValue** az a hely, ahova a formázási lehetőséget szánja.  
+
+A **visualName** és a **cardName** esetén az adott vizualizáció vagy kártya neve helyett használhatja a csillag („\*”) jelet, ha a beállítást alkalmazni szeretné minden, tulajdonsággal rendelkező vizualizációra és kártyára. Ha a vizualizáció és a kártya neve helyett is a csillag jelet („\*”) használja, hatékonyan alkalmazhatja a beállítást az egész jelentésre, például ugyanazt a betűméretet vagy konkrét betűosztályt használhatja minden szöveghez, minden vizualizációban.
+
+Ez a minta néhány tulajdonság beállítását mutatja be a vizuális stílusokon keresztül. 
+
+```json
+{  
+   "name":"Custom Theme",
+   "visualStyles":{  
+      "*":{  
+         "*":{  
+            "*":[{  
+                  "wordWrap":true
+            }],
+            "categoryAxis":[{
+                  "gridlineStyle":"dotted"
+            }],
+            "filterCard":[{  
+                  "$id":"Applied",
+                  "foregroundColor":{"solid":{"color":"#252423"}}
+               },
+               {  
+                  "$id":"Available",
+                  "border":true
+            }]
+         }
+      },
+      "scatterChart":{  
+         "*":{  
+            "bubbles":[{  
+                  "bubbleSize":-10
+            }]
+         }
+      }
+   }
+}
+```
+
+A példa a következőket mutatja be:
+
+* Sortörés bekapcsolása mindenhol
+* Rácsvonal stílusának pontozottra állítása minden, kategóriatengellyel rendelkező vizualizációban
+* Formázás beállítása az elérhető és alkalmazott szűrőkártyákhoz (figyelje meg a „$id” elemet használó formátumot a szűrőkártyák verzióinak beállításánál)
+* Buborék méretének beállítása pontdiagramokhoz, -10 értékre.
+
 
 > [!NOTE]
 > Csak azokat a formázási elemeket kell megadnia, amelyeket módosítani szeretne. A JSON-fájlban nem szereplő formázási elemek egyszerűen az alapértelmezett értékeket és beállításokat veszik fel.
@@ -193,12 +367,6 @@ A **visualName** és a **cardName** szakaszokban használjon egy adott vizualiz�
 
 ### <a name="json-file-element-definitions"></a>A JSON-fájl elemeinek definíciói
 Az ebben a szakaszban szereplő táblázatok a JSON-fájl létrehozásához szükséges vizualizációneveket (*visualName*), kártyaneveket (*cardName*) és enumerálásokat adják meg.
-
-A *dateTime* érték meghatározásakor a dátumnak aposztrófok közötti ISO-formátumú dátumnak kell lennie, amely a „datetime” kifejezéssel kezdődik. Íme egy példa:
-
-    “datetime’2011-10-05T14:48:00.000Z’”
-
-A Boole-értékek lehetséges értéke *true* (igaz) vagy *false* (hamis). A sztringeknek idézőjelek között kell szerepelniük, például "ez egy sztring".
 
 | **visualName** |
 | --- |
@@ -291,7 +459,20 @@ Az alábbi tábla *cardName* értékeket határoz meg. Az egyes cellákban szere
 | zoom: Nagyítás |
 
 ### <a name="properties-within-each-card"></a>Az egyes kártyákon belüli tulajdonságok
-A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza meg:
+A következő szakasz az egyes kártyákon belüli tulajdonságokat határozza meg. A kártya neve után az egyes tulajdonságok neve következik. Minden tulajdonság esetén a formázás ablaktábla megjelenítésekor látható név, a formázási lehetőség által végzett művelet leírása, és a formázási lehetőség típusa. Ez a módszer megmutatja, hogy milyen értékeket használhat a témafájlban. 
+
+A **dateTime** érték meghatározásakor a dátumnak aposztrófok közötti ISO-formátumú dátumnak kell lennie, amely a „datetime” kifejezéssel kezdődik. Íme egy példa:
+
+    “datetime’2011-10-05T14:48:00.000Z’”
+
+A Boole-értékek értéke true (igaz) vagy false (hamis). A sztringeknek idézőjelek között kell szerepelniük, például "ez egy sztring". A számok csak az értéket magát jelzik, idézőjelek nélkül.
+
+A színeket a következő formátumban kell megadni úgy, a példában szereplő „FFFFFF” helyére a választott hexadecimális kód kerüljön.  
+
+    { "solid": { "color": "#FFFFFF" } }
+
+Az enumerálás általában a legördülő listák formázásánál használatos, és azt jelenti, hogy az elem az ablaktáblán lévő bármely lehetőséghez beállítható, például a „RightCenter” a jelmagyarázat pozíciójához, vagy a „Data value, percent of total” (Adatérték, az összes százaléka) a tortadiagram adatcímkéjéhez. Az enumerálások listája a tulajdonságlista alatt látható.
+
 
 ```json
       "general":

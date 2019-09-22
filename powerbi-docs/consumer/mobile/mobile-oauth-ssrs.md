@@ -9,23 +9,25 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 7067d4c7fdc3fc328db417e5d6733569ecc7be01
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 59c376afd384812473d3175df992c628ae5049ca
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567815"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903636"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>OAuth használata a Power BI jelentéskészítő kiszolgáló és az SSRS csatlakoztatásához
 
-Megtudhatja, hogyan konfigurálhatja a környezetét OAuth-hitelesítés támogatására a Power BI mobilalkalmazásban a Power BI jelentéskészítő kiszolgáló és az SQL Server Reporting Services 2016 (vagy újabb) csatlakoztatásához.
+Az OAuth-hitelesítést a Power BI jelentéskészítő kiszolgálóhoz való csatlakozásra használhatja, a Reporting Services-t pedig mobiljelentések és KPI-k megjelenítésére. Megtudhatja, hogyan konfigurálhatja a környezetét OAuth-hitelesítés támogatására a Power BI mobilalkalmazásban a Power BI jelentéskészítő kiszolgáló és az SQL Server Reporting Services 2016 (vagy újabb) csatlakoztatásához.
 
-![Csatlakozás kiszolgálóhoz](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
+Megfigyelheti, hogyan csatlakozik Adam a Power BI Mobile-ból az SSRS.-hez Oauth használatával:
 
-Az OAuth-hitelesítést a Power BI jelentéskészítő kiszolgálóhoz való csatlakozásra használhatja, a Reporting Services-t pedig mobiljelentések és KPI-k megjelenítésére. A Windows Server 2016 webalkalmazás-proxyhoz (WAP) biztosított fejlesztései lehetővé tették az ilyen típusú hitelesítés használatát.
 
-   > [!NOTE]
-   > A Power BI jelentéskészítő kiszolgálón üzemeltetett Power BI-jelentések megtekintéséhez a WAP-on keresztül végzett hitelesítés mostantól támogatott iOS- és Android-alkalmazások esetében.
+<iframe width="560" height="350" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> A Power BI jelentéskészítő kiszolgálón üzemeltetett Power BI-jelentések megtekintéséhez a WAP-on keresztül végzett hitelesítés mostantól támogatott iOS- és Android-alkalmazások esetében.
 
 ## <a name="requirements"></a>Követelmények
 
@@ -33,7 +35,7 @@ Szükséges a Windows Server 2016 a webalkalmazás-proxy (WAP) és az Active Dir
 
 ## <a name="domain-name-services-dns-configuration"></a>A tartománynév-szolgáltatások (DNS) konfigurációja
 
-Meg kell határoznia, milyen nyilvános URL-címhez csatlakozzon a Power BI mobilalkalmazás. Például az alábbihoz hasonlóan nézhet ki.
+A Power BI-mobilalkalmazás a nyilvános IP-címre fog kapcsolódni. Például az alábbihoz hasonlóan nézhet ki.
 
 ```https
 https://reports.contoso.com
@@ -57,7 +59,7 @@ A Reporting Services oldalán nem sok mindent kell konfigurálni. Csak meg kell 
 
 ### <a name="service-principal-name-spn"></a>Egyszerű szolgáltatásnév (SPN)
 
-Az SPN egy egyedi azonosító egy Kerberos-hitelesítést használó szolgáltatáshoz. Mindenképpen szüksége lesz egy megfelelő HTTP SPN-re a jelentéskészítő kiszolgálón.
+Az SPN egy egyedi azonosító egy Kerberos-hitelesítést használó szolgáltatáshoz. Mindenképpen szüksége van egy megfelelő HTTP SPN-re a jelentéskészítő kiszolgálón.
 
 Információk a megfelelő egyszerű szolgáltatásnév (SPN) konfigurálásáról a jelentéskészítő kiszolgálón: [Egyszerű szolgáltatásnév (SPN) regisztrálása egy jelentéskészítő kiszolgálóhoz](https://msdn.microsoft.com/library/cc281382.aspx).
 
@@ -77,11 +79,11 @@ További információk: [Reporting Services konfigurációs fájl módosítása]
 
 ## <a name="active-directory-federation-services-adfs-configuration"></a>Active Directory összevonási szolgáltatások (ADFS) – konfiguráció
 
-Konfigurálnia kell az ADFS-t egy, a környezetén belül lévő Windows 2016-kiszolgálón. Ez a Kiszolgálókezelőben lehetséges a Kezelés területen a Szerepkörök és szolgáltatások hozzáadása lehetőség kiválasztásával. További információk: [Active Directory összevonási szolgáltatások](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
+Konfigurálnia kell az ADFS-t egy, a környezetén belül lévő Windows 2016-kiszolgálón. Ez konfigurálás a Kiszolgálókezelőben végezhető el a Kezelés területen a Szerepkörök és szolgáltatások hozzáadása lehetőség kiválasztásával. További információk: [Active Directory összevonási szolgáltatások](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
 
 ### <a name="create-an-application-group"></a>Alkalmazáscsoport létrehozása
 
-Az AD FS-kezelő képernyőjén hozzon létre egy alkalmazáscsoportot a Reporting Serviceshez, amelyben majd szerepelnek a Power BI mobilalkalmazásokhoz tartozó adatok.
+Az AD FS-kezelő képernyőjén hozzon létre egy alkalmazáscsoportot a Reporting Serviceshez, amelyben a Power BI mobilalkalmazásokhoz tartozó adatok is szerepelnek.
 
 Az alkalmazáscsoportot az alábbi lépéseket követve hozhatja létre.
 
@@ -107,7 +109,7 @@ Az alkalmazáscsoportot az alábbi lépéseket követve hozhatja létre.
    mspbi-adal://com.microsoft.powerbimobile  
    mspbi-adalms://com.microsoft.powerbimobilems
 
-   **Az Android alkalmazásoknak csak a következőre van szükségük:**  
+   **Android alkalmazásoknál csak a következő lépésekre van szükség:**  
    urn:ietf:wg:oauth:2.0:oob
 
    ![ADFS Alkalmazáscsoport-varázsló 02](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
@@ -196,10 +198,10 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 
 | Paraméter | Megjegyzések |
 | --- | --- |
-| **ADFSRelyingPartyName** |Ez az ADFS-en belüli alkalmazáscsoport részeként létrehozott webes API név. |
-| **ExternalCertificateThumbprint** |Ez a külső felhasználókhoz használható tanúsítvány. Fontos, hogy ez a tanúsítvány érvényes legyen a mobileszközökön, és megbízható hitelesítésszolgáltatótól származzon. |
-| **BackendServerUrl** |Ez a jelentéskészítő kiszolgáló URL-címe a WAP-kiszolgálóról. Ha a WAP-kiszolgáló egy DMZ-ben van, előfordulhat, hogy teljes tartománynevet kell használnia. Győződjön meg arról, hogy ezt az URL-t el tudja érni a webböngészőből a WAP-kiszolgálón. |
-| **BackendServerAuthenticationSPN** |Ez a Reporting Services konfigurálása során létrehozott SPN. |
+| **ADFSRelyingPartyName** |Az ADFS-en belüli alkalmazáscsoport részeként létrehozott webes API név. |
+| **ExternalCertificateThumbprint** |A külső felhasználókhoz használható tanúsítvány. Fontos, hogy a tanúsítvány érvényes legyen a mobileszközökön, és megbízható hitelesítésszolgáltatótól származzon. |
+| **BackendServerUrl** |A jelentéskészítő kiszolgáló URL-címe a WAP-kiszolgálóról. Ha a WAP-kiszolgáló egy DMZ-ben van, előfordulhat, hogy teljes tartománynevet kell használnia. Győződjön meg arról, hogy ezt az URL-t el tudja érni a webböngészőből a WAP-kiszolgálón. |
+| **BackendServerAuthenticationSPN** |A Reporting Services konfigurálása során létrehozott SPN. |
 
 ### <a name="setting-integrated-authentication-for-the-wap-application"></a>Integrált hitelesítés beállítása a WAP-alkalmazáshoz
 

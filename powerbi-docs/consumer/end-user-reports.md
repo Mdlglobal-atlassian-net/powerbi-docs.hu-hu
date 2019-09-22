@@ -7,23 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/24/2019
+ms.date: 09/05/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c13398ff08722c54a9f0c373a1c103e4d684c9bb
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 21a77d585707b19cd8a3d06ad44471fac45d7178
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391352"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903741"
 ---
 # <a name="reports-in-power-bi"></a>Jelentések a Power BI-ban
 
-A Power BI-jelentések az adathalmazok többszempontú nézetei, amelyek az adathalmazból származó különféle eredményeket és megállapításokat bemutató vizualizációkat tartalmaznak.  A jelentések egyetlen vagy akár több oldalnyi vizualizációt is tartalmazhatnak. Munkahelyi szerepkörétől függően lehet, hogy Ön jelentéseket *tervez*. Előfordulhat az is, hogy jelentéseket *használ*.
+A Power BI-jelentések az adathalmazok többszempontú nézetei, amelyek az adathalmazból származó különféle eredményeket és megállapításokat bemutató vizualizációkat tartalmaznak.  A jelentések egyetlen vagy akár több oldalnyi vizualizációt is tartalmazhatnak. Munkahelyi szerepkörétől függően lehet, hogy Ön jelentéseket *tervez*. Előfordulhat az is, hogy jelentéseket *használ*. Ez a cikk a *felhasználóknak* szól.
 
-![Képernyőkép egy jelentésoldalról.](./media/end-user-reports/power-bi-reports.png)
+![Képernyőkép egy jelentésoldalról.](./media/end-user-reports/power-bi-report.png)
 
-Ez a jelentés hat oldallal (vagy lappal) rendelkezik, és jelenleg a **Hangulat** oldalt látja. Ezen az oldalon öt különböző vizualizáció és egy oldalcím található. A *Szűrők* panelen láthatjuk, hogy egy szűrő van alkalmazva minden jelentésoldalra. A Szűrők panel összecsukásához válassza a nyilat ( **>** ).
+A. Ez a jelentés hat oldallal (vagy lappal) rendelkezik, és jelenleg a **Hangulat** oldalt látja.    
+B. Ezen az oldalon öt különböző vizualizáció és egy oldalcím található.    
+C. A *Szűrők* panelen láthatjuk, hogy egy szűrő van alkalmazva minden jelentésoldalra. A Szűrők panel összecsukásához válassza a nyilat ( **>** ).    
+D. A Power BI-címsávon a jelentés neve és az utolsó frissítés dátuma látható. A nyíl választásával megnyithatja a menüt, amelyben a jelentés tulajdonosa is látható.    
+E. A műveletsáv az ezzel a jelentéssel végezhető műveleteket tartalmazza.  Például megjegyzést fűzhet a jelentéshez, megtekinthet egy könyvjelzőt vagy adatokat exportálhat.  A három pontot (...) választva a jelentés további funkcióinak listája nyílik meg.    
 
 Ha csak most kezdte el használni a Power BI-t, a [Power BI szolgáltatás felhasználói számára az alapfogalmakat](end-user-basic-concepts.md) ismertető cikket elolvasva egyszerűen elsajátíthatja az alapokat. A jelentések megtekinthetők és megoszthatók mobileszközön, illetve jegyzetek fűzhetők hozzájuk. További információ: [Jelentések vizsgálata a Power BI-mobilalkalmazásokban](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -68,9 +72,9 @@ A szerepkörétől függően Ön lehet *tervező*, aki jelentéseket hoz létre 
 Lehet *felhasználó* is, aki másoktól kap jelentéseket. Ez esetben azt kell tudnia, hogyan értelmezheti és használhatja a jelentéseket. Ha Ön *jelentésfelhasználó*, ezeket a hivatkozásokat ajánljuk:
 
 * Kezdje a [Power BI szolgáltatás áttekintésével](end-user-basic-concepts.md), amelyből megtudhatja, hol találhatja meg a jelentéseket és a jelentéseszközöket.
-* Ismerje meg, hogyan tud [megnyitni egy jelentést](end-user-report-open.md), és fedezze fel az [Olvasó nézetben](end-user-reading-view.md) elérhető műveleteket.
+* Ismerje meg, hogyan tud [megnyitni egy jelentést](end-user-report-open.md), és fedezze fel a [felhasználók számára elérhető műveleteket](end-user-reading-view.md).
 * Gyakorolja a jelentések használatát az egyik [mintánk](../sample-tutorial-connect-to-the-samples.md) segítségével.  
-* Annak megtekintéséhez, hogy a jelentés melyik adathalmazt használja, és mely irányítópultok rendelkeznek a jelentésből rögzített csempékkel, olvassa el a [kapcsolódó tartalom Power BI szolgáltatásban való megtekintését](end-user-related.md) ismertető témakört.
+* Annak megtekintéséhez, hogy a jelentés melyik adathalmazt használja, és mely irányítópultok rendelkeznek a jelentésből származó vizualizációkat (*rajzszögek*), olvassa el a [kapcsolódó tartalom Power BI szolgáltatásban való megtekintését](end-user-related.md) ismertető témakört.
 
 > [!TIP]
 > Ha nem találta meg itt, amit keres, a bal oldali tartalomjegyzékben böngészhet a *jelentésekhez* kapcsolódó cikkek között.

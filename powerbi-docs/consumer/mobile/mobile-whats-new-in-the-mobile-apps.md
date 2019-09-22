@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 5b0921689a923b5c787a5e4208fe35a863372878
-ms.sourcegitcommit: 9eae2a52af6926cda4d6b03de4d50d7fa8b2f216
+ms.openlocfilehash: 5697fd79551d238f095696dcc940afb8ea330d11
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70030167"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70841359"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -25,7 +25,15 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 
 ## <a name="august-2019"></a>2019. augusztus
 
-### <a name="secured-access-with-azure-active-directory-ad-application-proxy"></a>Biztonságos hozzáférés az Azure Active Directory (AD) alkalmazásproxyján keresztül
+### <a name="introducting-power-bi-mobile-new-look-preview-ios-and-android"></a>A Power BI Mobile új megjelenésének bemutatkozása (előzetes verzió) (iOS és Android)
+
+Alkalmazásunkat új felületek bevezetésével frissítettük. Hozzáadtunk egy kezdőlapot, amely az Ön által gyakran használt tartalomhoz kínál gyors hozzáférést, valamint új navigációs sávokat, amelyek megkönnyítik az alkalmazáson belüli tájékozódást. Az új és frissített felületeken gyorsabban és egyszerűbben megtalálhatja azt, amire szüksége van, akkor, amikor szüksége van rá.
+Mivel az új külső előzetes verziójú, be kell kapcsolnia, hogy megcsodálhassa.
+További tudnivalók a [Power BI Mobile új megjelenéséről](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
+
+![A Power BI Mobile új megjelenése](./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-look2.gif)
+
+### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Biztonságos hozzáférés az Azure Active Directory (AD) alkalmazásproxyján keresztül (iOS és Android)
 
 Az Azure Active Directory csapatával együttműködve integráltuk a Power BI mobilalkalmazásokat az Azure Active Directory (AAD) alkalmazásproxyjával. Ezzel a konfigurációval csatlakozhat a vállalati határokon belül futtatott jelentéskészítő kiszolgálóhoz a Power BI mobilalkalmazásból anélkül, hogy bonyolult helyszíni konfigurációt kellene beállítania. További információ: [A Power BI Mobile és az Azure AD alkalmazásproxyjának integrációja](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Ismerje meg, [hogyan konfigurálható az Azure AD alkalmazásproxyja és a Power BI](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
@@ -36,7 +44,7 @@ Az Azure Active Directory csapatával együttműködve integráltuk a Power BI m
 A jelentésoldalakhoz készült elemleírások már támogatottak, ha mobilalkalmazásban tekinti meg a jelentéseket. Elég hosszan rákoppintani egy jelentéshez készült elemleírással rendelkező vizualizációra, hogy az elemleírás megjelenjen.  
 
 ![Jelentésvászonhoz készült elemleírás](./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png)
-
+ 
 > [!NOTE]
 > A jelentésekhez készült elemleírások 640 pixelnél nagyobb eszközökön, 320-as megjelenítéssel támogatottak. A kisebb eszközök az alapértelmezett elemleírásokat használják.
 

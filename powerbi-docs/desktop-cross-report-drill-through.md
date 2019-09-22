@@ -1,119 +1,124 @@
 ---
-title: Kereszt-jelentés részletezés használata a Power BI Desktopban
-description: Ismerje meg, hogyan egy jelentés áthatoló részletezést végezni egy másik, a Power BI Desktopban
+title: Jelentésközi részletezés a Power BI Desktopban
+description: Útmutató egy jelentésből a másikba átnyúló részletezéshez a Power BI Desktopban
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/08/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 45a7cdd3c7b5324f3d618eaba4bdb3968a9549a5
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: e735d45a7a49c4a0365e35d5bb95957c6145f934
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375188"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903755"
 ---
-# <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Kereszt-jelentés részletezés használata a Power BI Desktopban
+# <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Jelentésközi részletezés a Power BI Desktopban
 
-A Power BI Desktopban cross-jelentés részletező szolgáltatással is kontextusban ugorhat egy jelentésből egy másik jelentés. Ez igaz, mindaddig, amíg a jelentéseket lehet ugyanabban a munkaterület vagy alkalmazást a Microsoft Power BI szolgáltatásban. Kereszt-jelentés részletezés használata, a két vagy több olyan jelentéseket, amely rendelkezik a kapcsolódó tartalom, és a szűrőkörnyezet együtt a kereszt-jelentés kapcsolat át. Ebből a cikkből megtudhatja, hogyan állítható be a kereszt-jelentés részletező Power BI-jelentések, és milyen felhasználói élmény, amikor a maguk a kereszt-jelentés részletezés használata.
+A Power BI Desktop jelentésközi részletezés funkciójával környezetfüggően ugorhat egy jelentésről egy másikra. Mindez akkor lehetséges, ha a jelentések egy munkaterületen vagy alkalmazáson belül vannak a Power BI szolgáltatásban. Jelentésközi részletezéssel kettő vagy több olyan jelentés, amelyek kapcsolódó tartalommal rendelkeznek, és átadható a szűrési környezet a jelentésközi kapcsolaton keresztül. Ebből a cikkből elsajátíthatja jelentésközi részletezések beállítását Power BI-jelentésekhez, és megtudhatja, mit tapasztalnak a jelentésközi részletezés felhasználói.
 
-![Képernyőfelvétel: a Power BI Desktop részletezési lehetőség](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
+![A Power BI Desktop Részletezés lehetőségének képernyőképe](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
-Az alábbi definíciókat is fontos tudni, mielőtt megkezdjük a beállításával és használatával határokon-jelentés részletezési:
+A jelentésközi részletezés beállításának és használatának megkezdése előtt fontos tisztában lenni az alábbi fogalmakkal:
 
-* **A forrás visual:** A vizualizációt, amely meghívja az áthatoló részletezési művelet a vizuális környezetet menü használatával.
-* **Forrásjelentés:** A jelentés, amely tartalmazza a kereszt-jelentés részletező a forrásként használt vizualizációra.
-* **Cél lap:** Az oldal, amely a felhasználó hajtanak végre a drillthrough művelet indítása után.
-* **Cél jelentés:** A jelentés, amely tartalmazza a kereszt-jelentés részletezési cél lapját.
+* **Forrásvizualizáció:** Az a vizualizáció, amely a vizualizáció környezeti menüjének használatával a részletezést kezdeményezi.
+* **Forrásjelentés:** A jelentésközi részletezés forrásvizualizációját tartalmazó jelentés.
+* **Céloldal:** Az az oldal, amelyre a felhasználó érkezik a részletezési művelet indítása után.
+* **Céljelentés:** A jelentésközi részletezés céloldalát tartalmazó jelentés.
 
-## <a name="enable-cross-report-drillthrough"></a>Kereszt-jelentés részletezés engedélyezése
-
-Ahhoz, hogy egy több-a jelentés részletező célja egy jelentésben, engedélyezni kell a funkciót, hogy a jelentés a **beállítások** ablak. Lépjen a **fájl** > **lehetőségek és beállítások** > **beállítások**, majd lépjen **beállítások jelentés** közelében a a bal oldalon található az oldal alján.
-
-Válassza ki a **lehetővé teszi a Vizualizációk a jelentés használatához a más jelentésekből részletezési cél** jelölőnégyzetet, a következő képen látható módon.
-
-![Képernyőkép a beállítások ablakról, amelyen kiemelve jelentésbeállítások](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
-
-Kereszt-jelentés részletezés engedélyezve van.
-
-## <a name="set-up-cross-report-drillthrough"></a>Kereszt-jelentés a részletezés beállítása
-
-Kereszt-jelentés a részletezés beállítása nagyon hasonlít egy jelentésen belül a részletezés beállítása. Részletezés engedélyezve van a cél lapon lehetővé teszi az egyéb Vizualizációk részletezési engedélyezett oldalán lehetőséget. A lépéseket részletezés belül egyetlen jelentés létrehozásához, lásd: [részletezés használata a Power BI Desktopban](desktop-drillthrough.md).
-
-A telepítés megkezdéséhez szüksége néhány kezdeti lépéseket:
-
-* Állítsa be a részletezési cél oldal, amely ezután elérhető lesz a munkaterület vagy az alkalmazás más jelentések.
-* Lehetővé teszi egy jelentés kívül a saját jelentést a részletező lapok megjelenítéséhez.
-
-A részletezés beállítások keresése a **mezők** szakaszában a **Vizualizációk** panelen, amint az alábbi képen látható.
-
-![Képernyőkép a megjelenítések ablaktáblán, a részletezési lehetőségeket vannak kiemelve](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
-
-A részletezés oldal engedélyezésének első lépéseként, hogy ellenőrizze az adatmodellek a forrás- és jelentésekhez. Győződjön meg arról, hogy: 
-
-* A mezők átadni kívánt mindkét adatmodellek szerepel.
-* A mezők nevét, és a táblák, amelyhez tartoznak, nevének azonosak (a karakterláncokat is egyezniük kell, és a kis-és nagybetűket).
-
-Például, ha a mező egy szűrő átadni kívánt *ország* a táblán belül *földrajzi*, mindkét modellt rendelkeznie kell egy *földrajzi* táblát, és a egy *ország* mezőt a táblán belül. Ha nem, akkor frissítenie kell a mező nevét vagy a táblázat neve az alapul szolgáló modellből. Egyszerűen csak a megjelenített nevét, a mezők frissítése nem fog megfelelően működni a kereszt-jelentés részletező. (Ne feledje, hogy az egyes jelentések a sémák nem egyezhet meg egymással.)
-
-A telepítő használatának megkezdéséhez szüksége, a cél lap az készen álljon. A Power BI Desktopban, lépjen a lapra, és győződjön meg arról, hogy a **Cross-jelentés** részletezési váltógomb értékre van állítva **a**. 
-
-![A beállítandó Cross-jelentés váltó képernyőképe](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
-
-Ezután húzza a vászonra a részletezési célként használni kívánt mezőket. Válassza ki, hogy a mező egy kategóriaként van használatban, vagy például egy mérték foglalja össze. Ezen a ponton kiválaszthatja, hogy le kívánja tiltani a **az összes szűrő megőrzése** be-vagy kikapcsolása a vizualizációhoz. Ha nem kívánja átadni a többi alkalmazott szűrők a forrás-visual a a célként megadott részletezési visual, válassza ki a **ki**.
 
 > [!NOTE]
-> Ha használja a lap csak a részletezési cross-jelentés, törölnie kell a **vissza** automatikusan hozzáadott gombra. A **vissza** gomb csak akkor működik, a nagivation belül egyetlen jelentést. 
+> A *Saját munkaterületen* belül egyénileg megosztott jelentések, amelyek a *[Velem megosztva](service-share-dashboards.md#share-a-dashboard-or-report)* területen jelennek meg, csak azon a munkaterületen érhetők el, amelyen eredetileg meg lettek osztva. 
 
-Miután konfigurálta a vizualizációt, győződjön meg arról, mentse a jelentést, ha Ön a Power BI szolgáltatásban, vagy mentse és tegye közzé a jelentést a Power BI Desktop használata.
 
-Az előző szakaszban leírt cross-jelentés részletezés engedélyezése a Power BI Desktop (az a **beállítások** ablakban). Ha a Power BI szolgáltatás használatával hozza létre a kereszt-jelentés részletezési cél kell cross-jelentés részletezés engedélyezése: 
+## <a name="enable-cross-report-drillthrough"></a>Jelentésközi részletezés engedélyezése
 
-1. Válassza ki a munkaterületet, amelyben a Céljelentés és a forrásjelentés található.
-2. Válassza ki **jelentések**.
-3. Válassza ki a **beállítások** a forrásjelentés ikonjára.
-4. Ellenőrizze, hogy a kereszt-jelentés részletező váltógomb **a**.
-5. A jelentés mentéséhez.
+Ahhoz, hogy egy jelentés jelentésközi részletezés célja lehessen, engedélyeznie kell ezt a funkciót a jelentéshez a **Beállítások** ablakban. Nyissa meg a **Fájl** > **Beállítások és lehetőségek** > **Beállítások** menüt, majd lépjen az oldal alja közelében a bal oldalon található **Jelentés beállításai** lehetőségre.
 
-Ennyi az egész. A jelentés elkészült a kereszt-jelentés részletező élmény. 
+Jelölje be **A jelentés vizualizációi használhatnak más jelentésekből származó részletezési célokat** jelölőnégyzetet, ahogyan az alábbi ábrán látható.
 
-A következő szakaszban hogy vessen egy pillantást a felhasználói élményt, a felhasználó szemszögéből.
+![A Beállítások ablak képernyőképe a Jelentés beállításai kiemelésével](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
 
-## <a name="cross-report-drillthrough-experience"></a>Kereszt-jelentés részletező élmény
+Így már engedélyezve van a jelentésközi részletezés.
 
-A kereszt-jelentés részletező élmény a jelentések konfigurálásakor helyezheti a funkció használatához.
+## <a name="set-up-cross-report-drillthrough"></a>Jelentésközi részletezés beállítása
 
-Válassza ki a forrás jelentést a Power BI szolgáltatásban, és válassza ki a cél lap beállításakor megadott módon mezőket használó vizualizációt. Kattintson a jobb gombbal egy adatpontra, nyissa meg a vizuális környezetet menüt, és válassza ki **részletezési**.
+A jelentésközi részletezés a jelentésen belüli részletezéshez hasonló módon állítható be. A részletezés engedélyezve van a céloldalon, ezáltal más vizualizációk célként adhatják meg ezt az oldalt a részletezéshez. A részletezés egy jelentésen belüli létrehozásának lépéseit a [Részletezés használata a Power BI Desktopban](desktop-drillthrough.md) című cikk ismerteti.
 
-![A Power BI szolgáltatásban lévő forrásjelentéssel részletezési kiemelésével – képernyőfelvétel](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
+A beállítási folyamat elindításához végre kell hajtania néhány kezdeti lépést:
 
-Ahogy, állítsa be őket a cél létrehozásakor ekkor megjelenik a cél közötti – jelentés részletezési oldalon, az eredményeket. Az eredményeket a részletezési beállítások szerint vannak szűrve.
+* Állítson be egy részletezési céloldalt, amely elérhető lesz a munkaterületen vagy alkalmazáson belüli más jelentésekből.
+* Engedélyezze egy jelentésnek, hogy az önmagán kívüli részletezési oldalakat is lássa.
+
+A részletezési beállítások a **Vizualizációk** panel **Mezők** szakaszában találhatók, amint az alábbi ábrán látható.
+
+![A Vizualizációk panel képernyőképe a Részletezési beállítások kiemelésével](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
+
+A részletezés engedélyezése egy oldalhoz azzal kezdődik, hogy érvényesíti a forrás- és céljelentés adatmodelljeit. Ellenőrizze a következőket: 
+
+* Az átadni kívánt mezők mindkét adatmodellben léteznek.
+* A mezők nevei, valamint azoknak a tábláknak a nevei, amelyekhez ezek tartoznak, megegyeznek (a sztringeknek is egyezniük kell, és ezekben a kis- és nagybetűk meg vannak különböztetve).
+
+Ha például a *Geography* tábla *Country* mezőjére vonatkozó szűrőt szeretne átadni, akkor mindkét modellben lennie kell egy *Geography* nevű táblának, azon belül pedig egy *Country* mezőnek. Ha nem így van, a mögöttes modellben kell módosítania a mező vagy a tábla nevét. A mezők megjelenített nevének módosítása önmagában nem elég a jelentésközi részletezés megfelelő működéséhez. (Megjegyzendő, hogy a jelentések sémáinak nem kell pontosan megegyezniük.)
+
+A beállítás megkezdéséhez elő kell készítenie egy céloldalt. Nyissa meg az oldalt a Power BI Desktopban, és ellenőrizze, hogy a **Jelentésközi** részletezés kapcsolója a **Be** állásban van-e. 
+
+![A Jelentésközi részletezés Be helyzetű kapcsolójának képernyőképe](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
+
+Ez után húzza a vászonra a részletezés céljaként használni kívánt mezőket. Válassza ki, hogy a mezőt kategóriaként szeretné használni, vagy összesítve, mint egy mértéket. Ezen a ponton döntheti el, hogy le szeretné-e tiltani **Az összes szűrő megőrzése** kapcsolót a vizualizációhoz. Ha nem szeretne a forrásvizualizáción alkalmazott más szűrőket is átadni a részletezés célvizualizációjának, válassza a **Ki** beállítást.
+
+> [!NOTE]
+> Ha az oldalt csak jelentésközi részletezéshez használja, törölnie kell az arra automatikusan felvett **Vissza** gombot. A **Vissza** gomb csak az egy jelentésen belüli navigációhoz használható. 
+
+A vizualizáció konfigurálása után mindenképpen mentse a jelentést, ha a Power BI szolgáltatásban dolgozik, illetve mentse és tegye közzé a jelentést, ha a Power BI Desktopot használja.
+
+Az előző szakasz ismertette a jelentésközi részletezés engedélyezését a Power BI Desktophoz (a **Beállítások** ablakban). Ha a Power BI szolgáltatás használatával hozza létre a jelentésközi részletezés célját, a következőket kell megtennie a jelentésközi részletezés engedélyezéséhez: 
+
+1. Jelölje ki azt a munkaterületet, amelyen a céljelentés és a forrásjelentés található.
+2. Válassza a **Jelentések** lehetőséget.
+3. Válassza a forrásjelentés **Beállítások** ikonját.
+4. Ellenőrizze, hogy a jelentésközi részletezés kapcsolója **Be** helyzetben van.
+5. Mentse a jelentést.
+
+Ennyi az egész. A jelentés így már felhasználható a jelentésközi részletezési felületen. 
+
+A következő szakasz a felhasználó szempontjából mutatja be ezt a felületet.
+
+## <a name="cross-report-drillthrough-experience"></a>A jelentésközi részletezés felhasználói felülete
+
+A funkciót akkor veheti használatba, amikor a jelentésközi részletezési felületet konfigurálja egy jelentéshez.
+
+Válassza ki a forrásjelentést a Power BI szolgáltatásban, majd válassza ki azt a vizualizációt, amely olyan módon használja a mezőt vagy mezőket, ahogyan a céloldal beállítása során megadta. Ez után kattintson egy adatpontra a vizualizáció helyi menüjének megnyitásához, és válassza a **Részletezés** menüpontot.
+
+![A Power BI szolgáltatásban látható forrásjelentés képernyőképe a Részletezés menüpont kiemelésével](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
+
+Az eredmények úgy jelennek meg a jelentésközi részletezés céloldalán, ahogyan a cél létrehozásakor beállította azokat. Az eredmények a részletezés beállításainak megfelelően vannak szűrve.
 
 > [!IMPORTANT]
-> A Power BI gyorsítótárazza a kereszt-jelentés részletezési cél. Ha módosít, mindenképpen frissítse a böngészőt, ha nem látja a várt módon a részletezési célokat. 
+> A Power BI gyorsítótárazza a jelentésközi részletezések céljait. Ha módosításokat végez, mindig frissítse az oldalt a böngészőben, ha a részletezés célja nem a várt módon jelenik meg. 
 
-Az alábbi módon formázott Cross-jelentés célok: 
+A jelentésközi célok formázásának menete a következő: 
 
 `Target Page Name [Target Report Name]`
 
-Miután kiválasztotta a cél lap, amelyhez szeretne áthatoló részletezést, a Power BI az adott oldalra kerül. A szűrőkörnyezet a cél lap beállításai alapján továbbítja. 
+Miután Ön kiválasztja a céloldalt, amelyre részletezni szeretne, a Power BI megnyitja ezt az oldalt. A céloldal beállításai alapján átadja a szűrési környezetet. 
 
-A szűrőkörnyezet a forrásvizualizációból tartozhatnak a következők: 
+A forrásvizualizációból származó szűrési környezet többek között az alábbiakat tartalmazhatja: 
 
-* Jelentés lap és ez hatással lenne a forrásként használt vizualizációra vizualizációszint szűrői. 
-* Keresztszűrés és keresztkiemelés, amelyek befolyásolják a forrásként használt vizualizációra. 
-* Szeletelők az oldal és a szeletelők szinkronizálása.
-* URL-paraméter.
+* A forrásvizualizációra vonatkozó jelentés-, oldal- és vizualizációszintű szűrők. 
+* A forrásvizualizációra vonatkozó keresztszűrés és keresztkiemelés. 
+* Az oldalon lévő szeletelők és szinkronszeletelők.
+* URL-paraméterek.
 
-A célként megadott jelentést, a részletezés megjelenni, amikor a Power bi-ban csak érvényes szűrők a mezőket, amelynek talál pontos karakterlánc megfelel a mező nevét és a tábla neve. A Power BI kiemelt szűrők nem vonatkozik a cél a jelentésből. Az alapértelmezett személyes könyvjelző azonban azt, alkalmazni, ha van ilyen. Például, ha az alapértelmezett személyes könyvjelző tartalmaz egyetlen jelentésszintű szűrő a *ország = USA*, Power bi-ban a szűrő alkalmazása először a forrásvizualizációból a szűrőkörnyezet alkalmazása előtt. 
+Amikor megnyitja a részletezés céljelentését, a Power BI csak azokra a mezőkre alkalmaz szűrőket, amelyekhez a mezőnevekben és táblanevekben pontosan egyező sztringeket talál. A Power BI nem alkalmaz a céljelentésből származó rögzített szűrőket. Alkalmazza viszont az alapértelmezett személyes könyvjelzőt, ha az létezik. Ha az Ön alapértelmezett személyes könyvjelzője például tartalmazza a *Country = US* jelentésszintű szűrőt, akkor a Power BI először ezt a szűrőt alkalmazza a forrásvizualizációból származó szűrési környezet alkalmazása előtt. 
 
-Kereszt-jelentés részletezést, a Power BI továbbítja a szűrőkörnyezet a céljelentésben levő összes normál oldalakat. A Power BI fennakadt a szűrőkörnyezet, elemleírás-oldalt, a, mert a forrás, az elemleírás meghívó visual elemleírás-oldalt alapján szűrve.
+Jelentésközi részletezéshez a Power BI a céljelentés összes standard oldalának átadja a szűrési környezetet. A Power BI nem adja át a szűrési környezetet az elemleírás-oldalaknak, ezek ugyanis az elemleírást meghívó forrásvizualizáció alapján vannak szűrve.
 
-Ha szeretné a kereszt-jelentés áthatoló részletezési művelet után térjen vissza a forrásjelentés, használja a böngésző **vissza** gombra. 
+Ha a jelentésközi részletezési művelet után vissza szeretne térni a forrásjelentéshez, használja a böngésző **Vissza** gombját. 
 
 ## <a name="next-steps"></a>Következő lépések
 

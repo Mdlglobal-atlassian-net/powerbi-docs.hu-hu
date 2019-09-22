@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 8a6ee2e16b5c5190c969c6017101257f331775f9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 97fa91dda195d6976d92b027a0f96fca8e2ccea1
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269395"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70841422"
 ---
 # <a name="supported-languages-in-the-power-bi-mobile-apps"></a>Támogatott nyelvek a Power BI-mobilalkalmazásokban
 A Power BI mobilalkalmazások jelenleg az alábbi nyelveket támogatják:
@@ -61,5 +61,5 @@ A Power BI mobilalkalmazások jelenleg az alábbi nyelveket támogatják:
 ## <a name="next-steps"></a>Következő lépések
 * [A Power BI által támogatott nyelvek és országok/régiók](../../supported-languages-countries-regions.md)
 * Kérdése van? Kérdezze meg [a Power BI közösségét](http://community.powerbi.com/).
-* Továbbra is problémába ütközik? Látogasson el a [Power BI támogatási oldalára](https://powerbi.microsoft.com/support/).
+* Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).
 

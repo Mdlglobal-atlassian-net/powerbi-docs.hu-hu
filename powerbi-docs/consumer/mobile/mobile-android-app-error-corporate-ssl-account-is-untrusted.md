@@ -2,23 +2,23 @@
 title: A „vállalati SSL-tanúsítványa nem megbízható” hiba elhárítása
 description: 'A Power BI Androidos alkalmazásba való bejelentkezéskor a következő üzenet jelenhet meg: „A hitelesítés nem sikerült, mert a vállalati SSL-tanúsítványt nem megbízhatóként kezeli ez az eszköz”'
 .": ''
-author: mshenhav
-manager: kfile
+author: paulinbar
+manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 08/28/2019
 ms.author: mshenhav
-ms.openlocfilehash: de103412e21e0d26d20058e2d4e1fb9a8a5449bf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 19bcdf08d4eacff5e080bf1a2f987ea848e4bfb9
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61341351"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70840925"
 ---
 # <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>A „vállalati SSL-tanúsítványa nem megbízható” hiba elhárítása – Power BI
-A Microsoft Power BI Android-mobilalkalmazásba való bejelentkezéskor a következő üzenet jelenhet meg: „A hitelesítés nem sikerült, mert a vállalati SSL-tanúsítványt nem megbízhatóként kezeli ez az eszköz. Kérjük, lépjen kapcsolatba a vállalata rendszergazdájával.” 
+A Microsoft Power BI Android-mobilalkalmazásba való bejelentkezéskor a következő üzenet jelenhet meg: „A hitelesítés nem sikerült, mert a vállalati SSL-tanúsítványt nem megbízhatóként kezeli ez az eszköz. Lépjen kapcsolatba a vállalat rendszergazdájával.” 
 
 Az ilyenkor szükséges lépések általában az Android-eszköz operációs rendszerétől függenek, azonban a hibát néhány egyéb dolog is okozhatja.
 
