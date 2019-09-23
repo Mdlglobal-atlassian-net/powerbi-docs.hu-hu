@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.date: 08/29/2019
-ms.openlocfilehash: 0755b41fbeef1f62d2722e3529007dc4f8773634
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.date: 09/13/2019
+ms.openlocfilehash: d2c0ab82a3b262a975c461a4414ed7fd3b1bc060
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70186083"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075910"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása
 
@@ -23,7 +23,7 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 
 ## <a name="features-of-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás funkciói
 
-| Funkciók | Power BI jelentéskészítő kiszolgáló | A Power BI szolgáltatás | Megjegyzések |
+| Funkciók | Power BI jelentéskészítő kiszolgáló | Power BI szolgáltatás | Megjegyzések |
 |---------|---------|---------|---------|
 | Telepítés | Helyszíni vagy üzemeltetett felhőbeli | Felhőbeli | A Power BI jelentéskészítő kiszolgáló akkor helyezhető üzembe Azure-beli virtuális gépeken (üzemeltetett felhőbeli) ha licencelése a Power BI Premiummal történt |
 | Forrásadatok | Felhőbeli és/vagy helyszíni | Felhőbeli és/vagy helyszíni |  |
@@ -44,7 +44,7 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 | Oldalakra osztott jelentések | Igen | Igen | A prémium szintű kapacitásban előzetes verzióban [elérhetők a Power BI szolgáltatás lapszámozott jelentései](../paginated-reports-report-builder-power-bi.md) |
 | Power BI – mobilalkalmazások | Igen | Igen | [Power BI-mobilalkalmazások áttekintése](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | ArcGIS-térképek | Nem | Igen | [Esri ArcGIS-térképek a Power BI szolgáltatásban és a Power BI Desktopban](../visuals/power-bi-visualization-arcgis.md) |
-| E-mail-előfizetés Power BI-jelentésekre | Igen | Igen | [Feliratkozás és mások feliratkoztatása](../service-report-subscribe.md) egy jelentésre vagy irányítópultra a Power BI szolgáltatásban |
+| E-mail-előfizetés Power BI-jelentésekre | Nem | Igen | [Feliratkozás és mások feliratkoztatása](../service-report-subscribe.md) egy jelentésre vagy irányítópultra a Power BI szolgáltatásban |
 | E-mail-előfizetés többoldalas jelentésekre | Igen | Igen | [Feliratkozás és mások feliratkoztatása többoldalas jelentésre a Power BI szolgáltatásban](../paginated-reports-subscriptions.md)<br><br>[E-mail-kézbesítés a Reporting Servicesben](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  |
 | Adatriasztások | Nem | Igen | [Adatriasztások](../service-set-data-alerts.md) a Power BI szolgáltatásban
 | Sorszintű biztonság (RLS) | Igen | Igen | Elérhető DirectQuery- (adatforrással) és Import-módban is <br><br>Sorszintű biztonság (RLS) a [Power BI szolgáltatásban](../service-admin-rls.md) <br><br>Sorszintű biztonság (RLS) a [Power BI jelentéskészítő kiszolgálóban](row-level-security-report-server.md) |
@@ -57,4 +57,4 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 
 ## <a name="next-steps"></a>Következő lépések
 
-[A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
+[A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)

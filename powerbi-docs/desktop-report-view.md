@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 153a77cdc7d4749ac450378723d04c82ef938de6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c76dfc45437fdc2406c89e41a4a076d9ef4e7a44
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514607"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142169"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Jelentés nézet a Power BI Desktopban
 Ha már dolgozott a Power BI-jal, tudja, milyen egyszerűen hozhatók létre dinamikus perspektívákat és adatelemzést biztosító jelentések. A Power BI speciális funkciókat tesz elérhetővé a Power BI Desktopban. A Power BI Desktoppal többek között létrehozhat összetett lekérdezéseket, egyesíthet különböző forrásokból származó adatokat és kapcsolatot hozhat létre táblák között.
@@ -61,9 +61,11 @@ Egy vizualizáció egyszerűen kimásolható egy Power BI Desktop-jelentésből,
 
 A vizualizációk másolásának és beillesztésének lehetősége azok számára hasznos, akik rendszeresen készítenek és frissítenek több jelentést. A fájlok közötti másoláskor a Formázás panelen explicit módon megadott beállítások és formázások is másolva lesznek, a témára vagy alapértelmezett beállításokra épülő vizuális elemek pedig automatikusan a céljelentés témájának megfelelően lesznek frissítve. Ha tehát egy vizualizációt már megformázott a kívánt módon, átmásolhatja az újabb jelentésekbe, és a formázásba fektetett munka nem vész kárba.
 
-![Hiba vizualizáció másolásakor/beillesztésekor – hiányzó adatmező](media/desktop-report-view/report-view_05.png)
+Ha a modellben lévő mezők eltérnek, akkor a vizualizáción hibajelzés jelenik meg, és egy figyelmeztetés tájékoztatja a hiányzó mezőkről. Ez a hiba ahhoz hasonló, amikor törlik a modellnek a vizualizáció által használt egyik mezőjét. 
 
-Ha a modellben lévő mezők eltérnek, akkor a vizualizáción hibajelzés jelenik meg, és egy figyelmeztetés tájékoztatja a hiányzó mezőkről. Ez a hiba ahhoz hasonló, amikor törlik a modellnek a vizualizáció által használt egyik mezőjét. A hiba javításához elég pótolni a hiányzó mezőket a használni kívánt mezőkkel az abban a jelentésben lévő modellből, ahová a vizualizációt beillesztette. Ha egyéni vizualizációt használ, akkor ezt az egyéni vizualizációt is importálnia kell a céljelentésbe.
+![Hiba vizualizáció másolásakor/beillesztésekor – hiányzó adatmező](media/desktop-report-view/report-view_07.png)
+
+A hiba javításához elég pótolni a hiányzó mezőket a használni kívánt mezőkkel az abban a jelentésben lévő modellből, ahová a vizualizációt beillesztette. Ha egyéni vizualizációt használ, akkor ezt az egyéni vizualizációt is importálnia kell a céljelentésbe.
 
 
 

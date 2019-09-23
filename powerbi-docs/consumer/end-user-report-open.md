@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
 ms.openlocfilehash: 2a4c9044f661d9d5b822ba366c3a88c572136b35
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "70903838"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>A *felhasználóknak* készült Power BI szolgáltatásban jelentéseket tekinthet meg
