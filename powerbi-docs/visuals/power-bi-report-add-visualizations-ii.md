@@ -1,6 +1,6 @@
 ---
-title: 2. rész – Vizualizációk hozzáadása Power BI-jelentésekhez
-description: 2. rész – Vizualizációk hozzáadása Power BI-jelentésekhez
+title: 2\. rész – Vizualizációk hozzáadása Power BI-jelentésekhez
+description: 2\. rész – Vizualizációk hozzáadása Power BI-jelentésekhez
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -12,12 +12,12 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: c42d96fea37a6309908dd357425c3d0504e18397
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61410188"
 ---
-# <a name="part-2-add-visualizations-to-a-power-bi-report"></a>2. rész – Vizualizációk hozzáadása Power BI-jelentésekhez
+# <a name="part-2-add-visualizations-to-a-power-bi-report"></a>2\. rész – Vizualizációk hozzáadása Power BI-jelentésekhez
 Az [1. részben](power-bi-report-add-visualizations-ii.md) alapszintű képi megjelenítéseket hozott létre a mezők neve melletti jelölőnégyzetek bejelölésével.  A 2. részben megtudhatja, hogyan hozhat létre és módosíthat képi megjelenítéseket az egér húzásával, valamint a **Mezők** és a **Képi megjelenítések** panelek nyújtotta lehetőségek teljes körű kiaknázásával.
 
 ### <a name="prerequisites"></a>Előfeltételek

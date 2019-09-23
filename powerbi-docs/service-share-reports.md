@@ -1,6 +1,6 @@
 ---
-title: Szűrheti a jelentéseket, és megoszthatja munkatársaival – Power bi-ban
-description: Tudnivalók arról, hogyan szűrheti a Power BI-jelentéseket, és hogyan oszthatja meg azokat munkatársaival a szervezetnél.
+title: Két mód egy szűrt Power BI-jelentés megosztására
+description: Két módszert sajátíthat el a Power BI-jelentések szűrésére, és azok megosztására munkatársaival a vállalatánál.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
@@ -8,62 +8,72 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/24/2019
+ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5f3808884e63521ec1dd775d876f1cf707bbe56b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c5bc8b32ae61870b794875c1d1720cd07dcf97f8
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770681"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877716"
 ---
-# <a name="filter-a-power-bi-report-and-share-it-with-coworkers"></a>A Power BI-jelentés szűrése, és megoszthatja munkatársaival
-A *Megosztással* egyszerűen biztosíthatja néhány személy hozzáférését az irányítópultjaihoz és jelentéseihez. Mi történik olyankor, ha egy jelentésnek egy szűrt verzióját szeretné megosztani? Például egy olyan jelentést, amely csak egy adott város, év vagy értékesítő adatait jeleníti meg. Próbálja ki egy jelentés szűrés és megosztást vagy egy egyéni URL-cím létrehozása. A jelentés szűrt lesz, amikor a címzettek először megnyitják. Eltávolíthatják a szűrőt az URL-cím módosításával. 
+# <a name="two-ways-to-share-a-filtered-power-bi-report"></a>Két mód egy szűrt Power BI-jelentés megosztására
+A *Megosztással* egyszerűen biztosíthatja néhány személy hozzáférését az irányítópultjaihoz és jelentéseihez. Mi történik olyankor, ha egy jelentésnek egy szűrt verzióját szeretné megosztani? Például egy olyan jelentést, amely csak egy adott város, év vagy értékesítő adatait jeleníti meg. Próbáljon meg szűrni egy jelentést, majd ossza meg azt, vagy hozzon létre egyéni URL-címet. A jelentés már szűrve van, amikor a címzettek először megnyitják. Eltávolíthatják a szűrőt az URL-cím módosításával. 
 
-A Power BI-ban [többféle módon valósítható meg a jelentések közös használata és terjesztése](service-how-to-collaborate-distribute-dashboards-reports.md). A megosztáshoz Önnek és az összes címzetteknek is [Power BI Pro-licencre](service-features-license-type.md) van szüksége, vagy pedig a tartalomnak kell egy [Prémium-kapacitásban](service-premium-what-is.md) lennie. 
+![Jelentés szűrve](media/service-share-reports/power-bi-share-filter-pane-report.png)
 
-## <a name="two-ways-to-filter-a-report"></a>Két különböző módon szűrheti a jelentéseket
+A Power BI-ban [több más módon is megvalósítható a jelentések közös használata és terjesztése](service-how-to-collaborate-distribute-dashboards-reports.md). A megosztáshoz Önnek és az összes címzetteknek is [Power BI Pro-licencre](service-features-license-type.md) van szüksége, vagy pedig a tartalomnak kell egy [Prémium-kapacitásban](service-premium-what-is.md) lennie. 
 
-### <a name="set-a-filter"></a>Egy szűrő beállítása
+## <a name="two-ways-to-filter-a-report"></a>Két módszer jelentés szűrésére
 
-Nyissa meg a jelentést [Szerkesztő nézetben](consumer/end-user-reading-view.md), alkalmazza a szűrőt, majd mentse a jelentést.
-   
-Ebben a példában a [Kiskereskedelmi elemzési mintát](sample-tutorial-connect-to-the-samples.md) szűrjük, hogy csak azokat az értékeket mutassa, ahol a **Territory** (Terület) **NC** (Észak-Karolnia) értékű.
-   
-![Jelentés Szűrés ablaktáblája](media/service-share-reports/power-bi-filter-report2.png)
+Mindkét szűrési technikához az Értékesítési és marketing minta alkalmazássablont használjuk. Szeretné kipróbálni? Ön is telepítheti az [Értékesítési és marketing minta alkalmazássablont](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview).
 
-### <a name="create-a-filter-in-the-url"></a>Az URL-szűrő létrehozása
+### <a name="set-a-filter"></a>Szűrő beállítása
+
+Nyisson meg egy jelentést [Szerkesztés nézetben](consumer/end-user-reading-view.md), és alkalmazzon egy szűrőt.
+
+Ebben a példában az Értékesítési és marketing minta alkalmazássablon Folyó évi kategória oldalát fogjuk szűrni, hogy csak azokat az értékeket mutassa, ahol a **Régió** értéke **Central** (Középső). 
+ 
+![Jelentés Szűrés ablaktáblája](media/service-share-reports/power-bi-share-report-filter.png)
+
+Mentse a jelentést.
+
+### <a name="create-a-filter-in-the-url"></a>Szűrő létrehozása az URL-címben
+
+Ha a szűrőt a jelentésoldal URL-címének végéhez fűzi hozzá, a viselkedése kissé eltérő. A szűrt oldal ugyanúgy jelenik meg. A Power BI azonban a teljes jelentéshez hozzáadja a szűrőt, és eltávolítja a többi értéket a szűrőpanelről.  
 
 Adja hozzá a jelentésoldal URL-címéhez a következőt:
    
-?filter=*táblanév*/*mezőnév* eq *érték*
+    ?filter=*tablename*/*fieldname* eq *value*
    
-A mező típusa szám, datetime vagy karakterlánc kell lennie. A *táblanév* vagy *mezőnév* értékei nem tartalmazhatnak szóközt.
+A mezőnem szám, dátum és idő vagy sztring típusúnak kell lennie. A *táblanév* vagy *mezőnév* értékei nem tartalmazhatnak szóközt.
    
-A példánkban **Store** (Üzlet) a tábla neve, **Territory** (Terület) a mező neve, és **NC** (Észak-Karolnia) az érték, amelyre szűrni szeretnénk:
+A példánkban **Geo** (földrajzi hely) a tábla neve, **Region** (Régió) a mező neve, és **Central** (Középső) az érték, amelyre szűrni szeretnénk:
    
-?filter=Store/Territory eq 'NC'
-   
-![Szűrt jelentés URL-címe](media/service-share-reports/power-bi-filter-url3.png)
-   
-A böngésző ehhez még hozzáad néhány speciális karaktert a perjelek, szóközök és aposztrófok helyettesítésére, így az eredmény a következő lesz:
-   
-app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-xxxxxxxxxxxx/ReportSection2?filter=Store%252FTerritory%20eq%20%27NC%27
+    ?filter=Geo/Region eq 'Central'
 
-Tekintse meg a cikket [a jelentések szűrhetők az URL-cím lekérdezési karakterlánc paraméterei az](service-url-filters.md) sokkal részletesebben.
+A böngésző ehhez még hozzáad néhány speciális karaktert a perjelek, szóközök és aposztrófok helyettesítésére, így az eredmény a következőhöz hasonló lesz:
+   
+    app.powerbi.com/groups/xxxx/reports/xxxx/ReportSection4d00c3887644123e310e?filter=Geo~2FRegion%20eq%20'Central'
+
+![Jelentés URL-szűrővel](media/service-share-reports/power-bi-share-report-filter-url.png)
+
+Mentse a jelentést.
+
+A [Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával](service-url-filters.md) című cikk ezt sokkal részletesebben ismerteti.
 
 ## <a name="share-the-filtered-report"></a>A szűrt jelentés megosztása
 
-1. Ha Ön [megosztja a jelentést](service-share-dashboards.md), törölje a **e-mail-értesítés küldése a címzetteknek** jelölőnégyzetet.
+1. Amikor [megosztja a jelentést](service-share-dashboards.md), törölje az **Értesítés küldése a címzetteknek e-mailben** jelölőnégyzetet.
 
     ![Jelentés megosztásának párbeszédablaka](media/service-share-reports/power-bi-share-report-dialog.png)
 
 4. Küldje el a hivatkozást a korábban létrehozott szűrővel.
 
 ## <a name="next-steps"></a>Következő lépések
-* Visszajelzés küldene? Mondja el javaslatait a [Power BI-közösség webhelyén](https://community.powerbi.com/).
-* [Irányítópultok és jelentések közös használata és megosztása](service-how-to-collaborate-distribute-dashboards-reports.md)
+* [A munka megosztásának módjai a Power BI-ban](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Irányítópult megosztása](service-share-dashboards.md)
 * További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+* Visszajelzés küldene? Mondja el javaslatait a [Power BI-közösség webhelyén](https://community.powerbi.com/).
 

@@ -12,7 +12,7 @@ ms.custom: seodec18
 ms.date: 02/05/2019
 ms.openlocfilehash: bc6b9cf92966dd9e86e789169b9b8134dbfcb2ba
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61374319"
@@ -128,7 +128,7 @@ Ez a cikk a GitHubon, az [alkalmazás tulajdonában lévő adatok mintában](htt
 <add key="embedUrlBase" value="https://app.powerbi.cn" />
 ```
 
-## <a name="step-1---register-an-app-in-azure-ad"></a>1. lépés – alkalmazás regisztrálása az Azure AD-ben
+## <a name="step-1---register-an-app-in-azure-ad"></a>1\. lépés – alkalmazás regisztrálása az Azure AD-ben
 
 A REST API-hívások indításához az alkalmazásokat regisztrálja az Azure AD-ben. További információt az [Azure AD alkalmazás regisztrálása Power BI-tartalmak beágyazásához](register-app.md) eljárást ismertető cikkben talál. Mivel különböző országos felhőszolgáltatások léteznek, különböző URL-címek használatával regisztrálhatja alkalmazását.
 
@@ -144,7 +144,7 @@ A REST API-hívások indításához az alkalmazásokat regisztrálja az Azure AD
 
 Ha letöltötte az [ügyfelek számára végzett beágyazási mintát](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), használja a kapott **applicationId** azonosítót, hogy a minta hitelesítést végezhessen az Azure AD-ben. A minta konfigurálásához módosítsa az **applicationId** azonosítót a *web.config* fájlban.
 
-## <a name="step-2---get-an-access-token-from-azure-ad"></a>2. lépés – hozzáférési token lekérése az Azure AD-ből
+## <a name="step-2---get-an-access-token-from-azure-ad"></a>2\. lépés – hozzáférési token lekérése az Azure AD-ből
 
 Az alkalmazásban egy **hozzáférési tokent** kell beszereznie az Azure AD-ből, mielőtt hívásokat indíthatna a Power BI REST API-hoz. További információkért lásd [a felhasználók hitelesítésével és a Power BI-alkalmazáshoz Azure AD hozzáférési token beszerzésével](get-azuread-access-token.md) kapcsolatos cikket. Mivel különböző országos felhőszolgáltatások léteznek, különböző URL-címek használatával szerezheti be az alkalmazása hozzáférési jogkivonatát.
 
@@ -160,7 +160,7 @@ Az alkalmazásban egy **hozzáférési tokent** kell beszereznie az Azure AD-bő
 
 A **Controllers\HomeController.cs** fájlban lévő tartalomelem-feladatokban láthat példát ezekre a hozzáférési jogkivonatokra.
 
-## <a name="step-3---get-a-content-item"></a>3. lépés – tartalomelem lekérése
+## <a name="step-3---get-a-content-item"></a>3\. lépés – tartalomelem lekérése
 
 A Power BI-tartalom beágyazásához el kell végeznie néhány dolgot a megfelelő beágyazás biztosítása érdekében. Bár ezen lépések mindegyike elvégezhető közvetlenül a REST API-val, a mintaalkalmazás és az itt szereplő példák a .NET SDK-t használják.
 
@@ -304,7 +304,7 @@ var embedConfig = new TileEmbedConfig()
 };
 ```
 
-## <a name="step-4---load-an-item-using-javascript"></a>4. lépés – elem betöltése a JavaScript használatával
+## <a name="step-4---load-an-item-using-javascript"></a>4\. lépés – elem betöltése a JavaScript használatával
 
 A JavaScript használatával egy irányítópultot tölthet be egy div elembe a weboldalon. A minta EmbedConfig/TileEmbedConfig modellt használ egy irányítópult, csempe vagy jelentés nézeteivel együtt. A JavaScript API használatának teljes mintájáért használhatja a [Microsoft Power BI Embedded mintát](https://microsoft.github.io/PowerBI-JavaScript/demo).
 

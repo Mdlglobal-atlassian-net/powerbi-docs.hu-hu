@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: 9344a1a3dc4f682925da900cde8accfead783f88
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61272244"
@@ -94,7 +94,7 @@ Meglévő migrálási terv megnyitásához tegye a következőket.
 
 2. Válassza ki a migrálási fájlt, és kattintson a **Megnyitás** gombra.
 
-## <a name="step-1-analyze--plan-migration"></a>1. lépés: Migrálás elemzése és tervezése
+## <a name="step-1-analyze--plan-migration"></a>1\. lépés: Migrálás elemzése és tervezése
 
 A **Migrálás elemzése és tervezése** lapon áttekintheti az Azure-előfizetés erőforráscsoportjának aktuális tartalmát.
 
@@ -148,7 +148,7 @@ Amennyiben szeretné, jobb gombbal az egyes csoportokra kattintva közvetlenül 
 > [!NOTE]
 > A *csoportok* neve nem tartalmazhat szóközt és érvénytelen karaktereket.
 
-## <a name="step-2-download"></a>2. lépés: Letöltés
+## <a name="step-2-download"></a>2\. lépés: Letöltés
 
 A **Letöltés** lapon a jelentések listája és a társított metaadatok láthatók. Az exportálás állapota is látható az exportálás előző állapotával egyetemben.
 
@@ -165,7 +165,7 @@ Sikeres letöltés esetén a *Kész* állapot látható, amely azt jelzi, hogy a
 
 A letöltés befejeztével lépjen a **Csoportok létrehozása** lapra.
 
-## <a name="step-3-create-groups"></a>3. lépés: Csoportok létrehozása
+## <a name="step-3-create-groups"></a>3\. lépés: Csoportok létrehozása
 
 Miután letöltötte az elérhető jelentéseket, átléphet a **Csoportok létrehozása** lapra. Ez a lap hozza létre az alkalmazás-munkaterületeket a Power BI szolgáltatásban az összeállított migrálási terv alapján. Az alkalmazás-munkaterületek a **Migrálás elemzése és tervezése** szakasz **Feltöltés** lapján megadott név alatt jönnek létre.
 
@@ -185,7 +185,7 @@ Az alkalmazás-munkaterület létrejöttének ellenőrzéséhez jelentkezzen be 
 
 A munkaterület létrehozását követően továbbléphet a **Feltöltés** lapra.
 
-## <a name="step-4-upload"></a>4. lépés: Feltöltés
+## <a name="step-4-upload"></a>4\. lépés: Feltöltés
 
 A **Feltöltés** lapon töltheti fel a jelentéseket a Power BI szolgáltatásba. Itt a Letöltés lapon letöltött jelentések listája látható, valamint a célcsoport neve a migrálási tervnek megfelelően.
 

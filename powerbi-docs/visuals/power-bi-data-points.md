@@ -12,7 +12,7 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61276425"
@@ -153,7 +153,7 @@ A kartogram használhat statisztikákat vagy dinamikus korlátokat.
 - Kategóriák: Első 500
 - Adatsorok (ha X és Y is létezik): Első 20
 
-### <a name="table"></a>Tábla
+### <a name="table"></a>Táblázat
 - Értékek: Virtualizálás (adatablakok) egyszerre 500 sort tartalmazó ablakokkal
 
 ### <a name="tree-map-this-could-use-statistics-or-dynamic-limits"></a>Fatérkép (használhat statisztikákat vagy dinamikus korlátokat)

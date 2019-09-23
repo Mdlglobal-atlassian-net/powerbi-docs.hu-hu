@@ -11,7 +11,7 @@ ms.date: 10/22/2018
 ms.author: maggies
 ms.openlocfilehash: 9e3a45e7648fd38413c2d45582981bac5e91cd2a
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64770512"
@@ -25,7 +25,7 @@ A többoldalas jelentéseket a Power BI jelentéskészítő kiszolgáló webport
 
 Ha már hozott létre többoldalas jelentéseket a Jelentéskészítőben vagy a Jelentéstervezőben, akkor készen áll arra, hogy a Power BI jelentéskészítő kiszolgálóra is létrehozzon ilyen jelentéseket. Ha még nem hozott létre ilyeneket, akkor néhány gyors lépésben felkészülhet rá.
 
-## <a name="step-1-install-and-start-report-builder"></a>1. lépés: Töltse le és indítsa el a Jelentéskészítőt
+## <a name="step-1-install-and-start-report-builder"></a>1\. lépés: Töltse le és indítsa el a Jelentéskészítőt
 Lehet, hogy korábban már telepítette a Jelentéskészítőt, hogy jelentéseket hozzon létre egy SSRS-kiszolgálóra. Használhatja ugyanezt a verziójú Jelentéskészítőt arra is, hogy a Power BI jelentéskészítő kiszolgálóra hozzon létre jelentéseket. Ha még nem telepítette, akkor ezt egyszerűen megteheti.
 
 1. A Power BI jelentéskészítő kiszolgáló webportálján válassza az **New** (Új) > **Paginated Report** (Többoldalas jelentés) lehetőséget.
@@ -46,7 +46,7 @@ Lehet, hogy korábban már telepítette a Jelentéskészítőt, hogy jelentések
    
     A Diagram varázsló végigvezeti azokon a lépéseken, amelyekkel létrehozhat egy egyszerű diagramot egy jelentésben. Onnan már szinte korlátlan lehetőségei lesznek a jelentése testreszabására.
 
-## <a name="step-2-go-through-the-chart-wizard"></a>2. lépés: Haladjon végig a Diagram varázsló lépésein
+## <a name="step-2-go-through-the-chart-wizard"></a>2\. lépés: Haladjon végig a Diagram varázsló lépésein
 A Diagram varázsló végigvezeti azokon az alapvető lépéseken, amelyekkel létrehozhat egy vizualizációt egy jelentésben.
 
 A többoldalas jelentések sokféle adatforráshoz kapcsolódhatnak, a Microsoft SQL Servertől és a Microsoft Azure SQL Database-től kezdve egészen az Oracle-ig, a Hyperionig és egyéb adatforrásokig. További információk a [többoldalas jelentéseket támogató adatforrásokról](connect-data-sources.md).
@@ -66,7 +66,7 @@ A Diagram varázsló első lépése az **Adatkészlet kiválasztása**, ahol lé
     ![Diagram varázsló: Mezők elrendezése](media/quickstart-create-paginated-report/reportserver-paginated-arrange-fields.png)
 4. Válassza a **Tovább** > **Befejezés** lehetőséget.
 
-## <a name="step-3-design-your-report"></a>3. lépés: A jelentés megtervezése
+## <a name="step-3-design-your-report"></a>3\. lépés: A jelentés megtervezése
 Most már a Jelentéstervező nézetben van. Észreveheti, hogy az adatok csupán helyőrző adatok, nem az Ön saját adatai.
 
 ![Jelentéstervező nézet](media/quickstart-create-paginated-report/reportserver-paginated-preview-report.png)
@@ -82,7 +82,7 @@ Sok más típusú vizualizációt is felvehet, például mérőműszereket, táb
 
 ![A Jelentéskészítő tervező nézete](media/quickstart-create-paginated-report/reportserver-paginated-finished-design-report.png)
 
-## <a name="step-4-save-your-report-to-the-report-server"></a>4. lépés: Mentse a jelentést a jelentéskészítő kiszolgálón
+## <a name="step-4-save-your-report-to-the-report-server"></a>4\. lépés: Mentse a jelentést a jelentéskészítő kiszolgálón
 Ha elkészült a jelentése, mentse a Power BI jelentéskészítő kiszolgálóra.
 
 1. A **Fájl** menüben válassza a **Mentés másként** lehetőséget, majd mentse a jelentést a jelentéskészítő kiszolgálóra. 

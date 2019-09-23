@@ -13,7 +13,7 @@ ms.author: davidi
 LocalizationGroup: Connect to services
 ms.openlocfilehash: c0c1ea450a4b386644fd1c83e9831e993c2b8e5a
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61403868"
@@ -43,7 +43,7 @@ Az oktatóanyag elvégzéséhez az alábbiakra lesz szüksége:
 
 Ennek a szakasznak a lépéseit követve végezze el az oktatóanyag szövegelemzési részét.
 
-### <a name="step-1-apply-sentiment-scoring-in-power-bi-service"></a>1. lépés: Vélemények pontozása a Power BI szolgáltatásban
+### <a name="step-1-apply-sentiment-scoring-in-power-bi-service"></a>1\. lépés: Vélemények pontozása a Power BI szolgáltatásban
 
 Először lépjen a prémium szintű kapacitással rendelkező Power BI-munkaterületre, és hozzon létre egy új adatfolyamot a képernyő jobb felső részén található **Létrehozás** gombbal.
 
@@ -83,7 +83,7 @@ Ha végzett a transzformációkkal, módosítsa a lekérdezés nevét „Ügyfé
 
 A mentés és frissítés után az adatfolyam már használható Power BI-jelentésben is.
 
-### <a name="step-2-connect-from-power-bi-desktop"></a>2. lépés: Csatlakozás a Power BI Desktopból
+### <a name="step-2-connect-from-power-bi-desktop"></a>2\. lépés: Csatlakozás a Power BI Desktopból
 
 Nyissa meg a Power BI Desktopot. A Kezdőlap menüszalagon válassza az **Adatok lekérése** lehetőséget.
 

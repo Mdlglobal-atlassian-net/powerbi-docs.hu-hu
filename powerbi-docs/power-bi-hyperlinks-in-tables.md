@@ -1,6 +1,6 @@
 ---
-title: Hivatkozások táblázathoz adása
-description: A Power BI Desktop használatával hivatkozásokat hozhat létre. Ezeket a hivatkozásokat aztán a Power BI Desktop vagy a Power BI szolgáltatás segítségével adhatja hozzá a jelentések táblázataihoz és a mátrixokhoz.
+title: Hivatkozások (URL-címek) felvétele táblázatba
+description: Ez a témakör a hivatkozások (URL-címek) táblázatokba való felvételét mutatja be. Hivatkozásokat a Power BI Desktop használatával vehet fel táblázatba vagy mátrixba. Ezeket a hivatkozásokat aztán a Power BI Desktopban vagy a Power BI szolgáltatásban adhatja hozzá a jelentések táblázataihoz és a mátrixaihoz.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,23 +8,23 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/09/2019
+ms.date: 08/30/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 386c52908d54833e350a7b1a6d846f78c7b88c6d
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 58cb009e29c05ce318c5931fb418617e1ef63f4f
+ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721380"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70937066"
 ---
-# <a name="add-hyperlinks-to-a-table"></a>Hivatkozások táblázathoz adása
-Ez a témakör azt mutatja be, hogyan hozhatók létre hivatkozások a Power BI Desktopban. Ezeket a hivatkozásokat aztán a Power BI Desktop vagy a Power BI szolgáltatás segítségével adhatja hozzá a jelentések táblázataihoz és a mátrixokhoz. 
+# <a name="add-hyperlinks-urls-to-a-table"></a>Hivatkozások (URL-címek) felvétele táblázatba
+Ez a témakör a hivatkozások (URL-címek) táblázatokba való felvételét mutatja be. Hivatkozásokat a Power BI Desktop használatával vehet fel táblázatba vagy mátrixba. Ezeket a hivatkozásokat aztán a Power BI Desktopban vagy a Power BI szolgáltatásban adhatja hozzá a jelentések táblázataihoz és a mátrixaihoz. 
 
 ![Hivatkozásokat tartalmazó táblázat](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
 > [!NOTE]
-> A Power BI szolgáltatással menet közben hozhatja létre az [irányítópultok csempéin](service-dashboard-edit-tile.md) és az [irányítópultok szövegdobozaiban](service-dashboard-add-widget.md) lévő hivatkozásokat. A [jelentések szövegdobozaiban](service-add-hyperlink-to-text-box.md) lévő hivatkozásokat a Power BI szolgáltatással és a Power BI Desktoppal is létrehozhatja menet közben.
+> A Power BI szolgáltatásban menet közben hozhatja létre az [irányítópultok csempéin](service-dashboard-edit-tile.md) és az [irányítópultok szövegdobozaiban](service-dashboard-add-widget.md) lévő hivatkozásokat. A [jelentések szövegdobozaiban](service-add-hyperlink-to-text-box.md) lévő hivatkozásokat a Power BI szolgáltatásban és a Power BI Desktopban is létrehozhatja menet közben.
 > 
 
 ## <a name="to-create-a-hyperlink-in-a-table-or-matrix-using-power-bi-desktop"></a>Hivatkozás létrehozása táblázatban vagy mátrixban a Power BI Desktop segítségével
@@ -34,7 +34,7 @@ A táblázatokban és mátrixokban lévő hivatkozásokat csak a Power BI Deskto
 A hivatkozás felvételének menete attól függ, hogy importálta az adatokat, vagy a DirectQuery segítségével csatlakozott hozzájuk. Az alábbiakban mindkét eset leírása megtalálható.
 
 ### <a name="for-data-imported-into-power-bi"></a>Power BI-ba importált adatok
-1. Ha a hivatkozás még nem létezik mezőként az adatkészletben, vegye fel a Desktoppal [egyéni oszlopként](desktop-common-query-tasks.md).
+1. Ha a hivatkozás még nem létezik mezőként az adatkészletben, vegye fel a Power BI Desktoppal [egyéni oszlopként](desktop-common-query-tasks.md).
 2. Az Adatok nézetben válassza ki az oszlopot, és a **Modellezés** lapon válassza az **Adatkategória** legördülő menüt.
    
     ![Adatkategóriák legördülő listája](media/power-bi-hyperlinks-in-tables/pbi_data_category.png)
@@ -57,7 +57,7 @@ A hivatkozás felvételének menete attól függ, hogy importálta az adatokat, 
 
     ![URL-ikon bekapcsolása](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
 
-1. (Nem kötelező.) [A Desktopról származó jelentést közzéteheti a Power BI szolgáltatásban](guided-learning/publishingandsharing.yml?tutorial-step=2), és megnyithatja a Power BI szolgáltatáson belül. A hivatkozások itt is működni fognak.
+1. (Választható) [A Power BI Desktopból származó jelentést közzéteheti a Power BI szolgáltatásban](guided-learning/publishingandsharing.yml?tutorial-step=2), és megnyithatja a Power BI szolgáltatáson belül. A hivatkozások itt is működni fognak.
 
 ### <a name="for-data-connected-with-directquery"></a>DirectQuery segítségével csatlakoztatott adatok
 DirectQuery módban nem hozhat létre új oszlopot.  Az adatokban már meglévő URL-címeket viszont átalakíthatja hivatkozásokká.
@@ -65,7 +65,7 @@ DirectQuery módban nem hozhat létre új oszlopot.  Az adatokban már meglévő
 1. Jelentés nézetben hozzon létre egy táblázatot egy URL-címeket tartalmazó mezővel.
 2. Jelölje ki az oszlopot, majd a **Modellezés** lapon válassza az **Adatkategória** legördülő menüt.
 3. Kattintson a **Webes URL-cím** lehetőségre. A hivatkozások kék színnel, aláhúzva jelennek meg.
-4. (Nem kötelező.) [A Desktopról származó jelentést közzéteheti a Power BI szolgáltatásban](guided-learning/publishingandsharing.yml?tutorial-step=2), és megnyithatja a Power BI szolgáltatáson belül. A hivatkozások itt is működni fognak.
+4. (Választható) [A Power BI Desktopból származó jelentést közzéteheti a Power BI szolgáltatásban](guided-learning/publishingandsharing.yml?tutorial-step=2), és megnyithatja a Power BI szolgáltatáson belül. A hivatkozások itt is működni fognak.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-excel-power-pivot"></a>Hivatkozás létrehozása táblázatban vagy mátrixban az Excel Power Pivot használatával
 A Power BI táblázataihoz és mátrixaihoz úgy is hozzáadhatja a hivatkozásokat, hogy még azelőtt létrehozza őket az adatkészletben, hogy az adatkészletet importálná vagy csatlakoztatná a Power BI-ban. Ez a példa egy Excel-munkafüzetet használ.

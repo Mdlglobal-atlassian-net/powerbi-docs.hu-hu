@@ -1,8 +1,8 @@
 ---
 title: Ajánlott eljárások a Power BI teljesítményének javításához
 description: A cikkből megtudhatja, hogyan hozhat létre gyors és megbízható jelentéseket a Power BI-ban.
-author: MarkMcGeeAtAquent
-ms.author: kfile
+author: Bhavik-MSFT
+ms.author: bhmerc
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,16 +10,20 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: bddd653b5ac8b49a38a69ae79baf2f96824444ed
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 736c1ee1b1998ec7f991167352313a05061b3f3c
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665345"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841485"
 ---
 # <a name="power-bi-performance-best-practices"></a>Ajánlott eljárások a Power BI teljesítményének javításához
 
 A cikk azt mutatja be, hogyan hozhat létre gyors és megbízható jelentéseket a Power BI-ban.  
+
+## <a name="choose-an-appropriate-storage-mode-import-directquery"></a>Válassza ki a megfelelő tárolási módot: Importálás, DirectQuery
+
+Az esetek többségében az Importálás mód a legjobb választás, mivel ez kínálja a legnagyobb sebességet az oszlopos tárolással tömörített, memóriabeli helyi gyorsítótárazás kihasználásával. Az Importálás mód a DAX összes képességét is elérhetővé teszi. A DirectQuery (és összetett modellek) használatát akkor érdemes mérlegelni, ha a forrásadatok mennyisége túl nagy, és nem férnek el a Power BI-kapacitásban. A DirectQuery akkor is hasznos, ha egy jelentés minden egyes betöltésekor a legújabb adatokat kell lekérnie a forrásból. Ha ezek nem követelmények, és a felhasználóknak megfelel a naponta néhányszor vagy még ritkábban frissített adatok megtekintése (például egy vállalati adattárházból), akkor erősen ajánlott az Importálás használata. DirectQuery módban a felhasználók megkísérelhetik a jelentés frissítését anélkül hogy tudnák, pontosan ugyanazokat az adatokat kérik le a forrásból.      
 
 ## <a name="use-filters-to-limit-report-visuals-to-display-only-whats-needed"></a>Csak a szükséges adatok megjelenítése a jelentések vizualizációiban szűrők használatával 
 
@@ -57,7 +61,7 @@ A DirectQueryt és élő kapcsolatokat használó Power BI-jelentések üzembe h
 ## <a name="directquery-best-practices"></a>Ajánlott eljárások a DirectQuery használatához
 
 Az alábbi szakasz néhány olyan általános ajánlott eljárást ismertet, amelyek a DirectQuery segítségével való csatlakozásra vonatkoznak.
-  
+
 ### <a name="db-design-guidance"></a>Adatbázis-tervezési tanácsok
 
 - Ahol lehetséges, küldje le a számított oszlopokat és mértékeket a forrásnak. Minél közelebb van a forráshoz, annál nagyobb a teljesítménynövekedés esélye.

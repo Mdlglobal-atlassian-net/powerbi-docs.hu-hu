@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 73db8f9741685549042dbaf1172e57a55a26ab36
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: e5e67863888e5bd6d611ded7a58254fe693f4bb6
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654438"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841256"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>A Power BI-jelentésekben elérhető új szűrési felület
 
 A Power BI szűrői új funkciókkal és megjelenéssel rendelkeznek. Ha az új szűrőfelületet választja, a Szűrők panelt is formázhatja, hogy a megjelenése megegyezzen a jelentés többi részéével. A szűrőket zárolhatja, vagy akár el is rejtheti. Jelentés tervezésekor már egyáltalán nem jelenik meg a régi Szűrők panel a Vizualizációk panelen. A szűrők szerkesztését és formázását egyetlen Szűrők panelen végezheti. 
 
-![Új szűrőfunkciók](media/power-bi-report-filter/power-bi-filter-reading.png)
+![Új szűrőfunkciók](media/power-bi-report-filter/power-bi-filter-new-look.png)
 
-Jelentések tervezése során a következőket végezheti el az új, egyetlen Szűrők panelen:
+Jelentések tervezése során sok egyéb mellett a következőket végezheti el az új Szűrők panelen:
 
 - A szűrés alapjául szolgáló mezők felvétele és eltávolítása. 
 - A szűrő állapotának módosítása.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 67cd57a981f7c1fcab118652dc5424fa935ecd13
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: e77e61d00ac555c907a6d87ab0ffdeb8e21a5bd8
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654737"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841311"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Tárolási mód a Power BI Desktopban
 
@@ -42,6 +42,9 @@ A Power BI Desktop tárolási mód beállítása három kapcsolódó funkció eg
 * **Több a többhöz kapcsolatok**: Az *összetett modellekkel* a táblák között *több-a-többhöz kapcsolatok* hozhatók létre. A *több-a-többhöz kapcsolatokkal* kiküszöbölhető az egyedi értékek követelménye a táblákban. Ráadásul ez a korábbi áthidaló megoldásokat is szükségtelenné teszi, például új táblák bevezetését a kapcsolatok létrehozásához. További információk: [Több a többhöz kapcsolatok a Power BI Desktopban](desktop-many-to-many-relationships.md).
 
 * **Tárolási mód**: Mostantól megadható, hogy mely vizualizációk igényelnek a háttér-adatforrásokba irányuló lekérdezéseket. Azok a vizualizációk, amelyekhez nincs szükség lekérdezésre, importálva lesznek még akkor is, ha DirectQuery-alapúak. Ez a funkció segíti a teljesítmény javulását, és csökkenti a háttérrendszerek leterheltségét. Korábban még az egyszerű vizualizációk, például a szeletelők is kezdeményeztek a háttérbeli forrásokba irányuló lekérdezéseket. A tárolási módról további információt ebben a cikkben talál.
+
+> [!NOTE]
+> Az aktuális tárolási módot úgy tekintheti meg, hogy a **Modell** nézetet választja, kijelöli az érintett táblát, majd a **Tulajdonságok** panel **Speciális** területén megnézi a **Tárolási mód** értékét.
 
 ## <a name="use-the-storage-mode-property"></a>A tárolási mód tulajdonság használata
 

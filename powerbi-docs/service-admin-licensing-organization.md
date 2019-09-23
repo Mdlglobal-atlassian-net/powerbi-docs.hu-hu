@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/23/2019
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 003d179902ad3eeb5dc6dea841936a217a292d0c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 24cc798814e0c19de4f1dd4d0d6907fc7a0074a6
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65099831"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075404"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Szervezeti Power BI-licencelés
 
@@ -35,7 +35,7 @@ A Power BI Pro-licenceket a Microsoft Office 365-ön keresztül vagy egy hivatal
 
 A Power BI Pro-licenc lejárata után egy türelmi időszak biztosított. A mennyiségi licenc részeként megvásárolt licencekre a türelmi időszak 90 nap. Közvetlenül vásárolt licencre a türelmi időszak 30 nap.
 
-A Power BI Pro előfizetési életciklusa megegyezik az Office 365-ével. További információkért lásd: [mi történik az adatokkal és a hozzáférés, ha az Office 365 üzleti előfizetési befejeződik?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
+A Power BI Pro előfizetési életciklusa megegyezik az Office 365-ével. További információ: [Mi történik az adatokkal és a hozzáféréssel, amikor az Office 365 vállalati verzióra szóló előfizetés befejeződik?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ### <a name="power-bi-pro-trial-for-individuals"></a>A Power BI Pro próbaverziója egyéni felhasználóknak
 
@@ -125,7 +125,7 @@ Ha a korlátlan (ingyenes) Power BI-licenckészlet nem érhető el, és nem szer
 
 Rendszergazdaként engedélyezheti vagy letilthatja az egyéni felhasználók általi regisztrációt az Azure Active Directoryban (AAD). Ez a szakasz azt mutatja be, hogyan felügyelheti a regisztrációkat PowerShell-parancsokkal. Az Azure PowerShellről [az Azure PowerShell áttekintésében](/powershell/azure/overview) talál további információt.
 
-A regisztrációkat az AAD **AllowAdHocSubscriptions** beállítása szabályozza. A legtöbb bérlő esetén ez a beállítás *true* (igaz) értékre van állítva, vagyis engedélyezett. Ha a Power BI-t egy partneren keresztül szerezte be, elképzelhető, hogy *false* (hamis) érték van megadva, amely letiltja a regisztrációt. Ha a beállítást *true* értékről *false* értékre módosítja, a cég új felhasználói nem fognak tudni egyénileg regisztrálni. Azoknak a felhasználóknak a Power BI-licence, akik a beállítás módosítása előtt regisztráltak, továbbra is megmarad.
+A regisztrációkat az Azure AD **AllowAdHocSubscriptions** beállítása szabályozza. A legtöbb bérlő esetén ez a beállítás *true* (igaz) értékre van állítva, vagyis engedélyezett. Ha a Power BI-t egy partneren keresztül szerezte be, elképzelhető, hogy *false* (hamis) érték van megadva, amely letiltja a regisztrációt. Ha a beállítást *true* értékről *false* értékre módosítja, a cég új felhasználói nem fognak tudni egyénileg regisztrálni. Azoknak a felhasználóknak a Power BI-licence, akik a beállítás módosítása előtt regisztráltak, továbbra is megmarad. Lényeges, hogy a felhasználók *false* (hamis) beállítás esetén is bejelentkezhetnek Pro-próbaverzióra.
 
 1. Jelentkezzen be az Azure Active Directoryba az Office 365 hitelesítő adataival. Az alábbi PowerShell-szkript első sora bekéri a hitelesítő adatokat. A második sor csatlakozik az Azure Active Directoryhoz.
 
@@ -136,7 +136,7 @@ A regisztrációkat az AAD **AllowAdHocSubscriptions** beállítása szabályozz
 
    ![Azure Active Directory-bejelentkezés](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
-1. Miután bejelentkezett, a következő parancs futtatásával ellenőrizheti a bérlő aktuális konfigurációját. (Vegye figyelembe, hogy az alábbi "fl" használja az "l", nem a számot 1 betű.)
+1. Miután bejelentkezett, a következő parancs futtatásával ellenőrizheti a bérlő aktuális konfigurációját. (Fontos, hogy az alábbi „fl” a kis „l” betűt tartalmazza, nem az 1 számjegyet.)
 
     ```powershell
      Get-MsolCompanyInformation | fl AllowAdHocSubscriptions 

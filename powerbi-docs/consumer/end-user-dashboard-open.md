@@ -3,20 +3,19 @@ title: Power BI-irányítópult megtekintése
 description: Az irányítópultok a Power BI szolgáltatás központi funkciói. Ismerje meg, hogyan nyithatók meg és tekinthetők meg az irányítópultok.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cd0b680265d526ecf7adbf4db8c54b77535eadf8
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: b8d604b8872bae14bc2ffeeb16b56b1b3a98e056
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608461"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141379"
 ---
 # <a name="view-a-dashboard"></a>Irányítópult megtekintése
 A Power BI *felhasználói* sok időt töltenek irányítópultok tanulmányozásával. Az irányítópultok adott információkat jelenítenek meg alapul szolgáló jelentésekből vagy adathalmazokból. A Power BI-felhasználók pedig ezen információkat használják a nyomkövetéshez, monitorozáshoz, kérdések megválaszolásához, teszteléshez és egyéb műveletekhez az adatokon alapuló üzleti döntések meghozása érdekében.
@@ -39,7 +38,7 @@ A Power BI Pro az irányítópultok megosztásához és a megosztott irányító
 
 Irányítópultokat a bal oldali navigációs sáv összes tárolójában találhat. 
 
-![irányítópult ikon](media/end-user-dashboard-open/opendash.gif)
+![irányítópult ikon](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
 
 - **Kezdőlap** 
 - **Kedvencek** – ha [kedvencként állított be egy irányítópultot](end-user-favorite.md).

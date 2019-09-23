@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0bb8d796af5139cd89f4bdfa0a8da10603acb2ed
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 5385512e534d866a2474fd4e3def10f45d52a1a0
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530562"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903875"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Klasszikus munkaterületek létrehozása a Power BI-ban
 
@@ -23,53 +23,49 @@ A Power BI-ban létrehozhat *munkaterületeket*, amelyeken együttműködhet mun
 
 **Tudta?** A Power BI új munkaterületekkel szolgál, amelyek mostantól az alapértelmezett beállítás részét képezik. Az új munkaterületekről a [Munka szervezése az új munkaterületeken](service-new-workspaces.md) című cikkből tájékozódhat részletesen. 
 
-Amikor létrehoz egy klasszikus munkaterületet, egy mögöttes, társított Office 365-csoportot is létrehoz. A munkaterület felügyelete az Office 365-ben zajlik. A kollégákat hozzáadhatja tagként vagy rendszergazdaként ezekhez a munkaterületekhez. A munkaterületen együttműködhetnek az irányítópultokon, jelentéseken és más cikkeken, amelyeket a szélesebb közönség elé szeretne tárni. Az alkalmazás-munkaterületekhez adott tagoknak Power BI Pro-licencre van szüksége. 
+Amikor létrehoz egy klasszikus munkaterületet, egy mögöttes, társított Office 365-csoportot is létrehoz. A munkaterület felügyelete az Office 365-ben zajlik. A kollégákat hozzáadhatja tagként vagy rendszergazdaként ezekhez a munkaterületekhez. A munkaterületen együttműködhetnek az irányítópultokon, jelentéseken és más cikkeken, amelyeket a szélesebb közönség elé szeretne tárni. A munkaterületekhez adott tagoknak Power BI Pro-licencre van szüksége. 
 
-## <a name="video-apps-and-app-workspaces"></a>Videó: Alkalmazások és alkalmazás-munkaterületek
+## <a name="video-apps-and-workspaces"></a>Videó: Alkalmazások és munkaterületek
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-a-classic-app-workspace-based-on-an-office-365-group"></a>Klasszikus alkalmazás-munkaterület létrehozása egy Office 365-csoport alapján
+## <a name="create-a-classic-workspace-based-on-an-office-365-group"></a>Klasszikus munkaterület létrehozása Office 365-csoport alapján
 
-A létrehozott alkalmazás-munkaterületek Office 365-csoportokon alapulnak.
+Ha munkaterületet hoz létre, az egy Office 365-csoportra épül.
 
 [!INCLUDE [powerbi-service-create-app-workspace](./includes/powerbi-service-create-app-workspace.md)]
 
 Az első létrehozáskor akár egy órát is kell várnia, hogy a rendszer propagálja a munkaterületet az Office 365 szolgáltatásba. 
 
-### <a name="add-an-image-to-your-office-365-app-workspace-optional"></a>Kép hozzáadása az Office 365 alkalmazás-munkaterületéhez (nem kötelező)
+### <a name="add-an-image-to-your-office-365-workspace-optional"></a>Kép hozzáadása az Office 365-munkaterülethez (választható)
 A Power BI alapértelmezés szerint egy kis színes kört hoz létre az alkalmazáshoz, benne az alkalmazás kezdőbetűivel. Ha szeretné, ezt testreszabhatja egy képpel. A kép felvételéhez Exchange Online-licenc szükséges.
 
 1. Válassza a **Munkaterületek** elemet, a három pontot (...) a munkaterület neve mellett, majd a **Tagok** lehetőséget. 
    
-     ![Munkaterület tagjainak kiválasztása](media/service-create-distribute-apps/power-bi-apps-workspace-members.png)
+     ![Munkaterület tagjainak kiválasztása](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
     Megnyílik a munkaterülethez tartozó Office 365 Outlook-fiók egy új böngészőablakban.
-2. Ha a mutatót a bal felső területen lévő színes kör fölé viszi, az ceruza ikonná változik. Válassza ki.
+2. Válassza a **Szerkesztés** ikont (ceruza).
    
-     ![Office 365 ceruza ikon](media/service-create-distribute-apps/power-bi-apps-workspace-edit-image.png)
-3. Válassza ki újra a ceruzát, és keresse meg a használni kívánt képet.
+     ![Office 365 ceruza ikon](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
+3. Válassza a kamera képét, és keresse meg a használni kívánt képet.
    
-     ![A ceruza ismételt kiválasztása](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
+     ![A kamera kép kiválasztása](media/service-create-workspaces/power-bi-workspace-old-camera.png)
 
      A képek .png, .jpg és .bmp kiterjesztésű fájlok lehetnek. Méretük nagy, akár 3 MB is lehet. 
 
-4. Kattintson a **Mentés** gombra.
-   
-     ![Mentés kiválasztása](media/service-create-distribute-apps/power-bi-apps-workspace-save-image.png)
+4. Válassza az **OK**, majd a **Mentés** lehetőséget.
    
     A kép az Office 365 Outlook ablakban szereplő színes kör helyére kerül. 
    
-     ![Testreszabott kép](media/service-create-distribute-apps/power-bi-apps-workspace-image-in-office-365.png)
+     ![Testreszabott kép](media/service-create-workspaces/power-bi-workspace-old-new-image.png)
    
     Néhány percen belül megjelenik az alkalmazásban is a Power BI-ban.
-   
-     ![Testreszabott kép](media/service-create-distribute-apps/power-bi-apps-image.png)
 
-## <a name="add-content-to-your-app-workspace"></a>Tartalom hozzáadása az alkalmazás-munkaterülethez
+## <a name="add-content-to-your-workspace"></a>Tartalom munkaterülethez adása
 
-Az alkalmazás-munkaterület létrehozása után ideje feltölteni azt tartalommal. A tartalom hozzáadása úgy zajlik, mintha a Saját munkaterülethez adna hozzá tartalmat, azzal az eltéréssel, hogy mások is látják a munkaterületet, és használhatják is. A nagy különbség az, hogy amikor kész van, közzéteheti a tartalmakat alkalmazásként. Ha egy alkalmazás-munkaterület tartalomlistájában tekint meg tartalmat, az alkalmazás-munkaterület neve tulajdonosként lesz feltüntetve.
+Miután létrehozta a munkaterületet, tartalmat is adhat hozzá. A tartalom hozzáadása úgy zajlik, mintha a Saját munkaterülethez adna hozzá tartalmat, azzal az eltéréssel, hogy mások is látják a munkaterületet, és használhatják is. A nagy különbség az, hogy amikor kész van, közzéteheti a tartalmakat alkalmazásként. Amikor a tartalmat egy munkaterület tartalomlistájában tekinti meg, a munkaterület neve van tulajdonosként feltüntetve.
 
-### <a name="connect-to-third-party-services-in-app-workspaces"></a>Csatlakozás a külső szolgáltatásokhoz alkalmazás-munkaterületeken
+### <a name="connect-to-third-party-services-in-workspaces"></a>Csatlakozás külső szolgáltatásokhoz munkaterületeken
 
 Az alkalmazások a Power BI által támogatott összes külső szolgáltatással használhatók, így könnyen lekérheti az Ön által használt szolgáltatások, például a Microsoft Dynamics CRM, a Salesforce vagy a Google Analytics adatait. Szervezeti alkalmazások közzétételével eljuttathatja a szükséges adatokat a felhasználóihoz.
 
@@ -96,7 +92,7 @@ Az alkalmazások a vállalati tartalomcsomagokból fejlődtek ki. Ha már vannak
 * Terveink szerint a vállalati tartalomcsomagok idővel elavulttá válnak, ezért javasoljuk, hogy mostantól alkalmazásokat hozzon létre.  
 * Az új munkaterület felhasználói felületének előzetes verziójában megtesszük az első lépéseket a szervezeti tartalomcsomagok elavulttá tétele felé. Az előzetes verziós munkaterületekben nem hozhat létre és használhat ilyen tartalomcsomagokat.
 
-A kettő összehasonlításához tekintse meg a [Miben különböznek az új alkalmazás-munkaterületek a meglévőktől?](service-new-workspaces.md#how-the-new-workspaces-are-different) című cikket. 
+A kettő összehasonlításához olvassa el [az új és a meglévő munkaterületek eltéréseit](service-new-workspaces.md#how-the-new-workspaces-are-different) ismertető cikket. 
 
 ## <a name="next-steps"></a>Következő lépések
 * [Alkalmazások telepítése és használata a Power BI-ban](service-create-distribute-apps.md)

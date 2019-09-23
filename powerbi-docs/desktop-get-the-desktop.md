@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 8b92bd2917165cd6dc89e0c9f9a94e83d69f1c2a
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: e7a96186fe68ed0d70de7a502e81da4f24f4d802
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560849"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903583"
 ---
 # <a name="get-power-bi-desktop"></a>A Power BI Desktop beszerzése
 A **Power BI Desktop** segítségével az adatok megjelenítésére szolgáló speciális lekérdezések, modellek és jelentések állíthatók össze. A **Power BI Desktop** használatával adatmodelleket állíthat össze, jelentéseket hozhat létre és megoszthatja a munkáját a Power BI szolgáltatásba való közzététellel.  A **Power BI Desktop** ingyenesen letölthető.
@@ -40,9 +40,9 @@ Vagy a következő letöltési oldalról is letöltheti a Power BI Desktop legfr
 
 A választott letöltési módszertől függetlenül a **Power BI Desktop** letöltése után a rendszer a telepítőfájl futtatását kéri:
 
-![A Power BI Desktop telepítőfájljának futtatása](media/desktop-get-the-desktop/getpbid_3.png)
+![A Power BI Desktop telepítőfájljának futtatása](media/desktop-get-the-desktop/download-desktop-exe.png)
 
-A 2019. júliusi kiadástól kezdve a **Power BI Desktop** egyetlen .exe telepítőcsomagként szerezhető be, amely az összes támogatott nyelvet tartalmazza. Külön .exe-fájl tartozik a 32 bites és a 64 bites verzióhoz. Az .msi-csomagokat a 2019. szeptemberi kiadástól kezdve nem forgalmazzuk. Ezután a telepítést a végrehajtható .exe használatával kell elvégeznie. Ez sokkal egyszerűbbé és kényelmesebbé teszi a terjesztést, a frissítéseket és a telepítést (elsősorban a rendszergazdák számára). A telepítési folyamatot testre is szabhatja parancssori paraméterek használatával, a cikk egy későbbi, [parancssori beállítások használata a telepítés során](#using-command-line-options-during-installation) című szakaszában leírtak szerint.
+A 2019. júliusi kiadástól kezdve a **Power BI Desktop** egyetlen .exe telepítőcsomagként szerezhető be, amely az összes támogatott nyelvet tartalmazza. Külön .exe-fájl tartozik a 32 bites és a 64 bites verzióhoz. Az .msi-csomagokat a 2019. szeptemberi kiadástól kezdve kivontuk, így a telepítéshez a végrehajtható .exe szükséges. Ez sokkal egyszerűbbé és kényelmesebbé teszi a terjesztést, a frissítéseket és a telepítést (elsősorban a rendszergazdák számára). A telepítési folyamatot testre is szabhatja parancssori paraméterek használatával, a cikk egy későbbi, [parancssori beállítások használata a telepítés során](#using-command-line-options-during-installation) című szakaszában leírtak szerint.
 
 A telepítőcsomag indítása után a **Power BI Desktop** alkalmazásként lesz telepítve, és az asztalon fut.
 
@@ -105,6 +105,27 @@ A következő lista a **Power BI Desktop** futtatásához szükséges minimális
 
 Mindig igyekszünk a lehető legjobb élményt biztosítani a Power BI Desktop felhasználóinak. Előfordulhat, hogy a Power BI Desktop használata során problémák merülnek fel, ezért ez a szakasz megoldásokat és javaslatokat kínál a különböző esetekre. 
 
+### <a name="installing-power-bi-desktop-on-remote-machines"></a>A Power BI Desktop telepítése távoli gépekre
+
+Ha olyan eszközzel telepíti a Power BI Desktopot a felhasználók számára, amely Windows telepítőfájlt (.msi-fájlt) igényel, kicsomagolhatja az .msi-fájlt a Power BI Desktop telepítő .exe-fájljából. Ehhez felhasználhat egy olyan külső eszközt, mint a WiX Toolset.
+
+> [!NOTE]
+> Mivel külső termék, a WiX Toolset beállítási lehetőségei előzetes értesítés nélkül változhatnak. Ellenőrizze a dokumentációban a legfrissebb információkat, segítségért pedig forduljon a vállalat felhasználói levelezési listájához.
+
+* Azon a számítógépen, amelyre letöltötte a Power BI Desktop telepítőjét, töltse le és telepítse a WiX Toolset legújabb verzióját a WiX https://wixtoolset.org/ címen található webhelyéről.
+* Nyisson meg rendszergazdaként egy parancssori ablakot, és lépjen ahhoz a mappához, amelybe a WiX Toolsetet telepítette.
+* Futtassa a következő parancsot: 
+    
+    ```Dark.exe <path to Power BI Desktop installer> -x <output folder>```
+
+    Futtassa például a következőt:
+
+    ``` Dark.exe C:\PBIDesktop_x64.exe -x C:\output```
+
+* A kimeneti mappa tartalmazni fog egy *AttachedContainer* nevű mappát, amelyben az .msi-fájlok találhatók.
+
+
+
 
 ### <a name="using-command-line-options-during-installation"></a>Parancssori beállítások használata a telepítés során 
 
@@ -122,6 +143,25 @@ A Power BI Desktop telepítésekor tulajdonságokat és beállításokat adhat m
 |-uninstall     |a Power BI Desktop eltávolítása         |
 |-repair     |a telepítés javítása (vagy telepítés, ha jelenleg nincs telepítve)         |
 |-package, -update     |a Power BI Desktop telepítése (alapértelmezés, ha nincs megadva az -uninstall vagy a -repair kapcsoló)         |
+
+Használhatja az alábbi **szintaktikai paramétereket** is, amelyeket a „TULAJDONSÁG=ÉRTÉK” szintaxissal adhat meg:
+
+
+|Paraméter  |Értelmezés  |
+|---------|---------|
+|ACCEPT_EULA     |Az 1 értéket kell megadni a végfelhasználói licencszerződés automatikus elfogadásához         |
+|ENABLECXP     |Az 1 értéke regisztrál a felhasználói élmény programba, amely a termék használatáról rögzít telemetriai adatokat         |
+|INSTALLDESKTOPSHORTCUT     |Az 1 érték parancsikont vesz fel az asztalra         |
+|INSTALLLOCATION     |A kívánt telepítési útvonal         |
+|LANGUAGE     |Területi beállításkód, például en-US, de-DE, pr-BR, hu-HU, az alkalmazás alapértelmezett nyelvének kikényszerítéséhez. Ha nincs nyelv megadva, a Power BI Desktop a Windows operációs rendszer nyelvét jeleníti meg. Ezt a felhasználó a Beállítások párbeszédpanelen módosíthatja.         |
+|REG_SHOWLEADGENDIALOG     |A 0 érték letiltja annak a párbeszédpanelnek a megjelenítését, amely a Power BI Desktopba való bejelentkezés előtt jelenne meg         |
+
+
+
+
+Futtathatja például a következő szintaxissal, hogy a telepítést felhasználói felület nélkül, német nyelv használatával végezze el: 
+
+```“-quiet LANG=de-DE ACCEPT_EULA=1”```
 
 
 ### <a name="issues-when-using-previous-releases-of-power-bi-desktop"></a>Problémák a Power BI Desktop előző kiadásainak használata során

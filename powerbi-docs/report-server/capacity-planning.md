@@ -11,7 +11,7 @@ ms.date: 3/5/2018
 ms.author: pashah
 ms.openlocfilehash: c479b2600dad31756101c57ba2b1c5fc7fa19b2f
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "60976743"
@@ -111,7 +111,7 @@ A futtatott terheléstesztekben a CPU volt a leginkább kihasznált erőforrás 
 A jelen dokumentumban ismertetett eredmények adott adatkészletet használó adott jelentések adott módon ismételt végrehajtásából származnak. Hasznos hivatkozási pontként szolgálnak, de vegye figyelembe, hogy a használat függ a jelentésektől, a lekérdezésektől, a használati mintáktól és a Power BI jelentéskészítő kiszolgáló üzemelő példányától is.
 
 ## <a name="appendix"></a>Függelék
-### <a name="1-topology"></a>1. Topológia
+### <a name="1-topology"></a>1\. Topológia
 **1.1. A Power BI jelentéskészítő kiszolgáló topológiája**
 
 Annak céljából, hogy a különböző konfigurációkban kizárólag a Power BI jelentéskészítő kiszolgáló viselkedését tudjuk vizsgálni, az egyes típusú gépek VM-konfigurációja rögzített volt (kivéve a Power BI jelentéskészítő kiszolgálót üzemeltető gépet). Mindegyik gép üzembe helyezése a második generációs (v2), Premium Storage-lemezekkel felszerelt, D sorozatú gépeknek megfelelően történt. Az egyes virtuálisgép-méretekről részletes információkat találhat a https://azure.microsoft.com/pricing/details/virtual-machines/windows/ weblap általános célú felhasználást ismertető szakaszában.
@@ -131,10 +131,10 @@ Különböző konfigurációjú processzorokat és memóriát használtunk a Pow
 | **Power BI jelentéskészítő kiszolgáló (kicsi)** |8 mag |32 GB |Standard_D8S_v3 |
 | **Power BI jelentéskészítő kiszolgáló (nagy)** |16 mag |64 GB |vStandard_D16S_v3 |
 
-### <a name="2-run-the-loadtest-tool"></a>2. A LoadTest eszköz futtatása
+### <a name="2-run-the-loadtest-tool"></a>2\. A LoadTest eszköz futtatása
 Ha szeretné futtatni a Reporting Services LoadTest eszközt a saját vagy egy Microsoft Azure-beli Power BI jelentéskészítő kiszolgálón, kövesse az alábbi lépéseket.
 
-1. Klónozza a Reporting Services LoadTest nevű projektet a GitHubon (https://github.com/Microsoft/Reporting-Services-LoadTest)).
+1. Klónozza a Reporting Services LoadTest nevű projektet a GitHubon (https://github.com/Microsoft/Reporting-Services-LoadTest) ).
 2. A projekt könyvtárában található egy RSLoadTests.sln nevű megoldásfájl. Nyissa meg ezt a fájlt a Visual Studio 2015-ös vagy újabb verziójában.
 3. Döntse el, hogy az eszközt a Power BI jelentéskészítő kiszolgáló saját üzemelő példányán vagy egy Microsoft Azure-beli Power BI jelentéskészítő kiszolgálón kívánja-e futtatni. Ha saját üzemelő példányon szeretné futtatni, ugorjon az 5. lépésre.
 4. Hozzon létre egy Power BI jelentéskészítő kiszolgálói környezetet az Azure-ban a https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure lap utasításait követve.

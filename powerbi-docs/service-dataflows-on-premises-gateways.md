@@ -10,22 +10,19 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 82c8bbb5361730b306cacd14dc9598ca12035027
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 81dfc6961ff0c00b609f98e50da3532a230cf26d
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61136169"
 ---
-# <a name="using-dataflows-with-on-premises-data-sources-preview"></a>Adatfolyamok használata helyszíni adatforrásokkal (előzetes verzió)
+# <a name="using-dataflows-with-on-premises-data-sources"></a>Adatfolyamok használata helyszíni adatforrásokkal
 
 Az **adatfolyamokkal** létrehozhat adatgyűjteményt többféle forrásból, kitisztíthatja és átalakíthatja az adatokat, majd betöltheti a Power BI-tárba. Adatfolyam létrehozásakor érdemes lehet helyszíni adatforrásokat használni. Ez a cikk tisztázz az adatfolyamok létrehozásával kapcsolatos követelményeket és a **vállalati átjáró** konfigurálásának módját a kapcsolatok engedélyezéséhez.
 
 ![Adatfolyamok és átjárók](media/service-dataflows-onpremises-gateways/onpremises-gateways_01.png)
 
-> [!NOTE]
-> Az adatfolyamok funkció előzetes verzióban áll rendelkezésre, és az általánosan elérhetővé válás előtt módosulhat és frissülhet.
- 
 ## <a name="configuring-an-enterprise-gateway-for-use-with-dataflows"></a>Vállalati átjáró konfigurálása az adatfolyamokkal való használatra
 
 Helyszíni adatforrás adatfolyamban való használatához az adatfolyamot létrehozó minden felhasználónak rendelkeznie kell egy telepített és konfigurált **vállalati átjáróval**. Az adatfolyamot létrehozó felhasználónak a vállalati átjáró rendszergazdájának kell lennie annak érdekében, hogy ezt az átjárót használja az adatfolyamhoz.
@@ -80,8 +77,8 @@ Ennek a cikknek az elolvasásával helyszíni adatforrás adatfolyamokhoz való 
 
 * [Önkiszolgáló adatelőkészítés adatfolyamokkal](service-dataflows-overview.md)
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
-* [Számított entitások használata a Power BI Premiumban (előzetes verzió)](service-dataflows-computed-entities-premium.md)
-* [Fejlesztői erőforrások a Power BI-adatfolyamokhoz (előzetes verzió)](service-dataflows-developer-resources.md)
+* [Számított entitások használata a Power BI Premiumban](service-dataflows-computed-entities-premium.md)
+* [Fejlesztői erőforrások Power BI-adatfolyamokhoz](service-dataflows-developer-resources.md)
 
 A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)

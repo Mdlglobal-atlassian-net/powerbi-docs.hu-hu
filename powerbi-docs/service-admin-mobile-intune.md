@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: d28a27d69d6e8799f08ddaa05e734ded62150c8f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b1af8c58e24ff1d95b28ea8a024c29ccdcac56b3
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710944"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075619"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Mobilalkalmazások konfigurálása a Microsoft Intune-nal
 
@@ -30,7 +30,7 @@ A Microsoft Intune létezhet egyidejűleg az Office 365 mobileszköz-kezelési (
 > [!NOTE]
 > Az Intune konfigurálása után a háttéradatok frissítése ki lesz kapcsolva a Power BI mobilalkalmazásban az iOS vagy Android rendszerű eszközön. A Power BI a weben futó Power BI szolgáltatásból frissíti az adatokat, amikor belép az alkalmazásba.
 
-## <a name="step-1-get-the-url-for-the-application"></a>1. lépés: Az URL-cím lekérése az alkalmazáshoz
+## <a name="step-1-get-the-url-for-the-application"></a>1\. lépés: Az URL-cím lekérése az alkalmazáshoz
 
 Az alkalmazás Intune-beli létrehozása előtt le kell kérni az alkalmazások URL-címét. iOS rendszer esetén ezt az iTunes-ból, Android rendszernél a Power BI Mobile oldaláról szerezheti be.
 
@@ -56,7 +56,7 @@ Az alábbihoz hasonlóan kell kinéznie: *https://itunes.apple.com/us/app/micros
 
 A Google Play Áruház URL-címét a [Power BI Mobile oldaláról](https://powerbi.microsoft.com/mobile/) szerezheti be. A **Download from Google Play** (Letöltés a Google Play Áruházból) ikonra kattintva léphet az alkalmazás lapjára. A böngésző címsorából másolhatja az URL-címet. Az alábbihoz hasonlóan kell kinéznie: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim* .
 
-## <a name="step-2-create-a-mobile-application-management-policy"></a>2. lépés: Mobilalkalmazás-felügyeleti szabályzat létrehozása
+## <a name="step-2-create-a-mobile-application-management-policy"></a>2\. lépés: Mobilalkalmazás-felügyeleti szabályzat létrehozása
 
 A mobilalkalmazás-felügyeleti szabályzattal kényszerítheti például a hozzáférési kód megadását. Az Intune-portálon hozhat létre egyet.
 
@@ -72,7 +72,7 @@ Az alkalmazás vagy a szabályzat létrehozásával egyaránt kezdheti. A hozzá
 
 1. A szabályzat szerkesztésével a konfigurálhatja az alkalmazásra vonatkozó kívánt korlátozásokat.
 
-## <a name="step-3-create-the-application"></a>3. lépés: Az alkalmazás létrehozása
+## <a name="step-3-create-the-application"></a>3\. lépés: Az alkalmazás létrehozása
 
 Az alkalmazás egy, az Intune-ban üzembe helyezés céljából mentett hivatkozás vagy csomag. Létre kell hoznia egy alkalmazást és egy hivatkozást az alkalmazás URL-címére, amelyet az iTunes vagy Google Play Áruházból szerzett be.
 
@@ -116,7 +116,7 @@ Az alkalmazás vagy a szabályzat létrehozásával egyaránt kezdheti. A hozzá
 
     ![Alkalmazások lap](media/service-admin-mobile-intune/intune-add-software-android2.png)
 
-## <a name="step-4-deploy-the-application"></a>4. lépés: Az alkalmazás üzembe helyezése
+## <a name="step-4-deploy-the-application"></a>4\. lépés: Az alkalmazás üzembe helyezése
 
 Miután hozzáadta az alkalmazást, üzembe kell helyeznie azt, hogy a végfelhasználók elérhessék. Ebben a lépésben a létrehozott szabályzatot az alkalmazáshoz fogja kötni.
 
@@ -159,7 +159,7 @@ Miután telepítette az alkalmazást, mellette az **Igen** feliratnak kell megje
 
 Miután telepítette az alkalmazást, mellette az **Igen** feliratnak kell megjelennie az alkalmazások lapján.
 
-## <a name="step-5-install-the-application-on-a-device"></a>5. lépés: Az alkalmazás telepítése egy eszközön
+## <a name="step-5-install-the-application-on-a-device"></a>5\. lépés: Az alkalmazás telepítése egy eszközön
 
 Az alkalmazást a *Céges portál* alkalmazáson keresztül fogja telepíteni. Ha még nem telepítette a Céges portált, beszerezheti azt az iOS vagy az Android platform alkalmazásáruházából. A Céges portálra a munkahelyi bejelentkezési adataival jelentkezzen be.
 

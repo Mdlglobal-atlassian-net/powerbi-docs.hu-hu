@@ -5,19 +5,19 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 04/04/2019
+ms.date: 09/10/2019
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: bbd1f47b2d798e662f84f009b3260a11d39cb23d
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: 1e64237490e45cfcf9a9a0102f3e03ecab138ce2
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67534645"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903943"
 ---
-1. Kezdjük a munkaterület létrehozásával. Válassza a **Munkaterületek** > **Alkalmazás munkaterületének létrehozása** lehetőséget. 
+1. Kezdjük a munkaterület létrehozásával. Válassza a **Munkaterületek** > **Munkaterület létrehozása** lehetőséget. 
    
-     ![Alkalmazás munkaterületének létrehozása](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
+     ![Munkaterület létrehozása](media/powerbi-service-create-app-workspace/power-bi-workspace-create.png)
    
     Erre a területre kerülnek majd azok a tartalmak, amelyeken Ön és munkatársai együtt dolgoznak.
 
@@ -55,5 +55,5 @@ ms.locfileid: "67534645"
 
 A Power BI létrehozza és megnyitja a munkaterületet. Ekkor megjelenik az olyan munkaterületek listájában, amelyeknek Ön a tagja. Mivel adminisztrátori jogosultsággal rendelkezik, a három pontra (...) kattintva visszaléphet, és szerkesztheti a munkaterületet, például új tagokat adhat hozzá vagy módosíthatja a tagok jogosultságait.
 
-![Munkaterület szerkesztése](media/powerbi-service-create-app-workspace/power-bi-apps-edit-workspace-ellipsis.png)
+![Munkaterület szerkesztése](media/powerbi-service-create-app-workspace/power-bi-workspace-old-settings.png)
 

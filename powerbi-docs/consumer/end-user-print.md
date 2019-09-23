@@ -5,19 +5,18 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/13/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 02aed3d69ee5d6ce344138a57853bd0b2a06036b
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 4e211677026d66b89631063cf07e38ce1e46ee10
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608516"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100205"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Nyomtatás a Power BI szolgáltatásból
 Útmutató teljes irányítópultok, irányítópult-csempék, jelentésoldalak, jelentés-vizualizációk Power BI-ból történő nyomtatásához. A jelentésekből alkalmanként csak egy oldal nyomatható ki, a teljes jelentést nem lehet egyszerre kinyomtatni.
@@ -34,7 +33,7 @@ ms.locfileid: "65608516"
    
 
    
-    ![nyomtatási párbeszédpanel](./media/end-user-print/pbi_print_dash_new2.png)
+    ![nyomtatási párbeszédpanel](./media/end-user-print/power-bi-print-dash.png)
 
 ## <a name="print-a-dashboard-tile"></a>Irányítópult-csempe nyomtatása
 1. A felső menüsáv teljes képernyő ikonjára ![teljes képernyő ikon](./media/end-user-print/power-bi-full-screen-icon.png) kattintva nyissa meg az irányítópultot [teljes képernyős módban](end-user-focus.md).

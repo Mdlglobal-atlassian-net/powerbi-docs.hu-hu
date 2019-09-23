@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/26/2019
+ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 531cb34379c984a26e983db7acfc9b4deebf68b9
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: d491ca460d8393e9da308c826e69aad454d0e766
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590443"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841632"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI az USA kormányzati ügyfelei számára
 A **Power BI szolgáltatás** külön verziója érhető el az USA kormányzati ügyfeleinek az **egyesült államokbeli Office 365-közösségi** előfizetések részeként. A jelen cikkben a **Power BI szolgáltatás** kifejezetten az USA kormányzati ügyfeleinek készült verzióját tárgyaljuk, amely elkülönül és különbözik a **Power BI szolgáltatás** kereskedelmi verziójától.
@@ -48,7 +48,7 @@ Az Azure több felhő között elosztva működik. Alapértelmezés szerint a b�
 * USGov Texas
 * USGov Arizona
 
-A nyilvános felhőben elérhetők az IP-tartományok. A kormányzati felhővel kapcsolatos legfrissebb információkért hivatkozzon a letölthető [Azure kormányzati szolgáltatás dokumentációjára](https://www.microsoft.com/download/details.aspx?id=57063).
+A nyilvános felhőben elérhetők az IP-tartományok. A kormányzati felhővel kapcsolatos legfrissebb információkat az [Azure kormányzati szolgáltatás letölthető dokumentációjában](https://www.microsoft.com/download/details.aspx?id=57063) találja meg.
 
 ## <a name="limitations-of-power-bi-us-government"></a>A Power BI US Government korlátozásai
 A **Power BI szolgáltatás** kereskedelmi verziójában elérhető egyes funkciók az USA kormányzati ügyfelek számára nyújtott **Power BI szolgáltatásban** *nem* elérhetők. A Power BI csapata folyamatosan dolgozik, hogy ezeket a funkciókat az USA kormányzati ügyfelek számára is elérhetővé tegye, és frissíteni fogja ezt a cikket, amikor a funkciók elérhetővé válnak.
@@ -85,13 +85,13 @@ A következő kérdéseket (és válaszokat) azért tesszük közzé, hogy gyors
 
 **Válasz:** A regisztráció (vagy más néven *előkészítés*) menete a meglévő licenctől és előfizetéstől függően változhat. További információt a [Regisztráció a Power BI US Governmentre](service-govus-signup.md) című cikkben talál.
 
-**Kérdés:** Eltér-e a **Power BI** US Government verziójához és a **Power BI** kereskedelmi verziójához való kapcsolódáshoz használt URL-cím?
+**Kérdés:** Eltér-e a **Power BI** US Government verziójához és a **Power BI** kereskedelmi verziójához való kapcsolódáshoz használt URL-cím? Más URL-cím tartozik a Kormányzati közösségi felhő High- (GCC High-) ügyfeleihez?
 
 **Válasz:** Igen, a két URL-cím eltér. A következő táblázatban az URL-címek láthatók:
 
-| Kereskedelmi verzió URL-címe | US Government verzió URL-címe |
-| --- | --- |
-| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
+| Kereskedelmi verzió URL-címe | US Government verzió URL-címe | US Government URL-cím GCC High-hoz |
+| --- | --- | --- |
+| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
 
 **Kérdés:** A fiókom egyszerre több országos felhőben is regisztrálva van. A **Power BI Desktop** használatakor hogyan tudom kiválasztani, hogy melyik felhőhöz szeretnék csatlakozni?
 

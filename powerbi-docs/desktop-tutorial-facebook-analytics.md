@@ -7,19 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/08/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f945c46d96bea4e0326c99f7fcb881f495ba560f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 73f5d629806826eed0da51f5b7158d884d1c8725
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513697"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841395"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Oktatóanyag: Facebook-elemzések a Power BI Desktop használatával
 
 Ez az oktatóanyag az adatok Facebookról való importálását és azok Power BI Desktopban való használatát ismerteti. Ön adatokhoz fog kapcsolódni, importálni fogja az adatokat a Power BI Facebook-oldaláról, átalakításokat fog végezni az importált adatokon, valamint jelentésbeli vizualizációkban fogja használni az adatokat.
+
+> [!WARNING]
+> A Facebook App engedélyekre vonatkozó megkötései miatt az összekötőnek az ebben a cikkben leírt képességei jelenleg nem működnek megfelelően. A Facebookkal közösen dolgozunk azon, hogy ez a funkció minél hamarabb helyreálljon.
+
 
 ## <a name="connect-to-a-facebook-page"></a>Kapcsolódás egy Facebook-oldalhoz
 

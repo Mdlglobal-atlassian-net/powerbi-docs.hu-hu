@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: reference
-ms.date: 05/08/2019
+ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4c522a9e6c40f4164ee82675c40c3110b174d017
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d3405a434c8b3add7bb39f20d5aa65e066e4b73d
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513946"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841318"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>A Power BI Desktop adatvédelmi szintjei
 A **Power BI Desktop** adatvédelmi szintjei egy elkülönítési szintet adnak meg, amely meghatározza, hogy az adott adatforrás milyen mértékben lesz elkülönítve a többi adatforrástól. A korlátozó elkülönítési szint azonban gátolja az adatforrások közötti információcserét, csökkentheti a funkcionalitást és hatással lehet a teljesítményre.
@@ -52,7 +52,7 @@ Az **Adatvédelmi szintek** egy olyan beállítás, amely alapértelmezés szeri
 | **Adatok összevonása forrásonként az adatvédelmiszint-beállításoknak megfelelően** (bekapcsolva, alapértelmezett beállítás) |Az adatvédelmi szintek beállításai az adatforrások közötti elkülönítés szintjének megállapítására használhatók az adatok összevonása során. |
 | **A teljesítmény lehetséges javítása az adatvédelmi szintek figyelmen kívül hagyásával** (kikapcsolva) |Az adatok összevonása során az adatvédelmi szintek nem lesznek figyelembe véve, ami az adatok teljesítményének és funkcionalitásának növekedésével járhat. |
 
-> **Biztonsági megjegyzés:** Ha engedélyezi az **Adatvédelmi szinteket** **A teljesítmény lehetséges javítása az adatvédelmi szintek figyelmen kívül hagyásával** az **Adatvédelmi szintek** párbeszédpanelen történő kiválasztásával együtt, arra jogosulatlan személyek számára is hozzáférhetővé teheti a bizalmas adatokat. Ne engedélyezze az **Adatvédelmi szinteket**, csak ha biztos abban, hogy az adatforrások nem tartalmaznak bizalmas vagy titkos adatokat.
+> **Biztonsági megjegyzés:** **A teljesítmény lehetséges javítása az adatvédelmi szintek figyelmen kívül hagyásával** beállításnak az **Adatvédelmi szintek** párbeszédpanelen történő kiválasztásával arra jogosulatlan személyek számára is hozzáférhetővé teheti a bizalmas adatokat. Ne kapcsolja *ki* ezt a beállítást, csak ha biztos abban, hogy az adatforrás nem tartalmaz bizalmas vagy titkos adatokat.
 > 
 > 
 

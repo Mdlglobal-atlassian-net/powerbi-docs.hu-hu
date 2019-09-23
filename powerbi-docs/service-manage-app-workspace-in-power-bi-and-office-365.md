@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/08/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 278d631e755c4d484db0788b6c58fca9cfce4616
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: 218124542570d313c3d5893a6f1d69c75594f33c
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68961954"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903781"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Az alkalmazás-munkaterület kezelése a Power BI-ban és az Office 365-ben
 
@@ -72,7 +72,7 @@ Egy alkalmazás-munkaterület jellemzőit közvetlenül az Office 365 Outlookban
 
 ### <a name="add-an-image-and-set-other-workspace-properties"></a>Kép felvétele és más munkaterület-tulajdonságok beállítása
 
-Amikor az alkalmazást az alkalmazás-munkaterületről terjeszti, az itt hozzáadott kép lesz az alkalmazás képe. Olvassa el az **Új munkaterületek létrehozása** című cikk [Kép hozzáadása az Office 365 alkalmazás-munkaterülethez (választható)](service-create-workspaces.md#add-an-image-to-your-office-365-app-workspace-optional) szakaszát.
+Amikor az alkalmazást az alkalmazás-munkaterületről terjeszti, az itt hozzáadott kép lesz az alkalmazás képe. Olvassa el az **Új munkaterületek létrehozása** című cikk [Kép hozzáadása az Office 365 alkalmazás-munkaterülethez](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional) szakaszát.
 
 1. Az alkalmazás-munkaterület Office 365 Outlook nézetében nyissa meg a **Névjegy** lapot és válassza a **Szerkesztés** lehetőséget.
 

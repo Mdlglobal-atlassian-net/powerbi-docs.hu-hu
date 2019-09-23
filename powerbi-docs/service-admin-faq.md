@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 6d0c4a2dba1dee1c8c40da8fd3371767915729da
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: c32f4b0a03ba751d5b8cbd6e98633275ece9222b
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490330"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877813"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>A Power BI felügyelete – gyakori kérdések (GYIK)
 
@@ -119,9 +119,9 @@ Get-MsolCompanyInformation | fl allow*
 
 ### <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>Hogyan gátolható meg, hogy a meglévő felhasználók elkezdjék használni a Power BI-t?
 
-A jelen **AllowAdHocSubscriptions** paramétert vezérlő Azure AD-beállítás. A legtöbb bérlő esetén ez igaz értékre van állítva, vagyis engedélyezett. Ha a Power BI-t egy partneren keresztül szerezte be, elképzelhető, hogy false (hamis) érték van megadva, amely letiltja a regisztrációt.
+A jelen **AllowAdHocSubscriptions** paramétert vezérlő Azure AD-beállítás. A legtöbb bérlő esetén ez *true* (igaz) értékre van állítva, vagyis engedélyezett. Ha a Power BI-t egy partneren keresztül szerezte be, elképzelhető, hogy *false* (hamis) érték van megadva, amely letiltja a regisztrációt.
 
-Az alkalmi előfizetések letiltásához használja a következő PowerShell-szkriptet. ([További információ a PowerShellről][1].)
+Az alkalmi előfizetések letiltásához használja a következő PowerShell-szkriptet. ([további információk a PowerShellről][1].)
 
 1. Jelentkezzen be az Azure Active Directoryba az Office 365 hitelesítő adataival. Az alábbi PowerShell-szkript első sora bekéri a hitelesítő adatokat. A második sor csatlakozik az Azure Active Directoryhoz.
 
@@ -145,7 +145,7 @@ Az alkalmi előfizetések letiltásához használja a következő PowerShell-szk
     ```
 
 > [!NOTE]
-> Az **AllowAdHocSubscriptions** jelzővel irányítható a vállalat számos felhasználói képessége, beleértve a felhasználók azon képességét, hogy regisztráljanak az Azure Rights Management szolgáltatásra. A jelölő módosítása az összes képességre hatással van.
+> Az **AllowAdHocSubscriptions** jelzővel irányítható a vállalat számos felhasználói képessége, beleértve a felhasználók azon képességét, hogy regisztráljanak az Azure Rights Management szolgáltatásra. A jelölő módosítása az összes képességre hatással van. A felhasználók *false* (hamis) beállítás esetén is bejelentkezhetnek Pro-próbaverzióra.
 
 ### <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>Hogyan engedélyezhető, hogy a meglévő felhasználók regisztráljanak a Power BI-ra?
 
