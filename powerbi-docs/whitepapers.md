@@ -9,24 +9,24 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2019
 ms.author: maggies
-ms.openlocfilehash: c0cc6b19e69ebe6400d25b77c15cf577d765c415
-ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
-ms.translationtype: HT
+ms.openlocfilehash: d1289a3e030f0a93c5c2ce3b68b7cf92c378a7e0
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "65201178"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194764"
 ---
 # <a name="whitepapers-for-power-bi"></a>Power BI-tanulmányok
 
 A tanulmányokkal behatóbban ismerheti meg a Power BI témaköreit. Itt találja az elérhető Power BI-tanulmányok listáját.
 
-| Tanulmány | Leírás | Dátum |
+| Tanulmány | Leírás | Date |
 | --- | --- | --- |
+| [A Power BI Enterprise üzembehelyezési előkészületei](https://go.microsoft.com/fwlink/?linkid=2057861) |Ez egy technikai tanulmány, amely a jól teljesítő és biztonságos céges Power BI-környezettel kapcsolatos szempontokat ismerteti. | 2018. július |
 | [A Power BI és az adatfolyamok](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Ez a tanulmány technikai részletességgel ismerteti az adatfolyamokat, valamint az adatfolyamok szolgáltatásainak és funkcióinak hátterében álló képességeket és törekvéseket. | 2018. november |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Leírja a Power BI Premium kiadáskori állapotát, valamint a várható fejlődési útját is. | 2017. október |
 | [A Power BI Premium tervezése és üzembe helyezése](whitepaper-powerbi-premium-deployment.md)| Ez a tanulmány útmutatást nyújt és ajánlott eljárásokat mutat be a prémium szintű kapacitás meghatározott számítási feladatokhoz történő tervezéséhez és üzembe helyezéséhez.| 2019. március |
 | [Kapacitás tervezése beágyazott elemzéshez a Power BI Premiummal](https://aka.ms/pbiewhitepaper) |Ez a tanulmány útmutatást nyújt az alkalmazásfejlesztőknek/független szoftvergyártóknak a vállalat számára legmegfelelőbb kapacitás meghatározásához. | 2017. október |
-| [A Power BI Enterprise üzembehelyezési előkészületei](https://go.microsoft.com/fwlink/?linkid=2057861) |Ez egy technikai tanulmány, amely a jól teljesítő és biztonságos céges Power BI-környezettel kapcsolatos szempontokat ismerteti. | 2018. július |
 | [Kapacitástervezési útmutató a Power BI jelentéskészítő kiszolgálóhoz](report-server/capacity-planning.md) |Ez a tanulmány útmutatást nyújt a Power BI jelentéskészítő kiszolgáló kapacitástervezéséhez. Ehhez számos olyan terhelésteszt eredményét osztja meg, amelyek során különböző számítási feladatokat futtattak egy jelentéskiszolgálón. | 2018. március |
 | [Biztonság](service-admin-power-bi-security.md) |Részletes leírást nyújt a Power BI-on belüli biztonságról. | 2019. március |
 | [Power BI-tartalom terjesztése külső vendégfelhasználóknak az Azure Active Directory B2B használatával](whitepaper-azure-b2b-power-bi.md)|Ez a tanulmány azt vázolja fel, hogyan terjeszthető tartalom a vállalaton kívüli felhasználóknak az Azure Active Directory vállalatközi (AAD B2B) integrációjával.| 2019. március |
@@ -35,7 +35,6 @@ A tanulmányokkal behatóbban ismerheti meg a Power BI témaköreit. Itt találj
 | [Kétirányú szűrés](desktop-bidirectional-filtering.md) |Ismerteti a Power BI Desktopban elérhető kétirányú keresztszűrést (valamint az SQL Server Analysis Services 2016 működését is, mivel ugyanúgy viselkedik). | 2018. július |
 | [DirectQuery az SQL Server 2016 Analysis Servicesben](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |A DirectQuery az SQL Server 2016 esetében át lett alakítva a drámaian jobb sebesség és teljesítmény érdekében, de emiatt most a megértése és megvalósítása is bonyolultabbá vált. | 2017. január |
 | [Power BI és SAP BW](https://aka.ms/powerbiandsapbw)| Ez a dokumentum azt ismerteti, milyen előnyökkel jár, ha az ügyfelek a Power BI-t a meglévő SAP Business Warehouse (BW) rendszerükhöz csatlakoztatják.| 2018. február |
-| [Megközelítések a Power BI irányításához és üzembe helyezéséhez](http://go.microsoft.com/fwlink/?LinkId=785915&clcid=0x409) | Ismerteti a Power BI-ökoszisztéma irányításával kapcsolatos alapfogalmakat, lehetőségeket és javaslatokat. | 2016. március |
 | [A táblázatos BI szemantikai modell biztonságossá tétele](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Ez a tanulmány bemutatja a táblázatos BI-szemantika és a Power BI biztonsági modelljét. Megtudhatja, hogyan hozhat létre szerepköröket, valósíthat meg dinamikus biztonságot, konfigurálhat megszemélyesítési beállításokat, kezelhet szerepköröket és választhatja ki a módszert a hálózati biztonsági környezetében működő modellekhez való csatlakozáshoz. | 2016. április |
 | [A Power BI és a GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| Ez a hivatkozás a Szolgáltatásmegbízhatósági portálon elérhető, a Microsoft Power BI GDPR-tanulmányt is magukban foglaló tanulmányok listájára mutat. | 2018. április |
 
