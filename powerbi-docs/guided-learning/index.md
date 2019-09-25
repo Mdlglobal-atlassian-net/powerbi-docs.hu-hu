@@ -4,14 +4,14 @@ description: Ezekkel az egymásra épülő kurzusokkal elkezdheti a tanulást, �
 layout: LandingPage
 ms.service: powerbi
 ms.author: davidiseminger
-ms.date: 05/10/2019
+ms.date: 09/20/2019
 ms.topic: hub-page
-ms.openlocfilehash: 69bb6ce574c1ee6922c83f4ae2fcc06479eba440
-ms.sourcegitcommit: af2b2238fe77eaa1b2392a19a143a0250b8665cf
+ms.openlocfilehash: 0d42295d3f6a3ccb6f3147d8293f1544ca0a3095
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65533688"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192059"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -22,6 +22,7 @@ ms.locfileid: "65533688"
                   <p>Ezekkel az egymásra épülő kurzusokkal elkezdheti a tanulást, és megismerheti a Microsoft Power BI kiterjedt lehetőségeit és hatékonyságát.</p>
               </div>
           </li>
+          
           <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -33,18 +34,36 @@ ms.locfileid: "65533688"
                                 <img src="media/logo_power-bi.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Első lépések </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/explore-power-bi-service" style="text-decoration: none">Ismerje meg, hogy mire használható a Power BI</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/">Első lépések a Power BI-ban a Microsoft Learn használatával</a>
-                                <span style="margin-left: 32px; align-self: center;">47 perc</span>
-                              </li>                              
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-power-bi-service/1-why-power-bi">Mire használhatom a Power BI szolgáltatást fogyasztóként?</a>
+                                <span style="margin-left: 32px; align-self: center;">12 perc</span>
+                              </li>      
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-power-bi-service/2-find-content">Tartalom megtekintése a Power BI szolgáltatásban</a>
+                                <span style="margin-left: 32px; align-self: center;">10 perc</span>
+                              </li>     
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-power-bi-service/3-navigate-content">Ismerkedés a Power BI-beli irányítópultokkal, jelentésekkel és alkalmazásokkal</a>
+                                <span style="margin-left: 32px; align-self: center;">15 perc</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-power-bi-service/4-collaborate-and-share">Együttműködés és megosztás a Power BI-ban</a>
+                                <span style="margin-left: 32px; align-self: center;">15 perc</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-power-bi-service/5-lab-1">Irányítópultok és jelentések keresése és megtekintése</a>
+                                <span style="margin-left: 32px; align-self: center;">7 perc</span>
+                              </li>
                           </ul>
                       </div>
                     </div>
                 </div>
             </div>
           </li>
+          
           <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -56,31 +75,24 @@ Első lépések </h3>
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Adatok beolvasása </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/analyze-data-power-bi" style="text-decoration: none">Az adatelemzés a Power BI-jal</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml?tutorial-step=1">A Power BI Desktop áttekintése</a>
-                                <span style="margin-left: 32px; align-self: center;">4p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/analyze-data-power-bi/1-filtering-data">Adatok szűrése a Power BI-jal</a>
+                                <span style="margin-left: 32px; align-self: center;">15 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml?tutorial-step=2">Első lépések a Power BI Desktop használatában</a>
-                                <span style="margin-left: 32px; align-self: center;">9m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/analyze-data-power-bi/2-exploring-with-numbers">Adatok megtekintése</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml?tutorial-step=3">Csatlakozás adatforrásokhoz a Power BI Desktop használatával</a>
-                                <span style="margin-left: 32px; align-self: center;">8p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/analyze-data-power-bi/3-asking-questions-data">Kérdések az adatokról</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml?tutorial-step=4">Adatok tisztítása és átalakítása a lekérdezésszerkesztő (Query Editor) használatával</a>
-                                <span style="margin-left: 32px; align-self: center;">8p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml?tutorial-step=5">Speciális adatforrások és adatátalakítások</a>
-                                <span style="margin-left: 32px; align-self: center;">8p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml?tutorial-step=6">Nem helyesen formázott adatok tisztítása</a>
-                                <span style="margin-left: 32px; align-self: center;">8p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/analyze-data-power-bi/4-lab-2">Szűrők alkalmazása a jelentésekre</a>
+                                <span style="margin-left: 32px; align-self: center;">25 perc</span>
                               </li>
                           </ul>
                       </div>
@@ -88,7 +100,8 @@ Adatok beolvasása </h3>
                 </div>
             </div>
           </li>
-          <li>
+          
+                    <li>
             <div class="cardSize">
                 <div class="cardPadding">
                   <div class="card" style="padding: 0 12px 54px 0;">
@@ -96,38 +109,27 @@ Adatok beolvasása </h3>
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="media/pbi-modeling.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Modellezés </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi" style="text-decoration: none">Első lépések a Power BI-jal</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=1">Bevezetés az adatmodellezésbe</a>
-                                <span style="margin-left: 32px; align-self: center;">3p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/1-introduction">Bevezetés</a>
+                                <span style="margin-left: 32px; align-self: center;">6 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=2">Adatkapcsolatok kezelése</a>
-                                <span style="margin-left: 32px; align-self: center;">9p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/2-using-power-bi">A Power BI használata</a>
+                                <span style="margin-left: 32px; align-self: center;">2 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=3">Számított oszlopok létrehozása</a>
-                                <span style="margin-left: 32px; align-self: center;">9p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/3-building-blocks-of-power-bi">A Power BI építőelemei</a>
+                                <span style="margin-left: 32px; align-self: center;">12 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=4">Adatmodellek optimalizálása</a>
-                                <span style="margin-left: 32px; align-self: center;">8p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=5">Számított mértékek létrehozása</a>
-                                <span style="margin-left: 32px; align-self: center;">14p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=6">Számított táblák létrehozása</a>
-                                <span style="margin-left: 32px; align-self: center;">4p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=7">Időalapú adatok feltárása</a>
-                                <span style="margin-left: 32px; align-self: center;">6p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/4-exercise-touring-and-using-power-bi">A Power BI szolgáltatás bemutatása és használata</a>
+                                <span style="margin-left: 32px; align-self: center;">12 perc</span>
                               </li>
                           </ul>
                       </div>
@@ -135,7 +137,8 @@ Modellezés </h3>
                 </div>
             </div>
           </li>
-          <li>
+          
+                    <li>
             <div class="cardSize">
                 <div class="cardPadding">
                   <div class="card" style="padding: 0 12px 54px 0;">
@@ -143,86 +146,39 @@ Modellezés </h3>
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="media/pbi-visualizations.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Vizualizációs elemek </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/get-data-power-bi" style="text-decoration: none">Adatok lekérése a Power BI Desktopban</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=1">Bevezetés a Power BI vizuális elemeibe</a>
-                                <span style="margin-left: 32px; align-self: center;">2p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/1-overview-power-bi-desktop">A Power BI Desktop áttekintése</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=2">Egyszerű vizuális elemek létrehozása és testre szabása</a>
-                                <span style="margin-left: 32px; align-self: center;">8p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop">Ismerkedés a Power BI Desktoppal</a>
+                                <span style="margin-left: 32px; align-self: center;">10 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=3">Kombinációs diagramok</a>
-                                <span style="margin-left: 32px; align-self: center;">5p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/3-connect-data-sources-power-bi-desktop">Kapcsolódás adatforrásokhoz</a>
+                                <span style="margin-left: 32px; align-self: center;">10 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=4">Szeletelők</a>
-                                <span style="margin-left: 32px; align-self: center;">7p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/3b-data-from-excel">Adatok beolvasása az Excelből</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=5">Térképes megjelenítések</a>
-                                <span style="margin-left: 32px; align-self: center;">11p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/4-clean-data-query-editor">A jelentésbe belefoglalni kívánt adatok átalakítása</a>
+                                <span style="margin-left: 32px; align-self: center;">10 perc</span>
+                                <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/5-advanced-data-sources-transformation">Több adatforrásból származó adatok formázása</a>
+                                <span style="margin-left: 32px; align-self: center;">10 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=6">Mátrixok és táblák</a>
-                                <span style="margin-left: 32px; align-self: center;">8p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/6-cleaning-data">A jelentésbe belefoglalni kívánt adatok megtisztítása</a>
+                                <span style="margin-left: 32px; align-self: center;">10 perc</span>
                               </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=7">Pontdiagramok</a>
-                                <span style="margin-left: 32px; align-self: center;">9p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=8">Vízesés- és tölcsérdiagramok</a>
-                                <span style="margin-left: 32px; align-self: center;">5p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=9">Mérőműszerek és számkártyák</a>
-                                <span style="margin-left: 32px; align-self: center;">7p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=10">Diagramok és vizuális elemek színének módosítása</a>
-                                <span style="margin-left: 32px; align-self: center;">5p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=11">Alakzatok, szövegmezők és képek</a>
-                                <span style="margin-left: 32px; align-self: center;">6p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=12">Az oldal elrendezése és formázása</a>
-                                <span style="margin-left: 32px; align-self: center;">5p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=13">Vizuális elemek csoportjai közötti interakciók</a>
-                                <span style="margin-left: 32px; align-self: center;">9p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=14">Jelentésoldal megkettőzése</a>
-                                <span style="margin-left: 32px; align-self: center;">2p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=15">Adatok nélküli kategóriák megjelenítése</a>
-                                <span style="margin-left: 32px; align-self: center;">3p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=16">Összegzés és kategóriabeállítások</a>
-                                <span style="margin-left: 32px; align-self: center;">9p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=17">Mélység (Z)</a>
-                                <span style="margin-left: 32px; align-self: center;">3p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=18">Hierarchikus megjelenítés és szintek kibontása</a>
-                                <span style="margin-left: 32px; align-self: center;">5p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=19">R-integráció a Power BI Desktopban</a>
-                                <span style="margin-left: 32px; align-self: center;">9p</span>
                               </li>
                           </ul>
                       </div>
@@ -230,7 +186,8 @@ Vizualizációs elemek </h3>
                 </div>
             </div>
           </li>
-          <li>
+          
+                    <li>
             <div class="cardSize">
                 <div class="cardPadding">
                   <div class="card" style="padding: 0 12px 54px 0;">
@@ -238,50 +195,39 @@ Vizualizációs elemek </h3>
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="media/pbi-exploring-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Adatok feltárása </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/model-data-power-bi" style="text-decoration: none">Adatmodellezés a Power BI-ban</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=1">A Power BI szolgáltatás bemutatása</a>
-                                <span style="margin-left: 32px; align-self: center;">2p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/1-overview-power-bi">Bevezetés az adatmodellezésbe</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=2">Gyors elemzések a Power BI-ban</a>
-                                <span style="margin-left: 32px; align-self: center;">5p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/2-how-to-manage-data-relationships">Adatkapcsolatok kezelése</a>
+                                <span style="margin-left: 32px; align-self: center;">8 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=3">Irányítópult létrehozása és konfigurálása</a>
-                                <span style="margin-left: 32px; align-self: center;">6p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/3-create-calculated-columns">Számított oszlopok létrehozása</a>
+                                <span style="margin-left: 32px; align-self: center;">7 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=4">Természetes nyelvi kérdések az adatokról</a>
-                                <span style="margin-left: 32px; align-self: center;">9p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/4-optimize-data-models">Adatmodellek optimalizálása</a>
+                                <span style="margin-left: 32px; align-self: center;">8 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=5">Kérdés&amp;válasz megoldásra vonatkozó egyéni javaslatok létrehozása</a>
-                                <span style="margin-left: 32px; align-self: center;">4p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/4b-create-calculated-measures">Számított mértékek létrehozása</a>
+                                <span style="margin-left: 32px; align-self: center;">15 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=6">Irányítópult megosztása a cégen belül</a>
-                                <span style="margin-left: 32px; align-self: center;">7p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/5-create-calculated-tables">Számított táblák létrehozása</a>
+                                <span style="margin-left: 32px; align-self: center;">4 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=7">Vizuális elemek és csempék teljes képernyős megjelenítése</a>
-                                <span style="margin-left: 32px; align-self: center;">4p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=8">Csempe adatainak szerkesztése és widgetek hozzáadása</a>
-                                <span style="margin-left: 32px; align-self: center;">5p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=9">A hely bővítése az irányítópulton</a>
-                                <span style="margin-left: 32px; align-self: center;">5p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=10">Személyes átjáró telepítése és beállítása</a>
-                                <span style="margin-left: 32px; align-self: center;">11p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/6-explore-time-based-data">Az időalapú adatok feltérképezése</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
                               </li>
                           </ul>
                       </div>
@@ -289,7 +235,8 @@ Adatok feltárása </h3>
                 </div>
             </div>
           </li>
-          <li>
+          
+                    <li>
             <div class="cardSize">
                 <div class="cardPadding">
                   <div class="card" style="padding: 0 12px 54px 0;">
@@ -297,30 +244,43 @@ Adatok feltárása </h3>
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="media/logo_excel-blk.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-A Power BI és az Excel </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi" style="text-decoration: none">Vizualizációk használata a Power BI-ban</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="powerbiandexcel.yml?tutorial-step=1">Bevezetés az Excel-adatok használatába a Power BI-ban</a>
-                                <span style="margin-left: 32px; align-self: center;">2p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/1-intro-visuals">Bevezetés a Power BI vizualizációiba</a>
+                                <span style="margin-left: 32px; align-self: center;">3 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="powerbiandexcel.yml?tutorial-step=2">Excel-adatok betöltése a Power BI-ba</a>
-                                <span style="margin-left: 32px; align-self: center;">4p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/2-create-simple-visuals">Egyszerű vizuális elemek létrehozása és testreszabása</a>
+                                <span style="margin-left: 32px; align-self: center;">9 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="powerbiandexcel.yml?tutorial-step=3">A Power View és a Power Pivot importálása a Power BI-ba</a>
-                                <span style="margin-left: 32px; align-self: center;">4p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/4-create-slicers">Szeletelők létrehozása</a>
+                                <span style="margin-left: 32px; align-self: center;">9 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="powerbiandexcel.yml?tutorial-step=4">A OneDrive Vállalati verzió csatlakoztatása a Power BI-hoz</a>
-                                <span style="margin-left: 32px; align-self: center;">8p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/5-map-visualizations">Térképes vizualizációk</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="powerbiandexcel.yml?tutorial-step=5">Excel a Power BI-ban – összefoglaló</a>
-                                <span style="margin-left: 32px; align-self: center;">2p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/6-create-matrixes-tables">Mátrixok és táblák</a>
+                                <span style="margin-left: 32px; align-self: center;">8 perc</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/7-create-scatter-charts">Pont-, vízesés- és tölcsérdiagram létrehozása</a>
+                                <span style="margin-left: 32px; align-self: center;">9 perc</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/10-modify-colors">Diagramok és vizuális elemek színének módosítása</a>
+                                <span style="margin-left: 32px; align-self: center;">6 perc</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/12-formatting">Az oldal elrendezése és formázása</a>
+                                <span style="margin-left: 32px; align-self: center;">12 perc</span>
                               </li>
                           </ul>
                       </div>
@@ -328,7 +288,8 @@ A Power BI és az Excel </h3>
                 </div>
             </div>
           </li>
-          <li>
+          
+                    <li>
             <div class="cardSize">
                 <div class="cardPadding">
                   <div class="card" style="padding: 0 12px 54px 0;">
@@ -336,58 +297,47 @@ A Power BI és az Excel </h3>
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="media/pbi-pub-sharing.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Közzététel és megosztás </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/explore-data-power-bi" style="text-decoration: none">Adatok feltárása a Power BI-ban</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=1">A tartalomcsomagok, a biztonság és a csoportok bemutatása</a>
-                                <span style="margin-left: 32px; align-self: center;">2p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/1-introduction-power-bi-service">A Power BI szolgáltatás bemutatása</a>
+                                <span style="margin-left: 32px; align-self: center;">6 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=2">Power BI Desktop-jelentések közzététele</a>
-                                <span style="margin-left: 32px; align-self: center;">2p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/2-quick-insights">Gyors elemzések a Power BI-ban</a>
+                                <span style="margin-left: 32px; align-self: center;">7 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=3">Irányítópultok és jelentések nyomtatása és exportálása</a>
-                                <span style="margin-left: 32px; align-self: center;">4p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/3-create-configure-dashboard">Irányítópult létrehozása és konfigurálása</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=4">Adatok újbóli közzététele és frissítése manuálisan</a>
-                                <span style="margin-left: 32px; align-self: center;">5p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/4-ask-questions">Természetes nyelvi kérdések az adatokról</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=5">A Power BI Mobile bemutatása</a>
-                                <span style="margin-left: 32px; align-self: center;">7p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/5-custom-qa">Kérdés-válasz megoldásra vonatkozó egyéni javaslatok létrehozása</a>
+                                <span style="margin-left: 32px; align-self: center;">4 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=6">Csoportok létrehozása a Power BI-ban</a>
-                                <span style="margin-left: 32px; align-self: center;">5p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/6-share-dashboards">Irányítópult megosztása a cégen belül</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=7">Tartalomcsomagok létrehozása</a>
-                                <span style="margin-left: 32px; align-self: center;">5p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/7-display-full-screen">Vizualizációs elemek és csempék teljes képernyős megjelenítése</a>
+                                <span style="margin-left: 32px; align-self: center;">3 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=8">Tartalomcsomagok használata</a>
-                                <span style="margin-left: 32px; align-self: center;">7p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/8-edit-tile-details">Csempe adatainak szerkesztése és widgetek hozzáadása</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=9">Tartalomcsomagok frissítése</a>
-                                <span style="margin-left: 32px; align-self: center;">4p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=10">A OneDrive Vállalati verzió integrálása a Power BI-vel</a>
-                                <span style="margin-left: 32px; align-self: center;">3p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=11">Webes közzététel</a>
-                                <span style="margin-left: 32px; align-self: center;">5p</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=12">A Power BI interaktív tanulás elvégzése</a>
-                                <span style="margin-left: 32px; align-self: center;">4p</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/9-get-more-space-on-dashboard">A hely bővítése az irányítópulton</a>
+                                <span style="margin-left: 32px; align-self: center;">3 perc</span>
                               </li>
                           </ul>
                       </div>
@@ -395,6 +345,65 @@ Közzététel és megosztás </h3>
                 </div>
             </div>
           </li>
+          
+                    <li>
+            <div class="cardSize">
+                <div class="cardPadding">
+                  <div class="card" style="padding: 0 12px 54px 0;">
+                      <div class="cardText" style="box-shadow: 0 2px 5px #e8e8e8; border: 1px solid #dbdbdb;">
+                          <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
+                            <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
+                              <div class="cardImage" style="width: 32px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                              </div>
+                            </div>
+                            <a href="https://docs.microsoft.com/learn/modules/publish-share-power-bi" style="text-decoration: none">Közzététel és megosztás a Power BI-ban</a>
+                          </h3>
+                          <ul class="noBullet" style="margin: 24px;">
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/1-introduction-content-packs">A tartalomcsomagok, a biztonság és a csoportok bemutatása</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/2-publish-reports">Power BI Desktop-jelentések közzététele</a>
+                                <span style="margin-left: 32px; align-self: center;">6 perc</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/3-print-export-reports">Irányítópultok és jelentések nyomtatása és exportálása</a>
+                                <span style="margin-left: 32px; align-self: center;">7 perc</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/5-power-bi-mobile">A Power BI Mobile bemutatása</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/6-create-groups">Munkaterületek létrehozása a Power BI-ban</a>
+                                <span style="margin-left: 32px; align-self: center;">6 perc</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/7-build-apps">Alkalmazások létrehozása</a>
+                                <span style="margin-left: 32px; align-self: center;">7 perc</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/8-use-apps">Alkalmazások használata</a>
+                                <span style="margin-left: 32px; align-self: center;">6 perc</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/10-integrate-onedrive">A OneDrive Vállalati verzió integrálása a Power BI-jal</a>
+                                <span style="margin-left: 32px; align-self: center;">7 perc</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/11-publish-web">Közzététel a weben</a>
+                                <span style="margin-left: 32px; align-self: center;">5 perc</span>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </li>
+     
+          
           <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -406,31 +415,32 @@ Közzététel és megosztás </h3>
                                 <img src="media/pbi-dax-intro.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Bevezetés a DAX használatába </h3>
+                            <a href="introductiontodax.yml?tutorial-step=1" style="text-decoration: none">Bevezetés a DAX használatába</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="introductiontodax.yml?tutorial-step=1">Bevezetés a DAX-ba</a>
-                                <span style="margin-left: 32px; align-self: center;">9p</span>
+                                <span style="margin-left: 32px; align-self: center;">9 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="introductiontodax.yml?tutorial-step=2">A DAX számítási típusai</a>
-                                <span style="margin-left: 32px; align-self: center;">22p</span>
+                                <span style="margin-left: 32px; align-self: center;">22 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="introductiontodax.yml?tutorial-step=3">DAX-függvények</a>
-                                <span style="margin-left: 32px; align-self: center;">17p</span>
+                                <span style="margin-left: 32px; align-self: center;">17 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="introductiontodax.yml?tutorial-step=4">Változók használata a DAX-kifejezésekben</a>
-                                <span style="margin-left: 32px; align-self: center;">4p</span>
+                                <a class="barLink" href="introductiontodax.yml?tutorial-step=4">Változók használata DAX-kifejezésekben</a>
+                                <span style="margin-left: 32px; align-self: center;">4 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="introductiontodax.yml?tutorial-step=5">Táblakapcsolatok a DAX-ban</a>
-                                <span style="margin-left: 32px; align-self: center;">13p</span>
+                                <span style="margin-left: 32px; align-self: center;">13 perc</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="introductiontodax.yml?tutorial-step=6">Táblák és szűrés a DAX-ban</a>
-                                <span style="margin-left: 32px; align-self: center;">32p</span>
+                                <span style="margin-left: 32px; align-self: center;">32 perc</span>
                               </li>
                           </ul>
                       </div>
