@@ -44,7 +44,7 @@ Képeket, szövegdobozokat, videókat, streamelési adatokat és webes kódokat 
 
     **[Videó](#add-a-video)**
 
-    **[Egyéni adatfolyam](#add-streaming-data)**
+    **[Saját streamelési adatok](#add-streaming-data)**
    
     ![A Csempe hozzáadása ablak](media/service-dashboard-add-widget/power-bi-add-tile.png)
 
@@ -123,7 +123,7 @@ A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
 
-1. A **Csempe hozzáadása** ablakban válassza az **Egyéni adatfolyam** > **Tovább** lehetőséget.
+1. A **Csempe hozzáadása** ablakban válassza a **Saját streamelési adatok** > **Tovább** lehetőséget.
 2. Válassza a **Streamelési adathalmaz hozzáadása** lehetőséget.
 3. Hozzon létre **Új streamelési adathalmazt** a Power BI API vagy a PubNub használatával.
 4. Töltse ki az **Adathalmaz neve**, az **Előfizetési kulcs** és a **Csatorna neve** mezőket. Ha a kapcsolat biztonságos, akkor engedélykulccsal is rendelkezik. A kipróbálásához használhatja a PubNubtól származó mintaértékeket.
@@ -131,9 +131,9 @@ A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy
     Láthatja az adathalmazban elérhető mezőket, azok adattípusát és JSON-formátumát.
 6. Kattintson a **Csatlakozás** gombra.
     Létrehozott egy streamelési adathalmazt.
-7. Térjen vissza az irányítópultra, és válassza ismét a **Csempe hozzáadása** > **Egyéni adatfolyam** > **Tovább** lehetőséget.
+7. Térjen vissza az irányítópultra, és válassza ismét a **Csempe hozzáadása** > **Saját streamelési adatok** > **Tovább** lehetőséget.
 8. Válassza ki az érzékelőadatok létrehozott adathalmazát > **Tovább**.
-9. Válassza ki a kívánt vizualizációsablont. Az ilyen adatokhoz többnyire a vonaldiagramok illenek.
+9. Válassza ki a kívánt vizualizációtípust. Az ilyen adatokhoz többnyire a vonaldiagramok illenek.
 10. Válassza a **Tengely**, **Jelmagyarázat** és **Értékek** lehetőségeket.
 11. Határozza meg a megjeleníteni kívánt időtartamot másodpercben, percben vagy órában.
 12. Kattintson a **Tovább** gombra.
@@ -141,7 +141,7 @@ A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy
 14. Rögzítse az irányítópulton.
 
 
-1. A **Csempe hozzáadása** ablakban válassza az **Egyéni adatfolyam** > **Tovább** lehetőséget.
+1. A **Csempe hozzáadása** ablakban válassza a **Saját streamelési adatok** > **Tovább** lehetőséget.
 
 2. Válassza a **Streamelési adathalmaz hozzáadása** lehetőséget.
 
@@ -157,11 +157,11 @@ A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy
 
    Létrehozott egy streamelési adathalmazt.
 
-7. Térjen vissza az irányítópultra, és válassza ismét a **Csempe hozzáadása** > **Egyéni adatfolyam** > **Tovább** lehetőséget.
+7. Térjen vissza az irányítópultra, és válassza ismét a **Csempe hozzáadása** > **Saját streamelési adatok** > **Tovább** lehetőséget.
 
 8. Válassza ki az érzékelőadatok létrehozott adathalmazát > **Tovább**.
 
-9. Válassza ki a kívánt vizualizációsablont. Az ilyen adatokhoz többnyire a vonaldiagramok illenek.
+9. Válassza ki a kívánt vizualizációtípust. Az ilyen adatokhoz többnyire a vonaldiagramok illenek.
 
 10. Válassza a **Tengely**, **Jelmagyarázat** és **Értékek** lehetőségeket.
 
@@ -174,7 +174,7 @@ A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy
 14. Rögzítse az irányítópulton.
 
 ## <a name="add-web-content"></a>Webes tartalom hozzáadása
-A jelentés vagy irányítópult címeként bármilyen HTML-tartalmat beilleszthet vagy beírhat. Adja meg manuálisan, vagy másolja és illessze be a Twitter, YouTube, embed.ly, stb. által megadott beágyazási kódot.
+A jelentés vagy irányítópult címeként bármilyen HTML-tartalmat beilleszthet vagy beírhat. Adja meg manuálisan, vagy másolja és illessze be a Twitter, YouTube, embed.ly stb. által megadott beágyazási kódot.
 
 1. A **Csempe hozzáadása** ablakban válassza a **Webes tartalom** > **Tovább** lehetőséget.
 

@@ -92,6 +92,8 @@
               href: end-user-insights.md
             - name: Előzetes verziójú funkciók bekapcsolása
               href: end-user-preview-features.md
+            - name: Értesítések fogadása a Power BI-szolgáltatásokban
+              href: end-user-notification-center.md
         - name: Adatok lekérése
           items:
             - name: Alkalmazások a Power BI-ban
