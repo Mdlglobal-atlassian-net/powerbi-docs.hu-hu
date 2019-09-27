@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: 4bc24df67dd7d2b8ac0ae987ad2e50cff082c73f
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710374"
 ---
-# <a name="step-3-create-a-dataset-in-power-bi"></a>3. lépés: Adatkészlet létrehozása a Power BI-ban
+# <a name="step-3-create-a-dataset-in-power-bi"></a>3\. lépés: Adatkészlet létrehozása a Power BI-ban
 Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-data.md) ismertető részletes útmutató része.
 
 Az Adatok elküldése az adatkészletbe **2. lépésében** ([Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése](walkthrough-push-data-get-token.md)) egy tokent kapott, amellyel hitelesítheti magát az **Azure AD**-ben. Ebben a lépésben a token használatával meghívja a [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) műveletet.

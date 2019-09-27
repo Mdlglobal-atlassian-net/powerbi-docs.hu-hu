@@ -1,5 +1,5 @@
 ---
-title: Hitelesítési hozzáférési jogkivonat lekérése
+title: Hitelesítési hozzáférési jogkivonat beszerzése
 description: Útmutatás az adatok leküldéséhez – Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése
 author: rkarlin
 ms.author: rkarlin
@@ -16,13 +16,13 @@ ms.contentlocale: hu-HU
 ms.lasthandoff: 06/07/2019
 ms.locfileid: "66809095"
 ---
-# <a name="step-2-get-an-authentication-access-token"></a>2\. lépés: Hitelesítési hozzáférési jogkivonat lekérése
+# <a name="step-2-get-an-authentication-access-token"></a>2\. lépés: Hitelesítési hozzáférési jogkivonat beszerzése
 
 Ez a cikk az [Adatok elküldése Power BI-adatkészletbe](walkthrough-push-data.md) című sorozat második lépése.
 
 Az 1. lépésben [regisztrált egy ügyfélalkalmazást az Azure AD-ben](walkthrough-push-data-register-app-with-azure-ad.md). Ebben a lépésben hitelesítéshez szükséges hozzáférési jogkivonatot fogja beszerezni. A Power BI-alkalmazások integrálva vannak az Azure Active Directoryval, hogy biztonságos bejelentkezést és hitelesítést biztosítsanak az alkalmazáshoz. Az Azure AD-hitelesítéshez és a Power BI-erőforrásokhoz való hozzáféréshez az alkalmazás jogkivonatokat használ.
 
-## <a name="get-an-authentication-access-token"></a>Hitelesítési hozzáférési jogkivonat lekérése
+## <a name="get-an-authentication-access-token"></a>Hitelesítési hozzáférési jogkivonat beszerzése
 
 A kezdés előtt győződjön meg róla, hogy elvégezte az [Adatok leküldése Power BI-adatkészletekbe](walkthrough-push-data.md) sorozat [előző lépését](walkthrough-push-data-register-app-with-azure-ad.md). 
 
@@ -116,7 +116,7 @@ A hitelesítési jogkivonat beszerzése után bármilyen Power BI-műveletet hí
 A sorozat következő cikke bemutatja, hogyan [hozhat létre adatkészletet a Power BI-ban](walkthrough-push-data-create-dataset.md).
 
 
-## <a name="complete-code-listing"></a>Kódlistázás befejezése
+## <a name="complete-code-listing"></a>Teljes kódlista
 
 ```csharp
 using System;
