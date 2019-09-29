@@ -1,6 +1,6 @@
 ---
-title: 'Oktatóanyag: Egy gépi tanulási modellt a Power bi-ban (előzetes verzió)'
-description: Ebben az oktatóanyagban létrehozhat egy Machine Learning-modellhez, a Power bi-ban.
+title: 'Oktatóanyag: Machine Learning-modell létrehozása a Power BI-ban (előzetes verzió)'
+description: Ebben az oktatóanyagban egy Machine Learning-modellt fog létrehozni a Power BI-ban.
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -13,187 +13,187 @@ ms.author: davidi
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 611d6f6c923e6cb68af94840c4266a0b6dee7651
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61406743"
 ---
-# <a name="tutorial-build-a-machine-learning-model-in-power-bi-preview"></a>Oktatóanyag: Egy gépi tanulási modellt a Power bi-ban (előzetes verzió)
+# <a name="tutorial-build-a-machine-learning-model-in-power-bi-preview"></a>Oktatóanyag: Machine Learning-modell létrehozása a Power BI-ban (előzetes verzió)
 
-Ez az oktatóanyag a cikk használhatja **automatikus Machine Learning** hozhat létre és alkalmazhat egy bináris előrejelzési modell, a Power bi-ban. Az oktatóanyag egy Power BI-adatfolyam létrehozására vonatkozó útmutatást tartalmaz, és tanítása és ellenőrzése egy gépi tanulási modellt közvetlenül a Power bi-ban az adatfolyamban meghatározott az entitások használatával. Ezt követően segítségével, hogy a modell pontozó előrejelzések készítése.
+Ebben az oktatóanyagban egy bináris előrejelzési modellt fog létrehozni és alkalmazni a Power BI-ban az **automatizált gépi tanulás** használatával. Az oktatóanyag alapján létrehozhat egy Power BI-adatfolyamot, és az adatfolyamban megadott entitások felhasználásával közvetlenül a Power BI-ban taníthat be és ellenőrizhet egy gépi tanulási modellt. Ezután a modellt előrejelzések pontozására és létrehozására használjuk.
 
-Először egy bináris előrejelzési gépi tanulási modellt, a vásárlás célt hatalmas online azok online munkamenet attribútumok alapján előre jelezni fog létrehozni. Teljesítményteszt machine learning adatkészlet ebben a gyakorlatban használható. A modell tanítása, miután a Power BI automatikusan létrehoz egy folyamatérvényesítési jelentés elmagyarázza a modell eredményei. Ezután tekintse át az ellenőrzési jelentésből, és alkalmazza a modell adatait a pontozási.
+Először létre kell hoznia egy bináris előrejelzési gépi tanulási modellt, amely az online vásárlók vásárlási szokásait jelzi előre az online munkamenet-attribútumaik alapján. A gyakorlathoz teljesítményteszt-alapú gépi tanulási adatkészletet használunk. A modell betanítása után a Power BI automatikusan létrehoz egy ellenőrzési jelentést, amely ismerteti a modell eredményeit. Tekintse át az ellenőrzési jelentést, és ezután felhasználhatja a modellt a saját adatainak pontozására.
 
-Ez az oktatóanyag a következő lépéseket tartalmazza:
+Az oktatóanyag a következő lépésekből áll:
 
 > [!div class="checklist"]
-> * Hozzon létre egy adatfolyam a bemeneti adatok
-> * Hozzon létre, és a egy gépi tanulási modell betanítása
-> * Tekintse át a modell folyamatérvényesítési jelentés
-> * A modell vonatkozik egy adatfolyam-entitás
-> * A modell a pontozott kimenetének használata a Power BI-jelentésekben
+> * Adatfolyam létrehozása a bemeneti adatokkal
+> * Gépi tanulási modell létrehozása és betanítása
+> * A modell ellenőrzési jelentésének áttekintése
+> * A modell alkalmazása egy adatfolyam-entitásra
+> * A modell pontozott kimenetének felhasználása egy Power BI-jelentésben
 
-## <a name="create-a-dataflow-with-the-input-data"></a>Hozzon létre egy adatfolyam a bemeneti adatok
+## <a name="create-a-dataflow-with-the-input-data"></a>Adatfolyam létrehozása a bemeneti adatokkal
 
-Ez az oktatóanyag első részét, ha egy adatfolyam bemeneti adatokkal. A folyamat néhány lépést tart, verziótól kezdődően az adatok beolvasása az alábbiakban látható módon.
+Az oktatóanyag első része a bemeneti adatokat tartalmazó adatfolyam létrehozását ismerteti. Az alábbi szakaszban bemutatott folyamat több lépésből áll, amelyek közül az első az adatok lekérése.
 
 ### <a name="get-data"></a>Adatok lekérése
 
-Az első lépés egy adatfolyam létrehozásával, készen áll az adatforrások hogy. Ebben az esetben egy gépi tanulási adatkészlet közül, online foglalkozások, amelyek során az vásárlás használjuk. Az adatkészlet tulajdonságai, ezek a munkamenetek, amelyek fogjuk használni a modell tanítása tartalmazza.
+Az adatfolyam létrehozásának első lépése az adatok előkészítése. Példánkban egy olyan online munkamenet-sorozatból nyertük ki a gépi tanulás adatkészletét, amelynek egy része vásárlással végződött. Az adatkészletben a munkamenetek attribútumai találhatók, amelyeket a modell betanítására használunk.
 
-Az adatkészlet letöltheti a UC Irvine webhelyről.  Van elérhető, a jelen oktatóanyag a következő hivatkozás: [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv).
+Az adatkészlet letölthető az UC Irvine webhelyről.  Az adatkészlet a jelen oktatóanyag céljaira elérhető a következő hivatkozáson is: [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv).
 
 ### <a name="create-the-entities"></a>Az entitások létrehozása
 
 Ahhoz, hogy létre tudja hozni az adatfolyamban az entitásokat, be kell jelentkeznie a Power BI szolgáltatásba. Lépjen egy olyan munkaterületre a dedikált kapacitásán belül, amelyben engedélyezve van az AI előzetes verzió.
 
-Ha még nem rendelkezik egy munkaterületet, létrehozhat egy kiválasztásával **munkaterületek** a Power BI szolgáltatásban, és válassza a bal oldali navigációs menüjében **alkalmazás munkaterületének létrehozása** a panel alján, akkor jelenik meg. Ekkor megnyílik egy panel, a jobb oldalon adja meg a munkaterület részletei. Adjon meg egy nevet, és válassza ki **speciális**. Győződjön meg arról, hogy a munkaterület dedikált kapacitás a választógomb használja-e, és hogy hozzá van rendelve egy dedikált kapacitás-példányt, amely rendelkezik-e kapcsolva, az AI előzetes verziója. Kattintson a **Mentés** gombra.
+Ha még nincs munkaterülete, létrehozhat egyet. Ehhez válassza a **Munkaterületek** elemet a Power BI szolgáltatás bal oldali navigációs menüjében, majd a megjelenő panel alján válassza az **Alkalmazás-munkaterület létrehozása** lehetőséget. Ez megnyit egy panelt a jobb oldalon, ahol megadhatja a munkaterület adatait. Írja be a munkaterület nevét, majd válassza a **Speciális** lehetőséget. A választógombbal győződjön meg róla, hogy a munkaterület dedikált kapacitást használ, és olyan dedikáltkapacitás-példányhoz van rendelve, amelyhez be van kapcsolva az AI előzetes verziója. Kattintson a **Mentés** gombra.
 
 ![Munkaterület létrehozása](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-01.png)
 
-A munkaterület létrehozása után kiválaszthatja **kihagyása** alján jobb üdvözlőképernyő, az alábbi képen látható módon.
+Ha létrehozta a munkaterületet, választhatja az üdvözlő képernyő alján jobbra a **Kihagyás** lehetőséget, az alábbi kép szerint.
 
-![Folytassa, ha egy munkaterületet](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-02.png)
+![Kihagyás, ha már van munkaterülete](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-02.png)
 
-Válassza ki a **adatfolyamok (előzetes verzió)** fülre. Válassza ki a **létrehozás** gombbal a megfelelő, a munkaterület, és adja meg **adatfolyamot**.
+Kattintson az **Adatfolyamok (előzetes verzió)** fülre. Válassza a **Létrehozás** lehetőséget a munkaterület jobb felső sarkában, majd válassza az **Adatfolyam** elemet.
 
 ![Adatfolyam létrehozása](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-03.png)
 
-Válassza az **Új entitások hozzáadása** lehetőséget. Ezzel elindítja a **Power Query** szerkesztő a böngészőben.
+Válassza az **Új entitások hozzáadása** lehetőséget. Ez elindítja a **Power Query** szerkesztőjét a böngészőben.
 
 ![Új entitás hozzáadása](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-04.png)
 
-Válassza ki **Text/CSV-fájl** adatforrásként, az alábbi képen látható.
+Adatforrásként válassza a **Text/CSV fájl** lehetőséget az alábbi kép szerint.
 
-![A kijelölt szöveg/CSF fájl](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-05.png)
+![Text/CSF file kiválasztása](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-05.png)
 
-Az a **adatforráshoz csatlakozhat** , amely megjelenik a következő, illessze be a következő hivatkozásra kattintva a *online_shoppers_intention.csv* be a **fájl elérési útja vagy URL-cím** mezőbe, és válassza ki a  **Tovább**.
+Az ekkor megjelenő **Csatlakozás adatforráshoz** lapon illessze az *online_shoppers_intention.csv* fájlra mutató hivatkozást a **Fájl elérési útja vagy URL** mezőbe, majd kattintson a **Tovább** elemre.
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv`
 
 ![Fájl elérési útja](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-06.png)
 
-A Power Query-szerkesztő a CSV-fájlból az adatok előnézetét jeleníti meg. Válassza ki **tábla átalakítása** a parancs menüszalagon, majd válassza ki a **első sor használata fejlécként** lehetőséget a megjelenő menüből. Ez hozzáadja a _előléptetett fejlécek_ lekérdezés lépést, a **alkalmazott lépései** szakasz a képernyő jobb. Átnevezheti a lekérdezés arculata névre értékét módosítsa úgy a **neve** mezőbe a jobb oldali ablaktáblában található. Ha például sikerült módosítani a lekérdezés nevét _Online látogató_.
+A Power Query-szerkesztő megjeleníti a CSV-fájl adatainak előnézetét. A parancssávon válassza a **Tábla átalakítása** elemet, majd a megjelenő menüből válassza az **Első sor használata fejlécként** lehetőséget. Ez hozzáadja az _Előléptetett fejlécek_ lekérdezési lépést a képernyő jobb oldalán látható **Alkalmazott lépések** szakaszhoz. A jobb oldali panelen látható **Név** mező értékének módosításával felhasználóbarát nevet adhat a lekérdezésnek. A Query (Lekérdezés) nevet például _Online Visitor_ (Online látogató) névre módosíthatja.
 
-![Váltson egy rövid nevet](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-07.png)
+![Módosítás felhasználóbarát névre](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-07.png)
 
-Ez az adatkészlet az attribútum az adattípusok közül néhány _numerikus_ vagy _logikai_, bár ezek a karakterláncok értelmezhetők **Power Query**. Az egyes oszlopfejlécekre, lásd a lenti listát a következő típusú oszlopok sorrendjének megváltoztatásához tetején attribútum ikon kiválasztása:
+A példában szereplő adatkészlet egyes attribútum-adattípusai _numerikus_ vagy _logikai_ jellegűek, de a **Power Query** karakterláncként is azonosíthatja őket. Az oszlopfejlécekben az attribútumtípus ikonjára kattintva módosítsa az alábbi oszlopokat a következő típusokra:
 
-* **Tizedes tört szám:** Administrative_Duration; Informational_Duration; ProductRelated_Duration; BounceRates; ExitRates; PageValues; SpecialDay
-* **True/False:** Hétvégi; Bevétel
+* **Tizedes tört:** Administrative_Duration; Informational_Duration; ProductRelated_Duration; BounceRates; ExitRates; PageValues; SpecialDay
+* **Igaz/Hamis:** Weekend (Hétvége); Revenue (Bevétel)
 
 ![Adattípus módosítása](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-08.png)
 
-A **bináris előrejelzési** azt fogja train model azonosítása a múltbeli megfigyelések a kimenetek címkeként logikai típusú mező szükséges. Ez az adatkészlet a _bevétel_ attribútum azt jelöli, vásárlás, és ez az attribútum egy logikai érték érhető el. Így nem szükséges a címke számított oszlop hozzáadása. Egyéb adatkészletekhez akkor előfordulhat, hogy alakítsa át meglévő címke attribútumok egy logikai oszlopot.
+A betanítani kívánt **bináris előrejelzési** modellhez a korábbi megfigyelésekből származó eredményeket logikai címkével kell azonosítani. A példánkban szereplő adatkészletben a vásárlást a _Revenue_ (Bevétel) attribútum jelzi, amely már logikai érték formájában jelenik meg. Ezért nem kell számított oszlopot hozzáadnunk a címkéhez. Más adatkészletekben előfordulhat, hogy a meglévő címkeattribútumokat logikai oszloppá kell alakítani.
 
-Válassza ki a **kész** gombra kattintva zárja be a Power Query-szerkesztő. Ez az entitások listáját jeleníti meg a _Online látogatók_ hozzáadtunk adatokat. Válassza ki **mentése** jobb felső sarokban adjon meg egy nevet az adatfolyamot, és válassza **mentése** párbeszédpanelen, a következő képen látható módon.
+A Power Query-szerkesztő bezárásához válassza a **Kész** lehetőséget. Ez megjeleníti az entitások listáját a felvett _Online Visitor_ adatokkal. Válassza a **Mentés** lehetőséget a jobb felső sarokban, adjon nevet az adatfolyamnak, majd a párbeszédpanelen válassza a **Mentés** lehetőséget z alábbi kép szerint.
 
 ![Az adatfolyam mentése](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-09.png)
 
 ### <a name="refresh-the-dataflow"></a>Az adatfolyam frissítése
 
-Egy értesítés jelenik meg az adatfolyam eredmények mentése, hogy megtörtént-e az adatfolyamot feltüntetve. Válassza ki **azonnali frissítés** az adatokat a forrás-, az adatfolyamot, hogy.
+Az adatfolyam eredményeinek mentésekor értesítés jelenik meg, hogy az adatfolyam mentése megtörtént. Válassza a **Frissítés most** lehetőséget – ezzel betölti az adatokat a forrásból az adatfolyamba.
 
 ![Azonnali frissítés](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-10.png)
 
 A jobb felső sarokban válassza a **Bezárás** lehetőséget, és várja meg, amíg az adatfolyam frissítése befejeződik.
 
-Az adatfolyam használatával is frissítheti a **műveletek** parancsokat. Az adatfolyam időbélyegzője a frissítés befejeződött.
+Az adatfolyamot a **Műveletek** parancsok használatával is frissítheti. Az adatfolyam megjeleníti a frissítés befejeződésének időbélyegzőjét is.
 
-![Frissítés időbélyege](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-11.png)
+![A frissítés időbélyege](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-11.png)
 
-## <a name="create-and-train-a-machine-learning-model"></a>Hozzon létre, és a egy gépi tanulási modell betanítása
+## <a name="create-and-train-a-machine-learning-model"></a>Gépi tanulási modell létrehozása és betanítása
 
-Válassza ki az adatfolyamot, a frissítés befejezése után. Egy gépi tanulási modellt hozzáadásához válassza a **alkalmazása gépi Tanulási modellek** gombra a **műveletek** listában az alap entitás, amely tartalmazza a betanítási adatok és a címke adatait, és válassza ki **hozzáadása egy gépi tanulási modell**.
+A frissítés befejezése után válassza ki az adatfolyamot. Gépi tanulási modell felvételéhez válassza a **Műveletek** listában az **ML-modell alkalmazása** gombot a betanítási és címkeadatokat tartalmazó alapentitáshoz, majd kattintson a **Gépi tanulási modell hozzáadása** lehetőségre.
 
 ![Gépi tanulási modell hozzáadása](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-12.png)
 
-A gépi tanulási modell létrehozásához az első lépés, hogy a korábbi adatok, többek között a felirat a mező, amely előre jelezni kívánt azonosításához. A modell az adatokból learning fogja létrehozni.
+A gépi tanulási modell létrehozásának első lépése az előzményalapú adatok azonosítása az előrejelezni kívánt címkemezőt is beleértve. A modell létrehozásához ezekből az adatokból tanul a rendszer.
 
-Az adatkészletet használunk, esetén ez az a **bevétel** mező. Válassza ki **bevétel** , a "korábbi serkenti az eredményt mező" értéket, majd **tovább**.
+A példánkban használt adatkészlet esetében ez a **Revenue** mező. Jelölje ki a **Revenue** mezőt az előzményalapú eredmények mezőjeként, majd kattintson a **Tovább** elemre.
 
-![Válassza ki a korábbi adatok alapján](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-13.png)
+![Előzményalapú adatok kiválasztása](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-13.png)
 
-Ezután azt kell választania a gépi tanulási modellt létrehozni típusát. A Power BI elemzi a korábbi serkenti az eredményt mezőben, hogy megismerte az értékeket, és a machine learning-modellek előre jelezni, hogy a mező hozható létre a típusú javasol.
+A továbbiakban ki kell választanunk a létrehozni kívánt gépi tanulási modellt. A Power BI elemzi az előzményalapú eredmények mezőjében megadott értékeket, és javaslatot tesz a mező előrejelzéséhez létrehozható gépi tanulási modelltípusokra.
 
-Ebben az esetben, mivel azt még előrejelzésére egy bináris eredménye, hogy egy felhasználó e e vásárolni valamit, vagy nem, válassza **bináris előrejelzési** a modell típusa, és majd kattintson a Tovább gombra.
+Mivel példánkban bináris eredményt várunk arra a kérdésre, hogy a felhasználó vásárol-e vagy sem, jelölje ki a **Bináris előrejelzés** lehetőséget, majd kattintson a Tovább elemre.
 
-![Bináris előrejelzési kiválasztva](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-14.png)
+![A bináris előrejelzés kiválasztása](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-14.png)
 
-Ezután a Power BI előzetes keresését, az adatok nem, és javasolja, amely a modell bemenetei. Lehetősége van az adatbeviteli mezők használt modell testreszabása. Az összeválogatott adatkészlethez jelölje be az összes mezőt, válassza az entitás neve melletti jelölőnégyzetet. Válassza ki **tovább** a bemeneti adatok fogadására.
+A következő lépésben a Power BI elvégzi az adatok előzetes vizsgálatát, és javaslatot tesz a modell által használható bemenetekre. A modell által használt bemeneti mezőket lehetősége van testre szabni. Az általunk kiválasztott adatkészletben jelölje ki az entitás neve melletti jelölőnégyzetet az összes mező kiválasztásához. A bemenetek jóváhagyásához kattintson a **Tovább** elemre.
 
-![Jelölje be a következő](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-15.png)
+![Tovább jelölőnégyzet kijelölése](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-15.png)
 
-Az utolsó lépésben elnevezi a modellt, valamint a valódi címkéket az eredményeket az automatikusan létrehozott jelentést, amely tartalmazza a modell érvényesítése eredményeit használandó kell biztosítunk. Ezután kell, hogy a modell neve _beszerzési szándékot előrejelzési_, és a true és FALSE (hamis) címkéket, ahogy _beszerzési_ és _nem vásárlási_. Kattintson a **Mentés** gombra.
+Az utolsó lépésben el kell nevezni a modellt és azokat a felhasználóbarát címkéket, amelyek hozzárendelődnek a modell értékelési eredményeit összefoglaló, automatikusan előállított jelentés eredményeihez. Legyen a modell neve _Vásárlási szándék előrejelzése_, az Igaz és Hamis címkék neve pedig legyen _Vásárlás_ és _Nem vásárlás_. Kattintson a **Mentés** gombra.
 
 ![A modell mentése](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-16.png)
 
-A gépi tanulási modell most már készen áll a képzést. Válassza ki **frissítés most** elindításához a modell betanításához.
+A gépi tanulási modell ezzel készen áll a betanításra. A betanítás elkezdéséhez kattintson a **Frissítés most** elemre.
 
 ![Azonnali frissítés](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-17.png)
 
-A betanítási folyamat megkezdődik, mintavétel és normalizálása előzményadatait, és az adatkészlet felosztása két új entitások az *beszerzési szándékot előrejelzési betanítási adatok* és *beszerzési szándékot előrejelzési tesztelése Adatok*.
+A betanítási folyamat kezdő lépései az előzményalapú adatok mintavételezése és normalizálása, valamint az adatkészlet felosztása *Vásárlási szándék előrejelzése betanítási adatok* és *Vásárlási szándék előrejelzése tesztadatok* csoportra.
 
-Az adatkészlet méretétől függően a betanítási folyamat is eltarthat pár percet vagy való néhány óra múlva. A modell látható ezen a ponton a **gépi tanulási modelljeit** az adatfolyamot lapján. A _készen_ az állapot azt jelzi, hogy a modell képzéshez várólistára került, illetve képzési alatt.
+A betanítási folyamat az adatkészlet méretétől függően néhány perctől akár több óráig is eltarthat. Ekkor a modell megjelenik az adatfolyam **Gépi tanulási modellek** lapján. A _Kész_ állapot azt jelzi, hogy a modell várólistára került, vagy már betanítás alatt áll.
 
-![Készen áll a képzés](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-18.png)
+![Betanításra kész](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-18.png)
 
-Míg a modellnél képzés, akkor tudni megtekinteni vagy szerkeszteni az adatfolyamban. Ellenőrizheti, hogy a modell folyamatban van tanítva, és igazolt felhasználói a adatfolyamot állapotát. Ez jelenik meg a folyamatban lévő adatok frissítése a **adatfolyamok** a munkaterület fülre.
+A modell betanítása alatt az adatfolyam nem tekinthető meg és nem szerkeszthető. A modell betanításának és ellenőrzésének folyamatát az adatfolyam állapotából ellenőrizheti. Ez az információ a munkaterület **Adatfolyamok** lapján, folyamatban lévő adatfrissítésként jelenik meg.
 
 ![Folyamatban](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-19.png)
 
-Ha a modell betanítása befejeződött, az adatfolyam egy frissített frissítés idejét jeleníti meg. Ellenőrizheti, hogy a modell tanítása-e, lépjen a **gépi tanulási modelljeit** fülre az adatfolyamban. A létrehozott modell állapotúnak kell lennie mint **Trained** és a **utolsó betanított** idő most kell frissíteni.
+Ha a modell betanítása lezárult, az adatfolyam megjeleníti a legújabb frissítés időpontját. Az adatfolyam **Gépi tanulási modellek** lapjára lépve ellenőrizheti, hogy a modell betanítása lezárult-e. A létrehozott modellnek ilyenkor **Betanított** állapotban kell lennie, és a **Legutóbbi betanítás** időpontja már frissült.
 
-![Utolsó tanított](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-20.png)
+![Legutóbb betanítva ekkor](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-20.png)
 
-## <a name="review-the-model-validation-report"></a>Tekintse át a modell folyamatérvényesítési jelentés
+## <a name="review-the-model-validation-report"></a>A modell ellenőrzési jelentésének áttekintése
 
-A modell folyamatérvényesítési jelentés megtekintendő a **Machine learning-modellek, s** használatba vétele a **teljesítményjelentés megtekintése és a alkalmazni a modell** gombra a **műveletek** oszlopot a modellhez . Ez a jelentés azt ismerteti, hogyan a gépi tanulási modell valószínű végrehajtásához.
+A modell ellenőrzési jelentésének áttekintéséhez a **Gépi tanulási modellek** lapon kattintson a **Teljesítményjelentés megtekintése és modell alkalmazása** gombra a modellhez tartozó **Műveletek** oszlopban. A jelentés a gépi tanulási modell valószínű teljesítményét ismerteti.
 
-Az a **modellek teljesítményének** a jelentés, jelölje be **kulcs Véleményvezérek** a felső előrejelzőket a modell megtekintéséhez. A megtekintéséhez, hogyan az eredmény terjesztési kapcsolódó adott előjelző előrejelzőket közül választhat.
+A modell legfontosabb előrejelzőinek megtekintéséhez a jelentés **Modell teljesítménye** oldalán kattintson a **Legfontosabb befolyásolók** elemre. Ha kijelöli valamelyik előrejelzőt, megtekintheti a hozzá tartozó kimenetek eloszlását.
 
-![Modellek teljesítményének](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-21.png)
+![A modell teljesítménye](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-21.png)
 
-Használhatja a **valószínűségi küszöbértéke** szeletelő a modellek teljesítményének oldalon vizsgálja meg a pontosság és a visszaírási modell gyakorolt hatását.
+A Modell teljesítménye oldalon lévő **Valószínűségi küszöb** szeletelő használatával megvizsgálhatja a Pontosságra és Visszahívásra gyakorolt hatást.
 
 ![Valószínűségi határérték](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-22.png)
 
-A jelentés egyéb oldalain ismertetik a modell statisztikai teljesítmény-mérőszámon.
+A jelentés további oldalai a modell teljesítményének statisztikai mérőszámait ismertetik.
 
-A jelentés is tartalmaz, amely leírja, hogy, hogyan könyvtárban találhatók szolgáltatások a bemeneti adatok és a modell végső használt hiperparaméterek különböző ismétlésének képzési Részletek lap.
+A jelentés egy Betanítási adatok lapot is tartalmaz, amely ismerteti a futtatott iterációkat, a funkciók bemenetekből kinyeréséhez használt módszereket és a felhasznált végső modell hiperparamétereit.
 
-## <a name="apply-the-model-to-a-dataflow-entity"></a>A modell vonatkozik egy adatfolyam-entitás
+## <a name="apply-the-model-to-a-dataflow-entity"></a>A modell alkalmazása egy adatfolyam-entitásra
 
-Válassza ki a **alkalmaz modell** gombra, és ez a modell meghívni az adatfolyamot frissítésekor a jelentés felső részén. Az a **alkalmaz** párbeszédpanelen adhatja meg, amely rendelkezik a forrásadatokat, amelyekre a modell a alkalmazni szeretné a célentitás.
+Kattintson a jelentés tetején látható **Modell alkalmazása** gombra a modell meghívásához az adatfolyam frissítésekor. Az **Alkalmaz** párbeszédpanelen megadhatja azt a célentitást, amelynek adataira a modellt alkalmazni kell.
 
 ![A modell alkalmazása](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-23.png)
 
-Amikor a rendszer kéri, hogy kell **frissítése** a modell az eredmények előnézetének megtekintése az adatfolyamot.
+Amikor a rendszer erre kéri, **frissítse** az adatfolyamot a modell eredményeinek megtekintéséhez.
 
-A modell alkalmazásával hoz létre egy új entitást az utótaggal **< modell_neve > bővített** az entitást, amelyhez a modell alkalmazva lesz hozzáfűzve. Ebben az esetben az alkalmazása a modellt a **OnlineShoppers** entitás hoz létre **OnlineShoppers bővített beszerzési szándékot előrejelzési**, amely tartalmazza a modell előre jelzett kimenete.
+A modell alkalmazása **enriched <model_name>** utótaggal egy új alkalmazást hoz létre, amely ahhoz az entitáshoz kapcsolódik, amelyre a modellt alkalmazta. A mi példánk a modellt az **OnlineShoppers** entitásra alkalmazta, így az **OnlineShoppers enriched Purchase Intent Prediction** entitás jött létre, benne a modell által előrejelzett kimenettel.
 
-Az előre jelzett serkenti az eredményt, valószínűségi pontszámának létrehozásához és a felső rekord-specifikus véleményvezérek az előrejelzés három oszlop egy bináris előrejelzési modell alkalmazásával ad hozzá, minden egyes előtaggal van ellátva a megadott oszlopnévvel.
+A bináris előrejelzési modell alkalmazása három oszlopot hoz létre, amelyek az előrejelzett eredményt, a valószínűségi pontszámot és a legfőbb rekordspecifikus befolyásolókat tartalmazzák, előtagjuk pedig a megadott oszlopnév.
 
-![Három oszlopot az eredmény](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-24.png)
+![A három eredményoszlop](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-24.png)
 
-Egy ismert probléma miatt a jelentéstétellel entitás pontozott kimeneti oszlopok csak érhetők el a Power BI Desktopból. Az előzetes verzióra, ezek a szolgáltatásban, egy speciális előzetes entitást kell használnia.
+Egy ismert probléma miatt a kiegészített entitás pontozott eredményoszlopai csak a Power BI Desktopból érhetők el. Ha működés közben szeretné látni őket, különleges előnézeti entitást kell használnia.
 
-Az adatfolyam frissítés befejezése után kiválaszthatja a **OnlineShoppers bővített beszerzési szándékot előrejelzési előzetes** entitás az eredmények megtekintéséhez.
+Miután az adatfolyam frissítése lezajlott, az eredményeket az **OnlineShoppers enriched Purchase Intent Prediction Preview** entitás kijelölésével tekintheti meg.
 
 ![Az eredmények megtekintése](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-25.png)
 
-## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>A modell a pontozott kimenetének használata a Power BI-jelentésekben
+## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>A modell pontozott kimenetének felhasználása Power BI-jelentésben
 
-Pontozott kimenete a teljes gépi tanulási modell használatához csatlakozhat az adatfolyamot, a Power BI desktopban, az adatfolyamok-összekötővel. A **OnlineShoppers bővített beszerzési szándékot előrejelzési** entitás már használható a modellben a Power BI-jelentések által létrehozott javaslatok révén.
+A gépi tanulási modellből származó pontozott kimenetek használatához a Adatfolyamok összekötő segítségével csatlakoztathatja az adatfolyamot a Power BI Desktopból. Az **OnlineShoppers enriched Purchase Intent Prediction** entitás segítségével mostantól beillesztheti a modellből származó előrejelzéseket a Power BI-jelentésekbe.
 
 ## <a name="next-steps"></a>Következő lépések
 
-Ebben az oktatóanyagban létrehozott, és a alkalmazni egy bináris előrejelzési modell, a Power bi-ban az alábbi lépések végrehajtásával:
+Ebben az oktatóanyagban bináris előrejelzési modellt hozott létre és alkalmazott a Power BI-ban az alábbi lépéseket követve:
 
-* Hozzon létre egy adatfolyam a bemeneti adatok
-* Hozzon létre, és a egy gépi tanulási modell betanítása
-* Tekintse át a modell folyamatérvényesítési jelentés
-* A modell vonatkozik egy adatfolyam-entitás
-* A modell a pontozott kimenetének használata a Power BI-jelentésekben
+* Adatfolyam létrehozása a bemeneti adatokkal
+* Gépi tanulási modell létrehozása és betanítása
+* A modell ellenőrzési jelentésének áttekintése
+* A modell alkalmazása egy adatfolyam-entitásra
+* A modell pontozott kimenetének felhasználása Power BI-jelentésben
 
-A Power bi-ban a Machine Learning automatizálásával kapcsolatos további információkért lásd: [automatikus Machine Learning a Power bi-ban (előzetes verzió)](service-machine-learning-automated.md).
+A gépi tanulás Power BI-ban történő automatizálásához lásd még: [Automatizált gépi tanulás a Power BI-ban (előzetes verzió)](service-machine-learning-automated.md).

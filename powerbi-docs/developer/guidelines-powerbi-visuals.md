@@ -1,20 +1,20 @@
 ---
 title: Útmutató Power BI-vizualizációkhoz
 description: Megtudhatja, hogyan teheti közzé egyéni vizualizációit az AppSource-ban, amelyeket aztán mások is felfedezhetnek és használhatnak vásárlással.
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/16/2019
-ms.openlocfilehash: 6a2fce59171ec36241cd5de03d41f6a27f54c664
-ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
+ms.openlocfilehash: 71752a635c69e6712befbb00e942189fa4dacc36
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68380212"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327730"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Útmutató Power BI-vizualizációkhoz
 Mielőtt [közzétenné](https://docs.microsoft.com/power-bi/developer/office-store) a vizualizációt az AppSource-on, hogy azt mások is felfedezhessék és használhassák, ügyeljen rá, hogy az útmutatók használatával magas színvonalú felhasználói élményt alakítson ki. 
@@ -25,11 +25,14 @@ A Power BI minden vizualizációnál engedélyezni kell a helyi menüt, hogy egy
 
 
 ## <a name="logo-guidelines"></a>Embléma-irányelvek
+> [!NOTE]
+> Az ebben a cikkben szereplő embléma szó bármely kereskedelmi vállalati ikonra vonatkozik az alábbi képeken szereplő leírásoknak megfelelően. 
 
-Ez a szakasz az emblémák és logotipiák vizualizációkhoz való hozzáadásának részleteit ismerteti. Az emblémák nem kötelezőek. Ha szerepelnek, akkor követniük kell ezeket az irányelveket. 
+Ez a szakasz az emblémák Power BI-vizualizációkhoz való hozzáadásának részleteit ismerteti. Az emblémák nem kötelezőek. Ha szerepelnek, akkor követniük kell ezeket az irányelveket. 
 
 > [!IMPORTANT]
 > Az emblémák *csak Szerkesztési módban* használhatók. Az emblémák *nem* jelennek meg Megtekintési módban.
+
 
 ![Definíciók](media/guidelines-powerbi-visuals/definitions.png)
 
@@ -44,11 +47,13 @@ Ez a szakasz az emblémák és logotipiák vizualizációkhoz való hozzáadás�
 ![Szerkesztési mód](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 
+A tájékoztató ikonoknak, ha vannak, olvasási módban meg kell felelniük az emblémák színére, méretére és helyére vonatkozó fenti szabályoknak.
+
 ## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Útmutató további vásárlásos Power BI-vizualizációkhoz
 
 Mostanáig a piactér (AppSource) csak ingyenes Power BI-vizualizációkat fogadott el. Ez a szabályzat megváltozott (2018. decemberben), így az AppSource-ra már a „További vásárlásra lehet szükség” címkéjű vizualizációk is beküldhetők. 
 
-A „További vásárlásra lehet szükség” típusú vizualizációk az Office áruházában található, alkalmazáson belüli vásárlást (IAP-t) lehetővé tevő bővítményekhez hasonlóak. Ilyen vizualizációkat a fejlesztők is beküldhetnek minősítésre, miután az AppSource csapata jóváhagyta azokat, illetve meggyőződtek arról, hogy megfelelnek a minősítési feltételeknek. A követelményekről a [Minősített egyéni vizualizációk](../power-bi-custom-visuals-certified.md) című cikkben talál további információt.
+A „További vásárlásra lehet szükség” típusú vizualizációk az Office áruházában található, alkalmazáson belüli vásárlást (IAP-t) lehetővé tevő bővítményekhez hasonlóak. Ilyen vizualizációkat a fejlesztők is beküldhetnek minősítésre, miután az AppSource csapata jóváhagyta azokat, illetve meggyőződtek arról, hogy megfelelnek a minősítési feltételeknek. A követelményekről a [Minősített Power BI-vizualizációk](../power-bi-custom-visuals-certified.md) című cikkben talál további információt.
 
 > [!NOTE]
 > A vizualizáció minősítéséhez az nem kapcsolódhat külső szolgáltatásokhoz és erőforrásokhoz.

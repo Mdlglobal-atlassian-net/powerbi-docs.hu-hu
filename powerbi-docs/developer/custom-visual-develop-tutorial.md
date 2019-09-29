@@ -1,26 +1,26 @@
 ---
 title: Power BI-vizualizáció fejlesztése
 description: Oktatóanyag egyéni Power BI-vizualizációk létrehozásához
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: 2dc1d0a316319867513dc9f25a195c3f2d1140b9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5d9ed20435069fa31707d9532141558351ec63ba
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415436"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194491"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Oktatóanyag: Power BI-vizualizáció fejlesztése
 
-Lehetővé tesszük a fejlesztők számára, hogy könnyedén hozzáadjanak a Power BI-hoz az irányítópultokon és a jelentésekben használható egyéni vizualizációkat. Hogy segítsük az első lépések megtételét, közzétettük az összes vizualizációnk kódját a GitHubon.
+Lehetővé tesszük a fejlesztők számára, hogy könnyedén hozzáadjanak a Power BI-hoz az irányítópultokon és a jelentésekben használható Power BI-vizualizációkat. Hogy segítsük az első lépések megtételét, közzétettük az összes vizualizációnk kódját a GitHubon.
 
-A vizualizációs keretrendszerrel együtt elérhetővé tettük a tesztelői csomagot és eszközöket is, hogy a közösség minél jobb minőségű vizualizációkat hozhasson létre a Power BI-hoz.
+A vizualizációs keretrendszerrel együtt elérhetővé tettük a tesztelői csomagot és eszközöket is, hogy a közösség minél jobb minőségű Power BI-vizualizációkat hozhasson létre a Power BI-hoz.
 
 Ez az oktatóanyag bemutatja, hogyan hozható létre egy egyéni Power BI-vizualizáció Circle Card néven, amely egy formázott mérési értéket jelenít meg egy kör belsejében. A Circle Card vizualizáció lehetővé teszi a kitöltőszín és a körvonal vastagságának testreszabását.
 

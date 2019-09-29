@@ -1,24 +1,24 @@
 ---
 title: Könyvjelzők támogatásának hozzáadása Power BI-vizualizációkhoz
 description: A Power BI-vizualizációk kezelni tudják a könyvjelzőváltást
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: c7fb8fa6fcf8c07f0d8f466892fff8d03a492a79
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: c19b67a59d0ecb4cbfbcf5ad8dd18886f440e164
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237275"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194439"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Könyvjelzők támogatásának hozzáadása Power BI-vizualizációkhoz
 
-A Power BI-jelentések könyvjelzőivel rögzíthető egy jelentésoldal konfigurált nézete és a vizualizáció kijelölési és szűrési állapota. Ez azonban további tevékenységet igényel az egyéni vizualizációk részéről a könyvjelző támogatása és a változásokra való helyes reagálás érdekében.
+A Power BI-jelentések könyvjelzőivel rögzíthető egy jelentésoldal konfigurált nézete és a vizualizáció kijelölési és szűrési állapota. Ez azonban további műveletet igényel a Power BI-vizualizációk részéről a könyvjelző támogatása és a változásokra való helyes reagálás érdekében.
 
 További információt az [Elemzések megosztása és történetek felépítése a Power BI könyvjelzőivel](https://docs.microsoft.com/power-bi/desktop-bookmarks) című cikkben talál.
 
@@ -32,7 +32,7 @@ Ha a vizualizáció más vizualizációkkal áll kölcsönhatásban, más vizual
 
 2. Frissítse a vizualizáció API-ját az 1.11.0 verzióra, hogy használhassa a `registerOnSelectCallback`-et a `SelectionManager` egy példányában. Olyan nem szűrő vizualizációkhoz szükséges, amelyek az `InteractivityService` helyett a `SelectionManager`-t használják.
 
-### <a name="how-custom-visuals-interact-with-power-bi-in-report-bookmarks"></a>Egyéni vizualizációk kölcsönhatása a Power BI-jal a jelentésbeli könyvjelzők szempontjából
+### <a name="how-power-bi-visuals-interact-with-power-bi-in-report-bookmarks"></a>Power BI-vizualizációk kölcsönhatása a Power BI-jal a jelentések könyvjelzőkiben
 
 Vizsgáljuk meg a következő esetet: Ön néhány könyvjelzőt szeretne létrehozni a jelentésoldalon, és mindegyiknek más a kijelölési állapota.
 

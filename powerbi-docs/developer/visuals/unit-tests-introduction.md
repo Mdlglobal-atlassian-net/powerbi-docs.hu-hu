@@ -1,20 +1,20 @@
 ---
 title: Egységtesztek hozzáadása Power BI-vizualizációs projektekhez - Bevezetés
 description: Ez a cikk egységtesztek írását mutatja be Power BI-vizualizációs projektekhez
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: f0040ef53fbbce8c7133e5f645bcbddb0bbfadea
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: bb9835ceba302716c2c4b1e28eda33c6e4b1db42
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70236723"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192473"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Oktatóanyag: Egységtesztek hozzáadása Power BI-vizualizációs projektekhez
 
@@ -616,4 +616,4 @@ A fájl hatókörében megtekintheti a forráskódot. A `Coverage` segédprogram
 
 ## <a name="next-steps"></a>Következő lépések
 
-A kész vizualizációt beküldheti közzétételre. További információ: [Egyéni vizualizációk közzététele az AppSource-ban](../office-store.md).
+A kész vizualizációt beküldheti közzétételre. További információ: [Power BI-vizualizációk közzététele az AppSource-ban](../office-store.md).

@@ -1,20 +1,20 @@
 ---
 title: A Power BI-vizualizációkban végzett adatnézeti-leképezések ismertetése
 description: Ez a cikk azt írja le, hogy hogyan alakítja át a Power BI az adatokat, mielőtt továbbadná azokat a vizualizációknak.
-author: asander
-ms.author: asander
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 07989183688045f34d78e71cdaad5045d080f436
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 77d5d6423c8246712d12dcc041d32ae73f68b72e
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237242"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193551"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>A Power BI-vizualizációkban végzett adatnézeti-leképezések ismertetése
 
@@ -618,7 +618,7 @@ A vizualizáció az alábbi kódban leírtak alapján kap adatstruktúrát (itt 
 
 Az adatnézetben kapott adatok mennyiségének szabályozására adatcsökkentési algoritmust alkalmazhat.
 
-Alapértelmezés szerint minden egyéni vizualizációnál alkalmazva van a top adatcsökkentési algoritmus, és a *count* (darabszám) értéke 1000 adatpontra van beállítva. Ez ugyanazzal az eredménnyel jár, mint a következő tulajdonságok módosítása a *capabilities.json* fájlban:
+Alapértelmezés szerint minden Power BI-vizualizációnál alkalmazva van a top adatcsökkentési algoritmus, és a *count* (darabszám) értéke 1000 adatpontra van beállítva. Ez ugyanazzal az eredménnyel jár, mint a következő tulajdonságok módosítása a *capabilities.json* fájlban:
 
 ```json
 "dataReductionAlgorithm": {
@@ -628,7 +628,7 @@ Alapértelmezés szerint minden egyéni vizualizációnál alkalmazva van a top 
 }
 ```
 
-A *count* értékét tetszőleges egész számra módosíthatja, amely akár 30000 is lehet. Az R-alapú egyéni vizualizációk akár 150000 sort is támogatnak.
+A *count* értékét tetszőleges egész számra módosíthatja, amely akár 30000 is lehet. Az R-alapú Power BI-vizualizációk akár 150 000 sort is támogatnak.
 
 ## <a name="data-reduction-algorithm-types"></a>Az adatcsökkentési algoritmusok típusai
 

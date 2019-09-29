@@ -1,6 +1,6 @@
 ---
 title: Automatizált Machine Learning a Power BI-ban (előzetes verzió)
-description: Machine Learning automatikus (AutoML) használata a Power bi-ban
+description: 'Útmutató: Automatizált Machine Learning (AutoML) funkció használata a Power BI-ban'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -12,271 +12,271 @@ ms.author: davidi
 LocalizationGroup: conceptual
 ms.openlocfilehash: 894e92687a6283ce71b253bd4dc635aca0c4673f
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61236450"
 ---
 # <a name="automated-machine-learning-in-power-bi-preview"></a>Automatizált Machine Learning a Power BI-ban (előzetes verzió)
 
-Automatizált a machine learning (AutoML) adatfolyamok esetében lehetővé teszi, hogy az üzleti elemzők betanításához, érvényesíteni, és meghívja a Machine Learning-modellek közvetlenül a Power bi-ban. Ez magában foglalja egy egyszerű felület, ahol elemzők az adatfolyamok megadásához használhatja a bemeneti adatokat a modell betanításához új gépi Tanulási modell létrehozásához. A szolgáltatás automatikusan kinyeri a leginkább releváns szolgáltatások, megfelelő algoritmus kiválasztása és hangolja és érvényesíti a gépi Tanulási modell. A modell tanítása, miután a Power BI automatikusan létrehozza egy jelentést, amely tartalmazza az eredményeket, amely ismerteti a teljesítmény érvényesítési és az eredményeket, hogy az elemzők. A modell majd minden új vagy frissített adatokon belül az adatfolyamot lehet meghívni.
+Az adatfolyamokhoz készült Automatizált Machine Learning (AutoML) funkció közvetlenül a Power BI-ban teszi lehetővé az üzleti elemzők számára a Machine Learning-modellek betanítását, ellenőrzését és meghívását. Tartalmazza egy új ML-modell egyszerű létrehozását, amelyben az elemzők saját adatfolyamaik használatával határozhatják meg a modell betanításához szükséges bemeneti adatokat. A szolgáltatás automatikusan kinyeri a legfontosabb jellemzőket, kiválaszt egy megfelelő algoritmust, majd finomhangolja és ellenőrzi az ML-modellt. A modell betanítása után a Power BI automatikusan létrehoz egy jelentést az ellenőrzött eredményekről, amely elmagyarázza az elemzőknek a teljesítményt és az eredményeket. Ezt követően a modell az adatfolyamon belül bármely új vagy frissített adattal meghívható.
 
-![Machine learning képernyő](media/service-machine-learning-automated/automated-machine-learning-power-bi-01.png)
+![Machine Learning-képernyő](media/service-machine-learning-automated/automated-machine-learning-power-bi-01.png)
 
-Automatizált machine learning szolgáltatás csak a Power BI Premium és a beágyazott kapacitások lévő adatfolyamok érhető el. Ebben az előzetes verzióban AutoML lehetővé teszi a bináris előrejelzési besorolási és regressziós modellek gépi tanulási modelleket taníthat be.
+Az automatizált gépi tanulás funkció csak a Power BI Premium és Embedded kapacitásokon üzemeltetett adatfolyamok számára érhető el. Ebben az előzetes verzióban bináris előrejelzési, besorolási és regressziós modellekhez taníthatja be a gépi tanulási modelleket az AutoML segítségével.
 
-## <a name="working-with-automl"></a>AutoML használata
+## <a name="working-with-automl"></a>Az AutoML használata
 
-[A Power BI-adatfolyamok](service-dataflows-overview.md) önkiszolgáló adatelőkészítéshez big Data-ajánlat. AutoML lehetővé teszi lehetővé az adatok előkészítési erőfeszítés létrehozásához a machine learning-modellek, közvetlenül a Power BI-ban.
+A [Power BI adatfolyamok](service-dataflows-overview.md) lehetővé teszik a big data típusú adatok önkiszolgáló adat-előkészítését. Az AutoML közvetlenül a Power BI-ban segíti a hatékonyabb adat-előkészítési munkát a gépi tanulási modellek létrehozásához.
 
-AutoML a Power BI lehetővé teszi az adatelemzők adatfolyamok használatával hozhat létre a machine learning-modellek egyszerűsített felhasználói élmény, csak a Power BI készségeit. A legtöbb mögött az ML-modellek létrehozása a data science guardrails, ügyeljen arra, hogy a modell előállított jó minőségű, és látható-e, így a folyamat a gépi Tanulási modellek létrehozásához használt teljes körű betekintést nyújt a a Power BI, automatizált.
+A Power BI-ban működő AutoML és az adatfolyamok használatával az adatelemzők egyszerűbben, és csupán a Power BI képességei révén építhetnek gépi tanulási modelleket. Az ML-modellek létrehozását támogató adatelemzés legnagyobb részét a Power BI automatizálja olyan biztonsági korlátokkal, amelyek szavatolják a létrehozott modell jó minőségét és átláthatóságát, így teljes betekintést nyújtanak az ML-modell létrehozását szolgáló folyamatokba.
 
-AutoML támogatja a **bináris előrejelzési**, **besorolási**, és **regressziós** adatfolyamok modelleket. Ezek olyan felügyelt machine learning-modellek, ami azt jelenti, hogy tanuljon előre jelezni az eredményekkel más megfigyelések múltbeli megfigyelések ismert eredményeit. A bemeneti adatkészlet egy AutoML modell betanításához egy olyan bejegyzéseket, amelyek **feliratú** az ismert eredményekkel együtt.
+Az AutoML az adatfolyamok **bináris előrejelzési**, **besorolási** és **regressziós** modelljeit támogatja. Ezek a felügyelt gépi tanulási modellek típusai, ami azt jelenti, hogy a korábbi megfigyelések eredményeinek betanulása révén jelzik előre más megfigyelések eredményeit. Az AutoML-modell betanítására szolgáló bemeneti adatkészlet az ismert eredményekkel **címkézett** rekordhalmaz.
 
-AutoML a Power BI integrálható [ML automatikus](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) származó a [Azure Machine Learning szolgáltatás](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) a gépi Tanulási modellek létrehozásának eljárásait. Azonban nem kell Azure-előfizetés AutoML használata a Power bi-ban. A képzés és a gépi Tanulási modelleket üzemeltető folyamat teljes egészében a Power BI szolgáltatás kezeli.
+A Power BI-beli AutoML az [Azure Machine Learning szolgáltatásból](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) integrálja az [automatizált gépi tanulást](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) az ML-modellek létrehozásához. Ennek ellenére az AutoML Power BI-beli használatához nincs szükség Azure-előfizetésre. Az ML-modellek betanításának és üzemeltetésének teljes folyamatát a Power BI szolgáltatás kezeli.
 
-Egy gépi Tanulási modellek tanítása, miután a AutoML automatikusan létrehozza a Power BI-jelentés, amely ismerteti a gépi Tanulási modell valószínűleg teljesítményét. AutoML explainability, kiemelve a fontos Véleményformálók többek között a bemeneteket az előrejelzés a modell által visszaadott befolyásoló által emeli ki. A jelentés alapvető metrikákat, a gépi Tanulási modell típusától függően a modell része.
+Egy ML-modell betanítása után az AutoML automatikusan létrehoz egy Power BI-jelentést, amely ismerteti az ML-modell valószínű teljesítményét. Az AutoML az áttekinthetőség érdekében kiemelten tünteti fel a bemeneti adatok között a modell előrejelzéseire legnagyobb hatást gyakorló tényezőket. A jelentés az ML-modell típusától függően a modellhez tartozó fő mérőszámokat is tartalmazza.
 
-A létrehozott jelentés egyéb oldalain statisztikai összegzését a modell és a képzési részletek megjelenítése. A statisztikai összegzés van, a felhasználók számára azt, hogy a modell teljesítményét, a standard szintű adatelemző mértékek meg lényeges. A képzési részleteit a modell létrehozásához a társított modellezési paraméterekkel futtató összes ismétlésének foglalják össze. Azt is ismerteti, hogyan minden egyes bemenet a gépi Tanulási modellek létrehozásához használt.
+A létrehozott jelentés más lapjain a modell statisztikai összegzése és a betanítási adatok láthatók. A statisztikai összegzés azon felhasználók számára fontos, akik látni szeretnék a modell teljesítményének szabványos adatelemzési mértékeit. A betanítási adatok összegzik a modell létrehozásához futtatott összes iterációt a kapcsolódó modellezési paraméterekkel együtt. Azt is leírja, hogy az ML-modell hogy használta fel az egyes bemeneteket.
 
-A gépi Tanulási modell adatait a kiértékelés ezután alkalmazhat. Az adatfolyam frissítésekor a rendszer automatikusan alkalmazza a gépi Tanulási modellek által létrehozott javaslatok az adatokhoz. Power bi-ban minden egyes adott előrejelzési pontszám, amely a gépi Tanulási modell rajongóknak magyarázattal is tartalmaz.
+Ezután alkalmazhatja az ML-modellt az adatok pontozásához. Az adatfolyamat frissítésekor a rendszer automatikusan alkalmazza az adatokra az ML-modell előrejelzéseit. A Power BI külön ismertetést nyújt az ML-modell által előállított minden egyes előrejelzési pontszámhoz.
 
-## <a name="creating-a-machine-learning-model"></a>A gépi tanulási modell létrehozása
+## <a name="creating-a-machine-learning-model"></a>Gépi tanulási modell létrehozása
 
-Ez a szakasz ismerteti, hogyan hozhat létre egy AutoML tanulási modell. 
+Ez a szakasz az AutoML tanulási modell létrehozását ismerteti. 
 
-### <a name="data-prep-for-creating-an-ml-model"></a>Adat-előkészítési egy gépi Tanulási modellek létrehozásához
+### <a name="data-prep-for-creating-an-ml-model"></a>Adat-előkészítés az ML-modell létrehozásához
 
-Hozzon létre egy gépi tanulási modellt a Power bi-ban, először hozzon létre az adatok egy adatfolyam az előzményadatok serkenti az eredményt információkkal szolgál a gépi Tanulási modell betanításához. Az adatfolyam konfigurálásával kapcsolatos részletekért lásd: [önkiszolgáló adat-előkészítési a Power bi-ban](service-dataflows-overview.md).
+Ha gépi tanulási modellt kíván létrehozni a Power BI-ban, először egy adatfolyamot kell létrehoznia az előzményalapú eredményekre vonatkozó információkból az ML-modell betanításához. Az adatfolyam konfigurálásához lásd: [Önkiszolgáló adat-előkészítés a Power BI-ban](service-dataflows-overview.md).
 
-A jelenlegi kiadásban a Power bi-ban csak egyetlen entitáshoz adatait használja a gépi Tanulási modell betanításához. Ezért ha több entitás tartalmaz előzményadatait, manuálisan csatlakoztatnia kell az adatok egy egyetlen adatfolyam entitásba. Számított oszlopok bármely üzleti metrikákat, lehet, hogy az előre jelezni kívánt eredményhez erős előrejelzőket is hozzá kell adnia.
+A Power BI jelenlegi kiadása csak egyetlen entitás adatait használja az ML-modell betanításához. Ezért ha az előzményalapú adatok több entitásból állnak, manuálisan kell összekötnie az adatokat, hogy egyetlen adatfolyam-entitást kapjon. Ezenkívül számított oszlopokat is fel kell vennie minden olyan üzleti metrikához, amely az előrejelezni kívánt eredmény erős előrejelzője lehet.
 
-AutoML a machine learning-modell betanításához meghatározott követelményekkel rendelkezik. Ezeket a követelményeket ismerteti, az alábbi szakaszok a megfelelő modellt típusok alapján.
+Az AutoML konkrét adatkövetelményeket ad meg a gépi tanulási modell betanításához. Ezeket a követelményeket az alábbi szakaszok ismertetik az egyes modellek szerint.
 
-### <a name="configuring-the-ml-model-inputs"></a>A gépi Tanulási modell bemeneti adatok konfigurálása
+### <a name="configuring-the-ml-model-inputs"></a>Az ML-modellek bemeneteinek konfigurálása
 
-Egy AutoML modell létrehozásához, válassza ki a gépi tanulás ikonra a **műveletek** korábbi adatok alapján, majd válassza az adatfolyamot entitás oszlop **adjon hozzá egy gépi tanulási modellt**.
+AutoML-modell létrehozásához válassza az előzményadatokat tartalmazó adatfolyam-entitás **Műveletek** oszlopában található ML ikont, majd válassza a **Machine Learning-modell**hozzáadása lehetőséget.
 
-![Adjon hozzá egy gépi tanulási modell](media/service-machine-learning-automated/automated-machine-learning-power-bi-02.png)
+![Gépi tanulási modell felvétele](media/service-machine-learning-automated/automated-machine-learning-power-bi-02.png)
 
-Egyszerű élmény indításakor álló egy varázslót, amely végigvezeti Önt a gépi Tanulási modellek létrehozásának folyamatán. A varázslóban az alábbi egyszerű lépéseket.
+Ekkor elindul az ML-modell létrehozásának egyszerű folyamata, amelyen egy varázsló vezeti végig. A varázsló a következő egyszerű lépéseket tartalmazza.
 
-1. Válassza ki az entitást a korábbi serkenti az eredményt és a mező, amelyek esetében szeretne előrejelzése
-2. Válassza ki a modell típusa alapján az előrejelzéses szeretné látni
-3. Válassza ki a bemeneti adatok a modellt, prediktív jelek használata
-4. Nevezze el a modellt, és mentse a konfigurációt
+1. Az előzményalapú eredményadat-entitás és az előrejelezni kívánt mező kiválasztása
+2. A modell kiválasztása az előrejelzés típusa alapján
+3. Azon bemenetek kiválasztása, amelyeket a modell előrejelzési jelként használhat
+4. A modell elnevezése és a konfiguráció mentése
 
-A korábbi serkenti az eredményt mező azonosítja a címke attribútum a következő képen látható, a gépi Tanulási modell betanításához.
+Az előzményalapú eredmények mezője azonosítja az ML-modell betanításának címkeattribútumát az alábbi kép szerint.
 
-![Korábbi serkenti az eredményt adatok kiválasztása](media/service-machine-learning-automated/automated-machine-learning-power-bi-03.png)
+![Előzményalapú eredményadatok kiválasztása](media/service-machine-learning-automated/automated-machine-learning-power-bi-03.png)
 
-A korábbi serkenti az eredményt a mező megadása esetén a AutoML elemzi a címke az adatokat használva azonosítja a gépi Tanulási modelleket, amelyek is vélik, hogy az adatok típusait, és a legnagyobb valószínűséggel gépi Tanulási modell típusa, amely képes tartani a következőkről javasol. 
+Az előzményalapú eredmények mezőjének megadásakor az AutoML elemzi a címke adatait az adatokhoz betanítható ML-modellek meghatározásához, és javaslatot tesz a legvalószínűbben betanítható ML-modellre. 
 
 > [!NOTE]
-> Néhány modell típusa nem támogatott a kiválasztott adatok.
+> Előfordulhat, hogy egyes modellek nem támogatottak a kiválasztott adatokhoz.
 
-AutoML is használható a gépi Tanulási modell betanításához bemenetei javasolja a kiválasztott entitás mezőinek elemzi. Ez a folyamat hozzávetőleges és statisztikai elemzésekhez alapul, ezért tekintse át a bemeneti adatok használt. A korábbi serkenti az eredményt mező (vagy a címke mező) függő bemenetet a gépi Tanulási modell betanításához hatással lesz a teljesítményét, mivel nem használható.
+Az AutoML elemzi a kiválasztott entitás minden egyes mezőjét, hogy javaslatot tehessen az ML-modell betanításához használható bemenetekre. Ez egy statisztikai elemzéseken alapuló hozzávetőleges folyamat, ezért tekintse át a felhasznált bemeneteket. Az előzményalapú eredmény (vagy címke) mezőjétől függő bemenetek nem használhatók az ML-modell betanítására, mert hatással lennének a teljesítményére.
 
 ![Beviteli mezők testreszabása](media/service-machine-learning-automated/automated-machine-learning-power-bi-04.png)
 
-Az utolsó lépésben a modell neve, és mentse a beállításokat.
+Az utolsó lépésben nevet adhat a modellnek, és mentheti a beállításait.
 
-Ezen a ponton kéri az adatfolyamot, amely megkezdi a gépi Tanulási modell a betanítási folyamat frissítése.
+Ekkor a rendszer felszólítja az adatfolyam frissítésére, és ezzel kezdetét veszi az ML-modell betanítása.
 
-### <a name="ml-model-training"></a>Gépi Tanulási modell betanítása
+### <a name="ml-model-training"></a>Az ML-modell betanítása
 
-Képzési AutoML modellek az adatfolyamot frissítés része. AutoML először képzési előkészíti az adatokat.
+Az ML-modellek betanítása az adatfolyamok frissítésének része. Az első lépésben az AutoML előkészíti az adatokat a betanításra.
 
-AutoML oszt fel egy tanítási és tesztelési adnia előzményi adatokat. A tesztelési adatkészletnél olyan visszatartási képzési után a modellek teljesítményének ellenőrzése szolgálja ki. Ezek is felismerte **betanítására és tesztelésére** entitások az adatfolyamban. A modell érvényesítése kereszt-ellenőrzési AutoML használ.
+Az AutoML az előzményadatokat betanítási és tesztelési adathalmazra osztja. A tesztelési adathalmaz egy validációs adatkészlet, amellyel a betanítás után ellenőrizhető a modell teljesítménye. Az adathalmazok **Betanítási és Tesztelési** entitásként szerepelnek az adatfolyamban. Az AutoML keresztvalidálást alkalmaz a modell ellenőrzéséhez.
 
-Ezután minden beviteli mező elemzett és imputálási van érvényben, amelyek hiányzó értéket lecseréli a helyettesített érték. Több különböző imputálási stratégiák AutoML használja. Ezután minden szükséges mintavételi és normalizálási tüntetjük fel az adatokat.
+Ezután a rendszer minden beviteli mezőt ellenőriz, és imputálás révén minden hiányzó értéket egy helyettesített értékkel vált fel. Az AutoML több különböző imputálási stratégiát használ. Ezt követően a modell alkalmazza az adatokra az összes szükséges mintavételezést és normalizálást.
 
-AutoML vonatkozik több átalakításokra a kijelölt beviteli mező jeho datovému typu és a statisztikai tulajdonságai alapján. AutoML bontsa ki a gépi Tanulási modell tanítása használt funkciók átalakításokat használ.
+Az AutoML számos átalakítást használ, amelyek az adattípus beviteli mezője és statisztikai tulajdonságai alapján lettek kiválasztva. Az AutoML ezeket az átalakításokat az ML-modell betanítása során igénybe vehető funkciók kinyeréséhez használja fel.
 
-A betanítási folyamat AutoML modellek különböző modellezési algoritmusokkal és a hiperparaméter beállítások keresése a modell a legjobb teljesítmény érdekében legfeljebb 50 ismétlések áll. Ezek a modellek teljesítményét a visszatartási tesztadatkészlet érvényesítést által adatokon. A képzési lépés során AutoML hoz létre több folyamatokat, és ezeket az ismétlések érvényesítése. A folyamat a modellek teljesítményének értékeléséhez bárhol néhány óra múlva, az adatkészlet és a dedikált kapacitás elérhető erőforrások méretétől függően néhány perctől időt vehet igénybe.
+Az AutoML-modellek betanítási folyamata a legjobb teljesítményű modell létrehozása érdekében akár 50 iterációt is tartalmazhat különböző modellezési algoritmusokkal és hiperparaméter-beállításokkal. Az egyes modellek teljesítményét a validációs tesztadatkészlettel történő értékelés ellenőrzi. Ebben a betanítási lépésben az AutoML számos folyamatot hoz létre az iterációk betanításához és ellenőrzéséhez. A modellek teljesítményének értékelése hosszabb időt vehet igénybe, amely néhány perctől több óráig terjedhet az adatkészlet méretétől és az elérhető dedikált kapacitási erőforrásoktól függően.
 
-Bizonyos esetekben a kész modell generált tanulás, ahol több modell segítségével jobban prediktív teljesítmény ensemble használhatja.
+Bizonyos esetekben az előállított végső modell az együttes tanulás módszerét is felhasználhatja, amely több modellt vesz igénybe a jobb előrejelzési teljesítményhez.
 
-### <a name="automl-model-explainability"></a>AutoML modell explainability
+### <a name="automl-model-explainability"></a>Az AutoML-modell áttekinthetősége
 
-Miután a modell rendelkezik betanítva, AutoML elemzi a bemeneti funkciói és a modell kimeneti közötti kapcsolat. Azt értékeli a magnitude és irányának módosítása a modell kimeneti visszatartási teszt adatkészlet az egyes bemeneti szolgáltatásokhoz. Ez más néven a *fontosság funkció*.
+A modell betanítása után az AutoML elemzi a kapcsolatot a bemeneti funkciók és a modell kimenete között. Felméri a modell kimenetében bekövetkezett változás nagyságát és irányát minden bemeneti funkció validációs tesztadatkészletére. Ez a *funkció fontossága*.
 
-![A szolgáltatás fontosság](media/service-machine-learning-automated/automated-machine-learning-power-bi-05.png)
+![A funkció fontossága](media/service-machine-learning-automated/automated-machine-learning-power-bi-05.png)
 
-### <a name="automl-model-report"></a>AutoML modell jelentés
+### <a name="automl-model-report"></a>AutoML modell-jelentés
 
-AutoML hoz létre a Power BI-jelentés, amely összefoglalja a modell teljesítményét, és a globális szolgáltatás fontosság érvényesítése során. A jelentés összesíti az eredményeket a gépi Tanulási modellt alkalmaz a visszatartási Tesztadatok és összehasonlítja az előrejelzés eredményét ismert értékekkel.
+Az AutoML létrehoz egy Power BI-jelentést, amely összegzi a modell validáció során nyújtott teljesítményét, valamit a globális funkciófontosságot. A jelentés összefoglalja az ML-modell validációs tesztadatokra alkalmazásának eredményeit és összeveti az előrejelzéseket az ismert kimeneti értékekkel.
 
-A modell jelentést, a teljesítményét annak tekintheti meg. Emellett ellenőrizheti, hogy a modell fontos Véleményformálók összhangba kerüljenek az üzleti elemzések az ismert eredményekkel kapcsolatban.
+A modellhez tartozó jelentés áttekintésével megértheti annak teljesítményét. Azt is ellenőrizheti, hogy a modell fő befolyásolói megfelelnek-e az ismert eredményekre vonatkozó üzleti információknak.
 
-A diagramok és a mértékeket a modell teljesítményét, a jelentés leírására szolgáló modell-típustól függnek. A következő szakaszok ezeket teljesítménydiagramok és mértékek ismerteti.
+A jelentésben a modell teljesítményének leírásához használt diagramok és mértékek a modell típusától függenek. A teljesítménydiagramokat és -mértékeket a következő szakaszok mutatják be.
 
-A jelentés további oldalainak előfordulhat, hogy adja meg a data science szempontjából a modell statisztikai mértékeket. Például a **bináris előrejelzési** jelentés nyereség diagramot és a ROC-görbe a modell tartalmazza.
+A jelentés egyéb oldalai adatelemzési szempontból írhatnak le statisztikai mértékeket a modellről. A **bináris előrejelzéshez** tartozó jelentés például tartalmaz egy nyereségi diagramot és a modell ROC-görbéjét.
 
-A jelentések is tartalmazzák a **képzési részletek** hogyan a modell betanított volt, és tartalmazza az egyes ismétlésének a modellek teljesítményének leíró diagram leírását tartalmazó lapon futtatja.
+A jelentésekhez egy **Betanítási adatok** oldal is tartozik, amely leírja a modell betanításának módját, és grafikonon ábrázolja a modell teljesítményét minden egyes iteráció futtatásakor.
 
 ![Tanulás részletei](media/service-machine-learning-automated/automated-machine-learning-power-bi-06.png)
 
-Ezen az oldalon egy másik szakasz ismerteti, hogy a imputálási metódus hiányzó értékeit az adatbeviteli mezők kitöltéséhez is, hogy hogyan minden beviteli mező a modellben használt a szolgáltatások kibontásához lettek átalakítva. A kész modell által használt paraméterek is tartalmaz.
+Az oldal egy másik szakasza a bemeneti értékek hiányzó értékeinek pótlására szolgáló imputálási módszert írja le, valamint azt, hogy miképpen történt az egyes bemeneti mezők átalakítása a modellben használt jellemzők kinyeréséhez. Tartalmazza a végső modell által használt paramétereket is.
 
-![További információ a modell](media/service-machine-learning-automated/automated-machine-learning-power-bi-07.png)
+![További információk a modellhez](media/service-machine-learning-automated/automated-machine-learning-power-bi-07.png)
 
-Ha a létrehozott modellt használ ensemble tanulás, akkor a **képzési részletek** oldal is egy a ensemble, valamint paramétereket lévő minden egyes alkotó modell súlyát leíró szakaszt.
+Ha a modell az együttes tanulás módszerét használta, akkor a **Betanítási adatok** oldal egy szakasza leírja az együttest alkotó minden egyes modell súlyozását és paramétereit.
 
-![A ensemble súly](media/service-machine-learning-automated/automated-machine-learning-power-bi-08.png)
+![Súlyozás az együttesen belül](media/service-machine-learning-automated/automated-machine-learning-power-bi-08.png)
 
-## <a name="applying-the-automl-model"></a>A AutoML modell alkalmazása
+## <a name="applying-the-automl-model"></a>Az AutoML-modell alkalmazása
 
-Ha elégedett a létrehozott gépi Tanulási modell teljesítményét, alkalmazhat, új vagy frissített adatok az adatfolyam frissítésekor. Ezt megteheti is a modell jelentésből kiválasztásával a **alkalmaz** gombra a jobb felső sarokban.
+Ha elégedett a létrehozott ML-modell teljesítményével, akkor az adatfolyam minden frissülésekor alkalmazhatja új vagy frissített adatokra. Ezt a modellhez tartozó jelentésből is kezdeményezheti, ha a jobb felső sarokban lévő **Alkalmaz** gombra kattint.
 
-A alkalmazni, a gépi Tanulási modellt az entitást, amelyhez azt kell alkalmazni, és a egy előtagot az oszlopok, amely belekerül a modell kimeneti az entitás nevét kell megadnia. Az alapértelmezett előtag, az oszlopneveket számára, a modell neve. A *alkalmaz* függvény előfordulhat, hogy tartalmazza a modelltípus vonatkozó további paraméterek.
+Az ML-modell alkalmazásához meg kell adnia annak az entitásnak a nevét, amelyre alkalmazni kívánja azt, és egy előtagot az entitáshoz hozzáadandó, a modell kimenetét jelző oszlopokhoz. Az oszlopnevek alapértelmezett előtagja a modell neve. Az *Alkalmazás* funkció a modell típusára jellemző további paramétereket is tartalmazhat.
 
-Egy új adatfolyamot entitás alkalmazása a gépi Tanulási modellt hoz létre az utótag **< modell_neve > bővített**. Például ha alkalmaz a _PurchaseIntent_ a modell a _OnlineShoppers_ entitáshoz, a kimenetet fog létrehozni a **OnlineShoppers bővített PurchaseIntent**.
+Az ML-modell alkalmazása egy új adatfolyam-entitást hoz létre az **enriched <model_name>** utótaggal. Ha például a _PurchaseIntent_ modellt alkalmazza az _OnlineShoppers_ entitásra, a kimenet az **OnlineShoppers enriched PurchaseIntent** entitást hozza létre.
 
-A kimeneti entitás jelenleg nem használható a Power Query-szerkesztőben a gépi Tanulási modell eredményeinek megtekintése. A kimeneti oszlopok mindig jeleníti meg null eredményezi. Tekintse meg az eredményeket, egy második kimeneti utótagjával rendelkező entitás **< modell_neve > Előnézet bővített** jön létre a modell alkalmazása esetén.
+Jelenleg a kimeneti entitás nem használható az ML-modell eredményeinek Power Query-szerkesztőben való megtekintéséhez. A kimeneti oszlopok eredménye mindig null. Az eredmények megtekintéséhez a modell alkalmazásakor egy második kimeneti entitás is létrejön **enriched <model_name> Preview** utótaggal.
 
-Frissítenie kell az adatfolyamot, a Lekérdezésszerkesztő az eredmények előnézetének megtekintése.
+Frissítse az adatfolyamot, hogy az eredményeket megtekinthesse a Lekérdezésszerkesztőben.
 
 ![Lekérdezésszerkesztő](media/service-machine-learning-automated/automated-machine-learning-power-bi-09.png)
 
-Amikor alkalmazza a modellt, AutoML mindig megőrzi az előrejelzések naprakész az adatfolyamot frissítésekor.
+A modell alkalmazásakor az AutoML mindig naprakészen tartja az előrejelzéseket, ha az adatfolyam frissül.
 
-AutoML minden egyes sorára, amely azt pontszámmodell rajongóknak magyarázattal is tartalmaz a kimeneti entitásban.
+Az AutoML külön magyarázatot tartalmaz minden sorra, amelyet a kimeneti entitásban pontoz.
 
-Az elemzések és előrejelzések a gépi Tanulási modell alapján a Power BI-jelentésekben használatához csatlakozhat a kimeneti entitáshoz a Power BI Desktop használatával a **adatfolyamok** összekötő.
+Ha Power BI-jelentésben szeretné felhasználni az ML-modell elemzéseit és előrejelzéseit, akkor a Power BI Desktopból kapcsolódhat a kimeneti entitáshoz az **adatfolyamok**-összekötő használatával.
 
-## <a name="binary-prediction-models"></a>Bináris prediktív modellek
+## <a name="binary-prediction-models"></a>Bináris előrejelzési modellek
 
-Bináris prediktív modellek, több korábbi néven **bináris osztályozási modell**, adatkészlet besorolása a két csoportra szolgálnak. Események, amelyeken egy bináris eredménye, hogy egy értékesítési lehetőséggel konvertálja, például egy fiókot fog churn, hogy e számla alapján kell fordítani a Time; előre jelezni kell a tranzakció-e rosszindulatú, és így tovább.
+A bináris előrejelzési modellek, vagy hivatalos nevükön a **bináris besorolási modellek** egy adathalmaz két csoportba sorolására szolgálnak. Olyan eseményeket jeleznek előre, amelyeknek kétféle kimenetelük lehet, például hogy konvertálódik-e egy értékesítési lehetőség, megszűnik-e egy felhasználói fiók, időben befizetnek-e egy számlát, megtévesztő-e egy tranzakció stb.
 
-Mivel az eredmény bináris, a Power bi-ban a címkét egy bináris előrejelzési modell egy logikai értéket, a "folyamatban" feliratú ismert eredményeket kell vár **igaz** vagy **hamis**. Például egy értékesítési lehetőséghez átalakítás modellben megnyert értékesítési lehetőségeket vannak ellátva true, false (hamis), amelyek elvesztek vannak ellátva és a nyitott értékesítési lehetőségeket vannak ellátva null értékű.
+Mivel bináris az eredmény, a Power BI logikai címkét vár el a bináris előrejelzési modelltől, az érték tehát vagy **igaz**, vagy **hamis** lehet. Egy értékesítési konverziós modellben például a sikeresen megvalósult lehetőségek igaz címkét, a meghiúsult lehetőségek hamis címkét, a nyitott lehetőségek null címkét kapnak.
 
-Egy bináris előrejelzési modell kimenete egy valószínűségi pontszámának létrehozásához, amely azonosítja annak a valószínűségét, hogy a felirat érték a true megfelelő eredménye érik el.
+A bináris előrejelzési modell kimenete egy valószínűségi pontszám, amely annak a valószínűségét jelzi, hogy megvalósul-e a címke igaz értékének megfelelő eredmény.
 
-### <a name="training-a-binary-prediction-model"></a>Egy bináris előrejelzési modell betanítása
+### <a name="training-a-binary-prediction-model"></a>A bináris előrejelzési modell betanítása
 
-Egy bináris előrejelzési modell létrehozásához, a bemeneti entitás a tanítási adatokat tartalmazó azonosításához az utolsó ismert eredményekkel korábbi serkenti az eredményt mezőként kell rendelkeznie egy logikai típusú mező.
+Bináris előrejelzési modell létrehozásához a betanítási adatokat tartalmazó bemeneti entitásnak tartalmaznia kell egy logikai mezőt, amely az előzményalapú eredmények mezője, és a korábbi ismert eredményeket határozza meg.
 
 Előfeltételek:
 
-* Egy logikai típusú mezőt kell használni, mint a korábbi serkenti az eredményt mező
-* Az előzményadatok 50 sor legalább szükség az egyes eredmények
+* Az előzményalapú eredmény mezőjeként logikai mezőt kell használni
+* Minden eredményosztályhoz legalább 50 sor előzményalapú adatra van szükség
 
-Általában egy más típusú mezők azonosítja az elmúlt eredményekkel, ha hozzáadhat egy számított oszlopot, ezeket egy logikai Power Queryvel történő átalakítására.
+Általában ha a korábbi eredményeket egy másik adattípus mezői határozzák meg, felvehet egy számított oszlopot, amely a Power Query használatával logikai értékké alakítja őket.
 
-A létrehozási folyamat számára egy bináris előrejelzési modell a következő azonos lépések egyéb AutoML modelleket, a szakaszban leírt **konfigurálása a gépi tanulás modellbemenetek** felett.
+A bináris előrejelzési modell létrehozási folyamata ugyanazokat a lépéseket követi, mint a többi AutoML-modellé, ahogy azt **Az ML-modellek bemeneteinek konfigurálása** című, fentebb olvasható szakasz ismerteti.
 
-### <a name="binary-prediction-model-report"></a>Bináris előrejelzési modell jelentés
+### <a name="binary-prediction-model-report"></a>A bináris előrejelzési modellhez tartozó jelentés
 
-A bináris előrejelzési modell kimenetként hoz létre, hogy egy rekord éri el az eredménye IGAZ, logikai címke értéke által meghatározott valószínűség. A jelentés tartalmazza a valószínűségi küszöbértéke, amely befolyásolja, hogyan legyenek értelmezve a valószínűségi küszöbértéke kisebb és nagyobb pontszámokat szeletelőt.
+A bináris előrejelzési modell kimenete annak a valószínűsége, hogy a rekord megvalósítja-e a logikai címke által meghatározott Igaz értéket. A jelentéshez tartozik egy szeletelő a valószínűségi küszöbérték meghatározásához, amely hatással van a küszöb feletti és alatti pontszámok értékelésére.
 
-A jelentés azt ismerteti, hogy a modell teljesítményét *valódi pozitívok*, *Vakriasztások*, *igaz negatív* és *téves negatív*. Valódi pozitívok és valódi negatív a két osztály az eredmény adatok helyesen előre jelzett eredményekkel. Vakriasztások eredmények, a hamis értéket, a tényleges logikai címke volt, de TRUE előrejelzett is. Ezzel szemben téves negatív olyan eredményeket, ahol a tényleges logikai címke értéke igaz volt, de voltak előre meghatározott hamis értéket.
+A jelentés az *Igaz pozitív*, *Hamis pozitív*, *Igaz negatív* és *Hamis negatív* kifejezésekkel mutatja be a modell teljesítményét. Az Igaz pozitív és az Igaz negatív értékek a két osztály pontosan előrejelzett eredményeit jelölik az eredményadatokban. A Hamis pozitív értékek olyan eredmények, amelyek az előrejelzés szerint Igazak voltak, de végül mégis a Hamis logikai címkét kapták. A Hamis negatív értékeknél az ellenkezője történt: az előrejelzés Hamis volt, de az eredmény tényleges logikai címkéje Igaz.
 
-Mértékek, például a pontosság és a már ismert, az előre jelzett eredményekkel a valószínűségi küszöbértéke hatását ismertetik. A valószínűségi küszöbértéke szeletelő segítségével válassza ki a küszöbértéket, amellyel éri el a pontosság és a visszaírási kiegyensúlyozott kompromisszumot.
+A mértékek, például a Pontosság és a Visszahívás, a valószínűségi küszöb előrejelzett eredményekre gyakorolt hatását írják le. A valószínűségi szeletelő használatával olyan küszöböt választhat, amely kiegyensúlyozott kompromisszumot jelent a Pontosság és a Visszahívás között.
 
-![Pontosság előzetes verzió](media/service-machine-learning-automated/automated-machine-learning-power-bi-10.png)
+![Pontossági előnézet](media/service-machine-learning-automated/automated-machine-learning-power-bi-10.png)
 
-A **pontossága jelentés** a modell jelentés tartalmazza a *halmozott nyereség* diagram és a ROC-görbe a modellhez. Ezek a modellek teljesítményének statisztikai intézkedéseket. A jelentések a diagramokon látható leírását tartalmazzák.
+A modellhez tartozó jelentés **Pontossági jelentés** oldala tartalmaz egy *Összesített nyereségek* diagramot és a modell ROC-görbéjét. Ezek a modell teljesítményének statisztikai mértékei. A jelentésekben megtalálható a feltüntetett diagramok leírása.
 
-![Pontosság Jelentéskezelő képernyőn](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
+![A pontossági előnézet képernyője](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
 
-### <a name="applying-a-binary-prediction-model"></a>Egy bináris előrejelzési modell alkalmazása
+### <a name="applying-a-binary-prediction-model"></a>A bináris előrejelzési modell alkalmazása
 
-A alkalmazni egy bináris előrejelzési modell, meg kell adnia az entitás, amelyre az előrejelzés a gépi Tanulási modellt a alkalmazni szeretné az adatokat. Más paramétereket tartalmazzák a kimeneti oszlopnév-előtag és a valószínűségi küszöbértéke az Írisz az előre jelzett serkenti az eredményt.
+A bináris előrejelzési modell használatához meg kell adnia azt az entitást, amelynek adataira alkalmazni szeretné az ML-modell előrejelzéseit. További paraméter például a kimeneti oszlop nevének előtagja és az előrejelzett eredmény besorolásához használt valószínűségi küszöb.
 
 ![Előrejelzési bemenetek](media/service-machine-learning-automated/automated-machine-learning-power-bi-12.png)
 
-Ha egy bináris előrejelzési modell alkalmazza, három kimeneti oszlopok hozzáadása a jelentéstétellel kimeneti entitás. Ezek a **PredictionScore**, **PredictionOutcome** és **PredictionExplanation**. Az oszlopok neveit az entitásban meg, ha a modell alkalmazandó előtagot kell.
+A bináris előrejelzési modell alkalmazásakor a modell három kimeneti oszlopot ad hozzá a kiegészített kimeneti entitáshoz. Ezek a következők: **PredictionScore**, **PredictionOutcome** és **PredictionExplanation**. Az entitásban szereplő oszlopnevek előtagja a modell alkalmazásakor jön létre.
 
-A **PredictionOutcome** oszlop tartalmazza az előre jelzett serkenti az eredményt címkét. A küszöbérték átlépését valószínűségek rekordokat vannak előre jelzett, valószínűleg az eredmény elérése érdekében, és azok alá vannak, nem valószínű, hogy az eredmény elérése érdekében előre meghatározott.
+A **PredictionOutcome** oszlop tartalmazza az előrejelzett eredmény címkéjét. A küszöb feletti valószínűségű rekordok valószínűleg elérik a várt eredményt, a küszöb alatti rekordok valószínűleg nem érik el azt.
 
-A **PredictionExplanation** oszlop tartalmazza az adott hatást a bemeneti funkciói volt magyarázata a **PredictionScore**. Ez a bemeneti funkciói az előrejelzés súlyozását JSON formátumú gyűjteménye.
+A **PredictionExplanation** oszlop annak a magyarázatát tartalmazza, hogy a bemeneti funkciók milyen konkrét hatást gyakoroltak a **PredictionScore** oszlopra. Ez az előrejelzéshez felhasznált súlyozások és bemeneti funkciók JSON-formázású gyűjteménye.
 
-## <a name="classification-models"></a>Képbesorolási modellek
+## <a name="classification-models"></a>Besorolási modellek
 
-Képbesorolási modellek segítségével több csoport vagy osztály az adatkészlet besorolása.  Eseményeket, amelyek több lehetséges kimenetek, például az ügyfél valószínűleg egy nagyon magas, magas, közepes vagy alacsony a Csoportélettartam értékének; e egyike előre jelezni kell -e alapértelmezett kockázatát a magas, közepes, alacsony vagy nagyon alacsony; és így tovább.
+A besorolási modellek egy adatkészlet több csoportba vagy osztályba sorolására szolgálnak.  Olyan események előrejelzésére használhatók, ahol több lehetőség közül egy eredmény valósulhat meg, például egy vásárló élettartam-értéke nagyon magas, magas, közepes, vagy alacsony lehet; az alapértelmezett kockázat magas, mérsékelt, alacsony, vagy nagyon alacsony lehet, stb.
 
-A valószínűségi pontszámának létrehozásához, amely azonosítja annak a valószínűségét, hogy egy rekordot a feltételeknek, egy adott osztály elérése érdekében. a besorolási modell kimenete.
+A besorolási modell kimenete egy valószínűségi pontszám, amely annak a valószínűségét határozza meg, hogy egy rekord megvalósítja-e egy adott osztály feltételeit.
 
-### <a name="training-a-classification-model"></a>A besorolási modell tanítása
+### <a name="training-a-classification-model"></a>A besorolási modell betanítása
 
-A bemeneti entitást tartalmazó osztályozási modell a betanítási adatok, a korábbi serkenti az eredményt mező, amely azonosítja az utolsó ismert eredményekkel rendelkeznie kell egy karakterlánc- vagy numerikus mező.
+A besorolási modell betanítási adatait tartalmazó bemeneti entitásnak tartalmaznia kell egy karakterláncot vagy egy numerikus mezőt, amely az előzményalapú eredmények mezője, és a korábbi ismert eredményeket határozza meg.
 
 Előfeltételek:
 
-* Az előzményadatok 50 sor legalább szükség az egyes eredmények
+* Minden eredményosztályhoz legalább 50 sor előzményalapú adatra van szükség
 
-A létrehozási folyamat esetében ugyanaz a besorolási modell a következő lépések egyéb AutoML modelleket, a szakaszban leírt **konfigurálása a gépi tanulás modellbemenetek** felett.
+A besorolási modell létrehozási folyamata ugyanazokat a lépéseket követi, mint a többi AutoML-modellé, ahogy **Az ML-modellek bemenetének konfigurálása** című, fentebb olvasható szakasz ismerteti.
 
-### <a name="classification-model-report"></a>Osztályozási modell jelentés
+### <a name="classification-model-report"></a>A besorolási modellhez tartozó jelentés
 
-A besorolási modell jelentés előállítása a gépi Tanulási modellt alkalmaz a visszatartási adatok, és összehasonlítja az előrejelzett osztály egy rekord a tényleges ismert osztállyal teszteléséhez.
+A besorolási modellhez tartozó jelentés létrehozásához a rendszer a validációs tesztadatokra alkalmazza az ML-modellt, és összehasonlítja a rekord előrejelzett osztályát a ténylegesen megismert osztállyal.
 
-A modell jelentés egy diagramot, amely tartalmazza a megfelelő és nem megfelelően osztályozott rekordokat az egyes ismert áttekintését tartalmazza.
+A jelentés egy diagramot tartalmaz minden egyes ismert osztály pontosan és pontatlanul besorolt rekordjairól.
 
-![Modell-jelentés](media/service-machine-learning-automated/automated-machine-learning-power-bi-13.png)
+![A modellhez tartozó jelentés](media/service-machine-learning-automated/automated-machine-learning-power-bi-13.png)
 
-Egy további osztály-specifikus drilldown lehetővé teszi, hogy hogyan oszlanak meg az adatokat egy ismert osztály elemzése. Ez magában foglalja a más osztályok, amelyben az adott osztály ismert rekordok várhatóan misclassified lehet.
+Egy további osztályspecifikus részletezés lehetővé teszi annak elemzését, hogy egy ismert osztály előrejelzései miképpen oszlanak meg. Ebbe azok az osztályok is beletartoznak, ahol az ismert osztály rekordjainak besorolása valószínűleg helytelen.
 
-![Elemzése – jelentés](media/service-machine-learning-automated/automated-machine-learning-power-bi-14.png)
+![Elemzési jelentés](media/service-machine-learning-automated/automated-machine-learning-power-bi-14.png)
 
-A modell magyarázata a jelentésben szereplő minden egyes osztály a felső előrejelzőket is tartalmaz.
+A jelentésben szereplő modell magyarázata az osztályok legfontosabb előrejelzőit is tartalmazza.
 
-A besorolási modell jelentést is tartalmaz, minden olyan modell esetében a lapok hasonló képzési részletei lap, a szakaszban leírt módon **AutoML modell jelentés** a cikk elején.
+A besorolási modellhez tartozó jelentésben a többi modelltípushoz hasonlóan szerepel egy Betanítási adatok oldal, amelyet a feljebb olvasható **Az AutoML-modellhez tartozó jelentés** szakasz ismertet.
 
 ### <a name="applying-a-classification-model"></a>A besorolási modell alkalmazása
 
-A alkalmazni egy besorolási gépi Tanulási modellt, meg kell adnia az entitás a bemeneti adatokat és a kimeneti oszlopnév-előtag.
+A besorolási ML-modell alkalmazásához meg kell adnia a bemeneti adatokat tartalmazó entitást és a kimeneti oszlop nevének előtagját.
 
-A besorolási modell alkalmazásakor hozzáadja három kimeneti oszlopok a jelentéstétellel kimeneti entitáshoz. Ezek a **PredictionScore**, **PredictionClass** és **PredictionExplanation**. Az oszlopok neveit az entitásban meg, ha a modell alkalmazandó előtagot kell.
+A besorolási modell alkalmazásakor a modell három kimeneti oszlopot ad hozzá a kiegészített kimeneti entitáshoz. Ezek a következőek: **PredictionScore**, **PredictionClass** és **PredictionExplanation**. Az entitásban szereplő oszlopnevek előtagja a modell alkalmazásakor jön létre.
 
-A **PredictionClass** oszlop tartalmazza a rekord a nagy valószínűséggel előrejelzett osztály. A **PredictionScore** oszlop tartalmazza a valószínűség pontszámok a rekord minden lehetséges osztályhoz.
+A **PredictionClass** oszlop a rekord legvalószínűbb előrejelzett osztályát tartalmazza. A **PredictionScore** oszlop a rekord valószínűségi pontszámainak listáját tartalmazza minden lehetséges osztályhoz.
 
-A **PredictionExplanation** oszlop tartalmazza az adott hatást a bemeneti funkciói volt magyarázata a **PredictionScore**. Ez a bemeneti funkciói az előrejelzés súlyozását JSON formátumú gyűjteménye.
+A **PredictionExplanation** oszlop annak a magyarázatát tartalmazza, hogy a bemeneti funkciók milyen konkrét hatást gyakoroltak a **PredictionScore** oszlop értékeire. Ez az előrejelzéshez felhasznált súlyozások és bemeneti funkciók JSON-formázású gyűjteménye.
 
 ## <a name="regression-models"></a>Regressziós modellek
 
-Regressziós modellek segítségével előre jelezni az értéket, például a bevétel nagy valószínűséggel abban az esetben az értékesítési üzlet, a csoportélettartam értékének egy olyan fiók, a Kinnlevőségek számlát, amely nagy eséllyel kell fizetni, a dátum, amelyen számla alapján fizetendő összeg , és így tovább.
+A regressziós modellek olyan értékek előrejelzésére szolgálnak, mint például egy értékesítési ügylet várható bevétele, egy előfizetői fiók élettartama, egy várhatóan beérkező kintlevőség értéke, egy számla lehetséges befizetésének dátuma stb.
 
-Egy regressziós modell kimenete az előre jelzett érték.
+A regressziós modell kimenete az előrejelzett érték.
 
-### <a name="training-a-regression-model"></a>Egy regressziós modell tanítása
+### <a name="training-a-regression-model"></a>A regressziós modell betanítása
 
-Egy regressziós modell a betanítási adatok tartalmazó bemeneti entitásnak rendelkeznie kell egy számmező mint a korábbi serkenti az eredményt mező, amely azonosítja az utolsó ismert serkenti az eredményt értékeket.
+A regressziós modell betanítási adatait tartalmazó bemeneti entitásnak tartalmaznia kell egy numerikus mezőt, amely az előzményalapú eredmények mezője, és a korábbi ismert eredményeket határozza meg.
 
 Előfeltételek:
 
-* Az előzményadatok 100 sor legalább egy regressziós modell megadása kötelező
+* Regressziós modellhez legalább 100 sor előzményalapú adatra van szükség
 
-A létrehozási folyamat esetében ugyanaz a regressziós modell a következő lépések egyéb AutoML modelleket, a szakaszban leírt **konfigurálása a gépi tanulás modellbemenetek** felett.
+A regressziós modell létrehozási folyamata ugyanazokat a lépéseket követi, mint a többi AutoML-modellé, ahogy az **ML-modellek bemenetének konfigurálása** című, fentebb olvasható szakasz ismerteti.
 
-### <a name="regression-model-report"></a>Regressziós modell jelentés
+### <a name="regression-model-report"></a>A regressziós modellhez tartozó jelentés
 
-Az egyéb AutoML modell jelentések, például a regressziós jelentést a modellt alkalmaz a visszatartási Tesztadatok eredményeinek alapul.
+Hasonlóan a többi AutoML-jelentéshez, a regressziós jelentés is a modell validációs tesztadatokra alkalmazásának eredményein alapul.
 
-A modell jelentés egy diagramot, amely összehasonlítja a tényleges érték előre jelzett értékek tartalmazza. Ebben a diagramban a átlós közötti távolságot azt jelzi, hogy a hiba az előrejelzéshez.
+A modellhez tartozó jelentés egy grafikonon veti össze az előrejelzett értékeket a tényleges értékekkel. A grafikonon az átlós vonaltól való távolság jelzi az előrejelzés hibáit.
 
-A fennmaradó hiba diagram visszatartási teszt adatkészlet különböző értékek átlagos hiba százalékos elosztását mutatja. A vízszintes tengely megjelenítése a gyakoriságát, vagy az értékek száma a tartományon a buborék méretét az a csoport a tényleges érték átlagát jelöli. A függőleges tengely az átlagos maradék hiba.
+A maradványhiba-diagram a különböző értékek átlagos hibaeloszlását mutatja be százalékosan a validációs tesztadatkészletben. A vízszintes tengely a tényleges érték középértékét jelzi a csoportban, a buborékok mérete az értékek gyakoriságát vagy számát mutatja az adott tartományban. A függőleges tengely az átlagos maradványhiba.
 
-![Maradék hiba diagram](media/service-machine-learning-automated/automated-machine-learning-power-bi-15.png)
+![Maradványhiba-grafikon](media/service-machine-learning-automated/automated-machine-learning-power-bi-15.png)
 
-A regressziós modell jelentést is tartalmaz minden olyan modell esetében a jelentések például képzési Részletek lap, a szakaszban leírt módon **AutoML modell jelentés** felett.
+A regressziós modellhez tartozó jelentésben a többi modelltípushoz hasonlóan szerepel egy Betanítási adatok oldal, ahogy **Az AutoML-modellhez tartozó jelentés** című szakasz ismerteti.
 
-### <a name="applying-a-regression-model"></a>Egy regressziós modell alkalmazása
+### <a name="applying-a-regression-model"></a>Regressziós modell alkalmazása
 
-Egy regressziós gépi Tanulási modellt alkalmaz, meg kell adnia az entitás a bemeneti adatokat és a kimeneti oszlopnév-előtag.
+A regressziós ML-modell alkalmazásához meg kell adnia a bemeneti adatokat tartalmazó entitást és a kimeneti oszlop nevének előtagját.
 
-![A alkalmazni regresszió](media/service-machine-learning-automated/automated-machine-learning-power-bi-16.png)
+![Regresszió alkalmazása](media/service-machine-learning-automated/automated-machine-learning-power-bi-16.png)
 
-Egy regressziós modellt alkalmazzák, amikor két kimeneti oszlopok hozzáadása a jelentéstétellel kimeneti entitás. Ezek a **PredictionValue**, és **PredictionExplanation**. Az oszlopok neveit az entitásban meg, ha a modell alkalmazandó előtagot kell.
+A regressziós modell alkalmazásakor a modell két kimeneti oszlopot ad hozzá a kiegészített kimeneti entitáshoz. Ezek a **PredictionValue** és a **PredictionExplanation** oszlopok. Az entitásban szereplő oszlopnevek előtagja a modell alkalmazásakor jön létre.
 
-A **PredictionValue** oszlop tartalmazza az előre jelzett érték a rekord az adatbeviteli mezők alapján. A **PredictionExplanation** oszlop tartalmazza az adott hatást a bemeneti funkciói volt magyarázata a **PredictionValue**. Ez a bemeneti funkciói súlyozását JSON formátumú gyűjteménye.
+A **PredictionValue** oszlop a rekord előrejelzett értékét tartalmazza a bemeneti mezők alapján. A **PredictionExplanation** oszlop annak a magyarázatát tartalmazza, hogy a bemeneti funkciók milyen konkrét hatást gyakoroltak a **PredictionValue** oszlop értékeire. Ez a súlyozások és bemeneti funkciók JSON-formázású gyűjteménye.
 
 ## <a name="next-steps"></a>Következő lépések
 
-Ez a cikk a Power BI szolgáltatásban automatikus Machine Learning áttekintése megadott adatfolyamot. Az alábbi cikkeket is hasznos lehet.
+Ez a cikk áttekintést nyújtott az adatfolyamokhoz készült Automatizált Machine Learning funkcióról a Power BI szolgáltatásban. A következő cikkek szintén hasznosak lehetnek.
 
-* [Oktatóanyag: Egy gépi tanulási modellt a Power bi-ban (előzetes verzió)](service-tutorial-build-machine-learning-model.md)
+* [Oktatóanyag: Machine Learning-modell létrehozása a Power BI-ban (előzetes verzió)](service-tutorial-build-machine-learning-model.md)
 * [Oktatóanyag: A Cognitive Services használata a Power BI-ban](service-tutorial-use-cognitive-services.md)
 * [Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)](service-tutorial-invoke-machine-learning-model.md)
 * [A Cognitive Services a Power BI-ban (Előzetes verzió)](service-cognitive-services.md)
@@ -284,9 +284,9 @@ Ez a cikk a Power BI szolgáltatásban automatikus Machine Learning áttekintés
 
 Az adatfolyamokkal kapcsolatban az alábbi cikkeket érdemes elolvasni:
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
-* [A Power BI Premium számított entitások használatával](service-dataflows-computed-entities-premium.md)
-* [Adatfolyamok használata a helyszíni adatforrások](service-dataflows-on-premises-gateways.md)
-* [Fejlesztői erőforrások a Power BI-adatfolyamok](service-dataflows-developer-resources.md)
+* [Számított entitások használata a Power BI Premiumban](service-dataflows-computed-entities-premium.md)
+* [Adatfolyamok használata helyszíni adatforrásokkal](service-dataflows-on-premises-gateways.md)
+* [Fejlesztői erőforrások Power BI-adatfolyamokhoz](service-dataflows-developer-resources.md)
 * [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md)
 
 

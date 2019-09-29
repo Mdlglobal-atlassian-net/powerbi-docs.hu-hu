@@ -1,22 +1,22 @@
 ---
-title: Egyéni vizualizációk közzététele az AppSource-ban
+title: Power BI-vizualizációk közzététele az AppSource-ban
 description: Megtudhatja, hogyan teheti közzé egyéni vizualizációit az AppSource-ban, amelyeket aztán mások is felfedezhetnek és használhatnak.
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: cb21d3baf9523a90b0446b44704587b5af73904f
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 3cbc2c6fcb70d6298c9d2ade3e3f2cd10cd8a834
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623816"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194524"
 ---
-# <a name="publish-custom-visuals-to-appsource"></a>Egyéni vizualizációk közzététele az AppSource-ban
+# <a name="publish-power-bi-visuals-to-appsource"></a>Power BI-vizualizációk közzététele az AppSource-ban
 
 Megtudhatja, hogyan teheti közzé egyéni vizualizációit az AppSource-ban, amelyeket aztán mások is felfedezhetnek és használhatnak.
 
@@ -46,7 +46,7 @@ Miután elolvasta a [Power BI-vizualizációk útmutatóját](guidelines-powerbi
 
 ## <a name="submitting-to-power-bi"></a>Elküldés a Power BI-nak
 
-Az elküldés során először egy e-mailt küld az egyéni Power BI-vizualizációk elküldéséért felelős csapatának. Az e-mailt a következő címre küldheti el: [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
+Az elküldés során először egy e-mailt küld a Power BI Power BI-vizualizációk elküldéséért felelős csapatának. Az e-mailt a következő címre küldheti el: [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
 
 > [!IMPORTANT]
 > A .pbiviz-csomag létrehozása előtt ki kell töltenie a következő mezőket a pbiviz.json fájlban: „description”, „supportUrl”, „author”, „name” és „email”.
@@ -89,7 +89,7 @@ A beküldéshez kövesse az alábbi lépéseket.
    * *Beküldés címe:* A beküldés neve a fejlesztői központban
    * *Verzió:* A verziószámot a rendszer automatikusan kitölti a bővítmény alkalmazáscsomagja alapján.
    * *Kiadás dátuma (UTC):* Válassza ki, hogy mikor szeretné közzétenni az alkalmazást az áruházban. Ha egy jövőbeli dátumot választ, az alkalmazás az előtt nem lesz elérhető.
-   * *Kategória:* Az első kategória automatikusan „Adatmegjelenítés + BI” lesz. Minden egyéni Power BI-vizualizáció ezzel a címkével rendelkezik. Legfeljebb 2 további kategóriát adhat meg, hogy a felhasználók könnyen kikereshessék a vizualizációt
+   * *Kategória:* Az első kategória automatikusan „Adatmegjelenítés + BI” lesz. Minden Power BI-beli Power BI-vizualizáció ezzel a címkével fog rendelkezni. Legfeljebb 2 további kategóriát adhat meg, hogy a felhasználók könnyen kikereshessék a vizualizációt
    * *Tesztelést segítő jegyzetek és megjegyzések:* Megadhatja, ha utasításokkal szeretné ellátni a Microsoft tesztelőit.
    * *Alkalmazásom kriptográfiát vagy titkosítást használ, tartalmaz, támogat vagy hív meg:* Ne jelölje be.
    * *A bővítmény elérhetővé tétele az Office bővítmények katalógusában az iPaden:* Ne jelölje be.
