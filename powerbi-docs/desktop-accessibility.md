@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 14e57f5b19fe4dccea9aa47d21c959eaf93a45ae
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 2621446fe7954297ffb7167823ab67f9b2dd9b11
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185693"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142319"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Akadálymentesség a Power BI Desktop-jelentésekben
 A Power BI rendelkezik olyan funkciókkal, amelyek lehetővé teszik a fogyatékkal élők számára, hogy könnyedén használják és kezeljék a Power BI-jelentéseket. A funkciók közé tartozik az a lehetőség, hogy a jelentések billentyűzettel vagy képernyőolvasóval is használhatók legyenek, az oldalak objektumai léptetéssel emelhetők ki, és a jelölők használata átgondolt a vizualizációkban.

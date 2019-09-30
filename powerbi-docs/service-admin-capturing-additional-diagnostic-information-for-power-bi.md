@@ -1,5 +1,5 @@
 ---
-title: További diagnosztikai adatok rögzítése
+title: További diagnosztikai adatok gyűjtése
 description: A következő útmutatók két lehetséges módszert kínálnak további diagnosztikai adatok manuális begyűjtésére a Power BI-webügyféltől.
 author: mgblythe
 manager: kfile
@@ -13,48 +13,48 @@ ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 710fb4cdcf9efb051434966d47c2eaced17ac9ba
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65100260"
 ---
-# <a name="capture-additional-diagnostic-information-for-power-bi"></a>A Power bi további diagnosztikai adatok rögzítése
+# <a name="capture-additional-diagnostic-information-for-power-bi"></a>További diagnosztikai adatok gyűjtése a Power BI számára
 
-Ez a cikk útmutatást manuálisan további diagnosztikai adatok gyűjtését a Power BI webes ügyféllel.
+Ez a cikk két lehetséges módszert kínál további diagnosztikai adatok manuális begyűjtésére a Power BI-webügyféltől.
 
-1. Keresse meg a [Power bi-ban](https://app.powerbi.com) a Microsoft Edge vagy az Internet Explorerben.
+1. Nyissa meg a [Power BI](https://app.powerbi.com)-t a Microsoft Edge-ben vagy az Internet Explorerben.
 
-1. Nyomja meg **F12** , nyissa meg a Microsoft Edge fejlesztői eszközeit.
+1. Nyomja le az **F12** billentyűt a Microsoft Edge fejlesztői eszközeinek megnyitásához.
 
-   ![Képernyőkép a Microsoft Edge fejlesztői eszközök elemek lap.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
+   ![Képernyőkép a Microsoft Edge fejlesztői eszközeinek Elemek lapjáról.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
 
 1. Válassza a **Hálózat** lapot. Itt látható az eddig rögzített forgalom.
 
-   ![Képernyőkép a Microsoft Edge fejlesztői eszközök hálózati lap.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
+   ![Képernyőkép a Microsoft Edge fejlesztői eszközeinek Hálózat lapjáról.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
 
     A következőket teheti:
 
-    * Keresse meg az időtartamon belül, és bármely olyan probléma reprodukálásához.
+    * Az ablakban böngészve minden felmerülő probléma reprodukálható.
 
-    * Elrejtése és megjelenítése a fejlesztői eszközök ablaka a munkamenet során bármikor F12 billentyű lenyomásával.
+    * A fejlesztői eszközök ablaka a munkamenet során bármikor megjeleníthető és elrejthető az F12 billentyű lenyomásával.
 
-1. Profilkészítés a munkamenet leállításához is kijelölheti a piros négyzetet a **hálózati** lapján a fejlesztői eszközök terület.
+1. A munkamenet profilkészítésének leállításához válassza a piros négyzetet a fejlesztői eszközök terület **Hálózat** fülén.
 
-   ![Képernyőkép a Microsoft Edge fejlesztői eszközök hálózati lap kívül a leállítási gomb-hívással.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
+   ![Képernyőkép a Microsoft Edge fejlesztői eszközeinek Hálózat lapjáról kiemelt Leállítás gombbal.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
 
-1. A lemez ikonra exportálhatja az adatokat egy HTTP-archívum (HAR) fájlba.
+1. Az adatok HTTP-archív (HAR-) fájlként való exportálásához válassza a lemez ikont.
 
-   ![Képernyőkép a Microsoft Edge fejlesztői eszközök hálózati lap egy képfelirattal, a lemez ikonra.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
+   ![Képernyőkép a Microsoft Edge fejlesztői eszközeinek Hálózat lapjáról kiemelt lemez ikonnal.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
 
 1. Adjon nevet a HAR-fájlnak és mentse.
 
-    A HAR-fájl a böngészőablakot, és többek között a Power BI közötti hálózati kérelmekről minden információt tartalmaz:
+    A HAR-fájl minden információt tartalmaz a böngészőablak és a Power BI közötti hálózati kérelmekről, többek között a következőket:
 
-    * A tevékenység azonosítók az egyes kérések.
+    * Az egyes kérések tevékenységazonosítói.
 
-    * Az egyes kérések pontos időbélyegét.
+    * Az egyes kérések pontos időbélyegzője.
 
-    * Hiba információt küld vissza az ügyfélnek.
+    * Az ügyfélnek visszaadott hibaüzenetek.
 
     Tartalmazza a képernyőn megjelenő vizualizációk feltöltéséhez használt adatokat is.
 

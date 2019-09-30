@@ -1,6 +1,6 @@
 ---
-title: A Microsoft Power BI Premium-kapacitás kezelése
-description: A Power BI Premium-kapacitásait felügyeleti feladatait ismerteti.
+title: Microsoft Power BI Premium-kapacitások kezelése
+description: A Power BI Premium-kapacitások felügyeleti feladatait ismerteti.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -11,155 +11,154 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: e4bb907e12d3c0b07408f069d9b238599756e8e0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1e8218e19ca3949a96a9c701e4a18f9fb088e2a1
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565251"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175211"
 ---
 # <a name="managing-premium-capacities"></a>Prémium szintű kapacitások kezelése
 
-A Power BI Premium kezelése létrehozása, kezelése és figyelése a prémium szintű kapacitások foglalja magában.
+A Power BI Premium kezeléséhez tartozik a Premium-kapacitások létrehozása, kezelése és figyelése. Ez a cikk áttekintést nyújt a kapacitásokról. A lépésenkénti útmutatáshoz tekintse meg a [Kapacitások konfigurálása és kezelése](service-admin-premium-manage.md) című cikket.
 
-## <a name="creating-and-managing-capacities"></a>Létrehozása és kezelése a kapacitások
+## <a name="creating-and-managing-capacities"></a>Kapacitások létrehozása és kezelése
 
-A **Kapacitásbeállítások** a Power BI felügyeleti portál vásárolt virtuális magok és a prémium szintű kapacitások elérhető számát jeleníti meg. A lap lehetővé teszi, hogy az Office 365 globális rendszergazdák vagy a Power BI szolgáltatás-rendszergazdák a prémium szintű kapacitások létrehozása az elérhető virtuális magok, vagy módosíthatja a meglévő prémium szintű kapacitások.
+A Power BI Felügyeleti portál **Kapacitásbeállítások** lapján megtekintheti a megvásárolt virtuális magok számát és a rendelkezésre álló Premium-kapacitásokat. Ezen a lapon az Office 365 globális rendszergazdák és a Power BI-szolgáltatásgazdák Premium-kapacitásokat hozhatnak létre a rendelkezésre álló virtuális magokból, vagy módosíthatják a meglévő Premium-kapacitásokat.
 
-Amikor hoz létre egy prémium szintű kapacitás, a rendszergazdák meghatározásához van szükség:
+Premium-kapacitás létrehozásakor a rendszergazdáknak a következőket kell meghatározniuk:
 
 - Kapacitás neve (a bérlőn belül egyedi).
-- A kapacitás admin(s).
+- Kapacitás-rendszergazdák.
 - Kapacitás mérete.
-- Adattárolás helye régióban.
+- Adattárolási régió.
 
-Legalább egy kapacitás-rendszergazda kell hozzárendelni. A kapacitás-rendszergazdák hozzárendelt felhasználók:
+Legalább egy kapacitás-rendszergazdát hozzá kell rendelni. A kapacitás-rendszergazdaként hozzárendelt felhasználók a következőket tehetik:
 
-- Munkaterületek hozzárendelése a kapacitást.
-- További kapacitás-rendszergazdák vagy (ahhoz, hogy munkaterületeket rendeljen a kapacitás) hozzárendelési engedélyekkel rendelkező felhasználók hozzáadása a felhasználói engedélyek kezelése.
-- Többoldalas jelentések és adatfolyamok számítási feladatok maximális memóriahasználat konfigurálása a számítási feladatok kezelése.
-- Indítsa újra a kapacitás, alaphelyzetbe állítása minden művelet egy rendszer túlterhelés miatt.
+- Munkaterületek hozzárendelése a kapacitáshoz.
+- Felhasználói engedélyek kezelése további kapacitás-rendszergazdák vagy hozzárendelési engedélyekkel rendelkező felhasználók hozzáadásához (a munkaterületek kapacitáshoz való hozzárendelésének engedélyezéséhez).
+- Munkaterhelések kezelése, a lapszámozott jelentések és az adatfolyamok számítási feladatainak maximális memóriahasználatának konfigurálása.
+- A kapacitás újraindítása és az összes művelet visszaállítása rendszertúlterhelés esetén.
 
-Kapacitás-rendszergazdák munkaterület-tartalom nem érhető el, ha explicit módon a munkaterület-engedélyek rendelve. Még nem hozzáféréssel rendelkeznek minden Power BI rendszergazdai felületéhez (kivéve, ha explicit módon hozzárendelt) például a használati metrikákat, a naplókhoz és a bérlői beállítások. Ami fontosabb a kapacitás-rendszergazdák nincs engedélye új kapacitások létrehozása vagy meglévő kapacitások skálázhatja. Rendszergazdák száma kapacitás alapon hozzárendelt, annak biztosítása, hogy akkor is csak tekintheti meg és kezelheti a kapacitást, amelyhez hozzá van rendelve.
+A kapacitás-rendszergazdák nem férhetnek hozzá a munkaterületek tartalmához, kivéve, ha erre külön jogosultságot kapnak a munkaterületek engedélyei között. Emellett nincs hozzáférésük a Power BI összes rendszergazdai felületéhez, például a használati metrikákhoz, az auditnaplókhoz és a bérlői beállításokhoz, hacsak nem kapnak erre külön engedélyt. Fontos megjegyezni, hogy a kapacitás-rendszergazdák nem hozhatnak létre új kapacitásokat, és nem méretezhetnek meglévő kapacitásokat. A rendszergazdák hozzárendelése a kapacitások alapján történik, így csak azokat a kapacitásokat tekinthetik meg és kezelhetik, amelyekhez hozzárendelték őket.
 
-Kapacitás mérete ki van jelölve egy rendelkezésre álló SKU beállítások listájának, amelyek korlátozzák a készlet rendelkezésre álló magok számát. Lehetséges több kapacitások létrehozása a készletből, amely egy sikerült beolvasva, vagy további termékváltozatok vásárolt. Ha például egy P3 SKU (32 mag) hozzon létre három kapacitások használható: egy P2 (16 mag), és két P1 (2 x 8 mag). Továbbfejlesztett teljesítmény és méret elérhető kisebb méretű kapacitások létrehozásával leírtak szerint a [optimalizálása prémium szintű kapacitások](service-premium-capacity-optimize.md) cikk. Az alábbi képen egy példa a telepítő a fiktív Contoso szervezet öt prémium szintű kapacitások álló (P1, és 2 x 3 x P3) minden egyes tartalmazó alkalmazás-munkaterületek, és számos munkaterületek megosztott kapacitáshoz tartoznak.
+A kapacitásméret az SKU-beállítások listájából választható ki, amelyet a készletben elérhető virtuális magok száma korlátoz. A készletből több kapacitás is létrehozható, amely származhat egy vagy több megvásárolt SKU-ból. Egy 32 virtuális maggal rendelkező P3 SKU-val például három kapacitás hozható létre: egy P2 (16 virtuális maggal), és két P1 (egyenként 8 virtuális maggal). Jobb teljesítményt és méretezést érhet el, ha kisebb méretű kapacitásokat hoz létre. Ezt a [Premium-kapacitások optimalizálása](service-premium-capacity-optimize.md) című cikk ismerteti. Az alábbi képen egy mintabeállítás látható a nem létező Contoso nevű céghez, amely öt Premium-kapacitást tartalmaz (három P1 és kettő P3), amelyek mindegyikéhez tartoznak alkalmazás-munkaterületek, illetve több megosztott kapacitású munkaterület is.
 
-![Egy példa a telepítő a fiktív Contoso szervezet számára](media/service-premium-capacity-manage/contoso-organization-example.png)
+![A nem létező Contoso cég mintabeállítása](media/service-premium-capacity-manage/contoso-organization-example.png)
 
-Prémium szintű kapacitáshoz multi-földrajzi néven ismert Power BI-bérlő otthoni régiója régióban is hozzárendelhető. Multi-földrajzi biztosít a rendszergazda szabályozhatja a Power BI-tartalom található, meghatározott földrajzi régiókban mely adatközpontra. A közösségértékek multi-földrajzi központi telepítés általában van a vállalati vagy kormányzati megfelelőségi, hanem teljesítmény és méretezhetőség. Jelentés és irányítópult betöltésekor továbbra is magában foglalja a kérelmeket a metaadatokat az otthoni régiója. További tudnivalókért lásd: [Multi-földrajzi támogatása a Power BI Premium](service-admin-premium-multi-geo.md).
+Premium-kapacitás nem csak a Power BI-bérlő saját régiójához rendelhető hozzá. Ezt Multi-geo konfigurációnak nevezzük. A Multi-geo konfiguráció felügyeleti vezérlést nyújt afelett, hogy a meghatározott földrajzi helyek mely adatközpontjaiban tárolja a Power BI-tartalmat. A Multi-geo üzembe helyezés vállati vagy kormányzati megfelelőség esetén lehet célszerű, és kevésbé szolgálja nagyobb teljesítményt és méretezést. A jelentések és irányítópultok betöltéséhez továbbra is szükségesek a saját régióból lekért metaadatok. További információk: [Multi-Geo-támogatás a Power BI Premiumhoz](service-admin-premium-multi-geo.md).
 
-A Power BI szolgáltatás-rendszergazdák és az Office 365 globális rendszergazdái módosíthatják a prémium szintű kapacitások. Pontosabban ezek a következők:
+A Power BI-szolgáltatásgazdák és az Office 365 globális rendszergazdái módosíthatják a Premium-kapacitásokat. Ők a következő műveleteket végezhetik el:
 
-- Módosítsa a kapacitás méretét a vertikális felskálázás vagy skálázási erőforrásokat.
-- Adja hozzá, vagy távolítsa el a kapacitás-rendszergazdákat.
-- Adja hozzá, vagy távolítsa el a hozzárendelési engedéllyel rendelkező felhasználók.
-- Adja hozzá, vagy távolítsa el a további munkaterhelések.
-- Régió módosítása
+- A kapacitásméret módosítása az erőforrások vertikális fel- és leskálázásához.
+- Kapacitás-rendszergazdák hozzáadása és eltávolítása.
+- Hozzárendelési engedélyekkel rendelkező felhasználók hozzáadása és eltávolítása.
+- További munkaterhelések hozzáadása és eltávolítása.
+- Régiók módosítása.
 
-A hozzárendelési engedéllyel kell rendelnie a munkaterületet egy adott prémium szintű kapacitáshoz. Az engedélyek a teljes szervezet számára, bizonyos felhasználók vagy csoportok adható meg.
+Egy munkaterület egy adott Premium-kapacitáshoz való hozzárendeléséhez hozzárendelési engedélyre van szükség. Ez megadható a teljes vállalatnak, csak adott felhasználóknak, vagy egyes csoportoknak.
 
-Alapértelmezés szerint prémium szintű kapacitások támogatja a Power BI-lekérdezések futtatásával kapcsolatos számítási feladatokhoz. Prémium szintű kapacitások további számítási feladatokat is támogatja: **Mesterséges Intelligencia (Cognitive Services)** , **oldalakra osztott jelentések**, és **adatfolyamok**. Minden számítási feladathoz szükséges konfigurálása a maximális memóriát (a teljes szabad memória százalékaként), a munkaterhelés szerint használható. Fontos megérteni, hogy növelje a maximális memórialefoglalások befolyásolhatja a üzemeltethető aktív modellek számát és az átviteli sebességet a frissítések. 
+A Premium-kapacitások alapértelmezés szerint a Power BI-lekérdezésekkel társított számítási feladatokat támogatják. A Premium-kapacitások emellett további számítási feladatokat is támogatnak: **AI (Cognitive Services)** , **lapszámozott jelentések** és **adatfolyamok**. Minden számítási feladathoz a számítási feladat által felhasználható maximális memória konfigurálása szükséges (a teljes rendelkezésre álló memória arányában). Fontos észben tartani, hogy a maximális memórialefoglalások növelése hatással lehet az üzemeltethető aktív modellek számára, valamint a frissítések átviteli sebességére. 
 
-Memória adatfolyamok számára dinamikusan történik, de a többoldalas jelentések statikusan hozzá van rendelve. A maximális memóriafoglalás statikusan oka, hogy oldalakra osztott jelentések futtathatók a kapacitás biztonságos tartalmazott szóközzel. Ha a beállítás többoldalas jelentések memória, mivel csökkenti a rendelkezésre álló memória a modell betöltése gondot kell fordítani. További tudnivalókért tekintse meg a [memória beállításainak alapértelmezett](service-admin-premium-workloads.md#default-memory-settings).
+A memória adatfolyamokhoz dinamikusan, lapszámozott jelentésekhez viszont statikusan van lefoglalva. A maximális memória statikus lefoglalásának oka az, hogy a lapszámozott jelentések a kapacitás egy biztonságosan elzárt területén futnak. Óvatosan állítsa be a lapszámozott jelentések memóriáját, mivel ez csökkenti a modellek betöltéséhez használható memóriát. További információ: [Alapértelmezett memóriabeállítások](service-admin-premium-workloads.md#default-memory-settings).
 
-Egy prémium szintű kapacitás törlése lehetséges, és nem a munkaterületekről és a tartalom törlését eredményezi. Ehelyett áthelyezi azt minden hozzárendelt munkaterületek megosztott kapacitáshoz. A prémium szintű kapacitás egy másik régióban lett létrehozva, amikor a munkaterület megosztott kapacitás az otthoni régió került.
+A Premium-kapacitások törölhetők, és ezzel nem törlődnek azok munkaterületei és tartalma. A hozzárendelt munkaterületek ilyen esetekben a megosztott kapacitásba kerülnek. Amikor a Premium-kapacitást egy másik régióban hozza létre, a munkaterület a saját régió megosztott kapacitásába kerül.
 
-### <a name="assigning-workspaces-to-capacities"></a>Munkaterületek hozzárendelése kapacitások
+### <a name="assigning-workspaces-to-capacities"></a>Munkaterületek hozzárendelése kapacitásokhoz
 
-Munkaterületek lehet hozzárendelni egy prémium szintű kapacitáshoz a Power BI felügyeleti portálon, vagy egy alkalmazás-munkaterületen, a a **munkaterület** ablaktáblán.
+Munkaterületeket a Power BI Felügyeleti portálján, vagy alkalmazás-munkaterületek esetén a **Munkaterület** panelen rendelhet hozzá egy Premium-kapacitáshoz.
 
-Kapacitás-rendszergazdák, valamint az Office 365 globális rendszergazdák vagy a Power BI szolgáltatás-rendszergazdák, tömegesen rendelhet hozzá munkaterületeket a Power BI felügyeleti portálon. Hozzárendelt tömeges alkalmazhatók:
+A kapacitás-rendszergazdák, az Office 365 globális rendszergazdái és a Power BI-szolgáltatásgazdái tömegesen rendelhetnek hozzá munkaterületeket a Power BI Felügyeleti portálján. A tömeges hozzárendelés a következőkre vonatkozhat:
 
-- **Munkaterületek felhasználók szerint** -felhasználókat, beleértve a személyes munkaterületeket, által birtokolt összes munkaterületet a prémium szintű kapacitáshoz rendelt. Ide tartoznak a munkaterületek újbóli hozzárendelése során már hozzá van rendelve egy másik prémium szintű kapacitáshoz. Emellett a felhasználók is hozzárendelt munkaterület-hozzárendelési engedélyt.
+- **Munkaterületek felhasználók szerint** – A felhasználói tulajdonban álló munkaterületek, így a személyes munkaterületek is, a Premium-kapacitáshoz vannak rendelve. Ez azt is jeleneti, hogy a munkaterületek ismét hozzá lesznek rendelve, ha már egy másik Premium-kapacitáshoz tartoznak. Emellett a felhasználók is kapnak munkaterület-hozzárendelési engedélyt.
 
 - **Adott munkaterületek**
-- **A teljes cég munkaterületei** – összes munkaterületet, beleértve a személyes munkaterületeket a prémium szintű kapacitáshoz rendelt. Az összes jelenlegi és jövőbeli felhasználónak vannak hozzárendelve a munkaterület-hozzárendelési engedélyt. Ez a módszer nem ajánlott. Egy további, jobban célzott módszer használata ajánlott.
+- **A teljes cég munkaterületei** – Minden munkaterület, így a személyes munkaterületek is, a Premium-kapacitáshoz vannak rendelve. Minden jelenlegi és jövőbeli felhasználó kap munkaterület-hozzárendelési engedélyt. Ezt a módszert nem javasoljuk. Célszerű egy célzottabb megközelítést alkalmazni.
 
-Egy prémium szintű kapacitáshoz is hozzáadhatók a munkaterület használatával a **munkaterület** ablaktáblán, lehetővé téve a felhasználó mindkét munkaterület-rendszergazda, és a hozzárendelési engedéllyel rendelkezik.
+A Premium-kapacitáshoz a **Munkaterület** panelen adható hozzá munkaterület, feltéve, hogy a felhasználó a munkaterület rendszergazdája, és rendelkezik hozzárendelési engedéllyel.
 
-![A munkaterület ablak használó rendelnie a munkaterületet egy prémium szintű kapacitáshoz](media/service-premium-capacity-manage/assign-workspace-capacity.png)
+![Munkaterület hozzárendelése a Premium-kapacitáshoz a Munkaterület panelen](media/service-premium-capacity-manage/assign-workspace-capacity.png)
 
-Munkaterületek rendszergazdái eltávolíthatják a munkaterületet egy kapacitáshoz (a megosztott kapacitás) anélkül, hogy a hozzárendelési engedéllyel. A munkaterület eltávolítása a munkaterület dedikált kapacitás hatékonyan helyez át a megosztott kapacitásra. Vegye figyelembe, hogy egy munkaterületet egy prémium szintű kapacitáshoz eltávolítása negatív következményekkel eredményez, például a megosztott tartalom a Power BI ingyenes elérhetetlenné lehetnek licenccel rendelkező felhasználók vagy az ütemezett frissítés felfüggesztését a támogatott keretek túllépésekor megosztott kapacitás.
+A munkaterületek rendszergazdái eltávolíthatnak munkaterületeket a kapacitásból (és áthelyezhetik azokat a megosztott kapacitásba) anélkül, hogy ehhez hozzárendelési engedéllyel kelljen rendelkezniük. Ha eltávolít egy munkaterületet egy dedikált kapacitásból, azzal tulajdonképpen áthelyezi a munkaterületet egy megosztott kapacitásba. A munkaterületek egy Premium-kapacitásból való eltávolítása negatív következményekkel járhat, a tartalom például elérhetetlenné válhat a Power BI ingyenes licencével rendelkező felhasználói számára, vagy leállhat az ütemezett frissítés, ha az meghaladja a támogatott kapacitások által támogatott keretet.
 
-A Power BI szolgáltatásban a gyémánt ikon jelzi, hogy a munkaterület neve adorns egy munkaterületet egy prémium szintű kapacitáshoz rendelve könnyedén azonosíthatók.
+A Power BI szolgáltatásban egy Premium-kapacitáshoz rendelt munkaterület könnyen felismerhető a munkaterület neve melletti gyémánt ikonról.
 
-![Egy munkaterületet egy prémium szintű kapacitáshoz rendelve azonosítása](media/service-premium-capacity-manage/premium-diamond-icon.png)
+![Premium-kapacitáshoz rendelt munkaterület azonosítása](media/service-premium-capacity-manage/premium-diamond-icon.png)
 
-## <a name="monitoring-capacities"></a>Figyelési kapacitások
+## <a name="monitoring-capacities"></a>Kapacitások figyelése
 
-Prémium szintű kapacitások figyelés segítségével a rendszergazdák hogyan hajtja végre a kapacitások megismerése. Kapacitások figyelhető a Power BI felügyeleti portál használatával vagy a **Power BI Premium kapacitás-metrikák** (Power BI-) alkalmazást.
+A Premium-kapacitások figyelésével a rendszergazdák képet kaphatnak a kapacitások teljesítményéről. Kapacitások a Power BI Felügyeleti portál és a **Power BI Premium kapacitásmetrikák** (Power BI) alkalmazás használatával figyelhetők.
 
 ### <a name="power-bi-admin-portal"></a>Power BI felügyeleti portál
 
-A felügyeleti portálon, minden kapacitáshoz a **egészségügyi** lapot összefoglaló metrikákat nyújt a kapacitás és minden engedélyezett számítási feladathoz. Metrikák megjelenítése az átlagos az elmúlt hét napban.  
+A Felügyeleti portál **Állapot** lapján megtekintheti az egyes kapacitások és az engedélyezett számítási feladatok összesített metrikáit. A metrikák az elmúlt hét nap átlagát jelenítik meg.  
 
-A kapacitás szintjén metrikák összeadódnak az összes engedélyezett munkaterhelés. a következő metrikákat:
+A kapacitásszinten a metrikák az összes engedélyezett számítási feladat összesítését jelenítik meg. A következő metrikák érhetők el:
 
-- **CPU-KIHASZNÁLTSÁG** -átlagos CPU-kihasználtság százalékos arányában teljes rendelkezésre álló Processzorkapacitást nyújt a kapacitáshoz.  
-- **MEMÓRIAHASZNÁLAT** – átlag biztosít memória használata (GB), a kapacitás rendelkezésre álló memória összesen. 
+- **CPU-KIHASZNÁLTSÁG** – A kapacitásban rendelkezésre álló processzorhasználat átlagos CPU-kihasználtsága (százalékban).  
+- **MEMÓRIAHASZNÁLAT** – A kapacitásban elérhető összes memória átlagos memóriahasználata (GB-ban). 
 
-Minden engedélyezett számítási CPU-kihasználtság és a memóriahasználat érhetők el, valamint egy adott mérőszámok számítási feladatok száma. Az adatfolyam-számítási feladatok, például, ha **összesített száma** látható minden egyes adatfolyamot, a frissítések teljes és **átlagos időtartama** jeleníti meg az adatfolyamot a frissítés az átlagos időtartama.
+A CPU-kihasználtság és a memóriahasználat minden engedélyezett számítási feladathoz megtekinthető a számítási feladatokra vonatkozó specifikus metrikák mellett. Az Adatfolyam számítási feladat esetén például az **Összesített szám** az egyes adatfolyamok összes frissítését jeleníti meg, míg az **Átlagos időtartam** az adatfolyam frissítéseinek átlagos időtartamát.
 
-![A kapacitás állapot lapon a portálon](media/service-premium-capacity-manage/admin-portal-health-dataflows.png)
+![A Kapacitásállapot lap a portálon](media/service-premium-capacity-manage/admin-portal-health-dataflows.png)
 
-Az egyes munkaterhelésekhez tartozó összes rendelkezésre álló metrikák kapcsolatos további információkért lásd: [figyelheti a felügyeleti portál kapacitások](service-admin-premium-monitor-portal.md).
+További információ a számítási feladatokhoz elérhető metrikákról: [Kapacitások monitorozása a felügyeleti portálon](service-admin-premium-monitor-portal.md).
 
-A megfigyelési lehetőségek a Power BI felügyeleti portálon adja meg a kulcs kapacitási összefoglalóját lettek kialakítva. Részletes figyelését, javasoljuk, használja a **Power BI Premium kapacitás-metrikák** alkalmazást.
+A Power BI Felügyeleti portál figyelési funkcióival gyors összefoglalót kaphat a legfontosabb kapacitásmetrikákról. Részletesebb figyeléshez célszerű a **Power BI Premium-kapacitásmetrikák** alkalmazást használni.
 
-### <a name="power-bi-premium-capacity-metrics-app"></a>Power BI Premium kapacitás metrikák alkalmazás
+### <a name="power-bi-premium-capacity-metrics-app"></a>A Power BI Premium-kapacitásmetrikák alkalmazás
 
-A [Power BI Premium kapacitás-metrikák alkalmazás](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbi-premiumcapacitymonitoring?tab=Overview) a kapacitás-rendszergazdák rendelkezésére áll egy Power BI-alkalmazást, és telepítve van, mint bármely más Power BI alkalmazást. Tartalmaz egy irányítópultot és jelentést.
+A [Power BI Premium-kapacitásmetrikák alkalmazás](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbi-premiumcapacitymonitoring?tab=Overview) egy kapacitás-rendszergazdák számára elérhető alkalmazás, amely a többi Power BI-alkalmazáshoz hasonlóan telepíthető. Egy irányítópultot és egy jelentést tartalmaz.
 
-![Power BI Premium kapacitás metrikák alkalmazás](media/service-premium-capacity-manage/capacity-metrics-app.png)
+![A Power BI Premium-kapacitásmetrikák alkalmazás](media/service-premium-capacity-manage/capacity-metrics-app.png)
 
-Az alkalmazás megnyitásakor nyújtjuk egy összesített nézet kifejezésének keresztül, amelynek a felhasználó egy kapacitás-rendszergzdát. nem minden kapacitás számos olyan csempéket az irányítópult betöltése Az irányítópult elrendezése öt fő részből áll:
+Az alkalmazás megnyitásakor a rendszer betölti az irányítópultot, és számos olyan csempét jelenít meg, amelyek a kapacitás-rendszergazdai felhasználó kapacitásainak összesített nézetét mutatják be. Az irányítópult elrendezése öt fő szakaszt tartalmaz:
 
-- **Áttekintés** -verziója, a kapacitások és munkaterületek száma
-- **Rendszer összegzése** – memória és CPU-metrikák
-- **Adatkészlet összefoglaló** - szám, adatkészletek, DQ/LC, frissítési és lekérdezési metrikák
-- **Adatfolyam-összegzés** - szám adatfolyamok, és az adatkészlet-metrikák
-- **Többoldalas jelentés összefoglaló** – frissítés, és metrikák megtekintése
+- **Áttekintés** – Alkalmazásverzió, valamint a kapacitások és munkaterületek száma
+- **Rendszerösszegzés** – Memória- és CPU-metrikák
+- **Adatkészlet összegzése** – Adatkészletek, valamint DQ/LC-, frissítési és lekérdezési metrikák száma
+- **Adatfolyam összegzése** – Adatfolyamok és adatkészlet-metrikák száma
+- **Lapszámozott jelentés összegzése** – Metrikák frissítése és megtekintése
 
-Az alapul szolgáló jelentés, amelyből az irányítópult-csempék lett rögzítve az irányítópulton, az irányítópult csempékre kattintva elérhető lesz. Az irányítópult egyes részletesebb szempontjából, és interaktív szűrés támogat. 
+A mögöttes jelentés, amely a rögzített irányítópult-csempék alapja, az irányítópult-csempékre való kattintással érhető el. Részletesebb áttekintést nyújt az irányítópultok egyes részeiről, és támogatja az interaktív szűrést. 
 
-Szűrés elérhető szeletelők által dátumtartomány, a kapacitás, a munkaterület és a számítási feladatok (jelentés, adatkészlet, adatfolyam) beállításával, és a jelentésben az elemek kiválasztásával a Vizualizációk közötti jelentésoldalak szűrése. Keresztszűrés egy hatékony módszer az adott időszakra, kapacitások, munkaterületeket, adatkészleteket, stb. szűkítéséhez, és nagyon hasznos lehet, amikor a kiváltó okok elemzésével.
+A szűréshez be kell állítania a szeletelőket dátumtartomány, kapacitás, munkaterület és számítási feladat (jelentés, adatkészlet, adatfolyam) szerint, valamint ki kell választania a jelentésvizualizációk elemeit, amelyekkel keresztszűrést végez a jelentésoldalon. A keresztszűrés egy hatékonya technika, amellyel a keresést adott időszakokra, kapacitásokra, munkaterületekre, adatkészletekre és hasonló elemekre korlátozhatja, valamint segít az alapvető okok elemzésében.
 
-Az alkalmazás-irányítópult és jelentés metrikák kapcsolatos részletes információkért lásd: [figyelő prémium szintű kapacitások az alkalmazással](service-admin-premium-monitor-capacity.md).
+További információ az alkalmazásban elérhető irányítópult- és jelentésmetrikákról: [Premium-kapacitások monitorozása az alkalmazással.](service-admin-premium-monitor-capacity.md)
 
-### <a name="interpreting-metrics"></a>Metrikák értelmezése
+### <a name="interpreting-metrics"></a>A metrikák értelmezése
 
-Metrikák ellenőrizni kell létesíteni egy erőforrás-használat és a számítási feladatok tevékenység alapvető ismeretekkel. Ha a kapacitás lassú, fontos tudni, hogy milyen metrikákat kíván monitorozni, és teheti következtetéseket.
+A metrikák figyelésével megismerheti az erőforrás-használat mértékét és a számítási feladatok tevékenységeit. Ha a kapacitás lelassul, fontos tudnia, hogy mely metrikákat érdemes figyelni, illetve milyen következtetéseket tud levonni belőlük.
 
-Ideális esetben lekérdezések szolgáltatásszintről egy második rugalmas élményeket nyújthat a felhasználóknak a jelentés és a magasabb szintű lekérdezési teljesítmény engedélyezéséhez. Ez általában a kisebb aggodalomra ad okot amikor – beleértve a frissítések – háttérfolyamatok végrehajtásához hosszabb időt is igénybe.
+Ideális esetben a lekérdezéseknek egy másodpercen belül le kell futniuk, és rugalmasan ki kell tudniuk szolgálni a felhasználókat, így nagyobb átviteli sebességet lehetővé téve. Általában kevésbé jelent problémát, ha a háttérbeli folyamatok (például a frissítések) hosszabb ideig tartanak.
 
-Lassú jelentések általában arra utalhat, hogy egy túlzott fűtésrendszerek kapacitást is lehet. Nem sikerült betölteni a jelentéseket, ha ez az arra utalhat, hogy egy túlterhelt fűtött kapacitást. Mindkét esetben a fő ok lehet tulajdonítható sok tényező befolyásolja, többek között:
+A lassú jelentések általában egy túlhevülő kapacitásra utalnak. Ha a jelentések nem töltődnek be, az egy túlhevült kapacitás jele lehet. Mindkét esetben számos oka lehet a kiváltó oknak, például:
 
-- **Sikertelen lekérdezések** természetesen jelzi a rendelkezésre álló memória mennyisége, és hogy a modell nem tölthető be a memóriába. A Power BI szolgáltatás megkísérli betölteni a modell 30 másodpercig, mielőtt hibát jelentene.
+- **Sikertelen lekérdezések**, amelyek memóriaterhelésre utalnak, illetve arra, hogy egy modellt nem sikerült betölteni a memóriába. A Power BI szolgáltatás a hiba előtt 30 másodpercig kísérli meg betölteni a modellt.
 
-- **Túl sok lekérdezés várakozási idők** számos oka lehet:
-  - A Power BI szolgáltatásban, először szükség a modellek fürtből, és töltsön be a to-be lekérdezett modell (visszaírási, hogy magasabb adatkészlet kiürítési önálló összeg nem arra utalhat, hogy kapacitás stress, kivéve, ha hosszú lekérdezési várakozási időt memóriaakadozás jelző fűzni).
-  - Modell-terhelés időpontokban (különösen a nagy modell betöltése a memóriába várakozás).
-  - A hosszabb ideig futó lekérdezéseket.
-  - Túl sok LC\DQ kapcsolat (kapacitáskorlátait meghaladó).
-  - CPU színtelítettség.
-  - A jelentés összetett tervek a Vizualizáció túl sok (visszaírási, hogy minden egyes vizuális elem lekérdezés) lapon.
+- **A lekérdezésekre való túlzott időtartamú várakozásoknak** több oka lehet:
+  - A Power BI szolgáltatásnak előbb ki kell zárnia a modelleket, majd be kell töltenie a lekérdezendő modellt (a magas adatkészlet-kizárási arányok önmagukban nem feltétlenül jelentenek magas kapacitásterhelést, hacsak nem társul melléjük hosszú várakozási idő is, amely memóriaakadozásra utalhat).
+  - A modellek betöltési ideje (különösen egy nagy méretű modell memóriába való betöltésére való várakozás).
+  - Hosszú ideig futó lekérdezések.
+  - Túl sok LC\DQ-kapcsolat (amelyek meghaladják a kapacitási korlátokat).
+  - CPU-telítettség.
+  - Összetett jelentéstervek, amelyek túl sok vizualizációt tartalmaznak egy oldalon (minden vizualizáció egy lekérdezés).
 
-- **Hosszú lekérdezés időtartamának összegénél** azt jelzi, hogy modell tervek nem vannak optimalizálva, különösen akkor, ha több adatkészlet kapacitásban aktív, és csak egy adatkészlet van előállító hosszú lekérdezés időtartamának összegénél. Ez azt sugallja, hogy a kapacitás elég ellátva erőforrással, és hogy az kérdés adatkészlet az optimálisnál rosszabb vagy csak lassú. Hosszú ideig futó lekérdezések problémás lehet, mert akkor képes blokkolni a hozzáférést, más folyamatok által igényelt erőforrások.
-- **Mennyi ideig frissítse a várakozási időt** memóriát sok az aktív modellek miatt nincs elég memória, de akár (meghaladó párhuzamos frissítés korlátok), hogy problémás frissítést blokkolja a többi frissíti.
+- A **hosszú lekérdezés-időtartamok** azt jelezhetik, hogy a modelltervek nincsenek optimalizálva, különösképp akkor, ha több adatkészlet aktív egy kapacitásban, és nem csak egy adatkészlet eredményez hosszú lekérdezési időket. Ez arra utal, hogy a kapacitás megfelelő erőforrásokkal rendelkezik, és a kérdéses adatkészlet minősége nem optimális, vagy lassú. A hosszú ideig futó lekérdezések problémát okozhatnak, mivel letilthatják a más folyamatok által igényelt erőforrásokhoz való hozzáférést.
+- **A hosszú frissítési várakozási idők** azt jelzik, hogy nincs elegendő memória a számos aktív modell miatt, amelyek felhasználják a memóriát, vagy azt, hogy egy hibás frissítés meggátolja a többit (átlépve a párhuzamos frissítési korlátokat).
 
-A mérőszámok használatát bemutató részletesebb magyarázatáért tárgyalja a [optimalizálása prémium szintű kapacitások](service-premium-capacity-optimize.md) cikk.
+A metrikák használatáról részletesebb leírást a [Premium-kapacitások optimalizálása](service-premium-capacity-optimize.md) című cikkben találhat.
 
-## <a name="acknowledgements"></a>Nyugtázás
+## <a name="acknowledgements"></a>Nyugták
 
-Ez a cikk írásának Peter Myers, a Data Platform MVP és a független, a BI-Szakértővé [bitenként megoldások](https://www.bitwisesolutions.com.au/).
+A cikket Peter Myers, a [Bitwise Solutions](https://www.bitwisesolutions.com.au/) Data Platform MVP-je és független BI-szakértője szerezte.
 
 ## <a name="next-steps"></a>Következő lépések
 
 > [!div class="nextstepaction"]
-> [Prémium szintű kapacitások optimalizálása](service-premium-capacity-optimize.md)   
+> [Premium-kapacitások optimalizálása](service-premium-capacity-optimize.md)   
 > [!div class="nextstepaction"]
-> [Prémium-kapacitás a számítási feladatok konfigurálása](service-admin-premium-workloads.md)   
+> [Számítási feladatok konfigurálása egy Premium-kapacitásban](service-admin-premium-workloads.md)   
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 
-||||||

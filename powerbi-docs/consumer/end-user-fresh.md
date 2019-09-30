@@ -7,47 +7,54 @@ ms.service: powerbi
 ms.custom: ''
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/08/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: dbad2927b64966a459086531fbfbf3e3e5de2eab
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 46f9d40b5e556c0d306aa77243a49835fca9d812
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70751662"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141795"
 ---
 # <a name="your-content-is-up-to-date"></a>A tartalma naprakész
 *Fogyasztóként* a *tervezők* által létrehozott, Önnel megosztott tartalmakkal dolgozik. Előfordulhat, hogy nem tudja, hogy a tartalom naprakész-e, vagy csak tudni szeretné, hogy mikor frissítették utoljára. Ha biztos lehet benne, hogy a legújabb verzióval rendelkezik, magabiztosan dolgozhat.  
  
-![Power BI-irányítópult](media/end-user-consumer/power-bi-service.png)
+![Power BI-irányítópult](media/end-user-fresh/power-bi-dashboards.png)
 
 
 A jó döntések meghozatalában gyakran kritikus fontosságú a legfrissebb adatok használata. Hogyan győződhet meg róla, hogy a legfrissebb tartalmakat használja? A legtöbb esetben ehhez nem kell tennie semmit. Az Önnel megosztott alkalmazások automatikusan frissülnek a tervező által beállított ütemezés szerint. Ugyanez vonatkozik az Önnel megosztott irányítópultokra és jelentésekre is – a tervező kézzel vagy egy automatizált frissítési ütemezéssel gondoskodik a tartalom naprakészen tartásáról.  
 
 Ha kérdése van az adatok verziójával kapcsolatban, forduljon a tervezőhöz.
 
-## <a name="how-to-locate-the-name-of-the-designer"></a>A tervező nevének megkeresése
+## <a name="how-to-locate-the-name-of-the-designer-or-owner"></a>A tervező vagy tulajdonos nevének megkeresése
+
+### <a name="dashboard-or-report"></a>Irányítópult vagy jelentés
+
+A tulajdonos neve megtalálható az irányítópultok és jelentések címsorában. További részletek – így a **tulajdonos** nevének – megjelenítéséhez válassza ki a jelentés vagy irányítópult nevét.
+
+![Power BI-irányítópult tulajdonosa](media/end-user-fresh/power-bi-owner.png)
+
 
 ### <a name="apps"></a>Alkalmazások
 
-Az alkalmazás képernyőjén a tervező neve és az alkalmazás létrehozásának dátuma is megjelenik.  
+Az alkalmazás képernyőjén a tervező neve és az alkalmazás legutóbbi frissítésének dátuma is megjelenik.  
 
 1. A bal oldali navigációs panelen válassza az **Alkalmazások** lehetőséget.
 
-    ![bal oldali navigációs panel](media/end-user-fresh/power-bi-nav-apps.png)
+    ![bal oldali navigációs panel](media/end-user-fresh/power-bi-nav-app.png)
 
-    Minden alkalmazásnál láthatja a címet és a létrehozás dátumát. 
 
-2. Ha a kurzort az alkalmazás fölé helyezi, megjelenik a tervező neve. 
+
+2. Vigye az egérmutatót az alkalmazásra a cím, a frissességi dátum, valamint a tervező nevének megjelenítéséhez. 
 
     ![2 alkalmazás, az egyik kijelölve](media/end-user-fresh/power-bi-app.png)
 
 
 ### <a name="shared-with-me"></a>Velem megosztva
-A **Velem megosztva** képernyőn megjelenik a tartalom tulajdonosának neve, valamint a tartalom megosztásának dátuma.
+A **Velem megosztva** képernyőn megjelenik a tartalom tulajdonosának neve, valamint a tartalom legutóbbi megosztásának dátuma.
 
-![a Velem megosztva képernyő a módosítás dátumával és a tulajdonossal](media/end-user-fresh/power-bi-shared-new.png) 
+![a Velem megosztva képernyő a módosítás dátumával és a tulajdonossal](media/end-user-fresh/power-bi-share.png) 
 
 
 ## <a name="how-to-look-up-the-last-refresh-date"></a>A legutóbbi frissítés dátumának megkeresése
@@ -58,24 +65,24 @@ Irányítópult-csempék esetén a Legutóbbi frissítés időbélyegének megje
 
 1. Az irányítópult-csempén válassza a három pont (...) lehetőséget, majd a **Megnyitás fókusz módban** lehetőséget.
 
-    ![a három pont után megjelenő menü](media/end-user-fresh/power-bi-focus.png)
+    ![a három pont után megjelenő menü](media/end-user-fresh/power-bi-focus-mode.png)
 
 2. A legutóbbi frissítés dátuma a jobb felső sarokban jelenik meg. Ha nem látja, bontsa ki a böngészőt. 
 
     ![széles böngésző a legutóbbi frissítés dátumával](media/end-user-fresh/power-bi-last-refresh2.png)
 
-### <a name="from-dashboards-and-reports"></a>Irányítópultokban és jelentésekben
-A legutóbbi frissítés dátumát egy másik módszerrel, a **Kapcsolódó megtekintése** lehetőséggel is megkeresheti.  A **Kapcsolódó megtekintése** lehetőség a Power BI felső menüsávjában érhető el.
+### <a name="dashboards-and-reports"></a>Irányítópultok és jelentések
+A legutóbbi frissítés dátumát egy másik módszerrel, a **Kapcsolódó megtekintése** lehetőséggel is megkeresheti.  A **Kapcsolódó megtekintése** lehetőség a Power BI felső menüsávjában, a három pontra (...) kattintva érhető el.
 
-![A Kapcsolódó megtekintése lehetőség kiválasztása a menüből](media/end-user-fresh/power-bi-view-related.png)
+![A Kapcsolódó megtekintése lehetőség kiválasztása a menüből](media/end-user-fresh/power-bi-view-related-dropdown.png)
 
 A **Kapcsolódó tartalom** panelen láthatók az irányítópult vagy a jelentés mögöttes adathalmazára vonatkozó legújabb frissítési információk.
 
-![Power BI-irányítópult](media/end-user-fresh/power-bi-last-refresh.png)
+![Power BI-irányítópult](media/end-user-fresh/power-bi-refresh.png)
 
 ## <a name="what-happens-if-an-app-is-deleted-by-the-designer"></a>Mi történik, ha egy alkalmazást töröl a tervező?
 
-Ha egy tervező töröl egy alkalmazást, az ahhoz tartozó irányítópultok és jelentések automatikusan eltűnnek az Ön Power BI-munkaterületéről is. Többé nem lesznek elérhetők, és nem fogják látni a Navigációs panelen sem az alkalmazást.
+Ha egy tervező töröl egy alkalmazást, az ahhoz tartozó irányítópultok és jelentések automatikusan eltűnnek az Ön Power BI-munkaterületéről is. Többé nem lesznek elérhetők, és nem fogják látni sem az alkalmazások tárolójában, sem a navigációs sávon az alkalmazást.
 
 
 ## <a name="subscribe-to-see-changes"></a>Feliratkozás a módosítások megtekintéséhez

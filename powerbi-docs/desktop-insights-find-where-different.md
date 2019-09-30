@@ -13,7 +13,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 99ad06b84b01ce94b3433952cdd031a81c336e04
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454149"
@@ -48,7 +48,7 @@ A **Power BI Desktop** ezt követően futtatja az adatokon a gépi tanulási alg
 
 A választott szűrővel ellátott értékek a normál, alapértelmezett színnel jelennek meg. Az összesített értékek, ahogyan az eredeti kezdő vizualizáción láthatjuk, szürkén jelennek meg. Akár három különböző szűrőt alkalmazhat (ebben a példában ezek a *túrakerékpárok*, *a mountain bike-ok* és a *közúti kerékpárok*), a különböző szűrők pedig kattintással választhatók ki (vagy Ctrl + kattintással, ha egyszerre többet szeretne kijelölni).
 
-Egyszerű additív mértékek esetében (például az *Összes értékesítés*) az összehasonlítás a relatív, és nem az abszolút értékeken alapul. Ezért kisebb, mint az összes kategória a teljes értékesítési elismert kerékpárok értékesítéseit, amelyek alapértelmezés szerint a Vizualizáció használja a dupla tengelyt, hogy az az időarány, amíg az értékesítés több különböző országokban megvalósítható, az elismert kerékpárok kerékpárok összes kategóriáit és összehasonlítására.  A vizualizáció alatti váltógombbal a két érték azonos tengelyen jeleníthető meg, az abszolút értékek így könnyen összehasonlíthatók (ahogyan az a következő képen látható).    
+Egyszerű additív mértékek esetében (például az *Összes értékesítés*) az összehasonlítás a relatív, és nem az abszolút értékeken alapul. Mivel a túrakerékpárok értékesítése alacsonyabb, mint az összes kategória összesített értékesítése, a vizualizáció alapértelmezés szerint kettős tengelyen jeleníti meg a különböző országokban tapasztalható értékesítési arányok összehasonlítását a túrakerékpárok és a többi kerékpár-kategória között.  A vizualizáció alatti váltógombbal a két érték azonos tengelyen jeleníthető meg, az abszolút értékek így könnyen összehasonlíthatók (ahogyan az a következő képen látható).    
 
 ![elemzések használatakor megjelenő vizualizációk](media/desktop-insights-find-where-different/find-where-different_04.png)
 
@@ -63,7 +63,7 @@ Az elemzéseket akkor használhatja, ha a jelentés olvasási vagy szerkesztési
 ## <a name="details-of-the-returned-results"></a>A kapott eredmények részletei
 Az algoritmus a modell összes többi oszlopát felhasználja, és ezek értékeit alkalmazza szűrőként az eredeti vizualizációban, majd megállapítja, hogy mely szűrőértékek adják az eredetitől *leginkább eltérő* eredményt.
 
-Valószínűleg wonder mi *különböző* jelenti. Tegyük fel például, hogy az Egyesült Államok és Kanada értékesítései az alábbiak szerint oszlanak meg:
+Most biztos azon gondolkodik, mit is jelent az, hogy *eltérő*. Tegyük fel például, hogy az Egyesült Államok és Kanada értékesítései az alábbiak szerint oszlanak meg:
 
 |Ország  |Értékesítés (millió USD)|
 |---------|----------|
@@ -97,7 +97,7 @@ A mértékek természete miatt ezeket érdekes módon *eltérőnek* tekintjük. 
 
 A megjelenített vizualizációk így érthetően megjelenítik az összesített eloszlás eltéréseit (ahogyan az eredeti vizualizációban láthatjuk), valamint a szűrővel ellátott értéket.  
 
-Az additív mértékeknél, mint a fenti *értékesítési* példa, oszlop- és vonaldiagramot használtunk, így könnyen összehasonlíthatók a relatív értékek a kettős tengelynek és a megfelelő méretezésnek köszönhetően. Az oszlopok az alkalmazott szűrővel kapott értéket jelenítik meg, a vonal pedig az összesített értéket (az oszloptengely a bal oldalon, a vonaltengely pedig a jobb oldalon található). A sor használatával látható egy *lépcsőzetes* szürke megtöltve, szaggatott vonal stílusa. Az előző példában oszlop tengely maximális értéke 4, és a sor tengely maximális értéke 20., majd azt lehetővé tenné a szűrt és teljes értékek Amerikai Egyesült Államok és Kanada közötti relatív érték egyszerű összehasonlítása. 
+Az additív mértékeknél, mint a fenti *értékesítési* példa, oszlop- és vonaldiagramot használtunk, így könnyen összehasonlíthatók a relatív értékek a kettős tengelynek és a megfelelő méretezésnek köszönhetően. Az oszlopok az alkalmazott szűrővel kapott értéket jelenítik meg, a vonal pedig az összesített értéket (az oszloptengely a bal oldalon, a vonaltengely pedig a jobb oldalon található). A vonal *lépcsőzetes* stílusban jelenik meg, egy szürkével kitöltött szaggatott vonalként. Az előző példához visszatérve, ha az oszloptengely maximális értéke 4, a vonaltengelyé pedig 20, akkor könnyen összehasonlíthatók az Egyesült Államok és Kanada relatív értékei a szűrt és az összesített értékek esetén is. 
 
 Hasonlóképp, a nem additív mértékeknél – mint a fenti *árréses* példa – oszlop- és vonaldiagramot használtunk, így könnyen összehasonlíthatók az abszolút értékek az egyszerű tengelynek köszönhetően. Ez esetben is a szürke vonal mutatja az összesített értéket. Akár tényleges, akár relatív számokat hasonlít össze, az eloszlások eltérésének mértékét nem egyszerűen az értékek eltérésének kiszámításával állapíthatja meg. Például:
 
@@ -107,7 +107,7 @@ Hasonlóképp, a nem additív mértékeknél – mint a fenti *árréses* példa
 
 * A legnagyobb jelentőséggel bíró eredmények kiválasztásában különböző heurisztikák vállalnak szerepet, például az adatok közötti egyéb kapcsolatok.
      
-A különböző oszlopok, valamint az egyes oszlopok értékeinek megvizsgálása után a program kiválasztja a legnagyobb eltéréseket eredményező értékkészleteket. A könnyebb megértés érdekében ezeket oszloponként csoportosítja, az első helyre pedig az az oszlop kerül, amelynek értékei a legnagyobb eltérést mutatják. Oszloponként legfeljebb három értékek láthatók, de kisebb lehet, hogy látható, ha kevesebb mint három értékek, amelyek nagy hatással vannak, vagy ha néhány értéket sokkal hatásos, mint mások. 
+A különböző oszlopok, valamint az egyes oszlopok értékeinek megvizsgálása után a program kiválasztja a legnagyobb eltéréseket eredményező értékkészleteket. A könnyebb megértés érdekében ezeket oszloponként csoportosítja, az első helyre pedig az az oszlop kerül, amelynek értékei a legnagyobb eltérést mutatják. Oszloponként legfeljebb három érték jelenhet meg, ez azonban lehet kevesebb is, ha háromnál kevesebb érték bír nagy jelentőséggel, vagy ha egyes értékek nagyobb hatással voltak a végeredményre, mint mások. 
 
 Előfordulhat, hogy a rendszer a rendelkezésre álló időn belül nem vizsgál meg minden oszlopot, így nem garantálható a legnagyobb jelentőséggel bíró oszlopok és értékek megjelenítése. A különböző heurisztikák azonban garantálják, hogy a program a legvalószínűbb oszlopokat vizsgálja meg elsőként. Tegyük fel például, hogy az összes oszlop megvizsgálása után a program a következő oszlopokról/értékekről állapítja meg, hogy az eloszlásra a legnagyobb hatással vannak (csökkenő sorrendben):
 

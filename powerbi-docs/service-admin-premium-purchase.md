@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: bc55d290e10832034ed96d7092c5baa4b7cc20d1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a6e37885c5e15dbaaa28fc5cb693089fda747c9e
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565283"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175248"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>A Power BI Premium megvásárlása
 
@@ -101,9 +101,10 @@ Ha törli a Prémium előfizetést, vagy ha lejár a kapacitáslicenc, a törlé
 
 ## <a name="next-steps"></a>Következő lépések
 
-[A Power BI díjszabási oldala](https://powerbi.microsoft.com/pricing/)   
-[Power BI Premium díjszámító](https://powerbi.microsoft.com/calculator/)   
-[Power BI Premium – gyakori kérdések](service-premium-faq.md)   
+[A Power BI Premium kapacitásainak konfigurálása és kezelése](service-admin-premium-manage.md)\
+[A Power BI díjszabási oldala](https://powerbi.microsoft.com/pricing/)\
+[Power BI Premium díjszámító](https://powerbi.microsoft.com/calculator/)\
+[Power BI Premium – gyakori kérdések](service-premium-faq.md)\
 [A Power BI Enterprise üzembehelyezési előkészületeit bemutató tanulmány ](https://aka.ms/pbienterprisedeploy)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

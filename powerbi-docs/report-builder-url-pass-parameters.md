@@ -9,16 +9,16 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
 ms.date: 08/29/2019
-ms.openlocfilehash: add2f82594d83d1e1f177bfad5045c2e0a34ba84
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: f7f1b777e7c4e54dbdcfb1757fe4df274624a580
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70189369"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075985"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Jelentésparaméter átadása URL-címben lapszámozott jelentéshez a Power BI-ban 
 
-Jelentésparaméterek úgy adhat át jelentéseknek, hogy azokat egy többoldalas jelentés URL-címében megadja. Minden lekérdezési paraméter rendelkezhet hozzá kapcsolódó jelentésparaméterekkel. Ezért a lekérdezési paramétert úgy adhatja át a jelentésnek, ha átadja a megfelelő jelentésparamétert. A paraméter nevét  `rp:` előtaggal kell ellátni, hogy a Power BI felismerje azt az URL-címben. 
+Jelentésparaméterek úgy adhat át jelentéseknek, hogy azokat egy többoldalas jelentés URL-címében megadja. Minden lekérdezési paraméter rendelkezhet hozzá kapcsolódó jelentésparaméterekkel. Ezért a lekérdezési paramétert úgy adhatja át a jelentésnek, ha átadja a megfelelő jelentésparamétert. A paraméter nevét `rp:` előtaggal kell ellátni, hogy a Power BI felismerje azt az URL-címben. 
 
 A jelentésparaméterek megkülönböztetik a kis- és nagybetűket, és az alábbi speciális karaktereket is használhatják: 
 
@@ -63,7 +63,7 @@ rp:SalesOrderNumber:isnull=true
 Logikai érték átadásához használja a 0 értéket false (hamis) értékhez, az 1-et pedig true (igaz) értékhez. Lebegőpontos érték átadásához adja meg a kiszolgáló területi beállításának decimális elválasztóját.
 
 > [!NOTE]
-> Ha a jelentés olyan jelentésparamétert tartalmaz, amely alapértelmezett értékkel rendelkezik, és a  **Prompt** tulajdonság értéke  **hamis** (azaz a **Prompt User** tulajdonság nincs kiválasztva a Jelentéskezelőben), akkor ahhoz a jelentésparaméterhez nem adhat át értéket URL-címen belül. Ez lehetővé teszi a rendszergazdák számára, hogy megakadályozzák a végfelhasználók számára bizonyos jelentési paraméterek értékének hozzáadását vagy módosítását.
+> Ha a jelentés olyan jelentésparamétert tartalmaz, amely alapértelmezett értékkel rendelkezik, és a **Prompt** tulajdonság értéke **hamis** (azaz a **Prompt User** tulajdonság nincs kiválasztva a Jelentéskezelőben), akkor ahhoz a jelentésparaméterhez nem adhat át értéket URL-címen belül. Ez lehetővé teszi a rendszergazdák számára, hogy megakadályozzák a végfelhasználók számára bizonyos jelentési paraméterek értékének hozzáadását vagy módosítását.
 
 ## <a name="additional-examples"></a>További példák 
 

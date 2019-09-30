@@ -3,23 +3,22 @@ title: Kedvencek a Power BI szolgáltatásban (irányítópultok, jelentések é
 description: Útmutató az irányítópultok, jelentések és alkalmazások kedvencekhez történő hozzáadásához a Power BI szolgáltatásban – dokumentáció
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 09/19/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: c6da58ff5902a95c0e032cd4ed30a6ef0cae1e55
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: b61705051dfaba4eb2f8192daf170d5fb60bffd0
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "66374998"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141619"
 ---
-# <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Kedvenc irányítópultok, jelentések és alkalmazások a Power BI szolgáltatásban
+# <a name="favorite-dashboards-reports-and-apps-in-the-power-bi-service"></a>Kedvenc irányítópultok, jelentések és alkalmazások a Power BI szolgáltatásban
 Ha *kedvencként* jelöl meg egy tartalmat, akkor azt gyorsan elérheti a **Kedvencek** tartalomlistából és a **Power BI kezdőlap** > **Kedvencek és gyakoriak** területéről.  A kedvencek azok a helyek, amelyeket általában a leggyakrabban látogat, és ezeket sárga csillag jelöli.
 
    ![Kedvenc ikon](./media/end-user-favorite/power-bi-favorite-nav.png)
@@ -32,9 +31,9 @@ A Power BI szolgáltatásban arra is lehetősége van, hogy egyetlen irányító
 
 1. Nyisson meg egy gyakran használt irányítópultot vagy jelentést. Olyan tartalmak is lehetnek *kedvencek*, amelyeket mások osztottak meg Önnel.
 
-2. A Power BI szolgáltatás felső menüszalagján kattintson a **Kedvenc** elemre, vagy a csillag ![csillag ikon](./media/end-user-favorite/power-bi-favorite-icon.png)  ikonra.
+2. A Power BI szolgáltatás felső menüsorában kattintson a **Kedvenc** elemre, vagy a csillag ![csillag ikon](./media/end-user-favorite/power-bi-favorite-icon.png)  ikonra.
    
-   ![Kedvenc ikon](./media/end-user-favorite/powerbi-dashboard-favorite.png)
+   ![Kedvenc ikon](./media/end-user-favorite/power-bi-favorite.png)
    
    Irányítópultot vagy jelentést bármely olyan helyen is megjelölhet kedvencnek, ahol megjelenik a csillag ikon, például a Kezdőlapon, vagy a Legutóbbi elemek, az Alkalmazások és a Velem megosztva területeken. 
    
@@ -44,19 +43,19 @@ A Power BI szolgáltatásban arra is lehetősége van, hogy egyetlen irányító
 
 1. A navigációs panelen válassza az **Alkalmazások** lehetőséget.
 
-   ![irányítópult](./media/end-user-favorite/power-bi-favorite-apps.png)
+   ![irányítópult](./media/end-user-favorite/power-bi-app.png)
 
 2. További információk megjelenítéséhez vigye a kurzort az alkalmazás fölé.  Válassza ki a csillag ![csillag ikon](./media/end-user-favorite/power-bi-favorite-icon.png)  ikont kedvencként.
    
-   ![vigye az egérmutatót az alkalmazás fölé](./media/end-user-favorite/power-bi-favorite-app.png)
+   ![vigye az egérmutatót az alkalmazás fölé](./media/end-user-favorite/power-bi-hover-app.png)
 
 ## <a name="working-with-favorites"></a>A *kedvencek* kezelése
-1. A kedvencek eléréséhez kattintson az úszó panel nyilára a **Kedvencek** elem mellett jobbra.  Innen kiválaszthatja a megnyitni kívánt kedvenc tartalmat. A listán csak öt kedvenc szerepel (betűrendben). Ha ötnél több kedvence van, az **Összes megtekintése** lehetőséget választva megnyithatja a kedvencek listáját (lásd alább a 2. ábrát). 
+1. A kedvencek eléréséhez kattintson az úszó panel nyilára a **Kedvencek** elem mellett jobbra.  Innen kiválaszthatja a megnyitni kívánt kedvenc tartalmat. A listán legfeljebb öt kedvenc szerepel (betűrendben). Ha ötnél több kedvence van, az **Összes megtekintése** lehetőséget választva megnyithatja a kedvencek listáját (lásd alább a 2. ábrát). 
    
    ![Kedvencek úszó menü](./media/end-user-favorite/power-bi-favorite-flyout.png)
 2. A kedvencként hozzáadott **összes** tartalom megtekintéséhez kattintson a **Kedvencek** elemre vagy a Kedvencek ![csillag ikon](./media/end-user-favorite/power-bi-favorites-icon.png) ikonra a navigációs panelen.  
    
-    ![kedvenc ablak](./media/end-user-favorite/power-bi-favorites-screen.png)
+    ![kedvenc ablak](./media/end-user-favorite/power-bi-fav-screen.png)
    
    Innen a következő műveleteket végezheti el: megnyitás, tulajdonos azonosítása, de akár munkatársakkal való megosztás is.
 
@@ -65,7 +64,7 @@ Már nem használja olyan gyakran a tartalmat?  Eltávolíthatja a kedvencek kö
 
 1. A **Kedvencek** képernyő megnyitásához kattintson a **Kedvencek** elemre a bal oldali navigációs ablaktáblán.
    
-   ![Kedvencek képernyő](./media/end-user-favorite/power-bi-unfavorites-screen.png)
+   ![Kedvencek képernyő](./media/end-user-favorite/power-bi-un-favorite.png)
 2. A kedvencnek jelölés visszavonásához kattintson a tartalom melletti sárga csillagra.
 
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 ms.openlocfilehash: 1c000b2bfce4b6eeaa40b1a641321a20cea49d13
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "66051091"
@@ -17,7 +17,7 @@ Miközben Will ismerteti mennyi mindenre használhatja a Power BI-t, jusson esz�
 
 ![](media/0-1-intro-using-power-bi/c0a1_1.png)
 
-Mint azt korábban említettük, lehet, hogy ideje nagy részét a **Power BI szolgáltatásban** fogja tölteni adatszerzéssel és irányítópultok létrehozásával – ez teljesen rendben van így. Valaki más a előfordulhat, hogy az idő a teljes egészében költségek **Power BI Desktop**, ami szintén rendben túl. Ahhoz, hogy segítsünk Önnek teljes egészében megismerni a Power BI-t és a benne rejlő lehetőségeket, a legjobb, ha bemutatunk mindent, amire képes... Ezután eldöntheti, miként tudja a legjobban kihasználni céljai eléréséhez.
+Mint azt korábban említettük, lehet, hogy ideje nagy részét a **Power BI szolgáltatásban** fogja tölteni adatszerzéssel és irányítópultok létrehozásával – ez teljesen rendben van így. Valaki más a csapatából viszont minden idejét a **Power BI Desktop** használatával fogja tölteni, ami szintén rendben van. Ahhoz, hogy segítsünk Önnek teljes egészében megismerni a Power BI-t és a benne rejlő lehetőségeket, a legjobb, ha bemutatunk mindent, amire képes... Ezután eldöntheti, miként tudja a legjobban kihasználni céljai eléréséhez.
 
 Ugorjunk hát neki, és engedjük, hogy Will végigkalauzoljon minket a teljes felhasználói élményen. Az első dolog, hogy megismerje a Power BI alapvető építőelemeit, amely ismeretek szilárd alapot fognak nyújtani annak megértéséhez, hogy miként alakítja a Power BI az adatokat látványos jelentésekké és vizualizációkká.
 

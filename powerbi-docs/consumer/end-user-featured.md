@@ -5,21 +5,20 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7222f13d5ee4f25d7d55655bb5a7e5f2f28c77d4
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 5251bf34d7467c2727cdac83c6f6f9faf59aa888
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608674"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141275"
 ---
-# <a name="featured-dashboards-in-power-bi-service"></a>Kiemelt irányítópultok a Power BI szolgáltatásban
+# <a name="featured-dashboards-in-the-power-bi-service"></a>Kiemelt irányítópultok a Power BI szolgáltatásban
 ## <a name="create-a-featured-dashboard"></a>Kiemelt irányítópult létrehozása
 A legtöbb felhasználó rendelkezik egy olyan irányítópulttal, amelyet gyakrabban használ a többinél.  Lehet, hogy ezen az irányítópulton végzi el céges teendőit, vagy egy olyan irányítópult is lehet, mely számos irányítópult és jelentés csempéit gyűjti egy helyre.
 
@@ -52,7 +51,7 @@ Természetesen a későbbiekben kiválaszthat egy másik irányítópultot is ki
 1. Végezze el ismét a fenti 1. és 2. lépést.
    
     ![Kiemelt irányítópult módosítása ablak](./media/end-user-featured/power-bi-change-feature.png)
-2. Kattintson a **Beállítás kiemeltként** parancsra. Az irányítópult kiemelt állapotának eltávolításával nem távolítja el azt a munkaterületről.  
+2. Kattintson a **Beállítás kiemeltként** parancsra. Az irányítópult kiemelt állapotának eltávolításával nem távolítja el azt a Power BI-ból.  
    
     ![sikert jelző üzenet](./media/end-user-featured/power-bi-unfeature-new.png)
 

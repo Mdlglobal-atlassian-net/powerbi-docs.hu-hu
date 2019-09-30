@@ -13,7 +13,7 @@ ms.date: 08/10/2017
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 51efec6c78dbb29b9c3dc760284c7bb3c8711bdc
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64769931"
@@ -31,15 +31,15 @@ A Power BI szolgáltatásban kétféleképpen csatlakozhat egy SQL Server Analys
 
 1. A **Saját munkaterületen** válassza az**Adatok lekérése** lehetőséget. Amennyiben elérhető, egy csoportos munkaterületre is válthat.
 
-   ![Csatlakozhat az adatok lekérése gomb](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
+   ![Kapcsolódás az Adatok lekérése gombhoz](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
 
 2. Válassza az **Adatbázisok és egyéb** lehetőséget.
 
-   ![Az adatok 1 a csatlakozáshoz](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
+   ![Kapcsolódás az adatok lekéréséhez, 1.](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
 
 3. Válassza az **SQL Server Analysis Services** > **Csatlakozás** lehetőséget.
 
-   ![Az adatok 2 a csatlakozáshoz](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
+   ![Kapcsolódás az adatok lekéréséhez, 2.](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
 
 4. Válasszon egy kiszolgálót. Ha nem lát egy kiszolgálót sem, akkor vagy egy átjáró vagy egy adatforrás nincs konfigurálva, vagy a fiókja nem szerepel az adatforrás **Felhasználók** lapján az átjáróban. Kérje a rendszergazda segítségét.
 
@@ -47,7 +47,7 @@ A Power BI szolgáltatásban kétféleképpen csatlakozhat egy SQL Server Analys
 
 Miután csatlakozott a modellhez, az megjelenik a saját Power BI-webhelyén a **Saját munkaterület/Adatkészletek** területen. Ha csoportos munkaterületre váltott, az adatkészlet a csoporton belül jelenik meg.
 
-![Csatlakozás az adatkészlethez](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
+![Csatlakozás adatkészlethez](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
 
 ## <a name="dashboard-tiles"></a>Irányítópult-csempék
 

@@ -5,19 +5,18 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/16/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: d09ada0d3309a9cb2b93a8cd4fa3d6740e69ba77
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: f9979a852028e929b626e76534fef073feca3fd8
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073534"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100730"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Megjegyzés hozzáadása irányítópulthoz vagy jelentéshez
 Hozzáadhat személyes megjegyzéseket, vagy az irányítópultra vagy a jelentésre vonatkozó beszélgetést kezdeményezhet a munkatársaival. A **megjegyzés** csak az egyik olyan funkció a sok közül, amely lehetővé teszi a *felhasználó* számára a másokkal való együttműködést. 
@@ -29,7 +28,7 @@ Megjegyzések fűzhetők egy teljes irányítópulthoz, annak egyes vizualizáci
 
 Amikor megjegyzést ad hozzá egy jelentéshez, a Power BI rögzíti az aktuális szűrő- és szeletelőértékeket. Ez azt jelenti, hogy amikor kijelöl egy megjegyzést, vagy válaszol rá, a jelentésoldal vagy a jelentés vizualizációja úgy változhat, hogy megjelenítse a megjegyzés első hozzáadásakor aktív szűrő- és szeletelőkijelöléseket.  
 
-![videó a szűrőkkel ellátott jelentésről](media/end-user-comment/comment-reports-with-filters/comment-reports-with-filters.gif)
+![videó a szűrőkkel ellátott jelentésről](media/end-user-comment/power-bi-comment.gif)
 
 Mi ennek a jelentősége? Tegyük fel, hogy egy munkatársa egy olyan szűrőt alkalmazott, amely érdekes elemzést eredményezett, és ezt meg szeretné osztani a csoporttal. A szűrő kijelölése nélkül a megjegyzés értelmét vesztheti.
 
@@ -40,49 +39,50 @@ Az irányítópultok és a jelentések esetén hasonló a megjegyzések hozzáad
 
 1. Nyisson meg egy Power BI-irányítópultot vagy -jelentést, és válassza a **Megjegyzések** ikont. Ekkor megnyílik a Megjegyzések párbeszédpanel.
 
-    ![megjegyzések ikon](media/end-user-comment/power-bi-comment-icon.png)
+    ![megjegyzések ikon](media/end-user-comment/power-bi-comment-menu.png)
 
     Itt azt látjuk, hogy az irányítópult készítője már felvett egy általános megjegyzést.  Ezt a megjegyzést mindenki láthatja, aki hozzáfér az irányítópulthoz.
 
-    ![megjegyzések ikon](media/end-user-comment/power-bi-dash-comment.png)
+    ![megjegyzések ikon](media/end-user-comment/power-bi-first-comments.png)
 
 2. Válaszadáshoz válassza a **Válasz** lehetőséget, gépelje be válaszát, majd válassza a **Közzététel** lehetőséget.  
 
     ![Válasz megjegyzésre ikon](media/end-user-comment/power-bi-comment-reply.png)
 
-    A Power BI alapértelmezés szerint ahhoz a kollégához, ez esetben Aaron F.-hez irányítja a választ, aki a megjegyzéssel megnyitotta a beszélgetést. 
+    A Power BI alapértelmezés szerint ahhoz a kollégához, ez esetben Aaronhöz irányítja a választ, aki a megjegyzéssel megnyitotta a beszélgetést. 
 
-    ![Megválaszolt megjegyzés](media/end-user-comment/power-bi-response.png)
+    ![Megválaszolt megjegyzés](media/end-user-comment/power-bi-respond.png)
 
  3. Ha olyan megjegyzést kíván felvenni, amely nem egy meglévő beszélgetés része, írja be megjegyzését a felső szövegmezőbe.
 
-    ![Válasz megjegyzésre ikon](media/end-user-comment/power-bi-new-comment.png)
+    ![Válasz megjegyzésre ikon](media/end-user-comment/power-bi-new-comments.png)
 
     Az ehhez az irányítópulthoz fűzött megjegyzések most az alábbi módon jelennek meg.
 
-    ![Beszélgetések megjegyzésekről](media/end-user-comment/power-bi-comment-conversation.png)
+    ![Beszélgetések megjegyzésekről](media/end-user-comment/power-bi-conversation.png)
 
 ### <a name="add-a-comment-to-a-specific-dashboard-or-report-visual"></a>Megjegyzés hozzáadása az irányítópult vagy jelentés egy adott vizualizációjához
 Megjegyzések nemcsak a teljes irányítópulthoz vagy jelentésoldalhoz fűzhetők hozzá, hanem különálló irányítópult-csempékhez és jelentésvizualizációkhoz is. Ennek folyamata hasonló, ebben a példában egy jelentéssel illusztráljuk.
 
 1. Vigye a kurzort a vizualizáció fölé, és kattintson a három pontra (...).    
-2. A legördülő listából válassza a **Megjegyzés hozzáadása** lehetőséget.
+2. A legördülő listából válassza a **Hozzászólások megnyitása** lehetőséget.
 
-    ![A Megjegyzés hozzáadása a lista első eleme](media/end-user-comment/power-bi-comment-report.png)  
+    ![A Megjegyzés hozzáadása a lista első eleme](media/end-user-comment/power-bi-report-comment.png)  
 
 3.  Megnyílik a **Megjegyzések** párbeszédpanel, az oldalon található többi vizualizáció pedig beszürkül. Ehhez a vizualizációhoz még nem tartoznak megjegyzések. 
 
-    ![Saját magunknak szóló megjegyzés hozzáadása](media/end-user-comment/power-bi-comment-bar.png)  
+    ![Saját magunknak szóló megjegyzés hozzáadása](media/end-user-comment/power-bi-comment-column.png)  
 
 4. Írja be megjegyzését, majd válassza a **Közzététel** lehetőséget.
 
-    ![Saját magunknak szóló megjegyzés hozzáadása](media/end-user-comment/power-bi-comment-june.png)  
+    ![Saját magunknak szóló megjegyzés hozzáadása](media/end-user-comment/power-bi-comment-logistics.png)  
 
     - Ha kijelöl egy vizualizációhoz fűzött megjegyzést a jelentésoldalon, az kiemeli a vizualizációt (lásd fent).
 
     - Irányítópultokon a diagram ikon ![megjegyzés diagram ikonnal](media/end-user-comment/power-bi-comment-chart-icon.png) jelzi, hogy a megjegyzés egy adott vizualizációhoz kötődik. A teljes irányítópultra vonatkozó megjegyzésekhez nem tartozik különleges ikon. A diagram ikon kijelölésével kiemelhető az irányítópulton a hozzá tartozó vizualizáció.
+    
 
-        ![kapcsolódó vizualizáció kiemelve](media/end-user-comment/power-bi-comment-highlight2.png)
+    ![kapcsolódó vizualizáció kiemelve](media/end-user-comment/power-bi-highlight.png)
 
 5. A **Bezárás** lehetőséggel lehet visszatérni az irányítópultra vagy a jelentésre.
 

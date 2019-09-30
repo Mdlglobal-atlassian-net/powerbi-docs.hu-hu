@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/25/2019
+ms.date: 09/20/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 260860ba1ac875b097b12a1ac32ef09e983fe08d
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 5551247307e750624006de71a3c8652376b73fcf
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655156"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175264"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -47,6 +47,7 @@ A portálon kilenc lap található. A cikk további részében ezen lapokról ol
 * [Szervezeti vizualizációk](#organizational-visuals)
 * [Adatfolyam-tárolás (előzetes verzió)](#dataflowStorage)
 * [Munkaterületek](#workspaces)
+* [Egyéni védjegyzés](#custom-branding)
 
 ## <a name="usage-metrics"></a>Használati metrikák
 
@@ -522,7 +523,22 @@ Rendszergazdaként megtekintheti a bérlőjében meglévő munkaterületeket. Re
 
 ![Munkaterületek listája](media/service-admin-portal/workspaces-list.png)
 
+## <a name="custom-branding"></a>Egyéni védjegyzés
 
+Rendszergazdaként a teljes szervezet számára testreszabhatja a Power BI kinézetét. Jelenleg három fő lehetőség közül választhat:
+
+![Egyéni védjegyzési lehetőségek](media/service-admin-portal/power-bi-custom-branding.png)
+
+* **Embléma feltöltése**: Az ideális eredmény érdekében .png formátumú, 10 KB vagy kisebb, legalább 200 x 30 képpont méretű fájlt töltsön fel.
+
+* **Borítókép feltöltése**: Az ideális eredmény érdekében .jpg .png formátumú, 1 MB vagy kisebb, legalább1920 x 160 képpont méretű fájlt töltsön fel.
+
+* **Témaszín kiválasztása**: Témaszínt hexadecimális, RGB, érték, vagy színskála alapján választhat.
+
+
+További információ: [Céges egyéni védjegyzés](http://aka.ms/orgBranding).
+
+![Munkaterületek listája](media/service-admin-portal/workspaces-list.png)
 ## <a name="next-steps"></a>Következő lépések
 
 [A Power BI felügyelete a munkahelyen](service-admin-administering-power-bi-in-your-organization.md)  

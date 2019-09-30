@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61270455"
@@ -131,7 +131,7 @@ Gyorsítótárazott adatkészletek alatt olyan PBIX-fájlokat értünk, amelyek 
 3. Mentse a PBIX-fájlt.
 4. Hívja meg az Import PBIX API-t a SaaS-munkaterületre.
 5. Kapcsolati sztring frissítése ezzel a hívással: POST https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. Az Átjáró, valamint az adatforrás-azonosítók beolvasása meghívásával – LEKÉRÉSE https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+6. GW- és adatforrás-azonosító lekérdezése ezzel a hívással: GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
 7. A felhasználó hitelesítő adatainak frissítése: PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### <a name="old-dataset--reports"></a>Régi adatkészlet és jelentések

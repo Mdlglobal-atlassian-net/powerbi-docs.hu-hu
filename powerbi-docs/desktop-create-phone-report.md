@@ -1,5 +1,5 @@
 ---
-title: A mobilalkalmazásokban – Power BI jelentések optimalizálása
+title: Jelentések optimalizálása mobilalkalmazásokhoz – Power BI
 description: Megtudhatja, hogyan lehet optimalizálni a Power BI mobilalkalmazásainak jelentésoldalait a kifejezetten a telefonra és táblagépre tervezett jelentésverzió létrehozásával.
 author: maggiesMSFT
 manager: kfile
@@ -12,19 +12,19 @@ ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: f55d1e518c3c710503bb56539667bb652f287aa7
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61310695"
 ---
-# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimalizálhatja jelentéseit a Power BI mobilalkalmazásokban
-Élmény a jelentések megtekintése a mobilalkalmazásokban hoz létre az elrendezés álló növelhető. A Power BI Desktop és a Power BI szolgáltatásban átrendezheti, és méretezze át a jelentés vizualizációira, az az optimális működés érdekében álló tájolású módban.  
+# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Jelentések optimalizálása a Power BI-mobilalkalmazásokhoz
+Álló elrendezés létrehozásával javíthatja a felhasználói élményt a jelentések mobilalkalmazással történő megtekintésénél. A Power BI Desktopban és a Power BI szolgáltatásban átrendezheti és átméretezheti a jelentések vizualizációit az optimális, álló elrendezésű élmény érdekében.  
 
-Jelentések megtekintése a mobileszközön inkább kapcsolatos információkat keres? Próbálja ki az ebben a rövid útmutatóban [áttekintheti az irányítópultokat és jelentéseket a Power BI-mobilalkalmazásokban](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
+Jelentések mobileszközökön való megtekintéséről szeretne többet megtudni? Olvassa el az alábbi rövid útmutatót: [Irányítópultok és jelentések felfedezése a Power BI mobilalkalmazásokban](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
 
 ![Optimalizált jelentés egy telefonon](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
-Továbbá létrehozhat [ *rugalmas* Vizualizációk](#optimize-a-visual-for-any-size) és [rugalmas szeletelők](#enhance-slicers-to-work-well-in-phone-reports) , amelyek megfelelően átméretezhetők bárhol is. Ha szűrőket adhatnak a jelentéshez, azok automatikusan megjelennek az optimalizált jelentésnek.
+Emellett [*rugalmas* vizualizációkat](#optimize-a-visual-for-any-size) és [rugalmas szeletelőket](#enhance-slicers-to-work-well-in-phone-reports) is létrehozhat, amelyek megfelelően átméretezhetők bárhol. Ha a jelentéshez szűrőket is hozzáad, azok automatikusan megjelennek az optimalizált jelentésben.
 
 ## <a name="lay-out-a-portrait-version-of-a-report-page"></a>Jelentésoldal álló tájolású elrendezése
 
@@ -44,7 +44,7 @@ Miután létrehozott egy jelentést, optimalizálhatja azt a telefonon vagy táb
    
     ![Vizualizáció áthúzása](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
    
-    A telefonos jelentésoldalhoz a fő jelentésoldalon lévő mindegyik vizualizációt is hozzáadhatja, vagy kiválaszthat néhányat, amelyeket hozzá szeretne adni. Egy-egy vizualizációt csak egyszer adhat meg. Nem minden Vizualizáció tartalmaznia kell.
+    A telefonos jelentésoldalhoz a fő jelentésoldalon lévő mindegyik vizualizációt is hozzáadhatja, vagy kiválaszthat néhányat, amelyeket hozzá szeretne adni. Egy-egy vizualizációt csak egyszer adhat meg. Nem szükséges mindegyiket felhasználni sem.
 
 4. A rácson átméretezheti a vizualizációkat, ahogy az irányítópultokon és mobil irányítópultokon lévő csempék esetében tenné.
    

@@ -3,20 +3,19 @@ title: Jelentések exportálása Power BI-ból PowerPointba
 description: Ismerje meg, hogyan exportálhat jelentést a Power BI-ból a PowerPointba.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f06b67dc0072c125d9430079fa756d963fd99f23
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9a798afead16174f66fadba87c795d5377747e93
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61063913"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141471"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Jelentések exportálása Power BI-ból PowerPointba
 A Power BI segítségével közzéteheti jelentését a **Microsoft PowerPointban**, és könnyedén létrehozhat bemutatót a Power BI-jelentés alapján. A **PowerPointba történő exportáláskor** a következő történik:
@@ -29,27 +28,24 @@ A Power BI segítségével közzéteheti jelentését a **Microsoft PowerPointba
 A **Power BI-jelentést** gyorsan exportálhatja a **PowerPointba**. Csak kövesse az alábbi szakaszban leírt lépéseket.
 
 ## <a name="how-to-export-your-power-bi-report-to-powerpoint"></a>Hogyan exportálhatja a Power BI-jelentést a PowerPointba
-A Power BI szolgáltatásban jelöljön ki egy jelentést a vásznon való megjelenítéshez. Jelentést saját **Kezdőlapján**, az **Alkalmazások** között, vagy a bal oldali navigációs panel bármely más szakaszában kijelölhet.
+A Power BI szolgáltatásban jelöljön ki egy jelentést a vásznon való megjelenítéshez. Jelentést saját **kezdőlapján**, az **Alkalmazások** között, vagy a bal oldali navigációs panel bármely más tárolójában kijelölhet.
 
-![A Fájl kiválasztása a menüsávon, nyíl jelöli az Exportálás PowerPointba lehetőséget](media/end-user-powerpoint/power-bi-publish.png)
+Amikor a PowerPointba exportálandó jelentés megjelenik a vásznon, kattintson az  **Exportálás > PowerPoint** elemre a menüsávon.
 
-Amikor a PowerPointba exportálandó jelentés megjelenik a vásznon, kattintson a **Fájl > Exportálás a PowerPointba** elemre a Power BI szolgáltatás menüsávján.
+![Válassza az Exportálás lehetőséget a menüsorból](media/end-user-powerpoint/power-bi-export.png)
 
-![Bal navigációs sáv nagyítása a Saját munkaterület, és a Fájl legördülő lista kijelölésével](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
    
-Megjelenik egy előugró ablak, ahol kiválaszthatja az **Aktuális nézet** vagy az **Alapértelmezett nézet** lehetőséget.  Az **Aktuális nézet** az aktuális állapotban exportálja a jelentést, amely tartalmazza a szeletelő és a szűrő értékein végzett aktív módosításokat.  A legtöbb felhasználó ezt a beállítást választja.  Azt is megteheti, hogy az **Alapértelmezett nézet** lehetőség választásával az eredeti állapotában (az azt megosztó szerzőként) exportálja a jelentést, így az eredeti állapoton végzett semmilyen változtatás sem fog tükröződni.
+Megjelenik egy előugró ablak, ahol kiválaszthatja az **Aktuális értékek** vagy az **Alapértelmezett értékek** lehetőséget.  Az **Aktuális értékek** az aktuális állapotban exportálja a jelentést, amely tartalmazza a szeletelő és a szűrő értékein végzett aktív módosításokat.  A legtöbb felhasználó ezt a beállítást választja.  Azt is megteheti, hogy az **Alapértelmezett értékek** lehetőség választásával az eredeti állapotában (az azt megosztó szerzőként) exportálja a jelentést, így az eredeti állapoton végzett semmilyen változtatás sem fog tükröződni.
+
+![Exportálandó elem kiválasztása](media/end-user-powerpoint/power-bi-current-values.png)
     
-Emellett egy jelölőnégyzetet is bejelölhet, amellyel kiválaszthatja, hogy exportálja-e vagy sem a jelentés rejtett lapjait.  Egyszerűen bejelölje be ezt a négyzetet, ha csak a böngészőben az Ön számára látható jelentéslapokat szeretné exportálni.  Ha inkább szeretné belefoglalni az exportba az összes rejtett lapot is, akkor hagyja bejelöletlenül.  Ha a jelölőnégyzet ki van szürkítve, akkor nincsnek rejtett lapok a jelentésben.  Miután elvégezte a kijelöléseket, kattintson az **Exportálás** gombra a folytatáshoz.
+Emellett egy jelölőnégyzetet is bejelölhet, amellyel kiválaszthatja, hogy exportálja-e vagy sem a jelentés rejtett lapjait.  Egyszerűen bejelölje be ezt a négyzetet, ha csak a böngészőben az Ön számára látható jelentéslapokat szeretné exportálni.  Ha inkább szeretné belefoglalni az exportba az összes rejtett lapot is, akkor hagyja bejelöletlenül.  Ha a jelölőnégyzet ki van szürkítve, akkor nincsnek rejtett lapok a jelentésben.  Miután elvégezte a kijelöléseket, válassza az **Exportálás** gombot a folytatáshoz.
 
 Ekkor a Power BI szolgáltatás böngészőablakának jobb felső sarkában megjelenik egy értesítés, hogy folyamatban van a jelentés exportálása a PowerPointba. Ez igénybe vehet néhány percet, de a jelentés exportálása közben Ön tovább dolgozhat a Power BI-ban.
 
-![értesítés – exportálás PowerPointba folyamatban](media/end-user-powerpoint/powerbi_to_powerpoint_2.png)
+![értesítés – exportálás PowerPointba folyamatban](media/end-user-powerpoint/power-bi-export-progress.png)
 
-A folyamat végén az értesítési fejlécen üzenet jelenik meg, hogy a Power BI szolgáltatás befejezte az exportálási folyamatot.
-
-![sikert jelző üzenet megjelenítése](media/end-user-powerpoint/powerbi_to_powerpoint_3.png)
-
-A fájl mostantól elérhető azon a helyen, ahol a böngésző megjeleníti a letöltött fájlokat. Az alábbi képen ez egy letöltési szalag formájában látható a böngészőablak alján.
+A folyamat végén az értesítési fejlécen üzenet jelenik meg, hogy a Power BI szolgáltatás befejezte az exportálási folyamatot. A fájl mostantól elérhető azon a helyen, ahol a böngésző megjeleníti a letöltött fájlokat. Az alábbi képen ez egy letöltési szalag formájában látható a böngészőablak alján.
 
 ![a képernyő alján megjelenő, böngészőbeli értesítés, nyíllal jelölve](media/end-user-powerpoint/powerbi_to_powerpoint_4.png)
 

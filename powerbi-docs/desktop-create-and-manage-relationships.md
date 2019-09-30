@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: f2102ad654a056832f7890dc506acc99eb5ef26f
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61312496"
@@ -21,7 +21,7 @@ ms.locfileid: "61312496"
 Amikor több táblázatot importál, valószínűleg az összes táblázatból származó adattal fog elemzést végezni. A táblázatok közötti kapcsolatok szükségesek az eredmények pontos kiszámításához és a jelentésekben a helyes információk megjelenítéséhez. A Power BI Desktop megkönnyíti ezen kapcsolatok létrehozását. Valójában a legtöbb esetben semmit sem kell tennie, az Automatikus észlelés funkció elvégezheti Ön helyett. Bizonyos esetekben azonban szükség lehet a kapcsolatok saját kezű létrehozására, vagy egy kapcsolat módosításaira. Mindkét esetben fontos megérteni a Power BI Desktopban lévő kapcsolatokat és azok létrehozásának és szerkesztésének módját.
 
 ## <a name="autodetect-during-load"></a>Automatikus észlelés a betöltés során
-Két vagy több tábla egyszerre, ha az adatok betöltése, lekérdezheti, ha a Power BI Desktop megpróbálja megkeresni és létrehozni a kapcsolatokat. A Számosság, a Szűrő irányának keresztezése és az Aktív tulajdonságok automatikusan be vannak állítva. A Power BI Desktop a lekérdezett táblázatokban szereplő oszlopneveket tekinti meg annak meghatározásához, hogy vannak-e lehetséges kapcsolatok. Ha vannak, a kapcsolatok automatikusan létrejönnek. Ha a Power BI Desktop nem tudja magabiztosan magas szintű nincs egyezés, akkor nem automatikusan hozza létre a kapcsolatot. A Kapcsolatok kezelése párbeszédpanelen továbbra is létrehozhatja vagy szerkesztheti a kapcsolatokat.
+Ha egyszerre két vagy több táblázatot kérdez le, az adatok betöltésekor a Power BI Desktop megkísérli megkeresni és létrehozni a kapcsolatokat Ön helyett. A Számosság, a Szűrő irányának keresztezése és az Aktív tulajdonságok automatikusan be vannak állítva. A Power BI Desktop a lekérdezett táblázatokban szereplő oszlopneveket tekinti meg annak meghatározásához, hogy vannak-e lehetséges kapcsolatok. Ha vannak, a kapcsolatok automatikusan létrejönnek. Ha a Power BI Desktop nem tud magabiztosan meghatározni egyezést, nem hozza létre automatikusan a kapcsolatot. A Kapcsolatok kezelése párbeszédpanelen továbbra is létrehozhatja vagy szerkesztheti a kapcsolatokat.
 
 ## <a name="create-a-relationship-by-using-autodetect"></a>Kapcsolatok létrehozása az Automatikus észleléssel
 A **Kezdőlap** lapon kattintson a **Kapcsolatok kezelése** \> **Automatikus észlelés** elemre.
@@ -30,21 +30,21 @@ A **Kezdőlap** lapon kattintson a **Kapcsolatok kezelése** \> **Automatikus é
 
 ## <a name="create-a-relationship-manually"></a>Kapcsolatok létrehozása manuálisan
 1. A **Kezdőlap** lapon kattintson a **Kapcsolatok kezelése** \> **Új** elemre.
-2. Az a **kapcsolat létrehozása** párbeszédpanelen, az első táblázat legördülő listájában válasszon ki egy táblát, és válassza ki a kapcsolatban használni kívánt oszlopot.
-3. A második táblázat legördülő listájában válassza ki a kívánt táblát a kapcsolat, majd válassza ki a másik oszlop használja, és kattintson a kívánt **OK**.
+2. A **Kapcsolat létrehozása** párbeszédpanelen az első táblázat legördülő listájában válasszon egy táblázatot, majd válassza ki a kapcsolatban használni kívánt oszlopot.
+3. A második táblázat legördülő listájában válassza ki a kapcsolatba foglalni kívánt második táblázatot, és válassza ki a használni kívánt másik oszlopot, majd kattintson az **OK** gombra.
 
 ![](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
 
-Alapértelmezés szerint a Power BI Desktop automatikusan konfigurálja a számosság (irány), szűrő irányának keresztezése és aktív tulajdonságait az új kapcsolat; azonban módosíthatja a beállításokat szükség esetén. További tudnivalókat a jelen cikk későbbi, „További beállítások ismertetése” című szakaszában talál.
+Alapértelmezés szerint a Power BI Desktop automatikusan konfigurálja az új kapcsolat Számosság (irány), Szűrő irányának keresztezése és Aktív tulajdonságait, de szükség esetén módosíthatja ezeket. További tudnivalókat a jelen cikk későbbi, „További beállítások ismertetése” című szakaszában talál.
 
-Látni fogja, hogy hiba *az oszlopok egyikének egyedi értékeket kell tartalmaznia* , ha a kapcsolat a kiválasztott táblák egyike nem egyedi értékeket. Egy kapcsolatban legalább az egyik táblának tartalmaznia *kell* kulcs-értékek megkülönböztethető, egyedi listáját, amely egy általános követelmény a relációs adatbázis-technológiák esetében. 
+Ha a kapcsolat létrehozásához kiválasztott táblák egyike sem tartalmaz egyedi értékeket, akkor *Az oszlopok egyikének egyedi értékeket kell tartalmaznia* hibaüzenet fog megjelenni. Egy kapcsolatban legalább az egyik táblának tartalmaznia *kell* kulcs-értékek megkülönböztethető, egyedi listáját, amely egy általános követelmény a relációs adatbázis-technológiák esetében. 
 
 Ha ezt a hibát észleli, a következő módokon javíthatja a problémát:
 
 * Használja az „Ismétlődő sorok eltávolítása” funkciót egy egyedi értékeket tartalmazó oszlop létrehozásához. Ennek a megközelítésnek az a hátránya, hogy az ismétlődő sorok eltávolítása adatvesztéssel jár, és egy kulcs (sor) legtöbb esetben okkal van megkettőzve.
 * Vegyen fel egy köztes táblát a modellben használt egyedi kulcs-értékekkel, amely csatlakoztatva lesz a kapcsolat mindkét eredeti oszlopához.
 
-Részletesebb információkért lásd: a [blogbejegyzés](https://blogs.technet.microsoft.com/cansql/2016/12/19/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message/).
+További információkért tekintse meg ezt a [blogbejegyzést](https://blogs.technet.microsoft.com/cansql/2016/12/19/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message/).
 
 
 ## <a name="edit-a-relationship"></a>Kapcsolat szerkesztése
@@ -52,21 +52,21 @@ Részletesebb információkért lásd: a [blogbejegyzés](https://blogs.technet.
 2. A **Kapcsolatok kezelése** párbeszédpanelen válassza ki a kapcsolatot, majd kattintson a **Szerkesztés** gombra.
 
 ## <a name="configure-additional-options"></a>További beállítások konfigurálása
-A kapcsolatok létrehozásakor vagy szerkesztésekor további beállításokat is konfigurálhat. Alapértelmezés szerint további lehetőségeket automatikusan megtörténik az feltételezésen, amely lehet mindegyik kapcsolat az oszlopokban szereplő adatok alapján különböző alapján.
+A kapcsolatok létrehozásakor vagy szerkesztésekor további beállításokat is konfigurálhat. Alapértelmezés szerint a rendszer automatikusan, legjobb belátása szerint konfigurálja a további beállításokat, amelyek az oszlopokban található adatok alapján kapcsolatonként eltérőek lehetnek.
 
 ## <a name="cardinality"></a>Számosság
-**Több az egyhez (\*: 1)** – a legtöbb gyakori, alapértelmezett típus, ami azt jelenti, hogy az egyik táblázat oszlopában egy érték, és a másik kapcsolódó táblázatban több mint egy példány szerepelhet, másnéven a keresési táblázatban az érték egy példánya szerepel.
+**Több az egyhez (\*:1)** – Ez a leggyakoribb, alapértelmezett típus. Azt jelenti, hogy az egyik táblázat oszlopában egy érték több példánya szerepelhet, és a másik kapcsolódó táblázatban, másnéven a keresési táblázatban az érték egy példánya szerepel.
 
-**Egy az egyhez (1:1)** – az egyik táblázat oszlopában egy adott érték csak egy példánya szerepel, és a másik kapcsolódó táblázatban az érték egy példánya szerepel.
+**Egy az egyhez (1:1)** – Az egyik táblázat oszlopában egy adott érték egy példánya szerepelhet, és a másik kapcsolódó táblázatban az érték egy példánya szerepel.
 
-**Több a többhöz kapcsolatok**: Összetett modellekkel tábla, amely eltávolítja az egyedi értékeket követelményei a táblák között több-a-többhöz kapcsolatokat létesíthet. Korábbi áthidaló megoldásokat is szükségtelenné tesz, például új táblák bevezetését a kapcsolatok létrehozásához. Részletesebb információkért lásd: [Kapcsolatok sok a sokhoz számossággal](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
+**Több a többhöz kapcsolatok**: Összetett modellek esetén több a többhöz típusú kapcsolatokat hozhat létre a táblák között, ami megszünteti a táblák egyedi értékeire vonatkozó követelményeket. Korábbi áthidaló megoldásokat is szükségtelenné tesz, például új táblák bevezetését a kapcsolatok létrehozásához. Részletesebb információkért lásd: [Kapcsolatok sok a sokhoz számossággal](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
 
 A számosság módosításának idejéről további tudnivalókat a jelen cikk későbbi, „További beállítások ismertetése” című szakaszában talál.
 
 ## <a name="cross-filter-direction"></a>Szűrő irányának keresztezése
-**Mindkét** – a leggyakoribb, alapértelmezett irány, ami azt jelenti, hogy szűrési célból mindkét táblázatot úgy kezeli, mintha azok egyetlen tábla. **Mindkét** jól együttműködik az olyan keresési táblák azt körülvevő számos táblát. Erre példa lehet egy Értékesítési táblázat, amelyben a részleghez egy keresési táblázat szerepel. Ezt gyakran csillagséma konfigurációnak nevezik (egy központi táblázat több keresési táblázattal.) Ha azonban két vagy több olyan táblázata van, amelyek keresési táblázatokkal rendelkeznek (amelyek közül néhány közös), akkor nem érdemes a Mindkettő beállítást használni. Az előző példa folytatása érdekében ebben az esetben olyan költségvetési értékesítési táblázattal is rendelkezik, amely az egyes részlegek cél költségvetését rögzíti. A részleg táblázata pedig az értékesítés és a költségvetés táblázathoz is csatlakozik. Az ilyen konfigurációtípusok esetén kerülje a Mindkettő beállítást.
+**Mindkettő** – A leggyakoribb, alapértelmezett irány. Azt jelenti, hogy szűrési célokból a rendszer mindkét táblázatot egy táblázatként kezeli. A **Mindkettő** beállítás jól működik, ha egy olyan táblázattal dolgozik, amelyet számos keresési táblázat vesz körül. Erre példa lehet egy Értékesítési táblázat, amelyben a részleghez egy keresési táblázat szerepel. Ezt gyakran csillagséma konfigurációnak nevezik (egy központi táblázat több keresési táblázattal.) Ha azonban két vagy több olyan táblázata van, amelyek keresési táblázatokkal rendelkeznek (amelyek közül néhány közös), akkor nem érdemes a Mindkettő beállítást használni. Az előző példa folytatása érdekében ebben az esetben olyan költségvetési értékesítési táblázattal is rendelkezik, amely az egyes részlegek cél költségvetését rögzíti. A részleg táblázata pedig az értékesítés és a költségvetés táblázathoz is csatlakozik. Az ilyen konfigurációtípusok esetén kerülje a Mindkettő beállítást.
 
-**Egyetlen** – csatlakoztatott táblázatokban lévő szűrési lehetőségek működnek a tábla, ahol értékek összesítve vannak. Ha egy Power Pivot táblázatot Excel 2013 vagy korábbi adatmodellbe importál, minden kapcsolat egyetlen iránnyal rendelkezik. 
+**Egyirányú** – A csatlakoztatott táblázatokban lévő szűrési lehetőségek arra a táblázatra érvényesek, ahol az értékek összesítve vannak. Ha egy Power Pivot táblázatot Excel 2013 vagy korábbi adatmodellbe importál, minden kapcsolat egyetlen iránnyal rendelkezik. 
 
 A Szűrő irányának keresztezése beállítás módosításának idejéről további tudnivalókat a jelen cikk későbbi, „További beállítások ismertetése” című szakaszában talál.
 
@@ -76,9 +76,9 @@ Amikor be van jelölve, azt jelenti, hogy ez a kapcsolat az aktív, alapértelme
 Egy adott kapcsolat aktívvá tételének idejéről további tudnivalókat a jelen cikk későbbi, „További beállítások ismertetése” című szakaszában talál.
 
 ## <a name="understanding-relationships"></a>A kapcsolatok ismertetése
-Miután egy kapcsolattal összekapcsolt két táblázatot, mindkét táblázat adatait úgy használhatja, mintha egyetlen táblázatot alkotnának, így nem kell aggódnia a kapcsolat részletei miatt, és nem kell egybesimítania a táblázatokat egyetlen táblázattá az importálásuk előtt. Sok esetben a Power BI Desktop automatikusan létre tudja hozni a kapcsolatokat, így elképzelhető, hogy nem is kell saját kezűleg létrehoznia ezeket a kapcsolatokat. Azonban a Power BI Desktop nem tudja egy nagy-biztonsággal, hogy léteznie kell-e kapcsolatnak két táblázat között, ha azt nem automatikusan hozza létre a kapcsolatot. Ebben az esetben létre kell hoznia a kapcsolatot. 
+Miután egy kapcsolattal összekapcsolt két táblázatot, mindkét táblázat adatait úgy használhatja, mintha egyetlen táblázatot alkotnának, így nem kell aggódnia a kapcsolat részletei miatt, és nem kell egybesimítania a táblázatokat egyetlen táblázattá az importálásuk előtt. Sok esetben a Power BI Desktop automatikusan létre tudja hozni a kapcsolatokat, így elképzelhető, hogy nem is kell saját kezűleg létrehoznia ezeket a kapcsolatokat. Ha azonban a Power BI Desktop nem tudja nagy valószínűséggel meghatározni, hogy léteznie kell-e kapcsolatnak két táblázat között, nem hozza létre automatikusan a kapcsolatot. Ebben az esetben létre kell hoznia a kapcsolatot. 
 
-Vegyük rövid oktatóanyagokat, hogy jobban bemutathassuk a kapcsolatok működését a Power BI Desktopban.
+Tekintsünk át egy rövid oktatóprogramot, hogy jobban bemutathassuk a kapcsolatok működését a Power BI Desktopban.
 
 >[!TIP]
 >Ezt a leckét önállóan elvégezheti. Másolja az alábbi ProjektÓrák táblázatot egy Excel munkalapra, jelölje ki az összes cellát, és kattintson a **Beszúrás** \> **Táblázat** lehetőségre. A **Táblázat létrehozása** párbeszédpanelen csak kattintson az **OK** gombra. Ezután a **Táblázat neve** területen írja be a **ProjektÓrák**  nevet. Végezze el ugyanezt a VállalatiProjekt táblázathoz. Ezután importálhatja az adatokat az **Adatok lekérése** paranccsal a Power BI Desktopban. Válassza ki a munkafüzetet és a táblázatokat adatforrásként.
@@ -114,7 +114,7 @@ A második táblázat, a VállalatiProjekt, a hozzárendelt prioritásokkal (A, 
 | Bíbor |B |
 | Narancssárga |C |
 
-Figyelje meg, hogy mindegyik táblázatban található egy projekt oszlop. Nem ugyanaz a nevük, de úgy tűnik, hogy az értékek egyeznek. Ez fontos, és felvesszük ahhoz szereplő hamarosan.
+Figyelje meg, hogy mindegyik táblázatban található egy projekt oszlop. Nem ugyanaz a nevük, de úgy tűnik, hogy az értékek egyeznek. Ez fontos, és nemsokára visszatérünk rá.
 
 Most, hogy két táblázat van a modellbe importálva, hozzunk létre egy jelentést. Először a projekt prioritásai alapján elküldött órák számát szeretnénk lekérni, ezért jelöljük be a Mezők területen a **Prioritás** és az **Órák** lehetőségeket.
 
@@ -132,14 +132,14 @@ Ha a VállalatiProjekt táblázatban lévő ProjektNév oszlopra tekintünk, lá
 
 ### <a name="to-create-the-new-relationship"></a>Új kapcsolat létrehozása
 1. Kattintson a **Kapcsolatok kezelése** lehetőségre.
-2. A **kapcsolatok kezelése**, kattintson a **új** megnyitásához a **kapcsolat létrehozása** párbeszédpanelt, ahol kiválaszthatjuk a táblázatok, oszlopok és használni kívánt esetleges egyéb beállításokat a kapcsolat.
+2. A **Kapcsolatok kezelése** területen kattintson az **Új** lehetőségre a **Kapcsolat létrehozása** párbeszédpanel megnyitásához, ahol kiválaszthatja a kapcsolathoz használni kívánt táblázatokat, oszlopokat és további beállításokat.
 3. Az első táblázatban válassza a **ProjektÓrák**  lehetőséget, majd válassza a **Projekt** oszlopot. Ez a kapcsolat „több” oldala.
 4. A második táblázatban válassza a **VállalatiProjekt** lehetőséget, majd válassza a **ProjektNév** oszlopot. Ez a kapcsolat „egy” oldala. 
 5. Kattintson az **OK** gombra a **Kapcsolat létrehozása** párbeszédpanelen és a **Kapcsolatok kezelése** párbeszédpanelen is.
 
 ![](media/desktop-create-and-manage-relationships/candmrel_create_compproj.png)
 
-Pontosság teljes való illetéktelen hozzáférés újonnan létrehozott ezt a kapcsolatot a nehezebb módja. Sikerült csak kattintott a kapcsolatok kezelése párbeszédpanelen Automatikus észlelés gombra. Az Automatikus észlelés ugyanis megtette volna mindezt az adatok betöltésekor, ha mindkét oszlop neve ugyanaz volt. De mi ebben a kihívás?
+Az igazság az, hogy ez volt a kapcsolat létrehozásának nehezebb módja. A Kapcsolatok kezelése párbeszédpanelen egyszerűen az Automatikus észlelés gombra is kattinthatott volna. Az Automatikus észlelés ugyanis megtette volna mindezt az adatok betöltésekor, ha mindkét oszlop neve ugyanaz volt. De mi ebben a kihívás?
 
 Most tekintsük meg ismét a Jelentés vásznon lévő táblázatot.
 
@@ -147,33 +147,33 @@ Most tekintsük meg ismét a Jelentés vásznon lévő táblázatot.
 
 Máris sokkal jobban néz ki, nem igaz?
 
-Amikor órában prioritás szerint, a Power BI Desktop megkeresi a Vállalatiprojekt keresési táblázatban az egyedi színértékek összes példányát, és keresse meg a Vállalatiprojekt táblázatban ezen értékek minden példányát, és kiszámítása minden egyes egyedi érték összegét .
+Amikor a prioritás alapján összegezzük az órákat, a Power BI Desktop megkeresi a VállalatiProjekt keresési táblázatban az egyedi színértékek összes példányát, és megkeresi ezen értékek minden példányát a VállalatiProjekt táblázatban, majd kiszámítja minden egyes egyedi érték összegét.
 
-Könnyű volt, valójában az automatikus észlelés sikertelen, előfordulhat, hogy nem is kell tennünk.
+Viszonylag egyszerű művelet volt mindez, az Automatikus észleléssel azonban talán még ennyit sem kellett volna tennünk.
 
 ## <a name="understanding-additional-options"></a>További beállítások ismertetése
-Egy kapcsolat létrehozásakor, vagy a kapcsolatok automatikus észleléssel vagy manuálisan, a Power BI Desktop automatikusan konfigurálja a további beállításokat a táblázatokban lévő adatok alapján. E további kapcsolattulajdonságokat a Kapcsolat létrehozása/szerkesztése párbeszédpanel legalsó szakaszában találhatja meg és konfigurálhatja.
+A kapcsolatok Automatikus észleléssel vagy manuálisan való létrehozásakor a Power BI Desktop automatikusan konfigurálja a további beállításokat a táblázatokban lévő adatok alapján. E további kapcsolattulajdonságokat a Kapcsolat létrehozása/szerkesztése párbeszédpanel legalsó szakaszában találhatja meg és konfigurálhatja.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_advancedoptions2.png)
 
 Ahogy említettük, ezek beállítása általában automatikusan történik, így nem kell velük foglalkoznia; de több olyan helyzet is előfordulhat, amikor érdemes saját kezűleg konfigurálni a további beállításokat.
 
-## <a name="automatic-relationship-updates"></a>Kapcsolat az automatikus frissítések
+## <a name="automatic-relationship-updates"></a>Automatikus kapcsolatfrissítések
 
-Hogyan a Power bi-ban úgy kezeli, és automatikusan módosítja a kapcsolatokat a jelentések és modellek is kezelheti. Hogyan kezeli a Power bi-ban a kapcsolatok beállítások megadásához válassza **fájl > lehetőségek és beállítások > Beállítások** a Power BI Desktopból, majd válassza ki **adatbetöltés** a bal oldali panelen. Ekkor megjelenik a beállítások **kapcsolatok**.
+Felügyelheti, hogy a Power BI hogyan kezeli és állítja be automatikusan a jelentések és modellek kapcsolatait. Ha meg szeretné szabni, hogy a Power BI hogyan kezelje a kapcsolati beállításokat, válassza a **Fájl > Beállítások > Beállítások** lehetőséget a Power BI Desktopban, majd a bal oldali panelen válassza az **Adatok betöltése** elemet. Ezután megtekintheti a **Kapcsolatok** beállításait.
 
- ![Kapcsolat beállításai](media/desktop-create-and-manage-relationships/relationships-options-01.png)
+ ![Kapcsolati beállítások](media/desktop-create-and-manage-relationships/relationships-options-01.png)
 
-Három lehetőség kiválasztott, és engedélyezve van. 
+Három lehetőség közül választhat. 
 
-Az első lehetőség van *kapcsolatok importálása adatforrásokból*, és alapértelmezés szerint ki van választva. Kiválasztásakor a Power BI ellenőrzi a kapcsolatok meghatározva a saját adatforrásával, például a külső kulcs / elsődleges kulcs kapcsolatokat a data warehouse-ban. Ha található ilyen a kapcsolatok, azok tükrözi a rendszer a Power BI-adatmodellbe való adatok kezdetben betöltésekor. Ez a beállítás lehetővé teszi, hogy gyorsan a modell használatának megkezdése előtt, nem pedig akkor található, vagy saját kezűleg ezen kapcsolatok meghatározása.
+Az első lehetőség a *Kapcsolatok importálása adatforrásokból*, amely alapértelmezés szerint ki van jelölve. Ezzel a beállítással a Power BI ellenőrzi az adatforrásban definiált kapcsolatokat, például az adattárház külső kulcsainak és elsődleges kulcsainak kapcsolatait. Ha léteznek ilyen kapcsolatok, azok az első adatbetöltésnél megjelennek a Power BI adatmodelljében. Ezzel a beállítással gyorsan használatba veheti a modellt, anélkül, hogy Önnek kellene megkeresnie és definiálnia a kapcsolatokat.
 
-A második lehetőség egy *frissítése vagy törlése a kapcsolatokat, az adatok frissítése során*, és alapértelmezés szerint ki van. Ha a kiválasztott (a beállítás mellett a négyzet bejelölésével engedélyezve), a Power BI ellenőrzi a módosításokat a forrás adatkapcsolatok az adatkészlet frissítésekor. Ha ezen kapcsolatok módosítják, vagy el lesznek távolítva, a Power BI tükrözi ezeket a módosításokat a saját data model szolgáltatásban, frissítése vagy törlése, hogy egyezzenek.
+A második lehetőség a *Az adatok frissítésekor frissítsen vagy töröljön kapcsolatokat*, amely alapértelmezés szerint ki van kapcsolva. Ezzel a beállítással (amelyet a jelölőnégyzet bejelölésével engedélyezhet) a Power BI az adatkészlet frissítésekor ellenőrzi az adatforrás-kapcsolatok változásait. Ha ezek a kapcsolatok módosulnak vagy törlődnek, a Power BI tükrözi ezeket a változásokat saját adatmodelljében, és a megfelelő (törlési vagy frissítési) műveletet végzi el.
 
 > [!WARNING]
-> A definiált kapcsolatokat támaszkodó sorszintű biztonság használatakor nem javasoljuk, hogy válassza a második lehetőség, *frissítése vagy törlése a kapcsolatokat, az adatok frissítése során*. Kapcsolat eltávolítása, hogy az RLS-beállítása támaszkodhat, ha a modell kevésbé biztonságos válhat. 
+> Ha a definiált kapcsolatokra épülő sorszintű biztonságot alkalmaz, nem ajánlott a második lehetőséget (*Az adatok frissítésekor frissítsen vagy töröljön kapcsolatokat*) használni. Ha eltávolít egy olyan kapcsolatot, amelyre RLS-beállítások épülnek, az veszélyezteti a modell biztonságát. 
 
-A harmadik lehetőség *új kapcsolatok automatikus észlelése adatok betöltése után*, amelynek leírását a [automatikus észlelés a betöltés során](#autodetect-during-load) szakaszban korábban a következő cikkben talál. 
+A harmadik lehetőség az *Új kapcsolatok automatikus észlelése az adatok betöltése után*, amelyet a cikk korábbi, [Automatikus észlelés a betöltés során](#autodetect-during-load) című szakaszában ismertettünk. 
 
 
 ## <a name="future-updates-to-the-data-require-a-different-cardinality"></a>Az adatok jövőbeli frissítései más számosságot igényelnek.
@@ -257,7 +257,7 @@ Ha egyetlen irányú keresztszűréssel hozza létre a projektórákat összegz�
 
  ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
-Szűrőspecifikáció a Vállalatiprojekt, a Vállalatialkalmazott (ahogyan az alábbi képen látható), de azt nem flow legfeljebb Vállalatialkalmazott. Ha azonban Mindkettő értékre állítja a keresztszűrés irányát, az működik. A Mindkettő beállítás lehetővé teszi, hogy a szűrőspecifikáció elérje az Alkalmazott oszlopot.
+A szűrőspecifikáció a VállalatiProjekt felől a VállalatiAlkalmazott felé halad (az alábbi képen látható módon), de nem éri el a VállalatiAlkalmazott oszlopot. Ha azonban Mindkettő értékre állítja a keresztszűrés irányát, az működik. A Mindkettő beállítás lehetővé teszi, hogy a szűrőspecifikáció elérje az Alkalmazott oszlopot.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_bidircrossfiltering.png)
 
@@ -325,7 +325,7 @@ Ha mindkét kapcsolatot a modellhez adjuk (először a Megnyitó oszlopot), akko
 
  ![](media/desktop-create-and-manage-relationships/candmrel_managerelactive.png)
 
-Most ha létrehozunk egy jelentést, amely az alkalmazottszerepköre táblázat szerepkör és alkalmazott mezőit, és a egy tábla vizualizációt projektjegyek órák mezőjét használja a jelentés vásznon, fogjuk látni csak a projektszponzorokat mivel korábban már csak nekik van, amely a projektjegyeket.
+Ha most létrehozunk egy jelentést, amely az AlkalmazottSzerepköre táblázat Szerepkör és Alkalmazott mezőit, valamint a ProjektJegyek táblázat Órák mezőjét használja a Jelentés vásznon a táblázatvizualizációban, csak a projektszponzorokat látjuk, mert csak ők nyitották meg a projektjegyeket.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfilteractive.png)
 

@@ -11,7 +11,7 @@ ms.date: 05/06/2019
 ms.author: maggies
 ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65240078"
@@ -37,7 +37,7 @@ Ehhez az oktatóanyaghoz Azure-előfizetés szükséges. Ha még nincs, kezdés 
 
 Szerencsére a Power BI csapata létrehozott egy virtuális gépet, amelyre már telepítve van a Power BI jelentéskészítő kiszolgáló.
 
-1. Az Azure Marketplace-en válassza ki a Power BI jelentéskészítő kiszolgálóra. Ez a hivatkozás megnyitja azt közvetlenül: [A Power BI jelentéskészítő kiszolgáló](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
+1. Az Azure Marketplace-en válassza ki a Power BI jelentéskészítő kiszolgálót. Ez a hivatkozás közvetlenül megnyitja: [Power BI jelentéskészítő kiszolgáló](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
 
 2. Válassza a **Letöltés most** lehetőséget.
 3. A szolgáltató használati feltételeinek és adatvédelmi szabályzatának elfogadásához válassza a **Tovább** lehetőséget.
@@ -46,13 +46,13 @@ Szerencsére a Power BI csapata létrehozott egy virtuális gépet, amelyre már
 
     ![Virtuális gép létrehozása Power BI jelentéskészítő kiszolgálóhoz](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create.png)
 
-5. A **lépés 1 alapjai**, a **virtuális gép neve**, meghívására **reportservervm**.
+5. Az **1. lépés, Alapok** **Virtuális gép neve** mezőjében adja meg a **reportservervm** értéket.
 
-    A Power BI jelentéskészítő kiszolgáló virtuális gép neve nem tartalmazhat kötőjeleket.
+    A Power BI jelentéskészítő kiszolgáló virtuális gépének neve nem tartalmazhat kötőjeleket.
 
 5. Hozzon létre egy felhasználónevet és jelszót.
 
-6. A **erőforráscsoport**válassza **új létrehozása**, és adja neki **reportserverresourcegroup** > **OK**.
+6. Az **Erőforráscsoport** területen válassza ki az **Új létrehozása** lehetőséget, majd adja meg hozzá a **reportserverresourcegroup** nevet  > **OK**.
 
     Ha többször elvégzi az oktatóanyagot, az első alkalom után új nevet kell adnia az erőforráscsoportnak. Egy előfizetésben nem használhatja kétszer ugyanazt az erőforráscsoport-nevet. 
 
@@ -60,15 +60,15 @@ Szerencsére a Power BI csapata létrehozott egy virtuális gépet, amelyre már
 
 7. Tartsa meg a többi alapbeállítást > **OK**.
 
-8. A **. lépés 2 beállítások**, tartsa meg az alapértelmezéseket > **OK**.
+8. A **2. lépés, Beállítások** területen tartsa meg az alapértelmezett beállításokat > **OK**.
  
-    A **SQL tárfiók** és **diagnosztikai tárfiók** értékeket is egyedinek kell lennie. Ha mindenképpen haladjon végig az oktatóanyag többször, akkor eltérő név.
+    Az **SQL Storage-fiók** és **Diagnosztikai tárfiók** értékeknek szintén egyedinek kell lenniük. Ha többször elvégzi az oktatóanyagot, új nevet kell adnia az értékeknek.
 
-9. A **lépés 3 összefoglalás**, tekintse át a választásait > **OK**.
+9. A **3. lépés, Összegzés** területen tekintse át a beállításokat > **OK**.
 
-10. A **lépés 4 vásárlása**, tekintse át a felhasználói és adatvédelmi szabályzat feltételeit > **létrehozás**.
+10. A **4. lépés, Vásárlás**  területen tekintse át a felhasználókra vonatkozó használati feltételeket és az adatvédelmi szabályzatot > **Létrehozás**.
 
-    A **üzemelő példány elküldése az Power BI jelentéskészítő kiszolgáló** folyamat eltarthat néhány percig.
+    A **Power BI jelentéskészítő kiszolgáló üzembe helyezésének kérése** folyamat több percig is eltarthat.
 
 ## <a name="connect-to-your-virtual-machine"></a>Virtuális gép csatlakoztatása
 
@@ -84,13 +84,13 @@ Szerencsére a Power BI csapata létrehozott egy virtuális gépet, amelyre már
 
     ![Csatlakozás a virtuális géphez](media/tutorial-explore-report-server-web-portal/power-bi-report-server-connect-to-virtual-machine.png)
 
-5. Az a **csatlakozhat a virtuális gép** panelen hagyja változatlanul az alapértelmezett beállításokat, majd válasszon **RDP-fájl letöltése**.
+5. A **Csatlakozás virtuális géphez** panelen tartsa meg az alapértelmezett értékeket, és válassza az **RDP-fájl letöltése** lehetőséget.
 
-1. Az a **távoli asztali kapcsolat** párbeszédpanelen jelölje ki **Connect**.
+1. A **Távoli asztali kapcsolat** párbeszédablakban válassza a **Csatlakozás** lehetőséget.
 
 6. Adja meg a virtuális géphez létrehozott felhasználónevet és jelszót > **OK**.
 
-7. A következő párbeszédpanel szerint **a távoli számítógép identitása nem azonosítható**. Válassza az **Igen** lehetőséget.
+7. A következő párbeszédpanelen az áll, hogy **a távoli számítógép nem azonosítható**. Válassza az **Igen** lehetőséget.
 
    Máris megnyílik az új virtuális gép.
 
@@ -104,7 +104,7 @@ Amikor a virtuális gép megnyílik, a következő elemek láthatók az asztalá
 |---------|---------|
 |![1](media/tutorial-explore-report-server-web-portal/number-1.png) | Power BI-jelentésminták (.PBIX) |
 |![2](media/tutorial-explore-report-server-web-portal/number-2.png) | A Power BI jelentéskészítő kiszolgáló dokumentációjára mutató hivatkozás |
-|![3](media/tutorial-explore-report-server-web-portal/number-3.png) | Elindul a Power BI jelentéskészítő kiszolgálóra (január 2019) optimalizált Power BI Desktop |
+|![3](media/tutorial-explore-report-server-web-portal/number-3.png) | Elindítja a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopot (2019. január) |
 |![4](media/tutorial-explore-report-server-web-portal/number-4.png) | A Power BI jelentéskészítő kiszolgáló webportált nyitja meg a böngészőben |
 |![5](media/tutorial-explore-report-server-web-portal/number-5.png) | Elindítja az SQL Server Data Tools programot többoldalas (.RDL) jelentések létrehozásához |
 
@@ -163,7 +163,7 @@ A webportálon megtekintheti és kezelheti a Power BI-jelentéseket, és közvet
 
 1. Válassza az **Engedélyezés** lehetőséget, hogy ez a webhely megnyithasson egy programot az Ön számítógépén. 
 
-     A jelentés megnyílik a Power BI Desktopban. Jegyezze fel a lap tetején található, "A Power BI Desktop (január 2019)". Ez a Power BI jelentéskészítő kiszolgálóhoz optimalizált verzió.
+     A jelentés megnyílik a Power BI Desktopban. Figyelje meg a felső sávban látható nevet: „Power BI Desktop (2019. január)”. Ez a Power BI jelentéskészítő kiszolgálóhoz optimalizált verzió.
 
     A Power BI Desktop a virtuális gépen telepített verzióját használja. Jelentés feltöltéséhez nem léphet másik tartományba.
 

@@ -3,20 +3,19 @@ title: Mi az az irányítópult és hogyan lehet megnyitni?
 description: Az irányítópult a Power BI szolgáltatás egyik legfontosabb funkciója.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 81987b864224b6afd254a3bffe17ecbb019198d0
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: cad6aeeb156534052241d5183a575b222736230a
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608331"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141922"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Irányítópultok a Power BI szolgáltatás felhasználói számára
 
@@ -54,8 +53,8 @@ A jelentéseket könnyű összekeverni az irányítópultokkal, mivel mind a ket
 | Láthatja az alapul szolgáló adatkészlet-táblázatokat és -mezőket |Nem. Exportálhatja az adatokat, de magán az irányítópulton nem fogja látni a táblázatokat és a mezőket. |Igen. Láthatja az adatkészlet-táblázatokat, -mezőket és -értékeket. |
 
 
-## <a name="dashboard-creators-and-dashboard-consumers"></a>Az irányítópultok létrehozói és felhasználói
-A Power BI ***felhasználójaként*** az irányítópultokat *létrehozóktól* kapja meg. Az irányítópultokról további információt olvashat az alábbi témakörökben:
+## <a name="dashboard-designers-and-dashboard-consumers"></a>Az irányítópultok tervezői és felhasználói
+A Power BI ***felhasználójaként*** az irányítópultokat *tervezőktől* kapja meg. Az irányítópultokról további információt olvashat az alábbi témakörökben:
 
 * [Irányítópult megtekintése](end-user-dashboard-open.md)
 * Ismerkedjen meg az [irányítópult-csempékkel](end-user-tiles.md), és fedezze fel mi történik, ha kiválaszt egy csempét.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: c32f4b0a03ba751d5b8cbd6e98633275ece9222b
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 4ec7a67b861a747f9f8f654ab9fb3fa5c2951af3
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877813"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175184"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>A Power BI felügyelete – gyakori kérdések (GYIK)
 
@@ -38,6 +38,7 @@ A cikk a Power BI felügyeletével kapcsolatos gyakori kérdéseket ismerteti. A
 
 * [Hogyan változtatja meg a Power BI használata a felhasználók identitásának kezelését a cégen belül?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Hogyan lehet kezelni a Power BI-t?](#how-do-we-manage-power-bi)
+* [Mi a Microsoft által a felhasználók számára létrehozott bérlők kezelésének folyamata?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [Ha több tartományom van, felügyelhetem azt az Office 365-bérlőt, amelyhez a felhasználók hozzáadódnak?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
 * [Hogyan távolítható el a Power BI a már regisztrált felhasználóktól?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Honnan szerzek arról tudomást, ha új felhasználók csatlakoztak a bérlőhöz?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -172,6 +173,14 @@ Három forgatókönyv vonatkozhat a cégen belüli felhasználókra:
 A Power BI olyan rendszergazdai portált biztosít, amellyel megtekintheti a használattal kapcsolatos statisztikákat, hivatkozást biztosít a Microsoft 365 Felügyeleti központhoz a felhasználók és csoportok kezeléséhez, illetve lehetővé teszi a bérlők közötti beállítások kezelését.
 
 A Power BI felügyeleti portáljának használatához fiókját **Globális rendszergazda** fiókként kell megjelölni az Office 365 vagy az Azure Active Directory szolgáltatáson belül, vagy a Power BI szolgáltatás rendszergazdai szerepkörét kell hozzárendelni az Ön felhasználói fiókjához. További információ: [A Power BI rendszergazdai szerepkörének ismertetése](service-admin-role.md) és [Power BI felügyeleti portál](service-admin-portal.md).
+
+### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Mi a Microsoft által a felhasználók számára létrehozott bérlők kezelésének folyamata?
+
+Amikor egy önkiszolgáló felhasználó olyan felhőszolgáltatásban regisztrál, amely az Azure-t használja, akkor az e-mail-tartománya alapján hozzá lesz adva egy nem felügyelt Azure AD-címtárhoz. A létrehozott bérlőt a *rendszergazdai átvétel* néven ismert folyamattal igényelheti és kezelheti. További információ: [Nem felügyelt címtár átvétele rendszergazdaként az Azure Active Directoryban](/azure/active-directory/users-groups-roles/domains-admin-takeover). Az átvétel típusa attól függ, hogy van-e már létező felügyelt bérlő a tartományhoz társítva:
+
+* A Power BI támogatja a belső rendszergazdai átvételt. Ha egy nem felügyelt Azure-címtár _belső_ rendszergazdai átvételét végzi, Ön a nem felügyelt címtár globális rendszergazdája lesz. Felhasználók, tartományok és szolgáltatáscsomagok nem kerülnek át Ön által felügyelt további címtárakba.
+
+* A Power BI már nem támogatja a külső rendszergazdai átvételt. Ha egy nem felügyelt Azure-címtár _külső_ rendszergazdai átvételét végzi, a nem felügyelt címtár DNS-tartománynevét hozzáadja a felügyelt Azure-címtárhoz. Amikor hozzáadja a tartománynevet, létrejön a felhasználók erőforrásokhoz való hozzárendelése a felügyelt Azure-címtárban, így ők továbbra is hozzáférhetnek a szolgáltatásokhoz.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to"></a>Ha több tartományom van, felügyelhetem azt az Office 365-bérlőt, amelyhez a felhasználók hozzáadódnak?
 

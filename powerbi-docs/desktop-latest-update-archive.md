@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b61d0e3515b4efb08cb08a49d9bb339a1fbbb5a3
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 0dcc5e3aac4b43a6975a9faa5dd23faa2888b324
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903689"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142222"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>A Power BI Desktop korábbi havi frissítései
 
@@ -34,7 +34,7 @@ A **legújabb frissítésekről** szóló videót az elejétől is végignézhet
 
 Az alábbi szakaszok a **Power BI Desktop** korábbi havi frissítéseit ismertetik.
 
-## <a name="august-2019-update-2715523641"></a>2019. augusztusi frissítés (2.71.5523.641)
+## <a name="august-2019-update-2725556801"></a>2019. augusztusi frissítés (2.72.5556.801)
 
 Augusztusi frissítéseink beragyogták a Power BI Desktopban létrehozott jelentéseket. 
 
@@ -2743,7 +2743,7 @@ Ez a frissítés a következő szolgáltatásokat tartalmazza:
 
 -   **Jelentésoldalak átrendezése** (áthúzással)
 
--   Körülbelül 40–50%-os **teljesítmény** **javulás** az adatbázistáblák szűrők/átalakítások nélküli feltöltésével
+-   Körülbelül 40–50%-os **teljesítmény****javulás** az adatbázistáblák szűrők/átalakítások nélküli feltöltésével
 
 -   Számos hibajavítás
 

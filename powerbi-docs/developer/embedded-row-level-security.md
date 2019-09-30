@@ -1,20 +1,20 @@
 ---
 title: Sorszintű biztonság használata beágyazott Power BI tartalommal
 description: Megismerheti Power BI-tartalmak az alkalmazásba való beágyazásának lépéseit.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 7c58d4a5ce94a8659c85606dc2cbce1b4fc615f5
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 2e7100db05b6ace0e4d530964f645e120387a8b2
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596575"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073349"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sorszintű biztonság a Power BI Embeddeddel
 
@@ -26,7 +26,7 @@ Ha Power BI-felhasználóknak végez beágyazást (a felhasználó az adatok tul
 
 ![A sorszintű biztonságban szereplő elemek.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
-Az RLS kihasználása érdekében fontos megérteni a három fő alapelvet: a felhasználókat, a szerepköröket és a szabályokat. Lássuk mindegyiket közelebbről:
+Az RLS kihasználása érdekében fontos megérteni a három fő alapelvet: a felhasználókat, a szerepköröket és a szabályokat. Tekintsük meg közelebbről ezeket az alapelveket:
 
 **Felhasználók** – Az összetevőket (irányítópultokat, csempéket, jelentéseket vagy adatkészleteket) megtekintő tényleges végfelhasználók. A Power BI Embedded esetében a felhasználókat beágyazási jogkivonatban lévő felhasználónév tulajdonság azonosítja.
 

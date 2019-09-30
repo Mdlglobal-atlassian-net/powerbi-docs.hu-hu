@@ -13,7 +13,7 @@ ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 6fb02e6cbaca30859aa00f58ae07c9a3fd7f6fe0
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65101493"
@@ -25,7 +25,7 @@ ms.locfileid: "65101493"
 
 Excel-munkafüzet Power BI-ba történő importálásakor a következő hiba jelenhet meg:
 
-*Hiba: Nem sikerült megtalálni az adatok táblázatként vannak formázva. Az Excelből importálja a Power BI szolgáltatásban, formázhatja az adatokat táblázatként kell. Válassza ki az összes adatot a táblázatba szeretne, és nyomja le a Ctrl + T billentyűkombinációt.*
+*Hiba: Nem található táblázatként formázott adat. Ha az Excelből szeretne a Power BI szolgáltatásba importálni, táblázatként kell formáznia az adatokat. Válassza ki a táblázatba foglalni kívánt adatokat, majd nyomja le a Ctrl+T billentyűkombinációt.*
 
 ![Nem található adat a munkafüzetben](media/service-admin-troubleshoot-excel-workbook-data/power-bi-we-couldnt-find-any-data.png)
 

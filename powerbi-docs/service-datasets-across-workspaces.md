@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/16/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 258dd735c5ba97122d9e93f888e65cf2030f01eb
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: ace40fed472dc516cce5a761544cc5365566f3cd
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530478"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71074127"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Adathalmazok használata több munkaterületen (előzetes verzió) – bevezetés
 
@@ -55,6 +55,7 @@ Ha adathalmazokat hoz létre, és olyat készít, amelynek mások is hasznát ve
 A megosztott adathalmazokkal kapcsolatos képességekre épülő funkciók és felületek azok meglévő felhasználási helyzete alapján vannak licencelve. Például:
 
 - A megosztott adathalmazok felfedezése és az azokhoz való csatlakozás általában mindenki számára elérhető. Pro-licenccel nem rendelkező felhasználók azonban csak a saját munkaterületükön lévő adathalmazokhoz csatlakozhatnak.
+- A Pro-licenccel nem rendelkező felhasználók csak egy megosztott adatkészletre épülő jelentéseket és irányítópultokat használhatnak, ha mindkét munkaterület (a tartalom és az adatkészlet munkaterületei) egy Premium-kapacitásban található.
 - A Power BI Desktopban a Pro-licenccel nem rendelkező felhasználók csak a saját munkaterületükön lévő adathalmazokat láthatják.
 - Jelentések munkaterületek közötti másolásához Pro-licenc szükséges.
 - Jelentéseknek egy alkalmazásból való másolásához a vállalati tartalomcsomagok követelményeinek megfelelően Pro-licenc szükséges.
@@ -66,7 +67,7 @@ A megosztott adathalmazokkal kapcsolatos képességekre épülő funkciók és f
 - Tegyük fel, hogy az A munkaterületen hoz létre egy jelentést egy B munkaterületen lévő adathalmaz alapján. Ha alkalmazást hoz létre az A munkaterülethez, a jelentést csak akkor foglalhatja bele az A munkaterületi alkalmazásba, ha Ön a B munkaterületnek is tagja.
 - Klasszikus munkaterületen az adathalmaz-felfedezési felületen csak az azon a munkaterületen lévő adathalmazok jelennek meg.
 - Ha megosztott adathalmazon alapuló jelentést szeretne hozzáadni egy alkalmazáshoz, akkor tagnak kell lennie az adathalmaz munkaterületén. Ez ismert probléma.
-- A „Webes közzététel” megosztott adathalmazokon alapuló jelentések esetén nem használható. Ez szándékos.
+- A „Webes közzététel” megosztott adathalmazokon alapuló jelentések esetén szándékosan nem használható.
 - Ha ketten olyan munkaterület tagjai, amely hozzáfér egy megosztott adathalmazhoz, akkor előfordulhat, hogy csak az egyikük látja a kapcsolódó adathalmazt a munkaterületen. A megosztott adathalmazt csak azok látják, akik legalább Olvasási hozzáféréssel rendelkeznek az adathalmazhoz. 
 
 ## <a name="next-steps"></a>Következő lépések

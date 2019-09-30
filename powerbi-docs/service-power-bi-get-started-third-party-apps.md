@@ -9,18 +9,18 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.cunstom: ''
-ms.date: 08/10/2017
+ms.date: 09/16/2019
 LocalizationGroup: Get started
-ms.openlocfilehash: 11afe27ffbca295eec67fd07731cc646bcca56dc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3de0b5473c6d00013bdf109f262dc0577c3bf290
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769702"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073520"
 ---
 # <a name="get-started-with-third-party-apps"></a>Első lépések harmadik féltől származó alkalmazásokkal
 
-A Power BI segítségével olyan alkalmazásokat is használhat, amelyeket Microsofton kívüli cégek vagy személyek hoztak létre. Használhatja például egy harmadik fél alkalmazásra, amely integrálható a Power BI-csempéket egy személyre szabott webes alkalmazás. Egy harmadik féltől származó alkalmazások használatakor meg kell adnia, hogy adjon az alkalmazásnak bizonyos engedélyeket a Power BI-fiókja és az erőforrások. Fontos, hogy csak olyan alkalmazásoknak adjon engedélyeket, amelyeket ismer, és amelyekben megbízik. Az alkalmazásnak adott engedély bármikor visszavonható. Lásd: [Harmadik féltől származó alkalmazások engedélyének visszavonása](#revoke).
+A Power BI segítségével olyan alkalmazásokat is használhat, amelyeket Microsofton kívüli cégek vagy személyek hoztak létre. Például használhat olyan, harmadik féltől származó alkalmazást, amely a Power BI csempéit egy egyénileg létrehozott webes alkalmazással integrálja. Harmadik féltől származó alkalmazás használata esetén a rendszer arra kéri, hogy adjon az alkalmazásnak bizonyos engedélyeket a Power BI-fiókhoz és annak erőforrásaihoz. Fontos, hogy csak olyan alkalmazásoknak adjon engedélyeket, amelyeket ismer, és amelyekben megbízik. Az alkalmazásnak adott engedély bármikor visszavonható. Lásd: [Harmadik féltől származó alkalmazások engedélyének visszavonása](#revoke).
 
 Egy alkalmazás a következő hozzáférési típusokat kérheti.
 
@@ -49,13 +49,13 @@ Egy alkalmazás a következő hozzáférési típusokat kérheti.
 
 ## <a name="revoke-third-party-app-permissions"></a>Harmadik féltől származó alkalmazások engedélyének visszavonása
 
-Egy külső alkalmazás engedélyeit fogja az Office 365 saját alkalmazások oldalán vonhatja vissza.
+A harmadik féltől származó alkalmazás engedélyeit az Office 365 Saját alkalmazások oldalán vonhatja vissza.
 
-Az a **Office 365 saját alkalmazások** helyet, a harmadik fél engedélyek visszavonása a következőképpen:
+Az **Office 365 Saját alkalmazások** oldalon az alábbi lépésekben vonhatja vissza a harmadik féltől származó alkalmazások engedélyeit:
 
 1. Nyissa meg az [Office 365 Saját alkalmazások](https://portal.office.com/myapps) oldalt.
 
-2. Az a **saját alkalmazások** lapon, keresse meg a harmadik féltől származó alkalmazások.
+2. A **Saját alkalmazások** oldalon keresse meg a harmadik féltől származó alkalmazást.
 
 3. Mutasson az alkalmazás csempéjére, és kattintson a **(...)** , majd az **Eltávolítás** elemre.
 

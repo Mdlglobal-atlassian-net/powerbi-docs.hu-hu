@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 38e393a07defcf572d06f00c14ff8e4efa3081cc
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 2c08736e23568675af87e7de63092fff3a6a86c5
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185711"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073420"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Feliratkozás és mások feliratkoztatása jelentésekre és irányítópultokra a Power BI szolgáltatásban
 
@@ -56,7 +56,7 @@ A lapszámozott jelentésekre való feliratkozás egy kissé eltér ettől. A r�
 
 5. Válasszon **Gyakoriságot** feliratkozásához: **Napi**, **Óránkénti**, **Heti**, **Havi** vagy **Adatfrissítések utáni (Napi)** .  Ha az e-mailt, amelyre feliratkozott, csak bizonyos napokon szeretné megkapni, válassza az **Óránkénti** vagy **Heti** értéket, majd jelölje ki a napokat.  Ha például az e-mailt csak hétköznapokon szeretné megkapni, válassza a **Heti** gyakoriságot, majd távolítsa el a jelölést a **szombat** és a **vasárnap** jelölőnégyzetéből.  Ha a **Havi** lehetőséget választja, adja meg a hónap azon napját/napjait, amikor e-mailt szeretne kapni a feliratkozásokról.  
 
-6. Ha **Napi**, **Óránkénti, **Havi** vagy **Heti** gyakoriságot választ, akkor **Ütemezett időpontot** is megadhat a feliratkozáshoz.  Futtathatja egész órakor, vagy 15, 30, 45 perccel az után.  Választhat délelőtti (AM) vagy délutáni (PM) időpontot. Az időzónát is megadhatja.  Ha az **Óránkénti** beállítást választotta, válassza ki az **Ütemezett időpontot**, amikorra a feliratkozás indítását szeretné beállítani, és azt követően óránként érkezik majd.
+6. Ha **Napi**, **Óránkénti**, **Havi** vagy **Heti** gyakoriságot választ, akkor **Ütemezett időpontot** is megadhat a feliratkozáshoz.  Futtathatja egész órakor, vagy 15, 30, 45 perccel az után.  Választhat délelőtti (AM) vagy délutáni (PM) időpontot. Az időzónát is megadhatja.  Ha az **Óránkénti** beállítást választotta, válassza ki az **Ütemezett időpontot**, amikorra a feliratkozás indítását szeretné beállítani, és azt követően óránként érkezik majd.
 
 7. A feliratkozás kezdő dátuma alapértelmezés szerint az a nap, amelyen létrehozta. Lehetősége van a záró dátum beállítására. Ha nem állít be záró dátumot, az automatikusan az egy évvel a kezdő dátum utáni napra lesz beállítva. Ezt a feliratkozás lejárta előtt bármikor módosíthatja bármely jövőbeli dátumra (a 9999-es évig). Amikor egy feliratkozás záró dátuma elérkezik, a küldés leáll, amíg újra nem engedélyezi. Az ütemezett záró dátum előtt értesítés(eke)t kap, amelyek rákérdeznek a kiterjesztésére.    
 

@@ -31,9 +31,9 @@ azonosító     |  Guid       | Az adatkészlet egész rendszerre kiterjedő, eg
 név     | Sztring        | Az adatkészlet felhasználó által meghatározott neve.        | Hamis        | Igaz        
 táblák     | Table[]        | Táblagyűjtemény.        |  Hamis       | Hamis        
 kapcsolatok     | Relationship[]        | Táblák közti kapcsolatok gyűjteménye.        | Hamis        |  Hamis  
-defaultMode     | Sztring        | Meghatározza, hogy az adatkészlet leküldéssel, streamelt adatok, vagy mindkettő "Push" és "Folyamatos átvitel" értékekkel         | Hamis        |  Hamis
+defaultMode     | Sztring        | A „Push” és „Streaming” értékekkel meghatározza, hogy az adatkészlet továbbítása leküldéssel, streameléssel vagy mindkettővel történjen-e.         | Hamis        |  Hamis
 
-## <a name="table"></a>Tábla
+## <a name="table"></a>Táblázat
 
 Név  |Típus  |Leírás  |Csak olvasható  |Kötelező
 ---------|---------|---------|---------|---------

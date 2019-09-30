@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e735d45a7a49c4a0365e35d5bb95957c6145f934
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 6424180dde3dac0d6d2b66c8a9303810b6aa0dc6
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903755"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100100"
 ---
 # <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Jelentésközi részletezés a Power BI Desktopban
 
@@ -32,7 +32,7 @@ A jelentésközi részletezés beállításának és használatának megkezdése
 
 
 > [!NOTE]
-> A *Saját munkaterületen* belül egyénileg megosztott jelentések, amelyek a *[Velem megosztva](service-share-dashboards.md#share-a-dashboard-or-report)* területen jelennek meg, csak azon a munkaterületen érhetők el, amelyen eredetileg meg lettek osztva. 
+> A Power BI Desktop jelentésközi részletezés funkciójával környezetfüggően ugorhat egy jelentésről egy másikra. Mindez akkor lehetséges, ha a jelentések egy munkaterületen vagy alkalmazáson belül vannak a Power BI szolgáltatásban. Ez nem alkalmazható a *Saját munkaterület* [Velem megosztott jelentések](service-share-dashboards.md#share-a-dashboard-or-report) területén elért, külön megosztott jelentésekhez. Ilyen esetekben azon a munkaterületen kell megnyitnia a jelentést, ahol eredetileg megosztották.
 
 
 ## <a name="enable-cross-report-drillthrough"></a>Jelentésközi részletezés engedélyezése

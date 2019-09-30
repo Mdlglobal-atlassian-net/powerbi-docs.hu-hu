@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 711e0252cddcc78437e03a82d91c67441cfc3a55
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 575d66ad6bb10a4e7faa90f5f658e86115402400
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513511"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141993"
 ---
 # <a name="what-is-power-bi-desktop"></a>Mi az a Power BI Desktop?
 
@@ -32,6 +32,16 @@ A **Power BI Desktop** leggyakoribb alkalmazási helyzetei az alábbiak:
 * A jelentés megosztása másokkal a **Power BI szolgáltatás** használatával
 
 Az ilyen feladatokat végzőket általában *adatelemzőknek* nevezzük (ritkábban egyszerűen *elemzőknek* is) vagy üzleti intelligenciával foglalkozó szakembereknek (őket gyakran *jelentéskészítőknek* is nevezzük). Ezzel együtt azonban nagyon sokan használják még a **Power BI Desktopot**, akik nem tekintik magukat elemzőnek vagy jelentéskészítőnek, de szeretnének lenyűgöző jelentéseket létrehozni, vagy sok különféle forrásból származó adatból adatmodelleket szeretnének létrehozni, amelyeket aztán megosztanak a cégen belüli munkatársakkal.
+
+A Power BI Desktopban három nézet található, amelyek a vászon bal oldalán jelennek meg. Ezek a következők (megjelenési sorrendben):
+* **Jelentés nézet** – Itt hozhat létre jelentéseket és vizualizációkat, és a kreatív folyamat nagy része itt zajlik.
+* **Adatnézet** – Itt láthatja a jelentéshez tartozó adatmodellben használt táblákat, mértékeket és egyéb adatokat, és itt alakíthatja át az adatokat a jelentésmodellhez leginkább megfelelő formában.
+* **Modellnézet** – Ebben a nézetben megtekintheti és kezelheti az adatmodell tábláinak kapcsolatait.
+
+A következő képen a vászon bal oldalán látható három nézet található:
+
+![különböző nézetek](media/desktop-what-is-desktop/what-is-desktop-07.png)
+
 
 A **Power BI Desktoppal** összetett és gazdag vizualizációkkal rendelkező jelentéseket hozhat létre sok különféle adatforrás használatával, és mindezt egyetlen jelentésként oszthatja meg a cég többi munkatársával. 
 

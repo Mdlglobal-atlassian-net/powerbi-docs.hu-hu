@@ -1,7 +1,7 @@
 ---
 ms.openlocfilehash: 30cd80cbeafe2da4468a0049bfa0c34715bce0d3
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "66051114"
@@ -31,7 +31,7 @@ Ez a három elem – az **asztali alkalmazás**, a **szolgáltatás** és a **mo
 ## <a name="how-power-bi-matches-your-role"></a>A Power BI illeszkedése az Ön szerepköréhez
 A Power BI szolgáltatás használata függhet attól, hogy Ön milyen szerepkört tölt be egy projektben vagy egy csapatban. A Power BI-t mindenki saját szerepkörének megfelelően használja.
 
-Előfordulhat például, hogy Ön elsősorban a **Power BI szolgáltatást** használja, míg a számításokat végző és üzleti jelentéseket létrehozó munkatársa nagy mértékben támaszkodik a **Power BI Desktop** alkalmazásra (és a Desktop alkalmazásban készített jelentéseket közzéteszi a Power BI szolgáltatásban, ahol Ön aztán megtekintheti őket). És a egy másik munkatársának, a értékesítések, előfordulhat, hogy főként a Power BI telefonos alkalmazás értékesítési kvótái előrehaladásának figyeléséhez, és új értékesítési érdeklődők részletek feltárásához.
+Előfordulhat például, hogy Ön elsősorban a **Power BI szolgáltatást** használja, míg a számításokat végző és üzleti jelentéseket létrehozó munkatársa nagy mértékben támaszkodik a **Power BI Desktop** alkalmazásra (és a Desktop alkalmazásban készített jelentéseket közzéteszi a Power BI szolgáltatásban, ahol Ön aztán megtekintheti őket). Elképzelhető, hogy egy másik, értékesítési osztályon dolgozó munkatárs a Power BI mobilalkalmazást használja az értékesítési kvóták előrehaladásának figyeléséhez, illetve az új értékesítések részleteinek vizsgálatához.
 
 A **Power BI** egyes elemeit használhatja emellett felváltva is attól függően, hogy épp milyen céljai vannak, illetve milyen szerepkörben dolgozik egy adott projektben vagy feladaton.
 

@@ -12,14 +12,14 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
 ms.openlocfilehash: 8c806f0de021c3857039649876864f47e1fffdb2
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454562"
 ---
 # <a name="certified-custom-visuals"></a>Minősített egyéni vizualizációk
 
-## <a name="what-are-certified-custom-visuals"></a>Mik azok a **_minősített_** egyéni vizualizációk?
+## <a name="what-are-_certified_-custom-visuals"></a>Mik azok a **_minősített_** egyéni vizualizációk?
 
 A minősített egyéni vizualizációk azok a **piactéren** lévő vizualizációk, amelyek megfelelnek **bizonyos**, a **Microsoft Power BI csapata** által jóváhagyott és tesztelt kódolási előírásoknak. A minősítést szerzett egyéni vizualizációk több funkcióval bírnak. Például [exportálhatók a PowerPointba](consumer/end-user-powerpoint.md), és megjeleníthetők olyan e-mailekben, amelyek akkor érkeznek, amikor egy felhasználó [feliratkozik jelentésoldalakra](consumer/end-user-subscribe.md).
 
@@ -44,34 +44,34 @@ A Microsoft saját belátása szerint eltávolíthatja a vizualizációkat a [Mi
 Az egyéni vizualizáció [minősítéséhez](#certified-custom-visuals) győződjön meg róla, hogy az megfelel az alábbi feltételeknek:  
 
 * Microsoft AppSource-jóváhagyás. Az egyéni vizualizáció megtalálható a [piactéren](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* A rendszerverzióval ellátott írt egyéni Vizualizáció **API v2.5** vagy újabb verziója.
-* A kódtár érhető el Power BI csapata által (a példány, a forráskód (JavaScript- vagy TypeScript) emberi olvasható formátumban érhető el, hanem a hozzánk a Githubon keresztül).
+* Az egyéni vizualizációt a verzióval ellátott **API 2.5-ös** vagy újabb verzióival kell megírni.
+* A Power BI csapata számára ellenőrzésre elérhetővé tett kódtár (például ember által olvasható formátumú JavaScript- vagy TypeScript- forráskód a GitHubon).
 
     >[!Note]
     > Nem kell nyilvánosan megosztania a kódot a GitHubon.
-* Kód tárház követelmények:
-   * Tartalmaznia kell a szükséges minimálisan szükséges fájlok:
+* A kódtár követelményei:
+   * Tartalmaznia kell a minimálisan szükséges fájlok készletét:
       * .gitignore
       * capabilities.json
       * pbiviz.json
       * package.json
       * package-lock.json
       * tsconfig.json
-   * Nem tartalmazhat node_modules mappa (node_modules hozzá .gitingore fájl)
-   * **az npm telepítése** parancs nem ad vissza hibát.
-   * **az npm naplózási** parancs nesmí vracet vlastnost figyelmeztetéseket magas vagy közepes szintűek.
-   * **pbiviz csomag** parancs nem ad vissza hibát.
-   * Tartalmaznia kell [Microsoft TSlint](https://www.npmjs.com/package/tslint-microsoft-contrib) felülbírált konfiguráció nélkül, és ez a parancs nem adja vissza minden lint hibákat.
-   * A lefordított csomag, az egyéni Vizualizáció meg kell egyeznie az elküldött csomag (mindkét fájl md5-kivonat egyenlőnek kell lennie).
-* Forrás kód követelmények:
-   * A Vizualizáció támogatnia kell a [események API leképezési](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
-   * Győződjön meg arról, tetszőleges/dinamikus kódot nem fut (hibás: eval(), nem biztonságos settimeout(), requestAnimationFrame(), setinterval (néhány felhasználói bevitel függvényt), a futó felhasználói bevitel/adatok használata).
-   * Győződjön meg arról, biztonságosan-n DOM (hibás: mielőtt hozzáadná a értük el innerHTML tulajdonságot, D3.html (< felhasználói/adatok bemeneti adatokat >), használja az felhasználói bevitel/adatok tisztító
-   * Győződjön meg arról, a bemeneti adatokat a böngészőbeli konzolon nincs javascript-hibák és kivételek szerepelnek. Felhasználók előfordulhat, hogy a Vizualizáció használata váratlan adatokat számos különböző, így a Vizualizáció nem hiúsul meg kell. Használhat [a mintajelentés](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) teszt adatkészletként.
+   * Nem tartalmazhat node_modules mappát (valamint a node_modules .gitingore fájlt)
+   * Az **npm install** parancs nem eredményezhet hibát.
+   * Az **npm audit** parancs nem eredményezhet közepes vagy magas szintű figyelmeztetést.
+   * A **pbiviz package** parancs nem eredményezhet hibát.
+   * Tartalmaznia kell a [Microsoft TSlint](https://www.npmjs.com/package/tslint-microsoft-contrib) szolgáltatást felülbírált konfiguráció nélkül, a parancs pedig nem eredményezhet lint-hibát.
+   * Az egyéni vizualizáció lefordított csomagjának egyeznie kell a beküldött csomaggal (mindkét fájl md5-kivonatának egyenlőnek kell lennie).
+* A forráskódra vonatkozó követelmények:
+   * A vizualizációnak támogatnia kell az [események renderelési API-ját](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Győződjön meg arról, hogy nem fut tetszőleges/dinamikus kód (rossz: eval(), nem biztonságosan használt settimeout(), requestAnimationFrame(), setinterval(felhasználó által beírt függvény), felhasználó által megadott elemek/adatok futtatása).
+   * Győződjön meg arról, hogy a DOM biztonságosan van manipulálva (rossz: innerHTML, D3.html(<felhasználó/megadott adatok>), tisztítás a felhasználói elemekhez/adatokhoz a DOM-hoz való hozzáadás előtt.
+   * Ügyeljen arra, hogy a böngésző konzoljában nincsenek javaScript-hibák vagy -kivételek a bevitt adatok esetén. Előfordulhat, hogy a felhasználók más tartományú, váratlan adatokkal használják a vizualizációt, így annak hibátlanul kell működnie. Ezt a [mintajelentést](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) használhatja tesztelési adatkészletként.
 
-* Ha módosítják a capabilities.json tulajdonságokat, ellenőrizze, hogy azok nem hibásodik meglévő felhasználói jelentések.
+* Ha a capabilities.json fájl tulajdonságai módosulnak, győződjön meg róla, hogy azok nem teszik használhatatlanná a felhasználói jelentéseket.
 
-* Ellenőrizze, hogy a Vizualizáció megfelel a [útmutató a Power BI-Vizualizációk](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Nincs a vízjelek engedélyezettek**.
+* Győződjön meg arról, hogy a vizualizáció megfelel a [Power BI-vizualizációk irányelveinek](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Vízjelek nem használhatók**.
 
 * Csak nyilvánosan véleményezhető OSS-összetevők használata (nyilvános JS-kódtárak vagy nyilvános TypeScript. A forráskód véleményezhető, és nincsenek ismert biztonsági rései). Kereskedelmi összetevővel rendelkező egyéni vizualizációt nem minősíthetünk.
 

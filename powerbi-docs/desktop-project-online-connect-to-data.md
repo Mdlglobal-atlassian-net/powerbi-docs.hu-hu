@@ -13,7 +13,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: b0dc84d7b2d8da0df8a9e61a43f35898d197c188
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513746"
@@ -30,16 +30,16 @@ A Project Online-adatokhoz kapcsolódhat a Power BI Desktopon keresztül.
 3. Válassza az **OData-csatorna**, majd a **Csatlakozás** lehetőséget.
 4. Adja meg az OData-csatorna címét az URL mezőben, majd kattintson az OK gombra.
    
-   Ha a Project Web App-hely címe a következőhöz hasonló *https://\<tenantname\>.sharepoint.com/sites/pwa*, akkor Önnek kell megadnia, az OData-csatorna számára a cím *https://\<tenantname\>.sharepoint.com/sites/pwa/\_api/Projectdata*.
+   Ha a Project Web App-hely címe a *https://\<bérlő_neve\>.sharepoint.com/sites/pwa* címhez hasonló, az OData-csatorna számára a *https://\<bérlő_neve\>.sharepoint.com/sites/pwa/\_api/Projectdata* címet adja meg.
    
    Ebben a példában a https://contoso.sharepoint.com/sites/pwa/default.aspx címet használjuk.
 5. A Power BI Desktop megkéri, hogy jelentkezzen be az Office 365-fiókjával. Válassza a Szervezeti fiók elemet, és adja meg a hitelesítő adatait.
    
    ![](media/desktop-project-online-connect-to-data/image.png)
 
-A fiók kapcsolódni az OData-adatcsatorna rendelkeznie kell legalább Portfóliómegtekintő hozzáféréssel a Project Web App-webhelyhez. 
+Az OData-csatornához való csatlakozásra használt fióknak legalább Portfóliómegtekintő hozzáféréssel kell rendelkeznie a Project Web App-webhelyhez. 
 
-Ezután kiválaszthatja, hogy melyik táblákhoz szeretne csatlakozni, és létrehozhat egy lekérdezést.  Szeretne képet kapni az első lépésekről?  A következő blogbejegyzésben bemutatja, hogyan hozhat létre egy írási le chartot a Project Online-adatok.  A blogbejegyzésben a Power Query használatával csatlakoznak a Project Online-hoz, de ugyanez alkalmazható a Power BI Desktopra is.
+Ezután kiválaszthatja, hogy melyik táblákhoz szeretne csatlakozni, és létrehozhat egy lekérdezést.  Szeretne képet kapni az első lépésekről?  A következő blogbejegyzés leírja, hogyan készíthet egy burndown chartot a Project Online-adataiból.  A blogbejegyzésben a Power Query használatával csatlakoznak a Project Online-hoz, de ugyanez alkalmazható a Power BI Desktopra is.
 
-[Írási le diagramok létrehozása a Power Pivot és a Power Query használatával](http://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
+[Projektek burndown chartjainak létrehozása a Power Pivot és a Power Query használatával](http://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
 

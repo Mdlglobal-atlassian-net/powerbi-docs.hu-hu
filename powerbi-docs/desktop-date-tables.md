@@ -12,14 +12,14 @@ ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 9bbe302c7187419abae556bb34f991efa1fdae00
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454383"
 ---
 # <a name="set-and-use-date-tables-in-power-bi-desktop"></a>Dátumtáblázatok beállítása és használata a Power BI Desktopban
 
-**Power BI Desktop** a háttérben automatikusan azonosítja az oszlopokat, amelyeket a dátumokat és dátumhierarchiákat és más metaadatokat hoz hoz létre az Ön nevében. Az így elkészült beépített hierarchiákat a jelentések különféle funkcióinál használhatja, például ha vizualizációkat, táblázatokat, gyorsmérőket, szeletelőket vagy más elemeket hoz létre. A Power BI Desktop ezt rejtett táblázatok létrehozásával végzi el, amelyeket később a jelentésekhez és DAX-kifejezésekhez használhat fel.
+A **Power BI Desktop** a háttérben automatikusan azonosítja a dátumokra vonatkozó oszlopokat, majd dátumhierarchiákat és más metaadatokat hoz létre a modellez. Az így elkészült beépített hierarchiákat a jelentések különféle funkcióinál használhatja, például ha vizualizációkat, táblázatokat, gyorsmérőket, szeletelőket vagy más elemeket hoz létre. A Power BI Desktop ezt rejtett táblázatok létrehozásával végzi el, amelyeket később a jelentésekhez és DAX-kifejezésekhez használhat fel.
 
 Vannak adatelemzők, akik inkább saját maguk szeretik létrehozni a táblákat, és ennek sincs akadálya. A **Power BI Desktop** lehetővé teszi, hogy Ön hozza létre a táblát, amelyet a modell **dátumtáblázatként** használ majd fel, és ezt követően ennek a táblának az adatait használva hozhat létre dátummal kapcsolatos vizualizációkat, táblázatokat, gyorsmérőket vagy más elemeket. Ha saját dátumtáblázatot hoz létre, Ön határozhatja meg a dátumhierarchiákat a modell számára, és ezeket használhatja a **gyorsmérőkhöz** és más olyan műveletekhez, amelyek a modell dátumtáblázatát használják. 
 
@@ -52,7 +52,7 @@ Miután meghatározta a dátumtáblázatot, kiválaszthatja, hogy a táblázatba
 
 ![](media/desktop-date-tables/date-tables_03.png)
 
-Fontos megjegyezni, hogy ha saját maga hozza létre a dátumtáblázatot, a **Power BI Desktop** nem hozza létre automatikusan a hierarchiákat, ellentétben más esetekkel, amikor azokat automatikusan beépítené a modellbe. Ha később a dátumtáblázat kiválasztását (és már nincs manuálisan beállított dátumtáblája), a Power BI Desktopban, automatikusan létrehozott beépített dátumtábláit létrehozza a dátum oszlopok a tábla.
+Fontos megjegyezni, hogy ha saját maga hozza létre a dátumtáblázatot, a **Power BI Desktop** nem hozza létre automatikusan a hierarchiákat, ellentétben más esetekkel, amikor azokat automatikusan beépítené a modellbe. Ha később megszünteti a dátumtáblázat kiválasztását (azaz ha már nincs manuálisan beállított dátumtáblája), akkor a Power BI Desktop a táblázatban szereplő dátumoszlopokat használva automatikusan újra létrehozza a beépített dátumtáblázatokat.
 
 Azt is vegye figyelembe, hogy ha dátumtáblázatként jelöl meg egy táblázatot, a Power BI Desktop által automatikusan létrehozott beépített dátumtáblázat törölve lesz, és az ezt használó, korábban létrehozott vizualizációk és DAX-kifejezések nem fognak megfelelően működni. 
 

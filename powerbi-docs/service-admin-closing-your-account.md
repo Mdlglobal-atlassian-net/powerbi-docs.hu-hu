@@ -1,5 +1,5 @@
 ---
-title: Zárja be a Power BI-fiók
+title: A Power BI-fiók lezárása
 description: Ha nem kívánja tovább használni a Power BI-t, bezárhatja Power BI-fiókját.
 author: mgblythe
 manager: kfile
@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/26/2019
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a285c6188e8b9298702645e28ad686e33147c3a9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 227b4e837e75959dc838556ab0215db32131ec07
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65101141"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075666"
 ---
-# <a name="close-your-power-bi-account"></a>Zárja be a Power BI-fiók
+# <a name="close-your-power-bi-account"></a>A Power BI-fiók lezárása
 
-Ha nem kívánja tovább használni a Power BI-t, bezárhatja Power BI-fiókját.  A fiók megszüntetése után nem jelentkezhet be a Power bi-bA. Is módon meghatározza az adatok megőrzési szabályzat a a Power BI használati feltételeit, a Power BI feltöltött, illetve a létrehozott ügyféladatok törlődnek. Nem őrződnek meg.
+Ha nem kívánja tovább használni a Power BI-t, bezárhatja Power BI-fiókját.  Miután bezárta a fiókját, nem jelentkezhet be a Power BI-ba. A Power BI-ba feltöltött és ott létrehozott felhasználói adatok a Power BI szolgáltatási feltételei adatmegőrzési szabályzatának megfelelően törlésre kerülnek. A rendszer nem őrzi meg őket.
 
 ## <a name="individual-power-bi-users"></a>Egyéni Power BI-felhasználók
 
@@ -27,23 +27,23 @@ Ha egyénileg regisztrált a Power BI-ba, a **Beállítások** képernyőn zárh
 
 1. A Power BI-ban válassza a jobb felső sarokban lévő fogaskerék ikont, majd a **Beállítások** lehetőséget.
 
-    ![Képernyőkép – a felhasználói felület a fogaskerék ikonra, és a beállítások lehetőséget emelte ki a jobb felső sarokban.](media/service-admin-closing-your-account/close-account-settings.png)
+    ![Képernyőkép a felhasználói felület jobb felső sarkáról a fogaskerék ikonnal és kiemelt beállítások elemmel.](media/service-admin-closing-your-account/close-account-settings.png)
 
 1. Az **Általános** lapon válassza a **Fiók bezárása** elemet.
 
-    ![Képernyőkép a beállítások lapon, a fiók bezárása lehetőséget a bal felső sarkában a kiemeltük.](media/service-admin-closing-your-account/close-account-settings-2.png)
+    ![Képernyőkép a beállítások oldal bal felső sarkáról kiemelt Fiók bezárása lehetőséggel.](media/service-admin-closing-your-account/close-account-settings-2.png)
 
 1. Válassza ki a fiók bezárásának okát (1). Tetszés szerint további információkat is megadhat (2). Ezután kattintson a **Fiók megszüntetése** elemre.
 
-    ![A fiók bezárása lehetőséggel feltüntettük fiók bezárása párbeszédpanel képernyőképe.](media/service-admin-closing-your-account/close-account-settings-3.png)
+    ![Képernyőkép a Fiók bezárása párbeszédpanelről kiemelt Fiók bezárása lehetőséggel.](media/service-admin-closing-your-account/close-account-settings-3.png)
 
 1. Erősítse meg, hogy meg kívánja szüntetni a fiókját.
 
-    ![Az Igen lehetőség emelte ki a fiók bezárása megerősítő párbeszédpanel képernyőképe.](media/service-admin-closing-your-account/close-account-settings-4.png)
+    ![Képernyőkép a Fiók bezárása megerősítő párbeszédpaneléről kiemelt Igen lehetőséggel.](media/service-admin-closing-your-account/close-account-settings-4.png)
 
-    Megjelenik egy megerősítő, hogy a Power BI bezárja a fiókját. Ha szükséges, fiókját innen nyithatja újra.
+    Ekkor megjelenik a Power BI-fiók bezárását igazoló képernyő. Ha szükséges, fiókját innen nyithatja újra.
 
-    ![Képernyőkép a megszüntette fiókját párbeszédpanel.](media/service-admin-closing-your-account/close-account-settings-5.png)
+    ![Képernyőkép a fiók lezárását ismertető párbeszédpanelről.](media/service-admin-closing-your-account/close-account-settings-5.png)
 
 ## <a name="managed-tenant-users"></a>Felügyelt bérlői felhasználók
 

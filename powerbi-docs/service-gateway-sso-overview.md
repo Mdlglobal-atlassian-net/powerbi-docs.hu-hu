@@ -10,16 +10,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6f270c28f643736f07c09ceb3e544e473f831ad9
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4991117cfa8b34d9adbbd2dc29082d1e75b6852d
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271852"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100384"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Az egyszeri bejelentkezés (SSO) áttekintése a Power BI-ban található átjárókhoz
 
-Közvetlen egyszeri bejelentkezéses kapcsolatot létesíthet, ha engedélyezi a Power BI-jelentések és -irányítópultok számára, hogy helyszíni adatokból végezzenek frissítést. Ehhez a helyszíni adatátjárót Kerberos általi korlátozott delegálással vagy a Security Assertion Markup Language (SAML) használatával kell konfigurálni. A helyszíni adatátjáró elősegíti az SSO-t a DirectQuery használatakor, amellyel a helyszíni adatforrásokhoz kapcsolódik.
+Közvetlen egyszeri bejelentkezéses kapcsolatot létesíthet, ha engedélyezi a Power BI-jelentések és -irányítópultok számára, hogy helyszíni adatokból végezzenek valós idejű frissítést. Ehhez a helyszíni adatátjárót Kerberos általi korlátozott delegálással vagy a Security Assertion Markup Language (SAML) használatával kell konfigurálni. A helyszíni adatátjáró elősegíti az SSO-t a DirectQuery használatakor, amellyel a helyszíni adatforrásokhoz kapcsolódik.
 
 Jelenleg az alábbi adatforrások használatát támogatjuk:
 
@@ -52,8 +52,7 @@ További információk a lépésekről:
 
 ## <a name="next-steps"></a>Következő lépések
 
-Most, hogy megismerte az SSO alapjait, a Kerberos és a SAML használatával kapcsolatos részletesebb információkért olvassa el az alábbi cikkeket:
+Most, hogy megismerte az SSO átjárón történő használatának alapjait, a Kerberos és a SAML használatával kapcsolatos részletesebb információkért olvassa el az alábbi cikkeket:
 
 * [Egyszeri bejelentkezés (SSO) – Kerberos](service-gateway-sso-kerberos.md)
-* [Egyszeri bejelentkezés (SSO) – Kerberos – erőforrás-alapú](service-gateway-sso-kerberos-resource.md)
 * [Egyszeri bejelentkezés (SSO) – SAML](service-gateway-sso-saml.md)

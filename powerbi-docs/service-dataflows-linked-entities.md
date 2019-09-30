@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: d766730185a9064241621d15efc9faf31334fe95
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61136495"
@@ -88,11 +88,11 @@ A csatolt entitásokkal végzett munka során tekintetbe kell venni néhány kor
 
 Az alábbi cikkek hasznosak lehetnek adatfolyamok létrehozása, vagy a velük végzett munka során. 
 
-* [Önkiszolgáló adat-előkészítési a Power bi-ban](service-dataflows-overview.md)
+* [Önkiszolgáló adat-előkészítés a Power BI-ban](service-dataflows-overview.md)
 * [Adatfolyamok létrehozása és használata a Power BI-ban](service-dataflows-create-use.md)
-* [A Power BI Premium számított entitások használatával](service-dataflows-computed-entities-premium.md)
-* [Adatfolyamok használata a helyszíni adatforrások](service-dataflows-on-premises-gateways.md)
-* [Fejlesztői erőforrások a Power BI-adatfolyamok](service-dataflows-developer-resources.md)
+* [Számított entitások használata a Power BI Premiumban](service-dataflows-computed-entities-premium.md)
+* [Adatfolyamok használata helyszíni adatforrásokkal](service-dataflows-on-premises-gateways.md)
+* [Fejlesztői erőforrások Power BI-adatfolyamokhoz](service-dataflows-developer-resources.md)
 
 A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)

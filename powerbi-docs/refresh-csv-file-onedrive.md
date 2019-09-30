@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 09/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 80182ae0898ab5c88acb85ce24a55fe615cf2a0b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 589f34db5009a9203ee33c13dc4931e42d68ddcb
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61415646"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71076111"
 ---
 # <a name="refresh-a-dataset-created-from-a-csv-file-on-onedrive-or-sharepoint-online"></a>CSV-fájlból létrehozott adatkészlet frissítése a OneDrive vagy a SharePoint Online szolgáltatásban
 ## <a name="what-are-the-advantages"></a>Mik az előnyei?
@@ -36,7 +36,7 @@ A OneDrive Vállalati verziójához való csatlakozás a Power BI szolgáltatás
 
 Amikor bejelentkezik a Microsoft-fiókjával, mindenképp jelölje be a Bejelentkezve szeretnék maradni lehetőséget. A Power BI így tudja szinkronizálni a frissítéseket a Power BI-ban lévő adatkészletekkel.
 
-![](media/refresh-csv-file-onedrive/refresh_signin_keepmesignedin.png)
+![Példa bejelentkezésre](media/refresh-csv-file-onedrive/refresh_signin_keepmesignedin.png)
 
 Ha olyan módosítást hajt végre a OneDrive-on lévő fájlon, amely nem szinkronizálható a Power BI-ban található adatkészlettel, mert esetleg megváltoztak a Microsoft-fiók hitelesítő adatai, akkor kapcsolódnia kell a fájlhoz, és ismét importálnia kell azt a személyes OneDrive-járól.
 

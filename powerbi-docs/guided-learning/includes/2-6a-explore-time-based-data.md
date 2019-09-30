@@ -1,7 +1,7 @@
 ---
 ms.openlocfilehash: 48e553ebd81632cb0baa9a2c9c6a761860c3c9c6
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61255709"
@@ -31,7 +31,7 @@ Ha dátumhierarchia használata helyett az egyes dátumokkal szeretne dolgozni, 
 ![](media/2-6a-explore-time-based-data/2-6a_5.png)
 
 ## <a name="next-steps"></a>Következő lépések
-**Gratulálunk!** Ön teljesítette a Power BI **Interaktív tanulás** oktatóanyagának ezt a fejezetét. Most, hogy megismerkedett *modellezés* adatok, készen áll izgalmas továbblépjen a következő szakaszban: **Vizualizációk**.
+**Gratulálunk!** Ön teljesítette a Power BI **Interaktív tanulás** oktatóanyagának ezt a fejezetét. Most, hogy megismerkedett az adatok *modellezésével*, készen áll arra, hogy továbblépjen a következő rész izgalmas témájához: a **vizualizációkhoz**.
 
 Ahogy arról korábban már szó esett, ez az oktatóanyag a Power BI használatával végzett munka szokásos menetét követve bővíti az Ön ismereteit:
 
