@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: fe8ad0b951fedb17a97007e48808d2bfd7467e88
-ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.openlocfilehash: edda72ab1c9c9901bf71b360d3773b5e8da0a095
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808213"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71401825"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>A Power BI-jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón
 A Power Bi-jelentések számos adatforráshoz csatlakozhatnak. Az adatok használatának módjától függően eltérő adatforrások érhetők el. Az adatok importálhatók, vagy közvetlenül DirectQuery- vagy élő SQL Server Analysis Services-kapcsolattal lehet lekérdezni azokat.
@@ -71,7 +71,7 @@ Más adatforrások is működhetnek annak ellenére, hogy a támogatott listán 
 | SharePoint Online-lista |Igen |Nem |Nem |
 | Snowflake |Igen |Nem |Nem |
 | Sybase-adatbázis |Igen |Igen |Nem |
-| Teradata-adatbázis |Igen |Igen |Igen |
+| Teradata |Igen |Igen |Igen |
 | Szöveges/CSV |Igen |Igen |Nem |
 | Webes |Igen |Igen |Nem |
 | XML |Igen |Igen |Nem |

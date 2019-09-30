@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 5e34601c3ebacb3cfd8a4a5ddeb282756d0f700b
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: fae3af81540e22b961fcb1d2a79de425fdc1cd8c
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791807"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194783"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tippek sablonalkalmazások készítéséhez a Power BI-ban
 
@@ -126,7 +126,6 @@ A sablonalkalmazásokat közzé lehet tenni az AppSource-on. Mielőtt közzéten
 
 * A sablonalkalmazásokat érdekes mintaadatokkal töltse fel, amelyek segítenek majd a telepítőnek megérteni az alkalmazás képességeit (üres jelentés és irányítópult nem engedélyezett).
 A sablonalkalmazások csak mintaadatokkal szerepelhetnek, ügyeljen rá, hogy be kell jelölnie a statikus alkalmazás jelölőnégyzetet. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Általában csak értékes funkciókkal rendelkező alkalmazások hagyhatók jóvá általános felhasználásra az AppSource-on. A csak mintaadat-tartalommal rendelkező alkalmazásoknak útmutatóként vagy statisztikai szempontból kell értékesnek lenniük.
 * Rendelkezzen útmutatóval az érvényesítési csapat számára, amely tartalmazza az adatokhoz való csatlakozáshoz szükséges hitelesítő adatokat és paramétereket is.
 * Az alkalmazásnak tartalmaznia kell egy alkalmazásikont a Power BI-ban és a CPP-ajánlatban is. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Konfigurált kezdőlap. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
@@ -135,6 +134,7 @@ A sablonalkalmazások csak mintaadatokkal szerepelhetnek, ügyeljen rá, hogy be
 * A beküldés előtt az alkalmazást az alkalmazáshivatkozás használatával telepítse, ellenőrizze, hogy lehet-e csatlakozni az adatkészlethez, és hogy az alkalmazás a tervek szerint használható-e.
 * Mielőtt feltöltené a bpix-et a sablonalkalmazás munkaterületére, távolítson el minden felesleges kapcsolatot.
 * Kövesse a Power BI [Ajánlott tervezési eljárások jelentésekhez és vizualizációkhoz](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) című dokumentumában foglaltakat, hogy maximalizálhassa a felhasználókra gyakorolt hatást, és hogy jóváhagyást szerezhessen a terjesztéshez.
+<!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
 ## <a name="known-limitations"></a>Ismert korlátozások
 
