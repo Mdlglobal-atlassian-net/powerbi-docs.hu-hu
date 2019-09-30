@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 37304f9d23c514c7223b3eca481bf3b7b2258ac4
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 64be68398ffa2ab8323307b45b5bff09ec511090
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904241"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327836"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Jelentéstémák használata a Power BI Desktopban
 A **Jelentéstémák** használatával olyan tervezési módosításokat hajthat végre az egész jelentésen, mint a vállalati színek, a változó ikonkészletek, vagy egy új alapértelmezett vizualizációs formázás. **Jelentéstéma** alkalmazásakor a jelentésben szereplő összes vizualizáció a kiválasztott téma színeit és formázását fogja használni. Ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be.
@@ -475,7 +475,8 @@ Az enumerálás általában a legördülő listák formázásánál használatos
 
 
 ```json
-      "general":
+{
+      "general":{ 
         "responsive": {
           "type": [
             "bool"
@@ -486,7 +487,7 @@ Az enumerálás általában a legördülő listák formázásánál használatos
           "description": [
             "The visual will adapt to size changes"
           ]
-        }
+        },
         "legend": {
         "show": {
           "type": [
@@ -4378,4 +4379,6 @@ A következő szakasz a JSON-fájlban használható enumerálásokat határozza 
          ]
        }
     }
+  }
+}
 ```
