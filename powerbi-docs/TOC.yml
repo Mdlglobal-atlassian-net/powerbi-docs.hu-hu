@@ -1442,11 +1442,13 @@
           href: service-admin-power-bi-security.md
 - name: Útmutató
   items:
-    - name: Adatfolyamokhoz ajánlott eljárások
-      href: service-dataflows-best-practices.md
+    - name: Áttekintés
+      href: guidance/overview.md
     - name: Mi az a csillagséma?
       href: guidance/star-schema.md
     - name: Az adatmodell méretének csökkentése
       href: guidance/import-modeling-data-reduction.md
     - name: A DIVIDE függvény és a divide operátor (/)
       href: guidance/dax-divide-function-operator.md
+    - name: Adatfolyamokhoz ajánlott eljárások
+      href: service-dataflows-best-practices.md
