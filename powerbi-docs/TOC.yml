@@ -697,6 +697,8 @@
               href: service-cognitive-services.md
             - name: Automatizált Machine Learning a Power BI-ban (előzetes verzió)
               href: service-machine-learning-automated.md
+        - name: Adatéletút
+          href: service-data-lineage.md
         - name: Többoldalas jelentések a Power BI-ban
           items:
             - name: Többoldalas jelentés megtekintése
@@ -867,6 +869,8 @@
       items:
         - name: Támogatott nyelvek és országok/régiók
           href: supported-languages-countries-regions.md
+        - name: Támogatott böngészők
+          href: power-bi-browsers.md
     - name: Erőforrások
       items:
         - name: Tanulmányok
