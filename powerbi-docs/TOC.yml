@@ -873,16 +873,6 @@
           href: power-bi-browsers.md
     - name: Erőforrások
       items:
-        - name: Tanulmányok
-          items:
-            - name: Tanulmányok áttekintése
-              href: whitepapers.md
-            - name: A Power BI biztonsága – tanulmány
-              href: whitepaper-powerbi-security.md
-            - name: A Power BI prémium üzembe helyezése
-              href: whitepaper-powerbi-premium-deployment.md
-            - name: Power BI-tartalom külső terjesztése az Azure Active Directory B2B használatával
-              href: whitepaper-azure-b2b-power-bi.md
         - name: Videók
           href: videos.md
         - name: Webináriumok
@@ -1456,3 +1446,13 @@
       href: guidance/dax-divide-function-operator.md
     - name: Adatfolyamokhoz ajánlott eljárások
       href: service-dataflows-best-practices.md
+    - name: Tanulmányok
+      items:
+        - name: Tanulmányok áttekintése
+          href: whitepapers.md
+        - name: A Power BI biztonsága – tanulmány
+          href: whitepaper-powerbi-security.md
+        - name: A Power BI prémium üzembe helyezése
+          href: whitepaper-powerbi-premium-deployment.md
+        - name: Power BI-tartalom külső terjesztése az Azure Active Directory B2B használatával
+          href: whitepaper-azure-b2b-power-bi.md
