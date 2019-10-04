@@ -102,6 +102,8 @@
               href: end-user-app-view.md
             - name: Kapcsolódás szolgáltatásokhoz
               href: end-user-connect-to-services.md
+            - name: Mintaalkalmazás beszerzése az AppSource-ból
+              href: end-user-app-marketing.md
         - name: Kérdések az adatokról
           items:
             - name: Q&A a Power BI-ban
