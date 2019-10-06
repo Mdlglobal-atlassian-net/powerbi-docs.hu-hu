@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 8e08557c475f06c8a32cebb0b7ca0fe1054cf266
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: f936d5df9872d6dec8862709f614b2dc28f2e414
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264547"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195378"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Sablonalkalmazás létrehozása a Power BI-ban
 
@@ -47,7 +47,7 @@ Ha más Power BI-bérlőkbe terjeszthető sablonalkalmazást szeretne létrehozn
 
 3. Adjon meg egy nevet, leírást (nem kötelező) és egy embléma képét (nem kötelező) az alkalmazás-munkaterülethez.
 
-4. Válassza a **Sablonalkalmazás kifejlesztése** lehetőséget.
+4. Bontsa ki a **Speciális** szakaszt, és válassza a **Sablonalkalmazás kifejlesztése** lehetőséget.
 
     ![Sablonalkalmazás kifejlesztése](media/service-template-apps-create/power-bi-template-app-develop.png)
 
@@ -84,11 +84,13 @@ Most, hogy van tartalom a munkaterületen, készen áll, hogy becsomagolja azt e
     - Alkalmazásembléma (45K fájlméretkorlát, 1:1 oldalarány, .png .jpg .jpeg formátum)
     - Alkalmazás témájának színe
 
-    **Tartalom**
+    **Navigáció**
 
-    **Alkalmazás kezdőlapja:** Egy jelentés vagy irányítópult meghatározása, amely az alkalmazás kezdőlapja lesz. Olyan kezdőlapot használjon, amely a megfelelő benyomást kelti:
+    Aktiválja az **Új navigációszerkesztőt**, amellyel definiálhatja az alkalmazás bal oldali navigációs panelét (további információt a cikk [A navigációs felület megtervezése](service-create-distribute-apps.md#design-the-navigation-experience) című szakaszában találhat).
 
-    ![Tartalom](media/service-template-apps-create/power-bi-create-content.png)
+   ![Alkalmazás kezdőlapjának beállítása](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+    
+    **Alkalmazás kezdőlapja:** Ha úgy dönt, hogy nem használja a navigációs szerkesztőt, lehetősége van az alkalmazás kezdőlapjának kiválasztására. Egy jelentés vagy irányítópult meghatározása, amely az alkalmazás kezdőlapja lesz. Olyan kezdőlapot adjon meg, amely megfelelő benyomást kelt.
 
     **Vezérlő**
 
@@ -107,7 +109,6 @@ Most, hogy van tartalom a munkaterületen, készen áll, hogy becsomagolja azt e
     - **Value** (Érték): az alapértelmezett paraméterérték.
     - **Required** (Kötelező): ezzel megkövetelheti a telepítőtől, hogy egy felhasználóspecifikus paramétert adjon meg.
     - **Lock** (Zárolás): A zárolás megakadályozza, hogy a telepítő frissítsen egy paramétert.
-    - **Static** (Statikus): Akkor engedélyezze, ha az alkalmazás *csak* mintaadatokat tartalmaz. A **Static** paraméter kiválasztásakor a telepítővarázsló nem kéri adatforrások csatlakoztatásáta felhasználóktól.
 
     **Access** (Hozzáférés): A tesztelési fázisban eldöntheti, hogy kik azok a szervezetnél, akik telepíthetik és tesztelhetik az alkalmazását. Ne aggódjon, később is visszatérhet, és megváltoztathatja ezeket a beállításokat (a beállítás nem vonatkozik az elosztott sablonalkalmazáshoz való hozzáférésre).
 

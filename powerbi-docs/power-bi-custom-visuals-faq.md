@@ -1,65 +1,65 @@
 ---
 title: Gyakori kérdések a Power BI-vizualizációkról
-description: Az alábbiakban a Power BI egyéni vizualizációival kapcsolatos gyakori kérdések és válaszok listáját tekintheti át.
-author: sranins
-ms.author: rasala
-manager: kfile
+description: Az alábbiakban a Power BI-vizualizációkkal kapcsolatos gyakori kérdések és válaszok listáját tekintheti át
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 58fa65abfa2d2cff5e02b34fe8db8aa10b36ee14
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5c4c13d021891ad591b2411a1f0b3219b750478d
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415378"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195452"
 ---
 # <a name="frequently-asked-questions-about-power-bi-visuals"></a>Gyakori kérdések a Power BI-vizualizációkról
 
-## <a name="organizational-custom-visuals"></a>Egyéni szervezeti vizualizációk
+## <a name="organizational-visuals"></a>Szervezeti vizualizációk
 
 A felügyeleti portál segítségével kezelheti a szervezetéhez tartozó Power BI-vizualizációkat.
 
-### <a name="how-can-the-admin-manage-the-organizational-custom-visuals"></a>Hogyan felügyelheti a rendszergazda az egyéni szervezeti vizualizációkat?
+### <a name="how-can-the-admin-manage-the-organizational-power-bi-visuals"></a>Hogyan felügyelheti a rendszergazda a szervezeti Power BI-vizualizációkat?
 
-A felügyeleti portál „Egyéni szervezeti vizualizációk” lapján a rendszergazda megtekintheti és [felügyelheti a vállalat összes egyéni szervezeti vizualizációját](service-admin-portal.md#organizational-visuals): hozzáadhat, letilthat, engedélyezhet és törölhet.
-Most már nem kell ezeket a vizualizációkat e-mailek vagy megosztott mappák segítségével megosztani. A szervezeti adattárban való üzembe helyezésük után a szervezet felhasználói könnyedén megtalálhatják azokat, és közvetlenül a Power BI Desktopból vagy szolgáltatásból importálhatják az egyéni szervezeti vizualizációkat a jelentéseikbe. Az egyéni szervezeti vizualizációk a beépített áruházból érhetők el (az asztali verzióban és a szolgáltatásban is), a *SAJÁT SZERVEZET* lapon. Miután a rendszergazda feltölti egy egyéni szervezeti vizualizáció új verzióját, a szervezet összes tagja megkapja ugyanazt a frissített verziót. A jelentések létrehozóinak nem kell törölniük a vizualizációt a jelentésükből a vizualizáció új verziójának beszerzéséhez, és a rendszer automatikusan frissíti az adott vizualizációt használó összes jelentést! A frissítési mechanizmus hasonló a piactéren beszerzett vizualizációkéhoz.
+A felügyeleti portál „Szervezeti vizualizációk” lapján a rendszergazda megtekintheti és [felügyelheti a vállalat összes szervezeti Power BI-vizualizációját](service-admin-portal.md#organizational-visuals): hozzáadhat, letilthat, engedélyezhet és törölhet.
+Most már nem kell ezeket a vizualizációkat e-mailek vagy megosztott mappák segítségével megosztani. A szervezeti adattárban való üzembe helyezésük után a szervezet felhasználói könnyedén megtalálhatják azokat, és közvetlenül a Power BI Desktopból vagy szolgáltatásból importálhatják a szervezeti vizualizációkat a jelentéseikbe. A szervezeti vizualizációk a beépített áruházból érhetők el (az asztali verzióban és a szolgáltatásban is), a *SAJÁT SZERVEZET* lapon. Miután a rendszergazda feltölti egy egyéni szervezeti vizualizáció új verzióját, a szervezet összes tagja megkapja ugyanazt a frissített verziót. A jelentések létrehozóinak nem kell törölniük a vizualizációt a jelentésükből a vizualizáció új verziójának beszerzéséhez, és a rendszer automatikusan frissíti az adott vizualizációt használó összes jelentést! A frissítési mechanizmus hasonló a piactéren beszerzett vizualizációkéhoz.
 
 ### <a name="if-an-admin-uploads-a-custom-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Ha egy rendszergazda feltölt egy egyéni vizualizációt a nyilvános piactérről a szervezet áruházába, az automatikusan frissül, ha a készítője frissíti a nyilvános piactéren a vizualizációt?
 
 Nem, a nyilvános piactérről nem érkezik automatikusan a frissítés.
-Az egyéni szervezeti vizualizációk verziójának frissítése a rendszergazda feladata.
+A szervezeti vizualizációk verziójának frissítése a rendszergazda feladata.
 
 ### <a name="is-there-a-way-to-disable-the-organizational-store"></a>Van lehetőség a szervezeti áruház letiltására?
 
-Nem, a felhasználók számára mindig megjelenik a „SAJÁT SZERVEZET” lap a Power BI Desktopban és a szolgáltatásban. A rendszergazda letilthatja vagy törölheti az összes egyéni szervezeti vizualizációt a felügyeleti portálról, így a szervezeti áruház üres lesz.
+Nem, a felhasználók számára mindig megjelenik a „SAJÁT SZERVEZET” lap a Power BI Desktopban és a szolgáltatásban. A rendszergazda letilthatja vagy törölheti az összes szervezeti vizualizációt a felügyeleti portálról, így a szervezeti áruház üres lesz.
   
-### <a name="if-the-administrator-disables-custom-visuals-from-the-admin-portal-tenant-settings-do-users-still-have-access-to-the-organizational-custom-visuals"></a>Ha a rendszergazda letiltja az egyéni szervezeti vizualizációkat a felügyeleti portálon (Bérlői beállítások), a felhasználók attól még hozzáféréssel rendelkeznek az egyéni szervezeti vizualizációkhoz?
+### <a name="if-the-administrator-disables-power-bi-visuals-from-the-admin-portal-tenant-settings-do-users-still-have-access-to-the-organizational-visuals"></a>Ha a rendszergazda letiltja az egyéni Power BI-vizualizációkat a felügyeleti portálon (Bérlői beállítások), a felhasználók attól még hozzáféréssel rendelkeznek a szervezeti vizualizációkhoz?
 
-Igen. Az, hogy a rendszergazda letiltja az egyéni vizualizációkat a felügyeleti portálon, nincs hatással a szervezeti áruházra. Bizonyos szervezetek letiltják az egyéni vizualizációkat, és csak olyan, válogatott vizualizációk használatát engedélyezik, amelyeket a Power BI-rendszergazda importált és töltött fel a szervezeti áruházba. Az egyéni vizualizációnak a felügyeleti portálon történő letiltása nem lesz érvényesítve a Power BI Desktopban. Az asztali verzió felhasználói a jelentéseikben továbbra is hozzáadhatnak és használhatnak egyéni, a nyilvános piactérről származó vizualizációkat. Ezek a nyilvános egyéni vizualizációk azonban nem jelennek meg a Power BI szolgáltatásban való közzététel után, és kiváltják a megfelelő hibaüzenetet. A Power BI szolgáltatás használatakor nem importálhatók egyéni vizualizációk a nyilvános piactérről. Csak a szervezeti áruházból származó vizualizációk importálhatók, mert az egyéni vizualizációk a felügyeleti portálon megadott beállítása érvényesítve lesz a Power BI szolgáltatásban.
+Igen. Az, hogy a rendszergazda letiltja a vizualizációkat a felügyeleti portálon, nincs hatással a szervezeti áruházra. Bizonyos szervezetek letiltják a Power BI-vizualizációkat, és csak olyan, válogatott vizualizációk használatát engedélyezik, amelyeket a Power BI-rendszergazda importált és töltött fel a szervezeti áruházba. A Power BI-vizualizációnak a felügyeleti portálon történő letiltása nem lesz érvényesítve a Power BI Desktopban. Az asztali verzió felhasználói a jelentéseikben továbbra is hozzáadhatnak és használhatnak a nyilvános piactérről származó Power BI-vizualizációkat. Ezek a nyilvános Power BI-vizualizációk azonban nem jelennek meg a Power BI szolgáltatásban való közzététel után, és kiváltják a megfelelő hibaüzenetet. A Power BI szolgáltatás használatakor nem importálhatók Power BI-vizualizációk a nyilvános piactérről. Csak a szervezeti áruházból származó vizualizációk importálhatók, mert a Power BI-vizualizációk a felügyeleti portálon megadott beállítása érvényesítve lesz a Power BI szolgáltatásban.
 
-### <a name="why-does-the-organizational-store-and-organizational-custom-visuals-make-a-great-enterprise-solution"></a>Miért számít kiváló nagyvállalati megoldásnak a szervezeti áruház és az egyéni szervezeti vizualizációk használata?
+### <a name="why-does-the-organizational-store-and-organizational-visuals-make-a-great-enterprise-solution"></a>Miért számít kiváló nagyvállalati megoldásnak a szervezeti áruház és a szervezeti vizualizációk használata?
 
 * Mindenki a vizualizáció azonos verzióját kapja, amely felett a Power BI-rendszergazda gyakorol irányítást. Ha a rendszergazda frissíti a vizualizáció verzióját a felügyeleti portálon, a szervezet összes felhasználója automatikusan megkapja a frissített verziót.
 
 * Többé nem kell megosztani e-mailben vagy megosztott mappákban a vizualizációs fájlokat. Az összes bejelentkezett felhasználó látja ezt a központi helyet.
 
-* Biztonságos, és számos támogatási lehetőséget biztosít. Az egyéni szervezeti vizualizációk új verziói automatikusan frissülnek minden jelentésben, akárcsak a piactérről beszerzett vizualizációk.
+* Biztonságos, és számos támogatási lehetőséget biztosít. A szervezeti vizualizációk új verziói automatikusan frissülnek minden jelentésben, akárcsak a piactérről beszerzett vizualizációk.
 
-* A szervezet egyéni szervezeti vizualizációkat használó felhasználóinak be kell jelentkezniük, hogy lássák és használhassák a szervezet számára biztonsági tényezőnek számító egyéni szervezeti vizualizációkat.
+* A szervezet szervezeti vizualizációkat használó felhasználóinak be kell jelentkezniük, hogy lássák és használhassák a szervezet számára biztonsági tényezőnek számító szervezeti vizualizációkat.
 
-* A rendszergazdák szabályozhatják, hogy mely egyéni vizualizációk legyenek elérhetők a szervezetben.
+* A rendszergazdák szabályozhatják, hogy mely Power BI-vizualizációk legyenek elérhetők a szervezetben.
 
 * A rendszergazdák a felügyeleti portálról engedélyezhetik/letilthatják a vizualizációkat tesztelési célból. A biztonsági szabályok jobban kikényszeríthetők, hiszen a vizualizációkhoz csak a szervezet tagjai férhetnek hozzá.
 
-## <a name="certified-custom-visuals"></a>Minősített egyéni vizualizációk
+## <a name="certified-power-bi-visuals"></a>Minősített Power BI-vizualizációk
 
-### <a name="what-are-certified-custom-visuals"></a>Mik azok a minősített egyéni vizualizációk?
+### <a name="what-are-certified-power-bi-visuals"></a>Melyek a minősített Power BI-vizualizációk?
 
-A minősített egyéni vizualizációk azok a [piactéren](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) lévő vizualizációk, amelyek megfelelnek [bizonyos](power-bi-custom-visuals-certified.md), a Power BI csapata által megadott kódolási és tesztelési előírásoknak.  A végrehajtott tesztek célja annak ellenőrzése, hogy a vizualizáció nem kapcsolódik-e külső szolgáltatásokhoz vagy erőforrásokhoz. A külső felek egyéni vizualizációinak azonban nem a Microsoft a készítője, ezért azt javasoljuk ügyfeleinknek, hogy közvetlenül a készítővel kapcsolatba lépve ellenőrizzék az ilyen vizualizációk működését.
+A minősített Power BI-vizualizációk azok a [piactéren](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) lévő vizualizációk, amelyek megfelelnek [bizonyos](power-bi-custom-visuals-certified.md), a Power BI csapata által megadott kódolási és tesztelési előírásoknak.  A végrehajtott tesztek célja annak ellenőrzése, hogy a vizualizáció nem kapcsolódik-e külső szolgáltatásokhoz vagy erőforrásokhoz. A külső felek Power BI-vizualizációinak azonban nem a Microsoft a készítője, ezért azt javasoljuk ügyfeleinknek, hogy közvetlenül a készítővel kapcsolatba lépve ellenőrizzék az ilyen vizualizációk működését.
 
 ### <a name="what-tests-are-done-during-the-certification-process"></a>Milyen teszteket végeznek a minősítési folyamat során?
 
@@ -90,11 +90,11 @@ Frissített verzió esetén 3 hétig tarthat. Újonnan (első minősítésre) be
 
 ### <a name="does-the-certification-process-ensure-that-no-data-leakage-occurs"></a>Biztosítja a minősítési eljárás, hogy ne léphessen fel adatszivárgás?
 
-A végrehajtott tesztek célja annak ellenőrzése, hogy a vizualizáció nem kapcsolódik-e külső szolgáltatásokhoz vagy erőforrásokhoz. A külső felek egyéni vizualizációinak azonban nem a Microsoft a készítője, ezért azt javasoljuk ügyfeleinknek, hogy közvetlenül a készítővel kapcsolatba lépve ellenőrizzék az ilyen vizualizációk működését.
+A végrehajtott tesztek célja annak ellenőrzése, hogy a vizualizáció nem kapcsolódik-e külső szolgáltatásokhoz vagy erőforrásokhoz. A külső felek Power BI-vizualizációinak azonban nem a Microsoft a készítője, ezért azt javasoljuk ügyfeleinknek, hogy közvetlenül a készítővel kapcsolatba lépve ellenőrizzék az ilyen vizualizációk működését.
  
-### <a name="are-uncertified-custom-visuals-safe-to-use"></a>Biztonságos a nem minősített egyéni vizualizációk használata?
+### <a name="are-uncertified-power-bi-visuals-safe-to-use"></a>Biztonságos a nem minősített Power BI-vizualizációk használata?
 
-A nem minősített egyéni vizualizációk nem feltétlenül jelentenek nem biztonságos vizualizációkat.
+A nem minősített Power BI-vizualizációk nem feltétlenül jelentenek nem biztonságos vizualizációkat.
 Egyes vizualizációk azért nincsenek minősítve, mert nem felelnek meg egy vagy több [minősítésbeli követelménynek](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Például egy külső szolgáltatáshoz (például egy térképvizualizációhoz) vagy egy kereskedelmi könyvtárakat használó vizualizációhoz csatlakozik.
  
 ## <a name="visuals-with-additional-purchases"></a>Vizualizációkon belüli további vásárlás
@@ -103,11 +103,11 @@ Egyes vizualizációk azért nincsenek minősítve, mert nem felelnek meg egy va
 
 A további vásárlásokat tartalmazó vizualizációk a piactéren lévő, alkalmazáson belüli vásárlást (IAP) lehetővé tevő bővítményekhez hasonlítanak. Az ilyen bővítmények áránál fel van tüntetve, hogy **további vásárlásra lehet szükség**.
 
-Az egyéni IAP-vizualizációk ingyenesen letölthetők – a felhasználóknak nem kell fizetniük, ha letöltik ezeket az egyéni vizualizációkat a piactérről. Az IAP-vizualizációk speciális funkciók alkalmazáson belüli megvásárlásának lehetőségét kínálják fel.  
+A Power BI IAP-vizualizációi ingyenesen letölthetők – a felhasználóknak nem kell fizetniük, ha letöltik ezeket a vizualizációkat a piactérről. Az IAP-vizualizációk speciális funkciók alkalmazáson belüli megvásárlásának lehetőségét kínálják fel.  
 
 ### <a name="whats-the-benefit-to-developers"></a>Milyen előnyökkel jár ez a fejlesztőkre nézve?
 
-Az AppSource-beli egyéni IAP-vizualizációkra naponta sok látogató találhat rá, értékes forgalmat hozva létre, így egyéni IAP-vizualizációi és Ön mint azok fejlesztője is szélesebb körben válnak ismertté.
+A Power BI AppSource-beli egyéni IAP-vizualizációira naponta sok látogató találhat rá, értékes forgalmat hozva létre, így a Power BI IAP-vizualizációi és Ön mint azok fejlesztője is szélesebb körben válnak ismertté.
 
 Ha ezeket a vizualizációkat eddig saját webhelyén keresztül kezelte, most beküldheti azokat az AppSource-ba. Az IAP-vizualizációk így könnyebben felfedezhetővé és láthatóbbá válnak a Power BI-közösség számára.
 
@@ -115,15 +115,15 @@ Az AppSource-beli vizualizációk egyik előnye az egyéni IAP-vizualizációt h
 
 Miután az AppSource bíráló csapata jóváhagyta az IAP-vizualizációt, azt minősítésre is benyújthatja. Ez az eljárás nem kötelező.  
 
-Az egyéni IAP-vizualizáció a minősítést követően exportálható PowerPointba, és megjeleníthető az egyes jelentésoldalakra feliratkozó felhasználóknak küldött e-mailekben is. A piactérre most beküldött egyéni IAP-vizualizációk tehát minősíthetők, és további funkciókat is támogathatnak.  
+A Power BI IAP-vizualizációja a minősítést követően exportálható PowerPointba, és megjeleníthető az egyes jelentésoldalakra feliratkozó felhasználóknak küldött e-mailekben is. A piactérre most beküldött IAP-vizualizációk tehát minősíthetők, és további funkciókat is támogathatnak.  
 
 ### <a name="do-iap-visuals-need-to-be-certified"></a>Mindenképpen minősíteni kell az IAP-vizualizációkat?
 
-A minősítési folyamat választható. Ahogyan az ingyenes vizualizációk esetében, az egyéni IAP-vizualizációk minősítéséről is a fejlesztő dönt.
+A minősítési folyamat választható. Ahogyan az ingyenes vizualizációk esetében, a Power BI IAP-vizualizációi minősítéséről is a fejlesztő dönt.
 
 ### <a name="what-is-changing-in-the-submission-process"></a>Mi változik a beküldés folyamatában?
 
-Az egyéni IAP-vizualizációk piactérre küldésének folyamata ugyanaz, mint az ingyenes vizualizációké. Ez az értékesítő irányítópulton keresztül történik.  A beküldési folyamat egyetlen eltérése az, hogy az értékesítő irányítópulton a következő szöveget kell elhelyezni a fejlesztői megjegyzésekben: „Alkalmazáson belüli vásárlást lehetővé tevő vizualizáció”. Amennyiben a fizetős/speciális funkciók érvényesítéséhez ez szükséges, licenckulcsot/jogkivonatot is meg kell adnia.  
+A Power BI IAP-vizualizációi piactérre küldésének folyamata ugyanaz, mint az ingyenes vizualizációké. Ez az értékesítő irányítópulton keresztül történik.  A beküldési folyamat egyetlen eltérése az, hogy az értékesítő irányítópulton a következő szöveget kell elhelyezni a fejlesztői megjegyzésekben: „Alkalmazáson belüli vásárlást lehetővé tevő vizualizáció”. Amennyiben a fizetős/speciális funkciók érvényesítéséhez ez szükséges, licenckulcsot/jogkivonatot is meg kell adnia.  
 
 Az értékesítő irányítópulton nem lesz új, *alkalmazáson belüli vásárlást lehetővé tevő ingyenes* lehetőség. IAP-vizualizációt *ingyenesként* kell beküldenie.
 
@@ -151,8 +151,8 @@ Mint tudja, a minősítés választható eljárás. Ön döntheti el, hogy minő
 
 ### <a name="how-to-get-support"></a>Hogyan kérhetek segítséget?
 
-Ha bármilyen kérdése, megjegyzése vagy problémája van, vegye fel a kapcsolatot az egyéni vizualizációk csapatával a  *pbicvsupport@microsoft.com*   címen.  
+Ha bármilyen kérdése, megjegyzése vagy problémája van, vegye fel a kapcsolatot a Power BI-vizualizációk csapatával a  *pbicvsupport@microsoft.com*   címen.  
 
 ## <a name="next-steps"></a>Következő lépések
 
-Bővebben az [egyéni Power BI-vizualizációk hibáinak elhárítását](power-bi-custom-visuals-troubleshoot.md) ismertető cikkből tájékozódhat.
+Bővebben a [Power BI-vizualizációk hibáinak elhárítását](power-bi-custom-visuals-troubleshoot.md) ismertető cikkből tájékozódhat.

@@ -3,20 +3,18 @@ title: A Power BI szolgáltatás jelentéseiben lévő könyvjelzők áttekinté
 description: 'Q&A szolgáltatás: Természetes nyelvi kérdések a Power BI-ban – Dokumentáció'
 author: mihart
 manager: kvivek
-ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/10/2019
+ms.date: 09/22/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 55fafb00135908dc4f82151b96ed04d2cf2568da
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 0b4da978687afbafcc7f0d48b6df220b240a507f
+ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608320"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71207605"
 ---
 # <a name="what-are-bookmarks"></a>Mik azok a könyvjelzők?
 A könyvjelzők rögzítik a jelentés oldalának aktuálisan konfigurált nézetét, beleértve a szűrőket, a szeletelőket és a vizualizációk állapotát. Amikor kiválaszt egy könyvjelzőt, Power BI visszakerül abba a nézetbe. Kétféle könyvjelző létezik – egyrészt azok, amelyeket Ön hoz létre, másrészt azok, amelyeket a jelentések *tervezői* hoztak létre.
@@ -26,15 +24,15 @@ A könyvjelzők sok különféle módon lehet használni. Tegyük fel, hogy tal�
 
 Egy tetszőleges sorrendbe rendezett teljes könyvjelzőgyűjteményt is létrehozhat, majd ezeket sorban megnyitva egy olyan bemutatót állíthat össze, amelyben lényegi összefüggések sorozatát mutathatja be, vagy amelyek egy történetet mondanak el.  
 
-![A Könyvjelzők panel megjelenítéséhez válassza ki azt a menüszalagon.](media/end-user-bookmarks/power-bi-bookmarks-pane.png)
+![A Könyvjelzők panel megjelenítéséhez válassza ki azt a menüszalagon.](media/end-user-bookmarks/power-bi-select-bookmark.png)
 
-## <a name="using-bookmarks"></a>A könyvjelzők használata
-A Könyvjelzők panel megnyitásához válassza a menüsorban a **Könyvjelzők** lehetőséget. A közzétett jelentés eredeti alapértelmezett nézetének visszaállításához válassza a **Visszaállítás alapértelmezettre** elemet.
+## <a name="open-bookmarks"></a>Könyvjelzők megnyitása
+A Könyvjelzők panel megnyitásához válassza a menüsorban a **Könyvjelzők** > **Több könyvjelző megjelenítése** lehetőséget. A közzétett jelentés eredeti alapértelmezett nézetének visszaállításához válassza a **Visszaállítás alapértelmezettre** elemet.
 
 ### <a name="report-bookmarks"></a>Jelentés könyvjelzői
-Ha a jelentés *tervezője* jelentéskönyvjelzőket is hozzáadott, azokat a **Jelentés könyvjelzői** cím alatt találja meg. 
+Ha a jelentés *tervezője* jelentéskönyvjelzőket is hozzáadott, azokat a **Jelentés könyvjelzői** cím alatt találja meg. A jelentésoldal két könyvjelzővel rendelkezik: B1 és B2. 
 
-![Jelentés könyvjelzőinek megjelenítése.](media/end-user-bookmarks/power-bi-report-bookmark.png)
+![Jelentés könyvjelzőinek megjelenítése.](media/end-user-bookmarks/power-bi-report.png)
 
 Válasszon ki egy könyvjelzőt a jelentésnézetre való váltáshoz. 
 
@@ -55,13 +53,13 @@ A létrehozott könyvjelzőkhöz a rendszer a következő elemeket menti:
 
 Állítson be egy jelentésoldalt úgy, amilyen állapotban a könyvjelzővel menteni szeretné. Miután a jelentésoldalt és a vizualizációkat a kívánt módon elrendezte, a könyvjelző hozzáadásához válassza a **Könyvjelzők** panel **Hozzáadás** gombját. Ebben a példában néhány szűrőt adtunk hozzá a régióhoz és a dátumhoz. 
 
-![Személyes könyvjelző hozzáadása.](media/end-user-bookmarks/power-bi-add-personal.png)
+![Személyes könyvjelző hozzáadása.](media/end-user-bookmarks/power-bi-bookmark-personal.png)
 
-A **Power BI** létrehoz egy könyvjelzőt, amelynek egy általános nevet ad, vagy az Ön által megadott nevet. A könyvjelzőket *átnevezheti*, *törölheti* vagy *frissítheti*, ha a könyvjelző neve melletti három pontra kattint, majd kiválasztja a megfelelő műveletet a megjelenő menüből.
+A **Power BI** létrehoz egy személyes könyvjelzőt, amelynek egy általános nevet ad, vagy az Ön által megadott nevet. A könyvjelzőket *átnevezheti*, *törölheti* vagy *frissítheti*, ha a könyvjelző neve melletti három pontra kattint, majd kiválasztja a megfelelő műveletet a megjelenő menüből.
 
 Miután létrehozott egy könyvjelzőt, a megjelenítéséhez egyszerűen válassza ki azt a **Könyvjelzők** panelen. 
 
-![Személyes könyvjelző hozzáadása.](media/end-user-bookmarks/power-bi-personal-bookmark.png)
+![Személyes könyvjelző hozzáadása.](media/end-user-bookmarks/power-bi-bookmark-west.png)
 
 
 <!--
@@ -81,11 +79,11 @@ Ha a könyvjelzőket sorrendben szeretné megjeleníteni, válassza a **Nézet**
 
 A **Nézet** módban érdemes odafigyelni a következőkre:
 
-1. A könyvjelző neve a könyvjelző címsorában látható a vászon alján.
-2. A könyvjelző címsorában lévő nyilakkal léptethet előre és hátra a könyvjelzők között.
-3. A **Nézet** módból a **Könyvjelzők** panel **Kilépés** gombjával, vagy a könyvjelzők címsorán található **X** gombbal léphet ki. 
+- A könyvjelző neve a könyvjelző címsorában látható a vászon alján.
+- A könyvjelző címsorában lévő nyilakkal léptethet előre és hátra a könyvjelzők között.
+- A **Nézet** módból a **Könyvjelzők** panel **Kilépés** gombjával, vagy a könyvjelzők címsorán található **X** gombbal léphet ki.
 
-![Könyvjelző-diavetítés](media/end-user-bookmarks/power-bi-bookmark-slideshow.png)
+![Könyvjelző-diavetítés](media/end-user-bookmarks/power-bi-slideshow.png)
 
 A **Nézet** módban bezárhatja a **Könyvjelzők** panelt (a panel X gombjára kattintva), így több hely marad a bemutatónak. A **Nézet** módban az összes vizualizáció interaktívan kezelhető, és keresztkiemelést is lehet alkalmazni, ahogy a normál használat során is. 
 
@@ -154,7 +152,6 @@ A **könyvjelzők** aktuális kiadásának használatára vonatkozik néhány ko
 
 * A legtöbb egyéni vizualizáció zökkenőmentesen működik a könyvjelzőkkel. Ha hibát tapasztal egy könyvjelző és egy egyéni vizualizáció használatakor, lépjen kapcsolatba az egyéni vizualizáció létrehozójával, és kérje meg, hogy szolgáltasson támogatást a könyvjelzőkhöz. 
 * Ha egy vizualizációt a könyvjelző létrehozását követően ad hozzá a jelentésoldalhoz, a vizualizáció az alapértelmezett állapotában jelenik meg. Ez azt is jelenti, hogy ha egy olyan oldalra vesz fel szeletelőt, ahol már hozott létre könyvjelzőket, a szeletelő az alapértelmezett állapotának megfelelően viselkedik majd.
-* Ha a vizualizációkat a könyvjelzők létrehozását követően áthelyezi, a változást a könyvjelzők lekövetik. 
 * A könyvjelzőkre általában az nincs hatással, ha a jelentés *tervezője* frissíti vagy újra közzéteszi a jelentést. Ha azonban a tervező jelentős változtatásokat hajt végre a jelentésben, például eltávolítja a könyvjelzők által használt mezőket, akkor hibaüzenet jelenik meg, ha legközelebb megpróbálja megnyitni az adott könyvjelzőt. 
 
 <!--

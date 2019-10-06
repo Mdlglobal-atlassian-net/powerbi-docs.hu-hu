@@ -4,25 +4,26 @@ description: Ez a dokumentum azt ismerteti, hogyan jeleníthetik meg a Power BI-
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5b36ded0863685726f9af3104b43c507b9a3c4d0
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: d35cdc6e2c6d2c2632fe8a9776ddc366436cff94
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65607961"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251507"
 ---
-# <a name="show-the-data-that-was-used-to-create-the-visual"></a>A vizualizáció létrehozásához használt adatok megjelenítése
+# <a name="show-data-with-power-bi-reports"></a>Adatok megjelenítése Power BI-jelentésekkel
 
-A Power BI-vizualizációk az alapul szolgáló adathalmazokból származó adatokból jönnek létre. Ha látni szeretné a háttérfolyamatokat, a Power BI-jal *megjelenítheti* a vizualizáció létrehozásához használt adatokat. Amikor az **Adatok megjelenítése** elemet választja, a Power BI megjeleníti a vizualizáció alatt (vagy mellett) lévő adatokat.
+A Power BI-vizualizációk az alapul szolgáló adathalmazokból származó adatokból jönnek létre. Ha látni szeretné a háttérfolyamatokat, a Power BI szolgáltatással *megjelenítheti* a vizualizáció létrehozásához használt adatokat egy jelentésben. Amikor az **Adatok megjelenítése** elemet választja, a Power BI megjeleníti a vizualizáció alatt (vagy mellett) lévő adatokat.
 
+A háttéradatokat az irányítópulton tekintheti meg az [Exportálás az Excelbe](end-user-export.md) paranccsal
 
+## <a name="show-the-data-being-used-to-create-a-report-visual"></a>A jelentés vizualizációjának létrehozásához használt adatok megjelenítése
 1. [Nyisson meg egy jelentést](end-user-report-open.md), és válasszon ki egy vizualizációt a Power BI szolgáltatásban.  
 2. A vizualizáció mögötti adatok megjelenítéséhez kattintson a három pontra (…), és válassza az **Adatok megjelenítése** elemet.
    
