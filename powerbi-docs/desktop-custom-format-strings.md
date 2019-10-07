@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 02a81aa47fb7945b2fd76d03a6bdde7712304bdc
-ms.sourcegitcommit: 7eb74b060de080152c190ac7eb6b64767f8d6626
+ms.openlocfilehash: fffb0479865439759167635efcae1799452c4c6f
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70919583"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305738"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Egyéni formázó sztringek használata a Power BI Desktopban
 
@@ -148,13 +148,14 @@ Az alábbi táblázat a **felhasználó által megadott numerikus formátumokban
 | ( **E- E+ e- e+** ) | Tudományos formátum. Ha a formázó kifejezés legalább egy számjegy-helyőrzőt ( **0**  vagy  **#** ) tartalmaz az E-, E+, e- vagy e+ kódtól jobbra, akkor a szám tudományos formátumban lesz megjelenítve, és az E vagy az e jel a szám és a kitevő közé lesz beszúrva. A jobb oldali számjegy-helyőrzők száma a kitevő számjegyeinek számát határozza meg. Az E- vagy e- használatával mínuszjel helyezhető el a negatív kitevők mellett. Az E+ vagy e+ használatával mínuszjel helyezhető el a negatív kitevők, és pluszjel a pozitív kitevők mellett. |
 | **- + $**  ( ) | Literál karaktert jelenít meg. Az itt fel nem sorolt karakter megjelenítéséhez fordított perjelet (\) írhat elé, vagy kettős idézőjelek közé zárhatja (&quot; &quot;) azokat. |
 | ( * *\** ) | A formázó sztring következő karakterét jeleníti meg. Olyan karakter megjelenítéséhez, amely literál karakterként külön jelentéssel bír, helyezzen el előtte egy fordított perjelet (\). Maga a fordított perjel nem jelenik meg. A fordított perjel hatása ugyanaz, mintha a következő karaktert kettős idézőjelek közé zárná. Fordított perjel megjelenítéséhez használjon két fordított perjelet (\\). Literál karakterekként nem megjeleníthető karakterek például a dátumformázási és időformázási karakterek (a, c, n, ó, p, m, h, q, s, t, w, é, /, és :), a számformázási karakterek (#, 0, %, E, e, vessző és pont) és a sztringformázási karakterek (@, &amp;, \&lt;, \&gt;, és !). |
-| (&quot;ABC&quot;) | A kettős idézőjelek (&quot; &quot;) közötti szöveget jeleníti meg. A sztring **formázásba** foglalásához kódon belül a **Chr(34)** karaktert használhatja a szöveg közreforgására (34 az idézőjel karakterkódja (&quot;)). |
+| (&quot;ABC&quot;) | A kettős idézőjelek (&quot; &quot;) közötti szöveget jeleníti meg. |
 
 
 ## <a name="next-steps"></a>Következő lépések
 Az alábbi cikkeket is érdekesnek találhatja:
 
 * [VBA formázó sztringek](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
+* [Mértékek a Power BI Desktopban](desktop-measures.md)
+* [Adattípusok a Power BI Desktopban](desktop-data-types.md)
 * [Táblázatok feltételes formázása](desktop-conditional-table-formatting.md)
-* [Kifejezésalapú címek a Power BI Desktopban](desktop-conditional-format-visual-titles.md)
 

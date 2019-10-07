@@ -11,19 +11,24 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8222194359077cb0d88286a33d1c9b2a05f6bd80
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: d776425d4c19070c00658cbd588c5421d22a0057
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390760"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192993"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Pontdiagramok, buborékdiagramok és pöttydiagramok a Power BI-ban
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 A pontdiagramok mindig két értéktengellyel rendelkeznek. A vízszintes tengely mentén numerikus adatok egy készletét ábrázolják, a függőleges tengely mentén pedig numerikus adatok egy másik készletét. A diagram pontokat jelenít meg az x és y numerikus értékek metszéspontjában, így egyetlen adatponttá kombinálja ezeket az értékeket. A Power BI ezeket az adatpontokat egyenletesen vagy egyenetlenül oszthatja el a vízszintes tengely mentén. Ez a diagramon megjelenített adatoktól függ.
 
 Ebben a videóban megtekintheti, ahogy Will létrehoz egy pontdiagramot, majd az alábbi lépéseket követve maga is létrehozhat egyet.
-
+   > [!NOTE]
+   > Ez a videó a Power BI Desktop egy régebbi verzióját használja.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 Beállíthatja az adatpontok számát, amely legfeljebb 10 000 lehet.  
@@ -65,7 +70,7 @@ Azon felül, ami pontdiagramokkal elérhető, a buborékdiagram kitűnő válasz
 
 ### <a name="dot-plot-charts"></a>Pöttydiagramok
 
-A pöttydiagram hasonlít a buborék- és pontdiagramokra, de itt numerikus vagy kategorizált adatokat is ábrázolhat az X tengely mentén.
+A pöttydiagram hasonlít a buborék- és pontdiagramokra, de inkább az X tengely mentén elhelyezkedő kategorizált adatok ábrázolására használható.
 
 ![Pöttydiagram képernyőképe.](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
 
@@ -73,17 +78,20 @@ A pöttydiagram hasonlít a buborék- és pontdiagramokra, de itt numerikus vagy
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-* A Power BI szolgáltatás
+Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
 
-* Kiskereskedelmi elemzési mintajelentés
+1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
+   
+2. Keresse meg a **Kiskereskedelmi elemzési minta PBIX-fájlt**
+
+1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
+
 
 ## <a name="create-a-scatter-chart"></a>Pontdiagram létrehozása
 
-Hogy követni tudja a lépéseket, jelentkezzen be a [Power BI szolgáltatásba](https://app.powerbi.com), és nyissa meg a [Kiskereskedelmi elemzési minta](../sample-datasets.md) jelentést a [Jelentés szerkesztése](../service-interact-with-a-report-in-editing-view.md) nézetben.
-
-1. A ![A sárga plusz ikon képernyőképe.](media/power-bi-visualization-scatter/power-bi-yellow-plus-icon.png) választásával hozzon létre egy üres jelentésoldalt.
-
-1. A **Mezők** panelen jelölje ki az alábbi mezőket:
+1. Kezdjen egy üres jelentést tartalmazó lappal, majd a **Mezők** panelen válassza a következő mezőket:
 
     * **Értékesítés** > **Értékesítés Négyzetláb szerint**
 
@@ -113,11 +121,11 @@ Most adjunk hozzá egy harmadik dimenziót.
 
 1. Vigye az egérmutatót egy buborék fölé. A buborék mérete az **Idei értékesítések** értékét tükrözi.
 
-    ![elemleírások megjelenítése](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
+    ![elemleírások megjelenítése](media/power-bi-visualization-scatter/pbi-scatter-chart-hover.png)
 
 1. Ha a buborékdiagramon belüli adatpontok számát szeretné megváltoztatni, a **Vizualizációk** panel **Formázás** szakaszában bontsa ki az **Általános** elemet, és állítsa az **Adatmennyiséget** a kívánt értékre.
 
-    ![A Vizualizációk panel képernyőképe a Formázás ikon, az Általános legördülő menü és az Adatmennyiség beállítás kiemelésével.](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png)
+    ![A Vizualizációk panel képernyőképe a Formázás ikon, az Általános legördülő menü és az Adatmennyiség beállítás kiemelésével.](media/power-bi-visualization-scatter/pbi-scatter-data-volume.png)
 
     A maximális adatmennyiség értékeként bármilyen számot megadhat 10.000-ig. Ahogy egyre nagyobb számokat használ, javasolt először tesztelést végezni a megfelelő teljesítmény biztosítása érdekében.
 
@@ -128,7 +136,7 @@ Most adjunk hozzá egy harmadik dimenziót.
 
     A [kisegítő lehetőségek javítása](../desktop-accessibility.md) érdekében érdemes lehet minden vonalhoz jelölőalakzatokat hozzáadni. Ha a jelölőalakzatot szeretné kiválasztani, bontsa ki az **Alakzatok** elemet, válassza a **Jelölőalakzat** lehetőséget, majd válasszon ki egy alakzatot.
 
-    ![Az Alakzatok legördülő menü képernyőképe a Jelölőalakzat beállításainak kiemelésével.](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+    ![Az Alakzatok legördülő menü képernyőképe a Jelölőalakzat beállításainak kiemelésével.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
     A jelölő alakzat alakja megváltoztatható rombuszra, háromszögre vagy négyszögre. A különböző jelölőalakzatok használata az egyes vonalakhoz megkönnyíti a jelentés használóinak a vonalak (vagy területek) elkülönítését egymástól.
 
@@ -146,15 +154,15 @@ Az **X tengely** panelről távolítsa el az **Értékesítések négyzetlábank
 
 A pontdiagramon csak egyetlen adatpont szerepel, amely összesíti az X és az Y tengely összes értékét?  Vagy esetleg az összes értéket egyetlen vízszintes vagy függőleges vonal mentén összesíti?
 
-![Egyetlen adatpontot ábrázoló pontdiagram képernyőképe.](media/power-bi-visualization-scatter/pbi_scatter_tshoot1.png)
+![Egyetlen adatpontot ábrázoló pontdiagram képernyőképe.](media/power-bi-visualization-scatter/pbi-scatter-tshoot1.png)
 
 Adjon egy mezőt a **Részletek** területhez annak megadásához, hogy a Power BI hogyan csoportosítsa az értékeket. A mezőnek egyedinek kell lennie minden egyes megjeleníteni kívánt ponthoz. Megfelel például egy egyszerű sorszám vagy azonosító mező.
 
-![Pontdiagram a Részletek területhez adott RowNum azonosítóval.](media/power-bi-visualization-scatter/pbi_scatter_tshoot.png)
+![Pontdiagram a Részletek területhez adott RowNum azonosítóval.](media/power-bi-visualization-scatter/pbi-scatter-tshoot.png)
 
 Vagy ha nem szerepel ilyen az adatokban, hozzon létre egy mezőt, amely pontonként valami egyedivé fűzi össze az X és Y értékeket:
 
-![Pontdiagram a Részletek területhez adott TempTime értékkel.](media/power-bi-visualization-scatter/pbi_scatter_tshoot2.png)
+![Pontdiagram a Részletek területhez adott TempTime értékkel.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
 
 Új mező létrehozásához [a Power BI Desktop Lekérdezésszerkesztőjével adjon hozzá egy indexoszlopot](../desktop-add-custom-column.md) az adatkészlethez. Ez után adja hozzá ezt az oszlopot a vizualizáció **Részletek** területéhez.
 

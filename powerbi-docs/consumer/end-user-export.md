@@ -3,7 +3,7 @@ title: Adatok exportálása Power BI-vizualizációból
 description: Adatok exportálása jelentésvizualizációból és irányítópult-vizualizációból, és megtekintésük az Excelben.
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: cmfinlan
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 3ab3b7a96fb629b303263b1ccf5c2f31603300b4
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6aec9f569f657c58eb1dc0b807bbceefc62ab01a
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073156"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943876"
 ---
 # <a name="export-data-from-a-visual"></a>Adatok exportálása vizualizációból
 Ha szeretné megtekinteni a vizualizáció létrehozásához használt adatokat, [megjelenítheti az adatokat a Power BI-ban](end-user-show-data.md) vagy exportálhatja azokat az Excelbe. Az adatexportálási lehetőség használatához meghatározott típusú licenc szükséges, valamint a tartalomra vonatkozó engedélyek. Ha nem tud exportálni, lépjen kapcsolatba a Power BI rendszergazdájával. 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 240045c05a35a6583b537b785c6639a39c6aa9d4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6e48713315b23cf322b635f1650374251b639e4f
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61193826"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71409366"
 ---
 ## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Szerepkörök és szabályok definiálása a Power BI Desktopban
 A Power BI Desktopban meghatározhat szerepköröket és szabályokat. Amikor közzéteszi a tartalmakat a Power BI-ban, a szerepkör-definíciók is közzé lesznek téve.
@@ -35,8 +35,14 @@ Biztonsági szerepkörök definiálásához kövesse az alábbi lépéseket.
    
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
 8. Miután összeállította a DAX-kifejezést, a Kifejezés mező fölötti pipára kattintva ellenőrizheti azt.
-   
+      
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security-validate-dax.png)
+   
+   > [!NOTE]
+   > Ebben a kifejezésmezőben akkor is vesszőkkel kell elválasztania a DAX-függvény argumentumait, ha a területi beállítás (például francia vagy német) egyébként pontosvesszőt használ elválasztóként. 
+   >
+   >
+   
 9. Kattintson a **Mentés** gombra.
 
 A Power BI Desktopban nem rendelhet felhasználókat a szerepkörökhöz. Ezt a Power BI szolgáltatásban teheti meg. A dinamikus biztonság engedélyezéséhez használja a Power BI Desktopban a *username()* vagy a *userprincipalname()* DAX-függvényt, és konfigurálja a megfelelő kapcsolatokat. 

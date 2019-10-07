@@ -8,17 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.openlocfilehash: 364795a25aaffb92afc4a7148c9bf6b3f88d2ac8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 09/26/2019
+ms.openlocfilehash: 26dde078ce0b237779660c44b2843a645e4d1a47
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187316"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325576"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló újdonságai
 
-Ismerje meg a Power BI jelentéskészítő kiszolgáló és a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop újdonságai. A cikk a főbb funkciókat ismerteti, és az új elemek kibocsátásakor frissül.
+A Power BI jelentéskészítő kiszolgáló és a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop újdonságainak bemutatása. A cikk a főbb funkciókat ismerteti, és minden új kibocsátásakor frissül.
 
 Az újdonságokra vonatkozó Power BI-információk:
 
@@ -26,77 +26,132 @@ Az újdonságokra vonatkozó Power BI-információk:
 * [A Power BI Desktop újdonságai](../desktop-latest-update.md)
 * [A Power BI-mobilalkalmazások újdonságai](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
-## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>2019. május: Power BI Desktop a Power BI jelentéskészítő kiszolgáló
+## <a name="september-2019"></a>2019. szeptember
 
-Tekintse meg a [Power BI jelentéskészítő kiszolgáló 2019. május](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blogbejegyzés további információk az új funkciókról.
+Az összes új funkció részleteit megtalálhatja a [Power BI jelentéskészítő kiszolgáló 2019. szeptemberi](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2019-feature-summary/) blogbejegyzésében.
 
-Íme néhány a kiadás a fontosabb eseményeket:
+A Power BI jelentéskészítő kiszolgáló 2019. szeptemberi frissítése számos Power BI-jelentésfunkciót tartalmaz. Kiemelünk néhányat a legfontosabbak közül:
 
-### <a name="performance-analyzer"></a>Teljesítmény-elemző eszköz 
+- **Vizualizációszintű szűrők szeletelőkhöz** Vizualizációszintű szűrők vehetők fel szeletelőkhöz. Ugyanúgy működik, mint a többi vizualizációszintű szűrő: csak magát a szeletelőt szűri, más vizualizációkat nem. Ez a szűrő jól használható az üres mezők kiszűrésére, vagy ha mértékszűrőket kell használnia.
+- **Ikonkészletek táblázatokhoz és mátrixokhoz** A fő teljesítménymutatók (KPI) ikonjaival különböző ikonokat jeleníthet meg táblázatokban és mátrixokban, az Excel ikonkészleteihez hasonlóan.
+- **Vizualizációk csoportba foglalása** A vizualizációk, alakzatok, szövegdobozok, képek és gombok mostantól ugyanúgy csoportba foglalhatók egy jelentésoldalon, mint a PowerPointban. A csoportba foglalt objektumok együtt méretezhetők át és mozgathatók. A csoportba foglalás megkönnyíti az olyan jelentésekkel végzett munkát, amelynek egy-egy oldalán sok objektum van egymásra rétegezve.
+- **Új alapértelmezett témák** Az új JSON-témabeállításokkal összhangban frissítettük a jelentésekhez elérhető témákat, és megváltoztattuk az új jelentések alapértelmezett témáját. Az új alapértelmezett téma jobban illeszkedik a Microsoft tervezési nyelvéhez és a vizualizációkhoz ajánlott eljárásokat követi. 
+- **A panelek frissített megjelenése** Sok frissítést végeztünk a felhasználói felületen. Világosabb színűre módosítottuk az összes panelt, a láblécet és a nézetváltót, frissítettük a térközöket és új ikonokat vezettünk be. Az új megjelenés a teljes felhasználói felület frissítésének első állomása.
 
-Ha a jelentés a vártnál lassabban fut, próbálja meg a Performance Analyzer a Power BI Desktopban. Indítás után, az adatait minden művelet, a jelentés létrehoz egy naplófájlt. Tudjon meg többet a [Performance Analyzer](../desktop-performance-analyzer.md).
-
-### <a name="new-modeling-view"></a>Új modellezési megtekintése
-
-Az új modellezési nézetben a Power BI Desktopban megtekintheti és sok tábla tartalmazó összetett adatkészletekkel működnek együtt. Emeli ki több diagram elrendezését tartalmazza, és a tömeges oszlopokat, mértékeket és táblák szerkesztéséhez. Tudjon meg többet [nézet modellezés](../desktop-modeling-view.md).
-
-### <a name="accessible-visual-interaction"></a>Elérhető Vizualizációk közti interakció
-
-Most már hozzáféréssel adatpont számos, a billentyűzetnavigációt beépített vizualizációkat is. Tudjon meg többet [akadálymentesség a Power BI-jelentések](../desktop-accessibility.md).
-
-### <a name="conditional-formatting-titles-and-web-url-actions"></a>Feltételes formázás a címek és a webes URL-cím műveletek
-
-Power BI-jelentések interaktívak. Az így, hogy a jelentésben szereplő dinamikus, a jelentés aktuális állapotát tükröző lenne. Kifejezés kötött formázás segítségével teheti dinamikussá a gombok, alakzatok és képek URL-címei. Tudjon meg többet [kifejezésen alapuló címek](../desktop-conditional-format-visual-titles.md).
-
-### <a name="cross-highlight-by-axis-labels"></a>Egymás közötti keresztkiemelések tengelyfeliratok szerint
-
-Válassza ki a tengely kategóriacímkék Vizualizációk keresztkiemelése egy oldalon, a többi elem, ugyanúgy, mint a kiválasztott az adatpontok egy vizualizációban. Tudjon meg többet [keresztkiemelés](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
-
-### <a name="all-the-new-features"></a>Az új funkciók
-
-Itt látható az új funkciók listája:
+A funkciók teljes listája a következő. 
 
 ### <a name="reporting"></a>Jelentéskészítés
 
-- Egymás közötti keresztkiemelések a vonaldiagramok az egyetlen ponton 
-- Címek sortörés 
-- A keresztszűrés ¬ alapértelmezett Vizualizációk közti interakció frissítése
-- A Vizualizáció a Lekerekített sarkok 
-- Egyetlen válassza a szeletelő  
-- A Bing maps heat map támogatása  
-- Egymás közötti keresztkiemelések tengelyfeliratok szerint  
-- Alapértelmezett elemleírás formázása  
-- Statikus webhely URL-cím támogatja a gombok, alakzatokat és képeket  
-- Lap igazítása beállításai   
-- Kiválasztás panel fejlesztései  
-- Elérhető Vizualizációk közti interakció  
-- Feltételes formázás a Vizualizációk címei  
-- Feltételes formázás webes URL-cím műveletek gombok, alakzatok és képek
-- Teljesítmény-elemző eszköz panel
-- Táblák és mátrixok billentyűzetnavigációt
-- Sor adatkezelés felirat pozíciója
-- KPI visual kijelző szöveges vezérlése
+- A panelek frissített megjelenése
+- Vizualizációszintű szűrők szeletelőkhöz
+- A teljesítményelemző panel rendezése
+- Vizualizáció-fejléc elemleírásai
+- Táblázat- és mátrix-címkék teljes testreszabása
+- A hierarchiaszeletelő szeletelőszinkronizálási támogatása
+- Egységes betűméretek a vizualizációkban
+- Ikonkészletek táblázatokhoz és mátrixokhoz
+- Százalék támogatása a feltételes formázási szabályokhoz
+- Általánosan elérhető az új szűrőpanel
+- Adatszínek támogatása lejátszási tengely pontdiagramon való használatakor
+- Jobb teljesítmény relatív dátum és legördülő szeletelők használatakor
+- Vizualizációk csoportba foglalása
+- Szín- és szövegosztályok témákban
+- Új alapértelmezett témák
 
 ### <a name="analytics"></a>Elemzés
 
-- Dátumok hierarchikus mostantól általánosan elérhető megjelenítése  
+- Egyéni formátumsztringek
+- A formázási beállítások feltételes formázási frissítései
+
+    - Háttér- és címszínek vizualizációkhoz
+    - Kártyaszínek
+    - Kijelző kitöltése és színei
+    - Helyettesítő szöveg
+    - Szegély színe
+
+- Feltételes formázási figyelmeztetések
+- Keresztrészletezési felderíthetőség fejlesztése
+- Új DAX-kifejezések: REMOVEFILTERS és CONVERT
+- Új DAX összehasonlító operátor: ==
+
+### <a name="data-preparation"></a>Adatok előkészítése
+
+- Az M IntelliSense fejlesztései
+- Új átalakítás: Oszlop felosztása pozíció alapján
+- Másolás a vágólapra adatprofil-készítésből
+
+
+## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>2019. május: A Power BI jelentéskészítő kiszolgálóhoz készült Power BI Desktop
+
+Az összes új funkció részleteit megtalálhatja a [Power BI jelentéskészítő kiszolgáló 2019. májusi](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blogbejegyzésében.
+
+Kiemelünk néhányat a kiadás legfontosabb részletei közül:
+
+### <a name="performance-analyzer"></a>Teljesítményelemző 
+
+Ha a jelentés a vártnál lassabban fut, kipróbálhatja a Power BI Desktop Teljesítményelemzőjét. Ez az elindításakor naplófájl hoz létre a jelentéssel végzett összes művelettel kapcsolatos információkkal. További információk a [Teljesítményelemzőről](../desktop-performance-analyzer.md).
+
+### <a name="new-modeling-view"></a>Új modellezési nézet
+
+A Power BI Desktop új Modellezés nézetében sok táblát tartalmazó, összetett adathalmazokat tekinthet meg és kezelhet. Ennek lényeges eleme például a többszörös diagramelrendezés, valamint az oszlopok, mértékek és táblázatok csoportos szerkesztése. További tudnivalók a [Modellezés nézetről](../desktop-modeling-view.md).
+
+### <a name="accessible-visual-interaction"></a>Vizualizációk akadálymentes használata
+
+Mostantól a beépített vizualizációk többségében a billentyűzettel navigálva is elérhetők az adatpontok. További tudnivalók a [Power BI-jelentések akadálymentességéről](../desktop-accessibility.md).
+
+### <a name="conditional-formatting-titles-and-web-url-actions"></a>Címek feltételes formázása és webes URL-műveletek
+
+A Power BI-jelentések interaktívak. Kézenfekvő, hogy a jelentések címe is dinamikus legyen, és tükrözze a jelentés aktuális állapotát. Ugyanazzal a kifejezésalapú formázással teheti dinamikussá a gombok, alakzatok és képek URL-címeit. További információ a [kifejezésalapú címekről](../desktop-conditional-format-visual-titles.md).
+
+### <a name="cross-highlight-by-axis-labels"></a>Keresztkiemelés tengelyfeliratok alapján
+
+Egy vizualizáció kategóriatengely-feliratainak kijelölésével keresztkiemelést végezhet az oldal más elemein, mintha az adatpontokat jelölte volna ki a vizualizáción. További tudnivalók a [keresztkiemelésről](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+
+### <a name="all-the-new-features"></a>Az összes új funkció
+
+Az alábbi lista az összes új funkciót felsorolja:
+
+### <a name="reporting"></a>Jelentéskészítés
+
+- Keresztkijelölés a vonaldiagramok egyetlen pontján 
+- Címek több sorba tördelése 
+- A vizualizáció alapműveletének módosítása keresztszűrésre
+- Lekerekített sarkú vizualizációszegélyek 
+- Egyetlen elem kijelölése szeletelő  
+- Intenzitástérkép támogatása a Bing Térképekhez  
+- Keresztkiemelés tengelyfeliratok alapján  
+- Elemleírások alapértelmezett formázása  
+- Statikus webes URL-címek támogatása gombokhoz, alakzatokhoz és képekhez  
+- Oldaligazítási beállítások   
+- A Kijelölés panel fejlesztései  
+- Vizualizációk akadálymentes használata  
+- Vizualizációk címeinek feltételes formázása  
+- A gombok, alakzatok és képek webes URL-műveleteinek feltételes formázása
+- Teljesítményelemző panel
+- Navigálás billentyűzettel táblákban és mátrixokban
+- Vonal-adatfelirat helyzetének szabályozása
+- KPI vizuális kijelző szövegméretének szabályozása
+
+### <a name="analytics"></a>Elemzés
+
+- A dátumok hierarchikus megjelenítése már általánosan elérhető  
 
 ### <a name="modeling"></a>Modellezés
 
-- Új modellezési nézet már általánosan elérhető
+- Mostantól általánosan elérhető az új modellezési nézet
 - Új DAX-függvények
-- A ALLSELECTED DAX függvény frissítése
-- Tiltsa le az új jelentések automatikus elejétől számított táblák
+- Az ALLSELECTED DAX-függvény frissítése
+- Dátumtáblák automatikus létrehozásának letiltása új jelentések esetén
 
 ## <a name="may-2019-power-bi-report-server"></a>2019. május: Power BI jelentéskészítő kiszolgáló
 
-### <a name="support-for-trusted-visuals"></a>Megbízható Vizualizációk támogatása
+### <a name="support-for-trusted-visuals"></a>Megbízható vizualizációk támogatása
 
-A Power BI jelentéskészítő kiszolgáló megbízható Vizualizációk támogatása hozzáadtunk. Jelenleg tesztenként Mapbox és PowerOn vizualizációkat. Az ESRI, a Visio és a PowerApps nem támogatottak ebben a kiadásban.)
+A Power BI jelentéskészítő kiszolgálót a megbízható vizualizációk támogatásával egészítettük ki. Jelenleg a Mapbox és PowerOn vizualizációkat támogatjuk. Az ESRI, a Visio és a PowerApps ebben a kiadásban nem támogatott.
 
 ### <a name="improved-security-features"></a>Továbbfejlesztett biztonsági funkciók
 
-**RestrictedResourceMimeTypeForUpload**, mely rendszergazdák használatával adja meg a letiltott mime-típusok, pl. szöveg/html vesszővel tagolt listája.
+A **RestrictedResourceMimeTypeForUpload** használatával a rendszergazdák vesszővel tagolt listában adhatják meg a letiltott MIME-típusokat (például text/html).
 
 ## <a name="january-2019"></a>2019. január
 

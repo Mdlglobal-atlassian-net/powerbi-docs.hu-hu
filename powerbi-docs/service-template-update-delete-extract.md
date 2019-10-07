@@ -7,25 +7,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: 273734493c761739f9780e6a7fe6e781900723f9
-ms.sourcegitcommit: 7d52401f50944feaaa112c84113ee47f606dbf68
+ms.openlocfilehash: 2cf655c25bb58ec001bac52b55aea74f887f08d9
+ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67125878"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71207629"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Sablonalkalmazás frissítése, törlése és kinyerése
 
 Most, hogy az alkalmazása üzemi környezetbe került, újrakezdheti a tesztelési fázist anélkül, hogy az üzemi környezetben lévő alkalmazás működését megzavarná.
 ## <a name="update-your-app"></a>Alkalmazás frissítése
 
+Ha a módosításokat a Power BI Desktopban végezte, kezdje az 1. lépéssel. Ha a módosításokat nem a Power BI Desktopban végezte, kezdje a 4. lépéssel.
+
+1. Töltse fel a frissített adathalmazt a meglévő adathalmaz felülírásával. **Ügyeljen arra, hogy pontosan ugyanazt az adathalmaznevet használja**. Ha más nevet használ, új adathalmazt hoz létre az alkalmazást frissítő felhasználók számára.
+![adathalmaz felülírása](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset.png)
+1. Importálja a .pbix-fájlt a számítógépéről.
+![adathalmaz felülírása](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset2.png)
+1. Erősítse meg a felülírás szándékát.
+![adathalmaz felülírása](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset3.png)
 
 1. A **Kiadáskezelés** panelen válassza az **Alkalmazás létrehozása** lehetőséget.
-2. Menjen végig ismét az alkalmazás-létrehozási folyamaton.
-3. Miután megadta a **Védjegyezés**, a **Tartalom**, a **Vezérlő** és a **Hozzáférés** beállításait, válassza ismét az **Alkalmazás létrehozása** lehetőséget.
-4. Válassza a **Bezárás** lehetőséget, és térjen vissza **Kiadáskezelés** panelre.
+1. Menjen végig ismét az alkalmazás-létrehozási folyamaton.
+1. Miután megadta a **Védjegyezés**, a **Tartalom**, a **Vezérlés** és a **Hozzáférés** beállításait, válassza ismét az **Alkalmazás létrehozása** lehetőséget.
+1. Válassza a **Bezárás** lehetőséget, és térjen vissza **Kiadáskezelés** panelre.
 
    Láthatja, hogy most már két verzióval rendelkezik: Egy verzióval üzemi környezetben, valamint egy új tesztelési verzióval.
 
@@ -33,10 +41,18 @@ Most, hogy az alkalmazása üzemi környezetbe került, újrakezdheti a tesztel�
 
 5. Ha készen áll az alkalmazás előléptetésére az üzem előtti állapotba a bérlőn kívüli további teszteléshez, térjen vissza a Kiadáskezelés panelre, és válassza a **Tesztelés** mellett az **Alkalmazás előléptetése** lehetőséget.
 6. A hivatkozás immáron használható. Küldje be újra a Cloud Partner Portalra (CPP-re) a [Power BI-alkalmazásajánlat frissítéséről](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer) szóló cikk lépéseit követve.
-7. A CPP-ben **közzé kell tennie** újra az ajánlatot, valamint ismét érvényesíteni kell.
+7. A Cloud Partner Portalon újra **közzé kell tennie** az ajánlatot, valamint ismét érvényesíttetnie kell.
 
->[!NOTE]
->Az alkalmazást csak akkor léptetheti elő a gyártási fázisra, ha jóvá lett hagyva a Cloud Partner Portalon, valamint már közzétette.
+   >[!NOTE]
+   >Az alkalmazást csak akkor léptetheti elő a gyártási fázisra, ha jóvá lett hagyva a Cloud Partner Portalon, valamint már közzétette.
+
+### <a name="update-behavior"></a>Frissítési viselkedés
+
+1. Az alkalmazás frissítésével a sablonalkalmazás telepítője számára elérhetővé válik a [Sablonalkalmazás frissítése](service-template-apps-install-distribute.md#update-a-template-app) lehetőség a már telepített munkaterületen anélkül, hogy elveszítené a kapcsolódási konfigurációt.
+1. A telepítő [felülírási viselkedését](service-template-apps-install-distribute.md#overwrite-behavior) ismertető szakasz írja e, hogy az adathalmaz változásai hogyan érintik a telepített sablonalkalmazást.
+1. Sablonalkalmazás frissítésekor (felülírásakor) az először visszaállítja a mintaadatokat, és automatikusan újra fog kapcsolódni a felhasználói konfigurációval (paraméterek és hitelesítő adatok). A frissítés befejezéséig a jelentésekben, irányítópultokon és a vállalati alkalmazásban a mintaadatok sáv jelenik meg.
+1. Ha olyan új lekérdezési paramétert vett fel a frissített adathalmazhoz, amely felhasználói beavatkozást igényel, akkor be kell jelölnie a *Kötelező* jelölőnégyzetet. A telepítő így rákérdez majd a kapcsolati sztringre az alkalmazás telepítése után.
+ ![kötelező paraméterek](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset4.png)
 
 ## <a name="extract-workspace"></a>Munkaterület kinyerése
 Egy sablonalkalmazás korábbi verziójára váltás mostantól minden eddiginél könnyebb a kinyerési funkciónak köszönhetően. Az alábbi lépésekkel egy adott alkalmazásverziót nyerhet ki a különböző kiadási fázisokból egy új munkaterületre:

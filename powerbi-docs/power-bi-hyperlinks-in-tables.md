@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/30/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 58cb009e29c05ce318c5931fb418617e1ef63f4f
-ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
+ms.openlocfilehash: b158e968d0fd35859cfd293177a7273e8311d5b2
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70937066"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715296"
 ---
 # <a name="add-hyperlinks-urls-to-a-table"></a>Hivatkozások (URL-címek) felvétele táblázatba
 Ez a témakör a hivatkozások (URL-címek) táblázatokba való felvételét mutatja be. Hivatkozásokat a Power BI Desktop használatával vehet fel táblázatba vagy mátrixba. Ezeket a hivatkozásokat aztán a Power BI Desktopban vagy a Power BI szolgáltatásban adhatja hozzá a jelentések táblázataihoz és a mátrixaihoz. 
@@ -57,7 +57,7 @@ A hivatkozás felvételének menete attól függ, hogy importálta az adatokat, 
 
     ![URL-ikon bekapcsolása](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
 
-1. (Választható) [A Power BI Desktopból származó jelentést közzéteheti a Power BI szolgáltatásban](guided-learning/publishingandsharing.yml?tutorial-step=2), és megnyithatja a Power BI szolgáltatáson belül. A hivatkozások itt is működni fognak.
+1. (Választható) [A Power BI Desktopból származó jelentést közzéteheti a Power BI szolgáltatásban](/learn/modules/publish-share-power-bi/2-publish-reports), és megnyithatja a Power BI szolgáltatáson belül. A hivatkozások itt is működni fognak.
 
 ### <a name="for-data-connected-with-directquery"></a>DirectQuery segítségével csatlakoztatott adatok
 DirectQuery módban nem hozhat létre új oszlopot.  Az adatokban már meglévő URL-címeket viszont átalakíthatja hivatkozásokká.
@@ -65,7 +65,7 @@ DirectQuery módban nem hozhat létre új oszlopot.  Az adatokban már meglévő
 1. Jelentés nézetben hozzon létre egy táblázatot egy URL-címeket tartalmazó mezővel.
 2. Jelölje ki az oszlopot, majd a **Modellezés** lapon válassza az **Adatkategória** legördülő menüt.
 3. Kattintson a **Webes URL-cím** lehetőségre. A hivatkozások kék színnel, aláhúzva jelennek meg.
-4. (Választható) [A Power BI Desktopból származó jelentést közzéteheti a Power BI szolgáltatásban](guided-learning/publishingandsharing.yml?tutorial-step=2), és megnyithatja a Power BI szolgáltatáson belül. A hivatkozások itt is működni fognak.
+4. (Választható) [A Power BI Desktopból származó jelentést közzéteheti a Power BI szolgáltatásban](/learn/modules/publish-share-power-bi/2-publish-reports), és megnyithatja a Power BI szolgáltatáson belül. A hivatkozások itt is működni fognak.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-excel-power-pivot"></a>Hivatkozás létrehozása táblázatban vagy mátrixban az Excel Power Pivot használatával
 A Power BI táblázataihoz és mátrixaihoz úgy is hozzáadhatja a hivatkozásokat, hogy még azelőtt létrehozza őket az adatkészletben, hogy az adatkészletet importálná vagy csatlakoztatná a Power BI-ban. Ez a példa egy Excel-munkafüzetet használ.

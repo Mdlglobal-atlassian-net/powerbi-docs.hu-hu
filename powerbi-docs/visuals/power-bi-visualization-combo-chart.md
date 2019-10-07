@@ -1,6 +1,6 @@
 ---
 title: Kombinált diagram a Power BI-ban
-description: Ez az oktatóanyag azt ismerteti, hogy mikor érdemes kombinált diagramokat használni, és hogy hogyan hozhatók létre a Power BI szolgáltatásban és a Desktopban.
+description: Ez az oktatóanyag azt ismerteti, hogy mikor érdemes kombinált diagramokat használni, és hogy hogyan hozhatóak létre a Power BI szolgáltatásban és a Desktopban.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,143 +8,123 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/23/2019
+ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e4b7b4b336b376f6ccec0bc0fe56de107ab8bd09
-ms.sourcegitcommit: 7d52401f50944feaaa112c84113ee47f606dbf68
+ms.openlocfilehash: 97c01966750d888f3420d265eb3f252b3a8f57d3
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67124119"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195020"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinált diagram a Power BI-ban
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 A kombinált diagramok olyan vizualizációk a Power BI-ban, amelyek egy vonaldiagramot és egy oszlopdiagramot kombinálnak egyetlen elemmé. A két diagram kombinációjával gyorsabban hasonlíthat össze adatokat.
 
 A kombinált diagramoknak egy vagy két Y tengelyük lehet.
 
 ## <a name="when-to-use-a-combo-chart"></a>Mikor érdemes kombinált diagramokat használni?
-
 A kombinált diagramok használata nagyszerű választás, ha:
 
 * van egy vonaldiagramja és egy oszlopdiagramja, amelyek ugyanazt az X tengelyt használják;
-
 * több, különböző értéktartományú mértéket szeretne összehasonlítani;
-
 * egyetlen vizualizáción szeretné bemutatni két mérték korrelációját;
-
 * szeretné ellenőrizni, hogy egy mérték elér-e egy adott célt, amelyet egy másik mérték határoz meg;
-
 * kevesebb helyet szeretne felhasználni a vásznon.
 
-## <a name="prerequisites"></a>Előfeltételek
+### <a name="prerequisites"></a>Előfeltételek
+Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
 
-A kombinált diagramok elérhetőek a Power BI szolgáltatásban és a Power BI Desktopban is. Ebben az oktatóanyagban a Power BI szolgáltatással fogunk kombinált diagramokat létrehozni. Ügyeljen rá, hogy rendelkezik megfelelő felhasználói hitelesítő adatokkal.
+1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
+   
+2. Keresse meg a **Kiskereskedelmi elemzési minta PBIX-fájlt**
 
-Nézze meg, hogyan hoz létre Will egy kombinált diagramot az Értékesítési és marketing mintát használva.
+1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>  
+1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
+
+
 
 ## <a name="create-a-basic-single-axis-combo-chart"></a>Egyszerű, egytengelyes kombinált diagram létrehozása
+Nézze meg, hogyan hoz létre Will egy kombinált diagramot az Értékesítési és marketing mintát használva.
+   > [!NOTE]
+   > Ez a videó a Power BI Desktop egy régebbi verzióját használja.
+   > 
+   > 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>  
 
-A bemutatott lépések elvégzéséhez nyissa meg a Power BI szolgáltatást, és kapcsolódjon a **Kiskereskedelmi elemzési mintához**. Egy kombinált diagram létrehozásához jelentkezzen be a Power BI szolgáltatásba, majd válassza az **Adatok beolvasása** > **Minták** > **Kiskereskedelmi elemzési minta** > **Csatlakozás** lehetőséget. Ekkor megnyílik a **Kiskereskedelmi elemzési minta** irányítópultja.
+<a name="create"></a>
 
-1. A „Kiskereskedelmi elemzési minta” irányítópulton nyissa meg az **Áruházi értékesítések áttekintése** jelentést az **Összes áruház** csempe kiválasztásával.
+1. Induljon ki egy üres jelentésoldalból, majd hozzon létre egy oszlopdiagramot, amely az idei év értékesítéseit és bruttó árrését jeleníti meg havi bontásban.
 
-1. Válassza a **Jelentés szerkesztése** elemet a jelentés Szerkesztési nézetben való megnyitásához.
+    a.  A Mezők ablaktáblán válassza ki a **Sales** \> **This Year Sales** > **Érték** elemet.
 
-1. Az oldal alján válassza a **+** jelent egy új jelentésoldal hozzáadásához.
+    b.  Húzza a **Sales** \> **Gross Margin This Year** elemet az **Érték** gyűjtőbe.
 
-1. Hozzon létre egy oszlopdiagramot, amely az idei év értékesítéseit és bruttó árrését jeleníti meg havi bontásban.
+    c. Adja hozzá a **Time** \> **FiscalMonth** elemet a **Tengely** gyűjtőhöz.
 
-    1. A Mezők ablaktáblán válassza ki a **Sales** \> **This Year Sales** > **Érték** elemet.
+    ![példa kombinált diagram oktatóanyag](media/power-bi-visualization-combo-chart/combotutorial1new.png)
+5. A vizualizáció jobb felső sarkában válassza a három pontot (...), és válassza ki a **Rendezés szempontja > FiscalMonth** lehetőséget. A rendezési sorrend módosításához válassza ismét a három pontot, és válassza a **Növekvő rendezés** vagy a **Csökkenő rendezés** elemet. Ehhez a példához a **Rendezés növekvő sorrendben** van kiválasztva.
 
-    1. Húzza a **Sales** \> **Gross Margin This Year** elemet az **Érték** gyűjtőbe.
+6. Konvertálja az oszlopdiagramot kombinált diagrammá. Két kombinált diagram érhető el: **Vonal- és halmozott oszlopdiagram**, illetve **Vonal- és csoportosított oszlopdiagram**. Ha az oszlopdiagram van kiválasztva, a **Megjelenítések** ablaktáblán válassza a **Vonal- és fürtözött oszlopdiagram** lehetőséget.
 
-    1. Adja hozzá a **Time** \> **FiscalMonth** elemet a **Tengely** gyűjtőhöz.
+    ![példa kombinált diagrammá konvertálásra](media/power-bi-visualization-combo-chart/converttocombo-new2.png)
+7. A **Mezők** ablaktábláról húzza a **Sales** \> **Last Year Sales** elemet a **Sorértékek** gyűjtőbe.
 
-        ![Képernyőkép az újonnan létrehozott oszlopdiagramról.](media/power-bi-visualization-combo-chart/combotutorial1new.png)
+   ![](media/power-bi-visualization-combo-chart/linevaluebucket.png)
 
-1. A vizualizáció jobb felső sarkában válassza a három pontot, és válassza ki a **Rendezés szempontja > FiscalMonth** lehetőséget. A rendezési sorrend módosításához válassza ismét a három pontot, és válassza a **Növekvő rendezés** vagy a **Csökkenő rendezés** elemet.
+   A kombinált diagramnak ekkor ehhez hasonlóan kell kinéznie:
 
-1. Konvertálja az oszlopdiagramot kombinált diagrammá. Két kombinált diagram érhető el: **Vonal- és halmozott oszlopdiagram**, illetve **Vonal- és csoportosított oszlopdiagram**. Ha az oszlopdiagram van kiválasztva, a **Megjelenítések** ablaktáblán válassza a **Vonal- és fürtözött oszlopdiagram** lehetőséget.
-
-    ![Képernyőkép a vizualizációk panelről, kiemelt Sor és fürtözött oszlopdiagram lehetőséggel.](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
-
-1. A **Mezők** panelről húzza a **Sales** > **Last Year Sales** elemet a **Sorértékek** panelre.
-
-    ![Képernyőkép a Sorértékek panelről, a behúzott Last Year Sales elemmel.](media/power-bi-visualization-combo-chart/linevaluebucket.png)
-
-    A kombinált diagramnak ekkor ehhez hasonlóan kell kinéznie:
-
-    ![Képernyőkép az oszlopdiagramról a hozzáadott Last Year Sales sorértékkel.](media/power-bi-visualization-combo-chart/combochartdone-new.png)
+   ![példa kész kombinált diagramra](media/power-bi-visualization-combo-chart/combochartdone-new.png)
 
 ## <a name="create-a-combo-chart-with-two-axes"></a>Kéttengelyes kombinált diagram létrehozása
-
 Ebben a feladatban a bruttó árrést és az értékesítéseket fogjuk összehasonlítani.
 
-1. Hozzon létre egy új vonaldiagramot, amely a **Gross Margin last year %** by **Month** (%-os bruttó árrés a tavalyi évben) értéket jeleníti meg havi bontásban. Válassza a három pontot, hogy **Hónap** és **Növekvő** sorrend szerint végezzen rendezést.
+1. Hozzon létre egy új vonaldiagramot, amely a **Gross Margin last year %** (%-os bruttó árrés a tavalyi évben) értéket jeleníti meg pénzügyi hónap a **FiscalMonth** szerinti bontásban. Válassza a három pontot, hogy **Hónap** és **Növekvő** sorrend szerint végezzen rendezést.  
+A januári bruttó nyereség 35% volt, áprilisban egy 45%-os csúcs következett, amelyet júliusban egy esés, augusztusban pedig egy újabb csúcs követett. Az idei év értékesítéseire vonatkozóan is hasonló mintát fogunk látni, mint tavaly?
 
-    ![Képernyőkép az új sordiagramról.](media/power-bi-visualization-combo-chart/combo1_new.png)
+   ![kombinált diagram értékesítések példa](media/power-bi-visualization-combo-chart/combo1-new.png)
+2. Adja hozzá a vonaldiagramhoz az **Idei értékesítés > Érték** és a **Múlt évi értékesítés** mezőt. A  **Gross Margin Last Year %** (%-os bruttó árrés a tavalyi évben) skálája sokkal kisebb, mint a **Sales** (Értékesítések) skálája, így nehéz összehasonlítani őket.      
 
-     A januári bruttó nyereség 35% volt, áprilisban egy 45%-os csúcs következett, amelyet júliusban egy esés, augusztusban pedig egy újabb csúcs követett. Az idei év értékesítéseire vonatkozóan is hasonló mintát fogunk látni, mint tavaly?
+   ![kombinált diagram alacsony értékek](media/power-bi-visualization-combo-chart/flatline-new.png)
+3. Annak érdekében, hogy a vizualizáció könnyebben olvasható és értelmezhető legyen, alakítsa át a vonaldiagramot egy vonal- és halmozott oszlopdiagrammá.
 
-1. Adja hozzá a vonaldiagramhoz a **This Year Sales** > **Érték** és a **Last Year Sales** mezőt. A **Gross Margin Last Year %** (%-os bruttó árrés a tavalyi évben) skálája sokkal kisebb, mint a **Sales** (Értékesítések) skálája. Emiatt nehéz összehasonlítani őket.
+   ![példa kombinált diagrammá konvertálásra](media/power-bi-visualization-combo-chart/converttocombo-new.png)
 
-    ![Képernyőkép az sordiagramról a hozzáadott Érték és Last Year Sales értékekkel.](media/power-bi-visualization-combo-chart/flatline_new.png)
+4. Húzza át a **Tavalyi bruttó nyereség (%)** értéket az **Oszlopértékek** közül a **Sorértékek** közé. A Power BI létrehoz két tengelyt, ezzel lehetővé téve az adatkészletek eltérő skálázását: a bal tengely méri a pénzösszeget dollárban, a jobb pedig a százalékokat. És láthatjuk a választ a kérdésünkre: igen, látunk egy hasonló mintát.
 
-1. Annak érdekében, hogy a vizualizáció könnyebben olvasható és értelmezhető legyen, alakítsa át a vonaldiagramot egy vonal- és halmozott oszlopdiagrammá.
-
-    ![Képernyőkép a vizualizációk panelről, kiemelt Sor és halmozott oszlopdiagram lehetőséggel.](media/power-bi-visualization-combo-chart/converttocombo_new.png)
-
-1. Húzza át a **Tavalyi bruttó nyereség (%)** értéket az **Oszlopértékek** közül a **Sorértékek** közé. 
-
-    ![Képernyőkép a Sor- és a halmozott oszlopdiagramról](media/power-bi-visualization-combo-chart/power-bi-combochart.png)
-
-    A Power BI létrehoz két tengelyt, a szolgáltatás így különböző módokon méretezheti az adatkészleteket. A bal oldali az értékesítést méri dollárban, a jobb oldali pedig a százalékos arányt. És láthatjuk a választ a kérdésünkre: Igen, látunk egy hasonló mintát.
+   ![példa fürtözött kombinált diagram](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
 
 ## <a name="add-titles-to-the-axes"></a>Címek felvétele tengelyekhez
-
-1. Válassza a festőhenger ikont ![Képernyőkép a festőhenger ikonról.](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) A Formázás ablaktábla megnyitása.
-
+1. Válassza a festőhenger ikont 
+1. ![festőhenger ikon](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) A Formázás ablaktábla megnyitása.
 1. Az **Y tengely** kibontásához válassza a lefelé mutató nyilat.
+1. Az **Y tengely (Oszlop)** tulajdonságai között állítsa a **Pozíciót** **Balra**, a **Címet** **Be**, a **Stílust** **Csak a cím megjelenítése**, a **Megjelenítési egységeket** pedig **Millió** értékre.
 
-1. Az **Y tengely (oszlop)** esetén adja meg az alábbi beállításokat:
+   ![példa kombinált diagram nyitott y](media/power-bi-visualization-combo-chart/power-bi-open-y.png)
+4. Az **Y tengely (Oszlop)** területen görgessen lefelé, amíg meg nem jelenik a **Másodlagos mutatása** lehetőség. Mivel az Y tengelyekhez számos beállítás érhető el, esetleg mindkét görgetősávot használnia kell. A Másodlagos mutatása lehetőség a kombinált diagramon belüli vonaldiagram formázási lehetőségeit jeleníti meg.
 
-    | Beállítás | Érték |
-    | ------- | ----- |
-    | Pozíció | Válassza a **Bal** elemet. |
-    | Megjelenítési egységek | Válassza a **Millió** elemet. |
-    | Cím | Kapcsolja **be** a csúszkát. |
-    | Stílus | Válassza a **Csak a cím megjelenítése** elemet. |
-    | Másodlagos megtekintése | Kapcsolja **be** a csúszkát.  Ez a kombinált diagramon belüli vonaldiagram formázási lehetőségeit jeleníti meg. |
+   ![kombinált diagram másodlagos példa](media/power-bi-visualization-combo-chart/power-bi-secondary.png)
+5. Az **Y tengely (Sor)** részen hagyja a **Pozíció** tulajdonságot **Jobbra** értéken, kapcsolja **Be** a **Címet**, majd állítsa a **Stílust** **Csak a cím megjelenítése** értékre.
 
-1. Az **Y tengely (sor)** esetén adja meg az alábbi beállításokat:
+   A kombinált diagram ekkor már a címeikkel együtt jeleníti meg a két tengelyt.
 
-    | Beállítás | Érték |
-    | ------- | ----- |
-    | Pozíció | Válassza a **Jobb** elemet. |
-    | Cím | Kapcsolja **be** a csúszkát. |
-    | Stílus | Válassza a **Csak a cím megjelenítése** elemet. |
+   ![kombinált diagram címek példa](media/power-bi-visualization-combo-chart/power-bi-2-titles.png)
 
-    A kombinált diagram ekkor a dupla tengelyt címekkel együtt jeleníti meg.
-
-    ![Képernyőkép a Sor- és a halmozott oszlopdiagramról bekapcsolt címekkel.](media/power-bi-visualization-combo-chart/power-bi-titles-on.png)
-
-1. Ha szeretné, módosíthatja a szöveg betűtípusát, méretét és színét, illetve más olyan beállításokat, amelyekkel javíthatja a diagram olvashatóságát és megjelenését.
+6. Ha szeretné, módosíthatja a szöveg betűtípusát, méretét és színét, illetve más olyan beállításokat, amelyekkel javíthatja a diagram olvashatóságát és megjelenését.
 
 Ezután az alábbiakat lehet érdemes elvégezni:
 
 * [Kombinált diagram felvétele irányítópult-csempeként](../service-dashboard-tiles.md).
-
 * [Mentse a jelentést](../service-report-save.md).
-
 * [Jelentés nevének akadálymentesítése a fogyatékkal élők számára](../desktop-accessibility.md).
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Keresztkiemelés és keresztszűrés
 
-Egy oszlop vagy egy sor kijelölése egy kombinált diagramon keresztkiemelést és keresztszűrést végez a jelentés oldalon lévő többi vizualizáción. Az alapértelmezett viselkedés módosításához használja a [Vizualizációs interakciók](../service-reports-visual-interactions.md) vezérlőt.
+Egy oszlop vagy egy sor kijelölése egy kombinált diagramon keresztkiemelést és keresztszűrést végez a jelentés oldalon lévő többi vizualizáción és viszont. Az alapértelmezett viselkedés módosításához használja a [Vizualizációs interakciók](../service-reports-visual-interactions.md) vezérlőt.
 
 ## <a name="next-steps"></a>Következő lépések
 

@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 09/26/2019
 ms.author: maggies
-ms.openlocfilehash: 2401064f1f7f3be63c23d72e79987784e1ec7049
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ec1aab13955a4c34861a3f0d8dd39b6c77607696
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187502"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325664"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI-jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz
-A Power BI-jelentéseket helyszínen is tárolhatja és kezelheti a Power BI jelentéskészítő kiszolgáló webportálján, illetve tárolhatja őket a felhőbeli Power BI szolgáltatásban (https://powerbi.com)). A jelentéseket a Power BI Desktopban hozhatja létre, majd közzéteheti a webportálon. Ekkor a jelentések megtekinthetővé válnak a cégen belüli olvasók számára egy böngésző vagy egy Power BI-mobilalkalmazás használatával.
+A Power BI-jelentéseket helyszínen is tárolhatja és kezelheti a Power BI jelentéskészítő kiszolgáló webportálján, illetve tárolhatja őket a felhőbeli Power BI szolgáltatásban (https://powerbi.com) ). A jelentéseket a Power BI Desktopban hozhatja létre, majd közzéteheti a webportálon. Ekkor a jelentések megtekinthetővé válnak a cégen belüli olvasók számára egy böngésző vagy egy Power BI-mobilalkalmazás használatával.
 
 ![Power BI-jelentés a webportálon](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
 
 Íme négy gyors lépés a kezdéshez.
 
-## <a name="step-1-install-power-bi-desktop-optimized-for-power-bi-report-server"></a>1. lépés: A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
+## <a name="step-1-install-power-bi-desktop-optimized-for-power-bi-report-server"></a>1\. lépés: A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
 
 Ha már létrehozott jelentéseket a Power BI Desktopban, akkor gyakorlatilag a Power BI jelentéskészítő kiszolgálóra is létrehozhat Power BI-jelentéseket. Javasoljuk, hogy a kiszolgáló és az alkalmazás folyamatos szinkronizálása érdekében telepítse a Power BI Desktop Power BI jelentéskészítő kiszolgálóra optimalizált verzióját. Ugyanazon a számítógépen a Power BI Desktop mindkét változata telepítve lehet.
 
@@ -31,7 +31,7 @@ Ha már létrehozott jelentéseket a Power BI Desktopban, akkor gyakorlatilag a 
 
     ![A Power BI Desktop letöltése a webportálról](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    Vagy lépjen közvetlenül [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimalizált Power BI jelentéskészítő kiszolgáló – május 2019) a Microsoft Download Center.
+    Megnyithatja a [Power BI jelentéskészítő kiszolgáló](https://powerbi.microsoft.com/report-server/) kezdőlapját is, ahol kiválaszthatja a **Speciális letöltési beállítások** lehetőséget.
 
 2. A letöltőközpontlapon kattintson a **Letöltés** gombra.
 
@@ -41,19 +41,19 @@ Ha már létrehozott jelentéseket a Power BI Desktopban, akkor gyakorlatilag a 
 
     - **PBIDesktopRS_x64.msi** (64 bites verzió).
 
-4. A telepítő letöltése után a Power BI Desktop (2019. május) telepítővarázsló futtatásához.
+4. A telepítő letöltése után indítsa el a Power BI Desktop (2019. szeptember) telepítő varázslóját.
 
 2. A telepítés végén kattintson a **Power BI Desktop azonnali indítása** lehetőségre.
    
-    A folyamat automatikusan elindul, és máris hozzákezdhet. Beállíthatja, hogy a megfelelő verziót, mert a címsorban látható "Power BI Desktop (2019. május)".
+    A folyamat automatikusan elindul, és máris hozzákezdhet. A címsorban látható **Power BI Desktop (2019. szeptember)** feliratból láthatja, hogy a megfelelő verziót töltötte le.
 
-    ![Power BI Desktop verzióját 2019. május](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2019.png)
+    ![Power BI Desktop 2019. szeptember](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-sept-2019.png)
 
 3. Ha még nem ismeri a Power BI Desktopot, érdemes megtekintenie az üdvözlőképernyőn látható videókat.
    
     ![A Power BI Destop üdvözlőképernyője](media/quickstart-create-powerbi-report/report-server-powerbi-desktop-start.png)
 
-## <a name="step-2-select-a-data-source"></a>2. lépés: Adatforrás kiválasztása
+## <a name="step-2-select-a-data-source"></a>2\. lépés: Adatforrás kiválasztása
 Számos adatforráshoz kapcsolódhat. További információkért lásd: [Kapcsolódás az adatforrásokhoz](connect-data-sources.md).
 
 1. Az üdvözlőképernyőn kattintson az **Adatok beolvasása** elemre.
@@ -61,7 +61,7 @@ Számos adatforráshoz kapcsolódhat. További információkért lásd: [Kapcsol
     Vagy a **Kezdőlap** lapon kattintson az **Adatok beolvasása** elemre.
 2. Válassza ki az adatforrást – ebben a példában ez az**Analysis Services**.
    
-    ![Adatforrás kiválasztása](media/quickstart-create-powerbi-report/report-server-get-data-ssas.png)
+    ![Adatforrás kiválasztása](media/quickstart-create-powerbi-report/power-bi-report-server-get-data-ssas.png)
 3. Adja meg a **Kiszolgálót** és igény szerint az **Adatbázist**. Győződjön meg róla, hogy az **Élő csatlakozás** elem ki van jelölve > **OK**.
    
     ![A kiszolgáló neve](media/quickstart-create-powerbi-report/report-server-ssas-server-name.png)
@@ -69,7 +69,7 @@ Számos adatforráshoz kapcsolódhat. További információkért lásd: [Kapcsol
    
     ![Jelentéskészítő kiszolgáló kiválasztása](media/quickstart-create-powerbi-report/report-server-select-server.png)
 
-## <a name="step-3-design-your-report"></a>3. lépés: A jelentés megtervezése
+## <a name="step-3-design-your-report"></a>3\. lépés: A jelentés megtervezése
 Most jön a legérdekesebb rész: Az adatokat illusztráló vizualizációk létrehozása.
 
 Például tölcsérdiagramot hozhat létre az éves jövedelem alapján csoportokba rendezett ügyfelekről.
@@ -82,7 +82,7 @@ Például tölcsérdiagramot hozhat létre az éves jövedelem alapján csoporto
 
 További információk a [Power BI-jelentés megtervezéséről](../desktop-report-view.md).
 
-## <a name="step-4-save-your-report-to-the-report-server"></a>4. lépés: Mentse a jelentést a jelentéskészítő kiszolgálón
+## <a name="step-4-save-your-report-to-the-report-server"></a>4\. lépés: Mentse a jelentést a jelentéskészítő kiszolgálón
 A kész jelentést mentse a 2. lépésben kiválasztott Power BI jelentéskészítő kiszolgálón.
 
 1. A **Fájl** menüben kattintson a**Mentés másként** > **Power BI jelentéskészítő kiszolgáló** elemre.

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/14/2019
 ms.author: tebercov
-ms.openlocfilehash: 158345c44f8801a98e19dcd9b4c7dde14aa6126b
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 660fd7c623e8a195f937a3a2b468f758986411e1
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264526"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195220"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Sablonalkalmazások telepítése és terjesztése a szervezetnél – Power BI
 
@@ -82,7 +82,7 @@ A böngészőben kattintson erre a hivatkozásra az AppSource Power BI-alkalmaz�
    >[!NOTE]
    >Ha olyan sablonalkalmazásokat szeretne telepíteni, amelyek nem találhatók az AppSource-on, rendszergazdai engedélyre lesz szüksége. Részletekért tekintse meg a Power BI [felügyeleti portálján a sablonalkalmazás beállításait](service-admin-portal.md#template-apps-settings).
 
-## <a name="update-and-distribute-the-app"></a>Az alkalmazás frissítése és terjesztése
+## <a name="customize-and-publish-the-app"></a>Az alkalmazás testreszabása és közzététele
 
 Miután frissítette az alkalmazást a cége számára, készen áll a közzétételére. A lépések ugyanazok, mint bármely más alkalmazás közzétételekor.
 
@@ -94,7 +94,7 @@ Miután frissítette az alkalmazást a cége számára, készen áll a közzét�
 
    ![Alkalmazás leírásának és színének beállítása](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
 
-3. A **Tartalom** területen kiválaszthatja a kezdőlapot, amely lehet az irányítópult vagy a jelentést.
+3. **Navigáció** nézetben használhatja alkalmazásához az új navigációszerkesztőt, vagy megadhatja kezdőlapként az irányítópultot vagy a jelentést. Részletes leírást a [Navigációs felület megtervezése](service-create-distribute-apps.md#design-the-navigation-experience) című cikkben talál.
 
    ![Alkalmazás kezdőlapjának beállítása](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
 
@@ -106,14 +106,31 @@ Miután frissítette az alkalmazást a cége számára, készen áll a közzét�
 
 6. Miután sikeresen közzétette, lemásolhatja a hivatkozást, és megoszthatja bárkivel, aki számára hozzáférést biztosított. Ha megosztotta velük, akkor a hivatkozást az AppSource **Saját szervezet** lapján is láthatják.
 
-## <a name="next-steps"></a>Következő lépések 
+## <a name="update-a-template-app"></a>Sablonalkalmazás frissítése
+
+A sablonalkalmazások készítői az AppSource-on vagy közvetlen hivatkozással bocsáthatják ki a sablonalkalmazások új verzióit. Ez után Ön az alkalmazás újratelepítésekor frissítheti a sablonalkalmazást ugyanazzal vagy egy újabb verzióval.
+
+  >[!NOTE]
+  >Egy új verzió telepítése a jelentéseken és irányítópultokon végzett összes módosítást felülírja. Ha meg szeretné tartani a módosított jelentéseket és irányítópultokat, telepítés előtt más néven és más helyre mentheti azokat.
+
+- **Meglévő verzió felülírása:** Felülírja a meglévő munkaterületet a sablonalkalmazás frissített verziójával.
+
+   ![Sablonalkalmazás frissítése](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+
+- **Telepítés új munkaterületre:** A munkaterület és az alkalmazás új verzióját telepíti, amelyet újra kell konfigurálni
+
+### <a name="overwrite-behavior"></a>Felülírási viselkedés
+
+* A felülírás nem az alkalmazáson, hanem a *munkaterületen* belüli jelentéseket, irányítópultokat és adathalmazokat módosítja. A felülírás nem változtatja meg az alkalmazásbeli navigációt, beállításokat és engedélyeket.
+* A munkaterület frissítése után az *alkalmazás frissítése* is szükséges a munkaterületen történt változásoknak a vállalati alkalmazásban való érvényesítéséhez.
+* A felülírás megtartja a konfigurált paramétereket és a hitelesítést. A frissítés után automatikus adathalmaz-frissítés indul el. Ez alatt a vállalati alkalmazásban, a jelentésekben és az irányítópultokon a *mintaadatok* jelennek meg.
+  ![Mintaadatok](media/service-template-apps-install-distribute/power-bi-sample-data.png)
+* A felülírás mindig mintaadatokat nyújt a frissítés befejezéséig. Ha a sablonalkalmazás készítője módosította az adathalmazt vagy a paramétereket, akkor a munkaterület és az alkalmazás felhasználói továbbra is a *mintaadatokat* létják a felületen.
+* A felülírás sohasem törli a munkaterülethez adott *új* jelentéseket vagy irányítópultokat. Az eredeti jelentéseket és irányítópultokat írja felül az eredeti készítő által végzett módosításokkal.
+
+>[!IMPORTANT]
+>Felülírás után ne feledkezzen meg [az alkalmazás frissítéséről](#customize-and-publish-the-app), hogy a jelentések és irányítópultok módosításai a vállalati alkalmazás felhasználói számára is megjelenjenek.
+
+## <a name="next-steps"></a>Következő lépések
 
 [Munkaterületek létrehozása a munkatársakkal a Power BI-ban](service-create-workspaces.md)
-
-
-
-
-
-￼ 
-
- 

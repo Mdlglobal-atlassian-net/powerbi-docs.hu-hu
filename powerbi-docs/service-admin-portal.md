@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/20/2019
+ms.date: 09/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 5551247307e750624006de71a3c8652376b73fcf
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: f472ee821d0ccf3bbe8e47697f934b91668cd16d
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175264"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305903"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -522,6 +522,15 @@ A Power BI-jal használt adatok alapértelmezés szerint a Power BI által bizto
 Rendszergazdaként megtekintheti a bérlőjében meglévő munkaterületeket. Rendezheti és szűrheti a munkaterületek listáját, és minden munkaterület adtait megjelenítheti. A táblázat oszlopai a munkaterületek a [Power BI felügyeleti Rest API](/rest/api/power-bi/admin) által visszaadott tulajdonságainak felelnek meg. A személyes munkaterületek típusa **PersonalGroup**, a klasszikus munkaterületeké **Group**, az új felületű munkaterületek pedig **Workspace** típusúak. További információk: [Új munkaterületek létrehozása a Power BI-ban](service-create-the-new-workspaces.md).
 
 ![Munkaterületek listája](media/service-admin-portal/workspaces-list.png)
+
+A **Munkaterületek** lapon megtekintheti az egyes munkaterületek *állapotát*. Az alábbi táblázat részletesebben is ismerteti ezen állapotok jelentését.
+
+|Állam  |Leírás  |
+|---------|---------|
+| Aktív | Normál munkaterület. Nem árul el semmit a felhasználásról vagy a tartalomról, csak annyit, hogy maga a munkaterület „normális”. |
+| Árva | Rendszergazda-jogú felhasználó nélküli munkaterület. |
+| Törölve | Törölt munkaterület. Elég metaadatot tartunk meg ahhoz, hogy a munkaterületet szükség esetén helyreállítsa. |
+| Eltávolítás folyamatban | A munkaterület törlése folyamatban van, de még nem szűnt meg. A felhasználók törölhetik saját munkaterületeiket, először Eltávolítás folyamatban, majd végül Törölve állapotba léptetve azokat. |
 
 ## <a name="custom-branding"></a>Egyéni védjegyzés
 

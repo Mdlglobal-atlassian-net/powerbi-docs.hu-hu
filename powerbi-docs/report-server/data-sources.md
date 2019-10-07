@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: edda72ab1c9c9901bf71b360d3773b5e8da0a095
-ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
+ms.openlocfilehash: 9b7f3adfc7702dee36c43308b227baf72328935a
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71401825"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71945831"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>A Power BI-jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón
 A Power Bi-jelentések számos adatforráshoz csatlakozhatnak. Az adatok használatának módjától függően eltérő adatforrások érhetők el. Az adatok importálhatók, vagy közvetlenül DirectQuery- vagy élő SQL Server Analysis Services-kapcsolattal lehet lekérdezni azokat.
@@ -157,7 +157,7 @@ A Power BI jelentéskészítő kiszolgáló nem támogatja az OAuth-alapú hites
 | SharePoint Online-lista |Nem |Nem |Nem |Nem |
 | Snowflake |Nem |Nem |Nem |Nem |
 | Sybase-adatbázis |Nem |Nem |Igen |Igen |
-| Teradata-adatbázis |Nem |Nem |Igen |Igen |
+| Teradata |Nem |Nem |Igen |Igen |
 | appFigures (bétaverzió) |Nem |Nem |Nem |Nem |
 | Azure Analysis Services-adatbázis (bétaverzió) |Nem |Nem |Nem |Nem |
 | Azure Cosmos DB (bétaverzió) |Nem |Nem |Nem |Nem |
@@ -204,7 +204,7 @@ A Power BI jelentéskészítő kiszolgáló nem támogatja az OAuth-alapú hites
 | Oracle Database |Nem |Nem |Igen |Igen |Igen |
 | SAP Business Warehouse-kiszolgáló |Nem |Nem |Igen |Nem |Nem |
 | SAP HANA-adatbázis |Nem |Nem |Igen |Igen |Nem |
-| Teradata-adatbázis |Nem |Nem |Igen |Igen |Igen |
+| Teradata |Nem |Nem |Igen |Igen |Igen |
 
 
 ## <a name="next-steps"></a>Következő lépések

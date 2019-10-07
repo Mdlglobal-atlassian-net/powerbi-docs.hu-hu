@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 61fc821e63889951aefd0ef815f885ffa8a880cf
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 2c17378c14ef084ad6632e52df2a801832b311d9
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994827"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715181"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Jelentés letöltése a Power BI szolgáltatásból Power BI Desktop-fájlba (Előzetes verzió)
 A Power BI Desktopban közzétehet egy jelentést ( *.pbix*-fájlt) a helyi számítógépről a Power BI szolgáltatásban. A Power BI-jelentések az ellenkező irányban is működnek: Letöltheti őket a Power BI szolgáltatásból a Power BI Desktopba. A Power BI-jelentések kiterjesztése mindkét esetben .pbix.
@@ -26,7 +26,7 @@ Néhány korlátozást és szempontot figyelembe kell venni – ezekről a cikk 
 
 ## <a name="download-the-report-as-a-pbix-file"></a>Jelentés letöltése .pbix-fájlként
 
-Csak a [Power BI Desktop használatával létrehozott](guided-learning/publishingandsharing.yml?tutorial-step=2), 2016. november 23. utáni – és azóta frissített – jelentéseket töltheti le. Ha a jelentést korábban hozták létre, a Power BI szolgáltatás **Jelentés letöltése** menüpontja halványítva jelenik meg.
+Csak a [Power BI Desktop használatával létrehozott](/learn/modules/publish-share-power-bi/2-publish-reports), 2016. november 23. utáni – és azóta frissített – jelentéseket töltheti le. Ha a jelentést korábban hozták létre, a Power BI szolgáltatás **Jelentés letöltése** menüpontja halványítva jelenik meg.
 
 A .pbix-fájl letöltéséhez kövesse az alábbi lépéseket:
 

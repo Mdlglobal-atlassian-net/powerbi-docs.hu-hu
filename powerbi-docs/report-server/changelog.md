@@ -9,18 +9,43 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 0aa1d964485297c5e0dae3f4a309cc0dd15b92b2
-ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
+ms.openlocfilehash: 71c2135092b0b9bb2b02f4559d40c0b10814a51f
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "68940903"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325729"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
 Ez a változásnapló a Power BI jelentéskészítő kiszolgálóra vonatkozik, és minden kiadott buildhez felsorolja az új elemeket és hibajavításokat.
 
 Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonságai](whats-new.md) című cikkből tájékozódhat. 
+
+## <a name="september-2019"></a>2019. szeptember
+
+- **Power BI jelentéskészítő kiszolgáló**          
+    - *Verzió: 1.6.7206.38019 (Build 15.0.1102.597), Kiadás dátuma: 2019. szeptember 26.*
+        - Biztonsági frissítések
+        - Hibajavítások
+           - Lapszámozott jelentések
+             - Az IE és az Edge használatakor fellépő akadálymentességi problémák javítása.
+             - A SAP HANA kapcsolattesztelés során fellépő hibáinak javítása.
+             - E-mail-címlisták megadásakor tapasztalt problémák javítása.
+             - Hibajavítás DirectQuery-adatforrást és integrált hitelesítést használó Power BI-jelentésekhez.
+             - Hibajavítás többoldalas jelentések szűrési paraméterekkel való megjelenítéséhez a pillanatképek engedélyezése mellett.
+             - Tárolt eljárások kétszeres végrehajtásának javítása a jelentés futtatása során.
+             - Javítás arra a hibára, hogy az alapértelmezett szolgáltatásfiók SQL Server bejelentkezési engedélyeket kapott, ha egyéni szolgáltatásfiókot konfiguráltak a Power BI jelentéskészítő kiszolgáló futtatására.
+             - A japán időzóna frissítésekor fellépő modellhozzáférési hiba javítása.
+             - Javítás az elavult modellekkel kapcsolatos hibára, amely akkor lép fel, ha a jelentés új verzióját frissítés közben töltik fel.
+             - Javítás a „&” karaktert tartalmazó paraméterértékekhez.
+         - Programozhatóság
+             - Frissített webes API: /PowerBIReports({Id})/DataSources (PATCH) a kapcsolati sztring frissítéseinek engedélyezéséhez.
+         
+- **Power BI Desktop (a Power BI jelentéskészítő kiszolgálóra optimalizálva)**
+    - *Verzió: 2.73.5586.821 (2019. szeptember), Kiadás dátuma: 2019. szeptember 26.* (új build és verzió)
+    - A Power BI jelentéskészítő kiszolgálóval (2019. szeptember) való kapcsolathoz szükséges módosításokat tartalmaz
+
 
 ## <a name="may-2019"></a>2019. május
 

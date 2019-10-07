@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0592cb7ef076f8094aca565d955cc238b2181068
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: cd0696b44e285119193059304c89cfa04c755771
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560939"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71409367"
 ---
 ## <a name="faq"></a>Gyakori kérdések
 **Kérdés:** Mi történik, ha korábban már hoztam létre szerepköröket és szabályokat egy adatkészlethez a Power BI szolgáltatásban? Akkor is működnek, ha nem teszek semmit?  
@@ -19,3 +19,5 @@ ms.locfileid: "69560939"
 **Kérdés:** Lehetővé teszi az RLS, hogy elrejtsem a részletes adatokat, de hozzáférést nyújtsak a vizualizációkban összegzett adatokhoz?  
 **Válasz:** Nem. Egy-egy adatsort biztosíthat, de a felhasználók mindig látják a részleteket vagy az összegzett adatokat.
 
+**Kérdés:** Az adatforrásomban már vannak definiált biztonsági szerepkörök (például SQL Server-szerepkörök vagy SAP BW-szerepkörök). Mi az összefüggés ezek és a sorszintű biztonság között?  
+**Válasz:** A válasz attól függ, hogy importálja az adatokat, vagy DirectQueryt használ. Ha a Power BI-adathalmazba importálja az adatokat, akkor az adatforrásbeli biztonsági szerepkörök nem lesznek használva. Ilyen esetben sorszintű biztonság definiálásával kell érvényesítenie a Power BI-ban csatlakozó felhasználókra vonatkozó biztonsági szabályokat. Ha DirectQueryt használ, akkor az adatforrásbeli biztonsági szabályok lesznek érvényesek. Amikor egy felhasználó jelentést nyit meg, a Power BI lekérdezést küld a mögöttes adatforráshoz, amely a felhasználó hitelesítő adatai alapján érvényesíti az adatokra vonatkozó biztonsági szabályokat.

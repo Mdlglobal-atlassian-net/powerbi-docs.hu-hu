@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/06/2019
-ms.openlocfilehash: 9e4d5285b48739e9f16fbe503736c20cb5524e5d
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.date: 09/24/2019
+ms.openlocfilehash: ca090f7251349c9ed4768b49f1372c14e68f0068
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985730"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305678"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Mik a lapszámozott jelentések a Power BI Premiumban?
 
@@ -36,14 +36,13 @@ A lapszámozott jelentésekhez saját eszköz tartozik: a Power BI Jelentéskés
 
 Egy lapszámozott jelentés több különböző adatforrással is rendelkezhet. A Power BI-jelentésekkel ellentétben nem tartozik hozzá mögöttes adatmodell. A lapszámozott jelentések első Power BI-os megjelenésekor Ön beágyazott adatforrásokat és adathalmazokat hoz létre magában a jelentésben. Egyelőre nem használhat megosztott adatforrásokat vagy megosztott adatkészleteket. A jelentéseket a Jelentéskészítőben, a helyi számítógépen hozza létre. Ha egy jelentés helyszíni adatokhoz kapcsolódik, a jelentés a Power BI szolgáltatásba való feltöltése után létre kell hoznia egy átjárót, majd átirányítani az adatkapcsolatot. Jelenleg a következő adatforrásokhoz csatlakozhat:
 
-- Azure SQL Database és Data Warehouse
+- Azure SQL Database és Data Warehouse (alapszintű és oAuth-hitelesítéssel)
 - Azure Analysis Services (SSO-val)
 - SQL Server egy átjárón keresztül
 - SQL Server Analysis Services egy átjárón keresztül
-- Power BI Premium-adatkészletek
+- Power BI-adathalmazok
 - Oracle
 - Teradata
-- További adatforrások a hozzáadás után
 
 ## <a name="design-your-report"></a>A jelentés megtervezése  
 
@@ -79,10 +78,10 @@ További információ: [Feliratkozás és mások feliratkoztatása lapszámozott
 Íme néhány funkció, amely nem támogatott az első megjelenéskor:
 
 - Jelentésoldalak és vizualizációk rögzítése a Power BI irányítópultjain. Továbbra is rögzíthet vizualizációkat Power BI-irányítópultokra helyszíni lapszámozott jelentésből egy Power BI, vagy Reporting Services jelentéskészítő kiszolgálón. További információ: [Reporting Services-elemek rögzítése Power BI-irányítópultokra](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
-- Interaktív funkciók, például dokumentumtérképek és Megjelenítés/elrejtés gombok.
-- Segédjelentések és részletezések.
+- Dokumentumtérképek.
+- Segédjelentések és részletezések.  A részletezés lehetőségének biztosításához azonban érdemes lehet URL-paramétereket használni.
 - Megosztott adatforrások és a megosztott adathalmazok.
-- Power BI-jelentések vizualizációi.
+
  
 ## <a name="next-steps"></a>Következő lépések
 

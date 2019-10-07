@@ -7,37 +7,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f43bb105f7e17ce453e96c6eff875349efd45cb2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 8a5b4c7cb484b296ccab395e18eb2b0089ffd5c7
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239641"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327828"
 ---
 # <a name="combine-files-binaries-in-power-bi-desktop"></a>Fájlok (bináris fájlok) egyesítése a Power BI Desktopban
-Az adatok a **Power BI Desktopba** való importálásának egy igen hatékony módja, ha az azonos sémájú fájlokat egyetlen logikai táblában egyesíti. A **Power BI Desktop** 2016 novemberi (és azt követő) kiadásaiban ez a kényelmes és népszerű megközelítés még kényelmesebbé és szélesebb körben alkalmazhatóvá vált, amint azt ez a cikk is ismerteti.
+Az adatok a **Power BI Desktopba** való importálásának egy igen hatékony módja, ha az azonos sémájú fájlokat egyetlen logikai táblában egyesíti. Ez a kényelmes és népszerű megközelítés még kényelmesebbé és szélesebb körben alkalmazhatóvá vált, amint azt ez a cikk is ismerteti.
 
 Az egyazon mappában lévő fájlok ötvözéséhez válassza az **Adatok lekérése > Fájl > Mappa** lehetőséget.
 
 ![](media/desktop-combine-binaries/combine-binaries_1.png)
 
-## <a name="previous-combine-files-binaries-behavior"></a>A fájlok (bináris fájlok) egyesítésének korábbi működése
-A **Power BI Desktop** 2016 novemberi kiadását megelőzően ennek a funkciónak **Bináris fájlok egyesítése** volt a neve, és egyesíthetett bizonyos fájltípusokat a **bináris fájlok egyesítése** átalakítással, de az alábbi korlátozásokkal:
 
-* A rendszer az egyes fájlokat az egyetlen táblába való egyesítésüket megelőzően nem alakította át. Így sokszor a fájlok egyesítését követően a szerkesztési folyamat keretében, a sorok szűrésével ki kellett szűrni a *fejlécértékeket*.
-* A **Bináris fájlok egyesítése** átalakítás kizárólag *szöveges* vagy *CSV*-fájlokon volt használható, más támogatott fájlformátumokkal, például Excel-munkafüzetekkel, JSON-fájlokkal és egyéb fájlokkal nem működött.
-
-Az ügyfelek a **bináris fájlok egyesítése** művelet intuitívabb módon való működését kérték, ezért az átalakítást továbbfejlesztettük és átneveztük, az új neve **fájlok egyesítése**.
-
-## <a name="current-combine-files-behavior"></a>A fájlok egyesítésének jelenlegi működése
-A **Power BI Desktop** mostantól hatékonyabban végzi a  **fájlok (bináris fájlok) egyesítését**. A **fájlok egyesítése** a **Lekérdezésszerkesztő** menüszalagján a **Kezdőlapról** vagy magából az oszlopból indítható.
+## <a name="combine-files-behavior"></a>A fájlok egyesítésének működése
+A **(bináris) fájlok egyesítéséhez** a **Lekérdezésszerkesztő** menüszalagján a **Kezdőlapról**, vagy magából az oszlopból is kiválaszthatja a **Fájlok egyesítése** lehetőséget.
 
 ![](media/desktop-combine-binaries/combine-binaries_2a.png)
 
-A **fájlok egyesítése** átalakítás mostantól az alábbiak szerint működik:
+A **fájlok egyesítése** átalakítás az alábbiak szerint működik:
 
 * A **fájlok egyesítése** átalakítás kielemzi az egyes bemeneti fájlokat, és meghatározza a megfelelő fájlformátumot (például: *szövegfájl*, *Excel-munkafüzet* vagy *JSON*-fájl).
 * Az átalakítással kiválaszthat egy adott objektumot az első fájlból, például egy *Excel-munkafüzetből*, amelyet ki szeretne nyerni.
@@ -51,7 +44,11 @@ A **fájlok egyesítése** átalakítás mostantól az alábbiak szerint működ
     
     ![](media/desktop-combine-binaries/combine-binaries_4.png)
 
-A **fájlok egyesítésének** új működése révén könnyedén egyesítheti az egy adott mappában lévő összes fájlt, amennyiben egyazon fájltípussal és szerkezettel (azaz ugyanazokkal az oszlopokkal) rendelkeznek.
+> [!NOTE]
+> A Excel-munkafüzetben végzett kijelölés befolyásolja a bináris fájlok egyesítésének folyamatát. Kijelölhet például egy munkalapot, hogy csak azt a munkalapot egyesítse, vagy a gyökeret, hogy a teljes fájl egyesítve legyen. Egy mappa kijelölésével a mappában található fájlok egyesíthetők. 
+
+
+A **fájlok egyesítésének** működése révén könnyedén egyesítheti az egy adott mappában lévő összes fájlt, amennyiben egyazon fájltípussal és szerkezettel (azaz ugyanazokkal az oszlopokkal) rendelkeznek.
 
 Emellett további átalakítási és kinyerési műveleteket is könnyen alkalmazhat az automatikusan létrehozott *példalekérdezés* módosításával anélkül, hogy módosítania kellene a *függvénylekérdezés* lépéseit, vagy újakat kellene létrehoznia. A *példalekérdezés* bármilyen módosítása automatikusan létrejön a vele összekapcsolt *függvénylekérdezésben*.
 

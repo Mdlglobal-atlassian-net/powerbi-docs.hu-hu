@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e77e61d00ac555c907a6d87ab0ffdeb8e21a5bd8
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: bf69b2e4c25597eba980137e5ef8b2feb2f4d103
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841311"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327699"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Tárolási mód a Power BI Desktopban
 
 A Microsoft Power BI Desktopban megadható a táblák *tárolási módja*. A *tárolási mód* használatával szabályozható, hogy a Power BI Desktop gyorsítótárazza-e a memóriában a táblák adatait a jelentésekhez. 
 
-![Tárolási mód a Power BI Desktopban](media/desktop-storage-mode/storage-mode_01.png)
+![Tárolási mód a Power BI Desktopban](media/desktop-storage-mode/storage-mode-01.png)
 
 A tárolási mód beállítása több előnnyel is jár. Az egyes táblák tárolási módja külön adható meg a modellben. Ezzel a művelettel egyetlen adathalmazt engedélyez, ami az alábbi előnyökkel jár:
 
@@ -48,13 +48,10 @@ A Power BI Desktop tárolási mód beállítása három kapcsolódó funkció eg
 
 ## <a name="use-the-storage-mode-property"></a>A tárolási mód tulajdonság használata
 
-A tárolási mód egy tulajdonság, amely a modell minden táblájához beállítható. A tárolási mód beállításához a **Mezők** panelen kattintson a jobb gombbal a táblára, amelynek a tulajdonságait be szeretné állítani, majd válassza a **Tulajdonságok** lehetőséget.
+A tárolási mód egy tulajdonság, amely a modell minden táblájához beállítható. A tárolási mód beállításához, vagy az aktuális beállítások megtekintéséhez jelölje ki a **Modell** nézetben azt a táblát, amelynek tulajdonságait megtekinteni vagy módosítani szeretné, majd válassza a **Tulajdonságok** panelt, bontsa ki a **Speciális** szakaszt, majd bontsa ki a **Tárolási mód** legördülő listát.
 
-![A Tulajdonságok parancs a helyi menüben](media/desktop-storage-mode/storage-mode_02.png)
+![A Tulajdonságok parancs a helyi menüben](media/desktop-storage-mode/storage-mode-02.png)
 
-Az aktuális tulajdonság a tábla **Mezőtulajdonságok** paneljén található **Tárolási mód** legördülő listában jelenik meg. Itt megtekintheti az aktuális tárolási módot, és módosíthatja is.
-
-![Tábla tárolási módjának beállítása](media/desktop-storage-mode/storage-mode_03.png)
 
 A tárolási mód értéke háromféle lehet:
 
@@ -77,11 +74,11 @@ A Kettős táblákra a DirectQuery-táblákéval azonos funkcionális megkötés
 ## <a name="propagation-of-dual"></a>Kettős mód propagálása
 Tekintsük meg az alábbi egyszerű modellt, amelyben minden tábla egyetlen, az Importálást és a DirectQuery-t is támogató forrásból származik.
 
-![Példa Kapcsolat nézete a tárolási mód bemutatásához](media/desktop-storage-mode/storage-mode_04.png)
+![Példa Kapcsolat nézete a tárolási mód bemutatásához](media/desktop-storage-mode/storage-mode-04.png)
 
 Tegyük fel, hogy kezdetben a modell minden táblája DirectQuery beállítású. Ha a *SurveyResponse* tábla **tárolási módját** Importálás értékűre állítjuk, az alábbi figyelmeztetési ablak jelenik meg:
 
-![Tárolási mód figyelmeztetési ablaka](media/desktop-storage-mode/storage-mode_05.png)
+![Tárolási mód figyelmeztetési ablaka](media/desktop-storage-mode/storage-mode-05.png)
 
 A dimenziótáblák (*Customer*, *Geography* és *Date*) beállíthatók **Kettős** típusúra, hogy az adathalmazban csökkenjen a gyenge kapcsolatok száma, és javuljon a teljesítmény. Ahol az összekapcsolás logikája nem küldhető le a forrásrendszerekhez, ott a gyenge kapcsolatokban általában legalább egy DirectQuery-tábla is szerepel. Ennek elkerülésében segít az a tény, hogy a **Kettős** típusú táblák DirectQuery és Importálás típusú táblaként is viselkedhetnek.
 
@@ -123,15 +120,15 @@ A **Kettős** módú táblákra hivatkozó lekérdezések lehetőség szerint a 
 
 A korábbi példát folytatva a következő lekérdezés csak a **Kettős** módban lévő *Date* tábla egyik oszlopára hivatkozik. Így tehát a lekérdezésnek a gyorsítótárhoz kell fordulnia.
 
-![Szkript a tárolási mód diagnosztizálásához](media/desktop-storage-mode/storage-mode_06.png)
+![Szkript a tárolási mód diagnosztizálásához](media/desktop-storage-mode/storage-mode-06.png)
 
 A következő lekérdezés csak a **DirectQuery** módban lévő *Sales* tábla egyik oszlopára hivatkozik. Így tehát *nem* fordulhat a gyorsítótárhoz.
 
-![Szkript a tárolási mód diagnosztizálásához](media/desktop-storage-mode/storage-mode_07.png)
+![Szkript a tárolási mód diagnosztizálásához](media/desktop-storage-mode/storage-mode-07.png)
 
 A következő lekérdezés érdekessége, hogy mindkét oszlop szerepel benne. Ez a lekérdezés elkerüli a gyorsítótárat. Számítani lehetett volna arra, hogy a *CalendarYear* értékeket a gyorsítótárból, a *SalesAmount* értékeket pedig a forrásból kéri le, majd kombinálja az eredményeket, ez azonban kevésbé volna hatékony, mint a forrásrendszerhez továbbítani a SUM/GROUP BY műveletet. A műveletet a forrásnak leküldve a visszaadott sorok száma valószínűleg sokkal kisebb lesz. 
 
-![Szkript a tárolási mód diagnosztizálásához](media/desktop-storage-mode/storage-mode_08.png)
+![Szkript a tárolási mód diagnosztizálásához](media/desktop-storage-mode/storage-mode-08.png)
 
 > [!NOTE]
 > Ez a viselkedés más, mint a [több a többhöz kapcsolatok viselkedése a Power BI Desktopban](desktop-many-to-many-relationships.md), amikor gyorsítótárazott és nem gyorsítótárazott táblák kombinálásáról van szó.
@@ -145,7 +142,7 @@ A *Kettős* tárolási mód teljesítmény-optimalizálás. Csak úgy szabad has
 ## <a name="data-view"></a>Adatnézet
 Ha az adathalmazban legalább egy tábla **Importálás** vagy **Kettős** tárolási módra van beállítva, akkor megjelenik az **Adatnézet** lap.
 
-![Adatnézet a Power BI Desktopban](media/desktop-storage-mode/storage-mode_09.png)
+![Adatnézet a Power BI Desktopban](media/desktop-storage-mode/storage-mode-03.png)
 
 Az **Adatnézetben** kijelölt **Kettős** és **Importálás** módú táblákhoz megjelennek a gyorsítótárazott adatok. A DirectQuery-táblák adatai nem láthatók, és megjelenik egy üzenet, amely szerint a DirectQuery-táblák nem jeleníthetők meg.
 

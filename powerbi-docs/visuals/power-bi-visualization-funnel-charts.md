@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b12b2035d7686667535dfdddba42b4b8ca014d96
-ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.openlocfilehash: ac9ffa4d1186a8ca6d4e2d55da4311bbce55903e
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161135"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194685"
 ---
 # <a name="funnel-charts"></a>Tölcsérdiagramok
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 A tölcsérdiagramok segítségével vizualizálhatja az egymást követő összekapcsolt fázisokból álló lineáris folyamatokat. Ilyen például egy értékesítési tölcsér, amelyen keresztül az ügyfelek nyomon követhetőek az egyes fázisokban: Érdeklődő \> Minősített érdeklődő \> Lehetséges ügyfél \> Szerződés \> Zárás.  A tölcsér alakja egyetlen pillantásra megmutatja a lekövetett folyamat állapotát.
 
 A tölcsér minden egyes szakasza a teljes mennyiséghez viszonyított százalékos arányt mutatja. Így az esetek többségében a tölcsérdiagram alakja valóban egy tölcsérhez hasonlít – az első szakasz a legszélesebb, majd a rákövetkező szakaszok egyre szűkülnek.  Persze a körte alakú tölcsérek is hasznosak – segítenek azonosítani a problémákat.  Általában véve azonban az első, a „bemeneti” szakasz a legszélesebb.
@@ -39,11 +42,27 @@ A tölcsérdiagram remek választás a következő esetekben:
 ## <a name="working-with-funnel-charts"></a>A tölcsérdiagramok használata
 A tölcsérdiagramok:
 
-* A jelentésekből és a Kérdések és válaszok felületről rögzíthetőek.
 * Rendezhetőek.
 * Támogatják a többszörös használatot.
 * Kiemelhető és keresztszűrhető az egyazon jelentésoldalon lévő más vizualizációkkal.
 * Használható az egyazon jelentésoldalon lévő más vizualizációk kiemelésére és keresztszűrésére.
+   > [!NOTE]
+   > A videóban Will egy tölcsérdiagramot hoz létre az Értékesítési és marketing minta használatával. Ezután a videó alatt látható lépeseket követve próbálkozzon meg a feladattal saját maga is a Lehetőségelemzési minta PBIX-fájl használatával
+   > 
+   > 
+## <a name="prerequisite"></a>Előfeltétel
+
+Ez az oktatóanyag a [Lehetőségelemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
+) használja.
+
+1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
+   
+2. Keresse meg a **Lehetőségelemzési minta PBIX-fájlt**
+
+1. Nyissa meg a **Lehetőségelemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
+
 
 ## <a name="create-a-basic-funnel-chart"></a>Alapszintű tölcsérdiagram létrehozása
 A videóban Will egy tölcsérdiagramot hoz létre az Értékesítési és marketing minta használatával.
@@ -53,13 +72,13 @@ A videóban Will egy tölcsérdiagramot hoz létre az Értékesítési és marke
 
 Most hozzon létre egy saját tölcsérdiagramot az egyes értékesítési fázisokban lévő lehetőségek megjelenítéséhez.
 
-Ezek az utasítások a Lehetőségelemzési minta használatát feltételezik. Annak érdekében, hogy követni tudja a lépéseket, [töltse le a mintát](../sample-datasets.md), mely a Power BI szolgáltatásban (az app.powerbi.com webhelyen) vagy a Power BI Desktopban használható.   
-
-1. Kezdjen egy üres jelentésoldalon, és válassza a **SalesStage** \> **Sales Stage** (Értékesítési fázis) mezőt. Ha a Power BI szolgáltatást használja, mindenképpen a [Szerkesztési nézetében](../service-interact-with-a-report-in-editing-view.md) nyissa meg a jelentést.
+1. Kezdjen egy üres jelentésoldalon, és válassza a **SalesStage** \> **Sales Stage** (Értékesítési fázis) mezőt.
    
-    ![válassza az Értékesítési fázis lehetőséget](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
-2. [Konvertálja a diagramot](power-bi-report-change-visualization-type.md) egy tölcsérré. Láthatja, hogy a **Sales Stage** mező a **Csoport** területen található. 
-3. A **Mezők** ablaktáblán válassza a **Fact** \> **Opportunity Count** lehetőséget.
+    ![válassza az Értékesítési fázis lehetőséget](media/power-bi-visualization-funnel-charts/funnelselectfield-new.png)
+
+1. Válassza a tölcsér ikont ![tölcsérdiagram ikon](media/power-bi-visualization-funnel-charts/power-bi-funnel-icon.png) az oszlopdiagram tölcsérdiagrammá alakításához.
+
+2. A **Mezők** ablaktáblán válassza a **Fact** \> **Opportunity Count** lehetőséget.
    
     ![tölcsérdiagram létrehozása](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. A mutatót az egyes sávok fölé húzva a rendszer rengeteg információt jelenít meg.
@@ -69,8 +88,8 @@ Ezek az utasítások a Lehetőségelemzési minta használatát feltételezik. A
    * Átfogó konverziós ráta (az érdeklődő számának százalékában kifejezve) 
    * Fázisról fázisra az előző fázishoz viszonyított (ebben az esetben ez a Proposal Stage/Solution Stage) százalékos arány (a Csökkenés mértéke)
      
-     ![a Javaslat sáv részletei](media/power-bi-visualization-funnel-charts/funnelhover_new.png)
-5. [Adja hozzá a tölcsért irányítópult-csempeként](../service-dashboard-tiles.md). 
+     ![a Javaslat sáv részletei](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
+
 6. [Mentse a jelentést](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Kiemelés és keresztszűrés
@@ -82,15 +101,6 @@ A tölcsér egyes sávjainak kiemelésével a rendszer keresztszűri a jelentés
    
    ![a vizualizáció-interakciókat bemutató rövid videó](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
 2. A vizualizációk keresztkiemelési és keresztszűrési beállításaival kapcsolatban lásd: [A Power BI vizualizációk interakciója](../service-reports-visual-interactions.md)
-
-## <a name="create-a-funnel-chart-using-qa"></a>Tölcsérdiagram létrehozása a Q&A használatával
-Nyissa meg a Lehetőségelemzési minta irányítópultját vagy bármely más olyan irányítópultot, amelyen legalább egy vizualizáció rögzítve van a Lehetőségelemzési minta adathalmazából.  Amikor beír egy kérdést a Kérdések és válaszok felületen, a Power BI a kijelölt irányítópulttal társított (az iránytópulton rögzített csempékkel rendelkező) összes adatkészletben keresi a válaszokat. További információkért lásd: [Power BI – Alapfogalmak](../service-basic-concepts.md).
-
-1. A Lehetőségelemzési minta irányítópultján kezdje el beírni a kérdését a Q&A-kérdésmezőbe.
-   
-   ![kérdésmező és tölcsér](media/power-bi-visualization-funnel-charts/power-bi-qna.png)
-   
-2. Mindenképp írja be az „as funnel” kifejezést is, hogy a Power BI tudja, milyen típusú vizualizációt szeretne.
 
 ## <a name="next-steps"></a>Következő lépések
 

@@ -1,37 +1,37 @@
 ---
-title: Egyéni R-vizualizációk a Power BI-ban
-description: Egyéni R-vizualizációk a Power BI-ban
-author: sranins
-ms.author: rasala
-manager: kfile
+title: R-alapú Power BI-vizualizációk a Power BI-ban
+description: R-alapú Power BI-vizualizációk a Power BI-ban
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: d79164ea5b66fe003f913742436a817d76d798e0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b5f8677b3207122831e3d2cae6c07aa5bbcb9983
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61278650"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194610"
 ---
-# <a name="use-r-powered-custom-visuals-in-power-bi"></a>Egyéni R-vizualizációk a Power BI-ban
+# <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>R-alapú Power BI-vizualizációk a Power BI-ban
 
-A **Power BI Desktopban** és a **Power BI szolgáltatásban** az R ismerete és R-parancsfájlok használata nélkül is lehetősége van egyéni R-vizualizációk használatára. Ez lehetővé teszi az R-vizualizációk és R-szkriptek elemzési és vizuális sokoldalúságának kihasználását anélkül, hogy meg kellene tanulnia az R programozási nyelvet, vagy bármit is programoznia kellene.
+A **Power BI Desktopban** és a **Power BI szolgáltatásban** az R ismerete és R-parancsfájlok használata nélkül is lehetősége van R-alapú Power BI-vizualizációk használatára. Ez lehetővé teszi az R-vizualizációk és R-szkriptek elemzési és vizuális sokoldalúságának kihasználását anélkül, hogy meg kellene tanulnia az R programozási nyelvet, vagy bármit is programoznia kellene.
 
-Az egyéni R-vizualizációk használatához először ki kell választania és le kell töltenie a használni kívánt egyéni vizualizációt a Power BI **egyéni vizualizációinak** [**AppSource-** ](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) katalógusából.
+Az R-alapú Power BI-vizualizációk használatához először ki kell választania és le kell töltenie a használni kívánt egyéni vizualizációt a **Power BI-vizualizációk** [**AppSource-** ](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) katalógusából a Power BI-ba.
 
 ![R visual 1a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_1a.png)
 
 Az alábbi szakaszok az R-vizualizációk **Power BI Desktopban** történő kiválasztását, betöltését és használatát ismertetik.
 
-## <a name="use-r-custom-visuals"></a>Egyéni R-vizualizációk használata
+## <a name="use-r-power-bi-visuals"></a>R-alapú Power BI-vizualizációk használata
 
-Az egyéni R-vizualizációk használatához le kell töltenie az egyes vizualizációkat az **egyéni vizualizációk** gyűjteményéből. Ezután a többi vizualizációtípushoz hasonlóan használhatja azokat a **Power BI Desktopban**. Az egyéni vizualizációk beszerzésének két módja van – letöltheti őket az **AppSource** webhelyről, vagy kikeresheti és beszerezheti őket a **Power BI Desktopon** belül. 
+Az R-alapú Power BI-vizualizációk használatához le kell töltenie az egyes vizualizációkat az **Power BI-vizualizációk** gyűjteményéből. Ezután a többi vizualizációtípushoz hasonlóan használhatja azokat a **Power BI Desktopban**. A Power BI-vizualizációk beszerzésének két módja van – letöltheti őket az **AppSource** webhelyről, vagy kikeresheti és beszerezheti őket a **Power BI Desktopon** belül. 
 
-### <a name="get-custom-visuals-from-appsource"></a>Egyéni vizualizációk beszerzése az AppSource-ból
+### <a name="get-power-bi-visuals-from-appsource"></a>Power BI-vizualizációk beszerzése az AppSource-ból
 
 A vizualizációk az **AppSource** webhelyről történő kikeresésének és kiválasztásának lépései a következők:
 
@@ -50,7 +50,7 @@ A vizualizációk az **AppSource** webhelyről történő kikeresésének és ki
 
    ![R visual 3a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_3a.png)
 
-   Nem kell telepíteni az R-t ahhoz, hogy egyéni R-vizualizációkat használhasson a **Power BI szolgáltatásban**. Ha viszont a **Power BI Desktopban** szeretne egyéni R-vizualizációkat használni, telepítenie *kell* az R-t a helyi számítógépen. Az R a következő helyekről tölthető le:
+   Nem kell telepíteni az R-t ahhoz, hogy R-alapú Power BI-vizualizációkat használhasson a **Power BI szolgáltatásban**. Ha viszont a **Power BI Desktopban** szeretne R-alapú Power BI-vizualizációkat használni, telepítenie *kell* az R-t a helyi számítógépen. Az R a következő helyekről tölthető le:
 
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
@@ -79,25 +79,25 @@ A vizualizációk az **AppSource** webhelyről történő kikeresésének és ki
 
     Érdemes gyakran ellenőrizni a gyűjteményt, mert folyamatosan új vizualizációkkal bővül.
 
-### <a name="get-custom-visuals-from-within-power-bi-desktop"></a>Egyéni vizualizációk beszerzése a **Power BI Desktopon** belül
+### <a name="get-power-bi-visuals-from-within-power-bi-desktop"></a>Power BI-vizualizációk beszerzése a **Power BI Desktopon** belül
 
-1. A **Power BI Desktopon** belül is beszerezhet egyéni vizualizációkat. A **Power BI Desktopban** kattintson a **Vizualizációk** ablaktáblán található, három pontot ábrázoló gombra (…), és válassza az **Importálás a piactérről** lehetőséget.
+1. A **Power BI Desktopon** belül is beszerezhet Power BI-vizualizációkat. A **Power BI Desktopban** kattintson a **Vizualizációk** ablaktáblán található, három pontot ábrázoló gombra (…), és válassza az **Importálás a piactérről** lehetőséget.
 
    ![R visual 4a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 
-2. Ekkor megjelenik a **Power BI-vizualizációk** párbeszédpanel, ahol görgetéssel áttekintheti az elérhető egyéni vizualizációkat, és kiválaszthatja az Önnek tetszőt. Kereshet név alapján, kiválaszthat egy kategóriát, vagy csak átgörgetheti az elérhető vizualizációk listáját. Ha végzett, kattintson a **Hozzáadás** gombra az egyéni vizualizáció a **Power BI Desktophoz** történő hozzáadásához.
+2. Ekkor megjelenik a **Power BI-vizualizációk** párbeszédpanel, ahol görgetéssel áttekintheti az elérhető Power BI-vizualizációkat, és kiválaszthatja az Önnek tetszőt. Kereshet név alapján, kiválaszthat egy kategóriát, vagy csak átgörgetheti az elérhető vizualizációk listáját. Ha végzett, kattintson a **Hozzáadás** gombra az egyéni vizualizáció a **Power BI Desktophoz** történő hozzáadásához.
 
    ![R visual 12](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
 
-## <a name="contribute-r-powered-custom-visuals"></a>Egyéni R-vizualizációk közzététele
+## <a name="contribute-r-powered-power-bi-visuals"></a>R-alapú Power BI-vizualizációk közzététele
 
-Ha saját R-vizualizációkat hoz létre a jelentésekben való használatra, megoszthatja őket a világgal, ha közzéteszi az egyéni vizualizációkat az **egyéni vizualizációk katalógusában**. A közzététel a GitHubon keresztül zajlik, a folyamat leírása pedig az alábbi helyen olvasható:
+Ha saját R-vizualizációkat hoz létre a jelentésekben való használatra, megoszthatja őket a világgal, ha közzéteszi az egyéni vizualizációkat az **Power BI-vizualizációk katalógusában**. A közzététel a GitHubon keresztül zajlik, a folyamat leírása pedig az alábbi helyen olvasható:
 
-* [Közzététel az egyéni R-vizualizációk katalógusában](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
+* [Közzététel az R-alapú Power BI-vizualizációk katalógusában](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
 
-## <a name="troubleshoot-r-powered-custom-visuals"></a>Egyéni R-vizualizációk hibaelhárítása
+## <a name="troubleshoot-r-powered-power-bi-visuals"></a>R-alapú Power BI-vizualizációk hibáinak elhárítása
 
-Az Egyéni R-vizualizációk rendelkeznek bizonyos függőségekkel, amelyeknek teljesülniük kell a vizualizációk megfelelő működése érdekében. Ha az egyéni R-vizualizációk nem futnak vagy töltődnek be megfelelően, a problémát általában az alábbiak egyike okozza:
+Az R-alapú Power BI-vizualizációk rendelkeznek bizonyos függőségekkel, amelyeknek teljesülniük kell a vizualizációk megfelelő működése érdekében. Ha az R-alapú Power BI-vizualizációk nem futnak vagy töltődnek be megfelelően, a problémát általában az alábbiak egyike okozza:
 
 * Hiányzik az R-motor
 * Hibás az R-szkript, amelyen a vizualizáció alapul
@@ -150,7 +150,7 @@ A Power BI csapata aktívan dolgozik az ilyen jellegű problémák megelőzésé
 
 Tekintse meg az alábbi, az R programozási nyelv Power BI-ban történő használatára vonatkozó további információkat.
 
-* [A Power BI egyéni vizualizációinak katalógusa](https://app.powerbi.com/visuals/)
+* [Power BI-vizualizációk katalógusa](https://app.powerbi.com/visuals/)
 * [R-szkriptek futtatása a Power BI Desktopban](desktop-r-scripts.md)
 * [R-vizualizációk létrehozása a Power BI Desktopban](desktop-r-visuals.md)
 * [Külső R IDE környezet használata a Power BI-jal](desktop-r-ide.md)

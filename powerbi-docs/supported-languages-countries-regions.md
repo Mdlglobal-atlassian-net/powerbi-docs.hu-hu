@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 1c4a16d0dbe22a154dacfd296bfedab8acb97e81
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 6e89fa21617add5c3c11ada990f7055d305cebf5
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867127"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256449"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>A Power BI által támogatott nyelvek és országok/régiók
 
@@ -116,14 +116,14 @@ A Power BI a számítógépén érvényben lévő nyelvi beállítások alapján
    A módosítás életbe lépéséhez esetleg be kell zárnia és újra kell indítania a böngészőt.
 
 ## <a name="choose-the-language-or-locale-of-power-bi-desktop"></a>A Power BI nyelvének és területi beállításainak kiválasztása
-A Power BI Desktopot kétféle módon szerezheti be: Letöltheti vagy telepítheti a Windows Áruházból.
+A Power BI Desktopot kétféle módon szerezheti be: Letöltheti önálló telepítőcsomagként, vagy telepítheti a Windows Áruházból.
 
-* Ha [a Power BI Desktopot a Windows Áruházból telepíti](#choose-a-language-for-power-bi-desktop-installed-from-the-windows-store), akkor az minden nyelvet telepít és a Windows alapértelmezett nyelvén jelenik meg.
-* Ha [letölti a Power BI Desktopot](#choose-a-language-when-you-download-power-bi-desktop), akkor Ön választja ki a nyelvet a letöltés során. 
+* Ha a Power BI Desktopot a Windows Áruházból telepíti, akkor az minden nyelvet telepít, és alapértelmezés szerint a Windows alapértelmezett nyelvén jelenik meg.
+* Ha a Power BI Desktopot önálló telepítőként tölti le, Ön választhatja ki az alapértelmezett nyelvet a telepítő futtatásakor, és később megváltoztathatja azt.
 * Emellett [kiválaszthatja a használni kívánt területi beállítást, amikor adatokat importál](#choose-the-locale-for-importing-data-into-power-bi-desktop) egy adott jelentéshez.
 
-### <a name="choose-a-language-for-power-bi-desktop-installed-from-the-windows-store"></a>Nyelv megadása a Windows Áruházból telepített Power BI Desktophoz
-1. [Telepítse a Power BI Desktopot](http://aka.ms/pbidesktopstore) a Windows Áruházból.
+### <a name="choose-a-language-for-power-bi-desktop"></a>A Power BI Desktop nyelvének kiválasztása 
+1. Telepítse a Power BI Desktopot a [Windows Áruházból](http://aka.ms/pbidesktopstore), vagy [önálló telepítővel](http://aka.ms/pbiSingleInstaller).
 2. A nyelv megadásához keresse meg számítógépén a **Windows-beállításokat**. 
 3. Válassza a **Dátum és idő** lehetőséget.
    
@@ -140,11 +140,6 @@ A következőket kell tennie, ha felül szeretné bírálni az alapértelmezést
 3. Az **Alkalmazás nyelve** mezőben adjon meg egy más területi beállítást. 
 
 A Power BI Desktop nyelvi támogatása az Alkalmazás nyelve legördülő listában megjelenő nyelvekre korlátozódik.
-
-### <a name="choose-a-language-when-you-download-power-bi-desktop"></a>Nyelv megadása letöltött Power BI Desktophoz
-Ha a Power BI Desktop telepítőjének .msi változatát használja, a nyelv a letöltéskor van meghatározva. Nyelvet [A Power BI Desktop letöltése](https://www.microsoft.com/en-us/download/details.aspx?id=45331) oldalon választhat. 
-
-Az így telepített Power BI Desktop nyelvének megváltoztatásához térjen vissza a letöltési oldalra és töltse le másik nyelven.
 
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Az adatok a Power BI Desktopba való importálásához használni kívánt területi beállítás megadása
 Akár letölti, akár a Windows Áruházból telepíti a Power BI Desktopot, egy adott jelentéshez a saját Power BI Desktop-verziójáétól eltérő területi beállításokat is megadhat. Ez a területi beállítás határozza meg az adatforrásból importált adatok értelmezését, például hogy a "3/4/2017" dátum április 3-a vagy március 4-e. 

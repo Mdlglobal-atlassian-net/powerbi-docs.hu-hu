@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5d0ace5c2986b30436838d33037ae3019bd8bdce
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: f54906643bba8c631c8d8052309ad3ff512ad3fa
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751576"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305748"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Alkalmazás közzététele a Power BI-ban
 
@@ -190,6 +190,13 @@ Ez a művelet törli az alkalmazás telepítését mindenkitől, akivel megoszto
 Amikor az alkalmazás fogyasztói megnyitják az alkalmazást, a Power BI szabványos bal oldali navigációs panelje helyett az Ön által létrehozott navigáció jelenik meg. Az alkalmazásnavigáció az Ön által megadott szakaszokban sorolja fel a jelentéseket és az irányítópultokat. Nem csak a jelentés neve jelenik meg, a jelentések egyes oldalait is külön listázza ki.
 
 ![Alkalmazás navigációval](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
+
+## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
+Alkalmazás közzétételekor a következőket kell szem előtt tartani:
+
+* Az alkalmazás hozzáférési listájában legfeljebb 100 felhasználó vagy csoport szerepelhet. Az alkalmazáshoz azonban 100-nál több felhasználónak is adhat hozzáférést. Ehhez használjon egy vagy több csoportot, amelyek ezeket a felhasználókat tartalmazzák.
+* Az új munkaterület esetében azok az alkalmazás hozzáférési listájára felvett felhasználók, akik a munkaterületen keresztül már rendelkeznek hozzáféréssel, nem jelennek meg az alkalmazás hozzáférési listájában.  
+
 
 ## <a name="next-steps"></a>Következő lépések
 * [Munkaterület létrehozása](service-create-workspaces.md)

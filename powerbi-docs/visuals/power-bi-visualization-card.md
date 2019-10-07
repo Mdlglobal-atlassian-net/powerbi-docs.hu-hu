@@ -10,102 +10,92 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b3b773d7c28cb4528edb59a92e07874b53fc9c20
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 268b69362f0f8c98ba01fbd0673fc46856d54ba2
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839997"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195643"
 ---
 # <a name="card-visualizations"></a>Kártyavizualizációk
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Néha csupán egyetlen szám a legfontosabb, amit nyomon szeretne követni a Power BI-irányítópulton vagy -jelentésben, például az összesített értékesítés, az egy évre vetített piaci részesedés, vagy a lehetőségek száma összesen. Az ilyen típusú vizualizációkat *Kártyáknak* nevezzük. Csakúgy, mint szinte minden natív Power BI-vizualizáció, a Kártyák is a jelentésszerkesztővel vagy a Q&A-val hozhatók létre.
 
 ![kártyavizualizáció](media/power-bi-visualization-card/pbi-opptuntiescard.png)
 
-## <a name="create-a-card-using-the-report-editor"></a>Kártyák létrehozása a jelentésszerkesztővel
-Ez az útmutatás a Kiskereskedelmi elemzési mintát használja. Annak érdekében, hogy követni tudja a lépéseket, [töltse le a mintát](../sample-datasets.md), mely a Power BI szolgáltatásban (az app.powerbi.com webhelyen) vagy a Power BI Desktopban használható.   
+## <a name="prerequisite"></a>Előfeltétel
 
-1. Kezdjen egy üres jelentésoldalon, és válassza a **Store** \> **Open store count** (Üzlet > Nyitva lévő üzletek száma) mezőt. Ha a Power BI szolgáltatást használja, a [Szerkesztési nézetében](../service-interact-with-a-report-in-editing-view.md) kell megnyitnia a jelentést.
+Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja
+
+1. A menüsor bal felső részén válassza a **Fájl** \> **Megnyitás** lehetőséget
+   
+2. Keresse meg a **Kiskereskedelmi elemzési minta PBIX-fájlt**
+
+1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
+
+## <a name="option-1-create-a-card-using-the-report-editor"></a>1\. lehetőség: Kártyák létrehozása a jelentésszerkesztővel
+
+A kártya létrehozásának első módszere a jelentésszerkesztő használata a Power BI Desktopban.
+
+1. Kezdjen egy üres jelentésoldalon, és válassza a **Store** \> **Open store count** (Üzlet > Nyitva lévő üzletek száma) mezőt.
 
     A Power BI létrehoz egy oszlopdiagramot ezzel az egy számmal.
 
-   ![](media/power-bi-visualization-card/pbi-rptnumbertilechart.png)
-2. A Megjelenítések ablaktáblán kattintson a Kártya ikonra.
+   ![példa számcsempe-diagram](media/power-bi-visualization-card/pbi-overview-chart.png)
 
-   ![](media/power-bi-visualization-card/power-bi-templates.png)
-6. A vizualizáció az irányítópulton való rögzítéséhez vigye a kurzort a kártya fölé, és válassza a rögzítés ikonját ![](media/power-bi-visualization-card/pbi-pintile.png).
+2. A Vizualizációk panelen válassza a kártya ikont.
 
-   ![](media/power-bi-visualization-card/power-bi-pin-icon.png)
-7. A csempét egy meglévő vagy egy új irányítópultra is rögzítheti.
+   ![példa számcsempe-diagram](media/power-bi-visualization-card/power-bi-card-visualization.png)
 
-   * Meglévő irányítópult: válassza ki az irányítópult nevét a legördülő listából.
-   * Új irányítópult: írja be az új irányítópult nevét.
-8. Válassza a **Rögzítés** lehetőséget.
+Ezzel sikeresen létrehozott egy kártyát a jelentésszerkesztővel. A következőkben egy másik lehetőséget mutatunk be a kártya létrehozására a Q&A kérdésmezője használatával.
 
-   Megjelenik egy üzenet (a jobb felső sarok közelében), amely értesíti, hogy sikeresen hozzáadta a vizualizációt az irányítópultjához csempeként.
+## <a name="option-2-create-a-card-from-the-qa-question-box"></a>2\. lehetőség: Kártya létrehozása a Q&A kérdésmezőben
+Másik lehetőségként a Q&A kérdésmezője is használható kártya létrehozására. A Q&A kérdésmező a Power BI Desktop jelentés nézetében érhető el.
 
-   ![](media/power-bi-visualization-card/power-bi-success2.png)
-9. Válassza az **Ugrás az irányítópultra** lehetőséget. Itt [szerkesztheti és áthelyezheti](../service-dashboard-edit-tile.md) a rögzített vizualizációt.
+1. Kezdje a műveletet egy üres jelentésoldalon
 
+1. Az ablak felső részén válassza a **Kérdés feltevése** ikon. 
 
-## <a name="create-a-card-from-the-qa-question-box"></a>Kártya létrehozása a Q&A kérdésmezőben
-Kártyák legkönnyebben a Q&A kérdésmezőben hozhatók létre. A Q&A kérdésmező a Power BI szolgáltatásban az irányítópultokon és jelentésekben vagy a Desktop jelentés nézetében érhető el. A következő lépések azt írják le, hogyan hozható létre egy Kártya a Power BI szolgáltatás irányítópultjain. Ha a Power BI Desktopban szeretne létrehozni egy kártyát a Q&A-val, a Desktop Q&A jelentései esetében [ezt az útmutatást kövesse](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#QandA).
+    A Power BI létrehoz egy kártyát és egy mezőt a kérdéshez. 
 
-Ebben a példában a [Lehetőségelemzési mintát](../sample-opportunity-analysis.md) használjuk.
+   ![a kérdés feltevése ikont helye](media/power-bi-visualization-card/power-bi-q-and-a-overview.png)
 
-1. Az irányítópult tetején angolul kezdje beírni a kérdés mezőbe, hogy mire is kíváncsi az adatokkal kapcsolatban. 
+2. A kérdésmezőbe beírhatja például a „Tina összes értékesítése” szöveget.
 
-   ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
+    A kérdésmező javaslatokkal és újrafogalmazásokkal segíti, és végül megjeleníti az összesített számot.  
 
-> [!TIP]
-> A Power BI szolgáltatás jelentéseiben, a szerkesztési nézetben válassza a **Kérdés feltevése** lehetőséget a felső menüsorban. A Power BI Desktop jelentéseiben keressen egy üres területet a jelentésben, majd kattintson rá duplán a kérdésmező megnyitásához.
+   ![példa a kérdésmezőben](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
-2. Például írja be a „number of opportunities” (lehetőségek száma) kifejezést a kérdés mezőbe.
+   ![példakártya a kérdésfeltevéses módszerrel](media/power-bi-visualization-card/power-bi-q-and-a-card.png)
 
-   ![](media/power-bi-visualization-card/power-bi-q-and-a.png)
-
-   A kérdésmező javaslatokkal és újrafogalmazásokkal segíti, és végül megjeleníti az összesített számot.  
-4. A kártyát a jobb felső sarokban lévő rögzítési ikonnal ![](media/power-bi-visualization-card/pbi-pintile.png) adhatja hozzá egy irányítópulthoz.
-
-   ![](media/power-bi-visualization-card/power-bi-pin.png)
-5. A kártyát egy meglévő vagy egy új irányítópulton is rögzítheti csempeként.
-
-   * Meglévő irányítópult: válassza ki az irányítópult nevét a legördülő listából. Csak az aktuális munkaterületeken lévő irányítópultok közül választhat.
-   * Új irányítópult: írja be az új irányítópult nevét, és az létrejön a munkaterületen.
-6. Válassza a **Rögzítés** lehetőséget.
-
-   A jobb felső sarokban megjelenik a sikert jelző üzenet, amely tájékoztatja arról, hogy a vizualizáció csempeként hozzá lett adva az irányítópulthoz.  
-
-   ![](media/power-bi-visualization-card/power-bi-success2.png)
-7. Az új csempe megtekintéséhez kattintson az **Ugrás az irányítópultra** lehetőségre. Itt [többek között átnevezheti, átméretezheti és áthelyezheti a csempét az irányítópulton, és hivatkozást adhat hozzá](../service-dashboard-edit-tile.md).
-
-   ![](media/power-bi-visualization-card/power-bi-pinned-2.png)
-
-
-
+Ezzel sikeresen létrehozott egy kártyát a Q&A kérdésmezőjével. A további lépések a kártya igény szerinti formázását ismertetik.
 
 ## <a name="format-a-card"></a>Kártya formázása
 A címkék, szöveg, színét és egyebek módosításához több lehetőség áll rendelkezésre. A tanulás legjobb módja, ha létrehoz egy kártyát, és azután részletesebben is megismerkedik a Formázás ablaktábla lehetőségeivel. Bemutatunk néhányat az elérhető formázási lehetőségek közül. 
 
-A Formázás panel a jelentések kártyáinak használatakor érhető el. Ha módosítja egy jelentés egyik kártyáját, azt újra rögzítve megtekintheti az irányítópulton a módosításokat. 
+A Formázás panel a jelentések kártyáinak használatakor érhető el. 
 
 1. Kezdő lépésként nyissa meg a Formázás ablaktáblát a festőhenger ikon kiválasztásával. 
 
     ![kártya, amelyen a festőhenger kiemelve látható](media/power-bi-visualization-card/power-bi-format-card-2.png)
+
 2. A kártya kijelölése után bontsa ki az **Adatfelirat** elemet, majd módosítsa a színt, a méretet és a betűtípust. Ha több ezer üzlettel rendelkezik, akkor a **Megjelenítési egységek** használatával ezresével jelenítheti meg az üzleteket, és beállíthatja a tizedesjegyeket is. Például 125,8 e a 125 832,00 helyett.
+
+    ![példakártya adatformázással](media/power-bi-visualization-card/power-bi-card-format-2.png)
 
 3.  Bontsa ki a **Kategóriacímke** elemet, majd módosítsa a színt és a méretet.
 
-    ![a választott szín a sötétkék](media/power-bi-visualization-card/power-bi-card-format-2.png)
+    ![példakártya kategóriával](media/power-bi-visualization-card/power-bi-card-format-category.png)
 
 4. Bontsa ki a **Háttér** elemet, és a csúszkát tolja „On” (Be) állásba.  Mostantól módosíthatja a háttérszínt és az átlátszóságot.
 
     ![csúszka ON (BE) állásban](media/power-bi-visualization-card/power-bi-format-color-2.png)
 
 5. Folytassa is a formázási beállítások felfedezését, amíg a kártya pontosan olyan nem lesz, amilyennek kívánja. 
-
-    ![A kártya az összes formázási művelet elvégzése után](media/power-bi-visualization-card/power-bi-formatted-2.png)
-
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 Ha a kereső mező nem látható, forduljon a rendszerszintű vagy a bérlői rendszergazdához.    

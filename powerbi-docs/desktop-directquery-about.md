@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 11de32b8119e8b6922dcc1a971750e4256812932
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: d303e20e524ad7ac67882812b6e4f5a1d9b06c33
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654752"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305799"
 ---
 # <a name="using-directquery-in-power-bi"></a>DirectQuery használata a Power BI-ban
 Számos különböző adatforrást kapcsolhat össze a **Power BI Desktop** vagy a **Power BI szolgáltatás** használatával, és ezeket az adatkapcsolatokat többféleképpen is létrehozhatja. *Importálhat* adatokat a Power BI-ba, ez az adatok lekérésének leggyakoribb módja, vagy közvetlenül is csatlakozhat az eredeti forrásadattárukban lévő adatokhoz, ez az eljárás **DirectQuery** néven ismert. Ez a cikk a **DirectQuery** szolgáltatást és annak képességeit mutatja be:
@@ -137,6 +137,7 @@ A *modellezés* kifejezés ebben a kontextusban a nyers adatok pontosítását �
 A **DirectQuery** használatával ezen modellbővítések nagy részét el lehet végezni, és természetesen érvényes a nyers adatok bővítésének elve, a későbbi fogyaszthatóság javítása céljából. Ugyanakkor bizonyos modellezési funkciók vagy nem, vagy csak korlátozottan érhetők el a DirectQuery használatakor. A korlátozások általánosságban a teljesítményproblémák elkerülését szolgálják. A minden DirectQuery-forrásra egységesen jellemző korlátozásokat a következő felsorolás ismerteti. Egyes forrásokra további korlátozások is vonatkozhatnak, amelyeket a jelen cikk vége felé található, az *adatforrás-specifikus részletekkel* foglalkozó szakasz ismertet.
 
 * **Nincs beépített dátumhierarchia:** Az adatok importálásakor alapértelmezés szerint minden dátum- és dátum/idő-oszlop rendelkezik egy beépített dátumhierarchiával. Például ha importálunk egy megrendeléseket tartalmazó táblát, amely tartalmaz egy OrderDate (Megrendelés dátuma) oszlopot, majd ezen oszlopot felhasználjuk egy vizualizációhoz, akkor kiválasztható lesz a vizualizációban használandó szint (év, hónap, nap). A DirectQuery módban ez a beépített dátumhierarchia nem elérhető el. Azonban fontos megjegyezni, hogy ha az alapul szolgáló forrásban van egy elérhető Date (Dátum) tábla (ami az adattárházak körében gyakori), akkor a DAX Időintelligencia függvények a szokott módon használhatók.
+* **Dátum és idő legfeljebb másodperces precizitással támogatott:** Ha az adathalmazban idő jellegű oszlopok szerepelnek, a Power BI csak másodperces részletességű lekérdezéseket végez a mögöttes forráson. Ezredmásodpercekre vonatkozó lekérdezések nem lesznek a DirectQuery-forráshoz továbbítva, tehát a forrás oszlopaiban az időértékeknek ezt a részét el kell távolítania.
 * **Számított oszlopok korlátozásai:** A számított oszlopoknak soron belülinek kell lenniük, azaz csak ugyanazon tábla más oszlopainak értékeire hivatkozhatnak, összesítési függvények használata nélkül. Emellett a DAX skaláris függvények (pl. LEFT ()) közül csak azok engedélyezettek, amelyek egyszerűen leküldhetők az alapul szolgáló forrás felé – hogy ezek melyek, az a forrás konkrét képességeitől függ. A nem támogatott függvények nem lesznek felsorolva az automatikus kiegészítési lehetőségek között a számított oszlop DAX-függvényeinek szerkesztésekor, és ha használni próbálja őket, hibát eredményeznek.
 * **A szülő–gyermek DAX-függvények nem támogatottak:** A DirectQuery modellben nem használható a DAX PATH() függvénycsalád, amely általában a szülő–gyermek struktúrákat kezeli (például fiókok ábrázolásakor vagy az alkalmazotti hierarchiákban).
 * **A számított táblák nem támogatottak:** A DirectQuery módban nem támogatott a számított táblázatok meghatározása egy DAX-kifejezés használatával.

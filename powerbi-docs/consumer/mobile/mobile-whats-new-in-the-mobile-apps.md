@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: e74bdacc1b8ee40ec6628337e9e78528e8fdee29
-ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.openlocfilehash: fe8f21bbbd0886b8ff4046f744884e53f8822912
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71164504"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327763"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -22,6 +22,13 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+
+## <a name="september-2019"></a>2019. szeptember
+
+### <a name="support-for-custom-app-navigation-ios-and-android"></a>Egyéni alkalmazásnavigáció támogatása (iOS és Android)
+
+Mostantól támogatott az egyéni alkalmazásnavigáció. Ha megnyit egy alkalmazást a Power BI Mobile-ban, elérhető lesz az alkalmazás létrehozója által készített egyéni navigációs felület. Az alkalmazásnavigáció rendezhető tartalom alapján, és új elemeket, például hivatkozásokat és összecsukható szakaszokat is tartalmazhat.
+További tudnivalók az [egyéni navigációról](https://powerbi.microsoft.com/en-us/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
 
 ## <a name="august-2019"></a>2019. augusztus
 

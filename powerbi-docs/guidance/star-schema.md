@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: f44c83613f874aec84a389ac5034ebde193467c2
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 4af7a6305ace9113e912f0ad1527064c505f0ca8
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70840606"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715513"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>A csillagséma és a Power BI-ban játszott szerepének a bemutatása
 
@@ -205,6 +205,6 @@ A több-a-többhöz kapcsolat tervezésének ez a módja jól dokumentált, és 
 Csillagséma vagy Power BI-modell tervezéséről a következő cikkekből tájékozódhat bővebben:
 
 - [Wikipedia-cikk a dimenzionális modellezésről](https://go.microsoft.com/fwlink/p/?linkid=246459)
-- [Kapcsolatok létrehozása és kezelése a Power BI Desktopban](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships)
-- [Több-a-többhöz számosságú kapcsolatok a Power BI Desktopban](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships)
-- [Interaktív modellezési oktatóanyag](https://docs.microsoft.com/power-bi/guided-learning/modeling)
+- [Kapcsolatok létrehozása és kezelése a Power BI Desktopban](../desktop-create-and-manage-relationships.md)
+- [Több-a-többhöz számosságú kapcsolatok a Power BI Desktopban](../desktop-many-to-many-relationships.md)
+- [Interaktív modellezési oktatóanyag](/learn/modules/model-data-power-bi/)

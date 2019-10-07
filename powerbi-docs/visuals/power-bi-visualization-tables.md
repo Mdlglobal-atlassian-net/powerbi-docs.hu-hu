@@ -11,18 +11,20 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 857db3240385e9bf1b4e0416cc1200d1a029d73e
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 65410dc15600307ba11a2c48db1689be5a458383
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867193"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193476"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Táblák a Power BI-jelentésekben és -irányítópultokon
 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 A táblák olyan táblázatok, amelyek sorok és oszlopok logikai sorozataként jelenítik meg a kapcsolódó adatokat. Tartalmazhatnak fejléceket és összesítősorokat is. A táblák jól használhatók mennyiségi összehasonlításokhoz, ahol több, egy kategóriába tartozó érték vizsgálható egyszerre. Ez a tábla például a **Kategória** öt különböző mértékét jeleníti meg.
 
-![Képernyőkép egy tábláról, mely egy kategória öt különböző mértékét jeleníti meg.](media/power-bi-visualization-tables/table.png)
+![Képernyőkép egy tábláról, mely egy kategória öt különböző mértékét jeleníti meg.](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 
 Táblázatokat hozhat létre a jelentésekben, és egyéb vizualizációk mellett keresztkiemelést alkalmazhat a táblázaton belül, ugyanazon a jelentésoldalon. Kiválaszthat sorokat, oszlopokat vagy egyetlen cellát is, és keresztkiemeléssel láthatja el őket. Egy vagy több kijelölt cellát kimásolhat és beilleszthet más alkalmazásokba is.
 
@@ -36,25 +38,23 @@ A tábla remek választás a következő esetekben:
 
 * Numerikus adatok kategóriák szerinti megjelenítéséhez.
 
-## <a name="prerequisites"></a>Előfeltételek
+## <a name="prerequisite"></a>Előfeltétel
 
-* A Power BI szolgáltatás vagy a Power BI Desktop
+Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
 
-* Kiskereskedelmi elemzési mintajelentés
+1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
+   
+2. Keresse meg a **Kiskereskedelmi elemzési minta PBIX-fájlt**
 
-## <a name="get-the-retail-analysis-sample-report"></a>A Kiskereskedelmi elemzési mintajelentés beszerzése
+1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-Ez az útmutatás a Kiskereskedelmi elemzési mintát használja. A vizualizációk létrehozásához az adatkészletre és a jelentésre vonatkozó szerkesztési jogosultságok szükségesek. A Power BI mintái mind szerkeszthetőek. Ha mások osztanak meg Önnel jelentést, abban az esetben nem fog tudni vizualizációkat létrehozni jelentésekben. A leírás követéséhez nyissa meg a [Kiskereskedelmi elemzési minta jelentést](../sample-datasets.md).
+1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
 
-Ha beszerezte a **Kiskereskedelmi elemzési mintát**, elkezdheti a munkát.
 
 ## <a name="create-a-table"></a>Tábla létrehozása
 
 Létrehozza a cikk elején bemutatott táblát az értékesítési adatok elemkategória szerinti megjelenítéséhez.
 
-1. A **Saját munkaterületen** válassza az **Adatkészletek** > **Jelentés létrehozása** lehetőséget.
-
-    ![Képernyőkép az Adatkészletek > Jelentés létrehozása lehetőségről.](media/power-bi-visualization-tables/power-bi-create-a-report.png)
 
 1. A **Mezők** panelen válassza az **Elem** > **Kategória** lehetőséget.
 
@@ -66,11 +66,10 @@ Létrehozza a cikk elején bemutatott táblát az értékesítési adatok elemka
 
 1. Ez után válassza az **Értékesítések > Folyó évi értékesítések** elemet, és válassza ki mindhárom lehetőséget: **Érték**, **Cél** és **Állapot**.
 
-1. A **Vizualizációk** ablaktáblán húzza az értékeket az **Értékek** területre, amíg a tábla oszlopainak rendje meg nem egyezik az oldalon fentebb látható első ábrával. Az **Értékek** területnek így kell kinéznie:
+1. A **Vizualizációk** ablaktáblán keresse meg az **Értékek** területet, és jelölje ki az értékeket, amíg a diagram oszlopainak sorrendje meg nem egyezik az oldalon fentebb látható első ábrával. Ha szükséges, húzza az értékeket a területre. Az **Értékek** területnek így kell kinéznie:
 
     ![az Értékek terület](media/power-bi-visualization-tables/power-bi-table2.png)
 
-1. Rögzítse a táblát az irányítópultra a rajzszög ikonnal ![rajzszög](media/power-bi-visualization-tables/pbi_pintile.png) a vizualizáció jobb felső sarkában.
 
 ## <a name="format-the-table"></a>A táblázat formázása
 
@@ -170,10 +169,6 @@ Több mint egy cella másolása:
 1. Válassza a **Másolás** > **Kijelölés másolása** lehetőséget.
 
     ![másolási lehetőségek](media/power-bi-visualization-tables/power-bi-copy-selection.png)
-
-    A másolat tartalmazza az oszlopok és a sorok fejléceit.
-
-    ![beillesztés Excelbe](media/power-bi-visualization-tables/power-bi-paste-selection.png)
 
 ## <a name="adjust-the-column-width-of-a-table"></a>Tábla oszlopszélességeinek állítása
 
