@@ -7,21 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/25/2019
+ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: dcc273dd6bf356d9149086b38b9126e721fe63a2
-ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
+ms.openlocfilehash: da7652556bc11e47cf238dd969ae1b27e6387299
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68380273"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968808"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Szűrő hozzáadása Power BI-jelentéshez
 
+[!INCLUDE [power-bi-service-new-look-include](includes/power-bi-service-new-look-include.md)]
+
 Ez a cikk ismerteti, hogyan adhat hozzá oldalszűrőt, vizualizációszűrőt, jelentésszűrőt vagy részletezési szűrőt egy jelentéshez a Power BI-ban. A cikkben található példák a Power BI szolgáltatásban szerepelnek. Az elvégzendő lépések csaknem teljesen azonosak a Power BI Desktop alkalmazásban is.
 
-**Tudta?** A Power BI új szűrési felülettel rendelkezik, egyelőre előzetes verzióban. Bővebben is tájékozódhat [a Power BI-jelentésekben elérhető új szűrési felületről](power-bi-report-filter.md).
+**Tudta?** A Power BI új szűrési felülettel rendelkezik. Bővebben is tájékozódhat [a Power BI-jelentésekben elérhető új szűrési felületről](power-bi-report-filter.md).
 
 ![Új szűrőfunkciók](media/power-bi-report-add-filter/power-bi-filter-reading.png)
 

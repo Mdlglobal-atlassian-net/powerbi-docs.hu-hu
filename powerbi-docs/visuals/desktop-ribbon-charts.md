@@ -1,6 +1,6 @@
 ---
 title: Szalagdiagramok használata a Power BI-ban
-description: Szalagdiagramok létrehozása és felhasználása a Power BI szolgáltatásban és a Power BI Desktopban
+description: Szalagdiagramok létrehozása és felhasználása a Power BI Desktopban
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -10,20 +10,34 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3400071c6b8cee472bb61475e6d3482189680563
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: e6044f3a2cfdbfc40d0497ebde25780336dc1dc4
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840119"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715484"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Szalagdiagramok használata a Power BI-ban
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Szalagdiagramok használatával megjelenítheti az adatokat, és gyorsan felderítheti a legmagasabb rangú (legnagyobb értéket képviselő) adatkategóriát. A szalagdiagramokkal hatékonyan ábrázolható a rangok időbeli változása: minden időszakban a legmagasabb rangú (értékű) kategória látható felül. 
 
-![menüszalag-diagram](media/desktop-ribbon-charts/ribbon-charts_01.png)
+![menüszalag-diagram](media/desktop-ribbon-charts/ribbon-charts-01.png)
+
+## <a name="prerequisites"></a>Előfeltételek
+
+Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
+
+1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
+   
+2. Keresse meg a **Kiskereskedelmi elemzési minta PBIX-fájlt**
+
+1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
 
 ## <a name="create-a-ribbon-chart"></a>Szalagdiagram létrehozása
-A leírás követéséhez nyissa meg a [Kiskereskedelmi elemzési minta jelentést](../sample-retail-analysis.md). 
 
 1. Szalagdiagram létrehozásához válassza a **szalagdiagram** lehetőséget a **Vizualizációk** panelen.
 
@@ -31,13 +45,13 @@ A leírás követéséhez nyissa meg a [Kiskereskedelmi elemzési minta jelenté
 
     A szalagdiagramok szalagok segítségével kapcsolják az adatkategóriákat a vizualizált időfolyamhoz, így megtekintheti, hogy az egyes kategóriák milyen rangsorban állnak egymáshoz képest a diagram x tengelyén (amely általában az idővonal).
 
-2. Válassza ki a **Tengely**, **Jelmagyarázat** és **Érték** mezőket.  Ebben a példában a következőket választottuk: **Dátum**, **Kategória** és **Folyó évi értékesítések**.  
+2. Válassza ki a **Tengely**, **Jelmagyarázat** és **Érték** mezőket.  Ebben a példában a következőket választottuk: **Üzlet** > **NyitásiDátum**, **Elem** > **Kategória**, valamint **Értékesítés** > **Idei értékesítések** > **Érték**.  
 
     ![választott mezők](media/desktop-ribbon-charts/power-bi-ribbon-values.png)
 
-    Mivel az adathalmaz csak egy év adatait tartalmazza, az **Év** mezőt is eltávolítottuk a **Tengelyről**. 
+    Mivel az adathalmaz csak egy év adatait tartalmazza, az **Év** és a **Negyedév** mezőt is eltávolítottuk a **Tengelyről**.
 
-3. A szalagdiagram kéthavonta mutatja be a rangsorolást. Figyelje meg a rang időbeli változását.  Az Otthon kategória például a harmadik helyről a negyedikre, majd ismét a harmadikra lép. Az Ifjúsági kategória júliusban a harmadik helyről az ötödikre lép. 
+3. A szalagdiagram minden hónapra bemutatja a rangsorolást. Figyelje meg a rang időbeli változását. A Kezdőlap kategóriája például februártól márciusig a másodiktól az ötödikig napig mozog.
 
     ![menüszalag-diagram](media/desktop-ribbon-charts/power-bi-ribbon.png)
 
@@ -57,7 +71,7 @@ Mivel a szalagdiagram y tengelyén nincsenek feliratok, érdemes lehet adatfelir
 
 ![adatfeliratok formázási lehetőségei](media/desktop-ribbon-charts/power-bi-labels.png)
 
-Állítsa be adatfeliratai formázását.  Példánkban a szöveg színét fehérre, a tizedesjegyek számát nullára, a megjelenítési egységeket pedig ezresekre. 
+Állítsa be adatfeliratai formázását. Példánkban a szöveg színét fehérre, a megjelenítési egységeket pedig ezresekre módosítottuk.
 
 ![menüszalagsablon a Vizualizációk panelen](media/desktop-ribbon-charts/power-bi-data-labels.png)
 

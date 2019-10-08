@@ -3,20 +3,19 @@ title: Végfelhasználók által feltett gyakori kérdések – Power BI
 description: Az alábbiakban a Power BI szolgáltatással és a Power BI mobilalkalmazásaival kapcsolatos gyakori kérdések és válaszok listáját tekintheti át.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 6/17/2019
+ms.date: 10/03/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5efdb98e0722add361f3b333f773fc03c6ea50a9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: bf3e7b790788c8ce21b222a083a853b06185acc0
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69654146"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943325"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Gyakori kérdések – Power BI
 
@@ -33,27 +32,17 @@ A Power BI Pro egyéni licenc, amely hozzáférést biztosít a Power BI szolgá
 
 A Power BI Premium szint fenntartott kapacitást biztosít, amellyel konzisztensebb teljesítmény érhető el. Emellett nagyobb adatméreteket támogat a Power BI-ban. Egyéni felhasználók esetén a Premium szint lehetővé teszi, hogy a Pro-felhasználók széles körben megoszthassák a tartalmat úgy, hogy ehhez nincs szükségük arra, hogy a tartalom címzettjei felhasználónkénti licencekkel rendelkezzenek.
 
-## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Mi történik, ha a Power BI Pro-licenc lejár?
-
-A Power BI Pro-licenc lejárata után egy türelmi időszak kezdődik. A mennyiségi licenc részeként megvásárolt licencekre a türelmi időszak 90 nap. Közvetlenül vásárolt licencre a türelmi időszak 30 nap.
-
-A Power BI Pro előfizetési életciklusa megegyezik az Office 365-ével. További információ: [Mi történik az adatokkal és a hozzáféréssel, amikor az Office 365 vállalati verzióra szóló előfizetés befejeződik?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
-
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Mi a teendő, ha kérdéseim vannak a Power BI Premium verzióval kapcsolatban?
 
 A Power BI Premium verzióval kapcsolatos kérdésekért lásd: [Power BI Premium – gyakori kérdések](../service-premium-faq.md).
 
-## <a name="how-do-i-find-out-who-in-my-organization-has-a-power-bi-account"></a>Hogyan találhatom meg, hogy a vállalatomnál kinek van Power BI-fiókja?
-
-Az Azure Active Directory Power BI-hoz készült, integrált alkalmazásokat tartalmazó jelentésében megtekintheti az adott vállalat aktív felhasználóit. Az Azure AD-jelentés nem jelzi, hogy az egyes felhasználók milyen licenccel rendelkeznek. Csak az tekinthető meg, hogy mely felhasználók regisztráltak a Power BI-ba, és mikor jelentkeztek be. További információért tekintse át a [Bejelentkezett Power BI-felhasználók keresése](../service-admin-access-usage.md) című témát.
-
 ## <a name="what-is-power-bi-desktop"></a>Mi az a Power BI Desktop?
 
-A Power BI Desktop egy ingyenes alkalmazás, amelyet közvetlenül a saját számítógépre telepíthet. A Power BI Desktop szorosan együttműködik a Power BI szolgáltatással.  A Power BI Desktoppal dolgozó adatszakértők, rendszergazdák és fejlesztők jelentéseket állítanak elő és tesznek elérhetővé a Power BI szolgáltatás Önhöz hasonló felhasználói számára. További olvasnivaló arról, hogy [Mi az a Power BI Desktop](../desktop-what-is-desktop.md).
+A Power BI Desktop egy ingyenes alkalmazás, amelyet közvetlenül a saját számítógépre telepíthet. A Power BI Desktop szorosan együttműködik a Power BI szolgáltatással.  A Power BI Desktoppal dolgozó adatszakértők, rendszergazdák és fejlesztők jelentéseket állítanak elő és tesznek elérhetővé a Power BI szolgáltatás Önhöz hasonló *fogyasztói* számára. További olvasnivaló arról, hogy [Mi az a Power BI Desktop](../desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-the-power-bi-service"></a>Mire van szükségem a Power BI szolgáltatás használatához?
 
-Csak egy webböngészőre és egy munkahelyi e-mail-címre. A feliratkozáshoz *.gov* és *.mil* e-mail-címeket használhat. További információ: [USA-beli kormányzati szerv regisztrálása a Power BI szolgáltatásban](../service-govus-signup.md).
+Csak egy webböngészőre és egy munkahelyi e-mail-címre. A feliratkozáshoz *.gov* és *.mil* e-mail-címeket is használhat. További információ: [USA-beli kormányzati szerv regisztrálása a Power BI szolgáltatásban](../service-govus-signup.md).
 
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Miért a munkahelyi e-mail-címemmel kell regisztrálni?
 
@@ -88,7 +77,7 @@ Az alábbi erőforrások állnak rendelkezésre az első lépések megtételéhe
 * [A Power BI blogja](http://blogs.msdn.com/b/powerbi/)
 * [Webináriumok](../webinars.md)
 * Az első lépések megtételét segítő videók a [YouTube-csatornán](https://www.youtube.com/user/mspowerbi)
-* [A Power BI Desktop használatának első lépései](../service-get-started.md) című cikk
+* [A Power BI Desktop *fogyasztói* használatának első lépései](power-bi-consumer-landing.md) című cikk
 * [Csatlakozzon közösségünkhöz](https://community.powerbi.com/), és tegyen fel kérdéseket
 * További javaslatokért lásd: [10 tanács segítségkéréshez](../service-tips-for-finding-help.md)
 
@@ -126,6 +115,7 @@ Sok más Microsoft-szolgáltatáshoz és -szoftverhez hasonlóan a Power BI is e
 
 ## <a name="next-steps"></a>Következő lépések
 
-* [Mi az a Power BI?](../power-bi-overview.md)
+* [Ki számít a Power BI felhasználójának?](end-user-consumer.md)
+* [Hogyan használja a fogyasztó a Power BI-t?](end-user-reading-view.md)
 * További kérdései vannak? [Kérdezze a Power BI-közösséget](http://community.powerbi.com/)
 * Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/)

@@ -8,17 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
-ms.openlocfilehash: bbd9a3884b3b6b0cd235471b0746f605e3872aff
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.date: 10/03/2019
+ms.openlocfilehash: a97c8125af46eae193f6c592d0b3c1153ae9b50c
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325753"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968626"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
 
-Ha a Power BI jelentéskészítő kiszolgálóhoz szeretne Power BI-jelentéseket létrehozni, akkor le kell tölteni és telepíteni a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopot. Ez különbözik a Power BI szolgáltatáshoz használt Power BI Desktop-kiadástól. A Power BI szolgáltatáshoz készült Power BI Desktopban például olyan előzetes funkciók is megtalálhatók, amelyek a kiadásukig nem érhetők el a Power BI jelentéskészítő kiszolgálóban. Ha ezt a verziót használja, akkor a jelentéskészítő kiszolgáló a jelentések és a modell ismert verzióját használhatja. 
+Ha a Power BI jelentéskészítő kiszolgálóhoz szeretne Power BI-jelentéseket létrehozni, akkor le kell tölteni és telepíteni a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop-verziót. Ez különbözik a Power BI szolgáltatáshoz használt Power BI Desktop-kiadástól. A Power BI szolgáltatáshoz készült Power BI Desktopban például olyan előzetes funkciók is megtalálhatók, amelyek az általános elérhetőség előtt nem érhetők el a Power BI jelentéskészítő kiszolgálóban. Ha ezt a verziót használja, akkor a jelentéskészítő kiszolgáló a jelentések és a modell ismert verzióját használhatja. 
 
 A Power BI Desktop és a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop azonban egymás mellett is telepíthető ugyanazon a számítógépen.
 
@@ -32,7 +32,7 @@ Ha ellenőrizné, hogy a Power BI jelentéskészítő kiszolgálóhoz optimaliz�
 
     Megnyithatja a [Power BI jelentéskészítő kiszolgáló](https://powerbi.microsoft.com/report-server/) kezdőlapját is, ahol kiválaszthatja a **Speciális letöltési beállítások** lehetőséget.
 
-2. A letöltőközpontlapon kattintson a **Letöltés** gombra.
+2. A letöltőközpontlapon válassza ki a nyelvet, majd válassza a **Letöltés** gombot.
 
 3. A számítógépétől függően válassza az alábbiak egyikét: 
 
@@ -65,7 +65,11 @@ Ha egy Power BI-jelentést szerkeszt a Power BI jelentéskészítő kiszolgáló
 
 A Power BI jelentéskészítő kiszolgálón, a Power BI szolgáltatásban (http://app.powerbi.com) ) és a Power BI-mobilalkalmazásokban található jelentések működése szinte teljesen megegyezik, de bizonyos funkciók eltérnek egymástól.
 
-### <a name="in-a-browser"></a>Böngészőben
+### <a name="selecting-a-language"></a>Nyelv kiválasztása
+
+A Power BI jelentéskészítő kiszolgálóra optimalizált Power BI Desktop esetében az alkalmazás telepítésekor ki kell választania a nyelvet. Ezt követően nem módosítható a nyelv, de más nyelven is telepíthet egy verziót.
+
+### <a name="report-visuals-in-a-browser"></a>Jelentésvizualizációk böngészőben
 
 A Power BI jelentéskészítő kiszolgálón tárolt jelentések szinte minden vizualizációt, köztük egyéni vizualizációkat is támogatnak. A Power BI jelentéskészítő kiszolgálón tárolt jelentések nem támogatják az alábbiakat:
 
@@ -74,7 +78,7 @@ A Power BI jelentéskészítő kiszolgálón tárolt jelentések szinte minden v
 * Útkövetési eszközök
 * A Power BI Desktop előzetes verziójú funkciói
 
-### <a name="in-the-power-bi-mobile-apps"></a>A Power BI-mobilalkalmazásokban
+### <a name="reports-in-the-power-bi-mobile-apps"></a>Jelentések a Power BI-mobilalkalmazásokban
 
 A Power BI jelentéskészítő kiszolgálón tárolt jelentések a [Power BI-mobilalkalmazások](../consumer/mobile/mobile-apps-for-mobile-devices.md) minden alapvető funkcióját támogatják, köztük:
 
@@ -92,7 +96,7 @@ A Power BI jelentéskészítő kiszolgálón tárolt jelentések nem támogatjá
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop a Power BI jelentéskészítő kiszolgáló korábbi verzióihoz
 
-Ha a jelentéskészítő kiszolgálója korábbi verziójú, akkor a Power BI Desktop vonatkozó verzióját kell használnia. A korábbi verzió az alábbi hivatkozással tölthető le.
+Ha a jelentéskészítő kiszolgálója korábbi verziójú, akkor a Power BI Desktop vonatkozó verzióját kell használnia. Korábbi verziók az alábbi hivatkozással tölthetők le.
 
 - Microsoft Power BI Desktop ([A Power BI jelentéskészítő kiszolgálóra (2019. január) optimalizálva](https://go.microsoft.com/fwlink/?linkid=2055039))
 

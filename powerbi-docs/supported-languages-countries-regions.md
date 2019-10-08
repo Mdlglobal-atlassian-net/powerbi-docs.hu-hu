@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 10/03/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6e89fa21617add5c3c11ada990f7055d305cebf5
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: efb2ee5ef0ed09cbca1a2bebf6ab3a0f8908efb8
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256449"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968684"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>A Power BI által támogatott nyelvek és országok/régiók
 
@@ -121,6 +121,9 @@ A Power BI Desktopot kétféle módon szerezheti be: Letöltheti önálló telep
 * Ha a Power BI Desktopot a Windows Áruházból telepíti, akkor az minden nyelvet telepít, és alapértelmezés szerint a Windows alapértelmezett nyelvén jelenik meg.
 * Ha a Power BI Desktopot önálló telepítőként tölti le, Ön választhatja ki az alapértelmezett nyelvet a telepítő futtatásakor, és később megváltoztathatja azt.
 * Emellett [kiválaszthatja a használni kívánt területi beállítást, amikor adatokat importál](#choose-the-locale-for-importing-data-into-power-bi-desktop) egy adott jelentéshez.
+
+> [!NOTE]
+> Ha Power BI jelentéskészítő kiszolgálóra optimalizált Power BI Desktop-verziót telepíti, a nyelvet a letöltéskor kell kiválasztania. További információt a [Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése](report-server/install-powerbi-desktop.md) című cikkben olvashat.
 
 ### <a name="choose-a-language-for-power-bi-desktop"></a>A Power BI Desktop nyelvének kiválasztása 
 1. Telepítse a Power BI Desktopot a [Windows Áruházból](http://aka.ms/pbidesktopstore), vagy [önálló telepítővel](http://aka.ms/pbiSingleInstaller).

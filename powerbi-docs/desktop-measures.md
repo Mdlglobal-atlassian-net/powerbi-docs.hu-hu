@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 431c1738a5d2e975fd96a8209ca8245cd4414d40
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: d5ada41ef4941f14118b777e37e731337a5282d0
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730135"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715396"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mértékek a Power BI Desktopban
 
 A **Power BI Desktop** segítségével néhány kattintással készíthet elemzéseket adatairól. Néha azonban az adatok nem tartalmaznak minden információt, amelyre a legfontosabb kérdések megválaszolásához szüksége van. Ezeket a mértékek segítségével szerezheti meg.
 
-Mértékeket a leggyakoribb adatelemzéseknél is használunk. Az egyszerű összesítések, például az összegek, átlagok, minimum, maximum és szám értékek a Mezők területen állíthatók be, ahogyan azt az [összegzési és kategóriabeállításokról](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=16) szóló videó is ismerteti. Fejlettebb számításokat egy DAX-képlettel készíthet. A mértékek számított eredménye a jelentések használata során folyamatosan változik, ami lehetővé teszi az adatok gyors és dinamikus alkalmi felderítését. Lássuk mindezt közelebbről.
+Mértékeket a leggyakoribb adatelemzéseknél is használunk. Az egyszerű összesítések, például az összegek, átlagok, minimum, maximum és szám értékek a Mezők területen állíthatók be. A mértékek számított eredménye a jelentések használata során folyamatosan változik, ami lehetővé teszi az adatok gyors és dinamikus alkalmi felderítését. Lássuk mindezt közelebbről. További információt a [Számított mértékek létrehozása](/learn/modules/model-data-power-bi/4b-create-calculated-measures) című cikkben talál.
 
 ## <a name="understanding-measures"></a>A mértékek ismertetése
 

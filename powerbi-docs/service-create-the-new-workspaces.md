@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a2de6d79971e59879e65d2e3cf652caf156d80cf
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 5c50ec38da65573e085d9e27b0e31524256ac009
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904078"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715524"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Új munkaterületek létrehozása a Power BI-ban
 
@@ -28,7 +28,7 @@ A különbségek a következők. Az új munkaterületeken a következőket vége
 - Részletesebb munkaterület-szerepköröket használhat, amelyekkel rugalmasabb engedélykezelést érhet el a munkaterületeken.
 
 > [!NOTE]
-> Ha sorszintű biztonságot (RLS) szeretne érvényesíteni a munkaterület tartalmát tallózó Power BI Pro-felhasználók számára, használja továbbra is a [klasszikus munkaterületeket](service-create-workspaces.md). Jelölje be **A tagok csak a Power BI-tartalmak megtekintésére jogosultak** beállítást. Egy másik megoldás, hogy közzétesz egy alkalmazást ezeknek a felhasználóknak, vagy megosztással terjeszti a tartalmat. Ezt a megoldást a bevezetendő Megtekintő szerepkör teszi lehetővé a közeljövőben az új munkaterületi felületen.
+> Ha sorszintű biztonságot (RLS) szeretne érvényesíteni a munkaterület tartalmát tallózó Power BI Pro-felhasználók számára, rendelje hozzá a felhasználókhoz a Megtekintő szerepkört.
 
 További háttér-információkat talál az [új munkaterületekről](service-new-workspaces.md) szóló cikkben.
 
@@ -42,7 +42,7 @@ További háttér-információkat talál az [új munkaterületekről](service-ne
    
      ![Az új munkaterületi felhasználói felület](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     Ha a **Visszaállítás klasszikusra** beállítást választja, egy Office 365-csoport alapján hoz létre munkaterületet. Ezzel a lehetőséggel élhet akkor, ha **A tagok csak a Power BI-tartalmak megtekintésére jogosultak** beállítással kell sorszintű biztonságot érvényesítenie a munkaterület tagjai számára.
+     Ha a **Visszaállítás klasszikusra** beállítást választja, egy [Office 365-csoport alapján hoz létre munkaterületet](service-create-workspaces.md). 
 
 2. Nevezze el a munkaterületet. Ha a név nem használható, szerkesztéssel hozzon létre egy egyedi nevet.
    

@@ -10,24 +10,22 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 385cae5511d89ec86e52232066227687673f9523
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d627b74d4c681e409424b18a117743e0488dc34c
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61394111"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715465"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Nagy sűrűségű mintavételezés a Power BI-pontdiagramokban
-A **Power BI Desktop** 2017. szeptemberi kiadásától kezdve és a **Power BI szolgáltatás** frissítéseiben egy új mintavételi algoritmus érhető el, amelynek köszönhetően a pontdiagramok hatékonyabban jelenítik meg a nagy sűrűségű adatokat.
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+A **Power BI Desktop** 2017. szeptemberi kiadásától kezdve egy új mintavételi algoritmus érhető el, amelynek köszönhetően a pontdiagramok hatékonyabban jelenítik meg a nagy sűrűségű adatokat.
 
 Ha például vállalata értékesítési tevékenységeiről készít pontdiagramot, az üzletenként évente több ezer adatpontot jelent. Egy ilyen értékesítési információkat tartalmazó pontdiagram mintát vesz az elérhető adatokból (reprezentatív adatokat választ, amelyek megmutatják, hogyan alakultak az értékesítések az idő múlásával), és egy pontdiagramot hoz létre, amely az alapul szolgáló adatokat ábrázolja. Ez a gyakori eljárás a nagy sűrűségű pontdiagramoknál. Ebben a cikkben részletezzük, miben fejlődött a Power BI mintavételi folyamata nagy sűrűségű adatok esetén.
 
-![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_01.png)
-
-> [!NOTE]
-> A cikkben bemutatott **nagy sűrűségű mintavételi** algoritmus elérhető a **Power BI Desktop** és a **Power BI szolgáltatás** pontdiagramjaiban is.
-> 
-> 
+![példa pontdiagramra](media/desktop-high-density-scatter-charts/high-density-scatter-charts-01.png)
 
 ## <a name="how-high-density-scatter-charts-work"></a>A nagy sűrűségű pontdiagramok működése
 Korábban a **Power BI** determinisztikus módon választott mintaadatpontokat az alapul szolgáló adatok teljes tartományából pontdiagram létrehozásához. Pontosabban a Power BI kiválasztotta a pontdiagram-sorozat első és utolsó sorát, majd egyenlően osztotta el a fennmaradó sorokat úgy, hogy a pontdiagramon összesen 3500 adatpont jelenjen meg. Ha például a minta 35 000 sorral rendelkezett, akkor a program megjelenítette az első és az utolsó sort, és közöttük minden tizedik sort (35 000 / 10 = minden tizedik sor = 3500 adatpont). Korábban a nullértékek és a nem ábrázolható pontok (például a szöveges értékek) nem jelentek meg, így nem lettek figyelembe véve a vizualizáció készítésekor. Ilyen mintavételezéskor a pontdiagram észlelhető sűrűsége a reprezentatív adatpontokon is alapult, így a vizualizáció elméleti sűrűsége a mintavételezett pontoktól függött, nem az alapul szolgáló adatok teljes készletétől.
@@ -60,20 +58,22 @@ Bizonyos esetekben a **nagy sűrűségű mintavételezési** algoritmus nem alka
 
 * Ha a jobb gombbal a **Részletek** elemre kattint, és kiválasztja az **Adatot nem tartalmazó elemek megjelenítése** lehetőséget a menüből, a pontdiagram visszaáll az eredeti algoritmus használatára.
   
-  ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_02.png)
+  ![példa adatot nem tartalmazó elemek megjelenítésére](media/desktop-high-density-scatter-charts/high-density-scatter-charts-02.png)
 * Ha bármilyen érték szerepel a **Lejátszási** tengelyen, a pontdiagram visszaáll az eredeti algoritmus használatára.
 * Ha az X és az Y tengely is hiányzik a pontdiagramon, az visszaáll az eredeti algoritmusra.
 * Ha **arányvonalat** használ az **Elemzés** panelen, a diagram visszaáll az eredeti algoritmus használatára.
   
-  ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_03.png)
+  ![példa arányvonal használatára](media/desktop-high-density-scatter-charts/high-density-scatter-charts-03.png)
 
 ## <a name="how-to-turn-on-high-density-sampling-for-a-scatter-chart"></a>A nagy sűrűségű mintavételezés bekapcsolása pontdiagramokhoz
 A **nagy sűrűségű mintavétel** bekapcsolásához válasszon ki egy pontdiagramot, lépjen a **Formátum** ablaktáblára, bontsa ki az **Általános** kártyát, majd a kártya aljának közelében állítsa a **Nagy sűrűségű mintavétel** csúszkát a **Be** állásba.
 
-![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_04.png)
+![példa nagy sűrűségű mintavételre](media/desktop-high-density-scatter-charts/high-density-scatter-charts-04.png)
 
 > [!NOTE]
 > Ha a csúszka be van kapcsolva, a Power BI minden esetben megkísérli a **nagy sűrűségű mintavételezési** algoritmus használatát. Ha az algoritmus nem használható (például megad valamilyen értéket a *Lejátszási* tengelyen), a csúszka **Be** állapotban marad annak ellenére, hogy a diagram visszaáll a hagyományos algoritmus használatára. Ha ezután eltávolítja az értéket a *Lejátszási* tengelyről (vagy a körülmények úgy változnak, hogy a nagy sűrűségű mintavételezési algoritmus használhatóvá válik), a diagram automatikusan a nagy sűrűségű mintavételezést fogja használni, mivel ez a funkció aktív.
+> 
+
 > 
 > [!NOTE]
 > Az adatpontok index szerint vannak csoportosítva vagy kiválasztva. Az, hogy megjelenik-e jelmagyarázat, nem befolyásolja a mintavételezést az algoritmushoz, csak a vizualizáció elrendezésére van hatással.

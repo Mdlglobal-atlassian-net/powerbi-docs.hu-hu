@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e001d35761eb7918aab2c427c3400df526e4dbc0
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 87a8333c89f2682640649e757984c6b02e10c3a8
+ms.sourcegitcommit: 0687908938e4c3b68401fd511ec1c28fb54ddeb3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71192378"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71691270"
 ---
 # <a name="arcgis-maps-in-power-bi-desktop-by-esri"></a>ESRI ArcGIS-térképek a Power BI Desktopban
 
@@ -333,6 +333,8 @@ Amikor egy felhasználó az ArcGIS Maps for Power BI egy, az Esri által ajánlo
 
 Az Esri ArcGIS Maps for Power BI működésével kapcsolatos részletes technikai kérdésekkel az Esri támogatási oldalához fordulhat.
 
+**Milyen adatok lesznek elküldve az Esrinek?**
+Arról, hogy milyen adatok lesznek elküldve az Esrinek, az ő [dokumentációjukban](https://doc.arcgis.com/en/maps-for-powerbi/get-started/data-transfer.htm) olvashat.
 
 **Van valamilyen díja az ArcGIS Maps for Power BI használatának?**
 

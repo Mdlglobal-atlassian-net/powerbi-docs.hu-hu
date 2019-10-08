@@ -10,22 +10,22 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 75641468b52d4174779b9ddd03ed7aab27b6c5d0
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 62bb2f1e334d6bb125a2fffc49cd62611080ef29
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100415"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968926"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>A Security Assertion Markup Language (SAML) használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez
 
-Használhatja a [Security Assertion Markup Language- (SAML-)](https://www.onelogin.com/pages/saml) protokollt a közvetlen SSO-kapcsolat engedélyezéséhez. Az SSO engedélyezése egyszerűvé teszi a Power BI-jelentések és -irányítópultok számára az adatok helyszíni forrásokból történő frissítését.
+Használhatja a [Security Assertion Markup Language- (SAML-)](https://www.onelogin.com/pages/saml) protokollt a közvetlen SSO-kapcsolat engedélyezéséhez. Az SSO engedélyezése egyszerűvé teszi a Power BI-jelentések és -irányítópultok számára az adatok helyszíni forrásokból történő frissítését, miközben tiszteletben tartják azokat a felhasználói engedélyeket is, amelyeket azokon a forrásokon konfiguráltak.
 
 ## <a name="supported-data-sources"></a>Támogatott adatforrások
 
 Jelenleg az SAP HANA használata támogatott a SAML-protokoll esetén. További információt az egyszeri bejelentkezés a SAML használatával az SAP HANA rendszerhez történő beállításáról és konfigurálásáról a [SAML-alapú a BI Platformhoz történő egyszeri bejelentkezést a HANA használatakor](https://wiki.scn.sap.com/wiki/display/SAPHANA/SAML+SSO+for+BI+Platform+to+HANA) ismertető témakörben talál az SAP HANA dokumentációjában.
 
-További adatforrásokat a [Kerberos](service-gateway-sso-kerberos.md) használata esetén támogatunk.
+További adatforrásokat (többek között HANA) a [Kerberos](service-gateway-sso-kerberos.md) használata esetén támogatunk.
 
 Ne feledje, hogy a HANA számára a titkosítás engedélyezése **nagyon** ajánlott még az SAML SSO-kapcsolat létrehozása előtt (vagyis a HANA-kiszolgálót úgy kell konfigurálnia, hogy fogadja a titkosított kapcsolatokat, és az átjárót is úgy kell konfigurálnia, hogy titkosítást használjon a HANA-kiszolgálóval való kommunikációhoz). A HANA ODBC-illesztőprogram alapértelmezés szerint **nem** képes az SAML helyességi feltételeinek titkosítására, és bekapcsolt titkosítás nélkül az aláírt SAML típusú helyességi feltételt a rendszer az átjáróról a HANA-kiszolgálóra korlátozás nélkül küldi, így azt harmadik felek elfoghatják és újra felhasználhatják. Ha engedélyezni szeretné a HANA-titkosítást az OpenSSL-könyvtárral, tekintse meg [Az SAP HANA titkosításának engedélyezése](/power-bi/desktop-sap-hana-encryption) című cikket.
 
@@ -43,7 +43,7 @@ A következő lépések azt ismertetik, hogyan hozhat létre megbízhatósági k
    openssl req -new -x509 -newkey rsa:2048 -days 3650 -sha256 -keyout CA_Key.pem -out CA_Cert.pem -extensions v3_ca
    ```
 
-    Ügyeljen a legfelső szintű hitelesítésszolgáltató tanúsítványának biztonságára – ha egy külső fél hozzájut, akkor arra használhatja, hogy jogosulatlan hozzáférést szerezzen a HANA-kiszolgálóhoz. 
+    Ügyeljen a legfelső szintű hitelesítésszolgáltató titkos kulcsának biztonságára – ha egy külső fél hozzájut, akkor arra használhatja, hogy jogosulatlan hozzáférést szerezzen a HANA-kiszolgálóhoz.
 
     Adja hozzá a tanúsítványt (például CA_Cert.pem) a HANA-kiszolgáló megbízhatósági tárolójához, hogy a HANA-kiszolgáló megbízzon a most létrehozott legfelső szintű hitelesítésszolgáltató által aláírt minden tanúsítványban. A HANA-kiszolgáló megbízhatósági tárolójának helye az **ssltruststore** konfigurációs beállítás vizsgálatával található meg. Ha követte a SAP dokumentációját azzal kapcsolatban, hogyan konfigurálja az OpenSSL-t, akkor a HANA-kiszolgáló már megbízhat egy legfelső szintű hitelesítésszolgáltatóban, amelyet újból felhasználhat. További részletek: [Az OpenSSL konfigurálása az SAP HANA Studio és az SAP HANA-kiszolgálók közötti kommunikációhoz](https://archive.sap.com/documents/docs/DOC-39571). Ha több HANA-kiszolgálóval is rendelkezik, amelyekhez engedélyezi szeretné az SAML SSO-t, győződjön meg róla, hogy mindegyik kiszolgáló megbízik ebben a legfelső szintű hitelesítésszolgáltatóban.
 
@@ -61,7 +61,7 @@ A következő lépések azt ismertetik, hogyan hozhat létre megbízhatósági k
 
 Az eredményül kapott identitásszolgáltatói tanúsítvány egy évig lesz érvényes (lásd a -days kapcsolót). Most importálja az identitásszolgáltatói tanúsítványát a HANA Studióban egy új SAML-identitásszolgáltató létrehozásához.
 
-1. Az SAP HANA Studio felületén kattintson a jobb gombbal az SAP HANA-kiszolgáló mezőjére, majd nyissa meg a **Security** > **Open Security Console** > **SAML Identity Provider** > **OpenSSL Cryptographic Library** (Biztonság>Biztonsági konzol megnyitása>SAML-identitásszolgáltató>OpenSSL titkosítási kódtár) elemet.
+1. Az SAP HANA Studio felületén kattintson a jobb gombbal az SAP HANA-kiszolgáló mezőjére, majd nyissa meg a **Security** &gt; **Open Security Console** &gt; **SAML Identity Provider** &gt; **OpenSSL Cryptographic Library** (Biztonság>Biztonsági konzol megnyitása>SAML-identitásszolgáltató>OpenSSL titkosítási kódtár) elemet.
 
     ![Identitásszolgáltatók](media/service-gateway-sso-saml/identity-providers.png)
 
@@ -77,13 +77,13 @@ Az eredményül kapott identitásszolgáltatói tanúsítvány egy évig lesz é
 
     ![A SAML konfigurálása](media/service-gateway-sso-saml/configure-saml.png)
 
-1. Válassza ki a 2. lépésben létrehozott identitásszolgáltatót. **Külső identitás** esetén adja meg a Power BI-felhasználó UPN-jét (ez általában az az e-mail-cím, amellyel a felhasználó bejelentkezik a Power BI-ba), majd válassza a **Hozzáadás** lehetőséget. Tartsa szem előtt, hogy ha az átjárót az *ADUserNameReplacementProperty* beállítással konfigurálta, akkor meg kell adnia a Power BI-felhasználó eredeti UPN-jét helyettesítő értéket. Ha az *ADUserNameReplacementProperty* alatt például a **SAMAccountName** értéket adja meg, akkor a felhasználóhoz tartozó **SAMAccountName** értéket kell megadnia.
+1. Válassza ki a 2. lépésben létrehozott identitásszolgáltatót. **Külső identitás** esetén adja meg a Power BI-felhasználó UPN-jét (pl. az az e-mail-cím, amellyel a felhasználó bejelentkezik a Power BI-ba), majd válassza a **Hozzáadás** lehetőséget. Tartsa szem előtt, hogy ha az átjárót az *ADUserNameReplacementProperty* beállítással konfigurálta, akkor meg kell adnia a Power BI-felhasználó eredeti UPN-jét helyettesítő értéket. Ha az *ADUserNameReplacementProperty* alatt például a **SAMAccountName** értéket adja meg, akkor a felhasználóhoz tartozó **SAMAccountName** értéket kell megadnia.
 
     ![Identitásszolgáltató kiválasztása](media/service-gateway-sso-saml/select-identity-provider.png)
 
-Most, hogy rendelkezik az átjáró beállított tanúsítványával és identitásával, alakítsa át a tanúsítványt pfx-formátumúra, és konfigurálja az átjárót tartalmazó számítógépet a tanúsítvány használatára.
+Most, hogy rendelkezik az átjáró beállított tanúsítványával és identitásával, alakítsa át a tanúsítványt pfx-formátumúra, és konfigurálja az átjárót a tanúsítvány használatára.
 
-1. Alakítsa át a tanúsítványt pfx-formátumúra a következő parancs futtatásával. Vegye figyelembe, hogy ez a parancs a „root” értéket állítja be a pfx-fájl jelszavaként.
+1. Alakítsa át a tanúsítványt pfx-formátumúra a következő parancs futtatásával. Ez a parancs az eredményül kapott .pfx-fájnak a samlcert.pfx nevet adja, és a „root” jelszót állítja be.
 
     ```
     openssl pkcs12 -export -out samltest.pfx -in IdP_Cert.pem -inkey IdP_Key.pem -passin pass:root -passout pass:root
@@ -91,11 +91,11 @@ Most, hogy rendelkezik az átjáró beállított tanúsítványával és identit
 
 1. Másolja a pfx-fájlt az átjárót tartalmazó számítógépre:
 
-    1. Kattintson duplán a samltest.pfx fájlra, majd válassza a **Helyi gép** > **Tovább** elemet.
+    1. Kattintson duplán a samltest.pfx fájlra, majd válassza a **Helyi gép** &gt; **Tovább** elemet.
 
     1. Írja be a jelszót, majd válassza a **Tovább** elemet.
 
-    1. Válassza a **Minden tanúsítvány tárolása ebben a tárolóban** lehetőséget, majd kattintson a **Tallózás** > **Személyes** > **OK** elemre.
+    1. Válassza a **Minden tanúsítvány tárolása ebben a tárolóban** lehetőséget, majd kattintson a **Tallózás** &gt; **Személyes** &gt; **OK** elemre.
 
     1. Kattintson a **Tovább**, majd a **Befejezés** gombra.
 
@@ -111,13 +111,13 @@ Most, hogy rendelkezik az átjáró beállított tanúsítványával és identit
 
         ![Beépülő modul hozzáadása](media/service-gateway-sso-saml/add-snap-in.png)
 
-    1. Válassza ki a **Tanúsítványok** > **Hozzáadás** elemet, majd kattintson a **Számítógép-fiók** > **Tovább** elemre.
+    1. Válassza ki a **Tanúsítványok** &gt; **Hozzáadás** elemet, majd kattintson a **Számítógép-fiók** &gt; **Tovább** elemre.
 
-    1. Kattintson a **Helyi számítógép** > **Befejezés** > **OK** elemre.
+    1. Válassza a **Helyi számítógép** &gt; **Befejezés** &gt; **OK** lehetőséget.
 
-    1. Bontsa a **Tanúsítványok** > **Személyes** > **Tanúsítványok** tartalmát, és keresse meg a tanúsítványt.
+    1. Bontsa a **Tanúsítványok** &gt; **Személyes** &gt; **Tanúsítványok** tartalmát, és keresse meg a tanúsítványt.
 
-    1. Kattintson a jobb gombbal a tanúsítványra, és válassza a **Minden feladat** > **Titkos kulcsok kezelése** elemet.
+    1. Kattintson a jobb gombbal a tanúsítványra, és válassza a **Minden feladat** &gt; **Titkos kulcsok kezelése** elemet.
 
         ![Titkos kulcsok kezelése](media/service-gateway-sso-saml/manage-private-keys.png)
 
@@ -135,9 +135,9 @@ Végül kövesse ezeket a lépéseket a tanúsítvány-ujjlenyomat az átjáró 
 
 1. Másolja ki az Ön által létrehozott tanúsítvány ujjlenyomatát.
 
-1. Keresse meg az átjáró könyvtárát, amelynek alapértelmezett helye: C:\Program Files\On-premises data gateway.
+1. Keresse meg az átjáró könyvtárát, amelynek alapértelmezett helye: *C:\Program Files\On-premises data gateway*.
 
-1. Nyissa meg a PowerBI.DataMovement.Pipeline.GatewayCore.dll.config fájlt, és keresse meg a *SapHanaSAMLCertThumbprint* szakaszt. Illessze be a vágólapra másolt ujjlenyomatot.
+1. Nyissa meg a **PowerBI.DataMovement.Pipeline.GatewayCore.dll.config** fájlt, és keresse meg az *SapHanaSAMLCertThumbprint* szakaszt. Illessze be a vágólapra másolt ujjlenyomatot.
 
 1. Indítsa újra az átjárószolgáltatást.
 
@@ -149,7 +149,7 @@ Most már használhatja az **Átjáró kezelése** lapot a Power BI-ban az SAP H
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 
-Az SSO konfigurálása után a következő hibaüzenet jelenhet meg a Power BI-portálon: „A megadott hitelesítő adatok nem használhatók az SapHana forráshoz.” Ez a hiba azt jelenti, hogy az SAP HANA elutasította az SAML-hitelesítő adatokat.
+Az SSO konfigurálása után a következő hibaüzenet jelenhet meg a Power BI-portálon: *„A megadott hitelesítő adatok nem használhatók az SapHana forráshoz.”* Ez a hiba azt jelenti, hogy az SAP HANA elutasította az SAML-hitelesítő adatokat.
 
 A kiszolgálóoldali hitelesítés követése részletes információt nyújt az SAP HANA hitelesítési hibáinak elhárításához. SAP HANA-kiszolgálójához az alábbi lépések végrehajtásával konfigurálhat követést.
 

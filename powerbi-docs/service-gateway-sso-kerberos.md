@@ -10,24 +10,24 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9958059fcf0d86323fc95f44f6fcfcb08fe7b52b
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 0fb52262790c6c1935d8152f043f726a9471817d
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100422"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968950"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Kerberos-alapú egyszeri bejelentkezés konfigurálása a Power BI szolgáltatásról helyszíni adatforrásokhoz
 
-Használja a [Kerberos által korlátozott delegálást](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) a közvetlen egyszeri bejelentkezéses (SSO-) kapcsolat engedélyezéséhez. Az SSO engedélyezése egyszerűvé teszi a Power BI-jelentések és -irányítópultok számára az adatok helyszíni forrásokból történő frissítését.
+Használja a [Kerberos által korlátozott delegálást](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) a közvetlen egyszeri bejelentkezéses (SSO-) kapcsolat engedélyezéséhez. Az SSO engedélyezése egyszerűvé teszi a Power BI-jelentések és -irányítópultok számára az adatok helyszíni forrásokból történő frissítését, miközben tiszteletben tartják azokat a felhasználói engedélyeket is, amelyeket azokon a forrásokon konfiguráltak.
 
 Számos elemet kell konfigurálni ahhoz, hogy a Kerberos által korlátozott delegálás megfelelően működjön, beleértve a _szolgáltatás egyszerű szolgáltatásneveit_ (SPN) és a delegálási beállításokat a szolgáltatásfiókokhoz.
 
-### <a name="prerequisite-1-install-and-configure-the-microsoft-on-premises-data-gateway"></a>1. előfeltétel: A Microsoft helyszíni adatátjáró telepítése és konfigurálása
+### <a name="prerequisite-1-install-and-configure-the-microsoft-on-premises-data-gateway"></a>1\. előfeltétel: A Microsoft helyszíni adatátjáró telepítése és konfigurálása
 
 A helyszíni adatátjáró támogatja a helyben történő frissítést, valamint a meglévő átjárók _beállításainak átvételét_.
 
-### <a name="prerequisite-2-run-the-gateway-windows-service-as-a-domain-account"></a>2. előfeltétel: Az átjáró Windows-szolgáltatásának futtatása tartományi fiókként
+### <a name="prerequisite-2-run-the-gateway-windows-service-as-a-domain-account"></a>2\. előfeltétel: Az átjáró Windows-szolgáltatásának futtatása tartományi fiókként
 
 A szabványos telepítés során az átjáró a gép helyi szolgáltatásfiókjával fut (ebben az esetben: _NT Service\PBIEgwService_), az alábbi képen látható módon:
 
@@ -38,7 +38,7 @@ A Kerberos által korlátozott delegálás engedélyezéséhez az átjárót tar
 > [!NOTE]
 > Ha az Azure AD Connect konfigurálva van, és a felhasználói fiókok szinkronizálva vannak, az átjárószolgáltatásnak nem kell helyi Azure AD-kereséseket végrehajtania futásidőben. Ehelyett egyszerűen a helyi szolgáltatási SID-t az átjárószolgáltatáshoz, így minden szükséges konfigurációt elvégezhet az Azure Active Directoryban. A Kerberos által korlátozott delegálás a cikkben ismertetett konfigurációs lépései ugyanazok, mint az Azure Active Directoryhoz szükséges lépések. A tartományi fiók helyett ezeket csupán az átjáró számítógép-objektumára (amelyet a helyi szolgáltatási SID azonosít) kell alkalmazni az Azure AD-ben.
 
-### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>3. előfeltétel: Tartományi rendszergazdai jogosultsággal kell rendelkezni az SPN-ek (SetSPN) és a Kerberos által korlátozott delegálási beállítások konfigurálásához
+### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>3\. előfeltétel: Tartományi rendszergazdai jogosultsággal kell rendelkezni az SPN-ek (SetSPN) és a Kerberos által korlátozott delegálási beállítások konfigurálásához
 
 Nem ajánlott, hogy egy tartományi rendszergazda ideiglenesen vagy véglegesen jogosultságot adjon valaki másnak az egyszerű szolgáltatásnevek és a Kerberos-delegálási beállítások konfigurálására anélkül, hogy rendszergazdai jogosultságot követelne meg. A következő szakaszban részletezzük az ajánlott konfigurációs lépéseket.
 
@@ -83,9 +83,9 @@ A Kerberos által korlátozott delegálást protokollváltással kell konfigurá
 
 Ez a szakasz azt feltételezi, hogy már konfigurálta az egyszerű szolgáltatásneveket az alapul szolgáló adatforrásokhoz (például SQL Server, SAP HANA, SAP BW, Teradata és Spark). Az adatforrás-kiszolgálók egyszerű szolgáltatásneveinek konfigurálásával az adott adatbázis-kiszolgáló műszaki dokumentációjában ismerkedhet meg. Érdemes elolvasni az [Ellenőrző lista a Kerberoshoz](https://techcommunity.microsoft.com/t5/SQL-Server-Support/My-Kerberos-Checklist-8230/ba-p/316160) című blogbejegyzés *Milyen SPN-re van szükség az alkalmazáshoz?* részét.
 
-A következő lépésekben egy helyszíni környezetet feltételezünk két géppel: egy átjárót tartalmazó géppel és egy SQL Servert futtató adatbázis-kiszolgálóval, amelyet már korábban konfigurált a Kerberos-alapú egyszeri bejelentkezéshez. A lépéseket a többi támogatott adatforráshoz is felhasználhatja, feltéve, hogy az adatforrás már konfigurálva van Kerberos-alapú egyszeri bejelentkezéshez. A példa kedvéért a következő beállításokat és neveket is feltételezzük:
+A következő lépésekben egy helyszíni környezetet feltételezünk két géppel, ugyanabban a tartományban: egy átjárót tartalmazó géppel és egy SQL Servert futtató adatbázis-kiszolgálóval, amelyet már korábban konfigurált a Kerberos-alapú egyszeri bejelentkezéshez. A lépéseket a többi támogatott adatforráshoz is felhasználhatja, feltéve, hogy az adatforrás már konfigurálva van Kerberos-alapú egyszeri bejelentkezéshez. A példa kedvéért a következő beállításokat és neveket is feltételezzük:
 
-* Active Directory-tartomány (Netbios): Contoso
+* Active Directory-tartomány (Netbios): **Contoso**
 * Átjáró gépneve: **MyGatewayMachine**
 * Átjárószolgáltatás-fiók: **Contoso\GatewaySvc**
 * SQL Server adatforrás gépneve: **TestSQLServer**
@@ -105,11 +105,11 @@ A delegálási beállítások konfigurálása:
 
 6. Az új párbeszédpanelen válassza a **Felhasználók vagy számítógépek** elemet.
 
-7. Adja meg az adatforrás szolgáltatásfiókját, például az SQL Server-adatforrások a következőhöz hasonló szolgáltatásfiókot használnak: **Contoso\SQLService**. Miután hozzáadta a fiókot, kattintson az **OK** gombra.
+7. Adja meg az adatforrás szolgáltatásfiókját, például az SQL Server-adatforrások a következőhöz hasonló szolgáltatásfiókot használnak: **Contoso\SQLService**. Ehhez a fiókhoz már be kell legyen állítva az adatforrás megfelelő SPN-je. Miután hozzáadta a fiókot, kattintson az **OK** gombra.
 
 8. Válassza ki azt az egyszerű szolgáltatásnevet, amelyet létrehozott az adatbázis-kiszolgálóhoz. A példánkban az egyszerű szolgáltatásnév az **MSSQLSvc** kifejezéssel kezdődik. Ha megadta az adatbázis-szolgáltatás teljes tartománynevét és a NetBIOS egyszerű szolgáltatásnevét is, válassza ki mindkettőt. Lehet, hogy csak az egyiket látja.
 
-9. Kattintson az **OK** gombra. Ekkor az SPN-nek meg kell jelennie a listában.
+9. Kattintson az **OK** gombra. Ekkor meg kell jelennie az SPN-nek azon szolgáltatások listájában, amelyekhez az átjáró szolgáltatás fiókja delegált hitelesítő adatokat tud megjeleníteni.
 
     ![Képernyőkép az Átjáró-összekötő tulajdonságai párbeszédpanelről](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
@@ -124,6 +124,8 @@ Az [erőforrás-alapú korlátozott Kerberos-delegálással](/windows-server/sec
 
 A következő lépésekben egy helyszíni környezetet feltételezünk két géppel, eltérő tartományokban: egy átjárót tartalmazó géppel és egy SQL Servert futtató adatbázis-kiszolgálóval, amelyet már korábban konfigurált a Kerberos-alapú egyszeri bejelentkezéshez. A lépéseket a többi támogatott adatforráshoz is felhasználhatja, feltéve, hogy az adatforrás már konfigurálva van Kerberos-alapú egyszeri bejelentkezéshez. A példa kedvéért a következő beállításokat és neveket is feltételezzük:
 
+* Active Directory-előtértartomány (Netbios): **ContosoFrontEnd**
+* Active Directory-háttértartomány (Netbios): **ContosoBackEnd**
 * Átjáró gépneve: **MyGatewayMachine**
 * Átjárószolgáltatás-fiók: **ContosoFrontEnd\GatewaySvc**
 * SQL Server adatforrás gépneve: **TestSQLServer**
@@ -135,22 +137,26 @@ A példaként megadott nevekkel és beállításokkal a konfigurációs lépése
 
     ![Átjáró-összekötő tulajdonságai](media/service-gateway-sso-kerberos-resource/gateway-connector-properties.png)
 
-2. Az **Active Directory – felhasználók és számítógépek** beépülő modul a **ContosoBackEnd** tartománybeli tartományvezérlőn való használatával győződjön meg róla, hogy nem alkalmazott delegálási beállításokat a háttérbeli szolgáltatásfiókra. Emellett győződjön meg arról, hogy nincs beállítva az **msDS-AllowedToActOnBehalfOfOtherIdentity** attribútum ehhez a fiókhoz. Ezt az **attribútumszerkesztőben**, a következő kép szerint találhatja meg:
+2. Az **Active Directory – felhasználók és számítógépek** beépülő modul a **ContosoBackEnd** tartománybeli tartományvezérlőn való használatával győződjön meg róla, hogy nem alkalmazott delegálási beállításokat a háttérbeli szolgáltatásfiókra.
 
     ![SQL szolgáltatástulajdonságok](media/service-gateway-sso-kerberos-resource/sql-service-properties.png)
 
-3. Hozzon létre egy csoportot az **Active Directory – felhasználók és számítógépek** beépülő modulban a **ContosoBackEnd** tartománybeli tartományvezérlőn. Adja hozzá a csoporthoz az átjárószolgáltatás-fiókot, a következő képhez hasonlóan. A képen egy új, _ResourceDelGroup_ nevű csoport látható, amelyhez hozzáadja a **GatewaySvc** átjárószolgáltatás-fiókot.
+3. Emellett győződjön meg arról, hogy nincs beállítva az **msDS-AllowedToActOnBehalfOfOtherIdentity** attribútum ehhez a fiókhoz. Ezt az **attribútumszerkesztőben**, a következő kép szerint találhatja meg:
+
+    ![SQL-szolgáltatás attribútumai](media/service-gateway-sso-kerberos-resource/sql-service-attributes.png)
+
+4. Hozzon létre egy csoportot az **Active Directory – felhasználók és számítógépek** beépülő modulban a **ContosoBackEnd** tartománybeli tartományvezérlőn. Adja hozzá a csoporthoz az átjárószolgáltatás-fiókot, a következő képhez hasonlóan. A képen egy új, _ResourceDelGroup_ nevű csoport látható, amelyhez hozzáadja a **GatewaySvc** átjárószolgáltatás-fiókot.
 
     ![Csoporttulajdonságok](media/service-gateway-sso-kerberos-resource/group-properties.png)
 
-4. Nyissa meg a parancssort, és futtassa a következő parancsokat a **ContosoBackEnd** tartománybeli tartományvezérlőn az **msDS-AllowedToActOnBehalfOfOtherIdentity** attribútum a háttérbeli szolgáltatásfiókon való frissítéséhez:
+5. Nyissa meg a parancssort, és futtassa a következő parancsokat a **ContosoBackEnd** tartománybeli tartományvezérlőn az **msDS-AllowedToActOnBehalfOfOtherIdentity** attribútum a háttérbeli szolgáltatásfiókon való frissítéséhez:
 
     ```powershell
     $c = Get-ADGroup ResourceDelGroup
     Set-ADUser SQLService -PrincipalsAllowedToDelegateToAccount $c
     ```
 
-5. Az **Active Directory – felhasználók és számítógépek** modulban ellenőrizheti, hogy a frissítés megjelenik-e a háttérbeli szolgáltatásfiók tulajdonságainak „Attribútumszerkesztő” lapján.
+6. Az **Active Directory – felhasználók és számítógépek** modulban ellenőrizheti, hogy a frissítés megjelenik-e a háttérbeli szolgáltatásfiók tulajdonságainak „Attribútumszerkesztő” lapján. Az **msDS-AllowedToActOnBehalfOfOtherIdentity** most már be van állítva.
 
 ## <a name="grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine"></a>Átjárószolgáltatás-fiók helyi szabályzatjogosultságainak megadása az átjárógépen
 
@@ -158,7 +164,7 @@ Végül az átjárószolgáltatást futtató gépen (a példánkban **MyGatewayM
 
 1. Az átjárót tartalmazó számítógépen futtassa a következőt: *gpedit.msc*.
 
-2. Navigáljon a **Helyi számítógép-szabályzat** > **Számítógép konfigurációja** > **A Windows beállításai** > **Biztonsági beállítások** > **Helyi szabályzatok** > **Felhasználói jogok kiosztása** elemhez.
+2. Lépjen a **Helyi számítógép szabályzata** &gt; **Számítógép-konfiguráció** &gt; **Windows-beállítások** &gt; **Biztonsági beállítások** &gt; **Helyi szabályzatok** &gt; **Felhasználói jogok kiosztása** területre.
 
     ![Képernyőkép a Helyi számítógép-szabályzat mappastruktúrájáról](media/service-gateway-sso-kerberos/user-rights-assignment.png)
 
@@ -166,7 +172,7 @@ Végül az átjárószolgáltatást futtató gépen (a példánkban **MyGatewayM
 
     ![Képernyőkép az Ügyfél megszemélyesítése szabályzatról](media/service-gateway-sso-kerberos/impersonate-client.png)
 
-    Kattintson a jobb gombbal, és nyissa meg a **Tulajdonságok** elemet. Ellenőrizze a fiókok listáját. A listának tartalmaznia kell az átjáró-szolgáltatásfiókot (**Contoso\GatewaySvc**).
+    Kattintson a jobb gombbal, és nyissa meg a **Tulajdonságok** elemet. Ellenőrizze a fiókok listáját. Tartalmaznia kell az átjárószolgáltatás-fiókot (**Contoso\GatewaySvc** or **ContosoFrontEnd\GatewaySvc** a korlátozott delegálás típusától függően).
 
 4. A **Felhasználói jogok kiosztása** lehetőségnél a szabályzatok listájából válassza ki **Az operációs rendszer részeként való működés (SeTcbPrivilege)** elemet. Győződjön meg róla, hogy az átjáró-szolgáltatásfiók a fiókok listájában is szerepel.
 
@@ -184,23 +190,23 @@ Ha nincs konfigurálva az Azure AD Connect, kövesse ezeket a lépéseket a Powe
 
     ![Képernyőkép a Feladatkezelő Szolgáltatások lapjáról](media/service-gateway-sso-kerberos/restart-gateway.png)
 
-1. Minden felhasználó esetén, aki számára engedélyezni szeretné a Kerberos SSO-t, állítsa egy helyi (és az adatforráshoz SSO-engedéllyel bíró) Active Directory-felhasználó `msDS-cloudExtensionAttribute1` tulajdonságát a Power BI szolgáltatás felhasználójának teljes felhasználónevére. Ha például `test@contoso.com` felhasználóként jelentkezik be a Power BI szolgáltatásba, ezt a felhasználót pedig egy helyi, SSO-engedéllyel rendelkező Active Directory-felhasználóhoz szeretné rendelni (például hozzá: `test@LOCALDOMAIN.COM`), állítsa `test@LOCALDOMAIN.COM` `msDS-cloudExtensionAttribute1` tulajdonságát a következőre: `test@contoso.com`.
+1. Minden felhasználó esetén, aki számára engedélyezni szeretné a Kerberos SSO-t, állítsa egy helyi (és az adatforráshoz SSO-engedéllyel bíró) Active Directory-felhasználó `msDS-cloudExtensionAttribute1` tulajdonságát a Power BI szolgáltatás felhasználójának teljes felhasználónevére (azaz UPN-jére). Ha például `test@contoso.com` felhasználóként jelentkezik be a Power BI szolgáltatásba, ezt a felhasználót pedig egy helyi, SSO-engedéllyel rendelkező Active Directory-felhasználóhoz szeretné rendelni (például hozzá: `test@LOCALDOMAIN.COM`), állítsa `test@LOCALDOMAIN.COM` `msDS-cloudExtensionAttribute1` tulajdonságát a következőre: `test@contoso.com`.
 
-Az `msDS-cloudExtensionAttribute1` attribútumot az Active Directory – Felhasználók és számítógépek (Microsoft Management Console – MMC) beépülő modullal is beállíthatja.
-
-1. Tartományi rendszergazdaként futtassa az Active Directory – Felhasználók és számítógépek MMC-modult.
-
-1. Kattintson a jobb gombbal a tartományra, válassza a Keresés lehetőséget, és írja be a leképezési helyi Active Directory-felhasználó fióknevét.
-
-1. Válassza az **Attribútumszerkesztő** lapot.
-
-    Keresse meg az `msDS-cloudExtensionAttribute1` elemet, és kattintson rá duplán. Állítsa a tulajdonság értékét arra a teljes felhasználónévre, amelyet a Power BI szolgáltatásba való bejelentkezéshez használ.
-
-1. Kattintson az **OK** gombra.
-
-    ![Képernyőkép a Sztringattribútum-szerkesztő párbeszédpanelről](media/service-gateway-sso-kerberos/edit-attribute.png)
-
-1. Kattintson az **Alkalmaz** elemre. Ellenőrizze, hogy az **Érték** oszlopban a megfelelő érték lett-e beállítva.
+    Az `msDS-cloudExtensionAttribute1` attribútumot az Active Directory – Felhasználók és számítógépek (Microsoft Management Console – MMC) beépülő modullal is beállíthatja:
+    
+    1. Tartományi rendszergazdaként futtassa az Active Directory – felhasználók és számítógépek modult.
+    
+    1. Kattintson a jobb gombbal a tartományra, válassza a Keresés lehetőséget, és írja be a leképezési helyi Active Directory-felhasználó fióknevét.
+    
+    1. Válassza az **Attribútumszerkesztő** lapot.
+    
+        Keresse meg az `msDS-cloudExtensionAttribute1` elemet, és kattintson rá duplán. Állítsa a tulajdonság értékét arra a teljes felhasználónévre (UPN), amelyet a Power BI szolgáltatásba való bejelentkezéshez használ.
+    
+    1. Kattintson az **OK** gombra.
+    
+        ![Képernyőkép a Sztringattribútum-szerkesztő párbeszédpanelről](media/service-gateway-sso-kerberos/edit-attribute.png)
+    
+    1. Kattintson az **Alkalmaz** elemre. Ellenőrizze, hogy az **Érték** oszlopban a megfelelő érték lett-e beállítva.
 
 ## <a name="complete-data-source-specific-configuration-steps"></a>Az adatforrás-specifikus konfigurációs lépések végrehajtása
 
@@ -211,19 +217,19 @@ Az SAP HANA és az SAP BW további adatforrás-specifikus konfigurációs követ
 
 ## <a name="run-a-power-bi-report"></a>Power BI-jelentés futtatása
 
-A konfigurációs lépések elvégzése után konfigurálja az SSO-hoz használandó adatforrást a Power BI-ban az **Átjáró kezelése** lapon. Több átjáró esetén ügyeljen arra, hogy azt az átjárót válassza ki, amelyet a Kerberos SSO-hoz konfigurált. Ezután az adatforrás **Speciális beállítások** területén jelölje be az „Egyszeri bejelentkezés használata Kerberosszal DirectQuery-lekérdezéseknél” jelölőnégyzetet.
+A konfigurációs lépések elvégzése után konfigurálja az SSO-hoz használandó adatforrást a Power BI-ban az **Átjáró kezelése** lapon. Több átjáró esetén ügyeljen arra, hogy azt az átjárót válassza ki, amelyet a Kerberos SSO-hoz konfigurált. Ezután az adatforrás **Speciális beállítások** területén jelölje be az **Egyszeri bejelentkezés használata Kerberosszal DirectQuery-lekérdezéseknél** jelölőnégyzetet.
 
 ![Képernyőkép a Speciális beállítások lehetőségről](media/service-gateway-sso-kerberos/advanced-settings.png)
 
  Tegyen közzé egy **DirectQuery-alapú** jelentést a Power BI Desktopból. Ennek a jelentésnek azokat az adatokat kell használnia, amelyek elérhetőek annak a felhasználónak a számára, aki ahhoz az (Azure) Active Directory-felhasználóhoz van rendelve, amelyik bejelentkezik a Power BI szolgáltatásba. A frissítés működése miatt az importálás helyett a DirectQueryt kell használnia. Importálási alapú jelentések frissítésekor az átjáró azokat a hitelesítő adatokat használja, amelyet az adatforrás létrehozásakor a **Felhasználónév** és **Jelszó** mezőkbe beírt. Más szóval a Kerberos SSO **nincs** használatban. A közzétételkor ügyeljen arra, hogy azt az átjárót válassza ki, amelyet az egyszeri bejelentkezéshez konfigurált, ha több átjáróval rendelkezik. A Power BI szolgáltatásban most már frissítheti a jelentést, és létrehozhat új jelentést is a közzétett adatkészlet alapján.
 
-Ez a konfiguráció a legtöbb esetben működik. A Kerberos esetében azonban más konfigurációkra lehet szükség a környezettől függően. Ha a jelentés továbbra sem töltődik be, forduljon a tartományi rendszergazdájához a probléma részletesebb kivizsgálásához. Ha az adatforrás az SAP BW, megtekintheti a [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) és a [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting) adatforrás-specifikus konfigurációs oldalain található hibaelhárítási szakaszokat.
+Ez a konfiguráció a legtöbb esetben működik. A Kerberos esetében azonban más konfigurációkra lehet szükség a környezettől függően. Ha a jelentés továbbra sem töltődik be, forduljon a tartományi rendszergazdájához a probléma részletesebb kivizsgálásához. Ha az adatforrás az SAP BW, megtekintheti a [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) és a [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting) adatforrás-specifikus konfigurációs oldalain található hibaelhárítási szakaszokat attól függően, hogy melyik SNC-kódtárat használta.
 
 ## <a name="next-steps"></a>Következő lépések
 
 A **helyszíni adatátjáróval** és a **DirectQueryvel** kapcsolatos további információkért lásd az alábbi forrásanyagokat:
 
-* [Mi az a helyszíni adatátjáró?](/data-integration/gateway/service-gateway-getting-started)
+* [Mi az a helyszíni adatátjáró?](/data-integration/gateway/service-gateway-onprem)
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások](desktop-directquery-data-sources.md)
 * [A DirectQuery és az SAP BW](desktop-directquery-sap-bw.md)

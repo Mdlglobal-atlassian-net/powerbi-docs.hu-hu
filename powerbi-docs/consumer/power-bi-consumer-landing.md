@@ -1,22 +1,21 @@
 ---
-title: Power BI a jelentések felhasználói számára
-description: Most ismerkedik a Power BI-jal? Megismerkedhet a Power BI funkcióival és képességeivel, és látni fogja, hogy mit tehet meg általuk mint Power BI-ügyfél vagy -végfelhasználó.
+title: A Power BI felhasználók számára
+description: Most ismerkedik a Power BI-jal? Megismerkedhet a Power BI szolgáltatás funkcióival és képességeivel, és látni fogja, hogy mit tehet meg általuk mint Power BI-ügyfél vagy -végfelhasználó.
 author: mihart
 manager: kvivek
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: hub-page
-ms.date: 09/11/2019
+ms.date: 10/01/2019
 ms.author: mihart
 layout: HubPage
-ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: d43d1072c9eafa71d336f71e22ac2d6d68144558
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: ec123c29bc6cf942c096ffb78b8bfab10be3bc14
+ms.sourcegitcommit: e371690159f69a72410abc97ff1c2a2bb9c841f5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073382"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71829615"
 ---
 <div id="main" class="v2">
       <div class="container">
@@ -105,7 +104,8 @@ ms.locfileid: "71073382"
                                                 <p><a href="/power-bi/consumer/end-user-experience" data-linktype="absolute-path">Navigáció – a szükséges tartalom gyors megtalálása</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-q-and-a" data-linktype="absolute-path">Kérdések feltétele természetes nyelven a Q&amp;A használatával</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-report-filter" data-linktype="absolute-path">Szűrők és szeletelők használata</a></p>
-                                                <p><a href="/power-bi/consumer/end-user-visual-type" data-linktype="absolute-path">Tudnivalók a Power BI-ban látható vizualizációtípusokról</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-visual-type" data-linktype="absolute-path">Tudnivalók a vizualizációk típusairól</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-app-marketing" data-linktype="absolute-path">Mintaalkalmazás letöltése</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -152,10 +152,10 @@ ms.locfileid: "71073382"
                 </ul>
             </li>
             <li>
-                <a href="#concepts-terminology" data-linktype="self-bookmark"> Fogalmak &amp; szakkifejezések</a>
+                <a href="#concepts-terminology" data-linktype="self-bookmark">Fogalmak &amp; szakkifejezések</a>
                 <ul id="concepts-terminology">
                     <li>
-                        <a href="#conceptsterminology" data-linktype="self-bookmark"> Fogalmak &amp; szakkifejezések</a>
+                        <a href="#conceptsterminology" data-linktype="self-bookmark">Fogalmak &amp; szakkifejezések</a>
                         <ul id="conceptsterminology" class="cardsC">
                             <br>
                             <li>

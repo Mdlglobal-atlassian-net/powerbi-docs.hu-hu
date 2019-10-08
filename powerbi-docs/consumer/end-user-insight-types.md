@@ -4,23 +4,25 @@ description: Gyors elemzések és elemzések megtekintése a Power BI-jal.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 10/2/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 991dd7bb94e79a21c8e4ec877093b81d2ed9b285
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 507d49ba6cdb894667bf66f8f35c5c325b9ff25e
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327786"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943925"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>A Power BI által támogatott elemzések típusai
+
+A Power BI szolgáltatás automatikusan meg tudja keresni az irányítópultokból vagy jelentésekből származó információkat.
+
 ## <a name="how-does-insights-work"></a>Az elemzések működése
-A Power BI kifinomult algoritmusok alkalmazásával részhalmazokat keres az adatkészletben potenciálisan érdekes összefüggések feltárásához. A Power BI adott idő alatt annyi adatot vizsgál meg az adatkészletből, amennyit csak tud.
+A Power BI gyorsan megkeresi az adatkészlet különböző részhalmazait. A Power BI a keresésnél kifinomult algoritmusok alkalmazásával keres az adatkészletben érdekes összefüggések feltárása érdekében. A Power BI adott idő alatt annyi adatot vizsgál meg az adatkészletből, amennyit csak tud.
 
 Az elemzések egy adathalmazon vagy egy irányítópult-csempén futtathatók.   
 
@@ -74,8 +76,6 @@ Időrendben elérhető adatok esetén észleli, hogy vannak-e olyan dátumok vag
 
 ## <a name="next-steps"></a>Következő lépések
 [Power BI-elemzések](end-user-insights.md)
-
-Ha Ön az adathalmaz tulajdonosa, [optimalizálhatja azt elemzések elvégzéséhez](../service-insights-optimize.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

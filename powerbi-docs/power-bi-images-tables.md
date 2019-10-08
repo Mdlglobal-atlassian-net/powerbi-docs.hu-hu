@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2ebbc277f2a269ebaf2d1bdb99f1aa800576b466
-ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
+ms.openlocfilehash: cbb04057c8065e998068dd6520539c830a659f72
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70936493"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715557"
 ---
 # <a name="display-images-in-a-table-matrix-or-slicer-in-a-report"></a>Képek megjelenítése jelentésbeli táblázatban, mátrixban vagy szeletelőben
 
@@ -44,7 +44,7 @@ A jelentéseket feldobhatják a hozzájuk adott képek. Bizonyos célokra megfel
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Statikus alakzatok, szövegdobozok és képek felvétele jelentésbe](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=11)
+[Az oldal elrendezése és formázása](/learn/modules/visuals-in-power-bi/12-formatting)
 
 [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 

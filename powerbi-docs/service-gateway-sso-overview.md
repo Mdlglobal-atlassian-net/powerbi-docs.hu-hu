@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4991117cfa8b34d9adbbd2dc29082d1e75b6852d
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: a99aad87763edce54996f0a485fde5498fb1df11
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100384"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968621"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Az egyszeri bejelentkezés (SSO) áttekintése a Power BI-ban található átjárókhoz
 
@@ -30,6 +30,8 @@ Jelenleg az alábbi adatforrások használatát támogatjuk:
 * Spark ([Kerberos](service-gateway-sso-kerberos.md))
 * Impala ([Kerberos](service-gateway-sso-kerberos.md))
 
+Az egyszeri bejelentkezés jelenleg nincs támogatva az [M-bővítményeknél](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).
+
 Ha egy felhasználó DirectQuery jelentést használ a Power BI szolgáltatásban, az összes keresztszűrő, szeletelő, rendezés és szerkesztési művelet olyan lekérdezéseket eredményezhet, amelyek az alapul szolgáló helyszíni adatforrásból dolgoznak. Ha az egyszeri bejelentkezés konfigurálva van az adatforráshoz, akkor a Power BI-t használó felhasználó identitása alatt futnak a lekérdezések (vagyis a webtartalmakon vagy a Power BI-mobilalkalmazásokon keresztül). Így minden felhasználó pontosan azokat az adatokat látja, amelyekhez engedélye van az alapul szolgáló adatforrásban. Ha az egyszeri bejelentkezés konfigurálva van, nincsenek különböző felhasználók között megosztott adatok a gyorsítótárazás során.
 
 ## <a name="query-steps-when-running-sso"></a>A lekérdezés lépései SSO futtatása esetén
@@ -40,13 +42,13 @@ Az SSO-val futó lekérdezés három lépésből áll, az alábbi ábrán látha
 
 További információk a lépésekről:
 
-1. Az egyes lekérdezésekhez a **Power BI szolgáltatás** hozzárendeli az *egyszerű felhasználónevet* (UPN), amikor elküldi a lekérdezési kérést a konfigurált átjáróra.
+1. Az egyes lekérdezésekhez a **Power BI szolgáltatás** hozzárendeli az *egyszerű felhasználónevet* (ez a UPN, vagyis a Power BI szolgáltatásba bejelentkezett felhasználó felhasználói neve), amikor elküldi a lekérdezési kérést a konfigurált átjáróra.
 
 2. Az átjárónak le kell képeznie az Azure Active Directory UPN-jét egy helyi Active Directory-identitásra.
 
    a.  Ha az Azure AD DirSync (más néven *Azure AD Connect*) konfigurálva van, akkor a leképezés automatikusan működik az átjáróban.
 
-   b.  Ellenkező esetben az átjáró kikeresheti és leképezheti az Azure AD UPN-jét egy helyi felhasználóra a helyi Active Directory-tartományra irányuló keresés végrehajtásával.
+   b.  Ellenkező esetben az átjáró kikeresheti és leképezheti az Azure AD UPN-jét egy helyi AD-felhasználóra a helyi Active Directory-tartományra irányuló keresés végrehajtásával.
 
 3. Az átjárószolgáltatás folyamata megszemélyesíti a leképezett helyi felhasználót, megnyitja a kapcsolatot az alapul szolgáló adatbázishoz, és elküldi a lekérdezést. Az átjárót nem kell ugyanarra a gépre telepíteni, mint az adatforrást.
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9add7ce3c5caf675fde15fd15eea03d9d9b49d9b
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 32d43ca4b9681495e22db023604afeac31d15e7e
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70750906"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715214"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Munka szervezése az új munkaterületeken a Power BI-ban
 
@@ -24,7 +24,7 @@ ms.locfileid: "70750906"
 Az új felületű munkaterület már általánosan elérhető, és mostantól ez az alapértelmezett munkaterület. Továbbra is hozhat létre és használhat [klasszikus munkaterületeket](service-create-workspaces.md) Office 365-csoportok alapján. 
 
 > [!NOTE]
-> A munkaterület tartalmát tallózó felhasználókra vonatkozó sorszintű biztonságot a Megtekintő szerepkör használatával érvényesítheti. Ha a Megtekintő szerepkör még nem érhető el a bérlőjében, használja továbbra is a [klasszikus munkaterületeket](service-create-workspaces.md), és válassza **A tagok csak a Power BI-tartalmak megtekintésére jogosultak** beállítást. Egy másik megoldás, hogy közzétesz egy alkalmazást ezeknek a felhasználóknak, vagy megosztással terjeszti a tartalmat.
+> A munkaterület tartalmát tallózó felhasználókra vonatkozó sorszintű biztonságot a Megtekintő szerepkör használatával érvényesítheti. Ha anélkül szeretné kikényszeríteni az RLS-t, hogy hozzáférést adna a munkaterülethez, tegyen közzé egy Power BI alkalmazást az adott felhasználók számára, vagy használja a megosztást a tartalom terjesztéséhez.
 
 Az új munkaterületekkel a következőket végezheti el:
 
@@ -73,11 +73,14 @@ A négy szerepkör (rendszergazdák, tagok, közreműködők és megtekintők) k
 | Engedélyezhetik másoknak az elemek újbóli megosztását. |  X | X  |   |   |
 | Létrehozhatnak, szerkeszthetnek és törölhetnek tartalmakat a munkaterületen.  |  X | X  | X  |   |
 | Közzétehetnek jelentéseket a munkaterületen, és törölhetnek tartalmakat.  |  X | X  | X  |   |
-| Jelentést hozhatnak létre másik munkaterületen egy ezen a munkaterületen lévő adathalmaz alapján. |  X | X  | X  | X <sup>1</sup>  |
-| Jelentés másolása. | X | X | X | X <sup>1</sup> |
+| Jelentést hozhatnak létre másik munkaterületen egy ezen a munkaterületen lévő adathalmaz alapján. |  X | X  | X  |   |
+| Jelentés másolása. | X | X | X |  |
 | Egy elem megtekintése és kezelése. |  X | X  | X  | X  |
 
-**1** Ehhez Power BI Pro-licenc és [az adathalmazokra vonatkozó összeállítási engedély](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) szükséges. 
+> [!NOTE]
+>Ha jelentést szeretne másolni, és ha egy másik munkaterületen szeretne jelentést létrehozni az ebben a munkaterületben található adatkészlet alapján, akkor a felhasználóknak további feltételeknek kell megfelelniük:
+>- Power BI Pro-licenccel kell rendelkezniük. 
+>- Az adatkészlethez összeállítási engedéllyel kell rendelkezniük. Az ebben a munkaterületben szereplő adatkészletek esetén a rendszergazda, tag és közreműködő szerepkörök rendelkeznek összeállítási engedéllyel a munkaterület-szerepkörük részeként.
  
 ## <a name="licensing"></a>Licencelés
 A megosztott kapacitásban a munkaterülethez felvett személyek mindegyikének Power BI Pro-licenccel kell rendelkeznie. A munkaterületen a felhasználók együttműködhetnek az irányítópultokon és jelentéseken, amelyeket a szélesebb közönség vagy akár a teljes vállalat elé szeretne tárni. 

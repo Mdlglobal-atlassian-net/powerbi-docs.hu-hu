@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 4584ad0f8c083a765b1a1a9943496b40a3ed4bdf
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: cfae856cf80027a92fb7d19c27b990aa659d992d
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342155"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968754"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Szűrők és kiemelés a Power BI-jelentésekben
  Ez a cikk bevezetést nyújt a Power BI szűrő és kiemelő funkcióiba. A funkciók szinte ugyanúgy működnek, mint a Power BI Desktop szolgáltatásban. A *szűrők* használatával minden olyan adatot eltávolíthat, amelyek az Ön szempontjából lényegtelenek. A *Kiemelés* nem szűrés. Nem távolítja el az adatokat, hanem kiemeli a látható adatok egy részét, miközben a ki nem emelt adatok halványan láthatóak maradnak.
@@ -28,7 +28,7 @@ A Power BI-ban sokféleképpen szűrheti és kiemelheti a jelentések adatait. H
 * Részletes bemutató a [Szerkesztés nézetben elérhető szűrési és kiemelési lehetőségekről](power-bi-report-add-filter.md) a Power BI Desktopban és a Power BI szolgáltatásban. A cikk részletesen bemutatja a szűrők (például dátum és idő, numerikus és szöveges) típusait. Ezenfelül az alapvető és a speciális beállítások közötti különbségeket is ismerteti.
 * Ha már megismerte a szűrők és a kiemelés alapértelmezés szerinti működését, nézze meg, [miképpen módosíthatja azt, ahogy az oldal vizualizációi egymást szűrik és kiemelik](service-reports-visual-interactions.md)
 
-**Tudta?** A Power BI új szűrési felülettel rendelkezik, egyelőre előzetes verzióban. Bővebben is tájékozódhat [a Power BI-jelentésekben elérhető új szűrési felületről](power-bi-report-filter.md).
+**Tudta?** A Power BI új szűrési felülettel rendelkezik. Bővebben is tájékozódhat [a Power BI-jelentésekben elérhető új szűrési felületről](power-bi-report-filter.md).
 
 ![Új szűrőfunkciók](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading.png)
 

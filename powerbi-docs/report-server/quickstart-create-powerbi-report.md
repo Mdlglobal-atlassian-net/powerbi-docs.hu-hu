@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: maggies
-ms.openlocfilehash: ec1aab13955a4c34861a3f0d8dd39b6c77607696
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: f3a52e14271827a043f05d6b170e79718306aa99
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325664"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715250"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI-jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz
 A Power BI-jelentéseket helyszínen is tárolhatja és kezelheti a Power BI jelentéskészítő kiszolgáló webportálján, illetve tárolhatja őket a felhőbeli Power BI szolgáltatásban (https://powerbi.com) ). A jelentéseket a Power BI Desktopban hozhatja létre, majd közzéteheti a webportálon. Ekkor a jelentések megtekinthetővé válnak a cégen belüli olvasók számára egy böngésző vagy egy Power BI-mobilalkalmazás használatával.
@@ -97,7 +97,7 @@ A kész jelentést mentse a 2. lépésben kiválasztott Power BI jelentéskész�
 A Power BI Desktop számos nagyszerű erőforrással segíti a jelentéskészítést. Egy jó kiindulási pont ez a hivatkozás.
 
 * [Első lépések a Power BI Desktopban](../desktop-getting-started.md)
-* Interaktív tanulás: [Első lépések a Power BI Desktop alkalmazással](../guided-learning/gettingdata.yml?tutorial-step=2)
+* Interaktív tanulás: [Ismerkedés a Power BI Desktoppal](/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop)
 
 ### <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgáló
 * [A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése](install-powerbi-desktop.md)  

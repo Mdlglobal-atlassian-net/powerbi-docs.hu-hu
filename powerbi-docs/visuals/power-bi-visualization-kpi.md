@@ -11,19 +11,24 @@ ms.topic: tutorial
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8fa39c7cc57e24f0c19e1a484c0e925bfeec94f7
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 508da47272313d9781fdd66c2ca367dcf9e433e5
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389576"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715228"
 ---
 # <a name="key-performance-indicator-kpi-visuals"></a>Fő teljesítménymutató (KPI) vizualizációk
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 A fő teljesítménymutató (KPI) olyan vizuális jel, amely egy mérhető cél terén elért előrehaladás mértékét jelzi. A fő teljesítménymutatókról a [Fő teljesítménymutatók (KPI-k) a PowerPivotban](/previous-versions/sql/sql-server-2012/hh272050(v=sql.110)) című cikk ír bővebben.
 
 Megtekintheti a videót, amelyben bemutatjuk, hogyan hozhat létre egyetlen mutatószámos vizualizációkat: kijelzőket, kártyákat és KPI-ket.
-
+   > [!NOTE]
+   > Ez a videó a Power BI Desktop egy régebbi verzióját használja.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-kpi"></a>Mikor érdemes KPI-t használni?
@@ -42,19 +47,19 @@ A KPI-adathalmazoknak tartalmazniuk kell egy KPI célértékeit. Ha az adathalma
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Ha még nem regisztrált a Power BI-ra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://app.powerbi.com/signupredirect?pbi_source=web).
+Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
 
-* [Power BI Desktop](https://powerbi.microsoft.com/get-started/) – ingyenes!
+1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
+   
+2. Keresse meg a **Kiskereskedelmi elemzési minta PBIX-fájlt**
 
-* [A Kiskereskedelmi elemzési minta PBIX-fájlja](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
 
 ## <a name="how-to-create-a-kpi"></a>KPI létrehozása
 
-A bemutatott lépések elvégzéséhez a Power BI Desktopban nyissa meg a [Kiskereskedelmi elemzési minta .PBIX-fájlját](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Létre fog hozni egy KPI-t, amely egy értékesítési cél irányába tett előrehaladást méri.
-
-1. Nyissa meg a **Kiskereskedelmi elemzési mintát** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
-
-1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
+Ebben a példában létre fog hozni egy KPI-t, amely egy értékesítési cél irányába tett előrehaladást méri.
 
 1. A **Mezők** panelen válassza az **Értékesítés > Idei összes egység** mezőt.  Ez az érték lesz a mutató.
 
