@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Power BI rendszergazdák számára
+summary: A Power BI dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
+metadata:
+  title: Power BI rendszergazdák számára
+  description: A Power BI dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-service
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 10/04/2019
+  ms.openlocfilehash: 8209cc755b33887c533e9f90b9b1cd7a5021490e
+  ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+  ms.translationtype: HT
+  ms.contentlocale: hu-HU
+  ms.lasthandoff: 10/10/2019
+  ms.locfileid: "72245650"
+landingContent:
+- title: Power BI rendszergazdák számára – tudnivalók
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mit jelent a Power BI-felügyelet?
+      url: ../service-admin-administering-power-bi-in-your-organization.md
+  - linkListType: concept
+    links:
+    - text: Felügyeleti szerepkör az Office 365-ben
+      url: ../service-admin-role.md
+- title: Első lépések
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Szervezeti licencelés
+      url: ../service-admin-licensing-organization.md
+    - text: A felügyeleti portál használata
+      url: ../service-admin-portal.md
+  - linkListType: how-to-guide
+    links:
+    - text: A Power BI Pro megvásárlása
+      url: ../service-admin-purchasing-power-bi-pro.md
+    - text: Regisztráció az Office 365 próbaverziójával
+      url: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+    - text: Power BI hozzáadása Office 365-partnerrel
+      url: ../service-admin-syndication-partner.md
+- title: Bérlők
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Hol található a bérlőm?
+      url: ../service-admin-where-is-my-tenant-located.md
+    - text: Bejelentkezett felhasználók keresése
+      url: ../service-admin-access-usage.md
+    - text: A Power BI naplózása
+      url: ../service-admin-auditing.md
+    - text: Szolgáltatásállapot nyomon követése
+      url: ../service-admin-health.md
+    - text: A Power BI-fiók megszüntetése
+      url: ../service-admin-closing-your-account.md

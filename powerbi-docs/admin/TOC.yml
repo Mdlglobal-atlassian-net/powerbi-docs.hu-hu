@@ -1,0 +1,65 @@
+- name: Power BI-felügyelet
+  items:
+    - name: Áttekintés
+      expanded: true
+      items:
+        - name: Mit jelent a Power BI-felügyelet?
+          href: ../service-admin-administering-power-bi-in-your-organization.md
+    - name: Fogalmak
+      expanded: true
+      items:
+        - name: Felügyeleti szerepkör az Office 365-ben
+          href: ../service-admin-role.md
+        - name: Gyakori kérdések (GYIK)
+          href: ../service-admin-faq.md
+        - name: Magas rendelkezésre állás és feladatátvétel – GYIK
+          href: ../service-admin-failover.md
+    - name: Útmutató
+      items:
+        - name: Licencelés és regisztráció
+          items:
+            - name: Szervezeti licencelés
+              href: ../service-admin-licensing-organization.md
+            - name: A Power BI Pro megvásárlása
+              href: ../service-admin-purchasing-power-bi-pro.md
+            - name: Regisztráció az Office 365 próbaverziójával
+              href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+            - name: Power BI hozzáadása Office 365-partnerrel
+              href: ../service-admin-syndication-partner.md
+        - name: A felügyeleti portál használata
+          href: ../service-admin-portal.md
+        - name: Hol található a bérlőm?
+          href: ../service-admin-where-is-my-tenant-located.md
+        - name: Bejelentkezett felhasználók keresése
+          href: ../service-admin-access-usage.md
+        - name: A Power BI naplózása
+          href: ../service-admin-auditing.md
+        - name: Szolgáltatásállapot nyomon követése
+          href: ../service-admin-health.md
+        - name: A Power BI-fiók megszüntetése
+          href: ../service-admin-closing-your-account.md
+        - name: A Power BI és az ExpressRoute
+          href: ../service-admin-power-bi-expressroute.md
+        - name: Az Azure AD B2B használata
+          href: ../service-admin-azure-ad-b2b.md
+        - name: Sorszintű biztonság a Power BI-vel
+          href: ../service-admin-rls.md
+        - name: A Power BI archivált munkaterülete
+          href: ../service-admin-power-bi-archived-workspace.md
+        - name: Mobilalkalmazások konfigurálása az Intune-nal
+          href: ../service-admin-mobile-intune.md
+    - name: Hivatkozás
+      items:
+        - name: 'PowerShell, REST API-k és .NET SDK'
+          href: ../service-admin-reference.md
+        - name: Power BI-parancsmagok PowerShellhez
+          href: 'https://docs.microsoft.com/powershell/power-bi/'
+          maintainContext: true
+        - name: Szolgáltatási URL-referencia
+          href: ../power-bi-whitelist-urls.md
+    - name: Erőforrások
+      items:
+        - name: Megközelítések a Power BI irányításához és üzembe helyezéséhez
+          href: ../service-admin-governance.md
+        - name: A Power BI és a biztonság
+          href: ../service-admin-power-bi-security.md

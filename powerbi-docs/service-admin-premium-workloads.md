@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 08/21/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 2d2eb51c5aad44572f1b427248fd85ef19a6306f
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.openlocfilehash: a05924fc093c1514f51c3fabac3162433e2188f7
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985696"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968888"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Számítási feladatok konfigurálása egy Premium-kapacitásban
 
@@ -59,18 +59,59 @@ Az AI számítási feladataival kognitív szolgáltatásokat és automatizált g
 
 ### <a name="datasets"></a>Adathalmazok
 
-Az adathalmazok számítási feladat alapértelmezés szerint engedélyezve van, és nem tiltható le. A számítási feladatok viselkedésének vezérléséhez használja a következő beállításokat.
+Az adathalmazok számítási feladat alapértelmezés szerint engedélyezve van, és nem tiltható le. A számítási feladatok viselkedésének vezérléséhez használja a következő beállításokat. Néhány beállításhoz további használati információt talál a táblázat alatt.
 
 | Beállítás neve | Leírás |
 |---------------------------------|----------------------------------------|
 | **Maximális memória (%)** | Az adatkészletek által a kapacitásban felhasználható, rendelkezésre álló memória maximális százalékos aránya. |
 | **XMLA-végpont** | Megadja, hogy a csatlakozó ügyfélalkalmazások figyelembe vegyék a munkaterület és az alkalmazás szintjén meghatározott biztonságicsoport-tagságot. További információ: [Csatlakozás adathalmazokhoz ügyfélalkalmazásokkal és -eszközökkel](service-premium-connect-tools.md). |
-| **Köztes sorok maximális száma** | A DirectQuery által visszaadott köztes sorok maximális száma. Az alapértelmezett érték 1 000 000, a megengedett tartomány pedig 100 000-től 2 147 483 647-ig terjed. A beállítással szabályozhatja az erőforrás-igényes vagy rosszul megtervezett jelentések hatásait. |
-| **Offline adathalmaz maximális mérete (GB)** | A memóriában lévő offline adathalmaz maximális mérete. Ez a tömörített méret a lemezen. Az alapértelmezett értéket a termékváltozat szabja meg, a megengedett tartomány pedig 0,1 GB-tól 10 GB-ig terjed. A beállítással megakadályozhatja, hogy a jelentéskészítők a kapacitást hátrányosan érintő, nagyméretű adathalmazt tegyenek közzé. |
-| **Eredménysorok maximális száma** | A DAX-lekérdezés által visszaadott sorok maximális száma. Az alapértelmezett érték -1 (nincs korlát), a megengedett tartomány pedig 100 000-től 2 147 483 647-ig terjed. A beállítással szabályozhatja az erőforrás-igényes vagy rosszul megtervezett jelentések hatásait. |
-| **Lekérdezés memóriakorlátja (%)** | Egy lekérdezésben vagy DAX-mértékben ideiglenes eredményekhez a kapacitásban felhasználható, rendelkezésre álló memória maximális százalékos aránya. A beállítással szabályozhatja az erőforrás-igényes vagy rosszul megtervezett jelentések hatásait. |
-| **Lekérdezés időkorlátja (másodpercben)** | A lekérdezés időtúllépéséig eltelt idő maximuma. Az alapértelmezett érték 3600 másodperc (1 óra). A 0 érték azt jelenti, hogy a lekérdezések lépik túl az időt. A beállítással jobban szabályozhatja a hosszan futó lekérdezéseket. |
+| **Köztes sorok maximális száma** | A DirectQuery által visszaadott köztes sorok maximális száma. Az alapértelmezett érték 1 000 000, a megengedett tartomány pedig 100 000-től 2 147 483 647-ig terjed. |
+| **Offline adathalmaz maximális mérete (GB)** | A memóriában lévő offline adathalmaz maximális mérete. Ez a tömörített méret a lemezen. Az alapértelmezett értéket a termékváltozat szabja meg, a megengedett tartomány pedig 0,1 GB-tól 10 GB-ig terjed. |
+| **Eredménysorok maximális száma** | A DAX-lekérdezés által visszaadott sorok maximális száma. Az alapértelmezett érték -1 (nincs korlát), a megengedett tartomány pedig 100 000-től 2 147 483 647-ig terjed. |
+| **Lekérdezés memóriakorlátja (%)** | Egy lekérdezésben vagy DAX-mértékben ideiglenes eredményekhez a kapacitásban felhasználható, rendelkezésre álló memória maximális százalékos aránya. |
+| **Lekérdezés időkorlátja (másodpercben)** | A lekérdezés időtúllépéséig eltelt idő maximuma. Az alapértelmezett érték 3600 másodperc (1 óra). A 0 érték azt jelenti, hogy a lekérdezések lépik túl az időt. |
 |  |  |  |
+
+#### <a name="max-intermediate-row-set-count"></a>Köztes sorok maximális száma
+
+A beállítással szabályozhatja az erőforrás-igényes vagy rosszul megtervezett jelentések hatásait. Ha egy DirectQuery-adatkészletben végzett lekérdezés nagyon sok eredményt ad vissza a forrásadatbázisból, az kiugrást okozhat a memóriahasználatban és többletterhelést a számításban. Ennek következtében előfordulhat, hogy más felhasználók és jelentések számára kevés erőforrás áll rendelkezésre. Ezzel a beállítással a kapacitásadminisztrátor megadhatja, hogy egy lekérdezés hány sort tudjon beolvasni az adatforrásból.
+
+Abban az esetben, ha a kapacitás egy milliónál több sort is támogat alapértelmezés szerint, és nagy adatkészletet kezel, a beállítás növelésével több sort is beolvashat.
+
+Vegye figyelembe, hogy ez a beállítás csak a DirectQuery-lekérdezésekre, míg az [Eredménysorok maximális száma](#max-result-row-set-count) a DAX-lekérdezésekre van hatással.
+
+#### <a name="max-offline-dataset-size"></a>Offline adathalmaz maximális mérete
+
+A beállítással megakadályozhatja, hogy a jelentéskészítők a kapacitást hátrányosan érintő, nagyméretű adathalmazt tegyenek közzé. Vegye figyelembe, hogy a Power BI mindaddig nem tudja meghatározni a tényleges memóriabeli méretet, amíg az adatkészlet be van töltve a memóriába. Előfordulhat, hogy egy kisebb offline méretű adatkészletnek nagyobb a memóriaigénye, mint egy nagyobb offline méretűnek.
+
+Ha egy meglévő adatkészlet mérete túllépi az ehhez a beállításhoz megadott értéket, az adatkészlet nem fog tudni betöltődni, amikor egy felhasználó megkísérli elérni azt.
+
+#### <a name="max-result-row-set-count"></a>Eredménysorok maximális száma
+
+A beállítással szabályozhatja az erőforrás-igényes vagy rosszul megtervezett jelentések hatásait. Ha ezt a korlátot eléri egy DAX-lekérdezésben, a jelentés felhasználójánál az alábbi hibaüzenet jelenik meg. A felhasználónak a hiba részleteivel fel kell keresnie egy rendszergazdát.
+
+![Nem sikerült betölteni a vizualizáció adatait](media/service-admin-premium-workloads/could-not-load-data.png)
+
+Vegye figyelembe, hogy ez a beállítás csak a DAX-lekérdezésekre, míg a [Köztes sorok maximális száma](#max-intermediate-row-set-count) a DirectQuery-lekérdezésekre van hatással.
+
+#### <a name="query-memory-limit"></a>Lekérdezés memóriakorlátja
+
+A beállítással szabályozhatja az erőforrás-igényes vagy rosszul megtervezett jelentések hatásait. Egyes lekérdezések és számítások olyan köztes eredményeket adhatnak vissza, amelyek sok memóriát fogyasztanak a kapacitáson. Ez a többi lekérdezés végrehajtásának nagyfokú lassulásához, továbbá a többi adatkészlet kapacitásból való kizárásához és memóriahiány okozta hibákhoz vezethet a kapacitás többi felhasználójánál.
+
+Ez a beállítás az adatfrissítésre és a jelentések előkészítésre való megjelenítésére vonatkozik. Az adatfrissítés az adatforrás adatainak frissítését és a lekérdezés frissítését egyaránt végrehajtja, hacsak nincs letiltva a lekérdezésfrissítés. Ha nincs letiltva a lekérdezésfrissítés, akkor ez a memóriakorlát az adott lekérdezésekre is érvényes. Az esetleges sikertelen lekérdezések hatására az ütemezett frissítés állapota hibásként jelenik meg akkor is, ha az adatfrissítés sikeres volt.
+
+#### <a name="query-timeout"></a>Lekérdezés időkorlátja
+
+Ezzel a beállítással hatékonyabban szabályozhatja a hosszan futó lekérdezéseket, aminek következtében előfordulhat, hogy a jelentések lassan töltődnek be a felhasználóknál. Ez a beállítás az adatfrissítésre és a jelentések előkészítésre való megjelenítésére vonatkozik. Az adatfrissítés az adatforrás adatainak frissítését és a lekérdezés frissítését egyaránt végrehajtja, hacsak nincs letiltva a lekérdezésfrissítés. Ha nincs letiltva a lekérdezésfrissítés, akkor ez az időtúllépési korlát az adott lekérdezésekre is érvényes.
+
+Ez a beállítás egyetlen lekérdezésre vonatkozik, és nem az egy adatkészlet vagy jelentés frissítéséhez társított összes lekérdezés futtatásához szükséges időre. Tekintse meg a következő példát:
+
+- A **Lekérdezés időkorlátja** beállítás értéke 1200 (20 perc).
+- Öt lekérdezést kell végrehajtani, amelyek mindegyike 15 percig fut.
+
+Az összes lekérdezés teljes futási ideje összesen ugyan 75 perc, de a beállítás korlátját nem éri el, mivel az egyes lekérdezések 20 percnél kevesebb ideig futnak.
+
+Vegye figyelembe, hogy a Power BI-jelentések ezt az alapértelmezett beállítást felülbírálva sokkal rövidebb időtúllépést biztosítanak a kapacitásra vonatkozó egyes lekérdezések számára. Az egyes lekérdezések időtúllépése általában három perc.
 
 ### <a name="dataflows"></a>Adatfolyamok
 

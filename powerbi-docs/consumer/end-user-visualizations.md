@@ -21,7 +21,7 @@ ms.locfileid: "71943138"
 
 Legegyszerűbb formájukban a ***vizualizációk*** olyan diagramok, amelyeket a Power BI *tervezői* hoznak létre a jelentésekben és az adathalmazokban szereplő adatok alapján. 
 
-Vizualizációk szerepelhetnek irányítópultokon és jelentésekben, és a Power BI Q&A használatával ment közben is létrehozhatók. Amikor egy tervező létrehoz egy vizualizációt egy jelentésben, a vizualizációt az irányítópulton *rögzítheti* is. Az [irányítópulton szereplő vizualizációt *csempének* nevezzük](end-user-tiles.md). Ez az irányítópult nyolc csempével rendelkezik. 
+Vizualizációk szerepelhetnek irányítópultokon és jelentésekben, és a Power BI Q&A használatával menet közben is létrehozhatók. Amikor egy tervező létrehoz egy vizualizációt egy jelentésben, a vizualizációt az irányítópulton *rögzítheti* is. Az [irányítópulton szereplő vizualizációt *csempének* nevezzük](end-user-tiles.md). Ez az irányítópult nyolc csempével rendelkezik. 
 
 ![Csempéket tartalmazó irányítópult](media/end-user-visualizations/power-bi-dashboard.png)
 
