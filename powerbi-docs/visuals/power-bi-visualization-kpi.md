@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 508da47272313d9781fdd66c2ca367dcf9e433e5
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 8ecec706c281b2a36c342ea852eebb4a8559a6fd
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715228"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239936"
 ---
 # <a name="key-performance-indicator-kpi-visuals"></a>Fő teljesítménymutató (KPI) vizualizációk
 
@@ -50,12 +50,12 @@ A KPI-adathalmazoknak tartalmazniuk kell egy KPI célértékeit. Ha az adathalma
 Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
 
 1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
-   
-2. Keresse meg a **Kiskereskedelmi elemzési minta PBIX-fájlt**
 
-1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Keresse meg a **Kiskereskedelmi elemzési minta PBIX-fájlt**
 
-1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
+1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentés nézetben. ![A jelentés nézet ikonjának képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png)
+
+1. Új oldal hozzáadásához válassza a **+** jelet. ![A sárga lapfül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
 
 ## <a name="how-to-create-a-kpi"></a>KPI létrehozása
 
