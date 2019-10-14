@@ -7,12 +7,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 50f78709ce7ce302ce79df5eb383af25f55d539a
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 1a46c1fb8e9f31bd5199fccfaecb16cece144b5a
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68471583"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72021025"
 ---
 # <a name="use-shared-datasets-in-power-bi-report-builder"></a>Megosztott adathalmazok használata a Power BI Jelentéskészítőben
 
@@ -20,14 +20,14 @@ Egy Power BI Desktopban létrehozott adathalmazt adatforrásként használhat a 
 
 ![A Power BI Desktop és a Jelentéskészítő többoldalas jelentése](media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow-26-pgs.png)
 
-Az adathalmaznak nem kell Prémium szintű kapacitásban lévő munkaterületen lennie, és Önnek sem kell a munkaterület tagjának lennie. Elég [Összeállítási engedéllyel](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) rendelkeznie az adathalmazra. Többoldalas jelentése közzétételéhez viszont Power BI Pro-licencre lesz szüksége. Ezen kívül legalább Közreműködői szerepkörrel kell rendelkeznie egy Prémium szintű kapacitásbeli munkaterületen.
+Az adathalmaznak nem kell Prémium szintű kapacitásban lévő munkaterületen lennie, és Önnek sem kell a munkaterület tagjának lennie. Elég [Összeállítási engedéllyel](service-datasets-build-permissions.md) rendelkeznie az adathalmazra. Többoldalas jelentése közzétételéhez viszont Power BI Pro-licencre lesz szüksége. Ezen kívül legalább Közreműködői szerepkörrel kell rendelkeznie egy Prémium szintű kapacitásbeli munkaterületen.
 
 ## <a name="what-you-need"></a>Amire szükség lesz
 
 Az alábbi lista felsorolja mindazt, ami megosztott adathalmaz Power BI Jelentéskészítőben való felhasználásához szükséges, és ami nem szükséges.
 
 - Power BI Jelentéskészítő. [Töltse le és telepítse a Power BI Jelentéskészítőt](https://go.microsoft.com/fwlink/?linkid=2086513).
-- Power BI-adathalmazhoz akkor férhet hozzá, ha rendelkezik az adathalmazra vonatkozó Összeállítási engedéllyel. Tájékozódjon az [Összeállítási engedélyről](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+- Power BI-adathalmazhoz akkor férhet hozzá, ha rendelkezik az adathalmazra vonatkozó Összeállítási engedéllyel. Tájékozódjon az [Összeállítási engedélyről](service-datasets-build-permissions.md).
 - Többoldalas jelentést Power BI Pro-licenc nélkül is létrehozhat a Jelentéskészítőben. 
 - A többoldalas jelentés közzétételéhez viszont Power BI Pro-licenc szükséges. Ezen kívül legalább Közreműködői szerepkörrel kell rendelkeznie egy Prémium szintű kapacitásbeli munkaterületen. 
 - Választható: Ha követni szeretné a cikk tartalmát, töltse le a [Kiskereskedelmi elemzési minta .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) Power BI Desktop-fájlt, nyissa meg a Power BI Desktopban, és vegyen fel egy sok oszlopból álló táblázatot. A **Formátum** panelen kapcsolja ki az **Összegek** beállítást. Ez után tegye közzé egy munkaterületen a Power BI szolgáltatásban.

@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86fc2f8d13cdcd006c01dfff0114c13cc78f5e65
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9824b3340da694c00784f34b0c6245cafbf69383
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987026"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239902"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Webes közzététel a Power BI-ból
 
@@ -113,7 +113,7 @@ Miután létrehozott egy **webes közzétételi** beágyazási kódot, a kódoka
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Jelentések és adatok frissítése
 
-A **webes közzétételi** beágyazási kód létrehozása és megosztása után a jelentésben minden Ön által végzett változtatás frissülni fog, és a beágyazási kód hivatkozása azonnal aktívvá válik. Bárki megtekintheti, ha megnyitja a hivatkozást. Ez után az első művelet után azonban a jelentések vagy vizualizációk módosításai csak körülbelül egy órával később válnak láthatóvá a felhasználók számára. Ha a frissítéseknek azonnal elérhetőknek kell lenniük, akkor törölheti a beágyazási kódot, és létrehozhat egy újat. További tudnivalókat ennek a cikknek a [**Hogyan működik?** ](#howitworks) című szakaszában talál. 
+A **webes közzétételi** beágyazási kód létrehozása és megosztása után a jelentésben minden Ön által végzett változtatás frissülni fog, és a beágyazási kód hivatkozása azonnal aktívvá válik. Bárki megtekintheti, ha megnyitja a hivatkozást. Ez után az első művelet után azonban a jelentések vagy vizualizációk módosításai csak körülbelül egy órával később válnak láthatóvá a felhasználók számára. További tudnivalókat ennek a cikknek a [**Hogyan működik?** ](#howitworks) című szakaszában talál. 
 
 ## <a name="data-refresh"></a>Adatfrissítés
 

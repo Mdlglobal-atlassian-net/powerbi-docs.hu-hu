@@ -1,20 +1,20 @@
 ---
 title: Adatéletút (előzetes verzió)
 description: A modern üzletiintelligencia-projektekben az adatok adatforrásból a célba történő eljutásának megértése kulcsfontosságú kihívást jelent számos ügyfél számára.
-author: maggiesMSFT
+author: paulinbar
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 10/03/2019
-ms.author: maggies
+ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 87f0fe20a88077d58ee5d44c748d86264b2be536
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: e91f1d5084957ee7266161b9a34f916e2902d1f4
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968865"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72019590"
 ---
 # <a name="data-lineage-preview"></a>Adatéletút (előzetes verzió)
 A modern üzletiintelligencia-projektekben az adatok adatforrásból a célba történő eljutásának megértése kihívást jelenthet. A kihívás még nagyobb a több adatforráson, összetevőn és függőségen átívelő speciális elemzési projektek esetén.  Nehéz választ adni az olyan kérdésekre, hogy például mi történik egy adat módosításakor, vagy hogy miért nem naprakész egy jelentés. Ezek megértéséhez szakértői csapatokra vagy mélyreható vizsgálatra van szükség. A származtatott nézetet azért hoztuk létre, hogy segítsünk megválaszolni ezeket a kérdéseket.
