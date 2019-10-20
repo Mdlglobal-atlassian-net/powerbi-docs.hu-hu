@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5c50ec38da65573e085d9e27b0e31524256ac009
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 7d53acc0dc8c669026665347de9593fa1df84c62
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715524"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020153"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Új munkaterületek létrehozása a Power BI-ban
 
@@ -68,7 +68,7 @@ További háttér-információkat talál az [új munkaterületekről](service-ne
 
 ## <a name="workspace-contact-list"></a>Munkaterületi címlista
 
-Az új munkaterületi címlistával meghatározhatja, hogy mely felhasználók kapjanak értesítést a munkaterületen felmerülő problémákról. Alapértelmezés szerint minden munkaterület-rendszergazdaként megadott felhasználó vagy csoport értesítést kap, de Ön testre szabhatja a listát. A címlistában felsorolt felhasználók vagy csoportok a felhasználói felületen is fel vannak tüntetve, megkönnyítve a felhasználók számára a munkaterülettel kapcsolatos segítségkérést.
+Meghatározhatja, hogy mely felhasználók kapjanak értesítést a munkaterületen felmerülő problémákról. Alapértelmezés szerint minden munkaterület-rendszergazdaként megadott felhasználó vagy csoport értesítést kap, de Ön testre szabhatja a listát a *címlistára* felvett elemekkel. A címlistában szereplő felhasználók vagy csoportok a felhasználói felületen is fel vannak sorolva, megkönnyítve a felhasználók számára a munkaterülettel kapcsolatos segítségkérést.
 
 1. Az új **Címlista** beállításai az alábbi módszerek egyikével érhetők el:
 
@@ -79,6 +79,9 @@ Az új munkaterületi címlistával meghatározhatja, hogy mely felhasználók k
     ![Munkaterület beállításai](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. A **Speciális** > **Címlista** területen fogadja el az alapértelmezett **Munkaterület-rendszergazdák** beállítást, vagy vegye fel a **Megadott felhasználók vagy csoportok** saját listáját. 
+
+    ![Munkaterületi kapcsolattartók](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
+
 3. Kattintson a **Mentés** gombra.
 
 ## <a name="workspace-onedrive"></a>Munkaterületi OneDrive
@@ -103,34 +106,15 @@ A Power BI nem szinkronizálja azon felhasználók és csoportok jogosultságait
 
 ### <a name="access-the-workspace-onedrive-location"></a>Hozzáférés a munkaterületi OneDrive-helyhez
 
-A OneDrive-hely konfigurálása után több helyről is elérheti azt a munkaterületen:
+A OneDrive-hely konfigurálása után ahhoz ugyanúgy férhet hozzá, ahogyan más adatforrásokhoz a Power BI szolgáltatásban.
 
-- Válassza a **Munkaterületek** > *munkaterület neve* > három pont ( **...** ) menü **Fájlok** pontját. 
+1. A bal oldali navigációs panelen válassza az **Adatok lekérése** lehetőséget, majd a **Fájlok** terület **Lekérés** elemét.
 
-    ![Munkaterületi fájlok helye](media/service-new-workspaces/power-bi-new-workspace-files.png)
+    ![Adatok és fájlok lekérése](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-- Válassza a munkaterület jobb felső sarkában a három pont ( **...** ) menüt, majd a **Fájlok** lehetőséget.
-
-    ![Munkaterületi fájlok helye](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
-    
-- Az **Adatok lekérése** > **Fájlok** felületen. A **OneDrive – Vállalati** elem a saját Vállalati OneDrive. A második OneDrive az, amelyet most vett fel.
+1.  A **OneDrive – Vállalati** elem a saját Vállalati OneDrive. A második OneDrive az, amelyet most vett fel.
 
     ![Munkaterületi fájlok helye – adatok lekérése](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
-
-## <a name="add-content-to-your-workspace"></a>Tartalom hozzáadása a munkaterülethez
-
-Az új felületű munkaterület létrehozása után ideje feltölteni azt tartalommal. A fájlok hozzáadása hasonlóan végezhető el az új és a klasszikus munkaterületeken. A Létrehozás gomb, vagy az Adatok lekérése lehetőség használatával is vehet fel tartalmat a munkaterületre.
-
-1. Az új munkaterület **üdvözlőképernyőjén** is vehet fel tartalmat. 
-
-    ![Az új munkaterület üdvözlőképernyője](media/service-create-the-new-workspaces/power-bi-workspace-get-data.png)
-
-1. Válassza például a **Minták** > **Ügyfél-jövedelmezőségi minta** lehetőséget.
-
-> [!NOTE]
-> Vállalati tartalomcsomagokat vagy külső tartalomcsomagokat nem vehet fel az új munkaterületekre. A korábban használt külső tartalomcsomagokhoz alkalmazások állnak rendelkezésre. Ha továbbra is tartalomcsomagokat kell használnia, használjon klasszikus munkaterületeket. A tartalomcsomagok elavultak, ezért ajánlott inkább alkalmazásokat használni.
-
-Ha egy munkaterület tartalomlistájában tekint meg tartalmat, a munkaterület neve tulajdonosként lesz feltüntetve.
 
 ### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Csatlakozás a külső szolgáltatásokhoz az új munkaterületeken
 
@@ -142,9 +126,7 @@ Az új munkaterületi felületen nem lehet céges tartalomcsomagokat létrehozni
 
 1. A munkaterület tartalomlistájában rendszergazdaként egy új, **Hozzáférés** műveletet lát.
 
-    ![Munkaterületek tartalomlistája](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
-
-1. Válassza a **Hozzáférés** lehetőséget.
+    ![Munkaterületek tartalomlistája](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
 1. Adjon hozzá biztonsági csoportokat, terjesztési listákat, Office 365-csoportokat vagy egyéni felhasználókat a munkaterületekhez tagként, közreműködőként vagy rendszergazdaként. A különböző szerepkörök ismertetését [Az új munkaterületek szerepkörei](service-new-workspaces.md#roles-in-the-new-workspaces) című szakaszban találhatja.
 

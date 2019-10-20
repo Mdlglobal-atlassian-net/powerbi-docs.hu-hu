@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/05/2019
+ms.date: 09/30/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 32d43ca4b9681495e22db023604afeac31d15e7e
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 15f0ce3910261ed2902603ab7fb3f07f8b695d4c
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715214"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020683"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Munka szervezése az új munkaterületeken a Power BI-ban
 
@@ -78,8 +78,8 @@ A négy szerepkör (rendszergazdák, tagok, közreműködők és megtekintők) k
 | Egy elem megtekintése és kezelése. |  X | X  | X  | X  |
 
 > [!NOTE]
->Ha jelentést szeretne másolni, és ha egy másik munkaterületen szeretne jelentést létrehozni az ebben a munkaterületben található adatkészlet alapján, akkor a felhasználóknak további feltételeknek kell megfelelniük:
->- Power BI Pro-licenccel kell rendelkezniük. 
+>Ha jelentést szeretne másolni, és ha egy másik munkaterületen szeretne jelentést létrehozni az ezen a munkaterületen található adathalmaz alapján, akkor a felhasználóknak további feltételeknek kell megfelelniük:
+>- Power BI Pro-licenccel kell rendelkezniük. A részleteket a következő, [Licencelés](#licensing) című szakaszban találhatja meg.
 >- Az adatkészlethez összeállítási engedéllyel kell rendelkezniük. Az ebben a munkaterületben szereplő adatkészletek esetén a rendszergazda, tag és közreműködő szerepkörök rendelkeznek összeállítási engedéllyel a munkaterület-szerepkörük részeként.
  
 ## <a name="licensing"></a>Licencelés
@@ -141,7 +141,7 @@ A jelenlegi munkaterületek egyes funkciói másképp működnek, mint az új mu
 - A tagok újbóli megosztási jogosultsága: ennek helyét a Közreműködő szerepkör vette át
 - Csak olvasható munkaterületek: Ahelyett, hogy csak olvasási hozzáférést adna a felhasználóknak, hozzárendelheti őket a Megtekintő szerepkörhöz, amely hasonló, csak olvasási hozzáférést biztosít a munkaterületen lévő tartalomhoz.
 - A Pro-licenccel nem rendelkező felhasználók akkor is hozzáférnek a Power BI Premium-kapacitásban lévő munkaterülethez, ha csak Megtekintő szerepkörrel rendelkeznek.
-- A Megtekintő szerepkörrel rendelkező felhasználók számára úgy engedélyezheti az adatexportálást, hogy Összeállítási engedélyt ad nekik a munkaterületen lévő adathalmazokra. További információ az [adathalmazok összeállítási engedélyéről](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+- A Megtekintő szerepkörrel rendelkező felhasználók számára úgy engedélyezheti az adatexportálást, hogy Összeállítási engedélyt ad nekik a munkaterületen lévő adathalmazokra. További információ az [adathalmazok összeállítási engedélyéről](service-datasets-build-permissions.md).
 - Nincs **Kilépés a munkaterületből** gomb.
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések

@@ -2,20 +2,20 @@
 title: Lekérdezések gyorsítótárazása a Power BI Premiumban
 description: Lekérdezések gyorsítótárazása a Power BI Premiumban
 author: KesemSharabi
-ms.author: maggies
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: bhmerc
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/16/2019
+ms.date: 10/04/2019
 LocalizationGroup: ''
-ms.openlocfilehash: 489069df43d2c09f6f5551987a61353e095aff7a
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6e68f515581d62b544f1c6b17144e73ea709a62d
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71076173"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020502"
 ---
 # <a name="query-caching-in-power-bi-premiumembedded"></a>Lekérdezések gyorsítótárazása a Power BI Premium/Embedded szolgáltatásban
 
@@ -26,13 +26,13 @@ A Power BI Premiummal vagy Power BI Embeddeddel rendelkező cégek kihasználhat
 
 A gyorsítótárazott lekérdezéseredmények adott felhasználói és adatkészlet-kontextusokra vonatkoznak, és mindig megfelelnek a biztonsági szabályoknak is. A szolgáltatás jelenleg csak a kezdőlaphoz végez lekérdezési gyorsítótárazást. Ez azt jelenti, hogy a jelentés használata közben a lekérdezések nem lesznek gyorsítótárazva. A lekérdezési gyorsítótár tiszteletben tartja a [személyes könyvjelzőket](consumer/end-user-bookmarks.md#personal-bookmarks) és az [állandó szűrőket](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/), így a rendszer a személyre szabott jelentés által készített lekérdezéseket is a gyorsítótárba helyezi. A lekérdezés gyorsítótárazásánál az ugyanazokat a lekérdezések használó [irányítópult-csempék](service-dashboard-tiles.md) is használhatják a gyorsítótárat. A teljesítményt ez leginkább akkor növeli, ha egy adatkészletet gyakran kell elérni, és ha azt nem kell gyakran frissíteni. A lekérdezés gyorsítótárazása a Premium-/Embedded-kapacitásra háruló terhelést is csökkentheti, mivel csökkenti a lekérdezések teljes számát.
 
-A lekérdezések gyorsítótárazásának szabályozását a Power BI szolgáltatásban az adott adatkészlet **Beállítások** lapján végezheti el. Két beállítást tartalmaz:
+A lekérdezések gyorsítótárazásának szabályozását a Power BI szolgáltatásban az adott adatkészlet **Beállítások** lapján végezheti el. Három beállítást tartalmaz:
 
+- **Alapértelmezett kapacitás**: Lekérdezések gyorsítótárazásának kikapcsolása
 - **Ki**: Ne használjon lekérdezési gyorsítótárazást ehhez az adatkészlethez.
-
 - **Be**: Használjon lekérdezési gyorsítótárazást ehhez az adatkészlethez.
 
-![Lekérdezési gyorsítótárazás párbeszédpanel](media/power-bi-query-caching/power-bi-query-caching.png)
+    ![Lekérdezési gyorsítótárazás párbeszédpanel](media/power-bi-query-caching/power-bi-query-3-options.png)
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 

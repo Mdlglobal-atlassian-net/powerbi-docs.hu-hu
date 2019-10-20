@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8d48214cffcc17da9c105f7277b721c03946d5c2
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: eb1940f7d5a4e809590b5b425b8005776040a5cc
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68961719"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020672"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Oktatóanyag: Power BI szervezeti tartalomcsomag létrehozása és közzététele
 
@@ -26,7 +26,7 @@ A tartalomcsomagok létrehozása nem azonos az irányítópultok megosztásával
 A szervezeti tartalomcsomagok létrehozásához Önnek és kollégáinak [Power BI Pro-fiókkal](https://powerbi.microsoft.com/pricing) kell rendelkezniük.
 
 > [!NOTE]
-> Nem lehet létrehozni vagy telepíteni céges tartalomcsomagokat az új munkaterületi felhasználói felület előzetes verziójában. Ha még nem kezdte el, ideje frissítenie az alkalmazásokhoz tartozó tartalomcsomagokat. További információ az [új munkaterületi felhasználói felületről](service-create-the-new-workspaces.md).
+> Az új munkaterületi felhasználói felületen nem lehet vállalati tartalomcsomagokat létrehozni vagy telepíteni. Ha még nem kezdte el, ideje frissítenie az alkalmazásokhoz tartozó tartalomcsomagokat. További információ az [új munkaterületi felhasználói felületről](service-create-the-new-workspaces.md).
 
 ## <a name="create-and-publish-a-content-pack"></a>Tartalomcsomag létrehozása és közzététele
 

@@ -1,25 +1,25 @@
 ---
 title: Power BI jelentéstervezőknek
-description: Ön használja a Power BI-t az adatokhoz való csatlakozáshoz, lekérdezések tervezéséhez, valamint jelentések és irányítópultok létrehozásához? Ön fejlesztő, és saját alkalmazásokat hoz létre, vagy Power BI-rendszergazda?
+description: Ön használja a Power BI-t az adatokhoz való csatlakozáshoz, lekérdezések tervezéséhez, valamint jelentések és irányítópultok létrehozásához? Ön Power BI-rendszergazda?
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: landing-page
-ms.date: 03/20/2019
+ms.date: 10/07/2019
 ms.author: maggies
 layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: 2ec8f0813807e2b92983398a74a02d46e6d4f280
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4defed78228805a3f61447def82b3c3d406103d3
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271799"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239892"
 ---
 # <a name="power-bi-for-report-designers"></a>Power BI jelentéstervezőknek
 
-Ön használja a Power BI-t az adatokhoz való csatlakozáshoz, lekérdezések tervezéséhez, valamint jelentések és irányítópultok létrehozásához? Ön fejlesztő, és saját alkalmazásokat hoz létre? Ön a Power BI adminisztrátora? Ezek a források segítenek, hogy munkáját még gyorsabban el tudja végezni. Üdvözöljük!
+Ön használja a Power BI-t az adatokhoz való csatlakozáshoz, lekérdezések tervezéséhez, valamint jelentések és irányítópultok létrehozásához? Ön a Power BI adminisztrátora? Ezek a források segítenek, hogy munkáját még gyorsabban el tudja végezni. Üdvözöljük!
 
 Ön inkább felhasználója a Power BI-nak? Önt is Üdvözöljük! Azt javasoljuk, hogy kezdje a [Power BI felhasználóknak](consumer/power-bi-consumer-landing.md) résszel.
 
@@ -157,46 +157,6 @@ ms.locfileid: "68271799"
                                           <p></p>
                                                 <a href="service-how-to-collaborate-distribute-dashboards-reports.md">A közös használat és tartalommegosztás módja</a><br/>
                                                 <a href="service-create-workspaces.md">Alkalmazás-munkaterületek a Power BI szolgáltatásban</a> 
-                                    </div> 
-                              </div> 
-                        </div> 
-                  </div> 
-            </li>
-            <li> 
-                  <div class="cardSize"> 
-                        <div class="cardPadding"> 
-                              <div class="card"> 
-                                    <div class="cardImageOuter">
-                                          <div class="cardImage">
-                                                <img alt="Develop for Power BI" src="media/power-bi-creator-landing/power-bi-designer-develop-power-bi.svg" data-linktype="relative-path">
-                                          </div>
-                                    </div>
-                                    <div class="cardText"> 
-                                          <h3>Fejlesztés a Power BI-hoz</h3> 
-                                          <p></p>
-                                                <a href="developer/embedding.md">Beágyazás a Power BI szolgáltatással</a><br/> 
-                                                <a href="developer/custom-visual-develop-tutorial.md">Egyéni vizualizációk létrehozása</a><br/> 
-                                                <a href="https://docs.microsoft.com/rest/api/power-bi">A Power BI REST API-jai</a>
-                                    </div> 
-                              </div> 
-                        </div> 
-                  </div> 
-            </li>
-            <li> 
-                  <div class="cardSize"> 
-                        <div class="cardPadding"> 
-                              <div class="card"> 
-                                    <div class="cardImageOuter">
-                                          <div class="cardImage">
-                                                <img alt="Administer Power BI" src="media/power-bi-creator-landing/power-bi-designer-administer-power-bi.svg" data-linktype="relative-path">
-                                          </div>
-                                    </div>
-                                    <div class="cardText"> 
-                                          <h3>Power BI felügyelete</h3> 
-                                          <p></p>
-                                                <a href="service-admin-administering-power-bi-in-your-organization.md">Mit jelent a Power BI-felügyelet?</a><br/> 
-                                                <a href="service-admin-purchasing-power-bi-pro.md">Power BI Pro-licencek megvásárlása</a><br/>
-                                                <a href="service-admin-reference.md">PowerShell-parancsmagok, REST API-k és .NET SDK</a>
                                     </div> 
                               </div> 
                         </div> 

@@ -7,81 +7,86 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 09/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 089f8c31a0b1eb11f6871268f2f848949be95d9b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e51f936e44e8c8ee3442aedfb2389675774c0a47
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222121"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020436"
 ---
 # <a name="connect-to-microsoft-azure-consumption-insights-with-power-bi"></a>Csatlakozás a Microsoft Azure Consumption Insightshoz a Power BI használatával
-A Power BI-tartalomcsomaggal a Power BI-ban vizsgálhatja és elemezheti a Microsoft Azure használati adatait. Az adatok naponta egyszer automatikusan frissülnek.
+A Power BI-tartalomcsomaggal a Power BI szolgáltatásban vizsgálhatja és elemezheti a Microsoft Azure használati adatait. Az adatokat naponta egyszer automatikusan frissíti a rendszer.
 
-Csatlakozzon a Power BI-hoz készült [Microsoft Azure Consumption Insights tartalomcsomaghoz](https://app.powerbi.com/getdata/services/azureconsumption).
+Csatlakozzon a Power BI szolgáltatáshoz készült [Microsoft Azure Consumption Insights tartalomcsomaghoz](https://app.powerbi.com/getdata/services/azureconsumption).
+
+> [!NOTE]
+> A beállítások jobb testreszabása érdekében próbálja ki az [Azure Consumption Insights-összekötőt](desktop-connect-azure-consumption-insights.md) a Power BI Desktopban.
 
 ## <a name="how-to-connect"></a>Csatlakozás
-1. A bal oldali navigációs ablaktábla alján kattintson az **Adatok lekérése** elemre.
+1. A Power BI szolgáltatás bal oldali navigációs panelének alján kattintson az **Adatok lekérése** elemre.
    
-    ![](media/service-connect-to-azure-consumption-insights/getdata.png)
+    ![Adatok beolvasása](media/service-connect-to-azure-consumption-insights/getdata.png)
 2. A **Szolgáltatások** mezőben kattintson a **Lekérés** elemre.
    
-   ![](media/service-connect-to-azure-consumption-insights/services.png)
-3. Válassza ki **a Microsoft Azure Consumption Insights** \> **Letöltés most**. 
+   ![Szolgáltatások lekérése](media/service-connect-to-azure-consumption-insights/services.png)
+3. Válassza a **Microsoft Azure Consumption Insights** \> **Azonnali lekérés** elemet. 
    
-   ![](media/service-connect-to-azure-consumption-insights/mazureconsumption.png)
+   ![Beszerzés most](media/service-connect-to-azure-consumption-insights/mazureconsumption.png)
 4. Adja meg, hogy hány hónapnyi adatot szeretne importálni, valamint az Azure Enterprise beléptetési számát. A [paraméterek fellelhetőségével](#FindingParams) kapcsolatos információt lásd alább.
    
-    ![](media/service-connect-to-azure-consumption-insights/azureconsumptionparams.png)
-5. A csatlakozáshoz adja meg a hozzáférési kulcsát. A regisztrációs kulcsot az Azure EA Portalon található. 
+    ![Csatlakozás a Microsoft Azure Consumption Insights szolgáltatáshoz](media/service-connect-to-azure-consumption-insights/azureconsumptionparams.png)
+5. A csatlakozáshoz adja meg a hozzáférési kulcsát. A regisztrációs kulcsot az Azure EA Portalon találja meg. 
    
-    ![](media/service-connect-to-azure-consumption-insights/msazureconsumptioncreds.png)
-6. Az importálás automatikusan megkezdődik. Amikor végzett, egy új irányítópult, jelentés és modell jelennek meg a navigációs ablaktáblán. Válassza ki az irányítópultot az importált adatok megtekintéséhez.
+    ![Microsoft Azure Consumption Insights: kulcs](media/service-connect-to-azure-consumption-insights/msazureconsumptioncreds.png)
+6. Az importálás automatikusan megkezdődik. Ha befejeződött, a navigációs panelen megjelenik egy új irányítópult, jelentés és modell. Válassza ki az irányítópultot az importált adatok megtekintéséhez.
    
-   ![](media/service-connect-to-azure-consumption-insights/msazureconsumptiondashboard.png)
+   ![Microsoft Azure Consumption Insights irányítópult](media/service-connect-to-azure-consumption-insights/msazureconsumptiondashboard.png)
 
 **Mi a következő lépés?**
 
 * [Kérdéseket tehet fel a Q&A mezőben](consumer/end-user-q-and-a.md) az irányítópult tetején.
 * [Módosíthatja az irányítópult csempéit](service-dashboard-edit-tile.md).
 * [Kiválaszthatja valamelyik csempét](consumer/end-user-tiles.md) a mögöttes jelentés megnyitásához.
-* Míg az adatkészlet napi frissítésre van ütemezve, módosíthatja a frissítési ütemezést, vagy próbálja meg frissíteni ezt az adatkészletet a **frissítés most**
+* Noha az adatkészlet napi frissítésre van ütemezve, módosíthatja a frissítési ütemezést, vagy igény szerint frissíthet az **Azonnali frissítés** gombbal
 
 ## <a name="whats-included"></a>Tartalom
-A Microsoft Azure Consumption Insights tartalomcsomag a kapcsolódáskor a megadott hónap tartomány vonatkozó havi jelentésadatokat tartalmazza. A tartomány egy mozgó időablak,, így a dátumok az adatkészlet frissítésekor frissülnek.
+A Microsoft Azure Consumption Insights tartalomcsomag a csatlakozás során megadott hónaptartományra vonatkozó havi jelentésadatokat tartalmazza. A tartomány egy mozgó időablak, ezért a dátumok az adathalmaz frissítésekor lesznek frissítve.
 
 ## <a name="system-requirements"></a>Rendszerkövetelmények
-A tartalomcsomag használatához hozzáférés a vállalati szolgáltatásokhoz az Azure Portalon. 
+A tartalomcsomag használatához hozzáférés szükséges a Vállalati szolgáltatásokhoz az Azure Portalon. 
 
 <a name="FindingParams"></a>
 
 ## <a name="finding-parameters"></a>Paraméterek helye
-A Power BI-jelentés érhető el a közvetlen nagyvállalati szerződéssel rendelkező, partneri és közvetett ügyfelek számára, akiknek a számlázási információk is megtekinthetők. Olvassa el alább a csatlakozási folyamat vár értékeit helyével kapcsolatos részleteket.
+A Power BI-jelentések készítése olyan közvetlen, partneri és közvetett vállalati szerződéssel rendelkező ügyfelek számára elérhető, akik meg tudják tekinteni a számlázási adatokat. Az alábbiakban megtalálhatja az ezeknek a csatlakozási folyamat során megadandó értékeknek a helyével kapcsolatos részleteket.
 
 **Hónapok száma**
 
-* A mai importálni kívánt adatokat (1 és 36) hónapok száma.
+* Az importálni kívánt adatok dátuma a mai naptól számított hónapokban (1-36) megadva.
 
 **Beléptetési szám**
 
-* Az Azure Enterprise beléptetési számát, amelyet címen találja a [Azure Enterprise Portalról](https://ea.azure.com/) kezdőképernyő alatt **regisztráció részletei**.
+* Ez az Ön Azure Enterprise beléptetési száma, amelyet az [Azure Enterprise Portal](https://ea.azure.com/) kezdőképernyőjén, a **Regisztráció részletei** területen talál.
   
-    ![](media/service-connect-to-azure-consumption-insights/params2.png)
+    ![Regisztrációs szám](media/service-connect-to-azure-consumption-insights/params2.png)
 
 **Hozzáférési kulcs**
 
-* Találhatja meg a hozzáférési kulcsot az Azure Enterprise portálon a **használati adatok letöltése** > **API hozzáférési kulcsa**.
+* A hozzáférési kulcsot az Azure Enterprise portálon a **Használati adatok letöltése** > **API hozzáférési kulcsa** területen találhatja meg.
   
-    ![](media/service-connect-to-azure-consumption-insights/creds2.png)
+    ![Hozzáférési kulcs](media/service-connect-to-azure-consumption-insights/creds2.png)
 
 **További segítség**
 
-* További segítséget a beállítása az Azure Enterprise Power BI-csomag, jelentkezzen be az Azure Enterprise Portalra, és megtekintheti az API súgófájlját alatt **súgó**. A további utasításokat is megtalálhatja **jelentések** -> **használati adatok letöltése** -> **API hozzáférési kulcsa**.
+* További segítséget kaphat az Azure Enterprise Power BI-csomag beállításához, ha bejelentkezik az Azure Enterprise Portalra, és a **Súgó** területen megtekinti az API-súgófájlt. A **Jelentések** -> **Használati adatok letöltése** -> **API-hozzáférési kulcs** területen is találhat további útmutatást.
+* A beállítások jobb testreszabása érdekében próbálja ki az [Azure Consumption Insights-összekötőt](desktop-connect-azure-consumption-insights.md) a Power BI Desktopban.
 
 ## <a name="next-steps"></a>Következő lépések
-[Első lépések a Power BI-ban](service-get-started.md)
+
+Az [Azure Consumption Insights-összekötő](desktop-connect-azure-consumption-insights.md) a Power BI Desktopban
 
 [Adatok lekérése a Power BI-ban](service-get-data.md)
 

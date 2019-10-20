@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/17/2019
+ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7ee083de9800b55c4f7d998a113c1a63df112b7b
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 269b495a41f193c6a2ba02fa75f171c3b5789689
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624041"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72019604"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Irányítópultok a Power BI szolgáltatás tervezői számára – bevezetés
 
@@ -29,9 +29,6 @@ Az irányítópult funkció csak a Power BI szolgáltatásban érhető el. A Pow
 
 Az irányítópulton látható vizualizációkat *csempéknek* nevezik. Ezek jelentésekből *rögzíthetők* az irányítópultra. Ha csak most kezdte el használni a Power BI-t, a [Power BI szolgáltatás tervezői számára az alapfogalmakat](service-basic-concepts.md) ismertető cikket elolvasva egyszerűen elsajátíthatja az alapokat.
 
-> [!IMPORTANT]
-> Irányítópult létrehozásához [Power BI Pro-licencre](service-free-vs-pro.md) van szüksége.
-
 Az irányítópulton megjelenő vizualizációk a jelentéseken, az egyes jelentések pedig egy-egy adatkészleten alapulnak. Az irányítópultok az alapjául szolgáló jelentésekhez és adatkészletekhez való hozzáférési útnak is tekinthetők. Egy vizualizáció kiválasztásával hozzáférhet az alapjául szolgáló jelentéshez (és adatkészlethez).
 
 ![Az irányítópultok, jelentések és adatkészletek közötti kapcsolatot megjelenítő diagram](media/service-dashboards/power-bi-diagram.png)
@@ -41,6 +38,13 @@ Az irányítópultok segítségével nagyszerűen nyomon követheti üzletmenet�
 
 Az irányítópult nem csak egy tetszetős kép. Egy interaktív funkció, amelyben az egyes csempék az alapul szolgáló adatok változásának megfelelően frissülnek.
 
+## <a name="who-can-create-a-dashboard"></a>Ki hozhat lére irányítópultot?
+Az irányítópult létrehozása *létrehozói* művelet, ezért csak akkor végezheti el, ha jogosultsága van a jelentést szerkeszteni. Szerkesztési jogosultsággal a jelentés létrehozója rendelkezik, valamint azok, akikek a létrehozó engedélyezte ezt. Ha például Dávid létrehoz egy jelentést az ABC munkaterületen, Önt pedig felveszi tagként erre a munkaterületre, akkor Ön is és Dávid is rendelkezik szerkesztési jogosultsággal. Ha azonban a jelentés meg van osztva Önnel, akár közvetlenül, akár egy [Power BI-alkalmazás](service-create-distribute-apps.md) részeként, Ön a jelentés *felhasználója*. Ilyen esetben nem feltétlenül rögzíthet csempéket az irányítópultra. 
+
+> [!IMPORTANT]
+> Irányítópult létrehozásához [Power BI Pro-licencre](service-free-vs-pro.md) van szüksége a munkaterületen. A Saját munkaterületen Power BI Pro-licenc nélkül is hozhat létre irányítópultokat.
+
+
 ## <a name="dashboards-versus-reports"></a>Irányítópultok és jelentések
 A [jelentések](service-reports.md) hasonlítanak az irányítópultokra, mivel mind a kettő egy vizualizációkkal teli vászon. Azonban jelentősen el is térnek bizonyos dolgokban, ahogyan a következő táblázatban látható.
 
@@ -49,7 +53,7 @@ A [jelentések](service-reports.md) hasonlítanak az irányítópultokra, mivel 
 | Oldalak |Egy oldal |Egy vagy több oldal |
 | Adatforrások |Egy vagy több jelentés és egy vagy több adatkészlet irányítópultonként |Egyetlen adatkészlet jelentésenként |
 | Elérhető a Power BI Desktopban |Nem | Igen. Létrehozhatnak és megtekinthetnek jelentéseket a Power BI Desktopban |
-| Előfizetés |Igen. Feliratkozhat irányítópultra |Igen. Feliratkozhat jelentésoldalra |
+| Feliratkozás |Igen. Feliratkozhat irányítópultra |Igen. Feliratkozhat jelentésoldalra |
 | Szűrés |Nem. Nem lehet szűrni és szeletelni |Igen. Számos szűrési, kiemelési és szeletelési móddal rendelkezik |
 | Kiemelt |Igen. Kiválaszthat és beállíthat egy *kiemelt* irányítópultot |Nem |
 | Kedvenc | Igen. Több irányítópultot *kedvencként* jelölhet meg | Igen. Több jelentést *kedvencként* jelölhet meg

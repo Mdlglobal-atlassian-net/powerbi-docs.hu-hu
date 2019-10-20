@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 62bec222a3f948612db63c386e10c0afe9762bb4
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d83a57b2b1f8e2ca0887f2432f2de43647900b81
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721425"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020638"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Power BI szervezeti tartalomcsomaggal létesített kapcsolat eltávolítása
 
 > [!NOTE]
-> Nem lehet létrehozni vagy telepíteni céges tartalomcsomagokat az új munkaterületi felhasználói felület előzetes verziójában. Ha még nem kezdte el, ideje frissítenie az alkalmazásokhoz tartozó tartalomcsomagokat. További információ az [új munkaterületi felhasználói felületről](service-create-the-new-workspaces.md).
+> Az új munkaterületi felhasználói felületen nem lehet vállalati tartalomcsomagokat létrehozni vagy telepíteni. Ha még nem kezdte el, ideje frissítenie az alkalmazásokhoz tartozó tartalomcsomagokat. További információ az [új munkaterületi felhasználói felületről](service-create-the-new-workspaces.md).
 > 
 
 Egy munkatársa létrehozott egy tartalomcsomagot. Ön megnyitotta az AppSource-ban, és hozzáadta a Power BI-munkaterületéhez. Mostanra pedig már nincs rá szüksége.  Hogyan tudja eltávolítani?

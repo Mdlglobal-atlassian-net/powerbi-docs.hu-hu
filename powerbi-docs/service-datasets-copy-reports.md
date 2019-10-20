@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: af0ffa5a879a2249c34ac73895103dfdf63e4d27
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: c60c3c29bbf87d7a5e18838dac0baa6157de6437
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530613"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020828"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Jelentések másolása más munkaterületekről (előzetes verzió)
 
@@ -32,7 +32,7 @@ Ha egy munkaterületen vagy alkalmazásban Önnek megfelelő jelentést talál, 
 
     ![Jelentés másolatának mentése](media/service-datasets-copy-reports/power-bi-dataset-save-report-copy.png)
 
-    A **Másolat mentése** ikon csak akkor jelenik meg, ha a jelentés új felületű munkaterületen van, és Ön [Összeállítási engedéllyel](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) rendelkezik. Akkor is Összeállítási engedéllyel kell rendelkeznie az adathalmazhoz, ha a munkaterülethez rendelkezik hozzáféréssel.
+    A **Másolat mentése** ikon csak akkor jelenik meg, ha a jelentés új felületű munkaterületen van, és [Összeállítási engedéllyel](service-datasets-build-permissions.md) rendelkezik. Akkor is Összeállítási engedéllyel kell rendelkeznie az adathalmazhoz, ha a munkaterülethez rendelkezik hozzáféréssel.
 
 3. A **Jelentés másolatának mentése** párbeszédpanelen adja meg a jelentés nevét, és válassza ki a célmunkaterületet.
 

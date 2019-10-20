@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/16/2019
+ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ace40fed472dc516cce5a761544cc5365566f3cd
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e086cc89a24760bce0c4a45efd558dc47495bd04
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074127"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020773"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Adathalmazok használata több munkaterületen (előzetes verzió) – bevezetés
 
@@ -23,7 +23,7 @@ Az üzleti intelligencia együttműködésen alapuló tevékenység. Fontos az e
 
 ![Megosztott adatkészlet kiválasztása](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-A Power BI-ban az adathalmazok létrehozói az [összeállítási engedély](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) használatával szabályozhatják, hogy ki férhet hozzá az adataikhoz. Az adathalmazok létrehozói ezen kívül *minősíthetik* vagy *meghirdethetik* az adathalmazokat, hogy mások felfedezhessék azokat. A jelentéskészítők ez alapján tudhatják, hogy melyek a jó minőségű és hivatalos adathalmazok, és ezeket használhatják mindahhoz, amit a Power BI-ban készítenek. A bérlői rendszergazdák egy új bérlői beállítással [szabályozhatják az adathalmazok több munkaterületen való felhasználását](service-datasets-admin-across-workspaces.md).
+A Power BI-ban az adathalmazok létrehozói az [összeállítási engedély](service-datasets-build-permissions.md) használatával szabályozhatják, hogy ki férhet hozzá az adataikhoz. Az adathalmazok létrehozói ezen kívül *minősíthetik* vagy *meghirdethetik* az adathalmazokat, hogy mások felfedezhessék azokat. A jelentéskészítők ez alapján tudhatják, hogy melyek a jó minőségű és hivatalos adathalmazok, és ezeket használhatják mindahhoz, amit a Power BI-ban készítenek. A bérlői rendszergazdák egy új bérlői beállítással [szabályozhatják az adathalmazok több munkaterületen való felhasználását](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Adathalmazok megosztása és az új munkaterületi felhasználói felület
 
@@ -44,7 +44,7 @@ Ha egy munkaterületen vagy alkalmazásban Önnek megfelelő jelentést talál, 
 
 ## <a name="build-permission-for-datasets"></a>Összeállítási engedély adathalmazokhoz
 
-Az összeállítási engedélytípussal egy adathalmaz létrehozójaként meghatározhatja, hogy a vállalatnál ki készíthet új tartalmat az adathalmazok alapján. Az összeállítási engedéllyel rendelkezők az adathalmazból a Power BI-on kívül, például Excel-munkalapokon is készíthetnek új tartalmat az Elemzés az Excelben funkció, az XMLA és az exportálás használatával. További információ: [Összeállítási engedély](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Összeállítási engedélytípussal egy adathalmaz létrehozójaként meghatározhatja, hogy a vállalatnál ki készíthet új tartalmat az adathalmazok alapján. Az Összeállítási engedéllyel rendelkezők az adathalmazból a Power BI-on kívül, például Excel-munkalapokon is készíthetnek új tartalmat az Elemzés az Excelben funkció, az XMLA és az exportálás használatával. További információ: [Összeállítási engedély](service-datasets-build-permissions.md).
 
 ## <a name="promotion-and-certification"></a>Meghirdetés és minősítés
 
@@ -54,19 +54,17 @@ Ha adathalmazokat hoz létre, és olyat készít, amelynek mások is hasznát ve
 
 A megosztott adathalmazokkal kapcsolatos képességekre épülő funkciók és felületek azok meglévő felhasználási helyzete alapján vannak licencelve. Például:
 
-- A megosztott adathalmazok felfedezése és az azokhoz való csatlakozás általában mindenki számára elérhető. Pro-licenccel nem rendelkező felhasználók azonban csak a saját munkaterületükön lévő adathalmazokhoz csatlakozhatnak.
-- A Pro-licenccel nem rendelkező felhasználók csak egy megosztott adatkészletre épülő jelentéseket és irányítópultokat használhatnak, ha mindkét munkaterület (a tartalom és az adatkészlet munkaterületei) egy Premium-kapacitásban található.
-- A Power BI Desktopban a Pro-licenccel nem rendelkező felhasználók csak a saját munkaterületükön lévő adathalmazokat láthatják.
+- A megosztott adathalmazok felfedezése és az azokhoz való csatlakozás általában mindenki számára elérhető – az a szolgáltatás nincs a Prémium szintre korlátozva.
+- A Pro-licenccel nem rendelkező felhasználók csak akkor használhatnak más munkaterületen lévő adathalmazokat jelentéskészítéshez, ha ezek az adathalmazok a felhasználó személyes Saját munkaterületén, vagy Prémium-szintű munkaterületen vannak. Ugyanez a licencelési korlátozás a Power BI Desktopban és a Power BI szolgáltatásban készülő jelentésekre is érvényes.
 - Jelentések munkaterületek közötti másolásához Pro-licenc szükséges.
 - Jelentéseknek egy alkalmazásból való másolásához a vállalati tartalomcsomagok követelményeinek megfelelően Pro-licenc szükséges.
 - Adathalmazok meghirdetéséhez és minősítéséhez Pro-licenc szükséges.
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
+- Alkalmazás-közzétevőként gondoskodnia kell arról, hogy a célközönsége hozzáférjen az alkalmazás-munkaterületen kívüli adathalmazokhoz. Ellenkező esetben a felhasználók problémákba ütköznek az alkalmazás használata során: az adathalmazokhoz való hozzáférés hiányában a jelentések nem nyílnak meg, az irányítópultok csempéi pedig zároltként jelennek meg. Ha a navigáció kezdőeleme egy jelentés, akkor az adathalmazhoz való hozzáférés nélkül a felhasználók az alkalmazást sem tudják megnyitni.
 - Más munkaterületen lévő adathalmazra alapozott jelentés készítéséhez mindkét oldalon az új munkaterületi felhasználói felület szükséges: A jelentésnek új munkaterületi felületen kell lennie, és az adathalmaznak is új munkaterületi felületen kell lennie.
-- Tegyük fel, hogy az A munkaterületen hoz létre egy jelentést egy B munkaterületen lévő adathalmaz alapján. Ha alkalmazást hoz létre az A munkaterülethez, a jelentést csak akkor foglalhatja bele az A munkaterületi alkalmazásba, ha Ön a B munkaterületnek is tagja.
 - Klasszikus munkaterületen az adathalmaz-felfedezési felületen csak az azon a munkaterületen lévő adathalmazok jelennek meg.
-- Ha megosztott adathalmazon alapuló jelentést szeretne hozzáadni egy alkalmazáshoz, akkor tagnak kell lennie az adathalmaz munkaterületén. Ez ismert probléma.
 - A „Webes közzététel” megosztott adathalmazokon alapuló jelentések esetén szándékosan nem használható.
 - Ha ketten olyan munkaterület tagjai, amely hozzáfér egy megosztott adathalmazhoz, akkor előfordulhat, hogy csak az egyikük látja a kapcsolódó adathalmazt a munkaterületen. A megosztott adathalmazt csak azok látják, akik legalább Olvasási hozzáféréssel rendelkeznek az adathalmazhoz. 
 

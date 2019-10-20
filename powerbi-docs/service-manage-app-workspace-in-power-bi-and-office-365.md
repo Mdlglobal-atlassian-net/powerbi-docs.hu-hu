@@ -7,22 +7,22 @@ ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 09/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 218124542570d313c3d5893a6f1d69c75594f33c
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 77be33787599cfbb50916093d0445cf586511d90
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903781"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020757"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Az alkalmazás-munkaterület kezelése a Power BI-ban és az Office 365-ben
 
 Az Office 365-ben vagy a [Power BI-ban az alkalmazás-munkaterület](service-create-distribute-apps.md) létrehozójaként vagy rendszergazdájaként Ön kezeli a Power BI munkaterületének egyes funkcióit. Más funkciókat az Office 365-ben kezelhet.
 
 > [!NOTE]
-> Az új munkaterületi felhasználói felület előzetes verziójában megváltozik a Power BI-munkaterületek és az Office 365-csoportok közötti kapcsolat. A rendszer nem fog automatikusan létrehozni Office 365-csoportokat minden alkalommal, amikor egy új munkaterület jön létre. Tudnivalók [az új munkaterületek létrehozásáról](service-create-the-new-workspaces.md).
+> Az új felhasználói felületű munkaterületen megváltozik a Power BI-munkaterületek és az Office 365-csoportok közötti kapcsolat. A rendszer nem hoz létre automatikusan Office 365-csoportot minden alkalommal, amikor Ön új munkaterület hoz létre. Tudnivalók [az új munkaterületek létrehozásáról](service-create-the-new-workspaces.md).
 
 A **Power BI-ban** a következőket teheti:
 

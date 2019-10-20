@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 83e3ffbae43d25e89cf52077acaa731cdee9b502
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4dda73794c888d89ad67f1af23bfb8c38eb43f61
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270825"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020803"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Beágyazott adatforrás létrehozása lapszámozott jelentésekhez a Power BI szolgáltatásban
 
@@ -76,21 +76,21 @@ A Power BI-adatkészletekhez csatlakozó többoldalas jelentések kisebb eltér�
 
 - .rdl ugyanabban a munkaterületben, mint az adatkészlet (ugyanazon tulajdonos): Támogatott
 - .rdl más munkaterületben, mint az adatkészlet (ugyanazon tulajdonos): Támogatott
-- Megosztott .rdl: Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén
-- Megosztott alkalmazás: Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén
+- Megosztott .rdl: A jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
+- Megosztott alkalmazás: A jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
 - .rdl ugyanabban a munkaterületben, mint az adatkészlet (eltérő tulajdonos): Támogatott
-- .rdl más munkaterületben, mint az adatkészlet (eltérő tulajdonos): Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén
-- Sorszintű biztonság: Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén a kötelezővé tételhez.
+- .rdl az adathalmazétól különböző munkaterületen (eltérő felhasználó): A jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
+- Sorszintű biztonság: Ennek érvényre juttatásához a jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén.
 
 ### <a name="new-experience-apps-and-app-workspaces"></a>Új felhasználói móddal rendelkező alkalmazások és alkalmazás-munkaterületek
 
 - .rdl ugyanabban a munkaterületben, mint az adatkészlet: Támogatott
 - .rdl más munkaterületben, mint az adatkészlet (ugyanazon tulajdonos): Támogatott
-- Megosztott .rdl: Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén
-- Megosztott alkalmazás: Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén
+- Megosztott .rdl: A jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
+- Megosztott alkalmazás: A jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
 - .rdl ugyanabban a munkaterületben, mint az adatkészlet (eltérő tulajdonos) – támogatott
-- .rdl más munkaterületben, mint az adatkészlet (eltérő tulajdonos): Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén
-- Sorszintű biztonság: Buildelési engedélyeket kell hozzárendelni a jelentést megtekintő minden felhasználóhoz az adatkészlet szintjén a kötelezővé tételhez
+- .rdl más munkaterületben, mint az adatkészlet (eltérő tulajdonos): A jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
+- Sorszintű biztonság: Ennek érvényre juttatásához a jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
 
 ## <a name="next-steps"></a>Következő lépések
 

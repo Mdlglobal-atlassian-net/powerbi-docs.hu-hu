@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f54906643bba8c631c8d8052309ad3ff512ad3fa
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 7aa9ec22eec07632a071b5ffaadfe06f221897d7
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305748"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020225"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Alkalmazás közzététele a Power BI-ban
 
@@ -30,7 +30,7 @@ Az üzleti felhasználók különböző módokon férhetnek hozzá az alkalmazá
 - Küldhet nekik közvetlen hivatkozást.
 - Ha a Power BI rendszergazda engedélyezi, automatikusan telepítheti az alkalmazást a munkatársai Power BI-fiókjába.
 
-Az alkalmazást saját beépített navigációval is létrehozhatja, hogy a felhasználók könnyen tájékozódhassanak a tartalmak között. Az alkalmazás tartalmát ők nem módosíthatják. Használhatják a Power BI szolgáltatásban vagy valamelyik mobilalkalmazásban is – maguk is szűrhetik, kiemelhetik és rendezhetik az adatokat. A rendszer automatikusan frissíti az alkalmazásokat, és szabályozható, milyen gyakran frissüljenek az adatok. Összeállítási engedélyt is adhat nekik, hogy csatlakozhassanak a mögöttes adathalmazhoz, és másolatokat hozhassanak létre az alkalmazásbeli jelentésekről. További információ: [Összeállítási engedély](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Az alkalmazást saját beépített navigációval is létrehozhatja, hogy a felhasználók könnyen tájékozódhassanak a tartalmak között. Az alkalmazás tartalmát ők nem módosíthatják. Használhatják a Power BI szolgáltatásban vagy valamelyik mobilalkalmazásban is – maguk is szűrhetik, kiemelhetik és rendezhetik az adatokat. A rendszer automatikusan frissíti az alkalmazásokat, és szabályozható, milyen gyakran frissüljenek az adatok. Összeállítási engedélyt is adhat nekik, hogy csatlakozhassanak a mögöttes adathalmazhoz, és másolatokat hozhassanak létre az alkalmazásbeli jelentésekről. További információ: [Összeállítási engedély](service-datasets-build-permissions.md).
 
 ## <a name="licenses-for-apps"></a>Licencek alkalmazásokhoz
 Alkalmazás létrehozásához vagy frissítéséhez Power BI Pro-licenccel kell rendelkeznie. Az alkalmazás *fogyasztói* esetében két lehetőség van.
@@ -166,11 +166,11 @@ Az alkalmazások leküldéses továbbítása során az alábbiakra érdemes ügy
 - Megkereshetik ezeket az adathalmazokat a Power BI Desktopban és a Power BI szolgáltatás adatlekérési felületén.
 - Jelentéseket és irányítópultokat hozhatnak létre ezen adathalmazok alapján.
 
-Ha kikapcsolja ezt a beállítást, az alkalmazáshoz felvett új felhasználók már nem kapnak Összeállítási engedélyt. Az alkalmazás meglévő felhasználóinak a mögöttes adathalmazra vonatkozó engedélyei viszont nem módosulnak. Manuálisan is megvonhatja az Összeállítási engedélyt azoktól a felhasználóktól, akiknek már nem kell rendelkezniük vele. További információ: [Összeállítási engedély](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Ha kikapcsolja ezt a beállítást, az alkalmazáshoz felvett új felhasználók már nem kapnak Összeállítási engedélyt. Az alkalmazás meglévő felhasználóinak a mögöttes adathalmazra vonatkozó engedélyei viszont nem módosulnak. Manuálisan is megvonhatja az Összeállítási engedélyt azoktól a felhasználóktól, akiknek már nem kellene rendelkezniük vele. További információ: [Összeállítási engedély](service-datasets-build-permissions.md).
 
 ## <a name="allow-users-to-copy-reports"></a>Jelentések másolásának engedélyezése felhasználók számára
 
-Ha bejelöli **A felhasználók másolatot készíthetnek az alkalmazásbeli jelentésekről** beállítást, akkor a felhasználók az alkalmazás bármelyik jelentését a saját munkaterületükre vagy más munkaterületre menthetik. Másolat készítéséhez a felhasználóknak Pro-licencre van szükségük, még akkor is, ha az eredeti jelentés egy Premium-kapacitásbeli munkaterületen található. Ez után egyéni igényeik szerint testreszabhatják a jelentéseket. Először be kell jelölnie a **Minden felhasználó csatlakozhat az alkalmazás mögöttes adathalmazaihoz az Összeállítási engedély használatával** beállítást. Ezeknek a beállításoknak a megadásával engedélyezi az új [jelentések másolása más munkaterületekről](service-datasets-copy-reports.md) képességet.
+Ha bejelöli **A felhasználók másolatot készíthetnek az alkalmazásbeli jelentésekről** beállítást, akkor a felhasználók az alkalmazás bármelyik jelentését a saját munkaterületükre vagy más munkaterületre menthetik. Másolat készítéséhez a felhasználóknak Pro-licencre van szükségük, még akkor is, ha az eredeti jelentés egy Premium-kapacitásbeli munkaterületen található. Ez után egyéni igényeik szerint testreszabhatják a jelentéseket. Először be kell jelölnie a **Minden felhasználó csatlakozhat az alkalmazás mögöttes adathalmazaihoz Összeállítási engedély használatával** beállítást. Ezeknek a beállításoknak a megadásával engedélyezi az új [jelentések másolása más munkaterületekről](service-datasets-copy-reports.md) képességet.
 
 ## <a name="unpublish-an-app"></a>Alkalmazás közzétételének visszavonása
 Egy munkaterület bármely tagja visszavonhatja az alkalmazás közzétételét.

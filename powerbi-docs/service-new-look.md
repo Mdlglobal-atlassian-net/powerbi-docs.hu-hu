@@ -7,21 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 10/08/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6c752b6083d2f3baecf7e1a9ce20f77e8c5a46d0
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 11f60ba14734f40849aec47a492f4bf80c4ef3b5
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654914"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239957"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>A Power BI szolgáltatás új külseje
 
-A Power BI szolgáltatás (app.powerbi.com) új arculattal rendelkezik, amely megkönnyíti a jelentések megtekintését és kezelését. Az új arculat egy modern felületet nyújt, amely egyszerűbb, és a többi Microsoft-termékhez hasonlít. A Power BI szolgáltatás minden területén a jelentések tartalmát helyeztük a középpontba. Ehhez egy világosabb színtémát választottunk, és frissítettük az ikonokat. Íme az új külső áttekintése. Részletekért tekintse meg a számozott szakaszokat:
+A Power BI szolgáltatás (app.powerbi.com) új arculattal rendelkezik, amely megkönnyíti a jelentések megtekintését és kezelését. Az új arculat egyszerűbb, és a többi Microsoft-termékhez hasonlít. A Power BI szolgáltatás minden területén a jelentések tartalmát helyeztük a középpontba. Ehhez egy világosabb színtémát választottunk, és frissítettük az ikonokat. Íme az új külső áttekintése. Részletekért tekintse meg a számozott szakaszokat:
 
 ![A változások áttekintése az új arculatban](media/service-new-look/power-bi-new-look-changes.png)
+
+Konkrét műveletet keres? Itt megtalálhatja: [Az „új arculat”: Hol vannak a műveletek?](service-new-look-where-actions.md)
 
 ## <a name="quick-tour-of-the-changes"></a>A módosítások gyors bemutatása
 
@@ -70,7 +72,7 @@ A **Fájl** menü műveleteit keresi? A korábban a **Fájl** menüben találhat
 
 ## <a name="6-new-filter-experience"></a>6. Új szűrőfunkciók
 
-Az új megjelenéssel alapértelmezés szerint elérhetők az új frissítések is (például az alkalmazott szűrők megtekintése és az új Szűrők panel). Az új Szűrők panel az új szűrőfrissítés nélkül is megjelenik a jelentéstervezőknek.
+Az új megjelenéssel alapértelmezés szerint elérhetők az új frissítések is (például az alkalmazott szűrők megtekintése és az új Szűrők panel). Akkor is az új szűrési panel jelenik meg, ha a jelentés készítője nem frissítette a szűrési felületet.
 
 ![Szűrő átértékelése](media/service-new-look/power-bi-new-look-filters.png)
 

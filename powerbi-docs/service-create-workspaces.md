@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5385512e534d866a2474fd4e3def10f45d52a1a0
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 32b9adc92222e2122aff41d7ef7ef351c3158951
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903875"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020239"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Klasszikus munkaterületek létrehozása a Power BI-ban
 
@@ -90,11 +90,11 @@ Az alkalmazások a vállalati tartalomcsomagokból fejlődtek ki. Ha már vannak
 * Miután az üzleti felhasználók telepítenek egy tartalomcsomagot, az elveszíti a csoportosított identitását: csupán más irányítópultokkal és jelentésekkel összekeveredett irányítópultok és jelentések listája. Az alkalmazások ezzel szemben telepítés után is megtartják a csoportosításukat és az identitásukat. Ezzel a csoportosítással az üzleti felhasználók egyszerűbben navigálhatnak közöttük az idők során.
 * Létrehozhat több tartalomcsomagot is egy munkaterületről, az alkalmazás azonban egy-az-egyhez kapcsolatban áll a munkaterületével. 
 * Terveink szerint a vállalati tartalomcsomagok idővel elavulttá válnak, ezért javasoljuk, hogy mostantól alkalmazásokat hozzon létre.  
-* Az új munkaterület felhasználói felületének előzetes verziójában megtesszük az első lépéseket a szervezeti tartalomcsomagok elavulttá tétele felé. Az előzetes verziós munkaterületekben nem hozhat létre és használhat ilyen tartalomcsomagokat.
+* Az új munkaterületi felület bevezetésével megtettük az első lépéseket a vállalati tartalomcsomagok kivonása felé. Ezeket az új munkaterületeken már nem használhatja, és nem hozhatja létre.
 
 A kettő összehasonlításához olvassa el [az új és a meglévő munkaterületek eltéréseit](service-new-workspaces.md#how-the-new-workspaces-are-different) ismertető cikket. 
 
 ## <a name="next-steps"></a>Következő lépések
 * [Alkalmazások telepítése és használata a Power BI-ban](service-create-distribute-apps.md)
-- [Új munkaterületek létrehozása (előzetes verzió)](service-create-the-new-workspaces.md)
+- [Az új munkaterületek létrehozása](service-create-the-new-workspaces.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
