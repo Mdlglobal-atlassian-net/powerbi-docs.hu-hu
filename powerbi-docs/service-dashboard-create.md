@@ -10,49 +10,46 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: b50d247f54cfe2af4cefbd14b9528b1dfa263acf
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 108882dd0f3b61d6cb19fd18290b44316231f3cb
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624233"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020347"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Power BI-irányítópult létrehozása jelentésből
 Áttekintette [A Power BI-irányítópultok – bevezetés](service-dashboards.md) részben leírtakat, és most saját irányítópultot kíván létrehozni. Az irányítópultok létrehozásának számos különböző módja van. Többek között jelentésből, előzmények nélkül, adatkészletből, illetve egy meglévő irányítópult megkettőzésével is létrehozhatók.  
 
-A kezdés sokak számára bonyolult lehet, ezért egy gyorsan és egyszerűen elkészíthető irányítópulttal kezdünk, amelyre már elkészült jelentésből fogunk vizualizációkat rögzíteni. 
+Egy gyorsan és egyszerűen elkészíthető irányítópulttal kezdünk, amelyre már elkészült jelentésből fogunk vizualizációkat rögzíteni. 
 
-A rövid útmutató elvégzése után már ismerni fogja a következőket:
+Mire a cikk végére ér, tisztában lesz a következőkkel:
 - A jelentések és irányítópultok közötti kapcsolat
 - A Szerkesztési nézet megnyitása a jelentésszerkesztőben
 - Csempék rögzítése 
 - Navigálás az irányítópultokban és a jelentésekben 
-
-## <a name="who-can-create-a-dashboard"></a>Ki hozhat lére irányítópultot?
-Az irányítópult létrehozása *létrehozói* művelet, ezért csak akkor végezheti el, ha jogosultsága van a jelentést szerkeszteni. Szerkesztési jogosultsággal a jelentés létrehozója rendelkezik, valamint azok, akikek a létrehozó engedélyezte ezt. Ha például Dávid létrehoz egy jelentést az ABC munkaterületen, majd hozzáadja Önt ehhez a munkaterülethez, akkor Ön is és Dávid is rendelkezik majd szerkesztési jogosultsággal. Ha azonban a jelentést megosztották Önnel akár közvetlenül, akár egy [Power BI-alkalmazás](service-create-distribute-apps.md) részeként (más szóval ha Ön a jelentés *felhasználója*), akkor Ön nem fog tudni csempéket rögzíteni az irányítópultra.
  
 ![Irányítópult](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
 > [!NOTE] 
-> Az irányítópult a Power BI szolgáltatás, nem pedig a Power BI Desktop funkciója. Power BI-mobileszközökön csak [megtekinteni és megosztani](consumer/mobile/mobile-apps-view-dashboard.md) lehet az irányítópultokat, létrehozni nem.
+> Az irányítópult a Power BI szolgáltatás, nem pedig a Power BI Desktop funkciója. A Power BI-mobilalkalmazásokban nem hozhat létre irányítópultokat, azonban [megtekintheti és megoszthatja](consumer/mobile/mobile-apps-view-dashboard.md) azokat.
 >
 > 
 
 ## <a name="video-create-a-dashboard-by-pinning-visuals-and-images-from-a-report"></a>Videó: Irányítópult létrehozása jelentésből származó vizualizációk és képek rögzítésével
-Tekintse meg, ahogy Amanda bemutatja egy új irányítópult létrehozását jelentésből származó vizualizációk rögzítésével. Ezután az [Adatkészlet importálása jelentés használatával](#import-a-dataset-with-a-report) lépesekiet követve próbálkozzon meg a feladattal saját maga is a Beszerzéselemzési minta használatával.
+Tekintse meg, ahogy Amanda bemutatja egy új irányítópult létrehozását jelentésből származó vizualizációk rögzítésével. Ezután az [Adathalmaz importálása jelentés használatával](#import-a-dataset-with-a-report) című következő szakasz lépeseit követve próbálkozzon meg a feladattal saját maga is a Beszerzéselemzési minta használatával.
     
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="import-a-dataset-with-a-report"></a>Adatkészlet importálása jelentés használatával
-A Power BI egyik mintaként szolgáló adatkészletét fogjuk importálni, majd egy új irányítópult létrehozására felhasználni. Az itt használt minta egy olyan Excel-munkafüzet, amelyben két PowerView-munkalap található. Amikor a Power BI importálja a munkafüzetet, egy adatkészletet és egy jelentést is hozzáad a munkaterülethez. A rendszer a jelentést automatikusan hozza létre a PowerView-munkalapokból.
+Ebben a lépésenkénti útmutatóban Power BI egyik minta-adathalmazát fogjuk importálni, majd egy új irányítópult létrehozására felhasználni. Az itt használt minta egy olyan Excel-munkafüzet, amely két PowerView-munkalapot tartalmaz. Amikor a Power BI importálja a munkafüzetet, egy adatkészletet és egy jelentést is hozzáad a munkaterülethez. A rendszer a jelentést automatikusan hozza létre a PowerView-munkalapokból.
 
-1. Töltse le a Beszerzéselemzési minta [Excel-fájlt](http://go.microsoft.com/fwlink/?LinkId=529784). Javasoljuk, hogy a OneDrive Vállalati verziójában mentse azt.
+1. Töltse le a [Beszerzéselemzési minta](http://go.microsoft.com/fwlink/?LinkId=529784) Excel-fájlt. Javasoljuk, hogy a OneDrive Vállalati verziójában mentse azt.
 2. Nyissa meg a Power BI szolgáltatást a böngészőben (app.powerbi.com).
 3. A bal oldalon lévő navigációs panelen válassza a **Saját munkaterület**, majd az **Adatok lekérése** lehetőséget.
 
-    ![Bal oldali navigációs ablaktábla](media/service-dashboard-create/power-bi-get-data3.png)
-5. Válassza a **Fájlok** lehetőséget.
+    ![Bal oldali navigációs ablaktábla](media/service-dashboard-create/power-bi-get-data-new-look.png)
+5. A **Fájlok** területen válassza a **Lekérés** lehetőséget.
 
    ![Fájlok lekérése](media/service-dashboard-create/power-bi-select-files.png)
 6. Keresse meg a helyet, ahová a Beszerzéselemzési minta Excel-fájlját mentette. Jelölje ki azt, és válassza a **Kapcsolódás** lehetőséget.
@@ -64,6 +61,9 @@ A Power BI egyik mintaként szolgáló adatkészletét fogjuk importálni, majd 
 8. A sikert jelző üzenet megjelenésekor az **x** jelre kattintva zárja be azt.
 
    ![Sikert jelző üzenet](media/service-dashboard-create/power-bi-view-datasetnew.png)
+
+> [!TIP]
+> Tudta? A bal oldali navigációs sávot keskenyebbre méretezheti a három vonalból álló felső ikon kiválasztásával ![a navigációs panelt elrejtő vagy megjelenítő ikon](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Így több hely jut magának a jelentésnek.
 
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>A jelentés megnyitása, és csempék rögzítése az irányítópulton
 1. Ugyanezen a munkaterületen válassza a **Jelentések** lapot, majd a **Beszerzéselemzési minta** elemet a jelentés megnyitásához.
@@ -105,7 +105,7 @@ A vizualizációk egyenkénti rögzítése helyett lehetőség van arra is, hogy
 
    ![Rögzítés az irányítópulton párbeszédablak](media/service-dashboard-create/power-bi-pin-live2.png)
 
-4. Amikor megkapja az értesítést a sikeres műveletről, válassza az **Ugrás az irányítópultra** lehetőséget. Ott találja majd a jelentésből rögzített összes csempét. Az alábbi példában az 1. oldalról két csempét rögzítettünk, és rögzítettük a jelentés 2. oldalát is, amely egy élő csempének felel meg.
+4. Amikor megkapja az értesítést a sikeres műveletről, válassza az **Ugrás az irányítópultra** lehetőséget. Ott jelentésből rögzített összes csempét megtalálja. Az alábbi példában az 1. oldalról két csempét rögzítettünk, és rögzítettük a jelentés 2. oldalát is, amely egy élő csempének felel meg.
 
    ![Irányítópult](media/service-dashboard-create/power-bi-dashboard.png)
 
