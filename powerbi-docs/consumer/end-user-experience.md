@@ -9,17 +9,19 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 12/06/2018
+ms.date: 10/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: af7f2f0ca5407694b13f0b053ff347f883c8c983
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 14c7f88e0bfb822a73a72958f556443260f6ed76
+ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "68523049"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589454"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Rövid útmutató – Navigáció a Power BI szolgáltatásban
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Most, hogy már ismeri a Power BI használatának alapjait, ideje megismerkednie a **Power BI szolgáltatással** is. Ahogy azt korábban említettük, előfordulhat, hogy a csapata egy tagja az összes idejét a **Power BI Desktop** alkalmazásban tölti azzal, hogy adatokat kombinál és jelentéseket hoz létre mások számára. De lehet, hogy ezzel szemben Ön azzal tölti az összes idejét a Power BI szolgáltatásban, hogy mások által készített tartalmakat tekint meg és kezel (**felhasználói** élmény). Ebben a rövid útmutatóban mintaadatok importálásával és használatával felfedezheti, hogy hogyan tud navigálni a Power BI szolgáltatásban. 
  

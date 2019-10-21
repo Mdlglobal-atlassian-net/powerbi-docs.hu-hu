@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: 2203e3a9abddb52902c09fdc98665ba013f604ee
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 84afdf7072241533bf1e70d6a2a49d18c3da1d8f
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71946215"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307824"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Power BI-vizualizáció minősíttetése
 
@@ -31,7 +31,7 @@ A minősítési folyamat nem kötelező, így a fejlesztők hatásköre eldönte
 
 **A nem minősített Power BI-vizualizációk** nem feltétlenül jelentenek nem biztonságos vizualizációkat. Egyes vizualizációk azért nincsenek minősítve, mert nem felelnek meg egy vagy több [minősítésbeli követelménynek](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Például egy külső szolgáltatáshoz (például egy térképvizualizációhoz) vagy egy kereskedelmi könyvtárakat használó vizualizációhoz csatlakozik.
 
-Ön olyan webfejlesztő, aki szeretne saját képi megjelenítéseket létrehozni, és hozzáadni azokat a  **[Microsoft AppSource](https://appsource.microsoft.com)** listájához? Ennek módját az  **[Egyéni Power BI-vizualizáció fejlesztése](developer/custom-visual-develop-tutorial.md)** című cikk ismerteti.
+Ön olyan webfejlesztő, aki szeretne saját képi megjelenítéseket létrehozni, és hozzáadni azokat a  **[Microsoft AppSource](https://appsource.microsoft.com)** listájához? Ennek módját az  **[Egyéni Power BI-vizualizáció fejlesztése](developer/visuals/custom-visual-develop-tutorial.md)** című cikk ismerteti.
 
 ## <a name="removal-of-power-bi-certified-power-bi-visuals"></a>Minősített Power BI-vizualizációk eltávolítása
 
@@ -196,7 +196,7 @@ A vizualizációkkal kapcsolatban a [Gyakori kérdések a hitelesített vizualiz
 
 ## <a name="next-steps"></a>Következő lépések
 
-* [Egyéni Power BI-vizualizáció fejlesztése](developer/custom-visual-develop-tutorial.md)
+* [Egyéni Power BI-vizualizáció fejlesztése](developer/visuals/custom-visual-develop-tutorial.md)
 * [A Microsoft az egyéni vizualizációkat bemutató lejátszási listája a YouTube-on](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 * [Vizualizációk a Power BI-ban](visuals/power-bi-report-visualizations.md)  
 * [Egyéni vizualizációk a Power BI-ban](power-bi-custom-visuals.md)  

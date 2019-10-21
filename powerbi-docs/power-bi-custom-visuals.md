@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a782726e34bec4d6a5b8557c88178d469f7987b6
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: a8b1be9157fa34e9ed4c987628f0b67624b4c826
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71946198"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307492"
 ---
 # <a name="visuals-in-power-bi"></a>Vizualizációk a Power BI-ban
 
@@ -57,7 +57,7 @@ Mi az az [AppSource](developer/office-store.md)? Az a hely, ahol a Microsoft-szo
 A Power BI-minősítéssel rendelkező vizualizációk olyan vizualizációk, amelyek a piactéren érhetők el, további szigorú minőségteszteken feleltek meg, és további forgatókönyvek, például [e-mailes előfizetések](service-report-subscribe.md) és [PowerPointba történő exportálás](service-publish-to-powerpoint.md) esetén is támogatottak.
 A minősített Power BI-vizualizációk listájának megtekintéséhez vagy saját vizualizáció közzétételéhez lásd a [minősített Power BI-vizualizációkat](power-bi-custom-visuals-certified.md) ismertető szakaszt.
 
-Ön olyan webfejlesztő, aki szeretne saját vizualizációkat létrehozni, és hozzáadni azokat az AppSource-hoz? Az [Egyéni Power BI-vizualizáció fejlesztése](developer/custom-visual-develop-tutorial.md) című cikkből megtudhatja, hogyan [tehet közzé Power BI-vizualizációkat az AppSource-on](developer/office-store.md).
+Ön olyan webfejlesztő, aki szeretne saját vizualizációkat létrehozni, és hozzáadni azokat az AppSource-hoz? Az [Egyéni Power BI-vizualizáció fejlesztése](developer/visuals/custom-visual-develop-tutorial.md) című cikkből megtudhatja, hogyan [tehet közzé egyéni vizualizációkat az AppSource-on](developer/office-store.md).
 
 ### <a name="import-a-custom-visual-from-a-file"></a>Egyéni vizualizáció importálása fájlból
 

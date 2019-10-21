@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e7a96186fe68ed0d70de7a502e81da4f24f4d802
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 7c99b00427ffe742511c0029da79b6ebde02d916
+ms.sourcegitcommit: 83e1e162a037f352e542bd5c198a3c98f5db23c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903583"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72511691"
 ---
 # <a name="get-power-bi-desktop"></a>A Power BI Desktop beszerzése
 A **Power BI Desktop** segítségével az adatok megjelenítésére szolgáló speciális lekérdezések, modellek és jelentések állíthatók össze. A **Power BI Desktop** használatával adatmodelleket állíthat össze, jelentéseket hozhat létre és megoszthatja a munkáját a Power BI szolgáltatásba való közzététellel.  A **Power BI Desktop** ingyenesen letölthető.
@@ -105,28 +105,6 @@ A következő lista a **Power BI Desktop** futtatásához szükséges minimális
 
 Mindig igyekszünk a lehető legjobb élményt biztosítani a Power BI Desktop felhasználóinak. Előfordulhat, hogy a Power BI Desktop használata során problémák merülnek fel, ezért ez a szakasz megoldásokat és javaslatokat kínál a különböző esetekre. 
 
-### <a name="installing-power-bi-desktop-on-remote-machines"></a>A Power BI Desktop telepítése távoli gépekre
-
-Ha olyan eszközzel telepíti a Power BI Desktopot a felhasználók számára, amely Windows telepítőfájlt (.msi-fájlt) igényel, kicsomagolhatja az .msi-fájlt a Power BI Desktop telepítő .exe-fájljából. Ehhez felhasználhat egy olyan külső eszközt, mint a WiX Toolset.
-
-> [!NOTE]
-> Mivel külső termék, a WiX Toolset beállítási lehetőségei előzetes értesítés nélkül változhatnak. Ellenőrizze a dokumentációban a legfrissebb információkat, segítségért pedig forduljon a vállalat felhasználói levelezési listájához.
-
-* Azon a számítógépen, amelyre letöltötte a Power BI Desktop telepítőjét, töltse le és telepítse a WiX Toolset legújabb verzióját a WiX https://wixtoolset.org/ címen található webhelyéről.
-* Nyisson meg rendszergazdaként egy parancssori ablakot, és lépjen ahhoz a mappához, amelybe a WiX Toolsetet telepítette.
-* Futtassa a következő parancsot: 
-    
-    ```Dark.exe <path to Power BI Desktop installer> -x <output folder>```
-
-    Futtassa például a következőt:
-
-    ``` Dark.exe C:\PBIDesktop_x64.exe -x C:\output```
-
-* A kimeneti mappa tartalmazni fog egy *AttachedContainer* nevű mappát, amelyben az .msi-fájlok találhatók.
-
-
-
-
 ### <a name="using-command-line-options-during-installation"></a>Parancssori beállítások használata a telepítés során 
 
 A Power BI Desktop telepítésekor tulajdonságokat és beállításokat adhat meg parancssori kapcsolókkal. Ez elsősorban a rendszergazdák számára hasznos, akik több vállalatnál kezelik vagy bonyolítják le a Power BI Desktop telepítését. Ezek a lehetőségek .msi és .exe telepítésekor is használhatók. 
@@ -146,7 +124,6 @@ A Power BI Desktop telepítésekor tulajdonságokat és beállításokat adhat m
 
 Használhatja az alábbi **szintaktikai paramétereket** is, amelyeket a „TULAJDONSÁG=ÉRTÉK” szintaxissal adhat meg:
 
-
 |Paraméter  |Értelmezés  |
 |---------|---------|
 |ACCEPT_EULA     |Az 1 értéket kell megadni a végfelhasználói licencszerződés automatikus elfogadásához         |
@@ -156,12 +133,28 @@ Használhatja az alábbi **szintaktikai paramétereket** is, amelyeket a „TULA
 |LANGUAGE     |Területi beállításkód, például en-US, de-DE, pr-BR, hu-HU, az alkalmazás alapértelmezett nyelvének kikényszerítéséhez. Ha nincs nyelv megadva, a Power BI Desktop a Windows operációs rendszer nyelvét jeleníti meg. Ezt a felhasználó a Beállítások párbeszédpanelen módosíthatja.         |
 |REG_SHOWLEADGENDIALOG     |A 0 érték letiltja annak a párbeszédpanelnek a megjelenítését, amely a Power BI Desktopba való bejelentkezés előtt jelenne meg         |
 
-
-
-
 Futtathatja például a következő szintaxissal, hogy a telepítést felhasználói felület nélkül, német nyelv használatával végezze el: 
 
 ```“-quiet LANG=de-DE ACCEPT_EULA=1”```
+
+### <a name="installing-power-bi-desktop-on-remote-machines"></a>A Power BI Desktop telepítése távoli gépekre
+
+Ha olyan eszközzel telepíti a Power BI Desktopot a felhasználók számára, amely Windows telepítőfájlt (.msi-fájlt) igényel, kicsomagolhatja az .msi-fájlt a Power BI Desktop telepítő .exe-fájljából. Ehhez felhasználhat egy olyan külső eszközt, mint a WiX Toolset.
+
+> [!NOTE]
+> Mivel külső termék, a WiX Toolset beállítási lehetőségei előzetes értesítés nélkül változhatnak. Ellenőrizze a dokumentációban a legfrissebb információkat, segítségért pedig forduljon a vállalat felhasználói levelezési listájához.
+
+* Azon a számítógépen, amelyre letöltötte a Power BI Desktop telepítőjét, töltse le és telepítse a WiX Toolset legújabb verzióját a WiX https://wixtoolset.org/ címen található webhelyéről.
+* Nyisson meg rendszergazdaként egy parancssori ablakot, és lépjen ahhoz a mappához, amelybe a WiX Toolsetet telepítette.
+* Futtassa a következő parancsot: 
+    
+    ```Dark.exe <path to Power BI Desktop installer> -x <output folder>```
+
+    Futtassa például a következőt:
+
+    ``` Dark.exe C:\PBIDesktop_x64.exe -x C:\output```
+
+* A kimeneti mappa tartalmazni fog egy *AttachedContainer* nevű mappát, amelyben az .msi-fájlok találhatók.
 
 
 ### <a name="issues-when-using-previous-releases-of-power-bi-desktop"></a>Problémák a Power BI Desktop előző kiadásainak használata során
