@@ -10,17 +10,20 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2f50a6fc9fccc35333257caaf3efeb8185c8caff
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 0015921990bb35a7ac5e6652b018ef16485e5b9c
+ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390365"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72164746"
 ---
-# <a name="use-the-matrix-visual-in-power-bi"></a>A Mátrix vizualizáció használata a Power BI-ban
-A **Mátrix** vizualizáció egy **táblázathoz** hasonlít.  A táblázatok kétdimenziósak, és az adatok simák, vagyis az ismétlődő értékek is megjelennek, és nincsenek összesítve. Egy mátrixszal könnyebben megjeleníthetők a fontos adatok több dimenzióban, ez ugyanis lépcsőzetes elrendezést is támogat. A mátrix automatikusan összesíti az adatokat és elérhetővé teszi a részletezést. 
+# <a name="use-the-matrix-visual-in-power-bi"></a>Mátrixvizualizáció használata a Power BI-ban
 
-Mátrixvizualizációkat a **Power BI Desktop** és a **Power BI szolgáltatás** jelentéseiben hozhat létre, és a mátrix elemeire keresztkiemelést alkalmazhat a jelentésoldalon lévő más vizualizációkkal. Kiválaszthat például sorokat, oszlopokat vagy egyetlen cellát is, és keresztkiemeléssel láthatja el őket. Egy vagy több kijelölt cellát ki is másolhat és beilleszthet más alkalmazásokba. 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+A Mátrix vizualizáció egy táblázathoz hasonlít.  A táblázatok kétdimenziósak, és az adatok simák, vagyis az ismétlődő értékek is megjelennek, és nincsenek összesítve. Egy mátrixszal könnyebben megjeleníthetők a fontos adatok több dimenzióban, ez ugyanis lépcsőzetes elrendezést is támogat. A mátrix automatikusan összesíti az adatokat és elérhetővé teszi a részletezést. 
+
+Mátrixvizualizációkat a **Power BI Desktop** jelentéseiben hozhat létre, és a mátrix elemeire keresztkiemelést alkalmazhat a jelentésoldalon lévő más vizualizációkkal. Kiválaszthat például sorokat, oszlopokat vagy egyetlen cellát is, és keresztkiemeléssel láthatja el őket. Egy vagy több kijelölt cellát ki is másolhat és beilleszthet más alkalmazásokba. 
 
 ![mátrix és fánkdiagram keresztkiemeléssel](media/desktop-matrix-visual/matrix-visual_2a.png)
 
@@ -29,7 +32,7 @@ A mátrix számos funkcióval rendelkezik, amelyeket a cikk következő szakasza
 
 ## <a name="understanding-how-power-bi-calculates-totals"></a>Hogyan számítja ki a Power BI az összegeket?
 
-A **Mátrix** vizualizáció használatának ismertetése előtt fontos tisztázni, hogy a Power BI hogyan számítja ki a táblázatok és mátrixok összegeit és részösszegeit. Az összegeket és részösszegeket tartalmazó sorok esetén a Power BI a mögöttes adatok összes sorának mértékét határozza meg, nem egyszerűen összeadja a látható vagy megjelenített sorok értékeit. Ez azt jelenti, hogy az összeget tartalmazó sorban a várttól eltérő értékek szerepelhetnek.
+A mátrixvizualizáció használatának ismertetése előtt fontos tisztázni, hogy a Power BI hogyan számítja ki a táblázatok és mátrixok összegeit és részösszegeit. Az összegeket és részösszegeket tartalmazó sorok esetén a Power BI a mögöttes adatok összes sorának mértékét határozza meg, nem egyszerűen összeadja a látható vagy megjelenített sorok értékeit. Ez azt jelenti, hogy az összeget tartalmazó sorban a várttól eltérő értékek szerepelhetnek.
 
 Tekintse meg az alábbi mátrixvizualizációkat. 
 
@@ -83,7 +86,7 @@ Az ikonok használatán kívül bármelyik sorazonosító kiválasztásával is 
 
 Figyelje meg, hogy van néhány lehetőség a megjelenő menüben, amely különböző eredményekhez vezet:
 
-A **Részletezés** kiválasztása kibontja az *ahhoz* a sorszinthez tartozó mátrixot, *kivéve* az egyéb összes sorfejlécet, annak a sorazonosítónak a kivételével, amelyet kiválasztott. Az alábbi ábrán az **Ajánlattétel** > **Részletezés** lett kiválasztva. Figyelje meg, hogy egyéb legfelső szintű sorok már nem jelennek meg a mátrixban. Ez a fajta részletezés olyan hasznos funkció, amely a **keresztkiemelés** szakaszban válik igazán hasznossá.
+A **Részletezés** kiválasztása kibontja az *ahhoz* a sorszinthez tartozó mátrixot, *kivéve* az egyéb összes sorfejlécet, annak a sorazonosítónak a kivételével, amelyet kiválasztott. Az alábbi ábrán az **Ajánlattétel** > **Részletezés** lett kiválasztva. Figyelje meg, hogy egyéb legfelső szintű sorok már nem jelennek meg a mátrixban. Ez a fajta részletezés olyan hasznos funkció, amely a keresztkiemelés szakaszában válik igazán hasznossá.
 
 ![mátrix egy szintre részletesen lebontva](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
@@ -100,7 +103,7 @@ A megjelenítés tovább szabályozható a **Kibontás** menüponttal.  Válassz
 ![Mátrix az Ajánlattételre alkalmazott Kibontás után](media/desktop-matrix-visual/power-bi-matrix-expand.png)
 
 ### <a name="drill-down-on-column-headers"></a>Oszlopfejléceken végzett részletes elemzés
-A sorokon végzett részletes elemzéshez hasonlóan az **oszlopokon** is végezhet részletes elemzést. Az alábbi képen két mező található az **Oszlopok** mező területén, egy ahhoz hasonló hierarchiát létrehozva, amilyet a sorokhoz használtunk a cikk korábbi szakaszában. Az **Oszlopok** mező területén a *Régió* és a *Szegmens* található. Amikor a második mező fel lett véve az **Oszlopok** területre, új legördülő menü jelent meg a vizualizáción, amely jelenleg a **Sorok** lehetőséget mutatja.
+A sorokon végzett részletes elemzéshez hasonlóan az oszlopokon is végezhet részletes elemzést. Az alábbi képen két mező található az **Oszlopok** mező területén, egy ahhoz hasonló hierarchiát létrehozva, amilyet a sorokhoz használtunk a cikk korábbi szakaszában. Az **Oszlopok** mező területén a *Régió* és a *Szegmens* található. Amikor a második mező fel lett véve az **Oszlopok** területre, új legördülő menü jelent meg a vizualizáción, amely jelenleg a **Sorok** lehetőséget mutatja.
 
 ![Mátrix egy második oszlopérték hozzáadása után](media/desktop-matrix-visual/power-bi-matrix-row.png)
 
@@ -108,7 +111,7 @@ Az oszlopok szerinti részletezéshez válassza az **Oszlopok** lehetőséget a 
 
 ![menü az oszlopok szerinti részletezéshez](media/desktop-matrix-visual/power-bi-matrix-column.png)
 
-A **Részletezés** kiválasztásakor megjelenik a *Régió > Keleti* oszlophierarchiájának következő szintje, ami ebben az esetben a *Lehetőségek száma*. A másik régió is megjelenik, de szürkén.
+A **Részletezés** kiválasztásakor megjelenik a *Régió > Keleti* oszlophierarchiájának következő szintje, ami ebben az esetben a *Lehetőségek száma*. A másik régió rejtett.
 
 ![mátrix egy szint oszlop szerinti részletezésével](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
 
@@ -119,21 +122,21 @@ A többi menüelem ugyanúgy működik az oszlopok, ahogy a sorok esetében (lá
 
 ## <a name="stepped-layout-with-matrix-visuals"></a>Lépcsőzetes elrendezés mátrixvizualizációkkal
 
-A **Mátrix** vizualizáció automatikusan behúzza egy hierarchia alkategóriáit minden szülő alatt; ezt **Lépcsőzetes elrendezésnek** hívjuk.
+A Mátrix vizualizáció automatikusan behúzza egy hierarchia alkategóriáit minden szülő alatt; ezt Lépcsőzetes elrendezésnek hívjuk.
 
-A mátrixvizualizáció eredeti verziójában az alkategóriák egy teljesen külön oszlopban jelentek meg, több helyet foglalva a vizualizációban. Az alábbi képen az eredeti **Mátrix** vizualizáció egy táblája látható. Figyelje meg, hogy az alkategóriák külön oszlopban vannak.
+A mátrixvizualizáció eredeti verziójában az alkategóriák egy teljesen külön oszlopban jelentek meg, több helyet foglalva a vizualizációban. Az alábbi képen az eredeti Mátrix vizualizáció egy táblája látható. Figyelje meg, hogy az alkategóriák külön oszlopban vannak.
 
 ![Képernyőkép az alkategóriákat külön oszlopban megjelenítő régi mátrixvizualizációról.](media/desktop-matrix-visual/matrix-visual_14.png)
 
-Az alábbi képen a **Mátrix** vizualizáció látható **Lépcsőzetes elrendezéssel**. Figyelje meg, hogy a *Számítógépek* kategória saját, kis mértékben behúzott alkategóriákkal rendelkezik (Számítógép-kiegészítők, Asztali számítógépek, Laptopok, Monitorok stb.), ezzel átláthatóbb és tömörebb vizualizációt biztosít.
+Az alábbi képen a Mátrix vizualizáció látható Lépcsőzetes elrendezéssel. Figyelje meg, hogy a *Számítógépek* kategória saját, kis mértékben behúzott alkategóriákkal rendelkezik (Számítógép-kiegészítők, Asztali számítógépek, Laptopok, Monitorok stb.), ezzel átláthatóbb és tömörebb vizualizációt biztosít.
 
 ![ahogyan a jelenlegi mátrix formázza az adatokat](media/desktop-matrix-visual/matrix-visual_13.png)
 
-A lépcsőzetes elrendezés beállításait egyszerűen módosíthatja. Ha a **Mátrix** vizualizáció van kiválasztva, a **Vizualizációk** ablaktábla **Formátum** szakaszában (festőhenger ikon) bontsa ki a **Sorazonosítók** szakaszt. Két lehetőség érhető el: a **Lépcsőzetes elrendezés** váltógomb (amely ki- vagy bekapcsolja ezt az elrendezést) és a **Lépcsőzetes elrendezés behúzása** (a behúzás mértékét adja meg képpontokban).
+A lépcsőzetes elrendezés beállításait egyszerűen módosíthatja. Ha a Mátrix vizualizáció van kiválasztva, a **Vizualizációk** panel **Formátum** szakaszában (festőhenger ikon) bontsa ki a Sorazonosítók szakaszt. Két lehetőség érhető el: a Lépcsőzetes elrendezés váltógomb (amely ki- vagy bekapcsolja ezt az elrendezést) és a Lépcsőzetes elrendezés behúzása (a behúzás mértékét adja meg képpontokban).
 
 ![Sorazonosítók kártya a Lépcsőzetes elrendezés vezérlővel](media/desktop-matrix-visual/power-bi-stepped-matrix.png)
 
-Ha kikapcsolja a **Lépcsőzetes elrendezést**, a Power BI egy külön oszlopban jeleníti meg az alkategóriákat, nem pedig a szülőkategória alatt behúzva.
+Ha kikapcsolja a Lépcsőzetes elrendezést, a Power BI egy külön oszlopban jeleníti meg az alkategóriákat, nem pedig a szülőkategória alatt behúzva.
 
 ## <a name="subtotals-with-matrix-visuals"></a>Részösszegek a mátrixvizualizációkkal
 
@@ -141,7 +144,7 @@ A részösszegeket a soroknál és oszlopoknál is ki- vagy bekapcsolhatja a má
 
 ![mátrix összegekkel és részösszegekkel](media/desktop-matrix-visual/matrix-visual_20.png)
 
-A **Vizualizációk** ablaktábla **Formátum** szakaszában bontsa ki a **Részösszegek** kártyát, és állítsa a **Sorok részösszegei** csúszkát a **Ki** beállításra. Ebben az esetben a részösszegek nem jelennek meg.
+A Vizualizációk ablaktábla Formátum szakaszában bontsa ki a **Részösszegek** kártyát, és állítsa a Sorok részösszegei csúszkát a **Ki** beállításra. Ebben az esetben a részösszegek nem jelennek meg.
 
 ![mátrix a részösszegek kikapcsolásával](media/desktop-matrix-visual/matrix-visual_21.png)
 
@@ -149,16 +152,15 @@ Ugyanez a folyamat vonatkozik az oszlopok részösszegeire.
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Keresztkijelölés a mátrixvizualizációkkal
 
-A **Mátrix** vizualizációval a mátrix bármely eleme kiválasztható a keresztkijelölés alapjaként. Ha kijelöli egy **Mátrix** egy oszlopát, a Power BI kiemeli ezt az oszlopot, ahogyan a jelentéslapon lévő többi vizualizáció is. Ez a keresztkijelölési mód az egyéb vizualizációk és az adatpont-kiválasztások közös funkciója volt, de ugyanez a funkció már a **Mátrix** vizualizációnál is elérhető.
+A Mátrix vizualizációval a mátrix bármely eleme kiválasztható a keresztkijelölés alapjaként. Ha kijelöli egy mátrix egy oszlopát, a Power BI kiemeli ezt az oszlopot, ahogyan a jelentéslapon lévő többi vizualizáció is. Ez a keresztkijelölési mód az egyéb vizualizációk és az adatpont-kiválasztások közös funkciója volt, de ugyanez a funkció már a Mátrix vizualizációnál is elérhető.
 
-Továbbá a Ctrl+kattintás is használható a keresztkijelöléshez. Például az alábbi képen alkategóriák egy gyűjteménye lett kiválasztva a **Mátrix** vizualizációból. Figyelje meg, hogy a vizualizációból ki nem választott elemek kiszürkítve jelennek meg, és az oldalon található egyéb vizualizációk a **Mátrix** vizualizációban végzett kijelöléseket tükrözik.
+Továbbá a Ctrl+kattintás is használható a keresztkijelöléshez. Például az alábbi képen alkategóriák egy gyűjteménye lett kiválasztva a Mátrix vizualizációból. Figyelje meg, hogy a vizualizációból ki nem választott elemek kiszürkítve jelennek meg, és az oldalon található egyéb vizualizációk a Mátrix vizualizációban végzett kijelöléseket tükrözik.
 
 ![A keresztkijelölés CTRL+kattintásos funkcióját egy mátrix- és két másik vizualizáción bemutató képernyőkép.](media/desktop-matrix-visual/matrix-visual_16.png)
 
 ## <a name="copying-values-from-power-bi-for-use-in-other-applications"></a>A Power BI értékeinek másolása és felhasználása más alkalmazásokban
 
 Egy mátrix vagy táblázat tartalmazhat olyan adatokat, amelyeket szeretne más alkalmazásokban használni: Dynamics CRM-ben, Excelben és más Power BI-jelentésekben. Ha a Power BI-ban a jobb gombbal kattint egy vagy több kijelölt cellára, kimásolhatja azokat a vágólapra. Ez után beillesztheti őket egy másik alkalmazásba.
-
 
 
 * Ha egyetlen cella értékét szeretné másolni, jelölje ki a cellát, kattintson a jobb gombbal, és válassza az **Érték másolása** lehetőséget. A cella formázatlan értéke felkerül a vágólapra, ahonnan beillesztheti egy másik alkalmazásba.
@@ -175,8 +177,16 @@ Egy mátrix vagy táblázat tartalmazhat olyan adatokat, amelyeket szeretne más
 
     ![Excel sorok és oszlopok képernyőképe a beillesztett értékekkel.](media/desktop-matrix-visual/power-bi-copy-selection.png)
 
+* Ha magáról a vizualizációról szeretne olyan másolatot készíteni, amely csak a kijelölt cellákat tartalmazza, akkor jelöljön ki egy vagy több cellát a CTRL+jobb-klikk módszerrel, majd válassza a **Vizualizáció másolása** lehetőséget.
+
+    ![A vizualizáció másolása lehetőséget bemutató képernyőkép](media/desktop-matrix-visual/power-bi-copy-visual.png)
+
+* A másolat egy újabb mátrixvizualizáció lesz, de csak a kimásolt adatokat fogja tartalmazni.
+
+    ![A vizualizációmásolási példát bemutató képernyőkép](media/desktop-matrix-visual/power-bi-copy-visual-example.png)
+
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Árnyékolás és betűtípus mátrixvizualizációkkal
-A Mátrix vizualizációval **Feltételes formázást** (színek, árnyékolás és adatsávok) alkalmazhat a mátrixban található cellák hátterére, valamint magára a szövegre és az értékekre is.
+A Mátrix vizualizációval Feltételes formázást (színek, árnyékolás és adatsávok) alkalmazhat a mátrixban található cellák hátterére, valamint magára a szövegre és az értékekre is.
 
 Feltételes formázáshoz jelölje ki a mátrixvizualizációt, és nyissa meg a **Formázás** panelt. Bontsa ki a **Feltételes formázás** kártyát, és kapcsolja **Be** a **Háttérszín**, **Betűszín** vagy **Adatsávok** lehetőséget. Egy ilyen beállítás bekapcsolása után megjelenik a *Speciális vezérlők* hivatkozása, amely lehetővé teszi a színek és a színformátum értékeinek testreszabását.
   
