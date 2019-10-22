@@ -353,6 +353,8 @@
               href: visuals/power-bi-visualization-kpi.md
             - name: Mátrix vizualizáció
               href: visuals/desktop-matrix-visual.md
+            - name: Q&A – vizualizáció
+              href: visuals/power-bi-visualization-q-and-a.md
             - name: Fejlett elemzések és vizualizációk létrehozása R-parancsfájlokkal a Power BI-ban
               href: visuals/service-r-visuals.md
             - name: A Power BI kör alakú mérőműszer-diagramjai
@@ -375,6 +377,22 @@
               href: visuals/power-bi-visualization-waterfall-charts.md
             - name: Dinamikus referenciavonalak létrehozása
               href: service-analytics-pane.md
+        - name: Természetes nyelv
+          items:
+            - name: Q&A – bevezetés
+              href: natural-language/q-and-a-intro.md
+            - name: Q&A – vizualizáció
+              href: visuals/power-bi-visualization-q-and-a.md
+            - name: Q&A-eszközhasználat – bevezetés
+              href: natural-language/q-and-a-tooling-intro.md
+            - name: Q&A-eszközhasználat – Q&A tanítása
+              href: natural-language/q-and-a-tooling-teach-q-and-a.md
+            - name: Speciális Q&A-eszközhasználat
+              href: natural-language/q-and-a-tooling-advanced.md
+            - name: Q&A – ajánlott eljárások
+              href: natural-language/q-and-a-best-practices.md
+            - name: Q&A – korlátozások
+              href: natural-language/q-and-a-limitations.md
         - name: Hibaelhárítás
           items:
             - name: Access-adatbázisok és Excel-munkafüzetek Power BI Desktopba és Power Querybe való importálásával kapcsolatos hibák elhárítása
