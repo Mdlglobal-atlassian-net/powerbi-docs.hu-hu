@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 034dc98b1e623bd0d509eb2d174cdc3e3b865067
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f88d1e0458e6a1b3abe20c0b4dd889c037ede612
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514304"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307346"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Valós idejű streamelés a Power BI-ban
 A Power BI valós idejű streamelésével valós időben streamelhet adatokat és frissítheti az irányítópultokat. A Power BI-ban elkészíthető vizualizációk vagy irányítópultok úgy is létrehozhatók, hogy valós idejű adatokat és a vizualizációkat jelenítsenek meg és frissítsenek. A streamelési adatok forrásai és eszközei lehetnek ipari érzékelők, közösségimédia-források, szolgáltatáshasználati metrika vagy bármi más, amiből időfüggő adatok gyűjthetők és továbbíthatók.
@@ -235,6 +235,13 @@ A következő ellenőrzőlista segít elhárítani a hibát:
 4. Az Azure Stream Analytics-lekérdezés kimenete egy explicit módon meghatározott Power BI-kimenet? (az INTO kulcsszó használatával)
 5. Halad át adat az Azure Stream Analytics-feladaton? Az adatkészlet csak akkor jön létre, ha vannak továbbított adatok.
 6. Vannak figyelmeztetések vagy hibák az Azure Stream Analytics naplóiban?
+
+## <a name="automatic-page-refresh"></a>Automatikus oldalfrissítés
+
+Az automatikus oldalfrissítés a jelentésoldal szintjén működik, és lehetővé teszi, hogy a jelentés szerzője beállítson egy frissítési időközt az oldal vizualizációjához, amely csak akkor aktív, amikor a lap használatban van. Az automatikus oldalfrissítés csak DirectQuery-adatforrások esetén érhető el. A minimális frissítési időköz attól függ, hogy a jelentés milyen típusú munkaterületen van közzétéve, valamint hogy a Prémium munkaterületekre vonatkozóan milyen kapacitásbeállításokat alkalmazott a rendszergazda.
+
+Az automatikus oldalfrissítésről az [automatikus oldalfrissítés](desktop-automatic-page-refresh.md) című cikkben olvashat bővebben.
+
 
 ## <a name="next-steps"></a>Következő lépések
 A következő hivatkozások hasznos információkkal szolgálnak a Power BI-ban történő valós idejű streamelésről:

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: da7652556bc11e47cf238dd969ae1b27e6387299
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: be2304e655adadf20f5d33f46840c5a0cb82aa9f
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968808"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544759"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Szűrő hozzáadása Power BI-jelentéshez
 
@@ -51,11 +51,12 @@ Vizualizációszintű szűrőt kétféleképpen adhat hozzá egy adott vizualiz�
 * Szűrhet egy, a vizualizáció által már használt mezőt.
 * Azonosíthat egy mezőt, amelyet a vizualizáció még nem használ, és hozzáadhatja ezt a mezőt közvetlenül a **Vizualizációszint szűrői** gyűjtőhöz.
 
-Ez a folyamat a Kiskereskedelmi elemzési mintát használja, ha le szeretné tölteni, és követni szeretné a lépéseket. A [Kiskereskedelmi elemzési minta](sample-retail-analysis.md) letöltése.
+
+Ez a folyamat a Kiskereskedelmi elemzési mintát használja, ha le szeretné tölteni, és követni szeretné a lépéseket. Töltse le a [Kiskereskedelmi elemzési minta](sample-retail-analysis.md#get-the-content-pack-for-this-sample) tartalomcsomagot.
 
 ### <a name="filter-the-fields-in-the-visual"></a>Mezők szűrése a vizualizációban
 
-1. Válassza a **Jelentés szerkesztése** elemet a jelentés szerkesztési nézetben való megnyitásához.
+1. Válassza a **További beállítások (...)**  > **Jelentés szerkesztése** lehetőséget, amellyel megnyitja a jelentést Szerkesztés nézetben.
    
    ![Jelentés szerkesztése gomb](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
@@ -85,7 +86,7 @@ Ez a folyamat a Kiskereskedelmi elemzési mintát használja, ha le szeretné t�
 
 Most vegyünk fel egy új mezőt a vizualizációhoz vizualizáció szintű szűrőnek.
    
-1. A Mezők panelen válassza ki az új vizualizáció szintű szűrőként felvenni kívánt mezőt, és húzza a **Vizualizációszint szűrői területre**.  Ebben a példában a **District Manager** (területi vezető) mezőt húzzuk a **Vizualizációszint szűrői** gyűjtőbe, rákeresünk az **an** kifejezésre, és kiválasztjuk a három vezetőt. 
+1. A Mezők panelen válassza ki az új vizualizáció szintű szűrőként felvenni kívánt mezőt, és húzza a **Vizualizációszint szűrői területre**.  Ebben a példában a **District Manager** (területi vezető) mezőt húzzuk a **Vizualizációszint szűrői** gyűjtőbe, rákeresünk az **an** kifejezésre, és kiválasztjuk a három vezetőt.
      
     ![Mező felvétele a Szűrők panelre](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
@@ -105,7 +106,9 @@ Most vegyünk fel egy új mezőt a vizualizációhoz vizualizáció szintű szű
 
 Oldalszintű szűrőt egy egész oldalhoz is hozzáadhat.
 
-1. Válassza a **Jelentés szerkesztése** elemet a jelentés szerkesztési nézetben való megnyitásához.
+1. A Power BI szolgáltatásban nyissa meg a Kiskereskedelmi elemzési jelentést, majd nyissa meg a **District monthly Sales** oldalt. 
+
+2. Válassza a **...**  > **Jelentés szerkesztése** elemet a jelentés szerkesztési nézetben való megnyitásához.
    
    ![Jelentés szerkesztése gomb](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Nyissa meg a Megjelenítések, a Szűrők és a Mezők panelt (ha még nincsenek megnyitva).
@@ -122,19 +125,21 @@ Oldalszintű szűrőt egy egész oldalhoz is hozzáadhat.
 A Power BI szolgáltatás és a Power BI Desktop részletezési funkciójával olyan *cél* jelentésoldalt hozhat létre, amely egy adott entitásra összpontosít – például egy szállítóra, ügyfélre vagy gyártóra. A felhasználók a jelentés többi oldalán a jobb gombbal az entitáshoz tartozó adatpontra kattintva eljuthatnak az összpontosított oldalra.
 
 ### <a name="create-a-drillthrough-filter"></a>Részletezési szűrő létrehozása
-A lépések követéséhez töltse le az [Ügyfél-jövedelmezőségi mintát](sample-customer-profitability.md). Tegyük fel, hogy egy olyan oldalt szeretne, amely a vezetői üzleti területekre összpontosít.
+A lépések követéséhez töltse le az [Ügyfél-jövedelmezőségi mintát](sample-customer-profitability.md#get-the-content-pack-for-this-sample). Tegyük fel, hogy egy olyan oldalt szeretne, amely a vezetői üzleti területekre összpontosít.
 
-1. Válassza a **Jelentés szerkesztése** elemet a jelentés Szerkesztési nézetben való megnyitásához.
+1. A Power BI szolgáltatásban nyissa meg a Kiskereskedelmi elemzési jelentést, majd nyissa meg a **District monthly Sales** oldalt.
+
+2. Válassza a **További beállítások (...)**  > **Jelentés szerkesztése** lehetőséget, amellyel megnyitja a jelentést Szerkesztés nézetben.
    
    ![Jelentés szerkesztése gomb](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
 1. Adjon a jelentéshez egy új, **Csapatvezető** nevű oldalt. Ez az oldal lesz a részletezés *célja*.
 2. Adjon hozzá vizualizációkat, amelyek nyomon követik a csapatvezetők üzleti területeinek fő mérőszámait.    
-3. Vegye fel a Részletezési szűrők szakaszba a **Vezető > Vezető neve** elemet.    
+3. Az **Executives** táblázatból húzza az **Executive** elemet a részletezési szűrők gyűjtőbe.    
    
     ![Érték Részletezési szűrőhöz adása](media/power-bi-report-add-filter/power-bi-drillthrough-filter.png)
    
-    Észreveheti, hogy a Power BI hozzáad egy vissza nyilat a jelentésoldalhoz.  A vissza nyíl kiválasztásával a felhasználó visszatér a *kiindulási* jelentésoldalra, ahol a részletezés megjelenítése mellett döntött. A vissza nyíl csak Olvasás nézetben működik.
+    Észreveheti, hogy a Power BI hozzáad egy vissza nyilat a jelentésoldalhoz.  A vissza nyíl kiválasztásával a felhasználó visszatér a *kiindulási* jelentésoldalra, ahol a részletezés megjelenítése mellett döntött. A szerkesztési nézetben tartsa lenyomva a CTRL billentyűt a vissza nyíl kiválasztásához
    
      ![A vissza nyíl](media/power-bi-report-add-filter/power-bi-back-arrow.png)
 
@@ -145,7 +150,7 @@ Lássuk, hogy működik a részletezési szűrő.
 2. Tegyük fel, hogy Ön Andrew Ma, és úgy szeretné megtekinteni a Csapatvezető jelentésoldalt, hogy az csak a saját adatait mutassa.  A diagram bal felső területén kattintson a jobb gombbal egy zöld adatpontra a Részletezés menüelem megnyitásához.
    
     ![A részletezési művelet indítása](media/power-bi-report-add-filter/power-bi-drillthrough.png)
-3. Válassza a **Részletezés > Csapatvezető** lehetőséget, hogy a **Csapatvezető** jelentésoldalra lépjen. A rendszer szűri az oldalt, hogy megjelenítse azon adatpont információit, amelyre a jobb gombbal kattintott, ami ebben az esetben az Andrew Ma. Csak a Részletezési szűrők szakaszban lévő mező kerül át a részletező jelentésoldalra.  
+3. Válassza a **Részletezés > Csapatvezető** lehetőséget, hogy a **Csapatvezető** jelentésoldalra lépjen. A rendszer szűri az oldalt, hogy megjelenítse azon adatpont információit, amelyre a jobb gombbal kattintott, ami ebben az esetben az Andrew Ma. Az eredeti oldalon lévő összes szűrő a részletezési jelentés oldalára lesz alkalmazva.  
    
     ![A részletezési művelet kiválasztása](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 

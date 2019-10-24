@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: 108882dd0f3b61d6cb19fd18290b44316231f3cb
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 6d8a6a28d72ce6d0fa6123b15f9e692ed1cc4d44
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020347"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543279"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Power BI-irányítópult létrehozása jelentésből
 Áttekintette [A Power BI-irányítópultok – bevezetés](service-dashboards.md) részben leírtakat, és most saját irányítópultot kíván létrehozni. Az irányítópultok létrehozásának számos különböző módja van. Többek között jelentésből, előzmények nélkül, adatkészletből, illetve egy meglévő irányítópult megkettőzésével is létrehozhatók.  
@@ -68,9 +68,9 @@ Ebben a lépésenkénti útmutatóban Power BI egyik minta-adathalmazát fogjuk 
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>A jelentés megnyitása, és csempék rögzítése az irányítópulton
 1. Ugyanezen a munkaterületen válassza a **Jelentések** lapot, majd a **Beszerzéselemzési minta** elemet a jelentés megnyitásához.
 
-    ![Jelentések lap](media/service-dashboard-create/power-bi-reports.png) A jelentés Olvasó nézetben nyílik meg. Figyelje meg, hogy alul két lapfül látható: **Kedvezményelemzés** és **Értékesítés áttekintése**. Minden egyes lap a jelentés egy-egy oldalát jelképezi.
+    ![Jelentések lap](media/service-dashboard-create/power-bi-reports.png) A jelentés Olvasó nézetben nyílik meg. Figyelje meg, hogy a bal oldalon két lapfül látható: **Kedvezményelemzés** és **Értékesítés áttekintése**. Minden egyes lap a jelentés egy-egy oldalát jelképezi.
 
-2. Válassza a **Jelentés szerkesztése** elemet a jelentés Szerkesztési nézetben való megnyitásához.
+2. Válassza a **További beállítások (...)**  > **Jelentés szerkesztése** lehetőséget, amellyel megnyitja a jelentést Szerkesztés nézetben.
 
     ![Jelentés az Olvasó nézetben](media/service-dashboard-create/power-bi-reading-view.png)
 3. A rendelkezésre álló beállítások megjelenítéséhez húzza a mutatót a vizualizáció fölé. A vizualizációnak az irányítópulthoz történő hozzáadásához kattintson a gombostű ikonra ![Gombostű ikon](media/service-dashboard-create/power-bi-pin-icon.png).

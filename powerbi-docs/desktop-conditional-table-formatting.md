@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 10/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 35f60c0e41a06c8f13931d158fe092184da8838d
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: bd14437b0833d4c24c37ebeca6524948465bdb1f
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69561064"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543999"
 ---
 # <a name="conditional-formatting-in-tables"></a>Táblázatok feltételes formázása 
 A táblázatok feltételes formázásával a cellák értéke, illetve más értékek vagy mezők alapján határozhat meg egyéni cellaszíneket, akár színátmenetek használatával is. A cellák értékei adatsávokkal is megjeleníthetők. 
@@ -140,6 +140,9 @@ A vizualizációk színezéséhez a [https://www.w3.org/TR/css-color-3/](https:/
 A feltételes táblázatformázás használatakor érdemes figyelembe venni néhány szempontot:
 
 * A feltételes formázás csak **Mátrix** vizualizációkra lesz alkalmazva, és nem vonatkozik a részösszegekre és a teljes összegekre. 
+* A feltételes formázás nincs alkalmazva az **Összeg** sorra
+* Minden olyan tábla, amely nem rendelkezik csoportosítással, egyetlen sorban jelenik meg, amely nem támogatja a feltételes formázást.
+* Ha színátmenetes formátumot használ automatikus maximális/minimális értékekkel vagy százalékos szabályokat alkalmazó szabály-alapú formázással, a feltételes formázás nem alkalmazható, ha az adatokban NaN értékek szerepelnek. A NaN jelentése „nem szám” (angolul „Not a number”), amit leggyakrabban a nullával osztás hibája okoz. Ezeket a hibákat a [DIVIDE() DAX-függvény](https://docs.microsoft.com/dax/divide-function-dax) használatával kerülheti el.
 
 
 ## <a name="next-steps"></a>Következő lépések

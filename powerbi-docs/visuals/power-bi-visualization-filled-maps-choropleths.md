@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0123d8123170cfa78b3d13a55ed2f367af0447ae
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 2befce7914fc295ff4a6124be10183d5ff20106d
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299382"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544584"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Kitöltött (koropletikus) tematikus térképek a Power BI-ban
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 A tematikus térképek árnyalással, színezéssel vagy mintázattal jelenítik meg egy értéknek egy földrajzi területen vagy régión belüli viszonylagos eltéréseit.  A viszonylagos eltérések gyorsan megjeleníthetők a világostól (ritkább/kevesebb) a sötétig (gyakrabb/több) terjedő árnyalással.    
 
 ![USA-térkép](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
@@ -44,27 +47,24 @@ A tematikus térkép kitűnően alkalmas:
 * a földrajzi helyek közötti eloszlás áttekintéséhez.
 
 ### <a name="prerequisites"></a>Előfeltételek
-- Power BI szolgáltatás vagy Power BI Desktop
-- Értékesítési és marketing minta
+Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) használja.
+1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
+   
+2. Keresse meg a **Kiskereskedelmi elemzési minta PBIX-fájlt**
 
-Az oktatóanyag lépéseinek elvégzéséhez ne a Power BI Desktopot, hanem a Power BI szolgáltatást használja.
+1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
+
 
 ## <a name="create-a-basic-filled-map"></a>Egyszerű tematikus térkép létrehozása
 Ezen a videón Kim egy egyszerű térképet hoz létre és alakít át kitöltött tematikus térképpé.
+   > [!NOTE]
+   > Ez a videó a Power BI Desktop egy régebbi verzióját használja.
+   > 
+   > 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
-
-### <a name="get-data-and-add-a-new-blank-page-to-the-report"></a>Adatok lekérése, illetve új üres lap hozzáadása a jelentéshez
-1. Saját tematikus térkép létrehozásához jelentkezzen be a Power BI-ba, majd az **Adatok beolvasása \> Minták \> Értékesítés és Marketing \> Csatlakozás** lehetőség választásával [töltse le az Értékesítés és Marketing mintát](../sample-datasets.md). Vagy szerezze be a **Power BI Sales and Marketing** alkalmazást az appsource.com oldalról. 
-
-2. Nyissa meg az értékesítési és marketingjelentést.
-
-   ![Megnyílik az értékesítési és marketingjelentés](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
-3. A Power BI megnyitja a jelentést. Válassza a **Jelentés szerkesztése** elemet a jelentés [szerkesztési nézetben](../service-interact-with-a-report-in-editing-view.md) való megnyitásához.
-
-4. A vászon aljánál lévő sárga plusz ikonra kattintva adjon hozzá egy új oldalt.
-
-    ![Jelentéslapok](media/power-bi-visualization-filled-maps-choropleths/power-bi-new-page.png)
 
 ### <a name="create-a-filled-map"></a>Kitöltött térkép létrehozása
 1. A Mezők panelen válassza a **Geo** \> **Állam** mezőt.    
@@ -75,9 +75,9 @@ Ezen a videón Kim egy egyszerű térképet hoz létre és alakít át kitöltö
    ![sablonok kiemelt kartogramikonnal](media/power-bi-visualization-filled-maps-choropleths/img003.png)
 3. Szűrje a térképet úgy, hogy csak az Egyesült Államok szárazföldi területeit mutassa.
 
-   a.  Keresse meg a **Szűrők** területet a Megjelenítések panel alján.
+   a.  Keresse meg a **Szűrők** területet a Megjelenítések paneltől balra. Bontsa ki, ha össze van csukva.
 
-   b.  Vigye a kurzort az **Állam** fölé, és kattintson a kibontó sávnyílra.  
+   b.  Vigye a kurzort az **Állam** fölé, és válassza a kibontó sávnyilat  
    ![Vizualizációszint szűrői az Állam (mind) elemmel](media/power-bi-visualization-filled-maps-choropleths/img004.png)
 
    c.  Tegyen pipát a **Mind** lehetőség mellé, és távolítsa el a pipát az **AK** elem mellől.
@@ -115,11 +115,11 @@ A kitöltött térképek egyes helyeinek kiemelésével a rendszer keresztszűri
 
     ![A Vélemény lap kijelölve](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-tab.png)
 
-4. A vizualizációk áthelyezésével és méretezésével csináljon helyet az oldalon, majd a CTRL-V billentyűkombinációval illessze be az előző jelentésből származó kitöltött térképet.
+4. A vizualizációk áthelyezésével és méretezésével csináljon helyet az oldalon, majd a CTRL-V billentyűkombinációval illessze be az előző jelentésből származó kitöltött térképet. (Lásd a következő képeket)
 
    ![A Vélemény laphoz hozzáadott kitöltött térkép](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. Jelöljön ki egy államot a tematikus térképen.  Ezzel az oldalon lévő többi vizualizációt is kijelöli. Például, ha kijelöli **Texas** államot, a rendszer azt mutatja, hogy a Vélemény értéke 74, Texas pedig a Central District (Középső körzet) \#23. eleméhez tartozik.   
+5. Jelöljön ki egy államot a tematikus térképen.  Ez keresztkiemeléssel és keresztszűréssel jelöli a lapon lévő többi vizualizáció megfelelő adatait is. Például, ha kijelöli **Texas** államot, a rendszer azt mutatja, hogy a Vélemény értéke 75, és hogy Texas a Central District (Középső körzet) #23. eleme.   
    ![Texas kijelölve](media/power-bi-visualization-filled-maps-choropleths/power-bi-texas.png)
 2. Jelöljön ki egy adatpontot a VanArsdel – Sentiment by Month (Vélemény hónap szerint) vonaldiagramon. Ekkor a rendszer szűrést alkalmaz a kitöltött térképen, így csak a VanArsdel véleményadatai jelennek meg, a konkurenciáé pedig nem.  
    ![új árnyalat](media/power-bi-visualization-filled-maps-choropleths/power-bi-yes.png)

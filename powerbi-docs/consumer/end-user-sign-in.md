@@ -8,15 +8,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 10/13/2019
 ms.author: mihart
 LocalizationGroup: Getting started
-ms.openlocfilehash: 328010a97825f84e103a1100c8783cd02769d67f
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 7bc52e06234b8c1be558f0c74680febe2a65d1d1
+ms.sourcegitcommit: 5410a17c6325406c9d9364585d7c26de4d9488ae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "66750962"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72380021"
 ---
 # <a name="sign-in-to-power-bi-service"></a>Bejelentkezés a Power BI szolgáltatásba
 
@@ -25,40 +25,45 @@ A Power BI-ba való bejelentkezéshez fiókkal kell rendelkeznie. Power BI-fiók
 
 ## <a name="sign-in-for-the-first-time"></a>Bejelentkezés első alkalommal
 
-### <a name="step-one-open-a-browser"></a>Első lépés: egy böngésző megnyitása
+### <a name="step-1-open-a-browser"></a>1\. lépés: nyisson meg egy böngészőt
 A Power BI szolgáltatás egy böngészőben fut.  Az első teendő tehát a kedvenc böngészője megnyitása, és az **app.powerbi.com** cím begépelése.
 
 ![adatbevitel a böngészőbeli mezőben](media/end-user-sign-in/power-bi-sign-in.png)
 
-### <a name="step-two-type-your-email-address"></a>Második lépés: e-mail-címe beírása
+### <a name="step-2-type-your-email-address"></a>2\. lépés: írja be az e-mail-címét
 Amikor először jelentkezik be, a rendszer az e-mail-címét fogja kérni.  Ez az a munkahelyi vagy iskolai cím, amelyet a Power BI regisztrálása során használt.  
 
-Keresse meg a Power BI-rendszergazdájától kapott e-mailt a beérkezett üzenetei között. A rendszergazdák általában üdvözlő e-mailt küldenek, amely az Ön ideiglenes jelszavát is tartalmazza. Jelentkezzen be ezzel az e-mail-fiókkal. 
+Keresse meg a Power BI-rendszergazdájától kapott e-mailt a beérkezett üzenetei között. A rendszergazdák általában üdvözlő e-mailt küldenek, amely az Ön ideiglenes jelszavát is tartalmazza. Ezzel az e-mail-fiókkal jelentkezzen be. 
 
-![adatbevitel a böngészőbeli mezőben](media/end-user-sign-in/power-bi-email2.png)
+![adatbevitel a böngészőbeli mezőben](media/end-user-sign-in/power-bi-password.png)
 
 
  
-### <a name="step-three-create-a-new-password"></a>Harmadik lépés: új jelszó létrehozása
+### <a name="step-3-create-a-new-password"></a>3\. lépés: hozzon létre egy új jelszót
 Ha Power BI-rendszergazdája küldött ideiglenes jelszót, azt írja be a **Jelenlegi jelszó** mezőbe. Ha nem kapta meg e-mailben ezt a jelszót, forduljon Power BI-rendszergazdájához.
 
-![a Bejelentkezés mezőbe begépelt e-mail-cím](media/end-user-sign-in/power-bi-login2.png)
+![a Bejelentkezés mezőbe begépelt e-mail-cím](media/end-user-sign-in/power-bi-login.png)
 
-A Power BI megjegyzi hitelesítő adatait, így a következő bejelentkezéskor felhasználónevét (e-mail-címét) már nem kell beírnia. 
+Ha azt szeretné, hogy a Power BI megjegyezze a hitelesítő adatait, válassza az **Igen** lehetőséget. 
 
-### <a name="step-four-review-your-home-page"></a>Negyedik lépés: a Kezdőlap áttekintése
-Első látogatása alkalmával a Power BI az Ön **kezdőlapját** nyitja meg. Ha nem a **Kezdőlap** oldal nyílik meg, akkor válassza ki azt a bal oldali navigációs panelen. 
+![döntse el, hogy Power BI megjegyezze-e a hitelesítő adatokat](media/end-user-sign-in/power-bi-stay-signed-in.png)
 
-![a Bejelentkezés mezőbe begépelt e-mail-cím](media/end-user-sign-in/power-bi-home-select.png)
+
+### <a name="step-4-review-your-home-landing-page"></a>4\. lépés: tekintse át a Kezdőlapot
+Első látogatása alkalmával a Power BI az Ön **Kezdőlapját** nyitja meg. Ha nem nyílik meg a **Kezdőlap**, válassza ki azt a navigációs panelen. 
+
+![a Kezdőlap kijelölését bemutató képernyőfelvétel](media/end-user-sign-in/power-bi-home-selected.png)
 
 A Kezdőlapon minden olyan tartalmat megtalál, amelynek használatára jogosult. A Kezdőlap először még nem tartalmaz sok mindent, de ez bizonyára megváltozik, ha munkatársaival használatba veszi a Power BI-t. 
 
-![a Bejelentkezés mezőbe begépelt e-mail-cím](media/end-user-sign-in/power-bi-home2.png)
+![A Kezdőlap](media/end-user-sign-in/power-bi-home-landing.png)
 
 Ha nem szeretné, hogy a Power BI a Kezdőlapját nyissa meg, [beállíthatja, hogy egy **Kiemelt** irányítópult vagy jelentés](end-user-featured.md) legyen megnyitva helyette. 
 
 ## <a name="safely-interact-with-content"></a>A tartalom biztonságos kezelése
 Mások Önnel mint ***fogyasztóval*** fognak tartalmakat megosztani, Ön pedig ennek a tartalomnak a kezelésével vizsgálhatja az adatokat, és hozhat üzleti döntéseket.  Bátran szűrhet, szeletelhet, feliratkozhat, exportálhat és méretezhet – a tevékenysége nem befolyásolja az eredeti megosztott tartalmat (irányítópultokat és jelentéseket) és az azok alapjául szolgáló adatokat. A Power BI-ban biztonságosan tallózhat és kísérletezhet. Ez nem azt jelenti, hogy a módosításait nem mentheti – ezt megteheti. A módosítások azonban egyedül azt befolyásolják, ahogyan **Ön** látja a tartalmat. Az eredeti, alapértelmezett nézet egyetlen kattintással helyreállítható.
+
+![A Visszaállítás alapértelmezettre gomb](media/end-user-sign-in/power-bi-reset.png)
 
 ## <a name="sign-out-of-power-bi-service"></a>Kijelentkezés a Power BI szolgáltatásból
 Amikor bezárja a Power BI-t, vagy kijelentkezik, a módosításai mentve lesznek, így ott folytathatja a munkát, ahol abbahagyta.
@@ -74,7 +79,7 @@ Ha másokkal közösen használ egy számítógépet, ajánlott mindig kijelentk
 ## <a name="troubleshooting-and-considerations"></a>Hibaelhárítás és megfontolandó szempontok
 - Ha egyénileg regisztrált a Power BI-ba, akkor a regisztráláshoz használt e-mail-címmel jelentkezzen be.
 
-- A több fiókkal is használja a Power BI-t, akkor a rendszer a bejelentkezéskor kéri, hogy válaszon a felsorolt fiókok közül, majd adja meg a jelszavát. 
+- Egyes felhasználók egynél több fiókkal használják Power BI-t. Ilyen esetben a bejelentkezéskor a rendszer felkéri, hogy válasszon egy fiókot egy listából. 
 
 ## <a name="next-steps"></a>Következő lépések
 [Power BI-alkalmazás megtekintése](end-user-app-view.md)

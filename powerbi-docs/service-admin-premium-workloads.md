@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: a05924fc093c1514f51c3fabac3162433e2188f7
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 2b05ad31612d1960e131028d13552843834a98bd
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968888"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307378"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Számítási feladatok konfigurálása egy Premium-kapacitásban
 
@@ -70,6 +70,8 @@ Az adathalmazok számítási feladat alapértelmezés szerint engedélyezve van,
 | **Eredménysorok maximális száma** | A DAX-lekérdezés által visszaadott sorok maximális száma. Az alapértelmezett érték -1 (nincs korlát), a megengedett tartomány pedig 100 000-től 2 147 483 647-ig terjed. |
 | **Lekérdezés memóriakorlátja (%)** | Egy lekérdezésben vagy DAX-mértékben ideiglenes eredményekhez a kapacitásban felhasználható, rendelkezésre álló memória maximális százalékos aránya. |
 | **Lekérdezés időkorlátja (másodpercben)** | A lekérdezés időtúllépéséig eltelt idő maximuma. Az alapértelmezett érték 3600 másodperc (1 óra). A 0 érték azt jelenti, hogy a lekérdezések lépik túl az időt. |
+| **Automatikus oldalfrissítés (előzetes verzió)** | A be- és kikapcsolás váltógomb a prémium szintű munkaterületeken lehetővé teszi a jelentések automatikus frissítését. |
+| **Minimális frissítési időköz** | Az oldalfrissítés minimálisan engedélyezett frissítési időköze, ha az automatikus oldalfrissítés be van kapcsolva. Az alapértelmezett érték öt perc, a minimálisan megengedett érték pedig egy másodperc. |
 |  |  |  |
 
 #### <a name="max-intermediate-row-set-count"></a>Köztes sorok maximális száma
@@ -112,6 +114,19 @@ Ez a beállítás egyetlen lekérdezésre vonatkozik, és nem az egy adatkészle
 Az összes lekérdezés teljes futási ideje összesen ugyan 75 perc, de a beállítás korlátját nem éri el, mivel az egyes lekérdezések 20 percnél kevesebb ideig futnak.
 
 Vegye figyelembe, hogy a Power BI-jelentések ezt az alapértelmezett beállítást felülbírálva sokkal rövidebb időtúllépést biztosítanak a kapacitásra vonatkozó egyes lekérdezések számára. Az egyes lekérdezések időtúllépése általában három perc.
+
+#### <a name="automatic-page-refresh-preview"></a>Automatikus oldalfrissítés (előzetes verzió)
+
+Ha engedélyezve van, az automatikus oldalfrissítés lehetővé teszi a prémium szintű felhasználók számára, hogy a jelentésben szereplő oldalakat a DirectQuery-források esetén meghatározott időközönként frissítse. Kapacitás-rendszergazdaként a következőket teheti:
+
+1.  Az automatikus oldalfrissítés be- és kikapcsolása
+2.  A minimális frissítési időköz meghatározása
+
+Az alábbi képen az automatikus frissítési időköz beállításának helye látható:
+
+![rendszergazdai beállítás az automatikus frissítési időközhöz](media/service-admin-premium-workloads/automatic-refresh-interval.png)
+
+Az automatikus oldalfrissítés által létrehozott lekérdezések közvetlenül az adatforráshoz kerülnek, ezért fontos, hogy az automatikus oldalfrissítés engedélyezésekor megfontolja a megbízhatóságot és a terhelést. 
 
 ### <a name="dataflows"></a>Adatfolyamok
 
@@ -180,6 +195,7 @@ A [Power BI Premium-kapacitásmetrikák alkalmazás](service-admin-premium-monit
 
 [Power BI Premium-kapacitások optimalizálása](service-premium-capacity-optimize.md)     
 [Önkiszolgáló adat-előkészítés a Power BI-ban adatfolyamokkal](service-dataflows-overview.md)   
-[Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)   
+[Mik azok a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)   
+[Automatikus oldalfrissítés Power BI Desktopban (előzetes verzió)](desktop-automatic-page-refresh.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

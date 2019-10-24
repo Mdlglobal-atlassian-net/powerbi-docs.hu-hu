@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 21a7bf05330373febe1e9f121f07df6de0779c69
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: e6b0d7db9f82d8bc68f230858799f6afbcad1c82
+ms.sourcegitcommit: 83e1e162a037f352e542bd5c198a3c98f5db23c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70200945"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72511654"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Adatforrások a Power BI szolgáltatásban
 A Power BI legfontosabb összetevői maguk az adatok. Tegyük fel, hogy adatfeltárást végez. Ezt megteheti diagramok és irányítópultok létrehozásával vagy **Q&A**-beli kérdésfeltevéssel. A látott vizualizációk és válaszok egy adatkészletből merítik az adatokat. De honnan származik ez az adatkészlet? Egy adatforrásból.
@@ -111,7 +111,11 @@ Az adatfrissítés kiemelten fontos a Power BI-ban, és túlságosan mély téma
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 A Power BI szolgáltatásban használt összes adatforrásra érvényesek az alábbi szempontok és korlátozások. Léteznek más, egyes funkciókra vonatkozó korlátozások is, de a következő felsorolás a Power BI szolgáltatás egészére érvényes:
 
-* **Adatkészletek méretkorlátja** – A Power BI szolgáltatásban az egyes adatkészletek méretének felső határa 1 GB.
-* **Sorkorlát** – **DirectQuery** használata nélkül az adatkészlet maximális sorainak száma 2 milliárd. Három sor ebből foglalt, így a maximálisan felhasználható sorok száma 1 999 999 997. **DirectQuery** használatával a sorok maximális száma 1 millió.
-* **Oszlopkorlát** – Az oszlopok legnagyobb megengedett száma egy adatkészletben, az adatkészlet összes táblájában összesen 16 000. Ez a korlátozás Power BI szolgáltatásra és a Power BI Desktopban használt adatkészletekre is vonatkozik. A Power BI az adatkészlet minden táblájában tartalmaz egy beépített sorszámoszlopot is, tehát az oszlopok maximális száma 16 000 mínusz az adatkészletben használt táblák száma.
+* **Adatkészletek méretkorlátja** – A Power BI szolgáltatásban a megosztott kapacitásban tárolt egyes adatkészletek méretének felső határa 1 GB. Ha nagyobb adatkészletekre van szüksége, használhatja a [Power BI Premiumot](service-premium-what-is.md).
+
+* **Egyedi értékek egy oszlopban** – Ha egy Power BI-adatkészletben (más néven „Importálási” módban) végez gyorsítótárazást, az oszlopokban tárolható egyedi értékek maximális száma 1.999.999.997.
+
+* **Sorokra vonatkozó korlát** – A **DirectQuery** használata esetén a Power BI korlátozza az alapul szolgáló adatforrásnak elküldhető lekérdezési eredményeket. Ha az adatforrásnak elküldött lekérdezés több mint 1.000.000 sort ad vissza, hibaüzenet jelenik meg, és a lekérdezés meghiúsul. Az alapul szolgáló adat azonban tartalmazhat több mint 1 millió sort. Nem valószínű, hogy ezt a korlátot eléri, mivel a legtöbb jelentés az adatokat kisebb eredménykészletekben összesíti.
+
+* **Oszlopkorlát** – Az oszlopok legnagyobb megengedett száma egy adatkészletben, az adatkészlet összes táblájában összesen 16 000. Ez a korlátozás Power BI szolgáltatásra és a Power BI Desktopban használt adatkészletekre is vonatkozik. Power BI így nyomon követi az adatkészlet oszlopainak és tábláinak számát, ami azt jelenti, hogy az oszlopok maximális száma 16.000 mínusz egy az adatkészlet minden táblájánál.
 

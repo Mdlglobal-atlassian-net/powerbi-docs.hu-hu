@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 10/16/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 75b7a606e588ca7f6d1393c5b6e0dd9041f6d63e
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: a9e8d2aaab7c0b3ed1daea32486260d09bc6f6a2
+ms.sourcegitcommit: 83e1e162a037f352e542bd5c198a3c98f5db23c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945205"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72511633"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>A DirectQuery által támogatott adatforrások a Power BI-ban
 
@@ -76,7 +76,7 @@ Az alábbi tábla meghatározza, hogy szükség van-e **helyszíni adatátjáró
 | Oracle Database |Igen |
 | PostgreSQL |Igen |
 | SAP Business Warehouse-alkalmazáskiszolgáló |Igen |
-| SAP Business Warehouse üzenetkezelési kiszolgáló |Még nem támogatott a **Power BI szolgáltatásban** |
+| SAP Business Warehouse üzenetkezelési kiszolgáló |Igen |
 | SAP HANA |Igen |
 | Snowflake |Igen |
 | Spark (bétaverzió) (0.9-es és újabb) |Igen |
@@ -97,6 +97,7 @@ Az egyszeri bejelentkezési beállítás az adatforrást használó összes adat
 - Impala
 - SAP HANA
 - SAP BW
+- SAP BW Message Server (előzetes verzió)
 - Spark
 - SQL Server
 - Teradata

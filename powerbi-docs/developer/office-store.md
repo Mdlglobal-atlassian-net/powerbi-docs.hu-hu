@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: 44534f2adbc4f1f39a0c65e11d646fd8fd67be71
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 1841311e94ca593093fa3104b615328927365880
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71944817"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307670"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Power BI-vizualizációk közzététele az AppSource-ban
 
 Megtudhatja, hogyan teheti közzé egyéni vizualizációit az AppSource-ban, amelyeket aztán mások is felfedezhetnek és használhatnak.
 
-Miután létrehozta egyéni vizualizációját, közzéteheti az AppSource-ban, hogy mások felfedezhessék és használhassák. Ehhez először el kell végezni néhány előkészítő lépést. Az egyéni vizualizációk létrehozásáról az [egyéni Power BI-vizualizáció fejlesztését](custom-visual-develop-tutorial.md) ismertető cikkben talál további információkat.
+Miután létrehozta egyéni vizualizációját, közzéteheti az AppSource-ban, hogy mások felfedezhessék és használhassák. Ehhez először el kell végezni néhány előkészítő lépést. Az egyéni vizualizációk létrehozásáról az [egyéni Power BI-vizualizáció fejlesztését](visuals/custom-visual-develop-tutorial.md) ismertető cikkben talál további információkat.
 
    ![Office Áruház](media/office-store/appsource-01.png)
 
@@ -147,7 +147,7 @@ A vizualizáció létrehozása azt is megteheti, hogy tanúsíttatja a vizualiz�
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Egyéni Power BI-vizualizáció fejlesztése](custom-visual-develop-tutorial.md)  
+[Egyéni Power BI-vizualizáció fejlesztése](visuals/custom-visual-develop-tutorial.md)  
 [Vizualizációk a Power BI-ban](../visuals/power-bi-report-visualizations.md)  
 [Egyéni vizualizáció a Power BI-ban](../power-bi-custom-visuals.md)  
 [Egyéni vizualizáció *tanúsíttatása*](../power-bi-custom-visuals-certified.md)

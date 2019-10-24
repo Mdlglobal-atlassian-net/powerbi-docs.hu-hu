@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ff962335b573c6dd2a03ae5ab4633c1042a77059
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5a4c385b9c8e8a28de3b9a5e1dd84651f87ef000
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770774"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543174"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>A Power BI szolgáltatás alapfogalmai tervezők számára
 
@@ -33,10 +33,11 @@ Ha a Power BI szolgáltatást egy böngészőben nyitja meg, először egy Kezd�
 3. A Power BI kezdőlapjának gombja
 4. Ikongombok, beleértve a beállításokat, a súgót és a visszajelzést is
 5. Keresőmező
-6. Egy kedvenc irányítópult csempéi
-7. Kedvenc és gyakran használt irányítópultok és jelentések
+6. Kedvenc és gyakran használt irányítópultok, jelentések és munkaterületek
+7. Legutóbb használt irányítópultok, jelentések és munkaterületek
+8. Saját munkaterületek
 
-A jelentések és az irányítópultok végfelhasználói ugyanezzel a kezdő képernyővel találkoznak a Power BI szolgáltatás böngészőben való megnyitásakor.
+Ön és a jelentések és az irányítópultok végfelhasználói ugyanezzel a kezdő képernyővel találkoznak a Power BI szolgáltatás böngészőben való megnyitásakor.
 
 Ezeket a funkciókat később részletesen is ismertetjük, de először vegyük sorra a Power BI néhány alapfogalmát. De érdemes lehet megnézni először ezt a videót.  A videóban Will ismerteti az alapfogalmakat, és végigvezeti a Power BI szolgáltatáson.
 
@@ -195,8 +196,8 @@ A Q&A az irányítópulthoz csatlakozó adatkészlet(ek)ben keresi a választ.  
 
 A Q&A már a kérdés beírásának elején átirányítja Önt a Q&A lapra. A kérdés beírása közben a Q&A többek között átfogalmazással, automatikus kitöltéssel, valamint javaslatokkal segít a legjobb kérdés feltevésében és a helyes válasz megtalálásában. Ha megfelelőnek találja a kapott vizualizációt (választ), rögzítse az irányítópulton. További információkért tekintse meg a [Q&A a Power BI-ban](power-bi-q-and-a.md) című részt.
 
-### <a name="4-icon-buttons"></a>4. **Ikongombok**
-A jobb felső sarokban látható ikonokkal érhetők el a beállítások, az értesítések, a letöltések, a súgó és a Power BI-csapatnak történő visszajelzés. A dupla nyílra kattintva **Teljes képernyős** módban nyithatja meg az irányítópultot.  
+### <a name="4-icons-in-the-black-header-bar"></a>4. **Ikonok a fekete fejléc sávján**
+A jobb felső sarokban látható ikonokkal érhetők el a beállítások, az értesítések, a letöltések, a súgó, az **Új megjelenés** ki- és bekapcsolása és a Power BI-csapatnak történő visszajelzés.  
 
 ![ikongombok](media/service-basic-concepts/power-bi-icons.png)
 
@@ -217,8 +218,8 @@ A **Power BI** kiválasztásával visszatér a Power BI kezdőlapjára.
 
    ![„Power BI” a szolgáltatásban](media/service-basic-concepts/version-new.png)
 
-### <a name="8-labeled-icon-buttons"></a>8. **Címkézett ikongombok**
-A képernyő ezen területén további lehetőségek találhatók a tartalom (ebben az esetben az irányítópult) használatához.  A címkézett ikonok mellett látható a három pont (...) ikon, melyet választva egyebek mellett olyan lehetőségeket jeleníthet meg, mint például az irányítópult megkettőzése, nyomtatása és frissítése.
+### <a name="8-labeled-icons-in-the-gray-menu-bar"></a>8. **Címkézett ikonok a szürke menüsorban**
+A képernyő ezen területén további lehetőségek találhatók a tartalom (ebben az esetben az irányítópult) használatához.  A címkézett ikonok mellett látható a **További lehetőségek (...)** ikon, melyet választva egyebek mellett olyan lehetőségeket jeleníthet meg, mint például az irányítópult megkettőzése, nyomtatása és frissítése.
 
    ![Címkézett ikongombok](media/service-basic-concepts/power-bi-labeled-icons.png)
 

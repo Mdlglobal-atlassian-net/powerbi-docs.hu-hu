@@ -9,19 +9,19 @@ ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/17/2019
+ms.date: 10/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 2e41a3f5b1d1bd945e1ab4566abed1589b20c148
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 2b9fd3fc971d2cf73aabb2033d3a64565333bc67
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67264908"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543691"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>A Power BI szolgáltatás alapfogalmai felhasználók számára
 
-Ez a cikk feltételezi, hogy már elolvasta [a Power BI áttekintését](../power-bi-overview.md), és azonosította magát Power BI-***felhasználóként***. A felhasználók Power BI-tartalmakat, például irányítópultokat és jelentéseket fogadnak a munkatársaktól. A felhasználók a Power BI szolgáltatást, a Power BI webhelyalapú verzióját használják.
+Ez a cikk feltételezi, hogy már elolvasta [a Power BI áttekintését](../power-bi-overview.md), és azonosította magát [Power BI ***-felhasználóként***](end-user-consumer.md). A felhasználók Power BI-tartalmakat, például irányítópultokat és jelentéseket fogadnak a munkatársaktól. A felhasználók a Power BI szolgáltatást, a Power BI webhelyalapú verzióját használják.
 
 Minden bizonnyal találkozni fog a „Power BI Desktop”, vagy egyszerűen „Desktop” megnevezéssel. Ezt a különálló eszközt azok a *tervezők* használják, akik irányítópultokat és jelentéseket készítenek és osztanak meg Önnel. Fontos tudni, hogy más Power BI-eszközök is léteznek. Felhasználóként Ön csak a Power BI szolgáltatást fogja használni. Ennek a cikknek a tartalma kizárólag a Power BI szolgáltatásra vonatkozik.
 
@@ -35,7 +35,7 @@ A legtöbb Power BI-felhasználó úgy fér hozzá a Power BI szolgáltatáshoz,
 
 Első lépésként nyisson meg egy böngészőt, és írja be az **app.powerbi.com** címet. A Power BI szolgáltatás első megnyitásakor az alábbihoz hasonló oldal fogadja:
 
-![A Power BI szolgáltatás üdvözlőképernyőjének képernyőképe.](media/end-user-basic-concepts/power-bi-open.png)
+![A Power BI szolgáltatás üdvözlőképernyőjének képernyőképe.](media/end-user-basic-concepts/power-bi-home.png)
 
 A Power BI használata során személyre szabhatja, hogy mi jelenjen meg a webhely megnyitásakor. Például vannak, akik azt szeretik, ha a Power BI a **Kezdőlapot** nyitja meg, mások pedig a kedvenc irányítópultjukat látják szívesen bejelentkezéskor. Ebből a cikkből megtanulja testre szabni a felületet.
 
@@ -87,9 +87,9 @@ Minden adathalmaz ez adatok egyetlen forrásának felel meg. Ez a forrás lehet 
 
 Amikor egy tervező alkalmazást oszt meg Önnel, látni fogja, hogy a tervező mely adathalmazokat foglalta bele az alkalmazásba.
 
-![A Power BI felhasználói felületének képernyőképe az Alkalmazások elem kijelölésével és a vászon Adathalmazok szakaszára mutató nyíllal.](media/end-user-basic-concepts/power-bi-dataset-list.png)
+![A Power BI felhasználói felületének képernyőképe a vászon Adathalmazok szakaszára mutató nyíllal.](media/end-user-basic-concepts/power-bi-dataset-lists.png)
 
-Egy adathalmaz...
+Egy adatkészlet...
 
 - Újra és újra felhasználható egy jelentéstervező által irányítópultok és jelentések létrehozásához
 
@@ -98,10 +98,6 @@ Egy adathalmaz...
 - Az erre az egy adathalmazra alapozott vizualizációk sok különböző irányítópulton is megjelenhetnek
 
   ![Adathalmazt több-az-egyhez kapcsolatokkal ábrázoló kép](media/end-user-basic-concepts/drawing2.png)
-
-A tervezők más munkaterületekről származó adathalmazokat is felhasználhatnak arra, hogy tartalmat (jelentéseket, irányítópultokat) hozzanak létre a saját munkaterületükön. A Power BI ezeket az adathalmazokat a hivatkozott adathalmaz ikonnal jeleníti meg:
-
-![A hivatkozott adatbázis-ikon képernyőképe.](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
 A következő építőelem a vizualizáció.
 
@@ -131,7 +127,7 @@ _______________________________________________________
 
 A Power BI-jelentések egy vagy több oldalnyi vizualizációból, szövegből és grafikai elemekből állnak. Egyetlen jelentés vizualizációi csak egy adatkészleten alapulhatnak. A *tervezők* megosztják a jelentéseket a *felhasználókkal*, akik *Olvasó nézetben* [használják a jelentéseket](end-user-reading-view.md).
 
-![Lapfülekkel rendelkező jelentés képernyőképe.](media/end-user-basic-concepts/power-bi-report2.png)
+![Lapfülekkel rendelkező jelentés képernyőképe.](media/end-user-basic-concepts/power-bi-report.png)
 
 Egy jelentés...
 
@@ -151,7 +147,7 @@ Az irányítópult az alapjául szolgáló adatkészlet(ek) valamely részhalmaz
 
   ![Minta-irányítópult képernyőképe](media/end-user-basic-concepts/power-bi-dashboard.png)
 
-A csempe egy vizualizáció olyan leképezése, amelyet egy *tervező* *rögzít* például egy jelentésből egy irányítópultra. Minden rögzített csempe egy, az irányítópultra rögzített [vizualizációt](end-user-visualizations.md) jelenít meg, amelyet a Power BI hozott létre egy adathalmazból. A csempe egy teljes jelentésoldalt is tartalmazhat, és élő streamadatokat vagy videót is tartalmazhat. A *tervezők* sokféleképpen vehetnek fel csempéket az irányítópultokra. A sokféle lehetőség túlnő ennek az áttekintő cikknek a keretein. További információkért tekintse meg [Az irányítópult csempéi a Power BI szolgáltatásban](end-user-tiles.md) című oldalt.
+A csempe egy vizualizáció olyan leképezése, amelyet egy *tervező* *rögzít* például egy jelentésből egy irányítópultra. Minden rögzített csempe egy, az irányítópultra rögzített [vizualizációt](end-user-visualizations.md) jelenít meg, amelyet a tervező hozott létre egy adathalmazból. A csempe egy teljes jelentésoldalt is tartalmazhat, és élő streamadatokat vagy videót is tartalmazhat. A *tervezők* sokféleképpen vehetnek fel csempéket az irányítópultokra. A sokféle lehetőség túlnő ennek az áttekintő cikknek a keretein. További információkért tekintse meg [Az irányítópult csempéi a Power BI szolgáltatásban](end-user-tiles.md) című oldalt.
 
 A felhasználók nem szerkeszthetik az irányítópultokat. Azonban hozzáadhatnak megjegyzéseket, megtekinthetik a kapcsolódó adatokat, beállíthatnak kedvenceket, feliratkozhatnak stb.
 
@@ -183,7 +179,7 @@ _______________________________________________________
 
 Az irányítópultok és jelentések alkalmazásnak nevezett gyűjteményei egy csomagba rendezik a kapcsolódó tartalmakat. Az alkalmazásokat a Power BI-*tervezők* hozzák létre, és osztják meg egyénekkel, csoportokkal, az egész vállalattal vagy a nyilvánossággal. Felhasználóként biztos lehet abban, hogy Ön és a munkatársai ugyanazokkal az adatokkal, a valóság egyazon megbízható verziójával dolgoznak.
 
-![Képernyőkép a Power BI bal oldali paneljének kijelölt Alkalmazások elemével.](media/end-user-basic-concepts/power-bi-app.png)
+![Képernyőkép a Power BI bal oldali paneljének kijelölt Alkalmazások elemével.](media/end-user-basic-concepts/power-bi-apps.png)
 
 Az alkalmazásokat a [Power BI szolgáltatásban](https://powerbi.com) és mobileszközén is könnyen megtalálhatja és telepítheti. Egy alkalmazás telepítése után nem kell fejben tartania a rengeteg különböző irányítópult nevét. Mindet egy helyen találja egy alkalmazásban, a böngészőben vagy a mobileszközén.
 

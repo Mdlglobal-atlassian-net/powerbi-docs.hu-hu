@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 417238550f68a1c244bab33b8343712f02242eae
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 56583c796a8f6e32bed67629dee4fe3bea677bee
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945280"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307839"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 A Power BI Desktoppal különböző forrásokból származó adatokhoz csatlakozhat. Az elérhető adatforrások teljes listája az oldal alján látható.
@@ -225,6 +225,201 @@ Az URL-cím vagy az erőforrás csatlakozási adatainak megadása után kattints
 Az adatokat betöltheti a **Kezelő** panel alján található **Betöltés** gombbal, vagy szerkesztheti a lekérdezést az adatok betöltése előtt a **Szerkesztés** gombbal.
 
 Ilyen egyszerűen csatlakozhat adatforrásokhoz a Power BI Desktopban. Egyre több adatforrás közül választhat, és a lista folyamatosan bővül, ezért érdemes gyakran visszatérnie.
+
+## <a name="using-pbids-files-to-get-data"></a>PBIDS-fájlok használata az adatok beolvasásához
+
+A PBIDS-fájlok olyan Power BI Desktop-fájlok, amelyek adott struktúrával rendelkeznek, és .PBIDS kiterjesztésűek, ami Power BI adatforrás-fájlként azonosítja őket.
+
+.PBIDS-fájl létrehozásával egyszerűsítheti a szervezet jelentéskészítőinek munkáját az **Adatbeolvasási** folyamatnál. Javasoljuk, hogy a rendszergazdák a gyakran használt kapcsolatokhoz hozzanak létre ilyen fájlokat, hogy megkönnyítsék a PBIDS-fájlok használatát az új jelentéskészítők számára. 
+
+Amikor egy szerző megnyit egy .PBIDS-fájlt, megnyílik a Power BI Desktop, és bekéri a felhasználótól a hitelesítő adatokat a hitelesítéshez és a fájlban megadott adatforráshoz való kapcsolódáshoz. Megjelenik a navigációs párbeszédpanel, és a felhasználónak ki kell választania az adatforrásból azokat a táblákat, melyeket be szeretne tölteni a modellbe. A felhasználónak ki kell választania az adatbázis(oka)t is, ha az nem lett megadva a PBIDS-fájlban. 
+
+Ettől kezdve a felhasználó megkezdheti a vizualizációk létrehozását, vagy a *legutóbbi források* használatával betölthet a modellbe egy új táblacsoportot. 
+
+A .PBIDS-fájlok jelenleg csak egyetlen adatforrást támogatnak egyetlen fájlban. Egynél több adatforrás megadása hibát eredményez. 
+
+A .PBIDS-fájl létrehozásához a rendszergazdának meg kell adnia az adott kapcsolathoz szükséges bemeneteket, és megadhatja a kapcsolat módját is, ami lehet **DirectQuery** vagy **Importálás**. Ha a **mód** hiányzik vagy null értékű a fájlban, akkor a fájlt a Power BI Desktopban megnyitó felhasználónak ki kell választania vagy a DirectQuery, vagy az Importálás lehetőséget. 
+
+### <a name="pbids-file-examples"></a>Példák .PBIDS-fájlokra
+
+Ebben a szakaszban bemutatunk néhány példát a gyakran használt adatforrásokra. A .PBIDS fájltípus csak azokat az adatkapcsolatokat támogatja, amelyeket a Power BI Desktop is támogat, két kivétellel: az élő kapcsolat és az üres lekérdezés. 
+
+A .PBIDS-fájl *nem* tartalmazza a hitelesítési adatokat és a táblák és a séma adatait.  
+
+Az alábbiakban néhány gyakori példát talál .PBIDS-fájlokra. A lista nem teljes és nem átfogó. Más adatforrásokhoz tekintse meg az [Adatforrás-referencia (DSR) formátuma a protokoll- és címadatokhoz](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification) című cikket.
+
+Ezeket a példákat csak segítségként mutatjuk be, azok nem teljesek, és nem tartalmazzák az összes támogatott összekötőt DSR formátumban. A rendszergazdák vagy a szervezetek saját adatforrásokat hozhatnak létre a példákat útmutatóként használva, amelyekből létrehozhatják és támogathatják a saját adatforrás-fájljaikat. 
+
+
+**Azure AS**
+```
+{ 
+    "version": "0.1", 
+    "connections": [ 
+    { 
+        "details": { 
+        "protocol": "analysis-services", 
+        "address": { 
+            "server": "server-here" 
+        }, 
+        } 
+    } 
+    ] 
+}
+```
+
+
+ 
+
+**Mappa**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "folder", 
+        "address": { 
+            "path": "folder-path-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+
+**OData**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "odata", 
+        "address": { 
+            "url": "URL-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+**SAP BW**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "sap-bw-olap", 
+        "address": { 
+          "server": "server-name-here", 
+          "systemNumber": "system-number-here", 
+          "clientId": "client-id-here" 
+        }, 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+**SAP Hana**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "sap-hana-sql", 
+        "address": { 
+          "server": "server-name-here:port-here" 
+        }, 
+      } 
+    } 
+  ] 
+} 
+```
+
+**SharePoint-lista**
+
+Az URL-címnek magára a SharePoint-webhelyre kell mutatnia, és nem a webhelyen belüli listára. A felhasználók egy kezelő használatával választhatnak ki egy vagy több listát a helyről, amelyek mindegyike a modell egy táblája lesz. 
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "sharepoint-list", 
+        "address": { 
+          "url": "URL-here" 
+        }, 
+       } 
+    } 
+  ] 
+} 
+```
+ 
+ 
+**SQL Server**
+```
+{ 
+  “version”: “0.1”, 
+  “connections”: [ 
+    { 
+      “details”: { 
+        “protocol”: “tds”, 
+        “address”: { 
+          “server”: “server-name-here”, 
+          “database”: “db-name-here (optional)” 
+        } 
+      }, 
+      “options”: {}, 
+      “mode”: “DirectQuery” 
+    } 
+  ] 
+} 
+} 
+```
+ 
+
+**Szövegfájl**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "file", 
+        "address": { 
+            "path": "path-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+
+**Web**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "http", 
+        "address": { 
+            "url": "URL-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+
+
 
 ## <a name="next-steps"></a>Következő lépések
 A Power BI Desktop műveletek és lehetőségek széles tárházát tartalmazza. A program képességeivel kapcsolatos további információkért lásd az alábbi forrásanyagokat:

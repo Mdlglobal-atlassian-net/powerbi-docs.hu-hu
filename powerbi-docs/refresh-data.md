@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 7492651d2b5be8a63c97594fce3f3399b1122cc3
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: f5fe835d2ec423b596460a81ccb2a406b306c3c5
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325038"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307939"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
 
@@ -309,6 +309,13 @@ A figyelmeztetés ikon segít az adathalmazzal kapcsolatos aktuális problémák
 > [!NOTE]
 > A frissítési előzmények megjelenítéséhez az adathalmaz beállításai között található hivatkozás. A frissítési előzményeket programozottan is lekérheti a [Power BI REST API](/rest/api/power-bi/datasets/getrefreshhistoryingroup) használatával. Egyéni megoldás használatával több adathalmaz frissítési előzményeit is központosítottan figyelheti.
 
+## <a name="automatic-page-refresh"></a>Automatikus oldalfrissítés
+
+Az automatikus oldalfrissítés a jelentésoldal szintjén működik, és lehetővé teszi, hogy a jelentés szerzője beállítson egy frissítési időközt az oldal vizualizációjához, amely csak akkor aktív, amikor a lap használatban van. Az automatikus oldalfrissítés csak DirectQuery-adatforrások esetén érhető el. A minimális frissítési időköz attól függ, hogy a jelentés milyen típusú munkaterületen van közzétéve, valamint hogy a Prémium munkaterületekre vonatkozóan milyen kapacitásbeállításokat alkalmazott a rendszergazda.
+
+Az automatikus oldalfrissítésről az [automatikus oldalfrissítés](desktop-automatic-page-refresh.md) című cikkben olvashat bővebben.
+
+
 ## <a name="best-practices"></a>Ajánlott eljárások
 
 Az adathalmazok frissítési előzményeinek rendszeres ellenőrzése az egyik legfontosabb ajánlott eljárás, amellyel biztosítható, hogy jelentései és irányítópultjai aktuális adatokat használjanak. Ha problémákat tapasztal, azonnal kezelje azokat, szükség esetén az adatforrás-tulajdonosok és az átjáró-rendszergazdák bevonásával.
@@ -324,6 +331,7 @@ Emellett az alábbi javaslatok szem előtt tartásával alakíthat ki és tartha
 - Adathalmazait megbízható nagyvállalati adatátjáró-példány használatával csatlakoztassa a helyszíni adatforrásokhoz. Ha az átjáró által okozott frissítési hibákat tapasztal például az átjáró elérhetetlensége vagy túlterheltsége miatt, akkor forduljon az átjáró rendszergazdáihoz, hogy további átjárókat adjanak egy meglévő fürthöz, vagy új fürtöt helyezzenek üzembe (vertikális vagy horizontális felméretezés).
 - Használjon külön adatátjárókat az Importálás és a DirectQuery/LiveConnect adathalmazokhoz, hogy az ütemezett frissítésekkel járó adatimportálás ne befolyásolja a DirectQuery/LiveConnect-adathalmazokra épülő jelentések és irányítópultok teljesítményét, amelyek minden felhasználói tevékenység esetén lekérdezik az adatforrásokat.
 - Gondoskodjon róla, hogy a Power BI értesítést küldhessen Önnek a sikertelen frissítésekről. A levélszemét-szűrők blokkolhatják ezeket az üzeneteket, és más mappába helyezhetik át azokat, ahol nem tűnnek fel azonnal.
+
 
 ## <a name="next-steps"></a>Következő lépések
 
