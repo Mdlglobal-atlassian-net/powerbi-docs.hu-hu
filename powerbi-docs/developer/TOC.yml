@@ -129,6 +129,8 @@
               href: register-app.md
             - name: Azure AD hozzáférési token beszerzése
               href: get-azuread-access-token.md
+            - name: Dinamikus kötés
+              href: embed-dynamic-binding.md
             - name: Beágyazással kapcsolatos GYIK
               href: qanda.md
             - name: Beágyazott alkalmazás hibaelhárítása
