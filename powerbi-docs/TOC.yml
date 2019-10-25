@@ -211,8 +211,6 @@
               href: desktop-calculated-tables.md
             - name: Mértékek a Power BI Desktopban
               href: desktop-measures.md
-            - name: Q&A nyelvi séma szerkesztése
-              href: power-bi-q-and-a-linguistic-schema.md
             - name: KPI-k importálása és megjelenítése (előzetes verzió)
               href: desktop-import-and-display-kpis.md
         - name: Jelentések létrehozása
@@ -227,8 +225,6 @@
               href: desktop-tooltips.md
             - name: Exportálás PDF-be és a jelentések nyomtatása
               href: desktop-export-to-pdf.md
-            - name: Q&A a Power BI Desktopban
-              href: desktop-qna-in-reports.md
             - name: Az Elemzés panel a Power BI Desktopban
               href: desktop-analytics-pane.md
             - name: Növekedések és csökkenések megértése elemzésekkel
