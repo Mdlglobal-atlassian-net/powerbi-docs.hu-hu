@@ -1,4 +1,5 @@
-- name: Power BI fejlesztőknek
+- name: A Power BI fejlesztői dokumentációja
+  href: index.yml
   items:
     - name: Áttekintés
       expanded: true

@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: A Power BI fejlesztőknek dokumentációja
+title: A Power BI fejlesztői dokumentációja
 summary: A Power BI dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
 metadata:
-  title: Power BI fejlesztőknek
+  title: A Power BI fejlesztői dokumentációja
   description: A Power BI dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
   services: powerbi
   ms.service: powerbi
@@ -11,49 +11,49 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 10/02/2019
-  ms.openlocfilehash: 04cbb872183f589ad37e39c0dd132a1a17662ce4
-  ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+  ms.date: 10/25/2019
+  ms.openlocfilehash: ac0d2e2955846d7b67e94af923b41c8b5f476996
+  ms.sourcegitcommit: ee0ea65de52b38e5976d6eb15516b0b240fa40f9
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 10/14/2019
-  ms.locfileid: "72307637"
+  ms.lasthandoff: 10/26/2019
+  ms.locfileid: "72959532"
 landingContent:
 - title: A Power BI fejlesztőknek bemutatása
   linkLists:
   - linkListType: overview
     links:
-    - text: Mire használhatják a fejlesztők a Power BI-t?
+    - text: Fejlesztői lehetőségek
       url: what-can-you-do.md
     - text: Vizualizációk a Power BI-ban
       url: ../power-bi-custom-visuals.md
-    - text: A beágyazás a Power BI szolgáltatással ismertetése
+    - text: Mi az a beágyazás?
       url: embedding.md
     - text: Mi az a Power BI API?
       url: overview-of-power-bi-rest-api.md
   - linkListType: reference
     links:
-    - text: Power BI Fejlesztői központ
+    - text: Fejlesztői központ
       url: https://powerbi.microsoft.com/developers/
-    - text: A Power BI fejlesztői mintái
+    - text: Fejlesztői minták
       url: https://github.com/Microsoft/PowerBI-Developer-Samples
-    - text: Power BI JavaScript wiki
+    - text: JavaScript wiki
       url: https://github.com/Microsoft/powerbi-javascript/wiki
-    - text: Power BI REST API-k
+    - text: REST API-k
       url: https://docs.microsoft.com/rest/api/power-bi/
     - text: Azure Resource Manager REST API-k
       url: https://docs.microsoft.com/rest/api/power-bi-embedded/
-- title: Power BI-vizualizációk
+- title: Vizualizációk
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Power BI-vizualizáció fejlesztése
+    - text: Vizualizáció fejlesztése
       url: visuals/custom-visual-develop-tutorial.md
   - linkListType: concept
     links:
-    - text: Power BI-vizualizációk – GYIK
+    - text: Vizualizációk – gyakori kérdések
       url: ../power-bi-custom-visuals-faq.md
-    - text: Útmutató Power BI-vizualizációkhoz
+    - text: Útmutató a vizualizációkhoz
       url: guidelines-powerbi-visuals.md
     - text: A vizualizációk speciális szerkesztési módja
       url: /advanced-edit-mode.md
@@ -79,7 +79,7 @@ landingContent:
       url: embed-multi-tenancy.md
     - text: Beágyazási GYIK
       url: embedded-faq.md
-    - text: Power BI-engedélyek
+    - text: Engedélyek
       url: power-bi-permissions.md
   - linkListType: how-to-guide
     links:
@@ -89,5 +89,5 @@ landingContent:
       url: create-an-azure-active-directory-tenant.md
     - text: Azure AD hozzáférési token beszerzése
       url: get-azuread-access-token.md
-    - text: Kérdések és válaszok a Power BI Embeddedben
+    - text: A Power BI Embedded Q&A funkciója
       url: qanda.md

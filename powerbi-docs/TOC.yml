@@ -1047,6 +1047,8 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=849021'
             - name: Megosztott adathalmazok elérése OData-csatornákként
               href: report-server/access-dataset-odata.md
+            - name: Adatforrások kapcsolati sztringjeinek módosítása a PowerShell-lel
+              href: report-server/connect-data-source-apis.md
             - name: Ütemezett frissítés beállítása
               href: report-server/configure-scheduled-refresh.md
             - name: Megjegyzés hozzáadása jelentéshez

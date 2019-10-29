@@ -1,4 +1,6 @@
-- name: Power BI-felügyelet
+- name: A Power BI rendszergazdai dokumentációja
+  href: index.yml
+  expanded: true
   items:
     - name: Áttekintés
       expanded: true
@@ -8,7 +10,7 @@
     - name: Fogalmak
       expanded: true
       items:
-        - name: Felügyeleti szerepkör az Office 365-ben
+        - name: Felügyeleti szerepkör a Microsoft 365-ben
           href: ../service-admin-role.md
         - name: Gyakori kérdések (GYIK)
           href: ../service-admin-faq.md
@@ -22,9 +24,9 @@
               href: ../service-admin-licensing-organization.md
             - name: A Power BI Pro megvásárlása
               href: ../service-admin-purchasing-power-bi-pro.md
-            - name: Regisztráció az Office 365 próbaverziójával
+            - name: Regisztráció a Microsoft 365 próbaverzióval
               href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-            - name: Power BI hozzáadása Office 365-partnerrel
+            - name: Power BI hozzáadása Microsoft 365 partnerrel
               href: ../service-admin-syndication-partner.md
         - name: A felügyeleti portál használata
           href: ../service-admin-portal.md
@@ -32,19 +34,19 @@
           href: ../service-admin-where-is-my-tenant-located.md
         - name: Bejelentkezett felhasználók keresése
           href: ../service-admin-access-usage.md
-        - name: A Power BI naplózása
+        - name: Naplózás
           href: ../service-admin-auditing.md
         - name: Szolgáltatásállapot nyomon követése
           href: ../service-admin-health.md
-        - name: A Power BI-fiók megszüntetése
+        - name: Fiók bezárása
           href: ../service-admin-closing-your-account.md
-        - name: A Power BI és az ExpressRoute
+        - name: ExpressRoute
           href: ../service-admin-power-bi-expressroute.md
         - name: Az Azure AD B2B használata
           href: ../service-admin-azure-ad-b2b.md
-        - name: Sorszintű biztonság a Power BI-vel
+        - name: Sorszintű biztonság
           href: ../service-admin-rls.md
-        - name: A Power BI archivált munkaterülete
+        - name: Archivált munkaterület
           href: ../service-admin-power-bi-archived-workspace.md
         - name: Mobilalkalmazások konfigurálása az Intune-nal
           href: ../service-admin-mobile-intune.md
