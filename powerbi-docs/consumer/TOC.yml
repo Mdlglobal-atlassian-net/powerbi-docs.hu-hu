@@ -48,6 +48,8 @@
               href: end-user-report-open.md
             - name: A jelentés megjelenítésének módosítása
               href: end-user-report-view.md
+            - name: Rendezési sorrend módosítása a vizualizációban
+              href: end-user-change-sort.md
             - name: Szűrők használata a jelentésekben
               href: end-user-report-filter.md
             - name: A jelentésvizualizációk keresztszűrési viselkedésének megismerése
