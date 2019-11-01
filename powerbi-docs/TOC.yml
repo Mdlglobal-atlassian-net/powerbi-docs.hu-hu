@@ -415,10 +415,20 @@
           href: desktop-latest-update-archive.md
         - name: A Power BI Desktop Mosoly küldése funkciójának adatvédelmi nyilatkozata
           href: desktop-send-smile-privacy-statement.md
-        - name: Kisegítő lehetőségek a Power BI-jelentésekben
-          href: desktop-accessibility.md
         - name: A Power BI Desktop bejelentkezési űrlapjának kezelése
           href: desktop-admin-sign-in-form.md
+        - name: Kisegítő lehetőségek
+          items:
+            - name: A Power BI kisegítő lehetőségeinek áttekintése
+              href: desktop-accessibility-overview.md
+            - name: Akadálymentesített jelentések létrehozása a Power BI-ban
+              href: desktop-accessibility-creating-reports.md
+            - name: Power BI-jelentések felhasználása kisegítő eszközökkel
+              href: desktop-accessibility-consuming-tools.md
+            - name: Power BI-jelentések létrehozása kisegítő eszközökkel
+              href: desktop-accessibility-creating-tools.md
+            - name: Akadálymentességi billentyűparancsok Power BI-jelentésekhez
+              href: desktop-accessibility-keyboard-shortcuts.md
 - name: Power BI szolgáltatásban
   items:
     - name: Áttekintés
