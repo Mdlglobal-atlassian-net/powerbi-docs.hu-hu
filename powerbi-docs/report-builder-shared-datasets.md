@@ -7,12 +7,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 1a46c1fb8e9f31bd5199fccfaecb16cece144b5a
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 0cf85d2757dd77de854a6640f400c6dd9c70379a
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72021025"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431505"
 ---
 # <a name="use-shared-datasets-in-power-bi-report-builder"></a>Megosztott adathalmazok használata a Power BI Jelentéskészítőben
 
@@ -99,7 +99,7 @@ Ha az a cél, hogy a Power BI-jelentés és a Jelentéskészítőbeli jelentés 
 
     ![Lekérdezés eredményei](media/report-builder-shared-datasets/power-bi-report-builder-query-results.png)
 
-1. Kattintson az **OK** gombra. 
+1. Kattintson az **OK** gombra.
 
     A lekérdezés az **Adathalmaz tulajdonságai** párbeszédpanel **Lekérdezés** ablakában látható.
 

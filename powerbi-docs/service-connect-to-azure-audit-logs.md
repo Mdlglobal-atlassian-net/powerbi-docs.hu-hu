@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: ee4b4616f264f0bd20e53d999b64301b2a7a693b
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 42b56cbad4c47b8cc8133a1f35511ea48ac24055
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70186049"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060614"
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Kapcsolódás Azure-auditnaplókhoz a Power BI-jal
 Az Azure-auditnaplók tartalomcsomagjával elemezheti és vizualizálhatja az auditnaplókban tárolt információt. A Power BI lekéri az adatait, előregyártott irányítópultot készít, és jelentéseket hoz létre az adatok alapján.
@@ -71,6 +71,6 @@ Az előfizetés-azonosító egy hosszú betű- és számsor, amely a fenti \#4. 
 Ha hitelesítési hibát tapasztal vagy frissítési próbálkozáskor érvénytelen hitelesítő adatok miatti hibát, akkor próbálja törölni az Azure-auditnaplók tartalomcsomag összes példányát, és próbáljon újrakapcsolódni.
 
 ## <a name="next-steps"></a>Következő lépések
-[Mi az a Power BI?](power-bi-overview.md)  
+[Mi az a Power BI?](fundamentals/power-bi-overview.md)  
 [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)  
 

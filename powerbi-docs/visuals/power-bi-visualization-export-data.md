@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 21fa3c5c3907e8c1aa4d40bd3e6332c77ff62b98
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: be85769d8ae2340843a4ebdeb5c88ffc2ca86920
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730089"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431094"
 ---
 # <a name="export-data-from-visualizations"></a>Adatok exportálása vizualizációkból
 
@@ -181,8 +181,6 @@ Ezek a korlátozások és szempontok a Power BI Desktopra és a Power BI szolgá
 - Ha a vizualizáció egynél több adattábla adatait használja, az adatmodellben pedig nincs kapcsolat ezen táblák között, a Power BI csak az első tábla adatait exportálja.
 
 - Az egyéni vizualizációk és az R-vizualizációk jelenleg nem támogatottak.
-
-- Az adatok exportálása nem érhető el a vállalaton kívüli olyan felhasználók számára, akik egy belső felhasználó által velük megosztott irányítópultot használnak.
 
 - A Power BI-ban egy mező (oszlop) átnevezéséhez kattintson duplán a mezőre, majd írja be az új nevet. A Power BI *aliasnak* tekinti az új nevet. Előfordulhat, hogy egy Power BI-jelentésben így ismétlődő mezőnevek fordulnak elő, de az Excel nem engedélyezi az ismétlődő elemek használatát. Így amikor a Power BI az Excelbe exportálja az adatokat a mezők aliasai visszaállnak az eredeti mező- (oszlop-) nevekre.  
 

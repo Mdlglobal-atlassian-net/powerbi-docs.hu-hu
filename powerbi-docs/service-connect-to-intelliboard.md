@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e912c47c58c96de8d2875b83a530468135e93ef2
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 06fc561d3fbe07cbf553be63c7b19de3ab11992e
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185926"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060943"
 ---
 # <a name="connect-to-intelliboard-with-power-bi"></a>Kapcsolódás az IntelliBoardhoz a Power BI-jal
 Az IntelliBoard jelentéskészítő szolgáltatások használatával biztosít egyszerűbb hozzáférést a Moodle tanuláskezelő rendszer adataihoz. A Power BI-hoz készült IntelliBoard-tartalomcsomag további elemzési lehetőségeket tartalmaz, köztük a tanfolyamok, a regisztrált felhasználók, az általános teljesítmény és az LMS-tevékenység metrikáit.
@@ -68,7 +68,7 @@ A tartalomcsomag a következő táblák adatait tartalmazza:
 A tartalomcsomag példányának létrehozásához egy olyan IntelliBoard-fiók szükséges, amely rendelkezik engedélyekkel a fenti táblázatokhoz.
 
 ## <a name="next-steps"></a>Következő lépések
-[Mi az a Power BI?](power-bi-overview.md)
+[Mi az a Power BI?](fundamentals/power-bi-overview.md)
 
 [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 

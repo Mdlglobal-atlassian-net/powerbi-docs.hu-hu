@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7e6d10a7a06c94c6bc00b06d38194dde461720be
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: ffacc95feef1557d5e6aaec2cca72821127d27d6
+ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71142008"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72716650"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Irányítópult-csempék a Power BI-ban
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 A csempék az adatokról készített, és egy *tervező* által az irányítópultra kitűzött pillanatfelvételek. A *tervezők* létrehozhatnak csempéket jelentésből, adatkészletből, irányítópultból, a Q&A kérdésmezőjéből, az Excelből, az SQL Server Reporting Servicesből (SSRS) és sok minden másból.  Ezen a képernyőfelvételen több irányítópultra tűzött csempe látható.
 
 ![Power BI-irányítópult](./media/end-user-tiles/power-bi-dash.png)

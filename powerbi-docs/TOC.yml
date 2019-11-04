@@ -395,6 +395,8 @@
               href: desktop-access-database-errors.md
             - name: A Power BI Desktop indításával kapcsolatos hibák elhárítása
               href: desktop-error-launching-desktop.md
+            - name: DirectQuery-modell hibaelhárítása a Power BI Desktopban
+              href: desktop-directquery-troubleshoot.md
     - name: Hivatkozás
       items:
         - name: Adattípusok a Power BI Desktopban
@@ -661,7 +663,7 @@
           items:
             - name: Új munkaterületek létrehozása
               href: service-create-the-new-workspaces.md
-            - name: Alkalmazás-munkaterületek létrehozása
+            - name: Munkaterületek létrehozása
               href: service-create-workspaces.md
             - name: Alkalmazások közzététele munkaterületekről
               href: service-create-distribute-apps.md
@@ -1175,6 +1177,8 @@
       href: guidance/dax-error-functions.md
     - name: Adatfolyamokhoz ajánlott eljárások
       href: service-dataflows-best-practices.md
+    - name: Útmutató a DirectQuery-modellhez a Power BI Desktopban
+      href: guidance/directquery-model-guidance.md
     - name: Tanulmányok
       items:
         - name: Tanulmányok áttekintése

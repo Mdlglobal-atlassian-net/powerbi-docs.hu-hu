@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1fc8decc70ade009a7c4236686cfe9cf72adb54d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 52ca0405c17339580a971162d13cb4ba67f05979
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61161707"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060505"
 ---
 # <a name="connect-to-sql-sentry-with-power-bi"></a>Csatlakozás az SQL Sentryhez a Power BI használatával
 Az SQL Sentry által gyűjtött teljesítményadatok egyszerűen elemezhetők a Power BI-jal. A Power BI begyűjti az adatait, majd összeállít egy alapértelmezett irányítópultot és az adatokon alapuló jelentéseket.
@@ -93,7 +93,7 @@ Ha egyes alkalmazások adatai nem jelennek meg a Power BI-ban, ellenőrizze, hog
 Ha nem Ön a <https://cloud.sqlsentry.com> oldallal szinkronizált SQL Sentry-adatbázis tulajdonosa, forduljon a rendszergazdához, és bizonyosodjon meg róla, hogy jogosult megtekinteni a gyűjtött adatokat.
 
 ## <a name="next-steps"></a>Következő lépések
-[Mi az a Power BI?](power-bi-overview.md)
+[Mi az a Power BI?](fundamentals/power-bi-overview.md)
 
 [Power BI – Adatok lekérése](service-get-data.md)
 

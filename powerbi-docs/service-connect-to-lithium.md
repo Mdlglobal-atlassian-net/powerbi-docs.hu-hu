@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c2f6564c83c7234b626686a6fe4c76f65b354e58
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 9a02c642d0b5d766b22b3b8c3853da2d4d773cbd
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185514"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060556"
 ---
 # <a name="connect-to-lithium-with-power-bi"></a>Kapcsolódás a Power BI-ból a Lithiumhoz
 
@@ -61,7 +61,7 @@ Kapcsolódjon a Power BI-hoz készült [Lithium-tartalomcsomaghoz](https://app.p
 A Lithium-tartalomcsomaghoz 15.9-es vagy újabb verziójú Lithium-közösség szükséges. A verzió megerősítéséhez, kérjük, egyeztessen Lithium-rendszergazdájával.
 
 ## <a name="next-steps"></a>Következő lépések
-[Mi az a Power BI?](power-bi-overview.md)
+[Mi az a Power BI?](fundamentals/power-bi-overview.md)
 
 [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 

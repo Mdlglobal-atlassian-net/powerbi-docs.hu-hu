@@ -71,6 +71,8 @@
               href: visuals/landing-page.md
             - name: Indítási URL-cím
               href: visuals/launch-url.md
+            - name: Helyi tárolási API
+              href: visuals/local-storage.md
             - name: Események renderelése
               href: visuals/event-service.md
             - name: Rendezés

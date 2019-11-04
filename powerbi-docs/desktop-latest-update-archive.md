@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b43408ef91e79d9489480d795329f2e80d0bb1be
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 24ff0748a57df5b76d8a559781cf9326764450e3
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307730"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429726"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>A Power BI Desktop korábbi havi frissítései
 
@@ -107,8 +107,8 @@ Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verz
 
 A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
 
-* [A Power BI Desktop 2019. szeptemberi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-09.msi)
-* [A Power BI Desktop 2019. szeptemberi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-09_x64.msi)
+* [A Power BI Desktop 2019. szeptemberi verziója – 32 bites](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-09.exe)
+* [A Power BI Desktop 2019. szeptemberi verziója – 64 bites](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-09_x64.exe)
 
 
 ## <a name="august-2019-update-2725556801"></a>2019. augusztusi frissítés (2.72.5556.801)
@@ -767,7 +767,7 @@ A **Power BI Desktop** októberi újdonságai közé az alábbi frissítések ta
 ### <a name="reporting"></a>Jelentéskészítés
 
 * Keresés a szűrőkártyák között  [[videó]](https://youtu.be/cT3L2VzgBRU?t=56)  [[cikk]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23search) 
-* Javított kisegítő lehetőségek a létrehozási feladatokhoz [[videó]](https://youtu.be/cT3L2VzgBRU?t=118)  [[cikk]](desktop-accessibility.md#arranging-items-in-field-buckets)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23accessibility)
+* Javított kisegítő lehetőségek a létrehozási feladatokhoz [[videó]](https://youtu.be/cT3L2VzgBRU?t=118)  [[cikk]](desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23accessibility)
 * Az ArcGIS Map teljesítménnyel kapcsolatos fejlesztései [[videó]](https://youtu.be/cT3L2VzgBRU?t=333)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23esri)
 
 
@@ -980,7 +980,7 @@ A **Power BI Desktop** júniusi újdonságai közé az alábbi frissítések tar
 
 ### <a name="reporting"></a>Jelentéskészítés
 
-* Kontrasztos megjelenítés támogatása a jelentésekben [[videó]](https://youtu.be/4VpGtWSrssE?t=13s)  [[cikk]](desktop-accessibility.md#high-contrast-support-for-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast) 
+* Kontrasztos megjelenítés támogatása a jelentésekben [[videó]](https://youtu.be/4VpGtWSrssE?t=13s)  [[cikk]](desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast) 
 * Gyűrűdiagram sugarának vezérlője [[videó]](https://youtu.be/4VpGtWSrssE?t=6m1s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#donutRadius) 
 * Torta- és gyűrűdiagram adatcímke-elhelyezésének vezérlője [[videó]](https://youtu.be/4VpGtWSrssE?t=7m19s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#detailLabels) 
 * Adatfeliratok formázása elkülönülten minden mértéknél kombinált diagramban [[videó]](https://youtu.be/4VpGtWSrssE?t=9m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#comboLabels) 

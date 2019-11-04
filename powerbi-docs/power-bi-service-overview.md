@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: a4d8b094fe10b674d315b1982e1dc34148ba6d1d
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: b8a01839da68a276ff136d7068dafac0ce82f102
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70775740"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060849"
 ---
 # <a name="what-is-the-power-bi-service"></a>Mi az a Power BI szolgáltatás?
 A **Power BI** szoftveres szolgáltatások, alkalmazások és összekötők együttese, amelyek közösen segítenek az üzleti elemzési eredmények létrehozásában, megosztásában és hasznosításában, az Önt és üzletét leghatékonyabban szolgáló módon. Az olykor Power BI online néven is említett Microsoft Power BI *szolgáltatás* (app.powerbi.com) a Power BI SaaS (*szolgáltatott szoftver*) része. A Power BI szolgáltatásban az *irányítópultokkal* ujjait a cége ütőerén tarthatja. Az irányítópulton *csempék* találhatók, amelyeket kiválasztva *jelentéseket* nyithat meg a további vizsgálódásokhoz. Az irányítópultok és csempék *adathalmazokhoz* kapcsolódnak, hogy minden releváns adatát egy helyen tekinthesse meg. 
@@ -26,7 +26,7 @@ További segítségre van szüksége annak megértéséhez, hogy milyen elemekb�
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
 
-A Power BI többi fő összetevője a **Power BI Desktop** windowsos asztali alkalmazás, valamint a Windows, iOS és Android rendszerű eszközökre készült Power BI **mobilalkalmazások**. Ezt a három elemet, &mdash;a Power BI Desktopot, a szolgáltatást és a mobilalkalmazást&mdash; munkatársaival együtt hasznosíthatja az üzleti elemzési eredmények létrehozására, megosztására és hasznosítására. Ennek áttekintését a [Mi a Power BI?](power-bi-overview.md) című cikkben olvashatja.
+A Power BI többi fő összetevője a **Power BI Desktop** windowsos asztali alkalmazás, valamint a Windows, iOS és Android rendszerű eszközökre készült Power BI **mobilalkalmazások**. Ezt a három elemet, &mdash;a Power BI Desktopot, a szolgáltatást és a mobilalkalmazást&mdash; munkatársaival együtt hasznosíthatja az üzleti elemzési eredmények létrehozására, megosztására és hasznosítására. Ennek áttekintését a [Mi a Power BI?](fundamentals/power-bi-overview.md) című cikkben olvashatja.
 
 ## <a name="creating-reports-in-the-service"></a>Jelentések létrehozása a szolgáltatásban
 Egy jellemző Power BI-munkafolyamat egy jelentés elkészítésével kezdődik a Power BI Desktopban, majd annak közzétételével folytatódik a Power BI szolgáltatásban.  

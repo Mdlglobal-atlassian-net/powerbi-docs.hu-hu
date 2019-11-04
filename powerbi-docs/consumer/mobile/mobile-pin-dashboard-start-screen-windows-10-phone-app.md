@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: b0a59e6a3d930bc8a0fa69507cae8e958c6175da
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 78bb51a7ef2d7bd7309c7bb93c27b7e9193b85bf
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61063129"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73059407"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Irányítópult rögzítése a Windows 10 kezdőképernyőjén a Power BI mobilalkalmazásból
 A Power BI-irányítópultok rögzíthetők a Windows kezdőképernyőjén a Windows 10 rendszerhez készült Power BI mobilalkalmazásból. Ezek *élő csempék lesznek*. Amikor a kezdőképernyőn a csempére koppint, az irányítópult megnyílik a Windows 10 rendszerhez készült Power BI mobilalkalmazásban.
@@ -34,6 +34,6 @@ A Power BI-irányítópultok rögzíthetők a Windows kezdőképernyőjén a Win
 ## <a name="next-steps"></a>További lépések
 * [A Windows 10-hez készült Power BI mobilalkalmazás letöltése](http://go.microsoft.com/fwlink/?LinkID=526478) a Windows Áruházból  
 * [A Windows 10-hez készült Power BI mobilalkalmazás használatának első lépései](mobile-windows-10-phone-app-get-started.md)  
-* [Mi az a Power BI?](../../power-bi-overview.md)
+* [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

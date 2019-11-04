@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 09/16/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: a80c549ab3aa61e377b657ad426d240a6a485fdd
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: f2d175896876bd6ea6f76b58b0eda0e5100dcfe1
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074252"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060899"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Az Azure SQL Database DirectQueryvel
 
@@ -55,7 +55,7 @@ A teljes kiszolgálónevet és adatbázisnevet az Azure Portalon találhatja meg
 ## <a name="next-steps"></a>Következő lépések
 
 * [A DirectQuery használata a Power BI Desktopban](desktop-use-directquery.md)  
-* [Mi az a Power BI?](power-bi-overview.md)  
+* [Mi az a Power BI?](fundamentals/power-bi-overview.md)  
 * [Adatbeolvasás a Power BI szolgáltatásban](service-get-data.md)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

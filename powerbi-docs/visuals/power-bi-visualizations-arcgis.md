@@ -3,19 +3,19 @@ title: Az Önnel megosztott ArcGIS-térképek használata
 description: ArcGIS-térképek használata olvasási nézetben Power BI-jelentésfelhasználóként
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: willt
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/10/2019
 ms.author: mihart
-ms.openlocfilehash: 49eb11698d05ee8877f78b6b3d4cbbc6ef403e75
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 7fef2c96afadad6fe39d731038f74249a4ccbf6d
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61137088"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432326"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>ArcGIS-térképek használata a Power BI-ban
 Ez a témakör az ArcGIS-térképet a Power BI szolgáltatás, a Desktop alkalmazás vagy a mobilalkalmazás felületén *használó* felhasználó szemszögéből van megírva. Ha egy ArcGIS-térképet a létrehozója megoszt Önnel, számos különféle módon használhatja azt.  Az ArcGIS-térképek létrehozásával kapcsolatos információkért lásd: [Az esri ArcGIS-térképeinek oktatóanyaga](../visuals/power-bi-visualization-arcgis.md).

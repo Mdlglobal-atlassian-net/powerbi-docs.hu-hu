@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: e02d50a7990eb90405d6a864fe294fee8e946e10
-ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
+ms.openlocfilehash: 851a87e22174be6084ea5cf0c0c9b1e0c89464ef
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70936267"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060883"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -237,7 +237,7 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 
 - [A Microsoft Data Insights Summit 2017-es rendezvényének felvételről megtekinthető előadásai](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
 
-- [Mi az a Power BI?](power-bi-overview.md)
+- [Mi az a Power BI?](fundamentals/power-bi-overview.md)
 
 - Kövessen minket [@MSPowerBI a Twitteren](https://twitter.com/mspowerbi)
 
