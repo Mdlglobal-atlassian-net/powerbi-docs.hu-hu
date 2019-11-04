@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a05d78cfb0c1e34f0ec263f5455982cd4064905b
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: c9b844d153cab35938f5070ce4950c57f7964771
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185821"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060544"
 ---
 # <a name="connect-to-sendgrid-with-power-bi"></a>Csatlakozás a SendGridhez a Power BI segítségével
 A Power BI SendGridhez készült tartalomcsomagja elemzések és statisztikák kinyerését teszi lehetővé a SendGrid-fiókjából. A SendGrid-tartalomcsomag használatával vizualizálni tudja SendGrid-statisztikáit egy irányítópulton.
@@ -58,7 +58,7 @@ A SendGrid-irányítópulton a következő metrikák érhetők el:
 * Levelezési statisztika eszköz, ügyfél, böngésző szerint
 
 ## <a name="next-steps"></a>Következő lépések
-[Mi az a Power BI?](power-bi-overview.md)
+[Mi az a Power BI?](fundamentals/power-bi-overview.md)
 
 [Adatok lekérése](service-get-data.md)
 

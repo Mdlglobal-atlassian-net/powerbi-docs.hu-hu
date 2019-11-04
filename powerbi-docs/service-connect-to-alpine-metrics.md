@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 497f3e76275f957599e80eadfd92b9073fca2ebb
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 97fb91018acb2123783f99cc4234cdcdf7f09975
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185572"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060630"
 ---
 # <a name="connect-to-alpine-metrics-sales-predictions-with-power-bi"></a>Kapcsolódás a Power BI-ból az Alpine Metrics Sales Predictionshöz
 Az Alpine Metrics a legkorszerűbb prediktív értékesítésifolyamat-optimalizálási szolgáltatást biztosítja a felhőben és igény szerint, kis és nagy értékesítési vállalatok számára. A Power BI-hoz készült Alpine Metrics Sales Predictions-tartalomcsomag mélyebb elemzési lehetőségeket biztosít az üzlete jövőjével kapcsolatban, és egyebek között olyan metrikákat tartalmaz, mint a lehetséges és az előrejelzett eladások és kockázatok. 
@@ -68,7 +68,7 @@ A tartalomcsomag a következő táblázatok adatait tartalmazza:
 A tartalomcsomag példányának létrehozásához egy olyan Alpine Metrics-fiók szükséges, amely rendelkezik engedélyekkel a fenti táblázatokhoz.
 
 ## <a name="next-steps"></a>Következő lépések
-[Mi az a Power BI?](power-bi-overview.md)
+[Mi az a Power BI?](fundamentals/power-bi-overview.md)
 
 [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 

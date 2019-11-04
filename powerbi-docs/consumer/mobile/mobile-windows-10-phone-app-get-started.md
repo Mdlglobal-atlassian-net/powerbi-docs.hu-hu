@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: 0a60fe526e83e5220e9b310097c8ba37682a396e
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 3aff2b6a939a53a6246ed69ac5bd76dfe4f0dfe4
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "68995216"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73059706"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Windows 10-hez készült Power BI mobilalkalmazás – első lépések
 A Windows 10-hez készült Power BI alkalmazással táblagépen és mobilon is használhatja a Power BI-t. Naprakész, érintéses használatra optimalizált mobil hozzáférést kaphat a vállalati információkhoz. Bárhol megtekintheti és használhatja a vállalati irányítópultjait – közvetlenül a [Windows kezdőképernyőjéről](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -121,6 +121,6 @@ A Windows 10-eszközökhöz készült Power BI alkalmazásban többek között a
 
 ## <a name="next-steps"></a>További lépések
 * [A Power BI alkalmazás letöltése](http://go.microsoft.com/fwlink/?LinkID=526478) a Windows Áruházból  
-* [Mi az a Power BI?](../../power-bi-overview.md)
+* [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 
