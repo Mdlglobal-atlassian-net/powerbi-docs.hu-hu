@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 7500b5b5ff7f3eabde730b527c16fb6fe2570b89
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 0227072818b7c09463b47ba896c782ded1e7f248
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523526"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432419"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Power BI tartalom terjesztése külső vendég felhasználók számára Azure Active Directory B2B használatával
 
 **Összefoglalás:** Ez egy technikai tanulmány, amely ismerteti, hogyan terjeszthetők a tartalmak a szervezeten kívüli felhasználók számára a Azure Active Directory vállalatközi (Azure AD B2B) integrációja segítségével.
 
-**Írók** Lukasz Pawlowski, Kasper de Jonge
+**Írók:** Lukasz Pawlowski, Kasper de Jonge
 
-**Műszaki véleményezők:** Adam Wilson, Sheng Liu, Qian Liang, Szergej Gundorov, Jacob Grimm, Adam Saxton, Maya Shenhav, Nimród Shalit, Elisabeth Olson
+**Technikai felülvizsgálók:** Adam Wilson, Sheng Liu, Qian Liang, Szergej Gundorov, Jacob Grimm, Adam Saxton, Maya Shenhav, Nimród Shalit, Elisabeth Olson
 
 > [!NOTE]
 > A tanulmányt a böngésző **Nyomtatás** > **Mentés PDF-ként** lehetőségével mentheti vagy kinyomtathatja.
@@ -97,7 +97,7 @@ Az alkalmazások olyan egyedi funkcióval is rendelkeznek, amely lehetővé tesz
 
 Ahogy a contoso továbbra is együttműködik alvállalkozókkal vagy szállítókkal, a külső mérnököknek szorosan kell dolgozniuk a contoso elemzői között. A Power BI számos együttműködési funkciót biztosít, amelyek segítségével a felhasználók kommunikálhatnak az általuk felhasználható tartalommal kapcsolatban. Az irányítópultok megjegyzései (és a hamarosan bejelentési megjegyzések) lehetővé teszik a felhasználók számára, hogy kérdéseket tegyenek fel az általuk megjelenő adatpontokról, és kommunikáljanak a jelentés szerzője
 
-A külső vendég felhasználók jelenleg észrevételeket küldhetnek, és elolvashatják a válaszokat. A belső felhasználóktól eltérően azonban a vendég felhasználók @mentioned nem kaphatnak olyan értesítéseket, amelyekről Megjegyzés érkezett. A vendég felhasználók nem használhatják az előfizetések funkciót Power BIon belül az íráskor. Egy közelgő kiadásban ezek a korlátozások fel lesznek emelve, és a vendég felhasználó e-mailben kap egy megjegyzést @mentions , vagy ha az előfizetést az e-mail-címre küldi, amely a Power bi tartalmára mutató hivatkozást tartalmaz.
+A külső vendég felhasználók jelenleg észrevételeket küldhetnek, és elolvashatják a válaszokat. A belső felhasználóktól eltérően azonban a vendég felhasználók nem @mentioned, és nem kapják meg az értesítéseket, amelyekhez Megjegyzés érkezett. A vendég felhasználók nem használhatják az előfizetések funkciót Power BIon belül az íráskor. Egy közelgő kiadásban ezek a korlátozások fel lesznek emelve, és a vendég felhasználó e-mailt kap, ha egy Megjegyzés @mentions őket, vagy ha egy előfizetést az e-mail-címre küld, amely a Power BI tartalmára mutató hivatkozást tartalmaz.
 
 ### <a name="access-content-in-the-power-bi-mobile-apps"></a>Tartalom elérése a Power BI Mobile apps szolgáltatásban
 
@@ -120,7 +120,7 @@ Ha Power BI összes felhasználója a szervezeten belül van, nincs szükség az
 
 Az alábbi jellemzően olyan szervezeti struktúrákat észleltek, amelyek kiválóan alkalmasak az Azure AD B2B stílusú, többszervezetes együttműködésre Power BIban. Az Azure AD B2B a legtöbb esetben jól működik, de bizonyos helyzetekben a dokumentum végén tárgyalt általános alternatív megközelítéseket érdemes figyelembe venni.
 
-### <a name="case-1-direct-collaboration-between-organizations"></a>1\. eset: Közvetlen együttműködés a szervezetek között
+### <a name="case-1-direct-collaboration-between-organizations"></a>1\. eset: a szervezetek közötti közvetlen együttműködés
 
 A contoso a szolgáltatóval való kapcsolata egy példa a szervezetek közötti közvetlen együttműködésre. Mivel a contoso és a szállítója viszonylag kevés felhasználóhoz férhet hozzá a fűtőtest megbízhatósági adataihoz, az Azure AD B2B-alapú külső megosztás használata ideális megoldás. Könnyen használható és egyszerűen kezelhető. Ez az általános példa a tanácsadási szolgáltatásokban, ahol a tanácsadónak szüksége lehet a szervezet tartalmának összeállítására.
 
@@ -129,7 +129,7 @@ A contoso a szolgáltatóval való kapcsolata egy példa a szervezetek közötti
 
 Ez a megosztás általában az ad hoc használatával történik az elemek megosztásakor. Mivel azonban a csapatok egyre mélyebben növekednek vagy bővülnek, az egyes elemek megosztásának megközelítése az előnyben részesített módszer lesz a felügyeleti terhelés csökkentése érdekében. Emellett az Power BI alkalmazások alkalmi vagy tervezett megosztása, a tartalomhoz való feliratkozás és a tartalmakra való feliratkozás a különböző szervezetek között, a mobil alkalmazásokban elérhető tartalmakhoz való hozzáférés, valamint a Power BI tartalmak szervezeten belüli szerkesztése és kezelése is. Fontos, hogy ha mindkét szervezet felhasználója rendelkezik Power BI Pro licenccel a saját szervezetében, használhatja ezeket a Pro-licenceket egymás Power BI környezetében. Ez előnyös licencelést biztosít, mivel a meghívó szervezetnek nem kell fizetnie a külső felhasználók számára Power BI Pro licencért. Ezt a jelen dokumentum későbbi, a licencelési szakaszban részletesebben tárgyaljuk.
 
-### <a name="case-2-parent-and-its-subsidiaries-or-affiliates"></a>2\. eset: Szülő és leányvállalatai vagy társvállalatai
+### <a name="case-2-parent-and-its-subsidiaries-or-affiliates"></a>2\. eset: szülő és annak leányvállalatai vagy társvállalatai
 
 Bizonyos szervezeti struktúrák összetettebbek, többek között a részben vagy teljes tulajdonban lévő leányvállalatok, a kapcsolt vállalatok vagy a felügyelt szolgáltatói kapcsolatok. Ezek a szervezetek olyan fölérendelt szervezettel rendelkeznek, mint például a Holding Company, de az alapul szolgáló szervezetek félig autonóm módon működnek, esetenként különböző regionális követelmények szerint. Ennek eredményeként minden szervezet rendelkezik saját Azure AD-környezettel és külön Power BI Bérlővel.
 
@@ -173,7 +173,7 @@ A második módszer [Azure SQL Databaset](https://azure.microsoft.com/services/s
 
 A kifinomultabb megközelítések is lehetségesek, de a fentiek messze a leggyakoribbak.
 
-### <a name="case-3-shared-environment-across-partners"></a>3\. eset: Megosztott környezet partnerek között
+### <a name="case-3-shared-environment-across-partners"></a>3\. eset: megosztott környezet partnerek között
 
 A contoso a versenytársakkal közösen építheti össze az autót egy megosztott szerelvényben, de a járművet a különböző márkák vagy különböző régiókban is eloszthatja. Ehhez széleskörű együttműködésre és az adatok, az intelligencia és az elemzések szervezeten belüli közös tulajdonlására van szükség. Ez a struktúra gyakori a tanácsadói szolgáltatások iparágában is, ahol a tanácsadók csapata projekt-alapú elemzéseket végezhet az ügyfelek számára.
 
@@ -195,18 +195,18 @@ A folyamat a következő:
 2. Ez a felhasználó ezután létrehozza a Power BI bérlőt, és meghívja a contoso és a partner szervezet számára szükséges felhasználókat. A felhasználó az olyan megosztott adategységeket is létrehozza, mint a Azure Analysis Services. A contoso és a partner felhasználói hozzáférhetnek a megosztott szervezet Power BI vendég felhasználóként. Ha a tartalom szerkesztésével és kezelésével Power BI a külső felhasználók használhatják a Power BI kezdőlapot, munkaterületeket használhatnak, feltölthetnek vagy szerkeszthetnek tartalmakat és jelentéseket oszthatnak meg. Az összes megosztott eszközt általában a megosztott szervezet tárolja és éri el.
 3. Attól függően, hogy a felek hogyan fogadják el az együttműködést, minden szervezet számára lehetséges, hogy a megosztott adattárház-eszközök használatával saját tulajdonú adataikat és elemzéseket alakítanak ki. A belső Power BI bérlőik használatával terjeszthetik a saját belső felhasználói számára.
 
-### <a name="case-4-distribution-to-hundreds-or-thousands-of-external-partners"></a>4\. eset: Több száz vagy több ezer külső partnernek való terjesztés
+### <a name="case-4-distribution-to-hundreds-or-thousands-of-external-partners"></a>4\. eset: elosztás több száz vagy több ezer külső partner számára
 
 Míg a contoso létrehozta a fűtőtest megbízhatósági jelentését az egyik szolgáltatóhoz, a contoso már szabványosított jelentéseket kíván létrehozni több száz szállító számára. Ez lehetővé teszi a contoso számára, hogy az összes szállító számára elérhetővé tegye a javításokat vagy a gyártási hibák javításához szükséges elemzéseket.
 
 ![Terjesztés számos partner számára](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_10.png)
 
 
-Ha egy szervezetnek szabványosított adatmennyiséget és bepillantást kell terjesztenie számos külső felhasználóra/szervezetre, akkor a Power BI alkalmazások alkalmi vagy tervezett megosztását használhatja a BI-portál gyors és kiterjedt fejlesztési költségek nélküli létrehozásához. A portál Power BI alkalmazással történő kiépítésének folyamata az esettanulmányban szerepel: BI-portál létrehozása Power BI + Azure AD B2B – lépésenkénti útmutató a jelen dokumentum későbbi részében.
+Ha egy szervezetnek szabványosított adatmennyiséget és bepillantást kell terjesztenie számos külső felhasználóra/szervezetre, akkor a Power BI alkalmazások alkalmi vagy tervezett megosztását használhatja a BI-portál gyors és kiterjedt fejlesztési költségek nélküli létrehozásához. A portál Power BI alkalmazással történő összeállításának folyamata a következő esettanulmányban található: BI-portál létrehozása Power BI + Azure AD B2B – lépésenkénti útmutató a jelen dokumentum későbbi részében.
 
 Ebben az esetben gyakori változata az, amikor egy szervezet megpróbálja megosztani az eredményeket a fogyasztókkal, különösen akkor, ha az Azure B2C-t a Power BI segítségével szeretné használni. Power BI nem támogatja natív módon az Azure B2C-t. Ha ebben az esetben a beállításokat értékeli, érdemes lehet a 2. alternatív megoldás használatát használni a jelen dokumentum későbbi részében, a közös alternatív megközelítésekben.
 
-## <a name="case-study-building-a-bi-portal-using-power-bi--azure-ad-b2b--step-by-step-instructions"></a>Esettanulmány: BI-portál létrehozása a Power BI + Azure AD B2B – lépésenkénti útmutató segítségével
+## <a name="case-study-building-a-bi-portal-using-power-bi--azure-ad-b2b--step-by-step-instructions"></a>Esettanulmány: BI-portál létrehozása Power BI + Azure AD B2B-vel – lépésenkénti útmutató
 
 Power BI az Azure AD B2B-vel való integrációja zökkenőmentes, zavartalan hozzáférést biztosít a vendég felhasználóknak a BI-portálhoz való biztonságos hozzáférés biztosításához. A contoso a következő három lépéssel állítható be:
 
@@ -217,9 +217,9 @@ Power BI az Azure AD B2B-vel való integrációja zökkenőmentes, zavartalan ho
 
     A contoso első feladata a BI-portál létrehozása Power BIban. A contoso BI-portál olyan, szándékosan készített irányítópultokat és jelentéseket tartalmaz, amelyek számos belső és vendég számára elérhetővé válnak. Ennek a Power BI az ajánlott módja, ha Power BI alkalmazást hoz létre. További információ a [Power bi alkalmazásokról](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/).
 
-- A contoso BI csapata létrehoz egy alkalmazás-munkaterületet Power BI
+- A contoso BI csapata létrehoz egy munkaterületet Power BI
 
-    ![Alkalmazás-munkaterület](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
+    ![Munkaterület](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
     
 
 - Más szerzők hozzáadása a munkaterülethez
@@ -232,7 +232,7 @@ Power BI az Azure AD B2B-vel való integrációja zökkenőmentes, zavartalan ho
     ![Tartalom létrehozása a munkaterületen belül](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_14.png)
 
 
-    Most, hogy létrehozta a tartalmat egy alkalmazás-munkaterületen, a contoso készen áll arra, hogy meghívja a vendég felhasználókat a partner szervezeteknél a tartalom felhasználásához.
+    Most, hogy a tartalom egy munkaterületen lett létrehozva, a contoso készen áll arra, hogy meghívja a partner szervezeteinek vendég felhasználókat a tartalom felhasználásához.
 
 2. Vendégfelhasználók meghívása
 
@@ -307,7 +307,7 @@ Power BI az Azure AD B2B-vel való integrációja zökkenőmentes, zavartalan ho
 
     A vendég felhasználók ezt követően az e-mailben szereplő hivatkozásra kattintva vagy a hivatkozás könyvjelzővel érhetik el a contoso alkalmazást. A contoso azt is megkönnyíti a vendég felhasználók számára, hogy hozzáadja ezt a hivatkozást a meglévő extranetes portálra, amelyet a vendég felhasználó már használ.
 
-4. További lépések
+4. Következő lépések
 
     A contoso a Power BI alkalmazás és az Azure AD B2B használatával gyorsan létrehozhat egy BI-portált a beszállítók számára, kód nélküli módon. Ez nagymértékben leegyszerűsíti a szabványosított elemzések terjesztését az összes szükséges szolgáltatóhoz.
 
@@ -315,11 +315,11 @@ Power BI az Azure AD B2B-vel való integrációja zökkenőmentes, zavartalan ho
 
     Az egyes jelentéseket és irányítópultokat gyakran be kell ágyazni egy meglévő portálra. Ez a példában látható számos módszer újrafelhasználását is lehetővé teszi. Ezekben az esetekben azonban egyszerűbb lehet jelentések vagy irányítópultok beágyazása közvetlenül egy munkaterületről. A biztonsági engedély meghívásához és a felhasználók megköveteléséhez való hozzárendeléséhez szükséges folyamat változatlan marad.
 
-## <a name="under-the-hood-how-is-lucy-from-supplier1-able-to-access-power-bi-content-from-contosos-tenant"></a>A motorháztető alatt: Hogyan tud hozzáférni a Supplier1 Lucy-ról a contoso bérlője Power BI tartalmához?
+## <a name="under-the-hood-how-is-lucy-from-supplier1-able-to-access-power-bi-content-from-contosos-tenant"></a>A motorháztető alatt: hogyan tud hozzáférni a Supplier1 a Power BI-tartalmakhoz a contoso bérlője felől?
 
 Most, hogy láttuk, hogy a contoso hogyan tudja zökkenőmentesen terjeszteni Power BI tartalmat a partnerszervezetek vendégei számára, tekintsük át, hogyan működik ez a motorháztető alatt.
 
-Amikor a contoso [lucy@supplier1.com](mailto:lucy@supplier1.com) meghívott a címtárára, az Azure ad létrehoz [Lucy@supplier1.com](mailto:Lucy@supplier1.com) egy hivatkozást a contoso Azure ad-bérlő között. Ez a hivatkozás lehetővé teszi, hogy Lucy@supplier1.com az Azure ad tudja, hogy hozzáférhessen a contoso-bérlő tartalmainak eléréséhez.
+Amikor a contoso meghívott [lucy@supplier1.com](mailto:lucy@supplier1.com) a könyvtárába, az Azure ad létrehoz egy hivatkozást a [Lucy@supplier1.com](mailto:Lucy@supplier1.com) és a contoso Azure ad bérlője között. Ez a hivatkozás lehetővé teszi, hogy az Azure AD tudja, hogy Lucy@supplier1.com hozzáférhet a contoso-bérlő tartalmához.
 
 Amikor a Lucy megpróbál hozzáférni a contoso Power BI alkalmazásához, az Azure AD ellenőrzi, hogy a Lucy hozzáférhet-e a contoso-bérlőhöz, majd Power BI egy tokent, amely azt jelzi, hogy a Lucy hitelesítve van a contoso-bérlő tartalmának eléréséhez. Power BI ezt a tokent használja az engedélyezéshez, és győződjön meg arról, hogy a Lucy hozzáfér a contoso Power BI alkalmazásához.
 
@@ -337,9 +337,9 @@ Fontos tisztában lenni azzal, hogy az Azure AD-fiókot a külső fél Azure AD-
 A contoso három módszer egyikét választhatja a beszállítók és a partnerszervezetek számára, hogy hozzáférjenek Power BI tartalmakhoz.
 
 > [!NOTE]
-> _Az Azure AD B2B's ingyenes szintje elegendő a Power BI Azure AD B2B-vel való használatához. Bizonyos speciális Azure AD B2B-funkciók, például a dinamikus csoportok további licencelést igényelnek. További információkért tekintse meg az Azure AD B2B dokumentációját:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
+> _Az Azure ad B2B's ingyenes szintje elegendő a Power bi Azure ad B2B-vel való használatához. Bizonyos speciális Azure AD B2B-funkciók, például a dinamikus csoportok további licencelést igényelnek. További információkért tekintse meg az Azure ad B2B dokumentációját:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
 
-### <a name="approach-1-contoso-uses-power-bi-premium"></a>1\. módszer: A contoso Power BI Premiumt használ
+### <a name="approach-1-contoso-uses-power-bi-premium"></a>1\. módszer: a contoso a Power BI Premiumt használja
 
 Ezzel a módszerrel a contoso megvásárolja Power BI Premium kapacitását, és hozzárendeli a BI-portál tartalmát ehhez a kapacitáshoz. Ez lehetővé teszi, hogy a partner szervezetek vendégei a contoso Power BI alkalmazásához Power BI licenc nélkül férhessenek hozzá.
 
@@ -350,22 +350,22 @@ A contoso más Power BI prémium szintű képességeket is igénybe vehet az alk
 ![További funkciók](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_24.png)
 
 
-### <a name="approach-2-contoso-assigns-power-bi-pro-licenses-to-guest-users"></a>2\. módszer: A contoso Power BI Pro licenceket rendel a vendég felhasználóihoz
+### <a name="approach-2-contoso-assigns-power-bi-pro-licenses-to-guest-users"></a>2\. módszer: a contoso Power BI Pro licenceket rendel a vendég felhasználóihoz
 
 Ezzel a módszerrel a contoso Pro-licenceket oszt ki a partner szervezeteinek vendégei számára – ezt a contoso Microsoft 365 felügyeleti központból teheti meg. Ez lehetővé teszi, hogy a partner szervezetek vendégei hozzáférjenek a contoso Power BI alkalmazásához anélkül, hogy licencet kellene megvásárolniuk. Ez olyan külső felhasználókkal is megosztható, akiknek a szervezete még nem fogadta el Power BI.
 
 > [!NOTE]
-> _A contoso Pro-licence csak akkor érvényes a vendég felhasználóra, ha a contoso-bérlőn lévő tartalomhoz férnek hozzá. A Pro-licencek lehetővé teszik a hozzáférését olyan tartalmakhoz, amelyek nem Power BI Premium kapacitással rendelkeznek. A Pro licenccel rendelkező külső felhasználók azonban alapértelmezés szerint csak a fogyasztási élményre korlátozódnak. Ez a_ _dokumentum későbbi_ részében, a _külső felhasználók engedélyezése a tartalom szerkesztésére és kezelésére a Power bi_ szakaszban leírt módon módosítható.
+> A contoso Pro-licence csak akkor érvényes a vendég felhasználóra, ha a contoso-bérlőn lévő tartalomhoz férnek hozzá. A Pro-licencek lehetővé teszik a hozzáférését olyan tartalmakhoz, amelyek nem Power BI Premium kapacitással rendelkeznek. A Pro licenccel rendelkező külső felhasználók azonban alapértelmezés szerint csak a fogyasztási élményre korlátozódnak. Ez a dokumentum későbbi részében, a _külső felhasználók engedélyezése a tartalom szerkesztésére és kezelésére a Power bi_ című szakaszban ismertetett módszerrel módosítható.
 
-![Licencinformációk](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_25.png)
+![Licencelési információk](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_25.png)
 
 
-### <a name="approach-3-guest-users-bring-their-own-power-bi-pro-license"></a>3\. módszer: A vendég felhasználók saját Power BI Pro licenccel rendelkeznek
+### <a name="approach-3-guest-users-bring-their-own-power-bi-pro-license"></a>3\. megközelítés: a vendég felhasználói saját Power BI Pro licencet
 
 Ezzel a módszerrel az 1. szállító egy Power BI Pro-licencet rendel a Lucy-hoz. Ezután hozzáférhetnek a contoso Power BI alkalmazásához ezzel a licenccel. Mivel a Lucy a saját szervezetének saját céges licencét használja egy külső Power BI-környezethez való hozzáféréskor, ezt a módszert más néven a _saját licenc_ használata (BYOL) is nevezik. Ha mindkét szervezet Power BI használ, ez előnyös licencelést kínál a teljes elemzési megoldáshoz, és a licencek terhelését a külső felhasználók számára is csökkentheti.
 
 > [!NOTE]
-> _Az 1. szolgáltató által a Lucy számára megadott Pro-licenc minden olyan Power BI bérlőre vonatkozik, ahol a Lucy egy vendég felhasználó. A Pro-licencek lehetővé teszik a hozzáférését olyan tartalmakhoz, amelyek nem Power BI Premium kapacitással rendelkeznek. A Pro licenccel rendelkező külső felhasználók azonban alapértelmezés szerint csak a fogyasztási élményre korlátozódnak. Ez a_ _dokumentum későbbi_ részében, a _külső felhasználók engedélyezése a tartalom szerkesztésére és kezelésére a Power bi_ szakaszban leírt módon módosítható.
+> Az 1. szolgáltató által a Lucy számára megadott Pro-licenc minden olyan Power BI bérlőre vonatkozik, ahol a Lucy egy vendég felhasználó. A Pro-licencek lehetővé teszik a hozzáférését olyan tartalmakhoz, amelyek nem Power BI Premium kapacitással rendelkeznek. A Pro licenccel rendelkező külső felhasználók azonban alapértelmezés szerint csak a fogyasztási élményre korlátozódnak. Ez a dokumentum későbbi részében, a _külső felhasználók engedélyezése a tartalom szerkesztésére és kezelésére a Power bi_ szakaszban leírt módon módosítható.
 
 ![A Pro-licencre vonatkozó követelmények](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_26.png)
 
@@ -400,7 +400,7 @@ Ekkor megnyílik egy oldal, ahol a contoso BI csapata láthatja a két létrehoz
 
 ![Sorszintű biztonság](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_30.png)
 
-A példában a contoso egy olyan felhasználót ad hozzá egy partner szervezethez, amely e[adam@themeasuredproduct.com](mailto:adam@themeasuredproduct.com)-mail-címmel rendelkezik az Európa szerepkörhöz:
+A példában a contoso egy olyan felhasználót ad hozzá egy partneri szervezethez, amely a (z) "[adam@themeasuredproduct.com](mailto:adam@themeasuredproduct.com)" e-mail-címmel rendelkezik az Európa szerepkörhöz:
 
 ![Sor szintű biztonsági beállítások](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_31.png)
 
@@ -416,7 +416,7 @@ Most, amikor a felhasználó megnyitta a velük megosztott alkalmazást, csak az
 
 Egy másik érdekes téma, hogy megtudhatja, hogyan működik az Azure AD B2B a dinamikus sorok szintjének biztonsága (RLS).
 
-A dinamikus sorok szintjének biztonsága úgy működik, hogy a modellben lévő, a Power BIhoz csatlakozó személy felhasználóneve alapján szűri az adattípust. Ahelyett, hogy több szerepkört adna hozzá a felhasználói csoportokhoz, meg kell határoznia a modellben lévő felhasználókat. Itt részletesen ismertetjük a mintát. A Kasper de Jong részletesen leírja az [Power bi Desktop dinamikus biztonsági Cheat Sheet](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/)-ben és ebben a tanulmányban, a sor szintű biztonság összes [ízeit.](https://msdn.microsoft.com/library/jj127437.aspx)
+A dinamikus sorok szintjének biztonsága úgy működik, hogy a modellben lévő, a Power BIhoz csatlakozó személy felhasználóneve alapján szűri az adattípust. Ahelyett, hogy több szerepkört adna hozzá a felhasználói csoportokhoz, meg kell határoznia a modellben lévő felhasználókat. Itt részletesen ismertetjük a mintát. A Kasper de Jong részletesen leírja az [Power bi Desktop dinamikus biztonsági Cheat Sheet](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/)-ben [és ebben a](https://msdn.microsoft.com/library/jj127437.aspx) tanulmányban, a sor szintű biztonság összes ízeit.
 
 Lássunk egy kis példát – a contoso egy egyszerű jelentést készít az értékesítésekről csoportok szerint:
 
@@ -455,23 +455,23 @@ Amint láthatja, a dinamikus RLS a belső vagy a vendég felhasználóval is mű
 
 ## <a name="connecting-to-on-premises-data-sources"></a>Csatlakozás helyszíni adatforrásokhoz
 
-A Power BI lehetővé teszi a contoso számára, hogy olyan helyszíni adatforrásokat használjanak, mint például [SQL Server Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/) vagy [SQL Server](https://powerbi.microsoft.com/documentation/powerbi-gateway-kerberos-for-sso-pbi-to-on-premises-data/) közvetlenül a helyszíni adatátjárónak köszönhetően. [](https://powerbi.microsoft.com/documentation/powerbi-gateway-onprem/) Az adatforrásokhoz is be lehet jelentkezni ugyanazzal a hitelesítő adatokkal, mint a Power BI használatával.
+A Power BI lehetővé teszi a contoso számára, hogy olyan helyszíni adatforrásokat használjanak, mint például [SQL Server Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/) vagy [SQL Server](https://powerbi.microsoft.com/documentation/powerbi-gateway-kerberos-for-sso-pbi-to-on-premises-data/) közvetlenül a helyszíni [adatátjárónak](https://powerbi.microsoft.com/documentation/powerbi-gateway-onprem/)köszönhetően. Az adatforrásokhoz is be lehet jelentkezni ugyanazzal a hitelesítő adatokkal, mint a Power BI használatával.
 
 > [!NOTE]
 > Amikor átjárót telepít a Power BI bérlőhöz való csatlakozáshoz, a bérlőn belül létrehozott felhasználót kell használnia. A külső felhasználók nem telepíthetnek átjárót, és nem csatlakoztathatók a bérlőhöz. _
 
-A külső felhasználók esetében ez bonyolultabb lehet, mivel a külső felhasználók általában nem ismerik a helyszíni AD-t. A Power BI megkerülő megoldásként lehetővé teszi a contoso-rendszergazdák számára, hogy a külső felhasználóneveket a belső felhasználónevek szerint képezze le az [adatforrás kezelése – Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/)című cikkben leírtak szerint. Leképezheti [lucy@supplier1.com](mailto:lucy@supplier1.com) például a következőt [:\_Lucy\_supplier1 comEXT@contoso.com#](mailto:lucy_supplier1_com).
+A külső felhasználók esetében ez bonyolultabb lehet, mivel a külső felhasználók általában nem ismerik a helyszíni AD-t. A Power BI megkerülő megoldásként lehetővé teszi a contoso-rendszergazdák számára, hogy a külső felhasználóneveket a belső felhasználónevek szerint képezze le az [adatforrás kezelése – Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/)című cikkben leírtak szerint. Például a [lucy@supplier1.com](mailto:lucy@supplier1.com) a [lucy\_supplier1\_com #EXT@contoso.comhoz ](mailto:lucy_supplier1_com)képezhető le.
 
 ![Felhasználónevek leképezése](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_40.png)
 
-Ez a módszer akkor megfelelő, ha a contoso csak néhány felhasználóval rendelkezik, vagy ha a contoso az összes külső felhasználót egyetlen belső fiókhoz rendeli. Az összetettebb forgatókönyvek esetében, ahol minden felhasználónak saját hitelesítő adataira van szüksége, az adatforrások [kezelése – Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/)című témakörben leírtak szerint egy fejlettebb módszer, amely [Egyéni ad](https://technet.microsoft.com/library/cc961737.aspx) -attribútumokat használ a leképezés végrehajtásához. Ez lehetővé tenné, hogy a contoso rendszergazdája Definiáljon egy leképezést az Azure AD-ben lévő összes felhasználóhoz (a külső B2B-felhasználók is).  Ezek az attribútumok a parancsfájlok vagy a kód használatával állíthatók be az AD-objektummodell segítségével, így a contoso teljes mértékben automatizálhatja a leképezést a meghíváskor vagy ütemezett lépésszám esetén.
+Ez a módszer akkor megfelelő, ha a contoso csak néhány felhasználóval rendelkezik, vagy ha a contoso az összes külső felhasználót egyetlen belső fiókhoz rendeli. Az összetettebb forgatókönyvek esetében, ahol minden felhasználónak saját hitelesítő adataira van szüksége, az [adatforrások kezelése – Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/)című témakörben leírtak szerint egy fejlettebb módszer, amely [Egyéni ad-attribútumokat](https://technet.microsoft.com/library/cc961737.aspx) használ a leképezés végrehajtásához. Ez lehetővé tenné, hogy a contoso rendszergazdája Definiáljon egy leképezést az Azure AD-ben lévő összes felhasználóhoz (a külső B2B-felhasználók is).  Ezek az attribútumok a parancsfájlok vagy a kód használatával állíthatók be az AD-objektummodell segítségével, így a contoso teljes mértékben automatizálhatja a leképezést a meghíváskor vagy ütemezett lépésszám esetén.
 
 ## <a name="enabling-external-users-to-edit-and-manage-content-within-power-bi"></a>A külső felhasználók számára lehetővé teszi a tartalmak szerkesztését és kezelését Power BI belül
 
 A contoso lehetővé teszi, hogy a külső felhasználók a szervezeten belül járuljanak hozzá a tartalomhoz a Power BI tartalom szakaszának a szervezeten belüli szerkesztése és kezelése című részben leírtaknak megfelelően.
 
 > [!NOTE]
-> A szervezet Power BIján belüli tartalmak szerkesztéséhez és kezeléséhez a felhasználónak a saját munkaterületén kívül egy Power BI Pro licenccel kell rendelkeznie. A felhasználók a _jelen dokumentum The_ Licensing__section_ lefedett Pro-licenceket szerezhetnek be.
+> A szervezet Power BIján belüli tartalmak szerkesztéséhez és kezeléséhez a felhasználónak a saját munkaterületén kívül egy Power BI Pro licenccel kell rendelkeznie. A felhasználók a jelen dokumentum _licencek_ című szakaszában leírtak szerint igényelhetnek Pro-licenceket.
 
 A Power BI felügyeleti portál **lehetővé teszi a külső vendég felhasználók számára a tartalmak szerkesztését és kezelését a** bérlői beállításokban a szervezet beállításában. Alapértelmezés szerint a beállítás letiltva értékre van állítva, ami azt jelenti, hogy a külső felhasználók alapértelmezés szerint korlátozott olvasási élményt kapnak. A beállítás az Azure AD-ben vendégként beállított UserType rendelkező felhasználókra vonatkozik. Az alábbi táblázat az UserType és a beállítások konfigurálásának módját mutatja be a felhasználók viselkedése terén.
 
@@ -505,14 +505,14 @@ Azok a vendégek, akik engedélyezik a külső vendég felhasználók számára 
 
 - Közvetlen közzététel a Power BI Desktopból a Power BI szolgáltatásba
 - A vendégfelhasználók nem csatlakozhatnak a Power BI szolgáltatás szolgáltatói adatkészleteihez a Power BI Desktoppal
-- Office 365-csoportokhoz kötött klasszikus munkaterületek: A vendégfelhasználók nem hozhatnak létre ilyen munkaterületeket, és nem lehetnek ezek rendszergazdái. Csak tagok lehetnek.
+- Office 365-csoportokhoz kötött klasszikus munkaterületek: a vendég felhasználó nem hozhat létre, illetve nem lehet a munkaterületek rendszergazdái. Csak tagok lehetnek.
 - Az ad-hoc meghívások nem támogatottak a munkaterületek hozzáférési listáiban
 - A vendégfelhasználók számára nem támogatott a Power BI Publisher for Excel
 - A vendégfelhasználók nem telepíthetik a Power BI Gateway szolgáltatást, és nem csatlakoztathatják az Ön szervezetéhez
 - A vendégfelhasználók nem telepíthetnek alkalmazásokat, és nem tehetnek közzé tartalmakat a teljes szervezet számára
 - A vendégfelhasználók nem használhatnak, hozhatnak létre, frissíthetnek vagy telepíthetnek szervezeti tartalomcsomagokat
 - A vendégfelhasználók nem használhatják az Elemzés az Excelben funkciót
-- A vendég felhasználók nem @mentioned lehetnek megjegyzésekkel elláthatva (ez a funkció egy közelgő kiadásban lesz hozzáadva)
+- A vendég felhasználók nem @mentioned a megjegyzésekben (ez a funkció egy közelgő kiadásban lesz hozzáadva)
 - A vendég felhasználók nem használhatják az előfizetéseket (ez a funkció egy közelgő kiadásban lesz hozzáadva)
 - Azon vendégfelhasználóknak, akik ezt a funkciót veszik igénybe, munkahelyi vagy iskolai fiókkal kell rendelkezniük. A személyes fiókokat használó vendégek a bejelentkezési korlátozások miatt több korlátozást tapasztalnak.
 
@@ -545,7 +545,7 @@ Power BI rendszergazdák a Power BI felügyeleti portálon meglátogatva vezére
 
 Ezekről a házirendekről további információt a [Azure Active Directory B2B-együttműködésre vonatkozó meghívók delegálása](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-delegate-invitations)című cikk nyújt.
 
-A külső felhasználók összes Power BI műveletét a [naplózási portálon](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/)is naplózza.
+A külső felhasználók összes Power BI műveletét a [naplózási portálon is naplózza](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/).
 
 ### <a name="conditional-access-policies-for-guest-users"></a>Feltételes hozzáférési szabályzatok vendég felhasználók számára
 
@@ -555,7 +555,7 @@ A contoso feltételes hozzáférési szabályzatokat tud kikényszeríteni a con
 
 Habár az Azure AD B2B megkönnyíti az adatmegosztást és a jelentéseket a szervezetek között, számos más megközelítés is használatos, és bizonyos esetekben jobb lehet.
 
-### <a name="alternative-option-1-create-duplicate-identities-for-partner-users"></a>1\. alternatív lehetőség: Ismétlődő identitások létrehozása a partnerek felhasználói számára
+### <a name="alternative-option-1-create-duplicate-identities-for-partner-users"></a>1\. alternatív lehetőség: duplikált identitások létrehozása a partnerek felhasználói számára
 
 Ezzel a beállítással a contoso az alábbi ábrán látható módon manuálisan hozza létre az egyes partnerekhez tartozó, duplikált identitásokat a contoso-Bérlőben. Ezután Power BIon belül a contoso megoszthatja a megfelelő jelentéseket, irányítópultokat vagy alkalmazásokat a hozzárendelt identitásokkal.
 
@@ -575,7 +575,7 @@ Az alternatíva kiválasztásának okai:
 - Ha a felhasználó elhagyja a szervezetét, továbbra is hozzáférhetnek a contoso erőforrásaihoz, amíg a contoso rendszergazdája manuálisan nem törli a fiókját
 - A contoso rendszergazdáinak kezelniük kell a vendég identitását, beleértve a létrehozást, a jelszó alaphelyzetbe állítását stb.
 
-### <a name="alternative-option-2-create-a-custom-power-bi-embedded-application-using-custom-authentication"></a>2\. alternatív lehetőség: Egyéni Power BI Embedded-alkalmazás létrehozása egyéni hitelesítés használatával
+### <a name="alternative-option-2-create-a-custom-power-bi-embedded-application-using-custom-authentication"></a>2\. alternatív lehetőség: egyéni Power BI Embedded alkalmazás létrehozása egyéni hitelesítés használatával
 
 A contoso egy másik lehetősége, hogy saját egyéni beágyazott Power BI alkalmazást hozzon létre egyéni hitelesítéssel (["alkalmazás tulajdonosai adatkezeléssel"](https://docs.microsoft.com/power-bi/developer/embed-sample-for-customers)). Habár számos szervezet nem rendelkezik olyan idővel vagy erőforrásokkal, amelyekkel egyéni alkalmazást hozhat létre a külső partnereknek Power BI tartalom terjesztéséhez, néhány szervezet számára ez a legjobb megoldás, és komoly figyelmet érdemel.
 
@@ -613,7 +613,7 @@ Az alternatíva kiválasztásának okai:
 
 A végfelhasználónak mindig a beleegyező felhasználói élményre kell kattintania ahhoz, hogy hozzáférhessen a tartalomhoz.
 
-Ha sok vendég felhasználót szeretne meghívni, javasoljuk, hogy ezt az alapszintű Azure AD-rendszergazdákkal delegálja úgy, hogy [hozzáad egy felhasználót az erőforrás-szervezet vendég](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-add-guest-to-role)meghívójának szerepköréhez. Ez a felhasználó a partner szervezet más felhasználóit is meghívhatja a bejelentkezési felhasználói felület, a PowerShell-parancsfájlok vagy az API-k használatával. Ez csökkenti az adminisztrációs terheket az Azure AD-rendszergazdák számára, hogy meghívja a partner szervezet felhasználói számára a meghívást vagy az újbóli elküldéseket.
+Ha sok vendég felhasználót szeretne meghívni, javasoljuk, hogy ezt az alapszintű Azure AD-rendszergazdákkal delegálja úgy, hogy [hozzáad egy felhasználót az erőforrás-szervezet vendég meghívójának szerepköréhez](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-add-guest-to-role). Ez a felhasználó a partner szervezet más felhasználóit is meghívhatja a bejelentkezési felhasználói felület, a PowerShell-parancsfájlok vagy az API-k használatával. Ez csökkenti az adminisztrációs terheket az Azure AD-rendszergazdák számára, hogy meghívja a partner szervezet felhasználói számára a meghívást vagy az újbóli elküldéseket.
 
 **A contoso kényszerítheti a többtényezős hitelesítést a vendég felhasználók számára, ha partnerei nem rendelkeznek többtényezős hitelesítéssel?**
 
