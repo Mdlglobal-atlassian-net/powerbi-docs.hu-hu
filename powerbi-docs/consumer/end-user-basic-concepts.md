@@ -12,16 +12,18 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 2b9fd3fc971d2cf73aabb2033d3a64565333bc67
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 902bfe11ba3dfa4047ab5918de7081ae05fb9a09
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543691"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060344"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>A Power BI szolgáltatás alapfogalmai felhasználók számára
 
-Ez a cikk feltételezi, hogy már elolvasta [a Power BI áttekintését](../power-bi-overview.md), és azonosította magát [Power BI ***-felhasználóként***](end-user-consumer.md). A felhasználók Power BI-tartalmakat, például irányítópultokat és jelentéseket fogadnak a munkatársaktól. A felhasználók a Power BI szolgáltatást, a Power BI webhelyalapú verzióját használják.
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+Ez a cikk feltételezi, hogy már elolvasta [a Power BI áttekintését](../fundamentals/power-bi-overview.md), és azonosította magát [Power BI ***-felhasználóként***](end-user-consumer.md). A felhasználók Power BI-tartalmakat, például irányítópultokat és jelentéseket fogadnak a munkatársaktól. A felhasználók a Power BI szolgáltatást, a Power BI webhelyalapú verzióját használják.
 
 Minden bizonnyal találkozni fog a „Power BI Desktop”, vagy egyszerűen „Desktop” megnevezéssel. Ezt a különálló eszközt azok a *tervezők* használják, akik irányítópultokat és jelentéseket készítenek és osztanak meg Önnel. Fontos tudni, hogy más Power BI-eszközök is léteznek. Felhasználóként Ön csak a Power BI szolgáltatást fogja használni. Ennek a cikknek a tartalma kizárólag a Power BI szolgáltatásra vonatkozik.
 
