@@ -44,6 +44,14 @@
           href: ../service-admin-power-bi-expressroute.md
         - name: Az Azure AD B2B használata
           href: ../service-admin-azure-ad-b2b.md
+        - name: Adatvédelem
+          items:
+            - name: Az adatvédelem áttekintése
+              href: service-security-data-protection-overview.md
+            - name: Az adatok bizalmassági címkézésének engedélyezése
+              href: service-security-enable-data-sensitivity-labels.md
+            - name: A Microsoft Cloud App Security használata a Power BI-jal
+              href: service-security-using-microsoft-cloud-app-security-controls.md
         - name: Sorszintű biztonság
           href: ../service-admin-rls.md
         - name: Archivált munkaterület
