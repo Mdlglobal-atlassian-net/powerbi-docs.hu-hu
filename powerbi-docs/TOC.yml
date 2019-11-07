@@ -1109,6 +1109,8 @@
       items:
         - name: Kapacitástervezési tanulmány
           href: report-server/capacity-planning.md
+        - name: A PDF-megjelenítő bővítmény megfelelősége
+          href: report-server/rendering-extension-support.md
 - name: Átjárók
   items:
     - name: Áttekintés
