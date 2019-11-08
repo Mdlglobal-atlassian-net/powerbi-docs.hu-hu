@@ -3,19 +3,19 @@ title: Power BI Premium kapacitások üzembe helyezése és kezelése
 description: Ismerkedjen meg Power BI Premium lehetséges lehetőségeivel, és Ismerje meg, hogyan tervezhet, helyezhet üzembe, figyelheti és elháríthatja a méretezhető megoldásokat.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: eecbc43f26cebc12884ae6c5143a815f6e310ce5
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f9269b52b1721cd7c6801cd0337911159c0b2494
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432366"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73786346"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Power BI Premium kapacitások üzembe helyezése és kezelése
 
@@ -64,7 +64,7 @@ A következő Power BI tartalmat tárolja a munkaterületek:
 - Adathalmazok
 - Munkafüzetek
 - Jelentések
-- Irányítópultok
+- Dashboards
 
 #### <a name="dataflows"></a>Adatfolyamok
 
@@ -151,7 +151,7 @@ A két támogatott Jelentéstípusok a jelentések szerzői számára választha
 
 A jelentés típusától függetlenül, a rugalmas jelentések betöltésének és az adatfrissítéseknek (a szűrők vagy paraméterek változásakor) elengedhetetlen a megbízható és jól teljesítő felhasználói élmény megvalósítása.
 
-#### <a name="dashboards"></a>Irányítópultok
+#### <a name="dashboards"></a>Dashboards
 
 Power BI irányítópultok célja a figyelési tapasztalatok továbbítása, és fogalmilag nagyon különböznek a Power BI jelentésekből. Az irányítópultok úgy vannak kialakítva, hogy egyetlen ablaktáblán jelenjenek meg az értékek és az adatvizualizációk csempén való megjelenítéséhez. Az irányítópultok általában kevesebb interakciós tapasztalatot kínálnak, mint Power BI jelentésekhez, és egyes irányítópult-kialakítások nem várnak interakciót. Például egy felügyelet nélküli irányítópultot, amely egy nem érintőképernyős képernyőn jelenik meg egy kiszolgáló helyiségben. Egy másik jelentős különbség az, hogy az irányítópultok olyan csempéket is tartalmazhatnak, amelyek több adatkészletből származó adatokat is tartalmaznak, míg egy Power BI jelentés csak egyetlen adatkészleten alapulhat.
 
@@ -276,7 +276,7 @@ Emellett a Power BI Premium számos vállalati funkciót nyújt:
 - A adatfolyamok és az adatkészletek magasabb frissítési sebessége (akár 48-szor naponta)
 - Adatfolyamok és adatkészletek növekményes frissítése
 - Adatfolyam csatolt entitások és átalakítások párhuzamos végrehajtása
-- Többoldalas jelentések
+- Oldalakra osztott jelentések
 - Power BI jelentéskészítő kiszolgáló helyszíni jelentéskészítéshez
 - Tartalom beágyazása az alkalmazásokban az alkalmazás felhasználói (Péter) nevében
 
@@ -327,7 +327,7 @@ Az alábbi táblázat ismerteti az egyes prémium SKU-k erőforrásait és korl�
 
 | Kapacitás-csomópontok | Összes virtuális mag | Háttérrendszeri virtuális magok | Memória (GB) | Előtérrendszeri virtuális magok | DQ/LC (/s) | Párhuzamosan végrehajtható modellfrissítések |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0,5 | 3 | 0,5 | 3,75 | 1 |
+| EM1/A1 | 1 | 0.5 | 3 | 0.5 | 3,75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
@@ -407,7 +407,7 @@ A memória adatfolyamokhoz dinamikusan, lapszámozott jelentésekhez viszont sta
 
 |                     | EM3                      | P1                       | P2                      | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Többoldalas jelentések | N.A. | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% | Alapértelmezés szerint 20%; minimum 2,5% |
+| Oldalakra osztott jelentések | N.A. | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% | Alapértelmezés szerint 20%; minimum 2,5% |
 | Adatfolyamok | Alapértelmezés szerint 20%; minimum 8%  | Alapértelmezés szerint 20%; minimum 4%  | Alapértelmezés szerint 20%; minimum 2% | Alapértelmezés szerint 20%; minimum 1%  |
 | Mesterséges intelligencia | N.A. | Alapértelmezés szerint 20%; minimum 20%  | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5%  |
 | | | | | |

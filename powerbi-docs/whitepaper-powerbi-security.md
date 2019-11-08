@@ -3,19 +3,19 @@ title: A Power BI biztonsága – tanulmány
 description: A Power BI biztonsági architektúráját és implementációját vizsgáló és ismertető tanulmány
 author: davidiseminger
 ms.author: davidi
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 4cb2ae69044b156d5f8a4bd554f8386808fb6b9e
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 8cbb1c4b25cacae5cb025f85790be6a1657b0482
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430492"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73787748"
 ---
 # <a name="power-bi-security-whitepaper"></a>A Power BI biztonsága – tanulmány
 
@@ -34,13 +34,13 @@ ms.locfileid: "73430492"
 
 A **Power BI** a Microsoft egy online szoftverszolgáltatása (_SaaS_ vagy szolgáltatott szoftver), amellyel könnyen és gyorsan létrehozhat önkiszolgáló üzletiintelligencia-irányítópultokat, jelentéseket, adatkészleteket és vizualizációkat. A Power BI szolgáltatással számos különböző adatforráshoz csatlakozhat, egyesítheti és formálhatja a kapcsolatokból származó adatokat, valamint másokkal megosztható jelentéseket és irányítópultokat hozhat létre.
 
-A Power BI szolgáltatást a [Microsoft Online Services használati feltételei](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) és a [Microsoft nagyvállalati adatvédelmi nyilatkozata](http://www.microsoft.com/privacystatement/OnlineServices/Default.aspx) szabályozza. Az adatfeldolgozás helyéről tájékozódjon a Microsoft Online Services használati feltételei között található Adatfeldolgozási hely feltételei között. A Power BI megfelelőségi információival kapcsolatban az elsődleges forrás a [Microsoft Adatvédelmi központ](https://www.microsoft.com/trustcenter). A Power BI csapata keményen dolgozik azért, hogy az ügyfeleknek a legújabb innovációkat és termékeket nyújtsa. Power BI jelenleg az [Office 365 megfelelőségi keretrendszerének](http://go.microsoft.com/fwlink/p/?LinkID=618494)D. szintjében található.
+A Power BI szolgáltatást a [Microsoft Online Services használati feltételei](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) és a [Microsoft nagyvállalati adatvédelmi nyilatkozata](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx) szabályozza. Az adatfeldolgozás helyéről tájékozódjon a Microsoft Online Services használati feltételei között található Adatfeldolgozási hely feltételei között. A Power BI megfelelőségi információival kapcsolatban az elsődleges forrás a [Microsoft Adatvédelmi központ](https://www.microsoft.com/trustcenter). A Power BI csapata keményen dolgozik azért, hogy az ügyfeleknek a legújabb innovációkat és termékeket nyújtsa. Power BI jelenleg az [Office 365 megfelelőségi keretrendszerének](https://go.microsoft.com/fwlink/p/?LinkID=618494)D. szintjében található.
 
 Ez a cikk a Power BI biztonságát ismerteti. Ennek keretében bemutatja a Power BI-architektúrát, majd a felhasználói hitelesítést és az adatkapcsolatok létrehozását, végül pedig ismerteti, hogy a Power BI hogyan tárolja és mozgatja az adatokat a szolgáltatáson belül. Az utolsó szakasz biztonsággal kapcsolatos kérdéseket és válaszokat tartalmaz.
 
 ## <a name="power-bi-architecture"></a>A Power BI-architektúra
 
-A **Power BI** szolgáltatás az **Azure**-ra épül, amely a Microsoft [felhőalapú számítástechnikai platformja](http://azure.microsoft.com/overview/what-is-azure/). A Power BI-t jelenleg a világ számos adatközpontjában alkalmazzák – számos aktív példány érhető el az adatközpontok régióinak ügyfelei számára, valamint ugyanennyi passzív példány, amelyek az aktív példányok biztonsági másolatait képezik.
+A **Power BI** szolgáltatás az **Azure**-ra épül, amely a Microsoft [felhőalapú számítástechnikai platformja](https://azure.microsoft.com/overview/what-is-azure/). A Power BI-t jelenleg a világ számos adatközpontjában alkalmazzák – számos aktív példány érhető el az adatközpontok régióinak ügyfelei számára, valamint ugyanennyi passzív példány, amelyek az aktív példányok biztonsági másolatait képezik.
 
 Minden üzemelő Power BI-példány két fürtből áll – egy webes előtérrendszer (**WFE-** ) fürtből és egy **háttérbeli** fürtből. Ezeket a következő képen tekintheti meg, és a cikk további részének hátterét képezik. 
 
@@ -117,8 +117,8 @@ A Power BI bizonyos régiókban érhető el, attól függően, hogy hol vannak �
 
 A következő hivatkozásokra kattintva további információt kaphat az Azure adatközpontjairól.
 
-- [Azure-régiók](http://azure.microsoft.com/regions/) – információ az Azure globális jelenlétéről és helyszíneiről
-- [Azure-szolgáltatások régiók szerint](http://azure.microsoft.com/regions/#services) – az Azure a Microsofttól elérhető szolgáltatásainak (infrastruktúra-szolgáltatások és platformszolgáltatások egyaránt) teljes listája minden régióban.
+- [Azure-régiók](https://azure.microsoft.com/regions/) – információ az Azure globális jelenlétéről és helyszíneiről
+- [Azure-szolgáltatások régiók szerint](https://azure.microsoft.com/regions/#services) – az Azure a Microsofttól elérhető szolgáltatásainak (infrastruktúra-szolgáltatások és platformszolgáltatások egyaránt) teljes listája minden régióban.
 
 Jelenleg a Power BI szolgáltatás a [Microsoft adatvédelmi központban](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)leírtaknak megfelelően az adatközpontok által kiszolgált meghatározott régiókban érhető el. A következő hivatkozás a Power BI-adatközpontok térképét jeleníti meg. Az egeret egy régió fölé helyezve megtekintheti az ott található adatközpontokat:
 
@@ -126,7 +126,7 @@ Jelenleg a Power BI szolgáltatás a [Microsoft adatvédelmi központban](https:
 
 A Microsoft önálló jogi személyek számára is biztosít adatközpontokat. A Power BI szolgáltatás országos felhőkben való elérhetőségéről a [Power BI országos felhőkről](https://powerbi.microsoft.com/clouds/) szóló oldalán tájékozódhat.
 
-Adatai tárolási helyével és használatának módjáról a [Microsoft Adatvédelmi központban](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where) talál további információt. Az inaktív ügyféladatok elhelyezésével kapcsolatos kötelezettségvállalások az **Adatfeldolgozási feltételek** vagy az [Online Microsoft-szolgáltatások feltételei](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) között vannak megadva.
+Adatai tárolási helyével és használatának módjáról a [Microsoft Adatvédelmi központban](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where) talál további információt. Az inaktív ügyféladatok elhelyezésével kapcsolatos kötelezettségvállalások az **Adatfeldolgozási feltételek** vagy az [Online Microsoft-szolgáltatások feltételei](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) között vannak megadva.
 
 ## <a name="user-authentication"></a>Felhasználók hitelesítése
 
@@ -136,7 +136,7 @@ A Power BI szolgáltatásban a felhasználó hitelesítése a felhasználó bön
 
 A felhasználó Power BI szolgáltatásban történő hitelesítésnek műveletsora az alább ismertetett, ábrákkal illusztrált lépésekben zajlik.
 
-1. A felhasználó egy böngészőből kezdeményezi a Power BI szolgáltatással való kapcsolatot azzal, hogy a címsorba begépeli a Power BI címét (például https://app.powerbi.com)), vagy hogy a _Bejelentkezés_ lehetőséget választja a Power BI kezdőlapján (https://powerbi.microsoft.com)). A kapcsolat TLS 1.2 és HTTPS használatával lesz létrehozva, és a böngésző és a Power BI szolgáltatás közötti minden további kommunikáció HTTPS-t használ. A kérés az **Azure Traffic Manager** felé lesz továbbítva.
+1. A felhasználó egy böngészőből kezdeményezi a Power BI szolgáltatással való kapcsolatot azzal, hogy a címsorba begépeli a Power BI címét (például https://app.powerbi.com) ), vagy hogy a _Bejelentkezés_ lehetőséget választja a Power BI kezdőlapján (https://powerbi.microsoft.com) ). A kapcsolat TLS 1.2 és HTTPS használatával lesz létrehozva, és a böngésző és a Power BI szolgáltatás közötti minden további kommunikáció HTTPS-t használ. A kérés az **Azure Traffic Manager** felé lesz továbbítva.
 
 2. Az **Azure Traffic Manager** a felhasználó DNS-rekordjának ellenőrzésével meghatározza a legközelebbi olyan adatközpontot, ahol a Power BI üzembe van helyezve, és annak a WFE-fürtnek az IP-címét adja meg válaszul a DNS-nek, amelyre a felhasználót irányítani kell.
 
@@ -224,7 +224,7 @@ Felhőalapú adatforrások esetén az adatáthelyezési szerepkör [Always Encry
         - Ha az adatkészlet frissítésre van konfigurálva, a hitelesítő adatokat az adatáthelyezési erőforrás Azure SQL Database szolgáltatása tárolja. A titkosítási kulcsot az átjárót futtató számítógép tárolja az ügyfél infrastruktúráján.
         - Ha az adatkészlet nincsen frissítésre konfigurálva, a rendszer nem tárol hitelesítő adatokat az adatforrásokhoz
 
-1. adatok
+1. beviteles
 
     a. Helyszíni Analysis Services és DirectQuery – semmi nincs tárolva a Power BI-szolgáltatásban.
 
@@ -301,7 +301,7 @@ A nem felejtő eszközök olyan eszközök, amelyeken állandó teljesítmény n
     c. Leküldéses adatok – Nincs (nem alkalmazható)
 
     d. ETL – nincs (a rendszer semmit sem tárol a számítási csomóponton, minden az **Inaktív adatok** szekcióban fentebb leírtak szerint történik)
-4. adatok
+4. beviteles
 
     Előfordulhat, hogy néhány adatösszetevőt a rendszer korlátozott ideig a számítási csomópont merevlemezén tárol.
 
@@ -371,7 +371,7 @@ A Power BI Mobile adatgyorsítótára két hétig marad az eszközön, vagy a k�
 
 A Power BI Mobile-alkalmazások nem vizsgálják a mappákat az eszközön. 
 
-A Power BI Mobile mindhárom elérhető platformja támogatja a Microsoft Intune-t, amely egy mobileszköz- és alkalmazáskezelési szoftverszolgáltatás. Az Intune engedélyezésével és konfigurálásával a mobileszköz adatai titkosítva vannak, a Power BI alkalmazás pedig nem telepíthető SD-kártyákra. [További információ a Microsoft Intune-ról](http://www.microsoft.com/cloud-platform/microsoft-intune).
+A Power BI Mobile mindhárom elérhető platformja támogatja a Microsoft Intune-t, amely egy mobileszköz- és alkalmazáskezelési szoftverszolgáltatás. Az Intune engedélyezésével és konfigurálásával a mobileszköz adatai titkosítva vannak, a Power BI alkalmazás pedig nem telepíthető SD-kártyákra. [További információ a Microsoft Intune-ról](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
 ## <a name="power-bi-security-questions-and-answers"></a>Power BI – biztonsággal kapcsolatos kérdések és válaszok
 
@@ -484,10 +484,10 @@ Visszajelzéseit nagyra értékeljük. Szívesen fogadjuk a tanulmány vagy a Po
 A Power BI-ról az alábbi forrásanyagokban talál további információt.
 
 - [Csoportok a Power BI-ban](https://support.powerbi.com/knowledgebase/articles/654247)
-- [Első lépések a Power BI Desktopban](https://support.powerbi.com/knowledgebase/articles/471664)
+- [Első lépések a Power BI Desktop alkalmazással](https://support.powerbi.com/knowledgebase/articles/471664)
 - [Power BI REST API – Áttekintés](https://msdn.microsoft.com/library/dn877544.aspx)
 - [A Power BI API referenciája](https://msdn.microsoft.com/library/mt147898.aspx)
-- [Helyszíni adatátjáró](service-gateway-onprem.md)
+- [On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)
 - [A Power BI és az ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Power BI országos felhők](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)

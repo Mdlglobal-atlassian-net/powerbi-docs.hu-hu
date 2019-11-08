@@ -2,19 +2,19 @@
 title: Power BI-tanulmányok
 description: A tanulmányokkal behatóbban ismerheti meg a Power BI témaköreit.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2019
 ms.author: maggies
-ms.openlocfilehash: b7fe09857d7f9d61745dd263353d3467c9cf6fb4
-ms.sourcegitcommit: e4b28c237c6e0dc16239b161a41a4c30a4b534dd
+ms.openlocfilehash: e88e6753df091fb7f046d475df59fa4344da5d98
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 11/07/2019
-ms.locfileid: "73710771"
+ms.locfileid: "73787302"
 ---
 # <a name="whitepapers-for-power-bi"></a>Power BI-tanulmányok
 
@@ -34,9 +34,9 @@ A tanulmányokkal behatóbban ismerheti meg a Power BI témaköreit. Itt találj
 | [Kétirányú szűrés](desktop-bidirectional-filtering.md) |Ismerteti a Power BI Desktopban elérhető kétirányú keresztszűrést (valamint az SQL Server Analysis Services 2016 működését is, mivel ugyanúgy viselkedik). | 2018. július |
 | [DirectQuery az SQL Server 2016 Analysis Services szolgáltatásban](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |A DirectQuery az SQL Server 2016 esetében át lett alakítva a drámaian jobb sebesség és teljesítmény érdekében, de emiatt most a megértése és megvalósítása is bonyolultabbá vált. | 2017. január |
 | [Power BI és SAP BW](https://aka.ms/powerbiandsapbw)| Ez a dokumentum azt ismerteti, milyen előnyökkel jár, ha az ügyfelek a Power BI-t a meglévő SAP Business Warehouse (BW) rendszerükhöz csatlakoztatják.| 2018. február |
-| [A táblázatos BI szemantikai modell biztonságossá tétele](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Ez a tanulmány bemutatja a táblázatos BI-szemantika és a Power BI biztonsági modelljét. Megtudhatja, hogyan hozhat létre szerepköröket, valósíthat meg dinamikus biztonságot, konfigurálhat megszemélyesítési beállításokat, kezelhet szerepköröket és választhatja ki a módszert a hálózati biztonsági környezetében működő modellekhez való csatlakozáshoz. | 2016. április |
+| [A táblázatos BI szemantikai modell biztonságossá tétele](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Ez a tanulmány bemutatja a táblázatos BI-szemantika és a Power BI biztonsági modelljét. Megtudhatja, hogyan hozhat létre szerepköröket, valósíthat meg dinamikus biztonságot, konfigurálhat megszemélyesítési beállításokat, kezelhet szerepköröket és választhatja ki a módszert a hálózati biztonsági környezetében működő modellekhez való csatlakozáshoz. | 2016. április |
 | [A Power BI és a GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| Ez a hivatkozás a Szolgáltatásmegbízhatósági portálon elérhető, a Microsoft Power BI GDPR-tanulmányt is magukban foglaló tanulmányok listájára mutat. | 2018. április |
 
 [!INCLUDE [GDPR-related guidance](includes/gdpr-hybrid-note.md)]
 
-Több kérdése van? [Kérdezze meg a Power BI-közösséget](http://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
