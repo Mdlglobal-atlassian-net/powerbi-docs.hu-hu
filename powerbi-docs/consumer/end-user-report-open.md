@@ -9,14 +9,17 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
-ms.openlocfilehash: 2a4c9044f661d9d5b822ba366c3a88c572136b35
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: fab986cbd5c6b0a55c18157d663eea1ca0fd537e
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903838"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019467"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>A *felhasználóknak* készült Power BI szolgáltatásban jelentéseket tekinthet meg
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 A jelentések egy vagy több oldalnyi vizualizációból állnak. A jelentéseket a Power BI *tervezői* hozzák létre, és [megosztják őket a *felhasználókkal* közvetlenül](end-user-shared-with-me.md) vagy egy [alkalmazás](end-user-apps.md) részeként. 
 
 A jelentések megnyitásának számos különböző módja van, amelyek közül most kettőt mutatunk be: a kezdőlapról, és az irányítópultról történő megnyitást. 
@@ -52,7 +55,7 @@ A Power BI-*tervezők* megoszthatnak egy adott jelentést közvetlenül Önnel e
 
 6. Figyelje meg a jobb oldali **Szűrők** panelt. Itt jelennek meg az erre a jelentésoldalra vagy a teljes jelentésre alkalmazott szűrők.
 
-7. Ha a kurzort egy jelentésbeli vizualizáció fölé viszi, több ikont és három pontot (...) fed fel. Az adott vizualizációra vonatkozó szűrők megtekintéséhez válassza a szűrő ikont. Itt az *Összes egység görgetési időszak és régió szerint* vonaldiagramhoz tartozó szűrőikon van kiválasztva.
+7. Ha a kurzort egy jelentésbeli vizualizáció fölé viszi, több ikont és a **További beállítások** (...) lehetőséget is megjeleníti. Az adott vizualizációra vonatkozó szűrők megtekintéséhez válassza a szűrő ikont. Itt az *Összes egység görgetési időszak és régió szerint* vonaldiagramhoz tartozó szűrőikon van kiválasztva.
 
    ![jelentésoldal fülei](./media/end-user-report-open/power-bi-visual-filters.png)
 
@@ -102,6 +105,7 @@ Ha már otthonosabban mozog a Power BI szolgáltatásban, minden bizonnyal tudni
 - A [Kapcsolódó megtekintése](end-user-related.md) használata    
 - E-mailben, ha valaki [megosztja Önnel](../service-share-reports.md) vagy Ön [riasztást állít be](end-user-alerts.md);    
 - Az [Értesítési központból](end-user-notification-center.md)    
+- Egy munkaterületről
 - és még néhány további lehetőség
 
 ## <a name="next-steps"></a>Következő lépések

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b200ec86db339e42a708c3db042df06b9513cc6e
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: 24dbce4d825e51d40fc9a42384561d4608f18035
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589491"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019904"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Részletezés mód vizualizációkban a Power BI-ban
 
@@ -128,7 +128,7 @@ Egy olyan fatérkép, amely mindössze egy irányítószámot mutat, nem igazán
 ## <a name="show-the-data-as-you-drill"></a>Az adatok megjelenítése lehatoláskor
 Az **Adatok megjelenítése** elemet választva megjelenítheti a részleteket. Minden egyes alkalommal, amikor részletezést vagy kibontást végez, az **Adatok megjelenítése** elemmel megjelenítheti a vizualizáció létrehozásához használt adatokat. Ez segíthet annak megértésében, hogy a hierarchiák, a részletezés és a kibontás hogyan működnek együtt a vizualizációk létrehozásában. 
 
-A jobb felső sarokban kattintson a három pontra (...), majd az **Adatok megjelenítése** elemre. 
+A jobb felső sarokban válassza a **További beállítások** (...) lehetőséget, majd az **Adatok megjelenítése** elemet. 
 
 ![A három pont menüjének képernyőképe](./media/end-user-drill/power-bi-ellipses.png)
 

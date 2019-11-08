@@ -7,21 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/23/2018
+ms.date: 10/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cd5026a1bb3bca4781be1e3f61b4a71364190f8a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ff46e750d053ead7eb46d57e55e4af96770f0d6e
+ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61135858"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73169136"
 ---
-# <a name="move-and-resize-a-visualization-in-a-report-in-power-bi-service-and-power-bi-desktop"></a>Vizualizációk áthelyezése és átméretezése jelentésekben a Power BI szolgáltatásban és a Power BI Desktopban
-A vizualizációkat csak a jelentések létrehozói és tulajdonosai helyezhetik át és méretezhetik át. A Power BI szolgáltatásban (az app.powerbi.com webhelyen) ehhez a [Szerkesztési nézetben](../consumer/end-user-reading-view.md) kell tudni megnyitni a jelentést.
+# <a name="move-and-resize-a-visualization-in-a-report"></a>Vizualizációk áthelyezése és átméretezése egy jelentésben
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+A jelentések létrehozói és tulajdonosai áthelyezhetik és átméretezhetik a vizualizációkat. Ha a Power BI szolgáltatásban (app.powerbi.com) dolgozik, meg kell nyitnia a jelentést a [Szerkesztési nézetben](../service-interact-with-a-report-in-editing-view.md). 
 
 ## <a name="open-the-report"></a>Jelentés megnyitása
-A Power BI-ban nyisson meg egy jelentést, amelyben legalább egy vizualizáció található, vagy [hozzon létre egy új vizualizációt](power-bi-report-add-visualizations-i.md). 
+A Power BI Desktopban nyisson meg egy jelentést, amelyben legalább egy vizualizáció található, vagy [hozzon létre egy új vizualizációt](power-bi-report-add-visualizations-i.md). 
 
 ## <a name="move-the-visualization"></a>A vizualizáció áthelyezése
 * Válassza ki (bal kattintással) a vizualizáció bármely részét, és húzza az új helyére.
@@ -36,5 +39,7 @@ A Power BI-ban nyisson meg egy jelentést, amelyben legalább egy vizualizáció
 
 ## <a name="next-steps"></a>Következő lépések
 [Vizualizáció átméretezése egy irányítópulton](../service-dashboard-edit-tile.md)  
+
+[Fókusz mód](../consumer/end-user-focus.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
