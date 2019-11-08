@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: f936d5df9872d6dec8862709f614b2dc28f2e414
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 836dfcc0569c906b145df3e3f3d14f03c08d4938
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195378"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432167"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Sablonalkalmazás létrehozása a Power BI-ban
 
@@ -33,19 +33,19 @@ A sablonalkalmazások létrehozásának követelményei az alábbiak:
 - A [Power BI alapvető fogalmainak](service-basic-concepts.md) ismerete
 - Sablonalkalmazás nyilvános megosztásához szükséges engedélyek. Részletekért tekintse meg a Power BI [felügyeleti portálján a sablonalkalmazás beállításait](service-admin-portal.md#template-apps-settings).
 
-## <a name="create-the-template-app-workspace"></a>A sablonalkalmazás munkaterületének létrehozása
+## <a name="create-the-template-workspace"></a>A sablon-munkaterület létrehozása
 
-Ha más Power BI-bérlőkbe terjeszthető sablonalkalmazást szeretne létrehozni, akkor azt az egyik új alkalmazás-munkaterületen kell létrehoznia.
+Ha más Power BI-bérlőkbe terjeszthető sablonalkalmazást szeretne létrehozni, akkor azt az egyik új munkaterületen kell létrehoznia.
 
-1. A Power BI szolgáltatásban válassza a **Munkaterületek** > **Alkalmazás munkaterületének létrehozása** lehetőséget.
+1. A Power BI szolgáltatásban válassza a **Munkaterületek** > **Munkaterület létrehozása** lehetőséget.
 
-    ![Alkalmazás munkaterületének létrehozása](media/service-template-apps-create/power-bi-new-workspace.png)
+    ![Munkaterület létrehozása](media/service-template-apps-create/power-bi-new-workspace.png)
 
-2. Az **Alkalmazás-munkaterület létrehozása** területen válassza a **Frissítés az újra** lehetőséget.
+2. Az **Munkaterület létrehozása** területen válassza a **Frissítés az újra** lehetőséget.
 
     ![Új munkaterületek kipróbálása](media/service-template-apps-create/power-bi-upgrade-new.png)
 
-3. Adjon meg egy nevet, leírást (nem kötelező) és egy embléma képét (nem kötelező) az alkalmazás-munkaterülethez.
+3. Adjon meg egy nevet, leírást (nem kötelező) és egy embléma képét (nem kötelező) a munkaterülethez.
 
 4. Bontsa ki a **Speciális** szakaszt, és válassza a **Sablonalkalmazás kifejlesztése** lehetőséget.
 
@@ -59,7 +59,7 @@ Ha más Power BI-bérlőkbe terjeszthető sablonalkalmazást szeretne létrehozn
 
 Csakúgy, mint a szokásos Power BI-munkaterületeknél, a következő lépés a tartalmak létrehozása a munkaterületen.  
 
-- [Power BI-tartalom létrehozása](power-bi-creator-landing.md) az alkalmazás-munkaterületen.
+- [Power BI-tartalom létrehozása](power-bi-creator-landing.md) a munkaterületen.
 
 Ha paramétereket használ a Power Queryben, győződjön meg róla, hogy jól meghatározott típussal (például szöveg) rendelkeznek-e. A bármely és a bináris típusok nem támogatottak.
 
@@ -69,7 +69,7 @@ A [Tippek sablonalkalmazások készítéséhez a Power BI-ban](service-template-
 
 Most, hogy van tartalom a munkaterületen, készen áll, hogy becsomagolja azt egy sablonalkalmazásba. Az első lépés egy tesztcélú sablonalkalmazás létrehozása, amely csak a szervezeten belülről érhető el a bérlőjében.
 
-1. A sablonalkalmazás munkaterületén válassza az **Alkalmazás létrehozása** lehetőséget.
+1. A sablon munkaterületén válassza az **Alkalmazás létrehozása** lehetőséget.
 
     ![Alkalmazás létrehozása](media/service-template-apps-create/power-bi-create-app.png)
 
@@ -133,7 +133,7 @@ Az URL-címe nem módosul a kiadási szakaszok között. Az előléptetés nem b
 
 Vegyük sorra a szakaszokat:
 
-1. A sablonalkalmazás munkaterületén válassza a **Kiadáskezelés** lehetőséget.
+1. A sablon munkaterületén válassza a **Kiadáskezelés** lehetőséget.
 
     ![A kiadáskezelés ikonja](media/service-template-apps-create/power-bi-release-management-icon.png)
 

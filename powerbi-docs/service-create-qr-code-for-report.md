@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: eb2ea1fbb96138e892ed563d5999f5bc9da8e59f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e36da3d91289c8e58e1ddbd86c5759f89919b848
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61160700"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021228"
 ---
 # <a name="create-a-qr-code-for-a-report-in-power-bi-to-use-in-the-mobile-apps"></a>QR-kód létrehozása jelentéshez a Power BI-ban a mobilalkalmazásokban való használathoz
 A Power BI-ban lévő QR-kódok a való világból bármit közvetlenül összekapcsolhatnak a kapcsolódó BI-információkkal, és ehhez nincs szükség navigálásra vagy keresésre.
@@ -26,7 +26,7 @@ A munkatársak, akikkel megosztotta a jelentést, beolvashatják a QR-kódot, í
 
 ## <a name="create-a-qr-code-for-a-report"></a>QR-kód létrehozása jelentéshez
 1. Nyisson meg egy jelentést a Power BI szolgáltatásban.
-2. Kattintson a jobb felső sarokban lévő három pontra (...), és válassza a **QR-kód előállítása** lehetőséget. 
+2. Kattintson a jobb felső sarokban lévő **További beállítások** (...) elemre, és válassza a **QR-kód előállítása** lehetőséget. 
    
     ![](media/service-create-qr-code-for-report/power-bi-create-qr-code-report.png)
 3. Megjelenik egy párbeszédpanel a QR-kóddal. 

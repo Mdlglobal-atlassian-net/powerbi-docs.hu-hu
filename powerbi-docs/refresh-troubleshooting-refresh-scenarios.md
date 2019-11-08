@@ -10,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 09/13/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 564c3d03a7879cd7788e19055d8c11e4de46013f
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 7e66cbf11c8177a12dbbf825873adb4cef5f26fd
+ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543858"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73169071"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása
 
@@ -25,6 +25,12 @@ Itt a Power BI szolgáltatásban az adatok frissítése során fellépő külön
 > Ha olyan helyzet miatt tapasztal problémákat, amely nem szerepel az alábbi listán, a [közösségi webhelyen](http://community.powerbi.com/) kérhet további segítséget, vagy létrehozhat egy [támogatási jegyet](https://powerbi.microsoft.com/support/).
 >
 >
+
+## <a name="email-notifications"></a>Értesítő e-mailek
+
+Ha egy e-mailben küldött értesítés nyomán jutott ehhez a cikkhez, és többé nem szeretne e-maileket kapni a frissítési problémákról, lépjen kapcsolatba a Power BI-rendszergazdájával. Kérje meg, hogy távolítsa el az előfizetett e-mailt vagy e-mailek listáját a Power BI megfelelő adatkészleteiből. Ezt a Power BI felügyeleti portál következő részében teheti meg.
+
+![E-mail frissítési értesítésekről](media/refresh-troubleshooting-refresh-scenarios/refresh-email.png)
 
 ## <a name="refresh-using-web-connector-doesnt-work-properly"></a>A webes összekötő használatával végzett frissítés nem megfelelően működik
 

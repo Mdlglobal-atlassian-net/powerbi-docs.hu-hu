@@ -1,5 +1,5 @@
 ---
-title: Egyszeri bejelentkezés (SSO) használata helyszíni adatforrásoknál
+title: Az egyszeri bejelentkezés (SSO) áttekintése a Power BI-ban található átjárókhoz
 description: Az átjáró konfigurálása a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezés (SSO) engedélyezéséhez.
 author: mgblythe
 ms.author: mblythe
@@ -8,33 +8,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: b1379bb783b090362215eaf7c317bbea435d1eec
-ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
+ms.openlocfilehash: 53c35210878e442cfdec4d78a97bd76acc65e482
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72259928"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020773"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Az egyszeri bejelentkezés (SSO) áttekintése a Power BI-ban található átjárókhoz
 
-Közvetlen egyszeri bejelentkezéses kapcsolatot létesíthet, ha engedélyezi a Power BI-jelentések és -irányítópultok számára, hogy helyszíni adatokból végezzenek valós idejű frissítést. Ehhez a helyszíni adatátjárót Kerberos általi korlátozott delegálással vagy a Security Assertion Markup Language (SAML) használatával kell konfigurálni. A helyszíni adatátjáró elősegíti az SSO-t a DirectQuery használatakor, amellyel a helyszíni adatforrásokhoz kapcsolódik.
+A helyszíni adatátjáró konfigurálásával zökkenőmentes egyszeri bejelentkezési kapcsolatot hozhat létre, amely lehetővé teszi a Power BI-jelentések és -irányítópultok valós idejű frissítését a helyszíni adatokból. Lehetősége van az átjáró konfigurálására a [Kerberos](service-gateway-sso-kerberos.md) korlátozott delegálással vagy a Security Assertion Markup Language ([SAML](service-gateway-sso-saml.md)) használatával. A helyszíni adatátjáró a helyszíni adatforrásokhoz csatlakozó [DirectQuery](desktop-directquery-about.md) használatával támogatja az SSO-t.
 
-Jelenleg az alábbi adatforrások használatát támogatjuk:
+A Power BI az alábbi adatforrásokat támogatja:
 
-* SQL Server ([Kerberos](service-gateway-sso-kerberos.md))
-* SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) és [SAML](service-gateway-sso-saml.md))
-* SAP BW Application Server([Kerberos](service-gateway-sso-kerberos.md))
-* SAP BW Message Server([Kerberos](service-gateway-sso-kerberos.md))- nyilvános előzetes verzió
-* Oracle([Kerberos](service-gateway-sso-kerberos.md))- Nyilvános előzetes verzió
-* Teradata ([Kerberos](service-gateway-sso-kerberos.md))
-* Spark ([Kerberos](service-gateway-sso-kerberos.md))
-* Impala ([Kerberos](service-gateway-sso-kerberos.md))
+* SQL Server (Kerberos)
+* SAP HANA (Kerberos és SAML)
+* SAP BW Application Server (Kerberos)
+* SAP BW Message Server (Kerberos) - nyilvános előzetes verzió
+* Oracle (Kerberos) - nyilvános előzetes verzió
+* Teradata (Kerberos)
+* Spark (Kerberos)
+* Impala (Kerberos)
 
 Az egyszeri bejelentkezés jelenleg nincs támogatva az [M-bővítményeknél](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).
 
-Ha egy felhasználó DirectQuery jelentést használ a Power BI szolgáltatásban, az összes keresztszűrő, szeletelő, rendezés és szerkesztési művelet olyan lekérdezéseket eredményezhet, amelyek az alapul szolgáló helyszíni adatforrásból dolgoznak. Ha az egyszeri bejelentkezés konfigurálva van az adatforráshoz, akkor a Power BI-t használó felhasználó identitása alatt futnak a lekérdezések (vagyis a webtartalmakon vagy a Power BI-mobilalkalmazásokon keresztül). Így minden felhasználó pontosan azokat az adatokat látja, amelyekhez engedélye van az alapul szolgáló adatforrásban. Ha az egyszeri bejelentkezés konfigurálva van, nincsenek különböző felhasználók között megosztott adatok a gyorsítótárazás során.
+Ha egy felhasználó DirectQuery-jelentést használ a Power BI szolgáltatásban, az összes keresztszűrő, szeletelő, rendezés és szerkesztési művelet olyan lekérdezéseket eredményezhet, amelyek az alapul szolgáló helyszíni adatforrásból dolgoznak. Ha az egyszeri bejelentkezés konfigurálva van az adatforráshoz, akkor a Power BI-t használó felhasználó identitása alatt futnak a lekérdezések (vagyis a webtartalmakon vagy a Power BI-mobilalkalmazásokon keresztül). Ezért minden felhasználó pontosan azokat az adatokat látja, amelyekhez engedélye van az alapul szolgáló adatforrásban. Ha az egyszeri bejelentkezés konfigurálva van, nincs megosztott adatgyorsítótárazás a különböző felhasználók számára.
 
 ## <a name="query-steps-when-running-sso"></a>A lekérdezés lépései SSO futtatása esetén
 
@@ -42,13 +42,13 @@ Az SSO-val futó lekérdezés három lépésből áll, az alábbi ábrán látha
 
 ![Az SSO-lekérdezés lépései](media/service-gateway-sso-overview/sso-query-steps.png)
 
-További információk a lépésekről:
+További információk az egyes lépésekről:
 
-1. Az egyes lekérdezésekhez a **Power BI szolgáltatás** hozzárendeli az *egyszerű felhasználónevet* (ez a UPN, vagyis a Power BI szolgáltatásba bejelentkezett felhasználó felhasználói neve), amikor elküldi a lekérdezési kérést a konfigurált átjáróra.
+1. Az egyes lekérdezésekhez a Power BI szolgáltatás hozzárendeli az *egyszerű felhasználónevet (ez a UPN*, vagyis a Power BI szolgáltatásba bejelentkezett felhasználó felhasználói neve), amikor elküldi a lekérdezési kérést a konfigurált átjáróra.
 
-2. Az átjárónak le kell képeznie az Azure Active Directory UPN-jét egy helyi Active Directory-identitásra.
+2. Az átjárónak le kell képeznie az Azure Active Directory UPN-jét egy helyi Active Directory-identitásra:
 
-   a.  Ha az Azure AD DirSync (más néven *Azure AD Connect*) konfigurálva van, akkor a leképezés automatikusan működik az átjáróban.
+   a. Ha az Azure AD DirSync (más néven *Azure AD Connect*) konfigurálva van, akkor a leképezés automatikusan működik az átjáróban.
 
    b.  Ellenkező esetben az átjáró kikeresheti és leképezheti az Azure AD UPN-jét egy helyi AD-felhasználóra a helyi Active Directory-tartományra irányuló keresés végrehajtásával.
 
@@ -56,7 +56,7 @@ További információk a lépésekről:
 
 ## <a name="next-steps"></a>Következő lépések
 
-Most, hogy megismerte az SSO átjárón történő használatának alapjait, a Kerberos és a SAML használatával kapcsolatos részletesebb információkért olvassa el az alábbi cikkeket:
+Most, hogy megismerte az SSO átjárón történő engedélyezésének alapjait, a Kerberos és az SAML használatával kapcsolatos részletesebb információkért olvassa el az alábbi cikkeket:
 
 * [Egyszeri bejelentkezés (SSO) – Kerberos](service-gateway-sso-kerberos.md)
 * [Egyszeri bejelentkezés (SSO) – SAML](service-gateway-sso-saml.md)

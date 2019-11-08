@@ -9,24 +9,24 @@ featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/01/2019
+ms.date: 10/28/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 91ae7fbbba8b9ba63e8b429c8b2ef3a3adb1c95e
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 075985ce2d4eec1244827c65476c81774196a449
+ms.sourcegitcommit: 2a61d8b1e2707a24fe1284a8a4034b11c3999842
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307148"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048886"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Vizualizációk Power BI-jelentésekben
 
-A vizualizációk az adatokból nyert megállapításokat jelenítik meg. Egy Power BI-jelentés állhat egyetlen oldalból, amelyen csak egy vizualizáció szerepel, de előfordulhatnak olyan jelentések is, amelyek számos vizualizációt tartalmazó oldalakból állnak. A Power BI szolgáltatásban a vizualizációkat [jelentésekből irányítópultokra lehet rögzíteni](../service-dashboard-pin-tile-from-report.md).
+A vizualizációk az adatokból nyert megállapításokat jelenítik meg. Egy Power BI-jelentés állhat egyetlen oldalból, amelyen csak egy vizualizáció szerepel, de előfordulhatnak olyan jelentések is, amelyek számos vizualizációt tartalmazó oldalakból állnak. A Power BI szolgáltatásban a vizualizációkat a [jelentésekből irányítópultokra lehet rögzíteni](../service-dashboard-pin-tile-from-report.md).
 
-Fontos különbséget tenni a *jelentéstervezők* és a *jelentésfelhasználók* között.  Ha Ön az a személy, akik a jelentést létrehozza vagy módosítja, akkor Ön tervező.  A tervezőknek szerkesztési jogosultságuk van a jelentéshez és az alapul szolgáló adathalmazhoz. A Power BI Desktopban ez azt jelenti, hogy megnyithatja az adatkészletet Adatnézetben, és vizualizációkat hozhat létre Jelentés nézetben. A Power BI szolgáltatásban ez azt jelenti, hogy megnyithatja az adathalmazt vagy a jelentést a jelentésszerkesztőben [Szerkesztési nézetben](../consumer/end-user-reading-view.md). Ha a jelentést vagy az irányítópultot [megosztották Önnel](../consumer/end-user-shared-with-me.md), akkor Ön a jelentés **felhasználója**. A jelentést és a rajta szereplő vizualizációkat megtekintheti és használhatja, de a jelentősebb módosításokat nem mentheti.
+Fontos különbséget tenni a *jelentéstervezők* és a *jelentésfelhasználók* között.  Ha Ön az a személy, akik a jelentést létrehozza vagy módosítja, akkor Ön tervező.  A tervezőknek szerkesztési jogosultságuk van a jelentéshez és az alapul szolgáló adathalmazhoz. A Power BI Desktopban ez azt jelenti, hogy megnyithatja az adatkészletet Adatnézetben, és vizualizációkat hozhat létre Jelentés nézetben. A Power BI szolgáltatásban ez azt jelenti, hogy megnyithatja az adathalmazt vagy a jelentést a jelentésszerkesztőben [Szerkesztési nézetben](../consumer/end-user-reading-view.md). Ha a jelentést vagy az irányítópultot [megosztották Önnel](../consumer/end-user-shared-with-me.md), akkor Ön a jelentés *felhasználója*. A jelentést és a rajta szereplő vizualizációkat megtekintheti és használhatja, de nem végezhet annyi módosítást, amennyit egy *tervező*.
 
-A Power BI VIZUALIZÁCIÓK paneljén számos különféle típusú vizualizáció érhető el.
+A Power BI Vizualizációk paneljén számos különféle típusú vizualizáció érhető el.
 
-![](media/power-bi-report-visualizations/power-bi-templates.png)
+![az egyes vizualizációs típusok ikonjait tartalmazó ablaktábla](media/power-bi-report-visualizations/power-bi-icons.png)
 
 A [Microsoft AppSource közösségi oldalon](https://appsource.microsoft.com) azonban még nagyobb választékban talál [letölthető](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [egyéni vizualizációkat](../developer/visuals/custom-visual-develop-tutorial.md), amelyeket a Microsoft és a közösség tett elérhetővé.
 
@@ -49,7 +49,7 @@ Ha azt veszi észre, hogy ugyanazt az egyéni vizualizációt használja számos
 
 ![Rögzítés a vizualizációs ablaktáblára](media/power-bi-report-visualizations/power-bi-pin-custom-visual-option.png)
 
-A rögzítését követően a vizualizáció többi beépített vizualizációval együtt aktív lesz. A vizualizációt a rendszer a bejelentkezéshez használt fiókjához kötötte, így minden új, Ön által létrehozott jelentés automatikusan magában fogja foglalni ezt a vizualizációt, feltéve, ha bejelentkezett. Így nagyon egyszerűen általános használatúvá tehető egy adott vizualizáció, anélkül, hogy minden egyes jelentéshez külön hozzá kellene adni.
+A rögzítését követően a vizualizáció többi beépített vizualizációval együtt aktív lesz. A vizualizációt a rendszer a bejelentkezéshez használt fiókjához kötötte, így minden új, Ön által létrehozott jelentés automatikusan magában fogja foglalni ezt a vizualizációt, feltéve, hogy bejelentkezett. Így nagyon egyszerűen általános használatúvá tehető egy adott vizualizáció, anélkül, hogy minden egyes jelentéshez külön hozzá kellene adni.
 
 ![Személyre szabott vizualizációs ablaktábla](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
 

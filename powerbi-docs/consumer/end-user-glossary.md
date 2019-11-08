@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: b9622a08506c6f5ade900296d91b449c64dc374c
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: a48589e6126203856a306de796c964ce6e347c26
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903656"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429877"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -37,10 +37,8 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 **answer card, answer page (válaszkártya, válaszlap)** Lásd: Cortana-válaszkártya.
 
-**app, apps (alkalmazás, alkalmazások)**
+**app, apps (alkalmazás, alkalmazások)** 
 
- 
-**app workspace (alkalmazás-munkaterület)** A Saját munkaterület kivételével a Power BI összes munkaterülete most már alkalmazás-munkaterületnek számít. A munkaterület tartalma becsomagolható egy Power BI-alkalmazásba. A prémium szintű kapacitásokon tárolt alkalmazás-munkaterületek megoszthatók az ingyenes licencekkel rendelkező felhasználókkal. A (Saját munkaterület alatti) személyes munkaterületek prémium szintű kapacitásokon üzemeltethetők.  
 
 **AppSource** Központosított online adattár, ahol letölthető irányítópultokat, jelentéseket, adathalmazokat és alkalmazásokat tallózhat és fedezhet fel.
 
@@ -54,7 +52,7 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 **bookmark (könyvjelző)** Az adatok egy jelentés Könyvjelzők panelén rögzített nézete a Power BI Desktopban vagy szolgáltatásban. A Desktopban a könyvjelzők a .pbix jelentésfájlban vannak mentve, amely megosztható a Power BI szolgáltatásban.
   
-**breadcrumbs (útkövetés)** A bal felső navigációs sáv, amelynek segítségével gyorsan navigálhat az alkalmazás-munkaterületek között.
+**breadcrumbs (útkövetés)** A bal felső navigációs sáv, amelynek segítségével gyorsan navigálhat a munkaterületek között.
 
 ## <a name="c"></a>C
 
@@ -177,7 +175,7 @@ A kifejezés első előfordulásakor bal oldali navigációs menü, utána vagy 
 
 **modeling (modellezés)** [Power BI Desktop] A csatlakoztatott adatok előkészítése a Power BI-ban való használatra. Ez a különböző adatforrások táblái közötti kapcsolatok létrehozását, a mértékek létrehozását és a metrikák kiosztását jelenti.
 
-**My workspace (Saját munkaterület)** Az egyes Power BI-ügyfelek munkaterülete, amelyen tartalmakat hozhatnak létre. Ha a felhasználó az itt létrehozott tartalmakat egy alkalmazásba szeretné csomagolni, és rendelkezik *tervezői* engedélyekkel, a tartalmakat feltöltheti a megfelelő alkalmazás-munkaterületre, de újat is létrehozhat.
+**My workspace (Saját munkaterület)** Az egyes Power BI-ügyfelek munkaterülete, amelyen tartalmakat hozhatnak létre. Ha a felhasználó az itt létrehozott tartalmakat egy alkalmazásba szeretné csomagolni, és rendelkezik *tervezői* engedélyekkel, a tartalmakat feltöltheti a megfelelő munkaterületre, de újat is létrehozhat.
 
 ## <a name="n"></a>N
 
@@ -222,7 +220,7 @@ A kifejezés első előfordulásakor navigációs sáv, utána vagy helyszűke e
 
 **Power BI**, **Power BI service (Power BI szolgáltatás)** , **Power BI Desktop**, **Power BI Mobile**, néhány más Power BI-ajánlat. Az általános elnevezés a *Power BI*. Gyakran csak ezt használjuk a teljes terméknév, például a *Power BI szolgáltatás* vagy a *Power BI Mobile* helyett a terméknév első előfordulását követően.
 
-**Power BI Desktop** Röviden *Desktop*. Az ingyenes Power BI Windows-alkalmazás, amelyet a helyi számítógépén telepíthet, és amellyel átalakítani és vizualizációkkal megjeleníteni kívánt adatokhoz csatlakozhat. Jelentéstervezők és rendszergazdák használják. További információ: [A Power BI bemutatása](../power-bi-overview.md).
+**Power BI Desktop** Röviden *Desktop*. Az ingyenes Power BI Windows-alkalmazás, amelyet a helyi számítógépén telepíthet, és amellyel átalakítani és vizualizációkkal megjeleníteni kívánt adatokhoz csatlakozhat. Jelentéstervezők és rendszergazdák használják. További információ: [A Power BI bemutatása](../fundamentals/power-bi-overview.md).
 
 **Power BI Embedded** Az a termék, amellyel a fejlesztők beágyazhatják a Power BI-irányítópultokat és -jelentéseket az alkalmazásokba, webhelyekre és eszközökbe.
 
@@ -232,7 +230,7 @@ A kifejezés első előfordulásakor navigációs sáv, utána vagy helyszűke e
 
 **Power BI Report Server (Power BI jelentéskészítő kiszolgáló)** Egy, a Power BI Premium részeként elérhető vadonatúj SSRS-ajánlat, amely segítségével a cég elosztott, hibrid BI-rendszereket (felhőalapú és helyszíni környezetek kombinációját) alakíthatja ki. Az Embedded a Power BI-jelentések helyszíni tárolására és kezelésére kínál lehetőséget.
 
-**Power BI service (Power BI szolgáltatás)** Online SaaS (szolgáltatott szoftver) szolgáltatás. További információ: [A Power BI bemutatása](../power-bi-overview.md).
+**Power BI service (Power BI szolgáltatás)** Online SaaS (szolgáltatott szoftver) szolgáltatás. További információ: [A Power BI bemutatása](../fundamentals/power-bi-overview.md).
 
 **Power BI service connector (Power BI szolgáltatás-összekötő)** A Power BI Desktop-felhasználók ezzel az összekötővel csatlakozhatnak a Power BI szolgáltatásban lévő adatkészletekhez a Desktopból. A létrehozott modelleket több jelentésben és irányítópulton is felhasználhatják.
 
@@ -325,7 +323,7 @@ A Power BI-irányítópultok jelentéscsempéket tartalmaznak.
 
 **workbook (munkafüzet)** Egy adatforrásként szolgáló Excel-munkafüzet. A munkafüzetek adatmodelleket is tartalmazhatnak, amelyekbe egy vagy több adattábla is betölthető csatolt táblázatok, Power Query vagy Power Pivot használatával.
 
-**workspace (munkaterület)** A Power BI irányítópultjainak, jelentéseinek és adatkészleteinek tárolói. Lásd az alkalmazás-munkaterület kifejezést.
+**workspace (munkaterület)** A Power BI irányítópultjainak, jelentéseinek és adatkészleteinek tárolói. A felhasználók bármely munkaterületen együttműködhetnek a tartalmon végzett munka során, kivéve a Saját munkaterületet. A munkaterület tartalma becsomagolható egy Power BI-alkalmazásba. A prémium szintű kapacitásokon tárolt alkalmazás-munkaterületek megoszthatók az ingyenes licencekkel rendelkező felhasználókkal. A (Saját munkaterület alatti) személyes munkaterületek prémium szintű kapacitásokon üzemeltethetők.
 
 ## <a name="x"></a>X
 **x-axis (x tengely)**  

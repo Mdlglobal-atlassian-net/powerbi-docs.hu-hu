@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4fe3b56f1891423a80019186668dc55f361d580a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d4e9c095dc0114ec3b5fe2fdd6d52fd25aa76d97
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61225868"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020125"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Csempe kitűzése egy irányítópultról egy másikra
 Ha egy új [irányítópult-csempét](consumer/end-user-tiles.md) szeretne felvenni, egyik módszerként ezt megteheti egy másik irányítópult csempéjének másolásával. Ezek a csempék kattintható hivatkozások, amelyek arra a helyre mutatnak, ahol létrejöttek: vagy a Q&A-ra vagy egy jelentésre. 
@@ -26,7 +26,7 @@ Ha egy új [irányítópult-csempét](consumer/end-user-tiles.md) szeretne felve
 ## <a name="pin-a-tile-to-another-dashboard"></a>Csempe kitűzése egy másik irányítópultra
 1. [Kérje le az adatokat](service-get-data.md). Ez a példa az [informatikaköltség-elemzési mintát](sample-it-spend.md) használja.
 2. Nyisson meg egy [irányítópultot](consumer/end-user-dashboards.md).
-3. Vigye a kurzort a rögzíteni kívánt csempe fölé, és válassza a három pont (...), majd a **Csempe rögzítése** lehetőséget.  
+3. Vigye a kurzort a rögzíteni kívánt csempe fölé, és válassza a **További beállítások** (...), majd a **Csempe rögzítése** lehetőséget.  
    
    ![három pont menü](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
 4. A csempét egy meglévő vagy egy új irányítópultra is rögzítheti. 

@@ -9,18 +9,18 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: mshenhav
-ms.openlocfilehash: a99d18d424421949ede9bacd5642235b04170659
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 23f2b41b84c387ca772fdda1397a6c5e4fce6acf
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61338922"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017656"
 ---
 # <a name="explore-your-data-in-the-power-bi-mobile-app-on-your-apple-watch"></a>Adatok feltárása az Apple Watchra készült Power BI mobilalkalmazásban
 Az Apple Watchra készült Power BI alkalmazással közvetlenül az órájáról tekintheti meg az irányítópultján található KPI-ket és kártyacsempéket. A KPI-k és a kártyacsempék a legalkalmasabbak arra, hogy egy kisméretű kijelzőn szívverés típusú mértékeket jelenítsenek meg. Az irányítópult frissíthető az iPhone-járól vagy akár magáról az óráról is.
 
 ## <a name="install-the-apple-watch-app"></a>Az Apple Watchra készült alkalmazás telepítése
-Az Apple Watchra készült Power BI mobilalkalmazás az iOS-re készült Power BI alkalmazás részét képezi, így amikor [letölti az iPhone-jára a Power BI alkalmazást](http://go.microsoft.com/fwlink/?LinkId=522062 "Az iPhone-ra készült alkalmazás letöltése") az Apple App Store-ból, akkor automatikusan letölti az Apple Watchra készült Power BI mobilalkalmazást is. Az Apple útmutatójából megtudhatja, hogyan történik az [Apple Watch-alkalmazások telepítése](https://support.apple.com/HT204784).
+Az Apple Watchra készült Power BI mobilalkalmazás az iOS-re készült Power BI alkalmazás részét képezi, így amikor az Apple Store-ból [letölti az iPhone-jára a Power BI alkalmazást](http://go.microsoft.com/fwlink/?LinkId=522062 "Az iPhone-alkalmazás letöltése"), automatikusan a Watchra készült Power BI alkalmazást is letölti. Az Apple útmutatójából megtudhatja, hogyan történik az [Apple Watch-alkalmazások telepítése](https://support.apple.com/HT204784).
 
 ## <a name="use-the-power-bi-app-on-the-apple-watch"></a>Az Apple Watchra készült Power BI alkalmazás használata
 Nyissa meg az Apple Watchra készült Power BI alkalmazást vagy az óra springboardjáról, vagy közvetlenül az óraszámlapon a Power BI-widgetre kattintva (ha konfigurálta).
@@ -52,7 +52,7 @@ Az órára készült alkalmazás ekkor szinkronizálja az irányítópultot a Po
 Az Apple Watchon lévő irányítópultot az iPhone-járól is frissítheti.
 
 1. Az iPhone-ján található Power BI-ban nyissa meg az Apple Watchon szinkronizálni kívánt irányítópultot. 
-2. Válassza a három pont (...) > **Sync with Watch** (szinkronizálás az órával) lehetőséget.
+2. Válassza **További beállítások** (...) > **Szinkronizálás a Watchcsal** lehetőséget.
 
 A Power BI ekkor jelzi, hogy folyamatban van az irányítópult szinkronizálása az órával.
 
@@ -88,5 +88,5 @@ Visszajelzésével segíthet nekünk eldönteni, hogy a jövőben mely funkciók
 
 * Az [iPhone-ra készült Power BI mobilalkalmazás](http://go.microsoft.com/fwlink/?LinkId=522062) letöltése
 * Kövessen minket a [@MSPowerBITwitteren](https://twitter.com/MSPowerBI)
-* Csatlakozzon a beszélgetéshez a [Power BI-közösségben](http://community.powerbi.com/)
+* Vegyen részt [a Power BI-közösség](http://community.powerbi.com/) beszélgetéseiben
 

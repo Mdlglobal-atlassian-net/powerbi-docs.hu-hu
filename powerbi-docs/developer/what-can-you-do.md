@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 0d4f79714be7d354c26a7bd63adbe8bce07ed4ef
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 54d0b1635eb75fd5cbcb1f3e745097e7da566342
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307459"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429312"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Mire használhatják a fejlesztők a Power BI-t?
 
@@ -22,7 +22,7 @@ A fejlesztőknek több módszer is rendelkezésére áll ahhoz, hogy a Power BI-
 
 ## <a name="embedding-power-bi-content"></a>Power BI-tartalom beágyazása
 
-A Power BI szolgáltatás (SaaS) és a Power BI Embedded szolgáltatás az Azure-ban (PaaS) API-kkal is rendelkezik az irányítópultok és jelentések beágyazásához. Ez azt jelenti, hogy a tartalmak beágyazásakor rendelkezésére állnak a Power BI legújabb szolgáltatásai (például irányítópultok, átjárók és alkalmazás-munkaterületek).
+A Power BI szolgáltatás (SaaS) és a Power BI Embedded szolgáltatás az Azure-ban (PaaS) API-kkal is rendelkezik az irányítópultok és jelentések beágyazásához. Ez azt jelenti, hogy a tartalmak beágyazásakor rendelkezésére állnak a Power BI legújabb szolgáltatásai (például irányítópultok, átjárók és munkaterületek).
 
 A [beágyazást előkészítő eszközzel](https://aka.ms/embedsetup) gyorsan megteheti az első lépéseket és letölthet egy mintaalkalmazást.
 

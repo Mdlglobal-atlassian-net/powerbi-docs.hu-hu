@@ -9,17 +9,20 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/12/2019
-LocalizationGroup: Common tasks
-ms.openlocfilehash: 2b0554729824b170fecbe6493141c6f3a8354002
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.date: 10/21/2019
+rLocalizationGroup: Common tasks
+ms.openlocfilehash: 95bcb3ef0eb8b2d79502e3905a56dbc81e3f43bd
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "68961678"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73430017"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Feliratkozás jelentésre vagy irányítópultra a Power BI szolgáltatásban 
-Minden eddiginél egyszerűbb naprakésznek lenni a legfontosabb irányítópultokkal és jelentésekkel kapcsolatban. Feliratkozhat az Önnek leginkább fontos jelentésoldalakra és irányítópultokra, a Power BI pedig pillanatképeket küld e-mailben a postafiókjába. Megadhatja a Power BI-nak, hogy milyen gyakran szeretne ilyen e-mailt kapni: naponta, hetente vagy az adatok frissítésekor. Akár az e-mailek küldésének pontos időpontját is megadhatja a Power BI-nak, vagy futtathatja most.  
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+Minden eddiginél egyszerűbb naprakésznek lenni a legfontosabb irányítópultokkal és jelentésekkel kapcsolatban. Feliratkozhat az Önnek leginkább fontos jelentésoldalakra és irányítópultokra, a Power BI pedig pillanatképeket küld e-mailben a postafiókjába. Megadhatja a Power BI-nak, hogy milyen gyakran szeretne ilyen e-mailt kapni: naponta, hetente vagy az adatok frissítésekor. Akár az e-mailek küldésének pontos időpontját is megadhatja a Power BI-nak, vagy futtathatja most.  Jelentésenként vagy irányítópultonként összesen akár 24 különböző feliratkozást is beállíthat.  
 
 Az e-mail és a pillanatkép a Power BI beállításaiban szereplő nyelvet fogja használni (lásd [A Power BI által támogatott nyelvek és országok/régiók](../supported-languages-countries-regions.md) témakört). Ha nincs megadva nyelv, a Power BI a böngésző területi beállításait használja. A nyelvi beállításokat megtekintheti vagy módosíthatja a fogaskerék ikon ![fogaskerék ikon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Beállítások > Általános > Nyelv** lehetőség választásával. 
 
@@ -78,7 +81,7 @@ A feliratkozás megszűnik, ha lejár a Pro-licence, ha az irányítópultot vag
 * Az irányítópultok e-mail-feliratkozásai esetén, ha bármely csempe sorszintű biztonsággal (RLS) rendelkezik, ezek a csempék nem jelennek meg.  A jelentésekhez kapcsolódó e-mail-feliratkozások esetén, ha az adatkészlet sorszintű biztonságot használ, nem hozható létre feliratkozás.
 * Ha az e-mailben lévő (a tartalomra mutató) hivatkozás már nem működik, akkor lehetséges, hogy a tartalmat eltávolították. Az e-mailben a képernyőkép alatt ellenőrizheti, hogy Ön iratkozott-e fel, vagy valaki más iratkoztatta fel Önt. Ha valaki más tette, kérje meg azt a munkatársát, hogy vagy ne küldjön több e-mailt, vagy újra iratkoztassa fel Önt.
 * A jelentésoldalakra való feliratkozás a jelentésoldal nevéhez kapcsolódik. Ha feliratkozik egy jelentés oldalára, és annak megváltozik a neve, újból létre kell hoznia az előfizetést.
-* Ha nem tudja használni a feliratkozás funkciót, forduljon a rendszergazdához. Lehetséges, hogy vállalata hitelesítési vagy más okból letiltotta ezt a funkciót.  
+* Ha nem tudja használni a feliratkozás funkciót, forduljon a rendszergazdához. Előfordulhat, hogy a szervezet letiltotta ezt a funkciót.  
 * Az e-mailekre való feliratkozások az [egyéni vizualizációk](../power-bi-custom-visuals.md) többségét nem támogatják.  Ez alól kivétel a [minősített](../power-bi-custom-visuals-certified.md) egyéni vizualizációk esete.  
 * Az e-mailekre való feliratkozások jelenleg nem támogatják az R-alapú egyéni vizualizációkat.  
 * Bizonyos típusú csempék különösen az irányítópult-előfizetések esetén jelenleg még nem támogatottak.  Ilyenek többek között a streamelési csempék, a videócsempék és az egyéni webes tartalomcsempék.     

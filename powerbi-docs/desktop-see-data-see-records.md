@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 6e425f146228d0139b9eec914a44ed5dc732fe98
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 667b6eac288d3be35eac619b669498b6d7381dc3
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514774"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019247"
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>A Power BI Desktop Adatok megjelenítése és Rekordok megjelenítése funkciójának használata
 A **Power BI Desktopban** a vizualizációkat részletesen feltárhatja, és megtekintheti a mögöttes adatok szöveges alakját vagy a kijelölt vizualizáció egyes adatrekordjait. Ezeket a szolgáltatásokat időnként *átkattintásnak*, *áthatolásnak* vagy *részletezésnek* is nevezik.
@@ -41,7 +41,7 @@ Az **Adatok megtekintése** funkció a vizualizációk alapjául szolgáló mög
 
 ![Adatok megtekintése a menüszalagon](media/desktop-see-data-see-records/see-data1.png)
 
-Az adatok úgy is megtekinthetők, ha az adott vizualizáció jobb gombbal kattint, majd a megjelenő menüből az **Adatok megjelenítése** lehetőséget választja, vagy az adott vizualizáció jobb felső sarkában a három ponttal (...) jelzett **További lehetőségek** funkciót, majd onnan az **Adatok megjelenítése** lehetőséget választja.
+Az adatok úgy is megtekinthetők, ha a jobb gombbal kattint a vizualizációra, majd a megjelenő menüből az **Adatok megjelenítése** lehetőséget választja, vagy a vizualizáció jobb felső sarkában a **További lehetőségek** (...) funkciót, majd onnan az **Adatok megjelenítése** lehetőséget választja.
 
 ![Adatok megjelenítése kattintás jobb gombbal](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Adatok megjelenítése További lehetőségek](media/desktop-see-data-see-records/see-data3.png)
 

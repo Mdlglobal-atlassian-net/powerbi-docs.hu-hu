@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0492b797d75e29145c14a70d8a8058bad295ef18
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 428e392994a1b6934bf78d9cccbee1821744a622
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994923"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020221"
 ---
 # <a name="generate-data-insights-automatically-with-power-bi"></a>Adatelemzések automatikus generálása a Power BI-jal
 Van egy új adatkészlete, de nem tudja, hogy kezdje el feldolgozni?  Gyorsan létre kell hoznia egy irányítópultot?  Szeretne felfedezni eddig hiányzó összefüggéseket?
@@ -38,7 +38,7 @@ Tekintse meg, hogyan futtat Amanda gyors elemzést egy adatkészleten, hogyan ny
 
 Most Ön következik. Fedezze fel az elemzések szolgáltatást a [Szállítói minőségelemzési mintát](sample-supplier-quality.md) használva.
 
-1. Az **Adatkészletek** lapon kattintson a három pontra (...), majd válassza az **Gyors elemzések lekérése** lehetőséget.
+1. Az **Adatkészletek** lapon válassza a **További beállítások** (...), majd a **Gyorselemzések lekérése** lehetőséget.
    
     ![Adatkészletek lap](media/service-insights/power-bi-ellipses.png)
    
@@ -62,7 +62,7 @@ Most Ön következik. Fedezze fel az elemzések szolgáltatást a [Szállítói 
 
 1. A vizualizáció irányítópultra történő felvételéhez vigye a kurzort az egyik kártya fölé, és válassza a kitűzés ikont.
 
-2. Mutasson egy kártyára, és válassza a három pontot (...), majd az **Elemzések megtekintése** elemet. 
+2. Mutasson egy kártyára, és válassza a **További beállítások** (...) lehetőséget, majd az **Elemzések megtekintése** elemet. 
 
     Az elemzési képernyő fókusz módban nyílik meg.
    
@@ -86,7 +86,7 @@ Most Ön következik. Fedezze fel az elemzések szolgáltatást a [Szállítói 
 Teljes adatkészletek összefüggéseinek feltárása helyett egyetlen irányítópult-csempe létrehozásához használt adatok hatókörön belüli elemzésével is szűkíthető az elemzés. 
 
 1. Nyisson meg egy irányítópultot.
-2. Vigye az egérmutatót egy csempe fölé. Válassza a három pontot (…), majd az **Elemzések megtekintése** lehetőséget. A csempe [Fókusz módban](service-focus-mode.md) nyílik meg, és a jobb oldalán jelennek meg az elemzéskártyák.    
+2. Vigye az egérmutatót egy csempe fölé. Válassza a **További beállítások** (...) lehetőséget, majd az **Elemzések megtekintése** elemet. A csempe [Fókusz módban](service-focus-mode.md) nyílik meg, és a jobb oldalán jelennek meg az elemzéskártyák.    
    
     ![Fókusz mód](media/service-insights/pbi-insights-tile.png)    
 3. Felkeltette valamelyik elemzés az érdeklődését? Az adott elemzéskártyát kiválasztva az adatok mélyebb szintjére is leáshat. A kiválasztott elemzés a bal oldalon fog megjelenni, az új, kizárólag az adott elemzés adatain alapuló új elemzéskártyák pedig a jobb oldalon.    

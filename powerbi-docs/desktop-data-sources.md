@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 10/25/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 56583c796a8f6e32bed67629dee4fe3bea677bee
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 07618606c4554cf0e16eba029ea6198e3060a105
+ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307839"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72891714"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 A Power BI Desktoppal különböző forrásokból származó adatokhoz csatlakozhat. Az elérhető adatforrások teljes listája az oldal alján látható.
@@ -234,7 +234,7 @@ A PBIDS-fájlok olyan Power BI Desktop-fájlok, amelyek adott struktúrával ren
 
 Amikor egy szerző megnyit egy .PBIDS-fájlt, megnyílik a Power BI Desktop, és bekéri a felhasználótól a hitelesítő adatokat a hitelesítéshez és a fájlban megadott adatforráshoz való kapcsolódáshoz. Megjelenik a navigációs párbeszédpanel, és a felhasználónak ki kell választania az adatforrásból azokat a táblákat, melyeket be szeretne tölteni a modellbe. A felhasználónak ki kell választania az adatbázis(oka)t is, ha az nem lett megadva a PBIDS-fájlban. 
 
-Ettől kezdve a felhasználó megkezdheti a vizualizációk létrehozását, vagy a *legutóbbi források* használatával betölthet a modellbe egy új táblacsoportot. 
+Ettől kezdve a felhasználó megkezdheti a vizualizációk létrehozását, vagy a *Legutóbbi források* használatával betölthet a modellbe egy új táblacsoportot. 
 
 A .PBIDS-fájlok jelenleg csak egyetlen adatforrást támogatnak egyetlen fájlban. Egynél több adatforrás megadása hibát eredményez. 
 
@@ -364,21 +364,20 @@ Az URL-címnek magára a SharePoint-webhelyre kell mutatnia, és nem a webhelyen
 **SQL Server**
 ```
 { 
-  “version”: “0.1”, 
-  “connections”: [ 
+  "version": "0.1", 
+  "connections": [ 
     { 
-      “details”: { 
-        “protocol”: “tds”, 
-        “address”: { 
-          “server”: “server-name-here”, 
-          “database”: “db-name-here (optional)” 
+      "details": { 
+        "protocol": "tds", 
+        "address": { 
+          "server": "server-name-here", 
+          "database": "db-name-here (optional) "
         } 
       }, 
-      “options”: {}, 
-      “mode”: “DirectQuery” 
+      "options": {}, 
+      "mode": "DirectQuery" 
     } 
   ] 
-} 
 } 
 ```
  
@@ -419,6 +418,24 @@ Az URL-címnek magára a SharePoint-webhelyre kell mutatnia, és nem a webhelyen
 ```
  
 
+**Adatfolyam**
+```
+{
+  "version": "0.1",
+  "connections": [
+    {
+      "details": {
+        "protocol": "powerbi-dataflows",
+        "address": {
+          "workspace":"workspace id (Guid)",
+          "dataflow":"optional dataflow id (Guid)",
+          "entity":"optional entity name"
+        }
+       }
+    }
+  ]
+}
+```
 
 
 ## <a name="next-steps"></a>Következő lépések

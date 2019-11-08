@@ -1,6 +1,6 @@
 ---
 title: Power BI-szolgáltatások funkciói licenctípus szerint
-description: 'A Power BI szolgáltatásban a felhasználók számára elérhető képességeket két licenctípus határozza meg: felhasználónkénti (ingyenes és Pro), és kapacitásalapú.'
+description: A Power BI szolgáltatás a felhasználók a felhasználói licencek típusa (ingyenes vagy pro) és az alapján meghatározott képességekkel rendelkeznek, hogy a használt tartalom egy Power BI Premium-kapacitáshoz hozzárendelt munkaterületen található-e.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.date: 12/06/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: 6f44f4b382dacf3850cc5b3aa67f712a607468a6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 38bf9acb76faa3c2d5d04d247edbdc46455d22e1
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65554433"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442790"
 ---
 # <a name="power-bi-service-features-by-license-type"></a>Power BI-szolgáltatások funkciói licenctípus szerint
 
@@ -37,7 +37,7 @@ Az alábbi felsorolás a felhasználónkénti licenctípus által támogatott fu
 | API-k és vezérlők beágyazása |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
 | **Együttműködés** | | |
 | Társközi megosztás |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
-| Alkalmazás munkaterületei |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
+| Munkaterületek |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
 | Elemzés az Excelben, elemzés a Power BI Desktopban |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
 
 ## <a name="next-steps"></a>Következő lépések

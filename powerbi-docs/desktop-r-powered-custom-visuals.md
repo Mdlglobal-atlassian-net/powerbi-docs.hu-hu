@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: ab0c4a7bf529f878796ea4b41177e57d19c79128
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 276fc99a1bc4bed4aecb8ca4f6de1094599ff66f
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945255"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017641"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>R-alapú Power BI-vizualizációk a Power BI-ban
 
@@ -55,7 +55,7 @@ A vizualizációk az **AppSource** webhelyről történő kikeresésének és ki
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
 
-4. A vizualizáció letöltése után (ami ugyanúgy történik, mint bármely más fájl böngészőből történő letöltése), lépjen a **Power BI Desktopba**, kattintson a **Vizualizációk** ablaktáblában található, három pontot ábrázoló gombra (…), és válassza az **Importálás fájlból** lehetőséget.
+4. A vizualizáció letöltése után (ami ugyanúgy történik, mint bármely más fájl böngészőből történő letöltése), lépjen a **Power BI Desktopba**, kattintson a **További beállítások** (...) elemre a **Vizualizációk** ablakktáblán, és válassza az **Importálás fájlból** lehetőséget.
 
    ![R visual 4a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 5. A rendszer az alábbi képen látható módon figyelmezteti az egyéni vizualizációk importálásával kapcsolatban:

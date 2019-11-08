@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: 166b7d88e6ab55481ec56b0cf4f91628cd141bef
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: ab96cc6d17d340c626775bf2a03e225968985835
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69985745"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019397"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Jelentések vizsgálata a Power BI mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -45,7 +45,7 @@ A Power BI-mobilalkalmazásokban kétféle ikon jelöli a jelentéseket:
 > [!NOTE]
 > Ha fekvő tájolással tartja a telefont, akkor is a fekvő elrendezés jelenik meg, ha a jelentésoldalnak van telefonos elrendezése.
 
-Ha meg szeretne nyitni egy jelentést egy irányítópultról, koppintson egy csempén a jobb felső sarokban látható három pontra (...), majd koppintson a **Jelentés megnyitása** lehetőségre:
+Ha meg szeretne nyitni egy jelentést egy irányítópultról, koppintson egy csempén a jobb felső sarokban látható **További beállítások** (...) elemre, majd koppintson a **Jelentés megnyitása** elemre:
   
   ![Jelentés megnyitása](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
@@ -59,7 +59,7 @@ A koppintás egyenértékű a kattintással. Ha tehát egy jelentésben keresztk
 Ha rákoppint egy szeletelőértékre, azzal kijelöli az értéket, a jelentés többi részét pedig szeleteli ennek az értéknek az alapján.
 Ha egy hivatkozásra, gombra vagy könyvjelzőre koppint, akkor az aktiválódik azzal a művelettel, amelyet a jelentés készítője meghatározott.
 
-Alighanem észrevette már, hogy ha rákoppint egy vizualizációra, szegély jelenik meg körülötte. A szegély jobb felső sarkában három pont (...) látható. Ha a három pontra koppint, megjelenik az adott vizualizáción elvégezhető műveletek menüje:
+Alighanem észrevette már, hogy ha rákoppint egy vizualizációra, szegély jelenik meg körülötte. A szegély jobb felső sarkában látható a **További beállítások** (...). Ha a három pontra koppint, megjelenik az adott vizualizáción elvégezhető műveletek menüje:
 
 ![A vizualizáció és menüje](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
@@ -92,7 +92,7 @@ További információért olvassa el, hogyan [adhat hozzá részletezést a Powe
    
    
 ### <a name="using-the-actions-in-the-report-footer"></a>A jelentés láblécében szereplő műveletek használata
-A jelentés láblécében azokat a műveleteket találja, amelyeket végrehajthat az adott jelentésoldalon vagy a teljes jelentésben. A lábléc gyors hozzáférést biztosít a leggyakrabban használt műveletekhez. A három pont (...) gombra koppintva más műveleteket is elérhet:
+A jelentés láblécében azokat a műveleteket találja, amelyeket végrehajthat az adott jelentésoldalon vagy a teljes jelentésben. A lábléc gyors hozzáférést biztosít a leggyakrabban használt műveletekhez. A **További beállítások** (...) gombra koppintva más műveleteket is elérhet:
 
 ![Jelentés lábléce](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
@@ -105,7 +105,7 @@ A láblécről végrehajtható műveletek a következők:
 - Megtekintheti a jelentés összes műveletét.
 
 #### <a name="all-report-actions"></a>A jelentés összes művelete
-Ha jelentés láblécén látható ... elemre koppint, megjelenik minden olyan művelet, amelyet végrehajthat a jelentésen:
+Ha jelentés láblécén a **További beállítások** (...) elemre koppint, megjelenik minden olyan művelet, amelyet végrehajthat a jelentésen:
 
 
 ![A jelentés összes művelete](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)

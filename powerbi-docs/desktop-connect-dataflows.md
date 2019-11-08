@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 63c10a0507b5e484ac4c104a5a1e83f5dd411d9d
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 00b8ece26a5440128e62d77e3e9100f58f4d584c
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523286"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73430941"
 ---
 # <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-beta"></a>Csatlakozás Power BI-adatfolyamok által létrehozott adatokhoz a Power BI Desktopban (bétaverzió)
 A **Power BI Desktopban** ugyanúgy csatlakozhat a **Power BI-adatfolyamok** által létrehozott adatokhoz, mint bármely más adatforráshoz.
@@ -40,7 +40,7 @@ Javíthatja az adatfolyamok adatbetöltési teljesítményét. Ha például a fe
 
 Az adatfolyamok többsége a Power BI szolgáltatás bérlőjében helyezkedik el. A **Power BI Desktop**-felhasználók azonban csak akkor férnek hozzá az Azure Data Lake Storage Gen2-tárfiókokban tárolt adatfolyamhoz, ha az adatfolyam tulajdonosai, vagy külön megadott jogosultsággal rendelkeznek az adatfolyam CDM-mappájához. Figyelje meg a következő példát:
 
-1.  Anna új alkalmazás-munkaterületet hoz létre, amelyet úgy konfigurál, hogy a vállalati data lake-ben tárolja az adatfolyamokat.
+1.  Anna új munkaterületet hoz létre, amelyet úgy konfigurál, hogy a vállalati data lake-ben tárolja az adatfolyamokat.
 2.  Dávid, aki szintén tagja az Anna által létrehozott munkaterületnek, a Power BI Desktop és az adatfolyam-összekötő használatával szeretne adatokhoz jutni az Anna által létrehozott adatfolyamból.
 3.  Dávid hibajelenséget tapasztal, ugyanis nem adták hozzá jogosult felhasználóként az adatfolyam data lake-beli CDM-mappájához.
 

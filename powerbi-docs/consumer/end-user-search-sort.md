@@ -3,22 +3,25 @@ title: Tartalom keresése és rendezése a Power BI szolgáltatásban
 description: a tartalmak Power BI a Saját munkaterület részén való keresésével és rendezésével kapcsolatos dokumentáció
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 10/21/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: e32f0da4c512434fb316c010f2547de3ad5828e5
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: d5bc5638d9f98c1a35f57edd1d5d838c91c8ebf2
+ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70302775"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72891787"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigáció: tartalom keresése és rendezése a Power BI szolgáltatásban
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 A Power BI szolgáltatásban számos módon navigálhat a tartalmak között. A tartalmak típus szerint vannak rendezve a munkaterületén: irányítópultok és jelentések.  A tartalom emellett használat szerint is rendezve van: kedvencek, legutóbbi, alkalmazások, velem megosztott és kiemelt. A Power BI *kezdőlapja* az egylépéses navigáció érdekében egy oldalon rendez el minden tartalmat. Ezek a különböző tartalmakhoz vezető utak lehetővé teszik, hogy gyorsan megtalálja, amire szüksége van a Power BI szolgáltatásban.  
 
 ## <a name="navigation-within-workspaces"></a>Navigálás a munkaterületeken
@@ -44,10 +47,10 @@ A tartalmakat a nevük vagy a tulajdonosuk alapján is rendezheti. Vegye figyele
 Nem minden oszlop rendezhető. Vigye az egeret az oszlopok fejlécére, hogy lássa, melyeknél érhető el a rendezés.
 
 ___________________________________________________________________
-## <a name="navigation-using-the-left-nav-bar"></a>Navigálás a bal oldali navigációs sávval
-A bal oldali navigációs sáv osztályozza a tartalmakat, hogy könnyebben és gyorsan találja meg a szükséges elemeket.  
+## <a name="navigation-using-the-navigation-pane"></a>Navigálás a navigációs sávval
+A navigációs ablaktábla osztályozza a tartalmakat, hogy könnyebben és gyorsan megtalálja a szükséges elemeket.  
 
-![bal oldali navigációs sáv](./media/end-user-search-sort/power-bi-navbar.png)
+![bal oldali navigációs panel](./media/end-user-search-sort/power-bi-navbar.png)
 
 
 - Az Önnel megosztott tartalmak a **Velem megosztva** tárolóban érhetők el.

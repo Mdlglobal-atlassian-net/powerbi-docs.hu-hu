@@ -10,16 +10,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 04/02/2019
-ms.openlocfilehash: 8fd87174a1f94ac8a6472238164298c47aa5691e
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: e35f4f7bd870e51810d49c43a058e467bd724e6e
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391810"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429677"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba az ügyfelek számára
 
-Az **Azure-beli Power BI Embedded** segítségével jelentéseket, irányítópultokat és csempéket ágyazhat be alkalmazásokba az alkalmazás tulajdonában lévő adatokkal. **Az alkalmazás tulajdonában lévő adatok** esetében egy alkalmazás a Power BI-t használja beágyazott elemzőplatformként. **ISV-fejlesztőként** létrehozhat olyan Power BI-tartalmakat, amelyek jelentéseket, irányítópultokat vagy csempéket jelenítenek meg egy teljes mértékben integrált és interaktív alkalmazásban anélkül, hogy a felhasználóknak Power BI-licenccel kellene rendelkeznie. Ez az oktatóanyag bemutatja, hogyan integrálhat jelentést ügyfelei által használt alkalmazásokba a Power BI .NET SDK és a Power BI JavaScript API segítségével, az **Azure-beli Power BI Embedded** használatával.
+Az **Azure-beli Power BI Embedded** vagy az **Office-beli Power BI Embedded** segítségével jelentéseket, irányítópultokat és csempéket ágyazhat be alkalmazásokba az alkalmazás tulajdonában lévő adatokkal. **Az alkalmazás tulajdonában lévő adatok** esetében egy alkalmazás a Power BI-t használja beágyazott elemzőplatformként. **ISV-ként** vagy **fejlesztőként** létrehozhat olyan Power BI-tartalmakat, amelyek jelentéseket, irányítópultokat vagy csempéket jelenítenek meg egy teljes mértékben integrált és interaktív alkalmazásban anélkül, hogy a felhasználóknak Power BI-licenccel kellene rendelkezniük. Ez az oktatóanyag bemutatja, hogyan integrálhat jelentést alkalmazásokba a Power BI .NET SDK és a Power BI JavaScript API segítségével.
 
 ![Power BI jelentés beágyazása](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
@@ -33,12 +33,9 @@ Az oktatóanyag a következőket ismerteti:
 Első lépésként, rendelkeznie kell az alábbiakkal:
 
 * Egy [Power BI Pro-fiókkal](../service-self-service-signup-for-power-bi.md) (egy felhasználónévből és jelszóból álló fő fiókkal a Power BI Pro-fiókba való bejelentkezéshez) vagy egy [szolgáltatásnévvel (csak az alkalmazáson belül használható tokennel)](embed-service-principal.md).
-* Egy [Microsoft Azure](https://azure.microsoft.com/)-előfizetéssel.
 * Be kell állítana egy saját [Azure Active Directory-bérlőt](create-an-azure-active-directory-tenant.md).
 
 Ha még nem regisztrált a **Power BI Pro** szolgáltatásra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://powerbi.microsoft.com/pricing/).
-
-Ha még nincs Azure-előfizetése, kezdés előtt hozzon létre egy [ingyenes fiókot](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 ## <a name="set-up-your-embedded-analytics-development-environment"></a>A beágyazott elemzési fejlesztési környezet beállítása
 
@@ -60,13 +57,13 @@ Ha azonban továbbra is a szolgáltatásnevet használja, akkor regisztrálnia k
 
 ## <a name="set-up-your-power-bi-environment"></a>A Power BI-környezet beállítása
 
-### <a name="create-an-app-workspace"></a>Alkalmazás-munkaterület létrehozása
+### <a name="create-a-workspace"></a>Munkaterület létrehozása
 
-Ha jelentéseket, irányítópultokat vagy csempéket ágyaz be az ügyfelek számára, akkor ezeket a tartalmakat egy alkalmazás-munkaterületre kell helyezni. Különböző típusú munkaterületeket állíthat be: [hagyományos munkaterületeket](../service-create-workspaces.md) vagy [új munkaterületeket](../service-create-the-new-workspaces.md). Ha egy *fő* fiókot használ, akkor nem számít, hogy milyen típusú munkaterületet használ. Ha azonban *[szolgáltatásnevet](embed-service-principal.md)* használ az alkalmazásba való bejelentkezéshez, akkor az új munkaterületeket kell használnia. Mindkét forgatókönyvre érvényes, hogy mind a *fő* fióknak, mind a *szolgáltatásnévnek* az adminisztrátorának kell lennie azoknak az alkalmazás-munkaterületeknek, amelyeket az alkalmazásához használ.
+Ha jelentéseket, irányítópultokat vagy csempéket ágyaz be az ügyfelek számára, akkor ezeket a tartalmakat egy munkaterületre kell helyezni. Különböző típusú munkaterületeket állíthat be: [hagyományos munkaterületeket](../service-create-workspaces.md) vagy [új munkaterületeket](../service-create-the-new-workspaces.md). Ha egy *fő* fiókot használ, akkor nem számít, hogy milyen típusú munkaterületet használ. Ha azonban *[szolgáltatásnevet](embed-service-principal.md)* használ az alkalmazásba való bejelentkezéshez, akkor az új munkaterületeket kell használnia. Mindkét forgatókönyvre érvényes, hogy mind a *fő* fióknak, mind a *szolgáltatásnévnek* az adminisztrátorának kell lennie azoknak a munkaterületeknek, amelyeket az alkalmazásához használ.
 
 ### <a name="create-and-publish-your-reports"></a>Saját jelentések létrehozása és közzététele
 
-A Power BI Desktop segítségével létrehozhatja jelentéseit és adatkészleteit, majd közzéteheti ezeket a jelentéseket egy alkalmazás-munkaterületen. Ezt a feladatot kétféleképpen végezheti el: Végfelhasználóként közzétehet jelentéseket egy fő fiókkal (hagyományos Power BI Pro-licenc) egy hagyományos alkalmazás-munkaterületen. Ha szolgáltatásnevet használ, közzétehet jelentéseket az új munkaterületeken a [Power BI REST API-kkal](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
+A Power BI Desktop segítségével létrehozhatja jelentéseit és adatkészleteit, majd közzéteheti ezeket a jelentéseket egy munkaterületen. Ezt a feladatot kétféleképpen végezheti el: Végfelhasználóként közzétehet jelentéseket egy fő fiókkal (hagyományos Power BI Pro-licenc) egy hagyományos munkaterületen. Ha szolgáltatásnevet használ, közzétehet jelentéseket az új munkaterületeken a [Power BI REST API-kkal](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
 
 Az alábbi lépések bemutatják, hogyan teheti közzé a PBIX-jelentést a Power BI munkaterületén.
 
@@ -78,7 +75,7 @@ Az alábbi lépések bemutatják, hogyan teheti közzé a PBIX-jelentést a Powe
 
    ![PBI desktop jelentés](media/embed-sample-for-customers/embed-sample-for-customers-027.png)
 
-3. Tegye közzé az **alkalmazás-munkaterületeken**. Ez a folyamat eltér attól függően, hogy egy fő fiókot (Power Pro-licenc) használ vagy egy szolgáltatásnevet. Ha egy fő fiókot használ, akkor közzéteheti a jelentést a Power BI Desktopban.  Ha szolgáltatásnevet használ, a Power BI REST API-kat kell használnia.
+3. Tegye közzé a **munkaterületeken**. Ez a folyamat eltér attól függően, hogy egy fő fiókot (Power Pro-licenc) használ vagy egy szolgáltatásnevet. Ha egy fő fiókot használ, akkor közzéteheti a jelentést a Power BI Desktopban.  Ha szolgáltatásnevet használ, a Power BI REST API-kat kell használnia.
 
 ## <a name="embed-content-using-the-sample-application"></a>Tartalom beágyazása a mintaalkalmazással
 
@@ -139,7 +136,7 @@ Az **applicationId** beszerzéséhez kövesse az alábbi lépéseket:
 
 Ez az attribútum szükséges mindkét hitelesítési típushoz (a fő fiókkal és a [szolgáltatásnévvel](embed-service-principal.md) történőhöz).
 
-A **workspaceId** mezőbe írja be a Power BI-ban szereplő alkalmazás-munkaterület (csoport) GUID-azonosítóját. Ezt az információt beszerezheti az URL-címből, ha be van jelentkezve a Power BI szolgáltatásban vagy a PowerShell-lel.
+A **workspaceId** mezőbe írja be a Power BI-ban szereplő munkaterület (csoport) GUID-azonosítóját. Ezt az információt beszerezheti az URL-címből, ha be van jelentkezve a Power BI szolgáltatásban vagy a PowerShell-lel.
 
 URL-cím <br>
 
@@ -268,11 +265,23 @@ Report report = reports.Value.FirstOrDefault();
 ```
 
 ### <a name="create-the-embed-token"></a>A beágyazási token létrehozása
+Generáljon egy beágyazási tokent, amely a JavaScript API-ból használható. Az API-knak két típusa van, az első csoport öt API-t tartalmaz, amelyek mindegyike létrehoz egy beágyazási tokent egy adott elemhez. A második csoport, amely csak egy API-t tartalmaz, több elem beágyazására is használható tokent hoz létre.
 
-Generált egy beágyazási tokent, amely a JavaScript API-ból használható. A beágyazási token a beágyazott elemre vonatkozik. Ez azt jelenti, hogy amikor Power BI-tartalmat ágyaz be, mindig létre kell hoznia egy új beágyazási tokent. További információt (beleértve a használandó **hozzáférési szintet**) a [GenerateToken API-ban](https://msdn.microsoft.com/library/mt784614.aspx) talál.
+**Egy adott elem beágyazási tokenjeinek generálására szolgáló API-k**
 
-*A tartalomelemekhez (beágyazni kívánt jelentések, irányítópultok vagy csempék) beágyazási jogkivonatának létrehozásáról példát a [mintaalkalmazás](https://github.com/Microsoft/PowerBI-Developer-Samples) Services\EmbedService.cs fájljában találhat.*
+Az ezekkel az API-kkal létrehozott beágyazási token a beágyazni kívánt elemre vonatkozik. Ha egy Power BI-elemet (például jelentést, irányítópultot vagy csempét) ágyaz be ezekkel az API-kkal, ehhez létre kell hoznia egy új beágyazási tokent.
+* [Irányítópultok GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
+* [Adathalmazok GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
+* [Jelentések GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
+* [Jelentések GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
+* [Csempék GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
 
+A jelentések, irányítópultok vagy csempék beágyazási tokenjének létrehozásához minták a [mintaalkalmazás](https://github.com/Microsoft/PowerBI-Developer-Samples) következő fájljaiban érhetők el.
+* Services\EmbedService.cs
+* Models\EmbedConfig.cs
+* Models\TileEmbedConfig.cs
+
+Az alábbi egy kódpélda a jelentések GenerateTokenInGroup beágyazási token API-jának használatához.
 ```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
@@ -290,7 +299,55 @@ var embedConfig = new EmbedConfig()
 };
 ```
 
-Létrejött egy osztály az **EmbedConfig** és a **TileEmbedConfig** elemekhez. Minta a **Models\EmbedConfig.cs** és a **Models\TileEmbedConfig.cs** fájlban érhető el.
+**Több elem beágyazási tokenjének generálására szolgáló API**<a id="multiEmbedToken"></a>
+
+A [token generálása](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken) beágyazási API létrehoz egy tokent, amely több elem beágyazására is használható.
+
+A jelentés beágyazásakor az adathalmaz dinamikus kiválasztására is használható. További információ az API használatáról a [dinamikus kötésről](embed-dynamic-binding.md) szóló szakaszban olvasható.
+
+
+Az alábbi példa az API használatát mutatja be.
+ 
+```csharp
+using Microsoft.PowerBI.Api.V2;
+using Microsoft.PowerBI.Api.V2.Models;
+
+var reports = new List<GenerateTokenRequestV2Report>()
+{ 
+    new GenerateTokenRequestV2Report()
+    {
+        AllowEdit = false,
+        Id = report1.Id
+    },
+    new GenerateTokenRequestV2Report()
+    {
+        AllowEdit = true,
+        Id = report2.Id
+    }
+};
+
+var datasets= new List<GenerateTokenRequestV2Dataset>()
+{
+    new GenerateTokenRequestV2Dataset(dataset1.Id),
+    new GenerateTokenRequestV2Dataset(dataset2.Id),
+    new GenerateTokenRequestV2Dataset(dataset3.Id),
+};
+
+var targetWorkspaces = new List<GenerateTokenRequestV2TargetWorkspace>()
+{
+    new GenerateTokenRequestV2TargetWorkspace(workspace1.Id),
+    new GenerateTokenRequestV2TargetWorkspace(workspace2.Id),
+};
+
+var request = new GenerateTokenRequestV2()
+{
+    Datasets = datasetsRequestDetails ?? null,
+    Reports = reportsRequestDetails,
+    TargetWorkspaces = targetWSRequestdetials ?? null,
+};
+
+var token = client.GetClient().EmbedToken.GenerateToken(request);
+```
 
 ### <a name="load-an-item-using-javascript"></a>Elem betöltése a JavaScript használatával
 
@@ -345,35 +402,40 @@ A JavaScript API teljes körű mintáját a [Playground eszköz](https://microso
 
 ## <a name="move-to-production"></a>Átállás éles üzemre
 
-Most, hogy elkészült az alkalmazás fejlesztésével, ideje dedikált kapacitással ellátni az alkalmazás-munkaterületet. 
+Most, hogy elkészült az alkalmazás fejlesztésével, ideje dedikált kapacitással ellátni a munkaterületet. 
 
 > [!Important]
-> Az éles üzemre való átálláshoz ez kötelező lépés.
+> Az éles üzemre való átálláshoz ez kötelező lépés. Az összes munkaterületet (a jelentéseket és az irányítópultokat tartalmazókat, valamint az adatkészleteket tartalmazókat) hozzá kell rendelni egy kapacitáshoz.
 
 ### <a name="create-a-dedicated-capacity"></a>Dedikált kapacitás létrehozása
 
-Dedikált kapacitás létrehozásával dedikált erőforrást rendelhet egy ügyfélhez. Dedikált kapacitást a [Microsoft Azure Portalon](https://portal.azure.com) vásárolhat. A Power BI Embedded-kapacitások létrehozásával kapcsolatos részletekért tekintse meg a [Power BI Embedded-kapacitás az Azure Portalon való létrehozásával](azure-pbie-create-capacity.md) kapcsolatos cikket.
+Dedikált kapacitás létrehozásával dedikált erőforrást rendelhet egy ügyfélhez. Két típusú kapacitás közül választhat:
+* A **Power BI Premium** bérlői szintű Office 356-előfizetés, amely két SKU- (termékváltozat-) családban érhető el: *EM* és *P*. Power BI-tartalom beágyazásakor ezt a megoldást *Power BI-beágyazásnak* nevezzük. Az előfizetéssel kapcsolatos további információ: [Mi az a Power BI Premium?](../service-premium-what-is.md)
+* **Azure Power BI Embedded** – Dedikált kapacitást a [Microsoft Azure Portalon](https://portal.azure.com) vásárolhat. Ez az előfizetés az *A* termékváltozatokat használja. A Power BI Embedded-kapacitások létrehozásával kapcsolatos részletekért tekintse meg a [Power BI Embedded-kapacitás az Azure Portalon való létrehozásával](azure-pbie-create-capacity.md) kapcsolatos cikket.
+> [!NOTE]
+> A termékváltozatokkal nem férhet hozzá a Power BI-tartalmakhoz INGYENES Power BI-licenccel.
 
-Az alábbi táblázatból megtudhatja, milyen kapacitású Power BI Embedded-kapacitás felel meg a leginkább az igényeinek.
+Az alábbi táblázat az egyes termékváltozatok erőforrásait és korlátait ismerteti. Annak megállapításához, hogy melyik kapacitás felel meg legjobban az igényeinek, tekintse meg a [melyik termékváltozatot vásároljam meg a forgatókönyvemhez](https://docs.microsoft.com/power-bi/developer/embedded-faq#power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario) táblázatát.
 
-| Kapacitáscsomópont | Magok száma összesen<br/>*(Háttérrendszer + előtérrendszer)* | Háttérrendszerbeli magok | Előtérrendszerbeli magok | DirectQuery-/élő kapcsolat korlátai|
-| --- | --- | --- | --- | --- | --- |
-| A1 |1 virtuális mag |0,5 mag, 3 GB RAM |0,5 mag |Másodpercenként 5 |
-| A2 |2 virtuális mag |1 mag, 5 GB RAM |1 mag | Másodpercenként 10 |
-| A3 |42 virtuális mag |2 mag, 10 GB RAM |2 mag | Másodpercenként 15 |
-| A4 |8 virtuális mag |4 mag, 25 GB RAM |4 mag |Másodpercenként 30 |
-| A5 |16 virtuális mag |8 mag, 50 GB RAM |8 mag |Másodpercenként 60 |
-| A6 |32 virtuális mag |16 mag, 100 GB RAM |16 mag |Másodpercenként 120 |
+| Kapacitás-csomópontok | Összes virtuális mag | Háttérrendszeri virtuális magok | Memória (GB) | Előtérrendszeri virtuális magok | DirectQuery-/élő kapcsolatok (másodpercenként) | Párhuzamosan végrehajtható modellfrissítések |
+| --- | --- | --- | --- | --- | --- | --- |
+| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3,75 | 1 |
+| EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
+| EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
+| P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
+| P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
+| P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| | | | | | | |
 
-**_A termékváltozatokkal nem férhet hozzá a Power BI-tartalmakhoz INGYENES Power BI-licenccel._**
+### <a name="development-testing"></a>Fejlesztési tesztelés
 
-A PRO licenccel a beágyazási tokenek elsődlegesen fejlesztési tesztelésre használhatók, ezért a Power BI fő fiókja vagy a szolgáltatásnév csak korlátozott mennyiségű tokent tud előállítani. Éles környezetben használt beágyazásokhoz dedikált kapacitás szükséges. Dedikált kapacitásokkal nincs korlátja a beágyazási tokenek előállításának. Az [Elérhető szolgáltatások](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) oldalon ellenőrizheti a használati értéket, amely százalékosan jelzi az aktuális beágyazott használatot. A használati mennyiséget fő fiókonként számoljuk.
+A Pro licenccel a beágyazási tokenek elsődlegesen fejlesztési tesztelésre használhatók, ezért a Power BI fő fiókja vagy a szolgáltatásnév csak korlátozott mennyiségű tokent tud előállítani. Éles környezetben használt beágyazásokhoz dedikált kapacitás szükséges. Dedikált kapacitásokkal nincs korlátja a beágyazási tokenek előállításának. Az [Elérhető szolgáltatások](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) oldalon ellenőrizheti a használati értéket, amely százalékosan jelzi az aktuális beágyazott használatot. A használati mennyiséget fő fiókonként számoljuk.
 
 További információ: [Tanulmány a beágyazott analitikai kapacitás tervezéséről](https://aka.ms/pbiewhitepaper).
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Alkalmazás-munkaterület hozzárendelése dedikált kapacitáshoz
+### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Munkaterület hozzárendelése dedikált kapacitáshoz
 
-A dedikált kapacitás létrehozása után hozzárendelheti az alkalmazás-munkaterületet ehhez a kapacitáshoz.
+A dedikált kapacitás létrehozása után hozzárendelheti a munkaterületet ehhez a kapacitáshoz.
 
 Ha [szolgáltatásnévvel](embed-service-principal.md) szeretne dedikált kapacitást hozzárendelni egy munkaterülethez, használja a [Power BI REST API-t](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). Ha a Power BI REST API-t használja, akkor a [szolgáltatásnév objektumazonosítóját](embed-service-principal.md#how-to-get-the-service-principal-object-id) is használnia kell.
 
@@ -387,9 +449,9 @@ Dedikált kapacitás **fő fiókkal** történő munkaterülethez rendeléséhez
 
     ![Dedikált kapacitás hozzárendelése](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
-3. A **Mentés** kiválasztása után meg kell jelennie egy **gyémántnak** az alkalmazás-munkaterület neve mellett.
+3. A **Mentés** kiválasztása után meg kell jelennie egy **gyémántnak** a munkaterület neve mellett.
 
-    ![egy kapacitáshoz hozzárendelt alkalmazás-munkaterület](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
+    ![egy kapacitáshoz hozzárendelt munkaterület](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 
 ## <a name="next-steps"></a>Következő lépések
 

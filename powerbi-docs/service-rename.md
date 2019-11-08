@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 905ef263084cf531e6b38fb4640286e4d78697ce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e750b0c159e7844e28fd6e16db93a95e528a261e
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273771"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432179"
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>A Power BI-szolgáltatásban szinte bármit átnevezhet
 Ebből a cikkből megtudhatja, hogy miképpen nevezhet át irányítópultot, jelentést, munkafüzetet, adatkészletet, alkalmazást, vizualizációt vagy munkaterületet a Power BI szolgáltatásban.
@@ -28,9 +28,9 @@ Ebből a cikkből megtudhatja, hogy miképpen nevezhet át irányítópultot, je
 | Munkaterületen lévő jelentés |Igen |Nem |
 | Munkaterületen lévő munkafüzet |Igen |Nem |
 | Munkaterületen lévő adatkészlet |Igen |Nem |
-| Alkalmazás-munkaterület |Igen, ha Ön a tulajdonos, vagy rendszergazdai jogosultsága van |Nem |
-| Közzétett alkalmazások |Ha rendszergazdai engedélye van, az alkalmazás nevét az alkalmazás képernyőjéről nem, de az alkalmazás-munkaterületről módosíthatja, és újra közzéteheti azt új néven |Nem |
-| Alkalmazás tartalma (irányítópult, jelentés, munkafüzet, adatkészlet) |Ha rendszergazdai engedélye van, az alkalmazás tartalmát az alkalmazás képernyőjéről nem, de az alkalmazás-munkaterületről átnevezheti, és újra közzéteheti azt új néven |Nem |
+| munkaterület |Igen, ha Ön a tulajdonos, vagy rendszergazdai jogosultsága van |Nem |
+| Közzétett alkalmazások |Ha rendszergazdai engedélye van, az alkalmazás nevét az alkalmazás képernyőjéről nem, de a munkaterületről módosíthatja, és újra közzéteheti azt új néven |Nem |
+| Alkalmazás tartalma (irányítópult, jelentés, munkafüzet, adatkészlet) |Ha rendszergazdai engedélye van, az alkalmazás tartalmát az alkalmazás képernyőjéről nem, de a munkaterületről átnevezheti, és újra közzéteheti azt új néven |Nem |
 | **Velem megosztott** tartalom |Nem |Nem |
 
 ## <a name="rename-a-dashboard-report-or-workbook"></a>Irányítópult, jelentés vagy munkafüzet átnevezése
@@ -45,7 +45,7 @@ Ebből a cikkből megtudhatja, hogy miképpen nevezhet át irányítópultot, je
 1. Indítson el egy munkaterületet, és kattintson az **Adatkészletek** lapra.
    
    ![A munkaterület Adatkészletek lapja](media/service-rename/power-bi-ellipses.png)
-2. Mutasson az átnevezni kívánt elemre, kattintson a három pontra (...), majd kattintson az **Átnevezés** lapra.  
+2. Mutasson az átnevezni kívánt elemre, válassza a **További beállítások** (...) lehetőséget, majd kattintson az **Átnevezés** elemet.  
    
       ![az Átnevezés kiválasztása](media/service-rename/power-bi-rename-datasets.png)
    
@@ -57,11 +57,11 @@ Ebből a cikkből megtudhatja, hogy miképpen nevezhet át irányítópultot, je
    
      ![Panel átnevezése](media/service-rename/power-bi-rename.png)
 
-## <a name="rename-an-app-workspace"></a>Alkalmazás-munkaterület átnevezése
-Aki rendszergazdai jogosultságokkal rendelkezik, átnevezheti az alkalmazás-munkaterületeket.
+## <a name="rename-a-workspace"></a>Munkaterület átnevezése
+Aki rendszergazdai jogosultságokkal rendelkezik, átnevezheti a munkaterületeket.
 
 1. Az átnevezéshez indítsa el a munkaterületet.
-2. A jobb felső sarokban kattintson a három pontra (...), és válassza a **Munkaterület szerkesztése** lehetőséget. Ha nem látja ezt a lehetőséget, akkor nincs engedélye a munkaterület átnevezésére. 
+2. A jobb felső sarokban válassza a **További beállítások** (...), majd a **Munkaterület szerkesztése** lehetőséget. Ha nem látja ezt a lehetőséget, akkor nincs engedélye a munkaterület átnevezésére. 
    
     ![a Munkaterület szerkesztése elem kiválasztása](media/service-rename/power-bi-edit-workspace.png)
 3. Írja be a munkaterület új nevét, és kattintson a **Mentés** elemre.
@@ -85,7 +85,7 @@ Nincs megelégedve a Power BI-jelentésoldal nevével?  Az új név csak egy kat
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 * Ha az átnevezendő elemet mások osztották meg Önnel, vagy tartalomcsomaghoz tartozik, nem jelenik meg a fogaskerék ikon, és nem férhet hozzá a Beállításokhoz.
-* Ha nem látja a három pontot (...) az **Adatkészletek** lapon, bontsa ki a böngészőablakot.
+* Ha nem látja a **További beállítások** (...) elemet az **Adatkészletek** lapon, állítsa nagyobbra a böngészőablakot.
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

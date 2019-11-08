@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86b7a5e93183c06d6cac1445cb1702edde5d4bc9
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: f2a80b075a56cdeccfa4c3675cdf31504b6a7e5d
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020588"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431757"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Céges tartalomcsomagok kezelése, frissítése és törlése
 > [!NOTE]
@@ -71,14 +71,14 @@ Egy másik módosítási lehetőség a tartalomcsomag létrehozói számára a h
 A tartalomcsomag létrehozójaként [ütemezheti az adatkészletek frissítését](refresh-data.md).  Amikor létrehoz és feltölt egy tartalomcsomagot, az adatkészletekkel együtt a frissítési ütemezést is feltölti a rendszer. Ha megváltoztatja a frissítési ütemezést, újra közzé kell tennie a tartalomcsomagot (a fentebb leírtak szerint).
 
 ## <a name="delete-an-organizational-content-pack-from-appsource"></a>Céges tartalomcsomag törlése az AppSource-ból
-Csak azokat a tartalomcsomagokat törölheti az AppSource-ból, amelyeket Ön hozott létre. Ha létrehozott egy vállalati tartalomcsomagot egy alkalmazás-munkaterületen, és úgy dönt, hogy törli ezt a munkaterületet, akkor először a tartalomcsomagot kell törölnie. Ha a tartalomcsomag előzetes törlése nélkül törli a munkaterületet, akkor elveszti az ilyen tartalomcsomagokhoz való hozzáférését, és a Microsoft ügyfélszolgálatához kell fordulnia segítségért. 
+Csak azokat a tartalomcsomagokat törölheti az AppSource-ból, amelyeket Ön hozott létre. Ha létrehozott egy vállalati tartalomcsomagot egy munkaterületen, és úgy dönt, hogy törli ezt a munkaterületet, akkor először a tartalomcsomagot kell törölnie. Ha a tartalomcsomag előzetes törlése nélkül törli a munkaterületet, akkor elveszti az ilyen tartalomcsomagokhoz való hozzáférését, és a Microsoft ügyfélszolgálatához kell fordulnia segítségért. 
 
 > [!TIP]
 > [Törölheti ugyanakkor az olyan tartalomcsomagokra mutató kapcsolatokat](service-organizational-content-pack-disconnect.md), melyeket nem Ön hozott létre. Ilyen esetben az AppSource-ból nem törli a tartalomcsomagot a rendszer.
 > 
 > 
 
-1. A tartalomcsomagok AppSource-ból való törléséhez lépjen arra az alkalmazás-munkaterületre, ahol létrehozta a tartalomcsomagot, kattintson a ![](media/service-organizational-content-pack-manage-update-delete/cog.png) fogaskerék ikonra, majd válassza a **Tartalomcsomag megtekintése** lehetőséget.
+1. A tartalomcsomagok AppSource-ból való törléséhez lépjen arra a munkaterületre, ahol létrehozta a tartalomcsomagot, kattintson a ![](media/service-organizational-content-pack-manage-update-delete/cog.png) fogaskerék ikonra, majd válassza a **Tartalomcsomag megtekintése** lehetőséget.
 2. Válassza a **Törlés \> Törlés** lehetőséget. 
    
    * Azon csoporttagok elől, akik nem szabták testre a tartalomcsomagot, a rendszer automatikusan eltávolítja a tartalomcsomaghoz tartozó irányítópultokat és jelentéseket. Számukra nem lesznek elérhetők, és nem fogják látni a Navigációs panelen sem a tartalomcsomagot.

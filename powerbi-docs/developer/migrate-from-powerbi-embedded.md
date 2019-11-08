@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d06709f16beec025b99b69d82d5c17c248288004
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61270455"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429088"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI-munkaterületcsoport tartalmainak migrálása a Power BI Embeddedbe
 
@@ -20,7 +20,7 @@ A cikk azt mutatja be, hogyan migrálhatja az adatokat a Power BI-munkaterületc
 
 A Microsoft nemrégiben [bejelentette az új, kapacitásalapú Power BI Embedded licencelési modellt](https://powerbi.microsoft.com/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), amelynek segítségével a felhasználók rugalmasabban érhetik el, oszthatják meg és terjeszthetik a tartalmakat. Az ajánlat emellett növeli a méretezhetőséget és a teljesítményt.
 
-A Power BI Embeddeddel a tartalmak (például irányítópultok, átjárók és alkalmazás-munkaterületek) beágyazásához egyetlen egységes API-felület, konzisztens funkciókészlet és a Power BI legújabb szolgáltatásai használhatók. A továbbiakban lehetősége van a Power BI Desktopban elkezdeni a munkát, az üzembe helyezést pedig elvégezheti a Power BI Embedded használatával.
+A Power BI Embeddeddel a tartalmak (például irányítópultok, átjárók és munkaterületek) beágyazásához egyetlen egységes API-felület, konzisztens funkciókészlet és a Power BI legújabb szolgáltatásai használhatók. A továbbiakban lehetősége van a Power BI Desktopban elkezdeni a munkát, az üzembe helyezést pedig elvégezheti a Power BI Embedded használatával.
 
 A jelenlegi Power BI-munkaterületcsoport már csak korlátozott ideig lesz elérhető. Nagyvállalati Szerződéssel rendelkező ügyfelek szerződésük lejáratáig kapnak hozzáférést hozzá, míg azok, akik a Direkt vagy CSP-csatornákon keresztül szerezték be a Power BI-munkaterületcsoportokat, a Power BI Embedded általános megjelenésétől számított egy évig férhetnek hozzá a munkaterület-csoportokhoz.  A cikk útmutatást ad a Power BI-munkaterületcsoportok migrálásához az új Power BI Embeddedbe, valamint tájékoztatást nyújt az alkalmazás várható változásairól.
 
@@ -56,19 +56,19 @@ A Power BI-munkaterület-csoport Power BI Embeddedbe való migrálásának elők
 A következő fiókoknak létezniük kell a bérlőn.
 
 > [!NOTE]
-> Ezeknek a fiókoknak Power BI Pro licenccel kell rendelkezniük, hogy használhassák az alkalmazás-munkaterületet.
+> Ezeknek a fiókoknak Power BI Pro-licenccel kell rendelkezniük, hogy használhassák a munkaterületeket.
 
 1. Egy bérlői rendszergazda felhasználó.
 
-    Javasoljuk, hogy ez a felhasználó a beágyazás céljával létrehozott összes alkalmazás-munkaterület tagja legyen.
+    Javasoljuk, hogy ez a felhasználó a beágyazás céljával létrehozott összes munkaterület tagja legyen.
 
 2. A tartalmat létrehozó elemzők fiókjai.
 
-    Ezeket a felhasználókat igény szerint hozzá kell rendelni az alkalmazás-munkaterületekhez.
+    Ezeket a felhasználókat igény szerint hozzá kell rendelni a munkaterületekhez.
 
 3. Az alkalmazás *fő* felhasználói vagy Embedded-fiókja.
 
-    A fiók hitelesítő adatait az alkalmazások háttérrendszere tárolja majd és használja az Azure AD-token beszerzéséhez a Power BI API-k használatához. A rendszer ennek a fióknak a használatával hozza létre a beágyazási tokent az alkalmazáshoz. A fióknak a beágyazáshoz létrehozott alkalmazás-munkaterületeken is rendszergazdai jogosultsággal kell rendelkeznie.
+    A fiók hitelesítő adatait az alkalmazások háttérrendszere tárolja majd és használja az Azure AD-token beszerzéséhez a Power BI API-k használatához. A rendszer ennek a fióknak a használatával hozza létre a beágyazási tokent az alkalmazáshoz. A fióknak a beágyazáshoz létrehozott munkaterületeken is rendszergazdai jogosultsággal kell rendelkeznie.
 
 > [!NOTE]
 > Ez csak a szervezet egy normál felhasználói fiókja, amely beágyazási célokra lesz használatos.
@@ -83,14 +83,14 @@ A REST API-hívások indításához az alkalmazásokat regisztrálni kell az Azu
 
 Az alkalmazást annak **fő** fiókjával kell regisztrálni.
 
-## <a name="create-app-workspaces-required"></a>Alkalmazás-munkaterületek létrehozása (kötelező)
+## <a name="create-workspaces-required"></a>Munkaterületek létrehozása (kötelező)
 
-Az alkalmazás-munkaterületek használatával nagyobb fokú elszigetelés érhető el, ha az alkalmazás több ügyfelet is kiszolgál. Az irányítópultok és a jelentések így ügyfelenként elkülöníthetőek. Ekkor alkalmazás-munkaterületenként külön Power BI-fiók használatával még jobban elszigetelheti az alkalmazásfelületeket az ügyfelek közt.
+A munkaterületek használatával nagyobb fokú elszigetelés érhető el, ha az alkalmazás több ügyfelet is kiszolgál. Az irányítópultok és a jelentések így ügyfelenként elkülöníthetőek. Ekkor munkaterületenként külön Power BI-fiók használatával még jobban elszigetelheti az alkalmazásfelületeket az ügyfelek közt.
 
 > [!IMPORTANT]
 > Személyes munkaterületek használatával nem aknázhatja ki a nem Power BI-felhasználók számára való beágyazás kínálta előnyöket.
 
-A Power BI alkalmazás-munkaterületek létrehozásához szükség van egy Pro licenccel rendelkező felhasználóra. Az alkalmazás-munkaterületet létrehozó Power BI-felhasználó alapértelmezés szerint az adott munkaterület rendszergazdájává válik.
+A Power BI munkaterületek létrehozásához szükség van egy Pro licenccel rendelkező felhasználóra. A munkaterületet létrehozó Power BI-felhasználó alapértelmezés szerint az adott munkaterület rendszergazdájává válik.
 
 > [!NOTE]
 > Az alkalmazás *fő* fiókjának rendszergazdai jogosultsággal kell rendelkeznie a munkaterületen.
@@ -163,7 +163,7 @@ Bizonyos kerülő megoldásokkal lehetséges migrálni a Push API-val készítet
 
 ## <a name="create-and-upload-new-reports"></a>Új jelentések létrehozása és feltöltése
 
-A Power BI-munkaterületcsoportokból migrált tartalmak mellett a Power BI Desktop használatával is létrehozhatja a jelentéseket és adatkészleteket, majd közzéteheti ezeket a jelentéseket egy alkalmazás-munkaterületen. A jelentéseket közzétevő végfelhasználónak Power BI Pro-licencre van szüksége az alkalmazás-munkaterületen történő közzétételhez.
+A Power BI-munkaterületcsoportokból migrált tartalmak mellett a Power BI Desktop használatával is létrehozhatja a jelentéseket és adatkészleteket, majd közzéteheti ezeket a jelentéseket egy munkaterületen. A jelentéseket közzétevő végfelhasználónak Power BI Pro-licencre van szüksége a munkaterületen történő közzétételhez.
 
 ## <a name="rebuild-your-application"></a>Az alkalmazás újrabuildelése
 
@@ -179,9 +179,9 @@ Az alkalmazásban az abban kezelt felhasználókat leképezi egy, az alkalmazás
 
 Amikor kész átállni éles üzemre, a következőket kell tennie.
 
-* Ha külön bérlőt használ a fejlesztéshez, gondoskodnia kell róla, hogy az alkalmazás-munkaterületek, valamint az irányítópultok és a jelentések elérhetők az éles környezetben. Arra is figyelnie kell, hogy az alkalmazást az Azure AD-ben az éles környezeti bérlőhöz hozza létre, és hozzárendelje a megfelelő alkalmazásjogosultságokat, amint azt az 1. lépés tárgyalja.
+* Ha külön bérlőt használ a fejlesztéshez, gondoskodnia kell róla, hogy a munkaterületek, valamint az irányítópultok és a jelentések elérhetők az éles környezetben. Arra is figyelnie kell, hogy az alkalmazást az Azure AD-ben az éles környezeti bérlőhöz hozza létre, és hozzárendelje a megfelelő alkalmazásjogosultságokat, amint azt az 1. lépés tárgyalja.
 * Vásároljon az igényeinek megfelelő kapacitást. A [Power BI Embedded elemzési kapacitásának tervezésével kapcsolatos tanulmány](https://aka.ms/pbiewhitepaper) további információt tartalmaz a szükséges kapacitás mennyiségéről és típusairól. Kapacitást az Azure-ban [vásárolhat](https://portal.azure.com/#create/Microsoft.PowerBIDedicated).
-* Az alkalmazás-munkaterületet a Speciális felületen módosíthatja és rendelheti hozzá a Premium kapacitásokhoz.
+* A munkaterületet a Speciális felületen módosíthatja és rendelheti hozzá a Premium kapacitásokhoz.
 
     ![Prémium-kapacitás](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
 

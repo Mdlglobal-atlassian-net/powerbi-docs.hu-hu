@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ae896fb737eda6f95efa1589f2b3384e7426cf30
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: aef50d58dc11269c2c30010c1ca89843689f45c4
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654584"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017683"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Összetett modellek használata a Power BI Desktopban
 
@@ -53,7 +53,7 @@ DirectQuery használata esetén *összetett modellekkel* létrehozható egy olya
 A több DirectQuery-forrás adatait egyesítő vagy DirectQuery- és importált adatokat egyesítő modelleket *összetett modellnek* nevezzük.
 
 
-A táblák között ugyanúgy hozhat létre kapcsolatokat mint eddig, még akkor is, ha a táblák különböző forrásokból származnak, a következő megkötésekkel: a források közötti minden kapcsolatnak *több a többhöz* számosságúnak kell lennie függetlenül a tényleges számosságtól. Az ilyen kapcsolatok a *több a többhöz* kapcsolatok szokásos módján működnek. Ezt a [Több a többhöz kapcsolatok a Power BI Desktopban (előzetes verzió)](desktop-many-to-many-relationships.md) című cikk ismerteti. 
+A táblák között létrehozhat kapcsolatokat, mint eddig is, még akkor is, ha ezek a táblák különböző forrásokból származnak. Minden olyan kapcsolat, amely több forrásból származik *több a többhöz* számossággal jön létre, a tényleges számosságtól függetlenül. Ezeket egy-a-sokhoz, sok-az-egyhez vagy egy-az-egyhez értékre módosíthatja. Attól függően, hogy milyen számosságot állít be, az adatforrások közötti kapcsolatok másképpen viselkednek abból a szempontból, hogy nem használhat DAX-függvényeket az egyik oldalon a több oldal értékeinek lekérésére. A teljesítményre gyakorolt hatás is megjelenhet a több-a-többhöz kapcsolathoz viszonyítva ugyanazon a forráson belül.
 
 > [!NOTE]
 > Az összetett modellek körében minden importált tábla egyetlen adatforrásként jelenik meg, függetlenül az alapjukat képező adatforrástól, ahonnan importálva lettek.   
@@ -88,7 +88,7 @@ Hasonlóan a Power BI Desktop **Kapcsolatok** nézetében egy újabb, **ProductM
 
 ![Táblázatok kapcsolat nézetben](media/desktop-composite-models/composite-models_08.png)
 
-Most ezen táblázatok és a modell többi táblázata között kell kapcsolatot létesítenünk. Ahogy szoktuk, létrehozunk egy kapcsolatot az SQL Server **Bike** táblázata és az importált **ProductManagers** táblázat között. Tehát a kapcsolat a *Bike[ProductName]* és a *ProductManagers[ProductName]* között jön létre. Ahogyan azt korábban már leírtuk, a források közötti összes kapcsolatnak *több a többhöz* számosságúnak kell lennie. 
+Most ezen táblázatok és a modell többi táblázata között kell kapcsolatot létesítenünk. Ahogy szoktuk, létrehozunk egy kapcsolatot az SQL Server **Bike** táblázata és az importált **ProductManagers** táblázat között. Tehát a kapcsolat a *Bike[ProductName]* és a *ProductManagers[ProductName]* között jön létre. Ahogyan azt korábban már leírtuk, a források közötti összes kapcsolat alapértelmezetten *több-a-többhöz* számosságú. 
 
 ![A „Kapcsolat létrehozása” ablak](media/desktop-composite-models/composite-models_09.png)
 

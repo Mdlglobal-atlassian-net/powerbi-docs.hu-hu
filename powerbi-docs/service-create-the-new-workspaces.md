@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7d53acc0dc8c669026665347de9593fa1df84c62
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 2fdc893ac8545df8fc64f45959a418018a189c84
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020153"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020468"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Új munkaterületek létrehozása a Power BI-ban
 
@@ -74,7 +74,7 @@ Meghatározhatja, hogy mely felhasználók kapjanak értesítést a munkaterüle
 
     A **Munkaterület létrehozása** panelen, amikor először létrehozza.
 
-    A bal oldali navigációs panelen válassza a **Munkaterületek** elem melletti nyilat, majd a munkaterület neve melletti három pontot (...), végül a **Munkaterület beállításai** menüpontot. Megnyílik a **Beállítások** panel.
+    A bal oldali navigációs panelen válassza a **Munkaterületek** elem melletti nyilat, majd a munkaterület neve melletti **További beállítások** (...) lehetőséget, végül a **Munkaterület beállításai** menüpontot. Megnyílik a **Beállítások** panel.
 
     ![Munkaterület beállításai](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -94,7 +94,7 @@ A Power BI nem szinkronizálja azon felhasználók és csoportok jogosultságait
 
     A **Munkaterület létrehozása** panelen, amikor először létrehozza.
 
-    A bal oldali navigációs panelen válassza a **Munkaterületek** elem melletti nyilat, majd a munkaterület neve melletti három pontot (...), végül a **Munkaterület beállításai** menüpontot. Megnyílik a **Beállítások** panel.
+    A bal oldali navigációs panelen válassza a **Munkaterületek** elem melletti nyilat, majd a munkaterület neve melletti **További beállítások** (...) lehetőséget, végül a **Munkaterület beállításai** menüpontot. Megnyílik a **Beállítások** panel.
 
     ![Munkaterület beállításai](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 

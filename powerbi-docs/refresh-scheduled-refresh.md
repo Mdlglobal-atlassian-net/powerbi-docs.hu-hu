@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 46f61d2fcce21e3f8e6dae83c32457414928faee
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 9f1289b5fce74c60e5b3802054cef008dd33ada2
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816581"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021554"
 ---
-# <a name="configure-scheduled-refresh"></a>Ütemezett frissítés konfigurálása
+# <a name="configure-scheduled-refresh"></a>Ütemezett frissítés beállítása
 
 >[!NOTE]
 >Két havi inaktivitás után az adatkészlet ütemezett frissítése szünetel. További információt a cikk egy későbbi részében, az [*Ütemezett frissítés*](#scheduled-refresh) című szakaszban talál.
@@ -30,7 +30,7 @@ Ez a cikk ismerteti mind a [(privát) helyszíni adatátjáró](service-gateway-
 
 A **Ütemezett frissítés** képernyőre való váltáshoz tegye a következőt:
 
-1. Kattintson az **Adatkészletek** alatt található egyik adatkészlet melletti **három pontra (...)** .
+1. Válassza az **Adatkészletek** szakaszban listázott adathalmaz melletti **További beállítások** (...) lehetőséget.
 2. Válassza a **Frissítés ütemezése** lehetőséget.
 
     ![Frissítés ütemezése](media/refresh-scheduled-refresh/dataset-menu.png)
@@ -49,7 +49,7 @@ Ha rendelkezik beállított személyes átjáróval, és az online állapotú, a
 A nagyvállalati átjárót is kiválaszthatja, ha az a rendelkezésére áll. Csak akkor fog rendelkezésre álló nagyvállalati átjárót látni, ha a fiókja szerepel az adott átjáróhoz konfigurált adatforrás **Felhasználók** lapján.
 
 ## <a name="data-source-credentials"></a>Adatforráshoz tartozó hitelesítő adatok
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
+### <a name="power-bi-gateway---personal"></a>Személyes Power BI-átjáró
 Ha a személyes átjárót használja az adatok frissítésére, meg kell adnia a háttéradatforráshoz való kapcsolódásra használt hitelesítő adatokat. Ha online szolgáltatásból kapcsolódott egy tartalomcsomaghoz, a kapcsolódáshoz megadott hitelesítő adatokat a rendszer az ütemezett frissítéshez is felhasználja.
 
 ![Adatforráshoz tartozó hitelesítő adatok](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)

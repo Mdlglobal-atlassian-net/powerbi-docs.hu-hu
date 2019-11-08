@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1e4d589702bb471a2abc6af9448a6846825adbfe
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: df3c8b33de32bb9dd42507cc7bb601cee9f6e575
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160371"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432015"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)
 
@@ -183,7 +183,7 @@ Létezik néhány ismert probléma is. Ezeket az alábbi szakasz ismerteti.
 
 Power BI Desktop-ügyfél csak akkor fér hozzá az **Azure Data Lake-tárfiókokban** tárolt adatfolyamokhoz, ha az adatfolyam tulajdonosa, vagy ha jogosultsággal rendelkezik a lake-beli CDM-mappához. A helyzet a következőnek felel meg:
 
-1. Anna új alkalmazás-munkaterületet hozott létre, amelyet úgy konfigurált, hogy a vállalati data lake-ben tárolja az adatfolyamokat. 
+1. Anna új munkaterületet hozott létre, amelyet úgy konfigurált, hogy a vállalati data lake-ben tárolja az adatfolyamokat. 
 2. Dávid, aki szintén tagja az Anna által létrehozott munkaterületnek, a Power BI Desktop és az adatfolyam-összekötő használatával szeretne adatokhoz jutni az Anna által létrehozott adatfolyamból.
 3. Dávid hasonló hibajelenséget tapasztal, ugyanis nem rendelkezik jogosultsággal az adatfolyam lake-beli CDM-mappájához.
 
