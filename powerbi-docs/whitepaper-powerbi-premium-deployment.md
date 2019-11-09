@@ -3,19 +3,18 @@ title: Power BI Premium kapacitások üzembe helyezése és kezelése
 description: Ismerkedjen meg Power BI Premium lehetséges lehetőségeivel, és Ismerje meg, hogyan tervezhet, helyezhet üzembe, figyelheti és elháríthatja a méretezhető megoldásokat.
 author: mgblythe
 ms.author: mblythe
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: f9269b52b1721cd7c6801cd0337911159c0b2494
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 3ccd4af0f00e132c8bc0bd29a9ff23f89b13a15f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73786346"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880611"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Power BI Premium kapacitások üzembe helyezése és kezelése
 
@@ -834,7 +833,7 @@ Power BI Premium kapacitások üzembe helyezéséhez és kezeléséhez a rendsze
 
 ## <a name="end-notes"></a>Záró megjegyzések
 
-<a name="endnote-01"></a>\[1\] ez a technikai dokumentum olyan Power BI Premium, amelyet csak a Power BI Cloud Service támogat, így a Power BI jelentéskészítő kiszolgáló nem terjed ki a hatókörre, azzal a kivétellel, hogy a Power BI jelentéskészítő kiszolgáló telepítéséhez szükséges licenc szerepel a következőben: néhány Power BI Premium SKU-t.
+<a name="endnote-01"></a>\[1\] ez a technikai dokumentum olyan Power BI Premium, amelyet csak a Power BI Cloud Service támogat, így a Power BI jelentéskészítő kiszolgáló nem terjed ki a hatókörre, azzal a kivétellel, hogy a Power BI jelentéskészítő kiszolgáló telepítéséhez szükséges licenc néhány Power BI Premium SKU része.
 
 <a name="endnote-02"></a>\[2\] Power BI felhőalapú szolgáltatásként, ha a tartalom beágyazására használatos a felhasználók nevében, a szolgáltatásként nyújtott platform (Pásti). Ezt a beágyazási típust különböző két termékkel lehet megvalósítani, amelyek közül az egyik Power BI Premium.
 
