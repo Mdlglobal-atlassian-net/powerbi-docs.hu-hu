@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 10/04/2019
-ms.openlocfilehash: 97b9d68a8fa17a3ce1758eeaa16d2503a38a4743
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 513c6a4a3f5041b7af06e5c1713de3bd417a1354
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968489"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431582"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Többoldalas jelentések a Power BI-ban: Gyakori kérdések 
 
 Ez a cikk a lapszámozott jelentésekkel kapcsolatos gyakori kérdésekre ad választ. Ezek a jelentések magas szinten formázott, tökéletesen pontos jelentések, amelyek nyomtatáshoz vagy PDF-készítéshez vannak optimalizálva. Lapszámozottnak hívjuk őket, mert több oldalon megjeleníthetők. A lapszámozott jelentések az SQL Server Reporting Services RDL-jelentéseinek technológiáján alapulnak. 
 
-Ez a cikk számos, a Power BI Premium lapszámozott jelentéseivel, valamint a Jelentéskészítővel (a lapszámozott jelentések készítéséhez használt különálló eszközzel) kapcsolatos gyakori kérdést megválaszol. A szolgáltatásban csak Power BI Pro-licenccel tehet közzé jelentéseket. Lapszámozott jelentéseket a Saját munkaterületen vagy az alkalmazások munkaterületein tehet közzé, ha az adott munkaterület egy Power BI Premium-kapacitáshoz tartozik. 
+Ez a cikk számos, a Power BI Premium lapszámozott jelentéseivel, valamint a Jelentéskészítővel (a lapszámozott jelentések készítéséhez használt különálló eszközzel) kapcsolatos gyakori kérdést megválaszol. A szolgáltatásban csak Power BI Pro-licenccel tehet közzé jelentéseket. Oldalakra osztott jelentéseket a Saját munkaterületen vagy a munkaterületeken tehet közzé, ha az adott munkaterület egy Power BI Premium-kapacitáshoz tartozik. 
 
 ## <a name="administration"></a>Felügyelet
 
@@ -163,7 +163,7 @@ Igen, az SSRS-hez hasonlóan itt is támogatjuk kódok futtatását.
 
 ### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Használhatom a Power BI Embedded szolgáltatást lapszámozott jelentések egy általam üzemeltetett alkalmazásba történő beágyazásához?
 
-Az SaaS-beágyazás már támogatott. A PaaS-beágyazás jelenleg nem támogatott.
+Már elérhető a SaaS-beágyazás, beleértve a biztonságos beágyazás támogatását.  A PaaS-beágyazás támogatását az év későbbi részére tervezzük.
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Végezhetek részletezést egy Power BI-jelentésből egy lapszámozott jelentésbe?
 
@@ -179,7 +179,7 @@ Terveink szerint a jelentések ugyanazokat a főbb szolgáltatásbeli forgatók�
 
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Tervben van egy migrálási eszköz létrehozása, amellyel az SSRS-ügyfelek áthelyezhetik a meglévő jelentéseiket és eszközeiket a Power BI-ba?
 
-Jelenleg vizsgáljuk azokat a lehetőségeket, amelyekkel automatikusan lehet tartalmat áthelyezni a Power BI-ba, de ez csak az általános elérhetőség után esedékes.
+Egy projekt a GitHubon mostantól támogatja a tartalom SQL Server Reporting Services-ből Power BI-ból való migrálását.  Itt talál további részleteket és töltheti le az eszközt: [https://github.com/microsoft/RdlMigration](https://github.com/microsoft/RdlMigration)
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Létezik jelentésmegjelenítő vezérlőelem a Power BI szolgáltatásban a lapszámozott jelentésekhez?
 

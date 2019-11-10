@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1fb775bd203fc1e0f6342a0d5cd4d9e382b8342a
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: fc983fe9027f6d94c5394d524a6417a64719a8ac
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70750922"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431707"
 ---
 # <a name="optimizing-premium-capacities"></a>Prémium szintű kapacitások optimalizálása
 
@@ -33,7 +33,7 @@ A cikk vége a tesztelést és a Premium-kapacitás méretezését ismerteti.
 
 Ha a lehető legjobb kihasználtságot és teljesítményt szeretné elérni, használhat bizonyos ajánlott eljárásokat:
 
-- Alkalmazás-munkaterületek használata személyes munkaterületek helyett.
+- Munkaterületek használata személyes munkaterületek helyett.
 - Az üzleti szempontból kritikus és az önkiszolgáló BI (SSBI) szétválasztása eltérő kapacitásokra.
 
   ![Az üzleti szempontból kritikus és az önkiszolgáló BI szétválasztása eltérő kapacitásokra](media/service-premium-capacity-optimize/separate-capacities.png)

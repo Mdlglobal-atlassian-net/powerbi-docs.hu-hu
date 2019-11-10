@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: af227d2bcbbba2a27804ec74f14003f54aa89dde
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e7952093c333d517792c9cd44d78d8c5538f2b22
+ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514680"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72891744"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Az SAP BW Connector használata a Power BI Desktopban
 A Power BI Desktopban hozzáférhet az **SAP Business Warehouse (BW)** adataihoz.
@@ -236,10 +236,11 @@ Az alábbi táblázat az SAP BW aktuális támogatását ismerteti.
 |Power BI-átjáró     |Importálás      | A Power BI Desktoppal egyező |         |   |   |
 |Power BI-átjáró     |DirectQuery | Feléhasználó/jelszó        | Alkalmazáskiszolgáló | N.A.  | Igen  |
 |Power BI-átjáró     |DirectQuery | Windows megszemélyesítésen keresztül (rögzített felhasználó, nincs SSO) | Alkalmazáskiszolgáló | sapcrypto + gsskrb5/gx64krb5  | Igen  |
-|Power BI-átjáró     |DirectQuery | SSO használata Kerberoson keresztül a DirectQuery-lekérdezések választásakor | Alkalmazáskiszolgáló | *csak a következővel:* gsskrb5/gx64krb5   | Igen  |
+|Power BI-átjáró     |DirectQuery | SSO használata Kerberoson keresztül a DirectQuery-lekérdezések választásakor | Alkalmazáskiszolgáló | sapcrypto + gsskrb5/gx64krb5   | Igen  |
 |Power BI-átjáró     |DirectQuery | Feléhasználó/jelszó        | Üzenetkiszolgáló | N.A.  | Igen  |
 |Power BI-átjáró     |DirectQuery | Windows megszemélyesítésen keresztül (rögzített felhasználó, nincs SSO) | Üzenetkiszolgáló | sapcrypto + gsskrb5/gx64krb5  | Igen  |
-|Power BI-átjáró     |DirectQuery | SSO használata Kerberoson keresztül a DirectQuery-lekérdezések választásakor | Üzenetkiszolgáló | sapcrypto + gsskrb5/gx64krb5  | Nem  |
+|Power BI-átjáró     |DirectQuery | SSO használata Kerberoson keresztül a DirectQuery-lekérdezések választásakor | Üzenetkiszolgáló | gsskrb5/gx64krb5  | Nem  |
+|Power BI-átjáró     |DirectQuery | SSO használata Kerberoson keresztül a DirectQuery-lekérdezések választásakor | Üzenetkiszolgáló | sapcrypto  | Igen  |
 
 
 

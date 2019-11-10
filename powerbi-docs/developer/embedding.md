@@ -17,16 +17,16 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: d2e52ff986bb2bba0caf5168c5038bb55011144a
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 501b43b7a17d60bbb277cd68c1a5d13e09b14bd5
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391529"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73430725"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Beágyazott analitika a Power BI-jal
 
-A Power BI szolgáltatás (SaaS) és a Power BI Embedded szolgáltatás az Azure-ban (PaaS) API-kkal is rendelkezik az irányítópultok és jelentések beágyazásához. A tartalmak beágyazásakor rendelkezésére állnak a Power BI legújabb szolgáltatásai, például irányítópultok, átjárók és alkalmazás-munkaterületek.
+A Power BI szolgáltatás (SaaS) és a Power BI Embedded szolgáltatás az Azure-ban (PaaS) API-kkal is rendelkezik az irányítópultok és jelentések beágyazásához. A tartalmak beágyazásakor rendelkezésére állnak a Power BI legújabb szolgáltatásai, például az irányítópultok, az átjárók és a munkaterületek.
 
 A [beágyazást előkészítő eszközzel](https://aka.ms/embedsetup) gyorsan megteheti az első lépéseket és letölthet egy mintaalkalmazást.
 
@@ -85,7 +85,7 @@ A Power BI Embeddedet használó fejlesztők az alkalmazás alapvető funkcióin
 > [!IMPORTANT]
 > Bár a beágyazáshoz a Power BI szolgáltatás szükséges, felhasználóinak nem kell Power BI-fiókkal rendelkezniük az alkalmazás beágyazott tartalmának megtekintéséhez. 
 
-Amikor készen áll az éles környezetbe való áthelyezésre, az alkalmazás-munkaterülethez hozzá kell rendelni egy dedikált kapacitást. A Power BI Embedded a Microsoft Azure-on belül elérhetővé tesz az alkalmazásban felhasználható [dedikált kapacitást](azure-pbie-create-capacity.md).
+Amikor készen áll az éles környezetbe való áthelyezésre, a munkaterületet hozzá kell rendelni egy dedikált kapacitáshoz. A Power BI Embedded a Microsoft Azure-on belül elérhetővé tesz az alkalmazásban felhasználható [dedikált kapacitást](azure-pbie-create-capacity.md).
 
 A beágyazást a [Power BI-tartalmak beágyazása](embed-sample-for-customers.md) című cikk ismerteti részletesen.
 

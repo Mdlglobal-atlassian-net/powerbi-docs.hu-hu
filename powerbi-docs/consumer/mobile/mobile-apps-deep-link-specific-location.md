@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/24/2019
 ms.author: mshenhav
-ms.openlocfilehash: 4e09b10e38b018f8e5572343b343a243ace3bf81
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: ef7766f8783fef08561a70d8ea77212c138e3148
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "64906538"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429899"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>A Power BI-mobilalkalmazásokon belül egy meghatározott helyre mutató hivatkozás létrehozása
 A hivatkozásokkal közvetlenül férhet hozzá a Power BI adott elemeihez: jelentésekhez, irányítópultokhoz és csempékhez.
@@ -69,7 +69,7 @@ A **QUERY PARAMS** a következőkből áll:
 
 #### <a name="links-of-apps-and-items-in-app"></a>Alkalmazások és elemek hivatkozásai az alkalmazásban
 
-Az **alkalmazások és az alkalmazás részét képező jelentések és irányítópultok** esetében a hivatkozás elérésének legegyszerűbb módja, ha az alkalmazás-munkaterületre lép, és az „Alkalmazás frissítése” lehetőséget választja. Ekkor megnyílik az „Alkalmazás közzététele” felület, és a Hozzáférés lapon megtalálja a **Hivatkozások** szakaszt. A szakasz kibontásával megtekintheti az alkalmazás és annak összes tartalmi hivatkozását, amelyekkel azok közvetlenül elérhetők.
+Az **alkalmazások és az alkalmazás részét képező jelentések és irányítópultok** esetében a hivatkozás elérésének legegyszerűbb módja, ha megnyitja a munkaterületet, majd az Alkalmazás frissítése lehetőséget választja. Ekkor megnyílik az „Alkalmazás közzététele” felület, és a Hozzáférés lapon megtalálja a **Hivatkozások** szakaszt. A szakasz kibontásával megtekintheti az alkalmazás és annak összes tartalmi hivatkozását, amelyekkel azok közvetlenül elérhetők.
 
 ![Alkalmazás közzététele hivatkozások a Power BI-ban ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
@@ -118,5 +118,5 @@ A visszajelzése segít eldönteni, hogy milyen fejlesztésekre koncentráljunk 
 * [Power BI-alkalmazások mobileszközökre](mobile-apps-for-mobile-devices.md)
 * @MSPowerBI követése Twitteren
 * Vegyen részt [a Power BI-közösség](http://community.powerbi.com/) beszélgetéseiben
-* [Mi az a Power BI?](../../power-bi-overview.md)
+* [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
 

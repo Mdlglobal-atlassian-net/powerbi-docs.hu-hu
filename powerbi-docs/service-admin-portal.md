@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f472ee821d0ccf3bbe8e47697f934b91668cd16d
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 8a6e104a6fcb129a6e51d8424a8c2321ea74b49c
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305903"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442872"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -169,7 +169,9 @@ A következő néhány bekezdés a bérlői beállítások különböző típusa
 
 A vállalati felhasználók belső súgó és támogatási forrásokhoz fordulhatnak a Power BI súgó menüjében. Ezek a paraméterek pontosabban a Tanulás, Közösség és Segítség kérése menüelemek viselkedését módosítják.
 
-Megadható egy URL-cím is, amely licencelési kérdésekben egy egyéni megoldáshoz irányítja a felhasználókat. Ez a paraméter a Fiók bővítése gomb cél-URL-címét szabja testre, amelyet a Power BI Pro-licenccel nem rendelkező felhasználók a Bővítés Power BI Próra párbeszédpanelen és a Személyes tárhely kezelése oldalon is megtalálhatnak.
+    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+
+Ha megad egy URL-címet a licenckérésekhez, azzal a **Fiók bővítése** gomb cél-URL-címét szabja testre, amelyet a Power BI Pro-licenccel nem rendelkező felhasználók a **Bővítés Power BI Próra** párbeszédpanelen és a **Személyes tárhely kezelése** oldalon is megtalálhatnak. Emellett a Power BI-ban már nem érhető el **A Pro kiadás ingyenes kipróbálása** gomb ezen a párbeszédpanelen és a Tárolás lapon, hogy a Power BI biztosan megbízhatóan vezesse végig a felhasználókat a szervezetnél a licenckezelési megoldással meghatározott folyamatokon.
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>E-mail-értesítések fogadása szolgáltatásbeli kimaradásokról vagy incidensekről
 
@@ -179,7 +181,7 @@ Az e-mail-küldést engedélyező biztonsági csoportok e-mail-értesítéseket 
 
 ### <a name="create-workspaces"></a>Munkaterületek létrehozása
 
-A rendszergazdák a **Munkaterületek létrehozása** beállítással határozhatják meg, hogy a vállalat mely felhasználói hozhatnak létre alkalmazás-munkaterületeket az irányítópultok, jelentések és egyéb tartalmak közös használatához. További tudnivalók az [alkalmazás-munkaterületekről](service-create-the-new-workspaces.md).
+A rendszergazdák a **Munkaterületek létrehozása** beállítással határozhatják meg, hogy a vállalat mely felhasználói hozhatnak létre munkaterületeket az irányítópultok, jelentések és egyéb tartalmak közös használatához. További tudnivalók a [munkaterületekről](service-create-the-new-workspaces.md).
 
 A felügyeleti portálon egy másik szakasz is tartalmaz a bérlőbeli munkaterületekre vonatkozó beállításokat. Ebben a szakaszban rendezheti és szűrheti a munkaterületek listáját, és minden munkaterület adatait megjelenítheti. A részleteket a [Munkaterületek](#workspaces) című szakaszban találja meg.
 
@@ -284,7 +286,7 @@ A munkahelyi felhasználók Cortana használatával kérdéseket tehetnek fel az
 > [!NOTE]
 > Ez a beállítás az egész munkahelyre vonatkozik, és nem lehet korlátozni meghatározott csoportokra.
 
-### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Az Elemzés az Excelben helyszíni adatkészleteken való használata
+### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Az Elemzés az Excelben helyszíni adathalmazokon való használata
 
 A munkahelyi felhasználók az Excel használatával megtekinthetik és használhatják a helyszíni Power BI-adatkészleteket. [További információ](service-analyze-in-excel.md)
 

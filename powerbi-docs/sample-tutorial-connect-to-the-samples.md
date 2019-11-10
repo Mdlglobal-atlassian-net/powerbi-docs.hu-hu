@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3577c19342d9f2dc5b0e3ab9908f47f82430e6db
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 5009e186c801f71c9c1a4b8e156dfefaaeac79f1
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391509"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020633"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Csatlakozás a mintákhoz a Power BI szolgáltatásban
 
@@ -91,7 +91,7 @@ Most vizsgálja meg saját maga is az irányítópultot, az adatkészletet és a
      
    ![Vadonatúj jelentés](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
 
-1. Az adathalmaz átvizsgálásának másik módja a [Gyors elemzések](consumer/end-user-insights.md) szolgáltatás futtatása. Válassza a három pontot (...), majd a **Gyors elemzések lekérése** lehetőséget. Ha az elemzések elkészültek, válassza az **Elemzések megtekintése** lehetőséget.
+1. Az adathalmaz átvizsgálásának másik módja a [Gyors elemzések](consumer/end-user-insights.md) szolgáltatás futtatása. Válassza a **További beállítások** (...) lehetőséget, majd a **Gyors elemzések lekérése** elemet. Ha az elemzések elkészültek, válassza az **Elemzések megtekintése** lehetőséget.
      
     ![Megállapítási jelentés](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 

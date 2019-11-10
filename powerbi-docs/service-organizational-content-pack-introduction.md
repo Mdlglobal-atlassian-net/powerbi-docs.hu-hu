@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e54750d928918fd77c2bf93577cf1d3d0634ca97
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: c5f56df51a1f18db7c2080afb79f4ac7abfb2444
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020618"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431746"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Bevezetés a Power BI szervezeti tartalomcsomagjainak használatába
 > [!NOTE]
@@ -26,7 +26,7 @@ Rendszeresen oszt meg jelentéseket a csapatával e-mailben? Próbálja inkább 
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
-Ha tartalomcsomagokat hoz létre, az különbözik irányítópultok puszta megosztásától és az alkalmazás-munkaterületen folytatott közös használatától. Az [Irányítópultok és jelentések közös használata és megosztása](service-how-to-collaborate-distribute-dashboards-reports.md) című cikkben leírtak segítenek kiválasztani az Ön számára optimális megoldást. 
+A tartalomcsomagok létrehozása nem azonos az irányítópultok megosztásával vagy az azokon egy munkaterületen végzett közös munkával. Olvassa el [Az irányítópultokon és jelentéseken végzett közös munka, illetve azok megosztása](service-how-to-collaborate-distribute-dashboards-reports.md) szakaszt, hogy eldönthesse, melyik lehetőség felel meg legjobban a helyzetének. 
 
 Az AppSource-ban böngészheti és megkeresheti az egész szervezettel, valamint a terjesztési vagy biztonsági csoportokkal megosztott tartalomcsomagokat, és aztán [hozzáadhatja őket saját Office 365-csoportjaihoz](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Ha nem tagja egy adott csoportnak, akkor nem láthatja a csoporttal megosztott tartalomcsomagokat. A csoport minden tagja csak olvasási hozzáféréssel rendelkezik a tartalomcsomaghoz, a jelentésekhez, a munkafüzetekhez és az irányítópultokhoz (hacsak az adatforrás nem SQL Server Analysis Services (SSAS) típusú, mert ez esetben az adatforrásra vonatkozó jogosultságok érvényesülnek).
 
@@ -50,7 +50,7 @@ Az életciklus nagyjából így alakul:
 1. Szabolcs létrehozza a tartalomcsomagot a Power BI Próban, és közzéteszi a Marketing terjesztési csoportban. A frissítési beállítások az adatkészlettel öröklődnek, és csak Szabolcs módosíthatja őket.
    
    > [!NOTE]
-   > Ha Szabolcs olyan [Power BI-alkalmazás-munkaterületen](service-create-distribute-apps.md) hozza létre a tartalomcsomagot, amelynek tagja, akkor mások átvehetik a csomag tulajdonjogát, ha Szabolcs esetleg elhagyja a munkaterületet.
+   > Ha Szabolcs olyan [Power BI-munkaterületen](service-create-distribute-apps.md) hozza létre a tartalomcsomagot, amelynek tagja, mások még akkor is átvehetik a csomag tulajdonjogát, ha Szabolcs elhagyja a munkaterületet.
    > 
    > 
 2. Szabolcs e-mailben értesíti a terjesztési csoport tagjait az új tartalomcsomagról.
@@ -58,7 +58,7 @@ Az életciklus nagyjából így alakul:
 4. Tegyük fel, hogy testreszabja a csomagot. Így már saját példánya van az irányítópultból és a jelentésekből. A munkája nem érinti a forrást, sem az eredeti tartalomcsomagot, és a terjesztési csoport többi tagját sem. Ők már saját irányítópult- és jelentéspéldányukon dolgoznak.
 5. Szabolcs módosítja az irányítópultot, és amikor elkészült, közzéteszi a tartalomcsomag új verzióját.
    
-   * Géza, a terjesztési csoport egy másik tagja nem szabta testre az eredeti tartalomcsomagot. A módosítások így automatikusan érvénybe lépnek a tartalomcsomag ezen verziójában.  
+   * Géza, a terjesztési csoport egy másik tagja nem szabta testre az eredeti tartalomcsomagot. Az új módosítások így automatikusan érvénybe lépnek a tartalomcsomag Gézához tartozó verziójában.  
    * Borbála azonban testre szabta a tartalomcsomagot. Értesítést kap az új verzióról.  Ha megnyitja az AppSource-ot, akkor letöltheti a frissített tartalomcsomagot, de a saját verziója is megmarad. Így már két verziója lesz: a személyre szabott és a frissített tartalomcsomag.
 6. Tegyük fel, hogy Szabolcs módosítja a biztonsági beállításokat. Géza és Borbála ettől kezdve nem fér hozzá a tartalomhoz. Vagy feltételezzük azt, hogy törlik őket a Marketing terjesztési csoportból.
    

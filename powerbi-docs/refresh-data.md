@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: f5fe835d2ec423b596460a81ccb2a406b306c3c5
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 948776a12af2d99da2d84d07c9298f9ec0558c7b
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307939"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442952"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
 
@@ -93,14 +93,14 @@ A Power BI frissítési műveletei többféle frissítéstípusból állhatnak. 
 
 #### <a name="data-refresh"></a>Adatfrissítés
 
-A Power BI-felhasználók szempontjából az adatfrissítés általában azzal jár, hogy ütemezetten vagy igény szerint adatokat importálnak az eredeti adatforrásokból egy adathalmazba. Naponta több adathalmaz-frissítés is végrehajtható, és szükséges is lehet, ha a mögöttes adatforrás gyakran módosul. A Power BI megosztott kapacitásban lévő adathalmazokon naponta legfeljebb nyolc frissítést engedélyez. Ha az adathalmaz prémium szintű kapacitásban van, naponta legfeljebb 48 frissítés hajtható végre. További információt a cikk egy későbbi részében, az Ütemezett frissítés konfigurálása című szakaszban talál.
+A Power BI-felhasználók szempontjából az adatfrissítés általában azzal jár, hogy ütemezetten vagy igény szerint adatokat importálnak az eredeti adatforrásokból egy adathalmazba. Naponta több adathalmaz-frissítés is végrehajtható, és szükséges is lehet, ha a mögöttes adatforrás gyakran módosul. A Power BI megosztott kapacitásban lévő adathalmazokon naponta legfeljebb nyolc frissítést engedélyez. Ha az adathalmaz prémium szintű kapacitásban van, naponta legfeljebb 48 frissítést ütemezhet az adathalmaz beállításai között. További információt a cikk egy későbbi részében, az Ütemezett frissítés konfigurálása című szakaszban talál.
 
-Azt is fontos hangsúlyozni, hogy a napi frissítések számának korlátja az ütemezett és igény szerinti frissítések számának összegére vonatkozik. Igény szerinti frissítést az adathalmaz menüjének **Azonnali frissítés** elemét választva indíthat az alábbi képernyőképen látható módon. Adatfrissítést programozottan is aktiválhat a Power BI REST API használatával. Ha saját frissítési megoldást szeretne készíteni, az [Adathalmazok – Adathalmaz frissítése](/rest/api/power-bi/datasets/refreshdataset) című cikkből tájékozódhat.
+Azt is fontos hangsúlyozni, hogy a napi frissítések megosztott kapacitásokra vonatkozó korlátozása az ütemezett és az API-frissítések számának összegére vonatkozik. Igény szerinti frissítést az adathalmaz menüjének **Azonnali frissítés** elemét választva is indíthat az alábbi képernyőképen látható módon. A frissítési korlátozás az igény szerinti frissítésekre nem vonatkozik. Azt is fontos megjegyezni, hogy a prémium szintű kapacitásban lévő adathalmazok esetében nincsenek az API-frissítésekre vonatkozó korlátozások. Ha saját frissítési megoldást szeretne készíteni a Power BI REST API-jával, az [Adathalmazok – Adathalmaz frissítése](/rest/api/power-bi/datasets/refreshdataset) című cikkből tájékozódhat.
 
 ![Azonnali frissítés](media/refresh-data/refresh-now.png)
 
 > [!NOTE]
-> Az adatfrissítéseknek kevesebb mint 2 óra alatt be kell fejeződniük. Ha adathalmaza ennél hosszabb frissítési műveleteket igényel, fontolja meg az adathalmaz áthelyezését prémium szintű kapacitásba. Prémium szinten a frissítés maximális időtartama 5 óra.
+> Az adatfrissítéseknek megosztott kapacitásban kevesebb, mint 2 óra alatt be kell fejeződniük. Ha adathalmaza ennél hosszabb frissítési műveleteket igényel, fontolja meg az adathalmaz áthelyezését prémium szintű kapacitásba. Prémium szinten a frissítés maximális időtartama 5 óra.
 
 #### <a name="onedrive-refresh"></a>OneDrive-frissítés
 
@@ -134,7 +134,7 @@ Egy adatfrissítés után azonban a korábban gyorsítótárazott lekérdezési 
 
 #### <a name="tile-refresh"></a>Csempefrissítés
 
-A Power BI az irányítópult minden csempevizualizációjához fenntart egy gyorsítótárat, és előre frissíti a csempék gyorsítótárait, ha az adatok módosulnak. Ez annyit jelent, hogy adatfrissítés után a csempék frissítése automatikusan megtörténik. Ez az ütemezett és az igény szerinti frissítési műveletekre is igaz. A csempefrissítést kényszerítheti is az irányítópult jobb felső sarkában található három pontra (…), majd **Az irányítópult csempéinek frissítése** lehetőséget választva.
+A Power BI az irányítópult minden csempevizualizációjához fenntart egy gyorsítótárat, és előre frissíti a csempék gyorsítótárait, ha az adatok módosulnak. Ez annyit jelent, hogy adatfrissítés után a csempék frissítése automatikusan megtörténik. Ez az ütemezett és az igény szerinti frissítési műveletekre is igaz. A csempefrissítést kényszerítheti is az irányítópult jobb felső sarkában található **További lehetőségek** (…) elemet, majd **Az irányítópult csempéinek frissítése** lehetőséget választva.
 
 ![Az irányítópult csempéinek frissítése](media/refresh-data/refresh-dashboard-tiles.png)
 

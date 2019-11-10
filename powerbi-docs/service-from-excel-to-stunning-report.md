@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: ed4bc9d10e3e1512aba559d77ba8729a39cb8a84
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 6c393611851e05c7c76983674f2e1de7b5454898
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68995073"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021000"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Excel-munkafüzettől egy lenyűgöző jelentésig a Power BI szolgáltatásban
 A főnöke azt szeretné, hogy még ma készítsen el egy kombinált jelentést a tavalyi év értékesítési mutatóiról és az előző kampánnyal kapcsolatos benyomásairól. A legutóbbi adatok azonban különböző külső gyártók rendszerein és a saját laptopján lévő fájlokban találhatók. Korábban több óráig is eltartott egy vizualizáció létrehozása és egy jelentés formázása, ami aggodalommal töltheti el.
@@ -111,7 +111,7 @@ Megjelenítene még egy olyan vizualizációt is, amelyen az értékesítések a
 
 2. A **Vizualizációk** menü egy ikonját kiválasztva módosítsa a diagram típusát. Módosítsa például **Halmozott oszlopdiagram** típusúra. 
 
-3. A diagram rendezéséhez válassza a három pontot (...), majd a **Rendezés szempontja:** elemet.
+3. A diagram rendezéséhez válassza a **További lehetőségek** (...) > **Rendezési szempont** elemet.
 
    ![Halmozott oszlopdiagram a jelentésszerkesztőben](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
 

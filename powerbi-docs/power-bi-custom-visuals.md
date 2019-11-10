@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a8b1be9157fa34e9ed4c987628f0b67624b4c826
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: d396656f871dae38e4bde18a986d24010e09451e
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307492"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021510"
 ---
 # <a name="visuals-in-power-bi"></a>Vizualizációk a Power BI-ban
 
@@ -23,7 +23,7 @@ Power BI-jelentések létrehozása vagy szerkesztése során számos különböz
 
 ![vizualizációk](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
-Azonban nem csupán ezek a vizualizációk állnak rendelkezésére. Ha az alsó három pontot (...) választja, elérhetővé válik a jelentésvizualizációk egy másik forrása – a *Power BI-vizualizációk*.
+Azonban nem csupán ezek a vizualizációk állnak rendelkezésére. Ha az alsó **További lehetőségek** (...) elemet választja, elérhetővé válik a jelentésvizualizációk egy másik forrása – a *Power BI-vizualizációk*.
 
 A fejlesztők a Power BI-vizualizációk SDK-val hozzák létre ezeket a vizualizációkat. Ezekkel a vizualizációkkal az üzleti felhasználók az üzletüknek leginkább megfelelő módon jeleníthetik meg adataikat. A jelentéskészítők importálhatják az egyéni vizualizációkat a jelentéseikbe, és azokat a többi Power BI-vizualizációhoz hasonlóan használhatják. A Power BI-vizualizációk kiemelt helyet élveznek a Power BI szolgáltatáson belül, így szűrhetők, kiemelhetők, szerkeszthetők, megoszthatók és egyéb műveletekkel használhatók.
 

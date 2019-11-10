@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: e5e8df2be443b215a02f196c4f676af1cbff6275
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: b4c81e1c83ef53dcb16153b4e9996b259e9eb886
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69654625"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73059795"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Irányítópultok és jelentések megtekintése a Power BI-mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -118,7 +118,7 @@ A „csippentés” kézmozdulattal nagyíthatja és kicsinyítheti az irányít
 
     Ha Ön az irányítópult tulajdonosa, a Power BI szolgáltatásban [létrehozhat egy kifejezetten telefonokhoz való nézetet](../../service-create-dashboard-mobile-phone-view.md) álló tájolású módban. 
 
-1. Mialatt az irányítópulton van, a név melletti függőleges három pontra (...) koppinthat egy munkatárs meghívásához, frissítéshez vagy az irányítópulttal kapcsolatos információk beszerzéséhez:
+1. Mialatt az irányítópulton van, a név melletti függőleges **További lehetőségek** (...) gombra koppinthat egy munkatárs meghívásához, a frissítéshez vagy az irányítópulttal kapcsolatos információk eléréséhez:
    
    ![Három pont menü](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Pöccintsen felfelé és lefelé az [irányítópulton lévő összes csempe](mobile-tiles-in-the-mobile-apps.md) megtekintéséhez. 
@@ -134,7 +134,7 @@ A „csippentés” kézmozdulattal nagyíthatja és kicsinyítheti az irányít
    
    * A sárga csillagok ![Kedvenc csillag](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) a kedvenc irányítópultokat jelzik. 
    * Az irányítópultok neve (ebben az esetben „MBI”) ![Adatok besorolása](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) alatti jelölés az egyes irányítópultok adatainak besorolását jeleníti meg. A [Power BI adatbesorolásairól itt talál](../../service-data-classification.md) további információkat.
-3. Mialatt az irányítópulton van, a név melletti függőleges három pontra (...) koppinthat egy munkatárs meghívásához, frissítéshez vagy az irányítópulttal kapcsolatos információk beszerzéséhez:
+3. Mialatt az irányítópulton van, a név melletti függőleges **További lehetőségek** (...) gombra koppinthat egy munkatárs meghívásához, a frissítéshez vagy az irányítópulttal kapcsolatos információk eléréséhez:
    
    ![Három pont menü](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 4. Pöccintsen felfelé és lefelé az [irányítópulton lévő összes csempe](mobile-tiles-in-the-mobile-apps.md) megtekintéséhez. 
@@ -156,6 +156,6 @@ További információkat is olvashat [az irányítópultok telefonos nézetének
 ## <a name="next-steps"></a>Következő lépések
 * [Töltse le az Android-alkalmazást](http://go.microsoft.com/fwlink/?LinkID=544867) a Google Play áruházból  
 * [Első lépések a Power BI-hoz készült Android-alkalmazásban](mobile-android-app-get-started.md)  
-* [Mi az a Power BI?](../../power-bi-overview.md)
+* [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

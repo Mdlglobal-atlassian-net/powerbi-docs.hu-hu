@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 97c01966750d888f3420d265eb3f252b3a8f57d3
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 527334d2772dbe20f7f78929231cca9faf036e95
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195020"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017744"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinált diagram a Power BI-ban
 
@@ -67,7 +67,7 @@ Nézze meg, hogyan hoz létre Will egy kombinált diagramot az Értékesítési 
     c. Adja hozzá a **Time** \> **FiscalMonth** elemet a **Tengely** gyűjtőhöz.
 
     ![példa kombinált diagram oktatóanyag](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. A vizualizáció jobb felső sarkában válassza a három pontot (...), és válassza ki a **Rendezés szempontja > FiscalMonth** lehetőséget. A rendezési sorrend módosításához válassza ismét a három pontot, és válassza a **Növekvő rendezés** vagy a **Csökkenő rendezés** elemet. Ehhez a példához a **Rendezés növekvő sorrendben** van kiválasztva.
+5. Válassza a **More options** (...) lehetőséget a vizualizáció jobb felső sarkában, majd a **Rendezés szempontja > FiscalMonth** (Pénzügyi hónap) lehetőséget. A rendezési sorrend módosításához válassza ismét a három pontot, és válassza a **Növekvő rendezés** vagy a **Csökkenő rendezés** elemet. Ehhez a példához a **Rendezés növekvő sorrendben** van kiválasztva.
 
 6. Konvertálja az oszlopdiagramot kombinált diagrammá. Két kombinált diagram érhető el: **Vonal- és halmozott oszlopdiagram**, illetve **Vonal- és csoportosított oszlopdiagram**. Ha az oszlopdiagram van kiválasztva, a **Megjelenítések** ablaktáblán válassza a **Vonal- és fürtözött oszlopdiagram** lehetőséget.
 
