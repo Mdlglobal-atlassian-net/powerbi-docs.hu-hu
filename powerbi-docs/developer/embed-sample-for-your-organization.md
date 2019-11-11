@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: 15c16e2e065148666eee6c67a511c5e412bc334e
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 9c35d74249516b25a756a8a90ce666092e585a72
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237389"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431086"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba a cége számára
 
@@ -45,7 +45,7 @@ Ha még nincs Azure-előfizetése, kezdés előtt hozzon létre egy [ingyenes fi
 
 Mielőtt jelentéseket, irányítópultokat vagy csempéket ágyazna az alkalmazásba, győződjön meg arról, hogy a környezete engedélyezi a beágyazást a Power BI-jal.
 
-Az első lépések gyors elsajátítása érdekében követheti a [beágyazáshoz szükséges telepítési eszköz](https://aka.ms/embedsetup/UserOwnsData) lépéseit, és letölthet egy mintaalkalmazást, amely végigvezeti Önt a környezet létrehozásán és egy jelentés beágyazásán. Többoldalas jelentések beágyazásához legalább P1-kapacitást kell a létrehozott alkalmazás-munkaterülethez rendelnie.
+Az első lépések gyors elsajátítása érdekében követheti a [beágyazáshoz szükséges telepítési eszköz](https://aka.ms/embedsetup/UserOwnsData) lépéseit, és letölthet egy mintaalkalmazást, amely végigvezeti Önt a környezet létrehozásán és egy jelentés beágyazásán. Többoldalas jelentések beágyazásához legalább P1-kapacitást kell a létrehozott munkaterülethez rendelnie.
 
 Ha a környezet manuális létrehozása mellett dönt, folytathatja az alábbiak szerint.
 
@@ -57,13 +57,13 @@ Regisztrálnia kell egy **kiszolgálóoldali webalkalmazást**. A kiszolgálóol
 
 ## <a name="set-up-your-power-bi-environment"></a>A Power BI-környezet beállítása
 
-### <a name="create-an-app-workspace"></a>Alkalmazás-munkaterület létrehozása
+### <a name="create-a-workspace"></a>Munkaterület létrehozása
 
-Ha jelentéseket, irányítópultokat vagy csempéket ágyaz be az ügyfelek számára, akkor ezeket a tartalmakat egy alkalmazás-munkaterületre kell helyezni. Különböző típusú munkaterületeket állíthat be: [hagyományos munkaterületeket](../service-create-workspaces.md) vagy [új munkaterületeket](../service-create-the-new-workspaces.md).
+Ha jelentéseket, irányítópultokat vagy csempéket ágyaz be az ügyfelek számára, akkor ezeket a tartalmakat egy munkaterületre kell helyezni. Különböző típusú munkaterületeket állíthat be: [hagyományos munkaterületeket](../service-create-workspaces.md) vagy [új munkaterületeket](../service-create-the-new-workspaces.md).
 
 ### <a name="create-and-publish-your-power-bi-reports"></a>Saját Power BI-jelentések létrehozása és közzététele
 
-A Power BI Desktop segítségével létrehozhatja a jelentéseit és az adathalmazait. A jelentéseket ezután közzéteheti egy alkalmazás-munkaterületen. A jelentéseket közzétevő végfelhasználónak Power BI Pro-licenccel kell rendelkeznie az alkalmazás-munkaterületen való közzétételhez.
+A Power BI Desktop segítségével létrehozhatja a jelentéseit és az adathalmazait. A jelentéseket ezután közzéteheti egy munkaterületen. A jelentéseket közzétevő végfelhasználónak Power BI Pro-licenccel kell rendelkeznie a munkaterületen való közzétételhez.
 
 1. Töltse le a [Demo](https://github.com/Microsoft/powerbi-desktop-samples) mintát a GitHubról.
 
@@ -73,7 +73,7 @@ A Power BI Desktop segítségével létrehozhatja a jelentéseit és az adathalm
 
    ![Power BI Desktop-mintajelentés](media/embed-sample-for-your-organization/embed-sample-for-your-organization-027.png)
 
-3. Tegye közzé az alkalmazás-munkaterületen.
+3. Tegye közzé a munkaterületen.
 
    ![Power BI Desktop-jelentés közzététele](media/embed-sample-for-your-organization/embed-sample-for-your-organization-028.png)
 
@@ -83,7 +83,7 @@ A Power BI Desktop segítségével létrehozhatja a jelentéseit és az adathalm
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Saját lapszámozott jelentések létrehozása és közzététele
 
-A többoldalas jelentéseket a [Power BI Jelentéskészítő](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) használatával hozhatja létre. Ez után [feltöltheti a jelentést](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) egy legalább P1-kapacitáshoz rendelt alkalmazás-munkaterületre. A jelentést feltöltő végfelhasználónak Power BI Pro-licencre van szüksége, ha közzé szeretne tenni valamit egy alkalmazás-munkaterületen.
+A többoldalas jelentéseket a [Power BI Jelentéskészítő](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) használatával hozhatja létre. Ez után [feltöltheti a jelentést](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) egy legalább P1-kapacitáshoz rendelt munkaterületre. A jelentést feltöltő végfelhasználónak Power BI Pro-licencre van szüksége, ha közzé szeretne tenni valamit egy munkaterületen.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Tartalom beágyazása a mintaalkalmazással
 
@@ -130,7 +130,7 @@ Az **applicationId** beszerzéséhez kövesse az alábbi lépéseket:
 
 ### <a name="workspace-id"></a>Munkaterület azonosítója
 
-A **workspaceId** mezőbe írja be a Power BI-ban szereplő alkalmazás-munkaterület (csoport) GUID-azonosítóját. Ezt az információt beszerezheti az URL-címből, ha be van jelentkezve a Power BI szolgáltatásban vagy a PowerShell-lel.
+A **workspaceId** mezőbe írja be a Power BI-ban szereplő munkaterület (csoport) GUID-azonosítóját. Ezt az információt beszerezheti az URL-címből, ha be van jelentkezve a Power BI szolgáltatásban vagy a PowerShell-lel.
 
 URL-cím <br>
 
@@ -376,11 +376,11 @@ function updateEmbedReport() {
 
 ## <a name="using-a-power-bi-premium-dedicated-capacity"></a>Dedikált Power BI Premium-kapacitás használata
 
-Most, hogy elkészült az alkalmazás fejlesztésével, ideje dedikált kapacitással ellátni az alkalmazás-munkaterületet.
+Most, hogy elkészült az alkalmazás fejlesztésével, ideje dedikált kapacitással ellátni a munkaterületet.
 
 ### <a name="create-a-dedicated-capacity"></a>Dedikált kapacitás létrehozása
 
-Dedikált kapacitás létrehozásával kihasználhatja annak az előnyeit, hogy egy dedikált erőforrás áll rendelkezésre az alkalmazás-munkaterületen a tartalom számára. Többoldalas jelentésekhez az alkalmazás-munkaterülethez legalább P1-kapacitást kell biztosítania. Dedikált kapacitást a [Power BI Premium](../service-premium-what-is.md) segítségével hozhat létre.
+Dedikált kapacitás létrehozásával kihasználhatja annak az előnyeit, hogy egy dedikált erőforrás áll rendelkezésre az munkaterületen a tartalom számára. Többoldalas jelentésekhez a munkaterülethez legalább P1-kapacitást kell biztosítania. Dedikált kapacitást a [Power BI Premium](../service-premium-what-is.md) segítségével hozhat létre.
 
 A következő táblázat a [Microsoft Office 365-ben](../service-admin-premium-purchase.md) elérhető Power BI Premium-termékváltozatokat sorolja fel:
 
@@ -399,9 +399,9 @@ A következő táblázat a [Microsoft Office 365-ben](../service-admin-premium-p
 > - Ha Microsoft Office-alkalmazásokkal szeretne beágyazni, az ingyenes Power BI-licenc lehetővé teszi, hogy az EM termékváltozatokat használja a tartalmak eléréséhez. A Powerbi.com vagy a Power BI Mobile használatakor azonban nem lehet hozzáférni a tartalmakhoz az ingyenes Power BI-licenccel.
 > - Ha a Powerbi.com vagy a Power BI Mobile használatával szeretne beágyazni a Microsoft Office-alkalmazásokkal, az ingyenes Power BI-licenccel hozzáférhet a tartalmakhoz.
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Alkalmazás-munkaterület hozzárendelése dedikált kapacitáshoz
+### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Munkaterület hozzárendelése dedikált kapacitáshoz
 
-A dedikált kapacitás létrehozása után hozzárendelheti az alkalmazás-munkaterületet ehhez a kapacitáshoz. A folyamat befejezéséhez kövesse az alábbi lépéseket:
+A dedikált kapacitás létrehozása után hozzárendelheti a munkaterületet ehhez a kapacitáshoz. A folyamat befejezéséhez kövesse az alábbi lépéseket:
 
 1. A Power BI szolgáltatásban bontsa ki a munkaterületeket, és kattintson a három pont elemre a tartalombeágyazáshoz használt munkaterület mellett. Válassza a **Munkaterületek szerkesztése** lehetőséget.
 
@@ -411,9 +411,9 @@ A dedikált kapacitás létrehozása után hozzárendelheti az alkalmazás-munka
 
     ![Dedikált kapacitás hozzárendelése](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
 
-3. A **Mentés** kiválasztása után meg kell jelennie egy gyémántnak az alkalmazás-munkaterület neve mellett.
+3. A **Mentés** kiválasztása után meg kell jelennie egy rombusznak a munkaterület neve mellett.
 
-    ![Egy kapacitáshoz hozzárendelt alkalmazás-munkaterület](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
+    ![egy kapacitáshoz hozzárendelt munkaterület](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
 ## <a name="admin-settings"></a>Rendszergazdai beállítások
 

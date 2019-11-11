@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 10/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: c46b58369c334ff5364cee00bb5c3f8cd025adf0
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: e57df395fd3efe439cb6ef009cb2c7a9f3fe99f9
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305846"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431654"
 ---
 # <a name="what-is-power-bi-premium"></a>Mi az a Power BI Premium?
 
@@ -53,7 +53,7 @@ Power BI Premium-előfizetéseket rendszergazdák szerezhetnek be a Microsoft 36
 
 A Power BI Premiummal *dedikált kapacitások* járnak. Ellentétben a megosztott kapacitásokkal, ahol a számítási feladatok más ügyfelekkel megosztott erőforrásokon futnak, egy dedikált kapacitást kizárólag a vállalat használhat. El van különítve, és dedikált számítási erőforrásokkal nyújt megbízható és állandó teljesítményt az üzemeltetett tartalomhoz. 
 
-A munkaterületek a kapacitásokon belül helyezkednek el. Minden Power BI-felhasználó rendelkezik **Saját munkaterülettel**. Az együttműködéshez további munkaterületek, úgynevezett **alkalmazás-munkaterületek** is létrehozhatók. Alapértelmezés szerint a munkaterületek, így a személyes munkaterületek is a megosztott kapacitásban lesznek létrehozva. Prémium szintű kapacitások esetén a saját munkaterületek és az alkalmazás-munkaterületek is prémium szintű kapacitásokhoz rendelhetők.
+A munkaterületek a kapacitásokon belül helyezkednek el. Minden Power BI-felhasználó rendelkezik **Saját munkaterülettel**. Az együttműködéshez további úgynevezett **munkaterületek** is létrehozhatók. Alapértelmezés szerint a munkaterületek, így a személyes munkaterületek is a megosztott kapacitásban lesznek létrehozva. Prémium szintű kapacitások esetén a saját munkaterületek és más munkaterületek is prémium szintű kapacitásokhoz rendelhetők.
 
 ### <a name="capacity-nodes"></a>Kapacitás-csomópontok
 
@@ -71,7 +71,7 @@ Az egyes Premium termékváltozatok (és a megfelelően méretezett A termékvá
 
 | Kapacitás-csomópontok | Összes virtuális mag | Háttérrendszeri virtuális magok | Memória (GB) | Előtérrendszeri virtuális magok | DirectQuery-/élő kapcsolatok (másodpercenként) | Párhuzamosan végrehajtható modellfrissítések |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3,75 | 1 |
+| EM1/A1 | 1 | 0,5 | 3 | 0,5 | 3,75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
@@ -124,11 +124,11 @@ Az Office 365 globális rendszergazdák és a Power BI-szolgáltatásgazdák Pre
 
 Kapacitások létrehozásakor a felügyeleti feladatok többsége a [Felügyeleti portálon](service-admin-portal.md) végezhető el.
 
-![Felügyeleti portál](media/service-premium-what-is/premium-admin-portal.png)
+![Adminisztrációs portál](media/service-premium-what-is/premium-admin-portal.png)
 
 A kapacitás-rendszergazdák munkaterületeket rendelhetnek a kapacitáshoz, kezelhetik a felhasználói jogosultságokat, és más rendszergazdákat jelölhetnek ki. A kapacitás-rendszergazdák ezen kívül konfigurálhatják a számítási feladatokat, beállíthatják a memóriafoglalásokat, és szükség esetén újraindíthatják a kapacitásokat, alaphelyzetbe állítva a műveleteket egy kapacitás túlterhelése esetén.
 
-![Felügyeleti portál](media/service-premium-what-is/premium-admin-portal-mgmt.png)
+![Adminisztrációs portál](media/service-premium-what-is/premium-admin-portal-mgmt.png)
 
 A kapacitás-rendszergazdák a kapacitás zökkenőmentes működéséről is gondoskodhatnak. A kapacitás állapotát a Felügyeleti portálon, vagy a Premium kapacitásmetrikák alkalmazás használatával figyelhetik.
 
@@ -140,7 +140,7 @@ A prémium szintű kapacitások figyelésével a rendszergazdák képet kaphatna
 
 A portálon végezhető figyeléssel gyorsan áttekinthetők a kapacitás által elhelyezett terheléseket és a felhasznált erőforrásokat jelző magas szintű metrikák az utolsó hét napra átlagolva. 
 
-![Felügyeleti portál](media/service-premium-what-is/premium-admin-portal-health.png)
+![Adminisztrációs portál](media/service-premium-what-is/premium-admin-portal-health.png)
 
 A kapacitások teljesítményéről a **Power BI Premium kapacitásmetrikák** alkalmazás nyújtja a legrészletesebb információkat. Az alkalmazás egy magas szintű irányítópultot és részletesebb jelentéseket nyújt.
 

@@ -8,17 +8,19 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a1dee67279e6f43c0ff8008338f7b8a9f5a2d41a
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 3217691d68be6a351f87e5011fd5bc5ef347acfc
+ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841199"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72774800"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Ismerkedés a jelentések Szűrők panelével
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Ez a cikk a jelentések **Szűrők** paneljét mutatja be a Power BI szolgáltatásban. A szűrőkkel új megállapításokat nyerhet ki az adatokból.
 
@@ -34,11 +36,14 @@ Amikor a munkatársa megoszt Önnel egy jelentést, mindenképp keresse meg a **
 
 A **Szűrők** panel olyan szűrőket tartalmaz, amelyekkel a jelentés *tervezője* látta el a jelentést. A *felhasználók* kezelhetik a meglévő szűrőket és menthetik a módosításokat, azonban nem adhatnak hozzá új szűrőket a jelentéshez. A fenti képernyőképen a tervező például három oldalszintű szűrőt vett fel: **Szegmens = mind**, **Év = 2014** és **Régió = Középső**. Kezelheti és módosíthatja ezeket a szűrőket, de nem adhat hozzá egy negyedik oldalszintű szűrőt.
 
-A Power BI szolgáltatásban a jelentések megőrzik a **Szűrők** panelen végzett módosításokat. A szolgáltatás emellett a jelentés mobilos verziójára is alkalmazza őket.
+A Power BI szolgáltatásban a jelentések megőrzik a **Szűrők** panelen végzett módosításokat. A szolgáltatás emellett a jelentés mobilos verziójára is alkalmazza őket. 
 
 A **Szűrők** panelnek a tervező alapértelmezett értékeire való visszaállításához válassza ki a felső menüsáv **Visszaállítás alapértelmezettre** lehetőségét.
 
 ![A Visszaállítás alapértelmezettre ikon képernyőképe.](media/end-user-report-filter/power-bi-reset-icon.png) 
+
+> [!NOTE]
+> Ha nem jelenik meg **Visszaállítás alapértelmezettre** lehetőség, akkor lehetséges, hogy a jelentés *készítője* letiltotta azt. A *jelentéskészítő* egyes szűrőket is zárolhat, hogy Ön ne módosíthassa azokat.
 
 ## <a name="view-all-the-filters-for-a-report-page"></a>Jelentésoldal összes szűrőjének megtekintése
 

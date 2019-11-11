@@ -8,15 +8,15 @@ featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 10/21/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c87a54a0e991af3faa53b9ac4ac6c92893b2ed0a
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: d1944f139cdd7089d9465e174e554ac7df1d8bf8
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962485"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060373"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Adatriasztások a Power BI szolgáltatásban
 
@@ -24,7 +24,7 @@ Riasztásokat állíthat be, amelyek figyelmeztetik, ha az irányítópultjain l
 
 Ha Power BI Pro-licenccel rendelkezik, beállíthat riasztásokat csempékhez. Akkor is beállíthat riasztásokat, ha valaki megoszt egy [Premium-kapacitású](service-premium-what-is.md) irányítópultot. Csak a jelentések vizualizációiról rögzített csempéken, és kizárólag mérőműszerekhez, KPI-khez és kártyákhoz állíthatók be riasztások. A riasztások olyan vizualizációkon állíthatók be, amelyeket egy jelentésből egy irányítópulton rögzített streamelési adatkészletekből hozott létre. Nem állíthatók be riasztások a közvetlenül az irányítópulton, a **Csempe hozzáadása** > **Egyéni streamelési adatok** funkcióval létrehozott csempéken.
 
-Mindenki csak a saját riasztásait látja, még az irányítópult megosztása esetén is. A rendszer teljes mértékben szinkronizálja az adatriasztásokat a platformok között, így [a Power BI mobilalkalmazásokban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) és a Power BI szolgáltatásban is beállíthatja és megtekintheti őket. A Power BI Desktopban azonban nem érhetők el. A riasztások automatizálhatók és integrálhatók a Microsoft Flow-val is. Ezt a funkciót kipróbálhatja a [Microsoft Flow-t és a Power BI-t ismertető](service-flow-integration.md) cikkben.
+Mindenki csak a saját riasztásait látja, még az irányítópult megosztása esetén is. Az irányítópult saját nézetén beállított riasztásokat még az irányítópult tulajdonosa sem láthatja. A rendszer teljes mértékben szinkronizálja az adatriasztásokat a platformok között, így [a Power BI mobilalkalmazásokban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) és a Power BI szolgáltatásban is beállíthatja és megtekintheti őket. A Power BI Desktopban azonban nem érhetők el. A riasztások automatizálhatók és integrálhatók a Microsoft Flow-val is. Ezt a funkciót kipróbálhatja a [Microsoft Flow-t és a Power BI-t ismertető](service-flow-integration.md) cikkben.
 
 ![címek](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -116,15 +116,13 @@ A riasztásokat többféle módon is kezelheti:
 
 1. Erről a felületről be- és kikapcsolhatja a riasztásokat, megnyithatja a **Riasztások kezelése** ablakot a riasztás módosításához, vagy akár törölheti is a riasztást.
 
-## <a name="tips-and-troubleshooting"></a>Tippek és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 
 * A riasztásokat a dátum/idő mértékekkel rendelkező kártyacsempék nem támogatják.
-
 * A riasztások kizárólag numerikus adattípusokkal működnek.
-
 * A riasztások kizárólag a frissített adatokon működnek. Statikus adatokon nem.
-
 * A riasztások a streamelési adatkészleteken csak akkor működnek, ha felépít egy KPI-/kártya-/mérőműszer-jelentési vizualizációt, majd rögzíti az irányítópulton.
+
 
 ## <a name="next-steps"></a>Következő lépések
 
@@ -132,6 +130,6 @@ A riasztásokat többféle módon is kezelheti:
 
 * [Adatriasztások beállítása mobileszközökön](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
-* [Mi az a Power BI?](power-bi-overview.md)
+* [Mi az a Power BI?](fundamentals/power-bi-overview.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)

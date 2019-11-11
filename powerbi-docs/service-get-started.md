@@ -10,15 +10,15 @@ ms.topic: tutorial
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 49504343b076d7e2371c45005da24e35831bf506
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 681c55f4425729b96860367858273d7eb1ad73b6
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751148"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060393"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service"></a>Oktatóanyag: Első lépések a Power BI szolgáltatással
-Ez az oktatóanyag a *Power BI szolgáltatás* néhány funkciójához nyújt bevezetést. Ennek során adatokhoz csatlakozhat, jelentést és irányítópultot hozhat létre, és kérdéseket tehet fel az adatokkal kapcsolatban. A Power BI szolgáltatásban ezeken kívül sok mást is megtehet, ez az oktatóanyag csak kedvcsináló. Ha szeretné megérteni, hogyan illeszkedik a Power BI szolgáltatás a többi Power BI-ajánlathoz, javasoljuk, olvassa el [A Power BI bemutatása](power-bi-overview.md) című szakaszt.
+Ez az oktatóanyag a *Power BI szolgáltatás* néhány funkciójához nyújt bevezetést. Ennek során adatokhoz csatlakozhat, jelentést és irányítópultot hozhat létre, és kérdéseket tehet fel az adatokkal kapcsolatban. A Power BI szolgáltatásban ezeken kívül sok mást is megtehet, ez az oktatóanyag csak kedvcsináló. Ha szeretné megérteni, hogyan illeszkedik a Power BI szolgáltatás a többi Power BI-ajánlathoz, javasoljuk, olvassa el [A Power BI bemutatása](fundamentals/power-bi-overview.md) című szakaszt.
 
 ![A Power BI szolgáltatás kezdőlapja](media/service-get-started/power-bi-service-get-started-home.png)
 
@@ -115,7 +115,7 @@ Most, hogy adatokhoz csatlakozott, megismerkedhet a felülettel.  Ha valami érd
    
 8. A jelentéshez visszatérhet, ha az új csempét választja az irányítópulton. A Power BI a jelentéshez lépteti vissza Olvasó nézetben. 
 
-1. Térjen vissza a Szerkesztés nézetre úgy, hogy a felső navigációs sávon a három pontot (...), majd a **Szerkesztés** lehetőséget választja. Szerkesztés nézetben tovább böngészhet, és csempéket is rögzíthet.
+1. Térjen vissza a Szerkesztés nézetre, és válassza a felső navigációs sávon a **További lehetőségek** (...), majd a **Szerkesztés** elemet. Szerkesztés nézetben tovább böngészhet, és csempéket is rögzíthet.
 
     ![A Szerkesztés lehetőség választása a jelentés szerkesztéséhez](media/service-get-started/power-bi-service-edit-report.png)
 
@@ -200,7 +200,7 @@ Most, hogy befejezte ezt az oktatóanyagot, törölheti az adatkészletet, a jel
 
 1. Ellenőrizze a bal oldali navigációs sávon, hogy a **Saját munkaterületen** van.
 2. Válassza az **Adatkészletek** lapot, majd keresse meg az oktatóanyaghoz importált adatkészletet.  
-3. Válassza a három pontot (...), majd a **Törlés** lehetőséget.
+3. Válassza a **További lehetőségek** (...), majd a **Törlés** elemet.
 
     ![Adatkészlet törlése](media/service-get-started/power-bi-service-delete-dataset.png)
 

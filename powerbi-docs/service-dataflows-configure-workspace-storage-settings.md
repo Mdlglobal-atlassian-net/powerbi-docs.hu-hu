@@ -1,6 +1,6 @@
 ---
 title: Munkaterület adatfolyam-beállításainak konfigurálása
-description: Alkalmazás-munkaterület konfigurálása a Power BI-ban adatfolyam-definíciók és adatfájlok Azure Data Lake Storage Gen2-beli tárolására
+description: Munkaterület konfigurálása a Power BI-ban adatfolyam-definíciók és adatfájlok Azure Data Lake Storage Gen2-beli tárolására
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 12f4f24be9189041d5906844ebe71d6ffb023ec5
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 54c0936510c3d383df32fd8b1f99816726f74d9f
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523503"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432005"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Munkaterület adatfolyam-beállításainak konfigurálása (előzetes verzió)
 
@@ -35,11 +35,11 @@ Az alábbi bekezdések mindkettőt tárgyalják.
 
 ## <a name="create-a-new-workspace-configure-its-dataflow-storage"></a>Új munkaterület létrehozása, és az adatfolyam-tároló konfigurálása
 
-Új alkalmazás-munkaterület létrehozásához a Power BI szolgáltatásban válassza a **Munkaterületek > Új alkalmazás-munkaterület létrehozása** lehetőséget.
+Új munkaterület létrehozásához a Power BI szolgáltatásban válassza a **Munkaterületek > Új munkaterület létrehozása** lehetőséget.
 
 ![Új munkaterület hozzáadása](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_01.jpg)
 
-Az Alkalmazás-munkaterület létrehozása párbeszédpanelen megjelenhet egy **Továbbfejlesztett munkaterületek – előzetes verzió** című sárga mező. Ezen a területen válassza a **Kipróbálás** lehetőséget.
+A Munkaterület létrehozása párbeszédpanelen megjelenhet egy **Továbbfejlesztett munkaterületek – előzetes verzió** című sárga mező. Ezen a területen válassza a **Kipróbálás** lehetőséget.
 
 ![Továbbfejlesztett munkaterületek – előzetes verzió](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_02.jpg)
 
@@ -47,7 +47,7 @@ A megjelenő párbeszédpanelen egyedi nevet adhat munkaterületének. Egyelőre
 
 ![Új munkaterület elnevezése](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_03.jpg)
 
-Ezután bontsa ki az **Alkalmazás-munkaterület létrehozása** párbeszédpanel **Speciális** területét, ahol bekapcsolható az **Adatfolyam-tárolás (előzetes verzió)** beállítás.
+Ezután bontsa ki a **Munkaterület létrehozása** párbeszédpanel **Speciális** területét, ahol bekapcsolható az **Adatfolyam-tárolás (előzetes verzió)** beállítás.
 
 ![Az új munkaterület speciális beállításai](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 
@@ -57,7 +57,7 @@ Az új munkaterület létrehozásához válassza a **Mentés** lehetőséget. Az
 
 Új munkaterület létrehozása helyett egy meglévőt is frissíthet úgy, hogy a definíciós fájlokat és az adatokat a vállalat Azure Data Lake Storage Gen2-fiókjában tárolja. Fontos tudnivaló, hogy az adatfolyam-tárolási beállítások csak akkor módosíthatók, ha a munkaterület nem tartalmaz adatfolyamot.
 
-Alkalmazás-munkaterület szerkesztéséhez válassza a három pont **(...)** , majd a **Munkaterület szerkesztése** lehetőséget. 
+Munkaterület szerkesztéséhez válassza a három pont **(...)** , majd a **Munkaterület szerkesztése** lehetőséget. 
 
 ![Munkaterület szerkesztése](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_05.jpg)
 
@@ -103,7 +103,7 @@ Az alábbiakban felsorolt szempontokat is érdemes figyelembe venni:
 
 **Power BI Desktop**-ügyfél csak akkor fér hozzá az Azure Data Lake Storage Gen2-fiókban tárolt adatfolyamhoz, ha az adatfolyam tulajdonosa. Figyelje meg a következő példát:
 
-1.  Anna új alkalmazás-munkaterületet hoz létre, amelyet úgy konfigurál, hogy a vállalati data lake-ben tárolja az adatfolyamokat.
+1.  Anna új munkaterületet hoz létre, amelyet úgy konfigurál, hogy a vállalati adattóban tárolja az adatfolyamokat.
 2.  Dávid, aki szintén tagja az Anna által létrehozott munkaterületnek, a Power BI Desktop és az adatfolyam-összekötő használatával szeretne adatokhoz jutni az Anna által létrehozott adatfolyamból.
 3.  Dávid hibajelenséget tapasztal, ugyanis nem adták hozzá jogosult felhasználóként az adatfolyam data lake-beli CDM-mappájához.
 

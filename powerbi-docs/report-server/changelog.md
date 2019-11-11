@@ -8,13 +8,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/09/2019
-ms.openlocfilehash: a3f7e1676c864ff1f5dbf081dd2e7818f30caba6
-ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
+ms.date: 10/25/2019
+ms.openlocfilehash: 0a4aaa5d9fcb3d5dab6cce0b0c8dd6034581aedb
+ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72259978"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72922559"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
@@ -23,15 +23,22 @@ Ez a változásnapló a Power BI jelentéskészítő kiszolgálóra vonatkozik, 
 Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonságai](whats-new.md) című cikkből tájékozódhat. 
 
 ## <a name="september-2019"></a>2019. szeptember
-
 - **Power BI jelentéskészítő kiszolgáló**
+    - *Verzió: 1.6.7236.4246 (Build 15.0.1102.646), Kiadás dátuma: 2019. október 25.*
+        - Biztonsági frissítések
+        - Hibajavítások
+            - A .NET-keretrendszer 4.7-es verziójának javítása nincs telepítve.
+            - A Teradatához készült, többértékű paraméterekkel rendelkező többoldalas jelentések 110083-as hibájának javítása.
+            - Javítás arra a hibára, hogy az URLRoot érték nem működik több webszolgáltatás URL-kötés esetén, ha azok egyike http://+80/reportserver.
+          - Javítás arra a hibára, hogy a többoldalas jelentések többértékű paramétereinek értéke a jelentésterületen kívül jelenik meg.
+          
     - *Verzió: 1.6.7221.30698 (Build 15.0.1102.620), Kiadás dátuma: 2019. október 9.*
         - Hibajavítások
             - Hibajavítás a Szövegszűrő egyéni vizualizációhoz.
             - Hibajavítás a legördülő szeletelők teljesítményéhez.
             - Hibajavítás a Strip PII-hez telemetriából.
           - Hibajavítás a kis- és nagybetűket nem megkülönböztető URL-ekhez.
-             
+          
     - *Verzió: 1.6.7206.38019 (Build 15.0.1102.597), Kiadás dátuma: 2019. szeptember 26.*
         - Biztonsági frissítések
         - Hibajavítások
@@ -50,7 +57,10 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
              - Frissített webes API: /PowerBIReports({Id})/DataSources (PATCH) a kapcsolati sztring frissítéseinek engedélyezéséhez.
          
 - **Power BI Desktop (a Power BI jelentéskészítő kiszolgálóra optimalizálva)**
-
+    - *Verzió: 2.73.5586.1501 (2019. szeptember), Kiadás dátuma: 2019. október 25.*
+        - Hibajavítások
+            - Javítás a telemetriához.
+            
     - *Verzió: 2.73.5586.1241 (2019. szeptember), Kiadás dátuma: 2019. október 9.*
         - Hibajavítások
             - Hibajavítás a Szövegszűrő egyéni vizualizációhoz.

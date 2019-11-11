@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
-ms.openlocfilehash: 883d5c83019df293628d096f5834c9b5c6d425b6
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 8ca43232cdc5781900dd7cf8b9f72c510dab2e37
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730276"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442797"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Mi az a helyszíni adatátjáró?
 
@@ -42,13 +42,13 @@ Kétféle átjárótípus van, mindkettő más-más helyzethez:
 Átjáró használatához négy fő lépés szükséges.
 
 1. [Az átjáró letöltése és telepítése](/data-integration/gateway/service-gateway-install) helyi számítógépre.
-2. Az átjáró [konfigurálása](/data-integration/gateway/service-gateway-app) a tűzfal és más hálózati követelmények alapján.
-3. [Átjáró-rendszergazdák hozzáadása](/data-integration/gateway/service-gateway-manage), akik más hálózati követelményeket is kezelhetnek.
-4. Az átjáró [hibaelhárítása](service-gateway-onprem-tshoot.md) hibák esetén.
+1. Az átjáró [konfigurálása](/data-integration/gateway/service-gateway-app) a tűzfal és más hálózati követelmények alapján.
+1. [Átjáró-rendszergazdák hozzáadása](/data-integration/gateway/service-gateway-manage), akik más hálózati követelményeket is kezelhetnek.
+1. Helyszíni adatforrás frissítése [az átjáró használatával](service-gateway-sql-tutorial.md).
+1. Az átjáró [hibaelhárítása](service-gateway-onprem-tshoot.md) hibák esetén.
 
 ## <a name="next-steps"></a>Következő lépések
 
 * [A helyszíni adatátjáró telepítése](/data-integration/gateway/service-gateway-install)
-
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
