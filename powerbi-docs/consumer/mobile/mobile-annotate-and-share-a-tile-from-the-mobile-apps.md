@@ -2,19 +2,18 @@
 title: Jegyzetkészítés és megosztás a Power BI mobilalkalmazásokban
 description: 'Információk a csempék, jelentések és vizualizációk jegyzetekkel való ellátásáról és megosztásáról a Microsoft Power BI iOS- és Android rendszerhez készült mobilalkalmazásaiból. '
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 1f7911007d9629c8990fc15ddf7453bafe0e78f5
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 013cbc58a8404fa803a14c73b1668be1215cf642
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841463"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879496"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Csempék, jelentések és vizualizációk jegyzetekkel való ellátása és megosztása a Power BI mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -74,5 +73,5 @@ A csempe, jelentés vagy vizualizáció pillanatképét tartalmazó e-mail egy h
 
 ## <a name="next-steps"></a>További lépések
 * [Irányítópult megosztása a Power BI mobilalkalmazásokból](mobile-share-dashboard-from-the-mobile-apps.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

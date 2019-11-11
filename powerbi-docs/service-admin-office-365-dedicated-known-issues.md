@@ -2,7 +2,6 @@
 title: Office 365 dedikált ügyfelek – ismert problémák
 description: Támogatás az Office 365 dedikált ügyfelei számára – ismert problémák. Ez a témakör az Office 365 szolgáltatás dedikált ügyfeleinél jelentkező problémákat ismerteti. Ide tartoznak azok a korlátok, amelyek a csoportfunkciók és az iPhone-alkalmazás személyes tartományainak használatánál jelentkeznek.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 06/28/2017
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 9461609b7ecaa674d3ef4d01482752a78071dbe2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 010a45c08a3ed27b12b4fca91c64c87a00430f5a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61187839"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873596"
 ---
 # <a name="office-365-dedicated-customers---known-issues"></a>Office 365 dedikált ügyfelek – ismert problémák
 A Power BI-támogatás mostantól az Office 365 dedikált ügyfelei számára is elérhető.  Ha Ön az Office 365 dedikált ügyfele, a Power BI használatához az ehhez kapcsolódó bérlőről jelentkezhet be. Jelenleg két ismert probléma van.
@@ -36,5 +35,5 @@ A probléma megoldása érdekében a személyes tartomány helyett jelentkezzen 
 
 ![Bejelentkezési e-mail-cím](media/service-admin-office-365-dedicated-known-issues/sign-in-address.png)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

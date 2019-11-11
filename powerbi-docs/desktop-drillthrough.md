@@ -2,7 +2,6 @@
 title: Részletezés használata a Power BI Desktopban
 description: Megtudhatja, hogyan elemezheti részletesen az adatokat új jelentésoldalon a Power BI Desktopban.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7c9d400b196366609caebe9f79bb9a8130a4ad11
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: e093788683d10bc11c09d63ba327611a67f311c0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375171"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879922"
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Részletezés használata a Power BI Desktopban
 A **Power BI Desktop** **részletezés** funkciójával olyan oldalt hozhat létre a jelentésben, amely egy adott entitásra – például szállítóra, ügyfélre vagy gyártóra összpontosít. Más jelentésoldalakon a felhasználók a jobb gombbal kattinthatnak az adatpontokra. Ezt követően részletezhetik a kiemelt oldalt, és megkaphatják az adott környezetre szűrt adatokat.
@@ -81,6 +80,6 @@ Ezek a tudnivalók a **részletezés** jelentésekben való használatára vonat
 
 Az alábbi cikkeket is érdekesnek találhatja:
 
-* [Kereszt-jelentés részletezés használata a Power BI Desktopban](desktop-cross-report-drill-through.md)
+* [Jelentésközi részletezés a Power BI Desktopban](desktop-cross-report-drill-through.md)
 * [Szeletelők használata a Power BI Desktopban](visuals/power-bi-visualization-slicers.md)
 

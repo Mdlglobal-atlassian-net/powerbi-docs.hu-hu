@@ -2,7 +2,6 @@
 title: A DAX alapszintű használata a Power BI Desktopban
 description: A DAX alapszintű használata a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 524d04655d01b527707a59b941c84f5254ffea20
-ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
+ms.openlocfilehash: fcff0bf1d6c68b9bdb000855f4984b3664b882c1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72922485"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877918"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>A DAX alapszintű használata a Power BI Desktopban
 Ez a cikk a Power BI Desktoppal még csak most ismerkedő felhasználóknak szól. Azt mutatja be röviden és egyszerűen, hogyan lehet a Data Analysis Expressions (DAX) nyelv segítségével néhány alapszintű számítási és adatelemzési problémát megoldani. Ismerteti az alapvető fogalmakat, továbbá tartalmaz néhány elvégezhető feladatot és egy tudáspróbát az elsajátított ismeretek felmérésére, így segít a DAX nyelvvel kapcsolatos legfontosabb alapvető tudnivalók elsajátításában.
@@ -33,7 +32,7 @@ Szeretnénk a számításokban, különösen a mértékekben és a számított o
 
 ### <a name="example-workbook"></a>Példamunkafüzet
 
-A legjobban úgy sajátíthatja el a DAX használatát, ha létrehoz néhány alapvető képletet, azokat tényleges adatokkal használja, és megvizsgálja a kapott eredményeket. Az itt található példák és feladatok a Power BI Desktop előzetes verziójához készült [Contoso értékesítési mintára](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) épülnek. Ez a mintafájl megegyezik a következőben alkalmazottal: [Oktatóanyag: Saját mértékek létrehozása a Power BI Desktopban](desktop-tutorial-create-measures.md). 
+A legjobban úgy sajátíthatja el a DAX használatát, ha létrehoz néhány alapvető képletet, azokat tényleges adatokkal használja, és megvizsgálja a kapott eredményeket. Az itt található példák és feladatok a Power BI Desktop előzetes verziójához készült [Contoso értékesítési mintára](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) épülnek. Ez a mintafájl megegyezik a következőben alkalmazottal: [Oktatóanyag: Saját mértékek létrehozása a Power BI Desktopban](desktop-tutorial-create-measures.md). 
 
 ## <a name="lets-begin"></a>Lássunk is hozzá!
 A DAX nyelvvel kapcsolatos ismeretek három alapvető fogalom köré fűzhetőek fel: *Szintaxis*, *Függvények* és *Környezet*. Léteznek egyéb fontos fogalmak is a DAX-ban, de ennek a három fogalomnak az elsajátítása adja a lehető legjobb alapot, amelyre DAX-ismereteit építheti.
@@ -82,7 +81,7 @@ Hozzunk létre egy egyszerű képletet. Ez a feladat segít jobban megérteni a 
 
 ### <a name="task-create-a-measure-formula"></a>Feladat: Mértékképlet létrehozása
 
-1. [Töltse le](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) és nyissa meg a Contoso értékesítési mint Power BI Desktop-fájlját. 
+1. [Töltse le](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) és nyissa meg a Contoso értékesítési mint Power BI Desktop-fájlját. 
     
 2. A Jelentés nézet mezőlistájában kattintson a jobb gombbal a **Sales** (Értékesítések) táblára, majd válassza az **Új mérték** gombot.
     
@@ -213,7 +212,7 @@ A válaszokat a cikk végén találja.
 ## <a name="summary"></a>Összefoglalás
 Most, hogy valamelyest megismerte a DAX legfontosabb alapfogalmait, elkezdhet kísérletezgetni mértékek DAX-képleteinek létrehozásával. A DAX elsajátítása talán nem a legegyszerűbb dolog, de rengeteg forrásanyag áll rendelkezésre. A cikk átolvasása után, és miután már kísérletezgetett saját képletek összeállításával is, a DAX más fogalmaival és képleteivel is megismerkedhet, amelyek segíthetnek megoldást találni üzleti problémáira. A számos elérhető DAX-forrásanyag közül a legfontosabb a [Data Analysis Expressions (DAX) referencia-útmutatója](https://msdn.microsoft.com/library/gg413422.aspx).
 
-Mivel a DAX néhány éve már jelen van a Microsoft más üzletiintelligencia-eszközeiben, például a Power Pivot és az Analysis Services táblázatos modelljeiben, rengeteg további nagyszerű forrásanyag is elérhető. További információkat találhat még a mind a Microsoft, mind a vezető üzletiintelligencia-szakemberek tollából született könyvekben, tanulmányokban és blogokon. [A TechNeten a DAX-forrásanyagközpont wikije](http://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) szintén nagyszerű kiindulópontot jelenthet.
+Mivel a DAX néhány éve már jelen van a Microsoft más üzletiintelligencia-eszközeiben, például a Power Pivot és az Analysis Services táblázatos modelljeiben, rengeteg további nagyszerű forrásanyag is elérhető. További információkat találhat még a mind a Microsoft, mind a vezető üzletiintelligencia-szakemberek tollából született könyvekben, tanulmányokban és blogokon. [A TechNeten a DAX-forrásanyagközpont wikije](https://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) szintén nagyszerű kiindulópontot jelenthet.
 
 ### <a name="quickquiz-answers"></a>A gyorstesztek válaszai
 Szintaxis:

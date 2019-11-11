@@ -2,7 +2,6 @@
 title: Power BI-vizualizációk létrehozása a Python használatával
 description: Power BI-vizualizációk létrehozása a Python használatával
 author: otarb
-manager: rajatt
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: b41a50ae7c4aaf8f70c9d7745ea4767b7644a62f
-ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.openlocfilehash: 567b775cb7323dbd343f2a26d4abc0d60885ab7a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70303120"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877982"
 ---
 # <a name="create-power-bi-visuals-using-python"></a>Power BI-vizualizációk létrehozása a Python használatával
 A **Power BI Desktopban** a **Python** használatával vizualizálhatja az adatokat.
@@ -158,7 +157,7 @@ Ez az oktatóanyag segítséget nyújt az első lépésekhez vizualizációk Pyt
 * Dokumentáció a [Matplotlib](https://matplotlib.org/) webhelyén. 
 * [Matplotlib-oktatóanyag: Alapszintű útmutató a Matplotlib és a Python használatához](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) 
 * [Matplotlib-oktatóanyag – Python Matplotlib-kódtár példákkal](https://www.edureka.co/blog/python-matplotlib-tutorial/) 
-* [Pandas API-referencia](http://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
+* [Pandas API-referencia](https://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
 * [Python-vizualizációk a Power BI szolgáltatásban](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service/) 
 * [Python-vizualizációk használata Power BI-ban](https://www.absentdata.com/how-to-user-python-and-power-bi/)
 

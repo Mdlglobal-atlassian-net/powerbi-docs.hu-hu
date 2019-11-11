@@ -2,7 +2,6 @@
 title: Szövegként visszaadott beágyazott értékek hibaelhárítása a Power BI szolgáltatásban
 description: Megtudhatja, hogyan háríthatja el a sztringgé konvertált beágyazott értékek hibáját helytelen adatforrás-védelmi beállítások használatakor
 author: cpopell
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 6/4/2019
 ms.author: gepopell
 LocalizationGroup: Reports
-ms.openlocfilehash: 61181f9317718b6a4fb1cd73a767e4002b5b27f5
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: ab40ca9c415dacf52f4d82eb2c157d57aef92f93
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544257"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871289"
 ---
 # <a name="troubleshooting-nested-values-returned-as-text-in-power-bi-service"></a>Szövegként visszaadott beágyazott értékek hibaelhárítása a Power BI szolgáltatásban
 
@@ -24,7 +23,7 @@ ms.locfileid: "72544257"
 
 Korábban előfordultak esetek, amelyekben a Power BI-jelentés megfelelően frissült a Desktopban, azonban ehhez hasonló hibát észlelt a Power BI szolgáltatásban: „A [Tábla] érték nem konvertálható a következő típusra: Tábla.” A hiba egyik oka, hogy amikor az Adatvédelmi tűzfal egy adatforrást pufferel, a beágyazott, nem skaláris értékek (például a táblák, rekordok, listák és függvények) automatikusan szöveges értékekké alakulnak (például [Tábla] vagy [Rekord]).
 
-Most, hogy a Power BI szolgáltatás már támogatja az adatvédelmi szintek beállítását (vagy a tűzfal teljes kikapcsolását), az ilyen hibák elkerülhetők az [adatforrás adatvédelmi beállításainak nem privátként történő konfigurálásával](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) a Power BI szolgáltatásban.
+Most, hogy a Power BI szolgáltatás már támogatja az adatvédelmi szintek beállítását (vagy a tűzfal teljes kikapcsolását), az ilyen hibák elkerülhetők az [adatforrás adatvédelmi beállításainak nem privátként történő konfigurálásával](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/) a Power BI szolgáltatásban.
 
 A Power BI júniusi frissítésétől kezdődően amikor a tűzfal egy beágyazott táblát/rekordot/listát/egyéb elemet pufferel, az értékek csendes szöveggé alakítása helyett a következő hibaüzenet jelenik meg: 
 
@@ -57,4 +56,4 @@ Ha nem tudja eltávolítani az oszlopot, replikálhatja a régi viselkedést egy
 `if [MyColumn] is table then "[Table]" else if [MyColumn] is record then "[Record]" else if [MyColumn] is list then "[List]" else if [MyColumn] is function then "[Function]" else [MyColumn]`
 
 A hiba a Power BI Desktopban is megjelenik, ha minden adatforrás-védelmi beállítást privátra állít?
-Ha igen, megoldhatja a problémát, ha a Power BI szolgáltatásban nem privátként [konfigurálja az adatforrás-védelmi beállításokat](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/).
+Ha igen, megoldhatja a problémát, ha a Power BI szolgáltatásban nem privátként [konfigurálja az adatforrás-védelmi beállításokat](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/).

@@ -2,7 +2,6 @@
 title: Jelentések létrehozása más munkaterületen lévő adathalmazok alapján (előzetes verzió) – Power BI
 description: Útmutató adathalmaz megosztásához a vállalat több felhasználójával. Így mind jelentéseket készíthetnek az Ön adathalmaza alapján a saját munkaterületükön.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f8229c74a233d8bc44370380bf635527506194f0
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 371507eb86e1b68225e9d66ee3a1363b0e163d4f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567442"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877176"
 ---
 # <a name="create-reports-based-on-datasets-from-different-workspaces-preview"></a>Jelentések létrehozása más munkaterületen lévő adathalmazok alapján (előzetes verzió)
 
@@ -63,4 +62,4 @@ Kétféle támogatott adathalmaz létezik. Az adathalmaz-tulajdonosok *Meghirdet
 ## <a name="next-steps"></a>Következő lépések
 
 - [Adathalmazok használata több munkaterületen (előzetes verzió)](service-datasets-across-workspaces.md)
-- Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

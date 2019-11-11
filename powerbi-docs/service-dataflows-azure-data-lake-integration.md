@@ -2,7 +2,6 @@
 title: Adatfolyamok és az Azure Data Lake integrációja
 description: A Power BI adatfolyamok és az Azure Data Lake Storage Gen2 integrációjának áttekintése
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 7532b0b381e43c6e413d27fa141c22e58dfba84e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5b13fdc1f65fe2650ea0fb4fee1be20611ac3e8b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61150482"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877322"
 ---
 # <a name="dataflows-and-azure-data-lake-integration-preview"></a>Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)
 
@@ -97,4 +96,4 @@ A Common Data Modellel kapcsolatos további információt a témát áttekintő 
 * [CDM-mappák](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM-modellfájl definiálása](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-[Kérdéseit mindig felteheti a Power BI-közösségben](http://community.powerbi.com/) is.
+[Kérdéseit mindig felteheti a Power BI-közösségben](https://community.powerbi.com/) is.

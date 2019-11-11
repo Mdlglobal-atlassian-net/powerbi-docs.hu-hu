@@ -3,18 +3,17 @@ title: Indítási URL-cím létrehozása
 description: Ez a cikk bemutatja, hogyan nyithat meg egy URL-címet egy új lapon Power BI-vizualizációkkal.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 7dff03f0ad192e0598c677d41709447fbdc0688d
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 1bf7bac5631e0d76864620057ba3d95fab3ba3ad
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307319"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879930"
 ---
 # <a name="create-a-launch-url"></a>Indítási URL-cím létrehozása
 
@@ -31,12 +30,12 @@ Indítási URL-cím létrehozásával új böngészőlapot (vagy -ablakot) nyith
 A `host.launchUrl()` API-hívással sztringargumentumként adhatja meg a cél URL-címet:
 
 ```typescript
-this.host.launchUrl('http://some.link.net');
+this.host.launchUrl('https://some.link.net');
 ```
 
 ## <a name="restrictions"></a>Korlátozások
 
-* Csak abszolút elérési utakat használjon, relatívokat ne. Példa egy abszolút elérési útra: `http://some.link.net/subfolder/page.html`. A `/page.html` relatív elérési út nem nyílik meg.
+* Csak abszolút elérési utakat használjon, relatívokat ne. Példa egy abszolút elérési útra: `https://some.link.net/subfolder/page.html`. A `/page.html` relatív elérési út nem nyílik meg.
 
 * Jelenleg csak a *HTTP* és *HTTPS* protokollok támogatottak. Ne használjon *FTP*, *MAILTO* és hasonló protokollokat.
 

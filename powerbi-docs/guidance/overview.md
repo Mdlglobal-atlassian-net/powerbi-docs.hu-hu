@@ -2,19 +2,18 @@
 title: Útmutató a Power BI-hoz
 description: Az útmutató dokumentációban ajánlott eljárásokat talál a Power BI használatához.
 author: guyinacube
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2019
 ms.author: asaxton
-ms.openlocfilehash: 3e8a4a92ce3a1e5cbc9459732cdd12225ae901e1
-ms.sourcegitcommit: 0687908938e4c3b68401fd511ec1c28fb54ddeb3
+ms.openlocfilehash: e3aeff47e585d9a54edf46f7001f4686e9a76c3a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71691243"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875569"
 ---
 # <a name="guidance-for-power-bi"></a>Útmutató a Power BI-hoz
 
@@ -37,6 +36,6 @@ Itt megtalálja a Power BI-hoz használható útmutatót és ajánlott eljárás
 
 | Útmutató | Leírás |
 | --- | --- |
-| [Ajánlott eljárások adatfolyamokhoz](/service-dataflows-best-practices.md) | Az adatfolyamok tervezésének a Power BI szolgáltatásban bevált gyakorlatait mutatja be. |
+| [Ajánlott eljárások adatfolyamokhoz](../service-dataflows-best-practices.md) | Az adatfolyamok tervezésének a Power BI szolgáltatásban bevált gyakorlatait mutatja be. |
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

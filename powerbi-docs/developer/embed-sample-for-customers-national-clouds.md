@@ -3,19 +3,18 @@ title: Beágyazott analitika Power BI-tartalom beágyazásához egy alkalmazásb
 description: Útmutató jelentés, irányítópult vagy csempe alkalmazásba való integrálásához vagy beágyazásához az ügyfelek számára, a beágyazott analitikákhoz készült Power BI API-k használatával. Útmutató a Power BI alkalmazásba való integrálásához beágyazott analitikai szoftver, beágyazott analitikai eszközök vagy beágyazott üzletiintelligencia-eszközök használatával a kormányzati és országos felhők számára.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: bc6b9cf92966dd9e86e789169b9b8134dbfcb2ba
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 7ede1678dc6cf0e217eb17dcc28f756031467b84
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61374319"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875888"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Oktatóanyag: Power BI-tartalom beágyazása az alkalmazásba országos felhők számára
 
@@ -37,7 +36,7 @@ A különböző országos felhők az alábbiak:
 
 ![Beágyazott irányítópult](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-A bemutató megkezdéséhez **Power BI**-fiókra van szükség. Ha nem rendelkezik beállított fiókkal, akkor a kormányzati típustól vagy az országtól függően kiválaszthatja az Ön számára megfelelő országos felhőt. Regisztrálhat egy [egyesült államokbeli kormányzati Power BI-fiókot](../service-govus-signup.md), egy [németországi felhőhöz készült Power BI-fiókot](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) vagy egy [kínai felhőhöz készült Power BI-fiókot](http://www.21vbluecloud.com/powerbi/).
+A bemutató megkezdéséhez **Power BI**-fiókra van szükség. Ha nem rendelkezik beállított fiókkal, akkor a kormányzati típustól vagy az országtól függően kiválaszthatja az Ön számára megfelelő országos felhőt. Regisztrálhat egy [egyesült államokbeli kormányzati Power BI-fiókot](../service-govus-signup.md), egy [németországi felhőhöz készült Power BI-fiókot](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) vagy egy [kínai felhőhöz készült Power BI-fiókot](https://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > A saját cégének szeretne irányítópultot beágyazni? Tekintse meg az [irányítópult céges alkalmazásba való integrálását](integrate-dashboard.md) ismertető cikket.
@@ -150,7 +149,7 @@ Az alkalmazásban egy **hozzáférési tokent** kell beszereznie az Azure AD-bő
 
 * Kormányzati közösségi felhő (GCC) – ```https://login.microsoftonline.com```
 
-* Katonai alvállalkozók (DoDCON) – ```http://login.microsoftonline.us```
+* Katonai alvállalkozók (DoDCON) – ```https://login.microsoftonline.us```
 
 * Katonaság (DoD) – ```https://login.microsoftonline.us```
 
@@ -445,4 +444,4 @@ Egy alkalmazásminta a [céges beágyazási mintában](https://github.com/Micros
 
 Megfontolandó szempontok és korlátozások
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Átméretezhető rugalmas szeletelő létrehozása a Power BI-ban
 description: Útmutató egy olyan szeletelő létrehozásához, mely átméretezhető a jelentésnek megfelelően
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/04/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: fed4119946cb762fb4d9aee3b5300be225a6e379
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: aa7dc612d7a1b16fdc02fb1b40c98257cda3183d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61419832"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877584"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Átméretezhető rugalmas szeletelő létrehozása a Power BI-ban
 
@@ -81,4 +80,4 @@ Ugyanezekkel a lépésekkel tehet rugalmassá egy idő- vagy tartományszeletel�
 ## <a name="next-steps"></a>Következő lépések
 
 - [Szeletelők a Power BI szolgáltatásban](visuals/power-bi-visualization-slicers.md)
-- További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+- További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -3,18 +3,17 @@ title: A fejlesztői kézikönyv áttekintése, Power BI jelentéskészítő kis
 description: Üdvözöljük a Power BI-, mobil és lapokra tördelt jelentések tárolására és kezelésére szolgáló helyszíni hely, a Power BI jelentéskészítő kiszolgáló fejlesztői kézikönyvében.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.openlocfilehash: f0186b362a9e3cc956835b94089228dc606eca35
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 773533fee8fc4fada0cc33d9a6d2188118135797
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769959"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859783"
 ---
 # <a name="developer-handbook-overview-power-bi-report-server"></a>A fejlesztői kézikönyv áttekintése, Power BI jelentéskészítő kiszolgáló
 

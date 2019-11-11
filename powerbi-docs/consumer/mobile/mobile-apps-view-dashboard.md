@@ -2,19 +2,18 @@
 title: Irányítópultok és jelentések megtekintése a Power BI-mobilalkalmazásokban
 description: A Power BI szolgáltatásban irányítópultokat és jelentéseket hozhat létre, illetve csatlakozhat hozzájuk, majd megtekintheti őket a Power BI-mobilalkalmazásokban.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: b4c81e1c83ef53dcb16153b4e9996b259e9eb886
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 1a3450ba4a31679c9e2e4ad844ef1058ebfdf4ee
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059795"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870672"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Irányítópultok és jelentések megtekintése a Power BI-mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -40,7 +39,7 @@ Az irányítópultok és jelentések mobileszközön való megtekintéséhez lé
 ## <a name="view-dashboards-on-your-iphone"></a>Irányítópultok megtekintése az iPhone-on
 1. Nyissa meg a Power BI alkalmazást az iPhone-on, és jelentkezzen be.
    
-   [Le kell töltenie az iPhone-alkalmazást](http://go.microsoft.com/fwlink/?LinkId=522062) az Apple App Store áruházból?
+   [Le kell töltenie az iPhone-alkalmazást](https://go.microsoft.com/fwlink/?LinkId=522062) az Apple App Store áruházból?
 2. Koppintson egy irányítópultra a megnyitásához.  
    
     ![Koppintson az irányítópultra](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-home.png)
@@ -80,7 +79,7 @@ A „csippentés” kézmozdulattal nagyíthatja és kicsinyítheti az irányít
 ## <a name="view-dashboards-on-your-ipad"></a>Irányítópultok megtekintése iPaden
 1. Nyissa meg a Power BI alkalmazást.
    
-   Először [le kell töltenie az iPad-alkalmazást](http://go.microsoft.com/fwlink/?LinkId=522062) az Apple App Store áruházból?
+   Először [le kell töltenie az iPad-alkalmazást](https://go.microsoft.com/fwlink/?LinkId=522062) az Apple App Store áruházból?
 2. Koppintson az alkalmazás tetején lévő **Irányítópultok** elemre.  
    
    ![Irányítópult kezdőlapja](./media/mobile-apps-view-dashboard/power-bi-ipad-dashboard-home.png)
@@ -103,7 +102,7 @@ A „csippentés” kézmozdulattal nagyíthatja és kicsinyítheti az irányít
 ## <a name="view-dashboards-on-your-android-phone"></a>Irányítópultok megtekintése Android rendszerű telefonon
 1. Nyissa meg a Power BI alkalmazást az Android rendszerű telefonon, és jelentkezzen be.
    
-   Előbb [le szeretné tölteni az Android alkalmazást](http://go.microsoft.com/fwlink/?LinkID=544867)?
+   Előbb [le szeretné tölteni az Android alkalmazást](https://go.microsoft.com/fwlink/?LinkID=544867)?
 2. Koppintson egy irányítópultra a megnyitásához.   
    
    ![Irányítópult kezdőlapja](./media/mobile-apps-view-dashboard/power-bi-android-dashboards.png)
@@ -127,7 +126,7 @@ A „csippentés” kézmozdulattal nagyíthatja és kicsinyítheti az irányít
 ## <a name="view-dashboards-on-your-android-tablet"></a>Irányítópultok megtekintése Android-táblagépen
 1. Nyissa meg a Power BI alkalmazást az Android rendszerű táblagépen, és jelentkezzen be.
    
-   Előbb [le szeretné tölteni az Android alkalmazást](http://go.microsoft.com/fwlink/?LinkID=544867)?
+   Előbb [le szeretné tölteni az Android alkalmazást](https://go.microsoft.com/fwlink/?LinkID=544867)?
 2. Koppintson egy irányítópultra a megnyitásához.   
    
    ![Irányítópult kezdőlapja](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
@@ -154,8 +153,8 @@ Ha Ön az irányítópult tulajdonosa, *a Power BI szolgáltatásban* létrehozh
 További információkat is olvashat [az irányítópultok telefonos nézetének létrehozásáról](../../service-create-dashboard-mobile-phone-view.md).
 
 ## <a name="next-steps"></a>Következő lépések
-* [Töltse le az Android-alkalmazást](http://go.microsoft.com/fwlink/?LinkID=544867) a Google Play áruházból  
+* [Töltse le az Android-alkalmazást](https://go.microsoft.com/fwlink/?LinkID=544867) a Google Play áruházból  
 * [Első lépések a Power BI-hoz készült Android-alkalmazásban](mobile-android-app-get-started.md)  
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

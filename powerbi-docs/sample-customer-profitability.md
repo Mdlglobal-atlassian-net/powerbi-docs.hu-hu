@@ -2,7 +2,6 @@
 title: 'Ügyfél-jövedelmezőségi minta a Power BI-hoz: Bemutató megtekintése'
 description: 'Ügyfél-jövedelmezőségi minta a Power BI-hoz: Bemutató megtekintése'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: ddda7d6aaacbcde2d71371b316d14a9cd411bd43
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: d6368ae61b2813972c3209e2af456ba5aa5fb81b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523426"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874018"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Ügyfél-jövedelmezőségi minta a Power BI-hoz: Bemutató megtekintése
 
@@ -53,11 +52,11 @@ Használat előtt a mintát [tartalomcsomagként](#get-the-content-pack-for-this
 
 ### <a name="get-the-pbix-file-for-this-sample"></a>.pbix-fájl letöltése ehhez a mintához
 
-Az Ügyfél-jövedelmezőségi mintát a Power BI Desktoppal való használatra tervezett [.pbix-fájlként](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix) is letöltheti.
+Az Ügyfél-jövedelmezőségi mintát a Power BI Desktoppal való használatra tervezett [.pbix-fájlként](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix) is letöltheti.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Excel-munkafüzet letöltése ehhez a mintához
 
-Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](http://go.microsoft.com/fwlink/?LinkId=529781) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
+Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529781) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Mi olvasható le az irányítópultról?
 
@@ -180,7 +179,7 @@ Az elemzéshez hasznos lenne megállapítani, hogy mely iparág termeli a legtö
 
 2.  A Q&A kérdésmező megnyitásához az irányítópult felső részén válassza a **Kérdés feltevése** lehetőséget.
 
-    ![Tegyen fel kérdést az adataival kapcsolatban](media/sample-customer-profitability/power-bi-ask-question.png)
+    ![Kérdés feltevése az adatairól](media/sample-customer-profitability/power-bi-ask-question.png)
 
 3. A kérdésmezőbe írja be a következőt: *Valery teljes bevétele iparág szerint*. Figyelje meg, ahogy a vizualizáció frissül, miközben beírja a kérdést.
 
@@ -194,7 +193,7 @@ Vessen egy pillantást a Forgalmazás iparágra.
 1. Nyissa meg az **Iparági árrés elemzése** jelentésoldalt.
 2. Anélkül, hogy bármilyen vizualizációt kijelölne a jelentéslapon, bontsa ki a jobb oldalon lévő Szűrő ablaktáblát (ha az még nincs kibontva). A **Szűrők** ablaktáblán csak **Lapszintű szűrők** láthatók.  
 
-   ![Lapszintű szűrők](media/sample-customer-profitability/power-bi-filters.png)
+   ![Oldalszintű szűrők](media/sample-customer-profitability/power-bi-filters.png)
 3. Keresse meg az **Iparág** szűrőt, és a nyíl kiválasztásával bontsa ki a listát. Adjon hozzá egy lapszűrőt a Forgalmazás iparághoz. Először törölje az összes kijelölést **Az összes kijelölése** jelölőnégyzet bejelölésének törlésével. Most jelölje ki egyedül a **Forgalmazás** elemet.  
 
    ![a Forgalmazás szűrője](media/sample-customer-profitability/customer7.png)

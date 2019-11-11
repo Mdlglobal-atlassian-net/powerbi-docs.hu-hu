@@ -2,7 +2,6 @@
 title: Adathalmaz meghirdetése (előzetes verzió) – Power BI
 description: Útmutató megbízható, kiemelkedő minőségű adathalmazok meghirdetéséhez és nagyvállalati felhasználóknak való felkínálásához.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6a9c4f2e6348067b3a7029be8d8e7fdfb26e7045
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 379249ac50f61df07c4adaffe53e0df29a311086
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020956"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877138"
 ---
 # <a name="promote-your-dataset-preview"></a>Adathalmaz meghirdetése (előzetes verzió)
 
@@ -55,4 +54,4 @@ Bérlői rendszergazdája meghatározta azoknak a körét, akik a vállalatnál 
 ## <a name="next-steps"></a>Következő lépések
 
 * További információ: [Adathalmazok használata több munkaterülettel](service-datasets-across-workspaces.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

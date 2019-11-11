@@ -2,19 +2,18 @@
 title: Bemutató módú megjelenítés a Surface Hubon és a Windows 10-ben – Power BI
 description: Itt részletesebben olvashat a Power BI-jelentések a Surface Hubon való megjelenítéséről, valamint a Power BI-irányítópultok, -jelentések és -csempék teljes képernyős megjelenítéséről Windows 10-eszközökön.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: mshenhav
-ms.openlocfilehash: ac9072c69edfd245454e92855dcefa461e80cc23
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: abd7fd34cf2dbdc2f8f12a7f3c6de6228941af5a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61338250"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869530"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Jelentések és irányítópultok megjelenítése bemutató módban a Surface Hubon és Windows 10-eszközökön
 A bemutató mód használatával teljes képernyőn jeleníthet meg jelentéseket és irányítópultokat Windows 10-eszközökön és a Surface Hubon. 
@@ -54,5 +53,5 @@ Az rögzítésének feloldásával azt bárhová áthúzhatja a képernyőn. Ez 
 
 ## <a name="next-steps"></a>Következő lépések
 * [Irányítópultok és jelentések megjelenítése teljes képernyős módban a Power BI szolgáltatásból](../end-user-focus.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

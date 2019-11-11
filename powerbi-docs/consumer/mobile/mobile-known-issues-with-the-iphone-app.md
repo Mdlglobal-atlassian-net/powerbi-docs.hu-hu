@@ -2,19 +2,18 @@
 title: A „kommunikációs hibák” javítása az iOS-mobilalkalmazásokban – Power BI
 description: Ez a cikk segíthet, ha a „Kommunikációs hibák történtek. A hibákat a Wi-Fi-kapcsolat proxybeállításai okozhatják.” üzenet jelenik meg.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: mshenhav
-ms.openlocfilehash: 9e487f4305b663028714cbe45ab76abaaa4a6db9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 14745d1f2b62845ca0eac549b100bf3e06f8f814
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61135704"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879111"
 ---
 # <a name="fixing-communication-failures-in-ios-mobile-apps---power-bi"></a>A „kommunikációs hibák” javítása az iOS-mobilalkalmazásokban – Power BI
 
@@ -31,5 +30,5 @@ Ez az üzenet akkor jelenik meg, ha az iPhone vagy iPad internetkapcsolatához k
 Váltsa át az iPhone vagy iPad kapcsolatát egy másikra, amely nem igényel explicit HTTP-proxybeállítást (azaz egy olyan beállítást, ahol a HTTP-proxy ki van kapcsolva).
 
 ## <a name="other-issues"></a>Más problémái vannak?
-Forduljon a [Power BI közösségéhez](http://community.powerbi.com/).
+Forduljon a [Power BI közösségéhez](https://community.powerbi.com/).
 

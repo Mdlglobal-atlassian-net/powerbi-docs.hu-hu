@@ -3,18 +3,17 @@ title: Adatkészlet lekérése és sorok hozzáadása
 description: Útmutatás az adatok leküldéséhez – Adatkészlet lekérése, és sorok hozzáadása egy Power BI-táblához
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: f7dc84c9c6c84a30417d97f37d984b5f01ec9cd7
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 1edf73aa20301e86146de0d9ef924ad45c6f1f33
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596455"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875719"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>4\. lépés: Sorok hozzáadása egy Power BI-táblához adathalmaz lekérésével
 
@@ -22,7 +21,7 @@ Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-dat
 
 Az Adatok adatkészletbe való leküldésének **3. lépésében**, amelynek címe [Adatkészlet létrehozása a Power BI-ban](walkthrough-push-data-create-dataset.md), az [Adatkészlet létrehozása](https://docs.microsoft.com/rest/api/power-bi/datasets) művelet meghívásával létrehozott egy adatkészletet a Power BI-ban. Ebben a lépésben az [Adatkészletek lekérése](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) műveletet és a Newtonsoft.Jsont fogja használni az adatkészlet azonosítójának lekéréséhez. Az adatkészlet azonosítóját a 4. lépésben fogja használni, hogy sorokat adjon hozzá egy adatkészlethez. 
 
-Ha adatokat szeretne elküldeni Power BI-adatkészletbe, akkor az adatkészletben hivatkoznia kell a táblára. Ha egy táblára kíván hivatkozni egy adatkészletben, először le kell kérnie az **Adatkészlet azonosítóját**. Az **adathalmaz azonosítójának** lekéréséhez használja az [Adathalmazok lekérése](/rest/api/power-bi/datasets/getdatasets) műveletet. Az **Adathalmazok lekérése** művelet egy JSON-sztringet ad vissza, amely tartalmazza a Power BI-ban tárolt összes adathalmaz listáját. A JSON-sztring deszerializálásának ajánlott módja a [Newtonsoft.JSON](http://www.newtonsoft.com/json) használata.
+Ha adatokat szeretne elküldeni Power BI-adatkészletbe, akkor az adatkészletben hivatkoznia kell a táblára. Ha egy táblára kíván hivatkozni egy adatkészletben, először le kell kérnie az **Adatkészlet azonosítóját**. Az **adathalmaz azonosítójának** lekéréséhez használja az [Adathalmazok lekérése](/rest/api/power-bi/datasets/getdatasets) műveletet. Az **Adathalmazok lekérése** művelet egy JSON-sztringet ad vissza, amely tartalmazza a Power BI-ban tárolt összes adathalmaz listáját. A JSON-sztring deszerializálásának ajánlott módja a [Newtonsoft.JSON](https://www.newtonsoft.com/json) használata.
 
 Az adatkészlet lekérésének menete:
 
@@ -270,10 +269,10 @@ namespace walkthrough_push_data
 ## <a name="next-steps"></a>Következő lépések
 
 [Sorok hozzáadása egy Power BI-táblához](walkthrough-push-data-add-rows.md)  
-[Newtonsoft.Json](http://www.newtonsoft.com/json)  
+[Newtonsoft.Json](https://www.newtonsoft.com/json)  
 [Adatkészletek lekérése](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
 [Adatok leküldése a Power BI-ba](walkthrough-push-data.md)  
 [A Power BI REST API áttekintése](overview-of-power-bi-rest-api.md)  
 [A Power BI REST API-jainak leírása](https://docs.microsoft.com/rest/api/power-bi/)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

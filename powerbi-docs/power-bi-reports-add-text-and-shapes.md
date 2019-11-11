@@ -2,7 +2,6 @@
 title: Szövegdobozok és alakzatok a Power BI-jelentésekben
 description: A Microsoft Power BI szolgáltatás használatával szövegdobozokat és alakzatokat hozhat létre és adhat hozzá egy jelentéshez.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: _3q6VEBhGew
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 03157d34e8d3a20ae7b4aadf71a0829d9a88e08d
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 3da18269817ef89dfff9524c8875814430bc6cce
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715266"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874446"
 ---
 # <a name="text-boxes-and-shapes-in-power-bi-reports"></a>Szövegdobozok és alakzatok a Power BI-jelentésekben
 A Power BI szolgáltatás és a Power BI Desktop használatával szövegdobozokat és alakzatokat adhat jelentésekhez. Mindkét esetben a jelentésre vonatkozó szerkesztési jogosultsággal kell rendelkeznie. Ha a jelentést megosztották Önnel a Power BI szolgáltatásban, akkor nem rendelkezik hozzá szerkesztési jogosultsággal. 
@@ -68,4 +67,4 @@ Figyelje meg, hogyan használja Will a Power BI Desktopot, hogy [statikus képek
 
 [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

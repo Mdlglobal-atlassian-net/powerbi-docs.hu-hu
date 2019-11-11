@@ -3,18 +3,17 @@ title: Power BI-engedélyek
 description: Power BI-engedélyek
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
-ms.openlocfilehash: 06901a484ca53881f30cc71d9a7404807ac6cd57
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 14327f09ede41c23fd4fe7cc65fc4f8d3a91b926
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429145"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880433"
 ---
 # <a name="power-bi-permissions"></a>Power BI-engedélyek
 
@@ -46,7 +45,7 @@ Egy alkalmazás engedélyeket kérhet, amikor először kísérel meg bejelentke
 
 ## <a name="requesting-permissions"></a>Engedélyek kérése
 
-Bár behívhatja az API-t felhasználónévvel és jelszóval való hitelesítéshez, ha másik felhasználó nevében szeretne műveleteket végezni, olyan engedélyeket kell kérnie, amelyeket a felhasználó jóváhagy, majd az eredményül kapott hozzáférési tokent el kell küldenie az összes későbbi hívással. Ehhez a folyamathoz a standard [OAuth 2.0](http://oauth.net/2/) protokollt követjük. Bár a tényleges megvalósítás változó lehet, a Power BI OAuth folyamata a következő elemekből áll:
+Bár behívhatja az API-t felhasználónévvel és jelszóval való hitelesítéshez, ha másik felhasználó nevében szeretne műveleteket végezni, olyan engedélyeket kell kérnie, amelyeket a felhasználó jóváhagy, majd az eredményül kapott hozzáférési tokent el kell küldenie az összes későbbi hívással. Ehhez a folyamathoz a standard [OAuth 2.0](https://oauth.net/2/) protokollt követjük. Bár a tényleges megvalósítás változó lehet, a Power BI OAuth folyamata a következő elemekből áll:
 
 * **Bejelentkezési felhasználói felület** – Ez az a felhasználói felület, amelyet a fejlesztő engedélyek kérésére hívhat meg. A felület a felhasználó bejelentkezését kéri, ha még nem tette meg. A felhasználónak az alkalmazás által kért engedélyeket is jóvá kell hagynia. A bejelentkezési ablak visszaküld egy hozzáférési kódot vagy egy hibaüzenetet a megadott átirányítási URL-címre.
   * A Power BI-nak egy standard átirányítási URL-címet kell megadnia a natív alkalmazásokhoz.
@@ -54,4 +53,4 @@ Bár behívhatja az API-t felhasználónévvel és jelszóval való hitelesíté
 * **Engedélyezési token** – Az API-hívások másik felhasználó nevében való hitelesítésére szolgál. Adott alkalmazásra lesz érvényes. A tokenek adott élettartammal rendelkeznek, és amikor lejárnak, frissítést igényelnek.
 * **Token frissítése** – Amikor a jogkivonatok lejárnak, frissítési folyamat használható hozzájuk.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

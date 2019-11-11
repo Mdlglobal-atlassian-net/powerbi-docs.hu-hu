@@ -2,7 +2,6 @@
 title: Helyszíni adatátjáró – Gyakori kérdések – Power BI
 description: Ebben a cikkben olvashatók a Power BI helyszíni adatátjáróival kapcsolatos gyakori kérdések. Ebben a cikkben összegyűjtve olvashatók a Power BI adatátjáróival kapcsolatos gyakori kérdések.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: cd3afd0ed3ba1f5b734aab2106cbd70f65f29006
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 45a645227a5d7a18fd05738559ed0bccc0e1f7c9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867050"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872388"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Helyszíni adatátjáró – Gyakori kérdések – Power BI
 
@@ -73,5 +72,5 @@ ms.locfileid: "68867050"
 
 * [A helyszíni adatátjáró hibaelhárítása](/data-integration/gateway/service-gateway-tshoot)
 
-További kérdései vannak? Kérdezze meg [a Power BI közösségét](http://community.powerbi.com/).
+További kérdései vannak? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).
 

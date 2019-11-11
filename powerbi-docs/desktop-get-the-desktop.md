@@ -2,7 +2,6 @@
 title: A Power BI Desktop beszerzése
 description: A Power BI Desktop letöltése és telepítése
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 7c99b00427ffe742511c0029da79b6ebde02d916
-ms.sourcegitcommit: 83e1e162a037f352e542bd5c198a3c98f5db23c7
+ms.openlocfilehash: 9f503ad8d5ae7b26a87da4e1d6664315b6119652
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72511691"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878227"
 ---
 # <a name="get-power-bi-desktop"></a>A Power BI Desktop beszerzése
 A **Power BI Desktop** segítségével az adatok megjelenítésére szolgáló speciális lekérdezések, modellek és jelentések állíthatók össze. A **Power BI Desktop** használatával adatmodelleket állíthat össze, jelentéseket hozhat létre és megoszthatja a munkáját a Power BI szolgáltatásba való közzététellel.  A **Power BI Desktop** ingyenesen letölthető.
@@ -56,7 +55,7 @@ A telepítőcsomag indítása után a **Power BI Desktop** alkalmazásként lesz
 ## <a name="install-as-an-app-from-the-microsoft-store"></a>Telepítés alkalmazásként a Microsoft Store-ból
 A **Power BI Desktopot** a Microsoft Store-ból is beszerezheti a következő hivatkozásra kattintva:
 
-* [A **Power BI Desktop** telepítése a **Microsoft Store-ból**](http://aka.ms/pbidesktopstore)
+* [A **Power BI Desktop** telepítése a **Microsoft Store-ból**](https://aka.ms/pbidesktopstore)
 
   ![A Power BI Desktop beszerzése a Microsoft Store-ból](media/desktop-get-the-desktop/getpbid_04.png)
 

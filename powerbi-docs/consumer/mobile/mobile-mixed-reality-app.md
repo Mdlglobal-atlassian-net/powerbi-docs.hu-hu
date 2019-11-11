@@ -2,19 +2,18 @@
 title: Power BI vegyes valósághoz alkalmazás (előzetes verzió)
 description: A Power BI vegyes valósághoz (előzetes verziójú) alkalmazásban megtekintheti az irányítópultjait és jelentéseit a virtuális világban vagy a környezetében elhelyezve.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 443615a64bee1f4723450c6c8cc3c49feb81989c
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 04a77aa9a5a464baf0ce1c9a88604d84ad0feb53
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61374070"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879122"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI vegyes valósághoz alkalmazás (előzetes verzió)
 A Power BI vegyes valósághoz (előzetes verziójú) alkalmazásban megtekintheti az irányítópultjait és jelentéseit a virtuális világban, vagy elhelyezheti őket igény szerint a környezetében. 

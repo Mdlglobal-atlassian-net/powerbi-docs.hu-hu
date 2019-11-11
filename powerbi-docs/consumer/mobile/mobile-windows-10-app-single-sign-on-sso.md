@@ -2,19 +2,18 @@
 title: Egyszeri bejelentkezés használata a windowsos Power BI mobilalkalmazásban
 description: További információ az egyszeri bejelentkezés (SSO) használatáról a windowsos Power BI mobilalkalmazásban. Az egyszeri bejelentkezéssel mindössze egyetlen bejelentkezéssel és egyetlen felhasználói fiókkal elérheti az üzleti tevékenységeihez szükséges összes alkalmazást és erőforrást.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/17/2018
 ms.author: mshenhav
-ms.openlocfilehash: fdbdebacc2ae41cdfa8296eb6b0c06e52f149cac
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 4ec2e43843d37f0966070d39e08ae0ab6160dbf8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61336844"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876678"
 ---
 # <a name="single-sign-on-in-the-power-bi-mobile-windows-app"></a>Egyszeri bejelentkezés használata a windowsos Power BI mobilalkalmazásban
 
@@ -35,5 +34,5 @@ Amennyiben nem az aktív windowsos munkamenet hitelesítő adataival kíván bej
 ## <a name="next-steps"></a>Következő lépések
 
 - [A Windows 10-hez készült Power BI mobilalkalmazás használatának első lépései](mobile-windows-10-phone-app-get-started.md)
-- Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

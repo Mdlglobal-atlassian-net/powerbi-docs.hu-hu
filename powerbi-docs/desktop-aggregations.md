@@ -2,7 +2,6 @@
 title: Aggregációk használata a Power BI Desktopban
 description: Interaktív big data-elemzések végrehajtása a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 54264a645160542d7bda6a964164af65bfa45dfd
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: ab84795ff5d140f23f19184bbc40e91133854f1f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325219"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876741"
 ---
 # <a name="aggregations-in-power-bi-desktop"></a>Aggregációk a Power BI Desktopban
 
@@ -60,7 +59,7 @@ Az alábbi képen ez a modell látható.
 ![aggregációs tábla egy modellben](media/desktop-aggregations/aggregations_03.jpg)
 
 > [!NOTE]
-> A **Sales Agg** (Aggr. értékesítések) tábla is egy tábla, ezért ez is rugalmasan, többféle módon tölthető be. Az aggregáció elvégezhető például ETL/ELT-folyamatokkal a forrásadatbázisban, vagy a táblára vonatkozó [M-kifejezéssel](https://msdn.microsoft.com/query-bi/m/power-query-m-reference). A tábla használhat Importált tárolási módot a [Power BI Premium növekményes frissítése](service-premium-incremental-refresh.md) lehetőséggel vagy anélkül, vagy akár DirectQueryt is, amely az [oszlopcentrikus indexeket](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview) használó gyors lekérdezésekre van optimalizálva. Ez a rugalmasság kiegyensúlyozott architektúrákat tesz lehetővé, amelyek a lekérdezési terhelés elosztásával elkerüli a szűk keresztmetszetek kialakulását.
+> A **Sales Agg** (Aggr. értékesítések) tábla is egy tábla, ezért ez is rugalmasan, többféle módon tölthető be. Az aggregáció elvégezhető például ETL/ELT-folyamatokkal a forrásadatbázisban, vagy a táblára vonatkozó [M-kifejezéssel](/powerquery-m/power-query-m-function-reference). A tábla használhat Importált tárolási módot a [Power BI Premium növekményes frissítése](service-premium-incremental-refresh.md) lehetőséggel vagy anélkül, vagy akár DirectQueryt is, amely az [oszlopcentrikus indexeket](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview) használó gyors lekérdezésekre van optimalizálva. Ez a rugalmasság kiegyensúlyozott architektúrákat tesz lehetővé, amelyek a lekérdezési terhelés elosztásával elkerüli a szűk keresztmetszetek kialakulását.
 
 ### <a name="storage-mode"></a>Tárolási mód 
 Folytassuk a példánkkal. A lekérdezések felgyorsításához a **Sales Agg** (Aggr. értékesítések) tárolási módját **Importált** lehetőségre állítottuk.

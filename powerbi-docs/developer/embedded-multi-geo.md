@@ -3,18 +3,17 @@ title: Multi-Geo-támogatás a Power BI Embedded számára
 description: Útmutató tartalom üzembe helyezéséhez a Power BI Embedded saját régióján kívüli régiókban lévő adatközpontokban.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 57f01a458bad36c73a01adb1bc62bfd5a055a337
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 093b1e430d59a6060829b63a5bcfe17a7bb43928
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61344972"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875795"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Multi-Geo-támogatás a Power BI Embedded számára
 
@@ -92,4 +91,4 @@ További információ a Power BI Embedded-kapacitásokról és a Multi-Geo beál
 
 * [Multi-Geo a Power BI Premium kapacitásaiban](../service-admin-premium-multi-geo.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

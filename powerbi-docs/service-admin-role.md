@@ -2,7 +2,6 @@
 title: A Power BI rendszergazdai szerepkörének ismertetése
 description: A cikk a Power BI szolgáltatás rendszergazdai szerepkörét és annak vállalati használatát ismerteti.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b4d2382f89c48f20767cf72bc0468589c366cfe
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 900734a027a0f1af76f93709f80eec8d8e8b3108
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256418"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856726"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>A Power BI-szolgáltatásadminisztrátor szerepkör ismertetése
 
@@ -111,4 +110,4 @@ Felhasználókat a PowerShell-lel is hozzárendelhet szerepkörökhöz. Őket az
 [A Power BI felügyelete a munkahelyen](service-admin-administering-power-bi-in-your-organization.md)  
 [Power BI felügyeleti portál](service-admin-portal.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

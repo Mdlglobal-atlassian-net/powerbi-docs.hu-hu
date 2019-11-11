@@ -2,7 +2,6 @@
 title: Oldal megjelenítési beállításai Power BI-jelentésben
 description: Jelentések oldalmegjelenítési és oldalnézet-beállításai
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 97df2d6910f0215bd01875c88ea5d81d5dcc2c7c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 183ce793342253775f641406620447e7b0f44020
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720849"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875121"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Oldal megjelenítési beállításai Power BI-jelentésben
 Tudjuk, milyen fontos, hogy jelentéseinek elrendezése az utolsó képpontig tökéletes legyen. Ez azonban olykor kihívást jelenthet, ugyanis Ön és a munkatársai a jelentéseket esetleg különböző méretű és méretarányú képernyőkön tekintik meg. 
@@ -80,5 +79,5 @@ A [Power BI jelentéseiről itt talál](consumer/end-user-reports.md) további i
 
 [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

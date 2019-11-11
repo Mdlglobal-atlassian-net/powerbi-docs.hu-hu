@@ -2,7 +2,6 @@
 title: Nagy sűrűségű pontdiagramok a Power BI-ban
 description: Nagy sűrűségű pontdiagramok a Power BI-ban
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d627b74d4c681e409424b18a117743e0488dc34c
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 960ce09c1392787f2d24e84d26c2f3be9be010f8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715465"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876829"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Nagy sűrűségű mintavételezés a Power BI-pontdiagramokban
 

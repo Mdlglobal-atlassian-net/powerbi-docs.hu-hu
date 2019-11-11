@@ -2,7 +2,6 @@
 title: Kapcsolódás Snowflake Computing-adattárházakhoz a Power BI Desktopban
 description: Könnyedén csatlakozhat Snowflake Computing-adattárházakhoz, és használhatja a bennük tárolt adatokat a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,18 +9,18 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c02eda44ec81fe31972055548996ae357bc4c4b9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2bb44498b6123eadffe86c7eb9bfb93bb0db5e14
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513828"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876410"
 ---
 # <a name="connect-to-snowflake-in-power-bi-desktop"></a>Kapcsolódás a Snowflake-hez a Power BI Desktopban
 A Power BI Desktopban csatlakozhat egy **Snowflake** Computing-adattárházhoz, és úgy használhatja az alapul szolgáló adatokat, mint a Power BI Desktop bármely más adatforrását. 
 
 > [!NOTE]
-> Ezenkívül a **Snowflake ODBC-illesztőt** is telepítenie *kell* a **Snowflake**-összekötőt használó gépekre a **Power BI Desktop**-telepítésnek megfelelő architektúrával (32 vagy 64 bites). Kövesse az alábbi hivatkozást, és [töltse le a megfelelő Snowflake ODBC-illesztőt](http://go.microsoft.com/fwlink/?LinkID=823762).
+> Ezenkívül a **Snowflake ODBC-illesztőt** is telepítenie *kell* a **Snowflake**-összekötőt használó gépekre a **Power BI Desktop**-telepítésnek megfelelő architektúrával (32 vagy 64 bites). Kövesse az alábbi hivatkozást, és [töltse le a megfelelő Snowflake ODBC-illesztőt](https://go.microsoft.com/fwlink/?LinkID=823762).
 > 
 > 
 

@@ -2,7 +2,6 @@
 title: Szűrők és kiemelés a Power BI-jelentésekben
 description: Szűrők és kiemelés a Power BI-jelentésekben
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 53bca7d1c0fd4d8592ec694d67148a7e3ccd46ff
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: f1722690ff974a9d4fac6e94243e1024bfbfc12e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891882"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877609"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Szűrők és kiemelés a Power BI-jelentésekben
  Ez a cikk bevezetést nyújt a Power BI szűrő és kiemelő funkcióiba. A funkciók szinte ugyanúgy működnek, mint a Power BI Desktop szolgáltatásban. A *szűrők* használatával minden olyan adatot eltávolíthat, amelyek az Ön szempontjából lényegtelenek. A *Kiemelés* nem szűrés. Nem távolítja el az adatokat, hanem kiemeli a látható adatok egy részét, miközben a ki nem emelt adatok halványan láthatóak maradnak.
@@ -100,5 +99,5 @@ Az oldal többi vizualizációjának kiemeléséhez jelöljön ki egy értéket 
 
 [A jelentésvizualizációk keresztszűrési és keresztkiemelési viselkedésének módosítása](consumer/end-user-interactions.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

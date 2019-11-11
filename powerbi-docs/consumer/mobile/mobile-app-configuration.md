@@ -2,19 +2,18 @@
 title: A Power BI iOS-beli alkalmazáskonfigurációs beállításai
 description: Az iOS Power BI viselkedésének testreszabása egy MDM-eszközzel
 author: paulinbar
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2019
 ms.author: mshenhav
-ms.openlocfilehash: bc9c6dd8cd892ab0304cc5a99a3bb780486f32f0
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c2d619489b042e523c559a16dab249b268389cd5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70160161"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879434"
 ---
 # <a name="remotely-configure-power-bi-ios-app-using-mobile-device-management-mdm-tool"></a>Az iOS Power BI alkalmazás távoli konfigurálása egy mobileszköz-kezelési (MDM-) eszközzel
 
@@ -61,6 +60,6 @@ Azonban minden MDM-szolgáltató támogatott. Ha nem Intune-t használ, a beáll
 
 ## <a name="next-steps"></a>Következő lépések
 
-* Az [iPhone-ra készült Power BI mobilalkalmazás](http://go.microsoft.com/fwlink/?LinkId=522062) letöltése
+* Az [iPhone-ra készült Power BI mobilalkalmazás](https://go.microsoft.com/fwlink/?LinkId=522062) letöltése
 * Kövessen minket a [@MSPowerBITwitteren](https://twitter.com/MSPowerBI)
-* Csatlakozzon a beszélgetéshez a [Power BI-közösségben](http://community.powerbi.com/)
+* Csatlakozzon a beszélgetéshez a [Power BI-közösségben](https://community.powerbi.com/)

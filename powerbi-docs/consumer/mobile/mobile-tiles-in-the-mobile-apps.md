@@ -2,19 +2,18 @@
 title: Ismerkedés a Power BI-mobilalkalmazások csempéivel
 description: A csempék az adatokról készült élő, irányítópultra rögzített pillanatképek. Útmutató csempék használatához Power BI-mobilalkalmazásokban.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 87c223c8ef0be0eac81bb672bde10023dcf79d71
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 570276b8af2862d6aab6dc806cb0c627be8ff157
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059777"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870029"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Ismerkedés a Power BI-mobilalkalmazások csempéivel
 A következőkre vonatkozik:
@@ -123,5 +122,5 @@ Ezek a csempék aztán a Power BI mobilalkalmazásban fókusz módban megnyithat
 
 ## <a name="next-steps"></a>Következő lépések
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

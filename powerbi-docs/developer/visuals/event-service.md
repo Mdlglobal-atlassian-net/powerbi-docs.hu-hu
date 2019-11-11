@@ -3,18 +3,17 @@ title: Renderelési események Power BI-vizualizációkban
 description: A Power BI-vizualizációk értesíthetik a Power BI-t arról, hogy készek a PowerPointba vagy PDF-fájlba exportálásra.
 author: Yarovinsky
 ms.author: alexyar
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: b481ce94e5025045466a05d71e30a00f02be7ead
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 261987a199af68611792367f514bef60dd584db8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237167"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880110"
 ---
 # <a name="render-events-in-power-bi-visuals"></a>Renderelési események Power BI-vizualizációkban
 

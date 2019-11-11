@@ -2,7 +2,6 @@
 title: Az R használata a Power Query szerkesztőben
 description: Az R használata a Power BI Lekérdezésszerkesztőjében speciális elemzésekhez
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b64b4b736291ce1c3bde02010b7e583a0c3dc406
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: d2ba33e18701ad147cb38072461804b4528101ea
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841509"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877923"
 ---
 # <a name="use-r-in-query-editor"></a>Az R használata a lekérdezésszerkesztőben
 
@@ -50,7 +49,7 @@ A **mice** telepítése:
 
 Az **R** használatát a **Lekérdezésszerkesztőben** egy tőzsdei példa-adathalmazzal mutatjuk be, amelyet egy .csv-fájl tartalmaz, és a következő lépésekkel használható:
 
-1. [Töltse le az **EuStockMarkets_NA.csv** fájlt](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Jegyezze meg, hogy hová menti.
+1. [Töltse le az **EuStockMarkets_NA.csv** fájlt](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Jegyezze meg, hogy hová menti.
 
 1. Töltse be a fájlt a **Power BI Desktopba**: A **Kezdőlap** menüszalagon válassza az **Adatok lekérése > Szöveg/CSV** menüpontot.
 
@@ -108,7 +107,7 @@ Most létrehozhatunk egy vizualizációt, amelyből látható, hogy az R-szkript
 Az összes elkészült vizualizációt mentheti egy **Power BI Desktop** .pbix-fájlba, az adatmodellt és annak R-szkriptjeit pedig felhasználhatja a Power BI szolgáltatásban.
 
 > [!NOTE]
-> [Letölthet egy .pbix-fájlt](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix), amelyen ezeket a lépéseket már végrehajtották.
+> [Letölthet egy .pbix-fájlt](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix), amelyen ezeket a lépéseket már végrehajtották.
 
 Miután feltöltötte a .pbix-fájlt a Power BI szolgáltatásba, további lépésekkel kell engedélyeznie a szolgáltatásnak az adatok és a vizualizációk frissítését:  
 

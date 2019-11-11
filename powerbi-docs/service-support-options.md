@@ -2,19 +2,18 @@
 title: A Power BI Pro és a Power BI Premium támogatási lehetőségei
 description: Ez a cikk a Power BI Pro és a Power BI Premium-ügyfelek támogatási lehetőségeit ismerteti.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/17/2019
 ms.author: mblythe
-ms.openlocfilehash: df14bf127ed6935f9bec445709153a87088f8af0
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 4cd007467b2ebd7f08dbb9d9bd3447194aad1f37
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305816"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871390"
 ---
 # <a name="power-bi-pro-and-power-bi-premium-support-options"></a>A Power BI Pro és a Power BI Premium támogatási lehetőségei
 
@@ -55,4 +54,4 @@ Teljes áttekintést nyújt a Power BI funkcióiról. A Power BI Desktopra és a
 
   - **WorkshopPLUS – Data AI: Power BI fejlett adatelemzés** Ez a kurzus segít megérteni és bevezetni a Power BI adatmodellezésének legfontosabb elveit. Ehhez olyan eszközöket használ, mint a Power BI Desktop, és kiegészíti a felhőszolgáltatást a BI-eszközök közzétételével és felhasználásával. A kurzus emellett a következőket ismerteti: a jelentéskészítés alapjai, beágyazott analitika a Power BI-tartalmak egyéni alkalmazásokban való beágyazásához, valós idejű irányítópult-kezelés, valamint fejlett elemzések a Power BI adatelemzési és fejlesztési funkcióival.
 
-Részletekért forduljon a Microsoft műszaki partnerkezelőjéhez. Ha még nem rendelkezik Microsoft Premier támogatással, további információt a [Premier támogatás](https://support.microsoft.com/en-us/premier) oldalán találhat.
+Részletekért forduljon a Microsoft műszaki partnerkezelőjéhez. Ha még nem rendelkezik Microsoft Premier támogatással, további információt a [Premier támogatás](https://support.microsoft.com/premier) oldalán találhat.

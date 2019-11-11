@@ -2,7 +2,6 @@
 title: Regisztráció a Power BI-ra új Office 365 próbaverzióval
 description: Regisztráció a Power BI-ra új Office 365 próbaverzióval
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 7f9fd3870803a73bf9e47f2ca4e706e03a728eb4
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 89732201276c00949a8ef1d605c5e60ea03b6b47
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074268"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873367"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Regisztráció a Power BI-ra új Office 365 próbaverzióval
 
@@ -41,4 +40,4 @@ Ha ezt a bejelentkezési módszert használja, új céges bérlőt hoz létre, a
 [Szervezeti Power BI-licencelés](service-admin-licensing-organization.md)  
 [Egyéni Power BI-regisztráció](service-self-service-signup-for-power-bi.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -2,18 +2,17 @@
 title: A Q&A nyelvi sémájának szerkesztése, és kifejezések hozzáadása a Power BI Desktopban
 description: Hogyan szerkeszthetők a Power BI Q&A nyelvi sémái a Power BI Desktop használatával.
 author: mohaali
-manager: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: mohaali
-ms.openlocfilehash: 3bd5902227742a89402218b99ef8a024681be416
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: d1ae995c3e98befe776ac091a0312e281e97022e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891559"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875330"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>A Q&A nyelvi sémájának szerkesztése, és kifejezések hozzáadása a Power BI Desktopban 
 Hatékony eszköz a munkához, ha gyakori kifejezéseken és természetes nyelven alapuló kérdéseket tud feltenni az adataival kapcsolatban. Még hatékonyabb, amikor az adatai választ is adnak. Amikor kérdést tesz fel a Power BI Q&A szolgáltatásának, a rendszer igyekszik a legpontosabban megválaszolni azt. Da ha még jobb Q&A-interakciókat szeretne elérni, javíthat a válaszokon. Az egyik módszer a nyelvi séma szerkesztése. 
@@ -338,4 +337,4 @@ Ha egy, a nyelvi séma formátumának nem megfelelő .lsdl.yaml fájlt módosít
 
 ![hibákat megjelenítő yaml fájl](media/q-and-a-tooling-advanced/power-bi-yaml-errors.png)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

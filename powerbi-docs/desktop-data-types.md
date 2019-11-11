@@ -2,7 +2,6 @@
 title: Adattípusok a Power BI Desktopban
 description: Adattípusok a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ccde7f01968a9fdcdd74903819b7083a552479b0
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: a3ca4b8ffe709fec7953eb5d4081bdf296504eb1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391767"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868516"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Adattípusok a Power BI Desktopban
 A cikk a Power BI Desktop és a Data Analysis Expressions (DAX) által támogatott adattípusokat ismerteti. 
@@ -71,7 +70,7 @@ A Power BI Desktop öt Dátum/idő adattípust támogat a Lekérdezésnézetben,
 **Igaz/hamis** – Egy logikai érték, amely vagy Igaz vagy Hamis.
 
 ### <a name="blanksnulls-type"></a>Üres/null érték típus
-**Üres** – DAX-adattípus, amely az SQL nullértékeit jelöli és helyettesíti. Üres értékeket a [BLANK](http://msdn.microsoft.com/library/ee634820.aspx) függvénnyel hozhat létre, a meglévőket pedig az [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx) logikai függvénnyel ellenőrizheti.
+**Üres** – DAX-adattípus, amely az SQL nullértékeit jelöli és helyettesíti. Üres értékeket a [BLANK](https://msdn.microsoft.com/library/ee634820.aspx) függvénnyel hozhat létre, a meglévőket pedig az [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx) logikai függvénnyel ellenőrizheti.
 
 ### <a name="table-data-type"></a>Tábla adattípus
 A DAX a tábla adattípust sok függvényben használja, például összesítésekben és időintelligencia-számításokban. Egyes függvényekben táblára mutató hivatkozást kell megadni, más függvények pedig táblákat adnak vissza, amelyek más függvényeknek átadhatók. Egyes táblát váró függvényeknek átadhatók függvényt visszaadó kifejezések, míg más függvényeknek csak alaptáblák adhatók át. Az egyes függvények követelményeivel kapcsolatos információkért lásd a [DAX-függvények referencia-útmutatóját](https://msdn.microsoft.com/library/ee634396.aspx).

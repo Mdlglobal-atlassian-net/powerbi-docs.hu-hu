@@ -2,7 +2,6 @@
 title: Hivatkozás hozzáadása szövegmezőhöz egy jelentésben
 description: Hivatkozás hozzáadása szövegmezőhöz a Power BI Desktopban és a Power BI szolgáltatásban
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0ceb1749fcbf78ac844ca1c6e4b3f08a6f4c5d3f
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: 2de2cd80dbffc8c65a4577fffd6a8e41bc6116d2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832410"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873797"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Hivatkozás hozzáadása szövegmezőhöz egy jelentésben
 A jelentésekhez szövegdobozokat adhat hozzá a Power BI Desktopban vagy a Power BI szolgáltatásban. Egy irányítópultra rögzíthet egy jelentésbeli szövegdobozt, vagy közvetlenül is hozzáadhat egyet. Bárhol helyezkedik el a szövegmező, mindig felvehető hozzá hivatkozás. Ez a cikk azt mutatja be, hogyan adhat hozzá hivatkozást egy jelentésbeli szövegdobozhoz. 
@@ -63,5 +62,5 @@ A Power BI-táblázatokban és -mátrixokban használható hivatkozáskoról a [
 ## <a name="next-steps"></a>Következő lépések
 [Szövegdobozok és alakzatok Power BI-jelentésekben](power-bi-reports-add-text-and-shapes.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 

@@ -3,19 +3,18 @@ title: Vállalati vizualizációk a Power BI-ban
 description: Vállalati vizualizációk használata, kezelése és létrehozása a Power BI-ban
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b10a856a98c892b32e873bd01105c52777d2b413
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 8c28c5ee89ffee37c09db8dc6ffcd6fb90274786
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71946167"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875214"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Vállalati vizualizációk a Power BI-ban
 
@@ -62,4 +61,4 @@ A hibaelhárítással kapcsolatban a [Power BI-vizualizációk hibáinak elhár�
 
 További információt és válaszokat [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md#organizational-visuals) között talál.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).

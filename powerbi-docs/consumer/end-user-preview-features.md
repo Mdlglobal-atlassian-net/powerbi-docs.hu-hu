@@ -2,7 +2,6 @@
 title: Feliratkozás az előzetes verziójú funkciókra
 description: A Power BI előzetes verziójú funkcióinak be- és kikapcsolása
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b2d658daade3ab1aa2a1c09dc33c0e7d48636910
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 5189c92c9da29b38d9ffaa4bf59e271e08fc4b2c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71141515"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862717"
 ---
 # <a name="opt-in-for-power-bi-service-preview-features"></a>Feliratkozás a Power BI szolgáltatás előzetes verziójú funkcióira
 ## <a name="what-are-preview-features"></a>Mik azok az *előzetes verziójú funkciók*?
@@ -34,5 +33,5 @@ Ahogy folyamatosan fejlesztjük a Power BI szolgáltatást, egyes új funkcióka
 4. Az előzetes verziójú funkciók kikapcsolásához, kövesse a fenti 1., 2. és 3. lépést, és a 3. lépésben válassza a **Ki** lehetőséget vagy törölje a jelet, majd válassza az **Alkalmaz** lehetőséget.
 
 
-Kérdése van, vagy visszajelzést küldene? [Látogasson el a Power BI közösségi fórumára](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
+Kérdése van, vagy visszajelzést küldene? [Látogasson el a Power BI közösségi fórumára](https://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
 

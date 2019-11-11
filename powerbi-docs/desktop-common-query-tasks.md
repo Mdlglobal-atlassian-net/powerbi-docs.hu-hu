@@ -2,7 +2,6 @@
 title: Gyakori lekérdezési feladatok a Power BI Desktopban
 description: Gyakori lekérdezési feladatok a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: dc6aa42691c7caa2593b28e441f96985b1e3bcda
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2b1cf2a7f10fd7249dcdec26b5c5f5d12ff15aca
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239427"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878673"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Gyakori lekérdezési feladatok a Power BI Desktopban
 A Power BI Desktop **Lekérdezésszerkesztő** ablakában elérhető néhány gyakran használt feladat. Ez a dokumentum ezeket a gyakori feladatokat mutatja be, és további információkra mutató hivatkozásokat is tartalmaz. 
@@ -31,9 +30,9 @@ A bemutatott gyakori lekérdezési feladatok a következők:
 
 A feladatok végrehajtásához néhány adatkapcsolatot fogunk használni. Az adatokat Ön is szabadon letöltheti vagy csatlakozhat hozzájuk, amennyiben szeretné maga is végrehajtani a feladatokat.
 
-Az első adatkapcsolat egy Excel-munkafüzet, amelyet [innen](http://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx) tölthet le. A másik egy webes forrásanyag (ezt a Power BI Desktop egyéb súgói is alkalmazzák), amely a következő helyen érhető el:
+Az első adatkapcsolat egy Excel-munkafüzet, amelyet [innen](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx) tölthet le. A másik egy webes forrásanyag (ezt a Power BI Desktop egyéb súgói is alkalmazzák), amely a következő helyen érhető el:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 A két adatforráshoz való kapcsolódáshoz szükséges lépésekkel kezdődnek a gyakori lekérdezési feladatok.
 
@@ -142,7 +141,7 @@ A Lekérdezésszerkesztő az egyes lekérdezések alkalmazott lépéseit szöveg
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-A **Speciális szerkesztő** a következőképpen néz ki, amikor éppen az **USA\_StudentEnrollment** lekérdezés lépéseit jeleníti meg. Ezek a lépések a Power Query képletnyelv – gyakori nevén az **M** – használatával íródtak. További információkért lásd: [További tudnivalók a Power Query-képletekről](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). A nyelvi specifikáció megtekintéséhez lásd [az Excelhez készült Microsoft Power Query képletnyelv specifikációját](http://go.microsoft.com/fwlink/?linkid=320633).
+A **Speciális szerkesztő** a következőképpen néz ki, amikor éppen az **USA\_StudentEnrollment** lekérdezés lépéseit jeleníti meg. Ezek a lépések a Power Query képletnyelv – gyakori nevén az **M** – használatával íródtak. További információkért lásd: [További tudnivalók a Power Query-képletekről](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). A nyelvi specifikáció megtekintéséhez lásd [az Excelhez készült Microsoft Power Query képletnyelv specifikációját](/powerquery-m/excel-workbook).
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 

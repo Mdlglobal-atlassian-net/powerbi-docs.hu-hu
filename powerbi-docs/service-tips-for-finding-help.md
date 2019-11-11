@@ -2,7 +2,6 @@
 title: 10 tanács a Power BI szolgáltatással kapcsolatos segítségkéréshez
 description: 10 módszer következik arra, hogy segítséget kapjon, ha kérdése van a Power BI működésével kapcsolatban
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 668df24e8e4df2257a78a5f7a843abc65df3ef8f
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: ee272f32dbce4630f8b834187e05fda5739df7be
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060295"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876951"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tanács a Power BI szolgáltatással kapcsolatos segítségkéréshez
 Előfordult már, hogy bosszankodott a Power BI használata közben, vagy nehezen boldogult, mert nem kapott választ a Power BI-jal kapcsolatos kérdéseire, amikor szüksége volt rájuk – éppen a kellő időben? 
@@ -55,7 +54,7 @@ További online lehetőségeket is találhat, például:
 * Keresse az "**Irányítópult egy nap alatt**" tanfolyamokat.
 
 ## <a name="7-ask-or-search-in-the-power-bi-community"></a>7 Kérdésfelvetés vagy keresés a Power BI-közösségben
-Tegye fel kérdéseit a [Power BI-közösségben](http://community.powerbi.com). A világ BI-szakértői tevékenyen részt vesznek a közösség életében. Mindenképpen aknázza ki ezt a lehetőséget, és hasznosítsa hozzáértésüket.
+Tegye fel kérdéseit a [Power BI-közösségben](https://community.powerbi.com). A világ BI-szakértői tevékenyen részt vesznek a közösség életében. Mindenképpen aknázza ki ezt a lehetőséget, és hasznosítsa hozzáértésüket.
 
 ## <a name="8-join-or-create-a-power-bi-user-group"></a>8 Csatlakozás Power BI-felhasználói csoporthoz, vagy csoport létrehozása
 Csatlakozzon egy [Power BI-felhasználói csoporthoz](https://community.powerbi.com/t5/Power-BI-User-Groups/ct-p/Groups) és kérjen segítséget csoportjától a kérdései megválaszolásához. Saját felhasználói csoportot is alapíthat, és létrehozhat egy egymást segítő tagokból álló közösséget a saját igényeinek megfelelően, a saját területén, a saját adataival, a saját időzónájában.
@@ -70,5 +69,5 @@ Tegyük fel például, hogy arra kíváncsi, meg tud-e osztani egy irányítópu
 
 ## <a name="next-steps"></a>Következő lépések
 * [Mi az a Power BI?](fundamentals/power-bi-overview.md)
-* Kérdezze meg a [Power BI közösségét](http://community.powerbi.com/)
+* Kérdezze meg a [Power BI közösségét](https://community.powerbi.com/)
 * Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).

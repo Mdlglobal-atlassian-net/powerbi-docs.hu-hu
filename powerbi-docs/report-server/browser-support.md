@@ -2,19 +2,18 @@
 title: A Power BI jelentéskészítő kiszolgáló böngészőtámogatása
 description: Ismerje meg, hogy a böngészők mely verziói támogatják a Power BI jelentéskészítő kiszolgáló és a Jelentésmegjelenítő vezérlők kezelését és megtekintését.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
-ms.openlocfilehash: 5a2ca653a06efbde161899602536b05c8f6ab666
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 724bd7a9a11c42520c520019f1c4a67415aa5487
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769770"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874310"
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló böngészőtámogatása
 Ismerje meg, hogy a böngészők mely verziói támogatják a Power BI jelentéskészítő kiszolgáló és a Jelentésmegjelenítő vezérlők kezelését és megtekintését.
@@ -115,7 +114,7 @@ Olyan böngészőt használjon, amelyikben a parancsfájlok használata engedél
 [Rendszergazdai áttekintés](admin-handbook-overview.md)  
 [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
 [A Jelentéskészítő letöltése](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Az SQL Server Data Tools (SSDT) letöltése](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Az SQL Server Data Tools (SSDT) letöltése](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

@@ -3,18 +3,17 @@ title: Teljes kódlista
 description: Útmutatás az adatok leküldéséhez – Teljes kódlista
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: cdf6bf157a3d8fe1f865c610238e3cd1f829ef9b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ac534946b5f7e6fb5bb0164a1144523fa8f2aa94
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710284"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875505"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Adatok leküldése egy adatkészletbe – Teljes kódlista
 
@@ -235,4 +234,4 @@ Az **Adatok leküldése adatkészletekbe** bemutató 2–5. lépésének végreh
 [A Power BI REST API-jainak leírása](https://docs.microsoft.com/rest/api/power-bi/)  
 [A Power BI REST API áttekintése](overview-of-power-bi-rest-api.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

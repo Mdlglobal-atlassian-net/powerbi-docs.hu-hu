@@ -3,18 +3,17 @@ title: A Vizualizációs szűrők API Power BI-vizualizációkban
 description: Ez a cikk más vizualizációk Power BI-vizualizációk általi szűrését mutatja be.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 98ebc87cf5a6b7bf8f0b8b88d4ff498edfd5bf9a
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: ee4ac2db9d27129172797db9743790b5175dcd89
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194030"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880082"
 ---
 # <a name="the-visual-filters-api-in-power-bi-visuals"></a>A Vizualizációs szűrők API Power BI-vizualizációkban
 
@@ -188,7 +187,7 @@ Ebben a kódban:
 
   A szűrő különböző táblákban lévő oszlopokra is hivatkozhat.
 
-* A `$schema` értéke http://powerbi.com/product/schema#tuple.
+* A `$schema` értéke https://powerbi.com/product/schema#tuple.
 
 * A `filterType` értéke *FilterType.Tuple*.
 
@@ -240,7 +239,7 @@ let values = [
 ];
 
 let filter: ITupleFilter = {
-    $schema: "http://powerbi.com/product/schema#tuple",
+    $schema: "https://powerbi.com/product/schema#tuple",
     filterType: FilterType.Tuple,
     operator: "In",
     target: target,

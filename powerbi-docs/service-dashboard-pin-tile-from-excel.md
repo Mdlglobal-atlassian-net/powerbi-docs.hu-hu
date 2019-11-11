@@ -2,7 +2,6 @@
 title: Csempe rögzítése Power BI-irányítópultra Excelből
 description: Csempe rögzítése Power BI-irányítópultra a OneDrive Vállalati verziós Excelből. Tartományok, diagramok és táblázatok rögzítése
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
@@ -11,18 +10,18 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 273cfbd86573a5eceaf9705ac19b0f7928b59176
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d0f258af383327fb25c8f0e896677bbd19eca6c4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61138610"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877430"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Csempe rögzítése Power BI-irányítópultra Excelből
 Mielőtt egy Excel-munkafüzet csempéjét rögzítené, csatlakoztatnia kell a munkafüzetet a Power BI szolgáltatáshoz (app.powerbi.com). A munkafüzet csatlakoztatásával lényegében a munkafüzet egy csak olvasható példányát nyitja meg a Power BI szolgáltatásban, így tartományokat rögzíthet az irányítópultokon. Akár egy teljes munkalapot is rögzíthet az irányítópulton.  
 Ha megosztottak Önnel egy munkafüzetet, megtekintheti a tulajdonos által rögzített csempéket, saját csempéket azonban nem hozhat létre az irányítópulton. 
 
-Részletes információ az Excel és a Power BI együttműködéséről: [Adatok lekérdezése Excel-munkafüzetből](http://go.microsoft.com/fwlink/?LinkID=521962).
+Részletes információ az Excel és a Power BI együttműködéséről: [Adatok lekérdezése Excel-munkafüzetből](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 Will bemutatja az Excel-munkafüzetekből való adatimportálás és a munkafüzetekhez való csatlakozás módjait.
 
@@ -81,12 +80,12 @@ Ha egy munkafüzet csempéjére kattint, a csatolt munkafüzet a Power BI-ban ny
  ![videó](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
-Nem támogatott funkciók: A Power BI az Excel Services szolgáltatással kéri le a munkafüzet csempéit. Ennek következtében, mivel az Excel néhány funkciója nem támogatott az Excel Services REST API-ban, ezek a funkciók nem jelennek meg a Power BI-csempéken. Például: Értékgörbék, az ikonkészletek feltételes formázása és az időszeletelők. A nem támogatott funkciók teljes listája: [Az Excel Services REST API nem támogatott funkciói](http://msdn.microsoft.com/library/office/ff394477.aspx)
+Nem támogatott funkciók: A Power BI az Excel Services szolgáltatással kéri le a munkafüzet csempéit. Ennek következtében, mivel az Excel néhány funkciója nem támogatott az Excel Services REST API-ban, ezek a funkciók nem jelennek meg a Power BI-csempéken. Például: Értékgörbék, az ikonkészletek feltételes formázása és az időszeletelők. A nem támogatott funkciók teljes listája: [Az Excel Services REST API nem támogatott funkciói](https://msdn.microsoft.com/library/office/ff394477.aspx)
 
 ## <a name="next-steps"></a>Következő lépések
 [Egy Excel-munkafüzethez csatolt irányítópult megosztása](service-share-dashboard-that-links-to-excel-onedrive.md)
 
 [Adatok lekérdezése Excel-munkafüzetekből](service-excel-workbook-files.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

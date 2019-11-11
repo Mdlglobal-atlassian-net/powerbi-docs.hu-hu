@@ -2,7 +2,6 @@
 title: Mi az a Power BI szolgáltatás?
 description: Áttekintés a Power BI szolgáltatásról és annak helyéről a Power BI más alkotórészei között.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 featuredvideoid: B2vd4MQrz4M
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: b8a01839da68a276ff136d7068dafac0ce82f102
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 22446936f36074379242bd54af15c9bb2864e4a8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060849"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874984"
 ---
 # <a name="what-is-the-power-bi-service"></a>Mi az a Power BI szolgáltatás?
 A **Power BI** szoftveres szolgáltatások, alkalmazások és összekötők együttese, amelyek közösen segítenek az üzleti elemzési eredmények létrehozásában, megosztásában és hasznosításában, az Önt és üzletét leghatékonyabban szolgáló módon. Az olykor Power BI online néven is említett Microsoft Power BI *szolgáltatás* (app.powerbi.com) a Power BI SaaS (*szolgáltatott szoftver*) része. A Power BI szolgáltatásban az *irányítópultokkal* ujjait a cége ütőerén tarthatja. Az irányítópulton *csempék* találhatók, amelyeket kiválasztva *jelentéseket* nyithat meg a további vizsgálódásokhoz. Az irányítópultok és csempék *adathalmazokhoz* kapcsolódnak, hogy minden releváns adatát egy helyen tekinthesse meg. 

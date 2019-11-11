@@ -3,19 +3,18 @@ title: R-alapú Power BI-vizualizációk a Power BI-ban
 description: R-alapú Power BI-vizualizációk a Power BI-ban
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: 276fc99a1bc4bed4aecb8ca4f6de1094599ff66f
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 3b4dbcd02189eed88257357ffe4190d77f01c7f8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73017641"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876263"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>R-alapú Power BI-vizualizációk a Power BI-ban
 

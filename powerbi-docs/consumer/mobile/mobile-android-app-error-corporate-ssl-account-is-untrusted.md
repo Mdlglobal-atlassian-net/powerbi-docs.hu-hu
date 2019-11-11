@@ -3,19 +3,18 @@ title: A „vállalati SSL-tanúsítványa nem megbízható” hiba elhárítás
 description: 'A Power BI Androidos alkalmazásba való bejelentkezéskor a következő üzenet jelenhet meg: „A hitelesítés nem sikerült, mert a vállalati SSL-tanúsítványt nem megbízhatóként kezeli ez az eszköz”'
 .": ''
 author: paulinbar
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/28/2019
 ms.author: mshenhav
-ms.openlocfilehash: 19bcdf08d4eacff5e080bf1a2f987ea848e4bfb9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: cde8a4bbaed9ef10940b7a102d40a8bc6009e9b9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70840925"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879486"
 ---
 # <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>A „vállalati SSL-tanúsítványa nem megbízható” hiba elhárítása – Power BI
 A Microsoft Power BI Android-mobilalkalmazásba való bejelentkezéskor a következő üzenet jelenhet meg: „A hitelesítés nem sikerült, mert a vállalati SSL-tanúsítványt nem megbízhatóként kezeli ez az eszköz. Lépjen kapcsolatba a vállalat rendszergazdájával.” 
@@ -41,9 +40,9 @@ Elképzelhető, hogy az eszköz időzóna-beállításai nem megfelelőek.
 A **Beállítások** > **Rendszer** > **Dátum és idő** helyen tudja ellenőrizni ezeket.
 
 ## <a name="custom-authentication-server"></a>Egyéni hitelesítési kiszolgáló
-Ha egyéni hitelesítési kiszolgálót használ, előfordulhat, hogy a vállalati hitelesítési kiszolgáló SSL-tanúsítványa nem érvényes. A vállalat informatikusaival együttműködve tesztelje a vállalat hitelesítési kiszolgálójának konfigurációját [ennek a cikknek](https://support.microsoft.com/en-us/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce) az útmutatása alapján.
+Ha egyéni hitelesítési kiszolgálót használ, előfordulhat, hogy a vállalati hitelesítési kiszolgáló SSL-tanúsítványa nem érvényes. A vállalat informatikusaival együttműködve tesztelje a vállalat hitelesítési kiszolgálójának konfigurációját [ennek a cikknek](https://support.microsoft.com/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce) az útmutatása alapján.
 
 ## <a name="next-steps"></a>Következő lépések
-* [Töltse le az Android-alkalmazást](http://go.microsoft.com/fwlink/?LinkID=544867) az Androidos alkalmazás-áruházból.
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/) 
+* [Töltse le az Android-alkalmazást](https://go.microsoft.com/fwlink/?LinkID=544867) az Androidos alkalmazás-áruházból.
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/) 
 

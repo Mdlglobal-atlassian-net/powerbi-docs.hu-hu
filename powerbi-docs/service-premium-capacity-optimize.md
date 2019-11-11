@@ -3,7 +3,6 @@ title: Microsoft Power BI Premium-kapacitások optimalizálása
 description: A Power BI Premium-kapacitások optimalizálási stratégiáinak ismertetése.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: fc983fe9027f6d94c5394d524a6417a64719a8ac
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: d2e8ede356ed015c4c35b311ca58d35366324b9a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431707"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871919"
 ---
 # <a name="optimizing-premium-capacities"></a>Prémium szintű kapacitások optimalizálása
 
@@ -257,7 +256,7 @@ Fontos tudni, hogy a tesztek megismételhetők. A teszteket célszerű többszö
 
 Ha már rendelkezik a tesztelendő kapacitással és jelentésekkel, a [PowerShell terhelés-létrehozási eszközével](https://aka.ms/PowerBILoadTestingTool) gyorsan létrehozhat egy terheléses tesztet. Az eszközzel megbecsülheti, hogy a kapacitás hány példányt tud futtatni az egyes jelentésekből egy óra alatt. Az eszközzel kiértékelheti, hogy a kapacitás milyen szinten képes renderelni egy-egy jelentést, vagy párhuzamosan több jelentést. További információt a [Microsoft Power BI: Premium-kapacitás](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw) című videóban találhat.
 
-Összetettebb teszt létrehozásához fejlesszen egy terheléses tesztalkalmazást, amely valósághű számítási feladatot szimulál. További információt a [Load Testing Power BI Applications with Visual Studio Load Test](https://powerbi.microsoft.com/en-us/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/) (Power BI-alkalmazások terheléses tesztelése a Visual Studio terheléses tesztjeivel) című webináriumban találhat.
+Összetettebb teszt létrehozásához fejlesszen egy terheléses tesztalkalmazást, amely valósághű számítási feladatot szimulál. További információt a [Load Testing Power BI Applications with Visual Studio Load Test](https://powerbi.microsoft.com/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/) (Power BI-alkalmazások terheléses tesztelése a Visual Studio terheléses tesztjeivel) című webináriumban találhat.
 
 ## <a name="acknowledgements"></a>Nyugták
 

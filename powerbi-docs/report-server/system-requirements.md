@@ -3,18 +3,17 @@ title: A Power BI jelentéskészítő kiszolgáló telepítésének hardver- és
 description: Ez a cikk a Power BI jelentéskészítő kiszolgáló telepítésének és futtatásának minimális hardver- és szoftverkövetelményeit ismerteti.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 07/23/2019
-ms.openlocfilehash: fea28cd1c6541ae9255acd4be14cc85c2c2c5bed
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: aeb47f7f2a6e2de7c8c5095561819367ab16a7e9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415373"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873941"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló telepítésének hardver- és szoftverkövetelményei
 
@@ -24,7 +23,7 @@ Ez a cikk a Power BI jelentéskészítő kiszolgáló telepítésének és futta
 
 | Összetevő | Követelmény |
 | --- | --- |
-| NET-keretrendszer |4.6<br><br>A .NET-keretrendszert [A Windowshoz készült Microsoft .NET-keretrendszert 4.6-os verziója (webes telepítő)](http://support.microsoft.com/kb/3045560) című cikkből telepítheti manuálisan.<br/><br/> A .NET-keretrendszerrel kapcsolatos további információkért, ajánlásokért és útmutatókért tekintse meg [A .NET-keretrendszer 4.6-os verziójának üzembe helyezési útmutatója fejlesztőknek](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx) című cikket.<br/><br/>Windows 8.1 és Windows Server 2012 R2 rendszereken telepítenie kell a [KB2919355](http://support.microsoft.com/kb/2919355) frissítést a .NET-keretrendszer 4.6-os verziójának telepítése előtt. |
+| NET-keretrendszer |4.6<br><br>A .NET-keretrendszert [A Windowshoz készült Microsoft .NET-keretrendszert 4.6-os verziója (webes telepítő)](https://support.microsoft.com/kb/3045560) című cikkből telepítheti manuálisan.<br/><br/> A .NET-keretrendszerrel kapcsolatos további információkért, ajánlásokért és útmutatókért tekintse meg [A .NET-keretrendszer 4.6-os verziójának üzembe helyezési útmutatója fejlesztőknek](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx) című cikket.<br/><br/>Windows 8.1 és Windows Server 2012 R2 rendszereken telepítenie kell a [KB2919355](https://support.microsoft.com/kb/2919355) frissítést a .NET-keretrendszer 4.6-os verziójának telepítése előtt. |
 | Merevlemez |A Power BI jelentéskészítő kiszolgáló működéséhez legalább 1 GB szabad lemezterület szükséges.<br><br>További lemezterület szükséges a jelentéskészítő kiszolgáló adatbázisát üzemeltető adatbázis-kiszolgálón. |
 | Memória |**Minimális:** 1 GB<br/><br/> **Ajánlott:** Legalább 4 GB |
 | Processzor sebessége |**Minimum:** 64 bites processzor: 1,4 GHz<br/><br/> **Ajánlott:** 2,0 GHz vagy gyorsabb |
@@ -77,6 +76,6 @@ Az élő kapcsolatokat táblázatos vagy többdimenziós példányokhoz használ
 [Rendszergazdai áttekintés](admin-handbook-overview.md)  
 [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
 [A Jelentéskészítő letöltése](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Az SQL Server Data Tools (SSDT) letöltése](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Az SQL Server Data Tools (SSDT) letöltése](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

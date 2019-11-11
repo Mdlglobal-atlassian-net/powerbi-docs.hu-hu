@@ -2,7 +2,6 @@
 title: A legutóbb megtekintett tartalom megjelenítése a Power BI szolgáltatásban
 description: A legutóbbiak megtekintése Power BI-ban ‒ dokumentáció
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bae340f89b10253920f8e22d02b4b78c23fa2dd9
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 80c11aef2e985304c824fe1948a6bec867e6cb33
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256240"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862426"
 ---
 # <a name="recent-content-in-the-power-bi-service"></a>**Legutóbbi** tartalom keresése a Power BI szolgáltatásban
 A legutóbbi tartalom a Power BI szolgáltatásban legutóbb megtekintett legfeljebb 20 tételt jelenti.  Ezek között szerepelhetnek irányítópultok, jelentések, alkalmazások, munkafüzetek.
@@ -53,5 +52,5 @@ Az elérhető műveletek a tartalom *tervezője* által hozzárendelt beállít�
 ## <a name="next-steps"></a>Következő lépések
 [Power BI szolgáltatás ‒ Alkalmazások](end-user-apps.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

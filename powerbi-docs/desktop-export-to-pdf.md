@@ -2,7 +2,6 @@
 title: Jelentések PDF-formátumba exportálása a Power BI Desktopból
 description: A Power BI Desktopból egyszerűen exportálhat PDF-be, a PDF-jelentéseket pedig egyszerűen kinyomtathatja
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2f64973650edd951a9a780090426afba3e8471f5
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 28116a4e2b89fe5f8fe719f8d6c0d9eca28310eb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61303166"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73867696"
 ---
 # <a name="export-reports-to-pdf-from-power-bi-desktop"></a>Jelentések exportálása PDF-be a Power BI Desktopból
 A **Power BI Desktopban** vagy a Power BI szolgáltatásban a jelentések PDF-fájlba exportálhatók, a PDF-formátumú jelentések pedig egyszerűen megoszthatók és kinyomtathatók.

@@ -2,7 +2,6 @@
 title: A Power BI által támogatott nyelvek és országok/régiók
 description: Itt láthatja a Power BI szolgáltatás, a Power BI Desktop és a Power BI dokumentációja által támogatott nyelvek és országok/régiók felsorolását.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: efb2ee5ef0ed09cbca1a2bebf6ab3a0f8908efb8
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 951a05247a02e379c56c45176edb622e683af413
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968684"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876892"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>A Power BI által támogatott nyelvek és országok/régiók
 
@@ -126,7 +125,7 @@ A Power BI Desktopot kétféle módon szerezheti be: Letöltheti önálló telep
 > Ha Power BI jelentéskészítő kiszolgálóra optimalizált Power BI Desktop-verziót telepíti, a nyelvet a letöltéskor kell kiválasztania. További információt a [Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése](report-server/install-powerbi-desktop.md) című cikkben olvashat.
 
 ### <a name="choose-a-language-for-power-bi-desktop"></a>A Power BI Desktop nyelvének kiválasztása 
-1. Telepítse a Power BI Desktopot a [Windows Áruházból](http://aka.ms/pbidesktopstore), vagy [önálló telepítővel](http://aka.ms/pbiSingleInstaller).
+1. Telepítse a Power BI Desktopot a [Windows Áruházból](https://aka.ms/pbidesktopstore), vagy [önálló telepítővel](https://aka.ms/pbiSingleInstaller).
 2. A nyelv megadásához keresse meg számítógépén a **Windows-beállításokat**. 
 3. Válassza a **Dátum és idő** lehetőséget.
    
@@ -195,6 +194,6 @@ A súgó a következő 10 nyelven van honosítva:
 
 ## <a name="next-steps"></a>További lépések
 * A Power BI-mobilalkalmazások egyikét használja? Ismerkedjen meg a [Támogatott nyelvek a Power BI-mobilalkalmazásokban](consumer/mobile/mobile-apps-supported-languages.md) című cikk tartalmával.
-* Kérdése van? Kérdezze meg [a Power BI közösségét](http://community.powerbi.com/).
+* Kérdése van? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).
 * Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).
 

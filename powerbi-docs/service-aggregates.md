@@ -2,7 +2,6 @@
 title: Összesítésekkel (összeg, átlag stb.) végzett munka a Power BI szolgáltatásban
 description: Útmutató diagramok összesítésének módosításához a Power BI szolgáltatásban (összeg, átlag, maximum, stb.).
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 05/03/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: 7cee05df6a7d13e18bc31bc1a1f34a5f89711c0d
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 595b5743450aeb8ae6f6e60157742e3563a28fdd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "65710667"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873315"
 ---
 # <a name="work-with-aggregates-sum-average-and-so-on-in-the-power-bi-service"></a>Összesítésekkel (összeg, átlag stb.) végzett munka a Power BI szolgáltatásban
 
@@ -50,7 +49,7 @@ A Power BI szolgáltatásban az összesítések használata bonyolultnak tűnhet
 
 Az alapprobléma általában az adatkészletben található meződefiníció. Lehet, hogy az adatkészlet tulajdonosa szövegként definiálta a mezőt, és a Power BI emiatt nem tudja összesíteni vagy átlagolni azt. Sajnos [csak az adatkészlet tulajdonosa tudja módosítani a mezők kategóriáját](desktop-measures.md). Ha tehát tulajdonosi hozzáféréssel rendelkezik az adatkészlethez akár a Desktopban, akár abban a programban, amellyel létrehozták az adathalmazt (ilyen lehet például az Excel), akkor ezt a problémát el tudja hárítani. Ellenkező esetben azonban az adathalmaz tulajdonosától kell segítséget kérnie.  
 
-A cikk végén szerepel egy [**Megfontolandó szempontok és hibaelhárítás című szakasz**](#considerations-and-troubleshooting). Ebben tippeket és útmutatást talál. Ha ebben nem találja meg a választ, tegye fel kérdését a [Power BI közösségi fórumában](http://community.powerbi.com). Itt gyors választ kaphat közvetlenül a Power BI csapatától.
+A cikk végén szerepel egy [**Megfontolandó szempontok és hibaelhárítás című szakasz**](#considerations-and-troubleshooting). Ebben tippeket és útmutatást talál. Ha ebben nem találja meg a választ, tegye fel kérdését a [Power BI közösségi fórumában](https://community.powerbi.com). Itt gyors választ kaphat közvetlenül a Power BI csapatától.
 
 ## <a name="change-how-a-numeric-field-is-aggregated"></a>Számmezők összevonásának módosítása
 
@@ -188,4 +187,4 @@ KÉRDÉS:  Nem látom az **Összegzés mellőzése** lehetőséget a legördül�
 
 VÁLASZ:  Próbálja eltávolítani a mezőt, majd vegye fel újra.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

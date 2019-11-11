@@ -2,19 +2,18 @@
 title: iOS-eszköz keresési integrációja a Power BI szolgáltatással
 description: A szükséges tartalom elérése eszközkereséssel (Spotlighttal)
 author: michalfo
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/03/2019
 ms.author: michalfo
-ms.openlocfilehash: 8f40781bb15b06f894a53f16d4ec6754d88e6b53
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: f89895650bb0b81533aeddbc149f225742dc9d3f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "66817076"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879231"
 ---
 # <a name="ios-device-search-spotlight-integration-with-power-bi-mobile-ios-app-preview"></a>iOS eszközkeresés-integráció (Spotlight) a Power BI Mobile iOS-alkalmazással (előzetes verzió)
 Az iOS eszközkeresésével elérheti a szükséges tartalmat.
@@ -51,7 +50,7 @@ A Sirivel használható eszközkeresés a Power BI alkalmazásban végzett gyako
 ## <a name="next-steps"></a>Következő lépések
 További információ a Power BI mobilalkalmazásról: 
 
-* Az [iPhone-ra készült Power BI mobilalkalmazás](http://go.microsoft.com/fwlink/?LinkId=522062) letöltése
+* Az [iPhone-ra készült Power BI mobilalkalmazás](https://go.microsoft.com/fwlink/?LinkId=522062) letöltése
 * Az [@MSPowerBI követése Twitteren](https://twitter.com/MSPowerBI)
-* Részvétel [a Power BI-közösség](http://community.powerbi.com/) beszélgetéseiben
+* Részvétel [a Power BI-közösség](https://community.powerbi.com/) beszélgetéseiben
 
