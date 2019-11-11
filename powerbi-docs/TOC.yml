@@ -113,6 +113,8 @@
           href: visuals/power-bi-visualization-customize-title-background-and-legend.md
         - name: Adatot nem tartalmazó elemek megjelenítése a Power BI-ban
           href: desktop-show-items-no-data.md
+        - name: Automatikus dátum/idő a Power BI Desktopban
+          href: desktop-auto-date-time.md
         - name: Csatlakozás adatokhoz
           items:
             - name: Adatforrások a Power BI Desktopban
