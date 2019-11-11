@@ -2,7 +2,6 @@
 title: Kombinált diagram a Power BI-ban
 description: Ez az oktatóanyag azt ismerteti, hogy mikor érdemes kombinált diagramokat használni, és hogy hogyan hozhatóak létre a Power BI szolgáltatásban és a Desktopban.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 527334d2772dbe20f7f78929231cca9faf036e95
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 03a426947787cbd2720661267cac4601a4b9b13a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73017744"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880945"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinált diagram a Power BI-ban
 
@@ -36,7 +35,7 @@ A kombinált diagramok használata nagyszerű választás, ha:
 * kevesebb helyet szeretne felhasználni a vásznon.
 
 ### <a name="prerequisites"></a>Előfeltételek
-Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
+Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
 
 1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
    

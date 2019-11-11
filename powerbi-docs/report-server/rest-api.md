@@ -3,18 +3,17 @@ title: Fejlesztés a Power BI jelentéskészítő kiszolgáló REST API-jaival
 description: A REST API szoftveres hozzáférést biztosít Power BI jelentéskészítő kiszolgáló katalógusában lévő objektumokhoz.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
-ms.openlocfilehash: 8f35b7a3c19751b4537a49fa8cb30f4347f080ed
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 9b8e795c4a55f9efd6fd534d92d95b36c93cf2c0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770765"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874073"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Fejlesztés a Power BI jelentéskészítő kiszolgáló REST API-jaival
 
@@ -41,7 +40,7 @@ A REST API-k kérés-válasz párosai öt összetevőt tartalmaznak:
 * Az URI azonosítót és a HTTP-műveletet támogató, nem kötelező HTTP-**kérésüzenettörzs**-mezők. Például a POST műveletek MIME-kódolású objektumokat tartalmaznak, amelyek összetett paraméterként adhatók be. A POST és PUT műveletek esetében a törzs MIME-kódolásának típusát is meg kell adnia a `Content-type` kérésfejlécben. Egyes szolgáltatások megkövetelik egy adott MIME-típus, például az `application/json` használatát.
 * HTTP-**válasz üzenetfejlécének** mezői:
   
-  * [HTTP-állapotkód](http://www.w3.org/Protocols/HTTP/HTRESP.html), amely a 2xx sikerkódoktól a 4xx vagy 5xx hibakódokig terjed. Ezek helyett a rendszer visszaadhat a szolgáltatásban definiált állapotkódokat is, ahogy azt az API dokumentációja leírja.
+  * [HTTP-állapotkód](https://www.w3.org/Protocols/HTTP/HTRESP.html), amely a 2xx sikerkódoktól a 4xx vagy 5xx hibakódokig terjed. Ezek helyett a rendszer visszaadhat a szolgáltatásban definiált állapotkódokat is, ahogy azt az API dokumentációja leírja.
   * A kérésre adott választ támogató további, nem kötelező fejlécmezők, például egy `Content-type` válaszfejléc.
 * Nem kötelező HTTP-**válasz üzenettörzsének** mezői:
   
@@ -53,7 +52,7 @@ A modern REST API-khoz modern API-dokumentáció szükséges. A REST API-k az Op
 
 ## <a name="testing-api-calls"></a>API-hívások tesztelése
 
-HTTP kérés- és válaszüzenetek teszteléséhez használható eszköz a [Fiddler](http://www.telerik.com/fiddler). A Fiddler egy ingyenes webes hibaelhárító proxy, amely el tudja fogni a REST-kéréseket, így könnyen diagnosztizálhatóak a használatával a HTTP kérés- és válaszüzenetek.
+HTTP kérés- és válaszüzenetek teszteléséhez használható eszköz a [Fiddler](https://www.telerik.com/fiddler). A Fiddler egy ingyenes webes hibaelhárító proxy, amely el tudja fogni a REST-kéréseket, így könnyen diagnosztizálhatóak a használatával a HTTP kérés- és válaszüzenetek.
 
 ## <a name="next-steps"></a>További lépések
 

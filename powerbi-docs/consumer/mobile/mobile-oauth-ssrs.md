@@ -3,18 +3,17 @@ title: OAuth használata a Power BI jelentéskészítő kiszolgáló és az SSRS
 description: Megtudhatja, hogyan konfigurálhatja a környezetét OAuth-hitelesítés támogatására a Power BI mobilalkalmazásban az SQL Server Reporting Services 2016 (vagy újabb) szolgáltatáshoz való csatlakozáshoz.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 59c376afd384812473d3175df992c628ae5049ca
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9ce761d09e2db4fbbc2e56d461f5272041edfbfe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903636"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870081"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>OAuth használata a Power BI jelentéskészítő kiszolgáló és az SSRS csatlakoztatásához
 
@@ -193,7 +192,7 @@ A korlátozott delegálás konfigurálásához a következőket kell tennie.
 Bár közzétehet alkalmazásokat a Jelentéshozzáférés-felügyeleti konzolon, mi az alkalmazást a PowerShellen keresztül szeretnénk létrehozni. Itt látható az alkalmazás hozzáadására szolgáló parancs.
 
 ```powershell
-Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
+Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl https://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
 | Paraméter | Megjegyzések |
@@ -243,7 +242,7 @@ A többtényezős hitelesítés engedélyezésével még biztonságosabbá tehet
 
 ![„Nem sikerült a bejelentkezés az SSRS-kiszolgálóra” hibaüzenet](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
-Beállíthatja a [Fiddlert](http://www.telerik.com/fiddler) proxynak a mobileszközökhöz, hogy lássa, meddig jutott a kérés. Ha engedélyezni szeretné a Fiddler-proxyt a telefonján, be kell állítania az [iOS és Android rendszerhez készült CertMaker](http://www.telerik.com/fiddler/add-ons) eszközt a Fiddlert futtató számítógépen. Ez egy Telerik-bővítmény a Fiddlerhez.
+Beállíthatja a [Fiddlert](https://www.telerik.com/fiddler) proxynak a mobileszközökhöz, hogy lássa, meddig jutott a kérés. Ha engedélyezni szeretné a Fiddler-proxyt a telefonján, be kell állítania az [iOS és Android rendszerhez készült CertMaker](https://www.telerik.com/fiddler/add-ons) eszközt a Fiddlert futtató számítógépen. Ez egy Telerik-bővítmény a Fiddlerhez.
 
 Ha a bejelentkezés sikeresen működik a Fiddler használatakor, előfordulhat, hogy probléma van a WAP-alkalmazás vagy az ADFS-kiszolgáló tanúsítványával. A tanúsítványok érvényességének ellenőrzéséhez használhat olyan eszközöket, mint a [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226).
 
@@ -256,4 +255,4 @@ Ha a bejelentkezés sikeresen működik a Fiddler használatakor, előfordulhat,
 [Webalkalmazás-proxy a Windows Server 2016-ban](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server)  
 [Alkalmazások közzététele AD FS előhitelesítéssel](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
 [Az AD FS 2016 és az Azure MFA konfigurálása](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa)  
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

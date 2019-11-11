@@ -2,7 +2,6 @@
 title: Irányítópultcsempék a Power BI szolgáltatás tervezői számára – bevezetés
 description: Ez a cikk a Power BI-beli irányítópult-csempéket, köztük az SQL Server Reporting Services- (SSRS-) jelentésekből létrehozott csempéket ismerteti.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4577ca5d12002e18406b66036244d895fa7ee5fd
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 801af5e9c4d5306a3e77d4e82c787cc90e9cac37
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994898"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872782"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Irányítópultcsempék a Power BI szolgáltatás tervezői számára – bevezetés
 
@@ -99,8 +98,8 @@ Az, hogy mi történik, amikor rákattint valamelyik csempére, attól függ, ho
 - [Irányítópultok bemutatása Power BI-tervezők számára](service-dashboards.md)  
 - [Adatfrissítés a Power BI-ban](refresh-data.md)
 - [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
-- [Power BI-csempe Office-dokumentumba integrálása](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
+- [Power BI-csempe Office-dokumentumba integrálása](https://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 - [Reporting Services-elem rögzítése Power BI-irányítópulton](https://msdn.microsoft.com/library/mt604784.aspx)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 

@@ -2,7 +2,6 @@
 title: Fő teljesítménymutató (KPI) vizualizációk
 description: Fő teljesítménymutató (KPI) vizualizációk létrehozása a Power BI-ban
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8ecec706c281b2a36c342ea852eebb4a8559a6fd
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: 42a9f2c641a0cdac9b7a129ffc5ecc6f7fb8cf8d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239936"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870868"
 ---
 # <a name="key-performance-indicator-kpi-visuals"></a>Fő teljesítménymutató (KPI) vizualizációk
 
@@ -47,7 +46,7 @@ A KPI-adathalmazoknak tartalmazniuk kell egy KPI célértékeit. Ha az adathalma
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
+Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
 
 1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
 
@@ -106,4 +105,4 @@ Amennyiben a KPI-je nem hasonlít a fentire, lehetséges, hogy nem a **FiscalMon
 
 * [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

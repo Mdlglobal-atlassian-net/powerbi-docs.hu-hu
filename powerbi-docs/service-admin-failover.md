@@ -2,7 +2,6 @@
 title: Gyakori kérdések a Power BI-beli magas rendelkezésre állással, feladatátvétellel és vészhelyreállítással kapcsolatban
 description: Ismertető a Power BI szolgáltatás által a felhasználók számára biztosított magas rendelkezésre állásról, üzletmenet-folytonosságról és vészhelyreállításról.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: b8f98541b70c3573d9f31b5e59196cd37d322bb3
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: dd2c94b490cdf31bd383c7100b9a1bc372f8e75f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075236"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873690"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Gyakori kérdések a Power BI-beli magas rendelkezésre állással, feladatátvétellel és vészhelyreállítással kapcsolatban
 
@@ -23,7 +22,7 @@ Ez a cikk a Power BI szolgáltatás által a felhasználók számára biztosíto
 
 ## <a name="what-does-high-availability-mean-for-power-bi"></a>Mit jelent a „magas rendelkezésre állás” a Power BI esetében?
 
-A Power BI teljes mértékben felügyelt szoftverszolgáltatás (SaaS).  A Microsoft úgy tervezi és működteti, hogy ellenálló legyen az infrastruktúra hibáival szemben, így a felhasználók mindig hozzáférjenek jelentéseikhez.  A szolgáltatást [99,9%-os szolgáltatói szerződés](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) támogatja.
+A Power BI teljes mértékben felügyelt szoftverszolgáltatás (SaaS).  A Microsoft úgy tervezi és működteti, hogy ellenálló legyen az infrastruktúra hibáival szemben, így a felhasználók mindig hozzáférjenek jelentéseikhez.  A szolgáltatást [99,9%-os szolgáltatói szerződés](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) támogatja.
 
 ## <a name="what-is-a-power-bi-failover"></a>Mit jelent a Power BI-feladatátvétel?
 
@@ -50,7 +49,7 @@ Mindkét esetben a Power BI vezetőségének tagjai döntenek a feladatátvétel
 
 ## <a name="how-do-i-know-power-bi-is-now-in-failover-mode"></a>Honnan tudhatom, hogy a Power BI feladatátvételi módban van-e?
 
-Értesítés jelenik meg a Power BI támogatási oldalán ([https://powerbi.microsoft.com/en-us/support/](https://powerbi.microsoft.com/en-us/support/)). Az értesítés tartalmazza a feladatátvétel idején nem elérhető fő műveleteket, amilyen a közzététel, a frissítés, az irányítópultok létrehozása, az irányítópultok duplikálása és a jogosultságok módosítása.
+Értesítés jelenik meg a Power BI támogatási oldalán ([https://powerbi.microsoft.com/support/](https://powerbi.microsoft.com/support/)). Az értesítés tartalmazza a feladatátvétel idején nem elérhető fő műveleteket, amilyen a közzététel, a frissítés, az irányítópultok létrehozása, az irányítópultok duplikálása és a jogosultságok módosítása.
 
 ## <a name="how-long-does-it-take-power-bi-to-fail-over"></a>Mennyi időt vesz igénybe a Power BI feladatátvétele?
 

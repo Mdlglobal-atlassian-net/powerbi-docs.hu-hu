@@ -2,7 +2,6 @@
 title: Valós idejű streamelés a Power BI-ban
 description: Adatok valós idejű streamelésének és vizualizációjának beállítása a Power BI-ban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f88d1e0458e6a1b3abe20c0b4dd889c037ede612
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 9415365c3846329d5bcf707ec7f41d0bd2cc6f92
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307346"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871734"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Valós idejű streamelés a Power BI-ban
 A Power BI valós idejű streamelésével valós időben streamelhet adatokat és frissítheti az irányítópultokat. A Power BI-ban elkészíthető vizualizációk vagy irányítópultok úgy is létrehozhatók, hogy valós idejű adatokat és a vizualizációkat jelenítsenek meg és frissítsenek. A streamelési adatok forrásai és eszközei lehetnek ipari érzékelők, közösségimédia-források, szolgáltatáshasználati metrika vagy bármi más, amiből időfüggő adatok gyűjthetők és továbbíthatók.

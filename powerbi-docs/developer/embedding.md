@@ -3,7 +3,6 @@ title: Beágyazott analitika a Power BI-jal
 description: A Power BI az irányítópultokhoz és jelentésekhez használható analitikák alkalmazásokba való beágyazását lehetővé tevő API-kat kínál. Útmutató a Power BI-jal PaaS- vagy SaaS-környezetben végzett beágyazáshoz, beágyazott analitikai szoftver, beágyazott analitikai eszközök vagy beágyazott üzleti intelligencia eszközök használatával.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -17,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 501b43b7a17d60bbb277cd68c1a5d13e09b14bd5
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: ccd5917b91d9dd0576f0f4607f84f849f6df145d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430725"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875780"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Beágyazott analitika a Power BI-jal
 
@@ -102,4 +101,4 @@ Most már elkezdhet Power BI-tartalmat beágyazni az alkalmazásba vagy az ügyf
 > [!div class="nextstepaction"]
 >[Beágyazás az ügyfelek számára](embed-sample-for-customers.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

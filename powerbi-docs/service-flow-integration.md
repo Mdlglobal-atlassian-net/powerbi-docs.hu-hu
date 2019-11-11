@@ -2,7 +2,6 @@
 title: A Power BI és a Microsoft Flow integrálása
 description: Tanulja meg, hogyan hozhat létre Power BI- adatriasztások által indított folyamatokat.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: YhmNstC39Mw
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: c02ce0a92e258055edf906cf17730fec56bcb450
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: a5b5a34e7cd61ac9d197faa0ef4410cd9558f597
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61147039"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881847"
 ---
 # <a name="microsoft-flow-and-power-bi"></a>A Microsoft Flow és a Power BI
 
@@ -112,5 +111,5 @@ Ennek a feladatnak a végrehajtása során sablon nélkül hozunk létre egy egy
 * [Adatriasztások beállítása a Power BI szolgáltatásban](service-set-data-alerts.md)
 * [Adatriasztások beállítása az iPhone-on](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Adatriasztások beállítása a Windows 10-hez készült Power BI-mobilalkalmazásban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: Pont-, buborék- és pöttydiagramok a Power BI-ban
 description: Pontdiagramok, pöttydiagramok és buborékdiagramok a Power BI-ban
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d776425d4c19070c00658cbd588c5421d22a0057
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 88db87b995f52aa51023bd465d349459e1dd2965
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71192993"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870815"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Pontdiagramok, buborékdiagramok és pöttydiagramok a Power BI-ban
 
@@ -78,7 +77,7 @@ A pöttydiagram hasonlít a buborék- és pontdiagramokra, de inkább az X tenge
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
+Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
 
 1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
    
@@ -172,4 +171,4 @@ Vagy ha nem szerepel ilyen az adatokban, hozzon létre egy mezőt, amely pontonk
 
 * [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

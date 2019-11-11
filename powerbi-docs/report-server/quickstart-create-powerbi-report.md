@@ -2,19 +2,18 @@
 title: Power BI-jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz
 description: Ismerje meg, hogy miképpen hozhat létre Power BI-jelentést a Power BI jelentéskészítő kiszolgálóra néhány egyszerű lépésben.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: maggies
-ms.openlocfilehash: f3a52e14271827a043f05d6b170e79718306aa99
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: cfb83ae8b005744098261c6973a87fb929a864dd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715250"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858952"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI-jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz
 A Power BI-jelentéseket helyszínen is tárolhatja és kezelheti a Power BI jelentéskészítő kiszolgáló webportálján, illetve tárolhatja őket a felhőbeli Power BI szolgáltatásban (https://powerbi.com) ). A jelentéseket a Power BI Desktopban hozhatja létre, majd közzéteheti a webportálon. Ekkor a jelentések megtekinthetővé válnak a cégen belüli olvasók számára egy böngésző vagy egy Power BI-mobilalkalmazás használatával.

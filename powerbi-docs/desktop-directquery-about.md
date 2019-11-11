@@ -2,7 +2,6 @@
 title: DirectQuery használata a Power BI-ban
 description: A DirectQuery használatának bemutatása a Power BI-ban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d303e20e524ad7ac67882812b6e4f5a1d9b06c33
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 13ca0b53bb1aed2d4323afdc99a97f8b9cfa5567
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305799"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868341"
 ---
 # <a name="using-directquery-in-power-bi"></a>DirectQuery használata a Power BI-ban
 Számos különböző adatforrást kapcsolhat össze a **Power BI Desktop** vagy a **Power BI szolgáltatás** használatával, és ezeket az adatkapcsolatokat többféleképpen is létrehozhatja. *Importálhat* adatokat a Power BI-ba, ez az adatok lekérésének leggyakoribb módja, vagy közvetlenül is csatlakozhat az eredeti forrásadattárukban lévő adatokhoz, ez az eljárás **DirectQuery** néven ismert. Ez a cikk a **DirectQuery** szolgáltatást és annak képességeit mutatja be:
@@ -32,7 +31,7 @@ Röviden összefoglalva az importálást a DirectQuery helyett az alábbi ajánl
 
 A Power BI által nyújtott képességeket idővel mind az importálás, mind a DirectQuery esetében bővíteni és fejleszteni fogjuk. Ez vonatkozik az importált adatok használatának rugalmasságára abban az értelemben, hogy az importálás több esetben legyen használható, valamint a DirectQuery használatával kapcsolatos hátrányok kiküszöbölésére is. A fejlesztésektől függetlenül a DirectQuery esetében az alapul szolgáló adatforrás teljesítménye mindig az első számú megfontolandó szempontok közé fog tartozni. Ha az alapul szolgáló adatforrás lassú, akkor a DirectQuery használata ahhoz az adatforráshoz nem lesz megvalósítható.
 
-Ez a cikk a DirectQuery és a Power BI együttes használatát tárgyalja, az SQL Server Analysis Services szolgáltatást nem. A DirectQueryt az **SQL Server Analysis Services** is használja, és az alábbiakban tárgyalt részletek nagy része annak használatára is vonatkozik, a kettő között azonban fontos különbségek is vannak. A DirectQuery és az SQL Server Analysis Services együttes használatával kapcsolatos információkért keresse fel a [DirectQuery SQL Server Analysis Services 2016-os verziójában való használatát bemutató tanulmányt](http://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf).  
+Ez a cikk a DirectQuery és a Power BI együttes használatát tárgyalja, az SQL Server Analysis Services szolgáltatást nem. A DirectQueryt az **SQL Server Analysis Services** is használja, és az alábbiakban tárgyalt részletek nagy része annak használatára is vonatkozik, a kettő között azonban fontos különbségek is vannak. A DirectQuery és az SQL Server Analysis Services együttes használatával kapcsolatos információkért keresse fel a [DirectQuery SQL Server Analysis Services 2016-os verziójában való használatát bemutató tanulmányt](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf).  
 
 Ez a cikk a DirectQueryhez tartozó ajánlott munkafolyamatokra koncentrál, amely esetben a jelentés **Power BI Desktopban** jön létre, viszont a **Power BI szolgáltatáshoz** való közvetlen kapcsolódás témájával is foglalkozik.
 
@@ -141,7 +140,7 @@ A **DirectQuery** használatával ezen modellbővítések nagy részét el lehet
 * **Számított oszlopok korlátozásai:** A számított oszlopoknak soron belülinek kell lenniük, azaz csak ugyanazon tábla más oszlopainak értékeire hivatkozhatnak, összesítési függvények használata nélkül. Emellett a DAX skaláris függvények (pl. LEFT ()) közül csak azok engedélyezettek, amelyek egyszerűen leküldhetők az alapul szolgáló forrás felé – hogy ezek melyek, az a forrás konkrét képességeitől függ. A nem támogatott függvények nem lesznek felsorolva az automatikus kiegészítési lehetőségek között a számított oszlop DAX-függvényeinek szerkesztésekor, és ha használni próbálja őket, hibát eredményeznek.
 * **A szülő–gyermek DAX-függvények nem támogatottak:** A DirectQuery modellben nem használható a DAX PATH() függvénycsalád, amely általában a szülő–gyermek struktúrákat kezeli (például fiókok ábrázolásakor vagy az alkalmazotti hierarchiákban).
 * **A számított táblák nem támogatottak:** A DirectQuery módban nem támogatott a számított táblázatok meghatározása egy DAX-kifejezés használatával.
-* **Kapcsolatszűrés:** A kétirányú szűrés használatát [ez a tanulmány](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) ismerteti részletesebben (a tanulmány az SQL Server Analysis Services kontextusában hoz példákat, de az alapvető pontok a Power BI-ra is ugyanúgy érvényesek).
+* **Kapcsolatszűrés:** A kétirányú szűrés használatát [ez a tanulmány](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) ismerteti részletesebben (a tanulmány az SQL Server Analysis Services kontextusában hoz példákat, de az alapvető pontok a Power BI-ra is ugyanúgy érvényesek).
 
 * **Nincs fürtszolgáltatás:** A DirectQuery használatakor nem használható a Fürtszolgáltatás funkció csoportok automatikus megkereséséhez.
 

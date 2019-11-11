@@ -2,7 +2,6 @@
 title: Privát átjárók használata a Power BI-ban
 description: A Power BI-hoz készült, helyszíni adatokhoz való csatlakozásra használható (privát) helyszíni adatátjáróról nyújt tájékoztatást.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b910f20935c76f8723d8ca876cb57d811976772b
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 5138536fca255638e2cef802b885be1f5dfcbef9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729941"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881528"
 ---
 # <a name="use-personal-gateways-in-power-bi"></a>Privát átjárók használata a Power BI-ban
 
@@ -102,4 +101,4 @@ A privát átjárón használt gyors összevonás használatával a lekérdezés
 
 * [Helyszíni adatátjáró proxybeállításainak konfigurálása](/data-integration/gateway/service-gateway-proxy)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+További kérdései vannak? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).

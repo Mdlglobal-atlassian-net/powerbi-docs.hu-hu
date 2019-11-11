@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 06ee6ad7ade46d811c6340d905150c6dd3810c55
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: c3b1b7288d0d277fc866ea47887335d10279c6cc
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273390"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799903"
 ---
 A DAX számos függvényt biztosít az adatok alakításához, formálásához vagy más típusú elemzéséhez. Ezek a függvények az alábbi kategóriákba sorolhatók:
 
@@ -97,7 +97,7 @@ A DAX a következő **dátumfüggvényeket** tartalmazza:
 
 Noha ezek a függvényekkel jól hasznosíthatók *dátum* értékeken alapuló információk kiszámításához és a bennük tárolt információk kinyeréséhez, dátumtáblát használó időelemzésre nem alkalmasak.
 
-> A videótartalomért köszönet illeti [Alberto Ferrarit az SQLBI-tól](http://www.sqlbi.com/learning-dax)
+> A videótartalomért köszönet illeti [Alberto Ferrarit az SQLBI-tól](https://www.sqlbi.com/learning-dax)
 > 
 > 
 

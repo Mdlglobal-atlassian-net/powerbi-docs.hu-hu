@@ -2,7 +2,6 @@
 title: Adatforrások kezelése – Importálás/ütemezett frissítés
 description: A helyszíni adatátjáró és az átjáróhoz tartozó adatforrások kezelésének módja. Ez a cikk az importálás/ütemezett frissítés szolgáltatással használható adatforrásokra vonatkozik.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3e223fba25386e91354130083f8bacc653b26cee
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: 7512257a3abad33babe2a5b6b56f613c7bb1b50f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757662"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881713"
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Adatforrások kezelése – Importálás/ütemezett frissítés
 
@@ -75,4 +74,4 @@ Az OAuth nem támogatott hitelesítési séma a helyszíni adatátjáróval. Nem
 * [A helyszíni adatátjáró hibaelhárítása](/data-integration/gateway/service-gateway-tshoot)
 * [Átjárók hibaelhárítása – Power BI](service-gateway-onprem-tshoot.md)
 
-További kérdései vannak? Kérdezze meg [a Power BI közösségét](http://community.powerbi.com/).
+További kérdései vannak? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).

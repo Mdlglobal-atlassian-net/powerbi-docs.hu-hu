@@ -2,7 +2,6 @@
 title: Mit jelent a Power BI-felügyelet?
 description: Ismerje meg a Power BI irányítási szabályzatainak konfigurálását, a használat figyelésének módját, valamint a licencek, a kapacitás és a szervezeti erőforrások üzembe helyezését.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 779dba9262752a4030eb263002822d0186f3e470
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: d33aad1d52a7074873e4b2bb7f5e2f93e2b8ab0e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075812"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873734"
 ---
 # <a name="what-is-power-bi-administration"></a>Mit jelent a Power BI-felügyelet?
 
@@ -87,4 +86,4 @@ Ebből a cikkből megismerhette a Power BI-rendszergazdai feladatok lényegesebb
 
 [Gyakori kérdések a Power BI-felügyelettel kapcsolatban](service-admin-faq.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

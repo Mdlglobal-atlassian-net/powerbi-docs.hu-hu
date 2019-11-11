@@ -3,19 +3,18 @@ title: Egyéni adatösszekötők használata a helyszíni adatátjáróval
 description: A helyszíni adatátjáróval egyéni adatösszekötőket használhat.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3c0ef172115dba05deb02d724b663742a2e71c13
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: c76c8fdb635db7724ffeb1a5140e9095c9b2eff5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832520"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881748"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Egyéni adatösszekötők használata a helyszíni adatátjáróval
 
@@ -23,7 +22,7 @@ ms.locfileid: "68832520"
 
 A Power BI-hoz készült adatösszekötőkkel alkalmazásokból, szolgáltatásokból vagy adatforrásokból származó adatokhoz csatlakozhat és férhet hozzá. Egyéni adatösszekötőket készíthet, és használhatja azokat a Power BI Desktopban.
 
-Egyéni adatösszekötők Power BI-hoz való fejlesztéséről a [Data Connector SDK GitHub-oldalán](http://aka.ms/dataconnectors) olvashat. Ez a webhely az első lépésekre vonatkozó információkat, valamint a Power BI-hoz és a Power Queryhez készült mintákat tartalmazza.
+Egyéni adatösszekötők Power BI-hoz való fejlesztéséről a [Data Connector SDK GitHub-oldalán](https://aka.ms/dataconnectors) olvashat. Ez a webhely az első lépésekre vonatkozó információkat, valamint a Power BI-hoz és a Power Queryhez készült mintákat tartalmazza.
 
 Ha egyéni adatösszekötőket használó jelentéseket készít a Power BI Desktopban, akkor azokat a helyszíni adatátjáró használatával frissítheti a Power BI szolgáltatásból.
 
@@ -58,4 +57,4 @@ Ha ezt a beállítást engedélyezte, akkor egyéni összekötői megjelennek az
 * [Helyszíni adatátjáró proxybeállításainak konfigurálása](/data-integration/gateway/service-gateway-proxy)
 * [A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)](service-gateway-sso-kerberos.md)  
 
-További kérdései vannak? Forduljon a [Power BI közösségéhez](http://community.powerbi.com/).
+További kérdései vannak? Forduljon a [Power BI közösségéhez](https://community.powerbi.com/).

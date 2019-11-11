@@ -2,7 +2,6 @@
 title: A Python használata a Power BI Lekérdezésszerkesztőjében
 description: A Python használata a Power BI Lekérdezésszerkesztőjében speciális elemzésekhez
 author: otarb
-manager: rajatt
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 28463c065c965b90beb32feabcd5de029311c612
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 371779df3aaf7cf08d96f61f49039a6383eeda9c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61286886"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878025"
 ---
 # <a name="using-python-in-query-editor"></a>A Python használata a Lekérdezésszerkesztőben
 A Power BI Desktop **Lekérdezésszerkesztőjében** használhatja a statisztikusok, adatszakértők és adatelemzők által széles körben használt **Python** programozási nyelvet. A Python integrációja a **Lekérdezésszerkesztőbe** lehetővé teszi adattisztítás elvégzését a Python használatával, és összetett adatátalakítási és elemzési műveletek adatkészleteken történő elvégzését, beleértve többek között a hiányos adatok kiegészítését, az előrejelzéseket és a fürtözést. A **Python** egy sokoldalú nyelv, amely a **Lekérdezésszerkesztőben** is használható adatmodellek előkészítéséhez és jelentések létrehozásához.
@@ -24,7 +23,7 @@ A Power BI Desktop **Lekérdezésszerkesztőjében** használhatja a statisztiku
 Ahhoz, hogy a **Pythont** a Power BI Desktop **Lekérdezésszerkesztőjében** használhassa, telepítenie kell a **Python** nyelvet a helyi számítógépre. A **Pythont** számos helyről ingyenesen letöltheti és telepítheti, például a [Python hivatalos letöltőoldaláról](https://www.python.org/) vagy az [Anaconda](https://anaconda.org/anaconda/python/) oldaláról.
 
 ## <a name="using-python-in-query-editor"></a>A Python használata a Lekérdezésszerkesztőben
-A **Python** **Lekérdezésszerkesztőben** való használatának bemutatásához a tőzsdei adatkészletből használunk egy példát, amely egy .CSV-fájlon alapul. Ezt [innen töltheti le](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). A példa lépései a következők:
+A **Python** **Lekérdezésszerkesztőben** való használatának bemutatásához a tőzsdei adatkészletből használunk egy példát, amely egy .CSV-fájlon alapul. Ezt [innen töltheti le](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). A példa lépései a következők:
 
 1. Első lépésként töltse be az adatokat a **Power BI Desktopba**. Ebben a példában töltse be az *EuStockMarkets_NA.csv* fájlt, és a **Power BI Desktop** **Kezdőlap** menüszalagján válassza az **Adatok beolvasása > CSV** lehetőséget.
    
@@ -77,7 +76,7 @@ Most létrehozhatunk egy vizualizációt, amelyből látható, hogy a Python-szk
 Miután a vizualizáció elkészült, bármely egyéb vizualizációval együtt amelyet a **Power BI Desktop** használatával szeretne létrehozni, mentheti a **Power BI Desktop-fájlt** (.pbix-fájlként), és utána a Power BI szolgáltatásban használhatja az adatmodellt, beleértve a részét képező Python-szkripteket.
 
 > [!NOTE]
-> Szeretne egy teljes .pbix-fájlt látni úgy, hogy ezek a lépések már be vannak fejezve? Szerencséje van – [innen](http://download.microsoft.com/download/A/B/C/ABCF5589-B88F-49D4-ADEB-4A623589FC09/Complete%20Values%20with%20Python%20in%20PQ.pbix) letöltheti az ebben a példában használt, teljes **Power BI Desktop-fájlt**.
+> Szeretne egy teljes .pbix-fájlt látni úgy, hogy ezek a lépések már be vannak fejezve? Szerencséje van – [innen](https://download.microsoft.com/download/A/B/C/ABCF5589-B88F-49D4-ADEB-4A623589FC09/Complete%20Values%20with%20Python%20in%20PQ.pbix) letöltheti az ebben a példában használt, teljes **Power BI Desktop-fájlt**.
 
 Miután feltöltötte a .pbix-fájlt a Power BI szolgáltatásba, néhány további lépés szükséges az adatfrissítés engedélyezéséhez (a szolgáltatásban) és annak engedélyezéséhez, hogy a vizualizációk frissíthetők legyenek a szolgáltatásban (az adatoknak hozzáféréssel kell rendelkezniük a Pythonhoz, hogy a vizualizációk frissülhessenek). A további lépések a következők:
 

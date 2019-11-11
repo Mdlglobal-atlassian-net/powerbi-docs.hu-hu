@@ -3,19 +3,18 @@ title: Ajánlott eljárások a Power BI teljesítményének javításához
 description: A cikkből megtudhatja, hogyan hozhat létre gyors és megbízható jelentéseket a Power BI-ban.
 author: Bhavik-MSFT
 ms.author: bhmerc
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 736c1ee1b1998ec7f991167352313a05061b3f3c
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 2fd0a3d878641264e84a14579901a9685b0f6e8b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841485"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875109"
 ---
 # <a name="power-bi-performance-best-practices"></a>Ajánlott eljárások a Power BI teljesítményének javításához
 
@@ -152,7 +151,7 @@ A helyszíni adatátjárók a Power BI szolgáltatás helyszíni adatokhoz való
 
 A hálózati késés hatással van a jelentések teljesítményére, hiszen megnöveli azt az időt, amely a kérések Power BI szolgáltatásba való eljuttatásához, illetve a válaszok kézbesítéséhez szükséges. A Power BI-bérlők egy adott régióhoz vannak társítva. Ha szeretné megtekinteni a bérlő „saját” régióját, nyissa meg a powerbi.com webhelyet, és válassza a **?** ikont a jobb felső sarokban, majd **A Power BI névjegye** lehetőséget. Amikor egy bérlő felhasználói hozzáférnek a Power BI szolgáltatáshoz, a kéréseiket a rendszer mindig ehhez a régióhoz irányítja. Miután a kérések megérkeztek a Power BI szolgáltatásba, a szolgáltatás további kéréseket küldhet, például az alapul szolgáló adatforrásnak vagy az átjárónak, melyekre szintén érvényes a hálózati késés.
 
-Bizonyos eszközök, például az [Azure Speed Test](http://azurespeedtest.azurewebsites.net/), segíthetnek megállapítani, hogy mekkora a hálózati késés az ügyfél és az Azure-régió között. A hálózati késés hatásának minimalizálásához általánosságban igyekezzen minél közelebb tartani egymáshoz az adatforrásokat, az átjárókat és a Power BI-fürtöt. Ha a hálózati késés problémát okoz, megpróbálhatja az átjárókat és az adatforrásokat közelebb helyezni a Power BI-fürthöz, például úgy, hogy áthelyezi őket virtuális gépekre.
+Bizonyos eszközök, például az [Azure Speed Test](https://azurespeedtest.azurewebsites.net/), segíthetnek megállapítani, hogy mekkora a hálózati késés az ügyfél és az Azure-régió között. A hálózati késés hatásának minimalizálásához általánosságban igyekezzen minél közelebb tartani egymáshoz az adatforrásokat, az átjárókat és a Power BI-fürtöt. Ha a hálózati késés problémát okoz, megpróbálhatja az átjárókat és az adatforrásokat közelebb helyezni a Power BI-fürthöz, például úgy, hogy áthelyezi őket virtuális gépekre.
 
 A hálózati késés további javításához fontolja meg az [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/) szolgáltatás használatát, mellyel gyorsabb és megbízhatóbb hálózati kapcsolatokat hozhat létre az ügyfelei és az Azure-adatközpontok között.
 

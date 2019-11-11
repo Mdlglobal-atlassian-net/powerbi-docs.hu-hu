@@ -3,19 +3,18 @@ title: Az Azure és a Power BI
 description: Az Azure és a Power BI
 author: davidiseminger
 ms.author: davidi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 9d48054e4b41c097d51522ad7596b750bd067e6d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: db988dfd360aae00fed1f6d917376a6ba54f9089
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513343"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873219"
 ---
 # <a name="azure-and-power-bi"></a>Az Azure és a Power BI
 
@@ -31,7 +30,7 @@ Kiindulhat egy közvetlen Azure SQL Database-kapcsolatból, és jelentéseket k�
 
 ![SQL-ből PBI-be](media/service-azure-and-power-bi/azure_2_sqltopbi.png)
 
-Rengeteg további információt tudhat meg az [Azure SQL Database](http://azure.microsoft.com/services/sql-database/)-ről.
+Rengeteg további információt tudhat meg az [Azure SQL Database](https://azure.microsoft.com/services/sql-database/)-ről.
 
 ## <a name="transform-shape-and-merge-your-cloud-data"></a>A felhőadatok átalakítása, alakítása és egyesítése
 
@@ -43,13 +42,13 @@ Létrehozhat különböző jelentéseket is a különböző célközönségek sz
 
 További információt a következő forrásokban talál:
 
-* [Azure SQL Database](http://azure.microsoft.com/services/sql-database/)
-* [Azure HDInsight](http://azure.microsoft.com/services/hdinsight/)
-* [Azure Storage](http://azure.microsoft.com/services/storage/) (Blob Storage és Table Storage)
+* [Azure SQL Database](https://azure.microsoft.com/services/sql-database/)
+* [Azure HDInsight](https://azure.microsoft.com/services/hdinsight/)
+* [Azure Storage](https://azure.microsoft.com/services/storage/) (Blob Storage és Table Storage)
 
 ## <a name="get-complex-and-ahead-using-azure-services-and-power-bi"></a>Váljon komplexszé (és járjon az élen) az Azure-szolgáltatások és a Power BI segítségével
 
-Az Azure és a Power BI segítségével igényei szerint növekedhet. A több forrásból származó adatok feldolgozásának kihasználása, a masszív valós idejű rendszerek használata, a [Stream Analytics](http://azure.microsoft.com/services/stream-analytics/) és az [Event Hubs](http://azure.microsoft.com/services/event-hubs/) használata és a különböző SaaS-szolgáltatások üzletiintelligencia-jelentésekben való egyesítése előnyt jelenthetnek vállalkozása számára.
+Az Azure és a Power BI segítségével igényei szerint növekedhet. A több forrásból származó adatok feldolgozásának kihasználása, a masszív valós idejű rendszerek használata, a [Stream Analytics](https://azure.microsoft.com/services/stream-analytics/) és az [Event Hubs](https://azure.microsoft.com/services/event-hubs/) használata és a különböző SaaS-szolgáltatások üzletiintelligencia-jelentésekben való egyesítése előnyt jelenthetnek vállalkozása számára.
 
 ![Azure Complex](media/service-azure-and-power-bi/azure_4_complex.png)
 
@@ -57,7 +56,7 @@ Az Azure és a Power BI segítségével igényei szerint növekedhet. A több fo
 
 Lenyűgöző, interaktív adatvizualizációkat ágyazhat be alkalmazásokba, webhelyekbe, portálokba és más helyekre, teljes körűen felhasználva üzleti adatait. A [Power BI Embedded egy Azure-erőforrás](https://azure.microsoft.com/services/power-bi-embedded/), amellyel egyszerűen ágyazhat be interaktív jelentéseket és irányítópultokat, így a felhasználók egységes, kiváló minőségű tartalmakhoz férhetnek hozzá a különböző eszközeiken.  A Power BI végig segíteni fogja az elemzések beágyazásának folyamatában (adatok -> tudás -> megállapítások -> cselekvés).  Mindezeken felül a Power BI és az Azure segítségével [saját vállalata alkalmazásaiba és portáljaiba](https://powerbi.microsoft.com/developers/embedded-analytics/organization/) is beágyazhat elemzéseket.
 
-Nagy mennyiségű információt találhat a Power BI API-król a [Power BI fejlesztői portálján](http://dev.powerbi.com).
+Nagy mennyiségű információt találhat a Power BI API-król a [Power BI fejlesztői portálján](https://dev.powerbi.com).
 
 További információ: [Mire használhatják a fejlesztők a Power BI-t?](developer/what-can-you-do.md).
 

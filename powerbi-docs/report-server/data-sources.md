@@ -2,19 +2,18 @@
 title: A Power BI-jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón
 description: A Power Bi-jelentések számos adatforráshoz csatlakozhatnak. Az adatok használatának módjától függően eltérő adatforrások érhetők el.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: 9b7f3adfc7702dee36c43308b227baf72328935a
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 019cbc489ae6433629898e44088e689767ef12ae
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945831"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874183"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>A Power BI-jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón
 A Power Bi-jelentések számos adatforráshoz csatlakozhatnak. Az adatok használatának módjától függően eltérő adatforrások érhetők el. Az adatok importálhatók, vagy közvetlenül DirectQuery- vagy élő SQL Server Analysis Services-kapcsolattal lehet lekérdezni azokat.

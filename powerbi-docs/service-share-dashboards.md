@@ -2,7 +2,6 @@
 title: Power BI-irányítópult és -jelentés megosztása munkatársakkal és másokkal
 description: Tudnivalók Power BI-irányítópultoknak és -jelentéseknek a cégen belüli és kívüli munkatársakkal való megosztásáról és általában a megosztásról.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: da7b8999dfb6185b044960dde7795008d7e716f7
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 05a134f50f9a09ae5b51578a5e4e5f0a01a95740
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655080"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871510"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI-irányítópult és -jelentés megosztása munkatársakkal és másokkal
 A *Megosztással* egyszerűen biztosíthatja néhány személy hozzáférését az irányítópultjaihoz és jelentéseihez. A Power BI-ban [többféle módon valósítható meg az irányítópultok és jelentések közös használata és terjesztése](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -167,5 +166,5 @@ Az irányítópult vagy jelentés megosztásához rendelkeznie kell a mögöttes
 * Visszajelzés küldene? Mondja el javaslatait a [Power BI-közösség webhelyén](https://community.powerbi.com/).
 * [Irányítópultok és jelentések közös használata és megosztása](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Szűrt Power BI-jelentés megosztása](service-share-reports.md).
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 

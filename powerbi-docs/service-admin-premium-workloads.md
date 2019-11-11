@@ -3,19 +3,18 @@ title: Számítási feladatok konfigurálása a Power BI Premiumban
 description: Megtudhatja, hogyan konfigurálhat számítási feladatokat a Power BI Premiumban.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 2b05ad31612d1960e131028d13552843834a98bd
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 8240c4590a5e5bb892c4858ea74aa20e569ecb89
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307378"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856809"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Számítási feladatok konfigurálása egy Premium-kapacitásban
 
@@ -198,4 +197,4 @@ A [Power BI Premium-kapacitásmetrikák alkalmazás](service-admin-premium-monit
 [Mik azok a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)   
 [Automatikus oldalfrissítés Power BI Desktopban (előzetes verzió)](desktop-automatic-page-refresh.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

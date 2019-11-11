@@ -2,7 +2,6 @@
 title: Adatok közvetlen bevitele a Power BI Desktopba
 description: Adatok közvetlen és egyszerű felvétele a Power BI Desktopba
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 10586d0fa685bb947b27a5c243117596517bdb52
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: b0ae068ebeae2d16984706340c6eb9b2f247db1d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71142228"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73867919"
 ---
 # <a name="enter-data-directly-into-power-bi-desktop"></a>Adatok közvetlen bevitele a Power BI Desktopba
 A Power BI Desktoppal lehetőség van adatok közvetlen bevitelére, amelyeket azután jelentések és vizualizációk készítéséhez használhat fel. Például kimásolhatja egy munkafüzet vagy egy weblap egyes részeit, majd beillesztheti ezeket a Power BI Desktopba.

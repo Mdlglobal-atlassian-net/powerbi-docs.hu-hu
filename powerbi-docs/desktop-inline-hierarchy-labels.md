@@ -2,7 +2,6 @@
 title: Beágyazott hierarchiák feliratainak használata a Power BI Desktopban
 description: Beágyazott hierarchiák feliratainak használata a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8762be72353aa779281d721ac8038b6e3dd16aa2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: db86fee2303759d30b2ff64dc59b56314f220474
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454227"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73867366"
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Beágyazott hierarchiák feliratainak használata a Power BI Desktopban
 A **Power BI Desktop** támogatja a **beágyazott hierarchiák feliratainak** használatát. Ez azon két funkció egyike, amelyek a részletes hierarchikus kibontást javítják. A jelenleg fejlesztés alatt álló második funkció az egymásba ágyazott hierarchiák feliratainak használata (érdemes figyelnie, mert gyakran frissítünk).   

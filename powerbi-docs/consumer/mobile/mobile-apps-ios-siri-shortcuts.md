@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/03/2019
 ms.author: michalfo
-ms.openlocfilehash: 3f1e02c880d737998afd7c84c4259e4de8582da9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: befe57bd0c3441a44f4db745e3af73bd9afed933
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70391499"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73783546"
 ---
 # <a name="using-siri-shortcuts-in-power-bi-mobile-ios-app-preview"></a>Siri-parancsikonok használata a Power BI Mobile iOS-alkalmazásban (előzetes verzió)
 
@@ -66,7 +66,7 @@ Parancsikon törléséhez lépjen az elemre, majd a műveleti menüben koppintso
 ## <a name="next-steps"></a>Következő lépések
 További információ a Power BI mobilalkalmazásról: 
 
-* Az [iPhone-ra készült Power BI mobilalkalmazás](http://go.microsoft.com/fwlink/?LinkId=522062) letöltése
+* Az [iPhone-ra készült Power BI mobilalkalmazás](https://go.microsoft.com/fwlink/?LinkId=522062) letöltése
 * Az [@MSPowerBI követése Twitteren](https://twitter.com/MSPowerBI)
-* Részvétel [a Power BI-közösség](http://community.powerbi.com/) beszélgetéseiben
+* Részvétel [a Power BI-közösség](https://community.powerbi.com/) beszélgetéseiben
 

@@ -2,7 +2,6 @@
 title: Elemzések futtatása és megtekintése irányítópult-csempéken
 description: Power BI-végfelhasználóként érdemes elsajátítania az irányítópult-csempék elemzési eredményeinek megállapítását.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 9/22/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e3e360a47d258c6103377fa26a16c10eb2c8d4d5
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: ab37c806aaf3cd666c71dc22ee1f3d4d457647e0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019629"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863385"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Adatelemzési eredmények megtekintése irányítópult-csempéken a Power BI-jal
 Az irányítópulton található vizualizációs [csempék](end-user-tiles.md) mindegyike nagyszerű lehetőséget kínál az adatfeltárással való ismerkedéshez. Ha rákattint egy csempére, megnyílik egy jelentés vagy a [Q&A](end-user-q-and-a.md), amelyben szűrheti és rendezheti a jelentés alapjául szolgáló adathalmazt, és részletes elemzést végezhet rajta. Elemzések futtatásakor pedig a Power BI elvégzi Ön helyett az adatok felderítését.

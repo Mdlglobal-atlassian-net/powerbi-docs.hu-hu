@@ -3,7 +3,6 @@ title: Saját feliratkozás jelentésekre és irányítópultokra
 description: Útmutató Power BI-jelentések vagy -irányítópultok e-mailben továbbított pillanatképére való feliratkozáshoz.
 author: mihart
 ms.author: mihart
-manager: kvivek
 ms.reviewer: cmfinlan
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 10/21/2019
 rLocalizationGroup: Common tasks
-ms.openlocfilehash: 95bcb3ef0eb8b2d79502e3905a56dbc81e3f43bd
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: add49c43e16b2070b054f4228d1faf0075b736f8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430017"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861387"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Feliratkozás jelentésre vagy irányítópultra a Power BI szolgáltatásban 
 

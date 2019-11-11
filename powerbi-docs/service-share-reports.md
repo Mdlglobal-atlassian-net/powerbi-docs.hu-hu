@@ -2,7 +2,6 @@
 title: Két mód egy szűrt Power BI-jelentés megosztására
 description: Két módszert sajátíthat el a Power BI-jelentések szűrésére, és azok megosztására munkatársaival a vállalatánál.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c5bc8b32ae61870b794875c1d1720cd07dcf97f8
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 79f09b5018efcdae88d74ae26f099ff095fb161a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877716"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871451"
 ---
 # <a name="two-ways-to-share-a-filtered-power-bi-report"></a>Két mód egy szűrt Power BI-jelentés megosztására
 A *Megosztással* egyszerűen biztosíthatja néhány személy hozzáférését az irányítópultjaihoz és jelentéseihez. Mi történik olyankor, ha egy jelentésnek egy szűrt verzióját szeretné megosztani? Például egy olyan jelentést, amely csak egy adott város, év vagy értékesítő adatait jeleníti meg. Próbáljon meg szűrni egy jelentést, majd ossza meg azt, vagy hozzon létre egyéni URL-címet. A jelentés már szűrve van, amikor a címzettek először megnyitják. Eltávolíthatják a szűrőt az URL-cím módosításával. 
@@ -74,6 +73,6 @@ A [Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való haszn
 ## <a name="next-steps"></a>Következő lépések
 * [A munka megosztásának módjai a Power BI-ban](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Irányítópult megosztása](service-share-dashboards.md)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 * Visszajelzés küldene? Mondja el javaslatait a [Power BI-közösség webhelyén](https://community.powerbi.com/).
 

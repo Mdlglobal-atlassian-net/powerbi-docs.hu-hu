@@ -2,7 +2,6 @@
 title: Nem sikerült hozzáadni a Power BI-t az O365-partnerhez
 description: Nem sikerült hozzáadni a Power BI-t az Office 365 típusú szindikálási partnerhez. A szindikálási modell az Office 365 által használt egyik beszerzési modell.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: bb81df81a24046820a82c00915f637ab471eb054
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 558d939582b5ac7ec67d64a9f56305326bc34d03
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074181"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856643"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Nem sikerült hozzáadni a Power BI-t az Office 365 típusú partneri előfizetéshez
 
@@ -84,4 +83,4 @@ Az alkalmi előfizetések engedélyezéséhez megkérheti a partnert, hogy kapcs
 
 [Szervezeti Power BI-licencelés](service-admin-licensing-organization.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

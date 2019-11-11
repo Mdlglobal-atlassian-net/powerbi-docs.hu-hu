@@ -2,7 +2,6 @@
 title: Egyéni Power BI-válaszoldalak létrehozása Cortanához
 description: Egyéni válaszoldalak létrehozása Cortanához a Power BI-ban
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,18 +9,18 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: bb0f6febfaee30c3eab3ce8b8aa618eb09c464bf
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: 06f155676dffa7b5f87ce61a8b342708793ef2c6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375248"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853724"
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>A Power BI szolgáltatás vagy a Power BI Desktop használata egyéni válaszoldal létrehozására Cortanához
 A Power BI teljes funkcionalitásának használata *Cortana-válaszoldalaknak* (vagy néha *Cortana-válaszkártyáknak*) nevezett, kifejezetten a Cortana-kérdések megválaszolására tervezett, különleges jelentésoldalak létrehozására.
 
 > [!IMPORTANT]
-> Cortana-integráció a Power bi-ban elavulttá válik. Június 11-től kezdődően Cortana nem fog működni az irányítópultok és jelentések sem.
+> A Power BI Cortana-integrációja elavult. Június 11-től a Cortana nem fog működni az irányítópultokban és jelentésekben.
 
 ![](media/service-cortana-answer-cards/power-bi-cortana.png)
 
@@ -96,5 +95,5 @@ Cortana oldalán a magas pontszámú válaszok (például egy meghatározott old
 
 Továbbra sem tudja a Power BI-jal használni Cortanát?  Próbálkozzon [Cortana hibaelhárító eszközével](service-cortana-troubleshoot.md).
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

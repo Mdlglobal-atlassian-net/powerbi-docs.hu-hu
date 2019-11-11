@@ -2,7 +2,6 @@
 title: Irányítópultok optimalizálása mobiltelefonokra – Power BI
 description: Útmutató egy irányítópult mobiltelefonon való megtekintésre készült egyéni nézetének létrehozásához a Power BI szolgáltatásban.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 75152d546bc2dc622210d5b9e5933ee44fbdc0b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61158265"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872863"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Irányítópultok optimalizálása mobiltelefonokra – Power BI 
 Amikor a telefonján irányítópultokat tekint meg álló elrendezésben, észreveheti, hogy az irányítópult-csempék egymás után sorakoznak, egyforma méretben. A Power BI szolgáltatásban bármely irányítópultnak létrehozható az egyéni nézete, különösképp telefonokon, álló elrendezésben. A telefont oldalra fordítva az irányítópult elrendezése olyan lesz, mint a szolgáltatásban, akkor is, ha telefonos nézetet hoz létre.
@@ -59,5 +58,5 @@ Irányítópultok mobileszközökön való megtekintéséről szeretne többet m
 ## <a name="next-steps"></a>További lépések
 * [A Power BI-hoz készült telefonos alkalmazásokra optimalizált jelentések létrehozása](desktop-create-phone-report.md)
 * [Tetszőleges méretre optimalizált, rugalmas vizualizációk létrehozása](visuals/desktop-create-responsive-visuals.md)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

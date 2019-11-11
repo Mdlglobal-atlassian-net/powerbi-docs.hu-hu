@@ -2,7 +2,6 @@
 title: Szalagdiagramok használata a Power BI-ban
 description: Szalagdiagramok létrehozása és felhasználása a Power BI Desktopban
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e6044f3a2cfdbfc40d0497ebde25780336dc1dc4
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 1cee814b5013ece3a847aeb3660f1257c69be125
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715484"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871143"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Szalagdiagramok használata a Power BI-ban
 
@@ -27,7 +26,7 @@ Szalagdiagramok használatával megjelenítheti az adatokat, és gyorsan felder�
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
+Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
 
 1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
    

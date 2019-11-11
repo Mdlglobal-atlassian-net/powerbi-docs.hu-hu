@@ -2,7 +2,6 @@
 title: Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása
 description: Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,19 +9,19 @@ ms.topic: troubleshooting
 ms.date: 09/13/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 7e66cbf11c8177a12dbbf825873adb4cef5f26fd
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: d79fc47ff30d7f28827290268ba01edf09643032
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73169071"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860491"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása
 
 Itt a Power BI szolgáltatásban az adatok frissítése során fellépő különféle forgatókönyvekkel kapcsolatos információkat talál.
 
 > [!NOTE]
-> Ha olyan helyzet miatt tapasztal problémákat, amely nem szerepel az alábbi listán, a [közösségi webhelyen](http://community.powerbi.com/) kérhet további segítséget, vagy létrehozhat egy [támogatási jegyet](https://powerbi.microsoft.com/support/).
+> Ha olyan helyzet miatt tapasztal problémákat, amely nem szerepel az alábbi listán, a [közösségi webhelyen](https://community.powerbi.com/) kérhet további segítséget, vagy létrehozhat egy [támogatási jegyet](https://powerbi.microsoft.com/support/).
 >
 >
 
@@ -92,5 +91,5 @@ Az adatfrissítés a lejárt gyorsítótárazott hitelesítő adatok miatt is me
 - [A Helyszíni adatátjáróval kapcsolatos hibák elhárítása](service-gateway-onprem-tshoot.md)  
 - [A személyes Power BI Gateway hibáinak elhárítása](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-További kérdései vannak? [Forduljon a Microsoft Power BI közösségéhez](http://community.powerbi.com/)
+További kérdései vannak? [Forduljon a Microsoft Power BI közösségéhez](https://community.powerbi.com/)
 

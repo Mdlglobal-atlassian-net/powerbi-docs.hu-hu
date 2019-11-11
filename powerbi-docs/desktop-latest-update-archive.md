@@ -2,7 +2,6 @@
 title: A Power BI Desktop korábbi havi frissítései
 description: A Power BI Desktop előző kiadásainak szolgáltatásfrissítései
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 24ff0748a57df5b76d8a559781cf9326764450e3
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: e775d5c4cf0ad1c24765368681134f5d4e865ad3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429726"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866950"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>A Power BI Desktop korábbi havi frissítései
 
@@ -176,8 +175,8 @@ Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verz
 
 A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
 
-* [A Power BI Desktop 2019. augusztusi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08.msi)
-* [A Power BI Desktop 2019. augusztusi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08_x64.msi)
+* [A Power BI Desktop 2019. augusztusi verziója – 32 bites](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08.msi)
+* [A Power BI Desktop 2019. augusztusi verziója – 64 bites](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08_x64.msi)
 
 
 ## <a name="july-2019-update-2715523641"></a>2019. júliusi frissítés (2.71.5523.641)
@@ -247,8 +246,8 @@ Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verz
 
 A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
 
-* [A Power BI Desktop 2019. júliusi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-07.msi)
-* [A Power BI Desktop 2019. júliusi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-07_x64.msi)
+* [A Power BI Desktop 2019. júliusi verziója – 32 bites](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-07.msi)
+* [A Power BI Desktop 2019. júliusi verziója – 64 bites](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-07_x64.msi)
 
 
 ## <a name="june-2019-update-2705494561"></a>2019. júniusi frissítés (2.70.5494.561)
@@ -330,8 +329,8 @@ Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verz
 
 A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
 
-* [A Power BI Desktop 2019. júniusi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06.msi)
-* [A Power BI Desktop 2019. júniusi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06_x64.msi)
+* [A Power BI Desktop 2019. júniusi verziója – 32 bites](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06.msi)
+* [A Power BI Desktop 2019. júniusi verziója – 64 bites](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06_x64.msi)
 
 
 ## <a name="may-2019-update-26954671251"></a>2019. májusi frissítés (2.69.5467.1251)
@@ -408,8 +407,8 @@ Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verz
 
 A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
 
-* [A Power BI Desktop 2019. májusi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-05.msi)
-* [A Power BI Desktop 2019. májusi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-05_x64.msi)
+* [A Power BI Desktop 2019. májusi verziója – 32 bites](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-05.msi)
+* [A Power BI Desktop 2019. májusi verziója – 64 bites](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-05_x64.msi)
 
 
 ## <a name="april-2019-update-2685432361"></a>2019. áprilisi frissítés (2.68.5432.361)
@@ -490,12 +489,6 @@ Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verz
 * Előfordulhat, hogy a Power BI Desktop korábbi verzióival nem tud majd megnyitni egy újabb verzióban létrehozott vagy mentett fájlt. 
 * Ha a Power BI Desktop újabb verziójában mentett jelentés betöltésekor figyelmeztetés jelenik meg, és Ön a jelentést a korábbi verzióban menti, az új funkciókkal kapcsolatos minden információ elvész.
 * Csak az angol nyelvű Power BI Desktop-verziókat archiváljuk.
-
-A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
-
-* [A Power BI Desktop 2019. áprilisi verziója – 32 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04.msi)
-* [A Power BI Desktop 2019. áprilisi verziója – 64 bites](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04_x64.msi)
-
 
 ## <a name="march-2019-update-2675404581"></a>2019. márciusi frissítés (2.67.5404.581)
 
@@ -2414,7 +2407,7 @@ Az új év ismét számos javítással és fejlesztéssel köszöntött be a Pow
 -   Fejlesztések az R-integráció terén a Power BI Desktopban
 
 
-További információkra kíváncsi ezekről a frissítésekről? Olvassa el [blogbejegyzésünket](http://blogs.msdn.com/b/powerbi/archive/2016/01/28/power-bi-updates-this-week-new-report-authoring-capabilities.aspx), amely részletes információkkal szolgál az új funkciókról.
+További információkra kíváncsi ezekről a frissítésekről? Olvassa el [blogbejegyzésünket](https://blogs.msdn.com/b/powerbi/archive/2016/01/28/power-bi-updates-this-week-new-report-authoring-capabilities.aspx), amely részletes információkkal szolgál az új funkciókról.
 
 Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzésben is megtekinthető.
 
@@ -2470,7 +2463,7 @@ A december az ajándékozás hónapja, a Power BI csapata pedig ezt a szokást f
 -   CSV-összekötő: lehetőség oszlopelválasztó megadására a Forrás párbeszédpanelen
 
 
-További információkra kíváncsi ezekről a frissítésekről? Olvassa el [blogbejegyzésünket](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx), amely részletes információkkal szolgál az új funkciókról.
+További információkra kíváncsi ezekről a frissítésekről? Olvassa el [blogbejegyzésünket](https://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx), amely részletes információkkal szolgál az új funkciókról.
 
 Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzésben is megtekinthető.
 
@@ -2525,7 +2518,7 @@ Egy újabb hónap, amely újabb rengeteg új funkciót és fejlesztést hoz a Po
 
 -   Új dokumentációs webhely, amely mostantól tartalmazza a honosított tartalmakat is
 
-További információkra kíváncsi ezekről a frissítésekről? Olvassa el [blogbejegyzésünket](http://blogs.msdn.com/b/powerbi/archive/2015/11/20/announcing-the-power-bi-desktop-november-update.aspx), amely részletes információkkal szolgál az új funkciókról.
+További információkra kíváncsi ezekről a frissítésekről? Olvassa el [blogbejegyzésünket](https://blogs.msdn.com/b/powerbi/archive/2015/11/20/announcing-the-power-bi-desktop-november-update.aspx), amely részletes információkkal szolgál az új funkciókról.
 
 Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzésben is megtekinthető.
 
@@ -2577,7 +2570,7 @@ Megtekinthet egy videót is az összes frissítésről.
 <iframe width="500" height="281" src="https://www.youtube.com/embed/Jbocn1ZNkxM" frameborder="0" allowfullscreen></iframe>
 
 
-További információkért [olvassa el a bejelentést a blogon](http://blogs.msdn.com/b/powerbi/archive/2015/10/20/custom-visualizations-support-and-22-other-features-in-the-power-bi-desktop-october-update.aspx), amelyben részletesebb információkat talál az egyes frissítésekkel kapcsolatban.
+További információkért [olvassa el a bejelentést a blogon](https://blogs.msdn.com/b/powerbi/archive/2015/10/20/custom-visualizations-support-and-22-other-features-in-the-power-bi-desktop-october-update.aspx), amelyben részletesebb információkat talál az egyes frissítésekkel kapcsolatban.
 
 
 
@@ -2647,7 +2640,7 @@ Az alábbi videó részletesebben bemutatja ezeket a funkciókat.
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/Jm44dLXdarQ" frameborder="0" allowfullscreen></iframe>
 
-További információkért a frissítésről [olvassa el a bejelentést a blogon](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/44-new-features-in-the-power-bi-desktop-september-update.aspx), amelyben részletesebb információkat talál az egyes frissítésekkel kapcsolatban.
+További információkért a frissítésről [olvassa el a bejelentést a blogon](https://blogs.msdn.com/b/powerbi/archive/2015/09/23/44-new-features-in-the-power-bi-desktop-september-update.aspx), amelyben részletesebb információkat talál az egyes frissítésekkel kapcsolatban.
 
 ## <a name="august-2015-update-2264128403"></a>2015. augusztusi frissítés (2.26.4128.403)
 

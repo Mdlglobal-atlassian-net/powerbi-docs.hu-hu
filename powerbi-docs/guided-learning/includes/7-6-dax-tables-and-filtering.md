@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 629c53358f757002f2b3dcda468641bbaaa2f4d4
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 5bc0d3bbfb2c2b67b56e6406646f6131a360b97d
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70166725"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799904"
 ---
 A **DAX** és az Excel képletei között az egyik lényeges különbség, hogy a DAX lehetővé teszi *teljes táblák* átadását a kifejezések között, és nem korlátozza azt egyetlen értékre. Ez azzal a jelentős előnnyel jár, hogy a DAX így lehetővé teszi a kifejezésekben a táblák szűrését, és ezt követően szűrt értékhalmazzal lehet műveleteket végezni.
 
@@ -42,7 +42,7 @@ A Power BI-ban és a DAX-ban szerepelnek például olyan értékek is, amelyek n
 
 DAX-függvényekkel teljes, számított táblákat is létre lehet hozni. A DAX használatával létrehozott számított táblákhoz egy **NAME** és egy **TABLE** függvény is szükséges. A számított táblákat a szokásos módon, más táblákhoz hasonlóan lehet használni, így többek között kapcsolatok is létrehozhatók.
 
-> A videótartalomért köszönet illeti [Alberto Ferrarit az SQLBI-tól](http://www.sqlbi.com/learning-dax)
+> A videótartalomért köszönet illeti [Alberto Ferrarit az SQLBI-tól](https://www.sqlbi.com/learning-dax)
 > 
 > 
 

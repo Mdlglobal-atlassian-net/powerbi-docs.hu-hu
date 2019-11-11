@@ -2,19 +2,18 @@
 title: Adatok megtekintése kapcsolat nélküli üzemmódban a Power BI-mobilalkalmazásokban
 description: 'Megtudhatja, milyen előnyökkel jár, ha a mobilböngésző helyett a mobilalkalmazásban tekinti meg a Power BI-t: akkor is hozzáférhet az adataihoz, ha épp nem csatlakozik hálózathoz.'
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: d0d9b10c24d3d9da60ecf1afde7347f53d20f224
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 09a4595b461f69cfa02b4cc0ca3c96b1eb917ef8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059440"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870620"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Adatok megtekintése kapcsolat nélküli üzemmódban a Power BI-mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -64,6 +63,6 @@ A visszajelzése segít eldönteni, hogy milyen fejlesztésekre koncentráljunk 
 
 * [Power BI-alkalmazások mobileszközökre](mobile-apps-for-mobile-devices.md)
 * @MSPowerBI követése Twitteren
-* Vegyen részt [a Power BI-közösség](http://community.powerbi.com/) beszélgetéseiben
+* Vegyen részt [a Power BI-közösség](https://community.powerbi.com/) beszélgetéseiben
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
 

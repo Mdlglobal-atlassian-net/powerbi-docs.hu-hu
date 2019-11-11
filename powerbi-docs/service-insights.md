@@ -2,7 +2,6 @@
 title: Adatelemzések automatikus generálása a Power BI-jal
 description: Ismerje meg, hogyan kaphat elemzési információkat az adatkészletekről és az irányítópult-fájlokról.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
 ms.custom: seodec18
@@ -12,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 428e392994a1b6934bf78d9cccbee1821744a622
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 5f571cabcc413947713cd232863b3ecad910436d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020221"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872228"
 ---
 # <a name="generate-data-insights-automatically-with-power-bi"></a>Adatelemzések automatikus generálása a Power BI-jal
 Van egy új adatkészlete, de nem tudja, hogy kezdje el feldolgozni?  Gyorsan létre kell hoznia egy irányítópultot?  Szeretne felfedezni eddig hiányzó összefüggéseket?
@@ -96,5 +95,5 @@ Teljes adatkészletek összefüggéseinek feltárása helyett egyetlen irányít
 - Ha Ön az adatkészlet tulajdonosa, [optimalizálhatja azt gyors elemzések készítéséhez](service-insights-optimize.md).
 - További tudnivalók a [Gyors elemzések típusaival kapcsolatban](service-insight-types.md).
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 

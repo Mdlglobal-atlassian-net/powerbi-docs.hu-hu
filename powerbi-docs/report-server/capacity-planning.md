@@ -2,19 +2,18 @@
 title: A Power BI jelentéskészítő kiszolgáló kapacitástervezési útmutatója
 description: Ez a dokumentum a Power BI jelentéskészítő kiszolgáló kapacitástervezési útmutatóját tartalmazza, és különböző számítási feladatok terhelési tesztjeinek végrehajtási eredményeit ismerteti.
 author: parthsha
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: 3631c814876c5fbb14fa2bab376b212137858b2a
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: c286e921c47b46c20cd73d4b32146093adc74d7f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71946115"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860125"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló kapacitástervezési útmutatója
 A Power BI jelentéskészítő kiszolgáló olyan önkiszolgáló BI és céges jelentéskészítő megoldás, amelyet az ügyfelek helyben telepíthetnek a saját tűzfal mögé. A Power BI Desktop interaktív jelentéskészítő képességét kombinálja az SQL Server Reporting Services helyi kiszolgálói platformjával. Az elemzések és a jelentések gyakori és növekvő céges használatának köszönhetően a hardveres infrastruktúrák és a vállalati felhasználói bázis skálázásához szükséges szoftverlicencek költségbecslése kihívást jelenthet. A jelen dokumentum célja, hogy útmutatást nyújtson a Power BI jelentéskészítő kiszolgálójának kapacitástervezéséhez, és megossza a jelentéskészítő kiszolgáló különböző számítási feladataihoz tartozó terhelési tesztek végrehajtási eredményeit. Bár a cégek jelentései, lekérdezései és használati mintái eltérőek lehetnek, a jelen dokumentumban ismertetett eredmények – a ténylegesen használt tesztekkel és azok végrehajtásának részletes bemutatásával – hivatkozási pontként szolgálnak bárkinek, aki a Power BI jelentéskészítő kiszolgáló üzembe helyezésének korai tervezési szakaszában van.

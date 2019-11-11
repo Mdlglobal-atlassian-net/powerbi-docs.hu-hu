@@ -2,7 +2,6 @@
 title: Hol található a Power BI-bérlőm?
 description: Tudja meg, hogy hol található a Power BI-bérlője, és hogy miként történt ennek a helynek a kiválasztása. Ennek a megértése fontos, mert hatással lehet a szolgáltatással kapcsolatos interakciókra.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 621b15d682cf2992559f76fa9f8f18bfe68ac93b
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 3f12e6f0b54f85ebd626b2bd35bf1a03d513c17a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074156"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873329"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Hol található a Power BI-bérlőm?
 
@@ -44,5 +43,5 @@ A Power BI a megjelölt országhoz legközelebbi adatterületet választja ki, a
 > [!IMPORTANT]
 > Ez a beállítás a bérlő létrehozása után már nem módosítható.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

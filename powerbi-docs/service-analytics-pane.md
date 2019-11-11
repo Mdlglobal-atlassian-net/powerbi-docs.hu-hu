@@ -2,7 +2,6 @@
 title: Dinamikus referenciavonalak létrehozása vizualizációkhoz
 description: Dinamikus referenciavonalak létrehozása vizualizációkhoz a Power BI szolgáltatásban
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ce99539e1804746970eae20dc9396f0f0536afea
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ab8fb8daa46a21676925de16a068f2d2029954d2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61184106"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855914"
 ---
 # <a name="create-dynamic-reference-lines-for-visuals-in-the-power-bi-service"></a>Dinamikus referenciavonalak létrehozása vizualizációkhoz a Power BI szolgáltatásban
 
@@ -100,5 +99,5 @@ Végül pedig a nem Descartes-féle vizualizációk esetében jelenleg nem alkal
 ## <a name="next-steps"></a>További lépések
 [Az Elemzés panel a Power BI Desktopban](desktop-analytics-pane.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

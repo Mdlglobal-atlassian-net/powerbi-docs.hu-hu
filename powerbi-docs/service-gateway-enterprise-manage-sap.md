@@ -2,7 +2,6 @@
 title: Az adatforrás kezelése – SAP HANA
 description: A helyszíni adatátjáró és az átjáróhoz tartozó adatforrások kezelésének módja. Ez a cikk kifejezetten az SAP HANA használatára vonatkozik.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/16/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b3e1ea53abeff39609515b0b615f9e000432e9c6
-ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.openlocfilehash: 577f0b26052ecc5fbe5f4e5b4da624da2b6e06c4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70303182"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881726"
 ---
 # <a name="manage-your-data-source---sap-hana"></a>Az adatforrás kezelése – SAP HANA
 
@@ -74,5 +73,5 @@ Ha szerepel az átjárón belül konfigurált adatforrás **Felhasználók** lap
 * [A helyszíni adatátjáró hibaelhárítása](/data-integration/gateway/service-gateway-tshoot)
 * [Átjárók hibaelhárítása – Power BI](service-gateway-onprem-tshoot.md) 
 
-További kérdései vannak? Forduljon a [Power BI közösségéhez](http://community.powerbi.com/).
+További kérdései vannak? Forduljon a [Power BI közösségéhez](https://community.powerbi.com/).
 

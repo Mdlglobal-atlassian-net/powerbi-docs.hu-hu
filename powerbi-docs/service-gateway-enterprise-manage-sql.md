@@ -2,7 +2,6 @@
 title: Adatforrások kezelése – SQL
 description: Helyszíni adatátjáró és az átjáróhoz tartozó adatforrások kezelése.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ca8cf2e9c20f2efb4fe4b9f80a936ba887cccc93
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: 66e9b53761fa154fe76cefea99cb5c88345b97aa
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832390"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881641"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Adatforrások kezelése – SQL Server
 
@@ -81,5 +80,5 @@ Ha szerepel az átjárón belül konfigurált adatforrás **Felhasználók** lap
 * [Átjárók hibaelhárítása – Power BI](service-gateway-onprem-tshoot.md)
 * [A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)](service-gateway-sso-kerberos.md)
 
-További kérdései vannak? Forduljon a [Power BI közösségéhez](http://community.powerbi.com/).
+További kérdései vannak? Forduljon a [Power BI közösségéhez](https://community.powerbi.com/).
 

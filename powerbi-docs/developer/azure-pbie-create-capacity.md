@@ -3,19 +3,18 @@ title: Power BI Embedded-kapacitás létrehozása az Azure Portalon | Microsoft 
 description: Ez a cikk bemutatja, hogyan hozhat létre egy Power BI Embedded-kapacitást a Microsoft Azure-ban.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.service: power-bi-embedded
 ms.subservice: ''
 ms.devlang: csharp, javascript
 ms.topic: conceptual
 ms.reviewer: zakharb
 ms.date: 02/05/2019
-ms.openlocfilehash: 7a469de22d0432da595f404e72414fb0a686dbc8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 72c7211647254c97b3cb7ce088d400112a9e288a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61385225"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864981"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Power BI Embedded-kapacitás létrehozása az Azure Portalon
 
@@ -67,4 +66,4 @@ Ha nem szeretné használni ezt a kapacitást, szüneteltetheti a számlázás l
 
 Power BI-tartalmak beágyazásához tekintse meg a [Power BI-irányítópultok, -jelentések és -csempék beágyazása](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/) című témakört.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

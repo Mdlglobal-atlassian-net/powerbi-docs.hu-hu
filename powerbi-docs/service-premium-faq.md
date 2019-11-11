@@ -3,25 +3,24 @@ title: Power BI Premium – gyakori kérdések
 description: A Power BI Premium termékkel kapcsolatos gyakori kérdések, valamint az azokra adott válaszaink.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: f7d23c291e77ebacd3ed19a14ed7ce2921da5673
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 31335f01bd91355587634afbde9a10df5689226b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073334"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881168"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premium – gyakori kérdések
 
 Ez a cikk megválaszolja a Power BI Premiummal kapcsolatban felmerülő gyakori kérdéseket. Az áttekintésért lásd [Mi a Power BI Premium?](service-premium-what-is.md)
 
-* Ha további kérdései vannak, [forduljon a Power BI közösségéhez](http://community.powerbi.com/).
+* Ha további kérdései vannak, [forduljon a Power BI közösségéhez](https://community.powerbi.com/).
 * Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).
 
 **Mi a Power BI Premium?**  

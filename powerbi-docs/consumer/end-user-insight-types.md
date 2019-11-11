@@ -2,20 +2,19 @@
 title: A Power BI által támogatott elemzések típusai
 description: Gyors elemzések és elemzések megtekintése a Power BI-jal.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/02/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7f754c1164448be88a3269cb8e3d129b63a6115f
-ms.sourcegitcommit: 5410a17c6325406c9d9364585d7c26de4d9488ae
+ms.openlocfilehash: 75462c2414854d0848254a36b89bcdd1de365ec5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379909"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863491"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>A Power BI által támogatott elemzések típusai
 
@@ -32,17 +31,17 @@ A rendszer többek között az alábbi algoritmusokat használja:
 ## <a name="category-outliers-topbottom"></a>Kiugró (alsó vagy felső) értékek a kategóriában
 Az adatmodell valamely kategóriája vonatkozásában kiemeli azokat az eseteket, amelyeknél adott dimenzióban az egyik vagy másik elem értéke sokkal nagyobb vagy alacsonyabb, mint a többié.  
 
-![Kiugró értékek a kategóriákban – példa](./media/end-user-insight-types/pbi_auto_insight_types_category_outliers.png)
+![Kiugró értékek a kategóriákban – példa](./media/end-user-insight-types/pbi-auto-insight-types-category-outliers.png)
 
 ## <a name="change-points-in-a-time-series"></a>Időbeli adatsorok változási pontjai
 Időbeli adatsoroknál kiemeli, hogy mikor következett be szignifikáns változás a trendekben.
 
-![Időbeli adatsorok változási pontjai – példa](./media/end-user-insight-types/pbi_auto_insight_types_changepoint.png)
+![Időbeli adatsorok változási pontjai – példa](./media/end-user-insight-types/pbi-auto-insight-types-changepoint.png)
 
 ## <a name="correlation"></a>Korreláció
 Észleli, hogy az adatkészletet egy adott dimenzió mentén ábrázolva milyen eseteken korrelálnak egymással a különböző kategóriák értékei.
 
-![Korrelációs példa](./media/end-user-insight-types/pbi_auto_insight_types_correlation.png)
+![Korrelációs példa](./media/end-user-insight-types/pbi-auto-insight-types-correlation.png)
 
 ## <a name="low-variance"></a>Alacsony variancia
 Észleli azokat az eseteket, melyeknél az adatpontok közel vannak az átlaghoz.
@@ -52,30 +51,30 @@ Időbeli adatsoroknál kiemeli, hogy mikor következett be szignifikáns változ
 ## <a name="majority-major-factors"></a>Többség (fő tényezők)
 Megkeresi azokat az eseteket, amelyekben az összérték többségi aránya egy másik dimenzió mentén vizsgálva egyetlen tényezőnek tudható be.  
 
-![Fő tényezők példa](./media/end-user-insight-types/pbi_auto_insight_types_majority.png)
+![Fő tényezők példa](./media/end-user-insight-types/pbi-auto-insight-types-majority.png)
 
 ## <a name="overall-trends-in-time-series"></a>Időbeli adatsorok általános trendjei
 Észleli az időrendben elérhető adatok növekvő és csökkenő trendjeit.
 
-![Időbeli adatsorok általános trendjei – példa](./media/end-user-insight-types/pbi_auto_insight_types_trend.png)
+![Időbeli adatsorok általános trendjei – példa](./media/end-user-insight-types/pbi-auto-insight-types-trend.png)
 
 ## <a name="seasonality-in-time-series"></a>Időbeli adatsorok szezonális változásai
 Azt vizsgálja, hogy felfedezhetőek-e heti, havi vagy éves gyakorisággal ismétlődő minták az időbeli adatsorokban.
 
-![Szezonalitás példa](./media/end-user-insight-types/pbi_auto_insight_types_seasonality_new.png)
+![Szezonalitás példa](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
 
 ## <a name="steady-share"></a>Állandó részesedés
 Kiemeli azokat az eseteket, amelyekben szülő-gyermek típusú korreláció fedezhető fel egy gyermek érték részesedése és egy folyamatos változó mentén vizsgált teljes szülő érték között.
 
-![Állandó részesedés példa](./media/end-user-insight-types/pbi_auto_insight_types_steadyshare.png)
+![Állandó részesedés példa](./media/end-user-insight-types/pbi-auto-insight-types-steadyshare.png)
 
 ## <a name="time-series-outliers"></a>Kiugró értékek egy időbeli adatsorban
 Időrendben elérhető adatok esetén észleli, hogy vannak-e olyan dátumok vagy időpontok, melyeknél az érték szignifikánsan eltér a többi dátumhoz/időponthoz tartozó értéktől.
 
-![Kiugró értékek egy időbeli adatsorban példa](./media/end-user-insight-types/pbi_auto_insight_types_time_series_outliers.png)
+![Kiugró értékek egy időbeli adatsorban példa](./media/end-user-insight-types/pbi-auto-insight-types-time-series-outliers.png)
 
 ## <a name="next-steps"></a>Következő lépések
 [Power BI-elemzések](end-user-insights.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

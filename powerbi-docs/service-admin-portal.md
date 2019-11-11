@@ -3,7 +3,6 @@ title: Power BI felügyeleti portál
 description: A felügyeleti portál a Power BI bérlői felügyeletét teszi lehetővé a munkahelyen. Olyan lehetőségeket kínál, mint például a használati metrikák, hozzáférés a Microsoft 365 Felügyeleti központjához, valamint a beállítások.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8a6e104a6fcb129a6e51d8424a8c2321ea74b49c
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: fd9864ed086f535e0978dee7f5f8837039aa5491
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442872"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857515"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -513,7 +512,7 @@ A vizualizáció munkahelyi áruházból való feltöltéséhez kattintson a fog
 
 Győződjön meg róla, hogy a vizuális azonosító ugyanaz maradt. Az új fájl az előző fájlt helyére kerül a jelentésekben az egész vállalatnál. Ha azonban a vizualizáció új verziója megbontja az előző verziójának valamely használati vagy adatstruktúráját, akkor ne cserélje le az előző verziót. Ehelyett hozzon létre egy új listázást a vizualizáció új verziójához. Például adjon hozzá egy új verziószámot (X.X verzió) az új listázott vizualizáció címéhez. Ezáltal nyilvánvalóvá válik, hogy ez ugyanaz a vizualizáció, de frissített verziószámmal, így a meglévő jelentések működése nem hibásodik meg. Most is győződjön meg róla, hogy a vizuális azonosító ugyanaz maradt. Így amikor a felhasználók legközelebb belépnek a szervezeti adattárba a Power BI Desktopból, importálhatják az új verziót, amely kérni fogja őket, hogy cseréljék le a jelentésben található jelenlegi verziót.
 
-További információt [az egyéni vállalati vizualizációkkal kapcsolatos gyakori kérdések](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals) között talál.
+További információt [az egyéni vállalati vizualizációkkal kapcsolatos gyakori kérdések](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-visuals) között talál.
 
 ## <a name="dataflowStorage">Adatfolyam-tárolás (előzetes verzió)</a>
 
@@ -547,7 +546,7 @@ Rendszergazdaként a teljes szervezet számára testreszabhatja a Power BI kiné
 * **Témaszín kiválasztása**: Témaszínt hexadecimális, RGB, érték, vagy színskála alapján választhat.
 
 
-További információ: [Céges egyéni védjegyzés](http://aka.ms/orgBranding).
+További információ: [Céges egyéni védjegyzés](https://aka.ms/orgBranding).
 
 ![Munkaterületek listája](media/service-admin-portal/workspaces-list.png)
 ## <a name="next-steps"></a>Következő lépések

@@ -2,7 +2,6 @@
 title: Perecdiagramok a Power BI szolgáltatásban
 description: Perecdiagramok a Power BI szolgáltatásban
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d90ef12e1971ddc81928746f338ba927a48d5b23
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 4dd6f185ea7d4f4664626586f1374f67bd34f784
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195134"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870935"
 ---
 # <a name="doughnut-charts-in-power-bi"></a>Perecdiagramok a Power BI szolgáltatásban
 
@@ -25,7 +24,7 @@ A perecdiagram a tortadiagramhoz hasonlóan a részek egészhez való viszonyát
 
 ## <a name="prerequisite"></a>Előfeltétel
 
-Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
+Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
 
 1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
    

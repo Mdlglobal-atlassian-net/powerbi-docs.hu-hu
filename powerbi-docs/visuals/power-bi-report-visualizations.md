@@ -3,7 +3,6 @@ title: A Power BI szolgáltatás és a Power BI Desktop jelentésvizualizációi
 description: A Microsoft Power BI jelentésvizualizációinak áttekintése.
 author: mihart
 ms.author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/28/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 075985ce2d4eec1244827c65476c81774196a449
-ms.sourcegitcommit: 2a61d8b1e2707a24fe1284a8a4034b11c3999842
+ms.openlocfilehash: 5ee36415c2da0e6920e78774f18c8a83e0b557b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048886"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880988"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Vizualizációk Power BI-jelentésekben
 

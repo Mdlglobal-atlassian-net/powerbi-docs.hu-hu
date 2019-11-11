@@ -3,19 +3,18 @@ title: Multi-Geo-támogatás a Power BI Premiumhoz
 description: Útmutató tartalom üzembe helyezéséhez a Power BI-bérlő saját régióján kívüli régiókban lévő adatközpontokban.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: f29ce1ce05db80378eee81293d92484fb4f58f45
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 129cef8a923b27582bd6424c8d025b93ecbe5532
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665410"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873438"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Multi-Geo-támogatás konfigurálása a Power BI Premiumhoz
 
@@ -102,4 +101,4 @@ A munkaterületek kétféle módon vonhatók ki a Multi-Geo-kapacitásból:
 - [Mi a Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo a Power BI Embedded-kapacitásokhoz](developer/embedded-multi-geo.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

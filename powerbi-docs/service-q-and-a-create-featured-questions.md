@@ -2,7 +2,6 @@
 title: Kiemelt kérdések létrehozása a Power BI Q&A-hez
 description: Dokumentáció arról, hogyan lehet kiemelt kérdéseket létrehozni a Power BI Q&A-hez
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/14/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 138c14e98485777d84130854c7811a33b74dffd3
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 1571589844abb8e9acf0bbb78eccf5664db9bf52
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721114"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881103"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Kiemelt kérdések létrehozása a Power BI Q&A-hez
 Ha rendelkezik saját adatkészlettel, ehhez az adatkészlethez hozzáadhatja a kiemelt kérdéseit. A Power BI Q&A megjeleníti ezeket a kérdéseket az adathalmazon alapuló jelentéseket fogyasztó munkatársaknak.  A kiemelt kérdések ötleteket adnak a munkatársaknak, hogy milyen típusú kérdéseket lehet feltenni az adatkészletről. Ön dönti el, milyen kérdéseket vesz fel. Vegyen fel népszerű kérdéseket, érdekes eredményeket megjelenítő kérdéseket vagy esetleg nehezen megfogalmazható kérdéseket.
@@ -50,5 +49,5 @@ Ebben a cikkben a [Kiskereskedelmi értékesítési elemzési mintát](sample-da
 - [A Q&A használata irányítópultokon és jelentésekben](power-bi-tutorial-q-and-a.md)  
 - [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

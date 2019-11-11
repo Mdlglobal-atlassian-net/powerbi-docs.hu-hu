@@ -3,18 +3,17 @@ title: A Power BI-vizualizációkban végzett adatnézeti-leképezések ismertet
 description: Ez a cikk azt írja le, hogy hogyan alakítja át a Power BI az adatokat, mielőtt továbbadná azokat a vizualizációknak.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 77d5d6423c8246712d12dcc041d32ae73f68b72e
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 07cc0517fb27649bb3cc47b8ba8f51b4268d9a7c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71193551"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880160"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>A Power BI-vizualizációkban végzett adatnézeti-leképezések ismertetése
 

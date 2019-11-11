@@ -2,7 +2,6 @@
 title: 'Az „új megjelenés”: Hol vannak a műveletek?'
 description: A Power BI szolgáltatás (app.powerbi.com) külseje megújult, és sok művelet új helyre került. Ez a cikk a régi és az új helyeket bemutató táblázatokat tartalmaz.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/08/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: e10c2757bf843d504e5caafb949e742261c6209d
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: 2216fb2b18fd0f35fe9ece25ae2bfeea26672a66
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72245446"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872029"
 ---
 # <a name="the-new-look-where-did-the-actions-go"></a>Az „új megjelenés”: Hol vannak a műveletek?
 
@@ -40,7 +39,7 @@ A Power BI szolgáltatás (app.powerbi.com) új arculattal rendelkezik, amely me
 | Könyvjelzők panel | Nézet > Könyvjelzők panel |  Menüsáv Könyvjelzők > További könyvjelzők megjelenítése |
 | Frissítés | Frissítés | Menüsáv Továbbiak (...) > Frissítés |
 | Élő oldal rögzítése | Élő oldal rögzítése | Menüsáv Továbbiak (...) > Élő oldal rögzítése |
-| Alapértelmezések visszaállítása | Alapértelmezések visszaállítása | Alapértelmezések visszaállítása |
+| Alaphelyzetbe állítás | Alaphelyzetbe állítás | Alaphelyzetbe állítás |
 | Megjegyzések | Megjegyzések | Megjegyzések |
 | Kapcsolódó elemek megtekintése | Kapcsolódó elemek megtekintése | Menüsáv Továbbiak (...) > Kapcsolódó elemek megtekintése |
 | Kedvenc | Kedvenc | Kedvenc |

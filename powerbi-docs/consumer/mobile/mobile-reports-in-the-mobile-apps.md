@@ -2,19 +2,18 @@
 title: Jelentések vizsgálata a Power BI mobilalkalmazásokban
 description: Tudja meg, hogyan tekintheti meg és használhatja Power BI mobilalkalmazásokban a jelentéseket a telefonján vagy a táblagépén. A jelentéseket a Power BI szolgáltatásban vagy a Power BI Desktopban hozza létre, majd használhatja azokat a mobilalkalmazásokban.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: ab96cc6d17d340c626775bf2a03e225968985835
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: d4b9a9aeda00dd7f16690d1e92336f5b63adf1da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019397"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869770"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Jelentések vizsgálata a Power BI mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -124,5 +123,5 @@ A **feliratozásra és megosztásra** való lehetőség ki lehet kapcsolva, ha a
 ## <a name="next-steps"></a>Következő lépések
 * [Telefonra optimalizált Power BI-jelentések megtekintése és használata](mobile-apps-view-phone-report.md)
 * [Telefonra optimalizált verzió létrehozása egy jelentéshez](../../desktop-create-phone-report.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

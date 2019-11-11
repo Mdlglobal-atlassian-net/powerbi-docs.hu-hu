@@ -2,7 +2,6 @@
 title: Csempe kitűzése egy irányítópultról egy másikra
 description: Csempe kitűzése egy irányítópultról egy másikra
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d4e9c095dc0114ec3b5fe2fdd6d52fd25aa76d97
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 8e0c598d02b808e997bf0c1f47322e132860100c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020125"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881222"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Csempe kitűzése egy irányítópultról egy másikra
 Ha egy új [irányítópult-csempét](consumer/end-user-tiles.md) szeretne felvenni, egyik módszerként ezt megteheti egy másik irányítópult csempéjének másolásával. Ezek a csempék kattintható hivatkozások, amelyek arra a helyre mutatnak, ahol létrejöttek: vagy a Q&A-ra vagy egy jelentésre. 
@@ -44,5 +43,5 @@ Ha egy új [irányítópult-csempét](consumer/end-user-tiles.md) szeretne felve
 ## <a name="next-steps"></a>Következő lépések
 [Csempék a Power BI-ban](consumer/end-user-tiles.md)  
 [Irányítópultok a Power BI-ban](consumer/end-user-dashboards.md)  
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

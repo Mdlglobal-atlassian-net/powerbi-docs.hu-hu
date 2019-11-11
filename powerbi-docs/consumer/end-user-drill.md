@@ -2,7 +2,6 @@
 title: Lehatolás és felhatolás a vizualizációkban
 description: Ez a cikk bemutatja, hogyan lehet részletezni a vizualizációk mélyebb szintjeit a Microsoft Power BI szolgáltatásban.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 24dbce4d825e51d40fc9a42384561d4608f18035
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 21d663b2f29a8090e6cfb7013d16c739ef0a29b3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019904"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851461"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Részletezés mód vizualizációkban a Power BI-ban
 
@@ -153,4 +152,4 @@ Alapértelmezés szerint a lehatolás nem szűri a jelentés többi vizualizáci
 
 [Power BI – Alapfogalmak](end-user-basic-concepts.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

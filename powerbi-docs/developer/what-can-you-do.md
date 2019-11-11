@@ -3,18 +3,17 @@ title: Mire használhatják a fejlesztők a Power BI-t?
 description: A Power BI lehetőségek széles tárházát kínálja a fejlesztők számára. Ezek a beágyazási lehetőségektől az egyéni vizualizációkig és az adatkészletek streameléséig terjednek.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 54d0b1635eb75fd5cbcb1f3e745097e7da566342
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 9105edd88e83f17f4d6e75a7e45dc123a6789713
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429312"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875669"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Mire használhatják a fejlesztők a Power BI-t?
 

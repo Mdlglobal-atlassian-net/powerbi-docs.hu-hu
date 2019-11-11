@@ -2,18 +2,17 @@
 title: Jelentések szűrése földrajzi hely alapján a Power BI mobilalkalmazásban
 description: Megtudhatja, hogyan szűrheti a jelentéseket földrajzi hely alapján a Microsoft Power BI mobilalkalmazásokban, ha a jelentés tulajdonosa beállított földrajzi címkéket.
 author: mshenhav
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/25/2019
 ms.author: mshenhav
-ms.openlocfilehash: 9a4950a1d52451764c3c62413bf4ecbd036f06c8
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 1079b624ebab827b41f4da55095028796319fdcd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305773"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870634"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Jelentések szűrése földrajzi hely alapján a Power BI mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -51,5 +50,5 @@ A Power BI Desktop [földrajzi szűrésének beállításáról itt](../../deskt
 ### <a name="next-steps"></a>További lépések
 * [Power BI-információk elérése a való világból](mobile-apps-data-in-real-world-context.md) a mobilalkalmazásokkal
 * [Adatok kategorizálása a Power BI Desktopban](../../desktop-data-categorization.md) 
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: Adatok lekérdezése vesszővel tagolt (.CSV) fájlokból
 description: Ismerje meg, hogy miképpen kérdezhet le adatokat .CSV-fájlokból a Power BI-ban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,17 +9,17 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1a150c2cb4eb819b78b2b08a492087eb98bf6363
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: a33c8a45f4f32efb0a47df82b8af23d42c281ae9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513340"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855525"
 ---
 # <a name="get-data-from-comma-separated-value-csv-files"></a>Adatok lekérdezése vesszővel tagolt (.CSV) fájlokból
 ![](media/service-comma-separated-value-files/csv_icon.png)
 
-A gyakran .CSV néven emlegetett, vesszővel tagolt értékfájlok adatsorokból álló egyszerű szövegfájlok, amelyekben az egyes értékeket vesszők választják el egymástól. Az ilyen típusú fájlok viszonylag kis fájlméretben nagy mennyiségű adatot tárolhatnak, ezért ideális adatforrást jelentenek a Power BI számára. [Innen](http://go.microsoft.com/fwlink/?LinkID=619356) letölthet egy .CSV-mintafájlt.
+A gyakran .CSV néven emlegetett, vesszővel tagolt értékfájlok adatsorokból álló egyszerű szövegfájlok, amelyekben az egyes értékeket vesszők választják el egymástól. Az ilyen típusú fájlok viszonylag kis fájlméretben nagy mennyiségű adatot tárolhatnak, ezért ideális adatforrást jelentenek a Power BI számára. [Innen](https://go.microsoft.com/fwlink/?LinkID=619356) letölthet egy .CSV-mintafájlt.
 
 Ha már rendelkezik .CSV-fájllal, itt az ideje, hogy adatkészletként csatlakoztassa a Power BI-webhelyhez, ahol elemezheti az adatokat, irányítópultokat hozhat létre, és másokkal is megoszthatja az elemzéseket.
 

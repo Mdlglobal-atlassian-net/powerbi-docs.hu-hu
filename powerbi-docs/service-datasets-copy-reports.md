@@ -2,7 +2,6 @@
 title: Jelentések másolása más munkaterületekről (előzetes verzió) – Power BI
 description: Útmutató adathalmaz megosztásához a vállalat több felhasználójával. Így mind jelentéseket készíthetnek az Ön adathalmaza alapján a saját munkaterületükön.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c60c3c29bbf87d7a5e18838dac0baa6157de6437
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 2fc33c8adcaed35dab8fc9d81ab28fa314f42e3b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020828"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881946"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Jelentések másolása más munkaterületekről (előzetes verzió)
 
@@ -82,4 +81,4 @@ Dönthet úgy, hogy többé nem kívánja munkaterületén tartani a jelentést 
 ## <a name="next-steps"></a>Következő lépések
 
 - [Adathalmazok használata több munkaterületen (előzetes verzió)](service-datasets-across-workspaces.md)
-- Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -1,17 +1,17 @@
 ---
-ms.openlocfilehash: 6366dbe4d7c58b49b4085d80aa690fd6c64fee59
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 3966521d158c244487638be4117f98ea570e1f28
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70847694"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799902"
 ---
 Üdvözli a Power BI **DAX** bemutatására készített **oktatócsomagja**.
 
 A **DAX** a **Data Analysis Expressions** rövidítése, és egy, a Power BI-on belül (a háttérben is) használt képletnyelvet takar. A DAX a Microsoft egyéb, például Power Pivot és SSAS táblázatos ajánlataiban is megtalálható, de ezek a témakörök a DAX Power BI-ban való használatára fókuszálnak.
 
 ## <a name="dax-and-this-guided-learning-video-series"></a>A DAX és a jelen interaktív tanulási videósorozat
-A jelen **interaktív tanulási** szakasz célja az, hogy megtanítsa a DAX alapjait és alapelveit – egy neves DAX-szakértő ([Alberto Ferrari](http://www.sqlbi.com/learning-dax)) tolmácsolásában, aki elmagyarázza, hogyan gondolkodjunk a DAX-ról, hogyan működik, és mik a leghasznosabb funkciói tapasztalatai szerint.
+A jelen **interaktív tanulási** szakasz célja az, hogy megtanítsa a DAX alapjait és alapelveit – egy neves DAX-szakértő ([Alberto Ferrari](https://www.sqlbi.com/learning-dax)) tolmácsolásában, aki elmagyarázza, hogyan gondolkodjunk a DAX-ról, hogyan működik, és mik a leghasznosabb funkciói tapasztalatai szerint.
 
 ![Alberto Ferrari portréja](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
 
@@ -30,7 +30,7 @@ A DAX operátor-túlterhelést használ, ami azt jelenti, hogy a számításokba
 
 Van egy adattípus, amellyel valószínűleg gyakran fog dolgozni a Power BI-ban: **Dátum/idő**. A **DateTime** típus lebegőpontos értékként tárolódik, amely egész és tizedes tört részt is tartalmaz. A DateTime bármely 1900. március 1. utáni időszak esetében használható pontos számításokhoz.
 
-> A videótartalomért köszönet illeti [Alberto Ferrarit az SQLBI-tól](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> A videótartalomért köszönet illeti [Alberto Ferrarit az SQLBI-tól](https://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
 > 
 > 
 

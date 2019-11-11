@@ -2,7 +2,6 @@
 title: Az adatforrás kezelése – Oracle
 description: A helyszíni adatátjáró és az átjáróhoz tartozó adatforrások kezelésének módja.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ac116cfb2e3f09ceab6c9f78dba33bc18e847784
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: cb7856b0b5ac84684e8d0648b91e45805218cead
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832451"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872463"
 ---
 # <a name="manage-your-data-source---oracle"></a>A vállalati adatforrások kezelése – Oracle
 
@@ -29,11 +28,11 @@ Az átjáró Oracle-kiszolgálóhoz való csatlakoztatásához telepíteni és k
 
 A Power BI Desktop 32 bites verzióihoz a következő hivatkozással töltse le és telepítse a 32 bites Oracle ügyfelet:
 
-* [32 bites Oracle Data Access Components (ODAC) az Oracle Developer Tools for Visual Studio (12.1.0.2.4) verzióval](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
+* [32 bites Oracle Data Access Components (ODAC) az Oracle Developer Tools for Visual Studio (12.1.0.2.4) verzióval](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
 A Power BI Desktop 64 bites verzióihoz vagy a helyszíni adatátjáróhoz a következő hivatkozással töltse le és telepítse a 64 bites Oracle ügyfelet:
 
-* [64 bites ODAC 12.2c 1-es kiadás (12.2.0.1.0) Windows x64 rendszerhez](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+* [64 bites ODAC 12.2c 1-es kiadás (12.2.0.1.0) Windows x64 rendszerhez](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 Az ügyfél telepítése után a megfelelő információkkal konfigurálnia kell a tnsnames.ora fájlt az adatbázishoz megfelelő adatokkal. A Power BI Desktop és az átjáró a tnsnames.ora fájlban meghatározott net_service_name névből fog kiindulni. Konfigurált net_service_name nélkül nem tud csatlakozni. A tnsnames.ora fájl alapértelmezett elérési útja a következő: `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. A tnsnames.ora fájlok konfigurálásáról további információ: [Oracle: Helyi elnevezési paraméterek (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
@@ -132,5 +131,5 @@ Az átjáróval kapcsolatos további hibaelhárítási információk: [A helysz�
 * [Átjárók hibaelhárítása – Power BI](service-gateway-onprem-tshoot.md)
 * [Power BI Premium](service-premium.md)
 
-További kérdései vannak? Forduljon a [Power BI közösségéhez](http://community.powerbi.com/).
+További kérdései vannak? Forduljon a [Power BI közösségéhez](https://community.powerbi.com/).
 

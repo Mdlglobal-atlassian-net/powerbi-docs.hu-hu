@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cd6ea6fd52f929e2cd254214cf0e8c96e858f6c2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 679c3e8c3d94c93899e9dcfae1e57f4b678fb218
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273393"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799901"
 ---
 A Power BI-ban kapcsolatokat alakíthat ki egyszerre több táblázat között is, beleértve a teljesen eltérő adatforrásból származókat. Az adatmodellek kapcsolatait a Power BI Desktop **Kapcsolatok** nézetében tekintheti meg.
 
@@ -23,7 +23,7 @@ A **RELATED** (kapcsolódó) függvény *több-az-egyhez* típusú kapcsolatokn�
 
 A relációs függvények használatával olyan kifejezéseket hozhat létre, amelyek több különböző táblázat értékeit tartalmazzák. A DAX a kapcsolati lánc hosszától függetlenül mindig visszaadja ezeknek a függvényeknek az eredményét.
 
-> A videótartalomért köszönet illeti [Alberto Ferrarit az SQLBI-tól](http://www.sqlbi.com/learning-dax)
+> A videótartalomért köszönet illeti [Alberto Ferrarit az SQLBI-tól](https://www.sqlbi.com/learning-dax)
 > 
 > 
 

@@ -3,18 +3,17 @@ title: A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Des
 description: Tudnivalók a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítéséről
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/03/2019
-ms.openlocfilehash: a97c8125af46eae193f6c592d0b3c1153ae9b50c
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 2a95f8afce2762b82e73741563a29fa22b433d36
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968626"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874120"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
 
@@ -55,7 +54,7 @@ A Power BI szolgáltatáshoz készült Power BI Desktop-verzió címsorában nem
 ## <a name="file-extension-association"></a>Fájlkiterjesztés társítása
 Ha a Power BI Desktopot és a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopot ugyanarra a gépre telepítette, a Power BI Desktop legutóbbi telepítése rendelkezik a .pbix fájltársítással. Így ha duplán kattint egy .pbix-fájlra, akkor elindul a nemrég telepített Power BI Desktop.
 
-Ha először a Power BI Desktopot telepítette, majd a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopot, az összes pbix-fájl alapértelmezés szerint a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopban nyílik meg. Ha azt szeretné, hogy inkább a Power BI Desktop induljon el alapértelmezés szerint a pbix-fájlok megnyitásakor, telepítse újra a [Power BI Desktopot a Microsoft Store áruházból](http://aka.ms/pbidesktopstore).
+Ha először a Power BI Desktopot telepítette, majd a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopot, az összes pbix-fájl alapértelmezés szerint a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopban nyílik meg. Ha azt szeretné, hogy inkább a Power BI Desktop induljon el alapértelmezés szerint a pbix-fájlok megnyitásakor, telepítse újra a [Power BI Desktopot a Microsoft Store áruházból](https://aka.ms/pbidesktopstore).
 
 Azt is megteheti, hogy először megnyitja a Power BI Desktop használni kívánt verzióját, majd megnyitja a fájlt a Power BI Desktopból.
 
@@ -63,7 +62,7 @@ Ha egy Power BI-jelentést szerkeszt a Power BI jelentéskészítő kiszolgáló
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
-A Power BI jelentéskészítő kiszolgálón, a Power BI szolgáltatásban (http://app.powerbi.com) ) és a Power BI-mobilalkalmazásokban található jelentések működése szinte teljesen megegyezik, de bizonyos funkciók eltérnek egymástól.
+A Power BI jelentéskészítő kiszolgálón, a Power BI szolgáltatásban (https://app.powerbi.com) ) és a Power BI-mobilalkalmazásokban található jelentések működése szinte teljesen megegyezik, de bizonyos funkciók eltérnek egymástól.
 
 ### <a name="selecting-a-language"></a>Nyelv kiválasztása
 

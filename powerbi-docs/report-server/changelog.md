@@ -3,18 +3,17 @@ title: A Power BI jelentéskészítő kiszolgáló változásnaplója
 description: Ez a változásnapló a Power BI jelentéskészítő kiszolgálóra vonatkozik, és minden kiadott buildhez felsorolja az új elemeket és hibajavításokat.
 ms.author: jaimeta
 author: jtarquino
-manager: kfile
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/25/2019
-ms.openlocfilehash: 0a4aaa5d9fcb3d5dab6cce0b0c8dd6034581aedb
-ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
+ms.openlocfilehash: ef85aea957ec470b348676b553248f30d3bf8532
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72922559"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874271"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
@@ -29,7 +28,7 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
         - Hibajavítások
             - A .NET-keretrendszer 4.7-es verziójának javítása nincs telepítve.
             - A Teradatához készült, többértékű paraméterekkel rendelkező többoldalas jelentések 110083-as hibájának javítása.
-            - Javítás arra a hibára, hogy az URLRoot érték nem működik több webszolgáltatás URL-kötés esetén, ha azok egyike http://+80/reportserver.
+            - Javítás arra a hibára, hogy az URLRoot érték nem működik több webszolgáltatás URL-kötés esetén, ha azok egyike https://+80/reportserver.
           - Javítás arra a hibára, hogy a többoldalas jelentések többértékű paramétereinek értéke a jelentésterületen kívül jelenik meg.
           
     - *Verzió: 1.6.7221.30698 (Build 15.0.1102.620), Kiadás dátuma: 2019. október 9.*
@@ -305,6 +304,6 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
 [Rendszergazdai áttekintés](admin-handbook-overview.md)  
 [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
 [A Jelentéskészítő letöltése](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Az SQL Server Data Tools (SSDT) letöltése](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Az SQL Server Data Tools (SSDT) letöltése](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -3,19 +3,18 @@ title: Engedélyezési listára helyezendő Power BI URI-címek
 description: Ez a cikk ismerteti azokat a végpontokat, amelyeket az online Power BI szolgáltatást használó ügyfeleknek el kell tudniuk érni.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
 ms.custom: seodec18
-ms.openlocfilehash: 5b8cce3c62811509b5a2fa80bdde683c6278c7b2
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 2771329aef1fe7258065c42269060dc1b9e50bd0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624162"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860632"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>Engedélyezési listára helyezendő Power BI URI-címek
 
@@ -38,7 +37,7 @@ A Power BI működése függ az Office 365 hitelesítés és identitás szakaszb
 
 | Sor | Szerep | Cél(ok) | Port(ok) |
 | --- | --- | --- | --- |
-| 1 | **Kötelező:** Hitelesítés és identitás | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) bemutató Office 365-dokumentációt  | N.A. |
+| 1 | **Kötelező:** Hitelesítés és identitás | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) bemutató Office 365-dokumentációt  | N.A. |
 
 ## <a name="general-site-usage"></a>Általános webhelyhasználat
 
@@ -47,7 +46,7 @@ A Power BI használatához tudnia kell csatlakozni az alábbi táblázatban és 
 | Sor | Szerep | Cél(ok) | Port(ok) |
 | --- | --- | --- | --- |
 | 1 | **Kötelező:** Háttérbeli API-k | *.analysis.windows.net | TCP 443 |
-| 2 | **Kötelező:** Office 365-integráció | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) bemutató Office 365-dokumentációt | N.A. |
+| 2 | **Kötelező:** Office 365-integráció | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) bemutató Office 365-dokumentációt | N.A. |
 | 3 | **Kötelező:** Portál | app.powerbi.com | TCP 443 |
 | 4 | **Kötelező:** Szolgáltatási telemetria | dc.services.visualstudio.com | TCP 443 |
 | 5 | **Nem kötelező:** Tájékoztató üzenetek | dynmsg.modpim.com | TCP 443 |
@@ -60,7 +59,7 @@ Ahhoz, hogy rendszergazdai funkciókat végezzen el a Power BI-ban, tudnia kell 
 
 | Sor | Szerep | Cél(ok) | Port(ok) |
 | --- | --- | --- | --- |
-| 1 | **Kötelező:** A felhasználók kezeléséhez és auditnaplók megtekintéséhez | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) bemutató Office 365-dokumentációt | N.A. |
+| 1 | **Kötelező:** A felhasználók kezeléséhez és auditnaplók megtekintéséhez | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) bemutató Office 365-dokumentációt | N.A. |
 | | | |
 
 ## <a name="getting-data"></a>Adatok beolvasása
@@ -82,7 +81,7 @@ A Power BI-nak szüksége van bizonyos végpontokra az irányítópultok és jel
 
 | Sor | Szerep | Cél(ok) | Port(ok) |
 | --- | --- | --- | --- |
-| 1 | **Kötelező:** Excel-integráció | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) bemutató Office 365-dokumentációt | N.A. |
+| 1 | **Kötelező:** Excel-integráció | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) bemutató Office 365-dokumentációt | N.A. |
 | | | |
 
 ## <a name="custom-visuals"></a>Egyéni vizualizációk
@@ -94,7 +93,7 @@ A Power BI-nak szüksége van bizonyos végpontokra az egyéni vizualizációkho
 | 1 | **Kötelező:** Egyéni vizualizáció importálása a Marketplace felületéről vagy egy fájlból | *.azureedge.net <br> *.blob.core.windows.net <br> store.office.com | TCP 443 |
 | 2 | **Nem kötelező:** Bing Térképek | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Nem kötelező:** PowerApps | Lásd a [Szükséges szolgáltatások szakaszt](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) a PowerApps rendszerkövetelményeinek webhelyén | N.A. |
-| 4 | **Nem kötelező:** Visio | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office), valamint a [SharePoint Online szolgáltatást és a OneDrive Vállalati verziót](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) bemutató Office 365-dokumentációt | N.A. |
+| 4 | **Nem kötelező:** Visio | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), valamint a [SharePoint Online szolgáltatást és a OneDrive Vállalati verziót](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) bemutató Office 365-dokumentációt | N.A. |
 | | | |
 
 ## <a name="related-external-sites"></a>Kapcsolódó külső webhelyek

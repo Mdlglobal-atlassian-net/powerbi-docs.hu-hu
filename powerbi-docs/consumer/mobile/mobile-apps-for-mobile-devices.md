@@ -2,7 +2,6 @@
 title: Mik a Power BI-mobilalkalmazások?
 description: A Power BI mobilalkalmazásai segítségével bárhonnan elérheti helyi vagy a felhőben tárolt adatait. Mobileszközén is megtekintheti a Power BI-irányítópultokat és -jelentéseket.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 04/26/2018
 ms.author: mshenhav
 ms.custom: ''
-ms.openlocfilehash: 40dd5a0ed03a7d6bd258de39bb9c29dcd7390cd9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 05f0526698e0d5d74c4b317261be6753b9296ff0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70064670"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879308"
 ---
 # <a name="what-are-the-power-bi-mobile-apps"></a>Mik a Power BI-mobilalkalmazások?
 A Power BI iOS, Android és Windows 10 rendszerekhez is kínál mobilalkalmazásokat. A mobilalkalmazásban a felhőbeli és helyszíni adatokhoz csatlakozhat, és használhatja ezeket az adatokat. 

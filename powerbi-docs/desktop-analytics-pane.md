@@ -2,7 +2,6 @@
 title: Az Elemzés panel használata a Power BI Desktopban
 description: Dinamikus referenciavonalak létrehozása vizualizációkhoz a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 861a1d43f023e3ceba17fba90bcbc703e3195c84
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: a3ba6f8faf22d3854ecfcbc40e7931ca887de0f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160177"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876655"
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Az Elemzés panel használata a Power BI Desktopban
 A **Power BI Desktop** **Elemzés** paneljén dinamikus *referenciavonalak* adhatók hozzá a vizualizációkhoz, így irányítva rá a figyelmet a fontos trendekre vagy elemzésekre. Az **Elemzési** panel a Power BI Desktop **Vizualizációs elemek** területén található.

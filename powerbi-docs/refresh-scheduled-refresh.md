@@ -2,7 +2,6 @@
 title: Ütemezett frissítés beállítása
 description: Ez a cikk az átjáró kiválasztásának és az ütemezett frissítés beállításának lépéseit tartalmazza.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 9f1289b5fce74c60e5b3802054cef008dd33ada2
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 89f8b3d609b9433cc85d8af709eec828f924ad8e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021554"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860700"
 ---
 # <a name="configure-scheduled-refresh"></a>Ütemezett frissítés beállítása
 
@@ -127,5 +126,5 @@ Néha az adatok frissítése nem a várt módon történik. Ezt általában egy 
 - [A Helyszíni adatátjáróval kapcsolatos hibák elhárítása](service-gateway-onprem-tshoot.md)  
 - [A személyes Power BI Gateway hibáinak elhárítása](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

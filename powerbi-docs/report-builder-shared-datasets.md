@@ -7,12 +7,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 0cf85d2757dd77de854a6640f400c6dd9c70379a
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: c44f90bc29887a5431c893803cf4910e0e5093d3
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431505"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73791264"
 ---
 # <a name="use-shared-datasets-in-power-bi-report-builder"></a>Megosztott adathalmazok használata a Power BI Jelentéskészítőben
 
@@ -30,7 +30,7 @@ Az alábbi lista felsorolja mindazt, ami megosztott adathalmaz Power BI Jelenté
 - Power BI-adathalmazhoz akkor férhet hozzá, ha rendelkezik az adathalmazra vonatkozó Összeállítási engedéllyel. Tájékozódjon az [Összeállítási engedélyről](service-datasets-build-permissions.md).
 - Többoldalas jelentést Power BI Pro-licenc nélkül is létrehozhat a Jelentéskészítőben. 
 - A többoldalas jelentés közzétételéhez viszont Power BI Pro-licenc szükséges. Ezen kívül legalább Közreműködői szerepkörrel kell rendelkeznie egy Prémium szintű kapacitásbeli munkaterületen. 
-- Választható: Ha követni szeretné a cikk tartalmát, töltse le a [Kiskereskedelmi elemzési minta .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) Power BI Desktop-fájlt, nyissa meg a Power BI Desktopban, és vegyen fel egy sok oszlopból álló táblázatot. A **Formátum** panelen kapcsolja ki az **Összegek** beállítást. Ez után tegye közzé egy munkaterületen a Power BI szolgáltatásban.
+- Választható: Ha követni szeretné a cikk tartalmát, töltse le a [Kiskereskedelmi elemzési minta .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) Power BI Desktop-fájlt, nyissa meg a Power BI Desktopban, és vegyen fel egy sok oszlopból álló táblázatot. A **Formátum** panelen kapcsolja ki az **Összegek** beállítást. Ez után tegye közzé egy munkaterületen a Power BI szolgáltatásban.
 
     ![Összegek kikapcsolása](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
 

@@ -2,7 +2,6 @@
 title: Tippek a tökéletes Power BI-irányítópult megtervezéséhez
 description: Tippek a tökéletes Power BI-irányítópult megtervezéséhez
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2083fa0d197010ca770422f11c7f1e4b83d0184b
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 95170ec36c5b4da0314c858ae415c3bbcb2ab556
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023750"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877403"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tippek a tökéletes Power BI-irányítópult megtervezéséhez
 Most, hogy létrehozta az irányítópultot, és hozzáadott néhány csempét is, gondolja át, hogyan tehetné irányítópultját egyszerre ízlésessé és célratörővé. Ennek a legjobb módja, ha a legfontosabb információ a legfeltűnőbb, amelynek megjelenése letisztult és rendezett.
@@ -24,8 +23,6 @@ Most, hogy létrehozta az irányítópultot, és hozzáadott néhány csempét i
 
 > [!TIP]
 > Elnyerte a tetszését az irányítópult? Ezt és a kapcsolódó jelentéseket letöltheti az AppSource-ból. Lépjen az **Adatok lekérése** > **Szolgáltatások** lehetőségre. Válassza a **Microsoft Sample - Sales & Marketing** > **Letöltés most** lehetőséget.
-
-A jelentésekre vonatkozó tervezési elvek közül jó néhány az irányítópultra is igaz. További információkért olvassa el következő tanulmányunkat: [A legjobb tervezési elvek jelentések és vizualizációk elkészítéséhez](visuals/power-bi-visualization-best-practices.md).
 
 Íme, néhány tipp az irányítópultokhoz.
 
@@ -85,4 +82,4 @@ A tökéletes irányítópult-tervezés elsajátításához érdemes megismerked
 ## <a name="next-steps"></a>Következő lépések
 [Irányítópult létrehozása jelentésből](service-dashboard-create.md)  
 [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)  
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
