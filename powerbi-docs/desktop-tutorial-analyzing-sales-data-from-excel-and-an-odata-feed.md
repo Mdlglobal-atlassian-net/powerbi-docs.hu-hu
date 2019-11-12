@@ -2,7 +2,6 @@
 title: 'Oktatóanyag: Excelből és OData-csatornáról származó adatok összevonása a Power BI Desktopban'
 description: 'Oktatóanyag: Excelből és OData-csatornáról származó adatok összevonása'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f18dae9ecd0eff0b7f62a3152fc59c81f1292ba4
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 8d1b253d5e84bb15dea4612978ee970faccb7a1a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160388"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866095"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Oktatóanyag: Excelből és OData-csatornáról származó értékesítési adatok összevonása
 
@@ -35,7 +34,7 @@ Az adatkészletek importálása után átalakítási és összesítési művelet
 
 Először is importálja az Excel Products.xlsx munkafüzetben lévő termékadatokat a Power BI Desktopba.
 
-1. [Töltse le a Products.xlsx Excel-munkafüzetet](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx), és mentse **Products.xlsx** néven.
+1. [Töltse le a Products.xlsx Excel-munkafüzetet](https://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx), és mentse **Products.xlsx** néven.
    
 2. Kattintson a Power BI Desktop **Kezdőlap** szalagfülén az **Adatok lekérése** elem mellett lenyitó nyílra, majd a **Leggyakoribb** legördülő listán kattintson az **Excel** elemre. 
    
@@ -76,7 +75,7 @@ A következő lépésben importálja a megrendelési adatokat a Northwind érté
    
    ![OData beolvasása](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
    
-2. Az **OData-csatorna** párbeszédablakban illessze be a Northwind OData-csatorna URL-címét (`http://services.odata.org/V3/Northwind/Northwind.svc/`). Kattintson az **OK** gombra.
+2. Az **OData-csatorna** párbeszédablakban illessze be a Northwind OData-csatorna URL-címét (`https://services.odata.org/V3/Northwind/Northwind.svc/`). Kattintson az **OK** gombra.
    
    ![OData-csatorna párbeszédpanel](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
    
@@ -271,7 +270,7 @@ Válasszon egy terméket a **Mennyiség terméknév szerint** diagramon a térk�
 Az elkészült jelentés a Products.xlsx Excel-fájl és a Northwind OData-csatorna adatait összegzi a vizualizációkban, amelyek a különböző országok megrendelési adatait, időtartamait és termékeit elemzik. Az elkészült jelentést [feltöltheti a Power BI szolgáltatásba](desktop-upload-desktop-files.md), és megoszthatja más Power BI-felhasználókkal is.
 
 ## <a name="next-steps"></a>Következő lépések
-* [Olvassa el a többi Power BI Desktop-oktatóanyagot](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Tekintse meg a Power BI Desktop videóit](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Látogasson el a Power BI fórumára](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Látogasson el a Power BI blogra](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Olvassa el a többi Power BI Desktop-oktatóanyagot](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Tekintse meg a Power BI Desktop videóit](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Látogasson el a Power BI fórumára](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Látogasson el a Power BI blogra](https://go.microsoft.com/fwlink/?LinkID=519327)

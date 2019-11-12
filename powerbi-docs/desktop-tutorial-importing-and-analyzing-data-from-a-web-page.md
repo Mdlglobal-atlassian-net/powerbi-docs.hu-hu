@@ -2,7 +2,6 @@
 title: 'Oktatóanyag: Weboldalról származó adatok importálása és elemzése'
 description: 'Oktatóanyag: Weboldalakról származó adatok importálása és elemzése a Power BI Desktop használatával'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: d6cdcf47b42be4a9b541aa355efb3dd5e9667204
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e4a805db851e63a725a866065a774ef8ecc23c24
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514638"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879595"
 ---
 # <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Oktatóanyag: Weboldalakról származó adatok elemzése a Power BI Desktop használatával
 
@@ -29,7 +28,7 @@ Igazi futballrajongóként szeretne jelentést készíteni az UEFA labdarúgó-E
 
 ## <a name="connect-to-a-web-data-source"></a>Kapcsolódás egy webes adatforráshoz
 
-Az Eb-győztesekre vonatkozó adatokat a labdarúgó-Európa-bajnokság Wikipédia-oldalán található Eredmények nevű táblából töltheti le az alábbi linken: http://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
+Az Eb-győztesekre vonatkozó adatokat a labdarúgó-Európa-bajnokság Wikipédia-oldalán található Eredmények nevű táblából töltheti le az alábbi linken: https://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
 
 ![Eredmények tábla a Wikipédia-oldalon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
 
@@ -44,7 +43,7 @@ Az adatok importálásához a következőket kell tennie:
    >[!NOTE]
    >A **Lekérdezés** elemet kijelölheti közvetlenül, vagy kiválaszthatja a Power BI **Első lépések** párbeszédéből is, majd a **Lekérdezés** párbeszédpanelen kattintson a **Web** elemre az **Összes** vagy **Egyéb** szakaszon belül, végül pedig kattintson a **Kapcsolódás** elemre.
    
-2. A **Webes tartalomból** párbeszédpanelen illessze be az URL-címet `http://en.wikipedia.org/wiki/UEFA_European_Football_Championship` az **URL** szövegmezőbe, majd kattintson az **OK** gombra.
+2. A **Webes tartalomból** párbeszédpanelen illessze be az URL-címet `https://en.wikipedia.org/wiki/UEFA_European_Football_Championship` az **URL** szövegmezőbe, majd kattintson az **OK** gombra.
    
     ![Adatok lekérése az párbeszédpanelen](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
    
@@ -186,8 +185,8 @@ Ha a térképet tortadiagramra szeretné cserélni, jelölje ki a térképet, ma
 A Power BI Desktop teljes körű szolgáltatást nyújt, lehetővé téve az adatok számos különféle adatforrásból való beszerzését, az elemzési igényeknek megfelelő átalakítását, valamint látványos és interaktív módon történő megjelenítését. Miután elkészült a jelentés, [felöltheti azt a Power BI-ba](desktop-upload-desktop-files.md), és létrehozhat azon alapuló irányítópultokat, amelyeket más Power BI-felhasználókkal meg is oszthat.
 
 ## <a name="see-also"></a>Lásd még:
-* [Olvassa el a többi Power BI Desktop-oktatóanyagot](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Tekintse meg a Power BI Desktop videóit](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Látogasson el a Power BI fórumára](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Látogasson el a Power BI blogra](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Olvassa el a többi Power BI Desktop-oktatóanyagot](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Tekintse meg a Power BI Desktop videóit](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Látogasson el a Power BI fórumára](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Látogasson el a Power BI blogra](https://go.microsoft.com/fwlink/?LinkID=519327)
 

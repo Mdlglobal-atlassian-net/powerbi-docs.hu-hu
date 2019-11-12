@@ -2,7 +2,6 @@
 title: Első lépések a Power BI Desktopban
 description: Első lépések a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,17 +9,17 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2049d996c9f6130718e203a8f6d27a2a7fac911f
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: e533313e20c4e1f994c2ae3d1e552170aef2cbd2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70201029"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868021"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Első lépések a Power BI Desktopban
 Üdvözöljük a **Power BI Desktop Első lépések útmutatójában**. Ebben a rövid bemutatóban megismerkedhet a Power BI Desktop használatával, képességeivel, és megtudhatja, hogyan állíthat össze gyorsan nagy teljesítményű adatmodelleket és lenyűgöző jelentéseket, amelyek megalapozottabb üzleti döntéseket eredményeznek. 
 
-Jobban szeret videókat nézni mint olvasni? [Megtekintheti az első lépéseket bemutató videónkat](desktop-videos.md). Ha pedig szeretné követni a videóban látottakat a megfelelő mintaadatokkal, [letöltheti ezt a minta Excel-munkafüzetet](http://go.microsoft.com/fwlink/?LinkID=521962).
+Jobban szeret videókat nézni mint olvasni? [Megtekintheti az első lépéseket bemutató videónkat](desktop-videos.md). Ha pedig szeretné követni a videóban látottakat a megfelelő mintaadatokkal, [letöltheti ezt a minta Excel-munkafüzetet](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 ![](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
@@ -88,7 +87,7 @@ Vegyük például azt az esetet, hogy Ön nyugdíjba megy, és olyan helyen szer
 
 A következő webes forrásanyag mindkét esetben releváns adatokat biztosít:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Válassza ki a **Lekérdezés \> Web** lehetőséget, és illessze be ezt a címet.
 
@@ -158,7 +157,7 @@ Az összes lépést megtekintheti az **[Adatok formázása és összevonása a P
 
 Szerencsére létezik egy másik nyilvános adatforrás, amely pontosan erre használható. Azonban jelentős formázást kell rajta végrehajtanunk, hogy csatlakoztathassuk a nyugdíjba vonulással kapcsolatos adatokat tartalmazó táblázatunkhoz. Az államok rövidítéseit tartalmazó webes erőforrás a következő címen található:
 
-<http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+<https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
 
 A **Lekérdezésszerkesztő** **Kezdőlap** menüszalagján válasszuk a **Lekérdezés \> Web** lehetőséget, írjuk be a webcímet, és kattintsunk az **OK** gombra. A **Kezelő** ablakában ekkor megjelenik a webhelyen talált tartalom.
 
