@@ -2,7 +2,6 @@
 title: A Q&A használata élő kapcsolatokkal a Power BI-ban
 description: Dokumentáció a Power BI Q&A természetes nyelvi lekérdezések Analysis Services-adatokkal és helyszíni adatátjáróval kialakított élő kapcsolatokkal történő használatához.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 59c9488def297537cc2ea944f6c0fc4f59ba29ba
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 8bb3597d2877376431a2249428e88d56bee2c0a1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720887"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871790"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>A Q&A engedélyezése élő kapcsolatokhoz a Power BI-ban
 ## <a name="what-is-the-on-premises-data-gateway--what-is-a-live-connection"></a>Mi az a helyszíni adatátjáró?  Mi az az élő kapcsolat?
@@ -66,5 +65,5 @@ A funkcióra bizonyos korlátozások érvényesek:
 - [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)  
 - [A Power BI Q&A áttekintése](consumer/end-user-q-and-a.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

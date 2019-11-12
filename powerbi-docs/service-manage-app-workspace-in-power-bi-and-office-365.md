@@ -2,7 +2,6 @@
 title: A munkaterület kezelése a Power BI-ban és az Office 365-ben
 description: A Power BI-ban a munkaterületek az Office 365-csoportokra épülő együttműködési felületek. A munkaterületeket a Power BI-ban és az Office 365-ben is kezelheti.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1317d11b11624ca6187eb91d5350a698bf164f63
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 7f1d86dd3da6665eb985db17ac3641768ff56947
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431802"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872075"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-office-365"></a>A munkaterület kezelése a Power BI-ban és az Office 365-ben
 
@@ -87,4 +86,4 @@ Amikor az alkalmazást a munkaterületről terjeszti, az itt hozzáadott kép le
 
 * [Alkalmazás közzététele a Power BI-ban](service-create-distribute-apps.md)
 
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

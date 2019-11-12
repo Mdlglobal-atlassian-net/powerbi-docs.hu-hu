@@ -3,18 +3,17 @@ title: A Power BI többoldalas jelentéseihez használható támogatott adatforr
 description: Ebből a cikkből megtudhatja, hogy milyen adatforrásokat támogatnak a Power BI szolgáltatás többoldalas jelentései, és megismerheti az Azure SQL Database-adatforrások csatlakoztatásának módját.
 author: onegoodsausage
 ms.author: andremi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/19/2019
-ms.openlocfilehash: f0cc7563fc59a6c1ceeceefcf4b65b0cc1a3aa80
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: fcc6e7880a3f27c6b35fe2192e76a0b2cc82abd0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968648"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874854"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>A Power BI többoldalas jelentéseihez használható támogatott adatforrások
 
@@ -31,7 +30,7 @@ A többoldalas jelentések natív módon támogatják a következő adatforráso
 | Azure Analysis Services | SSO, OAuth2 |   |
 | Power BI-adathalmaz | SSO | Prémium és nem prémium szintű Power BI-adathalmazok |
 | Prémium szintű Power BI-adathalmaz (XMLA) | SSO |   |
-| Adatbevitel | N.A. | Az adatok a jelentésbe ágyazva érhetők el. |
+| Adatok megadása | N.A. | Az adatok a jelentésbe ágyazva érhetők el. |
 
 Az Azure SQL Database kivételével az összes forrás azonnal használható, amint a felhasználó feltölti a jelentést a Power BI szolgáltatásba. Ha lehetséges, az adatforrások alapértelmezés szerint az egyszeri bejelentkezést (SSO) használják. Az Azure Analysis Services esetében az OAuth2 hitelesítési típust is választhatja.
 
@@ -74,4 +73,4 @@ Ahhoz, hogy az egyszeri bejelentkezés és az OAuth2 megfelelően működjön, a
 
 [Lapszámozott jelentés megtekintése a Power BI szolgáltatásban](paginated-reports-view-power-bi-service.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

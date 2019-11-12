@@ -3,18 +3,17 @@ title: Excel-munkafüzetek üzemeltetése az Office Online Server (OOS) használ
 description: A Power BI-jelentések webes portálon való megtekintése mellett a Power BI jelentéskészítő kiszolgáló már Excel-munkafüzeteket üzemeltethet az Office Online Serverrel (OOS).
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: 5585750fcd5e6237f3cb00591cf5841f91393b84
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 907e65635424b709ec2c0850e4d0d759f4ba6dd3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769583"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874082"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>A jelentéskészítő kiszolgáló konfigurálása Excel-munkafüzetek üzemeltetéséhez az Office Online Server (OOS) használatával
 
@@ -54,7 +53,7 @@ Végezze el ezeket a lépéseket azon a kiszolgálón, amelyen az Office Online 
 
 Ha olyan Excel Online-funkciókat tervez használni, amelyek külső adathozzáférést használnak (ilyen például a Power Pivot), vegye figyelembe, hogy az Office Online Servernek ugyanabban az Active Directory-erdőben kell lennie, mint a felhasználóinak és az összes olyan külső adatforrásnak, amelyet Windows-alapú hitelesítéssel szeretne elérni.
 
-1. Töltse le az Office Online Servert a [mennyiségi licencszolgáltatási központból (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). A letöltési gomb az Office-termékek alatt található a VLSC portálon. Fejlesztési célokra letöltheti az OOS-t az MSDN-előfizetői letöltéseknél.
+1. Töltse le az Office Online Servert a [mennyiségi licencszolgáltatási központból (VLSC)](https://go.microsoft.com/fwlink/p/?LinkId=256561). A letöltési gomb az Office-termékek alatt található a VLSC portálon. Fejlesztési célokra letöltheti az OOS-t az MSDN-előfizetői letöltéseknél.
 2. Futtassa a Setup.exe fájlt.
 3. Az **Olvassa el a Microsoft szoftverlicenc-szerződést** oldalon jelölje be az **Elfogadom a szerződés feltételeit** jelölőnégyzetet, és válassza a **Folytatás** lehetőséget.
 4. A **Fájl helyének kiválasztása** oldalon válassza ki az Office Online Server fájlok kívánt telepítési mappáját (például C:\Program Files\Microsoft Office Web Apps\*), és válassza a **Telepítés** lehetőséget. Ha a megadott mappa nem létezik, a telepítő létrehozza.
@@ -69,7 +68,7 @@ Az Office Online Server nyelvi csomagjaival a felhasználók több nyelven tekin
 
 A nyelvi csomagok telepítéséhez kövesse az alábbi lépéseket.
 
-1. Töltse le az Office Online Server nyelvi csomagjait a [Microsoft letöltőközpontból](http://go.microsoft.com/fwlink/p/?LinkId=798136).
+1. Töltse le az Office Online Server nyelvi csomagjait a [Microsoft letöltőközpontból](https://go.microsoft.com/fwlink/p/?LinkId=798136).
 2. Futtassa a **wacserverlanguagepack.exe** fájlt.
 3. Az Office Online Server nyelvi csomagjainak varázslójában, az **Olvassa el a Microsoft szoftverlicenc-szerződést** oldalon jelölje be az **Elfogadom a szerződés feltételeit** jelölőnégyzetet, és válassza a **Folytatás** lehetőséget.
 4. Amikor a telepítő befejezi az Office Online Server telepítését, válassza a **Bezárás** lehetőséget.
@@ -86,7 +85,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 
 **Paraméterek**
 
-* Az **–InternalURL** az Office Online Servert futtató kiszolgáló teljes tartományneve (FQDN), például `http://servername.contoso.com`.
+* Az **–InternalURL** az Office Online Servert futtató kiszolgáló teljes tartományneve (FQDN), például `https://servername.contoso.com`.
 * Az **–ExternalURL** az interneten elérhető FQDN.
 * A **–CertificateName** a tanúsítvány rövid neve.
 
@@ -95,12 +94,12 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 A New-OfficeWebAppsFarm paranccsal hozzon létre egy egyetlen kiszolgálóból álló új Office Online Server-farmot a lenti példában látható módon.
 
 ```powershell
-New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp
+New-OfficeWebAppsFarm -InternalURL "https://servername" -AllowHttp
 ```
 
 **Paraméterek**
 
-* Az **–InternalURL** az Office Online Servert futtató kiszolgáló neve, például `http://servername`.
+* Az **–InternalURL** az Office Online Servert futtató kiszolgáló neve, például `https://servername`.
 * Az **–AllowHttp** HTTP használatához konfigurálja a farmot.
 
 ### <a name="verify-that-the-office-online-server-farm-was-created-successfully"></a>Az Office Online Server-farm sikeres létrehozásának ellenőrzése
@@ -168,7 +167,7 @@ A tűzfallal kapcsolatos hibák elkerülése érdekében előfordulhat, hogy meg
 
 ## <a name="configure-power-bi-report-server-to-use-the-oos-server"></a>A Power BI jelentéskészítő kiszolgáló konfigurálása az OOS-kiszolgáló használatához
 
-A **Hely beállításai** terület **Általános** lapján írja be az OOS felderítési URL-címét. Az OOS felderítési URL-címe az OOS-kiszolgáló üzembe helyezésekor használt *InternalUrl*, amelyet a */hosting/discovery* követ. Ez HTTP esetén lehet például `http://servername/hosting/discovery`, HTTPS esetén pedig `https://server.contoso.com/hosting/discovery`.
+A **Hely beállításai** terület **Általános** lapján írja be az OOS felderítési URL-címét. Az OOS felderítési URL-címe az OOS-kiszolgáló üzembe helyezésekor használt *InternalUrl*, amelyet a */hosting/discovery* követ. Ez HTTP esetén lehet például `https://servername/hosting/discovery`, HTTPS esetén pedig `https://server.contoso.com/hosting/discovery`.
 
 A **Hely beállításai** megnyitásához válassza a jobb felső sarokban lévő **fogaskerék ikont**, és válassza a **Hely beállításai** lehetőséget.
 
@@ -187,6 +186,6 @@ A webes portálon a felderítési URL-cím beírása, az **Alkalmazás** gomb, m
 [Rendszergazdai áttekintés](admin-handbook-overview.md)  
 [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
 [A Jelentéskészítő letöltése](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Az SQL Server Data Tools (SSDT) letöltése](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Az SQL Server Data Tools (SSDT) letöltése](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

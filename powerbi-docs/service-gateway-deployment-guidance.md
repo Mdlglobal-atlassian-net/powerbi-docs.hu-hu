@@ -2,7 +2,6 @@
 title: Útmutató adatátjáró üzembe helyezéséhez a Power BI számára
 description: A Power BI-átjáró telepítéséhez ajánlott eljárások és a telepítés szempontjai.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5a0c29f04e7329373eec5f60af840e503ec22b3c
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: d4a02ccc759f78a4243f34fb59115fb9084ea90d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729995"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881678"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Útmutató adatátjáró üzembe helyezéséhez a Power BI számára
 
@@ -69,5 +68,5 @@ Ha a Power BI-átjárót az Azure Analysis Services szolgáltatással együtt ha
 * [Átjárók hibaelhárítása – Power BI](service-gateway-onprem-tshoot.md)  
 * [Helyszíni adatátjáró – GYIK – Power BI](service-gateway-power-bi-faq.md)  
 
-További kérdései vannak? Kérdezze meg [a Power BI közösségét](http://community.powerbi.com/).
+További kérdései vannak? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).
 
