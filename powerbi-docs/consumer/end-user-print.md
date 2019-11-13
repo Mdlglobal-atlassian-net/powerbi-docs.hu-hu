@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4e211677026d66b89631063cf07e38ce1e46ee10
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 928b69bc1f7e8210f66bd1b99e211a7fe28a5a00
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100205"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019577"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Nyomtatás a Power BI szolgáltatásból
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Útmutató teljes irányítópultok, irányítópult-csempék, jelentésoldalak, jelentés-vizualizációk Power BI-ból történő nyomtatásához. A jelentésekből alkalmanként csak egy oldal nyomatható ki, a teljes jelentést nem lehet egyszerre kinyomtatni.
 
    > [!NOTE]
@@ -37,7 +40,7 @@ ms.locfileid: "71100205"
 
 ## <a name="print-a-dashboard-tile"></a>Irányítópult-csempe nyomtatása
 1. A felső menüsáv teljes képernyő ikonjára ![teljes képernyő ikon](./media/end-user-print/power-bi-full-screen-icon.png) kattintva nyissa meg az irányítópultot [teljes képernyős módban](end-user-focus.md).
-3. [Nyissa meg a csempét fókusz módban](end-user-focus.md) rámutatással és a három pont (...) megjelenítésével, és válassza a **Megnyitás fókusz módban** vagy a fókusz ikon ![fókusz ikon](./media/end-user-print/power-bi-focus-icon.png) kiválasztásával.
+3. [Nyissa meg a csempét fókusz módban](end-user-focus.md). Ehhez vigye fölé az egérmutatót, hogy megjelenjen a **További lehetőségek** (...) elem, majd válassza a **Megnyitás fókusz módban** lehetőséget vagy a fókusz ikont ![Fókusz ikon](./media/end-user-print/power-bi-focus-icon.png).
    
     ![három pont menü](./media/end-user-print/power-bi-menu-options.png)
 4. A kurzort a csempe fölé húzva jelenítheti meg a válaszható lehetőségek menüjét.

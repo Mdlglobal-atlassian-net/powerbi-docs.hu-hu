@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 75d315463601110dee61d293a7a41abbf30aaa2d
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 6bd0b929bbf4fa7df0d13a3cc7e529bad708582e
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61274440"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017895"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Irányítópult vagy jelentés megosztása a Power BI mobilalkalmazásokból
 A következőkre vonatkozik:
@@ -86,7 +86,7 @@ A megosztást csak a tulajdonos törölheti.
 3. A megosztás megszüntetéséhez koppintson az egyik név melletti vörös körre, majd a **Törlés** ikonra.
 
 ## <a name="share-from-your-android-device"></a>Megosztása androidos készülékről
-1. Az irányítópultok vagy jelentések kezdőlapján koppintson a három pontra (...), majd koppintson a **Munkatárs meghívása** elemre.
+1. Az irányítópult vagy jelentés kezdőlapján koppintson a **További lehetőségek** (...) elemre, majd a **Munkatárs meghívása** lehetőségre.
    
    ![Munkatárs meghívása](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
 2. Koppinthat az irányítópult vagy jelentés Meghívás ikonjára is ![Meghívás ikon](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).

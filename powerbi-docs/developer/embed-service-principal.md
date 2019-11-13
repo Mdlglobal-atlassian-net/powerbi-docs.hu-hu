@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: c77d206dbd7fa0604bc60fb4054c09f73cbe442e
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: d8e1edc7d9d474911e7e7a58c2c7da728358845c
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073098"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429247"
 ---
 # <a name="service-principal-with-power-bi"></a>Szolgáltatásnév a Power BI-jal
 
@@ -58,8 +58,8 @@ Vannak különbségek aközött, hogy szolgáltatásnevet vagy standard fő fió
 |------------------------------------------------------|---------------------|-------------------|
 | Bejelentkezhet a Power BI szolgáltatásba  | Igen | Nem |
 | Az engedélyezése a Power BI felügyeleti portálján történik | Nem | Igen |
-| [Működik az alkalmazás-munkaterületekkel (v1)](../service-create-workspaces.md) | Igen | Nem |
-| [Működik az új alkalmazás-munkaterületekkel (v2)](../service-create-the-new-workspaces.md) | Igen | Igen |
+| [Működik a munkaterületekkel (v1)](../service-create-workspaces.md) | Igen | Nem |
+| [Működik az új munkaterületekkel (v2)](../service-create-the-new-workspaces.md) | Igen | Igen |
 | Munkaterület-adminisztrátornak kell lennie, ha a Power BI Embeddeddel használja | Igen | Igen |
 | Használhat Power BI REST API-kat | Igen | Igen |
 | Globális rendszergazdára van szükség létrehozásához | Igen | Nem |
@@ -114,7 +114,7 @@ A hagyományos fő fiók használatától eltérően a szolgáltatásnév (csak 
    > [!Important]
    > A szolgáltatásnevek hozzáférhetnek minden olyan bérlői beállításhoz, amely a teljes cégre engedélyezve vannak, vagy olyan biztonsági csoportokra terjednek ki, amelyek a csoport részeként rendelkeznek szolgáltatásnevekkel. Ha a szolgáltatásnév hozzáférését meghatározott bérlői beállításokra szeretné korlátozni, csak meghatározott biztonsági csoportokhoz engedélyezzen hozzáférést, vagy hozzon létre egy dedikált biztonsági csoportot a szolgáltatásnévhez, és zárja ki.
 
-    ![Felügyeleti portál](media/embed-service-principal/admin-portal.png)
+    ![Adminisztrációs portál](media/embed-service-principal/admin-portal.png)
 
 4. Hozza létre a [Power BI-környezetet](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
@@ -141,7 +141,7 @@ Nincs olyan felhasználói felületi funkció, amellyel áthelyezhetne Power BI-
 
 ### <a name="how-to-get-the-service-principal-object-id"></a>A szolgáltatásnév-objektum azonosítójának beszerzése
 
-Szolgáltatásnév új alkalmazás-munkaterülethez való hozzárendeléséhez használja a [Power BI REST API-kat](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). A műveletek végrehajtásakor egy szolgáltatásnévre történő hivatkozáshoz vagy módosítások végzéséhez a **szolgáltatásnév objektumazonosítóját** használja, például úgy, hogy a szolgáltatásnevet adminisztrátorként alkalmazza a munkaterületre.
+Szolgáltatásnév új munkaterülethez való hozzárendeléséhez használja a [Power BI REST API-kat](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). A műveletek végrehajtásakor egy szolgáltatásnévre történő hivatkozáshoz vagy módosítások végzéséhez a **szolgáltatásnév objektumazonosítóját** használja, például úgy, hogy a szolgáltatásnevet adminisztrátorként alkalmazza a munkaterületre.
 
 Az alábbi lépésekkel lekérheti a szolgáltatásnév objektumazonosítóját az Azure Portalról.
 
@@ -166,7 +166,7 @@ Alább egy mintaszkript látható a szolgáltatásnév objektumazonosítójának
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
-* A szolgáltatásnév csak az [új alkalmazás-munkaterületen](../service-create-the-new-workspaces.md) működik.
+* A szolgáltatásnév csak az [új munkaterületeken](../service-create-the-new-workspaces.md) működik.
 * A **Saját munkaterület** nem támogatott szolgáltatásnév használatakor.
 * Az éles üzemre való átálláshoz dedikált kapacitás szükséges.
 * A Power BI Portalra szolgáltatásnévvel nem lehet bejelentkezni.

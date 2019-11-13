@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: f9979a852028e929b626e76534fef073feca3fd8
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 45c158d15c92b67d945696b6d55ba0b1e4c6d971
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100730"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019919"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Megjegyzés hozzáadása irányítópulthoz vagy jelentéshez
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Hozzáadhat személyes megjegyzéseket, vagy az irányítópultra vagy a jelentésre vonatkozó beszélgetést kezdeményezhet a munkatársaival. A **megjegyzés** csak az egyik olyan funkció a sok közül, amely lehetővé teszi a *felhasználó* számára a másokkal való együttműködést. 
 
 ![Megjegyzések videó](media/end-user-comment/comment.gif)
@@ -64,7 +67,7 @@ Az irányítópultok és a jelentések esetén hasonló a megjegyzések hozzáad
 ### <a name="add-a-comment-to-a-specific-dashboard-or-report-visual"></a>Megjegyzés hozzáadása az irányítópult vagy jelentés egy adott vizualizációjához
 Megjegyzések nemcsak a teljes irányítópulthoz vagy jelentésoldalhoz fűzhetők hozzá, hanem különálló irányítópult-csempékhez és jelentésvizualizációkhoz is. Ennek folyamata hasonló, ebben a példában egy jelentéssel illusztráljuk.
 
-1. Vigye a kurzort a vizualizáció fölé, és kattintson a három pontra (...).    
+1. Vigye az egérmutatót a vizualizáció fölé, és válassza a **További lehetőségek** (...) elemet.    
 2. A legördülő listából válassza a **Hozzászólások megnyitása** lehetőséget.
 
     ![A Megjegyzés hozzáadása a lista első eleme](media/end-user-comment/power-bi-report-comment.png)  

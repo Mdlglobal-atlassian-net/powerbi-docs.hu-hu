@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 10/21/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e77bfdf771e84afbc87335aa77993640d10282b0
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 6b34fc07afb082115ef5fb537badbae989e21cec
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530543"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432289"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Használati metrikák figyelése Power BI-irányítópultokhoz és -jelentésekhez
 
@@ -86,7 +86,7 @@ A jelentés adatainak részletes vizsgálatára vagy a mögöttes adathalmazra �
 
 | Mérték | Irányítópult | Jelentés | Leírás |
 | --- | --- | --- | --- |
-| Hozzáférési mód szerint |igen |igen |Hogyan érik el a felhasználók a tartalmat. Három mód lehetséges: a felhasználók elérhetik a jelentést vagy irányítópultot azáltal, hogy egy [alkalmazás munkaterületének](consumer/end-user-experience.md) tagjai, hogy a tartalom [meg van osztva velük](service-share-dashboards.md), vagy egy tartalomcsomag/alkalmazás telepítésével.  Megjegyzendő, hogy az alkalmazáson keresztül történő hozzáférés "tartalomcsomagként” számítódik be. |
+| Hozzáférési mód szerint |igen |igen |Hogyan érik el a felhasználók a tartalmat. Három mód lehetséges: a felhasználók elérhetik a jelentést vagy irányítópultot azáltal, hogy egy [munkaterület](consumer/end-user-experience.md) tagjai, hogy a tartalom [meg van osztva velük](service-share-dashboards.md), vagy egy tartalomcsomag/alkalmazás telepítésével.  Megjegyzendő, hogy az alkalmazáson keresztül történő hozzáférés "tartalomcsomagként” számítódik be. |
 | Platform szerint |igen |igen |A Power BI szolgáltatáson (powerbi.com) keresztül, vagy mobileszközzel érték el az irányítópultot vagy jelentést? Mobileszköznek számít minden iOS-, Android- és Windows-alkalmazásunk is. |
 | Jelentésoldalak szerint |nem |igen |Ha a jelentés terjedelme egy oldalnál nagyobb, akkor az a megtekintett oldal(ak) szerint vizsgálható. Ha a listában „Üres” elem látható, az azt jelenti, hogy egy oldalt a közelmúltban adtak hozzá a jelentéshez (az új oldal tényleges neve 24 órán belül megjelenik a szűrési listában) és/vagy azt, hogy a jelentésből oldalakat töröltek. Az "Üres" elem ezeket az eseteket jelzi. |
 | Naponkénti megtekintés |igen |igen |A naponkénti megtekintések teljes száma – megtekintésnek számít, ha egy felhasználó betölt egy jelentésoldalt vagy egy irányítópultot. |
@@ -152,11 +152,18 @@ A Power BI elérhető különálló országos felhőkben. Ezek a felhők ugyanol
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
+### <a name="discrepancies-between-audit-logs-and-usage-metrics"></a>Az auditnaplók és a használati metrikák közötti eltérések
+
 Fontos tisztában lenni a használati metrikák és az auditnaplók összehasonlításakor jelentkező különbségekkel és azok magyarázatával. Az *auditnaplók* a Power BI szolgáltatástól származó adatokból vannak gyűjtve, a *használati metrikák* viszont az ügyfélen. A tevékenységek összesített száma az auditnaplókban és a használati metrikákban nem mindig egyezik. Ennek okai a következők:
 
 * A használati metrikák olykor kevesebb tevékenységet számlálnak az inkonzisztens hálózati kapcsolatok, reklámblokkolók vagy más körülmények miatt, amelyek megzavarják az események elküldését az ügyfélről.
 * A használati metrikák nem tartalmaznak bizonyos nézettípusokat. Erről már volt szó a cikk korábbi részében.
 * A használati metrikák olykor több tevékenységet számlálnak olyan helyzetekben, amikor az ügyfél úgy frissül, hogy nem kell kérelmet visszaküldenie a Power BI szolgáltatásnak.
+
+### <a name="other-considerations"></a>További szempontok
+
+A tartalmat legalább egyszer meg kell jelenítenie a saját munkaterületén, a munkaterületen belülről. Ha a tartalom nincs legalább egyszer megjelenítve magáról a munkaterületről, akkor az adatok nincsenek egybevetve a Használati metrikák jelentésbeli alkalmazásnézetekkel. A jelentésbeli adatok feldolgozásának elakadása úgy szüntethető meg, hogy legalább egyszer megjeleníti a tartalmat a saját munkaterületéről.
+
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 

@@ -7,15 +7,15 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 05/22/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 056457d5a90585fd30a0a85f95d28d1097c720b0
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: b11d2e5ce330c111313ef0d4bd8f2b1f1a89ce43
+ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544022"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72775993"
 ---
 # <a name="key-influencers-visualization"></a>Főbb befolyásolók vizualizáció
 
@@ -58,7 +58,7 @@ Ebben a videóban megtekintheti, hogyan hozhat létre főbb befolyásolók vizua
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-A termékmenedzsere szeretné, ha Ön kiderítené, milyen tényezők befolyásolják az ügyfeleket, amikor negatív értékelést adnak a felhőszolgáltatással kapcsolatban. A lépések követéséhez nyissa meg az [Ügyfélvisszajelzések PBIX-fájlját](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) a Power BI Desktopban. Az [Ügyfélvisszajelzések Excel-fájlját is letöltheti a Power BI szolgáltatáshoz vagy a Power BI Desktophoz](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
+A termékmenedzsere szeretné, ha Ön kiderítené, milyen tényezők befolyásolják az ügyfeleket, amikor negatív értékelést adnak a felhőszolgáltatással kapcsolatban. A lépések követéséhez nyissa meg az [Ügyfélvisszajelzések PBIX-fájlját](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) a Power BI Desktopban. Az [Ügyfélvisszajelzések Excel-fájlját is letöltheti a Power BI szolgáltatáshoz vagy a Power BI Desktophoz](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). Válassza bármelyik hivatkozást, majd válassza a **Letöltés** lehetőséget a megnyíló GitHub-oldalon.
 
 > [!NOTE]
 > Az Ügyfélvisszajelzések adathalmazának alapja: [Moro et al., 2014] S. Moro, P. Cortez és P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. (Adatvezérelt megközelítés a banki telemarketing sikerességének előrejelzéséhez.) *Decision Support Systems*, Elsevier, 62:22-31, 2014. június 
@@ -240,7 +240,7 @@ A numerikus célok felső szegmensei azokat a csoportokat jelenítik meg, amelye
 
 ## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Mérték vagy összesített oszlop metrika elemzése
 
-Mérték vagy összesített oszlop esetében az elemzés alapértelmezése a [fent](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric) ismertetett **folytonos elemzéstípus**. Ez nem módosítható. Mérték vagy összesített oszlop elemzése esetén a nem összesített numerikus oszlopéhoz képest a fő eltérés az elemzés futtatásának szintje.
+Mérték vagy összesített oszlop esetében az elemzés alapértelmezése a [fent](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric) ismertetett **folytonos elemzéstípus**. Ez nem módosítható. Mérték vagy összesített oszlop elemzése esetén a nem összesített numerikus oszlopéhoz képest a fő eltérés az elemzés futtatásának szintje.
 
 Nem összesített oszlopoknál az elemzés mindig a tábla szintjén fut. A fenti ingatlanos példában az **Ingatlanár** metrika elemzésével állapítottuk meg, hogy mi befolyásolja az ingatlanárak emelkedését és csökkenését. Az elemzés automatikusan a tábla szintjén fut. A tábla minden házhoz egyedi azonosítót tartalmaz, tehát az elemzés a házak szintjén fut.
 
@@ -254,7 +254,7 @@ A mértékek és az összesített oszlopok automatikusan a használt **Magyaráz
 
 Ez erősen összesített elemzés, így a regressziós modell nehezen talál olyan mintázatot az adatok között, amelyből tanulhat. A jobb eredmény érdekében az elemzést részletesebb szinten kellene lefuttatnunk. Ha az ingatlanok árát az egyes ingatlanok szintjén szeretnénk elemezni, akkor az elemzésbe fel kellene vennünk az **ID** (azonosító) mezőt. Azt azonban nem szeretnénk, hogy az ingatlanazonosító befolyásolónak minősüljön. Nem volna hasznos ismeret, hogy a nagyobb azonosítójú ingatlanok ára magasabb. Itt jut szerephez a **Kibontandó** mezőgyűjtő. A **Kibontandó** gyűjtőbe azokat a mezőket vehetjük fel, amelyeket az elemzés szintjének beállításához szeretnénk használni anélkül, hogy új befolyásolókat keresnénk.
 
-Vizsgáljuk meg a vizualizációt, amelyet akkor kapunk, ha az **ID** mezőt felvesszük a **Kibontandó** gyűjtőbe. Ha a mérték kiértékelésének szintje már meg van határozva, a befolyásolók pontosan ugyanúgy értelmezhetők, mint a [nem összesített numerikus oszlopok](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric) esetén.
+Vizsgáljuk meg a vizualizációt, amelyet akkor kapunk, ha az **ID** mezőt felvesszük a **Kibontandó** gyűjtőbe. Ha a mérték kiértékelésének szintje már meg van határozva, a befolyásolók pontosan ugyanúgy értelmezhetők, mint a [nem összesített numerikus oszlopok](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric) esetén.
 
 ![Mértéket tartalmazó tábla](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 
