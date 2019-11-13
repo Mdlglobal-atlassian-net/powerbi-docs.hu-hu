@@ -2,19 +2,18 @@
 title: Irányítópult vagy jelentés megosztása a Power BI mobilalkalmazásokból
 description: Hívjon meg másokat irányítópultjainak vagy jelentéseinek megtekintésére a Power BI-mobilalkalmazások hivatkozásainak megosztásával. Itt megismerkedhet az erre vonatkozó részletekkel.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 6bd0b929bbf4fa7df0d13a3cc7e529bad708582e
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 232d311e876a5fe01eb6c8091eb7a83669592cbf
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73017895"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879083"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Irányítópult vagy jelentés megosztása a Power BI mobilalkalmazásokból
 A következőkre vonatkozik:
@@ -147,5 +146,5 @@ A megosztást csak a tulajdonos törölheti.
 ## <a name="next-steps"></a>Következő lépések
 * [Csempe, jelentés vagy vizualizáció pillanatképének megosztása vagy jegyzetekkel való ellátása a mobilalkalmazásokban](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 * [Irányítópult vagy jelentés megosztása a Power BI-ban](../../service-share-dashboards.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

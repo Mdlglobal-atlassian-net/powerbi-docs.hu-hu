@@ -2,7 +2,6 @@
 title: Nyomtatás a Power BI szolgáltatásból
 description: Irányítópult, csempe vagy jelentésoldal nyomtatása a Power BI szolgáltatásból.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 928b69bc1f7e8210f66bd1b99e211a7fe28a5a00
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: ec633b5e41936363663736807979dc08f50820b1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019577"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862770"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Nyomtatás a Power BI szolgáltatásból
 
@@ -82,5 +81,5 @@ A jelentésekből egyszerre egy oldal nyomtatható ki.
 ## <a name="next-steps"></a>További lépések
 [Irányítópultok és jelentések megosztása munkatársakkal és más személyekkel](../service-share-dashboards.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

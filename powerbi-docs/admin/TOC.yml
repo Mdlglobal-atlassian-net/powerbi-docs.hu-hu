@@ -40,8 +40,6 @@
           href: ../service-admin-health.md
         - name: Fiók bezárása
           href: ../service-admin-closing-your-account.md
-        - name: ExpressRoute
-          href: ../service-admin-power-bi-expressroute.md
         - name: Az Azure AD B2B használata
           href: ../service-admin-azure-ad-b2b.md
         - name: Adatvédelem
