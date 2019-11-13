@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 075d4ea0c243f77ebf0d29020f25bbca6567c6c0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fa9c07be31f5110f44c2f200bbde249c95abe9ed
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870785"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009836"
 ---
 # <a name="power-bi-security-whitepaper"></a>A Power BI biztonsága – tanulmány
 
@@ -334,12 +334,6 @@ Az RLS-t használó és nem használó adatforrások összehasonlításához pé
 
 Amikor Ralph nyitja meg az irányítópultot vagy jelentést, ugyanez a folyamat játszódik le az ő szerepkörszintjének megfelelően.
 
-## <a name="power-bi-and-expressroute"></a>A Power BI és az ExpressRoute
-
-A Power BI és az ExpressRoute használatával egyéni privát kapcsolatot hozhat létre a vállalat és a Power BI között (vagy egy internetszolgáltató együttes elhelyezési létesítményét használva), így megkerülheti az internetet, és nagyobb védelmet biztosíthat Power BI-beli bizalmas adatai és kapcsolatai számára.
-
-Az ExpressRoute egy olyan Azure-szolgáltatás, amellyel privát kapcsolatokat hozhat létre az Azure-adatközpontok (ahol a Power BI is található) és helyszíni infrastruktúrája között, illetve az Azure-adatközpontok és együttes elhelyezési környezete között. További információt [A Power BI és az ExpressRoute](service-admin-power-bi-expressroute.md) című cikkben talál.
-
 ## <a name="power-bi-mobile"></a>Power BI Mobile
 
 A Power BI Mobile a három elsődleges mobil platformra tervezett alkalmazások gyűjteménye: Android, iOS és Windows Mobile. A Power BI Mobile alkalmazásainak biztonsági megfontolásai két kategóriába sorolhatók:
@@ -450,7 +444,7 @@ Az alábbiak Power BI-jal kapcsolatos gyakori biztonsági kérdések, valamint a
 
 **Léteznek más Power BI-vizualizációk, amelyek információt küldenek az ügyfélhálózaton kívülre?**
 
-* Igen. A Bing Térképek és az ESRI-vizualizációk a Power BI szolgáltatáson kívülre küldenek adatokat az ezeket a szolgáltatásokat felhasználó vizualizációk esetén. További információk mellett a Power BI-on kívüli bérlői adatforgalom részletes leírását is megtalálja [**A Power BI és az ExpressRoute**](service-admin-power-bi-expressroute.md) ismertetésében.
+* Igen. A Bing Térképek és az ESRI-vizualizációk a Power BI szolgáltatáson kívülre küldenek adatokat az ezeket a szolgáltatásokat felhasználó vizualizációk esetén.
 
 **A sablonok alkalmazásaiban a Microsoft a sablon alkalmazás biztonsági vagy adatvédelmi vizsgálatát végzi el a katalógusban szereplő elemek közzététele előtt?**
 * Nem. Az alkalmazás kiadója felelős a tartalomért, miközben az ügyfél felelőssége, hogy megbízzon a sablon-alkalmazás közzétevőján. 
@@ -487,7 +481,6 @@ A Power BI-ról az alábbi forrásanyagokban talál további információt.
 - [Power BI REST API – Áttekintés](https://msdn.microsoft.com/library/dn877544.aspx)
 - [A Power BI API referenciája](https://msdn.microsoft.com/library/mt147898.aspx)
 - [On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)
-- [A Power BI és az ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Power BI országos felhők](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)](service-gateway-sso-overview.md)
