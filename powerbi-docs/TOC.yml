@@ -119,6 +119,8 @@
           items:
             - name: Adatforrások a Power BI Desktopban
               href: desktop-data-sources.md
+            - name: Csatlakozás a LinkedIn Sales Navigatorhöz (előzetes verzió)
+              href: desktop-connect-linkedin-sales-navigator.md
             - name: Csatlakozás egy weblaphoz példaként (előzetes verzió)
               href: desktop-connect-to-web-by-example.md
             - name: Kapcsolódás adatkészletekhez a Power BI szolgáltatásban
@@ -201,6 +203,8 @@
           items:
             - name: Bináris fájlok egyesítése
               href: desktop-combine-binaries.md
+            - name: AI-elemzések használata a Power BI Desktopban (előzetes verzió)
+              href: desktop-ai-insights.md
         - name: Adatok modellezése
           items:
             - name: Adatkategorizáció a Power BI Desktopban
@@ -339,6 +343,8 @@
               href: visuals/power-bi-visualization-card.md
             - name: Kombinált diagram a Power BI-ban
               href: visuals/power-bi-visualization-combo-chart.md
+            - name: Felbontásfa a Power BI-ban (előzetes verzió)
+              href: visuals/power-bi-visualization-decomposition-tree.md
             - name: Perecdiagramok a Power BI szolgáltatásban
               href: visuals/power-bi-visualization-doughnut-charts.md
             - name: Kitöltött (koropletikus) tematikus térképek a Power BI-ban
@@ -375,8 +381,6 @@
               href: visuals/power-bi-visualization-treemaps.md
             - name: Vízesésdiagramok a Power BI-ban
               href: visuals/power-bi-visualization-waterfall-charts.md
-            - name: Dinamikus referenciavonalak létrehozása
-              href: service-analytics-pane.md
         - name: Természetes nyelv
           items:
             - name: Q&A – bevezetés
@@ -405,6 +409,8 @@
       items:
         - name: Adattípusok a Power BI Desktopban
           href: desktop-data-types.md
+        - name: A frissített menüszalag használata a Power BI Desktopban (előzetes verzió)
+          href: desktop-ribbon.md
         - name: Képletszerkesztő billentyűparancsok a Power BI Desktophoz
           href: desktop-formula-editor.md
         - name: A Power BI Desktop adatvédelmi szintjei
