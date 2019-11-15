@@ -12,7 +12,7 @@
         - name: Áttekintés
           items:
             - name: Vizualizációk a Power BI-ban
-              href: ../power-bi-custom-visuals.md
+              href: power-bi-custom-visuals.md
         - name: Oktatóanyagok
           items:
             - name: Power BI-vizualizáció fejlesztése
@@ -24,11 +24,11 @@
         - name: Fogalmak
           items:
             - name: Vizualizációk cégek számára a Power BI-ban
-              href: ../power-bi-custom-visuals-organization.md
+              href: power-bi-custom-visuals-organization.md
             - name: Útmutató Power BI-vizualizációkhoz
               href: guidelines-powerbi-visuals.md
             - name: Vizualizációk – gyakori kérdések
-              href: ../power-bi-custom-visuals-faq.md
+              href: power-bi-custom-visuals-faq.md
             - name: Képességek használata
               href: visuals/capabilities.md
             - name: Adatnézet-leképezések
@@ -40,12 +40,12 @@
         - name: Útmutató
           items:
             - name: Vizualizáció tanúsítása
-              href: ../power-bi-custom-visuals-certified.md
+              href: power-bi-custom-visuals-certified.md
             - name: Egyéni vizualizációk közzététele az AppSource-ban
               href: office-store.md
             - name: Egyéni R-vizualizációk a Power BI-ban
-              href: ../desktop-r-powered-custom-visuals.md
-            - name: Vizualizációk interakciójának engedélyezése
+              href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/toc.json&bc=/powerbi-docs/developer/breadcrumb/toc.json
+            - name: Vizualizációk interakciói
               href: visuals/visuals-interactions.md
             - name: Kijelölések hozzáadása
               href: visuals/selection-api.md
@@ -68,9 +68,7 @@
             - name: Szeletelők szinkronizálásának engedélyezése
               href: visuals/enable-sync-slicers.md
             - name: Power BI-vizualizációk hibáinak elhárítása
-              href: ../power-bi-custom-visuals-troubleshoot.md
-            - name: Migrálás az új powerbi-vizualizációs eszközökbe
-              href: visuals/migrate-to-new-tools.md
+              href: power-bi-custom-visuals-troubleshoot.md
         - name: Hivatkozás
           items:
             - name: Kezdőlap

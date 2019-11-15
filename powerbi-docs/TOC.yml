@@ -80,7 +80,7 @@
         - name: Alapértelmezett tag többdimenziós modellekben a Power BI-ban
           href: desktop-default-member-multidimensional-models.md
         - name: Vizualizációk – gyakori kérdések
-          href: power-bi-custom-visuals-faq.md
+          href: developer/power-bi-custom-visuals-faq.md
     - name: Útmutató
       items:
         - name: A Power BI Desktop beszerzése
@@ -673,6 +673,8 @@
           items:
             - name: Új munkaterületek létrehozása
               href: service-create-the-new-workspaces.md
+            - name: Klasszikus munkaterületek frissítése
+              href: designer/service-upgrade-workspaces.md
             - name: Munkaterületek létrehozása
               href: service-create-workspaces.md
             - name: Alkalmazások közzététele munkaterületekről
