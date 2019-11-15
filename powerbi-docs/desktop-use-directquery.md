@@ -2,7 +2,6 @@
 title: A DirectQuery használata a Power BI Desktopban
 description: A DirectQuery vagy más néven élő kapcsolatok használata a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6664924a10b89e057765d70499208aede2d7fdad
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 08b739c5be01efed5abf8258540b5ab66b3b390b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654787"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876064"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>A DirectQuery használata a Power BI Desktopban
 A **Power BI Desktop** használatával az adatforrásokhoz való kapcsolódáskor mindig importálhat egy másolatot az adatokról a **Power BI Desktopba**. Egyes adatforrások esetében egy alternatív módszer is használható: ha közvetlenül kapcsolódik az adatforráshoz a **DirectQuery** használatával.
@@ -70,7 +69,7 @@ A **DirectQuery** használata érdemes számításba vennie a következő három
       The resultset of a query to external data source has exceeded
   
   Ez a helyzet olyan egyszerű diagramok esetén fordulhat elő, amelyek tartalmaznak egy nagyon nagy számosságú oszlopot, és amelyekben az összesítési beállítás az *Összegzés mellőzése*. A vizualizáció legfeljebb 1 milliós számosságú oszlopokat tartalmazhat, vagy megfelelő szűrőket kell alkalmazni rá.
-* **Biztonság** – A közzétett jelentéseket használó minden felhasználó a Power BI szolgáltatásban való közzététel után megadott hitelesítő adatokkal kapcsolódik a háttéradatforrásra. Ez ugyanaz a helyzet, mint az importált adatok esetében: minden felhasználó ugyanazokat az adatokat látja, függetlenül a háttérforráson definiált biztonsági szabályoktól. A felhasználószintű biztonságra vágyó ügyfeleknek DirectQuery-forrásokat és sorszintű biztonságot érdemes használniuk. [További információk a sorszintű biztonságról](service-admin-rls.md).
+* **Biztonság** – Alapértelmezés szerint a közzétett jelentéseket használó minden felhasználó a Power BI szolgáltatásban való közzététel után megadott hitelesítő adatokkal csatlakozik a háttéradatforráshoz. Ez ugyanaz a helyzet, mint az importált adatok esetében: minden felhasználó ugyanazokat az adatokat látja, függetlenül a háttérforráson definiált biztonsági szabályoktól. A DirectQuery-forrásokkal implementált felhasználószintű biztonságra vágyó ügyfeleknek sorszintű biztonságot vagy a forrásra vonatkozó, Kerberos által korlátozott hitelesítést érdemes használniuk. A Kerberos nem érhető el minden forráshoz. [További információk a sorszintű biztonságról](service-admin-rls.md). [További információk a Kerberos a DirectQueryben történő használatáról](https://docs.microsoft.com/power-bi/service-gateway-sso-kerberos). 
 * **Támogatott szolgáltatások** – A **DirectQuery** módban a **Power BI Desktop** egyes funkciói korlátozottan vagy nem működnek. Emellett a Power BI szolgáltatás néhány funkciója (például a *Gyors elemzések*) a **DirectQuery**-alapú adatkészletekkel nem használható. Ezért ezeknek a szolgáltatásoknak a **DirectQuery** használata során érvényes korlátozásait érdemes figyelembe vennie a **DirectQuery** használatának mérlegelésekor.   
 
 ## <a name="publish-to-the-power-bi-service"></a>Közzététel a Power BI szolgáltatásban
@@ -88,7 +87,7 @@ A Power BI megjeleníti a **Beállítások** ablakot. Itt lépjen az **Adatkész
 
 A hitelesítő adatok megadásáig az ilyen adatforrásokra mutató **DirectQuery**-kapcsolaton keresztül közzétett jelentés megnyitása vagy adatkészlet feltárása hibát jelez.
 
-Az **Azure SQL Database**, az **Azure SQL Data Warehouse** és a **Redshift** kivételével a DirectQueryt használó minden adatforrás esetében telepítenie kell egy **helyszíni adatátjárót**, valamint regisztrálnia kell az adatforrást az adatkapcsolat kiépítéséhez. [A helyszíni adatátjárókkal itt talál további információt](http://go.microsoft.com/fwlink/p/?LinkID=627094).
+Az **Azure SQL Database**, az **Azure SQL Data Warehouse** és a **Redshift** kivételével a DirectQueryt használó minden adatforrás esetében telepítenie kell egy **helyszíni adatátjárót**, valamint regisztrálnia kell az adatforrást az adatkapcsolat kiépítéséhez. [A helyszíni adatátjárókkal itt talál további információt](https://go.microsoft.com/fwlink/p/?LinkID=627094).
 
 ## <a name="next-steps"></a>Következő lépések
 A **DirectQueryvel** kapcsolatos további információkért lásd az alábbi forrásanyagokat:

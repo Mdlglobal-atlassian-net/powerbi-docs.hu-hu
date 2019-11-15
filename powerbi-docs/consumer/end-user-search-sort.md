@@ -2,7 +2,6 @@
 title: Tartalom keresése és rendezése a Power BI szolgáltatásban
 description: a tartalmak Power BI a Saját munkaterület részén való keresésével és rendezésével kapcsolatos dokumentáció
 author: mihart
-manager: kvivek
 ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: d5bc5638d9f98c1a35f57edd1d5d838c91c8ebf2
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: 5a7848cb5931d983ab434a19c934c9e9cb464724
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891787"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861738"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigáció: tartalom keresése és rendezése a Power BI szolgáltatásban
 
@@ -47,10 +46,10 @@ A tartalmakat a nevük vagy a tulajdonosuk alapján is rendezheti. Vegye figyele
 Nem minden oszlop rendezhető. Vigye az egeret az oszlopok fejlécére, hogy lássa, melyeknél érhető el a rendezés.
 
 ___________________________________________________________________
-## <a name="navigation-using-the-navigation-pane"></a>Navigálás a navigációs sávval
-A navigációs ablaktábla osztályozza a tartalmakat, hogy könnyebben és gyorsan megtalálja a szükséges elemeket.  
+## <a name="navigation-using-the-nav-pane"></a>Navigálás a navigációs panellel
+A navigációs panel úgy osztályozza a tartalmakat, hogy könnyen és gyorsan megtalálja a szükséges elemeket.  
 
-![bal oldali navigációs panel](./media/end-user-search-sort/power-bi-navbar.png)
+![navigációs panel](./media/end-user-search-sort/power-bi-nav pane.png)
 
 
 - Az Önnel megosztott tartalmak a **Velem megosztva** tárolóban érhetők el.
@@ -58,7 +57,7 @@ A navigációs ablaktábla osztályozza a tartalmakat, hogy könnyebben és gyor
 - Az alkalmazásokat az **Alkalmazások** elemre kattintva találhatja meg.
 - A **Kezdőlap** a legfontosabb tartalmak, a javasolt tartalmak és a tanulási források egyetlen oldala.
 
-Emellett [kedvencként](end-user-favorite.md) és [kiemeltként](end-user-featured.md) is megjelölhet tartalmakat. Válassza ki a várhatóan leggyakrabban megtekintett irányítópultot vagy jelentést, és állítsa be *kiemelt* tartalomként. A Power BI szolgáltatás megnyitásakor először mindig a kiemelt irányítópult jelenik meg. Vannak gyakran használt irányítópultjai és alkalmazásai? Ha kedvencként állítja be őket, mindig elérhetőek lesznek a bal oldali navigációs sávban.
+Emellett [kedvencként](end-user-favorite.md) és [kiemeltként](end-user-featured.md) is megjelölhet tartalmakat. Válassza ki a várhatóan leggyakrabban megtekintett irányítópultot vagy jelentést, és állítsa be *kiemelt* tartalomként. A Power BI szolgáltatás megnyitásakor először mindig a kiemelt irányítópult jelenik meg. Vannak gyakran használt irányítópultjai és alkalmazásai? Ha kedvencként állítja be őket, mindig elérhetőek lesznek a navigációs panelen.
 
 ![Kedvencek úszó menü](./media/end-user-search-sort/power-bi-favorite.png).
 
@@ -70,4 +69,4 @@ Emellett [kedvencként](end-user-favorite.md) és [kiemeltként](end-user-featur
 ## <a name="next-steps"></a>Következő lépések
 [Vizualizációk rendezése jelentésekben](end-user-change-sort.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

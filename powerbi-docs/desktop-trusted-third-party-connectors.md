@@ -1,8 +1,7 @@
 ---
-title: Megbízható külső összekötők a Power bi-ban
-description: A leg egy aláírt külső összekötő a Power bi-ban
+title: Megbízható harmadik féltől származó összekötők a Power BI-ban
+description: Harmadik féltől származó aláírt összekötő beállítása megbízhatóként a Power BI-ban
 author: cpopell
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,41 +9,41 @@ ms.topic: conceptual
 ms.date: 04/3/2019
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 30b7457c6149320c43f24b967a842382821b01b1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ac3f795d6a80d5f143daf68436f41f5771b3c2bb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65607792"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876162"
 ---
-# <a name="trusting-third-party-connectors"></a>Meghatalmazó külső összekötők
+# <a name="trusting-third-party-connectors"></a>Harmadik féltől származó összekötők beállítása megbízhatóként
 
-## <a name="why-do-you-need-trusted-third-party-connectors"></a>Miért kell megbízható külső összekötők?
+## <a name="why-do-you-need-trusted-third-party-connectors"></a>Miért van szükség megbízható harmadik féltől származó összekötőkre?
 
-A Power bi-ban általában javasoljuk, hogy az "adatok bővítmény biztonsági" szintű tartja a magasabb szintű, amely megakadályozza, hogy a kód, nem Microsoft által hitelesített betöltését. Előfordulhat azonban, amelyben az egyedi összekötők – beírt azokat, vagy a nyertes vagy kívül a Microsoft tanúsítványláncba szállító által biztosított alkalmazáscsomagokat betölteni kívánt sok esetben.
+A Power BI esetében általában azt javasoljuk, hogy magasabb szinten tartsák az adatbővítmények biztonsági szintjét, ami megakadályozza a Microsoft által nem hitelesített kódok betöltését. Számos esetben azonban előfordulhat, hogy konkrét összekötőket szeretne betölteni, amelyeket Ön írt, vagy a Microsoft tanúsítványláncán kívüli tanácsadótól vagy gyártótól szerzett be.
 
-Egy adott összekötőt a fejlesztői is írja alá a tanúsítványt, és az információkat kell biztonságosan be anélkül, hogy csökkenti a biztonsági beállítások.
+A fejlesztők aláírhatják az összekötőket egy tanúsítvánnyal, és megadhatják a szükséges információkat, amelyekkel biztonsági beállításainak csökkentése nélkül, biztonságosan betöltheti az összekötőket.
 
-Ha szeretne többet megtudni a biztonsági beállításokat, áttekintheti őket [Itt](https://docs.microsoft.com/power-bi/desktop-connector-extensibility).
+Ha többet szeretne megtudni a biztonsági beállításokról, [itt](https://docs.microsoft.com/power-bi/desktop-connector-extensibility) olvashat róluk.
 
-## <a name="using-the-registry-to-trust-third-party-connectors"></a>A beállításjegyzék használatával pedig megbízzon a külső összekötők
+## <a name="using-the-registry-to-trust-third-party-connectors"></a>A beállításjegyzék használata a harmadik féltől származó összekötők megbízhatóként való beállításához
 
-A Power bi-ban külső összekötők megbízó megbízik, a megadott beállításjegyzékbeli érték a tanúsítvány ujjlenyomatának listázásával történik. Ha ezzel az ujjlenyomattal kívánja betölteni az összekötő a tanúsítvány ujjlenyomata megegyezik, lesz nyissa meg a Power bi-ban "Ajánlott" biztonsági szintjét. 
+Ha a Power BI-ban megbízhatóként kíván beállítani egy külső féltől származó összekötőt, akkor foglalja bele az adott tanúsítvány ujjlenyomatát egy megadott beállításjegyzékbeli értékbe. Ha ez az ujjlenyomat megegyezik a betölteni kívánt összekötőn lévő tanúsítvány ujjlenyomatával, akkor betölthető a Power BI Ajánlott biztonsági szintjén. 
 
-Beállításjegyzékbeli elérési út HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Power BI Desktopban. Győződjön meg arról, hogy az elérési út létezik, vagy hozza azt létre. Ezen a helyen, elsősorban vezérli informatikai szabályzatnak, valamint szerkesztését igénylő helyi gép adminisztrációs hozzáférés miatt választottuk. 
+A beállításjegyzékbeli elérési út: HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Power BI Desktop. Győződjön meg arról, hogy az elérési út létezik, vagy hozza létre. Ezt a helyet azért választottuk, mert elsődlegesen az informatikai szabályzat vezérli, valamint a szerkesztéséhez rendszergazdai jogú hozzáférésre szükséges a helyi gépen. 
 
-![Állítsa be a Power BI Desktop beállításjegyzék megbízható külső kulcsok nélkül](media/desktop-trusted-third-party-connectors/desktoptrustedthird1.png)
+![Power BI Desktop – beállításjegyzék beállított harmadik féltől származó megbízható kulcsok nélkül](media/desktop-trusted-third-party-connectors/desktoptrustedthird1.png)
 
-Adjon meg egy új értéket a fent megadott elérési úton. A típusúnak kell lennie a "Karakterláncsoros érték" (REG_MULTI_SZ), és azt kell meghívni "TrustedCertificateThumbprints" 
+Adjon hozzá egy új értéket a fent megadott elérési úton. Válassza a többsztringes érték (REG_MULTI_SZ) típust, és adja neki a TrustedCertificateThumbprints nevet. 
 
-![A Power BI Desktop Registry és a egy megbízható külső összekötők, de nincsenek kulcsok bejegyzés](media/desktop-trusted-third-party-connectors/desktoptrustedthird2.png)
+![Power BI Desktop – beállításjegyzék beállított harmadik féltől származó megbízható csatlakozóval, de kulcsok nélkül](media/desktop-trusted-third-party-connectors/desktoptrustedthird2.png)
 
-Adja hozzá azt szeretné, hogy bízzon meg a tanúsítványok ujjlenyomatai. Elválasztóként vagy a beállításjegyzék-szerkesztőben jobb kattintással -> "\0" használatával több tanúsítvány módosítása, és minden egyes ujjlenyomat helyezi egy új sort is hozzáadhat. Például ujjlenyomat átveszi a rendszer egy önaláírt tanúsítványt. 
+Adja meg azoknak a tanúsítványoknak az ujjlenyomatait, amelyeket megbízhatóként kíván beállítani. Több tanúsítvány hozzáadásához használja határolóként a 0 karaktert, vagy kattintson a jobb gombbal a beállításszerkesztőben > válassza a Módosítás elemet, és helyezze az összes ujjlenyomatot új sorba. A példán szereplő ujjlenyomat önaláírt tanúsítványból származik. 
 
- ![A Power BI Desktop Registry és a egy megbízható külső kulcs beállítása](media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png)
+ ![Power BI Desktop – beállításjegyzék beállított harmadik féltől származó megbízható kulccsal](media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png)
 
-Ha idáig követte a megfelelő utasításokat, és a fejlesztői a megfelelő ujjlenyomat kapott, most tudnia kell a biztonságos megbízhatósági összekötőket a társított tanúsítvánnyal aláírva.
+Ha megfelelően követte az utasításokat, és megkapta a megfelelő ujjlenyomatot a fejlesztőjétől, most már biztonságosan beállíthatja megbízhatóként a társított tanúsítvánnyal aláírt összekötőket.
 
-## <a name="how-to-sign-connectors"></a>Csatlakozás a összekötők
+## <a name="how-to-sign-connectors"></a>Az összekötők aláírása
 
-Ha egy összekötőt, vagy egy fejlesztői kell bejelentkeznie, olvashat, a Power Query-dokumentumokhoz [Itt](https://docs.microsoft.com/power-query/handlingconnectorsigning).
+Ha olyan összekötője van, amelyet Önnek vagy egy fejlesztőnek alá kell írnia, erről [itt](https://docs.microsoft.com/power-query/handlingconnectorsigning) olvashat a Power Query dokumentációjában.

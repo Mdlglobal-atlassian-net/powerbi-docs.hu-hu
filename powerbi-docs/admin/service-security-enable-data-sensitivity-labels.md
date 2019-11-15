@@ -2,7 +2,6 @@
 title: Bizalmassági adatcímkézés engedélyezése a Power BI-ban
 description: Elsajátíthatja a bizalmasság adatcímkék engedélyezésének módját a Power BI-ban
 author: paulinbar
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: a53e06f65f5ef8328a0c27b48f2020228a0570ed
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 024e04bd309080b5b31e43bde7c783255bfc3dba
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73433655"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851069"
 ---
 # <a name="enable-data-sensitivity-labels-in-power-bi-preview"></a>Bizalmassági adatcímkézés engedélyezése a Power BI-ban (előzetes verzió)
 
@@ -63,7 +62,7 @@ A Power BI a Microsoft Information Protection bizalmassági címkéit használja
 
 ## <a name="licensing"></a>Licencelés
 
-* A Microsoft Azure Information Protection címéinek Power BI-ban való megtekintéséhez a felhasználóknak Azure Information Protection Prémium P1 vagy Prémium P2 licenccel kell rendelkezniük. A Microsoft Azure Information Protection önmagában és a Microsoft licencelési csomagok egyikén belül is megvásárolható. A részletekért tekintse meg az [Azure Information Protection díjszabását](https://azure.microsoft.com/pricing/details/information-protection/).
+* A Microsoft Azure Information Protection címkéinek Power BI-ban való megtekintéséhez vagy alkalmazásához a felhasználóknak Azure Information Protection Prémium P1 vagy Prémium P2 licenccel kell rendelkezniük. A Microsoft Azure Information Protection önmagában és a Microsoft licencelési csomagjainak egyikében is megvásárolható. A részletekért tekintse meg az [Azure Information Protection díjszabását](https://azure.microsoft.com/pricing/details/information-protection/).
 * Azoknak a felhasználónak, akiknek címkéket kell alkalmazniuk a Power BI adategységeire, Power BI Pro-licenccel kell rendelkezniük.
 
 

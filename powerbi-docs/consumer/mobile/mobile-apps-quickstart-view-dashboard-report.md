@@ -2,19 +2,18 @@
 title: 'Rövid útmutató: Irányítópultok és jelentések felfedezése mobilalkalmazásokban'
 description: Ebben a rövid útmutatóban a Power BI mobilalkalmazásokban használt irányítópultok és jelentések mintáját ismerheti meg.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 04/18/2019
 ms.author: mshenhav
-ms.openlocfilehash: 173142d9aaf2b445504028e1f7987abe21806c37
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9af245b51fa2520dca1ccca535ec44f14360a54c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "60976115"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879276"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Rövid útmutató: Irányítópultok és jelentések felfedezése a Power BI-mobilalkalmazásokban
 Ebben a rövid útmutatóban az androidos telefonokhoz készült Power BI mobilalkalmazásban használt irányítópultok és jelentések mintáját ismerheti meg. Az itt leírtakat a többi mobilalkalmazásban is követheti. 
@@ -35,7 +34,7 @@ Az irányítópultok betekintést nyújtanak és hozzáférést biztosítanak a 
 Ha még nem regisztrált a Power BI-ra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://app.powerbi.com/signupredirect?pbi_source=web).
 
 ### <a name="install-the-power-bi-for-android-app"></a>Az Androidhoz készült Power BI telepítése
-[Töltse le az Androidhoz készült Power BI alkalmazást](http://go.microsoft.com/fwlink/?LinkID=544867) a Google Play Áruházból.
+[Töltse le az Androidhoz készült Power BI alkalmazást](https://go.microsoft.com/fwlink/?LinkID=544867) a Google Play Áruházból.
 
 A Power BI az Android 5.0 vagy annál későbbi operációs rendszert futtató androidos eszközökön működik. Az eszközt a **Beállítások** > **Az eszközről** > **Android verzió** részben ellenőrizheti.
 
@@ -44,11 +43,11 @@ A rövid útmutató első lépéseként töltse le a Kiskereskedelmi elemzési m
 
 1. Nyissa meg a Power BI szolgáltatást a böngészőben (app.powerbi.com), és jelentkezzen be.
 
-1. A bal oldali navigációs ablak megnyitásához kattintson a globális navigációs ikonra.
+1. A navigációs ablaktábla megnyitásához válassza a globális navigációs ikont.
 
     ![globális navigációs ikon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-global-nav-icon.png)
 
-2. A bal oldali navigációs ablaktáblán válassza a **Munkaterületek** > **Saját munkaterület** lehetőséget.
+2. A navigációs ablaktáblán válassza a **Munkaterületek** > **Saját munkaterület** lehetőséget.
 
     ![Saját munkaterület](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-my-workspace.png)
 
@@ -133,9 +132,9 @@ Most már megtekintheti a mintát az androidos eszközön.
 
 Miután elkészült ezzel a gyors útmutatóval, igény szerint eltávolíthatja a Kiskereskedelmi elemzési mintát, a jelentést és az adatkészletet.
 
-1. Nyissa meg a Power BI-szolgáltatást (app.powerbi.com), és jelentkezzen be.
+1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), és jelentkezzen be.
 
-2. A bal oldali navigációs ablakban válassza a **Munkaterületek** > **Saját munkaterület** lehetőséget.
+2. A navigációs ablaktáblán válassza a **Munkaterületek** > **Saját munkaterület** lehetőséget.
 
     Látja a sárga csillagot, amely a kedvencnek jelölést mutatja?
 

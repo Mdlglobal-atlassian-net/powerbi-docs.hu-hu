@@ -2,7 +2,6 @@
 title: Power BI-irányítópult létrehozása jelentésből
 description: Power BI-irányítópult létrehozása jelentésből
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -10,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: 6d8a6a28d72ce6d0fa6123b15f9e692ed1cc4d44
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: d67e7acf4309595e8bccac86119ea38f1a97797f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543279"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853403"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Power BI-irányítópult létrehozása jelentésből
 Áttekintette [A Power BI-irányítópultok – bevezetés](service-dashboards.md) részben leírtakat, és most saját irányítópultot kíván létrehozni. Az irányítópultok létrehozásának számos különböző módja van. Többek között jelentésből, előzmények nélkül, adatkészletből, illetve egy meglévő irányítópult megkettőzésével is létrehozhatók.  
@@ -44,11 +43,11 @@ Tekintse meg, ahogy Amanda bemutatja egy új irányítópult létrehozását jel
 ## <a name="import-a-dataset-with-a-report"></a>Adatkészlet importálása jelentés használatával
 Ebben a lépésenkénti útmutatóban Power BI egyik minta-adathalmazát fogjuk importálni, majd egy új irányítópult létrehozására felhasználni. Az itt használt minta egy olyan Excel-munkafüzet, amely két PowerView-munkalapot tartalmaz. Amikor a Power BI importálja a munkafüzetet, egy adatkészletet és egy jelentést is hozzáad a munkaterülethez. A rendszer a jelentést automatikusan hozza létre a PowerView-munkalapokból.
 
-1. Töltse le a [Beszerzéselemzési minta](http://go.microsoft.com/fwlink/?LinkId=529784) Excel-fájlt. Javasoljuk, hogy a OneDrive Vállalati verziójában mentse azt.
+1. Töltse le a [Beszerzéselemzési minta](https://go.microsoft.com/fwlink/?LinkId=529784) Excel-fájlt. Javasoljuk, hogy a OneDrive Vállalati verziójában mentse azt.
 2. Nyissa meg a Power BI szolgáltatást a böngészőben (app.powerbi.com).
-3. A bal oldalon lévő navigációs panelen válassza a **Saját munkaterület**, majd az **Adatok lekérése** lehetőséget.
+3. A navigációs panelen válassza a **Saját munkaterület**, majd az **Adatok lekérése** lehetőséget.
 
-    ![Bal oldali navigációs ablaktábla](media/service-dashboard-create/power-bi-get-data-new-look.png)
+    ![navigációs panel](media/service-dashboard-create/power-bi-get-data-new-look.png)
 5. A **Fájlok** területen válassza a **Lekérés** lehetőséget.
 
    ![Fájlok lekérése](media/service-dashboard-create/power-bi-select-files.png)
@@ -63,7 +62,7 @@ Ebben a lépésenkénti útmutatóban Power BI egyik minta-adathalmazát fogjuk 
    ![Sikert jelző üzenet](media/service-dashboard-create/power-bi-view-datasetnew.png)
 
 > [!TIP]
-> Tudta? A bal oldali navigációs sávot keskenyebbre méretezheti a három vonalból álló felső ikon kiválasztásával ![a navigációs panelt elrejtő vagy megjelenítő ikon](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Így több hely jut magának a jelentésnek.
+> Tudta? A navigációs panelt keskenyebbre méretezheti a három vonalból álló felső ikon ![a navigációs panelt elrejtő vagy megjelenítő ikon](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png) kiválasztásával. Így több hely jut magának a jelentésnek.
 
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>A jelentés megnyitása, és csempék rögzítése az irányítópulton
 1. Ugyanezen a munkaterületen válassza a **Jelentések** lapot, majd a **Beszerzéselemzési minta** elemet a jelentés megnyitásához.
@@ -118,4 +117,4 @@ Gratulálunk, létrehozta az első irányítópultját! Most, hogy már rendelke
 * [Power BI – Alapfogalmak](service-basic-concepts.md)
 * [Tippek a tökéletes irányítópult megtervezéséhez](service-dashboards-design-tips.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).

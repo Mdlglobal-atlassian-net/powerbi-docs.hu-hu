@@ -3,19 +3,18 @@ title: Saját titkosítási kulcsok használata a Power BI-hoz (előzetes verzi�
 description: Útmutató saját titkosítási kulcsok Power BI Premiumban való használatához.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 10/24/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 39c6dc8a60be67f8f9e99e01ae1c7249166c5ddb
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 7ab5b09aa6341acf86e039c5951e4752e260876e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877734"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881870"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Saját titkosítási kulcsok használata a Power BI-hoz (előzetes verzió)
 
@@ -32,6 +31,7 @@ BYOK használatához adatokat kell feltöltenie a Power BI szolgáltatásba egy 
 - Élő Analysis Services-kapcsolat
 - Excel-munkafüzetek (ha az adatok nincsenek a Power BI Desktopba importálva)
 - Leküldéses adathalmazok
+- [Nagyméretű modellek](service-premium-large-models.md)
 
 A BYOK csak a PBIX-fájlhoz társított adatkészletre vonatkozik, a csempék és vizualizációk lekérdezési eredményeinek gyorsítótáraira nem.
 

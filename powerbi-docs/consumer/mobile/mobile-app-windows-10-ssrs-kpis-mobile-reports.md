@@ -2,19 +2,18 @@
 title: SSRS-mobiljelentések, KPI-k megtekintése a Windows 10-hez készült Power BI mobilalkalmazásban
 description: A Windows 10-hez készült Power BI mobilalkalmazás valós idejű, érintéssel vezérelhető mobil hozzáférést biztosít a fontos helyszíni vállalati információkhoz.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 114cf65e8abb072ab3f0254cbd4041a43a31d1dc
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 4666e7c0e4901a99867ea72ab404df4cbffe110b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059651"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879350"
 ---
 # <a name="view-reporting-services-ssrs-mobile-reports-and-kpis-in-the-windows-10-power-bi-mobile-app"></a>Reporting Services- (SSRS-) mobiljelentések és -KPI-k megtekintése a Windows 10-hez készült Power BI mobilalkalmazásban
 A Windows 10-hez készült Power BI mobilalkalmazás valós idejű, érintéssel vezérelhető mobil hozzáférést biztosít az SQL Server 2016 Reporting Services szolgáltatásban található fontos helyszíni vállalati információkhoz. 
@@ -46,11 +45,11 @@ Akkor is böngészhet a Reporting Services-mobiljelentések funkciói között, 
 Böngéssze át a mintákat a KPI-kkel és mobiljelentésekkel való interakcióhoz.
 
 ## <a name="connect-to-a-reporting-services-report-server"></a>Kapcsolódás a Reporting Services jelentéskészítő kiszolgálóhoz
-1. A bal oldali navigációs ablaktábla alján koppintson a **Beállítások** ![Beállítások ikon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png) elemre.
+1. A navigációs ablaktábla alján koppintson a **Beállítások** ![Beállítások ikon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png) elemre
 2. Koppintson a **Csatlakozás kiszolgálóhoz** lehetőségre.
 3. Töltse ki a kiszolgáló címét, és adja meg felhasználónevét és jelszavát. A kiszolgáló címét az alábbi formátumban kell megadni:
    
-     `http://<servername>/reports` VAGY `https://<servername>/reports`
+     `https://<servername>/reports` VAGY `https://<servername>/reports`
    
    > [!NOTE]
    > Írja be a **http** vagy **https** előtagot a kapcsolati sztring elejére.
@@ -60,9 +59,9 @@ Böngéssze át a mintákat a KPI-kkel és mobiljelentésekkel való interakció
     Koppintson a **Speciális beállítás** lehetőségre, ha meg szeretne adni egy nevet a kiszolgáló számára.
 4. Kattintson a pipa jelre a kapcsolódáshoz. 
    
-   A kiszolgáló látható lesz a bal oldali navigációs sávban.
+   A kiszolgáló megjelenik a navigációs ablaktáblán.
    
-   ![A kiszolgáló a bal oldali navigációs sávban](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-server.png)
+   ![Kiszolgáló a navigációs ablaktáblán](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-server.png)
    
    >[!TIP]
    >A globális navigációs gombra ![Globális navigációs gomb](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) koppintva bármikor válthat a Reporting Services-mobiljelentések és az irányítópultok között a Power BI szolgáltatásban. 
@@ -96,7 +95,7 @@ További információ a [kedvencekről a Power BI-mobilalkalmazásokban](mobile-
 ## <a name="remove-a-connection-to-a-report-server"></a>Jelentéskészítő kiszolgálóval való kapcsolat eltávolítása
 Egyszerre csak egy jelentéskészítő kiszolgálóhoz kapcsolódhat a Power BI mobilalkalmazásából. Ha másik kiszolgálóhoz szeretne kapcsolódni, meg kell szakítania a kapcsolatot a jelenlegivel.
 
-1. A bal oldali navigációs ablaktábla alján koppintson a **Beállítások** ![Beállítások ikon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png) elemre.
+1. A navigációs ablaktábla alján koppintson a **Beállítások** ![Beállítások ikon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png) elemre.
 2. Koppintson azon kiszolgáló nevére, amelyhez nem szeretne a továbbiakban kapcsolódni, és tartsa nyomva.
 3. Koppintson a **Kiszolgáló eltávolítása** lehetőségre.
    
@@ -111,5 +110,5 @@ A Power BI-mobilalkalmazásban nincs lehetősége Reporting Services-KPI-k és -
 ## <a name="next-steps"></a>Következő lépések
 * [A Windows 10-hez készült Power BI mobilalkalmazás használatának első lépései](mobile-windows-10-phone-app-get-started.md)  
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)  
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

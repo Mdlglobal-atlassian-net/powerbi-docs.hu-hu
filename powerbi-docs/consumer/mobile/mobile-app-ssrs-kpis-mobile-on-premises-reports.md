@@ -2,19 +2,18 @@
 title: Helyszíni jelentések és KPI-k megtekintése a Power BI-mobilalkalmazásokban
 description: A Power BI Mobile-alkalmazások élő, érintésvezérelt mobilhozzáférést biztosítanak helyszíni üzleti adataihoz a Microsoft SQL Server Reporting Services és a Power BI jelentéskészítő kiszolgáló használatával.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/13/2018
 ms.author: mshenhav
-ms.openlocfilehash: 01ee3cf9be3a0d6b4350925d4ecb9e57b668457a
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 50d44b99d8efea848588ab4c460a469ef6dc780b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060239"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879449"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Helyszíni jelentéskészítő kiszolgálói jelentések és KPI-k megtekintése a Power BI-mobilalkalmazásokban
 
@@ -67,7 +66,7 @@ A helyszíni Power BI-jelentéseket, a Reporting Services mobiljelentéseit és 
 
 1. Töltse ki a kiszolgáló címét, és adja meg felhasználónevét és jelszavát. A kiszolgáló címét ebben a formátumban adja meg:
    
-     `http://<servername>/reports`
+     `https://<servername>/reports`
    
      VAGY
    
@@ -77,9 +76,9 @@ A helyszíni Power BI-jelentéseket, a Reporting Services mobiljelentéseit és 
    
     ![Csatlakozás kiszolgálóhoz párbeszédpanel](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
 5. (Nem kötelező) A **Speciális beállítások** alatt megadhatja a kiszolgáló valódi nevét, ha szeretné.
-6. A kiszolgáló megjelenik a bal oldali navigációs sávon – ebben a példában a neve „power bi report server”.
+6. A kiszolgáló megjelenik a navigációs ablaktáblán – ebben a példában „power bi report server” a neve.
    
-   ![Jelentéskészítő kiszolgáló a bal oldali navigációs sávon](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
+   ![Jelentéskészítő kiszolgáló a navigációs ablaktáblán](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
 
 ## <a name="connect-to-an-on-premises-report-server-in-ios"></a>Csatlakozás helyszíni jelentéskészítő kiszolgálóhoz iOS rendszeren
 
@@ -120,18 +119,18 @@ KPI-ket és jelentéseket jelölhet meg kedvencekként a webes portálon, majd a
 
 * Koppintson a **Kedvencek** elemre.
   
-   ![Kedvencek a bal oldali navigációs panelen](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
+   ![Kedvencek a navigációs ablaktáblán](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
   
    A webes portálról a kedvenc KPI-je és jelentései ezen a lapon mind megtalálhatók a Power BI szolgáltatás Power BI-irányítópultjaival együtt:
   
    ![Power BI-jelentések és -irányítópultok a Kedvencek lapon](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-favorites.png)
 
-## <a name="remove-a-connection-to-a-report-server"></a>Jelentéskészítő kapcsolatának eltávolítása
-1. A bal oldali navigációs sáv alján koppintson a **Beállítások** gombra.
+## <a name="remove-a-connection-to-a-report-server"></a>Jelentéskészítő kiszolgálóval való kapcsolat eltávolítása
+1. A navigációs ablaktábla alján koppintson a **Beállítások** elemre.
 2. Koppintson annak a kiszolgálónak a nevére, amelyhez nem szeretne kapcsolódni.
 3. Koppintson a **Kiszolgáló eltávolítása** elemre.
 
 ## <a name="next-steps"></a>Következő lépések
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)  
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

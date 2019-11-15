@@ -3,18 +3,17 @@ title: Alkalmazás regisztrálása Power BI-tartalmak beágyazásához
 description: Megismerheti, hogyan kell regisztrálni egy alkalmazást az Azure Active Directoryban Power BI-tartalmak beágyazásához.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
-ms.openlocfilehash: 73cca097ce6693c3bbee538eb1518a2ede19beab
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: eb9b5190341b50aa911f5d8aaca07bd7d04ba90d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269697"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880396"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Azure AD-alkalmazás regisztrálása a Power BI-ban való használathoz
 
@@ -83,7 +82,7 @@ Az alkalmazást közvetlenül az Azure Portalon is regisztrálhatja. Az alkalmaz
 
 3. Az oldal jobb felső részén kattintson a fiókra, és válassza ki az Azure AD-bérlőt.
 
-4. A bal oldali navigációs panelen válassza a **Minden szolgáltatás** lehetőséget, és kattintson az **Alkalmazásregisztrációk**, majd az **Új regisztráció** elemre.
+4. A bal oldali navigációs panelen lépjen a **Minden szolgáltatás** területre, és kattintson az **Alkalmazásregisztrációk**, majd az **Új regisztráció** elemre.
 
 5. Kövesse az utasításokat az új alkalmazás létrehozásához.
 
@@ -199,4 +198,4 @@ Vagy a beágyazáshoz használt *fő* fiókkal, vagy egy globális rendszergazda
 
 Most, hogy regisztrálta alkalmazását az Azure AD-ben, hitelesítenie kell a felhasználókat az alkalmazásban. Erről részletesebben a [felhasználók hitelesítését és a Power BI-alkalmazáshoz való Azure AD-hozzáférési token beszerzését](get-azuread-access-token.md) ismertető témakörben olvashat.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

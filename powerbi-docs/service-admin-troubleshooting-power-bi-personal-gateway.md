@@ -2,7 +2,6 @@
 title: Privát Power BI-átjáró hibáinak elhárítása
 description: Privát Power BI-átjáró hibáinak elhárítása
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 5/06/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 8916d92eef86be601ceb21112209ab7daa736c11
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 32413c8ae860f5c9e376f8be46290047f67231fc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543545"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873379"
 ---
 # <a name="troubleshooting-power-bi-gateway-personal-mode"></a>Privát Power BI-átjáró hibáinak elhárítása
 
@@ -111,7 +110,7 @@ Ha irányítópult-csempék frissítésekor kap hibaüzenetet, a [Csempék hibae
 ### <a name="refresh-history"></a>Frissítési előzmények
 A **Frissítési előzmények** segítségével áttekintheti az előfordult hibákat, és hasznos adatokat találhat arra az esetre, ha a támogatást nyújtó ügyfélszolgálathoz kellene fordulnia. Itt az ütemezett és az igény szerinti frissítéseket is láthatja. A **Frissítési előzmények** oldalra az alábbiak szerint juthat el.
 
-1. A Power BI navigációs ablaktáblájának **Adatkészletek** területén jelöljön ki egy adatkészletet. Nyissa meg a menüt, majd válassza a **Frissítés ütemezése** lehetőséget.
+1. A Power BI navigációs paneljének **Adathalmazok** területén válasszon ki egy adathalmazt. Nyissa meg a menüt, majd válassza a **Frissítés ütemezése** lehetőséget.
 
    ![A Frissítés ütemezése lehetőség választása](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh.png)
 1. A **Beállítások:...** területem válassza a **Frissítési előzmények** lehetőséget. 
@@ -128,7 +127,7 @@ A **Data Management Gateway** (Adatkezelési átjáró) és **PowerBIGateway** n
 ![Adatkezelési átjáró naplói és PowerBIGateway-naplók](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 
 ### <a name="fiddler-trace"></a>Nyomon követés a Fiddlerrel
-A [Fiddler](http://www.telerik.com/fiddler) a Telerik ingyenes eszköze, amely a HTTP-adatforgalom figyelésére használható. Nyomon követheti a Power BI szolgáltatás és az ügyfélszámítógép közötti kommunikációt. A kommunikációban hibaüzenetek és egyéb, kapcsolódó információk is megjelenhetnek.
+A [Fiddler](https://www.telerik.com/fiddler) a Telerik ingyenes eszköze, amely a HTTP-adatforgalom figyelésére használható. Nyomon követheti a Power BI szolgáltatás és az ügyfélszámítógép közötti kommunikációt. A kommunikációban hibaüzenetek és egyéb, kapcsolódó információk is megjelenhetnek.
 
 ![Nyomon követés a Fiddlerrel](media/service-admin-troubleshooting-power-bi-personal-gateway/fiddler.png)
 
@@ -154,5 +153,5 @@ Másik lehetőségként megnyithatja a Temp mappát (%temp%), és megkeresheti a
 - [Csempékkel kapcsolatos hibák elhárítása](refresh-troubleshooting-tile-errors.md)  
 - [A helyszíni átjáró hibaelhárítása](service-gateway-onprem-tshoot.md) 
  
-További kérdései vannak? Forduljon a [Power BI közösségéhez](http://community.powerbi.com/).
+További kérdései vannak? Forduljon a [Power BI közösségéhez](https://community.powerbi.com/).
 

@@ -2,19 +2,18 @@
 title: Adatmennyiség-csökkentési technikák importálási modellek készítéséhez
 description: Az importálási modellekbe betöltött adatmennyiség csökkentését elősegítő különböző technikák ismertetése.
 author: peter-myers
-manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 794ded1bc310cfcecc609f48ee4f0595693ceeb3
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: c61a21f400de009815ecb685f989b1cdafbcdb22
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69520180"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875606"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Adatmennyiség-csökkentési technikák importálási modellek készítéséhez
 
@@ -29,7 +28,7 @@ A VertiPaq tárolási összetevő által elért hatékonyság mellett is fontos 
 - Kisebb modellekkel gyorsabb adatfrissítés érhető el, ez pedig a jelentéskészítés kisebb késését és az adathalmaz gyorsabb frissítését eredményezi, valamint kevésbé terheli a forrásrendszer és a kapacitás erőforrásait.
 - A táblák sorainak alacsonyabb száma a számítások gyorsabb kiértékelését eredményezi, ez pedig a teljesítmény általános javulásában mutatkozhat meg.
 
-Ez a cikk hét különböző adatmennyiség-csökkentési technikát mutat be. Ezek a következők:
+Ez a cikk nyolc különböző adatmennyiség-csökkentési technikát mutat be. Ezek a következők:
 
 - [A szükségtelen oszlopok eltávolítása](#remove-unnecessary-columns)
 - [A szükségtelen sorok eltávolítása](#remove-unnecessary-rows)
@@ -37,6 +36,7 @@ Ez a cikk hét különböző adatmennyiség-csökkentési technikát mutat be. E
 - [Oszlopok adattípusainak optimalizálása](#optimize-column-data-types)
 - [Egyéni oszlopok előnyben részesítése](#preference-for-custom-columns)
 - [Power Query-lekérdezések betöltésének letiltása](#disable-power-query-query-load)
+- [Automatikus dátum/idő letiltása](#disable-auto-datetime)
 - [Váltás Vegyes módra](#switch-to-mixed-mode)
 
 ## <a name="remove-unnecessary-columns"></a>A szükségtelen oszlopok eltávolítása
@@ -85,6 +85,10 @@ Egyes esetekben mégis érdemesebb a modellbeli számított oszlopok mellett dö
 A más lekérdezésekkel való adatintegráció támogatására szánt Power Query-lekérdezéseket nem érdemes betölteni a modellbe. A lekérdezés modellbe való betöltésének elkerüléséhez ilyen esetekben gondoskodni kell a lekérdezésbetöltés letiltásáról.
 
 ![Power Query-lekérdezés betöltésének letiltása](media/import-modeling-data-reduction/power-query-disable-query-load.png)
+
+## <a name="disable-auto-datetime"></a>Automatikus dátum/idő letiltása
+
+A Power BI Desktop tartalmaz egy _Automatikus dátum/idő_ beállítást. Ha engedélyezve van, egy rejtett automatikus dátum/idő táblát hoz létre a dátumoszlopok számára, hogy támogassa a jelentések szerzőit a szűrők konfigurálásában, a csoportosításban és a naptári időszakokra vonatkozó részletes elemzésben. A rejtett táblák valójában számított táblák, amelyek megnövelik a modell méretét. Ha útmutatásra van szüksége a beállítás használatával kapcsolatban, tekintse meg az [automatikus dátum/idő a Power BI Desktopban történő használatának](../desktop-auto-date-time.md) útmutatócikkét.
 
 ## <a name="switch-to-mixed-mode"></a>Váltás Vegyes módra
 

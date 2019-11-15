@@ -2,7 +2,6 @@
 title: Csempe rögzítése az irányítópultra a Q&A kérdésmezőből
 description: Csempe rögzítése Power BI-irányítópultra a Q&A kérdésmezőből – dokumentáció
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e75c9b86b20eda2de630f2b27caa6b88a687fbb4
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 12aa35e37e4382e7fc89fc9e0fe8c2ae564e8eda
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432089"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872818"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Csempe rögzítése az irányítópultra a Q&A kérdésmezőből
 ## <a name="how-to-pin-a-tile-from-qa"></a>Hogyan rögzíthet csempét a Q&A kérdésmezőből
@@ -52,9 +51,9 @@ Annak érdekében, hogy követni tudja a lépéseket, nyissa meg a [Kiskereskede
    ![Csempéket tartalmazó irányítópult](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
-* Amikor elkezdi beírni a kérdést, a Q&A-rendszer máris keresni kezdi a legjobb választ az aktuális irányítópulttal társított adatkészletekben.  Az „aktuális irányítópult” neve a felső navigációs sávon látható. Ezt a kérdést például a **mihart** munkaterülethez tartozó **Kiskereskedelmi elemzési minta** irányítópulton tették fel.
+* Amikor elkezdi beírni a kérdést, a Q&A-rendszer máris keresni kezdi a legjobb választ az aktuális irányítópulttal társított adatkészletekben.  Az „aktuális irányítópult” a felső navigációs panelen látható irányítópult. Ezt a kérdést például a **mihart** munkaterülethez tartozó **Kiskereskedelmi elemzési minta** irányítópulton tették fel.
 
-  ![útkövetési eszközök](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
+  ![útkövetési eszközök](media/service-dashboard-pin-tile-from-q-and-a/power-bi-nav pane.png)
 * **Honnan tudja a Q&A-rendszer, hogy mely adatkészleteket kell felhasználnia**?  A Q&A minden adatkészlethez hozzáfér, amelynek legalább egy rögzített vizualizációja van az irányítópulton.
 
 * **Nem jelenik meg a kérdés mező**? Lépjen kapcsolatba a Power BI rendszergazdájával. A rendszergazdának lehetősége van a Q&A-t letiltani.
@@ -64,4 +63,4 @@ Annak érdekében, hogy követni tudja a lépéseket, nyissa meg a [Kiskereskede
 [Csempe átnevezése, átméretezése, áthelyezése, hivatkozás hozzáadása, stb.](service-dashboard-edit-tile.md)    
 [Irányítópult csempéjének megjelenítése Fókusz módban](consumer/end-user-focus.md)     
 [Vissza a Q&A a Power BI-ban című témakörhöz](consumer/end-user-q-and-a.md)  
-Több kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Az Azure Machine Learning integrálása a Power BI-jal
 description: Tudnivalók az Azure Machine Learning a Power BI szolgáltatással történő használatáról
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 9593296b0e09340fe4f62fff7a2e7722912a4216
-ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
+ms.openlocfilehash: 2f872825c327b8195e7a6e5516e0b533235ddc27
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72259939"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872092"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi"></a>Az Azure Machine Learning integrálása a Power BI-jal
 
@@ -43,7 +42,7 @@ A cikk lépései ismertetik, hogyan adhat hozzáférést egy Power BI-felhaszná
 
 1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 
-2. Lépjen az **Előfizetések** oldalra. Az **Előfizetések** oldalt az Azure Portal bal oldali navigációs menüjének **Minden szolgáltatás** listájában találhatja.
+2. Lépjen az **Előfizetések** oldalra. Az **Előfizetések** oldal az Azure Portalon a navigációs ablaktábla menüjének **Minden szolgáltatás** listájában található.
 
     ![Azure-előfizetések lap](media/service-machine-learning-integration/machine-learning-integration_01.png)
 
@@ -68,7 +67,7 @@ A cikk lépései ismertetik, hogyan adhat hozzáférést egy Power BI-felhaszná
 
 Az adattudósok elsősorban Pythont használnak a Machine Learning Service gépi tanulási modelljeinek fejlesztéséhez és üzembe helyezéséhez.  A Machine Learning Studióval ellentétben (amely automatizálja a modell sémafájljainak létrehozását) a Machine Learning Service esetén az adattudósnak explicit módon létre kell hoznia a sémafájlt a Pythonnal.
 
-Ezt a sémafájlt bele kell foglalni a Machine Learning szolgáltatáshoz üzembe helyezett webszolgáltatásba. Ahhoz, hogy a séma automatikusan generálva legyen a webszolgáltatásban, meg kell adnia a bemenet/kimenet mintáját az üzembe helyezett modell belépési szkriptjében. Olvassa el a Modellek üzembe helyezése az Azure Machine Learning szolgáltatással című dokumentáció (Választható) Automatikus Swagger-séma generálása című fejezetét. A hivatkozás egy példát is tartalmaz a belépési szkriptre a sémageneráló utasításokkal. 
+Ezt a sémafájlt bele kell foglalni a Machine Learning szolgáltatáshoz üzembe helyezett webszolgáltatásba. Ahhoz, hogy a séma automatikusan generálva legyen a webszolgáltatásban, meg kell adnia a bemenet/kimenet mintáját az üzembe helyezett modell belépési szkriptjében. Olvassa el a [Modellek üzembe helyezése az Azure Machine Learning szolgáltatással című dokumentáció (választható) Automatikus Swagger-séma létrehozása](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation) című fejezetét. A hivatkozás egy példát is tartalmaz a belépési szkriptre a sémageneráló utasításokkal. 
 
 A belépési szkript *\@input_schema* és *\@output_schema* függvénye az *input_sample* és az *output_sample* változóban hivatkozik a bemeneti és kimeneti mintaformátumokra, és ezeket a mintákat használja a webszolgáltatás egy OpenAPI- (Swagger-) specifikációjának generálására az üzembe helyezés során.
 
@@ -87,7 +86,7 @@ A **Szerkesztés** gombbal megnyithatja a Power Query-szerkesztőt az adatfolyam
 
 ![Power Query-szerkesztő](media/service-machine-learning-integration/machine-learning-integration_06.png)
 
-Válassza a menüszalag **AI-elemzések** gombját, majd a bal oldali navigációs menü _Azure Machine Learning-modellek_ elemét. Itt Power Query-függvényként láthat minden olyan Azure ML-modellt, amelyhez hozzáférhet. Az Azure ML-modell bemeneti paraméterei automatikusan le vannak képezve a megfelelő Power Query-függvény paramétereiként.
+Válassza a menüszalag **AI-elemzések** gombját, majd a navigációs ablaktábla menüjében az _Azure Machine Learning-modellek_ mappát. Itt Power Query-függvényként láthat minden olyan Azure ML-modellt, amelyhez hozzáférhet. Az Azure ML-modell bemeneti paraméterei automatikusan le vannak képezve a megfelelő Power Query-függvény paramétereiként.
 
 Az Azure ML-modell meghívásához bemenetként a kijelölt entitás bármelyik oszlopát megadhatja. Emellett megadhat egy állandó értéket is, amelyet bemenetként használhat. Ehhez a bemeneti párbeszédpanelen be kell kapcsolnia az oszlop ikont.
 

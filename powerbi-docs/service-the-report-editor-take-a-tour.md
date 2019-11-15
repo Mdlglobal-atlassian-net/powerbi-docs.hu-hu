@@ -2,7 +2,6 @@
 title: A jelentésszerkesztő bemutatása
 description: A Power BI Desktopban és a Power BI szolgáltatásban a jelentésszerkesztőben tervezheti meg a végfelhasználók által látható jelentéseket. Ez mindkét környezetben hasonló.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c3a5454032a4138ce3d93c490fa6b3d5a7fecec5
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 800079f20d0c16964b0e5dd5fbac5919e94317f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023739"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871344"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>A Power BI jelentésszerkesztőjének bemutatása
 
@@ -34,14 +33,14 @@ A Power BI szolgáltatásban a jelentésszerkesztő csak Szerkesztő nézetben �
 
 A Power BI-jelentésszerkesztő több fő területre van tagolva:  
 
-1. Felső navigációs sáv
+1. Felső navigációs ablaktábla
 1. Jelentésvászon
 1. Szűrők panel
 1. Vizualizációk panel
 1. Mezők ablaktábla
 
-## <a name="1-the-top-navigation-bar"></a>1. A felső navigációs sáv
-A felső navigációs sávon számos művelet elérhető, és ezek köre folyamatosan bővül. Az egyes műveletekről a Power BI-dokumentáció tartalomjegyzéke vagy a keresőmező használatával találhat további információt.
+## <a name="1-the-top-nav-pane"></a>1. A felső navigációs ablaktábla
+A felső navigációs ablaktábla számos műveletet tartalmaz, és folyamatosan új műveletekkel bővül. Az egyes műveletekről a Power BI-dokumentáció tartalomjegyzéke vagy a keresőmező használatával találhat további információt.
 
 
 ## <a name="2-the-report-canvas"></a>2. A jelentésvászon
@@ -156,5 +155,5 @@ További információk a jelentésekről használatáról a [Power BI szolgálta
 
 [Alapfogalmak Power BI-tervezőknek](service-basic-concepts.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

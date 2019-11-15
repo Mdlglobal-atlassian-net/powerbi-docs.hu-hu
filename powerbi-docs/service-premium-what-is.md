@@ -3,7 +3,6 @@ title: Mi az a Microsoft Power BI Premium?
 description: A Power BI Premium dedikált kapacitásokat biztosít vállalata számára, így felhasználónkénti licencek vásárlása nélkül is megbízható teljesítményre számíthat nagyobb mennyiségű adat estén is.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: e57df395fd3efe439cb6ef009cb2c7a9f3fe99f9
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f62387feebca089b2afbb919419365fd7e09c2d3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431654"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871833"
 ---
 # <a name="what-is-power-bi-premium"></a>Mi az a Power BI Premium?
 
@@ -166,9 +165,9 @@ A termékváltozattól függően a Power BI Premium támogatja a legfeljebb **10
 
 ### <a name="size-considerations"></a>Mérettel kapcsolatos szempontok
 
-A nagy modellek erőforrás-igényesek lehetnek. Érdemes legalább a P1 termékváltozatot alkalmazni minden 1 GB-nál nagyobb méretű modell esetén. Bár nagy modellek legfeljebb A3-as SKU-kra épülő munkaterületre való közzététele sikeres lehet, a frissítésük nem.
+A nagy méretű adathalmazoknak az erőforrásigénye is nagy lehet. Érdemes legalább a P1 termékváltozatot alkalmazni minden 1 GB-nál nagyobb adathalmaz esetén. Bár a nagy adathalmazok közzététele egy A kategóriájú, legfeljebb A3-as termékváltozatokra épülő munkaterületen sikeres lehet, az adathalmazok frissítése biztosan nem.
 
-A következő táblázatban a különböző méretű .pbix-fájlokhoz ajánlott termékváltozatok vannak megadva:
+A következő táblázat azt ismerteti, hogy milyen termékváltozatok használata ajánlott a .pbix-fájlok feltöltéséhez és közzétételéhez a Power BI szolgáltatásban:
 
    |Termékváltozat  |A .pbix-fájl mérete   |
    |---------|---------|
@@ -176,9 +175,11 @@ A következő táblázatban a különböző méretű .pbix-fájlokhoz ajánlott 
    |P2    | < 6 GB        |
    |P3, P4, P5    | legfeljebb 10 GB   |
 
-A Power BI Embedded A4 termékváltozata a P1 SKU-val, az A5 a P2-vel, az A6 pedig a P3-mal egyezik meg. Nagy modellek A és EM termékváltozatban való közzététele olyan hibákat eredményezhet, amelyek nem a megosztott kapacitásbeli modellméret-korlátozási hibával függenek össze. Nagy modellek A és EM SKU-kban fellépő frissítési hibái feltehetően időtúllépésre utalnak. 
+A Power BI Embedded A4 termékváltozata a P1 SKU-val, az A5 a P2-vel, az A6 pedig a P3-mal egyezik meg. A nagy adathalmazok A és EM termékváltozatban való közzététele olyan hibákat eredményezhet, amelyek nem a megosztott kapacitásbeli modellméret-korlátozási hibával függenek össze. Az adathalmazok frissítési hibái az A és EM termékváltozatokban feltehetően időtúllépésre utalnak.
 
-A .pbix-fájlok *nagy mértékben tömörített állapotban* tartalmazzák az adatokat. Az adatok mérete valószínűleg többszörösére fog nőni a memóriába való betöltéskor, és ehhez képest is a többszörösére nőhet az adatok frissítése során.
+Ha engedélyezi a [nagy méretű modelleket](service-premium-large-models.md) egy adathalmazban, attól még továbbra is érvényesek a .pbix-fájlok méretére vonatkozó korlátozások a fájlok feltöltésekor vagy közzétételekor. Azonban a növekményes frissítés és a nagy méretű modellek együttes használata esetén az adathalmazok e határértékeknél jóval nagyobbra nőhetnek. A nagy méretű modellek esetén az adathalmazok méretét csak a Power BI Premium kapacitásmérete korlátozza.
+
+A .pbix-fájlok *nagy mértékben tömörített állapotban* tartalmazzák az adatokat. Az adatok mérete valószínűleg nőni fog a memóriába való betöltéskor, és ehhez képest is a többszörösére nőhet az adatok frissítése során.
 
 A nagyméretű adathalmazok ütemezett frissítése hosszú időt vehet igénybe, és erőforrás-igényes lehet. Lényeges, hogy ne ütemezzen túl sok egymással átfedő frissítést. Ajánlott [növekményes frissítést](service-premium-incremental-refresh.md) konfigurálni, mert gyorsabb, megbízhatóbb, és kevesebb erőforrást használ fel.
 

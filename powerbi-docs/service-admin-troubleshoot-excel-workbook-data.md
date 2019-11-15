@@ -2,7 +2,6 @@
 title: 'Hiba: Nem található adat az Excel-munkafüzetben'
 description: 'Hiba: Nem található adat az Excel-munkafüzetben'
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 04/30/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: c32133a7958c1239337a5f77a92dde098652514e
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 08de5051adb420bc2a3b257fcc231730aa505b23
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72542851"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873408"
 ---
 # <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>Hiba: Nem található adat az Excel-munkafüzetben
 
@@ -61,7 +60,7 @@ Excel-munkafüzet importálásakor a Power BI ezeket a táblázatokat keresi, ma
    
     ![Táblázatként formázott adatok](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-table.png)
 6. Mentse a munkafüzetet.
-7. Térjen vissza a Power BI-ba. Kattintson az Adatok lekérése elemre a bal oldali navigációs ablaktábla alján.
+7. Térjen vissza a Power BI-ba. Kattintson az Adatok lekérése elemre a navigációs panel alján.
    
     ![Adatok lekérése](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-data.png)
 8. A **Fájlok** mezőben válassza a **Beolvasás** lehetőséget.

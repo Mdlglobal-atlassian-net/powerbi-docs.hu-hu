@@ -2,19 +2,18 @@
 title: Sablonalkalmazások létrehozása a Power BI-ban
 description: Bármely Power BI-ügyfél számára terjeszthető sablonalkalmazás létrehozása a Power BI-ban.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 836dfcc0569c906b145df3e3f3d14f03c08d4938
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 4b3158cbe26efe05e3d35c1c6c93027738cc817a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432167"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871499"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Sablonalkalmazás létrehozása a Power BI-ban
 
@@ -86,7 +85,7 @@ Most, hogy van tartalom a munkaterületen, készen áll, hogy becsomagolja azt e
 
     **Navigáció**
 
-    Aktiválja az **Új navigációszerkesztőt**, amellyel definiálhatja az alkalmazás bal oldali navigációs panelét (további információt a cikk [A navigációs felület megtervezése](service-create-distribute-apps.md#design-the-navigation-experience) című szakaszában találhat).
+    Aktiválja az **Új navigációszerkesztőt**, amellyel definiálhatja az alkalmazás navigációs ablaktábláját (további információt a cikk [a navigációs felület megtervezésével](service-create-distribute-apps.md#design-the-navigation-experience) foglalkozó szakaszában találhat).
 
    ![Alkalmazás kezdőlapjának beállítása](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
     

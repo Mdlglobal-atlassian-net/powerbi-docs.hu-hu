@@ -2,7 +2,6 @@
 title: Csatlakozás a mintákhoz a Power BI szolgáltatásban
 description: Útmutató a minták telepítéséhez és felfedezéséhez a Power BI szolgáltatásban.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 5009e186c801f71c9c1a4b8e156dfefaaeac79f1
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 90136f39d9f2a8e330748b56d6302bb75d2a31fe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020633"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873848"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Csatlakozás a mintákhoz a Power BI szolgáltatásban
 
@@ -38,11 +37,11 @@ Annak érdekében, hogy megismerkedhessen ezzel a tartalomcsomaggal és annak fe
 
     Ha nem rendelkezik Power BI Pro-licenccel, a mintát a Saját munkaterületre mentheti.
 
-2. A bal oldali navigációs ablaktábla alján kattintson az **Adatok lekérése** elemre. 
+2. Kattintson az **Adatok lekérése** elemre a navigációs panel alján. 
 
    ![Az Adatok beolvasása lehetőség kiválasztása](media/sample-datasets/power-bi-get-data.png)
 
-   Ha nem jelenik meg az **Adatok lekérése** elem, bontsa ki a navigációs panelt a panel tetején található következő ikon választásával: ![hamburger ikon](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
+   Ha nem jelenik meg az **Adatok lekérése** elem, bontsa ki a navigációs panelt a panel tetején található következő ikon kiválasztásával: ![hamburger ikon](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
 
 5. Ekkor megjelenik az **Adatok lekérése** lap. Itt válassza a **Minták** lehetőséget.
    
@@ -100,7 +99,7 @@ Amikor először nyitja meg a minta .pbix-fájlt a Power BI Desktopban, az Jelen
 
 A jelentés Power BI szolgáltatásban végzett szerkesztésétől eltérően a Power BI Desktopban dolgozhat lekérdezésekkel is, és modellezheti az adatokat annak érdekében, hogy azok a legjobb elemzést tegyék lehetővé a jelentésekben. Ezután mentheti a Power BI Desktop-fájlt bárhová, ahová szeretné, legyen az a helyi lemez vagy a felhő.
 
-1. Töltse le a [Kiskereskedelmi elemzési minta .pbix-fájlját](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), és nyissa meg a Power BI Desktopban. 
+1. Töltse le a [Kiskereskedelmi elemzési minta .pbix-fájlját](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), és nyissa meg a Power BI Desktopban. 
 
     ![Minta a Power BI Jelentés nézetében](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
@@ -138,4 +137,4 @@ További információ:
 - [Minták a Power BI szolgáltatáshoz](sample-datasets.md)
 - [Power BI-adatforrások](service-get-data.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

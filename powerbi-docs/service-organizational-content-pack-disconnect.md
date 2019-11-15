@@ -2,7 +2,6 @@
 title: Szervezeti tartalomcsomaggal létesített kapcsolat bontása – Power BI
 description: Elolvashatja a Power BI szervezeti tartalomcsomaggal létesített kapcsolatának az adatkészlet törlésével való eltávolításának lépéseit.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d83a57b2b1f8e2ca0887f2432f2de43647900b81
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 3936ebfedb1e4e51fe93b948a49de0b9fb133c52
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020638"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881298"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Power BI szervezeti tartalomcsomaggal létesített kapcsolat eltávolítása
 
@@ -27,7 +26,7 @@ Egy munkatársa létrehozott egy tartalomcsomagot. Ön megnyitotta az AppSource-
 
 A tartalomcsomagok eltávolításához el kell távolítania azok adatkészletét.  
 
-* A bal oldali navigációs ablaktáblában kattintson az adatkészlet jobb oldalán található három pontra, majd válasza az **eltávolítás \> Igen** lehetőséget.  
+* A navigációs panelen kattintson az adatkészlettől jobbra található három pontra, majd válasza az **Eltávolítás \> Igen** lehetőséget.  
   
   ![Tartalomcsomag eltávolítása](media/service-organizational-content-pack-disconnect/power-bi-remove-organizational-content-pack-dataset.png)
 
@@ -37,5 +36,5 @@ Az adatkészlet eltávolítása minden hozzárendelt jelentést és irányítóp
 * [Szervezeti tartalomcsomagok: bevezetés](service-organizational-content-pack-introduction.md) 
 * [Alkalmazások létrehozása és terjesztése a Power BI-ban](service-create-distribute-apps.md) 
 * [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)  
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

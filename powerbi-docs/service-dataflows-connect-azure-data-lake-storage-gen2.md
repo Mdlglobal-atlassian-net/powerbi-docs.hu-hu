@@ -2,7 +2,6 @@
 title: Útmutató az Azure Data Lake Storage Gen2 és a Power BI csatlakoztatásához adatfolyam-tároláshoz
 description: Saját adatok importálása adatfolyamokba az Azure Data Lake Storage Gen2 használatával
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: df3c8b33de32bb9dd42507cc7bb601cee9f6e575
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: c48ae0913d0096546c23d22d3e4596fdb21aef82
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432015"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872713"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)
 
@@ -105,7 +104,7 @@ A fájlrendszerre vonatkozó engedélyek megadása hozzáférés-vezérlési lis
 
 Bérlői alkalmazásait az alábbi lépésekkel találhatja meg:
 
-1. Az [Azure Portal](https://portal.azure.com/) bal oldali navigációs paneljén válassza az **Azure Active Directory** lehetőséget.
+1. Az [Azure Portalon](https://portal.azure.com/) válassza az **Azure Active Directory** lehetőséget a navigációs panelen.
 2. Az Azure **Active Directory** panelen válassza a **Vállalati alkalmazások** lehetőséget.
 3. Az **Alkalmazástípus** legördülő menüből válassza a **Minden alkalmazás** elemet, majd válassza az **Alkalmaz** lehetőséget. Megjelenik a bérlői alkalmazásnak az alábbi ábrához hasonló mintája.
 
@@ -223,4 +222,4 @@ A Common Data Modellel kapcsolatos további információt a témát áttekintő 
 * [CDM-mappák](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM-modellfájl definiálása](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-[Kérdéseit mindig felteheti a Power BI-közösségben](http://community.powerbi.com/) is.
+[Kérdéseit mindig felteheti a Power BI-közösségben](https://community.powerbi.com/) is.

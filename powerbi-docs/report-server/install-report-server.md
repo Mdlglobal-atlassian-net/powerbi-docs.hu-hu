@@ -3,18 +3,17 @@ title: A Power BI jelentéskészítő kiszolgáló telepítése
 description: Ismerje meg, hogyan telepítheti a Power BI jelentéskészítő kiszolgálót.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: c0e3666a5838ae8e3849f5defd3858c9ea205a42
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: eecddd9251bbce732e9dc4ef70ad0d855f499d11
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839433"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874138"
 ---
 # <a name="install-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló telepítése
 
@@ -127,14 +126,14 @@ Az URL-foglalások előtagból, állomásnévből, portból és virtuális köny
 | Rész | Leírás |
 | --- | --- |
 | Előtag |Az alapértelmezett előtag a HTTP. Ha korábban már telepített Secure Sockets Layer (SSL) tanúsítványt, a Telepítő megkísérel HTTPS-előtagot használó URL-foglalásokat létrehozni. |
-| Állomásnév |Az alapértelmezett állomásnév egy erős helyettesítő (+). Azt határozza meg, hogy a jelentéskészítő kiszolgáló a kijelölt porton bármilyen HTTP-kérelmet elfogad a számítógéphez rendelt bármely állomásnévhez, beleértve a következőket: `http://<computername>/reportserver`, `http://localhost/reportserver` vagy `http://<IPAddress>/reportserver.` |
+| Állomásnév |Az alapértelmezett állomásnév egy erős helyettesítő (+). Azt határozza meg, hogy a jelentéskészítő kiszolgáló a kijelölt porton bármilyen HTTP-kérelmet elfogad a számítógéphez rendelt bármely állomásnévhez, beleértve a következőket: `https://<computername>/reportserver`, `https://localhost/reportserver` vagy `https://<IPAddress>/reportserver.` |
 | Port |Az alapértelmezett port a 80-as. Ha a 80-astól eltérő portot használ, explicit módon kell azt hozzáadnia az URL-hez, amikor a böngészőablakban megnyitja a webes portált. |
 | Virtuális könyvtár |Alapértelmezés szerint a virtuális könyvtárak mind a Jelentéskészítő kiszolgáló webszolgáltatáshoz, mind a webes portálhoz készült jelentésekhez a ReportServer formátumában jönnek létre. A Jelentéskészítő kiszolgáló webszolgáltatás alapértelmezett virtuális könyvtára a **reportserver**. A webes portál alapértelmezett virtuális könyvtára a **reports**. |
 
 A teljes URL-sztring például a következő lehet:
 
-* `http://+:80/reportserver`, hozzáférést biztosít a jelentéskészítő kiszolgálóhoz.
-* `http://+:80/reports`, hozzáférést biztosít a webes portálhoz.
+* `https://+:80/reportserver`, hozzáférést biztosít a jelentéskészítő kiszolgálóhoz.
+* `https://+:80/reports`, hozzáférést biztosít a webes portálhoz.
 
 ## <a name="firewall"></a>Tűzfal
 

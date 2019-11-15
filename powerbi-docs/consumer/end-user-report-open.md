@@ -2,19 +2,18 @@
 title: Jelentés megtekintése
 description: Ez a témakör azt mutatja be a Power BI-felhasználóknak és -végfelhasználóknak, hogyan nyithatnak meg és tekinthetnek meg Power BI-jelentéseket.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
-ms.openlocfilehash: fab986cbd5c6b0a55c18157d663eea1ca0fd537e
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: b22da2df92c0cc7130c7a5ebf69e2284c12ffef4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019467"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861968"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>A *felhasználóknak* készült Power BI szolgáltatásban jelentéseket tekinthet meg
 
@@ -33,11 +32,11 @@ Nyissunk meg egy Önnel közvetlenül megosztott jelentést, majd egy olyat, ame
    ![Kezdőlap](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Önnel megosztott jelentés megnyitása
-A Power BI-*tervezők* megoszthatnak egy adott jelentést közvetlenül Önnel e-mailes hivatkozással vagy automatikus hozzáadással. Az ezúton megosztott tartalmak a bal oldali navigációs sávon található **Velem megosztva** tárolóban, valamint a kezdőlap **Velem megosztva** szakaszában jelennek meg.
+A Power BI-*tervezők* megoszthatnak egy adott jelentést közvetlenül Önnel e-mailes hivatkozással vagy automatikus hozzáadással. Az ezúton megosztott tartalmak a navigációs panelen található **Velem megosztva** tárolóban, valamint a kezdővászon **Velem megosztva** szakaszában jelennek meg.
 
 1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com).
 
-2. A kezdőlap vászon megjelenítéséhez a navigációs sávon válassza a **Kezdőlap** lehetőséget.  
+2. A Kezdőlap vászon megjelenítéséhez a navigációs panelen válassza a **Kezdőlap** lehetőséget.  
 
    ![Kezdőlap vászon](./media/end-user-report-open/power-bi-select-home-new.png)
    
@@ -66,7 +65,7 @@ A Power BI-*tervezők* megoszthatnak egy adott jelentést közvetlenül Önnel e
    ![laphoz igazítás](./media/end-user-report-open/power-bi-actual.png)
 
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Alkalmazás részét képező jelentés megnyitása
-A munkatársaitól kapott vagy az AppSource-ból szerzett alkalmazásokat a kezdőlapon és a bal oldali navigációs sáv **Alkalmazások** tárolóján érheti el. Az irányítópultok és jelentések együttesét [alkalmazásnak](end-user-apps.md) nevezzük.
+A munkatársaitól kapott vagy az AppSource-ból szerzett alkalmazásokat a kezdőlapon és a navigációs panel **Alkalmazások** tárolójában érheti el. Az irányítópultok és jelentések együttesét [alkalmazásnak](end-user-apps.md) nevezzük.
 
 ### <a name="prerequisites"></a>Előfeltételek
 A műveletek követéséhez töltse le az Értékesítés és marketing alkalmazást.
@@ -75,7 +74,7 @@ A műveletek követéséhez töltse le az Értékesítés és marketing alkalmaz
 1. Válassza az **Azonnali letöltés** > **Tovább** > **Telepítés** lehetőséget az alkalmazás saját Apps-tárolóban történő telepítéséhez. 
 
 Az alkalmazást a saját Apps-tárolóból vagy a Kezdőlapról nyithatja meg.
-1. Lépjen vissza a kezdőlapra a navigációs sáv **Kezdőlap** elemének kiválasztásával.
+1. Lépjen vissza a kezdőlapra a navigációs panel **Kezdőlap** elemének kiválasztásával.
 
 7. Görgessen le a **Saját alkalmazások** szakaszig.
 
@@ -101,7 +100,7 @@ A jelentések irányítópultokról is megnyithatók. Az irányítópult legtöb
 
 ##  <a name="still-more-ways-to-open-a-report"></a>További lehetőségek a jelentés megnyitására
 Ha már otthonosabban mozog a Power BI szolgáltatásban, minden bizonnyal tudni fogja, mely munkafolyamatok a legkényelmesebbek az Ön számára. Íme még néhány további lehetőség a jelentések megnyitásához:
-- A navigációs panelen a **Kedvencek**, majd a **Legutóbbi** lehetőséget választva    
+- A navigációs panelen a **Kedvencek**, **Legutóbbi** elemnél    
 - A [Kapcsolódó megtekintése](end-user-related.md) használata    
 - E-mailben, ha valaki [megosztja Önnel](../service-share-reports.md) vagy Ön [riasztást állít be](end-user-alerts.md);    
 - Az [Értesítési központból](end-user-notification-center.md)    

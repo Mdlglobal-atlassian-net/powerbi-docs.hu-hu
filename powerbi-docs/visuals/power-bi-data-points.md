@@ -2,20 +2,19 @@
 title: Nagy adathalmazok, adatpontkorlátok és adatstratégiák
 description: Vizualizációkra vonatkozó adatkorlátozások és adatcsökkentési stratégiák
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b45d0fb20dbb9a697e6d079a6b28c0fc86290627
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61276425"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881059"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Adatpontkorlátok és -stratégiák vizualizációtípus szerint
 
@@ -73,7 +72,7 @@ Lásd: [A vonalas mintavételezés működése](../desktop-high-density-sampling
 - Értékek: Virtualizálás egyszerre 200 sort tartalmazó ablakokkal
 
 ### <a name="combo-chart"></a>Kombinált diagram
- Ugyanazokat a stratégiákat használja, mint az oszlopdiagram. Lényeges, hogy a **kombinált diagramban** lévő vonal nem azt a sűrű algoritmust használja, amelyet a **vonaldiagram**.
+ Ugyanazokat a stratégiákat használja, mint az oszlopdiagram. Figyelje meg, hogy a **kombinált diagram** vonala nem azt a sűrű algoritmust használja, amit a **vonaldiagram**.
 
 ### <a name="custom-visuals"></a>Egyéni vizualizációk
 Akár 30 000 is lehet, de a vizualizáció készítői döntik el, hogy mely stratégiák legyenek használva
@@ -109,12 +108,12 @@ Lásd: [Sűrű mintavételezés](../desktop-high-density-sampling.md)
 A konfigurációtól függően a térképen a következők szerepelhetnek:
 - Hely: Első 3500
 - Hely, méret: Első 3500
-- Hely, összesített hosszúsági és szélességi adatok (+/-méret): Első 3500
+- Hely, szélesség és hosszúság összesítése (+/-Méret): Első 3500
 - Szélesség, hosszúság – lásd: [nagy sűrűségű pontdiagram](desktop-high-density-scatter-charts.md)
 - Szélesség, hosszúság, méret: Első 3500
 - Jelmagyarázat, szélesség, hosszúság – lásd: [nagy sűrűségű pontdiagram](desktop-high-density-scatter-charts.md)
 - Jelmagyarázat, szélesség, hosszúság, méret: Első 233 jelmagyarázat, első 15 szélesség és hosszúság (használhat statisztikákat vagy dinamikus korlátokat)
-- Hely, jelmagyarázat, szélesség és hosszúság összesítve (+/-méret): Első 233 hely, első 15 jelmagyarázat (használhat statisztikákat vagy dinamikus korlátokat)
+- Hely, jelmagyarázat, szélesség és hosszúság összesítve (+/-Méret): Első 233 hely, első 15 jelmagyarázat (használhat statisztikákat vagy dinamikus korlátokat)
 
 ### <a name="matrix"></a>Mátrix
 - Sorok: Virtualizálás egyszerre 500 sort tartalmazó ablakokkal
@@ -147,16 +146,16 @@ Lásd: [Nagy sűrűségű pontdiagramok](https://docs.microsoft.com/power-bi/vis
         - Kategóriák: 500 értékből álló minta
         - Adatsorozatok: Az első 20 érték
 
-### <a name="shape-map"></a>Alakzat leképezése
-A kartogram használhat statisztikákat vagy dinamikus korlátokat. 
-- Pontok maximális száma: 10 000
+### <a name="shape-map-preview"></a>Alakzat leképezése (előzetes verzió)
+Az alakzatleképezés használhat statisztikákat vagy dinamikus korlátokat. 
+- Pontok maximális száma: 1500
 - Kategóriák: Első 500
 - Adatsorok (ha X és Y is létezik): Első 20
 
 ### <a name="table"></a>Táblázat
 - Értékek: Virtualizálás (adatablakok) egyszerre 500 sort tartalmazó ablakokkal
 
-### <a name="tree-map-this-could-use-statistics-or-dynamic-limits"></a>Fatérkép (használhat statisztikákat vagy dinamikus korlátokat)
+### <a name="tree-map-could-use-statistics-or-dynamic-limits"></a>Faszerkezetes térkép (használhat statisztikákat vagy dinamikus korlátokat)
 - Pontok maximális száma: 3,500
 - Csoport: Első 500
 - Részletek: Első 20

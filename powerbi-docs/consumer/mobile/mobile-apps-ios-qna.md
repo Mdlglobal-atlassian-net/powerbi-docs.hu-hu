@@ -2,19 +2,18 @@
 title: Q&A virtuális elemző iOS-alkalmazásokban – Power BI
 description: Saját szavaival megfogalmazott kérdéseket tehet fel a mintaadatokkal kapcsolatban az iOS-eszközökön futó Power BI mobilalkalmazás Q&A virtuális elemzőjét használva.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 0517299240137bf63ace8aca6a1da577a4443d2d
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 34fe1af53a62c5198cc30625d840321c414be8f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "60977485"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879383"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Q&A virtuális elemző iOS-alkalmazásokban – Power BI
 
@@ -35,7 +34,7 @@ Ha még nem regisztrált a Power BI-ra, a kezdés előtt [hozzon létre egy ingy
 ## <a name="prerequisites"></a>Előfeltételek
 
 ### <a name="install-the-power-bi-for-ios-app"></a>Az iOS-es Power BI alkalmazás telepítése
-[iOS-alkalmazás letöltése](http://go.microsoft.com/fwlink/?LinkId=522062 "iPhone-alkalmazás letöltése") az Apple App Store-ból iPadre, iPhone-ra vagy iPod Touchra.
+[iOS-alkalmazás letöltése](https://go.microsoft.com/fwlink/?LinkId=522062 "Az iPhone-alkalmazás letöltése") az Apple App Store-ból iPadre, iPhone-ra vagy iPod Touchra.
 
 Ezek a verziók támogatják az iOS-es Power BI alkalmazást:
 - iPad iOS 10 vagy újabb verzióval.
@@ -49,9 +48,9 @@ Első lépéskét töltse le a Kiskereskedelmi elemzési és a Lehetőségelemz�
 
 1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), és jelentkezzen be.
 
-2. A bal oldali navigációs ablakban válassza a **Munkaterület**, **Saját munkaterület** lehetőséget.
+2. A navigációs ablaktáblán válassza a **Munkaterületek**, **Saját munkaterület** lehetőséget.
 
-3. A bal alsó sarokban válassza az **Adatok lekérése** lehetőséget.
+3. A bal alsó sarokban kattintson a **Lekérdezés** elemre.
    
     ![](media/mobile-apps-ios-qna/power-bi-get-data.png)
 

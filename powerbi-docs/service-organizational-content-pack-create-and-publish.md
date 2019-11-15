@@ -2,7 +2,6 @@
 title: Szervezeti tartalomcsomag létrehozása és közzététele – Power BI
 description: Ebben az oktatóanyagban egy szervezeti tartalomcsomagot hoz létre, korlátozza az elérését egy adott csoportra, és közzéteszi a cég tartalomcsomagtárában a Power BI-ban.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eb1940f7d5a4e809590b5b425b8005776040a5cc
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 25b63db2d77e84fb3fc1a3e844ceb46ef1a9bd82
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020672"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872014"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Oktatóanyag: Power BI szervezeti tartalomcsomag létrehozása és közzététele
 
@@ -34,9 +33,9 @@ Képzelje el, hogy Ön a Contoso kiadáskezelője, és épp egy új termék kiad
 
 Ha érdekli a megoldás, tartson velünk. A [Power BI szolgáltatásban](https://powerbi.com) lépjen a **Saját munkaterületre**. Ezután az **Adatok lekérése** > **Minták** > **Lehetőségelemzési minta** > **Csatlakozás** pontban töltheti le a saját példányát.
 
-1. A bal oldali navigációs ablaktáblán válassza a **Munkaterületek** > **Saját munkaterületek** lehetőséget.
+1. A navigációs ablaktáblán válassza a **Munkaterületek** > **Saját munkaterületek** lehetőséget.
 
-1. A felső navigációs sávon válassza a fogaskerék ikont ![ Képernyőkép a fogaskerék ikonról.](media/service-organizational-content-pack-create-and-publish/cog.png) > **Tartalomcsomag létrehozása**.
+1. A felső navigációs ablaktáblán válassza a fogaskerék ikont ![Képernyőkép a fogaskerék ikonról.](media/service-organizational-content-pack-create-and-publish/cog.png) > **Tartalomcsomag létrehozása**.
 
    ![Képernyőkép a felhasználói felületről kiemelt fogaskerék ikonnal és Tartalomcsomag létrehozása lehetőséggel.](media/service-organizational-content-pack-create-and-publish/pbi_create_contpk.png)
 
@@ -100,4 +99,4 @@ Ha érdekli a megoldás, tartson velünk. A [Power BI szolgáltatásban](https:/
 
 * [Mi a OneDrive Vállalati verziója?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

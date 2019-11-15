@@ -2,19 +2,18 @@
 title: A jelentéskészítő kiszolgáló termékkulcsának megkeresése
 description: Megtudhatja, hogyan találhatja meg a Power BI jelentéskészítő kiszolgáló termékkulcsát a kiszolgáló éles környezetben történő telepítéséhez.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
-ms.openlocfilehash: 42057ba7cea04f432a39d649c9a4eecc34a0883d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f6eba8e1138f3c7e934de7152acf52a020c19f07
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769625"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859686"
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>A jelentéskészítő kiszolgáló termékkulcsának megkeresése
 Megtudhatja, hogyan találhatja meg a Power BI jelentéskészítő kiszolgáló termékkulcsát a kiszolgáló éles környezetben történő telepítéséhez.
@@ -42,13 +41,13 @@ Ha SQL Server Enterprise Frissítési garancia szerződéssel rendelkezik, a [Me
 > 
 > 
 
-![](media/find-product-key/vlsc-download.png "Mennyiségi licencszolgáltatási központ")
+![](media/find-product-key/vlsc-download.png "Volume Licensing Service Center")
 
 ## <a name="next-steps"></a>Következő lépések
 [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
 [A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése](install-powerbi-desktop.md)  
 [A Jelentéskészítő letöltése](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Az SQL Server Data Tools (SSDT) letöltése](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Az SQL Server Data Tools (SSDT) letöltése](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

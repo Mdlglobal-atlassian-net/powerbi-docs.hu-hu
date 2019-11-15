@@ -2,7 +2,6 @@
 title: A Power BI archivált munkaterülete
 description: A Power BI archivált munkaterülete az Office 365-bérlő kezelése után
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 891ffffd885e2b5d59cba64e6e99ce7fe3cf811b
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 66bf203cad577df0c985fbd73bcab3c6d79f6a95
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175545"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873570"
 ---
 # <a name="power-bi-archived-workspace"></a>A Power BI archivált munkaterülete
 
@@ -24,7 +23,7 @@ ms.locfileid: "71175545"
 
 A Power BI-ra bárki perceken belül regisztrálhat, és megkezdheti a szolgáltatás használatát.  Később a szervezet IT-részlege dönthet úgy, hogy átveszi a Power BI a szervezet felhasználói számára történő kezelését.  Ha ez az átvétel megtörténik a szervezetben, élvezheti a felhasználók és engedélyek központi kezelésének előnyeit. Esetleg kihasználhatja a leegyszerűsített bejelentkezés lehetőségét is, mellyel ugyanazzal a felhasználónévvel és jelszóval jelentkezhet be, mint a szervezet más szolgáltatásaiba.
 
-Azok a tartalmak, amelyeket még azelőtt hozott létre, hogy az IT-részleg megkezdte a Power BI kezelését, a Power BI archivált munkaterületére kerülnek, amely a [Power BI](https://app.powerbi.com) bal oldali navigációs paneljéről érhető el. Az új Power BI-tartalom létrehozását a Saját munkaterületen kezdheti meg, melyet a vállalat IT-részlege biztosít és kezel.  Az archivált munkaterület továbbra is megmarad, de az abban tárolt tartalmon végezhető műveletek korlátozottak lesznek.  A korlátozások eltávolításához migrálnia kell a tartalmat az archivált munkaterületről az IT-részleg által kezelt Saját munkaterületre.
+Azok a tartalmak, amelyeket még azelőtt hozott létre, hogy az informatikai részleg megkezdte volna a Power BI kezelését, a Power BI archivált munkaterületére kerülnek, amely a [Power BI](https://app.powerbi.com) navigációs paneljéről érhető el. Az új Power BI-tartalom létrehozását a Saját munkaterületen kezdheti meg, melyet a vállalat IT-részlege biztosít és kezel.  Az archivált munkaterület továbbra is megmarad, de az abban tárolt tartalmon végezhető műveletek korlátozottak lesznek.  A korlátozások eltávolításához migrálnia kell a tartalmat az archivált munkaterületről az IT-részleg által kezelt Saját munkaterületre.
 
 ## <a name="restrictions-in-your-archived-workspace"></a>Az archivált munkaterület korlátozásai
 
@@ -50,5 +49,5 @@ A Power BI használatának folytatásához hozzon létre új tartalmat a Saját 
 
 * **Irányítópultok**: A tartalomcsomagok részeként telepített irányítópultok automatikusan újra létrejönnek, amikor újrakapcsolódik a tartalomcsomaghoz a Saját munkaterületen. Ha a Power BI szolgáltatásban hozta létre az irányítópultjait, akkor ezeket újra létre kell hoznia a Saját munkaterületen.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

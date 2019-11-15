@@ -2,7 +2,6 @@
 title: Csatlakozás adatokhoz általános illesztők használatával a Power BI Desktopban
 description: Megismerheti, hogyan csatlakoztathat különböző adatforrásokat általános illesztőkkel a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6ac121ee5154a9d343a912904b20d3244ebee59c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b553d9341723c9b44abce57a384d4c7ba76e00a2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513758"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868981"
 ---
 # <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Csatlakozás adatokhoz általános illesztők használatával a Power BI Desktopban
 Számos különböző adatforráshoz csatlakozhat a **Power BI Desktopban** beépített adatösszekötők használatával, kezdve az **Access-adatbázisoktól** a **Zendesk-erőforrásokig**, ahogy ez az **Adatok lekérése** ablakban is látható. Továbbá a **Power BI Desktop** beépített általános illesztőinek használatával (pl.: **ODBC** vagy **REST API-k**) számos *egyéb* adatforráshoz is csatlakozhat, amelyek tovább bővítik kapcsolati lehetőségeit.
@@ -48,16 +47,16 @@ Az alábbi lista néhány példát ismertet azon adatforrások közül, amelyekh
 
 | A Power BI Desktop általános összekötője | Külső adatforrás | További információk hivatkozása |
 | --- | --- | --- |
-| ODBC |Cassandra |[Cassandra ODBC-illesztő](http://www.simba.com/drivers/cassandra-odbc-jdbc/) |
+| ODBC |Cassandra |[Cassandra ODBC-illesztő](https://www.simba.com/drivers/cassandra-odbc-jdbc/) |
 | ODBC |Couchbase DB |[Couchbase és Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
-| ODBC |DynamoDB |[DynamoDB ODBC-illesztő](http://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
-| ODBC |Google BigQuery |[BigQuery ODBC-illesztő](http://www.simba.com/drivers/bigquery-odbc-jdbc/) |
-| ODBC |A HBase |[HBase ODBC-illesztő](http://www.simba.com/drivers/hbase-odbc-jdbc/) |
-| ODBC |Hive |[Hive ODBC-illesztő](http://www.simba.com/drivers/hive-odbc-jdbc/) |
+| ODBC |DynamoDB |[DynamoDB ODBC-illesztő](https://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
+| ODBC |Google BigQuery |[BigQuery ODBC-illesztő](https://www.simba.com/drivers/bigquery-odbc-jdbc/) |
+| ODBC |HBase |[HBase ODBC-illesztő](https://www.simba.com/drivers/hbase-odbc-jdbc/) |
+| ODBC |Hive |[Hive ODBC-illesztő](https://www.simba.com/drivers/hive-odbc-jdbc/) |
 | ODBC |IBM Netezza |[Az IBM Netezzával kapcsolatos információk](https://www.ibm.com/support/knowledgecenter/SSULQD_7.2.1/com.ibm.nz.datacon.doc/c_datacon_plg_overview.html) |
-| ODBC |Presto |[Presto ODBC-illesztő](http://www.simba.com/drivers/presto-odbc-jdbc/) |
+| ODBC |Presto |[Presto ODBC-illesztő](https://www.simba.com/drivers/presto-odbc-jdbc/) |
 | ODBC |Project Online |[A Project Online-nal kapcsolatos cikk](desktop-project-online-connect-to-data.md) |
-| ODBC |Progress OpenEdge |[A Progress OpenEdge ODBC-illesztőre vonatkozó blogbejegyzés](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.progress.com%2Fblogs%2Fconnect-microsoft-power-bi-to-openedge-via-odbc-driver&data=02%7C01%7CMatt.Masson%40microsoft.com%7C5e63742e6c454308b58a08d4034b5923%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636137069555329811&sdata=gSu2Rq3vZ0uBVOgjaXxd8Y3uBf%2B8DidX6PG33jwAduY%3D&reserved=0) |
+| ODBC |Progress OpenEdge |[A Progress OpenEdge ODBC-illesztőre vonatkozó blogbejegyzés](https://www.progress.com/blogs/connect-microsoft-power-bi-to-openedge-via-odbc-driver) |
 
 ## <a name="data-sources-accessible-through-ole-db"></a>OLE DB-n keresztül elérhető adatforrások
 A **Power BI Desktop** **OLE DB**-összekötőjével egyszerűen egy *kapcsolati sztring* megadásával importálhat adatokat bármely harmadik féltől származó OLE DB-illesztőből. Igény szerint megadhat egy, az OLE DB-illesztőn végrehajtandó SQL-utasítást is.

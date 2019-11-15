@@ -3,51 +3,50 @@ title: A Power BI Premium kapacitásainak figyelése a felügyeleti portállal
 description: A Power BI felügyeleti portáljával figyelheti a prémium szintű kapacitások.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/10/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 36b03a67e7c02702a70b6486880cc8eabf93e823
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0d1e0da498a7a2c78e86b643b8a86cb87d6d095a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564891"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856872"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Kapacitások monitorozása a felügyeleti portálon
 
-A **egészségügyi** lapján a **kapacitásbeállítások** terület a felügyeleti portál mérőszámait egy összefoglaló információk a kapacitás és engedélyezve van a számítási feladatokat.  
+A felügyeleti portál **Kapacitásbeállítások** területén található **Állapot** lapon a kapacitással és az engedélyezett számítási feladatokkal kapcsolatos mérőszámok összegzését találja.  
 
-![A kapacitás állapot lapon a portálon](media/service-admin-premium-monitor-portal/admin-portal-health.png)
+![A Kapacitásállapot lap a portálon](media/service-admin-premium-monitor-portal/admin-portal-health.png)
 
-Ha átfogóbb metrikák van szüksége, használja a [Power BI Premium kapacitás-metrikák](service-admin-premium-monitor-capacity.md) alkalmazást. Az alkalmazás biztosít részletes elemzés és szűrési, és a legrészletesebb metrikák majdnem minden szempontból kapacitás teljesítményét. További tudnivalókért lásd: [figyelő prémium szintű kapacitások az alkalmazással](service-admin-premium-monitor-capacity.md).
+Ha átfogóbb metrikákra van szüksége, használja a [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) alkalmazást. Az alkalmazás részletekbe menő elemzést, szűrést, és a kapacitásteljesítményre hatást gyakorló szinte minden tényezőhöz részletes mérőszámokat biztosít. További tudnivalókért lásd: [Prémium szintű kapacitások monitorozása az alkalmazással](service-admin-premium-monitor-capacity.md).
 
-## <a name="system-metrics"></a>Rendszer-metrikák
+## <a name="system-metrics"></a>Rendszermetrikák
 
-Az a **egészségügyi** lapon, a legfelső szinten CPU-kihasználtság és a memóriahasználat a legfontosabb metrikákat, a kapacitás gyors áttekintést nyújt. Ezek a metrikák halmozott, többek között a kapacitás a számítási feladatok engedélyezve.
-
-| **Metrika** | **Leírás** |
-| --- | --- |
-| CPU-KIHASZNÁLTSÁG | Átlagos CPU-kihasználtság, a teljes rendelkezésre álló Processzorkapacitást százalékában. |
-| MEMÓRIAHASZNÁLAT | Átlagos memóriahasználat (gigabájtban).|
-
-## <a name="workload-metrics"></a>Munkaterhelési mérőszámokat
-
-Minden számítási kapacitásért engedélyezve van. CPU-kihasználtság és a memóriahasználat jelennek meg.
+Az **Állapot** lapon a processzorhasználat és a memóriahasználat gyors és általános áttekintést nyújt a kapacitás legfontosabb mérőszámairól. Ezek a metrikák kumulatívak, beleértve a kapacitáshoz engedélyezett összes számítási feladatot.
 
 | **Metrika** | **Leírás** |
 | --- | --- |
-| CPU-KIHASZNÁLTSÁG | Átlagos CPU-kihasználtság, a teljes rendelkezésre álló Processzorkapacitást százalékában. |
-| MEMÓRIAHASZNÁLAT | Átlagos memóriahasználat (gigabájtban).|
+| CPU-KIHASZNÁLTSÁG | Az átlagos processzorkihasználtság a teljes elérhető CPU százalékában. |
+| MEMÓRIAHASZNÁLAT | Átlagos memóriahasználat, gigabájtban (GB) kifejezve.|
 
-### <a name="detailed-workload-metrics"></a>Részletes munkaterhelési mérőszámokat
+## <a name="workload-metrics"></a>Számítási feladatok metrikái
 
-Minden számítási feladathoz tartozik a további metrikákat. A feltüntetett metrikákat típusa attól függ, hogy a számítási feladatok. Számítási feladatok részletes metrikáinak megtekintéséhez kattintson a Kibontás (le).
+A kapacitáshoz engedélyezett összes számítási feladatra vonatkozóan. A rendszer megjeleníti a processzor- és memóriahasználatot.
 
-![Bontsa ki a számítási feladat állapota](media/service-admin-premium-monitor-portal/admin-portal-health-expand.png)
+| **Metrika** | **Leírás** |
+| --- | --- |
+| CPU-KIHASZNÁLTSÁG | Az átlagos processzorkihasználtság a teljes elérhető CPU százalékában. |
+| MEMÓRIAHASZNÁLAT | Átlagos memóriahasználat, gigabájtban (GB) kifejezve.|
+
+### <a name="detailed-workload-metrics"></a>Számítási feladatok részletes metrikái
+
+Minden számítási feladathoz további metrikák is tartoznak. A megjelenő metrikák típusa az érintett számítási feladattól függ. A számítási feladat részletes metrikáinak megtekintéséhez kattintson a kibontási (lefelé mutató) nyílra.
+
+![Számítási feladat állapotának kibontása](media/service-admin-premium-monitor-portal/admin-portal-health-expand.png)
 
 #### <a name="dataflows"></a>Adatfolyamok
 
@@ -56,9 +55,9 @@ Minden számítási feladathoz tartozik a további metrikákat. A feltüntetett 
 | **Metrika** | **Leírás** |
 | --- | --- |
 | Teljes darabszám | Az egyes adatfolyamok frissítéseinek teljes száma. |
-| Sikeres műveletek száma | Minden egyes adatfolyamot teljes sikeres frissítését.|
-| Átlagos időtartama (perc) | Az adatfolyam frissítéseinek átlagos időtartama, percekben kifejezve |
-| Max. időtartam (perc) | Az adatfolyam leghosszabb ideig futó frissítésének időtartama, percekben kifejezve. |
+| Sikeres műveletek száma | Az egyes adatfolyamok sikeres frissítéseinek teljes száma.|
+| Átlagos időtartam (perc) | Az adatfolyam frissítéseinek átlagos időtartama, percekben kifejezve |
+| Maximális időtartam (perc) | Az adatfolyam leghosszabb ideig futó frissítésének időtartama, percekben kifejezve. |
 | Átlagos várakozási idő (perc) | Az ütemezett időpont és az adatfolyam frissítésének kezdete közötti átlagos késés, percekben kifejezve. |
 | Maximális várakozási idő (perc) | Az adatfolyamhoz tartozó leghosszabb várakozási idő, percekben kifejezve.  |
 
@@ -69,11 +68,11 @@ Minden számítási feladathoz tartozik a további metrikákat. A feltüntetett 
 | **Metrika** | **Leírás** |
 | --- | --- |
 | Teljes darabszám | Az egyes adathalmazok frissítéseinek teljes száma. |
-| Sikeres műveletek száma | Összes sikeres frissül az egyes adatkészletek. |
-| Hibásak száma | Összes sikertelen frissül az egyes adatkészletek. |
-| Sikerességi arány  | Mérhető összesített frissítések osztva a sikeres frissítések száma. Megbízhatóságát. |
-| Átlagos időtartama (perc) | Az adathalmaz frissítéseinek átlagos időtartama, percekben kifejezve.  |
-| Max. időtartam (perc) | Az adathalmaz leghosszabb ideig futó frissítésének időtartama, percekben kifejezve. |
+| Sikeres műveletek száma | Az egyes adathalmazok sikeres frissítéseinek teljes száma. |
+| Hibásak száma | Az egyes adathalmazok sikertelen frissítéseinek teljes száma. |
+| Sikerességi arány  | A sikeres frissítések száma elosztva és a mérni kívánt frissítések teljes számával. megbízhatóság. |
+| Átlagos időtartam (perc) | Az adathalmaz frissítéseinek átlagos időtartama, percekben kifejezve.  |
+| Maximális időtartam (perc) | Az adathalmaz leghosszabb ideig futó frissítésének időtartama, percekben kifejezve. |
 | Átlagos várakozási idő (perc) | Az ütemezett időpont és az adathalmaz frissítésének kezdete közötti átlagos késés, percekben kifejezve. |
 | Maximális várakozási idő (perc) | Az adathalmazhoz tartozó leghosszabb várakozási idő, percekben kifejezve. |
 
@@ -87,37 +86,37 @@ Minden számítási feladathoz tartozik a további metrikákat. A feltüntetett 
 | Átlagos várakozási idő (ms) |Az adathalmaz lekérdezéseinek átlagos várakozási időtartama, ezredmásodpercben megadva. |
 | Maximális várakozási idő (ms) |Az adathalmaz leghosszabb ideig várakozó lekérdezésének időtartama, ezredmásodpercben megadva. |
 
-##### <a name="eviction"></a>Kiürítés
+##### <a name="eviction"></a>Kizárás
 
 | **Metrika** | **Leírás** |
 | --- | --- |
-| Modell száma | A kapacitásnak az adatkészlet adatbázislap teljes száma. Ha egy kapacitásban magas memóriaterhelés lép fel, a csomópont egy vagy több adathalmazt kizár a memóriából. Először az inaktív adathalmazok (nincs végrehajtás alatt álló lekérdezési/frissítési művelet) lesznek kizárva. Ezután a „legrégebben használt” (LRU) paraméter értéke határozza meg a kizárási sorrendet. |
+| Modellek száma | A kapacitás adathalmaz-kizárásainak teljes száma. Ha egy kapacitásban magas memóriaterhelés lép fel, a csomópont egy vagy több adathalmazt kizár a memóriából. Először az inaktív adathalmazok (nincs végrehajtás alatt álló lekérdezési/frissítési művelet) lesznek kizárva. Ezután a „legrégebben használt” (LRU) paraméter értéke határozza meg a kizárási sorrendet. |
 
 #### <a name="paginated-reports"></a>Lapszámozott jelentések
 
-##### <a name="report-execution"></a>Jelentés-végrehajtás
+##### <a name="report-execution"></a>Jelentés végrehajtása
 
 | **Metrika** | **Leírás** |
 | --- | --- |
-| Végrehajtások száma  | A jelentés már végre lett hajtva. hányszor és felhasználók tekinthetők meg.|
+| Végrehajtások száma  | Azon alkalmak száma, amikor a jelentés végre lett hajtva, és egy felhasználó megtekintette.|
 
-##### <a name="report-usage"></a>Használati jelentés
+##### <a name="report-usage"></a>Jelentés használata
 
 | **Metrika** | **Leírás** |
 | --- | --- |
-| Sikeres műveletek száma | A szám, ahányszor a felhasználó megtekinti a jelentést. |
-| Hibásak száma |A szám, ahányszor a felhasználó megtekinti a jelentést.|
+| Sikeres műveletek száma | Azon alkalmak száma, amikor egy felhasználó megtekintette a jelentést. |
+| Hibásak száma |Azon alkalmak száma, amikor egy felhasználó megtekintette a jelentést.|
 | Sorok száma |A jelentésben szereplő adatsorok száma. |
-| Adatok lekérése időtartama (ms) |Az adatok jelentéshez való lekérésének átlagos időtartama, ezredmásodpercben megadva. A hosszú időtartamok lassú lekérdezésekre vagy az adatforrással kapcsolatos más problémára utalhatnak.  |
+| Adatlekérési időtartam (ms) |Az adatok jelentéshez való lekérésének átlagos időtartama, ezredmásodpercben megadva. A hosszú időtartamok lassú lekérdezésekre vagy az adatforrással kapcsolatos más problémára utalhatnak.  |
 | Feldolgozási időtartam (ms) |Az adatok jelentéshez való feldolgozásának átlagos időtartama, ezredmásodpercben megadva. |
-| Renderelési időtartama (ms) |A jelentés böngészőben való renderelésének átlagos időtartama, ezredmásodpercben megadva. |
+| Renderelési időtartam (ms) |A jelentés böngészőben való renderelésének átlagos időtartama, ezredmásodpercben megadva. |
 
 > [!NOTE]
-> Részletes metrikáinak a **AI** számítási feladatok még nem érhető el.
+> Az **AI** számítási feladathoz még nem érhetők el részletes metrikák.
 
 ## <a name="next-steps"></a>Következő lépések
 
 Most, hogy megismerkedett a Power BI Premium kapacitásainak monitorozásával, tudjon meg többet a kapacitás optimalizálásáról is.
 
 > [!div class="nextstepaction"]
-> [A Power BI Premium-kapacitásait optimalizálása](service-premium-capacity-optimize.md)
+> [Power BI Premium-kapacitások optimalizálása](service-premium-capacity-optimize.md)

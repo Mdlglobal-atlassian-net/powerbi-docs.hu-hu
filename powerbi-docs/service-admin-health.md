@@ -2,7 +2,6 @@
 title: A Power BI szolgáltatás állapotának követése az Office 365-ben
 description: 'Útmutató: hogyan tekintheti meg a szolgáltatás állapotának jelenlegi és előzményadatait a Microsoft 365 Felügyeleti központban.'
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 579950320c3193e9cc1921a06d5b121ff0b58ae0
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 0e944dfa34bec1e1c1816cf80d7dc2df7252b65a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075359"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857685"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>A Power BI szolgáltatás állapotának követése az Office 365-ben
 
@@ -29,7 +28,7 @@ További információk a szerepkörökről: [A Power BI-jal kapcsolatos rendszer
 
 1. Jelentkezzen be a [Microsoft 365 Felügyeleti központba](https://portal.office.com/adminportal).
 
-1. A bal oldali navigációs sávon válassza az **Összes megjelenítése** > **Állapot** > **Szolgáltatásállapot** lehetőséget. Megjelenik a Szolgáltatásállapot lap:
+1. Válassza a navigációs panelen az **Összes megjelenítése** > **Állapot** > **Szolgáltatás állapota** lehetőséget. Megjelenik a Szolgáltatásállapot lap:
 
     ![Képernyőkép a Microsoft 365 Felügyeleti központról, kiemelt Állapot és Szolgáltatásállapot lehetőségekkel.](media/service-admin-health/service-health-tile.png)
 

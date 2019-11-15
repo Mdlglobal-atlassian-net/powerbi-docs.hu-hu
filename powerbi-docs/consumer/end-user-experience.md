@@ -2,22 +2,21 @@
 title: Navigáció a Power BI szolgáltatásban
 description: A Power BI navigációs felületének áttekintése
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 10/18/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 14c7f88e0bfb822a73a72958f556443260f6ed76
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: e6be58971b265414440041f4667a0b0cc455cdd4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589454"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851532"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Rövid útmutató – Navigáció a Power BI szolgáltatásban
 
@@ -57,7 +56,7 @@ A Saját munkaterületen belül a tartalom 4 lapon van elhelyezve: irányítópu
 
 ![Saját munkaterület képernyő](./media/end-user-experience/power-bi-my-workspace.png)
 
-Jelöljön ki egy munkaterület a bal oldali navigációs ablaktáblában, és a Power BI vásznát jobb oldalt a vonatkozó tartalmak (irányítópultok, jelentések, munkafüzetek, adatkészletek) lapfülei fogják kitölteni.
+Jelöljön ki egy munkaterületet a navigációs ablaktáblán, és a Power BI vásznát jobb oldalt a vonatkozó tartalmak (irányítópultok, jelentések, munkafüzetek, adathalmazok) lapfülei fogják kitölteni.
 
 Ha új felhasználó, akkor csak egyetlen munkaterületet lát – a **Saját munkaterület** nevű munkaterületet.
 
@@ -82,7 +81,7 @@ A **Kedvencek** segítségével gyorsan elérheti azokat a tartalmakat, amelyek 
    
    ![kedvenc eltávolítása](./media/end-user-experience/power-bi-unfavorite2.png)
 
-2. Az összes kedvencnek jelölt tartalom megtekintéséhez a bal oldali navigációs panelen válassza ki a **Kedvencek** felirat mellett található nyilat. Mivel a bal oldali navigációs panel mindig látható, ezért ezt a listát a Power BI szolgáltatásból bárhonnan elérheti.
+2. Az összes kedvencnek jelölt tartalom megtekintéséhez a navigációs ablaktáblán válassza ki a **Kedvencek** felirat mellett található nyilat. Mivel a navigációs ablaktábla mindig látható, ezért ezt a listát a Power BI szolgáltatásból bárhonnan elérheti.
    
     ![kedvencek úszó menü](./media/end-user-experience/power-bi-favorite.png)
    
@@ -92,7 +91,7 @@ A **Kedvencek** segítségével gyorsan elérheti azokat a tartalmakat, amelyek 
    
    ![megjelölés kedvencként](./media/end-user-experience/power-bi-report-favorite.png)
 
-3. Nyissa meg a **Kedvencek** *panelt* a bal oldali navigációs panelen lévő **Kedvencek** lehetőség választásával, vagy a csillag ikont ![](media/end-user-experience/powerbi-star-icon.png) választva.
+3. Nyissa meg a **Kedvencek** *panelt* a navigációs ablaktáblán lévő **Kedvencek** lehetőség vagy a csillag ikon ![sárga csillag ikon képernyőképe](media/end-user-experience/powerbi-star-icon.png) kiválasztásával.
    
    ![a Kedvencek képernyő megnyitása](./media/end-user-experience/power-bi-favorite-pane.png)
    
@@ -107,13 +106,13 @@ További információ: [Kedvencek](end-user-favorite.md).
 
 ## <a name="locate-your-most-recent-content"></a>Legutóbbi tartalmak megkeresése
 
-1. A Kedvencekhez hasonlóan a legutóbbi elemeket is bárhonnan láthatja a Power BI szolgáltatásban, ha a bal oldali navigációs panelen a **Legutóbbi** felirat mellett található nyilat választja.
+1. A Kedvencekhez hasonlóan a legutóbbi elemeket is bárhonnan láthatja a Power BI szolgáltatásban, ha a navigációs ablaktáblán kiválasztja a **Legutóbbiak** felirat mellett található nyilat.
 
    ![Legutóbbi úszó menü](./media/end-user-experience/power-bi-recent-flyout.png)
 
     A megjelenő menüben kiválaszthatja a megnyitandó tartalmat.
 
-2. Időnként előfordulhat, hogy nem megnyitni szeretné a legutóbbi tartalmat, hanem csak adatokra kíváncsi, vagy olyan műveleteket végezne, mint a megállapítások megtekintése vagy az Excelbe exportálás. Ilyen esetben nyissa meg a **Legutóbbi** ablaktáblát a bal oldali navigációs ablakban lévő **Legutóbbi** elem vagy az ikonja választásával. Egynél több munkaterület esetén ez a lista az összes munkaterületről megjeleníti a tartalmakat.
+2. Időnként előfordulhat, hogy nem megnyitni szeretné a legutóbbi tartalmat, hanem csak adatokra kíváncsi, vagy olyan műveleteket végezne, mint a megállapítások megtekintése vagy az Excelbe exportálás. Ilyen esetben nyissa meg a **Legutóbbiak** panelt a **Legutóbbiak** elem vagy a navigációs ablaktáblán lévő ikonja kiválasztásával. Egynél több munkaterület esetén ez a lista az összes munkaterületről megjeleníti a tartalmakat.
 
    ![Legutóbbi ablaktábla](./media/end-user-experience/power-bi-recent.png)
 
@@ -137,8 +136,8 @@ További információkért olvassa el a [Power BI-ban végzett navigáció keres
 ## <a name="clean-up-resources"></a>Erőforrások felszabadítása
 Miután elkészült ezzel a gyors útmutatóval, igény szerint eltávolíthatja a Kiskereskedelmi elemzési mintát, a jelentést és az adatkészletet.
 
-1. Nyissa meg a Power BI-szolgáltatást (app.powerbi.com), és jelentkezzen be.    
-2. A bal oldali navigációs panelen válassza a **Munkaterületek > Saját munkaterület** lehetőséget.  
+1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), és jelentkezzen be.    
+2. A navigációs ablaktáblán válassza a **Munkaterületek > Saját munkaterület** lehetőséget.  
     Látja a sárga csillagot, amely a kedvencnek jelölést mutatja?    
 3. Az **Irányítópult** lapon kattintson a **Törlés** (kuka) ikonra a Kiskereskedelmi elemzés irányítópultja mellett.    
 

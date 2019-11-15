@@ -3,18 +3,17 @@ title: Adatok elküldése adatkészletbe
 description: Adatok elküldése Power BI-adatkészletbe
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 9eb81610044f795b6f9dc5c58aeefad13de06542
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5db16bfdc1013668be5103f392d6f298c8faf925
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222156"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875443"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Adatok elküldése Power BI-adatkészletbe
 
@@ -43,7 +42,7 @@ Az adatok adatkészletbe történő elküldéséhez használható műveletek az 
 * [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
 * [Csoportok lekérése](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
 
-Adatkészletet úgy hozhat létre a Power BI-ban, hogy átad egy JavaScript Object Notation- (JSON-) sztringet a Power BI szolgáltatásnak. További információt a JSON-karakterláncokról [a JSON ismertetésében](http://json.org/) talál.
+Adatkészletet úgy hozhat létre a Power BI-ban, hogy átad egy JavaScript Object Notation- (JSON-) sztringet a Power BI szolgáltatásnak. További információt a JSON-karakterláncokról [a JSON ismertetésében](https://json.org/) talál.
 
 Az adatkészletek JSON-sztringjének formátuma a következő:
 
@@ -112,13 +111,13 @@ Power BI-táblaséma esetén az alábbi adattípusok használhatók.
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>További információk az adatoknak a Power BI-ba leküldésével kapcsolatban
 
-Az adatok adatkészletekbe történő küldésének első lépéseihez tekintse meg a bal oldali navigációs ablaktábla [1. lépés: Alkalmazás regisztrálása az Azure AD-ben](walkthrough-push-data-register-app-with-azure-ad.md) című szakaszát.
+Az adatok adatkészletekbe történő küldésének első lépéseihez tekintse meg a bal oldali navigációs ablaktábla [1. lépés: Alkalmazás regisztrálása az Azure AD-ben](walkthrough-push-data-register-app-with-azure-ad.md) elemét.
 
 [Következő lépés >](walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## <a name="next-steps"></a>Következő lépések
 
 [Regisztráció a Power BI-ra](create-an-azure-active-directory-tenant.md)  
-[A JSON ismertetése](http://json.org/)  
+[A JSON ismertetése](https://json.org/)  
 [A Power BI REST API áttekintése](overview-of-power-bi-rest-api.md)  
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: A Power BI-jelentésekben elérhető új szűrési felület
 description: A Power BI szűrői új funkciókat és új megjelenést kapnak.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e5e67863888e5bd6d611ded7a58254fe693f4bb6
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: ab7d8a34211b9cb8addd90daf2cbce7d22f10e61
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841256"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875141"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>A Power BI-jelentésekben elérhető új szűrési felület
 
@@ -44,7 +43,7 @@ Az új jelentésekben alapértelmezés szerint be van kapcsolva az új szűrési
 ### <a name="turn-on-new-filters-for-an-existing-report-in-power-bi-desktop"></a>Új szűrők bekapcsolása meglévő jelentéshez a Power BI Desktopban
 
 1. A Power BI Desktopban egy meglévő jelentésben válassza a **Fájl** > **Lehetőségek és beállítások** > **Beállítások** lehetőséget.
-2. A bal oldali navigációs sáv **Aktuális fájl** területén válassza a **Jelentésbeállítások** szakaszt.
+2. A navigációs panelen az **Aktuális fájl** területen válassza a **Jelentésbeállítások** szakaszt.
 3. A **Szűrési felület** alatt jelölje be a **Frissített szűrőpanel engedélyezése, valamint a szűrők megjelenítése a jelentés vizualizációjának fejlécében** lehetőséget.
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Új szűrők bekapcsolása meglévő jelentéshez a szolgáltatásban
@@ -238,5 +237,5 @@ Próbálja ki az új szűrési felületet. Küldjön visszajelzést erről a fun
 - [Szűrők és kiemelések a jelentésekben](power-bi-reports-filters-and-highlighting.md)
 - [Különböző szűrők a Power BI-ban](power-bi-report-filter-types.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

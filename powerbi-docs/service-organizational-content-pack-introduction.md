@@ -2,7 +2,6 @@
 title: Bevezetés a Power BI szervezeti tartalomcsomagjainak használatába
 description: Ebben a cikkben arról olvashat, miként rendezheti olyan szervezeti tartalomcsomagokba irányítópultjait, jelentéseit, Excel-munkafüzeteit és adatkészleteit, amelyeket aztán megoszthat munkatársaival.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c5f56df51a1f18db7c2080afb79f4ac7abfb2444
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: b766cc4eae71b94a28e12ba989f85542fec2ab83
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431746"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871975"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Bevezetés a Power BI szervezeti tartalomcsomagjainak használatába
 > [!NOTE]
@@ -54,7 +53,7 @@ Az életciklus nagyjából így alakul:
    > 
    > 
 2. Szabolcs e-mailben értesíti a terjesztési csoport tagjait az új tartalomcsomagról.
-3. A Power BI Próban Borbála, a Marketing terjesztési csoport tagja rátalál erre a tartalomcsomagra, és kapcsolódik hozzá az AppSource-ban. Ezzel egy csak olvasható példányhoz jut hozzá. Tisztában van vele, hogy a csomag csak olvasható, mert a navigációs panelen a megosztást jelző ikon látható az irányítópult neve és a jelentés neve mellett. És amikor kiválasztja az irányítópultot, egy lakatot ábrázoló ikon jelzi neki, hogy egy tartalomcsomag irányítópultjával van dolga. 
+3. A Power BI Próban Borbála, a Marketing terjesztési csoport tagja rátalál erre a tartalomcsomagra, és kapcsolódik hozzá az AppSource-ban. Ezzel egy csak olvasható példányhoz jut hozzá. Borbála tisztában van vele, hogy a példány csak olvasható, mert a navigációs ablaktáblán a megosztást jelző ikon látható az irányítópult nevétől és a jelentés nevétől balra. És amikor kiválasztja az irányítópultot, egy lakatot ábrázoló ikon jelzi neki, hogy egy tartalomcsomag irányítópultjával van dolga. 
 4. Tegyük fel, hogy testreszabja a csomagot. Így már saját példánya van az irányítópultból és a jelentésekből. A munkája nem érinti a forrást, sem az eredeti tartalomcsomagot, és a terjesztési csoport többi tagját sem. Ők már saját irányítópult- és jelentéspéldányukon dolgoznak.
 5. Szabolcs módosítja az irányítópultot, és amikor elkészült, közzéteszi a tartalomcsomag új verzióját.
    
@@ -63,11 +62,11 @@ Az életciklus nagyjából így alakul:
 6. Tegyük fel, hogy Szabolcs módosítja a biztonsági beállításokat. Géza és Borbála ettől kezdve nem fér hozzá a tartalomhoz. Vagy feltételezzük azt, hogy törlik őket a Marketing terjesztési csoportból.
    
    * Géza nem szabta testre az eredeti tartalomcsomagot, így a tartalom automatikusan törlődik. 
-   * Borbála azonban testre szabta a tartalomcsomagot. Amikor legközelebb megnyitja az irányítópultot, már egyetlen csempe sem jelenik meg az eredeti tartalomcsomagból, de a más (számára még most is elérhető) jelentésekből általa rögzített csempék továbbra is láthatók. Az adatkészlet és a kapcsolódó jelentések már nem érhetők el (és nem jelennek meg a bal oldali navigációs panelen).
+   * Borbála azonban testre szabta a tartalomcsomagot. Amikor legközelebb megnyitja az irányítópultot, már egyetlen csempe sem jelenik meg az eredeti tartalomcsomagból, de a más (számára még most is elérhető) jelentésekből általa rögzített csempék továbbra is láthatók. Az adathalmaz és a kapcsolódó jelentések már nem érhetők el (és nem jelennek meg a navigációs ablaktáblán).
 7. Vagy például Szabolcs törli a tartalomcsomagot.
    
    * Géza nem szabta testre az eredeti tartalomcsomagot, így a tartalom automatikusan törlődik. 
-   * Borbála azonban testre szabta a tartalomcsomagot. Amikor legközelebb megnyitja az irányítópultot, már egyetlen csempe sem jelenik meg az eredeti tartalomcsomagból, de a más jelentésekből általa rögzített csempék továbbra is láthatók. Az adatkészlet és a kapcsolódó jelentések már nem érhetők el (és nem jelennek meg a bal oldali navigációs panelen).
+   * Borbála azonban testre szabta a tartalomcsomagot. Amikor legközelebb megnyitja az irányítópultot, már egyetlen csempe sem jelenik meg az eredeti tartalomcsomagból, de a más jelentésekből általa rögzített csempék továbbra is láthatók. Az adathalmaz és a kapcsolódó jelentések már nem érhetők el (és nem jelennek meg a navigációs ablaktáblán).
 
 ## <a name="data-security"></a>Adatbiztonság
 A terjesztési csoport minden tagja ugyanolyan jogosultságokkal rendelkezik az adatokra vonatkozóan, mint a tartalomcsomag létrehozója. Ez alól csak a helyszíni táblázatos SQL Server Analysis Services-adatkészletek (SSAS-adatkészletek) adatkészletek képeznek kivételt. Mivel a jelentések és az irányítópultok élőben csatlakoznak a helyszíni SSAS-modellhez, ezért a terjesztési csoport egyes tagjainak hitelesítő adatai határozzák meg, hogy mely adatokhoz fér hozzá az adott felhasználó.
@@ -76,5 +75,5 @@ A terjesztési csoport minden tagja ugyanolyan jogosultságokkal rendelkezik az 
 * [Szervezeti tartalomcsomag létrehozása és közzététele](service-organizational-content-pack-create-and-publish.md)
 * [Alkalmazások létrehozása és terjesztése a Power BI-ban](service-create-distribute-apps.md) 
 * [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

@@ -2,21 +2,20 @@
 title: Tippek és trükkök térképekhez (beleértve a Bing Maps-integrációt)
 description: 'Tippek és trükkök Power BI-térképvizualizációkhoz, vizualizációkhoz, helyekhez, szélességhez és hosszúsághoz, valamint ezek a Bing Térképekkel való használatához. '
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5ae83079ae0dffca42498644f4de628bc626bb5e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: dd35f06a685d1fd4620ef6a2ee3dc7f90e702a6a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61411847"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881040"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tippek és trükkök Power BI-térképvizualizációkhoz
 A Power BI integrálva van a Bing Térképekkel alapértelmezett térképkoordináták biztosításához (ez a geokódolás nevű folyamat), így térképeket hozhat létre. Együtt algoritmusokat használnak a megfelelő hely azonosításához, de ez néha csak feltételezésen alapul. Ha a Power BI nem tudja egyedül létrehozni a térkép-vizualizációt, igénybe veszi a Bing Térképek segítségét. 
@@ -26,12 +25,13 @@ Lehetséges, hogy Önnek vagy a cégnek frissítenie kell a tűzfalat, hogy enge
 * https://platform.bing.com/geo/spatial/v1/public/Geodata
 * https://www.bing.com/api/maps/mapcontrol
 
-A helyes geokódolás valószínűségének növelése érdekében használja az alábbi tippeket. Az első tippgyűjteményt akkor használhatja, ha hozzáféréssel rendelkezik magához az adatkészlethez. A második tippgyűjtemény olyan tippeket tartalmaz, amelyeket a Power BI-ban végezhet el, ha nem fér hozzá az adatkészlethez. Az utolsó gyűjtemény pedig URL-eket taralmaz
+A helyes geokódolás valószínűségének növelése érdekében használja az alábbi tippeket. Az első tippgyűjteményt akkor használhatja, ha hozzáféréssel rendelkezik magához az adatkészlethez. A második tippgyűjtemény olyan tippeket tartalmaz, amelyeket a Power BI-ban végezhet el, ha nem fér hozzá az adatkészlethez. 
 
 ## <a name="what-is-sent-to-bing-maps"></a>Mit küld el a rendszer a Bing Térképeknek?
-A Power BI szolgáltatás és a Power BI Desktop a térkép-vizualizációhoz szükséges geoadatokat küldi el a Bingnek. Ezek tartalmazhatják a **Hely**, **Szélesség** és **Hosszúság** gyűjtők adatait és a **Jelentésszintű szűrők**, **Oldalszintű szűrők** vagy a **Vizualizációszintű szűrők** gyűjtők geomezőit. Az, hogy pontosan mit küld el a rendszer, térképtípusonként eltérő. További tudnivalókért lásd a [Bing Térképek adatvédelmi tájékoztatóját](https://go.microsoft.com/fwlink/?LinkID=248686).
+A Power BI szolgáltatás és a Power BI Desktop a térkép-vizualizációhoz szükséges földrajzi adatokat küldi el a Bingnek. Ezek tartalmazhatják a **Hely**, **Szélesség** és **Hosszúság** gyűjtők adatait és a **Jelentésszintű szűrők**, **Oldalszintű szűrők** vagy a **Vizualizációszintű szűrők** gyűjtők geomezőit. Az, hogy pontosan mit küld el a rendszer, térképtípusonként eltérő. További tudnivalókért lásd a [Bing Térképek adatvédelmi tájékoztatóját](https://go.microsoft.com/fwlink/?LinkID=248686).
 
-* Térképek (buboréktérképek) esetében, ha a szélesség és a hosszúság meg van adva, akkor a rendszer nem küld adatokat a Bingnek. Egyéb esetben a **Hely** (és szűrő) gyűjtőkben található adatokat a rendszer elküldi a Bingnek.     
+* Térképek (buborék-, pont- és pöttydiagram-térképek) esetében, ha a szélesség és a hosszúság meg van adva, akkor a rendszer nem küld adatokat a Bingnek. Egyéb esetben a **Hely** (és szűrő) gyűjtőkben található adatokat a rendszer elküldi a Bingnek.     
+
 * Kitöltött térképekhez szükség van egy mezőre a **Hely** gyűjtőben akkor is, ha a szélesség és hosszúság meg van adva. Bármely, a **Hely**, **Szélesség** vagy **Hosszúság** gyűjtőben található adatot a rendszer elküldi a Bingnek.
   
     A lenti példában a **Szállító** mező geokódoláshoz lett használva, így a Bing minden szállítói adatot megkap. A **Méret** és **Színtelítettség** gyűjtőkben lévő adatokat a rendszer nem küldi el a Bingnek.
@@ -47,7 +47,7 @@ Ha hozzáféréssel rendelkezik a térkép-vizualizáció létrehozásához hasz
 
 **1. Földrajzi mezők kategorizálása a Power BI Desktopban**
 
-A Power BI Desktopban biztosíthatja a mezők helyes geokódolását úgy, hogy az adatmezőkön beállítja az *Adatkategóriát*. Válassza ki a kívánt táblát, lépjen a **Speciális** menüszalagra, majd állítsa az **Adatkategóriát** **Cím**, **Város**, **Kontinens**, **Ország/régió**, **Megye**, **Irányítószám**, **Állam** vagy **Tartomány** lehetőségre. Ezek az adatkategóriák segítenek a Bingnek helyesen kódolni az adatokat. További tudnivalókért lásd az [adatok kategorizálását a Power BI Desktopban](../desktop-data-categorization.md). Ha élőben csatlakozik az SQL Server Analysis Serviceshez, be kell állítania a Power BI-n kívüli adatkategorizálást az [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) használatával.
+A Power BI Desktopban biztosíthatja a mezők helyes geokódolását úgy, hogy az adatmezőkön beállítja az *Adatkategóriát*. Az Adatnézetben válassza ki a kívánt oszlopot. A szalagon válassza a **Modellezés** lapot, majd állítsa az **Adatkategóriát** **Cím**, **Város**, **Kontinens**, **Ország/régió**, **Megye**, **Irányítószám**, **Állam** vagy **Tartomány** értékre. Ezek az adatkategóriák segítenek a Bingnek helyesen kódolni az adatokat. További tudnivalókért lásd az [adatok kategorizálását a Power BI Desktopban](../desktop-data-categorization.md). Ha élőben csatlakozik az SQL Server Analysis Serviceshez, be kell állítania a Power BI-n kívüli adatkategorizálást az [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) használatával.
 
 **2. Több helyoszlop használata.**     
  Időnként az adatkategóriák beállítása a térképekhez nem elég, hogy a Bing helyesen megállapítsa a szándékait. Néhány megjelölés nem egyértelmű, mivel a hely több országban vagy régióban is megtalálható. Például ***Southampton*** Angliában, Pennsylvaniában és New Yorkban is található.
@@ -56,7 +56,7 @@ A Power BI a Bing [strukturálatlan URL-sablon szolgáltatását](https://msdn.m
 
  Például ha csak Város oszloppal rendelkezik, a Bing nehezen tudja elvégezni a geokódolást. Adjon hozzá további geooszlopokat, hogy egyértelművé tegye a helyet.  Néha egyetlen további helyoszlop hozzáadása is elég az adatkészlethez – ebben az esetben ez az állam/megye. Ne felejtse el helyesen kategorizálni, ehhez lásd az 1. lépést.
 
-Győződjön meg arról, hogy minden mező csak a kategorizáláshoz társított, adott információval rendelkezik.  Például a Város helymezője **Southampton**, ne **Southampton, New York** legyen.  A cím helymezője **1 Microsoft Way**, és ne **1 Microsoft Way, Redmond, WA** legyen.
+Győződjön meg arról, hogy minden mezőhöz csak egyetlen helykategória tartozik. Például a Város helymezője **Southampton**, ne **Southampton, New York** legyen.  A cím helymezője **1 Microsoft Way**, és ne **1 Microsoft Way, Redmond, WA** legyen.
 
 **3. Adott Szélesség és Hosszúság használata**
 
@@ -84,8 +84,8 @@ Ha az adatkészlet már rendelkezik helyadatok különböző szintjeivel, Ön é
 
 Ha a geohierarchiákkal végez le- vagy felhatolást, fontos tudnia, hogyan működnek az egyes részletezési gombok, és mit küld el a rendszer a Bing Térképeknek. 
 
-* A jobb szélen található, Részletezési mód nevű gomb ![](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png) lehetővé teszi egy hely kiválasztását a térképen, és hogy szintenként részletes elemzést végezzen az adott helyen. Például ha bekapcsolja a Részletes elemzést, és Észak-Amerikára kattint, lejjebb kerül a hierarchia következő szintjére – Észak-Amerika esetében az államokhoz. A geokódolásnál a Power BI a Bing Térképeknek csak Észak-Amerikáról küld országra és államra vonatkozó adatokat.  
-* A bal oldalon 2 további részletes elemzési lehetőség van. Az első lehetőség (![](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png)) az összes hely hierarchiájának következő szintjére hatol le, egyszerre. Például ha aktuálisan az országok jelennek meg, használja ezt a lehetőséget a következő szintre (az államokhoz) lépéshez, és a Power BI az összes országra vonatkozó államadatot megjeleníti. A geokódolásnál a Power BI a Bing Térképeknek minden helyről küld államra vonatkozó adatokat (de országadatokat nem). Ez a lehetőség akkor hasznos, ha a hierarchia egyik szintje sem kapcsolódik a felette lévő szinthez. 
+* A jobb szélen található, Részletezés mód nevű gomb ![Részletezés mód ikon](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png) egy hely kiválasztását a térképen, és hogy szintenként részletes elemzést végezzen az adott helyen. Például ha bekapcsolja a Részletes elemzést, és Észak-Amerikára kattint, lejjebb kerül a hierarchia következő szintjére – Észak-Amerika esetében az államokhoz. A geokódolásnál a Power BI a Bing Térképeknek csak Észak-Amerikáról küld országra és államra vonatkozó adatokat.  
+* A bal oldalon 2 további részletes elemzési lehetőség van. Az első lehetőség – ![első részletezés ikon](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png) – az összes hely hierarchiájának következő szintjére hatol le, egyszerre. Például ha aktuálisan az országok jelennek meg, használja ezt a lehetőséget a következő szintre (az államokhoz) lépéshez, és a Power BI az összes országra vonatkozó államadatot megjeleníti. A geokódolásnál a Power BI a Bing Térképeknek minden helyről küld államra vonatkozó adatokat (de országadatokat nem). Ez a lehetőség akkor hasznos, ha a hierarchia egyik szintje sem kapcsolódik a felette lévő szinthez. 
 * A második lehetőség – ![lehatolás térképekkel](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) – annyiban tér el a Részletes elemzéstől, hogy nem kell a térképre kattintania.  Ezzel a hierarchia következő szintjére lép, de megjegyzi az aktuális szint kontextusát. Például ha aktuálisan az országok jelennek meg, és erre az ikonra kattint, lejjebb kerül a hierarchia következő szintjére – az államokhoz. A geokódolásnál a Power BI minden államról és a hozzájuk kapcsolódó országról adatokat küld a Bing Térképeknek, hogy segítse a pontosabb geokódolást. A legtöbb térképen vagy ezt, vagy a jobb szélen található Részletes elemzés lehetőséget fogja használni, így annyi adatot küldhet el a Bingnek a pontos helyinformációk érdekében, amennyi csak lehetséges. 
 
 ## <a name="next-steps"></a>Következő lépések
@@ -93,5 +93,5 @@ Ha a geohierarchiákkal végez le- vagy felhatolást, fontos tudnia, hogyan műk
 
 [Power BI-vizualizációk](power-bi-report-visualizations.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

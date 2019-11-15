@@ -3,18 +3,17 @@ title: Sorszintű biztonság használata beágyazott Power BI tartalommal
 description: Megismerheti Power BI-tartalmak az alkalmazásba való beágyazásának lépéseit.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 2e7100db05b6ace0e4d530964f645e120387a8b2
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 3ef9bd001e17c472216e501c6d38907087219959
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073349"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875821"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sorszintű biztonság a Power BI Embeddeddel
 
@@ -33,7 +32,7 @@ Az RLS kihasználása érdekében fontos megérteni a három fő alapelvet: a fe
 **Szerepkörök** – A felhasználók szerepkörökhöz tartoznak. A szerepkörök szabályok tárolói és olyan nevük lehet, mint *Értékesítési igazgató* vagy *Értékesítési képviselő*. A Power BI Desktopban hozhat létre szerepköröket. További információkat a [sorszintű biztonság (RLS) Power BI Desktoppal való használatával kapcsolatos](../desktop-rls.md) részben találhat.
 
 **Szabályok** – A szerepkörök szabályokkal rendelkeznek, és ezek a szabályok az adatokra alkalmazott tényleges szűrők. A szabályok lehetnek olyan egyszerűek, mint a „Country = USA”, vagy sokkal dinamikusabbak is lehetnek.
-A cikk hátralévő részében egy példa szerepel az RLS elkészítésére és beágyazott alkalmazásban való használatára. A példánk a [Kiskereskedelmi elemzési minta](http://go.microsoft.com/fwlink/?LinkID=780547) PBIX-fájlját használja.
+A cikk hátralévő részében egy példa szerepel az RLS elkészítésére és beágyazott alkalmazásban való használatára. A példánk a [Kiskereskedelmi elemzési minta](https://go.microsoft.com/fwlink/?LinkID=780547) PBIX-fájlját használja.
 
 ![Jelentéspélda](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
@@ -73,7 +72,7 @@ Ezt a következőképpen teheti meg:
 
     A jelentések most úgy jelenítenek meg adatokat, mintha **AndrewMa** néven lenne bejelentkezve.
 
-A szűrő alkalmazásával, ahogyan itt tettük, a **District** (Kerület), **Store** (Áruház) és **Sales** (Értékesítések) táblákban lévő összes rekordot szűri. A **Sales** (Értékesítések) és a **Time** (Idő) közötti kapcsolat szűrőiránya miatt azonban a **Sales** (Értékesítések) és az **Item** (Tétel), illetve az **Item** (Tétel) és a **Time** (Idő) táblákra nem szűr le. A kétirányú keresztszűrésről további információért töltse le az [SQL Server Analysis Services 2016-ban és a Power BI Desktopban használatható kétirányú keresztszűrést ismertető](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) tanulmányt.
+A szűrő alkalmazásával, ahogyan itt tettük, a **District** (Kerület), **Store** (Áruház) és **Sales** (Értékesítések) táblákban lévő összes rekordot szűri. A **Sales** (Értékesítések) és a **Time** (Idő) közötti kapcsolat szűrőiránya miatt azonban a **Sales** (Értékesítések) és az **Item** (Tétel), illetve az **Item** (Tétel) és a **Time** (Idő) táblákra nem szűr le. A kétirányú keresztszűrésről további információért töltse le az [SQL Server Analysis Services 2016-ban és a Power BI Desktopban használatható kétirányú keresztszűrést ismertető](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) tanulmányt.
 
 ## <a name="applying-user-and-role-to-an-embed-token"></a>Felhasználó és szerepkör alkalmazása beágyazási tokenre
 
@@ -241,7 +240,7 @@ A [sorszintű biztonság](../service-admin-rls.md) olyan szolgáltatás, amely a
 
 A [JavaScript-szűrők](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) lehetővé teszik, hogy a felhasználó csökkentett, hatókörön belüli vagy szűrt nézetet lásson az adatokról. A felhasználó azonban továbbra is rendelkezik hozzáféréssel a modellséma tábláihoz, oszlopaihoz és mértékeihez, és elérheti az itt található bármely adatot. Az adatok korlátozott elérése csak RLS-sel lehetséges, ügyféloldali szűrő API-kkal nem.
 
-## <a name="token-based-identity-with-azure-sql-database-preview"></a>Jogkivonat alapú identitás Azure SQL Database esetén (előzetes verzió)
+## <a name="token-based-identity-with-azure-sql-database"></a>Jogkivonat-alapú identitás Azure SQL Database használata esetén
 
 **Jogkivonat-alapú identitással** úgy adhatja meg egy beágyazási jogkivonat hatályos identitását, hogy **Azure Active Directory (AAD)** hozzáférési jogkivonatot használ az **Azure SQL Database-hez**.
 
@@ -332,7 +331,7 @@ A felügyeleti portálon ezt az engedélyt nem lehet beállítani. Ennek az enge
 * Ha a mögöttes adatkészlet felhőalapú modell (gyorsítótárazott modell vagy DirectQuery), a hatályos identitásnak tartalmaznia kell legalább egy szerepkört, mert ellenkező esetben a szerepkör-hozzárendelés sikertelen lesz.
 * Az identitáslista lehetővé teszi, hogy az irányítópultok beágyazásánál több identitásból álló tokent is lehessen használni. A lista minden más összetevő esetében csak egyetlen identitást tartalmaz.
 
-### <a name="token-based-identity-limitations-preview"></a>Jogkivonat-alapú identitás-korlátozások (előzetes verzió)
+### <a name="token-based-identity-limitations"></a>Jogkivonat-alapú identitás korlátozásai
 
 * Ez a képesség csak a Power BI Premiummal való használatot korlátozza.
 * A képesség helyszíni SQL Serverrel nem működik.

@@ -1,8 +1,7 @@
 ---
-title: Vizsgálja meg a Power BI Desktopban jelentés elem teljesítmény Performance Analyzer használatával
-description: Ismerje meg, hogyan Vizualizációk és a jelentés elemeinek végez erőforrás-használat és a válaszképesség
+title: A Teljesítményelemző használata a jelentéselemek teljesítményének vizsgálatához a Power BI Desktopban
+description: Ismerje meg, milyen teljesítményt nyújtanak a vizualizációk és a jelentéselemek az erőforrás-használat és a válaszkészség szempontjából
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,74 +9,74 @@ ms.topic: conceptual
 ms.date: 05/15/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1851e0a55bf01073a6591f64de43830a72eca89b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8bbf391135442d6490033c0fc65b7372154820d2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65854413"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866432"
 ---
-# <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Vizsgálja meg a jelentés elemének teljesítmény Performance Analyzer használatával
+# <a name="use-performance-analyzer-to-examine-report-element-performance"></a>A Teljesítményelemző használata a jelentéselemek teljesítményének vizsgálatához
 
-A **Power BI Desktop** találja ki, hogyan egyes Vizualizációk és DAX-képleteket, például a jelentéselemek hajt végre. Használatával a **Performance Analyzer**, láthatja, és a rekordot, amely naplózza mérheti, hogy hogyan mindegyike a jelentés elemeinek hajt végre, ha a felhasználók használják őket, és a teljesítményük mely aspektusainak a legtöbb (vagy legalább) erőforrás-igényes.
+A **Power BI Desktopban** megtudhatja, milyen teljesítményt nyújtanak az egyes jelentéselemek, például a vizualizációk és a DAX-képletek. A **Teljesítményelemző** segítségével megtekintheti és rögzítheti azokat a naplókat, amelyek felmérik az egyes jelentéselemek teljesítményét, amikor a felhasználók használják őket, valamint hogy a teljesítményük mely szempontból terheli a leginkább (vagy legkevésbé) az erőforrásokat.
 
-![Teljesítmény-elemző eszköz](media/desktop-performance-analyzer/performance-analyzer-01.png)
+![Teljesítményelemző](media/desktop-performance-analyzer/performance-analyzer-01.png)
 
-Performance Analyzer megvizsgálja és megjeleníti az összes Vizualizáció frissítéshez szükséges időtartam kezdeményezhet a felhasználói interakció érdekében, és megadja az adatokat, így megtekintését, részletes elemzést és exportálhatja az eredményeket. Performance Analyzer segítségével azonosíthatja a vizualizációkat, amelyek negatív hatással vannak a jelentések teljesítményét, és azonosíthatja a hatás az az oka.
+A Teljesítményelemző megvizsgálja és megjeleníti, hogy mennyi idő szükséges a felhasználói műveletek által kezdeményezett vizualizációfrissítésekhez, és bemutatja az adatokat megtekinthető, részletezhető és exportálható formában. A Teljesítményelemző segít azonosítani azokat a vizualizációkat, amelyek hatással vannak a jelentések teljesítményére, és segít meghatározni a hatás okát.
 
-## <a name="displaying-the-performance-analyzer-pane"></a>A Performance Analyzer ablaktábla megjelenítése
+## <a name="displaying-the-performance-analyzer-pane"></a>A Teljesítményelemző ablaktábla megjelenítése
 
-A **Power BI Desktop** válassza ki a **nézet** menüszalagon. Az a **megjelenítése** területén a **nézet** jelölőnégyzetet is jelölje a menüszalag **Performance Analyzer** Performance Analyzer panel megnyitásához.
+A **Power BI Desktopban** válassza ki a **Nézet** menüszalagot. A **Nézet** menüszalag **Megjelenítés** területén jelölje be a **Teljesítményelemző** jelölőnégyzetét a Teljesítményelemző megjelenítéséhez.
 
-![A nézet menüszalagon Performance analyzer kiválasztása](media/desktop-performance-analyzer/performance-analyzer-02.png)
+![A Teljesítményelemző kiválasztása a Nézet menüszalagon](media/desktop-performance-analyzer/performance-analyzer-02.png)
 
-A kijelölt a Performance Analyzer saját panel jobb oldalán a jelentésvásznon jelenik meg.
+A kiválasztás után a Teljesítményelemző egy külön ablaktáblán jelenik meg, a jelentésvászontól jobbra.
 
-## <a name="using-performance-analyzer"></a>Performance Analyzer használatával
+## <a name="using-performance-analyzer"></a>A Teljesítményelemző használata
 
-Elemző korrelálására a feldolgozási idő (beleértve a létrehozni vagy frissíteni a vizualizációt az idő), amely egy lekérdezés futtatása a felhasználói beavatkozás következtében kezdeményezett jelentéselemek frissítéséhez szükséges. Például egy szeletelő módosítása a szeletelő Vizualizáció módosítható egy lekérdezést kell küldeni az adatmodellt, és szükséges érintett vizualizációkat, amelyeket frissíteni kell az új beállítások miatt. 
+A Teljesítményelemző a jelentéselemek frissítésének feldolgozási idejét méri (beleértve a vizualizációk létrehozásához vagy frissítéséhez szükséges időt) az olyan felhasználói műveleteket követően, amelyek egy lekérdezés futtatásához vezetnek. Például egy szelet elhúzásakor módosítani kell a szelet vizualizációját, el kell küldeni egy lekérdezést az adatmodellbe, és az új beállítások miatt frissíteni kell az érintett vizualizációkat. 
 
-Ahhoz, hogy a rögzítés megkezdéséhez Performance Analyzer, egyszerűen válassza **elindítani a felvételt.**
+Ahhoz, hogy a Teljesítményelemző megkezdje a rögzítést, egyszerűen válassza a **Rögzítés indítása** lehetőséget.
 
 ![Rögzítés indítása](media/desktop-performance-analyzer/performance-analyzer-03.png)
 
-A jelentés minden olyan műveletek jelenik meg, és a Performance Analyzer ablaktáblán, az ahhoz, hogy a Vizualizáció betöltése a Power BI által naplózott. Például például hogy egy jelentést, amely a felhasználók rendelkeznek mondta frissítése hosszú időt vesz igénybe. Vagy az egyes jelentésekben a vizualizációkban megjelenített egy csúszkát úgy kell beállítani, hosszú időt igénybe. Teljesítményét elemző utasíthatja a vizualizációt a probléma oka, és azonosítja a Vizualizáció mely aspektusainak a leghosszabb időtartamú feldolgozása tovább tart. 
+A jelentésben elvégzett összes művelet megjelenik és naplózva lesz a Teljesítményelemző ablaktáblán, abban a sorrendben, ahogy a Power BI betölti a vizualizációt. Például tegyük fel, hogy van egy jelentése, amelyről a felhasználók jelezték, hogy sokáig tart a frissítése. Vagy egy jelentés bizonyos vizualizációs elemei lassan jelennek meg egy csúszka módosítását követően. A Teljesítményelemző képes megmondani, hogy ezért melyik vizualizáció a felelős, és megállapítja, hogy a vizualizáció melyik részének a feldolgozása tart a legtöbb ideig. 
 
-Felvétel elindítását követően a **elindítani a felvételt** gomb szürkén jelenik out (inaktív, mert azt már elkezdte a rögzítés) és a **leállítása** gomb nincs aktív. 
+Ha elindította a rögzítést, a **Rögzítés indítása** gomb szürkére vált (inaktív lesz, mivel a rögzítés már zajlik), és a **Leállítás** gomb lesz aktív. 
 
-Teljesítményét elemző gyűjt, és valós idejű teljesítmény mérésére információkat jeleníti meg. Így minden alkalommal, amikor egy vizualizációra kattint egy szeletelő áthelyezi vagy bármilyen egyéb módon kezelheti Performance Analyzer azonnal eredményeit jeleníti meg a teljesítmény a panelen.
+A Teljesítményelemző valós időben gyűjti és jeleníti meg a teljesítményre vonatkozó mérési adatokat. Így minden alkalommal, amikor Ön egy vizualizációra kattint, elhúz egy szeletet, vagy elvégez bármilyen más műveletet, a Teljesítményelemző ablaktábláján azonnal megjelennek a teljesítményre vonatkozó eredmények.
 
-Ha a panel további információkat a megjeleníthetőnél, görgetősáv úgy tűnik, hogy navigáljon a további információkat.
+Ha az ablaktábla több információt tartalmaz, mint amennyi egyszerre megjeleníthető, akkor megjelenik egy görgetősáv, amellyel elérhetők a további információk.
 
-Minden egyes interakció a panelen, a művelet által kezdeményezett a naplóbejegyzéseket ismertető szakasz azonosítóval rendelkezik. Az alábbi ábrán a kapcsolati volt, hogy a felhasználók egy szeletelő megváltozott-e.
+Minden művelethez tartozik egy szakaszazonosító az ablaktáblán, amely leírja, hogy milyen művelet kezdeményezte az adott naplóbejegyzéseket. A következő képen a művelet az volt, hogy a felhasználó elhúzott egy szeletet.
 
-![A szakaszok kapcsolati típus alapján](media/desktop-performance-analyzer/performance-analyzer-04.png)
+![Szakaszok művelettípusok szerint](media/desktop-performance-analyzer/performance-analyzer-04.png)
 
-Egyes Vizualizációk adatait a következő kategóriákba tartozó feladatok végrehajtásához (időtartam) töltött időt tartalmazza:
+Minden vizualizáció naplóadatai között megtalálható, hogy mennyi idő kellett a következő típusú feladatok végrehajtásához:
 
-* **DAX-lekérdezés** – egy DAX-lekérdezés volt szükség, ha ez az az idő a vizualizációt, a kérést küldő között, és az Analysis Services csak az eredményeket adja vissza.
-* **Vizualizáció megjelenítési** – a képernyőre, beleértve az minden webes képet és a geokódolás fogadásához szükséges idő a vizualizációhoz szükséges időt. 
-* **Más** -lekérdezés előkészítése, Várakozás az egyéb Vizualizációk végrehajtásához vagy más háttérben történő feldolgozás a Vizualizáció által szükséges időt.
+* **DAX-lekérdezés** – Ha szükség volt egy DAX-lekérdezésre, akkor ez az időtartam jelzi, hogy miután a vizualizáció elküldte a lekérdezést, mennyi idő telt el, míg az Analysis Services vissza nem adta az eredményeket.
+* **Vizualizáció megjelenítése** – A vizualizáció képernyőn való megjelenítéséhez szükséges időtartam, beleértve a webes képek lekéréséhez vagy a geokódoláshoz szükséges időt is. 
+* **Egyéb** – Ez az időtartam jelzi, hogy a vizualizáció mennyi időt töltött a lekérdezések előkészítésével, más vizualizációk teljesülésére való várakozással, vagy egyéb háttérbeli feldolgozási műveletek elvégzésével.
 
 ![naplóadatok elemei](media/desktop-performance-analyzer/performance-analyzer-06.png)
 
-Miután, hogy kezelhetők a szeretné mérni a teljesítményét elemző jelentés elemeinek, kiválaszthatja a **leállítása** gombra. A teljesítményadatok kiválasztása után a panelen marad **leállítása** a elemezhet.
+Miután elvégezte a jelentés elemein azokat a műveleteket, amelyeket a Teljesítményelemzővel mérni kívánt, kattintson a **Leállítás** gombra. A teljesítményadatok azután is megtekinthetők és elemezhetők maradnak az ablaktáblán, hogy Ön a **Leállítás** gombra nyomott.
 
-Törölje a Performance Analyzer ablaktáblán az adatokat, válassza ki a **törölje a jelet**. Minden információt pedig törölve lesz, és a nem mentett kiválasztásakor **egyértelmű**. Tekintse meg a következő szakaszban megtudhatja, hogyan naplók az adatok mentéséhez. 
+A Teljesítményelemző ablaktábla adatainak törléséhez kattintson a **Törlés** gombra. A **Törlés** paranccsal a rendszer minden adatot töröl, mentés nélkül. A naplózott adatok mentésével kapcsolatban lásd a következő szakaszt. 
 
 ## <a name="refreshing-visuals"></a>Vizualizációk frissítése
 
-Választhat **Vizualizációk frissítése** frissítse a jelentés az aktuális oldal minden vizualizációjához, és ezáltal Performance Analyzer minden Vizualizáció információt gyűjteni a Performance Analyzer ablaktáblán.
+A Teljesítményelemző ablaktáblán a **Vizualizációk frissítése** paranccsal frissítheti a jelentés aktuális oldalán található összes vizualizációt, amelyekről a Teljesítményelemző összegyűjti az adatokat.
 
-Az egyes Vizualizációk is frissítheti. Performance Analyzer dokumentálásakor kiválaszthatja **frissítse a Vizualizáció** egyes Vizualizációk frissítése a Vizualizáció jobb felső sarkában található, és a teljesítményadatok rögzítése.
+Emellett a vizualizációk külön-külön is frissíthetők. Amikor a Teljesítményelemző rögzítést végez, az egyes vizualizációk jobb felső sarkában található **Vizualizáció frissítése** paranccsal frissítheti az adott vizualizációt, és rögzítheti annak teljesítményadatait.
 
-![az egyéni Vizualizáció frissítése](media/desktop-performance-analyzer/performance-analyzer-07.png)
+![egyetlen vizualizáció frissítése](media/desktop-performance-analyzer/performance-analyzer-07.png)
 
-## <a name="saving-performance-information"></a>Teljesítmény-adatainak mentése
+## <a name="saving-performance-information"></a>Teljesítményadatok mentése
 
-Az információ, amely Performance Analyzer hoz létre jelentést kattintva mentheti a **exportálása** gombra. Kiválasztásával **exportálása** egy .JSON kiterjesztésű fájlt hoz létre a Performance Analyzer panelről információkat. 
+A Teljesítményelemző által a jelentésekről létrehozott adatokat az **Exportálás** gombbal mentheti. Az **Exportálás** egy .json-fájlba menti a Teljesítményelemző ablaktáblán található információkat. 
 
-![Mentse a naplófájlt teljesítményét elemző eszköz](media/desktop-performance-analyzer/performance-analyzer-05.png)
+![A teljesítményelemző naplófájljának mentése](media/desktop-performance-analyzer/performance-analyzer-05.png)
 
 
 ## <a name="next-steps"></a>Következő lépések

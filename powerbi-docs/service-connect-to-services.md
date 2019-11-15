@@ -2,19 +2,18 @@
 title: Kapcsolódás a Power BI segítségével a használt szolgáltatásokhoz
 description: Könnyedén kapcsolódhat a vállalkozása működtetéséhez használt olyan szolgáltatásokhoz, mint például a Salesforce, a Microsoft Dynamics CRM és a Google Analytics.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: abecc9b0c5e450d24f29230ad75417b1494e6ce9
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 41881c1de66293689439364f3d1049f3d6b40607
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160003"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873023"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Kapcsolódás a Power BI segítségével a használt szolgáltatásokhoz
 A Power BI-jal könnyedén kapcsolódhat a vállalkozása működtetéséhez használt olyan szolgáltatásokhoz, mint például a Salesforce, a Microsoft Dynamics CRM és a Google Analytics. Power BI az indulásakor kapcsolódik a szolgáltatáshoz az Ön hitelesítő adataival. Ezt követően létrehoz egy irányítópulttal rendelkező *Power BI-munkaterületet* és néhány jelentést, amelyek automatikusan megjelenítik adatait, és vizuális elemzést biztosítanak az üzletmenetről.
@@ -36,7 +35,7 @@ Az alkalmazás telepítése után az irányítópultot és a jelentéseket a Pow
 ## <a name="edit-the-dashboard-and-reports"></a>Az irányítópult és a jelentések szerkesztése
 Az importálás befejezésekor az új alkalmazás megjelenik az Alkalmazások lapon.
 
-1. A bal oldali navigációs panelen válassza az **Alkalmazások** ikont > válassza ki az alkalmazást.
+1. A navigációs panelen válassza az **Alkalmazások** lapot > válassza ki az alkalmazást.
    
      ![Alkalmazások lap](media/service-connect-to-services/power-bi-service-apps-open-app.png)
 2. A Q&A mezőben kérdéseket tehet fel, egy csempére kattintva pedig megnyithatja az alapul szolgáló jelentést. 
@@ -71,6 +70,6 @@ Ha érdekli, hogyan hozhat létre sablonalkalmazásokat, hogy saját maga terjes
 ## <a name="next-steps"></a>Következő lépések
 * [Alkalmazások terjesztése munkatársaknak](service-create-distribute-apps.md)
 * [Új munkaterületek létrehozása a Power BI-ban](service-create-the-new-workspaces.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

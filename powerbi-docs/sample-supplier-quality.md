@@ -2,7 +2,6 @@
 title: 'Szállítói minőségelemzési minta a Power BI-hoz: Bemutató megtekintése'
 description: 'Szállítói minőségelemzési minta a Power BI-hoz: Bemutató megtekintése'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 76e053d34dcd7f1f199f4cbf9f02196e8efc6232
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 156b00c7f7287f12397afea422a38f3870d6c399
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621313"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858399"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Szállítói minőségelemzési minta a Power BI-hoz: Bemutató megtekintése
 
@@ -59,11 +58,11 @@ Használat előtt a mintát [tartalomcsomagként](#get-the-content-pack-for-this
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>.pbix-fájl letöltése ehhez a mintához
 
-A Szállítói minőségelemzési mintát a Power BI Desktoppal való használatra tervezett [.pbix-fájlként](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix) is letöltheti.
+A Szállítói minőségelemzési mintát a Power BI Desktoppal való használatra tervezett [.pbix-fájlként](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix) is letöltheti.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Excel-munkafüzet letöltése ehhez a mintához
 
-Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](http://go.microsoft.com/fwlink/?LinkId=529779) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
+Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529779) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
 
 ## <a name="downtime-caused-by-defective-materials"></a>Hibás anyagok által okozott állásidő
 Nézzük meg a hibás anyagok által okozott állásidők elemzését, és hogy mely gyártók voltak a felelősek.  
@@ -94,7 +93,7 @@ Nézzük meg a hibás anyagok által okozott állásidők elemzését, és hogy 
     ![Állásidő (perc) szállító szerint – fatérkép](media/sample-supplier-quality/supplier5.png)  
 
    Ebben a fatérképben a nyolc legrosszabb gyártót a bal oldalon található nyolc blokk mutatja. Azt is láthatjuk, hogy ők felelősek az összes állásidő körülbelül 50%-áért.  
-3. Válassza a **Supplier Quality Analysis Sample** lehetőséget a navigációs sáv tetején, hogy visszatérjen az irányítópultra.
+3. Az irányítópultra való visszatéréshez válassza a **Szállítói minőségelemzési minta** lehetőséget a felső navigációs panelen.
 
 ### <a name="comparing-plants"></a>Üzemek összehasonlítása
 Most pedig nézzük meg, hogy mely üzemek találják meg és utasítják el hatékonyabban a hibás anyagokat, csökkentve ezzel az állásidőt.  
@@ -113,7 +112,7 @@ Most pedig nézzük meg, hogy mely üzemek találják meg és utasítják el hat
 3. Válassza ki a **Logisztika** buborékját a buborékdiagramban, majd figyelje meg a Illinois állambeli Sprigfieldben és Naperville-ben található üzemeket. Naperville láthatóan jobban kezeli a hibás anyagokat, ugyanis sokszor elutasítja azokat, amelyek így csak kevésszer vannak rá negatív hatással, míg Springfield esetén nagyobb számú negatív hatást figyelhetünk meg.  
 
    ![Logisztika kiválasztása](media/sample-supplier-quality/supplier8.png)  
-4. Válassza a **Supplier Quality Analysis Sample** lehetőséget a navigációs sáv tetején, hogy visszatérjen az irányítópultra.
+4. Az irányítópultra való visszatéréshez válassza a **Szállítói minőségelemzési minta** lehetőséget a felső navigációs panelen.
 
 ## <a name="which-material-type-is-best-managed"></a>Melyik anyagot kezelik a legjobban?
 Azokat az anyagokat kezelik a legjobban, amelyek a legkevesebb állásidőt okozzák, vagy amelyeknél a hibás anyagok – mennyiségüktől függetlenül – nincsenek negatív hatással.
@@ -138,7 +137,7 @@ Azokat az anyagokat kezelik a legjobban, amelyek a legkevesebb állásidőt okoz
 
     ![Hibás mennyiség összesen hónap és év szerint diagram](media/sample-supplier-quality/supplier11.png)  
 3. Vajon a hibák megnövekedett száma több állásidőt is maga után von? Hogy ezt megtudjuk, feltehetünk egy kérdést a Q&A mezőben.  
-4. Válassza a **Supplier Quality Analysis Sample** lehetőséget a navigációs sáv tetején, hogy visszatérjen az irányítópultra.  
+4. Az irányítópultra való visszatéréshez válassza a **Szállítói minőségelemzési minta** lehetőséget a felső navigációs panelen.  
 5. Mivel már tudjuk, hogy a nyersanyagok esetén a legmagasabb a hibák száma, írja be a kérdés mezőbe a *show material types, year and total defect qty* (mutassa az anyagtípusokat, az évet és a hibák összesített számát) kérdést.  
 
     Sokkal több hibás nyersanyag volt 2014-ben, mint 2013-ban.  

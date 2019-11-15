@@ -3,19 +3,18 @@ title: Beágyazott analitika Power BI-tartalom alkalmazásba való beágyazásá
 description: Útmutató jelentés, irányítópult vagy csempe alkalmazásba való integrálásához vagy beágyazásához az ügyfelek számára, a beágyazott analitikákhoz készült Power BI API-k használatával. Útmutató a Power BI alkalmazásba való integrálásához beágyazott analitikai szoftver, beágyazott analitikai eszközök vagy beágyazott üzletiintelligencia-eszközök használatával.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: rkarlin
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 04/02/2019
-ms.openlocfilehash: e35f4f7bd870e51810d49c43a058e467bd724e6e
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 24a9c0069cb80a20a84823655437a27a4f6c0e9e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429677"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877698"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba az ügyfelek számára
 
@@ -187,7 +186,7 @@ Az **ApplicationSecret** beszerzéséhez kövesse az alábbi lépéseket:
 
 1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com).
 
-2. A bal oldali navigációs panelen válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
+2. A bal oldali navigációs ablaktáblán válassza a **Minden szolgáltatás**, majd az **Alkalmazásregisztrációk** elemet.
 
     ![Alkalmazásregisztráció keresése](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
@@ -460,4 +459,4 @@ Ebben az oktatóanyagban bemutattuk, hogyan lehet Power BI-tartalmat beágyazni 
 > [!div class="nextstepaction"]
 >[Beágyazás a cég számára](embed-sample-for-your-organization.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

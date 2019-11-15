@@ -2,7 +2,6 @@
 title: A Power BI mintáiról szóló bemutató megtekintése
 description: A Power BI minta-tartalomcsomagjai, PBIX-fájljai és Excel-adatkészletei
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 49c16e083b2119e94f23a78b10ea014efcd70c3c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d5fcc6866d564367d2a29dc00493a959409ea2ed
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721486"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858990"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Milyen mintaadatok használhatók a Power BI-ban?
 Tegyük fel, hogy kezdő felhasználó a Power BI-ban, és egyelőre adatok nélkül szeretné kipróbálni.  Esetleg már van egy adathalmaza. Mivel (egyelőre) nem ismeri a Power BI működését, aggódik, hogy valahogy kárt tesz az adathalmazban.
@@ -78,7 +77,7 @@ Ez az iparági minta egy pénzügyi igazgató a vállalat igazgatóira, terméke
 
 Ez az iparági minta a több üzletben és körzetben értékesített cikkek kiskereskedelmi értékesítési adatait elemzi. A mérőszámok a folyó év teljesítményét vetik össze a tavalyival a következő területeken: értékesítés, egységek, bruttó nyereség, eltérés, új üzletek elemzett adatai.
 
-### <a name="sales-and-marketing-sample--sales-and-marketing-samplemediasample-datasetspower-bi-smpng"></a>Értékesítési és marketing minta  ![Értékesítési és marketing minta](media/sample-datasets/power-bi-sm.png)
+### <a name="sales-and-marketing-sample--sales-and-marketing-samplemediasample-datasetspower-bi-smpng"></a>Értékesítési és marketingminta  ![Értékesítési és marketingminta](media/sample-datasets/power-bi-sm.png)
 [Értékesítési és marketing minta: bemutató](sample-sales-and-marketing.md)
 
 Ez az iparági minta egy gyártással foglalkozó céget, a VanArsdel kft.-t elemzi. Segítségével a marketingigazgató megfigyelheti az iparágat és a VanArsdel piaci részesedését.  A minta elemzésével megismerheti a cég piaci részesedését, értékesítési adatait és a vele kapcsolatos véleményeket.
@@ -116,16 +115,16 @@ Az új adatokkal már nyugodtan dolgozhat.  Próbálja ki az oktatóanyagaink l�
 ## <a name="the-power-bi-samples-as-excel-files"></a>Power BI-minták Excel-fájlként
 A minta-tartalomcsomagok Excel-munkafüzetként is elérhetők. Az Excel-munkafüzeteket a Power BI-hoz alakítottuk ki.  
 
-1. A fájlokat egyenként letöltheti az alábbi hivatkozásokról, vagy [egyszerre, egy ZIP-fájlban](http://go.microsoft.com/fwlink/?LinkId=535020). Ha már tapasztalt felhasználó, célszerű letöltenie az Excel-munkafüzeteket és felfedezni vagy szerkeszteni az adatmodelleket.
+1. A fájlokat egyenként letöltheti az alábbi hivatkozásokról, vagy [egyszerre, egy ZIP-fájlban](https://go.microsoft.com/fwlink/?LinkId=535020). Ha már tapasztalt felhasználó, célszerű letöltenie az Excel-munkafüzeteket és felfedezni vagy szerkeszteni az adatmodelleket.
 
-   * [Kiskereskedelmi elemzési minta](http://go.microsoft.com/fwlink/?LinkId=529778)
-   * [Szállítói minőségelemzési minta](http://go.microsoft.com/fwlink/?LinkId=529779)
-   * [Emberi erőforrások minta](http://go.microsoft.com/fwlink/?LinkId=529780)
-   * [Ügyfél-jövedelmezőségi minta](http://go.microsoft.com/fwlink/?LinkId=529781)
-   * [Lehetőségkövetési minta](http://go.microsoft.com/fwlink/?LinkId=529782)
-   * [Informatikaköltség-elemzési minta](http://go.microsoft.com/fwlink/?LinkId=529783)
-   * [Beszerzéselemzési minta](http://go.microsoft.com/fwlink/?LinkId=529784)
-   * [Értékesítési és marketing minta](http://go.microsoft.com/fwlink/?LinkId=529785)
+   * [Kiskereskedelmi elemzési minta](https://go.microsoft.com/fwlink/?LinkId=529778)
+   * [Szállítói minőségelemzési minta](https://go.microsoft.com/fwlink/?LinkId=529779)
+   * [Emberi erőforrások minta](https://go.microsoft.com/fwlink/?LinkId=529780)
+   * [Ügyfél-jövedelmezőségi minta](https://go.microsoft.com/fwlink/?LinkId=529781)
+   * [Lehetőségkövetési minta](https://go.microsoft.com/fwlink/?LinkId=529782)
+   * [Informatikaköltség-elemzési minta](https://go.microsoft.com/fwlink/?LinkId=529783)
+   * [Beszerzéselemzési minta](https://go.microsoft.com/fwlink/?LinkId=529784)
+   * [Értékesítési és marketing minta](https://go.microsoft.com/fwlink/?LinkId=529785)
 2. Mentse a letöltött fájlt. Fontos, hogy hova menti a fájlt.
 
    * ![Helyi meghajtó](media/sample-datasets/power-bi-local-file2.png) **Helyi meghajtó** – Ha a fájlt a saját számítógépére vagy a cég valamilyen más helyére mentette, a Power BI-ból importálhatja a fájlt Power BI-ba. A fájl valójában a helyi meghajtón marad, tehát a teljes fájl nem lesz importálva a Power BI-ba. Annyi történik, hogy létrejön egy új adatkészlet az Ön Power BI-webhelyén, a rendszer pedig betölti abba az adatokat, és bizonyos esetekben az adatmodellt is. Ha a fájlban vannak jelentések, azok a Power BI-webhely Jelentések területén jelennek meg.
@@ -154,7 +153,7 @@ A minta-tartalomcsomagok Excel-munkafüzetként is elérhetők. Az Excel-munkaf�
 
     ![Importálás vagy Csatlakozás](media/sample-datasets/power-bi-import.png)
 9. Ha az **Importálás** lehetőséget választja, a Power BI importálja a minta-munkafüzetet, és egy új adatkészletként adja hozzá, amelyet **Beszerzéselemzési mintának** nevez el.  Ha a munkafüzet tartalmaz Power View-lapokat, -táblákat, -tartományokat vagy egy adatmodellt, a Power BI egy azonos nevű jelentést is létrehoz. Ha pedig még nincs megnyitva irányítópult, a Power BI létrehoz egy újat. (Ha már megnyitott egy irányítópultot, mielőtt az **Adatok lekérése** lehetőséget választotta, egy üres csempe jelenik meg rajta.  A csempére kattintva az imént hozzáadott adatkészlet jelentésére léphet). Az új tartalom neve megegyezik a minta nevével, a program pedig egy sárga csillaggal jelöli.
-10. Amikor megjelenik **Az adatkészlet készen áll.** képernyő, válassza az **Adathalmaz megtekintése** vagy a **Gyors elemzések lekérése** lehetőséget, vagy a Power BI bal oldali navigációs sávján keresse és nyissa meg a társított jelentést vagy irányítópultot.  
+10. Amikor megjelenik **Az adatkészlet készen áll.** képernyő, válassza az **Adatkészlet megtekintése** vagy a **Gyors elemzések lekérése** lehetőséget, vagy a Power BI navigációs paneljén keresse és nyissa meg a társított jelentést vagy irányítópultot.  
 
      ![Adathalmaz megtekintése](media/sample-datasets/power-bi-ready.png)
 
@@ -176,15 +175,15 @@ A minta-tartalomcsomagok .pbix-fájlként is elérhetők. A .pbix-fájlok a Powe
 
 1. A fájlokat letöltheti az alábbi hivatkozásokkal. A következő linkek kiválasztásával automatikusan menti a fájlt a Letöltések mappába. 
 
-   * [Kiskereskedelmi elemzési minta PBIX](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
-   * [Szállítói minőségelemzési minta PBIX](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
+   * [Kiskereskedelmi elemzési minta PBIX](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+   * [Szállítói minőségelemzési minta PBIX](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
    <!-- Previous link doesn't work -->
-   * [Emberi erőforrások minta PBIX](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
-   * [Ügyfél-jövedelmezőségi minta PBIX](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
-   * [Lehetőségkövetési minta PBIX](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
-   * [Informatikaköltség-elemzési minta PBIX](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
-   * [Beszerzéselemzési minta PBIX](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
-   * [Értékesítési és marketing minta PBIX](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
+   * [Emberi erőforrások minta PBIX](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
+   * [Ügyfél-jövedelmezőségi minta PBIX](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
+   * [Lehetőségkövetési minta PBIX](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
+   * [Informatikaköltség-elemzési minta PBIX](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
+   * [Beszerzéselemzési minta PBIX](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
+   * [Értékesítési és marketing minta PBIX](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
 
 1. A Power BI Desktopban válassza a **Fájl > Megnyitás** lehetőséget, majd navigáljon arra a helyre, ahova a .pbix-mintafájlt mentette.
 
@@ -198,4 +197,4 @@ A minta-tartalomcsomagok .pbix-fájlként is elérhetők. A .pbix-fájlok a Powe
 
 [Power BI-adatforrások](service-get-data.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Jelentések exportálása Power BI-ból PowerPointba
 description: Ismerje meg, hogyan exportálhat jelentést a Power BI-ból a PowerPointba.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3215dfab54d1537ec5f7ca32ee4bd39b9ef997e5
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: 840f2462ea9fc6b2d748b3803445c5ee4b155bdd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72717005"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862890"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Jelentések exportálása Power BI-ból PowerPointba
 
@@ -31,7 +30,7 @@ A Power BI segítségével közzéteheti jelentését a Microsoft PowerPointban,
 A **Power BI-jelentést** gyorsan exportálhatja a **PowerPointba**. Kövesse az alábbi szakaszban leírt lépéseket.
 
 ## <a name="export-your-power-bi-report-to-powerpoint"></a>Power BI-jelentés exportálása a PowerPointba
-A Power BI szolgáltatásban jelöljön ki egy jelentést a vásznon való megjelenítéshez. Jelentést saját **kezdőlapján**, az **Alkalmazások** között, vagy a bal oldali navigációs panel bármely más tárolójában kijelölhet.
+A Power BI szolgáltatásban jelöljön ki egy jelentést a vásznon való megjelenítéshez. Egy jelentést a **kezdőlapon**, az **Alkalmazások** között, vagy a navigációs panel bármely más tárolójában is kijelölhet.
 
 Amikor a PowerPointba exportálandó jelentés megjelenik a vásznon, válassza az **Exportálás** > **PowerPoint** elemet a menüsávon.
 
@@ -60,7 +59,7 @@ Amikor megnyitja a Power BI-ból exportált PowerPoint-fájlt, számos remek és
 
 1. A bemutató első oldalán a jelentés neve és egy hivatkozás látható, amelynek segítségével a bemutató alapjául szolgáló jelentést **megtekintheti a Power BI-ban**.
 2. A jelentésről is hasznos információkhoz juthat. Az **Utolsó adatfrissítés** azt a dátumot és időt mutatja meg, amelyen az exportált jelentés alapul. A **Letöltés** azt a dátumot és időt mutatja, amikor a Power BI-jelentés PowerPoint-fájlba lett exportálva.
-3. A jelentés minden oldala külön dián jelenik meg, ahogy a bal oldali navigációs ablaktábla mutatja. 
+3. A jelentés minden oldala külön dián jelenik meg, ahogy azt a navigációs panel is mutatja. 
 4. A közzétett jelentést a Power BI a saját nyelvi beállításainak megfelelően, vagy a böngésző nyelve szerint rendereli. A nyelvi beállításokat megtekintheti vagy módosíthatja a fogaskerék ikon ![Fogaskerék ikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Beállítások** > **Általános** > **Nyelv** lehetőség választásával. Nyelvi információk: [A Power BI által támogatott nyelvek és országok vagy régiók](../supported-languages-countries-regions.md).
 5. A PowerPoint-bemutató tartalmaz egy címoldalt, amelyen megjelenik az exportált idő a megfelelő időzónában.
 

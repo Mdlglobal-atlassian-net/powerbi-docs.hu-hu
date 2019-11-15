@@ -2,7 +2,6 @@
 title: Tippek és trükkök jelentések létrehozásához a Power BI-ban
 description: A jelentések készítéséhez ajánlott eljárások bemutatása a Power BI szolgáltatásban és a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: willthom
 ms.custom: seodec18
 ms.service: powerbi
@@ -10,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
-ms.openlocfilehash: 41e5ff75e9b6fd48e3101d30999e8d570f34a270
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a6d949f95f463cb988958551d825a4eae824fb70
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514016"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865820"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tippek és trükkök jelentések létrehozásához a Power BI Desktopban
 Ahhoz, hogy a legtöbbet hozza ki az adataiból, néha szüksége van egy kis extra segítségre. Összegyűjtöttünk néhány tippet és trükköt, amelyek segítségére lehetnek, amikor jelentéseket hoz létre a Microsoft Power BI Desktopban *és* a Microsoft Excel 2016 vagy Excel 2013 Pro-Plus kiadásokban, amelyekben engedélyezve van a Power Pivot bővítmény, illetve telepítve és engedélyezve van a Power Query. 
@@ -28,19 +27,19 @@ További információt a [Power Query forrásanyagközpontban](https://support.o
 A [Képletreferenciát](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f) is megtekintheti.
 
 ## <a name="data-types-in-query-editor"></a>Adattípusok a Lekérdezésszerkesztőben
-Amikor a Power BI Desktopban a Lekérdezésszerkesztőt használja az adatok betöltéséhez, feltételezésen alapuló adattípus-felismerést végzünk. A képletek használatakor a rendszer néha nem őrzi meg az oszlopok adattípus-beállításait. Ellenőrizze, hogy az oszlopok adattípusát helyességét a következő műveletek elvégzése után:  Adatok betöltése elsőként a lekérdezés lapra, Első sor fejléccé alakítása, Oszlop hozzáadása, Csoportosítás, Egyesítés, Hozzáfűzés, és mielőtt először jóváhagyná az adatok betöltését.
+Amikor a Power BI Desktopban a Lekérdezésszerkesztőt használja az adatok betöltéséhez, feltételezésen alapuló adattípus-felismerést végzünk. A képletek használatakor a rendszer néha nem őrzi meg az oszlopok adattípus-beállításait. Az alábbi műveletek végrehajtása után ellenőrizze, hogy megfelelő-e az oszlopok adattípusa:  Adatok betöltése elsőként a lekérdezés lapra, Első sor fejléccé alakítása, Oszlop hozzáadása, Csoportosítás, Egyesítés, Hozzáfűzés, és mielőtt először jóváhagyná az adatok betöltését.
 
 Fontos megjegyezni: az adattáblázatban a dőlt betűk nem azt jelentik, hogy az adattípus megfelelően van beállítva, hanem azt, hogy az adatot nem szövegként értelmezi a rendszer.
 
 ## <a name="reference-queries-in-the-query-editor"></a>Lekérdezésekre való hivatkozás a Lekérdezésszerkesztőben
-A Lekérdezésszerkesztő kezelőjében a Power BI Desktopban Ha a jobb gombbal az egyik lekérdezésre, "Hivatkozás" lehetőséget érhető el. Ez a következő miatt hasznos:
+Amikor a Power BI Desktopban a Lekérdezésszerkesztő kezelőjében a jobb gombbal rákattint az egyik lekérdezésre, elérheti a „Hivatkozás” lehetőséget. Ez a következő miatt hasznos:
 
 * Amikor adatforrásként használ fájlokat egy lekérdezéshez, a rendszer a lekérdezésben tárolja a fájl abszolút elérési útját. A Power BI Desktop-fájl vagy Excel-munkafüzet áthelyezésekor időt takaríthat meg azzal, hogy az elérési utak helyett csak egyszer frissíti a fájlt.
 
-Alapértelmezés szerint minden lekérdezés egy Excel-munkalapra vagy az adatmodellbe tölt be (vagy mindkettőbe). Néhány lekérdezés közbenső lépés, és nem javasolt a végfelhasználók számára. Amikor a fent említett módon hivatkozik a lekérdezésekre, gyakran ez a helyzet. Kattintson a jobb gombbal a lekérdezés a kezelőben, és a "Betöltés engedélyezése" beállítás lekérdezésbetöltés viselkedését betöltése lekérdezés szabályozhatja. Amikor *betöltés engedélyezése* nem rendelkezik egy pipa mellett, a lekérdezés a lekérdezés lapon továbbra is rendelkezésre áll, és használhatja más lekérdezések. Ez különösen hasznos az Egyesítés, Hozzáfűzés és Hivatkozás átalakítókkal kombinálva. Mivel azonban a rendszer nem tölti be a lekérdezés eredményeit az adatmodellbe, a lekérdezés nem fogja telezsúfolni a jelentések mezőlistáját vagy az adatmodellt. 
+Alapértelmezés szerint minden lekérdezés egy Excel-munkalapra vagy az adatmodellbe tölt be (vagy mindkettőbe). A lekérdezések némelyike közbenső lépés, és nem a felhasználók számára tervezték. Amikor a fent említett módon hivatkozik a lekérdezésekre, gyakran ez a helyzet. Szabályozhatja a lekérdezésbetöltés viselkedését, ha a jobb gombbal a lekérdezésre kattint a kezelőben, és bekapcsolja a „Betöltés engedélyezése” beállítást. Ha a *Betöltés engedélyezése* mellett nincs pipa, a lekérdezést attól még el lehet érni a lekérdezési lapon, és használhatja azt más lekérdezésekkel. Ez különösen hasznos az Egyesítés, Hozzáfűzés és Hivatkozás átalakítókkal kombinálva. Mivel azonban a rendszer nem tölti be a lekérdezés eredményeit az adatmodellbe, a lekérdezés nem fogja telezsúfolni a jelentések mezőlistáját vagy az adatmodellt. 
 
 ## <a name="scatter-charts-need-a-point-identifier"></a>A pontdiagramokban szükség van egy pontazonosítóra
-Vegyük példaként egy egyszerű táblát, amely hőmérsékleteket és a leolvasás idejét tartalmazza. Ha ezt közvetlenül jeleníti meg egy pontdiagramon, a Power BI egyetlen pontba összesíti az értékeket. Külön adatpontok megjelenítéséhez hozzá kell adnia egy mezőt a részletek gyűjtőhöz a mezők is. Ennek a Power BI Desktopban egy egyszerű módja, ha a lekérdezés lapon az „Oszlop hozzáadása” menüszalag „Indexoszlop felvétele” lehetőségét használja. 
+Vegyük példaként egy egyszerű táblát, amely hőmérsékleteket és a leolvasás idejét tartalmazza. Ha ezt közvetlenül jeleníti meg egy pontdiagramon, a Power BI egyetlen pontba összesíti az értékeket. A külön adatpontok megjelenítéséhez hozzá kell adnia egy mezőt a Részletek gyűjtőhöz a Mezők területen. Ennek a Power BI Desktopban egy egyszerű módja, ha a lekérdezés lapon az „Oszlop hozzáadása” menüszalag „Indexoszlop felvétele” lehetőségét használja. 
 
 ## <a name="reference-lines-in-your-report"></a>Referenciavonalak a jelentésben
 A Power BI Desktopban a referenciavonalak meghatározása számított oszlop használatával történhet. Azonosítsa a táblát és az oszlopot, amelyen létre kívánja hozni a referenciavonalat. A menüszalagon válassza az „Új oszlop” lehetőséget, és a képletsávban gépelje be a következő képletet:
@@ -50,7 +49,7 @@ A Power BI Desktopban a referenciavonalak meghatározása számított oszlop has
 A számított oszlop a 100 értéket fogja visszaadni függetlenül attól, hogy hol használják. Az új oszlop meg fog jelenni a mezőlistában. Adja hozzá a „Target Value” (Célérték) nevű számított oszlopot egy vonaldiagramhoz, amely bemutatja, hogyan viszonyulnak a sorozatok az adott referenciavonalhoz. 
 
 ## <a name="sort-by-another-column"></a>Rendezés más oszlop alapján
-Ha kategorikus (sztring) értéket használ a Power BI-ban a diagramtengelyekhez, illetve egy szeletelőben vagy szűrőben, az alapértelmezett sorrend a betűrend szerinti rendezés. Ha szüksége sorrendet, például például a hét vagy hónap, nap akkor beállíthatja, hogy a Power BI Desktop egy másik oszlop szerinti rendezéshez. További tudnivalókért lásd: [Rendezés oszlop szerint a Power BI Desktop](desktop-sort-by-column.md).
+Ha kategorikus (sztring) értéket használ a Power BI-ban a diagramtengelyekhez, illetve egy szeletelőben vagy szűrőben, az alapértelmezett sorrend a betűrend szerinti rendezés. Ha más sorrendet kell használnia, például a hét napjai vagy hónapok szerinti rendezést, akkor utasíthatja a Power BI Desktopot, hogy a rendezést egy másik oszlop alapján végezze el. További tudnivalókért lásd [az oszlop szerinti rendezést a Power BI Desktopban](desktop-sort-by-column.md).
 
 ## <a name="building-maps-more-easily-with-hints-to-bing"></a>Térképek egyszerűbb létrehozása Bing-javaslatokkal
 A Power BI integrálható a Binggel alapértelmezett térképkoordináták biztosításához (ez a geokódolás nevű folyamat), így egyszerűbben hozhat létre térképeket. A Bing algoritmusokkal és javaslatokkal próbálja megtalálni a megfelelő helyet, de ez feltételezésen alapul. A helyes geokódolás valószínűségének növelése érdekében használhatja a következő tippeket:
@@ -62,7 +61,7 @@ Néhány megjelölés nem egyértelmű, ha több ország/régió összefüggés�
 A Power BI szolgáltatásban vagy Desktopban bármikor megadhat konkrét szélességi és hosszúsági helyeket. Ha így tesz, egy Location (Hely) mezőt is át kell adnia, különben az adatok alapértelmezés szerint összesítve lesznek, és a szélességi és a hosszúsági hely nem biztos, hogy az lesz, amire számít.
 
 ## <a name="categorizing-geographic-fields-to-hint-bings-geocoding"></a>Földrajzi mezők kategorizálása a Bing geokódolásának segítése érdekében
-A mezők helyes geokódolásának másik módja, ha az adatmezőkön beállítja az Adatkategóriát. A Power BI Desktopban válassza ki a kívánt táblát, lépjen a speciális menüszalagra, és majd állítsa az adatkategóriát a cím, város, kontinens, ország/régió, ország, postai irányítószám, állam vagy megye. Ezek az adatkategóriák segítenek a Bingnek helyesen kódolni az adatokat. További tudnivalókért lásd az [adatok kategorizálását a Power BI Desktopban](desktop-data-categorization.md).
+A mezők helyes geokódolásának másik módja, ha az adatmezőkön beállítja az Adatkategóriát. A Power BI Desktopban válassza ki a kívánt táblát, lépjen a Speciális menüszalagra, majd állítsa az Adatkategóriát a következők egyikére: Állam, Cím, Irányítószám, Kontinens, Megye, Ország/régió, Tartomány vagy Város. Ezek az adatkategóriák segítenek a Bingnek helyesen kódolni az adatokat. További tudnivalókért lásd az [adatok kategorizálását a Power BI Desktopban](desktop-data-categorization.md).
 
 ## <a name="better-geocoding-with-more-specific-locations"></a>Jobb geokódolás pontosabb helyekkel
 Néha még az sem elég, ha beállítja az adatkategóriákat a leképezéshez. A Power BI Desktop Lekérdezésszerkesztőjének használatával pontosabb helyet, például címet hozhat létre. Használja az Oszlop hozzáadása funkciót egy egyéni oszlop létrehozásához. Hozza létre a kívánt helyet a következőképpen: 
@@ -86,7 +85,7 @@ Gyűjtők meghatározása egy hisztogram létrehozásához – Határozza meg, m
 
 Győződjön meg arról, hogy az összesített oszlop adattípusa szám. Most már használhatja „A legegyszerűbb hisztogram” részben leírt csoportosítási technikát a hisztogram létrehozására. Ez a lehetőség több adatpontot kezel, de ettől még nem segít az ecsetelésben.
 
-Támogatja a tudásokat – azt nevezik Ecsetelésnek akkor, ha a Vizualizációk össze vannak kapcsolva, így amikor egy felhasználó kijelöl egy vizualizációban az adatpontra hisztogram meghatározása a jelentésoldal többi vizualizációja kiemeli vagy a kiválasztott adatponthoz kapcsolódó adatpontokat. Mivel lekérdezéskor módosítjuk az adatokat, létre kell hoznunk egy kapcsolatot a táblák között, és meg kell bizonyosodnunk arról, hogy tudjuk, melyik részlet kapcsolódik a hisztogram gyűjtőjéhez, és fordítva.
+Ecsetelést támogató hisztogram meghatározása – Azt nevezik ecsetelésnek, amikor össze vannak kapcsolva a vizualizációk, így amikor egy felhasználó kijelöl egy adatpontot az egyik vizualizációban, a jelentési oldal többi vizualizációja kiemeli vagy szűri a kijelölt adatponthoz kapcsolódó adatpontokat. Mivel lekérdezéskor módosítjuk az adatokat, létre kell hoznunk egy kapcsolatot a táblák között, és meg kell bizonyosodnunk arról, hogy tudjuk, melyik részlet kapcsolódik a hisztogram gyűjtőjéhez, és fordítva.
 
 A folyamat elindításához használja a „Hivatkozás” lehetőséget azon lekérdezésen, amely azt a mezőt tartalmazza, amelynek alapján létre szeretné hozni a hisztogramot. Adja a „Buckets” (Gyűjtők) nevet az új lekérdezésnek. Ebben a példában az eredeti lekérdezés neve legyen „Details” (Részletek). Ezután távolítsa el az összes oszlopot, kivéve azt az egyet, amelyet gyűjtőként fog használni a hisztogramhoz. Használja a lekérdezésben az „Ismétlődések eltávolítása” funkciót. Ez az oszlop kijelölésekor megjelenő helyi menüben található. Az oszlop fennmaradó értékei így egyedi értékek lesznek. Decimális számok használata esetén először használhatja a „gyűjtők meghatározása egy hisztogram létrehozásához” részben leírt tippet, hogy kezelhető gyűjtőkészletet kapjon. Ellenőrizze a lekérdezés előnézetében megjelenő adatokat. Ha üres vagy null értékeket lát, a kapcsolat létrehozása előtt ki kell őket javítania. Ehhez tekintse meg a „Kapcsolatok létrehozása, ha az adatok null vagy üres értékeket tartalmaznak” című részt. A rendezés szükségessége miatt ez a megközelítés problémás lehet. Ha azt szeretné, hogy a gyűjtők megfelelően rendeződjenek, tekintse meg a „Rendezési sorrend: a kategóriák megjelenítése a kívánt sorrendben” című részt. 
 
@@ -161,4 +160,4 @@ A DAX a Power BI Desktop számításokhoz használt képletnyelve. Ez a nyelv BI
 
 [Data Analysis Expressions-referencia (DAX)](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[DAX forrásanyagközpont](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[DAX forrásanyagközpont](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)

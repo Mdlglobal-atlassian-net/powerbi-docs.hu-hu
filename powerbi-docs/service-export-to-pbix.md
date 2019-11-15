@@ -2,7 +2,6 @@
 title: Jelentés letöltése a Power BI szolgáltatásból Power BI Desktop-fájlba (Előzetes verzió)
 description: Jelentés letöltése a Power BI szolgáltatásból Power BI Desktop-fájlba
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 2c17378c14ef084ad6632e52df2a801832b311d9
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: de7a01f70d179237c45205447f564b3833db2156
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715181"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881819"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Jelentés letöltése a Power BI szolgáltatásból Power BI Desktop-fájlba (Előzetes verzió)
 A Power BI Desktopban közzétehet egy jelentést ( *.pbix*-fájlt) a helyi számítógépről a Power BI szolgáltatásban. A Power BI-jelentések az ellenkező irányban is működnek: Letöltheti őket a Power BI szolgáltatásból a Power BI Desktopba. A Power BI-jelentések kiterjesztése mindkét esetben .pbix.
@@ -32,7 +31,7 @@ A .pbix-fájl letöltéséhez kövesse az alábbi lépéseket:
 
 1. A Power BI szolgáltatásban nyissa meg a letölteni kívánt jelentést [Szerkesztési nézetben](https://docs.microsoft.com/power-bi/service-interact-with-a-report-in-editing-view).
 
-2. A felső menüsávon válassza a **Fájl > Jelentés letöltése** lehetőséget.
+2. A felső navigációs panelen válassza a **Fájl > Jelentés letöltése** lehetőséget.
    
 3. A jelentés letöltése közben egy állapotsáv jelzi a folyamat előrehaladását. Amikor a fájl elkészül, a rendszer megkérdezi, hogy hová szeretné menteni a .pbix-fájlt. A fájl alapértelmezett neve megegyezik a jelentés címével.
    
@@ -71,5 +70,5 @@ A Power BI Desktop telepítése után a következő cikkek segíthetnek a haszn�
 
 * [Első lépések a Power BI Desktopban](desktop-getting-started.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 

@@ -2,7 +2,6 @@
 title: Adatfrissítés a Power BI-ban
 description: Ez a cikk elméleti szinten ismerteti a Power BI adatfrissítési funkcióit és azok függőségeit.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 948776a12af2d99da2d84d07c9298f9ec0558c7b
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: 422d742748fc6880b0636bd3a0c5de7011a3ff0a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442952"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860795"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
 
@@ -277,7 +276,7 @@ Az **Ütemezett frissítés** szakaszban határozhatja meg az adatkészletek fri
 
 ![Ütemezett frissítés beállítása](media/refresh-data/configure-scheduled-refresh.png)
 
-Frissítési ütemezés konfigurálása után az adathalmaz beállításainak oldala a fenti képernyőképen látható módon tájékoztatja a következő frissítés időpontjáról. Ha ennél hamarabb szeretné frissíteni az adatokat, például az átjáró és az adatforrás konfigurációjának teszteléséhez, igény szerinti frissítést hajthat végre a bal oldali navigációs panel Adathalmaz menüjében található **Azonnali frissítés** lehetőséggel. Az igény szerinti frissítések nem befolyásolják a következő ütemezett frissítés időpontját, de a cikk korábbi részében leírtak szerint beleszámítanak a napi frissítési korlátba.
+Frissítési ütemezés konfigurálása után az adathalmaz beállításainak oldala a fenti képernyőképen látható módon tájékoztatja a következő frissítés időpontjáról. Ha ennél hamarabb szeretné frissíteni az adatokat, például az átjáró és az adatforrás konfigurációjának teszteléséhez, igény szerinti frissítést hajthat végre a navigációs panel Adatkészlet menüjében található **Azonnali frissítés** lehetőséggel. Az igény szerinti frissítések nem befolyásolják a következő ütemezett frissítés időpontját, de a cikk korábbi részében leírtak szerint beleszámítanak a napi frissítési korlátba.
 
 Azt is vegye figyelembe, hogy a frissítés konfigurált időpontja nem feltétlenül az a pontos időpont, amikor a Power BI elindítja a következő ütemezett folyamatot. A Power BI törekszik a frissítési ütemezés minél pontosabb betartására. A cél az, hogy a frissítés az ütemezett időponttól legfeljebb 15 perc eltéréssel elinduljon, de akár egyórás késés is előfordulhat, ha a szolgáltatás nem tudja korábban lefoglalni a szükséges erőforrásokat.
 
@@ -339,4 +338,4 @@ Emellett az alábbi javaslatok szem előtt tartásával alakíthat ki és tartha
 [Frissítéssel kapcsolatos hibák hibaelhárítási eszközei](service-gateway-onprem-tshoot.md)  
 [Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása](refresh-troubleshooting-refresh-scenarios.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

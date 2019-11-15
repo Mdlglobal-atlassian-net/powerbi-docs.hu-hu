@@ -2,19 +2,18 @@
 title: Csatlakozás egy Power BI-munkaterülethez tartozó OneDrive-ban tárolt fájlokhoz
 description: Itt olvashat arról, hogy miképpen tárolhatja a Power BI-munkaterülethez tartozó OneDrive-ban az Excel-, CSV- és Power BI Desktop-fájlokat, és hogyan csatlakozhat hozzájuk.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukasz
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2cecd327d76659eb11d81180480cb9be998fd772
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 180fd8d451be794070d8b0f4d37c40965671d23d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431616"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854884"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Csatlakozás a Power BI-munkaterülethez tartozó OneDrive-ban tárolt fájlokhoz
 Miután [létrehozott egy munkaterületet a Power BI-ban](service-create-distribute-apps.md), a Power BI-munkaterülethez tartozó OneDrive Vállalati verzióban tárolhatja az Excel-, CSV- és Power BI Desktop-fájlokat. A OneDrive-ban tárolt fájljait továbbra is frissítheti. A frissítések automatikusan megjelennek a fájlokon alapuló Power BI-jelentésekben és irányítópultokon. 
@@ -53,7 +52,7 @@ Miután a fájlok bekerültek a munkaterülethez tartozó OneDrive Vállalati ve
 
 ### <a name="import-or-connect-to-the-files-in-your-workspace"></a>Fájlok importálása vagy csatlakozás hozzájuk a munkaterületen
 1. A Power BI-ban váltson a munkaterületre; ekkor megjelenik a munkaterület neve a bal felső sarokban. 
-2. A bal oldali navigációs ablaktábla alján kattintson az **Adatok lekérése** elemre. 
+2. Kattintson az **Adatok lekérése** elemre a navigációs panel alján. 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
 3. A **Fájlok** mezőben válassza a **Beolvasás** lehetőséget.
@@ -80,6 +79,6 @@ Miután a fájlok bekerültek a munkaterülethez tartozó OneDrive Vállalati ve
 * [Alkalmazások és munkaterületek létrehozása a Power BI-ban](service-create-distribute-apps.md)
 * [Adatok importálása Excel-munkafüzetekből](service-get-data-from-files.md)
 * [Csatlakozás teljes Excel-munkafüzetekhez](service-excel-workbook-files.md)
-* További kérdései vannak? [Kérdezze a Power BI-közösséget!](http://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze a Power BI-közösséget!](https://community.powerbi.com/)
 * Visszajelzést szeretne küldeni? Keresse fel a [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi) fórumot.
 

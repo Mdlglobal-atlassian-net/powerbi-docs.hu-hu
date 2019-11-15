@@ -45,8 +45,10 @@
               href: office-store.md
             - name: Egyéni R-vizualizációk a Power BI-ban
               href: ../desktop-r-powered-custom-visuals.md
-            - name: Vizualizációk interakciói
+            - name: Vizualizációk interakciójának engedélyezése
               href: visuals/visuals-interactions.md
+            - name: Kijelölések hozzáadása
+              href: visuals/selection-api.md
             - name: Elemleírások hozzáadása vizualizációkhoz
               href: visuals/add-tooltips.md
             - name: Elemzés panel hozzáadása
@@ -57,6 +59,8 @@
               href: visuals/fetch-more-data.md
             - name: Könyvjelző-támogatás hozzáadása
               href: visuals/bookmarks-support.md
+            - name: Helyi menü támogatásának hozzáadása
+              href: visuals/context-menu.md
             - name: Adatkiemelés vizualizációkban
               href: visuals/highlight.md
             - name: Magas kontrasztú mód támogatásának hozzáadása
@@ -65,6 +69,8 @@
               href: visuals/enable-sync-slicers.md
             - name: Power BI-vizualizációk hibáinak elhárítása
               href: ../power-bi-custom-visuals-troubleshoot.md
+            - name: Migrálás az új powerbi-vizualizációs eszközökbe
+              href: visuals/migrate-to-new-tools.md
         - name: Hivatkozás
           items:
             - name: Kezdőlap
@@ -77,6 +83,8 @@
               href: visuals/event-service.md
             - name: Rendezés
               href: visuals/sort-options.md
+            - name: Interaktivitási eszközök
+              href: visuals/utils-interactivity-selections.md
         - name: Erőforrások
           items:
             - name: Fejlesztői központ

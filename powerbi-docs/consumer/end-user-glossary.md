@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: a48589e6126203856a306de796c964ce6e347c26
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 32a93a881a801ec5dd335f167e69a5b76f53d694
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429877"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73764721"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -68,7 +68,7 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 **connect live (élő csatlakozás)** Az SQL Server Analysis Services-adatmodellekhez való csatlakozás módja. Az élő kapcsolat kifejezés is használható.
 
-**tároló** A navigációs sáv részterületei a *tárolók*. A navigációs sávon a következők tárolói láthatók: Kedvenc, Legutóbbiak, Alkalmazások, Velem megosztva és Kezdőlap. 
+**container (tároló)** A navigációs ablaktábla részterületei a *tárolók*. A navigációs ablaktáblán a következők tárolói láthatók: Kedvenc, Legutóbbiak, Alkalmazások, Velem megosztva és Kezdőlap. 
 
 **tartalom** A Power BI szolgáltatás tartalmát általában irányítópultok, jelentések és alkalmazások alkotják. Emellett szerepelhetnek benne munkafüzetek és adathalmazok is.
 
@@ -162,12 +162,12 @@ A dokumentációkban használható a Power BI-környezet (bérlő) kifejezés is
 
 ## <a name="l"></a>L
 
-**bal oldali navigáció** Ennek helyét a **navigációs sáv** vette át, de egyes dokumentációkban még előfordulhat.    
+**left navigation (left nav) (bal oldali navigáció)** Ennek helyét a **nav pane** (navigációs ablaktábla) vette át, de egyes dokumentációkban még előfordulhat.    
 A Power BI szolgáltatás bal szélén látható vezérlőelemek.
 
-A kifejezés első előfordulásakor bal oldali navigációs menü, utána vagy helyszűke esetén csak bal oldali menü.
+A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helyszűke esetén csak navigációs vagy nav. ablak.
 
-**list page (listaoldal)** vagy **tartalomjegyzék** A bal oldali navigációs menü elemeinek egyik szakasza. Például: Kedvencek, Legutóbbi elemek, Saját munkaterület stb.
+**list page (listaoldal)** vagy **content list (tartalomjegyzék)** A navigációs ablaktábla elemeinek egyik szakasza. Például: Kedvencek, Legutóbbi elemek, Saját munkaterület stb.
 
 ## <a name="m"></a>M
 
@@ -181,11 +181,11 @@ A kifejezés első előfordulásakor bal oldali navigációs menü, utána vagy 
 
 **native (natív)** A termék részét képező. A Power BI például több *natív* vizualizációtípust is tartalmaz. Ezek mellett más típusokat, például egyéni vizualizációkat is importálhat.
 
-**Navigációs sáv** vagy **bal sáv** A Power BI szolgáltatás bal szélén látható vezérlőelemek.
+**nav pane (navigációs ablaktábla)** vagy **nav pane (navigációs vagy nav. ablak)** A Power BI szolgáltatás bal oldali vezérlőelemei.
 
-A kifejezés első előfordulásakor navigációs sáv, utána vagy helyszűke esetén csak bal sáv
+A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helyszűke esetén csak nav. ablak.
 
-**navigációs panel** Lásd: **navigációs sáv**
+**nav pane** lásd: **nav pane (navigációs ablaktábla)**
 
 **notification (értesítés)** A Power BI értesítési központja által küldött és fogadott üzenetek.  
 
@@ -260,7 +260,7 @@ A paramétert az URL-címhez adva előszűrhetők a Power BI-jelentésekben megj
 
 **real-time streaming (valós idejű streamelés)** Az adatok streamelése és az irányítópultok valós idejű frissítése különféle forrásokból, például érzékelőkből, közösségi oldalakról, szolgáltatáshasználati metrikákból vagy bármi olyan forrásból, ahonnan időfüggő adatok gyűjthetők és továbbíthatók.  
 
-**Recent (Legutóbbi elemek)** A bal oldali menü egy szakasza, amelyben a legutóbb megnyitott egyéni összetevők található meg.
+**Recent (Legutóbbiak)** A navigációs ablaktábla egy szakasza, amelyben a legutóbb megnyitott egyéni összetevők találhatók meg.
 
 **related content (kapcsolódó tartalom)** Azok az egyéni tartalomelemek, amelyek részt vesznek az aktuális tartalom kialakításában. Például egy irányítópulton az irányítópult adatait és vizualizációit szolgáltató jelentéseket és adatkészleteket láthatja.   
 
@@ -288,7 +288,7 @@ Egy önálló adatkészlet többszempontú nézete, amely az adatkészletből sz
 **share, sharing (megosztás)** A Power BI-ban a megosztás általában egy önálló összetevő (egy irányítópult vagy jelentés) megosztását jelenti e-mailben egy vagy több címzettel. Ehhez a küldőnek és a fogadónak is Power BI Pro-licenccel kell rendelkeznie.
 A mobileszközökön a megosztás kifejezés utalhat az operációs rendszer natív funkciójára is, úgymint „feliratozás és megosztás”.  
 
-**Shared with me (Velem megosztva)** A bal oldali menü egy szakasza, amely a más Power BI-felhasználók által közvetlenül megosztott összes egyéni összetevőt tartalmazza.
+**Shared with me (Velem megosztva)** A navigációs ablaktábla egy szakasza, amely a más Power BI-felhasználók által közvetlenül megosztott összes egyéni összetevőt tartalmazza.
 
 **snapshot (pillanatkép)**
 

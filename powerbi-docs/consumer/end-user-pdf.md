@@ -2,7 +2,6 @@
 title: Jelentések exportálása PDF-fájlba
 description: Megtudhatja, hogyan exportálhat jelentést a Power BI-ból egy PDF-fájlba.
 author: mihart
-manager: kvivek
 ms.custom: ''
 ms.reviewer: cmfinlan
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1d6ddcd11118e0eb9894002c5c97edda134d4635
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: 376ecd007e774a153b47df75417621d4233cc4ce
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72716987"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862865"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Jelentések exportálása a Power BI-ból PDF-be
 
@@ -25,7 +24,7 @@ ms.locfileid: "72716987"
 A Power BI segítségével közzéteheti jelentését PDF formátumban, és könnyedén létrehozhat egy dokumentumot a Power BI-jelentés alapján. PDF-fájlba történő exportáláskor a Power BI-jelentés minden egyes oldalából a PDF dokumentum egy-egy oldala lesz.
 
 ## <a name="export-your-power-bi-report-to-pdf"></a>A Power BI-jelentés exportálása PDF-fájlba
-A Power BI szolgáltatásban jelöljön ki egy jelentést a vásznon való megjelenítéshez. Jelentést saját **kezdőlapján**, az **Alkalmazások** között, vagy a bal oldali navigációs panel bármely más tárolójában kijelölhet.
+A Power BI szolgáltatásban jelöljön ki egy jelentést a vásznon való megjelenítéshez. Egy jelentést a **kezdőlapon**, az **Alkalmazások** között, vagy a navigációs panel bármely más tárolójában is kijelölhet.
 
 1. Válassza a menüsor **Exportálás** > **PDF** lehetőségét.
 

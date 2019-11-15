@@ -2,7 +2,6 @@
 title: 'Beszerzéselemzési minta: Bemutató megtekintése'
 description: 'Beszerzéselemzési minta a Power BI-hoz: Bemutató megtekintése'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 9e27d09414167f9625e046204c14a5fb57112cd9
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 0998ebec15a4e02262ab54a3b08593a65f37af4e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462280"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873852"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Beszerzéselemzési minta a Power BI-hoz: Bemutató megtekintése
 
@@ -58,11 +57,11 @@ Használat előtt a mintát [tartalomcsomagként](#get-the-content-pack-for-this
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>.pbix-fájl letöltése ehhez a mintához
 
-A Beszerzéselemzési mintát a Power BI Desktoppal való használatra tervezett [.pbix-fájlként](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix) is letöltheti. 
+A Beszerzéselemzési mintát a Power BI Desktoppal való használatra tervezett [.pbix-fájlként](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix) is letöltheti. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Excel-munkafüzet letöltése ehhez a mintához
 
-Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](http://go.microsoft.com/fwlink/?LinkId=529784) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
+Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529784) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
 
 
 ## <a name="spending-trends"></a>Költési trendek
@@ -99,7 +98,7 @@ Nézzük meg a mexikói költési területeket.
       ![Közvetett termékek és szolgáltatások Mexikóra vonatkozó részletezése](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Válassza ki a felfelé mutató nyilat a diagram bal felső sarkában a felhatoláshoz.
 4. Válassza újra a részletező nyilat újra a részletezés kikapcsolásához.  
-5. A felső navigációs sávon a **Beszerzéselemzési minta** lehetőségre kattintva visszatérhet az irányítópulthoz.
+5. A felső navigációs panelen a **Beszerzéselemzési minta** lehetőségre kattintva visszatérhet az irányítópulthoz.
 
 ## <a name="evaluate-different-cities"></a>Különböző városok értékelése
 A kiemelések használatával értékelheti a különböző városokat.

@@ -3,19 +3,18 @@ title: SAP-változók szerkesztése a Power BI szolgáltatásban (előzetes verz
 description: Az Azure és a Power BI
 author: Sujata994
 ms.author: sunaraya
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: db1d4a8a9734c910514b4952b664bf7ebce324c1
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: d78124045767323cca657fa41d4415ca2e929f3d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654875"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881913"
 ---
 # <a name="edit-sap-variables-in-the-power-bi-service-preview"></a>SAP-változók szerkesztése a Power BI szolgáltatásban (előzetes verzió)
 
@@ -31,7 +30,7 @@ Az SAP-változók szerkesztésére alkalmas funkció használatának van néhán
 
 **Szükséges az új szűrési felület** – a jelentéshez engedélyezve kell lennie az [új szűrési felületnek](power-bi-report-filter.md). Ezt a következőképpen engedélyezheti a jelentéshez a Power BI Desktopban:
 - A Power BI Desktopban válassza a **Fájl** > **Lehetőségek és beállítások** > **Beállítások** lehetőséget.
-- A bal oldali navigációs sáv **Aktuális fájl** területén válassza a **Jelentésbeállítások** szakaszt.
+- A navigációs panelen az **Aktuális fájl** területen válassza a **Jelentésbeállítások** szakaszt.
 - A **Szűrési felület** területen válassza a **Frissített szűrőpanel engedélyezése** lehetőséget.
 
 **DirectQuery-kapcsolatok szükségesek** – az SAP-adatforráshoz DirectQuery használatával kell kapcsolódni. Az Importálás módú kapcsolódás nem támogatott.
@@ -75,7 +74,7 @@ Ezt a következő módon teheti meg:
 
 4. A **Változók szerkesztése** panelen végzett módosítások csak az aktuális felhasználó számára maradnak meg (a Power BI többi megőrzési viselkedéséhez hasonlóan). Az alábbi képen bemutatott **Alapértelmezések visszaállítása** lehetőség választása visszaállítja a jelentés készítője által kialakított állapotot a változókkal együtt.
 
-    ![Alapértelmezések visszaállítása](media/service-edit-sap-variables/reset-to-default.png)
+    ![Alaphelyzetbe állítás](media/service-edit-sap-variables/reset-to-default.png)
 
 Ha SAP HANA-t vagy SAP BW-t használó közzétett jelentésen dolgozik a Power BI szolgáltatásban, és a **Változók szerkesztése** funkció engedélyezve van, a jelentés tulajdonosa megváltoztathatja ezeket az alapértelmezéseket. A jelentés tulajdonosa szerkesztési módban módosíthatja a változókat, majd a jelentés mentésével engedélyezi, hogy ezek a beállítások legyenek a jelentés *új alapértelmezett beállításai*. A jelentéshez az annak tulajdonosa által végrehajtott ilyen módosítás után hozzáférő többi felhasználó az új beállításokat fogja látni alapértelmezettként.
 

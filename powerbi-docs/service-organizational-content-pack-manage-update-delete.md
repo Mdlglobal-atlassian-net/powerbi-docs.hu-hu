@@ -2,7 +2,6 @@
 title: 'Céges tartalomcsomagok: Kezelés és frissítés'
 description: Tájékoztató a céges tartalomcsomagok Power BI-beli kezeléséről, frissítéséről és törléséről.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f2a80b075a56cdeccfa4c3675cdf31504b6a7e5d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 975c219a98f3d03f59df4d1c2a0551718bf213f0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431757"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881269"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Céges tartalomcsomagok kezelése, frissítése és törlése
 > [!NOTE]
@@ -64,8 +63,8 @@ Egy másik módosítási lehetőség a tartalomcsomag létrehozói számára a h
    
    Azon munkatársak közül, akik nem tartoznak az új aliashoz:
    
-   * Azok a csoporttagok, akik nem szabták testre a tartalomcsomagot, nem fognak hozzáférni a tartalomcsomaghoz tartozó irányítópultokhoz és jelentésekhez, és nem fogják látni a tartalomcsomagot a Navigációs panelen.
-   * Azok a csoporttagok, akik testreszabták a tartalomcsomagot, a testreszabott irányítópult legközelebbi megnyitásakor az eredeti tartalomcsomag egyik csempéjét sem fogják látni.  Láthatóak lesznek ugyanakkor a más jelentésekből kitűzött csempék. Az eredeti tartalomcsomag jelentései és adatkészletei nem lesznek többé elérhetőek, és a tartalomcsomag nem jelenik meg a Navigációs panelen.   
+   * Azok a csoporttagok, akik nem szabták testre a tartalomcsomagot, nem fognak hozzáférni a tartalomcsomaghoz tartozó irányítópulthoz és jelentésekhez, és nem fogják látni a tartalomcsomagot a navigációs panelen.
+   * Azok a csoporttagok, akik testreszabták a tartalomcsomagot, a testreszabott irányítópult legközelebbi megnyitásakor az eredeti tartalomcsomag egyik csempéjét sem fogják látni.  Láthatóak lesznek ugyanakkor a más jelentésekből kitűzött csempék. Az eredeti tartalomcsomag jelentései és adatkészlete nem lesznek többé elérhetők, és a tartalomcsomag nem jelenik meg a navigációs panelen.   
 
 ## <a name="refresh-an-organizational-content-pack"></a>Céges tartalomcsomag frissítése
 A tartalomcsomag létrehozójaként [ütemezheti az adatkészletek frissítését](refresh-data.md).  Amikor létrehoz és feltölt egy tartalomcsomagot, az adatkészletekkel együtt a frissítési ütemezést is feltölti a rendszer. Ha megváltoztatja a frissítési ütemezést, újra közzé kell tennie a tartalomcsomagot (a fentebb leírtak szerint).
@@ -81,11 +80,11 @@ Csak azokat a tartalomcsomagokat törölheti az AppSource-ból, amelyeket Ön ho
 1. A tartalomcsomagok AppSource-ból való törléséhez lépjen arra a munkaterületre, ahol létrehozta a tartalomcsomagot, kattintson a ![](media/service-organizational-content-pack-manage-update-delete/cog.png) fogaskerék ikonra, majd válassza a **Tartalomcsomag megtekintése** lehetőséget.
 2. Válassza a **Törlés \> Törlés** lehetőséget. 
    
-   * Azon csoporttagok elől, akik nem szabták testre a tartalomcsomagot, a rendszer automatikusan eltávolítja a tartalomcsomaghoz tartozó irányítópultokat és jelentéseket. Számukra nem lesznek elérhetők, és nem fogják látni a Navigációs panelen sem a tartalomcsomagot.
-   * Azok a csoporttagok, akik testreszabták a tartalomcsomagot, a testreszabott irányítópult legközelebbi megnyitásakor az eredeti tartalomcsomag egyik csempéjét sem fogják látni.  Láthatóak lesznek ugyanakkor a más jelentésekből kitűzött csempék. Az eredeti tartalomcsomag jelentései és adatkészletei nem lesznek többé elérhetőek, és a tartalomcsomag nem jelenik meg a Navigációs panelen.   
+   * Azon csoporttagok elől, akik nem szabták testre a tartalomcsomagot, a rendszer automatikusan eltávolítja a tartalomcsomaghoz tartozó irányítópultokat és jelentéseket. Ezek nem lesznek többé elérhetők, és a tartalomcsomag nem jelenik meg a navigációs panelen.
+   * Azok a csoporttagok, akik testreszabták a tartalomcsomagot, a testreszabott irányítópult legközelebbi megnyitásakor az eredeti tartalomcsomag egyik csempéjét sem fogják látni.  Láthatóak lesznek ugyanakkor a más jelentésekből kitűzött csempék. Az eredeti tartalomcsomag jelentései és adatkészlete nem lesznek többé elérhetők, és a tartalomcsomag nem jelenik meg a navigációs panelen.   
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 * [Szervezeti tartalomcsomagok: bevezetés](service-organizational-content-pack-introduction.md)
 * [Alkalmazások létrehozása és terjesztése a Power BI-ban](service-create-distribute-apps.md) 
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

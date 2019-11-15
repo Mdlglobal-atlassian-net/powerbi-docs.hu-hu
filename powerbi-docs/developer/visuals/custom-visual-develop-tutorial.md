@@ -3,18 +3,17 @@ title: Power BI-vizualizáció fejlesztése
 description: Oktatóanyag egyéni Power BI-vizualizációk létrehozásához
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: 1aa269bc738b873ac36498e2ecf52f2cf06c209d
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 6b6338e7f8e3e359d51639358376c0fcf49fbac1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72308697"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880301"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Oktatóanyag: Power BI-vizualizáció fejlesztése
 

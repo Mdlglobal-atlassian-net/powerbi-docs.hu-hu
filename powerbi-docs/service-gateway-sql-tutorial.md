@@ -2,7 +2,6 @@
 title: 'Oktatóanyag: Csatlakozás helyszíni adatokhoz az SQL Serverrel'
 description: Útmutató az SQL Server átjáró-adatforrásként való használatához és az adatok frissítéséhez.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 54ef11b51fb02b6913b4d591967a140c5affc1b8
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 91b6ee8971004a014b188f94142e90914ae3a3b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307402"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881555"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Adatok frissítése helyszíni SQL Server-adatbázisból
 
@@ -72,7 +71,7 @@ Az alábbi eljárást követve hozhat létre alapszintű Power BI-jelentést az 
 
 5. Húzza az **EndDate** elemet a **Jelentési szint szűrői** részre, majd az **Alapszintű szűrés** területen csak az **(Üres)** jelölőnégyzet jelölje be.
 
-    ![Jelentési szint szűrői](./media/service-gateway-sql-tutorial/report-level-filters.png)
+    ![Jelentésszintű szűrők](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
     A diagram most a következő képhez hasonlóan néz ki.
 
@@ -131,7 +130,7 @@ A Power BI Desktopban közvetlenül csatlakozott a helyszíni SQL Server-adatbá
 
 Miután csatlakoztatta a Power BI-ban található adathalmazt a helyszíni SQL Server-adatbázishoz egy adatátjárón keresztül, az alábbi lépéseket követve konfigurálhatja a frissítési ütemezést. Az adathalmaz ütemezett frissítésével gondoskodhat arról, hogy a jelentések és az irányítópultok a legfrissebb adatokkal rendelkezzenek.
 
-1. A bal oldali navigációs panelen nyissa meg a **Saját munkaterület** \> **Adathalmazok** lapot. Kattintson az **AdventureWorksProducts** adathalmazhoz tartozó három pontra ( **. . .** ), majd válassza a **Frissítés ütemezése** elemet.
+1. A navigációs panelen nyissa meg a **Saját munkaterület** \> **Adatkészletek** lapot. Kattintson az **AdventureWorksProducts** adathalmazhoz tartozó három pontra ( **. . .** ), majd válassza a **Frissítés ütemezése** elemet.
 
     > [!NOTE]
     > Ügyeljen arra, hogy az **AdventureWorksProducts** adathalmazhoz tartozó három pontra kattintson, ne pedig azokra, amelyek az ugyanilyen nevű jelentéshez tartoznak. Az **AdventureWorksProducts** jelentés helyi menüje nem tartalmazza a **Frissítés ütemezése** elemet.
@@ -149,7 +148,7 @@ Miután csatlakoztatta a Power BI-ban található adathalmazt a helyszíni SQL S
 
 ## <a name="perform-an-on-demand-refresh"></a>Igény szerinti frissítés végrehajtása
 
-A frissítési ütemezés konfigurálását követően a Power BI a következő ütemezett időpontban frissíteni fogja az adathalmazt egy 15 perces intervallumon belül. Ha ennél hamarabb szeretné frissíteni az adatokat, például az átjáró és az adatforrás konfigurációjának teszteléséhez, igény szerinti frissítést hajthat végre a bal oldali navigációs panel Adathalmaz menüjében található **Azonnali frissítés** lehetőséggel. Az igény szerinti frissítések nincsenek hatással a következő ütemezett frissítési időre, azonban beleszámítanak a napi frissítési korlátba, amelyről az előző szakaszban szóltunk.
+A frissítési ütemezés konfigurálását követően a Power BI a következő ütemezett időpontban frissíteni fogja az adathalmazt egy 15 perces intervallumon belül. Ha ennél hamarabb szeretné frissíteni az adatokat, például az átjáró és az adatforrás konfigurációjának teszteléséhez, igény szerinti frissítést hajthat végre a navigációs panel Adatkészlet menüjében található **Azonnali frissítés** lehetőséggel. Az igény szerinti frissítések nincsenek hatással a következő ütemezett frissítési időre, azonban beleszámítanak a napi frissítési korlátba, amelyről az előző szakaszban szóltunk.
 
 Szemléltetésképpen szimuláljuk a mintaadatok változását az AdventureWorksDW adatbázis DimProduct tábláját az SQL Server Management Studióval (SSMS) frissítve.
 
@@ -163,7 +162,7 @@ WHERE EnglishProductName ='Road-250 Red, 58'
 
 Kövesse az alábbi lépéseket, hogy a frissített adatok eljuthassanak az átjárókapcsolaton keresztül az adathalmazba, majd a Power BI-jelentésekbe.
 
-1. A Power BI szolgáltatás bal oldali navigációs paneljén kattintson a **Saját munkaterület** elemre, és bontsa ki.
+1. A Power BI szolgáltatás navigációs paneljén kattintson a **Saját munkaterület** elemre, és bontsa ki.
 
 2. Az **Adathalmazok** lapon kattintson az **AdventureWorksProducts** adathalmazhoz tartozó három pontra ( **. . .** ), majd válassza az **Azonnali frissítés** elemet.
 

@@ -3,19 +3,18 @@ title: A Power BI jelentéskészítő kiszolgáló frissítése
 description: A Power BI jelentéskészítő kiszolgáló frissítésének ismertetése
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/05/2017
-ms.openlocfilehash: 52863ea4bd666547a9c63b3add1d2d9c0626adc7
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: eac019bc31396359b7520e057f2384adce386a96
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839695"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873964"
 ---
 # <a name="upgrade-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló frissítése
 
@@ -63,7 +62,7 @@ A Power BI jelentéskészítő kiszolgáló frissítése nagyon egyszerű. Alig 
 
 2. Válassza az **Upgrade Power BI Report Server** (Power BI jelentéskészítő kiszolgáló frissítése) lehetőséget.
 
-    ![Upgrade Power BI Report Server](media/upgrade/reportserver-upgrade1.png "Upgrade Power BI Report Server")
+    ![A Power BI jelentéskészítő kiszolgáló frissítése](media/upgrade/reportserver-upgrade1.png "A Power BI jelentéskészítő kiszolgáló frissítése")
 
 3. Olvassa el a licencfeltételeket, majd válassza az **Upgrade** (Frissítés) elemet.
 

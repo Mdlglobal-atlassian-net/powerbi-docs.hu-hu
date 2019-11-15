@@ -2,7 +2,6 @@
 title: Új munkaterületek létrehozása – Power BI
 description: Megtudhatja, hogyan hozhatja létre az új munkaterületeket, olyan irányítópultokból, jelentésekből és lapszámozott jelentésekből álló gyűjteményeket, amelyek célja az alapvető metrikák biztosítása a vállalat számára.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2fdc893ac8545df8fc64f45959a418018a189c84
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: bbb5eeee7422670c771f7bbfb4b051de0538a10a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020468"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877521"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Új munkaterületek létrehozása a Power BI-ban
 
@@ -74,7 +73,7 @@ Meghatározhatja, hogy mely felhasználók kapjanak értesítést a munkaterüle
 
     A **Munkaterület létrehozása** panelen, amikor először létrehozza.
 
-    A bal oldali navigációs panelen válassza a **Munkaterületek** elem melletti nyilat, majd a munkaterület neve melletti **További beállítások** (...) lehetőséget, végül a **Munkaterület beállításai** menüpontot. Megnyílik a **Beállítások** panel.
+    A navigációs ablaktáblán válassza a **Munkaterületek** elem melletti nyilat, majd a munkaterület neve melletti **További beállítások** (...) lehetőséget, végül a **Munkaterület beállításai** menüpontot. Megnyílik a **Beállítások** panel.
 
     ![Munkaterület beállításai](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -94,7 +93,7 @@ A Power BI nem szinkronizálja azon felhasználók és csoportok jogosultságait
 
     A **Munkaterület létrehozása** panelen, amikor először létrehozza.
 
-    A bal oldali navigációs panelen válassza a **Munkaterületek** elem melletti nyilat, majd a munkaterület neve melletti **További beállítások** (...) lehetőséget, végül a **Munkaterület beállításai** menüpontot. Megnyílik a **Beállítások** panel.
+    A navigációs ablaktáblán válassza a **Munkaterületek** elem melletti nyilat, majd a munkaterület neve melletti **További beállítások** (...) lehetőséget, végül a **Munkaterület beállításai** menüpontot. Megnyílik a **Beállítások** panel.
 
     ![Munkaterület beállításai](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -108,7 +107,7 @@ A Power BI nem szinkronizálja azon felhasználók és csoportok jogosultságait
 
 A OneDrive-hely konfigurálása után ahhoz ugyanúgy férhet hozzá, ahogyan más adatforrásokhoz a Power BI szolgáltatásban.
 
-1. A bal oldali navigációs panelen válassza az **Adatok lekérése** lehetőséget, majd a **Fájlok** terület **Lekérés** elemét.
+1. A bal oldali navigációs ablaktáblán válassza az **Adatok lekérése** lehetőséget, majd a **Fájlok** terület **Lekérés** elemét.
 
     ![Adatok és fájlok lekérése](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
@@ -145,4 +144,4 @@ További tudnivalók [alkalmazás közzétételéről az új munkaterületeken](
 * Olvassa el a [munka rendszerezése az új munkaterületi felületen a Power BI-ban](service-new-workspaces.md) szakaszt
 * [Klasszikus munkaterületek létrehozása](service-create-workspaces.md)
 * [Alkalmazás közzététele a Power BI új munkaterületeiről](service-create-distribute-apps.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

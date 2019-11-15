@@ -2,7 +2,6 @@
 title: A Power BI Desktop és a Power BI szolgáltatás összehasonlítása
 description: A Power BI Desktop egy teljes körű adatelemzési és jelentéskészítő eszköz. A Power BI szolgáltatás egy felhőalapú, online szolgáltatás egyszerűbb jelentésszerkesztésekhez, valamint a csapatok és vállalatok közötti együttműködéshez.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e2985f4a27d8471bcfce80d40f2263e2be07d38c
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 39b95708b95144ba77a3b33b8ee15f913ae7ca2b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73064353"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879021"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>A Power BI Desktop és a Power BI szolgáltatás összehasonlítása
 
@@ -38,7 +37,7 @@ Az alkalmazásban és a szolgáltatásban is létrehozhat és szerkeszthet *jele
 
 A Power BI Desktopban és a szolgáltatásban a jelentésszerkesztők hasonlóak. Három szakaszból állnak:  
 
-1. A felső navigációs sávok eltérőek a Power BI Desktopba és a szolgáltatásban    
+1. A felső navigációs ablaktáblák, amelyek eltérnek a Power BI Desktopban és a szolgáltatásban    
 2. A jelentésvászon     
 3. A **Mezők**, a **Megjelenítések** és a **Szűrők** panel
 

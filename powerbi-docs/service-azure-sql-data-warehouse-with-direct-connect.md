@@ -6,17 +6,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/20/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: aaeda4c2f7c50e41d9b149e33ba49f5eba76eba8
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 2e96b88963250d7ac11cf9690c63b431279d585a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060686"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873247"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>Az Azure SQL Data Warehouse használata DirectQueryvel
 
@@ -54,7 +53,7 @@ Az SQL Data Warehouse és a Power BI között a legegyszerűbben az Azure Portal
 
 Az SQL Data Warehouse a Power BI Adatok lekérése oldaláról is elérhető. 
 
-1. A bal oldali navigációs ablaktábla alján kattintson az **Adatok lekérése** elemre.  
+1. Kattintson az **Adatok lekérése** elemre a navigációs panel alján.  
 
     ![Adatok lekérése gomb](media/service-azure-sql-data-warehouse-with-direct-connect/getdatabutton.png)
 
@@ -102,4 +101,4 @@ A teljes kiszolgálónevet és adatbázisnevet az Azure Portalon találhatja meg
 * [Power BI – Adatok lekérése](service-get-data.md)  
 * [Az Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is/)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -2,20 +2,19 @@
 title: Az Alakzatleképezések funkció használata a Power BI Desktopban (előzetes verzió)
 description: Relatív összehasonlítások létrehozása régiókhoz az Alakzatleképezések funkcióval a Power BI Desktopban
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amanda
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 6543263c0e6c3395479169e8b02034e4a9c78f7b
-ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
+ms.openlocfilehash: 800f7d3cd7f930f2c3411c21e94cadb7cda94c8c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72164095"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871127"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Az Alakzatleképezések funkció a Power BI Desktopban (előzetes verzió)
 
@@ -61,7 +60,7 @@ A következő lépések végrehajtásával hozhat létre **Alakzatleképezést**
 3. Ezután módosíthatja a térképet a formázási beállításokkal, például az **Alapértelmezett szín**, a **Nagyítás** és egyéb lehetőségekkel. Emellett hozzáadhat kategória-szintű adatoszlopot is a **Jelmagyarázat** gyűjtőhöz, így a térképes régiókat kategóriák alapján osztályozhatja.
 
 ## <a name="use-custom-maps"></a>Egyéni térképek használata
-Egyéni térképek használatára is lehetőség van az **Alakzatleképezés** funkcióval, ha azok formátuma **TopoJSON**. Ha a térkép más formátumban van, különböző online eszközök (például a [**Map Shaper**](http://mapshaper.org/)) segítségével konvertálhatja *alakzatfájljait* vagy *GeoJSON* formátumú térképeit **TopoJSON** formátumba.
+Egyéni térképek használatára is lehetőség van az **Alakzatleképezés** funkcióval, ha azok formátuma **TopoJSON**. Ha a térkép más formátumban van, különböző online eszközök (például a [**Map Shaper**](https://mapshaper.org/)) segítségével konvertálhatja *alakzatfájljait* vagy *GeoJSON* formátumú térképeit **TopoJSON** formátumba.
 
 A **TopoJSON** formátumú térképfájl használatához vegyen fel egy Alakzatleképezés vizualizációt a jelentésbe, valamint néhány adatot a *Hely* és az *Színtelítettség* gyűjtőkbe. Ezt követően jelölje ki a **Vizualizációk** panelen a **Formátum** szakaszt (az alábbi képen (1) számmal jelölve), majd bontsa ki az **Alakzat** szakaszt, és válassza a **+ Térkép hozzáadása** lehetőséget.
 
@@ -82,7 +81,7 @@ Az egyes államtérképekkel is érdekes műveleteket végezhet, és még részl
 
 Ha szeretne ezzel az adatkészlettel és vizualizációval kísérletezni, a következő hivatkozással letöltheti a jelentés létrehozásához használt eredeti PBIX-fájlt.
 
-* [Egyéni térkép bemutató. PBIX-fájl](http://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
+* [Egyéni térkép bemutató. PBIX-fájl](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
 ## <a name="getting-map-data"></a>Térképadatok lekérése
 Az adatoknak a modellbe történő gyors betöltéséhez (erre az **Alakzat leképezése** funkció teszteléséhez van szükség) kimásolhatja a cikk végén található egyik táblát, majd válassza az **Adatbevitel** lehetőséget a **Kezdőlap** menüszalagján.
@@ -108,7 +107,7 @@ Néhány megfontolandó szempont és követelmény az **Alakzat leképezése** f
 * Az **Alakzatleképezés** vizualizáció előzetes verziójú funkció, és azt a Power BI Desktopban engedélyezni kell. Az **Alakzat leképezése** funkció engedélyezéséhez válassza a **Fájl > Lehetőségek és beállítások > Lehetőségek > Előzetes verziójú funkciók** lehetőséget, majd jelölje be az **Alakzatleképezés vizualizációja** jelölőnégyzetet.
 * Jelenleg rendelkeznie kell egy **Színtelítettség** gyűjtővel is, amely a **Jelmagyarázat** besorolás megfelelő működéséhez lett beállítva.
 * Az **Alakzat leképezése** végleges kiadott verziója rendelkezni fog egy felhasználói felülettel, amelyen megjelennek az aktuálisan kiválasztott térképhez a térképkulcsok (nincs meghatározva a végleges verzió kiadási dátuma, és az **Alakzat leképezése** még előzetes verziójú). Ebben az előzetes kiadásban a térképrégiók kulcsait megkeresheti ennek a cikknek a következő **Régiókulcsok** szakaszában található táblázatokban.
-* Az **Alakzat leképezése** vizualizáció legfeljebb 1000 adatpontot tud majd ábrázolni.
+* Az **Alakzat leképezése** vizualizáció legfeljebb 1500 adatpontot tud majd ábrázolni.
 
 ## <a name="region-keys"></a>Régiókulcsok
 

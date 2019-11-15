@@ -2,7 +2,6 @@
 title: Tartalom keresése a Power BI szolgáltatásban
 description: Nyissa meg a Kezdőlapot, ahol jelentéseket, irányítópultokat és alkalmazásokat kereshet meg és nyithat meg.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: d97b5a93060869d65de6652af869b472baf8cd10
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: b905b738dc9fa38e390a94fb1b893aba8e45a0db
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71077784"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863696"
 ---
 # <a name="find-your-dashboards-reports-and-apps"></a>Irányítópultok, jelentések és alkalmazások megkeresése
 A Power BI-ban a *tartalom* kifejezés alkalmazásokra, irányítópultokra és jelentésekre vonatkozik. A tartalmat a Power BI *tervezői* hozzák létre, akik megosztják azokat a munkatársakkal, például Önnel. A tartalom elérhető és megtekinthető a Power BI szolgáltatásban, és a legjobb, ha a Power BI kezdőlapján kezdi a munkát.
@@ -28,7 +27,7 @@ Amikor bejelentkezik, Power BI a Kezdőlap területet nyitja meg és jeleníti m
 A Power BI kezdőlapján három különböző módszerrel tekinthet meg és kereshet tartalmakat. Mindhárom ugyanahhoz a tartalomhoz fér hozzá, mindössze más-másféleképpen érik azt el. Néha kereséssel lehet megtalálni tartalmakat a legegyszerűbb és leggyorsabb módon, míg más esetben hatékonyabb módszer, ha kiválaszt egy *kártyát* a kezdőlapon.
 
 - A kezdőlapon rendszerezve megtalálja a kedvenc és a legújabb tartalmakat, de vannak még itt ajánlott tartalmak és tanuláshoz használható források is. Minden tartalomhoz tartozik egy *kártya*, amelyen egy cím és egy ikon is látható. Ha kiválasztja a kártyát, megnyílik az adott tartalom.
-- A bal oldalon egy navigációs panelt talál, amelyet navigációs sávnak hívunk. Ezen a panelen ugyanaz a tartalom látható, de más elrendezésben: Kedvencek, Legutóbbi, Alkalmazások és Velem megosztva kategóriákban. Innen megtekintheti a tartalomlistát, és kiválaszthatja a megnyitni kívánt elemet.
+- A bal oldalon egy navigációs területet talál, ezt navigációs panelnek nevezzük. Ezen a panelen ugyanaz a tartalom látható, de más elrendezésben: Kedvencek, Legutóbbi, Alkalmazások és Velem megosztva kategóriákban. Innen megtekintheti a tartalomlistát, és kiválaszthatja a megnyitni kívánt elemet.
 - A jobb felső sarokban található a globális keresőmező, amellyel megkeresheti a tartalmakat cím, név vagy kulcsszó alapján.
 
 Az alábbi témakörökben részletesebben is megvizsgáljuk mindegyik lehetőséget, amelyekkel tartalmat kereshet és tekinthet meg.
@@ -65,23 +64,23 @@ A tevékenységei és a fiókbeállításai alapján Power BI ajánlott alkalmaz
 ### <a name="learning-resources"></a>Tanulási források
 A Kezdőlap alján tanulási források láthatóak. Az, hogy pontosan milyen források jelennek meg, attól függ, hogy Ön milyen tevékenységeket végez, és hogy a Power BI-adminisztrátor milyen beállításokat alkalmazott. 
  
-## <a name="explore-the-navigation-pane-nav-bar"></a>A navigációs panel (navigációs sáv) bemutatása
+## <a name="explore-the-nav-pane"></a>Ismerkedés a navigációs panellel
 
-![A Power BI szolgáltatás navigációs sávjának képernyőképe.](media/end-user-home/power-bi-nav-bar.png)
+![A Power BI szolgáltatás navigációs paneljének képernyőképe.](media/end-user-home/power-bi-nav-bar.png)
 
 
-A bal oldali navigációs panel (navigációs sáv) használatával irányítópultokat, jelentéseket és alkalmazásokat kereshet, és navigálhat közöttük. Esetenként a tartalmat a leggyorsabban a navigációs sávval lehet megkeresni.
-A navigációs sáv megjelenik, amint megnyitja kezdőlapot, és ott is marad, amikor a Power BI szolgáltatás többi területét megnyitja.
+A navigációs panelen megkeresheti meg az irányítópultokat, jelentéseket és alkalmazásokat, és válthat is közöttük. Esetenként a tartalmat a leggyorsabban a navigációs panelen lehet megkeresni.
+A navigációs panel megjelenik, amint megnyitja kezdőlapot, és akkor is látható marad, amikor a Power BI szolgáltatás többi területén dolgozik.
   
-A navigációs sáv a tartalmat tárolókba rendezi, hasonlóan ahhoz, amit már korábban láttunk a Kezdőlapon: Kedvenc, Legutóbbiak, Alkalmazások és Velem megosztva kategóriákba. Az úszó menük használatával megtekintheti minden tárolóban csak a legutóbbi tartalmat, de tartalomlistákra is léphet, ha az egyes tárolókategóriákban az összes tartalmat meg szeretné tekinteni.
+A navigációs panel a tartalmakat tárolókba rendezi, amelyek hasonlóan vannak felosztva, amit korábban már a Kezdőlap vásznon is láttunk: Kedvenc, Legutóbbiak, Alkalmazások és Velem megosztva kategóriákba. Az úszó menük használatával megtekintheti minden tárolóban csak a legutóbbi tartalmat, de tartalomlistákra is léphet, ha az egyes tárolókategóriákban az összes tartalmat meg szeretné tekinteni.
  
 - Ha meg szeretné nyitni valamely tartalomszakaszt, és meg szeretné jeleníti az összes elemet, válassza ki a fejlécét.
 - Ha az egyes tárolókban a legutóbbi elemeket szeretné megtekinteni, válassza az úszó menüt ( **>** ).
 
-    ![Videó a legutóbbi elemek megtekintéséről a navigációs sáv használatával](media/end-user-home/power-bi-nav-bar.gif)
+    ![Videó a legutóbbi tartalmak használatáról a navigációs panelen](media/end-user-home/power-bi-nav-bar.gif)
 
  
-A navigációs sávval ugyancsak gyorsan megtalálhatja a keresett tartalmat. A tartalom a Kezdőlapon láthatóhoz hasonlóan van elrendezve, de kártyák helyett itt listákban jelennek meg. 
+A keresett tartalmakat a navigációs panelen is gyorsan megtalálhatja. A tartalom a Kezdőlapon láthatóhoz hasonlóan van elrendezve, de kártyák helyett itt listákban jelennek meg. 
 
 ## <a name="search-all-of-your-content"></a>Keresés az összes tartalomban
 A tartalmat néha a leggyorsabban kereséssel találhatja meg. Tegyük fel, hogy azt veszi észre, hogy a Kezdőlapon már nem jelenik meg egy irányítópult, amelyet egy ideje nem használt. Lehet, hogy emlékszik rá, hogy Aaron nevű kollégája osztotta meg Önnel, de arra már nem emlékszik, hogy Aaron milyen nevet adott neki, vagy hogy milyen típusú tartalmat osztott meg: irányítópultot vagy jelentést.

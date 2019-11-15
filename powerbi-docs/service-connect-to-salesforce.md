@@ -2,7 +2,6 @@
 title: Csatlakozás a Salesforce-hoz a Power BI-ban
 description: Salesforce a Power BI-ban
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b351ba2151937b62002dc0cfca849cff58985581
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 6fedd3994a9e6a14ea89637a0c12aa8dd47928a9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060816"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854625"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Csatlakozás a Salesforce-hoz a Power BI-ban
 A Power BI használatával könnyedén csatlakozhat a Salesforce.com-fiókjához. Ezzel a kapcsolattal lekérheti a Salesforce-adatokat, és automatikusan a rendelkezésére bocsáthat egy irányítópultot és jelentéseket.
@@ -23,7 +22,7 @@ A Power BI használatával könnyedén csatlakozhat a Salesforce.com-fiókjához
 További információ a Power BI és a [Salesforce-integrációjáról](https://powerbi.microsoft.com/integrations/salesforce).
 
 ## <a name="how-to-connect"></a>Csatlakozás
-1. A Power BI bal oldali navigációs panelének alján kattintson az **Adatok lekérése** elemre.
+1. A Power BI-ban válassza az **Adatok lekérése** elemet a navigációs panel alján.
    
    ![](media/service-connect-to-salesforce/pbi_getdata.png) 
 2. A **Szolgáltatások** mezőben kattintson a **Lekérés** elemre.
@@ -53,7 +52,7 @@ További információ a Power BI és a [Salesforce-integrációjáról](https://
      
      Ha nem lát jelentést, vegye fel vagy hozza létre a Salesforce-fiókban, majd kísérelje meg újra a csatlakozást.
 
-7. Az importálás megkezdéséhez válassza a **Csatlakozás** lehetőséget. Az importálás során megjelenik egy értesítés, hogy az importálás folyamatban van. Ha az importálás befejeződött, a bal oldali navigációs panelen megjelenik a Salesforce-adatokat tartalmazó irányítópult, jelentés és adatkészlet.
+7. Az importálás megkezdéséhez válassza a **Csatlakozás** lehetőséget. Az importálás során megjelenik egy értesítés, hogy az importálás folyamatban van. Ha az importálás befejeződött, a navigációs panelen megjelenik a Salesforce-adatokat tartalmazó irányítópult, jelentés és adathalmaz.
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 

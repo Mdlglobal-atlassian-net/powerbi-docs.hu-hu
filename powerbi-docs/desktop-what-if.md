@@ -2,7 +2,6 @@
 title: Lehetőségelemzési paraméterek használata változók megjelenítésére
 description: Létrehozhatja a saját Lehetőségelemzési változóját, hogy elképzelhesse és megjeleníthesse a változókat a Power BI-jelentésekben
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2451620c6d4092e5da4605f8e76b0a70e2eecf2b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1ad0c7d2a3c3d21d8ccb81354bdc03d845b61f58
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513488"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876053"
 ---
 # <a name="create-and-use-a-what-if-parameter-to-visualize-variables-in-power-bi-desktop"></a>Lehetőségelemzési paraméter létrehozása és használata változók vizualizációjához a Power BI Desktopban
 A **Power BI Desktop** 2018. augusztusi kiadásától kezdve létrehozhat **Lehetőségelemzési** változókat a jelentésekhez, szeletelőként dolgozhat a változókkal, valamint megjelenítheti és számszerűsítheti a jelentésekben szereplő különböző kulcsértékeket.
@@ -50,7 +49,7 @@ Hozzunk létre egy, a **Lehetőségelemzési** paraméter használatáról szól
 
 ![](media/desktop-what-if/what-if_05.png)
 
-Az új mérték egyszerűen a teljes értékesítés mennyisége lesz, a kedvezménnyel együtt. Természetesen összetett és érdekes mértékeket is létrehozhat, amelyek lehetővé teszik a jelentések felhasználói számára, hogy megjelenítsék a **Lehetőségelemzési** paraméter változóit. Létrehozhat például, egy jelentést, amely lehetővé teszi, hogy értékesítési személyeknek a kompenzáció megfelelnek bizonyos értékesítési célokat vagy százalékokat, vagy hatásának nagyobb a értékesítés.
+Az új mérték egyszerűen a teljes értékesítés mennyisége lesz, a kedvezménnyel együtt. Természetesen összetett és érdekes mértékeket is létrehozhat, amelyek lehetővé teszik a jelentések felhasználói számára, hogy megjelenítsék a **Lehetőségelemzési** paraméter változóit. Például létrehozhat egy jelentést, amely lehetővé teszi az értékesítés területén dolgozó személyeknek a kompenzáció megtekintését, ha elérnek bizonyos értékesítési célokat vagy százalékokat, vagy megtekinthetik a megnövekedett értékesítés nagyobb kedvezményekre gyakorolt hatását.
 
 Miután beírtuk a mérték képletét a képletsávba, és az **Értékesítés kedvezmény után** nevet adtuk neki, megjelennek az eredmények:
 

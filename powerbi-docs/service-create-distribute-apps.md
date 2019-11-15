@@ -2,19 +2,18 @@
 title: Alkalmazás közzététele a Power BI-ban
 description: Új útmutató új alkalmazások közzétételéhez, amelyek irányítópultok és jelentések beépített navigációval ellátott gyűjteményei.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7aa9ec22eec07632a071b5ffaadfe06f221897d7
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020225"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853639"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Alkalmazás közzététele a Power BI-ban
 
@@ -115,7 +114,7 @@ Az alkalmazásbeli navigációt a következőkkel is testre szabhatja:
 * A **Jelentés adatai**, az **Irányítópult adatai** és a **Munkafüzet adatai** elemeinek átnevezése.
 * Egyes elemek elrejtése a navigációban.
 * **Szakaszok** hozzáadása az összetartozó tartalmak csoportosításához az **Új** lehetőséggel.
-* Külső forrás felvétele a bal oldali navigációhoz az **Új** lehetőséggel hozzáadott **hivatkozással**. 
+* Az **Új** lehetőség használata, hogy hozzáadjon egy külső erőforrásra mutató **hivatkozást** a navigációs panelhez. 
 
 **Hivatkozás** hozzáadásakor a **Hivatkozás adatai** között megadhatja, hogy hol nyíljon meg a hivatkozás. A hivatkozás alapértelmezés szerint az **aktuális lapon** nyílik meg, de választhatja az **Új lap** vagy a **Tartalomterület** lehetőséget is. 
 
@@ -187,7 +186,7 @@ Ez a művelet törli az alkalmazás telepítését mindenkitől, akivel megoszto
 
 ## <a name="view-your-published-app"></a>A közzétett alkalmazás megtekintése
 
-Amikor az alkalmazás fogyasztói megnyitják az alkalmazást, a Power BI szabványos bal oldali navigációs panelje helyett az Ön által létrehozott navigáció jelenik meg. Az alkalmazásnavigáció az Ön által megadott szakaszokban sorolja fel a jelentéseket és az irányítópultokat. Nem csak a jelentés neve jelenik meg, a jelentések egyes oldalait is külön listázza ki.
+Amikor az alkalmazás felhasználói megnyitják az alkalmazást, a Power BI szokásos navigációs panelje helyett az Ön által létrehozott navigációs felület jelenik meg. Az alkalmazásnavigáció az Ön által megadott szakaszokban sorolja fel a jelentéseket és az irányítópultokat. Nem csak a jelentés neve jelenik meg, a jelentések egyes oldalait is külön listázza ki.
 
 ![Alkalmazás navigációval](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
@@ -203,4 +202,4 @@ Alkalmazás közzétételekor a következőket kell szem előtt tartani:
 * [Alkalmazások telepítése és használata a Power BI-ban](consumer/end-user-apps.md)
 * [Power BI alkalmazások külső szolgáltatásokhoz](service-connect-to-services.md)
 * [Power BI Felügyeleti portál](https://docs.microsoft.com/power-bi/service-admin-portal)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

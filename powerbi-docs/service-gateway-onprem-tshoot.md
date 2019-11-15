@@ -3,25 +3,24 @@ title: Átjárók hibaelhárítása – Power BI
 description: Ez a cikk a helyszíni adatátjáróval és a Power BI-jal kapcsolatos hibák elhárításának lehetőségeit mutatja be. A cikk leírja az ismert problémák kerülő megoldásait, valamint a használható eszközöket.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bfb0546771331e13f3703de0afdbcad6c3219f9c
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: b420c827df3c18796d0d46514f81170f202eafbd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543818"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881577"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Átjárók hibaelhárítása – Power BI
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Ez a cikk néhány olyan gyakori problémát ismertet, amelyek a helyszíni adatátjáró Power BI-jal való használatakor előfordulhatnak. Ha olyan problémával találkozik, mely itt nincs felsorolva, használhatja a Power BI [közösségi](http://community.powerbi.com) webhelyét, vagy létrehozhat egy [támogatási jegyet](http://powerbi.microsoft.com/support).
+Ez a cikk néhány olyan gyakori problémát ismertet, amelyek a helyszíni adatátjáró Power BI-jal való használatakor előfordulhatnak. Ha olyan problémával találkozik, mely itt nincs felsorolva, használhatja a Power BI [közösségi](https://community.powerbi.com) webhelyét, vagy létrehozhat egy [támogatási jegyet](https://powerbi.microsoft.com/support).
 
 ## <a name="configuration"></a>Konfiguráció
 
@@ -227,7 +226,7 @@ A „-10709 sikertelen kapcsolat” hibaüzenetet kapja, ha a delegálás beáll
 
 Ha az átjárót egy ütemezett frissítéshez használja, a **Frissítési előzmények** területen megtekintheti a hibákat. Itt hasznos információkat is találhat egy esetleges támogatási kéréshez. Emellett megtekintheti az ütemezett és az igény szerinti frissítéseket is. A Frissítési előzmények oldalra az alábbi lépésekben juthat el.
 
-1. A Power BI navigációs ablaktáblájának **Adatkészletek** területén jelöljön ki egy adatkészletet. Nyissa meg a menüt, majd válassza a **Frissítés ütemezése** lehetőséget.
+1. A Power BI navigációs paneljének **Adathalmazok** területén válasszon ki egy adathalmazt. Nyissa meg a menüt, majd válassza a **Frissítés ütemezése** lehetőséget.
 
     ![A frissítés ütemezésének kiválasztása](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 
@@ -241,7 +240,7 @@ Az egyes frissítési hibák elhárításáról a [Frissítési forgatókönyvek
 
 ## <a name="fiddler-trace"></a>Nyomon követés a Fiddlerrel
 
-A [Fiddler](http://www.telerik.com/fiddler) a Telerik által kifejlesztett, HTTP-forgalmat figyelő ingyenes eszköz. Nyomon követheti a Power BI szolgáltatás és az ügyfélszámítógép közötti adatforgalmat. A forgalomlista hibaüzenetek és egyéb, kapcsolódó információk megjelenítésére is képes.
+A [Fiddler](https://www.telerik.com/fiddler) a Telerik által kifejlesztett, HTTP-forgalmat figyelő ingyenes eszköz. Nyomon követheti a Power BI szolgáltatás és az ügyfélszámítógép közötti adatforgalmat. A forgalomlista hibaüzenetek és egyéb, kapcsolódó információk megjelenítésére is képes.
 
 ![A Fiddler-nyomkövetés használata](media/service-gateway-onprem-tshoot/fiddler.png)
 
@@ -254,4 +253,4 @@ A [Fiddler](http://www.telerik.com/fiddler) a Telerik által kifejlesztett, HTTP
 * [Az adatforrás kezelése – SQL Server](service-gateway-enterprise-manage-sql.md)  
 * [Adatforrások kezelése – Importálás/ütemezett frissítés](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
-További kérdései vannak? Kérdezze meg [a Power BI közösségét](http://community.powerbi.com/).
+További kérdései vannak? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).

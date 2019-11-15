@@ -2,7 +2,6 @@
 title: 'Informatikaköltség-elemzési minta a Power BI-hoz: Bemutató megtekintése'
 description: 'Informatikaköltség-elemzési minta a Power BI-hoz: Bemutató megtekintése'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: bc6b35b6401f4424a3a5120cb7c28437da9a2a48
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 6f39f8b5c288c1dbff3cd87c7beee27683cfeae2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462245"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873909"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Informatikaköltség-elemzési minta a Power BI-hoz: Bemutató megtekintése
 
@@ -54,11 +53,11 @@ A minták Power BI Desktopban való vizsgálatához nincs szükség Power BI-lic
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>.pbix-fájl letöltése ehhez a mintához
 
-Az Informatikaköltség-elemzési mintát a Power BI Desktoppal való használatra tervezett [.pbix-fájlként](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix) is letöltheti.
+Az Informatikaköltség-elemzési mintát a Power BI Desktoppal való használatra tervezett [.pbix-fájlként](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix) is letöltheti.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Excel-munkafüzet letöltése ehhez a mintához
 
-Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](http://go.microsoft.com/fwlink/?LinkId=529783) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
+Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529783) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
 
 ## <a name="it-spend-analysis-sample-dashboard"></a>Az Informatikaköltség-elemzés minta irányítópultja
 Az irányítópulton bal oldalán látható két számcsempe, a **Var Plan %** (Tervtől való százalékos eltérés) és a **Variance Latest Estimate % Quarter 3** (A 3. negyedévi friss becsléstől való százalékos eltérés) bemutatja a cég általános teljesítményét a tervhez és a friss negyedévi becsléshez képest (LE3 = 3. negyedévi friss becslés). A tervtől való átlagos eltérés körülbelül 6 %. Tárja fel az eltérés okát – mikor, hol, és mely kategóriában jelentkezik?
@@ -78,7 +77,7 @@ Ha azonban csupán ezt az egy diagramot vizsgálja, téves következtetésre jut
     Most vizsgálja meg, hogy az USA területén belül melyik kategória okozza az eltérést.
 
 ## <a name="ask-questions-of-the-data"></a>Kérdések az adatokról
-1. A felső navigációs sávon, az **Informatikaköltség-elemzés minta** lehetőségre kattintva visszatérhet a minta irányítópultjához.
+1. A felső navigációs panelen, az **Informatikaköltség-elemzés minta** lehetőségre kattintva visszatérhet a minta irányítópultjához.
 2. Válassza a **Tegyen fel kérdést az adataival kapcsolatban** lehetőséget.
 3. A bal oldali **Az első lépésekkel kapcsolatos kérdések** listában válassza a **what is the plan by IT area** (mi az informatikai terület szerinti terv) lehetőséget.
 

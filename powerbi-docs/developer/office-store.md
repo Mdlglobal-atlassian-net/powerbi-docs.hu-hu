@@ -3,18 +3,17 @@ title: Power BI-vizualizációk közzététele az AppSource-ban
 description: Megtudhatja, hogyan teheti közzé egyéni vizualizációit az AppSource-ban, amelyeket aztán mások is felfedezhetnek és használhatnak.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: 1841311e94ca593093fa3104b615328927365880
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: f97c38301eb69422c123503364e2e3f11ce5368a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307670"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880535"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Power BI-vizualizációk közzététele az AppSource-ban
 
@@ -38,10 +37,10 @@ Miután elolvasta a [Power BI-vizualizációk útmutatóját](guidelines-powerbi
 | Minta .pbix jelentésfájl |Igen |Ahhoz, hogy kellően be tudja mutatni a vizualizációt, segítenie kell a felhasználókat a részletei megismerésében. Érdemes kihangsúlyozni, hogy milyen értéket nyújt a vizualizáció a felhasználó számára, és érdemes felhozni a használatra, formázási lehetőségekre stb. vonatkozó példákat. Egy *„tippek”* oldalt is hozzáadhat a végén, amely tippeket, trükköket, elkerülendő lépéseket és hasonló információkat tartalmaz.<br>A minta .pbix jelentésfájlnak offline állapotban kell működnie, bármilyen külső kapcsolat nélkül |
 | Ikon |Igen |Meg kell adnia az egyéni vizualizáció áruházban megjelenő emblémáját. Ennek formátuma .png, .jpg, .jpeg vagy .gif lehet, Pontosan 300 képpont (szélesség) × 300 képpont (magasság) méretűnek kell lennie. **Fontos!** Az ikon beküldése előtt gondosan tekintse át a [rövid útmutatót](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images). |
 | Képernyőképek |Igen |Meg kell adnia legalább egy képernyőképet. Ennek formátuma .png, .jpg, .jpeg vagy .gif lehet, Pontosan 1366 képpont (szélesség) × 768 képpont (magasság) méretűnek kell lennie. A fájl mérete nem lehet nagyobb 1024 kB-nál. *A hatékonyabb használat érdekében adjon hozzá szövegbuborékokat az egyes képernyőképeken látható fő jellemzők által képviselt érték kihangsúlyozásához.* |
-| Támogatás letöltési hivatkozása |Igen |Adjon meg egy URL-címet, amelyet felkereshetnek a felhasználók, akiknek gondjuk van a vizualizációval. Ez a hivatkozás a SellerDashboard-lista részeként lett megadva, és látható a vizualizációját az AppSource-on lévő listában elérő felhasználók számára. Az URL formátumának tartalmaznia kell a https:// vagy a http:// előtagot. |
-| Adatvédelmi dokumentum hivatkozása |Igen |Adja meg a vizualizációt használó ügyfelekre vonatkozó adatvédelmi szabályzat hivatkozását. Ez a hivatkozás a SellerDashboard-lista részeként lett megadva, és látható a vizualizációját az AppSource-on lévő listában elérő felhasználók számára. A hivatkozás formátumának tartalmaznia kell a https:// vagy a http:// előtagot. |
+| Támogatás letöltési hivatkozása |Igen |Adjon meg egy URL-címet, amelyet felkereshetnek a felhasználók, akiknek gondjuk van a vizualizációval. Ez a hivatkozás a SellerDashboard-lista részeként lett megadva, és látható a vizualizációját az AppSource-on lévő listában elérő felhasználók számára. Az URL-címnek tartalmaznia kell a https:// vagy a http:// előtagot. |
+| Adatvédelmi dokumentum hivatkozása |Igen |Adja meg a vizualizációt használó ügyfelekre vonatkozó adatvédelmi szabályzat hivatkozását. Ez a hivatkozás a SellerDashboard-lista részeként lett megadva, és látható a vizualizációját az AppSource-on lévő listában elérő felhasználók számára. A hivatkozásnak tartalmaznia kell a https:// vagy a http:// előtagot. |
 | Végfelhasználói licencszerződés (EULA) |Igen |Fel kell töltenie egy EULA fájlt. Ez lehet saját EULA is, de az Office Áruház Power BI-vizualizációkra vonatkozó alapértelmezett EULA fájlját is használhatja. Az alapértelmezett EULA használatához illessze be a következő URL-címet az eladó irányítópultjának „Végfelhasználói licencszerződés” fájlfeltöltési párbeszédpaneljére: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
-| Videó hivatkozása |Nem |Ahhoz, hogy felkelthesse a felhasználók érdeklődését az egyéni vizualizáció iránt, ajánlott megadni egy, a vizualizációval foglalkozó videó hivatkozását. Az URL formátumának tartalmaznia kell a https:// vagy a http:// előtagot. |
+| Videó hivatkozása |Nem |Ahhoz, hogy felkelthesse a felhasználók érdeklődését az egyéni vizualizáció iránt, ajánlott megadni egy, a vizualizációval foglalkozó videó hivatkozását. Az URL-címnek tartalmaznia kell a https:// vagy a http:// előtagot. |
 | GitHub-adattár |Nem |Ajánlott megadni egy érvényes és nyilvános hivatkozást a vizualizáció forrásait és a mintaadatokat tartalmazó [GitHub](https://www.github.com)-adattárra, hogy más fejlesztők visszajelzést adhassanak, hozzájárulhassanak a kód fejlesztéséhez. |
 
 ## <a name="submitting-to-power-bi"></a>Elküldés a Power BI-nak
@@ -152,4 +151,4 @@ A vizualizáció létrehozása azt is megteheti, hogy tanúsíttatja a vizualiz�
 [Egyéni vizualizáció a Power BI-ban](../power-bi-custom-visuals.md)  
 [Egyéni vizualizáció *tanúsíttatása*](../power-bi-custom-visuals-certified.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

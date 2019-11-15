@@ -2,7 +2,6 @@
 title: 'Értékesítési és marketing minta a Power BI-hoz: Bemutató megtekintése'
 description: 'Értékesítési és marketing minta a Power BI-hoz: Bemutató megtekintése'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 31f42d7f53b3322717677d586266668fb2c0f26b
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 8085a6c8f5d0e7a2797ef6c5961b6083eb98f346
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391350"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873810"
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Értékesítési és marketing minta a Power BI-hoz: Bemutató megtekintése
 
@@ -56,11 +55,11 @@ Használat előtt a mintát [tartalomcsomagként](#get-the-content-pack-for-this
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>.pbix-fájl letöltése ehhez a mintához
 
-A mintát [.pbix-fájlként](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) is letöltheti, amelyet a Power BI Desktoppal való használatra terveztek.
+A mintát [.pbix-fájlként](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) is letöltheti, amelyet a Power BI Desktoppal való használatra terveztek.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Excel-munkafüzet letöltése ehhez a mintához
 
-Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](http://go.microsoft.com/fwlink/?LinkId=529785) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
+Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529785) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Mi olvasható le az irányítópultról?
 Kezdjük a bemutatót az irányítópulton, és tekintsük meg a csempéket, melyek rögzítése mellett döntött a marketingigazgató. A piaci részesedéssel, az eladásokkal és a cégről szóló véleményekkel kapcsolatos információk jelennek meg. Az adatok régió, időpont és versenytársak szerinti bontásban tekinthetők meg.
@@ -82,7 +81,7 @@ A Q&A segítségével további részleteket fedezhet fel az adatokról.
 
    ![Q&A-kérdés: Összes egység szegmensek szerint VanArsdel gyártóhoz](media/sample-sales-and-marketing/sales2.png)
 3. A **Moderálás** és a **Kényelem** kategóriában magas a részesedésünk; ezekben a szegmensekben vagyunk versenyképesek.
-4. A felső navigációs sávon az **Értékesítési és marketing minta** lehetőségre kattintva térjen vissza az irányítópultokhoz.
+4. A felső navigációs panelen az **Értékesítési és marketing minta** lehetőségre kattintva térjen vissza az irányítópulthoz.
 
 ### <a name="what-does-total-unit-market-share-look-like-for-category-versus-region"></a>Milyen az összes egység piaci részesedése kategória (és régió) szerint?
 1. Figyelje meg a **Total Units YTD by Manufacturer, Region** (Egységek összesen az év elejétől számítva, gyártó és régió szerint) csempét. Milyen az összes egység piaci részesedése kategória szerint?

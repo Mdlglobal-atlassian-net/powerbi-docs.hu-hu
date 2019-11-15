@@ -2,7 +2,6 @@
 title: 'Teljes jelentésoldal rögzítése Power BI-irányítópultra '
 description: Dokumentáció teljes, élő jelentésoldal Power BI-irányítópulton történő rögzítéséről.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4a30d01040daffa394ff884c38dda3dd66fa5809
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d620c1def289cea39a90092876ce275eea8ee699
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61140122"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853081"
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Teljes jelentésoldal rögzítése Power BI-irányítópultra élő csempeként
 Új [irányítópult-csempe](consumer/end-user-tiles.md) hozzáadásának egy másik módja egy teljes jelentésoldal rögzítése. Így egyszerűen rögzíthető egyszerre több vizualizáció.  Ezen felül teljes oldal rögzítésekor a csempék *élők* lesznek, és közvetlenül az irányítópulton kezelhetők. A vizualizációk jelentésszerkesztőben végrehajtott módosítása, például egy szűrő hozzáadása vagy a diagramon használt mezők megváltoztatása is megjelenik az irányítópulton lévő csempén.  
@@ -55,5 +54,5 @@ Nézze meg, hogyan rögzít Amanda élő jelentésoldalt egy irányítópulton, 
 ## <a name="next-steps"></a>Következő lépések
 [Irányítópultok a Power BI-ban](consumer/end-user-dashboards.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

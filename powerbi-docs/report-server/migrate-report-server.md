@@ -3,18 +3,17 @@ title: Telepített jelentéskészítő kiszolgáló migrálása
 description: Cikkünkből megtudhatja, hogyan migrálhatja meglévő SQL Server Reporting Services-példányát egy Power BI jelentéskészítő kiszolgálói példányba.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/17/2019
-ms.openlocfilehash: 01c87d425b1ada76e322af411188a4a2717562d0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: bc3b196313266be64e7a63a66f33ef4020574d2a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770192"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858879"
 ---
 # <a name="migrate-a-report-server-installation"></a>Telepített jelentéskészítő kiszolgáló migrálása
 
@@ -55,7 +54,7 @@ A natív módú SSRS szolgáltatásnak a Power BI jelentéskészítő kiszolgál
 
 A SharePoint-integrált módú SSRS-t nem olyan egyszerű migrálni Power BI jelentéskészítő kiszolgálóra, mint a natív módút. Az itt közölt lépések szolgálnak ugyan némi útmutatással, a SharePointon belül előfordulhatnak azonban más olyan fájlok és objektumok, amelyeket ezeken a lépéseken túlmenően kezelnie kell.
 
-![Migrálás SharePointtal integrált módú SSRS-ről Power BI jelentéskészítő kiszolgálóra](media/migrate-report-server/migrate-from-ssrs-sharepoint.png "Migrálás SharePointtal integrált módú SSRS-ről Power BI jelentéskészítő kiszolgálóra")
+![Migrálás SharePoint-integrált módú SSRS-ről Power BI jelentéskészítő kiszolgálóra](media/migrate-report-server/migrate-from-ssrs-sharepoint.png "Migrálás SharePoint-integrált módú SSRS-ről Power BI jelentéskészítő kiszolgálóra")
 
 Ebben az esetben a jelentéskészítő kiszolgáló egyedi tartalmát kell migrálni a SharePointból a Power BI jelentéskészítő kiszolgálóra. Ehhez korábban már telepítenie kell a Power BI jelentéskészítő kiszolgálót valahol a környezetében. A Power BI jelentéskészítő kiszolgáló telepítéséről [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md) című cikk nyújt részletesebb tájékoztatást.
 
@@ -70,10 +69,10 @@ Ha másolni szeretné a jelentéskészítő kiszolgáló tartalmát a SharePoint
 Sample Script
 rs.exe
 -i ssrs_migration.rss -e Mgmt2010
--s http://SourceServer/_vti_bin/reportserver
+-s https://SourceServer/_vti_bin/reportserver
 -v st="sites/bi" -v f="Shared Documents“
 -u Domain\User1 -p Password
--v ts=http://TargetServer/reportserver
+-v ts=https://TargetServer/reportserver
 -v tu="Domain\User" -v tp="Password"
 ```
 

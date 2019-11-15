@@ -2,7 +2,6 @@
 title: Ugyanazon bejelentkezési fiók használata a Power BI-hoz és az Azure-hoz
 description: Ugyanazon bejelentkezési fiók használata a Power BI-hoz és az Azure-hoz
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f9659ad657c4466ad58eb40d4a07916b46f9536a
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 11fecb5ff87c454b32b2504fba3914f397265184
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877765"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873634"
 ---
 # <a name="using-the-same-account-for-power-bi-and-azure"></a>Ugyanazon bejelentkezési fiók használata a Power BI-hoz és az Azure-hoz
 
@@ -29,9 +28,9 @@ Ha ugyanazokat a bejelentkezési adatokat szeretné használni az Azure-ban és 
 
 A munkahelyi fiókját társ-rendszergazdaként veheti fel az Azure-ban az alábbi lépések végrehajtásával:
 
-1. Jelentkezzen be az [Azure Portalra](http://portal.azure.com/). Ha Ön több Azure-címtár felhasználója, az **Előfizetések** elemet választva szűrhet, hogy csak a szerkeszteni kívánt címtárat és előfizetéseket lássa.
+1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com/). Ha Ön több Azure-címtár felhasználója, az **Előfizetések** elemet választva szűrhet, hogy csak a szerkeszteni kívánt címtárat és előfizetéseket lássa.
 
-1. A navigációs panelen válassza a **Hozzáférés-vezérlés (IAM)** lehetőséget, majd a **Hozzáadás** \> **Társ-rendszergazda hozzáadása** menüpontot.
+1. A navigációs panelen válassza a **Hozzáférés-vezérlés (IAM)** lehetőséget, majd a **Hozzáadás** \> **Társadminisztrátor hozzáadása** lehetőséget.
 
     ![Társ-rendszergazda hozzáadása az Azure Portalon](media/service-admin-how-to-use-the-same-account-as-azure/add-co-administrator.png)
 
@@ -39,4 +38,4 @@ A munkahelyi fiókját társ-rendszergazdaként veheti fel az Azure-ban az aláb
 
 1. Amikor legközelebb bejelentkezik az Azure Portalon, használja a munkahelyi e-mail-címét.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Közzététel Excel 2016-ból a Power BI-ba
 description: Tudnivalók Excel-munkafüzetek Power BI-oldalon való közzétételéről.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: bb9ff3ae6b08111156616a84ee795131c708f42c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 81bc53bae43cb16af92a9ecaf20c26c594a24368
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514799"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881139"
 ---
 # <a name="publish-to-power-bi-from-excel-2016"></a>Közzététel Excel 2016-ból a Power BI-ba
 Az Excel 2016-tal közvetlenül [Power BI](https://powerbi.microsoft.com)-oldalára teheti közzé Excel-munkafüzeteit, ahol könnyen használható jelentéseket és irányítópultokat készíthet a munkafüzet adatai alapján. Az elemzés eredményeit aztán megoszthatja másokkal is a cégén belül.
@@ -63,7 +62,7 @@ Ezt a lehetőséget választva a munkafüzet ugyanúgy jelenik meg a Power BI fe
 
 A Power BI-ban megnyitott munkafüzet nem szerkeszthető. Ha módosítania kell, akkor válassza a **Szerkesztés** lehetőséget, majd szerkessze a munkafüzetet az Excel Online-ban, vagy nyissa meg a számtógépén az Excelben. A módosításai a OneDrive-on található munkafüzetbe lesznek mentve.
 
-Feltöltéskor a Power BI-ban nem jön létre adatkészlet. A munkafüzet a Jelentések között jelenik meg a munkaterület navigációs paneljén. A Power BI-ba feltöltött munkafüzetekhez különleges Excel-ikon tartozik, amelyről felismerhető, hogy feltöltött Excel-munkafüzetek.
+Feltöltéskor a Power BI-ban nem jön létre adatkészlet. A munkafüzet a Jelentések területen jelenik meg a munkaterület navigációs paneljén. A Power BI-ba feltöltött munkafüzetekhez különleges Excel-ikon tartozik, amelyről felismerhető, hogy feltöltött Excel-munkafüzetek.
 
 Akkor válassza ezt a lehetőséget, ha az adatai csak munkalapokon helyezkednek el, vagy kimutatásai és diagramjai vannak, amelyeket látni szeretne a Power BI-ban.
 Az Excelből Power BI-ba való közzététel Feltöltés változatának használata szinte mindenben megegyezik a böngészőben használt Power BI Adatok beolvasása > Fájl > OneDrive Vállalati verzió > Excel-adatok elérése, kezelése és megtekintése a Power BI-ban lehetőségével.
@@ -88,5 +87,5 @@ Amikor elkészült, az Excelből közvetlenül átléphet a Power BI-ba.
 
 ## <a name="next-steps"></a>További lépések
 [Excel-adatok a Power BI-ban](service-excel-workbook-files.md)  
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

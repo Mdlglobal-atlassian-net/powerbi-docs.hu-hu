@@ -2,7 +2,6 @@
 title: 'Kiskereskedelmi elemzési minta – Power BI: Bemutató megtekintése'
 description: 'Kiskereskedelmi elemzési minta – Power BI: Bemutató megtekintése'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: b3adcf3ba97e83875187a11116fdb7b642e5560b
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: 42e3a95e344e17d1ceba11911fc8aa349ebafd0c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962240"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858573"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Kiskereskedelmi elemzési minta – Power BI: Bemutató megtekintése
 
@@ -54,11 +53,11 @@ A minták Power BI Desktopban való vizsgálatához nincs szükség Power BI-lic
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>.pbix-fájl letöltése ehhez a mintához
 
-Az Kiskereskedelmi elemzési mintát a Power BI Desktoppal való használatra tervezett [.pbix-fájlként](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) is letöltheti. 
+Az Kiskereskedelmi elemzési mintát a Power BI Desktoppal való használatra tervezett [.pbix-fájlként](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) is letöltheti. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Excel-munkafüzet letöltése ehhez a mintához
 
-Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](http://go.microsoft.com/fwlink/?LinkId=529778) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
+Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529778) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
 
 ## <a name="start-on-the-dashboard-and-open-the-report"></a>Az irányítópult elindítása és a jelentés megnyitása
 
@@ -78,7 +77,7 @@ Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkaf
 
    Az **FD-01** körzetben a legmagasabb az átlagos **négyzetlábankénti értékesítés**, az FD-02 körzetben pedig a legalacsonyabb a **Teljes értékesítés eltérése** a tavalyi évhez viszonyítva. Összességében az FD-03 és az FD-04 teljesít a leggyengébben.
 4. Kattintson az egyes buborékokra vagy diagramokra annak megtekintéséhez, hogy ennek hatására milyen keresztkijelölések jönnek létre.
-5. Az irányítópultra a felső navigációs sáv **Kiskereskedelmi elemzési minta** elemének kiválasztásával térhet vissza.
+5. Az irányítópultra a felső navigációs panel **Kiskereskedelmi elemzési minta** elemének kiválasztásával térhet vissza.
 
    ![Navigációs sáv](media/sample-retail-analysis/power-bi-breadcrumbs.png)
 6. Az irányítópulton válassza a **Folyó évi értékesítések – Új és meglévő üzletek** csempét. Ezzel egyenértékű művelet a *Folyó évi értékesítések* szöveg begépelése a Q&A kérdésmezőjébe.

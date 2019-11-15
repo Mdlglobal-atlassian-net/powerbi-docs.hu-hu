@@ -3,17 +3,16 @@ title: Diagnosztikai naplózás a Power BI Embedded szolgáltatáshoz az Azure-b
 description: A cikk azt ismerteti, hogyan állítható be a diagnosztikai naplózás a Power BI Embedded szolgáltatáshoz az Azure-ban.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: dc1a034a062ca07fd9f31a847378913fd7ee4002
-ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.openlocfilehash: 9065feef76050c6a04e1ecf8ec7907b74be4b0ce
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68289843"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875982"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Diagnosztikai naplózás a Power BI Embedded szolgáltatáshoz az Azure-ban
 
@@ -29,7 +28,7 @@ A diagnosztika több különféle helyzetben is használható, például:
 
 ### <a name="azure-portal"></a>Azure Portal
 
-1. Az [Azure Portal](https://portal.azure.com) Power BI Embedded-erőforrás területén válassza a **Diagnosztikai naplózás** lehetőséget a bal oldali navigációs menüben, majd válassza a **Diagnosztika bekapcsolása** elemet.
+1. Az [Azure Portal](https://portal.azure.com) > Power BI Embedded erőforrásának területén válassza a **Diagnosztikai naplók** lehetőséget a navigációs menüben, majd válassza a **Diagnosztika bekapcsolása** elemet.
 
     ![Diagnosztikai naplózás bekapcsolása a Power BI Embedded szolgáltatáshoz az Azure Portalon](media/azure-pbie-diag-logs/azure-pbie-diag-logs-01.png)
 

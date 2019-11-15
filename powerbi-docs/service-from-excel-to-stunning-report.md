@@ -2,7 +2,6 @@
 title: Excel-munkafüzettől egy lenyűgöző jelentésig a Power BI szolgáltatásban
 description: Ez a cikk bemutatja, hogyan hozhat létre gyorsan egy lenyűgöző jelentést egy Excel-munkafüzetből.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6c393611851e05c7c76983674f2e1de7b5454898
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: c2a4719a03e37569e40d4247939a9f2c73379e52
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021000"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872522"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Excel-munkafüzettől egy lenyűgöző jelentésig a Power BI szolgáltatásban
 A főnöke azt szeretné, hogy még ma készítsen el egy kombinált jelentést a tavalyi év értékesítési mutatóiról és az előző kampánnyal kapcsolatos benyomásairól. A legutóbbi adatok azonban különböző külső gyártók rendszerein és a saját laptopján lévő fájlokban találhatók. Korábban több óráig is eltartott egy vizualizáció létrehozása és egy jelentés formázása, ami aggodalommal töltheti el.
@@ -57,7 +56,7 @@ A Power BI szolgáltatás több adatforráshoz is képes csatlakozni, köztük a
 
    ![Létrehozás legördülő menü](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
 
-4. A bal oldalon lévő navigációs ablaktáblán válassza az **Adatok lekérése** elemet. 
+4. Kattintson az **Adatok lekérése** elemre a navigációs panel alján. 
 
 5. Az **Adatok lekérése** lap **Fájl** mezőjében, az **Új tartalom létrehozása** területen válassza a **Beolvasás** lehetőséget.
 
@@ -140,5 +139,5 @@ Tegyük fel, hogy meg szeretné osztani az irányítópultját a főnökével. A
 * [Első lépések a Power BI Desktopban](desktop-getting-started.md)
 * [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 

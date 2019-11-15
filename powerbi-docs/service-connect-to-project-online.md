@@ -2,7 +2,6 @@
 title: Csatlakozás a Project Online-hoz a Power BI használatával
 description: Project Online a Power BI-hoz
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 0978e87167f96b40082819764d7e3ae35e930a4b
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 941981e1f84cf3d7a74a156e4f1c88f57e061ad2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023788"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854660"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Csatlakozás a Project Web Apphoz a Power BI használatával
 A Microsoft Project Web App a projektportfólió-kezeléshez (PPM) és a mindennapi munkához nyújt rugalmas online megoldást. A Project Web App lehetővé teszi a cég számára, hogy megtegye az előkészületeket, rangsorolja a projektporfólió-befektetéseket, és elérje a tervezett üzleti eredményt. A Power BI Project Web App sablonalkalmazásával fontos információkat ismerhet meg a Project Web App elemzéseiből, így könnyebben kezelheti a projekteket, a portfóliókat és az erőforrásokat.
@@ -24,7 +23,7 @@ Csatlakozzon a Power BI [Project Web App sablonalkalmazásához](https://appsour
 
 ## <a name="how-to-connect"></a>Csatlakozás
 
-1. A bal oldali navigációs panelen válassza az **Alkalmazások** elemet, majd a jobb felső sarokban az **Alkalmazások letöltése** lehetőséget.
+1. A navigációs panelen válassza az **Alkalmazások** elemet, majd a jobb felső sarokban az **Alkalmazások letöltése** lehetőséget.
 
     ![Alkalmazások letöltése](media/service-connect-to-project-online/GetApps.png)
 
@@ -52,7 +51,7 @@ Csatlakozzon a Power BI [Project Web App sablonalkalmazásához](https://appsour
 
 9. Egy értesítés jelzi, hogy az adatok betöltése folyamatban van. A fiók méretétől függően ez eltarthat egy ideig. Miután a Power BI importálta az adatokat, megjelenik az új munkaterület tartalma. Előfordulhat, hogy a legújabb elemek megjelenítéséhez frissítenie kell az adathalmazt. 
 
-    Miután a Power BI importálta az adatokat, a bal oldali navigációs ablaktáblán megjelenik a 13 oldalas jelentés, valamint az adathalmaz. 
+    Miután a Power BI importálta az adatokat, megjelenik a 13 oldalas jelentés és egy adatkészlet a navigációs panelen. 
 
 10. Miután a jelentések elkészültek, megkezdheti a Project Web App-adatokkal való munkát. A sablonalkalmazás 13 részletgazdag jelentést tartalmaz portfólióáttekintéshez (6 jelentésoldal), erőforrás-áttekintéshez (5 jelentésoldal), valamint projektállapothoz (2 jelentésoldal). 
 

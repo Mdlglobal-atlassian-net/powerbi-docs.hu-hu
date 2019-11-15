@@ -1,9 +1,8 @@
 ---
-title: A Microsoft Power BI Premium kapacitás-forgatókönyvek
-description: A Power BI Premium-kapacitás gyakori forgatókönyveket ismertet.
+title: A prémium szintű Microsoft Power BI-kapacitásokkal kapcsolatos forgatókönyvek
+description: A cikk a prémium szintű Power BI-kapacitásokkal kapcsolatos gyakori forgatókönyveket ismerteti.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,147 +10,147 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1d666a6702515a935d93549d026f207848f2bca8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3190645044c930c1c63fd7c199883d784723d6f0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565362"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881236"
 ---
-# <a name="premium-capacity-scenarios"></a>Prémium szintű kapacitás forgatókönyvek
+# <a name="premium-capacity-scenarios"></a>Prémium szintű kapacitások forgatókönyvei
 
-Ez a cikk ismerteti a valós életből vett példák, ahol a Power BI prémium szintű kapacitások végrehajtották. Gyakori problémák és kihívásokat ismerteti, is hogyan azonosíthatja a problémákat, és oldhatja meg őket:
+Ez a cikk olyan valós forgatókönyveket ismertet, amelyekben prémium szintű Power BI-kapacitások lettek implementálva. Bemutatja a gyakori problémákat és kihívásokat, a problémák azonosításának módját, és segítséget nyújt az elhárításukhoz:
 
-- [Az adatkészletek frissítése](#keeping-datasets-up-to-date)
-- [Az adatkészletek lassan válaszol azonosítása](#identifying-slow-responding-datasets)
-- [Okainak azonosítása vonatkozó szórványosan lassú-adatkészletek](#identifying-causes-for-sporadically-slow-responding-datasets)
-- [Meghatározása, hogy van-e elegendő memória](#determining-whether-there-is-enough-memory)
-- [Amely meghatározza, hogy van-e elegendő Processzor](#determining-whether-there-is-enough-cpu)
+- [Az adathalmazok naprakészen tartása](#keeping-datasets-up-to-date)
+- [A lassan válaszoló adathalmazok azonosítása](#identifying-slow-responding-datasets)
+- [Az adathalmazok időnként lassú válaszát kiváltó okok azonosítása](#identifying-causes-for-sporadically-slow-responding-datasets)
+- [Annak meghatározása, hogy van-e elég memória](#determining-whether-there-is-enough-memory)
+- [Annak meghatározása, hogy van-e elég processzorkapacitás](#determining-whether-there-is-enough-cpu)
 
-A lépéseket, valamint különböző példákkal diagram és táblázat származnak az **Power BI Premium kapacitás-metrikák alkalmazás** , hogy a Power BI-rendszergazda hozzáférést kap.
+A lépések a diagramok és táblázatok példáival együtt a **Power BI Premium Capacity Metrics alkalmazásból** származnak, amelyhez a Power BI-rendszergazdák hozzáféréssel rendelkeznek.
 
-## <a name="keeping-datasets-up-to-date"></a>Az adatkészletek frissítése
+## <a name="keeping-datasets-up-to-date"></a>Az adathalmazok naprakészen tartása
 
-Ebben a forgatókönyvben vizsgálat lett elindítva, amikor a felhasználók kifogásolt, hogy a jelentés adatokat néha tűnt, régi vagy "elavult".
+Ebben a forgatókönyvben vizsgálat indult, mert a felhasználók arra panaszkodtak, hogy a jelentésadatok néha réginek vagy „elavultnak” tűntek.
 
-Az alkalmazásban a rendszergazda kommunikál a **frissíti** vizualizációt, a rendezés adatkészletek a **maximális várakozási idő** statisztika csökkenő sorrendben. Ez a Vizualizáció segít nekik a leghosszabb várakozási időt, a munkaterület neve szerint csoportosítva kellene adatkészletek felfedéséhez.
+Az alkalmazásban a rendszergazda a **Frissítések** vizualizációval rendezi az adathalmazokat a **Maximális várakozási idő** statisztika szerint csökkenő sorrendben. Ez a vizualizáció segítséget nyújt a rendszergazdának a leghosszabb várakozási idővel rendelkező adathalmazok megjelenítésére, a munkaterület neve szerint csoportosítva.
 
-![Adatkészlet frissítések maximális várakozási idő, munkaterület szerint csoportosítva csökkenő sorrendben rendezve](media/service-premium-capacity-scenarios/dataset-refreshes.png)
+![Adathalmaz-frissítések a maximális várakozási idő szerint csökkenő sorrendbe rendezve, munkaterület szerint csoportosítva](media/service-premium-capacity-scenarios/dataset-refreshes.png)
 
-Az a **óránkénti átlagos frissítése várakozási idők** vizualizációval, figyelje meg, hogy a frissítés várakozási időt kiugró következetesen körülbelül 4 du minden nap.
+Az **Átlagos frissítési várakozási idő óránként** vizualizációban a rendszergazda felfigyel arra, hogy a frissítések várakozási ideje rendszeresen mindennap 16 óra körül tetőzik.
 
-![Frissítés vár csúcs rendszeres időközönként du. 4:](media/service-premium-capacity-scenarios/peak-refresh-waits.png)
+![A frissítések várakozási ideje 16 órakor rendszeresen tetőzik](media/service-premium-capacity-scenarios/peak-refresh-waits.png)
 
-Nincs magyarázatairól több ezeket az eredményeket:
+Számos lehetséges magyarázat van ezekre az eredményekre:
 
-- Túl sok frissítési kísérlet sikerült fel egy időben, a kapacitás-csomópontot által meghatározott keretek túllépése. Ebben az esetben a P1 szintű a hat egyidejű frissítések alapértelmezés szerint memória mennyiségét.
+- Előfordulhat, hogy túl sok frissítési kísérlet történik egyszerre, túllépve a kapacitás-csomópont által meghatározott korlátokat. Ebben az esetben hat egyidejű frissítés történik az alapértelmezett memóriafoglalással rendelkező P1-en.
 
-- Lehet, hogy illeszkedjenek a rendelkezésre álló memória (igénylő legalább a teljes frissítés szükséges memória x 2) túl nagy adatkészleteket frissíteni kell.
-- Nem elég hatékony Power Query-logika előfordulhat, hogy lehet eredményez memória kihasználtsága ugrásszerű adatkészlet frissítése során. A foglalt kapacitás a megnövekedett alkalmanként elérheti a fizikai korlátot, a frissítés sikertelen, és potenciálisan érintő műveletek más jelentés megtekintése a kapacitás.
-- Gyakran lekérdezett adatkészleteket szeretne maradni a memóriában befolyásolhatja az egyéb adatkészletek frissítéséhez miatt korlátozni rendelkezésre álló memória.
+- A frissíteni kívánt adathalmazok túl nagyok lehetnek a rendelkezésre álló memóriához képest (teljes frissítés esetén az adathalmaz méreténél kétszer több memóriára van szükség).
+- A nem hatékony Power Query-logika a memóriahasználat megugrásával járhat az adathalmazok frissítése során. Gyakran használt kapacitáson ez a megugrás alkalmanként elérheti a fizikai korlátot, ami a frissítés sikertelenségével jár, és a kapacitás más jelentésmegtekintési műveleteire is hatással lehet.
+- Az azon adathalmazokra irányuló lekérdezések, amelyeknek a memóriában kell maradniuk, hatással lehetnek más adathalmazok frissítésére a korlátozottan rendelkezésre álló memória miatt.
 
-A Power BI rendszergazdája vizsgálatáról, be is keressen:
+A kivizsgálást segítendő a Power BI-rendszergazda a következőknek nézhet utána:
 
-- Az adatok időpontjában alacsony memória frissíti, ha rendelkezésre álló memória kevesebb, mint a frissítendő adatkészlet mérete x 2.
-- Adatkészletek nem frissíthetők és nem a memóriában frissítése előtt, kezdett interaktív forgalom megjelenítése során (nagy erőforrásigényű) frissítési időpont. Szeretné egy adott időpontban mely adatkészleteket töltődnek be a memória, a Power BI rendszergazdája tekintse meg az adatkészletek területén **adatkészletek** lap az alkalmazásban. A rendszergazda is majd keresztszűrő egy adott idő alatt az egyik sáv kijelölését a kattintva a **óránkénti betöltött adatkészlet Counts**. Helyi ugrásszerű, az alábbi képen látható egy órát, amikor több adatkészlet is betölti a memóriába, mivel ezek tárhelyének kezdetét jelzi.
-- Nagyobb adatkészletet adatbázislap véve helyezze el, amikor indítására ütemezett adatfrissítéseket. Adatbázislap szolgál a frissítés időpontja előtt túl sok különböző interaktív jelentések nagy memóriaterhelés okozta van jelezheti. A **óránkénti adatkészlet adatbázislap és memóriát** visual adatbázislap kiugrások egyértelműen utalhat.
+- Kevés rendelkezésre álló memória az adatok frissítésekor, ha a rendelkezésre álló memória kisebb a frissítendő adathalmaz méretének kétszeresénél.
+- Nem frissített, és a frissítés előtt a memóriában nem jelen lévő adathalmazok, amelyek mégis interaktív forgalmat kezdenek mutatni a sok frissítéssel járó időtartamok során. Annak megtekintéséhez, hogy mely adathalmazokat tölti be a rendszer a memóriába egy adott időpontban, a Power BI-rendszergazda az alkalmazás **Adatkészletek** lapjának adathalmazokat tartalmazó területén vizsgálódhat. A rendszergazda ezután keresztszűrést hajthat végre egy adott időpontra az **Óránként betöltött adatkészletek száma** valamelyik oszlopára kattintva. Az alábbi képen látható helyi megugrás jelzi azt az órát, amikor a rendszer több adathalmazt töltött be a memóriába, ami késleltetheti az ütemezett frissítések elkezdését.
+- Nagyobb számban történik adathalmaz-kizárás az adatfrissítés ütemezett kezdési időpontjában. A kizárások azt jelezhetik, hogy a memóriát nagy terhelés érte, amit a túl sok különböző interaktív jelentés kiszolgálása okozott a frissítés időpontja előtt. Az **Adathalmaz-kizárások és memóriahasználat óránként** vizualizáció világosan jelezheti a kizárások megugrásait.
 
-Az alábbi képen látható helyi ugrásszerű betöltött adatkészletekben, ami arra utal, interaktív lekérdezés késleltetett frissítések kezdete. Egy adott időszakban az kiválasztása a **óránkénti betöltött adatkészlet Counts** Vizualizáció keresztszűrő a **adatkészlet méretű** visual.
+Az alábbi képen egy helyi megugrás látható a betöltött adathalmazokban, ami arra utal, hogy az interaktív lekérdezés késleltette a frissítések elkezdését. Ha kiválaszt egy időszakot az **Óránként betöltött adatkészletek száma** vizualizációban, azzal keresztszűrhet az **Adathalmazméretek** vizualizációra.
 
-![A betöltött adatkészletek helyi ugrásszerű javasol frissíti az interaktív lekérdezési Késleltetett indítás](media/service-premium-capacity-scenarios/hourly-loaded-dataset-counts.png)
+![Egy helyi megugrás a betöltött adathalmazokban arra utal, hogy az interaktív lekérdezés késleltette a frissítések elkezdését](media/service-premium-capacity-scenarios/hourly-loaded-dataset-counts.png)
 
-A Power BI rendszergazdája is megkísérelheti a probléma megoldásához, győződjön meg arról, hogy elegendő memória áll rendelkezésre, az adatok frissülni fognak, első lépésként lépések végrehajtásával:
+A Power BI-rendszergazda megkísérelheti elhárítani a problémát olyan lépések megtételével, amelyekkel biztosíthatja, hogy elegendő memória álljon rendelkezésre az adatfrissítések elkezdéséhez. Ehhez a következőket teheti:
 
-- Kapcsolatfelvétel az adatkészlet tulajdonosai és a rendszer arra szinkronizálások eltolása és a lemezterület-adatai frissítse ütemezések.
-- Adatkészlet csökkenti a szükségtelen irányítópultok vagy az irányítópult eltávolításával lekérdezési terhelése csempéket, különösen azokkal, amelyek a sorszintű biztonság kényszerítése.
-- Gyorsabbá a adatfrissítéseket optimalizálása a Power Query-logikát. Javíthatja a számított oszlopok vagy táblázatok modellezési. Csökkentse az adatkészletek mérete, vagy konfigurálja a nagyobb adatkészletből a végrehajtásához a növekményes adatok frissítése.
+- Felveheti a kapcsolatot az adathalmazok tulajdonosaival, és megkérheti őket, hogy tolják el és időben egyenletesen osszák el az adatfrissítések ütemezését.
+- Csökkentheti az adathalmaz-lekérdezésekkel járó terhelést a felesleges irányítópultok vagy irányítópult-csempék eltávolításával, különös tekintettel azokra, amelyek sorszintű biztonságot érvényesítenek.
+- Felgyorsíthatja az adatfrissítéseket a Power Query-logika optimalizálásával. Javíthatja a számított oszlopok vagy táblázatok modellezését. Csökkentheti az adathalmazok méretét, vagy konfigurálhatja úgy a nagyobb adathalmazokat, hogy növekményes adatfrissítést hajtsanak végre.
 
-## <a name="identifying-slow-responding-datasets"></a>Az adatkészletek lassan válaszol azonosítása
+## <a name="identifying-slow-responding-datasets"></a>A lassan válaszoló adathalmazok azonosítása
 
-Ebben a forgatókönyvben a vizsgálat kezdődött, amikor a felhasználók kifogásolt, hogy bizonyos jelentések túl sokáig megnyitásához, és esetenként lenne lefagy.
+Ebben a forgatókönyvben vizsgálat kezdődött, mert a felhasználók arra panaszkodtak, hogy bizonyos jelentések megnyitása túl sok időt vesz igénybe, és olykor le is fagynak.
 
-Az alkalmazás a Power BI-rendszergazda használhat a **lekérdezés időtartamának összegénél** vizualizációt a legrosszabbul teljesítő adatkészletek meghatározása szerint csökkenő sorrendben rendezi a adatkészletek **átlagos időtartam**. Ez a Vizualizáció is látható adatkészlet lekérdezések száma, így láthatja, hogy milyen gyakran az adatkészletek a rendszer megkérdezi.
+A Power BI-rendszergazda az alkalmazás **Lekérdezések időtartama** vizualizációjával határozhatja meg a legrosszabbul teljesítő adathalmazokat, az adathalmazok **Átlagos időtartam** szerint csökkenő sorrendbe rendezésével. Ez a vizualizáció az adathalmaz-lekérdezések számát is megjeleníti, így láthatja, hogy milyen gyakran kérdezték le az adathalmazokat.
 
-![Legrosszabbul teljesítő adatkészletek](media/service-premium-capacity-scenarios/worst-performing-datasets.png)
+![Legrosszabbul teljesítő adathalmazok](media/service-premium-capacity-scenarios/worst-performing-datasets.png)
 
-A rendszergazda olvassa el a **lekérdezés időtartamok eloszlása** visual, amely bemutatja egy általános elosztásának bucketed lekérdezési teljesítmény (< 30ms, = 0 – 100 ms) a szűrt időszakra. Általában a lekérdezéseket, hogy hajtsa végre a megfelelő egy másodperc vagy kevesebb által figyelembe veendő válaszol-e a felhasználók többsége; Hozzon létre egy rossz teljesítmény érzete általában lekérdezéseket, amelyek hosszabb időt vesz igénybe.
+A rendszergazda a **Lekérdezések időtartamának eloszlása** vizualizációban tekintheti meg az időkategóriákra osztott lekérdezési teljesítmény (<= 30 ezredmásodperc, 0–100 ezredmásodperc) általános eloszlását a szűrt időszakra vonatkozóan. Az egy másodpercig vagy rövidebb ideig tartó lekérdezéseket a felhasználók többsége általában gyorsnak tartja, a hosszabb ideig tartó lekérdezések azonban inkább rossz teljesítmény érzetét keltik.
 
-A **óránkénti lekérdezés időtartamok eloszlása** Vizualizáció lehetővé teszi, hogy a Power BI rendszergazdáját, hogy ha a kapacitás teljesítmény sikerült rendelkezik lett által tapasztalt óránként időszakainak, gyenge. Minél nagyobb a sáv szegmensek, amelyek lekérdezési időtartamok több mint egy másodperc, a nagyobb a kockázat, hogy a felhasználók lássák fog gyenge teljesítményt eredményez.
+A **Lekérdezések időtartamának eloszlása óránként** vizualizáció lehetővé teszi a Power BI-rendszergazdának azoknak az egyórás időszakoknak az azonosítását, amikor a kapacitásteljesítmény rossznak tekinthető. Minél nagyobbak az egy másodpercet meghaladó lekérdezési időtartamokat képviselő oszlopszegmensek, annál nagyobb annak a veszélye, hogy a felhasználók rossz teljesítményt tapasztalnak.
 
-A Vizualizáció interaktív, és ha a sáv szegmens választja, a megfelelő **lekérdezés időtartamának összegénél** visual a jelentés oldalon lévő táblázat keresztszűrhető jelöli, az adatkészletek megjelenítése. A keresztszűrés lehetővé teszi, hogy a Power BI rendszergazdáját, hogy könnyen azonosíthassa, amely adatkészletek lassan válaszol.
+A vizualizáció interaktív, az oszlop egyik szegmensére kattintva a rendszer keresztszűrést hajt végre a jelentésoldalon található megfelelő **Lekérdezések időtartama** táblavizualizációra az oszlop által képviselt adathalmazok megjelenítéséhez. A keresztszűrés lehetővé teszi a Power BI-rendszergazdának a lassan válaszoló adathalmazok egyszerű azonosítását.
 
-Az alábbi képen látható Vizualizáció szűrve **óránkénti lekérdezés időtartama Disztribúciók**, fókuszáló óránként gyűjtők a legrosszabbul teljesítő adatkészleteken. 
+Az alábbi képen a **Lekérdezések időtartamának eloszlása óránként** szerint szűrt vizualizáció látható, amely a legrosszabbul teljesítő adathalmazokra összpontosít az egyórás kategóriában. 
 
-![Szűrt óránkénti lekérdezés időtartama Disztribúciók visual látható a még rosszabb adatkészletek végrehajtása](media/service-premium-capacity-scenarios/hourly-query-duration-distributions.png)
+![A legrosszabbul teljesítő adathalmazokat megjelenítő, szűrt Lekérdezések időtartamának eloszlása óránként vizualizáció](media/service-premium-capacity-scenarios/hourly-query-duration-distributions.png)
 
-A gyenge teljesítő adatkészlet egy adott egy órás időtartam azonosítja, miután a Power BI rendszergazdája segítségével megvizsgálhatja, hogy gyenge teljesítményt egy túlterhelt kapacitást okozza, vagy egy rosszul miatt tervezett adatkészlet vagy jelentés. Is hivatkozhatnak a **várjon gyorsaság** Vizualizáció, és a lekérdezések átlagos várakozási idő csökkenő rendezés adatkészletek. Lekérdezések álló arra vár, ha az adatkészlet egy nagy kereslet valószínűleg nem túl sok lekérdezést vár oka. Ha az átlagos lekérdezési idő jelentősen kell (> 100 ms), akkor érdemes lehet megfontolni áttekintése az adatkészlet és jelentés megtekintéséhez, ha optimalizálást lehet végrehajtani. Például kevesebb vizualizációt megadott jelentésoldalak vagy a DAX-kifejezés optimalizálása.
+Az adott egyórás időtartamban rosszul teljesítő adathalmaz azonosítását követően a Power BI-rendszergazda kivizsgálhatja, hogy a rossz teljesítményt túlterhelt kapacitás vagy pedig rosszul megtervezett adathalmaz, illetve jelentés okozza. Ehhez a **Lekérdezésekre való várakozások időtartama** vizualizációt használva csökkenő sorrendbe rendezheti az adathalmazokat a lekérdezések átlagos várakozási ideje szerint. Ha a lekérdezések nagy százalékos arányban várakoznak, valószínűleg az adathalmazhoz kapcsolódó nagy igény okozza a túl sok lekérdezés várakozását. Ha a lekérdezések átlagos várakozási ideje jelentős (több mint 100 ezredmásodperc), érdemes lehet áttekinteni az adathalmazt és a jelentést annak megállapításához, hogy végrehajthatók-e optimalizálások rajtuk. Például: kevesebb vizualizáció a jelentésoldalakon, vagy a DAX-kifejezések optimalizálása.
 
-![A lekérdezés várakozási idők Vizualizáció segít a gyengén teljesítő adatkészlet feltárása](media/service-premium-capacity-scenarios/query-wait-times.png)
+![A Lekérdezésekre való várakozások időtartama vizualizáció segít megtalálni a rosszul teljesítő adathalmazokat](media/service-premium-capacity-scenarios/query-wait-times.png)
 
-Nincsenek lekérdezési várakozási idő felhalmozódásához adatkészletei több lehetséges oka:
+Számos lehetséges oka lehet a lekérdezésekre való várakozási idő növekedésének az adathalmazokban:
 
-- Optimálisnál rosszabb modell kialakítást, a mértékkifejezéseik vagy még jelentéstervező – minden körülmények között, amelyek hozzájárulhatnak a hosszú ideig futó lekérdezéseket, amelyek nagy mértékű CPU felhasználását. Ez kényszeríti, várja meg, amíg a szálak CPU elérhetővé válnak, és hozhat létre üzleti csúcsidőben fordul elő egy convoy hatás (csávából gondolkodási forgalmat), új lekérdezéseket. A **lekérdezési várakozások** fog a lap a fő erőforrást annak megállapításához, hogy adatkészletek rendelkeznek-e a lekérdezések magas átlagos várakozási időt.
-- Nagyszámú egyidejű kapacitás felhasználók (több és több ezer) ugyanaz a jelentés vagy adatkészlet felhasználása. Akkor is a jól megtervezett adatkészletek egy egyidejűségi küszöbérték rosszul hajthat végre. Ez jelentősen nagyobb értéket megjelenítő, a lekérdezés számolja, mint a többi adatkészletek megjelenítése egyetlen adatkészlet általában jelzi (például 300 K lekérdezései képest egy adatkészlet < 30K lekérdezések minden adathalmaz esetében). Egy pont a lekérdezést vár ehhez az adatkészlethez indul ütemtervét, amely látható a **lekérdezés időtartamának összegénél** visual.
-- Számos különböző adatkészletek egyidejűleg lekérdezett memóriaakadozás okoz, a memória adataikkal gyakran ciklus adatkészletek. Ennek eredményeképpen a felhasználók teljesítménycsökkenést tapasztal, ha az adatkészlet betölti a memóriába. Győződjön meg arról, hogy a Power BI-rendszergazdák az itt található a **óránkénti adatkészlet adatbázislap és memóriát** visual, ez arra utalhat, hogy nagy számú adatkészletek a memóriába betöltött vannak ismételten a kiürítés alatt.
+- Az optimálistól elmaradó modellterv, mérési kifejezések vagy akár jelentésterv – minden olyan körülmény, amely hozzájárulhat a CPU-t nagy mértékben igénybe vevő, hosszan futó lekérdezésekhez. Ez arra kényszeríti az új lekérdezéseket, hogy várjanak, amíg CPU-szálak válnak elérhetővé, és konvojhatást eredményezhet (mintha forgalmi dugó alakult volna ki), ami gyakori jelenség a csúcsidő során. A **Lekérdezésekre való várakozások** oldal jelenti a fő információforrást annak meghatározására, hogy az adathalmazokra irányuló lekérdezések átlagos várakozási ideje magas-e.
+- Az azonos jelentést vagy adathalmazt egyidejűleg használó kapacitásfelhasználók magas száma (több száztól több ezerig). Még a jól megtervezett adathalmazok is teljesíthetnek rosszul az egyidejűségi küszöbértéken túl. Ezt általában az jelzi egy adott adathalmaznál, hogy a lekérdezések számának értéke jelentősen magasabb a többi adathalmazénál (például 300 000 lekérdezés egy adathalmaz esetén a többi adathalmaz kevesebb mint 30 000 lekérdezéséhez képest). Egy adott pontnál az adathalmazhoz kapcsolódó lekérdezések várakozási ideje elkezd ingadozni, ami a **Lekérdezések időtartama** vizualizációban látható.
+- Sok különálló adathalmaz lett lekérdezve egyidejűleg, ami akadozást okoz, mivel az adathalmazokat a rendszer gyakran betölti a memóriába, és kiüríti onnan. Ennek eredményeként a felhasználók lassú teljesítményt tapasztalnak az adathalmaz memóriába való betöltésekor. Ennek ellenőrzéséhez a Power BI-rendszergazda az **Adathalmaz-kizárások és memóriahasználat óránként** vizualizációt tekintheti meg, amely jelezheti, hogy a memóriába betöltött nagy számú adathalmazt a rendszer ismételten kizárja.
 
-## <a name="identifying-causes-for-sporadically-slow-responding-datasets"></a>Okainak azonosítása vonatkozó szórványosan lassú-adatkészletek
+## <a name="identifying-causes-for-sporadically-slow-responding-datasets"></a>Az adathalmazok időnként lassú válaszát kiváltó okok azonosítása
 
-Ebben a forgatókönyvben a vizsgálatot, amikor a felhasználók ismerteti, hogy jelentésvizualizációk néha voltak lassan válaszol, vagy válaszképtelenné válik, de máskor voltak intézkedéseket válaszol-e már.
+Ebben a forgatókönyvben vizsgálat indult, mert a felhasználók jelezték, hogy a jelentésvizualizációk néha lassan vagy akár egyáltalán nem válaszolnak, máskor azonban elfogadható a válaszidejük.
 
-Az alkalmazáson belüli a **lekérdezés időtartamának összegénél** szakaszban használt keresse meg a hibát okozó adatkészlet a következő módon:
+Az alkalmazásban a **Lekérdezések időtartama** szakaszt használta a rendszergazda a problémát kiváltó adathalmaz megtalálásához a következő módon:
 
-- Az a **lekérdezés időtartamának összegénél** vizuális a rendszergazda adatkészlet adatkészletet (a felső adatkészletek lekérdezett-gyel kezdődik) szerint szűrt és megvizsgálta a keresztszűrés szűrt sávok a **óránkénti lekérdezés Disztribúciók** visual.
-- Ha egy egyetlen óránként sáv bemutatta az összes lekérdezés időtartama csoportokat és más óránként sávok az adott adatkészlethez aránya jelentős változásokat (például a arányok a színek között változik jelentősen), azt jelenti, hogy ez az adatkészlet bemutatott szórványos módosítása teljesítmény.
-- A bemutató egy gyengén teljesítő lekérdezések szabálytalan része egy órás sávok jelzett timespan, ahol az adatkészlet egy zajos szomszédok hatást, egyéb adatkészletekhez tevékenységek által okozott hatással volt.
+- A **Lekérdezések időtartama** vizualizációban a rendszergazda az adathalmaz szerint szűrte az adathalmazokat (a legtöbbször lekérdezett adathalmazokkal kezdve), és megvizsgálta a keresztszűrt oszlopokat a **Lekérdezések időtartamának eloszlása óránként** vizualizációban.
+- Ha egy adott egyórás oszlop jelentős változásokat mutat az összes lekérdezés időtartamcsoportjai és a többi egyórás oszlopok aránya között az adott adathalmaz esetén (például a színek közötti arányok drasztikusan változnak), az azt jelenti, hogy az adathalmaz időnkénti változást mutat a teljesítményben.
+- A gyengén teljesítő lekérdezések normálistól eltérő arányát megjelenítő egyórás oszlopok olyan időtartamot jeleznek, amikor az adathalmazt a más adathalmazok tevékenységei által okozott „zajos szomszédok” hatás érte.
 
-Egy adatkészlet teljesítmény jelentős setback történt, ahol a "(3,10s]"végrehajtási időtartamgyűjtő mérete által jelzett a január 30-án egy órán keresztül az alábbi kép. Adott egy órás sávon kattintással tárja fel az összes adathalmaz ideje alatt a memóriába betöltött felszínre hozza a lehetséges adatkészletek zajos szomszédok hatása okozza.
+Az alábbi képen a január 30-i nap egy órája látható, amikor jelentős visszaesés volt tapasztalható az adathalmaz teljesítményében, amit a „(3,10 mp)” végrehajtásiidőtartam-kategória mérete jelez. Erre az egyórás oszlopra kattintva megjeleníthető az adott időpontban a memóriába betöltött adathalmazok mindegyike, feltárva a „zajos szomszédok” hatást okozó lehetséges adathalmazokat.
 
-![Sáv megjelenítése a legrosszabb teljesítmény nagy által](media/service-premium-capacity-scenarios/worst-performing-queries.png)
+![A nagy arányt elérő legrosszabb teljesítményt megjelenítő oszlop](media/service-premium-capacity-scenarios/worst-performing-queries.png)
 
-Miután problémás lehet timespan van (például során azonosított január 30. a fenti képen) a Power BI rendszergazdája adatkészlet összes szűrő eltávolítása, majd csak az adott időtartam meghatározni, melyik adatkészleteket aktívan kérdeztek ebben az időszakban szűrése. A felső lekérdezett adatkészletet, vagy egy a leghosszabb átlagos lekérdezési idő általában a zajos szomszédok hatása sokkal adatkészlete.
+A problémás időtartam azonosítását követően (például január 30-án a fenti képen), a Power BI-rendszergazda eltávolíthatja az összes adathalmazszűrőt, majd szűrhet csak az adott időtartam szerint annak megállapításához, hogy mely adathalmazokat kérdezték le aktívan az adott időtartamban. A „zajos szomszédok” hatásért felelős adathalmaz általában a legtöbbször lekérdezett adathalmaz, vagy pedig a leghosszabb átlagos lekérdezési időtartammal rendelkező adathalmaz.
 
-Egy megoldás erre a problémára lehet terjeszteni a különböző munkaterületekhez különböző prémium szintű kapacitások vagy a megosztott kapacitás, ha az adatkészlet méretét, a felhasználási követelményeket és az adatok frissítése minták keresztül adatkészletek támogatottak nem sokkal.
+A probléma egyik megoldása lehet a bűnös adathalmazok elosztása különböző prémium szintű kapacitásokon található munkaterületekre, vagy egy megosztott kapacitásra, ha az adathalmaz mérete, a használati követelmények és az adatfrissítési minták támogatottak.
 
-Fordítva is igaz lehet. A Power BI rendszergazdája sikerült alkalommal, amikor egy adatkészlet lekérdezés jelentősen javítja a teljesítményt, azonosítása, majd keresse meg mi eltűnt. Adott időpontban hiányzik a bizonyos adatokat, majd, amely segíthet a okozó probléma mutasson.
+Ennek fordítottja is igaz lehet. A Power BI-rendszergazda azonosíthatja azokat az időpontokat, amikor egy adathalmaz lekérdezésének teljesítménye jelentősen javul, majd utánanézhet, hogy mi tűnt el. Ha az adott pontban hiányoznak bizonyos információk, akkor az rámutathat a kiváltó problémára.
 
-## <a name="determining-whether-there-is-enough-memory"></a>Meghatározása, hogy van-e elegendő memória
+## <a name="determining-whether-there-is-enough-memory"></a>Annak meghatározása, hogy van-e elég memória
 
-Annak megállapításához, hogy van-e elegendő memória a kapacitás a számítási feladatok végrehajtásához, a Power BI-rendszergazdák az itt található a **felhasznált memória százalékos** Vizualizáció a a **adatkészletek** az alkalmazás lapján. **Az összes** memória (összesen) a betölti a memóriába, függetlenül attól, hogy aktívan kérdezhető le, vagy azok feldolgozott adatkészletek által felhasznált memóriát jelenti. **Aktív** memória a aktívan feldolgozott adatkészletek által felhasznált memóriát jelenti.
+Annak meghatározásához, hogy a kapacitás rendelkezik-e elegendő memóriával a számítási feladatai végrehajtásához, a Power BI-rendszergazda az alkalmazás **Adatkészletek** lapjának **A felhasznált memória százalékos aránya** vizualizációját használhatja. Az **Összes** (teljes) memória a memóriába betöltött adathalmazok által felhasznált memóriát jeleníti meg, függetlenül attól, hogy az adathalmazokra irányultak-e aktív lekérdezések vagy megtörtént-e a feldolgozásuk. Az **Aktív** memória az aktív feldolgozás alatt álló adathalmazok által felhasznált memóriát jeleníti meg.
 
-A megfelelő minőségben a Vizualizáció fog kinézni a, megjelenítése egy minden (összesen) közötti résnek és aktív memória:
+Egy megfelelő állapotú kapacitás esetén a vizualizáció az alábbi képen láthatók szerint jelenik meg, eltérést mutatva az Összes (teljes) és az Aktív memória között:
 
-![Egy megfelelő kapacitást jelennek meg minden (összesen) közötti eseményáramlási kimaradást és aktív memória](media/service-premium-capacity-scenarios/memory-healthy-capacity.png)
+![Egy megfelelő állapotú kapacitás eltérést mutat az Összes (teljes) és az Aktív memória között](media/service-premium-capacity-scenarios/memory-healthy-capacity.png)
 
-Tapasztal memóriaterhelés minőségben ugyanabban a vizualizációban egyértelműen jelennek meg a aktív memória és a teljes memória beépül, ami azt jelenti, hogy nem lehet majd betölti a memóriába további adatkészletek. Ebben az esetben a Power BI rendszergazdája kattintva **indítsa újra a kapacitás** (a **speciális beállítások** a kapacitás beállításai terület a felügyeleti portál). Újraindítás a kapacitás eredmények összes adatkészletek folyamatban van a memóriából a kiürített, és lehetővé teheti, hogy újra betölti a memóriába (lekérdezések vagy az adatok frissítése) igényeinek megfelelően.
+Ha a kapacitásban a memóriát nagy terhelés éri, ugyanezen a vizualizáción egyértelműen látható lesz, hogy az aktív memória és a teljes memória közelít egymáshoz, ami azt jelenti, hogy további adathalmazok nem tölthetők be a memóriába ekkor. Ebben az esetben a Power BI-rendszergazda a **Kapacitás újraindítása** elemre kattinthat (a felügyeleti portál kapacitásbeállításokat tartalmazó területének **Speciális beállítások** részén érhető el). A kapacitás újraindítása az adathalmazok memóriából való kiürítésével jár, lehetővé téve a memóriába való ismételt, szükség szerinti betöltésüket (lekérdezésekkel vagy adatfrissítéssel).
 
-![** Aktív ** memória beépül a ** minden ** memória](media/service-premium-capacity-scenarios/memory-unhealthy-capacity.png)
+![Az egymáshoz közelítő **Aktív** memória és **Összes** memória](media/service-premium-capacity-scenarios/memory-unhealthy-capacity.png)
 
-## <a name="determining-whether-there-is-enough-cpu"></a>Amely meghatározza, hogy van-e elegendő Processzor
+## <a name="determining-whether-there-is-enough-cpu"></a>Annak meghatározása, hogy van-e elég processzorkapacitás
 
-Általában egy kapacitáshoz átlagos CPU-kihasználtsága 80 % alatt kell maradnia. Ez az érték meghaladja a kapacitás mérete hamarosan eléri a Processzor színtelítettség jelenti.
+A kapacitás átlagos processzorhasználatának általában 80% alatt kell maradnia. Ennek az értéknek a túllépése azt jelenti, hogy a kapacitás kezdi megközelíteni a processzortelítettséget.
 
-CPU színtelítettség hatásait ki, a műveletek végrehajtása sok CPU-környezetek kapcsolók megpróbálja feldolgozni az összes műveletet, a kapacitás miatt azok kell tovább tart a vártnál. Prémium szintű kapacitást a nagy számú lekérdezést Ez jelzi a lekérdezési várakozási időt. A lekérdezési várakozási időt következménye a szokásosnál lassabban válaszképességét. A Power BI rendszergazdai amikor megtekinti a Processzor megtelt könnyen azonosítható a **óránkénti lekérdezés várakozási idő Disztribúciók** visual. Lekérdezés rendszeres csúcsok várakozási számát jelzi a lehetséges CPU színtelítettség idő.
+A processzortelítettség hatása a kellőnél hosszabb ideig tartó műveletekben jelentkezik, amit az okoz, hogy a kapacitás sok CPU-környezetváltást hajt végre, miközben megkísérli a műveletek mindegyikét feldolgozni. A sok egyidejű lekérdezéssel rendelkező prémium szintű kapacitásban ezt a lekérdezések hosszú várakozási ideje jelzi. A lekérdezések hosszú várakozási idejének egyik következménye a szokásosnál lassabb válaszidő. A **Lekérdezésekre való várakozások időtartamának eloszlása óránként** vizualizáció megtekintésével a Power BI-rendszergazda egyszerűen megállapíthatja, hogy a processzor telítve lett-e. A lekérdezések várakozási idejének ismétlődő csúcsai processzortelítettséget jelezhetnek.
 
-![Lekérdezés rendszeres csúcsok várakozási számát jelzi a lehetséges CPU színtelítettség idő](media/service-premium-capacity-scenarios/peak-query-wait-times.png)
+![A lekérdezések várakozási idejének ismétlődő csúcsai CPU-túlterhelést jelezhetnek](media/service-premium-capacity-scenarios/peak-query-wait-times.png)
 
-Hasonló mintát néha is észlelhető a háttérbeli műveletek, ha azok hozzájárulnak CPU színtelítettség. A Power BI-rendszergazdák is keresni rendszeres ugrásszerű CPU színtelítettség időben jelezheti (valószínűleg miatt más folyamatban lévő adatkészlet frissíti és/vagy interaktív lekérdezések) egy adott adatkészlet frissítési időpont. Ebben a példányban hivatkozó a **rendszer** megtekintése az alkalmazásban esetleg nem feltétlenül mutatja, hogy van-e a CPU 100 %-os. A **rendszer** a nézet jeleníti meg az óradíjas átlagok, de a Processzor is legyen telített (nagy erőforrásigényű) művelet több percig ami megjelenik-e csúcsok, várakozási időt.
+Néha hasonló minta észlelhető a háttérműveletekben is, ha hozzájárulnak a processzor telítettségéhez. A Power BI-rendszergazda megkeresheti az ismétlődő megugrást egy adott adathalmaz frissítési idejében, ami processzortelítettséget jelezhet az adott időpontban (valószínűleg más folyamatban lévő adathalmaz-frissítések és/vagy interaktív lekérdezések miatt). Ebben az esetben az alkalmazás **Rendszer összegzése** nézetének használata nem feltétlenül mutatja ki, hogy a processzorhasználat 100%-os. A **Rendszer összegzése** nézet óránkénti átlagokat jelenít meg, a processzor azonban az erőforrás-igényes műveletek több percére válhat telítetté, ami a várakozási idők megugrásaiban jelentkezik.
 
-Nincsenek egyéb CPU színtelítettség hatásának további részleteiről. Fontos, hogy várjon lekérdezések száma, amíg lekérdezés várakozási idő mindig akkor történik meg bizonyos mértékig lekérdezésteljesítmény teljesítményromlást okozó nélkül. Bizonyos adatkészletek (a hosszabb átlagos lekérdezési idő, jelezve összetettségére vagy nagy méretére) jobban ki CPU színtelítettség hatásait a többinél. Könnyedén azonosíthatja ezeket az adatkészleteket, a Power BI rendszergazdája is keresse meg a szín összeállításban gyűjteménye a módosításokat a **óránkénti várakozási idő terjesztési** visual. Után gyorsabban egy rendkívüli sáv, akkor keresse meg az adatkészleteket, akinek lekérdezést vár ebben az időszakban és is tekintse meg a lekérdezés átlagos várakozási idő átlagos lekérdezési idő képest. Ha két metrikák ugyanolyan nagyságrendű, és a lekérdezési számítási feladatok az adatkészlet nem triviális, valószínű, hogy az adatkészlet nem elegendő Processzor hatással van.
+A processzortelítettség hatása további finom részletekben is észrevehető. Jóllehet a várakozó lekérdezések száma fontos, a lekérdezések várakozási ideje bizonyos mértékben mindig nagyobb lesz, észrevehető teljesítményromlás nélkül. Egyes adathalmazok (amelyek hosszabb átlagos lekérdezési idővel rendelkeznek, ami összetettséget vagy nagyobb méretet jelez) érzékenyebbek a processzortelítettség hatásaira, mint mások. Ezeket az adathalmazokat úgy azonosíthatja egyszerűen a Power BI-rendszergazda, hogy megtekinti az oszlopok színösszetételének változásait a **Lekérdezésekre való várakozások időtartamának eloszlása óránként** vizualizációban. A többi közül kilógó oszlop azonosítását követően a rendszergazda megkeresheti azokat az adathalmazokat, amelyek lekérdezései várakoztak ezen idő során, és össze is hasonlítja a lekérdezések átlagos várakozási idejét a lekérdezések átlagos időtartamával. Ha ez a két metrika azonos nagyságrendű, és az adathalmazra irányuló lekérdezési számítási feladat nem jelentéktelen, az adathalmazra valószínűleg az elégtelen CPU-kapacitás van hatással.
 
-A hatás nyilvánvaló, különösen akkor lehet, ha egy adatkészlet használja fel a nagyon gyakori lekérdezések (például a betanítás), a több felhasználó által rövid adatlöketekkel CPU színtelítettség során minden egyes burst eredményez. Ebben az esetben az adatkészlethez jelentős várakozási időt is észlelt és az egyéb adatkészletekhez a kapacitást (zajos szomszédok hatás), mely negatív hatással.
+Ez a hatás különösen akkor lehet nyilvánvaló, ha az adathalmazt több felhasználó nagy gyakoriságú lekérdezések rövid sorozataiban használja (például egy képzés alatt), ami processzortelítettséget eredményezhet az egyes sorozatok során. Ebben az esetben az adathalmazra irányuló lekérdezések várakozási ideje jelentős lesz, illetve mindez hatással lesz a kapacitás más adathalmazaira is (a „zajos szomszédok” hatás).
 
-Bizonyos esetekben a Power BI-rendszergazdák kérheti, hogy az adatkészlet tulajdonosa hozzon létre egy kisebb felejtő lekérdezési számítási feladatok létrehoz egy irányítópultot (melyik lekérdezések rendszeres időközönként minden olyan adatkészletben a gyorsítótárban lévő csempék frissítése) helyett egy jelentést. Ez megakadályozhatja ugrásszerűen az irányítópult betöltésekor. Ez a megoldás nem mindig lehetséges a megadott üzleti követelményeknek, ugyanakkor anélkül, hogy módosítja az adatkészletet CPU telítettséget elkerülése érdekében hatékony módja lehet.
+Egyes esetekben a Power BI-rendszergazdák megkérhetik az adathalmazok tulajdonosait, hogy tartósabb lekérdezési számítási feladatot hozzanak létre egy irányítópult létrehozásával (amely rendszeres időközönként, az adathalmazok frissítésekor kezdeményez lekérdezéseket a gyorsítótárazott csempékre vonatkozóan), jelentések létrehozása helyett. Ez meggátolhatja a megugrásokat az irányítópult betöltésekor. Ez a megoldás nem mindig lehetséges az adott üzleti követelmények miatt, azonban hatásos módja lehet a processzortelítettség elkerülésének az adathalmaz módosítása nélkül.
 
-## <a name="acknowledgements"></a>Nyugtázás
+## <a name="acknowledgements"></a>Nyugták
 
-Ez a cikk írásának Peter Myers, a Data Platform MVP és a független, a BI-Szakértővé [bitenként megoldások](https://www.bitwisesolutions.com.au/).
+A cikket Peter Myers, a [Bitwise Solutions](https://www.bitwisesolutions.com.au/) Data Platform MVP-je és független BI-szakértője szerezte.
 
 ## <a name="next-steps"></a>Következő lépések
 
 > [!div class="nextstepaction"]
-> [Prémium szintű kapacitások az alkalmazás figyelése](service-admin-premium-monitor-capacity.md)    
+> [Prémium szintű kapacitások monitorozása az alkalmazással](service-admin-premium-monitor-capacity.md)    
 > [!div class="nextstepaction"]
-> [A felügyeleti portál kapacitások figyelése](service-admin-premium-monitor-portal.md)   
+> [Kapacitások monitorozása a felügyeleti portálon](service-admin-premium-monitor-portal.md)   
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

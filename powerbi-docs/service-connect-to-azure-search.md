@@ -2,7 +2,6 @@
 title: Kapcsolódás az Azure Search szolgáltatáshoz a Power BI-jal
 description: Azure Search-tartalomcsomag a Power BI-hoz
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8b7560570af4f1b459cdde8589c0afdb9194e154
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 511fb6674d84cc0d206fdb1807fcb9ebf9e41d30
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060925"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873111"
 ---
 # <a name="connect-to-azure-search-with-power-bi"></a>Kapcsolódás az Azure Search szolgáltatáshoz a Power BI-jal
 Az Azure Search Forgalomelemzés funkciójával monitorozható és értelmezhető az Azure Search szolgáltatáshoz beérkező forgalom. A Power BI-hoz készült Azure Search-tartalomcsomag segítségével részletes információk szerezhetők a keresési adatok alapján az elmúlt 30 napra visszamenőleg (a keresésről, az indexelésről, a szolgáltatás statisztikáiról és a késésről). Az [Azure blog bejegyzésében](https://azure.microsoft.com/blog/analyzing-your-azure-search-traffic/) további részletek olvashatók.
@@ -24,11 +23,11 @@ Az Azure Search Forgalomelemzés funkciójával monitorozható és értelmezhet�
 
 Kapcsolódjon a Power BI-hoz készült [Azure Search-tartalomcsomaghoz](https://app.powerbi.com/getdata/services/azure-search).
 
-## <a name="how-to-connect"></a>A kapcsolódás menete
-1. A bal oldali navigációs ablaktábla alján kattintson az **Adatok lekérése** elemre.
+## <a name="how-to-connect"></a>Csatlakozás
+1. Kattintson az **Adatok lekérése** elemre a navigációs panel alján.
    
    ![](media/service-connect-to-azure-search/pbi_getdata.png) 
-2. A **Szolgáltatások** keretben kattintson a **Beolvasás** elemre.
+2. A **Szolgáltatások** mezőben kattintson a **Lekérés** elemre.
    
    ![](media/service-connect-to-azure-search/pbi_getservices.png) 
 3. Válassza az **Azure Search** \> **Beolvasás** elemet.
@@ -40,7 +39,7 @@ Kapcsolódjon a Power BI-hoz készült [Azure Search-tartalomcsomaghoz](https://
 5. Hitelesítési mechanizmusként válassza a **Kulcs** lehetőséget, majd adja meg a Storage-fiók kulcsát. Kattintson a **Bejelentkezés** gombra. Ennek hatására elkezdődik a betöltés.
    
    ![](media/service-connect-to-azure-search/creds.png)
-6. Amikor befejeződik a betöltés, a navigációs panelen megjelenik egy új irányítópult, egy új jelentés és egy új modell. Az importált adatok megtekintéséhez válassza az irányítópultot.
+6. Amikor befejeződik a betöltés, a navigációs panelen megjelenik egy új irányítópult, jelentés és modell. Válassza ki az irányítópultot az importált adatok megtekintéséhez.
    
     ![](media/service-connect-to-azure-search/dashboard2.png)
 

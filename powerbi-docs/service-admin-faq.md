@@ -2,7 +2,6 @@
 title: A Power BI felügyelete – gyakori kérdések (GYIK)
 description: Ismerje meg a Power BI-előfizetéssel, bérlőkezeléssel és más adminisztratív feladatokkal kapcsolatos gyakori kérdésekre adott válaszokat.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 6cc29bd1d06e948facf1058411759c15841a8352
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: 711646009fe79e145a3ab756266a442243c1116e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442922"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857825"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>A Power BI felügyelete – gyakori kérdések (GYIK)
 
@@ -56,7 +55,7 @@ A cikk a Power BI felügyeletével kapcsolatos gyakori kérdéseket ismerteti. A
 
 ### <a name="using-powershell"></a>A PowerShell használata
 
-A szakasz egyes folyamataihoz Windows PowerShell-szkriptek szükségesek. Ha még nem jártas a PowerShellben, tekintse meg a [PowerShell használatának első lépéseit ismertető útmutatót](http://go.microsoft.com/fwlink/p/?LinkID=286814). A szkriptek futtatásához telepítse az [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/) legújabb, 64 bites verzióját.
+A szakasz egyes folyamataihoz Windows PowerShell-szkriptek szükségesek. Ha még nem jártas a PowerShellben, tekintse meg a [PowerShell használatának első lépéseit ismertető útmutatót](https://go.microsoft.com/fwlink/p/?LinkID=286814). A szkriptek futtatásához telepítse az [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/) legújabb, 64 bites verzióját.
 
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Hogyan regisztrálnak a felhasználók a Power BI-ra?
 
@@ -193,7 +192,7 @@ Ha egy felhasználó regisztrált a Power BI-ra, de Ön már nem szeretné, hogy
 
 1. A [Microsoft 365 Felügyeleti központ](https://admin.microsoft.com/AdminPortal/Home#/homepage) megnyitása.
 
-1. A bal oldali navigációs sávban válassza a **Felhasználók** > **Aktív felhasználók** lehetőséget.
+1. A navigációs panelen válassza a **Felhasználók** > **Aktív felhasználók** lehetőséget.
 
 1. Keresse meg azt a felhasználót, akinek el szeretné távolítani a licencét, majd válassza ki a nevét.
 
@@ -209,9 +208,9 @@ Ha egy felhasználó regisztrált a Power BI-ra, de Ön már nem szeretné, hogy
 
 A bérlőhöz önkiszolgáló regisztrációval csatlakozó felhasználókhoz egyedi licencet rendel a rendszer, amely alapján szűrhet a felügyeleti irányítópult aktív felhasználó paneljén. Az új nézet létrehozásához kövesse az alábbi lépéseket.
 
-1. A [Microsoft 365 Felügyeleti központ](https://admin.microsoft.com/AdminPortal/Home#/homepage) megnyitása.
+1. Nyissa meg a [Microsoft 365 Felügyeleti központot](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. A bal oldali navigációs sávban válassza a **Felhasználók** > **Aktív felhasználók** lehetőséget.
+1. A navigációs panelen válassza a **Felhasználók** > **Aktív felhasználók** lehetőséget.
 
 1. A **Nézetek** menüben válassza az **Egyéni nézet hozzáadása** lehetőséget.
 
@@ -235,7 +234,7 @@ További információt a Power BI-bérlő adatrégiójáról a [Hol található 
 
 ### <a name="what-is-the-power-bi-sla"></a>Mi az a Power BI SLA?
 
-A Power BI SLA-ról (szolgáltatásiszint-szerződésről) további információt a Microsoft licencelést bemutató webhelyének **Licencelés** szakaszában található [Licencelési feltételek és dokumentáció](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) című témakörben talál.
+A Power BI SLA-ról (szolgáltatásiszint-szerződésről) további információt a Microsoft licencelést bemutató webhelyének **Licencelés** szakaszában található [Licencelési feltételek és dokumentáció](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) című témakörben talál.
 
 ### <a name="how-does-power-bi-handle-high-availability-and-failover"></a>Hogyan kezeli a Power BI a magas rendelkezésre állást és a feladatátvételt?
 
@@ -264,6 +263,6 @@ A Microsoft Power BI a Microsoft 365 alapjára épül, amely viszont Azure-szolg
 [Office 365 felhasználói fiókok kezelése](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
 [Office 365 csoportfelügyelet](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 
 [1]: https://docs.microsoft.com/powershell/scripting/overview

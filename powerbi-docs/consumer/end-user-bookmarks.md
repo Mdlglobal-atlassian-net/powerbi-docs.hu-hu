@@ -1,20 +1,19 @@
 ---
 title: A Power BI szolgáltatás jelentéseiben lévő könyvjelzők áttekintése
-description: 'Q&A szolgáltatás: Természetes nyelvi kérdések a Power BI-ban – Dokumentáció'
+description: Dokumentációs áttekintő témakör a Power BI szolgáltatás könyvjelzőihez.
 author: mihart
-manager: kvivek
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/18/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5383b06bbc40953ea9f4322562190b6a7b29db14
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: d5816c4080340b3ff5f29f6000fd203e1a2dedfd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589424"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852258"
 ---
 # <a name="what-are-bookmarks"></a>Mik azok a könyvjelzők?
 

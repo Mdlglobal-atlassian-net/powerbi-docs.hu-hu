@@ -2,7 +2,6 @@
 title: Látványos jelentések létrehozásával kapcsolatos tippek
 description: Tippek és trükkök jelentések létrehozásához a Power BI szolgáltatásban és a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 4d686a807d9413c15b19ff382e5ac54fb696b10b
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d7f2c83cf1d0f29f2c0d0c6e621a253acdd3ce41
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721352"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860890"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tippek és trükkök jelentések létrehozásához a Power BI Desktopban és a Power BI szolgáltatásban
 Ahhoz, hogy a legtöbbet hozza ki az adataiból, néha szüksége van egy kis extra segítségre. Összegyűjtöttünk néhány tippet és trükköt, amelyek segítségére lehetnek, amikor jelentéseket hoz létre a Microsoft Power BI Desktopban, a Power BI szolgáltatásban *és* a Microsoft Excel 2016 vagy Excel 2013 Pro-Plus kiadásokban, amelyekben engedélyezve van a Power Pivot bővítmény, illetve telepítve és engedélyezve van a Power Query.
@@ -163,12 +162,9 @@ A DAX a Power BI Desktop számításokhoz használt képletnyelve.  Ez a nyelv B
 
 [Data Analysis Expressions-referencia (DAX)](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[DAX forrásanyagközpont](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[DAX forrásanyagközpont](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Power BI szolgáltatás *és* Power BI Desktop
-
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>A tanulmány elolvasása: [A Power BI-jelentések kialakításának alapelvei](visuals/power-bi-visualization-best-practices.md)
-Ez a tanulmány a Power BI szolgáltatásban történő jelentéstervezés bevált gyakorlatait mutatja be. Az előkészületektől kezdve tárgyalja a jelentésekre és a jelentéseket felépítő oldalakra és egyéni vizualizációkra vonatkozó tervezési alapelveket. Az ajánlott eljárások nagy része az irányítópultok tervezésére is érvényes.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Olvassa el és/vagy nézze meg, hogyan tervezhet lenyűgöző megjelenésű jelentéseket (és irányítópultokat) a Power BI-ban
 Miguel Myers adatelemző és grafikus tervező, és a Power BI-közösség tagja.
@@ -226,4 +222,4 @@ Itt van néhány kedvenc könyveink közül:
 
 [Power BI-jelentések](consumer/end-user-reports.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -2,19 +2,18 @@
 title: Tartalom kezelése a Power BI jelentéskészítő kiszolgáló webportálján
 description: Ebben a cikkben a Power BI jelentéskészítő kiszolgáló webportálján végzett tartalomkezelésről olvashat.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: 8a5b04c5b3325a9fd4d3bb11aa1943e62cf2c90c
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: ecc33c6176214cb8178e55d716294bf9446a7b1d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021460"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859484"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Tartalom kezelése a webes portálon 
 A Power BI jelentéskészítő kiszolgáló webportálja egy helyszíni platform, amely Power BI-, mobil- és többoldalas jelentések és főbb teljesítménymutatók (KPI-k) megtekintésére, tárolására és kezelésére szolgál.
@@ -38,9 +37,9 @@ A webportál alkalmazás böngészőben fut. Attól függ, hogy milyen lapok, hi
     A [támogatott webböngészők és verziók](browser-support.md) listáját itt találja.
 2. A címsorba írja be a webportál URL-jét.
    
-    Ez alapértelmezés szerint a <em>http://[A számítógép neve]/reports</em>.
+    Az URL-cím alapértelmezés szerint a <em>http://[SzámítógépNeve]/reports</em>.
    
-    Előfordulhat, hogy a jelentéskészítő kiszolgáló egy adott port használatára van beállítva. Például: <em>http://[A számítógép neve]:80/reports</em> vagy <em>http://[A számítógép neve]:8080/reports</em>
+    Előfordulhat, hogy a jelentéskészítő kiszolgáló egy adott port használatára van beállítva. Például: <em>https://[SzámítógépNeve]:80/reports</em> vagy <em>https://[SzámítógépNeve]:8080/reports</em>
    
     Amint láthatja, a webportál kategóriákba rendezi az elemeket:
    

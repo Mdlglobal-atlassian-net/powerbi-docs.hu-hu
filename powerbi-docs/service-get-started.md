@@ -2,7 +2,6 @@
 title: Első lépések a Power BI szolgáltatással
 description: Első lépések a Power BI online szolgáltatásban (app.powerbi.com)
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 681c55f4425729b96860367858273d7eb1ad73b6
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 3a9b2a5e7de0a5072b266c7b146488e5d546f616
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060393"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872333"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service"></a>Oktatóanyag: Első lépések a Power BI szolgáltatással
 Ez az oktatóanyag a *Power BI szolgáltatás* néhány funkciójához nyújt bevezetést. Ennek során adatokhoz csatlakozhat, jelentést és irányítópultot hozhat létre, és kérdéseket tehet fel az adatokkal kapcsolatban. A Power BI szolgáltatásban ezeken kívül sok mást is megtehet, ez az oktatóanyag csak kedvcsináló. Ha szeretné megérteni, hogyan illeszkedik a Power BI szolgáltatás a többi Power BI-ajánlathoz, javasoljuk, olvassa el [A Power BI bemutatása](fundamentals/power-bi-overview.md) című szakaszt.
@@ -35,7 +34,7 @@ A jelen oktatóanyagban az alábbi lépéseket fogja végrehajtani:
 > * Erőforrások felszabadítása az adatkészlet, jelentés és irányítópult törlésével.
 
 > [!TIP]
-> Ehelyett egy ingyenes, saját tempóban elvégezhető tanfolyamot szeretne? [Regisztráljon Analyzing and Visualizing Data (Adatok elemzése és vizualizációja) tanfolyamunkra az Edx-en](http://aka.ms/edxpbi).
+> Ehelyett egy ingyenes, saját tempóban elvégezhető tanfolyamot szeretne? [Regisztráljon Analyzing and Visualizing Data (Adatok elemzése és vizualizációja) tanfolyamunkra az Edx-en](https://aka.ms/edxpbi).
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Regisztráció a Power BI szolgáltatásra
 Ha még nincs Power BI Pro-fiókja, a kezdés előtt [hozzon létre egy ingyenes Power BI Pro próbaverziós fiókot](https://app.powerbi.com/signupredirect?pbi_source=web).
@@ -46,10 +45,10 @@ A fiók létrehozása után írja be az *app.powerbi.com* címet a böngészőbe
 
 A Power BI-jelentések létrehozása többnyire a Power BI Desktopban kezdődik. Ezúttal a Power BI szolgáltatásban fogunk teljesen új jelentést létrehozni.
 
-Ebben az oktatóanyagban az adatok egy CSV-fájlból származnak. Ha érdekli a megoldás, tartson velünk. [Töltse le a Pénzügyi minta CSV-fájlt](http://go.microsoft.com/fwlink/?LinkID=521962).
+Ebben az oktatóanyagban az adatok egy CSV-fájlból származnak. Ha érdekli a megoldás, tartson velünk. [Töltse le a Pénzügyi minta CSV-fájlt](https://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Jelentkezzen be a Power BI-ba](http://www.powerbi.com/). Még nincs fiókja? Ne aggódjon, regisztrálhat ingyenes próbaverzióra.
-2. A Power BI a böngészőjében nyílik meg. Válassza az **Adatok lekérése** elemet a bal oldali navigációs sáv alján.
+1. [Jelentkezzen be a Power BI-ba](https://www.powerbi.com/). Még nincs fiókja? Ne aggódjon, regisztrálhat ingyenes próbaverzióra.
+2. A Power BI a böngészőjében nyílik meg. Kattintson az **Adatok lekérése** elemre a navigációs panel alján.
 
     Ekkor megnyílik az **Adatok lekérése** lap.   
 
@@ -73,7 +72,7 @@ Ebben az oktatóanyagban az adatok egy CSV-fájlból származnak. Ha érdekli a 
 
     ![Üres jelentésvászon](media/service-get-started/power-bi-service-blank-report.png)
 
-7. A felső navigációs sávon láthatja az **Olvasó nézet** lehetőséget. Mivel elérhető ez az opció, ez azt jelenti, hogy jelenleg Szerkesztési nézetben van. A jelentésszerkesztővel való ismerkedés nagyszerű módja egy [bemutató megtekintése](service-the-report-editor-take-a-tour.md).
+7. A felső navigációs ablaktáblán elérhető egy **Olvasó nézet** lehetőség. Mivel elérhető ez az opció, ez azt jelenti, hogy jelenleg Szerkesztési nézetben van. A jelentésszerkesztővel való ismerkedés nagyszerű módja egy [bemutató megtekintése](service-the-report-editor-take-a-tour.md).
 
     ![Olvasó nézet lehetőség](media/service-get-started/power-bi-service-reading-view.png)
 
@@ -115,13 +114,13 @@ Most, hogy adatokhoz csatlakozott, megismerkedhet a felülettel.  Ha valami érd
    
 8. A jelentéshez visszatérhet, ha az új csempét választja az irányítópulton. A Power BI a jelentéshez lépteti vissza Olvasó nézetben. 
 
-1. Térjen vissza a Szerkesztés nézetre, és válassza a felső navigációs sávon a **További lehetőségek** (...), majd a **Szerkesztés** elemet. Szerkesztés nézetben tovább böngészhet, és csempéket is rögzíthet.
+1. Térjen vissza a Szerkesztés nézetre, és válassza a **További lehetőségek** (...) elemet a felső navigációs ablaktábla **Szerkesztés** menüjében. Szerkesztés nézetben tovább böngészhet, és csempéket is rögzíthet.
 
     ![A Szerkesztés lehetőség választása a jelentés szerkesztéséhez](media/service-get-started/power-bi-service-edit-report.png)
 
 ## <a name="step-3-explore-with-qa"></a>3\. lépés: Felfedezés a Q&A használatával
 
-Az adatok gyors feltárásához próbáljon kérdést feltenni a Q&A kérdésmezőjében. A Q&A az adatokkal kapcsolatos természetes nyelvű lekérdezéseket hoz létre. Az irányítópulton a Q&A felül található (**Tegyen fel kérdést az adataival kapcsolatban**). A jelentésben a felső navigációs sávon helyezkedik el (**Kérdés feltevése**).
+Az adatok gyors feltárásához próbáljon kérdést feltenni a Q&A kérdésmezőjében. A Q&A az adatokkal kapcsolatos természetes nyelvű lekérdezéseket hoz létre. Az irányítópulton a Q&A felül található (**Tegyen fel kérdést az adataival kapcsolatban**). A jelentésben a felső navigációs ablaktáblán helyezkedik el (**Kérdés feltevése**).
 
 1. Az irányítópulthoz úgy térhet vissza, hogy a fekete **Power BI** sáv **Saját munkaterület** elemét választja.
 
@@ -198,7 +197,7 @@ Még egy kezelési műveletet kell megfigyelnie, mielőtt saját irányítópult
 ## <a name="clean-up-resources"></a>Erőforrások felszabadítása
 Most, hogy befejezte ezt az oktatóanyagot, törölheti az adatkészletet, a jelentést és az irányítópultot. 
 
-1. Ellenőrizze a bal oldali navigációs sávon, hogy a **Saját munkaterületen** van.
+1. A navigációs ablaktáblán a **Saját munkaterület** legyen megnyitva.
 2. Válassza az **Adatkészletek** lapot, majd keresse meg az oktatóanyaghoz importált adatkészletet.  
 3. Válassza a **További lehetőségek** (...), majd a **Törlés** elemet.
 

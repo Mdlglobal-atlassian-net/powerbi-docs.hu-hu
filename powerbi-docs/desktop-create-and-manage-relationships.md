@@ -2,7 +2,6 @@
 title: Kapcsolatok létrehozása és kezelése a Power BI Desktopban
 description: Kapcsolatok létrehozása és kezelése a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/19/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: f2102ad654a056832f7890dc506acc99eb5ef26f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f759992c42cc589d21ed51d5d63775bf54518c3f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61312496"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869109"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Kapcsolatok létrehozása és kezelése a Power BI Desktopban
 Amikor több táblázatot importál, valószínűleg az összes táblázatból származó adattal fog elemzést végezni. A táblázatok közötti kapcsolatok szükségesek az eredmények pontos kiszámításához és a jelentésekben a helyes információk megjelenítéséhez. A Power BI Desktop megkönnyíti ezen kapcsolatok létrehozását. Valójában a legtöbb esetben semmit sem kell tennie, az Automatikus észlelés funkció elvégezheti Ön helyett. Bizonyos esetekben azonban szükség lehet a kapcsolatok saját kezű létrehozására, vagy egy kapcsolat módosításaira. Mindkét esetben fontos megérteni a Power BI Desktopban lévő kapcsolatokat és azok létrehozásának és szerkesztésének módját.
@@ -64,9 +63,9 @@ A kapcsolatok létrehozásakor vagy szerkesztésekor további beállításokat i
 A számosság módosításának idejéről további tudnivalókat a jelen cikk későbbi, „További beállítások ismertetése” című szakaszában talál.
 
 ## <a name="cross-filter-direction"></a>Szűrő irányának keresztezése
-**Mindkettő** – A leggyakoribb, alapértelmezett irány. Azt jelenti, hogy szűrési célokból a rendszer mindkét táblázatot egy táblázatként kezeli. A **Mindkettő** beállítás jól működik, ha egy olyan táblázattal dolgozik, amelyet számos keresési táblázat vesz körül. Erre példa lehet egy Értékesítési táblázat, amelyben a részleghez egy keresési táblázat szerepel. Ezt gyakran csillagséma konfigurációnak nevezik (egy központi táblázat több keresési táblázattal.) Ha azonban két vagy több olyan táblázata van, amelyek keresési táblázatokkal rendelkeznek (amelyek közül néhány közös), akkor nem érdemes a Mindkettő beállítást használni. Az előző példa folytatása érdekében ebben az esetben olyan költségvetési értékesítési táblázattal is rendelkezik, amely az egyes részlegek cél költségvetését rögzíti. A részleg táblázata pedig az értékesítés és a költségvetés táblázathoz is csatlakozik. Az ilyen konfigurációtípusok esetén kerülje a Mindkettő beállítást.
+**Mindkettő** – Szűrési célokból a rendszer mindkét táblát egy táblaként kezel. A **Mindkettő** beállítás jól működik, ha egy olyan táblázattal dolgozik, amelyet számos keresési táblázat vesz körül. Erre példa lehet egy Értékesítési táblázat, amelyben a részleghez egy keresési táblázat szerepel. Ezt gyakran csillagséma konfigurációnak nevezik (egy központi táblázat több keresési táblázattal.) Ha azonban két vagy több olyan táblázata van, amelyek keresési táblázatokkal rendelkeznek (amelyek közül néhány közös), akkor nem érdemes a Mindkettő beállítást használni. Az előző példa folytatása érdekében ebben az esetben olyan költségvetési értékesítési táblázattal is rendelkezik, amely az egyes részlegek cél költségvetését rögzíti. A részleg táblázata pedig az értékesítés és a költségvetés táblázathoz is csatlakozik. Az ilyen konfigurációtípusok esetén kerülje a Mindkettő beállítást.
 
-**Egyirányú** – A csatlakoztatott táblázatokban lévő szűrési lehetőségek arra a táblázatra érvényesek, ahol az értékek összesítve vannak. Ha egy Power Pivot táblázatot Excel 2013 vagy korábbi adatmodellbe importál, minden kapcsolat egyetlen iránnyal rendelkezik. 
+**Egyetlen** – A leggyakoribb, alapértelmezett irány, amely azt jelenti, hogy a csatlakoztatott táblákban lévő szűrési lehetőségek arra a táblára érvényesek, ahol az értékek összesítve lesznek. Ha egy Power Pivot táblázatot Excel 2013 vagy korábbi adatmodellbe importál, minden kapcsolat egyetlen iránnyal rendelkezik. 
 
 A Szűrő irányának keresztezése beállítás módosításának idejéről további tudnivalókat a jelen cikk későbbi, „További beállítások ismertetése” című szakaszában talál.
 

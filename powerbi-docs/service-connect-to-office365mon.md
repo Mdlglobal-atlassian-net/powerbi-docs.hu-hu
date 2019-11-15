@@ -2,7 +2,6 @@
 title: Kapcsolódás az Office365Mon tartalomcsomaghoz a Power BI-jal
 description: A Power BI-hoz készült Office365Mon tartalomcsomag
 author: teddybercovitz
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 8/29/2019
 ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5d31eccd52164bb4d1ff37532d89dc7e147693d3
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 64e8365a6d4e0c01911de9e69998af4d58d59202
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060824"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854719"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Kapcsolódás az Office365Mon tartalomcsomaghoz a Power BI-jal
 Az Office 365 leállásainak és az állapot teljesítményadatainak elemzése egyszerű a Power BI-jal és az Office365Mon sablonalkalmazással. A Power BI lekéri az adatokat, többek között a leállásokat és az állapotmintákat, majd ezeken az adatokon alapuló, használatra kész irányítópultot és jelentéseket hoz létre.
@@ -26,10 +25,10 @@ Csatlakozzon a Power BI-hoz készült [Office365Mon sablonalkalmazáshoz](https:
 >A Power BI-sablonalkalmazás betöltéséhez Office365Mon rendszergazdai fiók szükséges.
 
 ## <a name="how-to-connect"></a>Csatlakozás
-1. A bal oldali navigációs ablaktábla alján kattintson az **Adatok lekérése** elemre.
+1. Kattintson az **Adatok lekérése** elemre a navigációs panel alján.
    
    ![](media/service-connect-to-office365mon/pbi_getdata.png)
-2. A **Szolgáltatások** mezőben kattintson a **Beolvasás** gombra.
+2. A **Szolgáltatások** mezőben kattintson a **Lekérés** elemre.
    
    ![](media/service-connect-to-office365mon/pbi_getservices.png) 
 3. Kattintson az **Office365Mon** \> **Get** (Beolvasás) gombra.
@@ -42,7 +41,7 @@ Csatlakozzon a Power BI-hoz készült [Office365Mon sablonalkalmazáshoz](https:
    ![](media/service-connect-to-office365mon/creds.png)
    
    ![](media/service-connect-to-office365mon/creds2.png)
-5. Miután a Power BI importálta az adatokat, megjelenik egy új irányítópult, egy jelentés és egy adathalmaz a bal oldali navigációs ablaktáblán. Az új elemeket egy sárga csillag jelöli \*, válassza ki az Office365Mon bejegyzést.
+5. Miután a Power BI importálta az adatokat, megjelenik egy új irányítópult, jelentés és adathalmaz a navigációs panelen. Az új elemeket egy sárga csillag jelöli \*, válassza ki az Office365Mon bejegyzést.
    
    ![](media/service-connect-to-office365mon/dashboard4.png)
 

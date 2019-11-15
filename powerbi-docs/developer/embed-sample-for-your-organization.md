@@ -3,19 +3,18 @@ title: Beágyazott analitika Power BI-tartalom beágyazásához egy alkalmazásb
 description: Útmutató (Power BI- vagy lapszámozott) jelentés, irányítópult vagy csempe alkalmazásba való integrálásához vagy beágyazásához a vállalat számára, a beágyazott analitikákhoz készült Power BI API-k használatával. Útmutató a Power BI alkalmazásba való integrálásához beágyazott analitikai szoftver, beágyazott analitikai eszközök vagy beágyazott üzletiintelligencia-eszközök használatával.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: 9c35d74249516b25a756a8a90ce666092e585a72
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 3a217ebd1b6450c76ebf25ad5154293566d955f6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431086"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876001"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba a cége számára
 
@@ -429,4 +428,4 @@ Ez az oktatóanyag bemutatta, hogyan ágyazhat be Power BI-tartalmat egy alkalma
 > [!div class="nextstepaction"]
 >[Beágyazás az ügyfelek számára](embed-sample-for-customers.md)
 
-Ha további kérdései vannak, [forduljon a Power BI közösségéhez](http://community.powerbi.com/).
+Ha további kérdései vannak, [forduljon a Power BI közösségéhez](https://community.powerbi.com/).

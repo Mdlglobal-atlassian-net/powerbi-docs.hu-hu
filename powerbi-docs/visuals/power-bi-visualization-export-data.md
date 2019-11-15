@@ -2,7 +2,6 @@
 title: Adatok exportálása egy Power BI-vizualizációból
 description: Adatok exportálása jelentésvizualizációból és irányítópult-vizualizációból, és azok megtekintése Excelben.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
@@ -11,16 +10,16 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: be85769d8ae2340843a4ebdeb5c88ffc2ca86920
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 6ee1b0aa9ff6e3b0668d208775cbea50534b1572
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431094"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880873"
 ---
 # <a name="export-data-from-visualizations"></a>Adatok exportálása vizualizációkból
 
-Ha szeretné megtekinteni a Power BI által a vizualizáció létrehozásához használt adatokat, [megjelenítheti az adatokat a Power BI-ban](service-reports-show-data.md). Ezeket az adatokat *.xlsx*- vagy *.csv*-fájlként az Excelbe is exportálhatja. Az adatexportálási lehetőség használatához Pro- vagy Premium-licenc szükséges, valamint engedélyek az adathalmazhoz és a jelentésekhez.
+Ha szeretné megtekinteni a Power BI által a vizualizáció létrehozásához használt adatokat, [megjelenítheti az adatokat a Power BI-ban](service-reports-show-data.md). Ezeket az adatokat *.xlsx*- vagy *.csv*-fájlként az Excelbe is exportálhatja. Az adatexportálási lehetőség használatához Pro- vagy Premium-licenc szükséges, valamint engedélyek az adathalmazhoz és a jelentésekhez. <!--If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.-->
 
 Tekintse meg, ahogyan Will exportálja az adatokat az egyik jelentésében található vizualizációkból, menti őket *.xlsx*-fájlként, és megnyitja a fájlt az Excelben. Ezután a videó alatt látható részletes utasításokat követve próbálkozzon meg a feladat elvégzésével.
 
@@ -152,7 +151,7 @@ Fontos megjegyezni, hogy amennyiben a Power BI felügyeleti portál beállítás
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 Ezek a korlátozások és szempontok a Power BI Desktopra és a Power BI szolgáltatásra is vonatkoznak, a Power BI Prót és Premiumot is beleértve.
 
-- Adatok vizualizációból való exportálásához rendelkeznie kell [a mögöttes adathalmazra érvényes Összeállítási engedéllyel](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
+- Adatok vizualizációból való exportálásához rendelkeznie kell [a mögöttes adathalmazra érvényes Összeállítási engedéllyel](https://docs.microsoft.com/power-bi/service-datasets-build-permissions).
 
 -  A **Power BI Desktop** és a **Power BI szolgáltatás** által egy **importálási módú jelentésből** egy *.csv*-fájlba exportálható sorok maximális száma 30 000.
 
@@ -160,17 +159,17 @@ Ezek a korlátozások és szempontok a Power BI Desktopra és a Power BI szolgá
 
 - A *mögöttes adatokat* használó exportálás nem működik a következő esetekben:
 
-  - Az adatforrás élő Analysis Services-kapcsolat.
+  - az adatforrás egy élő Azure Analysis Services-kapcsolat vagy egy élő SQL Server Analysis Services-kapcsolat.
 
-  - A verzió 2016-nál régebbi.
+  - a verzió a 2016-osnál régebbi.
 
-  - A modell táblái nem rendelkeznek egyedi kulccsal.
+  - a modell táblái nem rendelkeznek egyedi kulccsal.
     
-  -  Egy rendszergazda vagy jelentéstervező letiltotta ezt a funkciót.
+  -  egy rendszergazda vagy jelentéstervező letiltotta ezt a funkciót.
 
 - A *mögöttes adatokat* használó exportálás nem működik, ha engedélyezi az *Adatot nem tartalmazó elemek megjelenítése* lehetőséget a Power BI által exportált vizualizációra.
 
-- DirectQuery használata esetén az adatok Power BI által maximálisan exportálható mennyisége 16 MB (tömörítés nélkül). Nem kívánt eredményként előfordulhat, hogy a sorok maximálás számánál kevesebbet exportál. Ez a következő esetekben valószínű:
+- DirectQuery használata esetén a Power BI által maximálisan exportálható adatmennyiség 16 MB (tömörítés nélkül). Nem kívánt eredményként előfordulhat, hogy a sorok maximálás számánál kevesebbet exportál. Ez a következő esetekben valószínű:
 
     - Sok oszlop van.
 
@@ -196,4 +195,4 @@ Ezek a korlátozások és szempontok a Power BI Desktopra és a Power BI szolgá
 
 - A Power BI-rendszergazdák letilthatják az adatok exportálását.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
