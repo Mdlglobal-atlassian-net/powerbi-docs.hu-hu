@@ -18,3 +18,6 @@
         - name: Jelentéskészítő kiszolgáló
           tocHref: /power-bi/report-server/
           topicHref: /power-bi/report-server/get-started
+        - name: Útmutató
+          tocHref: /power-bi/guidance/
+          topicHref: /power-bi/guidance/index
