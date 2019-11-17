@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 7d45b63d3cd97185ce9be9e0592565a491cf195f
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: a6595389a95cbf434bc9deb9f1560f6157910ceb
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655033"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060994"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
 Ezen az oldalon a **Power BI szolgáltatás** ismert problémáit és új funkcióit ismertetjük. Az újdonságokra vonatkozó kapcsolódó információk:
@@ -30,11 +30,43 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="may-2019"></a>2019. május
-* [Egyéni Navigálás](service-create-distribute-apps.md) Power BI-alkalmazásokhoz.
-* További mellékletek (PPTX, XLSX, DOCX, CSV, XML) érhetők el a lapszámozott jelentésekben lévő e-mail-feliratkozásokhoz.
+### <a name="october-2019"></a>2019. október
+* Új Microsoft Flow-művelet Power BI-adathalmazok frissítéséhez.
+* [Partnerlista](https://powerbi.microsoft.com/en-us/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) jelentésekhez és irányítópultokhoz a Power BI szolgáltatásban.
 
 ## <a name="previous-months-2019"></a>Korábbi hónapok (2019)
+### <a name="september-2019"></a>2019. szeptember
+* A [sablonalkalmazások](service-template-apps-overview.md) kapcsolódási konfigurációjának frissítései.
+
+### <a name="august-2019"></a>2019. augusztus
+* Új Power BI Premium-kapacitásbeállítások.
+* [Egyéni védjegyzés](https://powerbi.microsoft.com/en-us/blog/announcing-custom-branding-for-your-organization/) a szervezet számára.
+* Összesített adatexportálás összeállítási engedéllyel.
+* Az [oldalakra osztott jelentések](paginated-reports-report-builder-power-bi.md) URL-paramétereinek támogatása.
+* Havi e-mail-előfizetések támogatása. 
+
+### <a name="july-2019"></a>2019. július
+* A nem prémium szintű adathalmazok támogatása [oldalakra osztott jelentések](paginated-reports-report-builder-power-bi.md) esetében.
+* A Power BI [aggregációinak](desktop-aggregations.md) általános elérhetősége.
+* Frissítési értesítések küldése másoknak.
+* [Tesztelőeszköz](https://powerbi.microsoft.com/en-us/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) Power BI Premium-kapacitásokhoz.
+* A [szolgáltatás-rendelkezésreállási értesítések](https://powerbi.microsoft.com/en-us/blog/power-bi-introduces-service-availability-notifications/) nyilvános előzetes verziója.
+* A Power BI-jelentések [új megjelenésének](https://powerbi.microsoft.com/en-us/blog/introducing-the-new-look-for-power-bi-service/) nyilvános előzetes verziója.
+* Új Power BI-régió Dél-Afrikában.
+
+### <a name="june-2019"></a>2019. június
+* A [megosztott és minősített adathalmazok](service-datasets-across-workspaces.md) nyilvános előzetes verziója.
+* A [Premium Capacity Metrics alkalmazásban](service-admin-premium-monitor-capacity.md) elérhető összes AI-metrika.
+* A Power BI-[sablonalkalmazások](service-template-apps-overview.md) általános elérhetősége.
+* A [oldalakra osztott jelentések](paginated-reports-report-builder-power-bi.md) nyilvános előzetes verziója a Power BI-ban.
+* A Power BI Premiumhoz készült Bring Your Own Key ([BYOK](service-encryption-byok.md)) nyilvános előzetes verziója.
+* Megtekintői szerepkör a [munkaterületek új felületéhez](service-new-workspaces.md).
+
+### <a name="may-2019"></a>2019. május
+* [Egyéni Navigálás](service-create-distribute-apps.md) Power BI-alkalmazásokhoz.
+* További mellékletek (PPTX, XLSX, DOCX, CSV, XML) érhetők el a lapszámozott jelentésekben lévő e-mail-feliratkozásokhoz.
+* [Megjegyzések hozzáfűzése](https://powerbi.microsoft.com/en-us/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) Power BI-jelentésekhez a szolgáltatásban.
+
 ### <a name="april-2019"></a>2019. április
 * A [Power BI-adatfolyamok](service-dataflows-overview.md) általános elérhetősége.
 * Az új munkaterületek általános elérhetősége.
@@ -731,7 +763,7 @@ További információt a [blogunkban](http://blogs.msdn.com/b/powerbi/archive/20
 * Javult a OneDrive-val történő frissítés megbízhatósága.  Megoldást találtunk azokra az esetekre, amikor a OneDrive-munkafüzetek nem frissültek.
 
 ## <a name="next-steps"></a>Következő lépések
-[Mi az a Power BI?](power-bi-overview.md)  
+[Mi az a Power BI?](fundamentals/power-bi-overview.md)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 

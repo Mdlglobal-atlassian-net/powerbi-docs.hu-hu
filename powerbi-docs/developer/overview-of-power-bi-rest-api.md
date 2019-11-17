@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: cc180c2e9d5275172ad9da75c502ef53d9d7ee66
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: d52dcb640c0140baad2d3d5d20a1afd56aac7c4d
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307618"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73430683"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Mire használhatják a fejlesztők a Power BI API-t?
 
@@ -32,7 +32,7 @@ A Power BI REST API-val kezelési feladatokat is végezhet olyan Power BI-objekt
 | Hitelesítés a Power BI-ban. | [Hitelesítés a Power BI-ban ](get-azuread-access-token.md) |
 
 > [!NOTE]
-> A Power BI API-k továbbra is csoportokként hivatkoznak az alkalmazás-munkaterületekre. Bármely csoportokra való utalás alkalmazás-munkaterületek használatát jelöli.
+> A Power BI API-k továbbra is csoportokként hivatkoznak a munkaterületekre. Minden csoportokra való hivatkozás munkaterületek használatát jelöli.
 
 ## <a name="api-developer-tools"></a>API-fejlesztői eszközök
 

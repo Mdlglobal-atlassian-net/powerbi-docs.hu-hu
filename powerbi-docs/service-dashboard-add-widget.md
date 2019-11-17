@@ -2,7 +2,6 @@
 title: Képek, videók és egyéb elemek hozzáadása az irányítópulthoz
 description: Kép, videó, szövegdoboz, webes kód és streamelési adatok csempéjének hozzáadása az irányítópulthoz a Csempe hozzáadása widget használatával – Dokumentáció
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 042fee1a55728884b3f4d5792a82973b3ea9fcc4
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: a012320a12d2516cb24dc92f2472e3c49ce9081e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832550"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853520"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Képek, videók és egyéb elemek hozzáadása az irányítópulthoz
 
@@ -232,7 +231,7 @@ A jelentés vagy irányítópult címeként bármilyen HTML-tartalmat beilleszth
 ## <a name="edit-a-tile"></a>Csempe szerkesztése
 Egy meglévő csempe módosítása:
 
-1. Mutasson a csempe jobb felső sarkára, és kattintson a három pontra (...).
+1. Mutasson a csempe jobb felső sarkára, és válassza a **További lehetőségek** (...) elemet.
    
     ![csempe kiválasztása három pont](media/service-dashboard-add-widget/pbi_ellipses.png)
 2. Válassza a **Részletek szerkesztése** lehetőséget a **Csempe részletei** ablak megnyitásához, és hajtsa végre a módosításokat.
@@ -246,5 +245,5 @@ Egy meglévő csempe módosítása:
 ## <a name="next-steps"></a>Következő lépések
 [Irányítópultcsempék Power BI-tervezők számára – bevezetés](service-dashboard-tiles.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 

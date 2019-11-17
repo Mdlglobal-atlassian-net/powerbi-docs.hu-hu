@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 9344a1a3dc4f682925da900cde8accfead783f88
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f839c8d4208dd63cab411ef5dae064fdb3d2fa95
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61272244"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429439"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded migrálási eszköz
 
@@ -132,7 +132,7 @@ A rendszer automatikusan létrehozza az elérési útvonalat. Ezt igény szerint
 
 #### <a name="upload-plan"></a>Feltöltési terv
 
-Itt adhatja meg a Power BI szolgáltatásban létrehozandó Alkalmazás-munkaterületekhez használt előtagot. Az előtagot a munkaterület korábban az Azure-ban használt GUID azonosítója követi majd.
+Itt adhatja meg a Power BI szolgáltatásban létrehozandó munkaterületekhez használt előtagot. Az előtagot a munkaterület korábban az Azure-ban használt GUID azonosítója követi majd.
 
 ![Feltöltési terv](media/migrate-tool/migrate-tool-upload-plan.png)
 
@@ -167,21 +167,21 @@ A letöltés befejeztével lépjen a **Csoportok létrehozása** lapra.
 
 ## <a name="step-3-create-groups"></a>3\. lépés: Csoportok létrehozása
 
-Miután letöltötte az elérhető jelentéseket, átléphet a **Csoportok létrehozása** lapra. Ez a lap hozza létre az alkalmazás-munkaterületeket a Power BI szolgáltatásban az összeállított migrálási terv alapján. Az alkalmazás-munkaterületek a **Migrálás elemzése és tervezése** szakasz **Feltöltés** lapján megadott név alatt jönnek létre.
+Miután letöltötte az elérhető jelentéseket, átléphet a **Csoportok létrehozása** lapra. Ez a lap hozza létre a munkaterületeket a Power BI szolgáltatásban az összeállított migrálási terv alapján. A munkaterületek a **Migrálás elemzése és tervezése** szakasz **Feltöltés** lapján megadott név alatt jönnek létre.
 
 ![Csoportok létrehozása](media/migrate-tool/migrate-tool-create-groups.png)
 
-Az alkalmazás-munkaterületek létrehozásához kattintson a **Kijelölt csoportok létrehozása** vagy **Az összes hiányzó csoport létrehozása** gombra.
+A munkaterületek létrehozásához kattintson a **Kijelölt csoportok létrehozása** vagy **Az összes hiányzó csoport létrehozása** gombra.
 
-Bármelyik gombra kattint is, a rendszer megkéri majd, hogy jelentkezzen be. *Abban a Power BI szolgáltatásban lévő fiókját kell használnia, amelyikben az alkalmazás-munkaterületeket létre kívánja hozni.*
+Bármelyik gombra kattint is, a rendszer megkéri majd, hogy jelentkezzen be. *Abban a Power BI szolgáltatásban lévő fiókját kell használnia, amelyikben a munkaterületeket létre kívánja hozni.*
 
 ![Csoportos bejelentkezés létrehozása](media/migrate-tool/migrate-tool-create-group-sign-in.png)
 
-Ez létrehozza az alkalmazás-munkaterületet a Power BI szolgáltatásban, de nem tölti fel a jelentéseket az alkalmazás-munkaterületbe.
+Ez létrehozza a munkaterületet a Power BI szolgáltatásban, de nem tölti fel a jelentéseket a munkaterületbe.
 
-Az alkalmazás-munkaterület létrejöttének ellenőrzéséhez jelentkezzen be a Power BI-ba, és bizonyosodjon meg róla, hogy a munkaterület létezik. Láthatja majd, hogy a munkaterület üres.
+A munkaterület létrejöttének ellenőrzéséhez jelentkezzen be a Power BI-ba, és bizonyosodjon meg róla, hogy a munkaterület létezik. Láthatja majd, hogy a munkaterület üres.
 
-![Alkalmazás-munkaterület](media/migrate-tool/migrate-tool-app-workspace.png)
+![munkaterület](media/migrate-tool/migrate-tool-app-workspace.png)
 
 A munkaterület létrehozását követően továbbléphet a **Feltöltés** lapra.
 
@@ -235,9 +235,9 @@ A hibás elemnél megváltoztathatjuk a SaaSTargetReportName nevét.
 
 Ezután újra megnyithatjuk a tervet a migrálási eszközben, és feltölthetjük a meghiúsult jelentést.
 
-A Power BI-ba visszatérve láthatjuk, hogy a jelentések és az adatkészletek fel lettek töltve az alkalmazás-munkaterületre.
+A Power BI-ba visszatérve láthatjuk, hogy a jelentések és az adathalmazok fel lettek töltve a munkaterületre.
 
-![Alkalmazás munkaterületének feltöltése](media/migrate-tool/migrate-tool-upload-app-workspace.png)
+![Munkaterület feltöltése](media/migrate-tool/migrate-tool-upload-app-workspace.png)
 
 <a name="upload-local-file"></a>
 
@@ -264,7 +264,7 @@ Ezután frissítheti az adatkészlet kapcsolati sztringjét a Power BI szolgált
 
 ## <a name="embedding"></a>Beágyazás
 
-Most, hogy migrálta a jelentéseket a Power BI Embedded Azure-szolgáltatásból a Power BI szolgáltatásba, frissítheti az alkalmazást, és elkezdheti beágyazni a jelentéseket az alkalmazás-munkaterületbe.
+Most, hogy migrálta a jelentéseket a Power BI Embedded Azure-szolgáltatásból a Power BI szolgáltatásba, frissítheti az alkalmazást, és elkezdheti beágyazni a jelentéseket a munkaterületbe.
 
 További információkért lásd: [Power BI Embedded-munkaterületcsoport tartalmainak migrálása a Power BI-ba](migrate-from-powerbi-embedded.md).
 

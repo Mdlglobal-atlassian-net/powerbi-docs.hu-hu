@@ -2,71 +2,97 @@
 title: Egyéni oszlop hozzáadása a Power BI Desktopban
 description: Új egyéni oszlop gyors létrehozása a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5633370259662141296550aa3d5d2343ac4fedaa
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 443053bc973005d3e2a655b1222d049a4251e7d7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408555"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878880"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Egyéni oszlop hozzáadása a Power BI Desktopban
-A **Power BI Desktop** **Lekérdezésszerkesztőjével** egyszerűen adhat hozzá új egyéni adatoszlopokat a modellekhez. Ha egyéni oszlopokat szeretne létrehozni vagy átnevezni, egyszerű gombműveletekkel az egyéni oszlopot definiáló [M képleteket](https://msdn.microsoft.com/library/mt270235.aspx) hozhat létre. Az M képlet egy [átfogó függvényreferencia-tartalomkészlettel](https://msdn.microsoft.com/library/mt779182.aspx) rendelkezik. 
 
-![](media/desktop-add-custom-column/add-custom-column_01.png)
+A Power BI Desktop Lekérdezésszerkesztőjével egyszerűen adhat hozzá új egyéni adatoszlopokat a modellekhez. A Lekérdezésszerkesztővel hozhat létre és nevezhet át egyéni oszlopot az egyéni oszlopot definiáló, [M-képleteket használó PowerQuery-lekérdezések](https://docs.microsoft.com/powerquery-m/quick-tour-of-the-power-query-m-formula-language) létrehozásához. Az M-képleteket használó PowerQuery-lekérdezések [átfogó függvényreferencia-tartalomkészlettel](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference) rendelkeznek. 
 
-Az egyéni oszlopok létrehozása is a **Lekérdezésszerkesztőben** létrehozott lekérdezés egy **Alkalmazott lépése**, ami azt jelenti, hogy bármikor cserélhetők, előre-hátra mozgathatók vagy módosíthatók.
+Amikor egyéni oszlopot hoz létre a Lekérdezésszerkesztőben, a Power BI Desktop ezt **Alkalmazott lépésként** vesz fel a **Lekérdezés beállításaiban**. Ez bármikor megváltoztatható, áthelyezhető és módosítható.
 
-## <a name="use-query-editor-to-add-a-new-custom-column"></a>Új egyéni oszlop hozzáadása a Lekérdezésszerkesztővel
-Új egyéni oszlop létrehozásához indítsa el a **Lekérdezésszerkesztőt**. Ehhez kattintson a **Power BI Desktop** **Kezdőlap** szalagján a **Lekérdezések szerkesztése** gombra.
+![Egyéni oszlop hozzáadása oldal](media/desktop-add-custom-column/add-custom-column_01.png)
 
-![](media/desktop-add-custom-column/add-column-from-example_02.png)
+## <a name="use-query-editor-to-add-a-custom-column"></a>Egyéni oszlop hozzáadása a Lekérdezésszerkesztő használatával
 
-Miután elindította a **Lekérdezésszerkesztőt** és betöltött néhány adatot, egyéni oszlop hozzáadásához válassza a szalag **Oszlop hozzáadása** szakaszát, majd az **Egyéni oszlop lehetőséget**.
+Egy egyéni oszlop létrehozásának első lépései a következők:
 
-![](media/desktop-add-custom-column/add-custom-column_02.png)
+1. Indítsa el a Power BI Desktopot, és töltsön be adatokat.
 
-Ekkor megnyílik az **Egyéni oszlop hozzáadása** ablak, amelyet a következő szakaszban ismertetünk.
+2. A menüszalag **Kezdőlapján** válassza a **Lekérdezések szerkesztése** lehetőséget, majd a **Lekérdezések szerkesztése** menüpontot.
+
+   ![A Lekérdezések szerkesztése lehetőség kiválasztása](media/desktop-add-custom-column/add-column-from-example_02.png)
+
+   Megnyílik a **Lekérdezésszerkesztő** ablaka. 
+
+2. A menüszalag **Oszlop hozzáadása** lapján válassza az **Egyéni oszlop** lehetőséget.
+
+   ![Az Egyéni oszlop lehetőség kiválasztása](media/desktop-add-custom-column/add-custom-column_02.png)
+
+   Megnyílik az **Egyéni oszlop hozzáadása** ablak.
 
 ## <a name="the-add-custom-column-window"></a>Az Egyéni oszlop hozzáadása ablak
-Az **Egyéni oszlop hozzáadása** ablak jobb oldali panelén az elérhető mezők listája látható, felül az egyéni oszlop nevével (ha át szeretné nevezni, csak írja be az új nevet a szövegmezőbe), valamint az új egyéni oszlopot definiáló [**M** képlettel](https://msdn.microsoft.com/library/mt779182.aspx), amelyet a jobb oldali mezők beillesztésével, operátorok hozzáadásával és egyéb módszerekkel hozhat létre (vagy írhat meg). 
 
-![](media/desktop-add-custom-column/add-custom-column_03.png)
+Az **Egyéni oszlop hozzáadása** ablak funkciói a következők: 
+- Tartalmazza az elérhető oszlopok listáját a jobb oldali **Elérhető oszlopok:** listában.
+
+- Az egyéni oszlop kezdeti neve az **Új oszlop neve** mezőben látható. Az oszlop nevét megváltoztathatja.
+
+- [M-képletet használó PowerQuery-lekérdezések](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference) az **Egyéni oszlop képlete** mezőben. Ezeket a lekérdezéseket annak a képletnek a megírásával hozza létre, amellyel az új oszlopot definiálja. 
+
+   ![Egyéni oszlop hozzáadása oldal](media/desktop-add-custom-column/add-custom-column_03.png)
 
 ## <a name="create-formulas-for-your-custom-column"></a>Képletek létrehozása az egyéni oszlopokhoz
-Ha kijelöl egy mezőt a jobb oldali **Elérhető oszlopok:** listában, a **<< Beszúrás** gombbal adhatja hozzá az egyéni oszlop képletéhez. A hozzáadáshoz az is elég, ha a listában duplán az oszlop nevére kattint.
 
-A képlet beírása és az oszlop létrehozása során az ablak alján valós időben láthatja (a beírás közben), hogy a rendszer észlel-e szintaxishibát. Ha minden rendben, egy zöld pipa látható.
+1. Jelöljön ki egy oszlopot a jobb oldali **Elérhető oszlopok:** listában. Ezt a lista alatti **Beszúrás** gombbal szúrhatja be az egyéni oszlop képletébe. Oszlopot úgy is beszúrhat, hogy duplán kattint rá a listában.
 
-![](media/desktop-add-custom-column/add-custom-column_04.png)
+2. A képlet bevitele és az oszlop elkészítése során tartsa szemmel az **Egyéni oszlop hozzáadása** ablak alján lévő kijelzőt. 
 
-Ha a szintaxis valamilyen hibát tartalmaz, egy sárga figyelmeztető ikon jelenik meg az észlelt hibával együtt, valamint egy hivatkozás, amely a kurzort a hiba helyére irányítja (a képletben).
+   Ha nincs hiba, akkor itt egy zöld pipa és a *Nem észlelhető szintaktikai hiba* üzenet látható.
 
-![](media/desktop-add-custom-column/add-custom-column_05.png)
+   ![Sikeres szintaktikai ellenőrzés az Egyéni oszlop hozzáadása oldalon](media/desktop-add-custom-column/add-custom-column_04.png)
 
-Az **OK** gombra kattintva a rendszer hozzáadja az egyéni oszlopot a modellhez, és az **Egyéni oszlop hozzáadva** lépéssel kiegészíti a lekérdezés **Alkalmazott lépéseit**.
+   Szintaktikai hiba esetén sárga figyelmeztető ikon jelenik meg a hiba képletbeli helyére mutató hivatkozással.
 
-![](media/desktop-add-custom-column/add-custom-column_06.png)
+   ![Hiba az Egyéni oszlop hozzáadása oldalon](media/desktop-add-custom-column/add-custom-column_05.png)
 
-Ha duplán az **Egyéni oszlop hozzáadva** lépésre kattint az **Alkalmazott lépések** panelen, újra megnyílik az **Egyéni oszlop hozzáadása** ablak, amelyben az egyéni oszlop létrehozott képlete már be van töltve, és szükség esetén azonnal módosítható.
+3. Kattintson az **OK** gombra. 
 
-## <a name="using-the-advanced-editor-for-custom-columns"></a>A Speciális szerkesztő használata egyéni oszlopokhoz
-A **Speciális szerkesztővel** is létrehozhat egyéni oszlopot (és módosíthatja a lekérdezés bármely lépését). A **Lekérdezésszerkesztőben** válassza a **Nézet** lapot, majd válassza a **Speciális szerkesztő** lehetőséget a **Speciális szerkesztő** megjelenítéséhez.
+   A Power BI Desktop felveszi az egyéni oszlopot a modellbe, és a **Lekérdezés beállításaiban** felveszi az **Egyéni hozzáadva** lépést az **Alkalmazott lépések** listájára.
 
-![](media/desktop-add-custom-column/add-custom-column_07.png)
+   ![Egyéni oszlop hozzáadása a Lekérdezés beállításaiban](media/desktop-add-custom-column/add-custom-column_06.png)
 
-A **Speciális szerkesztő** teljes körű vezérlését biztosít a lekérdezés felett.
+4. Az egyéni oszlop módosításához kattintson duplán az **Egyéni hozzáadva** lépésre az **Alkalmazott lépések** listájában. 
 
+   Megjelenik az **Egyéni oszlop hozzáadása** ablak a létrehozott egyéni oszlopképlettel.
+
+## <a name="use-the-advanced-editor-for-custom-columns"></a>A Speciális szerkesztő használata egyéni oszlopokhoz
+
+A lekérdezés létrehozása után a **Speciális szerkesztő** használatával is módosíthatja a lekérdezés bármelyik lépését. Ehhez kövesse az alábbi lépéseket:
+
+1. A **Lekérdezésszerkesztő** ablakban válassza a menüszalag **Nézet** lapját. 
+
+2. Válassza az **Advanded Editor** (Speciális szerkesztő) lehetőséget.
+
+   Megnyílik a **Speciális szerkesztő** oldal, amelyen tetszőlegesen módosíthatja a lekérdezést. 
+
+   ![A Speciális szerkesztő oldal](media/desktop-add-custom-column/add-custom-column_07.png)
+
+   
 ## <a name="next-steps"></a>Következő lépések
-Egyéb módokon is létrehozhat egyéni oszlopot, például a **Lekérdezésszerkesztőben** megadott példák alapján. A következő cikkben további információt talál az egyéni oszlopok példákból való létrehozásáról:
 
-* [Oszlop hozzáadása példából a Power BI Desktopban](desktop-add-column-from-example.md)
-* [Power Query M-referencia](/powerquery-m/power-query-m-reference)  
+- Egyéni oszlopot más módokon is létrehozhat, például a Lekérdezésszerkesztőben megadott példák alapján. További információ: [Oszlop hozzáadása példából a Power BI Desktopban](desktop-add-column-from-example.md).
+
+- Power Query M-referenciákat a [Power Query M-függvények referenciája](/powerquery-m/power-query-m-function-reference) tartalmaz.
 

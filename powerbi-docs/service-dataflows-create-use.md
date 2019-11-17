@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 38ecb04b45ef45a8345397c5b9ec3e89d9dfd232
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61143938"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432056"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Adatfolyamok létrehozása és használata a Power BI-ban
 
 A **Power BI-ban** elérhető fejlett adat-előkészítéssel létrehozhatja az adatok adatfolyamnak nevezett gyűjteményét, amelyet aztán különböző forrásokból származó üzleti adatokhoz való csatlakozásra, azok tisztítására, átalakításra, és Power BI-tárolóba való betöltésre használhat.
 
-Az **adatfolyamok** a táblákhoz hasonló *entitásokból* álló gyűjtemények, amelyek a Power BI szolgáltatáson belüli alkalmazás-munkaterületekben vannak létrehozva és felügyelve. Adatfolyamában entitásokat vehet fel és kezelhet, valamint kezelni tudja az adatfrissítés ütemezését, közvetlenül arról a munkaterületről, amelyben az adatfolyam létre lett hozva.
+Az **adatfolyamok** a táblákhoz hasonló *entitásokból* álló gyűjtemények, amelyek a Power BI szolgáltatáson belüli munkaterületekben vannak létrehozva és felügyelve. Adatfolyamában entitásokat vehet fel és kezelhet, valamint kezelni tudja az adatfrissítés ütemezését, közvetlenül arról a munkaterületről, amelyben az adatfolyam létre lett hozva.
 
 Miután létrehoz egy adatfolyamot, a **Power BI Desktop** és a **Power BI szolgáltatás** használatával olyan adathalmazokat, jelentéseket és alkalmazásokat hozhat létre, amelyek a Power BI-adatfolyamokban elhelyezett adatokon alapulnak, ezáltal betekintést nyújtanak üzleti tevékenységeibe.
 
@@ -36,13 +36,13 @@ Egy adatfolyam használata három fő lépésből áll:
 A következő fejezetek sorra veszik ezeket a lépéseket, és ismertetik az egyes lépések végrehajtásához kínált eszközöket. Kezdjünk hozzá.
 
 ## <a name="creating-a-dataflow"></a>Adatfolyam létrehozása
-Adatfolyam létrehozásához nyissa meg a Power BI szolgáltatást egy böngészőben, majd válasszon egy **alkalmazás-munkaterületet** a bal oldali navigációs panelen (a *saját munkaterületen* nem érhetők el adatfolyamok a Power BI szolgáltatásban), ahogy az alábbi ábrán is látható. Új munkaterületet is létrehozhat, amelyben aztán létrehozhatja új adatfolyamát. 
+Adatfolyam létrehozásához nyissa meg a Power BI szolgáltatást egy böngészőben, majd válasszon egy **munkaterületet** a bal oldali navigációs panelen (a *saját munkaterületen* nem érhetők el adatfolyamok a Power BI szolgáltatásban), ahogy az alábbi ábrán is látható. Új munkaterületet is létrehozhat, amelyben aztán létrehozhatja új adatfolyamát. 
 
 ![Adatfolyam létrehozása a Power BI-ban](media/service-dataflows-create-use/dataflows-create-use_02a.png)
 
-Miután létrehozott egy **alkalmazás-munkaterületet**, amelyben létrehozhat egy adatfolyamot, a vászon jobb felső részén megjelenik a **+ Létrehozás** gomb. Válassza a **+ Létrehozás** gombot, majd a legördülő lista **Adatfolyam** elemét. 
+Miután létrehozott egy **munkaterületet**, amelyben létrehozhat egy adatfolyamot, a vászon jobb felső részén megjelenik a **+ Létrehozás** gomb. Válassza a **+ Létrehozás** gombot, majd a legördülő lista **Adatfolyam** elemét. 
 
-Fontos tudni, hogy minden adatfolyamnak csak *egy tulajdonosa* lehet: az, aki létrehozza. Az adatfolyamot csak a tulajdonosa szerkesztheti. Az **alkalmazás-munkaterületnek** azok a felhasználói, akik olvasási vagy írási jogosultsággal rendelkeznek arra az alkalmazás-munkaterületre, ahol az adatfolyam létre lett hozva, a **Power BI Desktopon** belül csatlakozhatnak az adatfolyamhoz, a cikk későbbi részében leírt módon.
+Fontos tudni, hogy minden adatfolyamnak csak *egy tulajdonosa* lehet: az, aki létrehozza. Az adatfolyamot csak a tulajdonosa szerkesztheti. A **munkaterületnek** azok a felhasználói, akik olvasási vagy írási jogosultsággal rendelkeznek arra a munkaterületre, ahol az adatfolyam létre lett hozva, a **Power BI Desktopon** belül csatlakozhatnak az adatfolyamhoz, a cikk későbbi részében leírt módon.
 
 ![Az adatfolyam létrehozására szolgáló + Létrehozás gomb a Power BI szolgáltatásban](media/service-dataflows-create-use/dataflows-create-use_03a.png)
 
@@ -111,7 +111,7 @@ Nagyszerű! Jöhet a következő lépés, az adatforrások frissítési gyakoris
 
 Miután az adatfolyam mentve lett, érdemes ütemezni az összes csatlakoztatott adatforrás frissítési gyakoriságát.
 
-A Power BI-adatfolyamok a Power BI adatfrissítési folyamatával tartják naprakészen az adatokat. A **Power BI szolgáltatásban**, az **alkalmazás-munkaterület** szakasz több részből áll, ahol többféle, például adatfolyamokkal kapcsolatos információ listázható az alábbi ábrán látható módon.
+A Power BI-adatfolyamok a Power BI adatfrissítési folyamatával tartják naprakészen az adatokat. A **Power BI szolgáltatásban**, a **munkaterület** szakasz több részből áll, ahol többféle, például adatfolyamokkal kapcsolatos információ listázható az alábbi ábrán látható módon.
 
 ![Adatfolyamok kezelése a Power BI szolgáltatásban](media/service-dataflows-create-use/dataflows-create-use_12.png)
 
@@ -134,7 +134,7 @@ Az adatfolyamhoz a Power BI Desktopban az **Adatok betöltése > Power BI > Powe
 
 ![Csatlakozás adatfolyamokhoz a Power BI Desktopból](media/service-dataflows-create-use/dataflows-create-use_15.png)
 
-Innen navigáljon arra az **alkalmazás-munkaterületre**, ahol adatfolyamát mentette, jelölje ki az adatfolyamot, majd válassza ki a létrehozott entitásokat a listából.
+Innen navigáljon arra a **munkaterületre**, ahol adatfolyamát mentette, jelölje ki az adatfolyamot, majd válassza ki a létrehozott entitásokat a listából.
 
 Az ablak tetején található **keresősáv** használatával is gyorsan megtalálhatja adatfolyama vagy az entitások nevét a számos adatfolyam-entitás között.
 

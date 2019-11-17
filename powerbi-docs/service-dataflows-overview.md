@@ -2,7 +2,6 @@
 title: Adatfolyamok a Power BI-ban
 description: Adatfolyamok működése a Power BI-ban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 55571cda4558b5dd9ba28f757f6e11ad4b45f939
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 28be15b1f62f410c14faaa5d3e8c36060596c466
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136371"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872609"
 ---
 # <a name="self-service-data-prep-in-power-bi"></a>Önkiszolgáló adat-előkészítés a Power BI-ban
 
@@ -25,7 +24,7 @@ Az adatmennyiség növekedésével egyre nagyobb kihívássá válik az adatok m
 
 A Power BI **adatfolyamokkal** segít szervezeteknek egységesíteni a különféle forrásokból származó adatokat, valamint előkészíteni azokat modellezésre. Az elemzők könnyen, jól ismert és önkiszolgáló eszközökkel hozhatnak létre adatfolyamokat. Az adatfolyamokkal big data típusú adatokat tölthet be, alakíthat át, integrálhat és egészíthet ki. Ehhez adatforrás-kapcsolatokat, ETL logikát, frissítésütemezést és egyéb funkciókat definiálhat. Az adatfolyamok új modellalapú számítási motorja emellett könnyebben kezelhetővé, determinisztikusabbá és egyszerűbbé teszi az adat-előkészítést adatelemzők és jelentéskészítők számára. A táblázatok érintett képleteinek újraszámításához hasonlóan az adatfolyamok is az Ön nevében kezelik egy entitás vagy adatelem módosításait, valamint automatizálják a frissítéseket és feleslegessé teszik az időigényes logikai ellenőrzéseket. Az adatfolyamokkal a korábban adatszakértők felügyeletét (és több órát vagy akár napokat is) igénylő feladatok mostantól néhány kattintással kezelhetők elemzők és jelentéskészítők által. 
 
-Az adatok entitásként vannak tárolva [a **Common Data Service-ben**](https://docs.microsoft.com/powerapps/common-data-model/overview), az Azure Data Lake Storage Gen2 részeként. Adatfolyamokat a Power BI szolgáltatással, alkalmazás-munkaterületeken hozhat létre és kezelhet.  
+Az adatok entitásként vannak tárolva [a **Common Data Service-ben**](https://docs.microsoft.com/powerapps/common-data-model/overview), az Azure Data Lake Storage Gen2 részeként. Adatfolyamokat a Power BI szolgáltatással, munkaterületeken hozhat létre és kezelhet.  
  
 Az **adatfolyamok** a **Common Data Service**, a Microsoft által kiadott szabványosított, moduláris, kiterjeszthető adatséma-gyűjtemény használatához lettek kialakítva, amellyel könnyebben fejleszthet, használhat és elemezhet adatokat. Ezzel a modellel szinte terhelés nélkül válthat adatforrásokról Power BI-irányítópultokra.
 

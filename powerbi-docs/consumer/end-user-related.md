@@ -12,14 +12,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b52a858d10bb7f508d39e2d4e9678e48e01394f5
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 10fcb7420c261379d596666589a0f6707cf70160
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100223"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019447"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Kapcsolódó tartalom megtekintése a Power BI szolgáltatásban
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 A **Kapcsolódó tartalom** ablaktáblában megtekintheti, hogyan vannak összekapcsolva a különböző Power BI-tartalmak – irányítópultok, jelentések és adatkészletek. A **Kapcsolódó tartalom** panel indítási területként is funkcionál műveletek elvégzéséhez. Innen például megnyithat irányítópultokat és jelentéseket, elemzéseket készíthet, elemezheti az adatokat az Excelben, és további műveleteket végezhet.  
 
 A Power BI-ban a jelentések adatkészletekre épülnek, a jelentések vizualizációit irányítópultokra lehet tűzni, és az irányítópultok vizualizációi hivatkoznak a jelentésekre. De hogyan tudhatja meg, hogy a Marketing jelentésének a vizualizációit melyik irányítópultokra tűzték ki? És hogyan találhatja meg ezeket az irányítópultokat? A Beszerzés irányítópult vajon olyan vizualizációkat használ, amelyek több adatkészletre is épülnek? És ha igen, akkor mi azok neve, és hogyan tudja megnyitni és szerkeszteni őket? A HR-adatkészlet fel van egyáltalán használva jelentésekben vagy irányítópultokon? Vagy áthelyezhetők anélkül, hogy hibás hivatkozások maradnának utána? Minden ilyen kérdésre választ találhat a **Kapcsolódó tartalom** adattáblán.  Az adattábla nem csak a kapcsolódó tartalmakat jeleníti meg, hanem műveletek elvégzését is lehetővé teszi rajtuk, és megkönnyíti a navigációt is közöttük.
@@ -36,7 +39,7 @@ A videóban Will fogja bemutatni, hogyan lehet egy irányítópult kapcsolódó 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s" frameborder="0" allowfullscreen></iframe>
 
-Megnyitott irányítópult vagy jelentés esetén válassza ki a három pontot (...) a menüsávban, majd válassza a legördülő menü **Kapcsolódó elemek megtekintése** lehetőségét.
+Megnyitott irányítópult vagy jelentés esetén válassza a **További lehetőségek** (...) elemet a menüsávban, majd a legördülő menü **Kapcsolódó elemek megtekintése** elemét.
 
 ![Három pont és legördülő lista](./media/end-user-related/power-bi-dropdown.png)
 

@@ -1,19 +1,19 @@
 ---
 title: Példák kifejezésekre a Power BI Jelentéskészítőben
 description: A Power BI Lapszámozott jelentéskészítővel készülő lapszámozott jelentésekben gyakran használnak kifejezéseket a tartalom és a jelentés megjelenése szabályozására.
-ms.date: 06/06/2019
+ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 9f3131749a484380a1352d39ae35ea409f6dc697
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 06847956eae4dfefc7cff75b5a360fbb8b892c39
+ms.sourcegitcommit: d173e22f5a3e76717adfaa573ea391bde0338ffe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624148"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728546"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Példák kifejezésekre a Power BI Jelentéskészítőben
 A Power BI Lapszámozott jelentéskészítővel készülő lapszámozott jelentésekben gyakran használnak kifejezéseket a tartalom és a jelentés megjelenése szabályozására. A kifejezések Microsoft Visual Basicben vannak írva, és beépített függvényeket, egyéni kódot, jelentés- és csoportváltozókat és felhasználó által definiált változókat is használhatnak. A kifejezések egyenlőségjellel (=) kezdődnek.   
@@ -35,7 +35,7 @@ Ez a témakör a jelentésekben gyakori feladatokra használható kifejezésekre
 Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási lehetőségeiről és a kifejezésekbe beépíthető hivatkozástípusokról a [Kifejezések a Power BI Jelentéskészítőben](report-builder-expressions.md) című cikk témaköreiből tájékozódhat. 
   
 ## <a name="functions"></a>Függvények  
- Sok jelentésbeli kifejezés tartalmaz függvényeket. Ezekkel a függvényekkel adatokat formázhat, logikát valósíthat meg és a jelentés metaadataihoz is hozzáférhet. Írhat kifejezéseket, amelyek a Microsoft Visual Basic futtatókörnyezeti kódtárából és az `xref:System.Convert` és `xref:System.Math` névtérből származó függvényeket használnak. Más szerelvényekből származó függvényekre vagy egyéni kódra mutató hivatkozásokat is felvehet. A Microsoft .NET-keretrendszerből is használhat olyan osztályokat, mint az `xref:System.Text.RegularExpressions`.  
+ Sok jelentésbeli kifejezés tartalmaz függvényeket. Ezekkel a függvényekkel adatokat formázhat, logikát valósíthat meg és a jelentés metaadataihoz is hozzáférhet. Írhat kifejezéseket, amelyek a Microsoft Visual Basic futtatókörnyezeti kódtárából és az `xref:System.Convert` és `xref:System.Math` névtérből származó függvényeket használnak. Az egyéni kódban elhelyezheti függvények hivatkozásait. A Microsoft .NET-keretrendszerből is használhat olyan osztályokat, mint az `xref:System.Text.RegularExpressions`.  
   
 ##  <a name="VisualBasicFunctions"></a> Visual Basic-függvények  
  Visual Basic-függvényekkel kezelheti az adatokat, amelyek megjelennek a szövegdobozokban, vagy paraméterekhez, tulajdonságokhoz vagy a jelentés más területeihez lesznek használva. Ez a szakasz néhány ilyen függvény bemutatására kínál példákat. További információt [A Visual Basic futtatókörnyezeti kódtár tagjai](https://go.microsoft.com/fwlink/?LinkId=198941) című cikkben talál az MSDN webhelyén.  
@@ -476,7 +476,7 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
     ```  
   
 ##  <a name="CustomCode"></a> Egyéni kód  
- A jelentésekben egyéni kód is használható. Az egyéni kód lehet a jelentésbe ágyazva, vagy a jelentés által használt egyéni szerelvényben tárolva.  
+ Egyéni kód jelentésekbe ágyazva is használható. 
   
 ### <a name="using-group-variables-for-custom-aggregation"></a>Csoportváltozók használata egyéni összesítéshez  
  Beállíthatja egy adott csoporthatókörön belüli csoportváltozó kezdeti értékét, és kifejezésekben hivatkozhat erre a változóra. A csoportváltozók egyéni kóddal való felhasználásnak egyik módja az egyéni összesítések megvalósítása. 

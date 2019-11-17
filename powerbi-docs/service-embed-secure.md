@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/20/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3c6dc26ee1cf806ff85a9452c024e7ccbd210a25
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: d140e39cdd30f5e2078f24c55fda5ea7040e0ad4
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867113"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431889"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Jelentés beágyazása egy biztonságos portálon vagy webhelyen
 
@@ -49,7 +49,7 @@ A **Beágyazás** lehetőség az [URL-szűrőket](service-url-filters.md) és az
 
 A **Beágyazás** lehetőség nem engedélyezi automatikusan a felhasználóknak a jelentés megtekintését. A megtekintési engedélyek a Power BI szolgáltatásban vannak meghatározva.
 
-A Power BI szolgáltatásban megoszthatja a beágyazott jelentéseket a hozzáférést igénylő felhasználókkal. Office 365-csoport használata esetén felveheti a felhasználót alkalmazás-munkaterület tagjaként. Részletesebb információ: [Az alkalmazás-munkaterület kezelése a Power BI-ban és az Office 365-ben](service-manage-app-workspace-in-power-bi-and-office-365.md).
+A Power BI szolgáltatásban megoszthatja a beágyazott jelentéseket a hozzáférést igénylő felhasználókkal. Office 365-csoport használata esetén felveheti a felhasználót munkaterületek tagjaként. További információért lásd [a munkaterület Power BI-ban és Office 365-ben való kezelését](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="licensing"></a>Licencelés
 

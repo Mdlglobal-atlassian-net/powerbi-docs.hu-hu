@@ -2,7 +2,6 @@
 title: A Power BI szolgáltatás új külseje
 description: A Power BI szolgáltatás (app.powerbi.com) külseje megújult. Ez a cikk bemutatja, hogyan navigálhat a jelentésekben az új külsővel.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/08/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 11f60ba14734f40849aec47a492f4bf80c4ef3b5
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: c69e0247ecde7d6bd1cf158761a2ff9efd31d2d3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239957"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881395"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>A Power BI szolgáltatás új külseje
 
@@ -66,7 +65,7 @@ A régi kinézetben elérhető funkciókat nem távolítottuk el. A további par
 
 ### <a name="where-are-file-menu-actions"></a>Hol találhatók a Fájl menü műveletei?
 
-A **Fájl** menü műveleteit keresi? A korábban a **Fájl** menüben található műveletek is a három ponttal elérhető menübe kerültek. 
+A **Fájl** menü műveleteit keresi? A korábban a **Fájl** menüben található műveletek is a **További lehetőségek** (...) menübe kerültek. 
 
 ![Az új megjelenés Fájl menüje](media/service-new-look/power-bi-file-menu-new-look.gif)
 

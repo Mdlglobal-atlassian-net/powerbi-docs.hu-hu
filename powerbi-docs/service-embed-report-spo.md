@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: c5d35c1e7fef15c72314738c1d67f81656dc3101
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6fb02a3ea31dd3bed6f1013d5e81237345aef40c
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073621"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431903"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Beágyazás jelentéskijelzővel a SharePoint Online-ban
 
@@ -79,11 +79,11 @@ Egy jelentés beágyazása a SharePoint Online-ba még nem ad automatikusan enge
 > [!IMPORTANT]
 > Tekintse át kik láthatják a jelentést a Power BI szolgáltatásban, és adjon hozzáférést azoknak, akik még nem szerepelnek a listában.
 
-A Power BI-ban két módon adhat hozzáférést a jelentésekhez. Az első, hogy ha a SharePoint Online-csoportwebhely létrehozásához Office 365-csoportot használ, akkor a felhasználót hozzáadhatja tagként az **alkalmazás-munkaterülethez a Power BI szolgáltatásban** és a **SharePoint-oldalon**. További információkért lásd: [Alkalmazás-munkaterület kezelése](service-manage-app-workspace-in-power-bi-and-office-365.md).
+A Power BI-ban két módon adhat hozzáférést a jelentésekhez. Az első, hogy ha a SharePoint Online-csoportwebhely létrehozásához Office 365-csoportot használ, akkor a felhasználót hozzáadhatja tagként a **munkaterülethez a Power BI szolgáltatásban** és a **SharePoint-oldalon**. További információkért lásd: [Munkaterület kezelése](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 A másik lehetőség, hogy egy alkalmazásban ágyaz be egy jelentést, és közvetlenül megosztja azt a felhasználókkal:  
 
-1. A szerző, akinek Pro-felhasználónak kell lennie, jelentést hoz létre egy alkalmazás-munkaterületen. Ahhoz, hogy az alkalmazás-munkaterület megosztható legyen az *ingyenes Power BI-felhasználókkal*, az alkalmazás-munkaterületet *Premium-munkaterületként* kell beállítani.
+1. A szerző, akinek Pro-felhasználónak kell lennie, jelentést hoz létre egy munkaterületen. Ahhoz, hogy a munkaterület megosztható legyen az *ingyenes Power BI-felhasználókkal*, a munkaterületet *Premium-munkaterületként* kell beállítani.
 
 2. A szerző közzéteszi, majd telepíti az alkalmazást. A szerzőnek telepítenie kell az alkalmazást, hogy az hozzáférjen a jelentés SharePoint Online-beli beágyazásához használt URL-címhez.
 
@@ -93,7 +93,7 @@ A másik lehetőség, hogy egy alkalmazásban ágyaz be egy jelentést, és köz
 
 4. A szerző megnyitja az alkalmazást és a jelentést.
 
-5. A szerző kimásolja a beágyazott jelentés URL-címét az alkalmazás által telepített jelentésből. Ne a jelentés alkalmazás-munkaterületről származó eredeti URL-címét használja.
+5. A szerző kimásolja a beágyazott jelentés URL-címét az alkalmazás által telepített jelentésből. Ne a jelentés a munkaterületről származó eredeti URL-címét használja.
 
 6. Hozzon létre egy új csoportwebhelyet a SharePoint Online-ban.
 

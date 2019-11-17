@@ -10,14 +10,16 @@ ms.topic: conceptual
 ms.date: 09/05/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 21a77d585707b19cd8a3d06ad44471fac45d7178
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 26741d229b260a0114f5f089018b79f34bc41938
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903741"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019321"
 ---
 # <a name="reports-in-power-bi"></a>Jelentések a Power BI-ban
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 A Power BI-jelentések az adathalmazok többszempontú nézetei, amelyek az adathalmazból származó különféle eredményeket és megállapításokat bemutató vizualizációkat tartalmaznak.  A jelentések egyetlen vagy akár több oldalnyi vizualizációt is tartalmazhatnak. Munkahelyi szerepkörétől függően lehet, hogy Ön jelentéseket *tervez*. Előfordulhat az is, hogy jelentéseket *használ*. Ez a cikk a *felhasználóknak* szól.
 
@@ -27,7 +29,7 @@ A. Ez a jelentés hat oldallal (vagy lappal) rendelkezik, és jelenleg a **Hangu
 B. Ezen az oldalon öt különböző vizualizáció és egy oldalcím található.    
 C. A *Szűrők* panelen láthatjuk, hogy egy szűrő van alkalmazva minden jelentésoldalra. A Szűrők panel összecsukásához válassza a nyilat ( **>** ).    
 D. A Power BI-címsávon a jelentés neve és az utolsó frissítés dátuma látható. A nyíl választásával megnyithatja a menüt, amelyben a jelentés tulajdonosa is látható.    
-E. A műveletsáv az ezzel a jelentéssel végezhető műveleteket tartalmazza.  Például megjegyzést fűzhet a jelentéshez, megtekinthet egy könyvjelzőt vagy adatokat exportálhat.  A három pontot (...) választva a jelentés további funkcióinak listája nyílik meg.    
+E. A műveletsáv az ezzel a jelentéssel végezhető műveleteket tartalmazza.  Például megjegyzést fűzhet a jelentéshez, megtekinthet egy könyvjelzőt vagy adatokat exportálhat.  A **További lehetőségek** (…) elemet választva megnyílik a jelentés további funkcióinak listája.    
 
 Ha csak most kezdte el használni a Power BI-t, a [Power BI szolgáltatás felhasználói számára az alapfogalmakat](end-user-basic-concepts.md) ismertető cikket elolvasva egyszerűen elsajátíthatja az alapokat. A jelentések megtekinthetők és megoszthatók mobileszközön, illetve jegyzetek fűzhetők hozzájuk. További információ: [Jelentések vizsgálata a Power BI-mobilalkalmazásokban](mobile/mobile-reports-in-the-mobile-apps.md).
 

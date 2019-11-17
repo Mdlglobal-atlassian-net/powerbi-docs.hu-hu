@@ -2,7 +2,6 @@
 title: 'Oktatóanyag: Facebook-elemzések a Power BI Desktop használatával'
 description: 'Oktatóanyag: Facebook-elemzések a Power BI Desktop használatával'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 73f5d629806826eed0da51f5b7158d884d1c8725
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 96811a2cfd7d08a210c4efd177e989abce16d25d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841395"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876276"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Oktatóanyag: Facebook-elemzések a Power BI Desktop használatával
 
@@ -147,7 +146,7 @@ Most, miután betöltötte az adatokat a Facebook-oldalról, a vizualizációk h
    
    ![Sávdiagram](media/desktop-tutorial-facebook-analytics/barchart1.png)
    
-4. Válassza a vizualizáció jobb felső sarkában a három pont (...) lehetőséget, majd a **Rendezés hozzászólások száma szerint** elem kiválasztásával csökkenő sorrendbe rendezheti a tábla adatait. 
+4. Válassza a **További lehetőségek** (...) lehetőséget a vizualizáció jobb felső sarkában, majd a **Rendezés hozzászólások száma szerint** lehetőséget a tábla a hozzászólások száma szerinti csökkenő sorrendbe rendezéséhez. 
    
    ![Rendezés hozzászólások száma szerint](media/desktop-tutorial-facebook-analytics/barchart2.png)
    
@@ -184,7 +183,7 @@ A diagram X tengelye (hozzászólások száma) nem pontos értékeket mutat, és
 
 Ez így már jobb, de az adatfeliratok mindegyike **.0** tizedesértékkel rendelkezik, amely zavaró és félrevezető, mivel a **bejegyzések számának** egész számnak kell lennie. Módosítani kell a **Bejegyzések száma** oszlop adattípusát egész számra.
 
-1. Az adattípus szerkesztéséhez kattintson a jobb gombbal a **Lekérdezés1** elemre a Mezők listában, vagy mutasson rá az egérmutatóval, válassza a **További beállítások** három pontot (...), majd válassza a **Lekérdezés szerkesztése** lehetőséget. Használhatja a Kezdőlap szalagfül **Külső adatok** területének **Lekérdezések szerkesztése** parancsát is, ilyenkor válassza a **Lekérdezések szerkesztése** lehetőséget a legördülő menüből. A Power BI Desktopban található **Power Query-szerkesztő** külön ablakban nyílik meg.
+1. Az adattípus szerkesztéséhez kattintson a jobb gombbal a **Lekérdezés1** elemre a Mezők listában, vagy mutasson rá az egérmutatóval, és válassza a **További Lehetőségek** (...), majd a **Lekérdezés szerkesztése** lehetőséget. Használhatja a Kezdőlap szalagfül **Külső adatok** területének **Lekérdezések szerkesztése** parancsát is, ilyenkor válassza a **Lekérdezések szerkesztése** lehetőséget a legördülő menüből. A Power BI Desktopban található **Power Query-szerkesztő** külön ablakban nyílik meg.
    
    ![Lekérdezés szerkesztése a Mezők listából](media/desktop-tutorial-facebook-analytics/editquery1.png)     ![Lekérdezések szerkesztése a menüszalagról](media/desktop-tutorial-facebook-analytics/t_fb_editquery.png)
    
@@ -241,8 +240,8 @@ Amint láthatja, a jelentésekben könnyen testre szabhatók a vizualizációk, 
 A Power BI Desktop teljes körű szolgáltatást nyújt, lehetővé téve az adatok számos különféle adatforrásból való beszerzését, az elemzési igényeknek megfelelő átalakítását, valamint látványos és interaktív módon történő megjelenítését. Miután elkészült a jelentés, [feltöltheti azt a Power BI szolgáltatásba](desktop-upload-desktop-files.md), és létrehozhat azon alapuló irányítópultokat, amelyeket más Power BI-felhasználókkal is megoszthat.
 
 ## <a name="next-steps"></a>Következő lépések
-* [Olvassa el a többi Power BI Desktop-oktatóanyagot](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Tekintse meg a Power BI Desktop videóit](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Látogasson el a Power BI fórumára](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Látogasson el a Power BI blogra](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Olvassa el a többi Power BI Desktop-oktatóanyagot](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Tekintse meg a Power BI Desktop videóit](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Látogasson el a Power BI fórumára](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Látogasson el a Power BI blogra](https://go.microsoft.com/fwlink/?LinkID=519327)
 

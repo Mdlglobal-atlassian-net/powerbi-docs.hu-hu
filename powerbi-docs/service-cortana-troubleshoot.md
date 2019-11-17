@@ -2,7 +2,6 @@
 title: A Power BI-hoz használt Cortana hibaelhárítása
 description: Ha problémákat tapasztal a Cortana a Power BI-hoz való használata során, próbálja ki az alábbi javaslatokat.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 678910000a0062836004b208cb401774c9eb2a9a
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 9d6241659eaa5e6ff9c98b5c25dbfacb0bbac34d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72542888"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872870"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>A Power BI-hoz használt Cortana hibaelhárítása
 Ez a cikk egy sorozat része. 
@@ -39,7 +38,7 @@ Ha problémákba ütközik Cortana a Power BI szolgáltatással való integrál�
    * a „show sales” („mutasd az értékesítést”) kifejezés *nem* fog Power BI-beli eredményt visszaadni.   
    * a „show me sales fy16”, a „sales fy16”, a „show sales fy16” és a „show me sales f” kifejezés *fog* visszaadni Power BI-beli eredményt.    
    * A „powerbi” kifejezés beszúrása a 2 szükséges szó egyikének számít, így a „powerbi sales” („powerbi értékesítés”) kifejezés *fog* visszaadni Power BI-beli eredményt.
-5. Van hozzáférési vagy szerkesztési engedélye bármelyik jelentésre vagy irányítópultra vonatkozóan? A jelentések esetében győződjön meg arról, hogy tartozik [válaszkártya](service-cortana-answer-cards.md) ahhoz a tartalomhoz, melyre keresni szeretne.  Az irányítópultok esetében, győződjön meg arról, hogy a keresni kívánt tartalom a **Velem megosztva** területen, egy alkalmazás munkaterületén vagy a **Saját munkaterületen** található. [A Hibaelhárító eszköz használatával](#try-the-cortana-troubleshooting-tool) azonosíthatja a problémát.
+5. Van hozzáférési vagy szerkesztési engedélye bármelyik jelentésre vagy irányítópultra vonatkozóan? A jelentések esetében győződjön meg arról, hogy tartozik [válaszkártya](service-cortana-answer-cards.md) ahhoz a tartalomhoz, melyre keresni szeretne.  Az irányítópultok esetében győződjön meg arról, hogy a keresni kívánt tartalom a **Velem megosztva** területen, egy munkaterületen vagy a **Saját munkaterületen** található. [A Hibaelhárító eszköz használatával](#try-the-cortana-troubleshooting-tool) azonosíthatja a problémát.
 6. Mobileszközt használ?  A Power BI és Cortana integrációja jelenleg csak a Windows rendszerű mobileszközökön támogatott.
 7. Cortana az angol nyelvre van beállítva?  Cortana és a Power BI jelenlegi integrációja csak az angol nyelvet támogatja. Nyissa meg Cortanát, majd válassza a fogaskerék ikont a Beállítások megjelenítéséhez. Görgessen le a **Cortana nyelve** beállításhoz, és ellenőrizze, hogy az az egyik angol nyelvű lehetőségre van-e beállítva.
 
@@ -96,4 +95,4 @@ Egy Önnel megosztott irányítópultot keres?  Nyissa meg a Power BI > **Velem 
 * A lekérdezésnek a rendszer kialakításából fakadóan 2 vagy több szóból kell állnia.  Ha a lekérdezés túl rövid, egészítse ki a „show” („mutasd meg”) kifejezéssel.
 * Előfordulhat, hogy néhány elöljárószavakat tartalmazó lekérdezési sztring nem működik (példa: sales by item (értékesítés árucikk szerint)). Próbáljon meg más lekérdezési kifejezéseket használni, melyekben nem szerepelnek elöljárószavak, és értelmesek/egyediek.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

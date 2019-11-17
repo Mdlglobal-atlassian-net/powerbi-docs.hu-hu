@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 24cc798814e0c19de4f1dd4d0d6907fc7a0074a6
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e7a851a890fa734c045bb9cee60d429f87a3a602
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075404"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442822"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Szervezeti Power BI-licencelés
 
@@ -27,9 +27,9 @@ A cikk a felhasználónkénti licencekre összpontosít a rendszergazda szemszö
 
 Rendszergazdaként vásárolhat és kioszthat Power BI Pro-licenceket, és regisztrálhatja is a cégét a Power BI Pro próbaverziójára. A Power BI Pro próbaverziójára egyéni felhasználók is regisztrálhatnak.
 
-### <a name="purchase-power-bi-pro"></a>A Power BI Pro megvásárlása
+### <a name="purchase-power-bi-pro-licenses"></a>Power BI Pro-licencek vásárlása
 
-A Power BI Pro-licenceket a Microsoft Office 365-ön keresztül vagy egy hivatalos Microsoft-partnertől vásárolhatja meg. A licenceket a megvásárlásuk után ki kell osztania az egyes felhasználóknak. További információkért lásd [a Power BI Pro-licencek vásárlását és kiosztását ismertető](service-admin-purchasing-power-bi-pro.md) témakört.
+Rendszergazdaként a Power BI Pro-licenceket a Microsoft 365-ön keresztül vagy egy hivatalos Microsoft-partnertől vásárolhatja meg. A licenceket a megvásárlásuk után ki kell osztania az egyes felhasználóknak. További információkért lásd [a Power BI Pro-licencek vásárlását és kiosztását ismertető](service-admin-purchasing-power-bi-pro.md) témakört.
 
 ### <a name="power-bi-pro-license-expiration"></a>A Power BI Pro-licenc lejárata
 
@@ -41,7 +41,7 @@ A Power BI Pro előfizetési életciklusa megegyezik az Office 365-ével. Továb
 
 A cégben dolgozó egyéni felhasználók regisztrálhatnak a Power BI Pro próbaverziójára. További információkért lásd: [Egyéni Power BI-regisztráció](service-self-service-signup-for-power-bi.md).
 
-A Microsoft 365 Felügyeleti központban a szolgáltatáson belüli ingyenes Power BI Pro-próbaverziót használó felhasználók nem a Power BI Pro próbaverziós felhasználóiként, hanem ingyenes Power BI-felhasználókként jelennek meg, a Power BI tárhelykezelési lapján azonban a Power BI Pro próbaverziós felhasználóiként vannak feltüntetve.
+A Microsoft 365 Felügyeleti központban a szolgáltatáson belüli, egyéni használatra készült Power BI Pro-próbaverziót használó felhasználók nem a Power BI Pro próbaverziós felhasználóiként, hanem ingyenes Power BI-felhasználókként jelennek meg, a Power BI tárhelykezelési lapján azonban a Power BI Pro próbaverziós felhasználóiként vannak feltüntetve.
 
 ### <a name="power-bi-pro-trial-for-organizations"></a>A Power BI Pro próbaverziója cégeknek
 
@@ -49,7 +49,7 @@ Ha anélkül szeretné beszerezni és üzembe helyezni a Power BI próbaverziós
 
 Mielőtt regisztrálna, vegye figyelembe a következőket:
 
-* A regisztrációhoz [**globális rendszergazdai** vagy **számlázási rendszergazdai**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) szerepkörrel kell rendelkeznie az Office 365-ben.
+* A regisztrációhoz [**globális rendszergazdai** vagy **számlázási rendszergazdai**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) szerepkörrel kell rendelkeznie a Microsoft 365-ben.
 
 * A céges próbaverziók száma bérlőnként csak egy lehet. Ez azt jelenti, hogy ha valaki már alkalmazta a Power BI Pro próbaverzióját a bérlőn, Ön nem teheti meg ugyanezt. Ha segítségre van szüksége ezzel kapcsolatban, forduljon az [Office 365 számlázási támogatási csapatához](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
 
@@ -79,11 +79,11 @@ A céghez tartozó felhasználók két különböző módon szerezhetnek be ingy
 
 * Power BI-licencet rendelhet hozzájuk a Microsoft 365 Felügyeleti központban.
 
-* Ha egy felhasználó [regisztrál a Power BI Pro próbaverziójára](service-self-service-signup-for-power-bi.md), az pedig lejár, ingyenes licencet kap.
+* Ha egy felhasználó [Power BI-fiókot regisztrál](service-self-service-signup-for-power-bi.md), a rendszer ingyenes licencet rendel hozzá.
 
 ### <a name="requesting-and-assigning-free-licenses"></a>Ingyenes licencek igénylése és kiosztása
 
-Ha a licencigénylés és -kiosztás folyamatát központilag szeretné felügyelni, előbb bizonyosodjon meg róla, hogy már rendelkezik a korlátlan (ingyenes) Power BI-licenckészlettel.
+Ha a licencigénylés és -kiosztás folyamatát központilag szeretné felügyelni, előbb bizonyosodjon meg róla, hogy már rendelkezik a korlátlan (ingyenes) Power BI-licenckészlettel a bérlőben.
 
 Ez a licenckészlet azt követően válik elérhetővé, hogy valaki egyéni felhasználóként már regisztrált a Power BI használatára. A regisztrálás során a rendszer hozzárendeli a licenckészletet a céghez, és a regisztráló felhasználónak kioszt egy licencet.
 
@@ -125,9 +125,9 @@ Ha a korlátlan (ingyenes) Power BI-licenckészlet nem érhető el, és nem szer
 
 Rendszergazdaként engedélyezheti vagy letilthatja az egyéni felhasználók általi regisztrációt az Azure Active Directoryban (AAD). Ez a szakasz azt mutatja be, hogyan felügyelheti a regisztrációkat PowerShell-parancsokkal. Az Azure PowerShellről [az Azure PowerShell áttekintésében](/powershell/azure/overview) talál további információt.
 
-A regisztrációkat az Azure AD **AllowAdHocSubscriptions** beállítása szabályozza. A legtöbb bérlő esetén ez a beállítás *true* (igaz) értékre van állítva, vagyis engedélyezett. Ha a Power BI-t egy partneren keresztül szerezte be, elképzelhető, hogy *false* (hamis) érték van megadva, amely letiltja a regisztrációt. Ha a beállítást *true* értékről *false* értékre módosítja, a cég új felhasználói nem fognak tudni egyénileg regisztrálni. Azoknak a felhasználóknak a Power BI-licence, akik a beállítás módosítása előtt regisztráltak, továbbra is megmarad. Lényeges, hogy a felhasználók *false* (hamis) beállítás esetén is bejelentkezhetnek Pro-próbaverzióra.
+A regisztrációkat az Azure Active Directory **AllowAdHocSubscriptions** beállítása szabályozza. A legtöbb bérlő esetén ez a beállítás *true* (igaz) értékre van állítva, vagyis engedélyezett. Ha a Power BI-t egy partneren keresztül szerezte be, elképzelhető, hogy *false* (hamis) érték van megadva, amely letiltja a regisztrációt. Ha a beállítást *true* értékről *false* értékre módosítja, a cég új felhasználói nem fognak tudni egyénileg regisztrálni. Azoknak a felhasználóknak a Power BI-licence, akik a beállítás módosítása előtt regisztráltak, továbbra is megmarad. Fontos megjegyezni, hogy az (ingyenes) Power BI-licenccel rendelkező felhasználók *false* (hamis) beállítás esetén is regisztrálhatnak egyéni Power BI Pro-próbaverzióra.
 
-1. Jelentkezzen be az Azure Active Directoryba az Office 365 hitelesítő adataival. Az alábbi PowerShell-szkript első sora bekéri a hitelesítő adatokat. A második sor csatlakozik az Azure Active Directoryhoz.
+1. Jelentkezzen be az Azure Active Directoryba a Microsoft 365-beli hitelesítő adataival. Az alábbi PowerShell-szkript első sora bekéri a hitelesítő adatokat. A második sor csatlakozik az Azure Active Directoryhoz.
 
     ```powershell
      $msolcred = get-credential

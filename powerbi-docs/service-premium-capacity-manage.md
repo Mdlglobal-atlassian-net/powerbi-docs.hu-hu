@@ -3,7 +3,6 @@ title: Microsoft Power BI Premium-kapacitások kezelése
 description: A Power BI Premium-kapacitások felügyeleti feladatait ismerteti.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1e8218e19ca3949a96a9c701e4a18f9fb088e2a1
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 5e8becd877165f456793d99951544156a9314290
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175211"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881200"
 ---
 # <a name="managing-premium-capacities"></a>Prémium szintű kapacitások kezelése
 
@@ -42,7 +41,7 @@ Legalább egy kapacitás-rendszergazdát hozzá kell rendelni. A kapacitás-rend
 
 A kapacitás-rendszergazdák nem férhetnek hozzá a munkaterületek tartalmához, kivéve, ha erre külön jogosultságot kapnak a munkaterületek engedélyei között. Emellett nincs hozzáférésük a Power BI összes rendszergazdai felületéhez, például a használati metrikákhoz, az auditnaplókhoz és a bérlői beállításokhoz, hacsak nem kapnak erre külön engedélyt. Fontos megjegyezni, hogy a kapacitás-rendszergazdák nem hozhatnak létre új kapacitásokat, és nem méretezhetnek meglévő kapacitásokat. A rendszergazdák hozzárendelése a kapacitások alapján történik, így csak azokat a kapacitásokat tekinthetik meg és kezelhetik, amelyekhez hozzárendelték őket.
 
-A kapacitásméret az SKU-beállítások listájából választható ki, amelyet a készletben elérhető virtuális magok száma korlátoz. A készletből több kapacitás is létrehozható, amely származhat egy vagy több megvásárolt SKU-ból. Egy 32 virtuális maggal rendelkező P3 SKU-val például három kapacitás hozható létre: egy P2 (16 virtuális maggal), és két P1 (egyenként 8 virtuális maggal). Jobb teljesítményt és méretezést érhet el, ha kisebb méretű kapacitásokat hoz létre. Ezt a [Premium-kapacitások optimalizálása](service-premium-capacity-optimize.md) című cikk ismerteti. Az alábbi képen egy mintabeállítás látható a nem létező Contoso nevű céghez, amely öt Premium-kapacitást tartalmaz (három P1 és kettő P3), amelyek mindegyikéhez tartoznak alkalmazás-munkaterületek, illetve több megosztott kapacitású munkaterület is.
+A kapacitásméret az SKU-beállítások listájából választható ki, amelyet a készletben elérhető virtuális magok száma korlátoz. A készletből több kapacitás is létrehozható, amely származhat egy vagy több megvásárolt SKU-ból. Egy 32 virtuális maggal rendelkező P3 SKU-val például három kapacitás hozható létre: egy P2 (16 virtuális maggal), és két P1 (egyenként 8 virtuális maggal). Jobb teljesítményt és méretezést érhet el, ha kisebb méretű kapacitásokat hoz létre. Ezt a [Premium-kapacitások optimalizálása](service-premium-capacity-optimize.md) című cikk ismerteti. Az alábbi képen egy mintabeállítás látható a nem létező Contoso nevű céghez, amely öt Premium- (három P1 és kettő P3 szintű) kapacitást tartalmaz, amelyek mindegyikéhez tartoznak munkaterületek, illetve több megosztott kapacitású munkaterület is.
 
 ![A nem létező Contoso cég mintabeállítása](media/service-premium-capacity-manage/contoso-organization-example.png)
 
@@ -66,7 +65,7 @@ A Premium-kapacitások törölhetők, és ezzel nem törlődnek azok munkaterül
 
 ### <a name="assigning-workspaces-to-capacities"></a>Munkaterületek hozzárendelése kapacitásokhoz
 
-Munkaterületeket a Power BI Felügyeleti portálján, vagy alkalmazás-munkaterületek esetén a **Munkaterület** panelen rendelhet hozzá egy Premium-kapacitáshoz.
+Munkaterületeket a Power BI Felügyeleti portálján, vagy munkaterületek esetén a **Munkaterület** panelen rendelhet hozzá egy Premium-kapacitáshoz.
 
 A kapacitás-rendszergazdák, az Office 365 globális rendszergazdái és a Power BI-szolgáltatásgazdái tömegesen rendelhetnek hozzá munkaterületeket a Power BI Felügyeleti portálján. A tömeges hozzárendelés a következőkre vonatkozhat:
 

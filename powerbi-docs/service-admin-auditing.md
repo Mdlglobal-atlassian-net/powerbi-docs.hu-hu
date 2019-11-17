@@ -11,12 +11,12 @@ ms.date: 09/09/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: aef5a8861a42e566086198c924c99d0b73406f60
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: cbb9fa77c529052e32800e0a72a6263b770840d0
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325441"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060679"
 ---
 # <a name="use-auditing-within-your-organization"></a>Naplózás használata a cégnél
 
@@ -162,7 +162,9 @@ A Power BI az alábbi tevékenységeket naplózza:
 | Egy rendszergazda adatfolyam-tárfiókot csatolt egy bérlőhöz | AdminAttachedDataflowStorageAccountToTenant | Jelenleg nem használt                       |
 | Power BI-adatkészlet elemezve                         | AnalyzedByExternalApplication (Külső alkalmazásban elemezve)               |                                          |
 | Power BI-jelentés elemzése                          | AnalyzeInExcel (Elemzés az Excelben)                              |                                          |
+| Adatfolyam-tárfiók csatolva                 | AttachedDataflowStorageAccount (Adatfolyam-tárfiók csatolva)              |                                          |
 | Power BI-adatkészlet kötése egy átjáróhoz                | BindToGateway (Kötés átjáróhoz)                               |                                          |
+| Adatfolyam-frissítés megszakítva                        | CancelDataflowRefresh (Adatfolyam-frissítés megszakítva)                       |                                          |
 | Kapacitásállapot módosítása                            | ChangeCapacityState (Kapacitásállapot módosítása)                         |                                          |
 | Kapacitás felhasználó-hozzárendelésének módosítása                  | UpdateCapacityUsersAssignment (Felhasználói hozzárendelések a kapacitásban)               |                                          |
 | Power BI-adathalmaz-kapcsolatok módosítása              | SetAllConnections (Az összes kapcsolat beállítása)                           |                                          |
@@ -194,6 +196,7 @@ A Power BI az alábbi tevékenységeket naplózza:
 | Power BI-jelentés törlése                           | DeleteReport (Jelentés törlése)                                |                                          |
 | Power BI-adathalmaz adatforrásainak felderítése          | GetDatasources (Adatforrások beszerzése)                              |                                          |
 | Letöltött Power BI-jelentés                        | DownloadReport (Jelentés letöltése)                              |                                          |
+| Adatfolyam tulajdonságai szerkesztve                        | EditDataflowProperties (Adatfolyam tulajdonságainak szerkesztése)                      |                                          |
 | Power BI tanúsítási engedélyek szerkesztése          | EditCertificationPermission                 | Jelenleg nem használt                       |
 | Power BI-irányítópult szerkesztése                         | EditDashboard (Irányítópult szerkesztése)                               | Jelenleg nem használt                       |
 | Power BI-adathalmaz szerkesztése                           | EditDataset (Adatkészlet szerkesztése)                                 |                                          |
@@ -213,7 +216,7 @@ A Power BI az alábbi tevékenységeket naplózza:
 | Power BI-irányítópult nyomtatása                        | PrintDashboard (Irányítópult nyomtatása)                              |                                          |
 | Power BI-jelentésoldal nyomtatása                      | PrintReport (Jelentés nyomtatása)                                 |                                          |
 | Power BI-jelentés webes közzététele                  | PublishToWebReport (Jelentés közzététele a weben)                          |                                          |
-| Power BI-adatfolyam titkos kódjának fogadása a Key Vaultból  | ReceiveDataflowSecretFromKeyVault           | Jelenleg nem használt                       |
+| Power BI-adatfolyam titkos kódjának fogadása a Key Vaultból  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Adatforrás törölve a Power BI-átjáróból         | RemoveDatasourceFromGateway (Adatforrás eltávolítása átjáróból)                 |                                          |
 | Power BI-csoporttagok eltávolítása                    | DeleteGroupMembers (Csoporttagok törlése)                          |                                          |
 | Munkaterület eltávolítása kapacitásból                 | RemoveWorkspacesFromCapacity (Munkaterületek eltávolítása kapacitásból)                |                                          |
@@ -221,6 +224,7 @@ A Power BI az alábbi tevékenységeket naplózza:
 | Power BI-adatfolyam frissítésének kérése               | RequestDataflowRefresh                      | Jelenleg nem használt                       |
 | Power BI-adathalmaz frissítésének kérése                | RefreshDataset (Adatkészlet frissítése)                              |                                          |
 | Power BI-munkaterületek fogadása                     | GetWorkspaces                               |                                          |
+| Munkaterület adatfolyam-tárolási helyének beállítása     | SetDataflowStorageLocationForWorkspace (Munkaterület adatfolyam-tárolási helyének beállítása)      |                                          |
 | Power BI-adatfolyam ütemezett frissítésének beállítása        | SetScheduledRefreshOnDataflow (Adatfolyam ütemezett frissítésének beállítása)               |                                          |
 | Power BI-adathalmaz ütemezett frissítésének beállítása         | SetScheduledRefresh (Ütemezett frissítés beállítása)                         |                                          |
 | Power BI-irányítópult megosztása                         | ShareDashboard (Irányítópult megosztása)                              |                                          |
@@ -229,10 +233,12 @@ A Power BI az alábbi tevékenységeket naplózza:
 | Power BI-próbaidőszak megkezdése                            | OptInForProTrial (Regisztráció a Pro csomag próbaverziójára)                            |                                          |
 | Power BI-adatforrás átvétele                   | TakeOverDatasource (Adatforrás átvétele)                          |                                          |
 | Power BI-adathalmaz átvétele                        | TakeOverDataset (Adatkészlet átvétele)                             |                                          |
+| Power BI-adatfolyam átvéve                     | TookOverDataflow (Adatfolyam átvéve)                             |                                          |
 | Közzé nem tett Power BI-alkalmazás                          | UnpublishApp (Alkalmazás közzétételének visszavonása)                                |                                          |
 | Kapacitásforrás szabályozási beállításainak frissítése      | UpdateCapacityResourceGovernanceSettings (Kapacitásforrás szabályozási beállításai)    | Jelenleg nem a Microsoft 365 Felügyeleti központjában van |
 | Kapacitás-rendszergazda frissítése                            | UpdateCapacityAdmins (Kapacitás-rendszergazdák frissítése)                        |                                          |
 | Kapacitás megjelenített nevének frissítése                     | UpdateCapacityDisplayName (Kapacitás megjelenített neve)                   |                                          |
+| Adatfolyamtár-hozzárendelési engedélyek frissítve   | UpdatedDataflowStorageAssignmentPermissions (Adatfolyamtár-hozzárendelési engedélyek frissítve) |                                          |
 | Vállalati Power BI-beállítások frissítése          | UpdatedAdminFeatureSwitch (Frissített rendszergazdai funkciókapcsoló)                   |                                          |
 | Power BI-alkalmazás frissítése                              | UpdateApp (Alkalmazás frissítése)                                   |                                          |
 | Power BI-adatfolyam frissítése                         | UpdateDataflow (Adatfolyam frissítése)                              |                                          |

@@ -2,7 +2,6 @@
 title: Adathalmazok használata több munkaterületen (előzetes verzió) – bevezetés
 description: Útmutató adathalmaz megosztásához a vállalat több felhasználójával. Így mind jelentéseket készíthetnek az Ön adathalmaza alapján a saját munkaterületükön.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e086cc89a24760bce0c4a45efd558dc47495bd04
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: d30a8012161934ada4ff3cb2ce6852fe62f48892
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020773"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877199"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Adathalmazok használata több munkaterületen (előzetes verzió) – bevezetés
 
@@ -62,7 +61,7 @@ A megosztott adathalmazokkal kapcsolatos képességekre épülő funkciók és f
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
-- Alkalmazás-közzétevőként gondoskodnia kell arról, hogy a célközönsége hozzáférjen az alkalmazás-munkaterületen kívüli adathalmazokhoz. Ellenkező esetben a felhasználók problémákba ütköznek az alkalmazás használata során: az adathalmazokhoz való hozzáférés hiányában a jelentések nem nyílnak meg, az irányítópultok csempéi pedig zároltként jelennek meg. Ha a navigáció kezdőeleme egy jelentés, akkor az adathalmazhoz való hozzáférés nélkül a felhasználók az alkalmazást sem tudják megnyitni.
+- Alkalmazás-közzétevőként gondoskodnia kell arról, hogy a célközönsége hozzáférjen a munkaterületen kívüli adathalmazokhoz. Ellenkező esetben a felhasználók problémákba ütköznek az alkalmazás használata során: az adathalmazokhoz való hozzáférés hiányában a jelentések nem nyílnak meg, az irányítópultok csempéi pedig zároltként jelennek meg. Ha a navigáció kezdőeleme egy jelentés, akkor az adathalmazhoz való hozzáférés nélkül a felhasználók az alkalmazást sem tudják megnyitni.
 - Más munkaterületen lévő adathalmazra alapozott jelentés készítéséhez mindkét oldalon az új munkaterületi felhasználói felület szükséges: A jelentésnek új munkaterületi felületen kell lennie, és az adathalmaznak is új munkaterületi felületen kell lennie.
 - Klasszikus munkaterületen az adathalmaz-felfedezési felületen csak az azon a munkaterületen lévő adathalmazok jelennek meg.
 - A „Webes közzététel” megosztott adathalmazokon alapuló jelentések esetén szándékosan nem használható.
@@ -73,4 +72,4 @@ A megosztott adathalmazokkal kapcsolatos képességekre épülő funkciók és f
 - [Adathalmazok meghirdetése](service-datasets-promote.md)
 - [Adathalmazok minősítése](service-datasets-certify.md)
 - [Adathalmazok több munkaterületen való használatának irányítása](service-datasets-admin-across-workspaces.md)
-- Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

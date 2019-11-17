@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: abf45f5213a10379535d4c6ada3b54ffa625ddc5
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 83c3257fb9aaaee01efdfceaac93c1d32aeebba0
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269229"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429165"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kódrészletek a tartalmak Power BI-munaterületcsoportból való migrálásához
 
@@ -167,7 +167,7 @@ Ebben a kódrészletben az egyszerűség kedvéért nem titkosított hitelesít�
 
 Újra össze kell állítania a jelentést a létrehozott adatkészlethez.
 
-Ebben a kódrészletben feltételezzük, hogy a leküldhető adatkészlet már az SaaS-környezet egyik alkalmazás-munkaterületén van. További információ a leküldési API-ról: [Adatok leküldése Power BI-adatkészletekbe](walkthrough-push-data.md).
+Ebben a kódrészletben feltételezzük, hogy a leküldhető adathalmaz már az SaaS-környezet egyik munkaterületén van. További információ a leküldési API-ról: [Adatok leküldése Power BI-adatkészletekbe](walkthrough-push-data.md).
 
 ```csharp
     var credentials = new TokenCredentials(<Your WSC access key>, "AppKey");

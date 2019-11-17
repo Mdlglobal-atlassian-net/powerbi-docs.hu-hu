@@ -2,7 +2,6 @@
 title: Csempékkel kapcsolatos hibák elhárítása
 description: A csempék Power BI-beli frissítésének megkísérlésekor előforduló gyakori hibák
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,18 +10,18 @@ ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f6becb175b8779588ab8d203bb02256945c71ee6
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: dbae4c82fb350242ed0fefadeeec217666fc3005
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544280"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877502"
 ---
 # <a name="troubleshooting-tile-errors"></a>Csempékkel kapcsolatos hibák elhárítása
 Az alábbiakban a csempékkel kapcsolatban felmerülő gyakori hibákat és azok magyarázatát soroltuk fel.
 
 > [!NOTE]
-> Ha egy itt fel nem sorolt hiba okozza a problémát, a [közösségi webhelyen](http://community.powerbi.com/) kérhet további segítséget, vagy létrehozhat egy [támogatási jegyet](https://powerbi.microsoft.com/support/).
+> Ha egy itt fel nem sorolt hiba okozza a problémát, a [közösségi webhelyen](https://community.powerbi.com/) kérhet további segítséget, vagy létrehozhat egy [támogatási jegyet](https://powerbi.microsoft.com/support/).
 > 
 > 
 
@@ -38,7 +37,7 @@ Forduljon az irányítópult tulajdonosához, és győződjön meg róla, hogy a
 
 **A rendszergazda letiltotta az egyéni vizualizációkat.**
 
-A Power BI-rendszergazda letiltotta az egyéni vizualizációkat a szervezete vagy a biztonsági csoportja számára. Emiatt nem használhat egyéni vizualizációkat a [Microsoft Marketplace-ről](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals), és nem importálhat privát vizualizációkat fájlból. Csak az előcsomagolt vizualizációkat használhatja.
+A Power BI-rendszergazda letiltotta az egyéni vizualizációkat a szervezete vagy a biztonsági csoportja számára. Emiatt nem használhat egyéni vizualizációkat a [Microsoft Marketplace-ről](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals), és nem importálhat privát vizualizációkat fájlból. Csak az előcsomagolt vizualizációkat használhatja.
 
 
 **Minden adathierarchizálásban legalább egy olyan csoportnak vagy számításnak kell szerepelnie, amely adatokat generál. Forduljon az irányítópult tulajdonosához.**
@@ -69,7 +68,7 @@ Ez általában átmeneti jellegű probléma. Ha később ismét próbálkozik, �
 
 Ez akkor fordulhat elő, ha az alapul szolgáló adatkészlet DirectQuery mód használatára van konfigurálva, vagy egy helyszíni adatátjárón keresztül élő kapcsolatot használ az Analysis Serviceshez. Ebben az esetben a csempék továbbra is a nem szűrt adatokat jelenítik meg, miután engedélyezte az egyszeri bejelentkezést az adatforráshoz, egészen a következő csempefrissítésig. A következő csempefrissítéskor a Power BI az SSO-t már konfiguráltként használja, és a csempék a felhasználói identitásnak megfelelően szűrve jelenítik meg az adatokat. 
 
-Ha azonnal szűrt adatokat szeretne megjeleníteni, a csempefrissítést kényszerítheti is az irányítópult jobb felső sarkában található három pontra (…), majd **Az irányítópult csempéinek frissítése** lehetőséget választva.
+Ha azonnal szűrt adatokat szeretne megjeleníteni, a csempefrissítést kényszerítheti is az irányítópult jobb felső sarkában található **További lehetőségek** (…) elemet, majd **Az irányítópult csempéinek frissítése** lehetőséget választva.
 
 Adatkészlet tulajdonosaként a csempefrissítés gyakoriságát is módosíthatja, és a csempe frissítésének felgyorsításához 15 percre is beállíthatja azt. Válassza a Power BI szolgáltatás jobb felső sarkában található fogaskerék ikont, majd a **Beállítások** lehetőséget. A **Beállítások** lapon válassza az **Adatkészletek** lehetőséget. Bontsa ki az **Ütemezett gyorsítótár-frissítés** elemet, és módosítsa az **Ütemezés gyakoriságát**. Fontos, hogy alaphelyzetbe állítsa a konfigurációt az eredeti frissítési gyakoriságra, miután a Power BI végrehajtaná a következő csempefrissítést.
 
@@ -82,5 +81,5 @@ Ha a probléma továbbra is fennáll, [kérjen támogatást](https://support.pow
 ## <a name="next-steps"></a>Következő lépések
 [A Helyszíni adatátjáróval kapcsolatos hibák elhárítása](service-gateway-onprem-tshoot.md)  
 [A Power BI Personal Gateway hibáinak elhárítása](service-admin-troubleshooting-power-bi-personal-gateway.md)  
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

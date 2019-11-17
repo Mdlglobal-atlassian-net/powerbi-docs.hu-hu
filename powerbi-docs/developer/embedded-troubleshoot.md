@@ -3,18 +3,17 @@ title: Beágyazott alkalmazás hibaelhárítása
 description: Ez a cikk azokat a gyakori problémákat ismerteti, amelyek Power BI-tartalmak beágyazása során merülhetnek fel.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 08d66df2456917c09b6b0c1d9c40e2de47f53fa5
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 4038ffdb9a3218c0b2f04dd524463235fa91b6b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543922"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864110"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Beágyazott alkalmazás hibaelhárítása
 
@@ -24,7 +23,7 @@ Ez a cikk azokat a gyakori problémákat ismerteti, amelyek Power BI-tartalmak b
 
 ### <a name="fiddler-trace"></a>Fiddler-nyomkövetés
 
-A [Fiddler](http://www.telerik.com/fiddler) a Telerik ingyenes eszköze, amely a HTTP-adatforgalom figyelésére használható.  A Power BI API-k használatával megtekintheti a forgalmat az ügyfélszámítógépen. Az eszköz hibaüzenetek és egyéb, kapcsolódó információk megjelenítésére is képes.
+A [Fiddler](https://www.telerik.com/fiddler) a Telerik ingyenes eszköze, amely a HTTP-adatforgalom figyelésére használható.  A Power BI API-k használatával megtekintheti a forgalmat az ügyfélszámítógépen. Az eszköz hibaüzenetek és egyéb, kapcsolódó információk megjelenítésére is képes.
 
 ![Nyomon követés a Fiddlerrel](media/embedded-troubleshoot/fiddler.png)
 
@@ -78,9 +77,9 @@ A hiba további felderítéséhez szükség lehet a Fidlerre a forgalom rögzít
 
 * A felhasználó túllépte a megosztási kapacitásban létrehozható beágyazási tokenek számát. Azure-kapacitást kell vásárolni a beágyazási tokenek létrehozásához, és a munkaterületet ehhez a kapacitáshoz kell rendelni. További információért lásd: [Power BI Embedded-kapacitás létrehozása az Azure Portalon](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * Lejárt az Azure AD-hitelesítési token.
-* A hitelesített felhasználó nem tagja a csoportnak (alkalmazás-munkaterület).
-* A hitelesített felhasználó nem rendszergazdája a csoportnak (alkalmazás-munkaterület).
-* A hitelesített felhasználó nem rendelkezik megfelelő engedélyekkel. Az engedélyek a [refreshUserPermissions API](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions) segítségével frissíthetők
+* A hitelesített felhasználó nem tagja a csoportnak (munkaterület).
+* A hitelesített felhasználó nem rendszergazdája a csoportnak (munkaterület).
+* A hitelesített felhasználó nem rendelkezik megfelelő engedélyekkel. Az engedélyek a [refreshUserPermissions API](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions) segítségével frissíthetők
 * Az engedélyezési fejléc nem megfelelően szerepel. Ellenőrizze, hogy nincsenek-e benne elgépelések.
 
 Lehet, hogy az alkalmazás háttérszolgáltatásának a GenerateToken-hívás előtt frissítenie kell a hitelesítési tokent.
@@ -293,7 +292,7 @@ A **Beágyazás a cég számára** mintaalkalmazás futtatásánál az alábbi h
 
     AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
 
-Ennek a hibának az az oka, hogy a webkiszolgáló alkalmazáshoz megadott átirányítási URL-cím más, mint a minta URL-cím. A mintaalkalmazás regisztrálásához használja a `http://localhost:13526/` címet átirányítási URL-ként.
+Ennek a hibának az az oka, hogy a webkiszolgáló alkalmazáshoz megadott átirányítási URL-cím más, mint a minta URL-cím. A mintaalkalmazás regisztrálásához használja a `https://localhost:13526/` címet átirányítási URL-ként.
 
 Ha szerkeszteni szeretné a regisztrált alkalmazást, ismerje meg, hogyan lehet [frissíteni az Azure AD-ben regisztrált alkalmazást](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), hogy az alkalmazás hozzáférhessen a webes API-khoz.
 
@@ -305,7 +304,7 @@ Ha a következő hiba jelenik meg – AADSTS50079: A felhasználónak többtény
 
 További információ: [Power BI Embedded – gyakori kérdések](embedded-faq.md).
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 
 Ha további segítségre van szüksége, [forduljon az ügyfélszolgálathoz](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) vagy [hozzon létre egy támogatási jegyet az Azure Portalon keresztül](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest), és adja meg a látott hibaüzenet(ek)et.
 
@@ -313,4 +312,4 @@ Ha további segítségre van szüksége, [forduljon az ügyfélszolgálathoz](ht
 
 További információ: [GYIK](embedded-faq.md).
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

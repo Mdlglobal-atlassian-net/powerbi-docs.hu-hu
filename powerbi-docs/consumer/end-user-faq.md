@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: bf3e7b790788c8ce21b222a083a853b06185acc0
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 5166c99a66178fb29ecab3d5ed0a660f694f7a61
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71943325"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73430040"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Gyakori kérdések – Power BI
 
@@ -24,11 +24,11 @@ ms.locfileid: "71943325"
 
 ## <a name="what-is-the-microsoft-power-bi-service"></a>Mi a Microsoft Power BI szolgáltatás?
 
-A Power BI egy felhőalapú üzleti analitikai szolgáltatás, amely bárki számára lehetővé teszi az adatok vizualizációját és elemzését gyors, hatékony és átlátható módon. Egyszerűen használható irányítópultokon, interaktív jelentéseket és az adatokat életre keltő látványos vizualizációkon keresztül teszi elérhetővé a felhőben és helyben tárolt adatok számos típusát. További tudnivalók a [Power BI-ról](../power-bi-overview.md).
+A Power BI egy felhőalapú üzleti analitikai szolgáltatás, amely bárki számára lehetővé teszi az adatok vizualizációját és elemzését gyors, hatékony és átlátható módon. Egyszerűen használható irányítópultokon, interaktív jelentéseket és az adatokat életre keltő látványos vizualizációkon keresztül teszi elérhetővé a felhőben és helyben tárolt adatok számos típusát. További tudnivalók a [Power BI-ról](../fundamentals/power-bi-overview.md).
 
 ## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Mi a különbség a Power BI Pro és a Power BI Premium között?
 
-A Power BI Pro egyéni licenc, amely hozzáférést biztosít a Power BI szolgáltatás minden tartalmához és funkciójához. Megoszthat tartalmakat, és lehetőség van más Pro-felhasználókkal való együttműködésre is. Csak a Pro szintű felhasználók tehetnek közzé tartalmat alkalmazás-munkaterületeken, oszthatnak meg irányítópultokat, és iratkozhatnak fel irányítópultokra és jelentésekre.
+A Power BI Pro egyéni licenc, amely hozzáférést biztosít a Power BI szolgáltatás minden tartalmához és funkciójához. Megoszthat tartalmakat, és lehetőség van más Pro-felhasználókkal való együttműködésre is. Csak a Pro szintű felhasználók tehetnek közzé tartalmat munkaterületeken, oszthatnak meg irányítópultokat, és iratkozhatnak fel irányítópultokra és jelentésekre.
 
 A Power BI Premium szint fenntartott kapacitást biztosít, amellyel konzisztensebb teljesítmény érhető el. Emellett nagyobb adatméreteket támogat a Power BI-ban. Egyéni felhasználók esetén a Premium szint lehetővé teszi, hogy a Pro-felhasználók széles körben megoszthassák a tartalmat úgy, hogy ehhez nincs szükségük arra, hogy a tartalom címzettjei felhasználónkénti licencekkel rendelkezzenek.
 

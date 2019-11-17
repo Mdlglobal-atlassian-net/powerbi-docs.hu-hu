@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 46f9d40b5e556c0d306aa77243a49835fca9d812
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 5d81b1e69d9cfbba6e3ed57f678af75dab1698c3
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71141795"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019782"
 ---
 # <a name="your-content-is-up-to-date"></a>A tartalma naprakész
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 *Fogyasztóként* a *tervezők* által létrehozott, Önnel megosztott tartalmakkal dolgozik. Előfordulhat, hogy nem tudja, hogy a tartalom naprakész-e, vagy csak tudni szeretné, hogy mikor frissítették utoljára. Ha biztos lehet benne, hogy a legújabb verzióval rendelkezik, magabiztosan dolgozhat.  
  
 ![Power BI-irányítópult](media/end-user-fresh/power-bi-dashboards.png)
@@ -63,7 +66,7 @@ Ha érdekli, a legtöbb tartalom esetében megtudhatja a legutóbbi frissítés 
 ### <a name="dashboard-tiles"></a>Irányítópult-csempék
 Irányítópult-csempék esetén a Legutóbbi frissítés időbélyegének megjelenítéséhez tekintse meg a csempét fókusz módban.
 
-1. Az irányítópult-csempén válassza a három pont (...) lehetőséget, majd a **Megnyitás fókusz módban** lehetőséget.
+1. Egy irányítópult csempéjén válassza a **További lehetőségek** (...), majd a **Megnyitás fókusz módban** lehetőséget.
 
     ![a három pont után megjelenő menü](media/end-user-fresh/power-bi-focus-mode.png)
 
@@ -72,7 +75,7 @@ Irányítópult-csempék esetén a Legutóbbi frissítés időbélyegének megje
     ![széles böngésző a legutóbbi frissítés dátumával](media/end-user-fresh/power-bi-last-refresh2.png)
 
 ### <a name="dashboards-and-reports"></a>Irányítópultok és jelentések
-A legutóbbi frissítés dátumát egy másik módszerrel, a **Kapcsolódó megtekintése** lehetőséggel is megkeresheti.  A **Kapcsolódó megtekintése** lehetőség a Power BI felső menüsávjában, a három pontra (...) kattintva érhető el.
+A legutóbbi frissítés dátumát egy másik módszerrel, a **Kapcsolódó megtekintése** lehetőséggel is megkeresheti.  A **Kapcsolódók megtekintése** lehetőség a Power BI felső menüsávjában, a **További lehetőségek** (...) lehetőséget választva érhető el.
 
 ![A Kapcsolódó megtekintése lehetőség kiválasztása a menüből](media/end-user-fresh/power-bi-view-related-dropdown.png)
 

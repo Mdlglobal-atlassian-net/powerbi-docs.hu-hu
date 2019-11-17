@@ -2,7 +2,6 @@
 title: Automatikus lapfrissítés Power BI Desktopban (előzetes verzió)
 description: Megtudhatja, hogyan frissítheti az oldalakat a DirectQuery-forrásokhoz a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 546dffe20d6840544eca1360945482630a686069
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 4c2217495ee8b735bc600c9b803897a408495472
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307984"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878773"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatikus lapfrissítés Power BI Desktopban (előzetes verzió)
 
@@ -112,7 +111,7 @@ A **kapacitások** egy alapvető Power BI-fogalom, amely a Power BI-tartalmak ü
 
 Megosztott kapacitással munkafolyamatai más ügyfelekkel megosztott számítási erőforrásokon futnak. Mivel a kapacitásnak meg kell osztania az erőforrásokat, korlátozásokat kell bevezetni a *tisztességes játék* érdekében, például hogy a maximális modellméretet (1 GB) és a maximális napi frissítési gyakoriságot (naponta nyolc alkalommal) lehessen használni.
 
-A Power BI **munkaterületei** a kapacitásokon belül találhatók, és biztonsági, együttműködési és üzembe helyezési tárolókat jelentenek. Minden Power BI-felhasználó rendelkezik **Saját munkaterülettel**. Az együttműködéshez és a fejlesztéshez további munkaterületek is létrehozhatók, ezeket **Alkalmazás-munkaterületeknek** nevezzük. Alapértelmezés szerint a munkaterületek, így a személyes munkaterületek is a **megosztott kapacitásban** lesznek létrehozva.
+A Power BI **munkaterületei** a kapacitásokon belül találhatók, és biztonsági, együttműködési és üzembe helyezési tárolókat jelentenek. Minden Power BI-felhasználó rendelkezik **Saját munkaterülettel**. Az együttműködéshez és a fejlesztéshez további munkaterületek is létrehozhatók, ezeket **munkaterületeknek** nevezzük. Alapértelmezés szerint a munkaterületek, így a személyes munkaterületek is a **megosztott kapacitásban** lesznek létrehozva.
 
 Néhány információ a kétféle munkaterület használatáról:
 

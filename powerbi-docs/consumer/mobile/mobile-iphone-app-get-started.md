@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: 2de1b866a237a0193c33c552078ca70bd5e632ce
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: cc239ad33d8789d679fccd21339740af71155336
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67498990"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73059449"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Első lépések az iOS-eszközökhöz készült Power BI mobilalkalmazással
 Az iPhone-on, iPaed és iPod Touchon futó iOS-es Microsoft Power BI alkalmazás mobil BI-élményt kínál a Power BI-hoz, a Power BI jelentéskészítő kiszolgálóhoz és a Reporting Services-hez. Az élő, érintéssel vezérelhető mobil hozzáférés révén bárhonnan megtekintheti és kezelheti vállalata helyszíni és felhőbeli irányítópultjait. Fedezze fel az adatokat az irányítópultokon, és ossza meg eredményeit munkatársaival e-mailben vagy SMS-ben. Kísérje figyelemmel a legidőszerűbb adatokat [Appla Watch](mobile-apple-watch.md)on.  
@@ -31,7 +31,7 @@ Ezután az iOS-es Power BI mobilalkalmazásban a helyszínen és a felhőben is 
 Ismerje meg [a Power BI mobilalkalmazások újdonságait](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="download-the-app"></a>Alkalmazás letöltése
-[iOS-alkalmazás letöltése](http://go.microsoft.com/fwlink/?LinkId=522062 "iOS-alkalmazás letöltése") az Apple App Store-ból iPhone-ra, iPadre vagy iPod Touchra.
+Az [iOS-alkalmazás letöltése](http://go.microsoft.com/fwlink/?LinkId=522062 "Az iOS-alkalmazás letöltése") az Apple App Store-ból iPhone-ra, iPadre vagy iPod Touchra.
 
 Az iOS-es Power BI alkalmazást az iOS 11 vagy újabb rendszert futtató eszközök bármelyikén futtathatja. 
 
@@ -109,7 +109,7 @@ További információ a [Power BI-mobilalkalmazások Microsoft Intune-nal tört�
 
 ## <a name="next-steps"></a>Következő lépések
 
-* [Mi az a Power BI?](../../power-bi-overview.md)
+* [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
 
 

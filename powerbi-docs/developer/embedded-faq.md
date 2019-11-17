@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: 62b5498558b2c89a23e2ed2caf3dacdf343d3a79
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: 81eb5de3294430c3960502700bb6255aea43f91a
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490332"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429275"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Gyakori kérdések – Power BI Embedded
 
@@ -67,7 +67,7 @@ Itt látható egy részlet a funkcióeltérések listájából.
 | Funkció | Power BI Embedded | Power BI Premium-kapacitás | Power BI Premium-kapacitás |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | A SKU-k – Azure-kapacitás | EM SKU-k – O365-kapacitás | P SKU-k – O365-kapacitás |
-| Összetevők beágyazása Power BI alkalmazás munkaterületeiről | Igen | Igen | Igen |
+| Összetevők beágyazása Power BI-munkaterületről | Igen | Igen | Igen |
 | Power BI-jelentések használata beágyazott alkalmazásokban – Saas | Nem | Igen | Igen |
 | Power BI-jelentések használata beágyazott alkalmazásokban – Paas | Igen | Igen | Igen |
 | Power BI-jelentések használata SharePointban | Nem | Igen | Igen |
@@ -146,7 +146,7 @@ Igen, vannak PowerShell-parancsmagok és Azure Resource Manager REST API-k, amel
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Mi az a PBI Embedded elkülönített kapacitási szerepkör a PBI Embedded megoldásban?
 
-Annak érdekében, hogy a [megoldást elő lehessen léptetni az éles környezetbe](embed-sample-for-customers.md#move-to-production), szükséges, hogy a Power BI-tartalom (az alkalmazásban használt alkalmazás-munkaterület) hozzá legyen rendelve egy Power BI Embedded- (A termékváltozat) kapacitáshoz.
+Annak érdekében, hogy a [megoldást elő lehessen léptetni az éles környezetbe](embed-sample-for-customers.md#move-to-production), az alkalmazásban használt Power BI-tartalmat (-munkaterületet) hozzá kell rendelni egy (A termékváltozatú) Power BI Embedded-kapacitáshoz.
 
 ### <a name="in-what-azure-regions-is-pbi-embedded-available"></a>Mely Azure-régiókban érhető el a PBI Embedded?
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 44af74b722e5d21c7475a382f8097f453854230d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 59d3f943ff893024beceff59ce3d0db6bc4d764b
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839739"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431664"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Oktatóanyag: Lapszámozott jelentés létrehozása és feltöltése a Power BI szolgáltatásba
 
@@ -44,7 +44,7 @@ Lapszámozott jelentések létrehozásának előfeltételei:
 A lapszámozott jelentés a Power BI szolgáltatásba való feltöltésének előfeltételei:
 
 - [Power BI Pro-licencre](service-admin-power-bi-pro-in-your-organization.md) lesz szüksége.
-- Egy [Power BI Premium-kapacitásban](service-premium-what-is.md) található alkalmazás-munkaterület. A munkaterület neve mellett egy gyémánt ikon látható ![prémium gyémánt ikon](media/paginated-reports-quickstart-aw/premium-diamond.png).
+- Egy [Power BI Premium-kapacitásban](service-premium-what-is.md) található munkaterületre van szüksége a szolgáltatásban. A munkaterület neve mellett egy gyémánt ikon látható ![prémium gyémánt ikon](media/paginated-reports-quickstart-aw/premium-diamond.png).
 
 ## <a name="create-the-matrix-with-a-wizard"></a>A mátrix létrehozása a varázslóval
   
@@ -58,7 +58,7 @@ A lapszámozott jelentés a Power BI szolgáltatásba való feltöltésének el�
   
 4.  Az **Adatkészlet kiválasztása** lapon válassza az **Adatkészlet létrehozása** > **Tovább** lehetőséget.  
 
-    ![Adatkészlet létrehozása](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
+    ![Adathalmaz létrehozása](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
   
 5.  Az **Adatforrás felé irányuló kapcsolat kiválasztása** lapon válassza az **Új** lehetőséget. 
 
@@ -287,7 +287,7 @@ Mielőtt közzétenné a jelentést a Power BI szolgáltatásban, még egy form�
 
 Most, hogy létrehozta a lapszámozott jelentést, ideje feltölteni a Power BI szolgáltatásba.
 
-1. A Power BI szolgáltatás (http://app.powerbi.com) ) bal oldali navigációs paneljén válassza a **Munkaterületek** > **Alkalmazás munkaterületének létrehozása** lehetőséget.
+1. A Power BI szolgáltatás (http://app.powerbi.com) ) bal oldali navigációs paneljén válassza a **Munkaterületek** > **Munkaterület létrehozása** lehetőséget.
 
 2. A munkaterületet nevezze el **Azure AW-nek** vagy adjon neki egy egyedi nevet. Egyelőre Ön az egyetlen tag. 
 

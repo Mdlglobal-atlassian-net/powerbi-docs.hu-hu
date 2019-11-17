@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 3940f677cadc5844cfac9c32781a5586bde0607a
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 3b33e2479ad114a2224c16c9d43e7797784624fc
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621295"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429650"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Több-bérlős konfiguráció kezelése Power BI Embedded-analitikával
 
@@ -37,7 +37,7 @@ Ez a cikk ismerteti és többféle kiértékelési szempont alapján elemzi a k�
 
 **Bérlő** – Egyetlen ügyfél (vállalat), amely az SaaS-alkalmazást használja, valamint minden olyan erőforrás és adat, amelyet az ügyfél beemel az SaaS-alkalmazásba.
 
-**[Power BI](../power-bi-overview.md)** – A Power BI a Power BI Embedded platformjaként szolgáló felhőszolgáltatás.
+**[Power BI](../fundamentals/power-bi-overview.md)** – A Power BI a Power BI Embedded platformjaként szolgáló felhőszolgáltatás.
 
 **Power BI-bérlő** – Egyetlen AAD-bérlőhöz társított Power BI-erőforrások halmaza.
 
@@ -55,7 +55,7 @@ Ez a cikk ismerteti és többféle kiértékelési szempont alapján elemzi a k�
 
 **Kapacitás** – A Power BI szolgáltatás futtatásához dedikált erőforrások halmaza. A [Power BI Premium-kapacitások](../service-premium-what-is.md) a Power BI-t belsőleg használó nagyvállalatoknak, a [Power BI Embedded-kapacitások](azure-pbie-create-capacity.md) pedig SaaS-alkalmazásokat külső felek számára készítő alkalmazásfejlesztőknek ajánlottak.
 
-**[Power BI Pro-licenc](../service-admin-purchasing-power-bi-pro.md)** – Felhasználói szintű licenc, amely jogot biztosít tartalom alkalmazás-munkaterületeken való közzétételére, prémium szintű kapacitás nélküli alkalmazások felhasználására, irányítópultok megosztására, valamint irányítópultokra és jelentésekre való feliratkozásra.
+**[Power BI Pro-licenc](../service-admin-purchasing-power-bi-pro.md)** – Felhasználói szintű licenc, amely jogot biztosít tartalom munkaterületeken való közzétételére, prémium szintű kapacitás nélküli alkalmazások felhasználására, irányítópultok megosztására, valamint irányítópultokra és jelentésekre való feliratkozásra.
 
 **[Adatkapcsolati módok](../desktop-directquery-about.md)** – Csatlakozás Power BI-beli adatforrásokhoz, amely többféle módon valósítható meg:
 

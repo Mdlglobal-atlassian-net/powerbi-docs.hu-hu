@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: f2d9046c907b78ce2c1bb2754007c34199877a08
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 1993ac0b300bb582d7b8a1946ff63cf6316c2d52
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523061"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432192"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Jelentés létrehozása a Power BI szolgáltatásban adatkészlet importálásával
 Már elolvasta a [Jelentések a Power BI-ban](consumer/end-user-reports.md) című cikket, és szeretne létrehozni egy saját jelentést. Jelentés többféle módon is létrehozható. Ebben a cikkben kezdésként egy Excel-adatkészletből egy alapszintű jelentést fogunk létrehozni a Power BI szolgáltatásban. Ha már megismerte a jelentések létrehozásának alapjait, akkor a lap alján található [Következő lépések](#next-steps) hivatkozással továbbhaladhat a jelentésekkel kapcsolatos összetettebb témakörökre is.  
@@ -29,7 +29,7 @@ Ha ezzel a módszerrel hoz létre egy jelentést, akkor annak kiindulópontja eg
 
 1. A jelentést a Power BI szolgáltatás egy munkaterületén fogjuk létrehozni, ezért válasszon ki egy meglévő munkaterületet, vagy hozzon létre egy újat.
    
-   ![Alkalmazás-munkaterületek listája](media/service-report-create-new/power-bi-workspaces2.png)
+   ![munkaterületek listája](media/service-report-create-new/power-bi-workspaces2.png)
 2. A bal oldalon lévő navigációs ablaktáblán válassza az **Adatok lekérése** elemet.
    
    ![Adatok lekérése](media/service-report-create-new/power-bi-get-data3.png)

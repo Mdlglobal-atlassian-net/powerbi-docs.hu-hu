@@ -11,14 +11,16 @@ ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a52fdbefabf84df22c89b0e933d56352fedf5da1
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 3a4f120ec64376955433faf04e24dd0e8f623419
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327804"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019826"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>A tartalom részletesebb megjelenítése: fókusz mód és teljes képernyős mód
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
@@ -97,11 +99,11 @@ A fókusz mód kétféleképpen nyitható meg. Az egyik irányítópult-csempék
 
 1. Nyisson meg egy irányítópultot a Power BI szolgáltatásban.
 
-2. Helyezze a kurzort egy irányítópult-csempe vagy jelentésvizualizáció fölé, válassza a három pontot (...), majd a **Megnyitás fókusz módban** lehetőséget.
+2. Helyezze a kurzort egy irányítópult-csempe vagy jelentésvizualizáció fölé, válassza a **További lehetőségek** (...) elemet, majd a **Megnyitás fókusz módban** lehetőséget.
 
     ![csempéhez tartozó Három pont menü](media/end-user-focus/power-bi-dashboard-focus.png).
 
-2. A rendszer megnyitja a csempét, és kitölti vele a jelentésvásznat. Figyelje meg, hogy a **Szűrők** panel használatával még mindig kezelni tudja a vizualizációt. A **Szűrők** panel összecsukható. 
+2. A rendszer megnyitja a csempét, és kitölti vele a jelentésvásznat. Figyelje meg, hogy a **Szűrők** panel használatával még mindig kezelni tudja a vizualizációt. A **Szűrők** panel összecsukható.
 
    ![a csempe kitölti a jelentésvásznat](media/end-user-focus/power-bi-focus-filter.png)
 

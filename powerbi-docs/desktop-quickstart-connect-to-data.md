@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 253ecbad775a2f4aa7dd1974c534fdcaa222676c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 05d8c990b7057ab59515826547a42ce1ee643ac2
+ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514455"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72891690"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Rövid útmutató: Csatlakozás adatokhoz a Power BI Desktopban
 
@@ -33,7 +33,7 @@ Az cikkben ismertetett lépések elvégzéséhez az alábbiakra lesz szüksége:
 
 ## <a name="launch-power-bi-desktop"></a>A Power BI Desktop elindítása
 
-Telepítés után indítsa el a **Power BI Desktopot** a helyi számítógépén. Egy üres vászon nyílik meg: itt hozhat létre vizualizációkat és jelentéseket azokból az adatokból, amelyekhez csatlakozott. 
+Telepítés után indítsa el a **Power BI Desktopot** a helyi számítógépén. Egy Power BI-oktatóanyag jelenik meg. Kövesse az oktatóanyagot, vagy zárja be, és kezdjen egy üres vásznon, amelyen vizualizációkat és jelentéseket hozhat létre azokból az adatokból, amelyekhez csatlakozik. 
 
 ![Power BI Desktop – üres vászon](media/desktop-quickstart-connect-to-data/qs-connect-data_01.png)
 

@@ -3,19 +3,18 @@ title: A Power BI ügyfélszolgálata nem elérhető
 description: Power BI-eset létrehozásának alternatív módjai, ha egy felhasználó nem tud bejelentkezni
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/12/2019
-ms.openlocfilehash: 830d75aaddd60ce0b678d6abdbeca7cd79a3ab28
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 37bb189f7792410ffdef30e79d36f94cc85478b4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769844"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874595"
 ---
 # <a name="troubleshooting-sign-in-issues-for-power-bi"></a>Bejelentkezési hibák elhárítása a Power BI szolgáltatásban
 
@@ -27,7 +26,7 @@ Azonban ha Ön a szervezet **bérlői rendszergazdája**, és nem tud bejelentke
 
 ## <a name="engage-the-support-team"></a>Az ügyfélszolgálat felkeresése
 
-Először hozzon létre egy támogatási jegyet a [Power BI támogatási oldalán](https://powerbi.microsoft.com/en-us/support/).
+Először hozzon létre egy támogatási jegyet a [Power BI támogatási oldalán](https://powerbi.microsoft.com/support/).
 
 Ha ezt nem tudja megtenni, próbáljon létrehozni egy jegyet az [Office 365 (O365) támogatási oldalán](https://support.office.com/home/contact).
 
@@ -50,9 +49,11 @@ Alternatívaként [Microsoft Premier támogatást](https://support.microsoft.com
 
 Ha nem tud fórumbejegyzést létrehozni a közösség oldalán, az azért lehet, mert a [Power BI-közösség fórumán](https://community.powerbi.com/) is be kell jelentkeznie.
 
+> [!Note]
+> További részletekért lásd: [Közösségi támogatás](https://community.powerbi.com/t5/Community-Support/ct-p/PBI_CommunitySupport).
+
 ## <a name="next-steps"></a>Következő lépések
 
 További oldalak, ahol Power BI-támogatást kaphat:
 
 * [Power BI Microsoft-dokumentumok](https://docs.microsoft.com/power-bi/)
-* [Power BI-beli támogatási esetek létrehozása](https://blogs.msdn.microsoft.com/charles_sterling/2017/12/01/creating-power-bi-support-cases/)

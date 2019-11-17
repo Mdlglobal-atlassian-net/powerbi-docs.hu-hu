@@ -2,19 +2,18 @@
 title: Kedvencek a Power BI-mobilalkalmazásokban
 description: Ebben a cikkben a kedvenc Power BI-irányítópultjai, jelentései, alkalmazásai, valamint Power BI jelentéskészítő kiszolgáló- és Reporting Services-jelentései és fő teljesítménymutatói (KPI-k) mobilalkalmazásokban való rögzítéséről és megtekintéséről olvashat.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 433bfc6298632eb9b999a23fe4b54417add507a3
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c4fcf7bea8bf458231533efbc88e307d8d9ba2ab
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61339355"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870683"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Kedvencek rögzítése és megjelenítése a Power BI-mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -44,7 +43,7 @@ KPI-ket és jelentéseket jelölhet meg kedvencekként a Power BI jelentéskész
   ![Kedvencek oldal](./media/mobile-apps-favorites/power-bi-ipad-favorites.png)
 
 ## <a name="make-an-app-a-favorite"></a>Alkalmazás felvétele a kedvencek közé
-1. Az alkalmazásoknak a mobilalkalmazáson belüli listájában koppintson az alkalmazás melletti három pontra (...) > **Kedvenc**.
+1. Az alkalmazások mobilalkalmazáson belüli listájában koppintson az alkalmazás melletti **További lehetőségek** (...) > **Kedvenc** elemre.
    
     ![Alkalmazások kedvenc menüje](./media/mobile-apps-favorites/power-bi-android-favorite-app-ellipsis.png)
    
@@ -65,7 +64,7 @@ Egy Power BI-irányítópult vagy jelentés az irányítópultok vagy jelentése
 ## <a name="make-a-dashboard-or-report-a-favorite-in-the-android-mobile-apps"></a>Irányítópult vagy jelentés felvétele a kedvencek közé Android-mobilalkalmazásokban
 Egy irányítópult vagy jelentés az irányítópultok vagy jelentések listájáról vagy magáról az irányítópultról vagy jelentésről is felvehető a kedvencek közé.
 
-* Az irányítópultoknak vagy jelentéseknek a mobilalkalmazáson belüli listájában koppintson a név mellett függőlegesen elhelyezkedő három pontra (...), majd a **Kedvenc** lehetőségre. A név mellett megjelenik egy sárga csillag ![Kedvenc ikon](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
+* Az irányítópultok vagy jelentések mobilalkalmazáson belüli listájában koppintson a név mellett függőlegesen elhelyezkedő **További lehetőségek** (...) elemre, majd a **Kedvenc** lehetőségre. A név mellett megjelenik egy sárga csillag ![Kedvenc ikon](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
   
     ![Kedvenc menü Androidon](./media/mobile-apps-favorites/power-bi-android-make-favorite.png)
 * Az irányítópulton vagy jelentésen koppintson a szalagon lévő üres csillagra ![Nem kedvenc ikon](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). A csillag sötétszürkére változik ![Kedvenc ikon](./media/mobile-apps-favorites/power-bi-android-favorite-icon.png).
@@ -77,5 +76,5 @@ Kedvenc Power BI jelentéskészítő kiszolgáló- és Reporting Services-jelent
 
 ## <a name="next-steps"></a>További lépések
 * [Népszerű irányítópultok a Power BI szolgáltatásban](../end-user-favorite.md) 
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

@@ -2,21 +2,19 @@
 title: Tippek és trükkök Q&A-kérdések feltevéséhez
 description: Tippek és trükkök Q&A-kérdések feltevéséhez a Power BI-ban
 author: mihart
-manager: kvivek
-ms.reviewer: ''
-ms.custom: seodec18
+ms.reviewer: Mohammad
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 10/23/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 4f6dc7167d64385182ecbd448b6c400fa7f829df
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: a6b489c11087e43ed8b10ce9bdf8088b97f48e8d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67408195"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862398"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tippek kérdések feltevéséhez a Power BI Q&A-ben
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Szavak és kifejezések, amelyeket a Q&A felismer
@@ -79,7 +77,9 @@ A Q&A mindent elkövet, hogy a feltett kérdéseket megértse és válaszolni tu
 * vizualizáció formájában jeleníti meg a válasz előnézetét. A vizualizáció a kérdés beírása és szerkesztése közben frissül (a rendszer nem várja meg, amíg a felhasználó lenyomja az Enter billentyűt).
 * helyettesítő kifejezéseket javasol a mögöttes adatkészlet(ek)ből, ha a felhasználó a kurzort a kérdésmezőbe helyezi.
 * újrafogalmazza a kérdést a mögöttes adatkészlet(ek) adatai alapján. A Q&A a használt szavakat a mögöttes adatkészlet(ek)ben található szinonimákra cseréli le. A kifejezés elolvasásával ellenőrizheti, hogy a Q&A megértette-e a kérdést. 
-* elhalványítja a számára nem érthető szavakat.
+* dupla aláhúzással jelöli a szavakat, amelyeket nem tud értelmezni.
+* egyszeres aláhúzással jelöli a szavakat, amelyeket értelmezni tud.
+* lehetővé teszi, hogy felvegye a kapcsolatot a jelentés vagy az irányítópult tulajdonosával, ha a kifejezés nem található vagy a kérdésre nem érkeznek eredmények.
 
 ## <a name="dont-stop-now"></a>Nincs megállás
 Miután a Q&A megjeleníti az eredményeket, folytathatja a beszélgetést! A vizualizáció és a Q&A interaktív funkcióinak használatával további betekintést kaphat az adatokba.
@@ -89,5 +89,5 @@ Vissza a [Q&A a Power BI-ban](end-user-q-and-a.md) című témakörhöz
 
 [Power BI – alapfogalmak](end-user-basic-concepts.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

@@ -2,30 +2,38 @@
 title: A diagramok rendezésének módosítása egy jelentésben
 description: A diagramok rendezésének módosítása egy Power BI-jelentésben
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 10/28/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 98a91b0651e7a357f0ba0462f6ba8734c64ab162
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: e325d13dd8001e8da41dc5602bf3f7dbba2f371f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70302716"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852372"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>A diagramok rendezésének módosítása egy Power BI-jelentésben
-A Power BI-jelentésekben a legtöbb vizualizációt rendezheti a kategóriáinak neve alapján betűrendben vagy az egyes kategóriák számértéke szerint. Ez a diagram például az **üzlet neve** kategória szerint van rendezve.
 
-![sávdiagram ábécé szerint rendezett X-tengellyel](media/end-user-change-sort/pbi_chartsortcategory.png)
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+A Power BI szolgáltatásban módosíthatja egy vizualizáció kinézetét, ha különböző adatmezők szerint rendezi. A vizualizáció rendezésének módosításával kiemelheti a közvetíteni kívánt információt, és biztosíthatja, hogy a vizualizáció tükrözze ezt a trendet (vagy hangsúlyt).
+
+Akár numerikus adatokat használ (például értékesítési adatokat), akár szöveges adatokat (például államneveket), tetszése szerint rendezheti a vizualizációkat és az adatok megjelenését. A Power BI nagyon rugalmas rendezhetőséget és egyszerűen használható menüket biztosít. Bármely vizualizáción válassza a **További műveletek** (...) lehetőséget, majd válassza ki a mezőt, amely alapján rendezni szeretne.
+
+![sávdiagram ábécé szerint rendezett X-tengellyel](media/end-user-change-sort/power-bi-more-actions.png)
+
+Az irányítópultokon szereplő vizualizációkat nem lehet rendezni, a Power BI-jelentésekben viszont a legtöbb vizualizációt rendezheti a kategóriáinak neve alapján betűrendben vagy az egyes kategóriák számértéke szerint. Ez a diagram például a **store name** (üzlet neve) kategória szerint van ábécésorrendbe rendezve.
+
+![sávdiagram ábécé szerint rendezett X-tengellyel](media/end-user-change-sort/pbi-chartsortcategory.png)
 
 A rendezés könnyedén módosítható egy kategóriáról (store name – üzlet neve) egy értékre (sales per square feet – értékesítés négyzetlábanként).
 
-1. Kattintson a három pontra (...), és majd a **Rendezés szempontja: Eladások négyzetméterenként** lehetőségre.
-2. Ha szükséges, kattintson újra a három pontra, majd a **Rendezés csökkenő sorrendben** lehetőségre.
+1. Válassza a **További műveletek** (...), majd a **Rendezési szempont > Sales Per Sq Ft** (Eladások négyzetméterenként) lehetőséget.
+2. Ha szükséges, válassza újból a **További műveletek** (...), majd a **Csökkenő rendezés** lehetőséget. A rendezéshez használt mező félkövérrel szedve és egy sárga sávval jelenik meg.
 
    ![videó emelkedő, majd csökkenő sorrendű rendezés kiválasztásáról](media/end-user-change-sort/sort.gif)
 
@@ -41,9 +49,9 @@ Ha azonban a **Visszaállítás alapértelmezettre** gomb szürke színnel jelen
 
 <a name="other"></a>
 ## <a name="sorting-using-other-criteria"></a>Rendezés más feltételek alapján
-Néha más mező vagy feltétel használatával szükséges rendezni a vizualizációt.  Rendezhet például hónapok (és nem betűrend) alapján, vagy a teljes számok és nem az egyes számjegyek alapján is (például, 0, 1, 9, 20, nem pedig 0, 1, 20, 9).  
+Néha más (a vizualizációban nem szereplő) mező vagy más feltételek használatával szükséges rendezni a vizualizációt.  Rendezhet például hónapok (és nem betűrend) alapján, vagy a teljes számok és nem az egyes számjegyek alapján is (például, 0, 1, 9, 20, nem pedig 0, 1, 20, 9).  A jelentéstervező frissítheti az adathalmazt az ilyen típusú rendezés engedélyezéséhez. A tervező kapcsolattartási adatai a fejléc sávban a jelentés nevét választva találhatók meg.
 
-Bizonyos esetekben lehetséges a vizualizációk kívánt feltétel, például hónap szerinti rendezése.  Ha ez nem lehetséges, szükséges lehet a jelentés alapjául szolgáló adatkészlet módosítása. Kérje meg a jelentés tervezőjét az adathalmaz frissítésére.
+![A kapcsolattartási adatokat megjelenítő legördülő lista](media/end-user-change-sort/power-bi-contact.png)
 
 ## <a name="next-steps"></a>Következő lépések
 További információk [a Power BI-jelentésekben lévő vizualizációkról](end-user-visualizations.md).

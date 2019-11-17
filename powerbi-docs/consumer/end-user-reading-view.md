@@ -13,12 +13,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/30/2019
 ms.author: mihart
-ms.openlocfilehash: ef955f672bc7266979b1e0b9ddbab6e9b6ae1ff7
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 17a142249abe1162dbbcff79c476f33eb4b80366
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70236914"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019599"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Rövid útmutató: A Power BI *felhasználói* képességeivel kapcsolatos tudnivalók
 Ebből a rövid útmutatóból megtudhatja, hogyan használhatja a Power BI-t az adatokon alapuló üzleti megállapítások felfedezéséhez. Ez a cikk nem részletes ismertető, sokkal inkább a Power BI-**felhasználók** számára elérhető műveletek rövid áttekintése.
@@ -118,7 +118,7 @@ A vizualizációk adatpontokból állnak, amelyek részleteit megtekintheti, ha 
 ### <a name="favorite-a-dashboard"></a>Irányítópult kedvencnek jelölése
 Ha egy tartalmat felvesz a *kedvencek* közé, akkor a navigációs sávból is elérheti. A navigációs sáv a Power BI szinte minden területéről látható. A kedvencek általában a leggyakrabban látogatott irányítópultok, jelentésoldalak és alkalmazások.
 
-A Power BI szolgáltatás jobb felső sarkában válassza a **Kedvenc** lehetőséget, vagy ha nem látja, a három pontot (...), majd a legördülő menüben megjelenő **Kedvenc** elemet. 
+A Power BI szolgáltatás jobb felső sarkában válassza a **Kedvenc** lehetőséget, vagy ha az nem látható, a **További lehetőségek** (...), majd a legördülő menüben megjelenő **Kedvenc** elemet. 
    
 ![Kedvenc ikon](./media/end-user-reading-view/power-bi-favorites.png)
 
@@ -168,7 +168,7 @@ További információ a [fókusz módról és a teljes képernyős módról](end
 ### <a name="sort-a-visualization"></a>Vizualizáció rendezése
 Az egy jelentésoldalon szereplő vizualizációk rendezhetők, illetve az alkalmazott módosításokkal menthetők. 
 
-Helyezze a kurzor egy vizualizációra annak aktiválásához, majd a rendezési beállítások megnyitásához kattintson a három pontra (…).
+Mutasson rá egy vizualizációra annak aktiválásához, majd a rendezési beállítások megnyitásához kattintson a **További lehetőségek** (…) elemre.
 
 ![diagram rendezése](media/end-user-reading-view/sort.gif) 
 
@@ -177,7 +177,7 @@ További információ a [vizualizációk rendezéséről](end-user-search-sort.m
 ### <a name="show-the-data-used-to-create-a-visualization"></a>A vizualizáció létrehozásához használt adatok megjelenítése
 A Power BI-vizualizációk az alapul szolgáló adathalmazokból származó adatokból jönnek létre. Ha látni szeretné a háttérfolyamatokat, a Power BI-jal *megjelenítheti* a vizualizáció létrehozásához használt adatokat. Amikor az **Adatok megjelenítése** elemet választja, a Power BI megjeleníti a vizualizáció alatt (vagy mellett) lévő adatokat.
 
-Ha a vizualizáció aktív, válassza a három pontot (...), majd az **Adatok megjelenítése** lehetőséget.
+Ha a vizualizáció aktív, válassza a **További lehetőségek** (...), majd az **Adatok megjelenítése** lehetőséget.
    
    ![Adatok megjelenítése kiválasztása](./media/end-user-show-data/power-bi-explore-show-data.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 087fe859c7b1a8ca732619866d492f143ff413c9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b010cfafc15c905cd792b9693777af94149cb1fe
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61157674"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431967"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>A Power BI szinte bármelyik elemének törlése
 Ebből a cikkből megtudhatja, hogyan törölhet egy irányítópultot, jelentést, munkafüzetet, adatkészletet, alkalmazást, vizualizációt vagy munkaterületet a Power BI szolgáltatásból.
@@ -71,7 +71,7 @@ Ha az adatkészlet egy vagy több [szervezeti tartalomcsomag](service-organizati
 
 ### <a name="to-delete-a-dataset"></a>Az adatkészlet törlésének módja
 1. Kattintson az **Adatkészletek** fülre a munkaterületén.
-2. Keresse meg a törölni kívánt adatkészletet, és kattintson a három pontra (...).  
+2. Keresse meg a törölni kívánt adathalmazt, majd válassza a **További lehetőségek** (...) elemet.  
 
     ![Adatkészletek lap](media/service-delete/power-bi-delete-datasetnew.png)
 3. A legördülő listából válassza a **Törlés** lehetőséget.
@@ -81,40 +81,41 @@ Ha az adatkészlet egy vagy több [szervezeti tartalomcsomag](service-organizati
 
    ![Irányítópult törlése párbeszédpanel](media/service-delete/power-bi-delete-dataset-confirm.png)
 
-## <a name="delete-an-app-workspace"></a>Alkalmazás munkaterületének törlése
+## <a name="delete-a-workspace"></a>Munkaterület törlése
 > [!WARNING]
-> Egy alkalmazás-munkaterület létrehozásakor létrehoz egy Office 365-csoportot. Az alkalmazás munkaterületének törlésekor ezt az Office 365-csoportot is törli. Ez azt jelenti, hogy ha törli a csoportot, akkor törlődik a többi O365 termékből is, például a SharePointból vagy a Microsoft Teams szolgáltatásból.
+> Egy munkaterület létrehozásakor létrehoz egy Office 365-csoportot. A munkaterület törlésekor pedig ezt az Office 365-csoportot is törli. Ez azt jelenti, hogy ha törli a csoportot, akkor törlődik a többi O365 termékből is, például a SharePointból vagy a Microsoft Teams szolgáltatásból.
 >
 >
 
-Ha Ön az alkalmazás munkaterületének létrehozója, törölheti azt. Törléskor a rendszer a kapcsolódó alkalmazást az összes csoporttagnál törli, és eltávolítja az AppSource-ból is, ha az egész szervezete számára elérhetővé tette az alkalmazást. Az alkalmazás-munkaterület törlése nem azonos egy alkalmazás-munkaterület elhagyásával.
+Ha Ön a munkaterület létrehozója, törölheti azt. Törléskor a rendszer a kapcsolódó alkalmazást az összes csoporttagnál törli, és eltávolítja az AppSource-ból is, ha az egész szervezete számára elérhetővé tette az alkalmazást. A munkaterület törlése nem azonos egy munkaterület elhagyásával.
 
-### <a name="to-delete-an-app-workspace---if-you-are-an-admin"></a>Az alkalmazás-munkaterület törlésének módja – rendszergazdaként
+### <a name="to-delete-a-workspace---if-you-are-an-admin"></a>A munkaterület törlésének módja – rendszergazdaként
 1. A bal oldali navigációs panelen válassza a **Munkaterületek** elemet
 
-    ![Alkalmazás munkaterületei](media/service-delete/power-bi-delete-workspace.png)
-2. Kattintson a törölni kívánt munkaterülettől jobbra található három pontra (...), és válassza a **Munkaterület szerkesztése** lehetőséget.
+2. Válassza a törölni kívánt munkaterülettől jobbra található **További lehetőségek** (...) elemet, majd a **Munkaterület szerkesztése** lehetőséget.
 
-   ![három pont menü > Munkaterület szerkesztése](media/service-delete/power-bi-edit-workspace.png)
+    ![munkaterületek](media/service-delete/power-bi-delete-workspace.png)
+
 3. A **Munkaterület szerkesztése** ablakban válassza a **Munkaterület törlése** > **Törlés** lehetőséget.
 
     ![munkaterület törlése](media/service-delete/power-bi-delete-workspace2.png)
 
-### <a name="to-remove-an-app-workspace-from-your-list"></a>Alkalmazás-munkaterület eltávolítása a listából
-Ha már nem szeretne tag lenni egy alkalmazás munkaterületén, ***elhagyhatja***, és ezzel a rendszer eltávolítja azt a listájáról. Ha elhagy egy munkaterületet, a munkaterület többi tagja számára nem változik semmi.  
+### <a name="to-remove-a-workspace-from-your-list"></a>Munkaterület eltávolítása a listából
+Ha már nem szeretne egy munkaterület tagja lenni, ***elhagyhatja***, és ekkor a rendszer eltávolítja azt a listából. Ha elhagy egy munkaterületet, a munkaterület többi tagja számára nem változik semmi.  
 
 > [!IMPORTANT]
-> Ha Ön az egyetlen rendszergazda az alkalmazás munkaterületén, a Power BI nem fogja engedélyezni, hogy elhagyja a munkaterületet.
+> Ha Ön az egyetlen rendszergazda a munkaterületen, a Power BI nem fogja engedélyezni, hogy elhagyja azt.
 >
 >
 
-1. Lépjen az eltávolítani kívánt alkalmazás-munkaterületre.
-2. A jobb felső sarokban kattintson a három pontra (...), és válassza a **Kilépés a munkaterületről** > **Kilépés** lehetőséget.
+1. Lépjen az eltávolítani kívánt munkaterületre.
+
+2. A jobb felső sarokban válassza a **További lehetőségek** (...), majd a **Kilépés a munkaterületből** > **Kilépés** lehetőséget.
 
       ![kilépés a munkaterületből](media/service-delete/power-bi-leave-workspace.png)
 
    > [!NOTE]
-   > A legördülő listában megjelenő lehetőségek attól függnek, hogy az adott alkalmazás-munkaterületen tag-e, vagy pedig rendszergazda.
+   > A legördülő listában megjelenő lehetőségek attól függnek, hogy az adott munkaterületnek tagja vagy rendszergazdája-e.
    >
    >
 

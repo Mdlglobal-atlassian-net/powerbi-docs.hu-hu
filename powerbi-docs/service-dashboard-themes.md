@@ -2,7 +2,6 @@
 title: Irányítópult-témák használata a Power BI szolgáltatásban
 description: Megtudhatja, hogyan használhat egyéni színpalettát, és hogyan alkalmazhatja azt egy egész irányítópultra a Power BI szolgáltatásban
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/22/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8e444c78c1f6f9f3f0be1375f96f7381489cc069
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e2793fe56df462fd5f1bd1c266b75ad14fd9b375
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61143693"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877457"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Irányítópult-témák használata a Power BI szolgáltatásban
 Az **Irányítópult-témák** használatával egységes színtémát alkalmazhat az egész irányítópultra, például a cég színeit, az évszaknak megfelelő színeket vagy bármely más színtémát, amit csak szeretne. **Irányítópult-témák** alkalmazásakor az irányítópulton szereplő összes vizualizáció a kiválasztott téma színeit fogja használni (ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be).
@@ -30,7 +29,7 @@ Az irányítópulton lévő jelentésvizualizációk színének megváltoztatás
 
 
 ## <a name="how-dashboard-themes-work"></a>Az irányítópult-témák használata
-Először nyisson meg egy olyan irányítópultot, amelyet Ön hozott létre (vagy amelyhez szerkesztési jogosultsága van), és amelyet testre kíván szabni. Válassza a három pontot (…), majd az **Irányítópult-téma** lehetőséget. 
+Először nyisson meg egy olyan irányítópultot, amelyet Ön hozott létre (vagy amelyhez szerkesztési jogosultsága van), és amelyet testre kíván szabni. Válassza a **További lehetőségek** (...), majd az **Irányítópult-téma** elemet. 
 
 ![irányítópult-téma választási lehetőség](media/service-dashboard-themes/power-bi-dashboard-theme.png)
 

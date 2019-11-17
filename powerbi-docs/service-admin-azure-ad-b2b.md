@@ -2,7 +2,6 @@
 title: Tartalom terjesztése Azure AD B2B-s külső vendégfelhasználóknak
 description: A Power BI integrálható az Azure Active Directory vállalatközi felhasználásra szánt verziójával (Azure AD B2B), ami lehetővé teszi, hogy a Power BI-tartalmakat cégen kívüli vendégfelhasználókkal is biztonságosan meg tudja osztani.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b7327a7b32aacd222efc422263187f29285bd73
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: bcde2bc456ee48e8dc66d6c0ba6b17d79fbe43a8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075772"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858011"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Power BI tartalmak terjesztése Azure AD B2B külső vendégfelhasználóknak
 
@@ -81,7 +80,7 @@ Az [Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessé
 
 ### <a name="use-power-bi-premium"></a>Prémium szintű Power BI használata
 
-Ha az alkalmazás munkaterületét [Power BI Premium-kapacitáshoz](service-premium-what-is.md) rendeli, a vendégfelhasználó Power BI Pro-licenc nélkül is használhatja az alkalmazást. A Power BI Premium az alkalmazások tekintetében további előnyöket, például gyakoribb frissítéseket, dedikált kapacitást és nagy modellméretet biztosít.
+Ha a munkaterületet [Power BI Premium-kapacitáshoz](service-premium-what-is.md) rendeli, a vendégfelhasználó Power BI Pro-licenc nélkül is használhatja az alkalmazást. A Power BI Premium az alkalmazások tekintetében további előnyöket, például gyakoribb frissítéseket, dedikált kapacitást és nagy modellméretet biztosít.
 
 ![Vendégfelhasználói felület ábrája a Power BI Premiummal.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
@@ -113,6 +112,8 @@ Ha elő szeretné segíteni ezen felhasználók könnyebb bejelentkezését a Po
 
 * A vendégeknek a külső Azure AD B2B alapértelmezés szerint csak olvasási jogosultságot ad a tartalomhoz. A külső Azure AD B2B-vendégek megtekinthetnek alkalmazásokat, irányítópultokat, jelentéseket, illetve adatokat exportálhatnak, és irányítópultokhoz és jelentésekhez kapcsolódó e-mail-értesítéseket hozhatnak létre. Nem férhetnek hozzá azonban munkaterületekhez, és nem tehetik közzé saját tartalmaikat. Ezek a korlátozások azonban nem vonatkoznak azokra a vendégfelhasználókra, akik az [Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) funkcióval kaptak hozzáférést.
 
+* Vendégfelhasználók meghívásához Power BI Pro-licencre van szükség. A Pro-próbaverzióval rendelkező felhasználók nem hívhatnak meg vendégfelhasználókat a Power BI-ban.
+
 * Az [Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) funkcióval engedélyezett vendégfelhasználók számára egyes elemek nem elérhetők. Jelentések frissítéséhez vagy közzétételéhez nekik a Power BI szolgáltatás webes felületét kell használniuk, így a Power BI Desktop-fájlok feltöltéséhez az Adatok lekérése lehetőséget.  Az alábbi használati módok nem támogatottak:
     * Közvetlen közzététel a Power BI Desktopból a Power BI szolgáltatásba
     * A vendégfelhasználók nem csatlakozhatnak a Power BI szolgáltatás szolgáltatói adathalmazaihoz a Power BI Desktoppal
@@ -127,7 +128,12 @@ Ha elő szeretné segíteni ezen felhasználók könnyebb bejelentkezését a Po
     * A vendégfelhasználók nem használhatják az Elemzés az Excelben funkciót
     * A vendégfelhasználók nem szerepelhetnek @mentioned minőségben a megjegyzésekben
     * A vendégfelhasználók nem használhatnak feliratkozásokat
-    * Azon vendégfelhasználóknak, akik ezt a funkciót veszik igénybe, munkahelyi vagy iskolai fiókkal kell rendelkezniük. A személyes fiókkal rendelkező vendégfelhasználók további bejelentkezési korlátozásokat tapasztalhatnak.
+    * Azon vendégfelhasználóknak, akik ezt a funkciót veszik igénybe, munkahelyi vagy iskolai fiókkal kell rendelkezniük. 
+    
+* A személyes fiókkal rendelkező vendégfelhasználók további bejelentkezési korlátozásokat tapasztalhatnak.
+    * Webböngészőben is használhatják a Power BI szolgáltatás felhasználási felületeit
+    * Nem használhatják a Power BI-mobilalkalmazásokat.
+    * Nem tudnak majd bejelentkezni a hitelesítő adatok megadásához azokban az esetekben, amelyekben munkahelyi vagy iskolai fiók szükséges.
 
 * Ez a funkció a Power BI SharePoint Online-jelentés kijelzőjéhez jelenleg nem érhető el.
 

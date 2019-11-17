@@ -1,6 +1,6 @@
 ---
 title: Jelentések és irányítópultok beágyazása alkalmazásokból
-description: Megtudhatja, hogyan integrálhat vagy ágyazhat be egy jelentést vagy irányítópultot egy Power BI-alkalmazásból, és nem az alkalmazás-munkaterületről.
+description: Megtudhatja, hogyan integrálhat vagy ágyazhat be egy jelentést vagy irányítópultot egy Power BI-alkalmazásból, és nem a munkaterületről.
 author: rkarlin
 ms.author: rkarlin
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.custom: mvc
 manager: kfile
 ms.date: 11/27/2018
-ms.openlocfilehash: 5a988eb160ce772d2c2e70e8cba2c01d3f0a36a9
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 1883d82b47c32f3c7f03e55a177429d09ce337a2
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750899"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73430854"
 ---
 # <a name="embed-reports-or-dashboards-from-apps"></a>Jelentések és irányítópultok beágyazása alkalmazásokból
 
@@ -42,7 +42,7 @@ A Power BI-ban létrehozhat az irányítópultokat és jelentéseket egy helyen 
 
 ## <a name="next-steps"></a>Következő lépések
 
-Tekintse át, hogyan ágyazhat be tartalmakat az alkalmazás-munkaterületről külső ügyfelekhez és a saját szervezetébe:
+Tekintse át, hogyan ágyazhat be tartalmakat a munkaterületről külső ügyfelekhez és a szervezetbe:
 
 > [!div class="nextstepaction"]
 >[Beágyazás külső ügyfelek számára](embed-sample-for-customers.md)
