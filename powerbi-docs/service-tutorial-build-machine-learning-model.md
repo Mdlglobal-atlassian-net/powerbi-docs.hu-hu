@@ -2,7 +2,6 @@
 title: 'Oktatóanyag: Gépi tanulási modell létrehozása a Power BI-ban'
 description: Ebben az oktatóanyagban egy Machine Learning-modellt fog létrehozni a Power BI-ban.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 75f6449c4795fd0095c46a33b33fd3ef14045e35
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 78b29a4e71e75793e168da25987b3e9c4a8b13f4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432242"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877006"
 ---
 # <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>Oktatóanyag: Gépi tanulási modell létrehozása a Power BI-ban
 
@@ -47,7 +46,7 @@ Az adatkészlet letölthető az UC Irvine webhelyről. Az adatkészlet a jelen o
 
 Ahhoz, hogy létre tudja hozni az adatfolyamban az entitásokat, be kell jelentkeznie a Power BI szolgáltatásba, és egy olyan munkaterületre kell navigálnia a dedikált kapacitásán belül, amelyben engedélyezve van az AI.
 
-Ha még nincs munkaterülete, létrehozhat egyet. Ehhez válassza a **Munkaterületek** elemet a Power BI szolgáltatás bal oldali navigációs menüjében, majd a megjelenő panel alján válassza az **Munkaterület létrehozása** lehetőséget. Ez megnyit egy panelt a jobb oldalon, ahol megadhatja a munkaterület adatait. Írja be a munkaterület nevét, majd válassza a **Speciális** lehetőséget. A választógombbal győződjön meg róla, hogy a munkaterület dedikált kapacitást használ, és olyan dedikáltkapacitás-példányhoz van rendelve, amelyhez be van kapcsolva az AI előzetes verziója. Kattintson a **Mentés** gombra.
+Ha még nincs munkaterülete, létrehozhat egyet. Ehhez válassza a **Munkaterületek** elemet a Power BI szolgáltatás bal oldali navigációs ablaktáblájában, majd a megjelenő panel alján válassza a **Munkaterület létrehozása** lehetőséget. Ez megnyit egy panelt a jobb oldalon, ahol megadhatja a munkaterület adatait. Írja be a munkaterület nevét, majd válassza a **Speciális** lehetőséget. A választógombbal győződjön meg róla, hogy a munkaterület dedikált kapacitást használ, és olyan dedikáltkapacitás-példányhoz van rendelve, amelyhez be van kapcsolva az AI előzetes verziója. Kattintson a **Mentés** gombra.
 
 ![Munkaterület létrehozása](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png)
 

@@ -2,7 +2,6 @@
 title: Vizualizációk használata felhasználók számára
 description: A Power BI alapfogalmai és szakkifejezései – vizualizációk. Mi az a Power BI-vizualizáció?
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7f72e53fe9f017f5f12893711858cc9179b883dd
-ms.sourcegitcommit: 5410a17c6325406c9d9364585d7c26de4d9488ae
+ms.openlocfilehash: fc663f34b5ed95502f84f3858cb54cdb42f6fead
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379969"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860983"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Interakció vizualizációkkal jelentésekben, irányítópultokon és alkalmazásokban
 
@@ -52,7 +51,7 @@ Sok ilyen lehetőségnél az adminisztrátor vagy a *tervező* letilthatja azt, 
 |[Érdekes tények vagy trendek Power BI általi keresésének kérése](end-user-insights.md) a vizualizáció adataiban.  Ezeket az automatikusan létrehozott vizualizációkat *betekintéseknek* nevezzük.     |    igen     |  a teljes jelentéshez, nem pedig az egyes vizualizációkhoz       | nem   |
 |[Egyszerre csak egy vizualizáció megjelenítése a *fókusz* mód használatával](end-user-focus.md).     | igen        |   igen      | na  |
 |[A vizualizáció legutolsó frissítési időpontjának megkeresése](end-user-fresh.md).     |  igen       |    igen     | na  |
-|[Egyszerre csak egy vizualizáció megjelenítése keretek és navigációs sávok nélkül a *teljes képernyős* vagy *fókusz* mód használatával](end-user-focus.md).     |   igen      |  igen       | alapértelmezés szerint  |
+|[Egyszerre csak egy vizualizáció megjelenítése keretek és navigációs panelek nélkül a *teljes képernyős* vagy *fókusz* mód használatával](end-user-focus.md).     |   igen      |  igen       | alapértelmezés szerint  |
 |[Nyomtatás](end-user-print.md).     |  igen       |   igen      | nem  |
 |[Részletes elemzés a vizualizáción vizualizációs szűrők hozzáadásával és módosításával.](end-user-report-filter.md)     |    nem     |   igen      | nem  |
 |Az egérmutató a vizualizáció fölé helyezése esetén további részletek és eszköztippek jelennek meg.     |    igen     |   igen      | igen  |
