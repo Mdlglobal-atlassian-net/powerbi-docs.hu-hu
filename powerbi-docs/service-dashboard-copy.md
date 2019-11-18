@@ -2,7 +2,6 @@
 title: Power BI-irányítópult másolatának létrehozása
 description: 'Power BI-irányítópult duplikálása '
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: fc255cda798b528acf7f782efac742872a442d41
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: ab629c15f1e1e998c3870b95993cdf7348cb15ff
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021073"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872827"
 ---
 # <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Irányítópult másolatának létrehozása a Power BI szolgáltatásban
 ![irányítópult](media/service-dashboard-copy/power-bi-dashboard.png)
@@ -50,5 +49,5 @@ Az irányítópultról csak az irányítópult *létrehozója* készíthet máso
 ## <a name="next-steps"></a>Következő lépések
 * [Tippek a tökéletes irányítópult megtervezéséhez](service-dashboards-design-tips.md) 
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

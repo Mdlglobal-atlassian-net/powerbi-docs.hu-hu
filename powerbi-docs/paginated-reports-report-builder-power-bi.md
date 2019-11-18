@@ -3,18 +3,17 @@ title: Mik a lapszámozott jelentések a Power BI Premiumban?
 description: A lapszámozott jelentések, melyek az SQL Server Reporting Services szabványos jelentéstípusát képviselik már régóta, mostantól elérhetők a Power BI szolgáltatásban. Ezek a jelentések kinyomtathatók vagy megoszthatók. Elrendezésük pontosan vezérelhető. Minden adatot egy táblázatban jelenítenek meg, akkor is, ha az több oldalon keresztül fut.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 09/24/2019
-ms.openlocfilehash: a0172f655a53e80b4c5ef8a3bdb922ddaec789b4
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 9e49e8e70e7bc499fbcfe0c263bdd8315f2c7dbe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431552"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874715"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Mik a lapszámozott jelentések a Power BI Premiumban?
 
@@ -26,7 +25,7 @@ A lapszámozott jelentések számos oldalból állhatnak. Ez a jelentés példá
 
 ![Lapszámozott jelentés a Power BI szolgáltatásban](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-A jelentés előnézetét megtekintheti a Jelentéskészítőben, majd közzéteheti a Power BI szolgáltatásban (http://app.powerbi.com ). A szolgáltatásban csak Power BI Pro-licenccel tehet közzé jelentéseket. Többoldalas jelentéseket a Saját munkaterületen, vagy olyan munkaterületeken tehet közzé, amelyek Power BI Premium-kapacitáshoz tartoznak. Emellett egy Power BI-rendszergazdának engedélyeznie kell a lapszámozott jelentéseket a Power BI felügyeleti portáljának [Premium-kapacitásokkal foglalkozó szakaszában](service-admin-premium-workloads.md#paginated-reports). 
+A jelentés előnézetét megtekintheti a Jelentéskészítőben, majd közzéteheti a Power BI szolgáltatásban (https://app.powerbi.com ). A szolgáltatásban csak Power BI Pro-licenccel tehet közzé jelentéseket. Többoldalas jelentéseket a Saját munkaterületen, vagy olyan munkaterületeken tehet közzé, amelyek Power BI Premium-kapacitáshoz tartoznak. Emellett egy Power BI-rendszergazdának engedélyeznie kell a lapszámozott jelentéseket a Power BI felügyeleti portáljának [Premium-kapacitásokkal foglalkozó szakaszában](service-admin-premium-workloads.md#paginated-reports). 
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Jelentések létrehozása a Power BI Jelentéskészítőben
 
@@ -62,7 +61,7 @@ A lapszámozott jelentések minden eleme – a jelentéstől kezdve a szövegmez
 
 ## <a name="creating-a-report-definition"></a>Jelentésdefiníció létrehozása
 
-Lapszámozott jelentés tervezésekor valójában egy *jelentésdefiníciót készít*. Ez nem tartalmazza az adatokat. Az adatok lekérésének helyét, a lekérendő adatokat és azok megjelenítési módját szabja meg. A jelentés futtatásakor a jelentésfeldolgozó a megadott jelentésdefiníció és a lekért adatok a jelentés elrendezésének egyesítésével létrehozza a jelentést. A jelentésdefiníciót Ön ezután feltölti a Power BI szolgáltatásba (http://app.powerbi.com ), vagy a Saját munkaterületre, vagy egy munkatársakkal megosztott munkaterületre. Ha a jelentés adatforrása helyszíni, a jelentés feltöltése után az adatforrás kapcsolatát átirányítja egy átjárón. 
+Lapszámozott jelentés tervezésekor valójában egy *jelentésdefiníciót készít*. Ez nem tartalmazza az adatokat. Az adatok lekérésének helyét, a lekérendő adatokat és azok megjelenítési módját szabja meg. A jelentés futtatásakor a jelentésfeldolgozó a megadott jelentésdefiníció és a lekért adatok a jelentés elrendezésének egyesítésével létrehozza a jelentést. A jelentésdefiníciót Ön ezután feltölti a Power BI szolgáltatásba (https://app.powerbi.com ), vagy a Saját munkaterületre, vagy egy munkatársakkal megosztott munkaterületre. Ha a jelentés adatforrása helyszíni, a jelentés feltöltése után az adatforrás kapcsolatát átirányítja egy átjárón. 
 
 ## <a name="view-your-paginated-report"></a>A lapszámozott jelentés megtekintése
 A lapszámozott jelentést a böngészős Power BI szolgáltatásban és a Power BI mobilalkalmazásokban is megtekintheti. A Power BI szolgáltatásból exportálhatja a jelentést több formátumban, így például HTML, MHTML, PDF, XML, CSV, TIFF, Word és Excel formátumokban. Emellett megoszthatja másokkal.  

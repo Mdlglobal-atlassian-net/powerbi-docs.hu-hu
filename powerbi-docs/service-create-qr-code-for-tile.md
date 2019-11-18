@@ -2,7 +2,6 @@
 title: QR-kód létrehozása egy csempéhez a Power BI mobilalkalmazásokban történő használathoz
 description: A Power BI-ban a QR-kódok a való világból bármit képesek közvetlenül a hozzájuk kapcsolódó BI-információkhoz kapcsolni, így nincs szükség keresésre.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e08d37f3db6156de21f00813a90b1c7544345abe
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 10faca7cf81575dddd2abb29afee1aca0e9f1279
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021188"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853346"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>QR-kód létrehozása egy Power BI-csempéhez mobilalkalmazásokban történő használathoz
 A Power BI-ban a QR-kódok a való világból bármit képesek közvetlenül a hozzájuk kapcsolódó BI-információkhoz kapcsolni – nincs szükség keresésre vagy navigálásra.
@@ -55,5 +54,5 @@ A Power BI JPG-fájlként hozza létre a QR-kódot, nyomtatásra készen.
 * [Power BI-információk elérése a való világból](consumer/mobile/mobile-apps-data-in-real-world-context.md) a mobilalkalmazásokkal
 * [Power BI QR-kódjának beolvasása mobileszközről](consumer/mobile/mobile-apps-qr-code.md)
 * [QR-kód létrehozása jelentéshez](service-create-qr-code-for-report.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

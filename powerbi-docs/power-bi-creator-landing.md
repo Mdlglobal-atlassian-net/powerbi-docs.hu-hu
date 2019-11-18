@@ -2,7 +2,6 @@
 title: Power BI jelentéstervezőknek
 description: Ön használja a Power BI-t az adatokhoz való csatlakozáshoz, lekérdezések tervezéséhez, valamint jelentések és irányítópultok létrehozásához? Ön Power BI-rendszergazda?
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: landing-page
@@ -10,12 +9,12 @@ ms.date: 10/07/2019
 ms.author: maggies
 layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: 64e77a97ec8f316473d6b953b506b323b69bfd0e
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: d2ff64ebabc1b425d2dbcf14e7dc06790b01bf3c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431543"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874645"
 ---
 # <a name="power-bi-for-report-designers"></a>Power BI jelentéstervezőknek
 

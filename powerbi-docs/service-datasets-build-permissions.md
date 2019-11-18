@@ -2,7 +2,6 @@
 title: Megosztott adathalmazokra vonatkozó összeállítási engedély (előzetes verzió)
 description: Ismerje meg, hogyan szabályozhatja Összeállítási engedély használatával, hogy ki férhet hozzá az adatokhoz.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 363f75305b4c0f7f698442ce4503ad3220627c71
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: b17fa4299d2db84f63f0d8f7ed4c17a0c9c437db
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020300"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872556"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Megosztott adathalmazokra vonatkozó összeállítási engedély (előzetes verzió)
 
@@ -103,4 +102,4 @@ Az Összeállítási engedélyt el is távolíthatja. Ilyen esetben azok, akikne
 ## <a name="next-steps"></a>Következő lépések
 
 - [Adathalmazok használata több munkaterületen (előzetes verzió)](service-datasets-across-workspaces.md)
-- Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

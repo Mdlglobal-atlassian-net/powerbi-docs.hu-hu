@@ -2,7 +2,6 @@
 title: 'Oktatóanyag: Saját mértékek létrehozása a Power BI Desktopban'
 description: 'Oktatóanyag: Saját mértékek létrehozása a Power BI Desktopban'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 59567b62c44a386b3890f68de49b9f7aed76aa45
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: ade9c163c017b13b0524c66f67f7a27378dc4b80
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019347"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865941"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Oktatóanyag: Saját mértékek létrehozása a Power BI Desktopban
 A Power BI Desktop leghatékonyabb adatelemzési megoldásait a mértékek segítségével alakíthatja ki. A mértékek segítségével számításokat hajthat végre az adatokon a jelentések használata közben. Ez az oktatóanyag ismerteti a mértékekről, és bemutatja, hogy miképpen hozhatja létre a saját alapvető mértékeit a Power BI Desktopban.
@@ -23,7 +22,7 @@ A Power BI Desktop leghatékonyabb adatelemzési megoldásait a mértékek segí
 ### <a name="prerequisites"></a>Előfeltételek
 - Az oktatóanyag olyan Power BI-felhasználóknak szól, akik már jól ismerik a speciálisabb modellek létrehozásának eljárásait a szolgáltatásban. Ehhez ismernie kell, hogyan importálhat adatokat az Adatok lekérése és a Lekérdezésszerkesztő segítségével, hogyan dolgozhat több kapcsolódó táblával, és hogyan adhat mezőket a jelentésvászonhoz. Ha még csak most ismerkedik a Power BI Desktoppal, mindenképp tekintse át a [Power BI Desktop használatának első lépéseit](desktop-getting-started.md) ismertető témakört.
   
-- Töltse le a [Power BI Desktophoz készült Contoso Sales](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) mintafájlt, amely a fiktív Contoso, Inc. vállalat online értékesítési adatait tartalmazza. Az adatok egy adatbázisból lettek importálva, ezért nem tud kapcsolódni az adatforráshoz, és a Lekérdezésszerkesztőben sem tudja megtekinteni azt. Töltse le a fájlt a számítógépére, majd nyissa meg a Power BI Desktopban.
+- Töltse le a [Power BI Desktophoz készült Contoso Sales](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) mintafájlt, amely a fiktív Contoso, Inc. vállalat online értékesítési adatait tartalmazza. Az adatok egy adatbázisból lettek importálva, ezért nem tud kapcsolódni az adatforráshoz, és a Lekérdezésszerkesztőben sem tudja megtekinteni azt. Töltse le a fájlt a számítógépére, majd nyissa meg a Power BI Desktopban.
 
 ## <a name="understand-measures"></a>A mértékek ismertetése
 
