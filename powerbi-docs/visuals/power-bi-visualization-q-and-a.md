@@ -2,18 +2,17 @@
 title: A Power BI Q&A-vizualizáció használata
 description: A Power BI Q&A-vizualizáció beállítása
 author: mihart
-manager: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/19/2019
 ms.author: mohaali
-ms.openlocfilehash: a32c19f07a052aff74fec8062631ea8621d5de18
-ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
+ms.openlocfilehash: 78a74d2d49ac9eabb7d63f467c9838d370d5c314
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72775943"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870843"
 ---
 # <a name="introduction-to-power-bi-qa-visual"></a>Bevezetés a Power BI Q&A-vizualizáció használatába
 
@@ -38,7 +37,7 @@ A Q&A vizualizáció négy alapvető elemből áll;
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-1. Ez az oktatóanyag az [Értékesítési és Marketing minta PBIX-fájlt](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) használja. 
+1. Ez az oktatóanyag az [Értékesítési és Marketing minta PBIX-fájlt](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) használja. 
 
 1. A Power BI Desktop menüsorának bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget.
    
@@ -66,7 +65,7 @@ Ebben a gyakorlatban egy javasolt kérdést választunk ki a Q&A vizualizáció 
 
     ![Q&A-vizualizáció térkép](media/power-bi-visualization-q-and-a/power-bi-map.png)
 
-    De a természetes nyelven megadott lekérdezésekhez hozzáadhatja annak meghatározását is, hogy a Power BI milyen típusú vizualizációt használjon. Vegye figyelembe, hogy az adatok nem minden vizualizációtípussal értelmezhetők. Ezek az adatok például nem ábrázolhatók értelmezhetően egy pontdiagramon. A kartogram azonban jól használható.
+    De a természetes nyelven megadott lekérdezésekhez hozzáadhatja annak meghatározását is, hogy a Power BI milyen típusú vizualizációt használjon. Vegye figyelembe, hogy nem minden vizualizációtípus fog működni vagy értelmezhető eredményt mutatni az adatokkal. Ezek az adatok például nem ábrázolhatók értelmezhetően egy pontdiagramon. A kartogram azonban jól használható.
 
     ![Q&A-vizualizáció, mint kartogram](media/power-bi-visualization-q-and-a/power-bi-specify-map.png)
 
