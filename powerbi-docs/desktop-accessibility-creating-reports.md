@@ -2,7 +2,6 @@
 title: Akadálymentesített jelentések létrehozása a Power BI-ban
 description: Akadálymentesített Power BI Desktop-jelentések létrehozása
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ea03387dd35537ac47f1c97a3c2712d4185b3247
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: 4686b15e04d3724256c76d7ba27a125cb04e86b3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73181712"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878962"
 ---
 # <a name="creating-accessible-reports-in-power-bi"></a>Akadálymentesített jelentések létrehozása a Power BI-ban
 Meggyőző jelentéseket tervezhet és hozhat létre, és egyben gondoskodhat az akadálymentességükről is. Egy jelentés létrehozásakor a célközönségtől függetlenül mindig úgy kell eljárnia, hogy különleges tervezési megoldások nélkül is elérhető legyen a legtöbb felhasználó számára.
@@ -166,9 +165,9 @@ Ha nem tudja eldönteni, hogy a vizualizáció vagy jelentés túlzsúfolt-e, ha
 
 ### <a name="themes-contrast-and-colorblind-friendly-colors"></a>Témák, kontraszt, színvakbarát színek
 
-Gondoskodjon róla, hogy elég kontraszt legyen a jelentéseiben a szöveg és a háttérszínek között. A WCAG 2.1 szabvány 1.4.3 számú sikerességi feltétele előírja, hogy a szöveg és a háttér színe közti kontrasztarány nem lehet kisebb, mint 4.5:1. A jelentés színeinek ellenőrzésére számos eszköz áll rendelkezésre, mint például a [Color Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/), a [WebAIM](https://webaim.org/resources/contrastchecker/), és az [Accessible Colors](http://accessible-colors.com/).
+Gondoskodjon róla, hogy elég kontraszt legyen a jelentéseiben a szöveg és a háttérszínek között. A WCAG 2.1 szabvány 1.4.3 számú sikerességi feltétele előírja, hogy a szöveg és a háttér színe közti kontrasztarány nem lehet kisebb, mint 4.5:1. A jelentés színeinek ellenőrzésére számos eszköz áll rendelkezésre, mint például a [Color Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/), a [WebAIM](https://webaim.org/resources/contrastchecker/), és az [Accessible Colors](https://accessible-colors.com/).
 
-Érdemes figyelembe vennie, hogy a jelentés megtekintői között színtévesztők is lehetnek. Az olyan eszközök, mint a [Coblis](http://www.color-blindness.com/coblis-color-blindness-simulator/) és a [Vischeck](http://www.vischeck.com/vischeck/vischeckImage.php), a színtévesztő felhasználók számára megjelenő látványt szimulálják.  A kevesebb szín vagy a monokróm paletta használata csökkentheti annak kockázatát, hogy nem akadálymentesített jelentést hoz létre.
+Érdemes figyelembe vennie, hogy a jelentés megtekintői között színtévesztők is lehetnek. Az olyan eszközök, mint a [Coblis](https://www.color-blindness.com/coblis-color-blindness-simulator/) és a [Vischeck](https://www.vischeck.com/vischeck/vischeckImage.php), a színtévesztő felhasználók számára megjelenő látványt szimulálják.  A kevesebb szín vagy a monokróm paletta használata csökkentheti annak kockázatát, hogy nem akadálymentesített jelentést hoz létre.
 
 Bizonyos színkombinációk különösen nehezen dolgozhatók fel a színtévesztők számára. Ezek többek között a következők: 
 
@@ -266,10 +265,10 @@ Az akadálymentességi funkciók rendelkeznek néhány ismert hibájával és ko
 
 ## <a name="next-steps"></a>Következő lépések
 
-A Power BI kisegítő lehetőségeit ismertető cikkek gyűjteménye:
+A Power BI akadálymentességi lehetőségeit ismertető cikkek gyűjteménye:
 
 * [A Power BI kisegítő lehetőségeinek áttekintése](desktop-accessibility-overview.md) 
 * [Power BI-jelentések felhasználása kisegítő eszközökkel](desktop-accessibility-consuming-tools.md)
-* [Power BI-jelentések létrehozása kisegítő eszközökkel](desktop-accessibility-creating-tools.md)
+* [Akadálymentességi eszközökkel rendelkező Power BI-jelentések létrehozása](desktop-accessibility-creating-tools.md)
 * [Akadálymentességi billentyűparancsok Power BI-jelentésekhez](desktop-accessibility-keyboard-shortcuts.md)
-* [Ellenőrzőlista a jelentés akadálymentesítéséhez](#report-accessibility-checklist)
+* [Ellenőrzőlista jelentések akadálymentesítéséhez](#report-accessibility-checklist)
