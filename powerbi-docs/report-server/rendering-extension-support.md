@@ -100,13 +100,13 @@ Nem értelmezhető
 
 Nem értelmezhető
 
-## <a name="disclaimer"></a>Felelősséget kizáró nyilatkozat
+## <a name="disclaimer"></a>Disclaimer
 
-© 2017 Microsoft Corporation. Minden jog fenntartva. Az itt említett tényleges vállalatok és termékek nevei a hozzájuk tartozó tulajdonos védjegyei lehetnek. A jelen dokumentumban szereplő információk a Microsoft Corporation az itt tárgyalt problémákkal kapcsolatos, a közzététel időpontjában érvényes aktuális véleményét képviselik. A Microsoft nem tudja garantálni a bemutatott információk pontosságát a közzététel dátumát követően. A Microsoft rendszeresen frissíti a webhelyeit a termékek hozzáférhetőségével kapcsolatos új információkkal, amint ezek az információk elérhetővé válnak.
+© 2017 Microsoft Corporation. All rights reserved. The names of actual companies and products mentioned herein may be the trademarks of their respective owners. The information contained in this document represents the current view of Microsoft Corporation on the issues discussed as of the date of publication. Microsoft cannot guarantee the accuracy of any information presented after the date of publication. Microsoft regularly updates its websites with new information about the accessibility of products as that information becomes available.
 
-A termék testreszabása érvényteleníti a Microsoft jelen megfelelőségi nyilatkozatát. A termékekkel kapcsolatos kompatibilitási specifikációkkal kapcsolatban forduljon a kisegítő technológiák (Assistive Technology, AT) gyártóihoz.
+Customization of the product voids this conformance statement from Microsoft. Please consult with Assistive Technology (AT) vendors for compatibility specifications of specific AT products.
 
-Ez a dokumentum csak tájékoztató célt szolgál. A MICROSOFT NEM VÁLLAL SEMMILYEN KIFEJEZETT VAGY VÉLELMEZETT FELELŐSSÉGET A JELEN DOKUMENTUM KERETÉN BELÜL.
+This document is for informational purposes only. MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
 
 
 ## <a name="next-steps"></a>Következő lépések
