@@ -2,7 +2,6 @@
 title: 'Oktatóanyag: Számított oszlopok létrehozása a Power BI Desktopban'
 description: 'Oktatóanyag: Számított oszlopok létrehozása a Power BI Desktopban'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 6974e0eccd8c16bdb06a050873e40f1a5be6f75f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 4c1f6985a2ff88fa9ca595ad68456eed7a55c82e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514536"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876144"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Oktatóanyag: Számított oszlopok létrehozása a Power BI Desktopban
 
@@ -28,7 +27,7 @@ Ez az oktatóanyag bemutatja néhány számított oszlop létrehozását és jel
 ### <a name="prerequisites"></a>Előfeltételek
 - Az oktatóanyag olyan Power BI-felhasználóknak szól, akik már jól ismerik a speciálisabb modellek létrehozásának eljárásait a szolgáltatásban. Ehhez már tudnia kell, hogyan használhatja az **Adatok lekérése** és a **Power Query-szerkesztő** funkciót adatok lekérésére, több kapcsolódó táblával való munkára és mezőknek a jelentésvászonhoz történő hozzáadására. Ha még csak most ismerkedik a Power BI Desktoppal, mindenképp tekintse át a [Power BI Desktop használatának első lépéseit](desktop-getting-started.md) ismertető témakört.
   
-- Az oktatóprogram a [Power BI Desktop Contoso értékesítési mintát](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) használja, ami azonos a [Saját mértékek létrehozása a Power BI Desktopban](desktop-tutorial-create-measures.md) című oktatóanyagban használt mintával. Ezek a fiktív Contoso, Inc. vállalattól származó értékesítési adatok egy adatbázisból lettek importálva, így Ön nem tud majd az adatforráshoz kapcsolódni, illetve nem tudja azt megtekinteni a Power Query-szerkesztőben. Töltse le és bontsa ki a fájlt saját számítógépére, majd nyissa meg a fájlt a Power BI Desktopban.
+- Az oktatóprogram a [Power BI Desktop Contoso értékesítési mintát](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) használja, ami azonos a [Saját mértékek létrehozása a Power BI Desktopban](desktop-tutorial-create-measures.md) című oktatóanyagban használt mintával. Ezek a fiktív Contoso, Inc. vállalattól származó értékesítési adatok egy adatbázisból lettek importálva, így Ön nem tud majd az adatforráshoz kapcsolódni, illetve nem tudja azt megtekinteni a Power Query-szerkesztőben. Töltse le és bontsa ki a fájlt saját számítógépére, majd nyissa meg a fájlt a Power BI Desktopban.
 
 ## <a name="create-a-calculated-column-with-values-from-related-tables"></a>Hozzon létre számított oszlopot, kapcsolódó táblákból származó értékekkel
 
@@ -36,7 +35,7 @@ Ez az oktatóanyag bemutatja néhány számított oszlop létrehozását és jel
 
  ![Oszlopok a Mező listában](media/desktop-tutorial-create-calculated-columns/create1.png)
 
-1.  Válassza a **További beállítások** három pontjára (...), vagy a Mezők listában kattintson jobb gombbal a **ProductSubcategory** táblára, majd válassza az **Új oszlop** lehetőséget. Ez a művelet létrehozza az új oszlopot a ProductSubcategory táblában.
+1.  Válassza a **További beállítások** (...) elemet, vagy a Mezők listában kattintson jobb gombbal a **ProductSubcategory** táblára, majd válassza az **Új oszlop** lehetőséget. Ez a művelet létrehozza az új oszlopot a ProductSubcategory táblában.
     
     ![Új oszlop](media/desktop-tutorial-create-calculated-columns/create2.png)
     

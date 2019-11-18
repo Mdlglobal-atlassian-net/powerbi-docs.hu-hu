@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a4c385b9c8e8a28de3b9a5e1dd84651f87ef000
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 80d878cc5a8ed0df294b99390fb87d8099bfccb5
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543174"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431332"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>A Power BI szolgáltatás alapfogalmai tervezők számára
 
@@ -48,10 +48,10 @@ Ezeket a funkciókat később részletesen is ismertetjük, de először vegyük
 A Power BI 4 alapvető építőeleme a következő: **_irányítópultok_** , **_jelentések_** , **_munkafüzetek_** és **_adathalmazok_** . Ezek mind pedig **_munkaterületekbe_** vannak szervezve. A négy építőelem részletes ismertetéséhez fontos tisztában lenni a munkaterületek működésével, ezért először ezekkel foglalkozunk.
 
 ## <a name="workspaces"></a>Munkaterületek
-A munkaterületek a Power BI irányítópultjainak, jelentéseinek, munkafüzeteinek és adathalmazainak tárolói. A munkaterületeknek két típusa van: *Saját munkaterület* és *alkalmazás-munkaterületek*. Mi tehát egy *alkalmazás*? Egy Power BI-*alkalmazás* az irányítópultok és jelentések egy olyan gyűjteménye, amely arra szolgál, hogy alapvető metrikákat bocsátson a szervezet Power BI-t használó végfelhasználói rendelkezésére. Az alkalmazások interaktívak, de a végfelhasználók nem szerkeszthetik őket.
+A munkaterületek a Power BI irányítópultjainak, jelentéseinek, munkafüzeteinek és adathalmazainak tárolói. A munkaterületeknek két típusa van: *Saját munkaterület* és *munkaterületek*. Mi tehát egy *alkalmazás*? Egy Power BI-*alkalmazás* az irányítópultok és jelentések egy olyan gyűjteménye, amely arra szolgál, hogy alapvető metrikákat bocsátson a szervezet Power BI-t használó végfelhasználói rendelkezésére. Az alkalmazások interaktívak, de a végfelhasználók nem szerkeszthetik őket.
 
-- A *Saját munkaterület* az egyes Power BI-ügyfelek személyes munkaterülete, melyen saját tartalmaikat használhatják. A Saját munkaterületéhez csak Ön fér hozzá. A Saját munkaterületről meg is oszthatja az irányítópultokat és a jelentéseket. Ha viszont másokkal együttműködve szeretne irányítópultokkal és jelentésekkel dolgozni, vagy ha alkalmazást szeretne létrehozni, akkor az alkalmazás-munkaterületet érdemes választania.      
--  Az *alkalmazás-munkaterületeken* együtt lehet működni és tartalmakat lehet megosztani a munkatársakkal. Emellett itt lehet a szervezet számára alkalmazásokat létrehozni, közzétenni és kezelni. Azon tartalmak átmeneti területeiként és tárolóiként tekinthet rájuk, melyek Power BI-alkalmazásokat alkotnak majd. Az alkalmazás-munkaterületekhez hozzáadhat munkatársakat, és közösen dolgozhatnak irányítópultokon, jelentéseken, munkafüzeteken és adathalmazokon. Az alkalmazás-munkaterület összes tagjának Power BI Pro-licenccel kell rendelkeznie. Az alkalmazások felhasználóinak (az alkalmazásokhoz hozzáféréssel rendelkező munkatársaknak) azonban nem feltétlenül van szükségük Pro-licencre. További információ az [új munkaterületekről](service-create-the-new-workspaces.md).  
+- A *Saját munkaterület* az egyes Power BI-ügyfelek személyes munkaterülete, melyen saját tartalmaikat használhatják. A Saját munkaterületéhez csak Ön fér hozzá. A Saját munkaterületről meg is oszthatja az irányítópultokat és a jelentéseket. Ha viszont másokkal együttműködve szeretne irányítópultokkal és jelentésekkel dolgozni, vagy ha alkalmazást szeretne létrehozni, akkor a munkaterületet érdemes választania.      
+-  A *munkaterületeken* együtt lehet működni és tartalmakat lehet megosztani a munkatársakkal. Emellett itt lehet a szervezet számára alkalmazásokat létrehozni, közzétenni és kezelni. Azon tartalmak átmeneti területeiként és tárolóiként tekinthet rájuk, melyek Power BI-alkalmazásokat alkotnak majd. A munkaterületekhez hozzáadhat munkatársakat, és közösen dolgozhatnak irányítópultokon, jelentéseken, munkafüzeteken és adathalmazokon. A munkaterület összes tagjának Power BI Pro-licenccel kell rendelkeznie. Az alkalmazások felhasználóinak (az alkalmazásokhoz hozzáféréssel rendelkező munkatársaknak) azonban nem feltétlenül van szükségük Pro-licencre. További információ az [új munkaterületekről](service-create-the-new-workspaces.md).  
 
 A megosztásról általában az [Irányítópultok megosztásának módjai](service-how-to-collaborate-distribute-dashboards-reports.md) című témakörben talál további információt.
 
@@ -62,7 +62,7 @@ Az *adatkészlet* olyan adatok gyűjteménye, amelyeket *importál*, vagy amelye
 
 Az adathalmazok *munkaterületekhez* vannak társítva, és egy adott adathalmaz számos munkaterületnek része lehet. Amikor megnyit egy munkaterületet, az ahhoz társított adatkészletek az **Adatkészletek** lapon vannak felsorolva. Mindegyik itt megnevezett adatkészlet egyetlen adatforrásnak felel meg, például egy OneDrive-beli Excel-munkafüzetnek, egy helyszíni táblázatos SSAS-adatkészletnek vagy egy Salesforce-adatkészletnek. Sok különböző adatforrást támogatunk, a számuk egyre növekszik. Itt megtekintheti [a Power BI-jal használható adathalmaztípusok](service-get-data.md) listáját.
 
-Az alábbi példában a „Sales and marketing” („Értékesítési és marketing”) alkalmazás-munkaterület van kijelölve, és rákattintottak az **Adatkészletek** fülre.
+Az alábbi példában a „Sales and marketing” („Értékesítési és marketing”) munkaterület van kijelölve, és rákattintottak az **Adathalmazok** fülre.
 
 ![Kijelölt adatkészletek](media/service-basic-concepts/power-bi-datasets.png)
 
@@ -96,7 +96,7 @@ Amikor megnyit egy alkalmazást, egy irányítópult jelenik meg.  Az alapul szo
 
 Alapértelmezés szerint a jelentés Olvasó nézetben nyílik meg.  A Szerkesztési nézet megnyitásához egyszerűen kattintson a **Jelentés szerkesztése** lehetőségre (ha rendelkezik a szükséges engedélyekkel).
 
-Az alábbi példában a „Sales and marketing” („Értékesítés és marketing”) alkalmazás-munkaterület van kijelölve, és rákattintottak a **Jelentések** fülre.
+Az alábbi példában a „Sales and marketing” („Értékesítés és marketing”) munkaterület van kijelölve, és rákattintottak a **Jelentések** fülre.
 
 ![Kiválasztott jelentések](media/service-basic-concepts/power-bi-reports.png)
 
@@ -224,7 +224,7 @@ A képernyő ezen területén további lehetőségek találhatók a tartalom (eb
    ![Címkézett ikongombok](media/service-basic-concepts/power-bi-labeled-icons.png)
 
 ## <a name="next-steps"></a>Következő lépések
-- [Mi az a Power BI?](power-bi-overview.md)  
+- [Mi az a Power BI?](fundamentals/power-bi-overview.md)  
 - [Power BI-videók.](videos.md)  
 - [A jelentésszerkesztő – bemutató](service-the-report-editor-take-a-tour.md)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cab65ad12255b7a5ff2e37902684437f0e191723
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e08d37f3db6156de21f00813a90b1c7544345abe
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61169052"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021188"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>QR-kód létrehozása egy Power BI-csempéhez mobilalkalmazásokban történő használathoz
 A Power BI-ban a QR-kódok a való világból bármit képesek közvetlenül a hozzájuk kapcsolódó BI-információkhoz kapcsolni – nincs szükség keresésre vagy navigálásra.
@@ -27,8 +27,8 @@ Azok a munkatársak, akikkel megosztotta az irányítópultját, [közvetlenül 
 
 ## <a name="create-a-qr-code-for-a-tile"></a>QR-kód létrehozása csempéhez
 1. Nyisson meg egy irányítópultot a Power BI szolgáltatásban.
-2. Válassza a csempe jobb felső sarkában található három pontot (...), majd a **Megnyitás fókusz módban** ![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg) lehetőséget.
-3. Válassza a jobb felső sarokban található három pontot (...), majd a **QR-kód előállítása** lehetőséget. 
+2. Válassza a csempe jobb felső sarkában található **További lehetőségek** (...) elemet, majd az **fókusz mód** ![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg) menüpontot.
+3. Válassza a jobb felső sarokban található **További lehetőségek** (...) elemet, majd a **QR-kód generálása** menüpontot. 
    
     ![](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
 4. Megjelenik egy párbeszédpanel a QR-kóddal. 

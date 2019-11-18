@@ -1,6 +1,6 @@
 ---
 title: Adattárolás felügyelete a munkaterületein
-description: Útmutató a jelentések és az adathalmazok további közzétételének biztosításához az egyéni vagy az alkalmazás-munkaterületen található adattárhely kezelésével.
+description: Útmutató a jelentések és az adathalmazok további közzétételének biztosításához az egyéni vagy a munkaterületen található adattárhely kezelésével.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -11,24 +11,24 @@ ms.topic: conceptual
 ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: a46fbb0679de30e554003d858e01756b9b242b1b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ea187de55eec2667abe2eed017481180910b7619
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61190211"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431369"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Adattárolás felügyelete Power BI-munkaterületeken
 
-Útmutató a jelentések és az adathalmazok további közzétételének biztosításához az egyéni vagy az alkalmazás-munkaterületen található adattárhely kezelésével.
+Útmutató a jelentések és az adathalmazok további közzétételének biztosításához az egyéni vagy a munkaterületen található adattárhely kezelésével.
 
-A felhasználók és az alkalmazás-munkaterületek saját adatkapacitással rendelkeznek:
+A felhasználók és a munkaterületek saját adatkapacitással rendelkeznek:
 
 * A felhasználók tárhelyének maximális mérete 10 GB.
-* A Power BI Pro-licenccel rendelkező felhasználók több, egyenként 10 GB-os alkalmazás-munkaterületet is létrehozhatnak.
-* A prémium szintű kapacitásban lévő alkalmazás-munkaterületek nem számítanak bele a Power BI Pro-felhasználók tárhelyébe.
+* A Power BI Pro-licenccel rendelkező felhasználók több, egyenként 10 GB-os munkaterületet is létrehozhatnak.
+* A prémium szintű kapacitásban lévő munkaterületek nem számítanak bele a Power BI Pro-felhasználók tárhelyébe.
 
-Bérlői szinten az egy Pro-felhasználóra és alkalmazás-munkaterületre jutó teljes használat nem haladhatja meg a felhasználónkénti 10 GB-ot.
+Bérlői szinten az egy Pro-felhasználóra és munkaterületre jutó teljes használat nem haladhatja meg a felhasználónkénti 10 GB-ot.
 
 További információkért tekintse meg [a Power BI díjszabási modelljét](https://powerbi.microsoft.com/pricing).
 
@@ -63,15 +63,15 @@ Megtekintheti a Power BI-fiókban aktuálisan felhasznált tárhely méretét, �
 
 Vegye figyelembe, hogy az adatkészleteken saját vagy megosztott jelentések és irányítópultok alapulhatnak. Ha törli az adatkészletet, ezek a jelentések és irányítópultok nem fognak működni.
 
-## <a name="manage-your-app-workspace"></a>Saját alkalmazás-munkaterület kezelése
-1. Kattintson a **Munkaterületek** elem melletti nyílra, majd \> válassza ki az alkalmazás-munkaterület nevét.
+## <a name="manage-your-workspace"></a>Saját munkaterület kezelése
+1. Kattintson a **Munkaterületek** elem melletti nyílra, majd \> válassza ki a munkaterület nevét.
    
-    ![Alkalmazás-munkaterület kijelölése](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+    ![Válasszon munkaterületet](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
 2. Kattintson a fogaskerék ikonra ![Fogaskerék ikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) a jobb felső sarokban \> **Csoporttárhely kezelése**.
    
     A felső sávon látható, hogy mennyit használtak fel a csoport rendelkezésére álló tárhelyből.
    
-    ![Alkalmazás-munkaterület tárhelyének kezelése](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
+    ![Munkaterület tárhelyének kezelése](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
    
     Az adatkészletek és a jelentések két külön lapon találhatók az alábbiak szerint:
    
@@ -80,7 +80,7 @@ Vegye figyelembe, hogy az adatkészleteken saját vagy megosztott jelentések é
 3. Adatkészlet vagy jelentés törléséhez kattintson a Kuka ikonra ![kuka ikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
-   > Egy alkalmazás-munkaterület bármely, szerkesztési engedéllyel rendelkező tagja jogosult az adatkészletek és jelentések törlésére az alkalmazás-munkaterületről.
+   > Egy munkaterület bármely, szerkesztési engedéllyel rendelkező tagja jogosult adathalmazokat és jelentéseket törölni a munkaterületről.
    > 
    > 
 

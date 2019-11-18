@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 069ec5e0c767bcfcb0a4a41c2180ae78146800f2
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 363f75305b4c0f7f698442ce4503ad3220627c71
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020900"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020300"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Megosztott adathalmazokra vonatkozó összeállítási engedély (előzetes verzió)
 
@@ -29,7 +29,7 @@ Egy adathalmazra többféleképpen adható Összeállítási engedély:
 
 - Egy munkaterület legalább Közreműködő szerepkörrel rendelkező tagjai automatikusan Összeállítási engedéllyel rendelkeznek a munkaterületen lévő adathalmazokhoz, és jogosultak a jelentések másolására.
  
-- Annak a munkaterületek a tagjai, ahol az adathalmaz található, adott személyekhez vagy biztonsági csoportokhoz rendelhetik az engedélyt az Engedélykezelési központban. Ha tagja a munkaterületnek, válassza az adathalmaz melletti három pontot (...), majd az **Engedélyek kezelése** menüpontot.
+- Annak a munkaterületek a tagjai, ahol az adathalmaz található, adott személyekhez vagy biztonsági csoportokhoz rendelhetik az engedélyt az Engedélykezelési központban. Ha tagja a munkaterületnek, válassza az adathalmaz melletti **További lehetőségek** (...) elemet, majd az **Engedélyek kezelése** menüpontot.
 
     ![A három pont kiválasztása](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
@@ -50,11 +50,11 @@ Az adathalmazra vonatkozó Összeállítási engedélyt vissza is vonhatja. Ha e
 Előfordulhat, hogy egyes felhasználóknak egy megosztott adathalmazra vonatkozó Összeállítási engedélyét vissza kell vonnia. 
 
 1. Nyissa meg az **Adathalmazok** listaoldalt egy munkaterületen. 
-1. Válassza az adathalmaz melletti három pontot (...), majd az **Engedélyek kezelése** lehetőséget.
+1. Válassza az adathalmaz melletti **További lehetőségek** (...) elemet, majd az **Engedélyek kezelése** lehetőséget.
 
     ![Engedélyek kezelése](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Válassza ki egy név mellett a három pontot (...), majd válassza az **Összeállítás megvonása** lehetőséget.
+1. Válassza az egyik név melletti **További lehetőségek** (...) elemet, majd az **Összeállítás megvonása** menüpontot.
 
     ![Összeállítási engedély megvonása](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 
@@ -66,7 +66,7 @@ Tegyük fel, hogy egy munkaterületről egy alkalmazást terjesztett egy csoport
 
 1. A munkaterület listaoldalán válassza az **Alkalmazás frissítése** lehetőséget. 
 
-    ![App frissítése](media/service-datasets-build-permissions/power-bi-app-update.png)
+    ![Alkalmazás frissítése](media/service-datasets-build-permissions/power-bi-app-update.png)
 
 1. Az **Engedélyek** lapon válassza az **X** jelet a személy vagy csoport eltávolításához. 
 
@@ -80,11 +80,11 @@ Tegyük fel, hogy egy munkaterületről egy alkalmazást terjesztett egy csoport
 1. Válassza a **Frissítés** lehetőséget.
 
 1. Nyissa meg az **Adathalmazok** listaoldalt a munkaterületen. 
-1. Válassza az adathalmaz melletti három pontot (...), majd az **Engedélyek kezelése** lehetőséget.
+1. Válassza az adathalmaz melletti **További lehetőségek** (...) elemet, majd az **Engedélyek kezelése** lehetőséget.
 
     ![Engedélyek kezelése](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Válassza ki a név mellett a három pontot (...), majd válassza az **Összeállítás megvonása** lehetőséget.
+1. Válassza a név melletti **További lehetőségek** (...) elemet, majd az **Összeállítás megvonása** menüpontot.
 
     ![Összeállítási engedély megvonása](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 09/24/2019
-ms.openlocfilehash: ca090f7251349c9ed4768b49f1372c14e68f0068
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: a0172f655a53e80b4c5ef8a3bdb922ddaec789b4
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305678"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431552"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Mik a lapszámozott jelentések a Power BI Premiumban?
 
@@ -26,7 +26,7 @@ A lapszámozott jelentések számos oldalból állhatnak. Ez a jelentés példá
 
 ![Lapszámozott jelentés a Power BI szolgáltatásban](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-A jelentés előnézetét megtekintheti a Jelentéskészítőben, majd közzéteheti a Power BI szolgáltatásban (http://app.powerbi.com ). A szolgáltatásban csak Power BI Pro-licenccel tehet közzé jelentéseket. Lapszámozott jelentéseket a Saját munkaterületen vagy az alkalmazások munkaterületein tehet közzé, ha az adott munkaterület egy Power BI Premium-kapacitáshoz tartozik. Emellett egy Power BI-rendszergazdának engedélyeznie kell a lapszámozott jelentéseket a Power BI felügyeleti portáljának [Premium-kapacitásokkal foglalkozó szakaszában](service-admin-premium-workloads.md#paginated-reports). 
+A jelentés előnézetét megtekintheti a Jelentéskészítőben, majd közzéteheti a Power BI szolgáltatásban (http://app.powerbi.com ). A szolgáltatásban csak Power BI Pro-licenccel tehet közzé jelentéseket. Többoldalas jelentéseket a Saját munkaterületen, vagy olyan munkaterületeken tehet közzé, amelyek Power BI Premium-kapacitáshoz tartoznak. Emellett egy Power BI-rendszergazdának engedélyeznie kell a lapszámozott jelentéseket a Power BI felügyeleti portáljának [Premium-kapacitásokkal foglalkozó szakaszában](service-admin-premium-workloads.md#paginated-reports). 
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Jelentések létrehozása a Power BI Jelentéskészítőben
 

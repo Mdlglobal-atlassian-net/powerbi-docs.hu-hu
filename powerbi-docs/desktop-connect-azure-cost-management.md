@@ -1,6 +1,6 @@
 ---
 title: Kapcsolódás Azure Cost Management-adatokhoz a Power BI Desktopban
-description: Könnyedén kapcsolódhat az Azure-hoz és költségkezelési elemzésekhez juthat hozzá a Power BI Desktop segítségével
+description: Könnyedén kapcsolódhat az Azure-hoz és elemzésekhez juthat hozzá az Azure költségeiről és használatáról a Power BI Desktop segítségével
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -11,21 +11,21 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1ef9deac169873d7faee33abdae9f8f38aa09c6d
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: dccae9f8f9519495da9056599939169e7157873c
+ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72308007"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72891753"
 ---
-# <a name="connect-to-azure-cost-management-data-in-power-bi-desktop"></a>Kapcsolódás Azure Cost Management-adatokhoz a Power BI Desktopban
+# <a name="connect-to-azure-cost-management-in-power-bi-desktop"></a>Kapcsolódás az Azure Cost Management szolgáltatáshoz a Power BI Desktopban
 
 A Power BI Desktop Azure Cost Management összekötőjével hatékony, testreszabott vizualizációkat és jelentéseket készíthet, amelyek segítségével jobban megismerheti az Azure-t. Az Azure Cost Management-összekötő jelenleg a [Microsoft Ügyfélszerződéssel](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/) vagy a [Nagyvállalati Szerződéssel (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/) rendelkező ügyfeleket támogatja.  
 
-Az Azure Cost Management-összekötő a OAuth 2.0-t használja az Azure-beli hitelesítéshez. A kapcsolódáshoz egy [Nagyvállalati rendszergazdai](https://docs.microsoft.com/azure/billing/billing-understand-ea-roles) fiókot kell használnia a Nagyvállalati Szerződéshez, vagy egy [Számlázási fióktulajdonosi](https://docs.microsoft.com/azure/billing/billing-understand-mca-roles) fiókot a Microsoft Ügyfélszerződéshez. 
+Az Azure Cost Management-összekötő OAuth 2.0 hitelesítést használ az Azure-hoz, és azonosítja az összekötőt használó felhasználókat. Az ebben a folyamatban generált jogkivonatok meghatározott időtartamra érvényesek. A Power BI megőrzi a jogkivonatot a következő bejelentkezéshez. Az OAuth 2.0 annak a folyamatnak a szabványa, amely a háttérben gondoskodik ezeknek az engedélyeknek a biztonságos kezeléséről. A kapcsolódáshoz egy [Nagyvállalati rendszergazdai](https://docs.microsoft.com/azure/billing/billing-understand-ea-roles) fiókot kell használnia a Nagyvállalati Szerződéshez, vagy egy [Számlázási fióktulajdonosi](https://docs.microsoft.com/azure/billing/billing-understand-mca-roles) fiókot a Microsoft Ügyfélszerződéshez. 
 
 > [!NOTE]
-> Ez az összekötő felváltja a korábban elérhető [Azure Cost Management (bétaverzió)](desktop-connect-azure-consumption-insights.md) összekötőjét. Az előző összekötővel létrehozott jelentéseket újra létre kell hozni ennek az összekötőnek a használatával.
+> Ez az összekötő felváltja a korábban elérhető [Azure Consumption Insights és Azure Cost Management (bétaverzió)](desktop-connect-azure-consumption-insights.md) összekötőjét. Az előző összekötővel létrehozott jelentéseket újra létre kell hozni ennek az összekötőnek a használatával.
 
 ## <a name="connect-using-azure-cost-management"></a>Kapcsolódás az Azure Cost Management segítségével
 

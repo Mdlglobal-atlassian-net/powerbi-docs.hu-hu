@@ -3,18 +3,17 @@ title: Mire használhatom a Power BI API-t?
 description: Mire használhatom a Power BI API-t?
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: d52dcb640c0140baad2d3d5d20a1afd56aac7c4d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 8a231a426823d40be34e900a32d06e5d5f77108b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430683"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880490"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Mire használhatják a fejlesztők a Power BI API-t?
 
@@ -61,4 +60,4 @@ A Power BI API lehetővé teszi az [adatok leküldését az adatkészletekbe](wa
 * [A Power BI REST API-jainak leírása](rest-api-reference.md)
 * [Power BI REST API-k](https://docs.microsoft.com/rest/api/power-bi/)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

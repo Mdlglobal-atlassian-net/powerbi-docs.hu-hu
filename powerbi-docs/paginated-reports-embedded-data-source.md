@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 4dda73794c888d89ad67f1af23bfb8c38eb43f61
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: db79c33abe6f9e472dc29db007c4485d7a8d861e
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020803"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431604"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Beágyazott adatforrás létrehozása lapszámozott jelentésekhez a Power BI szolgáltatásban
 
@@ -72,7 +72,7 @@ További információ: [Jelentésadatok a Power BI Jelentéskészítőben](repor
 
 A Power BI-adatkészletekhez csatlakozó többoldalas jelentések kisebb eltérésektől eltekintve ugyanazokat a szabályokat követik, mint amelyek a Power BI-beli megosztott adatkészletekre vonatkoznak.  Annak érdekében, hogy a felhasználók megfelelően tudják megtekinteni a Power BI-adatkészleteket használó többoldalas jelentéseket, és hogy kötelezővé tegye a sorszintű biztonság (RLS) engedélyezését a megtekintéshez, mindenképpen kövesse az alábbi szabályokat:
 
-### <a name="classic-apps-and-app-workspaces"></a>Klasszikus alkalmazások és alkalmazás-munkaterületek
+### <a name="classic-apps-and-workspaces"></a>Klasszikus alkalmazások és munkaterületek
 
 - .rdl ugyanabban a munkaterületben, mint az adatkészlet (ugyanazon tulajdonos): Támogatott
 - .rdl más munkaterületben, mint az adatkészlet (ugyanazon tulajdonos): Támogatott
@@ -82,7 +82,7 @@ A Power BI-adatkészletekhez csatlakozó többoldalas jelentések kisebb eltér�
 - .rdl az adathalmazétól különböző munkaterületen (eltérő felhasználó): A jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
 - Sorszintű biztonság: Ennek érvényre juttatásához a jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén.
 
-### <a name="new-experience-apps-and-app-workspaces"></a>Új felhasználói móddal rendelkező alkalmazások és alkalmazás-munkaterületek
+### <a name="new-experience-apps-and-workspaces"></a>Új felületű alkalmazások és munkaterületek
 
 - .rdl ugyanabban a munkaterületben, mint az adatkészlet: Támogatott
 - .rdl más munkaterületben, mint az adatkészlet (ugyanazon tulajdonos): Támogatott

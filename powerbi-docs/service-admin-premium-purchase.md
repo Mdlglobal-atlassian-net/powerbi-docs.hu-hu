@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: a6e37885c5e15dbaaa28fc5cb693089fda747c9e
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 1d2ff47fdbc31598524986742319ab36c8f3e957
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175248"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442891"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>A Power BI Premium megvásárlása
 
@@ -26,21 +26,21 @@ Ez a cikk azt ismerteti, hogyan vásárolhat Power BI Premium-kapacitást (P1-P3
 
 A tartalmak létrehozóinak továbbra is Power BI Pro-licencre lesz szükségük, abban az esetben is, ha vállalata a Power BI Premiumot használja. Legalább egy Power BI Pro-licencet meg kell vásárolnia cége számára.
 
-Egy Premium-előfizetés lejárta után 30 napig a kapacitása még teljes mértékben a rendelkezésére áll. Ezután tartalmai megosztott kapacitásra állnak vissza. Az 1 GB-nál nagyobb méretű modellek nem támogatottak a megosztott kapacitásban.
+Egy Premium-előfizetés lejárta után 30 napig a kapacitása még teljes mértékben a rendelkezésére áll. Ezután tartalmai megosztott kapacitásra állnak vissza. 1 GB-nál nagyobb méretű modellek nem támogatottak megosztott kapacitásban.
 
 ## <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Új bérlő létrehozása a Power BI Premium P1 csomaggal
 
-Ha nem rendelkezik meglévő bérlővel, és létre szeretne hozni egyet, ezzel egy időben megvásárolhatja a Power BI Premiumot. A következő hivatkozás végigvezeti egy új bérlő létrehozásának folyamatán, és a segítségével megvásárolhatja a Power BI Premiumot: [Power BI Premium P1 ajánlat](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Amikor létrehoz egy bérlőt, automatikusan hozzá lesz rendelve a bérlőhöz tartozó Office 365 globális rendszergazdai szerepkörhöz.
+Ha nem rendelkezik meglévő bérlővel, és létre szeretne hozni egyet, ezzel egy időben megvásárolhatja a Power BI Premiumot. A következő hivatkozás végigvezeti egy új bérlő létrehozásának folyamatán, és a segítségével megvásárolhatja a Power BI Premiumot: [Power BI Premium P1 ajánlat](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Amikor létrehoz egy bérlőt, automatikusan hozzá lesz rendelve a bérlőhöz tartozó Microsoft 365 globális rendszergazdai szerepkörhöz.
 
 ## <a name="purchase-a-power-bi-premium-capacity-for-an-existing-organization"></a>Power BI Premium-kapacitás vásárlása meglévő szervezet számára
 
-Ha rendelkezik egy meglévő vállalattal (bérlővel), akkor előfizetések és licencek vásárlásához az Office 365 globális rendszergazdai szerepkörrel vagy számlázási rendszergazdai szerepkörrel kell rendelkeznie. További információ: [Az Office 365 rendszergazdai szerepkörei](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
+Ha rendelkezik egy meglévő vállalattal (bérlővel), akkor előfizetések és licencek vásárlásához az Microsoft 365 globális rendszergazdai szerepkörrel vagy számlázási rendszergazdai szerepkörrel kell rendelkeznie. További információ: [A Microsoft 365 rendszergazdai szerepkörei](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
 Premium-kapacitás vásárlásához kövesse az alábbi lépéseket.
 
-1. A Power BI szolgáltatásban válassza az Office 365 alkalmazásválasztót, majd a **Rendszergazda** lehetőséget.
+1. A Power BI szolgáltatásban válassza a Microsoft 365 alkalmazásválasztót, majd a **Rendszergazda** lehetőséget.
 
-    ![Office 365 alkalmazásválasztó](media/service-admin-premium-purchase/o365-app-picker.png)
+    ![A Microsoft 365 alkalmazásválasztó](media/service-admin-premium-purchase/o365-app-picker.png)
 
     Másik lehetőségként megnyithatja a Microsoft 365 Felügyeleti központját. Ehhez nyissa meg a(z) https://portal.office.com oldalt, majd válassza a **Felügyelet** lehetőséget.
 
@@ -66,7 +66,7 @@ Most, hogy rendelkezik egy kapacitással, az igények növekedésének megfelel�
 
 1. Keresse meg azt a Power BI Premium-elemet, amelyből további példányokat szeretne vásárolni az **Egyéb csomagok** területen.
 
-1. Helyezze a kurzort a **három pont(…)**  fölé, majd válassza a **Licencmennyiség módosítása** lehetőséget.
+1. Helyezze a kurzort a **További lehetőségek** (…) fölé, majd válassza a **Licencmennyiség módosítása** lehetőséget.
 
     ![Licenc mennyiségének módosítása](media/service-admin-premium-purchase/premium-purchase-more.png)
 

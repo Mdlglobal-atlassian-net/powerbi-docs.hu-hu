@@ -1,37 +1,39 @@
 ---
 title: Power BI Pro-licencek vásárlása és kiosztása
-description: Megtudhatja, hogyan vásárolhat Power BI Pro-licenceket, illetve hogyan oszthatja ki azokat, hogy felhasználói a Power BI szolgáltatás minden tartalmához és funkciójához hozzáférhessenek.
+description: Megtudhatja, hogyan vásárolhat felhasználói Power BI Pro-licenceket, illetve hogyan oszthatja ki azokat, hogy felhasználók hozzáférhessenek a tartalomhoz, és együttműködhessenek a munkatársaikkal a Power BI szolgáltatásban.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: quickstart
-ms.date: 09/09/2019
+ms.date: 10/29/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 9e7cd025388a5ae21b73fe05fca0e1c8433b562d
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 31739cee4371a8991f8c88e6ba67bfb48878a33c
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074879"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431390"
 ---
-# <a name="purchase-and-assign-power-bi-pro-licenses"></a>Power BI Pro-licencek vásárlása és kiosztása
+# <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Felhasználói Power BI Pro-licencek vásárlása és kiosztása
 
-A Power BI Pro egyéni licenc, amely hozzáférést biztosít a Power BI szolgáltatásban minden tartalomhoz és funkcióhoz, többek között megosztható a tartalom, és lehetőség van más Pro-felhasználókkal való együttműködésre is. Csak a Pro szintű felhasználók tehetnek közzé tartalmat alkalmazás-munkaterületeken, oszthatnak meg irányítópultokat, és iratkozhatnak fel irányítópultokra és jelentésekre. További információ: [Power BI-szolgáltatások licenctípus szerint](service-features-license-type.md).
+A Power BI Pro egyéni felhasználói licenc, amely lehetővé teszi, hogy a felhasználók más felhasználók által a Power BI szolgáltatásban közzétett jelentéseket és irányítópultokat olvassanak és kezeljenek, valamint tartalmat osszanak meg, és más Power BI Pro-felhasználókkal működjenek együtt. Tartalmat csak Power BI Pro-licenccel rendelkező felhasználók tehetnek közzé vagy oszthatnak meg más felhasználókkal, és csak ők használhatnak más felhasználók által létrehozott tartalmat, kivéve akkor, ha a tartalom Power BI Premium-kapacitásban van üzemeltetve. További információ: [Power BI-szolgáltatások licenctípus szerint](service-features-license-type.md).
 
-Ez a cikk elsőként azt ismerteti, hogyan vásárolhat Power BI Pro-licenceket az Office 365-ben. A cikk ezután két lehetőséget mutat be a licencek egyéni felhasználókhoz való hozzárendeléséhez: az Office 365-öt és az Azure-t (válassza ki az egyik lehetőséget).
+## <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Felhasználói Power BI Pro-licencek vásárlása és kiosztása
 
-## <a name="prerequisites"></a>Előfeltételek
+Ez a cikk a felhasználói Power BI Pro licenceknek a Microsoft 365 Felügyeleti központban való megvásárlását ismerteti, valamint bemutatja azt a két módot, ahogyan a rendszergazdák kioszthatják ezeket a licenceket az egyes felhasználóknak: a Microsoft 365 Felügyeleti központban és az Azure Portalon (egy lehetőség választható).
 
-Az Office 365-ben [**globális rendszergazdai** vagy **Számlázási rendszergazdai**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) szerepkörrel kell rendelkeznie.
+### <a name="prerequisites"></a>Előfeltételek
 
-A licencek az Azure-ban való hozzárendeléséhez a Power BI által az Active Directory-keresésekhez használt Azure-előfizetés tulajdonosának kell lennie.
+Ahhoz, hogy licenceket vásároljon vagy osszon ki a Microsoft 365 Felügyeleti központban, **[globális rendszergazdai vagy számlázási adminisztrátor](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)** szerepkörrel kell rendelkeznie a Microsoft 365-ben.
 
-## <a name="purchase-licenses-in-office-365"></a>Licencek vásárlása az Office 365-ben
+A licencek Azure Portalon való kiosztásához a Power BI által az Azure Active Directory-keresésekhez használt Azure-előfizetés tulajdonosának kell lennie.
 
-Kövesse az alábbi lépéseket a Power BI Pro megvásárlásához:
+### <a name="purchase-licenses-in-microsoft-365"></a>Licencek vásárlása a Microsoft 365-ben
+
+Kövesse az alábbi lépéseket a Power BI Pro licenceknek a Microsoft 365 Felügyeleti központban történő megvásárlásához:
 
 1. Nyissa meg a [Microsoft 365 Felügyeleti központot](https://portal.office.com/adminportal/home#/homepage).
 
@@ -67,7 +69,7 @@ Kövesse az alábbi lépéseket a Power BI Pro megvásárlásához:
 
 9. Ha az eredeti vásárlás után további licenceket szeretne hozzáadni, az **Előfizetések** oldalon válassza a **Power BI Pro** lehetőséget, majd válassza a **Licencek hozzáadása/eltávolítása** elemet.
 
-## <a name="assign-licenses-in-office-365"></a>Licencek kiosztása az Office 365-ben
+### <a name="assign-licenses-in-the-microsoft-365-admin-center"></a>Licencek kiosztása a Microsoft 365 Felügyeleti központban
 
 Az alábbi lépésekkel rendelheti hozzá a Power BI Pro-licenceket egyéni felhasználói fiókokhoz:
 
@@ -89,7 +91,7 @@ Az alábbi lépésekkel rendelheti hozzá a Power BI Pro-licenceket egyéni felh
 
     ![Licenc állapotának ellenőrzése](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-08.png)
 
-## <a name="assign-licenses-in-azure"></a>Licencek kiosztása az Azure-ban
+### <a name="assign-licenses-in-the-azure-portal"></a>Licencek kiosztása az Azure Portalon
 
 Az alábbi lépésekkel rendelheti hozzá a Power BI Pro-licenceket egyéni felhasználói fiókokhoz:
 
@@ -107,7 +109,7 @@ Az alábbi lépésekkel rendelheti hozzá a Power BI Pro-licenceket egyéni felh
 
     ![Licencek – Minden termék](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-03.png)
 
-5. Power BI Pro-licenc további felhasználói fiókhoz való rendeléséhez válassza a **Hozzárendelés** lehetőséget.
+5. Power BI Pro-licenc felhasználó fiókhoz való hozzáadásához válassza **Hozzárendelés** lehetőséget.
 
     ![Licenc hozzárendelése](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-04.png)
 

@@ -10,12 +10,12 @@ ms.date: 10/07/2019
 ms.author: maggies
 layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: 4defed78228805a3f61447def82b3c3d406103d3
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: 64e77a97ec8f316473d6b953b506b323b69bfd0e
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239892"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431543"
 ---
 # <a name="power-bi-for-report-designers"></a>Power BI jelentéstervezőknek
 
@@ -37,7 +37,7 @@ ms.locfileid: "72239892"
                                           <h3>A létrehozás első lépései a Power BI-jal</h3> 
                                           <p></p>
                                                <a href="desktop-what-is-desktop.md">Első lépések a Power BI Desktoppal</a><br/> 
-                                               <a href="power-bi-overview.md">Első lépések a Power BI szolgáltatással</a><br/> 
+                                               <a href="fundamentals/power-bi-overview.md">Első lépések a Power BI szolgáltatással</a><br/> 
                                                <a href="report-server/get-started.md">Mi a Power BI jelentéskészítő kiszolgáló?</a>
                                     </div> 
                               </div> 
@@ -156,7 +156,7 @@ ms.locfileid: "72239892"
                                           <h3>Hogyan oszthatja meg munkáját</h3> 
                                           <p></p>
                                                 <a href="service-how-to-collaborate-distribute-dashboards-reports.md">A közös használat és tartalommegosztás módja</a><br/>
-                                                <a href="service-create-workspaces.md">Alkalmazás-munkaterületek a Power BI szolgáltatásban</a> 
+                                                <a href="service-create-workspaces.md">Munkaterületek a Power BI szolgáltatásban</a> 
                                     </div> 
                               </div> 
                         </div> 

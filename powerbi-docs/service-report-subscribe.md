@@ -1,26 +1,25 @@
 ---
-title: Feliratkozás és mások feliratkoztatása jelentésekre és irányítópultokra – Power BI
+title: Feliratkozás és mások feliratkoztatása jelentésekre és irányítópultokra
 description: Útmutató saját maga és mások Power BI-jelentésoldalak -irányítópultok vagy lapszámozott jelentések pillanatképére való feliratkoztatásához.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 2c08736e23568675af87e7de63092fff3a6a86c5
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: f0adb8defff5ad7c62006848a5163e4bf26e2b96
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073420"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871605"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Feliratkozás és mások feliratkoztatása jelentésekre és irányítópultokra a Power BI szolgáltatásban
 
-Feliratkoztathatja önmagát és munkatársait a legfontosabbnak ítélt jelentésoldalakra, irányítópultokra és lapszámozott jelentésekre. A Power BI e-mailben küld pillanatképeket. Megadhatja a Power BI-nak, hogy milyen gyakran szeretne ilyen e-mailt kapni: naponta, hetente, óránként, havonta vagy naponta egyszer, az adatok első frissítése után.  Napi, heti óránkénti vagy havi gyakoriság esetén megadhatja a feliratkozás futásának időpontját.  Egy napra legfeljebb 24 különböző feliratkozást állíthat be az összes jelentésoldalhoz és irányítópulthoz.
+Feliratkoztathatja önmagát és munkatársait a legfontosabbnak ítélt jelentésoldalakra, irányítópultokra és lapszámozott jelentésekre. A Power BI e-mailben küld pillanatképeket. Megadhatja a Power BI-nak, hogy milyen gyakran szeretne ilyen e-mailt kapni: naponta, hetente, óránként, havonta vagy naponta egyszer, az adatok első frissítése után.  Napi, heti óránkénti vagy havi gyakoriság esetén megadhatja a feliratkozás futásának időpontját.  Jelentésenként vagy irányítópultonként akár 24 különböző feliratkozást is beállíthat.
 
 ![az irányítópult e-mailes pillanatképe](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 
@@ -109,5 +108,5 @@ A feliratkozás megszűnik, ha lejár a Pro-licence, ha az irányítópultot vag
 ## <a name="next-steps"></a>Következő lépések
 
 - [Feliratkozás és mások feliratkoztatása egy lapszámozott jelentésre a Power BI szolgáltatásban](paginated-reports-subscriptions.md)
-- További kérdései vannak? [Kérdezze a Power BI-közösséget](http://community.powerbi.com/)    
+- További kérdései vannak? [Kérdezze a Power BI-közösséget](https://community.powerbi.com/)    
 - [Olvassa el a blogbejegyzést](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

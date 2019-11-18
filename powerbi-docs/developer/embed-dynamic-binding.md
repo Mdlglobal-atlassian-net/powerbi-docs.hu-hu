@@ -3,17 +3,16 @@ title: Dinamikus kötés
 description: Megtudhatja, hogyan ágyazhat be egy jelentést dinamikus kötéssel.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 09/25/2019
-ms.openlocfilehash: 8b42b397f726e492eda80a99eb730c215eb17ccb
-ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
+ms.openlocfilehash: 8110023de4df28f65129bd53203cec9752acc1af
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776237"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864447"
 ---
 # <a name="dynamic-binding"></a>Dinamikus kötés
 

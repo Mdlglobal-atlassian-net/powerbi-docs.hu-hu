@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 584dacbb3823f1a7c2475c780124985992a4b1d4
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: b1792abeed1a4a03cb8e3f49acb4ed8aa53b1be0
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375157"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020496"
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Power BI-jelentések (és az alapjukul szolgáló adatkészletek) elérésének engedélyezése a Cortana számára
 Már olvasta az [A Cortana és a Power BI ismertetése](service-cortana-intro.md) című cikket (ha nem, akkor ajánlott előbb elolvasni, és azután visszatérni ide). Most saját maga is kipróbálja.  Mielőtt természetes nyelvű kérdéseket tenne fel a Cortanában és válaszokat kapna rájuk a Power BI-***jelentésekben*** tárolt adatok alapján, ismerjen meg néhány előfeltételt. Egészen pontosan a következőket kell megtennie.
 
 > [!IMPORTANT]
-> Cortana-integráció a Power bi-ban elavulttá válik. Június 11-től kezdődően Cortana nem fog működni az irányítópultok és jelentések sem.
+> A Power BI Cortana-integrációja elavult. Június 11-től a Cortana nem fog működni az irányítópultokban és jelentésekben.
 
 A Power BI szolgáltatásban
 
@@ -42,7 +42,7 @@ A Power BI szolgáltatásba (nem a Power BI Desktopba) bejelentkezve meg kell is
 2. Ehhez a jelentéshez a **Contoso Sales** című jelentés van társítva.
    
     ![Contoso Sales adatkészlet](media/service-cortana-enable/power-bi-identify-dataset.png)
-3. Az adathalmaz neve mellett jobbra válassza a **három pont (...) > Beállítások** lehetőséget.  
+3. Válassza az adathalmaz nevétől jobbra található **További lehetőségek** (...) elemet, majd a Beállítások** lehetőséget.  
    
     ![Beállítások kiválasztása](media/service-cortana-enable/power-bi-settings-cortana.png)
 4. Válassza a **Q&A és Cortana** > **Adatkészlet elérésének engedélyezése a Cortana számára** > **Alkalmaz** lehetőséget.

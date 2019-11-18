@@ -2,7 +2,6 @@
 title: Jelentések létrehozása a Power BI-ban akadálymentességi eszközök használatával
 description: A Power BI jelentések létrehozásához használható beépített akadálymentességi eszközeinek ismeretetése
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 594f47137939d21df8b22e5e22b725a85cf25673
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: c8806adce3fc729208effb3bd22c57c7274915d2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73181252"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878920"
 ---
 # <a name="creating-reports-in-power-bi-using-accessibility-tools"></a>Jelentések létrehozása a Power BI-ban akadálymentességi eszközök használatával
 

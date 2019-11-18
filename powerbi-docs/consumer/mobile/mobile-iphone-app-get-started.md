@@ -2,19 +2,18 @@
 title: Az iOS-hez készült Power BI mobilalkalmazás használatának első lépései
 description: Megtudhatja, hogyan hozza el a mobileszközökhöz készült, iOS-es Microsoft Power BI-alkalmazás a Power BI-t az Ön zsebébe, a helyszíni és felhőbeli üzleti információkhoz való mobil hozzáféréssel együtt.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: cc239ad33d8789d679fccd21339740af71155336
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: dd43df2a01175657b39c1e3dcebe5ae6a9433e42
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059449"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870188"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Első lépések az iOS-eszközökhöz készült Power BI mobilalkalmazással
 Az iPhone-on, iPaed és iPod Touchon futó iOS-es Microsoft Power BI alkalmazás mobil BI-élményt kínál a Power BI-hoz, a Power BI jelentéskészítő kiszolgálóhoz és a Reporting Services-hez. Az élő, érintéssel vezérelhető mobil hozzáférés révén bárhonnan megtekintheti és kezelheti vállalata helyszíni és felhőbeli irányítópultjait. Fedezze fel az adatokat az irányítópultokon, és ossza meg eredményeit munkatársaival e-mailben vagy SMS-ben. Kísérje figyelemmel a legidőszerűbb adatokat [Appla Watch](mobile-apple-watch.md)on.  
@@ -31,7 +30,7 @@ Ezután az iOS-es Power BI mobilalkalmazásban a helyszínen és a felhőben is 
 Ismerje meg [a Power BI mobilalkalmazások újdonságait](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="download-the-app"></a>Alkalmazás letöltése
-Az [iOS-alkalmazás letöltése](http://go.microsoft.com/fwlink/?LinkId=522062 "Az iOS-alkalmazás letöltése") az Apple App Store-ból iPhone-ra, iPadre vagy iPod Touchra.
+Az [iOS-alkalmazás letöltése](https://go.microsoft.com/fwlink/?LinkId=522062 "Az iOS-alkalmazás letöltése") az Apple App Store-ból iPhone-ra, iPadre vagy iPod Touchra.
 
 Az iOS-es Power BI alkalmazást az iOS 11 vagy újabb rendszert futtató eszközök bármelyikén futtathatja. 
 
@@ -73,9 +72,9 @@ Megtekintheti és felhasználhatja a Power BI irányítópult-mintáit, de van n
    ![Reporting Services-minták a Power BI-mobilalkalmazásban](./media/mobile-iphone-app-get-started/power-bi-reporting-services-samples.png)
 
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Tartalom keresése a Power BI-mobilalkalmazásban
-Az irányítópultokat és jelentéseket a rendszer különböző helyeken tárolja a Power BI mobilalkalmazásokban, attól függően, hogy honnan származnak. További információk: [A tartalmak megkeresése a mobilalkalmazásokban](mobile-apps-quickstart-view-dashboard-report.md). Ezenkívül bármikor rákereshet bármire a Power BI mobilalkalmazásokban. 
+Az irányítópultokat és jelentéseket a rendszer különböző helyeken tárolja a Power BI mobilalkalmazásokban, attól függően, hogy honnan származnak. További információk: [A tartalmak megkeresése a mobilalkalmazásokban](mobile-apps-quickstart-view-dashboard-report.md). Ezenkívül mindig bármit megkereshet a Power BI mobilalkalmazásokban. 
 
-![Bal oldali navigációs panel](./media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
+![Navigációs ablaktábla](./media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
 
 Tájékozódjon bővebben a [tartalom kereséséről a mobilalkalmazásokban](mobile-apps-quickstart-view-dashboard-report.md).
 
@@ -84,7 +83,7 @@ A mobilalkalmazások Kedvencek oldalán a kedvenc Power BI-irányítópultjai, v
 
 * Koppintson a **Kedvencek** elemre.
   
-   ![Kedvencek a bal oldali navigációs panelen](./media/mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
+   ![Kedvencek a navigációs ablaktáblán](./media/mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
   
    Ezen az oldalon összes kedvencét egy helyen látja:
   
@@ -110,6 +109,6 @@ További információ a [Power BI-mobilalkalmazások Microsoft Intune-nal tört�
 ## <a name="next-steps"></a>Következő lépések
 
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 
 

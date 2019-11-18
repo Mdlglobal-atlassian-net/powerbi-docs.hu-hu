@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 306738f4df765638c591c9612adf885facdceda0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 59567b62c44a386b3890f68de49b9f7aed76aa45
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513853"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019347"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Oktatóanyag: Saját mértékek létrehozása a Power BI Desktopban
 A Power BI Desktop leghatékonyabb adatelemzési megoldásait a mértékek segítségével alakíthatja ki. A mértékek segítségével számításokat hajthat végre az adatokon a jelentések használata közben. Ez az oktatóanyag ismerteti a mértékekről, és bemutatja, hogy miképpen hozhatja létre a saját alapvető mértékeit a Power BI Desktopban.
@@ -60,7 +60,7 @@ A létrehozott saját mérték hozzáadódik a választott tábla Fields (Mezők
 
 A nettó értékesítések értékét szeretné kiszámítani azzal a módszerrel, hogy a teljes értékesítési összegből kivonja a kedvezményeket és a visszatérítéseket. Bármilyen környezet jelenik meg a vizualizációban, mindenképp szüksége lesz egy olyan mértékre, amely a SalesAmount (ÉrtékesítésÖsszeg) értékből kivonja a DiscountAmount (KedvezményÖsszeg) és a ReturnAmount (VisszatérítésÖsszeg) értékét. Bár a Mezők listában nincsen Net Sales (Nettó értékesítések) mező, rendelkezésre állnak azok az építőelemek, amelyekből létrehozhatja a nettó értékesítést kiszámító saját mértéket. 
 
-1.  Kattintson a Mezők területen látható **Sales** táblára, vagy vigye a kurzort a tábla fölé, mutasson a **További beállítások** három pontra (...), majd kattintson az **New Measure** (Új mérték) elemre. Ez menti az új mértéket a Sales táblába, ahol később könnyebben megtalálhatja.
+1.  Kattintson jobb gombbal a Mezők területen látható **Sales** táblára, vagy vigye a kurzort a tábla fölé, válassza a **További beállítások** (...) elemet, majd válassza az **Új mérték** menüpontot. Ez menti az új mértéket a Sales táblába, ahol később könnyebben megtalálhatja.
     
     ![Új mérték](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
     

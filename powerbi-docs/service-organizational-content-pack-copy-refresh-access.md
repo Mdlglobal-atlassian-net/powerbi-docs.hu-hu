@@ -2,7 +2,6 @@
 title: 'Céges tartalomcsomagok: Hozzáférés és másolás'
 description: Információ a Power BI vállalatitartalomcsomag-másolatok létrehozásáról és az azokhoz való hozzáférési problémák hibaelhárításáról
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp, kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86fa7a7845686fd46e9d58ea138bdddd47a0a097
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 905e461c69a898b41b45e48405c3aaaa6e09cfec
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72019629"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881313"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Céges tartalomcsomagok: Másolás, frissítés és hozzáférés
 
@@ -30,7 +29,7 @@ A tartalomcsomagok létrehozása nem azonos az irányítópultok megosztásával
 ## <a name="create-a-copy-of-an-organizational-content-pack"></a>Másolat készítése egy vállalati tartalomcsomagról
 Hozza létre a saját, mások által nem látható másolatát a tartalomcsomagról.
 
-1. Válassza a tartalomcsomag irányítópultja mellett a három pontot (...) > a Másolat készítése lehetőséget.
+1. Válassza a tartalomcsomag irányítópultja melletti **További lehetőségek** (...) elemet, majd a Másolat készítése menüpontot.
 
     ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Kattintson a **Mentés** gombra.  
@@ -58,4 +57,4 @@ Lásd: [Vállalati tartalomcsomagok kezelése, frissítése és törlése](servi
 ## <a name="next-steps"></a>Következő lépések
 * [A vállalati tartalomcsomagok bemutatása](service-organizational-content-pack-introduction.md)
 * [Csoportok létrehozása a Power BI-ban](service-create-distribute-apps.md)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

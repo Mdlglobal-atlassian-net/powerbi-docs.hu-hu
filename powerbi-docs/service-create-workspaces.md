@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 32b9adc92222e2122aff41d7ef7ef351c3158951
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 1087ac4301a172500c997e78ee3a16695f6b0d73
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020239"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021090"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Klasszikus munkaterületek létrehozása a Power BI-ban
 
@@ -39,7 +39,7 @@ Az első létrehozáskor akár egy órát is kell várnia, hogy a rendszer propa
 ### <a name="add-an-image-to-your-office-365-workspace-optional"></a>Kép hozzáadása az Office 365-munkaterülethez (választható)
 A Power BI alapértelmezés szerint egy kis színes kört hoz létre az alkalmazáshoz, benne az alkalmazás kezdőbetűivel. Ha szeretné, ezt testreszabhatja egy képpel. A kép felvételéhez Exchange Online-licenc szükséges.
 
-1. Válassza a **Munkaterületek** elemet, a három pontot (...) a munkaterület neve mellett, majd a **Tagok** lehetőséget. 
+1. Válassza a **Munkaterületek** lehetőséget, a munkaterület neve melletti **További lehetőségek** (...) elemet, majd a **Tagok** menüpontot. 
    
      ![Munkaterület tagjainak kiválasztása](media/service-create-workspaces/power-bi-workspace-old-members.png)
    

@@ -2,7 +2,6 @@
 title: 1\. rész – Vizualizációk hozzáadása Power BI-jelentéshez
 description: 1\. rész – Vizualizációk hozzáadása Power BI-jelentéshez
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e25db5ab57e3a52ffc08020dc980553e515256bf
-ms.sourcegitcommit: 2a61d8b1e2707a24fe1284a8a4034b11c3999842
+ms.openlocfilehash: d68abc7b4509595d4dfa3071dc56673e6af89e4f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048979"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871045"
 ---
 # <a name="part-1-add-visualizations-to-a-power-bi-report"></a>1\. rész – Vizualizációk hozzáadása Power BI-jelentéshez
 
@@ -28,7 +27,7 @@ A cikk röviden bemutatja a vizualizációk jelentésekben történő létrehoz�
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Ez az oktatóanyag az [Értékesítési és marketing PBIX-fájlt](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) használja.
+Ez az oktatóanyag az [Értékesítési és marketing PBIX-fájlt](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) használja.
 
 1. A Power BI Desktop menüsorának bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
    

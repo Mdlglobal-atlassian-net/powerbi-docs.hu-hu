@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: tebercov
-ms.openlocfilehash: 660fd7c623e8a195f937a3a2b468f758986411e1
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 4db4fbc0dd34ae558514058e0aa7af0a704d8411
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195220"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432339"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Sablonalkalmazások telepítése és terjesztése a szervezetnél – Power BI
 
@@ -57,7 +57,7 @@ A böngészőben kattintson erre a hivatkozásra az AppSource Power BI-alkalmaz�
 
 4. A párbeszédpanelen válassza a **Telepítés** lehetőséget.
 
-    ![Alkalmazás telepítése](media/service-template-apps-install-distribute/power-install-dialog.png)Ha Power BI Pro-licenccel rendelkezik, az alkalmazás telepítése a társított alkalmazás-munkaterülettel együtt történik. Az alkalmazást a társított munkaterületen szabhatja testre.
+    ![Alkalmazás telepítése](media/service-template-apps-install-distribute/power-install-dialog.png)Ha Power BI Pro-licenccel rendelkezik, az alkalmazás telepítése a társított munkaterülettel együtt történik. Az alkalmazást a társított munkaterületen szabhatja testre.
 
     Ha a telepítés sikeres, megjelenik egy értesítés, hogy az új alkalmazás készen áll a használatra.
 4. Válassza az **Ugrás az alkalmazásra** lehetőséget.
@@ -71,7 +71,7 @@ A böngészőben kattintson erre a hivatkozásra az AppSource Power BI-alkalmaz�
 
     Vagy ezt a párbeszédpanelt kihagyva közvetlenül is hozzáférhet a társított munkaterülethez a bal oldali navigációs panel **Munkaterületek** szakaszában.
     >[!NOTE]
-    >Egy sablonalkalmazás telepítése egy *szervezeti alkalmazást* és egy *alkalmazás-munkaterületet* is telepít. További információ az [alkalmazások Power BI-beli terjesztéséről](service-create-distribute-apps.md).
+    >Egy sablonalkalmazás telepítése egy *vállalati alkalmazást* és egy *munkaterületet* is telepít. További információ az [alkalmazások Power BI-beli terjesztéséről](service-create-distribute-apps.md).
  
 6. A munkatársakkal való megosztás előtt érdemes kapcsolódni a saját adataihoz. Módosíthatja a jelentés vagy az irányítópultot is, hogy megfelelően működjön a cégében. Ekkor más jelentéseket vagy irányítópultokat is felvehet.
 

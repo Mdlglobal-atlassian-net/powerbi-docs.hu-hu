@@ -2,7 +2,6 @@
 title: Végfelhasználók által feltett gyakori kérdések – Power BI
 description: Az alábbiakban a Power BI szolgáltatással és a Power BI mobilalkalmazásaival kapcsolatos gyakori kérdések és válaszok listáját tekintheti át.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,16 +9,16 @@ ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5166c99a66178fb29ecab3d5ed0a660f694f7a61
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 282b10d48efc97c38dae06692964e3ba2a7412b0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430040"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852512"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Gyakori kérdések – Power BI
 
-* Ha bármilyen egyéb kérdése van, [kérdezze a Power BI-közösséget](http://community.powerbi.com/).
+* Ha bármilyen egyéb kérdése van, [kérdezze a Power BI-közösséget](https://community.powerbi.com/).
 * Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).
 
 ## <a name="what-is-the-microsoft-power-bi-service"></a>Mi a Microsoft Power BI szolgáltatás?
@@ -56,9 +55,9 @@ Igen. Létezik nonprofit díjszabás, ha a szolgáltatást közvetlenül a Micro
 
 Igen. A Power BI natív alkalmazásokat biztosít Android rendszerű mobiltelefonokon, táblagépeken, iOS-eszközökön és Windows 10-es eszközökön. Az adott [Power BI-mobilalkalmazást](https://powerbi.microsoft.com/mobile) a megfelelő áruházból töltheti le:  
 
-* [Apple App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
-* [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
-* [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
+* [Apple App Store](https://go.microsoft.com/fwlink/?LinkId=526218)
+* [Google Play](https://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
+* [Windows Store](https://go.microsoft.com/fwlink/?LinkId=526478)
 
 ## <a name="what-do-i-need-to-install-to-use-power-bi"></a>Mit kell telepíteni a Power BI használatához?
 
@@ -66,15 +65,15 @@ A Power BI szolgáltatás használatához csak egy webböngészőre és egy e-ma
 
 A Power BI mobilalkalmazásait is letöltheti a megfelelő áruházakból – szintén ingyenesen:
 
-* [App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
-* [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
-* [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
+* [App Store](https://go.microsoft.com/fwlink/?LinkId=526218)
+* [Google Play](https://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
+* [Windows Store](https://go.microsoft.com/fwlink/?LinkId=526478)
 
 ## <a name="where-do-i-get-started-with-power-bi"></a>Hol tehetem meg az első lépéseket a Power BI-jal?
 
 Az alábbi erőforrások állnak rendelkezésre az első lépések megtételéhez:
 
-* [A Power BI blogja](http://blogs.msdn.com/b/powerbi/)
+* [A Power BI blogja](https://blogs.msdn.com/b/powerbi/)
 * [Webináriumok](../webinars.md)
 * Az első lépések megtételét segítő videók a [YouTube-csatornán](https://www.youtube.com/user/mspowerbi)
 * [A Power BI Desktop *fogyasztói* használatának első lépései](power-bi-consumer-landing.md) című cikk
@@ -91,19 +90,19 @@ Az alábbi erőforrások állnak rendelkezésre az első lépések megtételéhe
 
 ## <a name="how-can-i-buy-power-bi-pro-in-my-country"></a>Hogyan vásárolhatom meg a Power BI Pro verziót az országomban?
 
-A Power BI Pro licenceit közvetlenül vásárolhatja meg, vagy cseveghet egy képviselővel a [www.powerbi.com](http://www.powerbi.com) webhelyen.
+A Power BI Pro licenceit közvetlenül vásárolhatja meg, vagy cseveghet egy képviselővel a [www.powerbi.com](https://www.powerbi.com) webhelyen.
 
 Megkereshet egy [Microsoft-partnert](https://partner.microsoft.com/) is a Power BI implementációjának támogatásával kapcsolatban.
 
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Teljesíti a Power BI az országos, a regionális és az iparág-specifikus megfelelőségi követelményeket?
 
-További információ a Power BI megfelelőségéről a [Microsoft Adatvédelmi központban](http://go.microsoft.com/fwlink/?LinkId=785324) található.
+További információ a Power BI megfelelőségéről a [Microsoft Adatvédelmi központban](https://go.microsoft.com/fwlink/?LinkId=785324) található.
 
 ## <a name="where-can-i-learn-more-about-security"></a>Hol tájékozódhatok a biztonságról?
 
 További információ a Power BI biztonságáról, adatvédelméről és megfelelőségéről:
 
-* A [Power BI biztonsága](http://go.microsoft.com/fwlink/?LinkId=829185) – tanulmány
+* A [Power BI biztonsága](https://go.microsoft.com/fwlink/?LinkId=829185) – tanulmány
 
 * A [Power BI biztonsági támogatása](../service-admin-power-bi-security.md) – cikk
 
@@ -117,5 +116,5 @@ Sok más Microsoft-szolgáltatáshoz és -szoftverhez hasonlóan a Power BI is e
 
 * [Ki számít a Power BI felhasználójának?](end-user-consumer.md)
 * [Hogyan használja a fogyasztó a Power BI-t?](end-user-reading-view.md)
-* További kérdései vannak? [Kérdezze a Power BI-közösséget](http://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze a Power BI-közösséget](https://community.powerbi.com/)
 * Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/)

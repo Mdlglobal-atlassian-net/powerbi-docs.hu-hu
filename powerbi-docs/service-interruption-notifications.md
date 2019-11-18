@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/16/2019
 ms.author: mblythe
-ms.openlocfilehash: 677e2b96da533b62cafc724a2f4498591d91057a
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: f1d1a22f676873e3a68edf891c4b23522904ddd9
+ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073570"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73169010"
 ---
 # <a name="service-interruption-notifications"></a>Szolgáltatáskimaradásokkal kapcsolatos értesítések
 
@@ -28,7 +28,7 @@ Jelenleg a következő _megbízhatósági eseményekről_küld e-mailt a rendsze
 - Modell frissítési megbízhatósága
 - Lekérdezés frissítési megbízhatósága
 
-Ilyen értesítések lehetnek például olyan esetekben, amikor a felhasználók hosszabb késleltetést tapasztalnak olyan műveletekben, mint a jelentések megnyitása, az adatkészlet frissítése vagy a lekérdezés-végrehajtás. Ha az incidens megoldódott, arról is e-mailt küldünk.
+Értesítések akkor lesznek elküldve, amikor _hosszabb késés_ tapasztalható olyan műveletekben, mint a jelentések megnyitása, az adathalmaz frissítése vagy a lekérdezés-végrehajtás. Ha az incidens megoldódott, arról is e-mailt küldünk.
 
 > [!NOTE]
 > Ez a funkció jelenleg csak a Power BI Premium dedikált kapacitásainak esetében érhető el. A megosztott vagy beágyazott kapacitások esetében nem érhető el.

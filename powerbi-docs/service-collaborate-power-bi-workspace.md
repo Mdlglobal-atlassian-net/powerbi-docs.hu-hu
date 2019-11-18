@@ -2,7 +2,6 @@
 title: Együttműködés klasszikus munkaterületen
 description: Ismertető a közös munkáról, amelyet munkatársaival Office 365-szolgáltatásokkal vagy Power BI Desktop-fájlokon a munkaterületen végezhet, mint amilyen a fájlok megosztása a OneDrive Vállalati verzióban, az Exchange-beszélgetések, a naptár és a feladatok.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 41aaf33602fc8a895d54666736d775ac53d5aaef
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: cddb55ab85cfd6d8d6a5e49d81b83a80df2f81da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832433"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873168"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>Együttműködés klasszikus munkaterületen
 A Power BI munkaterületek kitűnően alkalmasak arra, hogy munkatársaival irányítópultokon, jelentéseken és adatkészleteken együttműködve hozzanak létre *alkalmazásokat*. Ez a cikk az eredeti, *klasszikus* munkaterületekről szól.  
@@ -45,7 +44,7 @@ Miután létrehoz egy Power BI Desktop-fájlt, közzéteheti azt egy munkaterül
 ## <a name="collaborate-in-office-365"></a>Együttműködés az Office 365-ben
 Az Office 365-beli együttműködés kiindulópontja a Power BI-beli klasszikus munkaterület.
 
-1. A Power BI szolgáltatásban válassza a **Munkaterületek** melletti nyilat, majd a három pontot (…) a munkaterület neve mellett. 
+1. A Power BI szolgáltatásban válassza a **Munkaterületek** > elem melletti nyilat, majd a munkaterület neve melletti **További lehetőségek** (...) elemet. 
    
    ![A Munkaterületek menü](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. Ebből a menüből több módon is együttműködhet a csoportjával: 
@@ -56,7 +55,7 @@ Az Office 365-beli együttműködés kiindulópontja a Power BI-beli klasszikus 
    A csoport-munkaterület első megnyitása az Office 365-ben eltarthat egy ideig. Várjon 15-30 percet, majd frissítse az oldalt.
 
 ## <a name="have-a-group-conversation-in-office-365"></a>Csoportbeszélgetés az Office 365-ben
-1. Válassza a munkaterület neve melletti három pontot (...) \> **Beszélgetések**. 
+1. Válassza a munkaterület neve melletti **További lehetőségek** (...) \> **Beszélgetések** menüpontot. 
    
     ![A Beszélgetések fül](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
@@ -66,7 +65,7 @@ Az Office 365-beli együttműködés kiindulópontja a Power BI-beli klasszikus 
 2. További információ az [Office 365 Outlook-csoportbeszélgetésekről](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="schedule-an-event-on-the-group-workspace-calendar"></a>Esemény ütemezése a csoport-munkaterület naptárában
-1. Válassza a munkaterület neve melletti három pontot (...) \> **Naptár**. 
+1. Válassza a munkaterület neve melletti **További lehetőségek** (...) \> **Naptár** menüpontot. 
    
    ![A Naptár fül](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
@@ -80,6 +79,6 @@ Ha Ön egy munkaterület tulajdonosa vagy rendszergazdája, akkor fel is vehet v
 
 ## <a name="next-steps"></a>Következő lépések
 * [Alkalmazások közzététele Power BI-ban](service-create-distribute-apps.md).
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/).
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 * Visszajelzést szeretne küldeni? Keresse fel a [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi) fórumot.
 

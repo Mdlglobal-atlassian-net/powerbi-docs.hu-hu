@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5507356e42c58574a2d7c6787074fb987ddfeaec
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: fc255cda798b528acf7f782efac742872a442d41
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523187"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021073"
 ---
 # <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Irányítópult másolatának létrehozása a Power BI szolgáltatásban
 ![irányítópult](media/service-dashboard-copy/power-bi-dashboard.png)
@@ -28,7 +28,7 @@ Az irányítópultokat a Power BI szolgáltatás használatával lehet létrehoz
 Az irányítópultról csak az irányítópult *létrehozója* készíthet másolatot. Az Önnel alkalmazásként megosztott irányítópultok nem duplikálhatók.
 
 1. Nyissa meg az irányítópultot.
-2. A jobb felső sarokban kattintson a folytatást jelző pontokra (...), és válassza az **Irányítópult megkettőzése** parancsot.
+2. Válassza a jobb felső sarokban található **További lehetőségek** (...) elemet, majd az **Irányítópult duplikálása** menüpontot.
    
    ![három pont menü](media/service-dashboard-copy/power-bi-dulicate.png)
 3. Adjon egy nevet az irányítópultnak, és válassza a **Másolat készítése** parancsot. 
@@ -40,10 +40,10 @@ Az irányítópultról csak az irányítópult *létrehozója* készíthet máso
 
 5.    Nyissa meg az új irányítópultot, és végezze el a szükséges módosításokat. A következő lépésekben az alábbi műveleteket végezheti el:    
     a. [Áthelyezhet, átnevezhet, méretezhet vagy törölhet is csempéket](service-dashboard-edit-tile.md).  
-    b. A három pont (...), majd a **Részletek szerkesztése** lehetőséget választva szerkesztheti a csempét és a hivatkozásokat.  
+    b. Módosítsa a csempe adatait és hivatkozásait a **További lehetőségek** (...) elem, majd a **Részletek szerkesztése** menüpont választásával.  
     c. [Új csempe hozzáadása az irányítópult menüsávjából](service-dashboard-add-widget.md) (**Csempe hozzáadása**)  
     d. Új csempéket rögzíthet a [Q&A-ből](service-dashboard-pin-tile-from-q-and-a.md) vagy [jelentésekből](service-dashboard-pin-tile-from-report.md).  
-    e. Az irányítópult beállítások paneljén átnevezheti az irányítópultot, be- vagy kikapcsolhatja a Q&A-t, és beállíthatja a csempefolyamot.  (válassza az irányítópulthoz tartozó három pont (...) legördülő menüjét, majd válassza a **Beállítások** lehetőséget)  
+    e. Az irányítópult beállítások paneljén átnevezheti az irányítópultot, be- vagy kikapcsolhatja a Q&A-t, és beállíthatja a csempefolyamot.  (válassza az irányítópult **További lehetőségek** (...) legördülő menüjét, majd a **Beállítások** menüpontot)  
     f. Az irányítópultot megoszthatja közvetlenül a munkatársaival, vagy egy Power BI alkalmazás részeként is. 
 
 

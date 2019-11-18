@@ -2,7 +2,6 @@
 title: Irányítópult-csempe szerkesztése
 description: 'Az oktatóanyag végigvezeti Önt a csempe létrehozásától az irányítópulton való rögzítéséig, miközben elsajátíthatja az irányítópultok csempéinek szerkesztési módszereit: az átméretezést, az áthelyezést, az átnevezést, a rögzítést, a törlést és a hivatkozások használatát.'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c1b6f7434724540a9ad5b579030c3ed54b32abed
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: bdd2ec136ae741e15e0cb60d141c651cd5fb6749
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720577"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877463"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Irányítópult-csempék szerkesztése és eltávolítása
 
@@ -83,9 +82,9 @@ Különböző méretekre állíthatja a csempéket – az 1x1-es elrendezéstől
 ![videó](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
 
 - - -
-## <a name="the-ellipses--menu"></a>A három pont (...) menü
+## <a name="more-options--menu"></a>**További lehetőségek** (...) menü
 
-1. Válassza a csempe jobb felső sarkában található három pontot (...). 
+1. Válassza a csempe jobb felső sarkában található **További lehetőségek** (...) elemet. 
    
    ![csempe három pont](media/service-dashboard-edit-tile/power-bi-tile.png)
 
@@ -148,5 +147,5 @@ Alapértelmezés szerint egy csempe kiválasztásával megnyílik az jelentés, 
 
 [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

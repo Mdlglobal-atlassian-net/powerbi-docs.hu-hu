@@ -2,7 +2,6 @@
 title: Gyors csatlakozás adatokhoz
 description: Csatlakozás adatforráshoz a Power BI Desktopban
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: quickstart
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 05d8c990b7057ab59515826547a42ce1ee643ac2
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: 1366a5281a36293a484f08c12ab9f8891e29123d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891690"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876212"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Rövid útmutató: Csatlakozás adatokhoz a Power BI Desktopban
 
@@ -28,8 +27,8 @@ Ha még nem regisztrált a Power BI-ra, a kezdés előtt [hozzon létre egy ingy
 ## <a name="prerequisites"></a>Előfeltételek
 
 Az cikkben ismertetett lépések elvégzéséhez az alábbiakra lesz szüksége:
-* Töltse le és telepítse a **Power BI Desktopot**, amely ingyenes alkalmazás, és helyi számítógépen fut. Közvetlenül is [letöltheti a **Power BI Desktopot**](https://powerbi.microsoft.com/desktop), vagy beszerezheti [a **Microsoft Store-ból**](http://aka.ms/pbidesktopstore) is.
-* [Töltse le ezt az Excel-munkafüzet mintát](http://go.microsoft.com/fwlink/?LinkID=521962), és hozzon létre egy mappát *C:\PBID-qs* néven, ahol az Excel-fájlt tárolja majd. Az útmutató további lépéseinél feltételezzük, hogy a letöltött Excel-munkafüzet ebben a mappában található.
+* Töltse le és telepítse a **Power BI Desktopot**, amely ingyenes alkalmazás, és helyi számítógépen fut. Közvetlenül is [letöltheti a **Power BI Desktopot**](https://powerbi.microsoft.com/desktop), vagy beszerezheti [a **Microsoft Store-ból**](https://aka.ms/pbidesktopstore) is.
+* [Töltse le ezt az Excel-munkafüzet mintát](https://go.microsoft.com/fwlink/?LinkID=521962), és hozzon létre egy mappát *C:\PBID-qs* néven, ahol az Excel-fájlt tárolja majd. Az útmutató további lépéseinél feltételezzük, hogy a letöltött Excel-munkafüzet ebben a mappában található.
 
 ## <a name="launch-power-bi-desktop"></a>A Power BI Desktop elindítása
 

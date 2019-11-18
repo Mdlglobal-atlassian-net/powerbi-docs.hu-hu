@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: e91f1d5084957ee7266161b9a34f916e2902d1f4
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: c2cc5f9da8ea12709d8244a1e82d8283f66f2413
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72019590"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021035"
 ---
 # <a name="data-lineage-preview"></a>Adatéletút (előzetes verzió)
 A modern üzletiintelligencia-projektekben az adatok adatforrásból a célba történő eljutásának megértése kihívást jelenthet. A kihívás még nagyobb a több adatforráson, összetevőn és függőségen átívelő speciális elemzési projektek esetén.  Nehéz választ adni az olyan kérdésekre, hogy például mi történik egy adat módosításakor, vagy hogy miért nem naprakész egy jelentés. Ezek megértéséhez szakértői csapatokra vagy mélyreható vizsgálatra van szükség. A származtatott nézetet azért hoztuk létre, hogy segítsünk megválaszolni ezeket a kérdéseket.
@@ -55,7 +55,7 @@ Az adatkészleteken látható a legutóbbi frissítés ideje, és hogy az adatk�
  
 Ha a munkaterületen egy jelentés egy másik munkaterület adatkészletére épül, akkor láthatja a forrásként működő munkaterület nevét az adatkészletkártyán. Válassza a forrás-munkaterület nevét az adott munkaterület megnyitásához.
  
-- Egy tetszőleges összetevőnél válassza a három pontot (...) a beállítások menüjének megnyitásához. Itt ugyanazok a műveletek érhetők el, mint a listanézetben.
+- Egy tetszőleges összetevőnél válassza a **További lehetőségek** (...) elemet a beállítások menüjének megnyitásához. Itt ugyanazok a műveletek érhetők el, mint a listanézetben.
   
 Ha több metaadatot szeretne megjeleníteni az adatkészletekről, válassza ki magát az adatkészletkártyát. Az adatkészlettel kapcsolatos további információk egy oldalsó panelen tekinthetők meg.
 
@@ -89,7 +89,8 @@ A származtatott nézet egy interaktív vászon. Az egér és az érintőpad has
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
-A származtatott nézet nem érhető el az Internet Explorerben. További információt [A Power BI használatát támogató böngészők](power-bi-browsers.md) című cikkben talál.
+- A származtatott nézet nem érhető el az Internet Explorerben. További információt [A Power BI használatát támogató böngészők](power-bi-browsers.md) című cikkben talál.
+- A származtatott nézet saját munkaterületen nem érhető el.
 
 ## <a name="next-steps"></a>Következő lépések
 

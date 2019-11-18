@@ -2,7 +2,6 @@
 title: Kapcsolódás a Power BI szolgáltatásban lévő adatkészletekhez a Power BI Desktopból
 description: Közös adathalmaz használata több Power BI Desktop-jelentéshez több munkaterületen, és a jelentés életciklusának kezelése
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e213bad8e7267abe0b49d1f460717dd817e9832a
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: d7d48b78ecced3e26a52df12bc8850ab8fed4c1e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020477"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877899"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Kapcsolódás a Power BI szolgáltatásban lévő adatkészletekhez a Power BI Desktopból
 Létrehozhat élő kapcsolatot a Power BI szolgáltatás egy megosztott adatkészletével, és számos különböző jelentést hozhat létre ugyanabból az adatkészletből. Ez annyit jelent, hogy létrehozhatja a tökéletes adatmodellt a Power BI Desktopban, majd közzéteheti a Power BI szolgáltatásban. Ezután Ön és mások különböző jelentéseket (külön .pbix-fájlokat) készíthetnek ugyanabból a közös adatmodellből, és ezeket különböző munkaterületekre menthetik. Ennek a szolgáltatásnak **Élő kapcsolat Power BI szolgáltatással** a neve.
@@ -37,7 +36,7 @@ Mindenki rajong Anna jelentéséért és az adatkészletéért, és itt kezdődi
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Csatlakozás a Power BI szolgáltatás adatkészletéhez élő kapcsolattal
 Amint Anna létrehozza a jelentést (és az adatkészletet, amelyen az alapul), és közzéteszi a **Power BI szolgáltatásban**, megjelenik a csapata munkaterületén a Power BI szolgáltatásban. Ha Anna egy *új felületű munkaterületen* menti a jelentést, akkor beállíthatja az Összeállítási engedélyt, hogy a munkaterületen belül és azon kívül mindenki számára elérhetővé, láthatóvá és használhatóvá tegye.
 
-További információ az új felületű munkaterületekről: [Alkalmazás-munkaterületek](service-new-workspaces.md).
+További információ az új felületű munkaterületekről: [Munkaterületek](service-new-workspaces.md).
 
 A munkaterületen belüli és azon kívüli más tagok ekkor létrehozhatnak egy élő kapcsolatot Anna megosztott adatmodelljével (az **Élő kapcsolat Power BI szolgáltatással** szolgáltatás révén), és létrehozhatják az *ő eredeti adathalmaza* alapján a saját egyedi jelentéseiket a *saját új felületű munkaterületükön*.
 

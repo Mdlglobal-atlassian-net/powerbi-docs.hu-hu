@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7540083b49e0790bfd9062d28d2655ff024d577f
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 7f7fde7fcabc29238d9558739eff02519ef9cca3
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867148"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020012"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Oktatóanyag: Csatlakozás GitHub-adattárhoz a Power BI segítségével
 Ebben az oktatóanyagban valódi, GitHub szolgáltatásbeli adatokhoz csatlakozhat a Power BI segítségével, és automatikusan hozhat létre Power BI-irányítópultokat és -jelentéseket. A Power BI nyilvános adattárához (más néven *tárházához*) fog csatlakozni, hogy választ kapjon olyan kérdésekre, mint: Hány közreműködő dolgozik a nyilvános Power BI-tartalmon? kik a fő közreműködők, a hét mely napján történik a legtöbb közreműködés, és sok más kérdés. 
@@ -76,7 +76,7 @@ Az oktatóanyag követéséhez létre kell hoznia egy GitHub-fiókot, ha nincs m
 
     ![Az alkalmazás a bal oldali navigációs panelen](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
-10. Válassza az irányítópult neve melletti három pontot (...) > **Átnevezés** > gépelje be a **GitHub-irányítópult** nevet.
+10. Válassza az irányítópult neve melletti **További lehetőségek** (...) elemet, majd az **Átnevezés** menüpontot, és gépelje be a **GitHub-irányítópult** nevet.
  
     ![Power BI – GitHub csempe](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 

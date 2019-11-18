@@ -3,18 +3,17 @@ title: Power BI Embedded migrálási eszköz
 description: Ezzel a migrálási eszközzel jelentések másolhatók a Power BI Embedded Azure-szolgáltatásból (PaaS) a Power BI szolgáltatásba (SaaS).
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: f839c8d4208dd63cab411ef5dae064fdb3d2fa95
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 2970744f89bf8fdc115be018d00c8f5b73d9ddfc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429439"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880577"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded migrálási eszköz
 
@@ -278,4 +277,4 @@ További információkért lásd: [Power BI Embedded-munkaterületcsoport tartal
 [JavaScript beágyazási minta](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium-tanulmány](https://aka.ms/pbipremiumwhitepaper)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

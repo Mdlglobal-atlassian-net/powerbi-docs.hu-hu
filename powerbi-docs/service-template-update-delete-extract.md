@@ -2,19 +2,18 @@
 title: Power BI-sablonalkalmazás frissítése, törlése és kivonása
 description: Sablonalkalmazás frissítése, törlése és kinyerése.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: 2cf655c25bb58ec001bac52b55aea74f887f08d9
-ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
+ms.openlocfilehash: a15a27255f15bdce39ddb14a6cda798d170ba3ad
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71207629"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871384"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Sablonalkalmazás frissítése, törlése és kinyerése
 
@@ -65,7 +64,7 @@ Egy sablonalkalmazás korábbi verziójára váltás mostantól minden eddiginé
 Az új munkaterületi verziókezelési beállítások alaphelyzetbe kerülnek, Ön pedig az újonnan kinyert munkaterületen fejlesztheti és terjesztheti a sablonalkalmazást.
 
 ## <a name="delete-template-app-version"></a>Sablonalkalmazás verziójának törlése
-A sablonalkalmazás munkaterülete az aktív elosztott sablonalkalmazás forrása. A sablonalkalmazás felhasználóinak védelme érdekében nem törölhetők munkaterületek úgy, hogy előtte nem távolította el annak összes létrehozott alkalmazásverzióját.
+A sablon-munkaterület az aktív elosztott sablonalkalmazás forrása. A sablonalkalmazás felhasználóinak védelme érdekében nem törölhetők munkaterületek úgy, hogy előtte nem távolította el annak összes létrehozott alkalmazásverzióját.
 Egy alkalmazásverzió törlése az alkalmazás URL-címét is törli, amely ezután nem használható.
 
 1. A Kiadáskezelés panelen kattintson a három pontra **(...)** , majd a **Törlés** lehetőségre.

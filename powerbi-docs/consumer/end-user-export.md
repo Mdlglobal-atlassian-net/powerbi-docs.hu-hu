@@ -2,7 +2,6 @@
 title: Adatok exportálása Power BI-vizualizációból
 description: Adatok exportálása jelentésvizualizációból és irányítópult-vizualizációból, és megtekintésük az Excelben.
 author: mihart
-manager: kvivek
 ms.reviewer: cmfinlan
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 77d26d32c70c3047636eb03d1211aff3736c8f0c
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 0e8a3ce01356804aa5dcca21895fa01b5908ebd0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430174"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851315"
 ---
 # <a name="export-data-from-a-visual"></a>Adatok exportálása vizualizációból
 
@@ -26,7 +25,7 @@ Ha szeretné megtekinteni a vizualizáció létrehozásához használt adatokat,
 
 ## <a name="from-a-visual-on-a-power-bi-dashboard"></a>Power BI-irányítópulton található vizualizációból
 
-1. Induljon ki egy Power BI-irányítópultból. Itt a ***Értékesítés és marketing minta*** alkalmazásból származó irányítópultot fogjuk használni. Az [alkalmazást letöltheti az AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282) webhelyről.
+1. Induljon ki egy Power BI-irányítópultból. Itt a ***Értékesítés és marketing minta*** alkalmazásból származó irányítópultot fogjuk használni. Az [alkalmazást letöltheti az AppSource.com](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282) webhelyről.
 
     ![Alkalmazásbeli irányítópult](media/end-user-export/power-bi-dashboards.png)
 
