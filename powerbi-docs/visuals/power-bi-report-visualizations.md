@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/28/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5ee36415c2da0e6920e78774f18c8a83e0b557b7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 02617e690c347448ecb1c313bc86969dabeb9984
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880988"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099097"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Vizualizációk Power BI-jelentésekben
 
@@ -70,4 +70,4 @@ Ha a vizualizáció pont úgy néz ki, ahogy szeretné, a Power BI szolgáltatá
 ## <a name="next-steps"></a>Következő lépések
 
 * [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
-* [Egyéni vizualizációk](../power-bi-custom-visuals.md)
+* [Egyéni vizualizációk](../developer/power-bi-custom-visuals.md)

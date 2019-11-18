@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 3/27/2019
-ms.openlocfilehash: f97c38301eb69422c123503364e2e3f11ce5368a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8d320b5fa1387ebf21ecd8c3c1db70b9892154e7
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880535"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128058"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Power BI-vizualizációk közzététele az AppSource-ban
 
@@ -142,13 +142,13 @@ A beküldés után az [alkalmazás irányítópultján](https://sellerdashboard.
 
 ## <a name="certify-your-visual"></a>A vizualizáció tanúsítása
 
-A vizualizáció létrehozása azt is megteheti, hogy tanúsíttatja a vizualizációt. Ez azt jelenti, hogy futtathatja azt a Power BI szolgáltatáson belül, és a szolgáltatás más funkcióival együtt is használhatja, például exportálhatja a PowerPointba. További információért lásd az [egyéni látványelem *tanúsíttatásával*](../power-bi-custom-visuals-certified.md) foglalkozó témakört.
+A vizualizáció létrehozása azt is megteheti, hogy tanúsíttatja a vizualizációt. Ez azt jelenti, hogy futtathatja azt a Power BI szolgáltatáson belül, és a szolgáltatás más funkcióival együtt is használhatja, például exportálhatja a PowerPointba. További információért lásd az [egyéni látványelem *tanúsíttatásával*](../developer/power-bi-custom-visuals-certified.md) foglalkozó témakört.
 
 ## <a name="next-steps"></a>Következő lépések
 
 [Egyéni Power BI-vizualizáció fejlesztése](visuals/custom-visual-develop-tutorial.md)  
 [Vizualizációk a Power BI-ban](../visuals/power-bi-report-visualizations.md)  
-[Egyéni vizualizáció a Power BI-ban](../power-bi-custom-visuals.md)  
-[Egyéni vizualizáció *tanúsíttatása*](../power-bi-custom-visuals-certified.md)
+[Egyéni vizualizáció a Power BI-ban](../developer/power-bi-custom-visuals.md)  
+[Egyéni vizualizáció *tanúsíttatása*](../developer/power-bi-custom-visuals-certified.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

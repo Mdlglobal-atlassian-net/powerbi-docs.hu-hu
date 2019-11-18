@@ -2,20 +2,21 @@
 title: Adatok exportálása egy Power BI-vizualizációból
 description: Adatok exportálása jelentésvizualizációból és irányítópult-vizualizációból, és azok megtekintése Excelben.
 author: mihart
-ms.reviewer: ''
+manager: kvivek
+ms.reviewer: tessa
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 11/13/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6ee1b0aa9ff6e3b0668d208775cbea50534b1572
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b2474cd5cc82e1736790f4a352b216dcc8013a6f
+ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880873"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060461"
 ---
 # <a name="export-data-from-visualizations"></a>Adatok exportálása vizualizációkból
 
@@ -158,8 +159,6 @@ Ezek a korlátozások és szempontok a Power BI Desktopra és a Power BI szolgá
 - Az alkalmazás által egy **importálási módú jelentésből** egy *.xlsx*-fájlba exportálható sorok maximális száma 150 000.
 
 - A *mögöttes adatokat* használó exportálás nem működik a következő esetekben:
-
-  - az adatforrás egy élő Azure Analysis Services-kapcsolat vagy egy élő SQL Server Analysis Services-kapcsolat.
 
   - a verzió a 2016-osnál régebbi.
 

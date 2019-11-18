@@ -6,15 +6,15 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 11/07/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b45d0fb20dbb9a697e6d079a6b28c0fc86290627
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 1ae0fc339d3837c8fc28cc604b3ddb840807dcd5
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881059"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74011303"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Adatpontkorlátok és -stratégiák vizualizációtípus szerint
 
@@ -150,7 +150,6 @@ Lásd: [Nagy sűrűségű pontdiagramok](https://docs.microsoft.com/power-bi/vis
 Az alakzatleképezés használhat statisztikákat vagy dinamikus korlátokat. 
 - Pontok maximális száma: 1500
 - Kategóriák: Első 500
-- Adatsorok (ha X és Y is létezik): Első 20
 
 ### <a name="table"></a>Táblázat
 - Értékek: Virtualizálás (adatablakok) egyszerre 500 sort tartalmazó ablakokkal

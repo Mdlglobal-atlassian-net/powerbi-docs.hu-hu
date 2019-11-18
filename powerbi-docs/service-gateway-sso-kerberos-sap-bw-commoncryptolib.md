@@ -3,19 +3,18 @@ title: A Kerberos egyszeri bejelentkezésének használata az SAP BW-hez a Commo
 description: Az SAP BW-kiszolgáló konfigurálása a Power BI szolgáltatás egyszeri bejelentkezési funkciójának engedélyezéséhez a CommonCryptoLib (sapcrypto.dll) használatával
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 97cae53e102538bba7ed969cefe0541d500c33bc
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 63b5abde7deb5f6d93fb7702f0b1244bd193a47d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020883"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872428"
 ---
 # <a name="use-kerberos-single-sign-on-for-sso-to-sap-bw-using-commoncryptolib-sapcryptodll"></a>A Kerberos egyszeri bejelentkezésének használata az SAP BW-hez a CommonCryptoLibbel (sapcrypto.dll)
 
@@ -31,7 +30,7 @@ Ez a cikk azt ismerteti, hogy hogyan konfigurálhatja az SAP BW-adatforrást a P
 
 1. Ellenőrizze, hogy a BW-kiszolgáló megfelelően van-e konfigurálva a Kerberos CommonCryptoLibbel történő egyszeri bejelentkezéséhez. Ha igen, az SSO-val elérheti a BW-kiszolgálót (közvetlenül vagy egy SAP BW-üzenetkezelési kiszolgálón keresztül) egy CommonCryptoLib használatára konfigurált SAP-eszközzel, például az SAP GUI-val. 
 
-   A telepítés lépéseivel kapcsolatos további információkért lásd: [SAP egyszeri bejelentkezés: Hitelesítés Kerberos/SPNEGO használatával](https://blogs.sap.com/2017/07/27/sap-single-sign-on-authenticate-with-kerberosspnego/). A BW-kiszolgálónak a CommonCryptoLib-et kell használnia a SNC-kódtárként, és egy *CN =* résszel (például: *CN = BW1*) kezdődő SNC-névvel kell rendelkeznie. Az SNC-nevekre vonatkozó követelményekkel (különösképp az SNC/Identity/as paraméter) kapcsolatos további információk: [SNC-paraméterek Kerberos-konfigurációhoz](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/360534094511490d91b9589d20abb49a.html).
+   A telepítés lépéseivel kapcsolatos további információkért lásd: [SAP egyszeri bejelentkezés: Hitelesítés Kerberos/SPNEGO használatával](https://blogs.sap.com/2017/07/27/sap-single-sign-on-authenticate-with-kerberosspnego/). A BW-kiszolgálónak a CommonCryptoLib-et kell használnia a SNC-kódtárként, és egy *CN =* résszel (például: *CN = BW1*) kezdődő SNC-névvel kell rendelkeznie. Az SNC-nevekre vonatkozó követelményekkel (különösképp az SNC/Identity/as paraméter) kapcsolatos további információk: [SNC-paraméterek Kerberos-konfigurációhoz](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/360534094511490d91b9589d20abb49a.html).
 
 1. Ha még nem tette meg, telepítse az [SAP .NET-összekötő](https://support.sap.com/en/product/connectors/msnet.html) x64-es verzióját azon a számítógépen, amelyen az átjáró telepítve van. 
    

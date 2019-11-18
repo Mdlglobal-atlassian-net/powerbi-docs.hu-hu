@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: d24135cc55ebc8cdfd2a1279cb2a2a46f8f0bc3e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 224b6db8fa04a471a1ce7d1fff2b34a838d6fb9d
+ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880182"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060353"
 ---
 # <a name="create-an-ssl-certificate"></a>SSL-tanúsítvány létrehozása
 
@@ -22,20 +22,19 @@ Ez a cikk az SSL-tanúsítványok létrehozását ismerteti.
 A tanúsítvány Windows 8 vagy újabb rendszeren a PowerShell `New-SelfSignedCertificate` parancsmagjával generálható az alábbi parancsot futtatásával:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 Windows 7 rendszerhez az eszköz az OpenSSL telepítését igényli. Az OpenSSL segédprogramnak elérhetőnek kell lennie a parancssorból.
 
 Az OpenSSL telepítéséhez nyissa meg az [OpenSSL](https://www.openssl.org) vagy az [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries) webhelyet.
 
-
-
 ## <a name="create-a-certificate-mac-os-x"></a>Tanúsítvány létrehozása (Mac OS X)
 
 Az OpenSSL segédprogram általában elérhető a Linux vagy a Mac OS X operációs rendszerben.
 
 A segédprogram az alábbi parancsok valamelyikével is telepíthető:
+
 * A *Brew* csomagkezelőből:
 
     ```cmd
@@ -52,7 +51,7 @@ A segédprogram az alábbi parancsok valamelyikével is telepíthető:
 Miután telepítette az OpenSSL segédprogramot az új tanúsítvány generálásához, futtassa az alábbi parancsot:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 ## <a name="create-a-certificate-linux"></a>Tanúsítvány létrehozása (Linux)
@@ -80,7 +79,7 @@ Ha az OpenSSL segédprogram nem érhető el a Linux operációs rendszeren, a k�
 Ha az OpenSSL segédprogram már elérhető az operációs rendszerben, a következő paranccsal generálhat új tanúsítványt:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 Az OpenSSL segédprogram az [OpenSSL](https://www.openssl.org) vagy az [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries) webhelyről is beszerezhető.

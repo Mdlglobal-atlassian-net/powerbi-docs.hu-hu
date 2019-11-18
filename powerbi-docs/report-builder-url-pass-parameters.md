@@ -3,18 +3,18 @@ title: Jelentésparaméter átadása URL-címben lapszámozott jelentéshez – 
 description: Ez a témakör azt ismerteti, hogyan adhatók át jelentésparaméterek a jelentéseknek úgy, hogy azokat egy lapszámozott jelentés URL-címében megadjuk.
 ms.service: powerbi
 ms.subservice: report-builder
-ms.custom: ''
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
+ms.custom: ''
 ms.date: 08/29/2019
-ms.openlocfilehash: f7f1b777e7c4e54dbdcfb1757fe4df274624a580
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 44e56613a69069351f21aa7d515fc2bb296e6728
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075985"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128272"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Jelentésparaméter átadása URL-címben lapszámozott jelentéshez a Power BI-ban 
 

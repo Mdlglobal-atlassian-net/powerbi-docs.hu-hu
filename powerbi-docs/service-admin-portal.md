@@ -2,20 +2,20 @@
 title: Power BI felügyeleti portál
 description: A felügyeleti portál a Power BI bérlői felügyeletét teszi lehetővé a munkahelyen. Olyan lehetőségeket kínál, mint például a használati metrikák, hozzáférés a Microsoft 365 Felügyeleti központjához, valamint a beállítások.
 author: mgblythe
-ms.author: mblythe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2019
+ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: fd9864ed086f535e0978dee7f5f8837039aa5491
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9970d676019bb253471da48ce3e9019e211ba6c5
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73857515"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128385"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -304,7 +304,7 @@ A vállalati felhasználók használhatják az Azure Searchre épülő külső k
 
 ### <a name="add-and-use-custom-visuals"></a>Egyéni vizualizációk hozzáadása és használata
 
-A munkahelyi felhasználók egyéni vizualizációkat használhatnak és oszthatnak meg. [További információ](power-bi-custom-visuals.md)
+A munkahelyi felhasználók egyéni vizualizációkat használhatnak és oszthatnak meg. [További információ](developer/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > Ez a beállítás az egész munkahelyre vonatkozhat, de korlátozható meghatározott csoportokra.
@@ -456,7 +456,7 @@ A rendszergazdák megnézhetik a bérlő számára generált beágyazási kódok
 
  ## <a name="organizational-visuals">Szervezeti vizualizációk</a> 
 
-A **Szervezeti vizualizációk** lapon egyéni vizualizációkat helyezhet üzembe és kezelhet a cégen belül. A szervezeti vizualizációk segítségével egyszerűen helyezhet üzembe szellemi tulajdont képező vizualizációkat, a szerzők pedig láthatják a jelentéseket és importálhatják a saját jelentéseikbe a Power BI Desktopból. [További információ](power-bi-custom-visuals-organization.md)
+A **Szervezeti vizualizációk** lapon egyéni vizualizációkat helyezhet üzembe és kezelhet a cégen belül. A szervezeti vizualizációk segítségével egyszerűen helyezhet üzembe szellemi tulajdont képező vizualizációkat, a szerzők pedig láthatják a jelentéseket és importálhatják a saját jelentéseikbe a Power BI Desktopból. [További információ](developer/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > Az egyéni vizualizációk biztonsági vagy adatvédelmi kockázatot jelentő kódokat tartalmazhatnak, ezért az adattárban való üzembe helyezés előtt ellenőrizze, hogy megbízható-e a vizualizáció szerzője és forrása.
