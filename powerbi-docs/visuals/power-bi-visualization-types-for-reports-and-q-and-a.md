@@ -2,26 +2,25 @@
 title: Vizualizációtípusok a Power BI-ban
 description: Vizualizációtípusok a Power BI-ban
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 639ea11eca69eea53968ed702e0524f46a97cdc4
-ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
+ms.openlocfilehash: 80fc4f4afe29806077d1bf64a59d8761d7ab1c1d
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72775989"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099935"
 ---
 # <a name="visualization-types-in-power-bi"></a>Vizualizációtípusok a Power BI-ban
 ## <a name="power-bi-visualizations"></a>Power BI-vizualizációk
 Hamarosan új vizualizációkkal bővítjük a kínálatot. Kövessen bennünket!
 
-Tekintse meg továbbá a [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) folyamatosan bővülő kínálatát, ahol [egyéni vizualizációkat](../power-bi-custom-visuals.md) tölthet le saját irányítópultjához és jelentéseihez. Kreatív kedvében van? [Megtudhatja, hogyan hozhat létre saját vizualizációkat, és hogyan adhatja hozzá őket a közösségi oldalhoz](../developer/office-store.md).  
+Tekintse meg továbbá a [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) folyamatosan bővülő kínálatát, ahol [egyéni vizualizációkat](../developer/power-bi-custom-visuals.md) tölthet le saját irányítópultjához és jelentéseihez. Kreatív kedvében van? [Megtudhatja, hogyan hozhat létre saját vizualizációkat, és hogyan adhatja hozzá őket a közösségi oldalhoz](../developer/office-store.md).  
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>A Power BI-ban elérhető vizualizációk listája
 Ezek a vizualizációk mind hozzáadhatók a Power BI-jelentésekhez, megadhatók a Q&A-ben, illetve rögzíthetők az irányítópultokon.
@@ -226,8 +225,8 @@ Ha természetes nyelvű lekérdezéseket ír a Power BI Q&A használatával, meg
 
 „***értékesítés államonként fatérképen***”
 
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
+![A Q&A kérdésmezője a megadott vizualizációtípussal](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## <a name="next-steps"></a>Következő lépések
 [Vizualizációk Power BI-jelentésekben](power-bi-report-visualizations.md)    
-[A megfelelő vizualizáció – referenciaanyag az sqlbi.com-on](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+[A megfelelő vizualizáció – referenciaanyag az sqlbi.com-on](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

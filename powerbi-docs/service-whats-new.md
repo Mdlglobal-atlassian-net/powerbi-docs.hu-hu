@@ -2,7 +2,6 @@
 title: A Power BI szolgáltatás újdonságai
 description: A Power BI szolgáltatás újdonságai
 author: NikhilGaekwad-MSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: a6595389a95cbf434bc9deb9f1560f6157910ceb
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: c470eba3998e04fde8c00c619077d5d8db444b42
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060994"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099735"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
 Ezen az oldalon a **Power BI szolgáltatás** ismert problémáit és új funkcióit ismertetjük. Az újdonságokra vonatkozó kapcsolódó információk:
@@ -32,7 +31,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 
 ### <a name="october-2019"></a>2019. október
 * Új Microsoft Flow-művelet Power BI-adathalmazok frissítéséhez.
-* [Partnerlista](https://powerbi.microsoft.com/en-us/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) jelentésekhez és irányítópultokhoz a Power BI szolgáltatásban.
+* [Partnerlista](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) jelentésekhez és irányítópultokhoz a Power BI szolgáltatásban.
 
 ## <a name="previous-months-2019"></a>Korábbi hónapok (2019)
 ### <a name="september-2019"></a>2019. szeptember
@@ -40,7 +39,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 
 ### <a name="august-2019"></a>2019. augusztus
 * Új Power BI Premium-kapacitásbeállítások.
-* [Egyéni védjegyzés](https://powerbi.microsoft.com/en-us/blog/announcing-custom-branding-for-your-organization/) a szervezet számára.
+* [Egyéni védjegyzés](https://powerbi.microsoft.com/blog/announcing-custom-branding-for-your-organization/) a szervezet számára.
 * Összesített adatexportálás összeállítási engedéllyel.
 * Az [oldalakra osztott jelentések](paginated-reports-report-builder-power-bi.md) URL-paramétereinek támogatása.
 * Havi e-mail-előfizetések támogatása. 
@@ -49,9 +48,9 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * A nem prémium szintű adathalmazok támogatása [oldalakra osztott jelentések](paginated-reports-report-builder-power-bi.md) esetében.
 * A Power BI [aggregációinak](desktop-aggregations.md) általános elérhetősége.
 * Frissítési értesítések küldése másoknak.
-* [Tesztelőeszköz](https://powerbi.microsoft.com/en-us/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) Power BI Premium-kapacitásokhoz.
-* A [szolgáltatás-rendelkezésreállási értesítések](https://powerbi.microsoft.com/en-us/blog/power-bi-introduces-service-availability-notifications/) nyilvános előzetes verziója.
-* A Power BI-jelentések [új megjelenésének](https://powerbi.microsoft.com/en-us/blog/introducing-the-new-look-for-power-bi-service/) nyilvános előzetes verziója.
+* [Tesztelőeszköz](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) Power BI Premium-kapacitásokhoz.
+* A [szolgáltatás-rendelkezésreállási értesítések](https://powerbi.microsoft.com/blog/power-bi-introduces-service-availability-notifications/) nyilvános előzetes verziója.
+* A Power BI-jelentések [új megjelenésének](https://powerbi.microsoft.com/blog/introducing-the-new-look-for-power-bi-service/) nyilvános előzetes verziója.
 * Új Power BI-régió Dél-Afrikában.
 
 ### <a name="june-2019"></a>2019. június
@@ -65,7 +64,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 ### <a name="may-2019"></a>2019. május
 * [Egyéni Navigálás](service-create-distribute-apps.md) Power BI-alkalmazásokhoz.
 * További mellékletek (PPTX, XLSX, DOCX, CSV, XML) érhetők el a lapszámozott jelentésekben lévő e-mail-feliratkozásokhoz.
-* [Megjegyzések hozzáfűzése](https://powerbi.microsoft.com/en-us/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) Power BI-jelentésekhez a szolgáltatásban.
+* [Megjegyzések hozzáfűzése](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) Power BI-jelentésekhez a szolgáltatásban.
 
 ### <a name="april-2019"></a>2019. április
 * A [Power BI-adatfolyamok](service-dataflows-overview.md) általános elérhetősége.
@@ -74,15 +73,15 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * Frissített Q&A-felület az irányítópultokhoz.
 * Az Azure Analysis Services támogatása [lapszámozott jelentésekben](paginated-reports-report-builder-power-bi.md).
 * Lapszámozott jelentések támogatása a Power BI-alkalmazásokban.
-* PDF-csatolmányokkal ellátott [e-mail-feliratkozások](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) a lapszámozott jelentésekhez.
+* PDF-csatolmányokkal ellátott [e-mail-feliratkozások](https://powerbi.microsoft.com/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) a lapszámozott jelentésekhez.
 * A Felügyeleti portál támogatja a Power BI Premium összegzési és számítási feladatbeli metrikáit
 * Elérhető a [lekérdezések gyorsítótárazása](power-bi-query-caching.md) a Power BI Premiumban.
-* A [Power BI Home](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/) általános elérhetősége.
+* A [Power BI Home](https://powerbi.microsoft.com/blog/announcing-power-bi-home-general-availability-ga-roadmap/) általános elérhetősége.
 
 ### <a name="march-2019"></a>2019. március
 * A Power BI Premium Multi-Geo szolgáltatásának általános elérhetősége.
 * Power BI-tartalom támogatásának szerkesztése és kezelése az Azure B2B-hez.
-* A csak olvasható [XMLA végpont](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/) nyilvános előzetes verziója.
+* A csak olvasható [XMLA végpont](https://powerbi.microsoft.com/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/) nyilvános előzetes verziója.
 
 ### <a name="february-2019"></a>2019. február
 * Számítási feladatok és aktív adatkészlet mérete metrika a [kapacitásfigyelő alkalmazásban](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
@@ -90,20 +89,20 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * [Igény szerinti e-mail-feliratkozások](service-report-subscribe.md).
 * Tömeges műveletek a felügyeleti portálon.
 * PPT-k és PDF-ek szűrt exportálása.
-* [Súgó- és támogatási beállítások](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) a felügyeleti portálon.
+* [Súgó- és támogatási beállítások](https://powerbi.microsoft.com/blog/tailoring-help-and-support-for-power-bi-users/) a felügyeleti portálon.
 * Adatleszármaztatás [adatfolyamokhoz](service-dataflows-overview.md).
 * Hitelesített egyéni vizualizációk beállítás a felügyeleti portálon.
 
 ### <a name="january-2019"></a>2019. január
 * [Biztonságos Power BI-jelentések](service-embed-secure.md) beágyazása belső portálokba és webhelyekbe.
 * Az [adatfolyamok](service-dataflows-overview.md) szerkesztője új összekötőkkel bővült, és mostantól támogatja a natív SQL-lekérdezéseket és a Power Query Online-transzformációkat.
-* [Személyes könyvjelzők](https://powerbi.microsoft.com/en-us/blog/announcing-personal-bookmarks-in-the-power-bi-service/) a Power BI szolgáltatásban.
+* [Személyes könyvjelzők](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) a Power BI szolgáltatásban.
 * Időalapú ütemezés e-mail-előfizetésekkel.
 
 ## <a name="2018"></a>2018
 ### <a name="december-2018"></a>2018. december
-* Mesterséges intelligencián alapuló [alkalmazásjavaslatok](https://powerbi.microsoft.com/en-us/blog/announcing-ai-powered-app-recommendations-getting-the-right-insights-to-the-right-people/) a Power BI kezdőlapján.
-* [Munkaterület-kezelés](https://powerbi.microsoft.com/en-us/blog/workspace-management-in-the-admin-portal/) a Felügyeleti portálon.
+* Mesterséges intelligencián alapuló [alkalmazásjavaslatok](https://powerbi.microsoft.com/blog/announcing-ai-powered-app-recommendations-getting-the-right-insights-to-the-right-people/) a Power BI kezdőlapján.
+* [Munkaterület-kezelés](https://powerbi.microsoft.com/blog/workspace-management-in-the-admin-portal/) a Felügyeleti portálon.
 * A Power BI adatfolyamok és az Azure Data Lake Storage Gen2 integrációjának előzetes verziója az [adatfolyamokban](service-dataflows-overview.md).
 * A Power BI-megoldássablonok nyílt forráskódúvá váltak.
 
@@ -119,8 +118,8 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 
 ### <a name="september-2018"></a>2018. szeptember
 * [Megjegyzések írása irányítópultokon](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) a Power BI szolgáltatásban.
-* A [Power BI kezdőlap és a globális keresés](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/) nyilvános előzetes verziója.
-* A [lekérdezések monitorozásának](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) lehetősége a [kapacitásfigyelő alkalmazásban](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* A [Power BI kezdőlap és a globális keresés](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search/) nyilvános előzetes verziója.
+* A [lekérdezések monitorozásának](https://powerbi.microsoft.com/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) lehetősége a [kapacitásfigyelő alkalmazásban](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### <a name="august-2018"></a>2018. augusztus
 * [Kapacitásmonitorozó alkalmazás](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) a Power BI Premiumhoz.
@@ -144,7 +143,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * Az Azure B2B meghívási munkafolyamatának fejlesztései a jelentésekhez.
 
 ### <a name="april-2018"></a>2018. április
-* [Power BI-tanulmány adatvédelemhez](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+* [Power BI-tanulmány adatvédelemhez](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 * Alapértelmezetten bekapcsolt Power BI szolgáltatásbeli [auditnaplók](service-admin-auditing.md) az Office 365-bérlőben.
 
 ### <a name="march-2018"></a>2018. március
@@ -154,7 +153,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 ### <a name="february-2018"></a>2018. február
 * [Power BI-alkalmazások](service-create-distribute-apps.md) automatikus telepítése a végfelhasználók számára.
 * P4- és P5-kapacitások a Power BI Premium szolgáltatásban
-* Az [Egyéni szervezeti vizualizációk](power-bi-custom-visuals-organization.md) előzetes verziója.
+* Az [Egyéni szervezeti vizualizációk](developer/power-bi-custom-visuals-organization.md) előzetes verziója.
 
 ### <a name="january-2018"></a>2018. január
 *   Power BI-jelentések megosztása és kedvencnek jelölése.
@@ -324,7 +323,6 @@ A részletekről a [Power BI-csapat blogján](https://powerbi.microsoft.com/blog
 
 ***Vállalat***
 
-* [ExpressRoute](service-admin-power-bi-expressroute.md): saját, felügyelt kapcsolat létrehozása a Power BI-hoz.
 * [Tartalomcsomagok támogatása az RLS-ben](service-admin-rls.md) (előzetes verzió): Ha az RLS-t egy tartalomcsomag részeként terjesztett irányítópultokhoz és jelentésekhez definiálta, a biztonsági szabályok ezen tartalomcsomagokra is vonatkoznak.
 
 ***Irányítópultok***
@@ -436,7 +434,7 @@ Teljesítménnyel kapcsolatos fejlesztések a jelentésmegjelenítés, keresztki
 
 **2016. január 6.**
 
-A Power BI csapata az ünnepek alatt sem pihent. A részletekről a [Power BI-csapat blogján](http://blogs.msdn.com/b/powerbi/archive/2016/01/06/power-bi-service-update-0106.aspx) olvashat.
+A Power BI csapata az ünnepek alatt sem pihent. A részletekről a [Power BI-csapat blogján](https://blogs.msdn.com/b/powerbi/archive/2016/01/06/power-bi-service-update-0106.aspx) olvashat.
 
 ***Irányítópultok***
 
@@ -471,12 +469,12 @@ A Power BI csapata az ünnepek alatt sem pihent. A részletekről a [Power BI-cs
 * A Power BI Brazíliában
 * Héber és arab támogatás
 
-A részletekről a [Power BI-csapat blogján](http://blogs.msdn.com/b/powerbi/archive/2016/01/06/power-bi-service-update-0106.aspx) olvashat.
+A részletekről a [Power BI-csapat blogján](https://blogs.msdn.com/b/powerbi/archive/2016/01/06/power-bi-service-update-0106.aspx) olvashat.
 
 ## <a name="2015"></a>2015
 **2015. December 16.**
 
-Ezen a héten sok frissítést vezettünk be, amelyek legtöbbje a Power BI Desktopra vonatkozik, azonban néhány jelentős frissítés érkezett a jelentések készítéséhez és a vizualizációkhoz is. A [Power BI csapat blogján](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx) megtalálhatja ezek részletes leírását, valamint egy ismertető videót.   
+Ezen a héten sok frissítést vezettünk be, amelyek legtöbbje a Power BI Desktopra vonatkozik, azonban néhány jelentős frissítés érkezett a jelentések készítéséhez és a vizualizációkhoz is. A [Power BI csapat blogján](https://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx) megtalálhatja ezek részletes leírását, valamint egy ismertető videót.   
 
 [A Power BI Desktop letöltése](https://powerbi.microsoft.com/desktop?WT.mc_id=Blog_Desktop_Update)
 
@@ -513,7 +511,7 @@ Ezen a héten sok frissítést vezettünk be, amelyek legtöbbje a Power BI Desk
   6. ODBC-összekötő: Támogatás a felhasználó vagy a rendszer adatforrásneveinek kiválasztásához
   7. CSV-összekötő: Lehetőség oszlopelválasztó megadására a Forrás párbeszédpanelen
 
-Részletes információkat, többek között egy, a frissítéseket ismertető videót a [Power BI blogján](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx) találhat.
+Részletes információkat, többek között egy, a frissítéseket ismertető videót a [Power BI blogján](https://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx) találhat.
 
 **2015. december 10.**
 
@@ -522,20 +520,20 @@ Részletes információkat, többek között egy, a frissítéseket ismertető v
 * Képek használata a szeletelőkben
 * Jelentésvizualizációk közti interakciók módosítása
   
-  A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/powerbi/archive/2015/12/10/power-bi-weekly-service-update-1210.aspx).
+  A részletekért látogasson el a [Power BI blogjára](https://blogs.msdn.com/b/powerbi/archive/2015/12/10/power-bi-weekly-service-update-1210.aspx).
 
 **2015. december 8.**
 
-* [QR-kódok a Power BI-ban](http://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx)
+* [QR-kódok a Power BI-ban](https://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx)
 
 **2015. december 3.**
 
-* Adatkészletek trendjeinek és mintáinak automatikus feltárása a gyors elemzésekkel: [videó](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) vagy [cikk](consumer/end-user-insights.md)
-* [VMob-adatok megjelenítése a Power BI-ban](http://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
-* [Power BI-integráció a Cortanával](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
-* [A Vállalati Power BI Gateway előzetes verziója](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
-* Új tartalomcsomag: [A Bing keresési elemzései a Power BI-irányítópultokon](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
-* Új fejlesztőközpontú fejlesztések: [Két új API és könnyebb alkalmazásregisztráció](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
+* Adatkészletek trendjeinek és mintáinak automatikus feltárása a gyors elemzésekkel: [videó](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) vagy [cikk](consumer/end-user-insights.md)
+* [VMob-adatok megjelenítése a Power BI-ban](https://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
+* [Power BI-integráció a Cortanával](https://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
+* [A Vállalati Power BI Gateway előzetes verziója](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
+* Új tartalomcsomag: [A Bing keresési elemzései a Power BI-irányítópultokon](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
+* Új fejlesztőközpontú fejlesztések: [Két új API és könnyebb alkalmazásregisztráció](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
 
 **2015. november 24.**
 
@@ -547,7 +545,7 @@ Részletes információkat, többek között egy, a frissítéseket ismertető v
 * Továbbfejlesztett Google Analytics-összekötős funkciók
 * A Power BI-fiók lezárása
 
-A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-weekly-service-update-1124.aspx).
+A részletekért látogasson el a [Power BI blogjára](https://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-weekly-service-update-1124.aspx).
 
 **2015. november 18.**
 
@@ -557,7 +555,7 @@ A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/p
 * Zökkenőmentesebb a céges tagok meghívása a Power BI-csoportokba
 * Továbbfejlesztett hibaüzenetek a csempéken
 
-A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/powerbi/archive/2015/11/17/power-bi-weekly-service-update-1117.aspx).
+A részletekért látogasson el a [Power BI blogjára](https://blogs.msdn.com/b/powerbi/archive/2015/11/17/power-bi-weekly-service-update-1117.aspx).
 
 **2015. november 11.**
 
@@ -567,7 +565,7 @@ A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/p
 * A Power BI állapota a Microsoft 365 Felügyeleti központban
 * KPI-k és képek a táblázatokban, mátrixokban és kártyákban
 
-A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/powerbi/archive/2015/11/11/power-bi-weekly-service-update-1110.aspx).
+A részletekért látogasson el a [Power BI blogjára](https://blogs.msdn.com/b/powerbi/archive/2015/11/11/power-bi-weekly-service-update-1110.aspx).
 
 **2015. november 3.**
 
@@ -575,7 +573,7 @@ A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/p
 * Az egyéni felhasználók megvásárolhatják a Power BI Prót.
 * Jelentésoldal megkettőzése.
 
-A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/powerbi/archive/2015/11/03/power-bi-weekly-service-update-1103.aspx).
+A részletekért látogasson el a [Power BI blogjára](https://blogs.msdn.com/b/powerbi/archive/2015/11/03/power-bi-weekly-service-update-1103.aspx).
 
 **2015. október 28.**
 
@@ -584,7 +582,7 @@ A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/p
 * Megosztás nagy mennyiségű e-mail-címmel
 * A navigációs ablak összecsukása egy paraméteres URL-címen keresztül
 
-A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/powerbi/archive/2015/10/28/power-bi-weekly-service-update-1027.aspx).
+A részletekért látogasson el a [Power BI blogjára](https://blogs.msdn.com/b/powerbi/archive/2015/10/28/power-bi-weekly-service-update-1027.aspx).
 
 **2015. október 20.**
 
@@ -592,7 +590,7 @@ A részletekért látogasson el a [Power BI blogjára](http://blogs.msdn.com/b/p
 * Kiemelt kérdések a Q&A területén
 * Teljes képernyős előugró mód a jelentések vizualizációihoz
 
-A részletekről a [Power BI blogján](http://blogs.msdn.com/b/powerbi/archive/2015/10/20/power-bi-weekly-service-update-1020.aspx) olvashat.
+A részletekről a [Power BI blogján](https://blogs.msdn.com/b/powerbi/archive/2015/10/20/power-bi-weekly-service-update-1020.aspx) olvashat.
 
 **2015. október 13.**
 
@@ -603,7 +601,7 @@ A részletekről a [Power BI blogján](http://blogs.msdn.com/b/powerbi/archive/2
 * A csempék forrásainak megtekintése
 * A Planview Enterprise egy végpontok közötti portfólió- és erőforrás-kezelési megoldás, amely a stratégia és a kivitelezés egyesítésével javítja a döntéshozatali folyamatokat a teljes vállalatban. A Planview Enterprise Power BI-tartalomcsomaggal egy teljesen új módon jelenítheti meg az erőforrás- és munkakezelési adatait. Egyszerűen csak jelentkezzen be a fiókjával, és már meg is tekintheti a portfóliója befektetési kiadásait, költségvetés-állapotát, valamint azt, hogy a projektek milyen mértékben felelnek meg a stratégiai prioritásoknak.
 
-További információt a [blogunkban](http://blogs.msdn.com/b/powerbi/archive/2015/10/13/power-bi-weekly-service-update-1013.aspx) és az [online dokumentációban](service-get-started.md) találhat.
+További információt a [blogunkban](https://blogs.msdn.com/b/powerbi/archive/2015/10/13/power-bi-weekly-service-update-1013.aspx) és az [online dokumentációban](service-get-started.md) találhat.
 
 **2015. október 6.**
 
@@ -612,17 +610,17 @@ További információt a [blogunkban](http://blogs.msdn.com/b/powerbi/archive/20
 * Kikapcsolhatja az e-mailes értesítést az irányítópultok megosztásakor. Csak törölje a jelölést az „E-mail-értesítés küldése a címzetteknek” jelölőnégyzetből a Power BI megosztási párbeszédpanelén. Ekkor megjelenik egy URL-cím – ezt másolja a vágólapra, és ossza meg a munkatársaival, így ők is hozzáférhetnek az irányítópulthoz.
 * A Microsoft Dynamics NAV egy üzleti felügyeleti megoldás kis és közepes méretű cégek számára. Segítségével az ügyfelek nagyobb fokú irányítást kaphatnak a pénzügyeik és az üzleti folyamataik felett. A Power BI-tartalomcsomag használatra kész jelentéseket tartalmaz a Dynamics NAV felhasználói számára, például értékesítéssel és profittal, a lehetőségek értékesítési prognózisával, a jövedelmezőséggel és egyéb adatokkal szolgáló jelentéseket. A tartalomcsomag ezeket a metrikákat egy teljes mértékben testreszabható irányítópulton rendezi, így könnyen csatlakozhat az adatokhoz, és azonnal elemezheti azokat.
 
-További információt a [blogunkban](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service-weekly-update-10-06.aspx) és az [online dokumentációban](service-get-started.md) találhat.
+További információt a [blogunkban](https://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service-weekly-update-10-06.aspx) és az [online dokumentációban](service-get-started.md) találhat.
 
 **2015. szeptember 29.**
 
 * Az e heti szolgáltatásfrissítésnek köszönhetően az új jelentések létrehozásakor már több oldalméret közül is választhat, valamint saját oldalméretet is meghatározhat. Ez a jelentés minden oldalának méretét és oldalarányát meghatározza.
 * További vizuális formázási támogatást adtunk a képekhez és a buborékdiagramokhoz. Az oldalarányt rögzítheti a képek átméretezésekor, így nem torzul a kép, és konfigurálhatja a pontdiagramok buborékjainak kitöltését.
 * A Power BI mától megosztási meghívókat küld egy alternatív e-mail-címre. Ha megosztanak Önnel egy irányítópultot, a megosztási meghívás hivatkozását az eredeti és az alternatív e-mail-címre is elküldjük (amennyiben megadott egyet).
-* A Power BI elérhető minden ügyfél számára, beleértve a DonMT O365-architektúrával rendelkező felhasználókat is. Ők több-bérlős módban, megosztott szolgáltatásként fogják használni a Power BI-t. A legtöbb esetben az [önkiszolgáló regisztráció](https://powerbi.microsoft.com/) egyszerű lépéseit követve regisztrálhat a Power BI szolgáltatásra – csak adja meg a munkahelyi e-mail-címét, a nevét és a jelszavát, és kész is. Ha Ön a bérlő rendszergazdája, licenceket rendelhet a felhasználóihoz az [itt](http://go.microsoft.com/fwlink/?LinkId=627174) ismertetett módon.
-* Az Azure vizsgálati naplóival megtekintheti az Azure-előfizetéséhez tartozó műveleti naplókat. A Power BI Azure vizsgálati naplóit tartalmazó tartalomcsomaggal könnyen elemezheti és jelenítheti meg a naplókban található adatmennyiséget. A tartalomcsomaggal csatlakozhat az adataihoz, és a használatra kész irányítópultokkal és jelentésekkel elemzéseket végezhet. További információt a [blogunkban](http://blogs.msdn.com/b/powerbi/archive/2015/09/30/monitor-azure-audit-logs-with-power-bi.aspx) és az [online dokumentációban](service-connect-to-azure-audit-logs.md) találhat.
+* A Power BI elérhető minden ügyfél számára, beleértve a DonMT O365-architektúrával rendelkező felhasználókat is. Ők több-bérlős módban, megosztott szolgáltatásként fogják használni a Power BI-t. A legtöbb esetben az [önkiszolgáló regisztráció](https://powerbi.microsoft.com/) egyszerű lépéseit követve regisztrálhat a Power BI szolgáltatásra – csak adja meg a munkahelyi e-mail-címét, a nevét és a jelszavát, és kész is. Ha Ön a bérlő rendszergazdája, licenceket rendelhet a felhasználóihoz az [itt](https://go.microsoft.com/fwlink/?LinkId=627174) ismertetett módon.
+* Az Azure vizsgálati naplóival megtekintheti az Azure-előfizetéséhez tartozó műveleti naplókat. A Power BI Azure vizsgálati naplóit tartalmazó tartalomcsomaggal könnyen elemezheti és jelenítheti meg a naplókban található adatmennyiséget. A tartalomcsomaggal csatlakozhat az adataihoz, és a használatra kész irányítópultokkal és jelentésekkel elemzéseket végezhet. További információt a [blogunkban](https://blogs.msdn.com/b/powerbi/archive/2015/09/30/monitor-azure-audit-logs-with-power-bi.aspx) és az [online dokumentációban](service-connect-to-azure-audit-logs.md) találhat.
 
-[További információ a blogban](http://blogs.msdn.com/b/powerbi/archive/2015/09/30/power-bi-weekly-service-update-0929.aspx).
+[További információ a blogban](https://blogs.msdn.com/b/powerbi/archive/2015/09/30/power-bi-weekly-service-update-0929.aspx).
 
 **2015. szeptember 22.**
 
@@ -631,46 +629,46 @@ További információt a [blogunkban](http://blogs.msdn.com/b/powerbi/archive/20
 * 5 további [iparági mintával](sample-datasets.md) bővítettük a Power BI-t: Ügyfél-jövedelmezőség, Emberi erőforrások, Lehetőségelemzés, Beszerzéselemzés, valamint Értékesítési és marketing minta.
 * A Stripe egy fejlett fizetőplatform online üzletek számára. Startupoktól a Fortune 500-as cégekig több ezer cég használja a Stripe-ot a fizetések elfogadására, a világ bármely pontjáról, több mint 130 pénznemben. Ha összekapcsolja a Power BI-t a meglévő Stripe-fiókjával, [a Power BI Stripe tartalomcsomaggal megfigyelheti, elemezheti és megjelenítheti a Stripe-tevékenységeit](service-connect-to-stripe.md).
 
-[További információ a blogban](http://blogs.msdn.com/b/powerbi/archive/2015/09/22/power-bi-weekly-service-update-0922.aspx).
+[További információ a blogban](https://blogs.msdn.com/b/powerbi/archive/2015/09/22/power-bi-weekly-service-update-0922.aspx).
 
 **2015. szeptember 15.**
 
 * Mostantól eldöntheti, melyik irányítópultra szeretné rögzíteni a vizualizációját! A célirányítópultot a meglévő irányítópultok közül választhatja ki, de létrehozhat egy újat, és egyetlen lépésben rögzítheti hozzá a vizualizációt.
 * Emellett a vizualizáció színeit is módosíthatja az irányítópulton. Ha a jelentés egy, az irányítópult témájától eltérő témát használ, megadhatja, hogy a vizualizáció megtartsa-e az aktuális témát, vagy az alapértelmezett irányítópult-témát használja a különböző forrásokból származó vizualizációkkal megtartott következetesség jegyében.
 * Mostantól egyszerűen rögzítheti a csempéket egyik irányítópultról a másikra, ahogyan ezt egy jelentésvizualizációval is tenné.
-* Ha a 60 napos Power BI Pro-próbaidőszaka hamarosan lejár [, lépjen velünk kapcsolatba](http://go.microsoft.com/fwlink/?LinkID=624573&clcid=0x409now), és hosszabbítsa meg a próbaidőszakát. Amennyiben ezt jóváhagyjuk, további 60 nappal kibővítheti a próbaverziót.
-* A comScore Digital Analytix egy olyan online megoldás, amellyel a legjobb elemző és közönségdemográfiai eszközökkel elemezheti a felhasználói bázisát. A Power BI comScore tartalomcsomaggal gyorsan csatlakozhat webes elemzési adataihoz és elemezheti azokat. Ez a tartalomcsomag egy használatra kész irányítópultot, egy jelentéskészletet és egy összeválogatott adatkészletet tartalmaz, amelyekkel részletesen elemezheti az adatait. További információt a tartalomcsomagról a [blogunkban](http://blogs.msdn.com/b/powerbi/archive/2015/09/16/visualize-and-explore-your-comscore-data-with-power-bi.aspx) és a [súgótémakörökben](service-connect-to-connect-to.md) találhat. 
+* Ha a 60 napos Power BI Pro-próbaidőszaka hamarosan lejár [, lépjen velünk kapcsolatba](https://go.microsoft.com/fwlink/?LinkID=624573&clcid=0x409now), és hosszabbítsa meg a próbaidőszakát. Amennyiben ezt jóváhagyjuk, további 60 nappal kibővítheti a próbaverziót.
+* A comScore Digital Analytix egy olyan online megoldás, amellyel a legjobb elemző és közönségdemográfiai eszközökkel elemezheti a felhasználói bázisát. A Power BI comScore tartalomcsomaggal gyorsan csatlakozhat webes elemzési adataihoz és elemezheti azokat. Ez a tartalomcsomag egy használatra kész irányítópultot, egy jelentéskészletet és egy összeválogatott adatkészletet tartalmaz, amelyekkel részletesen elemezheti az adatait. További információt a tartalomcsomagról a [blogunkban](https://blogs.msdn.com/b/powerbi/archive/2015/09/16/visualize-and-explore-your-comscore-data-with-power-bi.aspx) és a [súgótémakörökben](service-connect-to-connect-to.md) találhat. 
 
 **2015. szeptember 8.**
 
 * A Friendly Hyperlinks funkcióval mostantól hivatkozásokat küldhet a felhasználóinak anélkül, hogy a teljes URL-címet megjelenítené a szövegmezőben.
 * Részletezés-támogatás a Power BI-jelentésekhez. Létrehozhat egy részletezési elérési útvonalat, amellyel a felhasználók egy adatszintről a kapcsolódó adatokhoz léphetnek.
 * Két új iparági minta (Informatikaköltség-elemzés és Szállítói minőségelemzés) az Adatok lekérése funkció Minták szakaszában. Ezek a minták remek példaként szolgálnak arra, hogy hogyan hozhat létre részletes jelentéseket és irányítópultokat az adataival.
-* Megjelent egy új tartalomcsomag a tyGraph szolgáltatáshoz, amellyel könnyen kaphat részletes betekintést a Yammer-adataiba. A tartalomcsomag egy irányítópultot, egy jelentéskészletet és egy összeválogatott adatkészletet tartalmaz, amelyekkel olyan elemzéseket végezhet, mint az aktív elköteleződés mértéke (a MAE pontszám) vagy a tartalomfogyasztási metrikák (például a fájlmegtekintések vagy fájlletöltések). További információt a [blogunkban](http://blogs.msdn.com/b/powerbi/archive/2015/09/09/analyze-and-monitor-your-tygraph-data-with-power-bi.aspx) és [súgótémakörökben](service-connect-to-tygraph.md) találhat.
+* Megjelent egy új tartalomcsomag a tyGraph szolgáltatáshoz, amellyel könnyen kaphat részletes betekintést a Yammer-adataiba. A tartalomcsomag egy irányítópultot, egy jelentéskészletet és egy összeválogatott adatkészletet tartalmaz, amelyekkel olyan elemzéseket végezhet, mint az aktív elköteleződés mértéke (a MAE pontszám) vagy a tartalomfogyasztási metrikák (például a fájlmegtekintések vagy fájlletöltések). További információt a [blogunkban](https://blogs.msdn.com/b/powerbi/archive/2015/09/09/analyze-and-monitor-your-tygraph-data-with-power-bi.aspx) és [súgótémakörökben](service-connect-to-tygraph.md) találhat.
 
 **2015. szeptember 1.**
 
-* A Webtrends segítségével a cégek elemezhetik a fogyasztói adatokat, így sikeresebbé tehetik a digitális marketinget. A felhasználók megfigyelhetik és elemezhetik a látogatói felhasználói élményt a weben a közösségi oldalakon, mobileszközökön és a SharePoint-csatornákon. A [Webtrends tartalomcsomag](http://blogs.msdn.com/b/powerbi/archive/2015/09/01/visualize-and-explore-your-webtrends-data-in-power-bi.aspx) megjelenésével a felhasználók a Power BI segítségével figyelhetik meg, elemezhetik és jeleníthetik meg a Webtrends-elemzési adataikat. További információt a Power BI Webtrends tartalomcsomag [súgóoldalán](service-connect-to-webtrends.md) találhat.
+* A Webtrends segítségével a cégek elemezhetik a fogyasztói adatokat, így sikeresebbé tehetik a digitális marketinget. A felhasználók megfigyelhetik és elemezhetik a látogatói felhasználói élményt a weben a közösségi oldalakon, mobileszközökön és a SharePoint-csatornákon. A [Webtrends tartalomcsomag](https://blogs.msdn.com/b/powerbi/archive/2015/09/01/visualize-and-explore-your-webtrends-data-in-power-bi.aspx) megjelenésével a felhasználók a Power BI segítségével figyelhetik meg, elemezhetik és jeleníthetik meg a Webtrends-elemzési adataikat. További információt a Power BI Webtrends tartalomcsomag [súgóoldalán](service-connect-to-webtrends.md) találhat.
 * A Q&A használatbavétele még egyszerűbb. Ahogy a Q&A szövegmezőjére helyezi a kurzort, azonnal megjelenik egy sor kérdés és fontos metrika, amely az adataihoz kapcsolódik.  A legördülő menüben alapértelmezés szerint az irányítópulton rögzített csempékhez kapcsolódó kérdések jelennek meg, valamint egy-egy bejegyzés az adatkészlet tábláihoz.
 * Az alapértelmezett dinamikus vászonméret minden jelentéselemet a böngészőablak optimális dimenziói szerint jelenít meg. Ha rögzíteni szeretné az oldalarányt, vagy a jelentést másképp szeretné igazítani, további három lehetőség közül választhat: Laphoz igazítás, Szélességhez igazítás és Tényleges méret.
 * Emellett az adatkészletek és jelentések számának korlátját is megnöveltük. Mostantól adatkészletenként akár 200 adatkészletet és 200 jelentést használhat a Power BI-fiókjában.
 
 **2015. augusztus 18.**
 
-* Az Azure Mobile Engagement egy olyan alkalmazáselemzési szolgáltatás, amellyel a fejlesztők nyomon követhetik az alkalmazásaik teljesítményét, így elősegíthetik a magasabb szintű adatmegőrzést és alkalmazáshasználatot. A [Power BI Azure Mobile Engagement tartalomcsomaggal](http://blogs.msdn.com/b/powerbi/archive/2015/08/17/monitor-and-analyze-your-azure-mobile-engagement-data-in-power-bi.aspx) egyszerűen csatlakozhat egy használatra kész irányítópulthoz, egy jelentéskészlethez és egy összeválogatott adatkészlethez, és azonnal elemezheti az alkalmazás teljesítményét. További információt a [Power BI Azure Mobile Engagement tartalomcsomag súgóoldalán](service-connect-to-azure-mobile.md) találhat.
+* Az Azure Mobile Engagement egy olyan alkalmazáselemzési szolgáltatás, amellyel a fejlesztők nyomon követhetik az alkalmazásaik teljesítményét, így elősegíthetik a magasabb szintű adatmegőrzést és alkalmazáshasználatot. A [Power BI Azure Mobile Engagement tartalomcsomaggal](https://blogs.msdn.com/b/powerbi/archive/2015/08/17/monitor-and-analyze-your-azure-mobile-engagement-data-in-power-bi.aspx) egyszerűen csatlakozhat egy használatra kész irányítópulthoz, egy jelentéskészlethez és egy összeválogatott adatkészlethez, és azonnal elemezheti az alkalmazás teljesítményét. További információt a [Power BI Azure Mobile Engagement tartalomcsomag súgóoldalán](service-connect-to-azure-mobile.md) találhat.
 
 **2015. augusztus 11.**
 
-* A Mandrill egy e-mail-infrastruktúrával foglalkozó szolgáltatás, amelyet a MailChimp fejlesztett. Segítségével jelentős mennyiségű információt kaphat az e-mail-kampányairól. A [Power BI Mandrill tartalomcsomaggal](http://blogs.msdn.com/b/powerbi/archive/2015/08/12/explore-and-analyze-your-mandrill-data-in-power-bi.aspx) gyorsan csatlakozhat a Mandrill-adatokhoz, és azonnal elemezheti a hírlevél- vagy marketingkampányát. További részleteket az első lépésekről a [Power BI Mandrill tartalomcsomag súgóoldalán](service-connect-to-mandrill.md) találhat.
+* A Mandrill egy e-mail-infrastruktúrával foglalkozó szolgáltatás, amelyet a MailChimp fejlesztett. Segítségével jelentős mennyiségű információt kaphat az e-mail-kampányairól. A [Power BI Mandrill tartalomcsomaggal](https://blogs.msdn.com/b/powerbi/archive/2015/08/12/explore-and-analyze-your-mandrill-data-in-power-bi.aspx) gyorsan csatlakozhat a Mandrill-adatokhoz, és azonnal elemezheti a hírlevél- vagy marketingkampányát. További részleteket az első lépésekről a [Power BI Mandrill tartalomcsomag súgóoldalán](service-connect-to-mandrill.md) találhat.
 
 **2015. augusztus 4.**
 
-* A Power BI szolgáltatással a [Circuit ID](http://blogs.msdn.com/b/powerbi/archive/2015/08/04/circuit-id-data-with-power-bi.aspx) felhasználói mostantól követhetik és megfigyelhetik a Circuit ID-n belüli felhőkommunikációs szolgáltatásaikat, így felelősebb üzleti döntéseket hozhatnak. További részleteket az első lépésekről a [Power BI Circuid ID tartalomcsomag súgóoldalán](service-connect-to-circuit-id.md) találhat.
-* Ma kiadtunk egy fejlesztést, amellyel még könnyebbé tettük az Irányítópult megosztása funkció használatát.  Ha a cége Office 365-öt használ az e-mailek kezelésére, mostantól [megoszthat adatokat egy e-mail-terjesztési csoportban](http://blogs.msdn.com/b/powerbi/archive/2015/08/04/easier-dashboard-sharing-with-distribution-groups.aspx), ugyanúgy, ahogyan az Outlookból e-maileket küldene.  Csak írja be a terjesztési csoport címét, és kattintson a Megosztás lehetőségre.  A terjesztési csoport minden tagja kap egy meghívót az irányítópult megtekintésére.
+* A Power BI szolgáltatással a [Circuit ID](https://blogs.msdn.com/b/powerbi/archive/2015/08/04/circuit-id-data-with-power-bi.aspx) felhasználói mostantól követhetik és megfigyelhetik a Circuit ID-n belüli felhőkommunikációs szolgáltatásaikat, így felelősebb üzleti döntéseket hozhatnak. További részleteket az első lépésekről a [Power BI Circuid ID tartalomcsomag súgóoldalán](service-connect-to-circuit-id.md) találhat.
+* Ma kiadtunk egy fejlesztést, amellyel még könnyebbé tettük az Irányítópult megosztása funkció használatát.  Ha a cége Office 365-öt használ az e-mailek kezelésére, mostantól [megoszthat adatokat egy e-mail-terjesztési csoportban](https://blogs.msdn.com/b/powerbi/archive/2015/08/04/easier-dashboard-sharing-with-distribution-groups.aspx), ugyanúgy, ahogyan az Outlookból e-maileket küldene.  Csak írja be a terjesztési csoport címét, és kattintson a Megosztás lehetőségre.  A terjesztési csoport minden tagja kap egy meghívót az irányítópult megtekintésére.
 
 **2015. július 28.**
 
-* Örömmel jelentjük, hogy a Power BI e heti frissítésében az [SQL Sentry tartalomcsomaggal](http://blogs.msdn.com/b/powerbi/archive/2015/07/28/monitoring-your-sql-sentry-data-with-power-bi.aspx) megérkezett az adatbázis-követés funkció. A tartalomcsomag egy irányítópultot és jelentéseket tartalmaz, amelyekkel megfigyelheti a követett SQL Server-telepítéseket az SQL Sentry Cloudban. További részleteket az első lépésekről a [Power BI SQL Sentry tartalomcsomag súgóoldalán](service-connect-to-sql-sentry.md) találhat.
+* Örömmel jelentjük, hogy a Power BI e heti frissítésében az [SQL Sentry tartalomcsomaggal](https://blogs.msdn.com/b/powerbi/archive/2015/07/28/monitoring-your-sql-sentry-data-with-power-bi.aspx) megérkezett az adatbázis-követés funkció. A tartalomcsomag egy irányítópultot és jelentéseket tartalmaz, amelyekkel megfigyelheti a követett SQL Server-telepítéseket az SQL Sentry Cloudban. További részleteket az első lépésekről a [Power BI SQL Sentry tartalomcsomag súgóoldalán](service-connect-to-sql-sentry.md) találhat.
 
 **2015. július 24.**
 
@@ -681,47 +679,47 @@ További információt a [blogunkban](http://blogs.msdn.com/b/powerbi/archive/20
 * [Teljes Excel-fájlok importálása](service-excel-workbook-files.md): Bármilyen, a OneDrive Vállalati verzión tárolt Excel-munkafüzetet importálhat a Power BI-ba, és ugyanúgy megtekintheti, mintha az Excel Online-ban tenné.
 * [CSV-fájlok](service-get-data-from-files.md) importálása: Az Excel- vagy Power BI Desktop-fájlokhoz hasonlóan CSV-fájlokat is alkalmazhat adatkészletként a Power BI irányítópultjaihoz és jelentéseihez.
 * Excel-, Power BI Desktop- és CSV-fájlok lecserélése: a fájlok frissített verziójának a Power BI-ba való feltöltése lecseréli a meglévő adatkészletet. Az ehhez az adatkészlethez csatlakoztatott jelentések és irányítópultok automatikusan az új verziót használják.
-* Örömmel jelentjük, hogy a Power BI e heti frissítésében a [Visual Studio Online tartalomcsomaggal](http://blogs.msdn.com/b/powerbi/archive/2015/07/22/monitoring-your-visual-studio-online-work-items-with-power-bi.aspx) megérkezett az munkaelem-követés funkció. A frissítés egy új irányítópultot, egy jelentést és egy frissített adatkészletet tartalmaz, amelyekkel elemezheti a munkaelemeket. Emellett a Git-tárházzal kapcsolatos fontos metrikákat, lekéréses kérelmeket és a kezdeti verzióhoz tartozó verziókövetési tartalmakat is magában foglal. További részleteket az első lépésekről a [Power Visual Studio Online tartalomcsomag súgóoldalán](service-connect-to-quickbooks-online.md) találhat.
+* Örömmel jelentjük, hogy a Power BI e heti frissítésében a [Visual Studio Online tartalomcsomaggal](https://blogs.msdn.com/b/powerbi/archive/2015/07/22/monitoring-your-visual-studio-online-work-items-with-power-bi.aspx) megérkezett az munkaelem-követés funkció. A frissítés egy új irányítópultot, egy jelentést és egy frissített adatkészletet tartalmaz, amelyekkel elemezheti a munkaelemeket. Emellett a Git-tárházzal kapcsolatos fontos metrikákat, lekéréses kérelmeket és a kezdeti verzióhoz tartozó verziókövetési tartalmakat is magában foglal. További részleteket az első lépésekről a [Power Visual Studio Online tartalomcsomag súgóoldalán](service-connect-to-quickbooks-online.md) találhat.
 
 **2015. július 14.**
 
-* Az Acumatica Cloud ERP teljes mértékben integrált, egy robusztus és rugalmas platformon futó üzleti felügyeleti alkalmazásokat kínál, például Pénzügyek, Terjesztés, CRM és Projektkönyvelés. A Power BI-hoz készült [Acumatica tartalomcsomaggal](http://blogs.msdn.com/b/powerbi/archive/2015/07/13/analyze-and-explore-your-acumatica-cloud-erp-data-with-power-bi.aspx) gyorsan csatlakozhat a lehetőségadatokhoz, és azonnali elemzéseket kaphat róluk. Ez a tartalom egy használatra kész irányítópultot, egy jelentéskészletet és egy összeválogatott adatkészletet tartalmaz, amelyekkel elemezheti az adatokat, és olyan részleteket tárhat fel, mint például a dátum szerint rendezett elnyert lehetőségek összesítése. További tudnivalók [itt](service-connect-to-acumatica.md). 
-* Az [Azure HDInsight](http://blogs.msdn.com/b/powerbi/archive/2015/07/14/visualize-big-data-with-power-bi-and-spark-for-azure-hdinsight.aspx) mostantól egy teljes körűen felügyelt Spark szolgáltatást kínál. Ez a funkció olyan forgatókönyveket tesz lehetővé, mint például az iteratív gépi tanulás vagy az interaktív adatelemzés. A Power BI szolgáltatással közvetlenül csatlakozhat a HDInsight-on keresztül a Spark-adataihoz, így egyszerűen és valós időben tárhatja fel azokat. További információt a [súgódokumentumban](spark-on-hdinsight-with-direct-connect.md) találhat.
-* [Az Office 365 navigációs és alkalmazásindítós integrációja](http://blogs.msdn.com/b/powerbi/archive/2015/07/15/new-capabilities-added-to-power-bi.aspx#launcher). Mostantól egyetlen kattintással elérheti bármelyik Office 365-alkalmazását.
-* [Egyéni URL-cím megadása](http://blogs.msdn.com/b/powerbi/archive/2015/07/15/new-capabilities-added-to-power-bi.aspx#url), amelyre a felhasználók ugranak, ha egy csempére kattintanak. Mostantól pontosan megszabhatja, hova kerüljenek a felhasználók: egy adott jelentésre, egy másik irányítópultra, egy SSRS-jelentésre vagy egy külső webhelyre. 
-* A Power BI-ban használt tár [láthatósága és kezelése](http://blogs.msdn.com/b/powerbi/archive/2015/07/15/new-capabilities-added-to-power-bi.aspx#storage)
-* [A Q&A vizualizációinak és mezőinek konfigurálása](http://blogs.msdn.com/b/powerbi/archive/2015/07/15/new-capabilities-added-to-power-bi.aspx#visual)
+* Az Acumatica Cloud ERP teljes mértékben integrált, egy robusztus és rugalmas platformon futó üzleti felügyeleti alkalmazásokat kínál, például Pénzügyek, Terjesztés, CRM és Projektkönyvelés. A Power BI-hoz készült [Acumatica tartalomcsomaggal](https://blogs.msdn.com/b/powerbi/archive/2015/07/13/analyze-and-explore-your-acumatica-cloud-erp-data-with-power-bi.aspx) gyorsan csatlakozhat a lehetőségadatokhoz, és azonnali elemzéseket kaphat róluk. Ez a tartalom egy használatra kész irányítópultot, egy jelentéskészletet és egy összeválogatott adatkészletet tartalmaz, amelyekkel elemezheti az adatokat, és olyan részleteket tárhat fel, mint például a dátum szerint rendezett elnyert lehetőségek összesítése. További tudnivalók [itt](service-connect-to-acumatica.md). 
+* Az [Azure HDInsight](https://blogs.msdn.com/b/powerbi/archive/2015/07/14/visualize-big-data-with-power-bi-and-spark-for-azure-hdinsight.aspx) mostantól egy teljes körűen felügyelt Spark szolgáltatást kínál. Ez a funkció olyan forgatókönyveket tesz lehetővé, mint például az iteratív gépi tanulás vagy az interaktív adatelemzés. A Power BI szolgáltatással közvetlenül csatlakozhat a HDInsight-on keresztül a Spark-adataihoz, így egyszerűen és valós időben tárhatja fel azokat. További információt a [súgódokumentumban](spark-on-hdinsight-with-direct-connect.md) találhat.
+* [Az Office 365 navigációs és alkalmazásindítós integrációja](https://blogs.msdn.com/b/powerbi/archive/2015/07/15/new-capabilities-added-to-power-bi.aspx#launcher). Mostantól egyetlen kattintással elérheti bármelyik Office 365-alkalmazását.
+* [Egyéni URL-cím megadása](https://blogs.msdn.com/b/powerbi/archive/2015/07/15/new-capabilities-added-to-power-bi.aspx#url), amelyre a felhasználók ugranak, ha egy csempére kattintanak. Mostantól pontosan megszabhatja, hova kerüljenek a felhasználók: egy adott jelentésre, egy másik irányítópultra, egy SSRS-jelentésre vagy egy külső webhelyre. 
+* A Power BI-ban használt tár [láthatósága és kezelése](https://blogs.msdn.com/b/powerbi/archive/2015/07/15/new-capabilities-added-to-power-bi.aspx#storage)
+* [A Q&A vizualizációinak és mezőinek konfigurálása](https://blogs.msdn.com/b/powerbi/archive/2015/07/15/new-capabilities-added-to-power-bi.aspx#visual)
 
 **2015. július 7.**
 
-* Mostantól elérhető a Power BI egyik legjobban várt és legtöbb felhasználó által kért funkciója. A mai naptól kezdve [frissíthetők azok adatkészletek](http://blogs.msdn.com/b/powerbi/archive/2015/07/07/refresh-for-on-premises-sources-is-here.aspx), amelyek a helyszíni forrásokhoz, például az SQL Serverhez kapcsolódnak. A Power BI Designer-fájlokból és a Power Queryvel vagy a Power Pivottal egy Excel-munkafüzetbe importált fájlokból létrehozott adatkészletek frissíthetők. 
+* Mostantól elérhető a Power BI egyik legjobban várt és legtöbb felhasználó által kért funkciója. A mai naptól kezdve [frissíthetők azok adatkészletek](https://blogs.msdn.com/b/powerbi/archive/2015/07/07/refresh-for-on-premises-sources-is-here.aspx), amelyek a helyszíni forrásokhoz, például az SQL Serverhez kapcsolódnak. A Power BI Designer-fájlokból és a Power Queryvel vagy a Power Pivottal egy Excel-munkafüzetbe importált fájlokból létrehozott adatkészletek frissíthetők. 
 
 **2015. június 30.**
 
-* Megjelent egy új [Power BI UserVoice tartalomcsomag](http://blogs.msdn.com/b/powerbi/archive/2015/07/01/monitor-and-visualize-your-uservoice-data-with-power-bi.aspx), amellyel figyelheti és vizualizációkkal megjelenítheti a UserVoice-adatait, majd azonnal elemezheti őket egy használatra kész irányítópulttal és jelentéssel.
+* Megjelent egy új [Power BI UserVoice tartalomcsomag](https://blogs.msdn.com/b/powerbi/archive/2015/07/01/monitor-and-visualize-your-uservoice-data-with-power-bi.aspx), amellyel figyelheti és vizualizációkkal megjelenítheti a UserVoice-adatait, majd azonnal elemezheti őket egy használatra kész irányítópulttal és jelentéssel.
 
 **2015. június 23.**
 
-* A Power BI Desktop-fájlok [frissíthetők](http://blogs.msdn.com/b/powerbi/archive/2015/06/22/announcing-refresh-support-for-power-bi-designer-files-in-the-power-bi-service.aspx) (ütemezett frissítés és azonnali frissítés) a Power BI-ba való feltöltés után.
-* Megjelent a Power BI legnagyobb vizuális módosítása december óta: az [Adatok lekérése](http://blogs.msdn.com/b/powerbi/archive/2015/06/23/the-new-get-data-experience.aspx) funkció mostantól letisztultabb és egyszerűbb.  Az Adatok lekérése gombra kattintva mostantól egyetlen képernyő jelenik meg, ahol választhat a kategóriák közül. Így még könnyebben keresheti meg a fontos tartalmakat.
-* [Az SQL Data Warehouse](http://blogs.msdn.com/b/powerbi/archive/2015/06/24/exploring-azure-sql-data-warehouse-with-power-bi.aspx) rugalmasan méretezhető, jelentős párhuzamos feldolgozást kínál. A ma bejelentett korlátozott nyilvános előzetes verzióval a Power BI-felhasználók közvetlenül csatlakozhatnak az Azure SQL Data Warehouse-ban tárolt adatokhoz, amelyeket egyszerűen és dinamikusan tárhatnak fel. Az adatraktárhoz való csatlakozás után valós időben létrejönnek a lekérdezések, amelyek az adatfeltárás során visszakerülnek a forráshoz. Ennek köszönhetően nem kell létrehoznia és feltöltenie egyéni adatmodelleket, és interaktívan vizsgálhatja az adatait.
+* A Power BI Desktop-fájlok [frissíthetők](https://blogs.msdn.com/b/powerbi/archive/2015/06/22/announcing-refresh-support-for-power-bi-designer-files-in-the-power-bi-service.aspx) (ütemezett frissítés és azonnali frissítés) a Power BI-ba való feltöltés után.
+* Megjelent a Power BI legnagyobb vizuális módosítása december óta: az [Adatok lekérése](https://blogs.msdn.com/b/powerbi/archive/2015/06/23/the-new-get-data-experience.aspx) funkció mostantól letisztultabb és egyszerűbb.  Az Adatok lekérése gombra kattintva mostantól egyetlen képernyő jelenik meg, ahol választhat a kategóriák közül. Így még könnyebben keresheti meg a fontos tartalmakat.
+* [Az SQL Data Warehouse](https://blogs.msdn.com/b/powerbi/archive/2015/06/24/exploring-azure-sql-data-warehouse-with-power-bi.aspx) rugalmasan méretezhető, jelentős párhuzamos feldolgozást kínál. A ma bejelentett korlátozott nyilvános előzetes verzióval a Power BI-felhasználók közvetlenül csatlakozhatnak az Azure SQL Data Warehouse-ban tárolt adatokhoz, amelyeket egyszerűen és dinamikusan tárhatnak fel. Az adatraktárhoz való csatlakozás után valós időben létrejönnek a lekérdezések, amelyek az adatfeltárás során visszakerülnek a forráshoz. Ennek köszönhetően nem kell létrehoznia és feltöltenie egyéni adatmodelleket, és interaktívan vizsgálhatja az adatait.
 
 **2015. június 16.**
 
-* A SweetIQ-val könnyen követheti a helyi listáit – ehhez a helyi keresési rendszer helyére és értékeléseire vonatkozó adatokat kell megadnia. A Power BI szolgáltatással elemezheti és megfigyelheti ezeket az adatokat a SweetIQ-adatokból létrehozott [használatra kész tartalommal](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx). További részleteket az első lépésekről a Power BI SweetIQ tartalomcsomag [súgóoldalán](service-connect-to-sweetiq.md) találhat.
+* A SweetIQ-val könnyen követheti a helyi listáit – ehhez a helyi keresési rendszer helyére és értékeléseire vonatkozó adatokat kell megadnia. A Power BI szolgáltatással elemezheti és megfigyelheti ezeket az adatokat a SweetIQ-adatokból létrehozott [használatra kész tartalommal](https://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx). További részleteket az első lépésekről a Power BI SweetIQ tartalomcsomag [súgóoldalán](service-connect-to-sweetiq.md) találhat.
 
 **2015. június 2.**
 
-* A Power BI és az [appFigures-tartalomcsomag](http://blogs.msdn.com/b/powerbi/archive/2015/06/02/explore-and-analyze-your-appfigures-data-with-power-bi.aspx) segítségével egyszerűen nyomon követheti az alkalmazásait leíró fontos statisztikákat. További részleteket a csatlakozásról és az első lépésekről a Power BI appFigures tartalomcsomag [dokumentációjában](service-connect-to-appfigures.md) találhat.
+* A Power BI és az [appFigures-tartalomcsomag](https://blogs.msdn.com/b/powerbi/archive/2015/06/02/explore-and-analyze-your-appfigures-data-with-power-bi.aspx) segítségével egyszerűen nyomon követheti az alkalmazásait leíró fontos statisztikákat. További részleteket a csatlakozásról és az első lépésekről a Power BI appFigures tartalomcsomag [dokumentációjában](service-connect-to-appfigures.md) találhat.
 
 **2015. május 28.**
 
-* Ezzel a [tartalomcsomaggal](http://blogs.msdn.com/b/powerbi/archive/2015/05/28/get-quick-insights-into-your-quickbooks-online-account-data.aspx) gyors elemzéseket kaphat a QuickBooks Online fiókadatairól. További részleteket a csatlakozásról és az első lépésekről a Power BI QuickBooks Online tartalomcsomag [dokumentációjában](service-connect-to-quickbooks-online.md) találhat.
+* Ezzel a [tartalomcsomaggal](https://blogs.msdn.com/b/powerbi/archive/2015/05/28/get-quick-insights-into-your-quickbooks-online-account-data.aspx) gyors elemzéseket kaphat a QuickBooks Online fiókadatairól. További részleteket a csatlakozásról és az első lépésekről a Power BI QuickBooks Online tartalomcsomag [dokumentációjában](service-connect-to-quickbooks-online.md) találhat.
 
 
 **2015. május 13.**
 
-* Közvetlenül csatlakozhat az **Azure SQL Database-ben** tárolt adataihoz. A lekérdezéseket dinamikusan hozzuk létre és küldjük el a forrásnak, így Ön interaktív jelentéseket hozhat létre közvetlenül az adatbázisban. További információt ebben a [blogbejegyzésben](http://blogs.msdn.com/b/powerbi/archive/2015/05/13/using-power-bi-to-visualize-and-explore-azure-sql-databases.aspx) és a [dokumentációban](service-azure-sql-database-with-direct-connect.md) találhat.
+* Közvetlenül csatlakozhat az **Azure SQL Database-ben** tárolt adataihoz. A lekérdezéseket dinamikusan hozzuk létre és küldjük el a forrásnak, így Ön interaktív jelentéseket hozhat létre közvetlenül az adatbázisban. További információt ebben a [blogbejegyzésben](https://blogs.msdn.com/b/powerbi/archive/2015/05/13/using-power-bi-to-visualize-and-explore-azure-sql-databases.aspx) és a [dokumentációban](service-azure-sql-database-with-direct-connect.md) találhat.
 
 **2015. május 7.**
 
@@ -729,15 +727,15 @@ További információt a [blogunkban](http://blogs.msdn.com/b/powerbi/archive/20
 
 **2015. április 28.**
 
-* A Power BI mostantól **44 nyelven** elérhető. A teljes listát ebben a [blogbejegyzésben](http://blogs.msdn.com/b/powerbi/archive/2015/04/28/power-bi-preview-now-available-in-your-language.aspx) találhatja.
+* A Power BI mostantól **44 nyelven** elérhető. A teljes listát ebben a [blogbejegyzésben](https://blogs.msdn.com/b/powerbi/archive/2015/04/28/power-bi-preview-now-available-in-your-language.aspx) találhatja.
 
 **2015. április 23.**
 
-* Mostantól az új tartalomcsomagunkkal megjelenítheti és feltárhatja a **Microsoft Dynamics Marketing-adatait**. További információt [blogbejegyzésünkben](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) találhat.
+* Mostantól az új tartalomcsomagunkkal megjelenítheti és feltárhatja a **Microsoft Dynamics Marketing-adatait**. További információt [blogbejegyzésünkben](https://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) találhat.
 
 **2015. április 15.**
 
-* Mostantól az új tartalomcsomagunkkal megjelenítheti és feltárhatja a **Google Analytics-adatait**. A Google Analytics tartalomcsomag egy irányítópultot, egy jelentést és egy adatkészletet tartalmaz, amelyekkel az utóbbi 6 hónap webhelyhasználati adatait elemezheti. Olvassa el a [blogbejegyzésünket](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
+* Mostantól az új tartalomcsomagunkkal megjelenítheti és feltárhatja a **Google Analytics-adatait**. A Google Analytics tartalomcsomag egy irányítópultot, egy jelentést és egy adatkészletet tartalmaz, amelyekkel az utóbbi 6 hónap webhelyhasználati adatait elemezheti. Olvassa el a [blogbejegyzésünket](https://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
 * Mostantól **minden kártyát rögzíthet**, kivéve a KPI-ket és a Q&A-jelentések képeit tartalmazó kártyákat.
 * Mostantól a lekérdezés végére helyezett „as card” kifejezéssel **használhat kártyákat a Q&A-ben**.
 
@@ -765,5 +763,5 @@ További információt a [blogunkban](http://blogs.msdn.com/b/powerbi/archive/20
 ## <a name="next-steps"></a>Következő lépések
 [Mi az a Power BI?](fundamentals/power-bi-overview.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

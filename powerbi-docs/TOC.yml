@@ -513,7 +513,7 @@
               href: service-interruption-notifications.md
         - name: A Power BI kiterjesztése
           items:
-            - name: A Microsoft Flow és a Power BI
+            - name: A Power Automate és a Power BI
               href: service-flow-integration.md
             - name: Külső alkalmazások használata
               href: service-power-bi-get-started-third-party-apps.md
