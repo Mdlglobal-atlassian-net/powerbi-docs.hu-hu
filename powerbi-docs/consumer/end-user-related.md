@@ -2,7 +2,6 @@
 title: Kapcsolódó tartalom megtekintése irányítópultokról, jelentésekből és adathalmazokból
 description: Egyszerűsített navigáció, kapcsolódó tartalmak megtekintése az irányítópultokban, jelentésekben és adatkészletekben
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.custom: seodec18
@@ -12,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 10fcb7420c261379d596666589a0f6707cf70160
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 9e202d22c2ff42a29eb28a8ee154b09f18097d04
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019447"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862283"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Kapcsolódó tartalom megtekintése a Power BI szolgáltatásban
 
@@ -54,9 +53,9 @@ Innen közvetlen műveleteket is végezhet a kapcsolódó tartalmakon.  Példáu
 ## <a name="view-related-content-for-a-dataset"></a>Egy adatkészlet kapcsolódó tartalmainak megtekintése
 A **Kapcsolódó tartalom** adattábla megnyitásához legalább *megtekintési engedéllyel* kell rendelkeznie az adott adatkészlethez. A példában a [Beszerzéselemzési mintát](../sample-procurement.md) fogjuk használni.
 
-A navigációs sávon keresse meg a **Munkaterületek** fejlécet, és válasszon ki egy munkaterületet a listából. Ha rendelkezik tartalommal a munkaterületen, az megjelenik a jobb oldali vásznon. 
+A navigációs panelen keresse meg a **Munkaterületek** fejlécet, és válasszon ki egy munkaterületet a listából. Ha rendelkezik tartalommal a munkaterületen, az megjelenik a jobb oldali vásznon. 
 
-![munkaterületek a bal oldali navigációs sávon](./media/end-user-related/power-bi-workspace.png)
+![munkaterületek a navigációs panelen](./media/end-user-related/power-bi-workspace.png)
 
 
 A munkaterületen válassza az **Adatkészletek** lapot, majd keresse meg a **Kapcsolódó megtekintése** ikont ![Kapcsolódó megtekintése ikon](./media/end-user-related/power-bi-view-related-icon-new.png).
@@ -76,5 +75,5 @@ Innen közvetlen műveleteket is végezhet a kapcsolódó tartalmakon. Például
 
 ## <a name="next-steps"></a>Következő lépések
 * [A Power BI szolgáltatás használatának első lépései](../service-get-started.md)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

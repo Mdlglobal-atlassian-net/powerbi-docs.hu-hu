@@ -1,0 +1,53 @@
+### YamlMime:Landing
+title: A Power BI útmutató dokumentációja
+summary: A Power BI útmutató dokumentációjában ajánlott eljárásokat talál attól a csapattól, amely a Power BI-t készíti, valamint azoktól, akik a nagyvállalati ügyfelekkel működnek együtt. Megtudhatja belőle, hogyan javítható a Power BI teljesítménye és hatékonysága. Az anyagot rendszeresen frissítjük új információkkal, ha azok elérhetővé válnak.
+metadata:
+  title: A Power BI útmutató dokumentációja
+  description: A Power BI útmutató dokumentációjában ajánlott eljárásokat talál attól a csapattól, amely a Power BI-t készíti, valamint azoktól, akik a nagyvállalati ügyfelekkel működnek együtt. Megtudhatja belőle, hogyan javítható a Power BI teljesítménye és hatékonysága. Az anyagot rendszeresen frissítjük új információkkal, ha azok elérhetővé válnak.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 11/14/2019
+  ms.openlocfilehash: de1ea8bbc35bc1d2ecc42a8deffc54fd9ac01bc1
+  ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+  ms.translationtype: HT
+  ms.contentlocale: hu-HU
+  ms.lasthandoff: 11/16/2019
+  ms.locfileid: "74133842"
+landingContent:
+- title: A Power BI útmutatója
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Útmutató a Power BI-hoz
+      url: overview.md
+    - text: Tanulmányok áttekintése
+      url: ../whitepapers.md
+- title: Adatmodellezés
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Mi az a csillagséma?
+      url: star-schema.md
+    - text: Adatcsökkentési technikák
+      url: import-modeling-data-reduction.md
+    - text: A lekérdezésdelegálás fontossága
+      url: power-query-folding.md
+- title: DAX
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: A DIVIDE függvény és a divide operátor
+      url: dax-divide-function-operator.md
+    - text: A hibakezelő függvények megfelelő használata
+      url: dax-error-functions.md
+- title: Adatfolyamok
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Ajánlott eljárások adatfolyamokhoz
+      url: ../service-dataflows-best-practices.md

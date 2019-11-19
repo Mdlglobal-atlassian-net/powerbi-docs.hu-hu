@@ -2,19 +2,18 @@
 title: DirectQuery-modell hibaelhárítása a Power BI Desktopban
 description: A DirectQuery-modellekkel kapcsolatos hibák elhárítása.
 author: peter-myers
-manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ac585aef180bb852f79ad5135778cec20f35cf2d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 623a0bbd187a997003ce7b82cc76d5c4fbe9ce44
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73433293"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868068"
 ---
 # <a name="directquery-model-troubleshooting-in-power-bi-desktop"></a>DirectQuery-modell hibaelhárítása a Power BI Desktopban
 
@@ -92,7 +91,7 @@ A potenciális teljesítményproblémák diagnosztizálásához szükséges nyom
 - Nyissa meg az SQL Server Profilert, és vizsgálja meg a nyomkövetési adatokat a fentebb leírt módon. Ne feledje, hogy a nyomkövetési fájl a Power BI Desktop bezárásakor törlődik. Emellett a Power BI Desktopban elvégzett további műveletek nem jelennek meg azonnal – az új események megtekintéséhez be kell zárni és újra meg kell nyitni a nyomkövetési fájlt.
 - Fogja rövidre az egyes munkameneteket (néhány tíz másodpercre, ne több százra), hogy könnyebb legyen értelmezni a nyomkövetési fájlt (már csak azért is, mert a nyomkövetési fájl mérete korlátozott, így a nagyon hosszú munkamenetek esetén megvan az esélye a korai események eltűnésének).
 
-## <a name="understand-the-form-of-query-sent-by-power-bi-desktop"></a>A Power BI Desktop által küldött lekérdezések formátumának értelmezése
+## <a name="understand-queries-sent-to-the-source"></a>A forrásnak küldött lekérdezések ismertetése
 
 A Power BI Desktop által generált és elküldött lekérdezések általános formátuma segédlekérdezéseket használ a modell minden egyes hivatkozott táblájához, ahol a segédlekérdezések a Power Query-lekérdezésben vannak meghatározva. Vegyük például egy SQL Server rendszerű relációs adatbázis alábbi TPC-DS-tábláit:
 

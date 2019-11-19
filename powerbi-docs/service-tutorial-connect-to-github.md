@@ -2,7 +2,6 @@
 title: 'Oktatóanyag: Csatlakozás GitHub-adattárhoz a Power BI segítségével'
 description: Ebben az oktatóanyagban valódi, GitHub szolgáltatásbeli adatokhoz csatlakozhat a Power BI segítségével, és automatikusan hozhat létre Power BI-irányítópultokat és -jelentéseket.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7f7fde7fcabc29238d9558739eff02519ef9cca3
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 986f35cd1c4f612b16374107487d0ca20c9c607e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020012"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871249"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Oktatóanyag: Csatlakozás GitHub-adattárhoz a Power BI segítségével
 Ebben az oktatóanyagban valódi, GitHub szolgáltatásbeli adatokhoz csatlakozhat a Power BI segítségével, és automatikusan hozhat létre Power BI-irányítópultokat és -jelentéseket. A Power BI nyilvános adattárához (más néven *tárházához*) fog csatlakozni, hogy választ kapjon olyan kérdésekre, mint: Hány közreműködő dolgozik a nyilvános Power BI-tartalmon? kik a fő közreműködők, a hét mely napján történik a legtöbb közreműködés, és sok más kérdés. 
@@ -45,7 +44,7 @@ Az oktatóanyag követéséhez létre kell hoznia egy GitHub-fiókot, ha nincs m
 
 ## <a name="how-to-connect"></a>Csatlakozás
 1. Jelentkezzen be a Power BI szolgáltatásba (https://app.powerbi.com). 
-2. A bal oldali navigációs panelen válassza az **Alkalmazások** ikont, majd az **Alkalmazások letöltése** lehetőséget.
+2. A navigációs panelen válassza az **Alkalmazások**, majd az **Alkalmazások beszerzése** lehetőséget.
    
    ![Power BI – Alkalmazások letöltése](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
@@ -72,15 +71,15 @@ Az oktatóanyag követéséhez létre kell hoznia egy GitHub-fiókot, ha nincs m
    A Power BI ezután már képes elérni a GitHub szolgáltatást az adatok beolvasásához.  Az adatok naponta egyszer frissülnek.
 
 8. Miután a Power BI importálta az adatokat, megjelenik az új GitHub-munkaterület tartalma. 
-9. Kattintson a munkaterület neve melletti nyílra a bal oldali navigációs sávon. Láthatja, hogy a munkaterület egy irányítópultot és egy jelentést tartalmaz. 
+9. Kattintson a munkaterület neve melletti nyílra a navigációs panelen. Láthatja, hogy a munkaterület egy irányítópultot és egy jelentést tartalmaz. 
 
-    ![Az alkalmazás a bal oldali navigációs panelen](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+    ![Alkalmazás a navigációs panelen](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
 10. Válassza az irányítópult neve melletti **További lehetőségek** (...) elemet, majd az **Átnevezés** menüpontot, és gépelje be a **GitHub-irányítópult** nevet.
  
     ![Power BI – GitHub csempe](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 
-8. Válassza a globális navigációs ikont a bal oldali navigációs panel kis méretűre állításához, hogy több szabad hely legyen a képernyőn.
+8. Válassza a globális navigációs ikont a navigációs panel kis méretűre állításához, hogy több szabad hely legyen a képernyőn.
 
     ![Globális navigációs ikon](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
@@ -129,7 +128,7 @@ Az oktatóanyag követéséhez létre kell hoznia egy GitHub-fiókot, ha nincs m
 
 Most, hogy befejezte ezt az oktatóanyagot, törölheti a GitHub alkalmazást. 
 
-1. A bal oldali navigációs sávon válassza az **Alkalmazások** lehetőséget.
+1. Válassza az **Alkalmazások** lehetőséget a navigációs panelen.
 2. Vigye a mutatót a GitHub csempe fölé, és válassza a **Törlés** lehetőséget.
 
     ![A GitHub alkalmazás törlése](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-delete.png)

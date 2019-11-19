@@ -3,7 +3,6 @@ title: Beágyazás jelentéskijelzővel a SharePoint Online-ban
 description: A Power BI új beágyazás jelentéskijelzővel a SharePoint Online-ban funkciójának használatával interaktív Power BI-jelentéseit könnyedén SharePoint Online-oldalakba illesztheti.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: 6fb02a3ea31dd3bed6f1013d5e81237345aef40c
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: e44ea4174545715a689b4f4370516cbbab4a593b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431903"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881884"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Beágyazás jelentéskijelzővel a SharePoint Online-ban
 
@@ -123,7 +122,7 @@ A Power BI webes kijelző alábbi beállításait adhatja meg a SharePoint Onlin
 | --- | --- |
 | Oldal neve |A webes kijelző alapértelmezett oldalát állítja be. Válasszon ki egy értéket a legördülő listából. Ha nem jelenik meg egyetlen oldal sem a listában, akkor vagy csak egyetlen oldalból áll a jelentés, vagy a bemásolt URL-cím már tartalmazza az egyik oldal nevét. Ahhoz, hogy a listából választhasson ki egy adott oldalt, el kell távolítani a jelentésre hivatkozó szakaszt az URL-címből. |
 | Megjelenítés |A jelentés SharePoint Online-oldalon belüli igazítását állítja be. |
-| Navigációs ablaktábla megjelenítése |Megjeleníti vagy elrejti az oldal navigációs ablaktábláját. |
+| A navigációs panel megjelenítése |Megjeleníti vagy elrejti az oldal navigációs paneljét. |
 | Szűrés ablaktábla megjelenítése |Megjeleníti vagy elrejti a szűrés ablaktábláját. |
 
 ## <a name="reports-that-do-not-load"></a>Nem betöltődő jelentések
@@ -173,4 +172,4 @@ Egy jelentést SharePointban megtekintő felhasználónak vagy **Power BI Pro**-
 * [Mi a Power BI Premium?](service-premium-what-is.md)
 * [Jelentés beágyazása egy biztonságos portálon vagy webhelyen](service-embed-secure.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

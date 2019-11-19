@@ -2,7 +2,6 @@
 title: Adattárolás felügyelete a munkaterületein
 description: Útmutató a jelentések és az adathalmazok további közzétételének biztosításához az egyéni vagy a munkaterületen található adattárhely kezelésével.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: ea187de55eec2667abe2eed017481180910b7619
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f8e7240b34e20a3d18443cadb5265c5d0d870790
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431369"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873661"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Adattárolás felügyelete Power BI-munkaterületeken
 
@@ -46,7 +45,7 @@ Az Ön által megosztott irányítópult mérete attól függ, hogy mi van rögz
 
 Megtekintheti a Power BI-fiókban aktuálisan felhasznált tárhely méretét, és kezelheti a fiókot.
 
-1. A saját tárhely kezeléséhez nyissa meg a **Saját munkaterületet** a bal oldali navigációs ablaktáblán.
+1. A saját tárhely kezeléséhez nyissa meg a **Saját munkaterületet** a navigációs panelen.
    
     ![Saját munkaterület](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 2. Kattintson a fogaskerék ikonra ![Fogaskerék ikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) a jobb felső sarokban \> **Személyes tárhely kezelése**.
@@ -104,5 +103,5 @@ Ez a korlát megjelenik a **Személyes tárhely kezelése** területen is.
 
  ![Túllépte a tárhelykorlátot](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
- További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+ További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

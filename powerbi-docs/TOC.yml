@@ -477,6 +477,10 @@
               href: service-the-report-editor-take-a-tour.md
             - name: Adatforrások a Power BI-hoz
               href: service-get-data.md
+            - name: A Power BI-adathalmazok bemutatása
+              href: service-datasets-understand.md
+            - name: A Power BI-adathalmazok módjainak bemutatása
+              href: service-dataset-modes-understand.md
             - name: Adatfrissítés a Power BI-ban
               href: refresh-data.md
         - name: Együttműködés a Power BI-ban
@@ -1125,31 +1129,3 @@
       items:
         - name: Havi átjáró-frissítések
           href: /data-integration/gateway/service-gateway-monthly-updates
-- name: Útmutató
-  items:
-    - name: Áttekintés
-      href: guidance/overview.md
-    - name: Mi az a csillagséma?
-      href: guidance/star-schema.md
-    - name: Az adatmodell méretének csökkentése
-      href: guidance/import-modeling-data-reduction.md
-    - name: A DIVIDE függvény és a divide operátor (/)
-      href: guidance/dax-divide-function-operator.md
-    - name: A lekérdezésdelegálás fontossága
-      href: guidance/power-query-folding.md
-    - name: A hibakezelő függvények megfelelő használata
-      href: guidance/dax-error-functions.md
-    - name: Adatfolyamokhoz ajánlott eljárások
-      href: service-dataflows-best-practices.md
-    - name: Útmutató a DirectQuery-modellhez a Power BI Desktopban
-      href: guidance/directquery-model-guidance.md
-    - name: Tanulmányok
-      items:
-        - name: Tanulmányok áttekintése
-          href: whitepapers.md
-        - name: A Power BI biztonsága – tanulmány
-          href: whitepaper-powerbi-security.md
-        - name: A Power BI prémium üzembe helyezése
-          href: whitepaper-powerbi-premium-deployment.md
-        - name: Power BI-tartalom külső terjesztése az Azure Active Directory B2B használatával
-          href: whitepaper-azure-b2b-power-bi.md

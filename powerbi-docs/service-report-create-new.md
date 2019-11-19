@@ -2,7 +2,6 @@
 title: Jelentés létrehozása adatkészletből
 description: Hozzon létre egy Power BI-jelentést egy adatkészletből.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,19 +9,19 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 1993ac0b300bb582d7b8a1946ff63cf6316c2d52
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: c3f30206a01dce9cf9fd3ce0600b46b401df2b1f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432192"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871750"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Jelentés létrehozása a Power BI szolgáltatásban adatkészlet importálásával
 Már elolvasta a [Jelentések a Power BI-ban](consumer/end-user-reports.md) című cikket, és szeretne létrehozni egy saját jelentést. Jelentés többféle módon is létrehozható. Ebben a cikkben kezdésként egy Excel-adatkészletből egy alapszintű jelentést fogunk létrehozni a Power BI szolgáltatásban. Ha már megismerte a jelentések létrehozásának alapjait, akkor a lap alján található [Következő lépések](#next-steps) hivatkozással továbbhaladhat a jelentésekkel kapcsolatos összetettebb témakörökre is.  
 
 ## <a name="prerequisites"></a>Előfeltételek
 - [Regisztráció a Power BI szolgáltatásra](service-self-service-signup-for-power-bi.md). További információ arról, hogy hogyan hozhat létre jelentést a Power BI Desktopban: [Desktop jelentés nézet](desktop-report-view.md). 
-- [Töltse le a Kiskereskedelmi elemzési minta Excel-adatkészletét](http://go.microsoft.com/fwlink/?LinkId=529778), és mentse a OneDrive Vállalati verzióra vagy a számítógépére.
+- [Töltse le a Kiskereskedelmi elemzési minta Excel-adatkészletét](https://go.microsoft.com/fwlink/?LinkId=529778), és mentse a OneDrive Vállalati verzióra vagy a számítógépére.
 
 ## <a name="import-the-dataset"></a>Adatkészlet importálása
 Ha ezzel a módszerrel hoz létre egy jelentést, akkor annak kiindulópontja egy adatkészlet és egy üres jelentésvászon lesz. Kövesse a Kiskereskedelmi elemzési minta Excel-adatkészletének lépéseit.
@@ -30,7 +29,7 @@ Ha ezzel a módszerrel hoz létre egy jelentést, akkor annak kiindulópontja eg
 1. A jelentést a Power BI szolgáltatás egy munkaterületén fogjuk létrehozni, ezért válasszon ki egy meglévő munkaterületet, vagy hozzon létre egy újat.
    
    ![munkaterületek listája](media/service-report-create-new/power-bi-workspaces2.png)
-2. A bal oldalon lévő navigációs ablaktáblán válassza az **Adatok lekérése** elemet.
+2. Kattintson az **Adatok lekérése** elemre a navigációs panel alján.
    
    ![Adatok lekérése](media/service-report-create-new/power-bi-get-data3.png)
 3. Válassza a **Fájlok** lehetőséget, majd navigáljon arra a helyre, ahova a Kiskereskedelmi elemzési mintát mentette.
@@ -93,5 +92,5 @@ Az adatokat tovább vizsgálhatja, és vizualizációkat is adhat hozzá. Ha kü
 ## <a name="next-steps"></a>Következő lépések
 
 * Tudnivalók arról, hogyan történik a [vizualizációk rögzítése egy irányítópulton](service-dashboard-pin-tile-from-report.md)   
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

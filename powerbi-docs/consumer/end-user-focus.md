@@ -2,7 +2,6 @@
 title: Fókusz mód és teljes képernyős mód – ráközelítés a részletekre
 description: Power BI-beli irányítópultok, irányítópult-csempék, jelentések vagy jelentésvizualizációk fókusz módú vagy teljes képernyős megjelenítésének dokumentációja
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 3a4f120ec64376955433faf04e24dd0e8f623419
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 633aaf4bd06634f0b1cc7eb2dd38b56eec0cfaf0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019826"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852744"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>A tartalom részletesebb megjelenítése: fókusz mód és teljes képernyős mód
 
@@ -38,7 +37,7 @@ A fókusz mód és a teljes képernyős mód két különböző mód a vizualiz�
 
 ![irányítópult teljes képernyős módja előtte és utána](media/end-user-focus/power-bi-dashboards-focus.png)
 
-Jelenítse meg menük és navigációs sávok nélkül a Power BI szolgáltatásbeli tartalmakat (irányítópultokat, jelentésoldalakat, csempéket és vizualizációkat), hogy semmi se terelje el róluk a figyelmet.  Így adatait bármikor megtekintheti egy letisztult, teljes képernyős nézetben, és ehhez elég csak odapillantania. Ezt a megjelenítési módot időnként TV módnak is nevezik.   
+Jelenítse meg menük és navigációs panelek nélkül a Power BI szolgáltatásbeli tartalmakat (irányítópultokat, jelentésoldalakat, csempéket és vizualizációkat), hogy semmi se terelje el róluk a figyelmet.  Így adatait bármikor megtekintheti egy letisztult, teljes képernyős nézetben, és ehhez elég csak odapillantania. Ezt a megjelenítési módot időnként TV módnak is nevezik.   
 
 A teljes képernyős mód megnyitásához válassza a **teljes képernyő** ikont ![teljes képernyő ikon](media/end-user-focus/power-bi-full-screen-icon.png) a Power BI szolgáltatás menüsávjából az irányítópult, jelentés, fókusz módú csempe vagy fókusz módú vizualizáció felett.  A kiválasztott tartalom kitölti a képernyőt.
 Ha a Power BI mobilalkalmazást használja, a [teljes képernyős mód a Windows 10-es mobilalkalmazásoknál érhető el](./mobile/mobile-windows-10-app-presentation-mode.md). 
@@ -60,7 +59,7 @@ Fókusz módban a Power BI-*fogyasztók* kezelni tudják a vizualizáció létre
 
 ## <a name="working-in-full-screen-mode"></a>Munka a teljes képernyőn
 
-Irányítópult vagy jelentés teljes képernyős megnyitásához válassza a teljes képernyő ikont. ![teljes képernyő ikon](media/end-user-focus/power-bi-full-screen-icon.png) Ez a felső navigációs sávon található. Teljes képernyős módban az egér vagy a kurzor mozgatásával környezeti menü jeleníthető meg. Mivel a teljes képernyős mód sokféle tartalomhoz elérhető, a környezeti menük mindegyike kissé eltérő lehetőségeket tartalmaz, de ezek viszonylag egyértelműek.  A definíció megtekintéséhez elég a kurzort egy ikon fölé vinni.
+Irányítópult vagy jelentés teljes képernyős megnyitásához válassza a teljes képernyő ikont. ![teljes képernyő ikon](media/end-user-focus/power-bi-full-screen-icon.png) a felső navigációs panelen. Teljes képernyős módban az egér vagy a kurzor mozgatásával környezeti menü jeleníthető meg. Mivel a teljes képernyős mód sokféle tartalomhoz elérhető, a környezeti menük mindegyike kissé eltérő lehetőségeket tartalmaz, de ezek viszonylag egyértelműek.  A definíció megtekintéséhez elég a kurzort egy ikon fölé vinni.
 
 Irányítópult menüje    
 ![Irányítópult menüje](media/end-user-focus/power-bi-full-screen-dash.png)    

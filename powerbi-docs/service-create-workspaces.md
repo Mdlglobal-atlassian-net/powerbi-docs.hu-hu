@@ -2,7 +2,6 @@
 title: Klasszikus munkaterületek létrehozása a Power BI-ban
 description: Megtudhatja, hogyan hozhat létre munkaterületeket, olyan irányítópultokból, jelentésekből és lapszámozott jelentésekből álló gyűjteményeket, amelyek célja az alapvető metrikák biztosítása a vállalat számára.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1087ac4301a172500c997e78ee3a16695f6b0d73
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 3153e63685e21a29687c33e702c4ade55324e05c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021090"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853559"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Klasszikus munkaterületek létrehozása a Power BI-ban
 
@@ -75,7 +74,7 @@ A jelenlegi munkaterületeken emellett szervezeti, valamint külső tartalomcsom
 
 Ha a szervezeten belül nagy közönség számára szeretne hivatalos tartalmat terjeszteni, közzétehet egy alkalmazást a munkaterületről.  Ha a tartalom elkészült, kiválaszthatja a közzétenni kívánt irányítópultokat és jelentéseket, amelyeket közzétehet *alkalmazásként*. Minden munkaterületről létrehozhat egy alkalmazást.
 
-A bal oldali navigációs sáv Alkalmazások listája megjeleníti az összes telepített alkalmazást. A munkatársai különböző módokon férhetnek hozzá az alkalmazáshoz. 
+A navigációs panel Alkalmazások listája megjeleníti az összes telepített alkalmazást. A munkatársai különböző módokon férhetnek hozzá az alkalmazáshoz. 
 - Alkalmazását megtalálhatják a Microsoft AppSource-on, és onnan telepíthetik.
 - Küldhet nekik közvetlen hivatkozást. 
 - Ha a Power BI rendszergazda engedélyezi, automatikusan telepítheti az alkalmazást a munkatársai Power BI-fiókjába. 
@@ -97,4 +96,4 @@ A kettő összehasonlításához olvassa el [az új és a meglévő munkaterüle
 ## <a name="next-steps"></a>Következő lépések
 * [Alkalmazások telepítése és használata a Power BI-ban](service-create-distribute-apps.md)
 - [Az új munkaterületek létrehozása](service-create-the-new-workspaces.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

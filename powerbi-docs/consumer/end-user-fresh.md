@@ -2,7 +2,6 @@
 title: A Power BI módszere a tartalom naprakészen tartására
 description: Megtudhatja, hogyan gondoskodik arról a Power BI, hogy Ön az adatok, jelentések, irányítópultok és alkalmazások legújabb verziójával dolgozhasson.
 author: mihart
-manager: kvivek
 ms.service: powerbi
 ms.custom: ''
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5d81b1e69d9cfbba6e3ed57f678af75dab1698c3
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 92f031ff43bc4d3bd5840e69fec166606b14eb73
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019782"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863886"
 ---
 # <a name="your-content-is-up-to-date"></a>A tartalma naprakész
 
@@ -43,9 +42,9 @@ A tulajdonos neve megtalálható az irányítópultok és jelentések címsoráb
 
 Az alkalmazás képernyőjén a tervező neve és az alkalmazás legutóbbi frissítésének dátuma is megjelenik.  
 
-1. A bal oldali navigációs panelen válassza az **Alkalmazások** lehetőséget.
+1. Válassza az **Alkalmazások** lehetőséget a navigációs panelen.
 
-    ![bal oldali navigációs panel](media/end-user-fresh/power-bi-nav-app.png)
+    ![navigációs panel](media/end-user-fresh/power-bi-nav-app.png)
 
 
 
@@ -85,7 +84,7 @@ A **Kapcsolódó tartalom** panelen láthatók az irányítópult vagy a jelent�
 
 ## <a name="what-happens-if-an-app-is-deleted-by-the-designer"></a>Mi történik, ha egy alkalmazást töröl a tervező?
 
-Ha egy tervező töröl egy alkalmazást, az ahhoz tartozó irányítópultok és jelentések automatikusan eltűnnek az Ön Power BI-munkaterületéről is. Többé nem lesznek elérhetők, és nem fogják látni sem az alkalmazások tárolójában, sem a navigációs sávon az alkalmazást.
+Ha egy tervező töröl egy alkalmazást, az ahhoz tartozó irányítópultok és jelentések automatikusan eltűnnek az Ön Power BI-munkaterületéről is. Többé nem lesznek elérhetők, és nem fogják látni sem az alkalmazások tárolójában, sem a navigációs panelen az alkalmazást.
 
 
 ## <a name="subscribe-to-see-changes"></a>Feliratkozás a módosítások megtekintéséhez

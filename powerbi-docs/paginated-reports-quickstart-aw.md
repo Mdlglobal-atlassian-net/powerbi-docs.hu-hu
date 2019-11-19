@@ -3,18 +3,17 @@ title: 'Oktatóanyag: Lapszámozott jelentés létrehozása és feltöltése a P
 description: Ebben az oktatóanyagban egy Azure SQL-mintaadatbázishoz csatlakozik. Ezután a Jelentéskészítő varázslójával létrehoz egy lapszámozott jelentést. Ezt követően feltölti a lapszámozott jelentést a Power BI szolgáltatás Prémium szintű kapacitásának egyik munkaterületére.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 59d3f943ff893024beceff59ce3d0db6bc4d764b
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: ab4cb14936ceff52a78f713877064d525de4b104
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431664"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875438"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Oktatóanyag: Lapszámozott jelentés létrehozása és feltöltése a Power BI szolgáltatásba
 
@@ -287,7 +286,7 @@ Mielőtt közzétenné a jelentést a Power BI szolgáltatásban, még egy form�
 
 Most, hogy létrehozta a lapszámozott jelentést, ideje feltölteni a Power BI szolgáltatásba.
 
-1. A Power BI szolgáltatás (http://app.powerbi.com) ) bal oldali navigációs paneljén válassza a **Munkaterületek** > **Munkaterület létrehozása** lehetőséget.
+1. A Power BI szolgáltatás (https://app.powerbi.com) ) navigációs paneljén válassza a **Munkaterületek** > **Munkaterület létrehozása** lehetőséget.
 
 2. A munkaterületet nevezze el **Azure AW-nek** vagy adjon neki egy egyedi nevet. Egyelőre Ön az egyetlen tag. 
 

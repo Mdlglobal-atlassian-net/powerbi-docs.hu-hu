@@ -2,7 +2,6 @@
 title: CDM-mappa hozzáadása a Power BI-hoz adatfolyamként
 description: Munkaterület konfigurálása adatfolyam-definíciók és adatfájlok Azure Data Lake Storage Gen2-beli tárolására
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3adc642d539ab8e1c1f1f60981a61fdc58a460ab
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 5b6b8658e4480173c32a591c2fc763a238cfd13a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432052"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872695"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)
 
@@ -33,7 +32,7 @@ A következő bekezdések adatfolyamok CDM-mappából való létrehozását isme
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Adatfolyam létrehozása CDM-mappából
 
-Egy adatfolyam CDM-mappából való létrehozásának első lépéseként indítsa el a **Power BI szolgáltatást**, és válasszon **munkaterületet** a bal oldali navigációs panelen. Új munkaterületet is létrehozhat, amelyben aztán létrehozhatja új adatfolyamát.
+Egy adatfolyam CDM-mappából való létrehozásának első lépéseként indítsa el a **Power BI szolgáltatást**, és válasszon **munkaterületet** a navigációs panelen. Új munkaterületet is létrehozhat, amelyben aztán létrehozhatja új adatfolyamát.
 
 ![Adatfolyam létrehozása a Power BI szolgáltatásban](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_02.jpg)
 
@@ -110,5 +109,5 @@ A Common Data Modellel kapcsolatos további információt a témát áttekintő 
 * [CDM-mappák](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM-modellfájl definiálása](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-[Kérdéseit mindig felteheti a Power BI-közösségben](http://community.powerbi.com/) is.
+[Kérdéseit mindig felteheti a Power BI-közösségben](https://community.powerbi.com/) is.
 

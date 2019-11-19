@@ -4,7 +4,6 @@ description: Ennek a rövid útmutatónak a segítségével a **felhasználók**
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerbi
@@ -13,12 +12,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/30/2019
 ms.author: mihart
-ms.openlocfilehash: 17a142249abe1162dbbcff79c476f33eb4b80366
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 09b9bf10c3328ecc4eb9ca9d16460b1bcfab0da5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019599"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862676"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Rövid útmutató: A Power BI *felhasználói* képességeivel kapcsolatos tudnivalók
 Ebből a rövid útmutatóból megtudhatja, hogyan használhatja a Power BI-t az adatokon alapuló üzleti megállapítások felfedezéséhez. Ez a cikk nem részletes ismertető, sokkal inkább a Power BI-**felhasználók** számára elérhető műveletek rövid áttekintése.
@@ -50,7 +49,7 @@ Amikor a „tartalom” kifejezést használjuk a Power BI-ban, jelentésekről,
 
 Az *alkalmazás* egy olyan Power BI-tartalomtípus, amely az összetartozó irányítópultokat és jelentéseket egy helyen kombinálja. Egy alkalmazás egy vagy több irányítópultot és egy vagy több jelentést tartalmazhat egy csomagban. Az alkalmazásokat Power BI-*tervezők* hozzák létre, majd terjesztik és osztják meg az olyan *fogyasztókkal*, mint Ön. 
 
-Az alkalmazások megtekintésének egyik lehetősége a navigációs sáv **Alkalmazások** elemének, majd egy alkalmazás kiválasztása.
+Az alkalmazások megtekintésének egyik lehetősége a navigációs panel **Alkalmazások** elemének, majd egy alkalmazás kiválasztása.
 
 ![Az Alkalmazások letöltése ikon](./media/end-user-reading-view/power-bi-apps.png)
 
@@ -116,7 +115,7 @@ A vizualizációk adatpontokból állnak, amelyek részleteit megtekintheti, ha 
 ![rámutatás a részletek megtekintéséhez](media/end-user-reading-view/power-bi-hover.gif)
 
 ### <a name="favorite-a-dashboard"></a>Irányítópult kedvencnek jelölése
-Ha egy tartalmat felvesz a *kedvencek* közé, akkor a navigációs sávból is elérheti. A navigációs sáv a Power BI szinte minden területéről látható. A kedvencek általában a leggyakrabban látogatott irányítópultok, jelentésoldalak és alkalmazások.
+Ha egy tartalmat felvesz a *kedvencek* közé, akkor a navigációs panelen is elérheti. A navigációs panel a Power BI szinte minden területéről látható. A kedvencek általában a leggyakrabban látogatott irányítópultok, jelentésoldalak és alkalmazások.
 
 A Power BI szolgáltatás jobb felső sarkában válassza a **Kedvenc** lehetőséget, vagy ha az nem látható, a **További lehetőségek** (...), majd a legördülő menüben megjelenő **Kedvenc** elemet. 
    
@@ -194,9 +193,9 @@ A vizualizáció létrehozásához használt adatok megjelenítésén kívül ex
 Ez volt a Power BI szolgáltatás *felhasználói* műveleteinek rövid áttekintése.  
 
 ## <a name="clean-up-resources"></a>Erőforrások felszabadítása
-- Ha alkalmazáshoz csatlakozott, nyissa meg az alkalmazások tartalmának listáját a bal oldali navigációs panelen az **Alkalmazások** elemre kattintva. Vigye az egérmutatót a törölni kívánt alkalmazás fölé, majd kattintson a kukát ábrázoló ikonra.
+- Ha alkalmazáshoz csatlakozott, nyissa meg az alkalmazások tartalmának listáját a navigációs panelen az **Alkalmazások** elemre kattintva. Vigye az egérmutatót a törölni kívánt alkalmazás fölé, majd kattintson a kukát ábrázoló ikonra.
 
-- Ha egy Power BI-jelentésmintát importált, vagy ahhoz csatlakozott, a bal oldali navigációs sávon nyissa meg a **Saját munkaterületet**. A felül található lapok használatával keresse meg az irányítópultot, jelentést és adathalmazt, és mindegyiknél kattintson a kukát ábrázoló ikonra.
+- Ha egy Power BI-jelentésmintát importált, vagy ahhoz csatlakozott, a navigációs panelen nyissa meg a **Saját munkaterületet**. A felül található lapok használatával keresse meg az irányítópultot, jelentést és adathalmazt, és mindegyiknél kattintson a kukát ábrázoló ikonra.
 
 ## <a name="next-steps"></a>Következő lépések
 [Power BI felhasználók számára](end-user-consumer.md)

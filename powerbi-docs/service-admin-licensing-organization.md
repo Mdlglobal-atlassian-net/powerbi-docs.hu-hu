@@ -2,7 +2,6 @@
 title: Szervezeti Power BI-licencelés
 description: A különböző Power BI-licenctípusok (az ingyenes, a Power BI Pro és a Power BI Premium) ismertetése.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e7a851a890fa734c045bb9cee60d429f87a3a602
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: 2cbf2498740d26a59ced5652368cf99b8fa5eec1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442822"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857709"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Szervezeti Power BI-licencelés
 
@@ -55,7 +54,7 @@ Mielőtt regisztrálna, vegye figyelembe a következőket:
 
 1. Nyissa meg a [Microsoft 365 Felügyeleti központot](https://portal.office.com/adminportal/home#/homepage).
 
-1. A bal oldali navigációs ablaktáblán kattintson a **Számlázás**, majd az **Előfizetések** lehetőségre.
+1. A navigációs panelen kattintson a **Számlázás**, majd az **Előfizetések** lehetőségre.
 
    ![Számlázás és előfizetés](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-05.png)
 
@@ -101,7 +100,7 @@ Ha a korlátlan (ingyenes) Power BI-licenckészlet nem érhető el, és nem szer
 
 1. Nyissa meg a [Microsoft 365 Felügyeleti központot](https://portal.office.com/admin/default.aspx).
 
-1. A bal oldali navigációs ablaktáblán kattintson a **Számlázás** > **Előfizetések** lehetőségre.
+1. A navigációs panelen kattintson a **Számlázás** > **Előfizetések** lehetőségre.
 
 1. A jobb oldalon válassza az **Előfizetések felvétele +** lehetőséget.
 
@@ -156,4 +155,4 @@ A regisztrációkat az Azure Active Directory **AllowAdHocSubscriptions** beáll
 
 [Power BI Pro-licencek vásárlása és kiosztása](service-admin-purchasing-power-bi-pro.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

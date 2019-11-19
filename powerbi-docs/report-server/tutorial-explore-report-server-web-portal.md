@@ -2,19 +2,18 @@
 title: 'Oktatóanyag: A Power BI jelentéskészítő kiszolgáló áttekintése virtuális gépen'
 description: Ebben az oktatatóanyagban virtuális gépet hozhat létre az előre telepített Power BI jelentéskészítő kiszolgálóval, és áttekintheti a webportált.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
-ms.openlocfilehash: cd3e032375c5edaba2b0f90f982d0dbe5591c913
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 312b86f9e0c0dda0c9c943520c74286e0458acef
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021626"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859255"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Oktatóanyag: A Power BI jelentéskészítő kiszolgáló webportáljának áttekintése virtuális gépen
 Ebben az oktatatóanyagban Azure-beli virtuális gépet hozhat létre az előre telepített Power BI jelentéskészítő kiszolgálóval, így kipróbálhatja a Power BI- és a többoldalas jelentésminták és főbb teljesítménymutatók megtekintését, szerkesztését és kezelését.
@@ -72,7 +71,7 @@ Szerencsére a Power BI csapata létrehozott egy virtuális gépet, amelyre már
 
 ## <a name="connect-to-your-virtual-machine"></a>Virtuális gép csatlakoztatása
 
-1. Az Azure bal oldali navigációs paneljén válassza a **Virtuális gépek** lehetőséget. 
+1. Az Azure navigációs paneljén válassza a **Virtuális gépek** lehetőséget. 
 
 2. A **Szűrés név szerint** mezőbe gépelje be a „report” szót. 
 
@@ -108,7 +107,7 @@ Amikor a virtuális gép megnyílik, a következő elemek láthatók az asztalá
 |![4](media/tutorial-explore-report-server-web-portal/number-4.png) | A Power BI jelentéskészítő kiszolgáló webportált nyitja meg a böngészőben |
 |![5](media/tutorial-explore-report-server-web-portal/number-5.png) | Elindítja az SQL Server Data Tools programot többoldalas (.RDL) jelentések létrehozásához |
 
-Kattintson duplán a **Jelentéskészítő kiszolgáló webportál** ikonra. A böngészőben megnyílik a `http://localhost/reports/browse` oldal. A webportálon több, típusonként csoportosított fájlt talál. 
+Kattintson duplán a **Jelentéskészítő kiszolgáló webportál** ikonra. A böngészőben megnyílik a `https://localhost/reports/browse` oldal. A webportálon több, típusonként csoportosított fájlt talál. 
 
 ![Power BI jelentéskészítő kiszolgáló webes portálja](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 

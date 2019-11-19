@@ -2,7 +2,6 @@
 title: 'Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)'
 description: Ebben az oktatóanyagban Machine Learning Studio-modellt fog meghívni a Power BI-ban.
 author: davidiseminger
-manager: kfile
 ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 368f860ed064cf3b4ff73496db1fa993fd3b716a
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 3cbe715bc3cff9d2afeefe7c82847f104f4d0835
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432233"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876968"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)
 
@@ -44,7 +43,7 @@ Ahhoz, hogy a Power BI-ból hozzáférjen az Azure ML-modellhez, **Olvasási** j
 
 Az alábbi lépésekben azt feltételezzük, hogy Ön az egyik adminisztrátora annak az Azure-előfizetésnek és erőforráscsoportnak, amelyben a modell közzé lett téve.
 
-Jelentkezzen be az [Azure Portalra](https://portal.azure.com), majd keresse meg az **Előfizetések** oldalt, amelyet megtalálhat a navigációs menü **Minden szolgáltatás** listájában is.
+Jelentkezzen be az [Azure Portalra](https://portal.azure.com), majd keresse meg az **Előfizetések** oldalt, amelyet megtalálhat a navigációs panel **Minden szolgáltatás** listájában is.
 
 ![Azure Portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
@@ -135,7 +134,7 @@ A **Szerkesztés** ikon kiválasztásával megnyílik a Power Query-szerkesztő 
 
 ![Szerkesztés](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_16.png)
 
-Válassza a menüszalag **AI-elemzések** gombját, majd a bal oldali navigációs menü _Azure Machine Learning-modellek_ elemét.
+Válassza a menüszalag **AI-elemzések** gombját, majd a navigációs ablaktábla menüjében az _Azure Machine Learning-modellek_ mappát.
 
 Azok az Azure ML-modellek, amelyekhez hozzáférést kapott, Power Query-függvényekként jelennek meg az *AzureML* előtaggal.  Ha az _AutomobilePricePrediction_ modellnek megfelelő függvényre kattint, a modell webszolgáltatásának paraméterei függvényparaméterekként lesznek listázva.
 

@@ -2,7 +2,6 @@
 title: A Power BI kisegítő lehetőségeinek áttekintése
 description: Funkciók és javaslatok az akadálymentesített Power BI Desktop-jelentések létrehozásához
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 13017fed9a7cd54cde624424894341dc2ced0d9b
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: e61df101d26dd95a771a64ce7633e40fcd9c9123
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73180976"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878892"
 ---
 # <a name="overview-of-accessibility-in-power-bi"></a>A Power BI kisegítő lehetőségeinek áttekintése
 A Power BI használatakor fontos figyelembe venni a különböző típusú felhasználókat, akik használhatják a jelentéseit. Ha olyan jelentéseket hoz létre és mutat be, amelyek könnyen kezelhetők és érthetők a billentyűzetet vagy képernyőolvasót használó felhasználók számára, azzal lehetővé teszi, hogy azokhoz a felhasználókhoz is ugyanaz az információ jusson el, akik esetleg látás- vagy mozgássérültek.
@@ -33,7 +32,7 @@ Az univerzális tervezés az olyan termékek megtervezése, amelyeket ésszerű 
 A Power BI a következő akadálymentességi szabványoknak felel meg.  Így biztosíthatja, hogy a lehető legtöbb felhasználó számára legyenek elérhetők a Power BI-felületek.
 
 ### <a name="wcag-21"></a>WCAG 2.1
-A Power BI betartja megfelel a Web-akadálymentesítési útmutatónak (WCAG 2.1). A WCAG-nek három elsődleges alapelve van:
+A webes tartalom akadálymentessége (WCAG, Web Content Accessibility) révén a webes tartalmak elérhetővé válnak a fogyatékkal élők számára is. A WCAG-nek három elsődleges alapelve van:
 
 1. **Érzékelhető** – az információkat és a felhasználói felület összetevőit a felhasználók számára észlelhető módon kell tudni bemutatni.
 2. **Működőképes** – a felhasználói felület összetevőinek és a navigációnak működőképesnek kell lennie.
