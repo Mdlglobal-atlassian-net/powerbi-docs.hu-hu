@@ -1,22 +1,22 @@
 ---
 title: A Power BI szolgáltatás alapfogalmai tervezők számára
-description: Munkaterületek, irányítópultok, jelentések, adathalmazok és munkafüzetek a Power BI szolgáltatásban.
+description: A Power BI szolgáltatás képességei, munkaterületek, irányítópultok, jelentések, munkafüzetek, adatkészletek és adatfolyamok.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/25/2019
+ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 80d878cc5a8ed0df294b99390fb87d8099bfccb5
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f86b9ae056770240485ff1984be4714faec9dc83
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431332"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128367"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>A Power BI szolgáltatás alapfogalmai tervezők számára
 
@@ -28,7 +28,7 @@ Ha még nincsenek saját jelentései, a cikk használatához próbálja meg tele
 
 Ha a Power BI szolgáltatást egy böngészőben nyitja meg, először egy Kezdőlap fogadja. Az alábbi összetevők jelennek meg:
 
-1. Navigációs panel (bal oldali navigáció)
+1. Navigációs panel
 2. Az Office 365 appindítója
 3. A Power BI kezdőlapjának gombja
 4. Ikongombok, beleértve a beállításokat, a súgót és a visszajelzést is
@@ -45,20 +45,36 @@ Ezeket a funkciókat később részletesen is ismertetjük, de először vegyük
 
 
 ## <a name="power-bi-concepts"></a>A Power BI alapfogalmai
-A Power BI 4 alapvető építőeleme a következő: **_irányítópultok_** , **_jelentések_** , **_munkafüzetek_** és **_adathalmazok_** . Ezek mind pedig **_munkaterületekbe_** vannak szervezve. A négy építőelem részletes ismertetéséhez fontos tisztában lenni a munkaterületek működésével, ezért először ezekkel foglalkozunk.
+A Power BI öt legfontosabb építőeleme a következő: *irányítópultok*, *jelentések*, *munkafüzetek*, *adatkészletek* és *adatfolyamok*. Ezek mindegyike *munkaterületekbe* van szervezve, és *kapacitásokon* van létrehozva.  Az öt építőelem részletes megismeréséhez fontos tisztában lenni a kapacitások és a munkaterületek működésével, ezért először ezekkel foglalkozunk.
+
+## <a name="capacities"></a>Kapacitások
+A kapacitás egy alapvető Power BI-fogalom, amely a Power BI-tartalmak üzemeltetéséhez és elérhetővé tételéhez használt erőforrások (tárolás, processzor és memória) egy adott készletét jelöli. A kapacitások lehetnek _megosztottak_ vagy _dedikáltak_. A megosztott kapacitás más Microsoft-ügyfelekkel is meg van osztva, míg a dedikált kapacitás teljes mértékben egyetlen ügyfél számára van fenntartva. A dedikált kapacitáshoz [előfizetés](service-premium-what-is.md) szükséges. Ezeket részletesen ismerteti a [Prémium szintű kapacitások kezelése](service-premium-capacity-manage.md) című cikk.
+
+Alapértelmezés szerint a munkaterületek megosztott kapacitásban vannak létrehozva. Megosztott kapacitással munkafolyamatai más ügyfelekkel megosztott számítási erőforrásokon futnak. Mivel a kapacitásnak meg kell osztania az erőforrásokat, korlátozásokat kell bevezetni a „tisztességes játék” érdekében, például hogy a maximális modellméretet (1 GB) és a maximális napi frissítési gyakoriságot (naponta nyolc alkalommal) lehessen használni.
 
 ## <a name="workspaces"></a>Munkaterületek
-A munkaterületek a Power BI irányítópultjainak, jelentéseinek, munkafüzeteinek és adathalmazainak tárolói. A munkaterületeknek két típusa van: *Saját munkaterület* és *munkaterületek*. Mi tehát egy *alkalmazás*? Egy Power BI-*alkalmazás* az irányítópultok és jelentések egy olyan gyűjteménye, amely arra szolgál, hogy alapvető metrikákat bocsátson a szervezet Power BI-t használó végfelhasználói rendelkezésére. Az alkalmazások interaktívak, de a végfelhasználók nem szerkeszthetik őket.
+A munkaterületek a kapacitásokban hozhatók létre. Ezek gyakorlatilag a Power BI irányítópultjainak, jelentéseinek, munkafüzeteinek és adathalmazainak tárolói.
+
+A munkaterületeknek két típusa van: *Saját munkaterület* és *munkaterületek*.
 
 - A *Saját munkaterület* az egyes Power BI-ügyfelek személyes munkaterülete, melyen saját tartalmaikat használhatják. A Saját munkaterületéhez csak Ön fér hozzá. A Saját munkaterületről meg is oszthatja az irányítópultokat és a jelentéseket. Ha viszont másokkal együttműködve szeretne irányítópultokkal és jelentésekkel dolgozni, vagy ha alkalmazást szeretne létrehozni, akkor a munkaterületet érdemes választania.      
--  A *munkaterületeken* együtt lehet működni és tartalmakat lehet megosztani a munkatársakkal. Emellett itt lehet a szervezet számára alkalmazásokat létrehozni, közzétenni és kezelni. Azon tartalmak átmeneti területeiként és tárolóiként tekinthet rájuk, melyek Power BI-alkalmazásokat alkotnak majd. A munkaterületekhez hozzáadhat munkatársakat, és közösen dolgozhatnak irányítópultokon, jelentéseken, munkafüzeteken és adathalmazokon. A munkaterület összes tagjának Power BI Pro-licenccel kell rendelkeznie. Az alkalmazások felhasználóinak (az alkalmazásokhoz hozzáféréssel rendelkező munkatársaknak) azonban nem feltétlenül van szükségük Pro-licencre. További információ az [új munkaterületekről](service-create-the-new-workspaces.md).  
+-  A *munkaterületeken* együtt lehet működni, és tartalmakat lehet megosztani a munkatársakkal. A munkaterületekhez hozzáadhat munkatársakat, és közösen dolgozhatnak irányítópultokon, jelentéseken, munkafüzeteken és adathalmazokon. Egy kivétellel a munkaterület összes tagjának Power BI Pro-licenccel kell rendelkeznie. További információ az [új munkaterületekről](service-create-the-new-workspaces.md). 
+
+    A munkaterületeken lehet a szervezet számára *alkalmazásokat* létrehozni, közzétenni és kezelni. A munkaterületekre olyan tartalmak átmeneti területeiként és tárolóiként tekinthet, melyek Power BI-alkalmazásokat alkotnak majd. Mi tehát egy *alkalmazás*? Az irányítópultok és jelentések egy olyan gyűjteménye, amely arra szolgál, hogy alapvető metrikákat bocsásson a szervezet Power BI-felhasználói rendelkezésére. Az alkalmazások interaktívak, de a végfelhasználók nem szerkeszthetik őket. Az alkalmazások felhasználóinak (az alkalmazásokhoz hozzáféréssel rendelkező munkatársaknak) azonban nem feltétlenül van szükségük Pro-licencre.  
 
 A megosztásról általában az [Irányítópultok megosztásának módjai](service-how-to-collaborate-distribute-dashboards-reports.md) című témakörben talál további információt.
 
-Most pedig lépjünk tovább a Power BI építőelemeire. Adatok nélkül nem lehetnek sem irányítópultjai, sem jelentései (illetve lehetnek üres irányítópultjai és jelentései, de amíg adatok nem kerülnek beléjük, nincs sok hasznuk), tehát ismerje meg először az **adatkészleteket**.
+Most pedig lépjünk tovább a Power BI öt építőelemére.
+
+## <a name="dataflows"></a>Adatfolyamok
+Az *adatfolyam* abban segít a szervezeteknek, hogy egyesíthessék a különböző forrásokból származó adataikat. Használatuk nem kötelező, de gyakran alkalmazzák az összetett vagy a nagyobb méretű projektekben. Olyan adatokat képviselnek, amelyeket előkészítettek az adatkészletekben való felhasználásra. Jelentéskészítés forrásaként azonban közvetlenül nem lehet felhasználni őket. Kihasználják a Microsoft adatösszekötők széles választékát, így lehetővé válik a helyszíni és a felhőalapú adatforrásokból származó adatok betöltése is.
+
+Az adatfolyamok csak munkaterületeken (de nem a *Saját munkaterületen*) hozhatók létre és kezelhetők, és entitásként vannak tárolva az Azure Data Lake Storage Gen2 Common Data Modeljében (CDM-jében). Általában rendszeres időközönként frissülnek, hogy mindig naprakész adatok legyenek tárolva. Nagyszerűen használhatók arra, hogy előkészítsük az adatokat az adatkészletek általi használatra (vagy újrahasználatra). További információt az [Önkiszolgáló adat-előkészítés a Power BI-ban](service-dataflows-overview.md) című cikkben talál.
+
+Adatok nélkül nem lehetnek sem irányítópultjai, sem jelentései (illetve lehetnek üres irányítópultjai és jelentései, de amíg adatok nem kerülnek beléjük, nincs sok hasznuk), tehát ismerje meg először az **adatkészleteket**.
 
 ## <a name="datasets"></a>Adathalmazok
-Az *adatkészlet* olyan adatok gyűjteménye, amelyeket *importál*, vagy amelyekhez *csatlakozik*. A Power BI sokféle adatkészlet importálását, csatlakoztatását és egy helyen történő megjelenítését teszi lehetővé.  
+Az *adatkészlet* olyan adatok gyűjteménye, amelyeket *importál*, vagy amelyekhez *csatlakozik*. A Power BI sokféle adatkészlet importálását, csatlakoztatását és egy helyen történő megjelenítését teszi lehetővé. Az adatkészletek adatforrásként az adatfolyamokat is használhatják.
 
 Az adathalmazok *munkaterületekhez* vannak társítva, és egy adott adathalmaz számos munkaterületnek része lehet. Amikor megnyit egy munkaterületet, az ahhoz társított adatkészletek az **Adatkészletek** lapon vannak felsorolva. Mindegyik itt megnevezett adatkészlet egyetlen adatforrásnak felel meg, például egy OneDrive-beli Excel-munkafüzetnek, egy helyszíni táblázatos SSAS-adatkészletnek vagy egy Salesforce-adatkészletnek. Sok különböző adatforrást támogatunk, a számuk egyre növekszik. Itt megtekintheti [a Power BI-jal használható adathalmaztípusok](service-get-data.md) listáját.
 
@@ -74,13 +90,17 @@ Az alábbi példában a „Sales and marketing” („Értékesítési és marke
 
   ![Adatkészlet-diagram](media/service-basic-concepts/drawing2.png)
 
-[Adathalmazhoz való csatlakozáshoz vagy annak importálásához](service-get-data.md) kattintson az **Adatok beolvasása** lehetőségre a bal oldali navigáció alján. Kövesse az utasításokat az adott forráshoz való csatlakozáshoz vagy annak importálásához, majd adja hozzá az adathalmazt az aktív munkaterülethez. Az új adathalmazokat sárga csillag jelöli. A Power BI-ban végzett munka nem változtatja meg az alapjául szolgáló adatkészletet.
+[Adathalmazhoz való csatlakozáshoz vagy annak importálásához](service-get-data.md) kattintson az **Adatok beolvasása** lehetőségre a navigációs panel alján. Kövesse az utasításokat az adott forráshoz való csatlakozáshoz vagy annak importálásához, majd adja hozzá az adathalmazt az aktív munkaterülethez. Az új adathalmazokat sárga csillag jelöli. A Power BI-ban végzett munka nem változtatja meg az alapjául szolgáló adatkészletet.
 
 A munkaterület bármelyik tagja által hozzáadott adathalmazok a *rendszergazda*, *tag* vagy *közreműködő* szerepkörrel rendelkező többi tag számára is láthatók.
 
-Az adathalmazok frissíthetők, átnevezhetők, elemezhetők és eltávolíthatók. Adathalmazok alapján létrehozhat jelentéseket újonnan, vagy [gyors elemzések](service-insights.md) futtatásával.  A **Kapcsolódó megtekintése** lehetőséget választva megtekintheti, hogy melyek azok a jelentések és irányítópultok, melyek már használnak adathalmazt. Ha elemezni szeretne egy adatkészletet, kattintson rá. Ilyenkor az adatkészletet a jelentésszerkesztőben nyitja meg, ahol mélyre áshat az adatokban, és vizualizációkat hozhat létre belőlük. Ez már továbbvezet a következő témához: a jelentésekhez.
+Az adathalmazok frissíthetők, átnevezhetők, elemezhetők és eltávolíthatók. Adathalmazok alapján létrehozhat jelentéseket újonnan, vagy [gyors elemzések](service-insights.md) futtatásával.  A **Kapcsolódó megtekintése** lehetőséget választva megtekintheti, hogy melyek azok a jelentések és irányítópultok, melyek már használnak adathalmazt. Ha elemezni szeretne egy adatkészletet, kattintson rá. Ilyenkor az adatkészletet a jelentésszerkesztőben nyitja meg, ahol részletesen feltárhatja az adatokat, és vizualizációkat hozhat létre belőlük.
+
+Most lépjünk tovább a következő témára: a jelentésekhez.
 
 ### <a name="dig-deeper"></a>További ismeretek
+* [Adatkészletek a Power BI szolgáltatásban](service-datasets-understand.md)
+* [Adatkészletek módjai a Power BI szolgáltatásban](service-dataset-modes-understand.md)
 * [Mi a Power BI Premium?](service-premium-what-is.md)
 * [Adatbeolvasás a Power BI szolgáltatásban](service-get-data.md)
 * [A Power BI-hoz használható mintaadathalmazok](sample-datasets.md)
@@ -159,13 +179,13 @@ A munkaterületekről és építőelemekről már szó esett. Foglaljuk össze �
 
 ![A Power BI szolgáltatás egy böngészőben](media/service-basic-concepts/completenewest.png)
 
-### <a name="1-navigation-pane-left-nav"></a>1. **Navigációs ablak** (bal oldali navigáció)
+### <a name="1-navigation-pane"></a>1. **Navigációs panel**
 A navigációs ablakban keresheti meg a munkaterületeket és a Power BI építőelemeit – az irányítópultokat, a jelentéseket, a munkafüzeteket és az adathalmazokat –, és mozoghat azok között.  
 
-  ![Navigációs panel](media/service-basic-concepts/power-bi-navigation.png)
+  ![Navigációs ablaktábla](media/service-basic-concepts/power-bi-navigation.png)
 
 * Az **Adatok beolvasása** elemre kattintva [adatkészleteket, jelentéseket és irányítópultokat vehet fel a Power BI-ba](service-get-data.md).
-* A navigációs sávot a következő ikonnal bonthatja ki vagy csukhatja össze: ![navigációs panel ikonja](media/service-basic-concepts/expand-icon.png).
+* A navigációs panelt a következő ikonnal bonthatja ki vagy csukhatja össze ![navigációs panel ikonja](media/service-basic-concepts/expand-icon.png).
 * A **Kedvencek** lehetőséget választva megnyithatja és kezelheti kedvenc tartalmait.
 * A **Legutóbbiak** lehetőséget választva megtekintheti és megnyithatja a legutóbb megtekintett tartalmakat
 * Az **Alkalmazások** lehetőséget választva megtekinthet, megnyithat vagy törölhet alkalmazásokat.
@@ -227,5 +247,4 @@ A képernyő ezen területén további lehetőségek találhatók a tartalom (eb
 - [Mi az a Power BI?](fundamentals/power-bi-overview.md)  
 - [Power BI-videók.](videos.md)  
 - [A jelentésszerkesztő – bemutató](service-the-report-editor-take-a-tour.md)
-
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](http://community.powerbi.com/)
+- További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
