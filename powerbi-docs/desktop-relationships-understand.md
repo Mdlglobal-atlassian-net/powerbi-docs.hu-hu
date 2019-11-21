@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c8ad6153ba1fcfb22987c5399bb82a9a8f4e664c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8562d0fd5acee2f18576f0a6b6f2e3d613354f92
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879796"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009644"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Modellbeli kapcsolatok a Power BI Desktopban
 
@@ -81,7 +81,7 @@ A **több-a-többhöz** kapcsolat azt jelenti, hogy mindkét oszlop tartalmazhat
 > [!TIP]
 > A Power BI Desktop modellnézetében egy kapcsolat számosságtípusát a kapcsolatvonal két oldalán található jelzők (1 vagy \*) alapján lehet megállapítani. Annak megtekintéséhez, hogy mely oszlopok vannak összekapcsolva, válassza ki a kapcsolatot jelző vonalat (vagy vigye fölé az egérmutatót) az oszlopok kiemeléséhez.
 
-### <a name="cross-filter-direction"></a>Keresztszűrés iránya
+### <a name="cross-filter-direction"></a>Szűrő irányának keresztezése
 
 Minden modellkapcsolatot a keresztszűrés irányával kell meghatározni. Ez a beállítás meghatározza az irány(oka)t, amelybe a szűrők propagálni fognak. Az elérhető keresztszűrési lehetőségek a számosságtípustól függnek.
 
@@ -169,7 +169,7 @@ A lekérdezés során az erős kapcsolatok lehetővé teszik, hogy _táblabőví
 > [!NOTE]
 > Az inaktív kapcsolatok is bővülnek akkor is, ha az adott kapcsolatot egy számítás sem használja. A kétirányú kapcsolatok nem befolyásolják a táblabővítést.
 
-Számos több-a-többhöz kapcsolat esetén a táblabővítés a „több” oldalról az „egy” oldalra történik BAL OLDALI KÜLSŐ ILLESZTÉS szemantika használatával. Ha a „több” oldaltól az „egy” oldal felé nem létezik megegyező érték, az „egy” oldali táblához egy üres virtuális sor lesz hozzáadva.
+Egy-a-többhöz kapcsolat esetén a táblabővítés a „több” oldalról az „egy” oldalra történik BAL OLDALI KÜLSŐ ILLESZTÉS szemantika használatával. Ha a „több” oldaltól az „egy” oldal felé nem létezik megegyező érték, az „egy” oldali táblához egy üres virtuális sor lesz hozzáadva.
 
 Egy-az-egyhez típusú szigeten belüli kapcsolatok esetében is történik táblabővítés, azonban a TELJES KÜLSŐ ILLESZTÉS szemantikával. Ez biztosítja, hogy szükség esetén mindkét oldalon hozzá legyenek adva üres virtuális sorok.
 

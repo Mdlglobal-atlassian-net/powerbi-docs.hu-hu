@@ -44,7 +44,7 @@
             - name: Egyéni vizualizációk közzététele az AppSource-ban
               href: office-store.md
             - name: Egyéni R-vizualizációk a Power BI-ban
-              href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/toc.json&bc=/powerbi-docs/developer/breadcrumb/toc.json
+              href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
             - name: Vizualizációk interakciói
               href: visuals/visuals-interactions.md
             - name: Kijelölések hozzáadása

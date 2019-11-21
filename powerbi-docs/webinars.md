@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 289e6490d2449bdcbca68e6acba85cf4466b315f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bd6270731f79ac5a1e270ac36699470a0e6df978
+ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880554"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060451"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -21,7 +21,13 @@ Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket 
 
 ## <a name="upcoming-webinars"></a>Közelgő webináriumok
 
-Még nincs tervezett webinárium. Látogasson vissza később közelgő eseményekért.
+**Elemzés virtuális Azure-eseményben: Gyorsabb elemzési eredmények az Azure Synapse Analytics szolgáltatással**
+<br>szerző: Gayle Sheppard és John Macintyre
+<br>[Regisztráció](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
+
+**Hogyan változtatja meg a Microsoft az üzletiintelligencia-adatok védelmét**
+<br>szerző: Anton Fritz és Adi Regev
+<br>[Regisztráljon a december 4-i megtekintéshez](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
 
 >[A Power BI-közösség közelgő webináriumai](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 

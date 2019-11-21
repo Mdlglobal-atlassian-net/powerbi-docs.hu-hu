@@ -1,5 +1,5 @@
 ---
-title: SAP-változók szerkesztése a Power BI szolgáltatásban (előzetes verzió)
+title: SAP-változók szerkesztése a Power BI szolgáltatásban
 description: Az Azure és a Power BI
 author: Sujata994
 ms.author: sunaraya
@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 11/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: d78124045767323cca657fa41d4415ca2e929f3d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cec8d598713000ec1d2b5a1fb72ebaa7d8932faf
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881913"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010898"
 ---
-# <a name="edit-sap-variables-in-the-power-bi-service-preview"></a>SAP-változók szerkesztése a Power BI szolgáltatásban (előzetes verzió)
+# <a name="edit-sap-variables-in-the-power-bi-service"></a>SAP-változók szerkesztése a Power BI szolgáltatásban
 
-Az SAP Business Warehouse vagy az SAP HANA DirectQueryvel való használatakor a jelentéskészítők mostantól szerkeszteni tudják az SAP-változókat a **Power BI szolgáltatásban** prémium szintű munkaterületek esetén.
+Az SAP Business Warehouse vagy az SAP HANA DirectQueryvel való használatakor a jelentéskészítők mostantól szerkeszteni tudják az SAP-változókat a **Power BI szolgáltatásban** prémium szintű és megosztott munkaterületek esetén. Lényeges, hogy ez a funkció NEM működik a Saját munkaterület Velem megosztva lapján lévő jelentéseknél. 
 
 ![Változók szerkesztése párbeszédpanel](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
 
-Ez a dokumentum a változók Power BI-beli szerkesztésének feltételeit, az előzetes verziójú funkció engedélyezését és a Power BI szolgáltatás változók szerkesztésére alkalmas részét ismerteti.
+Ez a dokumentum a változók Power BI-beli szerkesztésének feltételeit, a funkció engedélyezését és a Power BI szolgáltatás változók szerkesztésére alkalmas részét ismerteti.
 
 ## <a name="requirements-for-sap-edit-variables"></a>SAP-változók szerkesztésének előfeltételei
 
@@ -35,8 +35,6 @@ Az SAP-változók szerkesztésére alkalmas funkció használatának van néhán
 
 **DirectQuery-kapcsolatok szükségesek** – az SAP-adatforráshoz DirectQuery használatával kell kapcsolódni. Az Importálás módú kapcsolódás nem támogatott.
 
-**Power BI Premium-előfizetés szükséges** – az SAP-változók szerkesztésének funkciója jelenleg csak Power BI Premium-előfizetésekben működik.
-
 **SSO beállítása szükséges** – a funkció működéséhez konfigurálva kell lennie az egyszeri bejelentkezésnek (SSO). További információt az [egyszeri bejelentkezés (SSO) áttekintésében](service-gateway-sso-overview.md) talál.
 
 **Új átjáró-összetevők szükségesek** – Töltse le a legújabb átjárót és frissítse a meglévő átjárót. További információt a [szolgáltatás-átjáró](service-gateway-onprem.md) leírásában talál.
@@ -47,7 +45,7 @@ Az SAP-változók szerkesztésére alkalmas funkció használatának van néhán
 
 ## <a name="how-to-enable-the-feature"></a>A funkció engedélyezése
 
-Az **SAP-változók szerkesztése** funkció engedélyezéséhez csatlakozzon egy SAP HANA- vagy SAP BW-adatforráshoz a Power BI Desktopban. Ez után nyissa meg a **Fájl > Lehetőségek és beállítások > Beállítások** panelt, és a bal oldali panel aktuális fájl szakaszában válassza a **DirectQuery** lehetőséget. Ennek kiválasztásakor a jobb oldali panelen megjelennek a DirectQuery beállítási lehetőségei, és egy **A végfelhasználók módosíthatják az SAP-változókat a jelentésben (előzetes verzió)** jelölőnégyzetet, ahogyan az alábbi ábrán látható.
+Az **SAP-változók szerkesztése** funkció engedélyezéséhez csatlakozzon egy SAP HANA- vagy SAP BW-adatforráshoz a Power BI Desktopban. Ez után nyissa meg a **Fájl > Lehetőségek és beállítások > Beállítások** panelt, és a bal oldali panel aktuális fájl szakaszában válassza a **DirectQuery** lehetőséget. Ennek kiválasztásakor a jobb oldali panelen megjelennek a DirectQuery beállítási lehetőségei, és egy **A végfelhasználók módosíthatják az SAP-változókat a jelentésben** jelölőnégyzetet, ahogyan az alábbi ábrán látható.
 
 ![DirectQuery-beállítások](media/service-edit-sap-variables/sap-preview-setting-in-desktop.png)
 
@@ -77,10 +75,6 @@ Ezt a következő módon teheti meg:
     ![Alaphelyzetbe állítás](media/service-edit-sap-variables/reset-to-default.png)
 
 Ha SAP HANA-t vagy SAP BW-t használó közzétett jelentésen dolgozik a Power BI szolgáltatásban, és a **Változók szerkesztése** funkció engedélyezve van, a jelentés tulajdonosa megváltoztathatja ezeket az alapértelmezéseket. A jelentés tulajdonosa szerkesztési módban módosíthatja a változókat, majd a jelentés mentésével engedélyezi, hogy ezek a beállítások legyenek a jelentés *új alapértelmezett beállításai*. A jelentéshez az annak tulajdonosa által végrehajtott ilyen módosítás után hozzáférő többi felhasználó az új beállításokat fogja látni alapértelmezettként.
-
-## <a name="issues-and-considerations"></a>Problémák és megfontolandó szempontok
-
-Az SAP-változók szerkesztésének funkciója alkalmazásokban jelenleg nincs támogatva.
 
 ## <a name="next-steps"></a>Következő lépések
 

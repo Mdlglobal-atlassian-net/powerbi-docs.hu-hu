@@ -279,8 +279,6 @@
               href: desktop-slicer-filter-date-range.md
             - name: Átméretezhető szeletelő létrehozása
               href: power-bi-slicer-filter-responsive.md
-            - name: Egyéni válaszkártyák létrehozása Cortanához
-              href: service-cortana-answer-cards.md
             - name: Sorszintű biztonság
               href: desktop-rls.md
             - name: Elemleírások testreszabása
@@ -665,10 +663,6 @@
               href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
             - name: A Q&A használata élő kapcsolatokkal
               href: service-q-and-a-direct-query.md
-            - name: Bevezetés a Power BI-hoz használt Cortanába
-              href: service-cortana-intro.md
-            - name: A Power BI-hoz használt Cortana engedélyezése
-              href: service-cortana-enable.md
             - name: Gyors elemzések a Power BI-ban
               href: service-insights.md
             - name: Adatok optimalizálása gyors elemzésekhez
@@ -801,8 +795,6 @@
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Hiba: Nem található adat az Excel-munkafüzetben'
               href: service-admin-troubleshoot-excel-workbook-data.md
-            - name: Cortana hibaelhárítása
-              href: service-cortana-troubleshoot.md
             - name: A Xero tartalomcsomag hitelesítő adatainak frissítése frissítési hiba esetén
               href: service-refresh-xero-credentials.md
         - name: Egyéb feladatok

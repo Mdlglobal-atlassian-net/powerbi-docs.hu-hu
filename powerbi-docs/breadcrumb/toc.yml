@@ -12,6 +12,10 @@
         - name: Fejlesztő
           tocHref: /power-bi/developer/
           topicHref: /power-bi/developer/index
+          items:
+            - name: R-alapú Power BI-vizualizációk a Power BI-ban
+              tocHref: /power-bi/desktop-r-powered-custom-visuals/
+              topicHref: /power-bi/developer/index
         - name: Interaktív tanulás
           tocHref: /power-bi/guided-learning/
           topicHref: /power-bi/guided-learning/
