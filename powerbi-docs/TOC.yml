@@ -407,6 +407,8 @@
       items:
         - name: Adattípusok a Power BI Desktopban
           href: desktop-data-types.md
+        - name: Adatforrások a Power BI-hoz
+          href: power-bi-data-sources.md
         - name: A frissített menüszalag használata a Power BI Desktopban (előzetes verzió)
           href: desktop-ribbon.md
         - name: Képletszerkesztő billentyűparancsok a Power BI Desktophoz
