@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a9fb691882c8f34aeb8006eee3ec30d428db72e4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 101c735ab48c2596d2cd24ebef56bc4e0c4cad54
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878119"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009945"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Újdonságok a Power BI Desktop legújabb frissítésében 
 
 
-## <a name="october-2019-update-2745619621"></a>2019. októberi frissítés (2.74.5619.621)
+## <a name="november-2019-update-2755649341"></a>2019. novemberi frissítés (2.75.5649.341)
 
-Az októberi frissítések az ősz ragyogó színiben pompáznak, és bőséges szüretre emlékeztetnek. 
+Örömmel jelentjük be a nagy családként összegyűlő novemberi frissítéseket. 
 
 Már [letölthető a Power BI Desktop legújabb verziója](https://powerbi.microsoft.com/desktop), amelyet az összes támogatott nyelvet magában foglaló egyetlen .exe-fájlként kínálunk. Ha Windows 10 operációs rendszert használ, a **Power BI Desktopot** a Windows Áruházból is letöltheti. A havi verziók a **Power BI Desktop** telepítésének módjától függetlenül megegyeznek, bár a verziószámok különbözhetnek. További információkért tekintse meg [ezt a cikket](desktop-get-the-desktop.md). 
 
@@ -40,58 +40,53 @@ A **legújabb frissítésekről** szóló videót az elejétől is végignézhet
 
 Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**:
 
-### <a name="reporting"></a>Jelentéskészítés
-* Automatikus oldalfrissítése a DirectQueryhez [[videó]](https://youtu.be/A8A9baUQsXQ?t=12) [[cikk]](desktop-automatic-page-refresh.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#automaticPageRefresh) 
+### <a name="user-experience"></a>Felhasználó felület
+* Frissített menüszalag (előzetes verzió) [[videó]](https://youtu.be/kVli3Vm_kDo?t=13)  [[cikk]](desktop-ribbon.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#ribbon) 
 
+
+### <a name="reporting"></a>Jelentéskészítés
+* Felbontásfa vizualizáció (előzetes verzió) [[videó]](https://youtu.be/kVli3Vm_kDo?t=464)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#decompTree) 
 
 
 ### <a name="analytics"></a>Elemzés
-* Az új Q&A vizualizáció [[videó]](https://youtu.be/A8A9baUQsXQ?t=144)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#qnaVisual) 
-* Továbbfejlesztett felhasználói élmény a Q&A-hez [[videó]](https://youtu.be/A8A9baUQsXQ?t=144)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#improvedExperience) 
-    * Továbbfejlesztett legördülő vezérlő
-    * Vörös és kék aláhúzás
-    * Továbbfejlesztett vizualizációs eredmények
-* Továbbfejlesztések a természetes nyelv használatához a Q&A-ben [[videó]](https://youtu.be/A8A9baUQsXQ?t=322)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#nlImprovements) 
-    * Integráció az Office/Bing szinonimaszótárával
-    * A mértéktáblák támogatása és a táblanevek és a kétértelműség jobb kezelése
-* Q&A-eszköztár (előzetes verzió) [[videó]](https://youtu.be/A8A9baUQsXQ?t=376)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#qnaTooling) 
-    * Kérdések áttekintése
-    * A Q&A tanítása
-    * Az összes elvégzett módosítás áttekintése
-* Az SSAS és az Azure AS, többek között az RLS támogatása [[videó]](https://youtu.be/A8A9baUQsXQ?t=480)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#supportAS) 
+* Gombok feltételes formázása [[videó]](https://youtu.be/kVli3Vm_kDo?t=834)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#button) 
 
 
 ### <a name="visuals"></a>Vizualizációk
-* A PowerApps-vizualizációk alapértelmezés szerint belefoglalva [[videó]](https://youtu.be/A8A9baUQsXQ?t=505)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#powerApps) 
-* Új xViz-vizualizációk [[videó]](https://youtu.be/A8A9baUQsXQ?t=538)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#xViz) 
+* ArcGIS Maps for Power BI-frissítés [[videó]](https://youtu.be/kVli3Vm_kDo?t=1024)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#arcGIS) 
+* Új xViz-vizualizációk [[videó]](https://youtu.be/kVli3Vm_kDo?t=1071)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#xViz) 
+* ZoomCharts lefúrási vízesés-vizualizáció [[videó]](https://youtu.be/kVli3Vm_kDo?t=1405)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#zoomCharts) 
+* A ProfitBase pénzügyi jelentéskészítési mátrixa [[videó]](https://youtu.be/kVli3Vm_kDo?t=1575)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#financialReporting) 
+* Terjesztés [[videó]](https://youtu.be/kVli3Vm_kDo?t=1661)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#distribution) 
+* Fa [[videó]](https://youtu.be/kVli3Vm_kDo?t=1733)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#tree) 
+
+
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
-* Általánosan elérhető a Sagra Emigo-összekötő [[videó]](https://youtu.be/A8A9baUQsXQ?t=778)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#sagraEmigo) 
-* Frissített Azure cost Management-összekötő [[videó]](https://youtu.be/A8A9baUQsXQ?t=805)  [[cikk]](desktop-connect-azure-cost-management.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#azureCostManagement) 
-* Új Workplace Analytics-összekötő [[videó]](https://youtu.be/A8A9baUQsXQ?t=830)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#workplaceAnalytics) 
+* LinkedIn Sales Navigator-összekötő [[videó]](https://youtu.be/kVli3Vm_kDo?t=1808)  [[cikk]](desktop-connect-linkedin-sales-navigator.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#linkedInSalesNavigator) 
+* SAP-változók szerkesztőfelülete (általános elérhetőség)  [[videó]](https://youtu.be/kVli3Vm_kDo?t=1839)  [[cikk]](service-edit-sap-variables.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#sapVariables) 
+* Product Insights-összekötő [[videó]](https://youtu.be/A8A9baUQsXQ?t=830)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#productInsights) 
 
 
-### <a name="data-preparation"></a>Adatok előkészítése
-* Lekérdezési diagnosztika [[videó]](https://youtu.be/A8A9baUQsXQ?t=907)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#queryDiagnostics) 
-* Az adatprofil-készítés továbbfejlesztései [[videó]](https://youtu.be/A8A9baUQsXQ?t=953)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#dataProfiling) 
+### <a name="data-transformation"></a>Adatátalakítás
+* AI-függvények a Power Queryben (előzetes verzió) [[videó]](https://youtu.be/kVli3Vm_kDo?t=1976)  [[cikk]](desktop-ai-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#aiFunctions) 
+* Web by Example-összekötő - hivatkozások kinyerésének támogatása [[videó]](https://youtu.be/kVli3Vm_kDo?t=1861)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#webConnector) 
 
 
 ### <a name="template-apps"></a>Sablonalkalmazások
-* Project Web App   [[videó]](https://youtu.be/A8A9baUQsXQ?t=850)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#projectWebApp) 
+* LinkedIn Sales Navigator az értékesítési műveletekhez  [[videó]](https://youtu.be/kVli3Vm_kDo?t=2039)  [[cikk]](desktop-connect-linkedin-sales-navigator.md#using-the-linkedin-sales-navigator-template-app)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#linkedInTemplateApp) 
 
-### <a name="other"></a>Egyéb
-* Új fájlformátum: .PBIDS  [[videó]](https://youtu.be/A8A9baUQsXQ?t=2455) [[cikk]](desktop-data-sources.md#pbids-file-examples) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#pbids) 
-* A modellezési műveletekkel kapcsolatos fejlesztések [[videó]](https://youtu.be/A8A9baUQsXQ?t=2583)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#performance) 
+
 
 > [!NOTE]
 > Megtekintheti továbbá [a Power BI Desktophoz elérhető adatforrások teljes listáját](desktop-data-sources.md). A lista folyamatosan bővül, ezért érdemes gyakran visszatérnie.
 
-További információkra kíváncsi ezekről a frissítésekről? Olvassa el [blogbejegyzésünket](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/), amely részletes információkkal szolgál az új funkciókról (ez ugyanaz a blogbejegyzés, amelyre a fenti lista hivatkozik).
+További információkra kíváncsi ezekről a frissítésekről? Olvassa el [blogbejegyzésünket](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/), amely részletes információkkal szolgál az új funkciókról (ez ugyanaz a blogbejegyzés, amelyre a fenti lista hivatkozik).
 
 
 Ezeket a frissítéseket az alábbi videó mutatja be. A videó a blogbejegyzésben is megtekinthető.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/A8A9baUQsXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/kVli3Vm_kDo]
 
 > [!NOTE]
 > Érdekelhetik továbbá [a Power BI szolgáltatás újdonságai](service-whats-new.md), valamint [a Power BI mobilalkalmazásainak újdonságai](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).

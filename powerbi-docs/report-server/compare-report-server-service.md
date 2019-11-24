@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 ms.date: 09/13/2019
-ms.openlocfilehash: 4bc43f6b5a56ef764c61919bc05cb72c25e0e4ca
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a36499863346244bb3830e7ba4733045c4ddf8ba
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874260"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128295"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása
 
@@ -26,7 +26,7 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 |---------|---------|---------|---------|
 | Telepítés | Helyszíni vagy üzemeltetett felhőbeli | Felhőbeli | A Power BI jelentéskészítő kiszolgáló akkor helyezhető üzembe Azure-beli virtuális gépeken (üzemeltetett felhőbeli) ha licencelése a Power BI Premiummal történt |
 | Forrásadatok | Felhőbeli és/vagy helyszíni | Felhőbeli és/vagy helyszíni |  |
-| Licenc | Power BI Premium vagy SQL Server EE SA-val | Power BI Pro és/vagy Power BI Premium | |  
+| Licenc | Power BI Premium vagy SQL Server EE frissítési garanciával (SA) | Power BI Pro és/vagy Power BI Premium | |  
 | Életciklus | Modern életciklus-szabályzat | Teljes körűen felügyelt szolgáltatás |  |
 | Kiadási ciklus | Évente háromszor (január, május, szeptember) | Havonta | A legújabb funkciók és javítások először a Power BI szolgáltatáshoz jelennek meg. Az alapfunkciók többsége a következő néhány kiadásban jelenik meg a Power BI jelentéskészítő kiszolgálóhoz; bizonyos funkciók csak a Power BI szolgáltatáshoz készülnek. |
 | Power BI-jelentések létrehozása a Power BI Desktopban | Igen | Igen |  |
@@ -51,7 +51,7 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 | Fejlett Office 365-együttműködés | Nem | Igen | [Együttműködés egy munkaterületen](../service-collaborate-power-bi-workspace.md) az Office 365-tel |
 | R vizualizációk | Nem | Igen | A Power BI Desktopban [R-vizualizációkat](../desktop-r-visuals.md) hozhat létre, és közzéteheti őket a Power BI szolgáltatásban. Az R-vizualizációt tartalmazó Power BI-jelentéseket nem lehet menteni a Power BI jelentéskészítő kiszolgálón.  |
 | Előzetes verziójú funkciók | Nem | Igen | [Feliratkozás a Power BI szolgáltatás előzetes verziójú](../consumer/end-user-preview-features.md) funkcióira |
-| Egyéni vizualizációk | Igen | Igen | [Egyéni vizualizációk a Power BI-ban](../power-bi-custom-visuals.md) |
+| Egyéni vizualizációk | Igen | Igen | [Egyéni vizualizációk a Power BI-ban](../developer/power-bi-custom-visuals.md) |
 | Összetett modellek | Nem | Igen |
 | Power BI Desktop | A Jelentéskészítő kiszolgálóhoz optimalizált verzió a Jelentéskészítő kiszolgálóval letölthető | A Power BI szolgáltatáshoz optimalizált verzió elérhető a Windows Áruházban | [Power BI Desktop a jelentéskészítő kiszolgálóhoz](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop a Power BI szolgáltatáshoz](https://aka.ms/pbidesktopstore) |
 

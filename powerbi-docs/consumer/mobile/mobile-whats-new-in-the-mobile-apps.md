@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/08/2019
+ms.date: 11/12/2019
 ms.author: painbar
-ms.openlocfilehash: 1741646057137fbfb28a2c0ec42a7fd6428dc86e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c188f2b00447ff9f97059e81e7945f67e3170c6d
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876767"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010018"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -23,6 +23,10 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
 
 ## <a name="october-2019"></a>2019. október
+
+### <a name="android-support-for-remote-configuration-of-report-server-access-settings"></a>Android-támogatás Jelentéskészítő kiszolgáló hozzáférési beállításainak távoli konfigurálásához
+
+Android-támogatást adtunk a Power BI-mobilalkalmazások Jelentéskészítő kiszolgálóhoz való hozzáférési beállításainak távoli konfigurálásához. Az informatikai rendszergazdák mostantól iOS- és Android-eszközökön is távolról konfigurálhatják ezeket a beállításokat a vállalati MDM-eszköz használatával. További részleteket [A Power BI-mobilalkalmazás jelentéskészítő kiszolgálóhoz való távoli hozzáférésének konfigurálása](https://docs.microsoft.com/power-bi/report-server/configure-powerbi-mobile-apps-remote) című témakörben talál.
 
 ### <a name="cross-report-drillthrough"></a>Több jelentésre kiterjedő részletezés
 
