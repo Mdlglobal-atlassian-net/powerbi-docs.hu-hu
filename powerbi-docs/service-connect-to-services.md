@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 41881c1de66293689439364f3d1049f3d6b40607
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 91740d16a91aa8dc1936e8ae1a2812653c45e6a1
+ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873023"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925826"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Kapcsolódás a Power BI segítségével a használt szolgáltatásokhoz
 A Power BI-jal könnyedén kapcsolódhat a vállalkozása működtetéséhez használt olyan szolgáltatásokhoz, mint például a Salesforce, a Microsoft Dynamics CRM és a Google Analytics. Power BI az indulásakor kapcsolódik a szolgáltatáshoz az Ön hitelesítő adataival. Ezt követően létrehoz egy irányítópulttal rendelkező *Power BI-munkaterületet* és néhány jelentést, amelyek automatikusan megjelenítik adatait, és vizuális elemzést biztosítanak az üzletmenetről.
 
 >[!IMPORTANT]
->2019. szeptember 25-én több tartalomcsomagot kivonunk. A már telepített tartalomcsomagok továbbra is működni fognak, de már nem fog tudni újabbakat telepíteni. A szolgáltatás-tartalomcsomagokat a [sablonalkalmazások](https://docs.microsoft.com/power-bi/service-template-apps-overview) váltják fel.
+>A szolgáltatás-tartalomcsomagok helyét [sablonalkalmazások](https://docs.microsoft.com/power-bi/service-template-apps-overview) veszik át. 2019. szeptember 25-én már számos tartalomcsomag ki lett vonva. A telepített elavult tartalomcsomagok megmaradnak a fiókban, de dokumentáció vagy támogatás nincs hozzájuk, és nem is telepíthetők újra.
 
 Ha meg szeretné tekinteni azon [szolgáltatásokat, amelyekhez kapcsolódni tud](https://app.powerbi.com/getdata/services), jelentkezzen be a Power BI-ba. 
 

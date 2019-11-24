@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 2fd0a3d878641264e84a14579901a9685b0f6e8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 52beebb839907a6b4141cec089184fcb693fe817
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875109"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010684"
 ---
 # <a name="power-bi-performance-best-practices"></a>Ajánlott eljárások a Power BI teljesítményének javításához
 
@@ -152,8 +152,6 @@ A helyszíni adatátjárók a Power BI szolgáltatás helyszíni adatokhoz való
 A hálózati késés hatással van a jelentések teljesítményére, hiszen megnöveli azt az időt, amely a kérések Power BI szolgáltatásba való eljuttatásához, illetve a válaszok kézbesítéséhez szükséges. A Power BI-bérlők egy adott régióhoz vannak társítva. Ha szeretné megtekinteni a bérlő „saját” régióját, nyissa meg a powerbi.com webhelyet, és válassza a **?** ikont a jobb felső sarokban, majd **A Power BI névjegye** lehetőséget. Amikor egy bérlő felhasználói hozzáférnek a Power BI szolgáltatáshoz, a kéréseiket a rendszer mindig ehhez a régióhoz irányítja. Miután a kérések megérkeztek a Power BI szolgáltatásba, a szolgáltatás további kéréseket küldhet, például az alapul szolgáló adatforrásnak vagy az átjárónak, melyekre szintén érvényes a hálózati késés.
 
 Bizonyos eszközök, például az [Azure Speed Test](https://azurespeedtest.azurewebsites.net/), segíthetnek megállapítani, hogy mekkora a hálózati késés az ügyfél és az Azure-régió között. A hálózati késés hatásának minimalizálásához általánosságban igyekezzen minél közelebb tartani egymáshoz az adatforrásokat, az átjárókat és a Power BI-fürtöt. Ha a hálózati késés problémát okoz, megpróbálhatja az átjárókat és az adatforrásokat közelebb helyezni a Power BI-fürthöz, például úgy, hogy áthelyezi őket virtuális gépekre.
-
-A hálózati késés további javításához fontolja meg az [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/) szolgáltatás használatát, mellyel gyorsabb és megbízhatóbb hálózati kapcsolatokat hozhat létre az ügyfelei és az Azure-adatközpontok között.
 
 ## <a name="next-steps"></a>Következő lépések
 

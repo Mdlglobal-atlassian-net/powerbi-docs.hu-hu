@@ -3,18 +3,18 @@ title: Jelentésparaméterek a Power BI Jelentéskészítőben
 description: Ez a témakör sok más mellett a Power BI Lapszámozott jelentéskészítő jelentésparamétereinek gyakori használati módjait és a beállítható tulajdonságokat ismerteti.
 ms.service: powerbi
 ms.subservice: report-builder
-ms.custom: ''
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
+ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: 21fe08c2cba004a6aff77eae12303d0181ab56ec
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: d31036676a5960f7f6eb0f346c2c02ab979ff9bc
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840533"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128419"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Jelentésparaméterek a Power BI Jelentéskészítőben
 
@@ -40,7 +40,7 @@ Ez a témakör sok más mellett a Power BI Lapszámozott jelentéskészítő jel
 
 Paraméterekkel rendelkező jelentés megtekintésekor a jelentésmegjelenítő eszközsávján minden paraméter megjelenik, így értékük interaktív módon állítható be. Az alábbi ábrán egy jelentés paraméterterülete látható a @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota és @SalesDate paraméterekkel.  
 
-![Jelentés megtekintése paraméterekkel](media/report-builder-parameters/report-builder-parameters-power-bi-service.png "Jelentés megtekintése paraméterekkel")
+![Paraméterekkel rendelkező jelentés megtekintése](media/report-builder-parameters/report-builder-parameters-power-bi-service.png "Paraméterekkel rendelkező jelentés megtekintése")
   
 1. **Paraméterek panel** – A jelentésmegjelenítő eszköztáron minden paraméterhez megjelenik egy beviteli mező az alapértelmezett értékkel. A paraméterek elrendezését a Paraméterek panelen szabhatja testre.  
   
@@ -65,7 +65,7 @@ Jelentésparamétereket több módon is létrehozhat.
   
  Hozzáadhat változókat tartalmazó adathalmaz-lekérdezést, vagy az adathalmazbeli tárolt eljárást, amely bemeneti paramétereket tartalmaz. Minden változóhoz vagy bemeneti paraméterhez adathalmaz-paraméter lesz létrehozva, és minden adathalmaz-paraméterhez jelentésparaméter lesz létrehozva.  
   
-![Jelentéskészítő > Paraméterek > Adathalmaz tulajdonságai](media/report-builder-parameters/report-builder-parameter-dataset.png "Jelentéskészítő > Paraméterek > Adathalmaz tulajdonságai")
+![Jelentéskészítő paraméter-adathalmaz tulajdonságai](media/report-builder-parameters/report-builder-parameter-dataset.png "Jelentéskészítő paraméter-adathalmaz tulajdonságai")
 
   
  A Jelentéskészítő fenti képernyőképén a következők láthatók:  
