@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: 32a93a881a801ec5dd335f167e69a5b76f53d694
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 668665bcdbbb4b06a6fd1a2ee6d4af2437be77b3
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73764721"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74264859"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -34,8 +34,6 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 **alert, alerts (riasztás, riasztások)** Funkció, amely beállított határértékek alapján értesíti a felhasználókat az adatok változásairól. A riasztások a jelentések vizualizációiról rögzített csempéken állíthatók be. A felhasználók a szolgáltatásban és a mobilalkalmazásban kapják meg a riasztásokat.
 
 **annotate (jegyzetkészítés)** A csempék, jelentések és vizualizációk pillanatképeinek sorokat, szövegeket vagy bélyegeket tartalmazó jegyzetekkel való ellátása az iOS- és Android-eszközökre készült Power BI-mobilalkalmazásokban.
-
-**answer card, answer page (válaszkártya, válaszlap)** Lásd: Cortana-válaszkártya.
 
 **app, apps (alkalmazás, alkalmazások)** 
 
@@ -77,10 +75,6 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 **content pack (tartalomcsomag)** Előrecsomagolt adathalmazok, jelentések és irányítópultok gyűjteménye. Már **alkalmazások**. Ismerkedjen meg az [új munkaterületi felhasználói felülettel](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **content view (tartalom nézet)**
-
-**Cortana answer card (Cortana-válaszkártya)** A Power BI-jelentések egy dedikált jelentésoldala, amellyel egyéni Cortana-válaszok hozhatók létre.
-
-**Cortana answer page (Cortana-válaszlap)** A felhasználó számára megjelenített Cortana-oldal.
 
 **cross filter, cross highlight (keresztszűrés, keresztkijelölés)**
 

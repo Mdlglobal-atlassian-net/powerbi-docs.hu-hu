@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ee272f32dbce4630f8b834187e05fda5739df7be
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 10540ed49064b9e28543ce46b43d8bb2d9ca6cf7
+ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876951"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74178229"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tanács a Power BI szolgáltatással kapcsolatos segítségkéréshez
 Előfordult már, hogy bosszankodott a Power BI használata közben, vagy nehezen boldogult, mert nem kapott választ a Power BI-jal kapcsolatos kérdéseire, amikor szüksége volt rájuk – éppen a kellő időben? 
@@ -44,7 +44,7 @@ Tanulási stílusának jobban megfelelnek a videók? A Power BI két csoportot i
 ## <a name="6-attend-training"></a>6 Képzéseken való részvétel
 A rendelkezésére álló képzési lehetőségek szinte végtelenek, a laborbeli személyes oktatástól a rövid videókig.
 
-* [Interaktív tanulás](guided-learning/index.md) a Power BI weboldalán.
+* [Interaktív tanulás](guided-learning/index.yml) a Power BI weboldalán.
 * [Ingyenes Power BI-webináriumok](webinars.md) élőben és igény szerint a Power BI weboldalán.
 
 További online lehetőségeket is találhat, például:

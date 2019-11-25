@@ -1,19 +1,19 @@
 ---
 title: Adatkészlet lekérése és sorok hozzáadása
 description: Útmutatás az adatok leküldéséhez – Adatkészlet lekérése, és sorok hozzáadása egy Power BI-táblához
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 1edf73aa20301e86146de0d9ef924ad45c6f1f33
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a53bca63c1b0c193295a8b5c877b60ad33f5790f
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875719"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265532"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>4\. lépés: Sorok hozzáadása egy Power BI-táblához adathalmaz lekérésével
 

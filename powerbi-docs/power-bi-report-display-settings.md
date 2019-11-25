@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 183ce793342253775f641406620447e7b0f44020
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cc2ddd0b6fbd0b621c07056ed4b525f66d81319c
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875121"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265867"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Oldal megjelenítési beállításai Power BI-jelentésben
 Tudjuk, milyen fontos, hogy jelentéseinek elrendezése az utolsó képpontig tökéletes legyen. Ez azonban olykor kihívást jelenthet, ugyanis Ön és a munkatársai a jelentéseket esetleg különböző méretű és méretarányú képernyőkön tekintik meg. 
@@ -66,7 +66,6 @@ Az **Oldalméret** beállításai csak a jelentések tulajdonosai számára érh
 
 * 4:3-as arány
 * 16:9-es arány (alapértelmezett)
-* Cortana
 * Letter
 * Egyéni (magasság és szélesség pixelben)
 

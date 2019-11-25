@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/07/2019
 ms.author: painbar
-ms.openlocfilehash: 7ed763d6c87e4b93ebecc474c9059ba83245368a
-ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
+ms.openlocfilehash: a517ee4edce6e18eadcbe2b1b6765684f8121b21
+ms.sourcegitcommit: 768e1e4b19fe8c7627010127c2420d63021cb542
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73925783"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199424"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>A Power BI alkalmazás távoli konfigurálása mobileszköz-kezelési (MDM-) eszközzel
 
@@ -56,6 +56,6 @@ Az Intune portál alkalmazáskonfigurációs szabályzataival a rendszergazdák 
 
 ## <a name="next-steps"></a>Következő lépések
 
-* A Power BI mobilalkalmazás az [App Store-ból]("https://apps.apple.com/app/microsoft-power-bi/id929738808) és a [Google Play áruházból](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409) szerezhető be
+* A Power BI mobilalkalmazás az [App Store-ból](https://apps.apple.com/app/microsoft-power-bi/id929738808) és a [Google Play áruházból](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409) szerezhető be
 * Kövessen minket [@MSPowerBI a Twitteren](https://twitter.com/MSPowerBI)
 * Csatlakozzon a beszélgetéshez a [Power BI-közösségben](https://community.powerbi.com/)

@@ -2,19 +2,19 @@
 title: Power BI Embedded-kapacitás szüneteltetése és elindítása az Azure Portalon| Microsoft Docs
 description: Ez a cikk bemutatja, hogyan szüneteltethet és indíthat el egy Power BI Embedded-kapacitást a Microsoft Azure-ban.
 services: power-bi-embedded
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 editor: ''
 tags: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 09/28/2017
-ms.openlocfilehash: c851e76a57618ad1b683e1fa56251423b8d6eeb3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 07c9c12366b100936e03fe07358ee180e026dfc5
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73865005"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265675"
 ---
 # <a name="pause-and-start-your-power-bi-embedded-capacity-in-the-azure-portal"></a>Power BI Embedded-kapacitás szüneteltetése és elindítása az Azure Portalon
 

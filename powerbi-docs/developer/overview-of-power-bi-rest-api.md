@@ -1,19 +1,19 @@
 ---
 title: Mire használhatom a Power BI API-t?
 description: Mire használhatom a Power BI API-t?
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: 8a231a426823d40be34e900a32d06e5d5f77108b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bbca4e5bf52ee0d4674cfcdc28edd53e90033a98
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880490"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265232"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Mire használhatják a fejlesztők a Power BI API-t?
 

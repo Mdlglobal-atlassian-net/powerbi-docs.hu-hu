@@ -1,19 +1,19 @@
 ---
 title: Beágyazott alkalmazás hibaelhárítása
 description: Ez a cikk azokat a gyakori problémákat ismerteti, amelyek Power BI-tartalmak beágyazása során merülhetnek fel.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 4038ffdb9a3218c0b2f04dd524463235fa91b6b7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7bb380a5b54ad3d844edd1596332316ae3b7b209
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73864110"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74264109"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Beágyazott alkalmazás hibaelhárítása
 
