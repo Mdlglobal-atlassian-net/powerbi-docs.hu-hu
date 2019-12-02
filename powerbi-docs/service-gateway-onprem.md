@@ -9,18 +9,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
-ms.openlocfilehash: b01a3ef5832541822aa9311df14289285f601b2b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f149b816f7489b6a26e86af6360062d86083a7e5
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872439"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164289"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Mi az a helyszíni adatátjáró?
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-A helyszíni adatátjáró hídként biztosítja a helyszíni (nem felhőbeli) adatok és számos Microsoft-felhőszolgáltatás közötti gyors és biztonságos adatátvitelt. Ezen szolgáltatások közé tartozik a Power BI, a PowerApps, a Microsoft Flow, az Azure Analysis Services, és az Azure Logic Apps. Az átjáró használata lehetővé teszi, hogy a cégek az adatbázisaikat és más adatforrásaikat a helyszíni hálózaton belül tartsák, de ezzel együtt biztonságosan használhassák ezeket a felhőszolgáltatásokban is.
+A helyszíni adatátjáró hídként biztosítja a helyszíni (nem felhőbeli) adatok és számos Microsoft-felhőszolgáltatás közötti gyors és biztonságos adatátvitelt. Ezen felhőszolgáltatások közé tartozik a Power BI, a PowerApps, a Power Automate, az Azure Analysis Services és az Azure Logic Apps. Az átjáró használata lehetővé teszi, hogy a cégek az adatbázisaikat és más adatforrásaikat a helyszíni hálózaton belül tartsák, de ezzel együtt biztonságosan használhassák ezeket a felhőszolgáltatásokban is.
 
 ## <a name="how-the-gateway-works"></a>Az átjáró működése
 

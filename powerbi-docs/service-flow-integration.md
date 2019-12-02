@@ -1,5 +1,5 @@
 ---
-title: A Power BI és a Microsoft Flow integrálása
+title: A Power BI integrációja a Power Automate-tel
 description: Tanulja meg, hogyan hozhat létre Power BI- adatriasztások által indított folyamatokat.
 author: mgblythe
 ms.reviewer: ''
@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: a5b5a34e7cd61ac9d197faa0ef4410cd9558f597
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c8d768e1d02846eca10c6100aa8ec30dbb7f704b
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881847"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164317"
 ---
-# <a name="microsoft-flow-and-power-bi"></a>A Microsoft Flow és a Power BI
+# <a name="power-automate-and-power-bi"></a>A Power Automate és a Power BI
 
-A [Microsoft Flow](https://flow.microsoft.com/documentation/getting-started) SaaS-szolgáltatással munkafolyamatokat automatizálhat az üzleti felhasználók által használt, egyre növekvő számú alkalmazás és SaaS-szolgáltatás között. A Flow segítségével kedvenc alkalmazásait és szolgáltatásait (többek között a Power BI-t) integrálva automatizálhatja az értesítések küldését, a fájlok szinkronizálását, az adatgyűjtést és még sok más feladatot. A munkafolyamatok automatizálásával egyszerűbben végezhetők el az ismétlődő feladatok.
+A [Power Automate](https://flow.microsoft.com/documentation/getting-started) egy olyan SaaS-ajánlat, amely a munkafolyamatok automatizálásához használható egyre több olyan alkalmazásban és SaaS-szolgáltatásban, amelyre a vállalati felhasználók támaszkodnak. A Flow segítségével kedvenc alkalmazásait és szolgáltatásait (többek között a Power BI-t) integrálva automatizálhatja az értesítések küldését, a fájlok szinkronizálását, az adatgyűjtést és még sok más feladatot. A munkafolyamatok automatizálásával egyszerűbben végezhetők el az ismétlődő feladatok.
 
 [Kezdjen el megismerkedni a Flow-val most.](https://flow.microsoft.com/documentation/getting-started)
 
@@ -30,12 +30,12 @@ Nézze meg, hogyan hoz létre Sirui egy olyan folyamatot, amely részletes e-mai
 ## <a name="create-a-flow-that-is-triggered-by-a-power-bi-data-alert"></a>Power BI-adatriasztás által indított folyamat létrehozása
 
 ### <a name="prerequisites"></a>Előfeltételek
-Ez az oktatóanyag bemutatja, hogyan hozzon létre két különböző folyamatot; az egyiket sablonból, a másikat teljesen az alapoktól. A feladat elvégzéséhez [hozzon létre egy adatriasztást a Power BI-ban](service-set-data-alerts.md), hozzon létre egy ingyenes Slack-fiókot, majd [iratkozzon fel a Microsoft Flow](https://flow.microsoft.com/#home-signup) szolgáltatásra (ingyenes).
+Ez az oktatóanyag bemutatja, hogyan hozzon létre két különböző folyamatot; az egyiket sablonból, a másikat teljesen az alapoktól. Ennek követéséhez [hozzon létre egy adatriasztást a Power BI-ban](service-set-data-alerts.md), hozzon létre egy ingyenes Slack-fiókot, majd [regisztráljon a Power Automate-re](https://flow.microsoft.com/#home-signup) (ingyenes!).
 
 ## <a name="create-a-flow-that-uses-power-bi---from-a-template"></a>Power BI-t használó folyamat létrehozása sablonból
 Ennek a feladatnak a végrehajtása során sablon alapján hozunk létre egy egyszerű folyamatot, amelyet egy Power BI-adatriasztás (értesítés) indít majd el.
 
-1. Jelentkezzen be a Microsoft Flow-ba (flow.microsoft.com).
+1. Jelentkezzen be a Power Automate-be (flow.microsoft.com).
 2. Kattintson a **Saját folyamatok** lehetőségre.
    
    ![Flow menüsáv](media/service-flow-integration/power-bi-my-flows.png)
@@ -80,7 +80,7 @@ Ez a sablon egy triggerből (Power BI-adatriasztás újabb ír olimpiai érem me
 ## <a name="create-a-flow-that-uses-power-bi---from-scratch-blank"></a>Power BI-t használó folyamat létrehozása sablon nélkül
 Ennek a feladatnak a végrehajtása során sablon nélkül hozunk létre egy egyszerű folyamatot, amelyet egy Power BI-adatriasztás (értesítés) indít majd el.
 
-1. Jelentkezzen be a Microsoft Flow-ba.
+1. Jelentkezzen be a Power Automate-be.
 2. Kattintson a **Saját folyamatok** > **Üres folyamat létrehozása** lehetőségre.
    
    ![Flow felső menüsáv](media/service-flow-integration/power-bi-my-flows.png)
@@ -107,7 +107,7 @@ Ennek a feladatnak a végrehajtása során sablon nélkül hozunk létre egy egy
     ![A folyamat egy Outlook-értesítést aktivál](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Következő lépések
-* [Microsoft Flow ‒ első lépések](https://flow.microsoft.com/documentation/getting-started/)
+* [Első lépések a Power Automate-ben](https://flow.microsoft.com/documentation/getting-started/)
 * [Adatriasztások beállítása a Power BI szolgáltatásban](service-set-data-alerts.md)
 * [Adatriasztások beállítása az iPhone-on](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Adatriasztások beállítása a Windows 10-hez készült Power BI-mobilalkalmazásban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

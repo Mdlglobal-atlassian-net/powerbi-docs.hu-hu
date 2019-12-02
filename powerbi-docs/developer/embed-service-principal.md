@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 9bbba47456d9c5bed5c8cd77858b6dbaeefce5a1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3791e9cdfd44c62e6f9e9b79f5345d6d2476b0db
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877650"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74264189"
 ---
 # <a name="service-principal-with-power-bi"></a>Szolgáltatásnév a Power BI-jal
 
@@ -93,7 +93,7 @@ A hagyományos fő fiók használatától eltérően a szolgáltatásnév (csak 
    > [!Important]
    > Ha engedélyezi a szolgáltatásnevek használatát a Power BI-ban, az alkalmazás AD-engedélyei többé nem lesznek érvényesek. Az alkalmazás engedélyeit ekkor a Power BI felügyeleti portálján lehet kezelni.
 
-2.  **Javasolt** – Hozzon létre egy [biztonsági csoportot az Azure Active Directoryban (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal), és adja hozzá a létrehozott alkalmazást ehhez a biztonsági csoporthoz. AAD-beli biztonsági csoportot létrehozhat a [PowerShell-lel](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+2.  **Javasolt** – Hozzon létre egy biztonsági csoportot az Azure Active Directoryban (AAD), és adja hozzá a létrehozott [alkalmazást](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) ehhez a biztonsági csoporthoz. AAD-beli biztonsági csoportot létrehozhat a [PowerShell-lel](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
     Az alábbiakban egy mintaszkript látható új biztonsági csoport létrehozásához és alkalmazás felvételéhez ebbe a biztonsági csoportba.
 

@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 34b0bd1a59ec66cf7a2e5eb41d2c1ec12a39d1e7
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 266a8609123f05f258daee60f6ae17f032ebae29
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128123"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410820"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Klasszikus munkaterületek frissítése az új munkaterületekre a Power BI-ban
 
 Ez a cikk a klasszikus munkaterületek új munkaterületi felületre frissítését ismerteti. Bármelyik klasszikus munkaterületet frissítheti. Az új munkaterületek részletesebb munkaterületi szerepköröket kínálnak, így jobban felügyelhető a tartalomhoz való hozzáférés. A frissített munkaterületek rugalmasabban kezelhetők, mert kevésbé szorosan kötődnek az eredeti Office 365-csoportjukhoz. Itt megismerkedhet az [új munkaterületi felhasználói felülettel](../service-new-workspaces.md). 
 
 >[!NOTE]
->Ez egy kiadás előtt álló dokumentáció, amely egy jelenleg még nem elérhető képességet ismertet. Azért tettük közzé, hogy felkészülhessen az új képességre, és még a kiadás előtt tisztázhassa a felmerülő kérdéseket.  
+>A munkaterület frissítése nyilvános előzetes verzióként érhető el. 
 
 ![Siker frissítés](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
 
@@ -198,7 +198,15 @@ Egyes vállalatok szeretnének több munkaterületet, vagy akár az összeset az
 2. A munkaterületek frissítése az egyes Office 365-csoportok tulajdonosaival vagy az Office 365-rendszergazdával végeztethető el. Ha Ön szeretné frissíteni a munkaterületet, a csoport tulajdonosává kell válnia.
 
 A munkaterület frissítésének képessége nem biztosít eszközöket a csoportos vagy programozott frissítéshez. A vállalatnál létrehozott új Office 365-csoportok továbbra is megjelennek a Power BI-ban. 
-    
+   
+   
+## <a name="known-issues"></a>Ismert problémák
+
+Több ismert probléma merülhet fel:
+- Frissítés után előfordulhat, hogy a felhasználók egy, a modell sikertelen betöltésére figyelmeztető párbeszédpanelt látnak. Ez az üzenet egy hiba miatt jelenik meg, és figyelmen kívül hagyható. 
+- Frissítés után egyes munkaterületnevek eltérnek a frissítés előttiektől. Ilyen esetben a munkaterület neve visszaáll a munkaterület előző nevére, vagy a munkaterület neve üres lesz. A probléma megoldásához nevezze át a munkaterületet a kívánt névre.
+- Ha olyan munkaterületet frissít, amely telepített tartalomcsomaggal rendelkezett, előfordulhat, hogy olyan további irányítópultokat lát a munkaterületen, amelyek a frissítés előtt nem voltak láthatók. Ez olyan esetekben fordul elő, amikor a tartalomcsomag nem frissült a közelmúltban. Ezek az irányítópultok biztonságosan eltávolíthatók.
+
 
 
 ## <a name="next-steps"></a>Következő lépések

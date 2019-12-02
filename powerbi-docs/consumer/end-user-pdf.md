@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5d26327e41e4236a3ea5e0eca2246c6f66a64be4
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 8041fee4689c6319f219c26f20701c6062601a64
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099126"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164203"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Jelentések exportálása a Power BI-ból PDF-be
 
@@ -61,6 +61,7 @@ Az **Exportálás PDF-be** funkció használatakor figyelembe kell vennie néhá
 * Előfordulhat, hogy amikor háttérképet tartalmazó jelentéseket exportál PDF-be, az **Oldal háttere** beállítás **Normál** vagy **Kitöltés** értéke esetén a kép torzítva jelenik meg. A legjobb eredmény érdekében ajánlott az **Illeszkedés** beállítás használatával elkerülni az exportált dokumentummal kapcsolatos problémákat.
 * A Power BI szolgáltatás a PDF-exportálásnál a Power BI nyelvi beállításait alkalmazza. A nyelvi beállításokat megtekintheti vagy módosíthatja a fogaskerék ikon ![Fogaskerék ikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Beállítások** > **Általános** > **Nyelv** lehetőség választásával.
 * Az URL-szűrők jelenleg nem érvényesek az exportálás **Aktuális értékek** beállításánál.
+* A szokatlan egyéni oldalméretekkel rendelkező jelentések az exportálási helyzetekben problémákkal járhatnak. A legjobb eredmény érdekében érdemes lehet standard oldalméretre váltani a jelentést.
 
 ## <a name="next-steps"></a>Következő lépések
 [Jelentés nyomtatása](end-user-print.md)

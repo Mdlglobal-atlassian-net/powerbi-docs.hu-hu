@@ -1,5 +1,5 @@
 ---
-title: Oldalakra osztott Power BI-jelentések beágyazása az alkalmazásba az ügyfelei számára
+title: Oldalakra osztott jelentések beágyazása az alkalmazásba az ügyfelei számára
 description: Ismerje meg, hogyan integrálhat vagy ágyazhat be egy oldalakra osztott Power BI-jelentést egy alkalmazásba a Power BI API-kkal.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 11/04/2019
-ms.openlocfilehash: 5611d65ab800c14b2570a12078c08cce5dc58147
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877738"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311426"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Oktatóanyag: Oldalakra osztott Power BI-jelentések beágyazása egy alkalmazásba az ügyfelek számára (előzetes verzió)
 
@@ -37,6 +37,11 @@ Első lépésként, rendelkeznie kell az alábbiakkal:
 * Legalább egy A4-es vagy P1 [kapacitás](#create-a-dedicated-capacity)[, amelyen engedélyezve vannak az oldalakra osztott jelentés](../service-admin-premium-workloads.md#paginated-reports) típusú számítási feladatok
 
 Ha még nincs Azure-előfizetése, kezdés előtt hozzon létre egy [ingyenes fiókot](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+
+> [!IMPORTANT]
+> * **Szolgáltatásnevet** kell használnia. A fő felhasználó nem támogatott.
+> * Az egyszeri bejelentkezést (SSO-t) igénylő adatforrások nem támogatottak.
+> * A Power BI-adatkészlet nem támogatott [adatforrásként](../service-get-data.md).
 
 ## <a name="set-up-your-power-bi-environment"></a>A Power BI-környezet beállítása
 

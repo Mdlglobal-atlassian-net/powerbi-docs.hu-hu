@@ -2,20 +2,20 @@
 title: Pont-, buborék- és pöttydiagramok a Power BI-ban
 description: Pontdiagramok, pöttydiagramok és buborékdiagramok a Power BI-ban
 author: mihart
-ms.reviewer: ''
+ms.reviewer: amac
 featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/21/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 88db87b995f52aa51023bd465d349459e1dd2965
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a03ac63caf8da96cd7e786c99c8a8dcd36f45a75
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870815"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311615"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Pontdiagramok, buborékdiagramok és pöttydiagramok a Power BI-ban
 
@@ -131,13 +131,30 @@ Most adjunk hozzá egy harmadik dimenziót.
     > [!NOTE]
     > A több adatpont miatt a betöltés tovább tarthat. Ha a felső korlátokat megközelítő jelentéseket tesz közzé, mindenképpen tesztelje azokat a weben és mobileszközön is. Ajánlatos meggyőződni arról, hogy a diagram teljesítménye megfelel a felhasználói elvárásoknak.
 
-1. [Formázhatja a vizualizáció színeit, a címkéket, a címeket, a hátteret és egyebeket](service-getting-started-with-color-formatting-and-axis-properties.md).
-
-    A [kisegítő lehetőségek javítása](../desktop-accessibility.md) érdekében érdemes lehet minden vonalhoz jelölőalakzatokat hozzáadni. Ha a jelölőalakzatot szeretné kiválasztani, bontsa ki az **Alakzatok** elemet, válassza a **Jelölőalakzat** lehetőséget, majd válasszon ki egy alakzatot.
+1. Folytathatja a vizualizáció színeinek, a címkéknek, a címeknek, a háttereknek és egyebeknek a formázását. A [kisegítő lehetőségek javítása](../desktop-accessibility.md) érdekében érdemes lehet minden vonalhoz jelölőalakzatokat hozzáadni. Ha a jelölőalakzatot szeretné kiválasztani, bontsa ki az **Alakzatok** elemet, válassza a **Jelölőalakzat** lehetőséget, majd válasszon ki egy alakzatot.
 
     ![Az Alakzatok legördülő menü képernyőképe a Jelölőalakzat beállításainak kiemelésével.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
-    A jelölő alakzat alakja megváltoztatható rombuszra, háromszögre vagy négyszögre. A különböző jelölőalakzatok használata az egyes vonalakhoz megkönnyíti a jelentés használóinak a vonalak (vagy területek) elkülönítését egymástól.
+    A jelölőalakzat alakja megváltoztatható rombuszra, háromszögre vagy négyszögre. A különböző jelölőalakzatok használata az egyes vonalakhoz megkönnyíti a jelentés használóinak a vonalak (vagy területek) elkülönítését egymástól.
+
+1. Nyissa meg az Elemzés panelt ![Az Elemzés panel ikonjának képernyőképe.](media/power-bi-visualization-scatter/power-bi-analytics.png) további információk hozzáadásához a vizualizációhoz.  
+    - Adjon hozzá egy középérték-vonalat. Válassza a **Középérték-vonal** > **Hozzáadás** lehetőséget. Alapértelmezés szerint a Power BI az *Értékesítés Négyzetláb szerint* értékhez ad hozzá középérték-vonalat. Ez nem túl hasznos, mert láthatjuk, hogy 10 adatpont áll rendelkezésre, és tudjuk, hogy a középérték úgy jön létre, hogy mindegyik oldalon öt-öt adatpont található. Ehelyett váltsa a **Mérték** beállítást a *Teljes értékesítés %-os szórása* értékre.  
+
+        ![A buborékdiagram képernyőképe a hozzáadott középérték-vonallal.](media/power-bi-visualization-scatter/power-bi-analytics-median.png)
+
+    - Szimmetrikus árnyékolást adhat hozzá annak megjelenítéséhez, hogy mely pontokon nagyobb az x tengelyen mért érték az y tengelyhez képest, és fordítva. Ha az Elemzés panelen bekapcsolja a szimmetrikus árnyékolást, Power BI szimmetrikusan jeleníti meg a pontdiagram hátterét az aktuális tengely alsó és felső határai alapján. Ez egy gyors módszer annak azonosítására, hogy egy adatpont melyik tengelymértéket részesíti előnyben, különösen akkor, ha az x és az y tengely tengelytartománya eltér.
+
+        a. Módosítsa a **Teljes értékesítés %-os szórása** beállítást a **Tavalyi bruttó nyereség (%)** értékre
+
+        ![A buborékdiagram képernyőképe a hozzáadott középérték-vonallal.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
+
+        b. Az Elemzés panelen adja hozzá a **Szimmetrikus árnyékolás** elemet. Az árnyékolásból láthatjuk, hogy a Hosiery (Harisnya) (a rózsaszín árnyalatú területen lévő zöld buborék) az egyetlen kategória, amely a bruttó árrést részesíti előnyben, és nem az üzlet négyzetlábban megadott területe szerinti értékesítést. 
+
+        ![A buborékdiagram képernyőképe hozzáadott szimmetrikus árnyékolással.](media/power-bi-visualization-scatter/power-bi-symmetry.png)
+
+    - Folytassa az Elemzés panel felfedezését, ha további érdekes megállapításokat szeretne tenni az adatokról. 
+
+        ![A buborékdiagram képernyőképe hozzáadott szimmetrikus árnyékolással.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
 
 ## <a name="create-a-dot-plot-chart"></a>Pöttydiagram létrehozása
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: bd6270731f79ac5a1e270ac36699470a0e6df978
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 3b90fcef50fc3f97a1a36e456eec254c422691a4
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060451"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164245"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -28,6 +28,10 @@ Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket 
 **Hogyan változtatja meg a Microsoft az üzletiintelligencia-adatok védelmét**
 <br>szerző: Anton Fritz és Adi Regev
 <br>[Regisztráljon a december 4-i megtekintéshez](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
+
+**Kilenc trend a Big Data-elemzés jövőjének alakításában**
+<br>írta: Vijay Gopalakrishnan
+<br>[Regisztráljon a december 18-i megtekintéshez](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 >[A Power BI-közösség közelgő webináriumai](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -87,7 +91,7 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 
 ### <a name="getting-started"></a>Első lépések
 
-**Napi üzleti folyamatok automatizálása a Power BI, a PowerApps és a Microsoft Flow használatával**
+**Mindennapos üzleti folyamatok automatizálása a Power BI, a PowerApps és a Power Automate használatával**
 <br>szerző: Wim Coorevits és Enrique Plaza Garcia
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
 
@@ -107,7 +111,7 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 <br>Készítette Charles Sterling
 <br>[Megtekintés](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
-**A Microsoft Flow és a PowerApps teljes gazdasági hatása**
+**A Power Automate és a PowerApps teljes gazdasági hatása**
 <br>Készítette Jonathan Lipsitz és Enrique Plaza Garcia
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 

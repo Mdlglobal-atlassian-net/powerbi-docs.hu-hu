@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4c2217495ee8b735bc600c9b803897a408495472
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b9f7c745ad251fdb81c7898130cd3ca6c5d32af9
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878773"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164154"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatikus lapfrissítés Power BI Desktopban (előzetes verzió)
 
@@ -105,9 +105,9 @@ A Power BI Desktop nem korlátozza a frissítési időközöket; a frissítési 
 
 A Power BI szolgáltatásban korlátozások vonatkoznak az automatikus oldalfrissítésre olyan tényezők alapján, mint a munkaterület, vagy hogy használatban vannak-e prémium szintű szolgáltatások.
 
-A működésének tisztázásához kezdjük a [kapacitások és munkaterületek](whitepaper-powerbi-premium-deployment.md#capacities) néhány jellemzőjével.
+A működésének tisztázásához kezdjük a kapacitások és munkaterületek hátterével:
 
-A **kapacitások** egy alapvető Power BI-fogalom, amely a Power BI-tartalmak üzemeltetéséhez és elérhetővé tételéhez használt erőforrások (tárolás, processzor és memória) egy adott készletét jelöli. A kapacitások lehetnek megosztottak vagy dedikáltak. A **megosztott kapacitás** más Microsoft-ügyfelekkel is meg van osztva, míg a **dedikált kapacitás** teljes mértékben egyetlen ügyfél számára van fenntartva. A dedikált kapacitásokat a [prémium szintű kapacitásokról](whitepaper-powerbi-premium-deployment.md#capacities) szóló cikkben mutatjuk be.
+A **kapacitások** egy alapvető Power BI-fogalom, amely a Power BI-tartalmak üzemeltetéséhez és elérhetővé tételéhez használt erőforrások (tárolás, processzor és memória) egy adott készletét jelöli. A kapacitások lehetnek megosztottak vagy dedikáltak. A **megosztott kapacitás** más Microsoft-ügyfelekkel is meg van osztva, míg a **dedikált kapacitás** teljes mértékben egyetlen ügyfél számára van fenntartva. A dedikált kapacitásokat a [prémium szintű kapacitások kezeléséről](service-premium-capacity-manage.md) szóló cikkben mutatjuk be.
 
 Megosztott kapacitással munkafolyamatai más ügyfelekkel megosztott számítási erőforrásokon futnak. Mivel a kapacitásnak meg kell osztania az erőforrásokat, korlátozásokat kell bevezetni a *tisztességes játék* érdekében, például hogy a maximális modellméretet (1 GB) és a maximális napi frissítési gyakoriságot (naponta nyolc alkalommal) lehessen használni.
 
@@ -123,7 +123,7 @@ Néhány információ a kétféle munkaterület használatáról:
 
  2. *Minimális frissítési időköz*: ha engedélyezi a funkciót, a kapacitásadminisztrátornak be kell állítania egy minimális frissítési időközt. Ha az időköz kisebb a minimálisnál, a Power BI szolgáltatás felülbírálja az időközt, hogy betarthassa a kapacitásadminisztrátor által beállított minimális időközt.
 
-Az alábbi táblázat részletesebben ismerteti a funkció elérhetőségét, valamint az egyes kapacitási típusok és [tárolási mód](whitepaper-powerbi-premium-deployment.md#model-storage-modes) korlátozásait.
+Az alábbi táblázat részletesebben ismerteti a funkció elérhetőségét, valamint az egyes kapacitási típusok és [tárolási mód](service-dataset-modes-understand.md) korlátozásait.
 
 | Tárolási mód | Dedikált kapacitás | Megosztott kapacitás |
 | --- | --- | --- |

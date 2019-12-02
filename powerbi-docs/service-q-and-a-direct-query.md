@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 8bb3597d2877376431a2249428e88d56bee2c0a1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cf1d67318fc86b1044e38e6f4f5f56c9473c39a1
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871790"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265496"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>A Q&A engedélyezése élő kapcsolatokhoz a Power BI-ban
 ## <a name="what-is-the-on-premises-data-gateway--what-is-a-live-connection"></a>Mi az a helyszíni adatátjáró?  Mi az az élő kapcsolat?
@@ -23,11 +23,11 @@ A Power BI-ban az adatkészletek importálhatók, vagy létrehozhat hozzájuk é
 ## <a name="qa-for-on-premises-data-gateway-datasets"></a>Q&A helyszíni adatátjáró-adatkészletekhez
 Ha olyan adatkészleteken szeretné használni a Q&A-t, amelyeket átjárón keresztül ér el, akkor azokat először engedélyeznie kell.
 
-Engedélyezés után a Power BI indexet hoz létre az adatforrásról, és feltölti ezeknek az adatoknak egy részét a Power BI-ba a kérdésfeltevés engedélyezéséhez. Az elsődleges index létrehozása eltarthat néhány percig, aztán a Power BI automatikusan karbantartja és frissíti az indexet az adatok változásának megfelelően. A Q&A ezeken az adatkészleteken használva ugyanúgy viselkedik, mint a Power BI-ban közzétett adatokkal. Mindkét esetben támogatott a Q&A-ben rendelkezésre álló összes funkció, többek között az adatforrás Cortanával való használata is.
+Engedélyezés után a Power BI indexet hoz létre az adatforrásról, és feltölti ezeknek az adatoknak egy részét a Power BI-ba a kérdésfeltevés engedélyezéséhez. Az elsődleges index létrehozása eltarthat néhány percig, aztán a Power BI automatikusan karbantartja és frissíti az indexet az adatok változásának megfelelően. A Q&A ezeken az adatkészleteken használva ugyanúgy viselkedik, mint a Power BI-ban közzétett adatokkal. A Q&A területén elérhető összes funkció támogatott mindkét esetben.
 
-Miközben kérdéseket tesz fel a Power BI-ban, a Q&A az adatkészlet indexe alapján meghatározza, milyen vizualizáció létrehozása vagy jelentéslap használata lesz a legjobb a kérdés megválaszolására. A lehetséges legjobb válasz meghatározása után a Q&A a DirectQueryt használja az adatforrás élő adatainak az átjárón keresztül történő lekérésére a diagramok és grafikonok kitöltéséhez. Ez biztosítja, hogy a Q&A-eredményekben mindig a legújabb adatok szerepeljenek, közvetlenül az alapul szolgáló adatforrásból.
+Miközben kérdéseket tesz fel a Power BI-ban, a Q&A az adatkészlet indexe alapján meghatározza, milyen vizualizáció létrehozása vagy jelentéslap használata lesz a legjobb a kérdés megválaszolására. A lehetséges legjobb válasz meghatározása után a Q&A a DirectQueryt használja az adatforrás élő adatainak az átjárón keresztül történő lekérésére a diagramok és grafikonok kitöltéséhez. Ennek eredményeképp a Power BI Q&A mindig a legnaprakészebb adatokat jeleníti meg közvetlenül az alapul szolgáló adatforrásból.
 
-Mivel a Power BI Q&A az adatforrásból származó szöveg- és sémaértékeket használja az alapul szolgáló modell lekérdezésére, a meghatározott új vagy törölt szöveges értékek keresése (például egy újonnan hozzáadott szöveges bejegyzéshez kapcsolódó ügyfélnév lekérdezése) attól függ, hogy az index naprakész-e a legújabb értékekkel. A Power BI automatikusan naprakészen tartja a szöveg- és sémaindexet a változásokat 60 percen belül követve.
+Mivel a Power BI Q&A az adatforrásból származó szöveg- és sémaértékeket használja az alapul szolgáló modell lekérdezésére, a meghatározott új vagy törölt szöveges értékek keresése (például egy újonnan hozzáadott szöveges bejegyzéshez kapcsolódó ügyfélnév lekérdezése) attól függ, hogy az index naprakész-e a legújabb értékekkel. A Power BI 60 percenként frissíti a szöveg- és a sémaindex módosításait.
 
 További információ:
 
@@ -43,20 +43,20 @@ Miután beállította az adatátjárót, kapcsolódjon az adatokhoz a Power BI-b
 2. Válassza az **adatkészletek** lapfület, majd válassza ki azokat az adatkészleteket, amelyeket engedélyezni szeretne a Q&A-hez.
    
    ![A Beállítások menü Adatkészletek képernyője](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
-3. Bontsa ki a **Q&A és Cortana** területet, és jelölje be a **Q&A bekapcsolása ehhez az adatkészlethez** négyzetet, majd kattintson az **Alkalmaz** gombra.
+3. Bontsa ki a **Q&A** területet, jelölje be a **Q&A bekapcsolása ehhez az adathalmazhoz** jelölőnégyzetet, majd válassza az **Alkalmaz** elemet.
    
-    ![A Q&A kibontva](media/service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
+    ![A Q&A kibontva](media/service-q-and-a-direct-query/power-bi-qna-dataset-direct-query.png)
 
 ## <a name="what-data-is-cached-and-how-is-privacy-protected"></a>Milyen adatok gyorsítótárazása történik, és hogyan valósul meg az adatvédelem?
-Amikor engedélyezi a Q&A-t a helyszíni adataihoz, az adatok egy részét a szolgáltatás gyorsítótárazza. Ezt azért teszi, hogy a Q&A elfogadható teljesítményt nyújtson. A 24 karakternél hosszabb értékeket a Power BI kizárja a gyorsítótárazásból. Az adatkészlet néhány órán belül törlődik, miután letiltotta a Q&A-t a **Q&A bekapcsolása ehhez az adatkészlethez** jelölőnégyzet törésével, vagy miután törli az adatkészletet.
+Amikor engedélyezi a Q&A-t a helyszíni adataihoz, az adatok egy részét a szolgáltatás gyorsítótárazza. Ez a gyorsítótárazás biztosítja, hogy a Q&A ésszerű teljesítménnyel működjön. A 24 karakternél hosszabb értékeket a Power BI kizárja a gyorsítótárazásból. Az adatkészlet néhány órán belül törlődik, miután letiltotta a Q&A-t a **Q&A bekapcsolása ehhez az adatkészlethez** jelölőnégyzet törésével, vagy miután törli az adatkészletet.
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 A funkcióra bizonyos korlátozások érvényesek:
 
 * Eredetileg a funkció csak az SQL Server 2016 Analysis Services táblázatos adatforrásaihoz áll rendelkezésre. A funkció táblázatos adatokkal való munkavégzésre van optimalizálva. A Q&A használata többdimenziós adatforrások esetén még nem támogatott. A helyszíni adatátjáró által támogatott további adatforrások bevezetése a későbbiekben fog történni.
-* Az SQL Server Analysis Servicesben meghatározott sorszintű biztonság teljes támogatása kezdetben nem áll rendelkezésre. Miközben kérdéseket tesz fel a Q&A-ben, a kérdések beírása közben megjelenő automatikus kitöltési javaslatok között lehetnek olyan sztringértékek, amelyekhez a felhasználó nem rendelkezik hozzáféréssel. A modellben meghatározott RLS-t azonban tiszteletben tartja a rendszer a jelentés- és a diagramvizualizációknál, ezért nem fed fel alapul szolgáló számadatokat. Az ezt a viselkedést vezérlő beállítások az elkövetkező frissítésekben fognak szerepelni.
+* Az SQL Server Analysis Servicesben meghatározott sorszintű biztonság teljes támogatása kezdetben nem áll rendelkezésre. Miközben a felhasználó kérdéseket tesz fel a Q&A-ben, a kérdések beírása közben használt „automatikus kitöltés” miatt megjelenhetnek olyan sztringértékek, amelyekhez a felhasználó nem rendelkezik hozzáféréssel. A modellben meghatározott RLS-t azonban tiszteletben tartja a rendszer a jelentés- és a diagramvizualizációknál, ezért nem fed fel alapul szolgáló számadatokat. Az ezt a viselkedést vezérlő beállítások az elkövetkező frissítésekben fognak szerepelni.
 * Az objektumszintű biztonság (OLS) nem támogatott. A Q&A figyelmen kívül hagyja az objektumszintű biztonságot, és megjeleníti a táblázatok és oszlopok neveit azon felhasználóknak, akik nem férnek hozzájuk. Célszerű engedélyezni a sorszintű biztonságot, így meggyőződhet arról, hogy az adatértékeket is megfelelő biztonságban tartja. 
-* Az élő kapcsolatok csak a helyszíni adatátjárónál támogatottak. Ezért személyes adatátjáróval nem használhatók.
+* Az élő kapcsolatok csak a helyszíni adatátjárónál támogatottak. Ezért ez a funkció nem használható a személyes átjáróval.
 
 ## <a name="next-steps"></a>Következő lépések
 

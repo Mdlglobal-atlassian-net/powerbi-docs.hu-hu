@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: c6ecb2eb2346940a22bbd6b7bff5ca0138faa290
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 373d57b871953f1afe02212ff0a1bbdb633cac4d
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74102594"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565257"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Power BI-vizualizáció minősíttetése
 
@@ -70,7 +70,7 @@ Az egyéni vizualizáció [minősítéséhez](#get-a-power-bi-visual-certified) 
 
 * Ha a capabilities.json fájl tulajdonságai módosulnak, győződjön meg róla, hogy azok nem teszik használhatatlanná a felhasználói jelentéseket.
 
-* Győződjön meg arról, hogy a vizualizáció megfelel a [Power BI-vizualizációk irányelveinek](./guidelines-powerbi-visuals.md#guidelines-for-power-bi-visuals-with-additional-purchases). **Vízjelek nem használhatók**.
+* Győződjön meg arról, hogy a vizualizáció megfelel a [Power BI-vizualizációk irányelveinek](./guidelines-powerbi-visuals.md). **Vízjelek nem használhatók**.
 
 * Csak nyilvánosan véleményezhető OSS-összetevők használata (nyilvános JS-kódtárak vagy nyilvános TypeScript. A forráskód véleményezhető, és nincsenek ismert biztonsági rései). Kereskedelmi összetevővel rendelkező egyéni vizualizációt nem minősíthetünk.
 

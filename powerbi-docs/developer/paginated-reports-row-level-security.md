@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: f28ffa89647272306dc9cecb5c93928d36805d2a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4db1f887c1dd889a06c02643a0270cc24ab9c45f
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880470"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311510"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Sorszintű biztonság implementálása beágyazott lapszámozott jelentésekben (előzetes verzió)
 
@@ -30,7 +30,7 @@ Amikor sorszintű biztonságot alkalmazunk egy lapszámozott Power BI-jelentésn
 
 Miután hozzárendelte a paramétert a **UserID** attribútumhoz, a [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup) API segítségével kérheti le a beágyazási tokent.
 
-## <a name="use-uderid-as-a-filter-at-report-or-query-level"></a>A UserID attribútum használata szűrőként a jelentés vagy a lekérdezés szintjén
+## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>A UserID attribútum használata szűrőként a jelentés vagy a lekérdezés szintjén
 
 A **UserID** attribútum használható *szűrőként* vagy egy, az adatforrás felé irányuló *lekérdezésben* a [Power BI Lapszámozott jelentéskészítőjében](../report-builder-power-bi.md).
 
@@ -66,7 +66,7 @@ A **UserID** attribútum használható *szűrőként* vagy egy, az adatforrás f
 
     ![Power BI-jelentéskészítő – paraméterek](media/embedded-paginated-reports-secure-data/parameters.png)
 
-2. A **Paraméter neve** mezőbe írja be a **@UserID** kifejezést, a **Paraméter értéke** mezőben pedig adja hozzá a **[&UserID]** értéket.
+2. A **Paraméter neve** mezőbe írja be a **\@UserID** kifejezést, a **Paraméter értéke** mezőben pedig adja hozzá a **[&UserID]** értéket.
 
     ![Power BI-jelentéskészítő – paraméter neve](media/embedded-paginated-reports-secure-data/parameter-name.png) 
 

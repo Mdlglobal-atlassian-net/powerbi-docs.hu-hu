@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: 668665bcdbbb4b06a6fd1a2ee6d4af2437be77b3
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 8c7a0463e8a521482a1aab6a53ae9656585a7849
+ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74264859"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548539"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -177,7 +177,7 @@ A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helys
 
 **nav pane (navigációs ablaktábla)** vagy **nav pane (navigációs vagy nav. ablak)** A Power BI szolgáltatás bal oldali vezérlőelemei.
 
-A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helyszűke esetén csak nav. ablak.
+A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helyszűke esetén csak navigációs vagy nav. ablak.
 
 **nav pane** lásd: **nav pane (navigációs ablaktábla)**
 

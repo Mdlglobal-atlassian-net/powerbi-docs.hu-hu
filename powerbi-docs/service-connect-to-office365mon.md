@@ -1,25 +1,25 @@
 ---
 title: Kapcsolódás az Office365Mon tartalomcsomaghoz a Power BI-jal
 description: A Power BI-hoz készült Office365Mon tartalomcsomag
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 8/29/2019
-ms.author: tebercov
+ms.date: 11/26/2019
+ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 64e8365a6d4e0c01911de9e69998af4d58d59202
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8e9563d10d80290a48e20cd2d6a889831d34924b
+ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73854719"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548598"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Kapcsolódás az Office365Mon tartalomcsomaghoz a Power BI-jal
 Az Office 365 leállásainak és az állapot teljesítményadatainak elemzése egyszerű a Power BI-jal és az Office365Mon sablonalkalmazással. A Power BI lekéri az adatokat, többek között a leállásokat és az állapotmintákat, majd ezeken az adatokon alapuló, használatra kész irányítópultot és jelentéseket hoz létre.
 
-Csatlakozzon a Power BI-hoz készült [Office365Mon sablonalkalmazáshoz](https://app.powerbi.com/groups/me/getdata/services/office365mon).
+Csatlakozzon a Power BI-hoz készült [Office365Mon sablonalkalmazáshoz](https://msit.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3).
 
 >[!NOTE]
 >A Power BI-sablonalkalmazás betöltéséhez Office365Mon rendszergazdai fiók szükséges.

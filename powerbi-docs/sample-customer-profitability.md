@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d6368ae61b2813972c3209e2af456ba5aa5fb81b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 160c5736bc2894e629f5bb375dd07e993def1e0c
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874018"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265546"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Ügyfél-jövedelmezőségi minta a Power BI-hoz: Bemutató megtekintése
 
@@ -128,7 +128,7 @@ Az Ügyfél-jövedelmezőségi minta irányítópultján található csempék k�
 
     * A **Csapat mutatószámai** az 5 vezető teljesítményére és üzleti mutatóira fókuszál.
     * Az **Iparági árrés elemzése** lehetőséget biztosít a jövedelmezőség elemzésére az egész iparág jelenlegi teljesítményéhez viszonyítva.
-    * A **Vezetők mutatószámai** az egyes vezetők teljesítményét mutatják a Cortanában való formázott megjelenítéshez.
+    * Az **Executive Scorecard** (Vezetők mutatószámai) az egyes vezetők nézeteit jeleníti meg egyéni oldalméret-formátumban.
 
 ### <a name="team-scorecard-page"></a>Csapat mutatószámai lap
 ![Csapat mutatószámai jelentésoldal](media/sample-customer-profitability/customer2.png)
@@ -170,7 +170,7 @@ Ez a jelentéslap az adatok egy másik szeletét mutatja meg. A teljes iparág b
    * Valery, aki csak egy termékért felel, mindössze 5 iparági szegmensre koncentrál. Valery iparági befolyása szezonális, de mivel mindig nagy méretű buborékokat hoz létre, jelentős hatást gyakorol a cég profitjára. Magyarázható az iparági szegmensekkel a csökkenő teljesítményét?
 
 ### <a name="executive-scorecard"></a>Vezetők mutatószámai
-Ez a lap Cortana-válaszkártya formátumú. További információ: [Egyéni Cortana-válaszkártyák létrehozása](service-cortana-answer-cards.md).
+Ez az oldal egyéni oldalméret-formátummal rendelkezik.
 
 ## <a name="dig-into-the-data-by-asking-questions-with-qa"></a>Részletes adatfeltárás Q&A-kérdések feltevésével
 Az elemzéshez hasznos lenne megállapítani, hogy mely iparág termeli a legtöbb bevételt Valerynek. Használjuk a Q&A-t.

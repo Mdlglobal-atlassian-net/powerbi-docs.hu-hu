@@ -1,53 +1,40 @@
 ---
 title: Gyorsmérők használata általános és nagy igényű számításokhoz
-description: A gyorsmérők használatra kész, általános számításokat gyorsan elvégző DAX-képleteket biztosítanak
+description: A gyorsmérők használatra kész, általános számításokat gyorsan elvégző DAX-képleteket biztosítanak.
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 755ef6ab515244a2b7613ee7007caf3c3e6d1ed8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4e5ea5e5fcbffb5c61434ecc26a90d80d1cd1736
+ms.sourcegitcommit: 982ffaa8eb91897f48221a816970671f4a92e6d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877962"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74415249"
 ---
-# <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>A gyorsmérők használata általános és nagy igényű számítások egyszerű végrehajtásához
-A **Gyorsmérők** használatával könnyedén végrehajthat általános és nagy igényű számításokat. A **gyorsmérők** DAX-parancsokat futtatnak a színfalak mögött (a DAX-ot nem kell megírnia, készen áll) a párbeszédpanelen megadott bemeneti adatok alapján, majd az eredmények használatra készen megjelennek a jelentésben. Ami a legjobb, hogy megtekintheti a gyorsmérő által végrehajtott DAX-ot, és így megismerheti a DAX-ot, vagy bővítheti az ismereteit.
+# <a name="use-quick-measures-for-common-calculations"></a>Gyorsmérők használata általános számításokhoz
+A *Gyorsmérők* használatával könnyedén végrehajthat általános és nagy igényű számításokat. A gyorsmérők a színfalak mögött Data Analysis Expressions- (DAX-) parancsokat futtatnak, majd az eredményeket használatra készen megjelenítik a jelentésben. A DAX-ot nem kell megírnia, a párbeszédpanelen megadott bemeneti adatok alapján már készen áll. Számos számítási kategória áll rendelkezésre, és az egyes számításokat módosíthatja is az igényei szerint. Ami a legjobb, hogy megtekintheti a gyorsmérő által végrehajtott DAX-ot, így megismerheti a DAX-ot, vagy bővítheti az ismereteit.
 
-![](media/desktop-quick-measures/quick-measures_01.png)
+## <a name="create-a-quick-measure"></a>Gyorsmérő létrehozása
 
-**Gyorsmérők** létrehozásához kattintson a jobb gombbal egy mezőre a **Mezők** szakaszban, majd válassza a **Gyorsmérők** lehetőséget a megjelenő menüben. Kattinthat a jobb gombbal egy meglévő vizualizáció **Értékek** paneljének bármelyik értékére is (például egy *Sávdiagram* vizualizáció *Értékek* mezőjére). Számos számítási kategória áll rendelkezésre, és az egyes számításokat módosíthatja is az igényei szerint.
+Ha gyorsmérőt szeretne létrehozni a Power BI Desktopban, a **Mezők** panel egyik eleme mellett kattintson a jobb gombbal a három pontra ( **...** ), vagy jelölje ki azt, majd válassza a megjelenő menüből az **Új gyorsmérő** lehetőséget. 
 
-### <a name="quick-measures-now-generally-available"></a>Mostantól általánosan elérhetők a gyorsmérők
+![Új gyorsmérő kiválasztása](media/desktop-quick-measures/quick-measures_01.png)
 
-A **Power BI Desktop** 2018. februári kiadásától kezdve a gyorsmérők általánosan elérhetők (már nem előzetes verzióban érhetők el). Ha a **Power BI Desktop** egy korábbi verzióját használja, a **Power BI Desktop** **2017. áprilisi** kiadásától kezdve próbálhatja ki a **Gyorsmérők** szolgáltatást úgy, hogy a **Fájl > Lehetőségek és beállítások > Beállítások > Előzetes verziójú funkciók** lehetőséget választja, majd bejelöli a **Gyorsmérők** melletti jelölőnégyzetet.
+Kattinthat a jobb gombbal egy meglévő vizualizáció **Értékek** panelének bármelyik értéke mellett lévő legördülő nyílra is, és kiválaszthatja az **Új gyorsmérő** lehetőséget a menüből. 
 
-![](media/desktop-quick-measures/quick-measures_02b.png)
+Az **Új gyorsmérő** kiválasztásakor megjelenik a **Gyorsmérők** ablak, amelyben kiválaszthatja a kívánt számítást és azokat a mezőket, amelyekben futtatni kívánja a számítást. 
 
-Miután ezt beállította, újra kell indítania a **Power BI Desktopot**.
+Válassza ki a **Számítás választása** mezőt a rendelkezésre álló gyorsmérők hosszú listájának megjelenítéséhez. 
 
-## <a name="using-quick-measures"></a>A Gyorsmérők használata
-Egy **Gyorsmérő** használatához kattintson a jobb gombbal egy mezőre (bármelyikre) a **Power BI Desktop** **Mezők** szakaszán, és válassza a megjelenő menüből a **Gyorsmérő** lehetőséget.
+![Rendelkezésre álló gyorsszámítások](media/desktop-quick-measures/quick-measures_04.png)
 
-![](media/desktop-quick-measures/quick-measures_01.png)
-
-Az SQL Server Analysis Services (SSAS) élő kapcsolatok használatakor bizonyos **Gyorsmérők** elérhetők. A **Power BI Desktop** csak azokat a **Gyorsmérőket** jeleníti meg, amelyek támogatottak a kapcsolatban részt vevő SSAS-verzióhoz. Ha tehát csatlakozik egy SSAS élő adatforráshoz, és nem lát bizonyos **Gyorsmérőket** a listában, annak az az oka, hogy az az SSAS-verzió, amelyhez kapcsolódik, nem támogatja az adott **Gyorsmérő** megvalósításához használt DAX-mértéket.
-
-Ha kiválasztotta a helyi menüben, megjelenik az alábbi **Gyorsmérők** ablak, ahol kiválaszthatja a kívánt számításokat, valamint a mezőket, amelyeken futtatni szeretné ezeket a számításokat.
-
-![](media/desktop-quick-measures/quick-measures_03.png)
-
-Amikor a legördülő menüt választja, megjelenik az elérhető **Gyorsmérők** hosszú listája.
-
-![](media/desktop-quick-measures/quick-measures_04.png)
-
-A Gyorsmérő számítási típusoknak öt külön csoportja van, mindegyikben található egy számításgyűjtemény. A csoportok és számítások a következők:
+A gyorsmérők öt számítási típusa és számításaik a következők:
 
 * **Kategóriánkénti összesítés**
   * Kategória szerinti átlag
@@ -59,7 +46,7 @@ A Gyorsmérő számítási típusoknak öt külön csoportja van, mindegyikben t
   * Szűrt érték
   * Szűrt értéktől mért különbség
   * Szűrt értéktől mért százalékos különbség
-  * Új kategóriákból történő értékesítések
+  * Új ügyfeleknek történő értékesítések
 * **Időintelligencia**
   * Év elejétől számított teljes érték
   * Negyedév elejétől számított teljes érték
@@ -83,70 +70,69 @@ A Gyorsmérő számítási típusoknak öt külön csoportja van, mindegyikben t
   * Csillagos minősítés
   * Értékek összefűzött listája
 
-Tervezzük bővíteni a számítások listáját, és szeretnénk visszajelzést kapni, milyen **gyorsmérőket** szeretne látni, és örülünk, ha beküldi a **gyorsmérőkre** vonatkozó ötleteit (az alapul szolgáló DAX-képletekkel együtt). A cikk végén erről további információt talál.
+Ha szeretné az új gyorsmérőkkel vagy az alapul szolgáló DAX-képletekkel kapcsolatos ötleteit beküldeni, tekintse meg a cikk végét.
 
-## <a name="example-of-quick-measures"></a>Példa a gyorsmérőkre
-Vessünk egy pillantást egy példára, hogy lássuk, hogyan működnek a **gyorsmérők**.
+> [!NOTE]
+> Az SQL Server Analysis Services (SSAS) élő kapcsolatok használatakor bizonyos Gyorsmérők elérhetők. A Power BI Desktop csak azokat a gyorsmérőket jeleníti meg, amelyek támogatottak a kapcsolatban részt vevő SSAS-verzióhoz. Ha csatlakozik egy SSAS élő adatforráshoz, és nem lát bizonyos Gyorsmérőket a listában, annak az az oka, hogy az az SSAS-verzió, amelyhez kapcsolódik, nem támogatja az adott gyorsmérők megvalósításához használt DAX-parancsokat.
 
-Az alábbi **Mátrix** vizualizáció elektronikai termékek értékesítéséről jelenít meg egy táblázatot. Ez egy alapszintű táblázat, szerepelnek benne az egyes kategóriákhoz tartozó összegek.
+Miután kiválasztotta a gyorsmérőhöz használni kívánt számításokat és mezőket, válassza az **OK** gombot. Az új gyorsmérő megjelenik a **Mezők** panelen, az alapul szolgáló DAX-képlet pedig a képletsávban. 
 
-![](media/desktop-quick-measures/quick-measures_05.png)
+## <a name="quick-measure-example"></a>Gyorsmérő – példa
+Lássunk egy gyorsmérőt működés közben.
 
-Kattintsunk a jobb gombbal az **Értékek** mező területére, és válasszuk a **Gyorsmérők** lehetőséget, majd a *Kategória szerinti átlag* elemet *Számításnak*. Ezután válasszuk a *SalesAmount összege* elemet *Alapértéknek*, és a jobb oldali panel *Mezők* mezőjéből a bal oldali *Kategória* területre áthúzva a mezőt adjuk meg a *SalesAmount* elemet.
+Az alábbi Mátrix vizualizáció különböző termékek értékesítéséről jelenít meg egy táblázatot. Ez egy alapszintű táblázat, amelyben az egyes kategóriákhoz tartozó értékesítési végösszegek szerepelnek.
+
+![Egy értékesítési táblát bemutató Mátrix vizualizáció](media/desktop-quick-measures/quick-measures_05.png)
+
+Ha kiválasztotta a Mátrix vizualizációt, kattintson a **TotalSales** (Összes értékesítés) melletti legördülő nyílra az **Értékek** területen, és válassza az **Új gyorsmérő** lehetőséget. 
+
+A **Gyorsmérők** ablakban a **Számítás** területen válassza a **Kategória szerinti átlag** lehetőséget. 
+
+Húzza át az **Átlagos egységár** elemet a **Mezők** panelről az **Alapérték** mezőbe. Hagyja a **Kategóriát** a **Kategória** mezőben, majd válassza az **OK** gombot. 
 
 ![](media/desktop-quick-measures/quick-measures_06.png)
 
-Amikor az **OK** gombot választjuk, történik néhány érdekes dolog, amint az az alábbi listát követő ábrán is látható:
+Amikor kiválasztja az **OK** gombot, több érdekes dolog is történik.
 
-1. A **Mátrix** vizualizációban megjelent egy új oszlop, amely a számításunkat mutatja (ebben az esetben: *Átlagos SalesAmount a SalesAmount kategórián belül*).
-2. Létrejött egy új **mérték**, és elérhető a **Mezők** területen, ki is van emelve (a Power BI egy sárga keretet helyez köré). Ez a mérték a jelentés bármely más vizualizációján is használható, nem csak azon, amelyhez eredetileg létrehoztuk.
-3. A **gyorsmérőhez** használt DAX-formula megjelenik a Képletsávon.
+![Új gyorsmérő a vizualizációban, képletsáv és Mezők lista](media/desktop-quick-measures/quick-measures_07.png)
 
-![](media/desktop-quick-measures/quick-measures_07.png)
+1. A Mátrix vizualizáció egy új oszloppal rendelkezik, amely a **Kategória szerinti átlagos egységárat** mutatja.
+   
+2. Az új gyorsmérőhöz tartozó DAX-képlet megjelenik a képletsávban. A DAX-képlettel kapcsolatos további információkért tekintse meg a [következő szakaszt](#learn-dax-by-using-quick-measures).
+   
+3. Az új gyorsmérő kijelölve és kiemelve jelenik meg a **Mezők** panelen. 
 
-Ami az első elemet illeti, észreveheti, hogy a rendszer alkalmazta a **gyorsmérőt** a vizualizációra. Megjelent egy új oszlop és egy társított érték, mindkettő a létrehozott **gyorsmérőn** alapul.
+Az új gyorsmérő a jelentés bármely vizualizációja számára elérhető, nem csak az Ön által létrehozott vizualizáció számára. Az alábbi képen egy gyors oszlopdiagram vizualizációja látható, amely az új gyorsmérő mező használatával lett létrehozva.
 
-![](media/desktop-quick-measures/quick-measures_08.png)
+![Új sávdiagram-vizualizáció a gyorsmérő mező alapján](media/desktop-quick-measures/quick-measures_09.png)
 
-Ezenkívül a **gyorsmérő** megjelenik az adatmodell **Mezők** szakaszában, és ugyanúgy használható bármely más vizualizációhoz, mint bármely más mező a modellben. Az alábbi képen létrehoztunk egy gyors **sávdiagramot** a **gyorsmérő** által létrehozott új mező használatával.
+## <a name="learn-dax-by-using-quick-measures"></a>A DAX megismerése a gyorsmérők használatával
+A gyorsmérők egyik nagyszerű előnye, hogy megjelenítik a mértéket implementáló DAX-képletet. Amikor kiválaszt egy gyorsmérőt a **Mezők** panelen, megjelenik a **Képletsáv**, ahol látható a DAX-képlet, amelyet a Power BI a mérték megvalósításához hozott létre.
 
-![](media/desktop-quick-measures/quick-measures_09.png)
+![Gyorsmérő képlete a képletsávban](media/desktop-quick-measures/quick-measures_10.png)
 
-Lépjen a következő szakaszra a harmadik elem, a DAX-képletek tárgyalásához.
+A képletsáv nem csak a mérték mögötti képletet jeleníti meg, de ami talán ennél is fontosabb, azt is, hogyan hozhatja létre a gyorsmérők alapjául szolgáló DAX-képleteket.
 
-## <a name="learn-dax-using-quick-measures"></a>A DAX megismerése a gyorsmérők használatával
-A **gyorsmérők** szolgáltatás egy másik nagy előnye, hogy közvetlenül megjeleníti a mérték megvalósításához létrehozott DAX-képletet. Az alábbi ábrán kiválasztottuk a **gyorsmérő** által létrehozott mértéket (most már szerepel a **Mezők** szakaszban, így csak rá kell kattintanunk). Amikor ezt tesszük, megjelenik a **Képletsáv**, ahol látható a DAX-képlet, amelyet a Power BI a mérték megvalósításához hozott létre.
+Tegyük fel, hogy szüksége van egy éves adatokat összevető számításra, de nem biztos benne, hogyan építse fel a DAX-képletet, vagy ötlete sincs, hol kezdje. Ahelyett, hogy tovább törné a fejét, létrehozhat egy gyorsmérőt az **Évenkénti változás** számítással, és megnézheti, hogyan jelenik meg a vizualizációban, és hogyan működik a DAX-képlet. Ezután közvetlenül a DAX-képleten hajthatja végre a módosításokat, vagy létrehozhat egy hasonló mértéket, amely megfelel az igényeinek és elvárásainak. Olyan, mintha egy tanár azonnal megválaszolná a néhány kattintással feltett „mi lenne, ha” típusú kérdéseit. 
 
-![](media/desktop-quick-measures/quick-measures_10.png)
+A gyorsmérőket bármikor eltávolíthatja a modellből, ha nem nyerik el a tetszését. Egyszerűen kattintson a jobb gombbal a mérték melletti három pontra ( **...** ), és válassza a **Törlés** lehetőséget. A gyorsmérőket bármikor át is nevezheti a kívánt módon, ha kiválasztja az **Átnevezés** lehetőséget a menüből. 
 
-Ez már önmagában nagyszerű, hiszen láthatjuk a mérték mögötti képletet. De ami talán még fontosabb, ennek köszönhetően a **Gyorsmérők** segítségével megtanulhatja, hogyan lehet létrehozni az alapul szolgáló DAX-képleteket.
-
-Tegyük fel, hogy szüksége van egy éves adatokat összevető számításra, de nem biztos benne, hogyan építse fel a DAX-képletet (vagy ötlete sincs, hol kezdje). Ahelyett, hogy verné a fejét a falba, létrehozhat egy **gyorsmérőt** az **Évenkénti változás** számítással, és megnézheti az eredményt. Ahogy korábban, hozza létre a **Gyorsmérőt**, és nézze meg, hogyan jelenik meg a vizualizációban, hogyan működik a DAX-képlet, majd módosítsa közvetlenül a DAX-ot, vagy hozzon létre egy új mértéket, amíg a számítások a kívánt eredményt nem adják.
-
-Olyan, mintha egy villámtanár azonnal megválaszolná a mi-lenne-ha típusú kérdéseit. Ezeket a mértékeket mindig törölheti a modellből, ha nem felelnek meg. Ez is egyszerű, kattintson jobb gombbal a mértékre, és válassza a **törlés** lehetőséget.
-
-![](media/desktop-quick-measures/quick-measures_11.png)
-
-Ha már tökéletes a mérték, kedve szerint átnevezheti ugyanabból a helyi menüből.
+![Gyorsmérők törlése vagy átnevezése](media/desktop-quick-measures/quick-measures_11.png)
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 Figyelembe kell venni néhány korlátozást és szempontot.
 
-* A **Gyorsmérők** csak akkor érhetők el, ha módosítani tudja a modellt, egyes élő kapcsolatok esetében ez azonban nem lehetséges (a táblázatos SSAS élő kapcsolatok támogatottak, ahogy ezt korábban említettük).
-* A **Mezők** szakaszba felvett mértékek a jelentés bármelyik vizualizációjában használhatók.
-* A **Gyorsmérőhöz** tartozó DAX-ot bármikor megtekintheti, ehhez jelölje ki a létrehozott mértéket a **Mezők** szakaszban, és a képlet megjelenik a **Képletsávban**.
-* Nem tud időintelligencia gyorsmérőt létrehozni, ha DirectQuery módban dolgozik. Az ezekben a gyorsmérőkben használt DAX-függvények negatív hatással vannak a teljesítményre, amikor a program lefordítja őket T-SQL-utasításokká az adatforrásnak való küldéshez.
+- A **Mezők** panelhez hozzáadott gyorsmérőket a jelentés bármely vizualizációjával használhatja.
+- A gyorsmérőhöz tartozó DAX-ot bármikor megtekintheti, ehhez jelölje ki a mértéket a **Mezők** szakaszban, és a képlet megjelenik a képletsávban.
+- A gyorsmérők csak akkor érhetők el, ha a modell módosítható. Ez nincs így, ha egyes élő kapcsolatokkal dolgozik. A SSAS táblázatos élő kapcsolatok az előzőekben leírtak szerint támogatottak.
+- Nem tud időintelligencia gyorsmérőt létrehozni, ha DirectQuery módban dolgozik. Az ezekben a gyorsmérőkben használt DAX-függvények negatív hatással vannak a teljesítményre, amikor a program T-SQL-utasításokká fordítja le őket az adatforrásnak való küldéshez.
 
-> [!WARNING]
-> A gyorsmérők jelenleg *csak* olyan DAX-utasításokat hoznak létre, ahol a vesszők argumentumelválasztóként funkcionálnak. Ha az Ön **Power BI Desktop**-verziója olyan nyelvre van lokalizálva, amely tizedeselválasztóként használja a vesszőket, a gyorsmérők nem fognak megfelelően működni.
-> 
-> 
+> [!IMPORTANT]
+> A gyorsmérők DAX-utasításaiban a vesszők csak argumentumelválasztóként funkcionálnak. Ha az Ön Power BI Desktop-verziója olyan nyelvű, amely tizedeselválasztóként használja a vesszőket, a gyorsmérők nem fognak megfelelően működni.
 
 ### <a name="time-intelligence-and-quick-measures"></a>Az időintelligencia és a gyorsmérők
-A **Power BI Desktop** 2017. októberi frissítésével kezdve a saját egyéni dátumoszlopait használhatja az időintelligenciát használó **gyorsmérőkhöz**. Ha külső táblázatos modellt használ, ellenőrizze, hogy a modell létrehozásakor az adott tábla elsődleges dátum oszlopa Dátum táblaként lett-e megjelölve, amint az [ebben](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular) a cikkben szerepel. Ha saját dátumtáblát importál, ügyeljen rá, hogy dátumtáblaként jelölje meg. Ennek módjáról [ebben a cikkben](https://docs.microsoft.com/power-bi/desktop-date-tables) olvashat.
+Használhatja saját egyéni dátumoszlopait az időintelligenciát használó gyorsmérőkhöz. Ha egy külső táblázatos modellt használ, ellenőriznie kell, hogy a modell létrehozásakor az adott tábla elsődleges dátum oszlopa dátumtáblázatként lett-e megjelölve, amint az a [Jelölés megadása dátumtáblázatként az időintelligencia használatához](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular) című cikkben szerepel. Ha egy saját dátumtáblázatot importál, győződjön meg arról, hogy az dátumtáblázatként van megjelölve, ahogy az a [Dátumtáblák beállítása és használata a Power BI Desktopban](desktop-date-tables.md) című cikkben szerepel.
 
 ### <a name="additional-information-and-examples"></a>További információ és példák
-Úgy tervezzük, hogy példákkal és útmutatókkal bővítjük az összes **gyorsmérők** számítást, ezért érdemes hamarosan újra áttekintenie az ezzel foglalkozó cikk frissítéseit.
-
-Van olyan ötlete egy **gyorsmérőre**, amely még nem valósult meg? Remek! Látogasson el [erre az oldalra](https://go.microsoft.com/fwlink/?linkid=842906), és küldje be azokat a **gyorsmérőkre** vonatkozó ötleteit (DAX-képlettel együtt), amelyeket viszont szeretne látni a **Power BI Desktopban**, mi pedig megvizsgáljuk, hogy bekerülhet-e a **gyorsmérők** egy jövőbeli kiadásába.
+Van olyan ötlete egy gyorsmérőre, amely még nem valósult meg? Remek! Látogasson el [Power BI Ideas](https://go.microsoft.com/fwlink/?linkid=842906) oldalra, és küldje be azokat a gyorsmérőkre vonatkozó ötleteit a DAX-képletekkel együtt, amelyeket viszont szeretne látni a Power BI Desktopban. Ezután megvizsgáljuk, hogy azok bekerülhetnek-e a gyorsmérők egy jövőbeli kiadásába.
 

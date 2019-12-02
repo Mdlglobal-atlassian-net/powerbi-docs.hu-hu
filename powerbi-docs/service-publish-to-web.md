@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9f8da4a5f37eb1e652dd2125dd588febf49fb01b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 1fd640922f132f56a03b37ed59a6267a5af83d00
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871849"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311709"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Webes közzététel a Power BI-ból
 
@@ -135,7 +135,8 @@ A Power BI szolgáltatás adatforrásainak és jelentéseinek túlnyomó többs�
 - ArcGIS Maps for Power BI-vizualizációk.
 - Jelentésszintű DAX-mértékeket tartalmazó jelentések.
 - Egyszeri bejelentkezési adatlekérdezési modellek.
-- [Védett bizalmas vagy szellemi tulajdont képező információk](#publish-to-web-from-power-bi).
+- Gondoskodjon a bizalmas vagy saját információk biztonságáról.
+- [Megosztott és minősített adathalmazok](service-datasets-share.md).
 - A **Beágyazás** lehetőség automatikus hitelesítés funkciója nem működik a Power BI JavaScript API-jával. A Power BI JavaScript API-hoz a [felhasználó az adatok tulajdonosa](developer/embed-sample-for-your-organization.md) módszert kell használnia.
 
 ## <a name="tenant-setting"></a>Bérlőbeállítások

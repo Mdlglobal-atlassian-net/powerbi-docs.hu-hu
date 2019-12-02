@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b715cd42ea221f62258b66eee71b6525b2015ae1
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: d28028c7b75bedae958df77c743c52b44c4437d9
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128174"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311726"
 ---
 # <a name="conditional-formatting-in-tables"></a>Táblázatok feltételes formázása 
 A táblázatok feltételes formázásával a cellák értéke, illetve más értékek vagy mezők alapján határozhat meg egyéni cellaszíneket, akár színátmenetek használatával is. A cellák értékei adatsávokkal is megjeleníthetők. 
@@ -139,7 +139,7 @@ A vizualizációk színezéséhez a [https://www.w3.org/TR/css-color-3/](https:/
 A feltételes táblázatformázás használatakor érdemes figyelembe venni néhány szempontot:
 
 * A feltételes formázás csak **Mátrix** vizualizációkra lesz alkalmazva, és nem vonatkozik a részösszegekre és a teljes összegekre. 
-* A feltételes formázás nincs alkalmazva az **Összeg** sorra
+* A rendszer nem alkalmaz feltételes formázást a **Total** sorra.
 * Minden olyan tábla, amely nem rendelkezik csoportosítással, egyetlen sorban jelenik meg, amely nem támogatja a feltételes formázást.
 * Ha színátmenetes formátumot használ automatikus maximális/minimális értékekkel vagy százalékos szabályokat alkalmazó szabály-alapú formázással, a feltételes formázás nem alkalmazható, ha az adatokban NaN értékek szerepelnek. A NaN jelentése „nem szám” (angolul „Not a number”), amit leggyakrabban a nullával osztás hibája okoz. Ezeket a hibákat a [DIVIDE() DAX-függvény](https://docs.microsoft.com/dax/divide-function-dax) használatával kerülheti el.
 

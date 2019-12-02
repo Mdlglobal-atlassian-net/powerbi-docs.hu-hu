@@ -10,18 +10,18 @@ ms.date: 07/15/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1966a9ea38f8ff9d1517b4df5ed0db1254ddf80d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cb28db10eecdc32f844e29c8beea178f08fbf920
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881786"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410863"
 ---
 # <a name="manage-data-sources"></a>Adatforrások kezelése
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-A Power BI sokféle helyszíni adatforrást támogat, és ezek mindegyikéhez saját követelmények tartoznak. Egy átjáró használható egyetlen adatforráshoz vagy több adatforráshoz. Az itt tárgyalt példában adatforrásként SQL Server hozzáadását mutatjuk be. A lépések más adatforrások esetén is hasonlók.
+A Power BI sokféle [helyszíni adatforrást](power-bi-data-sources.md) támogat, és ezek mindegyikéhez saját követelmények tartoznak. Egy átjáró használható egyetlen adatforráshoz vagy több adatforráshoz. Az itt tárgyalt példában adatforrásként SQL Server hozzáadását mutatjuk be. A lépések más adatforrások esetén is hasonlók.
 
 Az adatforrás-kezelési műveletek többsége API-k használatával is végrehajtható. További információ: [REST API-k (Átjárók)](/rest/api/power-bi/gateways).
 
@@ -117,56 +117,7 @@ Amikor hozzáad egy adatforrást az átjáróhoz, meg kell adnia az adatforrás 
 
 ## <a name="list-of-available-data-source-types"></a>Elérhető adatforrástípusok listája
 
-A helyszíni adatátjáró az alábbi adatforrásokat támogatja a Power BI-hoz. A helyszíni adatforrásokon kívül a tűzfal, VPN-kapcsolat vagy virtuális hálózat mögötti forrásokhoz is szükség lehet adatátjáróra.
-
-| **Adatforrás** | **Élő lekérdezés/DirectQuery** | **Felhasználó által konfigurált kézi vagy ütemezett frissítés** |
-| --- | --- | --- |
-| Amazon Redshift |Igen |Igen |
-| Analysis Services |Igen |Igen |
-| AtScale-kockák |Igen |Igen |
-| Azure Active Directory |Nem |Igen |
-| Azure Blob Storage |Nem |Igen |
-| Azure DevOps Server |Nem |Igen |
-| Azure Table Storage |Nem |Igen |
-| BI-összekötő |Igen |Igen |
-| Denodo |Igen |Igen |
-| Dremio |Igen |Igen |
-| EmigoDataSourceConnector |Nem |Igen |
-| Essbase |Igen |Igen |
-| Exasol |Igen |Igen |
-| Fájl |Nem |Igen |
-| Mappa |Nem |Igen |
-| Paxata |Nem |Igen |
-| IBM DB2 |Igen |Igen |
-| IBM Informix-adatbázis |Nem |Igen |
-| IBM Netezza |Igen |Igen |
-| Impala |Igen |Igen |
-| Jethro ODBC |Igen |Igen |
-| Kyligence Enterprise |Igen |Igen |
-| MarkLogic ODBC |Igen |Igen |
-| Microsoft Graph Security |Nem |Igen |
-| MySQL |Nem |Igen |
-| ODBC |Nem |Igen |
-| OData |Nem |Igen |
-| OLE DB |Nem |Igen |
-| Oracle |Igen |Igen |
-| PostgreSQL |Nem |Igen |
-| QubolePresto |Igen |Igen |
-| Quick Base Connector |Nem |Igen |
-| SAP Business Warehouse üzenetkezelési kiszolgáló |Igen |Igen |
-| SAP Business Warehouse-kiszolgáló |Igen |Igen |
-| SAP HANA |Igen |Igen |
-| SQL Server |Igen |Igen |
-| SharePoint |Nem |Igen |
-| Snowflake |Igen |Igen |
-| Spark |Igen |Igen |
-| SurveyMonkey |Nem |Igen |
-| Sybase |Nem |Igen |
-| TeamDesk.Database |Nem |Igen |
-| Teradata |Igen |Igen |
-| Vertica |Igen |Igen |
-| Web |Nem |Igen |
-| Workforce Dimensions |Nem |Igen |
+Tudnivalók a helyszíni adatátjáró által támogatott adatforrásokról: [Power BI-adatforrások](power-bi-data-sources.md).
 
 ## <a name="next-steps"></a>Következő lépések
 

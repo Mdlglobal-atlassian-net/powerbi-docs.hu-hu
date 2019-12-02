@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: c470eba3998e04fde8c00c619077d5d8db444b42
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 06e46413be709ac3eda2102332740d709092187e
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099735"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265336"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
 Ezen az oldalon a **Power BI szolgáltatás** ismert problémáit és új funkcióit ismertetjük. Az újdonságokra vonatkozó kapcsolódó információk:
@@ -30,7 +30,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
 ### <a name="october-2019"></a>2019. október
-* Új Microsoft Flow-művelet Power BI-adathalmazok frissítéséhez.
+* Új Power Automate-művelet a Power BI-adathalmazok frissítéséhez.
 * [Partnerlista](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) jelentésekhez és irányítópultokhoz a Power BI szolgáltatásban.
 
 ## <a name="previous-months-2019"></a>Korábbi hónapok (2019)
@@ -227,7 +227,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * Az Office 365 naplózási portáljának [Power BI-naplói](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) világszerte elérhetők.
 * Megjelent a [fejlesztői eszközök és az egyéni vizualizációs API-k](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) 1.4-es kiadása.
 * A [valós idejű streamelési szolgáltatáskészlet](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) általánosan elérhető.
-* [Adatok leküldése a Power BI-nak a Microsoft Flow segítségével](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) kódolás nélkül.
+* [Adatok leküldése a Power BI-nak a Power Automate segítségével](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) kódolás nélkül.
 * Előzetes verzió: [Előfizetés a jelentésoldalakra](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) az adatok áttekintéséhez.
 * Több információ az alkalmazottak és a partnerek Azure AD-felhasználási szokásairól az Azure AD tartalomcsomaggal.
 
@@ -530,7 +530,6 @@ Részletes információkat, többek között egy, a frissítéseket ismertető v
 
 * Adatkészletek trendjeinek és mintáinak automatikus feltárása a gyors elemzésekkel: [videó](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) vagy [cikk](consumer/end-user-insights.md)
 * [VMob-adatok megjelenítése a Power BI-ban](https://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
-* [Power BI-integráció a Cortanával](https://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [A Vállalati Power BI Gateway előzetes verziója](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
 * Új tartalomcsomag: [A Bing keresési elemzései a Power BI-irányítópultokon](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
 * Új fejlesztőközpontú fejlesztések: [Két új API és könnyebb alkalmazásregisztráció](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)

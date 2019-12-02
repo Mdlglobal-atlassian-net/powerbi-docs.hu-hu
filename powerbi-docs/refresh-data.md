@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 422d742748fc6880b0636bd3a0c5de7011a3ff0a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 28a6aa8659411b829e6982e7c766e03d683871fd
+ms.sourcegitcommit: 982ffaa8eb91897f48221a816970671f4a92e6d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860795"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74415437"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
 
@@ -105,7 +105,14 @@ Azt is fontos hangsúlyozni, hogy a napi frissítések megosztott kapacitásokra
 
 Ha a OneDrive-ban vagy a SharePoint Online-ban tárolt Power BI Desktop-fájl, Excel-munkafüzet vagy vesszővel tagolt (.csv) adatfájl alapján hozott létre adathalmazokat és jelentéseket, akkor a Power BI egy másik típusú frissítést, úgynevezett OneDrive-frissítést hajt végre. További információ: [Adatok beolvasása a Power BI-ba fájlokból](service-get-data-from-files.md).
 
-Az olyan adathalmaz-frissítésekkel ellentétben, amikor a Power BI egy adatforrásól importál adatokat egy adathalmazba, a OneDrive-frissítés az adathalmazokat és jelentéseket szinkronizálja azok forrásfájljaival. A Power BI alapértelmezés szerint körülbelül óránként ellenőrzi, hogy egy OneDrive-ban vagy SharePoint Online-ban tárolt fájlhoz csatlakozó adathalmaz igényel-e szinkronizálást. A múltbeli szinkronizálási ciklusokat a frissítési előzmények OneDrive lapján tekintheti át. Az alábbi képernyőképen egy mintaadathalmaz egy befejezett szinkronizálási ciklusa látható.
+Az olyan adathalmaz-frissítésekkel ellentétben, amikor a Power BI egy adatforrásól importál adatokat egy adathalmazba, a OneDrive-frissítés az adathalmazokat és jelentéseket szinkronizálja azok forrásfájljaival. A Power BI alapértelmezés szerint körülbelül óránként ellenőrzi, hogy egy OneDrive-ban vagy SharePoint Online-ban tárolt fájlhoz csatlakozó adathalmaz igényel-e szinkronizálást.
+
+> [!IMPORTANT]
+> Legyen körültekintő a fájlok OneDrive-on történő kezelésekor. Amikor adatforrásként állít be egy OneDrive-fájlt, a Power BI a fájl tételazonosítójára hivatkozik a frissítés végrehajtásakor, ami néhány esetben problémákat okozhat. Példaként vegyünk egy olyan forgatókönyvet egy mesterfájllal (_A_), amely rendelkezik egy éles környezetbeli másolattal (_B_), és Ön beállítja, hogy a OneDrive frissítse a B fájlt. Ha ezután az A fájlt a B fájl fölé _másolja_, a másolási művelet törli a régi B fájlt, és létrehoz egy eltérő tételazonosítóval rendelkező új B fájlt, ami megszakítja a OneDrive általi frissítést. Ehelyett fel kell töltenie és le kell cserélnie a B fájlt, így megőrizve az eredeti tételazonosítót.
+
+A fájlt áthelyezheti egy másik helyre (például áthúzással), ekkor a frissítés továbbra is működni fog, mivel a PBI továbbra is felismeri a tételazonosítót. Ha azonban egy másik helyre másolja a fájlt, egy új fájlpéldány és egy új tételazonosító jön létre. Ezért a Power BI-fájlhivatkozás már nem lesz érvényes, és a frissítés nem sikerül.
+
+A múltbeli szinkronizálási ciklusokat a frissítési előzmények OneDrive lapján tekintheti át. Az alábbi képernyőképen egy mintaadathalmaz egy befejezett szinkronizálási ciklusa látható.
 
 ![Frissítési előzmények](media/refresh-data/refresh-history.png)
 

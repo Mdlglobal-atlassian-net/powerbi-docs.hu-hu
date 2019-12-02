@@ -2,19 +2,19 @@
 title: Az Alakzatleképezések funkció használata a Power BI Desktopban (előzetes verzió)
 description: Relatív összehasonlítások létrehozása régiókhoz az Alakzatleképezések funkcióval a Power BI Desktopban
 author: mihart
-ms.reviewer: amanda
+ms.reviewer: amanda, justyna, sujata
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 800f7d3cd7f930f2c3411c21e94cadb7cda94c8c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: eac0c6fab686a3b5cf63d035ea19b52ab83aa339
+ms.sourcegitcommit: 768e1e4b19fe8c7627010127c2420d63021cb542
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871127"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199459"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Az Alakzatleképezések funkció a Power BI Desktopban (előzetes verzió)
 
@@ -198,28 +198,23 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 | ID | név | név (magyarul) |
 | --- | --- | --- |
-| Alsace |Alsace |Alsace |
-| Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
-| Provence-Alpes-Côte d'Azur |Provence-Alpes-Côte d'Azur |Provence-Alpes-Côte d'Azur |
-| Poitou-Charentes |Poitou-Charentes |Poitou-Charentes |
-| Picardie |Picardie |Pikárdia |
-| Loire mente |Loire mente |Loire mente |
-| Nord-Pas-de-Calais |Nord-Pas-de-Calais |Nord-Pas-de-Calais |
-| Midi-Pyrénées |Midi-Pyrénées |Midi-Pyrénées |
-| Lotaringia |Lotaringia |Lotaringia |
-| Limousin |Limousin |Limousin |
-| Languedoc-Roussillon |Languedoc-Roussillon |Languedoc-Roussillon |
-| Ile-del-France |Île-de-France |Île-de-France |
-| Haute-Normandie |Haute-Normandie |Felső-Normandia |
-| Franche-Comté |Franche-Comté |Franche-Comté |
-| Corse |Corse |Korzika |
-| Champagne-Ardenne |Champagne-Ardenne |Champagne-Ardenne |
-| Közép-Loire-völgy |Közép-Loire-völgy |Közép-Loire-völgy |
+| Auvergne-Rhone-Alpes |  |  |
+| Bourgogne-Franche-Comte |  |  |
 | Bretagne |Bretagne |Bretagne |
-| Bourgogne |Bourgogne |Burgundia |
-| Basse-Normandie |Basse-Normandie |Alsó-Normandia |
-| Auvergne |Auvergne |Auvergne |
-| Aquitania |Aquitania |Aquitania |
+| Közép-Loire-völgy |Közép-Loire-völgy |Közép-Loire-völgy |
+| Corse |Corse |Korzika |
+| Grand Est |  |  |
+| Guadeloupe | |   |
+| Felső-Franciaország |  |  |
+| Île-de-France |Île-de-France |Île-de-France |
+| Réunion |  |  |
+| Mayotte  |  |  |
+| Normandia |Normandia |  |
+| Új-Aquitania |  |  |
+| Okcitánia  |  |  |
+| Loire mente |Loire mente |Loire mente |
+| Provence-Alpes-Côte d'Azur |Provence-Alpes-Côte d'Azur |Provence-Alpes-Côte d'Azur |
+|  |  |  |
 
 ### <a name="germany-states"></a>Németország: Államok
 
