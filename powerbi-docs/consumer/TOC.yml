@@ -58,6 +58,8 @@
               href: end-user-pdf.md
             - name: Könyvjelző hozzáadása jelentéshez
               href: end-user-bookmarks.md
+            - name: Oldalakra osztott jelentések
+              href: end-user-paginated-report.md
         - name: Vizualizációk
           items:
             - name: Mire használhatom a vizualizációkat?
