@@ -16,10 +16,18 @@
           href: import-modeling-data-reduction.md
         - name: A DIVIDE függvény és a divide operátor (/)
           href: dax-divide-function-operator.md
+        - name: A SELECTEDVALUE használata a VALUES helyett
+          href: dax-selectedvalue.md
         - name: A lekérdezésdelegálás fontossága
           href: power-query-folding.md
         - name: A hibakezelő függvények megfelelő használata
           href: dax-error-functions.md
+        - name: Változók használata a képletek tökéletesítéséhez
+          href: dax-variables.md
+        - name: COUNTROWS a COUNT helyett
+          href: dax-countrows.md
+        - name: Ne konvertálja a BLANK-eket értékekre
+          href: dax-avoid-converting-blank.md
         - name: Adatfolyamokhoz ajánlott eljárások
           href: ../service-dataflows-best-practices.md
         - name: Útmutató a DirectQuery-modellhez a Power BI Desktopban

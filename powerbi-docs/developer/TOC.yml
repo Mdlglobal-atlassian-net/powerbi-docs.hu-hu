@@ -15,6 +15,8 @@
               href: power-bi-custom-visuals.md
         - name: Oktatóanyagok
           items:
+            - name: Vizuális koncepció
+              href: visuals/power-bi-visuals-concept.md
             - name: Power BI-vizualizáció fejlesztése
               href: visuals/custom-visual-develop-tutorial.md
             - name: Formázási lehetőségek hozzáadása
@@ -67,6 +69,8 @@
               href: visuals/high-contrast-support.md
             - name: Szeletelők szinkronizálásának engedélyezése
               href: visuals/enable-sync-slicers.md
+            - name: Lehatolási támogatás hozzáadása
+              href: visuals/drill-down-support.md
             - name: Power BI-vizualizációk hibáinak elhárítása
               href: power-bi-custom-visuals-troubleshoot.md
         - name: Hivatkozás
@@ -81,8 +85,14 @@
               href: visuals/event-service.md
             - name: Rendezés
               href: visuals/sort-options.md
-            - name: Interaktivitási eszközök
-              href: visuals/utils-interactivity-selections.md
+            - name: Honosítás
+              href: visuals/localization.md
+            - name: Eszközök Power BI-vizualizációkhoz
+              items:
+                - name: Interaktivitási eszközök
+                  href: visuals/utils-interactivity-selections.md
+                - name: Formázási eszközök
+                  href: visuals/utils-formatting.md
         - name: Erőforrások
           items:
             - name: Fejlesztői központ

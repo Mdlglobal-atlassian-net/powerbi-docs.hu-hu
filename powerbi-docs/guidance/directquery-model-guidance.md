@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: d7fcc054ccf0bea1a036eaf24cb9631a2abb3969
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: bfc1572e31269182e9ca63efbbf6934b90f84b66
+ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410880"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74478627"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Útmutató a DirectQuery-modellhez a Power BI Desktopban
 
@@ -99,7 +99,7 @@ A DirectQuery-adathalmazra épülő jelentések több módon is optimalizálhat�
     
 - **Először alkalmazza a szűrőket:** Amikor először tervez jelentéseket, azt javasoljuk, hogy a mezők vizualizációs mezőkre történő leképezése előtt minden vonatkozó szűrőt alkalmazzon (jelentés, oldal vagy vizualizáció szintjén). Ahelyett például, hogy az **Ország** és az **Értékesítések** mértékeket áthúzza, majd szűrést végez egy adott évre, először alkalmazza a szűrőt az **Év** mezőre. Ez azért fontos, mert a vizualizációk létrehozásának minden lépése elküld egy lekérdezést, és lehet ugyan módosításokat végezni az első lekérdezés teljesítése után is, de ez csak feleslegesen terheli az alapul szolgáló adatforrást. Ha először a szűrőket alkalmazza, azzal általában kevésbé költségessé és gyorsabbá teszi ezeket a közbeeső lekérdezéseket. Emellett a szűrők korai alkalmazásának elmulasztása esetén átlépheti a fentebb ismertetett egymillió soros határértéket.
 - **Korlátozza az egy oldalon található vizualizációk számát:** Egy jelentésoldal megnyitásakor (ha oldalszűrők vannak alkalmazva) az oldal összes vizualizációja frissítve lesz. A párhuzamosan elküldhető lekérdezések számára azonban a Power BI-környezet és a **Kapcsolatok maximális száma adatforrásonként** beállítás által meghatározott korlátozás van érvényben a korábban leírtak szerint. Az oldalon lévő vizualizációk számának növelésével egyre növekszik annak kockázata, hogy ezek egymás után lesznek frissítve. Ezáltal megnő a teljes oldal frissítéséhez szükséges idő és annak az esélye is, hogy a vizualizációk inkonzisztens eredményeket jelenítenek meg (a környezetfüggő adatforrások esetében). A fentiek miatt ajánlott korlátozni az oldalakon elhelyezett vizualizációk számát, és ehelyett több, egyszerűbb oldalt készíteni. Több kártyavizualizáció egyetlen többsoros kártyavizualizációval történő cseréje hasonló oldalelrendezéshez vezethet.
-- **A vizualizációk közötti interakció kikapcsolása:** A keresztkiemelési és keresztszűrési interakciókhoz lekérdezéseket kell küldeni a mögöttes adatforráshoz. Ha az interakciók nem feltétlenül szükségesek, ajánlott ezeket kikapcsolni, ha a felhasználó által végzett kijelölésekre adott reakció indokolatlanul lassú. Ezek az interakciók kikapcsolhatók az egész jelentésben (a Lekérdezések csökkentése cím szakaszban leírtak szerint), vagy esetenként, a [Vizualizációk közötti keresztszűrés Power BI-jelentésben](../consumer/end-user-interactions.md) című cikk leírása alapján.
+- **A vizualizációk közötti interakció kikapcsolása:** A keresztkiemelési és keresztszűrési interakciókhoz lekérdezéseket kell küldeni a mögöttes adatforráshoz. Ha az interakciók nem feltétlenül szükségesek, ajánlott ezeket kikapcsolni, ha a felhasználó által végzett kijelölésekre adott reakció indokolatlanul lassú. Ez az interakció ki is kapcsolható akár a teljes jelentésre vonatkozóan (lásd fentebb a lekérdezések csökkentésének beállításánál), vagy külön-külön is. További információt a [Vizualizációk közötti keresztszűrés Power BI-jelentésben](../consumer/end-user-interactions.md) című cikkben talál.
 
 A fenti optimalizálási technikák mellett a következő jelentéskészítési funkciók is hozzájárulhatnak a teljesítményproblémákhoz:
 
@@ -110,8 +110,8 @@ A fenti optimalizálási technikák mellett a következő jelentéskészítési 
     
     Ehhez két lekérdezést kell elküldeni az alapul szolgáló forrás felé:
     
-      - Az első lekérdezés lekéri a feltételnek (15 millió fölötti értékesítés) megfelelő kategóriákat
-      - Ez után a második lekérdezés lekéri a vizualizációhoz szükséges adatokat, és azokat a kategóriákat veszi fel, amelyek megfeleltek a WHERE utasításban szereplő feltételeknek
+    - Az első lekérdezés lekéri a feltételnek (15 millió fölötti értékesítés) megfelelő kategóriákat
+    - Ez után a második lekérdezés lekéri a vizualizációhoz szükséges adatokat, és azokat a kategóriákat veszi fel, amelyek megfeleltek a WHERE utasításban szereplő feltételeknek
     
     Ez a módszer általában jól működik, ha néhány száz vagy ezer kategória van, mint ebben a példában. Ha azonban a kategóriák száma sokkal több, a teljesítmény csökken (ráadásul ha egymilliónál több kategória felel meg a feltételnek, akkor a lekérdezés sikertelen lesz, a fentebb említett egymillió soros korlátozás miatt).
 - **Legjobb N szűrők:** Speciális szűrők definiálhatók a mérték szerinti rangsorban legmagasabb (vagy legalacsonyabb) N darab érték szűrésére. Így jeleníthető meg például a fenti vizualizációban a legjobb öt kategória. A mértékszűrőkhöz hasonlóan ehhez is két lekérdezést kell elküldeni az alapul szolgáló adatforrás felé. Az első lekérdezésre azonban a mögöttes forrás az összes kategóriát visszaadja, majd a legjobb N értéket a visszaadott eredmények alapján választja ki a rendszer. Ez az érintett oszlop számosságától függően teljesítményproblémákat okozhat (vagy a lekérdezés sikertelenségét az egymilliós határérték miatt).
@@ -127,7 +127,7 @@ Sokféle funkcionális és teljesítménybeli javítás érhető el egy DirectQu
 
 ## <a name="educate-users"></a>Felhasználók oktatása
 
-Fontos a felhasználóknak is megtanítani a DirectQuery-adathalmazokra épülő jelentésekkel végzett hatékony munkára. A jelentéskészítőknek érdemes elsajátítaniuk a [Jelentéstervek optimalizálása](#optimize-report-designs) című témakör tartalmát.
+Fontos a felhasználóknak is megtanítani a DirectQuery-adathalmazokra épülő jelentésekkel végzett hatékony munkára. A jelentéskészítőknek érdemes elsajátítaniuk a [Jelentéstervek optimalizálása](#optimize-report-designs section) című témakör tartalmát.
 
 Ajánlott a jelentések felhasználóival is megismertetni a DirectQuery-adathalmazokra épülő jelentéseket. Számukra is hasznos lehet, ha tisztában vannak az általános adatarchitektúrával, beleértve az ebben a cikkben is ismertetett korlátozásokat is. Jobb, ha tisztában vannak azzal, hogy a frissítések és az interaktív szűrések esetenként lassúak lehetnek. Ha a jelentések ismerik a teljesítményromlás okát, kevésbé valószínű, hogy elveszik a jelentésekbe és az adatokba vetett bizalmuk.
 
