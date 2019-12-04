@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 3ef9bd001e17c472216e501c6d38907087219959
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cd252572c3080f300592b52ddc0f25cefcf7f084
+ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875821"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74478662"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sorszintű biztonság a Power BI Embeddeddel
 
@@ -333,8 +333,7 @@ A felügyeleti portálon ezt az engedélyt nem lehet beállítani. Ennek az enge
 
 ### <a name="token-based-identity-limitations"></a>Jogkivonat-alapú identitás korlátozásai
 
-* Ez a képesség csak a Power BI Premiummal való használatot korlátozza.
-* A képesség helyszíni SQL Serverrel nem működik.
-* Ez a képesség több földrajzi hely esetén nem működik.
+* Az RLS-t csak akkor használhatja, ha dedikált kapacitással rendelkezik.
+* Az RLS helyszíni SQL Serverrel nem működik.
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

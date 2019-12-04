@@ -7,15 +7,15 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 11/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 05a134f50f9a09ae5b51578a5e4e5f0a01a95740
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e6e66a4459abefbc66ec4e70b882cddc4771facf
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871510"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565660"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI-irányítópult és -jelentés megosztása munkatársakkal és másokkal
 A *Megosztással* egyszerűen biztosíthatja néhány személy hozzáférését az irányítópultjaihoz és jelentéseihez. A Power BI-ban [többféle módon valósítható meg az irányítópultok és jelentések közös használata és terjesztése](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -24,9 +24,11 @@ A *Megosztással* egyszerűen biztosíthatja néhány személy hozzáférését 
 
 Akár a cégen belül, akár a cégen kívül oszt meg tartalmat, a megosztáshoz [Power BI Pro](service-features-license-type.md)-licencre van szükség. Ha a tartalom nem [Prémium kapacitást](service-premium-what-is.md) használ, akkor a megosztás címzettjeinek is Power BI Pro-licenccel kell rendelkezniük. 
 
-Az irányítópultok és jelentések megosztása a Power BI szolgáltatás legtöbb helyén elvégezhető: A Kedvencek, a Legutóbbi, A Velem megosztva (ha a tulajdonos engedélyezte a megosztást), a Saját munkaterület és egyéb helyekről. A megosztott irányítópultot vagy jelentést a címzettjei megtekinthetik és használhatják, de nem szerkeszthetik. Az irányítópultok és a jelentések adatait ugyanúgy látják, ahogyan Ön is, hacsak nem alkalmaz [sorszintű biztonságot (RLS-t)](service-admin-rls.md). A munkatársai, akikkel megosztotta a tartalmat, továbboszthatják azt másokkal, ha engedélyezi. A cégén kívüli címzettek is megtekinthetik és használhatják, de nem szerkeszthetik az irányítópultot vagy jelentést. 
+Az irányítópultok és jelentések megosztása a Power BI szolgáltatás legtöbb helyén elvégezhető: A Kedvencek, a Legutóbbi, a Saját munkaterület, a Velem megosztva, ha a tulajdonos engedélyezte. Más munkaterületekről is megoszthat, ha a munkaterületen [rendszergazda, tag vagy közreműködő](service-new-workspaces.md#roles-in-the-new-workspaces) szerepkörrel rendelkezik. 
 
-Irányítópultok azonban nem oszthatók meg a Power BI Desktopban. [Irányítópultot megoszthat bármely Power BI mobilalkalmazásból](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
+A megosztott irányítópultot vagy jelentést a címzettjei megtekinthetik és használhatják, de nem szerkeszthetik. Az irányítópultok és a jelentések adatait ugyanúgy látják, ahogyan Ön is, hacsak nem alkalmaz [sorszintű biztonságot (RLS-t)](service-admin-rls.md). A munkatársai, akikkel megosztotta a tartalmat, továbboszthatják azt másokkal, ha engedélyezi. A cégén kívüli címzettek is megtekinthetik és használhatják, de nem szerkeszthetik az irányítópultot vagy jelentést. 
+
+Közvetlenül a Power BI Desktopból nem lehetséges *megosztást* végezni. A [jelentéseket a Power BI Desktopból](desktop-upload-desktop-files.md) a Power BI szolgáltatásba teheti közzé. Irányítópultot azonban [megoszthat a Power BI mobilalkalmazásból](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
 
 ## <a name="video-share-a-dashboard"></a>Videó: Irányítópult megosztása
 Nézze meg, hogyan osztja meg Amanda az irányítópultját cégen belüli és azon kívüli munkatársaival. Ezután a videó alatt látható részletes utasításokat követve próbálkozzon meg a feladat elvégzésével.
@@ -39,22 +41,19 @@ Nézze meg, hogyan osztja meg Amanda az irányítópultját cégen belüli és a
 
 2. A felső mezőbe írja be a személyek, terjesztési csoportok vagy biztonsági csoportok teljes e-mail-címét. Dinamikus terjesztési listákkal nem oszthat meg irányítópultot. 
    
-   A megosztás címzettjei lehetnek a cégen kívüli címmel rendelkező személyek is, de ilyenkor figyelmeztetés jelenik meg.
+   A megosztás címzettjei lehetnek a cégen kívüli címmel rendelkező személyek is, de ilyenkor figyelmeztetés jelenik meg. A [szervezeten kívüli megosztásról](#share-a-dashboard-or-report-outside-your-organization) ebben a cikkben olvashat részletesebben.
    
    ![Figyelmeztetés külső megosztás esetén](media/service-share-dashboards/power-bi-share-dialog-warning.png) 
  
    >[!NOTE]
-   >A beviteli mező legfeljebb 100 felhasználót vagy csoportot engedélyez. Ha nagy mennyiségű felhasználóval szeretne megosztani valamit, célszerű létrehoznia egy irányítópultot egy munkaterületen, és [alkalmazásként terjesztenie](service-create-distribute-apps.md).
-   > 
-   > 
-
+   >A beviteli mező legfeljebb 100 különböző felhasználót vagy csoportot engedélyez. A [Több mint 100 felhasználóval történő megosztásról](#share-with-more-than-100-separate-users) szóló részben ebben a cikkben tájékozódhat arról, hogyan lehet több személlyel is megosztani tartalmat.
 
 3. Ha kívánja, hozzáfűzhet egy üzenetet. Ez nem kötelező.
 4. Jelölje be az **Irányítópult vagy jelentés megosztásának engedélyezése a címzetteknek** lehetőséget, hogy a munkatársai megoszthassák másokkal a tartalmakat.
    
-   A mások általi megosztás neve *újraosztás*. Akiknek engedélyezi, azok újraoszthatják az irányítópultot a Power BI szolgáltatásból vagy mobilalkalmazásokból, vagy továbbíthatják a meghívó e-mailt a cégen belüli más személyeknek. A meghívó egy hónap után lejár. A cégen kívüli személyek nem tudnak újraosztani. A tartalom tulajdonosaként kikapcsolhatja az újraosztás engedélyezését, és egyedi esetekre lebontva is engedélyezheti az újraosztást. [Megosztás letiltása vagy mások általi megosztás engedélyezésének megszüntetése](#stop-sharing-or-stop-others-from-sharing).
+   A mások általi megosztás neve *újraosztás*. Akiknek engedélyezi, azok újraoszthatják az irányítópultot a Power BI szolgáltatásból vagy mobilalkalmazásokból, vagy továbbíthatják a meghívó e-mailt a cégen belüli más személyeknek. A meghívó egy hónap után lejár. A cégen kívüli személyek nem tudnak újraosztani. A tartalom tulajdonosaként kikapcsolhatja az újraosztás engedélyezését, és egyedi esetekre lebontva is engedélyezheti az újraosztást. Lásd a [Megosztás leállítása vagy módosítása](#stop-or-change-sharing) részt ebben a cikkben.
 
-5. Ha kiválasztja az **Új tartalom az alapul szolgáló adathalmazokból történő létrehozásának engedélyezése a felhasználóknak** beállítást, a felhasználók létrehozhatnak saját jelentéseket más munkaterületeken az irányítópult adatkészlete alapján.
+5. Ha kiválasztja az **Új tartalom az alapul szolgáló adathalmazokból történő létrehozásának engedélyezése a felhasználóknak** beállítást, a felhasználók létrehozhatnak saját jelentéseket más munkaterületeken az irányítópult adatkészlete alapján. További információ [jelentések létrehozásáról más munkaterületen lévő adathalmazok alapján](service-datasets-discover-across-workspaces.md).
 
 1. Válassza a **Megosztás** lehetőséget.
    
@@ -66,10 +65,10 @@ Nézze meg, hogyan osztja meg Amanda az irányítópultját cégen belüli és a
    
    ![Velem megosztva listázó oldal](media/service-share-dashboards/power-bi-shared-with-me-new-look.png)
    
-   Amikor egy cégen kívüli címzett a hivatkozásra kattint, akkor látni fogja az irányítópultot vagy a jelentést, de nem a szokásos Power BI-portálon. További információ: [Irányítópult vagy jelentés megosztása cégen kívüli személyekkel](#share-a-dashboard-or-report-outside-your-organization).
+   Amikor egy cégen kívüli címzett a hivatkozásra kattint, akkor látni fogja az irányítópultot vagy a jelentést, de nem a szokásos Power BI-portálon. A [szervezeten kívüli megosztásról](#share-a-dashboard-or-report-outside-your-organization) ebben a cikkben olvashat részletesebben.
 
 ## <a name="see-who-has-access-to-a-dashboard-or-report"></a>Az irányítópulthoz vagy a jelentéshez hozzáférő felhasználók megtekintése
-Előfordul, hogy tudnia kell, kikkel osztott meg tartalmat, és hogy ők kivel osztották újra:
+Előfordul, hogy tudnia kell, kikkel osztott meg tartalmat, és hogy ők kivel osztották újra.
 
 1. Az irányítópultok vagy jelentések listájában vagy magán az irányítópulton vagy jelentésen válassza a **Megosztás** lehetőséget ![Megosztás ikon](media/service-share-dashboards/power-bi-share-icon.png). 
 2. Az **Irányítópult megosztása** vagy **Jelentés megosztása** párbeszédpanelen válassza a **Hozzáférés** lehetőséget.
@@ -78,7 +77,26 @@ Előfordul, hogy tudnia kell, kikkel osztott meg tartalmat, és hogy ők kivel o
 
     A cégen kívüli személyek **Vendég** hozzáféréssel jelennek meg.
 
-## <a name="stop-sharing-or-stop-others-from-sharing"></a>Megosztás letiltása vagy mások általi megosztás engedélyezésének megszüntetése
+    Ebben a nézetben [leállíthatja vagy módosíthatja a megosztási engedélyeket](#stop-or-change-sharing) ebben a cikkben. 
+
+## <a name="share-a-dashboard-or-report-outside-your-organization"></a>Irányítópult vagy jelentés megosztása cégen kívüli személyekkel
+A megosztás cégen kívüli címzettjei e-mailt kapnak a megosztott irányítópultra vagy jelentésre mutató hivatkozással. Ahhoz, hogy láthassák, hogy Ön mit osztott meg velük, be kell jelentkezniük a Power BI-ba. Ha nem rendelkeznek Power BI Pro-licenccel, akkor igényelhetnek egyet, miután a hivatkozásra kattintottak.
+
+Bejelentkezés után a saját böngészőjükben tekinthetik meg a megosztott irányítópultot vagy jelentést, nem pedig a szokásos Power BI-portálon. Az irányítópult vagy jelentés jövőbeni eléréséhez menteniük kell a hivatkozást a kedvencek közé.
+
+Ennek az irányítópultnak vagy jelentésnek a tartalmát egyáltalán nem módosíthatják. Használhatják a diagramokat és megváltoztathatják a szűrőket vagy a szeletelőket, de a változásokat nem menthetik. 
+
+A megosztott irányítópultot vagy jelentést csak a közvetlen címzettek láthatják. Ha az e-mailt például a Vicki@contoso.com címre küldte, akkor az irányítópultot csak Vicki tekintheti meg. Az irányítópultot senki más nem láthatja, még ha Vicki el is küldi nekik a hivatkozást. Vickinek ugyanazt az e-mail-címet kell használnia a hozzáféréshez. Ha más e-mail-címmel jelentkezik be, akkor ő sem fog hozzáférni az irányítópulthoz.
+
+A cégen kívüli személyek egyáltalán nem fogják látni az adatokat, ha szerepkör- vagy sorszintű biztonság van alkalmazva a helyszíni Analysis Services rendszerbeli táblázatos modellekben.
+
+Ha Power BI-mobilalkalmazásból küld hivatkozást cégen kívüli címzettnek, akkor a hivatkozásra kattintva az irányítópult böngészőben fog megnyílni, nem a Power BI-mobilalkalmazásban.
+
+### <a name="allow-external-users-to-edit-content"></a>Tartalom szerkesztésének engedélyezése külső felhasználók számára
+
+A Power BI-rendszergazda engedélyezheti, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat. Ebben az esetben a felhasználók nem csak a fogyasztói élményt használhatják. A szervezeten belül szerkeszthetik és kezelhetik is a tartalmakat. Lásd a [Power BI-tartalmak terjesztése Azure AD B2B külső vendégfelhasználóknak](service-admin-azure-ad-b2b.md) című témakört.
+
+## <a name="stop-or-change-sharing"></a>Megosztás leállítása vagy módosítása
 Az újraosztást csak az irányítópult vagy jelentés tulajdonosa kapcsolhatja be és ki.
 
 ### <a name="if-you-havent-sent-the-sharing-invitation-yet"></a>Ha még nem küldte el a megosztási meghívót
@@ -96,37 +114,29 @@ Az újraosztást csak az irányítópult vagy jelentés tulajdonosa kapcsolhatja
    * **Olvasás**, hogy a címzett ne oszthassa meg az irányítópultot másokkal.
    * **Hozzáférés letiltása**, hogy az adott személy ne is tekinthesse meg a megosztott tartalmat.
 
-4. A **Hozzáférés letiltása** párbeszédablakban arra is lehetősége van, hogy a kapcsolódó tartalmakhoz (például jelentésekhez vagy adatkészletekhez) való hozzáférést is letiltsa. Ha ilyen figyelmeztető ikonnal ![Power BI figyelmeztető ikon](media/service-share-dashboards/power-bi-warning-icon.png) rendelkező elemet távolít el, a problémamentes megjelenítés érdekében ajánlatos a kapcsolódó tartalmat is eltávolítani.
+4. A **Hozzáférés letiltása** párbeszédablakban arra is lehetősége van, hogy a kapcsolódó tartalmakhoz (például jelentésekhez vagy adatkészletekhez) való hozzáférést is letiltsa. Ha ilyen figyelmeztető ikonnal ![Power BI figyelmeztető ikon](media/service-share-dashboards/power-bi-warning-icon.png) rendelkező elemet távolít el, ajánlatos a kapcsolódó tartalmat is eltávolítani. Ellenkező esetben nem jelenik meg megfelelően.
 
     ![A Power BI megosztásra figyelmeztető párbeszédpanele](media/service-share-dashboards/power-bi-sharing-warning-dialog.png)
-
-## <a name="share-a-dashboard-or-report-outside-your-organization"></a>Irányítópult vagy jelentés megosztása cégen kívüli személyekkel
-A megosztás cégen kívüli címzettjei e-mailt kapnak a megosztott irányítópultra vagy jelentésre mutató hivatkozással, és a megtekintéséhez be kell jelentkezniük a Power BI-ba. Ha nem rendelkeznek Power BI Pro-licenccel, akkor igényelhetnek egyet, miután a hivatkozásra kattintottak.
-
-Bejelentkezés után a saját böngészőjükben tekinthetik meg a megosztott irányítópultot vagy jelentést, nem pedig a szokásos Power BI-portálon. Az irányítópult vagy jelentés jövőbeni eléréséhez menteniük kell a hivatkozást a kedvencek közé.
-
-Ennek az irányítópultnak vagy jelentésnek a tartalmát egyáltalán nem módosíthatják. Használhatják a diagramokat és megváltoztathatják a szűrőket vagy a szeletelőket, de a változásokat nem menthetik. 
-
-A megosztott irányítópultot vagy jelentést csak a közvetlen címzettek láthatják. Ha az e-mailt például a Vicki@contoso.com címre küldte, akkor az irányítópultot csak Vicki tekintheti meg. Az irányítópultot senki más nem láthatja, még a hivatkozás birtokában sem. Vickinek ugyanazt az e-mail-címet kell használnia a hozzáféréshez. Ha más e-mail-címmel jelentkezik be, akkor ő sem fog hozzáférni az irányítópulthoz.
-
-A cégen kívüli személyek nem fogják látni az adatokat, ha szerepkör- vagy sorszintű biztonság van alkalmazva a helyszíni Analysis Services rendszerbeli táblázatos modellekben.
-
-Ha Power BI-mobilalkalmazásból küld hivatkozást cégen kívüli címzettnek, akkor a hivatkozásra kattintva az irányítópult böngészőben fog megnyílni, nem a Power BI-mobilalkalmazásban.
-
-Ha [engedélyezi a vendégfelhasználóknak, hogy szerkeszthessék és kezelhessék a szervezeti tartalmakat](service-admin-portal.md#export-and-sharing-settings), nem vonatkoznak rájuk az alapértelmezett használati funkciók. [További információ](service-admin-azure-ad-b2b.md).
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 Irányítópultok vagy jelentések megosztásakor vegye figyelembe a következőket:
 
 * Ön és a munkatársai általában ugyanazokat az adatokat látják az irányítópulton vagy jelentésen. Ha tehát Ön több adathoz jogosult hozzáférni mint ők, akkor az irányítópultján vagy jelentésén ők is látni fogják az összes adatát. Ha azonban [sorszintű biztonság (RLS)](service-admin-rls.md) van érvényben egy irányítópult agy jelentés alapjául szolgáló adatkészletben, akkor a hozzáférhető adatok köre az egyes személyek hitelesítő adatai alapján lesz meghatározva.
-* Mindenki, akivel Ön megosztotta az irányítópultot, megtekintheti és használhatja a vonatkozó jelentéseket az [Olvasó nézetben](consumer/end-user-reading-view.md#reading-view). Nem hozhatnak létre jelentéseket és nem menthetik a meglévő jelentések módosításait.
+* Mindenki, akivel Ön megosztotta az irányítópultot, megtekintheti és használhatja a vonatkozó jelentéseket az [Olvasó nézetben](consumer/end-user-reading-view.md#reading-view). Általánosságban nem hozhatnak létre jelentéseket és nem menthetik a meglévő jelentések módosításait. Ha azonban kiválasztja az **Új tartalom az alapul szolgáló adathalmazokból történő létrehozásának engedélyezése a felhasználóknak** beállítást, a felhasználók létrehozhatnak saját jelentéseket más munkaterületeken az irányítópult vagy jelentés adatkészlete alapján.
 * Az adatkészletet senki nem láthatja és nem töltheti le, de közvetlenül elérhetik azt az Elemzés az Excelben funkcióval. A rendszergazda úgy korlátozhatja az Elemzés az Excelben funkciót, hogy egy adott csoporton belül mindenkire kiterjeszti a korlátozást. A korlátozás azonban a csoport minden tagjára vonatkozik, és minden olyan munkaterületre kiterjed, amelyhez a csoport tartozik.
 * Manuálisan mindenki [frissítheti az adatokat](refresh-data.md).
 * Ha a levelezéshez az Office 365-öt használja, akkor a megosztás címzettjeként egy terjesztési csoportot is megadhat a csoporthoz tartozó e-mail-cím beírásával.
-* Az Önnel egy e-mail-tartományban lévő munkatársai, valamint a más, de ugyanazon a bérlőn belül regisztrált tartományok tagjai másokkal is megoszthatják az irányítópultot. Ha például a contoso.com és a contoso2.com tartományok azonos bérlőben vannak regisztrálva, az Ön e-mail-címe pedig konrads@contoso.com, akkor a ravali@contoso.com és a gustav@contoso2.com cím is megoszthatják az irányítópultot, feltéve, hogy Öntől erre engedélyt kaptak.
-* Ha munkatársai már hozzáférnek egy adott irányítópulthoz vagy jelentéshez, akkor nekik az irányítópultról vagy jelentésből kimásolt közvetlen hivatkozást is küldhet. Példa: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
+* Az Önnel egy e-mail-tartományban lévő munkatársai, valamint a más, de ugyanazon a bérlőn belül regisztrált tartományok tagjai másokkal is megoszthatják az irányítópultot. Legyen például a contoso.com és a contoso2.com tartomány egy bérlőn belül regisztrálva, és az Ön e-mail-címe konrads@contoso.com. Ekkor gustav@contoso2.com és ravali@contoso.com egyaránt megoszthatja az Ön irányítópultját, ha Ön engedélyezte számukra a megosztást.
+* Ha munkatársai már hozzáférnek egy adott irányítópulthoz vagy jelentéshez, akkor nekik az irányítópultról vagy jelentésből kimásolt közvetlen hivatkozást is küldhet. Például: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 * Hasonló módon [a mögöttes jelentésre mutató közvetlen hivatkozást is küldhet](service-share-reports.md) az adott irányítópulthoz hozzáféréssel rendelkező munkatársaknak. 
-* Egy megosztási műveletben legfeljebb 100 felhasználóval vagy csoporttal oszthat meg tartalmat. Egy elemhez azonban több mint 500 felhasználónak adhat hozzáférést. Ehhez megoszthatja a tartalmat többször úgy, hogy egyenként megadja a kívánt felhasználókat, vagy megoszthat egy olyan felhasználói csoportnak is, amely tartalmazza az összes kívánt felhasználót.
+
+### <a name="share-with-more-than-100-separate-users"></a>Megosztás több mint 100 különböző felhasználóval
+
+Egy megosztási műveletben legfeljebb 100 felhasználóval vagy csoporttal oszthat meg tartalmat. Egy elemhez azonban több mint 500 felhasználónak adhat hozzáférést. Íme néhány javaslat:
+
+- Többször is megoszthatja a tartalmat a felhasználók egyenkénti megadásával.
+- Olyan csoporttal osszon meg, amely az összes felhasználót tartalmazza. 
+- Hozza létre a jelentést vagy az irányítópultot egy munkaterületen, majd hozzon létre egy alkalmazást a munkaterületről. Az alkalmazást sokkal több személlyel is megoszthatja. További információ az [alkalmazások Power BI-beli közzétételéről](service-create-distribute-apps.md).
 
 ## <a name="troubleshoot-sharing"></a>A megosztás hibaelhárítása
 
@@ -136,7 +146,7 @@ Előfordulhat, hogy a megosztás címzettjeinek lakat ikon vagy „Engedély sz�
 
 ![Blokkolt Power BI-csempe](media/service-share-dashboards/power-bi-locked_tile_small.png)
 
-Ha ez történik, engedélyt kell adnia nekik az alapul szolgáló adatkészlethez való hozzáféréshez:
+Ha ez történik, engedélyt kell adnia nekik az alapul szolgáló adatkészlethez való hozzáféréshez.
 
 1. A tartalomlistában nyissa meg az **Adatkészlet** lapot.
 
@@ -163,8 +173,8 @@ Az irányítópult vagy jelentés megosztásához rendelkeznie kell a mögöttes
 
 
 ## <a name="next-steps"></a>Következő lépések
-* Visszajelzés küldene? Mondja el javaslatait a [Power BI-közösség webhelyén](https://community.powerbi.com/).
+
 * [Irányítópultok és jelentések közös használata és megosztása](service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Szűrt Power BI-jelentés megosztása](service-share-reports.md).
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
+* [Szűrt Power BI-jelentés megosztása](service-share-reports.md)
+* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

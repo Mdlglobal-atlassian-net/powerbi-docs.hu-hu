@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 941981e1f84cf3d7a74a156e4f1c88f57e061ad2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 32d731c354d848809d336392ef51f667b14427d8
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73854660"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565678"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Csatlakozás a Project Web Apphoz a Power BI használatával
 A Microsoft Project Web App a projektportfólió-kezeléshez (PPM) és a mindennapi munkához nyújt rugalmas online megoldást. A Project Web App lehetővé teszi a cég számára, hogy megtegye az előkészületeket, rangsorolja a projektporfólió-befektetéseket, és elérje a tervezett üzleti eredményt. A Power BI Project Web App sablonalkalmazásával fontos információkat ismerhet meg a Project Web App elemzéseiből, így könnyebben kezelheti a projekteket, a portfóliókat és az erőforrásokat.
@@ -41,7 +41,7 @@ Csatlakozzon a Power BI [Project Web App sablonalkalmazásához](https://appsour
 6. **Az új alkalmazás használatának első lépései** résznél válassza az **Adatok csatlakoztatása** lehetőséget.
    
    ![Csatlakozás adatokhoz](media/service-connect-to-project-online/mproject.png)
-7. A **Project Web App URL** (Projekt Web App URL-címe) szövegdobozba írja be a csatlakoztatni kívánt Project Web App URL-címét.  Vegye figyelembe, hogy ez az adat egyedi tartomány esetén eltérhet a példától. A **PWA Site Language** szövegmezőbe írja be a PWA-webhely nyelvének megfelelő számot. Angol nyelvhez az 1-es, franciához a 2-es, némethez a 3-as, brazil portugálhoz a 4-es, portugálhoz az 5-ös, spanyolhoz pedig a 6-os számot írja be. 
+7. A **Project Web App URL** szövegdobozba írja be a csatlakoztatni kívánt Project Web App (PWA) URL-címét.  Vegye figyelembe, hogy ez az adat egyedi tartomány esetén eltérhet a példától. A **PWA Site Language** szövegmezőbe írja be a PWA-webhely nyelvének megfelelő számot. Angol nyelvhez az 1-es, franciához a 2-es, némethez a 3-as, brazil portugálhoz a 4-es, portugálhoz az 5-ös, spanyolhoz pedig a 6-os számot írja be. 
    
    ![Csatlakozás a Microsoft Project Online-hoz](media/service-connect-to-project-online/params.png)
 8. Az Authentication Method (Hitelesítési módszer) beállításnál válassza az **oAuth2** \> beállítást, majd a **Sign In** (Bejelentkezés) elemet. Amikor a rendszer kéri, adja meg a saját Projekt Web App hitelesítő adatait, majd haladjon végig a hitelesítési folyamaton.

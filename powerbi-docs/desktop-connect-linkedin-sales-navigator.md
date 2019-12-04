@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/11/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5631e4144cf202591e202fd46405815b38ceb42d
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: cd952dfa690d079d662f09e1e01c34dadf129b7b
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74016250"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565645"
 ---
 # <a name="connect-to-linkedin-sales-navigator-in-power-bi-desktop"></a>Csatlakozás a LinkedIn Sales Navigatorhöz a Power BI Desktopban
 
@@ -111,6 +111,10 @@ Innen csatlakozhat a saját adataihoz, és megadhatja, hogy hány napi adatot sz
 A sablonalkalmazás ekkor az Ön adataira frissíti az alkalmazásban megjelenő adatokat. Beállíthat ütemezett frissítést is, hogy az alkalmazásban lévő adatok a frissítés gyakoriságának mértékében naprakészek legyenek. 
 
 Az adatok frissítése után már a saját adatait láthatja az alkalmazásba betöltve.
+
+## <a name="getting-help"></a>A súgó használata
+
+Ha az adataihoz való kapcsolódás során problémák merülnek fel, a https://www.linkedin.com/help/sales-navigator címen léphet kapcsolatba a LinkedIn Sales Navigator támogatási szolgálatával. 
 
 ## <a name="next-steps"></a>Következő lépések
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:

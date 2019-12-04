@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 09/24/2019
-ms.openlocfilehash: 9e49e8e70e7bc499fbcfe0c263bdd8315f2c7dbe
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/27/2019
+ms.openlocfilehash: 90bc46c484f659994c6a9500865803531fa3cdcc
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874715"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565703"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Mik a lapszámozott jelentések a Power BI Premiumban?
 
@@ -21,9 +21,9 @@ A lapszámozott jelentések, melyek az SQL Server Reporting Services szabványos
 
 A lapszámozott jelentések számos oldalból állhatnak. Ez a jelentés például 563 oldalas. Mindegyik oldal pontosan egy számlát tartalmaz, valamint ismétlődő fejlécekből és élőlábakból áll.
 
-![Lapszámozott](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
+Próbálja ki a [Laborgyakorlat: Többoldalas Microsoft Power BI-jelentés létrehozása](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208) anyagot.
 
-![Lapszámozott jelentés a Power BI szolgáltatásban](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
+![Lapszámozott](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
 A jelentés előnézetét megtekintheti a Jelentéskészítőben, majd közzéteheti a Power BI szolgáltatásban (https://app.powerbi.com ). A szolgáltatásban csak Power BI Pro-licenccel tehet közzé jelentéseket. Többoldalas jelentéseket a Saját munkaterületen, vagy olyan munkaterületeken tehet közzé, amelyek Power BI Premium-kapacitáshoz tartoznak. Emellett egy Power BI-rendszergazdának engedélyeznie kell a lapszámozott jelentéseket a Power BI felügyeleti portáljának [Premium-kapacitásokkal foglalkozó szakaszában](service-admin-premium-workloads.md#paginated-reports). 
 
@@ -87,6 +87,6 @@ További információ: [Feliratkozás és mások feliratkoztatása lapszámozott
 - [A Power BI Jelentéskészítő telepítése a Microsoft letöltőközpontból](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Oktatóanyag: Lapszámozott jelentés létrehozása](paginated-reports-quickstart-aw.md)
 - [Adatok megadása közvetlenül többoldalas jelentésben](paginated-reports-enter-data.md)
-
+- [Laborgyakorlat: Többoldalas Microsoft Power BI-jelentés létrehozása](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
   
 

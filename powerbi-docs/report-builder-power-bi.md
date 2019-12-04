@@ -1,7 +1,7 @@
 ---
 title: A Power BI többoldalas jelentéskészítője
 description: A Power BI lapszámozott jelentéskészítőjével lapszámozott jelentéseket hozhat létre.
-ms.date: 09/16/2019
+ms.date: 11/27/2019
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 6d13871ec3ba8a7550a556a8923893a6b7d676ae
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: faba36a609abd94b2439006fbbcf01a1d193c585
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71076061"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565297"
 ---
 # <a name="power-bi-paginated-report-builder"></a>A Power BI többoldalas jelentéskészítője
 
  A Power BI lapszámozott jelentéskészítőjével lapszámozott jelentéseket hozhat létre.  Lapszámozott jelentések tervezésekor létrehoz egy jelentésdefiníciót, amely megszabja, hogy milyen adatokat kell lekérni, honnan, és hol kell azokat megjeleníteni. A jelentés futtatásakor a jelentésfeldolgozó a megadott jelentésdefiníció és a lekért adatok a jelentés elrendezésével való egyesítésével létrehozza a jelentést. A jelentés előnézetét a Jelentéskészítőben tekintheti meg. Ezután közzéteheti a jelentést a Power BI szolgáltatásban.
+
+Próbálja ki a [Laborgyakorlat: Többoldalas Microsoft Power BI-jelentés létrehozása](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208) anyagot.
 
 Szívesebben tanulna videókból? Tekintse meg a Power BI fő programmenedzsere, Chris Finlan által vezetett, a Power BI lapszámozott jelentéseiről szóló videósorozatot YouTube-on.
 
@@ -61,5 +63,5 @@ A következő lapszámozott jelentés sor- és oszlopcsoportokat, értékgörbé
 ## <a name="next-steps"></a>Következő lépések
 
 - [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)
-
+- Próbálja ki a [Laborgyakorlat: Többoldalas Microsoft Power BI-jelentés létrehozása](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
 - Tekintse meg a Power BI fő programmenedzsere, Chris Finlan által vezetett, a [Power BI lapszámozott jelentéseiről szóló videósorozatot](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) YouTube-on

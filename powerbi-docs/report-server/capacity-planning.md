@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: c286e921c47b46c20cd73d4b32146093adc74d7f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ad657da4e0a81c6b3b9845d9c130755334f5a97f
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860125"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565732"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló kapacitástervezési útmutatója
 A Power BI jelentéskészítő kiszolgáló olyan önkiszolgáló BI és céges jelentéskészítő megoldás, amelyet az ügyfelek helyben telepíthetnek a saját tűzfal mögé. A Power BI Desktop interaktív jelentéskészítő képességét kombinálja az SQL Server Reporting Services helyi kiszolgálói platformjával. Az elemzések és a jelentések gyakori és növekvő céges használatának köszönhetően a hardveres infrastruktúrák és a vállalati felhasználói bázis skálázásához szükséges szoftverlicencek költségbecslése kihívást jelenthet. A jelen dokumentum célja, hogy útmutatást nyújtson a Power BI jelentéskészítő kiszolgálójának kapacitástervezéséhez, és megossza a jelentéskészítő kiszolgáló különböző számítási feladataihoz tartozó terhelési tesztek végrehajtási eredményeit. Bár a cégek jelentései, lekérdezései és használati mintái eltérőek lehetnek, a jelen dokumentumban ismertetett eredmények – a ténylegesen használt tesztekkel és azok végrehajtásának részletes bemutatásával – hivatkozási pontként szolgálnak bárkinek, aki a Power BI jelentéskészítő kiszolgáló üzembe helyezésének korai tervezési szakaszában van.
@@ -56,7 +56,10 @@ A terhelési műveletekben használt tesztek nyilvánosan elérhetők a [Reporti
 * Kicsi és nagy, többoldalas jelentések megjelenítését szimuláló tesztek. 
 * Különböző típusú webportálos műveletek végrehajtását szimuláló tesztek. 
 
-Minden tesztet úgy írtak meg, hogy alkalmas legyen teljes körű műveletek végrehajtására (jelentések megjelenítése, új adatforrások létrehozása stb.). Mindez legalább egy webkérés jelentéskészítő kiszolgálónak való elküldésével valósul meg (API-kon keresztül). A valós életben a felhasználónak néhány köztes műveletet is el kellhet végeznie az ilyen teljes körű műveletek végrehajtásakor. Például egy jelentés megjelenítéséhez a felhasználónak meg kell nyitnia a webportált és a jelentést tartalmazó mappát, majd a jelentésre kattintva kell megjelenítenie azt. Bár a tesztek nem tartalmazzák a teljes körű feladatok végrehajtásához szükséges összes műveletet, jól szimulálják a Power BI jelentéskészítő kiszolgálót érő terhelés nagy részét. A GitHub-projekt tanulmányozásával megismerheti a felhasznált jelentések különböző típusait, valamint az elvégzett különböző műveleteket.
+Minden tesztet úgy írtak meg, hogy alkalmas legyen teljes körű műveletek végrehajtására (jelentések megjelenítése, új adatforrások létrehozása stb.). Mindez legalább egy webkérés jelentéskészítő kiszolgálónak való elküldésével valósul meg (API-kon keresztül). A valós életben a felhasználónak néhány köztes műveletet is el kellhet végeznie az ilyen teljes körű műveletek végrehajtásakor. Például egy jelentés megjelenítéséhez a felhasználónak meg kell nyitnia a webportált és a jelentést tartalmazó mappát, majd a jelentésre kattintva kell megjelenítenie azt. Bár a tesztek nem tartalmazzák a teljes körű feladatok végrehajtásához szükséges összes műveletet, jól szimulálják a Power BI jelentéskészítő kiszolgálót érő terhelés nagy részét. A GitHub-projekt tanulmányozásával megismerheti a felhasznált jelentések különböző típusait, valamint az elvégzett különböző műveleteket.  
+
+> [!NOTE]
+> A Microsoft nem támogatja hivatalosan az eszközt, de a termék csapata hozzájárul a projekthez, és válaszol a más közreműködők által felvetett problémákra.
 
 ### <a name="workloads"></a>Számítási feladatok
 A teszteléshez két számítási profil használható: Power BI-jelentés (nagy erőforrásigényű) és lapszámozott jelentés (nagy erőforrásigényű). Az alábbi táblázat a jelentéskészítő kiszolgálón végrehajtott kérések eloszlását ismerteti.
@@ -133,12 +136,11 @@ Különböző konfigurációjú processzorokat és memóriát használtunk a Pow
 ### <a name="2-run-the-loadtest-tool"></a>2\. A LoadTest eszköz futtatása
 Ha szeretné futtatni a Reporting Services LoadTest eszközt a saját vagy egy Microsoft Azure-beli Power BI jelentéskészítő kiszolgálón, kövesse az alábbi lépéseket.
 
-1. Klónozza a Reporting Services LoadTest nevű projektet a GitHubon (https://github.com/Microsoft/Reporting-Services-LoadTest) ).
+1. Klónozza a Reporting Services LoadTest nevű projektet a GitHubon (https://github.com/Microsoft/Reporting-Services-LoadTest) ).  
 2. A projekt könyvtárában található egy RSLoadTests.sln nevű megoldásfájl. Nyissa meg ezt a fájlt a Visual Studio 2015-ös vagy újabb verziójában.
 3. Döntse el, hogy az eszközt a Power BI jelentéskészítő kiszolgáló saját üzemelő példányán vagy egy Microsoft Azure-beli Power BI jelentéskészítő kiszolgálón kívánja-e futtatni. Ha saját üzemelő példányon szeretné futtatni, ugorjon az 5. lépésre.
 4. Hozzon létre egy Power BI jelentéskészítő kiszolgálói környezetet az Azure-ban a https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure lap utasításait követve.
 5. Miután végzett a környezet üzembe helyezésével, kövesse a https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution weblapon található utasításokat a tesztek futtatásához.
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-
 

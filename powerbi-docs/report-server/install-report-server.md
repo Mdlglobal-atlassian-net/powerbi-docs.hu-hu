@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.openlocfilehash: eecddd9251bbce732e9dc4ef70ad0d855f499d11
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/26/2019
+ms.openlocfilehash: 7297e73dc0e412f75412eb48398ef9c85cda8d6e
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874138"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565777"
 ---
 # <a name="install-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló telepítése
 
@@ -21,9 +21,9 @@ Ismerje meg, hogyan telepítheti a Power BI jelentéskészítő kiszolgálót.
 
 ## <a name="download-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló letöltése
 
-A [Power BI jelentéskészítő kiszolgáló letöltéséhez](https://www.microsoft.com/download/details.aspx?id=56722) látogasson el a Microsoft letöltőközpontba.
+A [Power BI jelentéskészítő kiszolgálóval végzett helyszíni jelentéskészítéssel](https://powerbi.microsoft.com/report-server/) foglalkozó oldalon válassza az **Ingyenes próbaverzió letöltése** lehetőséget.
 
-Egy ingyenes próbaverziót is kipróbálhat. A [Power BI jelentéskészítő kiszolgálóval végzett helyszíni jelentéskészítéssel](https://powerbi.microsoft.com/report-server/) foglalkozó oldalon válassza az **Ingyenes próbaverzió letöltése** lehetőséget.
+A PowerBIReportServer.exe fájl futtatásakor válassza az ingyenes próbaverziót, vagy adja meg a termékkulcsot. További részletekért olvasson tovább.
 
 ## <a name="before-you-install"></a>Előkészületek a telepítés előtt
 
@@ -43,7 +43,7 @@ További részletekért olvasson tovább.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
-Ha a Power BI Premiumot vásárolta meg, a Power BI felügyeleti portáljának **Premium-beállítások** lapján érheti el a Power BI jelentéskészítő kiszolgáló termékkulcsát. Ezt csak a globális rendszergazdák vagy a Power BI szolgáltatásadminisztrátori szerepköréhez rendelt felhasználók érhetik el.
+Ha a Power BI Premiumot vásárolta meg, a Power BI felügyeleti portáljának **Premium-beállítások** lapján érheti el a Power BI jelentéskészítő kiszolgáló termékkulcsát. A felügyeleti portált csak a globális rendszergazdák vagy a Power BI szolgáltatásadminisztrátori szerepköréhez rendelt felhasználók érhetik el.
 
 ![Premium-beállítások](../report-server/media/install-report-server/pbirs-product-key.png "Power BI jelentéskészítő kiszolgáló kulcsa a Premium beállításaiban")
 
@@ -70,7 +70,7 @@ A telepítés során nincs szükség elérhető SQL Server adatbázismotor-kiszo
 
     ![Kiadás választása](media/install-report-server/pbireportserver-choose-edition.png)
 
-    A legördülő menüből az Evaluation Editiont (próbaverzió) vagy a Developer Editiont (fejlesztői verzió) választhatja.
+    Válassza vagy az Evaluation (próbaverzió) vagy a Developer (fejlesztői) kiadást.
 
     ![2\. kiadás](media/install-report-server/pbireportserver-choose-edition2.png)
 
@@ -78,7 +78,7 @@ A telepítés során nincs szükség elérhető SQL Server adatbázismotor-kiszo
 4. Olvassa el és fogadja el a licencfeltételeket, majd kattintson a **Tovább** elemre.
 
     ![Licencfeltételek](media/install-report-server/pbireportserver-eula.png)
-5. A jelentéskészítő kiszolgáló adatbázisának tárolásához elérhető adatbázismotorra van szüksége. Ha csak a jelentéskészítő kiszolgálót kívánja telepíteni, kattintson a **Tovább** elemre.
+5. A jelentéskészítő kiszolgáló adatbázisának tárolásához elérhető adatbázismotorra van szükség. Ha csak a jelentéskészítő kiszolgálót kívánja telepíteni, kattintson a **Tovább** elemre.
 
     ![Csak fájltelepítés](media/install-report-server/pbireportserver-install-files-only.png)
 6. Adja meg a jelentéskészítő kiszolgáló telepítési helyét. A folytatáshoz kattintson a **Telepítés** elemre.
@@ -139,7 +139,7 @@ A teljes URL-sztring például a következő lehet:
 
 Ha távoli gépről éri el a jelentéskészítő kiszolgálót, érdemes ellenőriznie, hogy tűzfal jelenléte esetén beállította-e a tűzfalszabályzatokat.
 
-Nyissa meg a webszolgáltatás és a webes portál URL-címére konfigurált TCP-portot. Alapértelmezés szerint ezek az URL-címek a 80-as TCP-portra vannak konfigurálva.
+Nyissa meg a webszolgáltatás és a webes portál URL-címére konfigurált TCP-portot. Alapértelmezés szerint ezek a 80-as TCP-portra vannak konfigurálva.
 
 ## <a name="additional-configuration"></a>További konfigurálás
 

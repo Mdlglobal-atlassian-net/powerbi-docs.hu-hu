@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/30/2019
+ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8a9e2094619d4c6b0e0f6feb2c9767902b4f7b09
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: bdaac078fa106565f7c11b3cc323840b5d10b579
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099670"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565341"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Munka szervezése az új munkaterületeken a Power BI-ban
 
@@ -60,7 +60,7 @@ A szerepkörökkel kezelheti, hogy mely felhasználók milyen műveleteket vége
 
 Szerepkörök felhasználói csoportokhoz való hozzárendelésekor a csoport felhasználói hozzáférnek a tartalomhoz. Ha beágyaz felhasználói csoportokat, minden tag jogosultságot kap.
 
-A négy szerepkör (rendszergazdák, tagok, közreműködők és megtekintők) képességei a következők: Ezekhez a képességekhez az utolsó kivételével Power BI Pro-licenc szükséges.
+A négy szerepkör (rendszergazdák, tagok, közreműködők és megtekintők) képességei a következők: Ezekhez a képességekhez a megtekintés és a használat kivételével Power BI Pro-licenc szükséges.
 
 |Képesség   | Rendszergazda  | Tag  | Közreműködő  | Megtekintő |
 |---|---|---|---|---|
@@ -72,15 +72,15 @@ A négy szerepkör (rendszergazdák, tagok, közreműködők és megtekintők) k
 | Engedélyezhetik másoknak az elemek újbóli megosztását. |  X | X  |   |   |
 | Létrehozhatnak, szerkeszthetnek és törölhetnek tartalmakat a munkaterületen.  |  X | X  | X  |   |
 | Közzétehetnek jelentéseket a munkaterületen, és törölhetnek tartalmakat.  |  X | X  | X  |   |
-| Jelentést hozhatnak létre másik munkaterületen egy ezen a munkaterületen lévő adathalmaz alapján. |  X | X  | X  |   |
-| Jelentés másolása. | X | X | X |  |
-| Egy elem megtekintése és kezelése. |  X | X  | X  | X  |
+| Jelentést hozhatnak létre másik munkaterületen egy ezen a munkaterületen lévő adathalmaz alapján.<sup>1</sup> |  X | X  | X  |   |
+| Jelentés másolása.<sup>1</sup> | X | X | X |  |
+| Egy elem megtekintése és kezelése.<sup>2</sup> |  X | X  | X  | X  |
 
-> [!NOTE]
->Ha jelentést szeretne másolni, és ha egy másik munkaterületen szeretne jelentést létrehozni az ezen a munkaterületen található adathalmaz alapján, akkor a felhasználóknak további feltételeknek kell megfelelniük:
->- Power BI Pro-licenccel kell rendelkezniük. A részleteket a következő, [Licencelés](#licensing) című szakaszban találhatja meg.
->- Az adatkészlethez összeállítási engedéllyel kell rendelkezniük. Az ebben a munkaterületben szereplő adatkészletek esetén a rendszergazda, tag és közreműködő szerepkörök rendelkeznek összeállítási engedéllyel a munkaterület-szerepkörük részeként.
- 
+1. Ha jelentést szeretne másolni, és ha egy másik munkaterületen szeretne jelentést létrehozni az ezen a munkaterületen található adathalmaz alapján, akkor további feltételeknek kell megfelelnie:
+    - Power BI Pro-licencre lesz szüksége. A részleteket a következő, [Licencelés](#licensing) című szakaszban találhatja meg.
+    - Az adatkészlethez összeállítási engedéllyel kell rendelkeznie. Az ebben a munkaterületben szereplő adatkészletek esetén a rendszergazda, tag és közreműködő szerepkörök rendelkeznek összeállítási engedéllyel a munkaterület-szerepkörük részeként.
+2. Ha még nem is rendelkezik Power BI Pro licenccel, akkor is megtekintheti és kezelheti a Power BI szolgáltatás elemeit, ha az elemek egy prémium szintű munkaterületen vannak.
+
 ## <a name="licensing"></a>Licencelés
 A megosztott kapacitásban a munkaterülethez felvett személyek mindegyikének Power BI Pro-licenccel kell rendelkeznie. A munkaterületen a felhasználók együttműködhetnek az irányítópultokon és jelentéseken, amelyeket a szélesebb közönség vagy akár a teljes vállalat elé szeretne tárni. 
 
