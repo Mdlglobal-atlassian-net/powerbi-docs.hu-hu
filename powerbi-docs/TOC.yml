@@ -747,16 +747,6 @@
               href: designer/service-security-apply-data-sensitivity-labels.md
         - name: Adatéletút
           href: service-data-lineage.md
-        - name: Többoldalas jelentések a Power BI-ban
-          items:
-            - name: Többoldalas jelentés megtekintése
-              href: paginated-reports-view-power-bi-service.md
-            - name: Támogatott adatforrások
-              href: paginated-reports-data-sources.md
-            - name: Paraméterek használata
-              href: paginated-reports-view-parameters.md
-            - name: Önmaga és mások regisztrálása
-              href: paginated-reports-subscriptions.md
         - name: Sablonalkalmazások
           items:
             - name: Sablonalkalmazások áttekintése
@@ -915,6 +905,8 @@
           href: report-builder-planning-report.md
         - name: Jelentéskészítő adatai
           href: report-builder-data.md
+        - name: Támogatott adatforrások
+          href: paginated-reports-data-sources.md
         - name: Megosztott Power BI-adatkészletek használata
           href: report-builder-shared-datasets.md
         - name: Tervezési tippek
