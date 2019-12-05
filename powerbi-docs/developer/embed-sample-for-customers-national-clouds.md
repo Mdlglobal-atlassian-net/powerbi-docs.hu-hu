@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: b469cd4649a7acaef3a64eb0d3d8359e438e796f
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 2d8fc35383aa427d8e5c9fd37c6c35f4f3d0a6bb
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311106"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565315"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Oktatóanyag: Power BI-tartalom beágyazása az alkalmazásba országos felhők számára
 
@@ -25,6 +25,8 @@ A Power BI az [ felhőket](https://docs.microsoft.com/azure/active-directory/dev
 A különböző országos felhők az alábbiak:
 
 * Egyesült Államok Kormányzati közösségi felhő (GCC)
+
+* Egyesült Államok Kormányzati közösségi felhő High (GCC High)
 
 * Egyesült Államok Katonai alvállalkozók (DoDCON)
 
@@ -51,8 +53,8 @@ Ez a cikk a GitHubon, az [alkalmazás tulajdonában lévő adatok mintában](htt
 
 * Kormányzati közösségi felhő (GCC):
 
-    > [!Note]
-    > A GCC-fiókok csak a P és EM kapacitásokat támogatják.
+    > [!NOTE]
+    > Power BI-tartalmak Kormányzati közösségi felhőből (GCC-ből) csak Office 365 SKU-val ágyazhatók be. A GCC High ügyfelei [Office 365 vagy Azure SKU-t](embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365) használhatnak.
 
 1. Írja felül a Cloud.config fájlt a GCCCloud.config tartalmával.
 
