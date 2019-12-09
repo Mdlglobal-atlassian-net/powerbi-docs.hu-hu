@@ -1,20 +1,20 @@
 ---
 title: A Power BI Premium kapacitásainak figyelése a Premium kapacitásmetrikák alkalmazással.
 description: A Power BI felügyeleti portál és a Power BI Premium kapacitás-metrikák alkalmazás használata
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 3ec2d68fd7245642c67f8b12b86609683ccf69e8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a61288c9792d562e9a5efecd43d879d6df6d1782
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873480"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698877"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Prémium szintű kapacitások monitorozása az alkalmazással
 

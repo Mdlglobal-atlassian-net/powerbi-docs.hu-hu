@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: b451333aaf93584e7e16dcf24e6b693e9da3eccd
-ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
+ms.openlocfilehash: 44da3a20c203bfc50be08b0ed91efa6dfd998204
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478632"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882755"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
@@ -24,10 +24,6 @@ Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket 
 **Elemzés virtuális Azure-eseményben: Gyorsabb elemzési eredmények az Azure Synapse Analytics szolgáltatással**
 <br>szerző: Gayle Sheppard és John Macintyre
 <br>[Regisztráció](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
-
-**Hogyan változtatja meg a Microsoft az üzletiintelligencia-adatok védelmét**
-<br>szerző: Anton Fritz és Adi Regev
-<br>[Regisztráljon a december 4-i megtekintéshez](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
 
 **Kilenc trend a Big Data-elemzés jövőjének alakításában**
 <br>írta: Vijay Gopalakrishnan
@@ -42,6 +38,10 @@ Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket 
 ## <a name="featured-webinars"></a>Kiemelt előadások
 
 Igény szerint elérhető népszerű előadások az első lépésekhez
+
+**Hogyan változtatja meg a Microsoft az üzletiintelligencia-adatok védelmét**
+<br>szerző: Anton Fritz és Adi Regev
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
 
 **A Power BI és a modern és vállalati üzleti intelligencia jövője**
 <br>szerző: Arun Ulag és Amir Netz

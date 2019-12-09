@@ -1,20 +1,20 @@
 ---
 title: A Power BI felügyelete – gyakori kérdések (GYIK)
 description: Ismerje meg a Power BI-előfizetéssel, bérlőkezeléssel és más adminisztratív feladatokkal kapcsolatos gyakori kérdésekre adott válaszokat.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 711646009fe79e145a3ab756266a442243c1116e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 0c9d346017dc3b18abd6a56d0d3a62e1305e6575
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73857825"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698739"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>A Power BI felügyelete – gyakori kérdések (GYIK)
 

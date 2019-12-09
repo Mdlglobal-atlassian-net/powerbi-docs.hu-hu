@@ -1,21 +1,21 @@
 ---
 title: Az SAP HANA titkosításának engedélyezése
 description: Útmutató a kapcsolat titkosításához a Power BI-ból HANA-kiszolgálóhoz SAML SSO használatával való csatlakozáskor.
-author: mgblythe
+author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 07/26/2019
-ms.author: mblythe
+ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e0d8787c81fa6730e7ce34a888a05be3a2ffe63f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ae57579c88924d4c34ec2c2a1d4aed5238dce64b
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877800"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74695841"
 ---
 # <a name="enable-encryption-for-sap-hana"></a>Az SAP HANA titkosításának engedélyezése
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
-ms.openlocfilehash: 90bc46c484f659994c6a9500865803531fa3cdcc
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 35f50f57f3874bbb87fcdd5fbcf7da987fea1d1a
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565703"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831156"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Mik a lapszámozott jelentések a Power BI Premiumban?
 
@@ -70,7 +70,7 @@ A lapszámozott jelentést a böngészős Power BI szolgáltatásban és a Power
 
 Most már beállíthat lapszámozott jelentésekre vonatkozó e-mailes feliratkozásokat saját maga és mások számára a Power BI szolgáltatásban. A folyamat általánosságban ugyanaz, mint a Power BI szolgáltatás jelentéseire és irányítópultjaira való feliratkozás esetében. Feliratkozás beállításakor kiválaszthatja, hogy milyen gyakorisággal szeretné fogadni az e-maileket: naponta, hetente vagy óránként. A feliratkozás tartalmaz egy, a teljes jelentés eredményeit összesítő PDF-et is.
 
-További információ: [Feliratkozás és mások feliratkoztatása lapszámozott jelentésre a Power BI szolgáltatásban](paginated-reports-subscriptions.md). 
+További információ: [Feliratkozás és mások feliratkoztatása lapszámozott jelentésre a Power BI szolgáltatásban](consumer/paginated-reports-subscriptions.md). 
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 

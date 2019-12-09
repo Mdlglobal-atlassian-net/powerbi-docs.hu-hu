@@ -1,20 +1,20 @@
 ---
 title: Számítási feladatok konfigurálása a Power BI Premiumban
 description: Megtudhatja, hogyan konfigurálhat számítási feladatokat a Power BI Premiumban.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 8240c4590a5e5bb892c4858ea74aa20e569ecb89
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7d94c5d3531576cd36688591b55aaf4a49de51aa
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73856809"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831300"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Számítási feladatok konfigurálása egy Premium-kapacitásban
 
@@ -164,7 +164,7 @@ A lapszámozott jelentések számítási feladattal az SQL Server Reporting Serv
 | **Maximális memória (%)** | A lapszámozott jelentések által a kapacitásban felhasználható, rendelkezésre álló memória maximális százalékos aránya. |
 |  |  |
 
-A többoldalas jelentések egyéni kód futtatását teszik lehetővé egy jelentés renderelésekor. Ilyen például a szövegszín dinamikus megváltoztatása a tartalom alapján, ez pedig további memóriát igényelhet. A lapszámozott jelentéseket a Power BI Premium a kapacitás egy korlátozott területén belül futtatja. Attól függetlenül, hogy a számítási feladat *aktív vagy nem*, a megadott Maximális memória lesz használva. Ha a Maximális memóriát az alapértelmezettől eltérő értékre állítja be, ügyeljen rá, hogy elég alacsonyra állítsa, hogy ne befolyásolja hátrányosan a többi számítási feladatot.
+A többoldalas jelentések egyéni kód futtatását teszik lehetővé egy jelentés renderelésekor. Ilyen például a szövegszín dinamikus megváltoztatása a tartalom alapján, ez pedig további memóriát igényelhet. A lapszámozott jelentéseket a Power BI Premium a kapacitás egy korlátozott területén belül futtatja. 
 
 Bizonyos esetekben a lapszámozott jelentések számítási feladat elérhetetlenné válik. Ilyen esetben a számítási feladat hibás állapotot jelez a felügyeleti portálon, a felhasználók pedig időtúllépést tapasztalnak a jelentés renderelése során. A probléma megoldásához tiltsa le, majd engedélyezze újra a számítási feladatot.
 
