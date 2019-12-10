@@ -56,6 +56,8 @@
               href: end-user-interactions.md
             - name: Jelentés exportálása PDF-be
               href: end-user-pdf.md
+            - name: Jelentés exportálása PowerPointba
+              href: end-user-powerpoint.md
             - name: Könyvjelző hozzáadása jelentéshez
               href: end-user-bookmarks.md
             - name: Többoldalas jelentések a Power BI-ban
