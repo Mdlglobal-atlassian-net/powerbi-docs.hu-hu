@@ -41,11 +41,11 @@
               href: visuals/advanced-edit-mode.md
         - name: Útmutató
           items:
-            - name: Vizualizáció tanúsítása
+            - name: Power BI-vizualizáció minősíttetése
               href: power-bi-custom-visuals-certified.md
-            - name: Egyéni vizualizációk közzététele az AppSource-ban
+            - name: Power BI-vizualizációk közzététele az AppSource-ban
               href: office-store.md
-            - name: Egyéni R-vizualizációk a Power BI-ban
+            - name: R-alapú Power BI-vizualizációk a Power BI-ban
               href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
             - name: Vizualizációk interakciói
               href: visuals/visuals-interactions.md
@@ -69,8 +69,6 @@
               href: visuals/high-contrast-support.md
             - name: Szeletelők szinkronizálásának engedélyezése
               href: visuals/enable-sync-slicers.md
-            - name: Lehatolási támogatás hozzáadása
-              href: visuals/drill-down-support.md
             - name: Power BI-vizualizációk hibáinak elhárítása
               href: power-bi-custom-visuals-troubleshoot.md
         - name: Hivatkozás
@@ -85,14 +83,8 @@
               href: visuals/event-service.md
             - name: Rendezés
               href: visuals/sort-options.md
-            - name: Honosítás
-              href: visuals/localization.md
-            - name: Eszközök Power BI-vizualizációkhoz
-              items:
-                - name: Interaktivitási eszközök
-                  href: visuals/utils-interactivity-selections.md
-                - name: Formázási eszközök
-                  href: visuals/utils-formatting.md
+            - name: Interaktivitási eszközök
+              href: visuals/utils-interactivity-selections.md
         - name: Erőforrások
           items:
             - name: Fejlesztői központ
