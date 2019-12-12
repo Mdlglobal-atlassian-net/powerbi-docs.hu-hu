@@ -7,15 +7,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/5/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fedaa811c94a9e955d6ca10646bc546f60dc9b98
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6abca661a1553bfabc3da35fe714ff9bced5555a
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881953"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907662"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vízesésdiagramok a Power BI-ban
 
@@ -63,9 +63,11 @@ Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://downl
 
 Olyan vízesésdiagramot fog létrehozni, amely megjeleníti a havi értékesítési eltérést (a becsült és a tényleges értékek közötti különbséget).
 
+### <a name="build-the-waterfall-chart"></a>A vízesésdiagram létrehozása
+
 1. A **Mezők** panelen válassza az **Értékesítés** > **Teljes értékesítési eltérés** lehetőséget.
 
-   ![Az Értékesítés > Teljes értékesítési eltérés kiválasztása és az eredményül kapott vizualizáció képernyőképe.](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
+   ![Az Értékesítés > Teljes értékesítési eltérés kiválasztása és az eredményül kapott vizualizáció képernyőképe.](media/power-bi-visualization-waterfall-charts/power-bi-bar.png)
 
 1. Válassza a vízesés ikont ![A vízesés ikon képernyőképe](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png)
 
@@ -73,41 +75,45 @@ Olyan vízesésdiagramot fog létrehozni, amely megjeleníti a havi értékesít
 
 1. Válassza az **Idő**  > **FiscalMonth** (Pénzügyi hónap) lehetőséget, és adja hozzá a **Kategória** területhez.
 
-    ![vízesés](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
+    ![vízesés](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-month.png)
 
-1. Ügyeljen rá, hogy a Power BI időrendi sorrendben rendezze a vízesésdiagramot. Válassza a diagram jobb felső sarkában található **További lehetőségek** (...) elemet.
+### <a name="sort-the-waterfall-chart"></a>A vízesésdiagram rendezése
 
-    Ehhez a példához a **Rendezés növekvő sorrendben** van kiválasztva.
+1. Ügyeljen rá, hogy a Power BI hónap szerint időrendi sorrendben rendezze a vízesésdiagramot. Válassza a diagram jobb felső sarkában található **További lehetőségek** (...) elemet.
 
-    Ellenőrizze, hogy megjelenik-e egy sárga jelzés a **Rendezés növekvő sorrendben** lehetőség bal oldalán. Ez jelzi, hogy a kiválasztott beállítás van használatban.
+    Ehhez a példához válassza a **Rendezési szempont**, majd a **FiscalMonth** lehetőséget. A kijelölés melletti sárga jelzés mutatja, mikor alkalmazza a rendszer a kijelölést.
 
-    ![Rendezés > Növekvő sorrend kiválasztása](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
+    ![Rendezés szempontjának kiválasztása > FiscalMonth (Pénzügyi hónap)](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscalmonth.png)
+    
+    A hónapok időrendben történő megjelenítéséhez válassza a **Növekvő rendezés** lehetőséget. Az előző lépéshez hasonlóan ellenőrizze, hogy megjelenik-e egy sárga jelzés a **Rendezés növekvő sorrendben** lehetőség bal oldalán. Ez jelzi, hogy a kiválasztott beállítás van használatban.
 
-    Most válasszuk a **Rendezés** lehetőséget, majd a **FiscalMonth** elemet. Ahogyan az előző lépésben, a választott elem melletti sárga jelölő mutatja, hogy a kiválasztott beállítás alkalmazása folyamatban van.
+    ![Rendezés > Növekvő sorrend kiválasztása](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png)
 
-    ![Rendezés szempontjának kiválasztása > FiscalMonth (Pénzügyi hónap)](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png)
+    
 
-    Ha megnézi az X tengely értékeit is, láthatja, hogy azok is sorrendben jelennek meg **januártól** **augusztusig**.
+    Figyelje meg, hogy a diagram januártól augusztusig van rendezve a FiscalMonth (Pénzügyi év) kategóriában.  
 
-    Derítse ki részletesebben, hogy mi járul hozzá legnagyobb mértékben az egyes hónapok közötti változáshoz.
+### <a name="explore-the-waterfall-chart"></a>A vízesésdiagram felfedezése
+
+Derítse ki részletesebben, hogy mi járul hozzá legnagyobb mértékben az egyes hónapok közötti változáshoz.
 
 1.  Válassza az **Üzlet** > **Terület** lehetőséget, így a **Terület** bekerül a **Lebontás** gyűjtőbe.
 
     ![Megjeleníti a Lebontás gyűjtőben található tárolót](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 
-    A Power BI alapértelmezés szerint a havi növekedésekhez és csökkenésekhez hozzájáruló 5 fő tényezőt adja hozzá. Az alábbi ábrán a vizualizáció panelje ki van bontva, hogy több adat férjen el rajta. 
+    A Power BI a **Részletezésben** szereplő adatokat használja további adatok vizualizációhoz adására. Alapértelmezés szerint a havi növekedésekhez és csökkenésekhez hozzájáruló 5 legfontosabb fő tényezőt adja hozzá minden egyes pénzügyi hónaphoz. Ez azt jelenti, hogy a februárhoz például most hat adatpont tartozik és nem csak egy.  
 
-    ![Megjeleníti a Lebontás gyűjtőben található tárolót](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-initial.png)
+    ![Megjeleníti a Lebontás gyűjtőben található tárolót](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-default.png)
 
-    Minket azonban csak az első 2 közreműködő érdekel.
+    Tegyük fel, hogy csak a két legfontosabb közreműködő érdekli.
 
 1. A **Formázás** panelen válassza a **Lebontás** lehetőséget, és a **Maximum lebontás** beállítást állítsa **2** értékre.
 
-    ![Formázás > Lebontás](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
+    ![Formázás > Lebontás](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png)
 
     A vízesésdiagram gyors áttekintéséből kiderül, hogy Ohio és Pennsylvania területek járulnak hozzá a változáshoz a legnagyobb (negatív és pozitív) mértékben.
 
-    ![vízesésdiagram](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
+    ![vízesésdiagram](media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png)
 
 ## <a name="next-steps"></a>Következő lépések
 

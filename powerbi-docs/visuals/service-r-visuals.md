@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b947fe3f2faf423a7b2ced4d0032578ded015f7a
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: efbeda396217c1a715f9a5d7ae4827c5f8d09a25
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099820"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698992"
 ---
 # <a name="r-visuals-in-power-bi"></a>R-vizualizációk a Power BI-ban
 R-vizualizációk jelenleg csak a **Power BI Desktopban** hozhatók létre és tehetők közzé a Power BI szolgáltatásban. R-vizualizációk létrehozásáról a [Power BI-vizualizációk létrehozása az R használatával](../desktop-r-visuals.md) című cikk nyújt további információt.
@@ -94,6 +94,11 @@ A Power BI-beli R-vizualizációkra vonatkozik néhány korlátozás:
 * Az R-vizualizációk nem jelennek meg a **Webes közzététel** használatakor.
 * Az R-vizualizációk jelenleg nem nyomtatódnak ki az irányítópultok és jelentések nyomtatásakor
 * Az R-vizualizációk jelenleg nem támogatottak az Analysis Services DirectQuery módjában
+* A R-vizualizációk át tudják alakítani a szövegcímkéket grafikus elemekké. Ehhez a Power BI szolgáltatásban a következő további lépésekre van szükség:
+  
+  * Szúrja be a következő sort az R-parancsfájl elejére:
+    
+        powerbi_rEnableShowText =  1
 * Ahhoz, hogy a kínai, japán és koreai betűkészletek megfelelően működjenek a Power BI szolgáltatásban, a következő lépések mindegyikét végre kell hajtani:
   
   * Először telepítse a *showtext* R-csomagot és annak minden függőségét. Ezt a következő parancsfájl futtatásával teheti meg:

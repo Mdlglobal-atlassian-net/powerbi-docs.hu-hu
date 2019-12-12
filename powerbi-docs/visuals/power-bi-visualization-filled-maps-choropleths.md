@@ -1,23 +1,23 @@
 ---
 title: Kitöltött (koropletikus) tematikus térképek a Power BI-ban
-description: Dokumentáció – kitöltött (koropletikus) tematikus térképek létrehozásához a Power BI-ban
+description: Dokumentáció kitöltött (koropletikus) tematikus térképek létrehozásához a Power BI-ban
 author: mihart
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 12/05/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9c35e97fba55230277f9f144a5155071656b6add
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e7fa98be039093015e1b19ba8bf20f1368658a43
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870965"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907836"
 ---
-# <a name="filled-maps-choropleths-in-power-bi"></a>Kitöltött (koropletikus) tematikus térképek a Power BI-ban
+# <a name="filled-maps-choropleth-in-power-bi"></a>Kitöltött (koropletikus) tematikus térképek a Power BI-ban
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -46,12 +46,12 @@ A tematikus térkép kitűnően alkalmas:
 * a földrajzi helyek közötti eloszlás áttekintéséhez.
 
 ### <a name="prerequisites"></a>Előfeltételek
-Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) használja.
+Ez az oktatóanyag az [Értékesítési és marketing minta PBIX-fájlt](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) használja.
 1. A menüsor bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
    
-2. Keresse meg a **Kiskereskedelmi elemzési minta PBIX-fájlt**
+2. Keresse meg az **Értékesítési és marketing minta PBIX-fájl** példányát
 
-1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Nyissa meg az **Értékesítési és marketing minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
 
@@ -63,7 +63,7 @@ Ezen a videón Kim egy egyszerű térképet hoz létre és alakít át kitöltö
    > 
    > 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
+[VIDEÓ https://www.youtube.com/embed/ajTPGNpthcg ]
 
 ### <a name="create-a-filled-map"></a>Kitöltött térkép létrehozása
 1. A Mezők panelen válassza a **Geo** \> **Állam** mezőt.    
@@ -84,22 +84,22 @@ Ezen a videón Kim egy egyszerű térképet hoz létre és alakít át kitöltö
    ![Államok legördülő menüje kijelöletlen Minden és AK elemmel](media/power-bi-visualization-filled-maps-choropleths/img005.png)
 4. A Formátum ablaktábla megnyitásához válassza a festőhenger ikont, majd válassza az **Adatszínek** lehetőséget.
 
-    ![A formázás panel az Adatszínek beállítással](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-color.png)
+    ![A formázás panel az Adatszínek beállítással](media/power-bi-visualization-filled-maps-choropleths/power-bi-colors-data.png)
 
 5. Válassza a három pontot, majd a **Feltételes formázás** elemet.
 
-    ![Adatszínek feltételes formázás gomb](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional-formatting.png)
+    ![Adatszínek feltételes formázás gomb](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional.png)
 
-6. Az **Alapértelmezett színek – Adatszínek** képernyőn ellenőrizheti, milyen színárnyalatokkal jelenik majd meg a tematikus térkép. Beállíthatja többek között, hogy melyik mezőre alapuljon a színárnyalat, és hogy hogyan legyen alkalmazva. Ebben a példában a **SalesFact** > **Vélemények** mezőt használjuk, a legkisebb értékű véleményhez piros színt, a legmagasabbhoz pedig zöld értéket állítunk be. A maximális és a minimális közötti értékek a piros és a zöld árnyalataiban jelennek majd meg. A képernyő alján található illusztráció azt mutatja meg, hogy milyen színskálát lehet használni. 
+6. Az **Alapértelmezett színek – Adatszínek** képernyőn ellenőrizheti, milyen színárnyalatokkal jelenik majd meg a tematikus térkép. Beállíthatja többek között, hogy melyik mezőre alapuljon a színárnyalat, és hogy hogyan legyen alkalmazva. Ebben a példában a **SalesFact** > **Vélemény** mezőt használjuk, a legkisebb értékű vélemény narancssárga, a legmagasabbhoz pedig kék színt állítunk be. A maximális és a minimális közötti értékek a narancssárga és a kék árnyalataiban jelennek majd meg. A képernyő alján található illusztráció azt mutatja meg, hogy milyen színskálát lehet használni. 
 
-    ![Alapértelmezett színpanel, kiválasztva a Vélemények](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
+    ![Alapértelmezett színpanel, kiválasztva a Vélemények](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-field.png)
 
-7. A kitöltött térkép zöld és piros árnyalattal jelenik meg, ahol a piros az alacsonyabb véleménypontszámot, a zöld pedig a magasabb, pozitívabb véleménypontszámot jelöli.  További részletek megjelenítéséhez húzza a mezőt az Elemleírások területre.  Itt hozzáadtunk egy **Vélemények különbséget**, és kiemeltük Idaho (ID) államot, és az látszik, hogy a véleménykülönbség alacsony: 6.
-   ![tematikus térkép Idaho elemleírásának megjelenítésével](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-idaho.png)
+7. A kitöltött térkép zöld és piros árnyalattal jelenik meg, ahol a piros az alacsonyabb véleménypontszámot, a zöld pedig a magasabb, pozitívabb véleménypontszámot jelöli.  További részletek megjelenítéséhez húzza a mezőt az Elemleírások területre.  Itt felvettük a **SalesFact** > **Véleményeltérés** értéket. Idaho (ID) állam kiemelése megmutatja, hogy a véleményeltérés értéke alacsony, 6-os.
+   ![tematikus térkép Idaho elemleírásának megjelenítésével](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
 
 10. [Mentse a jelentést](../service-report-save.md).
 
-A Power BI lehetővé teszi, hogy nagy mértékben megszabhassa a tematikus térkép megjelenését. Próbálkozzon ezekkel az adatszín vezérlőelemekkel, amíg megfelelő megjelenést nem kap. 
+A Power BI-ban számos lehetőség van a kitöltött térkép megjelenésének szabályozására. Az adatszínvezérlők használatával elérheti a kívánt külalakot. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Kiemelés és keresztszűrés
 További információ a Szűrök ablaktábla használatáról: [Szűrők hozzáadása jelentésekhez](../power-bi-report-add-filter.md).
@@ -118,10 +118,10 @@ A kitöltött térképek egyes helyeinek kiemelésével a rendszer keresztszűri
 
    ![A Vélemény laphoz hozzáadott kitöltött térkép](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. Jelöljön ki egy államot a tematikus térképen.  Ez keresztkiemeléssel és keresztszűréssel jelöli a lapon lévő többi vizualizáció megfelelő adatait is. Például, ha kijelöli **Texas** államot, a rendszer azt mutatja, hogy a Vélemény értéke 75, és hogy Texas a Central District (Középső körzet) #23. eleme.   
-   ![Texas kijelölve](media/power-bi-visualization-filled-maps-choropleths/power-bi-texas.png)
+5. Jelöljön ki egy államot a tematikus térképen.  Ez keresztkiemeléssel és keresztszűréssel jelöli a lapon lévő többi vizualizáció megfelelő adatait is. A **Texas** kiválasztásával például keresztszűrést hajt végre a kártyákon és keresztkiemelést a sávdiagramon. Ebből tudom, hogy a vélemény értéke 75, és hogy Texas a Central District (Középső körzet) #23. eleme.   
+   ![Texas kijelölve](media/power-bi-visualization-filled-maps-choropleths/power-bi-filter.png)
 2. Jelöljön ki egy adatpontot a VanArsdel – Sentiment by Month (Vélemény hónap szerint) vonaldiagramon. Ekkor a rendszer szűrést alkalmaz a kitöltött térképen, így csak a VanArsdel véleményadatai jelennek meg, a konkurenciáé pedig nem.  
-   ![új árnyalat](media/power-bi-visualization-filled-maps-choropleths/power-bi-yes.png)
+   ![új árnyalat](media/power-bi-visualization-filled-maps-choropleths/power-bi-vanarsdel.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 A térképadatok nem feltétlenül egyértelműek.  Van például egy Paris nevű város (Párizs) Franciaországban, de van egy Paris Texasban is. A földrajzi adatok feltehetően külön oszlopokban tárolódnak – Egy oszlopban a városok nevei, egy oszlopban az államoké vagy tartományoké, stb. – így a Bing nem mindig tudja eldönteni, hogy melyik Paris nevű városról van szó. Ha az adatkészlet földrajzi szélesség- és hosszúság-adatokat is tartalmaz, akkor a Power BI speciális mezőkkel támogatja a térképadatok egyértelművé tételét. Ehhez elég a szélesség értékét tartalmazó mezőt a Megjelenítések \> Szélesség területre húzni.  Tegye ugyanezt a hosszúsági adatokkal.    
@@ -130,7 +130,7 @@ A térképadatok nem feltétlenül egyértelműek.  Van például egy Paris nev�
 
 Ha rendelkezik az adatkészlet Power BI Desktopban történő szerkesztéséhez szükséges jogosultsággal, akkor tekintse meg ezt a térképek kétértelműségének feloldásában segítő videót.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
+[VIDEÓ https://www.youtube.com/embed/Co2z9b-s_yM ]
 
 Ha nem fér hozzá a szélességi és hosszúsági adatokhoz, azonban szerkesztheti az adatkészletet, [kövesse ezt az útmutatást az adatkészlet frissítéséhez](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 

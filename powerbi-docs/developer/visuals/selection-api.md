@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 5f5e4769c750406a02ead656af551133fbceb738
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 94a1af90cc7ed08947f65f4ed0d55e981558d049
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061891"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696442"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Vizualizációk interaktívvá tétele Power BI-vizualizációkban végzett kijelölésekkel
 
 A Power BI két módot biztosít a vizualizációk közötti együttműködésre – a kijelölést és a szűrést. Az alábbi példa azt szemlélteti, hogy hogyan jelölhető ki egy vizualizáció bármely eleme, és hogyan értesíthető a jelentés egy másik vizualizációja az új kijelölési állapotról.
 
-Az interfésznek megfelelő `Selection` objektum:
+`Selection` objektum felel meg az interfésznek:
 
 ```typescript
 export interface ISelectionId {
@@ -37,9 +37,9 @@ export interface ISelectionId {
 
 A vizualizáció gazdaobjektuma biztosítja a kijelöléskezelő-példány létrehozására szolgáló metódust. A kijelöléskezelő végzi a kijelölést, a kijelölés megszüntetését, a helyi menü megjelenítését, az aktuális kijelölések tárolását és a kijelölési állapot ellenőrzését. A kijelöléskezelő rendelkezik az ezeknek a műveleteknek megfelelő metódusokkal.
 
-### <a name="create-instance-of-selection-manager"></a>A kijelöléskezelő-példány létrehozása
+### <a name="create-an-instance-of-the-selection-manager"></a>A kijelöléskezelő-példány létrehozása
 
-A kijelöléskezelő használatához létre kell hoznia annak egy példányát. A vizualizációk általában a vizualizáció-objektum `constructor`-ában hoznak létre kijelöléskezelő-példányt.
+A kijelöléskezelő használatához létre kell hoznia annak egy példányát. A vizualizációk általában a vizualizációs objektum `constructor`-ában hoznak létre kijelöléskezelő-példányt.
 
 ```typescript
 export class Visual implements IVisual {
@@ -56,9 +56,9 @@ export class Visual implements IVisual {
 }
 ```
 
-### <a name="create-instance-of-selection-builder"></a>A kijelöléskészítő-példány létrehozása
+### <a name="create-an-instance-of-the-selection-builder"></a>A kijelöléskészítő-példány létrehozása
 
-A kijelöléskezelő-példány létrehozása után a vizualizáció minden adatpontjához létre kel hoznia egy `selections` elemet. A vizualizáció gazdaobjektuma biztosítja az egyes adatpontokhoz kijelölést generáló `createSelectionIdBuilder` metódust. Ez a metódus a `powerbi.visuals.ISelectionIdBuilder` interfésszel adja vissza au objektum példányát:
+A kijelöléskezelő-példány létrehozása után a vizualizáció minden adatpontjához létre kel hoznia egy `selections` elemet. A vizualizáció gazdaobjektuma biztosítja az egyes adatpontokhoz kijelölést generáló `createSelectionIdBuilder` metódust. Ez a metódus a `powerbi.visuals.ISelectionIdBuilder` interfésszel adja vissza az objektum példányát:
 
 ```typescript
 export interface ISelectionIdBuilder {
@@ -79,7 +79,7 @@ Ez az objektum a megfelelő metódusokkal hoz létre a különböző típusú ad
 
 ### <a name="create-selections-for-categorical-data-view-mapping"></a>Kijelölések létrehozása kategorikus adatnézet-leképezéshez
 
-Vizsgáljuk meg, hogyan jelennek meg a kijelölések a minta-adathalmaz kategorikus adatnézet-leképezésén:
+Vizsgáljuk meg, hogyan jelennek meg a kijelölések a mintaadathalmaz kategorikus adatnézet-leképezésén:
 
 | Gyártó | Típus | Érték |
 | - | - | - |
@@ -108,7 +108,7 @@ Vizsgáljuk meg, hogyan jelennek meg a kijelölések a minta-adathalmaz kategori
 | Toyota | Importált autó | 20799 |
 | Toyota | Importált kisteherautó | 23614 |
 
-A vizualizáció a következő adatnézet-leképezést használja:
+A vizualizáció pedig a következő adatnézet-leképezést használja:
 
 ```json
 {
@@ -155,11 +155,11 @@ A vizualizáció a következő adatnézet-leképezést használja:
 }
 ```
 
-A mintában a `Manafacturer` a `columns`, a `Type` pedig a `rows`. Az adatsorozatok az értékek `rows` (`Type`) szerinti csoportosításával lettek létrehozva.
+A mintában a `Manufacturer` a `columns`, a `Type` pedig a `rows`. Az adatsorozatok az értékek `rows` (`Type`) szerinti csoportosításával lettek létrehozva.
 
-A vizualizációnak alkalmasnak kell lennie az adatok `Manafacturer` és `Type` szerinti szeletelésére is.
+A vizualizációnak alkalmasnak kell lennie az adatok `Manufacturer` és `Type` szerinti szeletelésére is.
 
-Ha a felhasználó például a `Chrysler`-t jelöli ki a `Manafacturer` értékeként, a többi vizualizációban az alábbi adatoknak kell megjelenniük:
+Ha a felhasználó például a `Chrysler`-t jelöli ki a `Manufacturer` értékeként, a többi vizualizációban az alábbi adatoknak kell megjelenniük:
 
 | Gyártó | Típus | Érték |
 | - | - | - |
@@ -185,7 +185,7 @@ A vizualizáció adatgyűjtőit ki kell tölteni.
 
 ![A vizualizáció adatgyűjtői kijelölésekkel](media/visual-selections-databuckets.png)
 
-Itt a `Manafacturer` kategória (oszlopok), a `Type` adatsorozat (sorok), a `Value` pedig az adatsorozathoz tartozó `Values` érték.
+Itt a `Manufacturer` kategória (oszlopok), a `Type` adatsorozat (sorok), a `Value` pedig az adatsorozathoz tartozó `Values` érték.
 
 > [!NOTE]
 > Az adatsorozatokhoz kötelező a `Values` megadása, mert az adatnézet-leképezés szerint a vizualizáció azt várja, hogy a `Values` a `Rows` adatai szerint lesz csoportosítva.
@@ -196,7 +196,7 @@ Itt a `Manafacturer` kategória (oszlopok), a `Type` adatsorozat (sorok), a `Val
 // categories
 const categories = dataView.categorical.categories;
 
-// create label for 'Manafacturer' column
+// create label for 'Manufacturer' column
 const p = document.createElement("p") as HTMLParagraphElement;
 p.innerText = categories[0].source.displayName.toString();
 this.target.appendChild(p);
@@ -209,7 +209,7 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
     const categoryValue: powerbi.PrimitiveValue = categories[0].values[categoryIndex];
 
     const categorySelectionId = this.host.createSelectionIdBuilder()
-        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manafacturer` column)
+        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manufacturer` column)
         .createSelectionId();
     this.dataPoints.push({
         value: categoryValue,
@@ -229,9 +229,9 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
 }
 ```
 
-A mintakódban az összes kategória iterálását láthatja. Minden iterációban meghívjuk a `createSelectionIdBuilder` metódust, hogy hozza létre az adott kategória következő kijelölését a kijelöléskészítő `withCategory` metódusának meghívásával. Az utolsóként használt `createSelectionId` metódus adja vissza a generált `selection` objektumot.
+A mintakódban láthatja, hogy az összes kategóriát iteráljuk. Minden iterációban meghívjuk a `createSelectionIdBuilder` metódust, hogy hozza létre az adott kategória következő kijelölését a kijelöléskészítő `withCategory` metódusának meghívásával. Az utolsóként használt `createSelectionId` metódus adja vissza a generált `selection` objektumot.
 
-A `withCategory` metódusban a `category` oszlopot (a példában ez a `Manafacturer`) és a kategóriaelem indexét adjuk át.
+A `withCategory` metódusban a `category` oszlopot (a példában ez a `Manufacturer`) és a kategóriaelem indexét adjuk át.
 
 #### <a name="create-selections-for-series"></a>Kijelölések létrehozása adatsorozatokhoz
 

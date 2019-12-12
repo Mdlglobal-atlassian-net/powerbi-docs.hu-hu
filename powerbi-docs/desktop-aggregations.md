@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ab84795ff5d140f23f19184bbc40e91133854f1f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 37cbea42d530f05df1d9f1003554680b80c5b5c3
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876741"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907947"
 ---
 # <a name="aggregations-in-power-bi-desktop"></a>Aggregációk a Power BI Desktopban
 
@@ -29,7 +29,7 @@ Az alábbi lista az **aggregációk** használatának előnyeit tartalmazza:
 * **Kiegyensúlyozott architektúrák megvalósítása** – engedélyezheti, hogy az aggregált lekérdezések kezelése hatékonyan, a Power BI memóriában tárolt gyorsítótárában történjen. Korlátozhatja az adatforrásokhoz DirectQuery-módban érkező lekérdezéseket, hogy az egyidejűségi korláton belül maradhasson. Azok a lekérdezések, amelyek átjutnak, többnyire szűrt tranzakciószintű lekérdezések, amelyeket az adattárházak és a big data-rendszerek általában könnyen kezelnek.
 
 ### <a name="table-level-storage"></a>Táblaszintű tárolás
-A táblaszintű tárolás használata általában az aggregációk funkcióval együtt történik. További információkért tekintse meg a [Tárolási mód a Power BI Desktopban](desktop-storage-mode.md) című cikket.
+A táblaszintű tárolás használata általában az aggregációk funkcióval együtt történik. További információkért olvassa el a [Tárolási mód a Power BI Desktopban](desktop-storage-mode.md) című cikket.
 
 ### <a name="data-source-types"></a>Adatforrástípusok
 Az aggregációk használata dimenziós modellek adatforrásaival történik, például adattárházakkal, data martokkal, és Hadoop-alapú big data-forrásokkal. Ez a cikk azt ismerteti, hogy miben különbözik az egyes adatforrások modellezése a Power BI-ban.
@@ -92,7 +92,7 @@ A *források közötti* kapcsolatok csak abban az esetben számítanak erősnek,
 
 Az olyan, *források közötti* aggregációs találatokat, amelyek nem függnek kapcsolatoktól, az oszlop szerinti csoportosításon alapuló aggregációról szóló későbbi bekezdés ismerteti.
 
-### <a name="aggregation-tables-are-not-addressable"></a>Az összesítési táblák nem címezhetők
+### <a name="aggregation-tables-arent-addressable"></a>Az aggregációs táblák nem címezhetők
 Az adatkészlethez csak olvasási jogosultsággal rendelkező felhasználók nem kérdezhetik le az aggregációs táblákat. Ezzel elkerülhetők a biztonsági problémák az RLS használatánál. A felhasználók és a lekérdezések nem az aggregációs, hanem a részlettáblára hivatkoznak, így nem is kell tudniuk arról, hogy létezik aggregációs tábla.
 
 Ezért a **Sales Agg** táblának rejtettnek kell lennie. Ha nem rejtett, akkor az Aggregációk kezelése párbeszédpanel rejtettre állítja, amikor az Alkalmaz gombra kattint.
@@ -184,7 +184,7 @@ Az aggregációk bizonyos esetekben hasznosak a DISTINCTCOUNT (Eltérő értéke
 ### <a name="rls"></a>RLS
 A sorszintű biztonsági (RLS) kifejezéseknek a megfelelő működéshez mind az aggregációs táblát, mind a részletező táblát szűrniük kell. A példát követve az RLS-kifejezés működni fog a **Geography** táblán, mert a Geography a kapcsolatok szűrési oldalán van mind a **Sales**, mind a **Sales Agg** táblánál. Azok a lekérdezések, amelyek az aggregációs táblából kérnek le találatokat és azok, amelyek nem, sikeresen alkalmazzák az RLS-t.
 
-![az aggregációk kezelik a szerepköröket](media/desktop-aggregations/manage-roles.jpg)
+![az aggregációk kezelik a szerepköröket](media/desktop-aggregations/manage-roles.png)
 
 A **Product** táblán egy RLS-kifejezés csak a **Sales** táblát fogja szűrni, de nem szűri a **Sales Agg** táblát. Ez nem ajánlott. Azok a lekérdezések, amelyeket olyan felhasználók küldenek be, akik az adatkészletet ennek a szerepkörnek a használatával érik el, nem fogják tudni kihasználni az aggregációs találatokat. Mivel az aggregációs tábla a részletek tábla adatainak egy újabb reprezentációja, nem lenne biztonságos lekérdezésekre választ adni az aggregációs táblából, mert az RLS-szűrő nem alkalmazható.
 
@@ -285,7 +285,7 @@ A következő időintelligenciás lekérdezés azért nem az aggregációból ad
 
 ## <a name="caches-should-be-kept-in-sync"></a>A gyorsítótárakat szinkronizálva kell tartani
 
-Azok az **aggregációk**, amelyek kombinálják a DirectQuery és az Importált és/vagy a Dual (Kettős) tárolási módot, más adatokat adhatnak vissza, ha a memóriában tárolt gyorsítótár nincs szinkronban a forrásadatokkal. A lekérdezések végrehajtása nem kísérli meg elfedni az adatokkal kapcsolatos problémákat például azzal, hogy a DirectQuery-eredményeket a gyorsítótárazott értékekkel való egyezés alapján szűri. Ezek teljesítményoptimalizáló funkciók, amelyeket csak abban az esetben érdemes használni, ha nincsenek negatív hatással az üzleti követelmények teljesítésére. Önnek kell ismernie a saját adatfolyamait, ezért kérjük, azok alapján tervezzen. Léteznek bevált módszerek az ilyen problémáknak a forrásnál való kezelésére, ha szükséges.
+Azok az **aggregációk**, amelyek kombinálják a DirectQuery és az Importált és/vagy a Dual (Kettős) tárolási módot, más adatokat adhatnak vissza, ha a memóriában tárolt gyorsítótár nincs szinkronban a forrásadatokkal. A lekérdezések végrehajtása nem kísérli meg elfedni az adatokkal kapcsolatos problémákat például azzal, hogy a DirectQuery-eredményeket a gyorsítótárazott értékekkel való egyezés alapján szűri. Ezek teljesítményoptimalizáló funkciók, amelyeket csak abban az esetben érdemes használni, ha nincsenek negatív hatással az üzleti követelmények teljesítésére. Önnek kell ismernie a saját adatfolyamait, ezért azok alapján tervezzen. Léteznek bevált módszerek az ilyen problémáknak a forrásnál való kezelésére, ha szükséges.
 
 ## <a name="next-steps"></a>Következő lépések
 

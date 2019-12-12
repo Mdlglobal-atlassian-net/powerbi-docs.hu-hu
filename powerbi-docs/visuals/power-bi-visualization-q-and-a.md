@@ -5,14 +5,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/19/2019
+ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: 78a74d2d49ac9eabb7d63f467c9838d370d5c314
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9805b98df7f606e61412ca9dee7dc0467a1649a3
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870843"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791816"
 ---
 # <a name="introduction-to-power-bi-qa-visual"></a>Bevezetés a Power BI Q&A-vizualizáció használatába
 
@@ -93,6 +93,10 @@ Ha nem biztos a kérdéstípusban vagy a szóhasználatban, bontsa ki az **Össz
 6. Módosítsuk a vizualizációt oszlopdiagramra. 
 
     ![Q&A-vizualizáció a kérdéshez hozzátett „as a column chart” (oszlopdiagramként) kifejezéssel](media/power-bi-visualization-q-and-a/power-bi-specify-visual.png)
+
+7.  Adjon hozzá további vizualizációkat a jelentésoldalhoz, és tekintse meg, hogyan kommunikál a Q&A-vizualizáció a többi vizualizációval az oldalon. Ebben a példában a Q&A-vizualizáció keresztszűrést végzett a vonatdiagramon és a térképen, és keresztkiemelést a sávdiagramon.
+
+    ![Q&A-vizualizáció egy kiválasztott sávval és ennek hatása a másik három vizualizációra a jelentésoldalon](media/power-bi-visualization-q-and-a/power-bi-filters.png)
 
 ## <a name="format-and-customize-the-qa-visual"></a>Q&A-vizualizáció formázása és testreszabása
 A Q&A-vizualizációt a formázási ablaktábla segítségével és téma alkalmazásával formázhatja. 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 91acaa3a2252250e2a10674bae0e9be81f142696
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: c20a366ef657e851ef77a9649dbcc8b66b67dac0
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410937"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74695197"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: A DIVIDE függvény és a divide operátor (/)
 
@@ -25,7 +25,7 @@ A DIVIDE függvény használatakor számlálót és nevezőt tartalmazó kifejez
 DIVIDE(<numerator>, <denominator> [,<alternateresult>])
 ```
 
-A DIVIDE függvény a nullával való osztást tartalmazó esetek automatikus kezelésére lett tervezve. Ha nem ad meg alternatív eredményt, a nevező pedig nulla vagy ÜRES, a függvény eredménye ÜRES. Ha megad egy alternatív eredményt, ÜRES helyett az lesz az eredmény.
+A DIVIDE függvény a nullával való osztást tartalmazó esetek automatikus kezelésére lett tervezve. Ha nem ad meg alternatív eredményt, a nevező pedig nulla vagy ÜRES, a függvény eredménye ÜRES. Amikor megad egy alternatív eredményt, ÜRES helyett az lesz a visszaadott eredmény.
 
 A DIVIDE függvény kézenfekvő, mivel segítségével a kifejezésnek nem kell tesztelnie a nevező értékét. Ez a függvény emellett jobban optimalizált a nevező értékének tesztelésére, mint az [IF](/dax/if-function-dax) függvény. A teljesítménytöbblet jelentős, mivel a nullával osztás költséges. A DIVIDE használata tömörebb és elegánsabb kifejezést eredményez.
 
@@ -58,7 +58,7 @@ A DIVIDE függvényt olyan esetekben célszerű használnia, amikor a nevető eg
 
 Ha a nevező egy állandó érték, használja a divide operátort. Ebben az esetben az osztás mindenképpen sikeres lesz, a kifejezés pedig jobb teljesítményt nyújt, mivel elkerüli a felesleges tesztelést.
 
-Alaposan fontolja meg, hogy a DIVIDE függvény adjon-e vissza alternatív értéket. Mértékek esetében általában célszerűbb, ha BLANK értéket adnak vissza. A BLANK érték visszaadása jobb választás, mivel a jelentésvizualizációk alapértelmezés szerint eltávolítják a csoportosításokat, ha az összegzések BLANK értékűek. A vizualizáció így olyan csoportokra összpontosíthat, amelyekben vannak adatok. Szükség esetén konfigurálhatja a vizualizációt úgy, hogy a szűrő minden csoportját (amely értékeket vagy ÜRES eredményt ad) megjelenítse. Ehhez engedélyeznie kell az „Adatot nem tartalmazó elemek megjelenítése” beállítást.
+Alaposan fontolja meg, hogy a DIVIDE függvény adjon-e vissza alternatív értéket. A mértékek esetében általában jobb tervezésre vall, ha az ÜRES értéket adják vissza, ha a jelentéssel bíró eredmény nem értékelhető. További információ: [Ne konvertálja a BLANK-eket értékekre](dax-avoid-converting-blank.md).
 
 ## <a name="next-steps"></a>Következő lépések
 
