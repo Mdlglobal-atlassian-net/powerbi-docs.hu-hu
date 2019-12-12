@@ -32,10 +32,14 @@
           href: ../service-dataflows-best-practices.md
         - name: Útmutató a DirectQuery-modellhez a Power BI Desktopban
           href: directquery-model-guidance.md
+        - name: Power Query-lekérdezésekre való hivatkozás
+          href: power-query-referenced-queries.md
         - name: Vizualizációk kibővítése a jelentésoldalak elemleírásával
           href: report-page-tooltips.md
         - name: Jelentésoldal részletezése
           href: report-drillthrough.md
+        - name: Útmutató automatikus dátum/időhöz a Power BI Desktopban
+          href: auto-date-time.md
     - name: Tanulmányok
       items:
         - name: Tanulmányok áttekintése
