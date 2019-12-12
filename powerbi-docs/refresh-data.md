@@ -1,20 +1,20 @@
 ---
 title: Adatfrissítés a Power BI-ban
 description: Ez a cikk elméleti szinten ismerteti a Power BI adatfrissítési funkcióit és azok függőségeit.
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/14/2019
-ms.author: mblythe
+ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 28a6aa8659411b829e6982e7c766e03d683871fd
-ms.sourcegitcommit: 982ffaa8eb91897f48221a816970671f4a92e6d9
+ms.openlocfilehash: bdb5b797146dae0bd8c6a70163a245f44430da8c
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74415437"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791685"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
 
@@ -92,7 +92,7 @@ A Power BI frissítési műveletei többféle frissítéstípusból állhatnak. 
 
 #### <a name="data-refresh"></a>Adatfrissítés
 
-A Power BI-felhasználók szempontjából az adatfrissítés általában azzal jár, hogy ütemezetten vagy igény szerint adatokat importálnak az eredeti adatforrásokból egy adathalmazba. Naponta több adathalmaz-frissítés is végrehajtható, és szükséges is lehet, ha a mögöttes adatforrás gyakran módosul. A Power BI megosztott kapacitásban lévő adathalmazokon naponta legfeljebb nyolc frissítést engedélyez. Ha az adathalmaz prémium szintű kapacitásban van, naponta legfeljebb 48 frissítést ütemezhet az adathalmaz beállításai között. További információt a cikk egy későbbi részében, az Ütemezett frissítés konfigurálása című szakaszban talál.
+A Power BI-felhasználók szempontjából az adatfrissítés általában azzal jár, hogy ütemezetten vagy igény szerint adatokat importálnak az eredeti adatforrásokból egy adathalmazba. Naponta több adathalmaz-frissítés is végrehajtható, és szükséges is lehet, ha a mögöttes adatforrás gyakran módosul. A Power BI megosztott kapacitásban lévő adathalmazokon naponta legfeljebb nyolc frissítést engedélyez. Ha az adathalmaz prémium szintű kapacitásban van, naponta legfeljebb 48 frissítést ütemezhet az adathalmaz beállításai között. További információt a cikk egy későbbi részében, az [Ütemezett frissítés konfigurálása](#configure-scheduled-refresh) című szakaszban talál.
 
 Azt is fontos hangsúlyozni, hogy a napi frissítések megosztott kapacitásokra vonatkozó korlátozása az ütemezett és az API-frissítések számának összegére vonatkozik. Igény szerinti frissítést az adathalmaz menüjének **Azonnali frissítés** elemét választva is indíthat az alábbi képernyőképen látható módon. A frissítési korlátozás az igény szerinti frissítésekre nem vonatkozik. Azt is fontos megjegyezni, hogy a prémium szintű kapacitásban lévő adathalmazok esetében nincsenek az API-frissítésekre vonatkozó korlátozások. Ha saját frissítési megoldást szeretne készíteni a Power BI REST API-jával, az [Adathalmazok – Adathalmaz frissítése](/rest/api/power-bi/datasets/refreshdataset) című cikkből tájékozódhat.
 
@@ -283,7 +283,7 @@ Az **Ütemezett frissítés** szakaszban határozhatja meg az adatkészletek fri
 
 ![Ütemezett frissítés beállítása](media/refresh-data/configure-scheduled-refresh.png)
 
-Frissítési ütemezés konfigurálása után az adathalmaz beállításainak oldala a fenti képernyőképen látható módon tájékoztatja a következő frissítés időpontjáról. Ha ennél hamarabb szeretné frissíteni az adatokat, például az átjáró és az adatforrás konfigurációjának teszteléséhez, igény szerinti frissítést hajthat végre a navigációs panel Adatkészlet menüjében található **Azonnali frissítés** lehetőséggel. Az igény szerinti frissítések nem befolyásolják a következő ütemezett frissítés időpontját, de a cikk korábbi részében leírtak szerint beleszámítanak a napi frissítési korlátba.
+Frissítési ütemezés konfigurálása után az adathalmaz beállításainak oldala a fenti képernyőképen látható módon tájékoztatja a következő frissítés időpontjáról. Ha ennél hamarabb szeretné frissíteni az adatokat, például az átjáró és az adatforrás konfigurációjának teszteléséhez, igény szerinti frissítést hajthat végre a navigációs panel Adatkészlet menüjében található **Azonnali frissítés** lehetőséggel. Az igény szerinti frissítések nem érintik a következő ütemezett frissítés időpontját.
 
 Azt is vegye figyelembe, hogy a frissítés konfigurált időpontja nem feltétlenül az a pontos időpont, amikor a Power BI elindítja a következő ütemezett folyamatot. A Power BI törekszik a frissítési ütemezés minél pontosabb betartására. A cél az, hogy a frissítés az ütemezett időponttól legfeljebb 15 perc eltéréssel elinduljon, de akár egyórás késés is előfordulhat, ha a szolgáltatás nem tudja korábban lefoglalni a szükséges erőforrásokat.
 

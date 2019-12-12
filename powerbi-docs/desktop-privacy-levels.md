@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b28c56433e27794798f2907f0d780002db96b2f7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c6c3ccdc547a8e9fb4e2d471365c9da67f7cf58a
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878082"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791318"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>A Power BI Desktop adatvédelmi szintjei
 A **Power BI Desktop** adatvédelmi szintjei egy elkülönítési szintet adnak meg, amely meghatározza, hogy az adott adatforrás milyen mértékben lesz elkülönítve a többi adatforrástól. A korlátozó elkülönítési szint azonban gátolja az adatforrások közötti információcserét, csökkentheti a funkcionalitást és hatással lehet a teljesítményre.
@@ -44,7 +44,7 @@ Egy adatforrás adatvédelmi szintjének konfigurálásához válassza ki az ada
 > 
 
 ## <a name="configure-privacy-levels"></a>Adatvédelmi szintek konfigurálása
-Az **Adatvédelmi szintek** egy olyan beállítás, amely alapértelmezés szerint az **Adatok összevonása forrásonként az adatvédelmiszint-beállításoknak megfelelően** értékre van beállítva, ami azt jelenti, hogy az **Adatvédelmi szintek** nincsenek engedélyezve.
+Az **Adatvédelmi szintek** alapértelmezés szerint az **Adatok összevonása forrásonként az adatvédelmiszint-beállításoknak megfelelően** értékre van beállítva, ami azt jelenti, hogy az **Adatvédelmi szintek** kényszerítve vannak.
 
 | Beállítás | Leírás |
 | --- | --- |

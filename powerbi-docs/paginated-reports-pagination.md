@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/22/2019
-ms.openlocfilehash: d0f0abe15348d54f24143d69fcd6c0c2b71e9a34
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/03/2019
+ms.openlocfilehash: fced83abab1898724e165154fbc177ccf50ca061
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874793"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831240"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Tördelési mód többoldalas Power BI-jelentésekben
 
- A tördelési mód szabja meg az egy jelentésen belüli oldalak számát és a jelentéselemek elrendezését ezeken az oldalakon. A többoldalas Power BI-jelentések tördelési módja a jelentés megtekintéséhez és kézbesítéséhez használt renderelő bővítménytől függően változhat. Ha a jelentéskészítő kiszolgálón futtat egy jelentést, a jelentés a HTML-renderelőt használja. A HTML meghatározott tördelési szabályokat követ. Ha ugyanezt a jelentést például PDF-ként exportálja, a PDF-renderelő lesz használva, és más szabályok lesznek alkalmazva, ezért a jelentés másként lesz tördelve. A felhasználók számára jól olvasható, a jelentés kézbesítésére szánt renderelőhöz optimalizált jelentés sikeres megtervezéséhez tisztában kell lennie a többoldalas Power BI-jelentések tördelését meghatározó szabályokkal.  
+ A *tördelési mód* szabja meg az egy jelentésen belüli oldalak számát és a jelentéselemek elrendezését ezeken az oldalakon. A többoldalas Power BI-jelentések tördelési módja a jelentés megtekintéséhez és kézbesítéséhez használt renderelő bővítménytől függően változhat. Ha a jelentéskészítő kiszolgálón futtat egy jelentést, a jelentés a HTML-renderelőt használja. A HTML meghatározott tördelési szabályokat követ. Ha ugyanezt a jelentést például PDF-be exportálja, a PDF-renderelőt kell használnia, amely más szabályokat alkalmaz. A jelentés így másképp lesz tördelve. Fontos, hogy ismerje a Power BI lapszámozott jelentéseire vonatkozó tördelési szabályokat. Így sikeresen tervezhet könnyen érthető jelentéseket, amelyeket a bemutatáshoz szánt renderelőhöz optimalizálhat.  
   
  Ez a témakör a fizikai oldal méretének és a jelentés elrendezésnek arra gyakorolt hatásait ismerteti, ahogyan a kényszerített oldaltörést használó renderelők megjelenítik a jelentést. Beállíthatja a fizikai oldalméretet és a margókat módosító beállításokat, és hasábokra oszthatja fel a jelentést a **Jelentés tulajdonságai** panelen, a **Tulajdonságok** panelen, vagy az **Oldalbeállítás** párbeszédpanelen. A **Jelentés tulajdonságai** panel eléréséhez kattintson a jelentés törzsén kívüli kék területre. Az **Oldalbeállítás** párbeszédpanel eléréséhez kattintson a Kezdőlap **Futtatás** elemére, majd a Futtatás lap **Oldalbeállítás** elemére.  
   
@@ -30,9 +30,9 @@ ms.locfileid: "73874793"
  Formázhatja a jelentéstörzs szegélyének színét, stílusát és vastagságát. Háttérszínt és háttérképet is beállíthat.  
   
 ## <a name="the-physical-page"></a>A fizikai oldal  
- A fizikai oldalméret a papír mérete. A jelentés renderelését a jelentéshez megadott papírméret határozza meg. A rögzített tördelési formátumban renderelt jelentések vízszintes és függőleges oldaltöréseket szúrnak be a fizikai oldalméret alapján, hogy optimális olvashatóságot biztosítsanak a nyomtatásban vagy rögzített tördelési fájlformátumban megtekintett jelentéseknek. A rugalmas tördelési formátumban renderelt jelentések vízszintes oldaltöréseket szúrnak be a fizikai méret alapján, hogy optimális olvashatóságot biztosítsanak a webböngészőben megtekintett jelentéseknek.  
+ A fizikai oldalméret a papír mérete. A jelentés renderelését a jelentéshez megadott papírméret határozza meg. A kiadványbarát oldaltöréses formátumokban renderelt jelentések a fizikai oldalmérettől függően vízszintes és függőleges oldaltöréseket szúrnak be. Ezek az oldaltörések optimális olvasási élményt nyújtanak a nyomtatott jelentésekhez és a kiadványbarát oldaltöréses formátumokhoz. A szoftveres oldaltöréses formátumokban renderelt jelentések a fizikai oldalmérettől függően vízszintes oldaltöréseket szúrnak be. Ezek szintén optimális olvasási élményt nyújtanak a webböngészőben való megtekintéshez.  
   
- Az alapértelmezett oldalméret 21 × 29,7 cm, de ez módosítható a **Jelentés tulajdonságai** panelen, az **Oldalbeállítás** párbeszédpanelen, vagy a PageHeight és PageWidth tulajdonságok módosításával a **Tulajdonságok** panelen. Az oldalméret nem nő vagy csökken a jelentéstörzs tartalmának megfelelően. Ha azt szeretné, hogy a jelentés egyetlen oldalon jelenjen meg, a jelentéstörzs teljes tartalmának el kell férnie a fizikai oldalon. Ha nem fér el, és merev tördelési formátumot használ, akkor a jelentéshez további oldalakra lesz szükség. Ha a jelentés törzse túlnyúlik a fizikai oldal jobb szélén, függőleges oldaltörés lesz beszúrva. Ha a jelentés törzse túlnyúlik a fizikai oldal alsó szélén, vízszintes oldaltörés lesz beszúrva.  
+ Az alapértelmezett oldalméret 21 × 29,7 cm, de ez módosítható a **Jelentés tulajdonságai** panelen, az **Oldalbeállítás** párbeszédpanelen, vagy a PageHeight és PageWidth tulajdonságok módosításával a **Tulajdonságok** panelen. Az oldalméret nem nő vagy csökken a jelentéstörzs tartalmának megfelelően. Ha azt szeretné, hogy a jelentés egyetlen oldalon jelenjen meg, a jelentéstörzs teljes tartalmának el kell férnie a fizikai oldalon. Ha nem fér el, és kiadványbarát tördelési formátumot használ, akkor a jelentéshez további oldalakra lesz szükség. Ha a jelentés törzse túlnyúlik a fizikai oldal jobb szélén, függőleges oldaltörés lesz beszúrva. Ha a jelentés törzse túlnyúlik a fizikai oldal alsó szélén, vízszintes oldaltörés lesz beszúrva.  
   
  Ha felül szeretné írni a jelentésben megadott fizikai oldalméretet, a fizikai oldalméretet a jelentés exportálásához használt adott renderelő Eszközinformációk beállításai között adhatja meg. A teljes listát megtalálhatja az SQL Server Reporting Services dokumentációjának [Renderelő bővítmények eszközinformáció-beállításai](https://docs.microsoft.com/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services?view=sql-server-2017) szakaszában.  
   
@@ -40,7 +40,7 @@ ms.locfileid: "73874793"
 
  A margók a fizikai oldal méreteihez képest a megadott margóbeállítással befelé eltolva vannak meghúzva. Ha egy jelentéselem átnyúlik a margó területére, úgy lesz levágva, hogy az átfedő terület ne legyen renderelve. Ha olyan margókat állít be, amelyek miatt az oldal függőleges vagy vízszintes kiterjedése nulla lesz, a margó alapértelmezetten a nulla értéket veszi fel. A margók beállíthatók a **Jelentés tulajdonságai** panelen, az **Oldalbeállítás** párbeszédpanelen, vagy a TopMargin, BottomMargin, LeftMargin és RightMargin tulajdonság módosításával a **Tulajdonságok** panelen. Ha felül szeretné írni a jelentésben megadott margóméretet, a margóméretet a jelentés exportálásához használt adott renderelő Eszközinformációk beállításai között adhatja meg.  
   
- A fizikai oldalnak a margók, a hasábközök, valamint a fej- és lábléc lefoglalása után fennmaradó területe az úgynevezett *hasznos oldalterület*. A margók csak akkor lesznek alkalmazva, ha a jelentést merev oldaltöréseket használó renderelési formátumban rendereli vagy nyomtatja. Az alábbi ábra a margókat és a fizikai oldal hasznos oldalterületét szemlélteti.  
+ A fizikai oldalnak a margók, a hasábközök, valamint a fej- és lábléc lefoglalása után fennmaradó területe az úgynevezett *hasznos oldalterület*. A margók csak akkor lesznek alkalmazva, ha a jelentést kiadványbarát megjelenítési formátumban rendereli vagy nyomtatja. Az alábbi ábra a margókat és a fizikai oldal hasznos oldalterületét szemlélteti.  
   
 ![Fizikai oldal margókkal és a hasznos területtel](media/paginated-reports-pagination/power-bi-paginated-rs-page-margins.png) 
   
@@ -87,6 +87,6 @@ ms.locfileid: "73874793"
   
 ## <a name="next-steps"></a>Következő lépések
 
-[Lapszámozott jelentés megtekintése a Power BI szolgáltatásban](paginated-reports-view-power-bi-service.md)
+[Lapszámozott jelentés megtekintése a Power BI szolgáltatásban](consumer/paginated-reports-view-power-bi-service.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

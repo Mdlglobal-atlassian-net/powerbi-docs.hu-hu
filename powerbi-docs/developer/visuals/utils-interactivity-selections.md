@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 8a9218085b0da655d1ce4b3ece0b2666c4826c86
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: e2587140d5436552e26be90c67eb5e6240bf6a1d
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061868"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696140"
 ---
 # <a name="microsoft-power-bi-visuals-interactivity-utils"></a>Interaktivitási eszközök Microsoft Power BI-vizualizációkhoz
 
@@ -126,8 +126,8 @@ export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoi
 }
 ```
 
-Definiálja a `visual behaviour` viselkedését. A `click` és `contextmenu` egéreseményeket az osztály kezeli.
-Az adatelemeken végzett kattintás esetén a vizualizáció a kijelöléskezelőt hívja meg az adatpontok kijelöléséhez. Ha a felhasználó a vizualizáció háttérelemére kattint, megszünteti a kijelölést. Az osztály ezt kezelő metódusai: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
+Definiálja a `visual behavior` viselkedését. A `click` és `contextmenu` egéreseményeket az osztály kezeli.
+Az adatelemeken végzett kattintás esetén a vizualizáció a kijelöléskezelőt hívja meg az adatpontok kijelöléséhez. ha a felhasználó a vizualizáció háttérelemére kattint, az meghívja a Kijelölés törlése kezelőt. Az osztály ezt kezelő metódusai: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
 
 ```typescript
 export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
@@ -259,7 +259,7 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
 
 * `selectionMerge` egy D3 kijelölési objektum, amely a vizualizáció kijelölhető elemeinek felel meg.
 
-* `select(this.target)` egy D3 kijelölési objektum, amely a vizualizáció fő elemeinek felel meg.
+* `select(this.target)` egy D3 kijelölési objektum, amely a vizualizáció fő DOM-elemeinek felel meg.
 
 * `this.categories` elemekkel rendelkező adatpontoknak felel meg, ahol az interfész `VisualDataPoint` (vagy `categories: VisualDataPoint[];`)
 

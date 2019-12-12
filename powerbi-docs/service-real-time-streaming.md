@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9415365c3846329d5bcf707ec7f41d0bd2cc6f92
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871734"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699094"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Valós idejű streamelés a Power BI-ban
 A Power BI valós idejű streamelésével valós időben streamelhet adatokat és frissítheti az irányítópultokat. A Power BI-ban elkészíthető vizualizációk vagy irányítópultok úgy is létrehozhatók, hogy valós idejű adatokat és a vizualizációkat jelenítsenek meg és frissítsenek. A streamelési adatok forrásai és eszközei lehetnek ipari érzékelők, közösségimédia-források, szolgáltatáshasználati metrika vagy bármi más, amiből időfüggő adatok gyűjthetők és továbbíthatók.
 
-![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+![Képernyőkép a valós idejű környezeti érzékelők eredményeiről.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Ebben a cikkben bemutatjuk, hogyan lehet beállítani egy valós idejű streamelési adatkészletet a Power BI-ban. Mielőtt erre rátérnénk, fontos előbb megismerni a csempéken (és irányítópultokon) megjeleníthető valós idejű adatkészletek típusait, valamint a típusok közti különbségeket.
 
@@ -198,7 +198,7 @@ Ebben a mintában egy nyilvánosan elérhető **PubNub**-folyamot fogunk haszná
    ![](media/service-real-time-streaming/real-time-streaming_9.png)
 5. A Power BI munkaterületén hozzon létre egy új irányítópultot, majd adjon hozzá egy csempét (ha ehhez segítségre van szüksége, nézze meg a fentebb látható lépéseket). Most már, ha a csempe létrehozásakor az **Egyedi streamelési adatok** lehetőséget választja, rendelkezésére áll egy streamelési adatkészlet. Haladjunk is tovább, és próbáljuk ki. Ha hozzáadja a *number* típusú mezőket vonaldiagramokhoz, és felvesz egyéb csempéket is, akkor lesz egy, az alábbihoz hasonló irányítópultja:
    
-   ![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+   ![Képernyőkép a valós idejű környezeti érzékelők eredményeiről.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Próbálja ki, játsszon egy kicsit a mintaadatkészlettel. Majd hozzon létre egy saját adatkészletet, és streameljen vele élő adatokat a Power BI-ba.
 

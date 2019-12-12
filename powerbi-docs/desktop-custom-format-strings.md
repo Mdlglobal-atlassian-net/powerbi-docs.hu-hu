@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1c1f049f8ba8c7808001b8566b1d10424a1b2ed1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3ec372a51177e5979cdfbca8408e11801aefb414
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878355"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791596"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Egyéni formázó sztringek használata a Power BI Desktopban
 
@@ -51,7 +51,6 @@ Az alábbi táblázat a támogatott **dátumszimbólumokat** mutatja be:
 | _hh_ | 01-12 (hónap éven belüli sorszáma kezdő nullával, a január = 01 értékkel kezdve) |
 | _hhh_ | A hónapok rövidített nevét jeleníti meg (az iszlám hónapneveknek nincs rövidítésük) |
 | _hhhh_ | A hónapok teljes nevét jeleníti meg |
-| _é_ | 1-366 (nap éven belüli sorszáma) |
 | _éé_ | 00-99 (az évszám utolsó két számjegye) |
 | _éééé_ | 100-9999 (három- vagy négyjegyű évszám) |
 
@@ -121,7 +120,6 @@ Az alábbi táblázat a **felhasználó által megadott dátum- és időformátu
 | hh | Bevezető nullát tartalmazó számként jeleníti meg a hónapot (01-12). Az ó vagy az óó kódot közvetlenül követő p percet jelenít meg. |
 | hhh | Rövidítésként jeleníti meg a hónapot (jan. – dec.). Honosított. |
 | hhhh | Teljes névvel jeleníti meg a hónapot (január – december). Honosított. |
-| é | Az év napját jeleníti meg számként (1-366). |
 | éé | Az évszámot jeleníti meg kétjegyű számként (00-99). |
 | éééé | Az évszámot jeleníti meg négyjegyű számként (00-9999). |
 | ó | Bevezető nullát nem tartalmazó számként jeleníti meg az órát (0-23). |

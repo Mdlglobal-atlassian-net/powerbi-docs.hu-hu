@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/04/2019
-ms.openlocfilehash: d8fd8490bda3be4217440a984e8b6da6fca7c5cf
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/03/2019
+ms.openlocfilehash: c1f8a274a17d85cf8f86d2e33ff63f3e9b686742
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874803"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831238"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Többoldalas jelentések a Power BI-ban: Gyakori kérdések 
 
@@ -116,21 +116,7 @@ Ha egy nem támogatott funkcióval rendelkező fájlt próbál meg feltölteni a
 
 ### <a name="what-data-sources-do-you-support-currently-for-paginated-reports"></a>Milyen adatforrásokat támogatnak jelenleg a lapszámozott jelentések?
 
-A következő adatforrásokat támogatjuk: 
-
-- Power BI-adatkészletek (egyszeri bejelentkezéssel (SSO))
-- Azure Analysis Services (egyszeri bejelentkezés (SSO) vagy oAuth használatával)
-- Azure SQL Data Warehouse
-- Azure SQL Database (felhasználónév/jelszó,SSO és oAuth)
-- Azure SQL felügyelt példány nyilvános végponton keresztül (felhasználónév/jelszó)
-- SQL Server*
-- SQL Server Analysis Services (SSAS) táblázatos (DAX) és többdimenziós (MDX) modellek* 
-- Oracle* 
-- Teradata* 
-
-* helyszíni átjárót igényel.
-
-Az SSAS az átjárón keresztül történő megnyitásakor a tárolt hitelesítő adatokhoz tartozó felhasználónak emelt szintű engedélyre lesz szüksége az SSAS-ben az átjárón történő munkához.
+Az adatforrások listáját [A Power BI többoldalas jelentéseihez használható támogatott adatforrások](paginated-reports-data-sources.md) című cikkben találhatja meg. 
 
 ### <a name="what-authentication-methods-do-you-support"></a>Milyen hitelesítési módszerek támogatottak?
 

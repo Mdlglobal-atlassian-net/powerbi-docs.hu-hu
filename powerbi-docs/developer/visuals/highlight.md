@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/31/2019
-ms.openlocfilehash: ed1a67168a386838049ec2ca047ec0cd971408fc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bf5cd8d8ae649071b3c9cc7243f87ac3cc316c3b
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880031"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74695360"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Adatpontok kiemelése Power BI-vizualizációkban
 
@@ -26,6 +26,9 @@ Ha `capabilities.json` fájl `supportsHighlight` tulajdonságát `true` értékr
 ![A `dataview` támogatja a kiemelést](./media/highlight-dataview-supports.png)
 
 A példában megfigyelheti, hogy 1 sáv ki van jelölve. Ez az egyetlen érték a kiemelt tömbben. Emellett fontos megjegyezni, hogy több kijelölés, valamint részleges kiemelés is szerepelhet. A kiemelt értékek az adatnézetben jelennek meg.
+
+> [!Note]
+> A táblázatos adatnézet leképezése nem támogatja a kiemelés funkciót.
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Az adatpontok kiemelése kategorikus adatnézet-leképezéssel
 

@@ -7,16 +7,18 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 12/3/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 393f6f25fedddd9ff17d635ae67ce473ab57eea4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bafcf3a754c58a040595279f93d885e8f317195e
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880926"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791775"
 ---
+- Hol van a bruttó árrés vonala százalékos értékben az évekre vonatkozóan? Több sávdiagram is látható, azonban több vonal nem.
+
 # <a name="customize-x-axis-and-y-axis-properties"></a>X és Y tengely tulajdonságainak testreszabása
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
@@ -171,7 +173,7 @@ Egyes vizualizációk esetében hasznos lehet, ha két Y tengely van. Ilyenek p�
 
 ### <a name="create-a-chart-with-two-y-axes"></a>Két Y tengellyel rendelkező diagram létrehozása
 
-1. Jelölje ki az oszlopdiagramot, majd módosítsa a típusát *Vonal- és halmozott oszlopdiagramra*. 
+1. Jelölje ki az oszlopdiagramot, majd módosítsa a típusát *Vonal- és halmozott oszlopdiagramra*. Ez a típusú vizualizáció egyetlen vonaldiagram-értéket és több halmozható oszlopértéket támogat. 
 
     ![Képernyőkép a Vizualizációk panelről, a vonal- és halmozott oszlopdiagram ikon kiemelésével.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo.png)
    
@@ -185,7 +187,7 @@ Egyes vizualizációk esetében hasznos lehet, ha két Y tengely van. Ilyenek p�
 
    ![Kombinált diagram és formázási panel, 12-esre csökkentett betűmérettel](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-font-size.png)
 
-   A Power BI létrehoz két Y tengelyt, amelyek értékei külön-külön méretezhetők. A bal oldali dollárban mér, a jobb oldali pedig a százalékban.
+   A Power BI létrehoz két Y tengelyt, amelyek értékei külön-külön méretezhetők. A bal oldali tengely az értékesítést méri dollárban, a jobb oldali pedig a bruttó árrés százalékos arányát.
 
 ### <a name="format-the-second-y-axis"></a>A második Y tengely formázása
 Mivel egy olyan vizualizáción kezdtünk dolgozni, amelynek az eredeti Y tengelye formázva volt, a Power BI a második Y tengely létrehozásakor is megőrizte a beállításokat. Ezeket azonban módosíthatjuk. 
