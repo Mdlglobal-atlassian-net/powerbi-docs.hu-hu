@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e09b3f8579b65bc242cda1dbdb54f187ab6b47d0
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74791617"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958402"
 ---
 # <a name="configure-scheduled-refresh"></a>Ütemezett frissítés beállítása
 
@@ -75,7 +75,7 @@ Az **Ütemezett frissítés** szakaszban határozhatja meg az adatkészlet friss
 A beállítások megadásához a **Tartsa adatait naprakészen** csúszkát a **bekapcsolt** értékre kell beállítani.
 
 > [!NOTE]
-> A Power BI szolgáltatás az ütemezett frissítési időponthoz képest **15 percen** belül kezdeményezi az adatfrissítést.
+> A cél az, hogy a frissítés az ütemezett időponttól legfeljebb 15 perc eltéréssel elinduljon, de akár egyórás késés is előfordulhat, ha a szolgáltatás nem tudja korábban lefoglalni a szükséges erőforrásokat.
 
 ![Ütemezett frissítés párbeszédpanel](media/refresh-scheduled-refresh/scheduled-refresh.png)
 

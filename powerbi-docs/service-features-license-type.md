@@ -6,43 +6,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 12/06/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: 6254f76a8810a16029ecfb052d48d2c8ae77d195
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: d054ec9e73330b8f742b70c05899fa0783fcbf7c
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698243"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958597"
 ---
 # <a name="power-bi-service-features-by-license-type"></a>Power BI-szolgáltatások funkciói licenctípus szerint
 
 [!INCLUDE [license-capabilities](includes/license-capabilities.md)]
-
-## <a name="per-user-license-type-comparison"></a>Felhasználónkénti licenctípus összehasonlítása
-
-Az alábbi felsorolás a felhasználónkénti licenctípus által támogatott funkciókat tartalmazza.
-
-|  | Ingyenes | Pro |
-| --- | --- | --- |
-| **Kapcsolódás több mint 70 adatforráshoz** |![Elérhető funkció](media/features-license-type/available.png) |![Elérhető funkció](media/features-license-type/available.png) |
-| **Webes közzététel** |![Elérhető funkció](media/features-license-type/available.png) |![Elérhető funkció](media/features-license-type/available.png) |
-| **Exportálás PowerPointba, Excel, CSV** |![Elérhető funkció](media/features-license-type/available.png) |![Elérhető funkció](media/features-license-type/available.png) |
-| **Vállalati terjesztés** | | |
-| Alkalmazások |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
-| E-mail-előfizetés |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
-| API-k és vezérlők beágyazása |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
-| **Együttműködés** | | |
-| Társközi megosztás |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
-| Munkaterületek |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
-| Elemzés az Excelben, elemzés a Power BI Desktopban |![A funkció nem érhető el](media/features-license-type/not-available.png) |![Elérhető funkció](media/features-license-type/available.png) |
-
-## <a name="next-steps"></a>Következő lépések
-
-Ha további információk is érdeklik a Power BI Premium előfizetéssel kapcsolatban, olvassa el a [Power BI Premiumot ismertető](service-premium-what-is.md) szakaszt.
-
-A Power BI szolgáltatásra való regisztrációról lásd az [Egyéni Power BI-regisztráció](service-self-service-signup-for-power-bi.md) szakaszt.
-
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
