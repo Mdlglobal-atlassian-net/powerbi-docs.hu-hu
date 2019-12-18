@@ -8,92 +8,94 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 05/9/2019
-ms.openlocfilehash: 373d57b871953f1afe02212ff0a1bbdb633cac4d
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.date: 12/02/2019
+ms.openlocfilehash: 0a39496ade27cd45fae116eea92ef4b472e04582
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565257"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999744"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Power BI-vizualizáció minősíttetése
 
-## <a name="what-are-_certified_-power-bi-visuals"></a>Melyek a **_minősített_** Power BI-vizualizációk?
+A minősített Power BI-vizualizációk azok a *piactéren* lévő vizualizációk, amelyek megfelelnek *bizonyos*, a *Microsoft Power BI csapata* által jóváhagyott és tesztelt kódolási előírásoknak. A tesztek rendeltetése annak ellenőrzése, hogy a vizualizáció nem kapcsolódik külső szolgáltatásokhoz vagy erőforrásokhoz.
 
-A minősített Power BI-vizualizációk azok a **piactéren** lévő vizualizációk, amelyek megfelelnek **bizonyos**, a **Microsoft Power BI csapata** által jóváhagyott és tesztelt kódolási előírásoknak. A minősítést szerzett egyéni vizualizációk több funkcióval bírnak. Például [exportálhatók a PowerPointba](../consumer/end-user-powerpoint.md), és megjeleníthetők olyan e-mailekben, amelyek akkor érkeznek, amikor egy felhasználó [feliratkozik jelentésoldalakra](../consumer/end-user-subscribe.md).
+A minősített Power BI-vizualizációk és a [standard Power BI-vizualizációk](power-bi-custom-visuals.md) ugyanúgy használhatók. Hozzáadhatók a [Power BI Desktophoz](../desktop-what-is-desktop.md) és a [Power BI szolgáltatáshoz](../power-bi-service-overview.md), és megtekinthetők a [Power BI Mobile](../consumer/mobile/mobile-apps-for-mobile-devices.md) és a [Power BI Embedded](embedding.md) használatával.
 
-A **minősített Power BI-vizualizációk** ugyanúgy használhatók, mint a [szabványos Power BI-vizualizációk](power-bi-custom-visuals.md). A minősített Power BI-vizualizációk hozzáadhatók a **Power BI szolgáltatáshoz** és a **Power BI Desktop jelentéseihez**, valamint megtekinthetők a **Power BI-mobilalkalmazásban** és a **Power BI Embeddedben**.
+A minősítési folyamat nem kötelező. A fejlesztők hatásköre eldönteni, hogy szeretnék-e minősíttetni a piactéri Power BI-vizualizációjukat. A minősítést szerzett Power BI-vizualizációk több funkcióval bírnak. Például [exportálhatók a PowerPointba](../consumer/end-user-powerpoint.md), és megjeleníthetők olyan e-mailekben, amelyek akkor érkeznek, amikor egy felhasználó [feliratkozik jelentésoldalakra](../consumer/end-user-subscribe.md).
 
-A végrehajtott tesztek célja, hogy ellenőrizze, hogy a vizualizáció nem kapcsolódik külső szolgáltatásokhoz vagy erőforrásokhoz. *Nem* a **Microsoft** a készítője a külső felek Power BI-vizualizációinak, ezért azt javasoljuk az ügyfeleinknek, hogy közvetlenül a készítővel kapcsolatba lépve ellenőrizzék az ilyen vizualizációk működését.
+A nem minősített Power BI-vizualizációk nem feltétlenül jelentenek nem biztonságos vizualizációkat. Egyes vizualizációk azért nincsenek minősítve, mert nem felelnek meg egy vagy több [minősítésbeli követelménynek](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Például egy külső szolgáltatáshoz (például egy térképvizualizációhoz) vagy egy kereskedelmi könyvtárakat használó vizualizációhoz csatlakozik.
 
-A minősítési folyamat nem kötelező, így a fejlesztők hatásköre eldönteni, hogy szeretnék-e minősíttetni a piactéri vizualizációjukat.  
+Ha Ön webfejlesztőként szeretne saját Power BI-vizualizációkat létrehozni és felvenni azokat a  [Microsoft AppSource-ban](https://appsource.microsoft.com), kezdje a  [Power BI-vizualizációk fejlesztése](visuals/custom-visual-develop-tutorial.md) című oktatóanyaggal.
 
-**A nem minősített Power BI-vizualizációk** nem feltétlenül jelentenek nem biztonságos vizualizációkat. Egyes vizualizációk azért nincsenek minősítve, mert nem felelnek meg egy vagy több [minősítésbeli követelménynek](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Például egy külső szolgáltatáshoz (például egy térképvizualizációhoz) vagy egy kereskedelmi könyvtárakat használó vizualizációhoz csatlakozik.
+> [!NOTE]
+> A külső Power BI-vizualizációknak *nem* a **Microsoft** a készítője. Ügyfeleinknek azt javasoljuk, hogy közvetlenül a készítővel kapcsolatba lépve ellenőrizzék a külső vizualizációk működését.
 
-Ön olyan webfejlesztő, aki szeretne saját képi megjelenítéseket létrehozni, és hozzáadni azokat a  **[Microsoft AppSource](https://appsource.microsoft.com)** listájához? Ennek módját az  **[Egyéni Power BI-vizualizáció fejlesztése](visuals/custom-visual-develop-tutorial.md)** című cikk ismerteti.
+> [!IMPORTANT]
+> A Microsoft saját belátása szerint eltávolíthatja a Power BI-vizualizációkat a [Minősített listáról](#list-of-power-bi-visuals-that-have-been-certified).
 
-## <a name="removal-of-power-bi-certified-power-bi-visuals"></a>Minősített Power BI-vizualizációk eltávolítása
+## <a name="certification-requirements"></a>Minősítési követelmények
 
-A Microsoft saját belátása szerint eltávolíthatja a vizualizációkat a [Minősített listáról](#list-of-power-bi-visuals-that-have-been-certified).
-
-## <a name="getting-a-custom-visualcertified"></a>Egyéni vizualizáció minősítése
-
-### <a name="certification-requirements"></a>Minősítési követelmények
-
-Az egyéni vizualizáció [minősítéséhez](#get-a-power-bi-visual-certified) győződjön meg róla, hogy az megfelel az alábbi feltételeknek:  
-
-* Microsoft AppSource-jóváhagyás. Az egyéni vizualizáció megtalálható a [piactéren](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Az egyéni vizualizációt a verzióval ellátott **API 2.5-ös** vagy újabb verzióival kell megírni.
-* A Power BI csapata számára ellenőrzésre elérhetővé tett kódtár (például ember által olvasható formátumú JavaScript- vagy TypeScript- forráskód a GitHubon).
-
-    >[!Note]
-    > Nem kell nyilvánosan megosztania a kódot a GitHubon.
-* A kódtár követelményei:
-   * Tartalmaznia kell a minimálisan szükséges fájlok készletét:
-      * .gitignore
-      * capabilities.json
-      * pbiviz.json
-      * package.json
-      * package-lock.json
-      * tsconfig.json
-   * Nem tartalmazhat node_modules mappát (valamint a node_modules .gitingore fájlt)
-   * Az **npm install** parancs nem eredményezhet hibát.
-   * Az **npm audit** parancs nem eredményezhet közepes vagy magas szintű figyelmeztetést.
-   * A **pbiviz package** parancs nem eredményezhet hibát.
-   * Tartalmaznia kell a [Microsoft TSlint](https://www.npmjs.com/package/tslint-microsoft-contrib) szolgáltatást felülbírált konfiguráció nélkül, a parancs pedig nem eredményezhet lint-hibát.
-   * Az egyéni vizualizáció lefordított csomagjának egyeznie kell a beküldött csomaggal (mindkét fájl md5-kivonatának egyenlőnek kell lennie).
-* A forráskódra vonatkozó követelmények:
-   * A vizualizációnak támogatnia kell az [események renderelési API-ját](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
-   * Győződjön meg arról, hogy nem fut tetszőleges/dinamikus kód (rossz: eval(), nem biztonságosan használt settimeout(), requestAnimationFrame(), setinterval(felhasználó által beírt függvény), felhasználó által megadott elemek/adatok futtatása).
-   * Győződjön meg arról, hogy a DOM biztonságosan van manipulálva (rossz: innerHTML, D3.html(<felhasználó/megadott adatok>), tisztítás a felhasználói elemekhez/adatokhoz a DOM-hoz való hozzáadás előtt.
-   * Ügyeljen arra, hogy a böngésző konzoljában nincsenek javaScript-hibák vagy -kivételek a bevitt adatok esetén. Előfordulhat, hogy a felhasználók más tartományú, váratlan adatokkal használják a vizualizációt, így annak hibátlanul kell működnie. Ezt a [mintajelentést](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) használhatja tesztelési adatkészletként.
-
-* Ha a capabilities.json fájl tulajdonságai módosulnak, győződjön meg róla, hogy azok nem teszik használhatatlanná a felhasználói jelentéseket.
-
-* Győződjön meg arról, hogy a vizualizáció megfelel a [Power BI-vizualizációk irányelveinek](./guidelines-powerbi-visuals.md). **Vízjelek nem használhatók**.
-
-* Csak nyilvánosan véleményezhető OSS-összetevők használata (nyilvános JS-kódtárak vagy nyilvános TypeScript. A forráskód véleményezhető, és nincsenek ismert biztonsági rései). Kereskedelmi összetevővel rendelkező egyéni vizualizációt nem minősíthetünk.
-
-* Nem fér hozzá külső szolgáltatásokhoz vagy erőforrásokhoz, így többek között HTTP/S- vagy WebSocket-kérelmeket sem küld a Power BI-ból más szolgáltatásokba. 
+A Power BI-vizualizáció [minősítéséhez](#get-a-power-bi-visual-certified) ellenőrizze, hogy a Power BI-vizualizáció megfelel-e az ebben a szakaszban felsorolt követelményeknek. 
 
 > [!TIP]
-> Javasoljuk az EsLint az alapértelmezett biztonsági szabálykészlettel való használatát a kód előzetes ellenőrzésére a beküldés előtt.
+> Javasoljuk az EsLint alapértelmezett biztonsági szabálykészlettel való használatát a kód előzetes ellenőrzésére a beküldés előtt.
 
-## <a name="process-for-submitting-a-custom-visual-for-certification"></a>Az egyéni vizualizációk minősítésre való beküldésének folyamata
+* A Microsoft Értékesítői irányítópult vagy a Partnerközpont által jóvá van hagyva. A Power BI-vizualizációnak megtalálhatónak kell lennie a [piactéren](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
+* A Power BI-vizualizációt az *API 2.5-ös* vagy újabb verzióival kell megírni.
+* A kód adattárának elérhetőnek kell lennie ahhoz, hogy a Power BI csapata ellenőrizhesse azt. Például a forráskód olvasható formátumának (JavaScript vagy TypeScript) a GitHubon keresztül elérhetőnek kell lennie számunkra.
 
-Egyéni vizualizáció beküldése minősítésre:
+    >[!NOTE]
+    > Nem kell nyilvánosan megosztania a kódot a GitHubon.
 
-1. Küldjön egy e-mailt a Power BI-vizualizációk támogatásáért felelő csapatnak (pbicvsupport@microsoft.com). Az e-mailben adja meg az alábbi információkat:
-    * Cím: Vizualizáció minősítésére vonatkozó kérelem
-    * Az emberileg olvasható forráskódot tartalmazó GitHub-adattárra mutató hivatkozás
-    * [Feleljen meg a követelményeknek](#certification-requirements)
-    * Sikeres kódfelülvizsgálat
+* A kódtár követelményei:
+  * Tartalmaznia kell a következő fájlokat:
+    * .gitignore
+    * capabilities.json
+    * pbiviz.json
+    * package.json
+    * package-lock.json
+    * tsconfig.json
+  * Nem tartalmazhat *node_modules* mappát (a *node_modules*-t a .gitingore fájlhoz adja hozzá).
+  * Az *npm install* parancs nem eredményezhet hibát.
+  * Az *npm audit* parancs nem eredményezhet közepes vagy magas szintű figyelmeztetést.
+  * A *pbiviz package* parancs nem eredményezhet hibát.
+  * Tartalmaznia kell a [Microsoft TSlint](https://www.npmjs.com/package/tslint-microsoft-contrib) szolgáltatást felülbírált konfiguráció nélkül. Ez a parancs nem eredményezhet lint-hibát.
+   * A Power BI-vizualizáció lefordított csomagjának egyeznie kell a beküldött csomaggal (mindkét fájl md5-kivonatának egyenlőnek kell lennie).
+* A forráskódra vonatkozó követelmények:
+   * A Power BI-vizualizációnak támogatnia kell az [események renderelési API-ját](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Győződjön meg arról, hogy nem fut tetszőleges/dinamikus kód (rossz: eval(), nem biztonságosan használt settimeout(), requestAnimationFrame(), setinterval(felhasználó által beírt függvény), felhasználó által megadott elemek/adatok futtatása).
+   * Győződjön meg arról, hogy a DOM biztonságosan van manipulálva (rossz: innerHTML, D3.html(<felhasználó/megadott adatok>), tisztítás a felhasználói elemekhez/adatokhoz a DOM-hoz való hozzáadás előtt.
+   * Ügyeljen arra, hogy a böngésző konzoljában ne legyenek javaScript-hibák vagy -kivételek a bevitt adatok esetén. Előfordulhat, hogy a felhasználók más tartományú, váratlan adatokkal használják a Power BI-vizualizációt, így annak hibátlanul kell működnie. Ezt a [mintajelentést](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) használhatja tesztelési adatkészletként.
 
-2. A Microsoft Power BI-vizualizációkért felelős csapata értesíti, amint az egyéni vizualizáció megkapja a minősítést, és elérhetővé válik a [Minősített listában](#list-of-power-bi-visuals-that-have-been-certified), illetve a vizualizáció elutasítása esetén megküldi az orvosolandó problémák listáját. A fejlesztő felelőssége, hogy biztosítsa a megfelelő kommunikációt a Microsoft csapatával, és szükség esetén frissítse Minősített vizualizációit.
+* Ha a *capabilities.json* fájl tulajdonságai módosulnak, ellenőrizze, hogy azok nem teszik használhatatlanná a felhasználói jelentéseket.
+
+* Ügyeljen rá, hogy a Power BI-vizualizáció megfeleljen a [Power BI-vizualizációk irányelveinek](./guidelines-powerbi-visuals.md).
+    
+* A kód csak nyilvános, ellenőrizhető OSS-összetevőket, például nyilvános JavaScript- vagy TypeScript-kódtárakat használhat. A forráskódnak ellenőrizhetőnek kell lennie, és nem tartalmazhat ismert biztonsági réseket. Kereskedelmi összetevővel rendelkező egyéni vizualizációt nem minősíthetünk.
+
+* A Power BI-vizualizáció nem kapcsolódhat külső szolgáltatásokhoz és erőforrásokhoz. Például nem mehet ki HTTP/S- vagy WebSocket-kérelem a Power BI-ból egyetlen szolgáltatáshoz sem. 
+
+## <a name="submitting-a-power-bi-visual-for-certification"></a>Power BI-vizualizáció beküldése minősítésre
+
+A Power BI-vizualizáció hitelesítését a Partnerközpontban kérheti a Power BI csapatától.
+
+>[!TIP]
+>A Power BI minősítési folyamata időt vehet igénybe. Új Power BI-vizualizáció létrehozása esetén a Power BI-minősítés igénylése előtt javasoljuk a Power BI-vizualizáció Partnerközponton keresztüli közzétételét. Így gondoskodhat a vizualizáció késlekedés nélküli közzétételéről.
+
+Power BI-minősítés igénylése:
+
+1. Jelentkezzen be a Partnerközpontba.
+2. Az **Áttekintés lapon** válassza ki a Power BI-vizualizációt, és lépjen a **Termékbeállítás** lapra.
+3. Jelölje be a **Power BI-minősítés igénylése** lehetőséget.
+4. Az **Áttekintés és közzététel** oldalon, a **Megjegyzések a minősítéshez** mezőben adja meg a forráskódra mutató hivatkozást és a hozzáféréshez szükséges hitelesítő adatokat.
+
+>[!NOTE]
+> Ha már megkezdte egy Power BI-vizualizáció beküldésének folyamatát, és az [Értékesítői irányítópultot](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (a régi kezelőeszközt) kell használnia, akkor tekintse át a [Beküldése az Értékesítői irányítópult használatával](seller-dashboard.md#seller-dashboard-certification-submission-process) című útmutatót.
 
 ## <a name="list-of-power-bi-visuals-that-have-been-certified"></a>A minősített Power BI-vizualizációk listája
 
-| Az AppSource-ra mutató hivatkozás | A videóra mutató hivatkozás |
+| Hivatkozás | Videó |
 | --- | --- |
 | [3AG Systems – sávdiagram relatív eltéréssel](https://appsource.microsoft.com/en/product/power-bi-visuals/WA104381912) | |
 | [3AG Systems – oszlopdiagram relatív eltéréssel](https://appsource.microsoft.com/product/power-bi-visuals/WA104381803) | |
