@@ -9,16 +9,16 @@ ms.topic: quickstart
 ms.date: 10/29/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: ebaf32bbf84dcbb8efd8516fd0a1ab01011f2d63
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 55cdfad221aef276c790e98de83dd844bc13aafe
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698486"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958695"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Felhasználói Power BI Pro-licencek vásárlása és kiosztása
 
-A Power BI Pro egyéni felhasználói licenc, amely lehetővé teszi, hogy a felhasználók más felhasználók által a Power BI szolgáltatásban közzétett jelentéseket és irányítópultokat olvassanak és kezeljenek, valamint tartalmat osszanak meg, és más Power BI Pro-felhasználókkal működjenek együtt. Tartalmat csak Power BI Pro-licenccel rendelkező felhasználók tehetnek közzé vagy oszthatnak meg más felhasználókkal, és csak ők használhatnak más felhasználók által létrehozott tartalmat, kivéve akkor, ha a tartalom Power BI Premium-kapacitásban van üzemeltetve. További információ: [Power BI-szolgáltatások licenctípus szerint](service-features-license-type.md).
+A Power BI Pro egyéni felhasználói licenc, amely lehetővé teszi, hogy a felhasználók más felhasználók által a Power BI szolgáltatásban közzétett jelentéseket és irányítópultokat olvassanak és kezeljenek, valamint tartalmat osszanak meg, és más Power BI Pro-felhasználókkal működjenek együtt. Tartalmat csak Power BI Pro-licenccel rendelkező felhasználók tehetnek közzé vagy oszthatnak meg más felhasználókkal, és csak ők használhatnak más felhasználók által létrehozott tartalmat, kivéve akkor, ha a tartalom Power BI Premium-kapacitásban van üzemeltetve. További információt a [Power BI díjszabása](https://powerbi.microsoft.com/pricing/) témakör _Power BI-funkciók összehasonlítása_ szakaszában talál.
 
 ## <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Felhasználói Power BI Pro-licencek vásárlása és kiosztása
 

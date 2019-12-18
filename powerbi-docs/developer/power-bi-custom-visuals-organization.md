@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8c28c5ee89ffee37c09db8dc6ffcd6fb90274786
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: f11636de003aaab2d10d595b3c2b0230e373410c
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74102088"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999836"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Vállalati vizualizációk a Power BI-ban
 
@@ -59,6 +59,6 @@ A hibaelhárítással kapcsolatban a [Power BI-vizualizációk hibáinak elhár�
 
 ## <a name="faq"></a>Gyakori kérdések
 
-További információt és válaszokat [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md#organizational-visuals) között talál.
+További információt és válaszokat [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals) között talál.
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).

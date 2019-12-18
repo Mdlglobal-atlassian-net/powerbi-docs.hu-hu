@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 4f16cffe24d7eae5fe919dd2aa29949855258842
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 4cddf01dd57191b5d3e707589e6d8a78e106259f
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698279"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958471"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Saját titkosítási kulcsok használata a Power BI-hoz (előzetes verzió)
 
@@ -30,7 +30,8 @@ BYOK használatához adatokat kell feltöltenie a Power BI szolgáltatásba egy 
 
 - Élő Analysis Services-kapcsolat
 - Excel-munkafüzetek (ha az adatok nincsenek a Power BI Desktopba importálva)
-- Leküldéses adathalmazok
+- [Leküldéses adathalmazok](/rest/api/power-bi/pushdatasets)
+- [Streamelési adathalmazok](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 - [Nagyméretű modellek](service-premium-large-models.md)
 
 A BYOK csak a PBIX-fájlhoz társított adatkészletre vonatkozik, a csempék és vizualizációk lekérdezési eredményeinek gyorsítótáraira nem.

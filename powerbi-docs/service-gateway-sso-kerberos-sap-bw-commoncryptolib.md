@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2019
+ms.date: 12/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6c098a187b7f0d0d4828500cd6c5995a7c82ab42
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 02c8ac991fbf84051ae795ef4a80f2b3dc07a1ce
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74697635"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000181"
 ---
 # <a name="use-kerberos-single-sign-on-for-sso-to-sap-bw-using-commoncryptolib-sapcryptodll"></a>A Kerberos egyszeri bejelentkezésének használata az SAP BW-hez a CommonCryptoLibbel (sapcrypto.dll)
 
@@ -89,7 +89,7 @@ Ez a cikk azt ismerteti, hogy hogyan konfigurálhatja az SAP BW-adatforrást a P
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 
-Ha nem tudja frissíteni a jelentést a Power BI szolgáltatásban, a probléma diagnosztizálásához használhatja az átjáró nyomkövetését, a CPIC-nyomkövetést és a CommonCryptoLib-nyomkövetést is. Mivel a CPIC-nyomkövetés és a CommonCryptoLib is SAP-termék, a Microsoft nem tud támogatást biztosítani hozzájuk. Azon Active Directory felhasználók számára, akik SSO-hozzáférést kapnak a BW-hez, egyes Active Directory konfigurációknál előfordulhat, hogy a felhasználóknak a Rendszergazdák csoport tagjainak kell lenniük azon a gépen, amelyen az átjáró telepítve van.
+Ha nem tudja frissíteni a jelentést a Power BI szolgáltatásban, a probléma diagnosztizálásához használhatja az átjáró nyomkövetését, a CPIC-nyomkövetést és a CommonCryptoLib-nyomkövetést is. Mivel a CPIC-nyomkövetés és a CommonCryptoLib is SAP-termék, a Microsoft nem tud támogatást biztosítani hozzájuk.
 
 ### <a name="gateway-logs"></a>Átjárónaplók
 
@@ -109,7 +109,49 @@ Ha nem tudja frissíteni a jelentést a Power BI szolgáltatásban, a probléma 
 
    ![CPIC-nyomkövetés](media/service-gateway-sso-kerberos/cpic-tracing.png)
 
- 3. Reprodukálja a problémát, és ellenőrizze, hogy a **CPIC\_TRACE\_DIR** tartalmaz-e profilelemzési fájlokat.
+3. Reprodukálja a problémát, és ellenőrizze, hogy a **CPIC\_TRACE\_DIR** tartalmaz-e profilelemzési fájlokat.
+ 
+    A CPIC-nyomkövetés képes a magasabb szintű problémák, például a sapcrypto.dll kódtár betöltésének sikertelenségének diagnosztizálására. Íme például egy CPIC-nyomkövetési fájlból származó kódrészlet, amelyben egy .dll-betöltési hiba történt:
+
+    ```
+    [Thr 7228] *** ERROR => DlLoadLib()==DLENOACCESS - LoadLibrary("C:\Users\test\Desktop\sapcrypto.dll")
+    Error 5 = "Access is denied." [dlnt.c       255]
+    ```
+
+    Ha ilyen hibát tapasztal, de az olvasási és végrehajtási engedélyeket a sapcrypto.dll és a sapcrypto.ini fájlra vonatkozóan a [fenti szakaszban](#configure-sap-bw-to-enable-sso-using-commoncryptolib) leírtak szerint állította be, akkor próbálja meg ugyanazokat az olvasási és végrehajtási engedélyeket beállítani a fájlokat tartalmazó mappához is.
+
+    Ha továbbra sem tudja betölteni a .dll-fájlt, próbálja meg bekapcsolni [naplózást a fájlra](/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder). A Windows Eseménynaplóban az eredményül kapott naplók vizsgálata segíthet megállapítani, hogy a fájl miért nem töltődik be. Keresse meg a megszemélyesített Active Directory-felhasználó által kezdeményezett hibabejegyzést. A `MYDOMAIN\mytestuser` megszemélyesített felhasználó esetén például a következőhöz hasonló hibát fog látni a naplóban:
+
+    ```
+    A handle to an object was requested.
+
+    Subject:
+        Security ID:        MYDOMAIN\mytestuser
+        Account Name:       mytestuser
+        Account Domain:     MYDOMAIN
+        Logon ID:       0xCF23A8
+
+    Object:
+        Object Server:      Security
+        Object Type:        File
+        Object Name:        <path information>\sapcrypto.dll
+        Handle ID:      0x0
+        Resource Attributes:    -
+
+    Process Information:
+        Process ID:     0x2b4c
+        Process Name:       C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe
+
+    Access Request Information:
+        Transaction ID:     {00000000-0000-0000-0000-000000000000}
+        Accesses:       ReadAttributes
+                
+    Access Reasons:     ReadAttributes: Not granted
+                
+    Access Mask:        0x80
+    Privileges Used for Access Check:   -
+    Restricted SID Count:   0
+    ```
 
 ### <a name="commoncryptolib-tracing"></a>CommonCryptoLib-nyomkövetés 
 

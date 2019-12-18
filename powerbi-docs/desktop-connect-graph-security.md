@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e5374397dc9b89df7b7cbd86cfca5a44631b94e4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ef8e874c1f1a47d65845b87dccd441746651a68b
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876489"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999790"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Csatlakozás a Microsoft Graph Security API-hoz a Power BI Desktopban
 
@@ -40,7 +40,7 @@ Az összekötő jóváhagyásához az Azure AD bérlői rendszergazdája az alá
 
 * Válaszadás a logikai alkalmazás által az első futtatásakor küldött kérelemre az [alkalmazás-hozzájárulási felületen](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)
    
-A Microsoft Graph Security-összekötőbe bejelentkező felhasználói fióknak a Biztonsági olvasó korlátozott rendszergazdai szerepkör tagjának kell lennie az Azure AD-ben *Biztonsági olvasóként* vagy *Biztonsági rendszergazdaként*. Lásd: [Azure AD-szerepkörök hozzárendelése a felhasználókhoz](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
+A Microsoft Graph Security-összekötőbe bejelentkező felhasználói fióknak a Biztonsági olvasó szerepkörhöz kell hozzárendelve lennie az Azure AD-ben **ha** felhasználó nem tagja a *Biztonsági rendszergazda* szerepkörnek. Lásd: [Azure AD-szerepkörök hozzárendelése a felhasználókhoz](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
 
 ## <a name="using-the-microsoft-graph-security-connector"></a>A Microsoft Graph Security-összekötő használata
 

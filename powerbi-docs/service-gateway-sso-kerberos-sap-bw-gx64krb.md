@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9588f13a857dc105dce3b3577df7c3b06df027ed
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 6c8b62cf798d2fbbd09dab0603d216448d04487c
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699245"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000135"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-bw-using-gx64krb5"></a>Kerberos használata az SAP BW-n történő egyszeri bejelentkezéshez (SSO) a gx64krb5-tel
 
@@ -197,6 +197,8 @@ Ha a következő problémák közül bármelyiket tapasztalja, kövesse az aláb
       ![CPIC-nyomkövetés](media/service-gateway-sso-kerberos/cpic-tracing.png)
 
     c. Reprodukálja a problémát, és ellenőrizze, hogy a **CPIC\_TRACE\_DIR** tartalmaz-e profilelemzési fájlokat. 
+    
+    d. A blokkoló probléma okának megállapításához vizsgálja meg a nyomkövetési fájlok tartalmát. Előfordulhat például, hogy a gx64krb5.dll fájl nem megfelelően lett betöltve, vagy nem az az Active Directory-felhasználó kezdeményezte az SSO-kapcsolódási kísérletet, akire számított.
 
 ## <a name="next-steps"></a>Következő lépések
 

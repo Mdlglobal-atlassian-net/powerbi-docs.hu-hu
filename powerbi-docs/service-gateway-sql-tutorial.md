@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0ab5831cb1cf4af28a56711475b7ba6a5683b5d5
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699314"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958436"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Adatok frissítése helyszíni SQL Server-adatbázisból
 
@@ -49,6 +49,10 @@ Az alábbi eljárást követve hozhat létre alapszintű Power BI-jelentést az 
 2. Az **SQL Server-adatbázis** párbeszédpanelen írja be a megfelelő nevet a **Kiszolgáló** és az **Adatbázis (opcionális)** mezőbe, ellenőrizze, hogy az **Adatkapcsolati mód** beállítása **Importálás** értékű-e, majd kattintson az **OK** gombra.
 
     ![SQL Server-adatbázis](./media/service-gateway-sql-tutorial/sql-server-database.png)
+
+    Ebben az oktatóanyagban nem használjuk a **speciális beállításokat**, de vegye figyelembe, hogy megadhat egy SQL-utasítást is, és beállíthat más beállításokat, például az [SQL Server feladatátvételét](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server) is.
+
+    ![Az SQL Server speciális beállításai](media/service-gateway-sql-tutorial/sql-server-advanced-options.png)
 
 3. Ellenőrizze **hitelesítő adatait**, majd válassza a **Csatlakozás** elemet.
 

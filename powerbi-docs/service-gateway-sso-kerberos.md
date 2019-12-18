@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2019
+ms.date: 12/03/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4ce5eab22538b7abdded2759a4a072fd500575ea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699222"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000112"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Kerberos-alapú egyszeri bejelentkezés konfigurálása a Power BI szolgáltatásról helyszíni adatforrásokhoz
 
@@ -66,6 +66,22 @@ Először állapítsa meg, hogy létre lett-e már hozva egyszerű szolgáltatá
    ```setspn -a gateway/MyGatewayMachine Contoso\GatewaySvc```
 
    Az egyszerű szolgáltatásnevet az **Active Directory – felhasználók és számítógépek** MMC beépülő moduljával is beállíthatja.
+   
+### <a name="add-gateway-service-account-to-windows-authorization-and-access-group-if-required"></a>Átjáró-szolgáltatásfiók hozzáadása a Windows hitelesítési és hozzáférési csoporthoz, ha szükséges
+
+Bizonyos esetekben az átjáró-szolgáltatásfiókot hozzá kell adni a Windows hitelesítési és hozzáférési csoporthoz. Ilyen eset lehet, ha az Active Directory környezeti biztonságát kell megerősíteni, és ha az átjáró-szolgáltatásfiók és az átjáró által megszemélyesített felhasználói fiókok külön tartományokban vagy erdőkben találhatók. Az átjáró-szolgáltatásfiókot a Windows hitelesítési és hozzáférési csoporthoz olyan helyzetekben is hozzáadhatja, amikor a tartomány/erdő nem lett megerősítve, de nem kötelező.
+
+További információ: [Windows hitelesítési és hozzáférési csoport](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
+
+A konfigurációs lépés elvégzéséhez minden tartományhoz, amely olyan Active Directory-felhasználókat tartalmaz, akiknél szeretné, hogy az átjáró-szolgáltatásfiók elvégezze a megszemélyesítést:
+1. Jelentkezzen be a tartományban lévő számítógépen, és indítsa el az Active Directory felhasználók és számítógépek MMC beépülő modult.
+2. Keresse meg a **Windows hitelesítési és hozzáférési csoport** csoportot, amely általában a **Beépített** (Builtin) tárolóban található.
+3. Kattintson duplán a csoportra, majd kattintson a **Tagok** fülre.
+4. Kattintson a **Hozzáadás** elemre, és módosítsa a tartomány helyét arra a tartományra, amelyen az átjáró-szolgáltatásfiók található.
+5. Írja be az átjáró-szolgáltatásfiók nevét, és kattintson a **Névellenőrzés** lehetőségre, és ellenőrizze, hogy az átjáró-szolgáltatásfiók elérhető-e.
+6. Kattintson az **OK** gombra.
+7. Kattintson az **Alkalmaz** gombra.
+8. Indítsa újra az átjárószolgáltatást.
 
 ### <a name="decide-on-the-type-of-kerberos-constrained-delegation-to-use"></a>A korlátozott Kerberos-delegálás használni kívánt típusának meghatározása
 

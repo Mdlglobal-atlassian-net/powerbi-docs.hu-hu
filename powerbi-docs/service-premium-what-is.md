@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 9434aa717ad10791e75366cf23ef8ece567389ea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 37107c1092b12a8efc230718c624f104aa31520f
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699130"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958563"
 ---
 # <a name="what-is-power-bi-premium"></a>Mi az a Power BI Premium?
 
@@ -29,16 +29,17 @@ A Power BI Premium dedikált és továbbfejlesztett erőforrásokat biztosít v�
 > * Régiónkénti adattárolás (Multi-Geo) támogatása
 > * Adatok megosztása bárkivel, felhasználónkénti licencek vásárlása nélkül
 
-Ez a cikk a Power BI Premium fő funkcióit ismerteti. Ahol szükséges, megadjuk a részletesebb információkat nyújtó cikkekre mutató hivatkozásokat.
+Ez a cikk a Power BI Premium fő funkcióit ismerteti. Ahol szükséges, megadjuk a részletesebb információkat nyújtó cikkekre mutató hivatkozásokat. A Power BI Proról és a Power BI Premiumról további információt a [Power BI díjszabása](https://powerbi.microsoft.com/pricing/) témakör _Power BI-funkciók összehasonlítása_ szakaszában talál.
 
 ## <a name="subscriptions-and-licensing"></a>Előfizetések és licencelés
 
 A Power BI Premium bérlői szintű Office 365-előfizetés, amely két SKU- (termékváltozat-) családban érhető el:
 
-- **EM** termékváltozatok (EM1-EM3) beágyazáshoz, éves kötelezettségvállalással, havi számlázással. Az EM1 és az EM2 SKU csak mennyiségi licenccsomagban érhető el. Ezek közvetlenül nem megvásárolhatók.
 - **P** termékváltozatok (P1-P3) beágyazáshoz és nagyvállalati funkciókhoz, havi vagy éves kötelezettségvállalással, havi számlázással. Ezek tartalmaznak egy licencet a Power BI jelentéskészítő kiszolgáló helyszíni telepítéséhez.
 
-Egy másik megoldás egy **Azure Power BI Embedded**-előfizetés megvásárlása, amely egyetlen **A**-családbeli (A1-A6) SKU-t tartalmaz, kizárólag beágyazási és kapacitástesztelési célra. Minden SKU biztosít virtuális magokat kapacitások létrehozásához, de az EM termékváltozatok kisebb méretű beágyazásra vannak korlátozva. A négynél kevesebb virtuális magot biztosító EM1, EM2, A1 és A2 termékváltozat nem dedikált infrastruktúrán fut.
+- **EM** termékváltozatok (EM1-EM3) _szervezeti_ beágyazáshoz, éves kötelezettségvállalással, havi számlázással. Az EM1 és az EM2 SKU csak mennyiségi licenccsomagban érhető el. Ezek közvetlenül nem megvásárolhatók.
+
+Másik lehetséges megoldásként vásárolhat egy **Power BI Embedded**-előfizetést az Azure-ban. Egyetlen egy olyan **A** (A1-A6) SKU-család van, amelynél nem szükséges kötelezettségvállalás, és óránkénti díjszabás vonatkozik rá, engedélyezve a Power BI-t az alkalmazásokban, a portálokon és a webhelyeken, illetve a P vagy EM kapacitások teszteléséhez. Minden SKU biztosít virtuális magokat kapacitások létrehozásához, de az EM termékváltozatok kisebb méretű beágyazásra vannak korlátozva. A négynél kevesebb virtuális magot biztosító EM1, EM2, A1 és A2 termékváltozat nem dedikált infrastruktúrán fut.
 
 Bár ez a cikk elsősorban a P termékváltozatokkal foglalkozik, a leírtak nagy része az A termékváltozatokra is vonatkozik. A Premium-előfizetések termékváltozataival szemben az Azure-termékváltozatok nem igényelnek időbeli kötelezettségvállalást, és óránként vannak számlázva. Biztosítják a vertikális fel- és leskálázás, a szüneteltetés, a folytatás és a törlés teljes rugalmasságát. 
 
@@ -50,7 +51,11 @@ Power BI Premium-előfizetéseket rendszergazdák szerezhetnek be a Microsoft 36
 
 ## <a name="dedicated-capacities"></a>Dedikált kapacitások
 
-A Power BI Premiummal *dedikált kapacitások* járnak. Ellentétben a megosztott kapacitásokkal, ahol a számítási feladatok más ügyfelekkel megosztott erőforrásokon futnak, egy dedikált kapacitást kizárólag a vállalat használhat. El van különítve, és dedikált számítási erőforrásokkal nyújt megbízható és állandó teljesítményt az üzemeltetett tartalomhoz. 
+A Power BI Premiummal *dedikált kapacitások* járnak. Ellentétben a megosztott kapacitásokkal, ahol a számítási feladatok más ügyfelekkel megosztott erőforrásokon futnak, egy dedikált kapacitást kizárólag a vállalat használhat. El van különítve, és dedikált számítási erőforrásokkal nyújt megbízható és állandó teljesítményt az üzemeltetett tartalomhoz. Vegye figyelembe, hogy a következő erőforrások megosztott kapacitásban vannak tárolva, és nem dedikált kapacitásban:
+
+* Excel-munkafüzetek (ha az adatok nincsenek a Power BI Desktopba importálva)
+* [Leküldéses adathalmazok](/rest/api/power-bi/pushdatasets)
+* [Streamelési adathalmazok](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 
 A munkaterületek a kapacitásokon belül helyezkednek el. Minden Power BI-felhasználó rendelkezik **Saját munkaterülettel**. Az együttműködéshez további úgynevezett **munkaterületek** is létrehozhatók. Alapértelmezés szerint a munkaterületek, így a személyes munkaterületek is a megosztott kapacitásban lesznek létrehozva. Prémium szintű kapacitások esetén a saját munkaterületek és más munkaterületek is prémium szintű kapacitásokhoz rendelhetők.
 
@@ -77,6 +82,9 @@ Az egyes Premium termékváltozatok (és a megfelelően méretezett A termékvá
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
 | | | | | | | |
+
+> [!NOTE]
+> Érdemes lehet egyetlen nagyobb termékváltozatot (például egy P2 SKU-t) használni, mint kisebb termékváltozatokat (például két P1 SKU-t) kombinálni. A P2-vel például nagyobb modelleket használhat, és jobb párhuzamosságot érhet el.
 
 ### <a name="capacity-workloads"></a>Kapacitás-munkaterületek
 
@@ -235,5 +243,3 @@ További információ: [Csatlakozás adathalmazokhoz ügyfélalkalmazásokkal é
 > [Prémium szintű kapacitások kezelése](service-premium-capacity-manage.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-
-||||||

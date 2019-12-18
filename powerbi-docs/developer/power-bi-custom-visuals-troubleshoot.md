@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.topic: troubleshooting
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/06/2018
-ms.openlocfilehash: e28df5035e057d485a8122853f6ae88327e3045f
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: c2680a5818488a7822f38b8286a3e5a1782a487a
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74127757"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999767"
 ---
-# <a name="troubleshoot-power-bi-power-bi-visuals"></a>Power BI-vizualizációk hibáinak elhárítása
+# <a name="troubleshoot-power-bi-visuals"></a>Power BI-vizualizációk hibáinak elhárítása
 
 ## <a name="debug"></a>Hibakeresés
 
@@ -42,4 +42,4 @@ Ha bármilyen kérdése, megjegyzése vagy problémája van, vegye fel a kapcsol
 
 ## <a name="next-steps"></a>Következő lépések
 
-További információt [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md#organizational-visuals) között talál.
+További információt [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals) között talál.

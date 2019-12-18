@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/22/2019
 ms.author: kfollis
-ms.openlocfilehash: a45cfb20907c96995adf8618cd6dd8ff32194bea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: be7f95b2bbbd6e5e6314c7fd57869a30c176746c
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699728"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958494"
 ---
 # <a name="power-bi-data-sources"></a>Adatforrások a Power BI-hoz
 
-Az alábbi táblázat bemutatja a Power BI által támogatott adatforrásokat, beleértve a DirectQueryvel és a helyszíni adatátjáróval kapcsolatos információkat is.
+Az alábbi táblázat bemutatja a Power BI által támogatott adatforrásokat adatkészletek használatához, beleértve a DirectQueryvel és a helyszíni adatátjáróval kapcsolatos információkat is. Az adatfolyamokkal kapcsolatos további információért lásd: [Adatforrásokhoz való csatlakozás Power BI-adatfolyamokkal](service-dataflows-data-sources.md).
 
 | Adatforrás | Csatlakozás asztali gépről | Csatlakozás és frissítés szolgáltatásból | DirectQuery / Élő kapcsolat | Átjáró (támogatott) | Átjáró (szükséges) |
 |---|---|---|---|---|---|---|---|
@@ -95,7 +95,7 @@ Az alábbi táblázat bemutatja a Power BI által támogatott adatforrásokat, b
 | Planview Enterprise One – CTM | Igen | Igen | Nem | Nem | Nem |
 | Planview Enterprise One – PRM | Igen | Igen | Nem | Nem | Nem |
 | Planview Projectplace | Igen | Igen | Nem | Nem | Nem |
-| PostgreSQL | Igen | Igen | Nem | Igen | Igen |
+| PostgreSQL | Igen | Igen | Igen | Igen | Igen |
 | Power BI-adatfolyamok | Igen | Igen | Nem | Nem | Nem |
 | Power BI-adathalmazok | Igen | Igen | Igen | Nem | Nem |
 | Power Platform-adatfolyamok | Igen | Igen | Nem | Nem | Nem |

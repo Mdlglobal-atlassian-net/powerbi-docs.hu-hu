@@ -7,19 +7,19 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: mohaali
-ms.openlocfilehash: d1ae995c3e98befe776ac091a0312e281e97022e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64a6294ca30901c61928eca068ab4ebbb3d39638
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875330"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958517"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>A Q&A nyelvi sémájának szerkesztése, és kifejezések hozzáadása a Power BI Desktopban 
 Hatékony eszköz a munkához, ha gyakori kifejezéseken és természetes nyelven alapuló kérdéseket tud feltenni az adataival kapcsolatban. Még hatékonyabb, amikor az adatai választ is adnak. Amikor kérdést tesz fel a Power BI Q&A szolgáltatásának, a rendszer igyekszik a legpontosabban megválaszolni azt. Da ha még jobb Q&A-interakciókat szeretne elérni, javíthat a válaszokon. Az egyik módszer a nyelvi séma szerkesztése. 
 
-Minden a céges adatokkal kezdődik.  Minél jobb az adatmodell, annál nagyobb eséllyel kapnak a felhasználók minőségi válaszokat. A modell továbbfejlesztésének egyik módja egy olyan nyelvi séma hozzáadása, amely meghatározza és kategorizálja a terminológiát és az adatkészletben található táblázat- és oszlopnevek közti kapcsolatokat. A nyelvi sémákat a Power BI Desktopban kezelheti. 
+Minden a céges adatokkal kezdődik.  Minél jobb az adatmodell, annál nagyobb eséllyel kapnak a felhasználók minőségi válaszokat. A modell továbbfejlesztésének egyik módja egy olyan nyelvi séma hozzáadása, amely meghatározza és kategorizálja a terminológiát és az adatkészletben található táblázat- és oszlopnevek közti kapcsolatokat. A nyelvi sémákat a Power BI Desktopban kezelheti. 
 
-A Q&A funkciónak két oldala van.  Az első az előkészítés, vagy *modellezés*.  A második a kérdezés és az adatok tanulmányozása, más szóval a *felhasználás*. Egyes cégeknél *adatmodellezők* vagy informatikai rendszergazdák állítják össze az adatkészleteket, hozzák létre az adatmodelleket, és teszik közzé az adatkészleteket a Power BI-ban.  A cég más munkacsoportjai online módban „használják fel” az adatokat.  Lehetnek olyan cégek is, ahol kombinálódnak ezek a szerepek. 
+A Q&A funkciónak két oldala van.  Az első az előkészítés, vagy *modellezés*.  A második a kérdezés és az adatok tanulmányozása, más szóval a *felhasználás*. Egyes cégeknél *adatmodellezők* vagy informatikai rendszergazdák állítják össze az adatkészleteket, hozzák létre az adatmodelleket, és teszik közzé az adatkészleteket a Power BI-ban.  A cég más munkacsoportjai online módban „használják fel” az adatokat.  Lehetnek olyan cégek is, ahol kombinálódnak ezek a szerepek. 
 
 Ez a cikk az adatmodellezők, az adatmodelleket a lehető legjobb Q&A-eredmények elérésére optimalizáló személyek számára íródott. 
 

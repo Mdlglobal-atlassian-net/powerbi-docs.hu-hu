@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
-ms.openlocfilehash: 10e7ab035f17715bba858fc3b055c5bf47af1331
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 6bf7610a010a72248a3d2fdd96718eea513a68da
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565382"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000089"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Útmutató Power BI-vizualizációkhoz
 Mielőtt [közzétenné](https://docs.microsoft.com/power-bi/developer/office-store) a Power BI-vizualizációt a Microsoft AppSource-on, hogy azt mások is felfedezhessék és használhassák, ügyeljen rá, hogy az útmutatók használatával magas színvonalú felhasználói élményt alakítson ki.
@@ -50,7 +50,12 @@ Az előugró ablakban tájékoztatást adhat arról, hogyan vásárolható meg a
 
 ### <a name="submission-process"></a>Beküldési folyamat
 
-A fejlesztők az Értékesítői információ-központról tölthetik fel a Power BI IAP-vizualizációikat a Microsoft AppSource-ba, ahogyan az ingyenes vizualizációkkal is tették. A fejlesztőknek az alábbi jegyzetet kell feltüntetniük az irányítópult értékesítői megjegyzései között, így jelezve, hogy a Power BI-vizualizáció IAP-funkciókkal rendelkezik: „Alkalmazáson belüli vásárlást tartalmazó vizualizáció”. A fejlesztőknek emellett licenckulcsot vagy tokent kell szolgáltatniuk, amellyel az ellenőrző csapat ellenőrizheti az IAP-funkciókat. A Power BI-vizualizáció ellenőrzése és jóváhagyása után a Microsoft AppSource jelzi a Power BI IAP-vizualizáció díjszabási beállításainál, hogy ahhoz további vásárlásra lehet szükség.
+Kövesse a [beküldési folyamatot](office-store.md#submitting-to-appsource), majd lépjen a *Termékbeállítás* lapra, és jelölje be az *A termékhez szolgáltatás megvásárlása szükséges* jelölőnégyzetet.
+
+A Power BI-vizualizáció ellenőrzése és jóváhagyása után a Microsoft AppSource jelzi a Power BI IAP-vizualizáció díjszabási beállításainál, hogy ahhoz további vásárlásra lehet szükség.
+
+>[!NOTE]
+>Ha a Power BI-vizualizációt már elküldte az [Értékesítői irányítópult](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) használatával, és hozzá szeretne adni egy IAP-funkciót, az Értékesítői irányítópult megjegyzésénél be kell írnia a „Vizualizáció alkalmazáson belüli vásárlással” szöveget. Emellett licenckulcsot vagy tokent kell szolgáltatnia, amellyel az ellenőrző csapat ellenőrizheti az IAP-funkciókat.
 
 ## <a name="context-menu"></a>Helyi menü
 A helyi menü egy jobb gombbal történő kattintással előhozható menü, amely akkor jelenik meg, amikor a felhasználó a vizualizáció fölé viszi a kurzort.

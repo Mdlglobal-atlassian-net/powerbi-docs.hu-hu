@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 8789986e94c860bffc622d903e33b4f1edabdd2d
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 1f350e8ff888ffc2fd95e6c47bf84ccc96ebf88b
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696164"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000158"
 ---
 # <a name="auto-datetime-in-power-bi-desktop"></a>Automatikus dátum/idő a Power BI Desktopban
 
@@ -36,7 +36,7 @@ Az automatikus dátum/idő táblák valójában [számított táblák](desktop-c
 
 A Power BI Desktop ezenkívül egy kapcsolatot is létrehoz az automatikus dátum/idő tábla **Date** oszlopa és a modell dátumoszlopa között.
 
-Az automatikus dátum/idő tábla teljes naptári éveket tartalmaz, amelyek a modell dátumoszlopában tárolt összes dátumértéket tartalmazzák. Például ha a dátumoszlop legkorábbi értéke 2016. március 20., a legutolsó értéke 2019. október 23., a tábla 1461 sort tartalmaz. Minden sor a négy naptári év (2016–2019) egy-egy dátumát jelöli. Amikor a Power BI frissíti a modellt, a rendszer az összes automatikus dátum/idő táblát is frissíti, hogy tartalmazzák a dátumoszlop értékeire kiterjedő dátumokat.
+Az automatikus dátum/idő tábla teljes naptári éveket tartalmaz, amelyek a modell dátumoszlopában tárolt összes dátumértéket tartalmazzák. Például ha a dátumoszlop legkorábbi értéke 2016. március 20., a legutolsó értéke 2019. október 23., a tábla 1461 sort tartalmaz. Minden sor a négy naptári év (2016–2019) egy-egy dátumát jelöli. Amikor a Power BI frissíti a modellt, az egyes automatikus dátum/idő táblák is frissülnek. Így a modell mindig olyan dátumokat tartalmaz, amelyek tartalmazzák a dátum oszlop értékeit.
 
 Ha meg lehetne tekinteni egy automatikus dátum/idő tábla sorait, a következőképpen néznének ki:
 
@@ -93,7 +93,8 @@ A Power BI Desktopban válassza a _Fájl > Lehetőségek és beállítások > Be
 
 ## <a name="next-steps"></a>Következő lépések
 
-Az automatikus dátum/idővel és a kapcsolódó témakörökkel kapcsolatos további információért tekintse meg az alábbi forrásanyagokat:
+Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
+- [Útmutató automatikus dátum/időhöz a Power BI Desktopban](guidance/auto-date-time.md)
 - [Dátumtáblák beállítása és használata a Power BI Desktopban](desktop-date-tables.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
