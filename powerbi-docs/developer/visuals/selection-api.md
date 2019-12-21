@@ -311,7 +311,7 @@ public update(options: VisualUpdateOptions) {
 
 A vizualizáció kódja a táblázat sorain lépkedve minden sorra meghívja a táblázat `withTable` metódusát. A `withTable` metódus két paramétere a `table` objektum és a táblázatsor indexe.
 
-### <a name="create-selections-for-matrix-data-view-mapping"></a>Kijelölések létrehozása mátrix adatnézet-leképezéshez
+### <a name="create-selections-for-matrix-data-view-mapping"></a>Kijelölések létrehozása mátrixos adatnézet-leképezéshez
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -376,8 +376,8 @@ button.addEventListener("click", (mouseEvent) => {
 
 * [Tudnivalók kijelölések használatáról vizualizáció tulajdonságainak adatpontokhoz kötésére](objects-properties.md#objects-selector)
 
-* [Tudnivalók a kijelölések kezeléséről könyvjelzőváltáskor](bookmarks-support.md#visuals-with-selection)
+* [Hogyan kezelhetők a kijelölések könyvjelzőváltáskor](bookmarks-support.md#visuals-with-selection)
 
-* [Tudnivalók a vizualizációk adatpontjaihoz adható helyi menüről](context-menu.md)
+* [Hogyan adható helyi menü a vizualizációk adatpontjaihoz](context-menu.md)
 
-* [Tudnivalók kijelölések Power BI-vizualizációkhoz adásáról az InteractivityUtils használatával](utils-interactivity-selections.md)
+* [Hogyan használható az InteractivityUtils a kijelölések Power BI-vizualizációkhoz való hozzáadására](utils-interactivity-selections.md)

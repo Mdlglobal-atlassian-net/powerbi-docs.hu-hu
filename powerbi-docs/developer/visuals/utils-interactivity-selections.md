@@ -282,8 +282,8 @@ A vizualizáció így már készen áll a kijelölések kezelésére.
 
 ## <a name="next-steps"></a>Következő lépések
 
-* [Tudnivalók a kijelölések kezeléséről könyvjelzőváltáskor](bookmarks-support.md#visuals-with-selection)
+* [Hogyan kezelhetők a kijelölések könyvjelzőváltáskor](bookmarks-support.md#visuals-with-selection)
 
-* [Tudnivalók a vizualizációk adatpontjaihoz adható helyi menüről](context-menu.md)
+* [Hogyan adható helyi menü a vizualizációk adatpontjaihoz](context-menu.md)
 
 * [Tudnivalók kijelölések Power BI-vizualizációkhoz adásáról a kijelöléskezelő használatával](selection-api.md)

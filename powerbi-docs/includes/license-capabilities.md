@@ -11,7 +11,7 @@ ms.contentlocale: hu-HU
 ms.lasthandoff: 12/10/2019
 ms.locfileid: "74958596"
 ---
-A Power BI szolgáltatás a felhasználók a felhasználónkénti licencek típusa és az alapján meghatározott képességekkel rendelkeznek, hogy a használt tartalom egy Power BI Premium-kapacitáshoz hozzárendelt munkaterületen található-e.
+A Power BI szolgáltatásban a felhasználók egyrészt a felhasználónkénti licencek típusa, másrészt az alapján meghatározott képességekkel rendelkeznek, hogy a használt tartalom egy Power BI Premium-kapacitáshoz hozzárendelt munkaterületen található-e.
 
 * **Felhasználónkénti** - *Power BI Pro- és (ingyenes) Power BI-licencek*. A felhasználók egy Power BI Pro-licenccel együttműködhetnek más Power BI Pro-felhasználókkal úgy, hogy felhasználják más Power BI Pro-licenccel rendelkező tartalmait, és tartalmakat osztanak meg velük. Csak a Power BI Pro-licenccel rendelkező felhasználók tehetnek közzé tartalmat alkalmazás-munkaterületeken, oszthatnak meg irányítópultokat, és iratkozhatnak fel irányítópultokra és jelentésekre. A felhasználók egy ingyenes licenccel felhasználhatják a Power BI Premium-kapacitásokhoz hozzárendelt munkaterületeken található tartalmakat, és a Saját munkaterületükön található saját személyes tartalmaik esetében hozzáférhetnek a Power BI szolgáltatás egyes funkcióihoz. További információt az [Egyéni Power BI-regisztráció](../service-self-service-signup-for-power-bi.md) és a [Felhasználói Power BI Pro-licencek vásárlása és kiosztása](../service-admin-purchasing-power-bi-pro.md) című témakörökben talál.
 
