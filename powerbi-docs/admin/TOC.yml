@@ -7,6 +7,10 @@
       items:
         - name: Mit jelent a Power BI-felügyelet?
           href: ../service-admin-administering-power-bi-in-your-organization.md
+        - name: Hol található a bérlőm?
+          href: ../service-admin-where-is-my-tenant-located.md
+        - name: Migrate to Go helyi német régiók
+          href: service-admin-migrate-data-germany.md
     - name: Fogalmak
       expanded: true
       items:
@@ -30,8 +34,6 @@
               href: ../service-admin-syndication-partner.md
         - name: A felügyeleti portál használata
           href: ../service-admin-portal.md
-        - name: Hol található a bérlőm?
-          href: ../service-admin-where-is-my-tenant-located.md
         - name: Bejelentkezett felhasználók keresése
           href: ../service-admin-access-usage.md
         - name: Naplózás

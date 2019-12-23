@@ -142,6 +142,8 @@
       items:
         - name: Mik azok a mobilalkalmazások?
           href: mobile/mobile-apps-for-mobile-devices.md
+        - name: A kezdőlap bemutatása
+          href: mobile/mobile-apps-home-page.md
     - name: Rövid útmutatók
       items:
         - name: Irányítópultok és jelentések felfedezése
@@ -198,7 +200,7 @@
               href: mobile/mobile-apps-qr-code.md
             - name: Jegyzetkészítés és megosztás a mobilalkalmazásokban
               href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-            - name: Vonalkód beolvasása az iPhone-ján lévő alkalmazásból
+            - name: Vonalkód beolvasása a Power BI mobilalkalmazásból
               href: mobile/mobile-apps-scan-barcode-iphone.md
             - name: Konfigurálás mobileszköz-kezelés használatával
               href: mobile/mobile-app-configuration.md

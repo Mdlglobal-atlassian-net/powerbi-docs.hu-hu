@@ -40,6 +40,8 @@
           href: report-drillthrough.md
         - name: Útmutató automatikus dátum/időhöz a Power BI Desktopban
           href: auto-date-time.md
+        - name: Útmutató a több-a-többhöz kapcsolatokhoz
+          href: relationships-many-to-many.md
     - name: Tanulmányok
       items:
         - name: Tanulmányok áttekintése
