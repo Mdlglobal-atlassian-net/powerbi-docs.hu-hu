@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b674c621c30491a00c529af7f2fcd9eb87f3ecfa
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: a19e8148a719186cbaefe3203d58a5a98687c067
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74834770"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223629"
 ---
 # <a name="report-page-drillthrough"></a>Jelentésoldal részletezése
 
@@ -63,7 +63,7 @@ A jelentés tervezésének idején a következő eljárásokat ajánljuk:
 - **Felderítés:** Segítheti a részletezési oldal megtalálását, ha megadja a vizuális fejléc ikonjának szövegét, vagy utasításokat ad hozzá a szövegmezőhöz. Átfedést is tervezhet, amint az [ebben a blogbejegyzésben](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/) szerepel.
 
 > [!TIP]
-> Lehetősége van részletezést konfigurálni a Power BI többoldalas jelentéseihez is. Ezt úgy teheti meg, hogy hivatkozásokat ad hozzá a Power BI-jelentésekhez. A hivatkozások meghatározhatják az [URL-paramétereket](/blog/url-parameters-for-paginated-reports-are-now-available/).
+> Lehetősége van részletezést konfigurálni a Power BI többoldalas jelentéseihez is. Ezt úgy teheti meg, hogy hivatkozásokat ad hozzá a Power BI-jelentésekhez. A hivatkozások meghatározhatják az [URL-paramétereket](https://powerbi.microsoft.com/blog/url-parameters-for-paginated-reports-are-now-available/).
 
 ## <a name="next-steps"></a>Következő lépések
 

@@ -1,19 +1,19 @@
 ---
 title: Power BI tartalom megtekintése külső vendég felhasználóként (Azure AD B2B)
 description: Power BI-mobilalkalmazások használatával megtekintheti a külső vállalat által Önnel megosztott tartalmat.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/27/2019
-ms.author: mshenhav
-ms.openlocfilehash: f0db77a69bd8845b9448b7c15fedea7663683ec0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/09/2019
+ms.author: painbar
+ms.openlocfilehash: c5e1e0b90f24a81940edab46633f49df41d25fdc
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879346"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219879"
 ---
 # <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Külső vállalat által Önnel megosztott Power BI-tartalom megtekintése
 
@@ -30,18 +30,18 @@ A következőkre vonatkozik:
 
 **Az első lépés, hogy valaki egy külső vállalattól megosszon Önnel valamit.** Amikor valaki a vállalaton belül vagy egy külső vállalatnál [megoszt Önnel egy elemet](../../service-share-dashboards.md), Ön e-mailt kap a megosztott elemre mutató hivatkozással. Ha a mobileszközén követi ezt a hivatkozást, megnyílik a Power BI-mobilalkalmazás. Ha az alkalmazás azt észleli, hogy az elem egy külső vállalatnál lett megosztva Önnel, az alkalmazás újracsatlakozik ahhoz a vállalathoz az Ön identitásával. Az alkalmazás ez után betölti az annál a vállalatnál Önnel megosztott összes elemet.
 
-![Megosztott Power BI-elem megnyitása e-mailből ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
+![Megosztott Power BI-elem megnyitása e-mailből ](./media/mobile-apps-b2b/mobile-b2b-open-item-email-new.png)
 
 > [!NOTE]
 > Ha ez az első elem, amelyet külső vendégfelhasználóként Önnel megosztottak, a meghívót egy böngészőben kell elfogadnia. A meghívót a Power BI-alkalmazásban nem fogadhatja el.
 
 Amíg külső vállalathoz van csatlakoztatva, az alkalmazásban fekete fejléc látható. Ez a fejléc jelzi, hogy nem a saját vállalatához csatlakozik. A saját vállalatához úgy csatlakozhat újra, hogy kilép a vendég módból.
 
-![Power BI vendégfelhasználói fejléc](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
+![Power BI vendégfelhasználói fejléc](./media/mobile-apps-b2b/mobile-b2b-exit-home-new.png)
 
 A külső vállalathoz való csatlakozáshoz egy Power BI-elemre mutató hivatkozás szükséges, de miután az alkalmazás vált, az összes Önnel megosztott elemhez hozzáférhet (nem csak ahhoz, amelyet az e-mailből nyitott meg). A külső vállalatnál elérhető összes elem megtekintéséhez válassza az alkalmazás menüjének **Velem megosztva** elemét. Az **Alkalmazások** területen olyan alkalmazásokat is talál, amelyeket használhat.
 
-![A Power BI alkalmazásmenüje külső vendégfelhasználóként](./media/mobile-apps-b2b/mobile-b2b-menu.png)
+![A Power BI alkalmazásmenüje külső vendégfelhasználóként](./media/mobile-apps-b2b/mobile-b2b-menu-new.png)
 
 ## <a name="limitations"></a>Korlátozások
 

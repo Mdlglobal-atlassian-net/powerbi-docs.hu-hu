@@ -10,10 +10,10 @@ ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 8d5923c111debb14aab46977d42f3357837d9399
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73878301"
 ---
 # <a name="directquery-and-sap-hana"></a>A DirectQuery és az SAP HANA
@@ -147,6 +147,6 @@ Ha többet szeretne megtudni a DirectQueryről, tekintse át a következő forr�
 
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások](desktop-directquery-data-sources.md)
-* [A DirectQuery és az SAP BW](desktop-directquery-sap-bw.md)
-* [Helyszíni adatátjáró](service-gateway-onprem.md)
+* [DirectQuery és SAP BW](desktop-directquery-sap-bw.md)
+* [On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bdaac078fa106565f7c11b3cc323840b5d10b579
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 749d8d5b62df87b0e6b29d524e90c694a0e38efe
+ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565341"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622421"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Munka szervezése az új munkaterületeken a Power BI-ban
 
@@ -111,18 +111,19 @@ A munkaterületi OneDrive funkcióval olyan Office 365-csoportot konfigurálhat,
 A Power BI nem szinkronizálja azon felhasználók és csoportok jogosultságait, akik számára Office 365-csoporttagsággal van konfigurálva a munkaterülethez való hozzáférés. Ajánlott a munkaterülethez való hozzáférést ugyanazzal az Office 365-csoporttal kezelni, amelynek fájltárolóját ebben a beállításban konfigurálja. 
 
 Tovább tájékozódhat a [munkaterületi OneDrive beállításáról és eléréséről](service-create-the-new-workspaces.md#workspace-onedrive).  
-   
+
 ## <a name="auditing"></a>Naplózás
+
 A Power BI az alábbi tevékenységeket naplózza az új munkaterületi felületű munkaterületeken.
 
-| Felhasználóbarát név |   Művelet neve |
+| Felhasználóbarát név | Művelet neve |
 |---|---|
 | Power BI-mappa létrehozása | CreateFolder (Mappa létrehozása) |
 | Power BI-mappa törlése | DeleteFolder (Mappa törlése) |
 | Power BI-mappa frissítése | UpdateFolder (Mappa frissítése) |
 | Power BI-mappahozzáférés frissítése| UpdateFolderAccess (Mappahozzáférés frissítése) |
 
-További tudnivalók a [Power BI-beli naplózásról](service-admin-auditing.md#activities-audited-by-power-bi).
+További tudnivalók a [Power BI-beli naplózásról](service-admin-auditing.md).
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 

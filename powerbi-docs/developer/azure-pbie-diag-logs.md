@@ -8,10 +8,10 @@ ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
 ms.openlocfilehash: 362c765fb5e739563b8d21eaed53304eddce8acc
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74265708"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Diagnosztikai naplózás a Power BI Embedded szolgáltatáshoz az Azure-ban
@@ -130,7 +130,7 @@ A Motor kategória választása esetén az erőforrás az alábbi eseményeket n
 | SessionType | Felhasználó | Munkamenet típusa (milyen entitás indította a műveletet). |
 | ProgressTotal | 0 | Teljes előrehaladás. |
 | IntegerData | 0 | Egész típusú adatok. |
-| Severity | 0 | Egy kivétel súlyossági szintje. |
+| Súlyosság | 0 | Egy kivétel súlyossági szintje. |
 | Siker | 1 | 1 = sikeres. 0 = sikertelen (például engedélyek ellenőrzésekor az 1 azt jelenti, hogy a művelet sikeres volt, a 0 pedig azt, hogy sikertelen). |
 | Hiba | 0 | Az adott esemény hibaszáma. |
 | ConnectionID | 3 | Egyedi kapcsolatazonosító. |

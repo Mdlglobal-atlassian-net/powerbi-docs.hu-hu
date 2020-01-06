@@ -1,6 +1,6 @@
 ---
 title: 'Project Online: kapcsolódás az adatokhoz a Power BI Desktopon keresztül'
-description: 'Project Online: kapcsolódás az adatokhoz a Power BI Desktopon keresztül'
+description: 'Project Online: kapcsolódás adatokhoz a Power BI Desktoppal'
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
@@ -11,13 +11,13 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: e3bb5f3527da11f781892fae23ae369edfe4676b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73878002"
 ---
-# <a name="project-online-connect-to-data-through-power-bi-desktop"></a>Project Online: kapcsolódás az adatokhoz a Power BI Desktopon keresztül
+# <a name="project-online-connect-to-data-through-power-bi-desktop"></a>Project Online: kapcsolódás adatokhoz a Power BI Desktoppal
 A Project Online-adatokhoz kapcsolódhat a Power BI Desktopon keresztül.
 
 ## <a name="step-1-download-power-bi-desktop"></a>1\. lépés: A Power BI Desktop letöltése

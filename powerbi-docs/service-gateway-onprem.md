@@ -10,10 +10,10 @@ ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
 ms.openlocfilehash: 96a006f60e08d35ef6bbe13a2033d866814ec5b2
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74697543"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Mi az a helyszíni adatátjáró?
@@ -26,7 +26,7 @@ A helyszíni adatátjáró hídként biztosítja a helyszíni (nem felhőbeli) a
 
 ![Az átjáró áttekintése](media/service-gateway-onprem/on-premises-data-gateway.png)
 
-Az átjáró működéséről további információ talál [A helyszíni adatátjáró architektúrája](/data-integration/gateway/service-gateway-onprem-indepth) című témakörben.
+Az átjáró működéséről további információt talál [A helyszíni adatátjáró architektúrája](/data-integration/gateway/service-gateway-onprem-indepth) című témakörben.
 
 ## <a name="types-of-gateways"></a>Átjárótípusok
 

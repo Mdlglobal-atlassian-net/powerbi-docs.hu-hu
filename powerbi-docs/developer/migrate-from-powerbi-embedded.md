@@ -8,10 +8,10 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: 829724fb96b0122bc3bd2b346d8102947b0921f7
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74311536"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI-munkaterületcsoport tartalmainak migrálása a Power BI Embeddedbe
@@ -79,7 +79,7 @@ Az alkalmazásokat regisztrálni kell az Azure AD-ben, és bizonyos engedélyeke
 
 ### <a name="register-an-application"></a>Egy alkalmazás regisztrálása
 
-A REST API-hívások indításához az alkalmazásokat regisztrálni kell az Azure AD-ben. Ehhez be kell jelentkeznie az Azure Portalra, és további konfigurációs beállításokat kell tennie a Power BI alkalmazásregisztrációs oldalán megadottak mellett. További információkért lásd: [Azure AD alkalmazás regisztrálása Power BI-tartalmak beágyazásához](register-app.md).
+A REST API-hívások indításához az alkalmazásokat regisztrálni kell az Azure AD-ben. Ehhez be kell jelentkeznie az Azure Portalra, és további konfigurációs beállításokat kell tennie a Power BI alkalmazásregisztrációs oldalán megadottak mellett. További információt az [Azure AD alkalmazás regisztrálása Power BI-tartalmak beágyazásához](register-app.md) eljárást ismertető cikkben talál.
 
 Az alkalmazást annak **fő** fiókjával kell regisztrálni.
 
@@ -194,7 +194,7 @@ Takarítson az Azure-ban.
 * Távolítsa el a telepített megoldás összes már nem használt munkaterületét a Power BI-munkaterületcsoport Azure-szolgáltatásában.
 * Törölje az Azure-ból az összes munkaterület-csoportot.
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 
 [Beágyazás a Power BI szolgáltatással](embedding.md)  
 [Migrálási eszköz a Power BI-munkaterületcsoporthoz](migrate-tool.md)  

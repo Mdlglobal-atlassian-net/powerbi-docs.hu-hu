@@ -10,10 +10,10 @@ ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 0998ebec15a4e02262ab54a3b08593a65f37af4e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73873852"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Beszerzéselemzési minta a Power BI-hoz: Bemutató megtekintése
@@ -51,7 +51,7 @@ Használat előtt a mintát [tartalomcsomagként](#get-the-content-pack-for-this
   
    ![Csatlakozás mintához](media/sample-procurement/procurement1a.png)
    
-5. A Power BI importálja a tartalomcsomagot, és egy új irányítópultot, jelentést és adathalmazt ad hozzá az aktuális munkaterülethez.
+5. A Power BI importálja a tartalomcsomagot, és egy új irányítópultot, jelentést és adatkészletet ad hozzá az aktuális munkaterülethez.
    
    ![Beszerzéselemzési minta listaelem](media/sample-procurement/procurement-entry.png)
   
@@ -138,7 +138,7 @@ Válassza ki a **Jelentés szerkesztése** elemet a bal felső sarokban, és nyi
 * Módosíthatja a diagram vizualizációtípusát, például fatérképről gyűrűdiagramra.
 * Rögzítheti a diagramokat az irányítópulton.
 
-## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
+## <a name="next-steps-connect-to-your-data"></a>További lépések: Csatlakozás az adatokhoz
 Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
 
 Reméljük, hogy ez a bemutató segített megérteni a mintaadatok Power BI irányítópultok, Q&A és jelentések segítségével történő elemzését. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).

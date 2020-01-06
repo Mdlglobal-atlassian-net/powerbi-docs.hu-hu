@@ -10,10 +10,10 @@ ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 08b739c5be01efed5abf8258540b5ab66b3b390b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73876064"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>A DirectQuery használata a Power BI Desktopban
@@ -35,14 +35,14 @@ Az **importálás** és a **DirectQuery** közötti különbségek a következő
 
 A **DirectQuery** használatával számos adatmodellezési és -átalakítási művelet elérhető, bár vannak bizonyos korlátozások. A vizualizációk létrehozása és használata során az adatokat a háttérforrásból kell lekérni, és a vizualizáció frissítéséhez szükséges idő a háttéradatforrás teljesítményétől függ. Ha egy kérés kiszolgálásához szükséges adatok nemrégiben már le lettek kérve, a Power BI Desktop a már lekért adatok használatával csökkenti a vizualizáció megjelenítéséhez szükséges időt. A **Kezdőlap** szalag **Frissítés** gombjával az összes vizualizációban frissítheti az adatokat az aktuális adatokra.
 
-A **DirectQueryt** [a Power BI és a DirectQuery használatát bemutató](desktop-directquery-about.md) cikk írja le részletesen. Tekintse át továbbá a következő szakaszokat is, amelyek a **DirectQuery** használatának előnyeit, korlátait és fontos szempontjait ismertetik.
+A **DirectQueryt**[a Power BI és a DirectQuery használatát bemutató](desktop-directquery-about.md) cikk írja le részletesen. Tekintse át továbbá a következő szakaszokat is, amelyek a **DirectQuery** használatának előnyeit, korlátait és fontos szempontjait ismertetik.
 
 ## <a name="benefits-of-using-directquery"></a>A DirectQuery használatának előnyei
 Íme a **DirectQuery** használatának néhány előnye:
 
 * A **DirectQuery** segítségével nagyon nagy adatkészletekhez készíthet vizualizációkat, amelyek esetében egyébként megoldhatatlan lenne az adatok megelőző importálása előzetes összesítéssel
 * A mögöttes adatok változásai szükségessé tehetik az adatok frissítését, és egyes jelentések esetében az aktuális adatok megjelenítése nagy mennyiségű adat átvitelével járhat, ami az adatok ismételt importálását megoldhatatlanná tenné. Ezzel szemben a **DirectQuery**-jelentések mindig aktuális adatokra épülnek.
-* Az 1 GB-os adatkészletkorlát a **DirectQueryre** *nem* vonatkozik
+* Az 1 GB-os adatkészletkorlát a **DirectQueryre***nem* vonatkozik
 
 ## <a name="limitations-of-directquery"></a>A DirectQuery korlátozásai
 Íme a **DirectQuery** használatának néhány korlátozása:
@@ -96,5 +96,5 @@ A **DirectQueryvel** kapcsolatos további információkért lásd az alábbi for
 * [A DirectQuery által támogatott adatforrások](desktop-directquery-data-sources.md)
 * [A DirectQuery és az SAP BW](desktop-directquery-sap-bw.md)
 * [A DirectQuery és az SAP HANA](desktop-directquery-sap-hana.md)
-* [Helyszíni adatátjáró](service-gateway-onprem.md)
+* [On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)
 

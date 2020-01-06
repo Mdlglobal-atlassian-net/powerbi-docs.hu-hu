@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 9ce761d09e2db4fbbc2e56d461f5272041edfbfe
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3680344c3449c80064b818f7ab2a5b48020fba4b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870081"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220608"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>OAuth használata a Power BI jelentéskészítő kiszolgáló és az SSRS csatlakoztatásához
 
@@ -94,7 +94,7 @@ Az alkalmazáscsoportot az alábbi lépéseket követve hozhatja létre.
 
    ![ADFS Alkalmazáscsoport-varázsló 01](media/mobile-oauth-ssrs/adfs-application-group-wizard1.png)
 
-3. Kattintson a **Tovább** gombra.
+3. Válassza a **Tovább** lehetőséget.
 
 4. Adjon **nevet** a hozzáadni kívánt alkalmazásnak. 
 
@@ -112,7 +112,7 @@ Az alkalmazáscsoportot az alábbi lépéseket követve hozhatja létre.
    urn:ietf:wg:oauth:2.0:oob
 
    ![ADFS Alkalmazáscsoport-varázsló 02](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
-7. Kattintson a **Tovább** gombra.
+7. Válassza a **Tovább** lehetőséget.
 
 8. Adja meg a jelentéskészítő kiszolgáló URL-címét. Ez a külső URL-cím, amely eléri a webalkalmazás-proxyt. Ennek az alábbi formátumban kell lennie.
 
@@ -122,17 +122,17 @@ Az alkalmazáscsoportot az alábbi lépéseket követve hozhatja létre.
    *https://< jelentéskészítő kiszolgáló URL-címe>/*
 
    ![ADFS Alkalmazáscsoport-varázsló 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
-9. Kattintson a **Tovább** gombra.
+9. Válassza a **Tovább** lehetőséget.
 
 10. Válassza a vállalata igényeinek megfelelő **Hozzáférés-vezérlési házirendet**.
 
     ![ADFS Alkalmazáscsoport-varázsló 04](media/mobile-oauth-ssrs/adfs-application-group-wizard4.png)
 
-11. Kattintson a **Tovább** gombra.
+11. Válassza a **Tovább** lehetőséget.
 
 12. Kattintson a **Tovább** gombra.
 
-13. Kattintson a **Tovább** gombra.
+13. Válassza a **Tovább** lehetőséget.
 
 14. Kattintson a **Bezárás** gombra.
 
@@ -185,7 +185,7 @@ A korlátozott delegálás konfigurálásához a következőket kell tennie.
 
     ![WAP-korlátozott 04](media/mobile-oauth-ssrs/wap-contrained-delegation4.png)
 
-11. Kattintson az **OK** gombra.
+11. Válassza az **OK** lehetőséget.
 
 ### <a name="add-wap-application"></a>WAP-alkalmazás hozzáadása
 
@@ -244,7 +244,7 @@ A többtényezős hitelesítés engedélyezésével még biztonságosabbá tehet
 
 Beállíthatja a [Fiddlert](https://www.telerik.com/fiddler) proxynak a mobileszközökhöz, hogy lássa, meddig jutott a kérés. Ha engedélyezni szeretné a Fiddler-proxyt a telefonján, be kell állítania az [iOS és Android rendszerhez készült CertMaker](https://www.telerik.com/fiddler/add-ons) eszközt a Fiddlert futtató számítógépen. Ez egy Telerik-bővítmény a Fiddlerhez.
 
-Ha a bejelentkezés sikeresen működik a Fiddler használatakor, előfordulhat, hogy probléma van a WAP-alkalmazás vagy az ADFS-kiszolgáló tanúsítványával. A tanúsítványok érvényességének ellenőrzéséhez használhat olyan eszközöket, mint a [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226).
+Ha a bejelentkezés sikeresen működik a Fiddler használatakor, előfordulhat, hogy probléma van a WAP-alkalmazás vagy az ADFS-kiszolgáló tanúsítványával. 
 
 ## <a name="next-steps"></a>Következő lépések
 

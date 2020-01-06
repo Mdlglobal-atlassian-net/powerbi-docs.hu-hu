@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: bfc1572e31269182e9ca63efbbf6934b90f84b66
-ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
+ms.openlocfilehash: 723cc7b2767f6a5ee4394bca74e507fc688b3af8
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478627"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223643"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Útmutató a DirectQuery-modellhez a Power BI Desktopban
 
@@ -87,7 +87,7 @@ Egy DirectQuery-modell több módon is optimalizálható, az alábbi felsorolás
 
     A **Kapcsolatok maximális száma adatforrásonként** tulajdonságnak (a megadott mennyiségig történő) növelésével több lekérdezés küldését teheti lehetővé a mögöttes adatforrásnak, ami hasznos lehet, ha számos vizualizáció található egyetlen lapon, vagy sok felhasználó szeretne egyszerre hozzáférni egy jelentéshez. A kapcsolatok maximális számának elérése után a lekérdezések üzenetsorba kerülnek, amíg egy kapcsolat elérhetővé nem válik. A korlát növelése nagyobb terhelést eredményez a mögöttes adatforráson, a beállítás használata így nem garantál jobb teljesítményt.
     
-    Ha a modell közzé van téve a Power BI-ban, a mögöttes adatforráshoz egyidejűleg küldött lekérdezések maximális száma a környezettől is függ. Különböző környezetek (például a Power BI, a Power BI Premium vagy a Power BI jelentéskészítő kiszolgáló) különböző átviteli korlátokat szabhatnak. További információ a Power BI Premium-kapacitások erőforrásokra vonatkozó korlátozásairól: [Power BI Premium-kapacitások üzembe helyezése és kezelése](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment#premium-capacities).
+    Ha a modell közzé van téve a Power BI-ban, a mögöttes adatforráshoz egyidejűleg küldött lekérdezések maximális száma a környezettől is függ. Különböző környezetek (például a Power BI, a Power BI Premium vagy a Power BI jelentéskészítő kiszolgáló) különböző átviteli korlátokat szabhatnak. További információ a Power BI Premium-kapacitások erőforrásokra vonatkozó korlátozásairól: [Power BI Premium-kapacitások üzembe helyezése és kezelése](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment).
 
 ## <a name="optimize-report-designs"></a>Jelentéstervek optimalizálása
 

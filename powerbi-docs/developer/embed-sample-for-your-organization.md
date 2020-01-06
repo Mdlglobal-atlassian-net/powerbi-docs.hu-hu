@@ -10,10 +10,10 @@ ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
 ms.openlocfilehash: c67ce4ef9b5b0ac2054d4ecdf76ee3a1a79571d8
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74311063"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba a cége számára
@@ -294,7 +294,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 A JavaScript használatával egy jelentést tölthet be a div elembe a weblapon. A következő kódminta bemutatja, hogyan kérhet le jelentést egy adott munkaterületről:
 
 > [!NOTE]  
-> A beágyazni kívánt tartalomelemek betöltéséről a [mintaalkalmazás](https://github.com/Microsoft/PowerBI-Developer-Samples) **Default.aspx** fájljában találhat példát.
+> A beágyazni kívánt tartalomelemek betöltéséről a [mintaalkalmazás](https://github.com/Microsoft/PowerBI-Developer-Samples)**Default.aspx** fájljában találhat példát.
 
 ```javascript
 <!-- Embed Report-->

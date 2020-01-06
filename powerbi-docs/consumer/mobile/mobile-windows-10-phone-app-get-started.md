@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
 ms.openlocfilehash: b2bfe6157653459c2d7b60b85c9f7e8a3e465e23
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73879054"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Windows 10-hez készült Power BI mobilalkalmazás – első lépések
@@ -101,7 +101,7 @@ Megtekintheti kedvenc Power BI-irányítópultjait a Reporting Services KPI-jeiv
   
    ![Kedvencek megtekintése](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-favorites.png)
 
-További információ a [kedvencekről a Power BI mobilalkalmazásokban](mobile-apps-favorites.md).
+További információ a [kedvencekről a Power BI-mobilalkalmazásokban](mobile-apps-favorites.md).
 
 ## <a name="next-steps"></a>Következő lépések
 A Windows 10-eszközökhöz készült Power BI alkalmazásban többek között a következőket viheti végbe irányítópultokkal és jelentésekkel Power BI-ban, illetve a Reporting Services mobiljelentésekkel és KPI-kkel a Reporting Services webes portálon.
@@ -118,7 +118,7 @@ A Windows 10-eszközökhöz készült Power BI alkalmazásban többek között a
 * [KPI-k létrehozása a Reporting Services webes portálon](https://msdn.microsoft.com/library/mt683632.aspx).
 * [Saját mobiljelentések létrehozása az SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx) segítségével, illetve közzététele a Reporting Services webes portálon.
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 * [A Power BI alkalmazás letöltése](https://go.microsoft.com/fwlink/?LinkID=526478) a Windows Áruházból  
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

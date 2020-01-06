@@ -10,10 +10,10 @@ ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: ab7d8a34211b9cb8addd90daf2cbce7d22f10e61
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73875141"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>A Power BI-jelentésekben elérhető új szűrési felület
@@ -48,7 +48,7 @@ Az új jelentésekben alapértelmezés szerint be van kapcsolva az új szűrési
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Új szűrők bekapcsolása meglévő jelentéshez a szolgáltatásban
 
-Ha bekapcsolta a Power BI szolgáltatás **új megjelenését** ![bekapcsolt új megjelenés](media/power-bi-report-filter/power-bi-new-look-on.png), az új szűrők automatikusan engedélyezve lesznek. Tájékozódjon tovább [a Power BI szolgáltatás új megjelenéséről](service-new-look.md).
+Ha bekapcsolta a Power BI szolgáltatás **új megjelenését**![bekapcsolt új megjelenés](media/power-bi-report-filter/power-bi-new-look-on.png), az új szűrők automatikusan engedélyezve lesznek. Tájékozódjon tovább [a Power BI szolgáltatás új megjelenéséről](service-new-look.md).
 
 Ha nem kapcsolta be az új megjelenést, az alábbi lépésekkel továbbra is megtekintheti az új szűrőket.
 

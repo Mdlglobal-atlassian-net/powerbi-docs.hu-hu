@@ -10,10 +10,10 @@ ms.subservice: powerbi-report-server
 ms.custom: mvc
 ms.date: 12/03/2019
 ms.openlocfilehash: 88df45a95e485695a9a2f36358c1fcca9670f258
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74831141"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása
@@ -24,7 +24,7 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 
 | Funkciók | Power BI jelentéskészítő kiszolgáló | Power BI szolgáltatás | Megjegyzések |
 |---------|---------|---------|---------|
-| Telepítés | Helyszíni vagy üzemeltetett felhőbeli | Felhőbeli | A Power BI jelentéskészítő kiszolgáló akkor helyezhető üzembe Azure-beli virtuális gépeken (üzemeltetett felhőbeli) ha licencelése a Power BI Premiummal történt |
+| Telepítés | Helyszíni vagy üzemeltetett felhőbeli | Felhő | A Power BI jelentéskészítő kiszolgáló akkor helyezhető üzembe Azure-beli virtuális gépeken (üzemeltetett felhőbeli) ha licencelése a Power BI Premiummal történt |
 | Forrásadatok | Felhőbeli és/vagy helyszíni | Felhőbeli és/vagy helyszíni |  |
 | Licenc | Power BI Premium vagy SQL Server EE frissítési garanciával (SA) | Power BI Pro és/vagy Power BI Premium | |  
 | Életciklus | Modern életciklus-szabályzat | Teljes körűen felügyelt szolgáltatás |  |
