@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 12/17/2019
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: d949978d431a219845ed93b59eb52439c9d7f0c0
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: f72d29e7f5bc7f93abd43f4c14cf0e53ef18f8d3
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958632"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223732"
 ---
 # <a name="analyze-in-excel"></a>Elemzés az Excelben
 Előfordulhat, hogy az Excel használatával szeretne megnézni és kezelni egy Power BI-adatkészletet. Az **Elemzés az Excelben** funkció segítségével pontosan ezt teheti meg, valamit elérheti az Excel kimutatás-, diagram- és szeletelő funkcióit a Power BI-ban létező adatkészletre vonatkozóan.
@@ -104,3 +104,11 @@ Mivel a felhasználóknak frissíteniük kell az adatkészletet, és az Excel On
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 Előfordulhat az Elemzés az Excelben funkció használata során, hogy nem várt eredményt kap, vagy nem a kívánt módon működik. [Ez az oldal az Elemzés az Excelben használata során felmerülő gyakori problémákra nyújt megoldást](desktop-troubleshooting-analyze-in-excel.md)
+
+## <a name="next-steps"></a>Következő lépések
+
+Az alábbi cikkeket is érdekesnek találhatja:
+
+* [Jelentésközi részletezés a Power BI Desktopban](desktop-cross-report-drill-through.md)
+* [Szeletelők használata a Power BI Desktopban](visuals/power-bi-visualization-slicers.md)
+

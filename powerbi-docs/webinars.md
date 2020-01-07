@@ -8,26 +8,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 44da3a20c203bfc50be08b0ed91efa6dfd998204
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 73b439b870a4f931c2db680c0067a6ea2fdf54ff
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882755"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548564"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 
 Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket később felvételről, igény szerint.
 
 ## <a name="upcoming-webinars"></a>Közelgő webináriumok
-
-**Elemzés virtuális Azure-eseményben: Gyorsabb elemzési eredmények az Azure Synapse Analytics szolgáltatással**
-<br>szerző: Gayle Sheppard és John Macintyre
-<br>[Regisztráció](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
-
-**Kilenc trend a Big Data-elemzés jövőjének alakításában**
-<br>írta: Vijay Gopalakrishnan
-<br>[Regisztráljon a december 18-i megtekintéshez](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 **A mesterséges intelligencia üzleti intelligenciára gyakorolt hatásának három típusa**
 <br>szerző: Justyna Lucznik
@@ -39,6 +31,10 @@ Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket 
 
 Igény szerint elérhető népszerű előadások az első lépésekhez
 
+**Elemzés virtuális Azure-eseményben: Gyorsabb elemzési eredmények az Azure Synapse Analytics szolgáltatással**
+<br>szerző: Gayle Sheppard és John Macintyre
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-On-Demand-Registration.html)
+
 **Hogyan változtatja meg a Microsoft az üzletiintelligencia-adatok védelmét**
 <br>szerző: Anton Fritz és Adi Regev
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
@@ -46,6 +42,10 @@ Igény szerint elérhető népszerű előadások az első lépésekhez
 **A Power BI és a modern és vállalati üzleti intelligencia jövője**
 <br>szerző: Arun Ulag és Amir Netz
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
+
+**Kilenc trend a Big Data-elemzés jövőjének alakításában**
+<br>írta: Vijay Gopalakrishnan
+<br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 **Power BI – első lépések**
 <br>by Miguel Martinez
@@ -244,7 +244,7 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 <br>Készítette Kirkland Barrett
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-BIATMIcrosoft274828_01Registration-ForminBody.html?Is=Website)
 
-## <a name="see-also"></a>Lásd még:
+## <a name="see-also"></a>További információ
 
 - [Power BI-tanulmányok](whitepapers.md)
 

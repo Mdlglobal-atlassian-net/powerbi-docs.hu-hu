@@ -1,22 +1,22 @@
 ---
 title: Rendezés oszlop szerint a Power BI Desktopban
-description: Rendezés oszlop szerint a Power BI Desktopban
+description: Oszlop szerinti rendezés a Power BI Desktopban
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 12/17/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: daf4f2c4aaa010516f90cae54c1e8b6784fb0f64
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 78632db52ae197a1643dcf1f2831e140568bc6fe
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879701"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223443"
 ---
-# <a name="sort-by-column-in-power-bi-desktop"></a>Rendezés oszlop szerint a Power BI Desktopban
+# <a name="sort-by-column-in-power-bi-desktop"></a>Oszlop szerinti rendezés a Power BI Desktopban
 A **Power BI Desktopban** és a **Power BI szolgáltatásban** módosíthatja egy vizualizáció kinézetét, ha különböző adatmezők szerint rendezi. A vizualizáció rendezésének módosításával kiemelheti a közvetíteni kívánt információt, és biztosíthatja, hogy a vizualizáció tükrözze ezt a trendet (vagy hangsúlyt).
 
 Akár numerikus adatokat használ (például értékesítési adatokat), akár szöveges adatokat (például államneveket), tetszése szerint rendezheti a vizualizációkat és az adatok megjelenését.  A **Power BI** nagy rugalmas rendezhetőséget és egyszerűen használható menüket biztosít. Bármilyen vizualizációnál kattintson a három pont menüre (...), majd válassza ki a mezőt, amely szerint rendezni szeretné az adatokat, amint az a következő ábrán látható.
@@ -100,4 +100,11 @@ Ha visszatérünk a menübe, és ismét a **SalesQuantity** elemet választjuk, 
 ![Alapértelmezett rendezési sorrend](media/desktop-sort-by-column/sortbycolumn_7.png)
 
 Így, hogy ennyi lehetőségünk van a vizualizációk rendezésére, egyszerű létrehozni éppen olyan diagramokat vagy ábrákat, amilyeneket szeretnénk.
+
+## <a name="next-steps"></a>Következő lépések
+
+Az alábbi cikkeket is érdekesnek találhatja:
+
+* [Jelentésközi részletezés a Power BI Desktopban](desktop-cross-report-drill-through.md)
+* [Szeletelők használata a Power BI Desktopban](visuals/power-bi-visualization-slicers.md)
 

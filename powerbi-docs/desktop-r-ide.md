@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: db4b6d4915e97aaee65806b0bca7801bf4ce951e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4440db5888eeeab638eab4ea3819107d37bdbdbd
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876236"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223468"
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Külső R IDE használata a Power BI-ban
 A **Power BI Desktoppal** használhatja a külső R IDE környezetet (integrált fejlesztőkörnyezetet) R-szkriptek létrehozásához és pontosításához, majd ezután használhatja ezeket a szkripteket a Power BI-ban.
@@ -31,7 +31,7 @@ A **Power BI Desktop** 2016 szeptemberi kiadásától kezdve (2.39.4526.362-es v
 A funkció használatához telepítenie kell egy **R IDE** környezetet a helyi számítógépen. A **Power BI Desktop** nem tartalmazza, helyezi üzembe vagy telepíti az R-motort, ezért külön kell telepítenie az **R**-t a helyi számítógépen. A következő lehetőségekkel kiválaszthatja, melyik R IDE környezetet szeretné használni:
 
 * Telepítheti kedvenc R IDE környezetét, amelyek közül számos ingyen elérhető, például a [Revolution Open letöltőoldalról](https://mran.revolutionanalytics.com/download/) vagy a [CRAN tárból](https://cran.r-project.org/bin/windows/base/).
-* A **Power BI Desktop** szintén támogatja az [R Studiót](https://www.rstudio.com/) és az [*R Tools for Visual Studio*](https://beta.visualstudio.com/vs/rtvs/) szerkesztőkkel rendelkező **Visual Studio 2015**-öt.
+* A **Power BI Desktop** szintén támogatja az [R Studiót](https://www.rstudio.com/) és az [*R Tools for Visual Studio*](/visualstudio/rtvs) szerkesztőkkel rendelkező **Visual Studio 2015**-öt.
 * Másik R IDE is telepíthető, és az alábbiak elvégzésével beállíthatja a **Power BI Desktopot** úgy, hogy elindítsa ezt az **R IDE** környezetet:
   
   * **.R**-fájlokat társíthat ahhoz a külső IDE-hez, amelyet a **Power BI Desktopban** futtatni szeretne.
