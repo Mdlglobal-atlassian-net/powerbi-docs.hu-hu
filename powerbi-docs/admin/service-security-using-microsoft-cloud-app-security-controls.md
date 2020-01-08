@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 18062c770b93bcd1295026d841f923a81c11d84f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7aa0fb1c8707c18e583d0de6bbd602ef43291146
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851238"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548503"
 ---
 # <a name="using-microsoft-cloud-app-security-controls-in-power-bi-preview"></a>A Microsoft Cloud App Security vezérlőinek használata a Power BI-ban (előzetes verzió)
 
@@ -77,10 +77,11 @@ Az észlelések beállításait a Cloud App Security portálon kell konfiguráln
 Új szerepkör jött létre a Microsoft Cloud App Security-t Power BI-jal használó rendszergazdák számára. Ha Power BI-rendszergazdaként jelentkezik be a [Cloud App Security portálra](https://portal.cloudappsecurity.com/), korlátozott hozzáférést kap a Power BI fontos adataihoz, riasztásaihoz, veszélyeztetett felhasználóihoz, tevékenységnaplóihoz és egyéb információihoz.
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások 
-A Microsoft Cloud App Security Power BI-jal történő használata a felhasználói munkamenetek és tevékenységek figyeléséből származó észlelések révén segíti a cég tartalmainak és adatainak védelmét. Ha a Power BI-jal használja a Microsoft Cloud App Security szolgáltatást, néhány korlátot figyelembe kell vennie:
+A Microsoft Cloud App Security Power BI-jal történő használata a felhasználói munkamenetek és tevékenységek figyeléséből származó észlelések révén segíti a cég tartalmainak és adatainak védelmét. Ha a Power BI-jal használja a Microsoft Cloud App Security szolgáltatást, figyelembe kell vennie néhány szempontot és korlátozást:
 
 * A Microsoft Cloud App Security csak az Excel-, a PowerPoint- és a PDF-fájlokban működik.
-* Ha bizalmasság címkéket kíván használni a Power BI-beli munkamenet-szabályzatokhoz, Azure Information Protection Premium P1 vagy Premium P2 licenccel kell rendelkeznie. A Microsoft Azure Information Protection önmagában és a Microsoft licencelési csomagok egyikén belül is megvásárolható. A részleteket az [Azure Information Protection díjszabásában](https://azure.microsoft.com/pricing/details/information-protection/) tekintheti meg. Ezenkívül bizalmasság címkéket is alkalmazni kell a Power BI-eszközökre.
+* Ha bizalmasság címkéket kíván használni a Power BI-beli munkamenet-szabályzatokhoz, Azure Information Protection Premium P1 vagy Premium P2 licenccel kell rendelkeznie. A Microsoft Azure Information Protection önmagában és a Microsoft licencelési csomagjainak egyikében is megvásárolható. A részleteket az [Azure Information Protection díjszabásában](https://azure.microsoft.com/pricing/details/information-protection/) tekintheti meg. Ezenkívül bizalmasság címkéket is alkalmazni kell a Power BI-eszközökre.
+* A munkamenet-vezérlő bármely böngészőhöz rendelkezésre áll bármely elterjedt platformon és operációs rendszeren. A használatához ajánlott az Internet Explorer 11, Microsoft Edge (legfrissebb), Google Chrome (legfrissebb), Mozilla Firefox (legfrissebb) vagy Apple Safari (legfrissebb) böngésző használata. A Power BI nyilvános API-hívásai és a más nem böngészőalapú munkamenetek nem támogatottak a Microsoft Cloud App Security munkamenet-vezérlő részeként. [További részletek megtekintése](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
 
 > [!CAUTION]
 > * A Microsoft Cloud App Security *tartalom-ellenőrzési* szabályzata Excel-fájl szabályzat alkalmazása esetén jelenleg nem érhető el a Power BI-ban, ezért ezt a szabályzatot ne állítsa be a Power BI-ban.
