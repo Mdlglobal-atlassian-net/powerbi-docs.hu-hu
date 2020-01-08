@@ -28,6 +28,8 @@
           href: dax-countrows.md
         - name: Ne konvertálja a BLANK-eket értékekre
           href: dax-avoid-converting-blank.md
+        - name: Oszlopok és mértékek hivatkozásai
+          href: dax-column-measure-references.md
         - name: Adatfolyamokhoz ajánlott eljárások
           href: ../service-dataflows-best-practices.md
         - name: Útmutató a DirectQuery-modellhez a Power BI Desktopban
@@ -42,6 +44,8 @@
           href: auto-date-time.md
         - name: Útmutató a több-a-többhöz kapcsolatokhoz
           href: relationships-many-to-many.md
+        - name: A Power Query háttérbeli frissítésének letiltása
+          href: power-query-background-refresh.md
     - name: Tanulmányok
       items:
         - name: Tanulmányok áttekintése

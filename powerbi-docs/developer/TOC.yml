@@ -15,8 +15,6 @@
               href: power-bi-custom-visuals.md
         - name: Oktatóanyagok
           items:
-            - name: Vizuális koncepció
-              href: visuals/power-bi-visuals-concept.md
             - name: Power BI-vizualizáció fejlesztése
               href: visuals/custom-visual-develop-tutorial.md
             - name: Formázási lehetőségek hozzáadása
@@ -25,6 +23,10 @@
               href: visuals/unit-tests-introduction.md
         - name: Fogalmak
           items:
+            - name: A Power BI-vizualizáció projekt szerkezete
+              href: visuals/visual-project-structure.md
+            - name: Vizuális koncepció
+              href: visuals/power-bi-visuals-concept.md
             - name: Vizualizációk cégek számára a Power BI-ban
               href: power-bi-custom-visuals-organization.md
             - name: Útmutató Power BI-vizualizációkhoz
@@ -63,6 +65,8 @@
               href: visuals/bookmarks-support.md
             - name: Helyi menü támogatásának hozzáadása
               href: visuals/context-menu.md
+            - name: Lehatolási támogatás hozzáadása
+              href: visuals/drill-down-support.md
             - name: Adatkiemelés vizualizációkban
               href: visuals/highlight.md
             - name: Magas kontrasztú mód támogatásának hozzáadása
@@ -109,7 +113,7 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848277'
             - name: SSL-tanúsítvány létrehozása
               href: visuals/create-ssl-certificate.md
-    - name: Beágyazott elemzések
+    - name: Beágyazott analitika
       expanded: true
       items:
         - name: Áttekintés
