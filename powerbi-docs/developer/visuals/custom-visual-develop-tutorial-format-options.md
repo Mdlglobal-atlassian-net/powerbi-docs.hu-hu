@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
-ms.openlocfilehash: 4d7f02d9f78eee4cf287e0bb83acb93a7b1b0355
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: f1a1bfc161fe163a4c4680dbcc90e6ad28b80a90
+ms.sourcegitcommit: 0da17de80c9651f9f4474d1abb1bdaaade8808fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696853"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "75498485"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Oktatóanyag: Formázási beállítások hozzáadása Power BI-vizualizációhoz
 
@@ -124,10 +124,12 @@ Egyéni tulajdonságok hozzáadásával konfigurálhatja a kör színét vagy ak
 
 8. A **visual.ts** fájlban
 
-    importálja a `VisualSettings` osztályt,
+    importálja a `VisualSettings`, a `VisualObjectInstanceEnumeration` és az `EnumerateVisualObjectInstancesOptions` osztályt:
 
     ```typescript
     import { VisualSettings } from "./settings";
+    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
+    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
     ```
 
     és a **Visual** osztályban adja hozzá a következő tulajdonságot:
@@ -218,23 +220,34 @@ Adja meg az egyéni vizualizációs projekt tulajdonságainak értékeit, friss�
 
     *Egy formázott mérési értéket jelenít meg egy kör belsejében*
 
-5. Ha szeretné, az **author** (szerző) objektumban megadhatja a saját adatait.
+5. Töltse ki a vizualizáció **supportUrl** és **gitHubUrl** értékét.
 
-6. Mentse a **pbiviz.json** fájlt.
+    Például:
 
-7. Az **assets** (eszközök) objektumban figyelje meg, hogy a dokumentum meghatározza az ikon elérési útját. Az ikon az a kép, amelyik a **_Vizualizációk_** ablaktáblán jelenik meg. Ennek egy *20 képpont × 20 képpont* méretű **PNG**-fájlnak kell lennie.
+    ```json
+    {
+        "supportUrl": "https://community.powerbi.com",
+        "gitHubUrl": "https://github.com/microsoft/PowerBI-visuals-circlecard"
+    }
+    ```
 
-8. A Windows Intézőben másolja a vágólapra az icon.png fájlt, majd illessze be az Assets mappába, lecserélve az alapértelmezett fájlt.
+6. Adja meg a részleteket az **author** objektumban.
 
-9. A Visual Studio Code Explorer ablaktábláján bontsa ki az Assets mappát, majd válassza ki az icon.png fájlt.
+7. Mentse a **pbiviz.json** fájlt.
 
-10. Tekintse át az ikont.
+8. Az **assets** (eszközök) objektumban figyelje meg, hogy a dokumentum meghatározza az ikon elérési útját. Az ikon az a kép, amelyik a **_Vizualizációk_** ablaktáblán jelenik meg. Ennek egy *20 képpont × 20 képpont* méretű **PNG**-fájlnak kell lennie.
+
+9. A Windows Intézőben másolja a vágólapra az icon.png fájlt, majd illessze be az Assets mappába, lecserélve az alapértelmezett fájlt.
+
+10. A Visual Studio Code Explorer ablaktábláján bontsa ki az Assets mappát, majd válassza ki az icon.png fájlt.
+
+11. Tekintse át az ikont.
 
     ![A Vizualizáció ablaktábla képe](media/custom-visual-develop-tutorial-format-options/viz-pane-image.png)
 
-11. Győződjön meg a Visual Studio Code-ban arról, hogy minden fájlt mentett.
+12. Győződjön meg a Visual Studio Code-ban arról, hogy minden fájlt mentett.
 
-12. Az egyéni vizualizáció becsomagolásához írja be a következő parancsot a PowerShellben.
+13. Az egyéni vizualizáció becsomagolásához írja be a következő parancsot a PowerShellben.
 
     ```powershell
     pbiviz package

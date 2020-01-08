@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/15/2019
-ms.openlocfilehash: 5bf3fee0f3df7b5be04b99e16a8a4043e8fcf30e
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 6a481681801b580b9eec47c5c704d8bdea8835f1
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128008"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75222103"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Oktatóanyag: Power BI-vizualizáció fejlesztése
 
@@ -38,7 +38,7 @@ Az oktatóanyag a következőket ismerteti:
 
 * Ha még nem regisztrált a **Power BI Pro** szolgáltatásra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://powerbi.microsoft.com/pricing/).
 * Szüksége lesz a [Visual Studio Code](https://www.visualstudio.com/) telepített példányára.
-* Windows-felhasználóknak a [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/setup/installing-windows-powershell?view=powershell-6) 4-es vagy újabb verziójára, OSX-felhasználóknak a [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) segédprogramra van szükségük.
+* Windows-felhasználóknak a [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) 4-es vagy újabb verziójára, OSX-felhasználóknak a [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) segédprogramra van szükségük.
 
 ## <a name="setting-up-the-developer-environment"></a>A fejlesztői környezet beállítása
 
@@ -235,7 +235,7 @@ Ebben a szakaszban tesztelni fogjuk a CircleCard egyéni vizualizációt. Ehhez 
 
     Ha még nem hozott létre egy Power BI Desktop-jelentést, [letölthet](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) egy mintajelentést.
 
-    ![Adatok lekérése](media/custom-visual-develop-tutorial/get-data.png) ![Helyi fájl](media/custom-visual-develop-tutorial/local-file.png)
+    ![Adatok betöltése](media/custom-visual-develop-tutorial/get-data.png) ![Helyi fájl](media/custom-visual-develop-tutorial/local-file.png)
 
     A jelentés megtekintéséhez válassza a **US_Sales_Analysis** elemet a bal oldali navigációs panel **Jelentés** szakaszában.
 
@@ -398,6 +398,9 @@ Most már megnézhetjük, hogyan lehet testreszabni az egyéni vizualizációt, 
     import IVisual = powerbi.extensibility.IVisual;
     import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
     import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
+    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
+    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
+    import IVisualHost = powerbi.extensibility.visual.IVisualHost;
 
     import * as d3 from "d3";
     type Selection<T extends d3.BaseType> = d3.Selection<T, any,any, any>;

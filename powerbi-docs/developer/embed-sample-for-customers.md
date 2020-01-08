@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 04/02/2019
-ms.openlocfilehash: 85b21d95cb992449d3b7a910c619d049237fc9d8
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.date: 12/12/2019
+ms.openlocfilehash: e27789ca28d86a53b7d8340b3d766a73a04645cb
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311079"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223411"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba az ügyfelek számára
 
@@ -435,6 +435,8 @@ További információ: [Tanulmány a beágyazott analitikai kapacitás tervezés
 ### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Munkaterület hozzárendelése dedikált kapacitáshoz
 
 A dedikált kapacitás létrehozása után hozzárendelheti a munkaterületet ehhez a kapacitáshoz.
+
+Az összes olyan munkaterületet, amely a beágyazott tartalomhoz (például adathalmazokhoz, jelentésekhez és irányítópultokhoz) kapcsolódó Power BI-erőforrásokat tartalmaz, dedikált kapacitáshoz kell rendelni. Ha például egy beágyazott jelentés és az ahhoz kötött adathalmaz különböző munkaterületeken helyezkedik el, akkor mindkét munkaterületet dedikált kapacitáshoz kell rendelni.
 
 Ha [szolgáltatásnévvel](embed-service-principal.md) szeretne dedikált kapacitást hozzárendelni egy munkaterülethez, használja a [Power BI REST API-t](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). Ha a Power BI REST API-t használja, akkor a [szolgáltatásnév objektumazonosítóját](embed-service-principal.md#how-to-get-the-service-principal-object-id) is használnia kell.
 

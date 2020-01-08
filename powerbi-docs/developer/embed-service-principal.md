@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/29/2019
-ms.openlocfilehash: 3791e9cdfd44c62e6f9e9b79f5345d6d2476b0db
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.date: 12/12/2019
+ms.openlocfilehash: dec23aaa4fd54761c62507b8c7a5a36c45c75afd
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74264189"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223376"
 ---
 # <a name="service-principal-with-power-bi"></a>Szolgáltatásnév a Power BI-jal
 
@@ -150,7 +150,7 @@ Az alábbi lépésekkel lekérheti a szolgáltatásnév objektumazonosítóját 
 
    ![Felügyelt alkalmazások a helyi tárban](media/embed-service-principal/managed-application-in-local-directory.png)
 
-    > [!Note]
+    > [!NOTE]
     > A fenti képen látható objektumazonosító nem azonos a szolgáltatásnévvel használttal.
 
 3. Az objektumazonosító megtekintéséhez válassza a **Tulajdonságok** lehetőséget.
@@ -174,6 +174,7 @@ Alább egy mintaszkript látható a szolgáltatásnév objektumazonosítójának
 * A [Beágyazás a cég számára](embed-sample-for-your-organization.md) alkalmazásai nem tudják a szolgáltatásnevet használni.
 * Az [adatfolyamok](../service-dataflows-overview.md) kezelése nem támogatott.
 * A szolgáltatásnév jelenleg nem támogat rendszergazdai API-kat.
+* Ha egyszerű szolgáltatást használ [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview)-adatforrással, akkor magának az egyszerű szolgáltatásnak kell az Azure Analysis Services-példányra vonatkozó engedélyekkel rendelkeznie. Erre a célra nem használható az egyszerű szolgáltatást tartalmazó biztonsági csoport.
 
 ## <a name="next-steps"></a>Következő lépések
 
