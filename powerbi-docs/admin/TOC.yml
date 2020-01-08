@@ -36,7 +36,7 @@
           href: ../service-admin-portal.md
         - name: Bejelentkezett felhasználók keresése
           href: ../service-admin-access-usage.md
-        - name: Naplózás
+        - name: Felhasználói tevékenységek nyomon követése
           href: ../service-admin-auditing.md
         - name: Szolgáltatásállapot nyomon követése
           href: ../service-admin-health.md
