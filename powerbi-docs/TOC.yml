@@ -425,7 +425,7 @@
           href: desktop-send-smile-privacy-statement.md
         - name: A Power BI Desktop bejelentkezési űrlapjának kezelése
           href: desktop-admin-sign-in-form.md
-        - name: Kisegítő lehetőségek
+        - name: Akadálymentesség
           items:
             - name: Tudnivalók a Power BI akadálymentességéről
               href: desktop-accessibility-overview.md
@@ -903,8 +903,6 @@
           href: report-builder-data.md
         - name: Támogatott adatforrások
           href: paginated-reports-data-sources.md
-        - name: Megosztott Power BI-adatkészletek használata
-          href: report-builder-shared-datasets.md
         - name: Tervezési tippek
           href: report-builder-design-tips.md
         - name: 'Táblák, mátrixok, listák'
@@ -929,6 +927,8 @@
           href: paginated-reports-embedded-data-source.md
         - name: Beágyazott adathalmaz létrehozása
           href: paginated-reports-create-embedded-dataset.md
+        - name: Jelentés létrehozása megosztott Power BI-adatkészlettel
+          href: report-builder-shared-datasets.md
         - name: Paraméterek létrehozása
           href: paginated-reports-parameters.md
         - name: Jelentésparaméter átadása URL-címben
@@ -989,6 +989,8 @@
       items:
         - name: A Power BI Desktop telepítése
           href: report-server/install-powerbi-desktop.md
+        - name: A Jelentéskészítő telepítése
+          href: report-server/install-report-builder.md
         - name: Jelentéskészítő kiszolgálói alapismeretek
           items:
             - name: Power BI-jelentés létrehozása jelentéskészítő kiszolgálóhoz

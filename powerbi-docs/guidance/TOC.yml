@@ -30,6 +30,8 @@
           href: dax-avoid-converting-blank.md
         - name: Oszlopok és mértékek hivatkozásai
           href: dax-column-measure-references.md
+        - name: Ne használja a FILTER-t szűrő argumentumaként
+          href: dax-avoid-avoid-filter-as-filter-argument.md
         - name: Adatfolyamokhoz ajánlott eljárások
           href: ../service-dataflows-best-practices.md
         - name: Útmutató a DirectQuery-modellhez a Power BI Desktopban
