@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 570276b8af2862d6aab6dc806cb0c627be8ff157
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b400f429ef1e65a40caea717ab18bc06300f9d76
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870029"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221187"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Ismerkedés a Power BI-mobilalkalmazások csempéivel
 A következőkre vonatkozik:
@@ -41,10 +41,13 @@ Ezek a csempék aztán a Power BI mobilalkalmazásban fókusz módban megnyithat
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-pie.png)
 3. Térképen a **Középre igazítás** ikonra ![](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) koppintva a térkép úgy módosul, hogy az Ön aktuális helyzete középre essen.
-   
-     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
-4. A megosztás ikonra ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png) koppintva [megjegyzésekkel láthat el egy csempét és megoszthatja](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) másokkal.
+
+   ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
+
+4. A ceruza ikonra ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) koppintva[ megjegyzést fűzhet egy csempéhez](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual), majd a megosztás ikonnal ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png) [megoszthatja azt másokkal](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
+
 5. [Riasztás hozzáadása csempéhez](mobile-set-data-alerts-in-the-mobile-apps.md). A Power BI értesíti Önt, ha az értékek a célérték fölé vagy alá esnek.
+
 6. Az irányítópult létrehozója hivatkozást adhat egy csempéhez. Az ilyen csempéken fókusz módban megjelenik a hivatkozás ikon ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
@@ -54,7 +57,7 @@ Ezek a csempék aztán a Power BI mobilalkalmazásban fókusz módban megnyithat
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
     A hivatkozás a Power BI alkalmazásban történő megnyitása után másolható és megnyitható egy böngészőablakban.
-7. [Megnyitható a jelentés](mobile-reports-in-the-mobile-apps.md) ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png), amelyen a csempe alapul.
+7. [Nyissa meg azt a jelentést](mobile-reports-in-the-mobile-apps.md) ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png), amelyen a csempe alapul.
 8. A fókusz módból való kilépéshez koppintson a csempe nevére, majd az irányítópult nevére vagy a **Saját munkaterület** lehetőségre.
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-breadcrumb.png)
@@ -68,7 +71,7 @@ Ezek a csempék aztán a Power BI mobilalkalmazásban fókusz módban megnyithat
     Fókusz módban a következő műveleteket végrehajtására van lehetőség:
    
    * A diagramra koppintva áthelyezheti egy vonal-, sáv-, oszlop- vagy buborékdiagram egy sávját és megtekintheti a vizualizáció egy adott pontjához tartozó értékeket.  
-   * A Pillanatkép megosztása ikonra ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) koppintva [megjegyzésekkel láthat el egy csempét és megoszthatja](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) másokkal.
+   * A ceruza ikonra ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) koppintva[ megjegyzést fűzhet egy csempéhez](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual), majd a Pillanatkép megosztása ikonnal ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) [megoszthatja azt másokkal](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
    * A Jelentés megnyitása ikonra ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) koppintva [megtekintheti a jelentést](mobile-reports-in-the-mobile-apps.md) a mobilalkalmazásban.
 3. Az irányítópult létrehozója hivatkozást adhat egy csempéhez. Ilyen esetben a függőleges három pontra ( **...** ) koppintva megjelenik a **Hivatkozás megnyitása** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) lehetőség:
    

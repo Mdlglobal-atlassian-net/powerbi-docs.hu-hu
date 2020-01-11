@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/12/2019
+ms.date: 12/16/2019
 ms.author: painbar
-ms.openlocfilehash: c188f2b00447ff9f97059e81e7945f67e3170c6d
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 44fcfdbaa51b85b191ff1452c66daee7da0360f8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74010018"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75220517"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -21,6 +21,20 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+
+## <a name="november-2019"></a>2019. november
+
+### <a name="power-bi-apps-new-look-is-now-on-by-default"></a>A Power BI alkalmazás új kezelőfelülete már alapértelmezés szerint be van kapcsolva
+ 
+Mostantól az alkalmazás megnyitásakor automatikusan be lesz kapcsolva az új kezelőfelület a navigációs sávokkal, amelyekkel egyszerűbben találhatja és nyithatja meg a tartalmat. Az alkalmazás [kezdőlapjáról](mobile-apps-home-page.md) kiindulva gyorsan elérheti a legfontosabb tartalmakat, valamint egy [tevékenység-hírcsatornát](mobile-apps-home-page.md#activity-feed), amely naprakészen tartja a legújabb riasztásokkal, értesítésekkel és sok mással kapcsolatban.
+
+### <a name="see-all-your-latest-power-bi-activity"></a>Az összes legutóbbi Power BI-tevékenység megtekintése
+ 
+A tevékenység-hírcsatornával valós időben nyomon követheti mindazt, ami a Power BI-tartalmaival történik. Ehhez elég az alkalmazás kezdőlapjára lépnie, és megnyitnia a Tevékenység lapot, ahol az összes új értesítés, riasztás, megjegyzés, @mentions és sok más is megtalálható. [További információ](mobile-apps-home-page.md#activity-feed).
+
+### <a name="use-bookmarks-in-your-reports"></a>Könyvjelzők használata a jelentésekben
+
+A Power BI mobilalkalmazás mostantól támogatja a Power BI-ban létrehozott könyvjelzőket. Az alkalmazás megnyitásakor a jelentés készítője által létrehozott könyvjelzőket és a saját készítésű személyes könyvjelzőket is használhatja. [További információ](mobile-reports-in-the-mobile-apps.md#bookmarks).
 
 ## <a name="october-2019"></a>2019. október
 
@@ -520,7 +534,7 @@ Olvassa el a [Power BI mobilalkalmazásai funkcióinak 2016. novemberi összefog
 #### <a name="android-devices"></a>Androidos eszközök
 **Előzetes verzió: Intune mobilalkalmazás-kezelés** A Power BI mostantól támogatja a Microsoft Intune mobilalkalmazás-kezelőjét, amely előzetes verzióban elérhető Power BI Pro-felhasználók számára androidos eszközökön. 
 
-**Kedvencek** Megjelölheti kedvenc irányítópultjait androidos eszközén, és egyetlen, kényelmesen elérhető helyen tekintheti meg [kedvenc Power BI-irányítópultjait, valamint a Reporting Services-mobiljelentéseket és KPI-ket](mobile-android-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports). 
+**Kedvencek** Megjelölheti kedvenc irányítópultjait androidos eszközén, és egyetlen, kényelmesen elérhető helyen tekintheti meg [kedvenc Power BI-irányítópultjait, valamint a Reporting Services-mobiljelentéseket és KPI-ket](mobile-android-app-get-started.md#view-your-favorite-dashboards-and-reports). 
 
 #### <a name="ios-devices"></a>iOS-eszközök
 **Hivatkozások** A csempéken és vizualizációkban lévő URL-címek mostantól kattinthatóak, és megnyílnak a böngészőben.

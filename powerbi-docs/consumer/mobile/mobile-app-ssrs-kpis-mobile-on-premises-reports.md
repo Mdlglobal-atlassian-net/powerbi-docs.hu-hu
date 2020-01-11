@@ -1,19 +1,19 @@
 ---
 title: Helyszíni jelentések és KPI-k megtekintése a Power BI-mobilalkalmazásokban
 description: A Power BI Mobile-alkalmazások élő, érintésvezérelt mobilhozzáférést biztosítanak helyszíni üzleti adataihoz a Microsoft SQL Server Reporting Services és a Power BI jelentéskészítő kiszolgáló használatával.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/13/2018
-ms.author: mshenhav
-ms.openlocfilehash: 50d44b99d8efea848588ab4c460a469ef6dc780b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/05/2019
+ms.author: painbar
+ms.openlocfilehash: 6020a6cb72be4e8d7be0485c7787fefc097e679d
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879449"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220065"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Helyszíni jelentéskészítő kiszolgálói jelentések és KPI-k megtekintése a Power BI-mobilalkalmazásokban
 
@@ -40,8 +40,9 @@ Ezután a Power BI-mobilalkalmazásokban akár öt jelentéskészítő kiszolgá
 ## <a name="explore-samples-in-the-mobile-apps-without-a-server-connection"></a>Minták megtekintése a mobilalkalmazásokban kiszolgálói kapcsolat nélkül
 Még ha nincs is hozzáférése a Microsoft SQL Server Reporting Services webes portáljához, akkor is feltárhatja a Reporting Services mobiljelentéseinek és KPI-nek funkcióit. 
 
-1. Koppintson a globális navigáció gombra ![Globális navigáció gomb](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-global-nav-button.png) a bal felső sarokban, majd a fogaskerék ikonra a jobb felsőben ![Fogaskerék ikon](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-settings-icon.png).
-2. Koppintson a **Reporting Services-példák** elemre, majd tallózással keresse a mintául szolgáló KPI-ket és mobiljelentéseket.
+1. Koppintson a bal felső sarokban található profilképre, majd kattintson a **Beállítások** lehetőségre a becsúszó Fiókok panelen.
+
+2. A megnyíló Beállítások panelen koppintson a **Reporting Services-példák** elemre, majd tallózással keresse a mintául szolgáló KPI-ket és mobiljelentéseket.
    
    ![Reporting Services-minták](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png)
 
@@ -53,18 +54,17 @@ A helyszíni Power BI-jelentéseket, a Reporting Services mobiljelentéseit és 
    
    ![Bejelentkezés jelentéskészítő kiszolgálóra](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-connect-to-rs-login.png)
    
-   Ha már bejelentkezett a Power BI alkalmazásba, koppintson a globális navigáció gombra ![Globális navigáció gomb](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-global-nav-button.png), majd a fogaskerék ikonra ![Fogaskerék ikon](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-settings-icon.png) a jobb felső sarokban.
-3. Koppintson a **Csatlakozás kiszolgálóhoz** elemre.
+   Ha már bejelentkezett a Power BI alkalmazásba, koppintson a bal felső sarokban található profilképre, majd kattintson a **Beállítások** lehetőségre a becsúszó Fiókok panelen.
+3. A megnyíló Beállítások panelen koppintson a **Csatlakozás kiszolgálóhoz** lehetőségre.
    
     ![Csatlakozás kiszolgálóhoz](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-android-server-sign-in.png)
 
-     A mobilalkalmazásnak valamilyen módon el kell érnie a kiszolgálót. Ez többféleképpen is megoldható:
+    A mobilalkalmazásnak valamilyen módon el kell érnie a kiszolgálót. Ez többféleképpen is megoldható:
+     * A legegyszerűbb, ha ugyanabban a hálózatban van vagy VPN-t használ.
+     * A szervezeten kívülről való csatlakozáshoz használható Webalkalmazás-proxy. További részleteket a [Csatlakozás a Reporting Services szolgáltatáshoz OAuth használatával](mobile-oauth-ssrs.md) című témakörben találhat.
+     * Nyisson meg egy kapcsolatot (portot) a tűzfalon.
 
-    - A legegyszerűbb, ha ugyanabban a hálózatban van vagy VPN-t használ.
-    - A szervezeten kívülről való csatlakozáshoz használható Webalkalmazás-proxy. További részleteket a [Csatlakozás a Reporting Services szolgáltatáshoz OAuth használatával](mobile-oauth-ssrs.md) című témakörben találhat. 
-    - Nyisson meg egy kapcsolatot (portot) a tűzfalon.
-
-1. Töltse ki a kiszolgáló címét, és adja meg felhasználónevét és jelszavát. A kiszolgáló címét ebben a formátumban adja meg:
+4. Töltse ki a kiszolgáló címét és ha szeretne, adjon felhasználóbarát nevet a kiszolgálónak. A kiszolgáló címét az alábbi formátumban kell megadni:
    
      `https://<servername>/reports`
    
@@ -75,14 +75,14 @@ A helyszíni Power BI-jelentéseket, a Reporting Services mobiljelentéseit és 
    A kapcsolati sztring előtt a **http** vagy **https** előtagot alkalmazza.
    
     ![Csatlakozás kiszolgálóhoz párbeszédpanel](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
-5. (Nem kötelező) A **Speciális beállítások** alatt megadhatja a kiszolgáló valódi nevét, ha szeretné.
-6. A kiszolgáló megjelenik a navigációs ablaktáblán – ebben a példában „power bi report server” a neve.
+5. Miután beírta a kiszolgáló címét és esetleg annak felhasználóbarát nevét is, koppintson a **Csatlakozás** lehetőségre, majd amikor a rendszer kéri, töltse ki a felhasználónév és jelszó mezőt.
+6. A kiszolgáló megjelenik a Fiókok panelen – ebben a példában „Work server” a neve.
    
    ![Jelentéskészítő kiszolgáló a navigációs ablaktáblán](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
 
-## <a name="connect-to-an-on-premises-report-server-in-ios"></a>Csatlakozás helyszíni jelentéskészítő kiszolgálóhoz iOS rendszeren
+## <a name="connect-to-an-on-premises-report-server-in-ios-or-android"></a>Csatlakozás helyszíni jelentéskészítő kiszolgálóhoz iOS vagy Android rendszeren
 
-Ha az iOS-es mobilalkalmazásban tekinti meg a Power BI-t, előfordulhat, hogy a rendszergazda definiált egy alkalmazáskonfigurációs szabályzatot. Ha így van, a jelentéskészítő kiszolgálóhoz való csatlakozáshoz használt felület leegyszerűsített, és nem kell olyan sok adatot megadnia, amikor csatlakozik egy jelentéskészítő kiszolgálóhoz. 
+Ha az iOS-es vagy az androidos mobilalkalmazásban tekinti meg a Power BI-t, előfordulhat, hogy a rendszergazda definiált egy alkalmazáskonfigurációs szabályzatot. Ha így van, a jelentéskészítő kiszolgálóhoz való csatlakozáshoz használt felület leegyszerűsített, és nem kell olyan sok adatot megadnia, amikor csatlakozik egy jelentéskészítő kiszolgálóhoz. 
 
 1. Egy üzenet jelenik meg arról, hogy a mobilalkalmazás egy jelentéskészítő kiszolgálóhoz lett konfigurálva. Koppintson a **Bejelentkezés** lehetőségre.
 
@@ -117,7 +117,7 @@ A Power BI-jelentések, a Reporting Services mobiljelentései és a KPI-k ugyana
 ## <a name="view-your-favorite-kpis-and-reports"></a>Kedvenc KPI-k és jelentések megtekintése
 KPI-ket és jelentéseket jelölhet meg kedvencekként a webes portálon, majd a kedvenc Power BI-irányítópultjaival együtt ezeket is megtekintheti egy Önnek megfelelő mappában a mobileszközén.
 
-* Koppintson a **Kedvencek** elemre.
+* Koppintson a navigációs sáv **Kedvencek** elemére.
   
    ![Kedvencek a navigációs ablaktáblán](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
   
@@ -126,7 +126,7 @@ KPI-ket és jelentéseket jelölhet meg kedvencekként a webes portálon, majd a
    ![Power BI-jelentések és -irányítópultok a Kedvencek lapon](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-favorites.png)
 
 ## <a name="remove-a-connection-to-a-report-server"></a>Jelentéskészítő kiszolgálóval való kapcsolat eltávolítása
-1. A navigációs ablaktábla alján koppintson a **Beállítások** elemre.
+1. Nyissa meg a Fiókok panelt, majd koppintson a **Beállítások** lehetőségre.
 2. Koppintson annak a kiszolgálónak a nevére, amelyhez nem szeretne kapcsolódni.
 3. Koppintson a **Kiszolgáló eltávolítása** elemre.
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 34fe1af53a62c5198cc30625d840321c414be8f7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6feba420e5bdc25651176be67e6f86f1dafc9ef6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879383"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219570"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Q&A virtuális elemző iOS-alkalmazásokban – Power BI
 
@@ -33,53 +33,16 @@ Ha még nem regisztrált a Power BI-ra, a kezdés előtt [hozzon létre egy ingy
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-### <a name="install-the-power-bi-for-ios-app"></a>Az iOS-es Power BI alkalmazás telepítése
-[iOS-alkalmazás letöltése](https://go.microsoft.com/fwlink/?LinkId=522062 "Az iPhone-alkalmazás letöltése") az Apple App Store-ból iPadre, iPhone-ra vagy iPod Touchra.
+* **Az iOS-es Power BI alkalmazás telepítése**: [Töltse le az iOS-alkalmazást](https://go.microsoft.com/fwlink/?LinkId=522062) iPhone-jára vagy iPad-jére.
+Az iOS-es Power BI alkalmazást az alábbi verziók támogatják:
+    * iPad iOS 11 vagy újabb rendszerrel.
+    * iPhone 5 vagy újabb iOS 11 vagy újabb rendszerrel.
+* **A Kiskereskedelmi elemzési és a Lehetőségelemzési minta letöltése**: A gyorsútmutató első lépéseként töltse le a Kiskereskedelmi elemzési és a Lehetőségelemzési mintát a Power BI szolgáltatásba. Az alkalmazás használatának megkezdéséhez [ismerje meg, hogyan tud letölteni egy mintát](./mobile-apps-download-samples.md) a Power BI-fiókjába. Ügyeljen rá, hogy a Kiskereskedelmi elemzési és a Lehetőségelemzési mintát jelölje ki.
 
-Ezek a verziók támogatják az iOS-es Power BI alkalmazást:
-- iPad iOS 10 vagy újabb verzióval.
-- iPhone 5 vagy újabb iOS 10 vagy újabb rendszerrel. 
-- iPod Touch iOS 10 vagy újabb rendszerrel.
-
-### <a name="download-samples"></a>Minták letöltése
-Első lépéskét töltse le a Kiskereskedelmi elemzési és a Lehetőségelemzési mintákat a Power BI szolgáltatásba.
-
-**A Kiskereskedelmi elemzési minta beszerzése**
-
-1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), és jelentkezzen be.
-
-2. A navigációs ablaktáblán válassza a **Munkaterületek**, **Saját munkaterület** lehetőséget.
-
-3. A bal alsó sarokban kattintson a **Lekérdezés** elemre.
-   
-    ![](media/mobile-apps-ios-qna/power-bi-get-data.png)
-
-3. Az Adatok lekérése lapon kattintson a **Minták** ikonra.
-   
-   ![](media/mobile-apps-ios-qna/power-bi-samples-icon.png)
-
-4. Válassza a **Kiskereskedelmi elemzési minta** lehetőséget.
- 
-    ![Kiskereskedelmi elemzési minta](./media/mobile-apps-ios-qna/power-bi-rs.png)
- 
-8. Kattintson a **Csatlakozás** gombra.  
-  
-   ![Kiskereskedelmi elemzési minta](./media/mobile-apps-ios-qna/retail16.png)
-   
-5. A Power BI importálja a tartalomcsomagot, és egy új irányítópultot, jelentést és adatkészletet ad hozzá az aktuális munkaterülethez.
-   
-   ![Kiskereskedelmi elemzési minta](./media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
-
-**A Lehetőségelemzési minta beszerzése**
-
-- Kövesse a Kiskereskedelmi elemzési mintánál leírt lépéseket, de a 4. lépésnél válassza a **Lehetőségelemzési minta** lehetőséget.
-
-    ![Kiskereskedelmi elemzési minta](./media/mobile-apps-ios-qna/power-bi-oa.png)
-  
-Most már megnézheti a mintákat iOS-es eszközén.
+Az előfeltételek teljesítése után már készen áll a Q&A virtuális elemző kipróbálására.
 
 ## <a name="try-asking-questions-on-your-iphone-or-ipad"></a>Próbáljon meg kérdéseket feltenni az iPhone-ján vagy az iPadjén
-1. iPhone-ján vagy iPadjén koppintson a globális navigáció gombra ![Globális navigációs gomb](./media/mobile-apps-ios-qna/power-bi-iphone-global-nav-button.png) > **Munkaterület** > **Saját munkaterület** lehetőségre, majd nyissa meg a Kiskereskedelmi elemzési minta irányítópultot.
+1. Az iPhone-on vagy iPad-en koppintson az alsó navigációs sáv Munkaterületek gombjára, ![munkaterületek gomb](./media/mobile-apps-ios-qna/power-bi-iphone-workspaces-button.png)nyissa meg a Saját munkaterületet, majd nyissa meg a Kiskereskedelmi elemzési minta irányítópultot.
 
 2. Koppintson a lap alján (iPaden a lap tetején) látható műveleti menü Q&A virtuális elemző ikonjára ![Q&A virtuális elemző ikon](././media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png).
      A Power BI Q&A virtuális elemző néhány javaslatot tesz a kezdéshez.
@@ -143,4 +106,4 @@ Az eredmények, melyeket ügyfelei a Q&A virtuális elemző adott adatkészlet k
 
 ## <a name="next-steps"></a>Következő lépések
 * [Q&A a Power BI szolgáltatásban](../end-user-q-and-a.md)
-* Kérdései vannak? Látogasson el a [Power BI közösség mobilalkalmazásokról szóló oldalára](https://go.microsoft.com/fwlink/?linkid=839277).
+* Kérdése van? Látogasson el a [Power BI közösség mobilalkalmazásokról szóló oldalára](https://go.microsoft.com/fwlink/?linkid=839277).

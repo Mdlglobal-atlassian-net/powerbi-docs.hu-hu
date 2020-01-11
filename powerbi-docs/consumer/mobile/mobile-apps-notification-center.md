@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 22988b08209865e9f1f2c583a30aa40e48c249bc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7b0a8b1f8b77ba1ee636bc92bb230b7c51e2935b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879244"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219390"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Értesítések fogadása a Power BI-mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -34,27 +34,23 @@ Az Értesítések szolgáltatás a Power BI használatával kapcsolatos informá
    
    ![Értesítésszalag](./media/mobile-apps-notification-center/power-bi-mobile-notification-banner.png)
    
-   Vagy iPaden:
-   
-   ![Értesítések](./media/mobile-apps-notification-center/power-bi-ipad-notifications.png)
-   
+
    Megváltoztathatja a [Power BI értesítési módját](mobile-apps-notification-center.md#change-or-turn-off-notifications-on-your-mobile-device).
-2. Ha értesítéseket kapott, amikor bejelentkezik a mobileszközén a Power BI-ba, egy sárga pontot fog látni a globális navigációs gombon ![Értesítések pont](./media/mobile-apps-notification-center/power-bi-android-menu-notifications-icon.png) (Android) vagy az **Értesítések** ikonon. 
-   
-   ![Értesítések pont](./media/mobile-apps-notification-center/power-bi-windows-10-notifications.png)
-3. Válassza ki az Értesítések ikont ![Értesítések ikon](./media/mobile-apps-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10).
+2. Ha értesítéseket kapott, amikor bejelentkezik a mobileszközén a Power BI-ba, egy sárga pontot fog látni a harang alakú Értesítések ikonon ![értesítési harang](./media/mobile-apps-notification-center/powerbi-alert-tile-notification-icon.png) (iOS és Android rendszeren) vagy a globális navigációs gombon ![Értesítések pont](./media/mobile-apps-notification-center/power-bi-iphone-alert-global-nav-button.png) (Windows 10-eszközökön). 
+
+3. Az értesítéseket úgy tekintheti meg az Értesítési központban, hogy az Értesítések ikonra koppint ![értesítési harang](./media/mobile-apps-notification-center/powerbi-alert-tile-notification-icon.png) (iOS és Android rendszeren), vagy az Értesítési központ ikonjára ![Értesítések ikon](./media/mobile-apps-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10-eszközökön).
    
     A legújabb értesítés látható legfölül, az olvasatlan üzenetek pedig kiemelten jelennek meg. Az értesítések 90 napig őrződnek meg, ha nem törli őket, vagy a számuk el nem éri a maximális határértéket, a 100-at.
    
    ![iOS-értesítések listája](./media/mobile-apps-notification-center/power-bi-iphone-notifications-list.png)
-4. Az értesítés elvetéséhez koppintson rá, és tartsa az ujját lenyomva, majd válassza a **Bezárás** lehetőséget.
+4. Egy értesítés elvetéséhez iOS- és Android-eszközökön koppintson rá hosszan, majd pöccintsen. Windows 10-eszközökön kattintson a jobb gombbal és válassza az **Elvetés** lehetőséget.
 
 ## <a name="change-or-turn-off-notifications-on-your-mobile-device"></a>Értesítések módosítása vagy kikapcsolása a mobileszközön
 Megváltoztathatja a Power BI értesítési módját.
 
 1. iOS-eszközön lépjen a **Beállítások** > **Értesítések** pontra. 
    
-    Android telefonon lépjen az **Értesítési beállítások** pontra.
+    Android telefonon lépjen az **Beállítások** > **Értesítések** pontra.
    
     Windows-eszközön a **Beállítások** menüben lépjen a **Rendszer** > **Értesítések és műveletek** menüpontra.
 2. Az alkalmazások listájában válassza a **Power BI** elemet. 
