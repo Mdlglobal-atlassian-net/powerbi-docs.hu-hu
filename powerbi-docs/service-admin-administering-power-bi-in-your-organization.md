@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: dced3d2bfe844e857556386fb208395faab3fd8b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 57819765b156baac2a86b8144e86770a0117adfd
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698969"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548583"
 ---
 # <a name="what-is-power-bi-administration"></a>Mit jelent a Power BI-felügyelet?
 
@@ -61,7 +61,7 @@ A rendszergazdák sokféle feladatot látnak el a Power BI-bérlő szervezeten b
 | Belső szabályzatoknak, jogszabályoknak és előírásoknak való megfelelőség biztosítása | <ul><li>Besorolás és üzleti adatok kezelése<br><li>Tartalom közzétételére és megosztásra vonatkozó szabályzatok betartatása</ul>|
 | Power BI-erőforrások kezelése |<ul><li>Munkaterületek kezelése<br><li>Egyéni vizualizációk közzététele<br><li>A Power BI más alkalmazásokban való beágyazásához használt kódok ellenőrzése|
 | A bérlő felhasználóinak támogatása és segítségnyújtás számukra |<ul><li>Adathozzáférési és más problémák elhárítása</ul>|
-| Egyéb feladatok |<ul><li>A Power BI Desktop üzembe helyezése például a System Center Configuration Manager használatával<br><li>A Power BI mobilalkalmazás üzemelő példányainak kezelése az Intune-nal<br><li>Az adatvédelem és a biztonság, többek között a forrásadatok biztonságának kezelése</ul>|
+| Egyéb feladatok |<ul><li>A Power BI Desktop üzembe helyezése például a Microsoft Endpoint Configuration Manager használatával<br><li>A Power BI mobilalkalmazás üzemelő példányainak kezelése az Intune-nal<br><li>Az adatvédelem és a biztonság, többek között a forrásadatok biztonságának kezelése</ul>|
 
 ## <a name="administrative-tools"></a>Felügyeleti eszközök
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6ee7405b7c3d542dd824c70c17459c7078b3f0e1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f7af1c584802181cab68f6ce2fc4823ec7078354
+ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878824"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75523027"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Az Analysis Services táblázatos adatainak használata a Power BI Desktopban
 A Power BI Desktopban kétféleképpen érheti el és kérheti le az adatokat az SQL Server Analysis Services táblázatos modelljeiből: Élő kapcsolaton keresztüli feltárással vagy az elemek kiválasztásával és a Power BI Desktopba történő importálásával.
@@ -76,6 +76,12 @@ Ha az elemek kiválasztását és az adatok lekérését választja, a tábláza
 **Kérdés:** A Kezelőben egy modellt és egy perspektívát is látok. Mi közöttük a különbség?
 
 **Válasz:** A perspektíva a táblázatos modell egy adott nézete. Az egyedi adatelemzési igényektől függően előfordulhat, hogy csak egyes táblákat, oszlopokat vagy mértékeket tartalmaz. A táblázatos modellek minden esetben rendelkeznek legalább egy perspektívával, amely akár a teljes modellt is tartalmazhatja. Ha nem biztos benne, hogy melyiket válassza, forduljon a rendszergazdához.
+
+**Kérdés:** Vannak az Analysis Servicesnek a Power BI viselkedését befolyásoló funkciói?
+
+**Válasz:** Igen. A Táblázatos modell által használt funkcióktól függően a Power BI Desktopbeli felület is megváltozhat. Néhány példa:
+* A mértékek a modellben a Mezők lista elején csoportosítva jelenhetnek meg, és nem a táblázat oszlopai mellett. Ne aggódjon! Továbbra is a szokott módon használhatja, de így könnyebben megtalálhatja őket.
+* Ha a Táblázatos modellben Számítási csoportok vannak definiálva, akkor ezeket csak a modell mértékeivel használhatja, az olyan közvetett mértékekkel viszont nem, amelyeket a vizualizációkhoz felvett numerikus mezőkkel hozott létre. Az is lehetséges, hogy manuálisan lett beállítva a modell **DiscourageImplicitMeasures** jelölője, amelynek ugyanez a hatása. További tudnivalók: [Számítási csoportok az Analysis Servicesben](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups#benefits)
 
 ## <a name="to-change-the-server-name-after-initial-connection"></a>A kiszolgáló nevének módosítása a kezdeti kapcsolódást követően
 Miután létrehozott egy élő vizsgálati kapcsolattal rendelkező Power BI Desktop-fájlt, egyes esetekben előfordulhat, hogy a kapcsolatot át szeretné állítani egy másik kiszolgálóra. Ilyen eset lehet, ha a Power BI Desktop-fájl létrehozásakor a fejlesztési kiszolgálóra csatlakozott, a Power BI szolgáltatásban való közzététel előtt azonban át szeretné a kapcsolatot állítani az üzemi kiszolgálóra.

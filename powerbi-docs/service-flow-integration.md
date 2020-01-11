@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 738ae599e116beaf5ff80098e4965ee3ed958b04
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: e9c6185506d1992a46ee14ff1eafe0c37d9f65c1
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699682"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223784"
 ---
 # <a name="power-automate-and-power-bi"></a>A Power Automate és a Power BI
 
-A [Power Automate](https://flow.microsoft.com/documentation/getting-started) egy olyan SaaS-ajánlat, amely a munkafolyamatok automatizálásához használható egyre több olyan alkalmazásban és SaaS-szolgáltatásban, amelyre a vállalati felhasználók támaszkodnak. A Flow segítségével kedvenc alkalmazásait és szolgáltatásait (többek között a Power BI-t) integrálva automatizálhatja az értesítések küldését, a fájlok szinkronizálását, az adatgyűjtést és még sok más feladatot. A munkafolyamatok automatizálásával egyszerűbben végezhetők el az ismétlődő feladatok.
+A [Power Automate](https://docs.microsoft.com/power-automate/getting-started) egy olyan SaaS-ajánlat, amely a munkafolyamatok automatizálásához használható egyre több olyan alkalmazásban és SaaS-szolgáltatásban, amelyre a vállalati felhasználók támaszkodnak. A Flow segítségével kedvenc alkalmazásait és szolgáltatásait (többek között a Power BI-t) integrálva automatizálhatja az értesítések küldését, a fájlok szinkronizálását, az adatgyűjtést és még sok más feladatot. A munkafolyamatok automatizálásával egyszerűbben végezhetők el az ismétlődő feladatok.
 
-[Kezdjen el megismerkedni a Flow-val most.](https://flow.microsoft.com/documentation/getting-started)
+[Kezdjen el megismerkedni a Flow-val most.](https://docs.microsoft.com/power-automate/getting-started)
 
-Nézze meg, hogyan hoz létre Sirui egy olyan folyamatot, amely részletes e-mailt küld a munkatársainak, amikor valamilyen esemény adatriasztást vált ki a Power BI-ban. Ha végzett, a videó alatti részletes útmutatást követve próbálja ki Ön is.
+Nézze meg, hogyan hoz létre Sirui egy olyan folyamatot, amely részletes e-mailt küld a munkatársainak, amikor valamilyen esemény adatriasztást vált ki a Power BI-ban. Ezután a videó alatt látható részletes utasításokat követve próbálkozzon meg a feladat elvégzésével.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YhmNstC39Mw" frameborder="0" allowfullscreen></iframe>
 
@@ -107,7 +107,7 @@ Ennek a feladatnak a végrehajtása során sablon nélkül hozunk létre egy egy
     ![A folyamat egy Outlook-értesítést aktivál](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Következő lépések
-* [Első lépések a Power Automate-ben](https://flow.microsoft.com/documentation/getting-started/)
+* [Első lépések a Power Automate-ben](https://docs.microsoft.com/power-automate/getting-started/)
 * [Adatriasztások beállítása a Power BI szolgáltatásban](service-set-data-alerts.md)
 * [Adatriasztások beállítása az iPhone-on](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Adatriasztások beállítása a Windows 10-hez készült Power BI-mobilalkalmazásban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

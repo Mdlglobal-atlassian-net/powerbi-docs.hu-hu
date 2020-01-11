@@ -1,345 +1,348 @@
 ---
 title: Első lépések a Power BI Desktopban
-description: Első lépések a Power BI Desktopban
+description: Első lépések a Power BI Desktopban.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 12/09/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e533313e20c4e1f994c2ae3d1e552170aef2cbd2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b32eee568ba560e95899cf0965a11f3bb037aed6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868021"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75222455"
 ---
-# <a name="getting-started-with-power-bi-desktop"></a>Első lépések a Power BI Desktopban
-Üdvözöljük a **Power BI Desktop Első lépések útmutatójában**. Ebben a rövid bemutatóban megismerkedhet a Power BI Desktop használatával, képességeivel, és megtudhatja, hogyan állíthat össze gyorsan nagy teljesítményű adatmodelleket és lenyűgöző jelentéseket, amelyek megalapozottabb üzleti döntéseket eredményeznek. 
+# <a name="get-started-with-power-bi-desktop"></a>Első lépések a Power BI Desktopban
+Üdvözöljük a Power BI Desktoppal tett első lépésekhez szóló útmutatóban. Bemutatjuk a Power BI Desktop működését, képességeit, és hogy hogyan készíthet robusztus adatmodelleket és látványos jelentéseket az üzleti intelligencia erősítéséhez.
 
-Jobban szeret videókat nézni mint olvasni? [Megtekintheti az első lépéseket bemutató videónkat](desktop-videos.md). Ha pedig szeretné követni a videóban látottakat a megfelelő mintaadatokkal, [letöltheti ezt a minta Excel-munkafüzetet](https://go.microsoft.com/fwlink/?LinkID=521962).
+A Power BI Desktop működését és használatát gyorsan áttekintheti, ha néhány perc alatt végignézi az útmutató képernyőképeit. Ha alaposabban el szeretne mélyedni a témában, elolvashat minden szakaszt, végrehajthatja a lépéseket, és elkészítheti saját Power BI Desktop-fájlját, amelyet közzétehet a [Power BI szolgáltatásban](https://app.powerbi.com/), és megoszthat másokkal.
 
-![](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
+![Power BI Desktop-jelentés](media/desktop-getting-started/hero.png)
 
-A Power BI Desktop segítségével másokkal könnyen megosztható lekérdezéseket, adatkapcsolatokat és jelentéseket készíthet. A Power BI Desktop integrálja a Microsoft bevált technológiáit (a nagy teljesítményű lekérdezési motort, az adatmodellezést és a vizualizációkat), és zökkenőmentesen működik együtt az online [**Power BI szolgáltatással**](https://app.powerbi.com/).
-
-A **Power BI Desktop** (ahol az elemzők és a többi felhasználó nagy teljesítményű adatkapcsolatokat, modelleket és jelentéseket hozhatnak létre) és a [**Power BI szolgáltatás**](https://preview.powerbi.com/) (ahol a Power BI Desktop-jelentések megoszthatók, így a felhasználók megtekinthetik és használhatják őket) együttes használatával könnyebben modellezhet, hozhat létre, oszthat meg és terjeszthet ki új elemzéseket az adatok világában.
-
-Az adatelemzők megtapasztalhatják, hogy a Power BI Desktop egy hatékony, rugalmas és könnyen elérhető eszköz, amellyel csatlakozhatnak az adatok világához, formázhatják az adatokat, valamint erőteljes modelleket és jól strukturált jelentéseket hozhatnak létre.
-
-## <a name="how-to-use-this-guide"></a>Az útmutató használata
-Az útmutató többféleképpen is használható – gyorsan átfuthatja, vagy elolvashat minden fejezetet, hogy alaposan megismerje a Power BI Desktop működését.
-
-Ha kevés ideje van, mindössze néhány perc alatt átlapozhatja az útmutatót, hogy átfogó képet kapjon arról, hogyan működik a Power BI Desktop, és hogyan használható. Az útmutató legnagyobb része a Power BI Desktop működését bemutató képernyőképekből áll.
-
-Ha alaposabban el szeretne mélyedni a témában, elolvashat minden szakaszt, végrehajthatja a lépéseket, és elkészítheti saját Power BI Desktop-fájlját, amelyet közzétehet a **Power BI** szolgáltatásban, és megoszthatja másokkal.
-
->[!NOTE]
->A [**Power BI jelentéskészítő kiszolgáló**](report-server/get-started.md) a **Power BI** egy speciális, különálló verziója, amely azok számára hasznos, akik a helyszínen szeretnék kezelni adataikat és jelentéseiket. Ezzel a speciális verzióval együtt használható a **Power BI Desktop** egy ugyancsak speciális és különálló verziója, a **Power BI Desktop a Power BI jelentéskészítő kiszolgálóhoz**, amely kizárólag a Power BI jelentéskészítő kiszolgálóval együtt használható. Ebben a cikkben a **Power BI Desktop** standard verzióját ismertetjük.
-
+Megtekintheti a [Power BI Desktop – Az első lépések](https://www.youtube.com/watch?v=Qgam9M8I0xA) című videót, és letöltheti a [Pénzügyi minta](https://go.microsoft.com/fwlink/?LinkID=521962) Excel-munkafüzetet a videóban bemutatott lépések követéséhez.
 
 ## <a name="how-power-bi-desktop-works"></a>A Power BI Desktop működése
-A Power BI Desktop segítségével *adatokhoz csatlakozhat* (általában több adatforráshoz), *formázhatja az adatokat* (részletes, lenyűgöző adatmodelleket összeállító lekérdezésekkel), és a modellek segítségével *jelentéseket készíthet* (amelyeket mások felhasználhatnak, továbbfejleszthetnek és megoszthatnak).
+A Power BI Desktop használatával lehetséges:
+1. Kapcsolódás adatokhoz, akár több adatforráshoz is.
+1. Az adatok átalakítása tényfeltáró, szemléletes adatmodelleket előállító lekérdezésekkel.
+1. Vizualizációk és jelentések létrehozása az adatmodellekkel. 
+1. Jelentésfájlok megosztása másokkal, akik felhasználhatják azokat, építhetnek rájuk és meg is oszthatják őket. A *.pbix* Power BI Desktop-fájlokat megoszthatja ugyanúgy, mint bármilyen más fájlt, de a leghatékonyabb módszer, ha feltölti ezeket a [Power BI szolgáltatásba](https://preview.powerbi.com/). 
 
-Ha az igényei szerint elvégezte a lépéseket (a csatlakozást, a formázást és jelentések készítését), a munkáját mentheti Power BI Desktop-fájlformátumban, azaz .pbix fájlkiterjesztéssel. A Power BI Desktop-fájlok más fájlokhoz hasonló módon is megoszthatóak, azonban a leglátványosabban a [**Power BI szolgáltatásba**](https://preview.powerbi.com/) való feltöltéssel oszthatóak meg. 
+A Power BI Desktop integrálva van Microsoft a jól bevált lekérdezésmotorjával, valamint adatmodellezési és vizualizációs technológiáival. Az adatelemzők és mások is létrehozhatnak lekérdezésekből, adatkapcsolatokból, modellekből és jelentésekből álló gyűjteményeket, amelyeket egyszerűen megoszthatnak másokkal. A Power BI Desktop és a Power BI szolgáltatás együttesével egyszerűbben modellezhetők, készíthetők, megoszthatók és kiterjeszthetők az adatuniverzumból nyert elemzési eredmények.
 
 A Power BI Desktop egyetlen helyre vonja össze, leegyszerűsíti és megkönnyíti az üzletiintelligencia-tárak és -jelentések tervezésének és létrehozásának széttagolt, elkülönülő és fáradságos folyamatát.
-
-Készen áll rá, hogy kipróbálja? Kezdjünk hozzá.
-
-
-
-## <a name="install-and-run-power-bi-desktop"></a>A Power BI Desktop telepítése és futtatása
-A Power BI Desktop letölthető a **Power BI** szolgáltatásból. Ehhez válassza a **fogaskerék** ikont, majd a **Power BI Desktop** lehetőséget.
-
-![](media/desktop-getting-started/gsg_download.png)
-
-A Power BI Desktop alkalmazásként lesz telepítve, amely a számítógépe asztalán fut.
-
-![](media/desktop-getting-started/designer_gsg_install.png)
-
-A Power BI Desktop futtatásakor megjelenik egy *Üdvözlőképernyő*.
-
-![](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
-
-Az *Üdvözlőképernyőn* lehetősége van **Adatok lekérésére**, megtekintheti a **Legutóbbi forrásokat** vagy **megnyithat más** **jelentéseket** (a bal oldali panelen található hivatkozások segítségével). Ha bezárja ezt a képernyőt (a jobb felső sarokban található **x** gombra kattintva), megjelenik a Power BI Desktop **Jelentés** nézete.
-
-![](media/desktop-getting-started/designer_gsg_blankreport.png)
-
-A Power BI Desktopnak három nézete van: **Jelentés** nézet, **Adat** nézet és **Kapcsolatok** nézet. A Power BI Desktop része a **Lekérdezésszerkesztő** is, amely külön ablakban nyílik meg. A **Lekérdezésszerkesztőben** lekérdezéseket állíthat össze és adatokat alakíthat át, majd betöltheti a finomított adatmodellt a Power BI Desktopba, és jelentéseket hozhat létre.
-
-Az alábbi képernyőn a három nézet ikonja látható a Power BI Desktop bal oldalán: **Jelentés**, **Adatok** és **Kapcsolatok**, felülről lefelé. Az épp megjelenített nézetet sárga sáv jelöli a bal oldalon. Ebben az esetben a **Jelentés** nézet látható. A nézetek között az ikonok kiválasztásával válthat.
-
-![](media/desktop-getting-started/designer_gsg_viewtypes.png)
-
-Ha telepítette a Power BI Desktopot, máris csatlakozhat adatokhoz, formázhatja az adatokat, és jelentéseket készíthet (általában ebben a sorrendben). A következő néhány szakaszban mindhárom lépést bemutatjuk.
-
-## <a name="connect-to-data"></a>Csatlakozás adatokhoz
-Ha telepítve van a Power BI Desktop, máris csatlakozhat az adatok egyre bővülő forrásaihoz. A Lekérdezésszerkesztőben *számos különféle* adatforrás elérhető. Az alábbi kép bemutatja, hogyan csatlakozhat adatokhoz a **Kezdőlap** menüszalag **Lekérdezés \> Továbbiak** menüpontjában.
-
- ![](media/desktop-getting-started/getdatavidsmall.gif)
-
-Ebben a rövid bemutatóban több különböző **webes** adatforráshoz csatlakozunk.
-
-Vegyük például azt az esetet, hogy Ön nyugdíjba megy, és olyan helyen szeretne élni, ahol sokat süt a nap, alacsonyak az adók és jó az egészségügyi ellátás. Vagy adatelemzőként van szüksége ezekre az információkra, hogy segítsen az ügyfeleinek. Például előfordulhat, hogy egy napszemüvegeket forgalmazó kiskereskedőnek segít azokat az értékesítési területeket megcélozni, ahol a legtöbbet süt a nap.
-
-A következő webes forrásanyag mindkét esetben releváns adatokat biztosít:
-
-[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
-
-Válassza ki a **Lekérdezés \> Web** lehetőséget, és illessze be ezt a címet.
-
- ![](media/desktop-getting-started/gettingstarted_8.png)
-
-Amikor az **OK** gombra kattint, munkához lát a Power BI Desktop **Lekérdezés** funkciója. A lekérdezés csatlakozik a webes erőforráshoz, és a **Kezelő** ablak visszaadja a webhelyen talált elemeket. Ebben az esetben egy táblázatot (*Table 0*) és a teljes webes dokumentumot. Minket a tábla érdekel, ezért azt választjuk ki a listáról. A **Kezelő** ablak megjelenít egy előnézetet.
-
- ![](media/desktop-getting-started/datasources_fromnavigatordialog.png)
-
-Ezen a ponton szerkesztheti a lekérdezést, mielőtt betöltené a táblázatot. Ehhez válassza az ablak alján látható **Szerkesztés** gombot. Ha nem szeretné szerkeszteni, csak töltse be a táblázatot.
-
-Miután kiválasztjuk a **Szerkesztés** elemet, elindul a Lekérdezésszerkesztő, és megjelenik a táblázat jellemző nézete. Megjelenik a **Lekérdezés beállításai** panel (ha nem, válassza a **Nézet** lehetőséget a menüszalagról, majd a **Megjelenítés \> Lekérdezés beállításai** lehetőséget a **Lekérdezés beállításai** panel megjelenítéshez). Ez a következőképpen néz ki.
-
- ![](media/desktop-getting-started/designer_gsg_editquery.png)
-
-További információ az adatokhoz való csatlakozásról: [Csatlakozás adatokhoz a Power BI Desktopban](desktop-connect-to-data.md).
+Készen áll rá, hogy kipróbálja? Tegyük meg az első lépéseket!
 
 > [!NOTE]
-> Az ebben a cikkben említett táblaadatok idővel változhatnak. Ennek megfelelően a követendő lépések eltérhetnek az alábbiakban bemutatottakról, így a lépések és eredmények saját helyzetre való alkalmazása némi kreativitást kíván – de ezt tekintse úgy, mint a tanulás izgalmának egyik részét. 
+> Olyan adatokhoz és jelentésekhez, amelyeknek helyszínieknek kell maradniuk, a [Power BI jelentéskészítő kiszolgáló](report-server/get-started.md), a Power BI egy speciális, különálló verziója áll rendelkezésre. A Power BI jelentéskészítő kiszolgáló a Power BI Desktop egy ugyancsak speciális és különálló verzióját használja. Ez a Power BI Desktop a Power BI jelentéskészítő kiszolgálóhoz, amely kizárólag a Power BI jelentéskészítő kiszolgálóval együtt használható. Ez a cikk a Power BI Desktop standard verzióját ismerteti.
 
-A következő szakaszban az igényeink szerint módosítjuk az adatokat. A csatlakoztatott adatok módosításának folyamata az adatok *formázása*.
+## <a name="install-and-run-power-bi-desktop"></a>A Power BI Desktop telepítése és futtatása
+A Power BI Desktop letöltéséhez nyissa meg a [Power BI Desktop letöltési oldalát](https://powerbi.microsoft.com/desktop) és válassza az **Ingyenes letöltés** lehetőséget. Más letöltési lehetőségeket a [Letöltési és nyelvi beállítások](https://www.microsoft.com/download/details.aspx?id=58494) lehetőség választásával érhet el. 
 
-## <a name="shape-and-combine-data"></a>Adatok formázása és egyesítése
-Most, hogy csatlakoztunk egy adatforráshoz, az adatokat módosíthatjuk az igényeinknek megfelelően. A módosítás esetenként az adatok *átalakítását* jelenti, például oszlopok vagy táblázatok átnevezését, szöveg számokká alakítását, sorok eltávolítását, az első sorok fejléccé alakítását stb.
+A Power BI Desktopot a Power BI szolgáltatásból is letöltheti. Válassza a felső menüsor **Letöltés** ikonját, majd a **Power BI Desktop** elemet.
 
-A Power BI Desktop Lekérdezésszerkesztőjében a feladatok nemcsak a menüszalagon érhetők el, hanem a helyi menükben is. Az **Átalakítás** menüszalag elemeinek nagy része egy adott elemre (például oszlopra) a jobb gombbal kattintva megjelenő menüből is elérhető.
+![A Power BI Desktop letöltése a Power BI szolgáltatásból](media/desktop-getting-started/gsg_download.png)
+
+A Microsoft Store oldalon válassza a **Letöltés** lehetőséget, és az utasításokat követve telepítse a Power BI Desktopot a számítógépére. Indítsa el a Power BI Desktopot a Windows **Start** menüjéből, vagy a Windows tálcán lévő ikonnal.
+
+A Power BI Desktop első indulásakor megjelenik az **Üdvözlőképernyő**.
+
+Az **Üdvözlőképernyőn** **betölthet adatokat**, megtekintheti a **Legutóbbi forrásokat**, megnyithatja a legutóbbi jelentéseket, **Más jelentéseket nyithat meg**, vagy választhat egyéb hivatkozásokat. Azt is kiválaszthatja, hogy indításkor mindig megjelenjen-e az **Üdvözlőképernyő**. Válassza a bezárás ikont az **Üdvözlőképernyő** bezárásához.
+
+![A Power BI Desktop üdvözlő képernyője](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
+
+A Power BI Desktop bal oldalán találhatók a három Power BI Desktop-nézet ikonjai: **Jelentés**, **Adatok** és **Kapcsolatok**, felülről lefelé. Az aktuális nézetet sárga sáv jelöli a bal oldalon, és a nézet az ikonok bármelyikének kiválasztásával megváltoztatható. 
+
+![A három Power BI Desktop-nézet ikon](media/desktop-getting-started/designer_gsg_viewtypes.png)
+
+Az alapértelmezett nézet a **Jelentés**. 
+
+![A Power BI Desktop Jelentés nézete](media/desktop-getting-started/designer_gsg_blankreport.png)
+
+A Power BI Desktop része a **Power Query-szerkesztő** is, amely külön ablakban nyílik meg. A **Power Query-szerkesztőben** lekérdezéseket állíthat össze és adatokat alakíthat át, majd betöltheti a finomított adatmodellt a Power BI Desktopba jelentések létrehozásához.
+
+## <a name="connect-to-data"></a>Csatlakozás adatokhoz
+Ha telepítve van a Power BI Desktop, máris csatlakozhat az adatok egyre bővülő forrásaihoz. Ha látni szeretné a sokféle elérhető adatforrást, válassza az **Adatok betöltése** > **Továbbiak** lehetőséget a Power BI Desktop **Kezdőlapján**, majd az **Adatok betöltése** ablakban görgesse végig az **Összes** adatforrás listáját. Ebben a rövid bemutatóban több különböző **webes** adatforráshoz csatlakozhat.
+
+![Webes adatforrás kiválasztása az Adatok betöltése ablakban ](media/desktop-getting-started/getdataweb.png)
+
+Tegyük fel, hogy adatelemzőként dolgozik egy napszemüvegekkel kereskedő vállalatnál. Előfordulhat, hogy olyan értékesítési helyek kiválasztásában szeretne segíteni ügyfelének, ahol a leggyakrabban süt a nap. A Bankrate.com [A nyugdíjba vonuláshoz legjobb és legrosszabb államok](https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/) oldala érdekes adatokat kínál ebben a témában.
+
+A Power BI Desktop **Kezdőlapján** válassza az **Adatok betöltése** > **Web** lehetőséget egy webes adatforráshoz való csatlakozáshoz. 
+
+![Webes adatforrás kiválasztása](media/desktop-getting-started/gsg_syw_2.png)
+
+A **Webhelyről** párbeszédpanelen illessze be a *https:\//www.bankrate.com/retirement/best-and-worst-states-for-retirement/* címet az **URL-cím** mezőbe, majd válassza az **OK** gombot. 
+
+![Webcím beillesztése a Webhelyről párbeszédpanelen](media/desktop-getting-started/gettingstarted_8.png)
+
+Ha a rendszer kéri, válassza a **Csatlakozás** lehetőséget a **Webes tartalom elérése** képernyőn, hogy névtelen hozzáférést használhasson. 
+
+A Power BI Desktop lekérdezési funkciója működésbe lép, és kapcsolódik a webes forráshoz. A **Kezelő** ablakban adja vissza azt, amit a weblapon talált, ebben az esetben egy **Ranking of best and worst states for retirement** (A nyugdíjba vonuláshoz legjobb és legrosszabb államok rangsorolása) nevű táblázatot és egy dokumentumot. Önt a táblázat érdekli, tehát válassza ki azt az előnézete megjelenítéséhez.
+
+Ekkor választhatja a **Betöltés** lehetőséget a táblázat betöltéséhez, vagy az **Adatok átalakítása** lehetőséget, hogy módosításokat végezzen a táblázatban annak betöltése előtt.
+
+![Weblapról származó táblázat előnézete](media/desktop-getting-started/datasources_fromnavigatordialog.png)
+
+Ha az **Adatok átalakítása** lehetőséget választja, elindul a Power Query-szerkesztő a tábla jellemző nézetével. A **Lekérdezés beállításai** panel a jobb oldalon található, de mindig megjelenítheti, ha a Power Query-szerkesztő **Nézet** lapján a **Lekérdezés beállításai** lehetőséget választja. 
+
+![A Power Query-szerkesztő a lekérdezési beállításokkal](media/desktop-getting-started/designer_gsg_editquery.png)
+
+További információ az adatokhoz való csatlakozásról: [Csatlakozás adatokhoz a Power BI Desktopban](desktop-connect-to-data.md).
 
 ## <a name="shape-data"></a>Adatok formázása
-Amikor a **Lekérdezésszerkesztőben** formázza az adatokat, részletes utasításokat ad meg a **Lekérdezésszerkesztő** számára, hogy az milyen módosításokat végezzen az adatok betöltésekor és megjelenítésekor. Az eredeti adatforrást nem érintik a változtatások, csak az adatok adott nézete lesz módosítva vagy *formázva*.
+Az adatforráshoz való csatlakozás után már az igényeihez igazíthatja az adatokat. Az adatok *formálásához* lépésenkénti utasításokat adhat meg a Power Query-szerkesztőnek az adatok betöltés és bemutatás közbeni igazításához. A formálás nem érinti az eredeti adatforrást, csak az adatoknak ezt az aktuális nézetét. 
 
-A megadott lépéseket (például tábla átnevezése, adattípus átalakítása vagy oszlopok törlése) a **Lekérdezésszerkesztő** rögzíti, és minden alkalommal végrehajtja, amikor a lekérdezés csatlakozik az adatforráshoz, hogy az adatok mindig a meghatározott formázással jelenjenek meg. Ez a folyamat minden alkalommal végbemegy, amikor a Power BI Desktop lekérdezési funkcióját használja, valamint akkor is, ha egy másik felhasználó elindít egy megosztott lekérdezést, például a **Power BI** szolgáltatásban. A lépések a megadott sorrendben rögzítve lesznek a **Lekérdezés beállításai** panel **Alkalmazott lépések** területén.
+> [!NOTE]
+> Az ehhez az útmutatóhoz használt táblázat idővel változhat. Ennek megfelelően a követendő lépések is változhatnak, így a lépések és eredmények saját helyzetre való alkalmazása némi kreativitást kíván – de ezt tekintse úgy, mint a tanulás izgalmának egyik részét. 
 
-Az alábbi képen egy formázott lekérdezés **Lekérdezés beállításai** panelje látható – az egyes lépések részletes leírását a következő bekezdésekben találhatja meg.
+A formálás jelentheti az adatok *átalakítását*, például oszlopok vagy táblák átnevezését, sorok vagy oszlopok eltávolítását vagy adattípusok módosítását is. A Power Query-szerkesztő sorrendben rögzíti ezeket a lépéseket a **Lekérdezés beállításai** panel **Alkalmazott lépések** területén. Ezek a lépések lesznek végrehajtva minden alkalommal, amikor a lekérdezés csatlakozik az adatforráshoz, így az adatok mindig a megadott módon lesznek formálva. Ez a folyamat akkor megy végbe, amikor a Power BI Desktop lekérdezési funkcióját használja, vagy ha egy másik felhasználó elindít egy megosztott lekérdezést, például a Power BI szolgáltatásban. 
 
- ![](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+Figyelje meg, hogy a **Lekérdezés beállításai** panel **Alkalmazott lépések** területe már tartalmaz néhány lépést. Az egyes lépéseket kijelölve megtekintheti azok hatását a Power Query-szerkesztőben. Először megadott egy webes forrást, majd megtekintette a táblázat előnézetét a **Kezelő** ablakban. A harmadik **Típus megváltoztatva** nevű lépésben a Power BI felismerte az egész számokból álló adatokat az importálás során, és automatikusan **Egész számra** változtatta az eredeti webes **Szöveg** *adattípust*. 
 
-Térjünk vissza a nyugdíjazással kapcsolatos adatainkhoz, amelyeket egy webes adatforráshoz kapcsolódva szereztünk, és formázzuk az igényeink szerint ezeket az adatokat.
+![A Lekérdezés beállításai panel három alkalmazott lépéssel](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
 
-Először is a legtöbb minősítés egész számként került be a **Lekérdezésszerkesztőbe**, de nem az összes (az egyik oszlop szöveget és számot is tartalmazott, ezért azt nem konvertálta automatikusan a rendszer). Nekünk számformátumban van szükségünk az adatokra. Ez nem jelent problémát. Csak kattintson a jobb gombbal az oszlop fejlécére, és válassza a **Típus módosítása \> Egész szám** lehetőséget az adattípus módosításához. Ha több oszlopot szeretne kijelölni, először jelöljön ki egy oszlopot, majd a **SHIFT** billentyűt lenyomva tartva jelölje ki a szomszédos oszlopokat, és kattintson a jobb gombbal az összes kijelölt oszlop módosításához. Nem szomszédos oszlopokat a **CTRL** billentyűvel jelölhet ki.
+Ha meg kell változtatnia az adattípust, jelölje ki a módosítandó oszlopot vagy oszlopokat. Több szomszédos oszlop kijelöléséhez tartsa lenyomva **Shift** billentyűt, nem szomszédos oszlopok kijelöléséhez pedig a **Ctrl** billentyűt. Kattintson a jobb gombbal az oszlop fejlécére, válassza az **Adattípus módosítása** lehetőséget, majd válasszon új adattípust a menüből, vagy gördítse le a **Kezdőlap** **Átalakítás** csoportja melletti **Adattípus** listát.
 
- ![](media/desktop-getting-started/designer_gsg_changedatatype.png)
+![Adattípus módosítása](media/desktop-getting-started/designer_gsg_changedatatype.png)
 
-Az oszlopokat módosíthatja is, vagy *átalakíthatja* szövegből fejléccé az **Átalakítás** menüszalagon. A képen az **Átalakítás** menüszalag látható. A nyíl az **Adattípus** gombra mutat, amellyel az adott adattípust egy másikká alakíthatja.
+> [!NOTE]
+> A Power BI Desktopban a Power Query-szerkesztővel elérhető tevékenységekhez a menüszalag vagy a helyi menü használható. A menüszalag **Kezdőlap** vagy **Átalakítás** lapján elérhető feladatok többsége úgy is elvégezhető, hogy a jobb gombbal egy elemre kattint, és az így megjelenő menüből választ.
 
- ![](media/desktop-getting-started/shapecombine-changetype-b.png)
+Mostantól saját módosításokat és átalakításokat végezhet az adatokon, és ezek az elemek megjelennek az **Alkalmazott lépések** között. 
 
-Vegye figyelembe, hogy a **Lekérdezés beállításai** **Alkalmazott lépések** területén megjelennek a végrehajtott módosítások. Ha el szeretne távolítani egy lépést a formázási folyamatból, egyszerűen válassza ki a lépést, majd kattintson az adott lépés bal oldalán található **X** jelre.
+A napszemüvegek értékesítése szempontjából például az időjárási rangsor a leglényegesebb, ezért úgy dönt, hogy a táblázatot az **Overall rank** (Összesített rangsor) helyett a **Weather** (Időjárás) oszlop szerint rendezi. Gördítse le a nyilat a **Weather** fejléc mellett, és válassza a **Rendezés növekvő sorrendbe** lehetőséget. Az adatok most már az időjárási értékelés szerint rendezve jelennek meg, a **Sorok rendezve** lépés pedig megjelenik az **Alkalmazott lépések** között. 
 
- ![](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
+![Sorok növekvő rendezése](media/desktop-getting-started/shapecombine-changetype-b.png)
 
-Végre kell hajtanunk még néhány változtatást, hogy a lekérdezés megfeleljen az igényeinknek:
+A legrosszabb időjárású államokban nem nagyon szeretne napszemüveget árulni, ezért úgy dönt, hogy eltávolítja ezeket a táblázatból. A **Kezdőlap** **Sorok számának csökkentése** csoportjából válassza a **Sorok eltávolítása** > **Utolsó sorok eltávolítása** lehetőséget. Az **Utolsó sorok eltávolítása** párbeszédpanelen írja be a *10* értéket, majd válassza az **OK** lehetőséget. 
 
-* *Az első oszlop eltávolítása*: nincs rá szükségünk, mivel csak redundáns sorokból áll, amelyekben a „Check out how your state ranks for retirement” szöveg olvasható. Ennek az az oka, hogy ez egy webes táblázat.
+![Utolsó sorok eltávolítása](media/desktop-getting-started/pbi_gsg_getdata3.png)
 
-<!-- -->
+A legrosszabb időjárással jellemzett utolsó 10 sor el lett távolítva a táblázatból, az **Utolsó sorok eltávolítása** lépés pedig megjelenik az **Alkalmazott lépések** között.
 
-* *Néhány hiba kijavítása*: a webhelyen az egyik oszlopban vegyesen szöveg és számok is szerepeltek (egyes államok eredményei az adott kategóriában azonosak). Ez egy webhelyen használható, de adatelemzés céljára nem. A kijavítása (ebben az esetben) egyszerű, és ennek során megismerkedhetünk a **Lekérdezésszerkesztő** és az **Alkalmazott lépések** terület hasznos funkcióival és képességeivel.
+Úgy dönt, hogy a táblázat túl sok, az Ön számára szükségtelen információt tartalmaz, és hogy eltávolítja a **Affordability** (Megélhetés), **Crime** (Bűnözés), **Culture** (Kultúra) és **Wellness** oszlopokat. Jelölje ki az eltávolítani kívánt oszlopok fejlécét. Több szomszédos oszlop kijelöléséhez tartsa lenyomva **Shift** billentyűt, nem szomszédos oszlopok kijelöléséhez pedig a **Ctrl** billentyűt. 
 
-<!-- -->
+Ez után válassza az **Oszlopok eltávolítása** lehetőséget a **Kezdőlap** **Oszlopok kezelése** csoportjából. Azt is megteheti, hogy jobb gombbal az kijelölt oszlopfejlécekre kattint, és a menüből választja ki az **Oszlopok eltávolítása** lehetőséget. A kijelölt oszlopok el lesznek távolítva, és az **Oszlopok eltávolítva** lépés megjelenik az **Alkalmazott lépések** között.
 
-* *Táblázatnév megváltoztatása*: a **Table 0** nem túl hasznos leíró név, de könnyű megváltoztatni.
+![Oszlopok eltávolítása](media/desktop-getting-started/pbi_gsg_getdata3a.png)
 
-Az összes lépést megtekintheti az **[Adatok formázása és összevonása a Power BI Desktopban](desktop-shape-and-combine-data.md)** című cikkben. Tekintse meg, vagy haladjon tovább ebben a dokumentumban, hogy megtudja, mi a következő lépés. Az alábbi szakasz lépései a fenti módosítások alkalmazása után következnek.
+Jobban átgondolva rájön, hogy a **Megélhetés** mégis lényeges lehet a napszemüveg-értékesítés szempontjából. Szeretné visszakapni ezt az oszlopot. Az utolsó lépést egyszerűen visszavonhatja az **Alkalmazott lépések** panelen a lépés melletti **X** törlő ikont választva. Most ismételje meg ezt a lépést úgy, hogy csak a törlendő oszlopokat jelöli ki. Rugalmasabb megoldásként külön lépésekben is törölheti az oszlopokat. 
+
+Az **Alkalmazott lépések** panelen bármelyik lépésre rákattinthat a jobb gombbal, így törölheti, átnevezheti, feljebb vagy lejjebb mozgathatja a sorban, és lépéseket vehet fel vagy törölhet utána. Köztes lépések esetén a Power BI Desktop figyelmezteti, hogy a módosítás a későbbi lépéseket is befolyásolhatja, és hibát okozhat a lekérdezésben.  
+
+![Alkalmazott lépések módosítása](media/desktop-getting-started/designer_gsg_install.png)
+
+Ha például nem szeretné a **Weather** (Időjárás) érték szerint rendezni a táblázatot, megpróbálhatja törölni a **Sorok rendezve** lépést. A Power BI Desktop figyelmezteti, hogy a lépés törlése miatt a lekérdezés hibás lehet. Az utolsó 10 sort az időjárás szerinti rendezés után távolította el, tehát a rendezés kiiktatása után más sorok lesznek eltávolítva. Akkor is figyelmeztetést kap, ha kijelöli a **Sorok rendezve** lépést, és új köztes lépést kísérel meg felvenni ezen a ponton.  
+
+![Lépés törlésére vonatkozó figyelmeztetés](media/desktop-getting-started/deletestepwarning.png)
+
+Végül a táblázat címét szeretné módosítani, hogy az időjárás helyett a napszemüveg-kereskedelemre utaljon. A **Lekérdezés beállításai** panel **Tulajdonságok** területén írja át a régi címet a *Napszemüvegek árusítására legalkalmasabb államok* szövegre.
+
+Az átformált adatokra vonatkozó kész lekérdezés az alábbihoz lesz hasonló:
+
+![Kész lekérdezés](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+
+Az adatok átalakításáról az [Adatok átalakítása és egyesítése a Power BI Desktopban](desktop-shape-and-combine-data.md) című cikk nyújt további információkat.
 
 ## <a name="combine-data"></a>Adatok összevonása
-Érdekes adataink vannak az egyes államokról, amelyeknek még hasznát fogjuk venni újabb elemzések és lekérdezések készítésekor. Ám van egy probléma: a legtöbb helyen az államok a kétbetűs rövidítésükkel szerepelnek, nem a teljes nevükkel. Valahogyan össze kell párosítanunk tehát a neveket a rövidítésekkel.
+Érdekes adataink vannak az egyes államokról, amelyeknek még hasznát fogjuk venni újabb elemzések és lekérdezések készítésekor. Ám van egy probléma: a legtöbb helyen az államok nem a teljes nevükkel, hanem kétbetűs rövidítésükkel szerepelnek. Az adatok használatához valahogyan le kell képeznie a rövidítéseket az államok nevére.
 
-Szerencsére létezik egy másik nyilvános adatforrás, amely pontosan erre használható. Azonban jelentős formázást kell rajta végrehajtanunk, hogy csatlakoztathassuk a nyugdíjba vonulással kapcsolatos adatokat tartalmazó táblázatunkhoz. Az államok rövidítéseit tartalmazó webes erőforrás a következő címen található:
+Szerencséje van. Egy másik nyilvános adatforrás éppen erre szolgál, de az adatokat alaposan át kell alakítania ahhoz, hogy a napszemüveg-kereskedelmi táblázattal *együtt* használhassa.
 
-<https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+Az államnevek rövidítéseinek adatait úgy töltheti be a Power Query-szerkesztőbe, hogy az **Új forrás** > **Web** lehetőséget választja a menüszalag **Kezdőlap** lapján az **Új lekérdezés** csoportban. 
 
-A **Lekérdezésszerkesztő** **Kezdőlap** menüszalagján válasszuk a **Lekérdezés \> Web** lehetőséget, írjuk be a webcímet, és kattintsunk az **OK** gombra. A **Kezelő** ablakában ekkor megjelenik a webhelyen talált tartalom.
+![Új forrás](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
- ![](media/desktop-getting-started/designer_gsg_usstateabbreviationsnavigator.png)
+A **Webhelyről** párbeszédpanelen írja be az államnevek rövidítéseit tartalmazó webhely URL-címét: *https:\//en.wikipedia.org/wiki/List_of_U.S._state_abbreviations*.
 
-Válasszuk a **Table[edit]** elemet, mert az tartalmazza a kívánt adatokat. Azonban jelentős formázásra lesz szükség ahhoz, hogy a táblázat tartalma a kívánt adatokra korlátozódjon. Az összes lépést megtekintheti az **[Adatok formázása és összevonása a Power BI Desktopban](desktop-shape-and-combine-data.md)** című cikkben is. A lépések röviden a következőek:
+A **Kezelő** ablakban jelölje ki a **Codes and abbreviations for U.S. states, federal district, territories, and other regions** (Az USA államainak, szövetségi körzeteinek, területeinek és más régióinak kódjai és rövidítései) táblázatot, majd válassza az **OK** gombot. A táblázat megnyílik a Power Query-szerkesztőben.
 
-Válasszuk ki a **Szerkesztés** elemet, majd:
+Távolítsa el az összes oszlopot a **Name and status of region** (Régió neve és állapota), **Name and status of region2** (Régió neve és állapota 2), and **ANSI** kivételével. Az oszlopok megtartásához tartsa lenyomva a **Ctrl** billentyűt és jelölje ki az oszlopokat. Ez után vagy kattintson az oszlopfejlécekre, és válassza a **Többi oszlop eltávolítása** lehetőséget, vagy válassza a **Többi oszlop eltávolítása** lehetőséget a **Kezdőlap** **Oszlopok kezelése** csoportjában. 
 
-* *Távolítsuk el az első két sort.* Ezek a webhelyen létrehozott táblázat maradványai, és nincs szükségünk rájuk.
+Gördítse le a **Name and status of region2** oszlopfejléc melletti nyilat, majd válassza a **Szűrők** > **Egyenlő** lehetőséget. A **Sorok szűrése** párbeszédpanelen gördítse le az **Egyenlő** melletti **Érték megadása vagy kiválasztása** mezőt, majd válassza a **State** (Állam) elemet. 
 
-<!-- -->
+Válassza a **Vagy** relációt, majd az **Egyenlő** második mezője után válassza a **State ("Commonwealth")** (Állam (Nemzetközösségi)) elemet. Válassza az **OK** lehetőséget. 
 
-* *Távolítsuk el az alsó 26 sort.* Ezek olyan területeket tartalmaznak, amelyekre nincs szükségünk.
+![Sorok szűrése](media/desktop-getting-started/filterrows.png)
 
-<!-- -->
-* *Szűrjük ki Washington államot.* A nyugdíjazással kapcsolatos statisztákat tartalmazó táblázatban nem szerepel Washington állam, ezért nem vesszük fel a listánkba.
+Az olyan további értékek eltávolításával, mint a **Federal district** és az **island** egy 50 állam nevéből és azok hivatalos kétbetűs rövidítéseiből álló listát kap. Az oszlopokat át is nevezheti beszédesebb nevekre, mint például: **Állam neve**, **Állapot** és **Rövidítés**, ha a jobb gombbal az oszlop fejlécére kattint, és az **Átnevezés** lehetőséget választja.
 
-<!-- -->
+Figyelje meg, hogy a **Lekérdezés beállításai** panel **Alkalmazott lépések** területén minden lépés rögzítve van.
 
-* *Távolítsunk el néhány felesleges oszlopot.* Most csak az államneveknek a hivatalos kétbetűs rövidítésükre való leképezésére van szükségünk, így a többi oszlopot törölhetjük.
+Az átalakított táblázat ekkor az alábbihoz hasonló:
 
-<!-- -->
+![Államkódok átalakított táblázata](media/desktop-getting-started/statecodes.png)
 
-* *Alakítsuk az első sort fejléccé.* Mivel eltávolítottuk az első három sort, a jelenlegi legfelső sort szeretnék fejlécként használni.
+Változtassa meg a táblázat címét az *Államkódok* értékre a **Lekérdezés beállításai** **Tulajdonságok** mezőjében. 
 
-    >[!NOTE]
-    >Itt érdemes megemlíteni, hogy a **Lekérdezésszerkesztőben** az alkalmazott lépések *sorrendje* fontos, mert meghatározhatja, hogyan lesznek formázva az adatok. Érdemes azt is megfontolni, hogy egy adott lépés hogyan befolyásolhatja a soron következő lépéseket. Ha az **Alkalmazott lépések** közül eltávolít egy lépést, lehetséges, hogy a lekérdezés lépéseinek sorrendjéből adódóan a következő lépések nem úgy fognak működni, ahogyan eredetileg tervezte.
+Az **Államkódok** tábla megformálása után egyetlen táblázatban *egyesítheti* a kettőt. Mivel a jelenlegi táblázatok az adatokra alkalmazott lekérdezések eredményei, ezeket is *lekérdezéseknek* nevezzük. A lekérdezések összevonásának két fő módja az *egyesítés* és az *összefűzés*. 
 
-* *Nevezzük át az oszlopokat és magát a táblázatot.* Az oszlopok többféleképpen is átnevezhetők, eldöntheti, melyik módszert kívánja használni.
+Ha egy vagy több oszlopot szeretne hozzáadni egy másik lekérdezéshez, akkor *egyesíti* a lekérdezéseket. Ha további adatsorokat szeretne hozzáadni egy meglévő lekérdezéshez, *összefűzi* a lekérdezéseket.
 
-Most, hogy formáztuk *StateCodes* táblázatot, vonjuk össze a két táblázatot vagy lekérdezést. Mivel a táblázataink az adatokon végzett lekérdezéseink eredményei, ezért ezeket gyakran *lekérdezéseknek* nevezzük.
+Ebben az esetben *egyesíteni* szeretné az **Államkódok** táblázatot a **Napszemüvegek árusítására legalkalmasabb államok** táblázatával. A lekérdezések egyesítéséhez váltson át a **Napszemüvegek árusítására legalkalmasabb államok** táblázatra úgy, hogy kiválasztja azt a Power Query-szerkesztő bal oldalán található **Lekérdezések** panelen. Ez után válassza a **Lekérdezések egyesítése** lehetőséget a menüszalag **Kezdőlapjának** **Összevonás** csoportjából.
 
-A lekérdezések összevonásának két fő módja van: *egyesítés* és *hozzáfűzés*.
+Az **Egyesítés** ablakban gördítse le a mezőt, hogy a rendelkezésre állók közül kiválaszthassa az **Államkódok** táblázatot. Mindkét táblázatban jelölje ki a megfeleltetéshez használandó mezőt. Ez ebben az esetben a **Napszemüvegek árusítására legalkalmasabb államok** táblázat **State** (Állam) oszlopa és az **Államkódok** táblázat **Állam neve** oszlopa. 
 
-Ha hozzá szeretne adni egy vagy több oszlopot egy másik lekérdezéshez, **egyesítse** a lekérdezéseket. Ha további sorokat szeretne hozzáadni egy meglévő lekérdezéshez, **fűzze őket hozzá** a lekérdezéshez.
+Ha megjelenik az **Adatvédelmi szintek** párbeszédpanel, válassza az **Adatvédelmi szintek figyelmen kívül hagyása ennél a fájlnál** beállítást, majd a **Mentés** lehetőséget. Válassza az **OK** lehetőséget. 
 
-Ebben az esetben egyesíteni szeretnénk a lekérdezéseket. Először is válasszuk ki az a lekérdezést, *amellyel* a másik lekérdezést egyesíteni szeretnénk, majd válasszuk a menüszalag **Kezdőlap** fülén a **Lekérdezések egyesítése** lehetőséget.
+![Lekérdezések egyesítése](media/desktop-getting-started/shapecombine_merge.png)
 
- ![](media/desktop-getting-started/shapecombine_mergequeries.png)
+A **Napszemüvegek árusítására legalkalmasabb államok** táblázat jobb szélén megjelenik egy új, **Államkódok** nevű oszlop. Ez az államok kódjait megadó lekérdezést tartalmazza, amelyet a Napszemüvegek árusítására legalkalmasabb államok lekérdezéssel egyesített. Az egyesített táblázat összes oszlopa az **Államkódok** oszlopba van tömörítve. *Kibonthatja* az egyesített táblázatot, hogy csak a kívánt oszlopokat foglalja bele. 
 
-Megjelenik az **Egyesítés** ablak, ahol kiválaszthatjuk, melyik táblázatot egyesítjük a már kiválasztott táblázattal, majd kijelölhetjük az egyesítéshez használni kívánt oszlopokat. A *RetirementStats* táblázatból (vagy lekérdezésből) válassza ki a *State* oszlopot, majd válassza ki a *StateCodes* lekérdezést. (Ebben az esetben egyszerű a választás, hiszen nincs is másik lekérdezés. Ha több adatforráshoz csatlakozik, több lekérdezés közül választhat.) Miután kiválasztottuk a megfelelő egyező oszlopokat (vagyis a *State* oszlopot a *RetirementStats* táblázatból és a *State Name* oszlopot a *StateCodes* táblázatból), az **Egyesítés** ablak az alábbi képen látható módon néz ki, és az **OK** gomb aktiválódik.
+![Egyesített lekérdezésoszlop](media/desktop-getting-started/mergedquery.png)
 
- ![](media/desktop-getting-started/shapecombine_merge.png)
+Az egyesített táblázat kibontásához és a kívánt oszlopok kiválasztásához kattintson a **Kibontás** ikonra az oszlop fejlécében. A **Kibontás** párbeszédpanelen válassza ki a **Rövidítés** oszlopot. Szüntesse meg az **Eredeti oszlopnév használata előtagként** beállítás bejelölését, majd válassza az **OK** gombot. 
 
-Létrejött egy **NewColumn** nevű oszlop a lekérdezés végén, amely a meglévő lekérdezéssel egyesített táblázat (lekérdezés) adatait tartalmazza. Az egyesített lekérdezés összes oszlopa a **NewColumn** oszlopba lesz sűrítve, de a **Kibontás** lehetőséggel kibonthatja a táblázatot, és tetszőleges oszlopokat adhat hozzá. Az egyesített táblázat kibontásához és a kívánt oszlopok kiválasztásához kattintson a kibontás ikonra (![](media/desktop-getting-started/gettingstarted_29_expandicon.png)). Ekkor megjelenik a **Kibontás** ablak.
+![Kibontott oszlop kiválasztása az egyesített táblázatból](media/desktop-getting-started/shapecombine_mergeexpand.png)
 
- ![](media/desktop-getting-started/shapecombine_mergeexpand.png)
-
-Ebben az esetben kizárólag a *State Code* oszlopra van szükségünk, ezért csak ezt választjuk ki, majd az **OK** gombra kattintunk. Töröljük az **Eredeti oszlopnév használata előtagként** melletti négyzet jelölését, mert nincs szükségünk rá. Ha bejelölve hagyjuk ezt a négyzetet, az egyesített oszlop neve *NewColumn.State Code* lesz (az eredeti oszlopnév, vagyis a *NewColumn*, amelyet egy pont követ, majd a lekérdezéshez adni kívánt oszlop neve).
-
->[!NOTE]
->Szeretné kipróbálni, milyen további módokon adhatja a *NewColumn* oszlopot a táblázathoz? Nyugodtan kísérletezhet, és ha nem a kívánt eredményt kapja, egyszerűen törölje az adott lépést a **Lekérdezés beállításai** panel **Alkalmazott lépések** listájából. Ekkor a lekérdezés visszatér a **Kibontás** lépés alkalmazása előtti állapotra. Tetszőleges számú alkalommal próbálkozhat, amíg a kibontási folyamattal a kívánt eredményt nem éri el.
-
-Most egyetlen lekérdezésünk (táblázatunk) van, amelyet két, igényeink szerint formázott adatforrás összevonásával hoztunk létre. Ez a lekérdezés alapul szolgálhat számos más érdekes adatkapcsolathoz, például az államokra lebontott lakhatási költségek statisztikái, demográfiai adatok vagy munkalehetőségek megjelenítéséhez.
+> [!NOTE]
+> Kísérletezhet az **Államkódok** táblázat bevonásával. Próbálkozzon nyugodtan, és ha nem elégedett az eredménnyel, egyszerűen törölje ezt a lépés az **Alkalmazott lépések** listájából a **Lekérdezés beállításai** panelen. Tetszőleges számú alkalommal próbálkozhat, amíg a kibontási folyamattal a kívánt eredményt nem éri el.
 
 Az adatok formázási és összevonási lépéseinek részletes leírása: [Adatok formázása és összevonása a Power BI Desktopban](desktop-shape-and-combine-data.md).
 
-Mostanra elegendő adattal rendelkezünk ahhoz, hogy néhány érdekes jelentést készítsünk a Power BI Desktopban. Mivel mérföldkőhöz érkeztünk, mentsük ezt a Power BI Desktop-fájlt. Legyen a neve **Első lépések a Power BI Desktopban**. A **Lekérdezésszerkesztőben** elvégzett módosítások alkalmazásához és Power BI Desktopba való betöltéséhez válassza a **Bezárás és alkalmazás** lehetőséget a **Kezdőlap** menüszalagon.
+Most egyetlen lekérdezési táblája van, amelyben két, igényei szerint formázott adatforrás van összevonva. Erre a lekérdezésre sok további érdekes adatkapcsolat épülhet, például az államok demográfiai, jóléti vagy kikapcsolódási lehetőségekkel kapcsolatos adataival.
 
-![](media/desktop-getting-started/shapecombine_closeandapply.png)
+![Formázott és egyesített lekérdezések](media/desktop-getting-started/mergedcolumn.png)
+
+Mostanra elegendő adattal rendelkezik ahhoz, hogy érdekes jelentést készítsen a Power BI Desktopban. Mivel ez fontos fordulópont, alkalmazza a **Power Query-szerkesztőben** végzett módosításokat, és töltse be azokat a Power BI Desktopba úgy, hogy a **Bezárás és alkalmazás** lehetőséget választja a menüszalag **Kezdőlapján**. Választhatja önmagában az **Alkalmazás** lehetőséget is, hogy a lekérdezés megnyitva maradjon a Power Query-szerkesztőben, amíg Ön a Power BI Desktoppal dolgozik. 
+
+![Bezárás és a módosítások alkalmazása](media/desktop-getting-started/shapecombine_closeandapply.png)
+
+A táblázaton további módosítások végezhetők, ha az már be van töltve a Power BI Desktopba, a modell ismételt betöltésével pedig alkalmazni tudja a végzett módosításokat. A **Power Query-szerkesztőt** úgy nyithatja meg újra a Power BI Desktopból, hogy a Power BI Desktop menüszalagjának **Kezdőlapján** a **Lekérdezések szerkesztése** lehetőséget választja. 
 
 ## <a name="build-reports"></a>Jelentések összeállítása
-A táblázaton a betöltése után további módosításokat is végezhet, és újra betöltheti a modellt az elvégzett módosítások alkalmazásához, de jelenleg ennyi elég is lesz. A Power BI Desktop **Jelentés** nézetében megkezdheti jelentések összeállítását.
+A Power BI Desktop **Jelentés** nézetében vizualizációkat és jelentéseket készíthet. A **Jelentés** nézet hat fő területből áll:
 
-A **Jelentés** nézet a következő öt fő területből áll:
+![A Power BI Desktop Jelentés nézete](media/desktop-getting-started/designer_gsg_reportview.png)
 
-1. A menüszalag, amely a jelentésekhez és vizualizációkhoz kapcsolódó általános feladatokat jeleníti meg.
-2. A **Jelentés** nézet, vagy más néven vászon. Itt lehet létrehozni és elrendezni a vizualizációkat.
-3. Az **Oldalak** lapterület alul, ahol kiválaszthat vagy hozzáadhat jelentésoldalakat.
-4. A **Megjelenítések** panel, ahol módosíthatja a vizualizációkat, testreszabhatja a színeket vagy a tengelyeket, szűrőket alkalmazhat, húzással elhelyezheti a mezőket stb.
-5. A **Mezők** panel, ahonnan a lekérdezéselemeket és a szűrőket a **Jelentés** nézetbe vagy a **Megjelenítések** panel **Szűrők** területére húzhatja.
-   
-   ![](media/desktop-getting-started/designer_gsg_reportview.png)
+1. A felső menüszalag, amely a jelentésekhez és vizualizációkhoz kapcsolódó általános feladatokat jeleníti meg.
+2. A középső vászon, ahol vizualizációkat hozhat létre és rendezhet el.
+3. Az oldalfülek alsó területe, ahol jelentésoldalakat választhat ki és hozhat létre.
+4. A **Szűrők** panel, ahol az adatvizualizációkat szűrheti.
+5. A **Vizualizációk** panel, ahol vizualizációkat vehet fel, módosíthat és szabhat testre, valamint részletezéseket alkalmazhat.
+6. A **Mezők** panel, amely a lekérdezésekben elérhető mezőket mutatja. Ezeket a mezőket a vászonra, a **Szűrők** panelre vagy a **Vizualizációk** panelre áthúzva vizualizációkat hozhat létre vagy módosíthat.
 
-A **Megjelenítések** és a **Mezők** panel összezárható a szélén található kis nyíl kiválasztásával, így több hely marad a **Jelentés** nézetben a vizualizációk összeállítására. A vizualizációk módosításakor ezek a nyilak felfelé vagy lefelé mutatnak, ami azt jelzi, hogy az adott szakasz kibontható vagy összezárható.
+A **Szűrők**, **Vizualizációk** és **Mezők** panelt a panel felső részén látható nyilak kiválasztásával bonthatja ki és csukhatja össze. A panelek összecsukásával több helyhez juthat a vásznon a látványos vizualizációk kialakításához. 
 
- ![](media/desktop-getting-started/designer_gsg_collapsepanes.png)
+![Panelek kibontása vagy összecsukása](media/desktop-getting-started/designer_gsg_collapsepanes.png)
 
-Vizualizáció létrehozásához egyszerűen húzzon egy mezőt a **Mezők** listából a **Jelentés** nézetbe. Ebben az esetben húzzuk át a *RetirementStats* *State* mezőjét, és lássuk, mi történik.
+Egy egyszerű vizualizáció létrehozásához elég kiválasztani bármelyik mezőt a mezőlistából, vagy áthúzni a mezőt a vászonra a **Mezők** panelről. Húzza a vászonra például a **Napszemüvegek árusítására legalkalmasabb államok** táblázat **State** (Állam) mezőjét, és figyelje meg, hogy mi történik.
 
- ![](media/desktop-getting-started/designer_gsg_reportfirstdrag.png)
+![Az Állam mező áthúzása térkép-vizualizáció létrehozásához](media/desktop-getting-started/designer_gsg_reportfirstdrag.png)
 
-Vegyük észre, hogy a Power BI Desktop automatikusan létrehozott egy térképalapú vizualizációt, mert felismerte, hogy a *State* mező földrajzihely-adatokat tartalmaz.
+Figyelje meg jól! A Power BI Desktop felismerte, hogy a **State** mező földrajzihely-adatokat tartalmaz, és automatikusan térképalapú vizualizációt hozott létre. A vizualizáció az adatmodellben szereplő 40 államhoz mutat adatpontokat. 
 
-A **Megjelenítések** panelen több különféle típusú vizualizáció közül választhatunk, az ikonok alatti területen pedig a mezőket különböző területekre húzva jelmagyarázatot készíthetünk, vagy másként módosíthatjuk a vizualizációt.
+A **Vizualizációk** panelen a vizualizációval kapcsolatos információkat láthatja és módosíthatja. 
 
- ![](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
+![A Vizualizációk panel](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
 
-Ugorjunk egy kicsit előre, és nézzük meg, milyen lesz a **Jelentés** nézet, ha hozzáadunk néhány vizualizációt és új jelentésoldalt. További információ a jelentésekről: [Jelentés nézet a Power BI Desktopban](desktop-report-view.md).
+1. Az ikonokon a létrehozott vizualizáció típusa látható. Egy kijelölt vizualizáció típusát úgy változtathatja meg, hogy másik ikont választ. Új vizualizációt hozhat létre, ha meglévő vizualizáció kijelölése nélkül választ ki egy ikont. 
+2. A **Vizualizációk** panel **Mezők** területén adatmezőket húzhat a panel **Jelmagyarázat** és más mezőgyűjtőibe. 
+3. A **Formázás** beállítással formázást és más vezérlőket alkalmazhat a vizualizációkra. 
 
-Az első jelentésoldal az *Összesített rangsor* alapján mutatja be az adatokat. Amikor kiválasztjuk az egyik vizualizációt, a **Mezők és szűrők** panelen láthatóvá válik, melyik mezők vannak kijelölve, valamint hogy milyen a vizualizáció struktúrája (melyik mezők vannak a **Közös tengelyre**, az **Oszlopértékekre** és a **Sorértékekre** alkalmazva).
+A **Mezők** és a **Formázás** területen elérhető beállítások köre az aktuális vizualizáció és adatok típusától függ.
 
- ![](media/desktop-getting-started/designer_gsg_report1.png)
+Azt szeretné, hogy a térkép-vizualizáción csak a 10 legjobb időjárású állam jelenjen meg. Ahhoz, hogy csak az első 10 állam jelenjen meg, a **Mezők** panelen vigye a kurzort a **State (Összes)** elemre, és bontsa ki azt a megjelenő nyíllal. A **Szűrő típusa** területen gördítse le a listát és válassza a **Felső N** elemet. Az **Elemek megjelenítése** területen válassza az **Alsó** beállítást, mert a legkisebb számértékkel rangsorolt elemeket szeretné megjeleníteni, a következő mezőbe pedig írja be a *10* számot.
 
-A jelentés hat **oldalt** tartalmaz, mind a hat az adataink bizonyos elemeit jeleníti meg.
+Húzza a **Weather** mezőt a **Mezők** panelről az **Érték szerint** mezőre, majd válassza a **Szűrő alkalmazása** lehetőséget. 
 
-1. A fentiekben látható első oldal az *Összesített rangsor* alapján jeleníti meg az összes államot.
-2. A második oldal az első tíz államot jeleníti meg az *Összesített rangsor* alapján.
-3. A harmadik oldalon a megélhetési költségek szerinti első 10 állam (és a hozzá tartozó adatok) jelenik meg.
-4. A negyedik oldal az időjárásra összpontosít a 15 legnaposabb államra szűrve.
-5. Az ötödik oldalon a Közösség jólléte szempontjából az első 15 állam látható diagramon.
-6. Végül a legalacsonyabb bűnözési statisztikákkal rendelkező első tíz (és egyben utolsó tíz) állam van ábrázolva.
+![A 10 legjobb időjárású állam szűrése](media/desktop-getting-started/gsg_share5.png)
 
-Így néz ki a megélhetési költségre vonatkozó jelentésoldal.
+A térkép-vizualizáción már csak a 10 legjobb időjárású állam látható. 
 
- ![](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+Változtassa meg a vizualizáció címét a **Vizualizációk** panel **Formázás** ikonját, majd a **Cím** elemet választva. Ez után a **Cím szövege** területen begépelheti *A 10 legjobb időjárású állam* címet. 
 
-Számos érdekes jelentést és vizualizációt hozhat létre.
+![Cím megváltoztatása](media/desktop-getting-started/designer_gsg_report1.png)
+
+Most vegyen fel egy olyan vizualizációt, amely a 10 legjobb időjárású állam nevét és 1-től 10-ig terjedő azok rangsorolását is bemutatja. Ehhez válasszon egy üres területet a vásznon, majd válassza ki az **Oszlopdiagram** ikont a **Vizualizációk** panelen. A **Mezők** panelen jelölje ki a **State** és a **Weather** mezőt. A lekérdezésben szereplő 40 államot a legmagasabb numerikus rangsor-értéktől a legalacsonyabbig, tehát a legrosszabbtól a legjobb időjárás felé rendezve bemutató oszlopdiagram. 
+
+![Oszlopdiagram-vizualizáció](media/desktop-getting-started/gsg_share7.png)
+
+A sorrend megfordításához, hogy az 1. sorszám álljon legelöl, válassza a **További lehetőségeket** kínáló három pontot a vizualizáció jobb felső sarkában, majd a menüből válassza a **Rendezés növekvő sorrendbe** lehetőséget. 
+
+![Rendezés növekvő sorrendbe](media/desktop-getting-started/shapecombine_mergequeries.png)
+
+Ahhoz, hogy a táblázatból csak az első 10 állam jelenjen meg, alkalmazza ugyanazt a szűrést, amelyet a térkép-vizualizáción. 
+
+A vizualizáció címét ugyanúgy változtathatja meg, mint a térkép-vizualizációét. Szintén a **Vizualizációk** panel **Formázás** területén módosítsa az **Y tengely** > **Tengely címe** értéket a **Weather** értékről az *Időjárási rangsor* szövegre, hogy érthetőbb legyen. Ez után kapcsolja **Ki** az **Y-tengely** kapcsolóját, az **Adatcímkék** mellettit pedig kapcsolja **Be**. 
+
+A 10 legjobb időjárású állam így már sorrendben jelenik meg, a sorszámával együtt. 
+
+![Befejezett oszlopdiagram](media/desktop-getting-started/shapecombine_changetype.png)
+
+Hasonló vagy más vizualizációkat készíthet a **Affordability** (Megélhetés) és az **Overall ranking** (Összesített rangsor) mezőkről is, de több mezőt is kombinálhat egyetlen vizualizációban. Számos érdekes jelentést és vizualizációt hozhat létre. Az alábbi **Táblázat** és **Vonal- és fürtözött oszlopdiagram** vizualizációk a 10 legjobb időjárású államot mutatják be a megélhetéssel és az összesített rangsorolással együtt:
+
+![Táblázat, vonal és fürtözött oszlop vizualizációk](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+
+Különböző jelentésoldalakon különböző vizualizációkat jeleníthet meg. Új oldal felvételéhez válassza a meglévő oldalak melletti **+** szimbólumot az oldalak sávjában, vagy válassza a menüszalag **Kezdőlapjának** **Beszúrás** > **Új oldal** elemét. Egy oldal átnevezéséhez kattintson duplán az oldal nevére az oldalak sávján, vagy kattintson rá a jobb gombbal, és válassza az **Oldal átnevezése** elemet, majd írja be az új nevet. A jelentés egy másik oldalára úgy léphet át, hogy kiválasztja az oldalt az oldalak sávján. 
+
+![Oldalválasztó sáv](media/desktop-getting-started/pages.png)
+
+A jelentésoldalakra a **Kezdőlap** **Beszúrás** csoportjában vehet fel szövegdobozokat, képeket és gombokat. A vizualizációk formátumbeállításainak módosításához jelölje ki a vizualizációt, majd válassza a **Formázás** ikont a **Vizualizációk** panelen. Az oldalméret, a hátterek és egyéb oldalinformációk konfigurálásához válassza a **Formázás** ikont úgy, hogy egy vizualizáció sincs kijelölve.
+
+Ha végzett az oldalak és vizualizációk létrehozásával, válassza a **Fájl** > **Mentés** menüpontot és mentse a jelentést. 
+
+![Kész Power BI Desktop-jelentésoldal](media/desktop-getting-started/finished-report.png)
+
+További információ a jelentésekről: [Jelentés nézet a Power BI Desktopban](desktop-report-view.md).
 
 ## <a name="share-your-work"></a>Hogyan oszthatja meg munkáját
-Most, hogy van egy nagyjából kész Power BI Desktop-jelentésünk, megoszthatjuk másokkal a **Power BI** szolgáltatásban. A Power BI Desktopban többféleképpen is megoszthatja a munkáját. Közzéteheti a **Power BI** szolgáltatásban, feltöltheti a .pbix fájlt közvetlenül a Power BI szolgáltatásból, vagy mentheti a .pbix fájlt, és elküldheti úgy, mint bármely más fájlt.
+Az elkészült Power BI Desktop-jelentést másokkal is megoszthatja. A munkáját több módon is megoszthatja. A jelentést ugyanúgy terjesztheti *.pbix* fájlként, mint bármely más fájlt, feltöltheti a *.pbix* fájlt a Power BI szolgáltatásból, vagy közzéteheti közvetlenül a Power BI Desktopból a Power BI szolgáltatásba. Ahhoz, hogy jelentést tehessen közzé vagy tölthessen fel a Power BI szolgáltatásba, rendelkeznie kell Power BI-fiókkal. 
 
-Először tekintsük át azt, amikor közvetlenül a Power BI Desktopból teszünk közzé egy fájlt a **Power BI** szolgáltatásba. A **Kezdőlap** menüszalagon válassza a **Közzététel** lehetőséget.
+A Power BI Desktopból a **Power BI** szolgáltatásba történő közzétételhez válassza a menüszalag **Kezdőlapjának** **Közzététel** elemét.
 
-![](media/desktop-getting-started/gsg_syw_1.png)
+![A Közzététel lehetőség kiválasztása](media/desktop-getting-started/gsg_syw_1.png)
 
-Lehet, hogy a rendszer arra kéri, hogy jelentkezzen be a Power BI-ba.
+A rendszer felkérheti, hogy jelentkezzen be a Power BI-ba, vagy hogy válasszon célt.
 
-![](media/desktop-getting-started/gsg_syw_2.png)
+Amikor befejeződött a közzétételi folyamat, az alábbi párbeszédpanel jelenik meg:
 
-Amikor bejelentkezett, és befejeződött a közzétételi folyamat, az alábbi párbeszédpanel jelenik meg.
+![Sikeres Power BI-közzététel](media/desktop-getting-started/gsg_syw_3.png)
 
-![](media/desktop-getting-started/gsg_syw_3.png)
+Amikor kiválasztja a hivatkozást, hogy megnyissa a jelentést a Power BI-ban, a jelentés az Ön Power BI-webhelyén nyílik meg a **Saját munkaterület** > **Jelentések** területen. 
 
-Amikor bejelentkezik a Power BI-ba, a betöltött Power BI Desktop-fájl látható a szolgáltatás **Irányítópultok**, **Jelentések** és **Adatkészletek** szakaszában.
+A munkája megosztásának másik módja, ha a **Power BI** szolgáltatásban betölti azt. Nyissa meg a Power BI-t egy böngészőben a *https:\//app.powerbi.com* webhely megnyitásával. A Power BI **Kezdőlapján** válassza az bal alsó sarokban található **Adatok betöltése** lehetőséget a Power BI Desktop-jelentés betöltési folyamatának megkezdéséhez.
 
-A munkája megosztásának másik módja, ha a **Power BI** szolgáltatásban betölti azt. Az alábbi hivatkozásra kattintva megnyithatja a **Power BI** szolgáltatást a böngészőben:
+![Az Adatok betöltése lehetőség kiválasztása a Power BI kezdőlapján](media/desktop-getting-started/pbi_gsg_getdata1.png)
 
-`https://app.powerbi.com`
+A következő oldalon válassza a **Betöltés** lehetőséget a **Fájlok** területen.
 
-A Power BI Desktop-jelentés betöltési folyamatának elindításához válassza az **Adatok lekérése** lehetőséget.
+![Fájlok lekérése](media/desktop-getting-started/pbi_gsg_getdata2.png)
 
- ![](media/desktop-getting-started/pbi_gsg_getdata1.png)
+A következő oldalon válassza a **Helyi fájl** lehetőséget. Tallózással jelölje ki a *.pbix* Power BI Desktop-fájlt, majd válassza a **Megnyitás** lehetőséget. 
 
-Megjelenik az **Adatok lekérése** oldal. Itt választhatja ki, honnan kéri le az adatokat. Ebben az esetben a **Beolvasás** elemet választjuk a **Fájlok** mezőben.
+A fájl az importálása után megjelenik a **Saját munkaterület** > **Jelentések** területen a Power BI szolgáltatás bal oldali paneljén.
 
-![](media/desktop-getting-started/pbi_gsg_getdata2.png)
+![A Power BI-ba importált Power BI Desktop-fájl](media/desktop-getting-started/pbi_gsg_getdata4.png)
 
-Megjelenik a **Fájlok** nézet. Ebben az esetben a **Helyi fájl** lehetőséget választjuk.
+A fájl kijelölésekor a jelentés első oldala jelenik meg. Az oldalakat a jelentéstől balra található fülekkel választhatja ki. 
 
-![](media/desktop-getting-started/pbi_gsg_getdata3.png)
+Ha módosítani szeretne egy jelentést a **Power BI** szolgáltatásban, válassza a **További lehetőségek** > **Szerkesztés** lehetőséget a jelentés vásznának tetején. A módosítások mentéséhez válassza a **Másolat mentése** lehetőséget.
 
-Ha kiválasztja a fájlt, a Power BI feltölti azt.
+![Jelentés szerkesztése és másolat mentése](media/desktop-getting-started/gsg_share4.png)
 
-![](media/desktop-getting-started/pbi_gsg_getdata3a.png)
+A **Power BI** szolgáltatásban számos különféle érdekes vizualizációt létrehozhat a jelentésből, és ezeket rögzítheti egy *irányítópulton*. A **Power BI** szolgáltatás irányítópultjainak megismerése érdekében tekintse meg [a tökéletes irányítópult megtervezésével kapcsolatos tippeket](service-dashboards-design-tips.md). További információt az irányítópultok létrehozásáról, megosztásáról és módosításáról az [irányítópultok megosztásával kapcsolatos](service-share-dashboards.md) cikkben találhat.
 
-Amint feltöltődött a fájl, kiválasztható a Power BI szolgáltatás bal oldali paneljének **Jelentések** területén.
+Jelentés vagy irányítópult megosztásához válassza a megnyitott jelentés- vagy irányítópult-oldal felső részén található **Megosztás** lehetőséget, vagy válassza a jelentés vagy irányítópult neve melletti **Megosztás** ikont a **Saját munkaterület** > **Jelentések** vagy a **Saját munkaterület** > **Irányítópultok** listában.
 
-![](media/desktop-getting-started/pbi_gsg_getdata4.png)
+Töltse ki a **Jelentés megosztása** vagy az **Irányítópult megosztása** képernyőt, ahol e-mailt küldhet, vagy előállíthat egy hivatkozást, amellyel megoszthatja másokkal a jelentést vagy az irányítópultot. 
 
-A **Power BI** szolgáltatás megjeleníti a jelentés első oldalát. Az oldal alján kattintson bármelyik fülre a jelentés adott oldalának megnyitásához.
+![Jelentés megosztása](media/desktop-getting-started/gsg_share6.png)
 
- ![](media/desktop-getting-started/gsg_share4.png)
-
-Ha módosítani szeretne egy jelentést a **Power BI** szolgáltatásban, válassza a **Jelentés szerkesztése** lehetőséget a jelentés vásznának tetején.
-
-A jelentés mentéséhez válassza a **Fájl \> Mentés másként** lehetőséget a szolgáltatásban. A **Power BI** szolgáltatásban számos különféle érdekes vizualizációt létrehozhat a jelentésből, és ezeket rögzítheti az *irányítópulton*. A **Power BI** szolgáltatás irányítópultjainak megismerése érdekében tekintse meg <strong>[a tökéletes irányítópult megtervezésével kapcsolatos tippeket](service-dashboards-design-tips.md)</strong>.
-
- ![](media/desktop-getting-started/gsg_share5.png)
-
-A mentés után a fő oldalon válassza a **Megosztás** ikont.
-
- ![](media/desktop-getting-started/gsg_share6.png)
-
-Innen küldhet e-mailt a munkatársainak, akikkel meg szeretné osztani az irányítópultot.
-
- ![](media/desktop-getting-started/gsg_share7.png)
-
-További információt az irányítópultok létrehozásáról, megosztásáról és módosításáról az [irányítópultok megosztásával kapcsolatos](service-share-dashboards.md) cikkben találhat.
-
-A Power BI Desktopban és a Power BI szolgáltatásban számos különféle lenyűgöző adategyesítést és vizualizációt hozhat létre. További információért tekintse meg a következő szakaszt.
-
-## <a name="diagnostics"></a>Diagnosztika
-
-A Power BI Desktop támogatja a diagnosztikai portokhoz való csatlakozást. A diagnosztikai port lehetővé teszi, hogy más eszközök csatlakozzanak és diagnosztikai célú nyomkövetést végezzenek. *A modell semmiféle módosítása sem támogatott! A modell megváltoztatása adatsérülést és adatvesztést okozhat.*
+A Power BI Desktopban és a Power BI szolgáltatásban számos lenyűgöző adategyesítést és vizualizációt hozhat létre. 
 
 ## <a name="next-steps"></a>Következő lépések
-A Power BI Desktop műveletek és lehetőségek széles tárházát tartalmazza. A program képességeivel kapcsolatos további információkért lásd az alábbi forrásanyagokat:
+A Power BI Desktop támogatja a diagnosztikai portokhoz való csatlakozást. A diagnosztikai port lehetővé teszi, hogy más eszközök csatlakozzanak és diagnosztikai célú nyomkövetést végezzenek. A diagnosztikai port használata során *a modell semmiféle módosítása sem támogatott. A modell megváltoztatása adatsérülést és adatvesztést okozhat.*
+
+A Power BI Desktop sokféle képességéről az alábbi forrásanyagokban talál további információt:
 
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)
 * [Adatforrások a Power BI Desktopban](desktop-data-sources.md)
 * [Csatlakozás adatokhoz a Power BI Desktopban](desktop-connect-to-data.md)
-* [Adatok formázása és kombinálása a Power BI Desktoppal](desktop-shape-and-combine-data.md)
+* [Oktatóanyag: Adatok formázása és kombinálása a Power BI Desktoppal](desktop-shape-and-combine-data.md)
 * [Gyakori lekérdezési feladatok a Power BI Desktopban](desktop-common-query-tasks.md)   

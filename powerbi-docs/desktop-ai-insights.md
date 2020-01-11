@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a1f6adfcf471fa6805e0a99c4b8789ba9eb7cf58
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: c2985f0281274adcdbde737c0f3b00688a401df7
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74016664"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221275"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop-preview"></a>AI-elemzések használata a Power BI Desktopban (előzetes verzió)
 
@@ -149,7 +149,7 @@ A Text Analytics használatakor figyelembe kell vennie néhány tényezőt és k
 
 ## <a name="using-azure-ml"></a>Az Azure Machine Learning használata
 
-Számos szervezet használja a **Machine Learning** modelljeit hatékonyabb üzleti elemzések és előrejelzések készítéséhez. A modellekből kinyerhető információk (valamint ezek megjelenítése) a jelentésekben, irányítópultokban és egyéb elemzésekben segít az üzleti felhasználóknak értelmezni ezeket az adatokat. A Power BI egérrel végezhető műveletekkel egyszerűen beépíthetővé teszi az Azure Machine Learning szolgáltatás modelljeinek elemzéseit.
+Számos szervezet használja a **Machine Learning** modelljeit hatékonyabb üzleti elemzések és előrejelzések készítéséhez. A modellekből kinyerhető információk (valamint ezek megjelenítése) a jelentésekben, irányítópultokban és egyéb elemzésekben segít az üzleti felhasználóknak értelmezni ezeket az adatokat. A Power BI maguktól értetődő, egérrel végezhető műveletekkel egyszerűen beépíthetővé teszi az Azure Machine Learning szolgáltatásban üzemeltetett modellek elemzéseit.
 
 A funkció használatához egy adattudós egyszerűen hozzáférést biztosíthat az Azure ML-modellhez egy BI-elemzőnek az Azure Portalon. Innentől kezdve a Power Query minden munkamenet elején felismeri azokat az Azure ML-modelleket, amelyekhez a felhasználó hozzáfér, és dinamikus Power Query-függvényként jeleníti meg őket. A felhasználó ezután meghívhatja ezeket a függvényeket a Power Query-szerkesztő menüszalagjáról vagy közvetlenül az M-függvénnyel. A Power BI a jobb teljesítmény érdekében automatikusan kötegeli a hozzáférési kéréseket, amikor meghívja az Azure ML-modellt egy sorkészlethez.
 
@@ -159,15 +159,15 @@ További információ az adatfolyamokról: [Önkiszolgáló adat-előkészítés
 
 A Azure Machine Learning szolgáltatásról az alábbi cikkekben talál további információt:
 
-- Áttekintés: [Az Azure Machine Learning Service ismertetése](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
+- Áttekintés: [Mi az Azure Machine Learning?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
 - Rövid útmutatók és oktatóanyagok az Azure Machine Learning szolgáltatáshoz: [Azure Machine Learning-dokumentáció](https://docs.microsoft.com/azure/machine-learning/)
 
 ### <a name="granting-access-to-an-azure-ml-model"></a>Hozzáférés megadása egy Azure Machine Learning-modellhez
 
 Egy Azure ML-modell a Power BI-ból való eléréséhez a felhasználónak **olvasási** hozzáféréssel kell rendelkeznie az Azure-előfizetésben. Ezen felül rendelkezniük kell a következőkkel:
 
-- Machine Learning Studio-modellek esetén **olvasási** hozzáférés a Machine Learning Studio webszolgáltatáshoz
-- Machine Learning Service-modellek esetén **olvasási** hozzáférés a Machine Learning Service-munkaterülethez
+- Machine Learning Studio (klasszikus) modellek esetén **Olvasó** hozzáférés a Machine Learning Studio (klasszikus) webszolgáltatáshoz
+- Machine Learning-modellek esetén **Olvasó** hozzáférés a Machine Learning-munkaterülethez
 
 Az ebben a szakaszban leírt lépések azt ismertetik, hogyan adhat hozzáférést egy Power BI-felhasználónak egy Azure Machine Learning Service-modellhez, hogy azt Power Query-függvényként használhassa. További részletekért tekintse meg a [Hozzáférés-kezelés az RBAC és az Azure Portal segítségével](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) című témakört.
 
@@ -177,20 +177,20 @@ Az ebben a szakaszban leírt lépések azt ismertetik, hogyan adhat hozzáféré
 4. Válassza a **Hozzáférés-vezérlés (IAM)** , majd a **Hozzáadás** lehetőséget.
 5. Szerepkörként válassza az **Olvasó** lehetőséget. Válassza ki azt a Power BI-felhasználót, akinek hozzáférést szeretne adni az Azure ML-modellhez.
 6. Válassza a **Mentés** lehetőséget.
-7. Ismételje meg a 3–6. lépést, így **Olvasó** hozzáférést adhat a felhasználónak az adott Machine Learning Studio webszolgáltatáshoz *vagy* a modellt tartalmazó Machine Learning Service-munkaterülethez.
+7. Ismételje meg a 3–6. lépést, így **Olvasó** hozzáférést adhat a felhasználónak az adott Machine Learning Studio (klasszikus) webszolgáltatáshoz *vagy* a modellt tartalmazó Machine Learning-munkaterülethez.
 
-### <a name="schema-discovery-for-machine-learning-service-models"></a>Machine Learning Service-modellek sémafeltárása
+### <a name="schema-discovery-for-machine-learning-models"></a>Machine Learning-modellek sémafeltárása
 
-Az adattudósok elsősorban Pythont használnak a Machine Learning Service gépi tanulási modelljeinek fejlesztéséhez és üzembe helyezéséhez. A Machine Learning Studióval ellentétben (amely automatizálja a modell sémafájljainak létrehozását) a Machine Learning Service esetén az adattudósnak explicit módon létre kell hoznia a sémafájlt a Pythonnal.
+Az adattudósok elsősorban Pythont használnak a Machine Learning gépi tanulási modelljeinek fejlesztéséhez és üzembe helyezéséhez. A (klasszikus) Machine Learning Studióval ellentétben (amely automatizálja a modell sémafájljainak létrehozását) a Machine Learning esetében az adattudósnak explicit módon létre kell hoznia a sémafájlt a Pythonnal.
 
-Ezt a sémafájlt bele kell foglalni a Machine Learning szolgáltatáshoz üzembe helyezett webszolgáltatásba. Ahhoz, hogy a séma automatikusan generálva legyen a webszolgáltatásban, meg kell adnia a bemenet/kimenet mintáját az üzembe helyezett modell belépési szkriptjében. Olvassa el a [Modellek üzembe helyezése az Azure Machine Learning szolgáltatással című dokumentáció (választható) Automatikus Swagger-séma létrehozása](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation) című fejezetét. A hivatkozás egy példát is tartalmaz a belépési szkriptre a sémageneráló utasításokkal.
+Ezt a sémafájlt bele kell foglalni a Machine Learning-modellekhez üzembe helyezett webszolgáltatásba. Ahhoz, hogy a séma automatikusan generálva legyen a webszolgáltatásban, meg kell adnia a bemenet/kimenet mintáját az üzembe helyezett modell belépési szkriptjében. Olvassa el a [Modellek üzembe helyezése az Azure Machine Learning szolgáltatással című dokumentáció (választható) Automatikus Swagger-séma létrehozása](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation) című fejezetét. A hivatkozás egy példát is tartalmaz a belépési szkriptre a sémageneráló utasításokkal.
 
 A belépési szkript _@input\_schema_ és _@output\_schema_ függvénye az _input\_sample_ és az _output\_sample_ változóban hivatkozik a bemeneti és kimeneti mintaformátumokra, és ezeket a mintákat használja a webszolgáltatás egy OpenAPI- (Swagger-) specifikációjának generálására az üzembe helyezés során.
 
 A belépési szkript módosításakor ezeket a sémagenerálási utasításokat kell alkalmazni az Azure Machine Learning SDK-val végzett automatizált gépi tanulási kísérletek használatával létrehozott modellekre is.
 
 > [!NOTE]
-> Az Azure Machine Learning szolgáltatás vizuális interfészének használatával létrehozott modellek jelenleg nem támogatják a sémagenerálást, de a későbbi kiadásokban már fogják.
+> Az Azure Machine Learning vizuális interfészének használatával létrehozott modellek jelenleg nem támogatják a sémagenerálást, de a későbbi kiadásokban már fogják.
 > 
 ### <a name="invoking-an-azure-ml-model-in-power-query"></a>Azure Machine Learning-modell meghívása a Power Queryben
 
@@ -212,7 +212,7 @@ Ha a modell több kimeneti paramétert eredményez, azok egy rekordként lesznek
 
 A Power BI Desktopban használt Azure Machine Learningre a következő szempontok és korlátozások érvényesek.
 
-* Az Azure Machine Learning szolgáltatás vizuális interfészének használatával létrehozott modellek jelenleg nem támogatják a sémagenerálást. Ennek támogatása a későbbi kiadásokban várható.
+* Az Azure Machine Learning vizuális interfészének használatával létrehozott modellek jelenleg nem támogatják a sémagenerálást. Ennek támogatása a későbbi kiadásokban várható.
 * A növekményes frissítés támogatott, de AI-elemzéseket tartalmazó lekérdezésekben használva teljesítményproblémákat okozhat.
 * A DirectQuery nem támogatott.
 
@@ -220,7 +220,7 @@ A Power BI Desktopban használt Azure Machine Learningre a következő szemponto
 
 Ez a cikk a Machine Learning a Power BI Desktopba való integrálásáról nyújtott áttekintést. Az alábbi cikkek is érdekesek és hasznosak lehetnek.
 
-- [Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban](service-tutorial-invoke-machine-learning-model.md)
+- [Oktatóanyag: Machine Learning Studio (klasszikus) modell meghívása a Power BI-ban](service-tutorial-invoke-machine-learning-model.md)
 - [Oktatóanyag: A Cognitive Services használata a Power BI-ban](service-tutorial-use-cognitive-services.md)
 - [Cognitive Services-szolgáltatások a Power BI-ban](service-cognitive-services.md)
 - [Az Azure Machine Learning integrálása a Power BI-jal](service-machine-learning-integration.md)
