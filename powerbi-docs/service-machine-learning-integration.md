@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 2f872825c327b8195e7a6e5516e0b533235ddc27
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9aaa26b4798a0632b0ad751bc30e8496f6103fb1
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872092"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223756"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi"></a>Az Azure Machine Learning integrálása a Power BI-jal
 
-Számos szervezet használja a **Machine Learning** modelljeit hatékonyabb üzleti elemzések és előrejelzések készítéséhez. A modellekből kinyerhető információk (valamint ezek megjelenítése) a jelentésekben, irányítópultokban és egyéb elemzésekben segít az üzleti felhasználóknak értelmezni ezeket az adatokat.  A Power BI mostantól egérrel végezhető műveletekkel egyszerűen beépíthetővé teszi az Azure Machine Learning Service modelljeinek elemzéseit.
+Számos szervezet használja a **Machine Learning** modelljeit hatékonyabb üzleti elemzések és előrejelzések készítéséhez. A modellekből kinyerhető információk (valamint ezek megjelenítése) a jelentésekben, irányítópultokban és egyéb elemzésekben segít az üzleti felhasználóknak értelmezni ezeket az adatokat.  A Power BI most már maguktól értetődő, egérrel végezhető műveletekkel egyszerűen beépíthetővé teszi az Azure Machine Learning szolgáltatásban üzemeltetett modellek elemzéseit.
 
 A funkció használatához egy adattudós egyszerűen hozzáférést biztosíthat az Azure ML-modellhez egy BI-elemzőnek az Azure Portalon.  Innentől kezdve a Power Query minden munkamenet elején felismeri azokat az Azure ML-modelleket, amelyekhez a felhasználó hozzáfér, és dinamikus Power Query-függvényként jeleníti meg őket.  A felhasználó ezután meghívhatja ezeket a függvényeket a Power Query-szerkesztő menüszalagjáról vagy közvetlenül az M függvénnyel. A Power BI a jobb teljesítmény érdekében automatikusan kötegeli a hozzáférési kéréseket, amikor meghívja az Azure ML-modellt egy sorkészlethez.
 
@@ -28,15 +28,15 @@ További információ az adatfolyamokról: [Önkiszolgáló adat-előkészítés
 
 További információ az Azure Machine Learning szolgáltatásról:
 
-- Áttekintés:  [Az Azure Machine Learning Service ismertetése](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
+- Áttekintés:  [Mi az Azure Machine Learning?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
 - Rövid útmutatók és oktatóanyagok az Azure Machine Learning szolgáltatáshoz:  [Azure Machine Learning-dokumentáció](https://docs.microsoft.com/azure/machine-learning/)
 
 ## <a name="granting-access-to-the-azure-ml-model-to-a-power-bi-user"></a>Az Azure ML-modellhez való hozzáférés biztosítása egy Power BI-felhasználónak
 
 Egy Azure ML-modell a Power BI-ból való eléréséhez a felhasználónak **olvasási** hozzáféréssel kell rendelkeznie az Azure-előfizetésben.  Továbbá:
 
-- Machine Learning Studio-modellek esetén **olvasási** hozzáférés a Machine Learning Studio webszolgáltatáshoz
-- Machine Learning Service-modellek esetén **olvasási** hozzáférés a Machine Learning Service-munkaterülethez
+- (Klasszikus) Machine Learning Studio-modellek esetén **Olvasási** hozzáférés a (klasszikus) Machine Learning Studio-webszolgáltatáshoz
+- Machine Learning-modellek esetén **Olvasási** hozzáférés a Machine Learning-munkaterülethez
 
 A cikk lépései ismertetik, hogyan adhat hozzáférést egy Power BI-felhasználónak egy Azure Machine Learning Service-modellhez, hogy azt Power Query-függvényként használhassa.  További részletekért tekintse meg a [Hozzáférés-kezelés az RBAC és az Azure Portal segítségével](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) című témakört.
 
@@ -60,21 +60,21 @@ A cikk lépései ismertetik, hogyan adhat hozzáférést egy Power BI-felhaszná
 
 6. Kattintson a **Mentés** gombra.
 
-7. Ismételje meg a 3–6. lépést, így **Olvasó** hozzáférést adhat a felhasználónak az adott Machine Learning Studio webszolgáltatáshoz *vagy* a modellt tartalmazó Machine Learning Service-munkaterülethez.
+7. Ismételje meg a 3–6. lépést, így **Olvasási** hozzáférést adhat a felhasználónak az adott (klasszikus) Machine Learning Studio-webszolgáltatáshoz *vagy* a modellt tartalmazó Machine Learning-munkaterülethez.
 
 
-## <a name="schema-discovery-for-machine-learning-service-models"></a>Machine Learning Service-modellek sémafeltárása
+## <a name="schema-discovery-for-machine-learning-models"></a>Machine Learning-modellek sémafeltárása
 
-Az adattudósok elsősorban Pythont használnak a Machine Learning Service gépi tanulási modelljeinek fejlesztéséhez és üzembe helyezéséhez.  A Machine Learning Studióval ellentétben (amely automatizálja a modell sémafájljainak létrehozását) a Machine Learning Service esetén az adattudósnak explicit módon létre kell hoznia a sémafájlt a Pythonnal.
+Az adattudósok elsősorban Pythont használnak a Machine Learning gépi tanulási modelljeinek fejlesztéséhez és üzembe helyezéséhez.  A (klasszikus) Machine Learning Studióval ellentétben (amely automatizálja a modell sémafájljainak létrehozását) a Machine Learning esetében az adattudósnak explicit módon kell generálnia a sémafájlt a Pythonnal.
 
-Ezt a sémafájlt bele kell foglalni a Machine Learning szolgáltatáshoz üzembe helyezett webszolgáltatásba. Ahhoz, hogy a séma automatikusan generálva legyen a webszolgáltatásban, meg kell adnia a bemenet/kimenet mintáját az üzembe helyezett modell belépési szkriptjében. Olvassa el a [Modellek üzembe helyezése az Azure Machine Learning szolgáltatással című dokumentáció (választható) Automatikus Swagger-séma létrehozása](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation) című fejezetét. A hivatkozás egy példát is tartalmaz a belépési szkriptre a sémageneráló utasításokkal. 
+Ezt a sémafájlt bele kell foglalni a Machine Learning-modellekhez üzembe helyezett webszolgáltatásba. Ahhoz, hogy a séma automatikusan generálva legyen a webszolgáltatásban, meg kell adnia a bemenet/kimenet mintáját az üzembe helyezett modell belépési szkriptjében. Olvassa el a [Modellek üzembe helyezése az Azure Machine Learning szolgáltatással című dokumentáció (választható) Automatikus Swagger-séma létrehozása](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation) című fejezetét. A hivatkozás egy példát is tartalmaz a belépési szkriptre a sémageneráló utasításokkal. 
 
 A belépési szkript *\@input_schema* és *\@output_schema* függvénye az *input_sample* és az *output_sample* változóban hivatkozik a bemeneti és kimeneti mintaformátumokra, és ezeket a mintákat használja a webszolgáltatás egy OpenAPI- (Swagger-) specifikációjának generálására az üzembe helyezés során.
 
 A belépési szkript módosításakor ezeket a sémagenerálási utasításokat kell alkalmazni az Azure Machine Learning SDK-val végzett automatizált gépi tanulási kísérletek használatával létrehozott modellekre is.
 
 > [!NOTE]
-> Az Azure Machine Learning szolgáltatás vizuális interfészének használatával létrehozott modellek jelenleg nem támogatják a sémagenerálást, de a későbbi kiadásokban már fogják. 
+> Az Azure Machine Learning vizuális felületén létrehozott modellek jelenleg nem támogatják a sémagenerálást, de a későbbi kiadásokban már fogják. 
 
 ## <a name="invoking-the-azure-ml-model-in-power-bi"></a>Az Azure ML-modell meghívása a Power BI-ban
 
@@ -106,7 +106,7 @@ Az adatfolyam mentése után a rendszer az entitástábla minden új vagy friss�
 
 Ez a cikk áttekintést nyújtott a Machine Learning a Power BI szolgáltatásba való integrálásáról. Az alábbi cikkeket is érdekesnek találhatja. 
 
-* [Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban](service-tutorial-invoke-machine-learning-model.md)
+* [Oktatóanyag: (Klasszikus) Machine Learning Studio-modell meghívása a Power BI-ban](service-tutorial-invoke-machine-learning-model.md)
 * [Oktatóanyag: A Cognitive Services használata a Power BI-ban](service-tutorial-use-cognitive-services.md)
 * [Cognitive Services-szolgáltatások a Power BI-ban](service-cognitive-services.md)
 

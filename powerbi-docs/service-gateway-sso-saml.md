@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: bbb0584843f79445c4e5cca073f9c4b953d346aa
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74699360"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>A Security Assertion Markup Language (SAML) használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez
@@ -120,11 +120,11 @@ Most, hogy rendelkezik az átjáró beállított tanúsítványával és identit
 
         ![Beépülő modul hozzáadása](media/service-gateway-sso-saml/add-snap-in.png)
 
-    1. Válassza ki a **Tanúsítványok** &gt; **Hozzáadás** elemet, majd kattintson a **Számítógépfiók** &gt; **Tovább** elemre.
+    1. Válassza a **Tanúsítványok** &gt; **Hozzáadás** elemet, majd kattintson a **Számítógépfiók** &gt; **Tovább** elemre.
 
     1. Válassza a **Helyi számítógép** &gt; **Befejezés** &gt; **OK** lehetőséget.
 
-    1. Bontsa a **Tanúsítványok** &gt; **Személyes** &gt; **Tanúsítványok** tartalmát, és keresse meg a tanúsítványt.
+    1. Bontsa ki a **Tanúsítványok** &gt; **Személyes** &gt; **Tanúsítványok** elem tartalmát, és keresse meg a tanúsítványt.
 
     1. Kattintson a jobb gombbal a tanúsítványra, és válassza a **Minden feladat** &gt; **Titkos kulcsok kezelése** elemet.
 
@@ -195,4 +195,4 @@ A helyszíni adatátjáróval és a DirectQueryvel kapcsolatos további informá
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások](desktop-directquery-data-sources.md)
 * [A DirectQuery és az SAP BW](desktop-directquery-sap-bw.md)
-* [A DirectQuery és az SAP HANA](desktop-directquery-sap-hana.md)
+* [DirectQuery és SAP HANA](desktop-directquery-sap-hana.md)

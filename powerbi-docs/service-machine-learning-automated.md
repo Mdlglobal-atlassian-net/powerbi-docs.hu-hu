@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 49615e1b6c205d9b894df0bcca7ef4979f153ba7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f5fa262c01767ba934a10300e321796845d47c5f
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872124"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223815"
 ---
 # <a name="automated-machine-learning-in-power-bi"></a>Automatizált Machine Learning a Power BI-ban
 
@@ -32,7 +32,7 @@ A Power BI-ban működő AutoML és az adatfolyamok használatával az adatelemz
 
 Az AutoML az adatfolyamok **bináris előrejelzési**, **besorolási** és **regressziós modelljeit** támogatja. Ezek a felügyelt gépi tanulási módszerek típusai, ami azt jelenti, hogy a korábbi megfigyelések eredményeinek betanulása révén jelzik előre más megfigyelések eredményeit. Az AutoML-modell betanítására szolgáló bemeneti adatkészlet az ismert eredményekkel **címkézett** rekordhalmaz.
 
-A Power BI-beli AutoML az [Azure Machine Learning szolgáltatásból](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) integrálja az [automatizált gépi tanulást](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) az ML-modellek létrehozásához. Ennek ellenére az AutoML Power BI-beli használatához nincs szükség Azure-előfizetésre. Az ML-modellek betanításának és üzemeltetésének teljes folyamatát a Power BI szolgáltatás kezeli.
+A Power BI-beli AutoML az [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) [automatizált gépi tanulásának](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) integrálásával hozza létre az ML-modelleket. Ennek ellenére az AutoML Power BI-beli használatához nincs szükség Azure-előfizetésre. Az ML-modellek betanításának és üzemeltetésének teljes folyamatát a Power BI szolgáltatás kezeli.
 
 Egy ML-modell betanítása után az AutoML automatikusan létrehoz egy Power BI-jelentést, amely ismerteti az ML-modell valószínű teljesítményét. Az AutoML az áttekinthetőség érdekében kiemelten tünteti fel a bemeneti adatok között a modell előrejelzéseire legnagyobb hatást gyakorló tényezőket. A jelentés a modellhez tartozó fő mérőszámokat is tartalmazza.
 
@@ -282,7 +282,7 @@ Ez a cikk áttekintést nyújtott az adatfolyamokhoz készült Automatizált Mac
 
 - [Oktatóanyag: Gépi tanulási modell létrehozása a Power BI-ban](service-tutorial-build-machine-learning-model.md)
 - [Oktatóanyag: A Cognitive Services használata a Power BI-ban](service-tutorial-use-cognitive-services.md)
-- [Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)](service-tutorial-invoke-machine-learning-model.md)
+- [Oktatóanyag: (Klasszikus) Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)](service-tutorial-invoke-machine-learning-model.md)
 - [Cognitive Services-szolgáltatások a Power BI-ban](service-cognitive-services.md)
 - [Az Azure Machine Learning integrálása a Power BI-jal](service-machine-learning-integration.md)
 

@@ -1,19 +1,19 @@
 ---
 title: Első lépések az androidos eszközökhöz készült Power BI mobilalkalmazással
 description: Bemutatjuk, hogyan hozza a Microsoft Power BI androidos mobilalkalmazása a Power BI-t az Ön zsebébe, a helyszíni és felhőbeli üzleti információkhoz való mobil hozzáféréssel együtt.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
-ms.openlocfilehash: 9a0d15c73ed19990a44ff888b73d9c569d0dfc5f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/08/2019
+ms.author: painbar
+ms.openlocfilehash: f0ffcdabf1fea090cff769fa35c8346812b37896
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876773"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220214"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Első lépések az androidos eszközökhöz készült Power BI mobilalkalmazással
 A Microsoft Power BI Android rendszerű eszközökön futó alkalmazása mobil felületet nyújt a Power BI, a Power BI jelentéskészítő kiszolgáló és a Reporting Services használatához. Bárhonnan megtekintheti és kezelheti helyszíni vagy felhőbeli céges irányítópultjait élő, érintésre reagáló mobil hozzáféréssel. Fedezze fel az adatokat az irányítópultokon, és ossza meg eredményeit munkatársaival e-mailben vagy SMS-ben. 
@@ -43,7 +43,7 @@ Amikor megnyitja az alkalmazást, átugorhatja a bejelentkezési oldalakat, így
 Ismerje meg [a Power BI mobilalkalmazások újdonságait](../../mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Regisztráció a Power BI szolgáltatásra a weben
-Ha még nem regisztrált, nyissa meg a [Power BI szolgáltatást (https://powerbi.com/)](https://powerbi.com/), és hozzon létre saját fiókot az irányítópultok és jelentések létrehozásához és tárolásához, valamint az adatok összevonásához. Ezután bárhol is tartózkodjon, beléphet a Power BI-ba az androidos eszközről, és megtekintheti saját irányítópultjait.
+Ha meg nem regisztrált, lépjen a [Power BI szolgáltatásra](https://powerbi.com/), és hozzon létre egy saját fiókot, ahol irányítópultokat és jelentéseket hozhat létre és tárolhat, valamint összevonhatja az adatait. Ezután bárhol is tartózkodjon, beléphet a Power BI-ba az androidos eszközről, és megtekintheti saját irányítópultjait.
 
 1. A Power BI szolgáltatásban koppintson a [Regisztráció](https://go.microsoft.com/fwlink/?LinkID=513879) gombra a Power BI-fiók létrehozásához.
 2. Hozzáláthat a [saját irányítópultok és jelentések létrehozásához](../../service-get-started.md).
@@ -61,44 +61,26 @@ Ha még nem regisztrált, nyissa meg a [Power BI szolgáltatást (https://powerb
    ![Bejelentkezés a Power BI-ba](./media/mobile-android-app-get-started/power-bi-connect-to-login.png)
 
 ## <a name="try-the-power-bi-and-reporting-services-samples"></a>A Power BI- és Reporting Services-minták kipróbálása
-A Power BI- és Reporting Services-mintákat regisztráció nélkül is próbálhatja. Az alkalmazás letöltése után megtekintheti a mintákat, vagy belekezdhet a használatba. Az irányítópultok kezdőlapjáról bármikor visszatérhet a példákhoz.
+A Power BI- és Reporting Services-mintákat regisztráció nélkül is megtekintheti és kezelheti.
 
-### <a name="power-bi-samples"></a>Power BI-példák
-Megtekintheti és felhasználhatja a Power BI irányítópult-mintáit, de van néhány dolog, amit nem tehet velük. Nem nyithatja meg a jelentéseket az irányítópultok mögött, nem oszthatja meg a mintákat másokkal, és nem jelölheti őket kedvencnek.
+A minták eléréséhez koppintson a navigációs sáv **További lehetőségek** (...) elemére, és válassza a **Minták** lehetőséget.
 
-1. Koppintson a globális navigációs gombra ![Globális navigációs gomb](././media/mobile-android-app-get-started/power-bi-android-options-icon.png) a bal felső sarokban.
-2. Koppintson a **Beállítások** > **Minták tallózása** elemre, válasszon egy szerepkört, majd nézze meg a szerepkörhöz tartozó irányítópultot.  
+Néhány Power BI-mintát számos jelentéskészítő kiszolgálói minta követ.
    
    ![Power BI Mobile-minták](./media/mobile-android-app-get-started/power-bi-android-power-bi-samples.png)
 
-### <a name="reporting-services-mobile-report-samples"></a>Reporting Services mobiljelentés-minták
-1. Koppintson a globális navigációs gombra ![Globális navigációs gomb](././media/mobile-android-app-get-started/power-bi-android-options-icon.png) a bal felső sarokban.
-2. Koppintson a **Reporting Services-minták** lehetőségre, majd a Kiskereskedelmi jelentések vagy Értékesítési jelentések mappát megnyitva megismerheti az azokhoz tartozó KPI-ket és mobiljelentéseket.
    
-   ![Reporting Services-minták](./media/mobile-android-app-get-started/power-bi-android-reporting-services-samples.png)
-
-## <a name="search-for-a-dashboard-or-report"></a>Irányítópult vagy jelentés keresése
-* Koppintson a jobb felső sarokban található nagyító ikonra ![Keresés ikon](./media/mobile-android-app-get-started/power-bi-ipad-search-icon.png), majd írja be a keresendő kifejezést.
-  
-    ![Keresési eredmények](./media/mobile-android-app-get-started/power-bi-android-tablet-search.png)
-  
-    Alapértelmezés szerint az összes irányítópulton és jelentésben keres, de egyszerre csak az egyikben vagy a másikban.
+   > [!NOTE]
+   > A mintákban nem minden funkció érhető el. Nem tekintheti meg például az irányítópult hátterében álló mintajelentéseket, a mintákat nem oszthatja meg másokkal, és nem jelölheti meg azokat kedvenceiként. 
+   > 
+   >
 
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>A tartalmak megkeresése a Power BI mobilalkalmazásokban
-Az irányítópultokat és jelentéseket a rendszer különböző helyeken tárolja a Power BI mobilalkalmazásokban, attól függően, hogy honnan származnak. További információk: [A tartalmak megkeresése a mobilalkalmazásokban](../../mobile-apps-quickstart-view-dashboard-report.md). Ezenkívül mindig bármit megkereshet a Power BI mobilalkalmazásokban. 
 
-![Navigációs ablaktábla](./media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
+Koppintson a fejlécben található nagyítóra a Power BI-tartalom keresésének megkezdéséhez.
 
-## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>A kedvenc irányítópultjának, KPI-jeinek és jelentéseinek megtekintése
-A mobilalkalmazások Kedvencek oldalán a kedvenc Power BI-irányítópultjai, valamint a Power BI jelentéskészítő kiszolgáló és Reporting Services jelentései és a KPI-i jelennek meg. Amikor *kedvencnek* jelöl meg egy irányítópultot a Power BI mobilalkalmazásban, más eszközökről is hozzáférhet, beleértve a böngészőjében futó Power BI szolgáltatást is. 
-
-* Koppintson a **Kedvencek** elemre.
-  
-   ![Kedvencek a navigációs ablaktáblán](./media/mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
-  
-   Ezen az oldalon megtalálja a Power BI-kedvenceit, valamint a Power BI jelentéskészítő kiszolgáló és a Reporting Services webes portálján megjelölt kedvenceit is.
-  
-   ![Kedvencek oldal](./media/mobile-android-app-get-started/power-bi-android-favorites-callouts.png)
+## <a name="view-your-favorite-dashboards-and-reports"></a>A kedvenc irányítópultok és jelentések megtekintése
+Koppintson a navigációs sáv **Kedvencek** (![](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) elemére a Kedvencek lap megjelenítéséhez. 
 
 További információ a [kedvencekről a Power BI-mobilalkalmazásokban](mobile-apps-favorites.md).
 
@@ -112,7 +94,7 @@ A Microsoft Intune segítségével a cégek szabályozhatják az olyan elemeket,
 > 
 > 
 
-További információk az [Android rendszerhez készült Power BI-mobilalkalmazások Microsoft Intune-nal történő konfigurálásáról](../../service-admin-mobile-intune.md). 
+További információ a [Power BI-mobilalkalmazások Microsoft Intune-nal történő konfigurálásáról](../../service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Következő lépések
 Az androidos Power BI alkalmazásban az alábbi műveleteket is elvégezheti a Power BI-irányítópultokkal és -jelentésekkel, valamint a Microsoft Power BI jelentéskészítő kiszolgálón vagy a Reporting Services webes portálján található jelentésekkel és KPI-kkel.

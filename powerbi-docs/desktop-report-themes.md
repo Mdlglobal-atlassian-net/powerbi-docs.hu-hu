@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c97316b0509f7d243befa5cfe5310aa0f5826335
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4fdcfd4d7684cef3e6b703709b2739ebbff1badd
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880011"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223583"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Jelentéstémák használata a Power BI Desktopban
 A **Jelentéstémák** használatával olyan tervezési módosításokat hajthat végre az egész jelentésen, mint a vállalati színek, a változó ikonkészletek, vagy egy új alapértelmezett vizualizációs formázás. **Jelentéstéma** alkalmazásakor a jelentésben szereplő összes vizualizáció a kiválasztott téma színeit és formázását fogja használni. Ez alól van néhány kivétel, amelyeket a cikk későbbi részében mutatunk be.
@@ -23,10 +23,10 @@ A **Jelentéstémák** használatával olyan tervezési módosításokat hajthat
 
 Egyedi **Jelentéstéma** alkalmazásakor egy alapszintű szerkezettel rendelkező JSON-fájlra van szükség. Ezt a JSON-fájlt ezután importálhatja a Power BI Desktopba, majd alkalmazhatja a jelentésre.
 
-A téma JSON-fájlja segítségével a **Formázás** ablaktáblán látható elemek szinte mindegyikét testre szabhatja és egységesítheti. A cél az, hogy teljes körűen, egészen a legapróbb részletekig megszabhassa a jelentések megjelenését és működését.
+A **Formázás** panelen látható elemek szinte mindegyikét testre szabhatja és egységesítheti közvetlenül a Power BI Desktopban elvégezve a testreszabásokat, vagy a téma JSON-fájljával. A cél az, hogy teljes körűen, egészen a legapróbb részletekig megszabhassa a jelentések megjelenését és működését.
 
 ## <a name="how-report-themes-work"></a>A jelentéstémák működése
-Power BI Desktop-jelentésre úgy alkalmazhat jelentéstémát, hogy kiválaszt egyet az elérhető beépített jelentéstémák közül, vagy egyéni témát importál.
+Power BI Desktop-jelentésre úgy alkalmazhat jelentéstémát, hogy kiválaszt egyet az elérhető beépített jelentéstémák közül, vagy pedig létrehoz vagy importál egy egyéni témát.
 
 | Beépített jelentéstéma | Alapértelmezett színsorrend    |
 |------ |---------- |
@@ -70,7 +70,48 @@ A Power BI Desktop jelzi, ha a téma sikeresen betöltődött.
 
 ![A téma importálása sikerült](media/desktop-report-themes/report-themes_5.png)
 
-A témafájl sikeres importálása után tekintsük meg a JSON-fájl szerkezetét.
+A Power BI Desktopban kétféleképpen szabhatja testre a témákat. Most egymás után mindkettőt áttekintjük.
+
+
+## <a name="customize-report-themes-preview"></a>Jelentéstémák testreszabása (előzetes verzió)
+
+A **Power BI Desktop** 2019. decemberi kiadásától kezdődően a jelentéstémák kétféleképpen szabhatók testre:
+
+* Téma létrehozása és testreszabása a Power BI Desktopban (előzetes verzió)
+* Egyéni jelentéstéma JSON-fájljának létrehozása és testreszabása
+
+Ha közvetlenül a Power BI Desktopban szeretne testreszabni egy témát, először a **Fájl > Lehetőségek és beállítások > Beállítások** elemet kell választania, majd az **Előzetes verziójú funkciók** szakaszban be kell jelölnie az **Aktuális téma testreszabása** lehetőség melletti négyzetet, az alábbi képen látható módon.
+
+![Testreszabott témák engedélyezése](media/desktop-report-themes/report-themes_5a.png)
+
+A rendszer kérheti, hogy az előzetes verziójú funkció engedélyezéséhez indítsa újra a Power BI Desktopot.
+
+Az újraindítást követően megkezdheti az aktuális téma testreszabását úgy, hogy a **Kezdőlap** menüszalagot, majd a menüszalagon a **Témaváltás > Aktuális téma testreszabása** lehetőséget választja. Ekkor megjelenik egy párbeszédpanel, amelyen megjelenik a meglévő témák testreszabásának számos lehetősége.
+
+![A téma testreszabása](media/desktop-report-themes/report-themes_5b.png)
+
+Ha Önnek tetszik egy meglévő téma, és csak néhány módosítást szeretne végezni, kiválaszthat egy meglévő témát, majd az **Aktuális téma testreszabása** lehetőséget a párbeszédpanelen, az alábbi képen látható módon. 
+
+![Az aktuális téma testreszabása](media/desktop-report-themes/report-themes_5c.png)
+
+> [!NOTE]
+> Az előző kép úgy készült, hogy engedélyezve volt az új menüszalag, amely jelenleg előzetes verzióban érhető el. Az új menüszalag előzetes verzióját úgy engedélyezheti, hogy a **Fájl > Lehetőségek és beállítások > Beállítások** elemet választja, majd az **Előzetes verziójú funkciók** szakaszban bejelöli **Az új menüszalag előzetes verziója** lehetőséget.
+
+A testreszabható témabeállítások a következő kategóriákba vannak sorolva, amelyek a Téma testreszabása párbeszédpanelen is megjelennek:
+
+* Téma neve (a testreszabott témának nevet adhat) és különböző színbeállítások (témaszínek, hangulatszínek, eltérő színek stb.)
+* Szövegbeállítások, beleértve a betűkészletet, a betűméretet és -színt, valamint a tengelycímeket, a színeket, a kártyákat a KPI-ket és a lapok fejléceit
+* Vizuális elemek, például a háttér, a szegélyek, a fejléc és az elemleírások
+* Oldalelemek, például háttérkép és a háttér
+* A Szűrő panel beállításai, beleértve a háttérszínt, az átlátszóságot, a betűtípust és az ikon színét, a méretet, a szűrőkártyákat és egyebeket
+
+Miután elvégezte a módosításokat, és megnyomja az **Alkalmazás és mentés** gombot, a rendszer menti a témát, és használhatja azt az aktuális jelentésben, illetve exportálhatja azt. 
+
+Az aktuális téma ilyen testreszabásával gyorsan és egyszerűen, vizuális feladatként végezheti el a témák testreszabását. A témáknak azonban van véges számú olyan módosítása, amelyhez módosítani kell a téma JSON-fájlját, a következő szakaszban leírtak szerint.
+
+> [!TIP]
+> A legtöbb témaelemet testreszabhatja a vizuális elemekkel az **Aktuális téma testreszabása** párbeszédpanelen, majd exportálhatja a JSON-fájlt, és manuálisan végezheti el a finomhangolást (maga a JSON-fájl módosításával). Ezt követően átnevezheti a finomhangolt JSON-fájlt, importálhatja azt, és így már az összes kívánt módosítással rendelkezni fog.
+
 
 ## <a name="structure-of-a-report-theme-json-file"></a>Egy jelentéstémát tartalmazó JSON-fájl szerkezete
  Ha az előző szakaszban kiválasztott alapszintű JSON-fájlt (*St. Patrick’s Day.json*) megnyitjuk egy szerkesztőben, a következő képernyőképhez hasonlóan fog kinézni:
@@ -134,7 +175,7 @@ Meg szeretne ismerkedni a **jelentéstémákkal**? Íme néhány előre elkész�
 
   ![A waverform.json téma](media/desktop-report-themes/report-themes_10.png)
 
-* A [gyengénlátók számára az alapértelmezett témához képest könnyebben olvasható téma](https://go.microsoft.com/fwlink/?linkid=843923). A neve: [ *ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
+* A [gyengénlátók számára az alapértelmezett témához képest könnyebben olvasható téma](https://go.microsoft.com/fwlink/?linkid=843923). A neve: [*ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
 
   ![A ColorblindSafe-Longer.json téma.](media/desktop-report-themes/report-themes_11.png)
 

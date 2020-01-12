@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/18/2017
-ms.author: mshenhav
-ms.openlocfilehash: c843a3ef8ddfde591dec27ea523cb73857d1a289
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/11/2019
+ms.author: painbar
+ms.openlocfilehash: 7668df00d63fc1bdb8bb0e113fa9ad7e0f029147
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870120"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221377"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Adatriasztások beállítása a Power BI mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -62,7 +62,8 @@ A riasztásokat egyenként kezelheti a mobileszközökön vagy [az összeset egy
 
 1. Koppintson az irányítópulton az egyik számot vagy mérőműszert tartalmazó csempére, amelyikhez van riasztás rendelve.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual.png)
+   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
+
 2. Koppintson a harang ikonra ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png).  
 3. Koppintson a riasztás nevére annak szerkesztéséhez, a kapcsolóra az e-mail értesítések kikapcsolásához vagy a szemetesre a riasztás törléséhez.
    
@@ -148,10 +149,12 @@ Az adatforrások általában napi frissítésre vannak állítva, némelyik azon
 2. Ha úgy konfigurálta a riasztást, hogy az e-mailben is értesítse, valami ilyesmit talál majd a bejövő levelei közt.
    
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alerts-email.png)
-3. A Power BI egy üzenetet küld az **Értesítési központba**, és egy új riasztás ikont jelenít meg az érintett csempén ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png).
-4. A globális navigációs gombra ![](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) koppintva [nyissa meg az **Értesítési központot**](mobile-apps-notification-center.md), és tekintse meg a riasztás részleteit.
+3. A Power BI hozzáad egy üzenetet az [Értesítési központban](mobile-apps-notification-center.md), és egy sárga pontot ad hozzá a harang ikonhoz ![harang ikon](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) a címsorban (iOS-en és Androidon), vagy a globális navigációs gombhoz ![globális navigációs gomb](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) (Windows 10-eszközökön).
+
+
+4. A harang ikonra ![harang ikon](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) vagy a globális navigációs gombra ![globális navigációs gomb](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) koppintva [nyithatja meg az **Értesítési központot**](mobile-apps-notification-center.md), és tekintheti meg a riasztás részleteit.
    
-     ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-notifications.png) 
+     
 
 > [!NOTE]
 > A riasztások kizárólag a frissített adatokon működnek. Az egyes adatok frissítésekor a Power BI ellenőrzi, hogy az adott adathoz van-e beállítva riasztás. Ha az adott adat elérte a riasztási küszöböt, a riasztás aktiválódik.
@@ -164,7 +167,7 @@ Az adatforrások általában napi frissítésre vannak állítva, némelyik azon
 * A riasztások kizárólag a frissített adatokon működnek. Statikus adatokon nem.
 * A riasztások streamelési adatokat tartalmazó csempéken nem működnek.
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 * [Riasztások kezelése a Power BI szolgáltatásban](../../service-set-data-alerts.md)
 * [Power BI mobil értesítési központ](mobile-apps-notification-center.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

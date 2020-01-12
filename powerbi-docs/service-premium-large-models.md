@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/29/2019
+ms.date: 12/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 934f045e2546893c48211729402a773b4bbe2aa0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 044952c6ce5e3b1550067f9d288f8eab02b868bb
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696761"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223710"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Nagyméretű modellek a Power BI Premiumban (előzetes verzió)
 
@@ -118,23 +118,4 @@ Vegye figyelembe az alábbi korlátozásokat a nagyméretű modellek használata
 - **Multi-Geo támogatás**: A Premium Filesban tárolt adathalmazok nem használhatók olyan kapacitások esetében, amelyeknél a [Multi-Geo](service-admin-premium-multi-geo.md) is engedélyezve van.
 
 - **Letöltés Power BI Desktopba**: A Premium Filesban tárolt adathalmazokat nem lehet [.pbix-fájlként letölteni](service-export-to-pbix.md).
-- **Támogatott régiók**: A nagyméretű modellek a következő régiókban támogatottak:
-  - Kelet-Ausztrália
-  - Délkelet-Ausztrália
-  - USA középső régiója
-  - Kelet-Ázsia
-  - USA keleti régiója
-  - USA 2. keleti régiója
-  - Kelet-Japán
-  - Nyugat-Japán
-  - Korea középső régiója
-  - Korea déli régiója
-  - USA északi középső régiója
-  - Észak-Európa
-  - USA déli középső régiója
-  - Délkelet-Ázsia
-  - Egyesült Királyság déli régiója
-  - Egyesült Királyság nyugati régiója
-  - Nyugat-Európa
-  - USA nyugati régiója
-  - USA 2. nyugati régiója
+- **Támogatott régiók**: A nagyméretű modellek használata az összes olyan Azure-régióban támogatott, amely támogatja a Premium Files-tárolást. További információért tekintse meg a [régiónként elérhető termékeket](https://azure.microsoft.com/global-infrastructure/services/?products=storage).

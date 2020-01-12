@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 88a49af62a26b64d8b913b6df03c82841f31a489
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: 0f24675d4185efd7524d9e8c453c919d64e0364a
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410956"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75222146"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 
@@ -29,14 +29,12 @@ A **Továbbiak...** lehetőség a **Leggyakoribb** menüből való kiválasztás
 ![Adatok lekérése gomb](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> A Power BI csapata folyamatosan bővíti a **Power BI Desktop** és a **Power BI szolgáltatás** számára elérhető adatforrásokat. Ezért gyakran láthatja majd a fejlesztés alatt álló adatforrások előzetes verzióit *bétaverzió* vagy *előzetes verzió* felirattal. A *bétaverzió* vagy *előzetes verzió* felirattal ellátott adatforrások támogatása és működése korlátozott, használatuk éles környezetben nem ajánlott. 
-
-> Emellett a **Power BI Desktophoz** *Béta* vagy *Előzetes verzióként* megjelölt adatforrások nem feltétlenül használhatók a **Power BI szolgáltatásban** vagy más Microsoft-szolgáltatásban, amíg az adatforrás általánosan elérhető nem lesz.
+> A Power BI csapata folyamatosan bővíti a **Power BI Desktop** és a **Power BI szolgáltatás** számára elérhető adatforrásokat. Ezért gyakran láthatja majd a fejlesztés alatt álló adatforrások előzetes verzióit *bétaverzió* vagy *előzetes verzió* felirattal. A *bétaverzió* vagy *előzetes verzió* felirattal ellátott adatforrások támogatása és működése korlátozott, használatuk éles környezetben nem ajánlott. Emellett a **Power BI Desktophoz***Béta* vagy *Előzetes verzióként* megjelölt adatforrások nem feltétlenül használhatók a **Power BI szolgáltatásban** vagy más Microsoft-szolgáltatásban, amíg az adatforrás általánosan elérhető nem lesz.
 
 ## <a name="data-sources"></a>Adatforrások
 Az adattípusok a következő kategóriákba vannak csoportosítva:
 
-* Összes
+* Az összes
 * Fájl
 * Adatbázis
 * Power BI
@@ -82,7 +80,7 @@ Az **Adatbázis** kategória a következő adatkapcsolatokat biztosítja:
 * Vertica
 * Snowflake
 * Essbase
-* AtScale-kockák (bétaverzió)
+* AtScale-kockák
 * BI-összekötő
 * Dremio
 * Exasol
@@ -104,7 +102,7 @@ A **Power Platform** kategória a következő adatkapcsolatokat biztosítja:
 * Power BI-adathalmazok
 * Power BI-adatfolyamok
 * Common Data Service
-* Power Platform-adatfolyamok (bétaverzió)
+* Power Platform-adatfolyamok
 
 A következő képen a **Lekérdezés** ablak látható, amelyen a **Power Platform** kategória van kiválasztva.
 
@@ -118,13 +116,14 @@ Az **Azure** kategória a következő adatkapcsolatokat biztosítja:
 * Azure Blob-tároló
 * Azure Table Storage
 * Azure Cosmos DB
-* Azure Data Lake Storage Gen2 (béta)
+* Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight interaktív lekérdezés
 * Azure Data Explorer (Kusto)
-* Azure Cost Management (bétaverzió)
+* Azure Cost Management
+* Azure Time Series Insights (bétaverzió)
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Azure** kategória ki van választva.
 
@@ -236,7 +235,7 @@ Amikor egy szerző megnyit egy .PBIDS-fájlt, megnyílik a Power BI Desktop, és
 
 Ettől kezdve a felhasználó megkezdheti a vizualizációk létrehozását, vagy a *Legutóbbi források* használatával betölthet a modellbe egy új táblacsoportot. 
 
-A .PBIDS-fájlok jelenleg csak egyetlen adatforrást támogatnak egyetlen fájlban. Egynél több adatforrás megadása hibát eredményez. 
+A .PBIDS-fájlok jelenleg csak egyetlen adatforrást támogatnak egy adott fájlban. Egynél több adatforrás megadása hibát eredményez. 
 
 A .PBIDS-fájl létrehozásához a rendszergazdának meg kell adnia az adott kapcsolathoz szükséges bemeneteket, és megadhatja a kapcsolat módját is, ami lehet **DirectQuery** vagy **Importálás**. Ha a **mód** hiányzik vagy null értékű a fájlban, akkor a fájlt a Power BI Desktopban megnyitó felhasználónak ki kell választania vagy a DirectQuery, vagy az Importálás lehetőséget. 
 

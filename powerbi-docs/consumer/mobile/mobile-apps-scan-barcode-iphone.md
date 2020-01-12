@@ -1,19 +1,19 @@
 ---
 title: Vonalkód beolvasása a Power BI mobilalkalmazásból
 description: Beolvashatja a való világbeli vonalkódokat, hogy közvetlenül a szűrt BI-adatokhoz jusson a Power BI mobilalkalmazásban.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
-ms.author: mshenhav
-ms.openlocfilehash: bbc787203293fc6c9075400abf674345710faaed
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/02/2019
+ms.author: painbar
+ms.openlocfilehash: ee3cfec0c735ad52f9a036e75f61c1ab0400567b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879180"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75217812"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Vonalkód beolvasása saját eszközzel a Power BI mobilalkalmazásból
 Beolvashatja a való világbeli vonalkódokat, hogy közvetlenül a szűrt BI-adatokhoz jusson a Power BI mobilalkalmazásban.
@@ -32,14 +32,12 @@ Tegyük fel, hogy az egyik munkatársa [megcímkézett egy vonalkódmezőt egy j
 Amikor beolvassa egy termék vonalkódját a Power BI alkalmazás olvasójával az eszközén, megjelenik a vonalkódot tartalmazó jelentés (vagy a jelentések listája). Ezt a jelentést megnyithatja a vonalkód alapján szűrve.
 
 ## <a name="scan-a-barcode-with-the-power-bi-scanner"></a>Vonalkód beolvasása a Power BI-olvasóval
-1. A Power BI mobilalkalmazásban nyissa meg a fő navigációs menüt ![](media/mobile-apps-scan-barcode-iphone/pbi_iph_navmenu.png) a bal felső sarokban. 
-2. Görgessen az **Olvasó** lehetőségig, majd válassza ki. 
-   
+1. A navigációs sávon koppintson a **További beállítások** (...) lehetőségre, majd a **Vizsgálat** elemre.
+
     ![](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
-3. Ha a kamera nincs engedélyezve, engedélyeznie kell, hogy a Power BI alkalmazás használhassa azt. Ezt csak egyszer kell megtennie. 
-4. Irányítsa az olvasót egy termék vonalkódjára. 
-   
-    Megjelenik a vonalkódhoz társított jelentések listája.
+
+2. Ha a kamera nincs engedélyezve, engedélyeznie kell, hogy a Power BI alkalmazás használhassa azt. Ezt csak egyszer kell megtennie. 
+4. Irányítsa az olvasót egy termék vonalkódjára. Ekkor megjelenik a vonalkódhoz társított jelentések listája.
 5. A jelentés nevére koppintva megnyithatja az adott jelentést az eszközén, a vonalkód alapján automatikusan szűrve.
 
 ## <a name="filter-by-other-barcodes-while-in-a-report"></a>A jelentés szűrése más vonalkódok alapján
@@ -74,5 +72,5 @@ A jelentés, amelynek a szűrését választotta olyan adatmodellen alapul, amel
 ## <a name="next-steps"></a>Következő lépések
 * [Vonalkódmező címkézése a Power BI Desktopban](../../desktop-mobile-barcodes.md)
 * [A Power BI-irányítópultok csempéi](../end-user-tiles.md)
-* [Irányítópultok a Power BI-ban](../end-user-dashboards.md)
+* [A Power BI-irányítópultok](../end-user-dashboards.md)
 

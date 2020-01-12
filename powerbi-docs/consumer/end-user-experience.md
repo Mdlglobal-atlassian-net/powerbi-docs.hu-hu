@@ -12,10 +12,10 @@ ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: e6be58971b265414440041f4667a0b0cc455cdd4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73851532"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Rövid útmutató – Navigáció a Power BI szolgáltatásban
@@ -91,7 +91,7 @@ A **Kedvencek** segítségével gyorsan elérheti azokat a tartalmakat, amelyek 
    
    ![megjelölés kedvencként](./media/end-user-experience/power-bi-report-favorite.png)
 
-3. Nyissa meg a **Kedvencek** *panelt* a navigációs ablaktáblán lévő **Kedvencek** lehetőség vagy a csillag ikon ![sárga csillag ikon képernyőképe](media/end-user-experience/powerbi-star-icon.png) kiválasztásával.
+3. Nyissa meg a **Kedvencek** *panelt* a navigációs ablakban lévő **Kedvencek** lehetőség vagy a csillag ikon ![sárga csillag ikon képernyőképe](media/end-user-experience/powerbi-star-icon.png) kiválasztásával.
    
    ![a Kedvencek képernyő megnyitása](./media/end-user-experience/power-bi-favorite-pane.png)
    

@@ -1,19 +1,19 @@
 ---
 title: Jelentések vizsgálata a Power BI mobilalkalmazásokban
 description: Tudja meg, hogyan tekintheti meg és használhatja Power BI mobilalkalmazásokban a jelentéseket a telefonján vagy a táblagépén. A jelentéseket a Power BI szolgáltatásban vagy a Power BI Desktopban hozza létre, majd használhatja azokat a mobilalkalmazásokban.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/09/2019
-ms.author: mshenhav
-ms.openlocfilehash: d4b9a9aeda00dd7f16690d1e92336f5b63adf1da
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/16/2019
+ms.author: painbar
+ms.openlocfilehash: bb54a4e403f2cc12800d0c97e44308f7ad5c5f65
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869770"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220738"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Jelentések vizsgálata a Power BI mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -96,29 +96,43 @@ A jelentés láblécében azokat a műveleteket találja, amelyeket végrehajtha
 ![Jelentés lábléce](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
 A láblécről végrehajtható műveletek a következők:
-- A jelentés szűrője és a keresztkijelölések visszaállíthatók az eredeti állapotukba.
-- Megnyitható a beszélgetési panel, ahol megtekinthetők a jelentéshez fűzött megjegyzések, és újak is megadhatók.
-- Megnyitható a szűrőpanel, amelyen látható és módosítható a jelentésben pillanatnyilag használt szűrő.
-- A jelentés oldalainak listázása. Ha rákoppint egy oldal nevére, akkor betöltődik és megjelenik az oldal.
+* A jelentés szűrője és a keresztkijelölések visszaállíthatók az eredeti állapotukba.
+* Megnyitható a beszélgetési panel, ahol megtekinthetők a jelentéshez fűzött megjegyzések, és újak is megadhatók.
+* Megnyitható a szűrőpanel, amelyen látható és módosítható a jelentésben pillanatnyilag használt szűrő.
+* A jelentés oldalainak listázása. Ha rákoppint egy oldal nevére, akkor betöltődik és megjelenik az oldal.
 Úgy lapozhatja a jelentést, hogy a képernyő szélétől a közepe felé pöccint.
-- Megtekintheti a jelentés összes műveletét.
+* Megtekintheti a jelentés összes műveletét.
 
 #### <a name="all-report-actions"></a>A jelentés összes művelete
 Ha jelentés láblécén a **További beállítások** (...) elemre koppint, megjelenik minden olyan művelet, amelyet végrehajthat a jelentésen:
 
 
-![A jelentés összes művelete](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
+![A jelentés összes művelete](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-all-actions.png)
 
 Előfordulhat, hogy egyes műveletek le vannak tiltva, mert az adott jelentésen nem lehet elvégezni őket.
 Például:
+
+A **Könyvjelzők** elem csak akkor jelenik meg, ha lettek beállítva [könyvjelzők](mobile-reports-in-the-mobile-apps.md#bookmarks) a jelentésben. A Power BI szolgáltatásban definiálható személyes könyvjelzők és a jelentés létrehozója által definiált könyvjelzők is megjelennek. Ha egy könyvjelző alapértelmezett könyvjelzőként van definiálva, a jelentés ebben a nézetben nyílik meg, amikor betöltődik.
+
+A **feliratozásra és megosztásra** való lehetőség ki lehet kapcsolva, ha a cégnél egy olyan [Intune-beli védelmi szabályzat](https://docs.microsoft.com/intune/app-protection-policies) van érvényben, amely tiltja a Power BI-mobilalkalmazásból történő megosztást.
+
+A **meghívás** lehetősége csak akkor érhető el, ha Önnek van engedélye arra, hogy másokkal megossza a jelentést. Erre csak akkor van engedélye, ha Ön a jelentés tulajdonosa, vagy a tulajdonos adott Önnek újramegosztási engedélyt.
 
 **Az aktuális hely alapján történő szűrés** csak akkor érhető el, ha a jelentés adatait földrajzi adatokkal kategorizálta a készítője. További információ: [Földrajzi adatok azonosítása jelentésekben](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
 
 A **jelentésnek a beszkennelt vonalkód alapján történő szűrése** csak akkor érhető el, ha korábban a jelentés adathalmazát **vonalkódként** címkézték meg. További információt a [Vonalkódok felcímkézése a Power BI Desktopban](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes) című cikkben találhat.
 
-A **meghívás** lehetősége csak akkor érhető el, ha Önnek van engedélye arra, hogy másokkal megossza a jelentést. Erre csak akkor van engedélye, ha Ön a jelentés tulajdonosa, vagy a tulajdonos adott Önnek újramegosztási engedélyt.
+### <a name="bookmarks"></a>Könyvjelzők
 
-A **feliratozásra és megosztásra** való lehetőség ki lehet kapcsolva, ha a cégnél egy olyan [Intune-beli védelmi szabályzat](https://docs.microsoft.com/intune/app-protection-policies) van érvényben, amely tiltja a Power BI-mobilalkalmazásból történő megosztást.
+A Power BI mobilalkalmazás a jelentés létrehozója által definiált és a Power BI szolgáltatásban definiálható személyes könyvjelzőket is támogatja. A könyvjelzők menüjét a **További beállítások** (...) alatt találhatja meg a [Jelentés műveletei eszköztárban](mobile-reports-in-the-mobile-apps.md#all-report-actions).
+
+![könyvjelzőmenü](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
+
+Ha egy jelentésnek egy könyvjelzőnézete van megnyitva, a könyvjelző neve megjelenik a jelentés tetején.
+
+![könyvjelzőnézet](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
+
+[További információ a könyvjelzőkről a Power BI szolgáltatásban](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
 
 ## <a name="next-steps"></a>Következő lépések
 * [Telefonra optimalizált Power BI-jelentések megtekintése és használata](mobile-apps-view-phone-report.md)

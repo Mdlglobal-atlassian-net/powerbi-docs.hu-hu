@@ -2,19 +2,18 @@
 title: Szószedet Power BI-felhasználóknak
 description: A Power BI számos új kifejezést használ, és az is előfordul, hogy régebbi kifejezések új értelmet nyernek. A szószedet segít abban, hogy megismerkedhessen a Power BI terminológiájával.
 services: power-bi
-ms.custom: seodec18
 author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 12/18/2019
 ms.author: mihart
-ms.openlocfilehash: 8c7a0463e8a521482a1aab6a53ae9656585a7849
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.openlocfilehash: 046f35613e5fe748e93389fbe10a77af08f449e3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548539"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75303927"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -76,7 +75,9 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 **content view (tartalom nézet)**
 
-**cross filter, cross highlight (keresztszűrés, keresztkijelölés)**
+**keresztszűrés** A vizualizációk közötti interakciókra vonatkozik. A keresztszűrés eltávolítja a nem alkalmazható adatokat. Ha például a perecdiagramban a **Moderálás** lehetőséget választja, azzal keresztszűrést végez a vonaldiagramon. A vonaldiagramon most csak azok az adatpontok jelennek meg, amelyek a Moderálás szegmensre vonatkoznak.
+
+**keresztkijelölés** A vizualizációk közötti interakciókra vonatkozik. A keresztkiemelés az összes eredeti adatpontot megtartja, de elhalványítja azokat, amelyek nem vonatkoznak a kijelölésre. Ha például a perecdiagramban a **Moderálás** lehetőséget választja, azzal keresztkijelölést végez a vonaldiagramon. Az összes olyan adat elhalványul az oszlopdiagramon, amely nem vonatkozik a Moderálás szegmensre, és az összes olyan adat ki lesz emelve, amely vonatkozik a Moderálás szegmensre.
 
 **custom visual (egyéni vizualizáció)** A közösség és a Microsoft által létrehozott vizualizációk. Ezek az Office Áruházból tölthetők le, és használhatók a Power BI-jelentésekben.
 
@@ -310,6 +311,8 @@ A Power BI-irányítópultok jelentéscsempéket tartalmaznak.
 **value, values (érték, értékek)** A vizualizációban megjelenítendő numerikus adatok.
 
 **visual, visualization (vizualizáció)** Egy diagram. A vizualizáció lehet például sávdiagram, fatérkép, perecdiagram, térkép.
+
+**Vizualizációk közötti interakció** A Power BI egyik legnagyszerűbb funkciója, hogy a jelentésoldalon szereplő vizualizációk mind kapcsolódnak egymáshoz. Ha kiválasztja a vizualizáció egyik adatpontját, az oldalon szereplő összes többi, az adott adatot tartalmazó vizualizáció módosul a kijelölés alapján.
 
 **Visualizations pane (Vizualizációk panel)** A Power BI Desktopban és a Power BI szolgáltatásban egyaránt megtalálható jelentésvásznon elérhető gyári vizualizációsablonok neve. Kisméretű sablonokat, más néven ikonokat tartalmaz mindegyik natív vizualizációtípushoz.  
 

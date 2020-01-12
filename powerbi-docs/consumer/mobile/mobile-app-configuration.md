@@ -8,16 +8,16 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/07/2019
 ms.author: painbar
-ms.openlocfilehash: a517ee4edce6e18eadcbe2b1b6765684f8121b21
-ms.sourcegitcommit: 768e1e4b19fe8c7627010127c2420d63021cb542
+ms.openlocfilehash: ccc7e3864590145309709d27774951c281b3ebdd
+ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199424"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622350"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>A Power BI alkalmazás távoli konfigurálása mobileszköz-kezelési (MDM-) eszközzel
 
-Az iOS és Android rendszerhez készült Power BI Mobile alkalmazás olyan beállításokat támogat, amelyekkel az Office 365 és a mobileszköz-kezelési (MDM-) szolgáltatások – például az Intune – rendszergazdái testreszabhatják az alkalmazás viselkedését.
+Az iOS és az Android rendszerhez készült Power BI Mobile alkalmazás olyan beállításokat támogat, amelyekkel a mobileszköz-kezelési (MDM-) szolgáltatások – például az Intune – rendszergazdái testreszabhatják az alkalmazás viselkedését.
 
 A Power BI Mobile alkalmazás a következő konfigurációs forgatókönyveket támogatja:
 

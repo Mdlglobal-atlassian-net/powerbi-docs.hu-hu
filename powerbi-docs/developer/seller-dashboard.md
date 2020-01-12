@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 12/03/2019
-ms.openlocfilehash: 12ecde787bb268190f9b94a2db5992d5840080ac
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.openlocfilehash: 73a6a3d16ae2515af41a3232a37579e18876f38b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75002535"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223663"
 ---
 # <a name="submit-a-power-bi-visual-to-appsource-using-seller-dashboard"></a>Power BI-vizualizáció beküldése az AppSource-ba az Értékesítői irányítópult használatával
 
@@ -103,7 +103,7 @@ Kövesse az ebben a szakaszban található utasításokat, ha az Értékesítői
     * [Feleljen meg a követelményeknek](power-bi-custom-visuals-certified.md#certification-requirements)
     * Sikeres kódfelülvizsgálat
 
-2. A Microsoft Power BI-vizualizációkért felelős csapata értesíti, amint a Power BI-vizualizáció megkapja a minősítést, és elérhetővé válik a [Minősített listában](power-bi-custom-visuals-certified.md#list-of-power-bi-visuals-that-have-been-certified), illetve a vizualizáció elutasítása esetén megküldi az orvosolandó problémák listáját. A fejlesztő felelőssége, hogy biztosítsa a megfelelő kommunikációt a Microsoft csapatával, és szükség esetén frissítse Minősített vizualizációit.
+2. A Microsoft Power BI-vizualizációkért felelős csapata értesíti, amint a Power BI-vizualizáció megkapja a minősítést, és elérhetővé válik a [minősített Power BI-vizualizációk](power-bi-custom-visuals-certified.md#certified-power-bi-visuals) listájában, illetve a vizualizáció elutasítása esetén megküldi az orvosolandó problémák listáját. A fejlesztő felelőssége, hogy biztosítsa a megfelelő kommunikációt a Microsoft csapatával, és szükség esetén frissítse Minősített vizualizációit.
 
 ## <a name="tracking-submission-status-and-usage"></a>A beküldési állapot és a használat nyomon követése
 
@@ -113,13 +113,13 @@ A beküldés után az [alkalmazás irányítópultján](https://sellerdashboard.
 
 ## <a name="certify-your-visual"></a>A vizualizáció tanúsítása
 
-Létrehozás után igény szerint [minősíttetheti](../developer/power-bi-custom-visuals-certified.md) is a vizualizációt.
+Létrehozás után igény szerint [tanúsítványt](../developer/power-bi-custom-visuals-certified.md) szerezhet be a vizualizációhoz.
 
 ## <a name="next-steps"></a>Következő lépések
 
 [Egyéni Power BI-vizualizáció fejlesztése](visuals/custom-visual-develop-tutorial.md)  
 [Vizualizációk a Power BI-ban](../visuals/power-bi-report-visualizations.md)  
 [Egyéni vizualizációk a Power BI-ban](../developer/power-bi-custom-visuals.md)  
-[Power BI-vizualizáció minősíttetése](../developer/power-bi-custom-visuals-certified.md)
+[Tanúsítvány beszerzése Power BI-vizualizációhoz](../developer/power-bi-custom-visuals-certified.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

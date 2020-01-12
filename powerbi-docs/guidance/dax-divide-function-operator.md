@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c20a366ef657e851ef77a9649dbcc8b66b67dac0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 7eea15d4389afaac2ac69e2f26eaa38fe84e337b
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74695197"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75304166"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: A DIVIDE függvény és a divide operátor (/)
 
@@ -58,7 +58,7 @@ A DIVIDE függvényt olyan esetekben célszerű használnia, amikor a nevető eg
 
 Ha a nevező egy állandó érték, használja a divide operátort. Ebben az esetben az osztás mindenképpen sikeres lesz, a kifejezés pedig jobb teljesítményt nyújt, mivel elkerüli a felesleges tesztelést.
 
-Alaposan fontolja meg, hogy a DIVIDE függvény adjon-e vissza alternatív értéket. A mértékek esetében általában jobb tervezésre vall, ha az ÜRES értéket adják vissza, ha a jelentéssel bíró eredmény nem értékelhető. További információ: [Ne konvertálja a BLANK-eket értékekre](dax-avoid-converting-blank.md).
+Alaposan fontolja meg, hogy a DIVIDE függvény adjon-e vissza alternatív értéket. Mértékek esetében általában célszerűbb, ha BLANK értéket adnak vissza. A BLANK érték visszaadása jobb választás, mivel a jelentésvizualizációk alapértelmezés szerint eltávolítják a csoportosításokat, ha az összegzések BLANK értékűek. A vizualizáció így olyan csoportokra összpontosíthat, amelyekben vannak adatok. Szükség esetén konfigurálhatja a vizualizációt úgy, hogy a szűrő minden csoportját (amely értékeket vagy ÜRES eredményt ad) megjelenítse. Ehhez engedélyeznie kell az [Adatot nem tartalmazó elemek megjelenítése](../desktop-show-items-no-data.md) beállítást.
 
 ## <a name="next-steps"></a>Következő lépések
 

@@ -6,15 +6,15 @@ ms.reviewer: mohammad ali
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/22/2019
+ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 051803b3d9708289f37271afc02b7802fb52b50e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5dd924f066b6382ed895d81ed0ada5d913c040e6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862662"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218258"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Q&A a Power BI-**ügyfelek** számára
 
@@ -67,28 +67,30 @@ Például:
 
 Ha már megismerte az adatokat, lépjen vissza az irányítópultra, és helyezze a kurzort a kérdésmezőbe. Ekkor megnyílik a Q&A képernyő.
 
-![Q&A képernyő](media/end-user-q-and-a/power-bi-screen.png) 
+![Q&A képernyő](media/end-user-q-and-a/power-bi-suggested.png) 
 
 Még mielőtt gépelni kezdene, a Q&A egy új képernyőt nyit meg, amelyen javaslatokkal segít a kérdés megfogalmazásában. Olyan kifejezéseket és kérdéseket fog látni, amelyekben szerepelnek a mögöttes adathalmazok tábláinak nevei, sőt *kiemelt* kérdések is megjelenhetnek, amelyeket az adathalmaz tulajdonosa hozott létre.
 
 Ezek bármelyikét kiválaszthatja és hozzáadhatja a kérdés mezőhöz, és módosíthatja őket meghatározott kérdésekhez. 
 
-A Q&A emellett kérdésekkel, automatikus kiegészítéssel és vizuális jelekkel is segíti a kérdések feltételét. 
+![Q&A képernyő](media/end-user-q-and-a/power-bi-result.png) 
+
+A Power BI emellett olyan funkciókkal is segíti a kérdések feltételét, mint például a kérdések, az automatikus kiegészítés és a vizuális jelek. A Power BI az irányítópultokon használt Q&A-hez, a jelentésekben használt Q&A-hez, valamint a Q&A-vizualizációhoz biztosítja ezt a segítséget. Ezeket a funkciókat a lenti, [Q&A-vizualizáció létrehozása természetes nyelvi lekérdezés begépelésével](#create-a-qa-visual-by-typing-a-natural-language-query) című szakaszban ismertetjük részletesebben
 
 <!-- ![video](../visuals/media/end-user-q-and-a/qna4.gif) -->
 
 
-## <a name="the-qa-visual"></a>A Q&A-vizualizáció
+## <a name="the-qa-visual-in-power-bi-reports"></a>A Q&A-vizualizáció használata Power BI-jelentésekben
 
-A Q&A-vizualizáció lehetővé teszi, hogy természetes nyelven feltett kérdéseire vizualizáció formájában kapja meg a választ. A Q&A-vizualizáció a többi vizualizációhoz hasonlóan viselkedik, biztosítja a keresztszűrés és a keresztkijelölés lehetőségét, és a könyvjelzőket és megjegyzéseket is támogatja. 
+A Q&A-vizualizáció lehetővé teszi, hogy természetes nyelven feltett kérdéseire vizualizáció formájában kapja meg a választ. A Q&A-vizualizáció a többi vizualizációhoz hasonlóan viselkedik jelentésekben; biztosítja a keresztszűrés és a keresztkijelölés lehetőségét, és a könyvjelzők és megjegyzések használatát is támogatja. 
 
 A Q&A-vizualizációk a felső kérdésmezőről ismerhetők fel. Ide írhatja be a természetes nyelven megfogalmazott kérdéseket. A Q&A-vizualizációt többször is felhasználhatja arra, hogy az adatokkal kapcsolatos kérdéseket tegyen fel. A jelentés elhagyásakor a Q&A-vizualizáció visszaállítja az alapértelmezéseit. 
 
 ![Alapértelmezett Q&A-vizualizáció képernyőképe](media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
 
-## <a name="use-the-qa-visual"></a>A Q&A-vizualizáció használata
-A Q&A-vizualizáció használatához választhat a javasolt kérdések közül, vagy begépelheti saját természetes nyelvű kérdését. 
+## <a name="use-qa"></a>A Q&A használata 
+A Q&A irányítópultokon való vagy a Q&A-vizualizáció jelentésekben való használatához választhat a javasolt kérdések közül, vagy begépelheti saját természetes nyelvű kérdését. 
 
 ### <a name="create-a-qa-visual-by-using-a-suggested-question"></a>Q&A-vizualizáció létrehozása javasolt kérdés használatával
 
@@ -105,26 +107,45 @@ De a természetes nyelven megadott lekérdezésekhez hozzáadhatja annak meghat�
 
 Ha nem biztos a kérdéstípusban vagy a szóhasználatban, bontsa ki az **Összes javaslat megjelenítése** elemet, vagy tekintse át a jelentésben lévő többi vizualizációt. Így megismerheti az adathalmaz szóhasználatát és tartalmát.
 
-1. Gépelje be természetes nyelven megfogalmazott kérdését a Q&A mezőbe. A kérdés beírását a Power BI automatikus kiegészítéssel, javaslatokkal és visszajelzéssel segíti.
+1. Gépelje be természetes nyelven megfogalmazott kérdését a Q&A mezőbe. A kérdés beírását a Power BI automatikus kiegészítéssel, vizuális jelzésekkel és visszajelzéssel segíti.
 
-    - Piros aláhúzás jelöli a Power BI által nem felismert szavakat. A Power BI lehetőség szerint segítséget nyújt az ilyen szavak körülírásához. Ha meglátja a helyes definíciót, válassza ki azt a legördülő listából.  
+    **Automatikus kiegészítés** – A kérdés beírása közben a Power BI Q&A kapcsolódó és környezetfüggő javaslatokat jelenít meg, hogy gyorsan tudja hatékonyan használni a természetes nyelvet. Gépelés közben azonnali visszajelzést és eredményeket kap. Az élmény ahhoz hasonló, mint amikor egy keresőmotorba gépel.
 
-        ![Pirossal aláhúzott kifejezés a Q&A kérdésmezőben](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+    Ebben a példában az utolsó javaslatra van szükségünk. 
 
-    - Ha a definíciók egyike sem helyes, próbálkozzon más kifejezéssel, vagy jelölje ki az aláhúzott szót, és kérje meg a jelentés készítőjét, hogy ezt a szót is vegye fel.
+    ![A Q&A kék színnel aláhúzott szóval](media/end-user-q-and-a/power-bi-autocomplete.png)
 
-        ![Kérdés beírása a Q&A kérdésmezőbe](media/end-user-q-and-a/power-bi-q-and-a-owner.png)
+    **Piros/kék aláhúzás** – A Power BI Q&A aláhúzva jeleníti meg a szavakat, így láthatja, hogy a Power BI mely szavakat ismerte fel, és melyeket nem. A folytonos kék aláhúzás azt jelzi, hogy a Power BI felismerte a szót. Az alábbi példában az látható, hogy a Q&A felismerte a **store** (áruház) szót.
 
-    - Ahogy előrehalad a kérdés beírásával, a Power BI értesíti, ha nem érti a kérdést, és megpróbál segíteni. Az alábbi példában a Power BI felteszi a „Did you mean...” (Arra gondolt hogy...) kérdést, és javaslatot tesz egy másik szó használatára az adathalmazból. 
+    ![A Q&A a kérdés kiegészítésére szolgáló legördülő javaslatokkal](media/end-user-q-and-a/power-bi-blue.png)
 
-        ![Módosítási javaslatokat felkínáló Q&A-vizualizáció](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+    A javasolt kérdések legördülő listájának megjelenítéséhez válasszon ki egy kékkel aláhúzott szót. 
 
-2. A Power BI által javasolt módosítás kiválasztása után az eredmények vonaldiagramon jelennek meg. 
+    ![Az „Ezzel is próbálkozhat:” javaslatokat tartalmazó legördülő lista](media/end-user-q-and-a/power-bi-try.png)
+
+
+    Amikor begépel egy szót a Q&A-ben, az gyakran piros aláhúzással van megjelölve. A piros aláhúzás két lehetséges probléma egyikét jelezheti. A problémák első típusa az alacsony megbízhatóság kategóriájába van sorolva. Ha homályos vagy nem egyértelmű szót ír be, a rendszer pirossal húzza alá a mezőt. Ilyen lehet például a Location (Hely) szó. Több mező is tartalmazhatja a Location (Hely) szót, így a rendszer piros aláhúzással kéri, hogy válassza ki a kívánt mezőt. Ebben a példában a Power BI megkéri, hogy válassza ki a VanArsdel kifejezéshez használni kívánt mezőt.
+    
+    ![Pirossal aláhúzott kifejezés a Q&A kérdésmezőben](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+    
+    Az alacsony megbízhatóság egy másik lehetséges példája, ha az area (terület) szót írja be, de az oszlop, amelyre illeszkedik, az a district (kerület). A Power BI Q&A a Bing- és az Office-integrációnak köszönhetően felismeri az azonos jelentésű szavakat. A Q&A pirossal aláhúzza a szót, hogy Ön tudja, hogy az nem közvetlen egyezés
+
+    ![A Q&A egy szinonima használatával fogalmazza át a kérdést](media/end-user-q-and-a/power-bi-red.png)
+
+    A problémák második típusa akkor fordul elő, ha a Q&A egyáltalán nem ismeri fel a szót. Ennek egy lehetséges példája, ha a geography (földrajzi hely) szót használja, annak ellenére, hogy az adatokban az sehol nem szerepel. A szó megtalálható az angol szótárban, de a Q&A piros aláhúzással jelöli meg a kifejezést. A Power BI Q&A nem tud vizualizációt létrehozni, és azt javasolja, hogy kérje a kifejezés hozzáadását a jelentés készítőjétől.
+
+    ![A Q&A arra vonatkozó javaslattal, hogy kérje a geography (földrajzi hely) szó hozzáadását a tervezőtől](media/end-user-q-and-a/power-bi-geography.png)
+
+    **Javaslatok** – Ahogy előrehalad a kérdés beírásával, a Power BI értesíti, ha nem érti a kérdést, és megpróbál segíteni. Az alábbi példában a Power BI felteszi a „Did you mean...” (Arra gondolt hogy...) kérdést, és javaslatot tesz egy másik szó használatára az adathalmazból. 
+
+    ![Módosítási javaslatokat felkínáló Q&A-vizualizáció](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+
+    A Power BI által javasolt módosítás kiválasztása után az eredmények vonaldiagramon jelennek meg. 
 
     ![Q&A-vizualizáció eredményei vonaldiagramként](media/end-user-q-and-a/power-bi-q-and-a-line.png)
 
 
-3. A vonaldiagramot azonban más típusú vizualizációvá is alakíthatja.  
+    A vonaldiagramot azonban más típusú vizualizációvá is alakíthatja.  
 
     ![Q&A-vizualizáció a kérdéshez hozzátett „as a column chart” (oszlopdiagramként) kifejezéssel](media/end-user-q-and-a/power-bi-q-and-a-specify-type.png)
 
@@ -143,7 +164,7 @@ Ezután válassza a **Beállítások** > **Irányítópultok** elemet. Ellenőri
 **2. válasz**: Bizonyos helyzetekben nem fog hozzáférni a beállításokhoz. Ha az irányítópult *készítője* vagy a rendszergazda kikapcsolta a Q&A-t, akkor tőlük kell megkérdeznie, hogy visszakapcsolhatja-e.   
 
 **Kérdés**: Nem a várt eredményeket látom, amikor beírok egy kérdést.    
-**Válasz**: Válassza ki a jelentés vagy irányítópult tulajdonosával való kapcsolatfelvétel lehetőségét. Ezt megteheti közvetlenül a Q&A irányítópult oldaláról vagy a Q&A-vizualizációból. A tulajdonos kilétét a Power BI fejlécéből is kiolvashatja.  A tervező sok mindent tehet a Q&A-eredmények javítása érdekében. A tervező például átnevezheti az adatkészlet oszlopait, hogy azok könnyebben érhető kifejezéseket használjanak (`CustomerFirstName` `CustFN` helyett). Mivel a tervező ismeri igazán jól az adathalmazt, hasznos kérdéseket is megfogalmazhat, és felveheti azokat a Q&A által javasolt kérdések közé.
+**Válasz**: Válassza ki a jelentés vagy irányítópult tulajdonosával való kapcsolatfelvétel lehetőségét. Ezt megteheti közvetlenül a Q&A irányítópult oldaláról vagy a Q&A-vizualizációból. A tulajdonos kilétét a Power BI fejlécéből is kiolvashatja.  A tervező sok mindent tehet a Q&A-eredmények javítása érdekében. A tervező például átnevezheti az adatkészlet oszlopait, hogy azok könnyebben érhető kifejezéseket használjanak (`CustomerFirstName``CustFN` helyett). Mivel a tervező ismeri igazán jól az adathalmazt, hasznos kérdéseket is megfogalmazhat, és felveheti azokat a Q&A által javasolt kérdések közé.
 
 ![Kapcsolattartási adatok megjelenítése](media/end-user-q-and-a/power-bi-q-and-a-contact.png)
 

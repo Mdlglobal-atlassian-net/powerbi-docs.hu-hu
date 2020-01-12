@@ -10,10 +10,10 @@ ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 92c473b5df6c21509ba32e41d88dd43c265fa3a0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73861415"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Irányítópult-csempék a Power BI-ban
@@ -59,8 +59,8 @@ További segítségre van szüksége annak megértéséhez, hogy milyen elemekb�
    * [Megnyithatja a csempe létrehozásához használt munkafüzetet ](end-user-reports.md) ![munkalap ikon](./media/end-user-tiles/power-bi-open-worksheet.png)  
    * [Megtekintheti a csempét fókusz módban ](end-user-focus.md) ![fókusz ikon](./media/end-user-tiles/fullscreen-icon.jpg)  
    * [Elemzéseket tekinthet meg ](end-user-insights.md) ![elemzések ikon](./media/end-user-tiles/power-bi-insights.png)
-   * [Megjegyzéseket adhat hozzá, és beszélgetést indíthat](end-user-comment.md) ![megjegyzés ikon](./media/end-user-tiles/comment-icons.png)
-   * [Kezelheti az irányítópult csempéjén beállított riasztásokat](end-user-alerts.md)  ![riasztás ikon](./media/end-user-tiles/power-bi-alert-icon.png)
+   * [Megjegyzéseket adhat hozzá, és beszélgetést indíthat](end-user-comment.md)  ![megjegyzés ikon](./media/end-user-tiles/comment-icons.png)
+   * [Kezelheti az irányítópult adott csempéjén beállított riasztásokat](end-user-alerts.md)  ![riasztás ikon](./media/end-user-tiles/power-bi-alert-icon.png)
    * [Adatokat nyithat meg az Excelben](end-user-export.md)  ![exportálás ikon](./media/end-user-tiles/power-bi-export-icon.png)
 
 

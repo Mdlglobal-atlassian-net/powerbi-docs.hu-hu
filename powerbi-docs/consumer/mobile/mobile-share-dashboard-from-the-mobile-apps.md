@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 232d311e876a5fe01eb6c8091eb7a83669592cbf
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 70ecd56f2823e608aa62deb4a5033f53272d3382
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879083"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221015"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Irányítópult vagy jelentés megosztása a Power BI mobilalkalmazásokból
 A következőkre vonatkozik:
@@ -26,120 +26,73 @@ A következőkre vonatkozik:
 
 Az iOS vagy Android rendszerű Power BI mobilalkalmazásokban [jegyzetekkel láthatja el és megoszthatja másokkal a csempék, jelentések vagy vizualizációk pillanatképét](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md). 
 
-## <a name="share-from-your-iphone"></a>Megosztás iPhone-ról
-1. Az irányítópult alján lévő műveletek sávban koppintson a **megosztás** ikonra ![Megosztás ikon](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-share-dashboard-icon.png).
+## <a name="share-from-your-iphone-or-ipad"></a>Megosztás iPhone-ról vagy iPadről
+
+1. Az irányítópultot vagy jelentést megoszthatja az irányítópulton vagy a jelentésben is, és az irányítópultok vagy a jelentések kezdőlapján is:
+    *  Egy irányítópulton vagy jelentésben koppintson a **Megosztás** ikonra ![meghívás ikon](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) az irányítópult vagy a jelentés alján lévő Műveletek sávban.
+    *  Az irányítópultok vagy a jelentések kezdőlapján koppintson az irányítópult vagy a jelentés neve melletti **Információ** ikonra ![További információ](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-more-info-icon.png), majd a **Megosztás** ikonra ![Meghívás ikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) a megjelenő Információ lapon.
+2. Írjon be vesszővel elválasztott neveket, valamint egy üzenetet a megtekintésére való meghíváshoz. Az újbóli megosztás engedélyezéséhez hagyja bejelölve **Az irányítópult megosztásának engedélyezése a címzettek számára** jelölőnégyzetet. Az újbóli megosztással a munkatársai továbbküldhetik az e-mailes meghívót a szervezetben másoknak a weben vagy a mobilalkalmazásokon keresztül.
+3. Koppintson a jobb felső sarokban lévő **Küldés** gombra.
    
-   ![iPhone Megosztás ikonja](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-dashboard-invite.png)
-2. Írjon be vesszővel elválasztott neveket, valamint egy üzenetet a megtekintésére való meghíváshoz.
-3. Az újbóli megosztás engedélyezéséhez hagyja bejelölve **Az irányítópult megosztásának engedélyezése a címzettek számára** jelölőnégyzetet.
+   A címzettek e-mailes meghívót kapnak az irányítópult vagy jelentés közvetlen hivatkozásával. A meghívó egy hónap után lejár. Amikor megnyitják a Power BI szolgáltatásban vagy a Power BI mobilalkalmazásban, az irányítópult megjelenik a Power BI-fiók **Velem megosztva** szakaszában. A Velem megosztva szakasz elérése:
    
-   Az újbóli megosztással a munkatársai továbbküldhetik az e-mailes meghívót a szervezetben másoknak a weben vagy a mobilalkalmazásokon keresztül.
-5. Koppintson a jobb felső sarokban lévő **Küldés** gombra.
-   
-   A címzettek e-mailes meghívót kapnak az irányítópult vagy jelentés közvetlen hivatkozásával. A meghívó egy hónap után lejár. Amikor megnyitják egy böngészőben vagy a Power BI mobilalkalmazásban, az irányítópult megjelenik a Power BI-fiók **Velem megosztva** szakaszában.
-   
-   ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   * A Power BI mobilalkalmazásban koppintson a **További beállítások** (...) lehetőségre a navigációs sávon, majd válassza a ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Velem megosztva** lehetőséget.
+   * A Power BI szolgáltatásban kattintson a ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Velem megosztva** lehetőségre a bal oldali navigációs panelen.
    
    További információk [a munkatársakkal való megosztással kapcsolatban](../../service-share-dashboards.md).
 
-### <a name="unshare-from-your-iphone"></a>Megosztás törlése iPhone-ról
+### <a name="unshare-from-your-iphone-or-ipad"></a>Megosztás megszüntetése iPhone-ról vagy iPadről
 A megosztást csak a tulajdonos törölheti.
 
-1. Az irányítópult alján lévő műveletek sávban koppintson a **megosztás** ikonra ![Megosztás ikon](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-share-dashboard-icon.png).
-2. Koppintson a **Munkatárs meghívása** elemre.
-   
-   Megjelenik azon munkatársak listája, akikkel megosztotta ezt az irányítópultot vagy jelentést, a következő kifejezésekkel ellátva:
-   
-   * **Megtekintheti**: Megtekintheti, de nem oszthatja meg.
-   * **Megtekinthet és meghívhat**: Megtekintheti és megoszthatja más munkatársakkal.
-1. Koppintson a **Szerkesztés** ikonra.
-   
-    ![Szerkesztés ikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-edit-invite-dashboard.png)
-4. A megosztás megszüntetéséhez koppintson az egyik név melletti vörös körre, majd a **Törlés** ikonra.
+1. Az irányítópult alján lévő műveletek sávban koppintson a **megosztás** ikonra ![Megosztás ikon](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png).
+2. Koppintson a **Megosztva a következőkkel** lehetőségre. Megjelenik azon munkatársak listája, akikkel megosztotta ezt az irányítópultot vagy jelentést.
 
-## <a name="share-from-your-ipad"></a>Megosztás iPadről
-1. Koppintson a **Megosztás** ikonra ![megosztás ikon](././media/mobile-share-dashboard-from-the-mobile-apps/pbi_ipad_shareiconblk.png) az irányítópult vagy jelentés jobb felső sarkában.
-2. Írja be az e-mail-címeket és a meghívást kísérő üzenetet.
-3. Az újbóli megosztás engedélyezéséhez hagyja bejelölve **Az irányítópult megosztásának engedélyezése a címzettek számára** jelölőnégyzetet.
-   
-   Az újbóli megosztással a munkatársai továbbküldhetik az e-mailes meghívót a szervezetben másoknak a weben vagy a mobilalkalmazásokon keresztül. 
+3. Koppintson a **További beállítások** (...) lehetőségre annak a személynek a neve mellett, akivel szeretné megszüntetni a megosztást, és adja meg, hogy csak a megosztott irányítópulthoz vagy az általa használt mögöttes tartalomhoz való hozzáférést is le szeretné-e tiltani.
 
-4. Koppintson a jobb felső sarokban lévő **Küldés** gombra.
-   
-   A címzettek e-mailes meghívót kapnak az irányítópult vagy jelentés közvetlen hivatkozásával. A meghívó egy hónap után lejár. Amikor megnyitják egy böngészőben vagy a Power BI mobilalkalmazásban, az irányítópult megjelenik a Power BI-fiók **Velem megosztva** szakaszában.
-   
-   ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
-   
-   További információk [a munkatársakkal való megosztással kapcsolatban](../../service-share-dashboards.md).
 
-### <a name="unshare-from-your-ipad"></a>Megosztás törlése iPadről
-A megosztást csak a tulajdonos törölheti.
-
-1. Koppintson a **Megosztás** ikonra ![megosztás ikon](././media/mobile-share-dashboard-from-the-mobile-apps/pbi_ipad_shareiconblk.png) az irányítópult vagy jelentés jobb felső sarkában.
-   
-   Megjelenik azon munkatársak listája, akikkel megosztotta ezt az irányítópultot vagy jelentést, a következő kifejezésekkel ellátva:
-   
-   * **Megtekintheti**: Megtekintheti, de nem oszthatja meg.
-   * **Megtekinthet és meghívhat**: Megtekintheti és megoszthatja más munkatársakkal.
-2. Koppintson a **Szerkesztés** ikonra.
-3. A megosztás megszüntetéséhez koppintson az egyik név melletti vörös körre, majd a **Törlés** ikonra.
 
 ## <a name="share-from-your-android-device"></a>Megosztása androidos készülékről
-1. Az irányítópult vagy jelentés kezdőlapján koppintson a **További lehetőségek** (...) elemre, majd a **Munkatárs meghívása** lehetőségre.
+1. Az irányítópultot vagy jelentést megoszthatja az irányítópulton vagy a jelentésben is, és az irányítópultok vagy a jelentések kezdőlapján is:
+    *  Egy irányítópulton vagy jelentésben koppintson a **További beállítások** (...) lehetőségre az irányítópult vagy a jelentés tetején, majd válassza a **Munkatárs meghívása** lehetőséget.
+    *  Az irányítópultok vagy a jelentések kezdőlapján koppintson az irányítópult vagy a jelentés neve melletti **További beállítások** (...) lehetőségre, majd a **Megosztás** ikonra ![Meghívás ikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) ikonra a megjelenő Információ lapon.
+ 
+2. Írja be az e-mail-címeket és az irányítópultra való meghívást kísérő üzenetet. Egyéb esetben a Power BI az alapértelmezett üzenetet küldi el. Az újbóli megosztás engedélyezéséhez hagyja bejelölve **Az irányítópult megosztásának engedélyezése a címzettek számára** jelölőnégyzetet. Az újbóli megosztással a munkatársai továbbküldhetik az e-mailes meghívót a szervezetben másoknak a böngészőben vagy a mobilalkalmazásokon keresztül.
    
-   ![Munkatárs meghívása](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
-2. Koppinthat az irányítópult vagy jelentés Meghívás ikonjára is ![Meghívás ikon](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).
+3. A levél elküldéséhez koppintson a jobb felső sarokban a **Küldés** ikonra ![Küldés ikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-send-icon.png).
+   
+    A címzettek e-mailes meghívót kapnak az irányítópult vagy jelentés közvetlen hivatkozásával. A meghívó egy hónap után lejár. Amikor megnyitják a Power BI szolgáltatásban vagy a Power BI mobilalkalmazásban, az irányítópult megjelenik a Power BI-fiók **Velem megosztva** szakaszában. A Velem megosztva szakasz elérése:
+   * A Power BI mobilalkalmazásban koppintson a **További beállítások** (...) lehetőségre a navigációs sávon, majd válassza a ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Velem megosztva** lehetőséget.
+   * A Power BI szolgáltatásban kattintson a ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Velem megosztva** lehetőségre a bal oldali navigációs panelen.
+   
+   További információk [a munkatársakkal való megosztással kapcsolatban](../../service-share-dashboards.md).
 
-    Ha Ön az irányítópult tulajdonosa, láthatja a munkatársakat, akikkel megosztotta ezt az irányítópultot vagy jelentést, a következő megjegyzésekkel:
-
-    -   **Megtekintheti**: Megtekintheti, de nem oszthatja meg.
-    -   **Megtekintheti és újra megoszthatja**: Megtekintheti és megoszthatja más munkatársakkal.
-
-1. Írja be az e-mail-címeket és az irányítópultra való meghívást kísérő üzenetet. Egyéb esetben a Power BI az alapértelmezett üzenetet küldi el.
-2. Az újbóli megosztás engedélyezéséhez hagyja bejelölve **Az irányítópult megosztásának engedélyezése a címzettek számára** jelölőnégyzetet.
-   
-   Az újbóli megosztással a munkatársai továbbküldhetik az e-mailes meghívót a szervezetben másoknak a böngészőben vagy a mobilalkalmazásokon keresztül.
-   
-1. A levél elküldéséhez koppintson a jobb felső sarokban a **Küldés** ikonra ![Küldés ikon](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_andr_sendplane.png).
-   
-   A címzettek e-mailes meghívót kapnak az irányítópult közvetlen hivatkozásával. A meghívó egy hónap után lejár. Amikor megnyitják egy böngészőben vagy a Power BI mobilalkalmazásban, az irányítópult megjelenik a Power BI-fiók **Velem megosztva** szakaszában.
-   
-   ![Velem megosztva](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-shared-with-me-left-nav.png)
-   
-   További információk [az irányítópultok munkatársakkal való megosztásával kapcsolatban](../../service-share-dashboards.md).
 
 ### <a name="unshare-from-your-android-device"></a>Megosztása törlése androidos készülékről
 A megosztást csak a tulajdonos törölheti.
 
-1. Koppintson az irányítópult vagy jelentés jobb felső sarkában lévő meghívás ikonra ![Meghívás ikon](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png). 
-   
-   Megjelenik azon munkatársak listája, akikkel megosztotta ezt az irányítópultot vagy jelentést.
-2. Ha meg szeretné szüntetni a munkatárssal való megosztást, koppintson a név melletti **X** \> **Eltávolítás** elemre.
+1. Az irányítópult vagy a jelentés megosztását megszüntetheti az irányítópulton vagy a jelentésben is, és az irányítópultok vagy a jelentések kezdőlapján is:
+    *  Egy irányítópulton vagy jelentésben koppintson a **További beállítások** (...) lehetőségre az irányítópult vagy a jelentés tetején, majd válassza a **Munkatárs meghívása** lehetőséget.
+    *  Az irányítópultok vagy a jelentések kezdőlapján koppintson az irányítópult vagy a jelentés neve melletti **További beállítások** (...) lehetőségre, majd a **Megosztás** ikonra ![Meghívás ikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) ikonra a megjelenő Információ lapon.
+
+2. A megnyíló **Személyek hozzáadása** lap alsó részén láthatja a munkatársakat, akikkel megosztotta ezt az irányítópultot vagy jelentést. Koppintson annak a munkatársnak a nevére, akivel meg szeretné megszüntetni a megosztást.
+3. A megjelenő **Aki hozzáfér** lapon koppintson az **Eltávolítás** ikonra ![Eltávolítás ikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-remove-icon.png), és adja meg, hogy csak a megosztott irányítópulthoz vagy az általa használt mögöttes tartalomhoz való hozzáférést is le szeretné-e tiltani.
 
 ## <a name="share-from-your-windows-10-device"></a>Megosztás Windows 10-es készülékről
-1. Koppintson az irányítópult vagy jelentés Meghívás ikonjára ![Meghívás ikon](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_andr_inviteicon.png).
+
+1. Egy irányítópultot vagy jelentést megoszthat az irányítópulton vagy a jelentésben is, és az irányítópultok vagy a jelentések kezdőlapján is:
+    * Egy irányítópulton vagy jelentésben koppintson a **Megosztás** ikonra ![Megosztás ikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png).
+    * Az irányítópultok vagy a jelentések kezdőlapján kattintson a jobb gombbal, vagy tartsa az lenyomva, és koppintson a **Meghívás** elemre.
    
-   Az irányítópultok vagy jelentések kezdőlapján kattintson a jobb gombbal, vagy tartsa lenyomva és koppintson a **Meghívás** elemre.
+   Ha Ön az irányítópult tulajdonosa, láthatja a munkatársakat, akikkel megosztotta ezt az irányítópultot vagy jelentést.
+
+2. Írja be az e-mail-címeket és a meghívást kísérő üzenetet. Egyéb esetben a Power BI az alapértelmezett üzenetet küldi el. Az újbóli megosztás engedélyezéséhez hagyja bejelölve **Az irányítópult megosztásának engedélyezése a címzettek számára** jelölőnégyzetet. Az újbóli megosztással a munkatársai megoszthatnak a szervezet más tagjaival a böngészőben vagy a mobilalkalmazásokon keresztül.
    
-   ![Meghívás](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10_sharedash.png)
+3. Koppintson a **Küldés** ikonra ![Küldés ikon](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
    
-   Ha Ön az irányítópult tulajdonosa, láthatja a munkatársakat, akikkel megosztotta ezt az irányítópultot, a következő megjegyzésekkel:
+    A címzettek e-mailes meghívót kapnak az irányítópult vagy jelentés közvetlen hivatkozásával. A meghívó egy hónap után lejár. Amikor megnyitják a Power BI szolgáltatásban vagy a Power BI mobilalkalmazásban, az irányítópult megjelenik a Power BI-fiók **Velem megosztva** szakaszában. A Velem megosztva szakasz elérése:
    
-   **Megtekintheti**: Megtekintheti, de nem oszthatja meg.
-   
-   **Megtekintheti és újra megoszthatja**: Megtekintheti és megoszthatja más munkatársakkal.
-2. Írja be az e-mail-címeket és a meghívást kísérő üzenetet. Egyéb esetben a Power BI az alapértelmezett üzenetet küldi el.
-   
-   ![Meghívás párbeszédpanel](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-windows-10-share-dashboard.png)
-3. Az újbóli megosztás engedélyezéséhez hagyja bejelölve **Az irányítópult megosztásának engedélyezése a címzettek számára** jelölőnégyzetet.
-   
-   Az újbóli megosztással a munkatársai megoszthatnak a szervezet más tagjaival a böngészőben vagy a mobilalkalmazásokon keresztül.
-   
-1. Koppintson a **Küldés** ikonra ![Küldés ikon](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
-   
-   A címzettek e-mailes meghívót kapnak az irányítópult vagy jelentés közvetlen hivatkozásával. A meghívó egy hónap után lejár. Amikor megnyitják egy böngészőben vagy a Power BI mobilalkalmazásban, az irányítópult megjelenik a Power BI-fiók **Velem megosztva** szakaszában.
-   
-   ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   * A Power BI mobilalkalmazásban koppintson a **További beállítások** (...) lehetőségre a navigációs sávon, majd válassza a ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Velem megosztva** lehetőséget.
+   * A Power BI szolgáltatásban kattintson a ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Velem megosztva** lehetőségre a bal oldali navigációs panelen.
    
    További információk [a munkatársakkal való megosztással kapcsolatban](../../service-share-dashboards.md).
 

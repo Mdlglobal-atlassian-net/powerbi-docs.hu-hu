@@ -10,10 +10,10 @@ ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 11/04/2019
 ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74311426"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Oktatóanyag: Oldalakra osztott Power BI-jelentések beágyazása egy alkalmazásba az ügyfelek számára (előzetes verzió)
@@ -203,7 +203,7 @@ Töltse ki a **bérlő** adatait az Azure-bérlőazonosítójával. Ezt az infor
 
 Bár az oldalakra osztott Power BI-jelentések beágyazásának lépései elvégezhetők a [Power BI REST API-kkal](https://docs.microsoft.com/rest/api/power-bi/), a cikkben bemutatott mintakódok a **.NET SDK-val** készültek.
 
-Ha ügyfelei számára be szeretné ágyazni az oldalakra osztott Power BI-jelentéseket az alkalmazásán belül, ehhez **Azure AD** [szolgáltatásnévvel](embed-service-principal.md) kell rendelkeznie és [Azure AD hozzáférési jogkivonatot](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) kell beszereznie a Power BI alkalmazása számára, mielőtt hívásokat intézne a [Power BI REST API-khoz](https://docs.microsoft.com/rest/api/power-bi/).
+Ha ügyfelei számára be szeretné ágyazni az oldalakra osztott Power BI-jelentéseket az alkalmazásba, ehhez **Azure AD**-[szolgáltatásnévvel](embed-service-principal.md) kell rendelkeznie, és be kell szereznie egy [Azure AD-hozzáférési jogkivonatot](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) a Power BI-alkalmazás számára, mielőtt hívásokat küldene a [Power BI REST API-knak](https://docs.microsoft.com/rest/api/power-bi/).
 
 A Power BI-ügyfél **hozzáférési jogkivonattal** való létrehozásához hozza létre a Power BI-ügyfélobjektumot, amely lehetővé teszi a [Power BI REST API-k](https://docs.microsoft.com/rest/api/power-bi/) használatát. A Power BI-ügyfél létrehozásához az **AccessToken** hozzáférési jogkivonatot a ***Microsoft.Rest.TokenCredentials*** objektummal kell becsomagolni.
 

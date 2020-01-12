@@ -1,21 +1,21 @@
 ---
 title: Beágyazás jelentéskijelzővel a SharePoint Online-ban
 description: A Power BI új beágyazás jelentéskijelzővel a SharePoint Online-ban funkciójának használatával interaktív Power BI-jelentéseit könnyedén SharePoint Online-oldalakba illesztheti.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 05/16/2019
-ms.openlocfilehash: e44ea4174545715a689b4f4370516cbbab4a593b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/18/2019
+ms.openlocfilehash: d1ac9238e361a0889e52838eb0b3c3889c1cccf7
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881884"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75221712"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Beágyazás jelentéskijelzővel a SharePoint Online-ban
 
@@ -29,6 +29,7 @@ A **Beágyazás a SharePointban** funkcióval készülő jelentések működés�
 
 * Power BI Pro-licenc vagy [Power BI Premium-kapacitás (EM vagy P termékváltozat)](service-premium-what-is.md) Power BI-licenccel.
 * A Power BI-jelentéskijelző a SharePoint Online-hoz csak [Modern weblapokkal](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b) működik.
+* Beágyazott jelentés felhasználásához a felhasználóknak be kell jelentkezniük a Power BI szolgáltatásba, hogy aktiválják a Power BI-licencüket.
 
 ## <a name="embed-your-report"></a>A jelentés beágyazása
 A jelentés SharePoint Online-ba való beágyazásához be kell szereznie a jelentés URL-címét, amelyet a SharePoint Online Power BI-kijelzőjében használhat.

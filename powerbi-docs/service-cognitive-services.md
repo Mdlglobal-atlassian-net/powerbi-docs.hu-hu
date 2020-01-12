@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 3965a21ff2ab53fd46667658f7cfa21fa4a3b916
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cf927e94726f33e8d88c25c6d09f6f0ca2226e05
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73855600"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75224126"
 ---
 # <a name="cognitive-services-in-power-bi"></a>Cognitive Services-szolgáltatások a Power BI-ban 
 
@@ -94,7 +94,7 @@ Ez a függvény képre mutató URL-címet vagy Base64-mezőt vár bemeneteként.
 
 Ez a cikk a Cognitive Services-szolgáltatásoknak a Power BI szolgáltatással való használatáról nyújtott áttekintést. Az alábbi cikkek is érdekesek és hasznosak lehetnek. 
 
-* [Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban](service-tutorial-invoke-machine-learning-model.md)
+* [Oktatóanyag: (Klasszikus) Machine Learning Studio-modell meghívása a Power BI-ban](service-tutorial-invoke-machine-learning-model.md)
 * [Az Azure Machine Learning integrálása a Power BI-jal](service-machine-learning-integration.md)
 * [Oktatóanyag: A Cognitive Services használata a Power BI-ban](service-tutorial-use-cognitive-services.md)
 

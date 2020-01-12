@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b7256a04ccdca107ef0cd8e24af8b3170a3d68cc
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 95cf62057cdea001a438f4555aa3384c54efe4b5
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74834724"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221942"
 ---
 # <a name="extending-visuals-with-report-page-tooltips"></a>Vizualizációk kibővítése a jelentésoldalak elemleírásával
 
@@ -61,15 +61,15 @@ Megjelent egy oldal elemleírása. Ez a 98022 irányítószám saját attribútu
 
 ### <a name="add-help"></a>Súgó hozzáadása
 
-A vizualizációs fejlécek úgy konfigurálhatók, hogy oldalak elemleírásait jelenítsék meg vizualizációs fejlécekben. Súgótartalmat adhat egy oldal elemleírásához részletesen formázott szövegmezőkkel. Emellett képeket és alakzatokat is felvehet.
+A vizualizációs fejlécek úgy konfigurálhatók, hogy oldalak elemleírásait jelenítsék meg vizualizációs fejlécekben. Súgódokumentációt adhat egy oldal elemleírásához részletesen formázott szövegmezőkkel. Emellett képeket és alakzatokat is felvehet.
 
 Érdekes módon a gombok, képek, szövegmezők és alakzatok is megjeleníthetik oldalak elemleírásait a vizualizációs fejlécben.
 
-A következő példa azt mutatja be, hogy mi történik, ha a jelentés felhasználója a kurzort a vizualizációs fejléc ikon fölé viszi.
+A következő példa azt mutatja be, hogy mi történik, ha a jelentés felhasználója a kurzort a [vizualizációs fejléc ikon](../desktop-visual-elements-for-reports.md) fölé viszi.
 
 ![A jelentés felhasználója a kurzort a vizualizáció fejlécének ikonja (kérdőjel ikon) fölé helyezte. Megjelent egy részletesen formázott elemleírás.](media/report-page-tooltips/suggestion-add-help.png)
 
-Megjelent egy oldal elemleírása. Részletesen formázott szöveget tartalmaz, amely a vizualizáció által megjelenített mértékeket ismerteti. Az elemleírás emellett egy alakzatot (vonal) is tartalmaz.
+Megjelent egy oldal elemleírása. Ebben Rich Text formátumú szöveg látható négy szövegmezőben, illetve egy alakzat (vonal). Az oldal elemleírása a vizualizációban megjelenő egyes mozaikszavak leírásával nyújt segítséget.
 
 ## <a name="recommendations"></a>Javaslatok
 
@@ -87,5 +87,6 @@ Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további inf
 
 - [Elemleírások létrehozása jelentésoldalak alapján a Power BI Desktopban](../desktop-tooltips.md)
 - [Elemleírások testreszabása a Power BI Desktopban](../desktop-custom-tooltips.md)
+- [Vizuális elemek használata Power BI-jelentések továbbfejlesztéséhez](../desktop-visual-elements-for-reports.md)
 - Guy in a Cube videó: [Power BI-jelentésoldali elemleírás – Létrehozás a Power BI Desktopban](https://www.youtube.com/watch?v=URTA7JZsAtw)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

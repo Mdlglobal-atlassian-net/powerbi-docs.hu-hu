@@ -1,6 +1,6 @@
 ---
-title: 'Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)'
-description: Ebben az oktatóanyagban Machine Learning Studio-modellt fog meghívni a Power BI-ban.
+title: 'Oktatóanyag: (Klasszikus) Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)'
+description: Ebben az oktatóanyagban egy (klasszikus) Machine Learning Studio-modellt fog meghívni a Power BI-ban.
 author: davidiseminger
 ms.reviewer: SarinaJoan
 ms.service: powerbi
@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3cbe715bc3cff9d2afeefe7c82847f104f4d0835
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3a7d4fa73caa718cec905d8f511ae94b077f7e2b
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876968"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75224248"
 ---
-# <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)
+# <a name="tutorial-invoke-a-machine-learning-studio-classic-model-in-power-bi-preview"></a>Oktatóanyag: (Klasszikus) Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)
 
-Ebben az oktatóanyagban azt a folyamatot vizsgáljuk meg, amellyel az **Azure Machine Learning Studio**-modellből lehet információkat beépíteni a Power BI-ba. Az oktatóanyag útmutatást nyújt a következőkhöz is: jogosultság adása Power BI-felhasználónak az Azure ML-modellhez való hozzáféréshez; adatfolyam létrehozása; valamint az Azure ML-modellből származó információk alkalmazása az adatfolyamban. Hivatkozást is talál benne egy rövid útmutatóhoz, amelynek segítségével létrehozhat egy Azure ML-modellt, ha még nem rendelkezik modellel.
+Ebben az oktatóanyagban azt a folyamatot tekintjük át, amellyel egy **(klasszikus) Azure Machine Learning Studio**-modellből lehet információkat beépíteni a Power BI-ba. Az oktatóanyag útmutatást nyújt a következőkhöz is: jogosultság adása Power BI-felhasználónak az Azure ML-modellhez való hozzáféréshez; adatfolyam létrehozása; valamint az Azure ML-modellből származó információk alkalmazása az adatfolyamban. Hivatkozást is talál benne egy rövid útmutatóhoz, amelynek segítségével létrehozhat egy Azure ML-modellt, ha még nem rendelkezik modellel.
 
 Az oktatóanyag az alábbi lépéseket tartalmazza:
 
@@ -31,15 +31,15 @@ Az oktatóanyag az alábbi lépéseket tartalmazza:
 
 ## <a name="create-and-publish-an-azure-ml-model"></a>Azure ML-modell létrehozása és közzététele
 
-Kövesse az [Útmutató 1. lépés: Machine Learning Studio-munkaterület létrehozása](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) című anyag útmutatásait **Machine Learning**-munkaterület létrehozásához.
+Kövesse az [Útmutató 1. lépés: (Klasszikus) Machine Learning Studio-munkaterület létrehozása](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) című anyag útmutatásait egy **Machine Learning**-munkaterület létrehozásához.
 
-Ugyanezeket a lépéseket bármely, már létező Azure ML-modell vagy adatkészlet esetén is használhatja. Ha még nincs közzétett modellje, percek alatt létrehozhat egy modellt az [Első adatelemzési kísérlet létrehozása az Azure Machine Learning Studióban](https://docs.microsoft.com/azure/machine-learning/studio/create-experiment) című témakör útmutatásai alapján, amelyben Azure ML-modell állítható be autók árának előrejelzéséhez.
+Ugyanezeket a lépéseket bármely, már létező Azure ML-modell vagy adatkészlet esetén is használhatja. Ha még nincs közzétett modellje, percek alatt létrehozhat egy modellt [Az első adatelemzési kísérlet létrehozása az Azure Machine Learning Studióban](https://docs.microsoft.com/azure/machine-learning/studio/create-experiment) című témakör útmutatásai alapján, amelyben egy Azure ML-modell állítható be autók árának előrejelzéséhez.
 
-Az [Azure Machine Learning Studio-webszolgáltatás üzembe helyezése](https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service) című témakör lépéseit követve webszolgáltatásként közzéteheti az Azure ML-modellt.
+A [(Klasszikus) Azure Machine Learning Studio-webszolgáltatás üzembe helyezése](https://docs.microsoft.com/azure/machine-learning/studio/tutorial-part3-credit-risk-deploy) című témakör lépéseit követve webszolgáltatásként teheti közzé az Azure ML-modellt.
 
 ## <a name="grant-a-power-bi-user-access"></a>Hozzáférés biztosítása Power BI-felhasználó számára
 
-Ahhoz, hogy a Power BI-ból hozzáférjen az Azure ML-modellhez, **Olvasási** jogosultsággal kell rendelkeznie az Azure-előfizetéshez és az erőforráscsoporthoz, és **Olvasási** jogosultsággal az Azure Machine Learning Studio-webszolgáltatáshoz a Machine Learning Studio-modelleknél.  Azure Machine Learning Service-modellek esetén **olvasási** hozzáférésre van szükség a Machine Learning Service-munkaterülethez.
+Ahhoz, hogy a Power BI-ból hozzáférjen az Azure ML-modellhez, **Olvasási** hozzáféréssel kell rendelkeznie az Azure-előfizetésre és az erőforráscsoportra vonatkozóan, és **Olvasási** hozzáféréssel kell rendelkeznie a (klasszikus) Azure Machine Learning Studio-webszolgáltatásban a (klasszikus) Machine Learning Studio-modellekre vonatkozóan.  Azure Machine Learning Service-modellek esetén **Olvasási** hozzáféréssel kell rendelkeznie a Machine Learning-munkaterületre vonatkozóan.
 
 Az alábbi lépésekben azt feltételezzük, hogy Ön az egyik adminisztrátora annak az Azure-előfizetésnek és erőforráscsoportnak, amelyben a modell közzé lett téve.
 
@@ -59,9 +59,9 @@ A fenti lépések megismétlésével biztosíthat **Közreműködői** szerepkö
 
 Jelentkezzen be a Power BI szolgáltatásba azokkal a felhasználói hitelesítő adatokkal, amelyekhez hozzáférést biztosított az Azure ML-modellhez az előző lépésben.
 
-Ebben a lépésben azt feltételezzük, hogy Ön már rendelkezik azokkal az adatokkal CSV-formátumban, amelyeket pontozni szeretne az Azure ML-modellben.  Ha a Machine Learning Studióban a modell létrehozásához az **Autóárak kísérletet** használta, az ehhez tartozó adatkészlet az alábbi hivatkozással megosztva elérhető:
+Ebben a lépésben azt feltételezzük, hogy Ön már rendelkezik azokkal az adatokkal CSV-formátumban, amelyeket pontozni szeretne az Azure ML-modellben.  Ha a (klasszikus) Machine Learning Studióban a modell létrehozásához az **Autóárakra vonatkozó kísérletet** használta, az ehhez tartozó adathalmaz az alábbi hivatkozáson van megosztva:
 
-* [Azure Learning Studio-mintamodell](https://github.com/santoshc1/PowerBI-AI-samples/blob/master/Tutorial_MLStudio_model_integration/Automobile%20price%20data%20_Raw_.csv)
+* [(Klasszikus) Azure Learning Studio-mintamodell](https://github.com/santoshc1/PowerBI-AI-samples/blob/master/Tutorial_MLStudio_model_integration/Automobile%20price%20data%20_Raw_.csv)
 
 ### <a name="create-a-dataflow"></a>Adatfolyam létrehozása
 
@@ -173,7 +173,7 @@ Ha már nincs szüksége az ennek a cikknek a használata közben létrehozott A
 
 ## <a name="next-steps"></a>Következő lépések
 
-Ebben az oktatóanyagban létrehozott egy egyszerű kísérletet az Azure Machine Learning Studióval egy egyszerű adatkészlet használatával az alábbi lépéseket követve:
+Ebben az oktatóanyagban létrehozott egy egyszerű kísérletet a (klasszikus) Azure Machine Learning Studióval egy egyszerű adathalmaz használatával, az alábbi lépések alapján:
 
 - Azure Machine Learning-modell létrehozása és közzététele
 - Hozzáférés biztosítása Power BI-felhasználónak a modell használatához

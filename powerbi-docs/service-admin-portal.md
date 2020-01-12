@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 4776e458c778b6bd482106660ab9b8cd978699e5
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 99d57b734e42913db20e8a414c3216ed66334fa8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882904"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75224205"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -168,9 +168,9 @@ A következő néhány bekezdés a bérlői beállítások különböző típusa
 
 A vállalati felhasználók belső súgó és támogatási forrásokhoz fordulhatnak a Power BI súgó menüjében. Ezek a paraméterek pontosabban a Tanulás, Közösség és Segítség kérése menüelemek viselkedését módosítják.
 
-    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+Emellett a licenckérések URL-címének megadásával testreszabhatja a **Fiók bővítése** gomb célként megadott URL-címét. Ez a gomb a **Frissítés a Power BI Pro kiadásra** párbeszédpanelen, valamint a **Személyes tárhely kezelése** lapon jelenik meg a Power BI Pro-licenccel nem rendelkező felhasználók számára. Emellett a Power BI-ban már nem érhető el **A Pro kiadás ingyenes kipróbálása** gomb ezen a párbeszédpanelen és tárhelylapon. Ez biztosítja, hogy a Power BI megbízhatóan vezesse végig a felhasználókat a szervezetben a licenckezelési megoldással definiált folyamaton.
 
-Ha megad egy URL-címet a licenckérésekhez, azzal a **Fiók bővítése** gomb cél-URL-címét szabja testre, amelyet a Power BI Pro-licenccel nem rendelkező felhasználók a **Bővítés Power BI Próra** párbeszédpanelen és a **Személyes tárhely kezelése** oldalon is megtalálhatnak. Emellett a Power BI-ban már nem érhető el **A Pro kiadás ingyenes kipróbálása** gomb ezen a párbeszédpanelen és a Tárolás lapon, hogy a Power BI biztosan megbízhatóan vezesse végig a felhasználókat a szervezetnél a licenckezelési megoldással meghatározott folyamatokon.
+![Kivéve engedélyezése beállítás](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>E-mail-értesítések fogadása szolgáltatásbeli kimaradásokról vagy incidensekről
 
@@ -440,7 +440,7 @@ A **Power BI Premium** lapon a munkahely által megvásárolt bármely Power BI 
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
-A **Power BI Embedded** lapon megtekintheti az ügyfél számára vásárolt Power BI Embedded (A termékváltozat) kapacitásait. Mivel az A termékváltozatot csak az Azure-tól szerezheti be, a [beágyazott kapacitások Azure-ban való kezelésére](developer/azure-pbie-create-capacity.md) **az Azure Portalt** kell használnia.
+A **Power BI Embedded** lapon megtekintheti az ügyfél számára vásárolt Power BI Embedded (A termékváltozat) kapacitásait. Mivel az A termékváltozatot csak az Azure-tól szerezheti be, a [beágyazott kapacitások Azure-ban való kezelésére](developer/azure-pbie-create-capacity.md)**az Azure Portalt** kell használnia.
 
 A Power BI Embedded (A termékváltozat) beállításainak kezeléséről további információért lásd a [Mi a Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md) szakaszt.
 

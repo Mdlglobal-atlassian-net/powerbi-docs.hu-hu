@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 9aa2e11dd2068cae118336268c5c55ead1e25b8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73871214"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Használati metrikák figyelése Power BI-irányítópultokhoz és -jelentésekhez
@@ -43,7 +43,7 @@ Használati metrikai jelentéseket csak a Power BI szolgáltatásban futtathat. 
 ## <a name="view-a-usage-metrics-report"></a>Használati metrikai jelentés megtekintése
 
 1. Kezdje a munkát az irányítópultot vagy jelentést tartalmazó munkaterületen.
-2. Akár munkaterület tartalomlistájából, akár magából az irányítópultból vagy jelentésből válassza a **Használati metrikák** ![használati metrikák ikon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) ikonját.
+2. Akár a munkaterület tartalomlistájában, akár magán az irányítópulton vagy jelentésben válassza a **Használati metrikák**  ![használati metrikák ikon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) ikonját.
 
     ![Irányítópultok lap](media/service-usage-metrics/power-bi-run-usage-metrics-report.png)
 
@@ -83,7 +83,7 @@ A jelentés adatainak részletes vizsgálatára vagy a mögöttes adathalmazra �
 
 ## <a name="which-metrics-are-reported"></a>Melyik metrikák szerepelnek a jelentésben?
 
-| Mérték | Irányítópult | Jelentés | Leírás |
+| Metric | Irányítópult | Jelentés | Leírás |
 | --- | --- | --- | --- |
 | Hozzáférési mód szerint |igen |igen |Hogyan érik el a felhasználók a tartalmat. Három mód lehetséges: a felhasználók elérhetik a jelentést vagy irányítópultot azáltal, hogy egy [munkaterület](consumer/end-user-experience.md) tagjai, hogy a tartalom [meg van osztva velük](service-share-dashboards.md), vagy egy tartalomcsomag/alkalmazás telepítésével.  Megjegyzendő, hogy az alkalmazáson keresztül történő hozzáférés "tartalomcsomagként” számítódik be. |
 | Platform szerint |igen |igen |A Power BI szolgáltatáson (powerbi.com) keresztül, vagy mobileszközzel érték el az irányítópultot vagy jelentést? Mobileszköznek számít minden iOS-, Android- és Windows-alkalmazásunk is. |
