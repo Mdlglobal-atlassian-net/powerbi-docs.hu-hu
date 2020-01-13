@@ -10,10 +10,10 @@ ms.date: 04/19/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: f759992c42cc589d21ed51d5d63775bf54518c3f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73869109"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Kapcsolatok létrehozása és kezelése a Power BI Desktopban
@@ -92,9 +92,9 @@ Az első táblázat, a ProjektÓrák, azon munkajegyek rekordja, amelyek rögzí
 | 1002 |Brewer, Alan |26 |Vörös |2/1/2013 |
 | 1003 |Ito, Shu |34 |Sárga |12/4/2012 |
 | 1004 |Brewer, Alan |13 |Narancssárga |1/2/2012 |
-| 1005 |Bowen, Eli |29 |Bíbor |10/1/2013 |
+| 1005 |Bowen, Eli |29 |Bíbor |2013.10.01. |
 | 1006 |Bento, Nuno |35 |Zöld |2/1/2013 |
-| 1007 |Hamilton, David |10 |Sárga |10/1/2013 |
+| 1007 |Hamilton, David |10 |Sárga |2013.10.01. |
 | 1008 |Han, Mu |28 |Narancssárga |1/2/2012 |
 | 1009 |Ito, Shu |22 |Bíbor |2/1/2013 |
 | 1010 |Bowen, Eli |28 |Zöld |10/1/2013 |
@@ -186,7 +186,7 @@ Az alábbi VállalatiProjektPrioritás táblázat az összes vállalati projekte
 |:--- | ---:| ---:|
 | Kék |40,000 |12/1/2012 |
 | Vörös |100,000 |12/1/2012 |
-| Zöld |50,000 |12/1/2012 |
+| Zöld |50 000 |12/1/2012 |
 
 **VállalatiProjektPrioritás**
 
@@ -208,7 +208,7 @@ A számosság beállítása automatikusan egy-az-egyhez (1:1), a keresztszűrés
 | **Projekt** | **Prioritás** | **LefoglaltKöltségvetés** | **LefoglalásDátuma** |
 |:--- | --- | ---:| ---:|
 | Kék |A |40,000 |12/1/2012 |
-| Vörös |B |100,000 |12/1/2012 |
+| Vörös |B |100.000 |12/1/2012 |
 | Zöld |C |50,000 |12/1/2012 |
 | Sárga |C |<br /> |<br /> |
 | Bíbor |B |<br /> |<br /> |
@@ -224,7 +224,7 @@ De tegyük fel, hogy tudja, hogy a következő frissítéskor az adatok módosul
 | --- | ---:| ---:|
 | Kék |40,000 |12/1/2012 |
 | Vörös |100,000 |12/1/2012 |
-| Zöld |50,000 |12/1/2012 |
+| Zöld |50 000 |12/1/2012 |
 | Kék |80,000 |6/1/2013 |
 | Vörös |90,000 |6/1/2013 |
 
@@ -233,7 +233,7 @@ De tegyük fel, hogy tudja, hogy a következő frissítéskor az adatok módosul
 | **Projekt** | **Prioritás** | **LefoglaltKöltségvetés** | **LefoglalásDátuma** |
 | --- | --- | ---:| ---:|
 | Kék |A |40,000 |12/1/2012 |
-| Vörös |B |100,000 |12/1/2012 |
+| Vörös |B |100.000 |12/1/2012 |
 | Zöld |C |50,000 |12/1/2012 |
 | Sárga |C |<br /> |<br /> |
 | Bíbor |B |<br /> |<br /> |
@@ -294,9 +294,9 @@ Lássunk erre egy példát. Ez az első táblázat a ProjektJegyek, és a követ
 | 1002 |Roman, Daniel |Brewer, Alan |26 |Vörös |2/1/2013 |
 | 1003 |Roth, Daniel |Ito, Shu |34 |Sárga |12/4/2012 |
 | 1004 |Perham, Tom |Brewer, Alan |13 |Narancssárga |1/2/2012 |
-| 1005 |Roman, Daniel |Bowen, Eli |29 |Bíbor |10/1/2013 |
+| 1005 |Roman, Daniel |Bowen, Eli |29 |Bíbor |2013.10.01. |
 | 1006 |Roth, Daniel |Bento, Nuno |35 |Zöld |2/1/2013 |
-| 1007 |Roth, Daniel |Hamilton, David |10 |Sárga |10/1/2013 |
+| 1007 |Roth, Daniel |Hamilton, David |10 |Sárga |2013.10.01. |
 | 1008 |Perham, Tom |Han, Mu |28 |Narancssárga |1/2/2012 |
 | 1009 |Roman, Daniel |Ito, Shu |22 |Bíbor |2/1/2013 |
 | 1010 |Roth, Daniel |Bowen, Eli |28 |Zöld |10/1/2013 |

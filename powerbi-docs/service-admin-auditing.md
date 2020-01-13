@@ -1,43 +1,123 @@
 ---
-title: Naplózás használata a cégnél
-description: Megtudhatja, hogyan használhatja a Power BI naplózási funkcióját a végrehajtott műveletek figyelésére és vizsgálatára. Ehhez a Biztonsági és megfelelőségi központot vagy a PowerShellt használhatja.
+title: Felhasználói tevékenységek nyomon követése a Power BI-ban
+description: Megtudhatja, hogyan használhatja a Power BI tevékenységnaplózási és auditálási funkcióját a végrehajtott műveletek figyelésére és vizsgálatára.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 01/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 868d3dc2463f5ed94b8d8ccd85e5edff33ca1c6e
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 6cf298f6fd4d6d99163b2c0f5674b40cfc14bbfc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698923"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75657190"
 ---
-# <a name="use-auditing-within-your-organization"></a>Naplózás használata a cégnél
+# <a name="track-user-activities-in-power-bi"></a>Felhasználói tevékenységek nyomon követése a Power BI-ban
 
-Ha tisztában van azzal, hogy a Power BI-bérlőn ki, milyen műveletet és mely elemeken végez el, sokat segíthet a munkahelyének a követelményeknek (például a jogszabályi követelményeknek és a rekordkezelésnek) való megfelelésben. A Power BI naplózási funkcióját a felhasználók által végzett műveletek, például a „Jelentés megtekintése” vagy az „Irányítópult megtekintése” naplózására használhatja. Nem használhatja a naplózást engedélyek naplózására.
+Ha tisztában van azzal, hogy a Power BI-bérlőn ki, milyen műveletet és mely elemeken végez el, sokat segíthet a munkahelyének a követelményeknek (például a jogszabályi követelményeknek és a rekordkezelésnek) való megfelelésben. A Power BI-jal két lehetősége van a felhasználói tevékenység nyomon követésére: A [Power BI tevékenységnaplója](#use-the-activity-log) és az [egyesített Office 365-auditnapló](#use-the-audit-log). Mindkét napló tartalmazza a [Power BI naplózási adatainak](#operations-available-in-the-audit-and-activity-logs) teljes másolatát, de fontos különbségek is vannak köztük, melyeket a következő táblázatban összefoglaltunk.
 
-A naplózással kapcsolatos munkát az Office 365 Biztonsági és megfelelőségi központjában, vagy a PowerShell használatával végezheti el. A naplózás az Exchange Online funkcióin alapul, amelynek automatikusan megtörténik a kiépítése a Power BI támogatásához.
+| **Egyesített Office 365-auditnapló** | **Power BI-tevékenységnapó** |
+| --- | --- |
+| A Power BI naplózási események mellett tartalmazza a SharePoint Online, az Exchange Online, a Dynamics 365 és más szolgáltatások eseményeit is. | Csak a Power BI naplózási eseményeit tartalmazza. |
+| Csak a csak megtekintési auditnaplókhoz vagy az auditnaplókhoz jogosultsággal rendelkező felhasználók férhetnek hozzá, például a globális rendszergazdák és az auditorok. | A globális rendszergazdák és a Power BI szolgáltatás adminisztrátorai férhetnek hozzá. |
+| A globális rendszergazdák és az auditorok kereshetnek az egyesített auditnaplóban az Office 365 Biztonsági és megfelelőségi központ, a Microsoft 365 Security Center és a Microsoft 365 megfelelőségi központ használatával. | A tevékenységnaplóban való kereséshez még nincs felhasználói felület. |
+| A globális rendszergazdák és az auditorok az Office 365 Management API-k és a parancsmagok használatával tölthetik le az auditnapló bejegyzéseit. | A globális rendszergazdák és a Power BI szolgáltatás rendszergazdái a Power BI REST API és a felügyeleti parancsmag használatával tölthetik le a tevékenységnapló bejegyzéseit. |
+| 90 napig őrzi meg a naplózási adatokat | 30 napig őrzi meg a tevékenységadatokat (előzetes verzió) |
+| | |
+
+## <a name="use-the-activity-log"></a>A tevékenységnapló használata
+
+A Power BI szolgáltatás rendszergazdájaként a bérlői szinten található összes Power BI-erőforrás felhasználását elemezheti a Power BI-műveletnaplóra alapuló egyéni jelentések használatával. A tevékenységeket a REST API vagy a PowerShell-parancsmag használatával töltheti le. A tevékenységadatokat dátumtartomány, felhasználó és tevékenységtípus alapján is szűrheti.
+
+### <a name="activity-log-requirements"></a>A tevékenységnapló követelményei
+
+A Power BI tevékenységnaplójának eléréséhez az alábbi követelményeknek kell megfelelnie:
+
+- Vagy globális rendszergazdának, vagy a Power BI szolgáltatás rendszergazdájának kell lennie.
+- Telepítenie kell helyileg a [Power BI felügyeleti parancsmagjait](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt), vagy a Power BI felügyeleti parancsmagjait kell használnia az Azure Cloud Shellben.
+
+### <a name="activityevents-rest-api"></a>ActivityEvents REST API
+
+A Power BI REST API-kra épülő felügyeleti alkalmazást használhat a tevékenység eseményeinek blobtárolóba vagy SQL-adatbázisba való exportálásához. Ezután létrehozhat egy egyéni felhasználási jelentést az exportált adatokat használva. Az **ActivityEvents** REST API-hívásnál meg kell adnia a kezdési és a befejezési dátumot, valamint nem kötelezően egy szűrőt is, amellyel a tevékenységeket tevékenységtípus vagy felhasználói azonosító alapján szűrheti. Mivel a műveletnapló nagy mennyiségű adatot is tartalmazhat, az **ActivityEvents** API jelenleg kérelmenként legfeljebb csak egy napi adatmennyiség letöltését támogatja. Ez azt jelenti, hogy a kezdési és a befejezési dátumnak ugyanazon a napon kell lennie, ahogy az alábbi példában is látható. Fontos, hogy a DateTime-értékeket UTC formátumban adja meg.
+
+```
+https://api.powerbi.com/v1.0/myorg/admin/activityevents?startDateTime='2019-08-31T00:00:00'&endDateTime='2019-08-31T23:59:59'
+```
+
+Ha a bejegyzések száma nagy, az **ActivityEvents** API csak körülbelül 5.000 – 10.000 bejegyzést és egy folytatási tokent ad vissza. Ezután újra meg kell hívnia az **ActivityEvents** API-t a folytatási tokennel, hogy lekérhesse a következő bejegyzéscsomagot. Ezt folytatnia kell addig, amíg le nem kérdezte az összes bejegyzést, és már nem kap folytatási tokent. Az alábbi példa azt szemlélteti, hogy miként használható a folytatási token.
+
+```
+https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken='%2BRID%3ARthsAIwfWGcVAAAAAAAAAA%3D%3D%23RT%3A4%23TRC%3A20%23FPC%3AARUAAAAAAAAAFwAAAAAAAAA%3D'
+```
+
+A visszaadott bejegyzések számától függetlenül, ha az eredmények tartalmaznak folytatási tokent, akkor mindenképpen hívja meg újra az API-t a token használatával a fennmaradó adatok lekéréséhez egészen addig, amíg már nem kap vissza folytatási tokent. Az is előfordulhat, hogy egy hívás csak folytatási tokent ad vissza eseménybejegyzések nélkül. Az alábbi példa azt szemlélteti, hogyan lehet ciklust használni a válaszban visszaadott folytatási tokennel:
+
+```
+while(response.ContinuationToken != null)
+{
+   // Store the activity event results in a list for example
+    completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
+
+    // Make another call to the API with continuation token
+    response = GetPowerBIActivityEvents(response.ContinuationToken)
+}
+completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
+```
+
+### <a name="get-powerbiactivityevent-cmdlet"></a>Get-PowerBIActivityEvent parancsmag
+
+A tevékenységeseményeket egyszerűen letöltheti a Power BI PowerShellhez használható felügyeleti parancsmagjaival, amelyek között szerepel a **Get-PowerBIActivityEvent** parancsmag is, amely automatikusan kezeli a folytatási tokent. A **Get-PowerBIActivityEvent** parancsmag az **ActivityEvents** REST API-val megegyező módon egy StartDateTime és egy EndDateTime paramétert kér. Más szóval a kezdő dátumnak és a befejezési dátumnak ugyanarra a dátumértékre kell hivatkoznia, mert egyszerre csak egy napi tevékenységadatokat kérhet le.
+
+Az alábbi szkript bemutatja, hogyan tölthető le az összes Power BI-tevékenység. A parancs az eredményeket JSON-ból .NET-objektumokká konvertálja, így egyszerű hozzáférést biztosít az egyes tevékenységtulajdonságokhoz.
+
+```powershell
+Login-PowerBI
+
+$activities = Get-PowerBIActivityEvent -StartDateTime '2019-08-31T00:00:00' -EndDateTime '2019-08-31T23:59:59' | ConvertFrom-Json
+
+$activities.Count
+$activities[0]
+
+```
+
+### <a name="filter-activity-data"></a>Tevékenységadatok szűrése
+
+A tevékenységeseményeket a tevékenység típusa és a felhasználói azonosító alapján szűrheti. Az alábbi szkript azt mutatja be, hogyan tölthetőek le csak a **ViewDashboard** tevékenységhez tartozó eseményadatok. A támogatott paraméterekkel kapcsolatos további információkért használja a `Get-Help Get-PowerBIActivityEvent` parancsot.
+
+```powershell
+Login-PowerBI
+
+$activities = Get-PowerBIActivityEvent -StartDateTime '2019-08-31T00:00:00' -EndDateTime '2019-08-31T23:59:59' -ActivityType 'ViewDashboard' | ConvertFrom-Json
+
+$activities.Count
+$activities[0]
+
+```
+
+## <a name="use-the-audit-log"></a>Az auditnapló használata
+
+Ha az a feladata, hogy a felhasználói tevékenységeket kövesse nyomon a Power BI-ban és az Office 365-ben, akkor az Office 365 biztonsági és megfelelőségi központ vagy a PowerShell használatával dolgozhat a naplózással. A naplózás az Exchange Online funkcióin alapul, amelynek automatikusan megtörténik a kiépítése a Power BI támogatásához.
 
 A naplózási adatokat dátumtartomány, felhasználó, irányítópult, jelentés, adathalmaz és tevékenységtípus szerint szűrheti. A tevékenységeket le is töltheti egy CSV-fájlban (vesszővel tagolt szövegfájl), és offline elemezheti.
 
-## <a name="requirements"></a>Követelmények
+### <a name="audit-log-requirements"></a>Az auditnapló követelményei
 
 Az auditnaplók eléréséhez az alábbi követelményeknek kell megfelelnie:
 
-* Az auditnapló eléréséhez globális rendszergazdának kell lennie, vagy az auditnaplók vagy auditnaplók (csak megtekintés) szerepkör tagjának kell lennie az Exchange Online-ban. Alapértelmezés szerint ezek a szerepkörök hozzá vannak rendelve a megfelelőség kezelése és a szervezet kezelése szerepkörcsoporthoz az Exchange felügyeleti központjának **Engedélyek** oldalán.
+- Az auditnapló eléréséhez globális rendszergazdának kell lennie, vagy az auditnaplók vagy auditnaplók (csak megtekintés) szerepkör tagjának kell lennie az Exchange Online-ban. Alapértelmezés szerint ezek a szerepkörök hozzá vannak rendelve a megfelelőség kezelése és a szervezet kezelése szerepkörcsoporthoz az Exchange felügyeleti központjának **Engedélyek** oldalán.
 
     Ha nem rendszergazdai fiókoknak hozzáférést szeretne adni az auditnaplóhoz, akkor fel kell vennie a felhasználót ezeknek a szerepkörcsoportoknak az egyikébe. Másik lehetőségként létrehozhat egy egyéni szerepkörcsoportot az Exchange felügyeleti központjában, hozzárendelheti az auditnaplók vagy auditnaplók (csak megtekintés) szerepkört ehhez a csoporthoz, majd felveheti a nem rendszergazdai fiókot az új szerepkörcsoportba. További információ: [Szerepkörcsoportok kezelése az Exchange Online-ban](/Exchange/permissions-exo/role-groups).
 
     Ha a Microsoft 365 Felügyeleti központjából nem éri el az Exchange felügyeleti központját, lépjen a https://outlook.office365.com/ecp weblapra, és jelentkezzen be a hitelesítő adataival.
 
-* Ha rendelkezik hozzáféréssel az auditnaplóhoz, de nem globális rendszergazda vagy a Power BI szolgáltatás rendszergazdája, nem fér hozzá a Power BI felügyeleti portáljához. Ebben az esetben az [Office 365 Biztonsági és megfelelőségi központra](https://sip.protection.office.com/#/unifiedauditlog) mutató közvetlen hivatkozást kell használnia.
+- Ha rendelkezik hozzáféréssel az auditnaplóhoz, de nem globális rendszergazda vagy a Power BI szolgáltatás rendszergazdája, nem fér hozzá a Power BI felügyeleti portáljához. Ebben az esetben az [Office 365 Biztonsági és megfelelőségi központra](https://sip.protection.office.com/#/unifiedauditlog) mutató közvetlen hivatkozást kell használnia.
 
-## <a name="access-your-audit-logs"></a>Az auditnaplók elérése
+### <a name="access-your-audit-logs"></a>Az auditnaplók elérése
 
 Naplókhoz csak akkor fér hozzá, ha a naplózás engedélyezve van a Power BI-ban. További információt a felügyeleti portál dokumentációjának [Auditnaplók](service-admin-portal.md#audit-logs) című szakaszában talál. Akár 48 órás késés is lehet a naplózás engedélyezése és a naplózási adatok megtekinthetővé válása között. Ha nem látja azonnal adatokat, ellenőrizze később az auditnaplókat. Hasonló késés lehet az auditnaplók megtekintési engedélyének megkapása és a naplók elérésének lehetővé válása között.
 
@@ -53,9 +133,9 @@ A Power BI auditnaplói közvetlenül az [Office 365 Biztonsági és megfelelős
 
    ![A Felügyeleti portál képernyőképe az Auditnaplók és a Microsoft O365 Felügyeleti központ megnyitása lehetőség kiemelésével.](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
-## <a name="search-only-power-bi-activities"></a>Keresés csak Power BI-tevékenységek között
+### <a name="search-only-power-bi-activities"></a>Keresés csak Power BI-tevékenységek között
 
-A keresési eredményeket az alábbi lépésekkel korlátozhatja kizárólag Power BI-tevékenységekre. A tevékenységek listáját a cikk későbbi, [A Power BI által naplózott tevékenységek listája](#activities-audited-by-power-bi) című szakaszában találja meg.
+A keresési eredményeket az alábbi lépésekkel korlátozhatja kizárólag Power BI-tevékenységekre. A tevékenységek listáját a cikk későbbi, [A Power BI által naplózott tevékenységek listája](#operations-available-in-the-audit-and-activity-logs) című szakaszában találja meg.
 
 1. A **Naplókeresés** lapon válassza a **Keresés** lehetőség alatti **Tevékenységek** elem legördülő menüjét.
 
@@ -67,7 +147,7 @@ A keresési eredményeket az alábbi lépésekkel korlátozhatja kizárólag Pow
 
 A keresések csak Power BI-tevékenységeket adnak vissza.
 
-## <a name="search-the-audit-logs-by-date"></a>Naplók keresése dátum szerint
+### <a name="search-the-audit-logs-by-date"></a>Naplók keresése dátum szerint
 
 A naplók között kereshet dátumtartomány szerint a **Kezdő dátum** és a **Záró dátum** mezőkkel. Az alapértelmezett kijelölés az elmúlt 7 nap. A dátum és az idő az Egyezményes világidő (UTC) formátumában jelenik meg. A megadható maximális dátumtartomány 90 nap. 
 
@@ -75,17 +155,17 @@ Ha a kijelölt dátumtartomány nagyobb 90 napnál, hibaüzenet jelenik meg. Ha 
 
 ![Képernyőkép az Auditnaplók kereséséről a Kezdődátum és a Záródátum kiemelésével.](media/service-admin-auditing/search-audit-log-by-date.png)
 
-## <a name="search-the-audit-logs-by-users"></a>Naplók keresése felhasználók szerint
+### <a name="search-the-audit-logs-by-users"></a>Naplók keresése felhasználók szerint
 
 A naplóbejegyzések között kereshet adott felhasználók által elvégzett tevékenységeket. Írjon be egy vagy több felhasználónevet a **Felhasználók** mezőbe. A felhasználónév olyan, mint egy e-mail-cím. Ez az a fiók, amellyel a felhasználók bejelentkeznek a Power BI-ba. Ha a szervezet minden felhasználójáról (és szolgáltatásfiókjáról) szeretne eredményt kapni, hagyja üresen a mezőt.
 
 ![Keresés felhasználók szerint](media/service-admin-auditing/search-audit-log-by-user.png)
 
-## <a name="view-search-results"></a>Keresési eredmények megtekintése
+### <a name="view-search-results"></a>Keresési eredmények megtekintése
 
 A **Keresés** kiválasztása után betöltődnek a keresési eredmények. Néhány pillanat múlva megjelennek az **Eredmények** területen. A keresés végén a kijelzőn megjelenik az eredmények száma. Az **Auditnaplók keresése** legfeljebb 1000 eseményt jelenít meg. Ha 1000-nél több esemény felel meg a keresési feltételeknek, az alkalmazás az 1000 legutóbbi eseményt jeleníti meg.
 
-### <a name="view-the-main-results"></a>A fő találatok megtekintése
+#### <a name="view-the-main-results"></a>A fő találatok megtekintése
 
 Az **Eredmények** terület az alábbi adatokat tartalmazza a keresés által visszaadott egyes eseményekről. Kattintson az **Eredmények** terület egyik oszlopfejlécére az eredmények rendezéséhez.
 
@@ -98,7 +178,7 @@ Az **Eredmények** terület az alábbi adatokat tartalmazza a keresés által vi
 | Item |A megfelelő tevékenység következtében létrehozott vagy módosított objektum. Ez lehet például a megtekintett vagy módosított fájl, vagy a módosított felhasználói fiók. Nem minden tevékenységhez jelenik meg érték ebben az oszlopban. |
 | Részlet |A tevékenységek további részletei. Itt sem minden tevékenységhez tartozik érték. |
 
-### <a name="view-the-details-for-an-event"></a>Az esemény részleteinek megtekintése
+#### <a name="view-the-details-for-an-event"></a>Az esemény részleteinek megtekintése
 
 Ha további részletekre kíváncsi egy eseménnyel kapcsolatban, válassza az esemény rekordját a keresési eredmények listájában. Ekkor megjelenik a **Részletek** oldal, rajta az eseményrekord részletes tulajdonságaival. A **Részletek** oldalon attól függően jelennek meg tulajdonságok, hogy melyik Office 365-szolgáltatásban történik az esemény.
 
@@ -106,7 +186,7 @@ Ezeknek a részleteknek a megjelenítéséhez válassza a **További informáci�
 
    ![A naplórészletek párbeszédpanel a További információk lehetőség kiemelésével.](media/service-admin-auditing/audit-details.png)
 
-## <a name="export-search-results"></a>Keresési eredmények exportálása
+### <a name="export-search-results"></a>Keresési eredmények exportálása
 
 A Power BI-naplót a következő lépésekkel exportálhatja CSV-fájlba.
 
@@ -116,9 +196,9 @@ A Power BI-naplót a következő lépésekkel exportálhatja CSV-fájlba.
 
     ![Az Eredmények exportálása lehetőség képernyőképe.](media/service-admin-auditing/export-auditing-results.png)
 
-## <a name="use-powershell-to-search-audit-logs"></a>Keresés auditnaplókban a PowerShell használatával
+### <a name="use-powershell-to-search-audit-logs"></a>Keresés auditnaplókban a PowerShell használatával
 
-A naplókhoz a bejelentkezésétől függően PowerShell-lel is hozzáférhet. Az alábbi példa azt mutatja be, hogyan csatlakozhat az Exchange Online PowerShellhez, majd használhatja a [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) parancsot a Power BI auditnapló-bejegyzéseinek lekérésére. A szkript futtatásához egy rendszergazdának kell megadnia a megfelelő engedélyeket, amint az a [Követelmények](#requirements) szakaszban szerepel.
+A naplókhoz a bejelentkezésétől függően PowerShell-lel is hozzáférhet. Az alábbi példa azt mutatja be, hogyan csatlakozhat az Exchange Online PowerShellhez, majd használhatja a [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) parancsot a Power BI auditnapló-bejegyzéseinek lekérésére. A szkript futtatásához egy rendszergazdának kell megadnia a megfelelő engedélyeket, amint az az [Auditnapló követelményei](#audit-log-requirements) szakaszban szerepel.
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -131,9 +211,9 @@ Import-PSSession $Session
 Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType PowerBI -ResultSize 1000 | Format-Table | More
 ```
 
-## <a name="use-powershell-to-export-audit-logs"></a>Auditnaplók exportálása a PowerShell használatával
+### <a name="use-powershell-to-export-audit-logs"></a>Auditnaplók exportálása a PowerShell használatával
 
-Az auditnapló-keresési eredményeket a PowerShell használatával is exportálhatja. Az alábbi példa a [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) parancsból végzett küldést és az eredménynek az [Export-Csv](/powershell/module/microsoft.powershell.utility/export-csv) parancsmag használatával végzett exportálását mutatja be. A szkript futtatásához egy rendszergazdának kell megadnia a megfelelő engedélyeket, amint az a [Követelmények](#requirements) szakaszban szerepel.
+Az auditnapló-keresési eredményeket a PowerShell használatával is exportálhatja. Az alábbi példa a [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) parancsból végzett küldést és az eredménynek az [Export-Csv](/powershell/module/microsoft.powershell.utility/export-csv) parancsmag használatával végzett exportálását mutatja be. A szkript futtatásához egy rendszergazdának kell megadnia a megfelelő engedélyeket, amint az az [Auditnapló követelményei](#audit-log-requirements) szakaszban szerepel.
 
 ```powershell
 $UserCredential = Get-Credential
@@ -149,9 +229,9 @@ Remove-PSSession $Session
 
 További információ az Exchange Online-hoz való csatlakozásról: [Csatlakozás az Exchange Online-hoz a PowerShell-lel](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/). Egy másik példát a PowerShell auditnaplókkal való használatára a [Power BI Pro-licencek hozzárendelése a Power BI naplóival és a PowerShell-lel](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/) című cikkben talál.
 
-## <a name="activities-audited-by-power-bi"></a>A Power BI által naplózott tevékenységek
+## <a name="operations-available-in-the-audit-and-activity-logs"></a>Az auditnaplóban és a tevékenységnaplóban elérhető műveletek
 
-A Power BI az alábbi tevékenységeket naplózza:
+Az alábbi műveletek mind az auditnaplókban, mind a tevékenységnaplókban elérhetők.
 
 | Felhasználóbarát név                                     | Művelet neve                              | Megjegyzések                                  |
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|

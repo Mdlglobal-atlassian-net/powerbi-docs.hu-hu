@@ -9,10 +9,10 @@ ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
 ms.openlocfilehash: 312b86f9e0c0dda0c9c943520c74286e0458acef
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73859255"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Oktatóanyag: A Power BI jelentéskészítő kiszolgáló webportáljának áttekintése virtuális gépen
@@ -41,7 +41,7 @@ Szerencsére a Power BI csapata létrehozott egy virtuális gépet, amelyre már
 2. Válassza a **Letöltés most** lehetőséget.
 3. A szolgáltató használati feltételeinek és adatvédelmi szabályzatának elfogadásához válassza a **Tovább** lehetőséget.
 
-4. Kattintson a **Létrehozás** gombra.
+4. Válassza a **Létrehozás** lehetőséget.
 
     ![Virtuális gép létrehozása Power BI jelentéskészítő kiszolgálóhoz](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create.png)
 
@@ -206,7 +206,7 @@ A webportálon megtekintheti és kezelheti a többoldalas jelentéseket, és kö
 
     Ez és a többi a paraméter itt az alapértelmezés megváltoztatása nélkül módosítható.
 
-1. Válassza a **Rendelés** **SO48339** > **Jelentés megtekintése** lehetőséget.
+1. Válassza a **Megrendelés** **SO48339** > **Jelentés megtekintése** lehetőséget.
 
 4. Figyelje meg, hogy ez az összesen 2 oldal közül az első. A második oldalra a jobbra mutató nyíllal lapozhat át. A táblázat ezen az oldalon folytatódik.
 
