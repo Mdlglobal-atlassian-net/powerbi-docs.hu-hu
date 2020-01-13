@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 06/06/2019
+ms.date: 01/03/2020
 ms.author: maggies
-ms.openlocfilehash: f3170fb30011e50ba97f936d879a7f19cc795521
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: d4d6ed36ea849e2bc9ba3d5212c5d5973ea9c953
+ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128392"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691324"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Adatok megadása közvetlenül többoldalas jelentésben a jelentéskészítőben – Power BI
 
@@ -75,7 +75,7 @@ Az adatkészletet használhatja a jelentés adatvizualizációinak alapjaként. 
 
 ## <a name="upload-the-paginated-report-to-the-power-bi-service"></a>A lapszámozott jelentés feltöltése a Power BI szolgáltatásba
 
-Mivel a Power BI szolgáltatás már támogatja a lapszámozott jelentéseket, feltöltheti a jelentését a Prémium szintű kapacitásba. További információ: [Lapszámozott jelentés feltöltése](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report).
+Mivel a Power BI szolgáltatás már támogatja a lapszámozott jelentéseket, feltöltheti a jelentését a Prémium szintű kapacitásba. További információ: [Lapszámozott jelentés feltöltése](paginated-reports-save-to-power-bi-service.md).
 
 ## <a name="upload-the-paginated-report-to-a-report-server"></a>A lapszámozott jelentés feltöltése egy jelentéskészítő kiszolgálóra
 

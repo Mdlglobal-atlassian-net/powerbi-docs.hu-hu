@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: afd85404dd926cab396222d3ba9b4bf62e689054
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ea60400a4522dd496e19d508f13760581c0b2620
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876342"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761249"
 ---
-# <a name="default-member-in-multidimensional-models-in-power-bi"></a>Alapértelmezett tag többdimenziós modellekben a Power BI-ban
+# <a name="work-with-multidimensional-models-in-power-bi"></a>Többdimenziós modellek használata a Power BI-ban
 
 A Power BI-ban többdimenziós modellekhez csatlakozhat, és számos adattípust megjelenítő jelentéseket létrehozhat. Többdimenziós modellek használatakor a Power BI az adatok feldolgozásához bizonyos szabályokat alkalmaz az *alapértelmezett tagként* definiált oszlop alapján. 
 
@@ -58,11 +58,11 @@ Most tegyük fel, hogy a következő *alapértelmezett tagok* vannak beállítva
 
 Most nézzük meg, mi történik, ha a Power BI alkalmazza az egyes oszlopokat. Amikor a vizualizációkat a következő oszlopokban csoportosítja, az alábbi eredményt kapja:
 
-* **Város** – a Power BI az összes várost megjeleníti a *Város*, *Állam* és *Ország* **alapértelmezett tagjainak** törlésével, azonban megőrzi a *Népesség* **alapértelmezett tagját**, a *Város* teljes ARP-jét pedig törli.
+* **Város** – a Power BI az összes várost megjeleníti a *Város*, *Állam* és *Ország***alapértelmezett tagjainak** törlésével, azonban megőrzi a *Népesség***alapértelmezett tagját**, a *Város* teljes ARP-jét pedig törli.
     > [!NOTE]
     > A *Népesség* nem szerepel a *Város* ARP-útvonalában, csak az *Államhoz* kapcsolódik, a Power BI így nem törli.
-* **Állam** – a Power BI az összes *államot* megjeleníti a *Város* ,az *Állam*, az *Ország* és a *Népesség* **alapértelmezett tagjainak** törlésével.
-* **Ország** – a Power BI az összes országot megjeleníti a *Város*, az *Állam* és az *Ország* **alapértelmezett tagjainak** törlésével, a *Népesség* **alapértelmezett tagját** azonban megőrzi.
+* **Állam** – a Power BI az összes *államot* megjeleníti a *Város* ,az *Állam*, az *Ország* és a *Népesség***alapértelmezett tagjainak** törlésével.
+* **Ország** – a Power BI az összes országot megjeleníti a *Város*, az *Állam* és az *Ország***alapértelmezett tagjainak** törlésével, a *Népesség***alapértelmezett tagját** azonban megőrzi.
 * **Város és állam** – a Power BI törli az összes oszlop **alapértelmezett tagjait**.
 
 A vizualizációban megjelenített csoportok teljes ARP-útvonala törlődik. 

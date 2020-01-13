@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 23d66994e88204f56ee937a4f7887225e48a5e2f
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: a62d1cf6d21df822265c3c41d4e74e74181b7051
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75304292"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885175"
 ---
-# <a name="connect-to-snowflake-in-power-bi-desktop"></a>Kapcsolódás a Snowflake-hez a Power BI Desktopban
+# <a name="connect-to-a-snowflake-computing-warehouse-in-power-bi-desktop"></a>Kapcsolódás Snowflake Computing-adattárházhoz a Power BI Desktopban
 A Power BI Desktopban csatlakozhat egy **Snowflake** Computing-adattárházhoz, és úgy használhatja az alapul szolgáló adatokat, mint a Power BI Desktop bármely más adatforrását. 
 
 > [!NOTE]
@@ -35,7 +35,7 @@ A megjelenő **Snowflake** ablakban írja vagy illessze be a Snowflake Computing
 
 Ha a rendszer kéri, adja meg a felhasználónevét és a jelszavát.
 
-![](media/desktop-connect-snowflake/connect_snowflake_4.png)
+![](media/desktop-connect-snowflake/connect-snowflake-4.png)
 
 > [!NOTE]
 > Ha egy adott **Snowflake**-kiszolgálóhoz megadta a felhasználónévét és a jelszavát, a Power BI Desktop ugyanazon hitelesítő adatokat fogja használni a későbbi csatlakozási kísérletekhez is. A hitelesítő adatokat a **Fájl > Lehetőségek és beállítások > Adatforrás-beállítások** szakaszában módosíthatja.

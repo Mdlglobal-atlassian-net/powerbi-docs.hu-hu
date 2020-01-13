@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 10c6f9f512c1b8c837842247d9dc928e8e065451
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4178dd37acf12efbe8dd00baed4f6b72ab549841
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876612"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762048"
 ---
-# <a name="using-calculated-columns-in-power-bi-desktop"></a>Számított oszlopok használata a Power BI Desktopban
+# <a name="create-calculated-columns-in-power-bi-desktop"></a>Számított oszlopok létrehozása a Power BI Desktopban
 A számított oszlopokkal új adatokat adhat hozzá a modellben már meglévő táblázathoz. De ahelyett, hogy értékeket kellene lekérdeznie és betöltenie egy adatforrásból az új oszlopba, létrehozhat egy Data Analysis Expressions- (DAX-) képletet, amely meghatározza az oszlop értékeit. A számított oszlopok a Power BI Desktopban az Új oszlop funkcióval hozhatók létre Jelentés nézetben.
 
-Az egyéni oszlopok egy kérés részeként hozhatók létre a Lekérdezésszerkesztőben az Egyéni oszlop hozzáadása paranccsal, ezzel szemben a Jelentés vagy Adatnézetben létrehozott számított oszlopok a modellbe már betöltött adatokon alapulnak. Például választhatja azt is, hogy két különböző oszlopból fűz össze adatokat két különböző, de kapcsolódó táblába, hozzáadást végez el, vagy karakterláncrészleteket nyer ki.
+Az egyéni oszlopok egy kérés részeként hozhatók létre a Lekérdezésszerkesztőben az Egyéni oszlop hozzáadása paranccsal, ezzel szemben a Jelentés vagy Adatnézetben létrehozott számított oszlopok a modellbe már betöltött adatokon alapulnak. Például választhatja azt is, hogy két különböző oszlopból fűz össze adatokat két különböző, de kapcsolódó táblába, hozzáadást végez el, vagy sztringrészleteket nyer ki.
 
 A létrehozott számított oszlopok a Mezők listában jelennek meg, csakúgy, mint bármely más mező, de speciális ikonnal rendelkeznek, amely azt jelzi, hogy értékeik egy képlet eredményei. Tetszőleges nevet adhat az oszlopoknak, és hozzáadhatja őket egy jelentés vizualizációjához az egyéb mezőkhöz hasonlóan.
 

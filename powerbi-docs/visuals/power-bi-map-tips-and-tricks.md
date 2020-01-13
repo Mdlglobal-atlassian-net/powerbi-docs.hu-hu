@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dd35f06a685d1fd4620ef6a2ee3dc7f90e702a6a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: c876a1f87afcb5bbaa3e27bdcb88bda2a04496e5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73881040"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758508"
 ---
-# <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tippek és trükkök Power BI-térképvizualizációkhoz
+# <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tippek és trükkök térképes vizuális elemekhez a Power BI-ban
 A Power BI integrálva van a Bing Térképekkel alapértelmezett térképkoordináták biztosításához (ez a geokódolás nevű folyamat), így térképeket hozhat létre. Együtt algoritmusokat használnak a megfelelő hely azonosításához, de ez néha csak feltételezésen alapul. Ha a Power BI nem tudja egyedül létrehozni a térkép-vizualizációt, igénybe veszi a Bing Térképek segítségét. 
 
 Lehetséges, hogy Önnek vagy a cégnek frissítenie kell a tűzfalat, hogy engedélyezze a hozzáférést azokhoz az URL-címekhez, amelyeket a Bing a geokódoláshoz használ.  Ezek az alábbiak:

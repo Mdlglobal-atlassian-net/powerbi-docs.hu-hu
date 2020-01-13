@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a01598bda6520bbf0bf82175ab4256cf7d529e84
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7eded3d17e0db5894bd2f1a03fae49357eb27c69
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880698"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762255"
 ---
-# <a name="getting-started-with-color-formatting-and-axis-properties"></a>Bevezetés a színformázás és tengelytulajdonságok használatába
+# <a name="get-started-with-color-formatting-and-axis-properties"></a>Bevezetés a színformázás és tengelytulajdonságok használatába
 A **Power BI** szolgáltatásban módosíthatja az adatsorozatok, adatpontok színét, sőt akár a vizualizációk hátteréét is. Módosíthatja az x és y tengely megjelenítésének módját is, így teljes körűen szabályozhatja az irányítópultok és jelentések megjelenését.
 
 Első lépésként válassza a **Jelentés** elemet a **Saját munkaterület** ablaktáblán. Válassza a felső menüben található **Jelentés szerkesztése** elemet.  
