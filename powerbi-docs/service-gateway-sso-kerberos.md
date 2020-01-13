@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 12/03/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "75000112"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Kerberos-alapú egyszeri bejelentkezés konfigurálása a Power BI szolgáltatásról helyszíni adatforrásokhoz
@@ -132,7 +132,7 @@ A delegálási beállítások konfigurálása:
 
    A példánkban az egyszerű szolgáltatásnév az *MSSQLSvc* kifejezéssel kezdődik. Ha megadta az adatbázis-szolgáltatás teljes tartománynevét és a NetBIOS egyszerű szolgáltatásnevét is, válassza ki mindkettőt. Előfordulhat, hogy csak egy jelenik meg.
 
-9. Kattintson az **OK** gombra. 
+9. Válassza az **OK** lehetőséget. 
 
    Ekkor meg kell jelennie az SPN-nek azon szolgáltatások listájában, amelyekhez az átjáró szolgáltatás fiókja delegált hitelesítő adatokat tud megjeleníteni.
 
@@ -189,7 +189,7 @@ Végül az átjárószolgáltatást futtató gépen (a példánkban **MyGatewayM
 
 1. Az átjárógépen futtassa a **gpedit.msc** eszközt.
 
-2. Lépjen a **Helyi számítógép szabályzata** &gt; **Számítógép-konfiguráció** &gt; **Windows-beállítások** &gt; **Biztonsági beállítások** &gt; **Helyi szabályzatok** &gt; **Felhasználói jogok kiosztása** területre.
+2. Lépjen a **Helyi számítógép-házirend** &gt; **Számítógép konfigurációja** &gt; **Windows-beállítások** &gt; **Biztonsági beállítások** &gt; **Helyi házirendek** &gt; **Felhasználói jogok hozzárendelése** területre.
 
     ![A Helyi számítógép-szabályzat mappastruktúrája](media/service-gateway-sso-kerberos/user-rights-assignment.png)
 
@@ -231,7 +231,7 @@ Ha nincs konfigurálva az Azure AD Connect, kövesse ezeket a lépéseket a Powe
     
         Keresse meg az `msDS-cloudExtensionAttribute1` elemet, és kattintson rá duplán. Állítsa a tulajdonság értékét arra a teljes felhasználónévre (UPN-re), amelyet a Power BI szolgáltatásba való bejelentkezéshez használ.
     
-    1. Kattintson az **OK** gombra.
+    1. Válassza az **OK** lehetőséget.
     
         ![Sztringattribútum-szerkesztő ablak](media/service-gateway-sso-kerberos/edit-attribute.png)
     
@@ -262,4 +262,4 @@ A helyszíni adatátjáróval és a DirectQueryvel kapcsolatos további informá
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások](desktop-directquery-data-sources.md)
 * [A DirectQuery és az SAP BW](desktop-directquery-sap-bw.md)
-* [A DirectQuery és az SAP HANA](desktop-directquery-sap-hana.md)
+* [DirectQuery és SAP HANA](desktop-directquery-sap-hana.md)

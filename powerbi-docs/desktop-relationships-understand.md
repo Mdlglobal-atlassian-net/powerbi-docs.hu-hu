@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 8562d0fd5acee2f18576f0a6b6f2e3d613354f92
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 0029d275e5180c29e8653f549d8450014362b59b
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74009644"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75304253"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Modellbeli kapcsolatok a Power BI Desktopban
 
@@ -73,7 +73,7 @@ Egy-a-többhöz vagy több-az-egyhez kapcsolatok konfigurálásakor azt válassz
 
 Az **egy-az-egyhez** kapcsolat azt jelenti, hogy mindkét oszlop egyedi értékeket tartalmaz. Ez a számosságtípus nem gyakori, és valószínűleg kevéssé optimális modelltervet eredményez a redundáns adatok tárolása miatt.<!-- For guidance on using this cardinality type, see the [One-to-one relationship guidance](guidance/relationships-one-to-one) article.-->
 
-A **több-a-többhöz** kapcsolat azt jelenti, hogy mindkét oszlop tartalmazhat duplikált értékeket. Ez a számosságtípus nem gyakori. Leginkább összetett modellkövetelmények tervezésekor hasznos.<!-- For guidance on using this cardinality type, see the [Many-to-many relationship guidance](guidance/relationships-many-to-many) article.-->
+A **több-a-többhöz** kapcsolat azt jelenti, hogy mindkét oszlop tartalmazhat duplikált értékeket. Ez a számosságtípus nem gyakori. Leginkább összetett modellkövetelmények tervezésekor hasznos. A számosságtípus használatával kapcsolatos útmutatót itt találja meg: [Útmutató a több-a-többhöz kapcsolatokhoz](guidance/relationships-many-to-many.md).
 
 > [!NOTE]
 > A több-a-többhöz számosságtípus jelenleg nem támogatott a Power BI jelentéskészítő kiszolgálóhoz tervezett modellek esetén.
@@ -226,4 +226,5 @@ A következő lista szűrőpropagálási teljesítmény szerint rangsorolja a ka
 ## <a name="next-steps"></a>Következő lépések
 
 - [A csillagséma és a Power BI-ban játszott szerepének a bemutatása](guidance/star-schema.md)
+- [Útmutató a több-a-többhöz kapcsolatokhoz](guidance/relationships-many-to-many.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

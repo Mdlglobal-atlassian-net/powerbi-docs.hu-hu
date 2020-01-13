@@ -7,31 +7,39 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 12/10/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: bc5576bcf1edbe5c3d3ccaf2d217e5666484a7d4
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 8a97f30f75b8bf720d735944589e671392c47237
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699935"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223968"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>A Power BI Premium megvásárlása
 
+Ez a cikk azt ismerteti, hogyan vásárolhat Power BI Premium-kapacitást cége számára. A cikk két forgatókönyvet érint:
+
+- P termékváltozatok használata a tipikus éles környezetekben. A P termékváltozatokhoz havi vagy éves kötelezettségvállalásra van szükség, és havi díjat számítunk fel. A P termékváltozatokat a [Microsoft 365 felügyeleti központban](https://admmin.microsoft.com) vásárolhatja meg.
+
+- Az A termékváltozatok használata tesztelési forgatókönyvekhez, illetve olyan esetekhez, amikor nem rendelkezik a P termékváltozatok megvásárlásához szükséges engedélyekkel (Microsoft 365 globális rendszergazdai szerepkör vagy számlázási rendszergazdai szerepkör). Az A termékváltozatokhoz nem szükséges időalapú kötelezettségvállalás, és a számlázás óránként történik. Az A termékváltozatokat az [Azure Portalon](https://portal.azure.com) lehet megvásárolni.
+
+További információt a Power BI Premiumról a [Mi az a Power BI Premium?](service-premium-what-is.md) című cikkben talál. A jelenlegi díjszabással kapcsolatos és további tervezési információkat a [Power BI díjszabását ismertető oldalon](https://powerbi.microsoft.com/pricing/) és a [Power BI Premium-kalkulátor](https://powerbi.microsoft.com/calculator/) oldalán talál. A tartalmak létrehozóinak továbbra is [Power BI Pro-licencre](service-admin-purchasing-power-bi-pro.md) lesz szükségük, abban az esetben is, ha vállalata a Power BI Premiumot használja. Legalább egy Power BI Pro-licencet meg kell vásárolnia cége számára. Az A termékváltozat használatakor a tartalmat használó _összes felhasználónak_ Pro-licenccel kell rendelkeznie.
+
 > [!NOTE]
-> Ezt a cikket jelenleg frissítjük új funkciók leírásával, valamint további részletekkel, és javítjuk az olvashatóságot. 
+> Egy Premium-előfizetés lejárta után 30 napig a kapacitása még teljes mértékben a rendelkezésére áll. Ezután tartalmai megosztott kapacitásra állnak vissza. 1 GB-nál nagyobb méretű modellek nem támogatottak megosztott kapacitásban.
 
-Ez a cikk azt ismerteti, hogyan vásárolhat Power BI Premium-kapacitást (P1-P3) vállalata számára. Power BI Premium-kapacitást a Microsoft 365 Felügyeleti központban vásárolhat, a kapacitások felügyeletéhez pedig a Power BI felügyeleti portált használhatja. A jelenlegi díjszabással kapcsolatos és további tervezési információkat a [Power BI díjszabását ismertető oldalon](https://powerbi.microsoft.com/pricing/) és a [Power BI Premium-kalkulátor](https://powerbi.microsoft.com/calculator/) oldalán talál.
+## <a name="purchase-p-skus-for-typical-production-scenarios"></a>P termékváltozatok vásárlása a tipikus éles környezetekhez
 
-A tartalmak létrehozóinak továbbra is Power BI Pro-licencre lesz szükségük, abban az esetben is, ha vállalata a Power BI Premiumot használja. Legalább egy Power BI Pro-licencet meg kell vásárolnia cége számára.
+Létrehozhat egy új bérlőt a Power BI Premium P1 SKU-val konfigurálva, vagy megvásárolhat egy Power BI Premium kapacitást egy meglévő szervezet számára. Mindkét esetben lehetőség van további kapacitás hozzáadására, ha szüksége van rá.
 
-Egy Premium-előfizetés lejárta után 30 napig a kapacitása még teljes mértékben a rendelkezésére áll. Ezután tartalmai megosztott kapacitásra állnak vissza. 1 GB-nál nagyobb méretű modellek nem támogatottak megosztott kapacitásban.
-
-## <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Új bérlő létrehozása a Power BI Premium P1 csomaggal
+### <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Új bérlő létrehozása a Power BI Premium P1 csomaggal
 
 Ha nem rendelkezik meglévő bérlővel, és létre szeretne hozni egyet, ezzel egy időben megvásárolhatja a Power BI Premiumot. A következő hivatkozás végigvezeti egy új bérlő létrehozásának folyamatán, és a segítségével megvásárolhatja a Power BI Premiumot: [Power BI Premium P1 ajánlat](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Amikor létrehoz egy bérlőt, automatikusan hozzá lesz rendelve a bérlőhöz tartozó Microsoft 365 globális rendszergazdai szerepkörhöz.
 
-## <a name="purchase-a-power-bi-premium-capacity-for-an-existing-organization"></a>Power BI Premium-kapacitás vásárlása meglévő szervezet számára
+A kapacitás megvásárlása után ismerje meg, hogyan [felügyelheti a kapacitásokat](service-admin-premium-manage.md#manage-capacity), és hogyan [rendelhet hozzá munkaterületeket](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) a kapacitáshoz.
+
+### <a name="purchase-a-power-bi-premium-capacity-for-an-existing-organization"></a>Power BI Premium-kapacitás vásárlása meglévő szervezet számára
 
 Ha rendelkezik egy meglévő vállalattal (bérlővel), akkor előfizetések és licencek vásárlásához az Microsoft 365 globális rendszergazdai szerepkörrel vagy számlázási rendszergazdai szerepkörrel kell rendelkeznie. További információ: [A Microsoft 365 rendszergazdai szerepkörei](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
@@ -41,7 +49,7 @@ Premium-kapacitás vásárlásához kövesse az alábbi lépéseket.
 
     ![A Microsoft 365 alkalmazásválasztó](media/service-admin-premium-purchase/o365-app-picker.png)
 
-    Másik lehetőségként megnyithatja a Microsoft 365 Felügyeleti központját. Ehhez nyissa meg a(z) https://portal.office.com oldalt, majd válassza a **Felügyelet** lehetőséget.
+    Másik lehetőségként megnyithatja a Microsoft 365 Felügyeleti központját.
 
 1. Válassza a **Számlázás** > **Szolgáltatások vásárlása** lehetőséget.
 
@@ -57,7 +65,9 @@ A vásárlás befejezése után a **Szolgáltatások vásárlása** oldalon a te
 
 ![Power BI Premium megvásárlása esetén](media/service-admin-premium-purchase/premium-purchased.png)
 
-## <a name="purchase-additional-capacities"></a>További kapacitások vásárlása
+A kapacitás megvásárlása után ismerje meg, hogyan [felügyelheti a kapacitásokat](service-admin-premium-manage.md#manage-capacity), és hogyan [rendelhet hozzá munkaterületeket](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) a kapacitáshoz.
+
+### <a name="purchase-additional-capacities"></a>További kapacitások vásárlása
 
 Most, hogy rendelkezik egy kapacitással, az igények növekedésének megfelelően hozzáadhat továbbiakat is. Cégében a Premium-kapacitások termékváltozatainak bármely kombinációját (P1-től P3-ig) használhatja. A különböző termékváltozatok különböző erőforrás-képességeket biztosítanak.
 
@@ -78,7 +88,7 @@ A **Szolgáltatások vásárlása** lapon ekkor megjelenik a példányok száma.
 
 ![A Power BI Premium-kapacitáshoz elérhető virtuális magok](media/service-admin-premium-purchase/premium-capacities.png)
 
-## <a name="cancel-your-subscription"></a>Az előfizetés megszüntetése
+### <a name="cancel-your-subscription"></a>Az előfizetés megszüntetése
 
 Az előfizetést a Microsoft 365 Felügyeleti központjában szüntetheti meg. A Premium-előfizetés megszüntetéséhez végezze el az alábbi műveleteket.
 
@@ -94,9 +104,70 @@ Az előfizetést a Microsoft 365 Felügyeleti központjában szüntetheti meg. A
 
 1. Olvassa végig az adatokat, és ha folytatni kívánja, válassza az **Előfizetés megszüntetése** lehetőséget.
 
-### <a name="when-canceling-or-your-license-expires"></a>Törlésnél, vagy amikor lejár a licenc
+#### <a name="when-canceling-or-your-license-expires"></a>Törlésnél, vagy amikor lejár a licenc
 
 Ha törli a Prémium előfizetést, vagy ha lejár a kapacitáslicenc, a törlés idejét vagy a licenc lejáratát követő 30 napon keresztül továbbra is hozzáférhet a prémium kapacitásokhoz. A 30 nap letelte után nem tudja majd elérni a prémium kapacitásokat és a bennük található munkaterületeket.
+
+## <a name="purchase-a-skus-for-testing-and-other-scenarios"></a>Az A SKU megvásárlása tesztelési és egyéb forgatókönyvekhez
+
+Az A SKU-k az Azure Power BI Embedded szolgáltatásán keresztül érhetők el. Az A SKU-kat a következő módokon használhatja:
+
+- A Power BI harmadik féltől származó alkalmazásokban való beágyazásának engedélyezése. További információkat a [Power BI Embedded oldalán](developer/azure-pbie-what-is-power-bi-embedded.md) találhat.
+
+- A P SKU megvásárlása előtt tesztelje a prémium szintű funkciókat.
+
+- Fejlesztési és tesztelési környezeteket hozhat létre a P SKU-t használó éles környezettel együtt.
+
+- Megvásárolhatja a Power BI Premiumot még akkor is, ha Ön nem rendelkezik Microsoft 365 globális rendszergazdai szerepkörrel vagy számlázási rendszergazdai szerepkörrel.
+
+> [!NOTE]
+> Ha A4-es vagy magasabb szintű SKU-t vásárol, használhatja az összes prémium funkciót, kivéve a tartalom korlátlan megosztását. Az A termékváltozat használatakor a tartalmat használó _összes felhasználónak_ Pro-licenccel kell rendelkeznie.
+
+A következő lépésekkel vásárolhat A SKU-kat az Azure Portalon:
+
+1. Jelentkezzen be az [Azure Portalon](https://portal.azure.com) egy olyan fiókkal, amely legalább kapacitás-rendszergazdai engedélyekkel rendelkezik a Power BI-ban.
+
+1. Keressen rá a _Power BI Embedded_ kifejezésre, és válassza ki a szolgáltatást a keresési eredmények között.
+
+    ![Keresés az Azure Portalon](media/service-admin-premium-purchase/azure-portal-search.png)
+
+1. Válassza a **Power BI Embedded létrehozása** lehetőséget.
+
+    ![Power BI Embedded létrehozása](media/service-admin-premium-purchase/create-power-bi-embedded.png)
+
+1. A **Power BI Embedded** létrehozás képernyőjén adja meg a következő adatokat:
+
+    - Az az **előfizetés**, amelyben létre kívánja hozni a Power BI Embedded szolgáltatást.
+
+    - Az a fizikai **hely**, amelyben létre kívánja hozni a szolgáltatást tartalmazó erőforráscsoportot. A jobb teljesítmény érdekében ennek a helynek a Power BI-hoz használt Azure Active Directory-bérlő helyéhez közel kell lennie.
+
+    - A használni kívánt meglévő **erőforráscsoport**, vagy hozzon létre egy újat, ahogy az a példában látható.
+
+    - A **Power BI kapacitásadminisztrátor**. A kapacitás-rendszergazdának az Azure AD-bérlőbeli tagnak vagy egyszerű szolgáltatásnévnek kell lennie.
+
+    ![Előfizetés és erőforráscsoport](media/service-admin-premium-purchase/subscription-resource-group.png)
+
+1. Ha a Power BI Premium összes funkcióját szeretné használni (kivéve a korlátlan megosztást), legalább egy A4-es SKU-ra van szüksége. Válassza a **Méret módosítása** lehetőséget.
+
+    ![Kapacitás méretének módosítása](media/service-admin-premium-purchase/change-capacity-size.png)
+
+1. Válasszon ki egy A4-es, A5-ös vagy A6-os kapacitásméretet, amelyek a P1, a P2 és a P3 értékeknek felelnek meg.
+
+    ![Az A3 kapacitás kiválasztása](media/service-admin-premium-purchase/select-a3-capacity.png)
+
+1. Válassza az **Ellenőrzés és létrehozás** lehetőséget, tekintse át a kiválasztott beállításokat, majd válassza a **Létrehozás** lehetőséget.
+
+    ![Erőforrás létrehozása](media/service-admin-premium-purchase/create-resource.png)
+
+1. A telepítés elvégzése néhány percet igénybe vehet. Ha befejeződött, válassza az **Ugrás az erőforrásra** lehetőséget.
+
+    ![Üzembe helyezés kész](media/service-admin-premium-purchase/deployment-complete.png)
+
+1. A felügyeleti képernyőn tekintse át a szolgáltatás felügyeletéhez megadott beállításokat, beleértve a szolgáltatás szüneteltetését is arra az esetre, amikor nem használja azt.
+
+    ![Kapacitás kezelése](media/service-admin-premium-purchase/manage-capacity.png)
+
+A kapacitás megvásárlása után ismerje meg, hogyan [felügyelheti a kapacitásokat](service-admin-premium-manage.md#manage-capacity), és hogyan [rendelhet hozzá munkaterületeket](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) a kapacitáshoz.
 
 ## <a name="next-steps"></a>Következő lépések
 

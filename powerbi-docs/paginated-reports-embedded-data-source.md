@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: d7a170cad376c3ec9fd3ca8ca7d2c8d2d8ac0223
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7cfc52557d9dcce03dd2e42818bb04f4754c190d
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875310"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75304301"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Beágyazott adatforrás létrehozása lapszámozott jelentésekhez a Power BI szolgáltatásban
 
@@ -53,7 +53,7 @@ További információ: [Jelentésadatok a Power BI Jelentéskészítőben](repor
   
     -   Gépelje be a kapcsolati sztringet közvetlenül a **Kapcsolati sztring** szövegmezőbe. 
   
-    -   Válassza a kifejezésgombot (**fx**) egy olyan kifejezés létrehozásához, amelynek kiértékelése megadja a kapcsolati sztringet. A Kifejezés párbeszédablakban írja be a kifejezést a **Kifejezés** mezőbe. Kattintson az **OK** gombra. 
+    -   Válassza a kifejezésgombot (**fx**) egy olyan kifejezés létrehozásához, amelynek kiértékelése megadja a kapcsolati sztringet. A Kifejezés párbeszédablakban írja be a kifejezést a **Kifejezés** mezőbe. Válassza az **OK** lehetőséget. 
   
     -   Válassza a **Build** lehetőséget a 2. lépésben választott adatforráshoz tartozó **Kapcsolat tulajdonságai** párbeszédablak megnyitásához.  
   
@@ -63,7 +63,7 @@ További információ: [Jelentésadatok a Power BI Jelentéskészítőben](repor
   
      Adja meg az ehhez az adatforráshoz használni kívánt hitelesítő adatokat. A támogatott hitelesítőadat-típusokat az adatforrás tulajdonosa határozza meg. További információt a [Hitelesítő adatok és kapcsolati adatok megadása jelentésadat-forrásokhoz](https://docs.microsoft.com/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources) című cikkben talál.
   
-5.  Kattintson az **OK** gombra.  
+5.  Válassza az **OK** lehetőséget.  
   
      Az adatforrás megjelenik a Jelentésadatok panelen.  
      
@@ -75,21 +75,21 @@ A Power BI-adatkészletekhez csatlakozó többoldalas jelentések kisebb eltér�
 
 - .rdl ugyanabban a munkaterületben, mint az adatkészlet (ugyanazon tulajdonos): Támogatott
 - .rdl más munkaterületben, mint az adatkészlet (ugyanazon tulajdonos): Támogatott
-- Megosztott .rdl: A jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
-- Megosztott alkalmazás: A jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
+- Megosztott .rdl: A jelentést megtekintő minden felhasználónak meg kell adnia az Olvasási engedélyt az adathalmaz szintjén
+- Megosztott alkalmazás: A jelentést megtekintő minden felhasználónak meg kell adnia az Olvasási engedélyt az adathalmaz szintjén
 - .rdl ugyanabban a munkaterületben, mint az adatkészlet (eltérő tulajdonos): Támogatott
-- .rdl az adathalmazétól különböző munkaterületen (eltérő felhasználó): A jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
-- Sorszintű biztonság: Ennek érvényre juttatásához a jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén.
+- .rdl az adathalmazétól különböző munkaterületen (eltérő felhasználó): A jelentést megtekintő minden felhasználónak meg kell adnia az Olvasási engedélyt az adathalmaz szintjén
+- Sorszintű biztonság: Ennek érvényre juttatásához a jelentést megtekintő minden felhasználónak meg kell adnia az Olvasási engedélyt az adathalmaz szintjén
 
 ### <a name="new-experience-apps-and-workspaces"></a>Új felületű alkalmazások és munkaterületek
 
 - .rdl ugyanabban a munkaterületben, mint az adatkészlet: Támogatott
 - .rdl más munkaterületben, mint az adatkészlet (ugyanazon tulajdonos): Támogatott
-- Megosztott .rdl: A jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
-- Megosztott alkalmazás: A jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
+- Megosztott .rdl: A jelentést megtekintő minden felhasználónak meg kell adnia az Olvasási engedélyt az adathalmaz szintjén
+- Megosztott alkalmazás: A jelentést megtekintő minden felhasználónak meg kell adnia az Olvasási engedélyt az adathalmaz szintjén
 - .rdl ugyanabban a munkaterületben, mint az adatkészlet (eltérő tulajdonos) – támogatott
-- .rdl más munkaterületben, mint az adatkészlet (eltérő tulajdonos): A jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
-- Sorszintű biztonság: Ennek érvényre juttatásához a jelentést megtekintő minden felhasználónak meg kell adnia az Összeállítási engedélyt az adathalmaz szintjén
+- .rdl más munkaterületben, mint az adatkészlet (eltérő tulajdonos): A jelentést megtekintő minden felhasználónak meg kell adnia az Olvasási engedélyt az adathalmaz szintjén
+- Sorszintű biztonság: Ennek érvényre juttatásához a jelentést megtekintő minden felhasználónak meg kell adnia az Olvasási engedélyt az adathalmaz szintjén
 
 ## <a name="next-steps"></a>Következő lépések
 

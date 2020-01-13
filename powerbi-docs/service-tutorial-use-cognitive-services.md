@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bdf35d04a5b4dc7000a9ada0afcb23d882d17780
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e9b34d79a70207e175c873a88ec4d5dfe5417747
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871230"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75224211"
 ---
 # <a name="tutorial-use-cognitive-services-in-power-bi"></a>Oktatóanyag: A Cognitive Services használata a Power BI-ban
 
@@ -180,6 +180,6 @@ Ebben az oktatóanyagban vélemények pontozására és képcímkésére haszná
 
 Az alábbi cikkeket is érdekesnek találhatja.
 
-* [Oktatóanyag: Machine Learning Studio-modell meghívása a Power BI-ban (előzetes verzió)](service-tutorial-invoke-machine-learning-model.md)
+* [Oktatóanyag: Machine Learning Studio (klasszikus) modell meghívása a Power BI-ban (előzetes verzió)](service-tutorial-invoke-machine-learning-model.md)
 * [Az Azure Machine Learning integrálása a Power BI-jal (Előzetes verzió)](service-machine-learning-integration.md)
 * [A Cognitive Services a Power BI-ban (Előzetes verzió)](service-cognitive-services.md)

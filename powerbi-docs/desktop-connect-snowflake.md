@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2bb44498b6123eadffe86c7eb9bfb93bb0db5e14
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 23d66994e88204f56ee937a4f7887225e48a5e2f
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876410"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75304292"
 ---
 # <a name="connect-to-snowflake-in-power-bi-desktop"></a>Kapcsolódás a Snowflake-hez a Power BI Desktopban
 A Power BI Desktopban csatlakozhat egy **Snowflake** Computing-adattárházhoz, és úgy használhatja az alapul szolgáló adatokat, mint a Power BI Desktop bármely más adatforrását. 
@@ -42,9 +42,14 @@ Ha a rendszer kéri, adja meg a felhasználónevét és a jelszavát.
 > 
 > 
 
+Ha a Microsoft-fiók lehetőséget szeretné használni, akkor kérje meg a Snowflake-rendszergazdáját, hogy vegye fel a kapcsolatot a Snowflake-kel, hogy csatlakozhasson ennek a funkciónak a privát előzetes verziójához.
+
+![A Microsoft-fiók hitelesítési típusa a Snowflake-összekötőben.](media/desktop-connect-snowflake/connect-snowflake-6.png)
+
+
 Ha sikeresen csatlakozott, megjelenik a **Kezelő** ablaka, és megjeleníti a kiszolgálón elérhető adatokat. Ezek közül kiválaszthat egy vagy több importálni kívánt elemet, és használhatja őket a **Power BI Desktopban**.
 
-![](media/desktop-connect-snowflake/connect_snowflake_5.png)
+![Az ODBC 28000-es hiba miatt sikertelen volt a kapcsolódás.](media/desktop-connect-snowflake/connect_snowflake_5.png)
 
 A kiválasztott táblát **betöltheti**, amellyel az egész tábla bekerül a **Power BI Desktopba**, vagy **szerkesztheti** is a lekérdezést. Ekkor megnyílik a **Lekérdezésszerkesztő**, amellyel szűrheti vagy finomíthatja a használni kívánt adatokat, majd a finomított adatkészletet betöltheti a **Power BI Desktopba**.
 

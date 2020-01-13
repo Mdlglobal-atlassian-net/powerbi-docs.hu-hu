@@ -1,19 +1,19 @@
 ---
 title: Power BI QR-kód beolvasása mobileszközzel
 description: A Power BI-ban lévő QR-kódok a való világból bármit közvetlenül összekapcsolhatnak az iPhone-okhoz vagy Android-eszközökhöz készült Power BI mobilalkalmazás kapcsolódó BI-információival.
-author: KesemSharabi
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/13/2018
-ms.author: mshenhav
-ms.openlocfilehash: ba810bf416a913ddb41ab02c0afe7373e5c107f7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/02/2019
+ms.author: painbar
+ms.openlocfilehash: d28596aae776d9a0087895cae38fc2e8848297b6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879188"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218939"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Power BI QR-kód beolvasása mobileszközzel
 A következőkre vonatkozik:
@@ -34,33 +34,38 @@ Ha kollégája nem osztotta meg Önnel az irányítópultot vagy jelentést, kö
 > [A jelentés QR-kódját a Power BI vegyes valósághoz alkalmazással is beolvashatja](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
 
 ## <a name="scan-a-power-bi-qr-code-on-your-iphone-with-the-power-bi-scanner"></a>Power BI QR-kód beolvasása iPhone-on a Power BI-olvasóval
-1. A Power BI mobilalkalmazásban nyissa meg a globális navigációs menüt ![](media/mobile-apps-qr-code/power-bi-iphone-global-nav-button.png) a bal felső sarokban. 
-2. Görgessen az **Olvasó** lehetőségig, majd válassza ki. 
-   
-    ![](media/mobile-apps-qr-code/power-bi-iphone-scanner-menu.png)
-3. Ha a kamera nincs engedélyezve, engedélyeznie kell, hogy a Power BI alkalmazás használhassa azt. Ezt csak egyszer kell megtennie. 
-4. Irányítsa az olvasót a Power BI QR-kódra. 
+
+1. A navigációs sávon koppintson a **további beállítások** (...) lehetőségre, majd a **Vizsgálat** elemre.
+
+    ![](media/mobile-apps-qr-code/power-bi-scanner.png)
+
+2. Ha a kamera nincs engedélyezve, engedélyeznie kell, hogy a Power BI alkalmazás használhassa azt. Ezt csak egyszer kell megtennie. 
+ 
+3. Irányítsa az olvasót a Power BI QR-kódra. 
    
     ![](media/mobile-apps-qr-code/power-bi-align-qr-code.png)
-5. A csempe vagy jelentés háttér előtt lebegve jelenik meg a kiterjesztett valóságban.
+4. A csempe vagy jelentés háttér előtt lebegve jelenik meg a kiterjesztett valóságban.
    
     ![](media/mobile-apps-qr-code/power-bi-ios-qr-ar-scanner.png)
-6. Koppintson a jelentésre vagy a csempére annak Fókusz módban való megnyitásához, vagy lépjen vissza az olvasóra.
+
+5. Koppintson a jelentésre vagy a csempére annak Fókusz módban való megnyitásához, vagy lépjen vissza az olvasóra.
 
 ### <a name="scan-a-qr-code-from-an-external-scanner-on-your-iphone"></a>QR-kód beolvasása az iPhone-on lévő külső olvasóval
 1. A telefonra telepített bármely olvasó használatával a kamerát egy adott Power BI QR-kódra irányítva azonnal elérheti a vonatkozó csempét vagy jelentést. 
 2. Ha a Power BI alkalmazás nincs telepítve, a rendszer átirányítja az [Apple App Store áruházba, ahonnan letöltheti azt](https://go.microsoft.com/fwlink/?LinkId=522062) iPhone készülékére.
 
 ## <a name="scan-a-power-bi-qr-code-on-your-android-device-with-the-power-bi-scanner"></a>Power BI QR-kód beolvasása Android-eszközön a Power BI-olvasóval
-1. A Power BI mobilalkalmazásban használja a globális navigációs gombot ![](media/mobile-apps-qr-code/power-bi-android-global-nav-icon.png) a bal felső sarokban. 
-2. Görgessen a **QR-kód olvasó** lehetőségig, majd válassza ki.
-   
-    ![](media/mobile-apps-qr-code/power-bi-android-scanner-menu.png)
-3. Ha a kamera nincs engedélyezve, engedélyeznie kell, hogy a Power BI alkalmazás használhassa azt. Ezt csak egyszer kell megtennie. 
-4. Irányítsa az olvasót a Power BI QR-kódra. 
+
+1. A navigációs sávon koppintson a **további beállítások** (...) lehetőségre, majd a **Vizsgálat** elemre.
+
+    ![](media/mobile-apps-qr-code/power-bi-scanner.png)
+
+2. Ha a kamera nincs engedélyezve, engedélyeznie kell, hogy a Power BI alkalmazás használhassa azt. Ezt csak egyszer kell megtennie. 
+
+3. Irányítsa az olvasót a Power BI QR-kódra. 
    
     ![](media/mobile-apps-qr-code/pbi_iph_qrscan.png)
-5. A csempe vagy jelentés automatikusan megnyílik a Power BI alkalmazásban.
+4. A csempe vagy jelentés automatikusan megnyílik a Power BI alkalmazásban.
    
     ![](media/mobile-apps-qr-code/power-bi-android-tile.png)
 
@@ -68,7 +73,7 @@ Ha kollégája nem osztotta meg Önnel az irányítópultot vagy jelentést, kö
 1. Az Android-eszközön telepített bármely olvasó használatával a kamerát egy adott Power BI QR-kódra irányítva azonnal elérheti a vonatkozó csempét vagy jelentést. 
 2. Ha a Power BI alkalmazás nincs telepítve, a rendszer átirányítja a [Google Play áruházba, ahonnan letöltheti azt](https://go.microsoft.com/fwlink/?LinkID=544867). 
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 * [Power BI-információk elérése a való világból](mobile-apps-data-in-real-world-context.md) a mobilalkalmazásokkal
 * [QR-kód létrehozása a Power BI szolgáltatásban lévő csempékhez](../../service-create-qr-code-for-tile.md)
 * [QR-kód létrehozása a Power BI szolgáltatásban lévő jelentésekhez](../../service-create-qr-code-for-report.md)

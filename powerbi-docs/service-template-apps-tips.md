@@ -8,18 +8,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 04b50882c28bf561e628e9f02dff6c147233d260
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: a9f589a5e840e95e349ec303b42b30568820e8b3
+ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099750"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622460"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tippek sablonalkalmazások készítéséhez a Power BI-ban
 
 Ha [sablonalkalmazást készít](service-template-apps-create.md) a Power BI-ban, annak részét képezi a munkaterület létrehozásához, annak teszteléséhez és üzemi környezetbe helyezéséhez szükséges logisztika. De a másik fontos rész nyilvánvalóan a jelentés és az irányítópult elkészítése. Az elkészítési folyamatot négy fő összetevőre bonthatjuk. Az ezeken az összetevőkön végzett munka lehetővé teszi a lehető legjobb sablonalkalmazás létrehozását:
 
-* A **lekérdezésekkel** [csatlakoztathatja](desktop-connect-to-data.md) és [átalakíthatja](desktop-query-overview.md) az adatokat, valamint [paramétereket](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/) határozhat meg. 
+* A **lekérdezésekkel**[csatlakoztathatja](desktop-connect-to-data.md) és [átalakíthatja](desktop-query-overview.md) az adatokat, valamint [paramétereket](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/) határozhat meg. 
 * Az **adatmodell** a [kapcsolatok](desktop-create-and-manage-relationships.md) és [mértékek](desktop-measures.md) létrehozását, valamint a Kérdések és válaszok fejlesztését teszi lehetővé.  
 * A **[jelentésoldalak](desktop-report-view.md)** vizualizációkat és szűrőket tartalmaznak, amelyek betekintést nyújtanak az adatokba.  
 * Az **[irányítópultok](consumer/end-user-dashboards.md)** és a [csempék](service-dashboard-create.md) a belefoglalt elemzések áttekintésére adnak lehetőséget.
@@ -131,7 +131,7 @@ A sablonalkalmazások csak mintaadatokkal szerepelhetnek, ügyeljen rá, hogy be
 * Kövesse a [Power BI-alkalmazások ajánlat](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) dokumentációját.
 * Ha az alkalmazáshoz irányítópult is tartozik, ügyeljen rá, hogy az ne legyen üres.
 * A beküldés előtt az alkalmazást az alkalmazáshivatkozás használatával telepítse, ellenőrizze, hogy lehet-e csatlakozni az adatkészlethez, és hogy az alkalmazás a tervek szerint használható-e.
-* Mielőtt feltöltené a bpix-et a sablon munkaterületére, távolítson el minden felesleges kapcsolatot.
+* Mielőtt feltöltené a pbix-et a sablon munkaterületére, távolítson el minden felesleges kapcsolatot.
 * Kövesse a Power BI [Ajánlott tervezési eljárások jelentésekhez és vizualizációkhoz](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) című dokumentumában foglaltakat, hogy maximalizálhassa a felhasználókra gyakorolt hatást, és hogy jóváhagyást szerezhessen a terjesztéshez.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
