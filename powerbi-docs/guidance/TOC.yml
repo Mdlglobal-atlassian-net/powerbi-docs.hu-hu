@@ -48,6 +48,10 @@
           href: relationships-many-to-many.md
         - name: A Power Query háttérbeli frissítésének letiltása
           href: power-query-background-refresh.md
+        - name: Többoldalas jelentések használata a Power BI-ban
+          href: report-paginated-or-power-bi.md
+        - name: SQL Server Reporting Services-jelentések migrálása a Power BI-ba
+          href: migrate-ssrs-reports-to-power-bi.md
     - name: Tanulmányok
       items:
         - name: Tanulmányok áttekintése

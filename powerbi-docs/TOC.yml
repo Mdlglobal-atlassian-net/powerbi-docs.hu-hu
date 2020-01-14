@@ -25,7 +25,7 @@
           href: desktop-tutorial-facebook-analytics.md
         - name: Sorszintű biztonság megvalósítása Analysis Services-beli táblázatos modellel
           href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
-    - name: Példák
+    - name: Minták
       items:
         - name: Mintaadatok beolvasása a Power BI-hoz
           href: sample-datasets.md
@@ -49,7 +49,7 @@
           href: sample-supplier-quality.md
         - name: A Pénzügyi minta munkafüzet letöltése
           href: sample-financial-download.md
-    - name: Alapelvek
+    - name: Fogalmak
       items:
         - name: A Power BI Desktop újdonságai
           href: desktop-latest-update.md
@@ -207,7 +207,7 @@
               href: desktop-combine-binaries.md
             - name: Az AI-elemzések használata (előzetes verzió)
               href: desktop-ai-insights.md
-        - name: Adatmodellezés
+        - name: Adatok modellezése
           items:
             - name: Adatkategóriák meghatározása a Power BI Desktopban
               href: desktop-data-categorization.md
@@ -223,7 +223,7 @@
               href: desktop-measures.md
             - name: KPI-k importálása és megjelenítése
               href: desktop-import-and-display-kpis.md
-        - name: Jelentéseket létrehozni
+        - name: Jelentések létrehozása
           items:
             - name: Automatikus oldalfrissítés engedélyezése (előzetes verzió)
               href: desktop-automatic-page-refresh.md
@@ -403,7 +403,7 @@
               href: desktop-error-launching-desktop.md
             - name: DirectQuery-modellek fejlesztése – hibaelhárítás
               href: desktop-directquery-troubleshoot.md
-    - name: Referencia
+    - name: Hivatkozás
       items:
         - name: Adattípusok a Power BI Desktopban
           href: desktop-data-types.md
@@ -417,7 +417,7 @@
           href: desktop-connector-extensibility.md
         - name: Megbízható harmadik féltől származó összekötők
           href: desktop-trusted-third-party-connectors.md
-    - name: További források
+    - name: Erőforrások
       items:
         - name: Power BI Desktop videók
           href: desktop-videos.md
@@ -427,7 +427,7 @@
           href: desktop-send-smile-privacy-statement.md
         - name: 'Rendszergazdák: A Power BI Desktop bejelentkezési űrlapjának kezelése'
           href: desktop-admin-sign-in-form.md
-        - name: Kisegítő lehetőségek
+        - name: Akadálymentesség
           items:
             - name: Tudnivalók a Power BI akadálymentességéről
               href: desktop-accessibility-overview.md
@@ -463,7 +463,7 @@
           href: service-tutorial-build-machine-learning-model.md
         - name: Az SQL Server adatainak frissítése
           href: service-gateway-sql-tutorial.md
-    - name: Alapelvek
+    - name: Fogalmak
       items:
         - name: A Power BI szolgáltatás újdonságai
           href: service-whats-new.md
@@ -489,7 +489,7 @@
               href: service-how-to-collaborate-distribute-dashboards-reports.md
             - name: A Power BI-felhasználás monitorozása
               href: service-usage-metrics.md
-        - name: Licencek
+        - name: Licencelés
           items:
             - name: Regisztráció a Power BI-ra
               href: service-self-service-signup-for-power-bi.md
@@ -709,6 +709,8 @@
               href: service-dataflows-overview.md
             - name: Adatfolyamok létrehozása és használata
               href: service-dataflows-create-use.md
+            - name: A továbbfejlesztett számítási motor használata adatfolyamokkal
+              href: service-dataflows-enhanced-compute-engine.md
             - name: Számított entitások a Power BI Premiummal
               href: service-dataflows-computed-entities-premium.md
             - name: Csatlakozás adatforrásokhoz adatfolyamokkal
@@ -801,6 +803,8 @@
               items:
                 - name: Csatlakozás a szolgáltatásokhoz alkalmazásokkal
                   href: service-connect-to-services.md
+                - name: Azure Carbon Calculator
+                  href: service-connect-to-azure-carbon-calculator.md
                 - name: GitHub
                   href: service-connect-to-github.md
                 - name: Office365Mon
@@ -829,13 +833,13 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: Tartalomcsomaggal való kapcsolat eltávolítása
                   href: service-organizational-content-pack-disconnect.md
-    - name: Referencia
+    - name: Hivatkozás
       items:
         - name: Támogatott nyelvek és országok/régiók
           href: supported-languages-countries-regions.md
         - name: Támogatott böngészők
           href: power-bi-browsers.md
-    - name: További források
+    - name: Erőforrások
       items:
         - name: Videók
           href: videos.md
@@ -845,9 +849,9 @@
   items:
     - name: Áttekintés
       items:
-        - name: Mi a Power BI Premium?
+        - name: Mi az a Power BI Premium?
           href: service-premium-what-is.md
-    - name: Alapelvek
+    - name: Fogalmak
       items:
         - name: Prémium szintű kapacitások kezelése
           href: service-premium-capacity-manage.md
@@ -895,7 +899,7 @@
           href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
         - name: Többoldalas jelentés készítése és feltöltése
           href: paginated-reports-quickstart-aw.md
-    - name: Alapelvek
+    - name: Fogalmak
       items:
         - name: Eligazodás a Jelentéstervező nézetben
           href: paginated-reports-report-design-view.md
@@ -949,7 +953,7 @@
       items:
         - name: A Power BI jelentéskészítő kiszolgáló áttekintése virtuális gépen
           href: report-server/tutorial-explore-report-server-web-portal.md
-    - name: Alapelvek
+    - name: Fogalmak
       items:
         - name: Újdonságok
           href: report-server/whats-new.md
@@ -1033,7 +1037,7 @@
               href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
             - name: Excel-munkafüzetek üzemeltetése
               href: report-server/excel-oos.md
-    - name: Referencia
+    - name: Hivatkozás
       items:
         - name: REST API
           href: report-server/rest-api.md
@@ -1045,7 +1049,7 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848722'
         - name: Bővítmények
           href: 'https://go.microsoft.com/fwlink/?linkid=848723'
-    - name: További források
+    - name: Erőforrások
       items:
         - name: Kapacitástervezési tanulmány
           href: report-server/capacity-planning.md
@@ -1057,7 +1061,7 @@
       items:
         - name: Mi az a helyszíni adatátjáró?
           href: service-gateway-onprem.md
-    - name: Alapelvek
+    - name: Fogalmak
       items:
         - name: Útmutató adatátjáró üzembe helyezéséhez
           href: service-gateway-deployment-guidance.md
@@ -1109,7 +1113,7 @@
           href: service-admin-troubleshooting-power-bi-personal-gateway.md
         - name: Egyéni összekötők használata
           href: service-gateway-custom-connectors.md
-    - name: További források
+    - name: Erőforrások
       items:
         - name: Havi átjáró-frissítések
           href: /data-integration/gateway/service-gateway-monthly-updates
