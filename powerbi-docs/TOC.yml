@@ -871,6 +871,8 @@
           href: service-admin-premium-workloads.md
         - name: Kapacitások monitorozása az alkalmazással
           href: service-admin-premium-monitor-capacity.md
+        - name: A prémium szintű számítási feladatok metrikáinak figyelése
+          href: service-premium-metrics-app.md
         - name: Kapacitások monitorozása a felügyeleti portálon
           href: service-admin-premium-monitor-portal.md
         - name: A növekményes frissítés konfigurálása
