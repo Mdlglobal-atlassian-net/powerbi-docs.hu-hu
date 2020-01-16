@@ -54,8 +54,6 @@
               href: service-security-using-microsoft-cloud-app-security-controls.md
         - name: Sorszintű biztonság
           href: ../service-admin-rls.md
-        - name: Archivált munkaterület
-          href: ../service-admin-power-bi-archived-workspace.md
         - name: Mobilalkalmazások konfigurálása az Intune-nal
           href: ../service-admin-mobile-intune.md
     - name: Hivatkozás
