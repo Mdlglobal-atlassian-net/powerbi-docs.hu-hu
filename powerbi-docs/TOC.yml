@@ -803,10 +803,10 @@
               items:
                 - name: Csatlakozás a szolgáltatásokhoz alkalmazásokkal
                   href: service-connect-to-services.md
-                - name: Azure Carbon Calculator
-                  href: service-connect-to-azure-carbon-calculator.md
                 - name: GitHub
                   href: service-connect-to-github.md
+                - name: Microsoft fenntarthatósági kalkulátor
+                  href: service-connect-to-microsoft-sustainability-calculator.md
                 - name: Office365Mon
                   href: service-connect-to-office365mon.md
                 - name: Project Online
@@ -887,7 +887,7 @@
           href: service-admin-premium-restart.md
         - name: Csatlakozás adatkészletekhez ügyfélalkalmazásokkal és ügyféleszközökkel
           href: service-premium-connect-tools.md
-- name: A Power BI többoldalas jelentéskészítője
+- name: Power BI Jelentéskészítő
   items:
     - name: Áttekintés
       items:

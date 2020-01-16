@@ -10,48 +10,56 @@
     - name: Fogalmak
       expanded: true
       items:
-        - name: Mi az a csillagséma?
-          href: star-schema.md
-        - name: Az adatmodell méretének csökkentése
-          href: import-modeling-data-reduction.md
-        - name: A DIVIDE függvény és a divide operátor (/)
-          href: dax-divide-function-operator.md
-        - name: A SELECTEDVALUE használata a VALUES helyett
-          href: dax-selectedvalue.md
-        - name: A lekérdezésdelegálás fontossága
-          href: power-query-folding.md
-        - name: A hibakezelő függvények megfelelő használata
-          href: dax-error-functions.md
-        - name: Változók használata a képletek tökéletesítéséhez
-          href: dax-variables.md
-        - name: COUNTROWS a COUNT helyett
-          href: dax-countrows.md
-        - name: Ne konvertálja a BLANK-eket értékekre
-          href: dax-avoid-converting-blank.md
-        - name: Oszlopok és mértékek hivatkozásai
-          href: dax-column-measure-references.md
-        - name: Ne használja a FILTER-t szűrő argumentumaként
-          href: dax-avoid-avoid-filter-as-filter-argument.md
-        - name: Adatfolyamokhoz ajánlott eljárások
-          href: ../service-dataflows-best-practices.md
-        - name: Útmutató a DirectQuery-modellhez a Power BI Desktopban
-          href: directquery-model-guidance.md
-        - name: Power Query-lekérdezésekre való hivatkozás
-          href: power-query-referenced-queries.md
-        - name: Vizualizációk kibővítése a jelentésoldalak elemleírásával
-          href: report-page-tooltips.md
-        - name: Jelentésoldal részletezése
-          href: report-drillthrough.md
-        - name: Útmutató automatikus dátum/időhöz a Power BI Desktopban
-          href: auto-date-time.md
-        - name: Útmutató a több-a-többhöz kapcsolatokhoz
-          href: relationships-many-to-many.md
-        - name: A Power Query háttérbeli frissítésének letiltása
-          href: power-query-background-refresh.md
-        - name: Többoldalas jelentések használata a Power BI-ban
-          href: report-paginated-or-power-bi.md
-        - name: SQL Server Reporting Services-jelentések migrálása a Power BI-ba
-          href: migrate-ssrs-reports-to-power-bi.md
+        - name: Adatok átalakítása
+          items:
+            - name: A lekérdezésdelegálás fontossága
+              href: power-query-folding.md
+            - name: Power Query-lekérdezésekre való hivatkozás
+              href: power-query-referenced-queries.md
+            - name: A Power Query háttérbeli frissítésének letiltása
+              href: power-query-background-refresh.md
+            - name: Adatfolyamokhoz ajánlott eljárások
+              href: ../service-dataflows-best-practices.md
+        - name: Adatmodellezés
+          items:
+            - name: Mi az a csillagséma?
+              href: star-schema.md
+            - name: Az adatmodell méretének csökkentése
+              href: import-modeling-data-reduction.md
+            - name: Útmutató automatikus dátum/időhöz a Power BI Desktopban
+              href: auto-date-time.md
+            - name: Útmutató a több-a-többhöz kapcsolatokhoz
+              href: relationships-many-to-many.md
+            - name: Útmutató a DirectQuery-modellhez a Power BI Desktopban
+              href: directquery-model-guidance.md
+        - name: DAX
+          items:
+            - name: A DIVIDE függvény és a divide operátor (/)
+              href: dax-divide-function-operator.md
+            - name: A hibakezelő függvények megfelelő használata
+              href: dax-error-functions.md
+            - name: A SELECTEDVALUE használata a VALUES helyett
+              href: dax-selectedvalue.md
+            - name: COUNTROWS a COUNT helyett
+              href: dax-countrows.md
+            - name: Változók használata a képletek tökéletesítéséhez
+              href: dax-variables.md
+            - name: Ne konvertálja a BLANK-eket értékekre
+              href: dax-avoid-converting-blank.md
+            - name: Oszlopok és mértékek hivatkozásai
+              href: dax-column-measure-references.md
+            - name: Ne használja a FILTER-t szűrő argumentumaként
+              href: dax-avoid-avoid-filter-as-filter-argument.md
+        - name: Jelentés létrehozása
+          items:
+            - name: Vizualizációk kibővítése a jelentésoldalak elemleírásával
+              href: report-page-tooltips.md
+            - name: Jelentésoldal részletezése
+              href: report-drillthrough.md
+            - name: Többoldalas jelentések használata a Power BI-ban
+              href: report-paginated-or-power-bi.md
+            - name: SQL Server Reporting Services-jelentések migrálása a Power BI-ba
+              href: migrate-ssrs-reports-to-power-bi.md
     - name: Tanulmányok
       items:
         - name: Tanulmányok áttekintése
