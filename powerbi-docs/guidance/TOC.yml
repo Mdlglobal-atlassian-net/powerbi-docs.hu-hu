@@ -54,10 +54,12 @@
           items:
             - name: Vizualizációk kibővítése a jelentésoldalak elemleírásával
               href: report-page-tooltips.md
-            - name: Jelentésoldal részletezése
+            - name: Jelentésoldal részletezésének használata
               href: report-drillthrough.md
             - name: Többoldalas jelentések használata a Power BI-ban
               href: report-paginated-or-power-bi.md
+            - name: Ne legyenek üres lapok a többoldalas jelentések nyomtatásakor
+              href: report-paginated-blank-page.md
             - name: SQL Server Reporting Services-jelentések migrálása a Power BI-ba
               href: migrate-ssrs-reports-to-power-bi.md
     - name: Tanulmányok

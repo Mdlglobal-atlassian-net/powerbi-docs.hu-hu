@@ -357,6 +357,8 @@
               href: visuals/power-bi-visualization-kpi.md
             - name: Mátrixvizualizációk létrehozása és használata
               href: visuals/desktop-matrix-visual.md
+            - name: Power Apps-vizualizációk létrehozása és használata
+              href: visuals/power-bi-visualization-powerapp.md
             - name: A Power BI-beli Q&A-vizualizációk bemutatása
               href: visuals/power-bi-visualization-q-and-a.md
             - name: R-vizualizációk létrehozása és használata
@@ -1035,6 +1037,8 @@
               href: report-server/configure-kerberos-powerbi-reports.md
             - name: Mobilalkalmazások hozzáférésének távoli konfigurálása
               href: report-server/configure-powerbi-mobile-apps-remote.md
+            - name: A WAP és az AD FS konfigurálása
+              href: report-server/connect-adfs-wap-report-server.md
             - name: Távoli mobilhozzáférés az Azure AD-vel
               href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
             - name: Excel-munkafüzetek üzemeltetése
