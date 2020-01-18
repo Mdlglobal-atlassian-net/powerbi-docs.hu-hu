@@ -6,17 +6,17 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 10/22/2019
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 80ed285a22c0272f3bd268397e0e019396b941d7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 413e30c04ac02e6b957f03494bf6a488edeacac0
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870995"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885332"
 ---
-# <a name="key-influencers-visualization"></a>Főbb befolyásolók vizualizáció
+# <a name="create-key-influencers-visualizations"></a>Főbb befolyásolók vizualizációinak létrehozása
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -57,7 +57,7 @@ Ebben a videóban megtekintheti, hogyan hozhat létre főbb befolyásolók vizua
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-A termékmenedzsere szeretné, ha Ön kiderítené, milyen tényezők befolyásolják az ügyfeleket, amikor negatív értékelést adnak a felhőszolgáltatással kapcsolatban. A lépések követéséhez nyissa meg az [Ügyfélvisszajelzések PBIX-fájlját](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) a Power BI Desktopban. Az [Ügyfélvisszajelzések Excel-fájlját is letöltheti a Power BI szolgáltatáshoz vagy a Power BI Desktophoz](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). Válassza bármelyik hivatkozást, majd válassza a **Letöltés** lehetőséget a megnyíló GitHub-oldalon.
+A termékmenedzsere szeretné, ha Ön kiderítené, milyen tényezők befolyásolják az ügyfeleket, amikor negatív értékelést adnak a felhőszolgáltatással kapcsolatban. A lépések követéséhez nyissa meg az [Ügyfélvisszajelzések PBIX-fájlját](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix) a Power BI Desktopban. Az [Ügyfélvisszajelzések Excel-fájlját is letöltheti a Power BI szolgáltatáshoz vagy a Power BI Desktophoz](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx). Válassza bármelyik hivatkozást, majd válassza a **Letöltés** lehetőséget a megnyíló GitHub-oldalon.
 
 > [!NOTE]
 > Az Ügyfélvisszajelzések adathalmazának alapja: [Moro et al., 2014] S. Moro, P. Cortez és P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. (Adatvezérelt megközelítés a banki telemarketing sikerességének előrejelzéséhez.) *Decision Support Systems*, Elsevier, 62:22-31, 2014. június 
@@ -267,6 +267,8 @@ Ha szeretne még alaposabban megismerkedni a mértékeknek a főbb befolyásoló
  
 A főbb befolyásoló vizualizáció rendelkezik bizonyos korlátokkal:
 
+
+
 - A Direct Query nem támogatott
 - Az Azure Analysis Services és az SQL Server Analysis Services szolgáltatásokhoz való élő kapcsolat nem támogatott
 - A webes közzététel nem támogatott
@@ -281,7 +283,7 @@ A főbb befolyásoló vizualizáció rendelkezik bizonyos korlátokkal:
 
 Ez a hiba akkor fordul elő, ha felvesz mezőket a **Magyarázó** elembe, de nem találhatók befolyásolók. 
 - Az elemzett metrikát felvette az **Elemzés** és a **Magyarázó** elembe is. Távolítsa el a **Magyarázó** elemből. 
-- A magyarázó mezők túl sok kevés megfigyeléssel rendelkező kategóriával rendelkeznek. Ez nehézzé teszi a vizualizációk számára annak a megállapítását, hogy melyek a befolyásoló tényezők. Nehéz csupán néhány megfigyelés alapján általánosítani. Ha numerikus mezőt elemez célszerű a **kategorikus elemzésről** való **folyamatos elemzésre** váltani a **Formázás panel**  **Elemzés** területén.
+- A magyarázó mezők túl sok kevés megfigyeléssel rendelkező kategóriával rendelkeznek. Ez nehézzé teszi a vizualizációk számára annak a megállapítását, hogy melyek a befolyásoló tényezők. Nehéz csupán néhány megfigyelés alapján általánosítani. Ha numerikus mezőt elemez célszerű a **kategorikus elemzésről** való **folyamatos elemzésre** váltani a **Formázás panel** **Elemzés** területén.
 - A magyarázó tényezők elegendő megfigyeléssel rendelkeznek az általánosításokhoz, de a vizualizáció nem talált semmilyen jelentős korrelációt, amelyről jelentést készíthetne.
  
 **Egy hibaüzenet jelenik meg, miszerint az éppen elemzett metrika nem rendelkezik elég adattal az elemzés futtatásához. Ez miért van?** 
@@ -292,7 +294,7 @@ A vizualizáció úgy működik, hogy mintákat keres az adatokban az egyik csop
 
 Azt javasoljuk, hogy a kijelölt állapothoz legalább 100 megfigyelést használjon. Ebben az esetben az állapot az elvándorló ügyfeleket jelenti. Az összehasonlításként használt állapotokhoz is legalább 10 megfigyelésre van szüksége. Ebben az esetben az összehasonlítás állapota a nem elvándorló ügyfeleket jelenti.
 
-Ha numerikus mezőt elemez célszerű a **kategorikus elemzésről** való **folyamatos elemzésre** váltani a **Formázás panel**  **Elemzés** területén.
+Ha numerikus mezőt elemez célszerű a **kategorikus elemzésről** való **folyamatos elemzésre** váltani a **Formázás panel** **Elemzés** területén.
 
 **Hibaüzenet jelenik meg, amely szerint nem összesített elemzés esetén az elemzés mindig a szülőtábla sorainak szintjén fut. A szintnek a „Kibontandó” mezőkkel való módosítása nem megengedett. Ez miért van?**
 
@@ -343,7 +345,7 @@ Ha az ügyfél táblája nem rendelkezik egyedi azonosítóval, nem tudja kiért
 
 Az AI-vizualizáció kategorikus és numerikus mezőket elemezhet. Kategorikus mezőkre jó példa az Elvándorlás: Igen/Nem, Ügyfél-elégedettség: Magas/Közepes/Alacsony típus. Az elemzendő kategóriák számának növelésével kevesebb megfigyelés jut az egyes kategóriákra. Ez nehézzé teszi a vizualizáció számára, hogy mintákat találjon az adatok között. 
 
-Numerikus mezők elemzésekor kezelheti szövegként a numerikus mezőket. Ebben az esetben a kategorikus adatokkal megegyező elemzést kell futtatnia (**kategorikus elemzés**). Ha számos különböző értékkel rendelkezik, ajánlott **folyamatos elemzésre** váltani, mivel így a számokat nem külön értékekként kezeli, hanem mintákat állapíthat meg azok változása alapján. A **kategorikus elemzésről** a **folyamatos elemzésre** a **Formázás panel**  **Elemzés** területén válthat.
+Numerikus mezők elemzésekor kezelheti szövegként a numerikus mezőket. Ebben az esetben a kategorikus adatokkal megegyező elemzést kell futtatnia (**kategorikus elemzés**). Ha számos különböző értékkel rendelkezik, ajánlott **folyamatos elemzésre** váltani, mivel így a számokat nem külön értékekként kezeli, hanem mintákat állapíthat meg azok változása alapján. A **kategorikus elemzésről** a **folyamatos elemzésre** a **Formázás panel** **Elemzés** területén válthat.
 
 Erősebb befolyásoló tényezők keresése érdekében javasoljuk, hogy a hasonló értékeket csoportosítsa egyetlen egységbe. Ha például az árhoz rendelkezik metrikával, valószínű, hogy jobb eredményeket kap, ha a hasonló árakat olyan gyűjtőkben csoportosítja, mint a Magas, a Közepes és az Alacsony ahelyett, hogy egyéni árpontokat használna. 
 
@@ -357,6 +359,9 @@ Az alábbi példában azok az ügyfelek, akik fogyasztók, alacsony értékelés
 Ennek az oka az, hogy a vizualizáció az adatpontok számát is figyelembe veszi a befolyásoló tényezők keresésekor. Az alábbi példában több mint 29 000 felhasználó és 10-szer kevesebb adminisztrátor (nagyjából 2900) van. Ezek közül csak 390 adott alacsony értékelést. A vizualizáció nem rendelkezik elegendő adattal annak meghatározásához, hogy valóban mintát talált-e az adminisztrátori értékeléseknél, vagy csak véletlenszerűségről van szó. 
 
 ![A befolyásoló tényezők meghatározása](media/power-bi-visualization-influencers/power-bi-error5.png)
+
+**Mik az adatpontkorlátok a főbb befolyásolók esetében?**
+Az elemzést egy 10 000 adatpontos mintán futtatja a rendszer. Az egyik oldalon található buborékokban az összes észlelt befolyásoló jelenik meg. A másik oldalon található oszlopdiagramok és pontdiagramok ezen alapvető vizualizációk mintavételi stratégiáit követik.
 
 **Hogyan történik a főbb befolyásolók kiszámítása kategorikus elemzésnél?**
 

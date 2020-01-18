@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 11/04/2019
-ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/04/2019
+ms.openlocfilehash: 48aae2391ead5ded0860364ce5942d7bd725c2d9
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311426"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731243"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Oktatóanyag: Oldalakra osztott Power BI-jelentések beágyazása egy alkalmazásba az ügyfelek számára (előzetes verzió)
 
@@ -271,6 +271,12 @@ A JavaScript API teljes körű mintáját a [Playground eszköz](https://microso
 
 ## <a name="next-steps"></a>Következő lépések
 
-Ebben az oktatóanyagban bemutattuk, hogyan lehet oldalakra osztott Power BI-jelentéseket beágyazni az ügyfelek alkalmazásaiba. Megpróbálkozhat Power BI-tartalom beágyazásával a szervezete számára is.
+Ebben az oktatóanyagban bemutattuk, hogyan lehet oldalakra osztott Power BI-jelentéseket beágyazni az ügyfelek alkalmazásaiba. Megpróbálkozhat Power BI-tartalom az ügyfelek vagy a szervezet számára való beágyazásával is.
+
+> [!div class="nextstepaction"]
+>[Tartalom beágyazása az ügyfelek számára](embed-sample-for-customers.md)
+
+> [!div class="nextstepaction"]
+>[Tartalom beágyazása a szervezet számára](embed-sample-for-your-organization.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

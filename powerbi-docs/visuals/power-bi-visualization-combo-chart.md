@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 03a426947787cbd2720661267cac4601a4b9b13a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 11be774515552d10846b51863eda6c155b92b57f
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880945"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758083"
 ---
-# <a name="combo-chart-in-power-bi"></a>Kombinált diagram a Power BI-ban
+# <a name="create-and-use-combo-charts-in-power-bi"></a>Kombinált diagramok létrehozása és használata a Power BI-ban
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -59,11 +59,11 @@ Nézze meg, hogyan hoz létre Will egy kombinált diagramot az Értékesítési 
 
 1. Induljon ki egy üres jelentésoldalból, majd hozzon létre egy oszlopdiagramot, amely az idei év értékesítéseit és bruttó árrését jeleníti meg havi bontásban.
 
-    a.  A Mezők ablaktáblán válassza ki a **Sales** \> **This Year Sales** > **Érték** elemet.
+    a.  A Mezők panelen válassza az **Értékesítés** \> **Idei értékesítések**  >  **Érték** elemet.
 
-    b.  Húzza a **Sales** \> **Gross Margin This Year** elemet az **Érték** gyűjtőbe.
+    b.  Húzza az **Értékesítés** \> **Idei bruttó nyereség** elemet az **Érték** gyűjtőbe.
 
-    c. Adja hozzá a **Time** \> **FiscalMonth** elemet a **Tengely** gyűjtőhöz.
+    c. Válassza ki az **Idő** \> **Pénzügyi hónap** elemet, hogy hozzáadja a **Tengely** gyűjtőhöz.
 
     ![példa kombinált diagram oktatóanyag](media/power-bi-visualization-combo-chart/combotutorial1new.png)
 5. Válassza a **More options** (...) lehetőséget a vizualizáció jobb felső sarkában, majd a **Rendezés szempontja > FiscalMonth** (Pénzügyi hónap) lehetőséget. A rendezési sorrend módosításához válassza ismét a három pontot, és válassza a **Növekvő rendezés** vagy a **Csökkenő rendezés** elemet. Ehhez a példához a **Rendezés növekvő sorrendben** van kiválasztva.
@@ -71,7 +71,7 @@ Nézze meg, hogyan hoz létre Will egy kombinált diagramot az Értékesítési 
 6. Konvertálja az oszlopdiagramot kombinált diagrammá. Két kombinált diagram érhető el: **Vonal- és halmozott oszlopdiagram**, illetve **Vonal- és csoportosított oszlopdiagram**. Ha az oszlopdiagram van kiválasztva, a **Megjelenítések** ablaktáblán válassza a **Vonal- és fürtözött oszlopdiagram** lehetőséget.
 
     ![példa kombinált diagrammá konvertálásra](media/power-bi-visualization-combo-chart/converttocombo-new2.png)
-7. A **Mezők** ablaktábláról húzza a **Sales** \> **Last Year Sales** elemet a **Sorértékek** gyűjtőbe.
+7. A **Mezők** ablaktábláról húzza az **Értékesítés** \> **Tavalyi értékesítések** elemet a **Sorértékek** gyűjtőbe.
 
    ![](media/power-bi-visualization-combo-chart/linevaluebucket.png)
 

@@ -6,14 +6,14 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 01/09/2020
 ms.author: maggies
-ms.openlocfilehash: 90f08abd119e7dfc0bf639eeb2ed8334fbdfa234
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 7052b0f045b98ce8e25822f76fe0b8391e298a47
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699015"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837615"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>A Power BI-jelentések ütemezett frissítése a Power BI jelentéskészítő kiszolgálón
 A Power BI jelentések ütemezett frissítésének köszönhetően folyamatosan naprakészek maradnak a jelentések adatai.
@@ -61,8 +61,10 @@ Az Analysis Services-példányok monitorozásáról az [Analysis Services-péld�
 
 Az Analysis Servicesen belüli memóriabeállításokról a [Memóriatulajdonságok](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties) című cikkben olvashat.
 
+### <a name="data-model-size-limit"></a>Az adatmodell méretkorlátja
+Ütemezett frissítés során a belső Analysis Services-motorba betöltött adatmodell maximális mérete 2 000 MB (2GB). A maximális méret nem konfigurálható. Ha az adatmodell mérete 2 GB-nál nagyobb, akkor a következő frissítési hibaüzenet jelenik meg: „Az eredmény hossza meghaladja a céloldali large típus hosszkorlátját (2GB).” Ebben az esetben javasolt a modellt egy Analysis Services-példányban üzemeltetni, és a modellel való élő kapcsolatot használni a jelentésben.
+
 ## <a name="next-steps"></a>Következő lépések
 Egy Power BI-jelentés [ütemezett frissítésének](configure-scheduled-refresh.md) konfigurálása.
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-

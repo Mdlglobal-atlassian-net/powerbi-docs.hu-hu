@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d67fbacece27ab75a3add89541dad77ce51a91f8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ced98b8290059b3098ce83efdd05bb2a20e2d5ee
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73867479"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761134"
 ---
-# <a name="use-grouping-in-power-bi-desktop"></a>Csoportosítás használata a Power BI Desktopban
+# <a name="group-visuals-in-power-bi-desktop-reports"></a>Vizualizációk csoportosítása a Power BI Desktop-jelentésekben
 A **Power BI Desktopban** ugyanúgy **csoportosíthatja** a jelentésbeli vizualizációkat, például gombokat, szövegdobozokat, alakzatokat, képeket és bármilyen létrehozott vizualizációt, ahogyan a PowerPointban csoportosít elemeket. Egy jelentés vizualizációinak csoportosítása lehetővé teszi, hogy a csoportot egyetlen objektumként kezelje, ezáltal egyszerűbbé, gyorsabbá és magától értetődőbbé válik azok áthelyezése, méretezése és a rétegek kezelése a jelentésben.
 
 ![A csoportosítás használata](media/desktop-grouping-visuals/grouping-visuals-01.png)

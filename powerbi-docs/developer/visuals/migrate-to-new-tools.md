@@ -1,6 +1,6 @@
 ---
-title: Áttérés a powerbi-visuals-tools 3.x használatára
-description: Első lépések a powerbi-visuals-tools új verziójával
+title: Migrálás a powerbi-visuals-tools 3.x verziójára
+description: A powerbi-visuals-tools új verziója használatának első lépései
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -9,108 +9,123 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 245475feeb43ee544117aaa54969f2de1e207cd5
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 1b819aeb0f59df9ee0d48d7c41807abe62efed08
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696282"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885134"
 ---
-# <a name="migrate-to-the-new-powerbi-visuals-tools-3xx"></a>Áttérés az új powerbi-visuals-tools 3.x.x használatára
+# <a name="migrate-to-the-new-powerbi-visuals-tools-version-3x"></a>Migrálás a powerbi-visuals-tools új 3.*x* verziójára
 
-A 3-as verziótól kezdődően a Power BI Visuals Tools a Webpack használatával készít egyéni vizualizációkat.
-Az új verzió számos új lehetőséget kínál a fejlesztőknek vizualizációk létrehozására:
+A 3-as verziótól kezdődően a Power BI Visuals Tools (powerbi-visuals-tools vagy `pbiviz`) a Webpack használatával készít egyéni vizualizációkat.
+Az új verzió számos fejlesztést kínál a fejlesztőknek vizualizációk létrehozásához:
 
-* Alapértelmezett a TypeScript v3.x.x. A TypeScript 1.5 verziótól kezdődően az elnevezések rendszere megváltozott. [További tudnivalók a TypeScript-modulokról](https://www.typescriptlang.org/docs/handbook/modules.html).
+- Alapértelmezés szerint a TypeScript 3.*x* verzióját használja. A TypeScript 1.5-től kezdődően megváltozott az elnevezések rendszere. [További tudnivalók a TypeScript-modulokról](https://www.typescriptlang.org/docs/handbook/modules.html).
 
-* Támogatottak az ES6 modulok. Többé nincs szükség az [externalJS](migrate-to-new-tools.md#fix-loading-external-libraries) használatára, helyette ES6-importálást használhat.
+- Támogatottak az ECMAScript 6- (ES6-) modulok. A rendszer mostantól ES6-importálásokat használ az [externalJS](migrate-to-new-tools.md#configure-loading-of-external-libraries) helyett.
 
-* Támogatottak a [D3v5](https://d3js.org/) és más ES6 modulalapú kódtárak új verziói.
+- Támogatottak a Data-Driven Documents ([D3v5](https://d3js.org/)) és más ES6-modulokon alapuló kódtárak új verziói.
 
-* Kisebb csomagméret. A Webpack [Tree Shaking](https://webpack.js.org/guides/tree-shaking/) használatával távolítja el a nem használt kódot. Ez csökkenti a JS-kód méretét, ezzel pedig jobb teljesítményt eredményez a vizualizáció betöltésekor.
+- Kisebb csomagméret. A Webpack a [Tree Shaking](https://webpack.js.org/guides/tree-shaking/) módszerrel távolítja el a nem használt kódot. Ez csökkenti a JavaScript-kód mennyiségét, és jobb teljesítményt nyújt a vizualizációk betöltésekor.
 
-* Jobb API-teljesítmény.
+- Jobb API-teljesítmény.
 
-* A globalize.js kódtár [integrálva van](migrate-to-new-tools.md#remove-globalizejs-library) a formattingutils csomagba.
+- A Globalize.js kódtár [integrálva van](migrate-to-new-tools.md#remove-the- globalizejs-library) a FormattingUtils csomagba.
 
-* A Tools a [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) használatával jeleníti meg a vizualizáció kódbázisát.
+- A Power BI Visuals Tools a [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) használatával jeleníti meg a vizualizáció kódbázisát.
 
-A cikk további része a Power BI Visuals Tools új verziójára való áttérés valamennyi lépését ismerteti.
+A cikk a Power BI Visuals Tools új verziójára való migrálás valamennyi lépését ismerteti.
 
 ## <a name="backward-compatibility"></a>Kompatibilitás az előző verziókkal
 
-Az új eszközök megtartják a visszamenőleges kompatibilitást a régi vizualizációk kódbázisával, de további módosításokat igényelhetnek külső kódtárak betöltéséhez.
+Az új eszközök megtartják a régi vizualizációk kódbázisának visszamenőleges kompatibilitási adatait, de további módosításokat igényelhetnek külső kódtárak betöltéséhez.
 
-A modulrendszereket támogató kódtárak Webpack-csomagokként lesznek importálva. Az összes többi kódtár és vizualizáció-forráskód egy modulba lesz csomagolva.
+A modulrendszereket támogató kódtárakat Webpack-csomagokként importálja a rendszer. A vizualizáció minden más kódtára és forráskódja egyetlen modulba van becsomagolva.
 
-A korábbi powerbi-visuals-tools eszközökben használt olyan globális változók, mint a JQuery és a Lodash már elavultak. Ez azt jelenti, hogy ha a régi vizualizáció kódja globális változókat használ, akkor ez a vizualizáció hibásnak bizonyulhat.
+A korábbi Power BI Visuals Tools eszközökben használt olyan globális változók, mint a JQuery és a Lodash, már elavultak. Ha a vizualizáció régi kódja globális változókra támaszkodik, a vizualizáció valószínűleg nem fog működni az új eszközökkel.
 
-A Power BI Visuals Tools előző verziójához szükség volt a `powerbi.extensibility.visual` modul alatt definiált vizualizáció-osztályra.
+A Power BI Visuals Tools előző verziójához definiálnia kellett egy vizualizációosztályt a `powerbi.extensibility.visual` modulban. Az eszközök új verziójában ehelyett a fő TypeScript- (.ts) fájlban kell definiálnia egy vizualizációosztályt. Ez a fájl általában az `src/visual.ts`.
 
-## <a name="how-to-install-powerbi-visuals-tools"></a>A powerbi-visuals-tools telepítése
+## <a name="install-powerbi-visuals-tools"></a>A powerbi-visuals-tools telepítése
 
-Az új eszközkészlet a következő paranccsal telepíthető
+Az új eszközök telepítéséhez futtassa a következő parancsot:
 
 ```cmd
 npm install -g powerbi-visuals-tools
 ```
 
-A SampleBarChart minta-vizualizáció és a `package.json` megfelelő [módosításai](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/package.json#L16):
+A következő kód a [sampleBarChart vizualizációs adattár](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/package.json#L15) `package.json` fájljából származik, a vizualizációs projekt az új eszközök használatára való frissítése után:
 
 ```json
 {
     "name": "visual",
-    "version": "1.2.3",
+    "version": "3.0.0",
     "scripts": {
         "pbiviz": "pbiviz",
         "start": "pbiviz start",
+        "package": "pbiviz package",
         "lint": "tslint -r \"node_modules/tslint-microsoft-contrib\"  \"+(src|test)/**/*.ts\"",
         "test": "pbiviz package --resources --no-minify --no-pbiviz"
     },
     "devDependencies": {
-      "@types/d3": "5.0.0",
-      "d3": "5.5.0",
-      "powerbi-visuals-tools": "^3.1.0",
-      "tslint": "^4.4.2",
-      "tslint-microsoft-contrib": "^4.0.0"
+        "@types/d3": "5.7.2",
+        "d3": "5.12.0",
+        "powerbi-visuals-api": "^2.6.1",
+        "powerbi-visuals-tools": "^3.1.7",
+        "powerbi-visuals-utils-dataviewutils": "^2.2.1",
+        "powerbi-visuals-utils-formattingutils": "^4.4.2",
+        "powerbi-visuals-utils-interactivityutils": "^5.6.0",
+        "powerbi-visuals-utils-tooltiputils": "^2.3.1",
+        "tslint": "^5.20.0",
+        "tslint-microsoft-contrib": "^6.2.0"
     }
 }
 ```
 
-## <a name="how-to-install-power-bi-custom-visuals-api"></a>A Power BI Custom Visuals API telepítése
+## <a name="install-the-power-bi-custom-visuals-api"></a>A Power BI Custom Visuals API telepítése
 
-A powerbi-visuals-tools új verziója nem foglal magában minden API-verziót. Ehelyett a fejlesztőnek kell telepítenie a [`powerbi-visuals-api`](https://www.npmjs.com/package/powerbi-visuals-api) csomag kívánt verzióját. A csomag verziója megegyezik a Power BI Custom Visuals API-verziójával, és minden típusdefiníciót megad a Power BI Custom Visuals API-hoz.
+A powerbi-visuals-tools új verziója nem tartalmaz minden API-verziót. Ehelyett a [powerbi-visuals-api](https://www.npmjs.com/package/powerbi-visuals-api) csomag egy konkrét verzióját kell telepítenie. Válassza ki a csomag az egyéni Power BI-vizualizációk API-verziójának megfelelő verzióját. A csomag a Power BI Custom Visuals API összes típusdefinícióját tartalmazza.
 
-A `powerbi-visuals-api` az `npm install --save-dev powerbi-visuals-api` parancs végrehajtásával vehető fel a projekt függőségei közé.
-A régi API-típusdefiníciókra mutató hivatkozást el kell távolítani. A `powerbi-visuals-api` csomagból származó típusokat a Webpack automatikusan befoglalja. Az erre vonatkozó módosítások a `package.json` fájlnak [ebben](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/package.json#L14) a sorában találhatók.
+A következő parancs futtatásával adja hozzá a `powerbi-visuals-api` API-t egy projekt projektfüggőségeihez:
 
-## <a name="update-tsconfigjson"></a>A `tsconfig.json` frissítése
+```cmd
+npm install --save-dev powerbi-visuals-api
+```
 
-Külső modulok használatához az `out` beállítást az `outDir` beállítás váltja fel.
-`"out": "./.tmp/build/visual.js",` helyett `"outDir": "./.tmp/build/",`.
+Emellett távolítsa el a régi API típusdefinícióinak minden hivatkozását, mert a Webpack automatikusan a `powerbi-visuals-api` API-ból foglalja bele a típusokat. A megfelelő módosítások a [package.json](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/package.json#L14) és a [tsconfig.json](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/tsconfig.json#L14) fájlban találhatók.
 
-Ez azért szükséges, mert a TypeScript-fájlok egymástól függetlenül vannak JavaScript-fájlokká lefordítva. Ezért nem kell többé a visual.js fájlt megadni kimenetként.
+## <a name="update-tsconfigjson"></a>A tsconfig.json frissítése
 
-A `target` beállítást is az `ES6` beállításra cserélheti, ha modern JavaScript-kimenetet szeretne. [Ez nem kötelező](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/tsconfig.json#L6).
+Külső modulok használatához módosítsa az `out` értéket az `outDir` értékre. Használja például az `"outDir": "./.tmp/build/",` értéket az `"out": "./.tmp/build/visual.js",` érték helyett.
 
-## <a name="update-custom-visuals-utils"></a>Egyéni vizualizációs segédprogramok frissítése
+Ez a módosítás azért szükséges, mert a rendszer egymástól függetlenül fordítja le a TypeScript-fájlokat JavaScript-fájlokká. Ezért nem kell többé a visual.js fájlt megadni kimenetként.
 
-Ha használja a powerbi-visuals-utils (https://www.npmjs.com/search?q=powerbi-visuals-utils) eszközeinek egyikét, akkor ezeket is érdemes a legújabb verzióra frissíteni.
+A `target` beállítást is az `ES6` értékre módosíthatja, ha modern JavaScript-kimenetet szeretne használni. Ez a módosítás [nem kötelező](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/tsconfig.json#L7).
 
-Futtassa az `npm install powerbi-visuals-utils-<UTILNAME> --save` parancsot (például: `npm install powerbi-visuals-utils-dataviewutils --save`), hogy megkapja az új verziót külső TypeScript-modulokkal.
+## <a name="update-custom-visuals-utilities"></a>Egyéni vizualizációs segédprogramok frissítése
 
-Erre a MekkoChart [adattárban](https://github.com/Microsoft/powerbi-visuals-mekkochart) talál példát.
-Ez a vizualizáció az összes segédprogramot használja.
+Ha bármelyiket haználja a [powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils) csomagjai közül, akkor ezeket is érdemes a legújabb verzióra frissíteni. Ehhez futtassa a következő parancsot:
 
-## <a name="remove-globalizejs-library"></a>A Globalize.js kódtár eltávolítása
+```cmd
+npm install powerbi-visuals-utils-<UTILNAME> --save
+```
 
-A [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils) új verziója eleve tartalmazza a globalize.js-t.
-Ezt a kódtárat nem kell manuálisan belefoglalni a projektbe.
-Minden szükséges honosítás automatikusan hozzá lesz adva a végleges csomaghoz.
+Az új verzió külső TypeScript-modulokkal való beszerzéséhez például futtassa a következőt: 
 
-## <a name="fix-loading-external-libraries"></a>Külső kódtárak betöltésének javítása
+```cmd
+npm install powerbi-visuals-utils-dataviewutils --save
+```
 
-A kódtárak után foglaljon be új JS-fájlt a `pbiviz.json` fájl `externalJS` tömbjében. Például:
+A [MekkoChart adattárban](https://github.com/Microsoft/powerbi-visuals-mekkochart) találhat példát olyan vizualizációra, amely a `powerbi-visuals-utils` összes csomagját használja.
+
+## <a name="remove-the-globalizejs-library"></a>A Globalize.js kódtár eltávolítása
+
+A [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils) új verziója tartalmazza a Globalize.js kódtárat. Így ezt a kódtárat nem kell manuálisan belefoglalni a projektbe. Minden szükséges honosítás automatikusan hozzá lesz adva a végleges csomaghoz.
+
+## <a name="configure-loading-of-external-libraries"></a>A külső kódtárak betöltésének konfigurálása
+
+Új JavaScript-fájlok hozzáadása a `pbiviz.json` `externalJS` tömbjében lévő kódtárak után. Például:
 
 ```JSON
 "externalJS": [
@@ -121,23 +136,21 @@ A kódtárak után foglaljon be új JS-fájlt a `pbiviz.json` fájl `externalJS`
 ]
 ```
 
-Importálja a forrásbeli kódtárakat. Például a `lodash-es` esetében:
+Importálja a kódtárakat a forráskódban. A `lodash-es` kódtárhoz például használja az alábbi utasítást:
 
 ```JS
 import * as _ from "lodash-es";
 ```
 
-ahol `_` a `lodash` kódtárhoz tartozó globális változó.
+Az előző példában az `_` a `lodash` kódtár globális változója.
 
-## <a name="changes-in-the-visuals-sources"></a>A vizualizációk forrásának változásai
+## <a name="make-changes-in-the-sources-of-your-visuals"></a>A vizualizációk forrásainak módosítása
 
-A legjelentősebb változás a belső modulok külsőkké konvertálása, ugyanis külső modul nem használható belső modulon belül.
+A fő módosítás, amelyet el kell végeznie, az a belső modulok külső modulokká való konvertálása. Külső modulok nem használhatók belső modulokban.
 
-Ezek a változások a SampleBarChart-mintán elvégzett módosításoknak felelnek meg.
+Az elvégzendő módosítások részletes leírása az alábbiakban látható. A módosításokat a Sávdiagram egyéni vizualizációs kódmintája kontextusában ismertetjük:
 
-A változások részletes leírása a következő:
-
-1. A [forráskód](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L153) minden fájljából távolítsa el a moduldefiníciókat
+1. A [forráskód](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbL1-L3) minden fájljából távolítsa el a moduldefiníciókat:
 
     ```typescript
     module powerbi.extensibility.visual {
@@ -145,13 +158,13 @@ A változások részletes leírása a következő:
     }
     ```
 
-2. [Importálja a Power BI egyéni vizualizációs API-definíciókat](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L2).
+2. [Importálja a Power BI egyéni vizualizációs API-jának definícióit](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR4):
 
     ```typescript
     import powerbi from "powerbi-visuals-api";
     ```
 
-3. [Importálja](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L12-L23) a szükséges interfészeket vagy osztályokat a `powerbi` belső modulból.
+3. [Importálja a szükséges interfészeket vagy osztályokat](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR12-R35) a `powerbi` belső modulból.
 
     ```typescript
     import PrimitiveValue = powerbi.PrimitiveValue; 
@@ -168,19 +181,19 @@ A változások részletes leírása a következő:
     import ISelectionManager = powerbi.extensibility.ISelectionManager; 
     ```
 
-4. [Importálja](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L1) a D3.js kódtárat
+4. [Importálja a D3.js kódtárat](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR2):
 
     ```typescript
     import * as d3 from "d3";
     ```
 
-    Azt is megteheti, hogy csak a D3 kódtár szükséges moduljait importálja
+    Azt is megteheti, hogy csak a D3 kódtár szükséges moduljait importálja:
 
     ```typescript
     import { max, min } from "d3-array";
     ```
 
-5. [Importálja](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L4-L10) a vizualizáció-projektben definiált segédprogramokat, osztályokat és interfészeket a fő forráskódba
+5. [Importálja a vizualizációs projektben definiált segédprogramokat, osztályokat és interfészeket](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR38-R41) a forráskód fő fájljába:
 
     ```typescript
     import { getLocalizedString } from "./localization/localizationHelper";
@@ -194,62 +207,60 @@ A változások részletes leírása a következő:
 
 ### <a name="import-css-styles"></a>CSS-stílusok importálása
 
-Az eszközök új verzióival a fejlesztők közvetlenül a TypeScript-kódba importálhatnak CSS-, LESS-stílust.
+Az eszközök új verzióival a közvetlenül a TypeScript-kódba importálhat `CSS`- és `Less`-stílusokat. A fordító most már figyelmen kívül hagyja a korábban használt [stílusszakaszt](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/pbiviz.json#L21).
 
-A korábban használt [stílusdefiníciós szakaszt](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/pbiviz.json#L22) a fordító figyelmen kívül hagyja.
-
-Saját stíluslap használatához nyissa meg a fő TypeScript-fájlt, és szúrja be a következő sort:  
+Saját stíluslap használatához nyissa meg a fő TypeScript- (.ts) fájlt, és szúrja be a következő sort:  
 
 ```typescript
 import "./../style/visual.less";
 ```  
 
-A CSS és LESS stílusok automatikusan le lesznek fordítva.  
+A `CSS`- és `Less`-stílusok automatikusan le lesznek fordítva.
 
 ### <a name="externaljs-section-in-pbivizjson"></a>externalJS szakasz a pbiviz.json fájlban
 
-Az eszközök [nem igénylik](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/pbiviz.json#L20) `externalJS`-lista betöltését a vizualizáció-csomagba. A Webpack ugyanis minden importált kódtárat belefoglal.
+Az eszközöknek [nincs szükségük a vizualizációs csomagba betöltendő `externalJS`-kódtárak](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-a1a7bbee7e7d2f9d449f4b534532bcf2R20) listájára, mert a Webpack minden importált kódtárat tartalmaz.
 
-**A pbiviz.json externalJS szakaszának üresnek kell lennie.**
+> [!NOTE]
+> A `pbiviz.json` fájlban hagyja üresen a `externalJS` szakaszt.
 
-Használja a szokásos `npm run package` parancsot a vizualizáció-csomag létrehozásához, vagy az `npm run start` parancsot dev-server indításához.
+A szokásos `npm run package` paranccsal hozhatja létre a vizualizációs csomagot, és az `npm run start` paranccsal indíthatja el a fejlesztői kiszolgálót.
 
-## <a name="updating-d3js-library-to-version-5"></a>A D3.js kódtár 5-ös verzióra frissítése
+## <a name="update-the-d3js-library-to-version-5"></a>A D3.js kódtár frissítése az 5-ös verzióra
 
-Az új eszközökkel használatba veheti a D3.js kódtár új verzióját.
+Az új vizualizációs eszközökkel használatba veheti a D3.js kódtár új verzióját. Futtassa az alábbi parancsokat a D3 a vizualizációs projektben való frissítéséhez:
 
-A D3 az alábbi parancsokkal frissíthető a vizualizáció-projektben
+- `npm install --save d3@5` az új D3.js telepítéséhez.
 
-`npm install --save d3@5` az új D3.js telepítéséhez.
+- `npm install --save-dev @types/d3@5` a D3.js új típusdefinícióinak telepítéséhez.
 
-`npm install --save-dev @types/d3@5` a D3.js új típusdefinícióinak telepítéséhez.
+> [!IMPORTANT]
+> A D3 5-ös verziójában számos kompatibilitástörő változás jelenik meg.
 
-Egyes változások megtörik a kompatibilitást, ezért a kódot módosítania kell az új D3-js használatára.
+Módosítsa a kódot úgy, hogy az működjön az új D3.js használatával:
 
-1. A `d3.Selection<T>` interfész a következőre [módosult](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR157): `Selection<GElement extends BaseType, Datum, PElement extends BaseType, PDatum>`
+- A `d3.Selection<T>` interfész a következőre [módosult](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR157): `Selection<GElement extends BaseType, Datum, PElement extends BaseType, PDatum>`.
 
-2. Nem alkalmazhat több attribútumot az `attr` metódus egyetlen hívásával. Minden attribútumot az `attr` metódus külön hívásával [kell átadnia](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR278). [Ugyanez](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR247) érvényes a `style` metódusra is.
+- Nem alkalmazhat több attribútumot az `attr` metódus egyetlen hívásával. Ehelyett [minden attribútum átadásához kell meghívnia](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR278) az `attr` metódust. [A `style` metódust is külön kell meghívnia](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR247).
 
-3. A D3.js v4-ben lett bevezetve az új merge metódus. Ezt a metódust gyakran használják kijelölések bevitelének és frissítésének egyesítésére adatok összekapcsolása után. A D3 megfelelő használatához [hívja meg a merge metódust](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/83fe8d52d362dccd0034dd8e32c94080d9376b29#diff-433142f7814fee940a0ffc98dc75bfcbR272).
+- A D3.js 4-es verziójában jelent meg az új `merge` metódus. Ezt a metódust gyakran használják `enter` és `update` kijelölések egyesítésére adat-összekapcsolási műveletek után. A D3 megfelelő használatához [hívja meg a `merge` metódust](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/83fe8d52d362dccd0034dd8e32c94080d9376b29#diff-433142f7814fee940a0ffc98dc75bfcbR272).
 
 [További tudnivalók](https://github.com/d3/d3/blob/master/CHANGES.md) a D3.js kódtár változásairól.
 
-## <a name="babel"></a>Babel
+## <a name="install-babel-and-core-js"></a>A Babel és a core-js telepítése
 
-A 3.1-es verziótól kezdődően az eszközök a Babel használatával fordítják a modern JS-kódot a régi ES5-re, a sokféle böngésző támogatása érdekében.
+A 3.1-es verziótól kezdődően a vizualizációs eszközök a Babel használatával fordítják a modern JavaScript-kódot a régi ECMAScript 5-re (ES5-re), a sokféle böngésző támogatása érdekében.
 
-Ez a beállítás alapértelmezés szerint engedélyezve van, de a [`@babel/polyfill`](https://babeljs.io/docs/en/babel-polyfill) csomagot manuálisan kell importálnia.
+A Babel ezen beállítása alapértelmezés szerint engedélyezve van, de a [`core-js`](https://www.npmjs.com/package/core-js) csomagot manuálisan kell importálnia. Futtassa a következő parancsot a csomag telepítéséhez:
 
-Telepítse a csomag a következő paranccsal
+```cmd
+npm install --save core-js
+```
 
-`npm install --save @babel/polyfill`
+Ezután importálja a csomagot a vizualizáció kódjának kezdőpontján. Ez általában az src/visual.ts fájl.
 
-majd importálja a csomagot a vizualizáció kódjának kezdőpontján (általában az „SRC/visual.ts” fájlban):
-
-`import "@babel/polyfill";`
+```JS
+import "core-js/stable";
+```
 
 A Babellel kapcsolatos további információk [a dokumentációban](https://babeljs.io/docs/en/).
-
-Végül a [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer) futtatásával jelenítse meg a vizualizáció kódbázisát.  
-
-![Vizualizáció kódjának statisztikája](./media/webpack-stats.png)
