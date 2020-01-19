@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: eac0c6fab686a3b5cf63d035ea19b52ab83aa339
-ms.sourcegitcommit: 768e1e4b19fe8c7627010127c2420d63021cb542
+ms.openlocfilehash: 3a043a343994c02a916102b83fe79d1ccd5208bf
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199459"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762324"
 ---
-# <a name="shape-maps-in-power-bi-desktop-preview"></a>Az Alakzatleképezések funkció a Power BI Desktopban (előzetes verzió)
+# <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Alakzatleképezés vizualizáció létrehozása a Power BI Desktopban (előzetes verzió)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -115,7 +115,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="australia-states"></a>Ausztrália: Államok
 
-| ID | röv | iso | név | ir.szám |
+| ID | röv | iso | name | ir.szám |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Nyugat-Ausztrália |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -128,7 +128,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="austria-states"></a>Ausztria: Államok
 
-| ID | iso | név | név (magyarul) | ir.szám |
+| ID | iso | name | név (magyarul) | ir.szám |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Bécs |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -178,7 +178,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="canada-provinces"></a>Kanada: Tartományok
 
-| ID | iso | név | ir.szám |
+| ID | iso | name | ir.szám |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Északnyugati területek |NT |
@@ -196,7 +196,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="france-regions"></a>Franciaország: Régiók
 
-| ID | név | név (magyarul) |
+| ID | name | név (magyarul) |
 | --- | --- | --- |
 | Auvergne-Rhone-Alpes |  |  |
 | Bourgogne-Franche-Comte |  |  |
@@ -218,7 +218,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="germany-states"></a>Németország: Államok
 
-| ID | iso | név | név (magyarul) | ir.szám |
+| ID | iso | name | név (magyarul) | ir.szám |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Türingia |TH |
@@ -270,7 +270,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="italy-regions"></a>Olaszország: Régiók
 
-| ID | iso | név | név (magyarul) | ir.szám |
+| ID | iso | name | név (magyarul) | ir.szám |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Valle d'Aosta |VD |
@@ -295,7 +295,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="mexico-states"></a>Mexikó: Államok
 
-| ID | rövidítés | iso | név | név (magyarul) | ir.szám |
+| ID | rövidítés | iso | name | név (magyarul) | ir.szám |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatán |YU |
@@ -332,7 +332,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="netherlands-provinces"></a>Hollandia: Tartományok
 
-| ID | iso | név | név (magyarul) |
+| ID | iso | name | név (magyarul) |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |Dél-Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -349,7 +349,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="uk-countries"></a>Egyesült Királyság: Országok
 
-| ID | iso | név |
+| ID | iso | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Skócia |
@@ -358,7 +358,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 
 ### <a name="usa-states"></a>USA: Államok
 
-| ID | név | ir.szám |
+| ID | name | ir.szám |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaszka |AK |
@@ -400,7 +400,7 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | us-ma |Massachusetts |MA |
 | us-ia |Iowa |IA |
 | us-nh |New Hampshire |NH |
-| us-or |Oregon |OR |
+| us-or |Oregon |VAGY |
 | us-mn |Minnesota |MN |
 | us-vt |Vermont |VT |
 | us-id |Idaho |ID |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: fe91de89e7eec601c516895089e3dcc03eff14ea
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 4e7616ec3ce6552130848bc0508bf8b9ac8ac965
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2020
-ms.locfileid: "75657213"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762600"
 ---
 # <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Power BI jelentéskészítő kiszolgálóval készült jelentés beágyazása iFrame-keretben a SharePoint Serverben
 
@@ -25,7 +25,7 @@ Ebből a cikkből elsajátíthatja egy Power BI jelentéskészítő kiszolgáló
 * Telepített és konfigurált [Power BI jelentéskészítő kiszolgáló](https://powerbi.microsoft.com/report-server/).
 * Telepített [Power BI Desktop a Power BI jelentéskészítő kiszolgálóhoz optimalizálva](install-powerbi-desktop.md).
 * Telepített és konfigurált [SharePoint](https://docs.microsoft.com/sharepoint/install/install)-környezet.
-* Az Internet Explorer 11 csak a SharePoint Online használata esetén támogatott.  Bármelyik forgatókönyvben más támogatott böngészőket is használhat.
+* Az Internet Explorer 11 csak akkor támogatott, ha a dokumentum IE11 (Edge) módra van beállítva, vagy a SharePoint Online használata esetén. A helyszíni SharePointtal és a SharePoint Online-nal más támogatott böngészők is használhatók.
 
 ## <a name="create-the-power-bi-report-url"></a>A Power BI-jelentés URL-címének létrehozása
 

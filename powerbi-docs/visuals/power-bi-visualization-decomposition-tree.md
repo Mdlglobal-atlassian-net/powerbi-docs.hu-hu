@@ -7,17 +7,17 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/13/2019
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d653bb0193351e2ecb38c09e6b34d02eea5cce67
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 8aa392b69d21905901f8304c577b87b00ed19057
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060614"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885275"
 ---
-# <a name="use-the-decomposition-tree-visual-in-power-bi-preview"></a>A felbontásfa-vizualizáció használata a Power BI-ban (előzetes verzió)
+# <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Felbontásfa-vizualizációk létrehozása és megtekintése a Power BI-ban (előzetes verzió)
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 A felbontásfa-vizualizáció sokdimenziós adatok képi megjelenítését teszi lehetővé a Power BI-ban. Automatikusan összesíti az adatokat, és lehetővé teszi a lefúrást a dimenziók tetszőleges sorrendjében. Ugyanakkor mesterséges intelligenciával (AI-val) rendelkező vizualizáció, tehát meg lehet kérni a következő dimenzió megkeresésére, amelybe egy adott feltétel alapján le kell fúrni. Ez az alkalmi felderítés és az alapvető okok elemzése értékes eszközévé teszi.
@@ -131,6 +131,8 @@ Az alábbi példában az első két szint van zárolva. Ez azt jelenti, hogy a j
 ![Felbontásfa zárolása](media/power-bi-visualization-decomposition-tree/tree-locking.png)
 
 ## <a name="known-limitations"></a>Ismert korlátozások
+
+A fa szintjeinek maximális száma 50. A fán egyidejűleg megjeleníthető adatpontok maximális száma 5000. A felső N érték megjelenítéséhez csonkoljuk a szinteket. A felső N jelenleg szintenként 10-re van beállítva. 
 
 A felbontásfa nem támogatott az alábbiaknál:  
 -   Helyszíni Analysis Services

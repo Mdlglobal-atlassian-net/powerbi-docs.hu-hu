@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 04/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d5fcc6866d564367d2a29dc00493a959409ea2ed
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b14b9a8a0978876942de789548d9741fa3932152
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858990"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762232"
 ---
-# <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Milyen mintaadatok használhatók a Power BI-ban?
-Tegyük fel, hogy kezdő felhasználó a Power BI-ban, és egyelőre adatok nélkül szeretné kipróbálni.  Esetleg már van egy adathalmaza. Mivel (egyelőre) nem ismeri a Power BI működését, aggódik, hogy valahogy kárt tesz az adathalmazban.
+# <a name="get-sample-data-for-power-bi"></a>Mintaadatok beolvasása a Power BI-hoz
+Tegyük fel, hogy kezdő felhasználó a Power BI-ban, és egyelőre adatok nélkül szeretné kipróbálni.  Esetleg már van egy adathalmaza. Mivel (egyelőre) nem ismeri a Power BI működését, esetleg aggódik, hogy valahogyan kárt tesz az adathalmazban.
 
 Aggodalomra semmi ok! Az obviEnce ([www.obvience.com](http://www.obvience.com/)) és a Microsoft jóvoltából több mintát is kipróbálhat, amíg jobban meg nem ismeri a Power BI-t.  Az adatok névtelenek, és különböző szektorokhoz tartoznak: pénzügy, HR, értékesítés és egyebek. Online dokumentációnk is ugyanezeket a mintákat használja az oktatóanyagokban és példákban, így ezeket könnyű nyomon követni.      
 
@@ -30,7 +30,7 @@ Mielőtt hozzálátnánk, ejtsünk szót a minták használatának jogi irányel
 
 ## <a name="usage-guidelines-for-the-power-bi-sample-excel-workbooks"></a>A Power BI Excel-mintamunkafüzeteinek használati útmutatója
 
-©2015 Microsoft Corporation. Minden jog fenntartva. A dokumentumok és munkafüzetek az adott állapotban érhetők el. A munkafüzetekben megjelenő adatokat és nézeteket, beleértve az URL-címeket és egyéb internetes webhelyhivatkozásokat, értesítés nélkül módosíthatjuk. Ezeket csak saját felelősségre használhatja. Egyes példák csak szemléltető céllal jelennek meg, és nem valódi esetek. Szándékos vagy következtetett kapcsolattal nem rendelkeznek a valósággal. A Microsoft nem vállal kifejezett vagy törvényi garanciát az itt megjelenő információért.
+©2015 Microsoft Corporation. All rights reserved. A dokumentumok és munkafüzetek az adott állapotban érhetők el. A munkafüzetekben megjelenő adatokat és nézeteket, beleértve az URL-címeket és egyéb internetes webhelyhivatkozásokat, értesítés nélkül módosíthatjuk. Ezeket csak saját felelősségre használhatja. Egyes példák csak szemléltető céllal jelennek meg, és nem valódi esetek. Szándékos vagy következtetett kapcsolattal nem rendelkeznek a valósággal. A Microsoft nem vállal kifejezett vagy törvényi garanciát az itt megjelenő információért.
 
 A munkafüzetek nem ruházzák fel Önt semmilyen joggal a Microsoft-termékekben szereplő szellemi tulajdon felett. A munkafüzetet csak hivatkozási céllal, belső használatra kaphatja meg, és csak ilyen céllal készíthet róla másolatot.
 
@@ -127,7 +127,7 @@ A minta-tartalomcsomagok Excel-munkafüzetként is elérhetők. Az Excel-munkaf�
    * [Értékesítési és marketing minta](https://go.microsoft.com/fwlink/?LinkId=529785)
 2. Mentse a letöltött fájlt. Fontos, hogy hova menti a fájlt.
 
-   * ![Helyi meghajtó](media/sample-datasets/power-bi-local-file2.png) **Helyi meghajtó** – Ha a fájlt a saját számítógépére vagy a cég valamilyen más helyére mentette, a Power BI-ból importálhatja a fájlt Power BI-ba. A fájl valójában a helyi meghajtón marad, tehát a teljes fájl nem lesz importálva a Power BI-ba. Annyi történik, hogy létrejön egy új adatkészlet az Ön Power BI-webhelyén, a rendszer pedig betölti abba az adatokat, és bizonyos esetekben az adatmodellt is. Ha a fájlban vannak jelentések, azok a Power BI-webhely Jelentések területén jelennek meg.
+   * ![Helyi meghajtó](media/sample-datasets/power-bi-local-file2.png)  **Helyi meghajtó** – Ha a fájlt a saját számítógépére vagy a cég valamilyen más helyére mentette, a Power BI-ból importálhatja a fájlt Power BI-ba. A fájl valójában a helyi meghajtón marad, tehát a teljes fájl nem lesz importálva a Power BI-ba. Annyi történik, hogy létrejön egy új adatkészlet az Ön Power BI-webhelyén, a rendszer pedig betölti abba az adatokat, és bizonyos esetekben az adatmodellt is. Ha a fájlban vannak jelentések, azok a Power BI-webhely Jelentések területén jelennek meg.
    * ![OneDrive Vállalati verzió](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – Vállalati verzió** – Ha OneDrive Vállalati verzióval rendelkezik, és a Power BI-hoz is használt fiókkal jelentkezik be oda, akkor a OneDrive vállalati verziója a legjobb megoldás arra, hogy az Excelben vagy a Power BI Desktopban készült munkái vagy .CSV-fájljai szinkronban maradjanak az adathalmazzal, a jelentésekkel és az irányítópultokkal a Power BI-ban. Mivel a Power BI és a OneDrive egyaránt a felhőben található, a Power BI nagyjából óránként kapcsolódik a OneDrive-on található fájlhoz. Ha módosításokat talál, az adatkészlet, a jelentések és az irányítópultok automatikusan frissülnek a Power BI-ban.
    * ![OneDrive személyes](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – személyes** – Ha a saját OneDrive-fiókjába menti a fájlokat, számos olyan előnyre tehet szert, mint a OneDrive Vállalati verziójának használatakor. A legnagyobb különbség az, hogy amikor először csatlakozik a fájlhoz (az Adatok lekérése > Fájlok > OneDrive – személyes paranccsal), a Microsoft-fiókjával kell bejelentkeznie a OneDrive-ra, amely általában különbözik a Power BI-ba való bejelentkezéskor használt fióktól. Amikor a Microsoft-fiókjával jelentkezik be a OneDrive-ba, mindenképp jelölje be a Bejelentkezve szeretnék maradni lehetőséget. Így a Power BI képes óránként csatlakozni a fájlhoz, hogy biztosítsa a Power BI-ban lévő adatok szinkronizálását.
    * ![SharePoint-csoportwebhelyek](media/sample-datasets/power-bi-sharepoint2.png) **SharePoint-csoportwebhelyek** – A Power BI-ban lévő fájloknak a SharePoint-csoportwebhelyekre történő mentése nagyjából ugyanúgy zajlik, mint a OneDrive Vállalati verzió esetében. A legnagyobb különbség a fájlhoz a Power BI-ból való csatlakozás módja. Megadhat egy URL-címet vagy csatlakozhat a gyökérmappához.

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e61df101d26dd95a771a64ce7633e40fcd9c9123
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ef19c638f9c456364757576e21c303103a7f4e39
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878892"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761864"
 ---
 # <a name="overview-of-accessibility-in-power-bi"></a>A Power BI kisegítő lehetőségeinek áttekintése
 A Power BI használatakor fontos figyelembe venni a különböző típusú felhasználókat, akik használhatják a jelentéseit. Ha olyan jelentéseket hoz létre és mutat be, amelyek könnyen kezelhetők és érthetők a billentyűzetet vagy képernyőolvasót használó felhasználók számára, azzal lehetővé teszi, hogy azokhoz a felhasználókhoz is ugyanaz az információ jusson el, akik esetleg látás- vagy mozgássérültek.
@@ -27,9 +27,10 @@ Ez a cikk a Power BI és az akadálymentesség áttekintését tartalmazza. A to
 
 Az univerzális tervezés az olyan termékek megtervezése, amelyeket ésszerű határokon belül a lehető legtöbb felhasználó tud használni, anélkül, hogy különleges adaptálásra vagy specializált kialakításra lenne szükség. Fontos, hogy figyelembe vegye a felhasználók igényeit, amikor a Power BI-ban jelentéseket vagy felületeket hoz létre. Ha akadálymentes felületet tervez, az nemcsak azon végfelhasználók számára hasznos, akik esetleg hallás-, mozgásszervi vagy látássérüléssel, vagy kognitív zavarokkal küzdenek. A szervezet minden végfelhasználóján segíthet. A Power BI biztosítja az eszközöket az akadálymentes jelentések létrehozásához és felhasználásához. Önön, mint a jelentés készítőjén múlik, hogy mindenki élményét javítja-e ezekkel az eszközökkel.
 
+
 ## <a name="accessibility-standards"></a>Akadálymentességi szabványok
 
-A Power BI a következő akadálymentességi szabványoknak felel meg.  Így biztosíthatja, hogy a lehető legtöbb felhasználó számára legyenek elérhetők a Power BI-felületek.
+A Power BI a következő akadálymentességi szabványoknak felel meg. Így biztosíthatja, hogy a lehető legtöbb felhasználó számára legyenek elérhetők a Power BI-felületek. A Power BI Mobile-alkalmazások C-osztályú akadálymentességi minősítéssel rendelkeznek, ami azt jelenti, hogy az elkészített akadálymentes jelentések vagy irányítópultok bárki számára akadálymentesek lesznek, aki a Power BI Mobile használatával tekinti meg azokat. 
 
 ### <a name="wcag-21"></a>WCAG 2.1
 A webes tartalom akadálymentessége (WCAG, Web Content Accessibility) révén a webes tartalmak elérhetővé válnak a fogyatékkal élők számára is. A WCAG-nek három elsődleges alapelve van:

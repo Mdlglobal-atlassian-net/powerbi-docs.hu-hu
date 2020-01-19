@@ -1,20 +1,20 @@
 ---
-title: Megosztott adathalmazok használata a Power BI többoldalas jelentéskészítőjében
-description: Megosztott adathalmazokhoz csatlakozhat a Power BI többoldalas jelentéskészítőjében.
-ms.date: 07/23/2019
+title: Többoldalas jelentés létrehozása megosztott Power BI-adathalmazzal – Power BI-jelentéskészítő
+description: Többoldalas jelentés létrehozása a Power BI-jelentéskészítőben egy megosztott Power BI-adathalmaz alapján.
+ms.date: 01/03/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: c44f90bc29887a5431c893803cf4910e0e5093d3
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 335b93720718bb72027c29c6093aad952cc4cdb2
+ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73791264"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691469"
 ---
-# <a name="use-shared-datasets-in-power-bi-report-builder"></a>Megosztott adathalmazok használata a Power BI Jelentéskészítőben
+# <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Többoldalas jelentés létrehozása megosztott Power BI-adathalmaz alapján
 
 Egy Power BI Desktopban létrehozott adathalmazt adatforrásként használhat a Power BI jelentéskészítővel készített többoldalas jelentésekhez. Képzelje el a következő helyzetet: Létrehozott egy Power BI-jelentést a Power BI Desktopban. Sok időt áldozott az adatmodell megtervezésére, majd létrehozott egy sok csodás vizualizációt tartalmazó, szépséges Power BI-jelentést. A jelentése tartalmaz egy soksoros mátrixot, amelyet görgetni kell, hogy mindet megtekinthesse. A jelentés olvasói olyan nyomtatható jelentést szeretnének, amelyen ennek a mátrixnak minden sora látható. A többoldalas Power BI-jelentés alkalmas erre: egy kinyomtatható táblázat vagy mátrix több oldalra kiterjedhet, fej- és láblécekkel ellátva, az Ön által tervezett tökéletes elrendezésben. Teljessé tenné a Power BI Desktop-jelentést. Ha azt szeretné, hogy a kettő pontosan, eltérések nélkül ugyanazokra az adatokra épüljön, akkor ugyanazt az adathalmazt kell használnia.
 
@@ -99,13 +99,13 @@ Ha az a cél, hogy a Power BI-jelentés és a Jelentéskészítőbeli jelentés 
 
     ![Lekérdezés eredményei](media/report-builder-shared-datasets/power-bi-report-builder-query-results.png)
 
-1. Kattintson az **OK** gombra.
+1. Válassza az **OK** lehetőséget.
 
     A lekérdezés az **Adathalmaz tulajdonságai** párbeszédpanel **Lekérdezés** ablakában látható.
 
     ![Adathalmaz tulajdonságai párbeszédpanel](media/report-builder-shared-datasets/power-bi-report-builder-dataset-properties.png)
 
-1. Kattintson az **OK** gombra.
+1. Válassza az **OK** lehetőséget.
 
     Az új adathalmaz most már a mezői listájával együtt látható a Jelentésadatok panelen.
 

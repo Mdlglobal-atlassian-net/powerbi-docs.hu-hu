@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4686b15e04d3724256c76d7ba27a125cb04e86b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 50a5705f5e236dc326f4c2b33716e55f6a9f7ce5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878962"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761979"
 ---
-# <a name="creating-accessible-reports-in-power-bi"></a>Akadálymentesített jelentések létrehozása a Power BI-ban
+# <a name="design-power-bi-reports-for-accessibility"></a>Power BI-jelentések tervezése az akadálymentesség szempontjából
 Meggyőző jelentéseket tervezhet és hozhat létre, és egyben gondoskodhat az akadálymentességükről is. Egy jelentés létrehozásakor a célközönségtől függetlenül mindig úgy kell eljárnia, hogy különleges tervezési megoldások nélkül is elérhető legyen a legtöbb felhasználó számára.
 
 ![A Windows kontrasztos beállítása](media/desktop-accessibility/accessibility-05.png)
@@ -41,7 +41,7 @@ A következő részekben ezen kategóriák részletes leírása található.
 
 A Power BI a terméken belül számos olyan kisegítő lehetőséget biztosít, amelyet a jelentés szerzőjének nem kell konfigurálnia. Ezek a lehetőségek a következők:
 
-* Billentyűzettel való navigáció
+* Navigálás billentyűzettel
 * Képernyőolvasó kompatibilitás
 * Kontrasztos színek
 * Fókusz mód

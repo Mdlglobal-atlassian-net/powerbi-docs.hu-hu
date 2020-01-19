@@ -6,95 +6,101 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 12/18/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 08b739c5be01efed5abf8258540b5ab66b3b390b
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: cfde935b2cec6e86b56b4f70865ff2d02b5ce27a
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73876064"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759199"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>A DirectQuery használata a Power BI Desktopban
-A **Power BI Desktop** használatával az adatforrásokhoz való kapcsolódáskor mindig importálhat egy másolatot az adatokról a **Power BI Desktopba**. Egyes adatforrások esetében egy alternatív módszer is használható: ha közvetlenül kapcsolódik az adatforráshoz a **DirectQuery** használatával.
+A *Power BI Desktop* használatával az adatforrásokhoz való kapcsolódáskor mindig importálhat egy másolatot az adatokról a Power BI Desktopba. Egyes adatforrások esetében egy alternatív módszer is használható: ha közvetlenül kapcsolódik az adatforráshoz a DirectQuery használatával.
 
 ## <a name="supported-data-sources"></a>Támogatott adatforrások
-A **DirectQuery** használatát támogató adatforrások teljes listájáért tekintse meg [A DirectQuery által támogatott adatforrásokat](desktop-directquery-data-sources.md) ismertető cikket.
+A DirectQuery használatát támogató adatforrások teljes listáját [A DirectQuery által támogatott adatforrások](power-bi-data-sources.md) című cikkben találhatja meg.
 
 ## <a name="how-to-connect-using-directquery"></a>Kapcsolódás a DirectQuery használatával
-Amikor az **Adatok lekérése** funkcióval egy, a **DirectQuery** által támogatott adatforráshoz kapcsolódik, a kapcsolódási ablakban kiválaszthatja a kapcsolódás módját.  
+Amikor az **Adatok betöltése** funkcióval egy, a DirectQuery által támogatott adatforráshoz kapcsolódik, a kapcsolódási párbeszédpanelen kiválaszthatja a kapcsolódás módját. Választhatja például a Power BI Desktop **Kezdőlap** menüszalagján az **Adatok betöltése** > **SQL Server** lehetőséget. Az **SQL Server-adatbázis** párbeszédpanelen az **Adatkapcsolati mód** az **Importálás** és a **DirectQuery** beállítást kínálja fel:
 
-![](media/desktop-use-directquery/directquery_2a.png)
+![Az Importálás és a DirectQuery beállítás az SQL Server-adatbázis párbeszédpanelen a Power BI Desktopban](media/desktop-use-directquery/directquery_sqlserverdb.png)
 
-Az **importálás** és a **DirectQuery** közötti különbségek a következők:
+Az **Importálás** és a **DirectQuery** kiválasztása közötti különbségek a következők:
 
-**Importálás** – Ezzel a módszerrel a táblákat és oszlopokat importálja a **Power BI Desktopba**. A vizualizációk létrehozása és használata során a **Power BI Desktop** az importált adatokat használja. Az alapul szolgáló adatok a kezdeti importálás vagy a legutóbbi frissítés óta történt változásainak megtekintéséhez frissítenie kell az adatokat, ami a teljes adatkészletet ismételt importálását jelenti.
+- **Importálás**: A kijelölt táblák és oszlopok importálva lesznek a Power BI Desktopba. A vizualizációk létrehozása és használata során a Power BI Desktop az importált adatokat használja. A mögöttes adatoknak az első importálás vagy az utolsó frissítés utáni változásai csak akkor jelennek meg, ha frissíti az adatokat, ezzel pedig ismét importálja a teljes adathalmazt.
 
-**DirectQuery** – Ezzel a módszerrel nem importál vagy másol adatokat a **Power BI Desktopba**. A relációs források esetében a kiválasztott táblák és oszlopok jelennek meg a **Mezők** listában. A többdimenziós források esetében, amilyen az SAP Business Warehouse is, a kiválasztott kocka dimenziói és mértékei jelennek meg a **Mezők** listában. A vizualizációk létrehozása és használata során a **Power BI Desktop** az alapul szolgáló adatforrásból kéri le az adatokat, azaz mindig az aktuális adatokat jeleníti meg.
+- **DirectQuery**: Ezzel a módszerrel nem importál vagy másol adatokat a Power BI Desktopba. A relációs források esetében a kiválasztott táblák és oszlopok jelennek meg a **Mezők** listában. A többdimenziós források esetében, amilyen az SAP Business Warehouse is, a kiválasztott kocka dimenziói és mértékei jelennek meg a **Mezők** listában. A vizualizációk létrehozása és használata során a Power BI Desktop a mögöttes adatforrásból kéri le az adatokat, tehát mindig az aktuális adatokat jeleníti meg.
 
-A **DirectQuery** használatával számos adatmodellezési és -átalakítási művelet elérhető, bár vannak bizonyos korlátozások. A vizualizációk létrehozása és használata során az adatokat a háttérforrásból kell lekérni, és a vizualizáció frissítéséhez szükséges idő a háttéradatforrás teljesítményétől függ. Ha egy kérés kiszolgálásához szükséges adatok nemrégiben már le lettek kérve, a Power BI Desktop a már lekért adatok használatával csökkenti a vizualizáció megjelenítéséhez szükséges időt. A **Kezdőlap** szalag **Frissítés** gombjával az összes vizualizációban frissítheti az adatokat az aktuális adatokra.
+A DirectQuery használatával számos adatmodellezési és -átalakítási művelet elérhető, bár vannak bizonyos korlátozások. A vizualizációk létrehozása vagy kezelése során le kell kérdeznie a mögöttes forrást. A vizualizáció frissítéséhez szükséges idő a háttéradatforrás teljesítményétől függ. Ha egy kérés kiszolgálásához szükséges adatok nemrégiben már le lettek kérve, a Power BI Desktop a már lekért adatok használatával csökkenti a vizualizáció megjelenítéséhez szükséges időt. A **Kezdőlap** menüszalag **Frissítés** gombjával az összes vizualizációban frissítheti az adatokat az aktuális adatokra.
 
-A **DirectQueryt**[a Power BI és a DirectQuery használatát bemutató](desktop-directquery-about.md) cikk írja le részletesen. Tekintse át továbbá a következő szakaszokat is, amelyek a **DirectQuery** használatának előnyeit, korlátait és fontos szempontjait ismertetik.
+A DirectQueryt [a Power BI és a DirectQuery](desktop-directquery-about.md) használatát bemutató cikk írja le részletesen. Tekintse át továbbá a következő szakaszokat is, amelyek a DirectQuery használatának előnyeit, korlátait és fontos szempontjait ismertetik.
 
 ## <a name="benefits-of-using-directquery"></a>A DirectQuery használatának előnyei
-Íme a **DirectQuery** használatának néhány előnye:
+A DirectQuery használatának néhány előnye:
 
-* A **DirectQuery** segítségével nagyon nagy adatkészletekhez készíthet vizualizációkat, amelyek esetében egyébként megoldhatatlan lenne az adatok megelőző importálása előzetes összesítéssel
-* A mögöttes adatok változásai szükségessé tehetik az adatok frissítését, és egyes jelentések esetében az aktuális adatok megjelenítése nagy mennyiségű adat átvitelével járhat, ami az adatok ismételt importálását megoldhatatlanná tenné. Ezzel szemben a **DirectQuery**-jelentések mindig aktuális adatokra épülnek.
-* Az 1 GB-os adatkészletkorlát a **DirectQueryre***nem* vonatkozik
+- A DirectQuery segítségével nagyon nagy adatkészletekhez készíthet vizualizációkat, amelyek esetében egyébként megoldhatatlan lenne az adatok megelőző importálása előzetes összesítéssel.
+- A mögöttes adatok változása adatfrissítést tehet szükségessé. Egyes jelentések esetében az aktuális adatok megjelenítése nagy mennyiségű adat átvitelével járhat, ami az adatok ismételt importálását megoldhatatlanná tenné. Ezzel szemben a DirectQuery-jelentések mindig aktuális adatokra épülnek.
+- Az 1 GB-os adathalmaz-korlát a DirectQueryre *nem* vonatkozik.
 
 ## <a name="limitations-of-directquery"></a>A DirectQuery korlátozásai
-Íme a **DirectQuery** használatának néhány korlátozása:
+A DirectQuery használata jelenleg néhány korlátozással jár:
 
-* Ha nem [kompozit modelleket](desktop-composite-models.md) használ, minden táblának egyetlen adatbázisból kell származnia
+- Ha nem [kompozit modelleket](desktop-composite-models.md) használ, minden táblának egyetlen adatbázisból kell származnia.
 
-* Ha a **Lekérdezésszerkesztőben** megadott lekérdezés túl összetett, hiba történik. A hiba javításához törölnie kell a **Lekérdezésszerkesztőben** a problémás lépést, vagy a **DirectQuery** használata helyett *importálnia* kell az adatokat. A többdimenziós forrásokhoz, amilyen az SAP Business Warehouse is, nincs **Lekérdezésszerkesztő**.
+- Ha a **Lekérdezésszerkesztőben** megadott lekérdezés túl összetett, hiba történik. A hiba javításához a **Lekérdezésszerkesztőben** törölheti a problémás lépést, vagy a DirectQuery használata helyett *importálhatja* az adatokat. A többdimenziós forrásokhoz, amilyen az SAP Business Warehouse is, nincs **Lekérdezésszerkesztő**.
 
-* Az időintelligencia-képességek nem érhetők el a **DirectQueryben**. Például a dátumoszlopok (év, negyedév, hónap, nap stb.) speciális kezelése **DirectQuery** módban nem támogatott.
+- Az időintelligencia-képességek nem érhetők el a DirectQueryben. Például a dátumoszlopok (amilyen az év, negyedév, hónap vagy nap) speciális kezelése DirectQuery módban nem támogatott.
 
-* Annak érdekében, hogy biztosítható legyen a háttéradatforrásra küldött lekérdezések elfogadható teljesítménye, a mértékekben megengedett DAX-kifejezésekre korlátozások vonatkoznak.
+- Annak érdekében, hogy biztosítható legyen a háttéradatforrásra küldött lekérdezések elfogadható teljesítménye, a mértékekben megengedett DAX-kifejezésekre korlátozások vonatkoznak.
 
-* A **DirectQuery** használatával legfeljebb egy millió sornyi adat adható vissza. Ez csak a visszaadott sorok számát érinti, a **DirectQuery** használatával visszaadott adatkészlet létrehozásához alkalmazott összesítéseket és számításokat nem. Például akár 10 millió sort is összesíthet egy, az adatforráson futó lekérdezéssel, és pontosan visszaadathatja az összesítésadatait a Power BI-ba a **DirectQuery** használatával, ha a Power BI-ba visszaadott sorok száma nem haladja meg az 1 milliót. Ha 1 milliónál több sort kellene visszaadnia a **DirectQueryből**, a Power BI hibát jelez.
+- A DirectQuery használatával legfeljebb egymillió sornyi adat adható vissza. Ez a DirectQuery használatával visszaadott adathalmaz létrehozásához alkalmazott összesítéseket és számításokra nem vonatkozik. Csak a visszaadott sorokat érinti.
+
+    Az adatforráson futó lekérdezéssel összesíthet például 10 millió sort. A lekérdezés a DirectQuery használatával pontosan visszaadja a Power BI-nak az összesítés eredményét, ha a visszaadott Power BI-adatok kevesebb, mint 1 millió sorból állnak. Ha a DirectQuery 1 milliónál több sort ad vissza, a Power BI hibát jelez.
 
 ## <a name="important-considerations-when-using-directquery"></a>Lényeges szempontok a DirectQuery használatához
-A **DirectQuery** használata érdemes számításba vennie a következő három szempontot:
+A DirectQuery használata során érdemes számításba vennie a következő három szempontot:
 
-* **Teljesítmény és terhelés** – A rendszer minden egyes **DirectQuery**-lekérdezést a forrásadatbázisra küld, ezért a vizualizációk frissítéséhez szükséges idő attól függ, hogy az adott háttérforrás milyen gyorsan adja vissza a lekérdezés (vagy lekérdezések) eredményeit. Az ajánlott válaszidő (a kért adatok visszaadása) a **DirectQuery** használatával vizualizációk esetében legfeljebb öt másodperc, a maximális ajánlott eredmény-visszaadási idő pedig 30 másodperc. Ennél hosszabb idők esetén a jelentések felhasználói élménye elfogadhatatlanul gyenge szintre csökken. Emellett a Power BI szolgáltatásban közzétett jelentésekben a néhány percnél tovább tartó lekérdezések időtúllépést eredményeznek, és a felhasználó hibaüzenetet kap.
+- **Teljesítmény és terhelés**: Minden egyes DirectQuery-lekérdezés a forrásadatbázishoz van elküldve, ezért a vizualizáció frissítéséhez szükséges idő attól függ, hogy az adott háttérforrás milyen gyorsan adja vissza a lekérdezés (vagy lekérdezések) eredményeit. Az ajánlott válaszidő (a kért adatok visszaadására) a DirectQuery használatával vizualizációk esetében legfeljebb öt másodperc, a maximális ajánlott idő pedig 30 másodperc. Ennél hosszabb idők esetén a jelentések felhasználói élménye elfogadhatatlanul gyenge szintre csökken. A Power BI szolgáltatásban már közzétett jelentésekben a néhány percnél tovább tartó lekérdezések időtúllépést eredményeznek, és a felhasználó hibaüzenetet kap.
   
-  A forrásadatbázis terhelését is érdemes figyelembe vennie a közzétett jelentést használó Power BI-felhasználók száma alapján. A *Sorszintű biztonság* (RLS) használatának is jelentős hatása lehet a teljesítményre: a több felhasználó által megosztott, nem sorszintű biztonságra konfigurált irányítópultcsempék egyetlen lekérdezést küldenek az adatbázisnak, a sorszintű biztonság használatával azonban *felhasználónként* egy lekérdezés szükséges a csempe frissítéséhez, ami jelentősen növeli a forrásadatbázis terhelését, így gyengülhet a teljesítmény.
+    A forrásadatbázis terhelését is érdemes figyelembe vennie a közzétett jelentést használó Power BI-felhasználók száma alapján. A **sorszintű biztonság** (RLS) használata is jelentős következményekkel járhat. A több felhasználóval megosztott, sorszintű biztonság nélküli irányítópult-csempék egyetlen lekérdezést küldenek az adatbázisnak. Sorszintű biztonságot használó csempék esetén azonban a csempe frissítéséhez általában *felhasználónként* egy lekérdezés szükséges, ezáltal jelentősen nő a forrás-adatbázis terhelése, ez pedig a teljesítményt is befolyásolhatja.
   
-  A Power BI a lehető leghatékonyabb lekérdezéseket állítja elő. Bizonyos helyzetekben azonban az összeállított lekérdezés nem elég hatékonyan kerüli el a sikertelen frissítéseket. Egy példa egy ilyen helyzetre, amikor egy előállított lekérdezés túlzottan nagy számú sort kérne le a háttéradatforrásból, és ebben az esetben a következő hiba lép fel:
+    A Power BI a lehető leghatékonyabb lekérdezéseket állítja elő. Bizonyos helyzetekben azonban az összeállított lekérdezés nem elég hatékonyan kerüli el a sikertelen frissítéseket. Ilyen helyzet áll elő például akkor, ha a generált lekérdezés rendkívül sok sort kér le a háttérbeli adatforrásból. Ebben az esetben a következő hiba keletkezik:
+
+    ```output
+    The resultset of a query to external data source has exceeded
+    ```
   
-      The resultset of a query to external data source has exceeded
-  
-  Ez a helyzet olyan egyszerű diagramok esetén fordulhat elő, amelyek tartalmaznak egy nagyon nagy számosságú oszlopot, és amelyekben az összesítési beállítás az *Összegzés mellőzése*. A vizualizáció legfeljebb 1 milliós számosságú oszlopokat tartalmazhat, vagy megfelelő szűrőket kell alkalmazni rá.
-* **Biztonság** – Alapértelmezés szerint a közzétett jelentéseket használó minden felhasználó a Power BI szolgáltatásban való közzététel után megadott hitelesítő adatokkal csatlakozik a háttéradatforráshoz. Ez ugyanaz a helyzet, mint az importált adatok esetében: minden felhasználó ugyanazokat az adatokat látja, függetlenül a háttérforráson definiált biztonsági szabályoktól. A DirectQuery-forrásokkal implementált felhasználószintű biztonságra vágyó ügyfeleknek sorszintű biztonságot vagy a forrásra vonatkozó, Kerberos által korlátozott hitelesítést érdemes használniuk. A Kerberos nem érhető el minden forráshoz. [További információk a sorszintű biztonságról](service-admin-rls.md). [További információk a Kerberos a DirectQueryben történő használatáról](https://docs.microsoft.com/power-bi/service-gateway-sso-kerberos). 
-* **Támogatott szolgáltatások** – A **DirectQuery** módban a **Power BI Desktop** egyes funkciói korlátozottan vagy nem működnek. Emellett a Power BI szolgáltatás néhány funkciója (például a *Gyors elemzések*) a **DirectQuery**-alapú adatkészletekkel nem használható. Ezért ezeknek a szolgáltatásoknak a **DirectQuery** használata során érvényes korlátozásait érdemes figyelembe vennie a **DirectQuery** használatának mérlegelésekor.   
+    Ez a helyzet olyan egyszerű diagramok esetén fordulhat elő, amelyek tartalmaznak egy nagyon nagy számosságú oszlopot, és amelyekben az összesítési beállítás az **Összegzés mellőzése**. A vizualizáció legfeljebb 1 milliós számosságú oszlopokat tartalmazhat, vagy megfelelő szűrőket kell alkalmaznia.
+
+- **Biztonság**: Alapértelmezés szerint a közzétett jelentéseket használó minden felhasználó a Power BI szolgáltatásban való közzététel után megadott hitelesítő adatokkal csatlakozik a háttéradatforráshoz. Ez ugyanaz az eljárás, mint az importált adatok esetében: minden felhasználó ugyanazokat az adatokat látja, függetlenül a háttérforráson definiált biztonsági szabályoktól.
+
+    A DirectQuery-forrásokkal implementált felhasználószintű biztonságra vágyó ügyfeleknek sorszintű biztonságot vagy a forrásra vonatkozó, Kerberos által korlátozott hitelesítést érdemes használniuk. A Kerberos nem minden forráshoz érhető el. [További információk a sorszintű biztonságról](service-admin-rls.md). [További információk a Kerberos a DirectQueryben történő használatáról](service-gateway-sso-kerberos.md).
+
+- **Támogatott funkciók**: A Power BI Desktop egyes funkciói DirectQuery módban nem, vagy csak bizonyos korlátozásokkal támogatottak. Emellett a Power BI szolgáltatás néhány funkciója (például a *Gyors elemzések*) sem érhető el DirectQueryt használó adathalmazokhoz. Ha a DirectQuery használatáról kell döntenie, érdemes figyelembe venni ezeket a funkciókra vonatkozó korlátozásokat.
 
 ## <a name="publish-to-the-power-bi-service"></a>Közzététel a Power BI szolgáltatásban
-A **DirectQuery** használatával létrehozott jelentések közzétehetők a Power BI szolgáltatásban.
+A DirectQuery használatával létrehozott jelentések közzétehetők a Power BI szolgáltatásban.
 
-Ha a használt adatforráshoz nem szükséges a **helyszíni adatátjáró** (**Azure SQL Database**, **Azure SQL Data Warehouse** vagy **Redshift**), meg kell adnia a hitelesítő adatokat, mielőtt a közzétett jelentés megjelenne a Power BI szolgáltatásban.
+Ha a használt adatforráshoz nem szükséges a **helyszíni adatátjáró** (**Azure SQL Database**, **Azure SQL Data Warehouse** vagy **Redshift**), hitelesítő adatokat kell megadnia ahhoz, hogy a Power BI szolgáltatás megjelenítse a közzétett jelentést. A hitelesítő adatok megadásához kövesse az alábbi utasításokat:
 
-A hitelesítő adatok megadásához kattintson a **Beállítások** fogaskerék ikonjára a Power BI-ban, majd válassza a **Beállítások** lehetőséget.
+1. Jelentkezzen be a [Power BI-ba](https://www.powerbi.com/).
+2. A Power BI szolgáltatásban válassza a **Beállítások** fogaskerék ikonját, majd a **Beállítások** menüpontot.
 
-![](media/desktop-use-directquery/directquery_3.png)
+    ![Beállítások, Power BI szolgáltatás](media/desktop-use-directquery/directquery_pbiservicesettings.png)
 
-A Power BI megjeleníti a **Beállítások** ablakot. Itt lépjen az **Adatkészletek** lapra, és válassza ki a **DirectQueryt** alkalmazó adatkészletet, majd kattintson a **Hitelesítő adatok szerkesztése** elemre.
+3. A Power BI szerkesztés **Beállítások** oldalán lépjen az **Adathalmazok** lapra, jelölje ki a DirectQueryt használó adathalmazt, majd válassza a **Hitelesítő adatok szerkesztése** lehetőséget.
 
-![](media/desktop-use-directquery/directquery_4.png)
+4. Vegye fel a hitelesítő adatokat. Ellenkező esetben hiba lép fel, amikor megnyitja a közzétett jelentést, vagy olyan adathalmaz kezel, amely DirectQuery-kapcsolattal lett létrehozva.
 
-A hitelesítő adatok megadásáig az ilyen adatforrásokra mutató **DirectQuery**-kapcsolaton keresztül közzétett jelentés megnyitása vagy adatkészlet feltárása hibát jelez.
-
-Az **Azure SQL Database**, az **Azure SQL Data Warehouse** és a **Redshift** kivételével a DirectQueryt használó minden adatforrás esetében telepítenie kell egy **helyszíni adatátjárót**, valamint regisztrálnia kell az adatforrást az adatkapcsolat kiépítéséhez. [A helyszíni adatátjárókkal itt talál további információt](https://go.microsoft.com/fwlink/p/?LinkID=627094).
+Adatkapcsolat kiépítéséhez az **Azure SQL Database**, az **Azure SQL Data Warehouse** és a **Redshift** kivételével a DirectQueryt használó minden adatforrás esetében telepítenie kell egy **helyszíni adatátjárót**, valamint regisztrálnia kell az adatforrást. További információ: [Mi az a helyszíni adatátjáró?](service-gateway-onprem.md)
 
 ## <a name="next-steps"></a>Következő lépések
-A **DirectQueryvel** kapcsolatos további információkért lásd az alábbi forrásanyagokat:
+Ha többet szeretne megtudni a DirectQueryről, tekintse át a következő forrásanyagokat:
 
-* [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
-* [A DirectQuery által támogatott adatforrások](desktop-directquery-data-sources.md)
-* [A DirectQuery és az SAP BW](desktop-directquery-sap-bw.md)
-* [A DirectQuery és az SAP HANA](desktop-directquery-sap-hana.md)
-* [On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)
-
+- [DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
+- [A DirectQuery által támogatott adatforrások](power-bi-data-sources.md)
+- [DirectQuery és SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
+- [DirectQuery és SAP HANA](desktop-directquery-sap-hana.md)
+- [Mi az a helyszíni adatátjáró?](service-gateway-onprem.md)

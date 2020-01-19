@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f7af1c584802181cab68f6ce2fc4823ec7078354
-ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
+ms.openlocfilehash: 7ce20b8b6dc382cdafe61bde3e9305197fd33ea6
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75523027"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762071"
 ---
-# <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Az Analysis Services táblázatos adatainak használata a Power BI Desktopban
+# <a name="connect-to-analysis-services-tabular-data-in-power-bi-desktop"></a>Csatlakozás az Analysis Services táblázatos adataihoz a Power BI Desktopban
 A Power BI Desktopban kétféleképpen érheti el és kérheti le az adatokat az SQL Server Analysis Services táblázatos modelljeiből: Élő kapcsolaton keresztüli feltárással vagy az elemek kiválasztásával és a Power BI Desktopba történő importálásával.
 
 Lássuk mindezt közelebbről.
@@ -31,7 +31,7 @@ A Power BI Desktopban létrehozott dinamikus jelentéseket másokkal is megoszth
 
 **Elemek kiválasztása és importálása a Power BI Desktopba** – Ha ezzel a lehetőséggel kapcsolódik, kiválaszthatja a táblázatos modell vagy perspektíva különféle elemeit, például táblákat, oszlopokat vagy mértékeket, és betöltheti azokat a Power BI Desktop-modellekbe. A Power BI Desktop fejlett lekérdezésszerkesztőjével tovább finomíthatja a lekérdezéseket, a Power BI Desktop modellezési funkcióival pedig tovább modellezheti az adatokat. A Power BI Desktop és a táblázatos modell közt nincs folyamatos élő kapcsolat. Offline is megvizsgálhatja a Power BI Desktop-modell részleteit, de közzé is teheti a modellt a Power BI-webhelyén.
 
-## <a name="to-connect-to-a-tabular-model"></a>Csatlakozás a táblázatos modellekhez
+## <a name="to-connect-to-a-tabular-model"></a>Csatlakozás táblázatos modellekhez
 1. A Power BI Desktopban kattintson a **Kezdőlapon** az **Adatok lekérése** gombra.
    
    ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata.png)
