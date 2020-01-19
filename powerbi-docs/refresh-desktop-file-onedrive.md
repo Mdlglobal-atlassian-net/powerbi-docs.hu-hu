@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/04/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 57bc7eed7e8e51463494e2c4f562dcdb1e6a88c9
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: ba911361ad2837a10f28358cbd1510effc1dd7eb
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699636"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837645"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>A OneDrive vagy a SharePoint Online szolgáltatásban tárolt adatkészletek frissítése
 A fájlok importálása a OneDrive vagy a SharePoint Online szolgáltatásból a Power BI szolgáltatásba nagyszerű mód annak biztosítására, hogy a Power BI Desktopban végzett munkája szinkronban maradjon a Power BI szolgáltatással.
@@ -35,6 +35,9 @@ Az adathalmaz frissítésekor a Power BI nem csatlakozik a OneDrive vagy a Share
 
 ## <a name="whats-supported"></a>Mi támogatott?
 A Power BI-ban a **Frissítés** és a **Frissítés ütemezése** támogatott a helyi meghajtóról importált Power BI Desktop fájlokból létrehozott adathalmazok esetében, ahol a következő adatforrásokhoz való csatlakozás, illetve az azokról való adatbetöltés **Adatok lekérése** vagy a **Lekérdezésszerkesztő** használatával történik.
+
+> [!NOTE]
+> A OneDrive támogatja az importált fájlokat, azonban a OneDrive élő kapcsolattal rendelkező adatkészletei nem támogatottak OneDrive-beli frissítési forgatókönyvként.
 
 ### <a name="power-bi-gateway---personal"></a>Személyes Power BI-átjáró
 * A Power BI Desktop **Adatok lekérése** és **Lekérdezésszerkesztő** területein látható összes online adatforrás.

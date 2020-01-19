@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1ad0c7d2a3c3d21d8ccb81354bdc03d845b61f58
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8b9f1fc618e30d93da36b28f710dbd33f8125054
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876053"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759314"
 ---
-# <a name="create-and-use-a-what-if-parameter-to-visualize-variables-in-power-bi-desktop"></a>Lehetőségelemzési paraméter létrehozása és használata változók vizualizációjához a Power BI Desktopban
+# <a name="create-and-use-what-if-parameters-to-visualize-variables-in-power-bi-desktop"></a>Lehetőségelemzési paraméter létrehozása és használata változók vizualizációjához a Power BI Desktopban
 A **Power BI Desktop** 2018. augusztusi kiadásától kezdve létrehozhat **Lehetőségelemzési** változókat a jelentésekhez, szeletelőként dolgozhat a változókkal, valamint megjelenítheti és számszerűsítheti a jelentésekben szereplő különböző kulcsértékeket.
 
 ![](media/desktop-what-if/what-if_01.png)

@@ -3,179 +3,81 @@ title: Vizualizációk a Power BI-ban
 description: Egyéni vizualizációk a Power BI-ban
 author: KesemSharabi
 ms.author: kesharab
+manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 01/03/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1d176941f04bdaf06c9cdeda65271769098268fb
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.openlocfilehash: 897590324040a69dbaa1ac549dcee80de8da76a5
+ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "74999813"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691408"
 ---
 # <a name="visuals-in-power-bi"></a>Vizualizációk a Power BI-ban
 
-Power BI-jelentések létrehozása vagy szerkesztése során számos különböző vizualizációtípust használhat. Ezeknek a vizualizációknak az ikonjai a **Vizualizációk** panelen jelennek meg. Ezek a vizualizációk azonnal elérhetők a [Power BI Desktop](https://powerbi.microsoft.com/desktop/) letöltésekor vagy a [Power BI szolgáltatás](https://app.powerbi.com) megnyitásakor.
+A Power BI számos használatra kész Power BI-vizualizációt tartalmaz. Ezek a [Power BI Desktop](https://powerbi.microsoft.com/desktop/) és a [Power BI szolgáltatás](https://app.powerbi.com) vizualizációinak paneljén érhetők el, és segítségükkel Power BI-tartalmak hozhatók létre és szerkeszthetők.
 
 ![vizualizációk](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
-Azonban nem csupán ezek a vizualizációk állnak rendelkezésére. Ha az alsó **További lehetőségek** (...) elemet választja, elérhetővé válik a jelentésvizualizációk egy másik forrása – a *Power BI-vizualizációk*.
+A Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) vagy a Power BI szolgáltatáson keresztül számos további Power BI-vizualizációt elérhet. Ezeket a Microsoft és a Microsoft partnerei hozzák létre, majd az AppSource ellenőrzési csapata teszteli és ellenőrzi.
 
-A fejlesztők a Power BI-vizualizációk SDK-val hozzák létre ezeket a vizualizációkat. Ezekkel a vizualizációkkal az üzleti felhasználók az üzletüknek leginkább megfelelő módon jeleníthetik meg adataikat. A jelentéskészítők importálhatják az egyéni vizualizációkat a jelentéseikbe, és azokat a többi Power BI-vizualizációhoz hasonlóan használhatják. A Power BI-vizualizációk kiemelt helyet élveznek a Power BI szolgáltatáson belül, így szűrhetők, kiemelhetők, szerkeszthetők, megoszthatók és egyéb műveletekkel használhatók.
+Saját Power BI-vizualizációt is fejleszthet, amelyet Ön, szervezete vagy a teljes- Power BI-közösség használhat.
 
-A Power BI-vizualizációk terjesztésének három módja van:
+## <a name="default-power-bi-visuals"></a>Alapértelmezett Power BI-vizualizációk
 
-* Egyéni vizualizációfájlok
-* Szervezeti vizualizációk
-* Piactér-vizualizációk
+Ezek a *Power BI Desktop* és *Power BI szolgáltatás* vizualizációs paneljén elérhető, használatra kész Power BI-vizualizációk.
 
-## <a name="custom-visual-files"></a>Egyéni vizualizációfájlok
+Ha meg szeretné szüntetni egy Power BI-vizualizáció rögzítését a vizualizációs panelen, kattintson a jobb gombbal, majd válassza a **rögzítés feloldása** lehetőséget.
+
+A vizualizációs panel alapértelmezett Power BI-vizualizációinak helyreállításához kattintson az **Egyéni vizualizáció importálása**, majd az **Alapértelmezett vizualizációk visszaállítása** lehetőségre. 
+
+## <a name="appsource-power-bi-visuals"></a>Az AppSource Power BI-vizualizációi
+
+A Microsoft, valamint a közösség tagjai is nyilvánosan megosztották Power BI-vizualizációikat az [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) felületén. Ezeket a vizualizációkat Ön is letöltheti, és hozzáadhatja Power BI-jelentéseihez. Ezeket a Power BI-vizualizációkat a Microsoft tesztelte, és működés és minőség szempontjából is jóváhagyta.
+
+### <a name="what-is-appsource"></a>Mi az az AppSource?
+
+Az [AppSource](office-store.md) az a hely, ahol a Microsoft-szoftverekhez alkalmazásokat, beépülő modulokat és bővítményeket találhat. Az AppSource többek között az Office 365, az Azure, a Dynamics 365, Cortana és a Power BI több millió felhasználóját köti össze olyan megoldásokkal, amelyekkel minden eddiginél hatékonyabban, mélyebb betekintéssel és látványosabban dolgozhatnak.
+
+### <a name="certified-power-bi-visuals"></a>Minősített Power BI-vizualizációk
+
+A minősített Power BI-vizualizációk azok az [AppSource-on](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) lévő vizualizációk, amelyek megfelelnek bizonyos, a Microsoft Power BI csapata által jóváhagyott és tesztelt kódolási előírásoknak. A tesztek rendeltetése annak ellenőrzése, hogy a vizualizáció nem kapcsolódik külső szolgáltatásokhoz vagy erőforrásokhoz.
+
+A minősített Power BI-vizualizációk listájának megtekintéséhez vagy saját vizualizáció közzétételéhez lásd a [minősített Power BI-vizualizációkat](power-bi-custom-visuals-certified.md) ismertető szakaszt.
+
+### <a name="samples-for-power-bi-visuals"></a>Minták a Power BI-vizualizációkhoz
+
+Az AppSource minden Power BI-vizualizációjához tartozik egy adatminta, amely bemutatja a vizualizáció működését. A mint letöltéséhez az [AppSource-ban](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) válasszon ki egy Power BI-vizualizációt, majd a *Minta kipróbálása* szakaszban kattintson a **mintajelentés** hivatkozásra.
+
+## <a name="organizational-store"></a>Szervezeti tároló
+
+A Power BI-rendszergazdák hagyják jóvá és helyezik üzembe a Power BI-vizualizációkat szervezetükben. A jelentéskészítők így könnyen felfedezhetik, frissíthetik és használhatják ezeket a Power BI-vizualizációkat. A rendszergazdák könnyen kezelhetik ezeket a vizualizációkat olyan műveletekkel, mint a verziófrissítés, vagy a Power BI-vizualizációk ki- és bekapcsolása.
+
+A szervezeti tároló eléréséhez a *Vizualizáció* panelen kattintson az **Egyéni vizualizáció importálása** lehetőségre, válassza az **Importálás a piactérről** elemet, majd a *Power BI-vizualizációk* ablak tetején válassza ki a **Saját szervezet** lapot.
+
+[További információk a vállalati vizualizációkról](power-bi-custom-visuals-organization.md).
+
+## <a name="visual-files"></a>Vizualizációfájlok
 
 A Power BI-vizualizációk olyan csomagok, amelyek a nekik szolgáltatott adatok rendereléséhez szükséges kódot tartalmazzák. Egyéni vizualizációt bárki létrehozhat, valamint becsomagolhatja azt `.pbiviz`-fájlként, amelyet aztán egy Power BI-jelentésbe importálhat.
 
+Power BI-vizualizáció importálásához a *Vizualizáció* panelen kattintson az **Egyéni vizualizáció importálása** lehetőségre, majd válassza az **Importálás fájlból** elemet.
+
+Ha Ön webfejlesztő, és saját vizualizációt szeretne létrehozni, majd az AppSource-hoz adni, megtanulhatja, hogyan [fejleszthet Power BI-vizualizációt](visuals/custom-visual-develop-tutorial.md) és [tehet közzé Power BI-vizualizációkat az AppSource-on](office-store.md).
+
 > [!WARNING]
-> Az egyéni vizualizációk biztonsági és adatvédelmi kockázatokat tartalmazó kódot is tartalmazhatnak. Fontolja meg, hogy megbízik-e a szerzőben és az egyéni vizualizációban, mielőtt importálná azt a jelentésébe.
-
-## <a name="organizational-visuals"></a>Szervezeti vizualizációk
-
-A Power BI-rendszergazdák jóváhagyhatják és telepíthetik vállalatuknál a Power BI-vizualizációkat, amelyeket a jelentéskészítők egyszerűen felfedezhetnek, módosíthatnak és használhatnak. A rendszergazdák számára is egyszerű ezeknek a vizualizációknak a kezelése (például verziófrissítés, letiltás/engedélyezés).
-
- [További információk a vállalati vizualizációkról](power-bi-custom-visuals-organization.md).
-
-## <a name="marketplace-visuals"></a>Piactér-vizualizációk
-
-A közösség tagjai mellett a Microsoft is nyilvánosan megosztotta Power BI-vizualizációit az [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) piactéren. Ezeket a vizualizációkat Ön is letöltheti, és hozzáadhatja Power BI-jelentéseihez. Ezeket a Power BI-vizualizációkat a Microsoft tesztelte, és működés és minőség szempontjából is jóváhagyta.
-
-Mi az az [AppSource](office-store.md)? Az a hely, ahol a Microsoft-szoftverekhez alkalmazásokat, beépülő modulokat és bővítményeket találhat. Az AppSource többek között az Office 365, az Azure, a Dynamics 365 és a Power BI több millió felhasználóját köti össze olyan megoldásokkal, amelyekkel minden eddiginél hatékonyabban, részletgazdagon és látványosan dolgozhatnak.
-
-### <a name="certified-visuals"></a>Hitelesített vizualizációk
-
-A Power BI-minősítéssel rendelkező vizualizációk olyan vizualizációk, amelyek a piactéren érhetők el, további szigorú minőségteszteken feleltek meg, és további forgatókönyvek, például [e-mailes előfizetések](../service-report-subscribe.md) és [PowerPointba történő exportálás](../consumer/end-user-powerpoint.md) esetén is támogatottak.
-A minősített Power BI-vizualizációk listájának megtekintéséhez vagy saját vizualizáció közzétételéhez lásd a [minősített Power BI-vizualizációkat](power-bi-custom-visuals-certified.md) ismertető szakaszt.
-
-Ön olyan webfejlesztő, aki szeretne saját vizualizációkat létrehozni, és hozzáadni azokat az AppSource-hoz? Az [Egyéni Power BI-vizualizáció fejlesztése](visuals/custom-visual-develop-tutorial.md) című cikkből megtudhatja, hogyan [tehet közzé egyéni vizualizációkat az AppSource-on](office-store.md).
-
-### <a name="import-a-custom-visual-from-a-file"></a>Egyéni vizualizáció importálása fájlból
-
-1. Válassza a **Vizualizációk** panel alján található három pontot.
-
-    ![Vizualizációk2](media/power-bi-custom-visuals/power-bi-visualizations2.png)
-
-2. A legördülő listából válassza az **Importálás fájlból** lehetőséget.
-
-    ![Importálás fájlból](media/power-bi-custom-visuals/power-bi-custom-visual-import-from-file.png)
-
-3. A **Fájl megnyitása** menüben válassza ki az importálni kívánt `.pbiviz`-fájlt, majd válassza a **Megnyitás** lehetőséget. Az egyéni vizualizáció ikonja ekkor megjelenik a **Vizualizációk** panel alján, és már használhatja is a jelentésben.
-
-    ![Importált egyéni vizualizáció](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
-
-### <a name="import-organizational-visuals"></a>Szervezeti vizualizációk importálása
-
-1. Válassza a **Vizualizációk** panel alján található három pontot.
-
-    ![1\. szervezeti vizualizáció](media/power-bi-custom-visuals/power-bi-visual-org-01.png)
-
-2. A legördülő listából válassza az **Importálás a piactérről** lehetőséget.
-
-    ![2\. szervezeti vizualizáció](media/power-bi-custom-visuals/power-bi-visual-org-02.png)
-
-3. Válassza a **SAJÁT SZERVEZET** lehetőséget a felső lap menüjében.
-
-    ![3\. szervezeti vizualizáció](media/power-bi-custom-visuals/power-bi-visual-org-03.png)
-
-4. Tekintse át a listát, és keresse meg az importálni kívánt vizualizációt.
-
-    ![4\. szervezeti vizualizáció](media/power-bi-custom-visuals/power-bi-visual-org-04.png)
-
-5. Az egyéni vizualizáció importálásához válassza a **Hozzáadás** parancsot. Az ikonja ekkor megjelenik a **Vizualizációk** panel alján, és már használhatja is a jelentésben.
-
-    ![5\. szervezeti vizualizáció](media/power-bi-custom-visuals/power-bi-visual-org-05.png)
-
-## <a name="download-or-import-power-bi-visuals-from-microsoft-appsource"></a>Power BI-vizualizáció letöltése vagy importálása a Microsoft AppSource-ról
-
-A Power BI-vizualizációk letöltésének és importálásának két módja van. Megteheti ezt a Power BI-on belülről és az [AppSource webhelyről](https://appsource.microsoft.com/).
-
-### <a name="import-power-bi-visuals-from-within-power-bi"></a>Power BI-vizualizációk beszerzése a Power BI-on belül
-
-1. Válassza a **Vizualizációk** panel alján található három pontot.
-
-    ![Vizualizációk 2](media/power-bi-custom-visuals/power-bi-visualizations2.png)
-
-2. A legördülő listából válassza az **Importálás a piactérről** lehetőséget.
-
-    ![2\. szervezeti vizualizáció](media/power-bi-custom-visuals/power-bi-visual-org-02.png)
-
-3. Tekintse át a listát, és keresse meg az importálni kívánt vizualizációt.
-
-    ![vizualizáció importálása](media/power-bi-custom-visuals/power-bi-import-visual.png)
-
-4. Az egyes vizualizációk kijelölésével további információkat tudhat meg róluk.
-
-    ![Kiválasztás](media/power-bi-custom-visuals/power-bi-select.png)
-
-5. A részletek lapon többek között képernyőképeket, videókat és részletes leírásokat tekinthet meg.
-
-    ![Synoptic](media/power-bi-custom-visuals/power-bi-synoptic.png)
-
-6. A képernyő alján értékelések is találhatók.
-
-    ![Értékelések](media/power-bi-custom-visuals/power-bi-reviews.png)
-
-7. Az egyéni vizualizáció importálásához válassza a **Hozzáadás** parancsot. Az ikonja ekkor megjelenik a **Vizualizációk** panel alján, és már használhatja is a jelentésben.
-
-    ![Importált vizualizáció](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
-
-### <a name="download-and-import-power-bi-visuals-from-microsoft-appsource"></a>Power BI-vizualizáció letöltése és importálása a Microsoft AppSource-ról
-
-1. A [Microsoft AppSource](https://appsource.microsoft.com) webhelyről kiindulva válassza az **Alkalmazások** lapot.
-
-    ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
-
-2. Látogasson el az [Alkalmazások találatainak oldalára](https://appsource.microsoft.com/marketplace/apps), ott megtekintheti az egyes kategóriák legnépszerűbb alkalmazásait, beleértve a *Power BI-alkalmazásokat*. Power BI-vizualizációkat keresünk, ezért szűkítse az eredményeket a navigációs panel listájában található **Power BI-vizualizációk** lehetőség kiválasztásával.
-
-    ![AppSource-vizualizációk](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
-
-3. Az AppSource minden egyes egyéni vizualizációhoz megjelenít egy csempét.  Minden csempe tartalmaz egy pillanatképet az egyéni vizualizációról, illetve egy rövid leírást és egy letöltési hivatkozást. További részletekért kattintson a csempére.
-
-    ![Egyén vizualizáció kiválasztása](media/power-bi-custom-visuals/powerbi-custom-select-visual.png)
-
-4. A részletek lapon többek között képernyőképeket, videókat és részletes leírásokat tekinthet meg. Az egyéni vizualizáció letöltéséhez kattintson a **Letöltés most** hivatkozásra, és fogadja el a használati feltételeket.
-
-    ![Letöltés az AppSource-ból](media/power-bi-custom-visuals/power-bi-appsource-get.png)
-
-5. Kattintson az egyéni vizualizáció letöltési hivatkozására.
-
-    ![Letöltés](media/power-bi-custom-visuals/powerbi-custom-download.png)
-
-    A letöltési oldal az egyéni vizualizációnak a Power BI Desktopba és a Power BI szolgáltatásba történő importálásával kapcsolatos útmutatást is tartalmaz.
-
-    Egy mintajelentést is letölthet, amely tartalmazza az egyéni vizualizációt, és bemutatja annak képességeit.
-
-    ![Minta kipróbálása](media/power-bi-custom-visuals/powerbi-custom-try-sample.png)
-
-6. Mentse a `.pbiviz`-fájlt, majd nyissa meg a Power BI-t.
-
-7. Importálja a `.pbiviz`-fájlt a jelentésbe. (Lásd a fenti [Egyéni látványelem importálása](#import-a-custom-visual-from-a-file) szakaszt.)
-
-## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
-
-* Az egyéni vizualizáció az importálásakor az adott jelentéshez lesz hozzáadva. Ha egy másik jelentésben is használni szeretné a vizualizációt, abba a jelentésbe is importálnia kell. Ha egy egyéni vizualizációval rendelkező jelentést a **Mentés másként** lehetőséggel ment, az új jelentéssel együtt az egyéni vizualizáció egy másolata is mentve lesz.
-
-* Ha nem látja a **Vizualizációk** panelt, akkor nem rendelkezik a jelentés szerkesztéséhez szükséges engedélyekkel.  Csak azokhoz a jelentésekhez adhat hozzá Power BI-vizualizációkat, amelyek szerkesztésére jogosult, az Önnel csak megosztott jelentésekhez nem.
-
-## <a name="troubleshoot"></a>Hibaelhárítás
-
-A hibaelhárításról a [Power BI-vizualizációk hibaelhárítása](power-bi-custom-visuals-troubleshoot.md) című cikkből tájékozódhat.
-
-## <a name="faq"></a>Gyakori kérdések
-
-További információt és válaszokat [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals) között talál.
+> A Power BI-vizualizációk biztonsági és adatvédelmi kockázatokat tartalmazó kódot is tartalmazhatnak. Fontolja meg, hogy megbízik-e a szerzőben és a Power BI-vizualizációban, mielőtt importálná azt a jelentésébe.
 
 ## <a name="next-steps"></a>Következő lépések
 
-* [Vizualizációk Power BI-jelentésekben](../visuals/power-bi-report-visualizations.md)
+* Ha Ön fejlesztő, elsőként tekintse meg a [Power BI-vizualizációk fejlesztésének](./visuals/custom-visual-develop-tutorial.md) útmutatóját.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
+* Megtudhatja, [hogyan vannak strukturálva a Power BI-vizualizációk](./visuals/visual-project-structure.md).
+
+* A [Power BI-vizualizációk útmutatójának](guidelines-powerbi-visuals.md) feltárása.
+
+További kérdései vannak? További információt [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md) oldalán vagy a [Power BI-közösségben](http://community.powerbi.com/) találhat.

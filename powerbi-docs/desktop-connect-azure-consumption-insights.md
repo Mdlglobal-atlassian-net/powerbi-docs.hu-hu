@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4125ff59f32de8453fe131685f0a05e1c45220c3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: c6987c5849fd2f971c1d7bdc7fe6130dcd09ce59
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "73876531"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761726"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Kapcsolódás Azure Consumption Insights-adatokhoz a Power BI Desktopban
 
@@ -192,23 +192,23 @@ Az Azure Portalbeli oszlopok és részletek nevei hasonlóak az API-ban és az �
 | ConsumedServiceId |consumedServiceId | |Igen |
 | Cost |cost |ExtendedCost |Nem |
 | Cost Center |costCenter |Cost Center |Nem |
-| Date |date |Date |Nem |
-| Day | |Day |Nem |
+| Dátum |date |Dátum |Nem |
+| Nap | |Nap |Nem |
 | DepartmentName |departmentName |Department Name |Nem |
 | DepartmentID |departmentId | |Igen |
 | Instance ID | | |Igen |
 | InstanceId |instanceId |Instance ID |Nem |
-| Location | | |Igen |
+| Hely | | |Igen |
 | Meter Category |meterCategory |Meter Category |Nem |
 | Meter ID | | |Igen |
-| Meter Name |meterName |Meter Name |Nem |
+| Mérő neve |meterName |Meter Name |Nem |
 | Meter Region |meterRegion |Meter Region |Nem |
 | Meter Sub-Category |meterSubCategory |Meter Sub-Category |Nem |
 | MeterId |meterId |Meter ID |Nem |
-| Month | |Month |Nem |
-| Product |product |Product |Nem |
+| Hónap | |Hónap |Nem |
+| Termék |product |Termék |Nem |
 | ProductId |productId | |Igen |
-| Resource Group |resourceGroup |Resource Group |Nem |
+| Erőforráscsoport |resourceGroup |Resource Group |Nem |
 | Resource Location |resourceLocation |Resource Location |Nem |
 | ResourceGroupId | | |Igen |
 | ResourceLocationId |resourceLocationId | |Igen |
@@ -220,11 +220,11 @@ Az Azure Portalbeli oszlopok és részletek nevei hasonlóak az API-ban és az �
 | ServiceInfo2Id | | |Igen |
 | Store Service Identifier |storeServiceIdentifier |Store Service Identifier |Nem |
 | StoreServiceIdentifierId | | |Igen |
-| Subscription Name |subscriptionName |Subscription Name |Nem |
-| Tags |tags |Tags |Nem |
+| Előfizetés neve |subscriptionName |Subscription Name |Nem |
+| Címkék |tags |Tags |Nem |
 | TagsId | | |Igen |
 | Unit Of Measure |unitOfMeasure |Unit Of Measure |Nem |
-| Year | |Year |Nem |
+| Év | |Év |Nem |
 | SubscriptionId |subscriptionId |SubscriptionId |Igen |
 | SubscriptionGuid |subscriptionGuid |SubscriptionGuid |Nem |
 

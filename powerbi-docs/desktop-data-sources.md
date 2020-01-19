@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/25/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0f24675d4185efd7524d9e8c453c919d64e0364a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: fd25e4ca6357dbfa5954eeabe0bf97fb6ccb8a1c
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75222146"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761364"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 
@@ -30,6 +30,10 @@ A **Továbbiak...** lehetőség a **Leggyakoribb** menüből való kiválasztás
 
 > [!NOTE]
 > A Power BI csapata folyamatosan bővíti a **Power BI Desktop** és a **Power BI szolgáltatás** számára elérhető adatforrásokat. Ezért gyakran láthatja majd a fejlesztés alatt álló adatforrások előzetes verzióit *bétaverzió* vagy *előzetes verzió* felirattal. A *bétaverzió* vagy *előzetes verzió* felirattal ellátott adatforrások támogatása és működése korlátozott, használatuk éles környezetben nem ajánlott. Emellett a **Power BI Desktophoz***Béta* vagy *Előzetes verzióként* megjelölt adatforrások nem feltétlenül használhatók a **Power BI szolgáltatásban** vagy más Microsoft-szolgáltatásban, amíg az adatforrás általánosan elérhető nem lesz.
+
+> [!NOTE]
+> A Power BI Desktophoz számos olyan adatösszekötő érhető el, amelyek hitelesítéséhez az Internet Explorer 10 vagy újabb verziójára van szükség. 
+
 
 ## <a name="data-sources"></a>Adatforrások
 Az adattípusok a következő kategóriákba vannak csoportosítva:

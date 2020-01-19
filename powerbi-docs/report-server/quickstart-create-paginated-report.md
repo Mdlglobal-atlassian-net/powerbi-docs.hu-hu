@@ -6,16 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/22/2018
+ms.date: 01/07/2020
 ms.author: maggies
-ms.openlocfilehash: b8dd79e4b256a80ba5159a1b3980e798bc611840
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4c4228ea4276235a983849d2ea88e1030f4690f7
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875036"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75732038"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Többoldalas jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz
+Ebben a cikkben létrehozhat egy lapszámozott jelentést a Power BI jelentéskészítő kiszolgálóhoz néhány egyszerű lépésben.
+
+Segítségre van szüksége a lapszámozott jelentések a Power BI Jelentéskészítőben való létrehozásához? Lásd: [A Power BI lapszámozott jelentéskészítője](../report-builder-power-bi.md).
+
 Mint ahogyan az elnevezés is sugallja, a többoldalas jelentések egyszerre több oldalon is átnyúlhatnak. Az elrendezésük rögzített formátumban történik, és precíz testreszabási lehetőségeket biztosítanak. A többoldalas jelentések .rdl-fájlok.
 
 A többoldalas jelentéseket a Power BI jelentéskészítő kiszolgáló webportálján és az SQL Server Reporting Services (SSRS) webportálján tárolhatja és kezelheti. Létrehozhatja őket a Jelentéskészítőben vagy az SQL Server Data Tools (SSDT) eszközkészletben található Jelentéstervező használatával, majd közzéteheti őket az egyiknek a webportálján. Ekkor a jelentések megtekinthetővé válnak a cégen belüli olvasók számára egy böngészőben, vagy a Power BI mobilalkalmazás használatával a mobileszközeiken.
@@ -24,7 +28,7 @@ A többoldalas jelentéseket a Power BI jelentéskészítő kiszolgáló webport
 
 Ha már hozott létre többoldalas jelentéseket a Jelentéskészítőben vagy a Jelentéstervezőben, akkor készen áll arra, hogy a Power BI jelentéskészítő kiszolgálóra is létrehozzon ilyen jelentéseket. Ha még nem hozott létre ilyeneket, akkor néhány gyors lépésben felkészülhet rá.
 
-## <a name="step-1-install-and-start-report-builder"></a>1\. lépés: Töltse le és indítsa el a Jelentéskészítőt
+## <a name="step-1-start-report-builder"></a>1\. lépés: A Jelentéskészítő indítása
 Lehet, hogy korábban már telepítette a Jelentéskészítőt, hogy jelentéseket hozzon létre egy SSRS-kiszolgálóra. Használhatja ugyanezt a verziójú Jelentéskészítőt arra is, hogy a Power BI jelentéskészítő kiszolgálóra hozzon létre jelentéseket. Ha még nem telepítette, akkor ezt egyszerűen megteheti.
 
 1. A Power BI jelentéskészítő kiszolgáló webportálján válassza az **New** (Új) > **Paginated Report** (Többoldalas jelentés) lehetőséget.

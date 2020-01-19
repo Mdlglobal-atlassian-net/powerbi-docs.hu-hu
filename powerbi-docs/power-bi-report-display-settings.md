@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: cc2ddd0b6fbd0b621c07056ed4b525f66d81319c
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 6aefe879e6d5871c8f88ac15407038aa600bf980
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265867"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762508"
 ---
-# <a name="page-display-settings-in-a-power-bi-report"></a>Oldal megjelenítési beállításai Power BI-jelentésben
+# <a name="apply-page-display-settings-in-a-power-bi-report"></a>Oldalmegjelenítési beállítások alkalmazása egy Power BI-jelentésben
 Tudjuk, milyen fontos, hogy jelentéseinek elrendezése az utolsó képpontig tökéletes legyen. Ez azonban olykor kihívást jelenthet, ugyanis Ön és a munkatársai a jelentéseket esetleg különböző méretű és méretarányú képernyőkön tekintik meg. 
 
 Az alapértelmezett megjelenítési nézet a **Laphoz igazítás**, az alapértelmezett méretarány pedig a **16:9**-es. Ha a jelentést egy másik méretarányban szeretné zárolni, vagy máshogyan szeretné igazítani, akkor ehhez két eszköz áll rendelkezésére: Az ***Oldal nézet*** beállításai és az ***Oldalméret***-beállítások.

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 31e2e681bc4309e5dce31583e70e669bce5e466f
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 3e6de89f66d6f6282fcde25a1d2be445e2721817
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877239"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762186"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi"></a>Entitások csatolása adatfolyamok között a Power BI-ban
 
@@ -81,6 +81,7 @@ A csatolt entitásokkal végzett munka során tekintetbe kell venni néhány kor
 * Csatolt entitások körkörös függősége nem megengedett
 * Az adatfolyamnak [új Power BI-munkaterületen](service-create-the-new-workspaces.md) kell elhelyezkednie
 * A csatolt entitás nem kapcsolható össze olyan hagyományos entitással, amely helyszíni adatforrásból szerzi be az adatokat
+* Amikor egy lekérdezést (például az „A” lekérdezést) használ egy másik lekérdezés („B” lekérdezés) kiszámításához az adatfolyamokban, a „B” lekérdezés számított entitássá válik. A számított entitások nem hivatkozhatnak helyszíni erőforrásokra.
 
 
 ## <a name="next-steps"></a>Következő lépések

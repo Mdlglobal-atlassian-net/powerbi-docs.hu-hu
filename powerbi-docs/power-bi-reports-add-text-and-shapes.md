@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3da18269817ef89dfff9524c8875814430bc6cce
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b90bfd9482e28faa8d9dfb0d089ca07656663b53
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874446"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762462"
 ---
-# <a name="text-boxes-and-shapes-in-power-bi-reports"></a>Szövegdobozok és alakzatok a Power BI-jelentésekben
+# <a name="add-text-boxes-and-shapes-to-power-bi-reports"></a>Szövegdobozok és alakzatok hozzáadása Power BI-jelentésekhez
 A Power BI szolgáltatás és a Power BI Desktop használatával szövegdobozokat és alakzatokat adhat jelentésekhez. Mindkét esetben a jelentésre vonatkozó szerkesztési jogosultsággal kell rendelkeznie. Ha a jelentést megosztották Önnel a Power BI szolgáltatásban, akkor nem rendelkezik hozzá szerkesztési jogosultsággal. 
 
 Figyelje meg, hogyan használja Will a Power BI Desktopot, hogy [statikus képeket adjon egy jelentéshez](/learn/modules/visuals-in-power-bi/12-formatting), majd az alábbi lépéseket használva próbálja meg ugyanezt elvégezni a Power BI szolgáltatás használatával.

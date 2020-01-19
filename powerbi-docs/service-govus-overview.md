@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 64e9ff8f4952abe79a62b6b805596554b32aa6c9
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: f14734f168abca1003bd5b6c773c4c70daf53d15
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265454"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762094"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI az USA kormányzati ügyfelei számára
 A **Power BI szolgáltatás** külön verziója érhető el az USA kormányzati ügyfeleinek az **egyesült államokbeli Office 365-közösségi** előfizetések részeként. A jelen cikkben a **Power BI szolgáltatás** kifejezetten az USA kormányzati ügyfeleinek készült verzióját tárgyaljuk, amely elkülönül és különbözik a **Power BI szolgáltatás** kereskedelmi verziójától.
@@ -40,7 +40,7 @@ A **Power BI US Government**-ügyfelek a következő funkciókat érhetik el, mi
 
 ## <a name="connectivity-between-government-and-global-azure-cloud-services"></a>Kapcsolat a kormányzati és a globális Azure-felhőszolgáltatások között 
 
-Az Azure több felhő között elosztva működik. Alapértelmezés szerint a bérlő megnyithat tűzfalszabályokat egy felhőspecifikus példányhoz, a felhők közötti kapcsolódás azonban másféle jellegű, és meghatározott tűzfalszabályokat kell megnyitni ahhoz, hogy a szolgáltatások között sikeres kommunikáció történjen. Ha Ön Power BI-ügyfélként a nyilvános felhőben meglévő SQL-példányait szeretné elérni, akkor az SQL-ben meghatározott tűzfalszabályokat kell megnyitnia az Azure Government Cloud IP-tartományban az alábbi adatközpontokhoz:
+Az Azure több felhő között van elosztva. Alapértelmezés szerint a bérlő megnyithat tűzfalszabályokat egy felhőspecifikus példányhoz, a felhők közötti kapcsolódás azonban másféle jellegű, és meghatározott tűzfalszabályokat kell megnyitni ahhoz, hogy a szolgáltatások között sikeres kommunikáció történjen. Ha Ön Power BI-ügyfélként a nyilvános felhőben meglévő SQL-példányait szeretné elérni, akkor az SQL-ben meghatározott tűzfalszabályokat kell megnyitnia az Azure Government Cloud IP-tartományban az alábbi adatközpontokhoz:
 
 * USGov Iowa
 * USGov Virginia
@@ -50,7 +50,7 @@ Az Azure több felhő között elosztva működik. Alapértelmezés szerint a b�
 A nyilvános felhőben elérhetők az IP-tartományok. A kormányzati felhővel kapcsolatos legfrissebb információkat az [Azure kormányzati szolgáltatás letölthető dokumentációjában](https://www.microsoft.com/download/details.aspx?id=57063) találja meg.
 
 ## <a name="limitations-of-power-bi-us-government"></a>A Power BI US Government korlátozásai
-A **Power BI szolgáltatás** kereskedelmi verziójában elérhető egyes funkciók az USA kormányzati ügyfelek számára nyújtott **Power BI szolgáltatásban** *nem* elérhetők. A Power BI csapata folyamatosan dolgozik, hogy ezeket a funkciókat az USA kormányzati ügyfelek számára is elérhetővé tegye, és frissíteni fogja ezt a cikket, amikor a funkciók elérhetővé válnak.
+A **Power BI szolgáltatás** kereskedelmi verziójában elérhető egyes funkciók az USA kormányzati ügyfelek számára nyújtott **Power BI szolgáltatásban***nem* elérhetők. A Power BI csapata folyamatosan dolgozik, hogy ezeket a funkciókat az USA kormányzati ügyfelek számára is elérhetővé tegye, és frissíteni fogja ezt a cikket, amikor a funkciók elérhetővé válnak.
 
 * **Beágyazás SharePoint Online-ba** – a Power BI-kijelzővel nem ágyazhatók be tartalmak a SharePoint Online-ba. A biztonságos beágyazás azonban működik az [*Embed* kijelzővel](https://docs.microsoft.com/power-bi/service-embed-secure). Hozzá kell adnia az *app.powerbigov.us* címet a kivételek listájához, amit a [Tartalom SharePoint-oldalakon való beágyazásának engedélyezése vagy korlátozása](https://support.office.com/article/allow-or-restrict-the-ability-to-embed-content-on-sharepoint-pages-e7baf83f-09d0-4bd1-9058-4aa483ee137b) című cikk útmutatásával tehet meg.
 * A **Power BI US Government** csak **Pro licenccel** érhető el. Felügyeleti portálon (vagy felhasználók által) Power BI (ingyenes) licencre tett bármilyen hivatkozás egy kereskedelmi Power BI szolgáltatásfelhőben fut.
@@ -59,6 +59,7 @@ A **Power BI szolgáltatás** kereskedelmi verziójában elérhető egyes funkci
 * **Használati metrikák irányítópultokhoz és jelentésekhez** – jelentésekhez és irányítópultokhoz nem érhetők el használati metrikák. A cégen belüli tartalmak használatáról az auditnaplók adataiból lehetséges használatra vonatkozó információt szerezni.
 * **Adatfolyamok** – Az adatfolyamok nem érhetők el.
 * **Oldalakra osztott jelentések** – az oldalakra osztott jelentések jelenleg csak a USGov Virginia régióban érhetők el.  Tervezzük a USGov Texas régió támogatását, de ez még nem érhető el.
+* Power BI-tartalmak Kormányzati közösségi felhőből (GCC-ből) csak Office 365 SKU-val ágyazhatók be. A GCC High ügyfelei [Office 365 vagy Azure SKU-t](developer/embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365) használhatnak.
 
 Ha fiókjához **Power BI** ingyenes licencek vannak társítva, akkor a fiók a **Power BI** szolgáltatás kereskedelmi verzióját futtatja, és nem tartozik a **Power BI US Government** ajánlat hatálya alá. Ilyen ingyenes fiók esetén a következő problémákba ütközhet:
 

@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 16af5a6c8b5341067c458329c68da0a1a0fe14a5
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 2dca4094ed0c21c421aa2fef89353e6f210b3ea4
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311470"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761479"
 ---
-# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Jelentések optimalizálása a Power BI-mobilalkalmazásokhoz
+# <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Power BI-jelentések optimalizálása mobilalkalmazásokhoz
 Álló elrendezés létrehozásával javíthatja a felhasználói élményt a jelentések mobilalkalmazással történő megtekintésénél. A Power BI Desktopban és a Power BI szolgáltatásban átrendezheti és átméretezheti a jelentések vizualizációit az optimális, álló elrendezésű élmény érdekében.  
 
 Jelentések mobileszközökön való megtekintéséről szeretne többet megtudni? Olvassa el az alábbi rövid útmutatót: [Irányítópultok és jelentések felfedezése a Power BI mobilalkalmazásokban](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).

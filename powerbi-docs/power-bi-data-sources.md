@@ -6,18 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/22/2019
+ms.date: 01/08/2020
 ms.author: kfollis
-ms.openlocfilehash: be7f95b2bbbd6e5e6314c7fd57869a30c176746c
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: 2578f8621140a64b85e6765d80d860c1489a5900
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958494"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762554"
 ---
 # <a name="power-bi-data-sources"></a>Adatforrások a Power BI-hoz
 
 Az alábbi táblázat bemutatja a Power BI által támogatott adatforrásokat adatkészletek használatához, beleértve a DirectQueryvel és a helyszíni adatátjáróval kapcsolatos információkat is. Az adatfolyamokkal kapcsolatos további információért lásd: [Adatforrásokhoz való csatlakozás Power BI-adatfolyamokkal](service-dataflows-data-sources.md).
+
+> [!NOTE]
+> A Power BI Desktophoz számos olyan adatösszekötő érhető el, amelyek hitelesítéséhez az Internet Explorer 10 vagy újabb verziójára van szükség. 
+
 
 | Adatforrás | Csatlakozás asztali gépről | Csatlakozás és frissítés szolgáltatásból | DirectQuery / Élő kapcsolat | Átjáró (támogatott) | Átjáró (szükséges) |
 |---|---|---|---|---|---|---|---|
@@ -33,7 +37,7 @@ Az alábbi táblázat bemutatja a Power BI által támogatott adatforrásokat ad
 | Azure Cost Management | Igen | Igen | Nem | Nem | Nem |
 | Azure Data Explorer (Kusto) | Igen | Igen | Igen | Nem | Nem |
 | Azure Data Lake Storage Gen1 | Igen | Igen | Nem | Nem | Nem |
-| Azure Data Lake Storage Gen2 | Igen | Igen | Nem | Nem | Nem |
+| Azure Data Lake Storage Gen2 | Igen | Igen | Nem | Igen | Nem |
 | Azure DevOps | Igen | Igen | Nem | Nem | Nem |
 | Azure DevOps Server | Igen | Igen | Nem | Igen | Igen |
 | Azure HDInsight (HDFS) | Igen | Igen | Nem | Nem | Nem |
@@ -65,8 +69,8 @@ Az alábbi táblázat bemutatja a Power BI által támogatott adatforrásokat ad
 | Google BigQuery | Igen | Igen | Nem | Nem | Nem |
 | Hadoop-fájl (HDFS) | Igen | Nem | Nem | Nem | Nem |
 | HDInsight interaktív lekérdezés | Igen | Igen | Igen | Nem | Nem |
-| IBM DB2 | Igen | Igen | Igen | Igen | Igen |
-| IBM Informix-adatbázis | Igen | Igen | Nem | Igen | Igen |
+| IBM DB2 | Igen | Igen | Igen | Igen | Nem |
+| IBM Informix-adatbázis | Igen | Igen | Nem | Igen | Nem |
 | IBM Netezza | Igen | Igen | Igen | Igen | Igen |
 | Impala | Igen | Igen | Igen | Igen | Igen |
 | Indexima | Igen | Igen | Igen | Igen | Igen |
@@ -95,7 +99,7 @@ Az alábbi táblázat bemutatja a Power BI által támogatott adatforrásokat ad
 | Planview Enterprise One – CTM | Igen | Igen | Nem | Nem | Nem |
 | Planview Enterprise One – PRM | Igen | Igen | Nem | Nem | Nem |
 | Planview Projectplace | Igen | Igen | Nem | Nem | Nem |
-| PostgreSQL | Igen | Igen | Igen | Igen | Igen |
+| PostgreSQL | Igen | Igen | Igen | Igen | Nem |
 | Power BI-adatfolyamok | Igen | Igen | Nem | Nem | Nem |
 | Power BI-adathalmazok | Igen | Igen | Igen | Nem | Nem |
 | Power Platform-adatfolyamok | Igen | Igen | Nem | Nem | Nem |
@@ -114,7 +118,7 @@ Az alábbi táblázat bemutatja a Power BI által támogatott adatforrásokat ad
 | SharePoint-lista | Igen | Igen | Nem | Igen | Nem <sup>4</sup> |
 | SharePoint Online-lista | Igen | Igen | Nem | Igen <sup>2</sup> | Nem |
 | Smartsheet | Igen | Igen | Nem | Nem | Nem |
-| Snowflake | Igen | Igen | Igen | Igen | Igen |
+| Snowflake | Igen | Igen | Igen | Igen | Nem |
 | Spark | Igen | Igen | Igen | Igen | Nem |
 | SparkPost | Igen | Igen | Nem | Nem | Nem |
 | SQL Server | Igen | Igen | Igen | Igen | Igen |

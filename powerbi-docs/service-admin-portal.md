@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 99d57b734e42913db20e8a414c3216ed66334fa8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: de745777a5ad6da1149328d9df92be9ecccfc181
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75224205"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885307"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -25,7 +25,7 @@ Az Office 365 minden globális rendszergazdája hozzáférhet a teljes felügyel
 
 ## <a name="how-to-get-to-the-admin-portal"></a>A felügyeleti portál elérése
 
-A Power BI felügyeleti portál eléréséhez az adott fiókot **globális rendszergazdaként** kell megjelölni az Office 365-ben vagy az Azure Active Directoryban, vagy Power BI-szolgáltatásadminisztrátori szerepkört kell hozzárendelni. További információ a Power BI-szolgáltatásadminisztrátori szerepkörről: [A Power BI rendszergazdai szerepkörének ismertetése](service-admin-role.md). A Power BI felügyeleti portál eléréséhez tegye az alábbiakat.
+A fiókját **Globális rendszergazda** fiókként kell megjelölni az Office 365 vagy az Azure Active Directory (Azure AD) szolgáltatáson belül, vagy a Power BI szolgáltatás rendszergazdai szerepkörét kell hozzárendelni, hogy hozzá tudjon férni a Power BI felügyeleti portáljához. A Power BI szolgáltatás rendszergazdai szerepkörére vonatkozó további információkat [a Power BI rendszergazdai szerepkörét ismertető](service-admin-role.md) témakör tartalmaz. A Power BI felügyeleti portál eléréséhez tegye az alábbiakat.
 
 1. Válassza ki a Beállítások fogaskereket a Power BI szolgáltatás jobb felső sarkában.
 
@@ -190,13 +190,16 @@ A felügyeleti portálon azt is szabályozhatja, hogy mely felhasználók rendel
 
 ### <a name="share-content-with-external-users"></a>Tartalom megosztása külső felhasználókkal
 
-A munkahelyi felhasználók külső felhasználókkal oszthatnak meg irányítópultokat. További információ a [külső megosztásról](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
+A vállalat felhasználói megoszthatnak irányítópultokat, jelentéseket és alkalmazásokat külső felhasználókkal. További információ a [külső megosztásról](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![Külső felhasználók beállítás](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
 Az alábbi képen azon üzenet látható, amely akkor jelenik meg, ha külső felhasználóval oszt meg tartalmat.
 
 ![Megosztás külső felhasználóval](media/service-admin-portal/powerbi-admin-sharing-external.png)  
+
+> [!IMPORTANT]
+> Ez a beállítás azt szabályozza, hogy a Power BI felhasználói meghívhatnak-e külső felhasználókat, mint Azure Active Directory B2B- (Azure AD B2B-) felhasználókat a szervezetbe a Power BI-on keresztül. Ha ez a beállítás engedélyezve van, a Vendég meghívója szerepkörrel rendelkező felhasználók külső e-mail-címeket vehetnek fel jelentések, irányítópultok és Power BI-alkalmazások megosztásakor. A külső címzett meghívást kap a szervezethez való csatlakozásra, mint Azure AD B2B-vendégfelhasználó. Ha ezt a beállítást kikapcsolja, a már Azure AD B2B-vendégfelhasználóként meghívottak továbbra is megjelennek a Power BI személyválasztó felületein, és hozzáférést kaphatnak elemekhez, munkaterületekhez és alkalmazásokhoz.
 
 ### <a name="publish-to-web"></a>Webes közzététel
 
@@ -247,14 +250,14 @@ Az alábbi képen a jelentéshez tartozó **Fájl** menü látható, ha az **Ir�
 ![Jelentés nyomtatása](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat
-Az Azure Active Directory B2B-vendégfelhasználók szerkeszthetik és kezelhetik a szervezeti tartalmakat. [További információ](service-admin-azure-ad-b2b.md)
+
+Az Azure AD B2B-vendégfelhasználók szerkeszthetik és kezelhetik a szervezeti tartalmakat. [További információ](service-admin-azure-ad-b2b.md)
 
 A következő képen az „Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat” beállítás látható.
 
 ![Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
 
-> [!IMPORTANT]
-> Amikor külső felhasználót ad hozzá az Azure AD-bérlőhöz (manuálisan vagy jelentés megosztásával), az adott felhasználói fiók felderíthetővé válik a belső fiókok számára. A belső felhasználók így megoszthatnak másokat is a külső felhasználóval akkor is, ha a belső fiók nem rendelkezik külső megosztási engedélyekkel.
+A felügyeleti portálon azt is szabályozhatja, hogy mely felhasználók rendelkezzenek engedéllyel külső felhasználók a szervezetbe való meghívására. További részletekért tekintse meg a [Tartalom megosztása külső felhasználókkal](#export-and-sharing-settings) című részt.
 
 ### <a name="email-subscriptions"></a>E-mail-feliratkozások
 A vállalati felhasználók e-mail-feliratkozásokat hozhatnak létre és használhatnak. További tudnivalók a [feliratkozásokról](service-report-subscribe.md).
@@ -508,7 +511,7 @@ A vizualizáció munkahelyi áruházból való feltöltéséhez kattintson a fog
 
 Győződjön meg róla, hogy a vizuális azonosító ugyanaz maradt. Az új fájl az előző fájlt helyére kerül a jelentésekben az egész vállalatnál. Ha azonban a vizualizáció új verziója megbontja az előző verziójának valamely használati vagy adatstruktúráját, akkor ne cserélje le az előző verziót. Ehelyett hozzon létre egy új listázást a vizualizáció új verziójához. Például adjon hozzá egy új verziószámot (X.X verzió) az új listázott vizualizáció címéhez. Ezáltal nyilvánvalóvá válik, hogy ez ugyanaz a vizualizáció, de frissített verziószámmal, így a meglévő jelentések működése nem hibásodik meg. Most is győződjön meg róla, hogy a vizuális azonosító ugyanaz maradt. Így amikor a felhasználók legközelebb belépnek a szervezeti adattárba a Power BI Desktopból, importálhatják az új verziót, amely kérni fogja őket, hogy cseréljék le a jelentésben található jelenlegi verziót.
 
-További információt [az egyéni vállalati vizualizációkkal kapcsolatos gyakori kérdések](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-visuals) között talál.
+További információt [az egyéni vállalati vizualizációkkal kapcsolatos gyakori kérdések](/power-bi/developer/power-bi-custom-visuals-faq#organizational-power-bi-visuals) között talál.
 
 ## <a name="dataflowStorage">Adatfolyam-tárolás (előzetes verzió)</a>
 

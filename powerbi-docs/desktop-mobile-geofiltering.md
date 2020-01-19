@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: maggies
 LocalizationGroup: Model your data
-ms.openlocfilehash: c054bc933cb1eaac7475ac0c7649c7e0f77f503b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b30310f78dca919474baf6d5870294bfc05dcacf
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878086"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760996"
 ---
-# <a name="set-geographic-filters-in-power-bi-desktop-for-the-mobile-apps"></a>Földrajzi szűrők beállítása mobilalkalmazásokhoz a Power BI Desktopban
+# <a name="set-geographic-filters-in-power-bi-desktop-for-use-in-the-mobile-app"></a>Földrajzi szűrők beállítása mobilalkalmazásokhoz a Power BI Desktopban
 A Power BI Desktopban [kategorizálhatja egy oszlop földrajzi adatait](desktop-data-categorization.md), így a Power BI Desktop tudja, hogyan kezelje az értékeket egy jelentés vizualizációiban. További előny, hogy ha Ön vagy munkatársai a Power BI mobilalkalmazásokban tekintik meg a jelentést, a Power BI automatikusan az Ön helyzetének megfelelő földrajzi szűrést biztosít. 
 
 Tegyük fel például, hogy az értékesítési vezető elutazik, hogy az ügyfelekkel találkozzon, meg szeretne látogatni egy bizonyos ügyfelet, és gyorsan rá szeretne szűrni ennek az ügyfélnek az összes értékesítésére és bevételére. Részletezni szeretné aktuális tartózkodási helyének adatait, például állam, város vagy egy adott cím szerint. Később, ha maradt ideje, szeretne további, a közelben lévő ügyfeleket is meglátogatni. A [jelentéseket a saját tartózkodási helye szerint is szűrheti, így megtalálhatja ezeket ügyfeleket](consumer/mobile/mobile-apps-geographic-filtering.md).
@@ -58,7 +58,7 @@ Tegyük fel például, hogy az értékesítési vezető elutazik, hogy az ügyfe
 
 További információ a [jelentés tartózkodási hely szerinti szűréséről a Power BI mobilalkalmazásokban](consumer/mobile/mobile-apps-geographic-filtering.md).
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 * [Adatok kategorizálása a Power BI Desktopban](desktop-data-categorization.md)  
 * Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

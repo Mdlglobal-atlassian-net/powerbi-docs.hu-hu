@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 53124f2b1ede9d8a9c3a9866416f713af1fd2061
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: efd110ad73b1bd72813d418a1f641613c88dc0d5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877270"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762577"
 ---
 # <a name="using-dataflows-with-on-premises-data-sources"></a>Adatfolyamok használata helyszíni adatforrásokkal
 
@@ -24,7 +24,8 @@ Az **adatfolyamokkal** létrehozhat adatgyűjteményt többféle forrásból, ki
 
 ## <a name="configuring-an-enterprise-gateway-for-use-with-dataflows"></a>Vállalati átjáró konfigurálása az adatfolyamokkal való használatra
 
-Helyszíni adatforrás adatfolyamban való használatához az adatfolyamot létrehozó minden felhasználónak rendelkeznie kell egy telepített és konfigurált **vállalati átjáróval**. Az adatfolyamot létrehozó felhasználónak a vállalati átjáró rendszergazdájának kell lennie annak érdekében, hogy ezt az átjárót használja az adatfolyamhoz.
+Ha átjáróval szeretne adatfolyamot létrehozni, a felhasználónak az Enterprise Gateway rendszergazdájának kell lennie, vagy a rendszergazdának meg kell osztania vele a használni kívánt adatforrást. 
+
 
 > [!NOTE]
 > Az adatfolyamok csak vállalati átjárók használatakor támogatottak.
@@ -35,7 +36,7 @@ Adatfolyam létrehozásakor válasszon egy helyszíni adatforrást az adatforrá
 
 ![Helyszíni adatforrás kiválasztása](media/service-dataflows-onpremises-gateways/onpremises-gateways_02a.png)
 
-Miután elvégezte a kijelölést, meg kell adnia a vállalati átjáró csatlakozási adatait, amelyeket a helyszíni adatok elérésére fog használni. Ki kell választania az átjárót, és meg kell adnia a hitelesítő adatokat a kiválasztott átjáróhoz. A legördülő listában csak azok az átjárók jelennek meg, amelyeknek a felhasználó a rendszergazdája.
+Miután elvégezte a kijelölést, meg kell adnia a vállalati átjáró csatlakozási adatait, amelyeket a helyszíni adatok elérésére fog használni. Ki kell választania az átjárót, és meg kell adnia a hitelesítő adatokat a kiválasztott átjáróhoz.
 
 ![Kapcsolati adatok megadása](media/service-dataflows-onpremises-gateways/onpremises-gateways_03.png)
 

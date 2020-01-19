@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 37cbea42d530f05df1d9f1003554680b80c5b5c3
-ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
+ms.openlocfilehash: ba9c11004099b1e11d935cd0b178463e542bea9a
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907947"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761795"
 ---
-# <a name="aggregations-in-power-bi-desktop"></a>Aggregációk a Power BI Desktopban
+# <a name="manage-aggregations-in-power-bi-desktop"></a>Aggregációk kezelése a Power BI Desktopban
 
 A Power BI-ban az **aggregációk** olyan big data-elemzéseket tesznek lehetővé, amelyekre korábban nem volt lehetőség. Az **aggregációk** nagymértékben csökkenthetik a nagyméretű adatkészletek döntéshozáshoz szükséges feloldásának költségeit.
 
@@ -114,8 +114,8 @@ Az alábbi táblázat a **Sales Agg** (Aggr. értékesítések) tábla aggregác
 
 Az Összegzés legördülő menüjéből a következő értékek választhatók ki.
 * Darabszám
-* GroupBy (Csoportosítási szempont)
-* Max.
+* GroupBy
+* Max
 * Min.
 * Összeg
 * Tábla sorainak száma

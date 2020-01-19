@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c2001a83a1fb4a5d605a7ac1c752fe4bbd4c5a51
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a10de05fed8a77a165797dda7155ffb81bbad815
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879567"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759997"
 ---
-# <a name="using-templates-in-power-bi-desktop"></a>Sablonok használata a Power BI Desktopban
+# <a name="create-report-templates-for-power-bi-desktop"></a>Jelentésminták létrehozása a Power BI Desktophoz
 
 A **Power BI Desktoppal** látványos jelentéseket hozhat létre, amelyek elemzési eredményeket osztanak meg az egész vállalattal. A Power BI Desktop **sablonjaival** hatékonyabbá teheti munkáját, ha meglévő sablon alapján jelentéssablont hoz létre, amelyet Ön és a vállalatánál mások is felhasználhatnak kiindulásként egy új jelentés elrendezéséhez, adatmodelljéhez és lekérdezéseihez. A **Power BI Desktopbeli** sablonok segítenek a jelentések létrehozásának gyors elindításában és egységesítésében.
 

@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a3ca4b8ffe709fec7953eb5d4081bdf296504eb1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3f263e67b866f6d6a3ea76257c64bbb2308a25d2
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868516"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729713"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Adattípusok a Power BI Desktopban
 A cikk a Power BI Desktop és a Data Analysis Expressions (DAX) által támogatott adattípusokat ismerteti. 
@@ -51,7 +51,7 @@ A Power BI Desktop három számtípust támogat:
 >
 
 ### <a name="datetime-types"></a>Dátum/idő típusok
-A Power BI Desktop öt Dátum/idő adattípust támogat a Lekérdezésnézetben, és hármat a Jelentésnézetben és a modellben.   A modellbe való betöltéskor a Dátum/idő/időzóna és az Időtartam típus konvertálva lesz.
+A Power BI Desktop öt Dátum/idő adattípust támogat a Lekérdezésnézetben.  A modellbe való betöltéskor a Dátum/idő/időzóna és az Időtartam típus konvertálva lesz. A Power BI Desktop adatmodellje csak a dátum-és időadatokat támogat, amelyek azonban egymástól függetlenül formázhatók dátumként vagy időpontként. 
 
 **Dátum/idő** – Egy dátum és egy idő értéket jelöl egyszerre.  A háttérben a Dátum/idő érték Tizedes tört típusúként van tárolva.  Így lényegében átalakíthatja ez értékeket az egyik típusból a másikba.   A dátum idő része 1/300 másodperc (3,33 ezredmásodperc) egész többszöröseiként van tárolva.  Az 1900. és 9999. közötti dátumok használata támogatott.
 
@@ -59,7 +59,7 @@ A Power BI Desktop öt Dátum/idő adattípust támogat a Lekérdezésnézetben,
 
 **Idő** – Csak egy időpontot jelöl (dátummegjelölés nélkül).  A modellbe való konvertáláskor az Idő típus ugyanúgy viselkedik, mint a Dátum/idő típus, ahol az egész rész értéke nulla.
 
-**Dátum/idő/időzóna** – Egy UTC-ben megadott dátum/idő értéket jelöl.  Jelenleg ez a típus Dátum/idő típussá lesz konvertálva a modellbe való betöltéskor.
+**Dátum/idő/időzóna** – Egy UTC-ben megadott dátum/idő értéket jelöl, időzóna-eltolással.  Ez a típus Dátum/idő típussá lesz konvertálva a modellbe való betöltéskor. A Power BI-modell nem módosítja az időzónát a felhasználó helye vagy földrajzi helye alapján. Az 09:00 érték a modellben az Egyesült Államokban 09:00-ként jelenik meg a jelentés megnyitásakor vagy megtekintésekor. 
 
 **Időtartam** – Egy bizonyos hosszúságú időszeletet jelöl. Ez a típus Tizedes tört típusúvá lesz konvertálva a modellbe való betöltéskor.  Tizedes tört típusként megfelelő eredményt ad, ha hozzáadják vagy kivonják a Dátum/idő mezőkből.  Tizedes tört típusként könnyen használható nagyságrendet jelző vizualizációkban.
 

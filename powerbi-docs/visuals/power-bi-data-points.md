@@ -2,21 +2,21 @@
 title: Nagy adathalmazok, adatpontkorlátok és adatstratégiák
 description: Vizualizációkra vonatkozó adatkorlátozások és adatcsökkentési stratégiák
 author: mihart
-ms.reviewer: amac
+ms.reviewer: justyna
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/07/2018
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1ae0fc339d3837c8fc28cc604b3ddb840807dcd5
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 320e8a25206a069c43800295ab64a7ab87afbcf0
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74011303"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885255"
 ---
-# <a name="data-point-limits-and-strategies-by-visual-type"></a>Adatpontkorlátok és -stratégiák vizualizációtípus szerint
+# <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Adatpontkorlátok és -stratégiák alkalmazása vizualizációtípus szerint
 
 Amikor a Power BI-ban vizualizációt renderel, a vizualizációnak gyorsan és pontosan kell megjelennie. Ez minden vizualizációtípushoz külön konfigurált háttérbeli algoritmusokat igényel. A Power BI-beli vizualizációknak elég rugalmasnak kell lenniük a különböző méretű adathalmazok kezeléséhez. Egyes adathalmazok csupán néhány adatpontból állnak, mások viszont több petabájtnyiból. Ez a cikk a Power BI által a vizualizációk rendereléséhez használt stratégiákat ismerteti.
 
@@ -75,7 +75,7 @@ Lásd: [A vonalas mintavételezés működése](../desktop-high-density-sampling
  Ugyanazokat a stratégiákat használja, mint az oszlopdiagram. Figyelje meg, hogy a **kombinált diagram** vonala nem azt a sűrű algoritmust használja, amit a **vonaldiagram**.
 
 ### <a name="custom-visuals"></a>Egyéni vizualizációk
-Akár 30 000 is lehet, de a vizualizáció készítői döntik el, hogy mely stratégiák legyenek használva
+Akár 30 000 is lehet, de a vizualizáció készítői döntik el, hogy mely stratégiák legyenek használva. Az alapértelmezett korlát 1000, a vizualizáció készítője azonban ezt legfeljebb 30 000-ig módosíthatja.
 
 ### <a name="doughnut"></a>Perec
 - Pontok maximális száma: 3,500
@@ -119,6 +119,9 @@ A konfigurációtól függően a térképen a következők szerepelhetnek:
 - Sorok: Virtualizálás egyszerre 500 sort tartalmazó ablakokkal
 - Oszlopok: Első 100 csoportosítási oszlop 
 - Értékek: a többszörös értékek nem számítanak az adatcsökkentésnél
+
+### <a name="powerapps-visual"></a>PowerApps-vizualizáció
+Akár 30 000 is lehet, de a vizualizáció készítői döntik el, hogy mely stratégiák legyenek használva. Az alapértelmezett korlát 1000, a vizualizáció készítője azonban ezt legfeljebb 30 000-ig módosíthatja.
 
 ### <a name="radial-gauge"></a>Tárcsa
 Nincs adatcsökkentési stratégia

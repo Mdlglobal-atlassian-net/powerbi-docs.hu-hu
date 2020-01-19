@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: be45941e67417cbed15433405953cf728fe0aa8d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2d564b22ecf02c0d8593ed5676e46f2eb4168964
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876933"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75836726"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával
 
@@ -46,7 +46,7 @@ Ha URL-szűrőt szeretne felvenni egy alkalmazás egyik jelentésébe, annak for
 
 Íme egy példa:
 
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*&'ctid=*ctid*
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*'&ctid=*ctid*
 
 ### <a name="field-types"></a>Mezőtípusok
 
@@ -112,7 +112,7 @@ A Power BI az „**and**” operátoron kívül sok továbbit is támogat. Ezek 
 |**ge**     |  nagyobb vagy egyenlő, mint       | nem | igen |igen |  termék/ár ge 10
 |**gt**     | nagyobb, mint        |nem | igen | igen  | termék/ár gt 20
 |**le**     |   kisebb vagy egyenlő, mint      | nem | igen | igen  | termék/ár le 100
-|**lt**     |  kisebb, mint       | nem | igen | igen |  termék/ár lt 20
+|**lt**     |  kisebb mint       | nem | igen | igen |  termék/ár lt 20
 |**in\*\***     |  a következők között van       | igen | igen |  igen | Diák/Életkor in (27, 29)
 
 

@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ffff443716f11101347debd97f28349afc3904bb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fee47524be70955a123d08e10dca5ee0dd3e07fd
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876330"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761180"
 ---
-# <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery és SAP Business Warehouse (BW)
+# <a name="connect-to-sap-business-warehouse-by-using-directquery-in-power-bi"></a>Közvetlen csatlakozás az SAP Business Warehouse-hoz a DirectQueryvel a Power BI-ban
 Az **SAP Business Warehouse- (BW-)** adatforrásokhoz közvetlenül kapcsolódhat a **DirectQuery** használatával. Az SAP BW OLAP/többdimenziós természeténél fogva számos különbség van aközött, ha a DirectQueryt az SAP BW-vel használjuk, vagy ha valamilyen relációs forrással, például az SQL Serverrel. A különbségeket a következőképpen lehet összefoglalni:
 
 * A relációs forrásokkal használt **DirectQuery**ben a mezőlistában elérhető adatokat logikailag lekérdezések határozzák meg (amelyeket az **Adatok lekérése** vagy a **Lekérdezésszerkesztő** párbeszédablakban lehet megadni). Ez *nem* így működik egy OLAP-forráshoz, például az SAP BW-hez való kapcsolódáskor. Ehelyett az SAP-kiszolgálóhoz az **Adatok lekérése** használatával való kapcsolódáskor csak az Infocube vagy BEx Query lekérdezést kell kiválasztani. Ezután a kiválasztott Infocube/BEx Query összes kulcsértéke és dimenziója elérhető lesz a mezőlistában.   
@@ -79,5 +79,5 @@ Ha többet szeretne megtudni a DirectQueryről, tekintse át a következő forr�
 
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A DirectQuery által támogatott adatforrások](desktop-directquery-data-sources.md)
-* [A DirectQuery és az SAP HANA](desktop-directquery-sap-hana.md)
+* [DirectQuery és SAP HANA](desktop-directquery-sap-hana.md)
 

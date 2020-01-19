@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 252e83a543640ec47fbadd00012bf1a4d8074f84
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 1e2465273368c6b76e602e5ffbdf4ec3a1d121a3
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831449"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75757831"
 ---
-# <a name="customize-visualization-titles-legends-and-backgrounds"></a>A vizualizáció címeinek, jelmagyarázatainak és háttereinek testreszabása
+# <a name="customize-visualization-titles-backgrounds-and-legends"></a>A vizualizáció címeinek, háttereinek és jelmagyarázatainak testreszabása
 
 Ezen oktatóanyag segítségével elsajátíthatja a vizualizációk testre szabására szolgáló különböző módszereket. A vizualizációk testreszabására számtalan lehetőség áll rendelkezésre. Ezek megismerésére a legjobb módszer a **Formázás** panel felfedezése (válassza a festőhenger ikont). Az első lépésekhez megtételéhez ez a cikk bemutatja, hogyan szabhatja testre a vizualizáció címét, jelmagyarázatát és hátterét, valamint hogyan adhat hozzá témát.
 

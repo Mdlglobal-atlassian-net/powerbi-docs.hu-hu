@@ -8,16 +8,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 623a0bbd187a997003ce7b82cc76d5c4fbe9ce44
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 740760121635cc0dccb0f2aa64750ebf649d8de3
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73868068"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761203"
 ---
-# <a name="directquery-model-troubleshooting-in-power-bi-desktop"></a>DirectQuery-modell hibaelhárítása a Power BI Desktopban
+# <a name="troubleshoot-developing-directquery-models-in-power-bi-desktop"></a>DirectQuery-modellek fejlesztésének hibaelhárítása a Power BI Desktopban
 
-Ez a cikk a Power BI Desktopon vagy a Power BI szolgáltatásban fejlesztett Power BI DirectQuery-modelleket fejlesztő adatmodellezőknek készült. Azt írja le, hogyan diagnosztizálhatja a teljesítményproblémákat, és hogyan kérhet le részletesebb információkat, amelyek lehetővé teszik a jelentések optimalizálását.
+Ez a cikk a Power BI Desktopban vagy a Power BI szolgáltatásban Power BI DirectQuery-modelleket fejlesztő adatmodellezőknek készült. Azt írja le, hogyan diagnosztizálhatja a teljesítményproblémákat, és hogyan kérhet le részletesebb információkat, amelyek lehetővé teszik a jelentések optimalizálását.
 
 ## <a name="performance-analyzer"></a>Teljesítményelemző
 

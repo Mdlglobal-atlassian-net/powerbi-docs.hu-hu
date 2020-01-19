@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: bb4e177ff813c332c8b60b490ead1f6d97a03935
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 33fc0faf92d1730c1d08f91eabc276cdafadfffb
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73867114"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761111"
 ---
-# <a name="use-insights-in-power-bi-desktop-to-find-where-a-distribution-is-different-preview"></a>Az eltérő eloszlások helyének azonosítása a Power BI Desktop elemzéseivel (előzetes verzió)
+# <a name="apply-insights-in-power-bi-desktop-to-discover-where-distributions-vary-preview"></a>Elemzések alkalmazása a Power BI Desktopban az eloszlásbeli eltérések helyeinek feltárásához (előzetes verzió)
 
 A vizualizációk adatpontjainál gyakran felmerül a kérdés, hogy az eloszlás vajon hasonló lenne-e különböző kategóriáknál. A **Power BI Desktop** **elemzéseivel** ezt néhány kattintással megtudhatja.
 

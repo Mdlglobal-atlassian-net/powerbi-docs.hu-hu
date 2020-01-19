@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5af9c2e5979121054e51b928c58f49477c19a7d0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4d478396f88a1443c0d23d64199d84f0b615b1da
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878803"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761818"
 ---
-# <a name="assume-referential-integrity-settings-in-power-bi-desktop"></a>Hivatkozási integritás feltételezése beállítások a Power BI Desktopban
+# <a name="apply-the-assume-referential-integrity-setting-in-power-bi-desktop"></a>A Hivatkozási integritás feltételezése beállítás alkalmazása a Power BI Desktopban
 Amikor a **DirectQuery** használatával csatlakozik egy adatforráshoz, a **Hivatkozási integritás feltételezése** lehetőséggel engedélyezheti a hatékonyabb lekérdezések futtatását az adatforráson. Ez a funkció a felállít néhány követelményt a mögöttes adatokkal szemben, és csak a **DirectQuery** használatakor érhető el.
 
 A **Hivatkozási integritás feltételezése** beállítás lehetővé teszi, hogy az adatforráson a lekérdezések **INNER JOIN** utasításokat használjanak az **OUTER JOIN** helyett, ami javítja a lekérdezés hatékonyságát.

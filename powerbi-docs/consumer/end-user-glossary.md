@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/07/2019
 ms.author: mihart
-ms.openlocfilehash: 046f35613e5fe748e93389fbe10a77af08f449e3
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: cf70774712a8b72493c8957139d8f802dc4d1ed7
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75303927"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75836668"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -41,7 +41,9 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 **ArcGIS for Power BI** Az ArcGIS egy leképezési és elemzési platform, amelyet az ESRI vállalat fejleszt. A Power BI vizualizációtárában foglalt vizualizáció neve ArcGIS for Power BI.
 
-**assign (hozzárendelés)** [Power BI Premium] A munkaterületek dedikált kapacitásra vagy onnan való áthelyezésének művelete. A munkaterületek dedikált kapacitásokra való áthelyezésének leírására ne használja az előléptetés kifejezést, mivel ez azt sugallná, hogy a dedikált kapacitás felette áll a megosztott kapacitásnak.  
+**assign (hozzárendelés)** [Power BI Premium] A munkaterületek dedikált kapacitásra vagy onnan való áthelyezésének művelete. A munkaterületek dedikált kapacitásokra való áthelyezésének leírására ne használja az előléptetés kifejezést, mivel ez azt sugallná, hogy a dedikált kapacitás felette áll a megosztott kapacitásnak. 
+
+Az **automatikus elemzéseket** mostantól *gyorselemzéseknek* nevezzük.
 
 ## <a name="b"></a>B
 
@@ -49,7 +51,7 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 **bookmark (könyvjelző)** Az adatok egy jelentés Könyvjelzők panelén rögzített nézete a Power BI Desktopban vagy szolgáltatásban. A Desktopban a könyvjelzők a .pbix jelentésfájlban vannak mentve, amely megosztható a Power BI szolgáltatásban.
   
-**breadcrumbs (útkövetés)** A bal felső navigációs sáv, amelynek segítségével gyorsan navigálhat a munkaterületek között.
+**breadcrumbs (útkövetés)** A bal felső navigációs sáv, amelynek segítségével gyorsan navigálhat a jelentések és irányítópultok között.
 
 ## <a name="c"></a>C
 
@@ -71,7 +73,7 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 **content list (tartalomjegyzék)** Egy alkalmazás tartalommutatója.
 
-**content pack (tartalomcsomag)** Előrecsomagolt adathalmazok, jelentések és irányítópultok gyűjteménye. Már **alkalmazások**. Ismerkedjen meg az [új munkaterületi felhasználói felülettel](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
+**content pack (tartalomcsomag)** Előrecsomagolt adathalmazok, jelentések és irányítópultok gyűjteménye. Ezeket **alkalmazások** váltják fel. Ismerkedjen meg az [új munkaterületi felhasználói felülettel](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **content view (tartalom nézet)**
 
@@ -89,26 +91,29 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 **data connector (adatösszekötő)** Lásd: összekötők.
 
-**data model, Excel Data Model (adatmodell, Excel-adatmodell)**
+**data model, Excel Data Model (adatmodell, Excel-adatmodell)** A Power BI-tartalmakban az adatmodellek táblázatos formátumú adatstruktúra-térképeket jelentenek. Az adatmodell az adatbázisok készítéséhez használt kapcsolatokat jeleníti meg. A jelentéskészítők, rendszergazdák és fejlesztők adatmodelleket készítenek, és ezekkel hoznak létre Power BI-tartalmakat is.
 
+**adatfolyamok** Az adatfolyamok big data típusú adatokat töltenek be, alakítanak át, integrálnak és egészítenek ki. Ehhez adatforrás-kapcsolatokat, ETL logikát, frissítésütemezést és egyéb funkciókat definiálhat. Korábban adatkészlet.
 
 **dataset (adatkészlet)** vagy **data source (adatforrás)** Egy **adathalmaz** vizualizációk és jelentések létrehozásához használt adatok gyűjteménye.
 
 **dedicated capacity (dedikált kapacitás)** [Power BI Premium] A Microsoft felhőalapú adatközpontjaiban, dedikált hardvereken futó adatmodellek, amelyekkel nagy léptékben is biztosítható az állandó teljesítmény. A BI-megoldások a Power BI-licenctől függetlenül a teljes cég számára elérhetők.
 
-**Desktop** Első példány: A Power BI Desktop további említései: Asztal
+**Desktop** vagy **Power BI Desktop** Egy elsősorban jelentéstervezők, rendszergazdák és fejlesztők által használt ingyenes Power BI-eszköz. 
+
 
 
 **diamond (rombusz)** A Power BI Premium jelölése. Annak az ikonnak az alakja, amely azt jelzi, hogy egy adott munkaterület prémium szintű kapacitáson fut.
 
-**drill up, drill down, drillthrough (felhatolás, részletes elemzés, részletezés)**
+**drill up, drill down, drillthrough (felhatolás, részletes elemzés, részletezés)** A Power BI-ban felhatolással és részletes elemzéssel tárhatja fel a jelentések és vizualizációk további szintjeit. A részletezéssel kijelölheti egy vizualizáció egy részét, és a jelentés egy másik lapjára léphet, amely az eredeti lapon kijelölt vizualizációrészlet adatai szerint van szűrve.
+A részletezés gyakran megjeleníti a mögöttes rekordokat.
 
 ## <a name="e"></a>E
 
 **Editing View (Szerkesztési nézet)** Az az üzemmód, amelyben a *tervező* közelebbről is megvizsgálhatja, megtervezheti, összeállíthatja és megoszthatja a jelentéseket.
 
 **ellipsis (három pont)** ...    
-A három pont kiválasztásakor további menüpontok jelennek meg.
+A három pont kiválasztásakor további menüpontok jelennek meg. Ezt más néven **További műveletek** menünek nevezik.
 
 **embed code (beágyazási kód)** Egy általános internetes szabvány. A Power BI-ban a beágyazási kódok létrehozásával és beillesztésével a felhasználó tartalmakat, például jelentésvizualizációkat helyezhet el a webhelyeken és blogokban.
 
@@ -117,22 +122,20 @@ A három pont kiválasztásakor további menüpontok jelennek meg.
 **embedding (beágyazás)** Olyan eljárás, amely a Power BI fejlesztői ajánlataiban az elemzések alkalmazásokba való integrálására szolgál a Power BI REST API-kkal és a Power SDK-val.
 
 
-**environment (környezet)** [Power BI Desktop, Power BI Mobile stb.] Használja a Power BI-környezet kifejezést. A több-bérlős ügyfeleknél a kifejezés a csatlakoztatni kívánt bérlő kiválasztásával kapcsolatban használható.
-A dokumentációkban használható a Power BI-környezet (bérlő) kifejezés is, ha ez a bérlő fogalmát ismerő üzleti elemzők számára segít megérteni, hogy ugyanarról a dologról van szó.
+**enrivonment (környezet)** [Power BI Desktop, Power BI Mobile, Power BI szolgáltatás, hasonlók] A Power BI-eszközök másik neve. A dokumentációkban használható a Power BI-környezet (bérlő) kifejezés is, ha ez a bérlő fogalmát ismerő üzleti elemzők számára segít megérteni, hogy ugyanarról a dologról van szó.
 
 ## <a name="f"></a>F
 
 **favorite, unfavorite (megjelölés kedvencként, eltávolít a kedvencek közül)** A gyakran használt Power BI-irányítópultok és -jelentések felvétele a Kedvencek listára, ahonnan gyorsan elérhetők. Azokat az elemeket, amelyeket nem szeretne többé a kedvencek között szerepeltetni, eltávolíthatja a kedvencek közül.
 
-**filter (szűrő)**
+**szűrő** és **kiemelés** A szűrő eltávolítja a nem alkalmazható adatokat. A kiemelés szürkén jeleníti meg a nem alkalmazható adatokat. 
 
-**formatting** (formázás)
 
-**focus mode (fókusz mód)** [Power BI szolgáltatás]
+**focus mode (fókusz mód)** Fókusz módban kibonthat egy vizualizációt vagy csempét, így azt részletesebben jelenítheti meg. A vizualizációval vagy csempével fókusz módban is dolgozhat. 
 
-**Free account (ingyenes fiók)** Lásd a „fiók” kifejezést.
+**Ingyenes fiók** Lásd: *fiók*
 
-**full screen, full-screen mode (teljes képernyő, teljes képernyős mód)** [Power BI szolgáltatás]
+**full screen, full-screen mode (teljes képernyő, teljes képernyős mód)** A teljes képernyős módban menük és navigációs panelek nélkül tekinthet meg Power BI-tartalmakat. Ezt a megjelenítési módot időnként TV módnak is nevezik. 
 
 ## <a name="g"></a>G
 
@@ -145,7 +148,7 @@ A dokumentációkban használható a Power BI-környezet (bérlő) kifejezés is
 
 ## <a name="i"></a>I
 
-**insights (elemzések)** Az elemzési célú gépi tanulási algoritmusok használatával végrehajtott automatikus adatelemzések.
+**elemzések** Lásd: **gyorselemzések**.
 
 
 ## <a name="j"></a>J
@@ -176,11 +179,9 @@ A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helys
 
 **native (natív)** A termék részét képező. A Power BI például több *natív* vizualizációtípust is tartalmaz. Ezek mellett más típusokat, például egyéni vizualizációkat is importálhat.
 
-**nav pane (navigációs ablaktábla)** vagy **nav pane (navigációs vagy nav. ablak)** A Power BI szolgáltatás bal oldali vezérlőelemei.
+**navigation pane** vagy **nav pane (navigációs vagy nav. panel)** A Power BI szolgáltatás bal oldali vezérlőelemei.
 
 A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helyszűke esetén csak navigációs vagy nav. ablak.
-
-**nav pane** lásd: **nav pane (navigációs ablaktábla)**
 
 **notification (értesítés)** A Power BI értesítési központja által küldött és fogadott üzenetek.  
 
@@ -191,15 +192,14 @@ A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helys
 
 **OneDrive for Business (OneDrive Vállalati verzió)** vagy **OneDrive** A OneDrive egy személyes fiók, míg a OneDrive Vállalati verzió munkahelyi fiókokhoz való.  
 
-**On-premises data gateway (Helyszíni adatátjáró)**
-
+**On-premises (Helyszíni)** A helyi számítástechnikát (amelyben a számítási erőforrások az ügyfél saját létesítményeiben találhatók) a felhőalapú számítástechnikától megkülönböztető kifejezés.
 
 
 ## <a name="p"></a>P
 
 **PaaS** A PaaS a „platform as a service” (szolgáltatásként nyújtott platform) kifejezés rövidítése. Ilyen például a Power BI Embedded.
 
-**page (oldal)** A jelentések egy vagy több oldalból állnak. A jelentésvászon alján lévő fülek a jelentés egy-egy oldalát jelölik.
+**page (oldal)** A jelentések egy vagy több oldalból állnak. A jelentésvásznon lévő fülek a jelentés egy-egy oldalát jelölik.
 
 **pbiviz** A Power BI egyéni vizualizációinak fájlkiterjesztése.
 
@@ -211,7 +211,7 @@ A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helys
 
 **phone view (telefonos nézet)** A Power BI szolgáltatás azon felülete, amelyen elrendezheti a telefonos jelentéseket.
 
-**pin, unpin (rögzítés, rögzítés feloldása)** A vizualizációk elhelyezése egy irányítópulton (általában egy jelentésből).
+**pin, unpin (rögzítés, rögzítés feloldása)** A vizualizációk *jelentéstervező* általi elhelyezése egy irányítópulton (általában egy jelentésből).
 
 **Power BI**, **Power BI service (Power BI szolgáltatás)** , **Power BI Desktop**, **Power BI Mobile**, néhány más Power BI-ajánlat. Az általános elnevezés a *Power BI*. Gyakran csak ezt használjuk a teljes terméknév, például a *Power BI szolgáltatás* vagy a *Power BI Mobile* helyett a terméknév első előfordulását követően.
 
@@ -227,10 +227,9 @@ A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helys
 
 **Power BI service (Power BI szolgáltatás)** Online SaaS (szolgáltatott szoftver) szolgáltatás. További információ: [A Power BI bemutatása](../fundamentals/power-bi-overview.md).
 
-**Power BI service connector (Power BI szolgáltatás-összekötő)** A Power BI Desktop-felhasználók ezzel az összekötővel csatlakozhatnak a Power BI szolgáltatásban lévő adatkészletekhez a Desktopból. A létrehozott modelleket több jelentésben és irányítópulton is felhasználhatják.
-
 **Premium workspace (prémium szintű munkaterület)** Dedikált kapacitáson futó munkaterület, amelyet egy rombusz ikon jelöl.  
 
+**publish (közzététel)** A Power BI szolgáltatás *jelentéstervezői* egy Power BI-munkaterület tartalmát összekapcsolják, és elérhetővé teszik Power BI-alkalmazásként. A Power BI Desktop *jelentéstervezői* a közzététellel küldenek egy .pbix formátumú Power BI Desktop-jelentést a Power BI szolgáltatásnak, hogy ennek segítségével irányítópultokat készítsenek, és könnyen megoszthassák másokkal. 
 
 ## <a name="q"></a>Q
 **Q&A** Az adatkészletekkel kapcsolatos kérdések begépelése természetes megfogalmazásban, és a válaszok megjelenítése vizualizációk formájában. A Power BI szolgáltatásban és a Desktopon érhető el.
@@ -243,13 +242,10 @@ A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helys
 **query string parameter (lekérdezési sztring paraméter)**  
 A paramétert az URL-címhez adva előszűrhetők a Power BI-jelentésekben megjelenített információk. Tágabb értelemben a lekérdezési sztring információkat kér le egy adatbázisból.
 
-**Quick Insights (Gyors elemzések)**
-
-
-**quick measures (gyorsmérők)**
+**Quick Insights (gyors elemzések)** A gyors elemzések automatikusan létrehozott elemzések, amelyek trendeket és mintákat mutatnak be az adatokban.  
 
 ## <a name="r"></a>R
-**R, Microsoft R**
+**R, Microsoft R** Az R egy statisztikai számításhoz és ábrázoláshoz használt programnyelv és szoftverkörnyezet.
 
 **Reading View (Olvasó nézet)** A jelentések írásvédett nézete (vö. Szerkesztési nézet).
 
@@ -264,19 +260,24 @@ A paramétert az URL-címhez adva előszűrhetők a Power BI-jelentésekben megj
 **report (jelentés)**  
 Egy önálló adatkészlet többszempontú nézete, amely az adatkészletből származó különféle eredményeket és elemzéseket bemutató vizualizációkat tartalmaz. Tartalmazhat egy vagy több vizualizációt, és egy vagy több oldalból is állhat.  
 
-**report editor (jelentésszerkesztő)**
+**report editor (jelentésszerkesztő)** A *jelentéstervezők* a jelentésszerkesztőben hoznak létre új jelentéseket, illetve módosítanak meglévőket. 
 
-**report measures (jelentésmértékek)** Más néven egyéni számítások. Az Excelben ezeket számított mezőknek hívjuk. Lásd még: *mértékek*.   
-**report server (jelentéskészítő kiszolgáló)** Egy jelentéskészítő kiszolgáló egy példánya.
+**report measures (jelentésmértékek)** Más néven egyéni számítások. Az Excelben ezeket *számított mezőknek* hívjuk. Lásd még: *mértékek*.   
 
 **responsive visuals (rugalmas vizualizáció)** Olyan vizualizáció, amely a képernyő méretétől függően dinamikusan a lehető legtöbb adatot és megállapítást jeleníti meg egyszerre.
 
+**row-level security, RLS (sorszintű biztonság, RLS)** A Power BI egy funkciója, amellyel az adatbázis-rendszergazdák szabályozhatják egy adatbázistábla soraihoz való hozzáférést a lekérdezést végrehajtó felhasználó jellemzői (például csoporttagság) alapján.  
+
+A rendszergazdák konfigurálhatnak RLS-t a Power BI Desktoppal a Power BI-ba importált adatmodellekhez.  
+
+
 ## <a name="s"></a>S
 **SaaS**   
+A szoftverszolgáltatás (vagy SaaS) alkalmazások interneten keresztüli – webalapú szolgáltatásként való – terjesztésének módja. Más néven webalapú szoftver, igény szerinti szoftver vagy üzemeltetett szoftver. 
 
 **screenshot (képernyőkép)** A képernyőképküldő funkcióval a jelentések egyszerű képernyőképeit lehet továbbítani e-mailben.
 
-**service (szolgáltatás)** Lásd: *Power BI szolgáltatás*
+**service (szolgáltatás)** Lásd: *Power BI szolgáltatás* Egy önálló szolgáltatás, amely előfizetéssel vagy licenccel érhető el. A szolgáltatás egy kizárólag felhőn keresztül szolgáltatott ajánlat.  
 
 **Settings (Beállítások)** A felület, ahol a Power BI-felhasználó konfigurálhatja a saját általános beállításait, például beállíthatja, hogy szeretné-e használni az előzetes kiadásban elérhető új funkciókat, beállíthatja az alapértelmezett nyelvet, megszüntetheti a fiókját stb. Az egyes tartalomobjektumok, riasztások és előfizetések külön beállításai is kezelhetők itt. Egy fogaskerék ikon jelöli.
 
@@ -285,8 +286,7 @@ A mobileszközökön a megosztás kifejezés utalhat az operációs rendszer nat
 
 **Shared with me (Velem megosztva)** A navigációs ablaktábla egy szakasza, amely a más Power BI-felhasználók által közvetlenül megosztott összes egyéni összetevőt tartalmazza.
 
-**snapshot (pillanatkép)**
-
+**snapshot (pillanatkép)** A Power BI-ban a pillanatképek statikus képek a csempék, irányítópultok vagy jelentések élő képeivel ellentétben.
 
 **SQL Server Analysis Services (SSAS)** 
  

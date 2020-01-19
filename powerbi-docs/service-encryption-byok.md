@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 01/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 4cddf01dd57191b5d3e707589e6d8a78e106259f
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: c4b4d706f56d9ebc91b17194c9b2fa631aeb8497
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958471"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762117"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Saját titkosítási kulcsok használata a Power BI-hoz (előzetes verzió)
 
@@ -77,7 +77,7 @@ Az ebben a szakaszban leírtak feltételezik az Azure Key Vault alapszintű isme
 
     ![PBIX-fájl összetevői](media/service-encryption-byok/create-rsa-key.png)
 
-1. Kattintson a **Létrehozás** gombra.
+1. Válassza a **Létrehozás** lehetőséget.
 
 1. A **Kulcsok** alatt jelölje ki a létrehozott kulcsot.
 
@@ -104,6 +104,8 @@ BYOK engedélyezése előtt vegye figyelembe a következőket:
 - Jelenleg nem tilthatja le a BYOK-ot, miután engedélyezte azt. Az `Add-PowerBIEncryptionKey` parancshoz megadott paraméterektől függően szabályozni tudja, hogy hogyan legyen használva a BYOK egy vagy több kapacitáshoz. A kulcsok bérlőbeli bevezetését azonban nem vonhatja vissza. További információ: [BYOK engedélyezése](#enable-byok).
 
 - Egy BYOK-t használó munkaterületet nem helyezhet át _közvetlenül_ megosztott kapacitásba egy Power BI Premiumbeli dedikált kapacitásból. A munkaterületet először olyan dedikált kapacitásba kell áthelyeznie, amelyen nincs engedélyezve BYOK.
+
+- Ha egy BYOK-t használó munkaterületet helyez át egy dedikált kapacitásból egy megosztottba a Power BI Premiumban, a jelentések és adatkészletek nem lesznek elérhetők, mivel ezek a kulccsal vannak titkosítva. Ennek elkerülése érdekében a munkaterületet először olyan dedikált kapacitásba kell áthelyeznie, amelyen nincs engedélyezve BYOK.
 
 ### <a name="enable-byok"></a>BYOK engedélyezése
 

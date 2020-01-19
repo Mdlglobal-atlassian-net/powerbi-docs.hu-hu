@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 37b7a85534e1ad8f1f301994dea895e098758d1b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2b584c0664623f62b6d1d77cce74eaa51b0e9041
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870974"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758037"
 ---
-# <a name="card-visualizations"></a>Kártyavizualizációk
+# <a name="create-card-visualizations"></a>Kártyavizualizációk létrehozása
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -36,7 +36,7 @@ Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://downl
 
 1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
 
-## <a name="option-1-create-a-card-using-the-report-editor"></a>1\. lehetőség: Kártyák létrehozása a jelentésszerkesztővel
+## <a name="option-1-create-a-card-using-the-report-editor"></a>1\. lehetőség Kártyák létrehozása a jelentésszerkesztővel
 
 A kártya létrehozásának első módszere a jelentésszerkesztő használata a Power BI Desktopban.
 
@@ -52,7 +52,7 @@ A kártya létrehozásának első módszere a jelentésszerkesztő használata a
 
 Ezzel sikeresen létrehozott egy kártyát a jelentésszerkesztővel. A következőkben egy másik lehetőséget mutatunk be a kártya létrehozására a Q&A kérdésmezője használatával.
 
-## <a name="option-2-create-a-card-from-the-qa-question-box"></a>2\. lehetőség: Kártya létrehozása a Q&A kérdésmezőben
+## <a name="option-2-create-a-card-from-the-qa-question-box"></a>2\. lehetőség Kártya létrehozása a Q&A kérdésmezőben
 Másik lehetőségként a Q&A kérdésmezője is használható kártya létrehozására. A Q&A kérdésmező a Power BI Desktop jelentés nézetében érhető el.
 
 1. Kezdje a műveletet egy üres jelentésoldalon

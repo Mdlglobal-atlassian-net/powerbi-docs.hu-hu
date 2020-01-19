@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 75b3c370e6b17c5a5a4937da6db989f814a0ebd9
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: ab98463f6dc1defd9ee3f2a97b322fefbe582779
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75221988"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761042"
 ---
-# <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Újdonságok a Power BI Desktop legújabb frissítésében
+# <a name="whats-new-in-power-bi-desktop"></a>A Power BI Desktop újdonságai
 
 
 ## <a name="december-2019-update-2765678661"></a>2019. decemberi frissítés (2.76.5678.661)
@@ -42,8 +42,8 @@ Ebben a hónapban az alábbi frissítések kerültek be a Power BI Desktopba:
 
 
 ### <a name="reporting"></a>Jelentéskészítés
-* A témahasználat frissítései (előzetes verzió) [[videó]](https://youtu.be/eCEwgZsVUOs?t=10)  [[cikk]](desktop-report-themes.md#customize-report-themes-preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customizeTheme) 
-* Az aktuális téma exportálása (előzetes verzió) [[videó]](https://youtu.be/eCEwgZsVUOs?t=242)  [[cikk]](desktop-report-themes.md#customize-report-themes-preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#exportTheme) 
+* Az aktuális téma testreszabása (előzetes verzió) [[videó]](https://youtu.be/eCEwgZsVUOs?t=10)  [[cikk]](desktop-report-themes.md#create-and-customize-a-theme-in-power-bi-desktop-preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customizeTheme) 
+* Az aktuális téma exportálása (előzetes verzió) [[videó]](https://youtu.be/eCEwgZsVUOs?t=242)  [[cikk]](desktop-report-themes.md#export-report-themes-preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#exportTheme) 
 * Táblaoszlop vagy mátrix értékének beállítása egyéni URL-címként [[videó]](https://youtu.be/eCEwgZsVUOs?t=277)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customURL) 
 * KPI-vizualizáció formázási beállításai [[videó]](https://youtu.be/eCEwgZsVUOs?t=354)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#KPI) 
 * A felbontásfa új formázása [[videó]](https://youtu.be/eCEwgZsVUOs?t=442)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#decomp) 

@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 644e68ec827915c5457e22e1c1486a8f6f3299f6
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: dcfc695d0371cce21a827ddfe71b3b4b05863935
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877034"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762416"
 ---
-# <a name="facebook-connector-for-power-bi-desktop"></a>Facebook-összekötő a Power BI Desktophoz
+# <a name="use-the-facebook-connector-for-power-bi-desktop"></a>A Power BI Desktophoz készült Facebook-összekötő használata
 A **Power BI Desktop** Facebook-összekötője a Facebook Graph API-ra támaszkodik, ezért az idő során változhatnak a funkciók, és módosulhat az elérhetőség.
 
 Tekintse meg [a Power BI Desktophoz készült Facebook-összekötő útmutatóját](desktop-tutorial-facebook-analytics.md).

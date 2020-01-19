@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fa8e901d73d6ae0f35e74a427354368e75977202
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d528ba824986ff171688a55aee2ca2febe523236
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73865353"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759290"
 ---
-# <a name="publish-from-power-bi-desktop"></a>Közzététel a Power BI Desktopból
+# <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Adatkészletek és jelentések közzététele a Power BI Desktopból
 Amikor közzétesz egy **Power BI Desktop-fájlt** a **Power BI szolgáltatásban**, a rendszer a modellben található adatokat és a **Jelentés** nézetben létrehozott jelentéseket közzéteszi az Ön Power BI-munkaterületén. A munkaterület-kezelőben megjelenik egy ugyanilyen nevű új adatkészlet, valamint az összes jelentés.
 
 A **Power BI Desktopból** való közzétételnek az eredménye ugyanaz, mintha a Power BI-ban az **Adatok lekérése** használatával csatlakozunk és feltöltünk egy **Power BI Desktop**-fájlt.
@@ -27,7 +27,7 @@ A **Power BI Desktopból** való közzétételnek az eredménye ugyanaz, mintha 
 > 
 
 ## <a name="to-publish-a-power-bi-desktop-dataset-and-reports"></a>Power BI Desktop-adatkészletek és -jelentések közzététele
-1. A Power BI Desktopban kattintson a **Fájl** \> **Közzététel** \> **Közzététel a Power BI-ban** lehetőségre, vagy a menüszalagon a **Közzététel** elemre.  
+1. A Power BI Desktopban válassza a **Fájl** \> **Közzététel** \> **Közzététel a Power BI-ban** lehetőséget, vagy a menüszalagon a **Közzététel** elemet.  
 
    ![Közzététel gomb](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 
