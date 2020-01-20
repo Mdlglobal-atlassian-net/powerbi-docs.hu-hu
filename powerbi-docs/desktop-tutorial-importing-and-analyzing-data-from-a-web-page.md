@@ -1,6 +1,6 @@
 ---
 title: 'Oktatóanyag: Weboldalról származó adatok importálása és elemzése'
-description: 'Oktatóanyag: Weboldalakról származó adatok importálása és elemzése a Power BI Desktop használatával'
+description: 'Oktatóanyag: Weboldalról származó adatok importálása és elemzése a Power BI Desktop használatával'
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
@@ -10,14 +10,14 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: e4a805db851e63a725a866065a774ef8ecc23c24
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7d4aaa613ac2d79a08ed6bbc03ba47dd296942de
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879595"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759589"
 ---
-# <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Oktatóanyag: Weboldalakról származó adatok elemzése a Power BI Desktop használatával
+# <a name="tutorial-analyze-webpage-data-by-using-power-bi-desktop"></a>Oktatóanyag: Weboldalról származó adatok elemzése a Power BI Desktop használatával
 
 Igazi futballrajongóként szeretne jelentést készíteni az UEFA labdarúgó-Európa-bajnokság (Eb) eddigi győzteseiről. A Power BI Desktop használatával az adatokat egy weboldalról egy jelentésbe importálhatja, majd vizualizációs elemek létrehozásával megjelenítheti azokat. Ebben az oktatóanyagban bemutatjuk, hogyan végezheti el a következő feladatokat a Power BI Desktop alkalmazással:
 
@@ -184,7 +184,7 @@ Ha a térképet tortadiagramra szeretné cserélni, jelölje ki a térképet, ma
 
 A Power BI Desktop teljes körű szolgáltatást nyújt, lehetővé téve az adatok számos különféle adatforrásból való beszerzését, az elemzési igényeknek megfelelő átalakítását, valamint látványos és interaktív módon történő megjelenítését. Miután elkészült a jelentés, [felöltheti azt a Power BI-ba](desktop-upload-desktop-files.md), és létrehozhat azon alapuló irányítópultokat, amelyeket más Power BI-felhasználókkal meg is oszthat.
 
-## <a name="see-also"></a>Lásd még:
+## <a name="see-also"></a>További információ
 * [Olvassa el a többi Power BI Desktop-oktatóanyagot](https://go.microsoft.com/fwlink/?LinkID=521937)
 * [Tekintse meg a Power BI Desktop videóit](https://go.microsoft.com/fwlink/?LinkID=519322)
 * [Látogasson el a Power BI fórumára](https://go.microsoft.com/fwlink/?LinkID=519326)
