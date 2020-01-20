@@ -9,14 +9,14 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 8d1b253d5e84bb15dea4612978ee970faccb7a1a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 712864afdea5431fa630d052271e8cb2c05e9dd2
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73866095"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759882"
 ---
-# <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Oktatóanyag: Excelből és OData-csatornáról származó értékesítési adatok összevonása
+# <a name="tutorial-analyze-sales-data-from-excel-and-an-odata-feed"></a>Oktatóanyag: Excelből és OData-csatornáról származó értékesítési adatok elemzése
 
 Gyakori, hogy adatok több adatforrásban találhatók. Előfordulhat például, hogy két adatbázissal rendelkezik: egy a termékinformációkhoz, egy pedig az értékesítési adatokhoz. A **Power BI Desktoppal** összevonhatja a különböző forrásokból származó adatokat, így érdekes, meggyőző elemzéseket és vizualizációkat hozhat létre. 
 
@@ -75,7 +75,7 @@ A következő lépésben importálja a megrendelési adatokat a Northwind érté
    
    ![OData beolvasása](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
    
-2. Az **OData-csatorna** párbeszédablakban illessze be a Northwind OData-csatorna URL-címét (`https://services.odata.org/V3/Northwind/Northwind.svc/`). Kattintson az **OK** gombra.
+2. Az **OData-csatorna** párbeszédablakban illessze be a Northwind OData-csatorna URL-címét (`https://services.odata.org/V3/Northwind/Northwind.svc/`). Válassza az **OK** lehetőséget.
    
    ![OData-csatorna párbeszédpanel](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
    
@@ -120,7 +120,7 @@ A Power Query-szerkesztővel számításokat és egyéni mezőket vehet fel az a
 
 3. Az **Egyéni oszlop képlete** mezőben a *=* jel után adja meg az **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** adatokat. (A mezőneveket a **Megjeleníthető oszlopok** görgetőgombon is kijelölheti, és a begépelés helyett kattinthat a **<< Beillesztés** elemre.) 
 
-4. Kattintson az **OK** gombra.
+4. Válassza az **OK** lehetőséget.
    
    ![Egyéni oszlop párbeszédpanel](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)
 
