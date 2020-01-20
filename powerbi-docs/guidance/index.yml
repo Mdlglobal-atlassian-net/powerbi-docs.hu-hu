@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 01/14/2020
-  ms.openlocfilehash: 2bebde937666503739f6b0afe3ce20a8fe4baa8c
-  ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+  ms.openlocfilehash: 4f9d90caa643771ee300a9e7a62b4eb819becc82
+  ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 01/16/2020
-  ms.locfileid: "76039888"
+  ms.lasthandoff: 01/17/2020
+  ms.locfileid: "76161455"
 landingContent:
 - title: A Power BI útmutatója
   linkLists:
@@ -47,8 +47,10 @@ landingContent:
       url: star-schema.md
     - text: Adatcsökkentési technikák
       url: import-modeling-data-reduction.md
-    - text: Útmutató automatikus dátum/időhöz a Power BI Desktopban
+    - text: Automatikus dátum/idő – útmutató
       url: auto-date-time.md
+    - text: DirectQuery mód – útmutató
+      url: directquery-model-guidance.md
     - text: Útmutató a több-a-többhöz kapcsolatokhoz
       url: relationships-many-to-many.md
 - title: DAX
@@ -81,7 +83,9 @@ landingContent:
       url: report-drillthrough.md
     - text: Többoldalas jelentések használata a Power BI-ban
       url: report-paginated-or-power-bi.md
+    - text: Hierarchikus paraméterek használata lapszámozott jelentésekben
+      url: paginated-report-cascading-parameter.md
     - text: Ne legyenek üres lapok a többoldalas jelentések nyomtatásakor
       url: report-paginated-blank-page.md
-    - text: SQL Server Reporting Services-jelentések migrálása a Power BI-ba
+    - text: SSRS-jelentések migrálása a Power BI-ba
       url: migrate-ssrs-reports-to-power-bi.md
