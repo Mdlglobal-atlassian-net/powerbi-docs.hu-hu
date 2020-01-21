@@ -90,7 +90,7 @@ A **Lekérdezésszerkesztőben** létrehozott Python-szkripteket tartalmazó lek
   
   ![](media/desktop-python-in-query-editor/python-in-query-editor-9.png)
   
-  Az **Adatforrás-beállítások** párbeszédpanelen válassza ki az adatforrásokat, majd kattintson az **Engedélyek szerkesztése** elemre, és győződjön meg arról, hogy az **Adatvédelem szintje***Nyilvános* beállítású.
+  Az **Adatforrás-beállítások** párbeszédpanelen válassza ki az adatforrásokat, majd kattintson az **Engedélyek szerkesztése** elemre, és győződjön meg arról, hogy az **Adatvédelem szintje** *Nyilvános* beállítású.
   
   ![](media/desktop-python-in-query-editor/python-in-query-editor-10.png)    
 * A Python-vizualizációk vagy adatkészletek ütemezett frissítésének engedélyezéséhez engedélyeznie kell az **Ütemezett frissítést**, és rendelkeznie kell a munkafüzetet és a Python-környezetet tároló számítógépre telepített **Privát átjáróval**. Az ezekről szóló információkért tekintse meg a cikk korábbi szakaszait. A vonatkozó részekben található hivatkozásokkal további információhoz juthat.
