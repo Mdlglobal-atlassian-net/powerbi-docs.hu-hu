@@ -58,11 +58,11 @@ Most tegyük fel, hogy a következő *alapértelmezett tagok* vannak beállítva
 
 Most nézzük meg, mi történik, ha a Power BI alkalmazza az egyes oszlopokat. Amikor a vizualizációkat a következő oszlopokban csoportosítja, az alábbi eredményt kapja:
 
-* **Város** – a Power BI az összes várost megjeleníti a *Város*, *Állam* és *Ország***alapértelmezett tagjainak** törlésével, azonban megőrzi a *Népesség***alapértelmezett tagját**, a *Város* teljes ARP-jét pedig törli.
+* **Város** – a Power BI az összes várost megjeleníti a *Város*, *Állam* és *Ország* **alapértelmezett tagjainak** törlésével, azonban megőrzi a *Népesség***alapértelmezett tagját**, a *Város* teljes ARP-jét pedig törli.
     > [!NOTE]
     > A *Népesség* nem szerepel a *Város* ARP-útvonalában, csak az *Államhoz* kapcsolódik, a Power BI így nem törli.
-* **Állam** – a Power BI az összes *államot* megjeleníti a *Város* ,az *Állam*, az *Ország* és a *Népesség***alapértelmezett tagjainak** törlésével.
-* **Ország** – a Power BI az összes országot megjeleníti a *Város*, az *Állam* és az *Ország***alapértelmezett tagjainak** törlésével, a *Népesség***alapértelmezett tagját** azonban megőrzi.
+* **Állam** – a Power BI az összes *államot* megjeleníti a *Város* ,az *Állam*, az *Ország* és a *Népesség* **alapértelmezett tagjainak** törlésével.
+* **Ország** – a Power BI az összes országot megjeleníti a *Város*, az *Állam* és az *Ország***alapértelmezett tagjainak** törlésével, a *Népesség* **alapértelmezett tagját** azonban megőrzi.
 * **Város és állam** – a Power BI törli az összes oszlop **alapértelmezett tagjait**.
 
 A vizualizációban megjelenített csoportok teljes ARP-útvonala törlődik. 
