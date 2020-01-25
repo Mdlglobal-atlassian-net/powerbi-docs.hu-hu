@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: bdb5b797146dae0bd8c6a70163a245f44430da8c
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 2db2b4f02dac1ebcd9d24a8217a181efa9ce0779
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74791685"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76039035"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
 
@@ -317,10 +317,9 @@ A figyelmeztetés ikon segít az adathalmazzal kapcsolatos aktuális problémák
 
 ## <a name="automatic-page-refresh"></a>Automatikus oldalfrissítés
 
-Az automatikus oldalfrissítés a jelentésoldal szintjén működik, és lehetővé teszi, hogy a jelentés szerzője beállítson egy frissítési időközt az oldal vizualizációjához, amely csak akkor aktív, amikor a lap használatban van. Az automatikus oldalfrissítés csak DirectQuery-adatforrások esetén érhető el. A minimális frissítési időköz attól függ, hogy a jelentés milyen típusú munkaterületen van közzétéve, valamint hogy a Prémium munkaterületekre vonatkozóan milyen kapacitásbeállításokat alkalmazott a rendszergazda.
+Az automatikus oldalfrissítés a jelentésoldal szintjén működik, és lehetővé teszi, hogy a jelentés szerzője beállítson egy frissítési időközt az oldal vizualizációjához, amely csak akkor aktív, amikor a lap használatban van. Az automatikus oldalfrissítés csak DirectQuery-adatforrások esetén érhető el. A minimális frissítési időköz attól függ, hogy a jelentés milyen típusú munkaterületen van közzétéve, valamint hogy a Prémium munkaterületekre és [beágyazott munkaterületekre](developer/embedding.md) vonatkozóan milyen kapacitásbeállításokat alkalmazott a rendszergazda.
 
 Az automatikus oldalfrissítésről az [automatikus oldalfrissítés](desktop-automatic-page-refresh.md) című cikkben olvashat bővebben.
-
 
 ## <a name="best-practices"></a>Ajánlott eljárások
 

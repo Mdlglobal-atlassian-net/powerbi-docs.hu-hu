@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 704e073299f89859c507b3ddc6ccba0b4be03d76
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 9338bc914c7f4e4afd826bcd3e3452e7c7a3ef35
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877377"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040444"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Adatfolyamok létrehozása és használata a Power BI-ban
 
@@ -155,6 +155,14 @@ Előfordulhat, hogy az adatfolyamok adatforrásaihoz való kapcsolódás problé
 * **JSON-fájlösszekötő** – jelenleg csak alapszintű hitelesítéssel csatlakozhat JSON-fájlhoz.  JSON-fájlhoz való csatlakozás az URL-ben megadott hitelesítő adatok használatával (például https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg...) jelenleg **nem** támogatott.  
 
 * **Azure SQL Data Warehouse** – Az adatfolyamok jelenleg nem támogatják az Azure Active Directory (AAD) alapú hitelesítést az Azure SQL Data Warehouse esetén. Ebben az esetben használjon alapszintű hitelesítést.
+
+## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
+
+Az adatfolyamok rendelkeznek némi korlátozásokkal, amelyeket az alábbi lista ismertet.
+
+* Az adatfolyamoknak az alábbi típusok egyikét kell eredményezniük: *Dátum/idő, tizedes tört, szöveg, egész szám, dátum/idő/zóna, igaz/hamis, dátum, idő*
+* A dinamikus függvények jelenleg nem támogatottak az adatfolyamokban
+
 
 ## <a name="next-steps"></a>Következő lépések
 

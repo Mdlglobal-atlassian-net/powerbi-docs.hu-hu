@@ -1,31 +1,33 @@
 ---
-title: Jelentések másolása más munkaterületekről (előzetes verzió) – Power BI
-description: Útmutató adathalmaz megosztásához a vállalat több felhasználójával. Így mind jelentéseket készíthetnek az Ön adathalmaza alapján a saját munkaterületükön.
+title: Jelentések másolása más alkalmazásokból vagy munkaterületekről (előzetes verzió) – Power BI
+description: Megtudhatja, hogyan készíthet másolatot a jelentésekről, és hogyan mentheti a saját munkaterületére.
 author: maggiesMSFT
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 01/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9c7cbd895a913b76a9c0b87155f7800c5538ab28
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 8716a304e5b117c027d75db149ebcc8d95efebfe
+ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223844"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76268892"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Jelentések másolása más munkaterületekről (előzetes verzió)
 
-Ha egy munkaterületen vagy alkalmazásban Önnek megfelelő jelentést talál, másolatot készíthet róla, amelyet egy másik munkaterületre menthet. Ezt követően módosíthatja a jelentés másolatát, és vizualizációkat vagy más elemeket adhat hozzá vagy törölhet. Az adatmodell elkészítésével nem kell foglalkoznia. Azt már létrehozták az Ön számára. Egy meglévő jelentést ráadásul sokkal egyszerűbb módosítani, mint egy üresből kiindulni. Azonban amikor az új munkaterületen hoz létre egy alkalmazást, előfordulhat, hogy nem teheti közzé az alkalmazásban a jelentés másolatát. További információt az [„Adathalmazok használata több munkaterületen” című cikk szempontjai és korlátozásai](service-datasets-across-workspaces.md#considerations-and-limitations) között találhat.
+Ha egy munkaterületen vagy alkalmazásban Önnek megfelelő jelentést talál, másolatot készíthet róla, amelyet egy másik munkaterületre menthet. Ezt követően módosíthatja a jelentés másolatát, és vizualizációkat vagy más elemeket adhat hozzá vagy törölhet. Az adatmodell elkészítésével nem kell foglalkoznia. Azt már létrehozták az Ön számára. Egy meglévő jelentést ráadásul sokkal egyszerűbb módosítani, mint egy üresből kiindulni. Azonban amikor a saját munkaterületén hoz létre egy alkalmazást, előfordulhat, hogy nem teheti közzé az alkalmazásban a jelentés másolatát. További információt az [„Adathalmazok használata több munkaterületen” című cikk szempontjai és korlátozásai](service-datasets-across-workspaces.md#considerations-and-limitations) között találhat.
 
 > [!NOTE]
 > Másolat készítéséhez Pro-licencre van szüksége, még akkor is, ha az eredeti jelentés egy Premium-kapacitásbeli munkaterületen található.
 
-## <a name="save-a-copy-of-a-report"></a>Jelentés másolatának mentése
+## <a name="save-a-copy-of-a-report-in-a-workspace"></a>A jelentés másolatának mentése a munkaterületen
 
-1. Egy alkalmazásban vagy munkaterületen nyissa meg a Jelentéslista nézetet.
+1. Egy munkaterületen nyissa meg a Jelentéslista nézetet.
+
+    ![Jelentéslista nézet](media/service-datasets-copy-reports/power-bi-report-list-view.png)
 
 1. A **Műveletek** alatt válassza a **Másolat mentése** lehetőséget.
 
@@ -37,22 +39,46 @@ Ha egy munkaterületen vagy alkalmazásban Önnek megfelelő jelentést talál, 
 
     ![Másolat mentése párbeszédpanel](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 
-    Attól függ, hogy mely munkaterületre menthet, hogy honnan másol. Munkaterületről való másoláskor a jelentést az aktuális vagy másik munkaterületre is mentheti a Power BI szolgáltatásban. Csak azokat az új felületű munkaterületeket látja, amelyeknek tagja. Alkalmazásból való másoláskor a jelentést a Saját munkaterületre mentheti.
+    A jelentést az aktuális munkaterületre, vagy másikra is mentheti a Power BI szolgáltatásban. Csak azokat az új felületű munkaterületeket látja, amelyeknek tagja. 
   
 4. Kattintson a **Mentés** gombra.
 
-    Amikor menti a jelentés másolatát, élő kapcsolatot hoz létre az adathalmazzal, és úgy nyithatja meg a jelentéskészítő felület, hogy a teljes adathalmaz elérhető lesz. Nem készített másolatot az adathalmazról. Az adathalmaz továbbra is az eredeti helyén található. Az adathalmaz összes tábláját és mértékét felhasználhatja a saját jelentésében. Az adathalmazra vonatkozó sorszintű biztonsági (RLS) korlátozások érvényben vannak, így csak azokat az adatokat fogja látni, amelyekre az RLS-szerepköre alapján jogosult.
-
-    A Power BI automatikusan létrehoz egy elemet az adathalmazok listájában, ha a jelentés alapja a munkaterületen kívüli adathalmaz. Ennek az adathalmaznak az ikonja más, mint a munkaterületen lévő adathalmazoké: ![Megosztott adathalmaz ikonja](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
-
-
+    A Power BI automatikusan létrehoz egy másolatot a jelentésről, valamint egy elemet az adathalmazok listájában, ha a jelentés alapja a munkaterületen kívüli adathalmaz. Ennek az adathalmaznak az ikonja más, mint a munkaterületen lévő adathalmazoké: ![Megosztott adathalmaz ikonja](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
+    
     A munkaterület tagjai így láthatják, hogy mely jelentések és irányítópultok használnak a munkaterületen kívüli adathalmazokat. A listaelem az adathalmazzal kapcsolatos információk mellett néhány műveletet is feltüntet.
 
     ![Adathalmaz-műveletek](media/service-datasets-across-workspaces/power-bi-dataset-actions.png)
 
+    További információt a jelentésről és a kapcsolódó adatkészletről a cikk [A jelentés saját másolata](#your-copy-of-the-report) című szakaszában találhat.
+
+## <a name="copy-a-report-in-an-app"></a>Jelentés másolása egy alkalmazásban
+
+1. Az alkalmazásban nyissa meg a másolni kívánt jelentést.
+2. A menüsávon válassza a **További lehetőségek** ( **...** ) > **Másolat mentése** lehetőséget.
+
+    ![Másolat készítése a jelentésről](media/service-datasets-copy-reports/power-bi-save-copy.png)
+
+    A **Másolat mentése** lehetőség csak akkor jelenik meg, ha a jelentés új felületű munkaterületen van, és [Összeállítási engedéllyel](service-datasets-build-permissions.md) rendelkezik.
+
+3. Adjon nevet a jelentésnek, majd válassza a **Mentés** elemet.
+
+    ![A jelentésmásolat elnevezése](media/service-datasets-copy-reports/power-bi-save-report-from-app.png)
+
+    A rendszer automatikusan menti a másolatot a saját munkaterületére.
+
+4. A másolat megnyitásához válassza az **Ugrás a jelentés** lehetőséget.
+
+## <a name="your-copy-of-the-report"></a>A jelentés másolata
+
+Amikor menti a jelentés másolatát, élő kapcsolatot hoz létre az adathalmazzal, és úgy nyithatja meg a jelentéskészítő felület, hogy a teljes adathalmaz elérhető lesz. 
+
+![A jelentés másolatának szerkesztése](media/service-datasets-copy-reports/power-bi-edit-report-copy.png)
+
+Nem készített másolatot az adathalmazról. Az adathalmaz továbbra is az eredeti helyén található. Az adathalmaz összes tábláját és mértékét felhasználhatja a saját jelentésében. Az adathalmazra vonatkozó sorszintű biztonsági (RLS) korlátozások érvényben vannak, így csak azokat az adatokat fogja látni, amelyekre az RLS-szerepköre alapján jogosult.
+
 ## <a name="view-related-datasets"></a>Kapcsolódó adathalmazok megtekintése
 
-A munkaterületén lévő jelentésekről érdemes tudni, hogy melyik adathalmazon alapulnak.
+Ha egy munkaterületen egy másik munkaterület egyik adatkészletén alapuló jelentés található, célszerű többet megtudnia az alapul szolgáló adatkészletről.
 
 1. A Jelentéslista nézetben válassza a **Kapcsolódók megtekintése** lehetőséget.
 

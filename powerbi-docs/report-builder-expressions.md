@@ -1,6 +1,6 @@
 ---
 title: Kifejezések a Power BI Jelentéskészítőben
-description: A Power BI Lapszámozott jelentéskészítővel készült lapszámozott jelentésekben gyakran használnak kifejezéseket az adatok lekéréséhez, kiszámításához, megjelenítéséhez, csoportosításához, rendezéséhez, szűréséhez, paraméterezéséhez és formázásához.
+description: A Power BI Jelentéskészítővel készült lapszámozott jelentésekben gyakran használnak kifejezéseket az adatok lekéréséhez, kiszámításához, megjelenítéséhez, csoportosításához, rendezéséhez, szűréséhez, paraméterezéséhez és formázásához.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d3a72fd967eeb24cfa1093d16c4434447d5fc89d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 96c62fec55f87a31970b624a79314656ced0c159
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840625"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953854"
 ---
 # <a name="expressions-in-power-bi-report-builder"></a>Kifejezések a Power BI Jelentéskészítőben
-  A Power BI Lapszámozott jelentéskészítővel készült lapszámozott jelentésekben gyakran használnak kifejezéseket az adatok lekéréséhez, kiszámításához, megjelenítéséhez, csoportosításához, rendezéséhez, szűréséhez, paraméterezéséhez és formázásához. 
+  A Power BI Jelentéskészítővel készült lapszámozott jelentésekben gyakran használnak kifejezéseket az adatok lekéréséhez, kiszámításához, megjelenítéséhez, csoportosításához, rendezéséhez, szűréséhez, paraméterezéséhez és formázásához. 
   
   Számos jelentéselem tulajdonságaiként beállíthatók kifejezések. A kifejezések segítenek a jelentés tartalmának, kivitelének és használhatóságának szabályozásában. A kifejezések Visual Basicben vannak megírva, a jelentésdefinícióba vannak mentve, és a jelentésfeldolgozó értékeli ki őket a jelentés futtatásakor.  
   

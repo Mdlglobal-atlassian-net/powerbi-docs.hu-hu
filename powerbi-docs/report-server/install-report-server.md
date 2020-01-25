@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/26/2019
-ms.openlocfilehash: 7297e73dc0e412f75412eb48398ef9c85cda8d6e
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/16/2020
+ms.openlocfilehash: 0b57ec084477955086b3d1bb0acd0a3139d325c6
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74565777"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160604"
 ---
 # <a name="install-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló telepítése
 
@@ -146,6 +146,7 @@ Nyissa meg a webszolgáltatás és a webes portál URL-címére konfigurált TCP
 * Ahhoz, hogy a jelentéseket rögzíthesse a Power BI-irányítópulton, konfigurálnia kell a Power BI szolgáltatással történő integrációt az [Integráció a Power BI szolgáltatással](https://docs.microsoft.com/sql/reporting-services/install-windows/power-bi-report-server-integration-configuration-manager) című témakörben leírtak szerint.
 * Az előfizetés-feldolgozási levelezés konfigurálásához lásd a [Levelezési beállítások](https://docs.microsoft.com/sql/reporting-services/install-windows/e-mail-settings-reporting-services-native-mode-configuration-manager) és az [E-mailek kézbesítése a jelentéskészítő kiszolgálón](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services) témaköröket.
 * Ha úgy szeretné konfigurálni a webes portált, hogy egy jelentéskészítő számítógépről hozzáférve jelentéseket tekinthessen meg és kezelhessen rajta, tekintse meg a [Tűzfal beállítása a jelentéskészítő kiszolgáló eléréséhez](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) és a [Jelentéskészítő kiszolgáló beállítása távoli felügyelethez](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration) című témaköröket.
+* További részleteket a jelentéskészítő kiszolgáló tulajdonságainak az SQL Server Management Studióban való beállításáról a [Kiszolgálótulajdonságok speciális lapján](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services). A beállítások a Power BI jelentéskészítő kiszolgálóra és az SQL Server Reporting Servicesre is vonatkoznak, hacsak nincs másképp megszabva.
 
 ## <a name="next-steps"></a>Következő lépések
 

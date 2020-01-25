@@ -1,6 +1,6 @@
 ---
 title: Jelentésparaméterek a Power BI Jelentéskészítőben
-description: Ez a témakör sok más mellett a Power BI Lapszámozott jelentéskészítő jelentésparamétereinek gyakori használati módjait és a beállítható tulajdonságokat ismerteti.
+description: Ez a témakör sok más mellett a Power BI Jelentéskészítő jelentésparamétereinek gyakori használati módjait és a beállítható tulajdonságokat ismerteti.
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,16 +9,16 @@ ms.author: maggies
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: d31036676a5960f7f6eb0f346c2c02ab979ff9bc
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 5a7e91c03b11902f324d6a7c639a03f7652acf16
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128419"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160857"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Jelentésparaméterek a Power BI Jelentéskészítőben
 
-Ez a témakör sok más mellett a Power BI Lapszámozott jelentéskészítő jelentésparamétereinek gyakori használati módjait és a beállítható tulajdonságokat ismerteti. Jelentésparaméterekkel szabályozhatja a jelentés adatait, összekötheti a kapcsolódó jelentéseket, és megváltoztathatja a jelentések bemutatásának módját. A Jelentéskészítőben létrehozott lapszámozott jelentésekben jelentésparamétereket használhat.
+Ez a témakör sok más mellett a Power BI Jelentéskészítő jelentésparamétereinek gyakori használati módjait és a beállítható tulajdonságokat ismerteti. Jelentésparaméterekkel szabályozhatja a jelentés adatait, összekötheti a kapcsolódó jelentéseket, és megváltoztathatja a jelentések bemutatásának módját. A Jelentéskészítőben létrehozott lapszámozott jelentésekben jelentésparamétereket használhat.
 
 ## <a name="bkmk_Common_Uses_for_Parameters"></a> A paraméterek gyakori felhasználási módjai
 
@@ -93,7 +93,7 @@ Manuálisan hozhat létre paramétert a Jelentésadatok panelről. A jelentéspa
   
 - Több paraméter választható egy legördülő listából.  
   
-- Egy paraméter értéke kiválasztható egy legördülő listából, ez pedig meghatározza, hogy mely értékek jelenjenek meg egy másik paraméter legördülő listájában. Ezek a paraméterek egymásra épülnek. Egymásra épülő paraméterekkel a paraméterértékek több lépésben szűrhetők, így több ezer érték kezelhető mennyiségre szűkíthető.  
+- Egy paraméter értéke kiválasztható egy legördülő listából, ez pedig meghatározza, hogy mely értékek jelenjenek meg egy másik paraméter legördülő listájában. Ezek a paraméterek egymásra épülnek. Egymásra épülő paraméterekkel a paraméterértékek több lépésben szűrhetők, így több ezer érték kezelhető mennyiségre szűkíthető. További információ: [Hierarchikus paraméterek használata lapszámozott jelentésekben](guidance/paginated-report-cascading-parameter.md).
   
 - A jelentés paraméterérték előzetes kiválasztása nélkül futtatható, mert a paraméterhez létre lett hozva egy alapértelmezett érték.  
   
@@ -148,5 +148,4 @@ Manuálisan hozhat létre paramétert a Jelentésadatok panelről. A jelentéspa
 ## <a name="next-steps"></a>Következő lépések
 
 - [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)  
- 
- 
+- [Hierarchikus paraméterek használata lapszámozott jelentésekben](guidance/paginated-report-cascading-parameter.md)

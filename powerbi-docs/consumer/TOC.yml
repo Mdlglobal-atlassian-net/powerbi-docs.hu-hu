@@ -176,8 +176,8 @@
               href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
             - name: Kedvencek a mobilalkalmazásokban
               href: mobile/mobile-apps-favorites.md
-            - name: A jelentéshasználat konfigurálása a mobilalkalmazásokban (csak telefon)
-              href: mobile/mobile-app-single-tap.md
+            - name: Interakciós beállítások konfigurálása (csak telefon)
+              href: mobile/mobile-app-interaction-settings.md
             - name: Adatriasztások beállítása a Power BI mobilalkalmazásokban
               href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
             - name: Értesítések fogadása a Power BI-mobilalkalmazásokban

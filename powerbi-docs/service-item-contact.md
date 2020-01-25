@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2010
+ms.date: 10/08/2019
 ms.author: lukaszp
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bb98f7bbb92b72512f880513ec94ccb55d64fc67
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7ed0920f66c178c23e6c4db22ff6acd998619522
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872154"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160558"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Kapcsolattartási adatok beállítása jelentésekhez és irányítópultokhoz a Power BI szolgáltatásban
 Ez a cikk egy irányítópult vagy jelentés kapcsolattartási adatainak beállítását ismerteti a Power BI szolgáltatásban.
@@ -60,6 +60,7 @@ A kapcsolattartók listájának adatai máshol is fel vannak használva. Bizonyo
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 * A kapcsolattartó a Power BI szolgáltatásban létrehozott új elemekhez automatikusan be lesz állítva. A meglévő elemek alapértelmezés szerint megjelenítik a munkaterületet.
 * A kapcsolattartási listára bármely felhasználó vagy csoport felvehető, de ezek nem kapnak automatikusan engedélyt az adott elemre. Használjon megosztást, vagy szerepkörön keresztül adjon hozzáférést a munkaterülethez azoknak a felhasználóknak, akiknek szükséges. 
+* A rendszer nem küldi le az elemszintű címlistát az alkalmazásoknak azok közzétételekor. Az új alkalmazásnavigációs felületen található, konfigurálható támogatási URL-lel kezelheti az alkalmazás felhasználóitól érkező visszajelzéseket.
 
 
 ## <a name="next-steps"></a>Következő lépések

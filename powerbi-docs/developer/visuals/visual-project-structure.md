@@ -1,126 +1,179 @@
 ---
 title: A Power BI-vizualizáció projekt szerkezete
-description: A cikk a vizualizációs projektek szerkezetét ismerteti
-author: zBritva
-ms.author: v-ilgali
+description: Ez a cikk egy Power BI-vizualizációs projekt mappa- és fájlszerkezetét ismerteti
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: tutorial
+ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/15/2019
-ms.openlocfilehash: 728aba749f80710fdc0bb1e180b3318e63caa88c
-ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
+ms.date: 01/12/2020
+ms.openlocfilehash: 16e7a317102602ffb4faf04da0ed2cae588a2a4d
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75542093"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925535"
 ---
 # <a name="power-bi-visual-project-structure"></a>A Power BI-vizualizáció projekt szerkezete
 
-A pbiviz new `<visual project name>` parancs végrehajtása után az eszköz létrehozza a mappák és fájlok alapvető struktúráját a(z) `<visual project name>` mappában.
+Egy új Power BI-vizualizáció létrehozásának legjobb módja a [pbiviz](https://www.npmjs.com/package/powerbi-visuals-tools) eszköz használata.
 
-## <a name="visual-project-structure"></a>Vizualizációs projekt szerkezete
+Új vizualizáció létrehozásához lépjen arra a könyvtárra, amelyben tárolni szeretné a vizualizációt, majd futtassa a következő parancsot:
 
-![Vizualizációs projekt szerkezete](./media/visual-project-structure.png)
+`pbiviz new <visual project name>`
 
-* `.vscode` – a projekt beállításait tartalmazza a VS Code számára. A munkaterület a `.vscode/settings.json` fájl szerkesztésével konfigurálható. [A VS Code beállításairól a dokumentációban](https://code.visualstudio.com/docs/getstarted/settings) olvashat.
+A parancs futtatása létrehoz egy Power BI-vizualizációs mappát, amely a következő fájlokat tartalmazza:
 
-* Az `assets` mappa csak az `icon.png` fájlt tartalmazza. Az eszköz ezt a fájlt használja a vizualizáció ikonjaként a Power BI Vizualizációk paneljén.
+```markdown
+project
+├───.vscode
+│   ├───launch.json
+│   └───settings.json
+├───assets
+│   └───icon.png
+├───node_modules
+├───src
+│   ├───settings.ts
+│   └───visual.ts
+├───style
+│   └───visual.less
+├───capabilities.json
+├───package-lock.json
+├───package.json
+├───pbiviz.json
+├───tsconfig.json
+└───tslint.json
+```
 
-    ![A Vizualizációk panel](./media/visualization-pane-analytics-tab.png)
+## <a name="folder-and-file-description"></a>Mappa és fájl leírása
 
-* A `node_modules` mappa tartalmazza [a Node Package Manager által telepített](https://docs.npmjs.com/files/folders.html) összes csomagot.
+Ez a szakasz a **pbiciz** eszköz által létrehozott könyvtár mappáit és fájljait mutatja be.  
 
-* Az `src` mappa a vizualizáció forráskódját tartalmazza. Az eszköz alapértelmezés szerint két fájlt hoz létre:
+### <a name="vscode"></a>.vscode
 
-  * `visual.ts` – a vizualizáció fő forráskódja.
+Ez a mappa tartalmazza a VS Code-projekt beállításait tartalmazza.
 
-  * `settings.ts` – a vizualizáció beállításainak kódja. A fájlbeli osztályok egyszerűbbé teszik a [vizualizáció tulajdonságaival végzett munkát](./objects-properties.md#properties).
+A munkaterület konfigurálásához szerkessze a `.vscode/settings.json` fájlt.
 
-* A `style` mappa a `visual.less` fájlt tartalmazza a vizualizációhoz tartozó stílusokkal.
+További információ: [Felhasználói és munkaterület-beállítások](https://code.visualstudio.com/docs/getstarted/settings)
 
-* A `capabilities.json` fájl a vizualizáció fő tulajdonságait is beállításait tartalmazza. Ezt teszi lehetővé a vizualizáció számára a támogatott funkciók, objektumok, tulajdonságok és adatnézet-leképezések deklarálását.
+### <a name="assets"></a>kapcsolatobjektumok
 
-    [A képességekről a dokumentációban](./capabilities.md) olvashat.
+Ez a mappa tartalmazza az `icon.png` fájlt.
 
-* A `package-lock.json` fájl automatikusan lesz generálva minden olyan művelethez, amelyben az NPM a `node_modules` fát vagy a `package.json` fájlt módosítja.
+A Power BI-vizualizációs eszköz ezt a fájlt használja új Power BI-vizualizációs ikonként a Power BI vizualizációs paneljén.
 
-    [A `package-lock.json` fájlról az NPM hivatalos dokumentációjában](https://docs.npmjs.com/files/package-lock.json) talál további információt.
+<!--- ![Visualization pane](./media/visualization-pane-analytics-tab.png) --->
 
-* A `package.json` fájl a projektcsomagot írja le. Általában a projektről, annak készítőiről, leírásáról és függőségeiről tartalmaz információkat.
+### <a name="src"></a>src
 
-    [A `package.json` fájlról az NPM hivatalos dokumentációjában](https://docs.npmjs.com/files/package.json.html) talál további információt.
+Ez a mappa tartalmazza a vizualizáció forráskódját.
 
-* A `pbiviz.json` fájl a vizualizáció metaadatait tartalmazza. A vizualizáció metaadatai ebben a fájlban adhatók meg.
+Ebben a mappában a Power BI-vizualizációs eszköz a következő fájlokat hozza létre:
+* `visual.ts` – A vizualizáció fő forráskódja.
+* `settings.ts` – A vizualizáció beállításainak kódja. A fájl osztályai definiálják a [vizualizáció tulajdonságait](./objects-properties.md#properties).
 
-    A fájl jellemző tartalma a következő:
+### <a name="style"></a>stílus
 
-  ```json
-    {
-        "visual": {
-            "name": "<visual project name>",
-            "displayName": "<visual project name>",
-            "guid": "<visual project name>23D8B823CF134D3AA7CC0A5D63B20B7F",
-            "visualClassName": "Visual",
-            "version": "1.0.0",
-            "description": "",
-            "supportUrl": "",
-            "gitHubUrl": ""
-        },
-        "apiVersion": "2.6.0",
-        "author": { "name": "", "email": "" },
-        "assets": { "icon": "assets/icon.png" },
-        "externalJS": null,
-        "style": "style/visual.less",
-        "capabilities": "capabilities.json",
-        "dependencies": null,
-        "stringResources": []
-    }
-  ```
+Ez a mappa tartalmazza a vizualizáció stílusainak tárolására szolgáló `visual.less` fájlt.
 
-    Ebben a kódban:
+### <a name="capabilitiesjson"></a>capabilities.json
 
-  * `name` – a vizualizáció belső neve.
+A fájl a vizualizáció fő tulajdonságait és beállításait (vagy [funkcióit](./capabilities.md)) tartalmazza. Ez teszi lehetővé a vizualizáció számára a támogatott funkciók, objektumok, tulajdonságok és [adatnézet-leképezések](./dataview-mappings.md) deklarálását.
 
-  * `displayName` – a vizualizáció megnevezése a Power BI felhasználói felületén.
+### <a name="package-lockjson"></a>package-lock.json
 
-  * `guid` – a vizualizáció egyedi azonosítója.
+A fájl automatikusan létrejön minden olyan művelethez, amelyben az *npm* a `node_modules` fát vagy a `package.json` fájlt módosítja.
 
-  * `visualClassName` – a vizualizáció fő osztályának neve. A Power BI ennek az osztálynak egy példányát hozza létre a vizualizáció Power BI jelentésben történő használatának megkezdéséhez.
+További információt a fájlról a hivatalos [npm-package-lock.json](https://docs.npmjs.com/files/package-lock.json) dokumentációban találhat.
 
-  * `version` – a vizualizáció verziószáma.
+### <a name="packagejson"></a>package.json
 
-  * `author` – a készítő nevét és kapcsolattartási e-mail-címét tartalmazza.
+A fájl a projektcsomagot írja le. A projektről, annak készítőiről, leírásáról és függőségeiről tartalmaz információkat.
 
-  * az `assets` elemen belüli `icon` – a vizualizáció ikonfájljának elérési útja.
+További információt a fájlról a hivatalos [npm-package.json](https://docs.npmjs.com/files/package.json.html) dokumentációban találhat.
 
-  * `externalJS` – a vizualizációban használt JS-kódtárak elérési útjait tartalmazza.
+### <a name="pbivizjson"></a>pbiviz.json
 
-    > [!IMPORTANT]
-    > Az eszköz legfrissebb, 3.x.x vagy annál újabb verziói már nem használják az `externalJS`-t.
+A fájl a vizualizáció metaadatait tartalmazza.
 
-  * `style` – a stílusfájlok elérési útja.
+Ha egy metaadat-bejegyzéseket ismertető megjegyzésekkel ellátott `pbiviz.json` mintafájlt szeretne megtekinteni, lépjen a [metaadat-bejegyzések](#metadata-entries) szakaszra.
 
-  * `capabilities` – a `capabilities.json` fájl elérési útja.
+### <a name="tsconfigjson"></a>tsconfig.json
 
-  * `dependencies` – a `dependencies.json` fájl elérési útja. `dependencies.json` – az R-alapú vizualizációkban használt R-csomagokkal kapcsolatos információkat tartalmaz.
+Konfigurációs fájl a [TypeScripthez](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-  * `stringResources` – honosítási fájlok elérési útjait tartalmazó tömb.
+A fájlnak tartalmaznia annak a **\*.ts** fájlnak az elérési útját, ahol a vizualizáció fő osztálya megtalálható a `pbiviz.json` fájlban, a `visualClassName` tulajdonság által megadott helyen.
 
-  [A vizualizációk nyelvi beállításairól a dokumentációban](./localization.md) talál további információt.
+### <a name="tslintjson"></a>tslint.json
 
-* `tsconfig.json` – konfigurációs fájl a TypeScripthez.
+A fájl a [TSLint-konfigurációt](https://palantir.github.io/tslint/usage/configuration/) tartalmazza.
 
-    [A TypeScript konfigurálásáról a hivatalos dokumentációban](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) talál további információt.
+## <a name="metadata-entries"></a>Metaadat-bejegyzések
 
-    A `files` szakaszban lévő `tsconfig.json` fájlnak tartalmaznia annak a *.ts fájlnak az elérési útját, ahol a vizualizáció fő osztálya megtalálható a `pbiviz.json` fájlban, a `visualClassName` tulajdonság által megadott helyen.
+A `pbiviz.json` fájl következő kódrészletében szereplő megjegyzések a metaadat-bejegyzéseket ismertetik.
 
-* A `tslint.json` fájl a TSLint-konfigurációt tartalmazza.
+> [!NOTE]
+> * A **pbiciz** eszköz 3.x.x verziójától kezdve az `externalJS` nem támogatott.
+> * A honosítási támogatáshoz [adja hozzá a Power BI területi beállítását a vizualizációhoz](./localization.md).
 
-    [A TSLint konfigurálásáról a hivatalos dokumentációban](https://palantir.github.io/tslint/usage/configuration/) talál további információt.
+```json
+{
+  "visual": {
+     // The visual's internal name.
+    "name": "<visual project name>",
+
+    // The visual's display name.
+    "displayName": "<visual project name>",
+
+    // The visual's unique ID.
+    "guid": "<visual project name>23D8B823CF134D3AA7CC0A5D63B20B7F",
+
+    // The name of the visual's main class. Power BI creates the instance of this class to start using the visual in a Power BI report.
+    "visualClassName": "Visual",
+
+    // The visual's version number.
+    "version": "1.0.0",
+    
+    // The visual's description (optional)
+    "description": "",
+
+    // A URL linking to the visual's support page (optional).
+    "supportUrl": "",
+
+    // A link to the source code available from GitHub (optional).
+    "gitHubUrl": ""
+  },
+  // The version of the Power BI API the visual is using.
+  "apiVersion": "2.6.0",
+
+  // The name of the visual's author and email.
+  "author": { "name": "", "email": "" },
+
+  // 'icon' holds the path to the icon file in the assets folder; the visual's display icon.
+  "assets": { "icon": "assets/icon.png" },
+
+  // Contains the paths for JS libraries used in the visual.
+  // Note: externalJS' isn't used in the Power BI visuals tool version 3.x.x or higher.
+  "externalJS": null,
+
+  // The path to the 'visual.less' style file.
+  "style": "style/visual.less",
+
+  // The path to the `capabilities.json` file.
+  "capabilities": "capabilities.json",
+
+  // The path to the `dependencies.json` file which contains information about R packages used in R based visuals.
+  "dependencies": null,
+
+  // An array of paths to files with localizations.
+  "stringResources": []
+}
+```
 
 ## <a name="next-steps"></a>Következő lépések
 
-* A [vizualizáció fogalmáról](./power-bi-visuals-concept.md) bővebben is tájékozódhat, hogy jobban megismerje a vizualizáció, a felhasználó és a Power BI közötti együttműködést.
+* A vizualizációk, felhasználók és a Power BI közötti interakciók megismeréséhez tekintse meg [A Power BI-vizualizáció működési elve](./power-bi-visuals-concept.md) című cikket.
 
-* Saját, teljesen új Power BI-vizualizációk fejlesztést kezdheti meg egy [lépésenkénti útmutató](./custom-visual-develop-tutorial.md) segítségével.
+* Saját, teljesen új Power BI-vizualizációk fejlesztését kezdheti meg egy [lépésenkénti útmutató](./custom-visual-develop-tutorial.md) segítségével.

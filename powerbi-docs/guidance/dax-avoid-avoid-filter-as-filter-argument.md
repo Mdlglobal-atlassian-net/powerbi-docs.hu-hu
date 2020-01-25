@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 935b453dabeaa731a218175526ddddeb980a2b92
-ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
+ms.openlocfilehash: 6abcb77e3eb534e8b5d20c1d5567c117cbb97ffe
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692459"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76161432"
 ---
 # <a name="dax-avoid-using-filter-as-a-filter-argument"></a>DAX: Ne használja a FILTER-t szűrő argumentumaként
 
@@ -36,13 +36,13 @@ CALCULATE(
 
 A CALCULATE függvény elfogadja a [FILTER](/dax/filter-function-dax) DAX-függvény által visszaadott táblázatos kifejezést, amely a **Product** tábla minden sorának szűrőkifejezését kiértékeli. Ez kiadja a helyes eredményt – a vörös termékek értékesítési eredményét. Azonban ez sokkal hatékonyabban is elérhető egy logikai kifejezéssel.
 
-Itt egy továbbfejlesztett mértékdefiníciót láthat, amely táblázatos helyett logikai kifejezést használ.
+Itt egy továbbfejlesztett mértékdefiníciót láthat, amely táblázatos helyett logikai kifejezést használ. A [KEEPFILTERS](/dax/keepfilters-function-dax) DAX-függvény gondoskodik arról, hogy a **Szín** oszlopra alkalmazott meglévő szűrők megmaradjanak, és ne legyenek felülírva.
 
 ```dax
 Red Sales =
 CALCULATE(
     [Sales],
-    'Product'[Color] = "Red"
+    KEEPFILTERS('Product'[Color] = "Red")
 )
 ```
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 01/15/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 1670d3af200c8da672ac7034e4e15f6f460147a7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6fd970064bbe686a433fba0c0675948576edd8c1
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861321"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76039086"
 ---
 # <a name="visual-types-in-power-bi"></a>Vizualizációtípusok a Power BI-ban
 Vizualizációk találhatók jelentésekben, irányítópultokon, és a Q&A-ban is. A vizualizációk egyes típusai a Power BI részei, de vannak *egyéni vizualizációk* is. Az egyéni vizualizációk a Power BI-on kívül készülnek úgy, hogy a jelentések *tervezői* felvehessék azokat a Power BI-jelentésekbe, és -irányítópultokba. 
@@ -22,7 +22,7 @@ Vizualizációk találhatók jelentésekben, irányítópultokon, és a Q&A-ban 
 Ez a cikk a Power BI-szolgáltatás részét képező vizualizációtípusokat tekinti át.  Többnyire ezekkel a vizualizációtípusokkal fog találkozni. Ezen vizualizációk bármelyikéről részletes információkat találhat a [vizualizációsablonok Power BI-jelentések *tervezői* számára készült dokumentációjában](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
-> Ha az egyéni vizualizációkkal szeretne megismerkedni, ilyeneket a [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) **Power BI-vizualizációk** szakaszában kereshet. Minden vizualizációhoz tartozik leírás, a létrehozója adatai, és képernyőkép vagy videó. 
+> Ha az egyéni vizualizációkkal szeretne megismerkedni, ilyeneket a [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)**Power BI-vizualizációk** szakaszában kereshet. Minden vizualizációhoz tartozik leírás, a létrehozója adatai, és képernyőkép vagy videó. 
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>A Power BI-ban rendelkezésre álló vizualizációk listája
 Ez alábbi vizualizációk mind megtalálhatók Power BI-irányítópultokon és -jelentésekben, és [megadhatók a Q&A-ban](end-user-q-and-a.md). Ha szeretné megtudni, hogyan kezelje a vizualizációkat, olvassa el az [Interakció vizualizációkkal jelentésekben, irányítópultokon és alkalmazásokban](end-user-visualizations.md) szakaszt
@@ -139,6 +139,19 @@ A mátrixvizualizáció a táblavizualizáció egyik típusa (lásd a „Tábla�
 ![tortadiagram](media/end-user-visual-type/pbi-nancy-viz-pie.png)
 
 A tortadiagramok a részek egészhez való viszonyát ábrázolják. 
+
+### <a name="power-apps-visual"></a>Power Apps-vizualizáció
+![Power Apps-vizualizáció](media/end-user-visual-type/power-bi-powerapps-visual.png)
+
+A jelentéstervezők létrehozhatnak egy Power App-alkalmazást, amelyet beágyazhatnak egy Power BI-jelentésbe. A felhasználók a Power BI-jelentésen belül használhatják ezt a vizualizációt. 
+
+### <a name="qa-visual"></a>Q&A – vizualizáció
+![Q&A-vizualizációk](media/end-user-visual-type/power-bi-q-and-a.png)
+
+>[!TIP]
+>Az [irányítópultok Q&A-felületéhez](../power-bi-tutorial-q-and-a.md) hasonlóan a Q&A-vizualizációk lehetővé teszik, hogy természetes nyelven tegyen fel kérdéseket az adataival kapcsolatban. 
+
+További információért lásd: [Q&A-vizualizációk a Power BI-ban](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 ### <a name="ribbon-chart"></a>Szalagdiagram
 ![menüszalag-diagram](media/end-user-visual-type/power-bi-ribbon.png)

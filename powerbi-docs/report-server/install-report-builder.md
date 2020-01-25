@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/07/2020
-ms.openlocfilehash: 4cf5d2c1df4d7e0884083d48aa66421e5c43765a
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.openlocfilehash: 1cf8797939eafb69734ecd0f4be752926d1994a1
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75735143"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953937"
 ---
 # <a name="install-report-builder---power-bi-report-server"></a>A Jelentéskészítő telepítése – Power BI jelentéskészítő kiszolgáló
 
 A Jelentéskészítő egy önálló alkalmazás, amelyet Ön vagy egy rendszergazda telepít a számítógépre. Telepítheti a Microsoft letöltőközpontból vagy a Power BI jelentéskészítő kiszolgálóról.  
 
-Segítségre van szüksége a Power BI szolgáltatás Jelentéskészítőjének telepítésében? Lásd: [A Power BI lapszámozott jelentéskészítője](../report-builder-power-bi.md).
+Segítségre van szüksége a Power BI szolgáltatás Jelentéskészítőjének telepítésében? Lásd: [Power BI Jelentéskészítő](../report-builder-power-bi.md).
   
 Általában egy rendszergazda telepíti és konfigurálja a Power BI jelentéskészítő kiszolgálót, ad engedélyt a Jelentéskészítő letöltésére a webportálról, valamint kezeli a jelentéskiszolgálóra mentett megosztott adatkészleteket, valamint a jelentések mappáit és engedélyeit. További információ a Power BI jelentéskészítő kiszolgálóról: [Rendszergazdai áttekintés, Power BI jelentéskészítő kiszolgáló](admin-handbook-overview.md).  
   

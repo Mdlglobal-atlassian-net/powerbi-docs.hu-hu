@@ -6,63 +6,68 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/14/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6b69f701e0a5b9030a1f4469d6b09b189759debc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 358a61c13418bd29a9e83ed7029e8b90f9a5988e
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876179"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76161533"
 ---
 # <a name="run-r-scripts-in-power-bi-desktop"></a>R-szkriptek futtatása a Power BI Desktopban
-R-szkripteket futtathat közvetlenül a **Power BI Desktopban** is, és az így kapott adatkészleteket importálhatja Power BI Desktop-adatmodellekbe.
+
+R-szkripteket kapott a Power BI Desktopban futtathat, majd importálhatja az eredményül szolgáló adatkészleteket egy Power BI Desktop-adatmodellbe.
 
 ## <a name="install-r"></a>Az R telepítése
-Az R-szkriptek a Power BI Desktopban való futtatásához telepítenie kell az **R**-t a helyi gépen. Az **R**-t számos helyről ingyen letöltheti és telepítheti, például a [Revolution Open letöltőoldalról](https://mran.revolutionanalytics.com/download/) vagy a [CRAN tárból](https://cran.r-project.org/bin/windows/base/). A Power BI Desktopban használható R-szkriptek jelenlegi kiadása támogatja a Unicode karaktereket és a szóközöket (üres karaktereket) a telepítési útvonalban.
+
+Az R-szkriptek a Power BI Desktopban való futtatásához telepítenie kell az R-t a helyi gépen. Az R-t számos helyről ingyen letöltheti és telepítheti, például a [Microsoft R Application Networkről](https://mran.revolutionanalytics.com/download/) vagy a [CRAN-adattárból](https://cran.r-project.org/bin/windows/base/). Az aktuális kiadás a Unicode karakterek és szóközök (üres karakterek) használatát is támogatja a telepítési útvonalban.
 
 ## <a name="run-r-scripts"></a>R-szkriptek futtatása
-A Power BI Desktopban mindössze néhány lépéssel R-szkriptek futtatásával létrehozhat egy adatmodellt, amelyből aztán jelentéseket hozhat létre, és megoszthatja azokat a Power BI szolgáltatásban. A Power BI Desktopban használható R-szkriptek már támogatják a tizedespontokat (.) és vesszőket (,) tartalmazó számformátumokat is.
+
+Már néhány lépésben futtathat R-szkripteket és létrehozhat egy adatmodellt a Power BI Desktopban. Az adatmodellel jelentéseket hozhat létre, és megoszthatja azokat a Power BI szolgáltatásban. A Power BI Desktopban használható R-szkriptek már támogatják a tizedespontokat (.) és vesszőket (,) tartalmazó számformátumokat is.
 
 ### <a name="prepare-an-r-script"></a>R-szkriptek összeállítása
+
 Ha egy R-szkriptet szeretne futtatni a Power BI Desktopban, hozza létre a szkriptet a helyi R-fejlesztői környezetben, és ellenőrizze, hogy sikeresen futtatható-e.
 
-A szkript a Power BI Desktopban való futtatásához mindenképp ellenőrizze, hogy sikeresen lefut-e egy új és módosítatlan munkaterületen. Ez azt jelenti, hogy minden csomagot és függőséget kifejezetten be kell tölteni és le kell futtatni. A függő szkriptek futtatásához használhatja a *source()* parancsot.
+A szkript a Power BI Desktopban való futtatásához mindenképp ellenőrizze, hogy sikeresen lefut-e egy új és módosítatlan munkaterületen. Ez azt jelenti, hogy minden csomagot és függőséget kifejezetten be kell tölteni és le kell futtatni. A függő szkriptek futtatásához használhatja a `source()` parancsot.
 
 Az R-szkriptek előkészítésére és a Power BI Desktopban való futtatására vonatkozik néhány korlátozás:
 
-* Csak az adatkeretek lesznek importálva, ezért a Power BI-ba importálni kívánt adatokat mindenképp meg kell jeleníteni egy adatkeretben.
-* A Complex és Vector típusú oszlopok nem lesznek importálva, a helyükön a létrejött táblában hibaértékek szerepelnek
-* Az N/A értékek a Power BI Desktopban NULL értékekké lesznek átalakítva.
+* Mivel csak az adatkeretek lesznek importálva, ezért a Power BI-ba importálni kívánt adatokat mindenképp meg kell jeleníteni egy adatkeretben.
+* A Complex és Vector típusú oszlopok nem lesznek importálva, a helyükön a létrejött táblában hibaértékek szerepelnek.
+* Az `N/A` értékek a Power BI Desktopban `NULL` értékekké lesznek átalakítva.
 * A 30 percnél hosszabb ideig futó R-szkriptek időtúllépési hibát adnak vissza.
 * Ha az R-szkriptben interaktív hívás van megadva (például felhasználói válaszra vár), az megszakítja a szkript futását.
 * Az R-szkriptekben a munkakönyvtárak megadásánál teljes és nem relatív elérési utat *kell* megadni.
 
 ### <a name="run-your-r-script-and-import-data"></a>R-szkriptek futtatása és az adatok importálása
-1. A Power BI Desktopban az R-szkriptek adatösszekötője az **Adatok lekérése** menüpontban található. Az R-szkript futtatásához válassza az **Adatok lekérése &gt; Továbbiak...** , majd az **Egyéb &gt; R-szkript** lehetőséget, amint az az alábbi ábrán is látható:
-   
-   ![](media/desktop-r-scripts/r-scripts-1.png)
-2. Ha az R telepítve van a helyi gépen, a rendszer a legfrissebb telepített verziót választja R-motorként. Egyszerűen másolja a szkriptet a szkriptablakba, és kattintson az **OK** gombra.
-   
-   ![](media/desktop-r-scripts/r-scripts-2.png)
-3. Ha az R nincs telepítve, nem azonosítható, vagy több példányban is telepítve van a helyi gépen, nyissa ki **Az R telepítési beállításai** területet a telepítési beállítások megjelenítéséhez, vagy válassza ki, melyik telepítéssel szeretné futtatni az R-szkriptet.
-   
-   ![](media/desktop-r-scripts/r-scripts-3.png)
-   
-   Ha az R telepítve van, de a rendszernek nem sikerült azonosítania, közvetlenül megadhatja a helyét **Az R telepítési beállításai** terület megnyitásakor megjelenő szövegmezőben. A fenti képen a *C:\Program Files\R\R-3.2.0* elérési út van megadva a szövegmezőben.
-   
-   Az R telepítési beállításai terület a Beállítások párbeszédablak R-szkriptek használata szakaszának közepén található. Az R telepítési beállításainak megadásához válassza a **Fájl > Lehetőségek és beállítások**, majd a **Beállítások > R-szkriptek használata** lehetőséget. Ha az R több telepítése is elérhető, egy legördülő menü jelenik meg, amelyből kiválaszthatja a használni kívánt telepítést.
-   
-   ![](media/desktop-r-scripts/r-scripts-4.png)
-4. Kattintson az **OK** gombra az R-szkript futtatásához. Miután a szkript sikeresen lefutott, kiválaszthatja az eredményül kapott adatkereteket, és a Power BI-modellhez adhatja azokat.
+
+Most már futtathatja az R-szkriptet, és adatokat importálhat a Power BI Desktopba:
+
+1. A Power BI Desktopban válassza az **Adatok lekérése**, majd az **Egyéb** > **R-szkript** lehetőséget, végül pedig a **Csatlakozás** elemet:
+
+    ![Kapcsolódás R-szkripthez, Egyéb kategória, Adatok lekérése párbeszédpanel, Power BI Desktop](media/desktop-r-scripts/r-scripts-1.png)
+
+2. Ha az R telepítve van a helyi gépen, csak másolja a szkriptet a szkript ablakába, és válassza az **OK**lehetőséget. A legújabb telepített verzió az R-motorként jelenik meg.
+
+    ![R-szkript párbeszédpanel, Power BI Desktop](media/desktop-r-scripts/r-scripts-2.png)
+
+3. Kattintson az **OK** gombra az R-szkript futtatásához. Miután a szkript sikeresen lefutott, kiválaszthatja az eredményül kapott adatkereteket, és a Power BI-modellhez adhatja azokat.
+
+Megadhatja, hogy a rendszer melyik R-telepítést használja a szkript futtatásához. Az R telepítési beállításainak megadásához válassza a **Fájl** > **Lehetőségek és beállítások** > **Beállítások** **R-szkriptek használata** lehetőséget. Az **szkript** terület **Észlelt R-kezdőkönyvtárak** legördülő listájában megtekintheti az aktuális R-telepítési lehetőségeket. Ha a kívánt R-telepítés nem szerepel a listán, válassza az **Egyéb** lehetőséget, majd keresse meg vagy adja meg a kívánt R-telepítési könyvtárat **Az R-kezdőkönyvtár beállítása** szakaszban.
+
+![R-szkript beállításai, Beállítások párbeszédpanel, Power BI Desktop](media/desktop-r-scripts/r-scripts-4.png)
 
 ### <a name="refresh"></a>Frissítés
+
 Az R-szkripteket frissítheti a Power BI Desktopban. Az R-szkriptek frissítésekor a Power BI Desktop újra lefuttatja az R-szkriptet a Power BI Desktop környezetében.
 
 ## <a name="next-steps"></a>Következő lépések
+
 Tekintse meg az alábbi, az R programozási nyelv Power BI-ban történő használatára vonatkozó további információkat.
 
-* [R-vizualizációk létrehozása a Power BI Desktopban](desktop-r-visuals.md)
+* [Power BI-vizualizációk létrehozása az R használatával](desktop-r-visuals.md)
 * [Külső R IDE környezet használata a Power BI-jal](desktop-r-ide.md)
-

@@ -1,6 +1,6 @@
 ---
 title: Jelentésadatok a Power BI Jelentéskészítőben
-description: Ha jelentést készít a Power BI Lapszámozott jelentéskészítőjében, első lépésként a jelentésadatokat képviselő adatforrásokat és adatkészleteket kell létrehoznia.
+description: Ha jelentést készít a Power BI Jelentéskészítőjében, első lépésként a jelentésadatokat képviselő adatforrásokat és adatkészleteket kell létrehoznia.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: seodec18
 ms.date: 06/06/2019
-ms.openlocfilehash: cbcb710a806c400ea33ac4d605614b5325277d07
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 602c6a00f773147072b97ecf8c11588bc981eb05
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860418"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953995"
 ---
 # <a name="report-data-in-power-bi-report-builder"></a>Jelentésadatok a Power BI Jelentéskészítőben
 

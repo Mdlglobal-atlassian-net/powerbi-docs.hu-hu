@@ -52,6 +52,8 @@
               href: service-security-enable-data-sensitivity-labels.md
             - name: A Microsoft Cloud App Security használata a Power BI-jal
               href: service-security-using-microsoft-cloud-app-security-controls.md
+            - name: Adatvédelmi metrikák jelentése
+              href: service-security-data-protection-metrics-report.md
         - name: Sorszintű biztonság
           href: ../service-admin-rls.md
         - name: Mobilalkalmazások konfigurálása az Intune-nal

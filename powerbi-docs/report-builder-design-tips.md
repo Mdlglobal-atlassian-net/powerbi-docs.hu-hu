@@ -1,6 +1,6 @@
 ---
 title: Jelentéstervezési tippek a Power BI Jelentéskészítőhöz
-description: Az alábbi tippek segítségével lapszámozott jelentéseket tervezhet a Power BI Lapszámozott jelentéskészítőben.
+description: Az alábbi tippek segítségével lapszámozott jelentéseket tervezhet a Power BI Jelentéskészítőben.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d7e232d09eee2a4cfff17d4565443195e6f7f1aa
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 3b436156d6bd36fe5da7b9b4404227ca1a6de336
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840349"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160535"
 ---
 # <a name="report-design-tips-in-power-bi-report-builder"></a>Jelentéstervezési tippek a Power BI Jelentéskészítőhöz
-  Az alábbi tippek segítségével lapszámozott jelentéseket tervezhet a Power BI Lapszámozott jelentéskészítőben.  
+  Az alábbi tippek segítségével lapszámozott jelentéseket tervezhet a Power BI Jelentéskészítőben.  
   
    
   
@@ -131,7 +131,7 @@ ms.locfileid: "66840349"
   
 -   Ha azt tervezi, hogy .pdf-fájlként menti a jelentést, a jelentés szélességét pontosan arra az értékre kell beállítania, amely a kívánt eredményt adja az exportfájlformátumban. A jelentésoldal szélességét beállíthatja például pontosan 18,6 centiméterre, a bal- és jobboldali margót pedig 1,2 centiméterre.  
   
--   A jelentéstervező eszköztárán található **Nyomtatási elrendezés** és **Oldalbeállítás** lehetőséggel a nyomtatásnak megfelelő nézetben jelenítheti meg a jelentést. A nem kívánt vízszintes oldalakat a következő módon távolíthatja el:  
+-   A jelentéstervező eszköztárán található **Nyomtatási elrendezés** és **Oldalbeállítás** lehetőséggel a nyomtatásnak megfelelő nézetben jelenítheti meg a jelentést. A felesleges üres oldalakat a következő módon távolíthatja el:  
   
     1.  Távolítson el minden üres helyet az adatterületek között és a jelentés szélein.  
   
@@ -140,8 +140,10 @@ ms.locfileid: "66840349"
     3.  Használjon **Téglalapokat** tárolóként, hogy egyszerűbben szabályozhassa a jelentéselemek megjelenítését.  
   
     4.  Az oszlopfejlécekben módosítsa a WritingMode szövegdoboz-tulajdonságot, hogy függőleges szöveget használjon.  
-  
- Ez a viselkedés, a jelentéselemek szélesség és magasság tulajdonsága, a jelentés törzsének mérete, az oldalmagasság és oldalszélesség beállítása, a szülőjelentés margóbeállításai és az oldaltörések megjelenítőre jellemző támogatása együttesen határozza meg, hogy mely jelentéselemek férnek el együtt egy megjelenített oldalon. 
+
+ További információ: [Ne legyenek üres lapok a többoldalas jelentések nyomtatásakor](guidance/report-paginated-blank-page.md).
+
+ Ez a viselkedés, a jelentéselemek szélesség és magasság tulajdonsága, a jelentés törzsének mérete, az oldalmagasság és oldalszélesség beállítása, a szülőjelentés margóbeállításai és az oldaltörések megjelenítőre jellemző támogatása együttesen határozza meg, hogy mely jelentéselemek férnek el együtt egy megjelenített oldalon.
  
 ## <a name="next-steps"></a>Következő lépések
 
