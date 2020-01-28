@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 80fc4f4afe29806077d1bf64a59d8761d7ab1c1d
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 8737a0e9b2dd8ba17d28962ed51e24ec0c5cefc4
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099935"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040470"
 ---
 # <a name="visualization-types-in-power-bi"></a>Vizualizációtípusok a Power BI-ban
 ## <a name="power-bi-visualizations"></a>Power BI-vizualizációk
@@ -145,6 +145,13 @@ További információt a [Power BI mátrixvizualizációit](desktop-matrix-visua
 
 >[!TIP]
 >A tortadiagramok a részek egészhez való viszonyát ábrázolják. 
+
+### <a name="power-apps-visual"></a>Power Apps-vizualizáció
+![Power Apps-vizualizáció](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-powerapps-visual.png)
+
+A jelentéstervezők létrehozhatnak egy Power Apps-alkalmazást, amelyet beágyazhatnak egy Power BI-jelentésbe vizualizációként. A felhasználók a Power BI-jelentésen belül használhatják ezt a vizualizációt. 
+
+További információért lásd: [Power Apps-vizualizáció hozzáadása a jelentéshez](power-bi-visualization-powerapp.md).
 
 ### <a name="qa-visual"></a>Q&A – vizualizáció
 ![Q&A-vizualizációk](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)

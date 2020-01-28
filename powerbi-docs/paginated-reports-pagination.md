@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: fced83abab1898724e165154fbc177ccf50ca061
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 5c2dc39f05609da8a460ac7575498c0df6a96c55
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831240"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160880"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Tördelési mód többoldalas Power BI-jelentésekben
 
@@ -87,6 +87,6 @@ ms.locfileid: "74831240"
   
 ## <a name="next-steps"></a>Következő lépések
 
-[Lapszámozott jelentés megtekintése a Power BI szolgáltatásban](consumer/paginated-reports-view-power-bi-service.md)
-
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- [Lapszámozott jelentés megtekintése a Power BI szolgáltatásban](consumer/paginated-reports-view-power-bi-service.md)
+- [Ne legyenek üres lapok a többoldalas jelentések nyomtatásakor](guidance/report-paginated-blank-page.md)
+- További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

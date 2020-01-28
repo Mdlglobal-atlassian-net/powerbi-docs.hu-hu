@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 749d8d5b62df87b0e6b29d524e90c694a0e38efe
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.openlocfilehash: 6337c4c5e3098d56e869b8ce71117da2413802e6
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622421"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925672"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Munka szervezése az új munkaterületeken a Power BI-ban
 
@@ -124,6 +124,10 @@ A Power BI az alábbi tevékenységeket naplózza az új munkaterületi felület
 | Power BI-mappahozzáférés frissítése| UpdateFolderAccess (Mappahozzáférés frissítése) |
 
 További tudnivalók a [Power BI-beli naplózásról](service-admin-auditing.md).
+
+## <a name="guest-users"></a>Vendégfelhasználók
+
+Az [Azure AD B2B vendégfelhasználói](service-admin-azure-ad-b2b.md) alapértelmezés szerint nem férhetnek hozzá munkaterületekhez. A Power BI-rendszergazdák [engedélyezhetik, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezet tartalmait](service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). Az engedélyezett vendégfelhasználók hozzáférhetnek azokhoz a munkaterületekhez, amelyekhez van engedélyük.
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 

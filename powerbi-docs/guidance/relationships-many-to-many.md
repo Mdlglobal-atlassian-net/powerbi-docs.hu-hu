@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/25/2019
 ms.author: v-pemyer
-ms.openlocfilehash: becde542f68b2f9fb1412a904793f46a8f154856
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 6ce82516413fe43cfbc1336e2f6f51003277fb4a
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75308249"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76161294"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Útmutató a több-a-többhöz kapcsolatokhoz
 
@@ -120,7 +120,7 @@ Dimenzió típusú táblázatok közötti, több-a-többhöz típusú kapcsolato
 - Adjon hozzá egy áthidaló táblázatot a társított entitások tárolása érdekében
 - Hozzon létre egy-a-többhöz típusú kapcsolatokat a három tábla között
 - Konfiguráljon **egy** kétirányú kapcsolatot a ténytáblázatok irányába haladó szűrőpropagálás engedélyezéséhez
-- Ha nem szerepelhetnek hiányzó azonosítóértékek, állítsa az azonosítóoszlopok **Is Nullable** tulajdonságát TRUE (IGAZ) értékre. Az adatfrissítés így meghiúsul hiányzó értékek esetén
+- Ha nem szerepelhetnek hiányzó azonosítóértékek, állítsa az azonosítóoszlopok **Is Nullable** tulajdonságát FALSE (HAMIS) értékre. Az adatfrissítés így meghiúsul hiányzó értékek esetén
 - Rejtse el az áthidaló táblázatot (kivéve, ha az a jelentéshez szükséges további oszlopokat vagy mértékeket tartalmaz)
 - Rejtse el a jelentéshez nem használható azonosítóoszlopokat (például a helyettes kulcsként használt azonosítók esetében)
 - Ha úgy dönt, hogy láthatóként szeretne hagyni egy azonosítóoszlopot, ügyeljen rá, hogy az a kapcsolat „egy” oldalán legyen, és mindig rejtse el a „több” oldali oszlopot. Ez garantálja az optimális szűrőteljesítményt.

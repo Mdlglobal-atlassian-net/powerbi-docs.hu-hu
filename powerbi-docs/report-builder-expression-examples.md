@@ -1,6 +1,6 @@
 ---
 title: Példák kifejezésekre a Power BI Jelentéskészítőben
-description: A Power BI Lapszámozott jelentéskészítővel készülő lapszámozott jelentésekben gyakran használnak kifejezéseket a tartalom és a jelentés megjelenése szabályozására.
+description: A Power BI Report Builderrel készült lapszámozott jelentésekben gyakran használnak kifejezéseket a tartalom és a jelentés megjelenésének szabályozására.
 ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 06847956eae4dfefc7cff75b5a360fbb8b892c39
-ms.sourcegitcommit: d173e22f5a3e76717adfaa573ea391bde0338ffe
+ms.openlocfilehash: 48e81c91a4555b4c8ea847ddffb1413058bbb152
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728546"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953985"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Példák kifejezésekre a Power BI Jelentéskészítőben
-A Power BI Lapszámozott jelentéskészítővel készülő lapszámozott jelentésekben gyakran használnak kifejezéseket a tartalom és a jelentés megjelenése szabályozására. A kifejezések Microsoft Visual Basicben vannak írva, és beépített függvényeket, egyéni kódot, jelentés- és csoportváltozókat és felhasználó által definiált változókat is használhatnak. A kifejezések egyenlőségjellel (=) kezdődnek.   
+A Power BI Report Builderrel készült lapszámozott jelentésekben gyakran használnak kifejezéseket a tartalom és a jelentés megjelenésének szabályozására. A kifejezések Microsoft Visual Basicben vannak írva, és beépített függvényeket, egyéni kódot, jelentés- és csoportváltozókat és felhasználó által definiált változókat is használhatnak. A kifejezések egyenlőségjellel (=) kezdődnek.   
 
 Ez a témakör a jelentésekben gyakori feladatokra használható kifejezésekre mutat példákat.  
   
@@ -202,7 +202,7 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
   
     ```  
   
--   A .NET-keretrendszerbeli `xref:System.Text.RegularExpressions` **reguláriskifejezés**-függvényei (RegEx) használatával meglévő sztringek formátuma módosítható, például formázhat velük egy telefonszámot. Az**Replace** függvény használatával egy telefonszámot alakít át egy mezőben az "*nnn*-*nnn*-*nnnn*" formátumról az "(*nnn*) *nnn*-*nnnn*" formátumra:  
+-   A .NET-keretrendszerbeli `xref:System.Text.RegularExpressions`**reguláriskifejezés**-függvényei (RegEx) használatával meglévő sztringek formátuma módosítható, például formázhat velük egy telefonszámot. Az**Replace** függvény használatával egy telefonszámot alakít át egy mezőben az "*nnn*-*nnn*-*nnnn*" formátumról az "(*nnn*) *nnn*-*nnnn*" formátumra:  
   
     ```  
     =System.Text.RegularExpressions.Regex.Replace(Fields!Phone.Value, "(\d{3})[ -.]*(\d{3})[ -.]*(\d{4})", "($1) $2-$3")  

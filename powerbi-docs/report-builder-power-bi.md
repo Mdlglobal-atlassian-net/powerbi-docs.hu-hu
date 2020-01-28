@@ -1,6 +1,6 @@
 ---
-title: A Power BI többoldalas jelentéskészítője
-description: A Power BI lapszámozott jelentéskészítőjével lapszámozott jelentéseket hozhat létre.
+title: Power BI Jelentéskészítő
+description: A Power BI Report Builderrel lapszámozott jelentéseket hozhat létre.
 ms.date: 11/27/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: faba36a609abd94b2439006fbbcf01a1d193c585
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 5ef6068135e8adcbfd242ca4a6491396101d214e
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74565297"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953898"
 ---
-# <a name="power-bi-paginated-report-builder"></a>A Power BI többoldalas jelentéskészítője
+# <a name="power-bi-report-builder"></a>Power BI Jelentéskészítő
 
- A Power BI lapszámozott jelentéskészítőjével lapszámozott jelentéseket hozhat létre.  Lapszámozott jelentések tervezésekor létrehoz egy jelentésdefiníciót, amely megszabja, hogy milyen adatokat kell lekérni, honnan, és hol kell azokat megjeleníteni. A jelentés futtatásakor a jelentésfeldolgozó a megadott jelentésdefiníció és a lekért adatok a jelentés elrendezésével való egyesítésével létrehozza a jelentést. A jelentés előnézetét a Jelentéskészítőben tekintheti meg. Ezután közzéteheti a jelentést a Power BI szolgáltatásban.
+ A Power BI Report Builderrel lapszámozott jelentéseket hozhat létre.  Lapszámozott jelentések tervezésekor létrehoz egy jelentésdefiníciót, amely megszabja, hogy milyen adatokat kell lekérni, honnan, és hol kell azokat megjeleníteni. A jelentés futtatásakor a jelentésfeldolgozó a megadott jelentésdefiníció és a lekért adatok a jelentés elrendezésével való egyesítésével létrehozza a jelentést. A jelentés előnézetét a Jelentéskészítőben tekintheti meg. Ezután közzéteheti a jelentést a Power BI szolgáltatásban.
 
 Próbálja ki a [Laborgyakorlat: Többoldalas Microsoft Power BI-jelentés létrehozása](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208) anyagot.
 

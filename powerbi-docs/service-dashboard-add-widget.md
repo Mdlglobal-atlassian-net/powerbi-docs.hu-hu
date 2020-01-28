@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a012320a12d2516cb24dc92f2472e3c49ce9081e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 0c9e3db46c66fcd440ebd304370d31539dd5c5c7
+ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73853520"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76282040"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Képek, videók és egyéb elemek hozzáadása az irányítópulthoz
 
@@ -118,15 +118,13 @@ Ha YouTube- vagy Vimeo-videócsempét ad hozzá az irányítópulthoz, a lejáts
 A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy érzékelőadatokat adhat az irányítópult csempéjéhez. A Power BI integrációt hozott létre az adatok PubNubtól való átvételére. Will most elmagyarázza a működését.
    
 
-A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy érzékelőadatokat adhat az irányítópult csempéjéhez. A Power BI integrációt hozott létre az adatok PubNubtól való átvételére. Will most elmagyarázza a működését. 
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
 
 1. A **Csempe hozzáadása** ablakban válassza a **Saját streamelési adatok** > **Tovább** lehetőséget.
 2. Válassza a **Streamelési adathalmaz hozzáadása** lehetőséget.
 3. Hozzon létre **Új streamelési adathalmazt** a Power BI API vagy a PubNub használatával.
 4. Töltse ki az **Adathalmaz neve**, az **Előfizetési kulcs** és a **Csatorna neve** mezőket. Ha a kapcsolat biztonságos, akkor engedélykulccsal is rendelkezik. A kipróbálásához használhatja a PubNubtól származó mintaértékeket.
-5. Kattintson a **Tovább** gombra.
+5. Válassza a **Tovább** lehetőséget.
     Láthatja az adathalmazban elérhető mezőket, azok adattípusát és JSON-formátumát.
 6. Kattintson a **Csatlakozás** gombra.
     Létrehozott egy streamelési adathalmazt.
@@ -135,7 +133,7 @@ A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy
 9. Válassza ki a kívánt vizualizációtípust. Az ilyen adatokhoz többnyire a vonaldiagramok illenek.
 10. Válassza a **Tengely**, **Jelmagyarázat** és **Értékek** lehetőségeket.
 11. Határozza meg a megjeleníteni kívánt időtartamot másodpercben, percben vagy órában.
-12. Kattintson a **Tovább** gombra.
+12. Válassza a **Tovább** lehetőséget.
 13. Ha szeretné, megadhat **Címet** és **Alcímet** is.
 14. Rögzítse az irányítópulton.
 
@@ -148,7 +146,7 @@ A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy
 
 4. Töltse ki az **Adathalmaz neve**, az **Előfizetési kulcs** és a **Csatorna neve** mezőket. Ha a kapcsolat biztonságos, akkor engedélykulccsal is rendelkezik. A kipróbálásához használhatja a PubNubtól származó mintaértékeket.
 
-5. Kattintson a **Tovább** gombra.
+5. Válassza a **Tovább** lehetőséget.
 
    Láthatja az adathalmazban elérhető mezőket, azok adattípusát és JSON-formátumát.
 
@@ -166,7 +164,7 @@ A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy
 
 11. Határozza meg a megjeleníteni kívánt időtartamot másodpercben, percben vagy órában.
 
-12. Kattintson a **Tovább** gombra.
+12. Válassza a **Tovább** lehetőséget.
 
 13. Megadhat hozzá **Címet** és **Alcímet**.
 

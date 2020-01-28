@@ -1,6 +1,6 @@
 ---
 title: Táblázatok, mátrixok és listák a Power BI Jelentéskészítőben
-description: A Power BI Lapszámozott jelentéskészítőben a táblázatok, mátrixok és listák olyan adatterületek, amelyek a lapszámozott jelentés adatait sorokba és oszlopokba szervezett cellákban jelenítik meg.
+description: A Power BI Report Builderben a táblázatok, mátrixok és listák olyan adatterületek, amelyek a lapszámozott jelentés adatait sorokba és oszlopokba szervezett cellákban jelenítik meg.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: f48187edc3d955b3b87f902a3056e86a933817e1
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 02ac131325dab59590cb88c524ace68a1226fc69
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840211"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953847"
 ---
 # <a name="tables-matrixes-and-lists-in-power-bi-report-builder"></a>Táblázatok, mátrixok és listák a Power BI Jelentéskészítőben
  A Jelentéskészítőben a táblázatok, mátrixok és listák olyan *adatterületek*, amelyek a lapszámozott jelentés adatait sorokba és oszlopokba szervezett cellákban jelenítik meg. A cellák tartalma általában szöveges adat, például szöveg, dátum vagy szám, de tartalmazhatnak kijelzőket, diagramokat vagy jelentéselemeket, például képeket is. A táblázatok, mátrixok és listák gyakran használt összefoglaló neve *rácsos* adatterület.  

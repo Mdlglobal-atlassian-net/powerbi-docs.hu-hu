@@ -961,16 +961,18 @@
       items:
         - name: Újdonságok
           href: report-server/whats-new.md
+        - name: Rendszergazdai áttekintés
+          href: report-server/admin-handbook-overview.md
         - name: Változási napló
           href: report-server/changelog.md
         - name: Támogatási ütemterv
           href: report-server/support-timeline.md
+        - name: Always Encrypted-támogatás
+          href: report-server/always-encrypted-support.md
         - name: Hardver- és szoftverkövetelmények
           href: report-server/system-requirements.md
         - name: Böngészőtámogatás
           href: report-server/browser-support.md
-        - name: Rendszergazdai áttekintés
-          href: report-server/admin-handbook-overview.md
         - name: Jelentéskészítő kiszolgálói alapismeretek
           items:
             - name: Power BI-jelentések ütemezett frissítése

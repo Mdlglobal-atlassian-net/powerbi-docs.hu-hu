@@ -1,132 +1,134 @@
 ---
-title: A Power BI-vizualizáció működési elve
-description: A cikk azt ismerteti, hogyan integrálódik a vizualizáció a Power BI-jal
-author: zBritva
-ms.author: v-ilgali
+title: A Power BI-vizualizációkkal kapcsolatos fogalmak
+description: A cikk azt ismerteti, hogyan integrálhatók a vizualizációk a Power BI-jal, és hogy hogyan használhatja a felhasználó a vizualizációkat a Power BI-ban.
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 36742917829013a6efca9d74f88b01bc686437a8
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: bb0834527ba23c6cfcc155cc65cd0318b296ba84
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74700846"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925593"
 ---
-# <a name="power-bi-visual-concept"></a>A Power BI-vizualizáció működési elve
+# <a name="visuals-in-power-bi"></a>Vizualizációk a Power BI-ban
 
-Ez a cikk elmagyarázza, hogy a felhasználó és a vizualizáció hogyan kommunikál a Power BI-jal, és hogyan kommunikál a felhasználó a Power BI-vizualizációval. A diagramon láthatja, hogy mely műveletek befolyásolják közvetlenül a vizualizációt vagy érvényesülnek a Power BI-on keresztül (például a felhasználó könyvjelzőket választ).
+A cikk azt ismerteti, hogyan integrálhatók a vizualizációk a Power BI-jal, és hogy hogyan használhatja a felhasználó a vizualizációkat a Power BI-ban. 
 
-![Power BI-vizualizáció](./media/visual-concept.svg)
+Az alábbi ábra azt mutatja, hogyan vannak feldolgozva a Power BI-ban a felhasználók által a leggyakrabban végzett vizualizációkkal kapcsolatos műveletek.
 
-## <a name="the-visual-gets-update-from-power-bi"></a>A vizualizáció a Power BI-ról frissül
+![Power BI-vizualizációk műveleteinek diagramja](./media/visual-concept.svg)
 
-A vizualizáció `update` metódussal rendelkezik, és ez a metódus általában tartalmazza a vizualizáció fő logikáját, és felelős a diagram vagy az adat megjelenítéséért.
+## <a name="visuals-get-updates-from-power-bi"></a>A vizualizációk frissítéseket kapnak a Power BI-ból
 
-Az `update` metódus hívásában több frissítés is szerepet játszik.
+A vizualizáció egy `update` metódust hív meg a frissítések Power BI-ból való lekéréséhez. Az `update` metódus általában tartalmazza a vizualizáció fő logikáját, és felelős a diagram vagy az adat megjelenítéséért.
 
-### <a name="user-interacts-with-visual-through-power-bi"></a>A felhasználó a vizualizáción keresztül kommunikál Power BI-jal
+A frissítések akkor aktiválódnak, amikor a vizualizáció meghívja az `update` metódust.
+
+## <a name="action-and-update-patterns"></a>Műveleti és frissítési minták
+
+Power BI-vizualizációkban a műveletek és a további frissítések az alábbi három minta valamelyikében történnek:
+
+* A felhasználó a vizualizáción keresztül kommunikál Power BI-jal.
+* A felhasználó közvetlenül lép interakcióba a vizualizációval.
+* A vizualizáció a Power BI-jal kommunikál.
+
+### <a name="user-interacts-with-a-visual-through-power-bi"></a>A felhasználó a vizualizáción keresztül kommunikál Power BI-jal
 
 * A felhasználó megnyitja a vizualizáció tulajdonságainak paneljét.
 
-    A Power BI beolvassa a támogatott objektumokat és tulajdonságokat a vizualizáció `capabilities.json` fájljából, és a tulajdonságok tényleges értékeinek fogadásához a Power BI hívja a vizualizáció `enumerateObjectInstances` metódusát.
+    Amikor a felhasználó megnyitja a vizualizáció tulajdonságainak paneljét, a Power BI beolvassa a támogatott objektumokat és a tulajdonságokat a vizualizáció *properties.json* fájljából. A tulajdonságok tényleges értékeinek beolvasásához a Power BI meghívja a vizualizáció `enumerateObjectInstances` metódusát. A vizualizáció a tulajdonságok tényleges értékeit adja vissza.
 
-    A vizualizációnak a tulajdonságok tényleges értékeit kell visszaadnia.
+    További információ: [A Power BI-vizualizációk képességei és tulajdonságai](capabilities.md).
 
-    További információért [olvasson a vizuális képességekről](capabilities.md).
+* A felhasználó [módosítja a vizualizáció tulajdonságát](../../visuals/power-bi-visualization-customize-title-background-and-legend.md) a formátum panelen.
 
-* [A felhasználó módosítja a vizualizáció tulajdonságát](../../visuals/power-bi-visualization-customize-title-background-and-legend.md) a formátum panelen.
+    Amikor a felhasználó módosítja egy tulajdonság értékét a formátum panelen, a Power BI meghívja a vizualizáció `update` metódusát. A Power BI átadja az új `options` objektumot az `update` metódusnak. Az objektumok tartalmazzák az új értékeket.
 
-    Egy tulajdonság értékének módosítása után a Power BI meghívja a vizualizáció `update` metódusát, és a frissítési metódusba továbbítja az új `options` tulajdonságot az objektumok új értékeivel.
-
-    További információért [olvasson a vizualizáció objektumairól és tulajdonságairól](objects-properties.md).
+    További információ: [A Power BI-vizualizációk objektumai és tulajdonságai](objects-properties.md).
 
 * A felhasználó átméretezi a vizualizációt.
 
-    Amikor a felhasználó megváltoztatja a vizualizáció méretét, a Power BI meghívja az `update` metódust az új `option` objektummal. A beállítások beágyazott `viewport` objektummal rendelkeznek a vizualizáció új szélességével és magasságával.
+    Amikor a felhasználó megváltoztatja a vizualizáció méretét, a Power BI meghívja az `update` metódust az új `options` objektummal. Az `options` objektumok beágyazott `viewport` objektumokkal rendelkeznek, amelyek tartalmazzák a vizualizáció új szélességét és magasságát.
 
-* A felhasználó jelentést, oldalt vagy vizualizációs szintű szűrőt alkalmaz.
+* A felhasználó szűrőt alkalmaz a jelentés, az oldal vagy a vizualizáció szintjén.
 
-    A Power BI a szűrési feltételek alapján szűri az adatokat, és meghívja a vizualizáció `update` metódusát, hogy új adatokat adjon át a vizualizációnak.
+    A Power BI a szűrési feltételek alapján szűri az adatokat. A Power BI meghívja a vizualizáció `update` metódusát, hogy frissítse a vizualizációt az új adatokkal.
 
-    A vizualizáció megkapja az `options` új frissítését az egyik beágyazott objektumban lévő új adattal. Ez a vizualizáció adatnézet-leképezési konfigurációjától függ.
+    A vizualizáció megkapja az `options` objektumok új frissítéseit, ha új adatok érhetőek el valamely beágyazott objektumban. Hogy a frissítés hogyan történik, az a vizualizáció adatnézet-leképezési konfigurációjától függ.
 
-    További információért [olvasson az adatnézet-leképezésekről](dataview-mappings.md).
+    További információ: [A Power BI-vizualizációkban végzett adatnézet-leképezések ismertetése](dataview-mappings.md).
 
-* A felhasználó a jelentés egy másik vizualizációjában kiválasztja az adatpontot.
+* A felhasználó a jelentés egy másik vizualizációjában kiválaszt egy adatpontot.
 
-    A Power BI kiszűri vagy kiemeli a kijelölt adatpontokat, és meghívja a vizualizáció `update` metódusát.
+    Ha a felhasználó a jelentés egy másik vizualizációjában kiválaszt egy adatpontot, a Power BI kiemeli a kiválasztott adatpontokat, és meghívja a vizualizáció `update` metódusát. A vizualizáció megkapja az új szűrt adatokat vagy ugyanazokat az adatokat a kiemelések tömbjével.
 
-    A vizualizáció megkapja az új szűrt adatokat vagy ugyanazokat az adatokat a kiemelések tömbjével.
+    További információ: [Adatpontok kiemelése Power BI-vizualizációkban](highlight.md).
 
-    További információért [olvassa el, hogy lehet kiemelni az adatokat a vizualizációkban](highlight.md).
+* A felhasználó kiválaszt egy könyvjelzőt a jelentés könyvjelzők paneljén.
 
-* A felhasználó kiválasztja a könyvjelzőt a jelentés könyvjelzők paneljén.
+    Ha a felhasználó kiválaszt egy könyvjelzőt a jelentés könyvjelzők paneljén, a következő két művelet egyike történhet:
 
-    Ekkor kétféle művelet végrehajtása történhet:
+    * A Power BI meghívja a `registerOnSelectionCallback` metódus által átadott és regisztrált függvényt. A visszahívási függvény a megfelelő könyvjelző kiválasztásának tömbjét kapja meg.
 
-    1. A Power BI meghívja a `registerOnSelectionCallback` metódussal a regisztráción átesett függvényt, és a visszahívási függvény megkapja a kijelölések tömbjeit a megfelelő könyvjelzőhöz.
+    * A Power BI meghívja az `update` metódust egy megfelelő `filter` objektummal az `options` objektumon belül.
 
-    2. A Power BI meghívja az `update` metódust a megfelelő szűrőobjektummal az `options` tulajdonságban.
+    A vizualizációnak mindkét esetben meg kell változtatnia az állapotát a kapott kiválasztások vagy a `filter` objektum alapján.
 
-    A vizualizációnak mindkét esetben módosítania kell a vizualizáció állapotát a kapott kijelöléseknek vagy szűrőobjektumoknak megfelelően.
+    További információ a könyvjelzők és szűrők használatáról: [Vizualizációszűrő API a Power BI-vizualizációkban](filter-api.md).
 
-    A könyvjelzőkről további részletekért [olvassa el, hogyan kezelheti a könyvjelzőket](filter-api.md).
+### <a name="user-interacts-with-the-visual-directly"></a>A felhasználó közvetlenül lép interakcióba a vizualizációval
 
-    A szűrőkről további információért [olvassa el, hogyan tudják szűrni a Power BI-vizualizációk a más vizualizációkban található adatokat](filter-api.md).
+* A felhasználó az egérmutatót egy adatelem fölé viszi.
 
-### <a name="user-interacts-with-visual-directly"></a>A felhasználó közvetlenül lép interakcióba a vizualizációval
+    A vizualizáció további információt jeleníthet meg az adatpontról a Power BI Elemleírások API-jával. Ha a felhasználó a vizuális elemre viszi az egérmutatót, a vizualizáció képes kezelni az eseményt, és megjeleníti a kapcsolódó elemleírás információit. A vizualizáció képes megjeleníteni akár a standard elemleírást, akár a jelentési oldal elemleírását.
 
-* A felhasználó az egérmutatót az adatelemre viszi
+    További információért lásd: [Elemleírások a Power BI-vizualizációkban](add-tooltips.md).
 
-    A vizualizáció további információt jeleníthet meg az adatpontról a Power BI Elemleírások API-jával.
-    A felhasználó a vizuális elemre viszi az egérmutatót, a vizualizáció képes kezelni az eseményt, és megjeleníti az adatokat az elemleírásban.
+* A felhasználó megváltoztatja a vizualizáció tulajdonságait. (Például a felhasználó kibontja a fát, és a vizualizáció menti a vizualizáció állapotát a tulajdonságokban.)
 
-    A vizualizáció képes megjeleníteni a standard elemleírást vagy a jelentési oldal elemleírását.
+    A vizualizáció mentheti a tulajdonságok értékeit a Power BI API-n keresztül. Ha például egy felhasználó kommunikál a vizualizációval, és a vizualizációnak mentenie vagy frissítenie kell a tulajdonságok értékeit, a vizualizáció meghívhatja a `presistProperties` metódust.
 
-    További információért olvassa el a [elemleírások hozzáadásának módjáról](add-tooltips.md) az útmutatót.
+* A felhasználó kiválaszt egy URL-címet.
 
-* A felhasználó módosítja a vizualizáció tulajdonságait (például a felhasználó kibontja a fát, és a vizualizáció menti az állapotot a tulajdonságokban)
+    Alapértelmezés szerint a vizualizáció közvetlenül nem tud megnyitni URL-címet. Ha az URL-címet új lapon kell megnyitni, a vizualizáció meghívja a `launchUrl` metódust, és paraméterként adja át neki az URL-címet.
 
-    A vizualizáció mentheti a tulajdonságok értékeit a Power BI API-n keresztül. Például, amikor a felhasználó kommunikál a vizualizációval. A vizualizációnak mentenie vagy frissítenie kell a tulajdonságok értékeit. Ehhez a vizualizáció meghívhatja a `presistProperties` metódust.
+    További információkért lásd: [Indítási URL-cím létrehozása](launch-url.md).
 
-* A felhasználó rákattint egy URL-hivatkozásra.
+* A felhasználó szűrőt alkalmaz a vizualizáción keresztül.
 
-    Alapértelmezés szerint a vizualizáció megnyithatja az URL-címet. Az URL új lapon történő megnyitásához a vizualizációnak a `launchURL` metódust kell hívnia, és paraméterként kell átadnia az URL-címet.
+    A vizualizáció meghívhatja az `applyJsonFilter` metódust, és átadhatja az egyéb vizualizációkban tárolt adatok szűrési feltételeit. A szűrők különféle típusai érhetőek el, többek között az alapszintű, a speciális és a rekordos szűrők.
 
-    További információ az [URL indítása API-ról](launch-url.md).
+    További információ: [Vizualizációszűrő API a Power BI-vizualizációkban](filter-api.md).
 
-* A felhasználó szűrőt alkalmaz a vizualizáción keresztül
+* A felhasználó elemeket jelöl ki a vizualizáción.
 
-    A vizualizáció az `applyJSONFilter` metódust hívja, és átadja a szűrési feltételeket a szűrőnek más vizualizációkban történő szűréshez.
+    A Power BI-vizualizációkon belüli kijelöléssel kapcsolatosan az [Interaktivitás hozzáadása kijelöléssel a Power BI-vizualizációkban](selection-api.md) című cikkben talál információt.
 
-    A vizualizáció többféle szűrési típust is használhat, például alapszintű szűrőt, speciális szűrőt rekordszűrőt.
-
-    A szűrőkről további információért [olvassa el, hogyan tudják szűrni a Power BI-vizualizációk a más vizualizációkban található adatokat](filter-api.md).
-
-* A felhasználó rákattint az elemekre a vizualizáción, illetve kijelöli azokat.
-
-    A kijelölésekről további információért [olvassa el, hogyan kommunikálnak a vizualizációk](selection-api.md).
-
-### <a name="the-visual-interacts-with-power-bi"></a>A vizualizáció a Power BI-jal kommunikál
+### <a name="visual-interacts-with-power-bi"></a>A vizualizáció a Power BI-jal kommunikál
 
 * A vizualizáció további adatokat kér a Power BI-tól.
 
-    A vizualizáció képes feldolgozni az adatok soron következő részeit. A FetchMoreData API-metódus az adathalmaz következő részét kéri.
+    A vizualizáció részenként feldolgozza az adatokat. A `fetchMoreData` API-metódus az adathalmaz következő részét lekéri.
 
-    A `fetchMoreData` metódusról további információért [olvassa el, hogyan kérhet le további adatokat a Power BI-ból](fetch-more-data.md)
+    További információ: [További adatok beolvasása a Power BI-ból](fetch-more-data.md).
 
-* Eseményszolgáltatás
+* Az eseményszolgáltatás aktiválódik.
 
-    A Power BI exportálhatja a jelentéseket PDF-fájlba, vagy elküldheti e-mailben (csak a tanúsítvánnyal rendelkező vizualizációk támogatottak). A vizualizáció az Események renderelése API hívásával értesíti a Power BI-t a megjelenítésre való előkészítés befejeződéséről, és arról, hogy készen áll a PDF-fájl/e-mail rögzítésére.
+    A Power BI exportálni tudja a jelentéseket PDF-fájlba, vagy elküldheti e-mailben (csak a tanúsítvánnyal rendelkező vizualizációknál). A vizualizáció az Események renderelése API hívásával értesíti a Power BI-t a megjelenítésre való előkészítés befejeződéséről és arról, hogy készen áll a PDF-fájl vagy az e-mail rögzítésére.
 
-    További információért [olvasson a jelentések Power BI-ból PDF-fájlba történő exportálásáról](../../consumer/end-user-pdf.md)
+    További információért olvassa el a [Jelentések exportálása a Power BI-ból PDF-fájlba](../../consumer/end-user-pdf.md) című cikket.
 
-    További [információ az eseményszolgáltatásról](event-service.md)
+    Az eseményszolgáltatással kapcsolatos további tudnivalókért lásd: [Renderelési események a Power BI-vizualizációkban](event-service.md).
 
 ## <a name="next-steps"></a>Következő lépések
 
-Ön olyan webfejlesztő, aki szeretne saját vizualizációkat létrehozni, és hozzáadni azokat az AppSource-hoz? A [Power BI-vizualizáció fejlesztése](./custom-visual-develop-tutorial.md) című cikkből megtudhatja, hogyan [tehet közzé Power BI-vizualizációkat az AppSource-on](../office-store.md).
+Szeretne saját képi megjelenítéseket létrehozni, és hozzáadni azokat a Microsoft AppSource-hoz? Olvassa el a következő cikkeket:
+
+* [Power BI-vizualizáció fejlesztése](./custom-visual-develop-tutorial.md)
+* [Power BI-vizualizációk közzététele a Partnerközpontban](../office-store.md)
