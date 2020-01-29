@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 09f3a3e2dce7fd3462c5a21f014bf630bfc7c83e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ea4e8da2e821483fc567a3038c6133c60992e593
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879048"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538428"
 ---
 # <a name="apply-data-sensitivity-labels-in-power-bi-preview"></a>Bizalmassági címkék alkalmazása a Power BI-ban (előzetes verzió)
 
@@ -58,6 +58,9 @@ Az adathalmaz Beállítások lapján nyissa meg a Bizalmassági címke szakaszt,
 
 Egy adathalmazra vonatkozó bizalmassági címke az adathalmazokra vonatkozóan leírttal megegyező eljárással alkalmazható vagy módosítható.
 
+## <a name="removing-sensitivity-labels"></a>Bizalmassági címkék eltávolítása
+Ha el szeretne távolítani egy biztonsági címkét egy jelentésről, irányítópultról, adathalmazról vagy adatfolyamról, kövesse [ugyanazt az eljárást, mint a címkék alkalmazásakor](#applying-sensitivity-labels), de válassza a **(Nincs)** lehetőséget, amikor a rendszer az adatok bizalmassági besorolására kérdez rá. 
+
 ## <a name="data-protection-in-exported-files"></a>Adatvédelem exportált fájlokban
 
 Amikor [egy olyan jelentésből exportál adatokat](https://docs.microsoft.com/power-bi/consumer/end-user-export), amely bizalmassági címkével van ellátva, a generált fájl örökli a bizalmassági címkét (Excel, PowerPoint és PDF esetében, a CSV nem támogatott). A bizalmassági címke látható lesz a fájlban, és a fájlhoz való hozzáférés a megfelelő engedélyekkel rendelkezőkre lesz korlátozva.
@@ -73,12 +76,12 @@ A bizalmassági adatcímkék alkalmazása során a következőket kell figyelemb
 * A címkék és védelmi vezérlők exportált fájlokra való érvényesítése csak Excel-, PowerPoint- és PDF-fájlok esetében támogatott. A rendszer nem érvényesíti a címkét és a védelmet, ha az adatokat .CSV-fájlokba, e-mailre való feliratkozással, vizualizációk beágyazásával vagy nyomtatással exportálják.
 * A felhasználónak, aki exportál egy fájlt a Power BI-ból, a bizalmassági címke beállításainak megfelelően engedélye van az adott fájl elérésére és szerkesztésére. Az adatokat exportáló felhasználó nem kap tulajdonosi engedélyt a fájlhoz. 
 * A bizalmassági címkék jelenleg [oldalakra osztott jelentésekhez]( https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi) és munkafüzetekhez nem érhetők el. 
-* A címkéket jelenleg nem lehet törölni a Power BI-objektumokról azok alkalmazása után.
 * A Power BI-objektumok bizalmassági címkéi csak a munkaterületek listájában és az életútnézetekben láthatók; a címkék jelenleg nem láthatók a Kedvencek, a Velem megosztva, a Legutóbbiak vagy az Alkalmazás nézetben. Azt azonban vegye figyelembe, hogy egy Power BI-objektumra alkalmazott címke minden esetben megmarad az Excel-, PowerPoint- vagy PDF-fájlokba exportált adatokon, még akkor is, ha nem látható.
 * A bizalmassági címke *fájltitkosítási beállítása*, mely a [Microsoft 365 Biztonsági központban](https://security.microsoft.com/) vagy a [Microsoft 365 Megfelelőségi központban](https://compliance.microsoft.com/) lett konfigurálva, csak a Power BI-ból *exportált* fájlokra érvényes; a Power BI-on *belül* nem érvényesíti a rendszer.
 * A [HYOK-védelem](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) a Power BI-ban alkalmazott címkék esetében nem támogatott.
 * A címkék Office-alkalmazásokban való megtekintésére és alkalmazására [licencelési követelmények](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels) vonatkoznak.
 * A bizalmassági címkék használata csak a globális (nyilvános) felhőben található bérlők esetében támogatott. A bizalmassági címkék használata a más felhőkben található bérlők esetében nem támogatott.
+* A bizalmassági címkék nem támogatottak [külső felhasználók (Azure Active Directory B2B vendégfelhasználók)](../service-admin-azure-ad-b2b.md) számára. Ez azt jelenti, hogy külső felhasználók nem tekinthetik meg a címkéket, és tiltott számukra az adatok Excel-, PDF- és PPTX-fájlokba exportálása. [Távolítsa el a címkét](#removing-sensitivity-labels), hogy a külső felhasználók is exportálhassanak adatokat ezekbe a fájlformátumokba.
 
 ## <a name="next-steps"></a>Következő lépések
 

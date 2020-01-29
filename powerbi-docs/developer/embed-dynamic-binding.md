@@ -7,30 +7,28 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/07/2019
-ms.openlocfilehash: f797dd55202ff4cba87cc3a15601d85091e94823
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1f54ce3a6bfd69caa3f386b7684e3df7f725523d
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74164062"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709545"
 ---
 # <a name="connect-a-report-to-a-dataset-using-dynamic-binding"></a>Adathalmaz csatlakoztatása jelentéshez dinamikus kötés használatával 
 
-Ha egy jelentés egy adathalmazhoz van csatlakoztatva, használhat dinamikus kötést. A jelentés és az adathalmaz közötti kapcsolatot nevezzük *kötésnek*. A nem előre, hanem a beágyazási ponton meghatározott kötést neve [dinamikus kötés](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLate_binding&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C5d5b0d2d62cf4818f0c108d7635b151e%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637087115150775585&sdata=AbEtdJvgy4ivi4v4ziuui%2Bw2ibTQQXBQNYRKbXn5scA%3D&reserved=0).
- 
+Ha egy jelentés egy adathalmazhoz van csatlakoztatva, használhat dinamikus kötést. A jelentés és az adathalmaz közötti kapcsolatot nevezzük *kötésnek*. A nem előre, hanem a beágyazási ponton meghatározott kötést neve dinamikus kötés.
+
 Power BI-jelentés *dinamikus kötéssel* való beágyazásakor ugyanazt a jelentést a felhasználó hitelesítő adatai alapján különböző adathalmazokhoz is csatlakoztathatja.
- 
+
 Ez azt jelenti, hogy ugyanabban a jelentésben más információkat jeleníthet meg attól az adathalmaztól függően, amelyhez csatlakozik. Egy értékesítési eredményeiket bemutató jelentés például különböző kereskedői adathalmazokhoz csatlakozhat, és más eredményeket állíthat elő attól függően, hogy melyik kereskedő adathalmazához csatlakozik.
- 
+
 A jelentésnek és az adathalmaznak nem kell ugyanazon a munkaterületen lennie. Mindkét munkaterületet (a jelentést tartalmazót és az adathalmazt tartalmazót) hozzá kell rendelni egy [kapacitáshoz](azure-pbie-create-capacity.md).
 
 A beágyazási folyamat részeként mindenképpen *generáljon egy megfelelő engedélyekkel rendelkező jogkivonatot* és *állítsa be a konfigurációs objektumot*.
 
-
 ## <a name="generating-a-token-with-sufficient-permissions"></a>Megfelelő engedélyekkel rendelkező jogkivonat generálása
 
 A dinamikus kötés *a vállalat számára végzett beágyazáshoz* és az *ügyfelek számára végzett beágyazáshoz* is támogatott. Az alábbi táblázat ennek a két esetnek a szempontjait foglalja össze.
-
 
 |Eset  |Az adatok tulajdonjoga  |Jogkivonat  |Követelmények  |
 |---------|---------|---------|---------|

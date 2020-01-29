@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: 7670f8147af54f3b3a6c2c0eba34bb3ca7843eda
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 8a3b9389769c92bc52512dbf1215afa405161cd5
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74264066"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539049"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Gyakori kérdések – Power BI Embedded
 
@@ -67,8 +67,8 @@ Itt látható egy részlet a funkcióeltérések listájából.
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | A SKU-k – Azure-kapacitás | EM SKU-k – O365-kapacitás | P SKU-k – O365-kapacitás |
 | Összetevők beágyazása Power BI-munkaterületről | Igen | Igen | Igen |
-| Power BI-jelentések használata beágyazott alkalmazásokban – Saas | Nem | Igen | Igen |
-| Power BI-jelentések használata beágyazott alkalmazásokban – Paas | Igen | Igen | Igen |
+| Beágyazott alkalmazásokban lévő Power BI-jelentések felhasználása a vállalat számára  | Nem | Igen | Igen |
+| Beágyazott alkalmazásokban lévő Power BI-jelentések felhasználása az ügyfelek számára | Igen | Igen | Igen |
 | Power BI-jelentések használata SharePointban | Nem | Igen | Igen |
 | Power BI-jelentések használata Dynamicsben | Nem | Igen | Igen |
 | Power BI-jelentések használata Teamsben (a mobil alkalmazás kivételével) | Nem | Igen | Igen |
@@ -202,7 +202,7 @@ A PowerBI.com használatával munkaterületeket rendelhet a Power BI Embedded-ka
 
 ### <a name="what-content-pack-data-types-can-you-embed"></a>Milyen tartalomcsomagbeli adattípusokat lehet beágyazni?
 
-Tartalomcsomagok adatkészleteiből készült **irányítópultok** és **csempék** *nem* ágyazhatók be. Tartalomcsomagok adatkészleteiből készült **jelentések** azonban *beágyazhatók*.
+Tartalomcsomagok adatkészleteiből készült **irányítópultok** és **csempék***nem* ágyazhatók be. Tartalomcsomagok adatkészleteiből készült **jelentések** azonban *beágyazhatók*.
 
 ### <a name="what-is-the-difference-between-using-row-level-security-rls-vs-javascript-filters"></a>Mi a különbség a sorszintű biztonság (RLS) és a JavaScript-szűrők használata között?
 

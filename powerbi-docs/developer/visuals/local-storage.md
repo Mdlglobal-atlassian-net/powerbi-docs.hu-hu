@@ -3,17 +3,17 @@ title: A helyi tárolási API használata Power BI-vizualizációkban
 description: A cikk azt ismerteti, hogyan használható a Power BI-vizualizációs API a böngésző helyi tárterületének eléréséhez
 author: uve
 ms.author: v-grniki
-ms.reviewer: sranins
+ms.reviewer: KesemSharabi
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 10/31/2019
-ms.openlocfilehash: f69a3c8928b8079f79b8a6dd5f5b132235a7089c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 01/21/2019
+ms.openlocfilehash: 85517fcd7ec773f947135614c94c0c4e4638ea48
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879889"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539325"
 ---
 # <a name="local-storage-api"></a>Helyi tárolási API
 
@@ -59,4 +59,5 @@ export class Visual implements IVisual {
 
 ## <a name="known-limitations-and-issues"></a>Ismert korlátozások és problémák
 
-A helyi tárolási API alapértelmezés szerint nincs aktiválva az egyéni vizualizációkhoz. Ha szeretné aktiválni az egyéni vizualizációhoz, küldjön kérelmet a Power BI egyéni vizualizációkkal foglalkozó ügyfélszolgálatának `pbicvsupport@microsoft.com`
+A helyi tárolási API alapértelmezés szerint nincs aktiválva az egyéni vizualizációkhoz. Ha szeretné aktiválni az egyéni vizualizációhoz, küldjön kérelmet a Power BI egyéni vizualizációkkal foglalkozó ügyfélszolgálatának `pbicvsupport@microsoft.com`.  
+**Lényeges, hogy a vizualizációnak az [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals)-ban elérhetőnek és [minősítettnek](https://powerbi.microsoft.com/en-us/documentation/powerbi-custom-visuals-certified/) kell lennie.**
