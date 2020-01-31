@@ -6,69 +6,80 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 01/15/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 75462c2414854d0848254a36b89bcdd1de365ec5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 184aeb1f26e54bb8b8935f2f06ec6cad2e282ecf
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863491"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537909"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>A Power BI által támogatott elemzések típusai
 
-A Power BI szolgáltatás automatikusan meg tudja keresni az irányítópultokból vagy jelentésekből származó információkat.
+Kérheti a Power BI-tól, hogy nézze át az adatokat érdekes trendeket és mintázatokat keresve. Ezek a trendek és mintázatok *Elemzés* nevű vizualizációk formában jelennek meg. 
+
+Az Elemzések használatát a [Power BI-elemzések](end-user-insights.md) című cikkből ismerheti meg
+
+![Elemzések](media/end-user-insight-types/power-bi-insight.png)
 
 ## <a name="how-does-insights-work"></a>Az elemzések működése
-A Power BI gyorsan megkeresi az adatkészlet különböző részhalmazait. A Power BI a keresésnél kifinomult algoritmusok alkalmazásával keres az adatkészletben érdekes összefüggések feltárása érdekében. A Power BI adott idő alatt annyi adatot vizsgál meg az adatkészletből, amennyit csak tud.
+A Power BI gyorsan megkeresi az adatkészlet különböző részhalmazait. A Power BI a keresésnél kifinomult algoritmusok alkalmazásával keres az adatkészletben érdekes összefüggések feltárása érdekében. A Power BI-*fogyasztók* elemzéseket futtathatna az irányítópult-csempéken.
 
-Az elemzések egy adathalmazon vagy egy irányítópult-csempén futtathatók.   
+## <a name="some-terminology"></a>Néhány alapfogalom
+A Power BI statisztikai algoritmusokkal fedi fel az elemzési eredményeket. Ezeket az algoritmusokat a cikk következő szakasza sorolja fel és ismerteti. Az algoritmusok megismerése előtt megadunk néhány nem feltétlenül ismert definíciót. 
 
-## <a name="what-types-of-insights-can-we-find"></a>Milyen összefüggések tárhatók fel az elemzésekkel?
-A rendszer többek között az alábbi algoritmusokat használja:
+* **Mérték** – a mértékek kvantitatív (numerikus) mezők, amelyek számítások elvégzésére használhatók. Gyakori számítás az összegzés, az átlagszámítás és a minimum meghatározása. Ha egy vállalat például gördeszkákat gyárt és árusít, akkor mérték lehet az egy év alatt eladott gördeszkák száma és a haszon évenkénti átlaga.  
+* **Dimenzió** – a dimenziók kategorikus (szöveges) adatok. Egy dimenzió egy személyt, objektumot, elemet, terméket, helyet vagy időt ír le. Egy adathalmazban a *mértékek* dimenziók segítségével csoportosíthatók hasznos kategóriákba. A gördeszkagyárban ilyen dimenzió lehet az értékesítés (mint mérték) modellek, színek, országok vagy marketingkampányok szerint.   
+* **Korreláció** – a korreláció az értékek viselkedésének összefüggését mutatja meg.  Ha a növekedésük és csökkenésük mintázata hasonló, akkor pozitív korrelációban állnak. Ha a mintázatok ellentétesek, akkor a korrelációjuk negatív. Ha például a piros gördeszkák értékesítése mindig emelkedik, amikor televíziós marketing-kampányt indítunk, akkor a piros gördeszkák értékesítése és a televíziós kampány pozitívan korrelál.
+* **Idősor** – idősorral az idő ábrázolható egymást követő adatpontok formájában. Ezek az adatpontok követhetik egymást például másodpercenként, óránként, hónaponként vagy évenként.  
+* **Folytonos változó** – egy változó folytonos, ha bármilyen értéket felvehet a minimuma és a maximuma között, ellenkező esetben diszkrétnek nevezzük. Ilyen például a hőmérséklet, a tömeg, az életkor és az idő. A folytonos változók egy érték törtrészeit is tartalmazhatják. Az eladott kék gördeszkák teljes száma diszkrét változó, hiszen fél gördeszkát nem lehet eladni.  
 
-## <a name="category-outliers-topbottom"></a>Kiugró (alsó vagy felső) értékek a kategóriában
-Az adatmodell valamely kategóriája vonatkozásában kiemeli azokat az eseteket, amelyeknél adott dimenzióban az egyik vagy másik elem értéke sokkal nagyobb vagy alacsonyabb, mint a többié.  
+## <a name="what-types-of-insights-can-you-find"></a>Milyen összefüggések tárhatók fel az elemzésekkel?
+A Power BI a következő algoritmusokat használja. 
+
+### <a name="category-outliers-topbottom"></a>Kiugró (alsó vagy felső) értékek a kategóriában
+Kiemeli azokat az eseteket, amikor egy vagy két kategóriában a többinél sokkal magasabbak az értékek.  
 
 ![Kiugró értékek a kategóriákban – példa](./media/end-user-insight-types/pbi-auto-insight-types-category-outliers.png)
 
-## <a name="change-points-in-a-time-series"></a>Időbeli adatsorok változási pontjai
+### <a name="change-points-in-a-time-series"></a>Időbeli adatsorok változási pontjai
 Időbeli adatsoroknál kiemeli, hogy mikor következett be szignifikáns változás a trendekben.
 
 ![Időbeli adatsorok változási pontjai – példa](./media/end-user-insight-types/pbi-auto-insight-types-changepoint.png)
 
-## <a name="correlation"></a>Korreláció
-Észleli, hogy az adatkészletet egy adott dimenzió mentén ábrázolva milyen eseteken korrelálnak egymással a különböző kategóriák értékei.
+### <a name="correlation"></a>Korreláció
+Azokat az eseteket észleli, ahol több mérték hasonló mintázatot vagy trendet mutat egy adathalmazbeli kategória vagy érték szerint ábrázolva.
 
 ![Korrelációs példa](./media/end-user-insight-types/pbi-auto-insight-types-correlation.png)
 
-## <a name="low-variance"></a>Alacsony variancia
+### <a name="low-variance"></a>Alacsony variancia
 Észleli azokat az eseteket, melyeknél az adatpontok közel vannak az átlaghoz.
 
 ![Alacsony variancia példa](./media/end-user-insight-types/power-bi-low-variance.png)
 
-## <a name="majority-major-factors"></a>Többség (fő tényezők)
+### <a name="majority-major-factors"></a>Többség (fő tényezők)
 Megkeresi azokat az eseteket, amelyekben az összérték többségi aránya egy másik dimenzió mentén vizsgálva egyetlen tényezőnek tudható be.  
 
 ![Fő tényezők példa](./media/end-user-insight-types/pbi-auto-insight-types-majority.png)
 
-## <a name="overall-trends-in-time-series"></a>Időbeli adatsorok általános trendjei
+### <a name="overall-trends-in-time-series"></a>Időbeli adatsorok általános trendjei
 Észleli az időrendben elérhető adatok növekvő és csökkenő trendjeit.
 
 ![Időbeli adatsorok általános trendjei – példa](./media/end-user-insight-types/pbi-auto-insight-types-trend.png)
 
-## <a name="seasonality-in-time-series"></a>Időbeli adatsorok szezonális változásai
+### <a name="seasonality-in-time-series"></a>Időbeli adatsorok szezonális változásai
 Azt vizsgálja, hogy felfedezhetőek-e heti, havi vagy éves gyakorisággal ismétlődő minták az időbeli adatsorokban.
 
 ![Szezonalitás példa](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
 
-## <a name="steady-share"></a>Állandó részesedés
+### <a name="steady-share"></a>Állandó részesedés
 Kiemeli azokat az eseteket, amelyekben szülő-gyermek típusú korreláció fedezhető fel egy gyermek érték részesedése és egy folyamatos változó mentén vizsgált teljes szülő érték között.
 
 ![Állandó részesedés példa](./media/end-user-insight-types/pbi-auto-insight-types-steadyshare.png)
 
-## <a name="time-series-outliers"></a>Kiugró értékek egy időbeli adatsorban
+### <a name="time-series-outliers"></a>Kiugró értékek egy időbeli adatsorban
 Időrendben elérhető adatok esetén észleli, hogy vannak-e olyan dátumok vagy időpontok, melyeknél az érték szignifikánsan eltér a többi dátumhoz/időponthoz tartozó értéktől.
 
 ![Kiugró értékek egy időbeli adatsorban példa](./media/end-user-insight-types/pbi-auto-insight-types-time-series-outliers.png)

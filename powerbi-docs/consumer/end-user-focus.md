@@ -7,15 +7,15 @@ featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/23/2019
+ms.date: 01/22/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 633aaf4bd06634f0b1cc7eb2dd38b56eec0cfaf0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f2114d8d4be2e5f9c3b3f34589adc901a0ef4ebb
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73852744"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537735"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>A tartalom részletesebb megjelenítése: fókusz mód és teljes képernyős mód
 
@@ -30,21 +30,20 @@ A fókusz mód és a teljes képernyős mód két különböző mód a vizualiz�
 |Irányítópult     |   Nem lehetséges     | igen |
 |Jelentésoldal   | Nem lehetséges  | igen|
 |Jelentés-vizualizáció | igen    | igen |
-|Irányítópult-csempe | igen    | igen |
+|Irányítópult-csempe | igen    | Nem lehetséges |
 |Windows 10 Mobile | Nem lehetséges | Igen |
 
 ## <a name="what-is-full-screen-mode"></a>Mi az a teljes képernyős mód?
 
 ![irányítópult teljes képernyős módja előtte és utána](media/end-user-focus/power-bi-dashboards-focus.png)
 
-Jelenítse meg menük és navigációs panelek nélkül a Power BI szolgáltatásbeli tartalmakat (irányítópultokat, jelentésoldalakat, csempéket és vizualizációkat), hogy semmi se terelje el róluk a figyelmet.  Így adatait bármikor megtekintheti egy letisztult, teljes képernyős nézetben, és ehhez elég csak odapillantania. Ezt a megjelenítési módot időnként TV módnak is nevezik.   
+A Power BI szolgáltatásbeli tartalmakat (irányítópultokat, jelentésoldalakat és vizualizációkat) megjelenítheti menük és navigációs panelek nélkül, hogy semmi se terelje el róluk a figyelmet.  Így adatait bármikor megtekintheti egy letisztult, teljes képernyős nézetben, és ehhez elég csak odapillantania. Ezt a megjelenítési módot időnként TV módnak is nevezik.   
 
-A teljes képernyős mód megnyitásához válassza a **teljes képernyő** ikont ![teljes képernyő ikon](media/end-user-focus/power-bi-full-screen-icon.png) a Power BI szolgáltatás menüsávjából az irányítópult, jelentés, fókusz módú csempe vagy fókusz módú vizualizáció felett.  A kiválasztott tartalom kitölti a képernyőt.
 Ha a Power BI mobilalkalmazást használja, a [teljes képernyős mód a Windows 10-es mobilalkalmazásoknál érhető el](./mobile/mobile-windows-10-app-presentation-mode.md). 
 
 A teljes képernyős mód néhány felhasználása:
 
-* irányítópult, csempe, vizualizáció vagy jelentés bemutatása egy megbeszélésen vagy konferencián
+* irányítópult, vizualizáció vagy jelentés bemutatása egy megbeszélésen vagy konferencián
 * irodai megjelenítés egy erre a célra kijelölt nagyméretű kijelzőn vagy projektoron
 * megtekintés kis képernyőn
 * véleményezés zárolt módban – anélkül érintheti meg a képernyőt, vagy viheti a csempék fölé az egérmutatót, hogy megnyitná az irányítópultot vagy az alapjául szolgáló jelentést
@@ -53,18 +52,30 @@ A teljes képernyős mód néhány felhasználása:
 
 ***Fókusz*** módban kibonthat egy vizualizációt vagy csempét, így azt részletesebben jelenítheti meg.  Lehetséges, hogy irányítópultja vagy jelentése kissé túlzsúfolt, és szeretne ráközelíteni egyetlen vizualizációra.  Éppen erre való a fókusz mód.  
 
-![irányítópult teljes képernyős módja előtte és utána](media/end-user-focus/power-bi-compare-dash.png)
+![irányítópultcsempe fókusz mód alkalmazása előtt és az után](media/end-user-focus/power-bi-compare-dash.png)
 
 Fókusz módban a Power BI-*fogyasztók* kezelni tudják a vizualizáció létrehozásakor alkalmazott szűrőket.  A Power BI szolgáltatásban a fókusz mód irányítópult-csempén vagy jelentésvizualizáción használható.
 
 ## <a name="working-in-full-screen-mode"></a>Munka a teljes képernyőn
 
-Irányítópult vagy jelentés teljes képernyős megnyitásához válassza a teljes képernyő ikont. ![teljes képernyő ikon](media/end-user-focus/power-bi-full-screen-icon.png) a felső navigációs panelen. Teljes képernyős módban az egér vagy a kurzor mozgatásával környezeti menü jeleníthető meg. Mivel a teljes képernyős mód sokféle tartalomhoz elérhető, a környezeti menük mindegyike kissé eltérő lehetőségeket tartalmaz, de ezek viszonylag egyértelműek.  A definíció megtekintéséhez elég a kurzort egy ikon fölé vinni.
+A teljes képernyős mód irányítópultokhoz, jelentésoldalakhoz és jelentésvizualizációkhoz érhető el. 
+
+- Irányítópult teljes képernyős megnyitásához válassza a teljes képernyő ikont ![teljes képernyő ikon](media/end-user-focus/power-bi-full-screen-icon.png) a felső menüsávon. 
+
+- Jelentésoldal teljes képernyős megnyitásához válassza a **Nézet** > **Teljes képernyő** lehetőséget.
+
+    ![a Nézet menü Teljes képernyő pontjának kiválasztása](media/end-user-focus/power-bi-view.png)
+
+
+- Vizualizáció teljes képernyős megjelenítéséhez először nyissa meg azt fókusz módban, majd válassza a **Nézet** > **Teljes képernyő** lehetőséget.  
+
+
+A kiválasztott tartalom kitölti a képernyőt.    Teljes képernyős módban az egér vagy a kurzor mozgatásával környezeti menü jeleníthető meg. Mivel a teljes képernyős mód sokféle tartalomhoz elérhető, a környezeti menük mindegyike kissé eltérő lehetőségeket tartalmaz, de ezek viszonylag egyértelműek.  A definíció megtekintéséhez elég a kurzort egy ikon fölé vinni.
 
 Irányítópult menüje    
 ![Irányítópult menüje](media/end-user-focus/power-bi-full-screen-dash.png)    
 
-Jelentésoldalak menüje    
+Jelentésoldalak és jelentésvizualizációk menüje    
 ![Jelentések menüje](media/end-user-focus/power-bi-report-full-screen.png)    
 
   * ![Vissza ikon](media/end-user-focus/power-bi-back-icon.png)    
@@ -92,46 +103,36 @@ Jelentésoldalak menüje
 
 ## <a name="working-in-focus-mode"></a>Munka fókusz módban
 
-A fókusz mód kétféleképpen nyitható meg. Az egyik irányítópult-csempékhez, a másik jelentésvizualizációkhoz használható.
+A fókusz mód irányítópultok csempéihez és jelentésvizualizációkhoz érhető el. 
 
-### <a name="focus-mode-in-dashboards"></a>Fókusz mód irányítópultokon
+- Irányítópult-csempe fókusz módban való megnyitásához helyezze a kurzort egy irányítópult-csempe vagy jelentésvizualizáció fölé, válassza a **További lehetőségek** (...) elemet, majd a **Megnyitás fókusz módban** lehetőséget.
 
-1. Nyisson meg egy irányítópultot a Power BI szolgáltatásban.
+    ![csempéhez tartozó Három pont menü](media/end-user-focus/power-bi-dashboard-focus.png).. 
 
-2. Helyezze a kurzort egy irányítópult-csempe vagy jelentésvizualizáció fölé, válassza a **További lehetőségek** (...) elemet, majd a **Megnyitás fókusz módban** lehetőséget.
+- Jelentésvizualizáció fókusz módban való megnyitásához vigye az egeret a vizualizáció fölé, és válassza a **fókusz mód** ikont ![fókusz mód ikon](media/end-user-focus/pbi_popout.jpg).  
 
-    ![csempéhez tartozó Három pont menü](media/end-user-focus/power-bi-dashboard-focus.png).
+   ![fókusz ikon megjelenik a csempén](media/end-user-focus/power-bi-hover-focus-icon.png)
 
-2. A rendszer megnyitja a csempét, és kitölti vele a jelentésvásznat. Figyelje meg, hogy a **Szűrők** panel használatával még mindig kezelni tudja a vizualizációt. A **Szűrők** panel összecsukható.
+
+
+A vizualizáció megnyílik, és kitölti a vásznat. Figyelje meg, hogy a **Szűrők** panel használatával még mindig kezelni tudja a vizualizációt. A **Szűrők** panel és a navigációs panel összecsukható.
 
    ![a csempe kitölti a jelentésvásznat](media/end-user-focus/power-bi-focus-filter.png)
 
-4. Ha [szűrők módosításával](end-user-report-filter.md) kísérletezik, érdekes felfedezéseket tehet adatai között.  
 
-5. Hagyja el a Fókusz módot, és térjen vissza az irányítópulthoz a vizualizáció bal felső sarkában látható **Kilépés a fókusz módból** lehetőséget választva.
+   ![a csempe kitölti a jelentésvásznat és mindkét menü össze van csukva](media/end-user-focus/power-bi-menu-collapse.png)  
 
-    ![kilépés a Fókusz módból](media/end-user-focus/power-bi-exit.png)    
+Ha [szűrők módosításával](end-user-report-filter.md) kísérletezik, érdekes felfedezéseket tehet adatai között.  
 
+Az adatok részletes vizsgálatával új elemzési eredményeket, kérdéseire pedig válaszokat találhat. *Fogyasztóként* nem vehet fel új szűrőket, nem módosíthatja a vizualizációban használt mezőket, és nem hozhat létre új vizualizációkat.  A meglévő szűrőket viszont kezelheti. 
 
-## <a name="focus-mode-for-report-visuals"></a>Fókusz mód jelentésvizualizációkhoz
+Az irányítópult-csempéken végzett módosításokat nem mentheti ki. A jelentésvizualizációk meglévő szűrőin végzett módosításai mentve lesznek, amikor kilép a Power BI-ból. Ha nem szeretné, hogy a Power BI megjegyezze a módosításokat, válassza a **Visszaállítás alapértelmezettre** lehetőséget. ![A Visszaállítás alapértelmezettre gomb](media/end-user-focus/power-bi-resets.png)  
 
-1. Nyisson meg egy jelentést a Power BI szolgáltatásban.  Ezt a példát az Értékesítési és marketing minta használatával mutatjuk be.
+Hagyja el a Fókusz módot, és térjen vissza az irányítópulthoz. Ehhez válassza a vizualizáció bal felső sarkában látható **Kilépés a fókusz módból** vagy **Vissza a jelentéshez** lehetőséget.
 
-1. A jelentés megnyitása után válassza az **Idei kategória** lapot.
+![kilépés a Fókusz módból](media/end-user-focus/power-bi-exit.png)    
 
-2. Vigye a kurzort a bal felső fatérkép fölé, és válassza a **fókusz mód** ikont ![fókusz mód ikon](media/end-user-focus/pbi_popout.jpg).  
-
-   ![fókusz ikon megjelenik a csempén](media/end-user-focus/power-bi-hover-focus-icon.png)
-2. A vizualizáció megnyílik, és kitölti a vásznat.
-
-   ![vizualizáció fókusz módban](media/end-user-focus/power-bi-display-focus-new.png)
-
-3. A **Szűrők** panelt is használhatja a vizualizáció létrehozásához használt szűrők kezeléséhez. Az adatok részletes vizsgálatával új elemzési eredményeket, kérdéseire pedig válaszokat találhat. *Fogyasztóként* nem vehet fel új szűrőket, nem módosíthatja a vizualizációban használt mezőket, és nem hozhat létre új vizualizációkat.  A meglévő szűrőkön végzett módosításai viszont mentve lesznek, amikor kilép a Power BI-ból. Ha nem szeretné, hogy a Power BI megjegyezze a módosításokat, válassza a **Visszaállítás alapértelmezettre** lehetőséget. ![A Visszaállítás alapértelmezettre gomb](media/end-user-focus/power-bi-resets.png)  
-
-
-5. Hagyja el a Fókusz módot, és térjen vissza a jelentéshez a vizualizáció bal felső sarkában látható **Vissza a jelentéshez** lehetőségre kattintva.
-
-    ![kilépés a Fókusz módból](media/end-user-focus/power-bi-back-to-report.png)  
+![kilépés a Fókusz módból](media/end-user-focus/power-bi-back-to-report.png)  
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 

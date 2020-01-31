@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 1/16/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9e00e68e0a5f6df62072a1d9744276bffbd3beb4
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 4570fea58a19acb4f35a5c24d0a5bfa93beba215
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74791667"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537554"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Jelentések exportálása a Power BI-ból PDF-be
 
@@ -63,6 +63,7 @@ Az **Exportálás PDF-be** funkció használatakor figyelembe kell vennie néhá
 * Az URL-szűrők jelenleg nem érvényesek az exportálás **Aktuális értékek** beállításánál.
 * A szokatlan egyéni oldalméretekkel rendelkező jelentések az exportálási helyzetekben problémákkal járhatnak. A legjobb eredmény érdekében érdemes lehet standard oldalméretre váltani a jelentést.
 * PDF-fájlba való exportáláskor az egyéni betűkészletekkel rendelkező témákat használó jelentések egyéni betűkészlete az alapértelmezett betűkészletre lesz cserélve.
+* Habár törekszünk rá, hogy egységes felületet kínáljunk, nem garantálhatjuk, hogy a Power BI szolgáltatásból származó PDF mindig ugyanolyan lesz, mint egy helyi Power BI Desktop-fájlból exportált PDF.
 
 ## <a name="next-steps"></a>Következő lépések
 [Jelentés nyomtatása](end-user-print.md)

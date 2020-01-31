@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 5dd924f066b6382ed895d81ed0ada5d913c040e6
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: cc20d981e1e774eed109c614e146415ec3813601
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75218258"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709792"
 ---
-# <a name="qa-for-power-bi-consumers"></a>Q&A a Power BI-**ügyfelek** számára
+# <a name="qa-for-power-bi-consumers"></a>Q&A a Power BI-ügyfelek számára
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -167,6 +167,10 @@ Ezután válassza a **Beállítások** > **Irányítópultok** elemet. Ellenőri
 **Válasz**: Válassza ki a jelentés vagy irányítópult tulajdonosával való kapcsolatfelvétel lehetőségét. Ezt megteheti közvetlenül a Q&A irányítópult oldaláról vagy a Q&A-vizualizációból. A tulajdonos kilétét a Power BI fejlécéből is kiolvashatja.  A tervező sok mindent tehet a Q&A-eredmények javítása érdekében. A tervező például átnevezheti az adatkészlet oszlopait, hogy azok könnyebben érhető kifejezéseket használjanak (`CustomerFirstName``CustFN` helyett). Mivel a tervező ismeri igazán jól az adathalmazt, hasznos kérdéseket is megfogalmazhat, és felveheti azokat a Q&A által javasolt kérdések közé.
 
 ![Kapcsolattartási adatok megjelenítése](media/end-user-q-and-a/power-bi-q-and-a-contact.png)
+
+## <a name="privacy"></a>Adatvédelem
+
+A Microsoft felhasználhatja az Ön kérdéseit a Power BI továbbfejlesztésére. További információt a [Microsoft adatvédelmi nyilatkozatában](https://go.microsoft.com/fwlink/?LinkId=521839) talál.
 
 ## <a name="next-steps"></a>Következő lépések
 Azt, hogy a *készítőik* hogyan hozzák létre és kezelik a Q&A-vizualizációkat, a [Q&A-vizualizációtípus](../visuals/power-bi-visualization-q-and-a.md) című cikkből tudhatja meg.

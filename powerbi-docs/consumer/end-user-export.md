@@ -7,15 +7,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 01/22/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 0e8a3ce01356804aa5dcca21895fa01b5908ebd0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 27128618fc594a8b7259a3de3862c6766eaecd86
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851315"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537505"
 ---
 # <a name="export-data-from-a-visual"></a>Adatok exportálása vizualizációból
 
@@ -31,15 +31,18 @@ Ha szeretné megtekinteni a vizualizáció létrehozásához használt adatokat,
 
 2. Vigye a kurzort egy vizualizáció fölé, hogy megjelenjen a **További lehetőségek** (...) elem, majd kattintson rá a műveleti menü megjelenítéséhez.
 
-    ![A három pont kiválasztásakor megjelenő menü](media/end-user-export/power-bi-action-menu.png)
+    ![A három pont kiválasztásakor megjelenő menü](media/end-user-export/power-bi-options-menu.png)
 
-3. Válassza az **Exportálás az Excel programba** lehetőséget.
+3. Válassza az **Exportálás .csv-fájlba** lehetőséget.
 
 4. Hogy ez után mi történik, az a böngészőtől függ. A rendszer rákérdezhet a fájl mentésére, vagy a böngésző alján jelenhet meg egy hivatkozás, amely az exportált fájlra mutat. 
 
     ![Chrome böngésző az exportált fájlra mutató hivatkozással](media/end-user-export/power-bi-dashboard-exports.png)
 
-5. Nyissa meg a fájlt az Excelben.  
+5. Nyissa meg a fájlt az Excelben. 
+
+    > [!NOTE]
+    > Ha nem rendelkezik az adatokra vonatkozó engedélyekkel, akkor nem exportálhatja vagy nyithatja meg azokat az Excelben.  
 
     ![Idei egységek teljes száma az Excelben](media/end-user-export/power-bi-excel.png)
 
@@ -53,27 +56,30 @@ Egy jelentésben szereplő vizualizációból is exportálhat adatokat .csv vagy
 
     Mivel a csempe az *Értékesítés és marketing minta* jelentésből lett létrehozva, ez a jelentés fog megnyílni. Ennek is az az oldala nyílik meg, amely a kiválasztott vizualizációt tartalmazza. 
 
-2. Válassza ki a csempét a jelentésben. Figyelje meg a jobb oldali **Szűrők** panelt. Erre a vizualizációra nincs szűrés alkalmazva. A szűrőkről a [Szűrők használata jelentésekben](end-user-report-filter.md) című cikkben olvashat.
+2. Jelölje ki a vizualizációt a jelentésben. Figyelje meg a jobb oldali **Szűrők** panelt. Erre a vizualizációra nincs szűrés alkalmazva. A szűrőkről a [Szűrők használata jelentésekben](end-user-report-filter.md) című cikkben olvashat.
 
     ![A Szűrők panel kiemelve](media/end-user-export/power-bi-export-filter.png)
 
 
-3. Válassza a vizualizáció jobb felső sarkában található három pontot. Válassza az **Adatok exportálása** menüpontot.
+3. A vizualizáció jobb felső sarkában válassza a **További lehetőségek (...)** elemet. Válassza az **Adatok exportálása** menüpontot.
 
     ![A legördülő menüben kijelölt Adatok exportálása menüpont](media/end-user-export/power-bi-export-report.png)
 
 4. Választhat, hogy Összesített vagy Mögöttes adatokat szeretne exportálni. Ha az *Értékesítés és marketing minta* alkalmazást használja, a **Mögöttes adatok** lehetőség le van tiltva. Más jelentéseknél azonban mindkét lehetőség engedélyezett lehet. A különbség magyarázata a következő.
 
-    **Összegzett adatok**: Válassza ezt a lehetőséget, ha a vizualizációban látható adatokat szeretné exportálni.  Az ilyen típusú export csak azokat a vizualizáció létrehozásához felhasznált adatokat tartalmazza. Ha a vizualizáción szűrők vannak alkalmazva, akkor az exportált adatok is szűrve lesznek. Ennél a vizualizációnál például az export csak a 2014. évi adatokat tartalmazza a középső régióból, és gyártók közül is csak négy cég adatait: VanArsdel, Natura, Aliqui és Pirum.
+    **Összegzett adatok**: Válassza ezt a lehetőséget, ha a vizualizációban éppen látható adatokat szeretné exportálni.  Az ilyen típusú export csak a vizualizáció aktuális állapotának létrehozásához felhasznált adatokat tartalmazza. Ha a vizualizáción szűrők vannak alkalmazva, akkor az exportált adatok is szűrve lesznek. Ennél a vizualizációnál például az export csak a 2014. évi adatokat tartalmazza a középső régióból, és gyártók közül is csak négy cég adatait: VanArsdel, Natura, Aliqui és Pirum. Ha a vizualizáció összesítéseket (összeg, átlag stb.) tartalmaz, az export is összesítve lesz. 
   
 
-    **Mögöttes adatok**: Válassza ezt a lehetőséget, ha a vizualizációban látható adatok **mellett** a mögöttes adathalmaz további adatait is exportálni szeretné.  Ezek között lehetnek olyan adatok, amelyeket az adathalmaz tartalmaz, de nincsenek felhasználva a vizualizációhoz. 
+    **Mögöttes adatok**: Válassza ezt a lehetőséget, ha a vizualizációban látható adatok **mellett** a mögöttes adathalmaz további adatait is exportálni szeretné.  Ezek között lehetnek olyan adatok, amelyeket az adathalmaz tartalmaz, de nincsenek felhasználva a vizualizációhoz. Ha a vizualizáción szűrők vannak alkalmazva, akkor az exportált adatok is szűrve lesznek.  Ha a vizualizáció összesítéseket (összeg, átlag stb.) tartalmaz, az exportálás eltávolítja az összesítést, és kiteríti az adatokat. 
 
-    ![A Mögöttes adatok és az Összesített adatok exportálása közötti választást felkínáló menü](media/end-user-export/power-bi-export-option.png)
+    ![A Mögöttes adatok és az Összesített adatok exportálása közötti választást felkínáló menü](media/end-user-export/power-bi-export-underlying.png)
 
 5. Hogy ez után mi történik, az a böngészőtől függ. A rendszer rákérdezhet a fájl mentésére, vagy a böngésző alján megjelenhet egy hivatkozás, amely az exportált fájlra mutat. 
 
     ![Exportált fájl a Microsoft Edge böngészőben megjelenítve](media/end-user-export/power-bi-export-edge-browser.png)
+
+    > [!NOTE]
+    > Ha nem rendelkezik az adatokra vonatkozó engedélyekkel, akkor nem exportálhatja vagy nyithatja meg azokat az Excelben.  
 
 
 6. Nyissa meg a fájlt az Excelben. Hasonlítsa össze az exportált adatok mennyiségét az ugyanebből a vizualizációból az irányítópulton exportáltakéval. A különbség oka, hogy ez az export a **mögöttes adatokat** is tartalmazza. 

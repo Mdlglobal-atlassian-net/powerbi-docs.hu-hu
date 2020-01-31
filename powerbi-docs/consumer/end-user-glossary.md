@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/07/2019
+ms.date: 01/17/2019
 ms.author: mihart
-ms.openlocfilehash: cf70774712a8b72493c8957139d8f802dc4d1ed7
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: e5c3f8b327d6899d83e2304e56e5813a47fc4698
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75836668"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537807"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -77,6 +77,10 @@ Az **automatikus elemzéseket** mostantól *gyorselemzéseknek* nevezzük.
 
 **content view (tartalom nézet)**
 
+**Folytonos változó** – egy változó folytonos, ha bármilyen értéket felvehet a minimuma és a maximuma között, ellenkező esetben diszkrétnek nevezzük. Ilyen például a hőmérséklet, a tömeg, az életkor és az idő. A folytonos változók egy érték törtrészeit is tartalmazhatják. Az eladott kék gördeszkák teljes száma diszkrét változó, hiszen fél gördeszkát nem lehet eladni.
+
+**Korreláció** – a korreláció az értékek viselkedésének összefüggését mutatja meg.  Ha a növekedésük és csökkenésük mintázata hasonló, akkor pozitív korrelációban állnak. Ha a mintázatok ellentétesek, akkor a korrelációjuk negatív. Ha például a piros gördeszkák értékesítése mindig emelkedik, amikor televíziós marketing-kampányt indítunk, akkor a piros gördeszkák értékesítése és a televíziós kampány pozitívan korrelál.
+
 **keresztszűrés** A vizualizációk közötti interakciókra vonatkozik. A keresztszűrés eltávolítja a nem alkalmazható adatokat. Ha például a perecdiagramban a **Moderálás** lehetőséget választja, azzal keresztszűrést végez a vonaldiagramon. A vonaldiagramon most csak azok az adatpontok jelennek meg, amelyek a Moderálás szegmensre vonatkoznak.
 
 **keresztkijelölés** A vizualizációk közötti interakciókra vonatkozik. A keresztkiemelés az összes eredeti adatpontot megtartja, de elhalványítja azokat, amelyek nem vonatkoznak a kijelölésre. Ha például a perecdiagramban a **Moderálás** lehetőséget választja, azzal keresztkijelölést végez a vonaldiagramon. Az összes olyan adat elhalványul az oszlopdiagramon, amely nem vonatkozik a Moderálás szegmensre, és az összes olyan adat ki lesz emelve, amely vonatkozik a Moderálás szegmensre.
@@ -93,7 +97,7 @@ Az **automatikus elemzéseket** mostantól *gyorselemzéseknek* nevezzük.
 
 **data model, Excel Data Model (adatmodell, Excel-adatmodell)** A Power BI-tartalmakban az adatmodellek táblázatos formátumú adatstruktúra-térképeket jelentenek. Az adatmodell az adatbázisok készítéséhez használt kapcsolatokat jeleníti meg. A jelentéskészítők, rendszergazdák és fejlesztők adatmodelleket készítenek, és ezekkel hoznak létre Power BI-tartalmakat is.
 
-**adatfolyamok** Az adatfolyamok big data típusú adatokat töltenek be, alakítanak át, integrálnak és egészítenek ki. Ehhez adatforrás-kapcsolatokat, ETL logikát, frissítésütemezést és egyéb funkciókat definiálhat. Korábban adatkészlet.
+**adatfolyamok** Az adatfolyamok big data típusú adatokat töltenek be, alakítanak át, integrálnak és egészítenek ki. Ehhez adatforrás-kapcsolatokat, ETL logikát, frissítésütemezést és egyéb funkciókat definiálhat. Korábbi megnevezésük adatkészlet volt.
 
 **dataset (adatkészlet)** vagy **data source (adatforrás)** Egy **adathalmaz** vizualizációk és jelentések létrehozásához használt adatok gyűjteménye.
 
@@ -102,8 +106,9 @@ Az **automatikus elemzéseket** mostantól *gyorselemzéseknek* nevezzük.
 **Desktop** vagy **Power BI Desktop** Egy elsősorban jelentéstervezők, rendszergazdák és fejlesztők által használt ingyenes Power BI-eszköz. 
 
 
-
 **diamond (rombusz)** A Power BI Premium jelölése. Annak az ikonnak az alakja, amely azt jelzi, hogy egy adott munkaterület prémium szintű kapacitáson fut.
+
+**Dimenzió** – a dimenziók kategorikus (szöveges) adatok. Egy dimenzió egy személyt, objektumot, elemet, terméket, helyet vagy időt ír le. Egy adathalmazban a *mértékek* dimenziók segítségével csoportosíthatók hasznos kategóriákba. A gördeszkagyárban ilyen dimenzió lehet az értékesítés (mint mérték) modellek, színek, országok vagy marketingkampányok szerint.   
 
 **drill up, drill down, drillthrough (felhatolás, részletes elemzés, részletezés)** A Power BI-ban felhatolással és részletes elemzéssel tárhatja fel a jelentések és vizualizációk további szintjeit. A részletezéssel kijelölheti egy vizualizáció egy részét, és a jelentés egy másik lapjára léphet, amely az eredeti lapon kijelölt vizualizációrészlet adatai szerint van szűrve.
 A részletezés gyakran megjeleníti a mögöttes rekordokat.
@@ -168,6 +173,8 @@ A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helys
 **list page (listaoldal)** vagy **content list (tartalomjegyzék)** A navigációs ablaktábla elemeinek egyik szakasza. Például: Kedvencek, Legutóbbi elemek, Saját munkaterület stb.
 
 ## <a name="m"></a>M
+
+**Mérték** – a mértékek kvantitatív (numerikus) mezők, amelyek számítások elvégzésére használhatók. Gyakori számítás az összegzés, az átlagszámítás és a minimum meghatározása. Ha egy vállalat például gördeszkákat gyárt és árusít, akkor mérték lehet az egy év alatt eladott gördeszkák száma és a haszon évenkénti átlaga.
 
 **Mobile app (Mobilalkalmazás)** Alkalmazások, melyek által a Power BI iOS, Android és Windows rendszerű eszközön is futtatható.
 
@@ -302,6 +309,8 @@ Előfizethet jelentésoldalakra, alkalmazásokra és irányítópultokra, és e-
 ## <a name="t"></a>T
 **tiles (csempék)**  
 A Power BI-irányítópultok jelentéscsempéket tartalmaznak.
+
+**Idősor** – idősorral az idő ábrázolható egymást követő adatpontok formájában. Ezek az adatpontok követhetik egymást például másodpercenként, óránként, hónaponként vagy évenként.  
 
 
 ## <a name="u"></a>U

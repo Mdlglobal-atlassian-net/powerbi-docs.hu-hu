@@ -7,20 +7,25 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 01/17/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5189c92c9da29b38d9ffaa4bf59e271e08fc4b2c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ad7e2133d531abcbb2165dc2be9846a6a70f4fc0
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862717"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537426"
 ---
 # <a name="opt-in-for-power-bi-service-preview-features"></a>Feliratkozás a Power BI szolgáltatás előzetes verziójú funkcióira
 ## <a name="what-are-preview-features"></a>Mik azok az *előzetes verziójú funkciók*?
 Ahogy folyamatosan fejlesztjük a Power BI szolgáltatást, egyes új funkciókat *előzetes verziójú funkciókként* adunk ki. Az előzetes verziójú funkciók be- és kikapcsolhatók, így kipróbálhatja őket.
 
+Egy előzetes funkciók a Power BI-irányítópulton, a Kezdőlapon vagy magában a jelentésben kapcsolhatók be és ki.
+
+   ![Új megjelenés váltógombja](./media/end-user-preview-features/power-bi-toggle.png)
+
+Más előzetes funkciókat a *Beállítások* menüben lehet elérhetővé tenni. Ez a cikk azt mutatja be, hogy hogyan érhetők el az előzetes funkciók a Beállítások menü segítségével.
 
 ## <a name="find-previews-and-turn-them-on-and-off"></a>Az előzetes verziójú funkciók megkeresése és be- (vagy ki-) kapcsolása
 1. Kattintson a Power BI-képernyő jobb felső sarkában lévő fogaskerék ikonra, majd válassza a **Beállítások** elemet a Beállítások menü megnyitásához.

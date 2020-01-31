@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 1/22/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0b581b9c45cb75d12eea974c0895474015634eb1
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 0733e726512ff52c5b51ba2d25cea18f8857f1e8
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73851291"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537597"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Alkalmazások telepítése és használata irányítópultokkal és jelentésekkel a Power BI-ban
 
@@ -48,12 +48,13 @@ Alkalmazásokat a Microsoft AppSource-on is találhat, és onnan telepíthet. Cs
 1. Válassza az **Alkalmazások**  > **Alkalmazások beszerzése** lehetőséget. 
    
     ![Az Alkalmazások letöltése ikon](./media/end-user-app-view/power-bi-get-app2.png)    
-2. Az AppSource-ban a **Saját szervezet** alatti kereséssel szűkítheti a találatok körét, és megtalálhatja a keresett alkalmazást.
+2. Az AppSource-ban, a **Saját szervezet** területen kereséssel szűkítse az eredményeket, hogy megtalálja a keresett alkalmazást.
    
     ![Az AppSource-ban a Saját szervezet alatt](./media/end-user-app-view/power-bi-opportunity-app.png)
 3. A **Letöltés most** lehetőséget választva adhatja hozzá az Alkalmazások tartalomlistához. 
 
-## <a name="get-an-app-from-the-microsoft-appsource-website-httpsappsourcemicrosoftcom"></a>Alkalmazás beszerzése a Microsoft AppSource webhelyről (https://appsource.microsoft.com)
+## <a name="get-an-app-from-the-microsoft-appsource-website"></a>Alkalmazás beszerzése a Microsoft AppSource webhelyről 
+
 Ebben a példában egy Microsoft-mintaalkalmazást nyitunk meg. Az AppSource-on számos olyan alkalmazást talál, amely alkalmas az üzleti feladatainak elvégzéséhez használt szolgáltatásokhoz.  Ezek között olyan szolgáltatások vannak, mint például a Salesforce, a Microsoft Dynamics, a Google Analytics, a GitHub, a Zendesk, a Marketo és sok más. További információt az [Alkalmazások a Power BI-jal használt szolgáltatásokhoz](../service-connect-to-services.md) című témakörben talál. 
 
 1. A böngészőben nyissa meg a https://appsource.microsoft.com webhelyet, majd válassza a **Power BI-alkalmazások** elemet.
@@ -92,12 +93,36 @@ Ebben a példában egy Microsoft-mintaalkalmazást nyitunk meg. Az AppSource-on 
     ![Felfedezés mintaadatokkal](./media/end-user-apps/power-bi-new-app.png)
 
 
-
-
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Irányítópultok és jelentések használata az alkalmazásban
 Szánjon rá egy kis időt, és ismerkedjen meg az alkalmazás részét képező irányítópulton és jelentéseken található adatokkal. Minden szokásos Power BI-művelethez hozzáférhet, többek között a szűréshez, a kijelöléshez, a rendezéshez és a részletezéshez.  Még egy kicsit zavaros, hogy mi a különbség az irányítópultok és a jelentések között?  Olvassa el az [irányítópultokról szóló cikket](end-user-dashboards.md), valamint a [jelentésekről szóló cikket](end-user-reports.md).  
 
+## <a name="update-an-app"></a>Alkalmazás frissítése 
 
+Az alkalmazások készítői időnként az alkalmazás újabb verzióit adhatják ki. Az új verzió beszerzésének módja attól függ, hogy hogyan jutott hozzá az eredetihez. 
+
+* Ha az alkalmazást a vállalatától kapta meg, akkor az új verzióra frissítés a háttérben történik – Önnek nincs teendője. 
+
+* Ha az alkalmazást az AppSource-ból szerezte be, az alkalmazás megnyitásakor egy értesítési sáv jelenik meg. Ez az értesítés tudatja Önnel, hogy új verzió érhető el. 
+
+    1. A frissítéshez válassza a **Letöltés** lehetőséget.  
+
+        <!--![App update notification](./media/end-user-app-view/power-bi-new-app-version-notification.png) -->
+
+    2. Amikor a rendszer rákérdez a frissített alkalmazás telepítésére, válassza a **Telepítés** lehetőséget. 
+
+        ![Frissítés telepítése](./media/end-user-app-view/power-bi-install.png) 
+
+    3. Mivel már rendelkezik az alkalmazásnak egy verziójával, eldöntheti, hogy felülírja a meglévő verziót, vagy új munkaterületen telepíti a frissített alkalmazást.   
+
+        ![Régi alkalmazásverzió felülírása](./media/end-user-app-view/power-bi-already-installed.png) 
+
+
+    > [!NOTE] 
+    > Egy új verzió telepítése a jelentéseken és irányítópultokon végzett összes módosítást felülírja. Ha meg szeretné tartani a módosított jelentéseket és irányítópultokat, telepítés előtt más néven vagy más helyre mentheti azokat. 
+
+    4. A frissített verzió telepítése után válassza az **Alkalmazás frissítése** lehetőséget a frissítési folyamat befejezéséhez. 
+
+    <!--![Update app](./media/end-user-app-view/power-bi-new-app-version-update-app.png) -->
 
 
 ## <a name="next-steps"></a>Következő lépések
