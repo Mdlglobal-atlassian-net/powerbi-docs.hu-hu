@@ -1,27 +1,27 @@
 ---
-title: Bevezetés a színformázás és tengelytulajdonságok használatába
-description: Bevezetés a színformázás és tengelytulajdonságok használatába
+title: Bevezetés a jelentésvizualizációk formázásába
+description: Bevezetés a jelentésvizualizációk formázási beállításainak használatába
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7eded3d17e0db5894bd2f1a03fae49357eb27c69
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: b42d83b4cea6f5f5e8908244b2b298dc3f327468
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762255"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540624"
 ---
-# <a name="get-started-with-color-formatting-and-axis-properties"></a>Bevezetés a színformázás és tengelytulajdonságok használatába
-A **Power BI** szolgáltatásban módosíthatja az adatsorozatok, adatpontok színét, sőt akár a vizualizációk hátteréét is. Módosíthatja az x és y tengely megjelenítésének módját is, így teljes körűen szabályozhatja az irányítópultok és jelentések megjelenését.
+# <a name="getting-started-with-the-formatting-pane"></a>A Formázás panel bemutatása
+Ha egy jelentéshez szerkesztési engedélyekkel rendelkezik, számos formázási lehetőséget érhet el. A **Power BI**-jelentésekben módosíthatja az adatsorozatok, adatpontok színét, sőt akár a vizualizációk hátteréét is. Megváltoztathatja az X és az Y tengely megjelenését. Még a vizualizációk, alakzatok és címek betűtípus-tulajdonságait is beállíthatja, tehát a jelentés megjelenésének minden részletét szabályozni tudja.
 
-Első lépésként válassza a **Jelentés** elemet a **Saját munkaterület** ablaktáblán. Válassza a felső menüben található **Jelentés szerkesztése** elemet.  
+Első lépésként nyisson meg egy jelentést a Power BI Desktopban vagy a Power BI szolgáltatásban. Mindkettő szinte azonos formázási beállításokat kínál. Ha a Power BI szolgáltatásban nyit meg jelentést, mindenképpen válassza a menüsáv **Jelentés szerkesztése** elemét.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_1a.png)
+![Menüsor a Szerkesztés lehetőséggel](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-edit.png)
 
 Ha egy jelentést szerkeszt, és ki van jelölve egy vizualizáció, megjelenik a **Megjelenítések** ablaktábla, amely lehetővé teszi vizualizációk hozzáadását vagy módosítását. Közvetlenül a rendelkezésre álló vizualizációk alatt három ikon látható: a **Mezők** ikon (rudacskák), a **Formátum** ikon (gördülőkefe), és az **Analitika** (nagyító). Az alábbi ábrán a **Mezők** ikon van kijelölve, amit az ikon alatti sárga sáv jelez.
 

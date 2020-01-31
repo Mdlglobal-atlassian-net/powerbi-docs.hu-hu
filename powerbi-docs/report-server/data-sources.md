@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 01/21/2020
 ms.author: maggies
-ms.openlocfilehash: 019cbc489ae6433629898e44088e689767ef12ae
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 343c7d7e81d8e8ec53383feab6dc4dcfb17129d6
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874183"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540590"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>A Power BI-jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón
 A Power Bi-jelentések számos adatforráshoz csatlakozhatnak. Az adatok használatának módjától függően eltérő adatforrások érhetők el. Az adatok importálhatók, vagy közvetlenül DirectQuery- vagy élő SQL Server Analysis Services-kapcsolattal lehet lekérdezni azokat.
@@ -59,7 +59,7 @@ Más adatforrások is működhetnek annak ellenére, hogy a támogatott listán 
 | OLE DB |Igen |Igen |Nem |
 | Oracle Database |Igen |Igen |Igen |
 | PostgreSQL-adatbázis |Igen |Igen |Nem |
-| Power BI szolgáltatás |Nem |Nem |Nem |
+| Power BI szolgáltatásban |Nem |Nem |Nem |
 | R szkript |Igen |Nem |Nem |
 | Salesforce-objektumok |Igen |Nem |Nem |
 | Salesforce-jelentések |Igen |Nem |Nem |
@@ -145,7 +145,7 @@ A Power BI jelentéskészítő kiszolgáló nem támogatja az OAuth-alapú hites
 | OLE DB |Igen |Nem |Igen |Igen |
 | Oracle Database |Nem |Nem |Igen |Igen |
 | PostgreSQL-adatbázis |Nem |Nem |Igen |Nem |
-| Power BI szolgáltatás |Nem |Nem |Nem |Nem |
+| Power BI szolgáltatásban |Nem |Nem |Nem |Nem |
 | R-szkript |Nem |Nem |Nem |Nem |
 | Salesforce-objektumok |Nem |Nem |Nem |Nem |
 | Salesforce-jelentések |Nem |Nem |Nem |Nem |
@@ -202,12 +202,12 @@ A Power BI jelentéskészítő kiszolgáló nem támogatja az OAuth-alapú hites
 | Azure SQL Data Warehouse |Nem |Nem |Igen |Nem |Nem |
 | Oracle Database |Nem |Nem |Igen |Igen |Igen |
 | SAP Business Warehouse-kiszolgáló |Nem |Nem |Igen |Nem |Nem |
-| SAP HANA-adatbázis |Nem |Nem |Igen |Igen |Nem |
+| SAP HANA-adatbázis |Nem |Nem |Igen |Igen |Igen** |
 | Teradata |Nem |Nem |Igen |Igen |Igen |
 
+**Az SAP HANA csak akkor támogatja a DirectQueryt integrált Windows-hitelesítéssel, ha relációs adatbázisként van használva a közzétett Power BI Desktop-fájlban (.pbix).
 
 ## <a name="next-steps"></a>Következő lépések
 Most, hogy csatlakozott az adatforráshoz, az abból származó adatokat használva [hozzon létre egy Power BI-jelentést](quickstart-create-powerbi-report.md).
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-

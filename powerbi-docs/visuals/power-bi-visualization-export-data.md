@@ -8,35 +8,45 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/13/2019
+ms.date: 01/16/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5c2f448ff705f00bc443a6a27fa80e1b5164a901
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 4e42a00c516cf9cd24c307c8f953a6cc7f840314
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75757807"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539773"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>A vizualizáció létrehozásához használt adatok exportálása
 
+> [!IMPORTANT]
+> Nem minden felhasználó tekintheti meg vagy exportálhatja az összes adatot. Ezt a jelentések tervezői és a rendszergazdák korlátozhatják az irányítópultok és jelentések készítésekor. Egyes adatok korlátozott hozzáférésűek, rejtettek vagy bizalmasak lehetnek, így különleges engedélyek nélkül nem tekinthetők meg és nem exportálhatók. 
+
+## <a name="who-can-export-data"></a>Az adatexportálásra jogosultak köre
+
+Ha rendelkezik az adatokra vonatkozó engedélyekkel, láthatja és exportálhatja a Power BI által a vizualizációk létrehozásához használt adatokat. Az adatok gyakran bizalmasak, vagy csak bizonyos felhasználók számára hozzáférhetők. Ilyen esetben Ön nem láthatja vagy exportálhatja ezeket az adatokat. Részletesebb leírást a dokumentum végén, a **Korlátozások és szempontok** szakaszban talál. 
+
+
+## <a name="viewing-and-exporting-data"></a>Adatok megtekintése és exportálása
+
 Ha szeretné megtekinteni a Power BI által a vizualizáció létrehozásához használt adatokat, [megjelenítheti az adatokat a Power BI-ban](service-reports-show-data.md). Ezeket az adatokat *.xlsx*- vagy *.csv*-fájlként az Excelbe is exportálhatja. Az adatexportálási lehetőség használatához Pro- vagy Premium-licenc szükséges, valamint engedélyek az adathalmazhoz és a jelentésekhez. <!--If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.-->
 
-Tekintse meg, ahogyan Will exportálja az adatokat az egyik jelentésében található vizualizációkból, menti őket *.xlsx*-fájlként, és megnyitja a fájlt az Excelben. Ezután a videó alatt látható részletes utasításokat követve próbálkozzon meg a feladat elvégzésével.
+Tekintse meg, ahogyan Will exportálja az adatokat az egyik jelentésében található vizualizációkból, menti őket *.xlsx*-fájlként, és megnyitja a fájlt az Excelben. Ezután a videó alatt látható részletes utasításokat követve próbálkozzon meg a feladat elvégzésével. Vegye figyelembe, hogy a videó készítése során a Power BI egy régebbi verzióját használták.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KjheMTGjDXw" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="export-data-from-a-power-bi-dashboard"></a>Adatok exportálása Power BI-irányítópultról
 
-1. A vizualizáció jobb felső sarkában válassza a három pontot.
+1. A vizualizáció jobb felső sarkában válassza a További műveletek (...) elemet.
 
     ![Vizualizáció képernyőképe a három ponttal jelölt gombra mutató nyíllal.](media/power-bi-visualization-export-data/pbi-export-tile3.png)
 
-1. Válassza az **Adatok exportálása** ikont.
+1. Válassza az **Exportálás .csv-fájlba** lehetőséget.
 
-    ![Képernyőkép a három ponttal jelölt legördülő menüről az Adatok exportálása elem kiemelésével.](media/power-bi-visualization-export-data/pbi_export_dash.png)
+    ![Képernyőkép a három ponttal jelölt legördülő menüről az Adatok exportálása elem kiemelésével.](media/power-bi-visualization-export-data/power-bi-export-data.png)
 
-1. A Power BI egy *.csv*-fájlba exportálja az adatokat. Ha szűrte a vizualizációt, az alkalmazás szűrni fogja a letöltött adatokat.
+1. A Power BI egy *.csv*-fájlba exportálja az adatokat. Ha szűrte a vizualizációt, az exportált .csv-fájl is szűrve lesz. 
 
 1. A böngésző megkéri, hogy mentse a fájlt.  A mentés után nyissa meg a *.csv*-fájlt az Excelben.
 
@@ -44,13 +54,17 @@ Tekintse meg, ahogyan Will exportálja az adatokat az egyik jelentésében talá
 
 ## <a name="export-data-from-a-report"></a>Adatok exportálása jelentésből
 
-Annak érdekében, hogy követni tudja a lépéseket, nyissa meg a [Beszerzéselemzési mintajelentést](../sample-procurement.md) Szerkesztési nézetben. Adjon hozzá egy új üres jelentésoldalt. Ezután kövesse az alábbi lépéseket, és adjon hozzá egy összesítést és egy vizualizáció-szintű szűrőt.
+Annak érdekében, hogy követni tudja a lépéseket, nyissa meg a [Beszerzéselemzési mintajelentést](../sample-procurement.md) a Power BI szolgáltatás Szerkesztés nézetében. Adjon hozzá egy új üres jelentésoldalt. Ezután kövesse az alábbi lépéseket, és adjon hozzá egy összesítést, hierarchiát és egy vizualizáció-szintű szűrőt.
+
+### <a name="create-a-stacked-column-chart"></a>Halmozott oszlopdiagram létrehozása
 
 1. Hozzon létre új **halmozott oszlopdiagramot**.
 
-1. A **Mezők** panelen válassza a **Hely > Város** és a **Számla > Kedvezmény százaléka** lehetőséget.  Előfordulhat, hogy a **Kedvezmény százalékát** át kell helyeznie az **Érték** területre.
+    ![Fürtözött oszlopdiagram sablon képernyőképe.](media/power-bi-visualization-export-data/power-bi-clustered.png)
 
-    ![Képernyőkép a készülő vizualizációról a Város és a Kedvezmény mennyisége százalékban mezők kiemelésével.](media/power-bi-visualization-export-data/power-bi-export-data3.png)
+1. A **Mezők** panelen válassza a **Hely > Város**, **Hely > Ország/Régió** és a **Számla > Kedvezmény százaléka** lehetőséget.  Előfordulhat, hogy a **Kedvezmény százalékát** át kell helyeznie az **Érték** területre.
+
+    ![Képernyőkép a készülő vizualizációról a Város és a Kedvezmény mennyisége százalékban mezők kiemelésével.](media/power-bi-visualization-export-data/power-bi-build.png)
 
 1. Módosítsa a **Kedvezmény százaléka** összesítését **Darabszám** értékről **Átlag** értékre. Az **Érték** mezőben kattintson a **Kedvezmény százalékától** (előfordulhat, hogy **Kedvezmény mennyisége százalékban** néven találja) jobbra található nyílra, és válassza az **Átlag** lehetőséget.
 
@@ -58,67 +72,127 @@ Annak érdekében, hogy követni tudja a lépéseket, nyissa meg a [Beszerzésel
 
 1. Vegyen fel szűrőt a **Város** mezőhöz, jelölje ki az összes várost, majd szüntesse meg az **Atlanta** érték bejelölését.
 
-    ![Képernyőkép a Város szűrőről a kijelöletlen Atlanta, GA jelölőnégyzet kiemelésével.](media/power-bi-visualization-export-data/power-bi-export-data4.png)
+    ![Képernyőkép a Város szűrőről a kijelöletlen Atlanta, GA jelölőnégyzet kiemelésével.](media/power-bi-visualization-export-data/power-bi-filter.png)
 
-   Most már készen állunk mindkét adatexportálási lehetőség kipróbálására.
+   
+1. Bontson ki részletesen egy szintet a hierarchiában. Kapcsolja be a részletezést, és hatoljon le a **Város** szintre. 
+
+    ![A városok szintjén részletezett vizualizáció képernyőképe.](media/power-bi-visualization-export-data/power-bi-drill.png)
+
+Most már készen állunk mindkét adatexportálási lehetőség kipróbálására.
+
+### <a name="export-summarized-data"></a>***Összegzett*** adatok exportálása
+Válassza az **Összegzett adatok** lehetőséget, ha a vizualizációban látható adatokat szeretné exportálni.  Az ilyen típusú export csak azokat az adatokat (oszlopokat és mértékeket) jeleníti meg, amelyekkel a vizualizáció létre lett hozva.  Ha a vizualizáció összesítést tartalmaz, exportálja az összesített adatokat. Például ha egy négy sávot megjelenítő sávdiagrammal rendelkezik, négy sornyi Excel-adatot fog kapni. Az összegzett adatok a Power BI szolgáltatásban *.xlsx* és *.csv* formátumban, a Power BI Desktopban .csv formátumban érhetők el.
 
 1. A vizualizáció jobb felső sarkában válassza a három pontot. Válassza az **Adatok exportálása** lehetőséget.
 
     ![Képernyőkép a jobb felső sarokról a három ponttal és az Adatok exportálása lehetőség kiemelésével.](media/power-bi-visualization-export-data/power-bi-export-data2.png)
 
-    A Power BI online szolgáltatásban ha a vizualizáció összesítést tartalmaz (például ha módosította a **Szám** értéket *átlag*, *összeg* vagy *minimum* értékre), két lehetőség közül választhat:
+    A Power BI szolgáltatásban, mivel a vizualizáció összesítést tartalmaz (a **Darabszám** helyett *Átlagot* használ), két lehetősége van:
 
     - **Összesített adatok**
 
     - **Mögöttes adatok**
 
-    A Power BI Desktopban csak **Összegzett adatokat** választhat. Az összesítésekkel kapcsolatos magyarázatokért tekintse meg [a Power BI összesítéseit](../service-aggregates.md) ismertető szakaszt.
+    Az összesítésekkel kapcsolatos magyarázatokért tekintse meg [a Power BI összesítéseit](../service-aggregates.md) ismertető szakaszt.
 
+
+    > [!NOTE]
+    > A Power BI Desktopban összesített adatokat csak .csv-fájlként exportálhat. 
+    
+    
 1. Az **Adatok exportálása** alatt válassza az **Összesített adatok** lehetőséget, válasszon az *.xlsx* és a *.csv* fájltípus közül, végül válassza az **Exportálás** lehetőséget. A Power BI exportálja az adatokat.
 
     ![Az Adatok exportálása panel képernyőképe az Összesített adatok, az xlsx és az Exportálás lehetőségek kiemelésével.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 
-    Ha szűrőket alkalmazott a vizualizációhoz, az exportált adatok szűrve lesznek exportálva. Ha az **Exportálás** lehetőséget választja, a böngésző megkéri, hogy mentse a fájlt. A mentés után nyissa meg a fájlt az Excelben.
-    
-    A rendszer a hierarchia által használt összes adatot exportálja, nem csak a vizualizáció aktuális részletezési szintjéhez használtakat. Ha például a vizualizáció nincs fentről lefelé részletezve, az exportált adatok a hierarchia minden adatát tartalmazni fogják, nem csak a vizualizáció jelenlegi részletezési szintjéhez használt adatokat.
+1. Ha az **Exportálás** lehetőséget választja, a böngésző megkéri, hogy mentse a fájlt. A mentés után nyissa meg a fájlt az Excelben.
 
-    **Összesített adatok**: Válassza ezt a lehetőséget, ha a vizualizációban látható adatokat szeretné exportálni.  Az ilyen típusú export csak azokat az adatokat (oszlopokat és méréseket) jeleníti meg, amelyekkel létrehozta a vizualizációt.  Ha a vizualizáció összesítést tartalmaz, exportálja az összesített adatokat. Például ha egy négy sávot megjelenítő sávdiagrammal rendelkezik, négy sornyi adatot fog kapni. Az összesített adatok *.xlsx*- és *.csv*-fájlként érhetők el.
+    ![Az Excel-kimenet képernyőképe.](media/power-bi-visualization-export-data/power-bi-export-data9.png)
 
     Ebben a példában az Excel-exportálás egy teljes értéket jelenít meg minden városhoz. Mivel Atlantát kiszűrtük, nem szerepel az eredmények között. A táblázat első sorában azok a szűrők láthatók, amelyeket a Power BI használt az adatok kinyerésére.
+    
+    - A rendszer a hierarchia által használt összes adatot exportálja, nem csak a vizualizáció aktuális részletezési szintjéhez használtakat. Itt például a városok szintjéig részleteztünk, de az export országadatokat is tartalmaz.  
 
-    ![Képernyőkép a .csv-fájlról az exportált adatok megjelenítésével.](media/power-bi-visualization-export-data/power-bi-export-data7.png)
+    - Az exportált adatok összesítve vannak. Minden városhoz tartozik egy összegsor.
 
-1. Most próbálja ki, hogy a **Mögöttes adatok**, az *.xlsx*, majd az **Exportálás** lehetőséget választja. A Power BI exportálja az adatokat. 
+    - Mivel a vizualizációra szűrőket alkalmaztunk, az exportált adatok szűrve lesznek exportálva. Figyelje meg az első sort: **Alkalmazott szűrők: A Város nem Atlanta, GA**. 
+
+### <a name="export-underlying-data"></a>***Mögöttes*** adatok exportálása
+
+Válassza ezt a lehetőséget, ha a vizualizáció adatait ***és*** az adathalmaz további adatait szeretné megtekinteni (részletekért tekintse meg a lenti diagramot). ha a vizualizáció összesítést tartalmaz, a **Mögöttes adatok** kiválasztása eltávolítja az összesítést. Ebben a példában az Excel-exportálás az adathalmazban található minden Város sorhoz egy sort jelenít meg, és az egyetlen bejegyzéshez tartozó kedvezmény százalékát mutatja. A Power BI nem összesíti, hanem egybesimítja az adatokat.  
+
+Ha az **Exportálás** lehetőséget választja, a Power BI egy *.xlsx*-fájlba exportálja az adatokat, és a böngésző megkéri, hogy mentse a fájlt. A mentés után nyissa meg a fájlt az Excelben.
+
+1. A vizualizáció jobb felső sarkában válassza a három pontot. Válassza az **Adatok exportálása** lehetőséget.
+
+    ![Képernyőkép a jobb felső sarokról a három ponttal és az Adatok exportálása lehetőség kiemelésével.](media/power-bi-visualization-export-data/power-bi-export-data2.png)
+
+    A Power BI szolgáltatásban, mivel a vizualizáció összesítést tartalmaz (a **Darabszám** helyett **Átlagot** használ), két lehetősége van:
+
+    - **Összesített adatok**
+
+    - **Mögöttes adatok**
+
+    Az összesítésekkel kapcsolatos magyarázatokért tekintse meg [a Power BI összesítéseit](../service-aggregates.md) ismertető szakaszt.
+
 
     > [!NOTE]
-    > A mögöttes adatok exportálására a jelentésbeállításoktól függően van vagy nincs lehetősége.
-
-    Ha szűrőket alkalmazott a vizualizációhoz, az exportált adatok szűrve lesznek exportálva. Ha az **Exportálás** lehetőséget választja, a böngésző megkéri, hogy mentse a fájlt. A mentés után nyissa meg a fájlt az Excelben.
+    > A Power BI Desktopban csak összesített adatokat exportálhat. 
     
-    A rendszer a hierarchia által használt összes adatot exportálja, nem csak a vizualizáció aktuális részletezési szintjéhez használtakat. Ha például a vizualizáció nincs fentről lefelé részletezve, az exportált adatok a hierarchia minden adatát tartalmazni fogják, nem csak a vizualizáció jelenlegi részletezési szintjéhez használt adatokat.
+    
+1. Az **Adatok exportálása** alatt válassza a **Mögöttes adatok**, majd az **Exportálás** lehetőséget. A Power BI exportálja az adatokat.
 
-    >[!WARNING]
-    >A mögöttes adatok exportálása lehetővé teszi a felhasználók számára, hogy az összes részletes adatot (az adatokban szereplő minden sort) megtekintsék. A Power BI szolgáltatás rendszergazdái ezt kikapcsolhatják a vállalatnál. Ha Ön egy adathalmaz tulajdonosa, a jogvédett oszlopokat **rejtett** állapotúra állíthatja, így azok nem jelennek meg a **Mezők** listájában a Desktopban vagy a Power BI szolgáltatásban.
+    ![Képernyőkép az Adatok exportálása képernyőről, a mögöttes adatok kiemelésével.](media/power-bi-visualization-export-data/power-bi-underlying.png)
 
-    **Mögöttes adatok**: Válassza ezt a lehetőséget, ha a vizualizáció adatait ***és*** a modell további adatait szeretné megtekinteni (részletekért tekintse meg a lenti diagramot). ha a vizualizáció összesítést tartalmaz, a *Mögöttes adatok* kiválasztása eltávolítja az összesítést. Ha az **Exportálás** lehetőséget választja, a Power BI egy *.xlsx*-fájlba exportálja az adatokat, és a böngésző megkéri, hogy mentse a fájlt. A mentés után nyissa meg a fájlt az Excelben.
+1. Ha az **Exportálás** lehetőséget választja, a böngésző megkéri, hogy mentse a fájlt. A mentés után nyissa meg a fájlt az Excelben.
 
-    Ebben a példában az Excel-exportálás az adathalmazban található minden Város sorhoz egy sort jelenít meg, és az egyetlen bejegyzéshez tartozó kedvezmény százalékát mutatja. A Power BI egybesimítja az adatokat. Összesítést nem végez. A táblázat első sorában azok a szűrők láthatók, amelyeket a Power BI használt az adatok kinyerésére.  
+    ![Képernyőkép az .xlsx-fájlról az exportált adatok megjelenítésével.](media/power-bi-visualization-export-data/power-bi-excel.png)
+    
+    - Ezen a képernyőképen csupán a több, mint 100 000 soros Excel-fájl egy kis részlete látható.  
+    
+    - A rendszer a hierarchia által használt összes adatot exportálja, nem csak a vizualizáció aktuális részletezési szintjéhez használtakat. Itt például a városok szintjéig részleteztünk, de az export országadatokat is tartalmaz.  
 
-    ![Képernyőkép a .csv-fájlról az exportált adatok megjelenítésével.](media/power-bi-visualization-export-data/power-bi-export-data8.png)
+    - Mivel a vizualizációra szűrőket alkalmaztunk, az exportált adatok szűrve lesznek exportálva. Figyelje meg az első sort: **Alkalmazott szűrők: A Város nem Atlanta, GA**. 
+
+## <a name="protecting-proprietary-data"></a>Szellemi tulajdont képező adatok védelme
+
+Az adathalmaz olyasmit is tartalmazhat, amit nem minden felhasználónak szabad látnia. Ha nem körültekintően exportálja a mögöttes adatokat, előfordulhat, hogy minden felhasználó látni fogja a vizualizációhoz tartozó részletes adatok minden sorát és oszlopát. 
+
+Többféle stratégia is a Power BI-rendszergazdák és a tervezők rendelkezésére áll a szellemi tulajdont képező adatok védelmére. 
+
+- A tervezők [eldönthetik, mely *exportálási lehetőségek*](#set-the-export-options) érhetők el a felhasználók számára.  
+
+- A Power BI-rendszergazdák letilthatják az adatexportálást a vállalatnál. 
+
+- Az adathalmaz tulajdonosai sorszintű biztonságot (RLS) állíthatnak be. Az RLS korlátozza a csak olvasási jogosultsággal rendelkező felhasználók hozzáférését. Ha azonban alkalmazás-munkaterületet konfigurált, amelyhez szerkesztési jogosultságot adott a tagoknak, rájuk nem vonatkoznak az RLS-szerepkörök. További információ: [Sorszintű biztonság](../service-admin-rls.md).
+
+- A jelentéstervezők oszlopokat rejthetnek el, hogy azok ne jelenjenek meg a **Mezők** listájában. További információ: [Adathalmaz-tulajdonságok](../developer/api-dataset-properties.md)
+
+- A Power BI-rendszergazdák [bizalmassági címkéket](../admin/service-security-data-protection-overview.md) adhatnak az irányítópultokhoz, jelentésekhez, adathalmazokhoz és adatfolyamokhoz. Ezek olyan védelmi beállításokat juttathatnak érvényre, mint az exportálás során használt titkosítás vagy vízjel. 
+
+- A Power BI-rendszergazdák a [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) használatával figyelhetik a felhasználók hozzáférését és tevékenységeit, valós idejű kockázatelemzést hajthatnak végre, és címkékre vonatkozó vezérlőket állíthatnak be. A szervezetek például olyan szabályzatot konfigurálhatnak a Microsoft Cloud App Securityvel, amely megakadályozza, hogy a felhasználók nem felügyelt eszközökre töltsenek le bizalmas adatokat a Power BI-ból. 
+
 
 ## <a name="export-underlying-data-details"></a>Mögöttes adatok részleteinek exportálása
 
-A **Mögöttes adatok** lehetőség kiválasztásakor több dolog történhet. Az adatok megértéséhez előfordulhat, hogy rendszergazdai vagy informatikusi segítségre lesz szüksége. A Power BI Desktop vagy a szolgáltatás jelentéskészítési nézetében egy *mérték* jelenik meg a **Mezők** listában egy számológép ikonnal ![megjelenő ikon](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). A Power BI Desktop mértékeket hoz létre. A Power BI szolgáltatás ezt nem teszi.
+A **Mögöttes adatok** lehetőség kiválasztásakor több dolog történhet. Az adatok megértéséhez előfordulhat, hogy rendszergazdai vagy informatikusi segítségre lesz szüksége. 
+
+
+>
+
+
 
 | A vizualizáció tartalma | Az exportáláskor megjelenő elemek  |
 |---------------- | ---------------------------|
 | Összesítések | az *első* összesítés és az összesítés teljes táblájának nem rejtett adatai |
 | Összesítések | kapcsolódó adatok – ha a vizualizáció más, az összesítést tartalmazó adattáblához *kapcsolódó* adattáblák adatait használja (mindaddig, amíg a kapcsolat \*:1 vagy 1:1 mértékű) |
-| Mértékek | A vizualizáció összes mértéke *és* minden mérték azon adattáblákból, amelyek a vizualizációban használt mértékeket tartalmaznak |
-| Mértékek | Minden nem rejtett adat az adott értéket tartalmazó adattáblákból (feltéve, hogy a kapcsolat \*:1 vagy 1:1 típusú) |
-| Mértékek | Minden adat minden olyan táblából, amely a mértékeket tartalmazó táblákhoz \*:1/1:1 típusú kapcsolatlánccal kapcsolódik |
+| Mértékek* | A vizualizáció összes mértéke *és* minden mérték azon adattáblákból, amelyek a vizualizációban használt mértékeket tartalmaznak |
+| Mértékek* | Minden nem rejtett adat az adott értéket tartalmazó adattáblákból (feltéve, hogy a kapcsolat \*:1 vagy 1:1 típusú) |
+| Mértékek* | Minden adat minden olyan táblából, amely a mértékeket tartalmazó táblákhoz \*:1/1:1 típusú kapcsolatlánccal kapcsolódik |
 | Csak mértékek | Minden nem rejtett oszlop minden kapcsolódó táblából (a mérték kiterjesztése érdekében) |
 | Csak mértékek | A modellmértékek duplikált sorainak összegzett adatai |
+
+\* A Power BI Desktop vagy a szolgáltatás jelentéskészítési nézetében egy *mérték* jelenik meg a **Mezők** listában egy számológép ikonnal ![megjelenő ikon](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Mértékek a Power BI Desktopban hozhatók létre.
 
 ### <a name="set-the-export-options"></a>Exportálási beállítások megadása
 

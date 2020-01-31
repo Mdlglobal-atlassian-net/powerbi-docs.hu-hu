@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/08/2019
 ms.author: painbar
-ms.openlocfilehash: 44fcfdbaa51b85b191ff1452c66daee7da0360f8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: caed3a107b8f7a57d2fb3da92073cb8a5f5331cd
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75220517"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538405"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -21,6 +21,27 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+
+## <a name="december-2019"></a>2019. december
+
+### <a name="docked-report-footer-and-a-refresh-button---new-experiences-for-interacting-with-reports-android"></a>Rögzített jelentéslábléc és frissítés gomb – új felületek a jelentések kezeléséhez (Android)
+
+Android-felhasználóinktól úgy értesültünk, hogy a jelentések használatára szolgáló felület nem optimális – a jelentés lábléce nehézkesen használható, a lehúzásos frissítés pedig bizonyos eszközökön túl érzékeny. Ebben a kiadásban ezért megváltoztattuk az alábbi viselkedéseket:
+* **Rögzített jelentéslábléc** – mostantól a telefonon megnyitott jelentés lábléce dokkolva van a jelentésoldal alján, ahol az oldalon végzett műveletektől függetlenül mindig látható és elérhető. Így az általa kínált lehetőségek könnyebben használhatók.
+* **Frissítés gomb a jelentés fejlécében** – a jelentés fejlécében egy Frissítés gombot is talál, amellyel egyszerűbben frissítheti a jelentést pontosan akkor, amikor Ön akarja.
+
+Akiknek jobban tetszett a korábbi működés, a mobilalkalmazás új, kibővített [kezelési beállításaival](./mobile-app-interaction-settings.md) állíthatja vissza ezeket a viselkedésmódokat.
+
+Ezen kívül az informatikai rendszergazdák [távolról felülbírálhatják az új alapértelmezett beállításokat](./mobile-app-configuration.md#interaction-settings-android) a felhasználók nevében egy tetszőleges MDM-eszköz és egy alkalmazáskonfigurációs fájl használatával. Így elérhető, hogy a vállalaton belül minden felhasználónál ugyanaz a viselkedés legyen konfigurálva.
+
+> [!NOTE]
+> A frissítés gombra és a jelentéslábléc dokkolására vonatkozó kezelési beállítások jelenleg nem működnek a Jelentéskészítő kiszolgáló jelentésein. Ez a Jelentéskészítő kiszolgáló januári kiadásával változni fog!
+
+### <a name="set-default-bookmarks-from-your-mobile-app"></a>Alapértelmezett könyvjelzők beállítása a mobilalkalmazásból
+Mostantól közvetlenül a Power BI mobilalkalmazásból állíthat be alapértelmezett könyvjelzőket a jelentésekhez. Így egy jelentés minden megnyitásakor automatikusan alkalmazva lesznek annak alapértelmezett könyvjelzői. [További információ!](./mobile-reports-in-the-mobile-apps.md#bookmarks)
+
+### <a name="filtering-by-location-on-android-tablets"></a>Tartózkodási hely szerinti szűrés Android-táblagépen
+Földrajzi hely szerinti szűréssel az aktuális tartózkodási helye szerint szűrhet jelentéseket. Ez a funkció már az Androidos táblagépekhez készült Power BI alkalmazásban is elérhető. [További információ!](./mobile-apps-geographic-filtering.md)
 
 ## <a name="november-2019"></a>2019. november
 

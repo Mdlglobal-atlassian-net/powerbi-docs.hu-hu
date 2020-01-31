@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 01/14/2020
+ms.date: 01/16/2020
 ms.author: mblythe
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d9549364f9129ee4ddc6e90fb973cb73c241e4a9
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: bbca812644b82f8a0b848dc16e450f880ccb596c
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76042118"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539900"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Oktatóanyag: Power Apps-vizualizáció beágyazása egy Power BI-jelentésbe
 
 Ebben az útmutatóban a PowerApps-vizualizáció használatával fog létrehozni egy új alkalmazást, amelyet egy Power BI-mintajelentésbe ágyaz. Az alkalmazás a jelentés többi vizualizációjához is kapcsolódni fog.
 
-Ha még nincs PowerApps-előfizetése, kezdés előtt [hozzon létre egy ingyenes fiókot](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
+Ha még nincs PowerApps-előfizetése, kezdés előtt [hozzon létre egy ingyenes fiókot](https://web.powerapps.com/signup?redirect=marketing&email=).
 
 Az oktatóanyag a következőket ismerteti:
 > [!div class="checklist"]
@@ -33,12 +33,12 @@ Az oktatóanyag a következőket ismerteti:
 
 * [Google Chrome](https://www.google.com/chrome/browser/) vagy [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) böngésző
 * [Power BI-előfizetés](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi) telepített [Lehetőségelemzési mintával](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample)
-* Ismeretek a következőkkel kapcsolatban: [Alkalmazások létrehozása a PowerAppsben](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch.md) és [Power BI-jelentések szerkesztése](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
+* Ismeretek a következőkkel kapcsolatban: [Alkalmazások létrehozása a PowerAppsben](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch) és [Power BI-jelentések szerkesztése](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
 
 
 
 ## <a name="create-a-new-app"></a>Új alkalmazás létrehozása
-Amikor hozzá a Power Apps-vizualizációt a jelentéshez, elindul a PowerApps Studio, és élő adatkapcsolatot hoz létre a Power Apps és a Power BI között.
+Amikor a Power Apps-vizualizációt hozzáadja a jelentéshez, elindul a Power Apps Studio, és élő adatkapcsolatot hoz létre a Power Apps és a Power BI között.
 
 1. Nyissa meg a Lehetőségelemzési mintajelentést, majd válassza az *Upcoming Opportunities* (Jövőbeli lehetőségek) lapot. 
 
@@ -49,7 +49,7 @@ Amikor hozzá a Power Apps-vizualizációt a jelentéshez, elindul a PowerApps S
 
 2. A Vizualizációk panelen válassza ki a Power Apps-ikont, majd méretezze át a vizualizációt úgy, hogy az illeszkedjen a létrehozott területhez.
 
-    ![Vizualizáció ablaktábla kijelölt PowerApps-ikonnal](media/power-bi-visualization-powerapp/power-bi-powerapps-icon.jpg)
+    ![A Vizualizációk panel a kijelölt Power Apps-ikonnal](media/power-bi-visualization-powerapp/power-bi-powerapps-icon.jpg)
 
 3. A **Mezők** ablaktáblában válassza ki a **Name** (Név), **Product Code** (Termékkód) és **Sales Stage** (Értékesítési szakasz) mezőket. 
 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/18/2020
 ms.author: painbar
-ms.openlocfilehash: bb54a4e403f2cc12800d0c97e44308f7ad5c5f65
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 27f6469cb960ff101f45636e0720b935929ff010
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220738"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538126"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Jelentések vizsgálata a Power BI mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -53,6 +53,13 @@ Ha meg szeretne nyitni egy jelentést egy irányítópultról, koppintson egy cs
 ## <a name="interact-with-reports"></a>Jelentések használata
 Ha megnyitott egy jelentést az alkalmazásban, elkezdhet dolgozni vele. A jelentésekkel és az adataikkal sokféle művelet végezhető. A jelentés láblécében találja a jelentésben elvégezhető műveleteket. Ezenkívül a jelentésben látható adatokra koppintva, illetve az adatokat hosszan megérintve részletezve is vizsgálhatja az adatokat.
 
+### <a name="single-tap-versus-double-tap-interaction"></a>Egykoppintásos és kétkoppintásos kezelés
+Amikor letölti a Power BI mobilalkalmazást, az egykoppintásos kezelésre van beállítva. Ez azt jelenti, hogy amikor valamilyen művelet, például egy szeletelőelem kijelölése, keresztkiemelés, hivatkozás vagy gomb választása céljából egy vizualizációra koppint, a koppintás kijelöli a vizualizációt, és a kívánt műveletet is végrehajtja.
+
+Ha kívánja, átválthat kétkoppintásos kezelésre. Kétkoppintásos kezelés esetén a vizualizációra koppintva kijelöli azt, majd egy újabb koppintással hajthatja végre a kívánt műveletet.
+
+Kétkoppintásos kezelésre átváltani vagy az egykoppintásos kezelésre visszaváltani az [alkalmazás kezelési beállításai](./mobile-app-interaction-settings.md) között lehet.
+
 ### <a name="using-tap-and-long-tap"></a>A koppintás és a hosszú érintés használata
 A koppintás egyenértékű a kattintással. Ha tehát egy jelentésben keresztkijelölést szeretne használni egy adatpont alapján, akkor koppintson rá arra az adatpontra.
 Ha rákoppint egy szeletelőértékre, azzal kijelöli az értéket, a jelentés többi részét pedig szeleteli ennek az értéknek az alapján.
@@ -63,7 +70,6 @@ Alighanem észrevette már, hogy ha rákoppint egy vizualizációra, szegély je
 ![A vizualizáció és menüje](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
 ### <a name="tooltip-and-drill-actions"></a>Elemleírások és részletezési műveletek
-
 Ha hosszan megérint egy adatpontot, megjelenik egy elemleírás, amely bemutatja az adatpont által megjelenített adatokat:
 
 ![Elemleírás](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
@@ -126,6 +132,8 @@ A **jelentésnek a beszkennelt vonalkód alapján történő szűrése** csak ak
 
 A Power BI mobilalkalmazás a jelentés létrehozója által definiált és a Power BI szolgáltatásban definiálható személyes könyvjelzőket is támogatja. A könyvjelzők menüjét a **További beállítások** (...) alatt találhatja meg a [Jelentés műveletei eszköztárban](mobile-reports-in-the-mobile-apps.md#all-report-actions).
 
+Az alapértelmezett könyvjelzőket egy speciális ikon jelöli. A személyes könyvjelzőkhöz úgy állíthatja be, kapcsolhatja ki vagy módosíthatja az alapértelmezett beállítást, hogy a módosítani kívánt könyvjelző melletti **További lehetőségek (...)** elemre koppint, majd a **Beállítás alapértelmezettként** vagy az **Alapértelmezés törlése** lehetőségre kattint.
+
 ![könyvjelzőmenü](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
 
 Ha egy jelentésnek egy könyvjelzőnézete van megnyitva, a könyvjelző neve megjelenik a jelentés tetején.
@@ -133,6 +141,15 @@ Ha egy jelentésnek egy könyvjelzőnézete van megnyitva, a könyvjelző neve m
 ![könyvjelzőnézet](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
 [További információ a könyvjelzőkről a Power BI szolgáltatásban](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
+
+## <a name="configure-your-experience-with-reports"></a>Jelentések felhasználói felületének konfigurálása
+A Power BI mobilalkalmazásban többféle beállítással szabályozható a jelentés felülete. Jelenleg a következők konfigurálhatók
+* **Jelentésvizualizációk kezelése**: Választhat az egykoppintásos és a kétkoppintásos kezelési mód között.
+* **Adatfrissítési mód**: Kiválaszthatja, hogy a jelentés adatainak frissítéséhez egy gomb vagy egy legördíthető művelet álljon rendelkezésre.
+* **Jelentés láblécének láthatósága**: Választhat, rögzített láblécet, amely mindig látható, vagy dinamikus láblécet, amely a műveletektől (például görgetéstől) függően van elrejtve vagy megjelenítve.
+
+Ezeknek a beállításoknak a módosításáról az [alkalmazás kezelési beállításairól](./mobile-app-interaction-settings.md) szóló szakaszban talál információ.
+
 
 ## <a name="next-steps"></a>Következő lépések
 * [Telefonra optimalizált Power BI-jelentések megtekintése és használata](mobile-apps-view-phone-report.md)
