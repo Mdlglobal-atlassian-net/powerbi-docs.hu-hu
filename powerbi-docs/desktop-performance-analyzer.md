@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 01/23/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8bbf391135442d6490033c0fc65b7372154820d2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e3e9e8ebc7feda46cb4c79ffd1535807d04a178b
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73866432"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709774"
 ---
 # <a name="use-performance-analyzer-to-examine-report-element-performance"></a>A Teljesítményelemző használata a jelentéselemek teljesítményének vizsgálatához
 
@@ -58,6 +58,9 @@ Minden vizualizáció naplóadatai között megtalálható, hogy mennyi idő kel
 * **Vizualizáció megjelenítése** – A vizualizáció képernyőn való megjelenítéséhez szükséges időtartam, beleértve a webes képek lekéréséhez vagy a geokódoláshoz szükséges időt is. 
 * **Egyéb** – Ez az időtartam jelzi, hogy a vizualizáció mennyi időt töltött a lekérdezések előkészítésével, más vizualizációk teljesülésére való várakozással, vagy egyéb háttérbeli feldolgozási műveletek elvégzésével.
 
+A **Duration (ms)** értékek az egyes műveletek *kezdési* és *befejezési* időbélyege közötti különbséget adja meg. A vásznon és a vizualizációkon végzett műveletek sorosan, egyetlen Felhasználó felületi szálon vannak végrehajtva, amelyen több művelet osztozik. A jelentett időtartam magában foglalja a többi művelet befejezésééig a várakozási sorban töltött időt is. A GitHubon megtalálható [Teljesítményelemző minta](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer) és az ahhoz tartozó [dokumentáció](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx) részletesen leírja a vizualizációk által végzett adatlekérdezés és a renderelés menetét.
+
+
 ![naplóadatok elemei](media/desktop-performance-analyzer/performance-analyzer-06.png)
 
 Miután elvégezte a jelentés elemein azokat a műveleteket, amelyeket a Teljesítményelemzővel mérni kívánt, kattintson a **Leállítás** gombra. A teljesítményadatok azután is megtekinthetők és elemezhetők maradnak az ablaktáblán, hogy Ön a **Leállítás** gombra nyomott.
@@ -89,3 +92,7 @@ Ha többet szeretne megtudni a **Power BI Desktopról**, illetve a szoftver hasz
 * [Adatok formázása és kombinálása a Power BI Desktoppal](desktop-shape-and-combine-data.md)
 * [Gyakori lekérdezési feladatok a Power BI Desktopban](desktop-common-query-tasks.md)   
 
+A Teljesítményelemző mintával kapcsolatban az alábbi források kínálnak információt.
+
+* [Teljesítményelemző minta](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer)
+* [A Teljesítményelemző minta dokumentációja](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)

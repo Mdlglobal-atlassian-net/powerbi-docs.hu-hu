@@ -1,35 +1,44 @@
 ---
 title: Adattárolás felügyelete a munkaterületein
-description: Útmutató a jelentések és az adathalmazok további közzétételének biztosításához az egyéni vagy a munkaterületen található adattárhely kezelésével.
+description: Útmutató az adattárolás felügyeletéhez egyéni munkaterületen a jelentések és adathalmazok folyamatos közzététele érdekében.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/23/2020
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: f8e7240b34e20a3d18443cadb5265c5d0d870790
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: bc8b8c16675e6d413c22d4ae88018222b02b17d6
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73873661"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709884"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Adattárolás felügyelete Power BI-munkaterületeken
 
-Útmutató a jelentések és az adathalmazok további közzétételének biztosításához az egyéni vagy a munkaterületen található adattárhely kezelésével.
+Útmutató az adattárolás felügyeletéhez egyéni munkaterületen a jelentések és adathalmazok folyamatos közzététele érdekében.
 
-A felhasználók és a munkaterületek saját adatkapacitással rendelkeznek:
+## <a name="capacity-limits"></a>Kapacitási korlátok
 
-* A felhasználók tárhelyének maximális mérete 10 GB.
-* A Power BI Pro-licenccel rendelkező felhasználók több, egyenként 10 GB-os munkaterületet is létrehozhatnak.
-* A prémium szintű kapacitásban lévő munkaterületek nem számítanak bele a Power BI Pro-felhasználók tárhelyébe.
+A munkaterület tárolási korlátai a Saját munkaterületen és az alkalmazás-munkaterületen is attól függnek, hogy a munkaterület [megosztott vagy prémium szintű kapacitásban](service-basic-concepts.md#capacities) van.
 
-Bérlői szinten az egy Pro-felhasználóra és munkaterületre jutó teljes használat nem haladhatja meg a felhasználónkénti 10 GB-ot.
+### <a name="shared-capacity-limits"></a>Megoszt kapacitás korlátai
+Megosztott kapacitásban lévő munkaterület esetén: 
+
+- Munkaterületenként 10 GB-os tárolási korlát van érvényben.
+- Alkalmazás-munkaterület esetén a teljes felhasználás legfeljebb 10 GB megszorozva a bérlőben lévő Pro-licencek számával.
+
+### <a name="premium-capacity-limits"></a>Prémium szintű kapacitás korlátai
+Prémium szintű kapacitásban lévő munkaterület esetén:
+- A korlát prémium szintű kapacitásonként 100 TB.
+- Felhasználónkénti tárolási korlát nincs.
 
 További információkért tekintse meg [a Power BI díjszabási modelljét](https://powerbi.microsoft.com/pricing).
+
+## <a name="whats-included-in-storage"></a>A tárhely tartalma
 
 A tárhely magában foglalja a saját adathalmazokat és Excel-jelentéseket, valamint a mások által Önnel megosztott elemeket. Adathalmaz minden olyan adatforrás, amelyet feltöltött, vagy amelyhez csatlakozott. Ezek közé az adatforrások közé tartoznak az Ön által használt Power BI Desktop-fájlok és Excel-munkafüzetek is. A következők szintén beletartoznak az adatkapacitásba.
 
@@ -45,9 +54,10 @@ Az Ön által megosztott irányítópult mérete attól függ, hogy mi van rögz
 
 Megtekintheti a Power BI-fiókban aktuálisan felhasznált tárhely méretét, és kezelheti a fiókot.
 
-1. A saját tárhely kezeléséhez nyissa meg a **Saját munkaterületet** a navigációs panelen.
+1. A saját tárhely kezeléséhez nyissa meg a **Saját munkaterületet** a navigációs ablaktáblán.
    
     ![Saját munkaterület](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
+
 2. Kattintson a fogaskerék ikonra ![Fogaskerék ikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) a jobb felső sarokban \> **Személyes tárhely kezelése**.
    
     A felső sávon látható, hogy mennyit használt fel a rendelkezésre álló tárhelyből.
@@ -57,6 +67,7 @@ Megtekintheti a Power BI-fiókban aktuálisan felhasznált tárhely méretét, �
     Az adatkészletek és a jelentések két külön lapon találhatók az alábbiak szerint:
    
     **Saját tulajdon:** Ezeket a jelentéseket és adathalmazokat, köztük az olyan szolgáltatások adathalmazait, mint a Salesforce és a Dynamics CRM, Ön töltötte fel a saját Power BI-fiókjába.  
+
     **Mások tulajdona:** Ezeket a jelentéseket és adatkészleteket mások osztották meg Önnel.
 1. Adatkészlet vagy jelentés törléséhez kattintson a Kuka ikonra ![kuka ikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
 
@@ -75,18 +86,18 @@ Vegye figyelembe, hogy az adatkészleteken saját vagy megosztott jelentések é
     Az adatkészletek és a jelentések két külön lapon találhatók az alábbiak szerint:
    
     **Közös tulajdon:** Ezeket a jelentéseket és adathalmazokat, köztük az olyan szolgáltatások adathalmazait, mint a Salesforce és a Dynamics CRM, Ön vagy valaki más töltötte fel a csoport Power BI-fiókjába.
+
     **Mások tulajdona:** Ezeket a jelentéseket és adatkészleteket mások osztották meg az Ön csoportjával.
+
 3. Adatkészlet vagy jelentés törléséhez kattintson a Kuka ikonra ![kuka ikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
-   > Egy munkaterület bármely, szerkesztési engedéllyel rendelkező tagja jogosult adathalmazokat és jelentéseket törölni a munkaterületről.
-   > 
-   > 
-
-Vegye figyelembe, hogy az adatkészleteken saját vagy a csoport más tagja által birtokolt jelentések és irányítópultok alapulhatnak. Ha törli az adatkészletet, ezek a jelentések és irányítópultok nem fognak működni.
+   > Vegye figyelembe, hogy az adatkészleteken saját vagy a csoport más tagja által birtokolt jelentések és irányítópultok alapulhatnak. Ha törli az adatkészletet, ezek a jelentések és irányítópultok nem fognak működni.
+   
+   Egy munkaterület bármely rendszergazda, tag vagy közreműködő szerepkörrel rendelkező tagja jogosult adathalmazokat és jelentéseket törölni a munkaterületről.
 
 ## <a name="dataset-limits"></a>Adatkészletkorlátok
-A Power BI-ba importálható egyes adatkészletek korlátja 1 GB. Ha adatimportálás helyett az Excel további használata mellett döntött, az adathalmaz korlátja 250 MB.
+A Power BI-ba importálható egyes adathalmazok korlátja 1 GB. Ha adatimportálás helyett az Excel további használata mellett döntött, az adathalmaz korlátja 250 MB.
 
 ## <a name="what-happens-when-you-reach-a-limit"></a>Mi történik, ha eléri a korlátot
 Ha eléri a munkája során felhasználható adatkapacitás korlátját, a szolgáltatás figyelmeztető üzeneteket küld. 
@@ -102,6 +113,8 @@ Ez a korlát megjelenik a **Személyes tárhely kezelése** területen is.
  Ha a korlátok bármelyikét elérő tevékenységet kísérel meg, üzenetet kap a korlát túllépéséről. Előfordulhat, hogy a tárhely [kezelésével](#manage) csökkenti a tárhely méretét, és így lépi át a korlátot.
 
  ![Túllépte a tárhelykorlátot](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
+
+ ## <a name="next-steps"></a>Következő lépések
 
  További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

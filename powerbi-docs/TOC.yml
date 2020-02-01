@@ -489,8 +489,10 @@
               href: service-new-workspaces.md
             - name: Hogyan oszthatja meg munkáját
               href: service-how-to-collaborate-distribute-dashboards-reports.md
-            - name: A Power BI-felhasználás monitorozása
+            - name: Használat figyelése klasszikus munkaterületeken
               href: service-usage-metrics.md
+            - name: Használat figyelése új munkaterületeken
+              href: service-modern-usage-metrics.md
         - name: Licencelés
           items:
             - name: Regisztráció a Power BI-ra
@@ -645,8 +647,6 @@
               href: service-create-qr-code-for-report.md
             - name: Jelentés exportálása a Power BI Desktopba (előzetes verzió)
               href: service-export-to-pbix.md
-            - name: Jelentés szűrése az URL-címekben szereplő paraméterekkel
-              href: service-url-filters.md
             - name: SAP-változók szerkesztése
               href: service-edit-sap-variables.md
             - name: Ajánlott eljárások gyors és megbízható jelentések készítéséhez
@@ -691,8 +691,10 @@
           items:
             - name: Irányítópultok és jelentések megosztása
               href: service-share-dashboards.md
-            - name: Szűrt jelentés megosztása
+            - name: Jelentés szűrése és megosztása
               href: service-share-reports.md
+            - name: Jelentés szűrése az URL-címekben szereplő paraméterekkel
+              href: service-url-filters.md
             - name: Önmaga és mások regisztrálása
               href: service-report-subscribe.md
             - name: Jelentés beágyazása a SharePoint Online-ban

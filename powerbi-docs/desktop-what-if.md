@@ -1,67 +1,69 @@
 ---
 title: Lehetőségelemzési paraméterek használata változók megjelenítésére
-description: Létrehozhatja a saját Lehetőségelemzési változóját, hogy elképzelhesse és megjeleníthesse a változókat a Power BI-jelentésekben
+description: Saját lehetőségelemzési változó létrehozása változók elképzeléséhez és megjelenítéséhez Power BI-jelentésekben
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8b9f1fc618e30d93da36b28f710dbd33f8125054
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 8a72bc43bcceae6e676728934ceec81c8cb27d04
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75759314"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539413"
 ---
 # <a name="create-and-use-what-if-parameters-to-visualize-variables-in-power-bi-desktop"></a>Lehetőségelemzési paraméter létrehozása és használata változók vizualizációjához a Power BI Desktopban
-A **Power BI Desktop** 2018. augusztusi kiadásától kezdve létrehozhat **Lehetőségelemzési** változókat a jelentésekhez, szeletelőként dolgozhat a változókkal, valamint megjelenítheti és számszerűsítheti a jelentésekben szereplő különböző kulcsértékeket.
 
-![](media/desktop-what-if/what-if_01.png)
+A *Power BI Desktop* 2018. augusztusi kiadásától kezdve létrehozhat *lehetőségelemzési* változókat a jelentésekhez, szeletelőként dolgozhat a változókkal, valamint megjelenítheti és számszerűsítheti a jelentésekben szereplő különböző kulcsértékeket.
 
-A **Lehetőségelemzési** paraméter a **Power BI Desktop** **Modellezés** lapján található. A kiválasztáskor megjelenik egy párbeszédpanel, ahol beállíthatja a paramétert.
+![Új paraméter beállítása](media/desktop-what-if/what-if_01.png)
+
+*Lehetőségelemzési* paramétert a Power BI Desktop **Modellezés** lapján hozhat létre. Ennek kiválasztáskor megjelenik egy párbeszédpanel, ahol beállíthatja a paramétert.
 
 ## <a name="creating-a-what-if-parameter"></a>Lehetőségelemzési paraméter létrehozása
-**Lehetőségelemzési** paraméter létrehozásához kattintson a **Lehetőségelemzés** gombra a **Power BI Desktop** **Modellezés** lapján. Az alábbi képen létrehoztunk egy *Kedvezmény százaléka* nevű paramétert, és az adattípusát *Tizedes törtre* állítottuk. A *Minimális* érték nulla, a *Maximális* érték 0,50 (ötven százalék). A *Növekményt* 0,05-re, vagyis 5%-ra állítottuk. Ennyit fog a paraméter módosítani, ha egy jelentésben dolgozik vele.
 
-![](media/desktop-what-if/what-if_02.png)
+Lehetőségelemzési paraméter létrehozásához válassza a Power BI Desktop **Modellezés** lapjának **Új paraméter** elemét. Az alábbi képen létrehoztunk egy *Kedvezmény százaléka* nevű paramétert, és az adattípusát **Tizedes törtre** állítottuk. A **minimális** érték nulla. A **maximum** 0,50 (50 százalék). A **Növekményt** 0,05-re, vagyis 5%-ra állítottuk. Ennyit fog a paraméter módosítani, ha egy jelentésben dolgozik vele.
+
+![Lehetőségelemzési paraméterértékek](media/desktop-what-if/what-if_02.png)
 
 > [!NOTE]
-> Tizedes törtek esetében ügyeljen arra, hogy nullával kezdje a számot, például 0,50 szerepeljen ,50 helyett. Ellenkező esetben a szám nem lesz érvényesítve, és az **OK** gomb nem válaszható ki.
+> Tizedes törtek esetén mindig írja ki a tizedesjel előtti nullát (például 0,50 a ,50 alak helyett). Ellenkező esetben a szám nem lesz érvényesítve, és az **OK** gomb nem válaszható ki.
 > 
 > 
 
-Kényelmi funkcióként a **Szeletelő hozzáadása az oldalhoz** jelölőnégyzet automatikusan elhelyez egy szeletelőt a **Lehetőségelemzési** paraméterrel a jelentés aktuális oldalán.
+Kényelmi funkcióként a **Szeletelő hozzáadása az oldalhoz** jelölőnégyzet automatikusan elhelyez egy szeletelőt a lehetőségelemzési paraméterrel a jelentés aktuális oldalán.
 
-![](media/desktop-what-if/what-if_03.png)
+![Új szeletelő az aktuális jelentésoldalon](media/desktop-what-if/what-if_03.png)
 
-Továbbá a paraméter létrehozása mellett egy **Lehetőségelemzési** paraméter létrehozása egy mértéket is létrehoz, amely a **Lehetőségelemzési** paraméter aktuális értékének megjelenítésére használható.
+Egy Lehetőségelemzési paraméter létrehozása a paraméter mellet egy mértéket is létrehoz, amely a lehetőségelemzési paraméter aktuális értékének megjelenítésére használható.
 
-![](media/desktop-what-if/what-if_04.png)
+![Lehetőségelemzési paraméterhez létrehozott mérték](media/desktop-what-if/what-if_04.png)
 
-Érdemes és hasznos megjegyezni, hogy miután létrehozott egy **Lehetőségelemzési** paramétert, a paraméter és a mérték is a modell része lesz. Ezért elérhetők a jelentésen keresztül, és a jelentés egyéb oldalain is használhatók. Mivel a modell részei, törölheti a szeletelőt a jelentés oldaláról, és ha vissza szeretné kapni, fogja meg a **Lehetőségelemzési** paramétert a **Mezők** listájából, és húzza a vászonra (majd módosítsa a vizualizációt szeletelőre), így egyszerűen visszahelyezheti a paramétert a jelentésbe.
+Érdemes és hasznos megjegyezni, hogy miután létrehozott egy lehetőségelemzési paramétert, a paraméter és a mérték is a modell része lesz. Ezért elérhetők a jelentésen keresztül, és a jelentés egyéb oldalain is használhatók. Emellett, mivel ezek a modell részei, a szeletelőt törölheti is a jelentésoldalról. Ha vissza szeretné állítani, csak húzza át a lehetőségelemzési paramétert a **Mezők** listájából a vászonra, majd állítsa át szeletelőre a vizualizációt.
 
 ## <a name="using-a-what-if-parameter"></a>Lehetőségelemzési paraméter használata
-Hozzunk létre egy, a **Lehetőségelemzési** paraméter használatáról szóló, egyszerű példát. Az előző szakaszban létrehoztunk egy **Lehetőségelemzési** paramétert, most pedig használatba állítjuk egy új mérték létrehozásával, amelynek az értéke egy csúszkával állítható. Ehhez létrehozunk egy új mértéket.
 
-![](media/desktop-what-if/what-if_05.png)
+Hozzunk létre egy, a lehetőségelemzési paraméter használatát bemutató, egyszerű példát. A lehetőségelemzési paramétert már létrehoztuk az előző szakaszban. Most egy új mérték létrehozásával vesszük használatba, amelynek az értéke a csúszka helyzetének megfelelően változik.
 
-Az új mérték egyszerűen a teljes értékesítés mennyisége lesz, a kedvezménnyel együtt. Természetesen összetett és érdekes mértékeket is létrehozhat, amelyek lehetővé teszik a jelentések felhasználói számára, hogy megjelenítsék a **Lehetőségelemzési** paraméter változóit. Például létrehozhat egy jelentést, amely lehetővé teszi az értékesítés területén dolgozó személyeknek a kompenzáció megtekintését, ha elérnek bizonyos értékesítési célokat vagy százalékokat, vagy megtekinthetik a megnövekedett értékesítés nagyobb kedvezményekre gyakorolt hatását.
+![Paraméterrel használt új mérték felvétele](media/desktop-what-if/what-if_05.png)
 
-Miután beírtuk a mérték képletét a képletsávba, és az **Értékesítés kedvezmény után** nevet adtuk neki, megjelennek az eredmények:
+Az új mérték egyszerűen a teljes értékesítés mennyisége lesz, a kedvezménnyel együtt. Összetett és érdekes mértékeket is létrehozhat, amelyek lehetővé teszik a jelentések felhasználói számára, hogy megjelenítsék a lehetőségelemzési paraméter változóját. Például létrehozhat egy jelentést, amely lehetővé teszi az értékesítés területén dolgozó személyeknek a kompenzáció megtekintését, ha elérnek bizonyos értékesítési célokat vagy százalékokat, vagy megtekinthetik a megnövekedett értékesítés nagyobb kedvezményekre gyakorolt hatását.
 
-![](media/desktop-what-if/what-if_06.png)
+Írja be a mérték képletét a képletsávba, és adja a képletnek az *Értékesítés kedvezmény után* nevet.
 
-Ezután létrehozunk egy oszlopvizualizációt *OrderDate* névvel a tengelyen, valamint a *SalesAmount* és a most létrehozott *Értékesítés kedvezmény után* mértékkel mint értékekkel.
+![Az Értékesítés kedvezmény után képlet definíciója](media/desktop-what-if/what-if_06.png)
 
-![](media/desktop-what-if/what-if_07.png)
+Ezután létrehozunk egy oszlopvizualizációt **OrderDate** névvel a tengelyen, valamint a **SalesAmount** és a most létrehozott **Értékesítés kedvezmény után** mértékkel mint értékekkel.
 
-Ezután ahogy mozgatjuk a csúszkát, láthatjuk, hogy az *Értékesítés kedvezmény után* oszlop a kedvezményes értékesítések mennyiségét tükrözi.
+![A SalesAmount vizualizációja](media/desktop-what-if/what-if_07.png)
 
-![](media/desktop-what-if/what-if_08.png)
+Ezután ahogy mozgatjuk a csúszkát, láthatjuk, hogy az **Értékesítés kedvezmény után** oszlop a kedvezményes értékesítések mennyiségét tükrözi.
 
-Ennyi az egész! Bármilyen esetben használhatja a **Lehetőségelemzési** paramétereket, így lehetővé teheti a jelentések felhasználói számára, hogy a jelentésekben létrehozott különböző forgatókönyvekkel dolgozzanak.
+![Vizualizációval használt csúszka](media/desktop-what-if/what-if_08.png)
 
+Ennyi az egész! Lehetőségelemzési paraméterek sokféle helyzetben használhatók. Ilyen paraméterekkel lehetővé teheti a jelentések felhasználói számára, hogy a jelentésekben létrehozott különböző forgatókönyvekkel dolgozzanak.

@@ -32,6 +32,8 @@
               href: relationships-many-to-many.md
             - name: DirectQuery mód – útmutató
               href: directquery-model-guidance.md
+            - name: Útmutató az összetett modellhez
+              href: composite-model-guidance.md
         - name: DAX
           items:
             - name: A DIVIDE függvény és a divide operátor (/)
@@ -50,8 +52,6 @@
               href: dax-column-measure-references.md
             - name: Ne használja a FILTER-t szűrő argumentumaként
               href: dax-avoid-avoid-filter-as-filter-argument.md
-        - name: Jelentés létrehozása
-          items:
             - name: Vizualizációk kibővítése a jelentésoldalak elemleírásával
               href: report-page-tooltips.md
             - name: Jelentésoldal részletezésének használata
@@ -64,6 +64,10 @@
               href: report-paginated-blank-page.md
             - name: SSRS-jelentések migrálása a Power BI-ba
               href: migrate-ssrs-reports-to-power-bi.md
+        - name: Felügyelet és üzembe helyezés
+          items:
+            - name: Helyszíni adatátjáró méretezése
+              href: gateway-onprem-sizing.md
     - name: Tanulmányok
       items:
         - name: Tanulmányok áttekintése
