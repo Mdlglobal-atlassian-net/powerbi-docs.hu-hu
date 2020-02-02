@@ -1,179 +1,168 @@
 ---
 title: Oszlop hozzáadása példából a Power BI Desktopban
-description: A meglévő oszlopok példaként történő használatával gyorsan létrehozhatók új oszlopok a Power BI Desktopban
+description: A meglévő oszlopok példaként történő használatával gyorsan létrehozhatók új oszlopok a Power BI Desktopban.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d07cfda18f44a0872c8c9567aa29ac49a98622a7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b10bbaa4158e6c5392cb6ed937c54bdbb5d555d2
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869438"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538515"
 ---
-# <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Oszlop hozzáadása példából a Power BI Desktopban
-A **Power BI Desktop** 2017. áprilisi kiadásától kezdve a **Lekérdezésszerkesztő** használatával új adatoszlopokat adhat a modellhez úgy, hogy egyszerűen megad egy vagy több mintaértéket az új oszlop számára. Létrehozhat új példaoszlopot az aktuális kijelölésből, vagy az adott táblában található összes oszlop (vagy csak a kijelölt oszlopok) alapján történő bemeneti értékek megadásával.
+# <a name="add-a-column-from-examples-in-power-bi-desktop"></a>Oszlop hozzáadása példák alapján a Power BI Desktopban
+A Power Query-szerkesztőben *új oszlop példák alapján történő hozzáadásával* egyszerűen adhat új oszlopokat az adatmodellhez úgy, hogy megad egy vagy több példát az új oszlopok értékeire. Az új oszlop példaértékei megadhatók kijelölésből, vagy a tábla összes meglévő oszlopán alapuló bementként.
 
 ![](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
-Így gyorsan és egyszerűen hozhat létre új oszlopokat, ami a következő helyzetekben lehet igazán hasznos:
+Az *oszlop hozzáadása példából* funkcióval gyorsan és egyszerűen hozhat létre új oszlopokat, ami a következő helyzetekben lehet igazán hasznos:
 
-* Ismeri az új sorban eredményül kapni kívánt adatokat, de nem tudja, hogy mely átalakítással (vagy átalakításegyüttessel) érheti el azt.
-* Tudja, hogy melyik átalakításra van szüksége, de nem biztos abban, hogy hova kell kattintania vagy melyik elemet kell kiválasztania a felhasználói felületen ennek eléréséhez.
-* Mindent tud a szükséges átalakításokról egy *Egyéni oszlop* kifejezés használatával az **M**-ben, de e kifejezések közül egy (vagy több) nem kattintható vagy nem adható hozzá a felhasználói felületen.
+- Ismeri az új oszlopba kívánt adatokat, de nem tudja, hogy mely átalakítással vagy átalakításegyüttessel érheti el azt.
+- Tudja, hogy melyik átalakításra van szüksége, de nem biztos abban, hogy a felhasználói felület melyik elemét kell kiválasztania ennek eléréséhez.
+- Mindent tud az *M* nyelven megírt *Egyéni oszlop* kifejezés használatával végrehajtható szükséges átalakításokról, de e kifejezések közül egy (vagy több) nem érhető el a felhasználói felületen.
 
-Az **Oszlop felvétele példákból** funkció használata egyszerű és átlátható. A következő néhány szakaszban bemutatjuk, hogy mennyire egyszerű is.
+Egy oszlop példa alapján történő hozzáadása egyszerű és magától értetődő. A következő szakaszok bemutatják, mennyire egyszerű.
 
-## <a name="use-query-editor-to-add-a-new-column-from-examples"></a>A Lekérdezésszerkesztő használata egy új oszlop példából történő felvételére
-Egy új oszlop példából történő létrehozásához indítsa el a **Lekérdezésszerkesztőt**. Ehhez kattintson a **Power BI Desktop** **Kezdőlap** szalagján a **Lekérdezések szerkesztése** gombra.
+## <a name="add-a-new-column-from-examples"></a>Új oszlop felvétele példák alapján
 
-![](media/desktop-add-column-from-example/add-column-from-example_02.png)
+A Wikipediáról származó példaadatok beszerzéséhez válassza az **Adatok beolvasása** > **Web** lehetőséget a Power BI Desktop menüszalagjának **Kezdőlapján**. 
 
-Adatok weblapból történő lekéréséhez lépjen a **Kezdőlap** lapra, kattintson az **Adatok lekérése > Web** elemre, majd illessze be az URL-címet a megjelenő párbeszédablakba. Ez a cikk egy Wikipedia-cikk adatait használja. Rákattinthat a következő hivatkozásra az adatok lekéréséhez, majd kövesse az itt leírtakat:
+![Webes adatok beolvasása](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
-* [**Az Amerikai Egyesült Államok államai**](https://wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States)
+A megjelenő párbeszédablakba illessze be az alábbi URL-címet, majd kattintson az **OK** gombra: 
 
-A **Lekérdezésszerkesztő** elindítását követően a rendszer betölt bizonyos adatokat, így máris megteheti az első lépéseket az oszlopok példákból történő felvételéhez. Egy új oszlop hozzáadásához a **Lekérdezésszerkesztőben** kattintson az **Oszlop hozzáadása** lapra a menüszalagon, majd válassza az **Oszlop példákból** lehetőséget. A legördülő listából választhatja **Az összes oszlopból** (ez az alapértelmezett beállítás, ha a legördülő lista helyett a gombra kattint) vagy **A kiválasztásból** beállítást is. Ebben a cikkben **Az összes oszlopból** beállítás kiválasztásával mutatjuk be a folyamatot.
+*https:\//wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States*
 
-![](media/desktop-add-column-from-example/add-column-from-example_03.png)
+A **Navigátor** párbeszédpanelen jelölje ki a **States of the United States of America** táblázatot, majd válassza az **Adatok átalakítása** lehetőséget. A táblázat megnyílik a Power Query-szerkesztőben.
 
-## <a name="the-add-column-from-examples-pane"></a>Az Oszlop felvétele példákból panel
-Miután elvégezte a kijelölést az új oszlop példákból történő hozzáadásához, egy új panelen megjelennek az aktuális táblázat oszlopai (görgetéssel tekintheti meg az összeset). Egy új **Column1** oszlop is megjelenik a jobb oldalon. Ez az az oszlop, amelyet a **Power BI Desktop** a példák alapján létrehoz. Az új **Column1** oszlop fejléce alatt található üres cellákba beírhatja azokat a példákat, amelynek alapján a Power BI szabályokat és átalakításokat hoz létre a példával való megfeleltetéshez.
+Azt is megteheti, hogy a Power BI Desktopba már betöltött adatok megnyitásához a menüszalag **Kezdőlapján** a **Lekérdezések szerkesztése** lehetőséget választja. Az adatok megnyílnak a Power Query-szerkesztőben. 
 
-Vegye észre, hogy ez egy **Alkalmazott lépés** a **Lekérdezés beállításai** panelen. Mint mindig, a **Lekérdezésszerkesztő** rögzíti az átalakítás lépéseit, és sorrendben alkalmazza azokat a lekérdezésen.
+![A Lekérdezések szerkesztése lehetőség a Power BI Desktopban](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
-![](media/desktop-add-column-from-example/add-column-from-example_04.png)
+Miután a mintaadatok megnyílnak a Power Query-szerkesztőben, válassza az **Oszlop hozzáadása** lapot a menüszalagon, majd válassza az **Oszlop példákból** lehetőséget. Magát az **Oszlop példákból** ikont választva az összes meglévő oszlop alapján hozhatja létre az oszlopot, a legördítő nyíllal pedig választhat az **Összes oszlopból** és a **Kijelölésből** lehetőségek közül. Ehhez a bemutatóhoz használja az **Összes oszlopól** lehetőséget.
 
-Ennek neve **Oszlop felvétele példákból** panel, amelyhez négy fő terület tartozik:
+![Az Oszlop hozzáadása példákból lehetőség kiválasztása](media/desktop-add-column-from-example/add-column-from-example_03.png)
 
-1. A **Parancssáv**, amely a funkció vagy az átalakítás rövid leírását tartalmazza.
-2. A **Visszajelzés küldése** lehetőség, amellyel segítheti a Power BI-t a funkció továbbfejlesztésében.
-3. Az **OK** és a **Mégse** gombok, amelyek segítségével véglegesítheti az átalakításokat vagy az oszlop hozzáadását, illetve megszakíthatja a műveletet.
-4. Az új oszlopterület, ahol bármelyik sorba beírhatja a mintaértékeket (így adva meg a példát a Power BI számára) az adott sor más oszlopaihoz képest.
+## <a name="add-column-from-examples-pane"></a>Az Oszlop hozzáadása példákból panel
+Az **Oszlop hozzáadása** > **Példákból** menüpont kiválasztása után a tábla felett megnyílik az **Oszlop hozzáadása példákból** panel. Az új **1. oszlop** a meglévő oszlopoktól jobbra jelenik meg (az összes megtekintéséhez esetleg görgetnie kell). Amikor megadja a példa értékeket az **1. oszlop** üres celláiban, a Power BI a példáknak megfelelő szabályokat és átalakításokat hoz létre, amelyeket az oszlop többi részének kitöltéséhez használ.
 
-![](media/desktop-add-column-from-example/add-column-from-example_05.png)
+Figyelje meg, hogy az **Oszlop példákból** a **Lekérdezés beállításai** panel **Alkalmazott lépések** területén is megjelenik. Mint mindig, a Power Query-szerkesztő rögzíti az átalakítás lépéseit, és sorrendben alkalmazza azokat a lekérdezésen.
 
-A példának az oszlopba történő beírása során a Power BI az észlelt átalakítások alapján megjeleníti az éppen létrehozás alatt álló oszlop előnézetét. Ha például az első sorba az *Alabama* kifejezést írja be, az a tábla első oszlopában az *Alabama* értékének felel meg. Az *Enter* billentyű lenyomásakor a Power BI a fenti érték alapján tölti ki az oszlopot.
+![Az Oszlop hozzáadása példákból panel](media/desktop-add-column-from-example/add-column-from-example_04.png)
 
-De, ekkor lépjen mondjuk a *Massachusetts[E]* tartalmú sorra, és törölje a végéről az *[E]* részt (mert többé már nincs szükség rá). A Power BI észleli a változást, és a példát használja egy átalakítás létrehozására. A középső fenti panelen megtekintheti az átalakítás magyarázatát.
+A példának az oszlopba történő beírása során a Power BI a létrehozott átalakítások alapján megjeleníti az oszlop többi részének előnézetét. Ha például az első sorba az *Alabama* kifejezést írja be, az a tábla első oszlopában az **Alabama** értékének felel meg. Az Enter lenyomása után a Power BI az oszlop első értéke alapján kitölti az oszlop többi részét, és a **Name & postal abbreviation[12] - Másolat** nevet adja az oszlopnak.
 
-![](media/desktop-add-column-from-example/add-column-from-example_06.png)
+Most lépjen az új oszlop **Massachusetts[E]** sorához, és törölje a sztring **[E]** részét. A Power BI észleli a változást, és a példát használja egy átalakítás létrehozására. A Power BI megadja az átalakítás leírását az **Oszlop hozzáadása példákból** panelen, és átnevezi az oszlopot a **Határolójel előtti szöveg** névre. 
 
-Újabb példák megadásakor a **Lekérdezésszerkesztő** újabb átalakításokat végez. Ha elégedett, az **OK** lehetőség kiválasztásával véglegesítheti a módosításokat.
+![Példákból hozzáadott, átalakított oszlop](media/desktop-add-column-from-example/add-column-from-example_06.png)
 
-## <a name="see-add-column-from-examples-in-action"></a>Az Oszlop felvétele példákból művelet működése
-Szeretné működés közben is megtekinteni? Az alábbi videó a funkció használatát mutatja be a jelen példa korábbi részében megadott adatforrás használatával. Figyelje meg, és kövesse a lépéseket!
+Újabb példák megadásakor a Power Query-szerkesztő újabb átalakításokat végez. Ha elégedett az eredménnyel, véglegesítse a módosításokat az **OK** lehetőség kiválasztásával. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-ykbVW9wQfw" frameborder="0" allowfullscreen></iframe>
+Az új oszlopot tetszés szerint átnevezheti, ha duplán az oszlopfejlécre kattint, vagy a jobb gombbal kattint rá, majd az **Átnevezés** lehetőséget választja. 
 
-## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
-Számos átalakítás érhető el az **Oszlop felvétele példákból** funkció használatakor, de nem mindegyik támogatott. A támogatott átalakításokat az alábbi lista tartalmazza.
+Tekintse meg az **Oszlop hozzáadása példákból** funkció működését a minta-adatforrással bemutató videót: 
 
-* **Referencia**
+[Power BI Desktop: Oszlop hozzáadása példákból](https://www.youtube.com/watch?v=-ykbVW9wQfw). 
+
+## <a name="list-of-supported-transformations"></a>A támogatott átalakítások listája
+Az **Oszlop hozzáadása példákból** funkció használatához sokféle átalakítás érhető el, de nem az összes. A támogatott átalakításokat az alábbi lista tartalmazza:
+
+**Általános**
+
+- Feltételes oszlop
+
+**Referencia**
   
-  * Hivatkozás egy adott oszlopra (beleértve a levágás, a törlés, valamint a kis- és nagybetűkre vonatkozó átalakításokat is)
+- Hivatkozás egy adott oszlopra beleértve a levágást, a törlést, valamint a kis- és nagybetűkre vonatkozó átalakításokat is
 
-* **Szövegátalakítások**
-  
-  * Egyesítés (támogatja a sztringliterálok és a teljes oszlop értékeinek egyesítését)
-  * Csere
-  * Hossz
-  * Kinyerés   
-    * Első karakterek
-    * Utolsó karakterek
-    * Tartomány
-    * Határolójel előtti szöveg
-    * Határolójel utáni szöveg
-    * Határolójelek közötti szöveg
-    * Hossz
+**Szövegátalakítások**
 
-* Az alábbi támogatott **szövegátalakítások** a **Power BI Desktop** 2017. novemberi kiadásától kezdve érhetőek el:
-    
-  * Karakterek eltávolítása
-  * Karakterek megtartása
+- Egyesítés (támogatja a sztringliterálok és a teljes oszlop értékeinek egyesítését)
+- Csere
+- Hossz
+- Kinyerés   
+  - Első karakterek
+  - Utolsó karakterek
+  - Tartomány
+  - Határolójel előtti szöveg
+  - Határolójel utáni szöveg
+  - Határolójelek közötti szöveg
+  - Hossz
+  - Karakterek eltávolítása
+  - Karakterek megtartása
 
 > [!NOTE]
 > Valamennyi *szöveg*átalakítás figyelembe veszi az oszlop értékének levágására, törlésére vagy a kis- és nagybetűkre vonatkozó lehetséges átalakítási igényét.
-> 
-> 
 
-* **Dátumátalakítások**
-  
-  * Nap
-  * Hét napja
-  * Hét napjának neve
-  * Év napja
-  * Hónap
-  * Hónap neve
-  * Év negyedéve
-  * Hónap hete
-  * Év hete
-  * Év
-  * Kor
-  * Év kezdete
-  * Év vége
-  * Hónap kezdete
-  * Hónap vége
-  * Negyedév kezdete
-  * Hónap napjainak száma
-  * Negyedév vége
-  * Hét kezdete
-  * Hét vége
-  * Hónap napja
-  * Nap kezdete
-  * Nap vége
+**Dátumátalakítások**
 
+- Nap
+- Hét napja
+- Hét napjának neve
+- Év napja
+- Hónap
+- Hónap neve
+- Év negyedéve
+- Hónap hete
+- Év hete
+- Év
+- Kor
+- Év kezdete
+- Év vége
+- Hónap kezdete
+- Hónap vége
+- Negyedév kezdete
+- Hónap napjainak száma
+- Negyedév vége
+- Hét kezdete
+- Hét vége
+- Hónap napja
+- Nap kezdete
+- Nap vége
 
-* **Időpont-átalakítások**
-  
-  * Óra
-  * Perc
-  * Másodperc  
-  * Helyi időre
+**Időpont-átalakítások**
+
+- Hour
+- Minute
+- Second  
+- Helyi időre
 
 > [!NOTE]
 > Valamennyi *dátum*- és *időpont*átalakítás figyelembe veszi az oszlop értékének *Dátum*, *Idő* vagy *Dátum/idő* értékre történő konvertálásának lehetséges igényét.
-> 
-> 
 
-* **Számátalakítások** 
+**Számátalakítások** 
 
-  * Abszolút érték
-  * Arkusz koszinusz
-  * Arkusz szinusz
-  * Arkusz tangens
-  * Konvertálás számmá
-  * Koszinusz
-  * Köbre emelés
-  * Osztás
-  * Kitevő
-  * Faktoriális
-  * Egész szám osztása
-  * Páros
-  * Páratlan
-  * Természetes logaritmus
-  * 10-es alapú logaritmus
-  * Moduló
-  * Szorzás
-  * Kerekítés lefelé
-  * Kerekítés felfelé
-  * Előjel
-  * Szinusz
-  * Négyzetgyök
-  * Négyzetre emelés
-  * Kivonás
-  * Összeg
-  * Tangens
+- Abszolút érték
+- Arkusz koszinusz
+- Arkusz szinusz
+- Arkusz tangens
+- Konvertálás számmá
+- Koszinusz
+- Köbre emelés
+- Osztás
+- Kitevő
+- Faktoriális
+- Egész szám osztása
+- Páros
+- Páratlan
+- Természetes logaritmus
+- 10-es alapú logaritmus
+- Moduló
+- Szorzás
+- Kerekítés lefelé
+- Kerekítés felfelé
+- Előjel
+- Szinusz
+- Négyzetgyök
+- Négyzetre emelés
+- Kivonás
+- Összeg
+- Tangens
+- Gyűjtés/Tartományok
 
-* Az alábbi támogatott **számátalakítások** a **Power BI Desktop** 2017. novemberi kiadásától kezdve érhetőek el:
-
-  * Gyűjtés/Tartományok
-
-* **Általános**
-  
-  * Feltételes oszlop
