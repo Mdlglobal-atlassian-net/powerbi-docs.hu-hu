@@ -7,74 +7,76 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 61af482ca5a035325a6c3f6c5a661aa8c3fc0985
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 751a53e2bfe0c9743a71cc41aa349afa23fd013a
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761588"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539189"
 ---
 # <a name="connect-to-data-sources-in-power-bi-desktop"></a>Kapcsolódás adatforrásokhoz a Power BI Desktop alkalmazásban
+
 A Power BI Desktop segítségével egyszerűen csatlakozhat az adatok egyre bővülő forrásaihoz. Ha nem rendelkezik a Power BI Desktoppal, itt [letöltheti](https://go.microsoft.com/fwlink/?LinkID=521662) és telepítheti.
 
-A Power BI Desktopban *sokféle* adatforrás érhető el. Az alábbi kép bemutatja, hogyan csatlakozhat adatokhoz a **Fájl** menüszalag **Lekérdezés \> Továbbiak** menüpontjában.
+A Power BI Desktopban *sokféle* adatforrás érhető el. Az alábbi kép bemutatja, hogyan csatlakozhat adatokhoz a **Adatok beolvasása** > **Egyéb** > **Web** lehetőséggel.
 
-![](media/desktop-connect-to-data/getdatavid_smallv2.gif)
+![Adatok beolvasása a webről](media/desktop-connect-to-data/get-data-from-the-web.png)
 
 ## <a name="example-of-connecting-to-data"></a>Példa adatokhoz való csatlakozásra
+
 Ebben a példában egy **webes** adatforráshoz csatlakozunk.
 
-Vegyük például azt az esetet, ha valaki nyugdíjba megy, és olyan helyen szeretne élni, ahol sokat süt a nap, alacsonyak az adók és jó az egészségügyi ellátás. De az is lehet, hogy adatelemzőként van szüksége olyan információkra, amelyekkel segíthet az ügyfeleknek, például egy esőkabátgyártó ügyfélnek egy olyan helyre irányuló célzott értékesítésben, ahol *sokat* esik.
+Tegyük fel, hogy nyugdíjba megy. Olyan helyen szeretne élni, ahol sokat süt a nap, alacsonyak az adók és jó az egészségügyi ellátás. De az is lehet, hogy adatelemzőként van szüksége olyan információkra, amelyekkel segíthet az ügyfeleknek, például egy esőkabátgyártó ügyfélnek egy olyan helyre irányuló célzott értékesítésben, ahol *sokat* esik.
 
 Mindkét esetben találhat olyan webes forrásanyagokat, amelyek releváns adatokat és egyéb információkat biztosítanak:
 
-[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
-Válassza ki a **Lekérdezés \> Web** lehetőséget, és írja be a címet.
+Válassza az **Adatok beolvasása** > **Egyéb** > **Web** lehetőséget. A **Webről** mezőbe írja be a címet.
 
-![](media/desktop-connect-to-data/connecttodata_3.png)
+![Webes forrás címének megadása](media/desktop-connect-to-data/connecttodata_3.png)
 
-Amikor az **OK** gombra kattint, munkához lát a Power BI Desktop **Lekérdezés** funkciója. A Power BI Desktop csatlakozik a webes erőforráshoz, és a **Kezelő** ablak visszaadja a webhelyen talált találatokat. Ebben az esetben a webhelyen talált egy táblát (0. tábla) és a teljes dokumentumot. Minket a tábla érdekel, ezért azt választjuk ki a listáról. A **Kezelő** ablak megjelenít egy előnézetet.
+Amikor az **OK** gombra kattint, munkához lát a Power BI Desktop *Lekérdezés* funkciója. A Power BI Desktop csatlakozik a webes erőforráshoz, és a **Kezelő** ablak visszaadja a webhelyen talált találatokat. Ebben az esetben a webhelyen talált egy táblázatot és a teljes dokumentumot. Minket a táblázat érdekel, ezért azt választjuk ki a listáról. A **Kezelő** ablak megjelenít egy előnézetet.
 
-![](media/desktop-connect-to-data/datasources_fromnavigatordialog.png)
+![Adatok előnézete a Kezelőben](media/desktop-connect-to-data/datasources_fromnavigatordialog.png)
 
-Ezen a ponton szerkesztheti a lekérdezést, mielőtt betöltené a táblát. Ehhez válassza az ablak alján látható **Szerkesztés** gombot. Ha nem szeretné szerkeszteni, csak töltse be a táblát.
+Ezen a ponton szerkesztheti a lekérdezést, mielőtt betöltené a táblázatot. Ehhez válassza az ablak alján látható **Adatok átalakítása** lehetőséget. Ha nem szeretné szerkeszteni, csak töltse be a táblázatot.
 
-Ha a **Szerkesztés** lehetőséget választja, a rendszer betölti a táblát, és a Lekérdezésszerkesztő elindul. Megjelenik a **Lekérdezés beállításai** panel (ha nem, válassza a **Nézet** lehetőséget a menüszalagról, majd a **Megjelenítés \> Lekérdezés beállításai** lehetőséget a **Lekérdezés beállításai** panel megjelenítéshez). Ez a következőképpen néz ki.
+A táblázat betöltéséhez és a Power Query-szerkesztő megnyitásához válassza az **Adatok átalakítása** lehetőséget. Megnyílik a **Lekérdezés beállításai** panel. Ha nem, válassza a menüszalag **Nézet** elemét, majd a **Lekérdezés beállításai** lehetőséget a **Lekérdezés beállításai** panel megjelenítéséhez. Ez a következőképpen néz ki.
 
-![](media/desktop-connect-to-data/designer_gsg_editquery.png)
+![A Power Query-szerkesztő a lekérdezési beállításokkal](media/desktop-connect-to-data/designer_gsg_editquery.png)
 
-A pontszámok inkább szövegek, mint számok, nekünk pedig számokra van szükségünk. Ez nem jelent problémát. Csak kattintson a jobb gombbal az oszlop fejlécére, és válassza a **Típus módosítása \> Egész szám** lehetőséget a módosításukhoz. Ha egynél több oszlopot szeretne kijelölni, először jelöljön ki egy oszlopot, majd a **SHIFT** billentyűt lenyomva tartva jelölje ki a szomszédos oszlopokat, és kattintson a jobb gombbal az összes kijelölt oszlop módosításához. Nem egymás melletti oszlopokat a **CTRL** gomb segítségével jelölhet ki.
+A pontszámok inkább szövegek, mint számok, nekünk pedig számokra van szükségünk. Semmi gond. Kattintson a jobb gombbal az oszlop fejlécére, és válassza a **Típus módosítása** >  **Egész szám** lehetőséget a módosításhoz. Ha egynél több oszlopot szeretne kijelölni, először jelöljön ki egy oszlopot, majd a Shift billentyűt lenyomva tartva jelölje ki a szomszédos oszlopokat, és kattintson a jobb gombbal az összes kijelölt oszlop módosításához. Nem egymás melletti oszlopokat a Ctrl billentyű segítségével jelölhet ki.
 
-![](media/desktop-connect-to-data/designer_gsg_changedatatype.png)
+![Adattípus egész számmá változtatása](media/desktop-connect-to-data/designer_gsg_changedatatype.png)
 
-A **Lekérdezés beállításai** **Alkalmazott lépések** területén minden végrehajtott módosítás megjelenik. Ahogy további módosításokat eszközöl az adatokon, a Lekérdezésszerkesztő mindent rögzít az **Alkalmazott lépések** szakaszban, ahol az elemeket szükség szerint törölheti, áttekintheti, átrendezheti vagy törölheti.
+A **Lekérdezés beállításai** **ALKALMAZOTT LÉPÉSEK** területén minden végrehajtott módosítás megjelenik. Ahogy további módosításokat eszközöl az adatokon, a Power Query-szerkesztő mindent rögzít az **ALKALMAZOTT LÉPÉSEK** szakaszban, ahol az elemeket szükség szerint törölheti, áttekintheti, átrendezheti vagy törölheti.
 
-![](media/desktop-connect-to-data/designer_gsg_appliedsteps_changedtype.png)
+![Alkalmazott lépések](media/desktop-connect-to-data/designer_gsg_appliedsteps_changedtype.png)
 
-A táblán további módosításokat a betöltés után is elvégezhet, de jelenleg ennyi elég is lesz. Ha végzett, válassza ki a **Bezárás és alkalmazás** lehetőséget a **Kezdőlap** menüszalagon, hogy a Power BI Desktop alkalmazza a módosításokat, és bezárja a Lekérdezésszerkesztőt.
+A táblán betöltés után is végezhet további módosításokat, de jelenleg ennyi is elég lesz. Ha végzett, válassza a **Bezárás és alkalmazás** lehetőséget a **Kezdőlap** menüszalagon, hogy a Power BI Desktop alkalmazza a módosításokat, és bezárja a Power Query-szerkesztőt.
 
-![](media/desktop-connect-to-data/connecttodata_closenload.png)
+![Bezárás és alkalmazás](media/desktop-connect-to-data/connecttodata_closenload.png)
 
 Ha betöltődött az adatmodell, a Power BI Desktop **Jelentés** nézetében megkezdhetjük a vizualizációk létrehozását a mezők vászonra húzásával.
 
-![](media/desktop-connect-to-data/connecttodata_dragontoreportview.png)
+![Érték vászonra húzása](media/desktop-connect-to-data/connecttodata_dragontoreportview.png)
 
-Ez persze egy egyszerű, egyetlen adatkapcsolattal rendelkező modell; a legtöbb Power BI Desktop-jelentés különböző, az igényei szerint alakított adatforrásokhoz csatlakozik, olyan kapcsolatokkal, amelyek részletes adatmodellt hoznak létre. 
+Ez a modell persze egyszerű, egyetlen adatkapcsolata van. A legtöbb Power BI Desktop-jelentés különböző, az igényei szerint alakított adatforrásokhoz csatlakozik, olyan kapcsolatokkal, amelyek részletes adatmodellt hoznak létre.
 
 ## <a name="next-steps"></a>Következő lépések
 A Power BI Desktop műveletek és lehetőségek széles tárházát tartalmazza. A program képességeivel kapcsolatos további információkért lásd az alábbi forrásanyagokat:
 
 * [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)
-* [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)
+* [A Lekérdezésszerkesztő használata a Power BI Desktopban](desktop-query-overview.md)
 * [Adatforrások a Power BI Desktopban](desktop-data-sources.md)
-* [Adatok formázása és kombinálása a Power BI Desktoppal](desktop-shape-and-combine-data.md)
-* [Gyakori lekérdezési feladatok a Power BI Desktopban](desktop-common-query-tasks.md)   
+* [Adatok formázása és összevonása a Power BI Desktopban](desktop-shape-and-combine-data.md)
+* [Gyakori lekérdezési feladatok végrehajtása a Power BI Desktopban](desktop-common-query-tasks.md)   
 
-Szeretne visszajelzést küldeni? Használja a Power BI Desktop **Ötlet beküldése** menüelemét vagy keresse fel a [Közösségi visszajelzés](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback) oldalt. Kíváncsian várjuk a véleményét!
+Szeretne visszajelzést küldeni? Remek! Használja a Power BI Desktop **Ötlet beküldése** menüelemét vagy keresse fel a [Közösségi visszajelzés](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback) oldalt. Kíváncsian várjuk a véleményét!
 
-![](media/desktop-connect-to-data/sendfeedback.png)
+![Ötlet beküldése](media/desktop-connect-to-data/sendfeedback.png)
 
