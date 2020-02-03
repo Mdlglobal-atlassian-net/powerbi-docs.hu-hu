@@ -1,255 +1,271 @@
 ---
-title: Aggregációk használata a Power BI Desktopban
-description: Interaktív big data-elemzések végrehajtása a Power BI Desktopban
+title: Aggregációk használata és kezelése a Power BI Desktopban
+description: Az aggregációk segítségével interaktívan elemezheti a big data típusú adatokat a Power BI Desktopban.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/16/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ba9c11004099b1e11d935cd0b178463e542bea9a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: d8db626300902125cf3536f03ed111ef3e052324
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761795"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538734"
 ---
-# <a name="manage-aggregations-in-power-bi-desktop"></a>Aggregációk kezelése a Power BI Desktopban
+# <a name="use-aggregations-in-power-bi-desktop"></a>Aggregációk használata a Power BI Desktopban
 
-A Power BI-ban az **aggregációk** olyan big data-elemzéseket tesznek lehetővé, amelyekre korábban nem volt lehetőség. Az **aggregációk** nagymértékben csökkenthetik a nagyméretű adatkészletek döntéshozáshoz szükséges feloldásának költségeit.
+A Power BI-beli *aggregációk* lehetővé teszik a táblázatok méretének csökkentését, így a fontos adatokra figyelhet, és javíthatja a lekérdezések hatékonyságát. Az aggregációk lehetővé teszik a big data típusú adatok egyéb módon megoldhatatlan interaktív elemzését, és radikálisan csökkenthetik a nagyméretű adathalmazok döntéshozatali célú feltárásának költségeit.
 
-![aggregációk a Microsoft Power BI Desktopban](media/desktop-aggregations/aggregations_07.jpg)
+Az aggregációk használatának néhány előnye:
 
-Az alábbi lista az **aggregációk** használatának előnyeit tartalmazza:
+- **Big data típusú adatok hatékonyabb lekérdezése**. A Power BI-vizualizációkkal folytatott minden interakció DAX-lekérdezéseket küld az adatkészletbe. A gyorsítótárazott aggregált adatok a részletes adatokhoz szükséges erőforrásoknak csak a töredékét használják fel, ezért lehetővé válik az egyébként hozzáférhetetlen big data típusú adatok feltárása.
+- **Optimalizált adatfrissítés**. A kisebb gyorsítótár-méretek csökkentik a frissítések időtartamát, így az adatok hamarabb eljutnak a felhasználókhoz.
+- **Kiegyensúlyozott architektúrák**. A Power BI memórián belüli gyorsítótárazása az aggregált lekérdezéseket is kezeli, ezzel lecsökkenti a DirectQuery módban küldött lekérdezések számát, és segít teljesíteni az egyidejűségi korlátokat. A fennmaradó lekérdezések többnyire szűrt tranzakciószintű lekérdezések, amelyeket az adattárházak és a big data-rendszerek általában könnyen kezelnek.
 
-* **Lekérdezési teljesítmény big data típusú adatok esetén** – amikor a felhasználók Power BI-jelentések vizualizációival dolgoznak, DAX-lekérdezések lesznek továbbítva az adathalmazhoz. Az adatok gyorsítótárazását az aggregált szinten végezheti, így a részletességi szinten szükséges erőforrásoknak töredékét felhasználva gyorsíthatja fel a lekérdezéseket. Úgy oldhat fel big data jellegű adatokat, ahogy korábban nem volt lehetséges.
-* **Adatfrissítés optimalizálása** – az adatok gyorsítótárazása az aggregált szinten történik, így csökkentheti a gyorsítótárak méretét és a frissítések időigényét. Gyorsabban teheti elérhetővé az adatokat a felhasználók számára.
-* **Kiegyensúlyozott architektúrák megvalósítása** – engedélyezheti, hogy az aggregált lekérdezések kezelése hatékonyan, a Power BI memóriában tárolt gyorsítótárában történjen. Korlátozhatja az adatforrásokhoz DirectQuery-módban érkező lekérdezéseket, hogy az egyidejűségi korláton belül maradhasson. Azok a lekérdezések, amelyek átjutnak, többnyire szűrt tranzakciószintű lekérdezések, amelyeket az adattárházak és a big data-rendszerek általában könnyen kezelnek.
+![Aggregációk a Microsoft Power BI Desktopban](media/desktop-aggregations/aggregations_07.jpg)
 
-### <a name="table-level-storage"></a>Táblaszintű tárolás
-A táblaszintű tárolás használata általában az aggregációk funkcióval együtt történik. További információkért olvassa el a [Tárolási mód a Power BI Desktopban](desktop-storage-mode.md) című cikket.
+Az olyan dimenziós adatforrások, mint az adattárházak és a data martok, [kapcsolatalapú aggregációkat](#aggregation-based-on-relationships) használnak. A Hadoop-alapú big data adatforrások gyakran [GroupBy-oszlopokra építik az aggregációkat](#aggregation-based-on-groupby-columns). Ez a cikk azt ismerteti, hogy miben különbözik az egyes adatforrások modellezése a Power BI-ban.
 
-### <a name="data-source-types"></a>Adatforrástípusok
-Az aggregációk használata dimenziós modellek adatforrásaival történik, például adattárházakkal, data martokkal, és Hadoop-alapú big data-forrásokkal. Ez a cikk azt ismerteti, hogy miben különbözik az egyes adatforrások modellezése a Power BI-ban.
+## <a name="create-an-aggregated-table"></a>Összesített tábla létrehozása
 
-A Power BI összes Importált forrásán és (nem többdimenziós) DirectQuery-forrásán használhatók aggregációk.
+Összesített tábla létrehozásához:
+1. Készítsen el egy új táblát tetszőleges mezőkkel a meglévő adatforrás és modell alapján. 
+1. Határozza meg az aggregációkat az **Aggregációk kezelése** párbeszédablakban.
+1. Ha lehetősége van rá, módosítsa az összesített tábla [tárolási módját](#storage-modes). 
 
-## <a name="aggregations-based-on-relationships"></a>Kapcsolatokon alapuló aggregációk
+### <a name="manage-aggregations"></a>Összesítések kezelése
 
-A kapcsolatokon alapuló **aggregációk** használata általában dimenziós modellekkel történik. Az adattárházakból vagy data martokból származó Power BI-adatkészletek csillag vagy hópehely sémájúak, és kapcsolatok találhatók a dimenziós és a ténytáblák között.
+Miután elkészítette az új táblát a tetszőleges mezőkkel, bármely Power BI Desktop-nézet **Mezők** paneljén kattintson jobb gombbal a táblára, és válassza az **Aggregációk kezelése** lehetőséget.
 
-Tekintsük meg az alábbi modellt, amely egyetlen adatforrásból származik. Tegyük fel, hogy kezdetben a modell minden táblája DirectQueryt használ. A **Sales** (Értékesítések) ténytáblában több milliárd sor található. Ha a **Sales** (Értékesítések) tárolási módját **Importált** lehetőségre állítanánk, akkor a gyorsítótárazás számottevő memóriahasználatot és munkaterhelést eredményezne.
+![Aggregációk kezelésének kiválasztása](media/desktop-aggregations/aggregations-06.png)
 
-![táblák egy modellben](media/desktop-aggregations/aggregations_02.jpg)
+Az **Aggregációk kezelése** tábla minden egyes sorához megjelenít egy sort, amelyben megadhatja az aggregáció működését. A következő példában a **Sales** részletes táblába küldött lekérdezések rendszeren belül át lesznek irányítva a **Sales Agg** aggregációs táblába. 
 
-Ehelyett inkább létrehozunk egy **Sales Agg** (Aggr. értékesítések) nevű aggregációs táblát. Ez részletesebb, mint a **Sales** (Értékesítések) tábla, ezért sokkal kevesebb sort fog tartalmazni. A sorok száma meg fog egyezni a **SalesAmount** (Értékesítési összeg) **CustomerKey** (ÜgyfélAzonosító), **DateKey** (DátumAzonosító) és **ProductSubcategoryKey** (TermékAlkategóriaAzonosító) attribútumok szerint csoportosított összegével. A több milliárd sor helyett így csak több millió sor lesz, ami sokkal könnyebben kezelhető.
+Az **Aggregációk kezelése** párbeszédpanel **Összegzés** legördülő listája az alábbi értékeket kínálja fel:
+- Darabszám
+- GroupBy
+- Max
+- Min.
+- Összeg
+- Tábla sorainak száma
 
-Tegyük fel, hogy az üzleti értékek szempontjából fontos lekérdezések a következő dimenziós táblákat használják a leggyakrabban. Ezek azok a táblák, amelyek a **Sales Agg** (Aggr. értékesítések) táblát a *one-to-many* (egy-a-többhöz) vagy a *many-to-one* (több-az-egyhez) kapcsolattal tudják szűrni.
+![Az Aggregációk kezelése párbeszédablak](media/desktop-aggregations/aggregations_07.jpg)
 
-* Földrajzi hely
-* Ügyfél
-* Dátum
-* Termékalkategória
-* Termékkategória
+A kapcsolatalapú aggregáció itt bemutatott példájában a GroupBy-bejegyzések megadása nem kötelező. A DISTINCTCOUNT kivételével nincs hatásuk az aggregáció viselkedésére, és elsődleges céljuk az olvashatóság. Az aggregációk a kapcsolatok alapján GroupBy-bejegyzések nélkül is adnának vissza találatokat. Ez eltér a cikk későbbi részében található [big data példától](#aggregation-based-on-groupby-columns), ahol a GroupBy-bejegyzések kötelezőek.
+
+A kívánt aggregációk meghatározása után válassza az **Összes alkalmazása** lehetőséget. 
+
+### <a name="validations"></a>Ellenőrzések
+
+Az **Aggregációk kezelése** párbeszédpanel az alábbi fontos ellenőrzéseket érvényesíti:
+
+- A kiválasztott **Részletek oszlop** adattípusának meg kell egyeznie az **Aggregációs oszlopéval**, kivéve a Darabszám és a Tábla sorainak száma **Összegzési** függvényeit. A Darabszám és a Tábla sorainak száma függvények csak egész szám típusú oszlopok esetén érhetők el, és nem kell megadni hozzájuk megfelelő adattípust.
+- Három vagy több táblát lefedő láncolt aggregációk nem engedélyezettek. Egy **A tábla** aggregációi például nem hivatkozhatnak olyan **B táblára**, amely egy **C táblára** hivatkozó aggregációkat tartalmaz.
+- Nem engedélyezettek duplikált aggregációk, amelyek ugyanazt az **Összegzési** funkciót használják, és ugyanarra a **Részletek táblára** vagy **Részletek oszlopra** hivatkoznak.
+- A **Részletek táblának** nem az Importált, hanem a DirectQuery tárolási módot kell használnia.
+- Nem támogatott az inaktív kapcsolat által használt külsőkulcs-oszlop szerinti csoportosítás és a USERELATIONSHIP függvényre való támaszkodás az aggregációnál.
+
+A legtöbb ellenőrzés kikényszerítése a legördülő menü elemeinek letiltásával és egy magyarázó elemleírás megjelenítésével történik, ahogyan a következő ábra mutatja.
+
+![Ellenőrzések megjelenítése elemleírásokkal](media/desktop-aggregations/aggregations_08.jpg)
+
+### <a name="aggregation-tables-are-hidden"></a>Az aggregációs táblák rejtettek
+
+Az adatkészlethez csak olvasási jogosultsággal rendelkező felhasználók nem kérdezhetik le az aggregációs táblákat. Ezzel elkerülhetők a biztonsági problémák a*Sorszintű biztonság (RLS)* használatánál. A felhasználók és a lekérdezések nem az aggregációs, hanem a részlettáblára hivatkoznak, és nem is kell tudniuk az aggregációs tábláról.
+
+Ezért az aggregációs táblák a **Jelentés** nézetből el vannak rejtve. Ha a tábla nincs elrejtve, akkor az **Aggregációk kezelése** párbeszédpanel fogja elrejtésre állítani az **Összes alkalmazása** lehetőség kiválasztásakor.
+
+### <a name="storage-modes"></a>Tárolási módok
+Ez az aggregációs funkció a táblaszintű tárolási módokkal kommunikál. A Power BI-táblák a *DirectQuery*, az *Importált*, vagy a *Kettős* tárolási módot használják. A DirectQuery mód közvetlenül kérdezi le a hátteret, az Importált pedig a memórián belül gyorsítótárazza az adatokat, és a lekérdezéseket a gyorsítótárazott adatokhoz küldi. Az aggregációk a Power BI összes Importált forrásán és nem többdimenziós DirectQuery-adatforrásán használhatók. 
+
+Ha a lekérdezések gyorsításához Importáltra kívánja állítani egy aggregált tábla tárolási módját, akkor a Power BI Desktop **Modell** nézetében válassza ki az aggregált táblát. A **Tulajdonságok** panelen bontsa ki a **Speciális** elemet, húzza le a **Tárolási mód** alatti kijelölést, és válassza ki az **Importált** elemet. Vegye figyelembe, hogy ez a művelet nem vonható vissza. 
+
+![A tárolási mód beállítása](media/desktop-aggregations/aggregations-04.png)
+
+A táblázatos tárolási módokkal kapcsolatos további információért lásd: [Tárolási mód kezelése a Power BI Desktopban](desktop-storage-mode.md).
+
+### <a name="rls-for-aggregations"></a>RLS az aggregációk használatához
+
+Az RLS-kifejezéseknek a megfelelő működéshez mind az aggregációs táblát, mind a részletező táblát szűrniük kell. 
+
+A következő példában a **Geography** táblán alkalmazott RLS-kifejezés működik az aggregációkhoz, mert a Geography a kapcsolatok szűrési oldalán van mind a **Sales**, mind a **Sales Agg** táblánál. Az RLS-t egyaránt sikerrel alkalmazzák azok a lekérdezések, amelyek az aggregációs táblából kérnek le találatokat és azok, amelyek nem.
+
+![RLS az aggregációk használatához](media/desktop-aggregations/manage-roles.png)
+
+A **Product** táblán egy RLS-kifejezés csak a részletes **Sales** táblát szűri, de nem szűri az aggregált **Sales Agg** táblát. Mivel az aggregációs tábla a részletek tábla adatainak egy újabb reprezentációja, nem lenne biztonságos lekérdezésekre választ adni az aggregációs táblából, ha az RLS-szűrő nem alkalmazható. Nem ajánlott a részletek tábla kizárólagos szűrése, mert az ebből a szerepkörből származó felhasználói lekérdezések nem tudják felhasználni az aggregációs találatokat. 
+
+Egy kizárólag a **Sales Agg** táblán futtatott RLS-kifejezés csak az aggregációs táblát szűrné, de a részletező **Sales** táblát nem.
+
+![Az RLS kizárólag az aggregációs táblán való használata nem engedélyezett](media/desktop-aggregations/filter-agg-error.jpg)
+
+A [GroupBy-oszlopok szerinti aggregációk](#aggregation-based-on-groupby-columns) esetében a részletek táblára alkalmazott RLS-kifejezés felhasználható az aggregációs tábla szűrésére, mert a részletek tábla az aggregációs táblában az összes GroupBy-oszlopot lefedi. Másfelől azonban az aggregációs táblára alkalmazott RLS-szűrő nem alkalmazható a részletek táblára, ezért nincs engedélyezve.
+
+## <a name="aggregation-based-on-relationships"></a>Kapcsolatokon alapuló aggregációk
+
+A dimenziós modellek általában *kapcsolatokon alapuló aggregációkat*  használnak. Az adattárházakból vagy data martokból származó Power BI-adatkészletek csillag vagy hópehely sémájúak, és kapcsolatok találhatók a dimenziós és a ténytáblák között.
+
+Az alábbi, egyetlen adatforrásból származó modellben a táblázatok a DirectQuery tárolási módot használják. A **Sales** (Értékesítések) ténytáblában több milliárd sor található. Ha a **Sales** (Értékesítések) tárolási módját Importált lehetőségre állítaná, akkor a gyorsítótárazás számottevő memóriahasználatot és munkaterhelést eredményezne.
+
+![Részletes táblák egy modellben](media/desktop-aggregations/aggregations_02.jpg)
+
+Ehelyett inkább hozzunk létre egy **Sales Agg** (Aggr. értékesítések) nevű aggregációs táblát. A **Sales Agg** táblában a sorok száma megegyezik a **SalesAmount** (Értékesítési összeg) **CustomerKey** (ÜgyfélAzonosító), **DateKey** (DátumAzonosító) és **ProductSubcategoryKey** (TermékAlkategóriaAzonosító) attribútumok szerint csoportosított összegével. A **Sales Agg** táblázat magasabb részletességgel rendelkezik, mint a **Sales**, ezért több milliárd helyett csak több millió sort tartalmaz, és ennek lényegesen könnyebb a kezelése.
+
+Ha a magas üzleti értékkel rendelkező lekérdezéseknél az alábbi dimenziós táblák használata a leggyakoribb, akkor *egy-a-sokhoz* vagy *sok-az-egyhez* kapcsolattal szűrhetik a **Sales Agg** táblát.
+
+- Földrajzi hely
+- Ügyfél
+- Dátum
+- Termékalkategória
+- Termékkategória
 
 Az alábbi képen ez a modell látható.
 
-![aggregációs tábla egy modellben](media/desktop-aggregations/aggregations_03.jpg)
+![Aggregációs tábla egy modellben](media/desktop-aggregations/aggregations_03.jpg)
+
+Az alábbi táblázat a **Sales Agg** (Aggr. értékesítések) tábla aggregációit jeleníti meg.
+
+![A Sales Agg tábla aggregációi](media/desktop-aggregations/aggregations-table_01.jpg)
 
 > [!NOTE]
-> A **Sales Agg** (Aggr. értékesítések) tábla is egy tábla, ezért ez is rugalmasan, többféle módon tölthető be. Az aggregáció elvégezhető például ETL/ELT-folyamatokkal a forrásadatbázisban, vagy a táblára vonatkozó [M-kifejezéssel](/powerquery-m/power-query-m-function-reference). A tábla használhat Importált tárolási módot a [Power BI Premium növekményes frissítése](service-premium-incremental-refresh.md) lehetőséggel vagy anélkül, vagy akár DirectQueryt is, amely az [oszlopcentrikus indexeket](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview) használó gyors lekérdezésekre van optimalizálva. Ez a rugalmasság kiegyensúlyozott architektúrákat tesz lehetővé, amelyek a lekérdezési terhelés elosztásával elkerüli a szűk keresztmetszetek kialakulását.
+> A **Sales Agg** (Aggr. értékesítések) tábla, mint bármely más tábla, rugalmasan, többféle módon tölthető be. Az aggregáció elvégezhető ETL/ELT-folyamatokkal a forrásadatbázisban, vagy a táblára vonatkozó [M-kifejezéssel](/powerquery-m/power-query-m-function-reference). Az aggregált tábla használhat Importált tárolási módot a [Power BI Premium növekményes frissítése](service-premium-incremental-refresh.md) lehetőséggel vagy anélkül, vagy használhat DirectQueryt, és lehet az [oszlopcentrikus indexeket](/sql/relational-databases/indexes/columnstore-indexes-overview) használó gyors lekérdezésekre optimalizálva. Ez a rugalmasság kiegyensúlyozott architektúrákat tesz lehetővé, amelyek a lekérdezési terhelés elosztásával elkerülheti a szűk keresztmetszetek kialakulását.
 
-### <a name="storage-mode"></a>Tárolási mód 
-Folytassuk a példánkkal. A lekérdezések felgyorsításához a **Sales Agg** (Aggr. értékesítések) tárolási módját **Importált** lehetőségre állítottuk.
+Ha az aggregált **Sales Agg** tábla tárolási módját **Importáltra** váltja, egy párbeszédpanel nyílik meg, amelyben az olvasható, hogy a kapcsolódó dimenziós táblákat a *Kettős* tárolási módra lehet váltani. 
 
-![a tárolási mód beállítása](media/desktop-aggregations/aggregations_04.jpg)
+![Tárolási mód párbeszédablaka](media/desktop-aggregations/aggregations_05.jpg)
 
-Ekkor megjelenik az alábbi párbeszédablak, amely arról tájékoztat, hogy a kapcsolódó dimenziós táblák beállíthatók **Dual** (Kettős) tárolási módra. 
+Ha a kapcsolódó dimenziós táblák tárolási módját Kettősre állítja be, akkor a beágyazott lekérdezésnek megfelelően vagy Importált vagy DirectQuery tárolási módú táblaként működhetnek. A példában:
 
-![tárolási mód párbeszédablaka](media/desktop-aggregations/aggregations_05.jpg)
+- Azoknak a lekérdezéseknek az eredményei, amelyek az Importált tárolási módú **Sales Agg** (Aggr. értékesítések) táblából aggregálják a metrikákat, illetve a kapcsolódó Kettős táblákból származó csoportosítási attribútum(ok) a memóriában tárolt gyorsítótárából adhatók vissza.
+- Azoknak a lekérdezéseknek az eredményei, amelyek a DirectQuery **Sales** (Értékesítések) táblából kérdezik le a metrikákat, illetve a kapcsolódó Kettős táblákból származó csoportosítási attribútum(ok) DirectQuery módban adhatók vissza. A GroupBy-műveletet is tartalmazó lekérdezési logikák le lesznek küldve a forrásadatbázishoz.
 
-Ha a kapcsolódó dimenziós tábláknak **Dual** (Kettős) a tárolási módjuk, akkor a beágyazott lekérdezésnek megfelelően vagy Importált vagy DirectQuery tárolási módú táblaként működhetnek.
-
-* Azoknak a lekérdezéseknek az eredményei, amelyek az Importált tárolási módú **Sales Agg** (Aggr. értékesítések) táblából aggregálják a metrikákat, illetve a kapcsolódó Dual (Kettős) táblákból származó csoportosítási attribútum(ok) a memóriában tárolt gyorsítótárából adhatók vissza.
-* Azoknak a lekérdezéseknek az eredményei, amelyek a DirectQuery tárolási módú **Sales** (Értékesítések) táblából kérdezik le a metrikákat, illetve a kapcsolódó Dual (Kettős) táblákból származó csoportosítási attribútum(ok) DirectQuery módban adhatók vissza. A csoportosítási műveletet tartalmazó lekérdezési logikák le lesznek küldve a forrásadatbázishoz.
-
-A **Dual** (Kettős) tárolási módról további információt a [tárolási mód](desktop-storage-mode.md) cikkében találhat.
+A Kettős tárolási móddal kapcsolatos további információért lásd: [A tárolási mód kezelése a Power BI Desktopban](desktop-storage-mode.md).
 
 ### <a name="strong-vs-weak-relationships"></a>Erős és gyenge kapcsolatok összehasonlítása
+
 A kapcsolatokon alapuló aggregációs találatok erős kapcsolatokat igényelnek.
 
-Erős kapcsolatok többek között az alábbi kombinációk, amennyiben mindkét tábla *egyetlen forrásból* származik.
+Erős kapcsolatok többek között az alábbi tárolásimód-kombinációk, amennyiben mindkét tábla egyetlen forrásból származik:
 
-| Tábla a *több oldalon | Tábla az *egy* oldalon |
+| Tábla a *több* oldalon | Tábla az *egy* oldalon |
 | ------------- |----------------------| 
 | Kettős          | Kettős                 | 
 | Importálás        | Importálás vagy kettős       | 
 | DirectQuery   | DirectQuery vagy kettős  | 
 
-A *források közötti* kapcsolatok csak abban az esetben számítanak erősnek, ha mindkét tábla tárolási módja Importált. A több-a-többhöz kapcsolatok mindig gyengének minősülnek.
+A *források közötti* kapcsolatok csak abban az esetben számítanak erősnek, ha mindkét tábla tárolási módja Importáltra van állítva. A több-a-többhöz kapcsolatok mindig gyengének minősülnek.
 
-Az olyan, *források közötti* aggregációs találatokat, amelyek nem függnek kapcsolatoktól, az oszlop szerinti csoportosításon alapuló aggregációról szóló későbbi bekezdés ismerteti.
+A kapcsolatoktól független *források közötti* aggregációs találatokat lásd az [Oszlop szerinti csoportosításon alapuló aggregáció](#aggregation-based-on-groupby-columns) című részben. 
 
-### <a name="aggregation-tables-arent-addressable"></a>Az aggregációs táblák nem címezhetők
-Az adatkészlethez csak olvasási jogosultsággal rendelkező felhasználók nem kérdezhetik le az aggregációs táblákat. Ezzel elkerülhetők a biztonsági problémák az RLS használatánál. A felhasználók és a lekérdezések nem az aggregációs, hanem a részlettáblára hivatkoznak, így nem is kell tudniuk arról, hogy létezik aggregációs tábla.
+### <a name="relationship-based-aggregation-query-examples"></a>Példák a kapcsolatokon alapuló aggregációs lekérdezésekre
 
-Ezért a **Sales Agg** táblának rejtettnek kell lennie. Ha nem rejtett, akkor az Aggregációk kezelése párbeszédpanel rejtettre állítja, amikor az Alkalmaz gombra kattint.
+A következő lekérdezés az aggregációból ad vissza találatot, mert a **Data** (Dátum) tábla részletessége ezt lehetővé teszi. A **SalesAmount** oszlop a **SUM** aggregációt használja.
 
-### <a name="manage-aggregations-dialog"></a>Az Aggregációk kezelése párbeszédablak
-A következő lépésben meghatározzuk az aggregációkat. Kattintson a jobb gombbal a **Sales Agg** (Aggr. értékesítések) táblára, majd válassza ki a helyi menüjéből az **Aggregációk kezelése** lehetőséget.
+![Kapcsolatokon alapuló aggregációs lekérdezések](media/desktop-aggregations/aggregations-code_02.jpg)
 
-![Az Aggregációk kezelése menü kiválasztása](media/desktop-aggregations/aggregations_06.jpg)
+A következő lekérdezés nem az aggregációból ad vissza találatot. Bár a **SalesAmount** (Értékesítési összeg) összegét kéri le, a lekérdezés végrehajt egy GroupBy-műveletet is a **Product** (Termék) tábla egy oszlopán, amelynek nincs elegendő részletessége ahhoz, hogy a lekérdezés az aggregációból adjon vissza találatot. Ha megfigyeli a modellben lévő kapcsolatokat, egy termék-alkategória több **Product** (Termék) sort is tartalmazhat. A lekérdezés nem lenne képes meghatározni, hogy melyik terméket kell összesíteni. Ebben az esetben a lekérdezés visszalép a DirectQueryre, és egy SQL-lekérdezést küld be az adatforrásba.
 
-Ekkor megjelenik az **Aggregációk kezelése** párbeszédablak. A **Sales Agg** (Aggr. értékesítések) tábla minden egyes sorához megjelenít egy sort, amelyben megadhatjuk az aggregáció működését. A Power BI-adatkészlethez beküldött olyan lekérdezések, amelyek a **Sales** (Értékesítések) táblára irányulnak, automatikusan a **Sales Agg** (Aggr. értékesítések) táblára lesznek átirányítva. Az adatkészlet felhasználóinak nem is kell tudniuk arról, hogy létezik a **Sales Agg** (Aggr. értékesítések) tábla.
+![Aggregáció használatára alkalmatlan lekérdezés](media/desktop-aggregations/aggregations-code_03.jpg)
 
-![Az Aggregációk kezelése párbeszédablak](media/desktop-aggregations/aggregations_07.jpg)
+Az aggregációk nem csupán egyszerű összegzések elvégzésére használt alapvető számítások lehetnek. Az összetett számításoknak is megvannak az előnyeik. Elvileg egy összetett számítás a SUM, MIN, MAX és COUNT funkciók alapján beágyazott lekérdezésekre bontható szét, és mindegyik ilyen lekérdezés esetén kiértékelhető, hogy az aggregációból ad-e vissza találatot. Ez a gondolatmenet a lekérdezésterv optimalizálása miatt nem minden esetben állja meg a helyét, azonban általánosságban alkalmazható. A következő példa az aggregációból ad vissza találatot:
 
-Az alábbi táblázat a **Sales Agg** (Aggr. értékesítések) tábla aggregációit jeleníti meg.
-
-![aggregációk tábla](media/desktop-aggregations/aggregations-table_01.jpg)
-
-#### <a name="summarization-function"></a>Összegzési funkció
-
-Az Összegzés legördülő menüjéből a következő értékek választhatók ki.
-* Darabszám
-* GroupBy
-* Max
-* Min.
-* Összeg
-* Tábla sorainak száma
-
-#### <a name="validations"></a>Ellenőrzések
-
-A párbeszédablak a következő jelentősebb ellenőrzéseket kényszeríti ki:
-
-* A kiválasztott részletoszlop adattípusának meg kell egyeznie az aggregációs oszlopéval, a Darabszám és a Tábla sorainak száma összegzési függvények kivéve. A Darabszám és a Tábla sorainak száma függvényeket csak egész szám típusú oszlopok esetén kínálja fel a rendszer, és nem kell megadni hozzájuk megfelelő adattípust.
-* Három vagy több táblát lefedő láncolt aggregációk nem engedélyezettek. Nem lehetséges például beállítani egy olyan aggregációt az **A táblára**, amely a **B táblára** hivatkozik, ha ebben a táblában találhatók **C táblára** hivatkozó aggregációk.
-* Nem engedélyezettek duplikált aggregációk, amelyek ugyanazt az összegzési funkciót használják, és ugyanarra a részlettáblára vagy részletoszlopra hivatkoznak.
-* A részlettábla tárolási módja csak DirectQuery lehet, Importált nem.
-
-A legtöbb ilyen ellenőrzés kikényszerítése a legördülő menü elemeinek letiltásával és egy magyarázó elemleírás megjelenítésével történik, ahogyan a következő ábra mutatja.
-
-![ellenőrzések megjelenítése elemleírásokkal](media/desktop-aggregations/aggregations_08.jpg)
-
-### <a name="group-by-columns"></a>Csoportosítás oszlopok szerint
-
-Ebben a példában nem kötelező a három GroupBy (Csoportosítási szempont) bejegyzés, ugyanis az aggregációs működésre nincsenek hatással (kivéve a DISTINCTCOUNT (Eltérő értékek száma) példalekérdezésben, amely a következő képen látható). Ezek elsősorban a könnyebb olvashatóságot szolgálják. Az aggregációk a kapcsolatok alapján ezek nélkül a GroupBy (Csoportosítási szempont) bejegyzések nélkül is adnának vissza találatokat. Ez egy másfajta működés, mint a kapcsolatok nélküli aggregációk esetén, amelyet a cikk egy későbbi, a big data-példával foglalkozó része ismertet.
-
-### <a name="inactive-relationships"></a>Inaktív kapcsolatok
-Nem támogatott az inaktív kapcsolat által használt külsőkulcs-oszlop szerinti csoportosítás és a USERELATIONSHIP függvényre való támaszkodás az aggregációnál.
-
-### <a name="detecting-whether-aggregations-are-hit-or-missed-by-queries"></a>Annak észlelése, hogy a lekérdezések az aggregációkból adnak-e vissza találatot vagy nem
-
-További információkat arról, hogyan észlelheti, hogy a lekérdezések a memóriában tárolt gyorsítótárból (tárolási motorból) vagy a DirectQueryből (az adatforrásba történő küldéssel) SQL Profiler használatával adnak-e vissza eredményt, a [tárolási mód](desktop-storage-mode.md) cikkében találhat. Ezzel a folyamattal az is észlelhető, hogy a lekérdezések az aggregációkból adnak-e vissza találatokat.
-
-A következő bővített esemény SQL Profilerben van megadva.
-
-    Query Processing\Aggregate Table Rewrite Query
-
-A következő JSON-részlet egy olyan esemény kimenetére mutat példát, amely egy aggregációt használt.
-
-* A **matchingResults** (egyezőTalálatok) azt mutatja, hogy a beágyazott lekérdezés egy aggregációt használt.
-* A **dataRequest** (adatIgénylés) azt mutatja, hogy a beágyazott lekérdezés mely csoportosítási és aggregációs oszlopokat használta.
-* A **mapping** (leképezés) az aggregációs tábla hozzárendelt oszlopait mutatja.
-
-![egy aggregációt használó esemény kimenete](media/desktop-aggregations/aggregations-code_01.jpg)
-
-### <a name="query-examples"></a>Példák lekérdezésekre
-A következő lekérdezés az aggregációból ad vissza találatot, mert a *Data* (Dátum) tábla részletessége ezt lehetővé teszi. A **SalesAmount** (Értékesítési összeg) **Sum** (Összeg) aggregációját fogjuk használni.
-
-![példalekérdezés](media/desktop-aggregations/aggregations-code_02.jpg)
-
-A következő lekérdezés nem az aggregációból ad vissza találatot. Bár a **SalesAmount** (Értékesítési összeg) összegét kéri le, végrehajt egy csoportosítási műveletet is a **Product** (Termék) tábla egy oszlopán, amelynek nincs elegendő részletessége ahhoz, hogy a lekérdezés az aggregációból adjon vissza találatot. Ha megfigyeli a modellben található kapcsolatokat, akkor láthatja, hogy egy termék alkategóriája több **Product** (Termék) sorral is rendelkezhet, így a lekérdezés nem tudja eldönteni, hogy mely termékre aggregáljon. Ebben az esetben a lekérdezés visszalép a DirectQueryre, és egy SQL-lekérdezést küld be az adatforrásba.
-
-![példalekérdezés](media/desktop-aggregations/aggregations-code_03.jpg)
-
-Az aggregációk nem csupán egyszerű összegzések elvégzésére használt alapvető számítások lehetnek. Az összetett számításoknak is megvannak az előnyeik. Elvi síkon nézve egy összetett számítás a SUM (Összeg), MIN (Minimum), MAX (Maximum) és COUNT (Darabszám) funkciók alapján beágyazott lekérdezésekre bontható szét, és mindegyik ilyen lekérdezés esetén kiértékelhető, hogy az aggregációból ad-e vissza találatot. Ez a gondolatmenet a lekérdezésterv optimalizálása miatt nem minden esetben állja meg a helyét, azonban általánosságban alkalmazható. A következő példa az aggregációból ad vissza találatot:
-
-![példalekérdezés](media/desktop-aggregations/aggregations-code_04.jpg)
+![Összesített aggregációs lekérdezés](media/desktop-aggregations/aggregations-code_04.jpg)
 
 Az aggregációk hasznosak a COUNTROWS (Sorok száma) funkció használata esetén. A következő lekérdezés azért az aggregációból ad vissza találatot, mert meg van határozva a **Sales** (Értékesítések) tábla soraihoz egy **Count** (Darabszám) aggregáció.
 
-![példalekérdezés](media/desktop-aggregations/aggregations-code_05.jpg)
+![COUNTROWS aggregációs lekérdezés](media/desktop-aggregations/aggregations-code_05.jpg)
 
 Az aggregációk hasznosak az AVERAGE (Átlag) függvény használata esetén. A következő lekérdezés azért az aggregációból ad vissza találatot, mert az AVERAGE (Átlag) belsőleg egy SUM (Összeg) és egy COUNT (Darabszám) hányadosából áll össze. Mivel a **UnitPrice** (Egységár) oszlop rendelkezik SUM (Összeg) és COUNT (Darabszám) aggregációkkal is, az aggregáció ad vissza találatot.
 
-![példalekérdezés](media/desktop-aggregations/aggregations-code_06.jpg)
+![AVERAGE aggregációs lekérdezés](media/desktop-aggregations/aggregations-code_06.jpg)
 
-Az aggregációk bizonyos esetekben hasznosak a DISTINCTCOUNT (Eltérő értékek száma) funkció használata esetén. A következő lekérdezés azért az aggregációból ad vissza találatot, mert a **CustomerKey** (ÜgyfélAzonosító) attribútumnak van egy GroupBy (Csoportosítási szempont) bejegyzése, amely fenntartja a **CustomerKey** (ÜgyfélAzonosító) eltérő értékeit az aggregációs táblában. A technika esetén még mindig megtalálható egy teljesítménybeli küszöb, ugyanis körülbelül 2–5 milliónál több eltérő érték negatívan befolyásolhatja a lekérdezés teljesítményét. Hasznos lehet azonban olyan forgatókönyvek esetén, ahol a részlettábla több milliárd sort tartalmaz, az oszlopban pedig 2–5 millió eltérő érték található. Ebben az esetben az eltérő értékek száma függvény gyorsabban hajtható végre, mint a több milliárd sor vizsgálata, még akkor is, ha azok a memória gyorsítótárában találhatók.
+Az aggregációk bizonyos esetekben hasznosak a DISTINCTCOUNT (Eltérő értékek száma) funkció használata esetén. A következő lekérdezés azért az aggregációból ad vissza találatot, mert a **CustomerKey** (ÜgyfélAzonosító) attribútumnak van egy GroupBy (Csoportosítási szempont) bejegyzése, amely fenntartja a **CustomerKey** (ÜgyfélAzonosító) eltérő értékeit az aggregációs táblában. A technika még mindig beleütközhet egy teljesítménybeli küszöbbe, ugyanis több mint 2–5 milliónál több eltérő érték negatívan befolyásolhatja a lekérdezés teljesítményét. Hasznos lehet azonban olyan forgatókönyvek esetén, ahol a részlettábla több milliárd sort tartalmaz, az oszlopban pedig 2–5 millió eltérő érték található. Ebben az esetben a DISTINCTCOUNT függvény gyorsabban hajtható végre, mint a több milliárd sor vizsgálata, még akkor is, ha azok a memória gyorsítótárában találhatók.
 
-![példalekérdezés](media/desktop-aggregations/aggregations-code_07.jpg)
+![DISTINCTCOUNT aggregációs lekérdezés](media/desktop-aggregations/aggregations-code_07.jpg)
 
-### <a name="rls"></a>RLS
-A sorszintű biztonsági (RLS) kifejezéseknek a megfelelő működéshez mind az aggregációs táblát, mind a részletező táblát szűrniük kell. A példát követve az RLS-kifejezés működni fog a **Geography** táblán, mert a Geography a kapcsolatok szűrési oldalán van mind a **Sales**, mind a **Sales Agg** táblánál. Azok a lekérdezések, amelyek az aggregációs táblából kérnek le találatokat és azok, amelyek nem, sikeresen alkalmazzák az RLS-t.
+## <a name="aggregation-based-on-groupby-columns"></a>GroupBy-oszlopok szerinti aggregációk 
 
-![az aggregációk kezelik a szerepköröket](media/desktop-aggregations/manage-roles.png)
+A Hadoop-alapú big data-modellek a dimenziós modellektől eltérő tulajdonságokkal rendelkeznek. A nagyméretű táblázatok összekapcsolásának elkerülése érdekében a big data típusú modellek gyakran nem a kapcsolatokat használják, hanem a dimenzió-attribútumokat denormalizálják a ténytáblákhoz. Az ilyen big data-modelleket *GroupBy-oszlopok szerinti aggregációkkal* oldhatja fel az interaktív elemzésekhez.
 
-A **Product** táblán egy RLS-kifejezés csak a **Sales** táblát fogja szűrni, de nem szűri a **Sales Agg** táblát. Ez nem ajánlott. Azok a lekérdezések, amelyeket olyan felhasználók küldenek be, akik az adatkészletet ennek a szerepkörnek a használatával érik el, nem fogják tudni kihasználni az aggregációs találatokat. Mivel az aggregációs tábla a részletek tábla adatainak egy újabb reprezentációja, nem lenne biztonságos lekérdezésekre választ adni az aggregációs táblából, mert az RLS-szűrő nem alkalmazható.
-
-Magán a **Sales Agg** táblán futtatott RLS-kifejezés csak az aggregációs táblát szűrné, és nem a részletek táblát. Ez nem engedélyezett.
-
-![az aggregációk kezelik a szerepköröket](media/desktop-aggregations/filter-agg-error.jpg)
-
-## <a name="aggregations-based-on-group-by-columns"></a>Oszlopok szerinti csoportosításon alapuló aggregációk 
-
-A Hadoop-alapú big data-modellek a dimenziós modellektől eltérő tulajdonságokkal rendelkeznek. Hogy elkerülhető legyen a nagy méretű táblák összekapcsolása, ezek legtöbbször nem függenek a kapcsolatok használatától. Helyette a dimenziós attribútumokat gyakran ténytáblákká denormalizálják. Az ilyen big data-modelleket oszlopok szerinti csoportosításon alapuló **aggregációkkal** lehet feloldani az interaktív elemzésekhez.
-
-Az alábbi tábla tartalmazza az aggregálandó **Movement** (Mozgás) numerikus oszlopot. Minden más oszlop attribútumokat tartalmaz, amelyek csoportosítás alapját képezhetik. IoT-adatokat és nagy mennyiségű sort tartalmaz. A tárolási mód DirectQuery. A hatalmas mennyiség miatt lassúak lesznek az adatforrásra irányuló olyan lekérdezések, amelyek az egész adatkészletben végeznek aggregációt.
+Az alábbi tábla tartalmazza az aggregálandó **Movement** (Mozgás) numerikus oszlopot. Minden más oszlop attribútumokat tartalmaz, amelyek csoportosítás alapját képezhetik. A tábla IoT-adatokat és nagy mennyiségű sort tartalmaz. A tárolási mód DirectQuery. A hatalmas mennyiség miatt lassúak lesznek az adatforrásra irányuló olyan lekérdezések, amelyek az egész adatkészletben végeznek aggregációt. 
 
 ![Egy IoT-tábla](media/desktop-aggregations/aggregations_09.jpg)
 
-Ahhoz, hogy lehetővé tegyük ennek az adatkészletnek az interaktív elemzését, felveszünk egy aggregációs táblát, amely csoportosítást végez a legtöbb attribútum szerint, azonban kizárja a nagy számosságú földrajzi hosszúság és szélesség attribútumokat. Ez nagymértékben lecsökkenti a sorok számát, és elég kis méretű ahhoz, hogy kényelmesen elférjen a memóriában tárolt gyorsítótárban. A **Driver Activity Agg** (Aggr. sofőrtevékenység) tábla Importált tárolási módú.
+Ahhoz, hogy lehetővé tegye az adatkészlet interaktív elemzését, vegyen fel egy aggregációs táblát, amely csoportosítást végez a legtöbb attribútum szerint, azonban kizárja a nagy számosságú földrajzi hosszúság és szélesség attribútumokat. Ez nagymértékben lecsökkenti a sorok számát, és elég kis méretű ahhoz, hogy kényelmesen elférjen a memóriában tárolt gyorsítótárban. 
 
 ![A Driver Activity Agg (Aggr. sofőrtevékenység) tábla](media/desktop-aggregations/aggregations_10.jpg)
 
-Ezután meghatározzuk az aggregációleképezéseket az **Aggregációk kezelése** párbeszédablakban. Ez a **Driver Activity Agg** (Aggr. sofőrtevékenység) minden oszlopához megjelenít egy sort, amelyben megadható az aggregáció működése.
+A **Driver Activity Agg** (Aggr. sofőrtevékenység) tábla aggregációs leképezéseit az **Aggregációk kezelése** párbeszédpanelen definiálhatja. 
 
 ![Az Aggregációk kezelése párbeszédablak a Driver Activity Agg (Aggr. sofőrtevékenység) tábla esetén](media/desktop-aggregations/aggregations_11.jpg)
+
+A GroupBy-oszlopok szerinti aggregációk esetén a **GroupBy**-bejegyzések kötelezőek. Nélkülük az aggregációk nem jelennek meg. Ez eltér a kapcsolatok szerinti aggregációk használatától, ahol a GroupBy-bejegyzések megadása nem kötelező.
 
 Az alábbi táblázat a **Driver Activity Agg** (Aggr. sofőrtevékenység) tábla aggregációit jeleníti meg.
 
 ![A Driver Activity Agg (Aggr. sofőrtevékenység) aggregációnak táblája](media/desktop-aggregations/aggregations-table_02.jpg)
 
-### <a name="group-by-columns"></a>Csoportosítás oszlopok szerint
+A **Driver Activity Agg** (Aggr. sofőrtevékenység) tábla tárolási módját Importálásra állíthatja.
 
-Ebben a példában **kötelezőek** a **GroupBy** (Csoportosítási szempont) bejegyzések, ugyanis ezek nélkül nem az aggregációk adnának találatokat. Ez a működés eltér a kapcsolatokon alapuló aggregációk használatától, ezt már a cikk egy korábbi szakaszában ismertettük egy dimenziós modell példájával.
+### <a name="groupby-aggregation-query-example"></a>Példák a GroupBy-típusú aggregációs lekérdezésekre
 
-### <a name="query-examples"></a>Példák lekérdezésekre
+A következő lekérdezés azért az aggregációból ad vissza találatot, mert az **Activity Date** (Tevékenység dátuma) oszlopot lefedi az aggregációs tábla. A COUNTROWS funkció a **Tábla sorainak száma aggregációt** használja.
 
-A következő lekérdezés azért az aggregációból ad vissza találatot, mert az **Activity Date** (Tevékenység dátuma) oszlopot lefedi az aggregációs tábla. A Tábla sorainak száma aggregációt a COUNTROWS (Sorok száma) funkció használja.
+![Sikeres GroupBy-típusú aggregációs lekérdezés](media/desktop-aggregations/aggregations-code_08.jpg)
 
-![példalekérdezés](media/desktop-aggregations/aggregations-code_08.jpg)
+Érdemes a **Tábla sorainak száma** aggregációkat használni, különösen az olyan modellek esetén, amelyek a ténytáblában szűrő attribútumokat tartalmaznak. Előfordulhat, hogy a Power BI még akkor is a COUNTROWS (Sorok száma) funkció használatával küld lekérdezéseket az adatkészlethez, ha a felhasználó ezt nem igényelte explicit módon. A szűrő párbeszédablak például a sorok számát mutatja minden érték esetén.
 
-Érdemes a Tábla sorainak száma aggregációkat használni, különösképpen az olyan modellek esetén, amelyek a ténytáblában szűrő attribútumokat tartalmaznak. Előfordulhat, hogy a Power BI még akkor is a COUNTROWS (Sorok száma) funkció használatával küld lekérdezéseket az adatkészlethez, ha a felhasználó ezt nem igényelte explicit módon. A szűrő párbeszédablak például a sorok számát mutatja minden érték esetén.
+![Szűrő párbeszédpanel](media/desktop-aggregations/aggregations-12.png)
 
-![szűrő párbeszédablak](media/desktop-aggregations/aggregations_12.jpg)
+## <a name="combined-aggregation-techniques"></a>Aggregációs technikák kombinálása
 
-### <a name="rls"></a>RLS
+Az aggregációk esetében kombinálhatja a kapcsolatokat és a GroupBy-oszlopok technikáit. A kapcsolatokon alapuló aggregációk esetén előfordulhat, hogy több táblára kell felosztania denormalizált dimenziós táblákat. Ha ez bizonyos dimenziós táblák esetén költséges vagy nem praktikus, akkor replikálhatja a szükséges attribútumokat az adott dimenziók esetén a megfelelő aggregációs táblában, más dimenziók esetén pedig az általuk használt kapcsolatokban.
 
-Az aggregációkhoz használható fent bemutatott, kapcsolatokon alapuló RLS-szabályok az oszlopok szerinti csoportosításon alapuló aggregációkra is alkalmazhatóak függetlenül attól, hogy az RLS-kifejezés az aggregációs táblát, a részletező táblát vagy mindkettőt szűri-e. A példában a **Driver Activity** táblára alkalmazott RLS-kifjezés használható a **Driver Activity Agg** tábla szűrésére is, mert az aggregációs táblában az összes oszloponkénti csoportosítást lefedi a részletező tábla. A **Driver Activity Agg** táblára alkalmazott RLS-szűrő azonban nem alkalmazható a **Driver Activity** táblára, ezért ez nem engedélyezett.
+A következő modell például a **Hónap**, a **Negyedév**, a **Félév**, és az **Év** dimenziókat replikálja a **Sales Agg** (Agg. értékesítések) táblába. A **Sales Agg** (Agg. értékesítések)és a **Dátum** tábla között nincs kapcsolat, de a **Customer** és a **Product Subcategory** tábla között van. A **Sales Agg** (Aggr. értékesítések) tábla Importált tárolási módú.
+
+![Aggregációs technikák kombinálása](media/desktop-aggregations/aggregations_15.jpg)
+
+Az alábbi táblázatban a **Sales Agg** (Aggr. értékesítések) tábla **Aggregációk kezelése** párbeszédablaka látható. Ahhoz, hogy a **Dátum** attribútum alapján csoportosító lekérdezések az aggregációból adjanak vissza találatokat, kötelező a **Dátum** részlettáblára irányuló GroupBy-bejegyzések használata. Ahogyan az előző példában is, a **CustomerKey** és a **ProductSubcategoryKey** attribútumokon alapuló **GroupBy**-bejegyzések a kapcsolatok megléte miatt nincsenek hatással arra, hogy a lekérdezés az aggregációból ad-e vissza találatot, a DISTINCTCOUNT kivételével.
+
+![A Sales Agg (Aggr. értékesítések) aggregációs tábla bejegyzései](media/desktop-aggregations/aggregations-table_04.jpg)
+
+### <a name="combined-aggregation-query-examples"></a>Példák az összesített aggregációs lekérdezésekre
+
+A következő lekérdezés azért az aggregációból ad vissza találatot, mert a **CalendarMonth** attribútumot lefedi az aggregációs tábla, és a **CategoryName** elérhető egy-a-többhöz típusú kapcsolatokkal. A **SalesAmount** a **SUM** aggregációt használja.
+
+![Példa egy lekérdezésre, amely az aggregációból ad vissza találatot](media/desktop-aggregations/aggregations-code_09.jpg)
+
+A következő lekérdezés azért nem az aggregációból ad vissza találatot, mert a **CalendarDay** attribútumot nem fedi le az aggregációs tábla.
+
+![Példa egy lekérdezésre, amely nem az aggregációból ad vissza találatot](media/desktop-aggregations/aggregations-code_10.jpg)
+
+A következő időintelligenciás lekérdezés azért nem az aggregációból ad vissza találatot, mert a DATESYTD függvény egy **CalendarDay** értékekből álló táblát hoz létre, és az aggregációs tábla nem fedi le a **CalendarDay** attribútumot.
+
+![Példa egy lekérdezésre, amely nem az aggregációból ad vissza találatot](media/desktop-aggregations/aggregations-code_11.jpg)
 
 ## <a name="aggregation-precedence"></a>Aggregációk prioritása
 
 Az aggregációk prioritásának köszönhetően egyetlen beágyazott lekérdezés több aggregációs táblát is figyelembe vehet.
 
-Tekintse meg a következő példát. Ez egy több DirectQuery-forrást is tartalmazó [összetett modell](desktop-composite-models.md).
+A következő példa egy több forrást tartalmazó [összetett modell](desktop-composite-models.md):
 
-* A **Driver Activity Agg2** (Aggr. sofőrtevékenység2) Importált tábla magas részletességre van állítva, mert a csoportosítási szempont alapját képező attribútumokból kevés van, és kicsi a számosságuk is. A sorok száma mindössze néhány ezer, így könnyedén elfér a memóriában tárolt gyorsítótárban. Ezeket az attribútumokat történetesen egy, a figyelem központjában álló vezetői irányítópult használja, így a rájuk irányuló lekérdezéseknek a lehető leggyorsabbnak kell lenniük.
-* A **Driver Activity Agg** (Aggr. sofőrtevékenység) tábla egy DirectQuery módú köztes aggregációs tábla. Több milliárd sort tartalmaz az Azure SQL Data Warehouse-ban, és az oszlopcentrikus indexek használatával a forrásban van optimalizálva.
-* A **Driver Activity** (Sofőrtevékenység) tábla DirectQuery módú, és több billiárd sornyi IoT-adatot tartalmaz, amelyek forrása egy big data-rendszer. Részletezési lekérdezéseket szolgált ki, hogy az IoT-adatok egy kezelhető és szűrt környezetben legyenek megtekinthetők.
+- A **Driver Activity** DirectQuery-tábla több billiárd sornyi IoT-adatot tartalmaz, amelyek forrása egy big data-rendszer. Részletezési lekérdezéseket szolgált ki, hogy az IoT-adatok egy kezelhető és szűrt környezetben legyenek megtekinthetők.
+- A **Driver Activity Agg** (Aggr. sofőrtevékenység) tábla egy DirectQuery módú köztes aggregációs tábla. Több milliárd sort tartalmaz az Azure SQL Data Warehouse-ban, és az oszlopcentrikus indexek használatával a forrásban van optimalizálva.
+- A **Driver Activity Agg2** (Aggr. sofőrtevékenység2) Importált tábla magas részletességre van állítva, mert a csoportosítási szempont alapját képező attribútumokból kevés van, és kicsi a számosságuk is. A sorok száma mindössze néhány ezer, így könnyedén elfér a memóriában tárolt gyorsítótárban. Ezeket az attribútumokat történetesen egy, a figyelem központjában álló vezetői irányítópult használja, így a rájuk irányuló lekérdezéseknek a lehető leggyorsabbnak kell lenniük.
 
 > [!NOTE]
-> Azok a DirectQuery-aggregációs táblák, amelyek a részletező táblától eltérő adatforrást használnak, csak akkor vannak támogatva, ha az aggregációs tábla forrása egy SQL Server-, egy Azure SQL- vagy Azure SQL DW-forrás.
+> Azok a DirectQuery-aggregációs táblák, amelyek a részletező táblától eltérő adatforrást használnak, csak akkor vannak támogatva, ha az aggregációs tábla forrása egy SQL Server-, egy Azure SQL- vagy Azure SQL Data Warehouse-forrás.
 
 Ez a modell viszonylag kicsi memóriaigényű, mégis egy hatalmas adatkészletet old fel. Ez egy kiegyensúlyozott architektúrát képvisel, mert az architektúra egyes komponenseinek erősségét kihasználva osztja szét a lekérdezési terhelést.
 
-![egy alacsony memóriaigényű, hatalmas adatkészletet feloldó modell táblái](media/desktop-aggregations/aggregations_13.jpg)
+![Egy alacsony memóriaigényű, hatalmas adatkészletet feloldó modell táblái](media/desktop-aggregations/aggregations_13.jpg)
 
-A **Driver Activity Agg2** (Aggr. sofőrtevékenység2) tábla **Aggregációk kezelése** párbeszédablakán látható a 10-es értékű *Prioritás* mező, amely magasabb a **Driver Activity Agg** (Aggr. sofőrtevékenység) prioritásánál, ami azt jelenti, hogy az aggregációkat használó lekérdezések előbb veszik figyelembe. Azok a beágyazott lekérdezések, amelyek nem rendelkeznek olyan részletességgel, hogy a **Driver Activity Agg2** (Aggr. sofőrtevékenység2) táblából kaphassanak választ, a **Driver Activity Agg** (Aggr. sofőrtevékenység) táblát fogják figyelembe venni. Azok a részletlekérdezések, amelyek egyik aggregációs táblából sem kaphatnak választ, a **Driver Activity** (Sofőrtevékenység) táblához lesznek irányítva.
+A **Driver Activity Agg2** (Aggr. sofőrtevékenység2) táblára vonatkozó **Aggregációk kezelése** párbeszédpanel az **Elsőbbség** mezőt *10*-re állítja, ami magasabb, mint a **Driver Activity Agg** (Aggr. sofőrtevékenység) tábla esetén. A magasabb elsőbbségbeállítás olyan lekérdezéseket jelent, amelyek a **Driver Activity Agg2** (Aggr. sofőrtevékenység2) táblát elsőnek tekintő aggregációkat használja. Azok a beágyazott lekérdezések, amelyek nem rendelkeznek olyan részletességgel, hogy a **Driver Activity Agg2** (Aggr. sofőrtevékenység2) táblából kaphassanak választ, a **Driver Activity Agg** (Aggr. sofőrtevékenység) táblát fogják figyelembe venni. Azok a részletlekérdezések, amelyek egyik aggregációs táblából sem kaphatnak választ, a **Driver Activity** (Sofőrtevékenység) táblához lesznek irányítva.
 
-A **Részlettáblán** megadott oszlop azért a **Driver Activity** (Sofőrtevékenység), nem pedig a **Driver Activity Agg** (Agg. sofőrtevékenységek), mert a láncolt aggregációk nem engedélyezettek (lásd az [ellenőrzéseket](#validations) a cikk korábbi szakaszában).
+A **Részletek tábla** oszlopban megadott tábla azért a **Driver Activity** (Sofőrtevékenység), nem pedig a **Driver Activity Agg** (Agg. sofőrtevékenységek), mert a láncolt aggregációk nem engedélyezettek.
 
 ![Az Aggregációk kezelése párbeszédablak](media/desktop-aggregations/aggregations_14.jpg)
 
@@ -257,45 +273,33 @@ Az alábbi táblázat a **Driver Activity Agg2** (Aggr. sofőrtevékenység2) t�
 
 ![A Driver Activity Agg2 (Aggr. sofőrtevékenység2) aggregációnak táblája](media/desktop-aggregations/aggregations-table_03.jpg)
 
-## <a name="aggregations-based-on-group-by-columns-combined-with-relationships"></a>Oszlopok szerinti csoportosításon alapuló aggregációk kapcsolatokkal
+## <a name="detect-whether-queries-hit-or-miss-aggregations"></a>Annak észlelése, hogy a lekérdezések adnak-e vissza találatokat az aggregációkból
 
-A cikk korábbi szakaszaiban ismertetett két aggregációs technikát kombinálni is lehet. A kapcsolatokon alapuló **aggregációk** esetén előfordulhat, hogy a denormalizált dimenziós táblákat több táblára kell felosztani. Ha ez bizonyos dimenziós táblák esetén költséges vagy nem praktikus, akkor a szükséges attribútumok egyes dimenziók esetén annak aggregációs táblájában, más dimenziók esetén pedig az általuk használt kapcsolatokban replikálhatók.
+Az SQL Profiler észleli, hogy a lekérdezések visszatérnek-e a memórián belüli gyorsítótár-motorból, vagy a DirectQuery továbbküldi őket az adatforráshoz. Ezzel a folyamattal az is észlelhető, hogy a lekérdezések adnak-e vissza találatokat az aggregációkból. További információ: [Gyorsítótárból visszatérő vagy nem visszatérő lekérdezések](desktop-storage-mode.md#queries-that-hit-or-miss-the-cache). 
 
-A következő modell a *Month* (Hónap), *Quarter* (Negyedév), *Semester* (Félév) és *Year* (Év) dimenziókat replikálja a **Sales Agg** (Agg. értékesítések) táblába. A **Sales Agg** (Aggr. értékesítések) és a **Date** táblák között nincsenek kapcsolatok. A **Customer** (Ügyfél) és a **Product Subcategory** (Termék alkategória) táblák között vannak kapcsolatok. A **Sales Agg** (Aggr. értékesítések) tábla Importált tárolási módú.
+Az SQL Profiler a kiterjesztett `Query Processing\Aggregate Table Rewrite Query` eseményt is biztosítja.
 
-![aggregációs technikák kombinálása](media/desktop-aggregations/aggregations_15.jpg)
+A következő JSON-részlet egy olyan esemény kimenetére mutat példát, amely egy aggregációt használt.
 
-Az alábbi táblázatban a **Sales Agg** (Aggr. értékesítések) tábla **Aggregációk kezelése** párbeszédablaka látható. Ahhoz, hogy a dátum attribútum alapján csoportosító lekérdezések az aggregációból adjanak vissza találatokat, kötelező a **Date** (Dátum) részlettáblára irányuló GroupBy (Csoportosítási szempont) bejegyzések használata. Ahogyan az előző példában is, a CustomerKey (ÜgyfélAzonosító) és a ProductSubkategoryKey (TermékAlkategóriaAzonosító) attribútumokon alapuló GroupBy (Csoportosítási szempont) bejegyzések a kapcsolatok megléte miatt nincsenek hatással arra, hogy a lekérdezés az aggregációból ad-e vissza találatot (szintén a DISTINCTCOUNT (Eltérő értékek száma) kivételével).
+- A **matchingResults** azt mutatja, hogy a beágyazott lekérdezés egy aggregációt használt.
+- A **dataRequest** azt mutatja, hogy a beágyazott lekérdezés mely csoportosítási és aggregációs oszlopokat használta.
+- A **mapping** (leképezés) az aggregációs tábla hozzárendelt oszlopait mutatja.
 
-![A Sales Agg (Aggr. értékesítések) aggregációs tábla](media/desktop-aggregations/aggregations-table_04.jpg)
+![Egy aggregációt használó esemény kimenete](media/desktop-aggregations/aggregations-code_01.jpg)
 
-### <a name="query-examples"></a>Példák lekérdezésekre
+## <a name="keep-caches-in-sync"></a>Gyorsítótárak szinkronban tartása
 
-A következő lekérdezés azért az aggregációból ad vissza találatot, mert a CalendarMonth (NaptáriHónap) attribútumot lefedi az aggregációs tábla, és a CategoryName (KategóriaNév) elérhető one-to-many (egy-a-többhöz) kapcsolatokkal. A **SalesAmount** (Értékesítési összeg) Sum (Összeg) aggregációja van használatban.
-
-![példalekérdezés](media/desktop-aggregations/aggregations-code_09.jpg)
-
-A következő lekérdezés azért nem az aggregációból ad vissza találatot, mert a CalendarDay (NaptáriNap) attribútumot nem fedi le az aggregációs tábla.
-
-![példalekérdezés](media/desktop-aggregations/aggregations-code_10.jpg)
-
-A következő időintelligenciás lekérdezés azért nem az aggregációból ad vissza találatot, mert a DATESYTD függvény egy CalendarDay (NaptáriNap) értékekből álló táblát hoz létre, és ezt nem fedi le az aggregációs tábla.
-
-![példalekérdezés](media/desktop-aggregations/aggregations-code_11.jpg)
-
-## <a name="caches-should-be-kept-in-sync"></a>A gyorsítótárakat szinkronizálva kell tartani
-
-Azok az **aggregációk**, amelyek kombinálják a DirectQuery és az Importált és/vagy a Dual (Kettős) tárolási módot, más adatokat adhatnak vissza, ha a memóriában tárolt gyorsítótár nincs szinkronban a forrásadatokkal. A lekérdezések végrehajtása nem kísérli meg elfedni az adatokkal kapcsolatos problémákat például azzal, hogy a DirectQuery-eredményeket a gyorsítótárazott értékekkel való egyezés alapján szűri. Ezek teljesítményoptimalizáló funkciók, amelyeket csak abban az esetben érdemes használni, ha nincsenek negatív hatással az üzleti követelmények teljesítésére. Önnek kell ismernie a saját adatfolyamait, ezért azok alapján tervezzen. Léteznek bevált módszerek az ilyen problémáknak a forrásnál való kezelésére, ha szükséges.
+Azok az aggregációk, amelyek kombinálják a DirectQuery, az Importált, és/vagy a Kettős tárolási módot, más adatokat adhatnak vissza, ha a memóriában tárolt gyorsítótár nincs szinkronban a forrásadatokkal. Például a lekérdezések végrehajtása nem kísérli meg elfedni az adatokkal kapcsolatos problémákat azzal, hogy a DirectQuery-eredményeket a gyorsítótárazott értékekkel való egyezés alapján szűri. Léteznek bevált módszerek az ilyen problémáknak a forrásnál való kezelésére, ha szükséges. A teljesítményoptimalizáló funkciókat csak abban az esetben érdemes használni, ha nincsenek negatív hatással az üzleti követelmények teljesítésére. Önnek kell ismernie a saját adatfolyamait, és azok alapján kell terveznie. 
 
 ## <a name="next-steps"></a>Következő lépések
 
-Az alábbi cikkek bővebben ismertetik az összetett modelleket, és a DirectQuery részletes leírását is tartalmazzák.
+További tudnivalók az összetett modellekről:
 
-* [Összetett modellek a Power BI Desktopban](desktop-composite-models.md)
-* [Több a többhöz kapcsolatok a Power BI Desktopban](desktop-many-to-many-relationships.md)
-* [Tárolási mód a Power BI Desktopban](desktop-storage-mode.md)
+- [Összetett modellek használata a Power BI Desktopban](desktop-composite-models.md)
+- [Több-a-többhöz kapcsolatok alkalmazása a Power BI Desktopban](desktop-many-to-many-relationships.md)
+- [Tárolási mód kezelése a Power BI Desktopban](desktop-storage-mode.md)
 
-A DirectQuery-vel kapcsolatos cikkek:
+A DirectQueryvel kapcsolatos további információkhoz lásd:
 
-* [DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
-* [A DirectQuery által támogatott adatforrások a Power BI-ban](desktop-directquery-data-sources.md)
+- [DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
+- [Adatforrások a Power BI-hoz](desktop-directquery-data-sources.md)
