@@ -1,23 +1,24 @@
 ---
 title: A Power BI kisegítő lehetőségeinek áttekintése
-description: Funkciók és javaslatok az akadálymentesített Power BI Desktop-jelentések létrehozásához
+description: Akadálymentes Power BI Desktop-jelentések létrehozását segítő funkciók és ajánlások, a Web Content Accessibility Guidelines (WCAG) figyelembe vételével
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ef19c638f9c456364757576e21c303103a7f4e39
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 8604ed2c737b7d2a75b3af052878ecb157ffacf1
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761864"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538612"
 ---
 # <a name="overview-of-accessibility-in-power-bi"></a>A Power BI kisegítő lehetőségeinek áttekintése
-A Power BI használatakor fontos figyelembe venni a különböző típusú felhasználókat, akik használhatják a jelentéseit. Ha olyan jelentéseket hoz létre és mutat be, amelyek könnyen kezelhetők és érthetők a billentyűzetet vagy képernyőolvasót használó felhasználók számára, azzal lehetővé teszi, hogy azokhoz a felhasználókhoz is ugyanaz az információ jusson el, akik esetleg látás- vagy mozgássérültek.
+
+A Power BI használatakor mindig legyen tekintettel a jelentéseit használó különböző típusú felhasználókra. Létrehozhat olyan jelentéseket, amelyek a csak billentyűzetet, vagy képernyőolvasót használó felhasználók is könnyedén kezelhetnek és megérthetnek. Az ilyen jelentéseknek azok a felhasználók is használt vehetik, akik látási vagy testi fogyatékkal élnek.
 
 ![A Windows kontrasztos beállítása](media/desktop-accessibility/accessibility-05b.png)
 
@@ -27,35 +28,34 @@ Ez a cikk a Power BI és az akadálymentesség áttekintését tartalmazza. A to
 
 Az univerzális tervezés az olyan termékek megtervezése, amelyeket ésszerű határokon belül a lehető legtöbb felhasználó tud használni, anélkül, hogy különleges adaptálásra vagy specializált kialakításra lenne szükség. Fontos, hogy figyelembe vegye a felhasználók igényeit, amikor a Power BI-ban jelentéseket vagy felületeket hoz létre. Ha akadálymentes felületet tervez, az nemcsak azon végfelhasználók számára hasznos, akik esetleg hallás-, mozgásszervi vagy látássérüléssel, vagy kognitív zavarokkal küzdenek. A szervezet minden végfelhasználóján segíthet. A Power BI biztosítja az eszközöket az akadálymentes jelentések létrehozásához és felhasználásához. Önön, mint a jelentés készítőjén múlik, hogy mindenki élményét javítja-e ezekkel az eszközökkel.
 
-
 ## <a name="accessibility-standards"></a>Akadálymentességi szabványok
 
-A Power BI a következő akadálymentességi szabványoknak felel meg. Így biztosíthatja, hogy a lehető legtöbb felhasználó számára legyenek elérhetők a Power BI-felületek. A Power BI Mobile-alkalmazások C-osztályú akadálymentességi minősítéssel rendelkeznek, ami azt jelenti, hogy az elkészített akadálymentes jelentések vagy irányítópultok bárki számára akadálymentesek lesznek, aki a Power BI Mobile használatával tekinti meg azokat. 
+A Power BI a következő akadálymentességi szabványoknak felel meg. A szabványok segítségével biztosíthatja, hogy a Power BI-felületek a lehető legtöbb felhasználó számára legyenek elérhetők. A Power BI Mobile-alkalmazások C kategóriás akadálymentességi minősítéssel rendelkeznek. Jelentések vagy irányítópultok készítésekor a tartalom mindenki számára elérhető, aki a Power BI Mobile használatával tekinti meg.
 
 ### <a name="wcag-21"></a>WCAG 2.1
-A webes tartalom akadálymentessége (WCAG, Web Content Accessibility) révén a webes tartalmak elérhetővé válnak a fogyatékkal élők számára is. A WCAG-nek három elsődleges alapelve van:
 
-1. **Érzékelhető** – az információkat és a felhasználói felület összetevőit a felhasználók számára észlelhető módon kell tudni bemutatni.
-2. **Működőképes** – a felhasználói felület összetevőinek és a navigációnak működőképesnek kell lennie.
-3. **Érthető** – az információknak és a felhasználói felület működésének érthetőnek kell lennie.
+A webes tartalom akadálymentességi irányelvei (Web Content Accessibility Guidelines, WCAG) révén a webes tartalmak elérhetővé válnak a fogyatékkal élők számára is. Az irányelvek fő kulcsszavai a következők:
+
+1. **Érzékelhető**. Az információkat és a felhasználói felület összetevőit a felhasználók számára észlelhető módon kell tudni bemutatni.
+2. **Működtethető**. A felhasználói felület összetevőinek és a navigációnak kezelhetőnek kell lennie.
+3. **Megérthető**. Az információknak és a felhasználói felület működésének érthetőnek kell lennie.
 
 ### <a name="us-section-508"></a>508. szakasz (USA)
 
 Az 508. szakasz (USA) egy olyan szabvány, amely megköveteli a kormányoktól és a szövetségi ügynökségektől, hogy a fogyatékkal élők számára tegyék elérhetővé az elektronikus és informatikai technológiáikat.
 
 ### <a name="en-301-549"></a>EN 301 549
+
 Az EN 301 549 az IKT-termékekre és -szolgáltatásokra vonatkozó akadálymentességi harmonizált európai szabvány.  
-
-
 
 ## <a name="next-steps"></a>Következő lépések
 
-A Power BI akadálymentességi lehetőségeit ismertető cikkek gyűjteménye:
+A Power BI akadálymentességéről az alábbi forrásanyagokban talál további információt:
 
-* [Akadálymentes Power BI-jelentések létrehozása](desktop-accessibility-creating-reports.md) 
-* [Akadálymentességi eszközökkel rendelkező Power BI-jelentések felhasználása](desktop-accessibility-consuming-tools.md)
-* [Akadálymentességi eszközökkel rendelkező Power BI-jelentések létrehozása](desktop-accessibility-creating-tools.md)
-* [Akadálymentességi billentyűparancsok Power BI-jelentésekhez](desktop-accessibility-keyboard-shortcuts.md)
+* [Power BI-jelentések tervezése az akadálymentesség szempontjából](desktop-accessibility-creating-reports.md)
+* [Power BI-jelentések használata akadálymentességi eszközökkel](desktop-accessibility-consuming-tools.md)
+* [Jelentések létrehozása a Power BI-ban akadálymentességi eszközök használatával](desktop-accessibility-creating-tools.md)
+* [Billentyűparancsok a Power BI Desktopban](desktop-accessibility-keyboard-shortcuts.md)
 * [Ellenőrzőlista jelentések akadálymentesítéséhez](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
 
 

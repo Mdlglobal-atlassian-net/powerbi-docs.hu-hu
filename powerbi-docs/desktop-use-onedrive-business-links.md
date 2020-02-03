@@ -6,52 +6,52 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 226a5035ba6c93a7987d74ab0fea1dd4264df0b1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 706703985242284725fb4fc2d42bf46e54c605c7
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73865308"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709703"
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>OneDrive Vállalati verzióra mutató hivatkozások használata a Power BI Desktopban
-Sokan tárolnak olyan Excel-munkafüzeteket a OneDrive Vállalati verzió meghajtóján, amelyeket kiválóan tudnának a Power BI Desktopban használni. A **Power BI Desktopban** használhat a **OneDrive Vállalati verziójában** tárolt **Excel**-fájlokra mutató online hivatkozásokat jelentések és vizualizációk létrehozásához. Ehhez használhat **OneDrive Vállalati verzió**-csoportfiókot, vagy a saját **OneDrive Vállalati verzió**-fiókját.
+Sokan tárolnak olyan Excel-munkafüzeteket a OneDrive Vállalati verziójában, amelyeket kiválóan tudnának a Power BI Desktopban használni. A Power BI Desktopban használhat a OneDrive Vállalati verziójában tárolt Excel-fájlokra mutató online hivatkozásokat jelentések és vizualizációk létrehozásához. Ehhez használhat OneDrive Vállalati verzió-csoportfiókot, vagy a saját OneDrive Vállalati verzió-fiókját.
 
-Egy **OneDrive Vállalati verzióra** mutató online hivatkozás beállításához szükség van néhány konkrét lépésre. Az alábbi szakaszok ismertetik ezeket a lépéseket, amelyek segítségével megoszthatja a fájlhivatkozást különböző csoportokkal, gépekkel és munkatársakkal.
+Egy OneDrive Vállalati verzióra mutató online hivatkozás beállításához szükség van néhány konkrét lépésre. Az alábbi szakaszok ismertetik ezeket a lépéseket, amelyek segítségével megoszthatja a fájlhivatkozást különböző csoportokkal, gépekkel és munkatársakkal.
 
-## <a name="get-a-link-from-excel-starting-in-the-browser"></a>Hivatkozás lekérése Excelből, a böngészőből kiindulva
+## <a name="get-a-link-from-excel"></a>Hivatkozás kiolvasása az Excelből
 1. Lépjen egy böngésző segítségével a OneDrive Vállalati verzió helyére. Kattintson a jobb gombbal a használni kívánt fájlra, majd válassza a **Megnyitás Excelben** lehetőséget.
    
    > [!NOTE]
-   > Előfordulhat, hogy a böngészője felülete nem egyezik teljes mértékben az alábbi ábrával. A **OneDrive vállalati verzió** böngészőfelületén található fájlokhoz több módon is kiválaszthatja a **Megnyitás Excelben** lehetőséget. Bármelyik lehetőség megfelel, amellyel meg tudja nyitni a fájlt Excelben.
+   > Előfordulhat, hogy a böngészője felülete nem egyezik teljes mértékben az alábbi ábrával. A OneDrive vállalati verzió böngészőfelületén található fájlokhoz több módon is kiválaszthatja a **Megnyitás Excelben** lehetőséget. Bármelyik lehetőség megfelel, amellyel meg tudja nyitni a fájlt Excelben.
    > 
    > 
    
    ![](media/desktop-use-onedrive-business-links/odb-links_02.png)
-2. Az **Excelben** válassza a **Fájl > Információ** lehetőséget, és jelölje ki a **Füzetvédelem** gomb fölött található hivatkozást. Válassza a **Hivatkozás másolása a vágólapra** lehetőséget (egyes verzióknál **Útvonal másolása a vágólapra** szöveg szerepel).
+2. Az Excelben válassza a **Fájl** > **Információk** lehetőséget, majd a **Munkafüzet védelme** feletti **Elérési út másolása** lehetőséget.
    
-   ![](media/desktop-use-onedrive-business-links/odb-links_03.png)
+   ![](media/desktop-use-onedrive-business-links/onedrive-copy-path.png)
 
 ## <a name="use-the-link-in-power-bi-desktop"></a>A hivatkozás használata a Power BI Desktopban
 A Power BI Desktopban használhatja az imént a vágólapra másolt hivatkozást. Hajtsa végre a következő lépéseket:
 
-1. A Power BI Desktopban válassza a **Lekérdezés > Web** lehetőséget.
+1. A Power BI Desktopban válassza az **Adatok beolvasása** > **Web** lehetőséget.
    
-   ![](media/desktop-use-onedrive-business-links/odb-links_04.png)
-2. Illessze a hivatkozást a **Webes tartalomból** párbeszédpanelre (még **ne** válassza ki az OK gombot).
+   ![](media/desktop-use-onedrive-business-links/power-bi-web-link-onedrive.png)
+2. Az **Alapszintű** beállítás kijelölésével illessze be a hivatkozást a **Webről** párbeszéablakba.
+3. A hivatkozás végéről távolítsa el a *?web=1* sztringet, hogy a Power BI Desktop megfelelően állapíthassa meg a fájl helyét, majd válassza az **OK** lehetőséget.
    
-    ![](media/desktop-use-onedrive-business-links/odb-links_05.png)
-3. Keresse meg a hivatkozás végén a *?web=1* karaktersort. A *webes URL-sztring ezen részét el kell távolítania*, **mielőtt** az **OK** gombot kiválasztaná, hogy a **Power BI Desktop** meg tudja találni a fájlt.
-4. Ha a **Power BI Desktop** hitelesítő adatokat kér, válassza a **Windows** (helyszíni SharePoint-helyeknél) vagy a **Szervezeti fiók**(Office 365- vagy OneDrive Vállalati verzióhoz tartozó helyeknél) lehetőséget.
+    ![](media/desktop-use-onedrive-business-links/power-bi-web-link-confirmation.png) 
+4. Ha a Power BI Desktop hitelesítő adatokat kér, válassza a **Windows** (helyszíni SharePoint-helyeknél) vagy a **Vállalati fiók**(Office 365- vagy OneDrive Vállalati verzióhoz tartozó helyeknél) lehetőséget.
    
    ![](media/desktop-use-onedrive-business-links/odb-links_06.png)
 
-Megjelenik egy **Kezelő** ablak, ahol választhat az Excelben talált táblák, lapok és tartományok listájáról. Ezután úgy használhatja a OneDrive vállalati verzióbeli fájlt, mint bármely más Excel-fájlt, és ugyanúgy hozhat létre jelentéseket és használhatja adatkészletekben, mint bármely más adatforrás esetében.
+   Megjelenik egy **Kezelő** párbeszédpanel, ahol választhat az Excelben talált táblák, lapok és tartományok listájáról. Ettől kezdve ugyanúgy használhatja a OneDrive Vállalati verziójában tárolt fájlt, mint bármelyik Excel-fájlt. Létrehozhat jelentéseket, és ugyanúgy felhasználhatja adathalmazokban, mint bármely más adatforrást.
 
 > [!NOTE]
-> Ha egy **OneDrive vállalati verzióbeli** fájlt úgy szeretne adatforrásnak használni a Power BI szolgáltatásban, hogy a **Szolgáltatásfrissítés** be van kapcsolva, ügyeljen arra, hogy az **OAuth2** **hitelesítési módszert** válassza a frissítési beállítások konfigurálásakor. Ha nem az van kiválasztva, hiba (például egy *Az adatforrás hitelesítő adatainak frissítése sikertelen volt* üzenet) jelentkezhet a csatlakozás vagy a frissítés során. Ha hitelesítési módszernek az **OAuth2** módszert használja, megszűnik a hitelesítési hiba.
+> Ha egy OneDrive Vállalati verzióbeli fájlt úgy szeretne adatforrásnak használni a Power BI szolgáltatásban, hogy a **Szolgáltatásfrissítés** be van kapcsolva, ügyeljen arra, hogy az **OAuth2** **hitelesítési módszert** válassza a frissítési beállítások konfigurálásakor. Ellenkező esetben hiba (például egy *Az adatforrás hitelesítő adatainak frissítése sikertelen volt* üzenet) jelentkezhet a csatlakozás vagy a frissítés során. Ha hitelesítési módszernek az **OAuth2** módszert használja, megszűnik a hitelesítési hiba.
 > 
 > 
 

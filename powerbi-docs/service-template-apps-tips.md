@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: a9f589a5e840e95e349ec303b42b30568820e8b3
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.openlocfilehash: 632c1f1a9f0cba3f403cae4a471df6b7e699f481
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622460"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76710168"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tippek sablonalkalmazások készítéséhez a Power BI-ban
 
@@ -134,6 +134,17 @@ A sablonalkalmazások csak mintaadatokkal szerepelhetnek, ügyeljen rá, hogy be
 * Mielőtt feltöltené a pbix-et a sablon munkaterületére, távolítson el minden felesleges kapcsolatot.
 * Kövesse a Power BI [Ajánlott tervezési eljárások jelentésekhez és vizualizációkhoz](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) című dokumentumában foglaltakat, hogy maximalizálhassa a felhasználókra gyakorolt hatást, és hogy jóváhagyást szerezhessen a terjesztéshez.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
+
+## <a name="create-a-download-link-for-the-app"></a>Alkalmazás letöltési hivatkozásának létrehozása
+
+A sablonalkalmazás AppSource-beli közzététele után fontolja meg egy letöltési hivatkozás létrehozását, amely a saját webhelyéről a következők egyikére mutat:
+* Az AppSource letöltési oldala – nyilvánosan megtekinthető, a hivatkozást saját AppSource-oldalán szerezheti be.
+* Power BI – Power BI-felhasználók számára megtekinthető.
+
+A felhasználónak az alkalmazás Power BI-beli letöltési hivatkozására való átirányításához vizsgálja meg az alábbi példa kódrészletet: [GitHub-adattár](https://github.com/microsoft/Template-apps-examples/tree/master/src).
+[![Alkalmazás letöltési hivatkozása](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
+
+
 
 ## <a name="known-limitations"></a>Ismert korlátozások
 

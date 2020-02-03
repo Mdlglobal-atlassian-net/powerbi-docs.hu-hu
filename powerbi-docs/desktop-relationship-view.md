@@ -1,33 +1,29 @@
 ---
-title: Kapcsolat nézet a Power BI Desktop szolgáltatásban
-description: Kapcsolat nézet a Power BI Desktop szolgáltatásban
+title: A Power BI Desktop Modell nézete
+description: A Power BI Desktop Modell nézete
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: cd9671b8c38cb2aa1502c3aa00a871d125f819b1
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: ea568c061142e66e79351de8a6c0f0603a46f775
+ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760480"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "76753225"
 ---
-# <a name="work-with-relationship-view-in-power-bi-desktop"></a>A Power BI Desktop Kapcsolat nézetének használata
-A **Kapcsolat nézet** megjeleníti a modellben szereplő összes táblát, oszlopot és kapcsolatot. Ez különösen hasznos lehet, ha a modellben összetett kapcsolatrendszer áll fenn sok tábla között.
+# <a name="work-with-model-view-in-power-bi-desktop"></a>A Power BI Desktop Modell nézetének használata
 
-Vizsgáljuk ezt meg.
+A *Modell nézet* megjeleníti a modellben szereplő összes táblát, oszlopot és kapcsolatot. Ez a nézet különösen hasznos lehet, ha a modellben összetett kapcsolatrendszer áll fenn sok tábla között.
 
-![](media/desktop-relationship-view/relationshipview_fullscreen.png)
+A meglévő modell nézetének megtekintéséhez válassza az ablak széle közelében található **Modell** ikont. Vigye a kurzort egy kapcsolat vonala fölé a használt oszlopok megjelenítéséhez.
 
-**A.**  Kapcsolat nézet ikonra – rákattintva Kapcsolat nézetben jelenítheti meg a modellt
+![Modell nézet, Power BI Desktop](media/desktop-relationship-view/model-view-full-screen.png)
 
-**B.** Kapcsolat – ha az egérmutatót egy kapcsolat fölé viszi, megjelennek a használt oszlopok. Egy kapcsolatra duplán kattintva megnyithatja azt a **Kapcsolat szerkesztése** párbeszédpanelen. 
+Az ábrán a *Stores* táblában van egy *StoreKey* oszlop, amely kapcsolódik a *Sales* táblához, amely szintén tartalmaz egy *StoreKey* oszlopot. A két tábla között *több az egyhez* (\*:1) kapcsolat áll fenn. A vonal közepén látható nyíl mutatja a szűrőkörnyezet folyamatának irányát. A kettős nyíl azt jelenti, hogy a keresztszűrés irányának beállítása *Kétirányú*.
 
-A fenti ábrán láthatja, hogy a *Stores* táblán van egy *StoreKey* oszlop, amely kapcsolódik a *Sales* táblához, amelyen szintén van egy *StoreKey* oszlop. Láthatjuk, hogy ez egy *Több az egyhez* (\*:1) kapcsolat, és a vonal közepén található ikon azt jelöli, hogy a Keresztszűrés iránya *Mindkettő*. Az ikonon látható nyíl mutatja a szűrőkörnyezet folyamatának irányát.
-
-További információk a kapcsolatokról: [Kapcsolatok létrehozása és kezelése a Power BI Desktopban](desktop-create-and-manage-relationships.md).
-
+Egy kapcsolatra duplán kattintva megnyithatja azt a **Kapcsolat szerkesztése** párbeszédpanelen. További információk a kapcsolatokról: [Kapcsolatok létrehozása és kezelése a Power BI Desktopban](desktop-create-and-manage-relationships.md).

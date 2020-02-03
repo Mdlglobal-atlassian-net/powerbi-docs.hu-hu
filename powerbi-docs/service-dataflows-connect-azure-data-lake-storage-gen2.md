@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: c3f703bfe2685166ce575b37c053b2a9603a799f
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: e91900632b7cf470cd91923ca9ec871247c154ba
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223884"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76710190"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz
 
@@ -45,7 +45,7 @@ Mielőtt Azure Data Lake Storage Gen2-fiókkal konfigurálná a Power BI-t, elő
 1. A tárfiókot ugyanabban az AAD-bérlőben kell létrehozni, mint a Power BI-bérlőt.
 2. A tárfiókot ugyanabban a régióban kell létrehozni, mint a Power BI-bérlőt. A Power BI-bérlő helyének meghatározását a [Power BI-bérlő helyének megállapításáról](service-admin-where-is-my-tenant-located.md) szóló cikk ismerteti.
 3. A tárfiókban engedélyeznie kell a *hierarchikus névtér* funkciót.
-4. A Power BI szolgáltatásnak *Olvasó* szerepkört kell adni a tárfiókban.
+4. A Power BI szolgáltatásnak *Olvasó* és *Adathozzáférési* szerepkört kell adni a tárfiókban.
 5. Létre kell hozni egy **powerbi** nevű fájlrendszert.
 6. A Power BI-szolgáltatásoknak engedéllyel kell rendelkezniük a létrehozott **powerbi** fájlrendszerre.
 
@@ -59,16 +59,13 @@ Kövesse az [Azure Data Lake Storage Gen2-tárfiók létrehozása](https://docs.
 2. Engedélyezze a hierarchikus névtér funkciót
 3. A replikációs beállítást érdemes **georedundáns írásvédett társzolgáltatásra (RA-GRS)** beállítani
 
-### <a name="grant-the-power-bi-service-a-reader-role"></a>Olvasó szerepkör megadása a Power BI szolgáltatásnak
+### <a name="grant-the-power-bi-service-reader-and-data-access-roles"></a>Az olvasó és adathozzáférési szerepkör megadása a Power BI szolgáltatásnak
 
-Ezután olvasószerepkört kell adnia a Power BI szolgáltatásnak a létrehozott tárfiókban. Ez egy beépített szerepkör, tehát a lépések maguktól értetődnek. 
+Ezután olvasó és adathozzáférési szerepkört kell adnia a Power BI szolgáltatásnak a létrehozott tárfiókban. Mindkettő beépített szerepkör, tehát a lépések maguktól értetődnek. 
 
 Kövesse a [Beépített RBAC-szerepkör hozzárendelése](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role) című témakör lépéseit.
 
-A **Szerepkör-hozzárendelés megadása** ablakban válassza az **Olvasó** szerepkört, hogy ez legyen a Power BI szolgáltatáshoz rendelve. Keresse meg a **Power BI szolgáltatást**. Az alábbi ábra az **Olvasó** szerepkörnek a Power BI szolgáltatáshoz rendelését mutatja be.
-
-![Power BI szolgáltatás az Olvasó szerepkörhöz rendelve](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
-
+A **Szerepkör-hozzárendelés megadása** ablakban jelölje ki az **Olvasó** és az **Adathozzáférési** szerepkört, hogy ezek legyenek a Power BI szolgáltatáshoz rendelve. Keresse meg a **Power BI szolgáltatást**. 
 
 > [!NOTE]
 > Legalább 30 percig tart, amíg az engedély a Power BI-ból átkerül a Portalra. Várjon 30 percet minden alkalommal, amikor a Portalon módosítja az engedélyeket, hogy azok megjelenjenek a Power BI-ban. 
