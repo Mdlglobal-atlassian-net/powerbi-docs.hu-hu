@@ -1,20 +1,20 @@
 ---
 title: A formázási eszközök használatának bemutatása a Power BI-vizualizációkban
 description: Ez a cikk ismerteti, hogy használhat formázási eszközöket az értékek formázására és honosítás alkalmazására az értékekre a Power BI-vizualizációkban.
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 425a872c395df1b69297ae799e7059de687f8fb0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 9ae7e4b976cef2217c3742ef808a9a7063695cbc
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74700340"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819468"
 ---
 # <a name="formatting-utils"></a>Formázási eszközök
 
@@ -153,7 +153,7 @@ Ez a függvény megbecsüli a szöveg magasságát az adott SVG-szövegtulajdons
 function estimateSvgTextHeight(textProperties: TextProperties, tightFightForNumeric?: boolean): number;
 ```
 
-Példa az `estimateSvgTextHeight` használatára:
+Példa a `estimateSvgTextHeight` használatára:
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -353,7 +353,7 @@ Ez a függvény ellenőrzi, hogy a sztring sztringrészletre végződik-e.
 function endsWith(str: string, suffix: string): boolean;
 ```
 
-Példa az `endsWith` használatára:
+Példa a `endsWith` használatára:
 
 ```typescript
 import { stringExtensions } from "powerbi-visuals-utils-formattingutils";

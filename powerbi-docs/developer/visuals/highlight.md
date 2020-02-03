@@ -1,19 +1,19 @@
 ---
 title: Kiemelés
 description: Adatpont-kijelölések kiemelése Power BI-vizualizációkban
-author: zBritva
-ms.author: v-ilgali
-ms.reviewer: sranins
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/31/2019
-ms.openlocfilehash: bf5cd8d8ae649071b3c9cc7243f87ac3cc316c3b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 0c1263760157371f9f4d9fc0f122d6e37d73d720
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74695360"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819169"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Adatpontok kiemelése Power BI-vizualizációkban
 

@@ -1,20 +1,20 @@
 ---
 title: Power BI-vizualizáció adatpontjainak kijelölése
 description: Ez a cikk azt ismerteti, hogy hogyan adhatók kijelölések Power BI-vizualizációkhoz
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 94a1af90cc7ed08947f65f4ed0d55e981558d049
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 6854dad244636854cc8b77ddf1ffc15342281771
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696442"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818893"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Vizualizációk interaktívvá tétele Power BI-vizualizációkban végzett kijelölésekkel
 
@@ -311,7 +311,7 @@ public update(options: VisualUpdateOptions) {
 
 A vizualizáció kódja a táblázat sorain lépkedve minden sorra meghívja a táblázat `withTable` metódusát. A `withTable` metódus két paramétere a `table` objektum és a táblázatsor indexe.
 
-### <a name="create-selections-for-matrix-data-view-mapping"></a>Kijelölések létrehozása mátrixos adatnézet-leképezéshez
+### <a name="create-selections-for-matrix-data-view-mapping"></a>Kijelölések létrehozása mátrix adatnézet-leképezéshez
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -376,8 +376,8 @@ button.addEventListener("click", (mouseEvent) => {
 
 * [Tudnivalók kijelölések használatáról vizualizáció tulajdonságainak adatpontokhoz kötésére](objects-properties.md#objects-selector)
 
-* [Hogyan kezelhetők a kijelölések könyvjelzőváltáskor](bookmarks-support.md#visuals-with-selection)
+* [Tudnivalók a kijelölések kezeléséről könyvjelzőváltáskor](bookmarks-support.md#visuals-with-selection)
 
-* [Hogyan adható helyi menü a vizualizációk adatpontjaihoz](context-menu.md)
+* [Tudnivalók a vizualizációk adatpontjaihoz adható helyi menüről](context-menu.md)
 
-* [Hogyan használható az InteractivityUtils a kijelölések Power BI-vizualizációkhoz való hozzáadására](utils-interactivity-selections.md)
+* [Tudnivalók kijelölések Power BI-vizualizációkhoz adásáról az InteractivityUtils használatával](utils-interactivity-selections.md)
