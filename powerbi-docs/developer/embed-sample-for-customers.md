@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/12/2019
-ms.openlocfilehash: e27789ca28d86a53b7d8340b3d766a73a04645cb
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: a07a3e6e1086c463e0f0c8911d7a9b6ce89aa115
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223411"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913644"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba az ügyfelek számára
 
@@ -409,7 +409,7 @@ Most, hogy elkészült az alkalmazás fejlesztésével, ideje dedikált kapacit�
 ### <a name="create-a-dedicated-capacity"></a>Dedikált kapacitás létrehozása
 
 Dedikált kapacitás létrehozásával dedikált erőforrást rendelhet egy ügyfélhez. Két típusú kapacitás közül választhat:
-* A **Power BI Premium** bérlői szintű Office 356-előfizetés, amely két SKU- (termékváltozat-) családban érhető el: *EM* és *P*. Power BI-tartalom beágyazásakor ezt a megoldást *Power BI-beágyazásnak* nevezzük. Az előfizetéssel kapcsolatos további információ: [Mi az a Power BI Premium?](../service-premium-what-is.md)
+* A **Power BI Premium** bérlői szintű Office 356-előfizetés, amely két SKU- (termékváltozat-) családban érhető el: *EM* és *P*. Power BI-tartalom beágyazásakor ezt a megoldást *Power BI-beágyazásnak* nevezzük. További információ erről az előfizetésről: [Mi az a Power BI Premium?](../service-premium-what-is.md)
 * **Azure Power BI Embedded** – Dedikált kapacitást a [Microsoft Azure Portalon](https://portal.azure.com) vásárolhat. Ez az előfizetés az *A* termékváltozatokat használja. A Power BI Embedded-kapacitások létrehozásával kapcsolatos részletekért tekintse meg a [Power BI Embedded-kapacitás az Azure Portalon való létrehozásával](azure-pbie-create-capacity.md) kapcsolatos cikket.
 > [!NOTE]
 > A termékváltozatokkal nem férhet hozzá a Power BI-tartalmakhoz INGYENES Power BI-licenccel.
