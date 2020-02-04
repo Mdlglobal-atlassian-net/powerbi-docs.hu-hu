@@ -457,6 +457,8 @@
           href: service-get-started.md
         - name: Csatlakozás GitHub-mintához
           href: service-tutorial-connect-to-github.md
+        - name: Az Elemzés az Excelben használata
+          href: service-tutorial-analyze-in-excel.md
         - name: A Cognitive Services használata
           href: service-tutorial-use-cognitive-services.md
         - name: A Machine Learning integrálása
