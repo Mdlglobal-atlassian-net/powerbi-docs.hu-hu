@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
 ms.openlocfilehash: 6bf7610a010a72248a3d2fdd96718eea513a68da
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75000089"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Útmutató Power BI-vizualizációkhoz
@@ -76,7 +76,7 @@ Ez a szakasz az üzleti emblémák Power BI-vizualizációkhoz való hozzáadás
 Az üzleti emblémáknak háromféle típusa létezik:
 * **Embléma** – Az embléma két elemből áll: egy ikonból és egy névből.
 
-    ![Microsoft-embléma](media/guidelines-powerbi-visuals/microsoft-logo.png)
+    ![A Microsoft emblémája](media/guidelines-powerbi-visuals/microsoft-logo.png)
 
 * **Szimbólum** – Egy szöveg nélküli grafikus elem.
 
@@ -117,7 +117,7 @@ Az alábbi táblázat a Power BI-vizualizációk méretével kapcsolatos szempon
 |*Embléma szélessége*    |Legfeljebb 240 px         |Nagyobb mint 240 px         |
 |*Embléma magassága*     |Legfeljebb 160 px         |Nagyobb mint 160 px         |
 |*Határolókeret mérete*     |40 x 15 px         |101 x 30 px         |
-|*Példa üzleti emblémára*     |![A Microsoft szimbóluma](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)         |![Microsoft-embléma](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)         |
+|*Példa üzleti emblémára*     |![A Microsoft szimbóluma](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)         |![A Microsoft emblémája](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)         |
 |*Példa határolókeretre*    |![példa kis emblémára](media/guidelines-powerbi-visuals/small-logo-box.png)         |![példa nagy emblémára](media/guidelines-powerbi-visuals/big-logo-box.png)         |
 |    |         |         |
 

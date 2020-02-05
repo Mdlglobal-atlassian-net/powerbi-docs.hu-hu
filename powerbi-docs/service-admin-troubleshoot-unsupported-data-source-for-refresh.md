@@ -1,6 +1,6 @@
 ---
 title: Hibaelhárítás – frissítéshez nem támogatott adatforrás
-description: Hibaelhárítás – frissítéshez nem támogatott adatforrás
+description: Nem támogatott adatforrás frissítési hibáinak elhárítása
 author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
@@ -11,13 +11,13 @@ ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: e3fe8626001972acc0b7555f37844b5abb62753b
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74791999"
 ---
-# <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Hibaelhárítás – frissítéshez nem támogatott adatforrás
+# <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Nem támogatott adatforrás frissítési hibáinak elhárítása
 Előfordulhat, hogy hibaüzenetet tapasztal, amikor egy adatkészletet ütemezett frissítését próbálja konfigurálni.
 
         You cannot schedule refresh for this dataset because it gets data from sources that currently don’t support refresh.

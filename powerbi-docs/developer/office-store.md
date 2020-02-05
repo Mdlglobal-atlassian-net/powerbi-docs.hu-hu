@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 12/02/2019
 ms.openlocfilehash: ec1bd8666a9d76b4ccfa7793415488f85a24dfdb
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74999902"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Power BI-vizualizációk közzététele a Partnerközpontban
@@ -51,7 +51,7 @@ A **pbiviz** csomag létrehozása előtt ki kell töltenie a következő mezőke
 * leírás
 * supportUrl
 * szerző
-* név
+* name
 * e-mail
 
 Mellékelje a **pbiviz fájlt** és a **mintajelentés pbix fájlját** az e-mailhez. A Power BI-csapattól egy választ fog kapni, amely tartalmazza a feltöltésre vonatkozó utasításokat és a feltöltendő alkalmazáscsomag XML-fájlját. Erre az XML-alkalmazáscsomagra szükség van ahhoz, hogy be tudja küldeni a vizualizációt az Office fejlesztői központján keresztül.

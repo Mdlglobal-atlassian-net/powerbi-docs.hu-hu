@@ -9,10 +9,10 @@ ms.topic: troubleshooting
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/06/2018
 ms.openlocfilehash: c2680a5818488a7822f38b8286a3e5a1782a487a
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74999767"
 ---
 # <a name="troubleshoot-power-bi-visuals"></a>Power BI-vizualizációk hibáinak elhárítása
@@ -38,7 +38,7 @@ Ha ez nincs ott, akkor valószínűleg engedélyeznie kell a Power BI beállít�
 
 Futtassa a vizualizáció kiszolgálóját. Ehhez adja ki a terminálon/parancsorból a `pbiviz start` parancsot a vizualizáció projektjének gyökérmappájából. Ha a kiszolgáló nem fut, akkor valószínűleg nincsenek helyesen telepítve az SSL-tanúsítványok.
 
-Ha bármilyen kérdése, megjegyzése vagy problémája van, vegye fel a kapcsolatot a Power BI-vizualizációk csapatával a  *pbicvsupport@microsoft.com*   címen.
+Ha bármilyen kérdése, megjegyzése vagy problémája van, vegye fel a kapcsolatot a Power BI-vizualizációk csapatával a  *pbicvsupport@microsoft.com*  címen.
 
 ## <a name="next-steps"></a>Következő lépések
 

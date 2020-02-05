@@ -10,10 +10,10 @@ ms.date: 06/06/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
 ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74958402"
 ---
 # <a name="configure-scheduled-refresh"></a>Ütemezett frissítés beállítása
@@ -86,7 +86,7 @@ A beállítások megadásához a **Tartsa adatait naprakészen** csúszkát a **
 
 Bizonyos adatkészletek ütemezett frissítése eltérő átjárók esetében támogatott. Az alábbi referencia alapján megértheti, milyen lehetőségek vannak.
 
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
+### <a name="power-bi-gateway---personal"></a>Személyes Power BI-átjáró
 
 **Power BI Desktop**
 
