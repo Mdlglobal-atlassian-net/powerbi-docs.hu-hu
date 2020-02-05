@@ -1,29 +1,174 @@
 ---
 title: A Power BI jelentéskészítő kiszolgáló újdonságai
-description: A Power BI jelentéskészítő kiszolgáló újdonságainak bemutatása. A cikk a főbb funkciókat ismerteti és az új elemek kibocsátásakor frissül.
+description: A Power BI jelentéskészítő kiszolgáló újdonságainak bemutatása. A cikk a főbb funkciókat ismerteti, és az új elemek kibocsátásakor frissül.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
-ms.openlocfilehash: 526a971817c50599bf77ae085f3d5ff07294b25b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 01/23/2020
+ms.openlocfilehash: 9b7ea090d7860de9ec4132b070bd1286085cc5f3
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858740"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819560"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló újdonságai
 
 A Power BI jelentéskészítő kiszolgáló és a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop újdonságainak bemutatása. A cikk a főbb funkciókat ismerteti, és minden új kibocsátásakor frissül.
+
+Töltse le a [Power BI jelentéskészítő kiszolgálót és a Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktopot](https://powerbi.microsoft.com/report-server/).
 
 Az újdonságokra vonatkozó Power BI-információk:
 
 * [A Power BI szolgáltatás újdonságai](../service-whats-new.md)
 * [A Power BI Desktop újdonságai](../desktop-latest-update.md)
 * [A Power BI-mobilalkalmazások újdonságai](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="january-2020"></a>2020. január
+
+A részleteket a Power BI jelentéskészítő kiszolgáló 2020. januári blogbejegyzésében találja meg.
+
+### <a name="power-bi-desktop-optimized-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop
+
+Ez a kiadás számos új funkciót kínál, köztük a gombok feltételes formázását, az adatprofilkészítés fejlesztéseit, valamint további formázási beállításokat a KPI-khez és a táblázatos vizualizációkhoz. A frissítések összefoglaló listája:
+
+**Jelentéskészítés**
+
+- Táblaoszlop vagy mátrix értékének beállítása egyéni URL-címként
+- KPI-vizualizáció formázási beállításai
+- A szűrőpanel felület frissítései
+
+**Elemzés**
+
+- Gombok feltételes formázása
+- Továbbiak betöltése az információk elemzéséhez
+- Új DAX-függvény: Negyedév
+
+**Adatok előkészítése**
+
+- Az adatprofil-készítés fejlesztései
+
+**Egyéb**
+
+- Új fájlformátum:. pbids
+- A modellezési műveletek teljesítményét javító fejlesztések
+
+**Jelentéskészítés**
+
+*Táblaoszlop vagy mátrix értékének beállítása egyéni URL-címként*
+
+Egyéni URL-címként állítható be egy táblaoszlop vagy mátrix értéke. Ezt az új lehetőséget a feltételes formázási kártya alatt találja meg a Formázás panelen.
+
+*KPI-vizualizáció formázási beállításai*
+
+Az e havi kiadástól a KPI-khez új formázási beállítások érhetők el:
+
+- Kijelző szövegének formázása (betűkészlet-család, szín és igazítás)
+- Trendtengely átlátszósága
+- Cél és távolság szöveg formázása (címkeszöveg, betűkészlet-család, szín és méret)
+- Távolság szöveg formázása (címkeszöveg, pozitív irány, betűkészlet-család, szín és méret)
+- Adatcímke felvétele formázással (betűkészlet-család, szín és méret)
+
+Az új formázási lehetőségek közül néhány feltételesen is beállítható:
+
+- Kijelző szövegének színe
+- Cél szövegszíne és Cél távolságának betűszíne
+- A jó/rossz/semleges állapot színe
+- Dátum szövegszíne
+
+*A szűrőpanel felület frissítései*
+
+Az új szűrőfelület [legutóbbi kiadás](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2019-feature-summary/#filterPane) óta általánosan elérhető. Ennek részeként egyszerűbbé tettük az aktuális jelentéseket az új panelre átállító folyamatot. A Power BI jelentéskészítő kiszolgáló első indításakor a szűrőpanel automatikus frissítésének párbeszédpanele nyílik meg. A frissítések magukban foglalják a jelentéskészítő kiszolgálóban megjelenő szalagcímeket, ha jelentéseket kell az új felületre migrálni.
+
+**Elemzés**
+
+*Gombok feltételes formázása*
+
+A feltételes formázás összes frissítése a gombokra vonatkozik. Mostantól dinamikusan állítható be formázás az alábbi tulajdonságokhoz:
+
+- Gomb szövegének betűszíne
+- Gomb szövege
+- Ikon vonalszíne
+- Körvonal színe
+- Kitöltési szín
+- Gomb elemleírása (a műveleti kártya alatt)
+
+*Továbbiak betöltése az információk elemzéséhez*
+
+Amikor az Elemzés funkciót futtatja adatelemzési eredmények kinyeréséhez, például egy növekedés magyarázatához, a gépi tanulási modelleket csak egy meghatározott időtartamra futtatjuk, hogy az eredmények belátható időn belül megjelenjenek. Ha sok adatot kell elemezni, mostantól eldöntheti, hogy az eredeti időkorláton túl is tovább futtatja az elemzést.
+
+*Új DAX-függvény: Quarter*
+
+Ebben a hónapban új DAX-függvény jelent meg: Quarter. A Quarter függvény a megadott dátumnak megfelelő negyedévet adja vissza.
+
+**Adatok előkészítése**
+
+*Az adatprofil-készítés fejlesztései*
+
+Ebben a hónapban néhány jelentős fejlesztést vezetünk be a Power Query-szerkesztő adatprofil-készítési képességei terén, köztük a következőket:
+
+- Több csoportosítási lehetőség az Oszlopprofil panel értékeloszlási vizualizációjához, a meglévő „Érték szerint” feltétel mellett már oszloptípus szerint is.
+- Szöveg: Szöveg hossza (karakterek száma) szerint.
+- Szám: Előjel (pozitív/negatív) és paritás (páros/páratlan) szerint.
+- Dátum/Dátum és idő: Év, hónap, nap, év hete, hét napja, délelőtt/délután és nap órája szerint.
+- További lehetőségek más típusokhoz, például logikai igaz/hamis értékek szerint.
+
+*Szűrési lehetőségek*
+
+Már eddig is több típusspecifikus csoportosítási feltételt használhatott az Oszlopprofilok eloszlási panelén. Mostantól az eloszlási diagram egyes értékeinek felirataiból is szűrhet, csoportosítási feltételek alkalmazása esetén. Például egy Dátum/Dátum és idő oszlop Adatprofilok panelén kizárhatja az összes olyan értéket, amely egy adott hónapra esik.
+
+**Egyéb**
+
+*Új fájlformátum:. pbids*
+
+Ebben a hónapban kibocsátjuk az új .pbids fájlformátumot, amellyel egyszerűsítheti a vállalat jelentéskészítőinek munkáját az „adatbeolvasási” folyamatnál. Javasoljuk, hogy a rendszergazdák hozzák létre ezeket a fájlokat a gyakran használt kapcsolatokhoz.
+
+Amikor a jelentéskészítő megnyit egy .pbids-fájlt, a Power BI Desktop hitelesítést kér a fájlban megadott adatforráshoz való csatlakozáshoz. Ez után a felhasználó kiválasztja a modellbe betöltendő táblákat. Esetleg ki kell választania az adatbázist is, ha az nem lett megadva a fájlban. Ekkor a jelentéskészítő megkezdheti a vizualizációk készítését.
+
+Részleteket és példákat az „Adatforrások a Power BI Desktopban” című cikk [Adatok beolvasása .pbids-fájlok használatával](../desktop-data-sources.md#using-pbids-files-to-get-data) szakaszában talál.
+
+*A modellezési műveletek teljesítményét javító fejlesztések*
+
+A teljesítményt érintő fejlesztéseket végeztünk az Analysis Services-motoron az olyan modellezési műveletek felgyorsítása érdekében, mint a mértékek vagy számított oszlopok felvétele és a kapcsolatok létrehozása. A tapasztalt javulás mértéke a modelltől függ, de egyes ügyfeleknél 20-szoros teljesítménynövekedést is mértünk olyan műveleteknél, mint a fájlok megnyitása és a mértékek hozzáadása.
+
+Ennyi fért bele a Power BI jelentéskészítő kiszolgáló 2020. januári kiadásába. Továbbra is várjuk visszajelzéseit, és ne felejtsen el [szavazni azokra a funkciókra, amelyeket szívesen látna a Power BI-ban](https://ideas.powerbi.com/forums/265200-power-bi).
+
+### <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgáló
+
+#### <a name="export-to-excel-from-power-bi-reports"></a>Exportálás Excelbe Power BI-jelentésekből
+
+A Power BI-jelentésből Excelbe exportálás már ugyanúgy működik a Power BI jelentéskészítő kiszolgálóban, mint a Power BI-jelentésből Excelbe exportálás a Power BI szolgáltatásban. Közvetlenül az Excel .xlsx formátumába exportálhat, az export korlátja pedig 150 ezer sor.
+
+#### <a name="azure-sql-managed-instance-support"></a>Az Azure SQL felügyelt példányainak támogatása
+
+Mostantól a Power BI jelentéskészítő kiszolgálóhoz használt adatbázis-katalógust üzemeltethet egy olyan felügyelt Azure SQL-példányban, amely viszont egy virtuális gépen vagy adatközpontban van üzemeltetve. A támogatás az adatbázisbeli hitelesítő adatoknak a felügyelt SQL-példányhoz kapcsolódáshoz való felhasználására korlátozódik.
+
+#### <a name="power-bi-premium-dataset-support"></a>Power BI Premium-adathalmazok támogatása
+
+Power BI-adathalmazokhoz kapcsolódhat a Microsoft Report Builder vagy az SQL Server Data Tools (SSDT) használatával. Ezt követően ezeket a jelentéseket az SQL Server Analysis Services-kapcsolat használatával teheti közzé. Ez akkor lehetséges, ha a felhasználók tárolt windowsos felhasználónevet és jelszót használnak.
+
+#### <a name="alttext-alternative-text-support-for-report-elements"></a>AltText (helyettesítő szöveg) támogatása jelentéselemekhez
+
+Jelentések készítésekor elemleírásokkal szöveget adhat meg a jelentés elemeihez. A képernyőolvasó technológiák ezeket az elemleírásokat használják.
+
+#### <a name="azure-active-directory-application-proxy-support"></a>Az Active Directory alkalmazásproxyjának támogatása
+
+Az Azure Active Directory Application Proxy használata esetén nem kell saját webalkalmazás-proxyt kezelnie ahhoz, hogy lehetővé tegye a web- vagy mobilalkalmazásokon keresztüli biztonságos hozzáférést. További információ: [Helyszíni alkalmazások távoli elérése az Azure Active Directory alkalmazásproxyján keresztül](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+
+#### <a name="custom-headers"></a>Egyéni fejlécek
+
+Fejlécértékeket állíthat be a reguláris kifejezéssel megadott mintázatnak megfelelő összes URL-címhez. A felhasználók érvényes XML használatával módosíthatják az egyéni fejléc értékét a kijelölt kérés-URL-címek fejléc-értékének beállításához. A rendszergazdák tetszőleges számú fejlécet felvehetnek az XML-be. Részletesebb információt a Reporting Services **kiszolgálótulajdonságok speciális lapját** ismertető cikk [Egyéni fejlécek](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#custom-headers) szakaszában talál.
+
+#### <a name="transparent-database-encryption"></a>Transzparens adatbázis-titkosítás
+
+A Power BI jelentéskészítő kiszolgáló mostantól támogatja a transzparens adatbázis-titkosítást a Power BI jelentéskészítő kiszolgáló katalógus-adatbázisához az Enterprise és a Standard kiadás esetén.
+
+#### <a name="microsoft-report-builder-update"></a>A Microsoft Report Builder frissítése
+
+A Report Builder újonnan kiadott verziója teljesen kompatibilis a Reporting Services 2016-os, 2017-es és 2019-es verziójával. Kompatibilis a Power BI jelentéskészítő kiszolgáló összes kiadott és támogatott verziójával is.
 
 ## <a name="september-2019"></a>2019. szeptember
 
@@ -80,37 +225,39 @@ A funkciók teljes listája a következő.
 - Másolás a vágólapra adatprofil-készítésből
 
 
-## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>2019. május: A Power BI jelentéskészítő kiszolgálóhoz készült Power BI Desktop
+## <a name="may-2019"></a>2019. május
+
+### <a name="power-bi-desktop-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgálóhoz készült Power BI Desktop
 
 Az összes új funkció részleteit megtalálhatja a [Power BI jelentéskészítő kiszolgáló 2019. májusi](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blogbejegyzésében.
 
 Kiemelünk néhányat a kiadás legfontosabb részletei közül:
 
-### <a name="performance-analyzer"></a>Teljesítményelemző 
+#### <a name="performance-analyzer"></a>Teljesítményelemző 
 
 Ha a jelentés a vártnál lassabban fut, kipróbálhatja a Power BI Desktop Teljesítményelemzőjét. Ez az elindításakor naplófájl hoz létre a jelentéssel végzett összes művelettel kapcsolatos információkkal. További információk a [Teljesítményelemzőről](../desktop-performance-analyzer.md).
 
-### <a name="new-modeling-view"></a>Új modellezési nézet
+#### <a name="new-modeling-view"></a>Új modellezési nézet
 
 A Power BI Desktop új Modellezés nézetében sok táblát tartalmazó, összetett adathalmazokat tekinthet meg és kezelhet. Ennek lényeges eleme például a többszörös diagramelrendezés, valamint az oszlopok, mértékek és táblázatok csoportos szerkesztése. További tudnivalók a [Modellezés nézetről](../desktop-modeling-view.md).
 
-### <a name="accessible-visual-interaction"></a>Vizualizációk akadálymentes használata
+#### <a name="accessible-visual-interaction"></a>Vizualizációk akadálymentes használata
 
 Mostantól a beépített vizualizációk többségében a billentyűzettel navigálva is elérhetők az adatpontok. További tudnivalók a [Power BI-jelentések akadálymentességéről](../desktop-accessibility.md).
 
-### <a name="conditional-formatting-titles-and-web-url-actions"></a>Címek feltételes formázása és webes URL-műveletek
+#### <a name="conditional-formatting-titles-and-web-url-actions"></a>Címek feltételes formázása és webes URL-műveletek
 
 A Power BI-jelentések interaktívak. Kézenfekvő, hogy a jelentések címe is dinamikus legyen, és tükrözze a jelentés aktuális állapotát. Ugyanazzal a kifejezésalapú formázással teheti dinamikussá a gombok, alakzatok és képek URL-címeit. További információ a [kifejezésalapú címekről](../desktop-conditional-format-visual-titles.md).
 
-### <a name="cross-highlight-by-axis-labels"></a>Keresztkiemelés tengelyfeliratok alapján
+#### <a name="cross-highlight-by-axis-labels"></a>Keresztkiemelés tengelyfeliratok alapján
 
 Egy vizualizáció kategóriatengely-feliratainak kijelölésével keresztkiemelést végezhet az oldal más elemein, mintha az adatpontokat jelölte volna ki a vizualizáción. További tudnivalók a [keresztkiemelésről](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
 
-### <a name="all-the-new-features"></a>Az összes új funkció
+#### <a name="all-the-new-features"></a>Az összes új funkció
 
 Az alábbi lista az összes új funkciót felsorolja:
 
-### <a name="reporting"></a>Jelentéskészítés
+#### <a name="reporting"></a>Jelentéskészítés
 
 - Keresztkijelölés a vonaldiagramok egyetlen pontján 
 - Címek több sorba tördelése 
@@ -131,24 +278,24 @@ Az alábbi lista az összes új funkciót felsorolja:
 - Vonal-adatfelirat helyzetének szabályozása
 - KPI vizuális kijelző szövegméretének szabályozása
 
-### <a name="analytics"></a>Elemzés
+#### <a name="analytics"></a>Elemzés
 
 - A dátumok hierarchikus megjelenítése már általánosan elérhető  
 
-### <a name="modeling"></a>Modellezés
+#### <a name="modeling"></a>Modellezés
 
 - Mostantól általánosan elérhető az új modellezési nézet
 - Új DAX-függvények
 - Az ALLSELECTED DAX-függvény frissítése
 - Dátumtáblák automatikus létrehozásának letiltása új jelentések esetén
 
-## <a name="may-2019-power-bi-report-server"></a>2019. május: Power BI jelentéskészítő kiszolgáló
+### <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgáló
 
-### <a name="support-for-trusted-visuals"></a>Megbízható vizualizációk támogatása
+#### <a name="support-for-trusted-visuals"></a>Megbízható vizualizációk támogatása
 
 A Power BI jelentéskészítő kiszolgálót a megbízható vizualizációk támogatásával egészítettük ki. Jelenleg a Mapbox és PowerOn vizualizációkat támogatjuk. Az ESRI, a Visio és a PowerApps ebben a kiadásban nem támogatott.
 
-### <a name="improved-security-features"></a>Továbbfejlesztett biztonsági funkciók
+#### <a name="improved-security-features"></a>Továbbfejlesztett biztonsági funkciók
 
 A **RestrictedResourceMimeTypeForUpload** használatával a rendszergazdák vesszővel tagolt listában adhatják meg a letiltott MIME-típusokat (például text/html).
 
@@ -176,7 +323,7 @@ A rendszergazdák a következő tulajdonságokat állíthatják be az SSMS-ben a
 
 **AllowedResourceExtensionsForUpload** Lehetőség a jelentéskészítő kiszolgálóra feltölthető erőforrások bővítményeinek beállítására. A beépített fájltípusok bővítményeit (például &ast;.rdl vagy &ast;.pbix) nem szükséges belefoglalni. Az alapértelmezés „&ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt, &ast;.pptx”. 
 
-**SupportedHyperlinkSchemes** Azoknak az URI-sémáknak a vesszővel tagolt listáját állítja be, amelyeket definiálni lehet a megjeleníthető hiperhivatkozásos műveleteknél, vagy „&ast;” az összes hiperhivatkozásos séma engedélyezéséhez. A „http,https” beállítással például engedélyezni lehet a „https://www. contoso.com” helyre mutató hivatkozásokat, de eltávolítja a „mailto:bill@contoso.com” vagy “javascript:window.open(‘www.contoso.com’, ‘_blank’)” hivatkozásokat. Az alapértelmezés „&ast;”.
+**SupportedHyperlinkSchemes** Azoknak az URI-sémáknak a vesszővel tagolt listáját állítja be, amelyeket definiálni lehet a megjeleníthető hiperhivatkozásos műveleteknél, vagy „&ast;” az összes hiperhivatkozásos séma engedélyezéséhez. A „http, https” beállítással például engedélyezni lehet a „https://www. contoso.com” helyre mutató hivatkozásokat, de eltávolítja a „mailto:bill@contoso.com” vagy “javascript:window.open(‘ www.contoso.com’, ‘_blank’)” hivatkozásokat. Az alapértelmezés „&ast;”.
 
 ## <a name="august-2018"></a>2018. augusztus
 
@@ -254,7 +401,7 @@ Már elérhető a Power BI-jelentésekhez a SAP HANA SSO Direct Query Kerberossz
 - [Új, rugalmasabb és több módon formázható vizualizáció-fejléc](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#visualHeader)
 - [Háttérkép formázása](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#wallpaper)
 - [Elemleírások a táblához és mátrixhoz](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tableTooltips)
-- [Vizualizációk elemleírásainak kikapcsolása](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tooltips)
+- [Elemleírások kikapcsolása vizualizációkhoz](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tooltips)
 - [Szeletelő akadálymentessége](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#slicerAccessibility)
 - [A Formázás panel fejlesztései](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#formattingPane)
 - [Lépcsőzetes vonal támogatása vonal- és kombinált diagramokhoz](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#steppedLine)
@@ -392,7 +539,7 @@ A Power BI jelentéskészítő kiszolgálóval ütemezett adatfrissítést áll�
 
 ### <a name="editing-power-bi-reports-from-the-server"></a>Power BI-jelentések szerkesztése a kiszolgálóról
 
-A Power BI-jelentésfájlokat (.pbix) a kiszolgálóról is megnyithatja és szerkesztheti, de az eredetileg feltöltött fájlt kapja vissza.  Emiatt **ha a kiszolgáló frissítette az adatokat, akkor azok nem frissülnek a fájl első megnyitásakor**. Helyileg, manuálisan kell frissítenie őket, hogy lássa a változást.
+A Power BI-jelentésfájlokat (.pbix) a kiszolgálóról is megnyithatja és szerkesztheti, de az eredetileg feltöltött fájlt kapja vissza. **Ha a kiszolgáló frissítette az adatokat, akkor azok nem frissülnek a fájl első megnyitásakor**. Helyileg, manuálisan kell frissítenie őket, hogy lássa a változást.
 
 ### <a name="large-file-uploaddownload"></a>Nagy méretű fájlok feltöltése/letöltése
 
@@ -404,7 +551,7 @@ A megosztott adatkészletek a Power BI Desktopból OData-csatorna használatáva
 
 ### <a name="scale-out"></a>Bővítés
 
-Ez a kiadás támogatja a bővítést. A legjobb eredmény érdekében használjon terheléselosztót, és állítsa be a kiszolgálóaffinitást. Ne feledje, hogy a rendszer ekkor még nincs bővítésre optimalizálva, így esetleg több csomópont között replikált modelleket fog látni. Ez az összeállítás a hálózati terheléselosztó és rögzített munkamenetek nélkül is működik. Az N példányban betöltődő modell azonban nem csupán túlzott memóriahasználatot eredményez, de a kapcsolatok közötti átvitel is lassul a kérelmek között új csomópontot elérő modell átvitele miatt.  
+Ez a kiadás támogatja a bővítést. A legjobb eredmény érdekében használjon terheléselosztót, és állítsa be a kiszolgálóaffinitást. A rendszer ekkor még nincs bővítésre optimalizálva, így esetleg több csomópont között replikált modelleket fog látni. Ez az összeállítás a hálózati terheléselosztó és rögzített munkamenetek nélkül is működik. Az N példányban betöltődő modell azonban nem csupán túlzott memóriahasználatot eredményez, de a kapcsolatok közötti átvitel is lassul a kérelmek között új csomópontot elérő modell átvitele miatt.  
 
 ### <a name="administrator-settings"></a>Rendszergazdai beállítások
 
@@ -416,7 +563,7 @@ A rendszergazdák a következő tulajdonságokat állíthatják be az SSMS-ben a
 * MaxFileSizeMb: Az alapértelmezett érték jelenleg 1000
 * ModelCleanupCycleMinutes: Milyen gyakran ellenőrzi a memóriából kizárandó modelleket
 * ModelExpirationMinutes Mennyi idő után jár le és záródik ki a modell az utolsó használat időpontja után
-* ScheduleRefreshTimeoutMinutes: Mennyi ideig tarthat egy modell adatfrissítése. Az alapértelmezett korlát két óra.  Nincs merev felső korlát.
+* ScheduleRefreshTimeoutMinutes: Mennyi ideig tarthat egy modell adatfrissítése. Az alapértelmezett érték 2 óra.  Nincs merev felső korlát.
 
 **Az rsreportserver.config konfigurációs fájl**
 
@@ -434,7 +581,7 @@ A rendszergazdák a következő tulajdonságokat állíthatják be az SSMS-ben a
 
 Az SSRS 2017-hez bevezetett fejlesztői API (REST API) kibővült az Excel- és .pbix-fájloknak a Power BI jelentéskészítő kiszolgálóval való használatával. Egy lehetséges felhasználási mód fájlok program alapján történő letöltése a kiszolgálóról, frissítése majd újbóli közzététele. PowerPivot modelleket tartalmazó Excel-munkafüzetek például csak ezen a módon frissíthetők.
 
-Érdemes tudni, hogy létezik egy új, külön API a nagyméretű fájlokhoz, amelyek a Swaggernek a Power BI jelentéskészítő kiszolgálóhoz készült verziójával frissülnek. 
+Létezik egy új, külön API a nagyméretű fájlokhoz, amelyek a Swaggernek a Power BI jelentéskészítő kiszolgálóhoz készült verziójával frissülnek. 
 
 ### <a name="sql-server-analysis-services-ssas-and-the-power-bi-report-server-memory-footprint"></a>Az SQL Server Analysis Services (SSAS) és a Power BI jelentéskészítő kiszolgáló memóriaigénye
 
@@ -452,7 +599,7 @@ A Microsoft közzétett egy [útmutató Office Online Server (OOS) Power BI jele
 
 ### <a name="support-for-new-table-and-matrix-visuals"></a>Támogatják az új táblázat és mátrix vizualizációkat
 
-A Power BI jelentéskészítő kiszolgáló már támogatja a Power BI új táblázat és mátrix vizualizációit. Az ezeket a vizualizációkat tartalmazó jelentések készítéséhez a 2017. októberi kiadásra frissített Power BI Desktop szükséges. Az új verzió nem telepíthető a Power BI Desktop (2017. június) kiadása mellé. A Power BI Desktop legújabb verziója a [Power BI jelentéskészítő kiszolgáló letöltési oldal](https://powerbi.microsoft.com/report-server/) **Speciális letöltési beállítások** eleme alatt található.
+A Power BI jelentéskészítő kiszolgáló már támogatja a Power BI új táblázat és mátrix vizualizációit. Az ezeket a vizualizációkat tartalmazó jelentések készítéséhez a 2017. októberi kiadásra frissített Power BI Desktop szükséges. Az új verzió nem telepíthető a Power BI Desktop (2017. június) kiadása mellé. A Power BI Desktop legújabb verziója a [Power BI jelentéskészítő kiszolgáló letöltési oldal](https://powerbi.microsoft.com/report-server/)**Speciális letöltési beállítások** eleme alatt található.
 
 ## <a name="june-2017"></a>2017. június
 
@@ -472,7 +619,6 @@ A Power BI jelentéskészítő kiszolgáló már támogatja a Power BI új tábl
 Ezekből a forrásokból folyamatosan értesülhet a Power BI jelentéskészítő kiszolgáló új funkcióiról.
 
 * [Microsoft Power BI-blog](https://powerbi.microsoft.com/blog/)
-* [Az SQL Server Reporting Services csapat blogja](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
 * A [Guy in a Cube YouTube-csatorna](https://aka.ms/guyinacube)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
