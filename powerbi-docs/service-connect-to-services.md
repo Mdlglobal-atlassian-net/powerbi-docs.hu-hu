@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 91740d16a91aa8dc1936e8ae1a2812653c45e6a1
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: c342a7472666ee50b7213e7d933ad36da85ce7f6
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73925826"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76975033"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Kapcsolódás a Power BI segítségével a használt szolgáltatásokhoz
 A Power BI-jal könnyedén kapcsolódhat a vállalkozása működtetéséhez használt olyan szolgáltatásokhoz, mint például a Salesforce, a Microsoft Dynamics CRM és a Google Analytics. Power BI az indulásakor kapcsolódik a szolgáltatáshoz az Ön hitelesítő adataival. Ezt követően létrehoz egy irányítópulttal rendelkező *Power BI-munkaterületet* és néhány jelentést, amelyek automatikusan megjelenítik adatait, és vizuális elemzést biztosítanak az üzletmenetről.
@@ -71,5 +71,4 @@ Ha érdekli, hogyan hozhat létre sablonalkalmazásokat, hogy saját maga terjes
 * [Alkalmazások terjesztése munkatársaknak](service-create-distribute-apps.md)
 * [Új munkaterületek létrehozása a Power BI-ban](service-create-the-new-workspaces.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 
