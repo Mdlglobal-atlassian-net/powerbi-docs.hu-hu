@@ -202,7 +202,7 @@ A PowerBI.com használatával munkaterületeket rendelhet a Power BI Embedded-ka
 
 ### <a name="what-content-pack-data-types-can-you-embed"></a>Milyen tartalomcsomagbeli adattípusokat lehet beágyazni?
 
-Tartalomcsomagok adatkészleteiből készült **irányítópultok** és **csempék***nem* ágyazhatók be. Tartalomcsomagok adatkészleteiből készült **jelentések** azonban *beágyazhatók*.
+Tartalomcsomagok adatkészleteiből készült **irányítópultok** és **csempék** *nem* ágyazhatók be. Tartalomcsomagok adatkészleteiből készült **jelentések** azonban *beágyazhatók*.
 
 ### <a name="what-is-the-difference-between-using-row-level-security-rls-vs-javascript-filters"></a>Mi a különbség a sorszintű biztonság (RLS) és a JavaScript-szűrők használata között?
 
