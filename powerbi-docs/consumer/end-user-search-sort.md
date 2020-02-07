@@ -1,66 +1,57 @@
 ---
-title: Tartalom keresése és rendezése a Power BI szolgáltatásban
-description: a tartalmak Power BI a Saját munkaterület részén való keresésével és rendezésével kapcsolatos dokumentáció
+title: Tartalom keresése
+description: dokumentáció a tartalom kereséséhez és rendezéséhez a Power BI szolgáltatásban
 author: mihart
 ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 01/27/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a7848cb5931d983ab434a19c934c9e9cb464724
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64570b23700e125e9040f493630317c0c6350d0e
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861738"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889112"
 ---
-# <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigáció: tartalom keresése és rendezése a Power BI szolgáltatásban
+# <a name="navigation-for-power-bi-consumers-sorting-content"></a>Navigálás Power BI-felhasználók számára: tartalom rendezése
+
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-A Power BI szolgáltatásban számos módon navigálhat a tartalmak között. A tartalmak típus szerint vannak rendezve a munkaterületén: irányítópultok és jelentések.  A tartalom emellett használat szerint is rendezve van: kedvencek, legutóbbi, alkalmazások, velem megosztott és kiemelt. A Power BI *kezdőlapja* az egylépéses navigáció érdekében egy oldalon rendez el minden tartalmat. Ezek a különböző tartalmakhoz vezető utak lehetővé teszik, hogy gyorsan megtalálja, amire szüksége van a Power BI szolgáltatásban.  
 
-## <a name="navigation-within-workspaces"></a>Navigálás a munkaterületeken
+Ha most ismerkedik a Power BI szolgáltatással, feltehetően még csak kevés tartalommal (irányítópultok, jelentések, alkalmazások) rendelkezik. Ha azonban a munkatársak elkezdenek tartalmakat megosztani Önnel, Ön pedig alkalmazásokat tölt majd le, a tartalmak listája meglehetősen hosszú is lehet. Ekkor találja majd rendkívül hasznosnak a keresést és a rendezést.
 
-A Power BI *felhasználói* általában csak egy munkaterülettel rendelkeznek: a **Saját munkaterülettel**. A **Saját munkaterületen** csak akkor látható tartalom, ha töltött le Microsoft-mintákat, vagy saját irányítópultot, jelentést vagy alkalmazást hozott létre vagy töltött le.  
+## <a name="searching-for-content"></a>Tartalom keresése
+ A keresés a Power BI szolgáltatás szinte minden részén elérhető. Keresse meg a keresőmezőt vagy a keresés ikont ![nagyító ikon](./media/end-user-search-sort/power-bi-search-icon.png).
 
-A **Saját munkaterületen** belül a Power BI szolgáltatás a következő típusokba választja szét a tartalmakat: irányítópultok, jelentések, munkafüzetek és adathalmazok. Ez az elrendezés fog megjelenni, amikor kiválaszt egy munkaterületet. Ebben a példában a **Saját munkaterület** egy irányítópultot, egy jelentést és egy adathalmazt tartalmaz, munkafüzetet nem.
+ A keresőmezőbe írja be az irányítópult, jelentés, munkafüzet, alkalmazás vagy tulajdonos nevének egy részét vagy egészét. A Power BI az összes tartalomban keres. 
 
-![videó](./media/end-user-search-sort/myworkspace/myworkspace.gif)
+ ![jelentés keresése](./media/end-user-search-sort/power-bi-search-field.png) 
 
-________________________________________
-## <a name="navigation-using-the-search-field"></a>Navigálás a Keresőmezővel
-A **Saját munkaterület** tartalomnézete megkönnyíti a különböző tartalmak keresését, szűrését és rendezését. A keresőmezőbe írja be az irányítópult, jelentés, munkafüzet vagy tulajdonos nevének egy részét vagy egészét.  
+ A Power BI egyes területein, például a munkaterületeken, két különböző keresőmező jelenik meg. A menüsávban található keresőmező az összes tartalomban keres, a munkaterület-vászon keresési mezője azonban csak a munkaterületben keres.
 
-Ha csak kevés tartalommal rendelkezik van, a keresés és rendezés nem szükséges.  De ha irányítópultok és jelentések hosszú listájával dolgozik, akkor a keresést és a rendezést rendkívül hasznosnak fogja találni. Az alábbi jelentéslista például 83 elemet tartalmaz. 
+ ![keresés a munkaterületen belül](./media/end-user-search-sort/power-bi-search-fields.png) 
 
-![jelentés keresése](./media/end-user-experience/power-bi-search.png)
+## <a name="sorting-content-lists"></a>Tartalmi listák rendezése
 
-A tartalmakat a nevük vagy a tulajdonosuk alapján is rendezheti. Vegye figyelembe a **Név** elem jobb oldalán a felfelé mutató nyilat. Jelenleg 83 elemet rendezünk név szerinti betűrendes növekvő sorrendben. Ha a rendezési sorrendet csökkenőre kívánja állítani, válassza a **Név** elemet. A felfelé mutató nyíl lefelé mutatóra vált.
+Ha csak kevés tartalommal rendelkezik, a rendezés nem feltétlenül szükséges.  De ha irányítópultok és jelentések hosszú listájával dolgozik, akkor a rendezést érdemes használni. Ez a **Velem megosztva** tartalomlista például 63 elemet tartalmaz. 
 
-![tartalom rendezése](./media/end-user-experience/power-bi-sort-new.png)
+![velem megosztva tartalomlista](./media/end-user-search-sort/power-bi-long-lists.png)
+
+A lista jelenleg dátum szerint van rendezve a legújabbtól a legrégebbiig. A rendezési feltételek módosításához válassza a **Dátum (legújabb)** jobb oldalán található nyilat.
+
+![Rendezés legördülő listája](./media/end-user-search-sort/power-bi-sort-date.png)
+
+
+A rendezés a munkaterületeken is elérhető. Ebben a példában a tartalom **Frissítési dátum** szerint van rendezve. A munkaterületek rendezési feltételeinek megadásához jelölje ki az oszlopfejléceket, majd egyszeri kijelöléssel válassza ki az adott fejlécet, a rendezés irányának módosításához pedig válassza ki újra. 
+
+![jelentés keresése](./media/end-user-search-sort/power-bi-workspace-sort.png)
 
 Nem minden oszlop rendezhető. Vigye az egeret az oszlopok fejlécére, hogy lássa, melyeknél érhető el a rendezés.
-
-___________________________________________________________________
-## <a name="navigation-using-the-nav-pane"></a>Navigálás a navigációs panellel
-A navigációs panel úgy osztályozza a tartalmakat, hogy könnyen és gyorsan megtalálja a szükséges elemeket.  
-
-![navigációs panel](./media/end-user-search-sort/power-bi-nav pane.png)
-
-
-- Az Önnel megosztott tartalmak a **Velem megosztva** tárolóban érhetők el.
-- A legutóbb megtekintett tartalmak a **Legutóbbi** területen érhetők el. 
-- Az alkalmazásokat az **Alkalmazások** elemre kattintva találhatja meg.
-- A **Kezdőlap** a legfontosabb tartalmak, a javasolt tartalmak és a tanulási források egyetlen oldala.
-
-Emellett [kedvencként](end-user-favorite.md) és [kiemeltként](end-user-featured.md) is megjelölhet tartalmakat. Válassza ki a várhatóan leggyakrabban megtekintett irányítópultot vagy jelentést, és állítsa be *kiemelt* tartalomként. A Power BI szolgáltatás megnyitásakor először mindig a kiemelt irányítópult jelenik meg. Vannak gyakran használt irányítópultjai és alkalmazásai? Ha kedvencként állítja be őket, mindig elérhetőek lesznek a navigációs panelen.
-
-![Kedvencek úszó menü](./media/end-user-search-sort/power-bi-favorite.png).
-
 
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás

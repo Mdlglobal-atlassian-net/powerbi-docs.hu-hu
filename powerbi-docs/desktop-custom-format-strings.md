@@ -10,10 +10,10 @@ ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 3ec372a51177e5979cdfbca8408e11801aefb414
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74791596"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Egyéni formázó sztringek használata a Power BI Desktopban
@@ -143,9 +143,9 @@ Az alábbi táblázat a **felhasználó által megadott numerikus formátumokban
 | ( **:** ) | Időelválasztó. Bizonyos területi beállítások más karaktereket használhatnak az időérték részeinek elválasztására. Az időelválasztó az időértékek formázásakor választja el az órák, percek és másodpercek számát. A formázott kimenetben ténylegesen megjelenő időelválasztót a rendszerbeállítások határozzák meg. |
 | ( **/** ) | Dátumelválasztó. Bizonyos területi beállítások más karaktereket használhatnak az dátumérték részeinek elválasztására. A dátumelválasztó a dátumértékek formázásakor választja el a napok, hónapok és évek számát. A formázott kimenetben ténylegesen megjelenő dátumelválasztót a rendszerbeállítások határozzák meg. |
 | ( **E- E+ e- e+** ) | Tudományos formátum. Ha a formázó kifejezés legalább egy számjegy-helyőrzőt ( **0**  vagy  **#** ) tartalmaz az E-, E+, e- vagy e+ kódtól jobbra, akkor a szám tudományos formátumban lesz megjelenítve, és az E vagy az e jel a szám és a kitevő közé lesz beszúrva. A jobb oldali számjegy-helyőrzők száma a kitevő számjegyeinek számát határozza meg. Az E- vagy e- használatával mínuszjel helyezhető el a negatív kitevők mellett. Az E+ vagy e+ használatával mínuszjel helyezhető el a negatív kitevők, és pluszjel a pozitív kitevők mellett. |
-| **- + $**  ( ) | Literál karaktert jelenít meg. Az itt fel nem sorolt karakter megjelenítéséhez fordított perjelet (\) írhat elé, vagy kettős idézőjelek közé zárhatja (&quot; &quot;) azokat. |
+| **- + $**  ( ) | Literál karaktert jelenít meg. Az itt fel nem sorolt karakterek megjelenítéséhez fordított perjelet (\)) írhat eléjük, vagy egyenes idézőjelek (&quot; &quot;) közé zárhatja azokat. |
 | ( * *\** ) | A formázó sztring következő karakterét jeleníti meg. Olyan karakter megjelenítéséhez, amely literál karakterként külön jelentéssel bír, helyezzen el előtte egy fordított perjelet (\). Maga a fordított perjel nem jelenik meg. A fordított perjel hatása ugyanaz, mintha a következő karaktert kettős idézőjelek közé zárná. Fordított perjel megjelenítéséhez használjon két fordított perjelet (\\). Literál karakterekként nem megjeleníthető karakterek például a dátumformázási és időformázási karakterek (a, c, n, ó, p, m, h, q, s, t, w, é, /, és :), a számformázási karakterek (#, 0, %, E, e, vessző és pont) és a sztringformázási karakterek (@, &amp;, \&lt;, \&gt;, és !). |
-| (&quot;ABC&quot;) | A kettős idézőjelek (&quot; &quot;) közötti szöveget jeleníti meg. |
+| (&quot;ABC&quot;) | Az idézőjelek (&quot; &quot;) közötti szöveget jeleníti meg. |
 
 
 ## <a name="next-steps"></a>Következő lépések

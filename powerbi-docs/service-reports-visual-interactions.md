@@ -7,15 +7,15 @@ featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 2485d9120b10b41d193189de383a1a92b15378d5
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 116ff1df7ddc75df79e6f2f28296543449498599
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74011066"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894717"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Vizualizációk Power BI-jelentésen belüli működésének módosítása
 Ha rendelkezik szerkesztési engedéllyel a jelentéshez, akkor a **Vizualizáció-interakciókkal** határozhatja meg, hogy a jelentésoldal vizualizációi milyen hatással legyenek egymásra. 
@@ -52,7 +52,7 @@ Ha szerkesztési engedélyekkel rendelkezik egy jelentéshez, bekapcsolhatja a v
 
         ![Vizualizáció-interakciók legördülő lista](media/service-reports-visual-interactions/power-bi-service.png)
 
-3. Ha meg szeretné jeleníteni a vizualizáció-interakciók vezérlőit, válassza az **Interakciók szerkesztése** lehetőséget. A Power BI a jelentésoldal összes többi vizualizációjához szűrési és kiemelési ikonokat ad hozzá. Most már módosíthatja, hogyan hasson kölcsön a kijelölt vizualizáció a jelentésoldal többi vizualizációjával.
+3. Ha meg szeretné jeleníteni a vizualizáció-interakciók vezérlőit, válassza az **Interakciók szerkesztése** lehetőséget. A Power BI a jelentésoldal összes többi vizualizációjához szűrési és kiemelési ikonokat ad hozzá. Láthatjuk, hogy a faszerkezetes térkép keresztszűrést végez a diagramra és a térképre, és keresztkiemelést végez az oszlopdiagramra. Most már módosíthatja, hogyan hasson kölcsön a kijelölt vizualizáció a jelentésoldal többi vizualizációjával.
    
     ![jelentés a bekapcsolt Vizualizációk interakcióival](media/service-reports-visual-interactions/power-bi-turn-on.png)
 
@@ -61,25 +61,32 @@ Ha szerkesztési engedélyekkel rendelkezik egy jelentéshez, bekapcsolhatja a v
 A vizualizációk közötti interakciók megismeréséhez egyesével kijelölheti a vizualizációkat a jelentésoldalon.  Jelöljön ki egy adatpontot, sávot vagy alakzatot, és figyelje meg ennek a többi vizualizációra gyakorolt hatását. Ha a megfigyelt viselkedés nem az, amit Ön szeretne, módosíthatja az interakciókat. Ezek a módosítások mentve lesznek a jelentéssel, így Ön és a jelentés felhasználói a vizualizációk azonos interakcióit tapasztalhatják.
 
 
-Adja meg, hogy a **kijelölt vizualizáció** milyen hatással legyen a többire.  Ha szeretné, ezt megismételheti a jelentés oldalának minden vizualizációjával.
+Először aktiváljon egy vizualizációt annak kijelölésével.  Figyelje meg, hogy a lapon lévő összes többi vizualizáció most interakciós ikonokat jelenít meg. A félkövérrel szedett ikon van alkalmazva. Következő lépésként adja meg, hogy a **kijelölt vizualizáció** milyen hatással legyen a többire.  Ha szeretné, ezt megismételheti a jelentés oldalának minden vizualizációjával.
+
+Hogy a kiválasztott vizualizációnak a következőket kell-e tennie:
    
-   * Ha keresztszűrést szeretne megadni, kattintson a **szűrő** ikonra ![szűrő ikon](media/service-reports-visual-interactions/power-bi-filter-icon.png).
-   * Ha keresztkiemelést szeretne megadni, kattintson a **kiemelés** ikonra ![kiemelés ikon](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
-   * Ha nem szeretne hatást megadni, kattintson a **nincs hatás** ikonra ![nincs hatás ikon](media/service-reports-visual-interactions/power-bi-no-impact.png).
+   * az oldalon található egyéb vizualizációk egyikének szűréséhez válassza a vizualizáció jobb felső sarkában lévő **szűrő** ikont ![szűrő ikon](media/service-reports-visual-interactions/power-bi-filter-icon.png).
+   * az oldalon található másik vizualizáció keresztkiemeléséhez válassza a **kiemelés** ikont ![kiemelés ikon](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
+   * ne legyen hatása az oldalon található vizualizációk egyikére, akkor válassza a **nincs hatás** ikont ![nincs hatás ikon](media/service-reports-visual-interactions/power-bi-no-impact.png).
 
 ## <a name="change-the-interactions-of-drillable-visualizations"></a>Lefúrásra alkalmas vizualizációk interakcióinak módosítása
 [Bizonyos Power BI-vizualizációkon lefúrás végezhető](consumer/end-user-drill.md). Egy vizualizáción végzett lefúrás alapértelmezés szerint nem befolyásolja a jelentésoldalon lévő többi vizualizációt. Ez a viselkedés azonban módosítható. 
-
-1. A lefúrásra alkalmas vizualizáció aktiválásához jelölje ki azt. 
 
 > [!TIP]
 > Próbálja ki Ön is az [Emberi erőforrások minta PBIX-fájl](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix) használatával. Ebben van egy lefúrást tartalmazó oszlopdiagram az **Újonnan felvett alkalmazottak** lapon.
 >
 
+1. A lefúrásra alkalmas vizualizáció aktiválásához jelölje ki azt. 
+
+2. A lehatolás bekapcsolásához válassza a lehatolás ikont.
+
+    ![lehatolás bekapcsolása](media/service-reports-visual-interactions/power-bi-drill-down.png)
 
 2. A menüsávon válassza a **Formázás** > **A lefúrás szűri a többi vizualizációt** menüpontot.  Ha most egy vizualizációt részletesen elemez, akkor a jelentésoldal többi vizualizációja is változik majd, és tükrözi az aktuális elemzési kiválasztást. 
 
-    ![a lefúrás szűri a többi vizualizációt beállítás bekapcsolása](media/service-reports-visual-interactions/power-bi-drill.png).
+    ![a lefúrás szűri a többi vizualizációt beállítás bekapcsolása](media/service-reports-visual-interactions/power-bi-drill.png)
+
+3. Ha a megfigyelt viselkedés nem az, amit Ön szeretne, módosíthatja az interakciókat [a fent leírtak szerint](#change-the-interaction-behavior).
     
 ## <a name="next-steps"></a>Következő lépések
 [Szűrés és kiemelés Power BI-jelentésekben](power-bi-reports-filters-and-highlighting.md)

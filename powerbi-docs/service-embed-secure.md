@@ -1,20 +1,20 @@
 ---
 title: Jelentés beágyazása egy biztonságos portálon vagy webhelyen
 description: A Power BI jelentések beágyazását lehetővé tevő funkciója lehetővé teszi, hogy a felhasználók könnyen és biztonságosan ágyazzanak be jelentéseket belső webportálokon.
-author: rkarlin
-ms.author: rkarlin
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: d4495a2021f008326d76c7fd9ff686d639827e90
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: f4da9179ef140fd254939a4121e91dd032269c98
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565761"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913610"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Jelentés beágyazása egy biztonságos portálon vagy webhelyen
 
@@ -129,7 +129,11 @@ Tetszőleges számú gombot hozzáadhat, így alacsony kódigényű megoldást k
 
 * Egyes böngészőkben előfordulhat, hogy frissíteni kell a lapot a bejelentkezést követően, kifejezetten InPrivate vagy inkognitó módban való használatkor.
 
-* Egyszeri bejelentkezéses használathoz használja a Beágyazás SharePoint Online-ban lehetőséget, vagy fejlesszen egyéni integrációt a [felhasználó az adatok tulajdonosa](developer/embed-sample-for-your-organization.md) beágyazási módszerrel. 
+* Problémák merülhetnek fel, ha nem támogatott böngészőverziókat használ. A Power BI az [alábbi böngészőket támogatja](power-bi-browsers.md).
+
+* A klasszikus SharePoint-kiszolgáló nem támogatott, mivel az Internet Explorer 11-nél korábbi verzióját igényli, vagy engedélyezni kell hozzá a kompatibilitási nézet módot.
+
+* Egyszeri bejelentkezéses használathoz használja a [Beágyazás SharePoint Online-ban](service-embed-report-spo.md) lehetőséget, vagy fejlesszen egyéni integrációt a [felhasználó az adatok tulajdonosa](developer/embed-sample-for-your-organization.md) beágyazási módszerrel. 
 
 * A **Beágyazás** lehetőség automatikus hitelesítés funkciója nem működik a Power BI JavaScript API-jával. A Power BI JavaScript API-hoz a [felhasználó az adatok tulajdonosa](developer/embed-sample-for-your-organization.md) beágyazási módszert kell használnia. 
 

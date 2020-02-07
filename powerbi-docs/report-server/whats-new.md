@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/23/2020
-ms.openlocfilehash: 9b7ea090d7860de9ec4132b070bd1286085cc5f3
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.openlocfilehash: d4e233e55731d77d4136c1b6ef1e341a2d043234
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819560"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026715"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló újdonságai
 
@@ -160,7 +160,7 @@ Az Azure Active Directory Application Proxy használata esetén nem kell saját 
 
 #### <a name="custom-headers"></a>Egyéni fejlécek
 
-Fejlécértékeket állíthat be a reguláris kifejezéssel megadott mintázatnak megfelelő összes URL-címhez. A felhasználók érvényes XML használatával módosíthatják az egyéni fejléc értékét a kijelölt kérés-URL-címek fejléc-értékének beállításához. A rendszergazdák tetszőleges számú fejlécet felvehetnek az XML-be. Részletesebb információt a Reporting Services **kiszolgálótulajdonságok speciális lapját** ismertető cikk [Egyéni fejlécek](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#custom-headers) szakaszában talál.
+Fejlécértékeket állíthat be a reguláris kifejezéssel megadott mintázatnak megfelelő összes URL-címhez. A felhasználók érvényes XML használatával módosíthatják az egyéni fejléc értékét a kijelölt kérés-URL-címek fejléc-értékének beállításához. A rendszergazdák tetszőleges számú fejlécet felvehetnek az XML-be. Részletesebb információt a Reporting Services **kiszolgálótulajdonságok speciális lapját** ismertető cikk [Egyéni fejlécek](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customheaders) (CustomHeaders) szakaszában talál.
 
 #### <a name="transparent-database-encryption"></a>Transzparens adatbázis-titkosítás
 

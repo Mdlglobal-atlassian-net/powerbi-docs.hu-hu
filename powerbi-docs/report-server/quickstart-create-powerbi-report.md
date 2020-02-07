@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 02/03/2020
 ms.author: maggies
-ms.openlocfilehash: cfb83ae8b005744098261c6973a87fb929a864dd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 69ebfa9b1d2ef500b388a1bbb57926dc53ff2607
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858952"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76975010"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI-jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz
 A Power BI-jelentéseket helyszínen is tárolhatja és kezelheti a Power BI jelentéskészítő kiszolgáló webportálján, illetve tárolhatja őket a felhőbeli Power BI szolgáltatásban (https://powerbi.com) ). A jelentéseket a Power BI Desktopban hozhatja létre, majd közzéteheti a webportálon. Ekkor a jelentések megtekinthetővé válnak a cégen belüli olvasók számára egy böngésző vagy egy Power BI-mobilalkalmazás használatával.
@@ -90,6 +90,9 @@ A kész jelentést mentse a 2. lépésben kiválasztott Power BI jelentéskész�
 2. Most már megtekintheti a jelentést a webportálon.
    
     ![A jelentés megtekintése a webportálon](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
+    
+> [!NOTE]
+> Ha a későbbiekben módosítja a jelentést, az asztalon megjelenő jelentésadatok mindig a jelentés első létrehozásakor gyorsítótárazott adatok lesznek.  Ha a jelentés szerkesztésekor a legfrissebb adatokat szeretné megtekinteni, frissítenie kell az adatokat a Power BI Desktop alkalmazásban.
 
 ## <a name="next-steps"></a>Következő lépések
 ### <a name="power-bi-desktop"></a>Power BI Desktop
