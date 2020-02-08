@@ -7,19 +7,44 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/25/2019
-ms.openlocfilehash: ef85aea957ec470b348676b553248f30d3bf8532
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/27/2020
+ms.openlocfilehash: 993d83e15eafa0e40938eee13cbeabec75389f47
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73874271"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819537"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
 Ez a változásnapló a Power BI jelentéskészítő kiszolgálóra vonatkozik, és minden kiadott buildhez felsorolja az új elemeket és hibajavításokat.
 
 Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonságai](whats-new.md) című cikkből tájékozódhat. 
+
+
+## <a name="january-2020"></a>2020. január
+- **Power BI jelentéskészítő kiszolgáló**
+    - *Verzió: 1.6.7327.3007 (Build 15.0.1102.759), Kiadás dátuma: 2020. január 23.*
+         - Funkciók
+            -  Exportálás Excelbe Power BI-jelentésekből.
+           -  Power BI Premium-adathalmazok támogatása többoldalas jelentésekhez.
+           -  AltText (helyettesítő szöveg) támogatása többoldalas jelentések elemeihez.
+           -  Egyéni fejlécek támogatása.
+           -  Az Azure SQL felügyelt példányainak támogatása katalógusként.
+           -  Transzparens adatbázis-titkosítás a katalógushoz.
+        - Biztonsági frissítések
+        - Hibajavítások
+            - Javítások a képernyőolvasók, a jelentések renderelése és a billentyűzetes navigálás kisegítő lehetőségeihez.
+            - Javítás a több bájtos jelentések címeihez.
+            - Javítás a jelentéskészítő kiszolgáló megbízhatóságát érintő részletes naplózáshoz.
+          - Javítás az élő adatok biztosításához a Power BI-jelentésekben mobileszközön.
+          - Javítás a több vizualizációra kiterjedő kiemeléshez a szűrt exportált Power BI-jelentésekhez.
+          - Javítás lábléc írásához a Wordbe való exportáláskor kifejezések láthatóságához többoldalas jelentéseknél. 
+     
+- **Power BI Desktop (a Power BI jelentéskészítő kiszolgálóra optimalizálva)**
+    - *Verzió: 2.76.5678.1521 (2020. január), Kiadás dátuma: 2020. január 23.* (új build és verzió)
+        - A Power BI jelentéskészítő kiszolgálóval (2020. január) való kapcsolathoz szükséges módosításokat tartalmaz        
+
 
 ## <a name="september-2019"></a>2019. szeptember
 - **Power BI jelentéskészítő kiszolgáló**

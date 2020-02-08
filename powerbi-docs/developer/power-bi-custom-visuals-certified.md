@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2019
-ms.openlocfilehash: 04954397a16fecddabca63067c903dee742873ef
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: 4ffab3913560498dd57103f0a25c39f7a03a42ec
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925577"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026669"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Power BI-vizualizáció minősíttetése
 
@@ -45,7 +45,7 @@ Habár nem kell nyilvánosan megosztania a kódot a GitHubon, a Power BI csapata
 
 A tárház csak egy Power BI-vizualizáció kódját tartalmazhatja. Nem tartalmazhatja több Power BI-vizualizáció kódját, vagy nem kapcsolódó kódot.
 
-A tárháznak tartalmaznia kell egy **certification** (minősítés) nevű ágat. Az ebben az ágban található forráskódnak meg kell egyeznie a beküldött csomaggal. Ezt a kódot csak a következő beküldési folyamat során lehet frissíteni, ha újra beküldi a Power BI-vizualizációt.
+A tárháznak tartalmaznia kell egy **certification** (minősítés) nevű ágat (kisbetűs írást kell használnia). Az ebben az ágban található forráskódnak meg kell egyeznie a beküldött csomaggal. Ezt a kódot csak a következő beküldési folyamat során lehet frissíteni, ha újra beküldi a Power BI-vizualizációt.
 
 Ha a Power BI-vizualizáció privát NPM-csomagokat vagy git-almodulokat használ, hozzáférést kell biztosítania az ezen kódot tartalmazó további adattárakhoz.
 
