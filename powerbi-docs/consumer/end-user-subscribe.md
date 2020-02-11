@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 01/30/2020
 rLocalizationGroup: Common tasks
-ms.openlocfilehash: a9339cc9f61a3a191e8783935c9ec38e119894e9
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 267a1e8b2f45198059e5acfcdf0233445babbd14
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099217"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888601"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Feliratkozás jelentésre vagy irányítópultra a Power BI szolgáltatásban 
 
@@ -31,41 +31,43 @@ Amikor e-mail érkezik, abban szerepel egy „ugrás a jelentésre vagy irányí
 
 
 ## <a name="requirements"></a>Követelmények
-Ha előfizetést szeretne **létrehozni** saját magának, ahhoz Power BI Pro-licencre van szükség. A Premium-munkaterületeken vagy -alkalmazásokban található tartalmat megtekintő felhasználók is feliratkozhatnak a tartalomra, akár Power BI Pro-licenc nélkül is. **Mások feliratkoztatása** csak az irányítópult tulajdonosa számára elérhető. 
+Ha előfizetést szeretne **létrehozni** saját maga számára, ahhoz egy bizonyos licenctípusra van szükség. Ha nem tud előfizetést létrehozni, forduljon a Power BI rendszergazdájához. **Mások feliratkoztatása** csak az irányítópult vagy a jelentés tulajdonosa számára érhető el. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Feliratkozás irányítópultra vagy jelentésoldalra
 Függetlenül attól, hogy irányítópultra vagy jelentésre iratkozik fel, a folyamat hasonló. Ugyanazzal a gombbal iratkozhat fel a Power BI szolgáltatás irányítópultjaira és jelentéseire.
  
-![Előfizetés ikon kiválasztása](./media/end-user-subscribe/power-bi-subscribe-orientation.png).
+![Előfizetés ikon kiválasztása](./media/end-user-subscribe/power-bi-subscribe.png).
 
 1. Nyissa meg az irányítópultot vagy a jelentést.
 2. A felső menüsávon válassza a **Feliratkozás** lehetőséget vagy a boríték ikont ![Feliratkozás ikon](./media/end-user-subscribe/power-bi-icon-envelope.png).
    
-   ![Feliratkozás ikon](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![Feliratkozás ablak](./media/end-user-subscribe/power-bi-emails-newest.png)
+
+   ![Feliratkozás ablak](./media/end-user-subscribe/power-bi-emails-numbered.png)
     
-    A bal oldali képernyő akkor jelenik meg, ha egy irányítópulton választja a **Feliratkozás** lehetőséget. A jobb oldali képernyő akkor jelenik meg, ha egy jelentésoldalon választja a **Feliratkozás** lehetőséget. Ha egy jelentésben több oldalra is fel szeretne iratkozni, válassza a **Másik előfizetés hozzáadása** lehetőséget, és válasszon ki egy másik oldalt. 
+    A bal oldali képernyő akkor jelenik meg, ha egy irányítópulton választja a **Feliratkozás** lehetőséget. A jobb oldali képernyő akkor jelenik meg, ha egy jelentésoldalon választja a **Feliratkozás** lehetőséget. 
+    
+    a. Ha egy jelentésben több oldalra is fel szeretne iratkozni, válassza a **Másik előfizetés hozzáadása** lehetőséget, és válasszon ki egy másik oldalt az oldal tetején a legördülő menüből.
 
-4. A feliratkozást a sárga csúszkával kapcsolhatja be és ki.  A csúszkával történő kikapcsolás nem törli a feliratkozást. A feliratkozás törléséhez válassza a kuka ikont.
+    b. A feliratkozást a sárga csúszkával kapcsolhatja be és ki.  A csúszkával történő kikapcsolás nem törli a feliratkozást. A feliratkozás törléséhez válassza a kuka ikont.
 
-5. Ha szeretné, az e-mail-üzenet tárgyát és részleteit is megadhatja. 
+    c. Ha szeretné, az e-mail-üzenet tárgyát és részleteit is megadhatja. 
 
-5. Válasszon **Gyakoriságot** feliratkozásához.  Napi, Heti, vagy Adatfrissítések utáni (Napi) gyakoriságot választhat.  Ha az e-mailt, amelyre feliratkozott, csak bizonyos napokon szeretné megkapni, válassza a **Heti** értéket, majd jelölje ki a napokat.  Ha például az e-mailt csak munkanapokon szeretné megkapni, válassza a **Heti** gyakoriságot, majd távolítsa el a jelölést a szombat és a vasárnap jelölőnégyzetéből.   
+    d. Válasszon **Gyakoriságot** feliratkozásához.  Napi, Heti, vagy Adatfrissítések utáni (Napi) gyakoriságot választhat.  Ha az e-mailt, amelyre feliratkozott, csak bizonyos napokon szeretné megkapni, válassza a **Heti** értéket, majd jelölje ki a napokat.  Ha például az e-mailt csak munkanapokon szeretné megkapni, válassza a **Heti** gyakoriságot, majd távolítsa el a jelölést a szombat és a vasárnap jelölőnégyzetéből.   
 
-6. Az e-mail küldésének időpontját úgy ütemezheti, hogy Napi vagy Heti gyakoriságot választ, majd **Ütemezett** **Időpontot** ad meg a feliratkozáshoz.  Ez a feliratkozási feladat kezdési időpontja. Bizonyos helyzetekben eltelhet néhány perc, amíg az e-mail megérkezik a Beérkezett üzenetek közé.    
+    e. Az e-mail küldésének időpontját úgy ütemezheti, hogy Napi vagy Heti gyakoriságot választ, majd **Ütemezett** **Időpontot** ad meg a feliratkozáshoz.  Ez a feliratkozási feladat kezdési időpontja. Bizonyos helyzetekben eltelhet néhány perc, amíg az e-mail megérkezik a Beérkezett üzenetek közé.    
 
-7. A kezdő és záró dátum a dátummezőkbe bevitt értékekkel ütemezhető. A feliratkozás kezdő dátuma alapértelmezés szerint a létrehozás napja, a záró dátum pedig egy évvel későbbi. Amikor egy feliratkozás záró dátuma elérkezik, a küldés leáll, amíg újra nem engedélyezi.  Az ütemezett záró dátum előtt értesítés(eke)t kap, amelyek rákérdeznek a kiterjesztésére.     
+    f. A kezdő és záró dátum a dátummezőkbe bevitt értékekkel ütemezhető. A feliratkozás kezdő dátuma alapértelmezés szerint a létrehozás napja, a záró dátum pedig egy évvel későbbi. Amikor egy feliratkozás záró dátuma elérkezik, a küldés leáll, amíg újra nem engedélyezi.  Az ütemezett záró dátum előtt értesítés(eke)t kap, amelyek rákérdeznek a kiterjesztésére.     
 
-8. Az előfizetés megtekintéséhez és kipróbálásához válassza a **Futtatás most** lehetőséget.  Ezzel azonnal elküldi az e-mailt magának. 
+    : Az előfizetés megtekintéséhez és kipróbálásához válassza a **Futtatás most** lehetőséget.  Ezzel azonnal elküldi az e-mailt magának. 
 
-8. Ha minden jónak látszik, az előfizetés mentéséhez válassza a **Mentés és bezárás** lehetőséget. Az beállított ütemezés szerint e-mailt fog kapni az irányítópult vagy jelentés pillanatképével. Minden olyan feliratkozás, amelynek gyakorisága **Adatfrissítések utáni**, csak az adott napi első ütemezett frissítés után küld e-mailt.
+3. Ha minden jónak látszik, az előfizetés mentéséhez válassza a **Mentés és bezárás** lehetőséget. Az beállított ütemezés szerint e-mailt fog kapni az irányítópult vagy jelentés pillanatképével. Minden olyan feliratkozás, amelynek gyakorisága **Adatfrissítések utáni**, csak az adott napi első ütemezett frissítés után küld e-mailt.
    
    ![az irányítópult e-mailes pillanatképe](media/end-user-subscribe/power-bi-subscribe-email.png)
    
-    A jelentésoldal frissítésével az adathalmaz nem frissül. Egy adathalmaz manuális frissítését csak annak tulajdonosa végezheti el. Az alapul szolgáló adathalmaz(ok) tulajdonosának nevét úgy keresheti meg, hogy a felső menüsávon található **Kapcsolódó megtekintése** elemet választja, vagy megkeresi az eredeti feliratkozási e-mailt.
+    A jelentésoldal frissítésével az adathalmaz nem frissül. Egy adathalmaz manuális frissítését csak annak tulajdonosa végezheti el. Az alapul szolgáló adathalmaz(ok) tulajdonosának nevét úgy keresheti meg, hogy a menüsávon található legördülő menüt választja, vagy megkeresi az eredeti feliratkozási e-mailt.
    
-    ![Kapcsolódó adatkészletek](./media/end-user-subscribe/power-bi-view-related-screen.png)
+    ![a tulajdonos megkeresése](./media/end-user-subscribe/power-bi-owner.png)
 
 
 ## <a name="manage-your-subscriptions"></a>Feliratkozások kezelése

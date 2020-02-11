@@ -1,6 +1,6 @@
 ---
-title: PDF-megjelenítési bővítmény megfelelősége az ISO 14289-1 szabványnak – Power BI jelentéskészítő kiszolgáló
-description: Ez a dokumentum a Power BI jelentéskészítő kiszolgáló és az SQL Reporting Services PDF-megjelenítési bővítményének ISO 14289-1 (PDF/UA) szabványnak való megfelelőségét ismerteti.
+title: PDF-megjelenítési bővítmény megfelelősége az ISO 14289-1 szabványnak – Power BI jelentéskészítő kiszolgáló és SSRS
+description: Ez a dokumentum a Power BI jelentéskészítő kiszolgáló és az SQL Server Reporting Services PDF-megjelenítési bővítményének ISO 14289-1 (PDF/UA) szabványnak való megfelelőségét ismerteti.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
@@ -8,18 +8,18 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: maggies
-ms.openlocfilehash: c800ee995bc3c03b3cbcda91503e6dea9495f6b5
-ms.sourcegitcommit: 721cf375627b010e8ad12c4c668295f38d450a17
+ms.openlocfilehash: bfefcef18b8cd92a5c3b15c2dcbd4653a6c7c9cd
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73638080"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819514"
 ---
-# <a name="pdf-rendering-extension-conformance-to-iso-14289-1---power-bi-report-server"></a>PDF-megjelenítési bővítmény megfelelősége az ISO 14289-1 szabványnak – Power BI jelentéskészítő kiszolgáló 
+# <a name="pdf-rendering-extension-conformance-to-iso-14289-1---power-bi-report-server--ssrs"></a>PDF-megjelenítési bővítmény megfelelősége az ISO 14289-1 szabványnak – Power BI jelentéskészítő kiszolgáló és SSRS
 
-A következőkre vonatkozik: Power BI jelentéskészítő kiszolgáló és SQL Reporting Services
+A következőkre vonatkozik: Power BI jelentéskészítő kiszolgáló és SQL Server Reporting Services (SSRS)
 
-Ez a dokumentum a Power BI jelentéskészítő kiszolgáló és az SQL Reporting Services PDF-megjelenítési bővítményének [ISO 14289-1 (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/) szabványnak való megfelelőségét ismerteti.
+Ez a dokumentum a Power BI jelentéskészítő kiszolgáló és az SQL Server Reporting Services PDF-megjelenítési bővítményének [ISO 14289-1 (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/) szabványnak való megfelelőségét ismerteti.
 
 > [!NOTE]
 > A dokumentumot a böngésző **Nyomtatás**, **Mentés PDF-ként** lehetőségével elmentheti és ki is nyomtathatja.

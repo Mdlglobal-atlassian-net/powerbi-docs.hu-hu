@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7d94c5d3531576cd36688591b55aaf4a49de51aa
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 924be90a8598c561a12ed87872bdfbd4681831c8
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831300"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889374"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Számítási feladatok konfigurálása egy Premium-kapacitásban
 
@@ -67,7 +67,7 @@ Az adathalmazok számítási feladat alapértelmezés szerint engedélyezve van,
 | **Köztes sorok maximális száma** | A DirectQuery által visszaadott köztes sorok maximális száma. Az alapértelmezett érték 1 000 000, a megengedett tartomány pedig 100 000-től 2 147 483 647-ig terjed. |
 | **Offline adathalmaz maximális mérete (GB)** | A memóriában lévő offline adathalmaz maximális mérete. Ez a tömörített méret a lemezen. Az alapértelmezett értéket a termékváltozat szabja meg, a megengedett tartomány pedig 0,1 GB-tól 10 GB-ig terjed. |
 | **Eredménysorok maximális száma** | A DAX-lekérdezés által visszaadott sorok maximális száma. Az alapértelmezett érték -1 (nincs korlát), a megengedett tartomány pedig 100 000-től 2 147 483 647-ig terjed. |
-| **Lekérdezés memóriakorlátja (%)** | Egy lekérdezésben vagy DAX-mértékben ideiglenes eredményekhez a kapacitásban felhasználható, rendelkezésre álló memória maximális százalékos aránya. |
+| **Lekérdezés memóriakorlátja (%)** | Az MDX- vagy DAX-lekérdezések végrehajtásához használható számítási feladatban rendelkezésre álló memória maximális százalékaránya. |
 | **Lekérdezés időkorlátja (másodpercben)** | A lekérdezés időtúllépéséig eltelt idő maximuma. Az alapértelmezett érték 3600 másodperc (1 óra). A 0 érték azt jelenti, hogy a lekérdezések lépik túl az időt. |
 | **Automatikus oldalfrissítés (előzetes verzió)** | A be- és kikapcsolás váltógomb a prémium szintű munkaterületeken lehetővé teszi a jelentések automatikus frissítését. |
 | **Minimális frissítési időköz** | Az oldalfrissítés minimálisan engedélyezett frissítési időköze, ha az automatikus oldalfrissítés be van kapcsolva. Az alapértelmezett érték öt perc, a minimálisan megengedett érték pedig egy másodperc. |
@@ -99,11 +99,17 @@ Vegye figyelembe, hogy ez a beállítás csak a DAX-lekérdezésekre, míg a [K�
 
 A beállítással szabályozhatja az erőforrás-igényes vagy rosszul megtervezett jelentések hatásait. Egyes lekérdezések és számítások olyan köztes eredményeket adhatnak vissza, amelyek sok memóriát fogyasztanak a kapacitáson. Ez a többi lekérdezés végrehajtásának nagyfokú lassulásához, továbbá a többi adatkészlet kapacitásból való kizárásához és memóriahiány okozta hibákhoz vezethet a kapacitás többi felhasználójánál.
 
-Ez a beállítás az adatfrissítésre és a jelentések előkészítésre való megjelenítésére vonatkozik. Az adatfrissítés az adatforrás adatainak frissítését és a lekérdezés frissítését egyaránt végrehajtja, hacsak nincs letiltva a lekérdezésfrissítés. Ha nincs letiltva a lekérdezésfrissítés, akkor ez a memóriakorlát az adott lekérdezésekre is érvényes. Az esetleges sikertelen lekérdezések hatására az ütemezett frissítés állapota hibásként jelenik meg akkor is, ha az adatfrissítés sikeres volt.
+Ez a beállítás vonatkozik minden DAX- és MDX-lekérdezésre, amelyeket Power BI-jelentések, Analyze Excel-jelentések, valamint más, az XMLA-végponton át csatlakozó eszközök hajtanak végre.
+
+Vegye figyelembe, hogy az adatfrissítési műveletek az irányítópult-csempék és a vizuális gyorsítótárak frissítésének részeként is végrehajthatnak DAX-lekérdezéseket, miután megtörtént az adatok frissítése az adathalmazban. Ezek a lekérdezések emiatt a beállítás miatt is meghiúsulhatnak, ami az adatfrissítési művelet hibás állapotúként történő megjelenítéséhez vezethet, még akkor is, ha az adathalmazban az adatok frissítése sikeres volt.
 
 #### <a name="query-timeout"></a>Lekérdezés időkorlátja
 
-Ezzel a beállítással hatékonyabban szabályozhatja a hosszan futó lekérdezéseket, aminek következtében előfordulhat, hogy a jelentések lassan töltődnek be a felhasználóknál. Ez a beállítás az adatfrissítésre és a jelentések előkészítésre való megjelenítésére vonatkozik. Az adatfrissítés az adatforrás adatainak frissítését és a lekérdezés frissítését egyaránt végrehajtja, hacsak nincs letiltva a lekérdezésfrissítés. Ha nincs letiltva a lekérdezésfrissítés, akkor ez az időtúllépési korlát az adott lekérdezésekre is érvényes.
+Ezzel a beállítással hatékonyabban szabályozhatja a hosszan futó lekérdezéseket, aminek következtében előfordulhat, hogy a jelentések lassan töltődnek be a felhasználóknál.
+
+Ez a beállítás vonatkozik minden DAX- és MDX-lekérdezésre, amelyeket Power BI-jelentések, Analyze Excel-jelentések, valamint más, az XMLA-végponton át csatlakozó eszközök hajtanak végre.
+
+Vegye figyelembe, hogy az adatfrissítési műveletek az irányítópult-csempék és a vizuális gyorsítótárak frissítésének részeként is végrehajthatnak DAX-lekérdezéseket, miután megtörtént az adatok frissítése az adathalmazban. Ezek a lekérdezések emiatt a beállítás miatt is meghiúsulhatnak, ami az adatfrissítési művelet hibás állapotúként történő megjelenítéséhez vezethet, még akkor is, ha az adathalmazban az adatok frissítése sikeres volt.
 
 Ez a beállítás egyetlen lekérdezésre vonatkozik, és nem az egy adatkészlet vagy jelentés frissítéséhez társított összes lekérdezés futtatásához szükséges időre. Tekintse meg a következő példát:
 
@@ -144,7 +150,7 @@ Az új számítási motor kihasználásához ossza külön adatfolyamokra az ada
 
 #### <a name="container-size"></a>Tároló mérete
 
-Adatfolyam frissítésekor az Adatfolyam számítási feladat az adatfolyam minden entitásához létrehoz egy tárolót. Minden tároló legfeljebb a **Tárolóméret beállításban megadott mennyiségű memóriát foglalhat el. Az alapértelmezett érték minden termékváltozathoz 700 MB. Ezt a beállítást a következő esetekben lehet érdemes módosítani:
+Adatfolyam frissítésekor az Adatfolyam számítási feladat az adatfolyam minden entitásához létrehoz egy tárolót. Minden tároló legfeljebb a Tárolóméret beállításban megadott mennyiségű memóriát foglalhat el. Az alapértelmezett érték minden termékváltozathoz 700 MB. Ezt a beállítást a következő esetekben lehet érdemes módosítani:
 
 - Az adatfolyamok frissítése túl sokáig tart, vagy időtúllépés miatt meghiúsul.
 - Az adatfolyam-entitások között számítási lépések, például összekapcsolás is szerepel.  

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fc663f34b5ed95502f84f3858cb54cdb42f6fead
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c182639e97bcaf272c656d2ee2e002e7470efc40
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860983"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888524"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Interakció vizualizációkkal jelentésekben, irányítópultokon és alkalmazásokban
 
@@ -37,7 +37,7 @@ Sok ilyen lehetőségnél az adminisztrátor vagy a *tervező* letilthatja azt, 
 
 
 > [!IMPORTANT]
-> Ám először ejtsünk szót a Q&A-ről. A Q&A a Power BI természetes nyelvi keresőeszköze. Ha természetes nyelv használatával ad meg egy kérdést, a Q&A egy vizualizáció formájában ad rá választ. A Q&A használatával a felhasználók saját vizualizációkat hozhatnak létre. Azonban a Q&A használatával létrehozott vizualizációk nem menthetők. Ha olyan konkrét információra kíváncsi az adatokkal kapcsolatban, amelyet a tervező kihagyott a jelentésből, vagy nem szerepel az irányítópulton, akkor jó megoldás a Q&A. A Q&A-vel kapcsolatban bővebben a [Q&A felhasználók számára készült](end-user-q-and-a.md) cikkében olvashat.
+> Ám először ejtsünk szót a Q&A-ről. A Q&A a Power BI természetes nyelvi keresőeszköze. Ha természetes nyelv használatával ad meg egy kérdést, a Q&A egy vizualizáció formájában ad rá választ. A Q&A használatával a felhasználók saját vizualizációkat hozhatnak létre menet közben. Azonban a Q&A használatával létrehozott vizualizációk nem menthetők. Ha olyan konkrét információra kíváncsi az adatokkal kapcsolatban, amelyet a tervező kihagyott a jelentésből, vagy nem szerepel az irányítópulton, akkor jó megoldás a Q&A. A Q&A-vel kapcsolatban bővebben a [Q&A felhasználók számára készült](end-user-q-and-a.md) cikkében olvashat.
 
 
 
@@ -45,13 +45,13 @@ Sok ilyen lehetőségnél az adminisztrátor vagy a *tervező* letilthatja azt, 
 |---------|---------|---------|--------|
 |[Megjegyzés hozzáadása a vizualizációhoz saját maga számára, vagy beszélgetés kezdeményezése a munkatársakkal a vizualizációról](end-user-comment.md).     |  igen       |   igen      |  nem  |
 |[Azon jelentés megnyitása és felderítése, ahol a vizualizáció létrejött](end-user-tiles.md).     |    igen     |   na      |  nem |
-|[A vizualizációra hatással lévő szűrők és szeletelők listájának megtekintése](end-user-report-filter.md).     |    nem     |   igen      |  igen |
+|[A vizualizációra hatással lévő szűrők és szeletelők listájának megtekintése](end-user-report-filter.md).     |    ha fókusz módban nyitja meg     |   igen      |  nem |
 |[Vizualizáció megnyitása és felderítése a Q&A-ben (ha a *tervező* a vizualizációt a Q&A használatával hozta létre)](end-user-q-and-a.md).     |   igen      |   na      |  na  |
 |[Vizualizáció létrehozása a Q&A-ben (feltáráshoz; menteni nem lehet)](end-user-q-and-a.md).     |   igen      |   ha a tervező Q&A-t adott hozzá a jelentéshez      |  igen  |
-|[Érdekes tények vagy trendek Power BI általi keresésének kérése](end-user-insights.md) a vizualizáció adataiban.  Ezeket az automatikusan létrehozott vizualizációkat *betekintéseknek* nevezzük.     |    igen     |  a teljes jelentéshez, nem pedig az egyes vizualizációkhoz       | nem   |
-|[Egyszerre csak egy vizualizáció megjelenítése a *fókusz* mód használatával](end-user-focus.md).     | igen        |   igen      | na  |
+|[Érdekes tények vagy trendek Power BI általi keresésének kérése](end-user-insights.md) a vizualizáció adataiban.  Ezeket az automatikusan létrehozott vizualizációkat *betekintéseknek* nevezzük.     |    igen, a csempék esetében    |  nem       | nem   |
+|[Egyszerre csak egy vizualizáció megjelenítése a *fókusz* mód használatával](end-user-focus.md).     | igen, a csempék esetében        |   igen, a vizualizációk esetében      | na  |
 |[A vizualizáció legutolsó frissítési időpontjának megkeresése](end-user-fresh.md).     |  igen       |    igen     | na  |
-|[Egyszerre csak egy vizualizáció megjelenítése keretek és navigációs panelek nélkül a *teljes képernyős* vagy *fókusz* mód használatával](end-user-focus.md).     |   igen      |  igen       | alapértelmezés szerint  |
+|[Egyszerre csak egy vizualizáció megjelenítése keretek és navigációs panelek nélkül a *teljes képernyős* mód használatával](end-user-focus.md).     |   igen      |  igen       | alapértelmezés szerint  |
 |[Nyomtatás](end-user-print.md).     |  igen       |   igen      | nem  |
 |[Részletes elemzés a vizualizáción vizualizációs szűrők hozzáadásával és módosításával.](end-user-report-filter.md)     |    nem     |   igen      | nem  |
 |Az egérmutató a vizualizáció fölé helyezése esetén további részletek és eszköztippek jelennek meg.     |    igen     |   igen      | igen  |
@@ -61,7 +61,7 @@ Sok ilyen lehetőségnél az adminisztrátor vagy a *tervező* letilthatja azt, 
 | Kiemelés vizualizációhoz adása. | nem  | igen  |  nem |
 | [Exportálás Excelbe.](end-user-export.md) | igen | igen | nem|
 | [Riasztás létrehozása](end-user-alerts.md), mellyel értesítést kap, ha az érték meghaladja a beállított küszöbértéket.  | igen  | nem  | nem |
-| [Az oldal többi vizualizációjának keresztszűrése és keresztkijelölése](end-user-report-filter.md).  | nem      | igen  | nem  |
+| [Az oldal többi vizualizációjának keresztszűrése és keresztkijelölése](end-user-report-filter.md).  | nem      | igen  | na |
 | [Hierarchiával rendelkező vizualizáció részletezése](end-user-drill.md).  | nem  | igen   | nem |
 
 ## <a name="next-steps"></a>Következő lépések

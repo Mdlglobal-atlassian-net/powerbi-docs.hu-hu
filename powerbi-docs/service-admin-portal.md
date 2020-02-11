@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: de745777a5ad6da1149328d9df92be9ecccfc181
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: c59f1c1653e3b1a506f342bffed6fa539dfe58b3
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885307"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76819583"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -203,11 +203,24 @@ Az alábbi képen azon üzenet látható, amely akkor jelenik meg, ha külső fe
 
 ### <a name="publish-to-web"></a>Webes közzététel
 
-A munkahelyi felhasználók a weben tehetnek közzé jelentéseket. [További információ](service-publish-to-web.md)
+A munkahelyi felhasználók a weben tehetnek közzé jelentéseket. [További információ](service-publish-to-web.md). Ezáltal a jelentés és az abban található adatok mindenki számára elérhetővé válnak a weben.
+
+> [!NOTE]
+> A Power BI rendszergazdájának engedélyeznie kell az új webes közzétételi beágyazási kódokat. A szervezetek rendelkezhetnek meglévő beágyazási kódokkal, az aktuálisan közzétett jelentéseket a [beágyazási kódok](service-admin-portal.md#embed-codes) oldalán tekintheti át.
 
 Az alábbi képen látható a **Fájl** menü egy jelentéshez, ha a **Webes közzététel** beállítás engedélyezve van.
 
-![Webes közzététel beállítás](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Közzététel a weben a fájl menüben](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+
+A **Webes közzététel** beállítás megadja azokat a beállításokat, amelyekhez a felhasználók létrehozhatnak beágyazási kódokat.
+
+![Webes közzététel beállítás](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+
+
+A felhasználóknak fel kell venniük a kapcsolatot a Power BI-rendszergazdával, hogy engedélyezze számukra beágyazási kód létrehozását, ha **A beágyazási kódok működési módjának kiválasztása** **Csak a meglévő beágyazási kódok engedélyezése**, a **Webes közzététel** pedig az **Engedélyezve** értékre van beállítva.
+
+![Webes közzétételi kérés](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
 
 A **Webes közzététel** beállításától függően a felhasználók különféle lehetőségeket láthatnak a felhasználói felületen.
 
@@ -449,7 +462,7 @@ A Power BI Embedded (A termékváltozat) beállításainak kezeléséről továb
 
 ## <a name="embed-codes"></a>Beágyazási kódok
 
-A rendszergazdák megnézhetik a bérlő számára generált beágyazási kódokat. A kódokat vissza is vonhatja, vagy törölheti. [További információ](service-publish-to-web.md)
+A rendszergazdák megnézhetik a bérlő számára generált beágyazási kódokat a jelentések nyilvános megosztásához. A kódokat vissza is vonhatja, vagy törölheti. [További információ](service-publish-to-web.md)
 
 ![Beágyazási kódok a Power BI felügyeleti portálon](media/service-admin-portal/embed-codes.png)
 

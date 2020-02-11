@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cfde935b2cec6e86b56b4f70865ff2d02b5ce27a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 90721b059958e59cfd74f9ba1d0d25617a7438e6
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75759199"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889282"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>A DirectQuery használata a Power BI Desktopban
 A *Power BI Desktop* használatával az adatforrásokhoz való kapcsolódáskor mindig importálhat egy másolatot az adatokról a Power BI Desktopba. Egyes adatforrások esetében egy alternatív módszer is használható: ha közvetlenül kapcsolódik az adatforráshoz a DirectQuery használatával.
@@ -55,9 +55,9 @@ A DirectQuery használata jelenleg néhány korlátozással jár:
 
 - Annak érdekében, hogy biztosítható legyen a háttéradatforrásra küldött lekérdezések elfogadható teljesítménye, a mértékekben megengedett DAX-kifejezésekre korlátozások vonatkoznak.
 
-- A DirectQuery használatával legfeljebb egymillió sornyi adat adható vissza. Ez a DirectQuery használatával visszaadott adathalmaz létrehozásához alkalmazott összesítéseket és számításokra nem vonatkozik. Csak a visszaadott sorokat érinti.
+- A DirectQuery használatával legfeljebb egymillió sornyi adat adható vissza, kivéve, ha Premium-kapacitást használ. Ez a DirectQuery használatával visszaadott adathalmaz létrehozásához alkalmazott összesítéseket és számításokra nem vonatkozik. Csak a visszaadott sorokat érinti. A Premium-kapacitások beállíthatják a maximális sorkorlátokat, amint az [ebben a bejegyzésben](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/) szerepel. 
 
-    Az adatforráson futó lekérdezéssel összesíthet például 10 millió sort. A lekérdezés a DirectQuery használatával pontosan visszaadja a Power BI-nak az összesítés eredményét, ha a visszaadott Power BI-adatok kevesebb, mint 1 millió sorból állnak. Ha a DirectQuery 1 milliónál több sort ad vissza, a Power BI hibát jelez.
+    Az adatforráson futó lekérdezéssel összesíthet például 10 millió sort. A lekérdezés a DirectQuery használatával pontosan visszaadja a Power BI-nak az összesítés eredményét, ha a visszaadott Power BI-adatok kevesebb, mint 1 millió sorból állnak. Ha a DirectQuery több mint 1 millió sort ad vissza, a Power BI hibajelzést ad (kivéve a Premium-kapacitásban, ha a sorok száma a rendszergazda által megadott korlát alatti).
 
 ## <a name="important-considerations-when-using-directquery"></a>Lényeges szempontok a DirectQuery használatához
 A DirectQuery használata során érdemes számításba vennie a következő három szempontot:

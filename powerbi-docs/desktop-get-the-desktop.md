@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/09/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 444a6978b0fcf841f0d0a3b2d50cc70062389cba
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 6c2c41221e4a199d6a5d3a800f3820746ef7389a
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75222042"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888362"
 ---
 # <a name="get-power-bi-desktop"></a>A Power BI Desktop beszerzése
 A Power BI Desktop használatával összetett lekérdezéseket, modelleket és az adatokat megjelenítő jelentéseket hozhat létre. A Power BI Desktop használatával adatmodelleket állíthat össze, jelentéseket hozhat létre és megoszthatja a munkáját a Power BI szolgáltatásba való közzététellel. A Power BI Desktop ingyenesen letölthető.
@@ -132,6 +132,8 @@ Használhatja az alábbi szintaktikai paramétereket is, amelyeket a *tulajdons�
 |INSTALLLOCATION     |A kívánt telepítési útvonal         |
 |LANGUAGE     |Területi beállításkód, például en-US, de-DE, pr-BR, hu-HU, az alkalmazás alapértelmezett nyelvének kikényszerítéséhez. Ha nem ad meg nyelvet, a Power BI Desktop a Windows operációs rendszer nyelvét jeleníti meg. Ezt a beállítást a **Beállítások** párbeszédpanelen módosíthatja.         |
 |REG_SHOWLEADGENDIALOG     |A 0 érték letiltja annak a párbeszédpanelnek a megjelenítését, amely a Power BI Desktopba való bejelentkezés előtt jelenne meg.         |
+|DISABLE_UPDATE_NOTIFICATION     |Az 1 érték letiltja a frissítési értesítéseket.         |
+
 
 A Power BI Desktop a következő beállításokkal és paraméterekkel futtatva például felhasználói felület nélkül, német nyelv használatával lesz telepítve: 
 

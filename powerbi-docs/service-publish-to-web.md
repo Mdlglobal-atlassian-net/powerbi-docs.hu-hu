@@ -1,20 +1,20 @@
 ---
 title: Webes közzététel a Power BI-ból
 description: A Power BI Webes közzététel lehetőségével egyszerűen ágyazhat be interaktív Power BI-vizualizációkat online, például blogbejegyzésekbe, weboldalakba, e-mailen vagy közösségi médián keresztül, bármilyen eszközön.
-author: rkarlin
-ms.author: rkarlin
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1fd640922f132f56a03b37ed59a6267a5af83d00
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 53cc311f2fb0bfa4ab876c80b81ee2a092c4fd8c
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311709"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913628"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Webes közzététel a Power BI-ból
 
@@ -39,20 +39,24 @@ A következő útmutató a **Webes közzététel** használatát ismerteti.
 1. Nyisson meg egy Ön által szerkeszthető jelentést a munkaterületén, majd válassza a **Fájl > Webes közzététel** lehetőséget.
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
+   
+2. Ha nem engedélyezték beágyazási kódok létrehozását, lépjen kapcsolatba a Power BI rendszergazdájával
 
-2. Olvassa el a párbeszédpanel tartalmát, majd válassza a **Beágyazási kód létrehozása** lehetőséget.
+   ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
+3. Olvassa el a párbeszédpanel tartalmát, majd válassza a **Beágyazási kód létrehozása** lehetőséget.
 
    ![PtW2](media/service-publish-to-web/publish_to_web2_ga.png)
 
-3. Olvassa el az itt megjelenő figyelmeztetést, és ellenőrizze, hogy az adatok szabadon beágyazhatók-e egy nyilvános weboldalba. Ha így van, válassza a **Közzététel** lehetőséget.
+4. Olvassa el az itt megjelenő figyelmeztetést, és ellenőrizze, hogy az adatok szabadon beágyazhatók-e egy nyilvános weboldalba. Ha így van, válassza a **Közzététel** lehetőséget.
 
    ![PtW3](media/service-publish-to-web/publish_to_web3_ga.png)
 
-4. Megjelenik egy hivatkozást tartalmazó párbeszédpanel. Ezt a hivatkozást elküldheti e-mailben, kódba (például iFrame-be) ágyazhatja, vagy közvetlenül beillesztheti egy weboldalra vagy blogba.
+5. Megjelenik egy hivatkozást tartalmazó párbeszédpanel. Ezt a hivatkozást elküldheti e-mailben, kódba (például iFrame-be) ágyazhatja, vagy közvetlenül beillesztheti egy weboldalra vagy blogba.
 
    ![PtW4](media/service-publish-to-web/publish_to_web4.png)
 
-5. Ha egy jelentéshez korábban már létrehozott beágyazási kódot, akkor a **Webes közzététel** választásakor nem jelennek meg a 2-4. lépésben ismertetett párbeszédpanelek. Helyettük a **Beágyazási kód** párbeszédpanel nyílik meg:
+6. Ha egy jelentéshez korábban már létrehozott beágyazási kódot, akkor a **Webes közzététel** választásakor nem jelennek meg a 2-4. lépésben ismertetett párbeszédpanelek. Helyettük a **Beágyazási kód** párbeszédpanel nyílik meg:
 
    ![PtW5](media/service-publish-to-web/publish_to_web5.png)
 
@@ -73,7 +77,7 @@ A következő táblázat a Megtekintési módokat és azok beágyazott megjelen�
 
 ## <a name="tips-and-tricks-for-iframe-height-and-width"></a>Tippek és trükkök az iFrame magasság- és szélesség-beállításaihoz
 
-Egy **webes közzétételi** beágyazási kód az alábbihoz hasonló:
+A **webes közzétételi** beágyazási kód az alábbi példához hasonló:
 
 ![PtW7](media/service-publish-to-web/publish_to_web7.png)
  
@@ -141,16 +145,27 @@ A Power BI szolgáltatás adatforrásainak és jelentéseinek túlnyomó többs�
 
 ## <a name="tenant-setting"></a>Bérlőbeállítások
 
-A Power BI-rendszergazdák engedélyezhetik vagy letilthatják a **Webes közzététel** funkciót. A hozzáférést adott csoportokra is korlátozhatják, amely befolyásolhatja az Ön lehetőségeit beágyazási kód létrehozására.
+A **Webes közzététel** beállítás megadja azokat a beállításokat, amelyekhez a felhasználók létrehozhatnak beágyazási kódokat.
+
+![Webes közzététel beállítás](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+
+A rendszer kérni fogja a Power BI-rendszergazdával való kapcsolatfelvételt beágyazási kód létrehozásához, ha **A beágyazási kódok működési módjának kiválasztása** **Csak a meglévő beágyazási kódok engedélyezése** a **Webes közzététel** pedig az **Engedélyezve** értékre van beállítva.
+
+![Webes közzétételi kérés](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
+A Power BI-rendszergazdák engedélyezhetik vagy letilthatják a **Webes közzététel** funkciót. A hozzáférést adott csoportokra is korlátozhatják, amely befolyásolhatja az Ön lehetőségeit beágyazási kód létrehozására. A **Webes közzététel** beállításától függően a felhasználók különféle lehetőségeket láthatnak a felhasználói felületen.
 
 |Funkció |A teljes cég számára engedélyezve |A teljes cég számára letiltva |Speciális biztonsági csoportok   |
 |---------|---------|---------|---------|
 |A **Webes közzététel** parancs egy jelentés **Fájl** menüjében|Mindenki számára engedélyezve|Nem mindenki számára látható|Csak az arra jogosult felhasználók vagy csoportok láthatják.|
 |A **Beágyazási kódok kezelése** funkció a **Beállítások** közt|Mindenki számára engedélyezve|Mindenki számára engedélyezve|Mindenki számára engedélyezve.<br><br>* A **Törlés** parancsot csak az arra jogosult felhasználók vagy csoportok érik el.<br>* A **Kód lekérése** mindenki számára engedélyezve van.|
-|**Beágyazási kódok** a felügyeleti portálon|Az állapot a következő értékeket jelenítheti meg:<br>* Aktív<br>* Nem támogatott<br>* Blokkolva|Az állapot **Letiltva** lesz|Az állapot a következő értékeket jelenítheti meg:<br>* Aktív<br>* Nem támogatott<br>* Blokkolva<br><br>Ha egy felhasználónak nincs megfelelő jogosultsága a bérlői beállítások alapján, akkor az állapot **Megsértve** lesz.|
+|**Beágyazási kódok** a felügyeleti portálon|Az állapot a következők egyike lehet:<br>* Aktív<br>* Nem támogatott<br>* Blokkolva|Az állapot **Letiltva** lesz|Az állapot a következők egyike lehet:<br>* Aktív<br>* Nem támogatott<br>* Blokkolva<br><br>Ha egy felhasználónak nincs megfelelő jogosultsága a bérlői beállítások alapján, akkor az állapot **Megsértve** lesz.|
 |Meglévő közzétett jelentések|Minden engedélyezve|Minden letiltva|A jelentések továbbra is megjelennek mindenki számára.|
 
 ## <a name="understanding-the-embed-code-status-column"></a>A beágyazási kód állapota oszlop ismertetése
+
+>[!Note]
+>Rendszeresen tekintse át a közzétett beágyazási kódokat, és távolítsa el azokat, amelyeknek már nem szükséges nyilvánosan elérhetőnek lenniük. 
 
 A **Beágyazási kódok kezelése** oldal tartalmaz egy állapotoszlopot. A beágyazási kódok alapértelmezés szerint **aktívak**, de az alább felsorolt állapotok valamelyikében is lehetnek.
 
@@ -178,7 +193,7 @@ A **Webes közzétételt** csak Microsoft Power BI-felhasználók használhatjá
 
 Amikor a **Webes közzététel** használatával beágyazott kódot állít elő, akkor a jelentés láthatóvá válik az internetes felhasználók számára. Nyilvánosan elérhető, tehát számítani lehet rá, hogy a megtekintői egyszerűen meg tudják majd osztani a jelentést a közösségi médiában. Amikor a felhasználók a közvetlen nyilvános URL-cím megnyitásával vagy egy weboldalba vagy blogba beágyazottan megtekintik a jelentést, akkor a Power BI gyorsítótárazza a jelentés definícióját és a jelentés megtekintéséhez szükséges lekérdezések eredményeit. Ez biztosítja, hogy egyidejűleg felhasználók ezrei tekinthessék meg a jelentést a teljesítmény romlása nélkül.
 
-A gyorsítótár hosszú ideig megőrzi a tartalmát, ezért ha Ön módosítja a jelentés definícióját (ha például megváltoztatja a megtekintési módját), akkor a módosítások körülbelül egy óra elteltével lesznek láthatók a jelentésnek a felhasználók által megtekintett verziójában. Éppen ezért ajánlott előre elkészíteni a munkáját, és a **Webes közzétételi** beágyazási kódot csak akkor létrehozni, amikor már elégedett a beállításokkal.
+A gyorsítótár hosszú ideig megőrzi a tartalmát, ezért ha Ön módosítja a jelentés definícióját (ha például megváltoztatja a megtekintési módját), vagy frissíti a jelentés adait, akkor a módosítások körülbelül egy óra elteltével lesznek láthatók a jelentés felhasználók által megtekintett verziójában. Éppen ezért ajánlott előre elkészíteni a munkáját, és a **Webes közzétételi** beágyazási kódot csak akkor létrehozni, amikor már elégedett a beállításokkal.
 
 ## <a name="next-steps"></a>Következő lépések
 

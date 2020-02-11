@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b1ce8644decb758775c0bbff87df7975a64692a2
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: 53940737f71e04fbf5bccd9520a749f6fc559db9
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886113"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889236"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>SQL Server Reporting Services-jelentések migrálása a Power BI-ba
 
@@ -104,6 +104,8 @@ A következő SSRS-elemtípusok azonban nem migrálhatók a Power BI-ba:
 
 Ha az RDL-jelentései olyan funkciókra alapulnak, amelyeket [még nem támogatnak a Power BI lapszámozott jelentései](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi), akkor ezeket [Power BI-jelentésekként](../consumer/end-user-reports.md) újrafejlesztheti. Még ha migrálhatók is az RDL-jelentései, javasoljuk, hogy Power BI-jelentésekként modernizálja ezeket olyan esetekben, ahol ez hatékony.
 
+Ha az RDL-jelentésekben _helyszíni adatforrásokból_ kell lekérnie az adatokat, akkor nem használhat egyszeri bejelentkezést (SSO). Jelenleg az ezekből a forrásokból beolvasott adatok az _átjáró adatforrásának felhasználói fiókja_ biztonsági környezetében lesznek végrehajtva. SQL Server Analysis Services (SSAS) esetében nem lehetséges a sorszintű biztonság (RLS) felhasználónkénti kényszerítése.
+
 A Power BI lapszámozott jelentései általában **nyomtatáshoz** vagy **PDF-létrehozáshoz** vannak optimalizálva. A Power BI-jelentések **áttekintéshez és interaktivitáshoz** ideálisak. További információ: [Többoldalas jelentések használata a Power BI-ban](report-paginated-or-power-bi.md).
 
 ### <a name="prepare"></a>Előkészítés
@@ -116,6 +118,8 @@ A _előkészítési_ fázis célja, hogy minden készen álljon. Ismerteti a Pow
 1. Ismerje meg a Power BI megosztási funkcióit, és tervezze meg, hogyan fogja terjeszteni a tartalmat [Power BI-alkalmazások](../service-create-distribute-apps.md) közzétételével.
 1. Használjon [megosztott Power BI-adatkészleteket](../service-datasets-build-permissions.md) az SSRS megosztott adatforrásai helyett.
 1. A [Power BI Desktoppal](../desktop-what-is-desktop.md) fejlesszen mobilra optimalizált jelentéseket. Ehhez a [Power KPI egyéni vizualizációt](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) is használhatja az SSRS-mobiljelentések és KPI-k helyett.
+1. A **UserID** (Felhasználóazonosító) beépített mező használatának újraértékelése a jelentésekben. Ha a jelentés adatainak védelmekor a **UserID** mezőre hagyatkozik, akkor vegye figyelembe, hogy ez az oldalakra osztott jelentések (ha a Power BI szolgáltatásban tárolják) esetében az egyszerű felhasználónevet (UPN) adja vissza. Tehát az NT-fióknév, például az _AW\mblythe_ visszaadása helyett a beépített mező az _m.blythe&commat;adventureworks.com_ értékhez hasonlót fog visszaadni. Át kell néznie az adathalmaz definícióit és lehet, hogy még a forrásadatokat is. Az áttekintést és közzétételt követően javasoljuk a jelentések alapos tesztelését, hogy az adatengedélyek a várt módon működjenek.
+1. Az **ExecutionTime** (Végrehajtási idő) beépített mező használatának újraértékelése a jelentésekben. Az oldalakra osztott jelentések esetében (ha a Power BI szolgáltatásban tárolják), a beépített mező a dátum/idő értéket _egyezményes világidő (vagy UTC)_ értékként adja vissza. Ez hatással lehet a jelentésparaméterek alapértelmezett értékeire és a jelentés-végrehajtási időcímkékre (amelyeket általában a jelentés lábléceihez adnak hozzá).
 1. Győződjön meg arról, hogy a jelentéskészítők rendelkeznek a [Power BI Jelentéskészítővel](../report-builder-power-bi.md), és hogy a későbbi kiadások könnyen terjeszthetők a szervezeten belül.
 
 ## <a name="migration-stage"></a>Migrálási szakasz

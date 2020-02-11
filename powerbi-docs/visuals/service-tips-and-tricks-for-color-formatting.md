@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 006288cd380a56ba57697ed285b04b38985b69db
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 0b633f2482c5b9f1624f39e4f2c0e07afc55353f
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831647"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76895000"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tippek és trükkök a színformázáshoz a Power BI-ban
 A Power BI sokféle lehetőséget kínál, amelyekkel egyedivé tehetők az irányítópultok és a jelentések. Ez a cikk néhány olyan ötletet fejt ki részletesen, amelyek segítségével meggyőzőbb, érdekesebb és az Ön igényeinek jobban megfelelő Power BI-vizualizációkat készíthet.
@@ -23,13 +23,15 @@ A következő tippeket kínáljuk Önnek. Van egy másik remek ötlete? Nagyszer
 
 * Téma alkalmazása a teljes jelentésre
 * Egy adatpont színének módosítása
+* Feltételes formázás
 * Diagram színeinek meghatározása egy numerikus érték alapján
 * Adatpontok színének meghatározása egy mező értéke alapján
 * A színskála összeállításának testre szabása
 * Széttartó színskálák használata
+* Táblasorok kiszínezése
 * Művelet visszavonása a Power BI-ban
 
-Módosítások elvégzéséhez szerkesztenie kell a jelentést. Nyissa meg a jelentést, majd válassza a **Jelentés szerkesztése** lehetőséget a menüsávon, a következő képhez hasonlóan.
+Módosítások végrehajtásához szerkesztési engedélyekkel kell rendelkeznie a jelentéshez. A Power BI Desktopban nyissa meg a jelentést a **Jelentés** nézetben. A Power BI szolgáltatásban ez azt jelenti, hogy meg kell nyitnia a jelentést, és a **Szerkesztés** menüt kell választania a menüsávon, amint az a következő ábrán látható.
 
 ![a Szerkesztés menü helye](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-report.png)
 
@@ -47,7 +49,7 @@ Itt az **Innováció** témát alkalmaztuk az értékesítési és marketingjele
 ![Az Innováció téma alkalmazva](media/service-tips-and-tricks-for-color-formatting/power-bi-theme-innovate.png)
 
 ## <a name="change-the-color-of-a-single-data-point"></a>Egy adatpont színének módosítása
-Előfordul, hogy egy adott adatpontot szeretne kiemelni. Ez lehet egy újonnan bevezetett termék eladott mennyisége, vagy egy javuló minőségi mutató egy új program elindítása után. A Power BI-ban kiemelhet egy választott adatpontot a színe módosításával.
+Előfordul, hogy egy adott adatpontot szeretne kiemelni. Ez lehet egy újonnan bevezetett termék eladott mennyisége, vagy javuló minőségi mutató egy új program elindítása után. A Power BI-ban kiemelhet egy választott adatpontot a színe módosításával.
 
 Az alábbi vizualizáció egységeket rangsorol a termékszegmens szerint. 
 
@@ -55,7 +57,7 @@ Az alábbi vizualizáció egységeket rangsorol a termékszegmens szerint.
 
 Tegyük fel, hogy a **Kényelem** szegmens színes kiemelésével meg szeretné mutatni, hogy milyen jól teljesít az új szegmens. A lépések a következők:
 
-Bontsa ki az **Adatszínek** szakaszt, és kapcsolja be a csúszkát **Az összes megjelenítése** lehetőséghez. Így a vizualizáció összes adatelemének színe megjelenik. Módosítsa bármelyik adatpontot.
+Bontsa ki az **Adatszínek** kártyát, és kapcsolja be a csúszkát **Az összes megjelenítése** lehetőséghez. Így a vizualizáció összes adatelemének színe megjelenik. Most már módosítsa bármelyik adatpontot.
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
 
@@ -71,7 +73,7 @@ Egynél több, sőt akár az összes adatelem adatpontjának színe is megválto
 
 ![sávdiagram zöld, sárga és kék színű sávokkal](media/service-tips-and-tricks-for-color-formatting/power-bi-corporate.png)
 
-A színekkel sok mindent megtehet. A következő bekezdések a színátmenetekkel foglalkoznak.
+A színekkel sok mindent megtehet. A következő bekezdésben a feltételes formázással foglalkozunk.
 
 ## <a name="conditional-formatting-for-visualizations"></a>Vizualizációk feltételes formázása
 A vizualizációknak gyakran előnyére válik a színek dinamikus meghatározása egy mező numerikus értéke alapján. Ezen a módon az oszlopok magasságát megadó érték mellett egy másikat is megjeleníthet, így két értéket szemléltethet egy diagramon. Használhatja a lehetőséget egy bizonyos érték feletti (vagy alatti) adatpontok kiemelésére – például alacsony jövedelmezőségű területek kimutatására.
@@ -79,7 +81,7 @@ A vizualizációknak gyakran előnyére válik a színek dinamikus meghatározá
 A következő szakaszok különböző módszereket mutatnak be a színek numerikus érték alapján történő meghatározására.
 
 ### <a name="base-the-color-of-data-points-on-a-value"></a>Adatpontok színének meghatározása egy érték alapján
-Ha egy érték alapján szeretné módosítani a színt, válasszon egy vizualizációt az aktiváláshoz. Nyissa meg a Formátum panelt a festőhenger ikon kiválasztásával és az **Adatszínek** kártya kibontásával. Vigye az egérmutatót a kártyára, és válassza a megjelenő három pontot, majd a **Feltételes formázás** lehetőséget.  
+Ha egy érték alapján szeretné módosítani a színt, válasszon egy vizualizációt az aktiváláshoz. Nyissa meg a Formátum panelt a festőhenger ikon kiválasztásával, majd nyissa meg az **Adatszínek** kártyát. Vigye az egérmutatót a kártyára, és válassza a megjelenő három pontot, majd a **Feltételes formázás** lehetőséget.  
 
 ![a feltételes formázás lehetőség választása a három pontra történő kattintással](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting.gif)
 
@@ -103,9 +105,9 @@ Figyelje meg az első képen, hogy a diagram oszlopai a sávon ábrázolt szín�
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
 
-Most próbáljon meg numerikus értéket adni a **Minimum** és **Maximum** mezőknek. Válassza a **Szám** lehetőséget a legördülő menükből a **Minimum** és a **Maximum** értékeinek megadásához, és adja meg a **Minimum** értékeként, hogy 3500 a **Maximum** értékeként, hogy 6000.
+Most próbáljon meg numerikus értéket adni a **Minimum** és **Maximum** mezőknek. Válassza az **Egyéni** lehetőséget a legördülő menükből a **Minimum** és a **Maximum** értékeinek megadásához, és adja meg a **Minimum** értékeként, hogy 3500 a **Maximum** értékeként, hogy 6000.
 
-![Feltételes formázás számok alapján](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-number.png)
+![Feltételes formázás számok alapján](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-numbers.png)
 
 Ezekkel az értékekkel a színátmenet már nem alkalmazható a diagramnak a **Minimum** alatti vagy **Maximum** feletti értékeire. A **Maximum** értéknél magasabb oszlopok színe zöld, a **Minimum** alattiaké piros.
 
@@ -116,23 +118,37 @@ Előfordul, hogy az adatok természetes módon széttartó jellegűek. Egy hőm�
 
 Széttartó színskálák használatához jelölje be a **Széttartó** jelölőnégyzetet. A **Széttartó** beállítással újabb paletta jelenik meg **Középérték** néven, ahogyan az alábbi képen látható.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging2.png)
+![Alapértelmezett szín párbeszédpanel kiválasztott színskálával](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging-colors.png)
 
 Amíg a **Széttartó** beállítás be van kapcsolva, a **Minimumhoz**, a **Maximumhoz** és a **Középértékhez** tartozó szín külön módosítható. A következő képen a **% Market Share SPLY YTD** **Középértékeként** 0,2 van megadva, ezért a 0,2-nél nagyobb értékek a zöld, az egynél kisebbek a piros árnyalataiban jelennek meg.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging.png)
+![oszlopdiagram piros és zöld oszlopokkal](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging.png)
+
+## <a name="add-color-to-table-rows"></a>Táblasorok kiszínezése
+A táblák és a mátrixok számos lehetőséget kínálnak a színformázásra. 
+
+![alapértelmezett tábla](media/service-tips-and-tricks-for-color-formatting/power-bi-table.png)
+
+Egy szín táblára vagy mátrixra alkalmazásának az egyik leggyorsabb módja a Formázás lap megnyitása és a **Stílus** kiválasztása.  Az alábbi ábrán a **Félkövér fejléc, feltűnő sorok** beállítást választottuk.
+
+![alapértelmezett tábla](media/service-tips-and-tricks-for-color-formatting/power-bi-table-style.png)
+
+Más színformázási beállításokkal is kísérletezhet. Ezen az ábrán megváltoztattuk a háttérszínt az **Oszlopfejlécek** alatt, valamint a **Háttérszín** és az **Alternatív háttérszín** értékét az **Értékek** (sorok) mezőhöz.
+
+![alapértelmezett tábla](media/service-tips-and-tricks-for-color-formatting/power-bi-table-rows.png)
 
 ## <a name="how-to-undo-in-power-bi"></a>Művelet visszavonása a Power BI-ban
 Sok más Microsoft-szolgáltatáshoz és -szoftverhez hasonlóan a Power BI is egyszerű módot kínál az utolsó parancs visszavonására. Képzelje el például, hogy megváltoztatta egy adatpont vagy adatpont-sorozat színét és a vizualizáción megjelenő szín nem teszik Önnek. Majd pedig az eredeti színt szeretné visszaállítani, csakhogy már nem emlékszik rá!
 
 A legutóbbi művelet vagy néhány nemrégiben végzett művelet **visszavonásához** csak a CTRL+Z billentyűkombinációt kell megnyomnia.
 
+Ha el szeretné vetni a Formázás kártyán végzett összes módosítást, válassza a **Visszaállítás alapértelmezettre** beállítást.
+
+![Formázás kártya az alján a Visszaállítás alapértelmezettre beállítás megjelenítésével](media/service-tips-and-tricks-for-color-formatting/power-bi-revert.png)
+
 ## <a name="feedback"></a>Visszajelzés
 Van egy tippje, amelyet szívesen megosztana másokkal? Kérjük, küldje el nekünk, és megvizsgáljuk, hozzáadhatjuk-e ehhez a listához.
 
->[!NOTE]
->A **Formátum** ikon választásával elérhető szín, tengely és kapcsolódó testreszabások a Power BI Desktopban is elérhetők.
-
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 [Bevezetés a színformázás és tengelytulajdonságok használatába](service-getting-started-with-color-formatting-and-axis-properties.md)
 

@@ -1,26 +1,26 @@
 ---
 title: Engedélyezési listára helyezendő Power BI URI-címek
-description: Ez a cikk ismerteti azokat a végpontokat, amelyeket az online Power BI szolgáltatást használó ügyfeleknek el kell tudniuk érni.
+description: Ez a cikk a Power BI esetében a biztonságos kapcsolatok listájára felvehető URL-végpontokat és portokat sorolja fel.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/22/2018
+ms.date: 01/29/2020
 ms.custom: seodec18
-ms.openlocfilehash: cd13e36ca7216036a22db332a508e3c825fecf4b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 48406a8c68237d182960b46de67f91dbd2717922
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698785"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894660"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>Engedélyezési listára helyezendő Power BI URI-címek
 
 A Power BI SaaS (szolgáltatott szoftver) alkalmazás néven is ismert **online Power BI szolgáltatáshoz** internetkapcsolatra van szükség. Az online Power BI szolgáltatást használó ügyfeleknek el kell érniük az alábbi végpontokat.
 
-A Power BI online szolgáltatás használatához hozzá kell férnie az alábbi táblázatokban **kötelezőként** megjelölt végpontokhoz, és a hivatkozott webhelyeken **kötelezőként** megjelölt végpontokhoz is, hogy csatlakozni tudjon. Ha egy külső webhelyre mutató hivatkozás egy adott bekezdésre mutat, akkor csak az abban a bekezdésben lévő végpontokat kell megvizsgálnia.
+A Power BI online szolgáltatás használatához tudnia kell csatlakozni az alábbi táblázatokban **kötelezőként** megjelölt végpontokhoz, és a hivatkozott webhelyeken **kötelezőként** megjelölt végpontokhoz is. Ha egy külső webhelyre mutató hivatkozás egy adott bekezdésre mutat, akkor csak az abban a bekezdésben lévő végpontokat kell megvizsgálnia.
 
 Bizonyos funkciók működése érdekében a **választhatóként** megjelölt végpontok is **szerepelhetnek az engedélyezési listán**.
 
@@ -46,16 +46,17 @@ A Power BI használatához tudnia kell csatlakozni az alábbi táblázatban és 
 | Sor | Szerep | Cél(ok) | Port(ok) |
 | --- | --- | --- | --- |
 | 1 | **Kötelező:** Háttérbeli API-k | *.analysis.windows.net | TCP 443 |
-| 2 | **Kötelező:** Office 365-integráció | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) bemutató Office 365-dokumentációt | N.A. |
-| 3 | **Kötelező:** Portál | app.powerbi.com | TCP 443 |
-| 4 | **Kötelező:** Szolgáltatási telemetria | dc.services.visualstudio.com | TCP 443 |
-| 5 | **Nem kötelező:** Tájékoztató üzenetek | dynmsg.modpim.com | TCP 443 |
-| 6 | **Nem kötelező:** NPS-felmérések | nps.onyx.azure.net | TCP 443 |
+| 2 | **Kötelező:** Háttérbeli API-k | *.pbidedicated.windows.net | TCP 443 |
+| 3 | **Kötelező:** Office 365-integráció | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) bemutató Office 365-dokumentációt | N.A. |
+| 4 | **Kötelező:** Portál | app.powerbi.com | TCP 443 |
+| 5 | **Kötelező:** Szolgáltatási telemetria | dc.services.visualstudio.com | TCP 443 |
+| 6 | **Nem kötelező:** Tájékoztató üzenetek | dynmsg.modpim.com | TCP 443 |
+| 7 | **Nem kötelező:** NPS-felmérések | nps.onyx.azure.net | TCP 443 |
 | | | |
 
 ## <a name="administration"></a>Felügyelet
 
-Ahhoz, hogy rendszergazdai funkciókat végezzen el a Power BI-ban, tudnia kell csatlakozni az alább hivatkozott webhelyeken megadott végpontokhoz.
+Ahhoz, hogy rendszergazdai funkciókat láthasson el a Power BI-ban, tudnia kell csatlakozni az alább hivatkozott webhelyeken megadott végpontokhoz.
 
 | Sor | Szerep | Cél(ok) | Port(ok) |
 | --- | --- | --- | --- |
@@ -90,7 +91,7 @@ A Power BI-nak szüksége van bizonyos végpontokra az egyéni vizualizációkho
 
 | Sor | Szerep | Cél(ok) | Port(ok) |
 | --- | --- | --- | --- |
-| 1 | **Kötelező:** Egyéni vizualizáció importálása a Marketplace felületéről vagy egy fájlból | *.azureedge.net <br> *.blob.core.windows.net <br> store.office.com | TCP 443 |
+| 1 | **Kötelező:** Egyéni vizualizáció importálása a Marketplace felületéről vagy egy fájlból | *. azureedge.net <br> *.blob.core.windows.net <br> store.office.com | TCP 443 |
 | 2 | **Nem kötelező:** Bing Térképek | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Nem kötelező:** PowerApps | Lásd a [Szükséges szolgáltatások szakaszt](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) a PowerApps rendszerkövetelményeinek webhelyén | N.A. |
 | 4 | **Nem kötelező:** Visio | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), valamint a [SharePoint Online szolgáltatást és a OneDrive Vállalati verziót](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) bemutató Office 365-dokumentációt | N.A. |
@@ -98,7 +99,7 @@ A Power BI-nak szüksége van bizonyos végpontokra az egyéni vizualizációkho
 
 ## <a name="related-external-sites"></a>Kapcsolódó külső webhelyek
 
-A Power BI más webhelyekre is hivatkozik. Ezek közé tartoznak a dokumentációkat tartalmazó, a támogatást nyújtó, az új funkciókéréseket kezelő stb. webhelyek. Ezek a webhelyek nem befolyásolják a Power BI működését, ezért tetszés szerint felvehetők az engedélyezési listára.
+A Power BI más webhelyekre is hivatkozik. Ezek közé tartoznak a dokumentációkat tartalmazó, a támogatást nyújtó, az új funkciókéréseket kezelő stb. webhelyek. Az ezekhez a webhelyekhez való hozzáférés nem befolyásolja a Power BI funkcióit, így az engedélyezési listára való felvételük nem kötelező.
 
 | Sor | Szerep | Cél(ok) | Port(ok) |
 | --- | --- | --- | --- |

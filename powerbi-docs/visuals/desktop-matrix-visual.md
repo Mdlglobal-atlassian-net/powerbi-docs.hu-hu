@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/14/2020
+ms.date: 01/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fa097489fcf81ec1bb1df2162465e6413bd116c0
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 2e4ab92d5d1adce8659cdb971c5061a0f133b38f
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040427"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76895486"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Mátrixvizualizációk létrehozása a Power BI-ban
 
@@ -41,25 +41,24 @@ Ebben a példában a jobb szélső Mátrix vizualizáció minden sora az egyes �
 
 Amikor összegeket vagy részösszegeket lát, ne feledkezzen meg arról, hogy ezek az értékek a mögöttes adatokon alapulnak. Nem egyszerűen a megjelenített értékekből vannak kiszámítva.
 
-<!-- use Nov blog post video
 
-## Expanding and collapsing row headers
-There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you clicked on, the entire level or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
+## <a name="expanding-and-collapsing-row-headers"></a>Sorok fejlécének kibontása és összecsukása
+A sorfejlécek kibontása kétféleképpen lehetséges. Az első a jobb gombbal kattintva a helyi menüben érhető el. Itt találhat menüpontokat a kijelölt sorfejléc, a teljes szint vagy minden más kibontásához egészen a hierarchia utolsó szintjéig. A sorfejlécek összecsukásához is hasonló beállítások állnak rendelkezésre.
 
 ![](media/desktop-matrix-visual/power-bi-expand1.png)
 
-You can also add +/- buttons to the row headers through the formatting pane under the row headers card. By default, the icons will match the formatting of the row header, but you can customize the icons’ color and size separately if you want. 
-Once the icons are turned on, they work similarly to the icons from PivotTables in Excel.
+A sorok fejléceihez a formázási panellel is hozzáadhat +/- gombokat a **Sorfejlécek** kártya alatt. Alapértelmezés szerint az ikonok megegyeznek a sor fejlécének formázásával, de a színeket és a méreteket külön is testre szabhatja, ha szeretné.
+
+Az ikonok a bekapcsolásuk után hasonlóképpen működnek, mint az Excel PivotTable-ikonjai.
 
 ![](media/desktop-matrix-visual/power-bi-expand2.png)
 
-The expansion state of the matrix will save with your report. It can be pinned to dashboards as well, but consumers will need to open up the report to change the state. Conditional formatting will only apply to the inner most visible level of the hierarchy. Note that this expand/collapse experience is not currently supported when connecting to AS servers older than 2016 or MD servers.
+A mátrix bővítési állapotát a rendszer a jelentéssel együtt menti. A mátrix kitűzhető az irányítópultra kibontva vagy összecsukva. Ha ki van jelölve az irányítópult-csempe, és megnyílik a jelentés, a bővítési állapot továbbra is módosítható a jelentésben. 
 
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
-Watch the following video to learn more about expand/collapse in the matrix:
 
--->
+
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Részletes elemzés használata a Mátrix vizualizációval
 Mátrixvizualizációval számos érdekes, korábban nem elérhető részletes elemzési tevékenység hajtható végre. Például a részletes elemzés sorok, oszlopok vagy külön szakaszok és cellák használatával. Vessünk egy pillantást ezek működésére.
 
@@ -183,6 +182,16 @@ Egy mátrix vagy táblázat tartalmazhat olyan adatokat, amelyeket szeretne más
 * A másolat egy újabb mátrixvizualizáció lesz, de csak a kimásolt adatokat fogja tartalmazni.
 
     ![A vizualizációmásolási példát bemutató képernyőkép](media/desktop-matrix-visual/power-bi-copy-visual-example.png)
+
+## <a name="setting-a-matrix-value-as-a-custom-url"></a>Mátrix értékének beállítása egyéni URL-címként
+
+Ha egy olyan oszloppal vagy mértékkel rendelkezik, amely webhelyek URL-címeit tartalmazza, akkor feltételes formázással aktív hivatkozásokként alkalmazhatja ezeket az URL-címeket a mezőkre. Ezt a lehetőséget a **Feltételes formázás** kártya alatt találja meg a Formázás panelen.
+
+![A kiválasztott sorokat mutató szűrőkártya](media/desktop-matrix-visual/power-bi-web-url.png)
+
+Kapcsolja be a **webes URL-címet**, majd válassza ki az oszlop URL-címéhez használni kívánt mezőt. Az alkalmazás után az adott mező (oszlop) értékei aktív hivatkozásokká válnak. Vigye föléjük az egérmutatót a hivatkozás megjelenítéséhez, és válassza ki a hivatkozást az oldalra való ugráshoz. 
+
+További információt a [Táblázatok feltételes formázása](../desktop-conditional-table-formatting.md) című témakörben talál.
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Árnyékolás és betűtípus mátrixvizualizációkkal
 A Mátrix vizualizációval Feltételes formázást (színek, árnyékolás és adatsávok) alkalmazhat a mátrixban található cellák hátterére, valamint magára a szövegre és az értékekre is.

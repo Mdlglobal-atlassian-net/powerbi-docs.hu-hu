@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 01/30/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 2d564b22ecf02c0d8593ed5676e46f2eb4168964
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: e2840d2695b70867b73c873aea7a06acf26bcc3e
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75836726"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913548"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával
 
@@ -33,7 +33,7 @@ A lekérdezésisztring-paraméterek másik felhasználási módja speciális Pow
 
 Paraméterek használatával a jelentés egy vagy több értékre szűrhető még akkor is, ha az értékek szóközöket vagy speciális karaktereket tartalmaznak. Az alapvető szintaxis nagyon egyszerű – kezdje a jelentés URL-címével, adjon hozzá egy kérdőjelet, majd a szűrési szintaxist.
 
-URL-cím?filter=***Tábla***/***Mező*** eq '***érték***'
+*URL*?filter=*Table*/*Field* eq '*érték*'
 
 ![URL-cím szűrővel](media/service-url-filters/power-bi-filter-urls7b.png)
 
@@ -84,6 +84,18 @@ A jelentés szűrve lett Észak-Karolinára, és a jelentés oldalán találhat�
 
 ![A jelentés Észak-Karolinára szűrve](media/service-url-filters/power-bi-report4.png)
 
+## <a name="filter-on-more-than-one-value-in-a-field"></a>Szűrés egy mező több értékére
+
+Ha egy mező több értékére is szűrni szeretne, az **and** operátor helyett használja az **in** operátort. A szintaxis a következő:
+
+*URL*?filter=*Table*/*Field* **in** ('*érték1*', '*érték2*')
+
+Ugyanennél a példánál maradva, ha úgy szeretné szűrni a jelentést, hogy csak az Észak-Karolinában („NC”) vagy a Tennesseeben („TN”) található üzletek adatait jelenítse meg, akkor fűzze hozzá az URL-címhez a következőt;
+
+?filter=Store/Territory in ('NC', 'TN')
+
+További hasznos operátorok listájáért tekintse meg az [Operátorok](#operators) táblázatát a cikk későbbi részében.
+
 ## <a name="filter-on-multiple-fields"></a>Szűrés több mező alapján
 
 Ha további paramétereket fűz az URL-címhez, több mező alapján is végezhet szűrést. Térjünk vissza az eredeti szűrési paraméterhez.
@@ -97,8 +109,6 @@ További mezők alapján úgy szűrhet, hogy az „**and**” kulcsszót és egy
 ```
 ?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
 ```
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/0sDGKxOaC8w?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="operators"></a>Operátorok
 

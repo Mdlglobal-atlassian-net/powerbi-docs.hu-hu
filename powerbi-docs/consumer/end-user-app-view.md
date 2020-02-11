@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 1/22/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0733e726512ff52c5b51ba2d25cea18f8857f1e8
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 08a58bd725b8a8da3ff54b5bb670eb70af458dc7
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537597"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819261"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Alkalmazások telepítése és használata irányítópultokkal és jelentésekkel a Power BI-ban
 
@@ -57,7 +57,7 @@ Alkalmazásokat a Microsoft AppSource-on is találhat, és onnan telepíthet. Cs
 
 Ebben a példában egy Microsoft-mintaalkalmazást nyitunk meg. Az AppSource-on számos olyan alkalmazást talál, amely alkalmas az üzleti feladatainak elvégzéséhez használt szolgáltatásokhoz.  Ezek között olyan szolgáltatások vannak, mint például a Salesforce, a Microsoft Dynamics, a Google Analytics, a GitHub, a Zendesk, a Marketo és sok más. További információt az [Alkalmazások a Power BI-jal használt szolgáltatásokhoz](../service-connect-to-services.md) című témakörben talál. 
 
-1. A böngészőben nyissa meg a https://appsource.microsoft.com webhelyet, majd válassza a **Power BI-alkalmazások** elemet.
+1. A böngészőben nyissa meg a [https://appsource.microsoft.com](https://appsource.microsoft.com) weblapot, majd válassza a **Power BI-alkalmazások** elemet.
 
     ![Az AppSource webhelye a Power BI-alkalmazások elem kiválasztásával  ](./media/end-user-apps/power-bi-appsource.png)
 

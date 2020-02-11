@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a10de05fed8a77a165797dda7155ffb81bbad815
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 25ed90dba0c164a44d691f8247023f2ff7e0a67f
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75759997"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913536"
 ---
 # <a name="create-report-templates-for-power-bi-desktop"></a>Jelentésminták létrehozása a Power BI Desktophoz
 
@@ -32,7 +32,7 @@ A Power BI-jelentéssablon a következő információkat tartalmazza abból a je
 
 A sablon *nem* tartalmazza a jelentésbeli adatokat. 
 
-A jelentéssablonok fájlkiterjesztése .PBIT (a Power BI Desktop-jelentések .PBIX kiterjesztéséhez hasonló). 
+A jelentéssablonok fájlkiterjesztése .PBIT (a Power BI Desktop-jelentések ezzel szemben .PBIX kiterjesztésűek). 
 
 Jelentéssablon létrehozásához válassza a menü **Fájl > Exportálás > Power BI-sablon** elemét, amely az alábbi ablakot nyitja meg. Ebben megadhatja a sablon leírását. Ebben a példában a sablon leírása *Monthly sales report template* (Sablon havi értékesítési jelentéshez).
 

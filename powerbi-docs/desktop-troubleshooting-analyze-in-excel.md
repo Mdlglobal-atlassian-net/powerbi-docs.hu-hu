@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 05/08/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 987078ae33af10e9c33b4d8a00f8e2e688be12a1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8f4ed049fad2739ef8cc5cd307c06100f68419bd
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73865755"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889305"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Az Elemzés az Excelben hibaelhárítása
 
@@ -84,7 +84,7 @@ Ha **a token lejárt** hibaüzenetet kap, akkor mostanában nem használta az **
 Ha olyan adatkészlethez próbál hozzáférni, amely helyszíni Analysis Services-adatokhoz kapcsolódik, előfordulhat, hogy hibaüzenetet kap. Az **Elemzés az Excelben** nem támogatja a helyszíni **Analysis Services** szolgáltatásban található adatkészletekhez és jelentésekhez történő kapcsolódást kapcsolati sztring segítségével, ha a számítógép és az **Analysis Services**-kiszolgáló ugyanabban a tartományban található, és a fiókja hozzáféréssel rendelkezik az adott **Analysis Services**-kiszolgálóhoz.
 
 ## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>Semmi nem húzható a Kimutatási értékek területre (nincsenek mértékek)
-Amikor az **Elemzés az Excelben** egy külső OLAP-modellhez kapcsolódik (azaz ahogyan az Excel a Power BI szolgáltatáshoz kapcsolódik), a *Kimutatáshoz* [kötelező a külső modellben **mértékeket** megadni](https://support.microsoft.com/kb/234700), mivel a számítások elvégzése a kiszolgálón történik. Ez eltér attól, amikor helyi adatforrással dolgozik (pl. Excel-táblákkal, vagy amikor adatkészletekkel dolgozik a **Power BI Desktopban** vagy a **Power BI szolgáltatásban**), mert ebben az esetben a táblázatos modell helyileg elérhető, és [implicit mértékek is használható](https://msdn.microsoft.com/library/gg399077.aspx). Ezek olyan dinamikusan előállított mértékek, amelyek nem az adatmodellben vannak tárolva. Ezekben az esetekben az Excel viselkedése eltér a **Power BI Desktop** vagy a **Power BI szolgáltatás** viselkedésétől: lehetnek olyan oszlopok az adatok között, amelyek mértékekként kezelhetők a Power BI szolgáltatásban, de nem használhatók értékként (mértékkén) az Excelben.
+Amikor az **Elemzés az Excelben** egy külső OLAP-modellhez kapcsolódik (azaz ahogyan az Excel a Power BI szolgáltatáshoz kapcsolódik), a *PivotTable*[ megköveteli **mértékek** megadását a külső modellben](https://support.microsoft.com/kb/234700), mivel minden számítás elvégzése a kiszolgálón történik. Ez eltér attól, amikor helyi adatforrással dolgozik (pl. Excel-táblákkal, vagy amikor adatkészletekkel dolgozik a **Power BI Desktopban** vagy a **Power BI szolgáltatásban**), mert ebben az esetben a táblázatos modell helyileg elérhető, és [implicit mértékek is használható](https://msdn.microsoft.com/library/gg399077.aspx). Ezek olyan dinamikusan előállított mértékek, amelyek nem az adatmodellben vannak tárolva. Ezekben az esetekben az Excel viselkedése eltér a **Power BI Desktop** vagy a **Power BI szolgáltatás** viselkedésétől: lehetnek olyan oszlopok az adatok között, amelyek mértékekként kezelhetők a Power BI szolgáltatásban, de nem használhatók értékként (mértékkén) az Excelben.
 
 A probléma megoldására több lehetőség van:
 
@@ -105,5 +105,4 @@ Ha meghatározta a modell mértékeit a Power BI szolgáltatásban, használhatj
 
 [Munkalapadatok hozzáadása egy Adatmodellhez csatolt külső tábla használatával](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
 
-[Az OLAP és nem OLAP Excel-kimutatások közötti különbségek](https://support.microsoft.com/kb/234700)
 
