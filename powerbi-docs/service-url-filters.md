@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/30/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: e2840d2695b70867b73c873aea7a06acf26bcc3e
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.openlocfilehash: b20820490ec88d34d4ee75c135cc54277e473545
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76913548"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076635"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával
 
@@ -193,7 +193,7 @@ Ez az eltérés akkor hasznos, ha különböző eredményeket szeretne megjelen�
 Lekérdezésisztring-paraméterek használatakor néhány szemponttal érdemes tisztában lenni.
 
 * Az *in* használatakor az *in* operátortól jobbra lévő értékeket zárójelek közötti, vesszővel elválasztott listaként kell megadni.    
-* A Power BI jelentéskészítő kiszolgálón [adhat át jelentésparamétereket](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) úgy, hogy belefoglalja őket a jelentés URL-címébe. Ezek az URL-paraméterek nincsenek előtaggal ellátva, mert a rendszer közvetlenül átadja őket a jelentésfeldolgozó motornak.
+* A Power BI jelentéskészítő kiszolgáló azt is lehetővé teszi, hogy további szűrőket adjon meg a „filter” URL-paraméter használatával.  A Power BI jelentéskészítő kiszolgálónál például az URL-cím a következőhöz hasonló lehet: https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
 * A lekérdezési sztringgel végzett szűrés a [Webes közzététel](service-publish-to-web.md) vagy az [Exportálás PDF-be](consumer/end-user-pdf.md) használatával együtt nem működik.
 * [A SharePoint Online-ban jelentéskijelzővel történő beágyazás](service-embed-report-spo.md) nem támogatja az URL-szűrőket.
 * A long adattípus maximális értéke a JavaScript korlátozásai miatt 2^53-1.

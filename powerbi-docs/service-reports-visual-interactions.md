@@ -7,15 +7,15 @@ featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/04/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 116ff1df7ddc75df79e6f2f28296543449498599
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.openlocfilehash: 1d723f3dd67eb5e096622c882b5f538a77666d9e
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76894717"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036699"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Vizualizációk Power BI-jelentésen belüli működésének módosítása
 Ha rendelkezik szerkesztési engedéllyel a jelentéshez, akkor a **Vizualizáció-interakciókkal** határozhatja meg, hogy a jelentésoldal vizualizációi milyen hatással legyenek egymásra. 
@@ -87,6 +87,11 @@ Hogy a kiválasztott vizualizációnak a következőket kell-e tennie:
     ![a lefúrás szűri a többi vizualizációt beállítás bekapcsolása](media/service-reports-visual-interactions/power-bi-drill.png)
 
 3. Ha a megfigyelt viselkedés nem az, amit Ön szeretne, módosíthatja az interakciókat [a fent leírtak szerint](#change-the-interaction-behavior).
+
+## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+Ha különböző táblákból származó mezőkkel rendelkező mátrixot hoz létre, majd a hierarchiában több elem kiválasztásával megpróbál több elemet keresztkiemeléssel megjelölni, akkor a többi vizualizáción hiba jelentkezik. 
+
+![Videó arról a hibáról, amely a hierarchia több szintjén történő szűrésnél jelentkezik](media/service-reports-visual-interactions/cross-highlight.gif)
     
 ## <a name="next-steps"></a>Következő lépések
 [Szűrés és kiemelés Power BI-jelentésekben](power-bi-reports-filters-and-highlighting.md)

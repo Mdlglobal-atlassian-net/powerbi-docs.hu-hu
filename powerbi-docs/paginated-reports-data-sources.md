@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/30/2020
-ms.openlocfilehash: 17d5661cf68b3a79598dc370ecff17c1c438fc8e
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.openlocfilehash: 57d1c0673594a6fa3ddadba48299f610f8f08338
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76895097"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076557"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>A Power BI többoldalas jelentéseihez használható támogatott adatforrások
 
@@ -27,7 +27,7 @@ A többoldalas jelentések natív módon támogatják a következő adatforráso
 | --- | --- | --- |
 | Azure SQL Database <br>Azure SQL Data Warehouse | Alapszintű, egyszeri bejelentkezés (SSO), OAuth2 |   |
 | Azure SQL felügyelt példány | Alapszintű | nyilvános végponton keresztül az Azure SQL Database bővítmény használatával  |
-| Azure Analysis Services | SSO, OAuth2 | Az AAS-tűzfalat le kell tiltani vagy úgy kell konfigurálni, hogy az összes IP-tartományt engedélyezze  |
+| Azure Analysis Services | SSO, OAuth2 | Az AAS-tűzfalat le kell tiltani vagy úgy kell konfigurálni, hogy az összes IP-tartományt engedélyezze.  Alias használata nincs támogatva  |
 | Power BI-adathalmaz | SSO | Prémium és nem prémium szintű Power BI-adathalmazok. Olvasási engedélyt igényel |
 | Prémium szintű Power BI-adathalmaz (XMLA) | SSO |   |
 | Adatok megadása | N.A. | Az adatok a jelentésbe ágyazva érhetők el. |

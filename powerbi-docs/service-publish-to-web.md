@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 02/06/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 53cc311f2fb0bfa4ab876c80b81ee2a092c4fd8c
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.openlocfilehash: a9417e7de98e0fa1867aa0561743c1ed6c5b63e2
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76913628"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076699"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Webes közzététel a Power BI-ból
 
-A Power BI **Webes közzététel** lehetőségével egyszerűen ágyazhat be interaktív Power BI-vizualizációkat online, például blogbejegyzésekbe, weboldalakba, e-mailen vagy közösségi médián keresztül, bármilyen eszközről. A közzétett vizualizációkat egyszerűen szerkesztheti, frissítheti, vagy akár vissza is vonhatja a megosztásukat.
+A Power BI **Webes közzététel** lehetőségével egyszerűen ágyazhat be interaktív Power BI-vizualizációkat online, például blogbejegyzésekbe, weboldalakba, e-mailen vagy közösségi médián keresztül, bármilyen eszközről. A közzétett vizualizációkat egyszerűen szerkesztheti, módosíthatja, frissítheti, vagy akár vissza is vonhatja a megosztásukat.
 
 > [!WARNING]
 > A **Webes közzététel** használatával közzétett jelentést vagy vizualizációt bárki megtekintheti az Interneten. Ez nem igényel hitelesítést, és a jelentés által összesített adatok részletes megtekintését is magában foglalja. Jelentés közzététele előtt gondolja át, hogy megfelel-e Önnek az adatok és a vizualizációk nyilvános megosztása. Bizalmas vagy szellemi tulajdont képező információt ne tegyen közzé. Ha bizonytalan, akkor a közzététel előtt ellenőrizze a cég szabályzatait.
@@ -40,9 +40,11 @@ A következő útmutató a **Webes közzététel** használatát ismerteti.
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
    
-2. Ha nem engedélyezték beágyazási kódok létrehozását, lépjen kapcsolatba a Power BI rendszergazdájával
+2. Ha nem engedélyezték beágyazási kódok létrehozását, lépjen kapcsolatba a [Power BI rendszergazdájával](service-admin-role.md)
 
    ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+   
+   Ha segítségre van szüksége a szervezeten belüli webes közzétételt engedélyező személy megkereséséhez, [tekintse meg ezeket a tippeket](#how-to-find-your-power-bi-administrator).
 
 3. Olvassa el a párbeszédpanel tartalmát, majd válassza a **Beágyazási kód létrehozása** lehetőséget.
 
@@ -194,6 +196,21 @@ A **Webes közzétételt** csak Microsoft Power BI-felhasználók használhatjá
 Amikor a **Webes közzététel** használatával beágyazott kódot állít elő, akkor a jelentés láthatóvá válik az internetes felhasználók számára. Nyilvánosan elérhető, tehát számítani lehet rá, hogy a megtekintői egyszerűen meg tudják majd osztani a jelentést a közösségi médiában. Amikor a felhasználók a közvetlen nyilvános URL-cím megnyitásával vagy egy weboldalba vagy blogba beágyazottan megtekintik a jelentést, akkor a Power BI gyorsítótárazza a jelentés definícióját és a jelentés megtekintéséhez szükséges lekérdezések eredményeit. Ez biztosítja, hogy egyidejűleg felhasználók ezrei tekinthessék meg a jelentést a teljesítmény romlása nélkül.
 
 A gyorsítótár hosszú ideig megőrzi a tartalmát, ezért ha Ön módosítja a jelentés definícióját (ha például megváltoztatja a megtekintési módját), vagy frissíti a jelentés adait, akkor a módosítások körülbelül egy óra elteltével lesznek láthatók a jelentés felhasználók által megtekintett verziójában. Éppen ezért ajánlott előre elkészíteni a munkáját, és a **Webes közzétételi** beágyazási kódot csak akkor létrehozni, amikor már elégedett a beállításokkal.
+
+## <a name="how-to-find-your-power-bi-administrator"></a>A Power BI-rendszergazda megkeresése
+
+Ha módosítani szeretné a [webes közzététel bérlői beállításait](#tenant-setting), akkor a szervezetének [Power BI-rendszergazdájával](service-admin-role.md) kell felvennie a kapcsolatot.
+
+A Power BI-ra regisztrált kisebb szervezetek vagy magánszemélyek esetében előfordulhat, hogy nem rendelkeznek Power BI-rendszergazdával. Kövesse a [bérlő rendszergazdai átvételének folyamatát](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover). Ha már rendelkezik Power BI-rendszergazdával, akkor ő engedélyezheti a beágyazási kódok létrehozását.
+
+A nagyobb szervezeteknek általában már van Power BI-rendszergazdája. Power BI-rendszergazda lehet olyan személy, aki az alábbi szerepkörök valamelyikével rendelkezik:
+
+- Office 365-rendszergazda
+- Azure Active Directory-rendszergazda
+- A Power BI szolgáltatás rendszergazdai szerepkörével rendelkező felhasználó az Azure Active Directoryben
+
+A munkahelyén [meg kell keresnie egy ilyen személyt](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business), mert ő tudja majd módosítani a beállítást.
+
 
 ## <a name="next-steps"></a>Következő lépések
 

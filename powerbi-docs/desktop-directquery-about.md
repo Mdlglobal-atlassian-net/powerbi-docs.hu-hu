@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 504b389bdbe50d17f969365d7e4f2e51d206918c
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: dedbe3800dc4a6b1088ca5a4037bc8451c61d986
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75837191"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076664"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>DirectQuery használata a Power BI-ban
 
@@ -312,7 +312,7 @@ A fent leírtak mellett a következő jelentéskészítési funkciók is okozhat
 
 * **Medián:** Az olyan összesítések, mint a `Sum` vagy a `Count Distinct` általában a mögöttes forrásnak vannak leküldve. A medián esetében azonban nem ez történik, mivel a mögöttes forrás általában nem támogatja ezt az összesítést. Ezekben az esetekben a Power BI részletadatokat kérdez le az alapul szolgáló forrástól, és a visszaadott eredmények alapján számítja ki a mediánt. Ezt a módszert akkor célszerű alkalmazni, ha viszonylag kis számú eredmény mediánját kell kiszámítani. Nagy számosság esetén teljesítményproblémák léphetnek fel, vagy a lekérdezés az 1 millió soros korlát miatt sikertelen lesz. A **megyék lakosságának mediánja** például jól kiszámítható, az **értékesítési árak mediánja** viszont nem minden esetben az.
 
-* **Speciális szövegszűrők (* tartalmaz* és hasonlók):* * Szöveges oszlopok szűrésekor a speciális szűrők között megtalálhatók a *tartalmaz*, *kezdődik* és hasonló szűrők. Ezek teljesítménycsökkenést okozhatnak bizonyos adatforrások esetében. Konkrétan a *tartalmaz* szűrőt nem szabad használni, ha pontos találatokra van szükség. Bár az eredmények ugyanazok lehetnek, a konkrét adatoktól függően a teljesítményben komoly különbségek mutatkozhatnak az indexek használata miatt.
+* **Speciális szövegszűrők (_tartalmaz_ és hasonlók):** Egy szöveges oszlop szűrésekor a speciális szűrők között megtalálhatók a *tartalmaz*, *kezdődik* és hasonló szűrők. Ezek teljesítménycsökkenést okozhatnak bizonyos adatforrások esetében. Konkrétan a *tartalmaz* szűrőt nem szabad használni, ha pontos találatokra van szükség. Bár az eredmények ugyanazok lehetnek, a konkrét adatoktól függően a teljesítményben komoly különbségek mutatkozhatnak az indexek használata miatt.
 
 * **Többszörös kijelölés szeletelőkben:** Alapértelmezés szerint a szeletelők csak egyetlen kijelölést engedélyeznek. A szűrők többszörös kijelölésének engedélyezése teljesítményproblémákat okozhat, ha a felhasználó több elemet is kijelöl a szeletelőben. Ha a felhasználó például 10 őt érdeklő terméket jelöl ki, minden kijelölés következtében lekérdezések lesznek elküldve a forráshoz. Bár a felhasználó a lekérdezés befejeződése előtt is kijelölheti a következő elemet, ezzel többletterhelést ró a mögöttes forrásra.
 
