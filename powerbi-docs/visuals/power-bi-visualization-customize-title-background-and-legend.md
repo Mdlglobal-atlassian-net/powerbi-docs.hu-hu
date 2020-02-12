@@ -37,7 +37,7 @@ Hogy követni tudja a lépéseket, jelentkezzen be a Power BI Desktop szolgálta
 > [!NOTE]
 > Ha rögzít egy vizualizációt az irányítópulton, az irányítópult-csempévé válik. Maguk a csempék is testre szabhatók [új címekkel és alcímekkel és hiperhivatkozásokkal, és átméretezhetők](../service-dashboard-edit-tile.md).
 
-1. Nyissa meg a **Kiskereskedelmi elemzési minta****Új üzletek** oldalát.
+1. Nyissa meg a **Kiskereskedelmi elemzési minta** **Új üzletek** oldalát.
 
 1. Válassza a **Nyitva lévő üzletek száma nyitási hónap és üzletlánc szerint** fürtözött oszlopdiagramot.
 
@@ -86,7 +86,7 @@ Ugyanazt a fürtözött oszlopdiagramot kiválasztva bontsa ki a **Háttér** be
 
 1. Válassza a legördülő listát, és válasszon egy szürke árnyalatot.
 
-1. Módosítsa az **Átlátszóságot****74%**-ra.
+1. Módosítsa az **Átlátszóságot** **74%** -ra.
 
 Az oktatóanyag ezen pontján a fürtözött oszlopdiagram háttere az alábbihoz hasonló:
 
