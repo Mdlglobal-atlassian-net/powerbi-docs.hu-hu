@@ -66,6 +66,8 @@
               href: migrate-ssrs-reports-to-power-bi.md
         - name: Felügyelet és üzembe helyezés
           items:
+            - name: Bérlői rendszergazdai beállítások
+              href: admin-tenant-settings.md
             - name: Helyszíni adatátjáró méretezése
               href: gateway-onprem-sizing.md
     - name: Tanulmányok
