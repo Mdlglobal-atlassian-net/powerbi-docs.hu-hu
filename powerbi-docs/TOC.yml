@@ -429,6 +429,8 @@
           href: desktop-send-smile-privacy-statement.md
         - name: 'Rendszergazdák: A Power BI Desktop bejelentkezési űrlapjának kezelése'
           href: desktop-admin-sign-in-form.md
+        - name: Bejelentkezés hibaelhárítása a Power BI Desktopban
+          href: desktop-troubleshooting-sign-in.md
         - name: Akadálymentesség
           items:
             - name: Tudnivalók a Power BI akadálymentességéről
@@ -827,6 +829,8 @@
                   href: service-connect-to-xero.md
                 - name: Zendesk
                   href: service-connect-to-zendesk.md
+                - name: Snowflake Data Warehouse
+                  href: service-connect-snowflake.md
             - name: Céges tartalomcsomagok
               items:
                 - name: A szervezeti tartalomcsomagok bemutatása
