@@ -9,12 +9,13 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: mihart
-ms.openlocfilehash: 0cbd343203aa0626877e6d4841284eb57869e101
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+LocalizationGroup: Visualizations
+ms.openlocfilehash: 59685b4c3ceab4b60cba92ec1d3924b902c1426a
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75758807"
+ms.lasthandoff: 02/10/2020
+ms.locfileid: "77115308"
 ---
 # <a name="interact-with-arcgis-maps-in-power-bi"></a>ArcGIS-térképek használata a Power BI-ban
 Ez a témakör az ArcGIS-térképet a Power BI szolgáltatás, a Desktop alkalmazás vagy a mobilalkalmazás felületén használó felhasználó szemszögéből van megírva. Ha egy ArcGIS Maps for Power BI-vizualizációt a tervezője megoszt Önnel, számos különféle módon használhatja a vizualizációt.  További információ az ArcGIS-térképek létrehozásáról: [Az Esri ArcGIS-térképeinek oktatóanyaga](../visuals/power-bi-visualization-arcgis.md).

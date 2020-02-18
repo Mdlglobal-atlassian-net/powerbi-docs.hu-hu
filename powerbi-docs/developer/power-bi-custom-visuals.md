@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/03/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 897590324040a69dbaa1ac549dcee80de8da76a5
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 56958d59e52065f3553a60ce49bd988b4869a646
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75691408"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77153959"
 ---
 # <a name="visuals-in-power-bi"></a>Vizualizációk a Power BI-ban
 
@@ -80,4 +80,4 @@ Ha Ön webfejlesztő, és saját vizualizációt szeretne létrehozni, majd az A
 
 * A [Power BI-vizualizációk útmutatójának](guidelines-powerbi-visuals.md) feltárása.
 
-További kérdései vannak? További információt [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md) oldalán vagy a [Power BI-közösségben](http://community.powerbi.com/) találhat.
+További kérdései vannak? További információt [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md) oldalán vagy a [Power BI-közösségben](https://community.powerbi.com/) találhat.
