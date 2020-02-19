@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/27/2019
-ms.openlocfilehash: 8a3b9389769c92bc52512dbf1215afa405161cd5
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.date: 02/11/2020
+ms.openlocfilehash: 3561d122dde324f1d383d40a152bccc193a2afbe
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539049"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259697"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Gyakori kérdések – Power BI Embedded
 
@@ -55,37 +55,11 @@ A PRO licenccel a beágyazási tokenek elsődlegesen fejlesztési tesztelésre h
 
 ## <a name="technical"></a>Műszaki
 
-### <a name="what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365"></a>Mi a különbség az Azure-beli „A” termékváltozatok és az Office 365-beli „EM” termékváltozatok között?
+### <a name="where-can-i-learn-more-about-capacity-and-skus-in-power-bi-embedded-analytics"></a>Hol tudhatok meg többet a Power BI Embedded Analytics kapacitásáról és az SKU-król?
 
-A PowerBI.com egy vállalati szolgáltatottszoftver- (SaaS-) megoldás, amely számos képességet kínál, többek között a közösségi együttműködés lehetőségét és az e-mailekre való feliratkozást. A PowerBI.com segítséget nyújt a független szoftvergyártóknak a beágyazott elemzési megoldásaik tartalmainak és a bérlői beállításaiknak a kezeléséhez.
+Olvassa el a [Kapacitás és SKU a Power BI Embedded Analyticsben](embedded-capacity.md) című cikket.
 
-A Power BI Embedded egy fejlesztők számára készült, platformszolgáltatási (PaaS) API-gyűjtemény, amellyel elemzési megoldások ágyazhatók be.
-
-Itt látható egy részlet a funkcióeltérések listájából.
-
-| Funkció | Power BI Embedded | Power BI Premium-kapacitás | Power BI Premium-kapacitás |
-|----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
-|   | A SKU-k – Azure-kapacitás | EM SKU-k – O365-kapacitás | P SKU-k – O365-kapacitás |
-| Összetevők beágyazása Power BI-munkaterületről | Igen | Igen | Igen |
-| Beágyazott alkalmazásokban lévő Power BI-jelentések felhasználása a vállalat számára  | Nem | Igen | Igen |
-| Beágyazott alkalmazásokban lévő Power BI-jelentések felhasználása az ügyfelek számára | Igen | Igen | Igen |
-| Power BI-jelentések használata SharePointban | Nem | Igen | Igen |
-| Power BI-jelentések használata Dynamicsben | Nem | Igen | Igen |
-| Power BI-jelentések használata Teamsben (a mobil alkalmazás kivételével) | Nem | Igen | Igen |
-| Hozzáférés a tartalomhoz INGYENES Power BI-licenccel a Powerbi.com oldalon és a Power BI Mobile-on | Nem | Nem | Igen |
-| Hozzáférés a tartalomhoz INGYENES, MS Office-alkalmazásokba beágyazott Power BI-licenccel | Nem | Igen | Igen |
-
-### <a name="power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario"></a>A Power BI három típusú termékváltozatot kínál a beágyazásra: az A termékváltozatokat, az EM termékváltozatokat és a P termékváltozatokat. Melyiket vásároljam meg a saját forgatókönyvemhez?
-
-|  |A termékváltozat (Power BI Embedded)  |EM termékváltozat (Power BI Premium)  |P termékváltozat (Power BI Premium)  |
-|---------|---------|---------|---------|
-|Vásárlás  |Azure Portal |Office |Office |
-|Felhasználási módok | Tartalmak beágyazása saját alkalmazásba | <li> Tartalmak beágyazása saját alkalmazásba <br><br><br> <li> Tartalmak beágyazása MS Office-alkalmazásokba: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (a mobilalkalmazás kivételével)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Tartalmak beágyazása saját alkalmazásba <br><br><br> <li> Tartalmak beágyazása MS Office-alkalmazásokba: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (a mobilalkalmazás kivételével)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br><br> <li> Tartalom megosztása Power BI-felhasználókkal a [Power BI szolgáltatásban](https://powerbi.microsoft.com/)  |
-|Számlázás |Óránként |Havonta |Havonta |
-|Kötelezettségvállalás  |Nincs kötelezettségvállalás |Éves  |Havi/Éves |
-|Megkülönböztetés |Az Azure Portalon vagy API-kon keresztül teljes mértékű rugalmasságot tesz lehetővé, vagyis felfelé és lefelé történő méretezhetőséget, illetve az erőforrások felfüggesztését és folytatását  |Tartalmak beágyazására használható a SharePoint Online-ban és a Microsoft Teamsben (a mobilalkalmazás kivételével) |Egy kapacitáson belül egyesíti az alkalmazásokba történő beágyazásokat és a Power BI szolgáltatás használatát |
-
-### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Milyen feltételekkel hozható létre PBIE-kapacitás az Azure-ban?
+### <a name="what-are-the-prerequisites-for-creating-a-pbie-capacity-in-azure"></a>Milyen feltételekkel hozható létre PBIE-kapacitás az Azure-ban?
 
 * Jelentkezzen be a vállalati címtárba (A Microsoft-fiókok nem támogatottak).
 * Power BI-bérlővel kell rendelkeznie, azaz a címtár legalább egy felhasználójának regisztrálva kell lennie a Power BI-ban. 

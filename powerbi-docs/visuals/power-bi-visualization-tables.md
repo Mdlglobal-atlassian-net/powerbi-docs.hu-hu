@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6d2f1eea22f83d90501581be7d2e9b8230962835
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 014186acf6bf6b8c00686c0b7a29d0b526b0afb7
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830861"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154275"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Táblák a Power BI-jelentésekben és -irányítópultokon
 
@@ -98,22 +98,19 @@ A táblázatot többféle módon is formázhatja. Itt ezek közül csak néhány
 
 ### <a name="conditional-formatting"></a>Feltételes formázás
 
-A *feltételes formázás* a formázás egyik típusa. A Power BI a mezők feltételes formázását a **Vizualizációk** panel **Értékek** területén alkalmazza.
+A *feltételes formázás* a formázás egyik típusa. A Power BI feltételes formázást tud alkalmazni bármely olyan mezőre, amelyet a **Vizualizációk** panel **Értékek** területéhez hozzáadott.
 
-A táblák feltételes formázásával a cellák értéke alapján határozhat meg egyéni háttér- vagy betűszínt (akár színátmeneteket is) a cellákhoz.
+![A Vizualizációk panel](media/power-bi-visualization-tables/power-bi-table-values.png)
 
-1. A **Vizualizációk** panelen válassza a **Mezők** ikont ![mezők ikon](media/power-bi-visualization-tables/power-bi-fields-icon.png).
+A táblák feltételes formázásával a cellák értéke alapján határozhat meg ikonokat, URL-címeket, a cellák háttér- vagy betűszínét, beleértve a színátmeneteket is.
 
-1. Válassza az **Értékek** területen a formázni kívánt érték mellett a lefele mutató nyilat (vagy kattintson a jobb gombbal a mezőre).
+1. A **Formátum** panelen nyissa meg a **Feltételes formázás** kártyát.
 
-    > [!NOTE]
-    > A mezők feltételes formázása kizárólag az **Értékek** terület **Mezők** szakaszában kezelhető.
+    ![Feltételes formázás kártya](media/power-bi-visualization-tables/power-bi-conditional.png)
 
-    ![a Háttérszínek színskáláihoz tartozó elérési út](media/power-bi-visualization-tables/power-bi-conditional-formatting-background.png)
+1. Jelölje ki a formázni kívánt mezőt, és húzza a **Háttérszín** csúszkáját a Be értékre. A Power BI egy színátmenetet alkalmaz az oszlopban lévő értékek alapján. Az alapértelmezett színek módosításához válassza a **Speciális vezérlők** lehetőséget.
 
-1. Válassza a **Háttérszín** elemet.
-
-1. A megjelenő párbeszédpanelen beállíthatja a színt, valamint a **Minimum** és **Maximum** értékét. A **Széttartó** lehetőség bejelölése esetén megadhat egy választható **Középértéket** is.
+    A **Széttartó** lehetőség bejelölése esetén megadhat egy választható **Középértéket** is.
 
     ![Háttérszínek színskálái képernyő](media/power-bi-visualization-tables/power-bi-conditional-formatting-background2.png)
 
@@ -124,24 +121,24 @@ A táblák feltételes formázásával a cellák értéke alapján határozhat m
 
     ![megjelenít egy mezőt a jobb szélen](media/power-bi-visualization-tables/power-bi-conditional-formatting2.png)
 
-1. Adjon hozzá feltételes adatsávformázást – ehhez válassza a lefelé mutató nyilat a **Total Sales Variance** (Teljes értékesítés szórása) mellett, majd a **Feltételes formázás > Adatsávok** lehetőséget.
+1. Az adatsávok feltételes formázásának hozzáadásához állítsa az **Adatsávok** csúszkát a Be értékre.  
 
-    ![útvonal az Adatsávok kiválasztásához](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars.png)
+    ![Feltételes formázású kártya a beállított adatsávokkal](media/power-bi-visualization-tables/power-bi-data-bar-matrix.png)
 
-1. A megjelenő párbeszédpanelen állítsa be a **Pozitív sáv** és a **Negatív sáv** színeit, jelölje be a **Csak sávok megjelenítése** lehetőséget, és végezze el a többi kívánt módosítást.
+1. Az adatsávok testreszabásához válassza a **Speciális vezérlők** lehetőséget. A megjelenő párbeszédpanelen állítsa be a **Pozitív sáv** és a **Negatív sáv** színeit, jelölje be a **Csak sávok megjelenítése** lehetőséget, és végezze el a többi kívánt módosítást.
 
     ![Csak sávok megjelenítése bejelölve](media/power-bi-visualization-tables/power-bi-data-bar.png)
 
-1. Kattintson az **OK** gombra.
+1. Válassza az **OK** lehetőséget.
 
     A numerikus értékek helyét adatsávok veszik át a táblában, így könnyebben áttekinthető lesz.
 
     ![ugyanaz a táblázat, de az utolsó oszlopban sávok szerepelnek](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars2.png)
 
-A vizualizációk feltételes formázásának törléséhez egyszerűen kattintson újra a mezőre a jobb gombbal, és válassza a **Feltételes formázás eltávolítása** lehetőséget.
+1. Vizuális jelzéseket adhat hozzá a táblához *feltételes ikonokkal*.  A **Feltételes formázás** kártyán válassza ki az **Idei értékesítés** elemet a legördülő listából. Az **Ikonok** csúszkát állítsa **Be** értékre.  Az ikonok testreszabásához válassza **Speciális vezérlők** lehetőséget.
 
-> [!TIP]
-> A feltételes formázás a **Formázás** ablaktábláról is elérhető. Válassza ki a formázni kívánt értéket, és az alapértelmezett beállítások alkalmazásához állítsa a **Színskálák** vagy az **Adatsávok** beállítást **Be** értékre, vagy a beállítások testreszabásához válassza a **Speciális vezérlők** lehetőséget.
+    ![Táblázat ikonokkal](media/power-bi-visualization-tables/power-bi-table-icons.png)
+
 
 ## <a name="copy-values-from-power-bi-tables-for-use-in-other-applications"></a>Power BI-táblázatok értékeinek másolása és felhasználása más alkalmazásokban
 
@@ -174,6 +171,7 @@ Több mint egy cella másolása:
 Előfordul, hogy a Power BI csonkolja az oszlopfejléceket a jelentésekben vagy az irányítópultokon. Az oszlop teljes nevének megjelenítéséhez vigye a kurzort a fejléc jobb oldalára, amíg meg nem jelenik a dupla nyíl, majd válassza ki és húzza el oldalra a nyilakat.
 
 ![az oszlop átméretezési műveletét kiemelő videó](media/power-bi-visualization-tables/resizetable.gif)
+
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 

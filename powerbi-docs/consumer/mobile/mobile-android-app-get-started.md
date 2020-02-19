@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/08/2019
+ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: f0ffcdabf1fea090cff769fa35c8346812b37896
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: af3ae969d0aedab3cc49e8d286ce71313da3d6bc
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220214"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259800"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Első lépések az androidos eszközökhöz készült Power BI mobilalkalmazással
 A Microsoft Power BI Android rendszerű eszközökön futó alkalmazása mobil felületet nyújt a Power BI, a Power BI jelentéskészítő kiszolgáló és a Reporting Services használatához. Bárhonnan megtekintheti és kezelheti helyszíni vagy felhőbeli céges irányítópultjait élő, érintésre reagáló mobil hozzáféréssel. Fedezze fel az adatokat az irányítópultokon, és ossza meg eredményeit munkatársaival e-mailben vagy SMS-ben. 
@@ -52,11 +52,11 @@ Ha meg nem regisztrált, lépjen a [Power BI szolgáltatásra](https://powerbi.c
 1. Nyissa meg az Androidhoz készült Power BI alkalmazást az androidos eszköz nyitóképernyőjéről.
    
    ![Power BI ikon](./media/mobile-android-app-get-started/power-bi-logo-android.png)
-2. A Power BI irányítópultjai és jelentései megtekintéséhez koppintson a **Power BI** lehetőségre.  
-   
-   Ha azt az üzenetet látja, hogy nem tud bejelentkezni a Power BI-ba, akkor a probléma megoldásának részleteiért tekintse meg [„A hitelesítés nem sikerült, mert a vállalati SSL-tanúsítványt nem megbízhatóként kezeli ez az eszköz”](mobile-android-app-error-corporate-ssl-account-is-untrusted.md) című cikket.
+2. Ha a Power BI-ba szeretne bejelentkezni, koppintson a **Power BI** lapra, és adja meg a bejelentkezési adatait.
 
-   A Power BI jelentéskészítő kiszolgálói és Reporting Services-jelentések és KPI-k megtekintéséhez koppintson a **Jelentéskészítő kiszolgáló** lehetőségre.
+    Ha a Power BI a bejelentkezés sikertelenségéről tájékoztató üzenetet jelenít meg, a probléma megoldásának részleteiért tekintse meg a következő szakaszt: [„A hitelesítés nem sikerült, mert a vállalati SSL-tanúsítványt nem megbízhatóként kezeli ez az eszköz”](mobile-android-app-error-corporate-ssl-account-is-untrusted.md).
+
+   Ha be szeretne jelentkezni a Reporting Services mobiljelentéseibe és a KPI-kbe, koppintson a **Jelentéskészítő kiszolgáló** lapra, és adja meg a bejelentkezési adatait.
    
    ![Bejelentkezés a Power BI-ba](./media/mobile-android-app-get-started/power-bi-connect-to-login.png)
 

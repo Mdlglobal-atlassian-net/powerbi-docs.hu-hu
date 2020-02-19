@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 30bfacc1024035f0849440eec8b1c7051ff4d82a
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a65b17c91640f6ea7fff1d762e8d5b71cc99575e
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75002443"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154143"
 ---
 # <a name="auto-datetime-guidance-in-power-bi-desktop"></a>Útmutató automatikus dátum/időhöz a Power BI Desktopban
 
@@ -26,7 +26,7 @@ Az _automatikus dátum/idő_ lehetőség kényelmes, gyors és könnyen használ
 
 Az alábbi felsorolási lista az _automatikus dátum/idő_ lehetőséghez kapcsolódó szempontokat és lehetséges korlátozásokat írja le.
 
-- **Az összesre vagy egyikre sem érvényes:** Ha az _automatikus dátum/idő_ lehetőség be van kapcsolva, akkor az importált táblázatok összes olyan dátumoszlopára vonatkozik, amely nem a kapcsolat &quot;több&quot; oldalán van. Nem engedélyezhető vagy tiltható le szelektíven az egyes oszlopokon oszlop alapján.
+- **Az összesre vagy egyikre sem érvényes:** Ha az _automatikus dátum/idő_ lehetőség be van kapcsolva, akkor az importált táblázatok összes olyan dátumoszlopára vonatkozik (kivéve a számított oszlopokat), amely nem a kapcsolat &quot;több&quot; oldalán van. Nem engedélyezhető vagy tiltható le szelektíven az egyes oszlopokon oszlop alapján.
 - **Csak naptári időszakok:** Az év és a negyedév oszlopok a naptári időszakokhoz kapcsolódnak. Ez azt jelenti, hogy az év január 1-én kezdődik, és december 31-én fejeződik be. Az év kezdetének (és végének) testre szabására nincs lehetőség.
 - **Testreszabás:** Az időszakok leírására szolgáló értékek testre szabására nincs lehetőség. Ezenkívül további oszlopok hozzáadására sincs lehetőség más időszakok, például hetek leírásához.
 - **Év szűrése:** A **Negyedév**, a **Hónap**, és a **Nap** oszlopértékek nem tartalmazzák az év értéket. Például a **Hónap** oszlop csak a hónapok nevét (január, február stb.) tartalmazza. Az értékek nem teljesen önleíróak, és egyes jelentés-kialakításokban előfordulhat, hogy nem közlik az év szűrő kontextusát.
@@ -34,6 +34,7 @@ Az alábbi felsorolási lista az _automatikus dátum/idő_ lehetőséghez kapcso
     Ezért fontos, hogy a szűrés és a csoportosítás az **Év** oszlopban menjen végbe. Hierarchia alapján végzett lefúrás esetén a szűrés az évre vonatkozik, kivéve ha az **Év** szintje szándékosan el lett távolítva. Ha nincs évre vonatkozó szűrő vagy csoport, akkor például egy havi csoportosítás az összes év adott hónapjára vonatkozó értékeket összegzi.
 - **Dátumszűrés egyetlen táblázatban:** Mivel minden dátumoszlop létrehozza a saját (rejtett) automatikus dátum/idő táblázatát, nem lehet egy táblázatra időszűrőt alkalmazni és több modelltáblázatra kiterjeszteni. Ez a szűrésforma általános modellezési követelmény az olyan többszörös tárgyú jelentések (tény típusú táblázatok) létrehozásakor, mint az értékesítés és az értékesítési költségkeret. A jelentéskészítőnek az automatikus dátum/idő használatakor minden dátumoszlophoz külön szűrőt kell alkalmaznia.
 - **A modell mérete:** Ez minden egyes (rejtett) automatikus dátum/idő táblázatot létrehozó dátumoszlop esetén nagyobb modellméretet és hosszabb adatfrissítési időt eredményez.
+- **Egyéb jelentéskészítő eszközök:** Nem lehet az automatikus dátum- és időtáblákkal dolgozni az [Elemzés az Excelben](../service-analyze-in-excel.md) használatakor, vagy amikor a modellhez nem Power BI-tervezők használatával csatlakoznak.
 
 ## <a name="recommendations"></a>Javaslatok
 
@@ -50,3 +51,4 @@ Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további inf
 - [Automatikus dátum/idő a Power BI Desktopban](../desktop-auto-date-time.md)
 - [Dátumtáblák beállítása és használata a Power BI Desktopban](../desktop-date-tables.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d30a8012161934ada4ff3cb2ce6852fe62f48892
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 148e5283e1a2e2d5ef61027c24df1a4c3e574822
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877199"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77179220"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Adathalmazok használata több munkaterületen (előzetes verzió) – bevezetés
 
@@ -62,7 +62,7 @@ A megosztott adathalmazokkal kapcsolatos képességekre épülő funkciók és f
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
 - Alkalmazás-közzétevőként gondoskodnia kell arról, hogy a célközönsége hozzáférjen a munkaterületen kívüli adathalmazokhoz. Ellenkező esetben a felhasználók problémákba ütköznek az alkalmazás használata során: az adathalmazokhoz való hozzáférés hiányában a jelentések nem nyílnak meg, az irányítópultok csempéi pedig zároltként jelennek meg. Ha a navigáció kezdőeleme egy jelentés, akkor az adathalmazhoz való hozzáférés nélkül a felhasználók az alkalmazást sem tudják megnyitni.
-- Más munkaterületen lévő adathalmazra alapozott jelentés készítéséhez mindkét oldalon az új munkaterületi felhasználói felület szükséges: A jelentésnek új munkaterületi felületen kell lennie, és az adathalmaznak is új munkaterületi felületen kell lennie.
+- Más munkaterületen lévő adathalmazra alapozott jelentés készítéséhez mindkét oldalon az új munkaterületi felhasználói felület szükséges: A jelentésnek új munkaterületi felületen kell lennie, és az adathalmaznak is új munkaterületi felületen kell lennie. A jelentéseket új munkaterület-felületről csak egy másik új munkaterületre másolhatja át, klasszikus munkaterületekre vagy a saját munkaterületre azonban nem. 
 - Klasszikus munkaterületen az adathalmaz-felfedezési felületen csak az azon a munkaterületen lévő adathalmazok jelennek meg.
 - A „Webes közzététel” megosztott adathalmazokon alapuló jelentések esetén szándékosan nem használható.
 - Ha ketten olyan munkaterület tagjai, amely hozzáfér egy megosztott adathalmazhoz, akkor előfordulhat, hogy csak az egyikük látja a kapcsolódó adathalmazt a munkaterületen. A megosztott adathalmazt csak azok látják, akik legalább Olvasási hozzáféréssel rendelkeznek az adathalmazhoz. 

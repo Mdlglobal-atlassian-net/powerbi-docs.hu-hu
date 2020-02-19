@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 160812521939d505612e0725e678dcf985f0d03a
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 01996f3460b7c7a507796bd3f071f7887a69854e
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75761841"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154212"
 ---
 # <a name="apply-auto-datetime-in-power-bi-desktop"></a>Automatikus dátum/idő alkalmazása a Power BI Desktopban
 
@@ -24,6 +24,7 @@ Az Automatikus dátum/idő egy adatbetöltési beállítás a Power BI Desktopba
 Ha engedélyezve van a beállítás, a Power BI Desktop minden dátumoszlophoz létrehoz egy rejtett automatikus dátum/idő táblát, amennyiben az alábbi feltételek mindegyike teljesül:
 
 - A tábla tárolási módja Importálás
+- Az oszlop nem számított oszlop
 - Az oszlop adattípusa dátum vagy dátum/idő
 - Az oszlop nem a modellkapcsolat „több” oldala
 
@@ -44,6 +45,8 @@ Ha meg lehetne tekinteni egy automatikus dátum/idő tábla sorait, a következ�
 
 > [!NOTE]
 > Az automatikus dátum/idő táblák még a modellezők elől is véglegesen el vannak rejtve. Nem jelennek meg a **Mezők** panelen és a Modellnézet diagramon, és a sorai nem láthatók az Adatnézetben. Emellett a DAX-kifejezések nem hivatkozhatnak közvetlenül a táblára és az oszlopaira.
+>
+> Továbbá nem lehet velük dolgozni az [Elemzés az Excelben](service-analyze-in-excel.md) használatakor, vagy amikor a modellhez nem Power BI-tervezők használatával csatlakoznak.
 
 A tábla egy hierarchiát is meghatároz, amely vizualizációkat biztosít az év, negyedév, hónap és nap szintek részletes elemzési útvonaláról.
 
@@ -98,3 +101,4 @@ Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további inf
 - [Útmutató automatikus dátum/időhöz a Power BI Desktopban](guidance/auto-date-time.md)
 - [Dátumtáblák beállítása és használata a Power BI Desktopban](desktop-date-tables.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

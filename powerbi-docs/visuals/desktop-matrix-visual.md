@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2e4ab92d5d1adce8659cdb971c5061a0f133b38f
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.openlocfilehash: 10f79c8670b42828b4219723bd8e503424e77820
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76895486"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154401"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Mátrixvizualizációk létrehozása a Power BI-ban
 
@@ -136,17 +136,32 @@ A lépcsőzetes elrendezés beállításait egyszerűen módosíthatja. Ha a Má
 
 Ha kikapcsolja a Lépcsőzetes elrendezést, a Power BI egy külön oszlopban jeleníti meg az alkategóriákat, nem pedig a szülőkategória alatt behúzva.
 
-## <a name="subtotals-with-matrix-visuals"></a>Részösszegek a mátrixvizualizációkkal
+## <a name="subtotals-and-grand-totals-with-matrix-visuals"></a>Részösszegek és végösszegek a mátrixvizualizációkkal
 
-A részösszegeket a soroknál és oszlopoknál is ki- vagy bekapcsolhatja a mátrixvizualizációkban. Az alábbi képen látható, hogy a sorok részösszegei **Be** vannak kapcsolva.
+A részösszegeket a soroknál és oszlopoknál is ki- vagy bekapcsolhatja a mátrixvizualizációkban. Az alábbi képen látható, hogy a sorok részösszegei **Be** vannak kapcsolva, és megjelenítésük alul történik.
 
-![mátrix összegekkel és részösszegekkel](media/desktop-matrix-visual/matrix-visual_20.png)
+![mátrix összegekkel és részösszegekkel](media/desktop-matrix-visual/power-bi-subtotals.png)
 
-A Vizualizációk ablaktábla Formátum szakaszában bontsa ki a **Részösszegek** kártyát, és állítsa a Sorok részösszegei csúszkát a **Ki** beállításra. Ebben az esetben a részösszegek nem jelennek meg.
+Ha bekapcsolja **Részösszegeket** és felvesz egy címkét, a Power BI hozzáad egy sort és ugyanazt a címkét a végösszeg értékéhez. A végösszeg formázásához válassza a **Végösszeg** formázási beállítását. 
 
-![mátrix a részösszegek kikapcsolásával](media/desktop-matrix-visual/matrix-visual_21.png)
+![a végösszeg kártyát megjelenítő mátrix](media/desktop-matrix-visual/power-bi-grand-total.png)
+
+Ha ki szeretné kapcsolni a részösszegeket és a végösszeget, a vizualizációk ablaktábla formátum szakaszában bontsa ki a **Részösszegek** kártyát. A sorok részösszegei csúszkát húzza a **Ki** állapotra. Ebben az esetben a részösszegek nem jelennek meg.
+
+![mátrix a részösszegek kikapcsolásával](media/desktop-matrix-visual/power-bi-no-subtotals.png)
 
 Ugyanez a folyamat vonatkozik az oszlopok részösszegeire.
+
+## <a name="add-conditional-icons"></a>Feltételes ikonok hozzáadása
+Vizuális jelzéseket adhat hozzá a táblához vagy mátrixhoz *feltételes ikonokkal*. 
+
+A Vizualizációk panel formátum szakaszában bontsa ki a **Feltételes formázás** kártyát. Az **Ikonok** csúszkát húzza a **Be** állapotba, majd válassza a **Speciális vezérlők** lehetőséget.
+
+![Mátrix ikonokkal képernyő megjelenítve](media/desktop-matrix-visual/power-bi-icons.png)
+
+Állítsa be a mátrix feltételeit, ikonjait és színét, és válassza az **OK** lehetőséget. Ebben a példában egy piros jelölőt használunk az alacsony értékekhez, lila kört a magas értékekhez, és sárga háromszöget a kettő közé eső minden más értékhez. 
+
+![Mátrix ikonokkal megjelenítve](media/desktop-matrix-visual/power-bi-icons-applied.png)
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Keresztkijelölés a mátrixvizualizációkkal
 

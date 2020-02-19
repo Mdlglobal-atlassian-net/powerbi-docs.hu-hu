@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/08/2019
+ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: e3bfdf7fd53e71a4582a1f3e3ba08f55f2e9a290
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: ba39718a5a458ec18af976806bc634d32843afb2
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220339"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259730"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Első lépések az iOS-eszközökhöz készült Power BI mobilalkalmazással
 Az iPhone-on vagy iPad-en futó iOS-es Microsoft Power BI-alkalmazás mobil BI-élményt kínál a Power BI-hoz, a Power BI jelentéskészítő kiszolgálóhoz és a Reporting Services-hez. Az élő, érintéssel vezérelhető mobil hozzáférés révén bárhonnan megtekintheti és kezelheti vállalata helyszíni és felhőbeli irányítópultjait. Böngészheti az irányítópultokon szereplő adatokat, és megoszthatja azokat kollégáival e-mail vagy szöveges üzenet formájában. Kísérje figyelemmel a legidőszerűbb adatokat [Appla Watch](mobile-apple-watch.md)on.  
@@ -40,24 +40,24 @@ Ha még nem regisztrált, látogasson el a [powerbi.com](https://powerbi.microso
 
 ## <a name="get-started-with-the-power-bi-app"></a>Power BI alkalmazás – Az első lépések
 1. Nyissa meg az iOS-eszközön a Power BI alkalmazást.
-2. Power BI-irányítópultjai megtekintéséhez koppintson a **Power BI** lehetőségre.  
-   A Reporting Services mobil jelentései és a KPI-k megtekintéséhez koppintson a **Jelentéskészítő kiszolgáló** lehetőségre.
+2. Ha a Power BI-ba szeretne bejelentkezni, koppintson a **Power BI** lapra, és adja meg a bejelentkezési adatait.  
+   Ha be szeretne jelentkezni a Reporting Services mobiljelentéseibe és a KPI-kbe, koppintson a **Jelentéskészítő kiszolgáló** lapra, és adja meg a bejelentkezési adatait.
    
    ![Bejelentkezés a Power BI-mobilalkalmazásba](./media/mobile-iphone-app-get-started/power-bi-connect-to-login.png)
    
-   Az alkalmazásban elég a fióknak a képernyő bal felső sarkában található profilképére koppintania a kettő közötti váltáshoz. 
+   Az alkalmazásban elég a fióknak a képernyő bal felső sarkában található profilképére koppintania a Power BI és a jelentéskészítő kiszolgáló közötti váltáshoz. 
 
 ## <a name="try-the-power-bi-and-reporting-services-samples"></a>A Power BI- és Reporting Services-minták kipróbálása
 A Power BI- és Reporting Services-mintákat regisztráció nélkül is megtekintheti és kezelheti.
 
 A minták eléréséhez koppintson a navigációs sáv **További lehetőségek** (...) elemére, és válassza a **Minták** lehetőséget.
 
-A Power BI-mintákat néhány Jelentéskészítő kiszolgáló minta követi.
+Néhány Power BI-mintát számos jelentéskészítő kiszolgálói minta követ.
 
    ![Power BI Mobile-minták](./media/mobile-iphone-app-get-started/power-bi-iphone-powerbi-samples.png)
    
    > [!NOTE]
-   > A mintákban nem minden funkció érhető el. Nem tekintheti meg például az irányítópult hátterében álló mintajelentéseket, a mintákat nem oszthatja meg másokkal, és nem jelölheti meg kedvenceiként. 
+   > A mintákban nem minden funkció érhető el. Nem tekintheti meg például az irányítópult hátterében álló mintajelentéseket, a mintákat nem oszthatja meg másokkal, és nem jelölheti meg azokat kedvenceiként. 
    > 
    >
 
@@ -66,7 +66,7 @@ A Power BI-mintákat néhány Jelentéskészítő kiszolgáló minta követi.
 Koppintson a fejlécben található nagyítóra a Power BI-tartalom keresésének megkezdéséhez.
 
 ## <a name="view-your-favorite-dashboards-and-reports"></a>A kedvenc irányítópultok és jelentések megtekintése
-Koppintson a navigációs sáv **Kedvencek** (![](./media/mobile-iphone-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) elemére a Kedvencek oldal megjelenítéséhez. 
+Koppintson a navigációs sáv **Kedvencek** (![](./media/mobile-iphone-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) elemére a Kedvencek lap megjelenítéséhez. 
 
 További információ a [kedvencekről a Power BI-mobilalkalmazásokban](mobile-apps-favorites.md).
 

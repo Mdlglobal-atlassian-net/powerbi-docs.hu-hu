@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 24e5a06d3e835f7ff5114cbf17b772bc7efd00bb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7513479d14b57e47b30d2cd7ac9cc4acfe69d075
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73852229"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77260125"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>A Power BI szolgáltatás alapfogalmai felhasználók számára
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Ez a cikk feltételezi, hogy már elolvasta [a Power BI áttekintését](../fundamentals/power-bi-overview.md), és azonosította magát [Power BI ***-felhasználóként***](end-user-consumer.md). A felhasználók Power BI-tartalmakat, például irányítópultokat és jelentéseket fogadnak a munkatársaktól. A felhasználók a Power BI szolgáltatást, a Power BI webhelyalapú verzióját használják.
+Ez a cikk feltételezi, hogy már elolvasta [a Power BI áttekintését](../fundamentals/power-bi-overview.md), és azonosította magát [Power BI **_-felhasználóként_** ](end-user-consumer.md). A felhasználók Power BI-tartalmakat, például irányítópultokat és jelentéseket fogadnak a munkatársaktól. A felhasználók a Power BI szolgáltatást, a Power BI webhelyalapú verzióját használják.
 
 Minden bizonnyal találkozni fog a „Power BI Desktop”, vagy egyszerűen „Desktop” megnevezéssel. Ezt a különálló eszközt azok a *tervezők* használják, akik irányítópultokat és jelentéseket készítenek és osztanak meg Önnel. Fontos tudni, hogy más Power BI-eszközök is léteznek. Felhasználóként Ön csak a Power BI szolgáltatást fogja használni. Ennek a cikknek a tartalma kizárólag a Power BI szolgáltatásra vonatkozik.
 
@@ -54,13 +54,13 @@ _______________________________________________________
 
 ### <a name="introduction-to-building-blocks"></a>A szolgáltatás elemeinek bemutatása
 
-Felhasználói szempontból a Power BI öt alapvető építőeleme a következő: ***vizualizációk***, ***irányítópultok***, ***jelentések***, ***alkalmazások*** és ***adathalmazok***. Ezeket más néven *Power BI*-***tartalmaknak*** nevezzük. A *tartalmak* a ***munkaterületeken*** találhatók. Egy tipikus munkafolyamat az összes elemet magában foglalja: Egy Power BI-*tervező* (az alábbi ábrán sárgával jelölve) adatokat gyűjt bizonyos *adathalmazokból*, azokat elemzés céljából beviszi a Power BI-ba, *vizualizációkkal* teli *jelentéseket* készít, amelyek érdekes tényeket és megállapításokat tárnak fel, továbbá jelentésekből származó vizualizációkat rögzít egy irányítópulton, illetve jelentéseket és irányítópultokat oszt meg az Önhöz hasonló *felhasználókkal* (az alábbi ábrán feketével jelölve). A *tervező* ezeket *alkalmazások* vagy más típusú megosztott tartalmak formájában osztja meg.
+Felhasználói szempontból a Power BI-nak öt építőeleme van: **_vizualizációk_** , **_irányítópultok_** , **_jelentések_** , **_alkalmazások_** és **_adatkészletek_** . Ezeket más néven *Power BI* **_-tartalmaknak_** nevezzük. A *tartalmak* a **_munkaterületeken_** találhatók. Egy tipikus munkafolyamat az összes elemet magában foglalja: Egy Power BI-*tervező* (az alábbi ábrán sárgával jelölve) adatokat gyűjt bizonyos *adathalmazokból*, azokat elemzés céljából beviszi a Power BI-ba, *vizualizációkkal* teli *jelentéseket* készít, amelyek érdekes tényeket és megállapításokat tárnak fel, továbbá jelentésekből származó vizualizációkat rögzít egy irányítópulton, illetve jelentéseket és irányítópultokat oszt meg az Önhöz hasonló *felhasználókkal* (az alábbi ábrán feketével jelölve). A *tervező* ezeket *alkalmazások* vagy más típusú megosztott tartalmak formájában osztja meg.
 
 ![A Power BI-munkafolyamat egyszerű diagramja.](media/end-user-basic-concepts/power-bi-workflow.png)
 
 Az alapok:
 
-- ![A vizualizáció-ikon képernyőképe.](media/end-user-basic-concepts/visual.png) Egy ***vizualizáció*** egyfajta diagram, amelyet Power BI-*tervezők* készítenek. A vizualizációk a *jelentések* és *adathalmazok* adatait jelenítik meg. A *tervezők* általában a Power BI Desktopban készítik el a vizualizációkat.
+- ![A vizualizáció-ikon képernyőképe.](media/end-user-basic-concepts/visual.png) Egy **_vizualizáció_** egyfajta diagram, amelyet Power BI-*tervezők* készítenek. A vizualizációk a *jelentések* és *adathalmazok* adatait jelenítik meg. A *tervezők* általában a Power BI Desktopban készítik el a vizualizációkat.
 
     További információ: [Interakció vizualizációkkal jelentésekben, irányítópultokon és alkalmazásokban](end-user-visualizations.md).
 
@@ -126,7 +126,7 @@ _______________________________________________________
 
 ## <a name="reports"></a>Jelentések
 
-A Power BI-jelentések egy vagy több oldalnyi vizualizációból, szövegből és grafikai elemekből állnak. Egyetlen jelentés vizualizációi csak egy adatkészleten alapulhatnak. A *tervezők* megosztják a jelentéseket a *felhasználókkal*, akik *Olvasó nézetben* [használják a jelentéseket](end-user-reading-view.md).
+A Power BI-jelentések egy vagy több oldalnyi vizualizációból, szövegből és grafikai elemekből állnak. Egyetlen jelentés vizualizációi csak egy adatkészleten alapulhatnak. A *tervezők* megosztják a jelentéseket a *felhasználókkal*, akik *Olvasó nézetben*[használják a jelentéseket](end-user-reading-view.md).
 
 ![Lapfülekkel rendelkező jelentés képernyőképe.](media/end-user-basic-concepts/power-bi-report.png)
 

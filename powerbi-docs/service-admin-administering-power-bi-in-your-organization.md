@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 57819765b156baac2a86b8144e86770a0117adfd
-ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
+ms.openlocfilehash: 864854e774defee16d446a513622e1134c77d75c
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548583"
+ms.lasthandoff: 02/10/2020
+ms.locfileid: "77115262"
 ---
 # <a name="what-is-power-bi-administration"></a>Mit jelent a Power BI-felügyelet?
 
@@ -80,10 +80,9 @@ A Power BI-adminisztrációhoz számos eszköz használható, amelyeket az aláb
 
 Ebből a cikkből megismerhette a Power BI-rendszergazdai feladatok lényegesebb aspektusait, az egyes szerepköröket, a hozzájuk kapcsolódó feladatokat és a felhasználható eszközöket. Ezek mélyebb megértéséhez az alábbi cikkeket, illetve témaköröket ajánljuk figyelmébe.
 
-[A Power BI felügyeleti portál használata](service-admin-portal.md)
-
-[PowerShell-parancsmagok használata](/powershell/power-bi/overview)
-
-[Gyakori kérdések a Power BI-felügyelettel kapcsolatban](service-admin-faq.md)
-
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- [A Power BI felügyeleti portál használata](service-admin-portal.md)
+- [Útmutató a bérlői rendszergazdai beállításokhoz](guidance/admin-tenant-settings.md)
+- [PowerShell-parancsmagok használata](/powershell/power-bi/overview)
+- [Gyakori kérdések a Power BI-felügyelettel kapcsolatban](service-admin-faq.md)
+- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)
