@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/10/2019
+ms.date: 02/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 8a97f30f75b8bf720d735944589e671392c47237
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1bf7cc85411fef27e626c330cc07207187302bfc
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75223968"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427737"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>A Power BI Premium megvásárlása
 
 Ez a cikk azt ismerteti, hogyan vásárolhat Power BI Premium-kapacitást cége számára. A cikk két forgatókönyvet érint:
 
-- P termékváltozatok használata a tipikus éles környezetekben. A P termékváltozatokhoz havi vagy éves kötelezettségvállalásra van szükség, és havi díjat számítunk fel. A P termékváltozatokat a [Microsoft 365 felügyeleti központban](https://admmin.microsoft.com) vásárolhatja meg.
+- P termékváltozatok használata a tipikus éles környezetekben. A P termékváltozatokhoz havi vagy éves kötelezettségvállalásra van szükség, és havi díjat számítunk fel.
 
 - Az A termékváltozatok használata tesztelési forgatókönyvekhez, illetve olyan esetekhez, amikor nem rendelkezik a P termékváltozatok megvásárlásához szükséges engedélyekkel (Microsoft 365 globális rendszergazdai szerepkör vagy számlázási rendszergazdai szerepkör). Az A termékváltozatokhoz nem szükséges időalapú kötelezettségvállalás, és a számlázás óránként történik. Az A termékváltozatokat az [Azure Portalon](https://portal.azure.com) lehet megvásárolni.
 

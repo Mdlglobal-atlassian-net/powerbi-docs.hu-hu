@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b90357aa6d8f66612857e8247a8b48dc2c2c369
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 83cf7517fac569f8439f1debcdf621a786835d2c
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539609"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427369"
 ---
 # <a name="implement-row-level-security-in-an-analysis-services-tabular-model"></a>Sorszintű biztonság megvalósítása Analysis Services-beli táblázatos modellel
 
@@ -82,7 +82,7 @@ Miután a relációs adattárház elérhető, meg kell határoznia a táblázato
 
 1. A `LOOKUPVALUE` függvény annak az oszlopnak az értékeit adja vissza, amelyben a Windows-felhasználónév megegyezik a `USERNAME` függvény által visszaadottal. Ez után a lekérdezéseket leszűkítheti azokra, ahol a `LOOKUPVALUE` által visszaadott értékek megegyeznek az ebben vagy egy kapcsolódó táblában lévőkkel. A **DAX-szűrő** oszlopba írja be a következő képletet:
 
-    ```sql
+    ```dax
         =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
     ```
 
@@ -95,7 +95,7 @@ Miután a relációs adattárház elérhető, meg kell határoznia a táblázato
 
 1. A `DimUserSecurity` tábla **DAX-szűrő** oszlopába szúrja be a következő képletet:
 
-    ```sql
+    ```dax
         =FALSE()
     ```
 
@@ -175,7 +175,7 @@ Ha további tevékenység észlelhető az irányítópulton, az SQL Profilerrel 
 
 Alább a jelentés adatainak feltöltéséhez futtatott DAX-lekérdezést is megtekintheti.
    
-   ```sql
+   ```dax
    EVALUATE
      ROW(
        "SumEmployeeKey", CALCULATE(SUM(Employee[EmployeeKey]))

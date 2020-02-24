@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 01/16/2020
-ms.openlocfilehash: f7f163a8930d8bd90d6270f59e8afa602e89dd57
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.date: 02/13/2020
+ms.openlocfilehash: c760450319f5ca32856520bce9c9f9b67a8616d6
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76160834"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427760"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása
 
@@ -45,7 +45,7 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 | Power BI – mobilalkalmazások | Igen | Igen | [Power BI-mobilalkalmazások áttekintése](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | ArcGIS-térképek | Nem | Igen | [Esri ArcGIS-térképek a Power BI szolgáltatásban és a Power BI Desktopban](../visuals/power-bi-visualization-arcgis.md) |
 | E-mail-előfizetés Power BI-jelentésekre | Nem | Igen | [Feliratkozás és mások feliratkoztatása](../service-report-subscribe.md) egy jelentésre vagy irányítópultra a Power BI szolgáltatásban |
-| E-mail-előfizetés többoldalas jelentésekre | Igen | Igen | [Feliratkozás és mások feliratkoztatása többoldalas jelentésre a Power BI szolgáltatásban](../consumer/paginated-reports-subscriptions.md)<br><br>[E-mail-kézbesítés a Reporting Servicesben](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  |
+| E-mail-előfizetés többoldalas jelentésekre | Igen | Igen | [Feliratkozás és mások feliratkoztatása többoldalas jelentésre a Power BI szolgáltatásban](../consumer/paginated-reports-subscriptions.md)<br><br>[E-mail-kézbesítés a Reporting Servicesben](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal)  |
 | Adatriasztások | Nem | Igen | [Adatriasztások](../service-set-data-alerts.md) a Power BI szolgáltatásban
 | Sorszintű biztonság (RLS) | Igen | Igen | Elérhető DirectQuery- (adatforrással) és Import-módban is <br><br>Sorszintű biztonság (RLS) a [Power BI szolgáltatásban](../service-admin-rls.md) <br><br>Sorszintű biztonság (RLS) a [Power BI jelentéskészítő kiszolgálóban](row-level-security-report-server.md) |
 | Teljes képernyős mód | Nem | Igen | [Teljes képernyős mód](../consumer/end-user-focus.md) a Power BI szolgáltatásban |

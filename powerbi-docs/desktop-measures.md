@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 9c181deb4e36624fa714242583e3fe209abdfb47
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: c166f2d72b170dfb76e3c1f7f6d50052083df6a2
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889328"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427392"
 ---
 # <a name="create-measures-for-data-analysis-in-power-bi-desktop"></a>Mértékek létrehozása adatelemzéshez a Power BI Desktopban
 
@@ -49,7 +49,7 @@ Jan észreveszi, hogy bár ő maga nem adott meg számítást, a rendszer automa
 
 Jannek azonban egy olyan mértékre van szüksége, amely a következő évre vonatkozó előrejelzéseket adja meg, ami az elmúlt év értékesítési adatainak 1,06-szorosa, figyelembe véve a várható 6 százalékos üzleti növekedést. Ehhez a számításhoz Jan létrehoz egy egyéni mértéket. Az *Új mérték* funkcióval létrehoz egy új mértéket, amelyben a következő DAX-képletet adja meg:
 
-```sql
+```dax
     Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 ```
 
