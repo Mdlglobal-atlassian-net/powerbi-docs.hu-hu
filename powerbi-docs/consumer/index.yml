@@ -1,0 +1,101 @@
+### YamlMime:Landing
+title: A Power BI fogyasztóknak dokumentációja
+summary: A felhasználók irányítópultokat és jelentéseket fogadnak a munkatársaktól. Ezeket a tartalmakat a Power BI-ban tudja áttekinteni és felhasználni üzleti döntések meghozatalához.
+metadata:
+  title: A Power BI felhasználók számára
+  description: Most ismerkedik a Power BI-jal? Megismerkedhet a Power BI szolgáltatás funkcióival és képességeivel, és látni fogja, hogy mit tehet meg általuk mint Power BI-ügyfél vagy -végfelhasználó.
+  ms.service: powerbi
+  ms.subservice: powerbi-consumer
+  ms.topic: landing-page
+  author: mihart
+  ms.author: mihart
+  ms.date: 01/10/2020
+  ms.openlocfilehash: d08520a7ee3526323111de91c4dfb67e139a8813
+  ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+  ms.translationtype: HT
+  ms.contentlocale: hu-HU
+  ms.lasthandoff: 02/20/2020
+  ms.locfileid: "77497793"
+landingContent:
+- title: A Power BI bemutatása felhasználók számára
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Ki tekinthető Power BI-felhasználónak?
+      url: end-user-consumer.md
+    - text: A Power BI szolgáltatás bemutatójának megtekintése
+      url: end-user-reading-view.md
+    - text: A fogalmak és a tartalom áttekintése
+      url: end-user-basic-concepts.md
+- title: Első lépések
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Bejelentkezés
+      url: end-user-sign-in.md
+  - linkListType: concept
+    links:
+    - text: Tudnivalók a jelentésekről
+      url: end-user-reports.md
+    - text: Tudnivalók az irányítópultokról
+      url: end-user-dashboards.md
+    - text: Tudnivalók az alkalmazásokról
+      url: end-user-apps.md
+- title: Tartalom megtekintése
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Jelentés megtekintése
+      url: end-user-report-view.md
+    - text: Nagyobb vagy önálló tartalom megjelenítése
+      url: end-user-focus.md
+    - text: A vizualizáció létrehozásához használt adatok megjelenítése
+      url: end-user-show-data.md
+    - text: Adatok exportálása Excelbe
+      url: end-user-export.md
+- title: Interakció és elemzés
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Navigáció a Power BI-ban
+      url: end-user-experience.md
+    - text: Vizualizációk részletes elemzése
+      url: end-user-drill.md
+    - text: Vizualizációk rendezési módjának módosítása
+      url: end-user-change-sort.md
+    - text: Jelentésszűrők használata
+      url: end-user-report-filter.md
+    - text: Kérdések feltétele természetes nyelven
+      url: end-user-q-and-a.md
+- title: Közös használat és tartalommegosztás
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Jelentés közzététele a PowerPointban
+      url: end-user-powerpoint.md
+    - text: Jelentés exportálása PDF-be
+      url: end-user-pdf.md
+    - text: Feliratkozás a tartalomra
+      url: end-user-subscribe.md
+- title: Speciális témakörök
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Könyvjelzők létrehozása és használata
+      url: end-user-bookmarks.md
+    - text: Automatikus elemzések megtekintése
+      url: end-user-insights.md
+    - text: Többoldalas jelentés megtekintése
+      url: paginated-reports-view-power-bi-service.md
+- title: Erőforrások
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Szószedet
+      url: end-user-glossary.md
+    - text: Gyakori kérdések
+      url: end-user-faq.md
+    - text: Elemzések típusai
+      url: end-user-insight-types.md
+    - text: Vizualizációk típusai
+      url: end-user-visual-type.md

@@ -8,24 +8,24 @@
           href: end-user-consumer.md
         - name: Alapfogalmak és szakkifejezések Power BI-felhasználók számára
           href: end-user-basic-concepts.md
+        - name: A Power BI szolgáltatás bemutatójának megtekintése
+          href: end-user-reading-view.md
+    - name: Első lépések
+      items:
+        - name: Navigáció a Power BI szolgáltatásban
+          href: end-user-experience.md
         - name: Tartalom keresése a Kezdőlap használatával
           href: end-user-home.md
+        - name: Kérdések feltétele természetes nyelven
+          href: end-user-q-and-a.md
+        - name: Bejelentkezés első alkalommal
+          href: end-user-sign-in.md
+        - name: A licenc típusának megkeresése
+          href: end-user-license.md
         - name: Navigálás az „új megjelenésen”
           href: ../service-new-look.md
         - name: 'Az „új megjelenés”: Hol vannak a műveletek?'
           href: ../service-new-look-where-actions.md
-    - name: Rövid útmutatók
-      items:
-        - name: Navigáció a Power BI szolgáltatásban
-          href: end-user-experience.md
-        - name: Mire használható a Power BI-t?
-          href: end-user-reading-view.md
-        - name: Bejelentkezés első alkalommal
-          href: end-user-sign-in.md
-    - name: Oktatóanyagok
-      items:
-        - name: Irányítópult-értesítés létrehozása
-          href: end-user-alerts.md
     - name: Útmutató
       items:
         - name: Irányítópultok
@@ -40,6 +40,10 @@
               href: end-user-tiles.md
             - name: Megjegyzés hozzáadása vagy beszélgetés indítása
               href: end-user-comment.md
+            - name: Az irányítópult csempéihez tartozó automatikus elemzések megtekintése
+              href: end-user-insights.md
+            - name: Irányítópult-értesítés létrehozása
+              href: end-user-alerts.md
         - name: Jelentések
           items:
             - name: Jelentések
@@ -78,7 +82,7 @@
               href: end-user-visual-type.md
             - name: A vizualizáció létrehozásához használt adatok megjelenítése
               href: end-user-show-data.md
-            - name: Lehatolás a vizualizációk mélyebb szintjeire a Power BI-ban
+            - name: Vizualizációk részletes elemzése
               href: end-user-drill.md
             - name: Az ArcGIS-térképek használata
               href: ../power-bi-visualizations-arcgis.md
@@ -104,8 +108,6 @@
               href: end-user-subscribe.md
             - name: Tartalmak keresése és rendezése a Power BI-ban
               href: end-user-search-sort.md
-            - name: Az irányítópult csempéihez tartozó automatikus elemzések megtekintése
-              href: end-user-insights.md
             - name: Előzetes verziójú funkciók bekapcsolása
               href: end-user-preview-features.md
             - name: Értesítések fogadása a Power BI-szolgáltatásokban
@@ -134,7 +136,7 @@
           href: end-user-faq.md
         - name: Támogatott böngészők
           href: end-user-browsers.md
-        - name: A Power BI által támogatott gyors elemzések típusai
+        - name: Gyors elemzések típusai
           href: end-user-insight-types.md
 - name: Power BI – mobilalkalmazások
   items:
