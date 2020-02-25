@@ -7,23 +7,28 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: da941de8b44f3833a5f80bba648f4a185f35b36e
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 59ba4d0e62613ed25569efd0602815e3d98aec4d
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852042"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496494"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Megjegyzés hozzáadása irányítópulthoz vagy jelentéshez
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Hozzáadhat személyes megjegyzéseket, vagy az irányítópultra vagy a jelentésre vonatkozó beszélgetést kezdeményezhet a munkatársaival. A **megjegyzés** csak az egyik olyan funkció a sok közül, amely lehetővé teszi a *felhasználó* számára a másokkal való együttműködést. 
 
 ![Megjegyzések videó](media/end-user-comment/comment.gif)
+
+> [!NOTE]
+> Ahhoz, hogy együttműködhessen másokkal, például megjegyzésekkel láthasson el és megoszthasson jelentéseket, Power BI Pro vagy Premium licenc szükséges. [Milyen típusú licenccel rendelkezem?](end-user-license.md)
 
 ## <a name="how-to-use-the-comments-feature"></a>A Megjegyzések funkció használata
 Megjegyzések fűzhetők egy teljes irányítópulthoz, annak egyes vizualizációihoz, egy jelentésoldalhoz, egy lapszámozott jelentéshez, valamint annak egyes vizualizációihoz. Felvehet általános, vagy egy bizonyos munkatársaknak szánt megjegyzést is.  
@@ -34,7 +39,7 @@ Amikor megjegyzést ad hozzá egy jelentéshez, a Power BI rögzíti az aktuáli
 
 Mi ennek a jelentősége? Tegyük fel, hogy egy munkatársa egy olyan szűrőt alkalmazott, amely érdekes elemzést eredményezett, és ezt meg szeretné osztani a csoporttal. A szűrő kijelölése nélkül a megjegyzés értelmét vesztheti.
 
-Ha lapszámozott jelentést használ, akkor csak általános megjegyzéseket fűzhet a jelentéshez.  A jelentések egyes vizualizációihoz nem lehet megjegyzéseket fűzni.
+Ha lapszámozott jelentést használ, akkor csak általános megjegyzéseket fűzhet a jelentéshez.  A többoldalas jelentések egyes vizualizációihoz nem lehet megjegyzéseket fűzni.
 
 ### <a name="add-a-general-comment-to-a-dashboard-or-report"></a>Általános megjegyzés hozzáadása irányítópulthoz vagy jelentéshez
 Az irányítópultok és a jelentések esetén hasonló a megjegyzések hozzáadásának menete.  Ebben a példában egy irányítópultot használunk. 

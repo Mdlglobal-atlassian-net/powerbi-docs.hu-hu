@@ -7,17 +7,19 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: tutorial
-ms.date: 10/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f7ebc459379dbf292603a605db8d3f9c7162e92f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5f4dc1d1f3e707a59ef81e63be42714c499d050f
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851282"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496516"
 ---
-# <a name="tutorial-set-dashboard-alerts-on-power-bi-dashboards"></a>Oktatóanyag: Irányítópult-riasztások beállítása Power BI-irányítópultokon
+# <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>Oktatóanyag: Riasztások beállítása Power BI-irányítópultokon
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -112,6 +114,7 @@ A riasztásokat többféle módon is kezelheti: Magán az irányítópult csemp�
 * Riasztásokat csak mérőműszereken, KPI-ken és kártyákon lehet beállítani.
 * Ha nem tud riasztást beállítani mérőműszerre, KPI-re vagy kártyára, kérjen segítséget a rendszergazdától. Időnként a riasztások ki vannak kapcsolva, vagy nem érhetők el az irányítópulthoz vagy az irányítópult-csempék bizonyos típusaihoz.
 * A riasztások kizárólag a frissített adatokon működnek. Statikus adatokon nem. A Microsoft által megadott minták többsége statikus. 
+* Nem a *fogyasztók* hozzák létre saját irányítópultjaikat, irányítópultokat a *készítők* hoznak létre és osztanak meg a fogyasztókkal. Megosztott tartalom fogadásához és megtekintéséhez Power BI Pro vagy Prémium licenc szükséges. További információ: [Milyen licenccel rendelkezem?](end-user-license.md) 
 
 
 ## <a name="clean-up-resources"></a>Erőforrások felszabadítása

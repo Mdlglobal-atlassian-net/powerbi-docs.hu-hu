@@ -3,21 +3,22 @@ title: Mi a Power BI-alkalmazás?
 description: A Power BI-ban az alkalmazások egy helyen hozzák össze az összefüggő irányítópultokat és jelentéseket.
 author: mihart
 ms.reviewer: lukaszp
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 784c0ed368a12951220ccf719c70ac7d8d3db040
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fd11e6fd45a3978eb301adabc15ac8941e7824bf
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851027"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496713"
 ---
 # <a name="apps-in-power-bi"></a>Alkalmazások a Power BI-ban
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -29,9 +30,9 @@ Alkalmazásai az **Alkalmazások** tartalomlistába vannak rendezve. Az alkalmaz
 ![Alkalmazások a Power BI-ban](./media/end-user-apps/power-bi-apps.png)
 
 > [!NOTE]
-> Az alkalmazás funkciójának használatához Power BI Pro-licencre van szükség. <!-- add link to how to figure out your license -->
+> Az alkalmazás funkciójának használatához Power BI Pro-licencre van szükség. [Licenctípus megállapítása](end-user-license.md)
 
-## <a name="app-designers-and-app-consumers"></a>Alkalmazások ***tervezői*** és ***fogyasztói***
+## <a name="app-designers-and-app-consumers"></a>Alkalmazások *tervezői* és *fogyasztói*
 Szerepkörétől függően létrehozhat alkalmazásokat (ha *tervező*) saját maga vagy akár kollégái számára. Az is lehet, hogy mások által létrehozott alkalmazásokat kap és tölt le (*fogyasztó*). Ez a cikk az alkalmazások *fogyasztóinak* szól.
 
 ## <a name="advantages-of-apps"></a>Az alkalmazások előnyei
