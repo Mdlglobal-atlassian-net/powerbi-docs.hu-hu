@@ -9,16 +9,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bfa4534b625a965226dfced17403a7e2da7a7f84
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b5ef7e99edbf862891811047ea5f1f961aaea348
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699199"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527591"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Az egyszeri bejelentkezés (SSO) áttekintése a Power BI-ban található átjárókhoz
 
-A helyszíni adatátjáró konfigurálásával zökkenőmentes egyszeri bejelentkezési kapcsolatot hozhat létre, amely lehetővé teszi a Power BI-jelentések és -irányítópultok valós idejű frissítését a helyszíni adatokból. Lehetősége van az átjáró konfigurálására a [Kerberos](service-gateway-sso-kerberos.md) korlátozott delegálással vagy a Security Assertion Markup Language ([SAML](service-gateway-sso-saml.md)) használatával. A helyszíni adatátjáró a helyszíni adatforrásokhoz csatlakozó [DirectQuery](desktop-directquery-about.md) használatával támogatja az SSO-t.
+A helyszíni adatátjáró konfigurálásával zökkenőmentes egyszeri bejelentkezési kapcsolatot hozhat létre, amely lehetővé teszi a Power BI-jelentések és -irányítópultok valós idejű frissítését a helyszíni adatokból. Lehetősége van az átjáró konfigurálására a [Kerberos](service-gateway-sso-kerberos.md) korlátozott delegálással vagy a Security Assertion Markup Language ([SAML](service-gateway-sso-saml.md)) használatával. A helyszíni adatátjáró a helyszíni adatforrásokhoz csatlakozó [DirectQuery](desktop-directquery-about.md) használatával vagy frissítéshez támogatja az SSO-t. 
 
 A Power BI az alábbi adatforrásokat támogatja:
 
@@ -33,7 +33,9 @@ A Power BI az alábbi adatforrásokat támogatja:
 
 Az egyszeri bejelentkezés jelenleg nincs támogatva az [M-bővítményeknél](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).
 
-Ha egy felhasználó DirectQuery-jelentést használ a Power BI szolgáltatásban, az összes keresztszűrő, szeletelő, rendezés és szerkesztési művelet olyan lekérdezéseket eredményezhet, amelyek az alapul szolgáló helyszíni adatforrásból dolgoznak. Ha az egyszeri bejelentkezés konfigurálva van az adatforráshoz, akkor a Power BI-t használó felhasználó identitása alatt futnak a lekérdezések (vagyis a webtartalmakon vagy a Power BI-mobilalkalmazásokon keresztül). Ezért minden felhasználó pontosan azokat az adatokat látja, amelyekhez engedélye van az alapul szolgáló adatforrásban. Ha az egyszeri bejelentkezés konfigurálva van, nincs megosztott adatgyorsítótárazás a különböző felhasználók számára.
+Ha egy felhasználó DirectQuery-jelentést használ a Power BI szolgáltatásban, az összes keresztszűrő, szeletelő, rendezés és szerkesztési művelet olyan lekérdezéseket eredményezhet, amelyek az alapul szolgáló helyszíni adatforrásból dolgoznak. Ha az egyszeri bejelentkezés konfigurálva van az adatforráshoz, akkor a Power BI-t használó felhasználó identitása alatt futnak a lekérdezések (vagyis a webtartalmakon vagy a Power BI-mobilalkalmazásokon keresztül). Ezért minden felhasználó pontosan azokat az adatokat látja, amelyekhez engedélye van az alapul szolgáló adatforrásban. 
+
+Olyan jelentést is konfigurálhat SSO használatára, amely a Power BI szolgáltatásban van beállítva frissítéshez. Ha ilyen adatforráshoz konfigurál SSO-t, a lekérdezések az adathalmaz tulajdonosának identitása alatt fognak futni a Power BI-ban. A frissítés ezért az adathalmaz tulajdonosának a mögöttes adatforrásbeli engedélyei alapján történik meg. Az SSO-t használó frissítés jelenleg csak a korlátozott [Kerberos](service-gateway-sso-kerberos.md)-delegálást használó adatforrásokhoz van engedélyezve 
 
 ## <a name="query-steps-when-running-sso"></a>A lekérdezés lépései SSO futtatása esetén
 

@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/03/2019
-ms.openlocfilehash: 2a95f8afce2762b82e73741563a29fa22b433d36
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 02/13/2020
+ms.openlocfilehash: ee789274f6581423ed7adebc5b662a732dbeaa7a
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874120"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426656"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
 
@@ -93,11 +93,15 @@ A Power BI jelentéskészítő kiszolgálón tárolt jelentések nem támogatjá
 * Útkövetési eszközök
 * Földrajzi hely szerinti szűrés vagy vonalkódok
 
+### <a name="custom-security"></a>Egyéni biztonság
+
+A Power BI Jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop nem támogatja az egyéni biztonságot. Ha a Power BI Jelentéskészítő kiszolgáló egyéni biztonsági bővítménnyel van konfigurálva, nem menthet Power BI-jelentést a (Power BI Jelentéskészítő kiszolgálóhoz optimalizált) Power BI Desktopból a Power BI Jelentéskészítő kiszolgáló-példányba. Ki kell mentenie a .pbix-jelentésfájlt a Power BI Desktopból, és fel kell töltenie azt a Power BI Jelentéskészítő kiszolgáló portál webhelyén.
+
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop a Power BI jelentéskészítő kiszolgáló korábbi verzióihoz
 
 Ha a jelentéskészítő kiszolgálója korábbi verziójú, akkor a Power BI Desktop vonatkozó verzióját kell használnia. Korábbi verziók az alábbi hivatkozással tölthetők le.
 
-- Microsoft Power BI Desktop ([A Power BI jelentéskészítő kiszolgálóra (2019. január) optimalizálva](https://go.microsoft.com/fwlink/?linkid=2055039))
+- Microsoft Power BI Desktop ([A Power BI jelentéskészítő kiszolgálóra (2019. szeptember) optimalizálva](https://go.microsoft.com/fwlink/?linkid=2103723))
 
 ## <a name="next-steps"></a>Következő lépések
 

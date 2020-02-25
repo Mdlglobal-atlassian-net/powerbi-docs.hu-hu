@@ -6,20 +6,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dcfc695d0371cce21a827ddfe71b3b4b05863935
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 882cddf7728a27e78056a35c14fde20f00678e33
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762416"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527702"
 ---
 # <a name="use-the-facebook-connector-for-power-bi-desktop"></a>A Power BI Desktophoz készült Facebook-összekötő használata
 A **Power BI Desktop** Facebook-összekötője a Facebook Graph API-ra támaszkodik, ezért az idő során változhatnak a funkciók, és módosulhat az elérhetőség.
 
 Tekintse meg [a Power BI Desktophoz készült Facebook-összekötő útmutatóját](desktop-tutorial-facebook-analytics.md).
+
+> [!IMPORTANT]
+> **Értesítés a Facebook-adatösszekötő elavulásáról:** 2020 áprilisától a Facebook-adatok Excelbe importálásának és frissítésének a lehetősége nem működik megfelelően. Addig még használhatja a *Beolvasás és átalakítás (Power Query)* Facebook-összekötőt. A megadott dátum után nem fog tudni a Facebookhoz csatlakozni és hibaüzenetet kap. Javasoljuk, hogy a váratlan eredmények elkerülése érdekében minél hamarabb vizsgálja felül vagy távolítsa el a Facebook-összekötőt használó *Beolvasás és átalakítás (Power Query)* meglévő lekérdezéseit.
+
 
 A Facebook Graph API 1.0-s verziója 2015. április 30-án lejárt. A Power BI a Facebook-összekötő hátterében működő Graph API-t használja az adatokhoz történő csatlakozáshoz és az adatelemzéshez.
 

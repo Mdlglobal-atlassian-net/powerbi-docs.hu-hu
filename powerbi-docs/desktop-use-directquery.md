@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 90721b059958e59cfd74f9ba1d0d25617a7438e6
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: d8432ae10afab6cbf12c017a8f315fd55825212d
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889282"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427231"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>A DirectQuery használata a Power BI Desktopban
 A *Power BI Desktop* használatával az adatforrásokhoz való kapcsolódáskor mindig importálhat egy másolatot az adatokról a Power BI Desktopba. Egyes adatforrások esetében egy alternatív módszer is használható: ha közvetlenül kapcsolódik az adatforráshoz a DirectQuery használatával.
@@ -46,8 +46,6 @@ A DirectQuery használatának néhány előnye:
 
 ## <a name="limitations-of-directquery"></a>A DirectQuery korlátozásai
 A DirectQuery használata jelenleg néhány korlátozással jár:
-
-- Ha nem [kompozit modelleket](desktop-composite-models.md) használ, minden táblának egyetlen adatbázisból kell származnia.
 
 - Ha a **Lekérdezésszerkesztőben** megadott lekérdezés túl összetett, hiba történik. A hiba javításához a **Lekérdezésszerkesztőben** törölheti a problémás lépést, vagy a DirectQuery használata helyett *importálhatja* az adatokat. A többdimenziós forrásokhoz, amilyen az SAP Business Warehouse is, nincs **Lekérdezésszerkesztő**.
 
@@ -94,7 +92,7 @@ Ha a használt adatforráshoz nem szükséges a **helyszíni adatátjáró** (**
 
 4. Vegye fel a hitelesítő adatokat. Ellenkező esetben hiba lép fel, amikor megnyitja a közzétett jelentést, vagy olyan adathalmaz kezel, amely DirectQuery-kapcsolattal lett létrehozva.
 
-Adatkapcsolat kiépítéséhez az **Azure SQL Database**, az **Azure SQL Data Warehouse** és a **Redshift** kivételével a DirectQueryt használó minden adatforrás esetében telepítenie kell egy **helyszíni adatátjárót**, valamint regisztrálnia kell az adatforrást. További információ: [Mi az a helyszíni adatátjáró?](service-gateway-onprem.md)
+Adatkapcsolat kiépítéséhez az **Azure SQL Database**, az **Azure SQL Data Warehouse** a **Redshift** és a **Snowflake Data Warehouse** kivételével a DirectQueryt használó minden adatforrás esetében telepítenie kell egy **helyszíni adatátjárót**, valamint regisztrálnia kell az adatforrást. További információ: [Mi az a helyszíni adatátjáró?](service-gateway-onprem.md)
 
 ## <a name="next-steps"></a>Következő lépések
 Ha többet szeretne megtudni a DirectQueryről, tekintse át a következő forrásanyagokat:

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 02/20/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 24867d231cca0135c09119f4b885b393cb2b8dd8
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 3dd50d4f57b3146135cde5e91062ed3b2a0eecc1
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699061"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527338"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Gyakori kérdések a Power BI-beli magas rendelkezésre állással, feladatátvétellel és vészhelyreállítással kapcsolatban
 
@@ -53,7 +53,10 @@ Mindkét esetben a Power BI vezetőségének tagjai döntenek a feladatátvétel
 
 ## <a name="how-long-does-it-take-power-bi-to-fail-over"></a>Mennyi időt vesz igénybe a Power BI feladatátvétele?
 
-A feladatátvételről szóló döntés után akár 60 perc is eltelhet a feladatot átvevő példány elérhetővé válásáig.
+A Power BI körülbelül 15 perccel az után lesz újra működőképes, hogy észleli a feladatátvétel szükségességét. A feladatátvétel szükségességének felismeréséhez szükséges idő a megszakadt tevékenységtől függően változó. 
+
+Ha feladatátvételre kerül sor, a Power BI Azure Storage georeplikációt használ a feladatátvétel végrehajtásához. Az ilyen replikációknak általában 15 perces visszatérési pontja van, azonban [az Azure Storage nem garantálja ezt az időkeretet](https://docs.microsoft.com/azure/storage/common/storage-redundancy) SLA-val, ezért a Power BI sem garantálhat időkeretet. 
+
 
 ## <a name="when-does-my-power-bi-instance-return-to-the-original-region"></a>Mikor tér vissza a Power BI-példányom az eredeti régióba?
 
