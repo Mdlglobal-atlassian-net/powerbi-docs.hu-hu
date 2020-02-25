@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 241789dc6255dd461ef6cc62425b732788d7c63d
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: 85db7414fc476f2a62368d150e068a71c13d41cb
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410847"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527522"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>A csillagséma és a Power BI-ban játszott szerepének a bemutatása
 
@@ -71,9 +71,10 @@ Fontos tudnivaló, hogy a Power BI-modellek egy másféle összegzési módot is
 
 ![Példaikon a mezőlistában](media/star-schema/field-list-example.png)
 
-A mértékek létrehozása mellett azonban még egyszerű, oszlopszintű összegzések esetén is két meggyőző érv szól:
+A mértékek létrehozása mellett azonban még egyszerű, oszlopszintű összegzések esetén is három meggyőző érv szól:
 
 - Ha tudja, hogy a jelentéskészítők [többdimenziós kifejezések (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017) használatával fogják lekérdezni a modellt, akkor a modellnek _explicit mértékeket_ kell tartalmaznia. Az explicit mértékek meghatározása a DAX segítségével történik. Ez a tervezési megközelítés különösen fontos, ha Power BI-adatkészleteket kérdez le az MDX használatával, mivel az MDX nem tudja elérni az oszlopok értékeinek összegzését. A rendszer az MDX-et használja az [Excelben való elemzéshez](https://docs.microsoft.com/power-bi/service-analyze-in-excel) (a kimutatások MDX-lekérdezéseket adnak ki).
+- Ha tudja, hogy a jelentésszerzők lapszámozott Power BI-jelentéseket fognak létrehozni az MDX-lekérdezéstervezővel, a modellnek explicit mértékeket kell tartalmaznia. Csak az MDX-lekérdezéstervező támogatja a [kiszolgálói összesítéseket](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Ha tehát a jelentéskészítőknek a Power BI (és nem a lapszámozott jelentések motorja) által kiértékelt mértékekre van szükségük, az MDX-lekérdezéstervezőt kell használniuk.
 - Ha biztosítania kell, hogy a jelentéskészítők csak bizonyos módokon összegezhessenek oszlopokat. A viszonteladói értékesítések **Egységár** oszlopa (amely az egységenkénti árat jelenti) összesíthető, de csak meghatározott összesítő függvényekkel. Összeadni értelmetlen, más összesítő függvényekkel (minimum, maximum, átlag stb.) viszont összesíthető. Ebben az esetben a modellező elrejtheti az **Egységár** oszlopot, és mértékeket hozhat létre az összes megfelelő összesítő függvényhez.
 
 Megjegyzendő, hogy ez a kialakítási elv jól megfelel a Power BI szolgáltatásban készített jelentésekhez és a Q&A-hoz. A Power BI Desktop élő kapcsolatai viszont lehetővé teszik, hogy a jelentéskészítők felfedjék a rejtett mezőket a **Mezők** panelen, ezáltal megkerüljék a tervező szándékát.

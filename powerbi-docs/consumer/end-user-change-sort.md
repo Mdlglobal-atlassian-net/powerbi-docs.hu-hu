@@ -6,21 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 76370e2b633e21674ba878e70b5ecfc333453c96
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 1a59618ea27944314465d8e08d5f0c249c3bed0b
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76889213"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496477"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>A diagramok rendezésének módosítása egy Power BI-jelentésben
 
-
-
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 
 > [!IMPORTANT]
@@ -32,7 +30,7 @@ Az irányítópulton a vizualizációk nem rendezhetők, de a Power BI-jelentés
 
 ## <a name="get-started"></a>Első lépések
 
-A kezdéshez válasszon ki bármilyen jelentésvizualizációt, majd válassza a **További műveletek** (...) lehetőséget.  Itt három rendezési beállítás található: **Csökkenő sorrend**, **Növekvő sorrend** és **Rendezési szempont**. 
+Elsőként nyisson meg egy Önnel megosztott jelentést. Válasszon ki egy rendezhető vizualizációt, majd válassza a **További műveletek** (...) lehetőséget.  Itt három rendezési beállítás található: **Csökkenő sorrend**, **Növekvő sorrend** és **Rendezési szempont**. 
     
 
 ![sávdiagram ábécé szerint rendezett X-tengellyel](media/end-user-change-sort/power-bi-more-actions.png)
@@ -69,9 +67,9 @@ Néha más (a vizualizációban nem szereplő) mező vagy más feltételek haszn
 
 Ezeket a módosításokat csak a jelentés tervezője végezheti el Önnek. A *tervező* kapcsolattartási adatai a fejléc sávban a jelentés nevét választva találhatók meg.
 
-Ha Ön *tervező*, és szerkesztési engedéllyel rendelkezik a tartalomhoz, olvassa el a [Rendezés oszlop szerint a Power BI Desktopban](../desktop-sort-by-column.md) fejezetet, hogy megtudja, hogyan frissítheti az adatkészletet, és engedélyezheti az ilyen típusú rendezést.
-
 ![A kapcsolattartási adatokat megjelenítő legördülő lista](media/end-user-change-sort/power-bi-contact.png)
+
+Ha Ön *tervező*, és szerkesztési engedéllyel rendelkezik a tartalomhoz, olvassa el a [Rendezés oszlop szerint a Power BI Desktopban](../desktop-sort-by-column.md) fejezetet, hogy megtudja, hogyan frissítheti az adatkészletet, és engedélyezheti az ilyen típusú rendezést.
 
 ## <a name="next-steps"></a>Következő lépések
 További információk [a Power BI-jelentésekben lévő vizualizációkról](end-user-visualizations.md).

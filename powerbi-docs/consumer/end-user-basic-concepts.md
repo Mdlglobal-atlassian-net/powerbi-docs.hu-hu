@@ -8,21 +8,25 @@ ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 7513479d14b57e47b30d2cd7ac9cc4acfe69d075
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 2c8a8356fe20136d0325efe51934a7db3d4b113e
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77260125"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496900"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>A Power BI szolgáltatás alapfogalmai felhasználók számára
+
+[!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Ez a cikk feltételezi, hogy már elolvasta [a Power BI áttekintését](../fundamentals/power-bi-overview.md), és azonosította magát [Power BI **_-felhasználóként_** ](end-user-consumer.md). A felhasználók Power BI-tartalmakat, például irányítópultokat és jelentéseket fogadnak a munkatársaktól. A felhasználók a Power BI szolgáltatást, a Power BI webhelyalapú verzióját használják.
+
+Ha másoktól szeretne tartalmat fogadni, Power BI Pro felhasználói licencre vagy Power BI Premium kapacitáslicencre van szüksége. [A licenc típusának megkeresése](end-user-license.md)
 
 Minden bizonnyal találkozni fog a „Power BI Desktop”, vagy egyszerűen „Desktop” megnevezéssel. Ezt a különálló eszközt azok a *tervezők* használják, akik irányítópultokat és jelentéseket készítenek és osztanak meg Önnel. Fontos tudni, hogy más Power BI-eszközök is léteznek. Felhasználóként Ön csak a Power BI szolgáltatást fogja használni. Ennek a cikknek a tartalma kizárólag a Power BI szolgáltatásra vonatkozik.
 
@@ -179,6 +183,9 @@ _______________________________________________________
 ## <a name="apps"></a>Alkalmazások
 
 Az irányítópultok és jelentések alkalmazásnak nevezett gyűjteményei egy csomagba rendezik a kapcsolódó tartalmakat. Az alkalmazásokat a Power BI-*tervezők* hozzák létre, és osztják meg egyénekkel, csoportokkal, az egész vállalattal vagy a nyilvánossággal. Felhasználóként biztos lehet abban, hogy Ön és a munkatársai ugyanazokkal az adatokkal, a valóság egyazon megbízható verziójával dolgoznak.
+
+> [!NOTE]
+> Az alkalmazások használatához Power BI Pro vagy Premium licenc szükséges. 
 
 ![Képernyőkép a Power BI bal oldali paneljének kijelölt Alkalmazások elemével.](media/end-user-basic-concepts/power-bi-apps.png)
 

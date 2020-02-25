@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: a15a27255f15bdce39ddb14a6cda798d170ba3ad
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4b17ed5458a6245ab5796edcf15f6dee5f885358
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871384"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77497201"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Sablonalkalmazás frissítése, törlése és kinyerése
 
@@ -36,15 +36,21 @@ Ha a módosításokat a Power BI Desktopban végezte, kezdje az 1. lépéssel. 
 
    Láthatja, hogy most már két verzióval rendelkezik: Egy verzióval üzemi környezetben, valamint egy új tesztelési verzióval.
 
-    ![A sablonalkalmazás két verziója](media/service-template-apps-update-extract-delete/power-bi-template-app-update.png)
+    ![A sablonalkalmazás két verziója](media/service-template-apps-update-extract-delete/power-bi-template-app-update1.png)
 
-5. Ha készen áll az alkalmazás előléptetésére az üzem előtti állapotba a bérlőn kívüli további teszteléshez, térjen vissza a Kiadáskezelés panelre, és válassza a **Tesztelés** mellett az **Alkalmazás előléptetése** lehetőséget.
-6. A hivatkozás immáron használható. Küldje be újra a Cloud Partner Portalra (CPP-re) a [Power BI-alkalmazásajánlat frissítéséről](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer) szóló cikk lépéseit követve.
-7. A Cloud Partner Portalon újra **közzé kell tennie** az ajánlatot, valamint ismét érvényesíttetnie kell.
+1. Ha készen áll az alkalmazás előléptetésére az üzem előtti állapotba a bérlőn kívüli további teszteléshez, térjen vissza a Kiadáskezelés panelre, és válassza a **Tesztelés** mellett az **Alkalmazás előléptetése** lehetőséget.
 
-   >[!NOTE]
-   >Az alkalmazást csak akkor léptetheti elő a gyártási fázisra, ha jóvá lett hagyva a Cloud Partner Portalon, valamint már közzétette.
+   Most egy éles és egy előkészítő fázisban található verzióval rendelkezik.
 
+   ![A sablonalkalmazás két verziója (kiszürkítve)](media/service-template-apps-update-extract-delete/power-bi-template-app-update2.png)
+
+   A hivatkozás immáron használható. **Az éles üzem előtti fázisban az Alkalmazás előléptetése gomb szürkén jelenik meg**. Ennek az a célja, hogy meggátolja a jelenlegi alkalmazásverzió éles linkjének véletlen felülírását az előtt, hogy a Cloud Partner Portal ellenőrizhette és jóváhagyhatta volna az új alkalmazásverziót.
+
+1. Küldje be újra a linket Cloud Partner Portalra (CPP-re) a [Power BI-alkalmazásajánlat frissítéséről](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer) szóló cikk lépéseit követve. A Cloud Partner Portalon újra **közzé kell tennie** az ajánlatot, valamint ismét érvényesíttetnie kell, illetve meg kell várnia a jóváhagyást.
+
+   Az ajánlat jóváhagyása után az Alkalmazás előléptetése gomb ismét aktívvá válik. 
+1. Léptesse elő az alkalmazást az éles fázisba.
+   
 ### <a name="update-behavior"></a>Frissítési viselkedés
 
 1. Az alkalmazás frissítésével a sablonalkalmazás telepítője számára elérhetővé válik a [Sablonalkalmazás frissítése](service-template-apps-install-distribute.md#update-a-template-app) lehetőség a már telepített munkaterületen anélkül, hogy elveszítené a kapcsolódási konfigurációt.
@@ -69,7 +75,7 @@ Egy alkalmazásverzió törlése az alkalmazás URL-címét is törli, amely ezu
 
 1. A Kiadáskezelés panelen kattintson a három pontra **(...)** , majd a **Törlés** lehetőségre.
  ![sablonalkalmazás verziójának törlése](media/service-template-apps-update-extract-delete/power-bi-template-app-delete.png)
-  ![sablonalkalmazás verziójának törlése](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
+ ![sablonalkalmazás verziójának törlése](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
 
 >[!NOTE]
 >Ügyeljen arra, hogy ne törölje azt az alkalmazásverziót, amelyet ügyfelek vagy az **AppSource** használ, ezzel ugyanis használhatatlanná teszi azt.

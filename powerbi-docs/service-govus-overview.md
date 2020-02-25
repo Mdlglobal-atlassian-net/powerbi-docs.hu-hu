@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/19/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 26dabde3846ec33e2f5910de75fb8165cce6513a
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 590b00f5eb03b1bd31430866a52faa4748f9b32a
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76160765"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496948"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI az USA kormányzati ügyfelei számára
 Ez a cikk az USA olyan kormányzati ügyfeleinek szól, akik a Power BI-t egy Office 365 Kormányzati verzió részeként helyezik üzembe. A kormányzati csomagok olyan szervezetek egyedi igényeihez lettek kialakítva, amelyeknek meg kell felelniük az Egyesült Államok megfelelőségi és biztonsági szabványainak. Az USA kormányzati ügyfeleinek szóló Power BI szolgáltatás eltér a Power BI kereskedelmi verziójától. Ezek funkcióinak eltéréseit az alábbi szakaszokban ismertetjük.
@@ -89,12 +89,12 @@ A kormányzati felhő ügyfeleire vonatkozó követelményeknek való megfelelé
 |Jelentés létrehozása|Irányítópultok és jelentések létrehozása és megtekintése|Elérhető|Elérhető|Elérhető|
 |  |Ütemezett adatfrissítés|Elérhető|Elérhető|Elérhető|
 |  |Frissíthető csoportos irányítópultok|Elérhető|Elérhető|Elérhető|
-|  |Oldalakra osztott jelentések|Csal a USGov Texas és a USGov Virginia környezetben érhető el |Elérhető|Az ütemterv része|
+|  |Oldalakra osztott jelentések|Elérhető|Elérhető|Az ütemterv része|
 |  |Sablonalkalmazások|Nem érhető el|Nem érhető el|Nem érhető el|
 |Csatlakozás adatokhoz|Adatok és jelentések importálása az Excelből|Elérhető|Elérhető|Elérhető|
 |  |Adatok importálása CSV-fájlból|Elérhető|Elérhető|Elérhető|
 |  |Adatok importálása Power BI Desktop-fájlokból|Elérhető|Elérhető|Elérhető|
-|  |CDS-kapcsolat|Nem érhető el|Nem érhető el|Nem érhető el|
+|  |CDS-kapcsolat|Elérhető|Nem érhető el|Nem érhető el|
 |  |Azure Data Lake Storage Gen2-összekötő|Nem érhető el|Nem érhető el|Nem érhető el|
 |Adatkezelés|Adatkezelési átjáró|Elérhető|Elérhető|Elérhető|
 |  |Adattitkosítás az Azure SQL-ben|Elérhető|Elérhető|Elérhető|
@@ -103,7 +103,7 @@ A kormányzati felhő ügyfeleire vonatkozó követelményeknek való megfelelé
 |  |Beágyazás a SharePoint Online-ba a Beágyazás kijelzővel|Elérhető|Elérhető|Elérhető|
 |  |Adatfolyamok és AI-függvények|Nem érhető el|Nem érhető el|Nem érhető el|
 |  |Power Automate-kapcsolat adatvezérelt riasztásokhoz|Nem érhető el|Nem érhető el|Nem érhető el|
-|  |Power BI fül a Teams szolgáltatásban|Nem érhető el|Nem érhető el|Nem érhető el|
+|  |Power BI fül a Teams szolgáltatásban|Elérhető|Nem érhető el|Nem érhető el|
 |  |Automatizált gépi tanulás|Nem érhető el|Nem érhető el|Nem érhető el|
 |  |Cognitive Services|Nem érhető el|Nem érhető el|Nem érhető el|
 |  |Azure ML|Nem érhető el|Nem érhető el|Nem érhető el|
@@ -111,7 +111,6 @@ A kormányzati felhő ügyfeleire vonatkozó követelményeknek való megfelelé
 ## <a name="next-steps"></a>Következő lépések
 
 * [Regisztráció a Power BI US Governmentre](service-govus-signup.md)
+* [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+* [Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government bemutató</a>
-* [Első lépések a Power BI szolgáltatással](service-get-started.md)
-* [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)
-

@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 53940737f71e04fbf5bccd9520a749f6fc559db9
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: e65dd42e8ec787d0c6edba534f79cdb06e5ba14c
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889236"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527292"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>SQL Server Reporting Services-jelentések migrálása a Power BI-ba
 
@@ -41,16 +41,16 @@ A Power BI-ba való jelentésmigrálás előkészítésének első lépéseként
 
 ### <a name="supported-versions"></a>Támogatott verziók
 
-Helyszínen vagy felhőszolgáltatón (például az Azure-on) üzemeltetett virtuális gépeken futó SSRS-példányokat migrálhat. 
+Helyszínen vagy felhőszolgáltatón (például az Azure-on) üzemeltetett virtuális gépeken futó SSRS-példányokat migrálhat.
 
 Az alábbi lista a Power BI-ba való migráláshoz támogatott SQL Server-verziókat ismerteti:
 
 > [!div class="checklist"]
-> * SQL Server 2012
-> * SQL Server 2014
-> * SQL Server 2016
-> * SQL Server 2017
-> * SQL Server 2019
+> - SQL Server 2012
+> - SQL Server 2014
+> - SQL Server 2016
+> - SQL Server 2017
+> - SQL Server 2019
 
 A Power BI jelentéskészítő kiszolgálóról is migrálhat.
 
@@ -60,11 +60,11 @@ A jelentések előkészítéséhez és migrálásához az [RDL Migration Tool](h
 
 Az eszköz a következő feladatokat automatizálja:
 
-* [Nem támogatott adatforrásokat](../paginated-reports-data-sources.md) és [nem támogatott jelentésfunkciókat](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) keres
-* A _megosztott_ erőforrásokat _beágyazott_-erőforrássá alakítja:
-  * A megosztott **adatforrások** beágyazott adatforrássá válnak
-  * A megosztott **adatkészletek** beágyazott adatkészletté válnak
-* Jelentéseket tesz közzé (amelyek megfelelnek az ellenőrzéseknek) lapszámozott jelentésként egy adott Power BI-munkaterületen (egy Prémium-kapacitáson)
+- [Nem támogatott adatforrásokat](../paginated-reports-data-sources.md) és [nem támogatott jelentésfunkciókat](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) keres
+- A _megosztott_ erőforrásokat _beágyazott_-erőforrássá alakítja:
+  - A megosztott **adatforrások** beágyazott adatforrássá válnak
+  - A megosztott **adatkészletek** beágyazott adatkészletté válnak
+- Jelentéseket tesz közzé (amelyek megfelelnek az ellenőrzéseknek) lapszámozott jelentésként egy adott Power BI-munkaterületen (egy Prémium-kapacitáson)
 
 Nem módosítja vagy nem távolítja el a meglévő jelentéseket. A művelet befejezésekor az eszköz összegzi az összes befejezett műveletet, azok sikerességétől függetlenül.
 
@@ -92,13 +92,13 @@ Az SSRS-kiszolgálókról csak RDL-jelentések migrálhatók a Power BI-ra. Mind
 
 A következő SSRS-elemtípusok azonban nem migrálhatók a Power BI-ba:
 
-* Megosztott adatforrások <sup>1</sup>
-* Megosztott adatkészletek <sup>1</sup>
-* Erőforrások, például képfájlok
-* KPI-k (SSRS 2016 vagy újabb – csak az Enterprise kiadásban)
-* Mobiljelentések (SSRS 2016 vagy újabb – csak az Enterprise kiadásban)
-* Jelentésmodellek (elavult)
-* Jelentésrészek (elavult)
+- Megosztott adatforrások <sup>1</sup>
+- Megosztott adatkészletek <sup>1</sup>
+- Erőforrások, például képfájlok
+- KPI-k (SSRS 2016 vagy újabb – csak az Enterprise kiadásban)
+- Mobiljelentések (SSRS 2016 vagy újabb – csak az Enterprise kiadásban)
+- Jelentésmodellek (elavult)
+- Jelentésrészek (elavult)
 
 <sup>1</sup> A [RDL Migration Tool](https://github.com/microsoft/RdlMigration) automatikusan átalakítja a megosztott adatforrásokat és a megosztott adatkészleteket – amennyiben ezek támogatott adatforrásokat használnak.
 
@@ -120,6 +120,7 @@ A _előkészítési_ fázis célja, hogy minden készen álljon. Ismerteti a Pow
 1. A [Power BI Desktoppal](../desktop-what-is-desktop.md) fejlesszen mobilra optimalizált jelentéseket. Ehhez a [Power KPI egyéni vizualizációt](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) is használhatja az SSRS-mobiljelentések és KPI-k helyett.
 1. A **UserID** (Felhasználóazonosító) beépített mező használatának újraértékelése a jelentésekben. Ha a jelentés adatainak védelmekor a **UserID** mezőre hagyatkozik, akkor vegye figyelembe, hogy ez az oldalakra osztott jelentések (ha a Power BI szolgáltatásban tárolják) esetében az egyszerű felhasználónevet (UPN) adja vissza. Tehát az NT-fióknév, például az _AW\mblythe_ visszaadása helyett a beépített mező az _m.blythe&commat;adventureworks.com_ értékhez hasonlót fog visszaadni. Át kell néznie az adathalmaz definícióit és lehet, hogy még a forrásadatokat is. Az áttekintést és közzétételt követően javasoljuk a jelentések alapos tesztelését, hogy az adatengedélyek a várt módon működjenek.
 1. Az **ExecutionTime** (Végrehajtási idő) beépített mező használatának újraértékelése a jelentésekben. Az oldalakra osztott jelentések esetében (ha a Power BI szolgáltatásban tárolják), a beépített mező a dátum/idő értéket _egyezményes világidő (vagy UTC)_ értékként adja vissza. Ez hatással lehet a jelentésparaméterek alapértelmezett értékeire és a jelentés-végrehajtási időcímkékre (amelyeket általában a jelentés lábléceihez adnak hozzá).
+1. Ha az adatforrás a (helyszíni) SQL Server, ellenőrizze, hogy a jelentések nem használnak-e térkép-vizualizációkat. A térkép-vizualizáció az SQL Server térbeli adattípusaitól függ, amelyeket az átjáró nem támogat. További információ: [Adatlekérési útmutató lapszámozott jelentésekhez (Az SQL Server összetett adattípusai)](report-paginated-data-retrieval.md#sql-server-complex-data-types).
 1. Győződjön meg arról, hogy a jelentéskészítők rendelkeznek a [Power BI Jelentéskészítővel](../report-builder-power-bi.md), és hogy a későbbi kiadások könnyen terjeszthetők a szervezeten belül.
 
 ## <a name="migration-stage"></a>Migrálási szakasz
@@ -146,8 +147,8 @@ Minden, az SSRS-példányhoz és a Power BI-munkaterülethez hozzáféréssel re
 
 Az automatikus migráláshoz két lehetőség áll rendelkezésre. Az alábbi eszközöket használhatja:
 
-* Az RDL Migration Tool
-* Az SSRS és a Power BI nyilvánosan elérhető API-jai
+- Az RDL Migration Tool
+- Az SSRS és a Power BI nyilvánosan elérhető API-jai
 
 A cikkben már ismertettük az [RDL Migration Toolt](#migration-tool).
 
@@ -155,8 +156,8 @@ A tartalom migrálásának automatizálásához emellett a nyilvánosan elérhet
 
 Az API-król további információt itt talál:
 
-* [A Power BI REST API-jainak leírása](../developer/rest-api-reference.md)
-* [Az SQL server Reporting Services REST API-jai](/sql/reporting-services/developer/rest-api)
+- [A Power BI REST API-jainak leírása](../developer/rest-api-reference.md)
+- [Az SQL server Reporting Services REST API-jai](/sql/reporting-services/developer/rest-api)
 
 ## <a name="post-migration-stage"></a>Migrálás utáni szakasz
 
@@ -182,20 +183,21 @@ A migrálás utáni fázis elengedhetetlen az esetleges hibák feloldásához, v
 
 További információt ezekről a problémákról, beleértve ezek ismertetését és megoldását, a következő cikkekben találhat:
 
-* [Premium-kapacitások optimalizálása](../service-premium-capacity-optimize.md)
-* [Premium-kapacitások monitorozása az alkalmazásban](../service-admin-premium-monitor-capacity.md)
+- [Premium-kapacitások optimalizálása](../service-premium-capacity-optimize.md)
+- [Premium-kapacitások monitorozása az alkalmazásban](../service-admin-premium-monitor-capacity.md)
 
 ## <a name="next-steps"></a>Következő lépések
 
 Erről a cikkről a következő forrásanyagokban talál további információt:
 
-* [Mik a lapszámozott jelentések a Power BI Premiumban?](../paginated-reports-report-builder-power-bi.md)
-* Guy in a Cube videó: [Lapszámozott jelentések a Power BI-ban – bevezetés](https://www.youtube.com/watch?v=wfqn45XNK3M)
-* [Többoldalas jelentések használata a Power BI-ban](report-paginated-or-power-bi.md)
-* [Lapszámozott jelentések a Power BI-ban: GYIK](../paginated-reports-faq.md)
-* [Power BI Premium – gyakori kérdések](../service-premium-faq.md)
-* [RDL Migration Tool](https://github.com/microsoft/RdlMigration)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-* Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com)
+- [Mik a lapszámozott jelentések a Power BI Premiumban?](../paginated-reports-report-builder-power-bi.md)
+- [Adatlekérési útmutató lapszámozott jelentésekhez](report-paginated-data-retrieval.md)
+- Guy in a Cube videó: [Lapszámozott jelentések a Power BI-ban – bevezetés](https://www.youtube.com/watch?v=wfqn45XNK3M)
+- [Többoldalas jelentések használata a Power BI-ban](report-paginated-or-power-bi.md)
+- [Lapszámozott jelentések a Power BI-ban: GYIK](../paginated-reports-faq.md)
+- [Power BI Premium – gyakori kérdések](../service-premium-faq.md)
+- [RDL Migration Tool](https://github.com/microsoft/RdlMigration)
+- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)
 
 A Power BI-partnerek segíthetnek a migrálási folyamatban. Power BI-partner bevonásához látogasson el a [Power BI partnerportálra](https://powerbi.microsoft.com/partners/).

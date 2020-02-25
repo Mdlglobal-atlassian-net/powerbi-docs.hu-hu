@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: painbar
-ms.openlocfilehash: 58b2f96b069815af448352b3b54875dc4d6b27ee
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: b7a02261e6e00c01befa8ba7716b9e0d132323ea
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538267"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496754"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>A Power BI alkalmazás távoli konfigurálása mobileszköz-kezelési (MDM-) eszközzel
 
@@ -51,7 +51,7 @@ Az Androidhoz készült Power BI alkalmazással a rendszergazdák konfigurálhat
 | Kulcs | Típus | Értékek | Leírás |
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.ReportTapInteraction | Sztring |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Annak konfigurálása, hogy a vizualizáción való koppintás egyben adatpont-kiválasztás is legyen-e. |
-| ccom.microsoft.powerbi.mobile.RefreshAction | Sztring |  <nobr>pull-to-refresh</nobr><br>gombra | Annak konfigurálása, hogy a jelentés frissítéséhez rendelkezésre áll-e a felhasználónak egy gomb, vagy a frissítés húzással műveletet kell-e használnia. |
+| com.microsoft.powerbi.mobile.RefreshAction | Sztring |  <nobr>pull-to-refresh</nobr><br>gombra | Annak konfigurálása, hogy a jelentés frissítéséhez rendelkezésre áll-e a felhasználónak egy gomb, vagy a frissítés húzással műveletet kell-e használnia. |
 | com.microsoft.powerbi.mobile.FooterAppearance | Sztring |  docked<br>dynamic | Annak konfigurálása, hogy a jelentés lábléce a jelentés alján rögzített vagy automatikusan rejtett legyen-e. |
 
 ## <a name="deploying-app-configuration-settings"></a>Alkalmazáskonfigurációs beállítások bevezetése

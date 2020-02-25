@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: ba39718a5a458ec18af976806bc634d32843afb2
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: c766393c9a4c81c484afe6f934e1ebb8314d0fb9
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259730"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426633"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Első lépések az iOS-eszközökhöz készült Power BI mobilalkalmazással
 Az iPhone-on vagy iPad-en futó iOS-es Microsoft Power BI-alkalmazás mobil BI-élményt kínál a Power BI-hoz, a Power BI jelentéskészítő kiszolgálóhoz és a Reporting Services-hez. Az élő, érintéssel vezérelhető mobil hozzáférés révén bárhonnan megtekintheti és kezelheti vállalata helyszíni és felhőbeli irányítópultjait. Böngészheti az irányítópultokon szereplő adatokat, és megoszthatja azokat kollégáival e-mail vagy szöveges üzenet formájában. Kísérje figyelemmel a legidőszerűbb adatokat [Appla Watch](mobile-apple-watch.md)on.  
@@ -32,7 +32,7 @@ Ismerje meg [a Power BI mobilalkalmazások újdonságait](mobile-whats-new-in-th
 ## <a name="download-the-app"></a>Alkalmazás letöltése
 [iOS-alkalmazás letöltése](https://go.microsoft.com/fwlink/?LinkId=522062 "Az iOS-alkalmazás letöltése") az Apple App Store-ból iPhone-ra vagy iPad-re.
 
-Az iOS-es Power BI alkalmazást az iOS 11 vagy újabb rendszert futtató eszközök bármelyikén futtathatja. 
+Az iOS-es Power BI mobilalkalmazást az iOS 11 vagy újabb rendszert futtató eszközök bármelyikén futtathatja. 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Regisztráció a Power BI szolgáltatásra
 Ha még nem regisztrált, látogasson el a [powerbi.com](https://powerbi.microsoft.com/get-started/) webhelyre, és a **Power BI - Felhőbeli együttműködés és megosztás** területen válassza az **Ingyenes próba** lehetőséget.
