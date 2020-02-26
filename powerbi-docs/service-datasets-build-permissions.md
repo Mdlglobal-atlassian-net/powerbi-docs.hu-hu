@@ -1,26 +1,32 @@
 ---
 title: Megosztott adathalmazokra vonatkozó összeállítási engedély (előzetes verzió)
-description: Ismerje meg, hogyan szabályozhatja Összeállítási engedély használatával, hogy ki férhet hozzá az adatokhoz.
+description: Útmutató az adatokhoz való hozzáférés összeállítási engedéllyel való szabályozásához.
 author: maggiesMSFT
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 02/12/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b17fa4299d2db84f63f0d8f7ed4c17a0c9c437db
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 48380d40d819ea1af74430546b9548c372bd2091
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872556"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426610"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Megosztott adathalmazokra vonatkozó összeállítási engedély (előzetes verzió)
 
-Ha *adatmodelleket* hoz létre a Power BI Desktopban, *adathalmazokként* megoszthatja azokat a Power BI szolgáltatásban. A jelentéskészítők így könnyen felfedezhetik és felhasználhatják az Ön által megosztott adathalmazokat. Ismerje meg, hogyan szabályozhatja Összeállítási engedély használatával, hogy ki férhet hozzá az adatokhoz.
+Amikor jelentést hoz létre a Power BI Desktopban, a jelentésbeli adatok egy *adatmodellben* vannak tárolva. Amikor közzéteszi jelentéseit a Power BI szolgáltatásban, egyben az adatokat is közzéteszi *adathalmazként*. *Összeállítási engedélyt* adhat másoknak a jelentéshez, hogy felfedezhessék és újra felhasználhassák a megosztott adathalmazt. Ez a cikk azt írja le, hogy hogyan szabályozhatja Összeállítási engedély használatával az adatokhoz való hozzáférést.
 
-Összeállítási engedély csak adathalmazokra értelmezhető. Azok a felhasználók, akiknek megadja az Összeállítási engedélyt új tartalmat, például jelentéseket, irányítópultokat, a Q&A-ból rögzített csempéket és Insights-felfedezéseket állíthatnak össze az adathalmaz alapján. Az adathalmazból a Power BI-on kívül, például Excel-munkalapokon is készíthetnek új tartalmat az Elemzés az Excelben funkció, az XMLA és a mögöttes adatok exportálása használatával.
+Az Összeállítási engedély adathalmazokra vonatkozik. Azok a felhasználók, akiknek megadja az Összeállítási engedélyt új tartalmat, például jelentéseket, irányítópultokat, a Q&A-ból rögzített csempéket és Insights-felfedezéseket állíthatnak össze az adathalmaz alapján. 
+
+A felhasználóknak ahhoz is Összeállítás engedély szükséges, hogy a Power BI-on *kívül* dolgozzanak az adatokkal:
+
+- A mögöttes adatok exportálásához.
+- Új tartalom készítéséhez az adathalmaz alapján, például az [Elemzés az Excelben](service-analyze-in-excel.md) funkcióval.
+- Az adatok XMLA-végpont általi eléréséhez.
 
 ## <a name="ways-to-give-build-permission"></a>Az Összeállítási engedély megadásának módjai
 

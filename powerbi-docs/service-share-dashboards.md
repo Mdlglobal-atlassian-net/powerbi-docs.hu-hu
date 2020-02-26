@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e6e66a4459abefbc66ec4e70b882cddc4771facf
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 96f78ff87dc4f955e134815e6237e4fb5a1ca1e7
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565660"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426679"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI-irányítópult és -jelentés megosztása munkatársakkal és másokkal
 A *Megosztással* egyszerűen biztosíthatja néhány személy hozzáférését az irányítópultjaihoz és jelentéseihez. A Power BI-ban [többféle módon valósítható meg az irányítópultok és jelentések közös használata és terjesztése](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -37,7 +37,7 @@ Nézze meg, hogyan osztja meg Amanda az irányítópultját cégen belüli és a
 
 ## <a name="share-a-dashboard-or-report"></a>Irányítópult vagy jelentés megosztása
 
-1. Irányítópultok vagy jelentések listájában, vagy megnyitott irányítópulton vagy jelentésben válassza a **Megosztás** ![Megosztás ikon](media/service-share-dashboards/power-bi-share-icon.png) lehetőséget.
+1. Irányítópultok vagy jelentések listájában, vagy egy megnyitott irányítópulton vagy jelentésben válassza a **Megosztás** ![Megosztás ikon](media/service-share-dashboards/power-bi-share-icon.png) lehetőséget.
 
 2. A felső mezőbe írja be a személyek, terjesztési csoportok vagy biztonsági csoportok teljes e-mail-címét. Dinamikus terjesztési listákkal nem oszthat meg irányítópultot. 
    
@@ -90,6 +90,8 @@ A megosztott irányítópultot vagy jelentést csak a közvetlen címzettek lát
 
 A cégen kívüli személyek egyáltalán nem fogják látni az adatokat, ha szerepkör- vagy sorszintű biztonság van alkalmazva a helyszíni Analysis Services rendszerbeli táblázatos modellekben.
 
+Külső e-mail-címmel rendelkező személyeket is magában foglaló csoporttal való megosztáshoz terjesztési csoport helyett használjon biztonsági csoportot. A terjesztési csoportok külső e-mail-címmel rendelkező tagjai csak akkor láthatják a megosztott tartalmat, ha B2B vendégfelhasználók az Azure Active Directoryban (Azure AD). További információ az [Azure AD B2B vendégfelhasználókról](service-admin-azure-ad-b2b.md).
+
 Ha Power BI-mobilalkalmazásból küld hivatkozást cégen kívüli címzettnek, akkor a hivatkozásra kattintva az irányítópult böngészőben fog megnyílni, nem a Power BI-mobilalkalmazásban.
 
 ### <a name="allow-external-users-to-edit-content"></a>Tartalom szerkesztésének engedélyezése külső felhasználók számára
@@ -127,7 +129,7 @@ Irányítópultok vagy jelentések megosztásakor vegye figyelembe a következő
 * Manuálisan mindenki [frissítheti az adatokat](refresh-data.md).
 * Ha a levelezéshez az Office 365-öt használja, akkor a megosztás címzettjeként egy terjesztési csoportot is megadhat a csoporthoz tartozó e-mail-cím beírásával.
 * Az Önnel egy e-mail-tartományban lévő munkatársai, valamint a más, de ugyanazon a bérlőn belül regisztrált tartományok tagjai másokkal is megoszthatják az irányítópultot. Legyen például a contoso.com és a contoso2.com tartomány egy bérlőn belül regisztrálva, és az Ön e-mail-címe konrads@contoso.com. Ekkor gustav@contoso2.com és ravali@contoso.com egyaránt megoszthatja az Ön irányítópultját, ha Ön engedélyezte számukra a megosztást.
-* Ha munkatársai már hozzáférnek egy adott irányítópulthoz vagy jelentéshez, akkor nekik az irányítópultról vagy jelentésből kimásolt közvetlen hivatkozást is küldhet. Például: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
+* Ha munkatársai már hozzáférnek egy adott irányítópulthoz vagy jelentéshez, akkor nekik az irányítópultról vagy jelentésből kimásolt közvetlen hivatkozást is küldhet. Példa: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 * Hasonló módon [a mögöttes jelentésre mutató közvetlen hivatkozást is küldhet](service-share-reports.md) az adott irányítópulthoz hozzáféréssel rendelkező munkatársaknak. 
 
 ### <a name="share-with-more-than-100-separate-users"></a>Megosztás több mint 100 különböző felhasználóval

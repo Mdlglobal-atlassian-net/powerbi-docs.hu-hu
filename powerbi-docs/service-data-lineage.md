@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 774b8b19f8b199e1d98b2bd5e079b35f1a9a6935
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64f6f4afc6e940f7169d45e5d9c4428cbaccbb98
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877367"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427622"
 ---
 # <a name="data-lineage-preview"></a>Adatéletút (előzetes verzió)
 A modern üzletiintelligencia-projektekben az adatok adatforrásból a célba történő eljutásának megértése kihívást jelenthet. A kihívás még nagyobb a több adatforráson, összetevőn és függőségen átívelő speciális elemzési projektek esetén.  Nehéz választ adni az olyan kérdésekre, hogy például mi történik egy adat módosításakor, vagy hogy miért nem naprakész egy jelentés. Ezek megértéséhez szakértői csapatokra vagy mélyreható vizsgálatra van szükség. A származtatott nézetet azért hoztuk létre, hogy segítsünk megválaszolni ezeket a kérdéseket.
 
-[ ![A Power BI származtatott nézete](media/service-data-lineage/power-bi-lineage-view-cropped.png) ](media/service-data-lineage/power-bi-lineage-view-full-size.png#lightbox)
+[![A Power BI adatéletút nézete](media/service-data-lineage/power-bi-lineage-view-cropped.png)](media/service-data-lineage/power-bi-lineage-view-full-size.png#lightbox)
  
 A Power BI számos különböző összetevőtípussal rendelkezik, például irányítópultokkal, jelentésekkel, adatkészletekkel és adatfolyamokkal. Számos adatkészlet és adatfolyam külső adatforrásokhoz (például SQL Server), illetve más munkaterületeken megtalálható külső adatkészletekhez csatlakozik. Az Ön tulajdonában álló munkaterületen kívüli adatkészletek az IT-részleg egy tagja vagy egy másik elemző birtokában lévő munkaterületen lehetnek. A külső adatforrások és adatkészletek végső soron megnehezíthetik az adatok származási helyének kiderítését. Ezért bevezettük az összetett és egyszerűbb projektekhez is használható származtatott nézetet. 
 
@@ -30,7 +30,7 @@ A Saját munkaterületen kívül minden munkaterülethez, akár új, akár klass
 
 - A származtatott nézet eléréséhez lépjen a munkaterület listanézetébe. Koppintson a **Listanézet** elemre, és válassza a **Származtatott nézet** lehetőséget.
 
-    [ ![Váltás származtatott nézetre](media/service-data-lineage/power-bi-lineage-list-view-cropped.png) ](media/service-data-lineage/power-bi-lineage-list-view.png#lightbox)
+    [ ![Váltás adatéletút nézetre](media/service-data-lineage/power-bi-lineage-list-view-cropped.png) ](media/service-data-lineage/power-bi-lineage-list-view.png#lightbox)
 
     Ebben a nézetben az összes munkaterület-összetevő és az adatok egyikből másikba való áramlása is látható.
 
@@ -84,7 +84,7 @@ A származtatott nézet egy interaktív vászon. Az egér és az érintőpad has
 
 - A származtatott nézet megjelenítéséhez Power BI Pro-licencre van szüksége.
 - A származtatott nézetet csak a munkaterülethez hozzáféréssel rendelkező felhasználók érhetik el.
-- A felhasználóknak Rendszergazda, Tag vagy Közreműködő szerepkörrel kell rendelkeznie a munkaterületen. A Megtekintő szerepkörrel rendelkező felhasználók nem válthatnak származtatott nézetre.
+- A felhasználóknak Rendszergazda, Tag vagy Közreműködő szerepkörrel kell rendelkeznie a munkaterületen. A Megtekintő szerepkörrel rendelkező felhasználók nem válthatnak adatéletút nézetre.
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
