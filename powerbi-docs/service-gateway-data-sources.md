@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 02/21/2020
 ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2665e33d5f268bf8037634406aca819c23f3513c
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 15b3236741eb19d9f08601f9503e0380f54a8d63
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698187"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558669"
 ---
 # <a name="manage-data-sources"></a>Adatforrások kezelése
 
@@ -45,11 +45,24 @@ Az adatforrás-kezelési műveletek többsége API-k használatával is végreha
 
 5. Az SQL Serverhez a **Windows** vagy az **Alapszintű** (SQL-hitelesítés) **Hitelesítési módszer** választható. Ha az **Alapszintűt** választja, akkor meg kell adnia az adatforrás eléréséhez szükséges hitelesítő adatokat.
 
-6. A **Speciális beállítások** alatt beállíthatja az adatforráshoz alkalmazandó [adatvédelmi szintet](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) (a [DirectQuery](desktop-directquery-about.md)-re nem érvényes).
+6. A **Speciális beállítások** területen [Egyszeri bejelentkezést (SSO)](service-gateway-sso-overview.md) konfigurálhat az adatforráshoz. 
+
+    ![speciális beállítások](media/service-gateway-data-sources/advanced-settings-02.png)
+
+DirectQuery-alapú jelentésekhez választhatja az **SSO használata Kerberoson keresztül DirectQuery-lekérdezésekhez** vagy az **SSO használata Kerberoson keresztül DirectQuery- és Importálási lekérdezésekhez** konfigurációt, frissítésalapú jelentésekhez pedig az **SSO használata Kerberoson keresztül DirectQuery- és Importálási lekérdezésekhez** konfigurációt.
+
+Ha az **SSO használata Kerberoson keresztül DirectQuery-lekérdezésekhez** konfigurációt használja, és ezt az adatforrást egy DirectQuery-alapú jelentéshez használja fel, az a Power BI szolgáltatásba bejelentkező (Azure) Active Directory-felhasználóhoz társított felhasználót fogja használni. Frissítésalapú jelentésekhez a **Felhasználónév** és **Jelszó** mezőben megadott hitelesítő adatokat fogja használni.
+
+Az **SSO használata Kerberoson keresztül DirectQuery- és Importálási lekérdezésekhez** beállítás esetén nem kell hitelesítő adatokat megadnia. Ha az adatforrás DirectQuery-alapú jelentéshez van felhasználva, az a Power BI szolgáltatásba bejelentkező (Azure) Active Directory-felhasználóhoz társított felhasználót fogja használni.  Frissítésalapú jelentéshez az adathalmaz tulajdonosának biztonsági környezetét fogja használni
+
+> [!NOTE]
+>Az SSO Importálási lekérdezésekhez csak a felsorolt SSO-adatforrásoknál érhető el, [korlátozott Kerberos-delegálás](service-gateway-sso-kerberos.md) használatával.
+
+7. A **Speciális beállítások** alatt beállíthatja az adatforráshoz alkalmazandó [adatvédelmi szintet](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) (a [DirectQuery](desktop-directquery-about.md)-re nem érvényes).
 
     ![Speciális beállítások](media/service-gateway-data-sources/advanced-settings.png)
 
-7. Válassza a **Hozzáadás** elemet. Ha a folyamat sikerrel zárult, megjelenik a *Sikeres csatlakozás* üzenet.
+8. Válassza a **Hozzáadás** elemet. Ha a folyamat sikerrel zárult, megjelenik a *Sikeres csatlakozás* üzenet.
 
     ![Sikeres csatlakozás](media/service-gateway-data-sources/connection-successful.png)
 
@@ -121,7 +134,7 @@ Tudnivalók a helyszíni adatátjáró által támogatott adatforrásokról: [Po
 
 ## <a name="next-steps"></a>Következő lépések
 
-* [Adatforrások kezelése – Analysis Services](service-gateway-enterprise-manage-ssas.md)
+* [Az adatforrás kezelése – Analysis Services](service-gateway-enterprise-manage-ssas.md)
 * [Az adatforrás kezelése – SAP HANA](service-gateway-enterprise-manage-sap.md)
 * [Adatforrások kezelése – SQL Server](service-gateway-enterprise-manage-sql.md)
 * [Adatforrások kezelése – Oracle](service-gateway-onprem-manage-oracle.md)

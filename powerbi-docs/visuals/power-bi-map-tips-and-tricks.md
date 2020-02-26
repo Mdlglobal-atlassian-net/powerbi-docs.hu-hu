@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c876a1f87afcb5bbaa3e27bdcb88bda2a04496e5
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 28d142ae92353f415f3cf29db959b24a8040c50b
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75758508"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558585"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tippek és trükkök térképes vizuális elemekhez a Power BI-ban
 A Power BI integrálva van a Bing Térképekkel alapértelmezett térképkoordináták biztosításához (ez a geokódolás nevű folyamat), így térképeket hozhat létre. Együtt algoritmusokat használnak a megfelelő hely azonosításához, de ez néha csak feltételezésen alapul. Ha a Power BI nem tudja egyedül létrehozni a térkép-vizualizációt, igénybe veszi a Bing Térképek segítségét. 
@@ -28,17 +28,17 @@ Lehetséges, hogy Önnek vagy a cégnek frissítenie kell a tűzfalat, hogy enge
 A helyes geokódolás valószínűségének növelése érdekében használja az alábbi tippeket. Az első tippgyűjteményt akkor használhatja, ha hozzáféréssel rendelkezik magához az adatkészlethez. A második tippgyűjtemény olyan tippeket tartalmaz, amelyeket a Power BI-ban végezhet el, ha nem fér hozzá az adatkészlethez. 
 
 ## <a name="what-is-sent-to-bing-maps"></a>Mit küld el a rendszer a Bing Térképeknek?
-A Power BI szolgáltatás és a Power BI Desktop a térkép-vizualizációhoz szükséges földrajzi adatokat küldi el a Bingnek. Ezek tartalmazhatják a **Hely**, **Szélesség** és **Hosszúság** gyűjtők adatait és a **Jelentésszintű szűrők**, **Oldalszintű szűrők** vagy a **Vizualizációszintű szűrők** gyűjtők geomezőit. Az, hogy pontosan mit küld el a rendszer, térképtípusonként eltérő. További tudnivalókért lásd a [Bing Térképek adatvédelmi tájékoztatóját](https://go.microsoft.com/fwlink/?LinkID=248686).
+A Power BI szolgáltatás és a Power BI Desktop a térkép-vizualizációhoz szükséges földrajzi adatokat küldi el a Bingnek. Ezek közé tartozhatnak a vizualizáció Mezők területének **Hely**, **Szélesség** és **Hosszúság** gyűjtőjében lévő adatok is. Az, hogy pontosan mit küld el a rendszer, térképtípusonként eltérő. További tudnivalókért lásd a [Bing Térképek adatvédelmi tájékoztatóját](https://go.microsoft.com/fwlink/?LinkID=248686).
 
-* Térképek (buborék-, pont- és pöttydiagram-térképek) esetében, ha a szélesség és a hosszúság meg van adva, akkor a rendszer nem küld adatokat a Bingnek. Egyéb esetben a **Hely** (és szűrő) gyűjtőkben található adatokat a rendszer elküldi a Bingnek.     
+* Térképek (buborék-, pont- és pöttydiagram-térképek) esetében, ha a szélesség és a hosszúság meg van adva, akkor a rendszer nem küld adatokat a Bingnek. Egyéb esetben a **Hely** gyűjtőben található adatokat a rendszer elküldi a Bingnek.     
 
 * Kitöltött térképekhez szükség van egy mezőre a **Hely** gyűjtőben akkor is, ha a szélesség és hosszúság meg van adva. Bármely, a **Hely**, **Szélesség** vagy **Hosszúság** gyűjtőben található adatot a rendszer elküldi a Bingnek.
   
-    A lenti példában a **Szállító** mező geokódoláshoz lett használva, így a Bing minden szállítói adatot megkap. A **Méret** és **Színtelítettség** gyűjtőkben lévő adatokat a rendszer nem küldi el a Bingnek.
+    A lenti példában a **Szállító** mező geokódoláshoz lett használva, így a Bing megkapja a Szállító oszlopban lévő értékeket. A **Méret** és **Színtelítettség** gyűjtőkben lévő adatokat a rendszer nem küldi el a Bingnek.
   
     ![elküldve a Bing Térképeknek](./media/power-bi-map-tips-and-tricks/power-bi-sent-to-bing-new.png)
   
-    A lenti második példában a **Terület** mező geokódoláshoz lett használva, így a Bing minden területre vonatkozó adatot megkap. A **Jelmagyarázat** és **Színtelítettség** gyűjtőkben lévő adatokat a rendszer nem küldi el a Bingnek.
+    A második példában a **Terület** mező lett geokódoláshoz használva, így a Bing a Terület oszlopban lévő értékeket kapja meg. A **Jelmagyarázat** és **Színtelítettség** gyűjtőkben lévő adatokat a rendszer nem küldi el a Bingnek.
   
     ![A kitöltött térképek és a Bing](./media/power-bi-map-tips-and-tricks/power-bi-filled-map.png)
 
