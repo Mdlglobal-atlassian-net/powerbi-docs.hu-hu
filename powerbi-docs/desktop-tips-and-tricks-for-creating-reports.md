@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/31/2020
 ms.author: davidi
-ms.openlocfilehash: a6d949f95f463cb988958551d825a4eae824fb70
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: d3733b651ac8b9687d3b0547cc2f76c04a0d0823
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73865820"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427254"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tippek és trükkök jelentések létrehozásához a Power BI Desktopban
 Ahhoz, hogy a legtöbbet hozza ki az adataiból, néha szüksége van egy kis extra segítségre. Összegyűjtöttünk néhány tippet és trükköt, amelyek segítségére lehetnek, amikor jelentéseket hoz létre a Microsoft Power BI Desktopban *és* a Microsoft Excel 2016 vagy Excel 2013 Pro-Plus kiadásokban, amelyekben engedélyezve van a Power Pivot bővítmény, illetve telepítve és engedélyezve van a Power Query. 
@@ -36,7 +36,7 @@ Amikor a Power BI Desktopban a Lekérdezésszerkesztő kezelőjében a jobb gomb
 
 * Amikor adatforrásként használ fájlokat egy lekérdezéshez, a rendszer a lekérdezésben tárolja a fájl abszolút elérési útját. A Power BI Desktop-fájl vagy Excel-munkafüzet áthelyezésekor időt takaríthat meg azzal, hogy az elérési utak helyett csak egyszer frissíti a fájlt.
 
-Alapértelmezés szerint minden lekérdezés egy Excel-munkalapra vagy az adatmodellbe tölt be (vagy mindkettőbe). A lekérdezések némelyike közbenső lépés, és nem a felhasználók számára tervezték. Amikor a fent említett módon hivatkozik a lekérdezésekre, gyakran ez a helyzet. Szabályozhatja a lekérdezésbetöltés viselkedését, ha a jobb gombbal a lekérdezésre kattint a kezelőben, és bekapcsolja a „Betöltés engedélyezése” beállítást. Ha a *Betöltés engedélyezése* mellett nincs pipa, a lekérdezést attól még el lehet érni a lekérdezési lapon, és használhatja azt más lekérdezésekkel. Ez különösen hasznos az Egyesítés, Hozzáfűzés és Hivatkozás átalakítókkal kombinálva. Mivel azonban a rendszer nem tölti be a lekérdezés eredményeit az adatmodellbe, a lekérdezés nem fogja telezsúfolni a jelentések mezőlistáját vagy az adatmodellt. 
+Alapértelmezés szerint az összes lekérdezés az adatmodellbe töltődik be. A lekérdezések némelyike közbenső lépés, és nem a felhasználók számára tervezték. Amikor a fent említett módon hivatkozik a lekérdezésekre, gyakran ez a helyzet. Szabályozhatja a lekérdezésbetöltés viselkedését, ha a jobb gombbal a lekérdezésre kattint a kezelőben, és bekapcsolja a „Betöltés engedélyezése” beállítást. Ha a *Betöltés engedélyezése* mellett nincs pipa, a lekérdezést attól még el lehet érni a lekérdezési lapon, és használhatja azt más lekérdezésekkel. Ez különösen hasznos az Egyesítés, Hozzáfűzés és Hivatkozás átalakítókkal kombinálva. Mivel azonban a rendszer nem tölti be a lekérdezés eredményeit az adatmodellbe, a lekérdezés nem fogja telezsúfolni a jelentések mezőlistáját vagy az adatmodellt. 
 
 ## <a name="scatter-charts-need-a-point-identifier"></a>A pontdiagramokban szükség van egy pontazonosítóra
 Vegyük példaként egy egyszerű táblát, amely hőmérsékleteket és a leolvasás idejét tartalmazza. Ha ezt közvetlenül jeleníti meg egy pontdiagramon, a Power BI egyetlen pontba összesíti az értékeket. A külön adatpontok megjelenítéséhez hozzá kell adnia egy mezőt a Részletek gyűjtőhöz a Mezők területen. Ennek a Power BI Desktopban egy egyszerű módja, ha a lekérdezés lapon az „Oszlop hozzáadása” menüszalag „Indexoszlop felvétele” lehetőségét használja. 
@@ -116,7 +116,7 @@ Amikor aktív ügyfél-támogatási kérelmek adatkészleteit, és egy másik, m
 > 
 > 
 
-Ha nyomon szeretnénk követni egy adott CustomerName (Ügyfél neve) értékhez kapcsolódó összes incidenst és munkaelemet, nem hozhatunk létre egyszerűen egy kapcsolatot a két adatkészlet között. Előfordulhat, hogy néhány WorkItems (Munkaelemek) érték nem kapcsolódik egy CustomerName (Ügyfél neve) értékhez, így a mező értéke üres vagy NULL lenne. Az is előfordulhat, hogy a WorkItems (Munkaelemek) és a CustomerIncidents (Ügyfélincidens) tábla több rekordot tartalmaz egy adott CustomerName (Ügyfél neve) értékhez. 
+Ha nyomon szeretnénk követni egy adott CustomerName (Ügyfél neve) értékhez kapcsolódó összes incidenst és munkaelemet, nem hozhatunk létre egyszerűen csak egy kapcsolatot a két adatkészlet között. Előfordulhat, hogy néhány WorkItems (Munkaelemek) érték nem kapcsolódik egy CustomerName (Ügyfél neve) értékhez, így a mező értéke üres vagy NULL lenne. Az is előfordulhat, hogy a WorkItems (Munkaelemek) és a CustomerIncidents (Ügyfélincidens) tábla több rekordot tartalmaz egy adott CustomerName (Ügyfél neve) értékhez. 
 
 ### <a name="creating-relationships-in-power-bi-desktop-when-the-data-has-null-or-blank-values"></a>Kapcsolatok létrehozása a Power BI Desktopban, ha az adatok null vagy üres értékeket tartalmaznak
 Gyakran előfordul, hogy az adatkészletek null vagy üres értékekkel rendelkező oszlopokat tartalmaznak. Ez problémákat okozhat a kapcsolatok használatakor. Lényegében két lehetősége van a problémák megoldására. Eltávolíthatja a null vagy üres értékeket tartalmazó sorokat. Ehhez használhatja a szűrés funkciót a lekérdezés lapon, vagy ha lekérdezéseket egyesít, választhatja a „csak az egyező sorok megtartása” lehetőséget. Másik megoldásként lecserélheti a null vagy üres értékeket kapcsolatban működő értékekre, tehát jellemzően olyan sztringekre, mint a „NULL” és a „(Blank)”. Helyes megközelítés nincs – Ha lekérdezés szakaszban szűri ki a sorokat, a rendszer eltávolítja a sorokat, és ez hatással lehet az összefoglaló statisztikákra és a számításokra. Az utóbbi megközelítés megőrzi azokat az adatsorokat, de a használatával a nem kapcsolódó sorok kapcsolódóként jelenhetnek meg a modellben, amely számítási hibákhoz vezethet. Ha az utóbbi megoldást alkalmazza, a pontos eredmények biztosításához használjon szűrőket azokon a nézeteken/diagramokon, ahol ez lehetséges. És ami a legfontosabb, értékelje ki, hogy mely sorokat tartja meg/távolítja el, és legyen tisztában azzal, hogy milyen hatással van az adott megoldás az elemzésre. 
@@ -132,7 +132,7 @@ Amikor aktív ügyfél-támogatási kérelmek adatkészleteit, és egy másik, m
 > 
 > 
 
-Ha nyomon szeretnénk követni egy adott CustomerName (Ügyfél neve) értékhez kapcsolódó összes incidenst és munkaelemet, nem hozhatunk létre egyszerűen egy kapcsolatot a két adatkészlet között. Előfordulhat, hogy néhány WorkItems (Munkaelemek) érték nem kapcsolódik egy CustomerName (Ügyfél neve) értékhez, így a mező értéke üres vagy NULL lenne. Ha a CustomerNames (Ügyfélnevek) tábla üres vagy null értékeket tartalmaz, lehet, hogy még így se tud kapcsolatot létrehozni. Tekintse át a „Kapcsolatok létrehozása, ha az adatok null vagy üres értékeket tartalmaznak” részt. Az is előfordulhat, hogy több WorkItems (Munkaelemek) és CustomerIncidents (Ügyfélincidens) érték tartozik egy adott CustomerName (Ügyfél neve) értékhez. 
+Ha nyomon szeretnénk követni egy adott CustomerName (Ügyfél neve) értékhez kapcsolódó összes incidenst és munkaelemet, nem hozhatunk létre egyszerűen csak egy kapcsolatot a két adatkészlet között. Előfordulhat, hogy néhány WorkItems (Munkaelemek) érték nem kapcsolódik egy CustomerName (Ügyfél neve) értékhez, így a mező értéke üres vagy NULL lenne. Ha a CustomerNames (Ügyfélnevek) tábla üres vagy null értékeket tartalmaz, lehet, hogy még így se tud kapcsolatot létrehozni. Tekintse át a „Kapcsolatok létrehozása, ha az adatok null vagy üres értékeket tartalmaznak” részt. Az is előfordulhat, hogy több WorkItems (Munkaelemek) és CustomerIncidents (Ügyfélincidens) érték tartozik egy adott CustomerName (Ügyfél neve) értékhez. 
 
 Ebben az esetben a kapcsolat létrehozásához létre kell hoznia egy logikai adatkészletet a két adatkészlet összes CustomerNames értékével. A Lekérdezés lapon az alábbi folyamattal hozhatja létre a logikai adatkészletet:
 

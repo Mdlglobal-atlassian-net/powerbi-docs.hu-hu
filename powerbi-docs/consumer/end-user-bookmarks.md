@@ -5,21 +5,23 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d5816c4080340b3ff5f29f6000fd203e1a2dedfd
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 5f197f2c2ca85673452a10986f19e26c5802c739
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852258"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496647"
 ---
 # <a name="what-are-bookmarks"></a>Mik azok a könyvjelzők?
 
+[!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
+
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-A könyvjelzők rögzítik a jelentés oldalának aktuálisan konfigurált nézetét, beleértve a szűrőket, a szeletelőket és a vizualizációk állapotát. Amikor kiválaszt egy könyvjelzőt, Power BI visszakerül abba a nézetbe. Kétféle könyvjelző létezik – egyrészt azok, amelyeket Ön hoz létre, másrészt azok, amelyeket a jelentések *tervezői* hoztak létre.
+A könyvjelzők rögzítik a jelentés oldalának aktuálisan konfigurált nézetét, beleértve a szűrőket, a szeletelőket és a vizualizációk állapotát. Amikor kiválaszt egy könyvjelzőt, Power BI visszakerül abba a nézetbe. Kétféle könyvjelző létezik – egyrészt azok, amelyeket Ön hoz létre, másrészt azok, amelyeket a jelentések *tervezői* hoztak létre. Minden Power BI felhasználó létrehozhat személyes könyvjelzőket. A mások által létrehozott könyvjelzők használatához azonban Power BI Pro- vagy prémium szintű licenc szükséges. [Milyen licenccel rendelkezem?](end-user-license.md)
 
 ## <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Elemzések megosztása és történetek felépítése a Power BI könyvjelzőivel 
 A könyvjelzők sok különféle módon lehet használni. Tegyük fel, hogy talál egy érdekes információt, és szeretné megőrizni azt – létrehozhat egy könyvjelzőt, hogy később bármikor megnézhesse. Ha abba kell most hagynia a munkát, és csak később tudja folytatni, hozzon létre egy könyvjelzőt. A könyvjelzőt még alapértelmezett nézetként is beállíthatja a jelentéshez, így ha bármikor visszatér, ez a nézet fogadja majd Önt. 
@@ -33,6 +35,9 @@ A Könyvjelzők panel megnyitásához válassza a menüsorban a **Könyvjelzők*
 
 ### <a name="report-bookmarks"></a>Jelentés könyvjelzői
 Ha a jelentés *tervezője* jelentéskönyvjelzőket is hozzáadott, azokat a **Jelentés könyvjelzői** cím alatt találja meg. A jelentésoldal két könyvjelzővel rendelkezik: B1 és B2. 
+
+> [!NOTE]
+> A megosztott jelentések megtekintéséhez Power BI Pro vagy prémium szükséges. 
 
 ![Jelentés könyvjelzőinek megjelenítése.](media/end-user-bookmarks/power-bi-report.png)
 

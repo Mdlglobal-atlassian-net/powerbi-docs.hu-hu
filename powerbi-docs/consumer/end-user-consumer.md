@@ -3,20 +3,21 @@ title: Ki számít a Power BI „felhasználójának”?
 description: A Power BI használatának áttekintése fogyasztóknak (más néven végfelhasználóknak vagy üzleti felhasználóknak).
 author: mihart
 ms.service: powerbi
-ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 10/31/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: bf5e83005e0bd1782e497cdeec1d3689e5749b12
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 100a9302e260a7c8f34c6fa07cc6b231e7271ce6
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863807"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496210"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>A Power BI szolgáltatás felhasználók számára
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 Egy adatkultúrában élünk, ahol az üzleti döntések a tényeken alapulnak, nem pedig véleményeken. Ezekhez a döntésekhez adatokra van szükség, és a munkatársai segítenek Önnek ebben.     
  
@@ -43,6 +44,8 @@ A munkakörétől függ, hogy milyen módon használja a Power BI-t. Végfelhasz
 Felhasználóként nem fog hozzáférni a Power BI összes szolgáltatásához – ami nem probléma, hiszen nem az Ön feladata irányítópultokat és jelentéseket létrehozni. Ön a Power BI szolgáltatást elemzéshez, monitorozáshoz, felfedezéshez és döntéshozatal segítésére használja. 
 
 Kétségtelenül találkozni fog a „Power BI Desktop” vagy „Desktop” kifejezéssel. Ezek az irányítópultokat és jelentéseket létrehozó, illetve megosztó *tervezők* által használt különálló eszközre utalnak.  Fontos megjegyezni, hogy más Power BI-eszközök is vannak, felhasználóként azonban csak a Power BI szolgáltatással fog dolgozni. 
+
+Mivel *megosztott* tartalommal dolgozik, Power BI Pro- vagy prémium szintű licencre van szüksége. [Milyen licenccel rendelkezem?](end-user-license.md)
 
 
 ## <a name="safely-interact-with-content"></a>A tartalom biztonságos kezelése 

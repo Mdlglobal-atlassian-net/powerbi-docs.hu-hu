@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 21d663b2f29a8090e6cfb7013d16c739ef0a29b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7c0c08e8056232fa7c60b20faf48b0137a19bc5f
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851461"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496413"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Részletezés mód vizualizációkban a Power BI-ban
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -32,6 +34,7 @@ Sajátos hierarchiatípust képviselnek a dátumok.  A jelentéstervezők gyakra
 Nem tudja, hogy mely Power BI-vizualizációk tartalmaznak hierarchiát? Vigye az egérmutatót egy vizualizáció fölé. Ha a tetején a képen látható részletezési vezérlők kombinációja látható, az azt jelzi, hogy a vizualizáció tartalmaz hierarchiát.
 
 ![A részletezési ikonok képernyőképe](./media/end-user-drill/power-bi-drill-icons.png)  
+
 
 ## <a name="learn-how-to-drill-down-and-up"></a>A lehatolás és a felhatolás ismertetése
 
@@ -141,7 +144,9 @@ Figyelje meg, hogy a végösszegek azonosak a **Település**, az **Irányítós
 
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
-Alapértelmezés szerint a lehatolás nem szűri a jelentés többi vizualizációját. A jelentéstervező azonban megváltoztathatja ezt az alapértelmezett viselkedést. Részletezés közben ellenőrizze, hogy a lapon a többi vizualizációra jellemző-e keresztszűrés vagy keresztkiemelés.
+- Alapértelmezés szerint a lehatolás nem szűri a jelentés többi vizualizációját. A jelentéstervező azonban megváltoztathatja ezt az alapértelmezett viselkedést. Részletezés közben ellenőrizze, hogy a lapon a többi vizualizációra jellemző-e keresztszűrés vagy keresztkiemelés.
+
+- Az Önnel megosztott jelentések megtekintéséhez Power BI Pro- vagy prémium szintű licenc szükséges. [Milyen licenccel rendelkezem?](end-user-license.md)
 
 
 ## <a name="next-steps"></a>Következő lépések

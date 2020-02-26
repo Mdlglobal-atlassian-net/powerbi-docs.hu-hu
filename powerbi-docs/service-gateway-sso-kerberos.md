@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/03/2019
+ms.date: 02/20/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: aacab1541f336ed12c36dab8243d0096c9a6ed19
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75000112"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558656"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Kerberos-alapú egyszeri bejelentkezés konfigurálása a Power BI szolgáltatásról helyszíni adatforrásokhoz
 
@@ -246,11 +246,17 @@ Az SAP HANA és az SAP BW további adatforrás-specifikus konfigurációs követ
 
 ## <a name="run-a-power-bi-report"></a>Power BI-jelentés futtatása
 
-Miután az összes konfigurációs lépést elvégzett, konfigurálja az SSO-hoz használandó adatforrást a Power BI-ban az **Átjáró kezelése** lapon. Több átjáró esetén ügyeljen arra, hogy azt az átjárót válassza ki, amelyet a Kerberos SSO-hoz konfigurált. Ezután az adatforrás **Speciális beállítások** területén jelölje be az **Egyszeri bejelentkezés használata Kerberosszal DirectQuery-lekérdezéseknél** jelölőnégyzetet.
+Miután az összes konfigurációs lépést elvégzett, konfigurálja az SSO-hoz használandó adatforrást a Power BI-ban az **Átjáró kezelése** lapon. Több átjáró esetén ügyeljen arra, hogy azt az átjárót válassza ki, amelyet a Kerberos SSO-hoz konfigurált. Ezután az adatforrásnál a **Speciális beállítások** alatt győződjön meg róla, hogy a DirectQueryn alapuló jelentéseknél az **SSO használata Kerberoson keresztül DirectQuery-lekérdezésekhez** vagy az **SSO használata Kerberoson keresztül DirectQuery- és Importálási lekérdezésekhez**, a frissítésalapú jelentésekhez pedig az **SSO használata Kerberoson keresztül DirectQuery- és Importálási lekérdezésekhez** lehetőség be van jelölve.
 
-![A Speciális beállítások lehetőség](media/service-gateway-sso-kerberos/advanced-settings.png)
+![A Speciális beállítások lehetőség](media/service-gateway-sso-kerberos/advanced-settings-02.png)
 
- Tegyen közzé egy DirectQuery-alapú jelentést a Power BI Desktopban. Ennek a jelentésnek azokat az adatokat kell használnia, amelyek elérhetőek azon felhasználó számára, aki ahhoz az (Azure) Active Directory-felhasználóhoz van rendelve, amelyik bejelentkezik a Power BI szolgáltatásba. A frissítés működése miatt az importálás helyett a DirectQueryt kell használnia. Importálási alapú jelentések frissítésekor az átjáró azokat a hitelesítő adatokat használja, amelyet beírt a **Felhasználónév** és a **Jelszó** mezőbe az adatforrás létrehozásakor. Más szóval a Kerberos SSO *nincs* használatban. A közzétételkor azt az átjárót válassza ki, amelyet az egyszeri bejelentkezéshez konfigurált, ha több átjáróval rendelkezik. A Power BI szolgáltatásban most már frissítheti a jelentést, és létrehozhat új jelentést is a közzétett adathalmaz alapján.
+Ha DirectQueryn alapuló jelentést szeretne közzétenni a Power BI Destopból, és szeretné azt leképezni egy adatforrásra, miközben be van jelölve az **Egyszeri bejelentkezés használata a Kerberoson keresztül DirectQuery-lekérdezésekhez** vagy az **SSO használata Kerberoson keresztül a DirectQuery- és az importálási lekérdezésekhez** jelölőnégyzete, ez a jelentés olyan adatokat használ, amely elérhető azon felhasználó számára, aki le van képezve a Power BI szolgáltatásba bejelentkező (Azure) Active Directory-felhasználóra.
+
+Ehhez hasonlóan, ha frissítésen alapuló jelentést tesz közzé a Power BI Desktopból, és leképezi azt egy adatforrásra, miközben be van jelölve az **SSO használata Kerberoson keresztül a DirectQuery- és az importálási lekérdezésekhez** jelölőnégyzet, akkor nem kell megadnia hitelesítő adatokat. A frissítést a rendszer az adatkészlet tulajdonosának Active Directory-környezetében hajtja végre.
+
+Ha azonban azt egy olyan adatforráshoz rendeli, ahol nincs bejelölve az **SSO használata Kerberoson keresztül a DirectQuery- és az importálási lekérdezésekhez** jelölőnégyzet, a frissítés azokat a hitelesítő adatokat használja, amelyeket az adatforrás létrehozásakor a **Felhasználónév** és a **Jelszó** mezőkben megadott. Más szóval a Kerberos SSO *nincs* használatban. 
+
+ A közzétételkor azt az átjárót válassza ki, amelyet az egyszeri bejelentkezéshez konfigurált, ha több átjáróval rendelkezik. 
 
 Ez a konfiguráció a legtöbb esetben működik. A Kerberos esetében azonban más konfigurációkra lehet szükség a környezettől függően. Ha a jelentés nem töltődik be, kérje a probléma részletesebb kivizsgálását a tartományi rendszergazdától. Ha az adatforrás az SAP BW, tekintse meg a [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) és a [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting) adatforrás-specifikus konfigurációs oldalain található hibaelhárítási szakaszokat a kiválasztott SNC-kódtártól függően.
 

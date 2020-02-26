@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 02/14/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: d8db626300902125cf3536f03ed111ef3e052324
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: b7ff14b4932ba77b47fdb603124d29858c622fc7
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76538734"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427656"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Aggregációk használata a Power BI Desktopban
 
@@ -185,6 +185,10 @@ Az aggregációk hasznosak az AVERAGE (Átlag) függvény használata esetén. A
 Az aggregációk bizonyos esetekben hasznosak a DISTINCTCOUNT (Eltérő értékek száma) funkció használata esetén. A következő lekérdezés azért az aggregációból ad vissza találatot, mert a **CustomerKey** (ÜgyfélAzonosító) attribútumnak van egy GroupBy (Csoportosítási szempont) bejegyzése, amely fenntartja a **CustomerKey** (ÜgyfélAzonosító) eltérő értékeit az aggregációs táblában. A technika még mindig beleütközhet egy teljesítménybeli küszöbbe, ugyanis több mint 2–5 milliónál több eltérő érték negatívan befolyásolhatja a lekérdezés teljesítményét. Hasznos lehet azonban olyan forgatókönyvek esetén, ahol a részlettábla több milliárd sort tartalmaz, az oszlopban pedig 2–5 millió eltérő érték található. Ebben az esetben a DISTINCTCOUNT függvény gyorsabban hajtható végre, mint a több milliárd sor vizsgálata, még akkor is, ha azok a memória gyorsítótárában találhatók.
 
 ![DISTINCTCOUNT aggregációs lekérdezés](media/desktop-aggregations/aggregations-code_07.jpg)
+
+A DAX időintelligencia függvényei figyelembe veszik az aggregációkat. A következő lekérdezés találatot eredményez az aggregációban, mert a DATESYTD függvény táblát hoz létre a **CalendarDay** értékeiből, és az aggregációs tábla részletességi szintjét lefedik a **Dátum** tábla csoportosítási oszlopai. Ez egy példa a CALCULATE függvény táblaértékszűrőire, amelyek használhatók aggregációkkal.
+
+![SUMMARIZECOLUMNS aggregációlekérdezés](media/desktop-aggregations/aggregations-code-07b.jpg)
 
 ## <a name="aggregation-based-on-groupby-columns"></a>GroupBy-oszlopok szerinti aggregációk 
 

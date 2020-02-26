@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/13/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ddb54ca91936626b4870b51b86b7fc7f0ac6b2c9
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: f8a49780804449296194d7adb8091f7f0c5748fe
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75954128"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427806"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Hivatkozások (URL-címek) felvétele táblázatba vagy mátrixba
 Ez a témakör a hivatkozások (URL-címek) táblázatokba való felvételét mutatja be. Hivatkozásokat a Power BI Desktop használatával vehet fel adathalmazokba. Ezeket a hivatkozásokat a Power BI Desktopban vagy a Power BI szolgáltatásban adhatja hozzá a jelentések táblázataihoz és mátrixaihoz. Ezután megjelenítheti az URL-címet vagy a hivatkozás ikonját, vagy hivatkozásszövegként formázhat egy másik oszlopot.
@@ -34,7 +34,7 @@ A Power BI Desktopban formázhatja egy mező URL-címeit hiperhivatkozásként, 
     > [!NOTE]
     > DirectQuery módban nem hozhat létre oszlopokat.  Az adatokban már meglévő URL-címeket viszont átalakíthatja hivatkozásokká.
 
-2. Az Adatnézetben válassza ki az oszlopot. 
+2. Az Adatnézetben vagy a Jelentésnézetben válassza ki az oszlopot. 
 
 3. A **Modellezés** lapon válassza az **Adatkategória** > **Webes URL-cím** lehetőséget.
    
@@ -79,13 +79,20 @@ Azt is megteheti, hogy a tábla egy másik mezőjét formázza hivatkozásként,
 
 1. Ha egy hivatkozást tartalmazó mező még nem létezik az adathalmazban, vegye fel [egyéni oszlopként](desktop-common-query-tasks.md) a Power BI Desktopban. DirectQuery módban ebben az esetben sem hozhat létre oszlopokat.  Az adatokban már meglévő URL-címeket viszont átalakíthatja hivatkozásokká.
 
-2. A Jelentés nézetben hozzon létre egy táblázatot vagy mátrixot azzal az oszloppal, amelyet hivatkozásszövegként fog formázni.
+2. Adatnézetben vagy Jelentésnézetben válassza ki azt az oszlopot, amely tartalmazza az URL-címet. 
+
+3. A **Modellezés** lapon válassza az **Adatkategória** lehetőséget. Az oszlop formázása legyen **Kategorizálatlan**.
+
+2. A Jelentés nézetben hozzon létre egy táblázatot vagy mátrixot az URL oszlopával és azzal az oszloppal, amelyet hivatkozásszövegként fog formázni.
 
 3. A **Formátum** ikont ![Festőhenger ikon](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) választva nyissa meg a Formázás lapot úgy, hogy a táblázat ki van választva.
 
-4. Bontsa ki a **Feltételes formázás**, elemet, és ügyeljen rá, hogy a mezőben szereplő név azé az oszlopé, amelyet hivatkozásszövegeként szeretne használni. Keresse meg az **URL ikont**, és kapcsolja **Be**.
+4. Bontsa ki a **Feltételes formázás**, elemet, és ügyeljen rá, hogy a mezőben szereplő név azé az oszlopé, amelyet hivatkozásszövegeként szeretne használni. Keresse meg a **Web URL** beállítást, és kapcsolja **Be**.
 
     ![Webes URL-cím feltételes formázása](media/power-bi-hyperlinks-in-tables/power-bi-format-conditional-web-url.png)
+
+    > [!NOTE]
+    > Ha nem látható a **Web URL** lehetőség, győződjön meg róla, hogy az oszlop, amely tartalmazza a hivatkozásokat, *nincs* **Web URL**-ként formázva az **Adatkategória** legördülő menüben.
 
 5. A **Webes URL-cím** párbeszédpanelen válassza ki az URL-címet tartalmazó mezőt **A mező alapján** szövegmezőben > **OK**.
 

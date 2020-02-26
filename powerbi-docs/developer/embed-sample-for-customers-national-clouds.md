@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 53432a0b3e6f09a558a189ef152c9d10645db546
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 9998604bf3f0211490dee87596e2a0692072807c
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259674"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427277"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Oktatóanyag: Power BI-tartalom beágyazása az alkalmazásba országos felhők számára
 
@@ -54,7 +54,7 @@ Ez a cikk a GitHubon, az [alkalmazás tulajdonában lévő adatok mintában](htt
 * Kormányzati közösségi felhő (GCC):
 
     > [!NOTE]
-    > Power BI-tartalmak Kormányzati közösségi felhőből (GCC-ből) csak Office 365 SKU-val ágyazhatók be. A nemzeti felhő más ügyfelei használhatják az [Office 365 vagy az Azure termékváltozatokat](embedded-capacity.md).
+    > Power BI-tartalmak Kormányzati közösségi felhőből (GCC-ből) csak egy Office 365-termékváltozattal ágyazhatók be. Az országos felhő más ügyfelei használhatják az [Office 365 vagy az Azure termékváltozatait](embedded-faq.md).
 
 1. Írja felül a Cloud.config fájlt a GCCCloud.config tartalmával.
 
