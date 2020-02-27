@@ -7,6 +7,8 @@
       items:
         - name: Áttekintés
           href: overview.md
+        - name: Optimalizálási útmutató a Power BI-hoz
+          href: power-bi-optimization.md
     - name: Fogalmak
       expanded: true
       items:
@@ -78,6 +80,8 @@
               href: admin-tenant-settings.md
             - name: Helyszíni adatátjáró méretezése
               href: gateway-onprem-sizing.md
+            - name: A jelentésteljesítmény figyelése
+              href: monitor-report-performance.md
     - name: Tanulmányok
       items:
         - name: Tanulmányok áttekintése
