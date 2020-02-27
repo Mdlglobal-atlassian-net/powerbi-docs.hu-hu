@@ -1,5 +1,5 @@
 ---
-title: Sorszintű biztonság (RLS) a Power BI Desktoppal – összefoglaló
+title: Az adathozzáférés korlátozása sorszintű biztonsággal (RLS) a Power BI Desktopban
 description: Az importált adatkészletek és a DirectQuery sorszintű biztonságának konfigurálása a Power BI Desktopban.
 author: davidiseminger
 ms.author: davidi
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/05/2019
+ms.date: 01/31/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: dc2c1e312592048c90643526a898ebe654907a68
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 7a9aa0ca62ae4f1008d4cf47caa909841f9ec495
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760658"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464473"
 ---
 # <a name="restrict-data-access-with-row-level-security-rls-for-power-bi-desktop"></a>Az adathozzáférés korlátozása sorszintű biztonsággal (RLS) a Power BI Desktopban
 
@@ -24,9 +24,7 @@ A sorszintű biztonság (RLS) a Power BI Desktoppal adott felhasználók adatokh
 Most már konfigurálhat RLS-t a Power BI Desktoppal a Power BI-be importált adatmodellekhez. Ezen kívül konfigurálhat RLS-t a [DirectQueryt](desktop-use-directquery.md) használó adatkészletekhez, például az SQL Serverhez is. Korábban csak a Power BI szolgáltatáson kívül, a helyszíni Analysis Services-modellekben lehetett RLS-t beállítani. Az Analysis Services élő kapcsolataihoz a helyszíni modellen konfigurálhatja a sorszintű biztonságot. Az élő kapcsolatok adatkészleteinél nem fog megjelenni a biztonsági beállítás.
 
 > [!IMPORTANT]
-> Ha szerepköröket és szabályokat adott meg a Power BI szolgáltatásban, újból létre kell hoznia ezeket a szerepköröket a Power BI Desktopon belül, és közzé kell tennie a jelentést a szolgáltatásban.
-
-További információk az [RLS beállításairól a Power BI szolgáltatásban](service-admin-rls.md).
+> Ha szerepköröket és szabályokat adott meg a Power BI szolgáltatásban, újból létre kell hoznia ezeket a szerepköröket a Power BI Desktopon belül, és közzé kell tennie a jelentést a szolgáltatásban. További információk az [RLS beállításairól a Power BI szolgáltatásban](service-admin-rls.md).
 
 [!INCLUDE [include-short-name](./includes/rls-desktop-define-roles.md)]
 
@@ -40,4 +38,4 @@ További információk az [RLS beállításairól a Power BI szolgáltatásban](
 
 [Sorszintű biztonság (RLS) a Power BI szolgáltatással](service-admin-rls.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+További kérdései vannak? [Kérdés feltevése a Power BI közösségének](https://community.powerbi.com/).

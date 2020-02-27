@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a62d1cf6d21df822265c3c41d4e74e74181b7051
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: e7534fd0da2039a2dafaf3ca80ee6957fa8d8754
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885175"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464301"
 ---
 # <a name="connect-to-a-snowflake-computing-warehouse-in-power-bi-desktop"></a>Kapcsolódás Snowflake Computing-adattárházhoz a Power BI Desktopban
 A Power BI Desktopban csatlakozhat egy **Snowflake** Computing-adattárházhoz, és úgy használhatja az alapul szolgáló adatokat, mint a Power BI Desktop bármely más adatforrását. 
@@ -27,11 +27,11 @@ A Power BI Desktopban csatlakozhat egy **Snowflake** Computing-adattárházhoz, 
 ## <a name="connect-to-a-snowflake-computing-warehouse"></a>Kapcsolódás egy Snowflake Computing-adattárházhoz
 Ha csatlakozni kíván egy **Snowflake** Computing-adattárházhoz, válassza a Power BI Desktop **Kezdőlap** menüszalagján az **Adatok lekérése** lehetőséget. A bal oldali kategóriák közül válassza az **Adatbázis** lehetőséget, ekkor megjelenik a **Snowflake**.
 
-![](media/desktop-connect-snowflake/connect_snowflake_2b.png)
+![](media/desktop-connect-snowflake/connect-snowflake-2b.png)
 
-A megjelenő **Snowflake** ablakban írja vagy illessze be a Snowflake Computing-adattárház nevét a mezőbe, és válassza az **OK** gombot. Vegye figyelembe, hogy az adatokat közvetlenül is **importálhatja** a Power BI-ba, vagy használhatja a **DirectQueryt**. További információ a DirectQueryről: [A DirectQuery használata](desktop-use-directquery.md).
+A megjelenő **Snowflake** ablakban írja vagy illessze be a Snowflake Computing-adattárház nevét a mezőbe, és válassza az **OK** gombot. Vegye figyelembe, hogy az adatokat közvetlenül is **importálhatja** a Power BI-ba, vagy használhatja a **DirectQueryt**. További információ a DirectQueryről: [A DirectQuery használata](desktop-use-directquery.md). Vegye figyelembe, hogy az AAD-beli SSO csak a DirectQueryt támogatja.
 
-![](media/desktop-connect-snowflake/connect_snowflake_3.png)
+![](media/desktop-connect-snowflake/connect-snowflake-3.png)
 
 Ha a rendszer kéri, adja meg a felhasználónevét és a jelszavát.
 
@@ -42,14 +42,14 @@ Ha a rendszer kéri, adja meg a felhasználónevét és a jelszavát.
 > 
 > 
 
-Ha a Microsoft-fiók lehetőséget szeretné használni, akkor kérje meg a Snowflake-rendszergazdáját, hogy vegye fel a kapcsolatot a Snowflake-kel, hogy csatlakozhasson ennek a funkciónak a privát előzetes verziójához.
+Ha a Microsoft-fiókot szeretné használni, a Snowflake AAD-integrációt a Snowflake oldalán kell konfigurálni. Ehhez olvassa el a [Snowflake erre a témakörre vonatkozó dokumentációjának](https://docs.snowflake.net/manuals/user-guide/oauth-powerbi.html#power-bi-sso-to-snowflake) Első lépések szakaszát.
 
 ![A Microsoft-fiók hitelesítési típusa a Snowflake-összekötőben.](media/desktop-connect-snowflake/connect-snowflake-6.png)
 
 
 Ha sikeresen csatlakozott, megjelenik a **Kezelő** ablaka, és megjeleníti a kiszolgálón elérhető adatokat. Ezek közül kiválaszthat egy vagy több importálni kívánt elemet, és használhatja őket a **Power BI Desktopban**.
 
-![Az ODBC 28000-es hiba miatt sikertelen volt a kapcsolódás.](media/desktop-connect-snowflake/connect_snowflake_5.png)
+![Az ODBC 28000-es hiba miatt sikertelen volt a kapcsolódás.](media/desktop-connect-snowflake/connect-snowflake-5.png)
 
 A kiválasztott táblát **betöltheti**, amellyel az egész tábla bekerül a **Power BI Desktopba**, vagy **szerkesztheti** is a lekérdezést. Ekkor megnyílik a **Lekérdezésszerkesztő**, amellyel szűrheti vagy finomíthatja a használni kívánt adatokat, majd a finomított adatkészletet betöltheti a **Power BI Desktopba**.
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 02/14/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 924be90a8598c561a12ed87872bdfbd4681831c8
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: ae05fdcd3a38f10707e991524bac61a305b88794
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889374"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427714"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Számítási feladatok konfigurálása egy Premium-kapacitásban
 
@@ -170,7 +170,7 @@ A lapszámozott jelentések számítási feladattal az SQL Server Reporting Serv
 | **Maximális memória (%)** | A lapszámozott jelentések által a kapacitásban felhasználható, rendelkezésre álló memória maximális százalékos aránya. |
 |  |  |
 
-A többoldalas jelentések egyéni kód futtatását teszik lehetővé egy jelentés renderelésekor. Ilyen például a szövegszín dinamikus megváltoztatása a tartalom alapján, ez pedig további memóriát igényelhet. A lapszámozott jelentéseket a Power BI Premium a kapacitás egy korlátozott területén belül futtatja. 
+A többoldalas jelentések ugyanazokat a képességeket kínálják, mint jelenleg az SQL Server Reporting Services (SSRS) jelentései, beleértve a jelentéskészítőknek azt a képességét, hogy egyéni kódot adjanak hozzá.  A készítők ezáltal dinamikusan módosíthatják a jelentéseket, például kódkifejezések alapján változtathatják a szövegszíneket.  A megfelelő elkülönítés érdekében a többoldalas jelentések kapacitásonként védett környezetben vannak futtatva. Az egyazon kapacitásban futó jelentések befolyásolhatják egymás működését. Javasoljuk, hogy az SSRS egy példányába tartalmat közzétevő készítők korlátozásához hasonlóan a többoldalas jelentések esetében is így járjon el. Győződjön meg arról, hogy a tartalmat egy kapacitásban közzétevő készítők megbízhatók a vállalat számára. Még biztonságosabbá teheti a környezetet, ha több kapacitást alakít ki, és mindegyikhez más készítőt rendel. 
 
 Bizonyos esetekben a lapszámozott jelentések számítási feladat elérhetetlenné válik. Ilyen esetben a számítási feladat hibás állapotot jelez a felügyeleti portálon, a felhasználók pedig időtúllépést tapasztalnak a jelentés renderelése során. A probléma megoldásához tiltsa le, majd engedélyezze újra a számítási feladatot.
 

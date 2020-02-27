@@ -1,18 +1,18 @@
 ---
 title: Többoldalas jelentés létrehozása megosztott Power BI-adathalmazzal – Power BI-jelentéskészítő
 description: Többoldalas jelentés létrehozása a Power BI-jelentéskészítőben egy megosztott Power BI-adathalmaz alapján.
-ms.date: 01/03/2020
+ms.date: 02/12/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 335b93720718bb72027c29c6093aad952cc4cdb2
-ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
+ms.openlocfilehash: 4a46f0aae642b42cd797940e0b0991cfa77a077e
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691469"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427840"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Többoldalas jelentés létrehozása megosztott Power BI-adathalmaz alapján
 
@@ -27,6 +27,7 @@ Az adathalmaznak nem kell Prémium szintű kapacitásban lévő munkaterületen 
 Az alábbi lista felsorolja mindazt, ami megosztott adathalmaz Power BI Jelentéskészítőben való felhasználásához szükséges, és ami nem szükséges.
 
 - Power BI Jelentéskészítő. [Töltse le és telepítse a Power BI Jelentéskészítőt](https://go.microsoft.com/fwlink/?linkid=2086513).
+- Power BI Desktop. [Töltse le és telepítse a Power BI Desktopot](https://powerbi.microsoft.com/desktop/).
 - Power BI-adathalmazhoz akkor férhet hozzá, ha rendelkezik az adathalmazra vonatkozó Összeállítási engedéllyel. Tájékozódjon az [Összeállítási engedélyről](service-datasets-build-permissions.md).
 - Többoldalas jelentést Power BI Pro-licenc nélkül is létrehozhat a Jelentéskészítőben. 
 - A többoldalas jelentés közzétételéhez viszont Power BI Pro-licenc szükséges. Ezen kívül legalább Közreműködői szerepkörrel kell rendelkeznie egy Prémium szintű kapacitásbeli munkaterületen. 
@@ -57,12 +58,26 @@ Az alábbi lista felsorolja mindazt, ami megosztott adathalmaz Power BI Jelenté
     Lényeges, hogy egy többoldalas jelentésen belül több Power BI-adathalmazhoz vagy más adatforráshoz is csatlakozhat.
 
 
-## <a name="get-the-query-for-the-dataset"></a>Az adathalmazhoz tartozó lekérdezés átvétele
+## <a name="get-the-dax-query-for-the-dataset"></a>Az adathalmazhoz tartozó DAX-lekérdezés átvétele
 
 Ha az a cél, hogy a Power BI-jelentés és a Jelentéskészítőbeli jelentés adatai megegyezzenek, akkor nem elég az adathalmazhoz csatlakozni. Ehhez az adathalmazra épülő lekérdezés is szükséges.
 
+### <a name="video-get-the-dax-query"></a>Videó: A DAX-lekérdezés átvétele
+
+A következő videóban Chris Finlan mutatja be, hogyan szerezheti be a többoldalas jelentéshez szükséges DAX-képletet.
+
+<iframe width="400" height="450" src="https://www.youtube.com/embed/NfoOK4QRkhI" frameborder="0" allowfullscreen></iframe>
+
+### <a name="steps-to-get-the-dax-query"></a>A DAX-lekérdezés beszerzésének lépései
+
+A lekérdezés átvételének lépései a következők.
+
 1. Nyissa meg a Power BI-jelentést (.pbix) a Power BI Desktopban.
-1. Ellenőrizze, hogy a jelentés egyik táblázata a többoldalas jelentésben kívánt összes adatot tartalmazza-e.
+1. Ellenőrizze, hogy a jelentés egyik táblázata a többoldalas jelentésben kívánt összes adatot tartalmazza-e. A táblázatnak eleget kell tennie az alábbi két feltételnek:
+    - Csak egyszerű táblázat lehet, mátrix vagy más vizualizáció nem. Ha nem táblázat, konvertálja táblázattá a Teljesítményelemző alábbi lépéseivel, majd konvertálja vissza a kívánt vizualizációvá.
+    - A numerikus mezőkhöz *előre definiált mértékeket* kell használnia. Ezek mellett számológép szimbólum látható. Tájékozódjon a [mértékek létrehozásáról](desktop-measures.md). 
+
+        ![Mérték ikon](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 
 1. A **Nézet** menüszalagon válassza a **Teljesítményelemző** elemet.
 
@@ -204,6 +219,7 @@ Tegyük fel például, hogy a jelentés 210 mm × 297 mm formátumú, az oldalma
 
 - Élő Analysis Services-kapcsolatot használó adathalmazok esetén közvetlenül csatlakozhat, ha megosztott adathalmaz helyett a mögöttes Analysis Services-kapcsolatot használja.
 - A Meghirdetett vagy Minősített támogatási szinttel rendelkező adathalmazok megjelennek a rendelkezésre álló adathalmazok listájában, de nincsenek megjelölve. 
+- Nem ágyazhat be olyan többoldalas jelentéseket, amelyek a Power BI-ban megosztott adathalmazokra épülnek, amennyiben az adatok tulajdonosa az alkalmazás.
 
 ## <a name="next-steps"></a>Következő lépések
 

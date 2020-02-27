@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/17/2019
+ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: f72d29e7f5bc7f93abd43f4c14cf0e53ef18f8d3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a142b950375014c4d1adba917cceb2c6d9af4825
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75223732"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427691"
 ---
 # <a name="analyze-in-excel"></a>Elemzés az Excelben
 Előfordulhat, hogy az Excel használatával szeretne megnézni és kezelni egy Power BI-adatkészletet. Az **Elemzés az Excelben** funkció segítségével pontosan ezt teheti meg, valamit elérheti az Excel kimutatás-, diagram- és szeletelő funkcióit a Power BI-ban létező adatkészletre vonatkozóan.
@@ -25,17 +25,17 @@ Az **Elemzés az Excelben** funkció használatának van néhány követelménye
 
 * Az **Elemzés az Excelben** funkciót a Microsoft Excel 2010 SP1 és újabb változatai támogatják.
 
-* Az Excel-kimutatások nem támogatják a numerikus mezők áthúzással való összevonását. A Power BI-adatkészletnek *rendelkeznie kell előre meghatározott mértékekkel*.
+* Az Excel-kimutatások nem támogatják a numerikus mezők áthúzással való összevonását. A Power BI-adatkészletnek *rendelkeznie kell előre meghatározott mértékekkel*. Tájékozódjon a [mértékek létrehozásáról](desktop-measures.md).
 * Egyes cégeknél olyan csoportházirendek lehetnek érvényben, amelyek megakadályozzák az **Elemzés az Excelben** funkció használatához szükséges Excel-frissítések telepítését. Ha nem tudja telepíteni ezeket a frissítéseket, forduljon a rendszergazdájához.
 * Az **Elemzés az Excelben** funkcióhoz az szükséges, hogy az adatkészlet a Power BI Premiumban legyen, vagy hogy a felhasználó rendelkezzen Power BI Pro-licenccel. A különböző licenctípusok eltérő funkcióiról a [Power BI díjszabásában](https://powerbi.microsoft.com/pricing/), a _Power BI-funkciók összehasonlítása_ részben olvashat bővebben.
-* A felhasználók akkor csatlakozhatnak adatkészlethez az Elemzés az Excelben használatával, ha az adott adatkészlethez olvasási jogosultsággal rendelkeznek.  A felhasználó ezzel többféle módon is rendelkezhet: ha tagja egy olyan munkaterületnek, amely az adatkészletet tartalmazza; rendelkezik egy olyan jelentéssel vagy irányítópulttal, amely az adatkészletet használja; vagy hozzáférése van egy olyan alkalmazáshoz, amely az adatkészletet tartalmazza.
+* A felhasználók akkor csatlakozhatnak adatkészlethez az Elemzés az Excelben használatával, ha az adott adatkészletre vonatkozó engedéllyel rendelkeznek.  A felhasználó többféle módon is rendelkezhet ezzel az engedéllyel: ha Tag szerepkörrel rendelkezik egy olyan munkaterületen, amely az adathalmazt tartalmazza; rendelkezik egy olyan jelentéssel vagy irányítópulttal, amely az adathalmazt használja; vagy Összeállítási engedélye van az adathalmazhoz egy munkaterületen vagy alkalmazásban, amely az adathalmazt tartalmazza. További információ az adathalmazokra vonatkozó [Összeállítási engedélyről](service-datasets-build-permissions.md).
 * Az **Elemzés az Excelben** a Power BI szolgáltatás egyik funkciója, amely nem érhető el a Power BI jelentéskészítő kiszolgálóban és a Power BI Embeddedben. 
 * Az **Elemzés az Excelben** lehetőség csak Microsoft Windows rendszerű számítógépeken támogatott.
 
 ## <a name="how-does-it-work"></a>Hogyan működik?
-Amikor a **Power BI**-ban egy adatkészlet vagy jelentés három pont (...) menüjéből kiválasztja az **Elemzés az Excelben** lehetőséget, a Power BI létrehoz egy .ODC-fájlt, és letölti azt a böngészőből a számítógépre.
+Amikor a **Power BI**-ban egy adathalmaz vagy jelentés **További lehetőségek** (...) menüjéből kiválasztja az **Elemzés az Excelben** lehetőséget, a Power BI létrehoz egy .ODC-fájlt, és letölti azt a böngészőből a számítógépre.
 
-![](media/service-analyze-in-excel/power-bi-analyze-in-excel.png)
+![Elemzés az Excelben](media/service-analyze-in-excel/power-bi-analyze-in-excel.png)
 
 Ha a fájlt megnyitja az Excelben, megjelenik egy üres **kimutatás** és egy **mező**lista, benne a Power BI adatkészletből származó táblákkal, mezőkkel és mértékekkel. Ugyanúgy hozhat létre kimutatásokat, diagramokat és elemezheti az adatkészletet, mintha egy helyi adatkészlettel dolgozna az Excelben.
 
@@ -44,9 +44,9 @@ Az .ODC-fájl egy MSOLAP kapcsolati sztringgel kapcsolódik a Power BI-adatkész
 Az **Elemzés az Excelben** különösen hasznos olyan adatkészletek és jelentések esetében, amelyek *Analysis Services – táblázatos* vagy *többdimenziós* adatbázisokhoz kapcsolódnak, vagy olyan Power BI Desktop-fájlok vagy Excel-munkafüzetek esetében, amelyek adatmodelljeinek mértékeit adatelemzési (DAX) kifejezések használatával hozták létre.
 
 ## <a name="get-started-with-analyze-in-excel"></a>Első lépések az Elemzés az Excelben szolgáltatással
-A Power BI-ban válassza ki egy jelentés vagy adatkészlet neve melletti három pont (...) menüt, és a menüből válassza az **Elemzés az Excelben** lehetőséget.
+A Power BI-ban válassza ki egy jelentés vagy adatkészlet neve melletti **További lehetőségek** (...) menüt, a menüből pedig válassza az **Elemzés az Excelben** lehetőséget.
 
-![](media/service-analyze-in-excel/power-bi-analyze-menu.png)
+![Elemzés az Excelben](media/service-analyze-in-excel/power-bi-analyze-menu.png)
 
 ### <a name="install-excel-updates"></a>Excel-frissítések telepítése
 Az **Elemzés az Excelben** első használatakor telepíteni kell néhány frissítést az Excel kódtárába. A rendszer kéri az Excel-frissítések letöltésére és futtatására (ez elindítja az *SQL_AS_OLEDDB.msi* Windows-telepítőcsomag telepítését). Ez a csomag telepíti a **Microsoft AS OLE DB Provider for SQL Server 2016 RC0 (előzetes verzió)** eszközt.
@@ -56,11 +56,11 @@ Az **Elemzés az Excelben** első használatakor telepíteni kell néhány friss
 > 
 > 
 
-![](media/service-analyze-in-excel/pbi_anlz_excel_dontshow.png)
+![Ne jelenjen meg többé jelölőnégyzet](media/service-analyze-in-excel/pbi_anlz_excel_dontshow.png)
 
 Ha újra le kell tölteni az **Elemzés az Excelben** funkcióhoz szükséges frissítéseket, letöltheti őket a Power BI **Letöltés** ikonjára kattintva, ahogy az a következő képen látható.
 
-![](media/service-analyze-in-excel/pbi_anlz_excel_download_again.png)
+![Frissítések telepítése](media/service-analyze-in-excel/pbi_anlz_excel_download_again.png)
 
 ### <a name="sign-in-to-power-bi"></a>Bejelentkezés a Power BI-ba
 Bár a böngészőjében bejelentkezett a Power BI-ba, azonban amikor először nyit meg az Excelben egy új .ODC-fájlt, akkor a rendszer kérheti, hogy jelentkezzen be a Power BI-ba a Power BI-fiókjával. Ez hitelesíti az Excel kapcsolódását a Power BI-hoz.
@@ -70,12 +70,12 @@ Bizonyos felhasználók több Power BI-fiókkal is rendelkeznek, és olyan helyz
 
 Ekkor lehetősége van újra bejelentkezni azzal a Power BI-fiókkal, amelynek hozzáférése van az Elemzés az Excelben által elért adatkészlethez. Másik lehetőségként kiválaszthatja az Excel **Power BI** menüszalagjának **Profil** elemét, ami azonosítja, hogy jelenleg melyik fiókkal van bejelentkezve, és megad hivatkozást, amelyen keresztül a felhasználó kijelentkezhet (majd újra be, egy másik fiókkal). Ha még nincs telepítve, [letöltheti az Excelhez készült Power BI Publisher](https://www.microsoft.com/download/details.aspx?id=50729) alkalmazást, amellyel telepíthető a Power BI-menüszalag az Excelben.
 
-![](media/service-analyze-in-excel/pbi_anlz_excel_profile.png)
+![Profil megtekintése](media/service-analyze-in-excel/pbi_anlz_excel_profile.png)
 
 ### <a name="enable-data-connections"></a>Adatkapcsolatok engedélyezése
 A Power BI-adatok Excelben való elemzéséhez a rendszer kéri, hogy erősítse meg az .odc-fájl nevét és elérési útját, majd kattintson az **Engedélyezés** lehetőségre.
 
-![](media/service-analyze-in-excel/pbi_anlz_excel_enable.png)
+![Adatkapcsolatok engedélyezése](media/service-analyze-in-excel/pbi_anlz_excel_enable.png)
 
 > [!NOTE]
 > A Power BI-bérlők rendszergazdái a *Power BI felügyeleti portál* használatával letilthatják az **Elemzés az Excelben** funkciót az Analysis Services-adatbázisokban tárolt helyszíni adatbázisok esetében. Ha ez a lehetőség le van tiltva, akkor az **Elemzés az Excelben** nem érhető el az Analysis Services-adatbázisok esetében, de továbbra is elérhető más típusú adatkészletekhez.
@@ -85,7 +85,7 @@ A Power BI-adatok Excelben való elemzéséhez a rendszer kéri, hogy erősítse
 ## <a name="analyze-away"></a>Elemzés
 Most hogy megnyitotta az Excelt és van egy üres kimutatási táblája, készen áll arra, hogy különféle elemzéseket végezzen a Power BI-adatkészleten. Akárcsak a helyi munkafüzetek esetében, az Elemzés az Excelben használatakor is létrehozhat kimutatásokat és diagramokat, adatokat adhat hozzá más forrásokból és így tovább. Emellett természetesen különböző munkalapokat is létrehozhat, amelyek különféle módon nyújtanak betekintést az adatokba.
 
-![](media/service-analyze-in-excel/pbi_anlz_excel_chart.png)
+![Kimutatás és kimutatásdiagram az Excelben](media/service-analyze-in-excel/pbi_anlz_excel_chart.png)
 
 > [!NOTE]
 > Fontos tudni, hogy az **Elemzés az Excelben** funkció minden részletszintű adatot elérhetővé tesz minden olyan felhasználó számára, akinek jogosultsága van az adatkészlet hozzáféréséhez.

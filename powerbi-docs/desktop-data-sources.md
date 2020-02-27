@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0cf9d6acd4fe5f729dafb575a2ab736b9e8db7bb
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: f13c8f34fbbe927ee6929a0b3e717248aedd63d0
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76039836"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427553"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 
@@ -89,8 +89,8 @@ Az **Adatbázis** kategória a következő adatkapcsolatokat biztosítja:
 * Vertica
 * Snowflake
 * Essbase
-* AtScale-kockák (bétaverzió)
-* BI-összekötő
+* AtScale-kockák
+* BI Connector Data Virtuality LDW (bétaverzió)
 * Denodo
 * Dremio
 * Exasol
@@ -162,7 +162,6 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * Adobe Analytics
 * appFigures (bétaverzió)
 * Data.World – Adathalmaz lekérése (bétaverzió)
-* Facebook
 * GitHub (bétaverzió)
 * LinkedIn Sales Navigator (bétaverzió)
 * MailChimp (bétaverzió)
@@ -182,6 +181,7 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * Dynamics 365 Customer Insights (béta)
 * Emigo-adatforrás
 * Entersoft Business Suite (bétaverzió)
+* FactSet Analytics (bétaverzió)
 * Industrial App Store
 * Intune Data Warehouse (bétaverzió)
 * Microsoft Graph Security (bétaverzió)
@@ -210,7 +210,10 @@ Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 * ODBC
 * OLE DB
 * BI360 - Budgeting & Financial Reporting (bétaverzió)
+* FHIR
 * Information Grid (bétaverzió)
+* Jamf Pro (bétaverzió)
+* MicroStrategy for Power BI
 * Paxata
 * QubolePresto (bétaverzió)
 * Roamler (bétaverzió)
@@ -219,6 +222,7 @@ Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 * Tenforce (Smart)List (bétaverzió)
 * Vena (bétaverzió)
 * Workforce Dimensions (bétaverzió)
+* Zucchetti HR Infinity (bétaverzió)
 * Üres lekérdezés
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Egyéb** kategória ki van választva.

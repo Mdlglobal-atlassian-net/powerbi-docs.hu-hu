@@ -1,31 +1,31 @@
 ---
-title: 'Oktatóanyag: Az Elemzés az Excelben használata'
-description: Ebben az oktatóanyagban az adatkészletek Excelbe történő importálásához a Power BI-adatkészletek lapot fogja használni.
+title: 'Oktatóanyag: A Power BI Elemzés az Excelben funkciójának használata az Excelből'
+description: Ebben az oktatóanyagban az Excelből kiindulva csatlakozhat a Power BI Adathalmazok lapjához, hogy adathalmazokat importáljon az Excelbe.
 author: tejaskulkarni
 ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 01/27/2020
+ms.date: 02/13/2020
 ms.author: tekulkar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a68adccec019e64e554d199d23d7dddd782f56a2
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.openlocfilehash: d3795c34e477c593af4afefbe5cc01040026bfa4
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76921485"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426541"
 ---
-# <a name="tutorial-use-analyze-in-excel"></a>Oktatóanyag: Az Elemzés az Excelben használata
+# <a name="tutorial-use-power-bi-analyze-in-excel-starting-in-excel"></a>Oktatóanyag: A Power BI Elemzés az Excelben funkciójának használata az Excelből
 
-Az Ön szervezete a Power BI-t használja az adatokhoz való hozzáférés megosztására. Az elemzés az Excelben funkcióval kimutatásokat és kimutatásdiagramokat hozhat létre, amelyek további kontextust tesznek lehetővé az elemzéshez, vagy csökkenthetik a megfelelő adatkészletek kereséséhez és importálásához szükséges időt.
+Az Ön szervezete a Power BI-t használja az adatokhoz való hozzáférés megosztására. A Power BI Elemzés az Excelben funkcióját az Excelből indítva kimutatásokat és kimutatásdiagramokat hozhat létre az Excelben. Ezek gazdagítják az elemzések környezetét, és csökkentik a lényeges adathalmazok megkereséséhez és importálásához szükséges időt.
 
-Az adatkészletek kiválasztásának megkezdéséhez válassza az „Elemzés az Excelben” lehetőséget. A rendszer végigvezeti az adatokat használó kimutatások létrehozásán.  
+A Power BI-adathalmazzal végzett munka megkezdéséhez válassza az Excelben az „Elemzés az Excelben” lehetőséget. A rendszer végigvezeti az adatokat használó kimutatás létrehozásán.  
 
 A szervezet által megosztott további adatkészleteket az adathalmazok lapra való visszatéréssel találja meg.
 
-Ha bármikor probléma merül fel, válassza a Nem lehetőséget az alábbi folyamat megfelelő lépésében, és adjon visszajelzést a hivatkozott űrlapon.  
+Ha bármikor probléma merül fel, válassza a **Nem** lehetőséget az alábbi folyamat megfelelő lépésében, és adjon visszajelzést a hivatkozott űrlapon.  
 
 Az oktatóanyag a következőket ismerteti:
 

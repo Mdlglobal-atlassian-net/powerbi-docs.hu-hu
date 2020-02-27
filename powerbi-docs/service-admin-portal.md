@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: c59f1c1653e3b1a506f342bffed6fa539dfe58b3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: d56e329d5331403c0ed0ce4da28bf73aea65d9a6
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819583"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427875"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -233,14 +233,14 @@ A **Webes közzététel** beállításától függően a felhasználók különf
 
 ### <a name="export-data"></a>Adatok exportálása
 
-A munkahelyi felhasználók adatokat exportálhatnak egy csempéről vagy vizualizációból. [További információ](visuals/power-bi-visualization-export-data.md)
+A munkahelyi felhasználók adatokat exportálhatnak egy csempéről vagy vizualizációból. További információ [adatok csempéről vagy vizualizációból való exportálásáról](visuals/power-bi-visualization-export-data.md).
 
 Az alábbi képen az adatok exportálásának lehetősége látható egy csempén.
 
 ![Adatok exportálása egy csempéből](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
-> Az **Adatok exportálása** lehetőség letiltásával azt is megakadályozhatja, hogy a felhasználók az **Elemzés az Excelben** funkciót vagy a Power BI szolgáltatás élő kapcsolatát használják.
+> Az **Adatok exportálása** lehetőség letiltásával azt is megakadályozhatja, hogy a felhasználók az [Elemzés az Excelben](service-analyze-in-excel.md) funkciót vagy a Power BI szolgáltatás élő kapcsolatát használják.
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Jelentések exportálása PowerPoint-bemutatóként vagy PDF-dokumentumként
 
