@@ -1,79 +1,77 @@
 ---
 title: Az R használata a Power Query szerkesztőben
-description: Az R használata a Power BI Lekérdezésszerkesztőjében speciális elemzésekhez
+description: Az R használata a Power BI Desktop Power Query-szerkesztőjében speciális elemzésekhez.
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 01/28/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d2ba33e18701ad147cb38072461804b4528101ea
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a157b674cd96c10081168ac5258e5b2f6145f09d
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877923"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464916"
 ---
-# <a name="use-r-in-query-editor"></a>Az R használata a lekérdezésszerkesztőben
+# <a name="use-r-in-power-query-editor"></a>Az R használata a Power Query szerkesztőben
 
-Az [**R**](https://mran.microsoft.com/documents/what-is-r) hatékony programnyelv, amelyet sok statisztikus, adatszakértő és adatelemző használ. Az **R** nyelvet a következőre használhatja a Power BI Desktop **Lekérdezésszerkesztőjében**:
+[Az R nyelv](https://mran.microsoft.com/documents/what-is-r) hatékony programnyelv, amelyet sok statisztikus, adatszakértő és adatelemző használ. Az R nyelvet a következőre használhatja a Power BI Desktop Power Query-szerkesztőjében:
 
-* Adatmodellek előkészítése
+* Adatmodellek előkészítése.
 
-* Jelentések létrehozása
+* Jelentések létrehozása.
 
 * Végezhet adattisztítást, speciális adatátalakítást és adathalmaz-elemzést, amely magában foglalja a hiányzó adatok kiegészítését, az előrejelzéseket, a fürtözést és még sok mást.  
 
 ## <a name="install-r"></a>Az R telepítése
 
-Az **R** ingyenesen letölthető a [Revolution Open letöltési oldaláról](https://mran.revolutionanalytics.com/download/) és a [CRAN adattárból](https://cran.r-project.org/bin/windows/base/).
+Az R ingyenesen letölthető a [Revolution R Open letöltési oldaláról](https://mran.revolutionanalytics.com/download/) és a [CRAN adattárból](https://cran.r-project.org/bin/windows/base/).
 
-### <a name="install-mice"></a>A mice telepítése
+## <a name="install-mice"></a>A mice telepítése
 
-A [**mice** kódtárnak](https://www.rdocumentation.org/packages/mice/versions/3.5.0/topics/mice) telepítve kell lennie az R-környezetben. A **mice** nélkül a mintaszkript kódja nem működik megfelelően. A **mice** csomag értelmez egy metódust, amely a hiányzó adatokat kezeli.
+Előfeltételként telepítenie kell az R-környezetben a [mice kódtárat](https://www.rdocumentation.org/packages/mice/versions/3.5.0/topics/mice). A mice nélkül a mintaszkript kódja nem működik megfelelően. A mice csomag értelmez egy metódust, amely a hiányzó adatokat kezeli.
 
-A **mice** telepítése:
+A mice kódtár telepítése:
 
-1. Indítsa el az R.exe programot (például C:\Program Files\Microsoft\R Open\R-3.5.3\bin\R.exe)  
+1. Indítsa el az R.exe programot (például C:\Program Files\Microsoft\R Open\R-3.5.3\bin\R.exe).  
 
-2. Futtassa a telepítési parancsot:
+2. Futtassa a telepítési parancsot az R parancssorából:
 
    ``` 
-   >  install.packages('mice') 
+   install.packages('mice') 
    ```
 
-## <a name="use-r-in-query-editor"></a>Az R használata a lekérdezésszerkesztőben
+## <a name="use-r-in-power-query-editor"></a>Az R használata a Power Query szerkesztőben
 
-Az **R** használatát a **Lekérdezésszerkesztőben** egy tőzsdei példa-adathalmazzal mutatjuk be, amelyet egy .csv-fájl tartalmaz, és a következő lépésekkel használható:
+Az R használatát a Power Query-szerkesztőben egy tőzsdei példa-adathalmazzal mutatjuk be, amelyet egy .csv-fájl tartalmaz, és a következő lépésekkel használható:
 
-1. [Töltse le az **EuStockMarkets_NA.csv** fájlt](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Jegyezze meg, hogy hová menti.
+1. [Töltse le az EuStockMarkets_NA.csv fájlt](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Jegyezze meg, hogy hová menti.
 
-1. Töltse be a fájlt a **Power BI Desktopba**: A **Kezdőlap** menüszalagon válassza az **Adatok lekérése > Szöveg/CSV** menüpontot.
+1. Töltse be a fájlt a Power BI Desktopba. A **Kezdőlapon** válassza az **Adatok betöltése** > **Szöveg/CSV** elemet.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
+   ![A Szöveg/CSV lehetőség kiválasztása](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
 
-1. Jelölje ki a fájlt, majd válassza a **Megnyitás** lehetőséget. A CSV adatai megjelennek a **Szöveges/CSV-fájl** párbeszédpanelen.
+1. Jelölje ki az EuStockMarkets_NA.csv fájlt, majd válassza a **Megnyitás** lehetőséget. A CSV adatai megjelennek a **Szöveges/CSV-fájl** párbeszédablakban.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_2.png)
+   ![CSV-fájl kiválasztása](media/desktop-r-in-query-editor/r-in-query-editor_2.png)
 
-1. Az adatok a betöltésük után megjelennek a **Mezők** panelen.
+1. Töltse be az adatokat a fájlból a **Betöltés** lehetőség választásával. Miután a Power BI betöltötte az adatokat, új tábla jelenik meg a **Mezők** panelen.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_3.png)
+   ![Adatok a Mezők panelen](media/desktop-r-in-query-editor/r-in-query-editor_3.png)
 
-1. A **Lekérdezésszerkesztő** megnyitásához válassza a **Kezdőlap** menüszalag **Lekérdezések szerkesztése** elemét.
+1. A Power Query-szerkesztő megnyitásához válassza a **Kezdőlap** menüszalag **Lekérdezések szerkesztése** elemét.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
+   ![A Lekérdezések szerkesztése lehetőség kiválasztása](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
 
-1. Az **Átalakítás** menüszalagon válassza az **R-szkript futtatása** lehetőséget. Megnyílik az **R-szkript futtatása** szerkesztő.  
+1. Az **Átalakítás** lapon válassza az **R-szkript futtatása** lehetőséget. Megnyílik az **R-szkript futtatása** szerkesztő. A 15. és a 20. sorban adatok hiányoznak, ahogyan a képen nem látható további sorokban is. Az alábbi lépések bemutatják, hogyan egészíti ki az R nyelv ezeket a sorokat.
 
-   A 15. és a 20. sorban adatok hiányoznak, ahogyan a képen nem látható további sorokban is. Az alábbi lépések bemutatják, hogyan egészíti ki az R nyelv ezeket a sorokat.
+   ![Az R-szkript futtatása lehetőség kiválasztása](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
-
-1. Ehhez a példához írja be az alábbi szkriptkódot. A „&lt;Your File Path&gt;” helyére írja be az **EuStockMarkets_NA.csv** fájl helyi fájlrendszerben érvényes elérési útját, például C:/Users/Kiss Anna/Documents/Microsoft/EuStockMarkets_NA.csv
+1. A példába kedvéért illessze be az alábbi szkriptkódot az **R-szkript futtatása** ablak **Szkript** mezőjébe. A *&lt;Your File Path&gt;* helyére írja be az EuStockMarkets_NA.csv fájl helyi fájlrendszerben érvényes elérési útját, például C:/Users/Kiss Anna/Documents/Microsoft/EuStockMarkets_NA.csv.
 
     ```r
        dataset <- read.csv(file="<Your File Path>/EuStockMarkets_NA.csv", header=TRUE, sep=",")
@@ -87,48 +85,55 @@ Az **R** használatát a **Lekérdezésszerkesztőben** egy tőzsdei példa-adat
     > [!NOTE]
     > Lehetséges, hogy felül kell írnia egy *output* nevű változót ahhoz, hogy az új adathalmaz megfelelően jöjjön létre a szűrők alkalmazásával.
 
-7. Ha az **OK** gombra kattintunk, a **Lekérdezésszerkesztő** egy, az adatvédelemről szóló figyelmeztetést jelenít meg.
+7. Válassza az **OK** lehetőséget. A Power Query-szerkesztő egy, az adatvédelemről szóló figyelmeztetést jelenít meg.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_6.png)
-8. Ahhoz, hogy az R-szkriptek megfelelően működjenek a Power BI szolgáltatásban, minden adatforrást **nyilvánosra** kell állítania. További tudnivalókat az adatvédelmi beállításokról és azok következményeiről az [adatvédelmi szinteket](desktop-privacy-levels.md) ismertető szakaszban találhat.
+   ![Adatvédelmi figyelmeztetés](media/desktop-r-in-query-editor/r-in-query-editor_6.png)
+8. A figyelmeztető üzenetben válassza a **Tovább** lehetőséget. A megnyíló **Adatvédelmi szintek** párbeszédablakban állítson minden adatforrást **Nyilvánosra**, hogy az R-szkriptek megfelelően működjenek a Power BI szolgáltatásban. 
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_7.png)
+   ![Adatvédelmi szintek párbeszédablak](media/desktop-r-in-query-editor/r-in-query-editor_7.png)
 
-   A **Mentés** lehetőség kiválasztása után lefut a szkript. Ekkor egy új, **completedValues** nevű oszlop jelenik meg a **Mezők** panelen. Figyelje meg, hogy van néhány hiányzó adatelem, például a 15. és 18. sorban. Azt, hogy ezeket az R hogyan kezeli, a következő szakaszban láthatjuk.
+   Az adatvédelmi beállításokról és azok következményeiről a [Power BI Desktop adatvédelmi szintjeit](desktop-privacy-levels.md) ismertető szakaszban találhat további információt.
 
-   Mindössze öt sornyi R-szkript használatát követően a **Lekérdezésszerkesztő** egy prediktív modellel kitöltötte a hiányzó értékeket.
+ 9. Válassza a **Mentés** lehetőséget a szkript futtatásához. 
+
+   Ekkor egy új, **completedValues** nevű oszlop jelenik meg a **Mezők** panelen. Az oszlopban van néhány hiányzó adatelem, például a 15. és 18. sorban. Azt, hogy ezeket az R hogyan kezeli, a következő szakaszban láthatjuk.
+
+   Mindössze öt sornyi R-szkript használatát követően a Power Query-szerkesztő egy prediktív modellel kitöltötte a hiányzó értékeket.
 
 ## <a name="create-visuals-from-r-script-data"></a>Vizualizációk létrehozása az R-szkript adataiból
 
-Most létrehozhatunk egy vizualizációt, amelyből látható, hogy az R-szkriptkód hogyan használja a **mice** kódtárat a hiányzó adatok kiegészítésére. Ezt az alábbi kép illusztrálja:
+Most létrehozhatunk egy vizualizációt, amelyen látható, hogyan tölti ki a hiányzó értékeket az R-szkript kódja a mice kódtár használatával.
 
-![](media/desktop-r-in-query-editor/r-in-query-editor_8a.png)
+![R-szkriptet használó vizualizáció](media/desktop-r-in-query-editor/r-in-query-editor_8a.png)
 
-Az összes elkészült vizualizációt mentheti egy **Power BI Desktop** .pbix-fájlba, az adatmodellt és annak R-szkriptjeit pedig felhasználhatja a Power BI szolgáltatásban.
+Az összes elkészült vizualizációt mentheti egy Power BI Desktop .pbix-fájlba, az adatmodellt és annak R-szkriptjeit pedig felhasználhatja a Power BI szolgáltatásban.
 
 > [!NOTE]
 > [Letölthet egy .pbix-fájlt](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix), amelyen ezeket a lépéseket már végrehajtották.
 
 Miután feltöltötte a .pbix-fájlt a Power BI szolgáltatásba, további lépésekkel kell engedélyeznie a szolgáltatásnak az adatok és a vizualizációk frissítését:  
 
-* **Adathalmaz ütemezett frissítésének engedélyezése** – az R-szkripttel rendelkező adathalmazt tartalmazó munkafüzet ütemezett frissítésének engedélyezéséhez tekintse meg az [ütemezett frissítés konfigurálását](refresh-scheduled-refresh.md) ismertető részt, amely a **Privát átjáróról** is tartalmaz információkat.
+* **Ütemezett frissítés engedélyezése az adathalmazhoz**: Az [Ütemezett frissítés konfigurálása](refresh-scheduled-refresh.md) című cikkből tájékozódhat az R-szkriptekkel rendelkező adathalmazt tartalmazó munkafüzet ütemezett frissítésének engedélyezéséről. Ez a cikk a privát átjárókkal kapcsolatos információkat is tartalmaz.
 
-* **A privát átjáró telepítése** – azon a gépen, amelyen a fájl és az **R** található, telepítve kell lennie egy **privát átjárónak**. A Power BI szolgáltatás hozzáfér ehhez a munkafüzethez, és újrarendereli a módosított vizualizációkat. További információ: [Privát átjáró telepítése és konfigurálása](service-gateway-personal-mode.md).
+* **Privát átjáró telepítése**: Azon a gépen, amelyen a fájl és az R található, telepítve kell lennie egy privát átjárónak. A Power BI szolgáltatás hozzáfér ehhez a munkafüzethez, és újrarendereli a módosított vizualizációkat. További információ: [Privát átjárók használata a Power BI-ban](service-gateway-personal-mode.md).
 
 ## <a name="limitations"></a>Korlátozások
 
-A **Lekérdezésszerkesztőben** létrehozott R-szkripteket tartalmazó lekérdezések némiképp korlátozottak:
+A Power Query-szerkesztőben létrehozott R-szkripteket tartalmazó lekérdezésekre vonatkozik néhány korlátozás:
 
-* Minden R-adatforrást **nyilvánosra** kell beállítani. A **Lekérdezésszerkesztőben** készült lekérdezés minden további lépésének is nyilvánosnak kell lennie. Az adatforrás-beállítások eléréshez a **Power BI Desktopban** válassza a **Fájl > Lehetőségek és beállítások > Adatforrás-beállítások** elemet.
+* Minden R-adatforrást **nyilvánosra** kell beállítani. A Power Query-szerkesztőben készült lekérdezés minden további lépésének is nyilvánosnak kell lennie. 
 
-  ![](media/desktop-r-in-query-editor/r-in-query-editor_9.png)
+   Az adatforrás-beállítások eléréshez a Power BI Desktopban válassza a **Fájl** > **Lehetőségek és beállítások** > **Adatforrás-beállítások** elemet.
 
-  Az **Adatforrás beállításai** párbeszédpanelen jelölje ki az adatforrás(oka)t, majd válassza az **Engedélyek szerkesztése...** lehetőséget.  Az **Adatvédelmi szintet** állítsa be **Nyilvánosra**.
+   ![Adatforrás-beállítások kiválasztása](media/desktop-r-in-query-editor/r-in-query-editor_9.png)
 
-  ![](media/desktop-r-in-query-editor/r-in-query-editor_10.png)    
-* Az R-vizualizációk vagy adathalmazok ütemezett frissítésének engedélyezéséhez engedélyeznie kell az **Ütemezett frissítést**, és rendelkeznie kell a munkafüzetet és az **R-t** tartalmazó számítógépre telepített **Privát átjáróval**. Az ezekről szóló információkért tekintse meg a cikk korábbi szakaszait. A vonatkozó részekben található hivatkozásokkal további információhoz juthat.
+   Az **Adatforrás beállításai** párbeszédablakban jelöljön ki egy vagy több adatforrást, majd válassza az **Engedélyek szerkesztése** lehetőséget. Az **Adatvédelmi szintet** állítsa be **Nyilvánosra**.
 
-Az R-rel és egyéni lekérdezésekkel sok mindent tehet, például felderítheti adatait és olyanná alakíthatja azokat, amilyen módon meg szeretné őket jeleníteni.
+   ![Adatforrás beállításai párbeszédablak](media/desktop-r-in-query-editor/r-in-query-editor_10.png)  
+  
+* Az R-vizualizációk vagy adathalmazok ütemezett frissítéséhez engedélyeznie kell az ütemezett frissítést, és telepítenie kell egy privát átjárót a munkafüzetet és az R-t tartalmazó számítógépre. 
+
+R- és egyéni lekérdezésekkel sok mindent megtehet. Feltárhatja és úgy alakíthatja az adatokat, ahogyan azokat meg szeretné jeleníteni.
 
 ## <a name="next-steps"></a>Következő lépések
 
@@ -138,4 +143,4 @@ Az R-rel és egyéni lekérdezésekkel sok mindent tehet, például felderíthet
 
 * [Külső R IDE környezet használata a Power BI-jal](desktop-r-ide.md) 
 
-* [R-csomagok a Power BI szolgáltatásban](service-r-packages-support.md)
+* [Vizualizációk létrehozása R-csomagokkal a Power BI szolgáltatásban](service-r-packages-support.md)

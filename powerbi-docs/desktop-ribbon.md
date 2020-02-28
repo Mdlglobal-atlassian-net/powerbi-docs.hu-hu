@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0f7debd49541679b2ec5d41eaa2307c50bf170ce
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: df8c84b5b7baf55a32e07e3e48cb02317fdf7875
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74016135"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527437"
 ---
 # <a name="use-the-updated-ribbon-in-power-bi-desktop-preview"></a>A frissített menüszalag használata a Power BI Desktopban (előzetes verzió)
 
@@ -51,7 +51,18 @@ Ezek az előnyök az alábbi kategóriákba sorolhatók:
 
 * **Egysoros menüszalag, amely összecsukva helyet takarít meg** – a frissített menüszalag egy további előnye, hogy maga a menüszalag egyetlen sorra csukható össze, és dinamikusan jeleníti meg a környezetnek megfelelő menüszalag-elemeket. 
 
-    ![Jobb témák](media/desktop-ribbon/desktop-ribbon-06.png)
+    ![Összecsukott menüszalag](media/desktop-ribbon/desktop-ribbon-06.png)
+
+* **Gyorsbillentyű-tippek a navigáláshoz és a gombok kiválasztásához** – a menüszalagon való navigálásban az **Alt + Windows gomb** lenyomásával aktiválható gyorsbillentyű-tippek segítenek. Ezek aktiválása után a billentyűzeten lenyomott billentyűkkel navigálhat.
+
+    ![Gyorsbillentyű-tippek](media/desktop-ribbon/desktop-ribbon-07.png)
+
+* **Egyéni formátumsztringek** – az egyéni formátumsztringeket nem csak a *Tulajdonságok* panelen állíthatja be, hanem a menüszalagon is. Jelölje ki a testreszabni kívánt mértéket vagy oszlopot. Ekkor a kijelöléstől függően megnyílik a **Mértékeszközök** vagy **Oszlopeszközök** helyi menü. A lap formázási szakaszában közvetlenül a legördülő mezőbe gépelheti be az egyéni formátumsztringet.
+
+    ![Egyéni formátumsztringek](media/desktop-ribbon/desktop-ribbon-08.png)
+
+* **Akadálymentesség** – a címsor, a menüszalag és a Fájl menü teljesen akadálymentes. A Ctrl + F6 billentyűkombinációval léphet a menüszalag szakaszra. Ott a **Tab** billentyűvel mozoghat a felső és az alsó sáv között, a nyílbillentyűkkel pedig az elemek között.
+
 
 A látható változásokon kívül a frissített menüszalag lehetőséget biztosít a Power BI Desktop és a menüszalag későbbi frissítéseire, például az alábbiakra:
 

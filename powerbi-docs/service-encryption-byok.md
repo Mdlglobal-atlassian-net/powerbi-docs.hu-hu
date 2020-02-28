@@ -1,5 +1,5 @@
 ---
-title: Saját titkosítási kulcsok használata a Power BI-hoz (előzetes verzió)
+title: Saját titkosítási kulcsok használata a Power BI-hoz
 description: Útmutató saját titkosítási kulcsok Power BI Premiumban való használatához.
 author: davidiseminger
 ms.author: davidi
@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 02/20/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: c4b4d706f56d9ebc91b17194c9b2fa631aeb8497
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 133d807d26ba6571eeb614852f3f651a749a369f
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75762117"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527771"
 ---
-# <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Saját titkosítási kulcsok használata a Power BI-hoz (előzetes verzió)
+# <a name="bring-your-own-encryption-keys-for-power-bi"></a>Saját titkosítási kulcsok használata a Power BI-hoz
 
 A Power BI az _inaktív_ és _feldolgozás alatt álló_ adatokat titkosítja. A Power BI alapértelmezés szerint a Microsoft által felügyelt kulcsokkal titkosítja az adatokat. A Power BI Premiumban saját kulcsait is használhatja az adathalmazba importált inaktív adatokhoz (További információ: [Adatforrásokkal kapcsolatos és tárolási szempontok](#data-source-and-storage-considerations)). Ezt nevezik _Bring Your Own Key_ (BYOK) megközelítésnek.
 
 ## <a name="why-use-byok"></a>Miért érdemes BYOK-t használni?
 
-BYOK használatával egyszerűbben eleget tehet a kulcsokkal kapcsolatban a felhőszolgáltatóval (ebben az esetben a Microsofttal) kötött megállapodás követelményeinek. BYOK használatával Ön adhatja meg és szabályozhatja alkalmazásszinten a Power BI-beli inaktív adatok titkosítási kulcsait. Ennek eredményeként ön szabályozza, és vissza is vonhatja vállalati kulcsait, ha a szolgáltatás elhagyása mellett dönt. A kulcsok visszavonása után az adatok a szolgáltatás számára olvashatatlanná válnak.
+BYOK használatával egyszerűbben eleget tehet a kulcsokkal kapcsolatban a felhőszolgáltatóval (ebben az esetben a Microsofttal) kötött megállapodás követelményeinek. BYOK használatával Ön adhatja meg és szabályozhatja alkalmazásszinten a Power BI-beli inaktív adatok titkosítási kulcsait. Ennek eredményeként ön szabályozza, és vissza is vonhatja vállalati kulcsait, ha a szolgáltatás elhagyása mellett dönt. Az adatok kulcsok visszavonása után 30 percen belül olvashatatlanná válnak a szolgáltatás számára.
 
 ## <a name="data-source-and-storage-considerations"></a>Adatforrásokkal kapcsolatos és tárolási szempontok
 
@@ -34,7 +34,12 @@ BYOK használatához adatokat kell feltöltenie a Power BI szolgáltatásba egy 
 - [Streamelési adathalmazok](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 - [Nagyméretű modellek](service-premium-large-models.md)
 
-A BYOK csak a PBIX-fájlhoz társított adatkészletre vonatkozik, a csempék és vizualizációk lekérdezési eredményeinek gyorsítótáraira nem.
+A saját kulcsok használata (BYOK) csak adathalmazokra vonatkozik. A leküldéses adathalmazok, valamint a felhasználók által a szolgáltatásba feltöltött Excel-fájlok és CSV-fájlok nem a saját kulcsával lesznek titkosítva. A munkaterületein tárolt összetevőket az alábbi PowerShell-paranccsal azonosíthatja:
+
+```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
+
+> [!NOTE]
+> Ehhez a parancsmaghoz a Power BI v1.0.840 felügyeleti modulja szükséges. A futtatott verziót a Get-InstalledModule -Name MicrosoftPowerBIMgmt parancs futtatásával állapíthatja meg. A legújabb verzió telepítéséhez futtassa az Install-Module -Name MicrosoftPowerBIMgmt parancsot. A Power BI-parancsmagról és annak paramétereiről a [Power BI PowerShell-parancsmag modul](https://docs.microsoft.com/powershell/power-bi/overview) című cikkből juthat információhoz.
 
 ## <a name="configure-azure-key-vault"></a>Az Azure Key Vault konfigurálása
 
@@ -183,3 +188,17 @@ A Power BI további parancsmagokat kínál a BYOK egyszerű bérlőbeli felügye
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
     ```
+
+
+
+## <a name="next-steps"></a>Következő lépések
+
+* [Power BI PowerShell-parancsmag modul](https://docs.microsoft.com/powershell/power-bi/overview) 
+
+* [A munka megosztásának módjai a Power BI-ban](service-how-to-collaborate-distribute-dashboards-reports.md)
+
+* [Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával](service-url-filters.md)
+
+* [Beágyazás jelentéskijelzővel a SharePoint Online-ban](service-embed-report-spo.md)
+
+* [Webes közzététel a Power BI-ból](service-publish-to-web.md)
