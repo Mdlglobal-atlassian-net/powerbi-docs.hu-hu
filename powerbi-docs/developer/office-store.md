@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 12/02/2019
-ms.openlocfilehash: ec1bd8666a9d76b4ccfa7793415488f85a24dfdb
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.date: 02/13/2020
+ms.openlocfilehash: 031e1fd5d5c57e37e0d70541d6662b0af7b91b07
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74999902"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576799"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Power BI-vizualizációk közzététele a Partnerközpontban
 
@@ -39,7 +39,7 @@ Ha készen áll a Power BI-vizualizáció beküldésére, ellenőrizze, hogy a v
 | Képernyőképek |Igen |Adjon meg legalább egy képernyőképet. Ennek formátuma .png, .jpg, .jpeg vagy .gif lehet, A mérete csak 1366 px (szélesség) és 768 px (hosszúság) lehet. A fájl nem lehet nagyobb 1024 kb-nál.<br>A hatékonyabb használat érdekében adjon hozzá szövegbuborékokat az egyes képernyőképeken látható fő jellemzők által képviselt érték kihangsúlyozásához. |
 | Támogatás letöltési hivatkozása |Igen |Adjon meg egy támogatási URL-címet az ügyfeleknek. Ez a hivatkozás a SellerDashboard-lista részeként lesz megadva, és látható lesz a vizualizációt az AppSource-beli listában elérő felhasználók számára. Az URL-címnek tartalmaznia kell a https:// vagy a http:// előtagot. |
 | Adatvédelmi dokumentum hivatkozása |Igen |Adjon meg egy hivatkozást a vizualizáció adatvédelmi szabályzatához. Ez a hivatkozás a SellerDashboard-lista részeként lesz megadva, és látható lesz a vizualizációt az AppSource-beli listában elérő felhasználók számára. A hivatkozásnak tartalmaznia kell a https:// vagy a http:// előtagot. |
-| Végfelhasználói licencszerződés (EULA) |Igen |Fel kell töltenie egy EULA fájlt. Ez lehet saját EULA is, de az Office Áruház Power BI-vizualizációkra vonatkozó alapértelmezett EULA fájlját is használhatja. Az alapértelmezett EULA használatához illessze be a következő URL-címet az eladó irányítópultjának „Végfelhasználói licencszerződés” fájlfeltöltési párbeszédpaneljére. [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
+| Végfelhasználói licencszerződés (EULA) |Igen |Meg kell adnia a licencfeltételeket tartalmazó fájlt a Power BI-vizualizációhoz. |
 | Videó hivatkozása |Nem |Tovább növelheti a felhasználók érdeklődését az egyéni vizualizáció iránt, ha videóhivatkozást ad meg a vizualizáció témájában. Az URL-címnek tartalmaznia kell a https:// vagy a http:// előtagot. |
 | GitHub-adattár |Nem |Osszon meg nyilvános hivatkozást egy [GitHub](https://www.github.com)-adattárban a Power BI-vizualizáció és az adatminták forrásaival. Ez lehetővé teszi más fejlesztők számára a visszajelzést és a javaslattételt a kód javítására. |
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c2985f0281274adcdbde737c0f3b00688a401df7
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: ecb377ccabf3b94f37c3fcc69b24c4437c42281b
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75221275"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609810"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop-preview"></a>AI-elemzések használata a Power BI Desktopban (előzetes verzió)
 
@@ -153,7 +153,7 @@ Számos szervezet használja a **Machine Learning** modelljeit hatékonyabb üzl
 
 A funkció használatához egy adattudós egyszerűen hozzáférést biztosíthat az Azure ML-modellhez egy BI-elemzőnek az Azure Portalon. Innentől kezdve a Power Query minden munkamenet elején felismeri azokat az Azure ML-modelleket, amelyekhez a felhasználó hozzáfér, és dinamikus Power Query-függvényként jeleníti meg őket. A felhasználó ezután meghívhatja ezeket a függvényeket a Power Query-szerkesztő menüszalagjáról vagy közvetlenül az M-függvénnyel. A Power BI a jobb teljesítmény érdekében automatikusan kötegeli a hozzáférési kéréseket, amikor meghívja az Azure ML-modellt egy sorkészlethez.
 
-Ez a funkció jelenleg csak Power BI-adatfolyamokban, valamint a Power Query Online Power BI-ban történő használatához támogatott.
+Ez a funkció a Power BI Desktopban és a Power BI-adatfolyamokban, valamint a Power BI szolgáltatás Power Query Online felületén működik.
 
 További információ az adatfolyamokról: [Önkiszolgáló adat-előkészítés a Power BI-ban](service-dataflows-overview.md).
 
@@ -181,7 +181,7 @@ Az ebben a szakaszban leírt lépések azt ismertetik, hogyan adhat hozzáféré
 
 ### <a name="schema-discovery-for-machine-learning-models"></a>Machine Learning-modellek sémafeltárása
 
-Az adattudósok elsősorban Pythont használnak a Machine Learning gépi tanulási modelljeinek fejlesztéséhez és üzembe helyezéséhez. A (klasszikus) Machine Learning Studióval ellentétben (amely automatizálja a modell sémafájljainak létrehozását) a Machine Learning esetében az adattudósnak explicit módon létre kell hoznia a sémafájlt a Pythonnal.
+Az adattudósok elsősorban Pythont használnak a Machine Learning gépi tanulási modelljeinek fejlesztéséhez és üzembe helyezéséhez. A (klasszikus) Machine Learning Studióval ellentétben (amely automatizálja a modell sémafájljainak létrehozását) a Machine Learning esetében az adattudósnak explicit módon kell generálnia a sémafájlt a Pythonnal.
 
 Ezt a sémafájlt bele kell foglalni a Machine Learning-modellekhez üzembe helyezett webszolgáltatásba. Ahhoz, hogy a séma automatikusan generálva legyen a webszolgáltatásban, meg kell adnia a bemenet/kimenet mintáját az üzembe helyezett modell belépési szkriptjében. Olvassa el a [Modellek üzembe helyezése az Azure Machine Learning szolgáltatással című dokumentáció (választható) Automatikus Swagger-séma létrehozása](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation) című fejezetét. A hivatkozás egy példát is tartalmaz a belépési szkriptre a sémageneráló utasításokkal.
 
@@ -220,7 +220,7 @@ A Power BI Desktopban használt Azure Machine Learningre a következő szemponto
 
 Ez a cikk a Machine Learning a Power BI Desktopba való integrálásáról nyújtott áttekintést. Az alábbi cikkek is érdekesek és hasznosak lehetnek.
 
-- [Oktatóanyag: Machine Learning Studio (klasszikus) modell meghívása a Power BI-ban](service-tutorial-invoke-machine-learning-model.md)
+- [Oktatóanyag: (Klasszikus) Machine Learning Studio-modell meghívása a Power BI-ban](service-tutorial-invoke-machine-learning-model.md)
 - [Oktatóanyag: A Cognitive Services használata a Power BI-ban](service-tutorial-use-cognitive-services.md)
 - [Cognitive Services-szolgáltatások a Power BI-ban](service-cognitive-services.md)
 - [Az Azure Machine Learning integrálása a Power BI-jal](service-machine-learning-integration.md)

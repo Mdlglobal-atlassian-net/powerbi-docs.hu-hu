@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c9e0658eb277ae25b3a418dd80fb9323be6f6ab0
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: e97d2301a77bb3fe4a7a8f4e50f6da73a68842d0
+ms.sourcegitcommit: 30ed21cca2125001f2f992dc6c5f546f4956631c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75758399"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652542"
 ---
 # <a name="create-arcgis-maps-in-power-bi-desktop"></a>ArcGIS-térképek létrehozása a Power BI Desktopban
 
@@ -26,6 +26,9 @@ Ez az oktatóanyag egy ArcGIS Maps for Power BI-térképet létrehozó személy 
 Az ArcGIS-térképek és a Power BI együttes használata új lehetőségeket kínál a térképkezelésben, amelyek messze túlmutatnak a pontok térképeken való elhelyezésén. Az alaptérképekhez, helytípusokhoz, témákhoz, szimbólumstílusokhoz és referenciarétegekhez elérhető beállításokkal lenyűgöző és informatív térképes vizualizációk hozhatók létre. A térképen megjelenített mérvadó adatrétegek és a térbeli elemzés egyesítésével jobban megértheti a vizualizációban szereplő adatokat.
 
  Az ArcGIS Maps for Power BI-térképek mobileszközökön nem hozhatók létre, de megtekinthetők és használhatók. Lásd: [ArcGIS-térképek használata a Power BI-ban](power-bi-visualizations-arcgis.md).
+
+> [!NOTE]
+> A Power BI jelentéskészítő kiszolgálóhoz egyelőre nem használható az ArcGIS Maps for Power BI vizualizáció.
 
 > [!TIP]
 > A GIS az angol Geographic Information System (térinformatikai rendszer) kifejezés rövidítése.

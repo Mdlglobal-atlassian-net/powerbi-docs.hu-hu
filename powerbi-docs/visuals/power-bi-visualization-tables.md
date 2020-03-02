@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 014186acf6bf6b8c00686c0b7a29d0b526b0afb7
-ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+ms.openlocfilehash: de0328a35922279082c93a9a2d2a4948f1af7dc5
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77154275"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576815"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Táblák a Power BI-jelentésekben és -irányítópultokon
 
@@ -175,7 +175,10 @@ Előfordul, hogy a Power BI csonkolja az oszlopfejléceket a jelentésekben vagy
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 
-Oszlopformázás alkalmazásakor oszloponként választhat igazítási beállítást a következők közül: **Automatikus**, **Bal**, **Közép**, **Jobb**. Az oszlopok általában csak szöveget vagy csak számokat tartalmaznak, nem pedig azok keverékét. Azokban az esetekben, amelyekben egy oszlop számokat és szöveget is tartalmaz, az **Automatikus** beállítás szöveg esetén balra, számok esetén pedig jobbra fog igazítani. Ez a működésmód a balról jobbra olvasott nyelvek kezelésére szolgál.
+* Oszlopformázás alkalmazásakor oszloponként választhat igazítási beállítást a következők közül: **Automatikus**, **Bal**, **Közép**, **Jobb**. Az oszlopok általában csak szöveget vagy csak számokat tartalmaznak, nem pedig azok keverékét. Azokban az esetekben, amelyekben egy oszlop számokat és szöveget is tartalmaz, az **Automatikus** beállítás szöveg esetén balra, számok esetén pedig jobbra fog igazítani. Ez a működésmód a balról jobbra olvasott nyelvek kezelésére szolgál.
+
+* Ha a tábla celláiban vagy fejléceiben lévő szöveges adatok sortörést jelző karaktereket tartalmaznak, a program kizárólag akkor veszi őket figyelembe, ha bekapcsolja a Sortörés beállítást az elemhez tartozó formázási panel kártyáján. 
+
 
 ## <a name="next-steps"></a>Következő lépések
 

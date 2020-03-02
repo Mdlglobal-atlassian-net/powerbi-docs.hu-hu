@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 78ac4f3280125fb522661a63f679981b3cda34e3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 51d03582ec91b926526a075a356323eb4f95a84b
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699462"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609892"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Egyéni adatösszekötők használata a helyszíni adatátjáróval
 
@@ -46,10 +46,11 @@ Ha ezt a beállítást engedélyezte, akkor egyéni összekötői megjelennek az
 
 * Gondoskodjon arról, hogy háttérbeli átjárószolgáltatás hozzáférjen a létrehozott mappához. A felhasználók Windows-mappáin belüli mappák és a rendszermappák általában nem lesznek hozzáférhetők. A helyszíni adatátjáró alkalmazás üzenetet jelenít meg, ha a mappa nem érhető el. Ez az utasítás a (privát) helyszíni adatátjáróra nem vonatkozik.
 * Ahhoz, hogy egy egyéni összekötő működjön a helyszíni adatátjáróval, a kódjában lennie kell egy „TestConnection” szakasznak. Ez a szakasz nem szükséges akkor, ha az egyéni összekötőt a Power BI Desktoppal használja. Éppen ezért létezhet olyan összekötő, amely a Power BI Desktoppal működik, az átjáróval viszont nem. A TestConnection szakasz megírásáról [ebből a dokumentációból](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support) tájékozódhat.
+* Az átjárókon keresztül üzemeltetett egyéni összekötőkhöz egyelőre csak az átjárók rendszergazdái használhatják az OAuth protokollt, más adatforrás-felhasználók nem.
 
 ## <a name="next-steps"></a>Következő lépések
 
-* [Adatforrások kezelése – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
+* [Az adatforrás kezelése – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 * [Az adatforrás kezelése – SAP HANA](service-gateway-enterprise-manage-sap.md)  
 * [Adatforrások kezelése – SQL Server](service-gateway-enterprise-manage-sql.md)  
 * [Adatforrások kezelése – Oracle](service-gateway-onprem-manage-oracle.md)  

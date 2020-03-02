@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/20/2019
 ms.author: gepopell
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 03e6e8efae5cd4a5f61e3d07bc0b3c524b3b0a46
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 5e5519e30be30d6367791d1b6822196b407a21b1
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77429349"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576873"
 ---
 #  <a name="connecting-to-snowflake-in-power-bi-service"></a>Kapcsolódás a Snowflake-hez a Power BI szolgáltatásban
 
@@ -49,7 +49,7 @@ A Power BI működési módja miatt az SSO csak akkor működik, ha egy adatforr
 
 * Ha az adatmodellben csak Snowflake-forrást használ, abban az esetben használhat SSO-t, ha úgy dönt, hogy nem használja a helyszíni adatátjárót
 * Ha egy Snowflake-forrást más forrás mellett használ, abban az estben használhat SSO-t, ha a források egyike sem használja a helyszíni adatátjárót
-* A helyszíni adatátjárón keresztül használ Snowflake-forrást, AAD-beli hitelesítő adatokat használhat, SSO-t viszont nem. Ez olyan esetben lehet lényeges, amikor egy virtuális hálózatot nem a teljes Power BI-címtartományból, hanem egyetlen IP-címről próbál elérni, amelyen telepítve van az átjáró.
+* Amennyiben a helyszíni adatátjárón keresztül használ egy Snowflake-forrást, nem adhat meg Azure Active Directory-fiókhoz tartozó hitelesítő adatokat. Ez olyan esetben lehet lényeges, amikor egy virtuális hálózatot nem a teljes Power BI-címtartományból, hanem egyetlen IP-címről próbál elérni, amelyen telepítve van az átjáró.
 * Ha egy Snowflake-forrást olyan forrás mellett használ, amely átjárót igényel, a Snowflake-et is a helyszíni adatátjárón keresztül kel használnia, és nem használhat SSO-t.
 
 A helyszíni adatátjáró használatáról a [Mi az a helyszíni adatátjáró?](https://docs.microsoft.com/power-bi/service-gateway-onprem) című cikkben talál további információt.

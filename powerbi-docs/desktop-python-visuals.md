@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9b21b733dd673c1b672a4590032808a174ecda1f
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: c5105d038480bbee3e534574add91203f54e3119
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76161593"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609829"
 ---
 # <a name="create-power-bi-visuals-by-using-python"></a>Power BI-vizualizációk létrehozása a Python használatával
 
@@ -170,7 +170,7 @@ Ez az oktatóanyag segítséget nyújt az első lépésekhez vizualizációk Pyt
 
 A Power BI Desktopban a Python-vizualizációkra vonatkozik néhány korlátozás:
 
-- Adatméretre vonatkozó korlátozások. A Python-vizualizáció által az ábrázoláshoz felhasznált adatmennyiség 150 000 sorban van korlátozva. 150 000-nél több sor kiválasztásakor a rendszer csak az első 150 000 sort használja fel, és megjelenít egy üzenetet a képen.
+- Adatméretre vonatkozó korlátozások. A Python-vizualizáció által az ábrázoláshoz felhasznált adatmennyiség 150 000 sorban van korlátozva. 150 000-nél több sor kiválasztásakor a rendszer csak az első 150 000 sort használja fel, és megjelenít egy üzenetet a képen. A megadott adatok ezenkívül legfeljebb 250 MB-ot tehetnek ki. 
 - Felbontás. Minden Python-vizualizáció 72 DPI felbontású.
 - A számítási időre vonatkozó korlátozások. Ha egy Python-vizualizáció számítási ideje meghaladja az öt percet, végrehajtási időtúllépés történik, ami egy hibát eredményez.
 - Kapcsolatok. A Power BI Desktop többi vizualizációjához hasonlóan, ha több adatmezőt választ ki különböző táblákból, amelyek közt nincs meghatározott kapcsolat, akkor a rendszer hibát jelez.

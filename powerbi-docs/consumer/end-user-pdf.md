@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 1/16/2020
+ms.date: 2/21/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4570fea58a19acb4f35a5c24d0a5bfa93beba215
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: afc14e4d1ebd1e68045c2aa38a43e9d7cbc0f1c1
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76537554"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576732"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Jelentések exportálása a Power BI-ból PDF-be
 
@@ -50,8 +50,9 @@ Ennyi az egész! Letöltheti a fájlt, és megnyithatja bármely PDF-megtekintő
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 Az **Exportálás PDF-be** funkció használatakor figyelembe kell vennie néhány megfontolást és korlátozást.
 
-* Az R vizualizációk jelenleg nem támogatottak. A PDF-fájlban ezek a vizualizációk üresek, és egy hibaüzenetet jelenítenek meg. 
-* A minősített egyéni vizualizációk támogatottak. A minősített egyéni vizualizációkról, beleértve az egyéni vizualizáció minősítési folyamatát, az [Egyéni vizualizáció minősítése](../developer/power-bi-custom-visuals-certified.md) oldalon talál további információt. A nem minősített egyéni vizualizációk nem támogatottak. A PDF-fájlban hibaüzenettel jelennek meg. 
+* Az R-alapú és a Python-alapú vizualizációk még nem támogatottak. A PDF-fájlban ezek a vizualizációk üresek, és egy hibaüzenetet jelenítenek meg. 
+* A minősített egyéni vizualizációk támogatottak. A minősített egyéni vizualizációkról, beleértve az egyéni vizualizáció minősítési folyamatát, az [Egyéni vizualizáció minősítése](../developer/power-bi-custom-visuals-certified.md) oldalon talál további információt. A nem minősített egyéni vizualizációk nem támogatottak. A PDF-fájlban hibaüzenettel jelennek meg.
+* Az Esri vizualizációja nem támogatott
 * 30-nál több jelentésoldalt tartalmazó jelentések jelenleg nem exportálhatók.
 * A jelentés PDF-fájlba történő exportálása néhány percet igénybe vehet, ezért legyen türelemmel. Az exportálás időtartamát többek között a jelentés szerkezete és a Power BI szolgáltatás aktuális terhelése befolyásolhatja.
 * Ha az **Exportálás PDF-be** menüpont nem érhető el a Power BI szolgáltatásban, valószínűleg a bérlői rendszergazda letiltotta a funkciót. Részletekért lépjen kapcsolatba a bérlői rendszergazdával.

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 10f79c8670b42828b4219723bd8e503424e77820
-ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+ms.openlocfilehash: 6a45dcc195514bc1af71470beeead9f73a798942
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77154401"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576844"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Mátrixvizualizációk létrehozása a Power BI-ban
 
@@ -218,6 +218,10 @@ Feltételes formázáshoz jelölje ki a mátrixvizualizációt, és nyissa meg a
 Válassza a *Speciális vezérlők* hivatkozást, így megjelenik egy párbeszédpanel, amelyen végrehajthatja a beállításokat. Ez a példa az **Adatsávok** párbeszédpanelt mutatja be.
 
 ![Adatsávok panel](media/desktop-matrix-visual/power-bi-data-bars.png)
+
+## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+
+* Ha a mátrix celláiban vagy fejléceiben lévő szöveges adatok sortörést jelző karaktereket tartalmaznak, a program kizárólag akkor veszi őket figyelembe, ha bekapcsolja a Sortörés beállítást az elemhez tartozó formázási panel kártyáján. 
 
 ## <a name="next-steps"></a>Következő lépések
 

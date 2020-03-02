@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/23/2020
-ms.openlocfilehash: d4e233e55731d77d4136c1b6ef1e341a2d043234
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.date: 02/27/2020
+ms.openlocfilehash: 251f89dd031d9a2bda146266308dc528f05eddb2
+ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77026715"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782436"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló újdonságai
 
@@ -165,6 +165,10 @@ Fejlécértékeket állíthat be a reguláris kifejezéssel megadott mintázatna
 #### <a name="transparent-database-encryption"></a>Transzparens adatbázis-titkosítás
 
 A Power BI jelentéskészítő kiszolgáló mostantól támogatja a transzparens adatbázis-titkosítást a Power BI jelentéskészítő kiszolgáló katalógus-adatbázisához az Enterprise és a Standard kiadás esetén.
+
+#### <a name="power-bi-visuals-api"></a>Power BI-vizualizációk API-ja
+
+Ez a kiadás a 2.6-os API-verziót tartalmazza.
 
 #### <a name="microsoft-report-builder-update"></a>A Microsoft Report Builder frissítése
 
@@ -446,34 +450,34 @@ A Power BI Desktop alkalmazás Power BI jelentéskészítő kiszolgálóhoz opti
 
 Az új szolgáltatások hosszú listájából az alábbiak különösen érdekesek.
 
-#### <a name="rule-based-conditional-formatting-for-table-and-matrixhttpspowerbimicrosoftcomblogpower-bi-desktop-november-2017-feature-summaryconditionalformatting"></a>[Szabályalapú feltételes formázás táblához és mátrixhoz](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
+#### <a name="rule-based-conditional-formatting-for-table-and-matrix"></a>[Szabályalapú feltételes formázás táblához és mátrixhoz](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
 
 Táblán vagy mátrixon alapuló egyéni üzleti logika segítségével szabályokat hozhat létre, melyekkel feltételesen formázhatja az oszlopok háttérszínét és betűszínét.
 
-#### <a name="show-and-hide-pageshttpspowerbimicrosoftcomblogpower-bi-desktop-january-2018-feature-summaryhidepages"></a>[Oldalak megjelenítése és elrejtése](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
+#### <a name="show-and-hide-pages"></a>[Oldalak megjelenítése és elrejtése](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
 
 Előfordulhat, hogy a jelentését mások számára is elérhetővé szeretné tenni, de egyes oldalak még nem készültek el teljesen. Mostantól elrejtheti őket, amíg el nem készülnek. Vagy másik lehetőségként elrejtheti az oldalakat a normál navigációból, hogy az olvasók továbbra is elérhessék őket könyvjelzők vagy részletezés segítségével.
 
-#### <a name="bookmarkinghttpspowerbimicrosoftcomblogpower-bi-desktop-march-2018-feature-summarybookmarking"></a>[Könyvjelzőkezelés](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
+#### <a name="bookmarking"></a>[Könyvjelzőkezelés](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
 
 Könyvjelzők létrehozásával mostantól egyéni információkat állíthat össze a jelentésében lévő adatokból.
 
 - [Keresztkiemelés könyvjelzőkhöz](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): A könyvjelzők fenntartják és megjelenítik a jelentésoldalak keresztkiemelt állapotát a könyvjelző létrehozásakor aktuális állapot szerint.
 - [További lehetőségek könyvjelzőkkel](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): A könyvjelzők tükrözik a jelentésben beállított tulajdonságokat, és csak a választott vizualizációkra vannak hatással.
 
-#### <a name="multi-select-data-points-across-multiple-chartshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarycrosshighlight"></a>[Többszörös kiválasztású adatpontok több diagramra](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
+#### <a name="multi-select-data-points-across-multiple-charts"></a>[Többszörös kiválasztású adatpontok több diagramra](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
 
 Több adatpontot is kiválaszthat több diagramon, és a teljes oldalra alkalmazhat keresztszűrést.
 
-#### <a name="sync-slicers-across-multiple-pages-of-your-reporthttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarysyncslicers"></a>[Szeletelők szinkronizálása több jelentésoldalon](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
+#### <a name="sync-slicers-across-multiple-pages-of-your-report"></a>[Szeletelők szinkronizálása több jelentésoldalon](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
 
 A szeletelők alkalmazhatók egy, kettő vagy több oldalra is a jelentésben.
 
-#### <a name="quick-measureshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summaryquickmeasures"></a>[Gyorsmérők](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
+#### <a name="quick-measures"></a>[Gyorsmérők](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
 
 Létrehozhat mértékeket meglévő mértékek és táblabeli numerikus oszlopok alapján.
 
-#### <a name="drilling-down-filters-other-visualshttpspowerbimicrosoftcomblogpower-bi-desktop-december-feature-summarydrillfiltersothervisuals"></a>[Más vizualizációk szűrése részletezéskor](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
+#### <a name="drilling-down-filters-other-visuals"></a>[Más vizualizációk szűrése részletezéskor](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
 
 Amikor részletezi egy vizualizáció egy kategóriáját, mostantól az adott oldal összes vizualizációját szűrheti ugyanazon kategória alapján.
 

@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: c3e2327131ae82fa025236c9242476466b6d9074
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: a0f4808aaf267e3cdb822e8778005c2eca247cb5
+ms.sourcegitcommit: 82c41f91055da8c1cc5d8cc67927d5246d11247b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73864053"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78199004"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Ajánlott eljárások a Power BI Embedded teljesítményének javításához
 
 Ez a cikk az alkalmazásban lévő jelentések, irányítópultok és csempék gyorsabb rendereléséhez ad tanácsokat.
 
 > [!Note]
-> Ne feledje, hogy a betöltési idő elsősorban a jelentéssel és magukkal az adatokkal kapcsolatos elemektől függ. Ilyen tényező a vizualizációk száma, az adatok mérete, valamint a lekérdezések és a számított mértékek bonyolultsága. További információ: [Ajánlott eljárások a Power BI teljesítményének javításához](../power-bi-reports-performance.md).
+> Ne feledje, hogy a betöltési idő elsősorban a jelentéssel és magukkal az adatokkal kapcsolatos elemektől függ. Ilyen tényező a vizualizációk száma, az adatok mérete, valamint a lekérdezések és a számított mértékek bonyolultsága. További információt a [Power BI optimalizálási útmutatójában](../guidance/power-bi-optimization.md) talál.
 
 ## <a name="update-tools-and-sdk-packages"></a>Frissítési eszközök és SDK-csomagok
 
@@ -106,6 +106,6 @@ A Teljesítményelemzővel megtekintheti és rögzítheti azokat a naplókat, am
 
 ## <a name="next-steps"></a>Következő lépések
 
-* [Ajánlott eljárások Power BI-jelentések teljesítményének javításához](../power-bi-reports-performance.md)
+* [Optimalizálási útmutató a Power BI-hoz](../guidance/power-bi-optimization.md)
 * [A Power BI Embeddeddel kapcsolatos problémák elhárítása](embedded-troubleshoot.md)
 * [Power BI Embedded GYIK](embedded-faq.md)
