@@ -39,15 +39,15 @@ Profit = Orders[Sales] - Orders[Cost]
 
 Bizonyos esetekben azonban kötelező teljes oszlopneveket használni a hivatkozásokhoz, ha a Power BI kétértelműséget észlel. Erre a képlet beírásakor piros hullámvonal és hibaüzenet figyelmeztet. Ezen kívül néhány DAX-függvény, például a [LOOKUPVALUE](/dax/lookupvalue-function-dax) is megköveteli a teljes oszlopnevek használatát.
 
-Az oszlophivatkozásokat ajánlott mindig teljes névvel megadni. Ennek indokait az [Javaslatok](#recommendations) szakaszban adjuk meg.
+Az oszlophivatkozásokat ajánlott mindig teljes névvel megadni. Ennek indokait a [Javaslatok](#recommendations) szakaszban adjuk meg.
 
 ## <a name="measures"></a>Mértékek
 
-A mértékek modellszintű objektumok. Amiatt a mértékek nevének a modellen belül egyedinek kell lennie. A **Mezők** panelen viszont a jelentéskészítők az egytáblás modellekhez tartozó összes mértéket látják. Ez a hozzárendelés esztétikai okokból van beállítva, és a mérték **Kezdőtábla** tulajdonságának beállításával konfigurálható. További információ: [Mértékek a Power BI Desktopban (mértékek rendszerezése)](../desktop-measures.md#organizing-your-measures).
+A mértékek modellszintű objektumok. Emiatt a mértékek nevének a modellen belül egyedinek kell lennie. A **Mezők** panelen viszont a jelentéskészítők az egytáblás modellekhez tartozó összes mértéket látják. Ez a hozzárendelés esztétikai okokból van beállítva, és a mérték **Kezdőtábla** tulajdonságának beállításával konfigurálható. További információ: [Mértékek a Power BI Desktopban (mértékek rendszerezése)](../desktop-measures.md#organizing-your-measures).
 
 A kifejezésekben használható a mértékek teljes neve. A DAX IntelliSense fel is kínálja javaslatként. Ennek ellenére szükségtelen és nem ajánlott a használata. Egy mérték kezdőtáblájának módosításakor a mértékekre azok teljes nevével hivatkozó kifejezések hibássá válnak. Ilyen esetben minden hibás képletet szerkeszteni kell, hogy eltávolítsa (vagy frissítse) a mértékekre való hivatkozásokat.
 
-Javasoljuk, hogy soha ne használjon teljes nevet a mértékekre való hivatkozásokban. Ennek indokait az [Javaslatok](#recommendations) szakaszban adjuk meg.
+Javasoljuk, hogy soha ne használjon teljes nevet a mértékekre való hivatkozásokban. Ennek indokait a [Javaslatok](#recommendations) szakaszban adjuk meg.
 
 ## <a name="recommendations"></a>Javaslatok
 
