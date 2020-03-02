@@ -655,8 +655,6 @@
               href: service-export-to-pbix.md
             - name: SAP-változók szerkesztése
               href: service-edit-sap-variables.md
-            - name: Ajánlott eljárások gyors és megbízható jelentések készítéséhez
-              href: power-bi-reports-performance.md
         - name: Kérdések az adatokról
           items:
             - name: Adatok feltárása Q&A használatával
