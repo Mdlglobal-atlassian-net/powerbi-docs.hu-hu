@@ -757,8 +757,8 @@
               href: admin/service-security-data-protection-overview.md
             - name: Bizalmasság címkék alkalmazása
               href: designer/service-security-apply-data-sensitivity-labels.md
-        - name: Adatéletút
-          href: service-data-lineage.md
+        - name: Adatéletút megtekintése
+          href: designer/service-data-lineage.md
         - name: Sablonalkalmazások
           items:
             - name: Sablonalkalmazások áttekintése

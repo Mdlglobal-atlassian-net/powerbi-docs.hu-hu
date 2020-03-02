@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/19/2017
-ms.openlocfilehash: 7776de3cf6704e51cbed85bf8c772b6391531403
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: c9827970600b4a4b84e422a3761b5b9a349c9e51
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74264477"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609724"
 ---
 # <a name="custom-layouts"></a>Egyéni elrendezések
 
@@ -25,8 +25,8 @@ Egy egyéni elrendezés megadásához definiáljon egy egyéni elrendezési obje
 var embedConfig = {
     ...
     settings: {
-            layoutType: models.LayoutType.Custom
-    customLayout: {...}
+            layoutType: models.LayoutType.Custom,
+            customLayout: {...}
     }
 };
 ```
@@ -129,12 +129,13 @@ var embedConfiguration = {
     tokenType: models.TokenType.Embed,
     accessToken: 'H4...rf',
     settings: {
-            layoutType: models.LayoutType.Custom
-        customLayout: {
-            pageSize: {
-                type: models.PageSizeType.Custom,
-                width: 1600,
-                height: 1200
+            layoutType: models.LayoutType.Custom,
+            customLayout: {
+                pageSize: {
+                    type: models.PageSizeType.Custom,
+                    width: 1600,
+                    height: 1200
+                }
             },
             displayOption: models.DisplayOption.ActualSize,
             pagesLayout: {
@@ -169,7 +170,7 @@ var embedContainer = document.getElementById('embedContainer');
 var report = powerbi.embed(embedContainer, embedConfiguration);
 ```
 
-## <a name="see-also"></a>Lásd még:
+## <a name="see-also"></a>További információ
 
 [Power BI-irányítópultok, -jelentések és -csempék beágyazása](embedding-content.md)   
 [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
