@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 02/25/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 044952c6ce5e3b1550067f9d288f8eab02b868bb
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 4f256d9b0cbecf76ff002cc0214155b8b36014ee
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223710"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609908"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Nagyméretű modellek a Power BI Premiumban (előzetes verzió)
 
-A Power BI-adathalmazokban az adatok nagy mértékben tömörített és a memóriában gyorsítótárazott állapotban tárolhatók a lekérdezések optimális teljesítménye érdekében. Így a felhasználók gyorsabban tudnak dolgozni a nagyméretű adathalmazokon. A nagyméretű modellek funkciója lehetővé teszi, hogy az adathalmazok mérete meghaladja a 10 GB-ot a Power BI Premiumban. Az adathalmazok méretét csak a Power BI Premium kapacitásmérete korlátozza. Ez hasonló ahhoz, ahogy a modellméretek korlátozása érvényesül az Azure Analysis Servicesben. A Power BI Premium kapacitásméreteivel kapcsolatos további információkat a Kapacitás csomópontok alatt talál. A nagyméretű modellek beállíthatók az összes prémium P és beágyazott A termékváltozathoz, de csak az [új munkaterületeken](service-create-the-new-workspaces.md) működnek.
+A lekérdezések optimális teljesítménye végett a Power BI-adathalmazok nagymértékben tömörített és a memóriában gyorsítótárazott állapotban tudják tárolni az adatokat, hogy a nagy adathalmazokat is gyorsan kezelhessék a felhasználók. A nagyméretű modellek funkciója lehetővé teszi, hogy az adathalmazok mérete meghaladja a 10 GB-ot a Power BI Premiumban. Az adathalmazok méretét valójában a Power BI Premium kapacitásának mérete határozza meg ahhoz hasonlóan, ahogy az Azure Analysis Services korlátozza a modellek méretét. A Power BI Premium kapacitásméreteivel kapcsolatos további információkat a Kapacitás csomópontok alatt talál. A nagyméretű modellek beállíthatók az összes prémium P és beágyazott A termékváltozathoz, de csak az [új munkaterületeken](service-create-the-new-workspaces.md) működnek.
 
 A nagyméretű modellek nem befolyásolják a feltöltési PBIX-méretet, amely továbbra is 10 GB-ra van korlátozva. Ehelyett az adathalmazok mérete frissítéskor nőhet 10 GB-nál nagyobbra. Az adathalmazok a növekményes frissítéssel konfigurálhatók úgy, hogy 10 GB-nál nagyobbra nőjenek.
 
@@ -30,7 +30,7 @@ Egy 10 GB-nál nagyobb adathalmaz létrehozásához kövesse az alábbi lépése
 
 1. Tegye közzé az adathalmazt a Power BI Premium szolgáltatásban.
 
-1. Engedélyezze az adathalmazban a nagyméretű modelleket az alábbi PowerShell-parancsmagok futtatásával. A parancsmagok miatt a Power BI az adathalmazt az Azure Premium Files szolgáltatásban tárolja, és nem érvényesíti a 10 GB-os méretkorlátot.
+1. Engedélyezze az adathalmazban a nagyméretű modelleket az alábbi PowerShell-parancsmagok futtatásával. Ezen parancsmagok miatt az Azure Premium Files szolgáltatásban tárolja a Power BI az adathalmazt, és nem érvényesíti a 10 GB-os méretkorlátot.
 
 1. Kezdeményezzen egy frissítést az előzményadatok betöltéséhez a növekményes frissítési szabályzat alapján. Az első frissítés során hosszabb ideig is eltarthat az előzmények betöltése. A későbbi frissítések várhatóan már gyorsabbak lesznek, mivel növekményesek.
 
@@ -90,7 +90,7 @@ Az adathalmaz Premium Filesra (vagy onnan) való konvertálásának állapotát 
 
 A Power BI dinamikus memóriakezelést használ, hogy az inaktív adathalmazokat kizárja a memóriából. Erre azért van szükség, hogy más adathalmazok is betölthetők legyenek a felhasználói lekérdezések megválaszolása érdekében. A dinamikus memóriakezelés lehetővé teszi, hogy az adathalmazok összesített mérete jelentősen nagyobb legyen, mint a kapacitásban rendelkezésre álló memória mennyisége, de az egyes adathalmazoknak külön-külön mindenképpen be kell férniük a memóriába. További információ a dinamikus memóriakezelésről: [A kapacitások működése](service-premium-what-is.md#how-capacities-function).
 
-Érdemes átgondolni, milyen hatással jár a nagyméretű modellek kizárása. A viszonylag gyors adathalmaz-betöltési idők ellenére a felhasználók továbbra is észrevehető késést tapasztalhatnak, ha várniuk kell a kizárt adathalmazok újbóli betöltésére. Ezért jelen formájukban a nagyméretű modellek használata elsősorban az olyan kapacitások esetében ajánlott, amelyeket dedikáltan vállalati BI-követelményekhez használnak, nem pedig önkiszolgáló BI-követelményekkel vegyesen. A vállalati BI-követelményekhez dedikált kapacitások ritkábban váltanak ki kizárást, így ritkábban kell újra betölteni az adathalmazokat. Az önkiszolgáló BI-kapacitásokban azonban számos kisebb adathalmaz lehet, amelyeket gyakran kell a memóriába betölteni, majd onnan kizárni.
+Érdemes átgondolni, milyen hatással jár a nagyméretű modellek kizárása. A viszonylag gyors adathalmaz-betöltési idők ellenére a felhasználók továbbra is észrevehető késést tapasztalhatnak, ha várniuk kell a kizárt adathalmazok újbóli betöltésére. Ezért ebben a formában főleg olyan kapacitásokhoz ajánlottak a nagy méretű modellek, amelyeket dedikáltan nagyvállalati BI-követelményekhez használnak, nem pedig önkiszolgáló BI-követelményekkel vegyesen alkalmazott kapacitásokhoz. A vállalati BI-követelményekhez dedikált kapacitások ritkábban váltanak ki kizárást, így ritkábban kell újra betölteni az adathalmazokat. Az önkiszolgáló BI-kapacitásokban azonban számos kisebb adathalmaz lehet, amelyeket gyakran kell a memóriába betölteni, majd onnan kizárni.
 
 ## <a name="checking-dataset-size"></a>Adathalmaz méretének ellenőrzése
 
@@ -110,12 +110,54 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
  [DATABASE_NAME] = '<Dataset Name>') //Sum USED_SIZE (bytes)
 ```
 
-## <a name="current-feature-restrictions"></a>A funkció jelenlegi korlátozásai
+## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 
 Vegye figyelembe az alábbi korlátozásokat a nagyméretű modellek használatakor:
 
 - **Bring Your Own Key (BYOK, saját kulcsos) titkosítás**: A Premium Filesban tárolható adathalmazoknál nincs [BYOK](service-encryption-byok.md)-titkosítás.
-- **Multi-Geo támogatás**: A Premium Filesban tárolt adathalmazok nem használhatók olyan kapacitások esetében, amelyeknél a [Multi-Geo](service-admin-premium-multi-geo.md) is engedélyezve van.
+- **Több földrajzi hely (Multi-Geo) támogatása**: A Premium Filesban tárolt adathalmazok nem használhatók olyan kapacitások esetében, amelyeknél a [Multi-Geo](service-admin-premium-multi-geo.md) is engedélyezve van.
 
-- **Letöltés Power BI Desktopba**: A Premium Filesban tárolt adathalmazokat nem lehet [.pbix-fájlként letölteni](service-export-to-pbix.md).
-- **Támogatott régiók**: A nagyméretű modellek használata az összes olyan Azure-régióban támogatott, amely támogatja a Premium Files-tárolást. További információért tekintse meg a [régiónként elérhető termékeket](https://azure.microsoft.com/global-infrastructure/services/?products=storage).
+- **Letöltés a Power BI Desktopba**: A Premium Filesban tárolt adathalmazokat nem lehet [.pbix-fájlként letölteni](service-export-to-pbix.md).
+- **Támogatott régiók**: A nagyméretű modellek használata az összes olyan Azure-régióban támogatott, amely támogatja a Premium Files-tárolást. További információért tanulmányozza az [Elérhető termékek régiók szerint](https://azure.microsoft.com/global-infrastructure/services/?products=storage) című témakört, és nézze meg a következő szakaszban található táblázatot.
+
+
+## <a name="availability-in-regions"></a>Elérhetőség az egyes régiókban
+
+A nagy méretű modellek nem használhatók minden olyan régióban, ahol rendelkezésre áll a Power BI. A Power BI nagy méretű modelljei csak az [Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers) tárterület-szolgáltatást is támogató Azure-régiókban használhatók.
+
+Az alábbi lista azokat a régiókat tartalmazza, amelyekben használhatók a Power BI nagy méretű modelljei. A listán nem szereplő régiókban nem használhatók nagy méretű modellek:
+
+
+|Azure-régió  |Azure-régió rövidítése  |
+|---------|---------|
+|Kelet-Ausztrália     | australiaeast        |
+|Délkelet-Ausztrália     | australiasoutheast        |
+|USA középső régiója     | centralus        |
+|Kelet-Ázsia     | eastasia        |
+|USA keleti régiója     | eastus        |
+|USA 2. keleti régiója     | eastus2        |
+|Kelet-Japán     | japaneast        |
+|Nyugat-Japán     | japanwest        |
+|Dél-Korea középső régiója     | koreacentral        |
+|Dél-Korea déli régiója     | koreasouth        |
+|USA északi középső régiója     | northcentralus        |
+|Észak-Európa     | northeurope        |
+|USA déli középső régiója     | southcentralus        |
+|Délkelet-Ázsia     | southeastasia        |
+|Egyesült Királyság déli régiója     | uksouth        |
+|Egyesült Királyság nyugati régiója     | ukwest        |
+|Nyugat-Európa     | westeurope        |
+|USA nyugati régiója     | westus        |
+|USA 2. nyugati régiója     | westus2        |
+
+
+
+## <a name="next-steps"></a>Következő lépések
+
+Az alábbi hivatkozásokra kattintva hasznos információkat kaphat a nagy méretű modellek használatához:
+
+* [Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers)
+* [Multi-Geo-támogatás konfigurálása a Power BI Premiumhoz](service-admin-premium-multi-geo.md)
+* [Saját titkosítási kulcsok használata a Power BI-hoz](service-encryption-byok.md)
+* [A kapacitások működése](service-premium-what-is.md#how-capacities-function)
+* [Növekményes frissítés](service-premium-incremental-refresh.md)

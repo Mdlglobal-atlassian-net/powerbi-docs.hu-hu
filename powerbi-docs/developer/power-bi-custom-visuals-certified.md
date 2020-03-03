@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 01/12/2019
-ms.openlocfilehash: 4ffab3913560498dd57103f0a25c39f7a03a42ec
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.date: 02/17/2020
+ms.openlocfilehash: 52a99380f8e1afc39ddfc59a401418e61fe6ad58
+ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77026669"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782415"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Power BI-vizualizáció minősíttetése
 
@@ -43,11 +43,13 @@ A Power BI-vizualizáció elküldésekor győződjön meg arról, hogy a leford�
 
 Habár nem kell nyilvánosan megosztania a kódot a GitHubon, a Power BI csapata számára elérhetővé kell tennie a kódtárat felülvizsgálatra. Ennek az a legjobb módja, ha a (JavaScript- vagy TypeScript-) forráskódot megadja a GitHubban.
 
-A tárház csak egy Power BI-vizualizáció kódját tartalmazhatja. Nem tartalmazhatja több Power BI-vizualizáció kódját, vagy nem kapcsolódó kódot.
-
-A tárháznak tartalmaznia kell egy **certification** (minősítés) nevű ágat (kisbetűs írást kell használnia). Az ebben az ágban található forráskódnak meg kell egyeznie a beküldött csomaggal. Ezt a kódot csak a következő beküldési folyamat során lehet frissíteni, ha újra beküldi a Power BI-vizualizációt.
+Az adattárnak tartalmaznia kell az alábbiakat:
+* Kód egyetlen Power BI-vizualizációhoz. Nem tartalmazhatja több Power BI-vizualizáció kódját, vagy nem kapcsolódó kódot.
+* Egy **certification** nevű ág. A névnek kisbetűsnek kell lennie. Az ebben az ágban található forráskódnak meg kell egyeznie a beküldött csomaggal. Ezt a kódot csak a következő beküldési folyamat során lehet frissíteni, ha újra beküldi a Power BI-vizualizációt.
 
 Ha a Power BI-vizualizáció privát NPM-csomagokat vagy git-almodulokat használ, hozzáférést kell biztosítania az ezen kódot tartalmazó további adattárakhoz.
+
+Ha kíváncsi arra, hogy miként néz ki egy Power BI-vizualizációkhoz használható adattár, tanulmányozza a [Power BI-vizualizációkhoz készült mintasávdiagram](https://github.com/microsoft/PowerBI-visuals-sampleBarChartgi) GitHub-adattárát.
 
 ### <a name="file-requirements"></a>Fájlkövetelmények
 
@@ -113,6 +115,18 @@ Power BI-minősítés igénylése:
 
 >[!NOTE]
 > Ha már megkezdte egy Power BI-vizualizáció beküldésének folyamatát, és az [Értékesítői irányítópultot](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (a régi kezelőeszközt) kell használnia, akkor tekintse át a [Beküldése az Értékesítői irányítópult használatával](seller-dashboard.md#seller-dashboard-certification-submission-process) című útmutatót.
+
+### <a name="private-repository-submission-process"></a>Privát adattárral történő beküldés folyamata
+
+Ha privát adattárt (például a GitHubot) használva szeretné beküldeni Power BI-vizualizációját tanúsításra, végezze el az ebben a szakaszban található lépéseket.
+1. Hozzon létre egy új fiókot az érvényesség-ellenőrzési csapatnak.
+2. Állítsa be a fiókjához a [kétfaktoros hitelesítést](https://help.github.com/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa).
+3. [Hozzon létre egy új helyreállításikód-készletet](https://help.github.com/github/authenticating-to-github/configuring-two-factor-authentication-recovery-methods#generating-a-new-set-of-recovery-codes).
+4. A Power BI-vizualizáció beküldésekor adja meg a következőket:
+    * Az adattár hivatkozása
+    * Bejelentkezési hitelesítő adatok (köztük a jelszó)
+    * Helyreállítási kódok
+    * Írásvédett engedélyek a fiókunkhoz ([pbicvsupport](https://github.com/pbicvsupport))
 
 ## <a name="certified-power-bi-visuals"></a>Minősített Power BI-vizualizációk
 

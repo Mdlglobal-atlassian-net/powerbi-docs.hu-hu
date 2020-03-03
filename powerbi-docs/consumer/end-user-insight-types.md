@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 02/24/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 184aeb1f26e54bb8b8935f2f06ec6cad2e282ecf
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: a89cb77b99356f9f282b522c2041e96210a026e9
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537909"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576761"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>A Power BI által támogatott elemzések típusai
 
@@ -55,7 +55,7 @@ Azokat az eseteket észleli, ahol több mérték hasonló mintázatot vagy trend
 ![Korrelációs példa](./media/end-user-insight-types/pbi-auto-insight-types-correlation.png)
 
 ### <a name="low-variance"></a>Alacsony variancia
-Észleli azokat az eseteket, melyeknél az adatpontok közel vannak az átlaghoz.
+Azokat az eseteket észleli, amikor valamely dimenzió adatpontjai nem esnek messze a középértéktől, vagyis amikor kicsi a variancia. Tegyük fel, hogy rendelkezik egy „értékesítés” nevű mértékkel és egy „régió” nevű dimenzióval. A régiót megvizsgálva azt tapasztalja, hogy nagyon kicsi a különbség az adatpontok és a középérték (vagyis az adatpontok középértéke) között. A megállapítás akkor aktiválódik, amikor az összes régióban mért értékesítések varianciája egy adott küszöbérték alá esik. Más szóval akkor, amikor minden régióban meglehetősen azonos képet mutatnak az értékesítések.
 
 ![Alacsony variancia példa](./media/end-user-insight-types/power-bi-low-variance.png)
 
@@ -75,7 +75,9 @@ Azt vizsgálja, hogy felfedezhetőek-e heti, havi vagy éves gyakorisággal ism�
 ![Szezonalitás példa](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
 
 ### <a name="steady-share"></a>Állandó részesedés
-Kiemeli azokat az eseteket, amelyekben szülő-gyermek típusú korreláció fedezhető fel egy gyermek érték részesedése és egy folyamatos változó mentén vizsgált teljes szülő érték között.
+Kiemeli azokat az eseteket, amelyekben szülő-gyermek típusú korreláció fedezhető fel egy gyermek érték részesedése és egy folyamatos változó mentén vizsgált teljes szülő érték között. Az állandó részesedést jelző megállapítás egy mérték, egy dimenzió és egy másik dátum/idő dimenzió környezetére vonatkozik. Ez a megállapítás akkor aktiválódik, amikor egy konkrét dimenzióérték (például: „az északkeleti régió”) százalékos értéke állandó összesített értékesítést jelez a szóban forgó dátum/idő dimenzió egészében.
+
+Az állandó részesedést jelző megállapítás hasonló az alacsony varianciát jelzőhöz, mert mindkettő arra utal, hogy időben nem változik az adott érték. Az állandó részesedést jelző megállapítás azonban az **összesített érték százalékos arányának** időbeli állandóságát méri, az alacsony varianciát jelző megállapítás pedig az abszolút mérték értékeinek valamely dimenzióban észlelt állandóságát.
 
 ![Állandó részesedés példa](./media/end-user-insight-types/pbi-auto-insight-types-steadyshare.png)
 
