@@ -9,7 +9,7 @@
           href: overview.md
         - name: Optimalizálási útmutató a Power BI-hoz
           href: power-bi-optimization.md
-    - name: Fogalmak
+    - name: Alapelvek
       expanded: true
       items:
         - name: Adatok átalakítása
@@ -60,6 +60,16 @@
               href: report-page-tooltips.md
             - name: Jelentésoldal részletezésének használata
               href: report-drillthrough.md
+            - name: Tippek a tengelyek kezeléséhez
+              href: report-design-tips-axes.md
+            - name: Tippek a diagram rácsvonalainak vezérléséhez
+              href: report-tips-chart-gridlines.md
+            - name: Tippek a címkék használatának optimalizálásához
+              href: report-tips-labels.md
+            - name: Tippek a jelmagyarázatok formázásához és megvalósításához
+              href: report-tips-legends.md
+            - name: Tippek a vizualizáció színeinek optimalizálásához
+              href: report-tips-visual-colors.md
         - name: Többoldalas Power BI-jelentések
           items:
             - name: Mikor érdemes többoldalas jelentéseket használni

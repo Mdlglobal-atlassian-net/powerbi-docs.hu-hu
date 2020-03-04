@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 01/14/2020
-  ms.openlocfilehash: 28fc951ecdfdf31b7319047caae2b5807aadf704
-  ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+  ms.openlocfilehash: 9bb2835003d774bcc878114dbcc669a0bff7ff89
+  ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 02/26/2020
-  ms.locfileid: "77609736"
+  ms.lasthandoff: 03/03/2020
+  ms.locfileid: "78237776"
 landingContent:
 - title: A Power BI útmutatója
   linkLists:
@@ -85,6 +85,16 @@ landingContent:
       url: report-page-tooltips.md
     - text: Jelentésoldal részletezésének használata
       url: report-drillthrough.md
+    - text: Tippek a tengelyek kezeléséhez
+      url: report-design-tips-axes.md
+    - text: Tippek a diagram rácsvonalainak vezérléséhez
+      url: report-tips-chart-gridlines.md
+    - text: Tippek a címkék használatának optimalizálásához
+      url: report-tips-labels.md
+    - text: Tippek a jelmagyarázatok formázásához és megvalósításához
+      url: report-tips-legends.md
+    - text: Tippek a vizualizáció színeinek optimalizálásához
+      url: report-tips-visual-colors.md
 - title: Többoldalas Power BI-jelentések
   linkLists:
   - linkListType: concept
