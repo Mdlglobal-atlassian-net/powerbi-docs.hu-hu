@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a0127a6ffa0d698a94e368532c44d0f83c362b42
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 49601798ae920d956441c5580079625bf7408e07
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75002397"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290569"
 ---
 # <a name="referencing-power-query-queries"></a>Power Query-lekérdezésekre való hivatkozás
 
@@ -54,5 +54,5 @@ Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további inf
 
 - [Önkiszolgáló adat-előkészítés a Power BI-ban](../service-dataflows-overview.md)
 - [Adatfolyamok létrehozása és használata a Power BI-ban](../service-dataflows-create-use.md)
-- Guy in a Cube videó: [Power Query hivatkozás-lekérdezések a Power BI-ban és az Excelben](https://www.youtube.com/watch?v=3uKNNZqBIkg)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)
