@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 01/14/2020
-  ms.openlocfilehash: 9bb2835003d774bcc878114dbcc669a0bff7ff89
-  ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+  ms.openlocfilehash: 23792d8d132702860c611623fc3888debe07cfed
+  ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 03/03/2020
-  ms.locfileid: "78237776"
+  ms.lasthandoff: 03/04/2020
+  ms.locfileid: "78260692"
 landingContent:
 - title: A Power BI útmutatója
   linkLists:
@@ -51,12 +51,20 @@ landingContent:
       url: import-modeling-data-reduction.md
     - text: Automatikus dátum/idő – útmutató
       url: auto-date-time.md
+    - text: Egy-az-egyhez kapcsolat
+      url: relationships-one-to-one.md
+    - text: Több-a-többhöz kapcsolatok
+      url: relationships-many-to-many.md
+    - text: Aktív és inaktív kapcsolatok
+      url: relationships-active-inactive.md
+    - text: Kétirányú kapcsolatok
+      url: relationships-bidirectional-filtering.md
+    - text: Kapcsolatok hibaelhárítása
+      url: relationships-troubleshoot.md
     - text: DirectQuery mód – útmutató
       url: directquery-model-guidance.md
     - text: Útmutató az összetett modellhez
       url: composite-model-guidance.md
-    - text: Útmutató a több-a-többhöz kapcsolatokhoz
-      url: relationships-many-to-many.md
 - title: DAX
   linkLists:
   - linkListType: concept

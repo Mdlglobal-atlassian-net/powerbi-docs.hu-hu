@@ -9,7 +9,7 @@
           href: overview.md
         - name: Optimalizálási útmutató a Power BI-hoz
           href: power-bi-optimization.md
-    - name: Alapelvek
+    - name: Fogalmak
       expanded: true
       items:
         - name: Adatok átalakítása
@@ -30,8 +30,16 @@
               href: import-modeling-data-reduction.md
             - name: Automatikus dátum/idő – útmutató
               href: auto-date-time.md
-            - name: Útmutató a több-a-többhöz kapcsolatokhoz
+            - name: Egy-az-egyhez kapcsolat
+              href: relationships-one-to-one.md
+            - name: Több-a-többhöz kapcsolatok
               href: relationships-many-to-many.md
+            - name: Aktív és inaktív kapcsolatok
+              href: relationships-active-inactive.md
+            - name: Kétirányú kapcsolatok
+              href: relationships-bidirectional-filtering.md
+            - name: Kapcsolatok hibaelhárítása
+              href: relationships-troubleshoot.md
             - name: DirectQuery mód – útmutató
               href: directquery-model-guidance.md
             - name: Útmutató az összetett modellhez
