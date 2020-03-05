@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 826af7b224b901b6dc9f3926260b1d920836a792
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: f86317b12e3637d6522eebc2f304786c1b39c083
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76040352"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290613"
 ---
 # <a name="extend-visuals-with-report-page-tooltips"></a>Vizualizációk kibővítése a jelentésoldalak elemleírásával
 
@@ -88,5 +88,5 @@ Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további inf
 - [Elemleírások létrehozása jelentésoldalak alapján a Power BI Desktopban](../desktop-tooltips.md)
 - [Elemleírások testreszabása a Power BI Desktopban](../desktop-custom-tooltips.md)
 - [Vizuális elemek használata Power BI-jelentések továbbfejlesztéséhez](../desktop-visual-elements-for-reports.md)
-- Guy in a Cube videó: [Power BI-jelentésoldali elemleírás – Létrehozás a Power BI Desktopban](https://www.youtube.com/watch?v=URTA7JZsAtw)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)
