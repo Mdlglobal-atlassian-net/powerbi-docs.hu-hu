@@ -1,5 +1,5 @@
 ---
-title: Adatkészlet létrehozása
+title: Adathalmaz létrehozása
 description: Útmutató – Adatok elküldése adatkészletbe – Adatkészlet létrehozása a Power BI-ban
 author: KesemSharabi
 ms.author: kesharab

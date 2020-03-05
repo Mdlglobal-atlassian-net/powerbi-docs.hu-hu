@@ -41,7 +41,7 @@ A Power BI egyéni alkalmazásokba integrálásához meg kell adnia egy alkalmaz
 
     ![AAD-keresés](media/create-an-azure-active-directory-tenant/new-directory2.png)
 
-4. Kattintson a **Létrehozás** gombra.
+4. Válassza a **Létrehozás** lehetőséget.
 
 5. Adja meg a **szervezet nevét** és a **kezdeti tartománynevet**. Ezután kattintson a **Létrehozás** elemre. A címtár létrehozása megtörtént.
 
@@ -95,6 +95,6 @@ Most, hogy már rendelkezik Azure AD-bérlővel, használhatja ezt a bérlőt a 
 
 [Mi az Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 
  
-[Rövid útmutató: Fejlesztői környezet beállítása](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
+[Rövid útmutató:: Fejlesztői környezet beállítása](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

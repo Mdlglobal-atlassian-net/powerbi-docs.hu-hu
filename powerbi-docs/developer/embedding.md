@@ -77,7 +77,7 @@ A Power BI Embedded használatával az ügyfeleinek nem szükséges ismerniük a
 
 Ez a Power BI Pro-fiók szolgál az alkalmazás fő fiókjaként (tehát tulajdonképpen egy proxyfiók). Ez a fiók teszi lehetővé az alkalmazás Power BI-irányítópultjaihoz és -jelentéseihez hozzáférést biztosító beágyazási tokenek generálását.
 
-A [Szolgáltatásnév](embed-service-principal.md) **csak az alkalmazásra vonatkozó** tokennel képes Power BI-tartalmat beágyazni az alkalmazásokba. Ugyanakkor lehetővé teszi az alkalmazás Power BI-irányítópultjaihoz és -jelentéseihez hozzáférést biztosító beágyazási tokenek generálását.
+A [Szolgáltatásnév](embed-service-principal.md)**csak az alkalmazásra vonatkozó** tokennel képes Power BI-tartalmat beágyazni az alkalmazásokba. Ugyanakkor lehetővé teszi az alkalmazás Power BI-irányítópultjaihoz és -jelentéseihez hozzáférést biztosító beágyazási tokenek generálását.
 
 A Power BI Embeddedet használó fejlesztők az alkalmazás alapvető funkcióinak szentelhetik az idejüket, és nem kell vizualizációk és elemzések fejlesztésével foglalkozniuk. Gyorsan eleget tehetnek az ügyfelek jelentésekkel és irányítópultokkal kapcsolatos igényeinek, és könnyen, teljes mértékben dokumentált API-kkal és SDK-kal ágyazhatnak be tartalmakat. A könnyen navigálható, alkalmazáson belüli adatfeltárás engedélyezésével az ISV-k ügyfelei gyors és magabiztos és döntéseket hozhatnak bármilyen eszközről.
 

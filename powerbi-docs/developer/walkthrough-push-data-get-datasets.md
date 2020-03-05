@@ -36,7 +36,7 @@ Az adatkészlet lekérésének menete:
      b. A **csomagkezelő konzolban** lépjen be az Install-Package Newtonsoft.Json elembe.
 2. A csomag telepítése után adja hozzá a **using NewtonsoftJson;** karakterláncot a Program.cs fájlhoz.
 3. Az **Adatkészlet azonosítójának** lekéréséhez adja hozzá a Program.cs fájlhoz az alábbi kódot.
-4. Futtassa a Konzolalkalmazást, és jelentkezzen a Power BI-fiókjába. A konzolablakban megjelenik az **Adatkészlet azonosítója:** mező, amelyet egy azonosító követ.
+4. Futtassa a Konzolalkalmazást, és jelentkezzen be a Power BI-fiókjába. A konzolablakban megjelenik az **Adatkészlet azonosítója:** mező, amelyet egy azonosító követ.
 
 **Adatkészlet-lekérési minta**
 

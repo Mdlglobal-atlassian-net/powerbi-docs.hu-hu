@@ -71,7 +71,7 @@ A csempe, jelentés vagy vizualizáció pillanatképét tartalmazó e-mail egy h
    A levélben egy kép, valamint az adott csempére, jelentésre vagy vizualizációra mutató hivatkozás található. 
 4. Koppintson a **Küldés** gombra.
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 * [Irányítópult megosztása a Power BI mobilalkalmazásokból](mobile-share-dashboard-from-the-mobile-apps.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

@@ -66,7 +66,7 @@ Jelenleg minden mezőnél megadhatja a minimum és a maximum értéket. Ez az é
 > [!NOTE]
 > Ha a feltétel nem tartalmaz adatszerepkört, akkor tetszőleges számú mezővel rendelkezhet.
 
-### <a name="example-1"></a>1. példa
+### <a name="example-1"></a>1\. példa
 
 Több mezőt is áthúzhat az egyes adatszerepkörökbe. Ebben a példában a kategória egy adatmezőre, a mérték pedig két adatmezőre van korlátozva.
 
@@ -76,7 +76,7 @@ Több mezőt is áthúzhat az egyes adatszerepkörökbe. Ebben a példában a ka
 ]
 ```
 
-### <a name="example-2"></a>2. példa
+### <a name="example-2"></a>2\. példa
 
 Ebben a példában két feltétel egyikét kell megadnia:
 * Pontosan egy kategória-adatmező és pontosan kettő mérték
@@ -98,7 +98,7 @@ Egyirányú adatleképezés használatához meg kell adnia a leképezni kívánt
 > [!NOTE]
 > Ez az adatleképezés más adatnézettel együtt nem használható. A célja az, hogy egyetlen numerikus értékre csökkentse az adatokat.
 
-### <a name="example-3"></a>3. példa
+### <a name="example-3"></a>3\. példa
 
 ```json
 {
@@ -191,7 +191,7 @@ A vizualizáció ennek eredményeképp egyetlen értéket jelenít meg a Power B
 
 A kategorikus adatleképezés használatával egy vagy két független adatcsoportot lehet beolvasni.
 
-### <a name="example-4"></a>4. példa
+### <a name="example-4"></a>4\. példa
 
 Itt az előző példában használt adatszerepkörök definíciója látható:
 
@@ -232,7 +232,7 @@ A példa egyszerű. Emberi nyelven így szól: „Képezd le a `category` adatsz
 * **for...in**: Ebben az adatszerepkörben minden elemet vegyen fel az adatlekérdezésbe.
 * **bind...to**: Ugyanazt az eredményt adja, mint a *for...in*, azonban azt várja, hogy a DataRole feltétele egyetlen mezőre lesz korlátozva.
 
-### <a name="example-5"></a>5. példa
+### <a name="example-5"></a>5\. példa
 
 Ez a példa az előző példában szereplő első két adatszerepkört használja, továbbá definiálja a `grouping` és a `measure2` mezőt.
 
@@ -284,7 +284,7 @@ Ez pedig a leképezés:
 
 Itt a különbség a categorical.values leképezése lesz. Ez ennyit jelent: „Képezd le a `measure` és a `measure2` adatszerepkört úgy, hogy a `grouping` adatszerepkör alapján legyenek csoportosítva.”
 
-### <a name="example-6"></a>6. példa
+### <a name="example-6"></a>6\. példa
 
 Az alábbiak az adatszerepkörök:
 
@@ -499,7 +499,7 @@ A vizualizáció eredménye:
 
 A táblázatos adatnézet egy egyszerű adatleképezés. Ez lényegében adatpontok listája, ahol a numerikus adatpontok összesíthetőek.
 
-### <a name="example-7"></a>7. példa
+### <a name="example-7"></a>7\. példa
 
 A megadott képességekkel:
 
@@ -876,7 +876,7 @@ Az adatcsökkentési algoritmus kategorikus, táblázatos vagy mátrix adatnéze
 
 Kategorikus adatleképezéshez az algoritmust beállíthatja a `categories`-ra, és/vagy a `values` csoportszakaszaira.
 
-### <a name="example-8"></a>8. példa
+### <a name="example-8"></a>8\. példa
 
 ```json
 "dataViewMappings": {
@@ -911,7 +911,7 @@ Kategorikus adatleképezéshez az algoritmust beállíthatja a `categories`-ra, 
 
 Az adatcsökkentési algoritmust alkalmazhatja az adatnézet-leképezési táblázat `rows` szakaszára.
 
-### <a name="example-9"></a>9. példa
+### <a name="example-9"></a>9\. példa
 
 ```json
 "dataViewMappings": [

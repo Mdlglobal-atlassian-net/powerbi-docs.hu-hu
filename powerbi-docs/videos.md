@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 03/03/2020
 ms.author: davidi
-ms.openlocfilehash: a33efaf4e0ecd871170873df072f24bf8f824cdc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 41a0d100817f23d3a395f05cefbe60a0214bfb59
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871170"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260853"
 ---
 # <a name="power-bi-videos"></a>Power BI-videók
 A Power BI saját YouTube-csatornával rendelkezik! Keresse fel [csatornánkat](https://www.youtube.com/user/mspowerbi/videos), és ha új a Power BI használatában, akkor érdemes az [Adatok elemzése és megjelenítése a Power BI használatával](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP) lejátszási listával kezdenie.
@@ -42,8 +42,7 @@ A lejátszási lista alábbi néhány videója segít a kezdeti lépésekben.
 ## <a name="more-videos"></a>További videók
 Tekintse meg a további videókhoz készült források és tartalmak gyűjteményét.
 
-* [Interaktív Power BI-oktatás](https://powerbi.microsoft.com/guided-learning/) – a Power BI megismerésére szánt sorozat, könnyen feldolgozható fejezetekre bontva
-* [Guy in a Cube csatorna](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w) – friss videók a Power BI funkcióiról és lehetőségeiről
+* [Power BI vezetett képzés](https://powerbi.microsoft.com/guided-learning/) – a Power BI fokozatos bemutatása könnyen emészthető részletekben
 
 ## <a name="next-steps"></a>Következő lépések
 [Mi az a Power BI?](fundamentals/power-bi-overview.md)

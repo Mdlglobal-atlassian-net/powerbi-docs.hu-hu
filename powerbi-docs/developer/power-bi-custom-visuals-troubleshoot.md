@@ -38,7 +38,7 @@ Ha ez nincs ott, akkor valószínűleg engedélyeznie kell a Power BI beállít�
 
 Futtassa a vizualizáció kiszolgálóját. Ehhez adja ki a terminálon/parancsorból a `pbiviz start` parancsot a vizualizáció projektjének gyökérmappájából. Ha a kiszolgáló nem fut, akkor valószínűleg nincsenek helyesen telepítve az SSL-tanúsítványok.
 
-Ha bármilyen kérdése, megjegyzése vagy problémája van, vegye fel a kapcsolatot a Power BI-vizualizációk csapatával a  *pbicvsupport@microsoft.com*  címen.
+Ha bármilyen kérdése, megjegyzése vagy problémája van, vegye fel a kapcsolatot a Power BI-vizualizációk csapatával a  *pbicvsupport@microsoft.com*   címen.
 
 ## <a name="next-steps"></a>Következő lépések
 

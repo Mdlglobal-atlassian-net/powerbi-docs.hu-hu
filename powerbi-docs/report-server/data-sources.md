@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 03/02/2020
 ms.author: maggies
-ms.openlocfilehash: 343c7d7e81d8e8ec53383feab6dc4dcfb17129d6
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 08eca8ecb9aa941c2670a801113bc711bff409b2
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540590"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237523"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>A Power BI-jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón
 A Power Bi-jelentések számos adatforráshoz csatlakozhatnak. Az adatok használatának módjától függően eltérő adatforrások érhetők el. Az adatok importálhatók, vagy közvetlenül DirectQuery- vagy élő SQL Server Analysis Services-kapcsolattal lehet lekérdezni azokat.
@@ -41,7 +41,7 @@ Más adatforrások is működhetnek annak ellenére, hogy a támogatott listán 
 | Azure Blob Storage |Igen |Igen |Nem |
 | Azure Data Lake Store |Igen |Nem |Nem |
 | Azure HDInsight (HDFS) |Igen |Nem |Nem |
-| Azure HDInsight (HDFS) |Igen |Igen |Nem |
+| Azure HDInsight (HDFS) |Igen |Nem |Nem |
 | Azure Table Storage |Igen |Igen |Nem |
 | Dynamics 365 (online) |Igen |Nem |Nem |
 | Facebook |Igen |Nem |Nem |
@@ -128,7 +128,7 @@ A Power BI jelentéskészítő kiszolgáló nem támogatja az OAuth-alapú hites
 | Azure Blob Storage |Igen |Igen |Nem |Nem |
 | Azure Data Lake Store |Nem |Nem |Nem |Nem |
 | Azure HDInsight (HDFS) |Nem |Nem |Nem |Nem |
-| Azure HDInsight (HDFS) |Igen |Igen |Nem |Nem |
+| Azure HDInsight (HDFS) |Nem |Nem |Nem |Nem |
 | Azure Table Storage |Nem |Igen |Nem |Nem |
 | Dynamics 365 (online) |Nem |Nem |Nem |Nem |
 | Facebook |Nem |Nem |Nem |Nem |

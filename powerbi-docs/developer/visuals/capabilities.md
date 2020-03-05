@@ -35,7 +35,7 @@ A vizualizáció képességeinek gyökérobjektumai a `dataRoles`, a `dataViewMa
 
 ## <a name="define-the-data-fields-that-your-visual-expects-dataroles"></a>A vizualizáció által várt adatmezők megadása: dataRoles
 
-Az adatokhoz köthető mezők definiálására a `dataRoles` elem használható. A `dataRoles` `DataViewRole`-objektumok egy tömbjét veszi alapul, amely az összes szükséges tulajdonságot meghatározza.
+Az adatokhoz köthető mezők definiálására a `dataRoles` elem használható. A `dataRoles``DataViewRole`-objektumok egy tömbjét veszi alapul, amely az összes szükséges tulajdonságot meghatározza.
 
 ### <a name="properties"></a>Tulajdonságok
 

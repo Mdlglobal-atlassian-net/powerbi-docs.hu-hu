@@ -87,7 +87,7 @@ Miután a Q&A megjeleníti az eredményeket, folytathatja a beszélgetést! A vi
 ## <a name="next-steps"></a>Következő lépések
 Vissza a [Q&A a Power BI-ban](end-user-q-and-a.md) című témakörhöz  
 
-[Power BI – alapfogalmak](end-user-basic-concepts.md)  
+[Power BI – Alapfogalmak](end-user-basic-concepts.md)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

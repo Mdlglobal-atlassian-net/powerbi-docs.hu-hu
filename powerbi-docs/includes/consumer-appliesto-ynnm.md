@@ -15,4 +15,4 @@ ms.contentlocale: hu-HU
 ms.lasthandoff: 02/20/2020
 ms.locfileid: "77496628"
 ---
-<Token>**A KÖVETKEZŐKRE VONATKOZIK:** ![igen](media/yes.png)Power BI szolgáltatás ***fogyasztók*** számára ![nem](media/no.png)Power BI szolgáltatás tervezők és fejlesztők számára ![nem](media/no.png)Power BI Desktop ![igen](media/maybe.png)Pro vagy Prémium licenc szükséges hozzá</Token>
+<Token>**A KÖVETKEZŐKRE VONATKOZIK:** ![igen](media/yes.png)Power BI szolgáltatás ***fogyasztók*** számára ![nem](media/no.png)Power BI szolgáltatás tervezők és fejlesztők számára ![nem](media/no.png)Power BI Desktop ![igen](media/maybe.png)Pro- vagy prémium szintű licenc szükséges hozzá </Token>

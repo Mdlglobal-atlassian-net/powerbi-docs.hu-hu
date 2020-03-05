@@ -42,7 +42,7 @@ A *relatív dátumszeletelő* első beállításainál a következő lehetőség
 
 * Utolsó
 
-* Következő
+* Tovább
 
 * Ez a
 

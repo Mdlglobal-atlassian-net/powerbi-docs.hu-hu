@@ -170,7 +170,7 @@ A szeletelő típusától függően különböző formázási beállítások ér
 1. A beállítások megjelenítéséhez és szerkesztéséhez kattintson a kategóriák melletti legördülőmenü-nyilakra. 
 
 ### <a name="general-options"></a>Általános beállítások
-1. A **Formátum** területen válassza az **Általános** lehetőséget, válasszon egy piros színt a **Körvonal színe** területen, majd módosítsa a **Körvonal vastagságát** *2* értékre. 
+1. A **Formátum** területen válassza az **Általános** lehetőséget, válasszon egy piros színt a **Körvonal színe** területen, majd módosítsa a **Körvonal vastagságát***2* értékre. 
 
     Ez a beállítás módosítja a fejléc és az elemek körüli körvonalak és az aláhúzások színét és vastagságát.
 

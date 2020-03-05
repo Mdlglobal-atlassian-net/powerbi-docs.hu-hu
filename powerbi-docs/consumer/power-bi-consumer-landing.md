@@ -311,7 +311,7 @@ ms.locfileid: "73876716"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Kisegítő lehetőségek</h3>
+                                                    <h3>Akadálymentesség</h3>
                                                     <p>Megismerheti, hogyan teszi lehetővé a Microsoft a fogyatékkal élők számára, hogy könnyedén használják és kezeljék a Power BI szolgáltatást. </p>
                                                 </div>
                                             </div>

@@ -17,7 +17,7 @@ ms.locfileid: "74265573"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Adatok leküldése egy adatkészletbe – Teljes kódlista
 
-Ez a cikk az [adatok adatkészletbe történő leküldését](walkthrough-push-data.md) ismertető részletes útmutató része.
+Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-data.md) ismertető részletes útmutató része.
 
 Az **Adatok leküldése adatkészletekbe** bemutató 2–5. lépésének végrehajtását követően a teljes forráskódnak a következőképp kell kinéznie.
 

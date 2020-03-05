@@ -30,7 +30,7 @@ ms.locfileid: "74265647"
 * Maximum 5 000 000 tárolt sor táblánként, adatmegőrzési szabályzat nélküli adatkészletben  
 * 4000 karakter/érték sztringoszlopokhoz, POST-sorműveletekben
   
-## <a name="see-also"></a>Lásd még:
+## <a name="see-also"></a>További információ
 
 [Az Azure AD szolgáltatáskorlátozásai](https://docs.microsoft.com/azure/active-directory/active-directory-service-limits-restrictions)   
 [A Power BI REST API áttekintése](https://docs.microsoft.com/rest/api/power-bi/)

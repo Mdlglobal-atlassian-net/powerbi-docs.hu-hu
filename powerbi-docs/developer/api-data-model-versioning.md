@@ -38,5 +38,5 @@ A szolgáltatásoknak ***NEM AJÁNLOTT*** módosítaniuk az adatmodellt a hitele
   
 További információ az OData adatmodellszabványairól: [OData 4.0-s verzió, 1. rész: Protokoll és hibajegyzék 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
   
-## <a name="see-also"></a>Lásd még:
+## <a name="see-also"></a>További információ
 [A Power BI REST API áttekintése](https://docs.microsoft.com/rest/api/power-bi/)  
