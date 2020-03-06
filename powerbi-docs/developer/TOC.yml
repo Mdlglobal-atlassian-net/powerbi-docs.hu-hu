@@ -140,6 +140,8 @@
           items:
             - name: Kapacitás és SKU a Power BI Embedded Analyticsben
               href: embedded-capacity.md
+            - name: Kapacitástervezés
+              href: embedded-capacity-planning.md
             - name: Ajánlott eljárások teljesítményének javításához
               href: embedded-performance-best-practices.md
             - name: Szolgáltatásnév
