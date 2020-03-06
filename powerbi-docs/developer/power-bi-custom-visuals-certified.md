@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 02/17/2020
-ms.openlocfilehash: 52a99380f8e1afc39ddfc59a401418e61fe6ad58
-ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
+ms.date: 03/01/2020
+ms.openlocfilehash: 8aea9041665de69b2c5be954dc8f13a6402a06e0
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77782415"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260761"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Power BI-vizualizáció minősíttetése
 
@@ -56,10 +56,14 @@ Ha kíváncsi arra, hogy miként néz ki egy Power BI-vizualizációkhoz haszná
 A Power BI-vizualizáció írásához használja az API legújabb verzióját.
 
 A tárháznak tartalmaznia kell a következő fájlokat:
-* **.gitignore** – Adja hozzá a `node_modules` mappát ehhez a fájlhoz. A kód nem tartalmazhatja a *node_modules* mappát.
+* **.gitignore** – Adja hozzá a `node_modules`, `.tmp` és `dist` mappát ehhez a fájlhoz. A kód nem tartalmazhatja a *node_modules*, a *.tmp* vagy a *dist* mappát.
 * **capabilities.json** – Ha a Power BI-vizualizáció egy újabb verzióját küldi be a fájlban található tulajdonságok módosításaival, győződjön meg arról, hogy ezek nem okozzák-e a jelentések meghibásodását a meglévő felhasználók számára.
-* **pbiviz.json**
-* **package.json**
+* **pbiviz.json** 
+* **package.json**. A vizualizációban telepítve kell lennie az alábbi csomagnak:
+   * ["tslint"](https://www.npmjs.com/package/tslint): 5.18.0 vagy újabb
+   * ["typescript"](https://www.npmjs.com/package/typescript): 3.0.0 vagy újabb
+   * ["tslint-microsoftcontrib"](https://www.npmjs.com/package/tslint-microsoft-contrib): 6.2.0 vagy újabb
+   * A fájlnak tartalmaznia kell a "lint": "tslint -c tslint.json -p tsconfig.json" futtatására vonatkozó parancsot
 * **package-lock.json**
 * **tsconfig.json**
 
@@ -70,7 +74,7 @@ Győződjön meg arról, hogy a következő parancsok nem adnak vissza hibákat.
 * `npm install`
 * `pbiviz package`
 * `npm audit` – Nem adhat vissza közepes vagy magas szintű figyelmeztetéseket.
-* [Microsoft TSlint](https://www.npmjs.com/package/tslint-microsoft-contrib), felülbírált konfiguráció nélkül. Ez a parancs nem eredményezhet lint-hibát.
+* [Microsoft TSlint](https://www.npmjs.com/package/tslint-microsoft-contrib) a [szükséges konfigurációval](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/tslint.json). Ez a parancs nem eredményezhet lint-hibát.
 
 ### <a name="compiling-requirements"></a>Fordítási követelmények
 
