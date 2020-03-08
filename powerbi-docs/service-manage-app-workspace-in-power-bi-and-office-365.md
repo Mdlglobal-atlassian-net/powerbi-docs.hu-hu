@@ -6,15 +6,15 @@ ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d4be5aa246b6e58b9a6234f30754e16a39341abe
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 72694ea771950b4a12427e0a0696e221fbe993bf
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76160581"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237845"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-office-365"></a>A munkaterület kezelése a Power BI-ban és az Office 365-ben
 
@@ -27,7 +27,7 @@ A **Power BI-ban** a következőket teheti:
 
 * A munkaterület tagjainak felvétele vagy eltávolítása, beleértve a munkaterület tagjainak rendszergazdává tételét.
 * A munkaterület nevének szerkesztése.
-* A munkaterület törlése.
+* A munkaterület törlése, amely az Office 365-csoportot is törli.
 
 Az **Office 365-ben** a következőket teheti:
 

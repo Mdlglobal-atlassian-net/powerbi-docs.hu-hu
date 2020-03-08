@@ -6,25 +6,22 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/25/2019
+ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 6ce82516413fe43cfbc1336e2f6f51003277fb4a
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 937f8ca693113cf85d265420da44f7c9f8b68f5f
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76161294"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260450"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Útmutató a több-a-többhöz kapcsolatokhoz
 
 Ez a cikk a Power BI Desktopot használó adatmodellezőknek szól. Három különböző több-a-többhöz típusú modellezési forgatókönyvet ismertet. Emellett útmutatást nyújt a kapcsolatok sikeres kialakításához.
 
-> [!NOTE]
-> A modellkapcsolatok bemutatása nem képezi a cikk részét. Ha nincs tisztában a kapcsolatokkal, azok tulajdonságaival és konfigurálási módjával, először olvassa el a [Modellbeli kapcsolatok a Power BI Desktopban](../desktop-relationships-understand.md) című cikket.
->
-> Emellett fontos, hogy ismerje a csillagséma-kialakítást is. További információ: [A csillagséma és a Power BI-ban játszott szerepének a bemutatása](star-schema.md) című cikkben talál további információt.
+[!INCLUDE [relationships-prerequisite-reading](includes/relationships-prerequisite-reading.md)]
 
-Három több-a-többhöz típusú kapcsolatot különböztetünk meg. Ezek a következő esetekben merülhetnek fel:
+Valójában a több-a-többhöz típus használata három helyzetben képzelhető el. Ezek a következő esetekben merülhetnek fel:
 
 - [Két dimenzió típusú tábla összekapcsolásakor](#relate-many-to-many-dimensions)
 - [Két tény típusú tábla összekapcsolásakor](#relate-many-to-many-facts)
@@ -164,7 +161,7 @@ A vizualizáció pontos eredményt ad. A modell hasznossága azonban korlátozot
 
 ### <a name="relate-many-to-many-facts-guidance"></a>Több-a-többhöz típusú tények összekapcsolása – útmutató
 
-Általában nem ajánlott két tény típusú táblát közvetlenül, több-a-többhöz típusú számossággal összekapcsolni. Ennek legfőbb oka, hogy a modell nem lesz rugalmas a jelentésvizualizációk szűrésekor vagy csoportosításakor. A példában a vizualizációk csak az **Order** tábla **OrderID** oszlopa alapján szűrhetnek vagy csoportosíthatnak. A másodlagos ok az adatok minőségére vonatkozik. Ha az adatintegritással problémák adódnak, előfordulhat, hogy bizonyos sorok kimaradnak a lekérdezés során a _gyenge kapcsolatok_ miatt. További információ: [A kapcsolatok kiértékelése](../desktop-relationships-understand.md#relationship-evaluation).
+Általában nem ajánlott két tény típusú táblát közvetlenül, több-a-többhöz típusú számossággal összekapcsolni. Ennek legfőbb oka, hogy a modell nem lesz rugalmas a jelentésvizualizációk szűrésekor vagy csoportosításakor. A példában a vizualizációk csak az **Order** tábla **OrderID** oszlopa alapján szűrhetnek vagy csoportosíthatnak. A másodlagos ok az adatok minőségére vonatkozik. Ha az adatintegritással problémák adódnak, előfordulhat, hogy bizonyos sorok kimaradnak a lekérdezés során a _gyenge kapcsolatok_ miatt. További információ: [Modellkapcsolatok a Power BI Desktopban (Kapcsolatok kiértékelése)](../desktop-relationships-understand.md#relationship-evaluation).
 
 A tény típusú táblák közvetlen összekapcsolása helyett [csillagséma](star-schema.md) típusú tervezési alapelvek bevezetését javasoljuk. Ezt dimenzió típusú táblák hozzáadásával teheti meg. A dimenzió típusú táblák ezután egy-a-többhöz típusú kapcsolatokkal összekapcsolhatók a tény típusúakkal. Ez egy robusztus tervezési módszer, amely rugalmas jelentéskészítési lehetőségeket nyújt. Így Ön bármilyen dimenzió típusú oszlop alapján szűrhet vagy csoportosíthat, és bármilyen kapcsolódó, tény típusú táblát összegezhet.
 
@@ -187,7 +184,7 @@ A csillagsémás tervezési alapelvek alkalmazása a következő előnyökkel j�
 - A jelentésvizualizációk a dimenzió típusú táblák bármelyik látható oszlopa alapján _szűrhetnek vagy csoportosíthatnak_
 - A jelentésvizualizációk a tény típusú táblák bármelyik látható oszlopa alapján _összegezhetnek_
 - Az **OrderLine**, **OrderDate**, vagy **Product** táblára alkalmazott szűrők mindkét tény típusú táblához propagálhatnak
-- Mindegyik kapcsolat egy-a-többhöz típusú, és mindegyik _erős kapcsolat_. Az adatintegritásbeli problémák nem lesznek elrejtve. További információ: [A kapcsolatok kiértékelése](../desktop-relationships-understand.md#relationship-evaluation).
+- Mindegyik kapcsolat egy-a-többhöz típusú, és mindegyik _erős kapcsolat_. Az adatintegritásbeli problémák nem lesznek elrejtve. További információ: [Modellkapcsolatok a Power BI Desktopban (Kapcsolatok kiértékelése)](../desktop-relationships-understand.md#relationship-evaluation).
 
 ## <a name="relate-higher-grain-facts"></a>Részletesebb tények összekapcsolása
 
@@ -300,4 +297,6 @@ Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további inf
 
 - [Modellbeli kapcsolatok a Power BI Desktopban](../desktop-relationships-understand.md)
 - [A csillagséma és a Power BI-ban játszott szerepének a bemutatása](star-schema.md)
+- [Kapcsolatok hibaelhárítási útmutatója](relationships-troubleshoot.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

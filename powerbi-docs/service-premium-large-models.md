@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/25/2020
+ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 4f256d9b0cbecf76ff002cc0214155b8b36014ee
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 2c984abaec40028fb01affa8ff7bf0bf87cdd616
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609908"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260876"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Nagyméretű modellek a Power BI Premiumban (előzetes verzió)
 
@@ -123,7 +123,7 @@ Vegye figyelembe az alábbi korlátozásokat a nagyméretű modellek használata
 
 ## <a name="availability-in-regions"></a>Elérhetőség az egyes régiókban
 
-A nagy méretű modellek nem használhatók minden olyan régióban, ahol rendelkezésre áll a Power BI. A Power BI nagy méretű modelljei csak az [Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers) tárterület-szolgáltatást is támogató Azure-régiókban használhatók.
+A Power BI nagy méretű modelljei csak az [Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers) tárterület-szolgáltatást is támogató egyes Azure-régiókban használhatók.
 
 Az alábbi lista azokat a régiókat tartalmazza, amelyekben használhatók a Power BI nagy méretű modelljei. A listán nem szereplő régiókban nem használhatók nagy méretű modellek:
 

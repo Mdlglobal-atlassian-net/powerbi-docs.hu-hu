@@ -27,7 +27,7 @@ A Power BI Vizualizációk paneljén számos különféle típusú vizualizáci�
 
 ![az egyes vizualizációs típusok ikonjait tartalmazó ablaktábla](media/power-bi-report-visualizations/power-bi-icons.png)
 
-A [Microsoft AppSource közösségi oldalon](https://appsource.microsoft.com) azonban még nagyobb választékban talál [letölthető](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [egyéni vizualizációkat](../developer/visuals/custom-visual-develop-tutorial.md), amelyeket a Microsoft és a közösség tett elérhetővé.
+Még nagyobb választékot talál a [Microsoft AppSource közösség webhelyén](https://appsource.microsoft.com), ahol a Microsoft és a közösség által kínált [egyéni vizualizációkat](../developer/visuals/custom-visual-develop-tutorial.md) kereshet meg és [tölthet le](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 

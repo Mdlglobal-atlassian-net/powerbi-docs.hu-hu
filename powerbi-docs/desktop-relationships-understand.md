@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 124f373e7841cb899f0a26debb2bcc8302e8e970
-ms.sourcegitcommit: 7efbe508787029e960d6d535ac959a922c0846ca
+ms.openlocfilehash: 7be55c8b44a89ad5b317743b62e033cf34a01ef9
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76309104"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290682"
 ---
 # <a name="create-model-relationships-in-power-bi-desktop"></a>Modellkapcsolatok létrehozása a Power BI Desktopban
 
@@ -23,12 +23,12 @@ Az optimális modellfelépítésről, többek között a táblák szerepköreir�
 
 ## <a name="relationship-purpose"></a>A kapcsolatok célja
 
-A Power BI-kapcsolatok egyszerűen a modelltáblák oszlopaira alkalmazott szűrőket más modelltáblázatokba propagálják. A szűrők akkor propagálnak, ha van követendő kapcsolati útvonal, amely magában foglalhat több táblába való propagálást is.
+A Power BI-kapcsolatok egyszerűen más modelltáblákba propagálják a modelltáblák oszlopaira alkalmazott szűrőket. A szűrők akkor propagálnak, ha van követendő kapcsolati útvonal, amely magában foglalhat több táblába való propagálást is.
 
-A kapcsolati útvonalak mindig determinisztikusak, vagyis a szűrők mindig ugyanúgy lesznek propagálva, véletlenszerű eltérések nélkül. Ám a kapcsolatok le is tilthatóak, vagy a szűrőkörnyezet módosítható bizonyos DAX-funkciókat használó modellszámításokkal. További információkért lásd a cikk későbbi szakaszában a [Kapcsolódó DAX-funkciók](#relevant-dax-functions) című témakört.
+A kapcsolati útvonalak mindig determinisztikusak, vagyis a szűrők mindig ugyanúgy lesznek propagálva, véletlenszerű eltérések nélkül. Ám a kapcsolatok le is tilthatóak, vagy a szűrőkörnyezet módosítható bizonyos DAX-funkciókat használó modellszámításokkal. További információkat a cikk későbbi szakaszában, a [Kapcsolódó DAX-funkciók](#relevant-dax-functions) című témakörben talál.
 
 > [!IMPORTANT]
-> Fontos tudni, hogy a modellkapcsolatok nem kényszerítik ki az adatintegritást. További információkért lásd a cikk későbbi szakaszában [A kapcsolatok kiértékelése](#relationship-evaluation) című témakört. Ez a témakör azt mutatja be, hogy a modellkapcsolatok hogyan viselkednek, amikor az adatokkal kapcsolatban adatintegritási problémák merülnek fel.
+> Fontos tudni, hogy a modellkapcsolatok nem kényszerítik ki az adatintegritást. További információkat a cikk későbbi szakaszában, a [Kapcsolatok kiértékelése](#relationship-evaluation) című témakörben talál. Ez a témakör azt mutatja be, hogy a modellkapcsolatok hogyan viselkednek, amikor az adatokkal kapcsolatban adatintegritási problémák merülnek fel.
 
 Nézzük meg egy animált példán, hogy a kapcsolatok hogyan propagálják a szűrőket.
 
@@ -36,11 +36,11 @@ Nézzük meg egy animált példán, hogy a kapcsolatok hogyan propagálják a sz
 
 Ebben a példában a modell négy táblából áll: **Category**, **Product**, **Year** és **Sales**. A **Category** tábla a **Product** táblához kapcsolódik, a **Product** tábla pedig a **Sales** táblához. Emellett a **Year** tábla is kapcsolódik a **Sales** táblához. Az összes kapcsolat egy-a-többhöz típusú (ennek részleteiről a cikk későbbi részében lesz szó).
 
-Tegyük fel, hogy például egy Power BI kártyavizualizáció által előállított lekérdezés lekéri a teljes értékesítési mennyiséget azokra az értékesítési megrendelésekre vonatkozóan, amelyek a **Cat-A** kategóriába, illetve a **CY2018** évbe tartoznak. Ezért vannak szűrők alkalmazva a **Category** és **Year** táblákra. A **Category** táblára alkalmazott szűrő a **Product** táblába propagál, ahol elkülönít két terméket, amelyek a **Cat-A** kategóriához vannak rendelve. Ezután a **Product** tábla szűrője a **Sales** táblába propagál, ahol elkülönít összesen két értékesítési sort ezekhez a termékekhez. Ez a két értékesítési sor jelöli a **Cat-A** kategóriához rendelt termékek értékesítését. Az együttes mennyiségük 14 egység. Ugyanakkor a **Year** tábla szűrője a **Sales** táblába propagál, amelyet tovább szűr. Ennek eredménye az az egyetlen értékesítési sor, amely a **Cat-A** kategóriába tartozó, **CY2018** évben megrendelt termékekre vonatkozik. A lekérdezés 11 egységet ad vissza eredményként. Érdemes tudni, hogy amikor egy táblára több szűrőt alkalmaznak (ahogyan ebben a példában a **Sales** táblára), az mindig AND művelet, amelyhez az szükséges, hogy az összes feltétel igaz legyen.
+Tegyük fel, hogy egy például Power BI kártyavizualizáció által előállított lekérdezés lekéri a teljes értékesítési mennyiséget azokra az értékesítési megrendelésekre vonatkozóan, amelyek a **Cat-A** kategóriába, illetve a **CY2018** évbe tartoznak. Ezért vannak szűrők alkalmazva a **Category** és **Year** táblákra. A **Category** táblára alkalmazott szűrő a **Product** táblába propagál, ahol elkülönít két terméket, amelyek a **Cat-A** kategóriához vannak rendelve. Ezután a **Product** tábla szűrője a **Sales** táblába propagál, ahol elkülönít összesen két értékesítési sort ezekhez a termékekhez. Ez a két értékesítési sor jelöli a **Cat-A** kategóriához rendelt termékek értékesítését. Az együttes mennyiségük 14 egység. Ugyanakkor a **Year** tábla szűrője a **Sales** táblába propagál, amelyet tovább szűr. Ennek eredménye az az egyetlen értékesítési sor, amely a **Cat-A** kategóriába tartozó, **CY2018** évben megrendelt termékekre vonatkozik. A lekérdezés 11 egységet ad vissza eredményként. Érdemes tudni, hogy amikor egy táblára több szűrőt alkalmaznak (ahogyan ebben a példában a **Sales** táblára), az mindig AND művelet, amelyhez az szükséges, hogy az összes feltétel igaz legyen.
 
 ### <a name="disconnected-tables"></a>Nem kapcsolódó táblák
 
-Szokatlan megoldás, ha egy modelltábla nem áll kapcsolatban másik modelltáblával. Az érvényes modelltervekben az ilyen táblákra _nem kapcsolódó táblaként_ hivatkozunk. A nem kapcsolódó táblának nem célja, hogy szűrőket propagáljon más modelltáblákba. A felhasználó által megadott adatok fogadására szolgál (esetlegesen szeletelő vizualizációval), és lehetővé teszi a modellszámítások számára, hogy értelmezhetően használják fel a megadott értéket. Például vegyünk egy nem kapcsolódó táblát, amely valutaátváltási árfolyamok értékeit tartalmazza. Ha egy szűrő van alkalmazva egy árfolyamérték alapján való szűréshez, az értéket egy mértékkifejezés értékesítési értékek átváltására használhatja.
+Szokatlan megoldás, ha egy modelltábla nem áll kapcsolatban másik modelltáblával. Az érvényes modelltervekben az ilyen táblákra _nem kapcsolódó táblaként_ hivatkozunk. A nem kapcsolódó táblának nem célja, hogy szűrőket propagáljon más modelltáblákba. A felhasználó által megadott adatok fogadására szolgál (esetlegesen szeletelő vizualizációval), és lehetővé teszi a modellszámítások számára, hogy értelmezhetően használják fel a megadott értéket. Például vegyünk egy nem kapcsolódó táblát, amely valutaátváltási árfolyamok értékeit tartalmazza. Ha szűrő van alkalmazva egy árfolyamérték alapján való szűréshez, az értéket egy mértékkifejezés értékesítési értékek átváltására használhatja.
 
 A Power BI Desktop lehetőségelemzési paramétere olyan funkció, amely egy nem kapcsolódó táblát hoz létre. További információt a [Lehetőségelemzési paraméter létrehozása és használata változók vizualizációjához a Power BI Desktopban](desktop-what-if.md) című cikkben találhat.
 
@@ -65,13 +65,13 @@ A négy lehetőség leírását – rövidített jelöléseikkel együtt – a k
 - Egy-az-egyhez (1:1)
 - Több-a-többhöz (\*:\*)
 
-Amikor létrehoz egy kapcsolatot a Power BI Desktopban, a tervező automatikusan felismeri és beállítja a számosságtípust. A tervező ehhez lekérdezi a modellből, hogy mely oszlopok tartalmaznak egyedi értékeket. Az importálási modellekhez belső tárolási statisztikákat használ a DirectQuery-modellekhez pedig profilkészítési lekérdezéseket küld az adatforrásnak. Esetenként azonban előfordul, hogy az eredmény helytelen. Ez azért történhet, mert a táblákba még nincsenek betöltve adatok, vagy azért, mert azok az oszlopok, amelyektől azt várta, hogy duplikált értékeket tartalmazzanak, jelenleg egyedi értékeket tartalmaznak. Bármelyikről is legyen szó, a számosságtípus frissíthető, ha az „egy” oldali oszlopok egyedi értékeket tartalmaznak (vagy ha a táblákba még nincsenek betöltve adatsorok).
+Amikor létrehoz egy kapcsolatot a Power BI Desktopban, a tervező automatikusan felismeri és beállítja a számosságtípust. A tervező lekérdezi a modellből, hogy mely oszlopok tartalmaznak egyedi értékeket. Az importálási modellekhez belső tárolási statisztikákat használ a DirectQuery-modellekhez pedig profilkészítési lekérdezéseket küld az adatforrásnak. Esetenként azonban előfordul, hogy az eredmény helytelen. Ez azért történhet, mert a táblákba még nincsenek betöltve adatok, vagy azért, mert azok az oszlopok, amelyektől azt várta, hogy duplikált értékeket tartalmazzanak, jelenleg egyedi értékeket tartalmaznak. Bármelyikről is legyen szó, a számosságtípus frissíthető, ha az „egy” oldali oszlopok egyedi értékeket tartalmaznak (vagy ha a táblákba még nincsenek betöltve adatsorok).
 
 Az **egy-a-többhöz** és a **több-az-egyhez** számossági lehetőségek lényegében azonosak, és ezek a leggyakoribb számosságtípusok.
 
 Egy-a-többhöz vagy több-az-egyhez kapcsolatok konfigurálásakor azt válassza, amely megegyezik az oszlopok összekapcsolásának sorrendjével. Fontolja meg, hogy konfigurálná a **Product** tábla és a **Sales** tábla közötti kapcsolatot a mindkét táblában megtalálható **ProductID** oszlop használatával. A számosságtípus _egy-a-többhöz_ lenne, mivel a **ProductID** oszlop a **Product** táblában egyedi értékeket tartalmaz. Ha a táblákat fordított irányban kapcsolná össze, a **Sales** táblát a **Product** táblával, akkor a számosság _több-az-egyhez_ lenne.
 
-Az **egy-az-egyhez** kapcsolat azt jelenti, hogy mindkét oszlop egyedi értékeket tartalmaz. Ez a számosságtípus nem gyakori, és valószínűleg kevéssé optimális modelltervet eredményez a redundáns adatok tárolása miatt.<!-- For guidance on using this cardinality type, see the [One-to-one relationship guidance](guidance/relationships-one-to-one) article.-->
+Az **egy-az-egyhez** kapcsolat azt jelenti, hogy mindkét oszlop egyedi értékeket tartalmaz. Ez a számosságtípus nem gyakori, és valószínűleg kevéssé optimális modelltervet eredményez a redundáns adatok tárolása miatt. A számosságtípusok használatával kapcsolatban az [Útmutató egy-az-egyhez kapcsolatokhoz](guidance/relationships-one-to-one.md) című cikk nyújt további információt.
 
 A **több-a-többhöz** kapcsolat azt jelenti, hogy mindkét oszlop tartalmazhat duplikált értékeket. Ez a számosságtípus nem gyakori. Leginkább összetett modellkövetelmények tervezésekor hasznos. A számosságtípus használatával kapcsolatos útmutatót itt találja meg: [Útmutató a több-a-többhöz kapcsolatokhoz](guidance/relationships-many-to-many.md).
 
@@ -95,13 +95,13 @@ Az _Egyirányú_ keresztszűrés jelentése „egy irányba”, míg a _Mindkett
 
 Egy-a-többhöz kapcsolatok esetében a keresztszűrés iránya mindig az „egy” oldaltól indul, illetve választhatóan a „több” oldaltól is (kétirányú). Egy-az-egyhez kapcsolatok esetében a keresztszűrés iránya mindig mindkét táblától értendő. Végül több-a-többhöz kapcsolatok esetében a keresztszűrés iránya indulhat a táblák egyikétől (bármelyiktől), vagy mindkettőtől. Amikor a számosságtípusban található „egy” oldal, a szűrők mindig arról az oldalról fognak propagálni.
 
-Ha a keresztszűrés iránya **Mindkettő** értékre van állítva, egy további tulajdonság érhető el a kétirányú szűrés alkalmazásához, ha sorszintű biztonsági (RLS-) szabályok vannak kikényszerítve. Az RLS-sel kapcsolatos további információkért lásd a [Sorszintű biztonság (RLS) a Power BI Desktoppal](desktop-rls.md) című cikket.
+Ha a keresztszűrű beállítása **Kétirányú**, egy további tulajdonság is rendelkezésre áll. Ez kétirányú szűrést alkalmazhat olyan esetben, amikor sorszintű biztonsági (RLS) szabályok vannak érvényben. Az RLS-sel kapcsolatban a [Sorszintű biztonság (RLS) a Power BI Desktoppal](desktop-rls.md) című cikk nyújt további információt.
 
 A kapcsolat keresztszűrési irányának módosítását – beleértve a szűréspropagálás letiltását – modellszámítással is el lehet végezni. Ez a [CROSSFILTER](/dax/crossfilter-function) DAX-funkcióval érhető el.
 
 A kétirányú kapcsolatok negatív hatással lehetnek a teljesítményre. Továbbá a kétirányú kapcsolatok konfigurálására tett kísérlet nem egyértelmű szűrőpropagációs útvonalakat eredményezhet. Ilyenkor előfordulhat, hogy a Power BI Desktop nem tudja véglegesíteni a kapcsolat módosítását, amit hibaüzenettel jelez. Egyes esetekben azonban a Power BI Desktop lehetővé teszi nem egyértelmű kapcsolati útvonalak meghatározását táblák között. Az egyértelműség hiányának észlelésére és az útvonalfeloldásra kiható elsőbbségi szabályokról a cikk későbbi, [elsőbbségi szabályokat](#precedence-rules) ismertető témakörében lesz szó.
 
-Ajánlott a kétirányú szűrést csak szükség esetén használni.<!-- For guidance on bi-directional filtering, see the [Cross filter relationship guidance](guidance/relationships-bidirectional-filtering) article.-->
+Ajánlott a kétirányú szűrést csak szükség esetén használni. További információ: [Útmutatás kétirányú kapcsolatokhoz](guidance/relationships-bidirectional-filtering.md).
 
 > [!TIP]
 > A Power BI Desktop modellnézetében egy kapcsolat keresztszűrési irányának megállapításához tekintse meg a nyílhegyeket a kapcsolatot jelölő vonal mentén. Egyetlen nyílhegy egyirányú szűrőt jelent, a nyílhegy irányában; a dupla nyílhegy pedig kétirányú kapcsolatot jelez.
@@ -110,7 +110,7 @@ Ajánlott a kétirányú szűrést csak szükség esetén használni.<!-- For gu
 
 Egyszerre csak egy aktív szűrőpropagálási útvonal lehet két modelltábla között. Lehetséges további kapcsolati útvonalakat is létrehozni, ám az összes ilyen kapcsolatot _inaktívként_ kell konfigurálni. Az inaktív kapcsolatokat csak a modellszámítások kiértékelése során lehet aktívvá tenni. Ez a [USERELATIONSHIP](/dax/userelationship-function-dax) DAX-funkcióval végezhető el.
 
-<!--For guidance on defining inactive relationships, see the [Active vs inactive relationship guidance](guidance/relationships-active-inactive) article.-->
+További információ: [Útmutató aktív vagy inaktív kapcsolatokhoz](guidance/relationships-active-inactive.md).
 
 > [!TIP]
 > A Power BI Desktop modellnézetében meg lehet állapítani, hogy egy kapcsolat aktív vagy inaktív állapotú. Az aktív kapcsolatot folyamatos vonal, míg az inaktív kapcsolatot szaggatott vonal jelöli.
@@ -119,7 +119,7 @@ Egyszerre csak egy aktív szűrőpropagálási útvonal lehet két modelltábla 
 
 A _Hivatkozási integritás feltételezése_ tulajdonság csak egy-a-többhöz és egy-az-egyhez kapcsolatok esetén érhető el két olyan DirectQuery tárolási módú tábla között, amelyek ugyanarra az adatforrásra épülnek. Amikor ez engedélyezve van, az adatforrásnak küldött natív lekérdezések KÜLSŐ ILLESZTÉS helyett BELSŐ ILLESZTÉSSEL kapcsolják össze egymással a két táblát. Ennek a tulajdonságnak az engedélyezése általában javítja a lekérdezések teljesítményét, bár ez az adatforrás pontos jellemzőitől is függ.
 
-Ezt a tulajdonságot mindig engedélyezni kell, ha a két tábla között az adatbázis külső kulcsára vonatkozó korlátozás van érvényben. A tulajdonság akkor is engedélyezhető, ha nem létezik külső kulcsra vonatkozó korlátozás, ha biztos benne, hogy van adatintegritás.
+Mindig engedélyezze ezt a tulajdonságot, ha a két tábla között az adatbázis külső kulcsára vonatkozó korlátozás van érvényben. A tulajdonság akkor is engedélyezhető, ha nem létezik külső kulcsra vonatkozó korlátozás, ha biztos benne, hogy van adatintegritás.
 
 > [!IMPORTANT]
 > Ha az adatintegritás veszélybe kerül, a belső illesztés el fogja távolítani a táblák közötti nem egyező sorokat. Tekintsük például egy modell **Sales** tábláját a **ProductID** oszlopértékkel, amely nem létezett a kapcsolódó **Product** táblában. A **Product** táblából a **Sales** táblába történő szűrőpropagálás el fogja távolítani ismeretlen termékekhez tartozó értékesítési sorokat. Ez azt eredményezi, hogy az értékesítési eredmények a valósnál alacsonyabbak lesznek.
@@ -164,7 +164,7 @@ A következő példában két erős kapcsolat látható, mindkettő az **S** bet
 
 Az importálási modellek esetén, ahol az összes adat tárolása a Vertipaq-gyorsítótárban történik, minden erős kapcsolathoz egy adatstruktúra jön létre az adatok frissítésekor. Az adatstruktúrák az oszlop-az-oszlophoz értékek indexelt leképezéseiből állnak, és az a céljuk, hogy gyorsítsák a táblák illesztését lekérdezéskor.
 
-A lekérdezés során az erős kapcsolatok lehetővé teszik, hogy _táblabővítésre_ kerüljön sor. A táblabővítés eredményeként létrejön egy virtuális tábla, amely tartalmazza az alaptábla natív oszlopait, majd kapcsolódó táblákba bővül. Importálási táblák esetén ez a lekérdezési motorban megy végbe. DirectQuery-táblák esetén a forrásadatbázisnak elküldött natív lekérdezésben történik (ha a „Hivatkozási integritás feltételezése” beállítás nincs engedélyezve). Ezután a lekérdezési motor a bővített táblát használja: szűrőket alkalmaz, és a bővített tábla oszlopaiban lévő értékek alapján csoportosít.
+A lekérdezés során az erős kapcsolatok lehetővé teszik, hogy _táblabővítésre_ kerüljön sor. A táblabővítés eredményeként létrejön egy virtuális tábla, amely tartalmazza az alaptábla natív oszlopait, majd kapcsolódó táblákba bővül. Importálási táblák esetén ez a lekérdezési motorban megy végbe. DirectQuery-táblák esetén a forrásadatbázisnak elküldött natív lekérdezésben történik (ha a **Hivatkozási integritás feltételezése** beállítás nincs engedélyezve). Ezután a lekérdezési motor a bővített táblát használja: szűrőket alkalmaz, és a bővített tábla oszlopaiban lévő értékek alapján csoportosít.
 
 > [!NOTE]
 > Az inaktív kapcsolatok is bővülnek akkor is, ha az adott kapcsolatot egy számítás sem használja. A kétirányú kapcsolatok nem befolyásolják a táblabővítést.
@@ -210,7 +210,7 @@ A kétirányú kapcsolatok többszörös – és ezáltal nem egyértelmű – s
 
 1. Több-az-egyhez és egy-az-egyhez kapcsolatok, beleértve a gyenge kapcsolatokat is
 2. Több-a-többhöz kapcsolatok
-3. Kétirányú kapcsolatok az ellenkező irányban (pl. a „több” oldalról)
+3. Kétirányú kapcsolatok az ellenkező irányban (tehát a „több” oldalról)
 
 ### <a name="performance-preference"></a>Teljesítménypreferencia
 
@@ -221,12 +221,16 @@ A következő lista szűrőpropagálási teljesítmény szerint rangsorolja a ka
 3. Köztes táblával elért több-a-többhöz modellkapcsolatok, amelyek között van legalább egy kétirányú kapcsolat
 4. Szigetek közötti kapcsolatok
 
-<!--For further information and guidance on many-to-many relationships, see the [Cross filter relationship guidance](guidance/relationships-bidirectional-filtering) article.-->
-
 ## <a name="next-steps"></a>Következő lépések
 
+Erről a cikkről a következő forrásanyagokban talál további információt:
+
 - [A csillagséma és a Power BI-ban játszott szerepének a bemutatása](guidance/star-schema.md)
+- [Útmutató egy-az-egyhez kapcsolatokhoz](guidance/relationships-one-to-one.md)
 - [Útmutató a több-a-többhöz kapcsolatokhoz](guidance/relationships-many-to-many.md)
-- Videó: [A Power BI-kapcsolatok használatakor ajánlott és kerülendő megoldások](https://youtu.be/78d6mwR8GtA)
+- [Útmutató aktív vagy inaktív kapcsolatokhoz](guidance/relationships-active-inactive.md)
+- [Útmutatás kétirányú kapcsolatokhoz](guidance/relationships-bidirectional-filtering.md)
+- [Kapcsolatok hibaelhárítási útmutatója](guidance/relationships-troubleshoot.md)
+- Videó: [A Power BI-kapcsolatok használatakor ajánlott és kerülendő megoldások](https://www.youtube.com/watch?v=78d6mwR8GtA)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-- Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com)
+- Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

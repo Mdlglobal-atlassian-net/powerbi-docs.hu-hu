@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/27/2020
-ms.openlocfilehash: 993d83e15eafa0e40938eee13cbeabec75389f47
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.date: 03/02/2020
+ms.openlocfilehash: 0a8cf16ddf7fe9e091599f1790a37a83b9923240
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819537"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237960"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
@@ -24,6 +24,14 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
 
 ## <a name="january-2020"></a>2020. január
 - **Power BI jelentéskészítő kiszolgáló**
+    - *Verzió: 1.6.7364.4075 (Build 15.0.1102.777), Kiadás dátuma: 2020. március 2.*
+         - Hibajavítások
+           -  Javítás a bizonyos adatforrások esetében nem feltölthető Power BI-jelentésekhez
+           -  Javítás a Power BI Jelentéskészítő kiszolgáló asztali hivatkozásához a portálról való letöltéshez
+           -  Javítás a DynamicImageDPI for Excel megjelenítéséhez
+           -  Javítás a bizonyos többfelhasználós helyzetekben nem megfelelő szálkultúrát használó Oracle-kapcsolatokhoz
+           -  Javítása a CustomHeaders a jelentés beágyazásakor hibát okozó alapértelmezett értékeihez
+           -  Javítás a bizonyos esetekben helytelenül generált SQL-paraméternevekhez
     - *Verzió: 1.6.7327.3007 (Build 15.0.1102.759), Kiadás dátuma: 2020. január 23.*
          - Funkciók
             -  Exportálás Excelbe Power BI-jelentésekből.

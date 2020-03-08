@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 02/13/2020
-ms.openlocfilehash: c760450319f5ca32856520bce9c9f9b67a8616d6
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.date: 03/04/2020
+ms.openlocfilehash: a48f9c5938c93376cc5dcdbe3491ee2a7e6813c0
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427760"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290659"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása
 
@@ -24,11 +24,11 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 
 | Funkciók | Power BI jelentéskészítő kiszolgáló | Power BI szolgáltatás | Megjegyzések |
 |---------|---------|---------|---------|
-| Telepítés | Helyszíni vagy üzemeltetett felhőbeli | Felhő | A Power BI jelentéskészítő kiszolgáló akkor helyezhető üzembe Azure-beli virtuális gépeken (üzemeltetett felhőbeli) ha licencelése a Power BI Premiummal történt |
+| Telepítés | Helyszíni vagy üzemeltetett felhőbeli | Felhő | A Power BI jelentéskészítő kiszolgáló akkor helyezhető üzembe Azure-beli virtuális gépeken (üzemeltetett felhőbeli) ha licencelése frissítési garanciával, a Power BI Premiummal vagy az SQL Server Enterprise-zal történt|
 | Forrásadatok | Felhőbeli és/vagy helyszíni | Felhőbeli és/vagy helyszíni |  |
 | Licenc | Power BI Premium vagy SQL Server EE frissítési garanciával (SA) | Power BI Pro és/vagy Power BI Premium | |  
 | Életciklus | Modern életciklus-szabályzat | Teljes körűen felügyelt szolgáltatás |  |
-| Kiadási ciklus | Évente háromszor (január, május, szeptember) | Havonta | A legújabb funkciók és javítások először a Power BI szolgáltatáshoz jelennek meg. Az alapfunkciók többsége a következő néhány kiadásban jelenik meg a Power BI jelentéskészítő kiszolgálóhoz; bizonyos funkciók csak a Power BI szolgáltatáshoz készülnek. |
+| Kiadási ciklus | Évente háromszor (január, május, szeptember) | Havonta | A legújabb funkciók és javítások először a Power BI szolgáltatáshoz jelennek meg. A szolgáltatáshoz a Power BI Desktop-kiadásokból származó funkciók összegzése minden kiadásban megjelenik a Power BI Jelentéskészítő kiszolgálóban. A többi funkciót általában csak a Power BI szolgáltatáshoz szántuk. |
 | Power BI-jelentések létrehozása a Power BI Desktopban | Igen | Igen |  |
 | Power BI-jelentések létrehozása a böngészőben | Nem | Igen |  |
 | Megosztott Power BI-adatkészletek üzemeltetése és ezekhez való csatlakozás | Nem | Igen | [Adathalmazok használata több munkaterületen](../service-datasets-across-workspaces.md) |

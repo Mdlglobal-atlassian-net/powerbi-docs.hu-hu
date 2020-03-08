@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 02/13/2020
-ms.openlocfilehash: 031e1fd5d5c57e37e0d70541d6662b0af7b91b07
-ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
+ms.openlocfilehash: 3f27c32442ecf3c70c3dc3e7d070fcc8bf14d7b1
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576799"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237868"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Power BI-vizualizációk közzététele a Partnerközpontban
 
@@ -37,8 +37,8 @@ Ha készen áll a Power BI-vizualizáció beküldésére, ellenőrizze, hogy a v
 | Minta .pbix jelentésfájl |Igen |A vizualizáció megfelelő bemutatásához érdemes megismertetnie a felhasználókkal a részleteket. Hangsúlyozza ki a vizualizáció felhasználó számára nyújtott értékeit, illusztrálja példákkal a használatot és a formázási lehetőségeket. Végül hozzáadhat egy tippeket, trükköket és elkerülendő lépéseket tartalmazó *„tippek”* oldalt is.<br>A minta .pbix jelentésfájlnak működnie kell offline állapotban, bármilyen külső kapcsolat nélkül. |
 | Ikon |Igen |Meg kell adnia az egyéni vizualizáció áruházban megjelenő emblémáját. Ennek formátuma .png, .jpg, .jpeg vagy .gif lehet, Pontosan 300 képpont (szélesség) × 300 képpont (magasság) méretűnek kell lennie.<BR>**Fontos!** Az ikon beküldése előtt tekintse át figyelmesen az [AppSource képtárolási útmutatóját](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images). |
 | Képernyőképek |Igen |Adjon meg legalább egy képernyőképet. Ennek formátuma .png, .jpg, .jpeg vagy .gif lehet, A mérete csak 1366 px (szélesség) és 768 px (hosszúság) lehet. A fájl nem lehet nagyobb 1024 kb-nál.<br>A hatékonyabb használat érdekében adjon hozzá szövegbuborékokat az egyes képernyőképeken látható fő jellemzők által képviselt érték kihangsúlyozásához. |
-| Támogatás letöltési hivatkozása |Igen |Adjon meg egy támogatási URL-címet az ügyfeleknek. Ez a hivatkozás a SellerDashboard-lista részeként lesz megadva, és látható lesz a vizualizációt az AppSource-beli listában elérő felhasználók számára. Az URL-címnek tartalmaznia kell a https:// vagy a http:// előtagot. |
-| Adatvédelmi dokumentum hivatkozása |Igen |Adjon meg egy hivatkozást a vizualizáció adatvédelmi szabályzatához. Ez a hivatkozás a SellerDashboard-lista részeként lesz megadva, és látható lesz a vizualizációt az AppSource-beli listában elérő felhasználók számára. A hivatkozásnak tartalmaznia kell a https:// vagy a http:// előtagot. |
+| Támogatás letöltési hivatkozása |Igen |Adjon meg egy támogatási URL-címet az ügyfeleknek. Ez a hivatkozás a Partnerközpont-lista részeként lett megadva, és látható a vizualizációját az AppSource-on lévő listában elérő felhasználók számára. Az URL-címnek tartalmaznia kell a https:// vagy a http:// előtagot. |
+| Adatvédelmi dokumentum hivatkozása |Igen |Adjon meg egy hivatkozást a vizualizáció adatvédelmi szabályzatához. Ez a hivatkozás a Partnerközpont-lista részeként lett megadva, és látható a vizualizációját az AppSource-on lévő listában elérő felhasználók számára. A hivatkozásnak tartalmaznia kell a https:// vagy a http:// előtagot. |
 | Végfelhasználói licencszerződés (EULA) |Igen |Meg kell adnia a licencfeltételeket tartalmazó fájlt a Power BI-vizualizációhoz. |
 | Videó hivatkozása |Nem |Tovább növelheti a felhasználók érdeklődését az egyéni vizualizáció iránt, ha videóhivatkozást ad meg a vizualizáció témájában. Az URL-címnek tartalmaznia kell a https:// vagy a http:// előtagot. |
 | GitHub-adattár |Nem |Osszon meg nyilvános hivatkozást egy [GitHub](https://www.github.com)-adattárban a Power BI-vizualizáció és az adatminták forrásaival. Ez lehetővé teszi más fejlesztők számára a visszajelzést és a javaslattételt a kód javítására. |
@@ -74,9 +74,6 @@ A Power BI csapatának ellenőriznie kell az új Power BI-vizualizációk bekül
 Ahhoz, hogy a Power BI-vizualizációt beküldhesse a Partnerközpontba, regisztrálnia kell a Partnerközpontban. Ha még nem regisztrált, [nyisson meg egy fejlesztői számlát a Partnerközpontban](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
 
 Kövesse az alábbi lépéseket a Power BI-vizualizáció Partnerközpontba való beküldéséhez. A beküldési folyamattal kapcsolatos további információkért lásd: [Fejlesztői számla nyitása a Partnerközpontban](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
-
->[!NOTE]
-> Ha már megkezdte egy Power BI-vizualizáció beküldését, és a [Seller Dashboardot](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (a régi kezelőeszközt) kell használnia, akkor tekintse át a [Power BI-vizualizáció beküldése az AppSource-ba a Seller Dashboard használatával](seller-dashboard.md) című útmutatót.
 
 1. Jelentkezzen be a **Partnerközpontba**.
 

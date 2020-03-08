@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 85db7414fc476f2a62368d150e068a71c13d41cb
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: 279e6895122f6b82f8e7670d982a8b50c78ec83a
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527522"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260416"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>A csillagséma és a Power BI-ban játszott szerepének a bemutatása
 
@@ -25,7 +25,7 @@ A cikknek nem célja a csillagséma tervezésének teljes körű leírása. Rés
 
 A **csillagséma** a relációs adattárházakhoz gyakran használt, fejlett modellezési megközelítés. Használatához a modellezőknek a _dimenzió_ vagy a _tény_ kategóriába kell besorolniuk a modelltáblákat.
 
-A **dimenziótáblák** üzleti entitásokat – a modellben lévő „dolgokat” – írják le. Az entitások lehetnek termékek, személyek, helyek és fogalmak, akár maga az idő is. Egy csillagséma legkonzisztensebb táblája egy dátum-dimenziótábla lehet. A dimenziótáblák egyedi azonosítóként szolgáló kulcsoszlopot (vagy kulcsoszlopokat), valamint leíró oszlopokat tartalmaznak.
+A **dimenziótáblák** üzleti entitásokat – a modellben lévő _dolgokat_ – írják le. Az entitások lehetnek termékek, személyek, helyek és fogalmak, akár maga az idő is. Egy csillagséma legkonzisztensebb táblája egy dátum-dimenziótábla lehet. A dimenziótáblák egyedi azonosítóként szolgáló kulcsoszlopot (vagy kulcsoszlopokat), valamint leíró oszlopokat tartalmaznak.
 
 A **ténytáblák** megfigyeléseket vagy eseményeket tárolnak, és lehetnek például értékesítési rendelések, készletegyenlegek, árfolyamok, hőmérsékletek stb. A ténytáblák a dimenziótáblákhoz kapcsolódó dimenziókulcs-oszlopokat, valamint numerikus mértékoszlopokat tartalmaznak. A dimenziós kulcsoszlopok határozzák meg egy ténytábla _dimenziószámát_ a dimenziókulcs értékek pedig egy ténytábla _részletességét_. Tekintsünk például egy értékesítési célok tárolására tervezett ténytáblát, amelynek két dimenziókulcs-oszlopa a **Date** (dátum) és a **ProductKey** (termékazonosító). Nyilvánvaló, hogy a tábla kétdimenziós. A részletessége azonban nem határozható meg a dimenziókulcs értékek figyelembe vétele nélkül. Tekintsük úgy, hogy a példánkban a **Date** oszlopban tárolt értékek az egyes hónapok első napjának felelnek meg. Ebben az esetben a részletesség hónap-termék szintű.
 
@@ -42,11 +42,11 @@ Figyelembe kell venni, hogy minden Power BI-jelentésbeli vizualizáció lekérd
 - A dimenziótáblák a _szűrést_ és a _csoportosítást_ támogatják
 - A ténytáblák az _összegzést_ támogatják
 
-A táblának nincs a modellező által megadható beállítása, amellyel a tábla típusa (dimenzió vagy tény) konfigurálható, ezt a modellen belüli kapcsolatok határozzák meg. Egy modellbeli kapcsolat szűrőátadási útvonalat hoz létre két tábla között, a tábla típusát pedig ennek a kapcsolatnak a **Számosság** tulajdonsága határozza meg. Gyakori kapcsolatszámosság az „egy-a-többhöz”, vagy a „több-az-egyhez”. Az „egy” oldal mindig dimenzió típusú tábla, a „több” oldal pedig mindig tény típusú tábla.
+A táblának nincs a modellező által megadható beállítása, amellyel a tábla típusa (dimenzió vagy tény) konfigurálható. Ezt a modellen belüli kapcsolatok határozzák meg. Egy modellbeli kapcsolat szűrőátadási útvonalat hoz létre két tábla között, a tábla típusát pedig ennek a kapcsolatnak a **Számosság** tulajdonsága határozza meg. Gyakori kapcsolatszámosság az _egy-a-többhöz_, vagy a _több-az-egyhez_. Az „egy” oldal mindig dimenzió típusú tábla, a „több” oldal pedig mindig tény típusú tábla. További információ a kapcsolatokról: [Modellkapcsolatok a Power BI Desktopban](../desktop-relationships-understand.md).
 
 ![Elvi csillagséma](media/star-schema/star-schema-example2.png)
 
-Egy jól felépített modellnek olyan táblákból kell állnia, amelyek mindegyike vagy dimenzió típusú, vagy tény típusú. A két típus egy táblán belüli keverése kerülendő. Ugyanakkor arra is ajánlott törekedni, hogy a megfelelő számú táblát biztosítsa a megfelelő kapcsolatokkal. Az is lényeges, hogy a tény típusú táblákban következetes részletességgel legyenek betöltve az adatok.
+Egy jól felépített modellnek olyan táblákból kell állnia, amelyek mindegyike vagy dimenzió típusú, vagy tény típusú. Kerülje a két típus egy táblán belüli keverését. Ugyanakkor arra is ajánlott törekedni, hogy a megfelelő számú táblát biztosítsa a megfelelő kapcsolatokkal. Az is lényeges, hogy a tény típusú táblákban következetes részletességgel legyenek betöltve az adatok.
 
 Végül azzal is fontos tisztában lenni, hogy az optimális modell megtervezése félig tudomány, és félig művészet. Olykor, ha a józan ész ezt diktálja, az amúgy jó irányelvekkel is szabad szakítani.
 
@@ -73,17 +73,17 @@ Fontos tudnivaló, hogy a Power BI-modellek egy másféle összegzési módot is
 
 A mértékek létrehozása mellett azonban még egyszerű, oszlopszintű összegzések esetén is három meggyőző érv szól:
 
-- Ha tudja, hogy a jelentéskészítők [többdimenziós kifejezések (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017) használatával fogják lekérdezni a modellt, akkor a modellnek _explicit mértékeket_ kell tartalmaznia. Az explicit mértékek meghatározása a DAX segítségével történik. Ez a tervezési megközelítés különösen fontos, ha Power BI-adatkészleteket kérdez le az MDX használatával, mivel az MDX nem tudja elérni az oszlopok értékeinek összegzését. A rendszer az MDX-et használja az [Excelben való elemzéshez](https://docs.microsoft.com/power-bi/service-analyze-in-excel) (a kimutatások MDX-lekérdezéseket adnak ki).
+- Ha tudja, hogy a jelentéskészítők [többdimenziós kifejezések (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017) használatával fogják lekérdezni a modellt, akkor a modellnek _explicit mértékeket_ kell tartalmaznia. Az explicit mértékek meghatározása a DAX segítségével történik. Ez a tervezési megközelítés különösen fontos, ha Power BI-adatkészleteket kérdez le az MDX használatával, mivel az MDX nem tudja elérni az oszlopok értékeinek összegzését. A rendszer az MDX-et használja az [Excelben való elemzéshez](https://docs.microsoft.com/power-bi/service-analyze-in-excel) mert a kimutatások MDX-lekérdezéseket adnak ki.
 - Ha tudja, hogy a jelentésszerzők lapszámozott Power BI-jelentéseket fognak létrehozni az MDX-lekérdezéstervezővel, a modellnek explicit mértékeket kell tartalmaznia. Csak az MDX-lekérdezéstervező támogatja a [kiszolgálói összesítéseket](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Ha tehát a jelentéskészítőknek a Power BI (és nem a lapszámozott jelentések motorja) által kiértékelt mértékekre van szükségük, az MDX-lekérdezéstervezőt kell használniuk.
 - Ha biztosítania kell, hogy a jelentéskészítők csak bizonyos módokon összegezhessenek oszlopokat. A viszonteladói értékesítések **Egységár** oszlopa (amely az egységenkénti árat jelenti) összesíthető, de csak meghatározott összesítő függvényekkel. Összeadni értelmetlen, más összesítő függvényekkel (minimum, maximum, átlag stb.) viszont összesíthető. Ebben az esetben a modellező elrejtheti az **Egységár** oszlopot, és mértékeket hozhat létre az összes megfelelő összesítő függvényhez.
 
-Megjegyzendő, hogy ez a kialakítási elv jól megfelel a Power BI szolgáltatásban készített jelentésekhez és a Q&A-hoz. A Power BI Desktop élő kapcsolatai viszont lehetővé teszik, hogy a jelentéskészítők felfedjék a rejtett mezőket a **Mezők** panelen, ezáltal megkerüljék a tervező szándékát.
+Ez a kialakítási elv jól megfelel a Power BI szolgáltatásban készített jelentésekhez és a Q&A-hoz. A Power BI Desktop élő kapcsolatai viszont lehetővé teszik, hogy a jelentéskészítők felfedjék a rejtett mezőket a **Mezők** panelen, ezáltal megkerüljék a tervező szándékát.
 
 ## <a name="surrogate-keys"></a>Helyettes kulcsok
 
 A **helyettes kulcs** egyedi azonosító, amelyet a csillagséma-modell támogatása érdekében vehet fel egy táblához. Definíció szerint nem a forrásadatokban van meghatározva vagy tárolva. A helyettes kulcsok általában a relációs adattárházak dimenziótábláihoz vannak felvéve, hogy a dimenziótábla minden sorának egyedi azonosítót biztosítsanak.
 
-A Power BI-modell kapcsolatai egy tábla egyetlen egyedi oszlopán alapulnak, amely egy másik tábla egy oszlopára viszi át a szűrőket. Ha a modell egy dimenzió típusú táblája nem tartalmaz egy egyedi oszlopot, akkor Önnek kell egyedi azonosítót hozzáadnia, hogy az egy kapcsolat „egy” oldala lehessen. A Power BI Desktopban ezt egyszerűen megvalósíthatja egy [Power Query-indexoszlop](https://docs.microsoft.com/powerquery-m/table-addindexcolumn) létrehozásával.
+A Power BI-modell kapcsolatai egy tábla egyetlen egyedi oszlopán alapulnak, amely egy másik tábla egy oszlopára viszi át a szűrőket. Ha a modell egy dimenzió típusú táblája nem tartalmaz egy egyedi oszlopot, akkor Önnek kell egyedi azonosítót hozzáadnia, hogy az egy kapcsolat „egy” oldala lehessen. A Power BI Desktopban ennek a követelménynek egyszerűen eleget tehet egy [Power Query-indexoszlop](https://docs.microsoft.com/powerquery-m/table-addindexcolumn) létrehozásával.
 
 ![Indexoszlop létrehozása a Power Query-eszköztárban](media/star-schema/toolbar-index.png)
 
@@ -91,7 +91,7 @@ Ezt a lekérdezést a „több”-oldali lekérdezéssel kell egyesítenie, hogy
 
 ## <a name="snowflake-dimensions"></a>Hópehely dimenziók
 
-Egy **hópehely dimenzió** egyetlen üzleti entitáshoz tartozó normalizált táblák halmaza. Az Adventure Works például kategóriákba és alkategóriákba sorolja a termékeket. Az alkategóriák kategóriákhoz vannak rendelve, a termékek pedig alkategóriákhoz. Az Adventure Works relációs adattárházban a termékdimenzió normalizálva van, és három kapcsolódó táblában van tárolva: **DimProductCategory** , **DimProductSubcategory** és **DimProduct**.
+Egy **hópehely dimenzió** egyetlen üzleti entitáshoz tartozó normalizált táblák halmaza. Az Adventure Works például kategóriákba és alkategóriákba sorolja a termékeket. Az alkategóriák kategóriákhoz vannak rendelve, a termékek pedig alkategóriákhoz. Az Adventure Works relációs adattárházban a termékdimenzió normalizálva van, és három kapcsolódó táblában van tárolva: **DimProductCategory**, **DimProductSubcategory** és **DimProduct**.
 
 Egy kis képzelőerővel a normalizált táblák elhelyezhetők a ténytáblától kifelé haladva egy hópihe ágaihoz hasonlóan.
 
@@ -118,7 +118,7 @@ A csillagséma-tervezés elmélete a lassan változó dimenzió két gyakori tí
 
 ### <a name="type-1-scd"></a>1\. típusú lassan változó dimenzió (SCD)
 
-Egy **1. típusú** **lassan változó dimenzió** a legutóbbi értékeket tükrözi, és a forrásadatok változásának észlelésekor a dimenziótábla adatai egyszerűen felül vannak írva. Ez a tervezési megközelítés kiegészítő adatokat, például egy ügyfél e-mail-címét vagy telefonszámát tartalmazó oszlopoknál gyakori. Amikor egy ügyfél e-mail-címe vagy telefonszáma megváltozik, a dimenziótábla az új értékekkel frissíti az ügyfél sorát. Mintha az ügyfél kapcsolattartási adatai mindig ezek lettek volna.
+Egy **1. típusú** **lassan változó dimenzió** a legutóbbi értékeket tükrözi, és a forrásadatok változásának észlelésekor a dimenziótábla adatai felül lesznek írva. Ez a tervezési megközelítés kiegészítő adatokat, például egy ügyfél e-mail-címét vagy telefonszámát tartalmazó oszlopoknál gyakori. Amikor egy ügyfél e-mail-címe vagy telefonszáma megváltozik, a dimenziótábla az új értékekkel frissíti az ügyfél sorát. Mintha az ügyfél kapcsolattartási adatai mindig ezek lettek volna.
 
 A Power BI-modell dimenzió típusú tábláinak nem növekményes frissítése 1. típusú lassan változó dimenziót eredményez. A táblabeli adatok frissítésével biztosítja a legújabb értékek betöltését.
 
@@ -166,6 +166,8 @@ Ha minden szerephez külön dimenzió típusú táblát hoz létre, kövesse az 
 - Gondoskodjon róla, hogy az oszlopok neve érthető legyen. Bár megengedett, hogy mindegyik dátumtábla tartalmazzon egy **Év** oszlopot (az oszlopnevek a táblán belül egyediek), ez a vizualizációk alapértelmezett címeiben nem lesz egyértelmű. Érdemes mindegyik dimenziótábla oszlopait átnevezni, így például a **Kiszállítási dátum** táblázat év oszlopának neve lehet **Kiszállítási év** stb.
 - Ahol alkalmazható, ott gondoskodjon a táblák érthető (a **Mezők** panel elemleírásaiban elérhető) leírásáról, amely a szűrők továbbadásának konfigurálásáról tájékoztatja a jelentéskészítőket. Ez az egyértelműség akkor lényeges, ha a modell egy általános elnevezésű táblát (például **Dátum**) is tartalmaz, amely több tény típusú tábla szűrésére is használatos. Ha ez a tábla például a viszonteladói értékesítések megrendelési dátum oszlopával áll aktív kapcsolatban, ajánlott a következőhöz hasonló leírást megadni: „Megrendelési dátum szerint szűri a viszonteladói értékesítéseket”.
 
+További információ: [Útmutató aktív vagy inaktív kapcsolatokhoz](relationships-active-inactive.md).
+
 ## <a name="junk-dimensions"></a>Vegyes dimenziók
 
 A **vegyes dimenziók** kevés dimenzió esetén hasznosak, főleg akkor, ha ezek kevés (esetleg egy) attribútumból állnak, és ezeknek az attribútumoknak kevés értéke van. Erre jó jelölt a rendelés állapota oszlop, vagy az ügyfelek demográfiai oszlopai (nem, korcsoport stb.).
@@ -186,6 +188,8 @@ A Power BI-modellben az értékesítési rendelésszám oszlopát érdemesebb le
 
 ![Példa ténybe ágyazott dimenzióra](media/star-schema/degenerate-dimension.png)
 
+További információ: [Útmutató egy-az-egyhez kapcsolatokhoz (Ténybe ágyazott dimenziók)](relationships-one-to-one.md#degenerate-dimensions).
+
 ## <a name="factless-fact-tables"></a>Tények nélküli ténytáblák
 
 A **tények nélküli tény** típusú táblák nem tartalmaznak mértékoszlopot. Csak dimenziókulcsokat tartalmaznak.
@@ -198,7 +202,7 @@ Tegyük fel például, hogy az értékesítők egy _vagy több_ értékesítési
 
 ![Példa tények nélküli ténytáblára](media/star-schema/factless-fact.png)
 
-A több-a-többhöz kapcsolat tervezésének ez a módja jól dokumentált, és áthidaló tábla nélkül is megvalósítható. Két dimenzió kapcsolata esetén mégis az áthidaló tábla használata ajánlott. További információ: [Több-a-többhöz számosságú kapcsolatok a Power BI Desktopban](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships).
+A több-a-többhöz kapcsolat tervezésének ez a módja jól dokumentált, és áthidaló tábla nélkül is megvalósítható. Két dimenzió kapcsolata esetén mégis az áthidaló tábla használata ajánlott. További információ: [Útmutató a több-a-többhöz kapcsolatokhoz (Két dimenziótábla összekapcsolása)](relationships-many-to-many.md#relate-many-to-many-dimensions).
 
 ## <a name="next-steps"></a>Következő lépések
 
@@ -206,6 +210,9 @@ Csillagséma vagy Power BI-modell tervezéséről a következő cikkekből táj�
 
 - [Wikipedia-cikk a dimenzionális modellezésről](https://go.microsoft.com/fwlink/p/?linkid=246459)
 - [Kapcsolatok létrehozása és kezelése a Power BI Desktopban](../desktop-create-and-manage-relationships.md)
-- [Több-a-többhöz számosságú kapcsolatok a Power BI Desktopban](../desktop-many-to-many-relationships.md)
-- [Interaktív modellezési oktatóanyag](/learn/modules/model-data-power-bi/)
+- [Útmutató egy-az-egyhez kapcsolatokhoz](relationships-one-to-one.md)
+- [Útmutató a több-a-többhöz kapcsolatokhoz](relationships-many-to-many.md)
+- [Útmutatás kétirányú kapcsolatokhoz](relationships-bidirectional-filtering.md)
+- [Útmutató aktív vagy inaktív kapcsolatokhoz](relationships-active-inactive.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

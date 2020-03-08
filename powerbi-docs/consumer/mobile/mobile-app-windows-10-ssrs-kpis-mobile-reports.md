@@ -45,7 +45,7 @@ Akkor is böngészhet a Reporting Services-mobiljelentések funkciói között, 
 Böngéssze át a mintákat a KPI-kkel és mobiljelentésekkel való interakcióhoz.
 
 ## <a name="connect-to-a-reporting-services-report-server"></a>Kapcsolódás a Reporting Services jelentéskészítő kiszolgálóhoz
-1. A navigációs ablaktábla alján koppintson a **Beállítások** ![Beállítások ikon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png) elemre
+1. Az új navigációs panel alján koppintson a **Beállítások** lehetőségre ![Beállítások ikon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
 2. Koppintson a **Csatlakozás kiszolgálóhoz** lehetőségre.
 3. Töltse ki a kiszolgáló címét, és adja meg felhasználónevét és jelszavát. A kiszolgáló címét az alábbi formátumban kell megadni:
    
@@ -95,7 +95,7 @@ További információ a [kedvencekről a Power BI-mobilalkalmazásokban](mobile-
 ## <a name="remove-a-connection-to-a-report-server"></a>Jelentéskészítő kiszolgálóval való kapcsolat eltávolítása
 Egyszerre csak egy jelentéskészítő kiszolgálóhoz kapcsolódhat a Power BI mobilalkalmazásából. Ha másik kiszolgálóhoz szeretne kapcsolódni, meg kell szakítania a kapcsolatot a jelenlegivel.
 
-1. A navigációs ablaktábla alján koppintson a **Beállítások** ![Beállítások ikon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png) elemre.
+1. Az új navigációs panel alján koppintson a **Beállítások** lehetőségre ![Beállítások ikon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
 2. Koppintson azon kiszolgáló nevére, amelyhez nem szeretne a továbbiakban kapcsolódni, és tartsa nyomva.
 3. Koppintson a **Kiszolgáló eltávolítása** lehetőségre.
    

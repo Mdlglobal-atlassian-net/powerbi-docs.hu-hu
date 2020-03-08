@@ -42,10 +42,10 @@ A megosztott irányítópultok és jelentések használatához különféle lehe
 
 ### <a name="actions-available-from-the-shared-with-me-container"></a>A **Velem megosztva** tárolóban elérhető műveletek
 Az elérhető műveletek a tartalom *tervezője* által hozzárendelt beállításoktól függenek. Íme néhány lehetőség:
-* [Irányítópult vagy jelentés kedvencként való megjelöléséhez](end-user-favorite.md) kattintson a csillag ikonra ![csillag ikon](./media/end-user-shared-with-me/power-bi-star-icon.png).
+* [Irányítópult vagy jelentés beállítása kedvencként](end-user-favorite.md) a csillag ikon választásával ![csillag ikon](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Irányítópult vagy jelentés eltávolítása  ![kuka ikon](./media/end-user-shared-with-me/power-bi-delete-icon.png).
 * Egyes irányítópultok és jelentések újból megoszthatók  ![megosztás ikon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
-* [Nyissa meg a jelentést az Excelben](end-user-export.md) ![Exportálás az Excelbe ikon](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [Jelentés megnyitása az Excelben](end-user-export.md) ![exportálás az Excelbe ikon](./media/end-user-shared-with-me/power-bi-excel.png) 
 * Az ![elemzések ikonnal](./media/end-user-shared-with-me/power-bi-insights.png) megtekintheti a Power BI által az adatokon végzett [elemzéseket](end-user-insights.md).
   
   > [!NOTE]
