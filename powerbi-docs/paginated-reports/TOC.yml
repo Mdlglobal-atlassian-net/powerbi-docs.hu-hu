@@ -1,0 +1,61 @@
+- name: Többoldalas Power BI-jelentések
+  href: index.yml
+  expanded: true
+  items:
+    - name: Áttekintés
+      expanded: true
+      items:
+        - name: Mik azok a többoldalas jelentések?
+          href: paginated-reports-report-builder-power-bi.md
+        - name: Jelentéskészítő a Power BI-ban
+          href: report-builder-power-bi.md
+    - name: Oktatóanyagok
+      expanded: true
+      items:
+        - name: 'Gyakorlati tesztkörnyezet: Többoldalas jelentés készítése'
+          href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
+        - name: Többoldalas jelentés készítése és feltöltése
+          href: paginated-reports-quickstart-aw.md
+    - name: Fogalmak
+      expanded: true
+      items:
+        - name: Eligazodás a Jelentéstervező nézetben
+          href: paginated-reports-report-design-view.md
+        - name: Jelentés megtervezése
+          href: report-builder-planning-report.md
+        - name: Jelentéskészítő adatai
+          href: report-builder-data.md
+        - name: Támogatott adatforrások
+          href: paginated-reports-data-sources.md
+        - name: Tervezési tippek
+          href: report-builder-design-tips.md
+        - name: 'Táblák, mátrixok, listák'
+          href: report-builder-tables-matrices-lists.md
+        - name: Paraméterek
+          href: report-builder-parameters.md
+        - name: URL-paraméterek a többoldalas jelentésekben
+          href: report-builder-url-parameters.md
+        - name: Példák kifejezésekre
+          href: report-builder-expression-examples.md
+        - name: Jelentés oldalakra tördelése
+          href: paginated-reports-pagination.md
+        - name: Jelentések megtekintése előnézetben
+          href: report-builder-previewing-reports.md
+        - name: Gyakori kérdések a többoldalas jelentésekről
+          href: paginated-reports-faq.md
+    - name: Útmutató
+      items:
+        - name: Adatok megadása közvetlenül többoldalas jelentésben
+          href: paginated-reports-enter-data.md
+        - name: Beágyazott adatforrás létrehozása
+          href: paginated-reports-embedded-data-source.md
+        - name: Beágyazott adathalmaz létrehozása
+          href: paginated-reports-create-embedded-dataset.md
+        - name: Jelentés létrehozása megosztott Power BI-adatkészlettel
+          href: report-builder-shared-datasets.md
+        - name: Paraméterek létrehozása
+          href: paginated-reports-parameters.md
+        - name: Jelentésparaméter átadása URL-címben
+          href: report-builder-url-pass-parameters.md
+        - name: Többoldalas jelentés közzététele
+          href: paginated-reports-save-to-power-bi-service.md
