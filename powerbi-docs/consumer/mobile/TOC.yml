@@ -1,0 +1,112 @@
+- name: Power BI – mobilalkalmazások
+  href: index.yml
+  expanded: true
+  items:
+    - name: Áttekintés
+      expanded: true
+      items:
+        - name: Mik azok a mobilalkalmazások?
+          href: mobile-apps-for-mobile-devices.md
+        - name: A kezdőlap bemutatása
+          href: mobile-apps-home-page.md
+    - name: Rövid útmutatók
+      expanded: true
+      items:
+        - name: Irányítópultok és jelentések felfedezése
+          href: mobile-apps-quickstart-view-dashboard-report.md
+    - name: Oktatóanyagok
+      expanded: true
+      items:
+        - name: Kérdések feltevése az iOS-es mobilalkalmazásban
+          href: tutorial-mobile-apps-ios-qna.md
+    - name: Fogalmak
+      expanded: true
+      items:
+        - name: A mobilalkalmazások újdonságai
+          href: mobile-whats-new-in-the-mobile-apps.md
+        - name: Adatok a való világból a mobilalkalmazásokkal
+          href: mobile-apps-data-in-real-world-context.md
+        - name: Adatok megtekintése kapcsolat nélküli üzemmódban a mobilalkalmazásokban
+          href: mobile-apps-offline-data.md
+        - name: Power BI vegyes valósághoz alkalmazás (előzetes verzió)
+          href: mobile-mixed-reality-app.md
+    - name: Útmutató
+      items:
+        - name: Minden mobilalkalmazás
+          items:
+            - name: Irányítópultok Power BI-mobilalkalmazásokhoz
+              href: mobile-apps-view-dashboard.md
+            - name: Jelentések a mobilalkalmazásokban
+              href: mobile-reports-in-the-mobile-apps.md
+            - name: Csempék használata a mobilalkalmazásokban
+              href: mobile-tiles-in-the-mobile-apps.md
+            - name: Irányítópult megosztása a Power BI mobilalkalmazásokból
+              href: mobile-share-dashboard-from-the-mobile-apps.md
+            - name: Kedvencek a mobilalkalmazásokban
+              href: mobile-apps-favorites.md
+            - name: Interakciós beállítások konfigurálása (csak telefon)
+              href: mobile-app-interaction-settings.md
+            - name: Adatriasztások beállítása a Power BI mobilalkalmazásokban
+              href: mobile-set-data-alerts-in-the-mobile-apps.md
+            - name: Értesítések fogadása a Power BI-mobilalkalmazásokban
+              href: mobile-apps-notification-center.md
+            - name: Meghatározott helyre mutató hivatkozás létrehozása
+              href: mobile-apps-deep-link-specific-location.md
+            - name: Jelentés hely szerinti szűrése a Power BI-mobilalkalmazásokban
+              href: mobile-apps-geographic-filtering.md
+            - name: Csatlakozás a Reporting Serviceshez OAuth használatával
+              href: mobile-oauth-ssrs.md
+        - name: iOS és Android
+          items:
+            - name: Telefonra optimalizált jelentések megtekintése
+              href: mobile-apps-view-phone-report.md
+            - name: Helyszíni jelentések megtekintése a mobilalkalmazásokban
+              href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+            - name: Tartalomhoz való hozzáférés külső szervezetből (B2B)
+              href: mobile-apps-b2b.md
+            - name: QR-kód szkennelése a Power BI számára a telefonnal
+              href: mobile-apps-qr-code.md
+            - name: Jegyzetkészítés és megosztás a mobilalkalmazásokban
+              href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
+            - name: Vonalkód beolvasása a Power BI mobilalkalmazásból
+              href: mobile-apps-scan-barcode-iphone.md
+            - name: Konfigurálás mobileszköz-kezelés használatával
+              href: mobile-app-configuration.md
+        - name: iOS
+          items:
+            - name: Első lépések az iOS-alkalmazással
+              href: mobile-iphone-app-get-started.md
+            - name: 'Védelem a Face ID, a Touch ID vagy PIN-kód használatával'
+              href: mobile-ios-native-secure-access.md
+            - name: Q&A virtuális elemző az iOS-es mobilalkalmazásokban
+              href: mobile-apps-ios-qna.md
+            - name: Power BI mobilalkalmazás-integráció Siri-parancsikonokkal
+              href: mobile-apps-iOS-siri-Shortcuts.md
+            - name: iOS-eszköz keresési integrációja
+              href: mobile-apps-iOS-search-integration.md
+            - name: Apple Watchra készült Power BI alkalmazás
+              href: mobile-apple-watch.md
+        - name: Androidos eszközök
+          items:
+            - name: Első lépések az Android-alkalmazással
+              href: mobile-android-app-get-started.md
+            - name: A „vállalati SSL-tanúsítványa nem megbízható” hiba elhárítása
+              href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+            - name: A „frissíteni kell az Android System Webview alkalmazást” hiba elhárítása
+              href: mobile-android-error-update-android-system-webview.md
+        - name: Windows 10-es eszközökhöz készült Power BI alkalmazás
+          items:
+            - name: Ismerkedés a Windows 10-alkalmazással
+              href: mobile-windows-10-phone-app-get-started.md
+            - name: Irányítópult rögzítése a kezdőképernyőn
+              href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
+            - name: Reporting Services-mobiljelentések és -KPI-k megtekintése
+              href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
+            - name: Power BI megtekintése Surface Hubon
+              href: mobile-windows-10-app-presentation-mode.md
+            - name: Egyszeri bejelentkezés a Windows-alkalmazásban
+              href: mobile-windows-10-app-single-sign-on-sso.md
+    - name: Erőforrások
+      items:
+        - name: Támogatott nyelvek a mobilalkalmazásokban
+          href: mobile-apps-supported-languages.md
