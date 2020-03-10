@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: A Power BI fogyasztóknak dokumentációja
+title: A Power BI fogyasztóknak szóló dokumentációja
 summary: A felhasználók irányítópultokat és jelentéseket fogadnak a munkatársaktól. Ezeket a tartalmakat a Power BI-ban tudja áttekinteni és felhasználni üzleti döntések meghozatalához.
 metadata:
   title: A Power BI felhasználók számára
@@ -9,13 +9,13 @@ metadata:
   ms.topic: landing-page
   author: mihart
   ms.author: mihart
-  ms.date: 01/10/2020
-  ms.openlocfilehash: d08520a7ee3526323111de91c4dfb67e139a8813
-  ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+  ms.date: 02/25/2020
+  ms.openlocfilehash: 3f6431f2011b4b6a75ea766d6051b02ce2abe947
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 02/20/2020
-  ms.locfileid: "77497793"
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78919349"
 landingContent:
 - title: A Power BI bemutatása felhasználók számára
   linkLists:
@@ -85,8 +85,8 @@ landingContent:
       url: end-user-bookmarks.md
     - text: Automatikus elemzések megtekintése
       url: end-user-insights.md
-    - text: Többoldalas jelentés megtekintése
-      url: paginated-reports-view-power-bi-service.md
+    - text: A Q&A használatának tippjei
+      url: end-user-q-and-a-tips.md
 - title: Erőforrások
   linkLists:
   - linkListType: reference

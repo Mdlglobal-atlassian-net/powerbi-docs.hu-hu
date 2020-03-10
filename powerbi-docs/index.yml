@@ -1,0 +1,243 @@
+### YamlMime:Hub
+title: A Power BI dokumentációja
+summary: A Power BI széleskörű elemzéseket tesz lehetővé, és növeli az adatok értékét. A Power BI dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
+brand: power-bi
+metadata:
+  title: A Power BI dokumentációja
+  description: A Power BI széleskörű elemzéseket tesz lehetővé, és növeli az adatok értékét. Szakértői információhoz juthat, bárhogyan is használja a Power BI-t.
+  services: service
+  ms.service: powerbi
+  ms.subservice: subservice
+  ms.topic: hub-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/03/2020
+  ms.openlocfilehash: ad1e273947744f2d7611f6a4a03940e52f2a64fa
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: hu-HU
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924299"
+highlightedContent:
+  items:
+  - title: Első lépések a Power BI Desktopban
+    itemType: get-started
+    url: desktop-getting-started.md
+  - title: Regisztráció a Power BI szolgáltatásra
+    itemType: how-to-guide
+    url: service-self-service-signup-for-power-bi.md
+  - title: Együttműködési és tartalommegosztási módok
+    itemType: concept
+    url: service-how-to-collaborate-distribute-dashboards-reports.md
+conceptualContent:
+  items:
+  - title: 'A Power BI: Első lépések'
+    links:
+    - url: power-bi-overview.md
+      itemType: overview
+      text: A Power BI bemutatása
+    - url: desktop-what-is-desktop.md
+      itemType: overview
+      text: Mi az a Power BI Desktop?
+    - url: power-bi-service-overview.md
+      itemType: overview
+      text: Mi az a Power BI szolgáltatás?
+    footerLink:
+      url: fundamentals/index.yml
+      text: Több megjelenítése
+  - title: A Power BI felhasználók számára
+    links:
+    - url: consumer/end-user-consumer.md
+      itemType: get-started
+      text: A Power BI felhasználójának számítok?
+    - url: consumer/end-user-experience.md
+      itemType: get-started
+      text: Eligazodás a Power BI szolgáltatásban
+    - url: consumer/end-user-dashboards.md
+      itemType: concept
+      text: Mi az az irányítópult?
+    footerLink:
+      url: consumer/index.yml
+      text: Több megjelenítése
+  - title: Power BI felügyelete
+    links:
+    - url: service-admin-administering-power-bi-in-your-organization.md
+      itemType: overview
+      text: Mit jelent a Power BI-felügyelet?
+    - url: service-admin-licensing-organization.md
+      itemType: concept
+      text: Licencelés a cégnél
+    - url: service-admin-portal.md
+      itemType: concept
+      text: Felügyeleti portál
+    footerLink:
+      url: admin/index.yml
+      text: Több megjelenítése
+  - title: Fejlesztés a Power BI-ban
+    links:
+    - url: developer/what-can-you-do.md
+      itemType: overview
+      text: Fejlesztői lehetőségek
+    - url: power-bi-custom-visuals.md
+      itemType: overview
+      text: Fejlesztők és vizualizációk
+    - url: developer/embedding.md
+      itemType: overview
+      text: Beágyazott analitika
+    footerLink:
+      url: developer/index.yml
+      text: Több megjelenítése
+  - title: Csatlakozás adatokhoz
+    links:
+    - url: desktop-quickstart-connect-to-data.md
+      itemType: tutorial
+      text: Csatlakozás adatokhoz
+    - url: service-gateway-onprem.md
+      itemType: concept
+      text: Helyszíni adatátjárók
+    - url: refresh-data.md
+      itemType: concept
+      text: Adatfrissítés
+    footerLink:
+      url: connect-data/index.yml
+      text: Több megjelenítése
+  - title: Adatok átalakítása
+    links:
+    - url: desktop-analytics-pane.md
+      itemType: how-to-guide
+      text: Az Elemzés panel használata
+    - url: desktop-common-query-tasks.md
+      itemType: concept
+      text: Gyakori lekérdezési feladatok
+    - url: desktop-shape-and-combine-data.md
+      itemType: tutorial
+      text: Adatok formázása és egyesítése
+    footerLink:
+      url: transform-model/index.yml
+      text: Több megjelenítése
+  - title: Adatmodellezés
+    links:
+    - url: desktop-add-custom-column.md
+      itemType: how-to-guide
+      text: Egyéni oszlop hozzáadása
+    - url: desktop-tutorial-create-calculated-columns.md
+      itemType: tutorial
+      text: Számított oszlopok létrehozása
+    - url: desktop-create-and-manage-relationships.md
+      itemType: how-to-guide
+      text: Kapcsolatok létrehozása és kezelése
+    footerLink:
+      url: transform-model/index.yml
+      text: Több megjelenítése
+  - title: Jelentések és irányítópultok létrehozása
+    links:
+    - url: desktop-report-themes.md
+      itemType: concept
+      text: Jelentéstémák
+    - url: desktop-conditional-table-formatting.md
+      itemType: concept
+      text: Mik azok a többoldalas jelentések?
+    - url: paginated-reports/paginated-reports-report-builder-power-bi.md
+      itemType: how-to-guide
+      text: Irányítópult létrehozása
+    footerLink:
+      url: create-reports/index.yml
+      text: Több megjelenítése
+  - title: Közös használat és tartalommegosztás
+    links:
+    - url: service-share-dashboards.md
+      itemType: concept
+      text: Irányítópultok és jelentések megosztása
+    - url: service-create-the-new-workspaces.md
+      itemType: how-to-guide
+      text: Új munkaterületek létrehozása
+    - url: service-datasets-across-workspaces.md
+      itemType: concept
+      text: Megosztott adatkészletek – bevezetés
+    footerLink:
+      url: collaborate-share/index.yml
+      text: Több megjelenítése
+  - title: Integrálás termékek között
+    links:
+    - url: service-azure-and-power-bi.md
+      itemType: concept
+      text: Az Azure és a Power BI
+    - url: service-analyze-in-excel.md
+      itemType: concept
+      text: Elemzés az Excelben
+    - url: service-embed-report-spo.md
+      itemType: concept
+      text: Beágyazás SharePoint Online-ba
+    footerLink:
+      url: collaborate-share/index.yml
+      text: Több megjelenítése
+  - title: A Power BI mobilalkalmazásokban
+    links:
+    - url: consumer/mobile/mobile-apps-for-mobile-devices.md
+      itemType: get-started
+      text: Mik azok a mobilalkalmazások?
+    - url: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
+      itemType: quickstart
+      text: Irányítópultok és jelentések felfedezése
+    - url: consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      itemType: how-to-guide
+      text: Helyszíni jelentések megtekintése
+    footerLink:
+      url: consumer/mobile/index.yml
+      text: Több megjelenítése
+  - title: Nagyvállalati szektor
+    links:
+    - url: service-premium-what-is.md
+      itemType: overview
+      text: Mi az a Power BI Premium?
+    - url: service-admin-power-bi-security.md
+      itemType: concept
+      text: Biztonság
+    - url: admin/service-security-data-protection-overview.md
+      itemType: concept
+      text: Adatvédelem
+    footerLink:
+      url: admin/index.yml
+      text: Több megjelenítése
+  - title: Útmutató az ajánlott eljárásokhoz
+    links:
+    - url: guidance/overview.md
+      itemType: overview
+      text: Útmutató – áttekintés
+    - url: guidance/star-schema.md
+      itemType: concept
+      text: Csillagos sémák
+    - url: guidance/import-modeling-data-reduction.md
+      itemType: concept
+      text: Az adatmodell méretének csökkentése
+    footerLink:
+      url: guidance/index.yml
+      text: Több megjelenítése
+  - title: Információ
+    links:
+    - url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/
+      itemType: learn
+      text: Ismerje meg, hogy mire használható a Power BI
+    - url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/
+      itemType: learn
+      text: Adatok elemzése
+    - url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/
+      itemType: learn
+      text: Ismerkedés a létrehozással
+    footerLink:
+      url: guided-learning/index.yml
+      text: Több megjelenítése
+additionalContent:
+  sections:
+  - title: Kapcsolódó eszközök
+  - items:
+    - title: Power BI jelentéskészítő kiszolgáló
+      summary: Ismerje meg a Power BI jelentéskészítő kiszolgálót, amely helyszíni jelentéskészítő kiszolgáló olyan webes portállal, amelyen megjeleníthetők és kezelhetők a Power BI-jelentések, a lapszámozott jelentések és a főbb teljesítménymutatók (KPI-k).
+      url: report-server/index.yml
+    - title: Power BI REST API-k
+      summary: A Power BI REST API-k szolgáltatásvégpontokat biztosítanak a beágyazáshoz, a felügyelethez és a felhasználói erőforrásokhoz.
+      url: https://docs.microsoft.com/rest/api/power-bi/
+    - title: A Power Platform dokumentációja
+      summary: Megtudhatja, hogy a Power BI, a Power Apps, a Power Automate és a Power Virtual Agents hogyan erősítik egymást.
+      url: https://docs.microsoft.com/power-platform/

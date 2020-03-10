@@ -1,0 +1,87 @@
+### YamlMime:Landing
+title: A Power BI jelentéskészítő kiszolgáló dokumentációja
+summary: A Power BI jelentéskészítő kiszolgáló dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
+metadata:
+  title: A Power BI jelentéskészítő kiszolgáló dokumentációja
+  description: A Power BI jelentéskészítő kiszolgáló dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/03/2020
+  ms.openlocfilehash: f727b8832c29c4bfca448a03898620c183eb13a2
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: hu-HU
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924621"
+landingContent:
+- title: A Power BI jelentéskészítő kiszolgáló ismertetése
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mi a Power BI jelentéskészítő kiszolgáló?
+      url: get-started.md
+  - linkListType: concept
+    links:
+    - text: A jelentéskészítő kiszolgáló és szolgáltatás összehasonlítása
+      url: compare-report-server-service.md
+    - text: A Power BI jelentéskészítő kiszolgáló újdonságai
+      url: whats-new.md
+- title: Első lépések
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: A Power BI jelentéskészítő kiszolgáló áttekintése virtuális gépen
+      url: tutorial-explore-report-server-web-portal.md
+  - linkListType: concept
+    links:
+    - text: Rendszergazdai áttekintés
+      url: admin-handbook-overview.md
+    - text: Fejlesztői áttekintés
+      url: developer-handbook-overview.md
+  - linkListType: how-to-guide
+    links:
+    - text: A Power BI Desktop telepítése
+      url: install-powerbi-desktop.md
+    - text: A Jelentéskészítő telepítése
+      url: install-report-builder.md
+- title: Jelentéskészítő kiszolgáló rendszergazdáknak
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Hardver- és szoftverkövetelmények
+      url: system-requirements.md
+  - linkListType: how-to-guide
+    links:
+    - text: Jelentéskészítő kiszolgáló telepítése
+      url: install-report-server.md
+    - text: A jelentéskészítő kiszolgáló termékkulcsának megkeresése
+      url: find-product-key.md
+    - text: Telepített jelentéskészítő kiszolgáló migrálása
+      url: migrate-report-server.md
+    - text: A Kerberos konfigurálása
+      url: configure-kerberos-powerbi-reports.md
+- title: Jelentéskészítő kiszolgáló jelentéskészítőknek
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Power BI-jelentések ütemezett frissítése
+      url: scheduled-refresh.md
+    - text: Adatforrások a Power BI-jelentésekhez
+      url: data-sources.md
+    - text: Adatforrások többoldalas jelentésekhez
+      url: connect-data-sources.md
+  - linkListType: how-to-guide
+    links:
+    - text: Power BI-jelentés létrehozása
+      url: quickstart-create-powerbi-report.md
+    - text: Tartalom kezelése a webes portálon
+      url: getting-around.md
+    - text: Megosztott adathalmazok elérése OData-csatornákként
+      url: access-dataset-odata.md
+    - text: Sorszintű biztonság
+      url: row-level-security-report-server.md

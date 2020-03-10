@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Lapszámozott Power BI-jelentések – dokumentáció
+summary: A lapszámozott Power BI-jelentések dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
+metadata:
+  title: Lapszámozott Power BI-jelentések – dokumentáció
+  description: A lapszámozott Power BI-jelentések dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: 47a77e156c6b59440e0de500a3f2ab9dede01c85
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: hu-HU
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924598"
+landingContent:
+- title: A lapszámozott Power BI-jelentések ismertetése
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mik a lapszámozott Power BI-jelentések?
+      url: paginated-reports-report-builder-power-bi.md
+    - text: Jelentéskészítő a Power BI-ban
+      url: report-builder-power-bi.md
+- title: Első lépések
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Többoldalas jelentés készítése és feltöltése
+      url: paginated-reports-quickstart-aw.md
+  - linkListType: concept
+    links:
+    - text: Ismerkedés a Jelentéstervező nézettel
+      url: paginated-reports-report-design-view.md
+    - text: Lapszámozott jelentés tervezése
+      url: report-builder-planning-report.md
+- title: Csatlakozás adatokhoz
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Adatok a Jelentéskészítőben
+      url: report-builder-data.md
+    - text: Támogatott adatforrások
+      url: paginated-reports-data-sources.md
+  - linkListType: how-to-guide
+    links:
+    - text: Beágyazott adatforrás létrehozása
+      url: paginated-reports-embedded-data-source.md
+    - text: Beágyazott adathalmaz létrehozása
+      url: paginated-reports-create-embedded-dataset.md
+- title: Jelentések létrehozása
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Táblák, mátrixok és listák
+      url: report-builder-tables-matrices-lists.md
+  - linkListType: how-to-guide
+    links:
+    - text: Jelentés létrehozása egy megosztott adatkészletben
+      url: report-builder-shared-datasets.md
+    - text: Paraméterek létrehozása
+      url: paginated-reports-parameters.md
+- title: Jelentések pontosítása és közzététele
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Példák kifejezésekre
+      url: report-builder-expression-examples.md
+    - text: Jelentés oldalakra tördelése
+      url: paginated-reports-pagination.md
+  - linkListType: how-to-guide
+    links:
+    - text: Jelentésparaméter átadása URL-címben
+      url: report-builder-url-pass-parameters.md
+    - text: Többoldalas jelentés közzététele
+      url: paginated-reports-save-to-power-bi-service.md

@@ -1,0 +1,67 @@
+### YamlMime:Landing
+title: A Power BI-mobilalkalmazások dokumentációja
+summary: A Power BI dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
+metadata:
+  title: A Power BI-mobilalkalmazások dokumentációja
+  description: A Power BI dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/11/2020
+  ms.openlocfilehash: 96881ecb03132579643517679aaab3c87b7a977f
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: hu-HU
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78923908"
+landingContent:
+- title: A Power BI-mobilalkalmazások ismertetése
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mik azok a mobilalkalmazások?
+      url: mobile-apps-for-mobile-devices.md
+    - text: A mobilalkalmazások újdonságai
+      url: mobile-whats-new-in-the-mobile-apps.md
+    - text: A mobilalkalmazás kezdőlapja
+      url: mobile-apps-home-page.md
+- title: Első lépések
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Android – első lépések
+      url: mobile-android-app-get-started.md
+    - text: iOS – első lépések
+      url: mobile-iphone-app-get-started.md
+    - text: Windows 10 – első lépések
+      url: mobile-windows-10-phone-app-get-started.md
+  - linkListType: quickstart
+    links:
+    - text: Irányítópultok és jelentések megismerése
+      url: mobile-apps-quickstart-view-dashboard-report.md
+- title: Böngészés
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Kérdésfeltevés az adatokkal kapcsolatban
+      url: tutorial-mobile-apps-ios-qna.md
+  - linkListType: how-to-guide
+    links:
+    - text: Az adatok megtekintése offline
+      url: mobile-apps-offline-data.md
+    - text: Irányítópult vagy jelentés megosztása
+      url: mobile-share-dashboard-from-the-mobile-apps.md
+    - text: Adatriasztások beállítása
+      url: mobile-set-data-alerts-in-the-mobile-apps.md
+- title: Helyszíni jelentések
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Helyszíni jelentések és KPI-k megtekintése
+      url: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+    - text: Kapcsolódás helyszíni jelentésekhez OAuth segítségével
+      url: mobile-oauth-ssrs.md

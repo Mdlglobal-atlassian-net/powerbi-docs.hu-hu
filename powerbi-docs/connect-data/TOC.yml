@@ -1,0 +1,334 @@
+- name: Csatlakozás adatokhoz a Power BI-ban
+  href: index.yml
+  expanded: true
+  items:
+    - name: Áttekintés
+      expanded: true
+      items:
+        - name: Adatforrások a Power BI-ban
+          href: ../service-get-data.md
+        - name: Mi az a helyszíni adatátjáró?
+          href: ../service-gateway-onprem.md
+    - name: Rövid útmutatók
+      expanded: true
+      items:
+        - name: Csatlakozás adatokhoz a Power BI Desktopban
+          href: ../desktop-quickstart-connect-to-data.md
+    - name: Oktatóanyagok
+      items:
+        - name: Több adatforrás formázása és kombinálása
+          href: ../desktop-shape-and-combine-data.md
+        - name: Weboldal adatainak importálása és elemzése
+          href: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+        - name: Excelből és OData-csatornáról származó értékesítési adatok elemzése
+          href: ../desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
+        - name: Facebook-adatok elemzése
+          href: ../desktop-tutorial-facebook-analytics.md
+        - name: Sorszintű biztonság megvalósítása Analysis Services-beli táblázatos modellel
+          href: ../desktop-tutorial-row-level-security-onprem-ssas-tabular.md
+        - name: Első lépések a Power BI-ban
+          href: ../service-get-started.md
+        - name: Csatlakozás GitHub-mintához
+          href: ../service-tutorial-connect-to-github.md
+        - name: Az Elemzés az Excelben használata
+          href: ../service-tutorial-analyze-in-excel.md
+        - name: A Cognitive Services használata
+          href: ../service-tutorial-use-cognitive-services.md
+        - name: A Machine Learning integrálása
+          href: ../service-tutorial-invoke-machine-learning-model.md
+        - name: Machine Learning-modell létrehozása
+          href: ../service-tutorial-build-machine-learning-model.md
+        - name: Az SQL Server adatainak frissítése
+          href: ../service-gateway-sql-tutorial.md
+    - name: Fogalmak
+      items:
+        - name: Adatforrások a Power BI-hoz
+          href: ../power-bi-data-sources.md
+        - name: Power BI-adatforrások előfeltételei
+          href: ../desktop-data-source-prerequisites.md
+        - name: Többdimenziós modellek használata a Power BI-ban
+          href: ../desktop-default-member-multidimensional-models.md
+        - name: DirectQuery használata a Power BI-ban
+          href: ../desktop-directquery-about.md
+        - name: Átjárók
+          items:
+            - name: Útmutató adatátjáró üzembe helyezéséhez
+              href: ../service-gateway-deployment-guidance.md
+            - name: Helyszíni adatátjáró – GYIK
+              href: ../service-gateway-power-bi-faq.md
+    - name: Útmutatók
+      items:
+        - name: Kapcsolódás adatforrásokhoz
+          href: ../desktop-connect-to-data.md
+        - name: Csatlakozás adatokhoz
+          items:
+            - name: Kapcsolódás adatforrásokhoz
+              href: ../desktop-data-sources.md
+            - name: Jelentés létrehozása SharePoint-listán
+              href: ../desktop-sharepoint-online-list.md
+            - name: Csatlakozás a LinkedIn Sales Navigatorhöz
+              href: ../desktop-connect-linkedin-sales-navigator.md
+            - name: Weblap adatainak lekérdezése mintákkal
+              href: ../desktop-connect-to-web-by-example.md
+            - name: Kapcsolódás adatkészletekhez a Power BI szolgáltatásban
+              href: ../desktop-report-lifecycle-datasets.md
+            - name: Excel-munkafüzetek importálása
+              href: ../desktop-import-excel-workbooks.md
+            - name: Kapcsolódás az adatokhoz a Power BI Desktop általános interfészeinek használatával
+              href: ../desktop-connect-using-generic-interfaces.md
+            - name: Kapcsolódás PDF-fájlhoz
+              href: ../desktop-connect-pdf.md
+            - name: Kapcsolódás az Adobe Analyticshez
+              href: ../desktop-connect-adobe-analytics.md
+            - name: Kapcsolódás Oracle-adatbázishoz
+              href: ../desktop-connect-oracle-database.md
+            - name: Python
+              items:
+                - name: Python-szkriptek futtatása
+                  href: ../desktop-python-scripts.md
+                - name: A Python használata a Lekérdezésszerkesztőben
+                  href: ../desktop-python-in-query-editor.md
+                - name: Külső Python IDE használata
+                  href: ../desktop-python-ide.md
+                - name: Vizualizációk létrehozása a Python használatával
+                  href: ../desktop-python-visuals.md
+            - name: R-szkriptek futtatása
+              href: ../desktop-r-scripts.md
+            - name: Az R használata a lekérdezésszerkesztőben
+              href: ../desktop-r-in-query-editor.md
+            - name: Külső R IDE használata
+              href: ../desktop-r-ide.md
+            - name: Vizualizációk létrehozása R-csomagok használatával
+              href: ../service-r-packages-support.md
+            - name: Adatok közvetlen bevitele a Power BI Desktopba
+              href: ../desktop-enter-data-directly-into-desktop.md
+            - name: Kapcsolódás Excel-munkafüzetekhez
+              href: ../desktop-connect-excel.md
+            - name: Kapcsolódás többdimenziós SSAS-modellekhez
+              href: ../desktop-ssas-multidimensional.md
+            - name: Kapcsolódás CSV-fájlhoz
+              href: ../desktop-connect-csv.md
+            - name: Csatlakozás Google BigQuery-adatbázishoz
+              href: ../desktop-connect-bigquery.md
+            - name: Kapcsolódás Impala-adatbázishoz
+              href: ../desktop-connect-impala.md
+            - name: Kapcsolódás OData-csatornához
+              href: ../desktop-connect-odata.md
+            - name: Csatlakozás egy Amazon Redshift-adatbázishoz
+              href: ../desktop-connect-redshift.md
+            - name: Kapcsolódás weblapokhoz
+              href: ../desktop-connect-to-web.md
+            - name: Kapcsolódás egy Snowflake Computing-adattárházhoz
+              href: ../desktop-connect-snowflake.md
+            - name: Vizualizációk létrehozása az Azure Cost Management-összekötővel
+              href: ../desktop-connect-azure-cost-management.md
+            - name: Kapcsolódás Azure Consumption Insights-adatokhoz
+              href: ../desktop-connect-azure-consumption-insights.md
+            - name: Kapcsolódás SAP HANA adatbázisokhoz
+              href: ../desktop-sap-hana.md
+            - name: Az SAP HANA titkosításának engedélyezése
+              href: ../desktop-sap-hana-encryption.md
+            - name: Kapcsolódás az Analysis Services táblázatos adataihoz
+              href: ../desktop-analysis-services-tabular-data.md
+            - name: Kapcsolódás adatforrásokhoz a DirectQuery használatával
+              href: ../desktop-use-directquery.md
+            - name: Kapcsolódás az SAP Business Warehouse-hoz a DirectQuery használatával
+              href: ../desktop-directquery-sap-bw.md
+            - name: Kapcsolódás SAP HANA-adatforrásokhoz a DirectQuery használatával
+              href: ../desktop-directquery-sap-hana.md
+            - name: Hivatkozási integritás feltételezésének beállítás alkalmazása
+              href: ../desktop-assume-referential-integrity.md
+            - name: SAP BW-adatokhoz való hozzáférés az SAP BW-összekötővel
+              href: ../desktop-sap-bw-connector.md
+            - name: OneDrive Vállalati verzió hivatkozásainak használata
+              href: ../desktop-use-onedrive-business-links.md
+            - name: 'Külső szolgáltatás: A Facebook-összekötő használata'
+              href: ../service-facebook-connector.md
+            - name: 'Külső szolgáltatás: A Google Analytics-összekötő használata'
+              href: ../service-google-analytics-connector.md
+            - name: Kapcsolódás Project Online-adatokhoz a Power BI Desktopon keresztül
+              href: ../desktop-project-online-connect-to-data.md
+        - name: Adatok lekérdezése fájlból
+          items:
+            - name: Adatok beolvasása fájlokból
+              href: ../service-get-data-from-files.md
+            - name: Az Exceltől a lenyűgöző jelentésekig
+              href: ../service-from-excel-to-stunning-report.md
+            - name: Adatok elérése Excel-munkafüzetfájlokból
+              href: ../service-excel-workbook-files.md
+            - name: Adatok lekérése Power BI Desktop-fájlokból
+              href: ../service-desktop-files.md
+            - name: Paraméterek szerkesztése
+              href: ../service-parameters.md
+            - name: Adatok lekérdezése vesszővel tagolt (.csv) fájlból
+              href: ../service-comma-separated-value-files.md
+            - name: Valós idejű streamelés a Power BI-ban
+              href: ../service-real-time-streaming.md
+            - name: Közzététel Excel-ből a Power BI-ba
+              href: ../service-publish-from-excel.md
+            - name: Excel-munkafüzet méretének csökkentése
+              href: ../reduce-the-size-of-an-excel-workbook.md
+        - name: Adatok beolvasása megosztott adatkészletekből
+          items:
+            - name: Adathalmazok használata több munkaterülettel
+              href: ../service-datasets-across-workspaces.md
+            - name: Adatkészletek megosztása (előzetes verzió)
+              href: ../service-datasets-share.md
+            - name: Megosztott adathalmazokra vonatkozó összeállítási engedélyek
+              href: ../service-datasets-build-permissions.md
+            - name: Adatkészleteken alapuló jelentések létrehozása
+              href: ../service-datasets-discover-across-workspaces.md
+            - name: Adatkészleteken alapuló jelentések másolása
+              href: ../service-datasets-copy-reports.md
+            - name: Adatkészletek használatának szabályozása
+              href: ../service-datasets-admin-across-workspaces.md
+        - name: Adatkészletek támogatása
+          items:
+            - name: Adatkészletek előléptetése
+              href: ../service-datasets-promote.md
+            - name: Adatkészletek tanúsítása
+              href: ../service-datasets-certify.md
+        - name: Adatok beolvasása adatbázisokból
+          items:
+            - name: Az Azure és a Power BI
+              href: ../service-azure-and-power-bi.md
+            - name: A Power BI és az Azure kimenő forgalma
+              href: ../service-azure-egress-power-bi.md
+            - name: Az Azure SQL Data Warehouse DirectQueryvel
+              href: ../service-azure-sql-data-warehouse-with-direct-connect.md
+            - name: Az Azure SQL Database DirectQueryvel
+              href: ../service-azure-sql-database-with-direct-connect.md
+            - name: Az SQL Server Analysis Services élő adatai a Power BI-ban
+              href: ../sql-server-analysis-services-tabular-data.md
+        - name: Adatok frissítése
+          items:
+            - name: Adatfrissítés a Power BI-ban
+              href: ../refresh-data.md
+            - name: Ütemezett frissítés beállítása
+              href: ../refresh-scheduled-refresh.md
+            - name: A növekményes frissítés konfigurálása
+              href: ../service-premium-incremental-refresh.md
+            - name: Helyi Power BI Desktop-fájlból létrehozott adatkészlet frissítése
+              href: ../refresh-desktop-file-local-drive.md
+            - name: Felhőbeli Power BI Desktop-fájlból létrehozott adatkészlet frissítése
+              href: ../refresh-desktop-file-onedrive.md
+            - name: Helyi Excel-munkafüzetből létrehozott adatkészlet frissítése
+              href: ../refresh-excel-file-local-drive.md
+            - name: Felhőbeli Excel-munkafüzetből létrehozott adatkészlet frissítése
+              href: ../refresh-excel-file-onedrive.md
+            - name: CSV-fájlból létrehozott adatkészlet frissítése a OneDrive-ban
+              href: ../refresh-csv-file-onedrive.md
+            - name: Lekérdezések gyorsítótárazása a Power BI Premiumban
+              href: ../power-bi-query-caching.md
+        - name: Sablonalkalmazások
+          items:
+            - name: Sablonalkalmazások áttekintése
+              href: ../service-template-apps-overview.md
+            - name: Sablonalkalmazások létrehozása
+              href: ../service-template-apps-create.md
+            - name: Sablonalkalmazások létrehozásával kapcsolatos tippek
+              href: ../service-template-apps-tips.md
+            - name: Sablonalkalmazások telepítése és terjesztése
+              href: ../service-template-apps-install-distribute.md
+            - name: 'Power BI-sablonalkalmazás frissítése, törlése és kivonása'
+              href: ../service-template-update-delete-extract.md
+            - name: Sablonalkalmazás-minták
+              href: ../service-template-apps-samples.md
+        - name: Hibaelhárítás
+          items:
+            - name: Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása
+              href: ../refresh-troubleshooting-refresh-scenarios.md
+            - name: Nem támogatott adatforrás frissítési hibáinak elhárítása
+              href: ../service-admin-troubleshoot-unsupported-data-source-for-refresh.md
+            - name: Az Azure SQL Database ütemezett frissítési hibáinak elhárítása
+              href: ../service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
+            - name: Az Elemzés az Excelben hibaelhárítása
+              href: ../desktop-troubleshooting-analyze-in-excel.md
+            - name: 'Hiba: Nem található adat az Excel-munkafüzetben'
+              href: ../service-admin-troubleshoot-excel-workbook-data.md
+            - name: A Xero tartalomcsomag hitelesítő adatainak frissítése frissítési hiba esetén
+              href: ../service-refresh-xero-credentials.md
+        - name: Kapcsolódás szolgáltatásokhoz
+          items:
+            - name: Csatlakozás a szolgáltatásokhoz alkalmazásokkal
+              href: ../service-connect-to-services.md
+            - name: GitHub
+              href: ../service-connect-to-github.md
+            - name: Microsoft fenntarthatósági kalkulátor
+              href: ../service-connect-to-microsoft-sustainability-calculator.md
+            - name: Office365Mon
+              href: ../service-connect-to-office365mon.md
+            - name: Project Online
+              href: ../service-connect-to-project-online.md
+            - name: QuickBooks Online
+              href: ../service-connect-to-quickbooks-online.md
+            - name: Salesforce
+              href: ../service-connect-to-salesforce.md
+            - name: Smartsheet
+              href: ../service-connect-to-smartsheet.md
+            - name: Xero
+              href: ../service-connect-to-xero.md
+            - name: Zendesk
+              href: ../service-connect-to-zendesk.md
+        - name: Átjárók
+          items:
+            - name: Helyszíni adatátjáró – részletes
+              href: ../service-gateway-onprem-indepth.md
+            - name: Helyszíni adatátjáró (személyes mód)
+              href: ../service-gateway-personal-mode.md
+            - name: Átjárók adatforrásainak kezelése
+              items:
+                - name: Adatforrások kezelése
+                  href: ../service-gateway-data-sources.md
+                - name: A vállalati adatforrások kezelése – Analysis Services
+                  href: ../service-gateway-enterprise-manage-ssas.md
+                - name: A vállalati adatforrások kezelése – SAP HANA
+                  href: ../service-gateway-enterprise-manage-sap.md
+                - name: A vállalati adatforrások kezelése – SQL
+                  href: ../service-gateway-enterprise-manage-sql.md
+                - name: A vállalati adatforrások kezelése – Oracle
+                  href: ../service-gateway-onprem-manage-oracle.md
+                - name: A vállalati adatforrások kezelése – importálás és ütemezett frissítés
+                  href: ../service-gateway-enterprise-manage-scheduled-refresh.md
+                - name: Helyszíni és felhőbeli adatforrások egyesítése
+                  href: ../service-gateway-mashup-on-premises-cloud.md
+            - name: Az egyszeri bejelentkezés (SSO) engedélyezése
+              items:
+                - name: Az SSO áttekintése
+                  href: ../service-gateway-sso-overview.md
+                - name: Kerberos-alapú egyszeri bejelentkezés
+                  items:
+                    - name: Kerberos-alapú egyszeri bejelentkezés konfigurálása
+                      href: ../service-gateway-sso-kerberos.md
+                    - name: Adatforrás-alapú konfiguráció
+                      items:
+                        - name: SAP HANA
+                          href: ../service-gateway-sso-kerberos-sap-hana.md
+                        - name: SAP BW - sapcrypto.dll (Common Crypto kódtár)
+                          href: ../service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
+                        - name: SAP BW - gx64krb5.dll
+                          href: ../service-gateway-sso-kerberos-sap-bw-gx64krb.md
+                - name: SAML-alapú egyszeri bejelentkezés
+                  href: ../service-gateway-sso-saml.md
+            - name: Az átjáró hibáinak elhárítása
+              href: ../service-gateway-onprem-tshoot.md
+            - name: A privát átjáró hibáinak elhárítása
+              href: ../service-admin-troubleshooting-power-bi-personal-gateway.md
+            - name: Egyéni összekötők használata
+              href: ../service-gateway-custom-connectors.md
+        - name: Hibaelhárítás
+          items:
+            - name: Hibaelhárítás az Access és az Excel .xls-fájljainak importálásánál
+              href: ../desktop-access-database-errors.md
+            - name: Power BI Desktop megnyitásának hibaelhárítása
+              href: ../desktop-error-launching-desktop.md
+            - name: DirectQuery-modellek fejlesztése – hibaelhárítás
+              href: ../desktop-directquery-troubleshoot.md
+    - name: Hivatkozás
+      items:
+        - name: Adattípusok a Power BI Desktopban
+          href: ../desktop-data-types.md
+        - name: Az összekötő bővíthetősége
+          href: ../desktop-connector-extensibility.md
+        - name: Megbízható harmadik féltől származó összekötők
+          href: ../desktop-trusted-third-party-connectors.md

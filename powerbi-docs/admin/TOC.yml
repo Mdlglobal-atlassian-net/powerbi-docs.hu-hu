@@ -1,4 +1,4 @@
-- name: A Power BI rendszergazdai dokumentációja
+- name: Power BI rendszergazdák és nagyvállalatok számára
   href: index.yml
   expanded: true
   items:
@@ -9,8 +9,8 @@
           href: ../service-admin-administering-power-bi-in-your-organization.md
         - name: Hol található a bérlőm?
           href: ../service-admin-where-is-my-tenant-located.md
-        - name: Migrate to Go helyi német régiók
-          href: service-admin-migrate-data-germany.md
+        - name: Mi az a Power BI Premium?
+          href: ../service-premium-what-is.md
     - name: Fogalmak
       expanded: true
       items:
@@ -20,6 +20,20 @@
           href: ../service-admin-faq.md
         - name: Magas rendelkezésre állás és feladatátvétel – GYIK
           href: ../service-admin-failover.md
+        - name: Migrate to Go helyi német régiók
+          href: service-admin-migrate-data-germany.md
+        - name: Gyakori kérdések a Germany Cloud-ügyfelek számára
+          href: ../service-govde-faq.md
+        - name: Power BI Premium
+          items:
+            - name: Prémium szintű kapacitások kezelése
+              href: ../service-premium-capacity-manage.md
+            - name: Prémium szintű kapacitások optimalizálása
+              href: ../service-premium-capacity-optimize.md
+            - name: Prémium szintű kapacitások forgatókönyvei
+              href: ../service-premium-capacity-scenarios.md
+            - name: Power BI Premium – gyakori kérdések
+              href: ../service-premium-faq.md
     - name: Útmutató
       items:
         - name: Licencelés és regisztráció
@@ -28,7 +42,11 @@
               href: ../service-admin-licensing-organization.md
             - name: A Power BI Pro megvásárlása
               href: ../service-admin-purchasing-power-bi-pro.md
-            - name: Regisztráció a Microsoft 365 próbaverzióval
+            - name: Power BI az USA kormányzati szervei számára
+              href: ../service-govus-overview.md
+            - name: USA kormányzati szerv regisztrálása
+              href: ../service-govus-signup.md
+            - name: Regisztráció egy Microsoft 365-próbaverzióval
               href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
             - name: Power BI hozzáadása Microsoft 365 partnerrel
               href: ../service-admin-syndication-partner.md
@@ -44,6 +62,8 @@
           href: ../service-admin-closing-your-account.md
         - name: Az Azure AD B2B használata
           href: ../service-admin-azure-ad-b2b.md
+        - name: A Power BI Desktop bejelentkezésének kezelése – űrlap
+          href: ../desktop-admin-sign-in-form.md
         - name: Adatvédelem
           items:
             - name: Az adatvédelem áttekintése
@@ -58,6 +78,30 @@
           href: ../service-admin-rls.md
         - name: Mobilalkalmazások konfigurálása az Intune-nal
           href: ../service-admin-mobile-intune.md
+        - name: Power BI Premium
+          items:
+            - name: A Power BI Premium megvásárlása
+              href: ../service-admin-premium-purchase.md
+            - name: Kapacitások konfigurálása és kezelése
+              href: ../service-admin-premium-manage.md
+            - name: Számítási feladatok konfigurálása
+              href: ../service-admin-premium-workloads.md
+            - name: Kapacitások monitorozása az alkalmazással
+              href: ../service-admin-premium-monitor-capacity.md
+            - name: A prémium szintű számítási feladatok metrikáinak figyelése
+              href: ../service-premium-metrics-app.md
+            - name: Kapacitások monitorozása a felügyeleti portálon
+              href: ../service-admin-premium-monitor-portal.md
+            - name: Nagyméretű modellek konfigurálása (előzetes verzió)
+              href: ../service-premium-large-models.md
+            - name: Multi-Geo konfigurálása
+              href: ../service-admin-premium-multi-geo.md
+            - name: A saját titkosítási kulcsok használata
+              href: ../service-encryption-byok.md
+            - name: Prémium szintű kapacitás újraindítása
+              href: ../service-admin-premium-restart.md
+            - name: Csatlakozás adatkészletekhez ügyfélalkalmazásokkal és ügyféleszközökkel
+              href: ../service-premium-connect-tools.md
     - name: Hivatkozás
       items:
         - name: 'PowerShell, REST API-k és .NET SDK'
@@ -73,3 +117,23 @@
           href: ../service-admin-governance.md
         - name: A Power BI és a biztonság
           href: ../service-admin-power-bi-security.md
+        - name: Adatvédelmi szintek
+          href: ../desktop-privacy-levels.md
+    - name: Hibaelhárítás
+      items:
+        - name: Nem tud bejelentkezni?
+          href: ../power-bi-cannot-sign-in.md
+        - name: A Power BI támogatási lehetőségei
+          href: ../service-support-options.md
+        - name: Szolgáltatáskimaradásokkal kapcsolatos értesítések
+          href: ../service-interruption-notifications.md
+        - name: Elfelejtette a Power BI-hoz használatos jelszavát?
+          href: ../service-admin-forgot-your-password.md
+        - name: További diagnosztikai adatok gyűjtése a Power BI számára
+          href: ../service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+        - name: Másodlagos e-mail-cím a Power BI-hoz
+          href: ../service-admin-alternate-email-address-for-power-bi.md
+        - name: Ugyanazon bejelentkezési fiók használata a Power BI-hoz és az Azure-hoz
+          href: ../service-admin-how-to-use-the-same-account-as-azure.md
+        - name: Dedikált Office 365 – ismert problémák
+          href: ../service-admin-office-365-dedicated-known-issues.md

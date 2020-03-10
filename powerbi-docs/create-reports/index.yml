@@ -1,0 +1,121 @@
+### YamlMime:Landing
+title: Jelentések és irányítópultok létrehozása a Power BI-ban – dokumentáció
+summary: A Power BI dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
+metadata:
+  title: Jelentések és irányítópultok létrehozása a Power BI-ban – dokumentáció
+  description: A Power BI dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: 592a7bff1f511158de929ce0a225f26558a1997b
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: hu-HU
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924184"
+landingContent:
+- title: Első lépések
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: A frissített menüszalag használata
+      url: ../desktop-ribbon.md
+    - text: Kisegítő lehetőségek áttekintése
+      url: ../desktop-accessibility-overview.md
+    - text: Mintaadatok letöltése
+      url: ../sample-datasets.md
+  - linkListType: tutorial
+    links:
+    - text: Mintacsomagok importálása és megnyitása
+      url: ../sample-tutorial-connect-to-the-samples.md
+  - linkListType: concept
+    links:
+    - text: Jelentés nézet
+      url: ../desktop-report-view.md
+- title: Vizualizációk
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vizualizációk áttekintése
+      url: ../visuals/power-bi-report-visualizations.md
+    - text: Vizualizációtípusok
+      url: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+  - linkListType: how-to-guide
+    links:
+    - text: Tippek és trükkök a térképekhez
+      url: ../visuals/power-bi-map-tips-and-tricks.md
+    - text: Adatok exportálása vizualizációból
+      url: ../visuals/power-bi-visualization-export-data.md
+    - text: Szeletelők
+      url: ../visuals/power-bi-visualization-slicers.md
+- title: Jelentéstervezés
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Jelentéstémák
+      url: ../desktop-report-themes.md
+    - text: Szövegdobozok és alakzatok
+      url: ../power-bi-reports-add-text-and-shapes.md
+  - linkListType: how-to-guide
+    links:
+    - text: Táblázat feltételes formázása
+      url: ../desktop-conditional-table-formatting.md
+    - text: Csoportosítás és tárolás használata
+      url: ../desktop-grouping-and-binning.md
+    - text: Könyvjelzők hozzáadása jelentésekhez
+      url: ../desktop-bookmarks.md
+- title: Jelentésinterakciók tervezése
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Jelentés nézet a Power BI Desktopban
+      url: ../desktop-report-view.md
+  - linkListType: how-to-guide
+    links:
+    - text: Adatelemzés a Q&A-vel
+      url: ../power-bi-tutorial-q-and-a.md
+    - text: Részletezés használata jelentésekben
+      url: ../desktop-drillthrough.md
+    - text: Könyvjelzők hozzáadása jelentésekhez
+      url: ../desktop-bookmarks.md
+    - text: Szűrők hozzáadása jelentésekhez
+      url: ../power-bi-report-filter.md
+- title: Többoldalas Power BI-jelentések
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mik a lapszámozott Power BI-jelentések?
+      url: ../paginated-reports/paginated-reports-report-builder-power-bi.md
+    - text: Jelentéskészítő a Power BI-ban
+      url: ../paginated-reports/report-builder-power-bi.md
+  - linkListType: concept
+    links:
+    - text: Példák kifejezésekre
+      url: ../paginated-reports/report-builder-expression-examples.md
+    - text: Táblák, mátrixok és listák
+      url: ../paginated-reports/report-builder-tables-matrices-lists.md
+  - linkListType: how-to-guide
+    links:
+    - text: Jelentés létrehozása egy megosztott adatkészletben
+      url: ../paginated-reports/report-builder-shared-datasets.md
+    - text: Paraméterek létrehozása
+      url: ../paginated-reports/paginated-reports-parameters.md
+- title: Irányítópultok
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Az irányítópult bemutatása
+      url: ../service-dashboards.md
+  - linkListType: how-to-guide
+    links:
+    - text: Irányítópult létrehozása
+      url: ../service-dashboard-create.md
+    - text: Csempe rögzítése egy irányítópulton
+      url: ../service-share-dashboards.md
+    - text: Képek vagy videó hozzáadása egy irányítópulthoz
+      url: ../service-dashboard-add-widget.md

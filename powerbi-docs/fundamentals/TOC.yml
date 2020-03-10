@@ -1,0 +1,55 @@
+- name: A Power BI első lépései – dokumentáció
+  href: index.yml
+  expanded: true
+  items:
+    - name: Áttekintés
+      expanded: true
+      items:
+        - name: A Power BI bemutatása
+          href: ../power-bi-overview.md
+        - name: Mi az a Power BI Desktop?
+          href: ../desktop-what-is-desktop.md
+        - name: Mi az a Power BI szolgáltatás?
+          href: ../power-bi-service-overview.md
+        - name: A Power BI Desktop és a szolgáltatás összehasonlítása
+          href: ../service-service-vs-desktop.md
+    - name: Fogalmak
+      items:
+        - name: Újdonságok a Power BI Desktop legújabb frissítésében
+          href: ../desktop-latest-update.md
+        - name: A Power BI szolgáltatás újdonságai
+          href: ../service-whats-new.md
+        - name: A Power BI szolgáltatás ismertetése
+          href: ../service-basic-concepts.md
+        - name: 10 tanács segítségkéréshez
+          href: ../service-tips-for-finding-help.md
+        - name: Licencelés
+          items:
+            - name: Regisztráció a Power BI-ra
+              href: ../service-self-service-signup-for-power-bi.md
+            - name: Funkciók licenctípusok szerint
+              href: ../service-features-license-type.md
+    - name: Útmutatók
+      items:
+        - name: A Power BI Desktop beszerzése
+          href: ../desktop-get-the-desktop.md
+        - name: Első lépések a Power BI Desktopban
+          href: ../desktop-getting-started.md
+    - name: Hivatkozás
+      items:
+        - name: Támogatott nyelvek és országok/régiók
+          href: ../supported-languages-countries-regions.md
+        - name: Támogatott böngészők
+          href: ../power-bi-browsers.md
+    - name: Erőforrások
+      items:
+        - name: Videók
+          href: ../videos.md
+        - name: Webináriumok
+          href: ../webinars.md
+        - name: Power BI Desktop videók
+          href: ../desktop-videos.md
+        - name: A Power BI Desktop frissítési archívuma
+          href: ../desktop-latest-update-archive.md
+        - name: Power BI Desktop Mosoly küldése – Adatvédelmi nyilatkozat
+          href: ../desktop-send-smile-privacy-statement.md

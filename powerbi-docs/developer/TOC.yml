@@ -93,12 +93,18 @@
               href: visuals/localization.md
             - name: Eszközök Power BI-vizualizációkhoz
               items:
+                - name: Külső kódtárak hozzáadása
+                  href: visuals/adding-external-libraries.md
                 - name: Interaktivitási eszközök
                   href: visuals/utils-interactivity-selections.md
                 - name: Formázási eszközök
                   href: visuals/utils-formatting.md
+                - name: Adatnézeti eszközök
+                  href: visuals/utils-dataview.md
                 - name: Diagrameszközök
                   href: visuals/utils-chart.md
+                - name: Színeszközök
+                  href: visuals/utils-color.md
                 - name: SVG-eszközök
                   href: visuals/utils-svg.md
                 - name: Írási eszközök

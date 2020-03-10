@@ -1,0 +1,71 @@
+### YamlMime:Landing
+title: Csatlakozás adatokhoz a Power BI-ban – dokumentáció
+summary: A Power BI dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
+metadata:
+  title: Csatlakozás adatokhoz a Power BI-ban – dokumentáció
+  description: A Power BI dokumentációjában szakértőktől juthat információhoz, és saját szükségleteihez illeszkedő válaszokat kaphat függetlenül attól, hogy hogyan használja a Power BI-t.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: a46c459c61f85b2f8cb4885f93c1893724485dff
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: hu-HU
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924138"
+landingContent:
+- title: Csatlakozás adatokhoz a Power BI-ban
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Adatforrások
+      url: ../desktop-data-sources.md
+    - text: Adatnézet a Power BI Desktopban
+      url: ../desktop-data-view.md
+  - linkListType: tutorial
+    links:
+    - text: Adatok importálása egy weblapról
+      url: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+- title: Átjárók
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Helyszíni adatátjárók
+      url: ../service-gateway-onprem.md
+  - linkListType: tutorial
+    links:
+    - text: Csatlakozás helyszíni SQL Server-adatokhoz
+      url: ../service-gateway-sql-tutorial.md
+  - linkListType: how-to-guide
+    links:
+    - text: Privát átjárók használata
+      url: ../service-gateway-personal-mode.md
+- title: Sablonalkalmazások
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mik a sablonalkalmazások?
+      url: ../service-template-apps-overview.md
+  - linkListType: concept
+    links:
+    - text: Sablonalkalmazások létrehozása
+      url: ../service-template-apps-create.md
+    - text: Sablonalkalmazások terjesztése a szervezetnél
+      url: ../service-template-apps-install-distribute.md
+- title: Adatok frissítése
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Adatfrissítés
+      url: ../refresh-data.md
+    - text: Növekményes frissítés a Power BI Premium szolgáltatásban
+      url: ../service-premium-incremental-refresh.md
+  - linkListType: how-to-guide
+    links:
+    - text: Ütemezett frissítés beállítása
+      url: ../refresh-scheduled-refresh.md
