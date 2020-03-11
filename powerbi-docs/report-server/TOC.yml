@@ -1,4 +1,5 @@
-- name: Power BI jelentéskészítő kiszolgáló
+- name: A Power BI jelentéskészítő kiszolgáló dokumentációja
+  href: index.yml
   expanded: true
   items:
     - name: Áttekintés
