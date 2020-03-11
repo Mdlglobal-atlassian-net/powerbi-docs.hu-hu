@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/04/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 3838c0b487be7faace2e58dd706aa7d172841215
-ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
+ms.openlocfilehash: 049b6ac14c6d35d68815eac32520a4eaa654ad42
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78290498"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920741"
 ---
 # <a name="when-to-use-paginated-reports-in-power-bi"></a>Többoldalas jelentések használata a Power BI-ban
 
-Ez a cikk a Power BI-hoz jelentéseket tervező jelentéskészítőknek szól. Javaslatokat kínál annak eldöntéséhez, hogy mikor érdemes [többoldalas Power BI-jelentést](../paginated-reports-report-builder-power-bi.md) készíteni.
+Ez a cikk a Power BI-hoz jelentéseket tervező jelentéskészítőknek szól. Javaslatokat kínál annak eldöntéséhez, hogy mikor érdemes [többoldalas Power BI-jelentést](../paginated-reports/paginated-reports-report-builder-power-bi.md) készíteni.
 
 > [!NOTE]
 > A többoldalas Power BI-jelentések közzétételéhez Power BI Premium-előfizetés szükséges. A jelentések csak akkor lesznek renderelve, ha olyan dedikált kapacitásban lévő munkaterületen vannak, amelyen [engedélyezve van a Többoldalas jelentések számítási feladat](../service-admin-premium-workloads.md#paginated-reports).
@@ -49,7 +49,7 @@ Sok olyan helyzet van, amelyben nyomós érvek szólnak egy többoldalas Power B
 - **Precíz elrendezés**: Részletesen megformázott, képpont-szinten pontos elrendezéseket tervezhet, a centiméter törtrészeiben konfigurált pontos méretezéssel és elhelyezéssel.
 - **Dinamikus elrendezés**: Rendkívül rugalmas elrendezéseket hozhat létre a VB.NET-kifejezéseket használó számos jelentéstulajdonság beállításával. A kifejezések a .NET-keretrendszer sok alapvető kódtárához hozzáférnek.
 - **Renderelés-specifikus elrendezés**: Kifejezések használatával a jelentés elrendezése az alkalmazott renderelési formátumnak megfelelően módosítható. Tervezhet például olyan jelentést, amely letiltja a láthatóság ki-bekapcsolását (lefúrás vagy felhatolás megvalósításához), ha nem interaktív formátumban, például PDF-fájlként van renderelve.
-- **Natív lekérdezések**: Nem kell előre Power BI-adathalmazt fejlesztenie. Bármely [támogatott adatforráshoz](../paginated-reports-data-sources.md) írhat natív lekérdezéseket (vagy használhat tárolt eljárásokat). A lekérdezések paraméterezéseket is tartalmazhatnak.
+- **Natív lekérdezések**: Nem kell előre Power BI-adathalmazt fejlesztenie. Bármely [támogatott adatforráshoz](../paginated-reports/paginated-reports-data-sources.md) írhat natív lekérdezéseket (vagy használhat tárolt eljárásokat). A lekérdezések paraméterezéseket is tartalmazhatnak.
 - **Grafikus lekérdezéstervezők**: A Power BI jelentéskészítőjéhez grafikus lekérdezéstervezők is tartoznak, amelyek segítenek az adathalmazok lekérdezéseinek megírásában és tesztelésében.
 - **Statikus adathalmazok**: Definiálhat egy adathalmazt, és az adatokat közvetlenül a jelentés definíciójában adhatja meg. Ez a képesség különösen hasznos bemutatók támogatásához, vagy megvalósíthatósági vizsgálatok elvégzéséhez.
 - **Adatintegráció**: Kombinálhatja a különböző adatforrásokból vagy statikus adathalmazokból származó adatokat. Ezt VB.NET-kifejezéseket használó egyéni mezők létrehozásával teheti meg.
@@ -70,7 +70,7 @@ Sok olyan helyzet van, amelyben nyomós érvek szólnak egy többoldalas Power B
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Mik a lapszámozott jelentések a Power BI Premiumban?](../paginated-reports-report-builder-power-bi.md)
+- [Mik a lapszámozott jelentések a Power BI Premiumban?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [SQL Server Reporting Services-jelentések migrálása a Power BI-ba](migrate-ssrs-reports-to-power-bi.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

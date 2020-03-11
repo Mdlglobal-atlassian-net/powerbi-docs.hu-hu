@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 2c984abaec40028fb01affa8ff7bf0bf87cdd616
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: 007ff786fcee5d2a7b7237ad578a202cfcf25b69
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260876"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401928"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Nagyméretű modellek a Power BI Premiumban (előzetes verzió)
 
@@ -123,7 +123,7 @@ Vegye figyelembe az alábbi korlátozásokat a nagyméretű modellek használata
 
 ## <a name="availability-in-regions"></a>Elérhetőség az egyes régiókban
 
-A Power BI nagy méretű modelljei csak az [Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers) tárterület-szolgáltatást is támogató egyes Azure-régiókban használhatók.
+A Power BI nagy méretű modelljei csak az [Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers) tárterület-szolgáltatást is támogató egyes Azure-régiókban használhatók.
 
 Az alábbi lista azokat a régiókat tartalmazza, amelyekben használhatók a Power BI nagy méretű modelljei. A listán nem szereplő régiókban nem használhatók nagy méretű modellek:
 
@@ -156,7 +156,7 @@ Az alábbi lista azokat a régiókat tartalmazza, amelyekben használhatók a Po
 
 Az alábbi hivatkozásokra kattintva hasznos információkat kaphat a nagy méretű modellek használatához:
 
-* [Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers)
+* [Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers)
 * [Multi-Geo-támogatás konfigurálása a Power BI Premiumhoz](service-admin-premium-multi-geo.md)
 * [Saját titkosítási kulcsok használata a Power BI-hoz](service-encryption-byok.md)
 * [A kapacitások működése](service-premium-what-is.md#how-capacities-function)

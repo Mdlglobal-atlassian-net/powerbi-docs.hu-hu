@@ -8,23 +8,23 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 76d1631b95c30d5ae56ced5d64e5174f6f9db759
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 349459b95a815a52665e50687554f81f90a9c81b
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76041865"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920841"
 ---
 # <a name="avoid-blank-pages-when-printing-paginated-reports"></a>Ne legyenek üres lapok a többoldalas jelentések nyomtatásakor
 
-Ez a cikk a [többoldalas](../paginated-reports-report-builder-power-bi.md) Power BI-jelentéseket megtervező jelentéskészítők számára készült. Javaslatokkal segíti azt, hogy elkerülhesse az üres oldalakat, amikor a jelentést rögzített formátumba, például PDF- vagy Microsoft Word-fájlba exportálja vagy kinyomtatja.
+Ez a cikk a [többoldalas](../paginated-reports/paginated-reports-report-builder-power-bi.md) Power BI-jelentéseket megtervező jelentéskészítők számára készült. Javaslatokkal segíti azt, hogy elkerülhesse az üres oldalakat, amikor a jelentést rögzített formátumba, például PDF- vagy Microsoft Word-fájlba exportálja vagy kinyomtatja.
 
 ## <a name="page-setup"></a>Oldalbeállítás
 
 A jelentés oldalméret tulajdonsága határozza meg az oldal tájolását, a dimenziókat és a margókat. Ezeket a jelentéstulajdonságokat az alábbi módon érheti el:
 
 - A jelentés **Tulajdonságok oldalának** használatával: Kattintson a jobb gombbal a jelentésvásznon kívüli sötétszürke területre, majd válassza a _Jelentés tulajdonságai_lehetőséget.
-- A [**Tulajdonságok** panel](../paginated-reports-report-design-view.md#4-properties-pane) használatával: Kattintson a jelentésvásznon kívüli sötétszürke területre, majd válassza ki a jelentés objektumot. Ügyeljen rá, hogy a **Tulajdonságok** panel meg legyen nyitva.
+- A [**Tulajdonságok** panel](../paginated-reports/paginated-reports-report-design-view.md#4-properties-pane) használatával: Kattintson a jelentésvásznon kívüli sötétszürke területre, majd válassza ki a jelentés objektumot. Ügyeljen rá, hogy a **Tulajdonságok** panel meg legyen nyitva.
 
 A **Tulajdonságok oldal** **Oldalbeállítás** oldala egy könnyen használható felületet biztosít, amelyen megtekinthetők és módosíthatók az oldalbeállítás tulajdonságai.
 
@@ -91,7 +91,7 @@ Végül pedig ha a jelentést papírra nyomtatja, ellenőrizze, hogy a nyomtató
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Mik a lapszámozott jelentések a Power BI Premiumban?](../paginated-reports-report-builder-power-bi.md)
-- [Tördelési mód többoldalas Power BI-jelentésekben](../paginated-reports-pagination.md)
+- [Mik a lapszámozott jelentések a Power BI Premiumban?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+- [Tördelési mód többoldalas Power BI-jelentésekben](../paginated-reports/paginated-reports-pagination.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com)

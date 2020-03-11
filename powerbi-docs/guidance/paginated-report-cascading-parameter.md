@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 2a8dca43077fe12e4903585e3926cc67fe864136
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 90f501b257313c48cbef13517747ff83cd9ea9d1
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76162411"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920787"
 ---
 # <a name="use-cascading-parameters-in-paginated-reports"></a>Egymásra épülő paraméterek használata lapszámozott jelentésekben
 
-Ez a cikk a [lapszámozott](../paginated-reports-report-builder-power-bi.md) Power BI-jelentéseket megtervező jelentéskészítők számára készült. Egymásra épülő paraméterek tervezéséhez nyújt forgatókönyveket. Az egymásra épülő paraméterek függőségekkel rendelkező jelentésparaméterek. Amikor egy jelentésfelhasználó kiválaszt egy paraméterértéket (vagy -értékeket), azzal elérhető értékeket állíthat be egy másik paraméterhez.
+Ez a cikk a [lapszámozott](../paginated-reports/paginated-reports-report-builder-power-bi.md) Power BI-jelentéseket megtervező jelentéskészítők számára készült. Egymásra épülő paraméterek tervezéséhez nyújt forgatókönyveket. Az egymásra épülő paraméterek függőségekkel rendelkező jelentésparaméterek. Amikor egy jelentésfelhasználó kiválaszt egy paraméterértéket (vagy -értékeket), azzal elérhető értékeket állíthat be egy másik paraméterhez.
 
 > [!NOTE]
 > A cikk nem foglalkozik az egymásra épülő paraméterek bemutatásával és ezek konfigurálásával. Ha nem ismeri jól az egymásra épülő paramétereket, először olvassa el az [Egymásra épülő paraméterek hozzáadása egy jelentéshez (Jelentéskészítő és SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs) című cikket.
@@ -281,7 +281,7 @@ A következő lépésekkel optimalizálja az adatforrásokat:
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Jelentésparaméterek a Power BI Jelentéskészítőben](../report-builder-parameters.md)
+- [Jelentésparaméterek a Power BI Jelentéskészítőben](../paginated-reports/report-builder-parameters.md)
 - [Egymásra épülő paraméterek hozzáadása egy jelentéshez (Jelentéskészítő és SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com)

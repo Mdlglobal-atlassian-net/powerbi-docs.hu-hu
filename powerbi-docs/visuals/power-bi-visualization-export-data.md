@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4e42a00c516cf9cd24c307c8f953a6cc7f840314
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: f4e7d1aa580f7ad95da103fc2cb1e7e069a80ee6
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539773"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78946863"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>A vizualizáció létrehozásához használt adatok exportálása
 
@@ -166,7 +166,7 @@ Többféle stratégia is a Power BI-rendszergazdák és a tervezők rendelkezés
 
 - Az adathalmaz tulajdonosai sorszintű biztonságot (RLS) állíthatnak be. Az RLS korlátozza a csak olvasási jogosultsággal rendelkező felhasználók hozzáférését. Ha azonban alkalmazás-munkaterületet konfigurált, amelyhez szerkesztési jogosultságot adott a tagoknak, rájuk nem vonatkoznak az RLS-szerepkörök. További információ: [Sorszintű biztonság](../service-admin-rls.md).
 
-- A jelentéstervezők oszlopokat rejthetnek el, hogy azok ne jelenjenek meg a **Mezők** listájában. További információ: [Adathalmaz-tulajdonságok](../developer/api-dataset-properties.md)
+- A jelentéstervezők oszlopokat rejthetnek el, hogy azok ne jelenjenek meg a **Mezők** listájában. További információ: [Adathalmaz-tulajdonságok](../developer/automation/api-dataset-properties.md)
 
 - A Power BI-rendszergazdák [bizalmassági címkéket](../admin/service-security-data-protection-overview.md) adhatnak az irányítópultokhoz, jelentésekhez, adathalmazokhoz és adatfolyamokhoz. Ezek olyan védelmi beállításokat juttathatnak érvényre, mint az exportálás során használt titkosítás vagy vízjel. 
 

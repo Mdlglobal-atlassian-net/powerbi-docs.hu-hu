@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: f9ed7f47c0f36e540d22270048e93acd2d3a8e21
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: 09471cdacacc8d0b1067598cefac41915b0ef0d7
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75953763"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920930"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Sorszintű biztonság implementálása beágyazott lapszámozott jelentésekben (előzetes verzió)
 
@@ -26,13 +26,13 @@ Ezzel a funkcióval biztonságos módon megjeleníthető az adatok egy része ú
 
 ## <a name="configuring-a-parameter-to-filter-the-dataset"></a>Egy paraméter konfigurálása az adatkészlet szűréséhez
 
-Amikor sorszintű biztonságot alkalmazunk egy lapszámozott Power BI-jelentésnél, hozzá kell rendelni egy [paramétert](../report-builder-parameters.md) a **UserID** attribútumhoz. Ez a paraméter korlátozza az adatkészletből lekért adatok körét a jelentés beágyazását megelőzően.
+Amikor sorszintű biztonságot alkalmazunk egy lapszámozott Power BI-jelentésnél, hozzá kell rendelni egy [paramétert](../paginated-reports/report-builder-parameters.md) a **UserID** attribútumhoz. Ez a paraméter korlátozza az adatkészletből lekért adatok körét a jelentés beágyazását megelőzően.
 
 Miután hozzárendelte a paramétert a **UserID** attribútumhoz, a [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup) API segítségével kérheti le a beágyazási tokent.
 
 ## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>A UserID attribútum használata szűrőként a jelentés vagy a lekérdezés szintjén
 
-A **UserID** attribútum használható *szűrőként* vagy egy, az adatforrás felé irányuló *lekérdezésben* a [Power BI Jelentéskészítőben](../report-builder-power-bi.md).
+A **UserID** attribútum használható *szűrőként* vagy egy, az adatforrás felé irányuló *lekérdezésben* a [Power BI Jelentéskészítőben](../paginated-reports/report-builder-power-bi.md).
 
 ### <a name="using-the-filter"></a>A szűrő használata
 

@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 09fd2197cca31e083c0242b187d7e242244235eb
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: d2f3f36911c72df1b95ceb5bd90043870559cc62
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530372"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920709"
 ---
 # <a name="image-use-guidance-for-paginated-reports"></a>Útmutató képek többoldalas jelentésekben való használatához
 
-Ez a cikk a [többoldalas](../paginated-reports-report-builder-power-bi.md) Power BI-jelentéseket megtervező jelentéskészítők számára készült. Képekkel való munkavégzéskor javaslatokat jelenít meg. Általában a jelentéselrendezésekben szereplő képek grafikákat, például vállalati emblémákat vagy képeket jeleníthetnek meg.
+Ez a cikk a [többoldalas](../paginated-reports/paginated-reports-report-builder-power-bi.md) Power BI-jelentéseket megtervező jelentéskészítők számára készült. Képekkel való munkavégzéskor javaslatokat jelenít meg. Általában a jelentéselrendezésekben szereplő képek grafikákat, például vállalati emblémákat vagy képeket jeleníthetnek meg.
 
 A képek három különféle helyen tárolhatók:
 
@@ -53,6 +53,6 @@ Vegye fontolóra a következő javaslatokat, ha professzionális jelentéselrend
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Mik a lapszámozott jelentések a Power BI Premiumban?](../paginated-reports-report-builder-power-bi.md)
+- [Mik a lapszámozott jelentések a Power BI Premiumban?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

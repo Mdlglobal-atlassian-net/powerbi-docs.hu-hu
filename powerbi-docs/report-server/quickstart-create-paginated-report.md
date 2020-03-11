@@ -8,17 +8,17 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/07/2020
 ms.author: maggies
-ms.openlocfilehash: 54416b314b03a5889c58004918513fecd7ff5ccd
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: 33c4f7b208916c2d920591acfc444f52c7655e47
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75954250"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78919544"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Többoldalas jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz
 Ebben a cikkben létrehozhat egy lapszámozott jelentést a Power BI jelentéskészítő kiszolgálóhoz néhány egyszerű lépésben.
 
-Segítségre van szüksége a lapszámozott jelentések a Power BI Jelentéskészítőben való létrehozásához? Inkább lásd: [Power BI Report Builder](../report-builder-power-bi.md).
+Segítségre van szüksége a lapszámozott jelentések a Power BI Jelentéskészítőben való létrehozásához? Inkább lásd: [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
 Mint ahogyan az elnevezés is sugallja, a többoldalas jelentések egyszerre több oldalon is átnyúlhatnak. Az elrendezésük rögzített formátumban történik, és precíz testreszabási lehetőségeket biztosítanak. A többoldalas jelentések .rdl-fájlok.
 

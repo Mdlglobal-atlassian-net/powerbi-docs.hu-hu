@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 06e46413be709ac3eda2102332740d709092187e
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 32f0c03fc0ae586b8b98c7a4c84c9d4c7bbd9078
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74265336"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920968"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
 Ezen az oldalon a **Power BI szolgáltatás** ismert problémáit és új funkcióit ismertetjük. Az újdonságokra vonatkozó kapcsolódó információk:
@@ -41,23 +41,23 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * Új Power BI Premium-kapacitásbeállítások.
 * [Egyéni védjegyzés](https://powerbi.microsoft.com/blog/announcing-custom-branding-for-your-organization/) a szervezet számára.
 * Összesített adatexportálás összeállítási engedéllyel.
-* Az [oldalakra osztott jelentések](paginated-reports-report-builder-power-bi.md) URL-paramétereinek támogatása.
+* Az [oldalakra osztott jelentések](paginated-reports/paginated-reports-report-builder-power-bi.md) URL-paramétereinek támogatása.
 * Havi e-mail-előfizetések támogatása. 
 
 ### <a name="july-2019"></a>2019. július
-* A nem prémium szintű adathalmazok támogatása [oldalakra osztott jelentések](paginated-reports-report-builder-power-bi.md) esetében.
+* A nem prémium szintű adathalmazok támogatása [oldalakra osztott jelentések](paginated-reports/paginated-reports-report-builder-power-bi.md) esetében.
 * A Power BI [aggregációinak](desktop-aggregations.md) általános elérhetősége.
 * Frissítési értesítések küldése másoknak.
 * [Tesztelőeszköz](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) Power BI Premium-kapacitásokhoz.
 * A [szolgáltatás-rendelkezésreállási értesítések](https://powerbi.microsoft.com/blog/power-bi-introduces-service-availability-notifications/) nyilvános előzetes verziója.
 * A Power BI-jelentések [új megjelenésének](https://powerbi.microsoft.com/blog/introducing-the-new-look-for-power-bi-service/) nyilvános előzetes verziója.
-* Új Power BI-régió Dél-Afrikában.
+* Új Power BI-régió a Dél-afrikai Köztársaságban.
 
 ### <a name="june-2019"></a>2019. június
 * A [megosztott és minősített adathalmazok](service-datasets-across-workspaces.md) nyilvános előzetes verziója.
 * A [Premium Capacity Metrics alkalmazásban](service-admin-premium-monitor-capacity.md) elérhető összes AI-metrika.
 * A Power BI-[sablonalkalmazások](service-template-apps-overview.md) általános elérhetősége.
-* A [oldalakra osztott jelentések](paginated-reports-report-builder-power-bi.md) nyilvános előzetes verziója a Power BI-ban.
+* A [oldalakra osztott jelentések](paginated-reports/paginated-reports-report-builder-power-bi.md) nyilvános előzetes verziója a Power BI-ban.
 * A Power BI Premiumhoz készült Bring Your Own Key ([BYOK](service-encryption-byok.md)) nyilvános előzetes verziója.
 * Megtekintői szerepkör a [munkaterületek új felületéhez](service-new-workspaces.md).
 
@@ -69,9 +69,9 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 ### <a name="april-2019"></a>2019. április
 * A [Power BI-adatfolyamok](service-dataflows-overview.md) általános elérhetősége.
 * Az új munkaterületek általános elérhetősége.
-* Új Power BI-régiók Franciaországban és Koreában.
+* Új Power BI-régiók Franciaországban és Dél-Koreában.
 * Frissített Q&A-felület az irányítópultokhoz.
-* Az Azure Analysis Services támogatása [lapszámozott jelentésekben](paginated-reports-report-builder-power-bi.md).
+* Az Azure Analysis Services támogatása [lapszámozott jelentésekben](paginated-reports/paginated-reports-report-builder-power-bi.md).
 * Lapszámozott jelentések támogatása a Power BI-alkalmazásokban.
 * PDF-csatolmányokkal ellátott [e-mail-feliratkozások](https://powerbi.microsoft.com/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) a lapszámozott jelentésekhez.
 * A Felügyeleti portál támogatja a Power BI Premium összegzési és számítási feladatbeli metrikáit
@@ -108,7 +108,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 
 ### <a name="november-2018"></a>2018. november
 * A Power BI Adatok előkészítése funkciója nyilvános előzetes verzióban elérhető az [adatfolyamokban](service-dataflows-overview.md).
-* A [lapszámozott jelentések](paginated-reports-report-builder-power-bi.md) nyilvános előzetes verziója a Power BI Premiumban.
+* A [lapszámozott jelentések](paginated-reports/paginated-reports-report-builder-power-bi.md) nyilvános előzetes verziója a Power BI Premiumban.
 * A memóriában lévő adathalmazok adatmérete és darabszáma a [kapacitásfigyelő alkalmazásban](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### <a name="october-2018"></a>2018. október

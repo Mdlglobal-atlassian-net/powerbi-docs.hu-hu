@@ -3,19 +3,18 @@ title: Válassza ki, melyik irányítópultot szeretné megjeleníteni a Power B
 description: A kiemelt irányítópultok Power BI szolgáltatásban való létrehozását ismertető dokumentáció
 author: mihart
 ms.reviewer: ''
-featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/14/2019
+ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 412bcf397d550e002957e7379bf41381e8e3eea8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 27a7bdce79d0cf39a15b3350d06fd01d7d9e13c2
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852533"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040031"
 ---
 # <a name="featured-dashboards-in-the-power-bi-service"></a>Kiemelt irányítópultok a Power BI szolgáltatásban
 
@@ -33,9 +32,6 @@ Több irányítópultot is kijelölhet, és megjelölheti őket kedvencként. L�
 Ha még nem állított be kiemelt irányítópultot, a Power BI az Ön által legutóbb használt irányítópultot nyitja meg, vagy a Power BI **kezdőlapjára** lép. 
 
 ### <a name="set-a-dashboard-as-featured"></a>Kiemelt irányítópult beállítása
-Figyelje meg, hogyan állít be Amanda kiemelt irányítópultot a videóban. A lépéseket követve Ön is kipróbálhatja ugyanezt.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
 
 1. Nyissa meg azt az irányítópultot, amelyet kiemeltté kíván tenni. 
@@ -51,7 +47,6 @@ A későbbiekben egy másik irányítópultot is kiválaszthat kiemelt irányít
 
 1. Hajtsa végre korábbi 1. és 2. lépést.
    
-    ![Kiemelt irányítópult módosítása ablak](./media/end-user-featured/power-bi-change-feature.png)
 2. Válassza a **Beállítás kiemelt irányítópultként** lehetőséget. Az irányítópult kiemelt állapotának eltávolításával nem távolítja el azt a Power BI-ból. 
    
     ![Sikert jelző üzenet](./media/end-user-featured/power-bi-unfeature-new.png)
@@ -62,9 +57,9 @@ Ha úgy dönt, hogy egyáltalán nincs szüksége kiemelt irányítópultra, az 
 1. Nyissa meg a jelenleg kiemeltként megjelölt irányítópultot.
 2. A felső menüsorban válassza a **További lehetőségek** (...) elemet, majd a **Kiemeltként megjelölés megszüntetése** lehetőséget.
 
-    ![Irányítópult-kiemelés megszüntetésének kijelölése](./media/end-user-featured/power-bi-unfeature-newer.png)
+    ![Irányítópult-kiemelés megszüntetésének kijelölése](./media/end-user-featured/power-bi-unfeature.png)
    
 ## <a name="next-steps"></a>Következő lépések
-- [Irányítópult megjelölése kedvencként](end-user-favorite.md)
+- [Irányítópult megjelölése kedvencként](end-user-favorite.md)    
 - További kérdései vannak? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).
 

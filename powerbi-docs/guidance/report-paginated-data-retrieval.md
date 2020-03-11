@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 1da75b14f628c8c765ea89a34dd2a2665cdf9a4b
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: 1e69c7eefe25da771ecc4d9602d6a21081f2c052
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530441"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920755"
 ---
 # <a name="data-retrieval-guidance-for-paginated-reports"></a>Adatlekérési útmutató lapszámozott jelentésekhez
 
-Ez a cikk a [többoldalas](../paginated-reports-report-builder-power-bi.md) Power BI-jelentéseket megtervező jelentéskészítők számára készült. Javaslatokat nyújt a hatékony adatlekéréshez.
+Ez a cikk a [többoldalas](../paginated-reports/paginated-reports-report-builder-power-bi.md) Power BI-jelentéseket megtervező jelentéskészítők számára készült. Javaslatokat nyújt a hatékony adatlekéréshez.
 
 ## <a name="data-source-types"></a>Adatforrástípusok
 
@@ -101,13 +101,13 @@ Azt javasoljuk, alkalmazzon _adatkészlet-paraméterezést_ olyan esetekben, ami
 
 ## <a name="non-native-data-sources"></a>Nem natív adatforrások
 
-Ha olyan adatforrásokon alapuló lapszámozott jelentéseket kell létrehoznia, amelyeket [nem támogatnak natív módon a lapszámozott jelentések](../paginated-reports-data-sources.md), először kifejleszthet egy Power BI Desktop-adatmodellt. Így több mint 100 [Power BI-adatforráshoz csatlakozhat](../power-bi-data-sources.md). Miután közzétette a Power BI szolgáltatásban, olyan lapszámozott jelentést fejleszthet, amely a Power BI-adatkészlethez csatlakozik.
+Ha olyan adatforrásokon alapuló lapszámozott jelentéseket kell létrehoznia, amelyeket [nem támogatnak natív módon a lapszámozott jelentések](../paginated-reports/paginated-reports-data-sources.md), először kifejleszthet egy Power BI Desktop-adatmodellt. Így több mint 100 [Power BI-adatforráshoz csatlakozhat](../power-bi-data-sources.md). Miután közzétette a Power BI szolgáltatásban, olyan lapszámozott jelentést fejleszthet, amely a Power BI-adatkészlethez csatlakozik.
 
 ## <a name="data-integration"></a>Adatintegráció
 
 Ha több adatforrásból kell adatokat egyesítenie, erre két módja van:
 
-- **Jelentés adatkészleteinek egyesítése**: Ha az adatforrásokat [natív módon támogatják a lapszámozott jelentések](../paginated-reports-data-sources.md), célszerű lehet olyan számított mezőket létrehozni, amelyek a [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) vagy a [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) jelentéskészítő-függvényeket használják.
+- **Jelentés adatkészleteinek egyesítése**: Ha az adatforrásokat [natív módon támogatják a lapszámozott jelentések](../paginated-reports/paginated-reports-data-sources.md), célszerű lehet olyan számított mezőket létrehozni, amelyek a [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) vagy a [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) jelentéskészítő-függvényeket használják.
 - **Power BI Desktop-modell fejlesztése**: Ennél azonban hatékonyabb lehet, ha egy adatmodellt fejleszt a Power BI Desktopban. A Power Queryvel egyesítheti a lekérdezéseket bármilyen [támogatott adatforrás](../power-bi-data-sources.md) alapján. Miután közzétette a Power BI szolgáltatásban, olyan lapszámozott jelentést fejleszthet, amely a Power BI-adatkészlethez csatlakozik.
 
 ## <a name="sql-server-complex-data-types"></a>Az SQL Server összetett adattípusai
@@ -143,6 +143,6 @@ Egy jelentés futtatásakor a rendszer minden adatkészletet kiértékel, akkor 
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [A Power BI lapszámozott jelentéseihez használható támogatott adatforrások](../paginated-reports-data-sources.md)
+- [A Power BI lapszámozott jelentéseihez használható támogatott adatforrások](../paginated-reports/paginated-reports-data-sources.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)
