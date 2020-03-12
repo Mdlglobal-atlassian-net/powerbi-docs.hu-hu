@@ -19,7 +19,7 @@
     - name: Fogalmak
       expanded: true
       items:
-        - name: Modellkapcsolatok létrehozása
+        - name: Modellkapcsolatok bemutatása
           href: ../desktop-relationships-understand.md
         - name: A modellezési nézet használata
           href: ../desktop-modeling-view.md

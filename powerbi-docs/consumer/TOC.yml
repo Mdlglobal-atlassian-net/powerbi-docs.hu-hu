@@ -66,6 +66,8 @@
               href: end-user-powerpoint.md
             - name: Könyvjelző hozzáadása jelentéshez
               href: end-user-bookmarks.md
+            - name: Kiemelés hozzáadása jelentéshez
+              href: end-user-spotlight.md
             - name: Többoldalas jelentések a Power BI-ban
               items:
                 - name: Oldalakra osztott jelentések
@@ -116,6 +118,8 @@
               href: end-user-notification-center.md
         - name: Adatok lekérése
           items:
+            - name: Munkaterületek a Power BI-ban
+              href: end-user-workspaces.md
             - name: Alkalmazások a Power BI-ban
               href: end-user-apps.md
             - name: Alkalmazások telepítése és használata

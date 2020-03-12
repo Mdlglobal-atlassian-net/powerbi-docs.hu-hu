@@ -7,6 +7,8 @@
       items:
         - name: Mik azok a mobilalkalmazások?
           href: mobile-apps-for-mobile-devices.md
+        - name: A mobilalkalmazások újdonságai
+          href: mobile-whats-new-in-the-mobile-apps.md
         - name: A kezdőlap bemutatása
           href: mobile-apps-home-page.md
     - name: Rövid útmutatók
@@ -22,8 +24,6 @@
     - name: Fogalmak
       expanded: true
       items:
-        - name: A mobilalkalmazások újdonságai
-          href: mobile-whats-new-in-the-mobile-apps.md
         - name: Adatok a való világból a mobilalkalmazásokkal
           href: mobile-apps-data-in-real-world-context.md
         - name: Adatok megtekintése kapcsolat nélküli üzemmódban a mobilalkalmazásokban
@@ -44,8 +44,6 @@
               href: mobile-share-dashboard-from-the-mobile-apps.md
             - name: Kedvencek a mobilalkalmazásokban
               href: mobile-apps-favorites.md
-            - name: Interakciós beállítások konfigurálása (csak telefon)
-              href: mobile-app-interaction-settings.md
             - name: Adatriasztások beállítása a Power BI mobilalkalmazásokban
               href: mobile-set-data-alerts-in-the-mobile-apps.md
             - name: Értesítések fogadása a Power BI-mobilalkalmazásokban
@@ -70,6 +68,8 @@
               href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
             - name: Vonalkód beolvasása a Power BI mobilalkalmazásból
               href: mobile-apps-scan-barcode-iphone.md
+            - name: Interakciós beállítások konfigurálása
+              href: mobile-app-interaction-settings.md
             - name: Konfigurálás mobileszköz-kezelés használatával
               href: mobile-app-configuration.md
         - name: iOS
@@ -100,7 +100,7 @@
               href: mobile-windows-10-phone-app-get-started.md
             - name: Irányítópult rögzítése a kezdőképernyőn
               href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-            - name: Reporting Services-mobiljelentések és -KPI-k megtekintése
+            - name: Helyszíni jelentések és KPI-k megtekintése
               href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
             - name: Power BI megtekintése Surface Hubon
               href: mobile-windows-10-app-presentation-mode.md
