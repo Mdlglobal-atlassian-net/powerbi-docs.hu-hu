@@ -7,17 +7,20 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/24/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 80c11aef2e985304c824fe1948a6bec867e6cb33
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f59d83823ee14648cb8c3d3fe740074d057d3425
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862426"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114357"
 ---
 # <a name="recent-content-in-the-power-bi-service"></a>**Legutóbbi** tartalom keresése a Power BI szolgáltatásban
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 A legutóbbi tartalom a Power BI szolgáltatásban legutóbb megtekintett legfeljebb 20 tételt jelenti.  Ezek között szerepelhetnek irányítópultok, jelentések, alkalmazások, munkafüzetek.
 
 ![Legutóbbi tartalom ablak](./media/end-user-recent/power-bi-recent.png)
@@ -42,7 +45,7 @@ Ha ötnél több elemet tekintett meg, kattintson az **Összes megjelenítése**
 Az elérhető műveletek a tartalom *tervezője* által hozzárendelt beállításoktól függenek. Íme néhány lehetőség:
 * [Irányítópult, jelentés vagy alkalmazás kedvencként való megjelöléséhez](end-user-favorite.md) kattintson a ![csillag ikonra](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Egyes irányítópultok és jelentések újból megoszthatók  ![megosztás ikon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
-* [Nyissa meg a jelentést az Excelben](end-user-export.md) ![Exportálás az Excelbe ikon](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [Jelentés megnyitása az Excelben](end-user-export.md) ![exportálás az Excelbe ikon](./media/end-user-shared-with-me/power-bi-excel.png) 
 * Az ![elemzések ikonnal](./media/end-user-shared-with-me/power-bi-insights.png) megtekintheti a Power BI által az adatokon végzett [elemzéseket](end-user-insights.md).
 * Emellett, hosszú listák esetén [a keresőmező és a szűrési lehetőségek használatával kereshet](end-user-search-sort.md). Ha meg szeretné tudni, hogy egy oszlop rendezhető-e, helyezze fölé a kurzort, és várja meg, hogy megjelenik-e egy nyíl. Ebben a példában a **Legutóbbi hozzáférés** fölé helyezett kurzor megjelenít egy nyilat, a legutóbbi tartalmak így a hozzáférés dátuma szerint rendezhetők. 
 

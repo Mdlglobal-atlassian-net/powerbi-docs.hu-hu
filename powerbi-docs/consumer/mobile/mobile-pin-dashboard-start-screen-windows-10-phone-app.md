@@ -1,19 +1,19 @@
 ---
 title: Irányítópult rögzítése a Windows 10 kezdőképernyőjén – Power BI mobilalkalmazás
 description: Útmutató Power BI-irányítópult rögzítéséhez a Windows 10 kezdőképernyőjén a Power BI-mobilalkalmazásból, hogy a kritikus metrikák azonnal láthatók legyenek.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
-ms.openlocfilehash: 556ca293458c6874097a4733aaed453130778848
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: 6abeb9244b4ced7cf0b56d4f01686f570c474989
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869859"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114929"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Irányítópult rögzítése a Windows 10 kezdőképernyőjén a Power BI mobilalkalmazásból
 A Power BI-irányítópultok rögzíthetők a Windows kezdőképernyőjén a Windows 10 rendszerhez készült Power BI mobilalkalmazásból. Ezek *élő csempék lesznek*. Amikor a kezdőképernyőn a csempére koppint, az irányítópult megnyílik a Windows 10 rendszerhez készült Power BI mobilalkalmazásban.
