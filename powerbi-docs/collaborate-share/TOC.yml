@@ -31,6 +31,8 @@
               href: ../service-create-distribute-apps.md
             - name: Adattárolás felügyelete a munkaterületeken
               href: ../service-admin-manage-your-data-storage-in-power-bi.md
+            - name: Adatéletút
+              href: service-data-lineage.md
             - name: Kapcsolódás a csoport OneDrive-on tárolt fájljaihoz
               href: ../service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Együttműködés klasszikus munkaterületen

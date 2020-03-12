@@ -313,8 +313,6 @@
               href: ../desktop-accessibility-consuming-tools.md
             - name: Billentyűparancsok a Power BI Desktopban
               href: ../desktop-accessibility-keyboard-shortcuts.md
-        - name: Adatéletút
-          href: ../service-data-lineage.md
         - name: Oldalakra osztott jelentések
           items:
             - name: Adatok megadása közvetlenül többoldalas jelentésben
