@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 656f7e532702cef8c38af96e8c9df49ffc36734a
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 50c8416573b995c34d62129d11926e70d9d4242d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75304366"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381399"
 ---
 # <a name="power-bi-security-whitepaper"></a>A Power BI biztonsága – tanulmány
 
@@ -41,11 +41,11 @@ Ez a cikk a Power BI biztonságát ismerteti. Ennek keretében bemutatja a Power
 
 A **Power BI** szolgáltatás az **Azure**-ra épül, amely a Microsoft [felhőalapú számítástechnikai platformja](https://azure.microsoft.com/overview/what-is-azure/). A Power BI-t jelenleg a világ számos adatközpontjában alkalmazzák – számos aktív példány érhető el az adatközpontok régióinak ügyfelei számára, valamint ugyanennyi passzív példány, amelyek az aktív példányok biztonsági másolatait képezik.
 
-Minden üzemelő Power BI-példány két fürtből áll – egy webes előtérrendszer (**WFE-**) fürtből és egy **háttérbeli** fürtből. Ezeket a következő képen tekintheti meg, és a cikk további részének hátterét képezik. 
+Minden üzemelő Power BI-példány két fürtből áll – egy webes előtérrendszer (**WFE-** ) fürtből és egy **háttérbeli** fürtből. Ezeket a következő képen tekintheti meg, és a cikk további részének hátterét képezik. 
 
 ![A WFE és a Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-A Power BI az Azure Active Directoryval (**AAD**) végez fiókhitelesítést és -kezelést. A Power BI az **Azure Traffic Managert (ATM-et)** is használja arra, hogy a felhasználói forgalmat – a kapcsolódást megkísérlő ügyfél DNS-rekordja alapján – a legközelebbi adatközponthoz irányítsa a hitelesítési elvégzéséhez és statikus tartalom és fájlok letöltéséhez. A Power BI a földrajzilag legközelebb WFE használatával hatékonyan terjeszti a szükséges statikus tartalmakat és fájlokat a felhasználók számára, az **Azure Content Delivery Network (CDN)** használatával továbbított egyéni vizualizációk kivételével.
+A Power BI az Azure Active Directoryval (**AAD**) végez fiókhitelesítést és -kezelést. A Power BI az **Azure Traffic Managert (ATM-et)** is használja arra, hogy a felhasználói forgalmat – a kapcsolódást megkísérlő ügyfél DNS-rekordja alapján – a legközelebbi adatközponthoz irányítsa a hitelesítési elvégzéséhez és statikus tartalom és fájlok letöltéséhez. A Power BI a földrajzilag legközelebb WFE használatával hatékonyan terjeszti a szükséges statikus tartalmakat és fájlokat a felhasználók számára, az **Azure Content Delivery Network (CDN)** használatával továbbított Power bi vizualizációk kivételével.
 
 ### <a name="the-wfe-cluster"></a>A WFE-fürt
 
@@ -200,7 +200,7 @@ A helyreállítási kulcson alapuló átjárótitkosítási kulcsok sohasem hagy
 
 Felhőalapú adatforrások esetén az adatáthelyezési szerepkör [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx) (mindig titkosított) metódusokkal titkosítja a titkosítási kulcsokat. További információ az [Always Encrypted adatbázis-funkcióról](https://msdn.microsoft.com/library/mt163865.aspx).
 
-#### <a name="datasets"></a>Adathalmazok
+#### <a name="datasets"></a>Adatkészletek
 
 1. Metaadatok (táblák, oszlopok, mértékek, számítások, kapcsolati sztringek stb.)
 
@@ -253,13 +253,13 @@ A Power BI a következő módon biztosítja az adatok adatintegritási monitoroz
 
 2. Statikus adatok
 
-   A statikus adatok közé tartoznak az olyan összetevők, mint a háttérképek és az egyéni vizualizációk.
+   A statikus adatelemek olyan összetevőket tartalmaznak, mint például a háttérképek és a Power BI vizualizációk.
 
     &ensp; &ensp; a. Az Office 365-höz készült Excel esetében semmit nem tárol a rendszer.
 
     &ensp; &ensp; b. A Power BI-jelentések esetében a statikus adatok titkosítva vannak tárolva az Azure Blob-tárolóban.
 
-3. Gyorsítótárak
+3. gyorsítótárak
 
     &ensp; &ensp; a. Az Office 365-höz készült Excel-jelentések esetében semmit nem gyorsítótáraz a rendszer.
 
@@ -274,7 +274,7 @@ A Power BI a következő módon biztosítja az adatok adatintegritási monitoroz
 
 1. Gyorsítótárak – Az irányítópultok vizualizációihoz szükséges adatok általában az Azure SQL Database szolgáltatásban vannak titkosítva gyorsítótárazva és tárolva. Más csempéket, mint például az Excelből vagy SQL Server Reporting Services-ből (SSRS) kitűzött vizualizációkat a rendszer kép formájában, szintén titkosítva tárolja az Azure Blobban.
 
-2. Statikus adatok – ide tartoznak az olyan összetevők, mint a háttérképek és az egyéni vizualizációk, ezeket a rendszer az Azure Blob-tárolóban titkosítva tárolja.
+2. Statikus adattárolók – olyan összetevőket tartalmaz, mint például a háttérképek, valamint az Azure Blob Storage-ban tárolt, titkosított Power BI vizualizációk.
 
 Az alkalmazott titkosítási módszertől függetlenül, az ügyfelek nevében a Microsoft a kulcstitkosítás felügyeletéhez vagy egy titkoskód-tárolót, vagy az Azure Key Vaultot használja.
 
@@ -282,7 +282,7 @@ Az alkalmazott titkosítási módszertől függetlenül, az ügyfelek nevében a
 
 A nem felejtő eszközök olyan eszközök, amelyeken állandó teljesítmény nélkül maradnak a memóriájuk. A következők a permanens eszközökön tárolt ideiglenes adatokra vonatkoznak. 
 
-#### <a name="datasets"></a>Adathalmazok
+#### <a name="datasets"></a>Adatkészletek
 
 1. Metaadatok (táblák, oszlopok, mértékek, számítások, kapcsolati sztringek stb.)
 
@@ -318,7 +318,7 @@ Az egyes adatforrások esetében a felhasználó a bejelentkezésük alapján l�
 
 Amikor a felhasználó megosztja a lekérdezést, irányítópultot, jelentést vagy bármelyik vizualizációt, az ezekhez az adatokhoz vagy vizualizációkhoz való hozzáférés annak függvénye, hogy az alapul szolgáló adatforrások támogatják-e a szerepkörszintű biztonságot (RLS).
 
-Ha az alapul szolgáló adatforrás támogatja a **Power BI **** szerepkörszintű biztonság funkcióját (RLS)**, a Power BI szolgáltatás alkalmazni fogja a megfelelő szerepkörszintű biztonságot, és azok a felhasználók, akik nem rendelkeznek az alapul szolgáló adatokhoz való hozzáféréshez szükséges hitelesítő adatokkal (mely hozzáférés lehet egy irányítópultban vagy más adatösszetevőben használt lekérdezés), nem fogják látni azokat az adatokat, amelyekhez nem rendelkeznek jogosultsággal. Ha a felhasználó alapul szolgáló adatokhoz való hozzáférése eltér az irányítópultot vagy jelentést létrehozó felhasználóétól, a vizualizációk és egyéb összetevők csak a felhasználó hozzáférési szintjének megfelelő adatokat fogják megjeleníteni.
+Ha az alapul szolgáló adatforrás támogatja a **Power BI **** szerepkörszintű biztonság funkcióját (RLS)** , a Power BI szolgáltatás alkalmazni fogja a megfelelő szerepkörszintű biztonságot, és azok a felhasználók, akik nem rendelkeznek az alapul szolgáló adatokhoz való hozzáféréshez szükséges hitelesítő adatokkal (mely hozzáférés lehet egy irányítópultban vagy más adatösszetevőben használt lekérdezés), nem fogják látni azokat az adatokat, amelyekhez nem rendelkeznek jogosultsággal. Ha a felhasználó alapul szolgáló adatokhoz való hozzáférése eltér az irányítópultot vagy jelentést létrehozó felhasználóétól, a vizualizációk és egyéb összetevők csak a felhasználó hozzáférési szintjének megfelelő adatokat fogják megjeleníteni.
 
 Ha az adatforrás **nem** használ RLS-t, az alapul szolgáló adatforráshoz való hozzáférés a Power BI-bejelentkezés hitelesítő adatai alapján történik, illetve, ha kapcsolódás közben más hitelesítő adatokat adnak meg, akkor azok alapján. Amikor egy felhasználó RLS-t nem használó adatforrásból tölt adatokat a Power BI szolgáltatásba, az adatokat a Power BI a dokumentum **Adattárolás és továbbítás** szakaszában leírtak szerint tárolja. Az RLS-t nem használó adatforrások esetében az adatok más felhasználókkal történő megosztásakor (például amikor irányítópult vagy jelentés használatával osztják meg őket), illetve adatfrissítéskor, az adatokhoz való hozzáféréshez, vagy azok megjelenítéséhez az eredeti hitelesítő adatokat használja a rendszer.
 
@@ -372,11 +372,11 @@ Az alábbiak Power BI-jal kapcsolatos gyakori biztonsági kérdések, valamint a
 
 **Hogyan csatlakoznak a felhasználók a Power BI-ban az adatforrásokhoz, illetve hogyan férhetnek hozzájuk?**
 
-* **Power bi hitelesítő adatok és a tartományi hitelesítő adatok:** A felhasználók e-mail-cím használatával jelentkeznek be Power BIba. Amikor egy felhasználó megpróbál csatlakozni egy adaterőforráshoz, a Power BI hitelesítő adatként továbbítja a Power BI bejelentkezési e-mail-címét. Tartományhoz csatlakozó (helyszíni vagy felhőalapú) erőforrások esetén a bejelentkezési e-mail-címhez egy _egyszerű felhasználónevet_ ([UPN-t](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) is társít a címtárszolgáltatás, amellyel meghatározza, hogy megfelelőek-e a hitelesítő adatok a hozzáféréshez. A Power BI-ba való bejelentkezéshez munkahelyi e-mail-címeket (ugyanazt az e-mail-címet, mint amelyet munkahelyi erőforrások eléréséhez használnak, például _david@contoso.com_) használó szervezetek esetén a leképezés gördülékeny. Az olyan szervezetek esetén, amelyek nem munkahelyi e-mail-címeket használnak (például _david@contoso.onmicrosoft.com_), címtárleképezést kell alkalmazni, hogy a felhasználók Power BI-hitelesítő adatokkal hozzáférést kaphassanak a helyszíni erőforrásokhoz.
+* **Power bi hitelesítő adatok és a tartományi hitelesítő adatok:** A felhasználók e-mail-cím használatával jelentkeznek be Power BIba. Amikor egy felhasználó megpróbál csatlakozni egy adaterőforráshoz, a Power BI hitelesítő adatként továbbítja a Power BI bejelentkezési e-mail-címét. Tartományhoz csatlakozó (helyszíni vagy felhőalapú) erőforrások esetén a bejelentkezési e-mail-címhez egy _egyszerű felhasználónevet_ ([UPN-t](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) is társít a címtárszolgáltatás, amellyel meghatározza, hogy megfelelőek-e a hitelesítő adatok a hozzáféréshez. A Power BI-ba való bejelentkezéshez munkahelyi e-mail-címeket (ugyanazt az e-mail-címet, mint amelyet munkahelyi erőforrások eléréséhez használnak, például _david@contoso.com_ ) használó szervezetek esetén a leképezés gördülékeny. Az olyan szervezetek esetén, amelyek nem munkahelyi e-mail-címeket használnak (például _david@contoso.onmicrosoft.com_ ), címtárleképezést kell alkalmazni, hogy a felhasználók Power BI-hitelesítő adatokkal hozzáférést kaphassanak a helyszíni erőforrásokhoz.
 
 * **SQL Server Analysis Services és Power bi:** A helyszíni SQL Server Analysis Servicest használó szervezetek esetében a Power BI a Power BI helyszíni adatátjárót (amely az előző részben hivatkozott **átjáró**) biztosítja.  A Power BI helyszíni adatátjárója szerepkörszintű biztonságot (RLS-t) képes kényszeríteni az adatforrásokon. További információt az RLS-ről a dokumentum korábbi, **Az adatforrások felhasználói hitelesítése** című szakaszában találhat. Az átjárókkal kapcsolatos további információkért lásd: helyszíni [adatátjáró](service-gateway-onprem.md).
 
-  A szervezetek az **egyszeri bejelentkezéshez** (SSO-hoz) a Kerberost is használhatják, amellyel zökkenőmentesen csatlakozhatnak a Power BI-ból a helyszíni adatforrásokhoz, például az SQL Serverhez, az SAP HANA-hoz és a Teradatához. További információ és a konkrét konfigurációs követelmények: [**A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
+  A szervezetek az **egyszeri bejelentkezéshez** (SSO-hoz) a Kerberost is használhatják, amellyel zökkenőmentesen csatlakozhatnak a Power BI-ból a helyszíni adatforrásokhoz, például az SQL Serverhez, az SAP HANA-hoz és a Teradatához. További információ és a konkrét konfigurációs követelmények: [**A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)** ](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
 * **Tartományon kívüli kapcsolatok**: olyan adatkapcsolatok esetén, amelyek nem csatlakoznak a tartományhoz, és nem képesek a szerepköralapú biztonságra (RLS), a felhasználónak meg kell adnia a hitelesítő adatokat a kapcsolati folyamat során, amely Power bi majd továbbítja az adatforrásnak a kapcsolat létesítéséhez. Ha megfelelőek az engedélyek, az adatok betöltődnek az adatforrásból a Power BI szolgáltatásba.
 
@@ -438,7 +438,7 @@ Az alábbiak Power BI-jal kapcsolatos gyakori biztonsági kérdések, valamint a
 
   Egy kezdeti Power BI-kapcsolatból származó információ alapján a felhasználó böngészője a megadott Azure **CDN**-hez, bizonyos fájlok esetében pedig a **WFE**-hez fordulva letölti a böngészőnek a Power BI szolgáltatással való együttműködéséhez szükséges megadott közös fájlok gyűjteményét. A böngészőlap így a Power BI szolgáltatás böngésző-munkamenetének időtartamára tartalmazza az AAD-jogkivonatot, a munkamenetadatokat, a társított **Back End**-fürt helyét, valamint az Azure **CDN**-ből és a **WFE**-fürtből letöltött fájlok gyűjteményét.
 
-**Egyéni vizualizációknál elvégzi-e a Microsoft az egyéni vizualizációkód biztonsági vagy adatvédelmi kiértékelését a Katalógusban való közzététel előtt?**
+**Power BI vizualizációk esetében a Microsoft az egyéni vizualizációs kód biztonsági vagy adatvédelmi értékelését hajtja végre az elemek katalógusba való közzététele előtt?**
 
 * Nem. Az ügyfél felelős az egyéni vizualizáció kódjának átvizsgálásáért és annak megállapításáért, hogy az megbízható-e. Minden egyéni vizualizáció kódja tesztkörnyezetben van működtetve, hogy egy egyéni vizualizáció esetleg hibás kódja ne lehessen káros hatással a Power BI szolgáltatás egészére.
 
@@ -480,7 +480,7 @@ A Power BI-ról az alábbi forrásanyagokban talál további információt.
 - [Első lépések a Power BI Desktop alkalmazással](https://support.powerbi.com/knowledgebase/articles/471664)
 - [Power BI REST API – Áttekintés](https://msdn.microsoft.com/library/dn877544.aspx)
 - [A Power BI API referenciája](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)
+- [Helyszíni adatátjáró](service-gateway-onprem.md)
 - [Power BI országos felhők](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)](service-gateway-sso-overview.md)
