@@ -145,7 +145,7 @@
               href: ../desktop-grouping-and-binning.md
             - name: Power BI-vizualizációk létrehozása az R programozási nyelvvel
               href: ../desktop-r-visuals.md
-            - name: R-alapú egyéni vizuális elemek letöltése és használata
+            - name: R-alapú Power BI-vizualizációk a letöltése
               href: ../desktop-r-powered-custom-visuals.md
             - name: Rácsvonalak és rácsvonalhoz igazítás használata
               href: ../desktop-gridlines-snap-to-grid.md
