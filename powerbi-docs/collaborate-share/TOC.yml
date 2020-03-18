@@ -51,6 +51,8 @@
               href: ../service-url-filters.md
             - name: Önmaga és mások regisztrálása
               href: ../service-report-subscribe.md
+            - name: Szolgáltatások tartalma a kezdőlapon
+              href: service-featured-content.md
             - name: Jelentés beágyazása a Microsoft Teamsbe
               href: ../service-embed-report-microsoft-teams.md
             - name: Jelentés beágyazása a SharePoint Online-ban

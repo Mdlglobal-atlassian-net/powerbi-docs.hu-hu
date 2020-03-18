@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 10/25/2019
-  ms.openlocfilehash: 94800e2b5996b9b9fc6bf60c4c95dd72b0725b81
-  ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+  ms.openlocfilehash: b03678dba371ed26a8965c2ebbcd26453689cea2
+  ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 03/14/2020
-  ms.locfileid: "79378248"
+  ms.lasthandoff: 03/18/2020
+  ms.locfileid: "79487763"
 landingContent:
 - title: A Power BI fejlesztőknek bemutatása
   linkLists:
@@ -26,9 +26,9 @@ landingContent:
     - text: Fejlesztői lehetőségek
       url: what-can-you-do.md
     - text: Vizualizációk a Power BI-ban
-      url: power-bi-custom-visuals.md
+      url: visuals/power-bi-custom-visuals.md
     - text: Mi az a beágyazás?
-      url: embedding.md
+      url: embedded/embedding.md
     - text: Mi az a Power BI API?
       url: automation/overview-of-power-bi-rest-api.md
   - linkListType: reference
@@ -52,42 +52,42 @@ landingContent:
   - linkListType: concept
     links:
     - text: Vizualizációk – gyakori kérdések
-      url: power-bi-custom-visuals-faq.md
+      url: visuals/power-bi-custom-visuals-faq.md
     - text: Útmutató a vizualizációkhoz
-      url: guidelines-powerbi-visuals.md
+      url: visuals/guidelines-powerbi-visuals.md
     - text: A vizualizációk speciális szerkesztési módja
       url: visuals/advanced-edit-mode.md
   - linkListType: how-to-guide
     links:
     - text: Vizualizáció tanúsítása
-      url: power-bi-custom-visuals-certified.md
+      url: visuals/power-bi-custom-visuals-certified.md
     - text: Power BI-vizualizációk közzététele az AppSource-ban
-      url: office-store.md
+      url: visuals/office-store.md
 - title: Beágyazott analitika
   linkLists:
   - linkListType: tutorial
     links:
     - text: Tartalom beágyazása ügyfelek számára
-      url: embed-sample-for-customers.md
+      url: embedded/embed-sample-for-customers.md
     - text: Tartalom beágyazása a cég számára
-      url: embed-sample-for-your-organization.md
+      url: embedded/embed-sample-for-your-organization.md
   - linkListType: concept
     links:
     - text: Sorszintű biztonság
-      url: embedded-row-level-security.md
+      url: embedded/embedded-row-level-security.md
     - text: Több-bérlős konfiguráció kezelése
-      url: embed-multi-tenancy.md
+      url: embedded/embed-multi-tenancy.md
     - text: Beágyazási GYIK
-      url: embedded-faq.md
+      url: embedded/embedded-faq.md
     - text: Engedélyek
-      url: power-bi-permissions.md
+      url: embedded/power-bi-permissions.md
   - linkListType: how-to-guide
     links:
     - text: Beágyazás alkalmazásokból
-      url: embed-from-apps.md
+      url: embedded/embed-from-apps.md
     - text: Azure Active Directory-bérlő létrehozása
-      url: create-an-azure-active-directory-tenant.md
+      url: embedded/create-an-azure-active-directory-tenant.md
     - text: Azure AD hozzáférési token beszerzése
-      url: get-azuread-access-token.md
+      url: embedded/get-azuread-access-token.md
     - text: A Power BI Embedded Q&A funkciója
-      url: qanda.md
+      url: embedded/qanda.md
