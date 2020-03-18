@@ -9,16 +9,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/14/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: ae05fdcd3a38f10707e991524bac61a305b88794
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: de988442edf4c60841bac757bb67ea5ed5038b25
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427714"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207965"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Számítási feladatok konfigurálása egy Premium-kapacitásban
 
-Ez a cikk azt ismerteti, hogy hogyan engedélyezhet és konfigurálhat számítási feladatokat Power BI Premium-kapacitásokban. A kapacitások alapértelmezés szerint csak a Power BI-lekérdezésekkel társított számítási feladatot támogatják. További számítási feladatokat engedélyezhet és konfigurálhat **[mesterséges intelligenciához (Cognitive Services)](service-cognitive-services.md)** , **[adatfolyamokhoz](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** és **[lapszámozott jelentésekhez](paginated-reports-save-to-power-bi-service.md)** .
+Ez a cikk azt ismerteti, hogy hogyan engedélyezhet és konfigurálhat számítási feladatokat Power BI Premium-kapacitásokban. A kapacitások alapértelmezés szerint csak a Power BI-lekérdezésekkel társított számítási feladatot támogatják. További számítási feladatokat engedélyezhet és konfigurálhat **[mesterséges intelligenciához (Cognitive Services)](service-cognitive-services.md)** , **[adatfolyamokhoz](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** és **[lapszámozott jelentésekhez](paginated-reports/paginated-reports-save-to-power-bi-service.md)** .
 
 ## <a name="default-memory-settings"></a>Alapértelmezett memóriabeállítások
 
@@ -67,7 +67,7 @@ Az adathalmazok számítási feladat alapértelmezés szerint engedélyezve van,
 | **Köztes sorok maximális száma** | A DirectQuery által visszaadott köztes sorok maximális száma. Az alapértelmezett érték 1 000 000, a megengedett tartomány pedig 100 000-től 2 147 483 647-ig terjed. |
 | **Offline adathalmaz maximális mérete (GB)** | A memóriában lévő offline adathalmaz maximális mérete. Ez a tömörített méret a lemezen. Az alapértelmezett értéket a termékváltozat szabja meg, a megengedett tartomány pedig 0,1 GB-tól 10 GB-ig terjed. |
 | **Eredménysorok maximális száma** | A DAX-lekérdezés által visszaadott sorok maximális száma. Az alapértelmezett érték -1 (nincs korlát), a megengedett tartomány pedig 100 000-től 2 147 483 647-ig terjed. |
-| **Lekérdezés memóriakorlátja (%)** | Az MDX- vagy DAX-lekérdezések végrehajtásához használható számítási feladatban rendelkezésre álló memória maximális százalékaránya. |
+| **Lekérdezés memóriakorlátja (%)** | Az MDX- vagy DAX-lekérdezések végrehajtásához használható számítási feladatban rendelkezésre álló memória maximális százalékaránya. Az alapértelmezett érték 0, amely az adott SKU-specifikus automatikus lekérdezési memória korlátozását eredményezi. |
 | **Lekérdezés időkorlátja (másodpercben)** | A lekérdezés időtúllépéséig eltelt idő maximuma. Az alapértelmezett érték 3600 másodperc (1 óra). A 0 érték azt jelenti, hogy a lekérdezések lépik túl az időt. |
 | **Automatikus oldalfrissítés (előzetes verzió)** | A be- és kikapcsolás váltógomb a prémium szintű munkaterületeken lehetővé teszi a jelentések automatikus frissítését. |
 | **Minimális frissítési időköz** | Az oldalfrissítés minimálisan engedélyezett frissítési időköze, ha az automatikus oldalfrissítés be van kapcsolva. Az alapértelmezett érték öt perc, a minimálisan megengedett érték pedig egy másodperc. |
@@ -102,6 +102,14 @@ A beállítással szabályozhatja az erőforrás-igényes vagy rosszul megtervez
 Ez a beállítás vonatkozik minden DAX- és MDX-lekérdezésre, amelyeket Power BI-jelentések, Analyze Excel-jelentések, valamint más, az XMLA-végponton át csatlakozó eszközök hajtanak végre.
 
 Vegye figyelembe, hogy az adatfrissítési műveletek az irányítópult-csempék és a vizuális gyorsítótárak frissítésének részeként is végrehajthatnak DAX-lekérdezéseket, miután megtörtént az adatok frissítése az adathalmazban. Ezek a lekérdezések emiatt a beállítás miatt is meghiúsulhatnak, ami az adatfrissítési művelet hibás állapotúként történő megjelenítéséhez vezethet, még akkor is, ha az adathalmazban az adatok frissítése sikeres volt.
+
+Az alapértelmezett beállítás 0, amely az alábbi SKU-specifikus automatikus lekérdezési memória korlátozását eredményezi.
+
+|                              | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |   
+|------------------------------|----------|----------|----------|---------|---------|---------|
+| Lekérdezés automatikus memóriakorlátja | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
+|                              |          |          |          |         |         |         |
+
 
 #### <a name="query-timeout"></a>Lekérdezés időkorlátja
 
@@ -200,7 +208,7 @@ A [Power BI Premium-kapacitásmetrikák alkalmazás](service-admin-premium-monit
 
 [Power BI Premium-kapacitások optimalizálása](service-premium-capacity-optimize.md)     
 [Önkiszolgáló adat-előkészítés a Power BI-ban adatfolyamokkal](service-dataflows-overview.md)   
-[Mik azok a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)   
+[Mik azok a lapszámozott jelentések a Power BI Premiumban?](paginated-reports/paginated-reports-report-builder-power-bi.md)   
 [Automatikus oldalfrissítés Power BI Desktopban (előzetes verzió)](desktop-automatic-page-refresh.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

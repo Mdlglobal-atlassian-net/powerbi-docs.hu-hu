@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.date: 03/25/2019
-ms.openlocfilehash: 3ff7eb4a771ed8c65d18262f61170f312049a898
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 1a74d856ad46dc6843546919aa4234dc86d2be5c
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079416"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488432"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Mire használhatják a fejlesztők a Power BI API-t?
 
@@ -25,10 +25,10 @@ A Power BI REST API-val kezelési feladatokat is végezhet olyan Power BI-objekt
 
 | **További információ** | **Hivatkozás erre az információra** |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Irányítópultok, jelentések és csempék beágyazása Power BI- és nem Power BI-felhasználók részére. | [Power BI-irányítópultok, -jelentések és -csempék beágyazása ](../embed-sample-for-customers.md) |
+| Irányítópultok, jelentések és csempék beágyazása Power BI- és nem Power BI-felhasználók részére. | [Power BI-irányítópultok, -jelentések és -csempék beágyazása ](../embedded/embed-sample-for-customers.md) |
 | Kezelési feladatok végrehajtása Power BI-objektumokon. | [A Power BI REST API-jainak leírása](https://docs.microsoft.com/rest/api/power-bi/) |
 | Kulcsfontosságú adatok küldése Power BI-irányítópultokra a meglévő üzleti munkafolyamatok kiterjesztésével. | [Adatok küldése az irányítópultokra ](walkthrough-push-data.md) |
-| Hitelesítés a Power BI-ban. | [Hitelesítés a Power BI-ban ](../get-azuread-access-token.md) |
+| Hitelesítés a Power BI-ban. | [Hitelesítés a Power BI-ban ](../embedded/get-azuread-access-token.md) |
 
 > [!NOTE]
 > A Power BI API-k továbbra is csoportokként hivatkoznak a munkaterületekre. Minden csoportokra való hivatkozás munkaterületek használatát jelöli.

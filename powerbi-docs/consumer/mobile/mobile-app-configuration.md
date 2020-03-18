@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 03/07/2020
 ms.author: painbar
-ms.openlocfilehash: b7a02261e6e00c01befa8ba7716b9e0d132323ea
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 1991381f8b2917fe3bc61a8be22fbdf44e706d71
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496754"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205550"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>A Power BI alkalmazás távoli konfigurálása mobileszköz-kezelési (MDM-) eszközzel
 
@@ -22,8 +22,8 @@ Az iOS és az Android rendszerhez készült Power BI Mobile alkalmazás olyan be
 A Power BI Mobile alkalmazás a következő konfigurációs forgatókönyveket támogatja:
 
 * Jelentéskészítő kiszolgáló konfigurálása (iOS és Android)
-* Adatvédelmi beállítások (iOS és Android)
-* Kezelési beállítások (Android)
+* Adatvédelmi beállítások (iOS)
+* Interakciós beállítások (iOS és Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>A jelentéskészítő kiszolgáló konfigurálása (iOS és Android)
 
@@ -38,19 +38,23 @@ Az iOS és Android rendszerhez készült Power BI alkalmazással a rendszergazd�
 
 ## <a name="data-protection-settings-ios"></a>Adatvédelmi beállítások (iOS)
 
-Az iOS-hez és Androidhoz készült Power BI alkalmazással a rendszergazdák testreszabhatják a biztonsági és adatvédelmi beállítások alapértelmezett konfigurációját. Megkövetelheti a felhasználóktól, hogy Face ID-t, Touch ID-t vagy hitelesítő kódot használjanak a Power BI alkalmazáshoz.
+Az iOS-hez készült Power BI alkalmazással a rendszergazdák testreszabhatják a biztonsági és adatvédelmi beállítások alapértelmezett konfigurációját. Megkövetelheti a felhasználóktól, hogy Face ID-t, Touch ID-t vagy hitelesítő kódot használjanak a Power BI alkalmazáshoz.
 
 | Kulcs | Típus | Leírás |
 |---|---|---|
 | com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Logikai érték | Az alapértelmezett érték False (Hamis). <br><br>Az alkalmazás használatához megkövetelhetők biometrikus adatok, például a TouchID vagy a FaceID használata. Ez esetben ezekre is szükség van a hitelesítésen felül.<br><br>Alkalmazásvédelmi szabályzatok használata esetén a Microsoft azt javasolja, hogy tiltsa le ezt a beállítást, így elkerülhetők a kettős hozzáférési kérelmek. |
 
-## <a name="interaction-settings-android"></a>Kezelési beállítások (Android)
+## <a name="interaction-settings-ios-and-android"></a>Interakciós beállítások (iOS és Android)
 
-Az Androidhoz készült Power BI alkalmazással a rendszergazdák konfigurálhatják a kezelési beállításokat, ha úgy döntenek, hogy az alapértelmezett kezelési beállításokat a felhasználók egy vállalaton belüli csoportja számára módosítani kell. 
+Az iOS-hez és Androidhoz készült Power BI alkalmazással a rendszergazdák konfigurálhatják a kezelési beállításokat, ha úgy döntenek, hogy az alapértelmezett kezelési beállításokat a felhasználók egy vállalaton belüli csoportja számára módosítani kell.
+
+>[!NOTE]
+>Jelenleg nem támogatott minden interakció az összes eszközön. A [Jelentések interakciós beállításainak konfigurálása](mobile-app-interaction-settings.md) részben talál egy olyan diagramot, amely felsorolja a jelenleg rendelkezésre álló eszközöket.
 
 | Kulcs | Típus | Értékek | Leírás |
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.ReportTapInteraction | Sztring |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Annak konfigurálása, hogy a vizualizáción való koppintás egyben adatpont-kiválasztás is legyen-e. |
+| com.microsoft.powerbi.mobile.EnableMultiSelect | Logikai érték |  <nobr>True</nobr><br><nobr>False</nobr> | Konfigurálhatja, hogy egy adatpontra koppintás lecseréli-e az aktuális kijelölést, vagy az az aktuális kijelöléshez legyen hozzáadva. |
 | com.microsoft.powerbi.mobile.RefreshAction | Sztring |  <nobr>pull-to-refresh</nobr><br>gombra | Annak konfigurálása, hogy a jelentés frissítéséhez rendelkezésre áll-e a felhasználónak egy gomb, vagy a frissítés húzással műveletet kell-e használnia. |
 | com.microsoft.powerbi.mobile.FooterAppearance | Sztring |  docked<br>dynamic | Annak konfigurálása, hogy a jelentés lábléce a jelentés alján rögzített vagy automatikusan rejtett legyen-e. |
 

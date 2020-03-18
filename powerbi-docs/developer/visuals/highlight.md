@@ -6,28 +6,28 @@ ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/31/2019
-ms.openlocfilehash: 0c1263760157371f9f4d9fc0f122d6e37d73d720
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: d406396db64b52326bbd8ea2aa485cd3d7451294
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819169"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380036"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Adatpontok kiemelése Power BI-vizualizációkban
 
 Egy elem kijelölésekor a `dataView` objektum `values` tömbje alapértelmezés szerint csak a kijelölt értékekre lesz szűrve. Emiatt az oldal többi vizualizációja csak a kijelölt adatokat jeleníti meg.
 
-![highlight `dataview` default behavior](./media/highlight-dataview.png)
+![highlight `dataview` default behavior](media/highlight/highlight-dataview.png)
 
 Ha `capabilities.json` fájl `supportsHighlight` tulajdonságát `true` értékre állítja, a teljes szűretlen `values` tömböt kapja eredményül egy `highlights` tömbbel együtt. A `highlights` tömb az értékek tömbjével megegyező hosszúságú lesz, a nem kijelölt értékek pedig `null` lesznek beállítva. A tulajdonság engedélyezésével a vizualizáció felelősségévé válik a megfelelő adatok kiemelése – `values` a tömb `highlights` a tömbbel való összehasonlításával.
 
-![A `dataview` támogatja a kiemelést](./media/highlight-dataview-supports.png)
+![A `dataview` támogatja a kiemelést](media/highlight/highlight-dataview-supports.png)
 
 A példában megfigyelheti, hogy 1 sáv ki van jelölve. Ez az egyetlen érték a kiemelt tömbben. Emellett fontos megjegyezni, hogy több kijelölés, valamint részleges kiemelés is szerepelhet. A kiemelt értékek az adatnézetben jelennek meg.
 
-> [!Note]
+> [!NOTE]
 > A táblázatos adatnézet leképezése nem támogatja a kiemelés funkciót.
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Az adatpontok kiemelése kategorikus adatnézet-leképezéssel
@@ -187,7 +187,7 @@ public update(options: VisualUpdateOptions) {
 
 Ahol a `categoryValues` egy kategóriaértékekből álló tömb, a `measureValues` egy mértékekből álló tömb, és a `measureHighlights` tartalmazza az értékek kiemelt részeit.
 
-> [!Note]
+> [!NOTE]
 > A `measureHighlights` tulajdonságnak lehet kevesebb értéke, mint a `categoryValues` tulajdonságnak.
 > Ez azt jelenti, hogy az értékeknek egy része lett kijelölve.
 
@@ -271,7 +271,7 @@ div.value {
 
 Az eredményben elvileg a vizualizáció következő nézetének kell szerepelnie.
 
-![A kategorikus adatnézet-leképezést és kiemelést tartalmazó vizualizációk](./media/dev-categorical-visual-highlight-demo.gif)
+![A kategorikus adatnézet-leképezést és kiemelést tartalmazó vizualizációk](media/highlight/dev-categorical-visual-highlight-demo.gif)
 
 ## <a name="highlight-data-points-with-matrix-data-view-mapping"></a>Az adatpontok kiemelése mátrix adatnézet-leképezéssel
 
@@ -582,7 +582,7 @@ JSON.stringify(options.dataViews[0].matrix.rows.root.children[0].children[0].chi
 
 Ahol a `value` (érték) tulajdonság jelöli a csomópont értékét egy másik vizualizációból való kijelölés alkalmazása nélkül, és a highlight (kiemelés) tulajdonság azt jelzi, hogy az adatok melyik része lett kijelölve.
 
-> [!Note]
+> [!NOTE]
 > A `highlight` (kiemelés) tulajdonságnak lehet kevesebb értéke, mint a `value` (érték) tulajdonságnak.
 > Ez azt jelenti, hogy az értékeknek egy része lett kijelölve.
 
@@ -643,7 +643,7 @@ public update(options: VisualUpdateOptions) {
 
 A visszaadott eredmény a vizualizáció, gombokkal és a `highlighted value/default value` (kiemelt érték/alapértelmezett érték) értékekkel
 
-![Vizualizáció mátrix adatnézet-leképezéssel és kiemeléssel](./media/dev-matrix-visual-highlight-demo.gif)
+![Vizualizáció mátrix adatnézet-leképezéssel és kiemeléssel](media/highlight/dev-matrix-visual-highlight-demo.gif)
 
 ## <a name="next-steps"></a>Következő lépések
 

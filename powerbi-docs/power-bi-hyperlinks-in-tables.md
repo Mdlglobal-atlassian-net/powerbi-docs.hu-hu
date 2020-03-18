@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/13/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f8a49780804449296194d7adb8091f7f0c5748fe
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 021aeafab4deb5afb39cd3986b3fb68b62b483f0
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427806"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381261"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Hivatkozások (URL-címek) felvétele táblázatba vagy mátrixba
 Ez a témakör a hivatkozások (URL-címek) táblázatokba való felvételét mutatja be. Hivatkozásokat a Power BI Desktop használatával vehet fel adathalmazokba. Ezeket a hivatkozásokat a Power BI Desktopban vagy a Power BI szolgáltatásban adhatja hozzá a jelentések táblázataihoz és mátrixaihoz. Ezután megjelenítheti az URL-címet vagy a hivatkozás ikonját, vagy hivatkozásszövegként formázhat egy másik oszlopot.

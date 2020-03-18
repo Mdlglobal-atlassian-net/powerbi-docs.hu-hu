@@ -10,11 +10,11 @@ ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: f1722690ff974a9d4fac6e94243e1024bfbfc12e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877609"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207068"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Szűrők és kiemelés a Power BI-jelentésekben
  Ez a cikk bevezetést nyújt a Power BI szűrő és kiemelő funkcióiba. A funkciók szinte ugyanúgy működnek, mint a Power BI Desktop szolgáltatásban. A *szűrők* használatával minden olyan adatot eltávolíthat, amelyek az Ön szempontjából lényegtelenek. A *Kiemelés* nem szűrés. Nem távolítja el az adatokat, hanem kiemeli a látható adatok egy részét, miközben a ki nem emelt adatok halványan láthatóak maradnak.

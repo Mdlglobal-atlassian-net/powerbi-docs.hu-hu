@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 546480ae863c63d6517fde7c98e7c9787c022ab6
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3cb8f5af63960667dc46cab1d818ba48943fd582
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875550"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378074"
 ---
 # <a name="sorting-options-for-power-bi-visuals"></a>A Power BI-vizualizációk rendezési beállításai
 
@@ -31,7 +31,7 @@ Az `default` lehetőség a rendezés legegyszerűbb formája. Ezzel rendezhetők
     }
 ```
 
-![Rendezési beállítások a helyi menüben](./media/sorting.png)
+![Rendezési beállítások a helyi menüben](media/sort-options/sorting.png)
 
 ## <a name="implicit-sorting"></a>Implicit rendezés
 

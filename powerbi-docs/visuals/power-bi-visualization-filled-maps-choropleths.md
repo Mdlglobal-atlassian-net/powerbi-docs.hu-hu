@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6a3458de09cece30948ff848859f05ed8127d034
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a2ac2820c7beb3a82650716896ddd36b79c82e07
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75757853"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436065"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Kitöltött (koropletikus) térképek létrehozása és használata a Power BI-ban
 
@@ -63,7 +63,7 @@ Ezen a videón Kim egy egyszerű térképet hoz létre és alakít át kitöltö
    > 
    > 
 
-[VIDEÓ https://www.youtube.com/embed/ajTPGNpthcg ]
+> [VIDEÓ https://www.youtube.com/embed/ajTPGNpthcg ]
 
 ### <a name="create-a-filled-map"></a>Kitöltött térkép létrehozása
 1. A Mezők panelen válassza a **Geo** \> **Állam** mezőt.    
@@ -130,7 +130,7 @@ A térképadatok nem feltétlenül egyértelműek.  Van például egy Paris nev�
 
 Ha rendelkezik az adatkészlet Power BI Desktopban történő szerkesztéséhez szükséges jogosultsággal, akkor tekintse meg ezt a térképek kétértelműségének feloldásában segítő videót.
 
-[VIDEÓ https://www.youtube.com/embed/Co2z9b-s_yM ]
+> [VIDEÓ https://www.youtube.com/embed/Co2z9b-s_yM ]
 
 Ha nem fér hozzá a szélességi és hosszúsági adatokhoz, azonban szerkesztheti az adatkészletet, [kövesse ezt az útmutatást az adatkészlet frissítéséhez](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 

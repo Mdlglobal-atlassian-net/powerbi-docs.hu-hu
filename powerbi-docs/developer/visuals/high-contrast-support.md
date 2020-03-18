@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 021040706ff34f43c6a7772849f2e27181041bc9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 56ebfeb8c1c52b83f5be0ca9e9db6f312986dd57
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880053"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380141"
 ---
 # <a name="high-contrast-mode-support-in-power-bi-visuals"></a>Kontrasztos mód támogatása Power BI-vizualizációkban
 
@@ -82,9 +82,9 @@ A Power BI natív vizualizációi az alábbi irányelveket követik:
 
 Az alábbi minta-sávdiagramon például minden sáv két képpontos előtérszínű körvonallal, a háttérszínnel kitöltve jelenik meg. Összehasonlíthatja az alapértelmezett színekkel és néhány kontrasztos témával megjelenő változatokat:
 
-![A sampleBarChart szabványos színekben](./media/hc-samplebarchart-standard.png)
-![A sampleBarChart a *Sötét #2* téma használatával](./media/hc-samplebarchart-dark2.png)
-![A sampleBarChart a *Fehér* téma használatával](./media/hc-samplebarchart-white.png)
+![A sampleBarChart szabványos színekben](media/high-contrast-support/hc-samplebarchart-standard.png)
+![A sampleBarChart a *Sötét #2* téma használatával](media/high-contrast-support/hc-samplebarchart-dark2.png)
+![A sampleBarChart a *Fehér* téma használatával](media/high-contrast-support/hc-samplebarchart-white.png)
 
 A következő szakasz a `visualTransform` függvény egy olyan részeltét mutatja be, amely a kontrasztos mód támogatása érdekében lett módosítva. Ez a frissítés során a renderelés részeként van meghívva.
 

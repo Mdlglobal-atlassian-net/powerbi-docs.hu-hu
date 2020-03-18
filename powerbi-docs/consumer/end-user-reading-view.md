@@ -10,16 +10,19 @@ ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/30/2019
+ms.date: 03/11/2020
 ms.author: mihart
-ms.openlocfilehash: 09b9bf10c3328ecc4eb9ca9d16460b1bcfab0da5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: eeffb4c0fb7db57eacf18818275716db42679f6e
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862676"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79206033"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Rövid útmutató: A Power BI *felhasználói* képességeivel kapcsolatos tudnivalók
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+
 Ebből a rövid útmutatóból megtudhatja, hogyan használhatja a Power BI-t az adatokon alapuló üzleti megállapítások felfedezéséhez. Ez a cikk nem részletes ismertető, sokkal inkább a Power BI-**felhasználók** számára elérhető műveletek rövid áttekintése.
 
 Ha még nem regisztrált a Power BI-ra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://app.powerbi.com/signupredirect?pbi_source=web).
@@ -34,7 +37,7 @@ A Power BI szolgáltatásban az Olvasó nézet elérhető a *jelentésfelhaszná
 
 Mindössze meg kell nyitnia a Power BI szolgáltatást egy böngészőben vagy a mobileszközön. Ön és munkatársai ugyanazokat a megbízható alkalmazásokat, irányítópultokat és jelentéseket használják, amelyek automatikusan frissülnek, így mindenki mindig a legfrissebb tartalommal dolgozhat.   
 
-Mivel a tartalom nem statikus, azokat mélyebben is megvizsgálhatják, és trendeket, információkat és más üzletiintelligencia-elemzéseket tárhatnak fel. A tartalmat szeletelheti és más módon is rendszerezheti, sőt akár saját szavaival is feltehet kérdéseket. Vagy egyszerűen megvárhatja, hogy az adatokból érdekes információk szülessenek, értesítéseket kérhet az adatváltozásokról, és e-mailben kaphat jelentéseket az Ön által megadott ütemezés szerint. Az összes adata bármikor, a felhőben vagy a helyszínen is bármely eszközről elérhető. 
+Mivel a tartalom nem statikus, részleteibe menően megvizsgálhatja, és ezáltal trendeket, megállapításokat és más üzletiintelligencia-elemzéseket tárhat fel. A tartalmat szeletelheti és más módon is rendszerezheti, sőt akár saját szavaival is feltehet kérdéseket. Vagy egyszerűen megvárhatja, hogy az adatokból érdekes információk szülessenek, értesítéseket kérhet az adatváltozásokról, és e-mailben kaphat jelentéseket az Ön által megadott ütemezés szerint. Az összes adata bármikor, a felhőben vagy a helyszínen is bármely eszközről elérhető. 
 
 Ha többet szeretne megtudni, olvasson tovább.
 
@@ -186,7 +189,7 @@ A vizualizáció létrehozásához használt adatok megjelenítésén kívül ex
 
 ![Excelbe exportált adatok](./media/end-user-reading-view/power-bi-export-powerpoint.png)
 
-<!-- Exporting isn’t limited to individual visuals; you can export entire reports to PowerPoint or PDF to share with your colleagues.
+<!-- Exporting isn't limited to individual visuals; you can export entire reports to PowerPoint or PDF to share with your colleagues.
 
 ![data exported to PowerPoint](./media/end-user-reading-view/power-bi-export-powerpoint.png) -->
 

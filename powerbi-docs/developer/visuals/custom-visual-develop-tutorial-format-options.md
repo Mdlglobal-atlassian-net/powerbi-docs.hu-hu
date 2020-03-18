@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
-ms.openlocfilehash: f1a1bfc161fe163a4c4680dbcc90e6ad28b80a90
-ms.sourcegitcommit: 0da17de80c9651f9f4474d1abb1bdaaade8808fb
+ms.openlocfilehash: 3d0dc39fbf6d1daf978292d0e5e43129e66376c7
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "75498485"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381008"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Oktatóanyag: Formázási beállítások hozzáadása Power BI-vizualizációhoz
 
@@ -287,4 +287,4 @@ Az egyéni vizualizációban végzett hibakereséssel kapcsolatban a [hibakeres�
 
 ## <a name="next-steps"></a>Következő lépések
 
-Újonnan elkészített vizualizációit elérhetővé teheti mások számára, ha beküldi őket az **AppSource**-ba. Erről az eljárásról az [Egyéni vizualizációk közzététele az AppSource-ban](../office-store.md) című cikk nyújt részletesebb tájékoztatást.
+Újonnan elkészített vizualizációit elérhetővé teheti mások számára, ha beküldi őket az **AppSource**-ba. Erről az eljárásról a [Power BI-vizualizációk közzététele az AppSource-ban](office-store.md) című cikk nyújt részletesebb tájékoztatást.

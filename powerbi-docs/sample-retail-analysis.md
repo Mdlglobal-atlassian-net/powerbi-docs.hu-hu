@@ -10,11 +10,11 @@ ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 42e3a95e344e17d1ceba11911fc8aa349ebafd0c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858573"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207482"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Kiskereskedelmi elemzési minta – Power BI: Bemutató megtekintése
 
@@ -160,7 +160,7 @@ Végezetül mérjük fel növekedést az idén nyílt új üzletek vizsgálatáv
 5. Jelölje ki a szeletelőben a **Cincinnati 2 Fashions Direct** elemet, és a vonaldiagramon figyelje meg, hogy az üzlet júniusban nyílt meg, és valószínűleg ez a legrosszabbul teljesítő üzlet.
 6. A diagramokon lévő egyéb sávok, vonalak és buborékok kijelölésével további összefüggéseket fedezhet fel.
 
-## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
+## <a name="next-steps-connect-to-your-data"></a>További lépések: Csatlakozás az adatokhoz
 Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
 
 Reméljük, hogy ez a bemutató segített megérteni a mintaadatok Power BI irányítópultok, Q&A és jelentések segítségével történő elemzését. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).

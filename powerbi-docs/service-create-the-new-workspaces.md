@@ -10,11 +10,11 @@ ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: bbb5eeee7422670c771f7bbfb4b051de0538a10a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877521"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207827"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Új munkaterületek létrehozása a Power BI-ban
 

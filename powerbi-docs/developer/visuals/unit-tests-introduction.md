@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 590f11f23a04a698459cc4db99efe5308ccc0ce3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 996e409e634292ca0767f34c49931cfbcdcd4b94
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879963"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379555"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Oktatóanyag: Egységtesztek hozzáadása Power BI-vizualizációs projektekhez
 
@@ -381,7 +381,7 @@ npm run test
 
 A `karma.js` a Chrome böngészőben futtatja a tesztesetet.
 
-![A Chrome böngészőben futó Karma-JavaScript](./media/karmajs-chrome.png)
+![A Chrome böngészőben futó Karma-JavaScript](media/unit-tests-introduction/karmajs-chrome.png)
 
 > [!NOTE]
 > A Google Chrome böngészőt helyileg kell telepítenie.
@@ -453,7 +453,7 @@ A `SampleBarChartDataBuilder` osztály kiterjeszti a `TestDataViewBuilder` eleme
 
 Amikor adatmezőgyűjtőkbe helyezi az adatokat, a Power BI egy kategorikus `dataview` objektumot hoz létre az adatok alapján.
 
-![Adatmezőgyűjtők](./media/fields-buckets.png)
+![Adatmezőgyűjtők](media/unit-tests-introduction/fields-buckets.png)
 
 Az egységtesztek során nem állnak rendelkezésére a Power BI alapvető funkciói az adatok reprodukálásához. A statikus adatokat azonban le kell képeznie a kategorikus `dataview` elemekre. A leképezésben a `TestDataViewBuilder` osztály segíthet.
 
@@ -596,23 +596,23 @@ Lines        : 52.83% ( 112/212 )
 
 A vizualizáció az alábbi ábrán látható módon megnyílik a Chrome böngészőben:
 
-![UT-indítások a Chrome-ban](./media/karmajs-chrome-ut-runned.png)
+![UT-indítások a Chrome-ban](media/unit-tests-introduction/karmajs-chrome-ut-runned.png)
 
 Az összegzés a lefedettség növekedését mutatja. Az aktuális kódlefedettségről a következő helyen találhat további információkat: `coverage\index.html`.
 
-![UT-lefedettségi index](./media/code-coverage-index.png)
+![UT-lefedettségi index](media/unit-tests-introduction/code-coverage-index.png)
 
 Megtekintheti az `src` könyvtár hatókörét is:
 
-![Az scr könyvtár lefedettsége](./media/code-coverage-src-folder.png)
+![Az scr könyvtár lefedettsége](media/unit-tests-introduction/code-coverage-src-folder.png)
 
 A fájl hatókörében megtekintheti a forráskódot. A `Coverage` segédprogramok piros színnel emelik ki a sort, ha valamely kód nincs végrehajtva az egységteszt során.
 
-![A visual.ts fájl kódlefedettsége](./media/code-coverage-visual-src.png)
+![A visual.ts fájl kódlefedettsége](media/unit-tests-introduction/code-coverage-visual-src.png)
 
 > [!IMPORTANT]
 > A kódlefedettség nem jelenti azt, hogy jó a vizualizáció funkciólefedettsége. Egy egyszerű egységteszt több, mint 96%os lefedettséget biztosít a `src\visual.ts` fájlban.
 
 ## <a name="next-steps"></a>Következő lépések
 
-A kész vizualizációt beküldheti közzétételre. További információ: [Power BI-vizualizációk közzététele az AppSource-ban](../office-store.md).
+A kész vizualizációt beküldheti közzétételre. További információ: [Power BI-vizualizációk közzététele az AppSource-ban](office-store.md).

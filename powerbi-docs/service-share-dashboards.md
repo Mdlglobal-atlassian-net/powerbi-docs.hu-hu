@@ -11,11 +11,11 @@ ms.date: 11/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 96f78ff87dc4f955e134815e6237e4fb5a1ca1e7
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77426679"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205688"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI-irányítópult és -jelentés megosztása munkatársakkal és másokkal
 A *Megosztással* egyszerűen biztosíthatja néhány személy hozzáférését az irányítópultjaihoz és jelentéseihez. A Power BI-ban [többféle módon valósítható meg az irányítópultok és jelentések közös használata és terjesztése](service-how-to-collaborate-distribute-dashboards-reports.md).

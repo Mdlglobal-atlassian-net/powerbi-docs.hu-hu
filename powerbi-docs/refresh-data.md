@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2db2b4f02dac1ebcd9d24a8217a181efa9ce0779
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 810077e8c651d3d6faf91eecb6fd320c24a69d2f
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76039035"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488798"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
 
@@ -76,7 +76,7 @@ Mivel a Power BI nem importálja az adatokat, adatfrissítés futtatására ninc
 A Leküldés módú adathalmazok nem tartalmaznak adatforrás-definíciót, ezért nem igényelnek adatfrissítést a Power BI-ban. A frissítésükhöz olyan külső szolgáltatáson vagy folyamaton keresztül kell leküldeni az adatokat az adathalmazba, mint az Azure Stream Analytics. Ezt a módszert gyakran alkalmazzák a Power BI-jal végzett valós idejű elemzésekhez. A Power BI ilyenkor is végez gyorsítótár-frissítéseket a leküldéses adathalmazra épülő csempékhez. Részletes útmutatást az [Oktatóanyag: A Stream Analytics és a Power BI: Valós idejű elemzési irányítópult streamelési adatokhoz](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
 
 > [!NOTE]
-> A Leküldés módra vonatkozik néhány, [A Power BI REST API korlátozásai](developer/api-rest-api-limitations.md) című cikkben dokumentált korlátozása.
+> A Leküldés módra vonatkozik néhány, [A Power BI REST API korlátozásai](developer/automation/api-rest-api-limitations.md) című cikkben dokumentált korlátozása.
 
 ### <a name="power-bi-refresh-types"></a>Frissítési típusok a Power BI-ban
 
@@ -317,7 +317,7 @@ A figyelmeztetés ikon segít az adathalmazzal kapcsolatos aktuális problémák
 
 ## <a name="automatic-page-refresh"></a>Automatikus oldalfrissítés
 
-Az automatikus oldalfrissítés a jelentésoldal szintjén működik, és lehetővé teszi, hogy a jelentés szerzője beállítson egy frissítési időközt az oldal vizualizációjához, amely csak akkor aktív, amikor a lap használatban van. Az automatikus oldalfrissítés csak DirectQuery-adatforrások esetén érhető el. A minimális frissítési időköz attól függ, hogy a jelentés milyen típusú munkaterületen van közzétéve, valamint hogy a Prémium munkaterületekre és [beágyazott munkaterületekre](developer/embedding.md) vonatkozóan milyen kapacitásbeállításokat alkalmazott a rendszergazda.
+Az automatikus oldalfrissítés a jelentésoldal szintjén működik, és lehetővé teszi, hogy a jelentés szerzője beállítson egy frissítési időközt az oldal vizualizációjához, amely csak akkor aktív, amikor a lap használatban van. Az automatikus oldalfrissítés csak DirectQuery-adatforrások esetén érhető el. A minimális frissítési időköz attól függ, hogy a jelentés milyen típusú munkaterületen van közzétéve, valamint hogy a Prémium munkaterületekre és [beágyazott munkaterületekre](developer/embedded/embedding.md) vonatkozóan milyen kapacitásbeállításokat alkalmazott a rendszergazda.
 
 Az automatikus oldalfrissítésről az [automatikus oldalfrissítés](desktop-automatic-page-refresh.md) című cikkben olvashat bővebben.
 

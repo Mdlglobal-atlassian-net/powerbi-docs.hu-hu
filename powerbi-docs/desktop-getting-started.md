@@ -6,22 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/09/2019
+ms.date: 03/13/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b32eee568ba560e95899cf0965a11f3bb037aed6
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 719c07abdcdb42916db8a01a7fab28d3f6c98fba
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75222455"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133345"
 ---
 # <a name="get-started-with-power-bi-desktop"></a>Első lépések a Power BI Desktopban
 Üdvözöljük a Power BI Desktoppal tett első lépésekhez szóló útmutatóban. Bemutatjuk a Power BI Desktop működését, képességeit, és hogy hogyan készíthet robusztus adatmodelleket és látványos jelentéseket az üzleti intelligencia erősítéséhez.
 
 A Power BI Desktop működését és használatát gyorsan áttekintheti, ha néhány perc alatt végignézi az útmutató képernyőképeit. Ha alaposabban el szeretne mélyedni a témában, elolvashat minden szakaszt, végrehajthatja a lépéseket, és elkészítheti saját Power BI Desktop-fájlját, amelyet közzétehet a [Power BI szolgáltatásban](https://app.powerbi.com/), és megoszthat másokkal.
 
-![Power BI Desktop-jelentés](media/desktop-getting-started/hero.png)
+![Power BI Desktop-jelentés](media/desktop-getting-started/hero-02.png)
 
 Megtekintheti a [Power BI Desktop – Az első lépések](https://www.youtube.com/watch?v=Qgam9M8I0xA) című videót, és letöltheti a [Pénzügyi minta](https://go.microsoft.com/fwlink/?LinkID=521962) Excel-munkafüzetet a videóban bemutatott lépések követéséhez.
 

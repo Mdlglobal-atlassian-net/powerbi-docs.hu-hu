@@ -8,22 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/22/2019
-ms.openlocfilehash: c39c7234ec4bc1b632355f92bdfdec9dc2b21ae4
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 932e458c90b248e01a88d45a849838cff27f6dcb
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079278"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488200"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Adatok elküldése Power BI-adatkészletbe
 
 A Power BI API-val adatokat küldhet egy Power BI-adatkészletbe. Ebben a cikkben bemutatjuk, hogyan lehet leküldeni egy terméktáblázatot tartalmazó értékesítési marketing-adatkészletet egy meglévő adatkészletbe.
 
-A kezdéshez szüksége lesz egy Azure Active Directory- (Azure AD-) és egy [Power BI-fiókra](../create-an-azure-active-directory-tenant.md).
+A kezdéshez szüksége lesz egy Azure Active Directory- (Azure AD-) és egy [Power BI-fiókra](../embedded/create-an-azure-active-directory-tenant.md).
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Adatok adatkészletbe történő elküldésének lépései
 
-* 1\. lépés: [Alkalmazás regisztrálása az Azure AD-ben](../register-app.md)
+* 1\. lépés: [Alkalmazás regisztrálása az Azure AD-ben](../embedded/register-app.md)
 * 2\. lépés: [Hitelesítési hozzáférési token beszerzése](walkthrough-push-data-get-token.md)
 * 3\. lépés: [Adatkészlet létrehozása a Power BI-ban](walkthrough-push-data-create-dataset.md)
 * 4\. lépés: [Adatkészlet lekérése, és sorok hozzáadása egy Power BI-táblához](walkthrough-push-data-get-datasets.md)
@@ -111,11 +111,11 @@ Power BI-táblaséma esetén az alábbi adattípusok használhatók.
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>További információk az adatoknak a Power BI-ba leküldésével kapcsolatban
 
-Az adatok adatkészletekbe történő küldésének első lépéseihez tekintse meg a bal oldali navigációs ablaktábla [1. lépés: Alkalmazás regisztrálása az Azure AD-ben](../register-app.md) elemét.
+Az adatok adatkészletekbe történő küldésének első lépéseihez tekintse meg a bal oldali navigációs ablaktábla [1. lépés: Alkalmazás regisztrálása az Azure AD-ben](../embedded/register-app.md) elemét.
 
 ## <a name="next-steps"></a>Következő lépések
 
-* [Regisztráció a Power BI-ra](../create-an-azure-active-directory-tenant.md)  
+* [Regisztráció a Power BI-ra](../embedded/create-an-azure-active-directory-tenant.md)  
 * [A JSON ismertetése](https://json.org/)  
 * [A Power BI REST API áttekintése](overview-of-power-bi-rest-api.md)  
 

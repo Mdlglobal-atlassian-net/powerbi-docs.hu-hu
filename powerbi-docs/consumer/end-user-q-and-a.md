@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 978a8622d9af7aee6d1314ac18ee4d1dbea51cbc
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 7739967443a8c6dc75cdaa3fbd0e472dcc090b9a
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114413"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488545"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Q&A a Power BI-ügyfelek számára
 
@@ -43,7 +43,7 @@ A Q&A-t jelentésekben is megtalálhatja, ha a jelentés *készítője* felvett 
 
 ## <a name="qa-on-dashboards"></a>Q&A az irányítópultokon
 
-A **Power BI Q&A** Pro- vagy Premium-licenccel érhető el.  A [Q&A a Power BI-mobilalkalmazásokban](mobile/mobile-apps-ios-qna.md) és a [Q&A a Power BI Embedded használatával](../developer/qanda.md) külön cikkekben szerepelnek. A **Power BI Q&A** jelenleg csak angol nyelven feltett természetes nyelvű kérdéseket támogat, de előzetes verzióban elérhető a spanyol is, amelyet a Power BI-rendszergazda engedélyezhet.
+A **Power BI Q&A** Pro- vagy Premium-licenccel érhető el.  A [Q&A a Power BI-mobilalkalmazásokban](mobile/mobile-apps-ios-qna.md) és a [Q&A a Power BI Embedded használatával](../developer/embedded/qanda.md) külön cikkekben szerepelnek. A **Power BI Q&A** jelenleg csak angol nyelven feltett természetes nyelvű kérdéseket támogat, de előzetes verzióban elérhető a spanyol is, amelyet a Power BI-rendszergazda engedélyezhet.
 
 
 ![q&a által létrehozott fatérkép](media/end-user-q-and-a/power-bi-treemap.png)

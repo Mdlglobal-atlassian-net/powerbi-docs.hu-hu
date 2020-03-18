@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: b50ebde94d78ca42437979d792fb6402affe8855
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 571d4a2992a5017114cf94c3f49296769062d8ee
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74696640"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380838"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>A Power BI-vizualizációkban végzett adatnézeti-leképezések ismertetése
 
@@ -185,7 +185,7 @@ export class Visual implements IVisual {
 
 A vizualizáció ennek eredményeképp egyetlen értéket jelenít meg a Power BI-ból:
 
-![Egy adatnézet-leképezési vizualizáció](./media/visual-simple-dataview-mapping.png)
+![Egy adatnézet-leképezési vizualizáció](media/dataview-mappings/visual-simple-dataview-mapping.png)
 
 ## <a name="categorical-data-mapping"></a>Kategorikus adatleképezés
 
@@ -493,7 +493,7 @@ export class Visual implements IVisual {
 
 A vizualizáció eredménye:
 
-![A kategorikus adatnézet-leképezést tartalmazó vizualizáció](./media/categorical-data-view-mapping-visual.png)
+![A kategorikus adatnézet-leképezést tartalmazó vizualizáció](media/dataview-mappings/categorical-data-view-mapping-visual.png)
 
 ## <a name="table-data-mapping"></a>Táblázatos adatleképezés
 
@@ -508,7 +508,7 @@ A megadott képességekkel:
     {
         "displayName": "Column",
         "name": "column",
-        "kind": "Measure"
+        "kind": "Grouping"
     },
     {
         "displayName": "Value",
@@ -557,7 +557,7 @@ Példaadatok:
 
 Adatkötés:
 
-![Táblázatos adatnézet-leképezés adatkötései](./media/table-dataview-mapping-data.png)
+![Táblázatos adatnézet-leképezés adatkötései](media/dataview-mappings/table-dataview-mapping-data.png)
 
 A Power BI a táblázatos adatnézetként jeleníti meg az adatokat. Nem feltételezhető, hogy az adatok rendezve vannak.
 
@@ -603,7 +603,7 @@ A Power BI a táblázatos adatnézetként jeleníti meg az adatokat. Nem feltét
 
 Összesítheti is az adatokat, ha kijelöli a kívánt mezőt, majd az összegzést választja.  
 
-![Adatösszesítés](./media/data-aggregation.png)
+![Adatösszesítés](media/dataview-mappings/data-aggregation.png)
 
 Mintakód a táblázatos adatnézet-leképezés feldolgozásához.
 
@@ -686,7 +686,7 @@ td {
 }
 ```
 
-![A táblázatos adatnézet-leképezést tartalmazó vizualizáció](./media/table-dataview-mapping-visual.png)
+![A táblázatos adatnézet-leképezést tartalmazó vizualizáció](media/dataview-mappings/table-dataview-mapping-visual.png)
 
 ## <a name="matrix-data-mapping"></a>Mátrixos adatleképezés
 
@@ -767,7 +767,7 @@ Adatkészlet:
 
 A Power BI alap mátrix vizualizációja az adatokat táblázatként jeleníti meg.
 
-![Mátrix vizualizáció](./media/matrix-visual-smaple.png)
+![Mátrix vizualizáció](media/dataview-mappings/matrix-visual-smaple.png)
 
 A vizualizáció az alábbi kódban leírtak alapján kap adatstruktúrát (itt csak az első két táblázatsor látható):
 

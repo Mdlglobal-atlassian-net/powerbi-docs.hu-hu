@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 320e8a25206a069c43800295ab64a7ab87afbcf0
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: 98af83c726cfd4e5b4e6744cbcfa1f7e5a69f57b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885255"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381445"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Adatpontkorlátok és -stratégiák alkalmazása vizualizációtípus szerint
 
@@ -74,7 +74,7 @@ Lásd: [A vonalas mintavételezés működése](../desktop-high-density-sampling
 ### <a name="combo-chart"></a>Kombinált diagram
  Ugyanazokat a stratégiákat használja, mint az oszlopdiagram. Figyelje meg, hogy a **kombinált diagram** vonala nem azt a sűrű algoritmust használja, amit a **vonaldiagram**.
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 Akár 30 000 is lehet, de a vizualizáció készítői döntik el, hogy mely stratégiák legyenek használva. Az alapértelmezett korlát 1000, a vizualizáció készítője azonban ezt legfeljebb 30 000-ig módosíthatja.
 
 ### <a name="doughnut"></a>Perec

@@ -9,19 +9,19 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 06/18/2019
-ms.openlocfilehash: c5530767d37e9c9dfaf5270037d873fc4d1a58ec
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 43fcc0873006cfd42c97a287c7bff66f5995bfef
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880277"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380949"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Az Elemzés panel Power BI-vizualizációkban
 
 Az **Elemzés panel** 2018 novemberében lett bevezetve [natív vizualizációkhoz](https://docs.microsoft.com/power-bi/desktop-analytics-pane).
 Ez a cikk azt ismerteti, hogy hogyan jeleníthetik meg és kezelhetik tulajdonságaikat a Power BI-vizualizációk az API 2.5.0-ás verziójával az **Elemzés panelen**.
 
-![Az Elemzés panel](./media/visualization-pane-analytics-tab.png)
+![Az Elemzés panel](media/analytics-pane/visualization-pane-analytics-tab.png)
 
 ## <a name="manage-the-analytics-pane"></a>Az Elemzés panel kezelése
 

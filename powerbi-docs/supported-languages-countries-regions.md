@@ -10,11 +10,11 @@ ms.date: 10/03/2019
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 951a05247a02e379c56c45176edb622e683af413
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "73876892"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207735"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>A Power BI által támogatott nyelvek és országok/régiók
 
@@ -151,7 +151,7 @@ Akár letölti, akár a Windows Áruházból telepíti a Power BI Desktopot, egy
 3. A **Területi beállítások importáláshoz** résznél válasszon másik területi beállítást. 
    
    ![A Power BI Desktop beállítások párbeszédpanel](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
-4. Kattintson az **OK** gombra.
+4. Válassza az **OK** lehetőséget.
 
 ### <a name="choose-the-language-for-the-model-in-power-bi-desktop"></a>A Power BI Desktopban használt modell nyelvének kiválasztása
 
@@ -192,7 +192,7 @@ A súgó a következő 10 nyelven van honosítva:
 * Orosz – Русский
 * Spanyol – español
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 * A Power BI-mobilalkalmazások egyikét használja? Ismerkedjen meg a [Támogatott nyelvek a Power BI-mobilalkalmazásokban](consumer/mobile/mobile-apps-supported-languages.md) című cikk tartalmával.
 * Kérdése van? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).
 * Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).

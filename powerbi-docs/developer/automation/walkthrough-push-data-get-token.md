@@ -8,22 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/29/2019
-ms.openlocfilehash: 4b1c890a69863f3e05dee052efe9529b174f0874
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 7e74b01a6b12302393a3e4bc40b2e9cccfc13d63
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079117"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488269"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>2\. lépés: Hitelesítési hozzáférési jogkivonat beszerzése
 
 Ez a cikk az [Adatok elküldése Power BI-adatkészletbe](walkthrough-push-data.md) című sorozat második lépése.
 
-Az 1. lépésben [regisztrált egy ügyfélalkalmazást az Azure AD-ben](../register-app.md). Ebben a lépésben hitelesítéshez szükséges hozzáférési jogkivonatot fogja beszerezni. A Power BI-alkalmazások integrálva vannak az Azure Active Directoryval, hogy biztonságos bejelentkezést és hitelesítést biztosítsanak az alkalmazáshoz. Az Azure AD-hitelesítéshez és a Power BI-erőforrásokhoz való hozzáféréshez az alkalmazás jogkivonatokat használ.
+Az 1. lépésben [regisztrált egy ügyfélalkalmazást az Azure AD-ben](../embedded/register-app.md). Ebben a lépésben hitelesítéshez szükséges hozzáférési jogkivonatot fogja beszerezni. A Power BI-alkalmazások integrálva vannak az Azure Active Directoryval, hogy biztonságos bejelentkezést és hitelesítést biztosítsanak az alkalmazáshoz. Az Azure AD-hitelesítéshez és a Power BI-erőforrásokhoz való hozzáféréshez az alkalmazás jogkivonatokat használ.
 
 ## <a name="get-an-authentication-access-token"></a>Hitelesítési hozzáférési jogkivonat beszerzése
 
-A kezdés előtt győződjön meg róla, hogy elvégezte az [Adatok leküldése Power BI-adatkészletekbe](walkthrough-push-data.md) sorozat [előző lépését](../register-app.md). 
+A kezdés előtt győződjön meg róla, hogy elvégezte az [Adatok leküldése Power BI-adatkészletekbe](walkthrough-push-data.md) sorozat [előző lépését](../embedded/register-app.md). 
 
 Ehhez az eljáráshoz a Visual Studio 2015 vagy újabb verziója szükséges.
 
@@ -39,7 +39,7 @@ Ehhez az eljáráshoz a Visual Studio 2015 vagy újabb verziója szükséges.
 
 3. Adja hozzá a lépések után található mintakódot a Program.cs fájlhoz.
 
-4. Cserélje le a „{ClientID}” kifejezést az [előző cikkben](../register-app.md) az alkalmazás regisztrálásakor kapott **ügyfél-azonosítóra**.
+4. Cserélje le a „{ClientID}” kifejezést az [előző cikkben](../embedded/register-app.md) az alkalmazás regisztrálásakor kapott **ügyfél-azonosítóra**.
 
 5. Futtassa a Konzolalkalmazást, és jelentkezzen be a Power BI-fiókjába. 
 

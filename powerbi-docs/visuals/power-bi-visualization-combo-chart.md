@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 11be774515552d10846b51863eda6c155b92b57f
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: b0ed499a272fc3f6fc0590117898c64551fedac1
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75758083"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436088"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Kombinált diagramok létrehozása és használata a Power BI-ban
 
@@ -98,8 +98,7 @@ A januári bruttó nyereség 35% volt, áprilisban egy 45%-os csúcs következet
    ![példa fürtözött kombinált diagram](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
 
 ## <a name="add-titles-to-the-axes"></a>Címek felvétele tengelyekhez
-1. Válassza a festőhenger ikont 
-1. ![festőhenger ikon](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) A Formázás ablaktábla megnyitása.
+1. Válassza a festőhenger ikont ![festőhenger ikon](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) A Formázás ablaktábla megnyitása.
 1. Az **Y tengely** kibontásához válassza a lefelé mutató nyilat.
 1. Az **Y tengely (Oszlop)** tulajdonságai között állítsa a **Pozíciót** **Balra**, a **Címet** **Be**, a **Stílust** **Csak a cím megjelenítése**, a **Megjelenítési egységeket** pedig **Millió** értékre.
 

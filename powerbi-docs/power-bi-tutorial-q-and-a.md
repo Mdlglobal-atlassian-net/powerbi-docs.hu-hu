@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 183ce11457069612f84bb834d7060a047cae1866
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 71a727d1d7e39661ed86a4fdf574e3f1fa8fb595
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73875090"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488867"
 ---
 # <a name="use-power-bi-qa-to-explore-your-data-and-create-visuals"></a>A Power BI Q&A használatával áttekintheti az adatait, és vizualizációkat hozhat létre
 
 Ha válaszokat keres az adatokban, néha az a leggyorsabb megoldás, ha természetes nyelven kérdez. A Power BI Q&A funkciójával a saját szavaival tekintheti át az adatait.  A cikk első része bemutatja a Q&A használatát a Power BI szolgáltatás irányítópultjaiban. A második rész bemutatja, hogy mit tehet a Q&A-vel, amikor jelentéseket készít a Power BI szolgáltatással vagy a Power BI Desktoppal. További információt a [Q&A felhasználóknak készült](consumer/end-user-q-and-a.md) cikkében talál. 
 
-A [Q&A a Power BI-mobilalkalmazásokban](consumer/mobile/mobile-apps-ios-qna.md) és a [Q&A a Power BI Embedded használatával](developer/qanda.md) külön cikkekben szerepelnek. 
+A [Q&A a Power BI-mobilalkalmazásokban](consumer/mobile/mobile-apps-ios-qna.md) és a [Q&A a Power BI Embedded használatával](developer/embedded/qanda.md) külön cikkekben szerepelnek. 
 
 A Q&A interaktív, és a használata még szórakoztató is. Gyakran előfordul, hogy egy kérdés további kérdéseket vet fel, mivel a vizualizációk érdekes utakat fednek fel a folytatáshoz. Figyelje meg, hogyan hoz létre Amanda vizualizációkat a Q&A-val, hogyan tárja fel ezeket a vizualizációkat, és rögzíti őket irányítópultokon.
 

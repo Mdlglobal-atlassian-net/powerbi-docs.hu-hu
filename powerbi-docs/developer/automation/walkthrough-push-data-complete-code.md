@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 1b927bcca087e832138e4ac02c555e34915febd9
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 4745935e618f47f6092f6a33d879dd95d59b9963
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079324"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488292"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Adatok leküldése egy adatkészletbe – Teljes kódlista
 
@@ -225,7 +225,7 @@ Az **Adatok leküldése adatkészletekbe** bemutató 2–5. lépésének végreh
 ## <a name="next-steps"></a>Következő lépések
 
 * [Adatok leküldése Power BI-adatkészletekbe](walkthrough-push-data.md)
-* [Alkalmazás regisztrálása az Azure AD-ben](../register-app.md)  
+* [Alkalmazás regisztrálása az Azure AD-ben](../embedded/register-app.md)  
 * [Hitelesítési hozzáférési token beszerzése](walkthrough-push-data-get-token.md)  
 * [Adatkészlet létrehozása a Power BI-ban](walkthrough-push-data-create-dataset.md)  
 * [Adatkészlet lekérése, és sorok hozzáadása egy Power BI-táblázathoz](walkthrough-push-data-get-datasets.md)  

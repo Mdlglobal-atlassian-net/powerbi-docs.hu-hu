@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 1bf7cc85411fef27e626c330cc07207187302bfc
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: aed0d1e4dec6f6efe49dd39cd5b6fc60f8977e44
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427737"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488614"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>A Power BI Premium megvásárlása
 
@@ -112,7 +112,7 @@ Ha törli a Prémium előfizetést, vagy ha lejár a kapacitáslicenc, a törlé
 
 Az A SKU-k az Azure Power BI Embedded szolgáltatásán keresztül érhetők el. Az A SKU-kat a következő módokon használhatja:
 
-- A Power BI harmadik féltől származó alkalmazásokban való beágyazásának engedélyezése. További információkat a [Power BI Embedded oldalán](developer/azure-pbie-what-is-power-bi-embedded.md) találhat.
+- A Power BI harmadik féltől származó alkalmazásokban való beágyazásának engedélyezése. További információkat a [Power BI Embedded oldalán](developer/embedded/azure-pbie-what-is-power-bi-embedded.md) találhat.
 
 - A P SKU megvásárlása előtt tesztelje a prémium szintű funkciókat.
 

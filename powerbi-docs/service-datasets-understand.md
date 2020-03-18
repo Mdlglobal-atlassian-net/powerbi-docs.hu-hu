@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: eaa4354ed7355c0e01d9f75675cb7fed4bdc9d96
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 6170217119e443a2eb24aac056623dce5070303e
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74133727"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79208011"
 ---
 # <a name="datasets-in-the-power-bi-service"></a>Adathalmazok a Power BI szolgáltatásban
 
@@ -26,7 +26,7 @@ A Power BI-adathalmazok a jelentések és vizualizációk készítéshez alkalma
 - Csatlakozás olyan meglévő adatmodellhez, amely nem Power BI-kapacitásban van üzemeltetve
 - Modellt tartalmazó Power BI Desktop-fájl feltöltése
 - Excel-munkafüzet feltöltése (amely egy vagy több Excel-táblázatot és/vagy munkafüzet-adatmodellt tartalmaz), vagy CSV- (vesszővel tagolt értékeket tartalmazó) fájl feltöltése
-- [Leküldéses adathalmaz](developer/walkthrough-push-data.md) létrehozása a Power BI szolgáltatással
+- [Leküldéses adathalmaz](developer/automation/walkthrough-push-data.md) létrehozása a Power BI szolgáltatással
 - [Streamelési vagy hibrid streamelési adathalmaz](service-real-time-streaming.md) létrehozása a Power BI szolgáltatással
 
 A streamelési adathalmazok kivételével az adathalmazok egy adatmodellt képviselnek, amely az [Analysis Services](/analysis-services/analysis-services-overview) kiforrott modellezési technológiáit hasznosítja.
