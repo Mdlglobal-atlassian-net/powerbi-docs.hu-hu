@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 9f9383e5cdb4b4690ef75294f7ff8c17fb643d9a
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 4e8ce6d9a892abf3e24ecae6dee1e3ea23504d31
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265030"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041355"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Mire használhatják a fejlesztők a Power BI-t?
 
@@ -53,7 +53,7 @@ A fejlesztők létrehozhatnak saját adatmegjelenítéseket is, amelyek az inter
 
 ![Adatminta leküldése](media/what-can-you-do/powerbi-push-data.png)
 
-A [Mire használhatják a fejlesztők a Power BI API-t?](overview-of-power-bi-rest-api.md) című rész több, a Power BI API-k használatával elvégezhető feladatot mutat be.
+A [Mire használhatják a fejlesztők a Power BI API-t?](automation/overview-of-power-bi-rest-api.md) című rész több, a Power BI API-k használatával elvégezhető feladatot mutat be.
 
 ## <a name="next-steps"></a>Következő lépések
 
@@ -61,6 +61,6 @@ A [Mire használhatják a fejlesztők a Power BI API-t?](overview-of-power-bi-re
 
 [Egyéni Power BI-vizualizáció fejlesztése](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 
-[Mire használhatják a fejlesztők a Power BI API-t?](overview-of-power-bi-rest-api.md)
+[Mire használhatják a fejlesztők a Power BI API-t?](automation/overview-of-power-bi-rest-api.md)
 
 [Power BI Fejlesztői központ](https://powerbi.microsoft.com/developers/)

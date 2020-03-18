@@ -1,19 +1,19 @@
 ---
 title: Telefonra optimalizált Power BI-jelentések megtekintése
 description: Itt a Power BI telefonos alkalmazásokban való megtekintésre optimalizált jelentésoldalak használatáról olvashat.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/22/2019
-ms.author: mshenhav
-ms.openlocfilehash: f8dba41a15390e4b52227c7daaa603daf7c08939
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: 1db56c2844d217bf6bff633609893e5a97a6dae5
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870515"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114881"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Telefonra optimalizált Power BI-jelentések megtekintése
 
@@ -27,7 +27,7 @@ Ha egy Power BI-jelentést a telefonon tekint meg, a Power BI ellenőrzi, hogy a
 
 ![Jelentés álló tájolásban](./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png)
 
-Ha a jelentésnek nem létezik telefonra optimalizált változata, a jelentés akkor is megnyílik, azonban a nem optimalizált fekvő tájolásban. Még a telefonra optimalizált jelentések esetében is, ha a telefont oldalra fordítja, a jelentés a nem optimalizált nézetben jelenik meg az eredeti jelentéselrendezésben. Ha csak egyes oldalak vannak optimalizálva, álló tájolásban egy üzenet jelenik meg, amely értesíti, hogy a jelentés fekvő tájolásban tekinthető meg.
+Ha a jelentésnek nem létezik telefonra optimalizált változata, a jelentés megnyílik, azonban a nem optimalizált fekvő tájolásban. Még a telefonra optimalizált jelentések esetében is, ha a telefont oldalra fordítja, a jelentés a nem optimalizált nézetben jelenik meg az eredeti jelentéselrendezésben. Ha csak egyes oldalak vannak optimalizálva, álló tájolásban egy üzenet jelenik meg, amely értesíti, hogy a jelentés fekvő tájolásban tekinthető meg.
 
 ![Nem optimalizált jelentésoldal](./media/mobile-apps-view-phone-report/06-power-bi-phone-report-page-not-optimized.png)
 

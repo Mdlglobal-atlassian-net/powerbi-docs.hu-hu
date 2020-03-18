@@ -1,19 +1,19 @@
 ---
 title: OAuth használata a Power BI jelentéskészítő kiszolgáló és az SSRS csatlakoztatásához
 description: Megtudhatja, hogyan konfigurálhatja a környezetét OAuth-hitelesítés támogatására a Power BI mobilalkalmazásban az SQL Server Reporting Services 2016 (vagy újabb) szolgáltatáshoz való csatlakozáshoz.
-author: maggiesMSFT
-ms.author: maggies
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/03/2019
-ms.openlocfilehash: 3680344c3449c80064b818f7ab2a5b48020fba4b
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.date: 03/11/2020
+ms.openlocfilehash: c3c6e8d7ddb823eb1e857b102c2f6c788e366141
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220608"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114958"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>OAuth használata a Power BI jelentéskészítő kiszolgáló és az SSRS csatlakoztatásához
 
@@ -54,7 +54,7 @@ A WAP-alkalmazáshoz és az ADFS-kiszolgálóhoz is konfigurálnia kell tanúsí
 
 ## <a name="reporting-services-configuration"></a>Reporting Services – konfiguráció
 
-A Reporting Services oldalán nem sok mindent kell konfigurálni. Csak meg kell győződnünk arról, hogy van egy érvényes egyszerű szolgáltatásnevünk (SPN), amely lehetővé teszi a Kerberos-hitelesítés megfelelő működését, és hogy a Reporting Servicesben engedélyezett az egyeztetéses hitelesítés.
+A Reporting Services oldalán nem kell sok mindent konfigurálni. Csak meg kell győződnünk arról, hogy van egy érvényes egyszerű szolgáltatásnevünk (SPN), amely lehetővé teszi a Kerberos-hitelesítés megfelelő működését, és hogy a Reporting Servicesben engedélyezett az egyeztetéses hitelesítés.
 
 ### <a name="service-principal-name-spn"></a>Egyszerű szolgáltatásnév (SPN)
 
@@ -124,7 +124,7 @@ Az alkalmazáscsoportot az alábbi lépéseket követve hozhatja létre.
    ![ADFS Alkalmazáscsoport-varázsló 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Válassza a **Tovább** lehetőséget.
 
-10. Válassza a vállalata igényeinek megfelelő **Hozzáférés-vezérlési házirendet**.
+10. Válassza a vállalata igényeinek megfelelő **hozzáférés-vezérlési szabályzatot**.
 
     ![ADFS Alkalmazáscsoport-varázsló 04](media/mobile-oauth-ssrs/adfs-application-group-wizard4.png)
 
@@ -148,7 +148,7 @@ Ha elkészült, az alkalmazáscsoport tulajdonságainak az alábbihoz hasonlóan
 
 Az OAuth-hitelesítésről Windows-hitelesítésre váltáshoz korlátozott delegálást kell használnia protokollváltással. Ez része a Kerberos konfigurálásának. Már meghatároztuk a Reporting Services SPN-t a Reporting Services konfigurálása során.
 
-A korlátozott delegálást konfigurálnunk kell a WAP-kiszolgáló gép Active Directory-fiókjában. Ha nem rendelkezik Active Directory jogosultságokkal, szüksége lehet egy tartományi rendszergazda segítségére.
+A korlátozott delegálást konfigurálnunk kell a WAP-kiszolgáló gép Active Directory-fiókjában. Ha nem rendelkezik Active Directory-jogosultságokkal, szüksége lehet egy tartományi rendszergazda segítségére.
 
 A korlátozott delegálás konfigurálásához a következőket kell tennie.
 
@@ -207,7 +207,7 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 A WAP-alkalmazás hozzáadása után be kell állítania a BackendServerAuthenticationMode módot az IntegratedWindowsAuthentication használatához. Ennek beállításához szüksége lesz a WAP-alkalmazás azonosítójára.
 
 ```powershell
-Get-WebApplicationProxyApplication “Contoso Reports” | fl
+Get-WebApplicationProxyApplication "Contoso Reports" | fl
 ```
 
 ![Alkalmazáscsoport hozzáadása](media/mobile-oauth-ssrs/wap-application-id.png)

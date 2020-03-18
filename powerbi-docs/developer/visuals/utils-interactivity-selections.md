@@ -7,279 +7,284 @@ ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 06/18/2019
-ms.openlocfilehash: be7a708dfcc6ebc40c62a1a9075e2cbf134363b1
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.topic: how-to
+ms.date: 02/24/2020
+ms.openlocfilehash: 3614505cec185779bce3f63c6e7a565a5ef39443
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76818686"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920907"
 ---
-# <a name="microsoft-power-bi-visuals-interactivity-utils"></a>Interaktivitási eszközök Microsoft Power BI-vizualizációkhoz
+# <a name="power-bi-visuals-interactivity-utils"></a>Interaktivitási eszközök Power BI-vizualizációkhoz
 
-Az InteractivityUtils függvények és osztályok olyan gyűjteménye, amely egyszerűbbé teszi a keresztkijelölés és keresztszűrés megvalósítása az egyéni Power BI-vizualizációkban.
+Az interaktivitási eszközök (`InteractivityUtils`) olyan függvények és osztályok készlete, amelyek egyszerűbbé teszik a keresztkijelölés és keresztszűrés megvalósítását.
+
+> [!NOTE]
+> Az interaktivitási eszközök új frissítései csak az eszközök legújabb verzióját támogatják (3.x.x és újabb).
 
 ## <a name="installation"></a>Telepítés
 
-> [!NOTE]
-> Ha még a powerbi-visuals-tools régi (3.x.x-nél alacsonyabb verziószámú) verzióját használja, telepítse az eszközök új (3.x.x) verzióját.
+1. A csomag telepítéséhez futtassa az alábbi parancsot az aktuális Power BI vizualizációs projektet tartalmazó könyvtárban.
 
-> [!IMPORTANT]
-> Az interaktivitási eszközök új frissítései csak az eszközök legújabb verzióját fogják támogatni. [További tudnivalók a vizualizációk kódjának módosításáról a legújabb eszközökkel való használathoz](migrate-to-new-tools.md)
+    ```bash
+    npm install powerbi-visuals-utils-interactivityutils --save
+    ```
 
-A csomag telepítéséhez az alábbi parancsot kell futtatni az aktuális egyéni vizualizációt tartalmazó mappában:
+2. Ha az eszköz 3.0-s vagy újabb verzióját használja, telepítse a következőt a függőségek feloldásához: `powerbi-models`.
 
-```bash
-npm install powerbi-visuals-utils-interactivityutils --save
-```
+    ```bash
+    npm install powerbi-models --save
+    ```
 
-A 3.0 és újabb verziókhoz a ```powerbi-models``` telepítése is szükséges a függőségek feloldásához.
+3. Az interaktivitási eszközök használatához importálja a szükséges összetevőt a Power BI-vizualizáció forráskódjába.
 
-```bash
-npm install powerbi-models --save
-```
+    ```typescript
+    import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
+    ```
 
-Az interaktivitási eszközök használatához importálnia kell a szükséges összetevőket a vizualizáció forráskódjában.
+### <a name="including-the-css-files"></a>A CSS-fájlok belefoglalása
 
-```typescript
-import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
-```
-
-### <a name="including-css-artifacts-to-the-custom-visual"></a>CSS-összetevők belefoglalása az egyéni vizualizációba
-
-Ahhoz, hogy a csomagot egyéni vizualizációkkal használhassa, importálnia kell az alábbi CSS-fájlt a `your.less` fájlba:
+Ha a csomagot a Power BI-vizualizációval kívánja használni, importálja a CSS-fájlt a `.less` fájlba.
 
 `node_modules/powerbi-visuals-utils-interactivityutils/lib/index.css`
 
-Ennek eredménye a következő fájlstruktúra lesz:
+A CSS-fájlt `.less` fájlként kell importálni, mivel a Power BI-vizualizációk eszköz burkolja a külső CSS-szabályokat.
 
 ```less
 @import (less) "node_modules/powerbi-visuals-utils-interactivityutils/lib/index.css";
 ```
 
-> [!NOTE]
-> A .css-fájlt azért kell .less-fájlként importálnia, mert a Power BI vizualizációs eszközök becsomagolják a külső CSS-szabályokat.
+## <a name="selectabledatapoint-properties"></a>SelectableDataPoint tulajdonságok
 
-## <a name="usage"></a>Használat
+Az adatpontok általában kijelöléseket és értékeket tartalmaznak. Az interfész a `SelectableDataPoint` interfészt terjeszti ki.
 
-### <a name="define-interface-for-data-points"></a>Adatinterfész adatpontokhoz
-
-Az adatpontok általában kijelöléseket és értékeket tartalmaznak. Az interfész a `SelectableDataPoint` interfész kiterjesztése. A `SelectableDataPoint` már tartalmaz tulajdonságokat:
+A `SelectableDataPoint` már tartalmazza az alább ismertetett tulajdonságokat.
 
 ```typescript
-  /** Flag for identifying that data point was selected */
+  /** Flag for identifying that a data point was selected */
   selected: boolean;
+
   /** Identity for identifying the selectable data point for selection purposes */
   identity: powerbi.extensibility.ISelectionId;
-  /**
+
+  /*
    * A specific identity for when data points exist at a finer granularity than
-   * selection is performed.  For example, if your data points should select based
-   * only on series even if they exist as category/series intersections.
+   * selection is performed.  For example, if your data points select based
+   * only on series, even if they exist as category/series intersections.
    */
+
   specificIdentity?: powerbi.extensibility.ISelectionId;
 ```
 
-Az interaktivitási eszközök használatának első lépése az interaktivitási eszközök egy példányának létrehozása, és az objektum mentése a vizualizáció tulajdonságaként
+## <a name="defining-an-interface-for-data-points"></a>Interfész meghatározása az adatpontok számára
 
-```typescript
-export class Visual implements IVisual {
-  // ...
-  private interactivity: interactivityBaseService.IInteractivityService<VisualDataPoint>;
-  // ...
-  constructor(options: VisualConstructorOptions) {
+1. Hozzon létre egy példányt az interaktivitási eszközökből, és mentse az objektumot a vizualizáció tulajdonságaként
+
+    ```typescript
+    export class Visual implements IVisual {
       // ...
-      this.interactivity = interactivitySelectionService.createInteractivitySelectionService(this.host);
+      private interactivity: interactivityBaseService.IInteractivityService<VisualDataPoint>;
       // ...
-  }
-}
-```
+      constructor(options: VisualConstructorOptions) {
+          // ...
+          this.interactivity = interactivitySelectionService.createInteractivitySelectionService(this.host);
+          // ...
+      }
+    }
+    ```
 
-```typescript
-import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
+    ```typescript
+    import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
 
-export interface VisualDataPoint extends interactivitySelectionService.SelectableDataPoint {
-    value: powerbi.PrimitiveValue;
-}
-```
+    export interface VisualDataPoint extends interactivitySelectionService.SelectableDataPoint {
+        value: powerbi.PrimitiveValue;
+    }
+    ```
 
-A következő lépés az alap viselkedési osztály kiterjesztése:
+2. Terjessze ki az alapszintű viselkedésosztályt.
 
-> [!NOTE]
-> A BaseBehavior az [interaktivitási eszközök 5.6.x verziójában](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0) lett bevezetve. Ha régebbi verziót használ, a viselkedési osztályt az alábbi példából hozhatja létre (a `BaseBehavior` osztály ugyanaz):
+    > [!NOTE]
+    > A `BaseBehavior` az [interaktivitási eszközök 5.6.x verziójában](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0) jelent meg. Ha régebbi verziót használ, hozzon létre egy viselkedésosztályt az alábbi minta segítségével.
 
-Definiáljon interfészt a viselkedési osztály beállításaihoz:
+3. Adja meg az interfészt a viselkedésosztály beállításai számára.
 
-```typescript
-import { SelectableDataPoint } from "./interactivitySelectionService";
+    ```typescript
+    import { SelectableDataPoint } from "./interactivitySelectionService";
 
-import {
-    IBehaviorOptions,
-    BaseDataPoint
-} from "./interactivityBaseService";
+    import {
+        IBehaviorOptions,
+        BaseDataPoint
+    } from "./interactivityBaseService";
 
-export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoint> extends IBehaviorOptions<SelectableDataPointType> {
-    /** D3 selection object of main elements on the chart */
+    export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoint> extends IBehaviorOptions<SelectableDataPointType> {
+
+    /** d3 selection object of the main elements on the chart */
     elementsSelection: Selection<any, SelectableDataPoint, any, any>;
-    /** D3 selection object of some element on backgroup to hadle click of reset selection */
+
+    /** d3 selection object of some elements on backgroup, to hadle click of reset selection */
     clearCatcherSelection: d3.Selection<any, any, any, any>;
-}
-```
+    }
+    ```
 
-Definiálja a `visual behavior` viselkedését. A `click` és `contextmenu` egéreseményeket az osztály kezeli.
-Az adatelemeken végzett kattintás esetén a vizualizáció a kijelöléskezelőt hívja meg az adatpontok kijelöléséhez. ha a felhasználó a vizualizáció háttérelemére kattint, az meghívja a Kijelölés törlése kezelőt. Az osztály ezt kezelő metódusai: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
+4. Definiálja a `visual behavior` viselkedését. Vagy terjessze ki a `BaseBehavior` osztályt.
 
-```typescript
-export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
-    /** D3 selection object of main elements on the chart */
-    protected options: BaseBehaviorOptions<SelectableDataPointType>;
-    protected selectionHandler: ISelectionHandler;
+    **Osztály megadása a `visual behavior`** számára
 
+    Az osztály felel a `click` `contextmenu` egéresemények kezeléséért.
+
+    Amikor a felhasználó rákattint az adatelemekre, a vizualizáció a kijelöléskezelőt hívja meg az adatpontok kijelöléséhez. Ha a felhasználó a vizualizáció háttérelemére kattint, meghívja a kijelöléstörlés-kezelőt.
+
+    Az osztály a következő megfeleltetési metódusokkal rendelkezik:
+    * `bindClick`
+    * `bindClearCatcher`
+    * `bindContextMenu`.
+
+    ```typescript
+    export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
+
+        /** d3 selection object of main elements in the chart */
+        protected options: BaseBehaviorOptions<SelectableDataPointType>;
+        protected selectionHandler: ISelectionHandler;
+    
+        protected bindClick() {
+          // ...
+        }
+    
+        protected bindClearCatcher() {
+          // ...
+        }
+    
+        protected bindContextMenu() {
+          // ...
+        }
+    
+        public bindEvents(
+            options: BaseBehaviorOptions<SelectableDataPointType>,
+            selectionHandler: ISelectionHandler): void {
+          // ...
+        }
+    
+        public renderSelection(hasSelection: boolean): void {
+          // ...
+        }
+    }
+    ```
+
+    **A `BaseBehavior` osztály kiterjesztése**
+
+    ```typescript
+    import powerbi from "powerbi-visuals-api";
+    import { interactivitySelectionService, baseBehavior } from "powerbi-visuals-utils-interactivityutils";
+
+    export interface VisualDataPoint extends interactivitySelectionService.SelectableDataPoint {
+        value: powerbi.PrimitiveValue;
+    }
+
+    export class Behavior extends baseBehavior.BaseBehavior<VisualDataPoint> {
+      // ...
+    }
+    ```
+
+5. Az elemekre való kattintások kezeléséhez hívja meg a *d3* objektumkijelölés `on` metódusát. Ez a következőkre is vonatkozik: `elementsSelection` és `clearCatcherSelection`.
+
+    ```typescript
     protected bindClick() {
-      // ...
+      const {
+          elementsSelection
+      } = this.options;
+    
+      elementsSelection.on("click", (datum) => {
+          const mouseEvent: MouseEvent = getEvent() as MouseEvent || window.event as MouseEvent;
+          mouseEvent && this.selectionHandler.handleSelection(
+              datum,
+              mouseEvent.ctrlKey);
+      });
     }
+    ```
 
-    protected bindClearCatcher() {
-      // ...
-    }
+6. A kijelöléskezelő `showContextMenu` metódusának meghívásához adjon hozzá egy hasonló kezelőt a `contextmenu` eseményhez.
 
+    ```typescript
     protected bindContextMenu() {
-      // ...
+        const {
+            elementsSelection
+        } = this.options;
+    
+        elementsSelection.on("contextmenu", (datum) => {
+            const event: MouseEvent = (getEvent() as MouseEvent) || window.event as MouseEvent;
+            if (event) {
+                this.selectionHandler.handleContextMenu(
+                    datum,
+                    {
+                        x: event.clientX,
+                        y: event.clientY
+                    });
+                event.preventDefault();
+            }
+        });
     }
+    ```
 
-    public bindEvents(
-        options: BaseBehaviorOptions<SelectableDataPointType>,
-        selectionHandler: ISelectionHandler): void {
-      // ...
-    }
+7. Az interaktivitási eszközök a `bindEvents` metódust hívják meg a függvények kezelőkhöz való hozzárendeléséhez. Adja hozzá a következő hívásokat a `bindEvents` metódushoz:
+    * `bindClick`
+    * `bindClearCatcher`
+    * `bindContextMenu`
 
+    ```typescript
+      public bindEvents(
+          options: BaseBehaviorOptions<SelectableDataPointType>,
+          selectionHandler: ISelectionHandler): void {
+
+          this.options = options;
+          this.selectionHandler = selectionHandler;
+
+          this.bindClick();
+          this.bindClearCatcher();
+          this.bindContextMenu();
+      }
+    ```
+
+8. A vizualizáció diagramelemei állapotának frissítését a `renderSelection` metódus végzi. Íme egy példa a `renderSelection` megvalósítására.
+
+    ```typescript
     public renderSelection(hasSelection: boolean): void {
-      // ...
+        this.options.elementsSelection.style("opacity", (category: any) => {
+            if (category.selected) {
+                return 0.5;
+            } else {
+                return 1;
+            }
+        });
     }
-}
-```
+    ```
 
-A `BaseBehavior` osztályt ki is terjesztheti:
+9. Az utolsó lépés egy `visual behavior` példány létrehozása és az interaktivitási eszközök példány `bind` metódusának meghívása.
 
-```typescript
-import powerbi from "powerbi-visuals-api";
-import { interactivitySelectionService, baseBehavior } from "powerbi-visuals-utils-interactivityutils";
-
-export interface VisualDataPoint extends interactivitySelectionService.SelectableDataPoint {
-    value: powerbi.PrimitiveValue;
-}
-
-export class Behavior extends baseBehavior.BaseBehavior<VisualDataPoint> {
-  // ...
-}
-```
-
-Az elemeken végzett kattintások kezelésére a D3 kijelölési objektum `on` metódusát hívja meg (az elementsSelection és a clearCatcherSelection esetében is):
-
-```typescript
-protected bindClick() {
-  const {
-      elementsSelection
-  } = this.options;
-
-  elementsSelection.on("click", (datum) => {
-      const mouseEvent: MouseEvent = getEvent() as MouseEvent || window.event as MouseEvent;
-      mouseEvent && this.selectionHandler.handleSelection(
-          datum,
-          mouseEvent.ctrlKey);
-  });
-}
-```
-
-Adjon hozzá hasonló kezelőt a `contextmenu` eseményhez is a kijelöléskezelő `showContextMenu` metódusának meghívására:
-
-```typescript
-protected bindContextMenu() {
-    const {
-        elementsSelection
-    } = this.options;
-
-    elementsSelection.on("contextmenu", (datum) => {
-        const event: MouseEvent = (getEvent() as MouseEvent) || window.event as MouseEvent;
-        if (event) {
-            this.selectionHandler.handleContextMenu(
-                datum,
-                {
-                    x: event.clientX,
-                    y: event.clientY
-                });
-            event.preventDefault();
-        }
+    ```typescript
+    this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
+        behavior: this.behavior,
+        dataPoints: this.categories,
+        clearCatcherSelection: select(this.target),
+        elementsSelection: selectionMerge
     });
-}
-```
+    ```
 
-Az interaktivitási eszközök `bindEvents` metódusok hívásával rendelik kezelőkhöz a függvényeket. Szúrja be a `bindClick`, a `bindClearCatcher` és a `bindContextMenu` hívását a `bindEvents` metódusba:
+    * A `selectionMerge` a *d3* objektumkijelölése, amely a vizualizáció kijelölhető elemeit képviseli.
+    * A `select(this.target)` a *d3* kijelölésobjektuma, amely a vizualizáció fő DOM-elemeit képviseli.
+    * A `this.categories` elemekkel rendelkező adatpontokat jelöl, ahol az interfész `VisualDataPoint` vagy `categories: VisualDataPoint[];`.
+    * A `this.behavior` a `visual behavior` új példánya, amelyet a vizualizáció konstruktorában hoztak létre az alább látható módon.
 
-```typescript
-  public bindEvents(
-      options: BaseBehaviorOptions<SelectableDataPointType>,
-      selectionHandler: ISelectionHandler): void {
-
-      this.options = options;
-      this.selectionHandler = selectionHandler;
-
-      this.bindClick();
-      this.bindClearCatcher();
-      this.bindContextMenu();
-  }
-```
-
-A vizualizáció diagramelemei állapotának frissítését a `renderSelection` metódus végzi.
-
-Példa a `renderSelection` metódus implementálására:
-
-```typescript
-public renderSelection(hasSelection: boolean): void {
-    this.options.elementsSelection.style("opacity", (category: any) => {
-        if (category.selected) {
-            return 0.5;
-        } else {
-            return 1;
-        }
-    });
-}
-```
-
-Az utolsó lépés a `visual behavior` egy példányának létrehozása és az interaktivitási eszközök `bind` metódusának meghívása:
-
-```typescript
-this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
-    behavior: this.behavior,
-    dataPoints: this.categories,
-    clearCatcherSelection: select(this.target),
-    elementsSelection: selectionMerge
-});
-```
-
-* `selectionMerge` egy D3 kijelölési objektum, amely a vizualizáció kijelölhető elemeinek felel meg.
-
-* `select(this.target)` egy D3 kijelölési objektum, amely a vizualizáció fő DOM-elemeinek felel meg.
-
-* `this.categories` elemekkel rendelkező adatpontoknak felel meg, ahol az interfész `VisualDataPoint` (vagy `categories: VisualDataPoint[];`)
-
-* `this.behavior` a `visual behavior` új példánya
-
-  ez a vizualizáció konstruktorában lett létrehozva:
-
-  ```typescript
-  export class Visual implements IVisual {
-    // ...
-    constructor(options: VisualConstructorOptions) {
+      ```typescript
+      export class Visual implements IVisual {
         // ...
-        this.behavior = new Behavior();
-    }
-    // ...
-  }
-  ```
-
-A vizualizáció így már készen áll a kijelölések kezelésére.
-
+        constructor(options: VisualConstructorOptions) {
+            // ...
+            this.behavior = new Behavior();
+        }
+        // ...
+      }
+      ```
 ## <a name="next-steps"></a>Következő lépések
 
 * [Tudnivalók a kijelölések kezeléséről könyvjelzőváltáskor](bookmarks-support.md#visuals-with-selection)

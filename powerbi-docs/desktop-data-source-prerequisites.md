@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c3ccbe6ad87a813185943845431fa1a859b09a76
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: 498636d61f61764cfaef29db32454f55f1328243
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76888431"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401219"
 ---
 # <a name="power-bi-data-source-prerequisites"></a>Power BI-adatforrások előfeltételei
 A Power BI minden adatszolgáltató esetében egy adott szolgáltatóverziót támogat az objektumokon. További információ a Power BI-hoz elérhető adatforrásokkal kapcsolatban: [Adatforrások](desktop-data-sources.md). A következő táblázat ezeket a követelményeket ismerteti.
@@ -28,7 +28,7 @@ A Power BI minden adatszolgáltató esetében egy adott szolgáltatóverziót t�
 | | System.Data.OracleClient (a .NET-keretrendszer részeként) |.NET-keretrendszer 3.5 |9.x+ |Táblák/nézetek |A .NET-keretrendszer 3.5-ös vagy újabb verziójának részeként |
 | IBM DB2 |Az IBM ADO.Net-ügyfele (az IBM-adatkiszolgáló illesztőcsomag részeként) |10.1 |9.1+ |Táblák/nézetek |[Letöltési hivatkozás](https://go.microsoft.com/fwlink/?linkid=274911&clcid=0x409) |
 | MySQL |Összekötő/hálózat |6.6.5 |5.1 |Táblák/nézetek, skaláris függvények |[Letöltési hivatkozás](https://go.microsoft.com/fwlink/?linkid=278885&clcid=0x409) |
-| PostgreSQL |NPGSQL ADO.NET-szolgáltató |2.0.12 |9.4 verzió |Táblák/nézetek |[Letöltési hivatkozás](https://go.microsoft.com/fwlink/?linkid=282716&clcid=0x409) |
+| PostgreSQL |NPGSQL ADO.NET-szolgáltató (A Power BI Desktop tartalmazza) |4.0.10 |9.4 verzió |Táblák/nézetek |[Letöltési hivatkozás](https://go.microsoft.com/fwlink/?linkid=282716&clcid=0x409) |
 | Teradata |.NET-adatszolgáltató a Teradata rendszerhez |14+ |12+ |Táblák/nézetek |[Letöltési hivatkozás](https://go.microsoft.com/fwlink/?linkid=278886&clcid=0x409) |
 | SAP Sybase SQL Anywhere |iAnywhere.Data.SQLAnywhere a .NET 3.5-höz |16+ |16+ |Táblák/nézetek |[Letöltési hivatkozás](https://go.microsoft.com/fwlink/?linkid=324846) |
 

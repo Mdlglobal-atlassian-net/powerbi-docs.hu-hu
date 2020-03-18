@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.custom: seodec18
-ms.openlocfilehash: 48406a8c68237d182960b46de67f91dbd2717922
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.openlocfilehash: 6844d09c04759f0cdb780b3c1805698f1b1b519f
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76894660"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401922"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>Engedélyezési listára helyezendő Power BI URI-címek
 
@@ -85,13 +85,13 @@ A Power BI-nak szüksége van bizonyos végpontokra az irányítópultok és jel
 | 1 | **Kötelező:** Excel-integráció | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) bemutató Office 365-dokumentációt | N.A. |
 | | | |
 
-## <a name="custom-visuals"></a>Egyéni vizualizációk
+## <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
-A Power BI-nak szüksége van bizonyos végpontokra az egyéni vizualizációkhoz való hozzáféréshez és azok megjelenítéséhez. Tudnia kell csatlakozni az alábbi táblázatban és a hivatkozott webhelyeken megadott végpontokhoz.
+A Power BI-nak szüksége van bizonyos végpontokra a Power BI-vizualizációk eléréséhez és megjelenítéséhez. Tudnia kell csatlakozni az alábbi táblázatban és a hivatkozott webhelyeken megadott végpontokhoz.
 
 | Sor | Szerep | Cél(ok) | Port(ok) |
 | --- | --- | --- | --- |
-| 1 | **Kötelező:** Egyéni vizualizáció importálása a Marketplace felületéről vagy egy fájlból | *. azureedge.net <br> *.blob.core.windows.net <br> store.office.com | TCP 443 |
+| 1 | **Kötelező:** Egyéni vizualizáció importálása a Marketplace felületéről vagy egy fájlból | *. azureedge.net <br> *.blob.core.windows.net <br> *.osi.office.net <br> *.msecnd.net <br> store.office.com <br> web.vortex.data.microsoft.com <br> store-images.s-microsoft.com | TCP 443 |
 | 2 | **Nem kötelező:** Bing Térképek | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Nem kötelező:** PowerApps | Lásd a [Szükséges szolgáltatások szakaszt](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) a PowerApps rendszerkövetelményeinek webhelyén | N.A. |
 | 4 | **Nem kötelező:** Visio | Tekintse meg az [Office Online szolgáltatást és a közös URL-címeket](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), valamint a [SharePoint Online szolgáltatást és a OneDrive Vállalati verziót](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) bemutató Office 365-dokumentációt | N.A. |

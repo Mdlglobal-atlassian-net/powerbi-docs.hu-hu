@@ -6,17 +6,19 @@ ms.reviewer: mohammad ali
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: cc20d981e1e774eed109c614e146415ec3813601
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.openlocfilehash: 978a8622d9af7aee6d1314ac18ee4d1dbea51cbc
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76709792"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114413"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Q&A a Power BI-ügyfelek számára
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -46,7 +48,7 @@ A **Power BI Q&A** Pro- vagy Premium-licenccel érhető el.  A [Q&A a Power BI-m
 
 ![q&a által létrehozott fatérkép](media/end-user-q-and-a/power-bi-treemap.png)
 
-A kérdés megfogalmazása csak az első lépés.  Pontosíthatja vagy kibővítheti a kérdést, megbízható új információkat fedezhet fel, összpontosíthat a részletekre, vagy feltárhatja a szélesebb összefüggéseket, így az adatok feltérképezése valódi élménnyé válik. Örömét lelheti az új eredményekben és felfedezésekben.
+A kérdés megfogalmazása csak az első lépés.  Pontosíthatja vagy kibővítheti a kérdést, megbízható új információkat fedezhet fel, összpontosíthat a részletekre, vagy feltárhatja a szélesebb összefüggéseket, így az adatok feltérképezése valódi élménnyé válik. Örömét lelheti az új megállapításokban és felfedezésekben.
 
 Valóban interaktív élmény... és gyors! A memóriabeli tárolás segítségével szinte egy pillanat alatt megkapja a választ.
 

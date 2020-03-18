@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 9da9465bea8512b541d3f1af3983df70d184ac26
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5ad960560ba6c99228ba63ee0041789b9ec6ff7d
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875655"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114968"
 ---
 # <a name="what-is-power-bi"></a>A Power BI bemutatása
 A **Power BI** olyan szoftverszolgáltatások, alkalmazások és összekötők gyűjteménye, amellyel az egymástól független adatforrásokat egymással együttműködő, vizuálisan megragadó, interaktív elemzésekké alakítja. Az adatok lehetnek akár egy Excel-táblában, vagy felhőalapú és helyszíni hibrid adattárházak gyűjteményében is. A Power BI-jal egyszerűen csatlakozhat az adatforrásokhoz, vizuálisan megjelenítheti és feltárhatja a fontos részeket, és ezt bárkivel meg is oszthatja.
@@ -37,7 +37,7 @@ Lehetséges például, hogy Ön elsősorban a **Power BI szolgáltatást** haszn
 
 Fejlesztőként használhatja a Power BI API-jait arra, hogy az adatokat adatkészletekbe töltse be, vagy hogy irányítópultokat és jelentéseket ágyazzon be egyéni alkalmazásaiba. Javaslata van új vizualizációra? Hozza létre, és ossza meg másokkal is.  
 
-A Power BI egyes elemeit használhatja emellett felváltva is attól függően, hogy épp milyen céljai vannak, illetve milyen szerepkörben dolgozik egy adott projektben vagy feladaton.
+A Power BI egyes elemeit használhatja emellett felváltva is attól függően, hogy épp milyen céljai vannak, illetve milyen szerepkörben dolgozik egy adott projekten.
 
 A Power BI használatát az határozza meg, hogy e Power BI melyik funkciója vagy szolgáltatása a legmegfelelőbb az adott helyzetben. Például a Power BI Desktop alkalmazással jelentéseket hozhat létre a saját csapatának az ügyfélkapcsolati statisztikákról, és megtekintheti a leltárat és a gyártási folyamat állapotát a szolgáltatás egy valós idejű irányítópultján. A Power BI minden elemét elérheti, ami nagy mértékű rugalmasságot jelent.
 
@@ -51,7 +51,7 @@ A szerepköréhez kapcsolódó dokumentumok elemzése:
 A Power BI-ban a leggyakoribb munkafolyamat első lépése az adatforrásokhoz való csatlakozás, majd pedig jelentések létrehozása a Power BI Desktopban. A jelentést ezt követően közzéteheti a Power BI Desktopból a Power BI szolgáltatásba és megoszthatja azt, így a végfelhasználók megtekinthetik azt a szolgáltatásban és a mobileszközökön is.
 Ez egy nagyon gyakori munkafolyamat, és jól látszik benne, hogy hogyan egészíti ki egymást a Power BI három összetevője.
 
-Az alábbiakban [a Power BI Desktop és a Power BI szolgáltatás részletes összehasonlítását](../designer/service-service-vs-desktop.md) találja.
+Az alábbiakban [a Power BI Desktop és a Power BI szolgáltatás részletes összehasonlítását](../fundamentals/service-service-vs-desktop.md) találja.
 
 ## <a name="on-premises-reporting-with-power-bi-report-server"></a>Helyszíni jelentéskészítés a Power BI jelentéskészítő kiszolgálóval
 
@@ -61,11 +61,11 @@ Mobil és többoldalas Power BI-jelentéseket hozhat létre, telepíthet és fel
 
 ![a helyszíni diagramja](media/power-bi-overview/power-bi-report-server2.png)
 
-A Power BI jelentéskészítő kiszolgáló megoldást tűzfal mögött lehet üzembe helyezni, és ezt követően különféle módokon lehet a jelentéseket a megfelelő felhasználókhoz eljuttatni, akik megnézhetik azokat egy webböngészőben, mobileszközön vagy e-mailben is. Mivel a Power BI jelentéskészítő kiszolgálója kompatibilis a felhőalapú Power BI-jal, bármikor dönthet úgy, hogy áttelepül a felhőbe, ha készen áll rá. 
+A Power BI jelentéskészítő kiszolgálót tűzfal mögött lehet üzembe helyezni, és ezt követően különféle módokon lehet a jelentéseket a megfelelő felhasználókhoz eljuttatni, akik megtekinthetik őket webböngészőben, mobileszközön vagy e-mailben is. Mivel a Power BI jelentéskészítő kiszolgálója kompatibilis a felhőalapú Power BI-jal, bármikor dönthet úgy, hogy áttelepül a felhőbe, ha készen áll rá. 
 
 További információ: [Power BI jelentéskészítő kiszolgáló](../report-server/get-started.md).
 
 ## <a name="next-steps"></a>Következő lépések
-- [Rövid útmutató: Eligazodás a Power BI szolgáltatásban](../service-the-new-power-bi-experience.md)   
+- [Rövid útmutató:: Eligazodás a Power BI szolgáltatásban](../service-the-new-power-bi-experience.md)   
 - [Oktatóanyag: Első lépések a Power BI szolgáltatással](../service-get-started.md)
-- [Rövid útmutató: Csatlakozás adatokhoz a Power BI Desktopban](../desktop-quickstart-connect-to-data.md)
+- [Rövid útmutató:: Csatlakozás adatokhoz a Power BI Desktopban](../desktop-quickstart-connect-to-data.md)

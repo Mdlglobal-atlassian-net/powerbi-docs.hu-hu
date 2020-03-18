@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/17/2019
+ms.date: 02/18/2020
 ms.author: mihart
-ms.openlocfilehash: e5c3f8b327d6899d83e2304e56e5813a47fc4698
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 4679973cf65ced31a40b3a1bb40c820184e10e2c
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537807"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040092"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -22,7 +22,9 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 ## <a name="a"></a>A
 
-**account (fiók)** A Power BI-fiókoknak több típusa is van.  A Power BI Pro-fiók egy havi részletekben fizetendő előfizetés.  Az ingyenes Power BI-fiókokkal megtekinthetők a Power BI Premium-kapacitáson üzemeltetett tartalmak.  
+**fiók** A Power BI-fiókoknak több típusa is van, amelyeket *licenceknek* is neveznek.  A fiókok a következők lehetnek: felhasználónkénti vagy szervezeti. A felhasználónkénti fiókok elérhetők *ingyenes* vagy *Pro* változatban is.  A Power BI *ingyenes* felhasználója vagy önálló Power BI Desktopot használ, vagy egy Premium szervezeti fiókon keresztül éri el a Power BI szolgáltatást. A Power BI felhasználónkénti *Pro*-fiók egy havi részletekben fizetendő előfizetés, amely együttműködést és tartalommegosztást tesz lehetővé a többi *Pro*-felhasználóval. 
+
+A *Premium*(más néven *Premium-kapacitás*) szervezeti fiók számos további szolgáltatást nyújt a felhasználónkénti licencekhez képest. Az *ingyenes* felhasználónkénti fiókok tulajdonosai például egy olyan szervezeten belül, amely *Premium* licenccel rendelkezik, sokkal több feladatot tudnak elvégezni a Power BI segítségével, mint a *Premium* nélküli *ingyenes* felhasználók. A *Premium* szervezeti fiókkal rendelkező *ingyenes* felhasználók például együttműködhetnek a kollégáikkal, és megtekinthetik a Power BI Premium-kapacitáson üzemeltetett tartalmakat.  
 
 **admin portal (felügyeleti portál)** A felület, amelyen a Power BI-rendszergazda a céges Power BI felhasználóit, funkcióit és beállításait kezeli. (Megjegyzés: Az Office 365, az Azure és a PowerApps a felügyeleti központot használja.)
 
@@ -170,6 +172,8 @@ A Power BI szolgáltatás bal szélén látható vezérlőelemek.
 
 A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helyszűke esetén csak navigációs vagy nav. ablak.
 
+**licenc** Lásd: *fiók*.
+
 **list page (listaoldal)** vagy **content list (tartalomjegyzék)** A navigációs ablaktábla elemeinek egyik szakasza. Például: Kedvencek, Legutóbbi elemek, Saját munkaterület stb.
 
 ## <a name="m"></a>M
@@ -226,15 +230,17 @@ A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helys
 
 **Power BI Embedded** Az a termék, amellyel a fejlesztők beágyazhatják a Power BI-irányítópultokat és -jelentéseket az alkalmazásokba, webhelyekre és eszközökbe.
 
-**Power BI Premium** A Power BI Pro-licenc kiegészítése, amely segítségével a cég dedikált hardverek megvásárlásával előrelátható módon méretezheti a BI-megoldásokat.
+**Power BI Premium** A Power BI Pro-licenc kiegészítése, amely segítségével a cég dedikált hardverek megvásárlásával előrelátható módon méretezheti a BI-megoldásokat. Lásd: *fiók*.
 
-**Power BI Pro license (Power BI Pro-licenc)** Havidíjas felhasználói licenc, amely lehetővé teszi az irányítópultok létrehozását, az együttműködést a megosztott adatokon, az adatok automatikus naprakészen tartását, az adatok elérésének és használatának naplózását és szabályozását, valamint a tartalmak becsomagolását terjesztés céljából (Power BI-alkalmazások).
+**Power BI Pro** Havidíjas felhasználónkénti licenc, amely lehetővé teszi jelentések és irányítópultok létrehozását, az együttműködést a megosztott adatokon, az adatok automatikus naprakészen tartását, az adatok elérésének és használatának naplózását és szabályozását, valamint a tartalmak becsomagolását terjesztés céljából (Power BI-alkalmazások). Lásd: *fiók*.
 
 **Power BI Report Server (Power BI jelentéskészítő kiszolgáló)** Egy, a Power BI Premium részeként elérhető vadonatúj SSRS-ajánlat, amely segítségével a cég elosztott, hibrid BI-rendszereket (felhőalapú és helyszíni környezetek kombinációját) alakíthatja ki. Az Embedded a Power BI-jelentések helyszíni tárolására és kezelésére kínál lehetőséget.
 
 **Power BI service (Power BI szolgáltatás)** Online SaaS (szolgáltatott szoftver) szolgáltatás. További információ: [A Power BI bemutatása](../fundamentals/power-bi-overview.md).
 
 **Premium workspace (prémium szintű munkaterület)** Dedikált kapacitáson futó munkaterület, amelyet egy rombusz ikon jelöl.  
+
+**Pro**-licenc vagy **Pro**-fiók Lásd: *fiók*.
 
 **publish (közzététel)** A Power BI szolgáltatás *jelentéstervezői* egy Power BI-munkaterület tartalmát összekapcsolják, és elérhetővé teszik Power BI-alkalmazásként. A Power BI Desktop *jelentéstervezői* a közzététellel küldenek egy .pbix formátumú Power BI Desktop-jelentést a Power BI szolgáltatásnak, hogy ennek segítségével irányítópultokat készítsenek, és könnyen megoszthassák másokkal. 
 

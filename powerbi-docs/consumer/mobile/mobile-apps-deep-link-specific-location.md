@@ -1,19 +1,19 @@
 ---
 title: Egy meghatározott helyre mutató hivatkozás létrehozása a Power BI-mobilalkalmazásokban
 description: Megtudhatja, hogyan hozhat létre a Power BI-mobilalkalmazásban meghatározott irányítópultra, csempére vagy jelentésre mutató mélyhivatkozást URI használatával.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/24/2019
-ms.author: mshenhav
-ms.openlocfilehash: 427019d831aa02723f17efd3de78081c368717c2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: f0a72cf315c8ad911414274daae11b712971b305
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879294"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114496"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>A Power BI-mobilalkalmazásokon belül egy meghatározott helyre mutató hivatkozás létrehozása
 A hivatkozásokkal közvetlenül férhet hozzá a Power BI adott elemeihez: jelentésekhez, irányítópultokhoz és csempékhez.

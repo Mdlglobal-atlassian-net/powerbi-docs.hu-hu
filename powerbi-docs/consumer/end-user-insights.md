@@ -7,24 +7,27 @@ featuredvideoid: et_MLSL2sA8
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 9/22/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ab37c806aaf3cd666c71dc22ee1f3d4d457647e0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e86e8c87ca7942e74ff2f16e299304f56f4a2aa3
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863385"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79113081"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Adatelemzési eredmények megtekintése irányítópult-csempéken a Power BI-jal
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 Az irányítópulton található vizualizációs [csempék](end-user-tiles.md) mindegyike nagyszerű lehetőséget kínál az adatfeltárással való ismerkedéshez. Ha rákattint egy csempére, megnyílik egy jelentés vagy a [Q&A](end-user-q-and-a.md), amelyben szűrheti és rendezheti a jelentés alapjául szolgáló adathalmazt, és részletes elemzést végezhet rajta. Elemzések futtatásakor pedig a Power BI elvégzi Ön helyett az adatok felderítését.
 
 ![három pont menü mód](./media/end-user-insights/power-bi-insight.png)
 
 Elemzéseket futtatva érdekes interaktív vizualizációkat hozhat létre adataiból. Elemzéseket futtathat az irányítópult adott csempéin, és még az elemzéseken is futtathat elemzést!
 
-Az elemzés szolgáltatás a Microsoft Research-csel együttműködésben fejlesztett, egyre növekvő számú [haladó szintű elemzési algoritmusra épül](end-user-insight-types.md). A Microsoft Research egyre több ember számára teszi lehetővé adatai újszerű és intuitív módszerekkel történő elemzését.
+A megállapítási szolgáltatás a Microsoft Researchcsel együttműködésben fejlesztett, növekvő számú [haladó szintű elemzési algoritmusra épül](end-user-insight-types.md). A Microsoft Research egyre több felhasználó számára teszi lehetővé megállapítások kinyerését az adatokból újszerű és intuitív módszerekkel.
 
 ## <a name="run-insights-on-a-dashboard-tile"></a>Irányítópult csempére vonatkozó elemzések futtatása
 Ha az irányítópult egyik csempéjén futtat elemzéseket, a Power BI megkeresi az adott csempe létrehozásához használt adatokat. 

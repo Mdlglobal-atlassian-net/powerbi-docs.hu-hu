@@ -7,24 +7,25 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 03/09/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 48322b554a7b600bc5cadc7c40fe366c64cd8549
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: bb69d1ecc4e91912b947a2120607e1a0502d8162
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852653"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040504"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-the-power-bi-service"></a>Kedvenc irányítópultok, jelentések és alkalmazások a Power BI szolgáltatásban
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 Ha *kedvencként* jelöl meg egy tartalmat, akkor azt gyorsan elérheti a **Kedvencek** tartalomlistából és a **Power BI kezdőlap** > **Kedvencek és gyakoriak** területéről. A kedvencek azok a helyek, amelyeket általában a leggyakrabban látogat, és ezeket sárga csillag jelöli.
 
    ![Kedvencek ikon](./media/end-user-favorite/power-bi-favorite-nav.png)
 
    ![Kedvencek és gyakori elemek ikon](./media/end-user-favorite/power-bi-home.png)
-
-A Power BI szolgáltatásban arra is lehetősége van, hogy egyetlen irányítópultot [Kiemelt irányítópultként](end-user-featured.md) jelöljön meg.
 
 ## <a name="add-a-dashboard-or-report-as-a-favorite"></a>Irányítópult vagy jelentés hozzáadása a kedvencekhez
 
@@ -67,7 +68,7 @@ Ha már nem használja olyan gyakran a tartalmat, eltávolíthatja a kedvencek k
 2. A kedvencnek jelölés visszavonásához kattintson a kedvencek közül eltávolítani kívánt tartalom melletti sárga csillagra.
 
 > [!NOTE]
-> Irányítópult, jelentés vagy alkalmazás kedvencnek jelölése is visszavonható. Ehhez egyszerűen nyissa meg a tartalmat, és szüntesse meg a sárga ikon bejelölését. 
+> Irányítópult, jelentés vagy alkalmazás kedvencnek jelölése is visszavonható. Csak nyissa meg, és válassza ki a sárga csillagot, hogy újra fehér csillaggá változtassa. 
 > 
 > 
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok

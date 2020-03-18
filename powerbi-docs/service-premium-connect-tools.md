@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 07/24/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 0364fae1648e6155cc5e5a92850861c3bedbabdc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: aaafaa5b2822e3e17fdc92b43bf7b745330a547b
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871886"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78946845"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Csatlakozás adathalmazokhoz ügyfélalkalmazásokkal és eszközökkel (előzetes verzió)
 
-A Power BI Premium-munkahelyek és -adathalmazok *csak olvasási* kapcsolatokat támogatnak microsoftos és külső ügyfélalkalmazásoktól és eszközöktől. Alapértelmezés szerint a kapcsolatok engedélyezve vannak
+A Power BI Premium-munkahelyek és -adathalmazok *csak olvasási* kapcsolatokat támogatnak microsoftos és külső ügyfélalkalmazásoktól és eszközöktől. Alapértelmezés szerint a kapcsolatok engedélyezve vannak.
 
 > [!NOTE]
 > Ennek a cikknek csak az a célja, hogy bemutassa a csak olvasási kapcsolódást a Power BI Premium-munkahelyekhez és adathalmazokhoz. *Nem* célja részletes információt nyújtani a programozhatóságról, az egyes eszközökről és alkalmazásokról, az architektúráról és a munkaterület- és adathalmaz-kezelésről. Az itt ismertetett témák az Analysis Services táblázatos modellű adatbázis-architektúrájának és felügyeletének alapos ismeretét igénylik.
@@ -104,17 +104,13 @@ Az alábbi adathalmazok nem támogatottak a Power BI szolgáltatásban:
 
 A modellszerepkörök és a szerepkörtagságok jelenleg nem fedezhetők fel és jeleníthetők meg XMLA-végpontokkal.
 
-## <a name="disable-connectivity"></a>Az összekapcsolhatóság letiltása
-
-Alapértelmezés szerint az XMLA-végpontok összekapcsolhatósága engedélyezve az adatkészlete számítási feladatához. Ezt a [számítási feladatok beállításai](service-admin-premium-workloads.md#workload-settings) között tilthatja le.
-
 ## <a name="audit-logs"></a>Auditnaplók 
 
 A munkaterülethez csatlakozó ügyfélalkalmazások és -eszközök XMLA-végponton keresztüli hozzáférése a Power BI auditnaplóiban a **GetWorkspaces** művelet alatt van naplózva. További információ: [Naplózás a Power BI-ban](service-admin-auditing.md).
 
-## <a name="see-also"></a>Lásd még:
+## <a name="see-also"></a>További információ
 
-[Analysis Services referenciák](https://docs.microsoft.com/bi-reference/#pivot=home&panel=home-all)   
+[Analysis Services referenciák](https://docs.microsoft.com/bi-reference/?pivot=home&panel=home-all)   
 [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-ssms)   
 [SQL Server Analysis Services Tabular Protocol](https://docs.microsoft.com/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
 [Dinamikus felügyeleti nézetek (DMV-k)](https://docs.microsoft.com/sql/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services)   

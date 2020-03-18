@@ -5,21 +5,21 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 02/18/2020
+ms.date: 02/24/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 100a9302e260a7c8f34c6fa07cc6b231e7271ce6
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: fb1209103c88e78148f746321d5ff8d8bd6e1a20
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496210"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79039937"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>A Power BI szolgáltatás felhasználók számára
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-Egy adatkultúrában élünk, ahol az üzleti döntések a tényeken alapulnak, nem pedig véleményeken. Ezekhez a döntésekhez adatokra van szükség, és a munkatársai segítenek Önnek ebben.     
+Egy adatkultúrában élünk, ahol az üzleti döntések a tényeken alapulnak, nem pedig véleményeken. Ezekhez a döntésekhez adatokra van szükség, és a munkatársai nem hagyják cserben.     
  
 Különféle jelentéseket, számolótáblákat, diagramokat tartalmazó e-maileket, sőt kinyomtatott emlékeztetőket is küldenek Önnek. Az adatmennyiség növekedésével egyre nehezebben tudható, mire van gyorsan szüksége, és attól is tart, hogy esetleg nem is a legújabb információkat használja.  
  
@@ -35,7 +35,7 @@ Mindössze meg kell nyitnia a Power BI szolgáltatást egy böngészőben vagy a
 
 ![Power BI-irányítópult](media/end-user-consumer/power-bi-funnel.png)
 
-Mivel a tartalom nem statikus, azokat mélyebben is megvizsgálhatják, és trendeket, információkat és más üzletiintelligencia-elemzéseket tárhatnak fel. A tartalmat szeletelheti és más módon is rendszerezheti, sőt akár saját szavaival is feltehet kérdéseket. Vagy egyszerűen megvárhatja, hogy az adatokból érdekes információk szülessenek, értesítéseket kérhet az adatváltozásokról, és e-mailben kaphat jelentéseket az Ön által megadott ütemezés szerint. Az összes adata bármikor, a felhőben vagy a helyszínen is bármely eszközről elérhető. És ez még csak egy kis szelete annak, amire a Power BI képes. 
+Mivel a tartalom nem statikus, részleteibe menően megvizsgálhatja, és ezáltal trendeket, megállapításokat és más üzletiintelligencia-elemzéseket tárhat fel. A tartalmat szeletelheti és más módon is rendszerezheti, sőt akár saját szavaival is feltehet kérdéseket. Vagy egyszerűen megvárhatja, hogy az adatokból érdekes információk szülessenek, értesítéseket kérhet az adatváltozásokról, és e-mailben kaphat jelentéseket az Ön által megadott ütemezés szerint. Az összes adata bármikor, a felhőben vagy a helyszínen is bármely eszközről elérhető. És ez még csak egy kis szelete annak, amire a Power BI képes. 
 
 ## <a name="am-i-a-power-bi-consumer"></a>A Power BI *felhasználójának* számítok?
 
@@ -45,13 +45,13 @@ Felhasználóként nem fog hozzáférni a Power BI összes szolgáltatásához �
 
 Kétségtelenül találkozni fog a „Power BI Desktop” vagy „Desktop” kifejezéssel. Ezek az irányítópultokat és jelentéseket létrehozó, illetve megosztó *tervezők* által használt különálló eszközre utalnak.  Fontos megjegyezni, hogy más Power BI-eszközök is vannak, felhasználóként azonban csak a Power BI szolgáltatással fog dolgozni. 
 
-Mivel *megosztott* tartalommal dolgozik, Power BI Pro- vagy prémium szintű licencre van szüksége. [Milyen licenccel rendelkezem?](end-user-license.md)
+Mivel *megosztott* tartalommal dolgozik, szüksége lesz egy standard **ingyenes** licencre egy olyan szervezetben, amely **Premium**-kapacitást használ. [Milyen licenccel rendelkezem?](end-user-license.md)
 
 
 ## <a name="safely-interact-with-content"></a>A tartalom biztonságos kezelése 
 Bátran szűrhet, szeletelhet, feliratkozhat és exportálhat – a tevékenysége nem befolyásolja az eredeti megosztott tartalmat (irányítópultokat, jelentéseket és alkalmazásokat) és az azok alapjául szolgáló adatokat.  
 
-Az adatokban nem tud kárt tenni.  A Power BI nagyszerű eszközt jelent a felfedezéshez és kísérletezéshez, és közben nem kell amiatt aggódnia, hogy elront valamit.  
+Az adatokban nem tud kárt tenni.  A Power BI nagyszerű eszköz a felfedezésre és kísérletezésre, és közben nem kell amiatt aggódnia, hogy elront valamit.  
  
 Ez nem azt jelenti, hogy a módosításait nem mentheti – ezt megteheti. A módosítások azonban egyedül azt befolyásolják, ahogyan Ön látja a tartalmat. Az eredeti, alapértelmezett nézet egyetlen kattintással helyreállítható.  
 

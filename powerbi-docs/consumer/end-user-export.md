@@ -7,21 +7,24 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 02/20/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 27128618fc594a8b7259a3de3862c6766eaecd86
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 811eaa9769a099122597d7132de80cbc2d22a51b
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537505"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040146"
 ---
 # <a name="export-data-from-a-visual"></a>Adatok exportálása vizualizációból
 
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Ha szeretné megtekinteni a vizualizáció létrehozásához használt adatokat, [megjelenítheti az adatokat a Power BI-ban](end-user-show-data.md) vagy exportálhatja azokat az Excelbe. Az adatexportálási lehetőség használatához meghatározott típusú licenc szükséges, valamint a tartalomra vonatkozó engedélyek. Ha nem tud exportálni, lépjen kapcsolatba a Power BI rendszergazdájával. 
+Ha szeretné megtekinteni a vizualizáció létrehozásához használt adatokat, [megjelenítheti az adatokat a Power BI-ban](end-user-show-data.md) vagy exportálhatja azokat az Excelbe. Az adatexportálási lehetőség használatához meghatározott típusú licenc szükséges, valamint a tartalomra vonatkozó engedélyek. Ha nem tud exportálni, lépjen kapcsolatba a Power BI rendszergazdájával. Az adatok exportálásához Power BI Pro-licenc szükséges. Ez lehet egy felhasználónkénti Pro-licenc, vagy egy felhasználónkénti Pro-licenc egy olyan szervezetben, amely Premium-kapacitáslicenccel rendelkezik. Ezt a típusú licencet általában a jelentések *tervezői* használják, nem pedig a *felhasználók*. További információ: [Milyen licencem van?](end-user-license.md).
+
 
 ## <a name="from-a-visual-on-a-power-bi-dashboard"></a>Power BI-irányítópulton található vizualizációból
 

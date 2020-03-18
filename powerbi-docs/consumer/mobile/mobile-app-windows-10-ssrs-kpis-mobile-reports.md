@@ -1,29 +1,28 @@
 ---
-title: SSRS-mobiljelentések, KPI-k megtekintése a Windows 10-hez készült Power BI mobilalkalmazásban
+title: Helyszíni jelentések és KPI-k megtekintése a Power BI Windows-alkalmazásban
 description: A Windows 10-hez készült Power BI mobilalkalmazás valós idejű, érintéssel vezérelhető mobil hozzáférést biztosít a fontos helyszíni vállalati információkhoz.
-author: mshenhav
-ms.reviewer: ''
+author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
-ms.openlocfilehash: 4666e7c0e4901a99867ea72ab404df4cbffe110b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/09/2020
+ms.author: painbar
+ms.openlocfilehash: 010513ec8ca908167bbc99255a6fd207ca0ccfba
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879350"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040931"
 ---
-# <a name="view-reporting-services-ssrs-mobile-reports-and-kpis-in-the-windows-10-power-bi-mobile-app"></a>Reporting Services- (SSRS-) mobiljelentések és -KPI-k megtekintése a Windows 10-hez készült Power BI mobilalkalmazásban
-A Windows 10-hez készült Power BI mobilalkalmazás valós idejű, érintéssel vezérelhető mobil hozzáférést biztosít az SQL Server 2016 Reporting Services szolgáltatásban található fontos helyszíni vállalati információkhoz. 
+# <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Helyszíni jelentések és KPI-k megtekintése a Power BI Windows-alkalmazásban
+A Windows 10-hez készült Power BI alkalmazás valós idejű, érintéssel vezérelhető mobil hozzáférést biztosít az SQL Server 2016 Reporting Services szolgáltatásban található fontos helyszíni vállalati információkhoz. 
 
 ![Reporting Services-mobiljelentések](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
 ## <a name="first-things-first"></a>Először a lényeg
 Az SQL Server 2016 Enterprise kiadás mobiljelentés-közzétevőjének segítségével [saját Reporting Services-mobiljelentéseket hozhat létre](https://msdn.microsoft.com/library/mt652547.aspx), és közzéteheti őket a [Reporting Services webes portálon](https://msdn.microsoft.com/library/mt637133.aspx). KPI-ket hozhat létre közvetlenül a webes portálon. Mappákba rendezheti őket, és megjelölheti kedvenceit, hogy könnyedén megtalálhassa azokat. 
 
-Ezt követően megtekintheti a mappákba rendezett vagy kedvencekként összegyűjtött mobiljelentéseket és KPI-ket a Windows 10-hez készült Power BI mobilalkalmazásban. 
+Ezt követően megtekintheti a mappákba rendezett vagy kedvencekként összegyűjtött KPI-ket, mobiljelentéseket és Power BI-jelentéseket a Windows 10-hez készült Power BI alkalmazásban. 
 
 > [!NOTE]
 > Az eszközön a Windows 10 operációs rendszernek kell futnia. Az alkalmazás optimális működéséhez 1 GB RAM és 8 GB belső tárhely szükséges.
@@ -68,7 +67,7 @@ Böngéssze át a mintákat a KPI-kkel és mobiljelentésekkel való interakció
    > 
 
 ## <a name="view-reporting-services-kpis-and-mobile-reports-in-the-power-bi-app"></a>Reporting Services-KPI-k és -mobiljelentések megtekintése a Power BI alkalmazásban
-A Reporting Services-KPI-k és -mobiljelentések ugyanabban a mappában találhatók, mint a Reporting Services webes portálon.
+A Reporting Services-KPI-k, a mobiljelentések és a Power BI-jelentések (előzetes verzió) ugyanabban a mappában találhatók, mint a Reporting Services webes portálon.
 
 ![Jelentések mappái](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-folders.png)
 
@@ -80,7 +79,7 @@ A Reporting Services-KPI-k és -mobiljelentések ugyanabban a mappában találha
     ![Reporting Services-mobiljelentés](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
 ## <a name="view-your-favorite-kpis-and-reports"></a>A kedvenc KPI-jeinek és jelentéseinek megtekintése
-Megjelölhet KPI-ket és mobilejelentéseket kedvencként a Reporting Services webes portálon, majd megtekintheti azokat egyetlen, kényelmesen elérhető mappában Windows 10-es eszközén, a kedvenc Power BI-irányítópultjaival és -jelentéselvei együtt.
+Megjelölhet KPI-ket, mobilejelentéseket és Power BI-jelentéseket kedvencként a Reporting Services webes portálon, majd megtekintheti azokat egyetlen, kényelmesen elérhető mappában Windows 10-es eszközén, a kedvenc Power BI-irányítópultjaival és -jelentéseivel együtt.
 
 * Koppintson a **Kedvencek** elemre.
   
@@ -88,8 +87,6 @@ Megjelölhet KPI-ket és mobilejelentéseket kedvencként a Reporting Services w
   
    A webes portálon található összes kedvencét megtalálhatja ezen az oldalon.
   
-   ![Kedvencek oldal](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-windows-10-ssrs-favorites.png)
-
 További információ a [kedvencekről a Power BI-mobilalkalmazásokban](mobile-apps-favorites.md).
 
 ## <a name="remove-a-connection-to-a-report-server"></a>Jelentéskészítő kiszolgálóval való kapcsolat eltávolítása

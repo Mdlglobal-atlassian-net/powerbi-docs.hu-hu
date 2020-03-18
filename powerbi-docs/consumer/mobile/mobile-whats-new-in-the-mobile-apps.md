@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 7aa31d9c6eadd4c7c9c88c9006a360a6089f28e2
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 97d2a3acba87309b74de1776f1325bb4c4a78910
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259828"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041561"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -21,6 +21,29 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
 * [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+
+## <a name="february-2020"></a>2020. február
+
+### <a name="multi-select-mode-android-and-ios"></a>Többszörös kiválasztási mód (Android és iOS)
+
+Mostantól lehetséges több adatpont kiválasztani egy jelentésoldalon. Ha a többszörös kiválasztás be van kapcsolva, a megérintett egyes adatpontok hozzá lesznek adva a többi kiválasztott adatponthoz, és az összesített eredmények automatikusan ki lesznek emelve az oldal összes vizualizációján. A többszörös kiválasztási mód bekapcsolásához lépjen a [mobilalkalmazás-beállítások](./mobile-app-interaction-settings.md) oldalára.
+
+>[!NOTE]
+>A többszörös kiválasztási mód támogatott lesz a Power BI jelentéskészítő kiszolgálón a jelentéskészítő kiszolgáló következő kiadásában.
+
+### <a name="report-footer-can-now-always-be-visible-in-the-mobile-app-for-iphones"></a>A jelentés lábléce mostantól mindig látható lehet az iPhone-ra készült mobilalkalmazásban
+
+iPhone-ján és androidos telefonján mostantól a jelentés láblécét a jelentésoldal aljához rögzítheti, ahol a lapon végzett műveleteitől függetlenül mindig látható és elérhető marad. Így az általa kínált lehetőségek könnyebben használhatók. A lábléc rögzítéséhez kapcsolja át a **Rögzített jelentéslábléc** kapcsolót a [mobilalkalmazás-beállítások](./mobile-app-interaction-settings.md) lapján.
+
+### <a name="support-for-pbirs-reports-preview-windows"></a>A PBIRS-jelentések támogatása (előzetes verzió) (Windows)
+
+Mostantól megnyithatja a Power BI jelentéskészítő kiszolgáló (PBIRS) jelentéseit a Power BI alkalmazásban.
+
+### <a name="quickly-access-your-recent-items-windows"></a>Gyorsan hozzáférhet a legutóbbi elemeihez (Windows)
+
+Kattintson a jobb gombbal a Power BI alkalmazás ikonjára a Windows tálcán az utoljára megtekintett elemek listájának megtekintéséhez. Kattintson a lista bármelyik elemére a gyors ismételt megtekintéséhez.
+
+![Tálca gyorselérési menüje](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-windows-taskbar-quick-access.png)
 
 ## <a name="january-2020"></a>2020. január
 
@@ -38,7 +61,7 @@ Android-felhasználóinktól úgy értesültünk, hogy a jelentések használat�
 
 Akiknek jobban tetszett a korábbi működés, a mobilalkalmazás új, kibővített [kezelési beállításaival](./mobile-app-interaction-settings.md) állíthatja vissza ezeket a viselkedésmódokat.
 
-Ezen kívül az informatikai rendszergazdák [távolról felülbírálhatják az új alapértelmezett beállításokat](./mobile-app-configuration.md#interaction-settings-android) a felhasználók nevében egy tetszőleges MDM-eszköz és egy alkalmazáskonfigurációs fájl használatával. Így elérhető, hogy a vállalaton belül minden felhasználónál ugyanaz a viselkedés legyen konfigurálva.
+Ezen kívül az informatikai rendszergazdák [távolról felülbírálhatják az új alapértelmezett beállításokat](./mobile-app-configuration.md#interaction-settings-ios-and-android) a felhasználók nevében egy tetszőleges MDM-eszköz és egy alkalmazáskonfigurációs fájl használatával. Így elérhető, hogy a vállalaton belül minden felhasználónál ugyanaz a viselkedés legyen konfigurálva.
 
 > [!NOTE]
 > A frissítés gombra és a jelentéslábléc dokkolására vonatkozó kezelési beállítások jelenleg nem működnek a Jelentéskészítő kiszolgáló jelentésein. Ez a Jelentéskészítő kiszolgáló januári kiadásával változni fog!
@@ -104,7 +127,7 @@ További tudnivalók a [Power BI Mobile új megjelenéséről](https://powerbi.m
 
 ### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Biztonságos hozzáférés az Azure Active Directory (AD) alkalmazásproxyján keresztül (iOS és Android)
 
-Az Azure Active Directory csapatával együttműködve integráltuk a Power BI mobilalkalmazásokat az Azure Active Directory (AAD) alkalmazásproxyjával. Ezzel a konfigurációval csatlakozhat a vállalati határokon belül futtatott jelentéskészítő kiszolgálóhoz a Power BI mobilalkalmazásból anélkül, hogy bonyolult helyszíni konfigurációt kellene beállítania. További információ: [A Power BI Mobile és az Azure AD alkalmazásproxyjának integrációja](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Ismerje meg, [hogyan konfigurálható az Azure AD alkalmazásproxyja és a Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+Az Azure Active Directory csapatával együttműködve integráltuk a Power BI-mobilalkalmazásokat az Azure Active Directory- (AAD-) alkalmazásproxyval. Ezzel a konfigurációval csatlakozhat a vállalati határokon belül futtatott jelentéskészítő kiszolgálóhoz a Power BI mobilalkalmazásból anélkül, hogy bonyolult helyszíni konfigurációt kellene beállítania. További információ: [A Power BI Mobile és az Azure AD alkalmazásproxyjának integrációja](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Ismerje meg, [hogyan konfigurálható az Azure AD alkalmazásproxyja és a Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>2019. július
 
@@ -383,7 +406,7 @@ A feltételes hozzáférés támogatása az Intune mobileszköz-kezelésével.
 
 #### <a name="improved-security-management"></a>Továbbfejlesztett biztonságkezelés 
 
-A rendszert kibővítettük a feltételes hozzáférés (CA) és a Microsoft Intune mobileszköz-kezelés (MDM) támogatásával Android-eszközökön, hogy cége vagy szervezete adatai nagyobb védelemben részesüljenek. Már elérhető iOS rendszeren.
+A rendszert kibővítettük a feltételes hozzáférés (CA) és a Microsoft Intune mobileszköz-kezelés (MDM) támogatásával androidos eszközökön, hogy cége vagy szervezete adatai nagyobb védelemben részesüljenek. Már elérhető iOS rendszeren.
 
 #### <a name="improved-permission-management"></a>Továbbfejlesztett engedélykezelés
 
@@ -398,7 +421,7 @@ A Power BI-ban bizonyos alkalmazásokat nem szükséges telepíteni. A Power BI-
 ### <a name="november-2017"></a>2017. november
 #### <a name="iphone-x-optimization"></a>Optimalizálás iPhone X-hez
 
-Optimalizáltuk az iPhone X-hez az alkalmazás elrendezését, így minden eszközön tetszetős elrendezésben jelennek meg az adatok.
+Optimalizáltuk az iPhone X-hez az alkalmazás elrendezését, így minden eszközön stílusos elrendezésben jelennek meg az adatok.
 
 ### <a name="october-2017"></a>2017. október
 #### <a name="filters-for-phone-reports-in-android"></a>Szűrők telefonos jelentésekhez Androidon
@@ -673,7 +696,7 @@ A Power BI mobilalkalmazás értesítési központja megjeleníti az Önnel mego
 * A **QR-kódok** mostantól **a jelentések esetében** is elérhetők. Olvassa be a kódot a Power BI alkalmazással, hogy közvetlenül egy kapcsolódó jelentésre ugorhasson, navigálás és keresés nélkül.
 * **Továbbfejlesztett adatkezelés** az SQL Server 2016 Reporting Services szolgáltatáshoz: Csökkentett betöltési idők és adatforgalom az eszközén.
 * **SQL Server 2016 témájú mobiljelentések**: Mobiljelentésekhez készült témákat tekinthet meg az eszközén.
-* **Földrajzi alapú szűrés**: Szűrheti a jelentéseket a saját tartózkodási helye alapján.
+* **Geoszűrés**: Szűrheti a jelentéseket a saját tartózkodási helye alapján.
 
 ### <a name="april-2016"></a>2016. április
 További részletekért olvassa el a [Power BI mobilalkalmazásairól szóló áprilisi blogbejegyzést](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-april-2016/).
@@ -832,4 +855,3 @@ A Power BI-mobilalkalmazások fejlesztései – Android, iOS (iPhone és iPad) �
 * Jobb felhasználói élmény az irányítópultok elérésekor szerepköralapú biztonság esetén. 
 * Egy új képességnek köszönhetően fókusz módban is közvetlenül lehet böngészni az irányítópultok csempéi között anélkül, hogy vissza kéne térni az irányítópultra, vagy ki kellene választani a következő csempét.
 * Stabilitással és teljesítménnyel kapcsolatos további fejlesztések. 
-

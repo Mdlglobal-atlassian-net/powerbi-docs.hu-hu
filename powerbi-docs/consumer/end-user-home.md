@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/28/2020
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: dd83388c00b2415c43355bb57c271b430a9abc53
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: 83c834b05846c22577b7987d341c295a1e763b59
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76888879"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79113303"
 ---
 # <a name="find-your-dashboards-reports-and-apps"></a>Irányítópultok, jelentések és alkalmazások megkeresése
+
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 A Power BI-ban a *tartalom* kifejezés alkalmazásokra, irányítópultokra és jelentésekre vonatkozik. A tartalmat a Power BI *tervezői* hozzák létre, akik megosztják azokat a munkatársakkal, például Önnel. A tartalom elérhető és megtekinthető a Power BI szolgáltatásban, és a Power BI használatához a legjobb, ha a Power BI **kezdőlapján** kezdi a munkát.
 
 ## <a name="explore-power-bi-home"></a>Ismerkedés a Power BI kezdőlapjával
@@ -29,7 +31,7 @@ A Power BI a Kezdőlap területet jeleníti meg, ahogy az az alábbi ábrán lá
  
 ![A Power BI szolgáltatás Kezdőlapjának képernyőképe.](media/end-user-home/power-bi-home.png)
 
-A Power BI kezdőlapján három különböző módszerrel tekinthet meg és kereshet tartalmakat. Mindhárom ugyanahhoz a tartalomhoz fér hozzá, mindössze más-másféleképpen érik azt el. Néha kereséssel lehet megtalálni tartalmakat a legegyszerűbb és leggyorsabb módon, míg más esetben hatékonyabb módszer, ha kiválaszt egy *kártyát* a kezdőlapon.
+A Power BI kezdőlapján három különböző módszerrel tekinthet meg és kereshet tartalmakat. Mindhárom ugyanahhoz a tartalomhoz fér hozzá, mindössze másként érik azt el. Néha kereséssel lehet megtalálni tartalmakat a legegyszerűbb és leggyorsabb módon, míg más esetben hatékonyabb módszer, ha kiválaszt egy *kártyát* a kezdőlapon.
 
 - A kezdőlapon rendszerezve megtalálja a kedvenc és a legújabb tartalmakat, de vannak még itt ajánlott tartalmak és tanuláshoz használható források is. Minden tartalomhoz tartozik egy *kártya*, amelyen egy cím és egy ikon is látható. Ha kiválasztja a kártyát, megnyílik az adott tartalom.
 - A bal oldalon egy panelt talál, amelyet navigációs panelnek hívunk. Ezen a panelen ugyanaz a tartalom látható, de más elrendezésben: Kedvencek, Legutóbbi, Alkalmazások és Velem megosztva kategóriákban. Innen megtekintheti a tartalomlistát, és kiválaszthatja a megnyitni kívánt elemet.
@@ -52,7 +54,7 @@ A következő néhány témakörben alaposabban szemügyre vesszük a Kezdőlapo
 ## <a name="most-important-content-at-your-fingertips"></a>A legfontosabb tartalom mindig kéznél van
 
 ### <a name="favorites-and-frequents"></a>Kedvencek és gyakori elemek
-Ez a felső szakasz a leggyakrabban felkeresett tartalomra mutató hivatkozásokat tartalmaz, illetve azokat, amelyeket Ön [Kiemeltként vagy kedvencként](end-user-favorite.md) megjelölt. Figyelje meg, hogy több kártyán sárga csillag látható; az a két alkalmazás és az az irányítópult kedvencekként lettek megjelölve. 
+Ez a felső szakasz a leggyakrabban felkeresett tartalomra mutató hivatkozásokat tartalmaz, illetve azokra, amelyeket [kiemeltként vagy kedvencként](end-user-favorite.md) megjelölt. Figyelje meg, hogy több kártyán sárga csillag látható; az a két alkalmazás és az az irányítópult kedvencekként lettek megjelölve. 
 
 ![Kedvencek úszó menü](./media/end-user-home/power-bi-favorites-frequents.png)
 
@@ -109,9 +111,9 @@ A navigációs panel a tartalmakat tárolókba rendezi, amelyek hasonlóan vanna
 A keresett tartalmakat a navigációs panelen is gyorsan megtalálhatja. A tartalom a Kezdőlapon láthatóhoz hasonlóan van elrendezve, de kártyák helyett itt listákban jelennek meg. 
 
 ## <a name="search-all-of-your-content"></a>Keresés az összes tartalomban
-A tartalmat néha a leggyorsabban kereséssel találhatja meg. Tegyük fel, hogy azt veszi észre, hogy a Kezdőlapon már nem jelenik meg egy irányítópult, amelyet egy ideje nem használt. Lehet, hogy emlékszik rá, hogy Aaron nevű kollégája megosztott Önnel valamit, de arra már nem emlékszik, hogy Aaron milyen nevet adott neki, vagy hogy milyen típusú tartalmat osztott meg: irányítópultot vagy jelentést. Vagy lehet, hogy már olyan sok tartalommal rendelkezik, hogy a keresés sokkal egyszerűbb, mint a görgetés vagy a rendezés. 
+A tartalmat néha a leggyorsabban kereséssel találhatja meg. Tegyük fel, hogy azt veszi észre, hogy a Kezdőlapon már nem jelenik meg egy irányítópult, amelyet egy ideje nem használt. Lehet, hogy emlékszik rá, hogy Aaron nevű munkatársa megosztott Önnel valamit, de arra már nem emlékszik, hogy Aaron milyen nevet adott neki, vagy hogy milyen típusú tartalmat osztott meg: irányítópultot vagy jelentést. Vagy lehet, hogy már olyan sok tartalommal rendelkezik, hogy a keresés sokkal egyszerűbb, mint a görgetés vagy a rendezés. 
  
-A keresőmező a Kezdőlap menüsávjának jobb felső részén található. Megadhatja az irányítópult teljes vagy részleges nevét, és rákereshet. Sőt, a kollégája nevét is megadhatja, és olyan tartalmakat is kereshet, amelyeket ő osztott meg Önnel. A keresés hatóköre úgy van kiválasztva, hogy minden olyan tartalomban keressen, amelyet Ön birtokol, illetve amelyekhez rendelkezik hozzáféréssel.
+A keresőmező a Kezdőlap menüsávjának jobb felső részén található. Megadhatja az irányítópult teljes vagy részleges nevét, és rákereshet. Sőt, a munkatársa nevét is megadhatja, és olyan tartalmakat is kereshet, amelyeket ő osztott meg Önnel. A keresés hatóköre úgy van kiválasztva, hogy minden olyan tartalomban keressen, amelyet Ön birtokol, illetve amelyekhez rendelkezik hozzáféréssel.
 
 ![Képernyőkép a Legutóbbira való keresésről a keresőmező használatával](media/end-user-home/power-bi-search-field.png)
 

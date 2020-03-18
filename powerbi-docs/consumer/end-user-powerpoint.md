@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 02/21/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 25422b2503caed78e6e6518a855f6b23a0571a8c
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 4194afb71dec7b50d75def0677489d3ff009917e
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74830515"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79113752"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Jelentések exportálása Power BI-ból PowerPointba
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -75,8 +77,9 @@ Most már csak Önön múlik, hogy miképpen használja fel a PowerPoint-bemutat
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 Az **Exportálás a PowerPointba** funkció használatakor figyelembe kell vennie néhány megfontolást és korlátozást.
 
-* Az R vizualizációk jelenleg nem támogatottak. Az ilyen vizualizációkat a rendszer üres képként exportálja a PowerPointba, és hibaüzenetet küld, hogy a vizualizáció nem támogatott.
+* Az R-alapú és a Python-alapú vizualizációk még nem támogatottak. Az ilyen vizualizációkat a rendszer üres képként exportálja a PowerPointba, és hibaüzenetet küld, hogy a vizualizáció nem támogatott.
 * A minősített egyéni vizualizációk támogatottak. A minősített egyéni vizualizációkról, beleértve az egyéni vizualizáció minősítési folyamatát, az [Egyéni vizualizáció minősítése](../developer/power-bi-custom-visuals-certified.md) oldalon talál további információt. A nem minősített egyéni vizualizációk nem támogatottak. Ezeket a rendszer üres képként exportálja a PowerPointba, és hibaüzenetet küld, hogy a vizualizáció nem támogatott.
+* Az Esri vizualizációja nem támogatott
 * A 30-nál több jelentésoldalt tartalmazó jelentések jelenleg nem exportálhatók.
 * A görgetősávokkal rendelkező vizualizációk az alapértelmezett állapotukban lesznek exportálva. A PowerPointban látható vizualizáció csak az adatmennyiség felső részét jeleníti meg. A PowerPointban nem görgethet, mivel minden dia egy kép. 
 * A jelentés PowerPointba történő exportálása néhány percet igénybe vehet, várjon türelmesen. Az exportálás időtartamát többek között a jelentés szerkezete és a Power BI szolgáltatás aktuális terhelése befolyásolhatja.
@@ -89,6 +92,7 @@ Az **Exportálás a PowerPointba** funkció használatakor figyelembe kell venni
 * Ahogy korábban említettük, a rendszer minden jelentésoldalt külön képként exportál a PowerPoint-fájlba.
 * A Power BI szolgáltatás a PowerPoint-exportálásnál a Power BI nyelvi beállításait alkalmazza. A nyelvi beállításokat megtekintheti vagy módosíthatja a fogaskerék ikon ![Fogaskerék ikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Beállítások** > **Általános** > **Nyelv** lehetőség választásával.
 * Az exportált PowerPoint-fájl címoldalán található **Letöltés ideje** a számítógép időzónáját követi a letöltés idején.
+* PPTX-fájlba való exportáláskor az egyéni betűkészletekkel rendelkező témákat használó jelentések egyéni betűkészlete az alapértelmezett betűkészletre lesz cserélve.
 * Az URL-szűrők jelenleg nem érvényesek az exportálás **Aktuális értékek** beállításánál.
 
 ## <a name="next-steps"></a>Következő lépések

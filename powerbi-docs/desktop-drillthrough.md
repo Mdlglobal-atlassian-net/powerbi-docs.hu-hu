@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/08/2019
+ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a7b00b0cb611dd3e0921885ddaca6547fdb43fd3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 020b7e0a5fd0c3372e3a83d9973a404978e56b7d
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74310954"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401242"
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Részletezés használata a Power BI Desktopban
 A Power BI Desktop *részletezés* funkciójával olyan oldalt hozhat létre a jelentésben, amely egy adott entitásra – például szállítóra, ügyfélre vagy gyártóra összpontosít. A részletezés funkció használatához válassza ki azt úgy, hogy a jobb gombbal rákattint egy másik jelentésoldalon lévő adatpontra, így áthatolhat az összpontosított oldalra az ebben a környezetben szűrt részletek beszerzéséhez.
@@ -33,6 +33,11 @@ A Power BI Desktop *részletezés* funkciójával olyan oldalt hozhat létre a j
     Amikor egy mezőt a **Részletezési szűrők** szakaszhoz ad, a Power BI Desktop automatikusan létrehoz egy *Vissza* gomb vizualizációt. Ez a vizualizáció a megjelenített jelentésekben gombként jelenik meg. Azok a felhasználók, akik a Power BI szolgáltatásban használják a jelentést, ezzel a gombbal térhetnek vissza arra a jelentésoldalra, ahonnan érkeztek.
 
     ![Részletezés képe](media/desktop-drillthrough/drillthrough_03.png)
+
+> [!IMPORTANT]
+> Konfigurálhatja és végrehajthatja az azonos jelentésben lévő oldalak részletezését, viszont nem végezhet részletezést egy másik jelentés oldalain.  
+
+
 
 ## <a name="use-your-own-image-for-a-back-button"></a>Saját kép használata vissza gombhoz    
  A vissza gomb egy kép, ezért a vizualizációt bármely tetszőleges képpel behelyettesítheti. De továbbra is vissza gombként fog működni, amellyel a felhasználók visszatérhetnek az eredeti oldalhoz. 
@@ -54,13 +59,12 @@ Ha egy saját képet szeretne használni a Vissza gombhoz, kövesse az alábbi l
 
 ## <a name="pass-all-filters-in-drillthrough"></a>Összes szűrő átvétele a részletezésben
 
-A Power BI Desktop alkalmazás 2018. májusi verziója óta átveheti az összes alkalmazott szűrőt a részletezési ablakban. Megteheti például, hogy csak egy adott termékkategóriát jelöl ki, és a vizualizációkat erre a kategóriára szűri, majd ezután választja a részletezést. Ilyen esetben elképzelhető, hogy szeretné megtekinteni, hogyan nézne ki a részletezés a szűrők alkalmazásával.
+Az összes alkalmazott szűrőt átadhatja a részletezési ablakban. Megteheti például, hogy csak egy adott termékkategóriát jelöl ki, és a vizualizációkat erre a kategóriára szűri, majd ezután választja a részletezést. Ilyen esetben elképzelhető, hogy szeretné megtekinteni, hogyan nézne ki a részletezés a szűrők alkalmazásával.
 
 Az összes alkalmazott szűrő megtartásához állítsa a **Vizualizációk** panel **Részletezés** szakaszában az **Az összes szűrő megőrzése** kapcsolót **Be** állásba. 
 
 ![Minden szűrő megtartása](media/desktop-drillthrough/drillthrough_06.png)
 
-A Power BI Desktop alkalmazás 2018. május előtti verziói úgy működnek, mintha ez a kapcsoló **Ki** állásba lenne állítva.
 
 Ha ezt követően részletez egy vizualizációt, láthatja, hogy mely szűrők lettek alkalmazva a forrásvizualizációra alkalmazott ideiglenes szűrők révén. A **Vizualizációk** panel **Részletezés** szakaszában dőlt formázású átmeneti szűrők jelennek meg. 
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 6c2c41221e4a199d6a5d3a800f3820746ef7389a
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: 1d61723b08c26197d94b53188b741fd01d47a620
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76888362"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401203"
 ---
 # <a name="get-power-bi-desktop"></a>A Power BI Desktop beszerzése
 A Power BI Desktop használatával összetett lekérdezéseket, modelleket és az adatokat megjelenítő jelentéseket hozhat létre. A Power BI Desktop használatával adatmodelleket állíthat össze, jelentéseket hozhat létre és megoszthatja a munkáját a Power BI szolgáltatásba való közzététellel. A Power BI Desktop ingyenesen letölthető.
@@ -158,6 +158,7 @@ Ha olyan eszközzel telepíti a Power BI Desktopot a felhasználók számára, a
 
     A kimeneti mappa tartalmaz egy *AttachedContainer* nevű mappát, amelyben az .msi-fájlok találhatók.
 
+Az .exe fájlból származó telepítés .exe fájlból kinyert .msi fájlra való frissítése nem támogatott.   A frissítés végrehajtásához először el kell távolítani a Power BI Desktop Ön által használt régebbi verzióját.
 
 ### <a name="issues-when-using-previous-releases-of-power-bi-desktop"></a>Problémák a Power BI Desktop előző kiadásainak használata során
 

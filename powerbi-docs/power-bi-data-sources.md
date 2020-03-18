@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 03/10/2020
 ms.author: kfollis
-ms.openlocfilehash: 261d800dac9b65747e648bc76944a0b8a5077b73
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 1853e710958b5bed0dad011594d9e04ccc99842d
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427093"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041677"
 ---
 # <a name="power-bi-data-sources"></a>Adatforrások a Power BI-hoz
 
@@ -43,7 +43,7 @@ Az alábbi táblázat bemutatja a Power BI által támogatott adatforrásokat ad
 | Azure HDInsight (HDFS) | Igen | Igen | Nem | Nem | Nem |
 | Azure HDInsight Spark | Igen | Igen | Igen | Nem | Nem |
 | Azure SQL Database | Igen | Igen | Igen | Igen <sup>2</sup> | Nem |
-| Azure SQL Data Warehouse | Igen | Igen | Igen | Nem | Nem |
+| Azure SQL Data Warehouse | Igen | Igen | Igen | Igen <sup>2</sup> | Nem |
 | Azure Table Storage | Igen | Igen | Nem | Igen | Nem |
 | BI-összekötő | Igen | Igen | Igen | Igen | Igen |
 | BI360 - Budgeting & Financial Reporting | Igen | Igen | Nem | Nem | Nem |
@@ -134,7 +134,7 @@ Az alábbi táblázat bemutatja a Power BI által támogatott adatforrásokat ad
 | Twilio | Igen | Igen | Nem | Nem | Nem |
 | tyGraph | Igen | Igen | Nem | Nem | Nem |
 | Vertica | Igen | Igen | Igen | Igen | Igen |
-| Web | Igen | Igen | Nem | Igen | Igen |
+| Web | Igen | Igen | Nem | Igen | Igen <sup>6</sup> |
 | Webtrends | Igen | Igen | Nem | Nem | Nem |
 | Workforce Dimensions | Igen | Igen | Nem | Igen | Nem |
 | XML | Igen | Igen | Nem | Igen | Nem <sup>4</sup> |
@@ -143,13 +143,15 @@ Az alábbi táblázat bemutatja a Power BI által támogatott adatforrásokat ad
 
 <sup>1</sup>Az [ACE OLEDB-szolgáltató](https://www.microsoft.com/download/details.aspx?id=54920) támogatja, amely ugyanarra a gépre van telepítve, mint az átjáró.
 
-<sup>2</sup>A helyszíni verzióéval megegyező M függvény támogatja.
+<sup>2</sup>A helyszíni verzióéval megegyező M függvény támogatja, ami korlátozott hitelesítési beállításokat eredményez (az átjáró nem támogatja az OAuth-t).
 
 <sup>3</sup>Az Excel 1997–2003-fájlokhoz (.xls) szükséges az [ACE OLEDB-szolgáltató](https://www.microsoft.com/download/details.aspx?id=54920).
 
 <sup>4</sup>A technológia helyszíni verziójához szükséges.
 
 <sup>5</sup>Csak a [személyes átjáróval](service-gateway-personal-mode.md) támogatott.
+
+<sup>6</sup> A .html, .xls fájlokhoz és Access-adatbázisokhoz szükséges
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Egyszeri bejelentkezés (SSO) DirectQuery-forrásokhoz
 

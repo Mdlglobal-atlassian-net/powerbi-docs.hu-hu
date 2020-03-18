@@ -6,30 +6,34 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 03/08/2020
 ms.author: painbar
-ms.openlocfilehash: fee89c65328b70e1f312b39fbad75d7148bd92f2
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: c7280b2b6bb34b070e7ced3785959d61c74cd165
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542289"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041261"
 ---
 # <a name="configure-report-interaction-settings"></a>Jelentések kezelési beállításainak konfigurálása
 
 ## <a name="overview"></a>Áttekintés
 
-A Power BI mobilalkalmazásnak van néhány konfigurálható „kezelési” beállítása, amelyekkel szabályozhatja az adatok kezelésének módját, és meghatározhatja a Power BI mobilalkalmazás néhány elemének viselkedését. Jelenleg a következők állíthatók be
-* [Jelentésvizualizációk egykoppintásos vagy kétkoppintásos kezelése](#single-tap)
-* [Rögzített vagy dinamikus jelentéslábléc](#docked-report-footer-android-phones) (Android)
-* [Jelentések gombbal kezdeményezett vagy lehúzásos frissítése](#report-refresh-android-phones) (Android)
+A Power BI mobilalkalmazásnak van néhány konfigurálható „kezelési” beállítása, amelyekkel szabályozhatja az adatok kezelésének módját, és meghatározhatja a Power BI mobilalkalmazás néhány elemének viselkedését. Az alábbi tábla bemutatja a jelenleg elérhető interakciós beállításokat, és azt, hogy melyik eszközön találhatóak meg.
+
+|| Android rendszerű telefon | iPhone | Android rendszerű táblagép  | iPad |
+|-|:-:|:-:|:-:|:-:|
+| [Jelentésvizualizációk egykoppintásos vagy kétkoppintásos kezelése](#single-tap) |✔|✔|||
+| [Egy vagy több adatpont kiválasztása jelentésvizualizációkon](#multi-select) |✔|✔|✔|✔|
+| [Jelentés rögzített és dinamikus lábléce](#docked-report-footer) |✔|✔|||
+| [Jelentések frissítése gombbal vagy frissítés húzással](#report-refresh) |✔||||
+|
 
 A kezelési beállítások eléréséhez nyissa meg az [oldalsó panelt](./mobile-apps-home-page.md#header) a profilképre koppintva, válassza a **Beállítások** lehetőséget, és keresse meg a **Kezelés** szakaszt.
 
 ![Kezelési beállítások](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-section.png)
 
->[!NOTE]
->A frissítés gombra és a jelentéslábléc dokkolására vonatkozó kezelési beállítások jelenleg nem működnek a Jelentéskészítő kiszolgáló jelentésein. Ez a Jelentéskészítő kiszolgáló 2020. januári kiadásával fog változni.
+Az interakció beállításait a következő szakaszok ismertetik.
 
 ## <a name="interaction-settings"></a>Kezelési beállítások
 
@@ -38,13 +42,24 @@ Amikor letölti a Power BI mobilalkalmazást, az egykoppintásos kezelésre van 
 
 Ha kívánja, kikapcsolhatja az egykoppintásos kezelést. Ezzel kétkoppintásos kezelésre tér át. Kétkoppintásos kezelés esetén a vizualizációra koppintva kijelöli azt, majd egy újabb koppintással hajthatja végre a kívánt műveletet.
 
-### <a name="docked-report-footer-android-phones"></a>Dokkolt jelentéslábléc (Androidos telefonok)
+### <a name="multi-select"></a>Többszörös kijelölés
+
+A többszörös kiválasztási lehetőséggel több adatpont választható ki egy jelentésoldalon. Ha a többszörös kiválasztás be van kapcsolva, a megérintett egyes adatpontok hozzá lesznek adva a többi kiválasztott adatponthoz, és az összesített eredmények automatikusan ki lesznek emelve az oldal összes vizualizációján. Ha a többszörös kiválasztás ki van kapcsolva, amikor megérint egy adatpontot a kiválasztásához, az új kiválasztás felülírja a korábbit.
+
+Az adatpont kiválasztásának megszüntetéséhez érintse meg az adatpontot még egyszer.
+
+>[!NOTE]
+>A többszörös kiválasztás egyéni vizualizációkban nem támogatott.
+>
+>A többszörös kiválasztási mód támogatott lesz a Power BI jelentéskészítő kiszolgálón a jelentéskészítő kiszolgáló következő kiadásában.
+
+### <a name="docked-report-footer"></a>Jelentés rögzített lábléce
 
 A jelentés láblécének rögzítése beállítás azt adja meg, hogy a jelentés lábléce dokkolva maradjon (tehát rögzített és mindig látható legyen) a jelentés alján, vagy el legyen rejtve, és a jelentésen végzett műveletek, például görgetés függvényében jelenjen meg.
 
 Androidos telefonokon a jelentéslábléc rögzítése alapértelmezés szerint **be** van kapcsolva, tehát a jelentés lábléce rögzítve van, és mindig látható a jelentés alján. Kapcsolja **ki** ezt a beállítást, ha azt szeretné, hogy a jelentés lábléce dinamikusan eltűnjön és megjelenjen a jelentésen végzett műveletektől függően.
 
-### <a name="report-refresh-android-phones"></a>Jelentés frissítése (Androidos telefonok)
+### <a name="report-refresh"></a>Jelentés frissítése
 
 A jelentés frissítése beállítás azt adja meg, hogy hogyan kezdeményezhetők a jelentés frissítései. A jelentés frissítéséhez frissítési gombot helyezhet el a jelentés fejlécében, vagy használhatja a frissítés húzással műveletet a jelentés lapon (húzza enyhén felülről lefelé). Az alábbi ábra ezt a két lehetőséget mutatja be. 
 

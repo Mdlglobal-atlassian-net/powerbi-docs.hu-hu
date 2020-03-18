@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/05/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 3f6f534b71ba6d8e8798418275c4758a95fc6fb5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 089d1df9a63a30d602ac12f1bf18f32787374654
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851225"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114246"
 ---
 # <a name="reports-in-power-bi"></a>Jelentések a Power BI-ban
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -41,7 +43,7 @@ A Power BI egyetlen adathalmazra alapozza a jelentéseket. A jelentések egy-egy
 A tartalmak kezelése és használata (szűrés, szeletelés, feliratkozás és exportálás) során nem tudja tönkretenni a jelentéseket. A munkája nincs hatással az alapul szolgáló adathalmazra vagy az eredeti megosztott tartalomra. Ez egyaránt vonatkozik az irányítópultokra, jelentésekre és alkalmazásokra.
 
 > [!NOTE]
-> Ne feledje, nem tud kárt tenni az adatokban. A Power BI nagyszerű eszközt jelent a felfedezéshez és kísérletezéshez, és közben nem kell amiatt aggódnia, hogy elront valamit.
+> Ne feledje, nem tud kárt tenni az adatokban. A Power BI nagyszerű eszköz a felfedezésre és kísérletezésre, és közben nem kell amiatt aggódnia, hogy elront valamit.
 
 ### <a name="save-your-changes-or-revert-to-the-default-settings"></a>Módosítások mentése vagy visszaállítás az alapértelmezett beállításokra
 

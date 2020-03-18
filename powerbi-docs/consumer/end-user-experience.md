@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 01/31/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: fbd629ea7d2c5bb71471ac8073a5a823f1b2c192
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 595ce61bf2020c27420a33871e82ca7ff9025d60
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76975148"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040147"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Rövid útmutató – Navigáció a Power BI szolgáltatásban
 
@@ -72,7 +72,7 @@ Ezeket meg is nézheti, ha a navigációs panelen kiválasztja a **Munkaterület
 
 ![Saját munkaterületek ](./media/end-user-experience/power-bi-workspaces.png)
 
-Az összes tartalom, amellyel Ön rendelkezik vagy amelyet Ön hozott létre a **Saját munkaterületen** található. Tekintsen rá úgy mint a saját, személyes munkaterületére, ahol nyugodtan kísérletezhet tartalmaival. Sok Power BI-*fogyasztó* esetén azonban a **Saját munkaterület** üres marad, mert a feladata nem jár új tartalom létrehozásával.  A *fogyasztók*, ahogy a neve is mutatja, „fogyasztják” a mások által létrehozott tartalmat, és ezeket az adatokat üzleti döntésekhez használják fel. Ha Ön létrehoz tartalmat, akkor inkább a [*tervezők* számára készült Power BI-cikkeket](../power-bi-creator-landing.md) érdemes elolvasnia.
+Az összes tartalom, amellyel Ön rendelkezik vagy amelyet Ön hozott létre a **Saját munkaterületen** található. Tekintsen rá úgy mint a saját, személyes munkaterületére, ahol nyugodtan kísérletezhet tartalmaival. Sok Power BI-*fogyasztó* esetén azonban a **Saját munkaterület** üres marad, mert a feladata nem jár új tartalom létrehozásával.  A *fogyasztók*, ahogy a neve is mutatja, „fogyasztják” a mások által létrehozott tartalmat, és ezeket az adatokat üzleti döntésekhez használják fel. Ha tartalmakat hoz létre, akkor inkább a [*jelentéskészítők* számára készült Power BI-cikkeket](../index.yml) érdemes elolvasnia.
 
 Az **alkalmazás-munkaterületek** meghatározott alkalmazások tartalmait tartalmazzák.  Amikor egy *tervező* létrehoz egy alkalmazást, akkor az alkalmazás használatához szükséges összes tartalmat egybecsomagolja.  Válassza ki az Értékesítés és marketing munkaterületet, és tekintse meg, hogy a *tervező* mit csomagolt az alkalmazásba. 
 
