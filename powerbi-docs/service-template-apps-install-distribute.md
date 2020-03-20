@@ -1,134 +1,130 @@
 ---
-title: Sablonalkalmazások terjesztése a szervezetnél – Power BI
+title: Sablonalkalmazások telepítése és terjesztése a szervezetnél – Power BI
 description: Elsajátíthatja, hogyan telepíthet, szabhat testre és terjeszthet sablonalkalmazásokat a szervezetnél a Power BI-ban.
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 09/14/2019
-ms.author: tebercov
-ms.openlocfilehash: dcb037fdf064611947719a57316f31d901e3b81d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.topic: how-to
+ms.date: 03/15/2020
+ms.author: painbar
+ms.openlocfilehash: 08aadc3027c5b265194e4239b150ea5d27fe2e43
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73871424"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436111"
 ---
-# <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Sablonalkalmazások telepítése és terjesztése a szervezetnél – Power BI
+# <a name="install-and-distribute-template-apps-in-your-organization"></a>Sablonalkalmazások telepítése és terjesztése a vállalatnál
 
-Ön Power BI-elemző? Ha igen, ebből a cikkből megtudhatja, hogyan telepíthet *sablonalkalmazásokat*, amelyekkel könnyedén kapcsolódhat a vállalkozása működtetéséhez használt olyan szolgáltatásokhoz, mint például a Salesforce, a Microsoft Dynamics és a Google Analytics. Módosíthatja az irányítópultot és a jelentéseket, hogy megfeleljen a szervezet követelményeinek, majd terjesztheti azokat *alkalmazásként* a munkatársainak. 
+Ön Power BI-elemző? Ha igen, ebből a cikkből megtudhatja, hogyan telepíthet [sablonalkalmazásokat](service-template-apps-overview.md), amelyekkel könnyedén kapcsolódhat a vállalkozása működtetéséhez használt olyan szolgáltatásokhoz, mint például a Salesforce, a Microsoft Dynamics és a Google Analytics. A sablonalkalmazás előre elkészített irányítópultját és jelentéseit úgy módosíthatja, hogy megfeleljenek a vállalati igényeknek, majd [alkalmazásként](consumer/end-user-apps.md) terjesztheti azokat a munkatársak körében. 
 
 ![Telepített Power BI-alkalmazások](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-Ha érdekli, hogyan hozhat létre sablonalkalmazásokat, hogy saját maga terjeszthesse azokat, akkor olvassa el a [Sablonalkalmazás létrehozása a Power BI-ban](service-template-apps-create.md) cikket. A Power BI-partnerek kevés kódolással vagy anélkül hozhatnak létre Power BI-alkalmazásokat, és helyezhetik üzembe azokat bármely Power BI-ügyfél részére. 
+Ha érdekli, hogyan hozhat létre saját sablonalkalmazásokat, amelyeket a vállalaton kívül terjeszthet, olvassa el a [Sablonalkalmazás létrehozása a Power BI-ban](service-template-apps-create.md) cikket. A Power BI-partnerek kevés kódolással vagy anélkül hozhatnak létre Power BI-alkalmazásokat, és azokat bármely Power BI-ügyfél részére elérhetővé tehetik. 
 
 ## <a name="prerequisites"></a>Előfeltételek  
 
-Az alábbiakban a sablonalkalmazások telepítésének, testreszabásának és terjesztésének követelményeit olvashatja: 
+Sablonalkalmazás telepítéséhez, testreszabásához és terjesztéséhez a következők szükségesek: 
 
-- Egy [Power BI Pro-licenc](service-self-service-signup-for-power-bi.md)
-- A [Power BI alapvető fogalmainak](service-basic-concepts.md) ismerete
-- Érvényes telepítési hivatkozás a sablonalkalmazás létrehozójától vagy az AppSource-ból. 
-- Engedélyek sablonalkalmazások telepítéséhez. 
+* [Power BI Pro-licenc](service-self-service-signup-for-power-bi.md).
+* Engedélyek sablonalkalmazások telepítéséhez a bérlőben.
+* Az alkalmazás érvényes telepítési hivatkozása, amelyet az AppSource-ból vagy az alkalmazás készítőjétől szerezhet be.
+* A [Power BI alapfogalmainak](service-basic-concepts.md) alapos ismerete.
 
 ## <a name="install-a-template-app"></a>Sablonalkalmazás telepítése
-
-Kaphat egy sablonalkalmazásra mutató hivatkozást. Ellenkező esetben kereshet az AppSource-ban egy Önt érdeklő sablonalkalmazást. A telepítése után mindkét esetben módosíthatja azt, és terjesztheti a saját cégén belül.
-
-### <a name="search-appsource-from-a-browser"></a>Keresés az AppSource-ban egy böngészőből
-
-A böngészőben kattintson erre a hivatkozásra az AppSource Power BI-alkalmazásokat megjelenítő szűrővel történő megnyitásához:
-
-- https://appsource.microsoft.com/marketplace/apps?product=power-bi
-
-### <a name="search-appsource-from-the-power-bi-service"></a>Keresés az AppSource-ban a Power BI szolgáltatásból
 
 1. A Power BI szolgáltatás navigációs paneljén válassza az **Alkalmazások** > **Alkalmazások letöltése** lehetőséget.
 
     ![Alkalmazások letöltése](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
-2. Válassza az AppSource-ban az **Alkalmazások** lehetőséget.
+1. A megjelenő AppSource-ablakban válassza az **Alkalmazások** lehetőséget. Tallózzon a kívánt alkalmazáshoz, vagy keresse meg azt, majd válassza a **Letöltés most** lehetőséget.
 
     ![Keresés az AppSource-ban](media/service-template-apps-install-distribute/power-bi-appsource.png)
 
-3. Tallózzon az alkalmazáshoz, vagy keresse meg azt, majd válassza a **Letöltés most** lehetőséget.
+1. A megjelenő párbeszédablakban válassza a **Telepítés** lehetőséget.
 
-4. A párbeszédpanelen válassza a **Telepítés** lehetőséget.
+    ![Az alkalmazás telepítése](media/service-template-apps-install-distribute/power-install-dialog.png)
+    
+    Az alkalmazás az ahhoz társított munkaterülettel lesz telepítve. **Ha úgy dönt, hogy testreszabja az alkalmazást, ezt a társított munkaterületen kell megtennie**.
 
-    ![Alkalmazás telepítése](media/service-template-apps-install-distribute/power-install-dialog.png)Ha Power BI Pro-licenccel rendelkezik, az alkalmazás telepítése a társított munkaterülettel együtt történik. Az alkalmazást a társított munkaterületen szabhatja testre.
+    > [!NOTE]
+    > Ha egy olyan alkalmazás telepítési hivatkozását használja, amely nem található az AppSource-on, egy ellenőrző párbeszédpanel a döntés megerősítését kéri.
+    >
+    >Az AppSource-on nem megtalálható sablonalkalmazás telepítéséhez a rendszergazdától kell megfelelő engedélyeket kérnie. A részleteket a Power BI felügyeleti portáljának [Sablonalkalmazás beállításai](service-admin-portal.md#template-apps-settings) szakaszában találhatja meg.
 
-    Ha a telepítés sikeres, megjelenik egy értesítés, hogy az új alkalmazás készen áll a használatra.
-4. Válassza az **Ugrás az alkalmazásra** lehetőséget.
-5. **Az új alkalmazás használatának első lépései** szakaszban három lehetőség közül választhat:
+    A telepítés sikeres befejezésekor értesítést kap arról, hogy az új alkalmazás használatra kész.
 
-    ![Az alkalmazás használatának első lépései](media/service-template-apps-create/power-bi-template-app-get-started.png)
+    ![Ugrás az appra](media/service-template-apps-install-distribute/power-bi-go-to-app.png)
 
-    - **Az alkalmazás felfedezése**: Alapszintű példa adatfeltárás. Kezdjen itt az alkalmazás működésének megtapasztalásához. 
-    - **Adatok csatlakoztatása**: Módosítsa az adatforrást a mintaadatokról a saját adatforrására. Újra meghatározhatja az adatkészlet paramétereit és az adatforráshoz tartozó hitelesítő adatokat. Tekintse át az [Ismert korlátozások](service-template-apps-tips.md#known-limitations) szakaszt a sablonalkalmazásokra vonatkozó tippeket tartalmazó cikkben. 
-    - **Ugrás a munkaterületre** (a legspeciálisabb beállítás): az alkalmazás készítője által engedélyezett bármilyen módosítást végrehajthat.
+## <a name="connect-to-data"></a>Csatlakozás adatokhoz
 
-    Vagy ezt a párbeszédpanelt kihagyva közvetlenül is hozzáférhet a társított munkaterülethez a navigációs panel **Munkaterületek** szakaszában.
-    >[!NOTE]
-    >Egy sablonalkalmazás telepítése egy *vállalati alkalmazást* és egy *munkaterületet* is telepít. További információ az [alkalmazások Power BI-beli terjesztéséről](service-create-distribute-apps.md).
- 
-6. A munkatársakkal való megosztás előtt érdemes kapcsolódni a saját adataihoz. Módosíthatja a jelentés vagy az irányítópultot is, hogy megfelelően működjön a cégében. Ekkor más jelentéseket vagy irányítópultokat is felvehet.
+1. Válassza az **Ugrás az alkalmazásra** lehetőséget. Megjelenik **Az új alkalmazás használatának első lépései** ablak.
 
-   Ha egy olyan alkalmazás telepítési hivatkozását választja, amely nem található az AppSource-on, egy ellenőrző párbeszédpanelen kell megerősítenie a döntést.
+   ![Az alkalmazás használatának első lépései](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
 
-   ![Az alkalmazás telepítése](media/service-template-apps-install-distribute/power-install-unvalidated-dialog.png)
+1. Kattintson a **Csatlakozás** lehetőségre.
+    
+    Ekkor egy vagy több egymást követő párbeszédpanel nyílik meg, amelyeken a mintaadatokról a saját adatforrására módosítja az adatforrást. Ehhez általában az adathalmaz paramétereit és az adatforrásbeli hitelesítő adatokat kell újra megadni. Lásd: [Ismert korlátozások](service-template-apps-tips.md#known-limitations).
+    
+    Az alábbi példában az adatokhoz való kapcsolódás két párbeszédpanelen történik.
 
-   >[!NOTE]
-   >Ha olyan sablonalkalmazásokat szeretne telepíteni, amelyek nem találhatók az AppSource-on, rendszergazdai engedélyre lesz szüksége. Részletekért tekintse meg a Power BI [felügyeleti portálján a sablonalkalmazás beállításait](service-admin-portal.md#template-apps-settings).
+   ![Párbeszédpanelek az adatokhoz való kapcsolódáshoz](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
-## <a name="customize-and-publish-the-app"></a>Az alkalmazás testreszabása és közzététele
+    Ha végzett a kapcsolódási párbeszédpanelek kitöltésével, megkezdődik a kapcsolódás folyamata. Egy értesítésszalag tájékoztatja arról, hogy mintaadatokat tekint meg.
 
-Miután frissítette az alkalmazást a cége számára, készen áll a közzétételére. A lépések ugyanazok, mint bármely más alkalmazás közzétételekor.
+    ![Mintaadatok megtekintése](media/service-template-apps-install-distribute/power-bi-template-app-viewing-sample-data.png)
 
-1. Amikor végzett a testreszabással, a munkaterület listanézetében válassza a jobb felső sarokban az **Alkalmazás frissítése** lehetőséget.  
+    Várjon a kapcsolódás és az adatfrissítés befejeződéséig. A folyamat befejeződését úgy az adathalmaz sorában (új felület) vagy lapfülén (régi felület) látható folyamatjelzőn figyelheti meg.
 
-    ![Az alkalmazás telepítésnek megkezdése](media/service-template-apps-install-distribute/power-bi-start-install-app.png)
+   A kapcsolódás és az adatfrissítés befejeződése után frissítse a böngésző tartalmát. Az értesítésszalag ekkor arról tájékoztatja, hogy az alkalmazáson végzett módosítások alkalmazásához és megosztásához frissítenie kell az alkalmazást.
 
-2. A **Részletek** nézetben módosíthatja a leírást és a háttér színét.
+    ![Alkalmazás testreszabása és megosztása](media/service-template-apps-install-distribute/power-bi-template-app-customize-share.png)
 
-   ![Alkalmazás leírásának és színének beállítása](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
+## <a name="customize-and-share-the-app"></a>Az alkalmazás testreszabása és megosztása
 
-3. **Navigáció** nézetben használhatja alkalmazásához az új navigációszerkesztőt, vagy megadhatja kezdőlapként az irányítópultot vagy a jelentést. Részletes leírást a [Navigációs felület megtervezése](service-create-distribute-apps.md#design-the-navigation-experience) című cikkben talál.
+A böngészőnek az adatkapcsolat és az adatok frissítése utáni frissítésekor más az alkalmazással társított munkaterületet láthatja. Ekkor már az összes ottani elemet ugyanúgy szerkesztheti, mint bármely munkaterületen. Tartsa azonban szem előtt, hogy a végzett módosítások felül lesznek írva, ha új verzióra frissíti az alkalmazást, hacsak nem menti más néven a módosított elemeket. [Tájékozódjon a felülírás részleteiről](#overwrite-behavior).
 
-   ![Alkalmazás kezdőlapjának beállítása](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+További információk a munkaterületen lévő elemek szerkesztéséről:
+* [A Power BI jelentésszerkesztőjének bemutatása](service-the-report-editor-take-a-tour.md)
+* [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 
-4. A **Hozzáférés** területen hozzáférést adhat a kijelölt felhasználók vagy a teljes cég számára.  
-
-   ![Hozzáférés beállítása](media/service-template-apps-install-distribute/power-bi-install-access.png)
-
-5. Válassza az **App frissítése** lehetőséget. 
-
-6. Miután sikeresen közzétette, lemásolhatja a hivatkozást, és megoszthatja bárkivel, aki számára hozzáférést biztosított. Ha megosztotta velük, akkor a hivatkozást az AppSource **Saját szervezet** lapján is láthatják.
+Ha végzett a munkaterületi elemeken végrehajtani kívánt módosításokkal, már készen áll az alkalmazás közzétételére és megosztására. Ennek módjáról az [Alkalmazás közzététele](service-create-distribute-apps.md#publish-your-app) szakaszban tájékozódhat.
 
 ## <a name="update-a-template-app"></a>Sablonalkalmazás frissítése
 
-A sablonalkalmazások készítői az AppSource-on vagy közvetlen hivatkozással bocsáthatják ki a sablonalkalmazások új verzióit. Ez után Ön az alkalmazás újratelepítésekor frissítheti a sablonalkalmazást ugyanazzal vagy egy újabb verzióval.
+A sablonalkalmazások készítői időnként új, fejlettebb verziókat bocsátanak ki az AppSource-on, közvetlen hivatkozáson vagy mindkettőn keresztül.
 
-  >[!NOTE]
-  >Egy új verzió telepítése a jelentéseken és irányítópultokon végzett összes módosítást felülírja. Ha meg szeretné tartani a módosított jelentéseket és irányítópultokat, telepítés előtt más néven és más helyre mentheti azokat.
+Ha az alkalmazást eredetileg az AppSource-ról töltötte le, a sablonalkalmazás új verziójának elérhetővé válásakor értesítőszalag jelenik meg a Power BI szolgáltatásban, amely tájékoztatja az új alkalmazásverzió elérhetőségéről.
 
-- **Meglévő verzió felülírása:** Felülírja a meglévő munkaterületet a sablonalkalmazás frissített verziójával.
+  ![Értesítés sablonalkalmazás frissítéséről](media/service-template-apps-install-distribute/power-bi-new-app-version-notification.png)
 
-   ![Sablonalkalmazás frissítése](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+>[!NOTE]
+>Ha az alkalmazást eredetileg nem az AppSource-on, hanem közvetlen hivatkozás útján szerezte be, az új verziók megjelenéséről csak úgy értesülhet, ha kapcsolatba lép az alkalmazás készítőjével.
 
-- **Telepítés új munkaterületre:** A munkaterület és az alkalmazás új verzióját telepíti, amelyet újra kell konfigurálni
+  A frissítés telepítéséhez kattintson az értesítősáv **Beszerzés** elemére, vagy keresse meg ismét az alkalmazást az AppSource-on és válassza a **Letöltés most** lehetőséget. Ha a frissítéshez közvetlen hivatkozást kapott a sablonalkalmazás készítőjétől, egyszerűen kattintson a hivatkozásra.
+  
+  A rendszer rákérdez, hogy az aktuális verziót kívánja felülírni, vagy új munkaterületre szeretné telepíteni az új verziót. Alapértelmezés szerint a „felülírás” vagy kijelölve.
+
+  ![Sablonalkalmazás frissítése](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+
+- **Meglévő verzió felülírása:** Felülírja a meglévő munkaterületet a sablonalkalmazás frissített verziójával. [Tájékozódjon a felülírás részleteiről](#overwrite-behavior).
+
+- **Telepítés új munkaterületre:** A munkaterület és az alkalmazás új verzióját telepíti, amelyet újra kell konfigurálnia (tehát csatlakoznia kell az adatokhoz és definiálnia kell a navigációt és az engedélyeket).
 
 ### <a name="overwrite-behavior"></a>Felülírási viselkedés
 
-* A felülírás nem az alkalmazáson, hanem a *munkaterületen* belüli jelentéseket, irányítópultokat és adathalmazokat módosítja. A felülírás nem változtatja meg az alkalmazásbeli navigációt, beállításokat és engedélyeket.
-* A munkaterület frissítése után az *alkalmazás frissítése* is szükséges a munkaterületen történt változásoknak a vállalati alkalmazásban való érvényesítéséhez.
-* A felülírás megtartja a konfigurált paramétereket és a hitelesítést. A frissítés után automatikus adathalmaz-frissítés indul el. Ez alatt a vállalati alkalmazásban, a jelentésekben és az irányítópultokon a *mintaadatok* jelennek meg.
+* A felülírás nem az alkalmazáson, hanem a munkaterületen belüli jelentéseket, irányítópultokat és adathalmazokat módosítja. A felülírás nem változtatja meg az alkalmazásbeli navigációt, beállításokat és engedélyeket.
+* A munkaterület frissítése után az **alkalmazás frissítése is szükséges a munkaterületen történt változásoknak az alkalmazásban való érvényesítéséhez**.
+* A felülírás megtartja a konfigurált paramétereket és a hitelesítést. A frissítés után automatikus adathalmaz-frissítés indul el. **A frissítés folyamán az alkalmazás, a jelentések és irányítópultok mintaadatokat jelenítenek meg**.
+
   ![Mintaadatok](media/service-template-apps-install-distribute/power-bi-sample-data.png)
-* A felülírás mindig mintaadatokat nyújt a frissítés befejezéséig. Ha a sablonalkalmazás készítője módosította az adathalmazt vagy a paramétereket, akkor a munkaterület és az alkalmazás felhasználói továbbra is a *mintaadatokat* létják a felületen.
-* A felülírás sohasem törli a munkaterülethez adott *új* jelentéseket vagy irányítópultokat. Az eredeti jelentéseket és irányítópultokat írja felül az eredeti készítő által végzett módosításokkal.
+
+* A felülírás mindig mintaadatokat nyújt a frissítés befejezéséig. Ha a sablonalkalmazás készítője módosította az adathalmazt vagy a paramétereket, akkor a munkaterület és az alkalmazás felhasználói a frissítés befejezéséig nem látják az új adatokat. Ez alatt az idő alatt végig a mintaadatokat fogják látni.
+* A felülírás sohasem törli a munkaterülethez adott új jelentéseket vagy irányítópultokat. Csak az eredeti jelentéseket és irányítópultokat írja felül az eredeti készítő által végzett módosításokkal.
 
 >[!IMPORTANT]
->Felülírás után ne feledkezzen meg [az alkalmazás frissítéséről](#customize-and-publish-the-app), hogy a jelentések és irányítópultok módosításai a vállalati alkalmazás felhasználói számára is megjelenjenek.
+>Felülírás után ne feledkezzen meg [az alkalmazás frissítéséről](#customize-and-share-the-app), hogy a jelentések és irányítópultok módosításai a vállalati alkalmazás felhasználói számára is megjelenjenek.
 
 ## <a name="next-steps"></a>Következő lépések
 
