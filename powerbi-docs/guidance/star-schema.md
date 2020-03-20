@@ -8,18 +8,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 279e6895122f6b82f8e7670d982a8b50c78ec83a
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: ba1909c5fc75abdf7338572c646d98fca83595b0
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260416"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133252"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>A csillagséma és a Power BI-ban játszott szerepének a bemutatása
 
 Ez a cikk a Power BI Desktopot használó adatmodellezőknek szól. Ismerteti a csillagséma tervezését és annak jelentőségét a teljesítményre és használhatóságra optimalizált Power BI-adatmodellek fejlesztésében.
 
-A cikknek nem célja a csillagséma tervezésének teljes körű leírása. Részletesebb tudnivalókat olyan nyilvánosan közzétett tartalmakban találhat, mint az **Adattárház eszközkészlet: Részletes útmutató a dimenzionális modellezéshez** (2. kiadás, 2002) [Ralph Kimball et al.]
+A cikknek nem célja a csillagséma tervezésének teljes körű leírása. Részletesebb tudnivalókat olyan nyilvánosan közzétett tartalmakban találhat, mint az **Adattárház eszközkészlet: Részletes útmutató a dimenzionális modellezéshez** (3. kiadás, 2013) [Ralph Kimball et al.]
 
 ## <a name="star-schema-overview"></a>A csillagséma áttekintése
 

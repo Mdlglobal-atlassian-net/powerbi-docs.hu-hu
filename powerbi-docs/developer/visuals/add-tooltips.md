@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 8829cb8af41611fb29cd4fc22da7706e80ef3210
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4379fbfe051b69a2c9502a033ba462c1dded2022
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880343"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380637"
 ---
 # <a name="tooltips-in-power-bi-visuals"></a>Elemleírások a Power BI-vizualizációkban
 
@@ -27,7 +27,7 @@ Az elemleírásokban címmel ellátott szöveges tartalom vagy érték jelenhet 
 
 A következő kép egy sávdiagramban megjelenített elemleírás példáját mutatja be:
 
-![A sávdiagramminta elemleírásai](./media/tooltips-in-samplebarchart.png)
+![A sávdiagramminta elemleírásai](media/add-tooltips/tooltips-in-samplebarchart.png)
 
 A fenti elemleírás egy oszlop kategóriáját és értékét mutatja meg. Kiterjeszthető úgy, hogy egyetlen elemleírásban több érték jelenjen meg.
 
@@ -209,7 +209,7 @@ Egy sémaminta a következő:
 
 A jelentésoldalak elemleírásai a **Formátum** panelen definiálhatók.
 
-![Jelentésoldali elemleírás](media/report-page-tooltip.png)
+![Jelentésoldali elemleírás](media/add-tooltips/report-page-tooltips.png)
 
 * `supportedTypes`: A vizualizáció által támogatott elemleírás-konfigurációkat adja meg, és ezek így jelennek meg a mezőben. 
    * `default`: Azt adja meg, hogy támogatott-e az elemleírások adatmezővel való „automatikus” kötése. 

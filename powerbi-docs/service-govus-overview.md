@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/19/2020
+ms.date: 03/13/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 590b00f5eb03b1bd31430866a52faa4748f9b32a
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: b36bc6d23b56b4118f848ad9fa4e8f39dbc65d2d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496948"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376724"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI az USA kormányzati ügyfelei számára
 Ez a cikk az USA olyan kormányzati ügyfeleinek szól, akik a Power BI-t egy Office 365 Kormányzati verzió részeként helyezik üzembe. A kormányzati csomagok olyan szervezetek egyedi igényeihez lettek kialakítva, amelyeknek meg kell felelniük az Egyesült Államok megfelelőségi és biztonsági szabványainak. Az USA kormányzati ügyfeleinek szóló Power BI szolgáltatás eltér a Power BI kereskedelmi verziójától. Ezek funkcióinak eltéréseit az alábbi szakaszokban ismertetjük.
@@ -25,7 +25,7 @@ Mielőtt Power BI US Government-előfizetést vásárolhatna és licenceket rend
 
 ### <a name="enroll-in-office-365-government-plan"></a>Regisztráció az Office 365 Kormányzati verzióra
 
-Ha Ön új ügyfél, ellenőriznie kell szervezete jogosultságát, mielőtt regisztrálhat egy kormányzati csomagra.  Elsőként töltse ki az [Office 365 Kormányzati verzió jogosultság-ellenőrzési űrlapot](https://www.microsoft.com/microsoft-365/government/eligibility-validation). Tekintse meg az [Office 365 Kormányzati verzió Egyesült Államokra vonatkozó szolgáltatásleírásait](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government), hogy a szervezetnek megfelelő csomagot választhassa ki.
+Ha Ön új ügyfél, igazolnia kell szervezete jogosultságát, mielőtt regisztrálhat egy kormányzati csomagra.  Elsőként töltse ki az [Office 365 Kormányzati verzió jogosultság-ellenőrzési űrlapot](https://www.microsoft.com/microsoft-365/government/eligibility-validation). Tekintse meg az [Office 365 Kormányzati verzió Egyesült Államokra vonatkozó szolgáltatásleírásait](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government), hogy a szervezetnek megfelelő csomagot választhassa ki.
 
 > [!NOTE]
 > Ha már üzembe helyezte a Power BI-t egy kereskedelmi környezetben, amelyet a US Government-felhőbe szeretne áthelyezni, hozzá kell adnia egy új Power BI Pro-előfizetést az Office 365 Kormányzati verzióhoz. Ezután replikálja a kereskedelmi adatokat a Power BI US Governmentben, távolítsa el a kereskedelmi licenc-hozzárendeléseket a felhasználói fiókokból, majd rendeljen ezekhez a fiókokhoz egy Power BI Pro Government-licencet.
@@ -46,7 +46,7 @@ Az Office 365 különböző környezeteket nyújt kormányzati ügynökségeknek
 Az Office 365 üzembe helyezése után hozzáadhat egy Power BI-előfizetést. A Power BI Pro Government szolgáltatás megvásárlásához kövesse az [USA-beli kormányzati szerv regisztrálása](service-govus-signup.md#existing-office-government-cloud-customers) című szakasz részletes lépéseit. Vásároljon minden felhasználó számára licencet, akinek a Power BI-ra van szüksége, majd rendelje hozzá a licenceket a felhasználói fiókokhoz.
 
 > [!IMPORTANT]
-> A Power BI US Government nem érhető el ingyenes licenccel. Minden felhasználónak Pro licenccel kell rendelkeznie a kormányzati közösségi felhő igénybe vételéhez. Ha egy felhasználói fiók ingyenes, csak a kereskedelmi felhőhöz férhet hozzá, ezen túl pedig hitelesítési és hozzáférési problémákba fog ütközni. Licenctípusok közti különbségek áttekintése: [Power BI-szolgáltatások funkciói licenctípus szerint](service-features-license-type.md).
+> A Power BI US Government nem érhető el ingyenes licenccel. Minden felhasználónak Pro licenccel kell rendelkeznie a kormányzati közösségi felhő igénybe vételéhez. Ha egy felhasználói fiókhoz ingyenes licenc tartozik, csak a kereskedelmi felhőhöz férhet hozzá, ezen túl pedig hitelesítési és hozzáférési problémákba fog ütközni. Ha megvásárolta a Power BI Premiumot, a hozzáférés engedélyezéséhez nem kell Pro-licenceket rendelnie a felhasználókhoz.  A vállalathoz tartozó összes felhasználó hozzáférhet a vele megosztott jelentésekhez, ha az adott jelentés Prémium szintű kapacitásban van közzétéve. Licenctípusok közti különbségek áttekintése: [Power BI-szolgáltatások funkciói licenctípus szerint](service-features-license-type.md).
 >
 >
 

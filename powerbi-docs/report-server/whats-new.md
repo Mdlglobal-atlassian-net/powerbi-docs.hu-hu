@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/27/2020
-ms.openlocfilehash: 251f89dd031d9a2bda146266308dc528f05eddb2
-ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
+ms.openlocfilehash: 6ee1740d536a1bfd248b91d002142470b3894180
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77782436"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381307"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló újdonságai
 
@@ -317,7 +317,7 @@ Az alábbi funkciók támogatása a Power BI-jelentésekben:
 
 **Kisegítő lehetőségek** Olyan sok kisegítő lehetőség van, hogy a listázás nehéz. Elérhetőek például a [mezőlistázási panel kisegítő lehetőségei](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). A mezőlistázási panel teljes mértékben akadálymentes. A panelen navigálni lehet kizárólag billentyűzetet és a képernyőolvasót használva is, a helyi menüvel pedig mezőket lehet hozzáadni a jelentésoldalhoz.
 
-#### <a name="custom-visuals"></a>Egyéni vizualizációk
+#### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
 - A kiadás a 2.3 API-verziót tartalmazza.
 
@@ -381,11 +381,11 @@ Már elérhető a Power BI-jelentésekhez a SAP HANA SSO Direct Query Kerberossz
 >[!Note]
 >Ez a forgatókönyv csak akkor támogatott, ha a SAP HANA platformot relációs adatforrásként kezeli a Power BI Desktop alkalmazásban létrehozott jelentésekben.  Ennek engedélyezéséhez a Power BI Desktop DirectQuery menüjének Beállítások területén jelölje be „A SAP HANA kezelése relációs forrásként” jelölőnégyzetet, majd kattintson az OK gombra.
 
-#### <a name="custom-visuals"></a>Egyéni vizualizációk
+#### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
 - A kiadás az 1.13.0 API-verziót tartalmazza.
 
-- Az egyéni vizualizációk most visszaváltanak a kiszolgálói API jelenlegi verziójával kompatibilis előző verzióra (ha rendelkezésre áll).
+- A Power BI-vizualizációk most visszaváltanak a kiszolgálói API jelenlegi verziójával kompatibilis előző verzióra (ha rendelkezésre áll).
 
 ### <a name="reporting"></a>Jelentéskészítés 
 
@@ -613,7 +613,7 @@ A Power BI jelentéskészítő kiszolgáló már támogatja a Power BI új tábl
 
 * Elérhető a Power BI jelentéskészítő kiszolgáló előzetes verziója
 * Power BI-jelentések helyszíni közzétételének lehetősége
-  * egyéni vizualizációk támogatása
+  * Power BI-vizualizációk támogatása
   * **Élő Analysis Services-kapcsolatok** támogatása, de további adatforrások később várhatók.
   * A Power BI mobilalkalmazás frissítése a Power BI jelentéskészítő kiszolgálón tárolt Power BI-jelentések megjelenítéséhez
 * Továbbfejlesztett együttműködés megjegyzéseket tartalmazó jelentésekben

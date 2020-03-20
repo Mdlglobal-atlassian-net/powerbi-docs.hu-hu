@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 864854e774defee16d446a513622e1134c77d75c
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: cfe877d6fac96124badc19f6ab685523077132fc
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/10/2020
-ms.locfileid: "77115262"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381284"
 ---
 # <a name="what-is-power-bi-administration"></a>Mit jelent a Power BI-felügyelet?
 
@@ -59,7 +59,7 @@ A rendszergazdák sokféle feladatot látnak el a Power BI-bérlő szervezeten b
 | Prémium szintű kapacitás kezelése |<ul><li>Prémium kapacitás beszerzése és kezelése<br><li>A szolgáltatás színvonalának biztosítása|
 | Embedded-kapacitás kezelése |<ul><li>Embedded-kapacitás beszerzése a Power BI-funkciók használatának egyszerűbbé tétele érdekében független szoftverszolgáltatók és fejlesztők számára</ul>|
 | Belső szabályzatoknak, jogszabályoknak és előírásoknak való megfelelőség biztosítása | <ul><li>Besorolás és üzleti adatok kezelése<br><li>Tartalom közzétételére és megosztásra vonatkozó szabályzatok betartatása</ul>|
-| Power BI-erőforrások kezelése |<ul><li>Munkaterületek kezelése<br><li>Egyéni vizualizációk közzététele<br><li>A Power BI más alkalmazásokban való beágyazásához használt kódok ellenőrzése|
+| Power BI-erőforrások kezelése |<ul><li>Munkaterületek kezelése<br><li>Power BI-vizualizációk közzététele<br><li>A Power BI más alkalmazásokban való beágyazásához használt kódok ellenőrzése|
 | A bérlő felhasználóinak támogatása és segítségnyújtás számukra |<ul><li>Adathozzáférési és más problémák elhárítása</ul>|
 | Egyéb feladatok |<ul><li>A Power BI Desktop üzembe helyezése például a Microsoft Endpoint Configuration Manager használatával<br><li>A Power BI mobilalkalmazás üzemelő példányainak kezelése az Intune-nal<br><li>Az adatvédelem és a biztonság, többek között a forrásadatok biztonságának kezelése</ul>|
 
@@ -69,7 +69,7 @@ A Power BI-adminisztrációhoz számos eszköz használható, amelyeket az aláb
 
 | **Eszköz** | **Tipikus feladatok** |
 | --- | --- |
-| Power BI felügyeleti portál |<ul><li>Prémium kapacitás beszerzése és kezelése</li><li>A szolgáltatás színvonalának biztosítása</li><li>Besorolás és üzleti adatok kezelése</li><li>Tartalom közzétételére és megosztásra vonatkozó szabályzatok betartatása</li><li>Munkaterületek kezelése<br><li>Egyéni vizualizációk közzététele</li><li>A Power BI más alkalmazásokban való beágyazásához használt kódok ellenőrzése</li><li>Adathozzáférési és más problémák elhárítása</li></ul>|
+| Power BI felügyeleti portál |<ul><li>Prémium kapacitás beszerzése és kezelése</li><li>A szolgáltatás színvonalának biztosítása</li><li>Besorolás és üzleti adatok kezelése</li><li>Tartalom közzétételére és megosztásra vonatkozó szabályzatok betartatása</li><li>Munkaterületek kezelése<br><li>Power BI-vizualizációk közzététele</li><li>A Power BI más alkalmazásokban való beágyazásához használt kódok ellenőrzése</li><li>Adathozzáférési és más problémák elhárítása</li></ul>|
 | Microsoft 365 Felügyeleti központ |<ul><li>Felhasználók feliratkozásának kezelése</li><li>Pro-licencek vásárlása és hozzárendelése</li><li>Felhasználók Power BI-hozzáférésének letiltása</li></ul>|
 | Office 365 Security & Compliance Center |<ul><li>Auditálási események áttekintése és kezelése</li></ul>|
 | Az Azure Active Directory (AAD) az Azure Portalon |<ul><li>További hozzáférési engedélyek konfigurálása a Power BI-erőforrásokhoz az AAD használatával</li><li>Power BI Embedded-kapacitás kiépítése</li></ul>|

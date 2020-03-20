@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 976d53a5a74bc077d3d4642ccec336b1225344ae
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 27ebe50030fbd06f65be5530ee2a2c0a7897f0f5
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77426564"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488729"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Munka szervezése az új munkaterületeken a Power BI-ban
 
@@ -54,7 +54,7 @@ Az új, továbbfejlesztett munkaterületek és a meglévő klasszikus munkaterü
 
 ## <a name="roles-in-the-new-workspaces"></a>Az új munkaterületek szerepkörei
 
-Új munkaterülethez úgy adhat hozzáférést, hogy felhasználói csoportokat vagy személyeket vesz fel a munkaterületi szerepkörök (megtekintők, tagok, közreműködők vagy rendszergazdák) egyikébe. A meghatározott szerepkört a felhasználói csoport minden tagja megkapja. Ha egy felhasználó több csoport tagja, a hozzá tartozó szerepkörök által nyújtott legmagasabb szintű engedélyekkel fog rendelkezni.
+Új munkaterülethez úgy adhat hozzáférést, hogy felhasználói csoportokat vagy személyeket vesz fel a munkaterületi szerepkörök (rendszergazdák, tagok, közreműködők vagy megtekintők) egyikébe. A meghatározott szerepkört a felhasználói csoport minden tagja megkapja. Ha egy felhasználó több csoport tagja, a hozzá tartozó szerepkörök által nyújtott legmagasabb szintű engedélyekkel fog rendelkezni.
 
 A szerepkörökkel kezelheti, hogy mely felhasználók milyen műveleteket végezhetnek a munkaterületeken, így elősegítheti a csapatok együttműködését. Az új munkaterületekkel szerepköröket rendelhet egyénekhez és felhasználói csoportokhoz: biztonsági csoportokhoz, Office 365-csoportokhoz és terjesztési listákhoz. 
 
@@ -70,11 +70,14 @@ A négy szerepkör (rendszergazdák, tagok, közreműködők és megtekintők) k
 | Alkalmazást tehetnek közzé és frissíthetnek. |  X | X  |   |   |
 | Elem vagy alkalmazás megosztása.<sup>1</sup> |  X | X  |   |   |
 | Engedélyezhetik másoknak az elemek újbóli megosztását.<sup>1</sup> |  X | X  |   |   |
+| Alkalmazások szerepeltetése munkatársak kezdőlapján |  X | X  |   |   |
+| Irányítópultok és jelentések szerepeltetése munkatársak kezdőlapján |  X | X  | X |   |
 | Létrehozhatnak, szerkeszthetnek és törölhetnek tartalmakat a munkaterületen.  |  X | X  | X  |   |
 | Közzétehetnek jelentéseket a munkaterületen, és törölhetnek tartalmakat.  |  X | X  | X  |   |
 | Jelentést hozhatnak létre másik munkaterületen egy ezen a munkaterületen lévő adathalmaz alapján.<sup>1</sup> |  X | X  | X  |   |
 | Jelentés másolása.<sup>2</sup> | X | X | X |  |
 | Egy elem megtekintése és kezelése.<sup>3</sup> |  X | X  | X  | X  |
+| A munkaterület adatfolyamaiban tárolt információk beolvasása | X | X | X | X |
 
 1. A közreműködők és a megtekintők megoszthatnak elemeket egy munkaterületen, ha rendelkeznek újramegosztási engedélyekkel.
 2. Ha jelentést szeretne másolni, és ha egy másik munkaterületen szeretne jelentést létrehozni az ezen a munkaterületen található adathalmaz alapján, akkor további feltételeknek kell megfelelnie:

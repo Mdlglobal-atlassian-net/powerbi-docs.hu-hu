@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 01996f3460b7c7a507796bd3f071f7887a69854e
-ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+ms.openlocfilehash: 6ec4e5afe63fbdf754fcb20ec8cd12379740d33d
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77154212"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79201539"
 ---
 # <a name="apply-auto-datetime-in-power-bi-desktop"></a>Automatikus dátum/idő alkalmazása a Power BI Desktopban
 
@@ -33,7 +33,7 @@ Ha engedélyezve van a beállítás, a Power BI Desktop minden dátumoszlophoz l
 Az automatikus dátum/idő táblák valójában [számított táblák](desktop-calculated-tables.md), amelyek adatsorokat hoznak létre a DAX [CALENDAR](/dax/calendar-function-dax) függvény használatával. Emellett minden tábla hat számított oszlopot tartalmaz: **Day**, **MonthNo**, **Month**, **QuarterNo**, **Quarter** és **Year**.
 
 > [!NOTE]
-> A Power BI az oszlopok nevének és értékeinek fordítását és formázását a [modell nyelve](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop) alapján végzi.
+> A Power BI az oszlopnevek és értékek fordítását és formázását a [modell nyelve](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop) alapján végzi. Ha a modellt például angol nyelv használatával hozták létre, a hónapok neveit és más elemeket koreai ügyéllel megtekintve is angolul jeleníti meg.
 
 A Power BI Desktop ezenkívül egy kapcsolatot is létrehoz az automatikus dátum/idő tábla **Date** oszlopa és a modell dátumoszlopa között.
 

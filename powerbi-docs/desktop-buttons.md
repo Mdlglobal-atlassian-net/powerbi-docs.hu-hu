@@ -1,36 +1,45 @@
 ---
 title: Gombok használata a Power BI-ban
-description: Gombok segítségével mélyebb interakciót kínáló, alkalmazásként működő jelentéseket és irányítópultokat hozhat létre a Power BI Desktop alkalmazásban
+description: A Power BI-jelentésekhez gombokat adhat, amelyek az alkalmazásokéhoz hasonlóvá teszik a jelentés működését, és mélyebb interakciót kínálnak a felhasználókkal.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 03/12/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a38b54bdacd0f60ee0151ad7c1a2084cebac2a37
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6629165ec031fea0d1c1af443e1d7b311bc743aa
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878714"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79201642"
 ---
-# <a name="using-buttons-in-power-bi"></a>Gombok használata a Power BI-ban
-A Power BI-ban elérhető **gombokkal** alkalmazásokhoz hasonlóan működő jelentéseket és irányítópultokat hozhat létre, melyekben a felhasználók az elemekre kattintva és mutatva interaktívabban használhatják a Power BI-tartalmakat. Adhat hozzá gombokat a jelentésekhez a **Power BI Desktop** alkalmazásban, majd megoszthatja vagy közzéteheti ezeket a jelentéseket a Power BI szolgáltatásban, hogy elérhetők legyenek a felhasználóknak alkalmazásként működő irányítópultokként.
+# <a name="use-buttons-in-power-bi"></a>Gombok használata a Power BI-ban
+A Power BI-ban elérhető **gombokkal** alkalmazásokhoz hasonlóan működő jelentéseket hozhat létre, melyekben a felhasználók az elemekre kattintva és mutatva interaktívabban használhatják a Power BI-tartalmakat. Gombokat a **Power BI Desktopban** és a **Power BI szolgáltatásban** is felvehet a jelentésekhez. Ha a jelentéseket a Power BI szolgáltatásban osztja meg, az alkalmazásokéhoz hasonló felületet kínálhat a felhasználóknak.
 
-![Gombok a Power BI-ban](media/desktop-buttons/desktop-buttons_01.png)
+![Gombok a Power BI-ban](media/desktop-buttons/power-bi-buttons.png)
 
-A **Power BI Desktop** alkalmazásban létrehozott gombok elérhetők a **Power BI szolgáltatásban** közzétett jelentésekben és irányítópultokban.
+## <a name="create-buttons-in-reports"></a>Gombok létrehozása jelentésekben
 
-## <a name="creating-buttons-in-reports"></a>Gombok létrehozása a jelentésekben
-Ha szeretne gombot létrehozni egy jelentésben a **Power BI Desktop** alkalmazással, válassza a **Kezdőlap** menüszalaglapon a **Gombok** lehetőséget. Ezután kiválaszthatja a kívánt gombot az elérhető lehetőségek legördülő menüjéből, ahogy azt az alábbi kép szemlélteti. 
+### <a name="create-a-button-in-power-bi-desktop"></a>Gomb létrehozása a Power BI Desktopban
 
-![Gomb vezérlő hozzáadása a Power BI Desktopban](media/desktop-buttons/desktop-buttons_02.png)
+A **Power BI Desktopban** gomb beszúrásához válassza a **Beszúrás** menüszalag **Gombok** elemét. Ez után kiválaszthatja a kívánt gombot az elérhető lehetőségek legördülő menüjéből, ahogy azt az alábbi kép szemlélteti. 
 
-Ha létrehoz egy gombot, majd kijelöli azt a jelentésvásznon, a **Vizualizációk** panelen láthatja a gomb testreszabásának különféle lehetőségeit. Be- és kikapcsolhatja például a **Gomb szövegét** a **Vizualizációk** panel vonatkozó kártyáján lévő csúszkával. Módosíthatja emellett a gomb ikonját, kitöltését és címét, a gombra való kattintáskor a jelentésen vagy az irányítópulton végrehajtott műveletet, illetve egyéb tulajdonságokat is testreszabhat.
+![Gomb vezérlő hozzáadása a Power BI Desktopban](media/desktop-buttons/power-bi-button-dropdown.png)
 
-![Gomb formázása a Power BI Desktopban](media/desktop-buttons/desktop-buttons_03.png)
+### <a name="create-a-button-in-the-power-bi-service"></a>Gomb létrehozása a Power BI szolgáltatásban
+
+A **Power BI szolgáltatásban** gomb létrehozásához nyissa meg a jelentést Szerkesztés nézetben. Válassza a felső menüsáv **Gombok** elemét, majd válassza ki a kívánt gombot az elérhető lehetőségek legördülő menüjéből, ahogy azt az alábbi kép szemlélteti. 
+
+![Gomb vezérlő hozzáadása a Power BI szolgáltatásban](media/desktop-buttons/power-bi-button-service-dropdown.png)
+
+## <a name="customize-a-button"></a>Gomb testreszabása
+
+Az eljárás a továbbiakban ugyanaz, akár a Power BI Desktopban, akár a Power BI szolgáltatásban hozta létre a gombot. Ha kijelöl egy gombot a jelentésvásznon, a **Vizualizációk** panelen láthatja a gomb testreszabásának különféle lehetőségeit. Be- és kikapcsolhatja például a **Gomb szövegét** a **Vizualizációk** panel vonatkozó kártyáján lévő csúszkával. Módosíthatja emellett a gomb ikonját, kitöltését és címét, a gomb kiválasztásakor a jelentésen végrehajtandó műveletet, valamint egyéb tulajdonságokat is testreszabhat.
+
+![Gomb formázása Power BI-jelentésben](media/desktop-buttons/power-bi-button-properties.png)
 
 ## <a name="set-button-properties-when-idle-hovered-over-or-selected"></a>A tétlen, a rámutatott és a választott gombállapot tulajdonságainak megadása
 
@@ -43,37 +52,46 @@ A **Vizualizációk** panel alábbi kártyáival módosíthatja a gomb formázá
 * Körvonal
 * Kitöltés
 
-Ha szeretné megadni a gomb formázását az egyes állapotokhoz, bontsa ki a kártyák egyikét, és válasszon a kártya tetején megjelenő legördülő menüből. Az alábbi képen láthatja a kibontott **Körvonal** kártyán megjelenő legördülő menüt, mellyel választhat a három állapot közül:
+Ha szeretné megadni a gomb formázását az egyes állapotokhoz, bontsa ki a kártyák egyikét, és válasszon a kártya tetején megjelenő legördülő menüből. Az alábbi képen láthatja a kibontott **Ikon** kártyán megjelenő legördülő menüt, mellyel választhat a három állapot közül.
 
-![A gombok három állapota a Power BI Desktopban](media/desktop-buttons/desktop-buttons_04.png)
+![A gombok három állapota a Power BI-jelentésekben](media/desktop-buttons/power-bi-button-format.png)
 
 
 ## <a name="select-the-action-for-a-button"></a>Gombművelet megadása
 
 Megadhatja, hogy milyen művelet legyen végrehajtva, amikor a felhasználó a gombot választja a Power BI-ban. A gombműveletek beállításait a **Vizualizációk** panel **Művelet** kártyáján találhatja meg.
 
-![Gombművelet megadása a Power BI Desktopban](media/desktop-buttons/desktop-buttons_05.png)
+![Gombművelet megadása a Power BI Desktopban](media/desktop-buttons/power-bi-button-action.png)
 
 Az alábbi gombműveleteket választhatja:
 
-* Vissza
-* Könyvjelző
-* Q&A
+- A **Vissza** lehetőség visszairányítja a felhasználót a jelentés előző oldalára. Ez jól használható a részletező oldalakon.
+- A **Könyvjelző** lehetőség megjeleníti az aktuális jelentéshez definiált egyik könyvjelzőhöz tartozó jelentésoldalt. Tovább információk: [Könyvjelzők a Power BI-ban](desktop-bookmarks.md). 
+- A **Részletezés (előzetes verzió)** könyvjelző használata nélkül egy, az általa végzett kijelölésnek megfelelően szűrt részletező oldalra viszi a felhasználót. További információ: [Részletezési gombok jelentésekben](desktop-drill-through-buttons.md).
+- Az **Oldalnavigáció** a jelentés egy másik oldalára viszi a felhasználót, szintén könyvjelzők használata nélkül. További részleteket a cikk [Oldalnavigáció létrehozása](#create-page-navigation) című szakaszában talál.
+- A **Q&A** új **Q&A Explorer**-ablakot nyit meg. 
 
-A **Vissza** lehetőség választása esetén a gomb visszairányítja a felhasználót a jelentés előző oldalára. Ez különösen hasznos lehet a részletező lapokon.
-
-A **Könyvjelző** lehetőség választása esetén a gomb megjeleníti az aktuális jelentéshez definiált egyik könyvjelzőhöz tartozó jelentésoldalt. Ha szeretne, [többet is megtudhat a könyvjelzők Power BI-beli használatáról](desktop-bookmarks.md). 
-
-A **Q&A** lehetőség választása esetén a gomb megjeleníti a **Q&A Explorer** ablakot. 
-
-Egyes gombokhoz tartozik alapértelmezett művelet. A **Q&A** gombtípusnál például automatikusan be lesz állítva a **Q&A** lehetőség alapértelmezett műveletként. A **Q&A Explorer** ablakról bővebben [ebben a blogbejegyzésben](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer) tájékozódhat.
+Egyes gombokhoz automatikusan ki van választva egy alapértelmezett művelet. A **Q&A** gombtípusnál például automatikusan be lesz állítva a **Q&A** lehetőség alapértelmezett műveletként. A **Q&A Explorer** ablakról bővebben [ebben a blogbejegyzésben](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer) tájékozódhat.
 
 Tesztelheti is a jelentéséhez létrehozott gombokat úgy, hogy a *CTRL* billentyűt lenyomva tartva kattint a kívánt gombra. 
+
+### <a name="create-page-navigation"></a>Oldalnavigáció létrehozása
+
+Az **Oldalnavigáció** **Művelet**-típussal gyorsan kialakíthat egy teljes navigációs felületet anélkül, hogy könyvjelzőket kellene mentenie vagy kezelnie.
+
+Oldalnavigációs gomb beállításához hozzon létre egy **Oldalnavigáció** művelettípusú gombot, majd válassza ki a **Cél** oldalt.
+
+![Oldalnavigáció művelet](media/desktop-buttons/power-bi-page-navigation.png)
+
+Gyorsan készíthet egyéni navigációs panelt. Így elkerülheti, hogy könyvjelzőket kelljen szerkeszteni és kezelni a navigációs panelen megjelenő oldalak megadásához.
+
+![Navigációs panel létrehozása](media/desktop-buttons/power-bi-build-navigation-pane.png)
+
+Emellett feltételesen formázhatja us az elemleírást, ahogyan a többi gombtípus esetében is.
 
 ## <a name="next-steps"></a>Következő lépések
 A gombokhoz hasonló vagy azokkal együtt használható funkciókkal kapcsolatos részletesebb információkat az alábbi cikkekben talál:
 
-* [Részletezés használata a Power BI Desktopban](desktop-drillthrough.md)
-* [Irányítópult-csempe vagy jelentésvizualizáció megjelenítése Fókusz módban](consumer/end-user-focus.md)
+* [Részletezés használata Power BI-jelentésekben](desktop-drillthrough.md)
 * [Elemzések megosztása és történetek felépítése a Power BI könyvjelzőivel](desktop-bookmarks.md)
 

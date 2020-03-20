@@ -1,5 +1,5 @@
 ---
-title: Jelentés beágyazása a Microsoft Teams Power BI lapjával
+title: Jelentések beágyazása a Microsoft Teams Power BI lapjával
 description: A Microsoft Teams Power BI lapjával egyszerűen ágyazhat be interaktív jelentéseket csatornákba és csevegésekbe.
 author: LukaszPawlowski-MS
 ms.author: lukaszp
@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 01/31/2020
-ms.openlocfilehash: fb4846a777dda4787e1ed0be7de869367a616ea5
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.date: 03/12/2020
+ms.openlocfilehash: fe8b5ed0e3cdf0003986ffe6eab18e97e83f3dec
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530487"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381212"
 ---
 # <a name="embed-report-with-the-power-bi-tab-for-microsoft-teams"></a>Jelentés beágyazása a Microsoft Teams Power BI lapjával
 
@@ -68,6 +68,18 @@ Egy jelentés beágyazása a Microsoft Teamsbe még nem ad automatikusan engedé
 > Tekintse át kik láthatják a jelentést a Power BI szolgáltatásban, és adjon hozzáférést azoknak, akik még nem szerepelnek a listában.
 
 Azt, hogy a csapat hozzáférjen a beágyazott jelentésekhez úgy is biztosíthatja, hogy egyetlen munkaterületre helyezi azokat a Power BI-ban, majd a csapat Office 365-csoportjának hozzáférést ad a munkaterülethez.
+
+## <a name="start-a-conversation"></a>Beszélgetés indítása
+
+Amikor Power BI-jelentéslapot vesz fel a Teamsbe, a Teams automatikusan létrehoz egy beszélgetést a jelentés mellé. 
+
+- Válassza a jobb felső sarokban található **Beszélgetés mutatása** ikont.
+
+    ![Beszélgetés mutatása ikon](media/service-embed-report-microsoft-teams/power-bi-teams-conversation-icon.png)
+
+    Az első bejegyzés a jelentésre mutató hivatkozás. A Teams-csatornán a beszélgetés összes résztvevője láthatja és megvitathatja a jelentést.
+
+    ![Beszélgetés](media/service-embed-report-microsoft-teams/power-bi-teams-conversation-tab.png)
 
 ## <a name="known-issues-and-limitations"></a>Ismert problémák és korlátozások
 

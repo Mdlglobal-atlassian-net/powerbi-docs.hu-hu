@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 03/12/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7633f0771a87c01d53261d13135d831e95e80136
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 86992d2e1426616f8d902a9f49d35407fde60ef2
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881348"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376753"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>A munka megosztásának módjai a Power BI-ban
 
@@ -23,10 +23,12 @@ ms.locfileid: "73881348"
 * Jelentések és irányítópultok létrehozása a munkatársakkal a *munkaterületeken*.
 * A létrehozott irányítópultok és jelentések egyesítése *alkalmazásként*, és ezek terjesztése egy nagyobb csoport vagy a teljes cég számára.
 * *Megosztott adatkészletek* létrehozása, amelyekkel a munkatársak jelentéseket készíthetnek saját munkaterületeiken.
-* *Sablonalkalmazás* létrehozása, amelyet külső Power BI-felhasználóknak terjeszthet a Microsoft AppSource segítségével.
 * Irányítópultok és jelentések megosztása csak néhány személlyel, a szolgáltatásból vagy a Power BI-mobilalkalmazásokból.
+* Jegyzetkészítés és megosztás a Power BI-mobilalkalmazásokból.
+* Jelentés beágyazása a Microsoft Teamsben.
 * Jelentések nyomtatása.
 * Jelentések *beágyazása* biztonságos portálokon vagy nyilvános webhelyeken.
+* *Sablonalkalmazás* létrehozása, amelyet külső Power BI-felhasználóknak terjeszthet a Microsoft AppSource segítségével.
 
 Bármelyik lehetőséget is választja, a tartalom megosztásához [Power BI Pro-licenccel](service-features-license-type.md) kell rendelkeznie, vagy a tartalmat [prémium szintű kapacitásban](service-premium-what-is.md) kell elhelyeznie. A tartalmat megtekintő munkatársakra vonatkozó licenckövetelményeket a választott lehetőség határozza meg. Az alábbi szakaszokban megtalálhatja a részleteket. 
 
@@ -97,6 +99,10 @@ Csempe, jelentés vagy vizualizáció megosztásakor az adott elem egy pillanatk
 Többet is megtudhat arról, hogy hogyan [láthat el jegyzetekkel és oszthat meg csempéket, jelentéseket és vizualizációkat](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) az iOS- és az Android-mobilalkalmazásokból.
 
 A Windows 10-eszközökön futó Power BI alkalmazásból is [megoszthatja a csempék pillanatképét](consumer/mobile/mobile-windows-10-phone-app-get-started.md).
+
+## <a name="embed-a-report-in-microsoft-teams"></a>Jelentés beágyazása a Microsoft Teamsben
+
+Power BI-jelentések és többoldalas Power BI-jelentések Microsoft Teamsbe ágyazásával elősegítheti a vállalaton belüli adatalapú együttműködést. Minden jelentéshez külön Power BI-lapot vehet fel, és a lapnak a jelentéssel egyező, vagy tetszőleges más nevet is adhat. Munkatársai a Teams Power BI-lapjain tekinthetik meg jelentéseit. A Beszélgetés ablakot megnyitva közvetlenül a Teamsben fűzhetnek megjegyzéseket a jelentéshez. További tudnivalók: [Jelentés beágyazása a Microsoft Teamsben](service-embed-report-microsoft-teams.md).
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Nyomtatás vagy mentés PDF-ként vagy más statikus fájlként
 

@@ -8,19 +8,22 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 97d2a3acba87309b74de1776f1325bb4c4a78910
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 6885f635f96da3bbea039f445e83cd7cada144ce
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041561"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435973"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
 
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
-* [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)  
+* [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)
+
+>[!NOTE]
+>A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="february-2020"></a>2020. február
 
@@ -396,7 +399,7 @@ Mostantól ha valaki megoszt Önnel egy jelentést, az megjelenik a **Velem mego
 
 #### <a name="improved-hyperlink-support"></a>Továbbfejlesztett hivatkozástámogatás
 
-Mostantól az egyéni vizualizációk hivatkozásaira koppintva megnyithatja őket a mobilböngészőjében.
+Mostantól a Power BI-vizualizációk hivatkozásaira koppintva megnyithatja azokat a mobilböngészőjében.
 
 #### <a name="intune-integration-android"></a>Intune-integráció (Android)
 
@@ -470,7 +473,7 @@ Olvassa el a [mobilalkalmazások funkcióinak 2017. áprilisi összefoglalását
 #### <a name="all-devices"></a>Minden eszköz
 **Háttérszín a telefonos jelentésekhez** Ha megad háttérszínt egy adott jelentéshez a Power BI Desktopban, a telefonos jelentésnek is ugyanez lesz a háttérszíne. További információ [a jelentésoldalak telefonra optimalizálásáról](../../desktop-create-phone-report.md).
 
-**Mobilbarát egyéni vizualizációkat fejleszthet** Olvassa el ezt a [fejlesztői útmutatót](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md), amely bemutatja, hogyan készíthetők olyan egyéni vizualizációk, amelyek jól mutatnak és jól működnek mobileszközökön.
+**Mobilbarát Power BI-vizualizációkat fejleszthet** Olvassa el ezt a [fejlesztői útmutatót](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md), amely bemutatja, hogyan készíthetők olyan Power BI-vizualizációk, amelyek jól mutatnak és jól működnek mobileszközökön.
 
 #### <a name="ios-devices"></a>iOS-eszközök
 **Beszéljen az adataihoz: tegye fel kérdéseit szóban** Mostantól gépelés helyett szóban is [tehet fel kérdéseket az adataival kapcsolatban a Q&A szolgáltatással](mobile-apps-ios-qna.md). 
