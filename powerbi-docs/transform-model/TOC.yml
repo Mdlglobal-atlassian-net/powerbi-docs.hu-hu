@@ -75,6 +75,8 @@
               href: ../desktop-measures.md
             - name: KPI-k importálása és megjelenítése
               href: ../desktop-import-and-display-kpis.md
+            - name: Automatikus dátum/idő alkalmazása
+              href: ../desktop-auto-date-time.md
         - name: Önkiszolgáló adatelőkészítés
           items:
             - name: Adatfolyamok létrehozása és használata
