@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 27e4bbd1437f59b7cf213333d9df27019aaadcd4
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: ad7c0dab0c4390326eea157351735802d12b3795
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698854"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488568"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Multi-Geo-támogatás konfigurálása a Power BI Premiumhoz
 
@@ -27,13 +27,13 @@ A Multi-Geo a Power BI Premium funkciója, amely segít a nemzetközi ügyfelekn
 - Európa
 - Japán
 - India
-- Kelet-Ázsia
+- Ázsia és a Csendes-óceáni térség
 - Ausztrália
-- Africa
+- Afrika
 
 A Multi-Geo nem elérhető a Power BI Germany, a 21Vianet által üzemeltetett Power BI China és az USA kormányzati szervei számára készült Power BI esetében.
 
-A Multi-Geo már a Power BI Embeddedben is elérhető. További információ: [Multi-Geo-támogatás a Power BI Embedded számára](developer/embedded-multi-geo.md).
+A Multi-Geo már a Power BI Embeddedben is elérhető. További információ: [Multi-Geo-támogatás a Power BI Embedded számára](developer/embedded/embedded-multi-geo.md).
 
 ## <a name="enable-and-configure"></a>Engedélyezés és konfigurálás
 
@@ -99,6 +99,6 @@ A munkaterületek kétféle módon vonhatók ki a Multi-Geo-kapacitásból:
 ## <a name="next-steps"></a>Következő lépések
 
 - [Mi a Power BI Premium?](service-premium-what-is.md)
-- [Multi-Geo a Power BI Embedded-kapacitásokhoz](developer/embedded-multi-geo.md)
+- [Multi-Geo a Power BI Embedded-kapacitásokhoz](developer/embedded/embedded-multi-geo.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

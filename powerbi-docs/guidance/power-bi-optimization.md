@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 0f29b70a42375be945d206672116219b7d5a3b48
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: d718c9c7f627d735c083a46c1483815e3744faca
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609995"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378869"
 ---
 # <a name="optimization-guide-for-power-bi"></a>Optimalizálási útmutató a Power BI-hoz
 
@@ -57,7 +57,7 @@ Több javaslat is született a Power BI-jelentéstervek optimalizálására.
 
 #### <a name="apply-the-most-restrictive-filters"></a>A legszigorúbb szűrők alkalmazása
 
-Minél több adatot jelenítenek meg a vizualizációk, annál lassabban töltődnek be. Még ha ez nyilvánvalónak is tűnik, könnyű megfeledkezni róla. Tegyük fel például, hogy nagy méretű adatkészleten dolgozik, amelynek alapján készít egy táblát tartalmazó jelentést. A végfelhasználók szeletelőkkel szűrnek rá a kívánt sorokra a lapon, és jellemzően csak néhány tucatnyi sor érdekli őket.
+Minél több adatot jelenítenek meg a vizualizációk, annál lassabban töltődnek be. Még ha ez nyilvánvalónak is tűnik, könnyű megfeledkezni róla. Tegyük fel például, hogy egy nagyméretű adathalmazon dolgozik, amelynek alapján készít egy táblát tartalmazó jelentést. A végfelhasználók szeletelőkkel szűrnek rá a kívánt sorokra a lapon, és jellemzően csak néhány tucatnyi sor érdekli őket.
 
 Gyakori hiba ilyen esetben, hogy a tábla alapértelmezett nézete szűretlen marad, vagyis az összes (akár több mint százmillió) sort tartalmazza. A rendszer ezeknek a soroknak az adatait minden egyes frissítéskor betölti a memóriába, majd kitömöríti. Ez a feldolgozási folyamat óriási memóriahasználattal jár. A megoldás az, hogy a Top N szűrőt használva csökkenteni kell a táblában maximálisan megjeleníthető elemek számát. A maximális elemszám lehet a felhasználók által jellemzően igényelt sorszámnál magasabb is, például 10 000. Ennek eredményeként a végfelhasználói élmény nem változik, a memóriahasználat azonban jelentősen csökken. A legfontosabb pedig az, hogy javul a teljesítmény.
 
@@ -69,7 +69,7 @@ A fenti elv a jelentéslapokon elhelyezett vizualizációk számára nézve is u
 
 #### <a name="evaluate-custom-visual-performance"></a>Egyéni vizualizációk teljesítményének kiértékelése
 
-Tesztelje az összes egyéni vizualizációt annak megállapításához, hogy biztosan megfelelő teljesítményt nyújtanak-e. A rosszul optimalizált egyéni vizualizációk a teljes jelentés teljesítményére negatív hatással lehetnek.
+Tesztelje az összes egyéni vizualizációt annak megállapításához, hogy biztosan megfelelő teljesítményt nyújtanak-e. A rosszul optimalizált Power BI-vizualizációk a teljes jelentés teljesítményére negatív hatással lehetnek.
 
 ### <a name="power-bi-paginated-reports"></a>Többoldalas Power BI-jelentések
 

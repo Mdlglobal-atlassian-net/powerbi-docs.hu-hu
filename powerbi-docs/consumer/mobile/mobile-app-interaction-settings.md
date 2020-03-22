@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/08/2020
 ms.author: painbar
-ms.openlocfilehash: c7280b2b6bb34b070e7ced3785959d61c74cd165
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 58ef9c6760194e3f11374bdb0663552fd11ce285
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041261"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377375"
 ---
 # <a name="configure-report-interaction-settings"></a>Jelentések kezelési beállításainak konfigurálása
 
@@ -49,7 +49,7 @@ A többszörös kiválasztási lehetőséggel több adatpont választható ki eg
 Az adatpont kiválasztásának megszüntetéséhez érintse meg az adatpontot még egyszer.
 
 >[!NOTE]
->A többszörös kiválasztás egyéni vizualizációkban nem támogatott.
+>A többszörös kiválasztás Power BI-vizualizációkban nem támogatott.
 >
 >A többszörös kiválasztási mód támogatott lesz a Power BI jelentéskészítő kiszolgálón a jelentéskészítő kiszolgáló következő kiadásában.
 

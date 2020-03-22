@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: 2974f257509d88a469f981bbdecf8cdca47c8e9e
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 9c38aef858d723e548529f450e34d0480de5f8b2
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75219077"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435444"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Adatok megtekintése kapcsolat nélküli üzemmódban a Power BI-mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -21,6 +21,9 @@ A következőkre vonatkozik:
 | ![iPhone](./media/mobile-apps-offline-data/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-offline-data/ipad-logo-50-px.png) | ![Android rendszerű telefon](./media/mobile-apps-offline-data/android-phone-logo-50-px.png) | ![Android rendszerű táblagép](./media/mobile-apps-offline-data/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-apps-offline-data/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |Windows 10-eszközök |
+
+>[!NOTE]
+>A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Ha a mobilböngésző helyett a mobilalkalmazásban tekinti meg a Power BI-t, kihasználhatja annak előnyeit, hogy akkor is hozzáférhet az adataihoz, amikor éppen nem csatlakozik hálózathoz. 
 

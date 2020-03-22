@@ -1,6 +1,6 @@
 ---
 title: Mire használhatják a fejlesztők a Power BI-t?
-description: A Power BI lehetőségek széles tárházát kínálja a fejlesztők számára. Ezek a beágyazási lehetőségektől az egyéni vizualizációkig és az adatkészletek streameléséig terjednek.
+description: A Power BI lehetőségek széles tárházát kínálja a fejlesztők számára. Ezek a beágyazási lehetőségektől a Power BI-vizualizációkig és az adatkészletek streameléséig terjednek.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: overview
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 4e8ce6d9a892abf3e24ecae6dee1e3ea23504d31
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: c92eea927368d885a297fd83d39f528f7dae848e
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041355"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79487786"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Mire használhatják a fejlesztők a Power BI-t?
 
-A fejlesztőknek több módszer is rendelkezésére áll ahhoz, hogy a Power BI-tartalmat alkalmazásokban használjanak. Fejlesztőként ezekkel a lehetőségekkel a következő szolgáltatásokat építheti be: **beágyazás a Power BI-jal**, **egyéni vizualizációk** és **adatok leküldése a Power BI-ba**.
+A fejlesztőknek több módszer is rendelkezésére áll ahhoz, hogy a Power BI-tartalmat alkalmazásokban használjanak. Fejlesztőként ezekkel a lehetőségekkel a következő szolgáltatásokat építheti be: **beágyazás a Power BI-jal**, **Power BI-vizualizációk** és **adatok leküldése a Power BI-ba**.
 
 ## <a name="embedding-power-bi-content"></a>Power BI-tartalom beágyazása
 
@@ -27,19 +27,19 @@ A [beágyazást előkészítő eszközzel](https://aka.ms/embedsetup) gyorsan me
 
 Válassza ki az Ön számára megfelelő megoldást:
 
-* Amennyiben az [ügyfelei számára végez beágyazást](embedding.md#embedding-for-your-customers), irányítópultokat és jelentéseket ágyazhat be olyan felhasználók számára, akik nem rendelkeznek Power BI-fiókkal. Futtassa a [Beágyazás az ügyfelek számára](https://aka.ms/embedsetup/AppOwnsData) megoldást.
+* Amennyiben az [ügyfelei számára végez beágyazást](embedded/embedding.md#embedding-for-your-customers), irányítópultokat és jelentéseket ágyazhat be olyan felhasználók számára, akik nem rendelkeznek Power BI-fiókkal. Futtassa a [Beágyazás az ügyfelek számára](https://aka.ms/embedsetup/AppOwnsData) megoldást.
 
-* A [Beágyazás a cég számra](embedding.md#embedding-for-your-organization) használatával kiterjesztheti a Power BI szolgáltatást. Futtassa a [Beágyazás a cég számára](https://aka.ms/embedsetup/UserOwnsData) megoldást.
+* A [Beágyazás a cég számra](embedded/embedding.md#embedding-for-your-organization) használatával kiterjesztheti a Power BI szolgáltatást. Futtassa a [Beágyazás a cég számára](https://aka.ms/embedsetup/UserOwnsData) megoldást.
 
 ![PBIE-minta](media/what-can-you-do/what-can-you-do-02.png)
 
-További információ a Power BI-ba való beágyazásról a [Power BI-ba történő beágyazást](embedding.md) ismertető cikkben található.
+További információ a Power BI-ba való beágyazásról a [Power BI-ba történő beágyazást](embedded/embedding.md) ismertető cikkben található.
 
-## <a name="developing-custom-visuals"></a>Egyéni vizualizációk létrehozása
+## <a name="developing-power-bi-visuals"></a>Power BI-vizualizációk fejlesztése
 
-A Power BI-ban létrehozhat egyéni vizualizációkat, amelyek a vállalatára jellemző egyedi stílusban készülnek. Az egyéni vizualizációkat sok esetben fejlesztők hozzák létre. Akkor van rájuk szükség, amikor a Power BI-ban megtalálható vizualizációk nem felelnek meg tökéletesen egy feladathoz.
+A Power BI-ban létrehozhat Power BI-vizualizációkat, amelyek a vállalatára jellemző egyedi stílusban készülnek. A Power BI-vizualizációkat sok esetben fejlesztők hozzák létre. Akkor van rájuk szükség, amikor a Power BI-ban megtalálható vizualizációk nem felelnek meg tökéletesen egy feladathoz.
 
-Az egyéni vizualizációk révén saját vizualizációkat hozhat létre, amelyeket a Power BI-jelentésekben használhat. Az egyéni vizualizációk a JavaScript egy bővített változatában, a TypeScriptben készülnek. A TypeScript néhány speciális funkciót is támogat, és korai hozzáférést biztosít az ES6/ES7-funkciókhoz. A vizualizációk stílusa CSS-stíluslapokkal alakítható ki. A kényelem érdekében a Less előfordítót alkalmazzuk, amely támogat bizonyos különleges funkciókat, mint például: beágyazás, változók, feltételek, ciklusok stb. Ha nem szeretné használni ezeket a funkciókat, egyszerű CSS-kódot is írhat a Less-fájlba.
+A Power BI-vizualizációk révén saját vizualizációkat hozhat létre, amelyeket a Power BI-jelentésekben használhat. A Power BI-vizualizációk a JavaScript egy bővített változatában, a TypeScriptben készülnek. A TypeScript néhány speciális funkciót is támogat, és korai hozzáférést biztosít az ES6/ES7-funkciókhoz. A vizualizációk stílusa CSS-stíluslapokkal alakítható ki. A kényelem érdekében a Less előfordítót alkalmazzuk, amely támogat bizonyos különleges funkciókat, mint például: beágyazás, változók, feltételek, ciklusok stb. Ha nem szeretné használni ezeket a funkciókat, egyszerű CSS-kódot is írhat a Less-fájlba.
 
 ![CV-minta](media/what-can-you-do/powerbi-custom-visual-store.png)
 
@@ -57,7 +57,7 @@ A [Mire használhatják a fejlesztők a Power BI API-t?](automation/overview-of-
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Beágyazás a Power BI szolgáltatással](embedding.md)  
+[Beágyazás a Power BI szolgáltatással](embedded/embedding.md)  
 
 [Egyéni Power BI-vizualizáció fejlesztése](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f197f2c2ca85673452a10986f19e26c5802c739
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 7d1e355f2c28679f5c2101d250a9fc2d5c99a2bd
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496647"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205642"
 ---
 # <a name="what-are-bookmarks"></a>Mik azok a könyvjelzők?
 
@@ -157,7 +157,7 @@ Note that selecting **Ungroup** for any bookmark from a group takes all bookmark
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 A **könyvjelzők** aktuális kiadásának használatára vonatkozik néhány korlátozás és egyéb szempont.
 
-* A legtöbb egyéni vizualizáció zökkenőmentesen működik a könyvjelzőkkel. Ha hibát tapasztal egy könyvjelző és egy egyéni vizualizáció használatakor, lépjen kapcsolatba az egyéni vizualizáció létrehozójával, és kérje meg, hogy szolgáltasson támogatást a könyvjelzőkhöz. 
+* A legtöbb Power BI-vizualizáció zökkenőmentesen működik a könyvjelzőkkel. Ha hibát tapasztal egy könyvjelző és egy Power BI-vizualizáció használatakor, lépjen kapcsolatba a Power BI-vizualizáció létrehozójával, és kérje meg, hogy szolgáltasson támogatást a könyvjelzőkhöz.
 * Ha egy vizualizációt a könyvjelző létrehozását követően ad hozzá a jelentésoldalhoz, a vizualizáció az alapértelmezett állapotában jelenik meg. Ez azt is jelenti, hogy ha egy olyan oldalra vesz fel szeletelőt, ahol már hozott létre könyvjelzőket, a szeletelő az alapértelmezett állapotának megfelelően viselkedik majd.
 * A könyvjelzőkre általában az nincs hatással, ha a jelentés *tervezője* frissíti vagy újra közzéteszi a jelentést. Ha azonban a tervező jelentős változtatásokat hajt végre a jelentésben, például eltávolítja a könyvjelzők által használt mezőket, akkor hibaüzenet jelenik meg, ha legközelebb megpróbálja megnyitni az adott könyvjelzőt. 
 

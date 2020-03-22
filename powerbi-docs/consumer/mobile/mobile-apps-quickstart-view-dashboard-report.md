@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 11/25/2019
 ms.author: painbar
-ms.openlocfilehash: 8703bfa60116b7e60f1e6bec931b0f6183f7dd31
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 0313dc2014130ded9b9ed4ad112aa26803d92d28
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75218569"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435720"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Gyors útmutató: Irányítópultok és jelentések felfedezése a Power BI-mobilalkalmazásokban
 Ebben a gyorsútmutatóban röviden körbejárjuk a Power BI mobilalkalmazást, és példaként bemutatunk egy irányítópultot és egy jelentést. Az útmutatóban az iOS rendszerre készült Power BI alkalmazás szerepel, de a lépéseket más eszközökön is egyszerűen követheti.
@@ -23,6 +23,9 @@ A következőkre vonatkozik:
 | ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Windows 10-eszközök](./media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
 |:--- |:--- |:--- |:--- |
 | iPhone | iPad | Android | Windows 10 |
+
+>[!NOTE]
+>A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Az irányítópultok betekintést nyújtanak és hozzáférést biztosítanak a vállalat életciklusához és folyamataihoz. Ez a funkció egy központi helyet biztosít, ahonnan áttekintheti és nyomon követheti vállalkozása aktuális állapotát. A jelentés interaktív rálátást kínál az adatokhoz, és vizualizációk segítségével mutatja be az adatokból származó eredményeket és elemzéseket. 
 

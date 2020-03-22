@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 047aa5e19089555538c874702dd50da0f1146ff1
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: ed1100a418259845e6a2656e1c5bab6d80358df0
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/10/2020
-ms.locfileid: "77115285"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381077"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Valós idejű streamelés a Power BI-ban
 A Power BI valós idejű streamelésével valós időben streamelhet adatokat és frissítheti az irányítópultokat. A Power BI-ban elkészíthető vizualizációk vagy irányítópultok úgy is létrehozhatók, hogy valós idejű adatokat és a vizualizációkat jelenítsenek meg és frissítsenek. A streamelési adatok forrásai és eszközei lehetnek ipari érzékelők, közösségimédia-források, szolgáltatáshasználati metrika vagy bármi más, amiből időfüggő adatok gyűjthetők és továbbíthatók.
@@ -33,7 +33,7 @@ A valós idejű irányítópultokon megjeleníthető valós idejű adatkészlete
 Első lépésként (ebben a részben) ismertetjük, hogy miben különböznek egymástól, majd bemutatjuk, hogyan lehet adatokat leküldeni a különféle adatkészletekbe.
 
 ### <a name="push-dataset"></a>Leküldéses adatkészlet
-**Leküldéses adatkészlet** esetén az adatok leküldéssel kerülnek a Power BI szolgáltatásba. Amikor létrejön az adatkészlet, a Power BI automatikusan létrehoz a szolgáltatásban egy új adatbázist az adatok tárolására. A háttérben működik egy adatbázis, amely folyamatosan tárolja a bejövő adatokat, ezért az adatokból jelentések készíthetők. Ezek a jelentések és a vizualizációik éppen olyanok, mint bármilyen más jelentés vizualizációja, így a vizualizációk létrehozásához a Power BI összes jelentéskészítő funkciója használható, egyebek közt az egyéni vizualizációk, az adatértesítések és az irányítópultra rögzített csempék.
+**Leküldéses adatkészlet** esetén az adatok leküldéssel kerülnek a Power BI szolgáltatásba. Amikor létrejön az adatkészlet, a Power BI automatikusan létrehoz a szolgáltatásban egy új adatbázist az adatok tárolására. A háttérben működik egy adatbázis, amely folyamatosan tárolja a bejövő adatokat, ezért az adatokból jelentések készíthetők. Ezek a jelentések és a vizualizációik éppen olyanok, mint bármilyen más jelentés vizualizációja, így a vizualizációk létrehozásához a Power BI összes jelentéskészítő funkciója használható, egyebek közt a Power BI-vizualizációk, az adatértesítések és az irányítópultra rögzített csempék.
 
 Ha létrejött egy leküldéses adatkészletet használó jelentés, akkor annak a vizualizációi rögzíthetők az irányítópultokon. Ha frissülnek az adatok, az irányítópulton látható vizualizációk is valós időben frissülnek. Minden alkalommal, amikor új adatok érkeznek, az irányítópult kezdeményezi a szolgáltatásban a csempék frissítését.
 
@@ -45,7 +45,7 @@ Két szempontot érdemes figyelembe venni a leküldéses adatkészletek rögzít
 ### <a name="streaming-dataset"></a>Streamelési adatkészlet
 A **streamelési adatkészletek** adatai szintén leküldéssel kerülnek az Power BI szolgáltatásba, van azonban egy fontos különbség: A Power BI csak egy átmeneti gyorsítótárban tárolja az adatokat, és az gyorsan kiürül. Az átmeneti gyorsítótár csak olyan vizualizációkhoz használható, amelyek rövid időre visszamenőleg jelenítik meg az előzményeket, mint amilyen például egy egyórás időtartományú vonaldiagram.
 
-A  **adatkészlet** esetében *nincs* a háttérben működő adatbázis, így *nem* készíthetők vizualizációk a jelentésekhez a streamből beérkező adatokból. Tehát nem lesznek használhatók egyebek között olyan jelentési funkciók sem, mint a szűrés vagy az egyéni vizualizációk.
+A  **adatkészlet** esetében *nincs* a háttérben működő adatbázis, így *nem* készíthetők vizualizációk a jelentésekhez a streamből beérkező adatokból. Tehát nem lesznek használhatók egyebek között olyan jelentési funkciók sem, mint a szűrés vagy a Power BI-vizualizációk.
 
 Streamelési adatkészletet kizárólag úgy jeleníthet meg, ha felvesz egy csempét, és a streamelési adatkészletet **egyedi streamelési adatok** típusú adatforrásként használja. A **streamelési adatkészleten** alapuló egyedi streamelési csempék valós idejű adatok gyors megjelenítésére vannak optimalizálva. Nagyon kicsi a késés aközött, hogy az adat leküldéssel a Power BI szolgáltatásba kerül, és aközött, hogy frissül a vizualizáció, ugyanis nincs szükség arra, hogy az adatok bekerüljenek egy adatbázisba, és onnan beolvassák őket.
 
@@ -54,7 +54,7 @@ A gyakorlatban a streamelésiadatkészletek és a hozzájuk kapcsolódó streame
 ### <a name="pubnub-streaming-dataset"></a>PubNub-alapú streamelési adatkészlet
 **PubNub**-alapú streamelési adatkészlet esetén a Power BI webügyfél a PubNub SDK-val beolvas egy meglévő PubNub-streamet, de a Power BI szolgáltatás nem tárol semmilyen adatot.
 
-Ahogyan a  **adatkészlet** esetében, úgy a **PubNub-alapú streamelési adatkészlet** esetében sem működik a háttérben adatbázis, így nem készíthetők a folyamatosan beérkező adatokon alapuló jelentésekhez vizualizációk, és nem használhatók ki egyebek között az olyan jelentési funkciók előnyei sem, mint például a szűrés vagy az egyéni vizualizációk. Így a **PubNub-alapú streamelési adatkészlet** kizárólag úgy jeleníthető meg, ha felvesz egy csempét az irányítópulton, és a PubNub-alapú streamelési adatkészletet konfigurálja a forrásaként.
+Ahogyan a  **adatkészlet** esetében, úgy a **PubNub-alapú streamelési adatkészlet** esetében sem működik a háttérben adatbázis, így nem készíthetők a folyamatosan beérkező adatokon alapuló jelentésekhez vizualizációk, és nem használhatók ki egyebek között az olyan jelentési funkciók előnyei sem, mint például a szűrés vagy a Power BI-vizualizációk. Így a **PubNub-alapú streamelési adatkészlet** kizárólag úgy jeleníthető meg, ha felvesz egy csempét az irányítópulton, és a PubNub-alapú streamelési adatkészletet konfigurálja a forrásaként.
 
 A **PubNub-alapú streamelési adatkészleten** alapuló csempék valós idejű adatok gyors megjelenítésére vannak optimalizálva. Mivel a Power BI közvetlenül kapcsolódik a PubNub-streamhez, nagyon kicsi a késés aközött, hogy az adat leküldéssel a Power BI szolgáltatásba kerül, és aközött, hogy frissül a vizualizáció.
 
@@ -64,9 +64,7 @@ A következő táblázat (vagy ha úgy tetszik, mátrix) ismerteti a valós idej
 ![](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
-> [Ebből a cikkből](https://docs.microsoft.com/power-bi/developer/api-rest-api-limitations) megtudhatja, hogy milyen mennyiségi korlátok vonatkoznak az adatok **leküldésére**.
-> 
-> 
+> [Ebből a cikkből](developer/automation/api-rest-api-limitations.md) megtudhatja, hogy milyen mennyiségi korlátok vonatkoznak az adatok **leküldésére**.
 
 ## <a name="pushing-data-to-datasets"></a>Adatok leküldése adatkészletekbe
 Az előző szakasz ismertette a három valós idejű adatkészlettípust, amellyel valós idejű streamelés lehetséges, valamint a köztük megmutatkozó eltéréseket. Ez a szakasz azt ismerteti, hogy hogyan hozhat létre ilyen adatkészleteket, illetve hogyan küldhet le adatokat ezekbe az adatkészletekbe.
@@ -110,7 +108,7 @@ Ha az **Előzményadatok elemzése** le van tiltva (alapértelmezés szerint le 
 ### <a name="using-azure-stream-analytics-to-push-data"></a>Adatok leküldése az Azure Stream Analytics használatával
 Az **Azure Stream Analyticsben** (ASA-ban) a Power BI megadható kimenetként, majd a Power BI szolgáltatásban ezek a streamek valós időben megjeleníthetők. Ez a szakasz ennek a folyamatnak a technikai részleteit ismerteti.
 
-Az Azure Stream Analytics létrehozza a Power BI felé irányuló kimeneti streamet a Power BI REST API-kkal, és a *defaultMode* jelzőt *pushStreaming* értékre állítja (a *defaultMode* jelzővel kapcsolatos tudnivalók a cikk korábbi szakaszaiban olvashatók). Ennek köszönhetően az adatkészlet mind a **leküldéses**, mind pedig a **streamelési** adatkészletek előnyeivel rendelkezni fog. Az adatkészlet létrehozása során az Azure Stream Analytics beállítja a **retentionPolicy* jelzőt is, *basicFIFO* értékre. Ezzel a beállítással a leküldéses adatkészletet támogató adatbázis 200 000 sor tárolására lesz képes, ennek elérése után FIFO módszerrel elkezdi eldobni a sorokat, vagyis mindig a legrégebbiek eldobásával kezdi.
+Az Azure Stream Analytics létrehozza a Power BI felé irányuló kimeneti streamet a Power BI REST API-kkal, és a *defaultMode* jelzőt *pushStreaming* értékre állítja (a *defaultMode* jelzővel kapcsolatos tudnivalók a cikk korábbi szakaszaiban olvashatók). Ennek köszönhetően az adatkészlet mind a **leküldéses**, mind pedig a **streamelési** adatkészletek előnyeivel rendelkezni fog. Az adathalmaz létrehozása során az Azure Stream Analytics beállítja a **retentionPolicy** jelzőt is, *basicFIFO* értékre. Ezzel a beállítással a leküldéses adathalmazt támogató adatbázis 200 000 sor tárolására lesz képes, ennek elérése után FIFO módszerrel elkezdi eldobni a sorokat, vagyis mindig a legrégebbiek eldobásával kezdi.
 
 > [!CAUTION]
 > Ha az Azure Stream Analytics-lekérdezés nagyon gyakori kimenetet eredményez a Power BI felé (például másodpercenként egyet vagy kettőt), akkor az Azure Stream Analytics elkezdi ezeket a kimeneteket egyetlen kéréssé kötegelni. A kérés mérete emiatt meghaladhatja a streamelési csempe méretkorlátozását. Ez esetben a streamelési csempék megjelenítése nem fog működni, ahogyan azt már a korábbi szakaszokban is említettük. Ilyenkor az ajánlott eljárás a Power BI felé irányuló adatkimenet sebességének csökkentése, például a másodpercenkénti maximális érték helyett a 10 másodpercenkénti maximális érték beállításával.

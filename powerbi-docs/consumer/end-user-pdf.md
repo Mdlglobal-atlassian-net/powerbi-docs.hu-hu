@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3e23f56da424ae18565b6cbec591c9d855f23139
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: e45d3e109d072984d6c01b2cbdfdd9b53e936a3b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79113146"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377213"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Jelentések exportálása a Power BI-ból PDF-be
 
@@ -53,7 +53,7 @@ Ennyi az egész! Letöltheti a fájlt, és megnyithatja bármely PDF-megtekintő
 Az **Exportálás PDF-be** funkció használatakor figyelembe kell vennie néhány megfontolást és korlátozást.
 
 * Az R-alapú és a Python-alapú vizualizációk még nem támogatottak. A PDF-fájlban ezek a vizualizációk üresek, és egy hibaüzenetet jelenítenek meg. 
-* A minősített egyéni vizualizációk támogatottak. A minősített egyéni vizualizációkról, beleértve az egyéni vizualizáció minősítési folyamatát, az [Egyéni vizualizáció minősítése](../developer/power-bi-custom-visuals-certified.md) oldalon talál további információt. A nem minősített egyéni vizualizációk nem támogatottak. A PDF-fájlban hibaüzenettel jelennek meg.
+* A minősített Power BI-vizualizációk támogatottak. A minősített Power BI-vizualizációkról, beleértve a Power BI-vizualizáció minősítési folyamatát, a [Power BI-vizualizáció minősítése](../developer/visuals/power-bi-custom-visuals-certified.md) oldalon talál további információt. A nem minősített Power BI-vizualizációk nem támogatottak. A PDF-fájlban hibaüzenettel jelennek meg.
 * Az Esri vizualizációja nem támogatott
 * 30-nál több jelentésoldalt tartalmazó jelentések jelenleg nem exportálhatók.
 * A jelentés PDF-fájlba történő exportálása néhány percet igénybe vehet, ezért legyen türelemmel. Az exportálás időtartamát többek között a jelentés szerkezete és a Power BI szolgáltatás aktuális terhelése befolyásolhatja.

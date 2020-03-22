@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 ms.date: 03/04/2020
-ms.openlocfilehash: 4c48b9c2695c7feab5897527c9ff2fbf2a2d0455
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 7762ace1da913713567b79a9650b3f07aa71146d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78920939"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381054"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása
 
@@ -52,7 +52,7 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 | Fejlett Office 365-együttműködés | Nem | Igen | [Együttműködés egy munkaterületen](../service-collaborate-power-bi-workspace.md) az Office 365-tel |
 | R vizualizációk | Nem | Igen | A Power BI Desktopban [R-vizualizációkat](../desktop-r-visuals.md) hozhat létre, és közzéteheti őket a Power BI szolgáltatásban. Az R-vizualizációt tartalmazó Power BI-jelentéseket nem lehet menteni a Power BI jelentéskészítő kiszolgálón.  |
 | Előzetes verziójú funkciók | Nem | Igen | [Feliratkozás a Power BI szolgáltatás előzetes verziójú](../consumer/end-user-preview-features.md) funkcióira |
-| Egyéni vizualizációk | Igen | Igen | [Egyéni vizualizációk a Power BI-ban](../developer/power-bi-custom-visuals.md) |
+| Power BI-vizualizációk | Igen | Igen | [Power BI-vizualizációk](../developer/visuals/power-bi-custom-visuals.md) |
 | Összetett modellek | Nem | Igen |
 | Power BI Desktop | A Jelentéskészítő kiszolgálóhoz optimalizált verzió a Jelentéskészítő kiszolgálóval letölthető | A Power BI szolgáltatáshoz optimalizált verzió elérhető a Windows Áruházban | [Power BI Desktop a jelentéskészítő kiszolgálóhoz](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop a Power BI szolgáltatáshoz](https://aka.ms/pbidesktopstore) |
 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/18/2020
+ms.date: 03/07/2020
 ms.author: painbar
-ms.openlocfilehash: 27f6469cb960ff101f45636e0720b935929ff010
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 9f9a0afb766becefa5b74c5737795f6f227e7c27
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538126"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435766"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Jelentések vizsgálata a Power BI mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -21,6 +21,9 @@ A következőkre vonatkozik:
 | ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![iPad](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android rendszerű telefon](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Android rendszerű táblagép](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Windows 10-eszközök](./media/mobile-reports-in-the-mobile-apps/win-10-logo-40-px.png) |
 |:---: |:---: |:---: |:---: |:---: |
 | iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |Windows 10-eszközök |
+
+>[!NOTE]
+>A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 A Power BI jelentés egy interaktív nézet az adatokról különböző, az adatokból származó eredményeket és elemzéseket bemutató vizualizációkkal. A jelentések megtekintése a Power BI mobilalkalmazásokban a harmadik lépés egy háromlépéses folyamatban:
 
@@ -59,6 +62,14 @@ Amikor letölti a Power BI mobilalkalmazást, az egykoppintásos kezelésre van 
 Ha kívánja, átválthat kétkoppintásos kezelésre. Kétkoppintásos kezelés esetén a vizualizációra koppintva kijelöli azt, majd egy újabb koppintással hajthatja végre a kívánt műveletet.
 
 Kétkoppintásos kezelésre átváltani vagy az egykoppintásos kezelésre visszaváltani az [alkalmazás kezelési beállításai](./mobile-app-interaction-settings.md) között lehet.
+
+### <a name="single-select-versus-multi-select-mode-for-data-point-selection"></a>Egyszeres kijelölési és többszörös kijelölési mód az adatpontok kijelöléséhez
+
+Egy jelentésben egy adatpontot úgy jelölhet ki, ha rákoppint. Kiválaszthatja, hogy egyszeres vagy többszörös kijelölési módot szeretne-e használni. Az egyszeres kijelölési módban ha egy adatpontra koppint a kijelöléshez, az megszünteti az összes korábbi kijelölést. A többszörös kijelölési módban ha egy adatpontra koppint, hogy kijelölje az adott elemet, az *hozzá lesz adva* a már kijelölt összes többi elemhez, és a kijelölések együttesen jelennek meg kiemelve a jelentés vizualizációján.
+
+Egy kijelölt adatpont kijelölésének megszüntetéséhez egyszerűen koppintson rá újra.
+
+Az egyszeres és a többszörös kijelölési mód közötti váltáshoz lépjen az [alkalmazás interakciós beállításaihoz](./mobile-app-interaction-settings.md).
 
 ### <a name="using-tap-and-long-tap"></a>A koppintás és a hosszú érintés használata
 A koppintás egyenértékű a kattintással. Ha tehát egy jelentésben keresztkijelölést szeretne használni egy adatpont alapján, akkor koppintson rá arra az adatpontra.

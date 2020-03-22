@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 32f0c03fc0ae586b8b98c7a4c84c9d4c7bbd9078
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 878e4a2e033d33e8c6bb027f35976c19e8b108c9
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78920968"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488844"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
 Ezen az oldalon a **Power BI szolgáltatás** ismert problémáit és új funkcióit ismertetjük. Az újdonságokra vonatkozó kapcsolódó információk:
@@ -91,7 +91,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * PPT-k és PDF-ek szűrt exportálása.
 * [Súgó- és támogatási beállítások](https://powerbi.microsoft.com/blog/tailoring-help-and-support-for-power-bi-users/) a felügyeleti portálon.
 * Adatleszármaztatás [adatfolyamokhoz](service-dataflows-overview.md).
-* Hitelesített egyéni vizualizációk beállítás a felügyeleti portálon.
+* Hitelesített Power BI-vizualizációk beállítása a Felügyeleti portálon.
 
 ### <a name="january-2019"></a>2019. január
 * [Biztonságos Power BI-jelentések](service-embed-secure.md) beágyazása belső portálokba és webhelyekbe.
@@ -126,7 +126,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * Fejlesztések a Power BI [Jelentések URL-szűrőjében](service-url-filters.md).
 
 ### <a name="july-2018"></a>2018. július
-* Az egyéni vizualizációk támogatják az [állandó szűrőket](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
+* A Power BI-vizualizációk támogatják az [állandó szűrőket](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
 * [API-k és PowerShell-parancsmagok](https://powerbi.microsoft.com/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) Power BI-adminisztrátoroknak.
 * [Multi-geo támogatás](service-admin-premium-multi-geo.md) a Power BI Premiumhoz.
 
@@ -153,20 +153,20 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 ### <a name="february-2018"></a>2018. február
 * [Power BI-alkalmazások](service-create-distribute-apps.md) automatikus telepítése a végfelhasználók számára.
 * P4- és P5-kapacitások a Power BI Premium szolgáltatásban
-* Az [Egyéni szervezeti vizualizációk](developer/power-bi-custom-visuals-organization.md) előzetes verziója.
+* [A szervezeti Power BI-vizualizációk](developer/visuals/power-bi-custom-visuals-organization.md) előzetes verziója.
 
 ### <a name="january-2018"></a>2018. január
-*   Power BI-jelentések megosztása és kedvencnek jelölése.
-*   Az OAuth2 és a DirectQuery egyszeri bejelentkezésének támogatása az Azure SQL Database és a Data Warehouse számára.
-*   Régión belüli naplózás: a naplók mostantól a bérlővel megegyező Office 365-régióban vannak tárolva.
-*   Általánosan elérhető a SharePoint Online [Power BI-jelentés kijelzője](https://go.microsoft.com/fwlink/p/?LinkId=825698).
-*   Rendszergazdai vezérlés az egyéni vizualizációk a bérlő minden felhasználója számára való megtekintésének kikapcsolásához.
-*   Ütemezett frissítéstámogatás az Azure Analysis Serviceshez (AAS).
+*    Power BI-jelentések megosztása és kedvencnek jelölése.
+*    Az OAuth2 és a DirectQuery egyszeri bejelentkezésének támogatása az Azure SQL Database és a Data Warehouse számára.
+*    Régión belüli naplózás: a naplók mostantól a bérlővel megegyező Office 365-régióban vannak tárolva.
+*    Általánosan elérhető a SharePoint Online [Power BI-jelentés kijelzője](https://go.microsoft.com/fwlink/p/?LinkId=825698).
+*    Rendszergazdai vezérlés a Power BI-vizualizációk a bérlő minden felhasználója számára való megtekintésének kikapcsolásához.
+*    Ütemezett frissítéstámogatás az Azure Analysis Serviceshez (AAS).
 
 ## <a name="previous-months-2017"></a>Korábbi hónapok (2017)
 ### <a name="october-and-november-2017"></a>2017. október és november
-*   A [Power BI-alkalmazásokat](service-create-distribute-apps.md) használó tartalmak szelektív közzététele.
-*   A külső felhasználók elosztása az [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/) használatával.
+*    A [Power BI-alkalmazásokat](service-create-distribute-apps.md) használó tartalmak szelektív közzététele.
+*    A külső felhasználók elosztása az [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/) használatával.
 * Mesterséges intelligenciát használó alkalmazásjavaslatok.
 * Irányítópult-csempéken megjelenő felhasználói felületi frissítések.
 * E-mail-előfizetések támogatása az alkalmazásokhoz. 
@@ -183,8 +183,8 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * Ismerje meg a célközönségét a [felhasználónkénti használati metrikákkal](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
 * A [Power BI](service-connect-to-services.md) online szolgáltatásokhoz készült alkalmazásainak használatbavétele.
 * Csatlakozás az IBM Netezzához a helyszíni adatátjáróval importálási és DirectQuery-csatlakozási módban.
-* A Power BI Embedded mostantól támogatja a [Dinamikus RLS-t](developer/embedded-row-level-security.md).
-* Speciális [szűrő API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) az egyéni vizualizációs API 1.7-es kiadásában.
+* A Power BI Embedded mostantól támogatja a [Dinamikus RLS-t](developer/embedded/embedded-row-level-security.md).
+* Speciális [szűrő API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) a Power BI-vizualizációs API 1.7-es kiadásában.
 
 ### <a name="july-2017"></a>2017. július
 * [E-mail-előfizetések](consumer/end-user-subscribe.md) támogatása az irányítópultokon.
@@ -197,7 +197,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * Több API-fejlesztés az [ütemezett frissítés automatizálásához](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), a [jelentések klónozása és újrakötése](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), az [átjárókötések frissítése](https://msdn.microsoft.com/library/mt784650.aspx), valamint számos egyéb fejlesztés
 * Relatív kapcsolatok a Power BI alkalmazások irányítópult-csempéi és más irányítópultok és jelentések között.
 * Általánosan elérhető az [Impala-összekötő](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala) a Power BI Desktopban.
-* A Power BI vizuális funkcióinak bővítése az [interaktív egyéni R vizualizációkkal](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
+* A Power BI vizuális funkcióinak bővítése az [R interaktív Power BI-vizualizációival](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
 
 ### <a name="april-and-may-2017"></a>2017. április és május
 * Az eredményesség felmérése és növelése az [irányítópult- és jelentéskészítőknek szánt használati metrikákkal](service-usage-metrics.md).
@@ -213,7 +213,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * Továbbfejlesztett [hibaelhárítási üzenetek a DAX-lekérdezésekhez](https://powerbi.microsoft.com/blog/power-bi-service-march-feature-summary/#DAXtroubleshooting).
 * Az adatkészletek szélesebb körű vezérlése az [egyéni gyorsítótár-frissítési ütemezéssel](https://powerbi.microsoft.com/blog/announcing-custom-cache-refresh-schedules-in-the-power-bi-service/).
 * Csatlakozás az [Amazon Redshifthez](https://powerbi.microsoft.com/blog/announcing-support-for-amazon-redshift-reports-in-the-power-bi-service/).
-* [Egyéni Power BI-vizualizációk böngészése az Office Áruházban](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
+* [Power BI-vizualizációk böngészése az Office Áruházban](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
 * Előzetes verzió: [Előfizetés a jelentésoldalakra](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) az adatok áttekintéséhez.
 * Több információ az alkalmazottak és a partnerek Azure AD-felhasználási szokásairól az Azure AD tartalomcsomaggal.
 
@@ -225,7 +225,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 ### <a name="january-2017"></a>2017. január
 * A Power BI felügyelete a [Power BI rendszergazdai szerepkörével](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#pbiadminrole).
 * Az Office 365 naplózási portáljának [Power BI-naplói](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) világszerte elérhetők.
-* Megjelent a [fejlesztői eszközök és az egyéni vizualizációs API-k](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) 1.4-es kiadása.
+* Megjelent a [fejlesztői eszközök és a Power BI-vizualizációs API-k](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) 1.4-es kiadása.
 * A [valós idejű streamelési szolgáltatáskészlet](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) általánosan elérhető.
 * [Adatok leküldése a Power BI-nak a Power Automate segítségével](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) kódolás nélkül.
 * Előzetes verzió: [Előfizetés a jelentésoldalakra](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) az adatok áttekintéséhez.
@@ -506,7 +506,7 @@ Ezen a héten sok frissítést vezettünk be, amelyek legtöbbje a Power BI Desk
   1. Többdimenziós SSAS-támogatás – hierarchiatámogatás (előzetes verziós funkció)
   2. Stripe-összekötő
   3. Smartsheet-összekötő
-  4. „Adatbevitel”: Adatbeillesztés vagy -megadás tábla létrehozásához
+  4. „Adatok megadása”: Adatbeillesztés vagy -megadás tábla létrehozásához
   5. A DirectQuery fejlesztései:  A T-SQL és a SAP HANA összes adattípusának támogatása, ami teljesítményjavulást eredményez.
   6. ODBC-összekötő: Támogatás a felhasználó vagy a rendszer adatforrásneveinek kiválasztásához
   7. CSV-összekötő: Lehetőség oszlopelválasztó megadására a Forrás párbeszédpanelen

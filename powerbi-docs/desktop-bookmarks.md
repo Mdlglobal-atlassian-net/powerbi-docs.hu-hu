@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 08d222f03991bdf605f8e465ff0152d40d07d815
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 00ea3e70b34ecdaf2c5bd8b8728153bfb26f899b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75761887"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378984"
 ---
 # <a name="create-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Könyvjelzők létrehozása a Power BI Desktopban elemzések megosztásához és történetek felépítéséhez
 A Power BI-ban a *könyvjelzők* használatával rögzítheti az egyes jelentésoldalak aktuális nézetkonfigurációját, beleértve a szűréseket és a vizualizációk állapotát. A mentett könyvjelző kiválasztásával később visszatérhet az állapothoz. 
@@ -198,7 +198,7 @@ A könyvjelzők előzetes verziójának engedélyezése:
 ## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 A könyvjelzőkezelési funkciók aktuális kiadásának használatára vonatkozik néhány korlátozás és egyéb szempont.
 
-* A legtöbb egyéni vizualizáció zökkenőmentesen működik a könyvjelzőkkel. Ha hibát tapasztal egy könyvjelző és egy egyéni vizualizáció használatakor, lépjen kapcsolatba az egyéni vizualizáció létrehozójával, és kérje meg, hogy szolgáltasson támogatást a könyvjelzőkhöz. 
+* A legtöbb Power BI-vizualizáció zökkenőmentesen működik a könyvjelzőkkel. Ha hibát tapasztal egy könyvjelző és egy egyéni vizualizáció használatakor, lépjen kapcsolatba az egyéni vizualizáció létrehozójával, és kérje meg, hogy szolgáltasson támogatást a könyvjelzőkhöz. 
 * Ha egy vizualizációt a könyvjelző létrehozását követően ad hozzá a jelentésoldalhoz, a vizualizáció az alapértelmezett állapotában jelenik meg. Ez azt jelenti, hogy ha egy olyan oldalra vesz fel szeletelőt, ahol már hozott létre könyvjelzőket, a szeletelő az alapértelmezett állapotának megfelelően viselkedik majd.
 * Ha a vizualizációkat a könyvjelzők létrehozását követően áthelyezi, a változást a könyvjelzők automatikusan tükrözni fogják. 
 

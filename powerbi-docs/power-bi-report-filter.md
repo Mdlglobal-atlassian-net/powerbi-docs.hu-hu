@@ -1,20 +1,20 @@
 ---
 title: A Power BI-jelentésekben elérhető új szűrési felület
-description: A Power BI szűrői új funkciókat és új megjelenést kapnak.
+description: A Power BI szűrői új funkciókkal és megjelenéssel rendelkeznek.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 02/26/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e991b84dede16f35a732c54ff916ec02f5610783
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: f4dbbdd30b403c8ac14db069b826f26af0bce24a
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762531"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79201959"
 ---
 # <a name="work-with-filters-in-power-bi-reports"></a>Szűrők használata Power BI-jelentésekben
 
@@ -52,8 +52,11 @@ Ha bekapcsolta a Power BI szolgáltatás **új megjelenését**![bekapcsolt új 
 
 Ha nem kapcsolta be az új megjelenést, az alábbi lépésekkel továbbra is megtekintheti az új szűrőket.
 
-1. A Power BI szolgáltatásban válassza a **Jelentések** fület egy munkaterület tartalomlistájában.
-2. Keresse meg az engedélyezni kívánt jelentést, majd válassza a **Beállítások** ikont ![Jelentés beállításai ikon](media/power-bi-report-filter/power-bi-settings-icon.png) a jelentés mellett.
+1. A Power BI szolgáltatásban nyissa meg egy munkaterület tartalomlistáját.
+2. Keresse meg az engedélyezni kívánt jelentést, válassza a **További beállítások (...)** lehetőséget, majd a jelentés **Beállítások** lehetőségét.
+
+    ![Jelentés beállításai](media/power-bi-report-filter/power-bi-filter-options.png)
+
 3. A **Szűrési felület** alatt jelölje be a **Frissített szűrőpanel engedélyezése, valamint a szűrők megjelenítése a jelentés vizualizációjának fejlécében** lehetőséget.
 
     ![A frissített szűrők paneljének engedélyezése](media/power-bi-report-filter/power-bi-service-filter-enable.png)
@@ -82,11 +85,21 @@ Az új Szűrők panel az engedélyezése után a jelentésoldaltól jobbra jelen
 
 1. A jelentés felhasználói alapértelmezés szerint láthatják a Szűrők panelt. Ha nem szeretné, hogy lássák, válassza a **Szűrők** melletti szem ikont.
 
-    ![Power BI-szűrők – szem ikon](media/power-bi-report-filter/power-bi-filter-eye.png)
+    ![Power BI-szűrők – szem ikon](media/power-bi-report-filter/power-bi-filter-eye-icon.png)
 
 2. Az új Szűrők panel kialakítását kezdje azzal, hogy a kívánt mezőket vizualizáció-, lap- vagy jelentésszintű szűrőként áthúzza az új Szűrők panelre.
 
 Amikor vizualizációt ad egy jelentésvászonhoz, a Power BI automatikusan felvesz egy szűrőt a Szűrők panelre a vizualizációban szereplő mezők mindegyikéhez. 
+
+## <a name="hide-the-filters-pane-while-editing"></a>A Szűrők panel elrejtése szerkesztéskor
+
+A Power BI Desktopban elérhető előzetes verzióban egy új menüszalag. A **Nézet** lap **Szűrők** váltógombjával megjelenítheti vagy elrejtheti a Szűrők panelt. Ez a funkció akkor hasznos, ha nem a Szűrők panelt használja, és további helyre van szüksége a képernyőn. Ez a bővítmény a többi megnyitható és bezárható panelhez igazítja a Szűrők panelt, például a Könyvjelzők és a Kijelölés panelhez. 
+
+![A Szűrők panel megjelenítése és elrejtése szerkesztéskor](media/power-bi-report-filter/power-bi-filter-hide.png)
+
+Ez a beállítás csak a Power BI Desktopban rejti el a Szűrők panelt. Ha el szeretné rejteni a Szűrők panelt a végfelhasználók számára, válassza a **Szűrők** melletti **szem** ikont.
+
+![Szem ikon](media/power-bi-report-filter/power-bi-filter-eye.png) 
 
 ## <a name="lock-or-hide-filters"></a>Szűrők zárolása vagy elrejtése
 
@@ -124,16 +137,16 @@ Ezeket az elemeket szűrőkártyákhoz is formázhatja attól függően, hogy al
 1. A jelentésben kattintson magára a jelentésre vagy a háttérre (*háttérkép*), majd a **Vizualizációk** panelen válassza a **Formátum** lehetőséget. 
     Itt találja meg a formázási lehetőségeket a jelentésoldalhoz, a háttérképhez, valamint a Szűrők panelhez és a szűrőkártyákhoz is.
 
-1. Bontsa ki a **Szűrő panelt**, és állítsa be a háttér, az ikonok és a bal szegély színét a jelentésoldalhoz illően.
+1. Bontsa ki a **Szűrők panelt**, és állítsa be a háttér, az ikonok és a bal szegély színét a jelentésoldalhoz illően.
 
-    ![A szűrőpanel kibontása](media/power-bi-report-filter/power-bi-format-filter-pane.png)
+    ![A Szűrők panel kibontása](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
 1. Bontsa ki a **Szűrőkártyák** elemet, és állítsa be az **Elérhető** és az **Alkalmazott** színt és szegélyt. Ha az elérhető és az alkalmazott kártyákhoz más színt ad meg, akkor nyilvánvaló lesz, hogy mely szűrők lettek alkalmazva. 
   
     ![A Szűrőkártyák elem kibontása](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
-## <a name="theming-for-filter-pane"></a>Témák a Szűrők panelhez
-A szűrőpanel alapértelmezett beállításai témafájllal módosíthatók. Az alábbi kódrészlet-minta segít az első lépéseknél:
+## <a name="theming-for-filters-pane"></a>Témák a Szűrők panelhez
+A Szűrők panel alapértelmezett beállításai témafájllal módosíthatók. Az alábbi kódrészlet-minta segít az első lépéseknél:
 
  
 ```
@@ -204,9 +217,9 @@ A szűrőpanel alapértelmezett beállításai témafájllal módosíthatók. Az
 }] 
 ```
 
-## <a name="sort-the-filter-pane"></a>A szűrőpanel rendezése
+## <a name="sort-the-filters-pane"></a>A Szűrők panel rendezése
 
-Az egyéni rendezés lehetősége is a szűrési felület egyik újdonsága. A jelentéskészítők húzással tetszőleges sorrendbe átrendezhetik a szűrőket.
+Az egyéni rendezés lehetősége is a Szűrők panel egyik újdonsága. A jelentéskészítők húzással tetszőleges sorrendbe átrendezhetik a szűrőket.
 
 ![Szűrők sorrendjének módosítása](media/power-bi-report-filter/power-bi-filter-sort.gif)
 
@@ -223,11 +236,25 @@ A Szűrők panel szerkesztésekor kattintson duplán a címre, hogy szerkeszteni
 
 ![Szűrő átnevezése](media/power-bi-report-filter/power-bi-filter-rename.png)
 
+## <a name="filters-pane-search"></a>Keresés a Szűrők panelen
+
+A Szűrők panel keresési funkciójával cím alapján kereshet a szűrőkártyák között. Ez a funkció akkor hasznos, ha több különböző szűrőkártyával rendelkezik a Szűrők panelen, és meg szeretne keresni néhányat.
+
+![Szűrők keresése](media/power-bi-report-filter/power-bi-filter-search.png)
+
+A keresőmezőt a Szűrők panel többi eleméhez hasonlóan formázhatja is.
+
+![A keresőmező formázása](media/power-bi-report-filter/power-bi-filter-format-search.png)
+
+Habár a Szűrők panel keresési funkciója alapértelmezés szerint be lesz kapcsolva, igény szerint ki is kapcsolhatja a Beállítások párbeszédpanel Jelentés beállításai területének **Keresés engedélyezése a Szűrők panelen** lehetőségével.
+
+![Keresés be- és kikapcsolása](media/power-bi-report-filter/power-bi-enable-search-filter.png)
+
 ## <a name="restrict-changes-to-filter-type"></a>Szűrőtípus módosításának korlátozása
 
 A jelentés beállításainak Szűrési felület szakaszában beállíthatja, hogy a felhasználók megváltoztathatják-e a szűrő típusát.
 
-![Szűrőtípus módosításának tiltása](media/power-bi-report-filter/power-bi-filter-restrict-change.png)
+![Szűrőtípus módosításának tiltása](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
 
 ## <a name="next-steps"></a>Következő lépések
 

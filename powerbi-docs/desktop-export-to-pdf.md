@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 28116a4e2b89fe5f8fe719f8d6c0d9eca28310eb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6e468ac429c26f3b1880501914816ac60f8b7858
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73867696"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378731"
 ---
 # <a name="export-reports-to-pdf-from-power-bi-desktop"></a>Jelentések exportálása PDF-be a Power BI Desktopból
 A **Power BI Desktopban** vagy a Power BI szolgáltatásban a jelentések PDF-fájlba exportálhatók, a PDF-formátumú jelentések pedig egyszerűen megoszthatók és kinyomtathatók.
@@ -34,7 +34,7 @@ Amikor az exportálás befejeződik, a PDF a számítógépen lévő alapértelm
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 Az **Exportálás PDF-be** funkció használatára vonatkozik még néhány további szempont:
 
-* A funkció exportálja az egyéni vizualizációkat, de *nem* exportálja a jelentésben használt háttérképeket.
+* A funkció exportálja a Power BI-vizualizációkat, de *nem* exportálja a jelentésben használt háttérképeket.
 
 Mivel a háttérképek nem lesznek a PDF-be exportálva, külön figyelmet kell fordítani a sötét hátterű jelentésekre. Ha a jelentés szövege világos színű vagy fehér, hogy kiemelkedjen a sötét háttérképen, akkor nehezen olvasható vagy olvashatatlan lesz az exportált PDF-ben, mivel a háttérkép nem lesz a jelentés többi részével együtt exportálva. 
 

@@ -1,38 +1,40 @@
 ---
-title: Részletezés használata a Power BI Desktopban
-description: Megtudhatja, hogy a részletezés segítségével hogyan elemezheti részletesen az adatokat új jelentésoldalon a Power BI Desktopban
+title: Részletezés beállítása Power BI-jelentésekben
+description: Megtudhatja, hogy a részletezés segítségével hogyan elemezheti részletesen az adatokat új jelentésoldalon a Power BI-jelentésekben
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/05/2020
+ms.date: 03/12/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 020b7e0a5fd0c3372e3a83d9973a404978e56b7d
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 5a494341ff6ee9c5fe4b2c2119749f58f2fd540d
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78401242"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79201457"
 ---
-# <a name="use-drillthrough-in-power-bi-desktop"></a>Részletezés használata a Power BI Desktopban
-A Power BI Desktop *részletezés* funkciójával olyan oldalt hozhat létre a jelentésben, amely egy adott entitásra – például szállítóra, ügyfélre vagy gyártóra összpontosít. A részletezés funkció használatához válassza ki azt úgy, hogy a jobb gombbal rákattint egy másik jelentésoldalon lévő adatpontra, így áthatolhat az összpontosított oldalra az ebben a környezetben szűrt részletek beszerzéséhez.
+# <a name="set-up-drill-through-in-power-bi-reports"></a>Részletezés beállítása Power BI-jelentésekben
+A Power BI-jelentések *részletezés* funkciójával olyan oldalt hozhat létre a jelentésben, amely egy adott entitásra – például szállítóra, ügyfélre vagy gyártóra összpontosít. Amikor a jelentés olvasói a részletezés funkciót használják, a jobb gombbal rákattintanak egy másik jelentésoldalon lévő adatpontra, így áthatolhatnak az összpontosított oldalra az ebben a környezetben szűrt részletek beszerzéséhez. Emellett [létrehozhat egy részletezési gombot](desktop-drill-through-buttons.md), amely megjeleníti a részleteket, ha rákattintanak.
 
-![A részletezés használata](media/desktop-drillthrough/drillthrough_01.png)
+A jelentések részletezését a Power BI Desktopban és a Power BI szolgáltatásban állíthatja be.
 
-## <a name="using-drillthrough"></a>A részletezés használata
-1. A részletezés használatához hozzon létre egy jelentésoldalt, amely arról az entitástípusról tartalmaz vizualizációkat, amelyhez a részletezést készíti. 
+![A részletezés használata](media/desktop-drillthrough/power-bi-drill-through-right-click.png)
 
-    Tegyük fel például, hogy a gyártókra vonatkozó részletezést szeretne készíteni. Ekkor létrehozhat egy részletezési oldalt, amely megjeleníti többek között az összes értékesítést, az összes kiszállított egységet, a kategória szerinti értékesítéseket, a régió szerinti értékesítéseket stb. Ha részletezést jelenít meg ehhez az oldalhoz, a vizualizációk a kiválasztott gyártóra fognak vonatkozni.
+## <a name="set-up-the-drill-through-destination-page"></a>A részletezési céloldal beállítása
+1. A részletezés beállításához hozzon létre egy jelentésoldalt, amely arról az entitástípusról tartalmaz vizualizációkat, amelyhez a részletezést készíti. 
+
+    Tegyük fel például, hogy a gyártókra vonatkozó részletezést szeretne készíteni. Ekkor létrehozhat egy részletezési oldalt, amely megjeleníti többek között az összes értékesítést, az összes kiszállított egységet, a kategória szerinti értékesítéseket, a régió szerinti értékesítéseket stb. Ha részletezést jelenít meg ehhez az oldalhoz, a vizualizációk a kiválasztott gyártóra vonatkoznak.
 
 2. Ezután a részletezési oldalon a **Vizualizációk** panel **Mezők** szakaszában húzza a **Részletezési szűrők** szakaszra azt a mezőt, amelyhez engedélyezni szeretné a részletezést.
 
-    ![Részletezés szakasz](media/desktop-drillthrough/drillthrough_02.png)
+    ![Részletezési panel](media/desktop-drillthrough/drillthrough_02.png)
 
-    Amikor egy mezőt a **Részletezési szűrők** szakaszhoz ad, a Power BI Desktop automatikusan létrehoz egy *Vissza* gomb vizualizációt. Ez a vizualizáció a megjelenített jelentésekben gombként jelenik meg. Azok a felhasználók, akik a Power BI szolgáltatásban használják a jelentést, ezzel a gombbal térhetnek vissza arra a jelentésoldalra, ahonnan érkeztek.
+    Amikor egy mezőt a **Részletezési szűrők** szakaszhoz ad, a Power BI automatikusan létrehoz egy *Vissza* gomb vizualizációt. Ez a vizualizáció a megjelenített jelentésekben gombként jelenik meg. Azok a felhasználók, akik a Power BI szolgáltatásban használják a jelentést, ezzel a gombbal térhetnek vissza arra a jelentésoldalra, ahonnan érkeztek.
 
-    ![Részletezés képe](media/desktop-drillthrough/drillthrough_03.png)
+    ![Részletezési kép](media/desktop-drillthrough/drillthrough_03.png)
 
 > [!IMPORTANT]
 > Konfigurálhatja és végrehajthatja az azonos jelentésben lévő oldalak részletezését, viszont nem végezhet részletezést egy másik jelentés oldalain.  
@@ -53,18 +55,17 @@ Ha egy saját képet szeretne használni a Vissza gombhoz, kövesse az alábbi l
     
      A felhasználók mostantól a jobb gombbal kattinthatnak a jelentésben lévő adatpontra az oldal részletezését támogató helyi menühöz. 
 
-    ![Részletezés menü](media/desktop-drillthrough/drillthrough_04.png)
+    ![Részletezési menü](media/desktop-drillthrough/drillthrough_04.png)
 
     Amikor a jelentés felhasználói a részletezést választják, a rendszer szűri az oldalt, és megjeleníti a jobb gombbal kiválasztott adatpontra vonatkozó információkat. Tegyük fel például, hogy a felhasználó a Contoso nevű gyártóra vonatkozó adatpontra kattintott a jobb gombbal, és a részletezést választotta. A megnyíló részletezés oldal a Contoso cégre szűr.
 
-## <a name="pass-all-filters-in-drillthrough"></a>Összes szűrő átvétele a részletezésben
+## <a name="pass-all-filters-in-drill-through"></a>Összes szűrő átvétele a részletezésben
 
 Az összes alkalmazott szűrőt átadhatja a részletezési ablakban. Megteheti például, hogy csak egy adott termékkategóriát jelöl ki, és a vizualizációkat erre a kategóriára szűri, majd ezután választja a részletezést. Ilyen esetben elképzelhető, hogy szeretné megtekinteni, hogyan nézne ki a részletezés a szűrők alkalmazásával.
 
-Az összes alkalmazott szűrő megtartásához állítsa a **Vizualizációk** panel **Részletezés** szakaszában az **Az összes szűrő megőrzése** kapcsolót **Be** állásba. 
+Az összes alkalmazott szűrő megtartásához állítsa a **Vizualizációk** panel **Részletezés** szakaszában **Az összes szűrő megőrzése** kapcsolót **Be** állásba. 
 
 ![Minden szűrő megtartása](media/desktop-drillthrough/drillthrough_06.png)
-
 
 Ha ezt követően részletez egy vizualizációt, láthatja, hogy mely szűrők lettek alkalmazva a forrásvizualizációra alkalmazott ideiglenes szűrők révén. A **Vizualizációk** panel **Részletezés** szakaszában dőlt formázású átmeneti szűrők jelennek meg. 
 
@@ -72,7 +73,7 @@ Ha ezt követően részletez egy vizualizációt, láthatja, hogy mely szűrők 
 
 Ugyanezt elvégezhetné elemleíráslapokkal is, de ez szokatlan eredményhez vezetne, mert az elemleírás látszólag nem működne megfelelően. Éppen ezért nem javasolt az eszköztippek használata.
 
-## <a name="add-a-measure-to-drillthrough"></a>Mérték hozzáadása részletezéshez
+## <a name="add-a-measure-to-drill-through"></a>Mérték hozzáadása részletezéshez
 
 Nem csupán az összes szűrőt adhatja át a részletezési ablaknak, de mértéket (vagy összegzett numerikus oszlopot) is hozzáadhat a részletezési területhez. A részletező menü alkalmazásához húzza át azt a **Részletezés** kártyára. 
 
@@ -86,6 +87,6 @@ Ezek a tudnivalók vonatkoztak a részletezés jelentésekben való használatá
 
 Az alábbi cikkeket is érdekesnek találhatja:
 
-* [Jelentésközi részletezés a Power BI Desktopban](desktop-cross-report-drill-through.md)
+* [Jelentésközi részletezés a Power BI-jelentésekben](desktop-cross-report-drill-through.md)
 * [Szeletelők használata a Power BI Desktopban](visuals/power-bi-visualization-slicers.md)
 

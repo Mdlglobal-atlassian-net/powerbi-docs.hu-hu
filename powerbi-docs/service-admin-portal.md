@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/25/2019
+ms.date: 03/16/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: d56e329d5331403c0ed0ce4da28bf73aea65d9a6
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 97aad9a72cba6fe195208902e2a3d986b3225a3d
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427875"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488706"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -277,6 +277,14 @@ A vállalati felhasználók e-mail-feliratkozásokat hozhatnak létre és haszn�
 
 ![E-mail-feliratkozások engedélyezése](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
 
+### <a name="featured-content"></a>Kiemelt tartalom
+
+A szervezet néhány vagy minden jelentéskészítőjének engedélyezheti, hogy kiemeljék tartalmukat a Power BI kezdőlapjának Kiemelt szakaszában. Az új felhasználók a Power BI kezdőlapjának tetején láthatják a kiemelt tartalmakat. A kiemelt tartalom egyre lejjebb kerül a kezdőlapon, ahogy a felhasználók **kedvenceket**, **gyakori elemeket**, és **legutóbbi elemeket** adnak hozzá. 
+
+Azt javasoljuk, hogy elsőként csak néhány reklámozót alkalmazzon. Ha a teljes szervezet számára lehetővé teszi, hogy tartalmat emeljen ki a kezdőlapon, nehéz lesz nyomon követni az összes kiemelt tartalmat. 
+
+A kiemelt tartalom engedélyezése után a Felügyeleti portálon is kezelheti. További információt a tartomány kiemelt tartalmairól a cikk [Kiemelt tartalom kezelése](#manage-featured-content) című szakaszában találhat.
+
 ## <a name="content-pack-and-app-settings"></a>Tartalomcsomag és alkalmazás beállításai
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Tartalomcsomagok és alkalmazások közzététele a teljes szervezet számára
@@ -312,17 +320,16 @@ A vállalati felhasználók használhatják az Esri által biztosított ArcGIS M
 
 A vállalati felhasználók használhatják az Azure Searchre épülő külső keresési funkciókat.
 
-## <a name="custom-visuals-settings"></a>Egyéni vizualizációk beállításai
+## <a name="power-bi-visuals-settings"></a>Power BI-vizualizációk beállításai
 
-### <a name="add-and-use-custom-visuals"></a>Egyéni vizualizációk hozzáadása és használata
+### <a name="add-and-use-power-bi-visuals"></a>Power BI-vizualizációk hozzáadása és használata
 
-A munkahelyi felhasználók egyéni vizualizációkat használhatnak és oszthatnak meg. [További információ](developer/power-bi-custom-visuals.md)
+A munkahelyi felhasználók Power BI-vizualizációkat használhatnak és oszthatnak meg. [További információ](developer/visuals/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > Ez a beállítás az egész munkahelyre vonatkozhat, de korlátozható meghatározott csoportokra.
 
-
-A Power BI Desktop (a 2019. márciusi kiadással kezdődően) támogatja a **Csoportházirendek** használatát az egyéni vizualizációk letiltásához a cég összes üzembe helyezett számítógépén.
+A Power BI Desktop (a 2019. márciusi kiadással kezdődően) támogatja a **Csoportházirendek** használatát a Power BI-vizualizációk letiltásához a cég összes üzembe helyezett számítógépén.
 
 <table>
 <tr><th>Attribútum</th><th>Érték</th>
@@ -335,16 +342,16 @@ A Power BI Desktop (a 2019. márciusi kiadással kezdődően) támogatja a **Cso
 </tr>
 </table>
 
-Az 1 (decimális) érték engedélyezi az egyéni vizualizációk használatát a Power BI-ban (ez az alapértelmezett beállítás).
+Az 1 (decimális) érték engedélyezi a Power BI-vizualizációk használatát a Power BI-ban (ez az alapértelmezett beállítás).
 
-A 0 (decimális) érték letiltja az egyéni vizualizációk használatát a Power BI-ban.
+A 0 (decimális) érték letiltja a Power BI-vizualizációk használatát a Power BI-ban.
 
 ### <a name="allow-only-certified-visuals"></a>Csak hitelesített vizualizációk engedélyezése
 
-A szervezet azon felhasználói, akik engedélyt kaptak egyéni vizualizációk hozzáadására és használatára (őket „Egyéni vizualizációk hozzáadása és használata” beállítás jelzi), csak a [hitelesített egyéni vizualizációkat](https://go.microsoft.com/fwlink/?linkid=2002010) használhatják (a nem hitelesített vizualizációk le lesznek tiltva, használatuk esetén hibaüzenet jelenik meg). 
+A szervezet azon felhasználói, akik engedélyt kaptak Power BI-vizualizációk hozzáadására és használatára (őket „Power BI-vizualizációk hozzáadása és használata” beállítás jelzi), csak a [hitelesített Power BI-vizualizációkat](https://go.microsoft.com/fwlink/?linkid=2002010) használhatják (a nem hitelesített vizualizációk le lesznek tiltva, használatuk esetén hibaüzenet jelenik meg). 
 
 
-A Power BI Desktop (a 2019. márciusi kiadással kezdődően) támogatja a **Csoportházirendek** használatát a tanúsítvány nélküli egyéni vizualizációk letiltásához a cég összes üzembe helyezett számítógépén.
+A Power BI Desktop (a 2019. márciusi kiadással kezdődően) támogatja a **Csoportházirendek** használatát a tanúsítvány nélküli Power BI-vizualizációk letiltásához a cég összes üzembe helyezett számítógépén.
 
 <table>
 <tr><th>Attribútum</th><th>Érték</th>
@@ -357,9 +364,9 @@ A Power BI Desktop (a 2019. márciusi kiadással kezdődően) támogatja a **Cso
 </tr>
 </table>
 
-Az 1 (decimális) érték engedélyezi a tanúsítvány nélküli egyéni vizualizációk használatát a Power BI-ban (ez az alapértelmezett beállítás).
+Az 1 (decimális) érték engedélyezi a tanúsítvány nélküli Power BI-vizualizációk használatát a Power BI-ban (ez az alapértelmezett beállítás).
 
-A 0 (decimális) érték letiltja a tanúsítvány nélküli egyéni vizualizációk használatát a Power BI-ban (ez a beállítás csak a [tanúsítvánnyal rendelkező egyéni vizualizációkat engedélyezi](https://go.microsoft.com/fwlink/?linkid=2002010)).
+A 0 (decimális) érték letiltja a tanúsítvány nélküli Power BI-vizualizációk használatát a Power BI-ban (ez a beállítás csak a [tanúsítvánnyal rendelkező Power BI-vizualizációkat engedélyezi](https://go.microsoft.com/fwlink/?linkid=2002010)).
 
 ## <a name="r-visuals-settings"></a>R-vizualizációk beállításai
 
@@ -404,11 +411,11 @@ A munkahelyi felhasználók a biztonsági szint besorolását jelző címkékkel
 
 ### <a name="embed-content-in-apps"></a>Tartalom beágyazása alkalmazásokba
 
-A munkahelyi felhasználók beágyazhatnak Power BI-irányítópultokat és -jelentéseket szolgáltatott szoftveres (SaaS-) alkalmazásokba. A beállítás kikapcsolásával megakadályozhatja, hogy a felhasználók a REST API-k használatával Power BI-tartalmakat ágyazzanak be saját alkalmazásukba. [További információ](developer/embedding.md)
+A munkahelyi felhasználók beágyazhatnak Power BI-irányítópultokat és -jelentéseket szolgáltatott szoftveres (SaaS-) alkalmazásokba. A beállítás kikapcsolásával megakadályozhatja, hogy a felhasználók a REST API-k használatával Power BI-tartalmakat ágyazzanak be saját alkalmazásukba. [További információ](developer/embedded/embedding.md)
 
 ### <a name="allow-service-principals-to-use-power-bi-apis"></a>A Power BI API-k használatának engedélyezése szolgáltatásneveknek
 
-Az Azure Active Directoryban (Azure AD-ben) regisztrált webalkalmazások hozzárendelt szolgáltatásnevet használnak a Power BI API-k elérésére anélkül, hogy a felhasználónak be kellene jelentkeznie. Egy alkalmazás számára akkor lehet engedélyezni a szolgáltatásnévvel történő hitelesítést, ha a szolgáltatásneve szerepel egy engedélyezett biztonsági csoportban. [További információ](developer/embed-service-principal.md)
+Az Azure Active Directoryban (Azure AD-ben) regisztrált webalkalmazások hozzárendelt szolgáltatásnevet használnak a Power BI API-k elérésére anélkül, hogy a felhasználónak be kellene jelentkeznie. Egy alkalmazás számára akkor lehet engedélyezni a szolgáltatásnévvel történő hitelesítést, ha a szolgáltatásneve szerepel egy engedélyezett biztonsági csoportban. [További információ](developer/embedded/embed-service-principal.md)
 
 > [!NOTE]
 > A szolgáltatásnevek a biztonsági csoportjukból öröklik az engedélyeket a Power BI összes bérlői beállításához. Az engedélyek korlátozásához hozzon létre egy külön biztonsági csoportot a szolgáltatásneveknek, majd adja hozzá az Egyes biztonsági csoportok kivételével listához a vonatkozó, engedélyezett Power BI-beállítások esetében.
@@ -456,9 +463,9 @@ A **Power BI Premium** lapon a munkahely által megvásárolt bármely Power BI 
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
-A **Power BI Embedded** lapon megtekintheti az ügyfél számára vásárolt Power BI Embedded (A termékváltozat) kapacitásait. Mivel az A termékváltozatot csak az Azure-tól szerezheti be, a [beágyazott kapacitások Azure-ban való kezelésére](developer/azure-pbie-create-capacity.md)**az Azure Portalt** kell használnia.
+A **Power BI Embedded** lapon megtekintheti az ügyfél számára vásárolt Power BI Embedded (A termékváltozat) kapacitásait. Mivel az A termékváltozatot csak az Azure-tól szerezheti be, a [beágyazott kapacitások Azure-ban való kezelésére](developer/embedded/azure-pbie-create-capacity.md)**az Azure Portalt** kell használnia.
 
-A Power BI Embedded (A termékváltozat) beállításainak kezeléséről további információért lásd a [Mi a Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md) szakaszt.
+A Power BI Embedded (A termékváltozat) beállításainak kezeléséről további információért lásd a [Mi a Power BI Embedded](developer/embedded/azure-pbie-what-is-power-bi-embedded.md) szakaszt.
 
 ## <a name="embed-codes"></a>Beágyazási kódok
 
@@ -466,14 +473,14 @@ A rendszergazdák megnézhetik a bérlő számára generált beágyazási kódok
 
 ![Beágyazási kódok a Power BI felügyeleti portálon](media/service-admin-portal/embed-codes.png)
 
- ## <a name="organizational-visuals">Szervezeti vizualizációk</a> 
+ ## <a name=""></a><a name="organizational-visuals">Szervezeti vizualizációk</a> 
 
-A **Szervezeti vizualizációk** lapon egyéni vizualizációkat helyezhet üzembe és kezelhet a cégen belül. A szervezeti vizualizációk segítségével egyszerűen helyezhet üzembe szellemi tulajdont képező vizualizációkat, a szerzők pedig láthatják a jelentéseket és importálhatják a saját jelentéseikbe a Power BI Desktopból. [További információ](developer/power-bi-custom-visuals-organization.md)
+A **Szervezeti vizualizációk** lapon Power BI-vizualizációkat helyezhet üzembe és kezelhet a cégen belül. A szervezeti vizualizációk segítségével egyszerűen helyezhet üzembe szellemi tulajdont képező vizualizációkat, a szerzők pedig láthatják a jelentéseket és importálhatják a saját jelentéseikbe a Power BI Desktopból. [További információ](developer/visuals/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > Az egyéni vizualizációk biztonsági vagy adatvédelmi kockázatot jelentő kódokat tartalmazhatnak, ezért az adattárban való üzembe helyezés előtt ellenőrizze, hogy megbízható-e a vizualizáció szerzője és forrása.
 
-A következő képen látható az összes olyan egyéni vizualizáció, amely jelenleg megtalálható a szervezet adattárában.
+A következő képen látható az összes olyan Power BI-vizualizáció, amely jelenleg megtalálható a szervezet adattárában.
 
 ![Szervezeti rendszergazdai visualizáció](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
 
@@ -483,11 +490,11 @@ A következő képen látható az összes olyan egyéni vizualizáció, amely je
 
 1. A jobb oldali ablaktáblán válassza ki az **Egyéni vizualizáció hozzáadása** lehetőséget.
 
-    ![Egyéni vizualizáció űrlap](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
+    ![Power BI-vizualizációk – űrlap](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
 
 1. Töltse ki az **Egyéni vizualizáció hozzáadása** űrlapot:
 
-    * **Válasszon egy .pbiviz-fájlt** (kötelező): Válasszon ki egy feltöltendő egyéni vizualizációs fájlt. Csak a verziószámmal ellátott API-s vizualizációk támogatottak (itt elolvashatja, ez mit jelent).
+    * **Válasszon egy .pbiviz-fájlt** (kötelező): Válasszon ki egy feltöltendő egyéni vizualizációs fájlt. Csak a verziószámmal ellátott API-s Power BI-vizualizációk támogatottak (itt elolvashatja, ez mit jelent).
 
     Az egyéni vizualizációk feltöltése előtt át kell tekintenie a vizualizációt biztonsági és adatvédelmi szempontból, hogy biztosan megfeleljen a szervezet igényeinek.
 
@@ -524,9 +531,9 @@ A vizualizáció munkahelyi áruházból való feltöltéséhez kattintson a fog
 
 Győződjön meg róla, hogy a vizuális azonosító ugyanaz maradt. Az új fájl az előző fájlt helyére kerül a jelentésekben az egész vállalatnál. Ha azonban a vizualizáció új verziója megbontja az előző verziójának valamely használati vagy adatstruktúráját, akkor ne cserélje le az előző verziót. Ehelyett hozzon létre egy új listázást a vizualizáció új verziójához. Például adjon hozzá egy új verziószámot (X.X verzió) az új listázott vizualizáció címéhez. Ezáltal nyilvánvalóvá válik, hogy ez ugyanaz a vizualizáció, de frissített verziószámmal, így a meglévő jelentések működése nem hibásodik meg. Most is győződjön meg róla, hogy a vizuális azonosító ugyanaz maradt. Így amikor a felhasználók legközelebb belépnek a szervezeti adattárba a Power BI Desktopból, importálhatják az új verziót, amely kérni fogja őket, hogy cseréljék le a jelentésben található jelenlegi verziót.
 
-További információt [az egyéni vállalati vizualizációkkal kapcsolatos gyakori kérdések](/power-bi/developer/power-bi-custom-visuals-faq#organizational-power-bi-visuals) között talál.
+További információt [a vállalati Power BI-vizualizációkkal kapcsolatos gyakori kérdések](developer/visuals/power-bi-custom-visuals-faq.md#organizational-power-bi-visuals) között találhat
 
-## <a name="dataflowStorage">Adatfolyam-tárolás (előzetes verzió)</a>
+## <a name=""></a><a name="dataflowStorage">Adatfolyam-tárolás (előzetes verzió)</a>
 
 A Power BI-jal használt adatok alapértelmezés szerint a Power BI által biztosított belső tárolóban helyezkednek el. Az adatfolyamok és az Azure Data Lake Storage Gen2 (ADLS Gen2) integrációjának köszönhetően adatfolyamait vállalata Azure Data Lake Storage Gen2-fiókjában is tárolhatja. További információt az [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md) című cikkben talál.
 
@@ -542,7 +549,7 @@ A **Munkaterületek** lapon megtekintheti az egyes munkaterületek *állapotát*
 |---------|---------|
 | Aktív | Normál munkaterület. Nem árul el semmit a felhasználásról vagy a tartalomról, csak annyit, hogy maga a munkaterület „normális”. |
 | Árva | Rendszergazda-jogú felhasználó nélküli munkaterület. |
-| Törölve | Törölt munkaterület. Elég metaadatot tartunk meg ahhoz, hogy a munkaterületet szükség esetén helyreállítsa. |
+| Törölve | Törölt munkaterület. 90 napig elég metaadatot tartunk meg ahhoz, hogy a munkaterületet szükség esetén helyreállítsa. |
 | Eltávolítás folyamatban | A munkaterület törlése folyamatban van, de még nem szűnt meg. A felhasználók törölhetik saját munkaterületeiket, először Eltávolítás folyamatban, majd végül Törölve állapotba léptetve azokat. |
 
 ## <a name="custom-branding"></a>Egyéni védjegyzés
@@ -561,6 +568,17 @@ Rendszergazdaként a teljes szervezet számára testreszabhatja a Power BI kiné
 További információ: [Céges egyéni védjegyzés](https://aka.ms/orgBranding).
 
 ![Munkaterületek listája](media/service-admin-portal/workspaces-list.png)
+
+## <a name="manage-featured-content"></a>A kiemelt tartalom kezelése
+
+Bérlői rendszergazdaként kezelheti az összes olyan jelentést, irányítópultot és alkalmazást, amelyek a Power BI kezdőlapjának Kiemelt szakaszában jelennek meg a szervezetben.
+
+- A Felügyeleti portálon válassza a **Kiemelt tartalom** lehetőséget.
+
+Itt áttekintheti, hogy ki emelte ki a tartalmat, mikor, valamint megtekintheti a vonatkozó metaadatokat. Ha valami gyanúsnak tűnik, vagy ha törölni szeretné a Kiemelt szakaszt, igény szerint törölheti a kiemelt tartalmat.
+
+További információt a kiemelt tartalmak használatáról a cikk [Kiemelt tartalom](#featured-content) című szakaszában találhat.
+
 ## <a name="next-steps"></a>Következő lépések
 
 [A Power BI felügyelete a munkahelyen](service-admin-administering-power-bi-in-your-organization.md)  

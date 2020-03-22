@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 99fd17e8491613affbfe78e7cd9a2f268f588975
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.openlocfilehash: 0876d5ecd1d58c909242bbc05be213780d3aefdc
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78237983"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488775"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Webes közzététel a Power BI-ból
 
@@ -124,9 +124,9 @@ A **webes közzétételi** beágyazási kód létrehozása és megosztása után
 
 Az adatfrissítések automatikusan megjelennek a beágyazott jelentésben vagy vizualizációban. A frissített adatok körülbelül egy óra elteltével lesznek láthatók a beágyazási kódokon keresztül. Az automatikus frissítés letiltásához válassza a **ne frissüljön** lehetőséget a jelentés által használt adathalmaz ütemezésénél.  
 
-## <a name="custom-visuals"></a>Egyéni vizualizációk
+## <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
-A **Webes közzététel** az egyéni vizualizációkat is támogatja. A **Webes közzététel** használatakor azoknak a felhasználóknak, akik megosztják az Ön által közzétett vizualizációt, nem kell engedélyezniük az egyéni vizualizációkat a jelentés megtekintéséhez.
+A **Webes közzététel** a Power BI-vizualizációkat is támogatja. A **Webes közzététel** használatakor azoknak a felhasználóknak, akik megosztják az Ön által közzétett vizualizációt, nem kell engedélyezniük a Power BI-vizualizációkat a jelentés megtekintéséhez.
 
 ## <a name="limitations"></a>Korlátozások
 
@@ -144,7 +144,7 @@ A Power BI szolgáltatás adatforrásainak és jelentéseinek túlnyomó többs�
 - Egyszeri bejelentkezési adatlekérdezési modellek.
 - Gondoskodjon a bizalmas vagy saját információk biztonságáról.
 - [Megosztott és minősített adathalmazok](service-datasets-share.md).
-- A **Beágyazás** lehetőség automatikus hitelesítés funkciója nem működik a Power BI JavaScript API-jával. A Power BI JavaScript API-hoz a [felhasználó az adatok tulajdonosa](developer/embed-sample-for-your-organization.md) módszert kell használnia.
+- A **Beágyazás** lehetőség automatikus hitelesítés funkciója nem működik a Power BI JavaScript API-jával. A Power BI JavaScript API-hoz a [felhasználó az adatok tulajdonosa](developer/embedded/embed-sample-for-your-organization.md) módszert kell használnia.
 
 ## <a name="tenant-setting"></a>Bérlőbeállítások
 

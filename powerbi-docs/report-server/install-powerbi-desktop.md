@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/13/2020
-ms.openlocfilehash: ee789274f6581423ed7adebc5b662a732dbeaa7a
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 74e2c60bfe0d6d494fc1175fb001b4b4b7eb24fa
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77426656"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381123"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
 
@@ -70,7 +70,7 @@ A Power BI jelentéskészítő kiszolgálóra optimalizált Power BI Desktop ese
 
 ### <a name="report-visuals-in-a-browser"></a>Jelentésvizualizációk böngészőben
 
-A Power BI jelentéskészítő kiszolgálón tárolt jelentések szinte minden vizualizációt, köztük egyéni vizualizációkat is támogatnak. A Power BI jelentéskészítő kiszolgálón tárolt jelentések nem támogatják az alábbiakat:
+A Power BI jelentéskészítő kiszolgálón tárolt jelentések szinte minden vizualizációt, köztük Power BI-vizualizációkat is támogatnak. A Power BI jelentéskészítő kiszolgálón tárolt jelentések nem támogatják az alábbiakat:
 
 * R vizualizációk
 * ArcGIS-térképek
@@ -89,7 +89,7 @@ A Power BI jelentéskészítő kiszolgálón tárolt jelentések nem támogatjá
 
 * R vizualizációk
 * ArcGIS-térképek
-* Egyéni vizualizációk
+* Power BI-vizualizációk
 * Útkövetési eszközök
 * Földrajzi hely szerinti szűrés vagy vonalkódok
 

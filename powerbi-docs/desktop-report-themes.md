@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 03/12/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5a4ed3ffc833b2405a3c231b80047c71b40a64cc
-ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
+ms.openlocfilehash: 2316fcf5d0b5c0a4c63e4786b80b8c7e20c643e3
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "76753697"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378961"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Jelentéstémák használata a Power BI Desktopban
 
@@ -195,7 +195,7 @@ Vagy tegyük fel, hogy manuálisan állítja be egy adatpont színét a **Téma 
 
 ![Visszaállítás alapértelmezettre](media/desktop-report-themes/report-themes_9.png)
 
-Számos egyéni vizualizáció nem alkalmazza a jelentéstémákat.
+Számos Power BI-vizualizáció nem alkalmazza a jelentéstémákat.
 
 ## <a name="custom-report-theme-files-you-can-use-right-now"></a>Azonnal használható egyéni jelentéstémák
 
@@ -312,10 +312,10 @@ A formázható hat színosztály az alábbi táblázatban látható.  A **színo
 |---------|---------|
 | **firstLevelElements** <br> **foreground**    (elavult) | Feliratok háttérszíne (ha az adatpontok kívül vannak) <br> Trendvonal színe <br>  Szövegdoboz alapértelmezett színe <br> Táblázat- és mátrix-értékek és összegek betűszínek Adatsávok tengely színe <br> Kártya-adatfeliratok <br> Kijelző képfelirat értékének színe <br> KPI cél színe <br>  KPI szöveg színe <br> Szeletelő elem színe (Fókusz módban)  <br> Szeletelő legördülő elem betűszíne <br> Szeletelő numerikus bevitel betűszíne <br> Szeletelő fejléc betűszíne <br> Pontdiagram arányvonal színe <br> Vonaldiagram előrejelzés-vonal színe <br> Térképvezető vonal színe <br> Szűrő ablaktábla és kártya szövegszíne|
 | **secondLevelElements** <br> **foregroundNeutralSecondary** (elavult) | „világos” [másodlagos szövegosztályok](#setting-formatted-text-defaults) <br> Címkék színe  <br> Jelmagyarázat címke színe <br> Tengely címke színe <br> Táblázat és mátrix fejlécének betűszíne <br> Kijelző cél és célvezető vonal színe <br>  KPI trend tengelyének színe <br> Szeletelő csúszka színe <br> Szeletelő elem betűszíne <br> Szeletelő körvonalának színe <br> Vonaldiagram színe rámutatáskor <br> Többsoros kártya címének színe <br> Menüszalag-diagram vonás színe <br> Alakzat leképezésének szegélyszíne <br> Gomb szövegének betűszíne <br> Gomb ikon vonalszíne <br> Gomb körvonalának színe |
-| **thirdLevelElements** <br >**backgroundLight** (elavult) | Tengely rácsvonalának színe <br> Táblázat és mátrix rács színe <br> Szeletelő fejléc háttérszíne (Fókusz módban)  <br> Többsoros kártya körvonalának színe  <br> Alakzatkitöltés színe <br> Kijelző ív háttérszíne <br> Alkalmazott szűrőkártya háttérszíne <br> |
-| **fourthLevelElements** <br> **foregroundNeutralTertiary** (elavult) | jelmagyarázat halvány színe <br> Kártya kategóriacímke színe <br> Többsoros kártya kategóriacímke színe <br> Többsoros kártya sávszíne <br> Tölcsérdiagram konverziós ráta vonás színe
+| **thirdLevelElements** <br >**backgroundLight** (elavult) | Tengely rácsvonalának színe <br> Táblázat és mátrix rács színe <br> Szeletelő fejléc háttérszíne (Fókusz módban)  <br> Többsoros kártya körvonalának színe  <br> Alakzatkitöltés színe <br> Kijelző ív háttérszíne <br> Alkalmazott szűrőkártya háttérszíne <br> Ha a háttér = FFFFFF: <br> Gomb kitöltőszíne letiltva <br> Gomb körvonalának színe letiltva <br> |
+| **fourthLevelElements** <br> **foregroundNeutralTertiary** (elavult) | jelmagyarázat halvány színe <br> Kártya kategóriacímke színe <br> Többsoros kártya kategóriacímke színe <br> Többsoros kártya sávszíne <br> Tölcsérdiagram konverziós ráta vonás színe <br> Gomb szövegének betűszíne letiltva <br> Gomb ikon vonalszíne letiltva <br> |
 | **háttér** | Címkék háttérszíne (ha az adatpontok belül vannak) <br> Szeletelő legördülő elemeinek háttérszíne  <br> Fánkdiagram vonás színe <br> Fatérkép vonás színe <br> Kombinált diagram háttérszíne <br> Gomb kitöltőszíne <br> Szűrő ablaktábla és elérhető szűrőkártya háttérszíne |
-| **secondaryBackground** <br> **backgroundNeutral** (elavult) | Táblázat- és mátrixrács körvonalának színe <br> Alakzat leképezésének alapértelmezett színe <br> Menüszalag-diagram kitöltőszíne (ha a sorozategyeztetés ki van kapcsolva) |
+| **secondaryBackground** <br> **backgroundNeutral** (elavult) | Táblázat- és mátrixrács körvonalának színe <br> Alakzat leképezésének alapértelmezett színe <br> Menüszalag-diagram kitöltőszíne (ha a sorozategyeztetés ki van kapcsolva) <br> Ha a háttér != FFFFFF: <br> Gomb kitöltőszíne letiltva <br> Gomb körvonalának színe letiltva <br> |
 | **tableAccent** | Felülbírálja a táblázat- és mátrixrács körvonalának színét, ha van |
 
 Ez a témaminta a színosztályokat állítja be:
@@ -423,7 +423,7 @@ A **visualName** és a **cardName** szakaszokban használjon egy adott vizualiz�
 
 A **visualName** és a **cardName** esetén használja az idézőjelek közé helyezett csillag karaktert, ha a beállítást minden olyan vizualizációra vagy kártyára alkalmazni szeretné, amely rendelkezik egy tulajdonsággal. Ha a vizualizáció és a kártya neve helyett is a csillagjelet használja, hatékonyan alkalmazhatja a beállítást az egész jelentésre, például ugyanazt a betűméretet vagy konkrét betűosztályt használhatja minden szöveghez, minden vizualizációban.
 
-Ez a minta néhány tulajdonság beállítását mutatja be a vizuális stílusokon keresztül.
+Ez a minta néhány tulajdonság beállítását mutatja be a vizuális stílusokon keresztül:
 
 ```json
 {

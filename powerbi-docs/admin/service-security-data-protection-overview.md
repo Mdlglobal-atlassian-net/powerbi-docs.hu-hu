@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 03/12/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: adfa99a3e973108d65a06361ed967bef2ce37eb3
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: fa373fca782a582ec2ac2ef60cb36322efaff327
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537209"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205274"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Adatvédelem a Power BI-ban (előzetes verzió)
 
@@ -105,9 +105,6 @@ Az alábbi listában a Power BI bizalmassági címkéinek néhány korlátozása
 * A [HYOK-védelem](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) a Power BI-ban alkalmazott címkék esetében nem támogatott.
 * A címkék Office-alkalmazásokban való megtekintésére és alkalmazására [licencelési követelmények](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels) vonatkoznak.
 * A bizalmassági címkék használata csak a globális (nyilvános) felhőben található bérlők esetében támogatott. A bizalmassági címkék használata a más felhőkben található bérlők esetében nem támogatott.
-* A bizalmassági címkék nem támogatottak [külső felhasználók (Azure Active Directory B2B vendégfelhasználók)](../service-admin-azure-ad-b2b.md) számára. Ez azt jelenti, hogy külső felhasználók nem tekinthetik meg a címkéket, és tiltott számukra az adatok Excel-, PDF- és PPTX-fájlokba exportálása. [Távolítsa el a címkét](../designer/service-security-apply-data-sensitivity-labels.md#removing-sensitivity-labels), hogy a külső felhasználók is exportálhassanak adatokat ezekbe a fájlformátumokba.
-
-
 
 ## <a name="next-steps"></a>Következő lépések
 

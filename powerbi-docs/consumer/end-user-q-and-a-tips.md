@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 83db194ab670f1726f9598193dc2d3addf2eae72
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: d97ff72c385edd4c59c6eb72ce1eb873656923c9
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114285"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376822"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tippek kérdések feltevéséhez a Power BI Q&A-ben
 
@@ -67,7 +67,7 @@ Az alábbi lista jelen idejű kifejezéseket tartalmaz, de a rendszer a legtöbb
 |  |  |
 |**Felső N**     |     (rendezés, rangsorolás): top, bottom, highest, lowest, first, last, next, earliest, newest, oldest, latest, most recent, next            |
 |        |         |
-|**Vizualizációtípusok**     |  A Power BI minden vizualizációs típust natívan támogat.  Ha a Megjelenítések ablaktábla egyik beállításáról van szó, szerepelhet a kérdésben.  A kivételt ez alól a szabály alól az [egyéni vizualizációk](../developer/power-bi-custom-visuals.md) képezik, amelyeket manuálisan vett fel a Megjelenítések ablaktáblán.  |
+|**Vizualizációtípusok**     |  A Power BI minden vizualizációs típust natívan támogat.  Ha a Megjelenítések ablaktábla egyik beállításáról van szó, szerepelhet a kérdésben.  A kivételt ez alól a szabály alól a [Power BI-vizualizációk](../developer/visuals/power-bi-custom-visuals.md) képezik, amelyeket manuálisan vett fel a Megjelenítések ablaktáblán.  |
 |  |  Angol nyelvű példa: show districts by month and sales total as bar chart               |
 |        |         |
 |**Kérdőszavak (kapcsolat, minősített)**  | when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what                |

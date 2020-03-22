@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2020
+ms.date: 03/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f13c8f34fbbe927ee6929a0b3e717248aedd63d0
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: fa0686171ee6f9e171e69d60f804d8e141530103
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427553"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207252"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 
@@ -90,7 +90,8 @@ Az **Adatbázis** kategória a következő adatkapcsolatokat biztosítja:
 * Snowflake
 * Essbase
 * AtScale-kockák
-* BI Connector Data Virtuality LDW (bétaverzió)
+* BI-összekötő 
+* Data Virtuality LDW (bétaverzió)
 * Denodo
 * Dremio
 * Exasol
@@ -124,9 +125,10 @@ A következő képen a **Lekérdezés** ablak látható, amelyen a **Power Platf
 
 Az **Azure** kategória a következő adatkapcsolatokat biztosítja:
 
-* Azure SQL-adatbázis
+* Azure SQL Database
 * Azure SQL Data Warehouse
 * Azure Analysis Services-adatbázis
+* Azure Database for PostgreSQL
 * Azure Blob-tároló
 * Azure Table Storage
 * Azure Cosmos DB
@@ -154,8 +156,8 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (helyszíni)
 * Microsoft Azure Consumption Insights (bétaverzió)
-* Azure DevOps (bétaverzió)
-* Azure DevOps Server (bétaverzió)
+* Azure DevOps (csak táblák)
+* Azure DevOps Server (csal táblák)
 * Salesforce-objektumok
 * Salesforce-jelentések
 * Google Analytics
@@ -164,7 +166,6 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * Data.World – Adathalmaz lekérése (bétaverzió)
 * GitHub (bétaverzió)
 * LinkedIn Sales Navigator (bétaverzió)
-* MailChimp (bétaverzió)
 * Marketo (bétaverzió)
 * Mixpanel (bétaverzió)
 * Planview Enterprise One - PRM (bétaverzió)
@@ -178,6 +179,7 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * tyGraph (bétaverzió)
 * Webtrends (bétaverzió)
 * Zendesk (bétaverzió)
+* Asana (bétaverzió)
 * Dynamics 365 Customer Insights (béta)
 * Emigo-adatforrás
 * Entersoft Business Suite (bétaverzió)
@@ -205,6 +207,7 @@ Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 * Microsoft Exchange
 * Hadoop-fájl (HDFS)
 * Spark
+* Hive LLAP (bétaverzió)
 * R-szkript
 * Python-szkript
 * ODBC
@@ -220,6 +223,7 @@ Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 * Siteimprove (bétaverzió)
 * SurveyMonkey (bétaverzió)
 * Tenforce (Smart)List (bétaverzió)
+* TIBCO (R) adatvirtualizálás (bétaverzió)
 * Vena (bétaverzió)
 * Workforce Dimensions (bétaverzió)
 * Zucchetti HR Infinity (bétaverzió)

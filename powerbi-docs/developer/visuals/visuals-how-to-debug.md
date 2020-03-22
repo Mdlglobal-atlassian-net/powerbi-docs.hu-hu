@@ -6,19 +6,19 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/14/2020
-ms.openlocfilehash: 4ce61fcd4f322abc0362956453d76ced9b78d887
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: c87d1af9033044a8b79d6fe00d566d9b46c499fc
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264243"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377900"
 ---
 # <a name="how-to-debug-power-bi-visuals"></a>Power BI-vizualizációk hibáinak elhárítása
 
 Ez az oldal a vizualizációk készítése során végzett hibakereséshez kínál néhány tippet. Tartalmazza az alapvető lépéseket, és bemutatja a szabványos előtér-alkalmazások és a Power BI-vizualizációk hibakeresése közötti különbségeket.
-A cikk elolvasása után képes lesz hibát keresni egyéni vizualizációkban töréspontok használatával, kivételeket naplózni, valamint kivételeket rögzíteni a Chrome-ban és az Edge-ben.
+A cikk elolvasása után képes lesz hibát keresni Power BI-vizualizációkban töréspontok használatával, kivételeket naplózni, valamint kivételeket rögzíteni a Chrome-ban és az Edge-ben.
 
 ## <a name="using-breakpoints"></a>Töréspontok használata
 
@@ -80,7 +80,7 @@ A böngészőt is beállíthatja úgy, hogy kivétel észlelése esetén szakít
 3. Kattintson a **futtatás megszakítása kivétel esetén** ikonra (hatszög alakú ikon szüneteltetési jellel).
 4. Válassza a **Futtatás megszakítása minden kivétel esetén**.
 
-![Adatszerepkör mezők](./media/how-to-debug-edge.png)
+![Adatszerepkör mezők](media/visuals-how-to-debug/how-to-debug-edge.png)
 
 ## <a name="chrome"></a>Chrome
 
@@ -89,8 +89,8 @@ A böngészőt is beállíthatja úgy, hogy kivétel észlelése esetén szakít
 3. Kattintson a **futtatás megszakítása kivétel esetén** ikonra (Stoptábla szüneteltetési jellel).
 4. Jelölje be a **Szüneteltetés kivétel észlelése esetén** jelölőnégyzetet.
 
-![Adatszerepkör mezők](./media/how-to-debug-chrome.png)
+![Adatszerepkör mezők](media/visuals-how-to-debug/how-to-debug-chrome.png)
 
 ## <a name="next-steps"></a>Következő lépések
-* [Power BI-vizualizációk hibáinak elhárítása](../power-bi-custom-visuals-troubleshoot.md)
-* További információt és válaszokat [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](../power-bi-custom-visuals-faq.md#organizational-power-bi-visuals) között talál.
+* [Power BI-vizualizációk hibáinak elhárítása](power-bi-custom-visuals-troubleshoot.md)
+* További információt és válaszokat [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals) között talál.

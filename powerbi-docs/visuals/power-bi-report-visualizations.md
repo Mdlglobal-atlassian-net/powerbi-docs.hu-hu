@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/28/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 02617e690c347448ecb1c313bc86969dabeb9984
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: bd8053123d8a5c2fa0c4362cb2a534021208ba36
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099097"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381468"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Vizualizációk Power BI-jelentésekben
 
@@ -27,7 +27,7 @@ A Power BI Vizualizációk paneljén számos különféle típusú vizualizáci�
 
 ![az egyes vizualizációs típusok ikonjait tartalmazó ablaktábla](media/power-bi-report-visualizations/power-bi-icons.png)
 
-Még nagyobb választékot talál a [Microsoft AppSource közösség webhelyén](https://appsource.microsoft.com), ahol a Microsoft és a közösség által kínált [egyéni vizualizációkat](../developer/visuals/custom-visual-develop-tutorial.md) kereshet meg és [tölthet le](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
+Még nagyobb választékot talál a [Microsoft AppSource közösség webhelyén](https://appsource.microsoft.com), ahol a Microsoft és a közösség által kínált [Power BI-vizualizációkat](../developer/visuals/custom-visual-develop-tutorial.md) kereshet meg és [tölthet le](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
@@ -40,7 +40,7 @@ A jelentések oldalain különböző [vizualizációkat hozhat létre](power-bi-
 
 ## <a name="upload-a-custom-visualization-and-use-it-in-power-bi"></a>Egyéni vizualizáció feltöltése és használata a Power BI-ban
 
-Önállóan létrehozott vagy a [Microsoft AppSource közösségi webhelyéről](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) letöltött egyéni vizualizációkat is használhat. Kreatív kedvében van? Merüljön el a forráskódban, és használja [fejlesztői eszközeinket](../developer/visuals/custom-visual-develop-tutorial.md) egy új típusú vizualizáció létrehozásához, amelyet aztán [a közösség többi tagjával is megoszthat](../developer/office-store.md). Az egyéni vizualizációk fejlesztéséről az [Egyéni Power BI-vizualizáció fejlesztése](../developer/visuals/custom-visual-develop-tutorial.md) című cikkben található további információ.
+Önállóan létrehozott vagy a [Microsoft AppSource közösségi webhelyéről](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) letöltött egyéni vizualizációkat is használhat. Kreatív kedvében van? Merüljön el a forráskódban, és használja [fejlesztői eszközeinket](../developer/visuals/custom-visual-develop-tutorial.md) egy új típusú vizualizáció létrehozásához, amelyet aztán [a közösség többi tagjával is megoszthat](../developer/visuals/office-store.md). Az egyéni vizualizációk fejlesztéséről az [Egyéni Power BI-vizualizáció fejlesztése](../developer/visuals/custom-visual-develop-tutorial.md) című cikkben található további információ.
 
 ## <a name="personalize-your-visualization-pane-preview"></a>A vizualizációs ablaktábla személyre szabása (előzetes verzió)
 
@@ -70,4 +70,4 @@ Ha a vizualizáció pont úgy néz ki, ahogy szeretné, a Power BI szolgáltatá
 ## <a name="next-steps"></a>Következő lépések
 
 * [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
-* [Egyéni vizualizációk](../developer/power-bi-custom-visuals.md)
+* [Power BI-vizualizációk](../developer/visuals/power-bi-custom-visuals.md)

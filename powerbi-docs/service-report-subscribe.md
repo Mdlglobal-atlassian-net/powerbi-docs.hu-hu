@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/03/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4d8a5c1cceb66b7103a58c7bcebfa46dbdd97430
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 5208c72016a148f86a119bdddd2bbd1f69d3456b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74831103"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381031"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Feliratkozás és mások feliratkoztatása jelentésekre és irányítópultokra a Power BI szolgáltatásban
 
@@ -53,7 +53,7 @@ A lapszámozott jelentésekre való feliratkozás egy kissé eltér ettől. A r�
 
 5. Töltse ki az e-mail **Tárgy7** és **Üzenet** adatait. 
 
-5. Válasszon **Gyakoriságot** feliratkozásához: **Napi**, **Óránkénti**, **Heti**, **Havi** vagy **Adatfrissítések utáni (Napi)**.  Ha az e-mailt, amelyre feliratkozott, csak bizonyos napokon szeretné megkapni, válassza az **Óránkénti** vagy **Heti** értéket, majd jelölje ki a napokat.  Ha például az e-mailt csak hétköznapokon szeretné megkapni, válassza a **Heti** gyakoriságot, majd távolítsa el a jelölést a **szombat** és a **vasárnap** jelölőnégyzetéből.  Ha a **Havi** lehetőséget választja, adja meg a hónap azon napját/napjait, amikor e-mailt szeretne kapni a feliratkozásokról.  
+5. Válasszon **Gyakoriságot** feliratkozásához: **Napi**, **Óránkénti**, **Heti**, **Havi** vagy **Adatfrissítések utáni (Napi)** .  Ha az e-mailt, amelyre feliratkozott, csak bizonyos napokon szeretné megkapni, válassza az **Óránkénti** vagy **Heti** értéket, majd jelölje ki a napokat.  Ha például az e-mailt csak hétköznapokon szeretné megkapni, válassza a **Heti** gyakoriságot, majd távolítsa el a jelölést a **szombat** és a **vasárnap** jelölőnégyzetéből.  Ha a **Havi** lehetőséget választja, adja meg a hónap azon napját/napjait, amikor e-mailt szeretne kapni a feliratkozásokról.  
 
 6. Ha **Napi**, **Óránkénti**, **Havi** vagy **Heti** gyakoriságot választ, akkor **Ütemezett időpontot** is megadhat a feliratkozáshoz.  Futtathatja egész órakor, vagy 15, 30, 45 perccel az után.  Választhat délelőtti (AM) vagy délutáni (PM) időpontot. Az időzónát is megadhatja.  Ha az **Óránkénti** beállítást választotta, válassza ki az **Ütemezett időpontot**, amikorra a feliratkozás indítását szeretné beállítani, és azt követően óránként érkezik majd.
 
@@ -95,10 +95,10 @@ A feliratkozás megszűnik, ha lejár a Pro-licence, ha az irányítópultot vag
 * A jelentésekhez kapcsolódó e-mail-feliratkozások esetén, ha az adatkészlet sorszintű biztonságot használ, nem hozhat létre feliratkozást saját magának. Olyan jelentésre, amelyen sorszintű biztonság (RLS) van érvényben, csak akkor iratkoztathat fel másokat, ha többoldalas jelentést használ, amely lehetővé teszi, hogy a feliratkozást a biztonsági környezet használatával küldje el másoknak. 
 * A jelentésoldalakra való feliratkozás a jelentésoldal nevéhez kapcsolódik. Ha feliratkozik egy jelentésoldalra, majd átnevezi azt, akkor újra létre kell hoznia a feliratkozást.
 * Előfordulhat, hogy a szervezet konfigurált néhány beállítást az Azure Active Directory-ban, amelyek korlátozhatják a Power BI-ban az e-mail-előfizetések használatát.  A korlátozások körébe a teljesség igénye nélkül beletartoznak az erőforrások elérésekor a többtényezős hitelesítés és az IP-címtartomány korlátozásai.
-* Másoknak az élő kapcsolatot használó jelentésekre/irányítópultokra való e-mail-feliratkoztatása jelenleg csak akkor támogatott, ha többoldalas jelentést használ, amely lehetővé teszi, hogy a feliratkozást a biztonsági környezet használatával küldje el másoknak. 
-* Az e-mailekre való feliratkozások az [egyéni vizualizációk](developer/power-bi-custom-visuals.md) többségét nem támogatják.  Az egyetlen kivétel a [minősített](developer/power-bi-custom-visuals-certified.md) egyéni vizualizációk esete.  
-* Az e-mailekre való feliratkozások jelenleg nem támogatják az R-alapú egyéni vizualizációkat.  
-* Az e-mail-értesítések a jelentés szűrőinek és szeletelőinek alapértelmezett állapotait alkalmazva lesznek elküldve. Az alapértelmezéseknek a feliratkozás után végzett módosításai nem jelennek meg az e-mailben.  A többoldalas jelentések viszont támogatják ezt a képességet, és lehetővé teszik a specifikus paraméterértékek feliratkozásonkénti beállítását.   
+* Másoknak az élő kapcsolatot használó jelentésekre/irányítópultokra való e-mail-feliratkoztatása jelenleg csak akkor támogatott, ha többoldalas jelentést használ, amely lehetővé teszi, hogy a feliratkozást a biztonsági környezet használatával küldje el másoknak.
+* Az e-mailekre való feliratkozások a [Power BI-vizualizációk](developer/visuals/power-bi-custom-visuals.md) többségét nem támogatják.  Ez alól az egyetlen kivétel a [minősített](developer/visuals/power-bi-custom-visuals-certified.md) Power BI-vizualizációk esete.  
+* Az e-mailekre való feliratkozások jelenleg nem támogatják az R-alapú Power BI-vizualizációkat.  
+* Az e-mail-értesítések a jelentés szűrőinek és szeletelőinek alapértelmezett állapotait alkalmazva lesznek elküldve. Az alapértelmezéseknek a feliratkozás után végzett módosításai nem jelennek meg az e-mailben.  A többoldalas jelentések viszont támogatják ezt a képességet, és lehetővé teszik a specifikus paraméterértékek feliratkozásonkénti beállítását.
 * Kifejezetten az irányítópultokra való feliratkozások esetében bizonyos csempetípusok még nem támogatottak.  Ilyenek többek között a streamelési csempék, a videócsempék és az egyéni webes tartalomcsempék.     
 * Ha a bérlőn kívüli munkatársával oszt meg egy irányítópultot, akkor ezen munkatársa számára nem tud feliratkozást is létrehozni. Ha tehát Ön aaron@xyz.com, akkor megoszthat irányítópultot a(z) anyone@ABC.com címmel, de nem hozhat létre feliratkozást anyone@ABC.com részére, és ő sem iratkozhat fel megosztott tartalomra.      
 * A Power BI automatikusan felfüggeszti a több mint két hónapja nem látogatott irányítópultokhoz vagy jelentésekhez társított adathalmazok frissítését.  Ha azonban feliratkozik egy irányítópultra vagy jelentésre, az nem szünetel akkor sem, ha nem látogatják.    

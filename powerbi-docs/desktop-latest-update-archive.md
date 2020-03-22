@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 03/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a15b309cd2e50eb47242895c808eaa4386c53a4b
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 360461a009187df5fdf2769e7c9a03e7d194b5ad
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78401285"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378501"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>A Power BI Desktop korábbi havi frissítései
 
@@ -34,9 +34,9 @@ A **legújabb frissítésekről** szóló videót az elejétől is végignézhet
 Az alábbi szakaszok a **Power BI Desktop** korábbi havi frissítéseit ismertetik.
 
 
-## <a name="december-2019-update-2765678661"></a>2019. decemberi frissítés (2.76.5678.661)
+## <a name="february-2020-update-2785740642"></a>2020. februári frissítés (2.78.5740.642)
 
-Decemberi frissítéseink felpezsdítenek, mint a szánkózás egy havas domboldalon. 
+Büszkék vagyunk a februári frissítésekre, és úgy gondoljuk, az új funkciók még egy doboz bonbonnál is jobban jönnek. 
 
 > [!IMPORTANT]
 > A 2019. júliusi kiadástól kezdve a Power BI Desktop már csak egyetlen .exe-fájlként jelenik meg, amely az összes támogatott nyelvet tartalmazza. Az .msi-verziót többé nem bocsátjuk ki.
@@ -46,6 +46,81 @@ A Power BI Desktop frissítéseinek listája mellet található hivatkozások é
 * [blogbejegyzésben]: Most features are explained in a section in the monthly update blog post.
 * [videókivonatok]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
 * [cikkekben]: Some features have an article that provides more detail.
+* A többi funkció működése magától értetődő, ezért az ilyen esetekben nincs szükség magyarázó cikkre vagy videóra.
+
+Ebben a hónapban az alábbi frissítések kerültek be a Power BI Desktopba:
+
+
+### <a name="data-management"></a>Adatkezelés
+* Általánosan elérhető a növekményes frissítés [[videó]](https://youtu.be/TN61JvbUAxk?t=16) [[cikk]](service-premium-incremental-refresh.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Incremental_refresh) 
+
+### <a name="reporting"></a>Jelentéskészítés
+* Hierarchikus szeletelő (előzetes verzió) [[videó]](https://youtu.be/TN61JvbUAxk?t=207)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Hierarchical_slicer) 
+* Az menüszalag frissítései (előzetes verzió) [[videó]](https://youtu.be/TN61JvbUAxk?t=424)  [[cikk]](desktop-ribbon.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Ribbon) 
+
+
+### <a name="modeling"></a>Modellezés
+* Új DAX-függvények: FirstNonBlankValue, LastNonBlankValue [[videó]](https://youtu.be/TN61JvbUAxk?t=716)  [[cikk]](https://docs.microsoft.com/dax/firstnonblankvalue-function-dax)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_New_DAX_Functions) 
+
+### <a name="visuals"></a>Vizualizációk
+* Új egyéni vizualizációk [[videó]](https://youtu.be/TN61JvbUAxk?t=835)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Visualizations) 
+
+
+### <a name="template-apps"></a>Sablonalkalmazások
+* A Microsoft 365 használati elemzései [[videó]](https://youtu.be/TN61JvbUAxk?t=910)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Microsoft_365_usage) 
+* A P3 NFL-elemzései [[videó]](https://youtu.be/TN61JvbUAxk?t=928)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_NFL)
+* Acterys a QuickBookshoz, Zerohoz és WorkflowMaxhoz [[videó]](https://youtu.be/TN61JvbUAxk?t=932)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Acterys) 
+
+
+### <a name="data-preparation"></a>Adatok előkészítése
+* Lekérdezési diagnosztika – támogatás a nem adminisztrátori felhasználóknak [[videó]](https://youtu.be/TN61JvbUAxk?t=938)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_non_admin_support) 
+
+
+### <a name="data-connectivity"></a>Adatkapcsolatok
+* MicroStrategy-összekötő (általánosan elérhető) [[videó]](https://youtu.be/TN61JvbUAxk?t=962)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_MicroStrategy_connector) 
+* FHIR-összekötő (általánosan elérhető) [[videó]](https://youtu.be/TN61JvbUAxk?t=962)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_FHIR) 
+* További összekötők: Factset, TIBCO, JAMF Pro, [[videó]](https://youtu.be/TN61JvbUAxk?t=978)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Factset_connector) 
+
+
+
+Az egyes új funkciókkal kapcsolatos részletes információkat a [Power BI Desktop-funkciók összegző blogbejegyzése](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/) tartalmazza.
+
+Megismerkedhet [a Power BI szolgáltatás újdonságaival](service-whats-new.md), valamint [a Power BI-hoz készült mobilalkalmazások újdonságaival](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+> [!NOTE]
+> Megtekintheti a [Power BI Desktophoz elérhető adatforrásokat](desktop-data-sources.md). A lista folyamatosan bővül, ezért érdemes gyakran visszalátogatni.
+
+
+## <a name="power-bi-desktop-monthly-update-video"></a>Videó a Power BI Desktop havi frissítéséről
+Az alábbi videó az összes frissítést bemutatja. A videót a blogbejegyzésből is megtekintheti:
+
+> [!VIDEO https://www.youtube.com/embed/TN61JvbUAxk]
+
+Ha a cégének arra van szüksége, letöltheti a Power BI Desktop korábbi verzióit is. Azt javasoljuk azonban, hogy a régebbiek helyett mindig a Power BI Desktop legújabb verzióját használja. Minden korábbi verzióra vonatkoznak az alábbi korlátozások:
+
+* A Power BI Desktop korábbi kiadásait nem frissítjük: a legújabb frissítéseket és funkciókat mindig a legújabb kiadással érheti el.
+* Előfordulhat, hogy a Power BI Desktop korábbi verzióival nem tud majd megnyitni egy újabb verzióban létrehozott vagy mentett fájlt. 
+* Ha a Power BI Desktop újabb verziójában mentett jelentés betöltésekor figyelmeztetés jelenik meg, és Ön a jelentést a korábbi verzióban menti, az új funkciókkal kapcsolatos minden információ elvész.
+* Csak az angol nyelvű Power BI Desktop-verziókat archiváljuk.
+
+A korábbi verzió letöltéséhez használja az alábbi hivatkozást: 
+
+* [A Power BI Desktop 2020. februári verziója - 32 bites](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-02.exe)
+* [A Power BI Desktop 2020. februári verziója - 64 bites](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-02_x64.exe)
+
+
+## <a name="december-2019-update-2765678661"></a>2019. decemberi frissítés (2.76.5678.661)
+
+Decemberi frissítéseink felpezsdítenek, mint a szánkózás egy havas domboldalon. 
+
+> [!IMPORTANT]
+> A 2019. júliusi kiadástól kezdve a Power BI Desktop már csak egyetlen .exe-fájlként jelenik meg, amely az összes támogatott nyelvet tartalmazza. Az .msi-verziót többé nem bocsátjuk ki.
+
+A Power BI Desktop frissítéseinek listája mellet található hivatkozások értelmezése a következő:
+
+* [blog]: Most features are explained in a section in the monthly update blog post.
+* [videó]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* [cikk]: Some features have an article that provides more detail.
 * A többi funkció működése magától értetődő, ezért az ilyen esetekben nincs szükség magyarázó cikkre vagy videóra.
 
 Ebben a hónapban az alábbi frissítések kerültek be a Power BI Desktopba:
@@ -67,7 +142,7 @@ Ebben a hónapban az alábbi frissítések kerültek be a Power BI Desktopba:
 
 ### <a name="visuals"></a>Vizualizációk
 * A Vizualizációk panel személyre szabása (általánosan elérhető) [[videó]](https://youtu.be/eCEwgZsVUOs?t=865)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#personalizeViz) 
-* Új egyéni vizualizációk [[videó]](https://youtu.be/eCEwgZsVUOs?t=886)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#xViz) 
+* Új Power BI-vizualizációk [[videó]](https://youtu.be/eCEwgZsVUOs?t=886)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#xViz) 
 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
@@ -391,7 +466,7 @@ Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**
 
 
 ### <a name="visuals"></a>Vizualizációk
-* Új egyéni vizualizációk és frissítések [[videó]](https://youtu.be/sf4n7VXoQHY?t=956)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#xviz) 
+* Új Power BI-vizualizációk és -frissítések [[videó]](https://youtu.be/sf4n7VXoQHY?t=956)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#xviz) 
 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
@@ -457,7 +532,7 @@ Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**
 
 ### <a name="visuals"></a>Vizualizációk
 * A PowerApps vizualizáció tanúsítva van  [[videó]](https://youtu.be/l7OMRUF9UYg?t=894)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#powerapps) 
-* Három új egyéni vizualizáció és frissítés  [[videó]](https://youtu.be/l7OMRUF9UYg?t=932)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#infocard) 
+* Három új Power BI-vizualizáció és -frissítés  [[video]](https://youtu.be/l7OMRUF9UYg?t=932)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#infocard) 
 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
@@ -531,7 +606,7 @@ Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**
 
 ### <a name="visuals"></a>Vizualizációk
 * Személyre szabott vizualizációk panel (előzetes verzió)  [[videó]](https://youtu.be/7k-nP38uHyQ?t=1349)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#personalizedVizPane) 
-* Három új egyéni vizualizáció és frissítés  [[videó]](https://youtu.be/7k-nP38uHyQ?t=1391)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#synopticVisual) 
+* Három új Power BI-vizualizáció és -frissítés  [[videó]](https://youtu.be/7k-nP38uHyQ?t=1391)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#synopticVisual) 
 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
@@ -600,7 +675,7 @@ Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**
 
 ### <a name="visuals"></a>Vizualizációk
 * ArcGIS Maps for Power BI-frissítések  [[videó]](https://youtu.be/O8GlHDz8xUQ?t=1093)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#esri) 
-* Hat új egyéni vizualizáció és frissítések    [[videó]](https://youtu.be/O8GlHDz8xUQ?t=1199)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#mapbox) 
+* Hat új Power BI-vizualizáció és -frissítés    [[videó]](https://youtu.be/O8GlHDz8xUQ?t=1199)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#mapbox) 
 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
@@ -659,7 +734,7 @@ Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**
 ### <a name="modeling"></a>Modellezés
 * Új DAX-függvény - ALLCROSSFILTERED [[videó]](https://youtu.be/vih35kSrEHU?t=970)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dax) 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 * Egy új egyéni vizualizáció  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#rainbowGauge) 
 
 
@@ -737,9 +812,9 @@ A **Power BI Desktop** márciusi újdonságai közé az alábbi frissítések ta
 * Mostantól általánosan elérhető az új modellezési nézet [[videó]](https://youtu.be/rBPGH6eYlT0?t=417)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
 * Új DAX-függvények [[videó]](https://youtu.be/rBPGH6eYlT0?t=560)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#DAX) 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
-* Új hitelesített egyéni vizualizációk beállítása a felügyeleti portálon [[videó]](https://youtu.be/rBPGH6eYlT0?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#certifiedAdminSetting) 
-* Két új egyéni vizualizáció [[videó]](https://youtu.be/rBPGH6eYlT0?t=693)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#customVisuals) 
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
+* Új hitelesített Power BI-vizualizációk beállítása a felügyeleti portálon [[videó]](https://youtu.be/rBPGH6eYlT0?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#certifiedAdminSetting) 
+* Két új Power BI-vizualizáció [[videó]](https://youtu.be/rBPGH6eYlT0?t=693)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#customVisuals) 
 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
@@ -797,8 +872,8 @@ Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**
 * Automatikusan generált javasolt kérdések a Q&A felhasználói felületén [[videó]](https://youtu.be/dMD25wfElLg?t=1121)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#autoSuggestions) 
 * Továbbfejlesztett Python- és R-szkriptszerkesztő [[videó]](https://youtu.be/dMD25wfElLg?t=1282)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#scriptEditor) 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
-* Tíz új egyéni vizualizáció, új Egyéni vizualizációk funkció  [[videó]](https://youtu.be/dMD25wfElLg?t=1324)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#customVisuals) 
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
+* Tíz új Power BI-vizualizáció, új Power BI-vizualizációk funkció  [[videó]](https://youtu.be/dMD25wfElLg?t=1324)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
 
@@ -873,7 +948,7 @@ Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**
 * Adat nézet akadálymentességének támogatása [[videó]](https://youtu.be/AHNlkjRFdYI?t=1253)  [[cikk]](desktop-composite-models.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#dataView) 
 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
 * Egy új egyéni vizualizáció  [[videó]](https://youtu.be/AHNlkjRFdYI?t=1370)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#customVisuals) 
 
@@ -934,9 +1009,9 @@ A **Power BI Desktop** novemberi újdonságai közé az alábbi frissítések ta
 * A modellezés akadálymentességi fejlesztései [[videó]](https://youtu.be/1xsXXoyTxfk?t=2023)  [[cikk]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingAccessibility) 
 * Új DAX-függvények [[videó]](https://youtu.be/1xsXXoyTxfk?t=2066)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23dax) 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
-* Öt új egyéni vizualizáció  [[videó]](https://youtu.be/1xsXXoyTxfk?t=2108)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23customVisuals) 
+* Öt új Power BI-vizualizáció [[videó]](https://youtu.be/1xsXXoyTxfk?t=2108)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23customVisuals) 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
 
@@ -981,9 +1056,9 @@ A **Power BI Desktop** októberi újdonságai közé az alábbi frissítések ta
 * Összetett modellek és az összesítés támogatása a Power BI szolgáltatásban (előzetes verzió) [[videó]](https://youtu.be/8E6UokaDtc0)  [[cikk – összesítések]](desktop-aggregations.md) [[cikk – összetett modellek]](desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23compositeModels) 
 * Tudnivalók a nem additív mértékek növekedéséről [[videó]](https://youtu.be/8E6UokaDtc0?t=107)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23Insights) 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
-* Öt új egyéni vizualizáció  [[videó]](https://youtu.be/ZfJSSG17SEY)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23customVisuals) 
+* Öt új Power BI-vizualizáció  [[videó]](https://youtu.be/ZfJSSG17SEY)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23customVisuals) 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
 
@@ -1036,9 +1111,9 @@ Ebben a hónapban az alábbi frissítések kerültek be a **Power BI Desktopba**
 
 * Összesítések (előzetes verzió) [[videó]](https://youtu.be/Rzw2WyI09kY?t=11m37s)  [[cikk]](desktop-aggregations.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#aggregations) 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
-* Öt új egyéni vizualizáció  [[videó]](https://youtu.be/Rzw2WyI09kY?t=23m8s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#customVisuals) 
+* Öt új Power BI-vizualizáció  [[videó]](https://youtu.be/Rzw2WyI09kY?t=23m8s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
 
@@ -1091,9 +1166,9 @@ A **Power BI Desktop** augusztusi újdonságai közé az alábbi frissítések t
 * Python-integráció  [[videó]](https://youtu.be/dgv5HhHxxe8?t=11m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#python) 
 * A Q&A fejlesztései  [[videó]](https://youtu.be/dgv5HhHxxe8?t=13m1s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#Q&A) 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
-* Öt új egyéni vizualizáció  [[videó]](https://youtu.be/dgv5HhHxxe8?t=19m48s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#customVisuals) 
+* Öt új Power BI-vizualizáció [[videó]](https://youtu.be/dgv5HhHxxe8?t=19m48s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
 
@@ -1145,11 +1220,11 @@ A **Power BI Desktop** júliusi újdonságai közé az alábbi frissítések tar
 
 * Terjesztési tényezők elemzési eredményei  [[videó]](https://youtu.be/Mtig3rmIUe0?t=37m)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#distributionFactor) 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
 * Power BI-minősítéssel rendelkező kategória  [[videó]](https://youtu.be/Mtig3rmIUe0?t=41m13s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#certifiedVisuals) 
 * Adott szervezeti vizualizációk letiltása  [[videó]](https://youtu.be/Mtig3rmIUe0?t=42m32s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#orgCustomVisuals) 
-* Négy új egyéni vizualizáció  [[videó]](https://youtu.be/Mtig3rmIUe0?t=44m)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#visio) 
+* Négy új Power BI-vizualizáció  [[videó]](https://youtu.be/Mtig3rmIUe0?t=44m)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#visio) 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
 
@@ -1187,9 +1262,9 @@ A **Power BI Desktop** júniusi újdonságai közé az alábbi frissítések tar
 * Adatfeliratok formázása elkülönülten minden mértéknél kombinált diagramban [[videó]](https://youtu.be/4VpGtWSrssE?t=9m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#comboLabels) 
 * Hosszabb telefonos jelentések [[videó]](https://youtu.be/4VpGtWSrssE?t=11m26s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#phoneReports) 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
-* Két új egyéni vizualizáció [[videó]](https://youtu.be/4VpGtWSrssE?t=17m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#customVisuals) 
+* Két új Power BI-vizualizáció  [[videó]](https://youtu.be/4VpGtWSrssE?t=17m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#customVisuals) 
 
 ### <a name="modeling"></a>Modellezés
 * Szűrés és rendezés adatnézetben [[videó]](https://youtu.be/4VpGtWSrssE?t=13m11s)  [[cikk]](desktop-data-view.md#filtering-in-data-view)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#filterAndSort) 
@@ -1236,15 +1311,15 @@ A **Power BI Desktop** májusi újdonságai közé az alábbi frissítések tart
 
 ### <a name="analytics"></a>Elemzés
 
-* Mérték részletezése  [[videó]](https://youtu.be/-_GMCE1TLvQ?t=2m9s)  [[cikk]](desktop-drillthrough.md#pass-all-filters-in-drillthrough)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#measureDrillthrough) 
+* Mérték részletezése  [[videó]](https://youtu.be/-_GMCE1TLvQ?t=2m9s)  [[cikk]](desktop-drillthrough.md#pass-all-filters-in-drill-through)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#measureDrillthrough) 
 
 ### <a name="power-bi-premium"></a>Power BI Premium
 
 * Növekményes frissítés (előzetes verzió) [[videó]](https://youtu.be/-_GMCE1TLvQ?t=7m42s)  [[cikk]](service-premium-incremental-refresh.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#incrementalRefresh) 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
-* Számos új egyéni vizualizáció  [[videó]](https://youtu.be/-_GMCE1TLvQ?t=9m44s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#customVisuals) 
+* Számos új Power BI-vizualizáció  [[videó]](https://youtu.be/-_GMCE1TLvQ?t=9m44s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
 
@@ -1291,13 +1366,13 @@ A **Power BI Desktop** áprilisi újdonságai közé az alábbi frissítések ta
 
 ### <a name="analytics"></a>Elemzés
 
-* Nyelvi séma frissítése  [[videó]](https://youtu.be/W_Nb73Od_AI?t=22m)  [[cikk]](developer/power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#linguisticSchema) 
+* Nyelvi séma frissítése  [[videó]](https://youtu.be/W_Nb73Od_AI?t=22m)  [[cikk]](developer/visuals/power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#linguisticSchema) 
 * Új DAX-függvény: COMBINEVALUES()  [[videó]](https://youtu.be/W_Nb73Od_AI?t=23m37s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#combineValues) 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
-* Általánosan elérhetők a szervezeti vizualizációk  [[videó]](https://youtu.be/W_Nb73Od_AI?t=26m11s)  [[cikk]](developer/power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#organizationalVisuals) 
-* Számos új egyéni vizualizáció  [[videó]](https://youtu.be/W_Nb73Od_AI?t=28m8s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#overviewByCloudScope) 
+* Általánosan elérhetők a szervezeti vizualizációk  [[videó]](https://youtu.be/W_Nb73Od_AI?t=26m11s)  [[cikk]](developer/visuals/power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#organizationalVisuals) 
+* Számos új Power BI-vizualizáció  [[videó]](https://youtu.be/W_Nb73Od_AI?t=28m8s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#overviewByCloudScope) 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
 
@@ -1334,9 +1409,9 @@ Nagy örömmel jelentjük be a **Power BI Desktop** alkalmazás márciusi friss�
 * Vizualizációs fejléc kikapcsolása jelentések olvasási nézetében [[videó]](https://youtu.be/kuI6MMzDh34?t=12m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader) 
 * Vizualizációk alapértelmezett elhelyezésének javítása [[videó]](https://youtu.be/kuI6MMzDh34?t=14m45s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualPlacement) 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
-* Számos új egyéni vizualizáció  [[videó]](https://youtu.be/kuI6MMzDh34?t=15m43s)  [[cikk]](developer/power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#customVisuals) 
+* Számos új Power BI-vizualizáció  [[videó]](https://youtu.be/kuI6MMzDh34?t=15m43s)  [[cikk]](developer/visuals/power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
 
@@ -1393,9 +1468,9 @@ A **Power BI Desktop** 2018. februári újdonságai közé az alábbi frissíté
 * Keresés a Formázás és Elemzés paneleken  [[videó]](https://youtu.be/KeVB5RwMzJo?t=14m46s)  [[cikk]](desktop-analytics-pane.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search) 
 
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
 
-* Vállalati egyéni vizualizációk (előzetes verzió)  [[videó]](https://youtu.be/KeVB5RwMzJo?t=19m23s)  [[cikk]](developer/power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
+* Vállalati Power BI-vizualizációk (előzetes verzió)  [[videó]](https://youtu.be/KeVB5RwMzJo?t=19m23s)  [[cikk]](developer/visuals/power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
 
 
 ### <a name="analytics"></a>Elemzés
@@ -1455,7 +1530,7 @@ A **Power BI Desktop** januári újdonságai közé az alábbi frissítések tar
 -   Dátumok hierarchikus megjelenítése (előzetes)  [[videó]](https://youtu.be/W8Pp5wuCXJw?t=7m41s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dateHierarchy) 
 -   Relatív dátumszeletelő rögzített kezdőidejének hozzáadása [[videó]](https://youtu.be/W8Pp5wuCXJw?t=9m22s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#anchorDate) 
 -   Első N kiválasztás a Q&A-ban [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#topN) 
--   Számos új egyéni vizualizáció  [[videó]](https://youtu.be/W8Pp5wuCXJw?t=11m32s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#customVisuals) 
+-   Számos új Power BI-vizualizáció  [[videó]](https://youtu.be/W8Pp5wuCXJw?t=11m32s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#customVisuals) 
 
 ### <a name="analytics"></a>Elemzés
 
@@ -1505,7 +1580,7 @@ A **Power BI Desktop** decemberi újdonságai közé az alábbi frissítések ta
 -   Pontvizualizáció az X és az Y tengely szerinti csoportosítással [[videó]](https://youtu.be/ZPU8B-1BxjI?t=15m12s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#scatterChart) 
 -   Nagy sűrűségű mintavétel szélességen és hosszúságon alapuló térképekhez [[videó]](https://youtu.be/ZPU8B-1BxjI?t=17m3s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#highDensityMaps) 
 -   Rugalmas szeletelők [[videó]](https://youtu.be/sI3yRjdnJ7w?t=20m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#responsive) 
--   Nemrég megjelent egyéni vizualizációk  [[video]](https://youtu.be/ZPU8B-1BxjI?t=18m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#customVisuals) 
+-   Nemrég megjelent Power BI-vizualizációk  [[video]](https://youtu.be/ZPU8B-1BxjI?t=18m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#customVisuals) 
 
 
 ### <a name="analytics"></a>Elemzés
@@ -1560,7 +1635,7 @@ A **Power BI Desktop** novemberi újdonságai közé az alábbi frissítések ta
 -   Az Esri Plusz-előfizetés elérhető az ArcGIS Maps for Power BI-hoz  [[videó]](https://youtu.be/sI3yRjdnJ7w?t=10m31s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#esriPlus) 
 -   Jelentési lehetőségek lassú adatforrásokhoz  [[videó]](https://youtu.be/sI3yRjdnJ7w?t=16m11s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#slowDataSource) 
 -   Szűrési teljesítménnyel kapcsolatos fejlesztések  [[videó]](https://youtu.be/sI3yRjdnJ7w?t=20m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#filtering) 
--   Nemrég megjelent egyéni vizualizációk  [[video]](https://youtu.be/sI3yRjdnJ7w?t=20m50s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#customVisuals) 
+-   Nemrég megjelent Power BI-vizualizációk  [[video]](https://youtu.be/sI3yRjdnJ7w?t=20m50s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#customVisuals) 
 
 
 ### <a name="analytics"></a>Elemzés
@@ -1665,7 +1740,7 @@ A **Power BI Desktop** szeptemberi újdonságai közé az alábbi frissítések 
     -   Billentyűparancs-segítő párbeszédpanel [[videó]](https://youtu.be/moTQJlnClJw?t=28m50s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#shortcuts) [[cikk]](desktop-accessibility.md)
 -   Nagy sűrűségű pontdiagramok mintavételezése  [[videó]](https://youtu.be/moTQJlnClJw?t=30m22s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#highDensityScatter) [[cikk]](desktop-high-density-scatter-charts.md)
 -   Rácsvonalstílus-vezérlő [[videó]](https://youtu.be/moTQJlnClJw?t=33m53s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#gridlines) [[cikk]](desktop-gridlines-snap-to-grid.md)
--   Új egyéni vizualizációk  [[videó]](https://youtu.be/moTQJlnClJw?t=36m4s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#communityVisuals)
+-   Új Power BI-vizualizációk  [[videó]](https://youtu.be/moTQJlnClJw?t=36m4s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#communityVisuals)
     -   Naptár a Tallantól  [[videó]](https://youtu.be/moTQJlnClJw?t=36m26s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#calendarByTallan)
     -   Enlighten Aquarium  [[videó]](https://youtu.be/moTQJlnClJw?t=38m11s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#enlightenAquarium)
     -   Visio-vizualizáció (előzetes verzió)  [[videó]](https://youtu.be/moTQJlnClJw?t=40m15s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#visio)
@@ -1701,7 +1776,7 @@ A **Power BI Desktop** augusztusi újdonságai közé az alábbi frissítések t
 -   Egyéni részösszeg-beállítások különböző mátrixszinteken  [[videó]](https://youtu.be/ND8U0yXroaQ?t=4m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#customSubtotal)
 -   Vonalstílusok és jelmagyarázat-beállítások  [[videó]](https://youtu.be/ND8U0yXroaQ?t=6m54s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#lineStyles)
 -   Pontdiagramok teljesítményével kapcsolatos fejlesztések [[videó]](https://youtu.be/ND8U0yXroaQ?t=13m59s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#scatterChartPerformance)
--   Új egyéni vizualizációk  [[videó]](https://youtu.be/ND8U0yXroaQ?t=14m32s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#customVisuals)
+-   Új Power BI-vizualizációk  [[videó]](https://youtu.be/ND8U0yXroaQ?t=14m32s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#customVisuals)
     -   Pöttydiagram az MAQ Software-től  [[videó]](https://youtu.be/ND8U0yXroaQ?t=14m45s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#dotPlot)
     -   Power KPI  [[videó]](https://youtu.be/ND8U0yXroaQ?t=19m11s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#powerKPI)
     -   Tölcsérdiagram  [[videó]](https://youtu.be/ND8U0yXroaQ?t=21m55s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#funnelPlot)
@@ -1743,7 +1818,7 @@ A **Power BI Desktop** júliusi újdonságai közé az alábbi frissítések tar
 
 -   Általánosan elérhető, új tábla- és mátrixvizualizációk [[videó]](https://youtu.be/4X96ow7FnSY?t=1m27s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#tableAndMatrix)
 -   Mezők átnevezése a vizualizációkban  [[videó]](https://youtu.be/4X96ow7FnSY?t=6m3s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#rename)
--   Egyéni vizualizációtárak integrálása  [[videó]](https://youtu.be/4X96ow7FnSY?t=8m7s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#customVisualsStore)
+-   Power BI-vizualizációtárak integrálása  [[videó]](https://youtu.be/4X96ow7FnSY?t=8m7s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#customVisualsStore)
 -   Relatívdátum-szűrők  [[videó]](https://youtu.be/4X96ow7FnSY?t=10m46s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#relativeDateFilter)
 -   Rugalmas vizualizációelrendezés (előzetes verzió)  [[videó]](https://youtu.be/4X96ow7FnSY?t=12m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals)
 -   Új vízesésdiagram beállítás – lebontás  [[videó]](https://youtu.be/4X96ow7FnSY?t=14m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#waterfall)
@@ -1751,7 +1826,7 @@ A **Power BI Desktop** júliusi újdonságai közé az alábbi frissítések tar
     -   Drill down Choropleth  [[videó]](https://youtu.be/4X96ow7FnSY?t=18m11s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownChoropleth)
     -   Drill down Cartogram  [[videó]](https://youtu.be/4X96ow7FnSY?t=19m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownCartogram)
     -   Drill down Player  [[videó]](https://youtu.be/4X96ow7FnSY?t=20m17s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownPlayer)
-    -   Tanúsított egyéni vizualizációk  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#certifiedCustomVisuals)
+    -   Minősített Power BI-vizualizációk  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#certifiedCustomVisuals)
 
 
 ### <a name="analytics--modeling"></a>Elemzés és modellezés:
@@ -2123,7 +2198,7 @@ A Power BI Desktop októberi újdonságai közé az alábbi frissítések tartoz
 -   Dobozolás [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#binning) [[videó]](https://youtu.be/UXEYSvgvMaQ?t=12m17s)
 -   Felső N szűrő [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#topN) [[videó]](https://youtu.be/UXEYSvgvMaQ?t=13m55s)
 -   Adatpontok belefoglalása/kizárása [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#includeExclude) [[videó]](https://youtu.be/UXEYSvgvMaQ?t=15m36s)
--   R alapú egyéni vizualizációk[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#rCustomVisuals)
+-   R-alapú Power BI-vizualizációk[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#rCustomVisuals)
 
 
 ### <a name="data-connectors"></a>Adatösszekötők:

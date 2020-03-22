@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
-ms.openlocfilehash: 4679973cf65ced31a40b3a1bb40c820184e10e2c
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 19a3b1bbf5f2ea3043b92d97a66196ca3e32118c
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79040092"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377236"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -188,7 +188,7 @@ A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helys
 
 ## <a name="n"></a>N
 
-**native (natív)** A termék részét képező. A Power BI például több *natív* vizualizációtípust is tartalmaz. Ezek mellett más típusokat, például egyéni vizualizációkat is importálhat.
+**native (natív)** A termék részét képező. A Power BI például több *natív* vizualizációtípust is tartalmaz. Ezek mellett más típusokat, például Power BI-vizualizációkat is importálhat.
 
 **navigation pane** vagy **nav pane (navigációs vagy nav. panel)** A Power BI szolgáltatás bal oldali vezérlőelemei.
 

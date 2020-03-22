@@ -10,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 04ee1386547ed888531ea139227969d49629863d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 79f18faf56fba8afa85afd808f6faa1bd16811d8
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699544"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381146"
 ---
 # <a name="troubleshooting-tile-errors"></a>Csempékkel kapcsolatos hibák elhárítása
 Az alábbiakban a csempékkel kapcsolatban felmerülő gyakori hibákat és azok magyarázatát soroltuk fel.
@@ -35,9 +35,10 @@ Nem sikerült hozzáférni az adataihoz, mert az adatforrás nem volt elérhető
 
 Forduljon az irányítópult tulajdonosához, és győződjön meg róla, hogy az adatforrások és az adatmodell léteznek és elérhetők az Ön fiókjával.
 
-**A rendszergazda letiltotta az egyéni vizualizációkat.**
+**A rendszergazda letiltotta a Power BI-vizualizációkat.**
 
-A Power BI-rendszergazda letiltotta az egyéni vizualizációkat a szervezete vagy a biztonsági csoportja számára. Emiatt nem használhat egyéni vizualizációkat a [Microsoft Marketplace-ről](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals), és nem importálhat privát vizualizációkat fájlból. Csak az előcsomagolt vizualizációkat használhatja.
+A Power BI-rendszergazda letiltotta a Power BI-vizualizációkat a szervezete vagy a biztonsági csoportja számára.
+Emiatt nem használhat Power BI-vizualizációkat a [Microsoft Marketplace-ről](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals), és nem importálhat privát vizualizációkat fájlból. Csak az előcsomagolt vizualizációkat használhatja.
 
 
 **Minden adathierarchizálásban legalább egy olyan csoportnak vagy számításnak kell szerepelnie, amely adatokat generál. Forduljon az irányítópult tulajdonosához.**

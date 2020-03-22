@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/21/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4194afb71dec7b50d75def0677489d3ff009917e
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: f9e0288c91f65d10329aaac29df8eb6e7a81f297
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79113752"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377165"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Jelentések exportálása Power BI-ból PowerPointba
 
@@ -78,7 +78,7 @@ Most már csak Önön múlik, hogy miképpen használja fel a PowerPoint-bemutat
 Az **Exportálás a PowerPointba** funkció használatakor figyelembe kell vennie néhány megfontolást és korlátozást.
 
 * Az R-alapú és a Python-alapú vizualizációk még nem támogatottak. Az ilyen vizualizációkat a rendszer üres képként exportálja a PowerPointba, és hibaüzenetet küld, hogy a vizualizáció nem támogatott.
-* A minősített egyéni vizualizációk támogatottak. A minősített egyéni vizualizációkról, beleértve az egyéni vizualizáció minősítési folyamatát, az [Egyéni vizualizáció minősítése](../developer/power-bi-custom-visuals-certified.md) oldalon talál további információt. A nem minősített egyéni vizualizációk nem támogatottak. Ezeket a rendszer üres képként exportálja a PowerPointba, és hibaüzenetet küld, hogy a vizualizáció nem támogatott.
+* A minősített Power BI-vizualizációk támogatottak. A minősített egyéni vizualizációkról, beleértve az egyéni vizualizáció minősítési folyamatát, az [Egyéni vizualizáció minősítése](../developer/power-bi-custom-visuals-certified.md) oldalon talál további információt. A nem minősített egyéni vizualizációk nem támogatottak. Ezeket a rendszer üres képként exportálja a PowerPointba, és hibaüzenetet küld, hogy a vizualizáció nem támogatott.
 * Az Esri vizualizációja nem támogatott
 * A 30-nál több jelentésoldalt tartalmazó jelentések jelenleg nem exportálhatók.
 * A görgetősávokkal rendelkező vizualizációk az alapértelmezett állapotukban lesznek exportálva. A PowerPointban látható vizualizáció csak az adatmennyiség felső részét jeleníti meg. A PowerPointban nem görgethet, mivel minden dia egy kép. 

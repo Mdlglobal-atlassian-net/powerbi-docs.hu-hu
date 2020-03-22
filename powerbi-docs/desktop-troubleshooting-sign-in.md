@@ -9,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 50cb15e95f051dd6860112243514464dd80a8b1e
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 299329cad78d831a3b77e55107e94a234d6f64b1
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78401164"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133173"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Bejelentkezés hibaelhárítása a Power BI Desktopban
 Előfordulhat, hogy amikor megkísérel bejelentkezni a **Power BI Desktopba**, hibát tapasztal. A bejelentkezési hibáknak két fő oka lehet: **proxy-hitelesítési hibák** és **nem-HTTPS URL-cím átirányítási hibái**. 
@@ -75,4 +75,37 @@ Nyomkövetési adatok a következő lépésekkel gyűjthetők a **Power BI Deskt
     `C:\Users/<user name>/AppData/Local/Microsoft/Power BI Desktop/Traces`
 
 A mappa sok nyomkövetési fájlt tartalmazhat. A rendszergazdának csak az utolsó fájlokat küldje el, hogy gyorsan azonosíthassa a hibát. 
+
+
+## <a name="using-default-system-credentials-for-web-proxy"></a>A rendszer alapértelmezett hitelesítő adatainak használata a webproxyhoz
+
+A Power BI Desktop által kiadott webes kérések nem használják a webproxy hitelesítő adatait. A proxykiszolgálót használó hálózatok esetében előfordulhat, hogy a Power BI Desktop nem tud webes kérelmeket létrehozni. 
+
+A Power BI Desktop 2020 márciusi kiadásával kezdődően a rendszer- és hálózatgazdák engedélyezhetik az alapértelmezett rendszerbeli hitelesítő adatok használatát a webproxy-hitelesítéshez. A rendszergazdák létrehozhatnak egy **UseDefaultCredentialsForProxy** nevű beállításjegyzékbeli bejegyzést, az értékét pedig egyre (1) állíthatják az alapértelmezett rendszerhitelesítő adatok webproxy-hitelesítéshez való használatának engedélyezéséhez.
+
+A beállításjegyzék-bejegyzés a következő helyekre kerülhet:
+
+`[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Microsoft Power BI Desktop]`
+`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop]`
+
+Nem szükséges mindkét helyen alkalmazni a beállításjegyzék-bejegyzést.
+
+![Beállításkulcs a rendszer alapértelmezett hitelesítő adataihoz](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03.png)
+
+A beállításjegyzék-bejegyzés létrehozása után (amely újraindítást követelhet meg) a Power BI az Internet Explorerben definiált proxybeállításokat használja a webes kérelmekhez. 
+
+A proxybeállítások vagy hitelesítő adatok beállításainak minden módosításához hasonlóan a beállításjegyzékbeli bejegyzése létrehozása és biztonsági következményekkel jár, a rendszergazdáknak így meg kell győződniük arról, hogy megfelelően konfigurálták az Internet Explorer proxyjait a funkció engedélyezése előtt.         
+
+### <a name="limitations-and-considerations-for-using-default-system-credentials"></a>Az alapértelmezett rendszerbeli hitelesítő adatok használatának korlátozásai és megfontolandó szempontjai
+
+A funkció engedélyezése előtt a rendszergazdáknak számos biztonsági következményt figyelembe kell venniük. 
+
+Ha ügyfeleknek engedélyezi ezt a funkciót, kövesse az alábbi ajánlásokat:
+
+* A proxykiszolgáló hitelesítési sémájaként csak **egyeztetést** használjon, így gondoskodhat arról, hogy az ügyfél csak az Active Directory hálózatához csatlakoztatott proxykiszolgálókat használja. 
+* Ne használjon **NTLM-tartalékot** az ezt a funkciót használó ügyfelekhez.
+* Ha a felhasználók egy proxy nélküli hálózaton találhatók a funkció engedélyezésekor és a javasolt módon való konfigurálásakor, a rendszer nem próbál meg kapcsolatot felvenni a proxykiszolgálóval, illetve használni az alapértelmezett rendszerhitelesítő adatokat.
+
+
+[A rendszer alapértelmezett hitelesítő adatainak használata a webproxyhoz](#using-default-system-credentials-for-web-proxy)
 

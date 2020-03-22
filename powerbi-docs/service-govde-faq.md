@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4459ae95ccd900b0592dbae1048800bcd4609307
-ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
+ms.openlocfilehash: d349e19e4f5cc73cadf2a281b07a220ff7c076bf
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74178246"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376776"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>A németországi felhőszolgáltatás (Germany Cloud) Power BI-felhasználói számára készült gyakori kérdések
 A **Power BI szolgáltatás** egyik verziója kifejezetten az Európai Unió és az Európai Szabadkereskedelmi Társulás (EU és EFTA) országaiban lévő ügyfeleknek készült, és Microsoft Cloud Deutschland (MCD) néven hivatkozunk rá. A jelen cikkben a **Power BI szolgáltatás** EU- és EFTA-ügyfelek részére készült verzióját tárgyaljuk, amely elkülönül és különbözik a **Power BI szolgáltatás** kereskedelmi verziójától és a kormányzati ügyfelek részére biztosított Power BI-szolgáltatásoktól.
@@ -44,7 +44,7 @@ Az alábbi kérdések és válaszok fontos információkat nyújtanak a Microsof
    
    * [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
    * [Power BI Mobile](https://powerbi.microsoft.com/mobile/)
-   * [Helyszíni adatátjáró](https://powerbi.microsoft.com/gateway/)
+   * [On-premises data gateway (Helyszíni adatátjáró)](https://powerbi.microsoft.com/gateway/)
    * [Az Excelhez készült Power BI Publisher](https://powerbi.microsoft.com/excel-dashboard-publisher/)
 6. **Léteznek funkcióbeli korlátozások a németországi felhőhöz készült Power BI szolgáltatásban?**
    
@@ -65,7 +65,7 @@ Az alábbi kérdések és válaszok fontos információkat nyújtanak a Microsof
 | Office portál felhasználói licenckezeléshez, szolgáltatásállapot figyeléséhez és rendszergazdai támogatási kérelmekhez |[https://portal.office.de/](https://portal.office.de/) |[https://portal.office.com/](https://portal.office.com/) |
 | AAD szolgáltatói URI |[https://login.microsoftonline.de/common/oauth2/authorize/](https://login.microsoftonline.de/common/oauth2/authorize/) |[https://login.microsoftonline.com/common/oauth2/authorize/](https://login.microsoftonline.com/common/oauth2/authorize/) |
 | Power BI szolgáltatásbeli erőforrás-URI |[https://analysis.cloudapi.de/powerbi/api](https://analysis.cloudapi.de/powerbi/api) |[https://analysis.windows.net/powerbi/api](https://analysis.windows.net/powerbi/api) |
-| Egyéni vizualizációtár |[https://app.powerbi.de/visuals/](https://app.powerbi.de/visuals/) |[https://app.powerbi.com/visuals/](https://app.powerbi.com/visuals/) |
+| Power BI-vizualizációk könyvtára |[https://app.powerbi.de/visuals/](https://app.powerbi.de/visuals/) |[https://app.powerbi.com/visuals/](https://app.powerbi.com/visuals/) |
 | Alkalmazás regisztrációja a Power BI-ba (az Embedded szolgáltatáshoz) |[https://app.powerbi.de/apps](https://app.powerbi.de/apps) |[https://app.powerbi.com/apps](https://app.powerbi.com/apps) |
 | Azure Portal (az Embedded szolgáltatáshoz) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Közösség |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |

@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9cc5c40328955f54cb0f37567d7ff91d37a302ce
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 020967948e3f0551de50e4485be0dde450a4f18b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128248"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378685"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>R-alapú Power BI-vizualizációk a Power BI-ban
 
 A **Power BI Desktopban** és a **Power BI szolgáltatásban** az R ismerete és R-parancsfájlok használata nélkül is lehetősége van R-alapú Power BI-vizualizációk használatára. Ez lehetővé teszi az R-vizualizációk és R-szkriptek elemzési és vizuális sokoldalúságának kihasználását anélkül, hogy meg kellene tanulnia az R programozási nyelvet, vagy bármit is programoznia kellene.
 
-Az R-alapú Power BI-vizualizációk használatához először ki kell választania és le kell töltenie a használni kívánt egyéni vizualizációt a **Power BI-vizualizációk** [**AppSource-** ](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) katalógusából a Power BI-ba.
+Az R-alapú Power BI-vizualizációk használatához először ki kell választania és le kell töltenie a használni kívánt egyéni vizualizációt a **Power BI-vizualizációk**[**AppSource-** ](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) katalógusából a Power BI-ba.
 
 ![R visual 1a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_1a.png)
 
@@ -129,7 +129,7 @@ A Power BI csapata aktívan dolgozik az ilyen jellegű problémák megelőzésé
 
    b.  A konzolban futtassa a következő parancsot:
 
-       source(“C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R”)
+       source("C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R")
 
    A tipikus alapértelmezett telepítési helyek az alábbiak:
 

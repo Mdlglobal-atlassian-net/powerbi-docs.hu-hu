@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b43727799316ade5ccdb868077360da0b315c56
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: ae13bc69d7049dc9cf5c9d71ce0961ec566252bf
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925690"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379099"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Power BI-jelentések tervezése az akadálymentesség szempontjából
 Meggyőző jelentéseket tervezhet és hozhat létre, és egyben gondoskodhat az akadálymentességükről is. Egy jelentés létrehozásakor a célközönségtől függetlenül mindig úgy kell eljárnia, hogy különleges tervezési megoldások nélkül is elérhető legyen a legtöbb felhasználó számára.
@@ -53,7 +53,7 @@ Olyan lehetőségek is rendelkezésre állnak, amelyek a jelentés használatát
 
 Vessünk egy pillantást a beépített kisegítő lehetőségekre. 
 
-### <a name="keyboard-navigation"></a>Billentyűzettel való navigáció
+### <a name="keyboard-navigation"></a>Navigálás billentyűzettel
 
 A jelentés szerzőjének nem kell aggódnia, hogy a felhasználók a billentyűzet használatával is navigálhatnak-e a jelentésben. A Power BI összes vizualizációja navigálható billentyűzettel; a felhasználó végigjárhatja az adatpontokat, válthat a lapfülek között, és hozzáférhet az olyan interaktív lehetőségekhez, mint a keresztkiemelés, a keresztszűrés és a szeletelés.
 
@@ -253,8 +253,8 @@ A kisegítő eszközök és lehetőségek mellett a Power BI az alábbi ellenőr
 * A dekoratív képeket rejtettként jelölje a lapsorrendben, így a képernyőolvasó nem jelenti be őket.
 * Ne használjon túl sok dekoratív képet, mert elvonhatják a figyelmet.
 
-### <a name="custom-visuals"></a>Egyéni vizualizációk
-* Az egyéni vizualizációkat az akadálymentes **Adatok megjelenítése** táblázatban tekintheti meg. Ha a megjelenített információ nem elégséges, keressen másik vizualizációt.
+### <a name="power-bi-visuals"></a>Power BI-vizualizációk
+* A Power BI-vizualizációkat az akadálymentes **Adatok megjelenítése** táblázatban tekintheti meg. Ha a megjelenített információ nem elégséges, keressen másik vizualizációt.
 * Ha a *Lejátszási tengely* egyéni vizualizációt használja, gondoskodjon róla, hogy ne induljon automatikusan. Tegye egyértelművé, hogy a felhasználónak a változó értékek indításához/leállításához le kell nyomnia a lejátszás/szüneteltetés gombot.
 
 ### <a name="across-visuals-on-the-page"></a>Váltás az oldal vizualizációi között

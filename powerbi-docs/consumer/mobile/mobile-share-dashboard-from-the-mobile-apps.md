@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 07ddf82b120e0e4b77b7545863b536282f849de3
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: c757534ba0d93fb5eb04f10ee7b8792c8c9e4af3
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114428"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435789"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Irányítópult vagy jelentés megosztása a Power BI mobilalkalmazásokból
 A következőkre vonatkozik:
@@ -21,6 +21,9 @@ A következőkre vonatkozik:
 | ![iPhone](./media/mobile-share-dashboard-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-share-dashboard-from-the-mobile-apps/ipad-logo-50-px.png) | ![Android rendszerű telefon](./media/mobile-share-dashboard-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Android rendszerű táblagép](./media/mobile-share-dashboard-from-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-share-dashboard-from-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |Windows 10-eszközök |
+
+>[!NOTE]
+>A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 [Power BI Pro-licenccel](../../service-features-license-type.md) megoszthatja a Power BI mobilalkalmazások hivatkozásait, hogy meghívjon másokat irányítópultjainak vagy jelentéseinek megtekintésére. A hivatkozásokat bárkivel megoszthatja vállalatán belül vagy azon kívül, akár rendelkezik az illető vállalati e-mail-fiókkal, akár nem. Ha a tartalom nem [Prémium kapacitást](../../service-premium-what-is.md) használ, akkor nekik is Power BI Pro-licenccel kell rendelkezniük.
 
