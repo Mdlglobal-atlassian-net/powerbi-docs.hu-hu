@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 03/12/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 34b409bc6c319594c6b8e79acd48e5ed0d674ced
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 8bb95da5383eedac57fb705f697a8481e934e379
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698463"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79202022"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Prémium szintű Power BI-kapacitás újraindítása
 
@@ -30,7 +30,9 @@ A Power BI egyre fejlettebb módokon védi a prémium szintű kapacitások felha
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Biztonságos az újraindítási eljárás? Veszíthetek adatot?
 
-A kapacitásában lévő összes mentett adat, definíció, jelentés és irányítópult teljesen sértetlen marad az újraindítás során. Egy kapacitás újraindításának idejére minden folyamatban lévő ütemezett vagy alkalmi frissítés le lesz állítva. A szolgáltatás újra megkísérli a frissítéseket, amikor a kapacitás elérhetővé válik. A kapacitást használó felhasználók nem mentett munkája elvész. Nekik az újraindítás befejeződése után frissíteniük kell a böngészőjüket.
+A kapacitásában lévő összes mentett adat, definíció, jelentés és irányítópult teljesen sértetlen marad az újraindítás során. Egy kapacitás újraindításának idejére a frissítési motor a legtöbb esetben minden folyamatban lévő ütemezett vagy alkalmi frissítést ideiglenesen leállít. Ezután ezek újraindulnak a Power BI-ba épített újrapróbálkozási logika miatt. A szolgáltatás újra megkísérli a frissítéseket, amikor a kapacitás elérhetővé válik. Előfordulhat, hogy a frissítések állapota nem változik a felhasználói felületen az újraindítási folyamat során. 
+
+Ha a felhasználók az újraindítási folyamat során használják a kapacitást, elveszítik majd a nem mentett munkát. Az újraindítást követően a felhasználóknak frissítenie kell a böngészőt.
 
 ## <a name="how-do-i-restart-a-capacity"></a>Hogyan indíthatok újra egy kapacitást?
 

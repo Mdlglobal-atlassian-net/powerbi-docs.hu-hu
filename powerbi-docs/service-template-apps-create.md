@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 649f4d002c9adbfa882c4ee4320f040f490fd116
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 6b7b472b0c16c47ae2497c5dc8c74cc1c4d778d4
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041723"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436019"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Sablonalkalmazás létrehozása a Power BI-ban
 
@@ -30,7 +30,7 @@ A sablonalkalmazások létrehozásának követelményei az alábbiak:
 - Egy [Power BI Pro-licenc](service-self-service-signup-for-power-bi.md)
 - A [Power BI Desktop telepítése](desktop-get-the-desktop.md) (nem kötelező)
 - A [Power BI alapvető fogalmainak](service-basic-concepts.md) ismerete
-- Sablonalkalmazás nyilvános megosztásához szükséges engedélyek. Részletekért tekintse meg a Power BI [felügyeleti portálján a sablonalkalmazás beállításait](service-admin-portal.md#template-apps-settings).
+- Sablonalkalmazás nyilvános megosztását lehetővé tevő engedélyek (további információ: a Power BI [felügyeleti portálja, sablonalkalmazás beállításai](service-admin-portal.md#template-apps-settings)
 
 ## <a name="create-the-template-workspace"></a>A sablon-munkaterület létrehozása
 
@@ -87,7 +87,7 @@ Most, hogy van tartalom a munkaterületen, készen áll, hogy becsomagolja azt e
 
     Aktiválja az **Új navigációszerkesztőt**, amellyel definiálhatja az alkalmazás navigációs ablaktábláját (további információt a cikk [a navigációs felület megtervezésével](service-create-distribute-apps.md#design-the-navigation-experience) foglalkozó szakaszában találhat).
 
-   ![Alkalmazás kezdőlapjának beállítása](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+   ![Alkalmazás kezdőlapjának beállítása](media/service-template-apps-create/power-bi-install-app-content.png)
     
     **Alkalmazás kezdőlapja:** Ha úgy dönt, hogy nem használja a navigációs szerkesztőt, lehetősége van az alkalmazás kezdőlapjának kiválasztására. Egy jelentés vagy irányítópult meghatározása, amely az alkalmazás kezdőlapja lesz. Olyan kezdőlapot adjon meg, amely megfelelő benyomást kelt.
 
@@ -109,7 +109,7 @@ Most, hogy van tartalom a munkaterületen, készen áll, hogy becsomagolja azt e
     - **Required** (Kötelező): ezzel megkövetelheti a telepítőtől, hogy egy felhasználóspecifikus paramétert adjon meg.
     - **Lock** (Zárolás): A zárolás megakadályozza, hogy a telepítő frissítsen egy paramétert.
 
-    **Access** (Hozzáférés): A tesztelési fázisban eldöntheti, hogy kik azok a szervezetnél, akik telepíthetik és tesztelhetik az alkalmazását. Ne aggódjon, később is visszatérhet, és megváltoztathatja ezeket a beállításokat (a beállítás nem vonatkozik az elosztott sablonalkalmazáshoz való hozzáférésre).
+    **Access** (Hozzáférés): A tesztelési fázisban eldöntheti, hogy kik azok a szervezetnél, akik telepíthetik és tesztelhetik az alkalmazását. Ne aggódjon, később is visszatérhet, és megváltoztathatja ezeket a beállításokat. A beállítás nem befolyásolja az elosztott sablonalkalmazáshoz való hozzáférést.
 
 2. Válassza az **Alkalmazás létrehozása** lehetőséget.
 

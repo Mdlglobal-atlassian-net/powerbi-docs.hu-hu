@@ -6,30 +6,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 03/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: df8c84b5b7baf55a32e07e3e48cb02317fdf7875
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: cbaf3244ce8e8aa2755b6b47bf6381c191293306
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527437"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133224"
 ---
-# <a name="use-the-updated-ribbon-in-power-bi-desktop-preview"></a>A frissített menüszalag használata a Power BI Desktopban (előzetes verzió)
+# <a name="use-the-updated-ribbon-in-power-bi-desktop"></a>A frissített menüszalag használata a Power BI Desktopban
 
-A 2019. novemberi frissítéstől kezdve a Power BI Desktop átdolgozott menüszalagja biztosít a más Microsoft-termékekéhez, például a Microsoft Office-éhoz jobban illeszkedő megjelenést és felületet.
+A 2020. márciusi frissítéstől kezdve a Power BI Desktop átdolgozott menüszalagja biztosít a más Microsoft-termékekéhez, például a Microsoft Office-éhoz jobban illeszkedő megjelenést és felületet. 2019 novemberétől a frissített menüszalag előzetes verzióként jelenik meg a havi frissítésekben, és a 2020. márciusi frissítéstől kezdve az új menüszalag az alapértelmezett felhasználói felület.
 
 ![Új menüszalag a Power BI Desktopban](media/desktop-ribbon/desktop-ribbon-02.png)
 
-A frissített menüszalag előzetes verziójú, hogy a felhasználóktól és ügyfelektől összegyűjtött visszajelzések alapján gondoskodhassunk a kivételes élményről. Várakozással tekintünk az előzetes verzió, a visszajelzések és a fejlesztések néhány hónapja elé, mielőtt a Power BI Desktop menüszalagja általánosan elérhető lesz. 
-
 ## <a name="how-to-enable-the-updated-ribbon"></a>A frissített menüszalag engedélyezése
 
-A Power BI frissített menüszalagja előzetes funkció, amelyet engedélyezni kell. Az engedélyezéshez válassza a **Fájl > Lehetőségek és beállítások > Lehetőségek** menüpontot, majd a bal oldali oszlop **Előzetes funkciók** elemét. A jobb oldali panelen található a **Frissített menüszalag** jelölőnégyzete. Az előzetes funkció engedélyezéséhez jelölje be a **Frissített menüszalag** melletti jelölőnégyzetet. Ahhoz, hogy az előzetes funkció módosítása érvénybe lépjen, újra kell indítania a Power BI Desktopot.
+A 2020. márciusi frissítéstől kezdve a frissített menüszalag alapértelmezés szerint be van kapcsolva. A Power BI Desktop korábbi verzióiban (a 2019. novemberi frissítéstől kezdve) a Power BI frissített menüszalagja előzetes verziójú szolgáltatás volt, és engedélyezni kellett. Ezekben a korábbi verziókban az engedélyezéshez válassza a **Fájl > Lehetőségek és beállítások > Lehetőségek** menüpontot, majd a bal oldali oszlop **Előzetes funkciók** elemét. A jobb oldali panelen található a **Frissített menüszalag** jelölőnégyzete. Az előzetes funkció engedélyezéséhez jelölje be a **Frissített menüszalag** melletti jelölőnégyzetet. Ahhoz, hogy az előzetes funkció módosítása érvénybe lépjen, újra kell indítania a Power BI Desktopot.
 
 ![A Power BI Desktop frissített menüszalagjának beállítása](media/desktop-ribbon/desktop-ribbon-01.png)
 
+> [!NOTE]
+> A Power BI Desktop 2020. márciusi verziójától kezdődően nem szükséges engedélyezni a frissített menüszalagot, mivel 2020 márciusától kezdve az új menüszalag az alapértelmezett felhasználói felület.
 
 ## <a name="features-of-the-new-ribbon"></a>Az új menüszalag funkciói
 

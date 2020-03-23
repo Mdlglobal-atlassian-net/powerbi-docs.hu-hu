@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 03/17/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 869da47cd64e93a930fe6e92071345be093617a7
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 11e9bfb2c8dce526ad81395645165c2c7dd70a00
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114035"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525706"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Feliratkozás jelentésre vagy irányítópultra a Power BI szolgáltatásban 
 
@@ -65,7 +65,7 @@ Függetlenül attól, hogy irányítópultra vagy jelentésre iratkozik fel, a f
 
 3. Ha minden jónak látszik, az előfizetés mentéséhez válassza a **Mentés és bezárás** lehetőséget. Az beállított ütemezés szerint e-mailt fog kapni az irányítópult vagy jelentés pillanatképével. Minden olyan feliratkozás, amelynek gyakorisága **Adatfrissítések utáni**, csak az adott napi első ütemezett frissítés után küld e-mailt.
    
-   ![az irányítópult e-mailes pillanatképe](media/end-user-subscribe/power-bi-email.png)
+   ![az irányítópult e-mailes pillanatképe](media/end-user-subscribe/power-bi-email-old.png)
    
     A jelentésoldal frissítésével az adathalmaz nem frissül. Egy adathalmaz manuális frissítését csak annak tulajdonosa végezheti el. Az alapul szolgáló adathalmaz(ok) tulajdonosának nevét úgy keresheti meg, hogy a menüsávon található legördülő menüt választja, vagy megkeresi az eredeti feliratkozási e-mailt.
    
@@ -80,14 +80,14 @@ Az Ön által létrehozott feliratkozásokat csak Ön kezelheti. Válassza ismé
 A feliratkozás megszűnik, ha lejár a Pro-licence, ha az irányítópultot vagy jelentést törli a tulajdonosa, vagy ha törlik a feliratkozás létrehozásához használt felhasználói fiókot.
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
-* Ha el szeretné kerülni, hogy a feliratkozással kapcsolatos e-mailek a levélszemétmappába kerüljenek, adja hozzá a Power Platform e-mail-aliast (PowerPlat-noreply@microsoft.com) a névjegyeihez. Ha Microsoft Outlookot használ, kattintson a jobb gombbal az aliasra, és válassza a **Hozzáadás az Outlook-névjegykártyákhoz** parancsot. 
+* Ha el szeretné kerülni, hogy a feliratkozással kapcsolatos e-mailek a levélszemétmappába kerüljenek, adja hozzá a Power BI e-mail-aliast (no-reply-powerbi@microsoft.com) a névjegyeihez. Ha Microsoft Outlookot használ, kattintson a jobb gombbal az aliasra, és válassza a **Hozzáadás az Outlook-névjegykártyákhoz** parancsot. 
 * Előfordulhat, hogy a felhasználóknak küldött előfizetési e-mailekben a több mint 25 kitűzött csempével vagy négy kitűzött élő jelentésoldallal rendelkező irányítópultok nem jelennek meg teljes egészében. Javasoljuk, hogy forduljon az irányítópult tervezőjéhez, és kérje meg, hogy az e-mail megfelelő megjelenítése érdekében csökkentse a kitűzött csempék számát 25 alá, a kitűzött élő jelentések számát pedig négy alá.  
 * Az irányítópultok e-mail-feliratkozásai esetén, ha bármely csempe sorszintű biztonsággal (RLS) rendelkezik, ezek a csempék nem jelennek meg.  A jelentésekhez kapcsolódó e-mail-feliratkozások esetén, ha az adatkészlet sorszintű biztonságot használ, nem hozható létre feliratkozás.
 * Ha az e-mailben lévő (a tartalomra mutató) hivatkozás már nem működik, akkor lehetséges, hogy a tartalmat eltávolították. Az e-mailben a képernyőkép alatt ellenőrizheti, hogy Ön iratkozott-e fel, vagy valaki más iratkoztatta fel Önt. Ha valaki más tette, kérje meg azt a munkatársát, hogy vagy ne küldjön több e-mailt, vagy újra iratkoztassa fel Önt.
 * A jelentésoldalakra való feliratkozás a jelentésoldal nevéhez kapcsolódik. Ha feliratkozik egy jelentés oldalára, és annak megváltozik a neve, újból létre kell hoznia az előfizetést.
 * Ha nem tudja használni a feliratkozás funkciót, forduljon a rendszergazdához. Előfordulhat, hogy a szervezet letiltotta ezt a funkciót.  
-* Az e-mailekre való feliratkozások az [egyéni vizualizációk](../developer/power-bi-custom-visuals.md) többségét nem támogatják.  Ez alól kivétel a [minősített](../developer/power-bi-custom-visuals-certified.md) egyéni vizualizációk esete.  
-* Az e-mailekre való feliratkozások jelenleg nem támogatják az R-alapú egyéni vizualizációkat.  
+* Az e-mailekre való feliratkozások a [Power BI-vizualizációk](../developer/visuals/power-bi-custom-visuals.md) többségét nem támogatják.  Ez alól kivétel a [minősített](../developer/visuals/power-bi-custom-visuals-certified.md) Power BI-vizualizációk esete.  
+* Az e-mailekre való feliratkozások jelenleg nem támogatják az R-alapú Power BI-vizualizációkat.  
 * Bizonyos típusú csempék különösen az irányítópult-előfizetések esetén jelenleg még nem támogatottak.  Ilyenek többek között a streamelési csempék, a videócsempék és az egyéni webes tartalomcsempék.     
 * A különösen nagy méretű képeket tartalmazó irányítópultokra vagy jelentésekre való feliratkozás meghiúsulhat az e-mailek méretkorlátozásai miatt.    
 * A Power BI automatikusan felfüggeszti a több mint két hónapja nem látogatott irányítópultokhoz vagy jelentésekhez társított adathalmazok frissítését.  Ha azonban feliratkozik egy irányítópultra vagy jelentésre, az nem fog szünetelni akkor sem, ha nem látogatják.

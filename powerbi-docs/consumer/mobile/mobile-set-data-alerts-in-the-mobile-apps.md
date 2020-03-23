@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/11/2019
 ms.author: painbar
-ms.openlocfilehash: 3af0470e29b4f71cf8948bff4c1b317304533ac8
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: ff33bc2005918ba08c6098afd91a020e0cb6ba79
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114649"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435812"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Adatriasztások beállítása a Power BI mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -103,6 +103,10 @@ A riasztásokat egyenként kezelheti a Power BI mobilalkalmazásban vagy [az ös
 5. A riasztás végleges törléséhez koppintson a szemetes ikonra ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-delete-alert-icon.png).
 
 ## <a name="data-alerts-on-a-windows-device"></a>Adatriasztások a Windows-eszközökön
+
+>[!NOTE]
+>A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
+
 ### <a name="set-data-alerts-on-a-windows-device"></a>Riasztások beállítása Windows-eszközökön
 1. Koppintson az irányítópult egyik számot vagy mérőműszert tartalmazó csempéjére annak megnyitásához.  
 2. Riasztás hozzáadásához koppintson a harang ikonra ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-off.png).  

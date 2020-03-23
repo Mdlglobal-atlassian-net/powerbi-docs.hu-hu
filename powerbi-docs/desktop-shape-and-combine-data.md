@@ -10,11 +10,11 @@ ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: d6a36f8ef3ef5d668fe8d6021758b651cdbf7fd5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877829"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79206769"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Oktatóanyag: Adatok formázása és összevonása a Power BI Desktopban
 
@@ -107,7 +107,7 @@ Mielőtt használhatnánk a lekérdezést, végre kell hajtanunk néhány válto
 1. Kattintson a jobb gombbal az egyik lépésre. A Lekérdezésszerkesztő megjelenít egy menüt, amelyben a következő feladatokat végezheti el: 
    - **Átnevezés**: A lépés nevének megváltoztatása.
    - **Törlés**: A lépés törlése.
-   - **Összes további** **törlése**: Az aktuális lépés és az összes azt követő lépés törlése.
+   - **Törlés** **az összes továbbinál**: Az aktuális lépés és az összes azt követő lépés törlése.
    - **Mozgatás felfelé**: A lépés feljebb mozgatása a listában.
    - **Mozgatás lefelé**: A lépés lejjebb mozgatása a listában.
 
@@ -269,7 +269,7 @@ Ebben az esetben érdemes egyesíteni a lekérdezéseket. Ehhez kövesse az alá
 
    ![Egyesítés ablak](media/desktop-shape-and-combine-data/shapecombine_merge2.png)
 
-1. Kattintson az **OK** gombra.
+1. Válassza az **OK** lehetőséget.
 
    A Lekérdezésszerkesztő a lekérdezés végén létrehoz egy **NewColumn** nevű oszlopot, amely a meglévő lekérdezéssel egyesített tábla (lekérdezés) adatait tartalmazza. Az egyesített lekérdezés összes oszlopa a **NewColumn** oszlopba lesz sűrítve, de a **Kibonthatja** a táblázatot, és tetszőleges oszlopokat adhat hozzá.
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 767ea586ce35d60c99742ada6f90fe342bd59313
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: e9156e539ee9f1a344b89f7814c148829498e5fc
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114719"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435927"
 ---
 # <a name="single-sign-on-in-the-power-bi-mobile-windows-app"></a>Egyszeri bejelentkezés használata a windowsos Power BI mobilalkalmazásban
 
@@ -21,7 +21,10 @@ További információ az egyszeri bejelentkezés (SSO) használatáról a window
 
 Mivel a Power BI Windows-alkalmazás integrálva van az Azure Active Directoryba, az elsődleges szervezeti fiókját a tartományhoz csatlakozott eszközökbe való bejelentkezésen kívül a Power BI szolgáltatásba való bejelentkezésre is használhatja. Amennyiben a Power BI-t egy windowsos telefonon használja, győződjön meg arról, hogy a Power BI munkahelyi vagy iskolai fiókként van beállítva az eszközbeállításokban.  
 
-Az SSO használata csak a Microsoft Azure Active Directory által felügyelt windowsos eszközökön használható. 
+Az SSO használata csak a Microsoft Azure Active Directory által felügyelt windowsos eszközökön használható.
+
+>[!NOTE]
+>A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="sign-in-with-sso"></a>Bejelentkezés SSO-val
 

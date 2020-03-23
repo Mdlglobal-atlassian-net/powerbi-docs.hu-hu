@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 40e11f6423df12355800a2c62876e5de1f8b3f82
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 344b041b8cca3e6ed4be1f40c0e783df18315679
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73867462"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378593"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Nagy sűrűségű sorok mintavétele a Power BI-ban
 A **Power BI Desktop** 2017. júniusi kiadásától és a **Power BI szolgáltatás** frissítéseiben egy új mintavételi algoritmus érhető el, amelynek köszönhetően a vizualizációk hatékonyabban mintavételezik a nagy sűrűségű adatokat. Például létrehozhat egy vonaldiagramot a kereskedelmi egységek értékesítési adataiból, ahol minden egyes üzlet több mint tízezer értékesítési nyugtával rendelkezik. Egy ilyen értékesítési információkat tartalmazó vonaldiagram mintát vesz az egyes üzletek adataiból (reprezentatív adatokat választ, amelyek megmutatják, hogyan változtak az értékesítések az idő múlásával), és egy több adatsorozatú vonaldiagramot hoz létre, amely az alapul szolgáló adatokat ábrázolja. Ez gyakori eljárás a nagy sűrűségű pontdiagramok vizualizációjánál. Ebben a cikkben részletezzük, miben fejlődött a Power BI Desktop mintavételi folyamata nagy sűrűségű adatok esetén.
@@ -46,7 +46,7 @@ Minden vizualizációra az alábbi vizuális korlátozások vonatkoznak:
 A 3500 adatpontos korlátozás alól *kivételt* képeznek a következő vizualizációtípusok, amelyek esetében magasabb az adatpontok maximális száma:
 
 * Legfeljebb **150 000** adatpont R-vizualizációk esetében.
-* Legfeljebb **30 000** adatpont az egyéni vizualizációk esetében.
+* **30 000** adatpont Power BI-vizualizációk számára.
 * Legfeljebb **10 000** adatpont pontdiagramok esetében (a pontdiagramok alapértelmezett értéke 3500).
 * **3500** minden más vizualizáció esetében.
 
@@ -61,7 +61,7 @@ Ahogy korábban már említettük, az egyes sorozatok minimális részletessége
 
 Minden dobozt két adatpont ábrázol, amelyek a doboz reprezentatív adatpontjaiként szerepelnek a vizualizációban. Az adatpontok egyszerűen a doboz legmagasabb és legalacsonyabb értékei, így a kiválasztásukkal a dobozolási folyamat biztosítja, hogy minden fontos magas vagy releváns alacsony érték rögzítve lesz és megjelenik a vizualizációban.
 
-Ha úgy érzi, hogy az alkalmankénti kiugró értékek rögzítése és a vizualizációbeli megfelelő megjelenítése igen sok elemzést igényel, igaza van, de éppen ez indokolta az új algoritmus és dobozolási eljárás kidolgozását.
+Ha úgy érzi, hogy ez nagyon sok elemzést jelent annak érdekében, hogy az alkalmankénti kiugró elemeket rögzíteni lehessen és megfelelően meg lehessen jeleníteni a vizualizációban, igaza van. De éppen ez az oka az új algoritmusnak és a dobozolási folyamatnak.
 
 ## <a name="tooltips-and-high-density-line-sampling"></a>Elemleírások és nagy sűrűségű sorok mintavétele
 Fontos megjegyezni, hogy ez a dobozolási folyamat, amely az adott doboz legalacsonyabb és legmagasabb értékének rögzítését, majd a megjelenítését eredményezi, hatással lehet arra, hogy az elemleírások hogyan jelenítik meg az adatokat, amikor a kurzort az adatpontok fölé viszi. Ahhoz, hogy ennek működését bemutathassuk, térjünk vissza a tőzsdei árfolyamok példájához.

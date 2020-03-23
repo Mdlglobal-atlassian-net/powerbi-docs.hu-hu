@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 12/19/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: b7a45309c3bfad27cc3b26990ee148a9e44b8998
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: ae11ec64a0bffbd3e64c0fd677a7225c2b31f521
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75927114"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488683"
 ---
 # <a name="power-bi-premium-metrics-app"></a>A Power BI Premium Metrics alkalmazás
 
@@ -131,7 +131,7 @@ A második forgatókönyv diagnosztizálásához azt kell meghatározni, hogy a 
 
 Az alábbi lépésekkel oldhatja meg a második forgatókönyvhöz kapcsolódó problémákat:
 
-1. **A kapacitás horizontális felskálázása** – a kapacitás a következő SKU-ra való horizontális felskálázása a jelenlegi SKU-hoz képest kétszeres mennyiségű memóriát tesz elérhetővé, így enyhítve a jelenleg a memóriára nehezedő terhelést.
+1. **A kapacitás horizontális felskálázása** – a kapacitás a következő SKU-ra való horizontális felskálázása a jelenlegi SKU-hoz képest kétszeres mennyiségű memóriát tesz elérhetővé, így enyhítve a jelenleg a kapacitásra nehezedő terhelést.
 
 2. **Adathalmazok áthelyezése egy másik kapacitásba** – ha rendelkezik olyan másik kapacitással, amelyben több memória áll rendelkezésre, a nagyobb adathalmazokat tartalmazó munkaterületeket áthelyezheti abba a kapacitásba.
 
@@ -262,7 +262,7 @@ Ha nincs elegendő memória egy interaktív lekérdezés adathalmazának betölt
 
 Az első forgatókönyv diagnosztizálásához először határozza meg, hogy a szabályozást az okozza-e, hogy nincs elegendő memória. A következő beállításokat kell elvégeznie.
 
-1.  Rákattintással válassza ki a kívánt adathalmazt az **A táblázatban**: 
+1.    Rákattintással válassza ki a kívánt adathalmazt az **A táblázatban**: 
 
     ![A táblázat](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -305,7 +305,7 @@ Dedikált kapacitások esetében a Power BI korlátozza az egyidejűleg végreha
 
 A második forgatókönyv diagnosztizálásához először határozza meg, hogy a szabályozást az okozza-e, hogy a rendszer elérte a párhuzamos frissítések maximális számát. A következő beállításokat kell elvégeznie.
 
-1.  Rákattintással válassza ki a kívánt adathalmazt az **A táblázatban**: 
+1.    Rákattintással válassza ki a kívánt adathalmazt az **A táblázatban**: 
 
     ![A táblázat](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -341,6 +341,6 @@ A második forgatókönyv diagnosztizálásához először határozza meg, hogy 
 * [Microsoft Power BI Premium-tanulmány](https://aka.ms/pbipremiumwhitepaper)
 * [A Power BI Enterprise üzembehelyezési előkészületeit bemutató tanulmány ](https://aka.ms/pbienterprisedeploy)
 * [A Pro meghosszabbított próbaverziójának aktiválása](service-extended-pro-trial.md)
-* [Power BI Embedded GYIK](developer/embedded-faq.md)
+* [Power BI Embedded GYIK](developer/embedded/embedded-faq.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -3,19 +3,19 @@ title: Új Power App-alkalmazás beágyazása egy Power BI-jelentésbe
 description: Alkalmazás beágyazása, amely ugyanazt az adatforrást használja, és ugyanúgy szűrhető, mint a jelentés többi eleme
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: tapan maniar
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 02/03/2020
+ms.date: 03/17/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 99869740eb20b14625e66ff50cb48b08e5cb3e15
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.openlocfilehash: 3be5f9efe3a6e18ba46f6990b09952d37b967e16
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036676"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525936"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Oktatóanyag: Power Apps-vizualizáció beágyazása egy Power BI-jelentésbe
 
@@ -106,4 +106,5 @@ Ha már nem szeretné tovább használni a Lehetőségelemzési mintát, akkor n
 
 
 ## <a name="next-steps"></a>Következő lépések
-[Q&A – vizualizáció](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[Q&A – vizualizáció](power-bi-visualization-types-for-reports-and-q-and-a.md)    
+[Oktatóanyag: Power Apps-vizualizáció beágyazása egy Power BI-jelentésbe](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual)

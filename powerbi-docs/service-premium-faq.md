@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: ff2f22620cf062dcc342323e71dc7401b5991cd7
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 6b2876ca78e07cf7c3c2b778ef9c571745baa1e5
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74697037"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488660"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premium – gyakori kérdések
 
@@ -73,7 +73,7 @@ A [díjkalkulátorral](https://powerbi.microsoft.com/calculator/) megállapítha
 **Elérhető a Power BI Premium az Office 365 E5 keretében?**  
 A Power BI Premium a Power BI Pro bővítménye. Az Office 365 E5 tartalmazza a Power BI Prót. Így az E5-ügyfelek a Premium szolgáltatást a meglévő Pro-licenceik bővítményeként vásárolhatják meg.
 
-**Mi a Power BI jelentéskészítő kiszolgáló? Elérhetővé teszi a Power BI-t a helyszínen is?**
+**Mi a Power BI jelentéskészítő kiszolgáló? Ez azt jelenti, hogy elérhetővé teszik a Power BI-t a helyszínen is?**
 
 A Power BI jelentéskészítő kiszolgáló egy helyszíni kiszolgáló, amely lehetővé teszi interaktív Power BI-jelentések és lapokra tördelt jelentések használatát és kiosztását a helyszínen, teljes egészében a cég tűzfala mögött. A Power BI jelentéskészítő kiszolgáló a Power BI Premium részeként, illetve az SQL Server Enterprise Editiont Frissítési Garanciával használó ügyfelek számára díjtalan juttatásként érhető el. További információ a licencelésről: [A Power BI jelentéskészítő kiszolgáló licencelése](report-server/get-started.md#licensing-power-bi-report-server). További információért forduljon Microsoft-képviselőjéhez.
 
@@ -88,6 +88,6 @@ A további tudnivalókért lásd: [Power BI jelentéskészítő kiszolgáló has
 [Microsoft Power BI Premium-tanulmány](https://aka.ms/pbipremiumwhitepaper)
 [A Power BI nagyvállalati üzembehelyezési előkészületeit bemutató tanulmány](https://aka.ms/pbienterprisedeploy)
 [A kiterjesztett Pro-próbaverzió aktiválása](service-extended-pro-trial.md)
-[Power BI Embedded – gyakori kérdések](developer/embedded-faq.md)
+[Power BI Embedded – gyakori kérdések](developer/embedded/embedded-faq.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

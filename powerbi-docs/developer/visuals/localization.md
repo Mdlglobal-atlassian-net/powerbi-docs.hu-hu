@@ -7,16 +7,16 @@ manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: ad63a1b97c744e8614e584874c4d896a85598e48
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: bb323737934ade08ed4998bdcf8d441e8951732c
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819123"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379867"
 ---
-# <a name="add-the-locale-in-power-bi-for-custom-visuals"></a>Területi beállítások megadása a Power BI-ban az egyéni vizualizációkhoz
+# <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Területi beállítások megadása a Power BI-ban a Power BI-vizualizációkhoz
 
 A vizualizációk képesek lekérni a területi beállításokat a Power BI-ból, és ez alapján a megfelelő nyelvre honosítani a tartalmaikat.
 
@@ -24,7 +24,7 @@ További információk: [A Power BI által támogatott nyelvek és országok/ré
 
 Példa: területi beállítások lekérése egy oszlopdiagram-vizualizációban.
 
-![Honosítás egy oszlopdiagram-vizualizációban (példa)](media/locale-in-samplebarchart.png)
+![Honosítás egy oszlopdiagram-vizualizációban (példa)](media/localization/locale-in-samplebarchart.png)
 
 Az itt látható oszlopdiagramok mindegyikét különböző területi beállításokkal (angol, baszk és hindi) hozták létre. Ez látható az elemleírásban.
 
@@ -95,13 +95,13 @@ zh-TW | 中國 (hagyományos kínai)
 > [!NOTE]
 > A PowerBI Desktopban a területi beállítás tulajdonság a telepített PowerBI Desktop nyelvét fogja tartalmazni.
 
-## <a name="localizing-the-property-pane-for-custom-visuals"></a>A Tulajdonság panel honosítása egyéni vizualizációkhoz
+## <a name="localizing-the-property-pane-for-power-bi-visuals"></a>A Tulajdonság panel honosítása Power BI-vizualizációkhoz
 
 A Tulajdonság panelen található mezők az egységesebb, koherensebb felhasználói élmény érdekében honosíthatók. A honosított egyéni vizualizációk pontosan úgy működnek, mint a Power BI alapvető vizualizációi.
 
 Például egy `pbiviz new` paranccsal létrehozott, nem honosított egyéni vizualizáció esetében a következők fognak megjelenni a Tulajdonság panelen:
 
-![Honosítás a Tulajdonság panelen](media/property-pane.png)
+![Honosítás a Tulajdonság panelen](media/localization/property-pane.png)
 
 a „Category Data”(Kategóriaadatok) és a „Measure Data” (Mérési adatok) elem a `displayName` értékkel van meghatározva a capabilities.json fájlban.
 
@@ -132,7 +132,7 @@ Ezután adjon hozzá egy stringResources nevű könyvtárat. Ez a könyvtár fog
 
 Tegyük fel, hogy a példánkban az arab és a héber nyelvet szeretnénk támogatni. A két JSON-fájlt a következőknek megfelelően kell hozzáadni:
 
-![Honosítási sztringek a sztringerőforrás-mappában](media/stringresources-files.png)
+![Honosítási sztringek a sztringerőforrás-mappában](media/localization/stringresources-files.png)
 
 Minden JSON-fájl egy területi beállítást definiál (a fájlnak a fenti listában szereplő támogatott területi beállítások egyikére kell vonatkoznia), és tartalmazza a kívánt megjelenítettnév-kulcsok sztringértékeit. A példában a héber sztringerőforrás-fájl a következőképpen fog megjelenni:
 
@@ -161,13 +161,13 @@ Asztali használat esetén töltse le a Power BI Desktop honosított verzióját
 
 Ha a szolgáltatásban a webes klienst (böngészőt) szeretné használni, módosítsa a következőknek megfelelően a nyelvi beállításokat:
 
-![Honosítás a webszolgáltatásban](media/webservice-settings.png)
+![Honosítás a webszolgáltatásban](media/localization/webservice-settings.png)
 
 ## <a name="resource-file"></a>Erőforrásfájl
 
 A stringResources mappán belül hozzon létre egy mappát a használni kívánt területi beállításnak megfelelően elnevezve, majd ebben egy resources.resjson nevű fájlt. A példánkban en-US és ru-RU.
 
-![Az új resjson fájl](media/new-resjson.png)
+![Az új resjson fájl](media/localization/new-resjson.png)
 
 Ezt követően adja hozzá a használni kívánt honosítási sztringeket az előző lépésben létrehozott resources.resjson fájlhoz.
 
@@ -195,7 +195,7 @@ Az alábbi példában a resources.resjson fájl en-US verzióját fogja látni:
 }
 ```
 
-Új localizationManager-példány Hozzon létre egy új localizationManager-példányt a vizualizáció kódjában az alábbinak megfelelően:
+Új localizationManager-példány Hozzon létre egy új localizationManager-példányt a vizualizáció kódjában az alábbinak megfelelően
 
 ```typescript
 private localizationManager: ILocalizationManager;

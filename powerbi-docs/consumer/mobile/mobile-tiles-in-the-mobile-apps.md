@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 0f3aa67ea3d8a1cdf34503a833fad42b2d258859
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: c9957b1f190f3e2cfc2aa5f082eb11df4d647b5f
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114669"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435904"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Ismerkedés a Power BI-mobilalkalmazások csempéivel
 A következőkre vonatkozik:
@@ -85,6 +85,10 @@ Ezek a csempék aztán a Power BI mobilalkalmazásban fókusz módban megnyithat
 4. A bal felső sarokban lévő nyílra koppintva bezárhatja a csempét és visszatérhet az irányítópulthoz.
 
 ## <a name="tiles-in-the-windows-10-mobile-app"></a>Csempék a Windows 10-mobilalkalmazásban
+
+>[!NOTE]
+>A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
+
 1. Nyisson meg egy [irányítópultot a Windows 10-hez készült Power BI mobilalkalmazásban](mobile-apps-view-dashboard.md).
 2. Koppintson a csempén látható három pontra. Innen a következő lehetőségeket éri el: 
    

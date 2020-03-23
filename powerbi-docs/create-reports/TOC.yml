@@ -11,8 +11,8 @@
     - name: Oktatóanyagok
       expanded: true
       items:
-        - name: 'Gyakorlati tesztkörnyezet: Többoldalas jelentés készítése'
-          href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
+        - name: 'Online kurzus: Oldalakra osztott jelentések'
+          href: ../paginated-reports/paginated-reports-online-course.md
         - name: Többoldalas jelentés készítése és feltöltése
           href: ../paginated-reports/paginated-reports-quickstart-aw.md
     - name: Minták
@@ -99,18 +99,6 @@
               href: ../paginated-reports/paginated-reports-faq.md
     - name: Útmutatók
       items:
-        - name: Adatkészletek és jelentések közzététele
-          href: ../desktop-upload-desktop-files.md
-        - name: Vizualizációk hozzáadása Power BI-jelentéshez (1. rész)
-          href: ../visuals/power-bi-report-add-visualizations-i.md
-        - name: Vizualizációk hozzáadása Power BI-jelentéshez (2. rész)
-          href: ../visuals/power-bi-report-add-visualizations-ii.md
-        - name: 'Vizuális címek, hátterek és jelmagyarázatok testreszabása'
-          href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
-        - name: Adatot nem tartalmazó elemek megjelenítése a Power BI-ban
-          href: ../desktop-show-items-no-data.md
-        - name: Automatikus dátum/idő alkalmazása
-          href: ../desktop-auto-date-time.md
         - name: Power BI-jelentések
           items:
             - name: Automatikus oldalfrissítés engedélyezése (előzetes verzió)
@@ -211,12 +199,22 @@
               href: ../service-create-qr-code-for-report.md
             - name: Jelentés exportálása a Power BI Desktopba (előzetes verzió)
               href: ../service-export-to-pbix.md
+            - name: Adatkészletek és jelentések közzététele
+              href: ../desktop-upload-desktop-files.md
         - name: Vizualizációk
           items:
+            - name: Vizualizációk hozzáadása Power BI-jelentéshez (1. rész)
+              href: ../visuals/power-bi-report-add-visualizations-i.md
+            - name: Vizualizációk hozzáadása Power BI-jelentéshez (2. rész)
+              href: ../visuals/power-bi-report-add-visualizations-ii.md
             - name: Vizualizációk hozzáadása Power BI-jelentéshez
               href: ../visuals/power-bi-report-visualizations.md
             - name: Vizualizációk módosítása Power BI-jelentésekben
               href: ../visuals/power-bi-report-change-visualization-type.md
+            - name: 'Vizuális címek, hátterek és jelmagyarázatok testreszabása'
+              href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
+            - name: Adatot nem tartalmazó elemek megjelenítése a Power BI-ban
+              href: ../desktop-show-items-no-data.md
             - name: Adatpontkorlátok és -stratégiák alkalmazása vizualizációtípus szerint
               href: ../visuals/power-bi-data-points.md
             - name: Vizualizáció alapjául szolgáló adatok megjelenítése
@@ -317,6 +315,8 @@
               href: ../desktop-accessibility-keyboard-shortcuts.md
         - name: Oldalakra osztott jelentések
           items:
+            - name: 'Gyakorlati tesztkörnyezet: Többoldalas jelentés készítése'
+              href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
             - name: Adatok megadása közvetlenül többoldalas jelentésben
               href: ../paginated-reports/paginated-reports-enter-data.md
             - name: Beágyazott adatforrás létrehozása

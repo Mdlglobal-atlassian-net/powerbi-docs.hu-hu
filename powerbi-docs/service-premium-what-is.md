@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/12/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 07fd9a00034a210dfbcc6cae4aa721e3b09bd37a
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 1caa68ac00f9821979f741bf3266514fcb33c36a
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76889397"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381169"
 ---
 # <a name="what-is-power-bi-premium"></a>Mi az a Power BI Premium?
 
@@ -88,7 +88,7 @@ Az egyes Premium termékváltozatok (és a megfelelően méretezett A termékvá
 
 ### <a name="capacity-workloads"></a>Kapacitás-munkaterületek
 
-A kapacitás-munkaterületek a felhasználók számára elérhetővé tett szolgáltatások. A Premium- és Azure-kapacitások alapértelmezés szerint csak egy Power BI-lekérdezések futtatásával társított adathalmazbeli számítási feladatot támogatnak. Az adathalmazbeli számítási feladat nem tiltható le. További számítási feladatok engedélyezhetők [mesterséges intelligenciához (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [adatfolyamokhoz](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) és [lapszámozott jelentésekhez](paginated-reports-save-to-power-bi-service.md). Ezek a számítási feladatok csak Premium-előfizetésben vannak támogatva. 
+A kapacitás-munkaterületek a felhasználók számára elérhetővé tett szolgáltatások. A Premium- és Azure-kapacitások alapértelmezés szerint csak egy Power BI-lekérdezések futtatásával társított adathalmazbeli számítási feladatot támogatnak. Az adathalmazbeli számítási feladat nem tiltható le. További számítási feladatok engedélyezhetők [mesterséges intelligenciához (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [adatfolyamokhoz](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) és [lapszámozott jelentésekhez](paginated-reports/paginated-reports-save-to-power-bi-service.md). Ezek a számítási feladatok csak Premium-előfizetésben vannak támogatva. 
 
 Minden újabb számítási feladat lehetővé teszi a számítási feladat által felhasználható maximális memória konfigurálását (a teljes rendelkezésre álló memória arányában). A maximális memória alapértelmezett beállításait a termékváltozat határozza meg. Egy kapacitás rendelkezésre álló erőforrásainak legjobb kihasználása érdekében ilyen további számítási feladatokat csak akkor érdemes engedélyezni, amikor használatban vannak. A memóriabeállításokat csak akkor módosíthatja, ha úgy értékelte, hogy az alapértelmezett beállítások nem felelnek meg az Ön erőforrásai kapacitásigényeinek. Egy kapacitáshoz a kapacitás rendszergazdái engedélyezhetnek és konfigurálhatnak számítási feladatokat a [Felügyeleti portálon](service-admin-portal.md) megtalálható **Kapacitásbeállítások**, vagy a [kapacitás REST API-k](https://docs.microsoft.com/rest/api/power-bi/capacities) használatával.  
 
@@ -209,7 +209,7 @@ A P1-P3 és A4-A6 termékváltozatokban támogatott többoldalas jelentések a R
 
 A Power BI Premiumban a többoldalas jelentés számítási feladat, amelyet a Felügyeleti portál használatával kell engedélyezni a kapacitáson. A kapacitás-rendszergazdák engedélyezhetik, és megadhatják a felhasználható memória mennyiségét a kapacitás összes memória-erőforrásának százalékában. Más számításifeladat-típusoktól eltérően a Premium a többoldalas jelentéseket egy zárt területen futtatja a kapacitáson belül. Ehhez a területhez a megadott maximális memóriát használja, akár aktív a számítási feladat, akár nem. Az alapértelmezett érték 20%. 
 
-További információ: [Többoldalas jelentések a Power BI Premium szolgáltatásban](paginated-reports-report-builder-power-bi.md). A többoldalas jelentések számítási feladat engedélyezéséről a [Számítási feladatok konfigurálása](service-admin-premium-workloads.md) című cikkből tájékozódhat bővebben.
+További információ: [Többoldalas jelentések a Power BI Premium szolgáltatásban](paginated-reports/paginated-reports-report-builder-power-bi.md). A többoldalas jelentések számítási feladat engedélyezéséről a [Számítási feladatok konfigurálása](service-admin-premium-workloads.md) című cikkből tájékozódhat bővebben.
 
 ## <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgáló
  
@@ -227,7 +227,7 @@ A Premium lehetővé teszi, hogy a Pro-felhasználók széles körben megoszthas
 
 További információ: [Power BI-licencelés](service-admin-licensing-organization.md).
 
-## <a name="tool-connectivity-preview"></a>Eszközök összekapcsolhatósága (előzetes verzió)
+## <a name="analysis-services-in-power-bi-premium-preview"></a>Power BI Prémium Analysis Services (előzetes verzió)
 
 A háttérben a nagyvállalatoknál már bizonyított Microsoft **Analysis Services Veripaq motor** működteti a Power BI-adathalmazokat. Az Analysis Services ügyfélkódtárakkal és a nyílt szabványú XMLA protokollt támogató API-kkal biztosítja a programozhatóságot és az ügyfélalkalmazások és -eszközök támogatását. A Power BI Premium-adathalmazok jelenleg *csak olvasási* műveleteket támogatnak Microsoftos és külső ügyfélalkalmazásoktól és eszközöktől, **XMLA-végpontokon** keresztül. 
 

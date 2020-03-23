@@ -9,23 +9,23 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: d9e291ff4f61f69ec84e39767906a79f65c2f30f
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 6bf8ccd9048262ce05aff68819ecdb31a44ddfe2
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114182"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377190"
 ---
 # <a name="visual-types-in-power-bi"></a>Vizualizációtípusok a Power BI-ban
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-Vizualizációk találhatók jelentésekben, irányítópultokon, és a Q&A-ban is. A vizualizációk egyes típusai a Power BI részei, de vannak *egyéni vizualizációk* is. Az egyéni vizualizációk a Power BI-on kívül készülnek úgy, hogy a jelentések *tervezői* felvehessék azokat a Power BI-jelentésekbe, és -irányítópultokba. 
+Vizualizációk találhatók jelentésekben, irányítópultokon, és a Q&A-ban is. A vizualizációk egyes típusai a Power BI részei, de vannak *Power BI-vizualizációk* is. Az egyéni vizualizációk a Power BI-on kívül készülnek úgy, hogy a jelentések *tervezői* felvehessék azokat a Power BI-jelentésekbe, és -irányítópultokba. 
 
 Ez a cikk a Power BI-szolgáltatás részét képező vizualizációtípusokat tekinti át.  Többnyire ezekkel a vizualizációtípusokkal fog találkozni. Ezen vizualizációk bármelyikéről részletes információkat találhat a [vizualizációsablonok Power BI-jelentések *tervezői* számára készült dokumentációjában](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
-> Ha az egyéni vizualizációkkal szeretne megismerkedni, ilyeneket a [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)**Power BI-vizualizációk** szakaszában kereshet. Minden vizualizációhoz tartozik leírás, a létrehozója adatai, és képernyőkép vagy videó. 
+> Ha a Power BI-vizualizációkkal szeretne megismerkedni, ilyeneket a [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)**Power BI-vizualizációk** szakaszában kereshet. Minden vizualizációhoz tartozik leírás, a létrehozója adatai, és képernyőkép vagy videó. 
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>A Power BI-ban rendelkezésre álló vizualizációk listája
 Ez alábbi vizualizációk mind megtalálhatók Power BI-irányítópultokon és -jelentésekben, és [megadhatók a Q&A-ban](end-user-q-and-a.md). Ha szeretné megtudni, hogyan kezelje a vizualizációkat, olvassa el az [Interakció vizualizációkkal jelentésekben, irányítópultokon és alkalmazásokban](end-user-visualizations.md) szakaszt
@@ -237,7 +237,7 @@ A vízesésdiagram remek választás a következőkhöz:
 - ha a vállalat alkalmazottainak számát szeretné ábrázolni az év eleji és év végi értékekkel;
 - ha szeretné megjeleníteni, hogy mennyi pénzt keresett és költött az egyes hónapok során, valamint a fiók folyóegyenlegét.
 
-## <a name="qna"></a>A Q&A által használandó vizualizáció megadása
+## <a name="tell-qa-which-visual-to-use"></a><a name="qna"></a>A Q&A által használandó vizualizáció megadása
 Ha természetes nyelvű lekérdezéseket ír a Power BI Q&A használatával, megadhatja a vizualizáció típusát a lekérdezésben.  Például:
 
 

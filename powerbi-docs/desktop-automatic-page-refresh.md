@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 50daa90f937a9d1c7081d9b22e3c743da950945c
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.openlocfilehash: e7e5e406a0a4c9cdcecfab5a5af681857600feb5
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548563"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488522"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatikus lapfrissítés Power BI Desktopban (előzetes verzió)
 
@@ -35,9 +35,9 @@ Az alábbi ábrán az **Oldalfrissítés** kártya látható. A számozott eleme
 
 ![Oldalfrissítési kártya](media/desktop-automatic-page-refresh/automatic-page-refresh-02.png)
 
-1.  Automatikus oldalfrissítési csúszka – az oldalfrissítés bekapcsolása vagy kikapcsolása
-2.  Az oldalfrissítés időközének értéke – a frissítési időköz értéke
-3.  Az oldalfrissítés időközének egysége – az oldalfrissítés időközének egysége
+1.    Automatikus oldalfrissítési csúszka – az oldalfrissítés bekapcsolása vagy kikapcsolása
+2.    Az oldalfrissítés időközének értéke – a frissítési időköz értéke
+3.    Az oldalfrissítés időközének egysége – az oldalfrissítés időközének egysége
 
 Itt bekapcsolhatja az oldalfrissítést, és kiválaszthatja a frissítés időtartamát. Az alapértelmezett érték 30 perc, a minimális frissítési időköz egy másodperc). A jelentés a beállított időközönként megkezdi a frissítést. 
 
@@ -62,10 +62,10 @@ Az alábbi képen a DirectQuery eredményei láthatók a Teljesítményelemzőbe
 
 Tekintsünk át az adatforrásra vonatkozó néhány egyéb jellemzőt is. 
 
-1.  Az adatok két másodpercenként érkeznek. 
-2.  A Teljesítményelemző a maximális lekérdezési + megjelenítési időt körülbelül 4,9 másodpercként (4688 ezredmásodperc) adja meg. 
-3.  Az adatforrás úgy van konfigurálva, hogy másodpercenként körülbelül 1000 egyidejű lekérdezést kezeljen. 
-4.  Az Ön becslése szerint egyidejűleg mintegy 10 felhasználó fogja megnézni a jelentést.
+1.    Az adatok két másodpercenként érkeznek. 
+2.    A Teljesítményelemző a maximális lekérdezési + megjelenítési időt körülbelül 4,9 másodpercként (4688 ezredmásodperc) adja meg. 
+3.    Az adatforrás úgy van konfigurálva, hogy másodpercenként körülbelül 1000 egyidejű lekérdezést kezeljen. 
+4.    Az Ön becslése szerint egyidejűleg mintegy 10 felhasználó fogja megnézni a jelentést.
 
 Ez az alábbi eredményeket adja:
 
@@ -83,13 +83,13 @@ Most nézzük meg, hogyan kapacitás-rendszergazdaként hogyan észlelheti és d
 
 Automatikus oldalfrissítési gyakoriságot olyan jelentésekhez is beállíthat, amelyeket a Power BI Desktopban hoztak létre, és a Power BI szolgáltatásban tettek közzé. 
 
-A Power BI szolgáltatás jelentéseinek automatikus oldalfrissítését a Power BI Desktopban használatos konfigurációhoz hasonlóan lehet beállítani. Ha a Power BI szolgáltatásban van konfigurálva, az automatikus oldalfrissítés a [beágyazott Power BI-tartalmat](developer/embedding.md) is támogatja. Az alábbi kép a Power BI szolgáltatásban az **Oldalfrissítés** konfigurációját mutatja:
+A Power BI szolgáltatás jelentéseinek automatikus oldalfrissítését a Power BI Desktopban használatos konfigurációhoz hasonlóan lehet beállítani. Ha a Power BI szolgáltatásban van konfigurálva, az automatikus oldalfrissítés a [beágyazott Power BI-tartalmat](developer/embedded/embedding.md) is támogatja. Az alábbi kép a Power BI szolgáltatásban az **Oldalfrissítés** konfigurációját mutatja:
 
 ![Automatikus oldalfrissítés a Power BI szolgáltatásban](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
-1.  Automatikus oldalfrissítési csúszka – az oldalfrissítés bekapcsolása vagy kikapcsolása
-2.  Az oldalfrissítés időközének értéke – a frissítési időköz értéke, egész számnak kell lennie
-3.  Az oldalfrissítés időközének egysége – az oldalfrissítés időközének egysége
+1.    Automatikus oldalfrissítési csúszka – az oldalfrissítés bekapcsolása vagy kikapcsolása
+2.    Az oldalfrissítés időközének értéke – a frissítési időköz értéke, egész számnak kell lennie
+3.    Az oldalfrissítés időközének egysége – az oldalfrissítés időközének egysége
 
 ### <a name="page-refresh-intervals"></a>Oldalfrissítési időközök
 
