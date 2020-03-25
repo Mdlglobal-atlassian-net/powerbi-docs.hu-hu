@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/13/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: b36bc6d23b56b4118f848ad9fa4e8f39dbc65d2d
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 349b4d51c1649b714c67e61ac42ddcc49b2eeb12
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79376724"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114888"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI az USA kormányzati ügyfelei számára
 Ez a cikk az USA olyan kormányzati ügyfeleinek szól, akik a Power BI-t egy Office 365 Kormányzati verzió részeként helyezik üzembe. A kormányzati csomagok olyan szervezetek egyedi igényeihez lettek kialakítva, amelyeknek meg kell felelniük az Egyesült Államok megfelelőségi és biztonsági szabványainak. Az USA kormányzati ügyfeleinek szóló Power BI szolgáltatás eltér a Power BI kereskedelmi verziójától. Ezek funkcióinak eltéréseit az alábbi szakaszokban ismertetjük.
@@ -95,7 +95,7 @@ A kormányzati felhő ügyfeleire vonatkozó követelményeknek való megfelelé
 |  |Adatok importálása CSV-fájlból|Elérhető|Elérhető|Elérhető|
 |  |Adatok importálása Power BI Desktop-fájlokból|Elérhető|Elérhető|Elérhető|
 |  |CDS-kapcsolat|Elérhető|Nem érhető el|Nem érhető el|
-|  |Azure Data Lake Storage Gen2-összekötő|Nem érhető el|Nem érhető el|Nem érhető el|
+|  |Azure Data Lake Storage Gen2-összekötő|Elérhető|Nem érhető el|Nem érhető el|
 |Adatkezelés|Adatkezelési átjáró|Elérhető|Elérhető|Elérhető|
 |  |Adattitkosítás az Azure SQL-ben|Elérhető|Elérhető|Elérhető|
 |  |Adattitkosítás a Power BI-hoz készült Blob Storage-ban|Elérhető|Elérhető|Elérhető|
