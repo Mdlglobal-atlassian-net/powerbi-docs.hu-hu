@@ -10,12 +10,12 @@ ms.date: 03/16/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 97aad9a72cba6fe195208902e2a3d986b3225a3d
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 48f26229ea77bbe26ee07d46925d41cadcce7c12
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488706"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114450"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -233,7 +233,12 @@ A **Webes közzététel** beállításától függően a felhasználók különf
 
 ### <a name="export-data"></a>Adatok exportálása
 
-A munkahelyi felhasználók adatokat exportálhatnak egy csempéről vagy vizualizációból. További információ [adatok csempéről vagy vizualizációból való exportálásáról](visuals/power-bi-visualization-export-data.md).
+A munkahelyi felhasználók adatokat exportálhatnak egy csempéről vagy vizualizációból. Ez vezérli az elemzést az Excelben, a .csv-be történő exportálást, az adatkészlet letöltését (.pbix) és a Power BI szolgáltatás Live Connect-funkcióit. További információ [adatok csempéről vagy vizualizációból való exportálásáról](visuals/power-bi-visualization-export-data.md).
+
+>[!NOTE]
+> Az Exportálás Excelbe beállítás bevezetése előtt ez a beállítás szabályozta az Excel-fájlba való exportálást is. A részletekért tekintse meg az [Exportálás Excelbe megjegyzését](#export-to-excel).
+
+![Adatexportálási beállítások](media/service-admin-portal/powerbi-admin-portal-export-data-setting.png)
 
 Az alábbi képen az adatok exportálásának lehetősége látható egy csempén.
 
@@ -241,6 +246,15 @@ Az alábbi képen az adatok exportálásának lehetősége látható egy csempé
 
 > [!NOTE]
 > Az **Adatok exportálása** lehetőség letiltásával azt is megakadályozhatja, hogy a felhasználók az [Elemzés az Excelben](service-analyze-in-excel.md) funkciót vagy a Power BI szolgáltatás élő kapcsolatát használják.
+
+### <a name="export-to-excel"></a>Exportálás Excelbe
+
+A szervezeten belüli felhasználók exportálhatják az adatokat egy vizualizációból egy Excel-fájlba.
+
+![Exportálás Excelbe beállítás](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
+
+>[!IMPORTANT]
+> Az Exportálás Excelbe beállítás bevezetése előtt az Excel-fájlba való exportálást az Adatexportálási beállítások vezérelték. Ezért azoknál a bérlőknél, amelyek az Exportálás Excelbe bevezetését megelőzően léteztek, az első alkalommal, amikor a bérlői rendszergazdák megtekintik az Exportálás Excelbe beállítást, látni fogják, hogy *nem alkalmazott módosításokat* is tartalmaz. Ezeket a módosításokat alkalmazniuk kell ahhoz, hogy az új beállítás érvénybe lépjen. Ellenkező esetben az Excel-fájlba való exportálás továbbra is az Adatexportálási beállításokkal lesz vezérelve.
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Jelentések exportálása PowerPoint-bemutatóként vagy PDF-dokumentumként
 

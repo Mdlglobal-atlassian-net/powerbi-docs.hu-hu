@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e91900632b7cf470cd91923ca9ec871247c154ba
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.openlocfilehash: 8297d5e16c15baac058f82b75634eb4f31b3c630
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76710190"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113163"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz
 
@@ -42,12 +42,10 @@ Az Azure Data Lake Storage Gen2 adatfolyamokhoz való felhasználásához az al�
 
 Mielőtt Azure Data Lake Storage Gen2-fiókkal konfigurálná a Power BI-t, először tárfiókot kell létrehoznia és konfigurálnia. A Power BI-ra vonatkozó követelmények az alábbiak:
 
-1. A tárfiókot ugyanabban az AAD-bérlőben kell létrehozni, mint a Power BI-bérlőt.
-2. A tárfiókot ugyanabban a régióban kell létrehozni, mint a Power BI-bérlőt. A Power BI-bérlő helyének meghatározását a [Power BI-bérlő helyének megállapításáról](service-admin-where-is-my-tenant-located.md) szóló cikk ismerteti.
-3. A tárfiókban engedélyeznie kell a *hierarchikus névtér* funkciót.
-4. A Power BI szolgáltatásnak *Olvasó* és *Adathozzáférési* szerepkört kell adni a tárfiókban.
-5. Létre kell hozni egy **powerbi** nevű fájlrendszert.
-6. A Power BI-szolgáltatásoknak engedéllyel kell rendelkezniük a létrehozott **powerbi** fájlrendszerre.
+1. Az ADLS-tárfiók tulajdonosának kell lennie. Ezt az erőforrás szintjén kell hozzárendelni, és nem az előfizetési szintről örökölve.
+2. A tárfiókot ugyanabban az AAD-bérlőben kell létrehozni, mint a Power BI-bérlőt.
+3. A tárfiókot ugyanabban a régióban kell létrehozni, mint a Power BI-bérlőt. A Power BI-bérlő helyének meghatározását a [Power BI-bérlő helyének megállapításáról](service-admin-where-is-my-tenant-located.md) szóló cikk ismerteti.
+4. A tárfiókban engedélyeznie kell a *hierarchikus névtér* funkciót.
 
 Az alábbi szakaszok az Azure Data Lake Storage Gen2-fiók konfigurálásához szükséges lépéseket írják le részletesen.
 
@@ -59,73 +57,17 @@ Kövesse az [Azure Data Lake Storage Gen2-tárfiók létrehozása](https://docs.
 2. Engedélyezze a hierarchikus névtér funkciót
 3. A replikációs beállítást érdemes **georedundáns írásvédett társzolgáltatásra (RA-GRS)** beállítani
 
-### <a name="grant-the-power-bi-service-reader-and-data-access-roles"></a>Az olvasó és adathozzáférési szerepkör megadása a Power BI szolgáltatásnak
+### <a name="grant-permissions-to-power-bi-services"></a>Engedélyek megadása Power BI-szolgáltatások számára
 
 Ezután olvasó és adathozzáférési szerepkört kell adnia a Power BI szolgáltatásnak a létrehozott tárfiókban. Mindkettő beépített szerepkör, tehát a lépések maguktól értetődnek. 
 
 Kövesse a [Beépített RBAC-szerepkör hozzárendelése](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role) című témakör lépéseit.
 
-A **Szerepkör-hozzárendelés megadása** ablakban jelölje ki az **Olvasó** és az **Adathozzáférési** szerepkört, hogy ezek legyenek a Power BI szolgáltatáshoz rendelve. Keresse meg a **Power BI szolgáltatást**. 
+A **Szerepkör-hozzárendelés megadása** ablakban jelölje ki az **Olvasó és az Adathozzáférési** szerepkört. Majd a keresőt használva keresse meg a **Power BI szolgáltatás** alkalmazást.
+Ismételje meg ugyanezeket a lépéseket a **Storage blob adattulajdonosa** szerepkörhöz, és rendelje hozzá a szerepkört a **Power BI szolgáltatás** és a **Power BI Premium** alkalmazásokhoz.
 
 > [!NOTE]
 > Legalább 30 percig tart, amíg az engedély a Power BI-ból átkerül a Portalra. Várjon 30 percet minden alkalommal, amikor a Portalon módosítja az engedélyeket, hogy azok megjelenjenek a Power BI-ban. 
-
-
-### <a name="create-a-file-system-for-power-bi"></a>Fájlrendszer létrehozása a Power BI-hoz
-
-Ahhoz, hogy a tárfiókot a Power BI-hoz adhassa, létre kell hoznia egy *powerbi* nevű fájlrendszert. Ilyen fájlrendszer sokféleképpen létrehozható, például az Azure Databricks, a HDInsight, az AZCopy vagy az Azure Storage Explorer használatával. Ez a szakasz a fájlrendszer létrehozásának egy kézenfekvő módját mutatja be az Azure Storage Explorer használatával.
-
-Ez a lépés megköveteli az Azure Storage Explorer 1.6.2 vagy újabb verziójának telepítését. Az Azure Storage Explorer Windows, Macintosh vagy Linux rendszeren végzett telepítését az [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) című cikk ismerteti.
-
-1. Az Azure Storage Explorer sikeres telepítését követően, az első indításakor megjelenik a Microsoft Azure Storage Explorer – Csatlakozás ablaka. Bár a Storage Explorer több módot is kínál a tárfiókokhoz való csatlakozásra, a kívánt beállításhoz jelenleg egyetlen módszer támogatott. 
-
-2. Keresse meg és bontsa ki a fentiekben létrehozott tárfiókot a bal oldali panelen.
-
-3. Kattintson a jobb gombbal a Blobtárolók elemre, majd – a helyi menüben – válassza a Blobtároló létrehozása lehetőséget.
-
-   ![jobb kattintás a Blobtárolókra](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05a.jpg)
-
-4. A Blobtárolók mappa alatt megjelenik egy szövegmező. Adja meg a *powerbi* nevet 
-
-   ![a „powerbi” név megadása](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05b.jpg)
-
-5. Ha kész, nyomja le az Enter billentyűt a blobtároló létrehozásához
-
-   ![blobtároló létrehozása az enter billentyű lenyomásával](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05c.jpg)
-
-A következő szakaszban teljes hozzáférést ad a Power BI-szolgáltatáscsaládnak a létrehozott fájlrendszerhez. 
-
-### <a name="grant-power-bi-permissions-to-the-file-system"></a>Power BI-engedélyek megadása a fájlrendszerre
-
-A fájlrendszerre vonatkozó engedélyek megadása hozzáférés-vezérlési lista (ACL) beállítások alkalmazásával biztosít hozzáférést a Power BI-szolgáltatások számára. Ennek első lépése a Power BI-szolgáltatások identitásának megállapítása a bérlőben. Az Azure Active Directory-alkalmazások (AAD-alkalmazások) az Azure Portal **Vállalati alkalmazások** szakaszában tekinthetők meg.
-
-Bérlői alkalmazásait az alábbi lépésekkel találhatja meg:
-
-1. Az [Azure Portalon](https://portal.azure.com/) válassza az **Azure Active Directory** lehetőséget a navigációs panelen.
-2. Az Azure **Active Directory** panelen válassza a **Vállalati alkalmazások** lehetőséget.
-3. Az **Alkalmazástípus** legördülő menüből válassza a **Minden alkalmazás** elemet, majd válassza az **Alkalmaz** lehetőséget. Megjelenik a bérlői alkalmazásnak az alábbi ábrához hasonló mintája.
-
-    ![AAD vállalati alkalmazások](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_06.jpg)
-
-4. A keresősávon gépelje be a *Power* szót, és megjelenik a Power BI- és Power Query-alkalmazások objektumazonosítóinak katalógusa. A következő lépésekben mindhárom értékre szükség lesz.  
-
-    ![Power-alkalmazások keresése](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
-
-5. Jelölje ki és másolja ki a Power BI Premium szolgáltatás és a Power Query online mindkét objektumazonosítóját a keresési eredmények közül. Ezeket az értékeket a következő lépések során fogja beilleszteni.
-
-6. Ezután az **Azure Storage Explorer** használatával navigáljon az előző szakaszban létrehozott *powerbi* fájlrendszerhez. Hajtsa végre a [Fájl- és könyvtárszintű engedélyek kezelése az Azure Storage Explorerrel](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) című cikk [Hozzáférés-kezelés](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) szakaszának utasításait.
-
-7. Az 5. lépésben begyűjtött Power BI Premium-objektumazonosítók mindegyikéhez rendelje hozzá az **olvasási**, **írási** és **végrehajtási** hozzáférést, valamint az alapértelmezett ACL-eket a *powerbi* fájlrendszerre.
-
-   ![mindhárom hozzárendelése mindkettőhöz](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
-
-8. A 4. lépésben beszerzett Power Query-objektumazonosítóhoz rendelje hozzá az **írási** és **végrehajtási** hozzáférést, valamint az alapértelmezett ACL-eket a *powerbi* fájlrendszerre.
-
-   ![írási és végrehajtási jog hozzárendelése](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
-
-9. Ezen kívül rendelje hozzá a **végrehajtási** hozzáférést és az alapértelmezett ACL-eket az **Egyéb** elemhez is.
-
-    ![végrehajtási jog hozzárendelése az egyebekhez](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
 
 ## <a name="connect-your-azure-data-lake-storage-gen2-to-power-bi"></a>Az Azure Data Lake Storage Gen2 csatlakoztatása a Power BI-hoz
 

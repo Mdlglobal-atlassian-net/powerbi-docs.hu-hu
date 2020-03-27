@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/13/2020
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5693e75ff186c3edb95eeaa92d26823e0e0d3a60
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: d5b57b782af52542ed944b5e5e7504a974ee9d81
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76039068"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273340"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Python-szkriptek futtatása a Power BI Desktopban
 
@@ -109,6 +109,14 @@ A Python-szkript a következő módon futtatható a Power BI Desktopban:
 Ha a Python nincs telepítve vagy felismerve, figyelmeztetés jelenik meg. Akkor is figyelmeztetés jelenik meg, ha több telepítés is található a helyi gépen. Vizsgálja felül és tekintse át a Python korábbi telepítéseit és a Python-szkriptelés engedélyezésére vonatkozó szakaszokat.
 
 ![Arra vonatkozó figyelmeztetés, hogy a Python nincs telepítve](media/desktop-python-scripts/python-scripts-3.png)
+
+#### <a name="using-custom-python-distributions"></a>Egyéni Python-disztribúciók használata
+
+A Power BI a parancsfájlokat közvetlenül a Python.exe végrehajtható fájl használatával hajtja végre a felhasználó által megadott könyvtárból (ez a beállítások lapon adható meg). A környezet előkészítéséhez további lépéseket igénylő disztribúciók (például a Conda) olyan problémákba ütközhet, amelyek miatt meghiúsul a végrehajtás.
+
+A kapcsolódó problémák elkerülése érdekében javasoljuk, hogy használja a https://www.python.org/ webhelyen elérhető hivatalos Python-disztribúciót.
+
+Lehetséges megoldásként elindíthatja Power BI Desktopot az egyéni Python-környezet parancssorából is.
 
 ### <a name="refresh"></a>Frissítés
 

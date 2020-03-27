@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 04fa40f5f73199ed5050870b49cd432f62cf362c
-ms.sourcegitcommit: 82c41f91055da8c1cc5d8cc67927d5246d11247b
+ms.openlocfilehash: 60432c110df7c20aa13969d70ed7c2a90d0ef575
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78199073"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114842"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>R-vizualizációk létrehozása és használata a Power BI-ban
 R-vizualizációk jelenleg csak a **Power BI Desktopban** hozhatók létre és tehetők közzé a Power BI szolgáltatásban. R-vizualizációk létrehozásáról a [Power BI-vizualizációk létrehozása az R használatával](../desktop-r-visuals.md) című cikk nyújt további információt.
@@ -88,6 +88,7 @@ A Power BI-beli R-vizualizációkra vonatkozik néhány korlátozás:
 * Az R-vizualizációk támogatása a [támogatott R-csomagok ismertetésében](../service-r-packages-support.md) megadott csomagokra korlátozódik. Egyéni csomagok jelenleg nem támogatottak.
 * Adatméret-korlátok – Az R-vizualizációk által a megjelenítéshez felhasznált adatok mennyisége legfeljebb 150000 sor lehet. 150 000-nél több sor kiválasztásakor a rendszer csak az első 150 000 sort használja fel, és megjelenít egy üzenetet a képen. A megadott adatok ezenkívül legfeljebb 250 MB-ot tehetnek ki.
 * Felbontás – minden R-vizualizáció 72 DPI felbontású.
+* Eszközábrázolás – Csak az alapértelmezett eszközre való ábrázolás támogatott. 
 * Számítási idő korlátozása – Ha egy R-vizualizáció kiszámítása tovább tart 60 másodpercnél, akkor a parancsfájl futása időtúllépés miatt megszakad, és hiba keletkezik.
 * Az R-vizualizációk az adatfrissítések, szűrések és kiemelések alkalmával frissülnek. Maga a kép viszont nem interaktív, és nem mutat elemleírásokat.
 * Az R-vizualizációk reagálnak más vizualizációk kijelöléseire, de az R-vizualizáció elemeire nem lehet rákattintani más elemekkel való keresztszűréshez.

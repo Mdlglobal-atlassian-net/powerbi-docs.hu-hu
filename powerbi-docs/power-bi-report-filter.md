@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/26/2020
+ms.date: 03/17/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: f4dbbdd30b403c8ac14db069b826f26af0bce24a
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 8dfc6e872b67605a262c7390b91703649a2cfb0f
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79201959"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114047"
 ---
 # <a name="work-with-filters-in-power-bi-reports"></a>Szűrők használata Power BI-jelentésekben
+
+[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
 
 A Power BI szűrői új funkciókkal és megjelenéssel rendelkeznek. Ha az új szűrőfelületet választja, a Szűrők panelt is formázhatja, hogy a megjelenése megegyezzen a jelentés többi részéével. A szűrőket zárolhatja, vagy akár el is rejtheti. Jelentés tervezésekor már egyáltalán nem jelenik meg a régi Szűrők panel a Vizualizációk panelen. A szűrők szerkesztését és formázását egyetlen Szűrők panelen végezheti. 
 

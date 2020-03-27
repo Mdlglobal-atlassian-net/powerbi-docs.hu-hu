@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 03/25/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: b20820490ec88d34d4ee75c135cc54277e473545
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: 79f3fa8c9c175b698cb91784f95d3bb9d8ca0cc5
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076635"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273248"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Jelentés szűrése lekérdezésisztring-paraméterek URL-címben való használatával
 
@@ -193,11 +193,17 @@ Ez az eltérés akkor hasznos, ha különböző eredményeket szeretne megjelen�
 Lekérdezésisztring-paraméterek használatakor néhány szemponttal érdemes tisztában lenni.
 
 * Az *in* használatakor az *in* operátortól jobbra lévő értékeket zárójelek közötti, vesszővel elválasztott listaként kell megadni.    
-* A Power BI jelentéskészítő kiszolgáló azt is lehetővé teszi, hogy további szűrőket adjon meg a „filter” URL-paraméter használatával.  A Power BI jelentéskészítő kiszolgálónál például az URL-cím a következőhöz hasonló lehet: https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
-* A lekérdezési sztringgel végzett szűrés a [Webes közzététel](service-publish-to-web.md) vagy az [Exportálás PDF-be](consumer/end-user-pdf.md) használatával együtt nem működik.
-* [A SharePoint Online-ban jelentéskijelzővel történő beágyazás](service-embed-report-spo.md) nem támogatja az URL-szűrőket.
-* A long adattípus maximális értéke a JavaScript korlátozásai miatt 2^53-1.
+* A Power BI jelentéskészítő kiszolgáló azt is lehetővé teszi, hogy további szűrőket adjon meg a „filter” URL-paraméter használatával. A Power BI jelentéskészítő kiszolgálónál például az URL-cím a következőhöz hasonló lehet: `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * A jelentés URL-címének szűrői legfeljebb 10 kifejezést tartalmazhatnak (10 kifejezést, AND operátorral).
+* A long adattípus maximális értéke a JavaScript korlátozásai miatt 2^53-1.
+
+Az URL-szűrők csak bizonyos beágyazási forgatókönyvekben támogatottak, másokban azonban nem.
+
+- A [Jelentés beágyazása egy biztonságos portálon vagy webhelyen](service-embed-secure.md) támogatott.
+- Az URL-szűrők támogatottak a Power BI Embeddedben. További információt a [Power BI Embedded speciális URL-szűrési képességei](https://azure.microsoft.com/updates/power-bi-embedded-advanced-url-filtering-capabilities) című cikkben talál.
+- A lekérdezési sztringgel végzett szűrés a [Webes közzététel](service-publish-to-web.md) vagy az [Exportálás PDF-be](consumer/end-user-pdf.md) használatával együtt nem működik.
+- [A SharePoint Online-ban jelentéskijelzővel történő beágyazás](service-embed-report-spo.md) nem támogatja az URL-szűrőket.
+- A Teams nem engedélyezi az URL-cím megadását.
 
 ## <a name="next-steps"></a>Következő lépések
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 69295657702f995786379b18d3ad1ed3641bcbb8
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.openlocfilehash: 729a50e251a9c2ae083375e187ff133022f3ce91
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75729810"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114865"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Power BI-vizualizációk létrehozása az R programozási nyelvvel
 A Power BI Desktopban az *R* használatával vizualizálhatja az adatokat. Az [R](https://mran.revolutionanalytics.com/documents/what-is-r) egy statisztikai számításokhoz és grafikus megjelenítéshez használható nyelv és környezet.
@@ -130,6 +130,8 @@ A Power BI Desktop-beli R-vizualizációk a következő korlátozásokkal rendel
 * Adatméret: Az R-vizualizációk által az ábrázoláshoz felhasznált adatmennyiség 150 000 sorban van korlátozva. 150 000-nél több sor kiválasztásakor a rendszer csak az első 150 000 sort használja fel, és megjelenít egy üzenetet a képen.
 
 * Felbontás: Minden R-vizualizáció 72 DPI-vel jelenik meg.
+
+* Eszköz ábrázolása: Csak az alapértelmezett eszközre való ábrázolás támogatott. 
 
 * Számítási idő: Ha az R-vizualizáció számítási ideje meghaladja az öt percet, időtúllépési hiba történik.
 

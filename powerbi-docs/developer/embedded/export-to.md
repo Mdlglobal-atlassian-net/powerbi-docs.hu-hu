@@ -6,15 +6,15 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/01/2020
-ms.openlocfilehash: 1e882f5314b599c97356409626f059b022f640f7
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.date: 03/24/2020
+ms.openlocfilehash: 35b5c5f05a9c0ae5a36875671a919df12843e295
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114543"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273294"
 ---
-# <a name="export-report-to-file-preview"></a>Jelentés exportálása fájlba (előzetes verzió)
+# <a name="export-power-bi-report-to-file-preview"></a>Power BI-jelentés exportálása fájlba (előzetes verzió)
 
 Az `exportToFile` API lehetővé tesz a Power BI-jelentések exportálását REST-hívással. A támogatott fájlformátumok a következők:
 * **PPTX** (PowerPoint)
@@ -60,7 +60,7 @@ A [személyes könyvjelzők](../../consumer/end-user-bookmarks.md#personal-bookm
 
 ### <a name="authentication"></a>Hitelesítés
 
-Csak felhasználóval (vagy főfelhasználóval) hitelesíthet. A [szolgáltatásnév](embed-service-principal.md) jelenleg nem támogatott.
+A hitelesítést felhasználó (vagy fő felhasználó) vagy egy [egyszerű szolgáltatásnév](embed-service-principal.md) használatával is elvégezheti.
 
 ### <a name="row-level-security-rls"></a>Sorszintű biztonság (RLS)
 
@@ -74,6 +74,8 @@ Az RLS használatával végzett exportálsához rendelkeznie kell az alábbi eng
 ### <a name="data-protection"></a>Adatvédelem
 
 A PDF és a PPTX formátum támogatja a [bizalmassági címkék](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi) használatát. Ha bizalmassági címkével ellátott jelentést exportál PDF vagy PPTX formátumba, az exportált fájl a bizalmassági címkével jeleníti meg a jelentést.
+
+A bizalmassági címkével rendelkező jelentések nem exportálhatók PDF- vagy PPTX-fájlba [egyszerű szolgáltatásnév](embed-service-principal.md) használatával.
 
 ### <a name="localization"></a>Honosítás
 
@@ -101,10 +103,9 @@ Az egyidejű kérések számát meghaladó feladatok sem lesznek megszakítva. H
 * Nyilvános előzetes verzió esetében az óránként exportált Power BI-jelentésoldalak száma kapacitásonként 50-re van korlátozva.
 * Az exportált jelentések fájlmérete nem haladhatja meg a 250 MB-ot.
 * PNG-be exportálás esetén a bizalmassági címkék nem támogatottak.
-* A [szolgáltatásnév](embed-service-principal.md) nem támogatott.
+* A bizalmassági címkével rendelkező jelentések nem exportálhatók PDF- vagy PPTX-fájlba [egyszerű szolgáltatásnév](embed-service-principal.md) használatával.
 * Az egy exportált jelentésbe foglalható oldalak száma legfeljebb 30. Ha a jelentés több oldalból áll, az API hibát jelez, és az exportálási feladat megszakad.
 * A [személyes könyvjelzők](../../consumer/end-user-bookmarks.md#personal-bookmarks) és az [állandó szűrők](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) nem támogatottak.
-* A többoldalas jelentések jelenleg nem támogatottak.
 * Az alábbiakban felsorolt Power BI-vizualizációk nem támogatottak. Ilyen vizualizációt tartalmazó jelentés exportálásakor a jelentésnek az ezen vizualizációkat tartalmazó része helyett hibajelzés lesz megjelenítve.
     * Nem minősített Power BI-vizualizációk
     * R vizualizációk
@@ -133,30 +134,26 @@ private async Task<string> PostExportRequest(
     Guid groupId,
     FileFormat format,
     IList<string> pageNames = null /* Get the page names from the GetPages API */)
+{
+    var powerBIReportExportConfiguration = new PowerBIReportExportConfiguration
+    {
+        Settings = new ExportReportSettings
         {
-            var powerBIReportExportConfiguration = new PowerBIReportExportConfiguration
-            {
-                Settings = new ExportReportSettings
-                {
-                    Locale = "en-us",
-                },
-
-                // Note that page names differ from the page display names.
-                // To get the page names use the GetPages API.
-                Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList(),
-            };
-
-            var exportRequest = new ExportReportRequest
-            {
-                Format = format,
-                PowerBIReportConfiguration = powerBIReportExportConfiguration,
-            };
-
-            var export = await Client.Reports.ExportToFileInGroupAsync(groupId, reportId, exportRequest);
-
-            // Save the export ID, you'll need it for polling and getting the exported file
-            return export.Id;
-        }
+            Locale = "en-us",
+        },
+        // Note that page names differ from the page display names.
+        // To get the page names use the GetPages API.
+        Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList(),
+    };
+    var exportRequest = new ExportReportRequest
+    {
+        Format = format,
+        PowerBIReportConfiguration = powerBIReportExportConfiguration,
+    };
+    var export = await Client.Reports.ExportToFileInGroupAsync(groupId, reportId, exportRequest);
+    // Save the export ID, you'll need it for polling and getting the exported file
+    return export.Id;
+}
 ```
 
 ### <a name="step-2---polling"></a>2\. lépés – ciklikus lekérdezés
@@ -170,38 +167,34 @@ private async Task<Export> PollExportRequest(
     string exportId /* Get from the ExportToAsync response */,
     int timeOutInMinutes,
     CancellationToken token)
+{
+    Export exportStatus = null;
+    DateTime startTime = DateTime.UtcNow;
+    const int c_secToMillisec = 1000;
+    do
     {
-        Export exportStatus = null;
-        DateTime startTime = DateTime.UtcNow;
-        const int c_secToMillisec = 1000;
-        do
+        if (DateTime.UtcNow.Subtract(startTime).TotalMinutes > timeOutInMinutes || token.IsCancellationRequested)
         {
-            if (DateTime.UtcNow.Subtract(startTime).TotalMinutes > timeOutInMinutes || token.IsCancellationRequested)
-            {
-                // Error handling for timeout and cancellations
-                return null;
-            }
-
-            var httpMessage = await Client.Reports.GetExportToFileStatusInGroupWithHttpMessagesAsync(groupId, reportId, exportId);
-            exportStatus = httpMessage.Body;
-
-            // You can track the export progress using the PercentComplete that's part of the response
-            SomeTextBox.Text = string.Format("{0} (Percent Complete : {1}%)", exportStatus.Status.ToString(), exportStatus.PercentComplete);
-
-            if (exportStatus.Status == ExportState.Running || exportStatus.Status == ExportState.NotStarted)
-            {
-                // The recommended waiting time between polling requests can be found in the RetryAfter header
-                // Note that this header is only populated when the status is either Running or NotStarted
-                var retryAfter = httpMessage.Response.Headers.RetryAfter;
-                var retryAfterInSec = retryAfter.Delta.Value.Seconds;
-                await Task.Delay(retryAfterInSec * c_secToMillisec);
-            }
+            // Error handling for timeout and cancellations 
+            return null;
         }
-        // While not in a terminal state, keep polling
-        while (exportStatus.Status != ExportState.Succeeded && exportStatus.Status != ExportState.Failed);
-
-        return exportStatus;
+        var httpMessage = await Client.Reports.GetExportToFileStatusInGroupWithHttpMessagesAsync(groupId, reportId, exportId);
+        exportStatus = httpMessage.Body;
+        // You can track the export progress using the PercentComplete that's part of the response
+        SomeTextBox.Text = string.Format("{0} (Percent Complete : {1}%)", exportStatus.Status.ToString(), exportStatus.PercentComplete);
+        if (exportStatus.Status == ExportState.Running || exportStatus.Status == ExportState.NotStarted)
+        {
+            // The recommended waiting time between polling requests can be found in the RetryAfter header
+            // Note that this header is only populated when the status is either Running or NotStarted
+            var retryAfter = httpMessage.Response.Headers.RetryAfter;
+            var retryAfterInSec = retryAfter.Delta.Value.Seconds;
+            await Task.Delay(retryAfterInSec * c_secToMillisec);
+        }
     }
+    // While not in a terminal state, keep polling
+    while (exportStatus.Status != ExportState.Succeeded && exportStatus.Status != ExportState.Failed);
+    return exportStatus;
+}
 ```
 
 ### <a name="step-3---getting-the-file"></a>3\. lépés – a fájl lekérése
@@ -209,41 +202,22 @@ private async Task<Export> PollExportRequest(
 Ha a ciklikus lekérdezés egy URL-címet ad vissza, a kapott fájlt az alábbi példa alapján kérheti le.
 
 ```csharp
-private readonly IDictionary<string, string> mediaTypeToSuffix = new Dictionary<string, string>
-    {
-        { "image/png", "png" },
-        { "application/zip", "zip" },
-        { "application/pdf", "pdf" },
-        { "application/vnd.openxmlformats-officedocument.presentationml.presentation", "pptx" },
-    };
-
 private async Task<ExportedFile> GetExportedFile(
     Guid reportId,
     Guid groupId,
     Export export /* Get from the GetExportStatusAsync response */)
+{
+    if (export.Status == ExportState.Succeeded)
     {
-        if (export.Status == ExportState.Succeeded)
+        var fileStream = await Client.Reports.GetFileOfExportToFileAsync(groupId, reportId, export.Id);
+        return new ExportedFile
         {
-            var httpMessage = await Client.Reports.GetFileOfExportToFileInGroupWithHttpMessagesAsync(groupId, reportId, export.Id);
-            var mediaType = httpMessage.Response.Content.Headers.ContentType.ToString().ToLower();
-
-            if (!mediaTypeToSuffix.TryGetValue(mediaType, out string fileSuffix))
-            {
-                // Handle unexpected errors
-            }
-            else
-            {
-                return new ExportedFile
-                {
-                    FileStream = httpMessage.Body,
-                    FileSuffix = fileSuffix,
-                };
-            }
-        }
-
-        return null;
+            FileStream = fileStream,
+            FileSuffix = export.ResourceFileExtension,
+        };
     }
-
+    return null;
+}
 public class ExportedFile
 {
     public Stream FileStream;
@@ -266,26 +240,24 @@ private async Task<ExportedFile> ExportPowerBIReport(
     int pollingtimeOutInMinutes,
     CancellationToken token,
     IList<string> pageNames = null /* Get the page names from the GetPages API */)
+{
+    try
+    {
+        var exportId = await PostExportRequest(reportId, groupId, format, pageNames);
+        var export = await PollExportRequest(reportId, groupId, exportId, pollingtimeOutInMinutes, token);
+        if (export == null || export.Status != ExportState.Succeeded)
         {
-            try
-            {
-                var exportId = await PostExportRequest(reportId, groupId, format, pageNames);
-
-                var export = await PollExportRequest(reportId, groupId, exportId, pollingtimeOutInMinutes, token);
-                if (export == null || export.Status != ExportState.Succeeded)
-                {
-                    // Error, failure in exporting the report
-                    return null;
-                }
-
-                return await GetExportedFile(reportId, groupId, export);
-            }
-            catch
-            {
-                // Error handling
-                throw;
-            }
+            // Error, failure in exporting the report
+            return null;
         }
+        return await GetExportedFile(reportId, groupId, export);
+    }
+    catch
+    {
+        // Error handling
+        throw;
+    }
+}
 ```
 
 ## <a name="next-steps"></a>Következő lépések

@@ -10,12 +10,12 @@ ms.date: 01/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6cf298f6fd4d6d99163b2c0f5674b40cfc14bbfc
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1102022edca3afad2a658facdf43da7b8bca547d
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75657190"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113784"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Felhasználói tevékenységek nyomon követése a Power BI-ban
 
@@ -68,12 +68,15 @@ while(response.ContinuationToken != null)
 }
 completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 ```
-
+> [!NOTE]
+> Akár 24 óráig is eltarthat, amíg az összes esemény megjelenik, bár a teljes adat általában sokkal hamarabb elérhető.
+>
+>
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Get-PowerBIActivityEvent parancsmag
 
-A tevékenységeseményeket egyszerűen letöltheti a Power BI PowerShellhez használható felügyeleti parancsmagjaival, amelyek között szerepel a **Get-PowerBIActivityEvent** parancsmag is, amely automatikusan kezeli a folytatási tokent. A **Get-PowerBIActivityEvent** parancsmag az **ActivityEvents** REST API-val megegyező módon egy StartDateTime és egy EndDateTime paramétert kér. Más szóval a kezdő dátumnak és a befejezési dátumnak ugyanarra a dátumértékre kell hivatkoznia, mert egyszerre csak egy napi tevékenységadatokat kérhet le.
+Töltse le a tevékenység eseményeit a PowerShell Power BI felügyeleti parancsmagjainak használatával. A **Get-PowerBIActivityEvent** parancsmag automatikusan kezeli a folytatási tokent. A **Get-PowerBIActivityEvent** parancsmag az **ActivityEvents** REST API-val megegyező módon egy StartDateTime és egy EndDateTime paramétert kér. Más szóval a kezdő dátumnak és a befejezési dátumnak ugyanarra a dátumértékre kell hivatkoznia, mert egyszerre csak egy napi tevékenységadatokat kérhet le.
 
-Az alábbi szkript bemutatja, hogyan tölthető le az összes Power BI-tevékenység. A parancs az eredményeket JSON-ból .NET-objektumokká konvertálja, így egyszerű hozzáférést biztosít az egyes tevékenységtulajdonságokhoz.
+Az alábbi szkript bemutatja, hogyan tölthető le az összes Power BI-tevékenység. A parancs az eredményeket JSON-ból .NET-objektumokká konvertálja, így egyszerű hozzáférést biztosít az egyes tevékenységtulajdonságokhoz. Ezek a példák a legkisebb és a legnagyobb időbélyeget mutatják egy adott napra vonatkozóan ahhoz, hogy ne maradjanak ki események.
 
 ```powershell
 Login-PowerBI
@@ -258,7 +261,7 @@ Az alábbi műveletek mind az auditnaplókban, mind a tevékenységnaplókban el
 | Power BI-mappa létrehozása                           | CreateFolder (Mappa létrehozása)                                |                                          |
 | Power BI-átjáró létrehozva                          | CreateGateway (Átjáró létrehozása)                               |                                          |
 | Power BI-csoport létrehozása                            | CreateGroup (Csoport létrehozása)                                 |                                          |
-| Power BI-jelentés létrehozása                           | CreateReport (Jelentés létrehozása)                                |                                          |
+| Power BI-jelentés létrehozása                           | CreateReport (Jelentés létrehozása) <sup>1</sup>                                |                                          |
 | Adatfolyam migrálása külső tárfiókba     | DataflowMigratedToExternalStorageAccount    | Jelenleg nem használt                       |
 | Adatfolyam-engedélyek hozzáadása                        | DataflowPermissionsAdded                    | Jelenleg nem használt                       |
 | Adatfolyam-engedélyek eltávolítása                      | DataflowPermissionsRemoved                  | Jelenleg nem használt                       |
@@ -294,7 +297,7 @@ Az alábbi műveletek mind az auditnaplókban, mind a tevékenységnaplókban el
 | Power BI-megjegyzés közzététele                           | PostComment (Megjegyzés közzététele)                                 |                                          |
 | Power BI-irányítópult nyomtatása                        | PrintDashboard (Irányítópult nyomtatása)                              |                                          |
 | Power BI-jelentésoldal nyomtatása                      | PrintReport (Jelentés nyomtatása)                                 |                                          |
-| Power BI-jelentés webes közzététele                  | PublishToWebReport (Jelentés közzététele a weben)                          |                                          |
+| Power BI-jelentés webes közzététele                  | PublishToWebReport (Jelentés közzététele a weben) <sup>2</sup>                         |                                          |
 | Power BI-adatfolyam titkos kódjának fogadása a Key Vaultból  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Adatforrás törölve a Power BI-átjáróból         | RemoveDatasourceFromGateway (Adatforrás eltávolítása átjáróból)                 |                                          |
 | Power BI-csoporttagok eltávolítása                    | DeleteGroupMembers (Csoporttagok törlése)                          |                                          |
@@ -333,6 +336,10 @@ Az alábbi műveletek mind az auditnaplókban, mind a tevékenységnaplókban el
 | Power BI-csempe megtekintése                              | ViewTile (Csempe megtekintése)                                    |                                          |
 | Power BI-használati metrikák megtekintése                     | ViewUsageMetrics (Használati metrikák megtekintése)                            |                                          |
 |                                                   |                                             |                                          |
+
+<sup>1</sup> A Power BI Desktopból a szolgáltatásba való közzététel egy CreateReport esemény a szolgáltatásban.
+
+<sup>2</sup> A PublishtoWebReport a [Webes közzététel](service-publish-to-web.md) szolgáltatásra vonatkozik.
 
 ## <a name="next-steps"></a>Következő lépések
 

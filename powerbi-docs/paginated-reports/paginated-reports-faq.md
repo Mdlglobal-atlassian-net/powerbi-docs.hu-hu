@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 02/28/2020
-ms.openlocfilehash: d9d97715853ab87ac507ff41117ab176b8620e2e
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.date: 03/18/2020
+ms.openlocfilehash: 885c6b98e66a6ce2fd8069cc86bf50440cb94b4b
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79205251"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113610"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Többoldalas jelentések a Power BI-ban: Gyakori kérdések 
 
@@ -68,13 +68,17 @@ Lapszámozott jelentéseket Pro-licenc nélkül is feltölthet a saját munkater
 
 Hibaüzenetet kap, a jelentést pedig nem tekintheti meg, amíg be nem kapcsolja a számítási feladatot. A jelentés továbbra is törölhető a munkaterületről.
 
-### <a name="what-is-the-default-memory-for-each-of-the-premium-skus-supported-for-paginated-reports"></a>Mennyi a lapszámozott jelentéseket támogató Prémium termékváltozatok alapértelmezett memóriája?
+### <a name="what-is-the-default-memory-for-each-of-the-premium-skus-that-support-paginated-reports"></a>Mennyi a lapszámozott jelentéseket támogató Prémium termékváltozatok alapértelmezett memóriája?
 
 A lapszámozott jelentéseket támogató Prémium termékváltozatok alapértelmezett memóriája:
 
 - **P1/A4**: Alapértelmezés szerint 20%; minimum 10%
 - **P2/A5**: Alapértelmezés szerint 20%; minimum 5%
 - **P3/A6**: Alapértelmezés szerint 20%; minimum 2,5%
+
+A Power BI-bérlők rendszergazdái a Felügyeleti portálon módosíthatják a maximális memória alapértelmezett százalékos arányát. Tekintse meg a **Többoldalas jelentések** számítási feladatának szakaszát a **Power BI Premium** területen a **Kapacitás beállításai** lapon.
+
+:::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Többoldalas jelentések kapacitásának beállításai lap":::
 
 ## <a name="general"></a>Általános
 

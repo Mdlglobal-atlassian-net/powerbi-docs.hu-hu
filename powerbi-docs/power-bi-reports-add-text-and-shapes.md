@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b90bfd9482e28faa8d9dfb0d089ca07656663b53
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 6e5281b03ecf9de5414b334d4f88658fb9741d3f
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762462"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273202"
 ---
 # <a name="add-text-boxes-and-shapes-to-power-bi-reports"></a>Szövegdobozok és alakzatok hozzáadása Power BI-jelentésekhez
 A Power BI szolgáltatás és a Power BI Desktop használatával szövegdobozokat és alakzatokat adhat jelentésekhez. Mindkét esetben a jelentésre vonatkozó szerkesztési jogosultsággal kell rendelkeznie. Ha a jelentést megosztották Önnel a Power BI szolgáltatásban, akkor nem rendelkezik hozzá szerkesztési jogosultsággal. 
@@ -63,8 +63,10 @@ Figyelje meg, hogyan használja Will a Power BI Desktopot, hogy [statikus képek
    > 
 
 ## <a name="next-steps"></a>Következő lépések
-[Hivatkozás hozzáadása egy szövegdobozhoz](service-add-hyperlink-to-text-box.md)
 
-[A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
+Az alábbi cikkeket is érdekesnek találhatja:
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* [Hivatkozás hozzáadása egy szövegdobozhoz](service-add-hyperlink-to-text-box.md)
+* [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
+* [Tippek a Power BI-jelentésekben lévő alakzatokkal, képekkel és ikonokkal való elemzés javításához](guidance/report-tips-shapes-images-icons.md)
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

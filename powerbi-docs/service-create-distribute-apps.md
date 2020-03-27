@@ -5,15 +5,15 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 0b420a41474349f86be682987ff9f8144debab11
+ms.sourcegitcommit: 075a0ade4134d28f578fda78996595e8cd9f3555
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207873"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80147377"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Alkalmazás közzététele a Power BI-ban
 
@@ -28,6 +28,7 @@ Az üzleti felhasználók különböző módokon férhetnek hozzá az alkalmazá
 - Alkalmazását megtalálhatják a Microsoft AppSource-on, és onnan telepíthetik.
 - Küldhet nekik közvetlen hivatkozást.
 - Ha a Power BI rendszergazda engedélyezi, automatikusan telepítheti az alkalmazást a munkatársai Power BI-fiókjába.
+- A Power BI nem küld e-mailt a belső felhasználóknak, amikor Ön egy alkalmazást terjeszt vagy frissít. Ha külső felhasználók számára terjeszti, akkor azok a felhasználók egy közvetlen hivatkozást tartalmazó e-mailt kapnak. 
 
 Az alkalmazást saját beépített navigációval is létrehozhatja, hogy a felhasználók könnyen tájékozódhassanak a tartalmak között. Az alkalmazás tartalmát ők nem módosíthatják. Használhatják a Power BI szolgáltatásban vagy valamelyik mobilalkalmazásban is – maguk is szűrhetik, kiemelhetik és rendezhetik az adatokat. A rendszer automatikusan frissíti az alkalmazásokat, és szabályozható, milyen gyakran frissüljenek az adatok. Összeállítási engedélyt is adhat nekik, hogy csatlakozhassanak a mögöttes adathalmazhoz, és másolatokat hozhassanak létre az alkalmazásbeli jelentésekről. További információ: [Összeállítási engedély](service-datasets-build-permissions.md).
 

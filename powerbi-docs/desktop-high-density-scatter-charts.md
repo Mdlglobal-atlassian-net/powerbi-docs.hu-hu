@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ae33d7aac0eb42e925e78b8b76a9d7106cdf9d20
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b603ced5775d72c09419ea5e18b2eb03b2680e95
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73867448"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273363"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Nagy sűrűségű mintavételezés a Power BI-pontdiagramokban
 A **Power BI Desktop** 2017. szeptemberi kiadásától kezdve és a **Power BI szolgáltatás** frissítéseiben egy új mintavételi algoritmus érhető el, amelynek köszönhetően a pontdiagramok hatékonyabban jelenítik meg a nagy sűrűségű adatokat.
@@ -85,7 +85,8 @@ A nagy sűrűségű mintavételezési algoritmus a Power BI fontos fejlesztése,
 * A **nagy sűrűségű mintavételezési** algoritmus kizárólag élő kapcsolatokkal használható a Power BI szolgáltatásra épülő modellekhez, importált modellekhez, vagy a DirectQueryhez.
 
 ## <a name="next-steps"></a>Következő lépések
-A más diagramokban használt nagy sűrűségű mintavételről a következő cikkben talál további információt.
+
+A nagy sűrűségű mintavételről a következő cikkben talál további információt:
 
 * [Nagy sűrűségű sorok mintavétele a Power BI-ban](desktop-high-density-sampling.md)
-
+* [Tippek az adatábrázolások Power BI-jelentésekben történő rendezéséhez és terjesztéséhez](guidance/report-tips-sort-distribute-data-plots.md)

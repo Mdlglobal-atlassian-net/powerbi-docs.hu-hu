@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 08/29/2019
-ms.openlocfilehash: b8301ca17559b81d4db132fbeaa0955ce68a4c6e
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 7a5ec7ef1f66a4a5b6ec80c80e9fd37e19bb2813
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78922528"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113554"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Jelentésparaméter átadása URL-címben lapszámozott jelentéshez a Power BI-ban 
 
@@ -64,8 +64,8 @@ Logikai érték átadásához használja a 0 értéket false (hamis) értékhez,
 
 > [!NOTE]
 > Ha a jelentés olyan jelentésparamétert tartalmaz, amely alapértelmezett értékkel rendelkezik, és a **Prompt** tulajdonság értéke **hamis** (azaz a **Prompt User** tulajdonság nincs kiválasztva a Jelentéskezelőben), akkor ahhoz a jelentésparaméterhez nem adhat át értéket URL-címen belül. Ez lehetővé teszi a rendszergazdák számára, hogy megakadályozzák a végfelhasználók számára bizonyos jelentési paraméterek értékének hozzáadását vagy módosítását.
-
-> A Power BI nem támogatja a 900 karakternél hosszabb lekérdezési sztringeket.  Ez az érték csak akkor haladható meg, ha URL-paraméterekkel tekinti meg a lapszámozott jelentést.  Ez különösen igaz, ha többértékű paramétereket használ.
+> 
+> A Power BI nem támogatja a 2,000 karakternél hosszabb lekérdezési sztringeket.  Ez az érték csak akkor haladható meg, ha URL-paraméterekkel tekinti meg a lapszámozott jelentést.  Ez különösen igaz, ha többértékű paramétereket használ.
 
 ## <a name="additional-examples"></a>További példák 
 
