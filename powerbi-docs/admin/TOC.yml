@@ -100,7 +100,7 @@
               href: ../service-encryption-byok.md
             - name: Prémium szintű kapacitás újraindítása
               href: ../service-admin-premium-restart.md
-            - name: Csatlakozás adatkészletekhez ügyfélalkalmazásokkal és ügyféleszközökkel
+            - name: Adatkészlet-kapcsolat az XMLA-végponttal (előzetes verzió)
               href: ../service-premium-connect-tools.md
     - name: Hivatkozás
       items:

@@ -102,12 +102,12 @@
               href: end-user-favorite.md
             - name: 'Irányítópult nyomtatása, irányítópult-csempe nyomtatása, jelentési oldal nyomtatása'
               href: end-user-print.md
+            - name: Velem megosztott tartalom megtekintése
+              href: end-user-shared-with-me.md
             - name: Kapcsolódó tartalom megtekintése
               href: end-user-related.md
             - name: Legutóbbi tartalom megtekintése
               href: end-user-recent.md
-            - name: Tartalmak megtekintése a Velem megosztva nevű tárolóban
-              href: end-user-shared-with-me.md
             - name: Feliratkozás jelentésre vagy irányítópultra
               href: end-user-subscribe.md
             - name: Tartalmak keresése és rendezése a Power BI-ban
