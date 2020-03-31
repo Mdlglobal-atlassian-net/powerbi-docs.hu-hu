@@ -18,10 +18,8 @@
     - name: Minták
       expanded: true
       items:
-        - name: Mintaadatok beolvasása a Power BI-hoz
+        - name: Power BI-minták beszerzése
           href: ../sample-datasets.md
-        - name: Mintacsomagok importálása és megnyitása
-          href: ../sample-tutorial-connect-to-the-samples.md
         - name: Ügyfél-jövedelmezőségi minta
           href: ../sample-customer-profitability.md
         - name: Informatikaköltség-elemzési minta
@@ -34,6 +32,8 @@
           href: ../sample-procurement.md
         - name: Kiskereskedelmi elemzési minta
           href: ../sample-retail-analysis.md
+        - name: Kiskereskedelmi elemzési minta vizsgálata
+          href: ../sample-tutorial-connect-to-the-samples.md
         - name: Értékesítési és marketingminta
           href: ../sample-sales-and-marketing.md
         - name: Szállítói minőségelemzési minta
