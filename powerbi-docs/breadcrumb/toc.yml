@@ -19,6 +19,16 @@
             - name: Fejlesztő
               tocHref: /power-bi/developer/
               topicHref: /power-bi/developer/index
+              items:
+                - name: Beágyazott analitika
+                  tocHref: /power-bi/developer/embedded/
+                  topicHref: /power-bi/developer/embedded/
+                - name: Power BI-vizualizációk
+                  tocHref: /power-bi/developer/visuals/
+                  topicHref: /power-bi/developer/visuals/
+                - name: Automatizálás
+                  tocHref: /power-bi/developer/automation/
+                  topicHref: /power-bi/developer/automation/
             - name: Interaktív tanulás
               tocHref: /power-bi/guided-learning/
               topicHref: /power-bi/guided-learning/
