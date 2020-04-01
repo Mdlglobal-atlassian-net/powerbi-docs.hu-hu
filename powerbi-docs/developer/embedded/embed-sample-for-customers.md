@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/12/2019
-ms.openlocfilehash: 37f8858d3581f58fc82fcbd1f3a1718ca56b6d72
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 4eca0a799440da57cdb37a603447ba2b0d0c99c8
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79494032"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403826"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba az ügyfelek számára
 
@@ -438,7 +438,7 @@ A dedikált kapacitás létrehozása után hozzárendelheti a munkaterületet eh
 
 Az összes olyan munkaterületet, amely a beágyazott tartalomhoz (például adathalmazokhoz, jelentésekhez és irányítópultokhoz) kapcsolódó Power BI-erőforrásokat tartalmaz, dedikált kapacitáshoz kell rendelni. Ha például egy beágyazott jelentés és az ahhoz kötött adathalmaz különböző munkaterületeken helyezkedik el, akkor mindkét munkaterületet dedikált kapacitáshoz kell rendelni.
 
-Ha [szolgáltatásnévvel](embed-service-principal.md) szeretne dedikált kapacitást hozzárendelni egy munkaterülethez, használja a [Power BI REST API-t](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). Ha a Power BI REST API-t használja, akkor a [szolgáltatásnév objektumazonosítóját](embed-service-principal.md#how-to-get-the-service-principal-object-id) is használnia kell.
+Ha [szolgáltatásnévvel](embed-service-principal.md) szeretne dedikált kapacitást hozzárendelni egy munkaterülethez, használja a [Power BI REST API-t](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). Ha a Power BI REST API-t használja, akkor a [szolgáltatásnév objektumazonosítóját](embed-service-principal.md) is használnia kell.
 
 Dedikált kapacitás **fő fiókkal** történő munkaterülethez rendeléséhez kövesse az alábbi lépéseket.
 

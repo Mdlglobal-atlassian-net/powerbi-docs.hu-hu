@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 779ca338a211e569c0dd7f529208cf7bfb1bcf7c
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: ade60bf8b786f70002f0af0672acf951348fee49
+ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79492330"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80487843"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Beágyazott analitika a Power BI-jal
 
@@ -34,7 +34,7 @@ Válassza ki az Ön számára megfelelő megoldást:
 * Amennyiben [a cég számára végzi a beágyazást](embedding.md#embedding-for-your-organization), kibővítheti a Power BI szolgáltatást. Ehhez valósítsa meg a [Beágyazás a vállalat számára](https://aka.ms/embedsetup/UserOwnsData) megoldást.
 * Amennyiben az [ügyfelei számára végez beágyazást](embedding.md#embedding-for-your-customers), irányítópultokat és jelentéseket ágyazhat be Power BI-fiókkal nem rendelkező felhasználók számára. Ehhez valósítsa meg a [Beágyazás ügyfelek számára](https://aka.ms/embedsetup/AppOwnsData) megoldást.
 
-![PBIE-minta](../media/what-can-you-do/what-can-you-do-02.png)
+![PBIE-minta](media/embedding/what-can-you-do-02.png)
 
 ## <a name="use-apis"></a>API-k használata
 

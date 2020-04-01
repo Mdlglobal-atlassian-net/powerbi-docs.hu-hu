@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
-ms.openlocfilehash: 123dde6621cee901dc788476b3554fc9584ed0e5
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: e47cb22ba4c30c8090e2e9552e1994a5c545b47b
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114359"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404030"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Azure AD-alkalmazás regisztrálása a Power BI-ban való használathoz
 
@@ -94,7 +94,7 @@ Az alkalmazás regisztrálásakor kap egy [alkalmazásazonosítót](embed-sample
 
 ## <a name="how-to-get-the-service-principal-object-id"></a>A szolgáltatásnév-objektum azonosítójának beszerzése
 
-A [Power BI API-k](https://docs.microsoft.com/rest/api/power-bi/) használatakor a szolgáltatásnévre történő hivatkozáshoz a [szolgáltatásnév objektumazonosítójával](embed-service-principal.md#how-to-get-the-service-principal-object-id) határozza meg a műveleteket, például úgy, hogy a szolgáltatásnevet adminisztrátorként alkalmazza a munkaterületre.
+A [Power BI API-k](https://docs.microsoft.com/rest/api/power-bi/) használatakor a szolgáltatásnévre történő hivatkozáshoz a [szolgáltatásnév objektumazonosítójával](embed-service-principal.md) határozza meg a műveleteket, például úgy, hogy a szolgáltatásnevet adminisztrátorként alkalmazza a munkaterületre.
 
 ## <a name="apply-permissions-to-your-application-within-azure-ad"></a>Engedélyek alkalmazása a saját alkalmazásra az Azure AD-ben
 

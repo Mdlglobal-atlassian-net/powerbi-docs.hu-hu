@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 6dd5b7838a1f59971e11a4674853abead7af0b90
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 0042c7db70cac103d04d1c48d06c12b71634b541
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79492790"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403650"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Gyakori kérdések – Power BI Embedded
 
@@ -96,7 +96,7 @@ A probléma megoldásához a felhasználónak meg kell hívnia a [refreshUserPer
 
 A PBI-portál használatával megtalálhatja a PBI-bérlő régióját.
 
-[https://app.powerbi.com/](https://app.powerbi.com/ ) > ? > A Power BI bemutatása
+[https://app.powerbi.com/](`https://app.powerbi.com/`) > ? > A Power BI bemutatása
 
 ![A Power BI bemutatása](media/embedded-faq/about-01.png)
 ![Bérlői régió](media/embedded-faq/tenant-location-01.png)
@@ -200,7 +200,7 @@ Ennek akkor van jelentősége, amikor **rendszergazdaként** felveszi a szolgál
 
 Az **[alkalmazásazonosító](embed-sample-for-customers.md#application-id)** a hozzáférési jogkivonat létrehozására szolgál az alkalmazásazonosító hitelesítés céljából történő átadásakor.
 
-A műveletek végrehajtásakor egy szolgáltatásnévre történő hivatkozáshoz vagy módosítások végzéséhez a **[szolgáltatásnév objektumazonosítóját](embed-service-principal.md#how-to-get-the-service-principal-object-id)** használja, például úgy, hogy a szolgáltatásnevet adminisztrátorként alkalmazza a munkaterületre.
+A műveletek végrehajtásakor egy szolgáltatásnévre történő hivatkozáshoz vagy módosítások végzéséhez a **[szolgáltatásnév objektumazonosítóját](embed-service-principal.md)** használja, például úgy, hogy a szolgáltatásnevet adminisztrátorként alkalmazza a munkaterületre.
 
 ### <a name="can-you-manage-an-on-premises-data-gateway-with-service-principal"></a>Kezelheti az helyszíni adatátjárót szolgáltatásnévvel?
 

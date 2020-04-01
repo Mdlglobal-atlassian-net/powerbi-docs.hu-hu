@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 80b97757ab0ab8fefa23f4481abb2d8bc02de78d
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 66a1253233ab623ff2332a7b112575a7509c0e3c
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79492491"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403706"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sorszintű biztonság a Power BI Embeddeddel
 
@@ -217,7 +217,7 @@ Az alábbi lépések követésével megkezdheti a CustomData() függvény beáll
 
 7. Használja a Power BI API-kat a CustomData funkció használatára az alkalmazásában.  Ha a CustomData funkcióval hoz létre tokent, felhasználónévvel kell rendelkeznie. A felhasználónévnek meg kell egyeznie a fő felhasználó egyszerű felhasználónevével. A fő felhasználónak a létrehozott szerepkör tagjának kell lennie. Ha nincs szerepkör megadva, akkor a rendszer minden szerepkört felhasznál az RLS kiértékelésére, amelynek a fő felhasználó a tagja.
 
-    Ha [szolgáltatásnévvel](embed-service-principal.md) dolgozik, fő fiók használata helyett a fenti lépéseket kell elvégeznie. Beágyazási token létrehozásakor a felhasználónévnek használja a [szolgáltatásnév objektumazonosítóját](embed-service-principal.md#how-to-get-the-service-principal-object-id) felhasználónévként.
+    Ha [szolgáltatásnévvel](embed-service-principal.md) dolgozik, fő fiók használata helyett a fenti lépéseket kell elvégeznie. Beágyazási token létrehozásakor a felhasználónévnek használja a [szolgáltatásnév objektumazonosítóját](embed-service-principal.md) felhasználónévként.
 
     > [!Note]
     > Ha készen áll az alkalmazás éles környezetben történő üzembe helyezésére, a fő felhasználói fiók mezője vagy beállítása nem lehet látható a végfelhasználó számára.

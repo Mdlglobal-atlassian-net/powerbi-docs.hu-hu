@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/14/2020
+ms.date: 03/24/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: de988442edf4c60841bac757bb67ea5ed5038b25
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: d468ab70f47edcd5487b548596f4aea4080cd994
+ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207965"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80329632"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Számítási feladatok konfigurálása egy Premium-kapacitásban
 
@@ -28,7 +28,7 @@ A lekérdezési számítási feladatok a Premium-kapacitás SKU-ja által meghat
 
 |                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| Mesterséges intelligencia | N.A. | N.A. | Alapértelmezés szerint 20%; minimum 20% | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% |
+| Mesterséges intelligencia | Alapértelmezés szerint 40%; minimum 40% | Alapértelmezés szerint 20%; minimum 20% | Alapértelmezés szerint 20%; minimum 8% | Alapértelmezés szerint 20%; minimum 4% | Alapértelmezés szerint 20%; minimum 2% |
 | Adatfolyamok | N.A. |Alapértelmezés szerint 20%; minimum 12%  | Alapértelmezés szerint 20%; minimum 5%  | Alapértelmezés szerint 20%; minimum 3% | Alapértelmezés szerint 20%; minimum 2%  |
 | Oldalakra osztott jelentések | N.A. |N.A. | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% | Alapértelmezés szerint 20%; minimum 2,5% |
 | | | | | | |
@@ -37,7 +37,7 @@ A lekérdezési számítási feladatok a Premium-kapacitás SKU-ja által meghat
 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Mesterséges intelligencia | N.A.                      | Alapértelmezés szerint 20%; minimum 100%                     | Alapértelmezés szerint 20%; minimum 50%                     | Alapértelmezés szerint 20%; minimum 20% | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% |
+| Mesterséges intelligencia | N.A.  | Alapértelmezés szerint 40%; minimum 40%  | Alapértelmezés szerint 20%; minimum 20% | Alapértelmezés szerint 20%; minimum 8% | Alapértelmezés szerint 20%; minimum 4% | Alapértelmezés szerint 20%; minimum 2% |
 | Adatfolyamok         | Alapértelmezés szerint 40%; minimum 40% | Alapértelmezés szerint 24%; minimum 24% | Alapértelmezés szerint 20%; minimum 12% | Alapértelmezés szerint 20%; minimum 5%  | Alapértelmezés szerint 20%; minimum 3% | Alapértelmezés szerint 20%; minimum 2%   |
 | Oldalakra osztott jelentések | N.A.                      | N.A.                      | N.A.                     | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% | Alapértelmezés szerint 20%; minimum 2,5% |
 | | | | | | |
