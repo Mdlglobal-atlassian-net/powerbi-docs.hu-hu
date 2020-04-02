@@ -1,167 +1,191 @@
 ---
 title: Szolgáltatásnév a Power BI-jal
-description: Megismerheti, hogyan regisztrálhat egy alkalmazást az Azure Active Directoryban szolgáltatásnév használatával a Power BI-tartalmak beágyazásához.
+description: Megtanulhat alkalmazást regisztrálni az Azure Active Directoryban szolgáltatásnév egy titkos alkalmazáskód használatával a Power BI-tartalmak beágyazásához.
 author: KesemSharabi
 ms.author: kesharab
-ms.reviewer: nishalit
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/12/2019
-ms.openlocfilehash: ce72abc3f3b60423344c2b28f39d9bdbfbcee7cd
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.date: 03/30/2020
+ms.openlocfilehash: 9ec08ebe583110b2775f107be0ace2a03929c72d
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79493503"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403464"
 ---
-# <a name="service-principal-with-power-bi"></a>Szolgáltatásnév a Power BI-jal
+# <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Power BI-tartalom beágyazása szolgáltatásnév és titkos alkalmazáskód használatával
 
-**Szolgáltatásnévvel** beágyazhat tartalmat egy alkalmazásba, és használhat automatizálást a Power BI-jal **csak az alkalmazásra vonatkozó** token használatával. A szolgáltatásnév előnyös a **Power BI Embedded** használatakor vagy **Power BI-feladatok és -folyamatok automatizálásakor**.
+A szolgáltatásnév olyan hitelesítési módszer, amellyel egy Azure AD-alkalmazás hozzáférhet a Power BI szolgáltatásbeli tartalmakhoz és API-khoz.
 
-A Power BI Embedded használatakor előnyökkel jár a szolgáltatásnév használata. Az elsődleges előnye az, hogy nincs szüksége fő fiókra (olyan Power BI Pro-licencre, amely mindössze egy felhasználónévből és bejelentkezési jelszóból áll) a hitelesítés végrehajtásához az alkalmazásban. A szolgáltatásnév egy alkalmazásazonosítót és titkos kódot használ az alkalmazáshoz annak hitelesítéséhez.
+Azure Active Directory- (Azure AD-) alkalmazás létrehozásakor egy [szolgáltatásnév objektum](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is létre lesz hozva. A szolgáltatásnév objektum, röviden *szolgáltatásnév* teszi lehetővé az Azure AS számára az alkalmazás hitelesítését. A hitelesítést követően az alkalmazás hozzáférhet az Azure AD-bérlő erőforrásaihoz.
 
-A Power BI-feladatok automatizálásakor parancsfájlokat is írhat a szolgáltatásnevek feldolgozásához és kezeléséhez a méretezés során.
+A hitelesítéshez a szolgáltatásnév az Azure AD-alkalmazás *alkalmazásazonosítóját*, és a következők egyikét használja:
+* Alkalmazás titkos kódja
+* Tanúsítvány
 
-## <a name="application-and-service-principal-relationship"></a>Az alkalmazás és a szolgáltatásnév kapcsolata
+Ez a cikk az *alkalmazásazonosító* és az *alkalmazás titkos kódja* használatával történő szolgáltatásnév-hitelesítést ismerteti. A szolgáltatásnév és tanúsítvány használatával történő hitelesítéshez a [Tanúsítványalapú Power BI-hitelesítés]() című cikk nyújt segítséget.
 
-Ha olyan erőforrásokhoz szeretne hozzáférni, amelyek egy Azure AD-bérlőt védenek, a hozzáférést kérő entitás egy rendszerbiztonsági tagot képvisel. Ez a művelet mind a felhasználókra, (felhasználói név), mind az alkalmazásokra (szolgáltatásnév) igaz.
+## <a name="method"></a>Módszer
 
-A rendszerbiztonsági tag határozza meg az Azure AD-bérlőben a hozzáférési szabályzatot és az engedélyeket a felhasználók és az alkalmazások számára. Ez a hozzáférési szabályzat alapvető fontosságú funkciókat engedélyez, például a felhasználók és az alkalmazások hitelesítését bejelentkezéskor és a hitelesítést az erőforrások elérésekor. További információért tekintse át az [Application and service principal in Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) (Alkalmazás és szolgáltatásnév az Azure Active Directory (AAD) szolgáltatásban) weblapot.
+Szolgáltatásnevet és alkalmazásazonosítót az alábbi lépésekben használhat fel beágyazott elemzésekhez:
 
-Amikor egy Azure AD-alkalmazást regisztrál az Azure Portalon, két objektum jön létre az Azure AD-bérlőben:
+1. Hozzon létre egy [Azure AD-alkalmazást](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management).
 
-* Egy [alkalmazásobjektum](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#application-object)
-* Egy [szolgáltatásnév-objektum](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object)
+    1. Hozza létre az Azure AD-alkalmazás titkos kódját.
+    
+    2. Kérje le az alkalmazás *azonosítóját* és *titkos kódját*.
 
-Az alkalmazásobjektumra gondolhat úgy, mint az alkalmazás *globális* megfelelőjére az összes bérlőben történő használathoz, a szolgáltatásnévre pedig úgy, mint a *helyi* megfelelőre egy meghatározott bérlőben történő használathoz.
+    >[!NOTE]
+    >Ezek a lépések az **1. lépésben** vannak leírva. Az Azure AD-alkalmazások létrehozásáról az [Azure AD-alkalmazás létrehozása](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal) című cikk tartalmaz további információkat.
 
-Az alkalmazásobjektum szolgál sablonként, amelyből a közös és az alapértelmezett tulajdonságok *származtatása* történik a megfelelő szolgáltatásnév-objektumok létrehozásához.
+2. Hozzon létre biztonsági csoportot az Azure AD-ben.
 
-Az alkalmazás használatának helyén bérlőnkénti szolgáltatásnévre van szükség, ami lehetővé teszi, hogy identitásként jelenjen meg a bejelentkezéshez és a bérlő által védett erőforrások eléréséhez. Egybérlős alkalmazás csak egy szolgáltatásnévvel rendelkezik (a saját bérlőjében), melynek létrehozása és a használatának engedélyezése az alkalmazás regisztrációja során történik.
+3. Engedélyezze a Power BI szolgáltatás rendszergazdai beállításait.
 
-## <a name="service-principal-with-power-bi-embedded"></a>Szolgáltatásnév Power BI Embeddeddel
+4. Vegye fel szolgáltatásnevet a munkaterületre.
 
-A szolgáltatásnévvel maszkolhatja a fő fiók adatait az alkalmazásban egy alkalmazásazonosítóval és az alkalmazás titkos kódjával. Többé nem kell nem változtatható fő fiókot kódolnia az alkalmazásba a hitelesítéshez.
+5. Ágyazza be a tartalmat.
 
-Mivel a **Power BI API-k** és a **Power BI .NET SDK** már támogatják a szolgáltatásnévvel történő hívásokat, használhatja a [Power BI API-kat](https://docs.microsoft.com/rest/api/power-bi/) szolgáltatásnévvel. Például, módosíthatja a munkaterületeket, létrehozhat munkaterületeket, felvehet felhasználókat a munkaterületekre vagy eltávolíthatja őket onnan, és importálhat tartalmat a munkaterületekre.
+> [!IMPORTANT]
+> Ha engedélyezi a szolgáltatásnevek használatát a Power BI-ban, az alkalmazás AD-engedélyei többé nem lesznek érvényesek. Az alkalmazás engedélyeit ekkor a Power BI felügyeleti portálján lehet kezelni.
 
-Csak akkor használhat szolgáltatásneveket, ha a Power BI-munkadarabokat és -erőforrásokat az [új Power BI-munkaterületen](../../service-create-the-new-workspaces.md) tárolja.
+## <a name="step-1---create-an-azure-ad-app"></a>1\. lépés – Azure AD-alkalmazás létrehozása
 
-## <a name="service-principal-vs-master-account"></a>A szolgáltatásnév és a fő fiók összehasonlítása
+Hozzon létre Azure AD-alkalmazást az alábbi módszerek egyikével:
+* Hozza létre az alkalmazást a [Microsoft Azure Portalon](https://ms.portal.azure.com/#allservices)
+* Hozza létre az alkalmazást a [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1) használatával.
 
-Vannak különbségek aközött, hogy szolgáltatásnevet vagy standard fő fiókot (Power BI Pro-licenc) használ a hitelesítéshez. Az alábbi táblázat kiemel néhány jelentős különbséget.
+### <a name="creating-an-azure-ad-app-in-the-microsoft-azure-portal"></a>Azure AD-alkalmazás létrehozása a Microsoft Azure Portalon
 
-| Függvény | Fő felhasználói fiók <br> (Power BI Pro-licenc) | Szolgáltatásnév <br> (csak az alkalmazásban használható token) |
-|------------------------------------------------------|---------------------|-------------------|
-| Bejelentkezhet a Power BI szolgáltatásba  | Igen | Nem |
-| Az engedélyezése a Power BI felügyeleti portálján történik | Nem | Igen |
-| [Működik a munkaterületekkel (v1)](../../service-create-workspaces.md) | Igen | Nem |
-| [Működik az új munkaterületekkel (v2)](../../service-create-the-new-workspaces.md) | Igen | Igen |
-| Munkaterület-adminisztrátornak kell lennie, ha a Power BI Embeddeddel használja | Igen | Igen |
-| Használhat Power BI REST API-kat | Igen | Igen |
-| Globális rendszergazdára van szükség létrehozásához | Igen | Nem |
-| Telepíthet és kezelhet helyszíni adatátjárót | Igen | Nem |
+1. Jelentkezzen be a [Microsoft Azure-ba](https://ms.portal.azure.com/#allservices).
 
-## <a name="get-started-with-a-service-principal"></a>Első lépések a szolgáltatásnevekkel
+2. Keressen rá az **alkalmazásregisztrációk** szóra és kattintson az **Alkalmazásregisztrációk** hivatkozásra.
 
-A hagyományos fő fiók használatától eltérően a szolgáltatásnév (csak az alkalmazáson belül használható token) használatához néhány más dolgot kell beállítani. A szolgáltatásnevek (csak az alkalmazáson belül használható tokenek) használatához létre kell hoznia a megfelelő környezetet.
+    ![azure-alkalmazásregisztráció](media/embed-service-principal/azure-app-registration.png)
 
-1. [Regisztráljon egy kiszolgálóoldali webalkalmazást](register-app.md) az Azure Active Directoryban (AAD) a Power BI-jal történő használathoz. Az alkalmazás regisztrálása után rögzíthet egy alkalmazásazonosítót, egy titkos kódot az alkalmazáshoz és a szolgáltatásnév objektumazonosítóját a Power BI-tartalmak eléréséhez. Szolgáltatásnevet a [PowerShell-lel](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0) hozhat létre.
+3. Kattintson az **Új regisztráció** elemre.
 
-    Az alábbiakban egy mintaszkript látható új Azure Active Directory-alkalmazás létrehozásához.
+    ![új regisztráció](media/embed-service-principal/new-registration.png)
 
-    ```powershell
-    # The app id - $app.appid
-    # The service principal object id - $sp.objectId
-    # The app key - $key.value
+4. Adja meg a kötelező adatokat:
+    * **Név** – Adja meg az alkalmazás nevét
+    * **Támogatott fióktípusok** – Jelölje ki a támogatott fióktípusokat
+    * (Nem kötelező) **URI-átirányítás** – Szükség esetén adjon meg egy URI-azonosítót
 
-    # Sign in as a user that is allowed to create an app.
-    Connect-AzureAD
+5. Kattintson a **Regisztrálás** parancsra.
 
-    # Create a new AAD web application
-    $app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
+6. A regisztrációt követően az *alkalmazásazonosító* megtalálható az **Áttekintés** lapon. Másolja ki és mentse az *alkalmazásazonosítót*, hogy később felhasználhassa.
 
-    # Creates a service principal
-    $sp = New-AzureADServicePrincipal -AppId $app.AppId
+    ![alkalmazásazonosító](media/embed-service-principal/application-id.png)
 
-    # Get the service principal key.
-    $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
-    ```
+7. Kattintson a **Tanúsítványok és titkos kódok** lapfülre.
 
-   > [!Important]
-   > Ha engedélyezi a szolgáltatásnevek használatát a Power BI-ban, az alkalmazás AD-engedélyei többé nem lesznek érvényesek. Az alkalmazás engedélyeit ekkor a Power BI felügyeleti portálján lehet kezelni.
+     ![alkalmazásazonosító](media/embed-service-principal/certificates-and-secrets.png)
 
-2.  **Javasolt** – Hozzon létre egy biztonsági csoportot az Azure Active Directoryban (AAD), és adja hozzá a létrehozott [alkalmazást](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) ehhez a biztonsági csoporthoz. AAD-beli biztonsági csoportot létrehozhat a [PowerShell-lel](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+8. Kattintson az **Új titkos ügyfélkód** elemre.
 
-    Az alábbiakban egy mintaszkript látható új biztonsági csoport létrehozásához és alkalmazás felvételéhez ebbe a biztonsági csoportba.
+    ![új titkos ügyfélkód](media/embed-service-principal/new-client-secret.png)
 
-    ```powershell
-    # Required to sign in as a tenant admin
-    Connect-AzureAD
+9. A *Titkos ügyfélkód hozzáadása* ablakban gépeljen be leírást, adja meg, hogy mikor járjon le a titkos ügyfélkód, majd kattintson a **Hozzáadás** gombra.
 
-    # Create an AAD security group
-    $group = New-AzureADGroup -DisplayName <Group display name> -SecurityEnabled $true -MailEnabled $false -MailNickName notSet
+10. Másolja ki és mentse a *Titkos ügyfélkód* értékét.
 
-    # Add the service principal to the group
-    Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
-    ```
+    ![titkos ügyfélkód értéke](media/embed-service-principal/client-secret-value.png)
 
-3. A Power BI adminisztrátoraként a szolgáltatásnevet a Power BI felügyeleti portáljának **Fejlesztői beállítások** szakaszában engedélyezheti. Az Azure AD-ben létrehozott biztonsági csoportot adja hozzá a **Fejlesztői beállítások** Adott biztonsági csoportok szakaszához. Emellett szolgáltatásnév-hozzáférést is engedélyezhet a teljes szervezet számára. Ebben az esetben a 2. lépésre nincs szükség.
+    >[!NOTE]
+    >Miután bezárja ezt az ablakot, a titkos ügyfélkód rejtett lesz, és többé nem lehet megtekinteni vagy kimásolni.
 
-   > [!Important]
-   > A szolgáltatásnevek hozzáférhetnek minden olyan bérlői beállításhoz, amely a teljes cégre engedélyezve vannak, vagy olyan biztonsági csoportokra terjednek ki, amelyek a csoport részeként rendelkeznek szolgáltatásnevekkel. Ha a szolgáltatásnév hozzáférését meghatározott bérlői beállításokra szeretné korlátozni, csak meghatározott biztonsági csoportokhoz engedélyezzen hozzáférést, vagy hozzon létre egy dedikált biztonsági csoportot a szolgáltatásnévhez, és zárja ki.
+### <a name="creating-an-azure-ad-app-using-powershell"></a>Azure AD-alkalmazás létrehozása a PowerShell használatával
 
-    ![Adminisztrációs portál](media/embed-service-principal/admin-portal.png)
+Ez a szakasz egy mintaszkriptet tartalmaz, amellyel új Azure AD-alkalmazást hozhat létre a [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0) használatával.
 
-4. Hozza létre a [Power BI-környezetet](embed-sample-for-customers.md#set-up-your-power-bi-environment).
+```powershell
+# The app ID - $app.appid
+# The service principal object ID - $sp.objectId
+# The app key - $key.value
 
-5. Vegye fel a szolgáltatásnevet **rendszergazdaként** a létrehozott új munkaterülethez. Ezt a feladatot kezelheti az [API-kon](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) keresztül vagy a Power BI szolgáltatásban.
+# Sign in as a user that's allowed to create an app
+Connect-AzureAD
 
-    ![Szolgáltatásnév hozzáadása munkaterülethez rendszergazdaként](media/embed-service-principal/add-service-principal-in-the-UI.png)
+# Create a new Azure AD web application
+$app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
 
-6. Most választhat, hogy egy mintaalkalmazásban vagy a saját alkalmazásában ágyazza-e be a tartalmat.
+# Creates a service principal
+$sp = New-AzureADServicePrincipal -AppId $app.AppId
 
-    * [Tartalom beágyazása a mintaalkalmazással](embed-sample-for-customers.md#embed-content-using-the-sample-application)
-    * [Tartalom beágyazása az alkalmazásban](embed-sample-for-customers.md#embed-content-within-your-application)
+# Get the service principal key
+$key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
+```
 
-7. Most már készen áll [átállni az éles üzemre](embed-sample-for-customers.md#move-to-production).
+## <a name="step-2---create-an-azure-ad-security-group"></a>2\. lépés – Biztonsági csoport létrehozása az Azure AD-ben
 
-## <a name="migrate-to-service-principal"></a>Átállás szolgáltatásnév használatára
+A szolgáltatásnév nem fér hozzá a Power BI-tartalmakhoz és az API-khoz. A szolgáltatásnévnek úgy adhat hozzáférést, hogy létrehoz egy biztonsági csoportot az Azure AD-ben, majd felveszi a létrehozott szolgáltatásnevet ebbe a biztonsági csoportba.
 
-Ha jelenleg fő fiókot használ a Power BI-jal vagy a Power BI Embeddeddel, átállhat szolgáltatásnév használatára.
+Az Azure AD-ben kétféleképpen hozhat létre biztonsági csoportot:
+* Manuálisan (az Azure-ban)
+* A PowerShell használata
 
-Kövesse az első három lépést az [Első lépések a szolgáltatásnevekkel](#get-started-with-a-service-principal) szakaszban, és ha elkészült, kövesse az alábbi információkat.
+### <a name="create-a-security-group-manually"></a>Biztonsági csoport manuális létrehozása
 
-Ha már az [új munkaterületeket](../../service-create-the-new-workspaces.md) használja a Power BI-ban, vegye fel a szolgáltatásnevet **rendszergazdaként** a munkaterületekre a Power BI-munkadarabokkal. Ha azonban a [hagyományos munkaterületeket](../../service-create-workspaces.md) használja, másolja vagy helyezze át a Power BI-munkadarabokat és erőforrásokat az új munkaterületekre, majd adja hozzá a szolgáltatásnevet **rendszergazdaként** ezekhez a munkaterületekhez.
+Azure-beli biztonsági csoport manuális létrehozásához kövesse az [Alapszintű csoport létrehozása és tagok felvétele az Azure Active Directory használatával](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) című cikk útmutatását. 
 
-Nincs olyan felhasználói felületi funkció, amellyel áthelyezhetne Power BI-munkadarabokat és erőforrásokat az egyik munkaterületről a másikra, ezért ennek a feladatnak a végrehajtásához [API-kat](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) kell használnia. Ha API-kat használ a szolgáltatásnévvel, szüksége lesz a szolgáltatásnév objektumazonosítójára.
+### <a name="create-a-security-group-using-powershell"></a>Biztonsági csoport létrehozása a PowerShell használatával
 
-### <a name="how-to-get-the-service-principal-object-id"></a>A szolgáltatásnév-objektum azonosítójának beszerzése
+Az alábbi egyszerű szkript új biztonsági csoportot hoz létre, és felvesz egy alkalmazást ebbe a biztonsági csoportba.
 
-Szolgáltatásnév új munkaterülethez való hozzárendeléséhez használja a [Power BI REST API-kat](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). A műveletek végrehajtásakor egy szolgáltatásnévre történő hivatkozáshoz vagy módosítások végzéséhez a **szolgáltatásnév objektumazonosítóját** használja, például úgy, hogy a szolgáltatásnevet adminisztrátorként alkalmazza a munkaterületre.
+>[!NOTE]
+>Ha az egész vállalathoz engedélyezni szeretné a szolgáltatásnév-hozzáférést, hagyja ki ezt a lépést.
 
-Az alábbi lépésekkel lekérheti a szolgáltatásnév objektumazonosítóját az Azure Portalról.
+```powershell
+# Required to sign in as a tenant admin
+Connect-AzureAD
 
-1. Hozzon létre egy új alkalmazásregisztrációt az Azure Portalon.  
+# Create an Azure AD security group
+$group = New-AzureADGroup -DisplayName <Group display name> -SecurityEnabled $true -MailEnabled $false -MailNickName notSet
 
-2. Majd a **Felügyelt alkalmazás a helyi címtárban** területen jelölje ki a létrehozott alkalmazás nevét.
+# Add the service principal to the group
+Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
+```
 
-   ![Felügyelt alkalmazások a helyi tárban](media/embed-service-principal/managed-application-in-local-directory.png)
+## <a name="step-3---enable-the-power-bi-service-admin-settings"></a>3\. lépés – A Power BI szolgáltatás rendszergazdai beállításainak engedélyezése
 
-    > [!NOTE]
-    > A fenti képen látható objektumazonosító nem azonos a szolgáltatásnévvel használttal.
+Ahhoz, hogy egy Azure AD-alkalmazás hozzáférjen a Power BI-tartalmakhoz és az API-khoz, egy Power BI-rendszergazdának engedélyeznie kell a szolgáltatásnév hozzáférését az Power BI felügyeleti portálján.
 
-3. Az objektumazonosító megtekintéséhez válassza a **Tulajdonságok** lehetőséget.
+Vegye fel az Azure AD-ben létrehozott biztonsági csoportot a **Fejlesztői beállítások** adott biztonságicsoport-szakaszába.
 
-    ![Szolgáltatásnév objektumazonosítójának tulajdonságai](media/embed-service-principal/service-principal-object-id-properties.png)
+>[!IMPORTANT]
+>A szolgáltatásnevek minden olyan bérlői beállításhoz hozzáférnek, amelyhez engedélyezve vannak. A rendszergazdai beállításoktól függően ez a meghatározott biztonsági csoportokat vagy a teljes vállalatot is jelentheti.
+>
+>A szolgáltatásnevek adott bérlői beállításokhoz való hozzáférését úgy korlátozhatja, hogy csak meghatározott biztonsági csoportokhoz engedélyezi a hozzáférést. Azt is megteheti, hogy dedikált biztonsági csoportot hoz létre a szolgáltatásnevek számára majd kizárja az a kívánt bérlői beállításokból.
 
-Alább egy mintaszkript látható a szolgáltatásnév objektumazonosítójának PowerShell-lel történő lekéréséhez.
+![Adminisztrációs portál](media/embed-service-principal/admin-portal.png)
 
-   ```powershell
-   Get-AzureADServicePrincipal -Filter "DisplayName eq '<application name>'"
-   ```
+## <a name="step-4---add-the-service-principal-as-an-admin-to-your-workspace"></a>4\. lépés – A szolgáltatásnév felvétele rendszergazdaként a munkaterületre
+
+Annak engedélyezéséhez, hogy az Azure AD-alkalmazás hozzáférjen az olyan összetevőkhöz, mint a Power BI szolgáltatásbeli jelentések, irányítópultok és adathalmazok, vegye fel a szolgáltatásnév-entitást tagként vagy rendszergazdaként a munkaterületre.
+
+>[!NOTE]
+>Ez a szakasz a felhasználói felülethez nyújt útmutatást. Szolgáltatásnevet a [Csoportok – csoportfelhasználó felvétele API](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) segtségével is felvehet egy munkaterületre.
+
+1. Görgessen lefelé addig a munkaterületig, amelyhez hozzáférést kíván adni, majd válassza a **További lehetőségek** menü **Munkaterület-hozzáférés** pontját.
+
+    ![Munkaterület beállításai](media/embed-service-principal/workspace-access.png)
+
+2. Vegye fel a szolgáltatásnevet **rendszergazdaként** vagy **tagként** a munkaterületre.
+
+    ![Munkaterületi rendszergazda](media/embed-service-principal/add-service-principal-in-the-UI.png)
+
+## <a name="step-5---embed-your-content"></a>5\. lépés – A tartalom beágyazása
+
+A tartalmat egy mintaalkalmazásban vagy a saját alkalmazásában is beágyazhatja.
+
+* [Tartalom beágyazása a mintaalkalmazással](embed-sample-for-customers.md#embed-content-using-the-sample-application)
+* [Tartalom beágyazása az alkalmazásban](embed-sample-for-customers.md#embed-content-within-your-application)
+
+A tartalom beágyazása után minden készen áll [az éles üzemre való átállásra](embed-sample-for-customers.md#move-to-production).
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
@@ -171,14 +195,15 @@ Alább egy mintaszkript látható a szolgáltatásnév objektumazonosítójának
 * A Power BI Portalra szolgáltatásnévvel nem lehet bejelentkezni.
 * A szolgáltatásnév Power BI felügyeleti portáljának fejlesztői beállításaiban történő engedélyezéséhez rendszergazdai jogosultságok szükségesek a Power BI-ban.
 * Szolgáltatásnév használatával nem telepíthet vagy kezelhet helyszíni adatátjárót.
-* A [Beágyazás a cég számára](embed-sample-for-your-organization.md) alkalmazásai nem tudják a szolgáltatásnevet használni.
+* A [Beágyazás a vállalat számra](embed-sample-for-your-organization.md) beállítású alkalmazások nem használhatnak szolgáltatásnevet.
 * Az [adatfolyamok](../../service-dataflows-overview.md) kezelése nem támogatott.
 * A szolgáltatásnév jelenleg nem támogat rendszergazdai API-kat.
 * Ha egyszerű szolgáltatást használ [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview)-adatforrással, akkor magának az egyszerű szolgáltatásnak kell az Azure Analysis Services-példányra vonatkozó engedélyekkel rendelkeznie. Erre a célra nem használható az egyszerű szolgáltatást tartalmazó biztonsági csoport.
 
 ## <a name="next-steps"></a>Következő lépések
 
-* [Alkalmazás regisztrálása](register-app.md)
 * [Power BI Embedded az ügyfelek számára](embed-sample-for-customers.md)
-* [Alkalmazás- és szolgáltatásnév-objektumok az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+
 * [Helyszíni adatátjárót szolgáltatásnévvel használó sorszintű biztonság](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+
+* [Power BI-tartalom beágyazása szolgáltatásnévvel és tanúsítvánnyal]()

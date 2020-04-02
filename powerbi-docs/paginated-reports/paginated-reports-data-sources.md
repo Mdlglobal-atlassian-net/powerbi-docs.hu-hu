@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/30/2020
-ms.openlocfilehash: ec299ceb5862be3f1e121e0e7d67eca6447f2da6
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: b4ed632d6106fa552cebf9837ba238bdc7a4d3f1
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80113738"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404831"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>A Power BI többoldalas jelentéseihez használható támogatott adatforrások
 
@@ -32,7 +32,7 @@ A többoldalas jelentések natív módon támogatják a következő adatforráso
 | Prémium szintű Power BI-adathalmaz (XMLA) | SSO |   |
 | Adatok megadása | N.A. | Az adatok a jelentésbe ágyazva érhetők el. |
 
-Az Azure SQL Database kivételével az összes forrás azonnal használható, amint a felhasználó feltölti a jelentést a Power BI szolgáltatásba. Ha lehetséges, az adatforrások alapértelmezés szerint az egyszeri bejelentkezést (SSO) használják. Az Azure Analysis Services esetében az OAuth2 hitelesítési típust is választhatja.
+Az Azure SQL Database kivételével az összes forrás azonnal használható, amint a felhasználó feltölti a jelentést a Power BI szolgáltatásba. Ha lehetséges, az adatforrások alapértelmezés szerint az egyszeri bejelentkezést (SSO) használják. Az Azure Analysis Services esetében az OAuth2 hitelesítési típust is választhatja. Ha azonban egy adott adatforrás hitelesítéstípusát OAuth2-re változtatja, többé nem térhet vissza az SSO használatára.  Ezen felül a módosítás az ezt az adatforrást használó összes jelentésre vonatkozik egy adott bérlő összes munkaterületén.  A sorszintű biztonság csak akkor működik a többoldalas jelentésekben, ha a felhasználók az SSO hitelesítéstípust választják.
 
 Az Azure SQL Database-adatforrások esetében több információt kell megadnia. Erről [Az Azure SQL Database hitelesítése](#azure-sql-database-authentication) részben tudhat meg többet.
 

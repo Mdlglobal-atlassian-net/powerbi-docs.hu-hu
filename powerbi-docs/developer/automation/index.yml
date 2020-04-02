@@ -1,0 +1,65 @@
+### YamlMime:Landing
+title: A Power BI-automatizálás dokumentációja
+summary: A Power BI-automatizálással kezelési feladatokat is végezhet olyan Power BI-objektumokon, mint a jelentések, az adatkészletet és a munkaterületek.
+metadata:
+  title: A Power BI-automatizálás dokumentációja
+  description: A Power BI-automatizálással kezelési feladatokat is végezhet olyan Power BI-objektumokon, mint a jelentések, az adatkészletet és a munkaterületek.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+  ms.openlocfilehash: 33f3caa20bc29c41b9d2c43f6727947ce9b7d446
+  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.translationtype: HT
+  ms.contentlocale: hu-HU
+  ms.lasthandoff: 04/01/2020
+  ms.locfileid: "80516399"
+landingContent:
+- title: Első lépések
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Ismerje meg, mit végezhet el a Power BI használatával
+      url: overview-of-power-bi-rest-api.md
+  - linkListType: tutorial
+    links:
+    - text: 'Oktatóanyag: Adatok elküldése adatkészletbe'
+      url: walkthrough-push-data.md
+    - text: 'Oktatóanyag: Hitelesítési hozzáférési jogkivonat beszerzése'
+      url: walkthrough-push-data-get-token.md
+    - text: 'Oktatóanyag: Adathalmaz létrehozása'
+      url: walkthrough-push-data-create-dataset.md
+    - text: Sorok hozzáadása adatkészlettel
+      url: walkthrough-push-data-get-datasets.md
+    - text: Sorok hozzáadása egy Power BI-táblázathoz
+      url: walkthrough-push-data-add-rows.md
+- title: Adatok használata
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Automatikus adatmegőrzési szabályzat valós idejű adatokhoz
+      url: api-automatic-retention-policy-for-real-time-data.md
+    - text: A Power BI REST API korlátozásai
+      url: api-rest-api-limitations.md
+    - text: Adatkészlet tulajdonságai
+      url: api-dataset-properties.md
+  - linkListType: how-to-guide
+    links:
+    - text: Hitelesítő adatok konfigurálása
+      url: configure-credentials.md
+- title: Hivatkozások és források
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Power BI REST API-k
+      url: https://docs.microsoft.com/rest/api/power-bi/
+    - text: A Power BI REST API-jainak leírása
+      url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+    - text: Fejlesztői központ
+      url: https://powerbi.microsoft.com/developers/
+    - text: Power BI-kódtárak
+      url: https://www.nuget.org/profiles/powerbi

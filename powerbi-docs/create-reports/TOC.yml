@@ -20,6 +20,8 @@
       items:
         - name: Power BI-minták beszerzése
           href: ../sample-datasets.md
+        - name: 'COVID-19-minta, USA'
+          href: sample-covid-19-us.md
         - name: Ügyfél-jövedelmezőségi minta
           href: ../sample-customer-profitability.md
         - name: Informatikaköltség-elemzési minta

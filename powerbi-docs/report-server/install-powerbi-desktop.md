@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/13/2020
-ms.openlocfilehash: 74e2c60bfe0d6d494fc1175fb001b4b4b7eb24fa
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: dfb6c313e989514da2aa04facd6c6136a0eadc1a
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381123"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404184"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
 
@@ -62,7 +62,7 @@ Ha egy Power BI-jelentést szerkeszt a Power BI jelentéskészítő kiszolgáló
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
-A Power BI jelentéskészítő kiszolgálón, a Power BI szolgáltatásban (https://app.powerbi.com) ) és a Power BI-mobilalkalmazásokban található jelentések működése szinte teljesen megegyezik, de bizonyos funkciók eltérnek egymástól.
+A Power BI jelentéskészítő kiszolgálón, a Power BI szolgáltatásban (`https://app.powerbi.com`) és a Power BI-mobilalkalmazásokban található jelentések működése szinte teljesen megegyezik, de bizonyos funkciók eltérnek egymástól.
 
 ### <a name="selecting-a-language"></a>Nyelv kiválasztása
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: parshah
-ms.openlocfilehash: ecb4f9540651b52f28626f8baa88854ff133b9d0
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 8b30089fe04c832734bd418cc58fabb7b574a082
+ms.sourcegitcommit: dc18209dccb6e2097a92d87729b72ac950627473
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78402007"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80361777"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló kapacitástervezési útmutatója
 A Power BI jelentéskészítő kiszolgáló olyan önkiszolgáló BI és céges jelentéskészítő megoldás, amelyet az ügyfelek helyben telepíthetnek a saját tűzfal mögé. A Power BI Desktop interaktív jelentéskészítő képességét kombinálja az SQL Server Reporting Services helyi kiszolgálói platformjával. Az elemzések és a jelentések gyakori és növekvő céges használatának köszönhetően a hardveres infrastruktúrák és a vállalati felhasználói bázis skálázásához szükséges szoftverlicencek költségbecslése kihívást jelenthet. Ez a tanulmány útmutatást nyújt a Power BI jelentéskészítő kiszolgáló kapacitástervezéséhez. Ehhez számos olyan terhelésteszt eredményét osztja meg, amelyek során különböző számítási feladatokat futtattak egy jelentéskiszolgálón. Bár a cégek jelentései, lekérdezései és használati mintái eltérőek lehetnek, a jelen dokumentumban ismertetett eredmények – a ténylegesen használt tesztekkel és a végrehajtásuk részletes bemutatásával – hivatkozási pontként szolgálnak bárkinek, aki a Power BI jelentéskészítő kiszolgáló üzembe helyezésének korai tervezési szakaszában van.
@@ -116,7 +116,7 @@ A jelen dokumentumban ismertetett eredmények adott adatkészletet használó ad
 ### <a name="1-topology"></a>1\. Topológia
 **1.1. A Power BI jelentéskészítő kiszolgáló topológiája**
 
-Annak céljából, hogy a különböző konfigurációkban kizárólag a Power BI jelentéskészítő kiszolgáló viselkedését tudjuk vizsgálni, az egyes típusú gépek VM-konfigurációja rögzített volt (kivéve a Power BI jelentéskészítő kiszolgálót üzemeltető gépet). Mindegyik gép üzembe helyezése a második generációs (v2), Premium Storage-lemezekkel felszerelt, D sorozatú gépeknek megfelelően történt. Az egyes virtuálisgép-méretekről a https://azure.microsoft.com/pricing/details/virtual-machines/windows/ weblap általános célú felhasználást ismertető szakaszában talál részletes információkat.
+Annak céljából, hogy a különböző konfigurációkban kizárólag a Power BI jelentéskészítő kiszolgáló viselkedését tudjuk vizsgálni, az egyes típusú gépek VM-konfigurációja rögzített volt (kivéve a Power BI jelentéskészítő kiszolgálót üzemeltető gépet). Mindegyik gép üzembe helyezése a második generációs (v2), Premium Storage-lemezekkel felszerelt, D sorozatú gépeknek megfelelően történt. Az egyes virtuálisgép-méretekről a weblap [általános célú felhasználást ismertető szakaszában](https://azure.microsoft.com/pricing/details/virtual-machines/windows/) talál részletes információkat.
 
 | Virtuális gép típusa | Processzor | Memória | Azure-beli virtuális gép mérete |
 | --- | --- | --- | --- |
@@ -126,7 +126,7 @@ Annak céljából, hogy a különböző konfigurációkban kizárólag a Power B
 
 **1.2. A Power BI jelentéskészítő kiszolgáló virtuálisgép-konfigurációja** 
 
-Különböző konfigurációjú processzorokat és memóriát használtunk a Power BI jelentéskészítő kiszolgálót üzemeltető virtuális gépen. A többi virtuális géptől eltérően ennek a gépnek az üzembe helyezése a harmadik generációs (v3), Premium Storage-lemezekkel felszerelt, D sorozatú gépeknek megfelelően történt. Erről a virtuálisgép-méretről a https://azure.microsoft.com/pricing/details/virtual-machines/windows/ weblap általános célú felhasználást ismertető szakaszában talál részletes információkat.
+Különböző konfigurációjú processzorokat és memóriát használtunk a Power BI jelentéskészítő kiszolgálót üzemeltető virtuális gépen. A többi virtuális géptől eltérően ennek a gépnek az üzembe helyezése a harmadik generációs (v3), Premium Storage-lemezekkel felszerelt, D sorozatú gépeknek megfelelően történt. Erről a virtuálisgép-méretről a weblap [általános célú felhasználást ismertető szakaszában](https://azure.microsoft.com/pricing/details/virtual-machines/windows/.) talál részletes információkat.
 
 | Virtuális gép | Processzor | Memória | Azure-beli virtuális gép mérete |
 | --- | --- | --- | --- |

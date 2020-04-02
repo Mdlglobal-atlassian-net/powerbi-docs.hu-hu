@@ -1,0 +1,120 @@
+- name: A Power BI-vizualizációk dokumentációja
+  href: index.yml
+  expanded: true
+  items:
+    - name: Áttekintés
+      expanded: true
+      items:
+        - name: Vizualizációk a Power BI-ban
+          href: power-bi-custom-visuals.md
+    - name: Oktatóanyagok
+      expanded: true
+      items:
+        - name: Power BI-vizualizáció fejlesztése
+          href: custom-visual-develop-tutorial.md
+        - name: Formázási lehetőségek hozzáadása
+          href: custom-visual-develop-tutorial-format-options.md
+        - name: Egységtesztek hozzáadása vizualizációs projekthez
+          href: unit-tests-introduction.md
+    - name: Fogalmak
+      items:
+        - name: A Power BI-vizualizáció projekt szerkezete
+          href: visual-project-structure.md
+        - name: Vizualizációs fogalmak
+          href: power-bi-visuals-concept.md
+        - name: Vizualizációk cégek számára a Power BI-ban
+          href: power-bi-custom-visuals-organization.md
+        - name: Útmutató Power BI-vizualizációkhoz
+          href: guidelines-powerbi-visuals.md
+        - name: Vizualizációk – gyakori kérdések
+          href: power-bi-custom-visuals-faq.md
+        - name: Képességek használata
+          href: capabilities.md
+        - name: Adatnézet-leképezések
+          href: dataview-mappings.md
+        - name: Objektumok és tulajdonságok
+          href: objects-properties.md
+        - name: Speciális szerkesztési mód
+          href: advanced-edit-mode.md
+    - name: Útmutató
+      items:
+        - name: Power BI-vizualizáció minősíttetése
+          href: power-bi-custom-visuals-certified.md
+        - name: Power BI-vizualizációk közzététele az AppSource-ban
+          href: office-store.md
+        - name: R-alapú Power BI-vizualizációk a Power BI-ban
+          href: ../../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
+        - name: Vizualizációk interakciói
+          href: visuals-interactions.md
+        - name: Kijelölések hozzáadása
+          href: selection-api.md
+        - name: Elemleírások hozzáadása vizualizációkhoz
+          href: add-tooltips.md
+        - name: Elemzés panel hozzáadása
+          href: analytics-pane.md
+        - name: Vizualizációk szűrése
+          href: filter-api.md
+        - name: További adatok lekérése
+          href: fetch-more-data.md
+        - name: Könyvjelző-támogatás hozzáadása
+          href: bookmarks-support.md
+        - name: Helyi menü támogatásának hozzáadása
+          href: context-menu.md
+        - name: Lehatolási támogatás hozzáadása
+          href: drill-down-support.md
+        - name: Adatkiemelés vizualizációkban
+          href: highlight.md
+        - name: Magas kontrasztú mód támogatásának hozzáadása
+          href: high-contrast-support.md
+        - name: Szeletelők szinkronizálásának engedélyezése
+          href: enable-sync-slicers.md
+        - name: Vizualizációk hibakeresése
+          href: visuals-how-to-debug.md
+        - name: Power BI-vizualizációk hibáinak elhárítása
+          href: power-bi-custom-visuals-troubleshoot.md
+    - name: Hivatkozás
+      items:
+        - name: Kezdőlap
+          href: landing-page.md
+        - name: Indítási URL-cím
+          href: launch-url.md
+        - name: Helyi tárolási API
+          href: local-storage.md
+        - name: Események renderelése
+          href: event-service.md
+        - name: Rendezés
+          href: sort-options.md
+        - name: Honosítás
+          href: localization.md
+        - name: Eszközök Power BI-vizualizációkhoz
+          items:
+            - name: Külső kódtárak hozzáadása
+              href: adding-external-libraries.md
+            - name: Interaktivitási eszközök
+              href: utils-interactivity-selections.md
+            - name: Formázási eszközök
+              href: utils-formatting.md
+            - name: Adatnézeti eszközök
+              href: utils-dataview.md
+            - name: Diagrameszközök
+              href: utils-chart.md
+            - name: Színeszközök
+              href: utils-color.md
+            - name: SVG-eszközök
+              href: utils-svg.md
+            - name: Írási eszközök
+              href: utils-type.md
+            - name: Elemleírási eszközök
+              href: utils-tooltip.md
+            - name: Adatnézeti eszközök
+              href: utils-dataview.md
+    - name: Erőforrások
+      items:
+        - name: Fejlesztői központ
+          href: 'https://powerbi.microsoft.com/developers/'
+        - name: Minták a Power BI-vizualizációkhoz
+          href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
+        - name: Power BI-vizualizációk Git-adattára
+          href: 'https://go.microsoft.com/fwlink/?linkid=848277'
+        - name: SSL-tanúsítvány létrehozása
+          href: create-ssl-certificate.md

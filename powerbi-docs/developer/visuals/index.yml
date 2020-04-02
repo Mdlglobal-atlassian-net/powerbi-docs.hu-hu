@@ -1,0 +1,59 @@
+### YamlMime:Landing
+title: A Power BI-vizualizációk dokumentációja
+summary: Saját Power BI-vizualizációt is fejleszthet, amelyet Ön, szervezete vagy a teljes- Power BI-közösség használhat. A dokumentációban megtalálja a szükséges információkat.
+metadata:
+  title: A Power BI-vizualizációk dokumentációja
+  description: Saját Power BI-vizualizációt is fejleszthet, amelyet Ön, az Ön szervezete vagy a teljes- Power BI-közösség használhat. A dokumentációban megtalálja a szükséges információkat.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+  ms.openlocfilehash: d68b08f941ebe04c41e29f1260332e6f2b0d332c
+  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.translationtype: HT
+  ms.contentlocale: hu-HU
+  ms.lasthandoff: 04/01/2020
+  ms.locfileid: "80516238"
+landingContent:
+- title: Első lépések
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Vizualizációk a Power BI-ban
+      url: power-bi-custom-visuals.md
+    - text: A Power BI-vizualizáció projekt szerkezete
+      url: visual-project-structure.md
+    - text: Gyakori kérdések
+      url: power-bi-custom-visuals-faq.md
+- title: Power BI-vizualizáció fejlesztése
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 'Oktatóanyag: Power BI-vizualizáció fejlesztése'
+      url: custom-visual-develop-tutorial.md
+    - text: 'Oktatóanyag: Formázási beállítások hozzáadása Power BI-vizualizációhoz'
+      url: custom-visual-develop-tutorial-format-options.md
+  - linkListType: concept
+    links:
+    - text: Útmutató Power BI-vizualizációkhoz
+      url: guidelines-powerbi-visuals.md
+- title: Power BI-vizualizációk közzététele
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Power BI-vizualizációk közzététele a Partnerközpontban
+      url: office-store.md
+    - text: Power BI-vizualizáció minősíttetése
+      url: power-bi-custom-visuals-certified.md
+- title: Hivatkozások és források
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Minták a Power BI-vizualizációkhoz
+      url: https://microsoft.github.io/PowerBI-visuals/samples/
+    - text: Git-tárház
+      url: https://github.com/Microsoft/PowerBI-visuals

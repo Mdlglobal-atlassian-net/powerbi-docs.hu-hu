@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2020
-ms.openlocfilehash: 2db9cdcb1238b5f26a34cf652f8f614411c2992b
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 18267f06bd43166cb1958d3aff73913a31189953
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79379043"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80550765"
 ---
 # <a name="power-bi-visual-project-structure"></a>A Power BI-vizualizáció projekt szerkezete
 
@@ -48,7 +48,7 @@ project
 
 ## <a name="folder-and-file-description"></a>Mappa és fájl leírása
 
-Ez a szakasz a **pbiciz** eszköz által létrehozott könyvtár mappáit és fájljait mutatja be.  
+Ez a szakasz a **pbiviz** eszköz által létrehozott könyvtár mappáit és fájljait mutatja be.  
 
 ### <a name="vscode"></a>.vscode
 

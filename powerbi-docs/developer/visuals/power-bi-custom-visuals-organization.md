@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ab2aa7f1771c09a7ec725f9cc533717e7daf11a0
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 52ebb1bf049024051846936237d35b202f00d630
+ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79383505"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80464575"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Vállalati vizualizációk a Power BI-ban
 
@@ -35,7 +35,7 @@ A szervezeti Power BI-vizualizációk létrehozott jelentésekben való használ
 A szervezeti Power BI-vizualizációknak a szervezetben való felügyeletével, üzembe helyezésével és kezelésével kapcsolatban a következő cikkben találhat további információt: [További információk a szervezeti Power BI-vizualizációk üzembe helyezésével és kezelésével kapcsolatban](https://go.microsoft.com/fwlink/?linkid=866790).
 
 > [!WARNING]
-> Az egyéni vizualizációk biztonsági és adatvédelmi kockázatokat tartalmazó kódot is tartalmazhatnak. Győződjön meg arról, hogy az egyéni vizualizációk szerzője és forrása megbízható, mielőtt üzembe helyezné őket a szervezet tárházban.
+> A fájlból telepített Power BI-vizualizációk biztonsági és adatvédelmi kockázatokat tartalmazó kódot is tartalmazhatnak. Győződjön meg arról, hogy a Power BI-vizualizáció fájljának szerzője és forrása megbízható, mielőtt üzembe helyezné azt a szervezet adattárában.
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
@@ -45,7 +45,9 @@ Rendszergazdák:
 
 * Az örökölt Power BI-vizualizációk (mint például azok a Power BI-vizualizációk, melyek nem az új verzióval ellátott API-kra épülnek) használata nem támogatott
 
-* Ha egy egyéni vizualizációt törölnek a tárházból, leáll minden olyan meglévő jelentés megjelenítése, mely a törölt vizualizációt használja. Az adattárból való törlés művelete nem vonható vissza. Az egyéni vizualizációk ideiglenes letiltásához használja a „Letiltás” funkciót.
+* Ha az AppSource-ból vagy fájlból származó Power BI-vizualizációt törölnek az adattárból, minden olyan meglévő jelentés megjelenítése leáll, mely a törölt vizualizációt használja. Az adattárból való törlés nem vonható vissza. Egy AppSource-ból vagy fájlból származó Power BI-vizualizáció ideiglenes letiltására a „Letiltás” funkció használható.
+
+* A Power BI jelentéskészítő kiszolgálóban nem támogatottak a vállalati Power BI-vizualizációk.
 
 Végfelhasználók:
 
