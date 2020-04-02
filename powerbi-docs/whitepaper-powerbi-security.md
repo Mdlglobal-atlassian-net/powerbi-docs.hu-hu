@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 88c32a3d32a8d6c6653fa9badcf728bad0ee2c54
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: a13e48e413f047812d9b00fe67c2ee2b69bbc2dc
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404576"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80551114"
 ---
 # <a name="power-bi-security-whitepaper"></a>A Power BI biztonsága – tanulmány
 
@@ -29,11 +29,11 @@ ms.locfileid: "80404576"
 > [!NOTE]
 > A tanulmányt a böngésző **Nyomtatás** > **Mentés PDF-ként** lehetőségével mentheti vagy kinyomtathatja.
 
-## <a name="introduction"></a>Bevezetés
+## <a name="introduction"></a>Introduction (Bevezetés)
 
 A **Power BI** a Microsoft egy online szoftverszolgáltatása (_SaaS_ vagy szolgáltatott szoftver), amellyel könnyen és gyorsan létrehozhat önkiszolgáló üzletiintelligencia-irányítópultokat, jelentéseket, adatkészleteket és vizualizációkat. A Power BI szolgáltatással számos különböző adatforráshoz csatlakozhat, egyesítheti és formálhatja a kapcsolatokból származó adatokat, valamint másokkal megosztható jelentéseket és irányítópultokat hozhat létre.
 
-A Power BI szolgáltatást a [Microsoft Online Services használati feltételei](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) és a [Microsoft nagyvállalati adatvédelmi nyilatkozata](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx) szabályozza. Az adatfeldolgozás helyéről tájékozódjon a Microsoft Online Services használati feltételei között található Adatfeldolgozási hely feltételei között. A Power BI megfelelőségi információival kapcsolatban az elsődleges forrás a [Microsoft Adatvédelmi központ](https://www.microsoft.com/trustcenter). A Power BI csapata keményen dolgozik azért, hogy az ügyfeleknek a legújabb innovációkat és termékeket nyújtsa. Power BI jelenleg az [Office 365 megfelelőségi keretrendszerének](https://download.microsoft.com/download/1/4/3/1434ABAB-B8E9-412D-8C3A-187B5FCB7A2F/Compliance%20Framework%20document.pdf)D. szintjében található.
+A Power BI szolgáltatást a [Microsoft Online Services használati feltételei](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) és a [Microsoft nagyvállalati adatvédelmi nyilatkozata](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx) szabályozza. Az adatfeldolgozás helyéről tájékozódjon a Microsoft Online Services használati feltételei között található Adatfeldolgozási hely feltételei között. A Power BI megfelelőségi információival kapcsolatban az elsődleges forrás a [Microsoft Adatvédelmi központ](https://www.microsoft.com/trustcenter). A Power BI csapata keményen dolgozik azért, hogy az ügyfeleknek a legújabb innovációkat és termékeket nyújtsa. Power BI jelenleg az [Office 365 megfelelőségi keretrendszerének](https://www.microsoft.com/trust-center/compliance/compliance-overview)D. szintjében található.
 
 Ez a cikk a Power BI biztonságát ismerteti. Ennek keretében bemutatja a Power BI-architektúrát, majd a felhasználói hitelesítést és az adatkapcsolatok létrehozását, végül pedig ismerteti, hogy a Power BI hogyan tárolja és mozgatja az adatokat a szolgáltatáson belül. Az utolsó szakasz biztonsággal kapcsolatos kérdéseket és válaszokat tartalmaz.
 
@@ -200,7 +200,7 @@ A helyreállítási kulcson alapuló átjárótitkosítási kulcsok sohasem hagy
 
 Felhőalapú adatforrások esetén az adatáthelyezési szerepkör [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx) (mindig titkosított) metódusokkal titkosítja a titkosítási kulcsokat. További információ az [Always Encrypted adatbázis-funkcióról](https://msdn.microsoft.com/library/mt163865.aspx).
 
-#### <a name="datasets"></a>Adatkészletek
+#### <a name="datasets"></a>Adathalmazok
 
 1. Metaadatok (táblák, oszlopok, mértékek, számítások, kapcsolati sztringek stb.)
 
@@ -223,7 +223,7 @@ Felhőalapú adatforrások esetén az adatáthelyezési szerepkör [Always Encry
         - Ha az adatkészlet frissítésre van konfigurálva, a hitelesítő adatokat az adatáthelyezési erőforrás Azure SQL Database szolgáltatása tárolja. A titkosítási kulcsot az átjárót futtató számítógép tárolja az ügyfél infrastruktúráján.
         - Ha az adatkészlet nincsen frissítésre konfigurálva, a rendszer nem tárol hitelesítő adatokat az adatforrásokhoz
 
-1. beviteles
+1. Adatok
 
     a. Helyszíni Analysis Services és DirectQuery – semmi nincs tárolva a Power BI-szolgáltatásban.
 
@@ -282,7 +282,7 @@ Az alkalmazott titkosítási módszertől függetlenül, az ügyfelek nevében a
 
 A nem felejtő eszközök olyan eszközök, amelyeken állandó teljesítmény nélkül maradnak a memóriájuk. A következők a permanens eszközökön tárolt ideiglenes adatokra vonatkoznak. 
 
-#### <a name="datasets"></a>Adatkészletek
+#### <a name="datasets"></a>Adathalmazok
 
 1. Metaadatok (táblák, oszlopok, mértékek, számítások, kapcsolati sztringek stb.)
 
@@ -300,7 +300,7 @@ A nem felejtő eszközök olyan eszközök, amelyeken állandó teljesítmény n
     c. Leküldéses adatok – Nincs (nem alkalmazható)
 
     d. ETL – nincs (a rendszer semmit sem tárol a számítási csomóponton, minden az **Inaktív adatok** szekcióban fentebb leírtak szerint történik)
-4. beviteles
+4. Adatok
 
     Előfordulhat, hogy néhány adatösszetevőt a rendszer korlátozott ideig a számítási csomópont merevlemezén tárol.
 
