@@ -6,22 +6,26 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/05/2020
+ms.date: 03/10/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 0f0957962a761623262268f8c84c338000ba56f2
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 6886bc628add44f94c91b77cada97abf81635e78
+ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79078979"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80302285"
 ---
 # <a name="collaborate-in-workspaces"></a>Együttműködés a munkaterületeken
 
  A *munkaterületek* olyan helyek, ahol lehetséges a munkatársakkal való együttműködés egy adott tartalommal kapcsolatban. A munkaterületeket a Power BI *tervezői* hozzák létre az irányítópultok, jelentések és alkalmazások gyűjteményeinek tárolására. 
 
+## <a name="types-of-workspaces"></a>Munkaterület-típusok
+Az összes tartalom, amellyel Ön rendelkezik vagy amelyet Ön hozott létre a **Saját munkaterületen** található. Tekintsen rá úgy mint a saját, személyes munkaterületére, ahol nyugodtan kísérletezhet tartalmaival. Sok Power BI-fogyasztó esetén azonban a **Saját munkaterület** üres marad, mert a feladata nem jár új tartalom létrehozásával. A fogyasztók, ahogy a neve is mutatja, „fogyasztják” a mások által létrehozott tartalmat, és ezeket az adatokat üzleti döntésekhez használják fel. Ha Ön létrehoz tartalmat, akkor inkább a [tervezők számára készült Power BI-cikkeket](../create-reports/index.yml) érdemes elolvasnia.
 
-<art showing different wss>
+Az **alkalmazás-munkaterületek** a meghatározott alkalmazások tartalmait tartalmazzák. Amikor egy *tervező* létrehoz egy alkalmazást, akkor az alkalmazás használatához szükséges összes tartalmat egybecsomagolja. A tartalomban irányítópultok, jelentések, alkalmazások és munkafüzetek szerepelhetnek. Nem minden alkalmazás tartalmazza azonban mind a négyet. Van olyan alkalmazás, amely csak egy irányítópultot tartalmaz, de olyan is, amelyben minden típusból három van, de akár olyan is, amely húsz jelentést tartalmaz. Mindez attól függ, hogy a *tervező* mit csomagolt be az alkalmazásba. Gyakori eset, hogy a *fogyasztóknak* szánt alkalmazás-munkaterületek nem tartalmaznak adathalmazokat.
+
+<!--<art showing different wss> -->
 
 ## <a name="roles-in-the-workspaces"></a>A munkaterületeken elérhető szerepkörök
 
@@ -42,3 +46,16 @@ Előfordulhat, hogy a szervezeten kívüli munkaterületre kap meghívást. Ekko
 ## <a name="next-steps"></a>Következő lépések
 * [Alkalmazások a Power BI-ban](end-user-apps.md)    
 * Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+
+
+
+
+
+
+
+
+
+
+
+
+
