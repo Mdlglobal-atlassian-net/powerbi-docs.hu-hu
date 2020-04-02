@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: dc429e4147016df07d339468090ad50bb6f14842
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 52f840d5806c10de088838cf64187b953f36aa54
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79493894"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80550948"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Oktatóanyag: Power BI-tartalom beágyazása az alkalmazásba országos felhők számára
 
@@ -116,7 +116,7 @@ Ez a cikk a GitHubon, az [alkalmazás tulajdonában lévő adatok mintában](htt
 
 * A kínai felhőhöz készült Power BI paraméterei
 
-1. Írja felül a Cloud.config fájlt a [kínai felhőhöz készült Power BI](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) tartalmával.
+1. Írja felül a Cloud.config fájlt a [kínai felhőhöz készült Power BI](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) tartalmával.
 
 2. Frissítse az applicationId (natív alkalmazáshoz tartozó applicationId), a workspaceId, a felhasználó (a fő felhasználó) és a jelszó értékét a Web.config fájlban.
 
@@ -143,7 +143,7 @@ A REST API-hívások indításához az alkalmazásokat regisztrálja az Azure AD
 
 * A kínai felhőhöz készült Power BI – ```https://app.powerbi.cn/apps```
 
-Ha letöltötte az [ügyfelek számára végzett beágyazási mintát](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), használja a kapott **applicationId** azonosítót, hogy a minta hitelesítést végezhessen az Azure AD-ben. A minta konfigurálásához módosítsa az **applicationId** azonosítót a *web.config* fájlban.
+Ha letöltötte az [ügyfelek számára végzett beágyazási mintát](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData), használja a kapott **applicationId** azonosítót, hogy a minta hitelesítést végezhessen az Azure AD-ben. A minta konfigurálásához módosítsa az **applicationId** azonosítót a *web.config* fájlban.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>2\. lépés – hozzáférési token lekérése az Azure AD-ből
 
@@ -187,7 +187,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 A Power BI-ügyfélobjektummal kérje le a beágyazni kívánt elem hivatkozását. Irányítópultokat, csempéket vagy jelentéseket ágyazhat be. Itt láthat arra példát, hogyan kérhető le az első irányítópult, csempe vagy jelentés egy adott munkaterületről.
 
-Egy példa elérhető az [alkalmazás tulajdonában lévő adatok használatát ismertető mintában](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) lévő **Controllers\HomeController.cs** fájlban.
+Egy példa elérhető az [alkalmazás tulajdonában lévő adatok használatát ismertető mintában](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) lévő **Controllers\HomeController.cs** fájlban.
 
 #### <a name="reports"></a>Jelentések
 
@@ -243,7 +243,7 @@ A JavaScript API segítségével létrehozhat egy beágyazási tokent. A beágya
 > [!IMPORTANT]
 > Mivel a beágyazási tokenek elsődlegesen fejlesztési és tesztelési célokra használhatók, a Power BI fő fiókja csak korlátozott mennyiségű tokent tud előállítani. Éles üzemi beágyazási helyzetekhez [kapacitást szükséges vásárolni](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical). Kapacitásvásárlás esetén nincs korlátja a beágyazási tokenek előállításának.
 
-Egy példa elérhető a [céges beágyazási mintában](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) lévő **Controllers\HomeController.cs** fájlban.
+Egy példa elérhető a [céges beágyazási mintában](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) lévő **Controllers\HomeController.cs** fájlban.
 
 Létrejött egy osztály az **EmbedConfig** és a **TileEmbedConfig** elemekhez. Egy példa elérhető a **Models\EmbedConfig.cs** és a **Models\TileEmbedConfig.cs** fájlban.
 
@@ -309,7 +309,7 @@ var embedConfig = new TileEmbedConfig()
 
 A JavaScript használatával egy irányítópultot tölthet be egy div elembe a weboldalon. A minta EmbedConfig/TileEmbedConfig modellt használ egy irányítópult, csempe vagy jelentés nézeteivel együtt. A JavaScript API használatának teljes mintájáért használhatja a [Microsoft Power BI Embedded mintát](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
-Egy alkalmazásminta a [céges beágyazási mintában](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) érhető el.
+Egy alkalmazásminta a [céges beágyazási mintában](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) érhető el.
 
 ### <a name="viewshomeembeddashboardcshtml"></a>Views\Home\EmbedDashboard.cshtml
 
@@ -436,7 +436,7 @@ Egy alkalmazásminta a [céges beágyazási mintában](https://github.com/Micros
 
 ## <a name="next-steps"></a>Következő lépések
 
-* Egy mintaalkalmazás elérhető a GitHubon, hogy áttekinthesse. A fenti példák azon a mintán alapulnak. További információért tekintse meg a [céges beágyazási mintát](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+* Egy mintaalkalmazás elérhető a GitHubon, hogy áttekinthesse. A fenti példák azon a mintán alapulnak. További információért tekintse meg a [céges beágyazási mintát](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData).
 
 * További információ a JavaScript API-ról a [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) dokumentációjában található.
 
