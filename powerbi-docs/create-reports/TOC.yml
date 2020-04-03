@@ -15,7 +15,7 @@
           href: ../paginated-reports/paginated-reports-online-course.md
         - name: Többoldalas jelentés készítése és feltöltése
           href: ../paginated-reports/paginated-reports-quickstart-aw.md
-    - name: Minták
+    - name: Példák
       expanded: true
       items:
         - name: Power BI-minták beszerzése
@@ -42,7 +42,7 @@
           href: ../sample-supplier-quality.md
         - name: A Pénzügyi minta munkafüzet letöltése
           href: ../sample-financial-download.md
-    - name: Fogalmak
+    - name: Alapelvek
       expanded: true
       items:
         - name: Power BI-jelentések
@@ -305,7 +305,7 @@
               href: ../service-insights.md
             - name: Adatok optimalizálása gyors elemzésekhez
               href: ../service-insights-optimize.md
-        - name: Akadálymentesség
+        - name: Kisegítő lehetőségek
           items:
             - name: Akadálymentes Power BI-jelentések tervezése
               href: ../desktop-accessibility-creating-reports.md
@@ -317,8 +317,6 @@
               href: ../desktop-accessibility-keyboard-shortcuts.md
         - name: Oldalakra osztott jelentések
           items:
-            - name: 'Gyakorlati tesztkörnyezet: Többoldalas jelentés készítése'
-              href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
             - name: Adatok megadása közvetlenül többoldalas jelentésben
               href: ../paginated-reports/paginated-reports-enter-data.md
             - name: Beágyazott adatforrás létrehozása
