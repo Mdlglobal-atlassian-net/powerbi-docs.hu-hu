@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/13/2020
+ms.date: 03/31/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3812f16489d304912ec9574352897e1effb29d4a
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 54c3622b0a4dd6c690c2f22a0b93aed39e9d2799
+ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79201401"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80464630"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Adathalmazok kibővített metaadatainak használata (előzetes verzió)
 
@@ -24,6 +24,8 @@ A **bővített adathalmaz-metaadatok** funkció kibocsátásával sok ilyen korl
 
 
 A **bővített adathalmaz-metaadatok** stratégiai és alapvető funkció, mert a jövőben a Power BI működése is ezekre a metaadatokra fog épülni. A bővített adathalmaz-metaadatok előnyeit kihasználó további képesség például a Power BI-adathalmazok kezelésére szolgáló [XMLA olvasás/írás](https://docs.microsoft.com/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite), valamint az Analysis Services számítási feladatok Power BI-ba migrálása a funkciók új generációjának kihasználása érdekében.
+
+
 
 ## <a name="enable-enhanced-dataset-metadata"></a>A bővített adathalmaz-metaadatok engedélyezése
 
@@ -36,6 +38,9 @@ A rendszer a Power BI Desktop újraindítását kéri.
 ![Újraindítási kérés](media/desktop-enhanced-dataset-metadata/enhanced-dataset-metadata-02.png)
 
 Az előzetes funkció engedélyezése után a Power BI kísérletet tesz a korábbi metaadat-formátumot használó PBIX- és PBIT-fájlok frissítésére. 
+
+> [!IMPORTANT]
+> A **bővített adathalmaz-metaadatok** funkció engedélyezése a jelentések nem visszavonható frissítését eredményezi. A **bővített adathalmaz-metaadatok** engedélyezésekor a Power BI Desktoppal betöltött vagy létrehozott Power BI-jelentések mindegyike visszavonhatatlanul a bővített adathalmaz-metaadatok formátumára lesz konvertálva.
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 

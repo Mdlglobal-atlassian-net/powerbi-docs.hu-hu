@@ -1,37 +1,37 @@
 ---
-title: Csatlakozás a mintákhoz a Power BI szolgáltatásban
-description: Útmutató a minták telepítéséhez és felfedezéséhez a Power BI szolgáltatásban.
+title: A Kiskereskedelmi elemzési minta bemutatása
+description: Útmutató a Kiskereskedelmi elemzési minta telepítéséhez és megismeréséhez a Power BI szolgáltatásban és a Power BI Desktopban.
 author: maggiesMSFT
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 03/27/2020
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: c1fbd57f1c92c9900178eb212a1369d25fdf838a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: f18ec650167b7872cb332bc9ccd606f7ea1f7500
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762163"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404592"
 ---
-#  <a name="import-and-open-sample-packs-for-power-bi"></a>A Power BI-hoz készült mintacsomagok importálása és megnyitása
+# <a name="explore-the-retail-analysis-sample"></a>A Kiskereskedelmi elemzési minta bemutatása
 
 Ez az oktatóanyag az alábbi témákat mutatja be: 
-- Tartalomcsomag-minta importálása, a Power BI szolgáltatáshoz való hozzáadása, és a tartalom megnyitása. A *tartalomcsomagok* olyan típusú minták, ahol az adatkészlethez irányítópult és jelentés is mellékelve van. 
-- Nyissa meg a sample.pbix fájlt a Power BI Desktopban.
+- A Kiskereskedelmi elemzési tartalomcsomag-minta importálása, a Power BI szolgáltatáshoz való hozzáadása, és a tartalom megnyitása. A *tartalomcsomagok* olyan típusú minták, ahol az adatkészlethez irányítópult és jelentés is mellékelve van. 
+- Nyissa meg a Kiskereskedelmi elemzési minta .pbix-fájlját a Power BI Desktopban.
 
 További háttérinformációkat [A Power BI-hoz használható mintaadathalmazok](sample-datasets.md) témakörben talál. Abban a cikkben megismerkedhet a mintákkal, azok beszerzésével, mentési helyével, használatával, valamint az egyes mintákhoz kapcsolódó történetekkel. 
 
 ## <a name="prerequisites"></a>Előfeltételek
-A minták elérhetőek a Power BI szolgáltatáshoz és a Power BI Desktophoz is. A lépésekhez a Kiskereskedelmi elemzési mintát fogjuk használni.
+A minták elérhetőek a Power BI szolgáltatáshoz és a Power BI Desktophoz is. A leírás követéséhez a Kiskereskedelmi elemzési mintát használhatja.
 
 Az ebben az oktatóanyagban használt *Kiskereskedelmi elemzési* minta tartalomcsomag irányítópultot, jelentést és adatkészletet is tartalmaz.
 Annak érdekében, hogy megismerkedhessen ezzel a tartalomcsomaggal és annak felhasználási helyzetével, tekintse meg a [Kiskereskedelmi elemzési minta – Power BI: Bemutató](sample-retail-analysis.md) témakört a kezdés előtt.
 
-## <a name="samples-in-the-power-bi-service"></a>Minták a Power BI szolgáltatásban
+## <a name="import-the-sample-in-the-power-bi-service"></a>A minta importálása a Power BI szolgáltatásban
 
 1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), jelentkezzen be, majd nyissa meg azt a munkaterületet, ahol a mintát szeretné menteni. 
 
@@ -94,7 +94,7 @@ Most vizsgálja meg saját maga is az irányítópultot, az adatkészletet és a
      
     ![Megállapítási jelentés](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
-## <a name="samples-in-power-bi-desktop"></a>Minták a Power BI Desktopban 
+## <a name="download-the-sample-in-power-bi-desktop"></a>A minta letöltése a Power BI Desktopban 
 Amikor először nyitja meg a minta .pbix-fájlt a Power BI Desktopban, az Jelentés nézetben nyílik meg, amelyben bármennyi, vizualizációt tartalmazó jelentésoldalt megvizsgálhat, létrehozhat és módosíthat. A Jelentés nézet felülete nagyjából ugyanazzal a kialakítással rendelkezik, mint egy jelentés Szerkesztési nézete a Power BI szolgáltatásban. Többek között áthelyezheti a vizualizációkat, vagy másolhatja, beillesztheti és egyesítheti őket. 
 
 A jelentés Power BI szolgáltatásban végzett szerkesztésétől eltérően a Power BI Desktopban dolgozhat lekérdezésekkel is, és modellezheti az adatokat annak érdekében, hogy azok a legjobb elemzést tegyék lehetővé a jelentésekben. Ezután mentheti a Power BI Desktop-fájlt bárhová, ahová szeretné, legyen az a helyi lemez vagy a felhő.

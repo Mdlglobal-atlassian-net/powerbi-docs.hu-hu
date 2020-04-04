@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 986f35cd1c4f612b16374107487d0ca20c9c607e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a3c87a700df1c35596b6520cc64d9b580ccb74eb
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871249"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403409"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Oktatóanyag: Csatlakozás GitHub-adattárhoz a Power BI segítségével
 Ebben az oktatóanyagban valódi, GitHub szolgáltatásbeli adatokhoz csatlakozhat a Power BI segítségével, és automatikusan hozhat létre Power BI-irányítópultokat és -jelentéseket. A Power BI nyilvános adattárához (más néven *tárházához*) fog csatlakozni, hogy választ kapjon olyan kérdésekre, mint: Hány közreműködő dolgozik a nyilvános Power BI-tartalmon? kik a fő közreműködők, a hét mely napján történik a legtöbb közreműködés, és sok más kérdés. 
@@ -43,7 +43,7 @@ Az oktatóanyag követéséhez létre kell hoznia egy GitHub-fiókot, ha nincs m
 
 
 ## <a name="how-to-connect"></a>Csatlakozás
-1. Jelentkezzen be a Power BI szolgáltatásba (https://app.powerbi.com). 
+1. Jelentkezzen be a Power BI szolgáltatásba (`https://app.powerbi.com`). 
 2. A navigációs panelen válassza az **Alkalmazások**, majd az **Alkalmazások beszerzése** lehetőséget.
    
    ![Power BI – Alkalmazások letöltése](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 

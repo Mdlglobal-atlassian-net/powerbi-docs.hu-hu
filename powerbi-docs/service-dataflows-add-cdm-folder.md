@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5b6b8658e4480173c32a591c2fc763a238cfd13a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: f1e48fb2f20c531f4dc66e86d13b76f54165b81c
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73872695"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404769"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)
 
@@ -24,6 +24,7 @@ A Power BI-ban a vállalati Azure Data Lake Storage Gen2-ben tárolt Common Data
 
 Adatfolyamok CDM-mappákból való létrehozására az alábbi felsorolásban ismertetett korlátozások érvényesek:
 
+* Egy rendszergazdának csatlakoztatnia kell az ADLS Gen2-tárfiókot a Power BI-ban, hogy az használható legyen. Az ADLS Gen2-fiók Power BI-beli csatlakoztatásáról az [Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz](service-dataflows-connect-azure-data-lake-storage-gen2.md) című cikkből tájékozódhat.
 * Adatfolyamok CDM-mappákból való létrehozása *csak* az [új munkaterületi felületen](service-create-the-new-workspaces.md) érhető el. 
 * CDM-mappa Power BI-hoz adásához a mappát az eljáró felhasználónak [a CDM-mappára és annak fájljaira vonatkozó jogosultsággal](https://go.microsoft.com/fwlink/?linkid=2029121) kell rendelkeznie.
 * Ahhoz, hogy a Power BI-hoz adhassa őket, olvasási és végrehajtási jogosultsággal kell rendelkeznie a CDM-mappában lévő minden fájlra és mappára.
@@ -73,11 +74,11 @@ Az alábbiakban felsorolt szempontokat is érdemes figyelembe venni:
 
 **Power BI Desktop**-ügyfél csak akkor fér hozzá az Azure Data Lake Storage Gen2-tárfiókokban tárolt adatfolyamhoz, ha az adatfolyam tulajdonosa, vagy ha külön megadott jogosultsággal rendelkezik az adatfolyam CDM-mappájához. Figyelje meg a következő példát:
 
-1.  Anna új munkaterületet hoz létre, amelyet CDM-mappából létrehozott adatfolyamok tárolására konfigurál.
-2.  Dávid, aki szintén tagja az Anna által létrehozott munkaterületnek, a Power BI Desktop és az adatfolyam-összekötő használatával szeretne adatokhoz jutni az Anna által létrehozott adatfolyamból.
-3.  Dávid hibajelenséget tapasztal, ugyanis nem adták hozzá jogosult felhasználóként az adatfolyam data lake-beli CDM-mappájához.
+1.    Anna új munkaterületet hoz létre, amelyet CDM-mappából létrehozott adatfolyamok tárolására konfigurál.
+2.    Dávid, aki szintén tagja az Anna által létrehozott munkaterületnek, a Power BI Desktop és az adatfolyam-összekötő használatával szeretne adatokhoz jutni az Anna által létrehozott adatfolyamból.
+3.    Dávid hibajelenséget tapasztal, ugyanis nem adták hozzá jogosult felhasználóként az adatfolyam adattóbeli CDM-mappájához.
 
-    ![Hiba adatfolyam használatára tett kísérlet esetén](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
+  ![Hiba adatfolyam használatára tett kísérlet esetén](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
 A probléma megoldásához Dávidnak olvasási jogot kell adni a CDM-mappára és annak fájljaira. A CDM-mappákhoz való hozzáférés megadásáról [ez a cikk](https://go.microsoft.com/fwlink/?linkid=2029121) tartalmaz további információt.
 

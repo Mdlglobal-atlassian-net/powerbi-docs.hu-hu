@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3f0c95673bd6a9a5af2a828869f38d32440b617a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8124a80f471e33ebbd140a30d6a49e2a762206ee
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858868"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404122"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Emberi erőforrások minta a Power BI-hoz: Bemutató megtekintése
 
@@ -61,7 +61,7 @@ Az Emberi erőforrások mintát a Power BI Desktoppal való használatra terveze
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Excel-munkafüzet letöltése ehhez a mintához
 
-Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529780) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
+Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529780) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták vizsgálata az Excelben](sample-datasets.md#explore-excel-samples-inside-excel) című cikkben olvashat részletesen.
 
 ## <a name="new-hires"></a>Újonnan felvett alkalmazottak
 Elsőként vizsgáljuk meg az újonnan felvett alkalmazottakat.
@@ -161,7 +161,7 @@ Az irányítópult [Q&A-kérdésmezőjében](power-bi-tutorial-q-and-a.md) term�
 
    Észrevehető, hogy a legtöbb rossz választásnak bizonyult női alkalmazott 30 évnél fiatalabb.
 
-## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
+## <a name="next-steps-connect-to-your-data"></a>További lépések: Csatlakozás az adatokhoz
 Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
 
 Reméljük, hogy ez a bemutató segített megérteni a mintaadatok Power BI irányítópultok, Q&A és jelentések segítségével történő elemzését. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).

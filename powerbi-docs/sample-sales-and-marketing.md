@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 8085a6c8f5d0e7a2797ef6c5961b6083eb98f346
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: be4b51629eefe46cb1ecc528951fab9128874a6f
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73873810"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404628"
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Értékesítési és marketing minta a Power BI-hoz: Bemutató megtekintése
 
@@ -59,7 +59,7 @@ A mintát [.pbix-fájlként](https://download.microsoft.com/download/9/7/6/97679
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Excel-munkafüzet letöltése ehhez a mintához
 
-Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529785) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
+Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529785) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták vizsgálata az Excelben](sample-datasets.md#explore-excel-samples-inside-excel) című cikkben olvashat részletesen.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Mi olvasható le az irányítópultról?
 Kezdjük a bemutatót az irányítópulton, és tekintsük meg a csempéket, melyek rögzítése mellett döntött a marketingigazgató. A piaci részesedéssel, az eladásokkal és a cégről szóló véleményekkel kapcsolatos információk jelennek meg. Az adatok régió, időpont és versenytársak szerinti bontásban tekinthetők meg.
@@ -126,7 +126,7 @@ A jelentés 1. oldala a VanArsdel piaci részesedésére összpontosít.
 
 6. Tekintse meg a **% Units Market Share and % Units Market Share R12M by Month** vonaldiagramot. Ezen a havi piaci részesedés, illetve a 12 hónapos gördülő piaci részesedés látható. A gördülő havi adatok segítik a havi ingadozások simítását, és szemléltetik a hosszú távú trendeket. A **Total Category Volume by Segment** sávdiagramon a **Kényelem** és a **Moderálás** szegmenst kiválasztva megtekintheti, hogy mekkora az piaci részesedés ingadozása az egyes szegmensekben. A **Moderálás** szegmensben jóval nagyobb a piaci részesedés ingadozása.
 
-Még mindig nem tudjuk, hogy miért zuhant a piaci részesedés júniusban. Ezután ellenőrizze a jelentés **Hangulatelemzés** oldalát.
+Még mindig nem tudjuk, hogy miért zuhant a piaci részesedés júniusban. Most ellenőrizzük a jelentés **Hangulatelemzés** oldalát.
 
 ### <a name="sentiment-analysis-page"></a>A Hangulatelemzés oldal
 A jelentés 3. oldala a fogyasztói hangulatra koncentrál.

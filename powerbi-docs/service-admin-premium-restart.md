@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 8bb95da5383eedac57fb705f697a8481e934e379
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: ccc14cb041c5131d2cb06a8ad362b7054bcde857
+ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79202022"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80464708"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Prémium szintű Power BI-kapacitás újraindítása
 
@@ -30,7 +30,7 @@ A Power BI egyre fejlettebb módokon védi a prémium szintű kapacitások felha
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Biztonságos az újraindítási eljárás? Veszíthetek adatot?
 
-A kapacitásában lévő összes mentett adat, definíció, jelentés és irányítópult teljesen sértetlen marad az újraindítás során. Egy kapacitás újraindításának idejére a frissítési motor a legtöbb esetben minden folyamatban lévő ütemezett vagy alkalmi frissítést ideiglenesen leállít. Ezután ezek újraindulnak a Power BI-ba épített újrapróbálkozási logika miatt. A szolgáltatás újra megkísérli a frissítéseket, amikor a kapacitás elérhetővé válik. Előfordulhat, hogy a frissítések állapota nem változik a felhasználói felületen az újraindítási folyamat során. 
+A kapacitásában lévő összes mentett adat, definíció, jelentés és irányítópult teljesen sértetlen marad az újraindítás során. Egy kapacitás újraindításának idejére a frissítési motor a legtöbb esetben minden folyamatban lévő ütemezett vagy alkalmi frissítést ideiglenesen leállít, majd azok újraindulnak a Power BI beépített újrapróbálkozási logikája miatt. A szolgáltatás újra megkísérli a frissítéseket, amikor a kapacitás elérhetővé válik. Előfordulhat, hogy a frissítések állapota nem változik a felhasználói felületen az újraindítási folyamat során. 
 
 Ha a felhasználók az újraindítási folyamat során használják a kapacitást, elveszítik majd a nem mentett munkát. Az újraindítást követően a felhasználóknak frissítenie kell a böngészőt.
 
@@ -40,7 +40,7 @@ Kapacitás az alábbi lépésekben indítható újra.
 
 1. Keresse meg kapacitását a Power BI felügyeleti portáljának **Kapacitásbeállítások** lapján. 
 
-1. A kapacitás URL-címéhez fűzze hozzá a **CapacityRestart** *funkciójelzőt*: https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true.
+1. A kapacitás URL-címéhez fűzze hozzá a **CapacityRestart** *funkciójelzőt*: `https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true`.
 
 1. A **Speciális beállítások** > **KAPACITÁS ÚJRAINDÍTÁSA** alatt válassza a **Kapacitás újraindítása** lehetőséget.
 

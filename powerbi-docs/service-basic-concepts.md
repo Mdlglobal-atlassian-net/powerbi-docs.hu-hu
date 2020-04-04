@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f86b9ae056770240485ff1984be4714faec9dc83
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 280e29d90e956ba47de6a0ff80b6f29bc0f00a18
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207919"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404071"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>A Power BI szolgáltatás alapfogalmai tervezők számára
 
 Ez a cikk bevezetést nyújt a Power BI szolgáltatásba. Bemutatja a különböző összetevőket és azok együttműködését, és hogy ezek hogyan használhatók. A cikket a legjobban úgy használhatja, ha [regisztrál a Power BI szolgáltatásra](service-self-service-signup-for-power-bi.md), és [hozzáad néhány adatot](service-get-data.md). Tervezők esetén a munkafolyamat leggyakrabban azzal kezdődik, hogy jelentéseket hoznak létre a Power BI Desktopban. Ezt követően a jelentéseket közzéteheti a Power BI szolgáltatásban, ahol további módosításokat is végezhet rajtuk. A jelentéseken alapuló irányítópultokat ugyancsak a Power BI szolgáltatásban hozhatja létre. 
 
-Ha még nincsenek saját jelentései, a cikk használatához próbálja meg telepíteni a [Power BI minta-tartalomcsomagját](sample-datasets.md#the-power-bi-samples-as-content-packs).
+Ha még nincsenek saját jelentései, a cikk használatához próbálja meg telepíteni a [Power BI-minták](sample-datasets.md) egyikét.
 
 ![A Power BI szolgáltatás kezdőképernyője egy böngészőben](media/service-basic-concepts/power-bi-home-screen.png)
 
@@ -167,7 +167,7 @@ A munkafüzetek speciális típusú adathalmazok. Ha elolvasta a fenti **Adathal
 
 Ha Excel-fájlokhoz használja az **Adatok beolvasása** parancsot, lehetősége van *importálni* a fájlt, vagy pedig *csatlakozni* hozzá. Ha a Csatlakozás lehetőséget választja, a munkafüzet ugyanúgy jelenik meg a Power BI-ban, mint az Excel Online-ban. Az Excel Online-nal ellentétben azonban ebben az esetben néhány kiváló funkció segítségével rögzítheti a munkalapok egyes elemeit közvetlenül az irányítópulton.
 
-A Power BI-ban nincs lehetőség a munkafüzet szerkesztésére. Ha azonban módosításokra van szüksége, a Szerkesztés elemre kattintva kiválaszthatja, hogy az Excel Online-ban szeretné szerkeszteni a munkafüzetet, vagy megnyitja azt a számítógépen, az Excelben. A rendszer menti az összes módosítást a OneDrive-on található munkafüzetbe.
+A Power BI-ban nincs lehetőség a munkafüzet szerkesztésére. Ha azonban módosításokat kell elvégeznie, a Szerkesztés elemre kattintva kiválaszthatja, hogy az Excel Online-ban szeretné szerkeszteni a munkafüzetet, vagy megnyitja azt a számítógépen, az Excelben. A rendszer menti az összes módosítást a OneDrive-on található munkafüzetbe.
 
 ### <a name="dig-deeper"></a>További ismeretek
 * [Adatok lekérdezése Excel-munkafüzetből](service-excel-workbook-files.md)

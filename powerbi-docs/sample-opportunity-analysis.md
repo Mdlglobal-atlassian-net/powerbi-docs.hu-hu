@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d871fa15c999e5b6c83b0334d6c978b2ba3c9870
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4863bfe3d99a63fbf4ad49834e66ecb8fcaf5525
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858714"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404144"
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Lehetőségelemzési minta a Power BI-hoz: Bemutató megtekintése
 
@@ -66,7 +66,7 @@ Az Lehetőségelemzési mintát a Power BI Desktoppal való használatra terveze
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Excel-munkafüzet letöltése ehhez a mintához
 
-Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529782) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
+Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529782) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták vizsgálata az Excelben](sample-datasets.md#explore-excel-samples-inside-excel) című cikkben olvashat részletesen.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Mi olvasható le az irányítópultról?
 Az irányítópultot az értékesítési vezető azért hozta létre, hogy nyomon követhesse a számára legfontosabb mutatókat. Amint észrevesz valami érdekeset, a vezető az adott csempére kattintva meg tudja vizsgálni az adatokat:
@@ -133,7 +133,7 @@ Figyelje meg a következő részleteket:
 * Ha hónap szerint szűr (egy hónap kijelölésével a **Hónap** szeletelőben), látni fogja, hogy januárban nagy arányban várhatók Véglegesítés értékesítési fázisba kerülő üzleti lehetőségek, 75 millió dollárnyi faktorált bevétellel. Februárban ugyanakkor többnyire közepes méretű ügyletek lépnek majd a Megoldás és az Ajánlattétel értékesítési fázisba.
 * A faktorált bevétellel kapcsolatos számok az értékesítési szakasztól, a lehetőségek számától és az ügylet méretétől függően váltakoznak. Ha szeretne további összefüggéseket felfedezni, vegyen fel további szűrőket ezekhez a tényezőkhöz a jobboldali **Szűrők** panel használatával.
 
-## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
+## <a name="next-steps-connect-to-your-data"></a>További lépések: Csatlakozás az adatokhoz
 Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
 
 Reméljük, hogy ez a bemutató segített megérteni a mintaadatok Power BI irányítópultok, Q&A és jelentések segítségével történő elemzését. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).

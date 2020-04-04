@@ -6,15 +6,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 03/26/2020
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 810077e8c651d3d6faf91eecb6fd320c24a69d2f
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 63275e882d71cd5c47a9a10baf4f0975abc2a845
+ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488798"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80302457"
 ---
 # <a name="data-refresh-in-power-bi"></a>Adatfrissítés a Power BI-ban
 
@@ -92,7 +92,7 @@ A Power BI frissítési műveletei többféle frissítéstípusból állhatnak. 
 
 #### <a name="data-refresh"></a>Adatfrissítés
 
-A Power BI-felhasználók szempontjából az adatfrissítés általában azzal jár, hogy ütemezetten vagy igény szerint adatokat importálnak az eredeti adatforrásokból egy adathalmazba. Naponta több adathalmaz-frissítés is végrehajtható, és szükséges is lehet, ha a mögöttes adatforrás gyakran módosul. A Power BI megosztott kapacitásban lévő adathalmazokon naponta legfeljebb nyolc frissítést engedélyez. Ha az adathalmaz prémium szintű kapacitásban van, naponta legfeljebb 48 frissítést ütemezhet az adathalmaz beállításai között. További információt a cikk egy későbbi részében, az [Ütemezett frissítés konfigurálása](#configure-scheduled-refresh) című szakaszban talál.
+A Power BI-felhasználók szempontjából az adatfrissítés általában azzal jár, hogy ütemezetten vagy igény szerint adatokat importálnak az eredeti adatforrásokból egy adathalmazba. Naponta több adathalmaz-frissítés is végrehajtható, és szükséges is lehet, ha a mögöttes adatforrás gyakran módosul. A Power BI megosztott kapacitásban lévő adathalmazokon naponta legfeljebb nyolc frissítést engedélyez. Ha az adathalmaz prémium szintű kapacitásban van, naponta legfeljebb 48 frissítést ütemezhet az adathalmaz beállításai között. További információt a cikk egy későbbi részében, az [Ütemezett frissítés konfigurálása](#configure-scheduled-refresh) című szakaszban talál. Ha egy adathalmaz olyan Prémium szintű kapacitásban van, amelyen engedélyezve van az [XMLA-végpont](service-premium-connect-tools.md) az olvasáshoz/íráshoz, korlátlan számú frissítési művelet támogat a TMSL vagy PowerShell használatával végzett programozott konfigurálás során.
 
 Azt is fontos hangsúlyozni, hogy a napi frissítések megosztott kapacitásokra vonatkozó korlátozása az ütemezett és az API-frissítések számának összegére vonatkozik. Igény szerinti frissítést az adathalmaz menüjének **Azonnali frissítés** elemét választva is indíthat az alábbi képernyőképen látható módon. A frissítési korlátozás az igény szerinti frissítésekre nem vonatkozik. Azt is fontos megjegyezni, hogy a prémium szintű kapacitásban lévő adathalmazok esetében nincsenek az API-frissítésekre vonatkozó korlátozások. Ha saját frissítési megoldást szeretne készíteni a Power BI REST API-jával, az [Adathalmazok – Adathalmaz frissítése](/rest/api/power-bi/datasets/refreshdataset) című cikkből tájékozódhat.
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/03/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 5208c72016a148f86a119bdddd2bbd1f69d3456b
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 0804650149f98d7f63315025ffe3f8a1771ac2ef
+ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381031"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80302754"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Feliratkozás és mások feliratkoztatása jelentésekre és irányítópultokra a Power BI szolgáltatásban
 
@@ -96,7 +96,7 @@ A feliratkozás megszűnik, ha lejár a Pro-licence, ha az irányítópultot vag
 * A jelentésoldalakra való feliratkozás a jelentésoldal nevéhez kapcsolódik. Ha feliratkozik egy jelentésoldalra, majd átnevezi azt, akkor újra létre kell hoznia a feliratkozást.
 * Előfordulhat, hogy a szervezet konfigurált néhány beállítást az Azure Active Directory-ban, amelyek korlátozhatják a Power BI-ban az e-mail-előfizetések használatát.  A korlátozások körébe a teljesség igénye nélkül beletartoznak az erőforrások elérésekor a többtényezős hitelesítés és az IP-címtartomány korlátozásai.
 * Másoknak az élő kapcsolatot használó jelentésekre/irányítópultokra való e-mail-feliratkoztatása jelenleg csak akkor támogatott, ha többoldalas jelentést használ, amely lehetővé teszi, hogy a feliratkozást a biztonsági környezet használatával küldje el másoknak.
-* Az e-mailekre való feliratkozások a [Power BI-vizualizációk](developer/visuals/power-bi-custom-visuals.md) többségét nem támogatják.  Ez alól az egyetlen kivétel a [minősített](developer/visuals/power-bi-custom-visuals-certified.md) Power BI-vizualizációk esete.  
+* E-mail-feliratkozásokhoz csak alapértelmezett és [minősített Power BI-vizualizációk](developer/visuals/power-bi-custom-visuals.md) támogatottak.  
 * Az e-mailekre való feliratkozások jelenleg nem támogatják az R-alapú Power BI-vizualizációkat.  
 * Az e-mail-értesítések a jelentés szűrőinek és szeletelőinek alapértelmezett állapotait alkalmazva lesznek elküldve. Az alapértelmezéseknek a feliratkozás után végzett módosításai nem jelennek meg az e-mailben.  A többoldalas jelentések viszont támogatják ezt a képességet, és lehetővé teszik a specifikus paraméterértékek feliratkozásonkénti beállítását.
 * Kifejezetten az irányítópultokra való feliratkozások esetében bizonyos csempetípusok még nem támogatottak.  Ilyenek többek között a streamelési csempék, a videócsempék és az egyéni webes tartalomcsempék.     

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 03/27/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 852bdcdeb71f6dae555c37467145bad6b584e324
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: 1208a598c08b87d0e479e4d8901f880a5dfa6900
+ms.sourcegitcommit: dc18209dccb6e2097a92d87729b72ac950627473
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527624"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80361791"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Növekményes frissítés a Power BI-ban
 
@@ -136,7 +136,7 @@ Az *aktuális dátum* alapja a frissítés időpontjában érvényes rendszerdá
 >
 > Csökkentse a pontosságot egy olyan szintre, amely a frissítési gyakorisággal kapcsolatos követelmények vonatkozásában még elfogadható.
 >
-> Tervezzük az adatváltozás-észleléshez használható egyéni lekérdezések definiálásának támogatását. Ez segítene abban, hogy ne kelljen megőrizni az oszlopértéket.
+> Definiáljon egyéni lekérdezést az adatmódosításoknak az XMLA-végpont használatával történő észleléséhez és az oszlopérték megőrzésének teljes elkerüléséhez. Az alábbiakban további információkat találhat az adatváltozások észlelésére szolgáló egyéni lekérdezésekről.
 
 #### <a name="only-refresh-complete-periods"></a>Csak teljes időszakok frissítése
 
@@ -155,7 +155,7 @@ Ezután készen áll a modell frissítésére. Az első frissítés tovább tart
 
 ## <a name="query-timeouts"></a>Lekérdezési időtúllépések
 
-A [frissítéssel kapcsolatos hibák elhárítását tárgyaló cikkünk](https://docs.microsoft.com/power-bi/refresh-troubleshooting-refresh-scenarios) kitér rá, hogy a Power BI időtúllépés miatt leállíthatja a frissítési műveleteket. A lekérdezéseket emellett az adatforrás alapértelmezett időtúllépési beállítása is korlátozhatja. A legtöbb relációs forrás támogatja az időtúllépési érték M kifejezésben való felülbírálását. Az alábbi kifejezés például az [SQL Server data-access függvényével](https://msdn.microsoft.com/query-bi/m/sql-database) 2 órára állítja az időtúllépést. A szabályzatban megadott tartomány minden egyes időszaka elküld egy lekérdezést, mely tartalmazza ezt az időtúllépési beállítást.
+A [frissítéssel kapcsolatos hibák elhárítását tárgyaló cikkünk](refresh-troubleshooting-refresh-scenarios.md) kitér rá, hogy a Power BI időtúllépés miatt leállíthatja a frissítési műveleteket. A lekérdezéseket emellett az adatforrás alapértelmezett időtúllépési beállítása is korlátozhatja. A legtöbb relációs forrás támogatja az időtúllépési érték M kifejezésben való felülbírálását. Az alábbi kifejezés például az [SQL Server data-access függvényével](https://docs.microsoft.com/powerquery-m/sql-database) 2 órára állítja az időtúllépést. A szabályzatban megadott tartomány minden egyes időszaka elküld egy lekérdezést, mely tartalmazza ezt az időtúllépési beállítást.
 
 ```powerquery-m
 let
@@ -166,7 +166,89 @@ in
     #"Filtered Rows"
 ```
 
-## <a name="limitations"></a>Korlátozások
+## <a name="xmla-endpoint-benefits-for-incremental-refresh"></a>Az XMLA-végpont előnyei a növekményes frissítés szempontjából
 
-Jelenleg az [összetett modellek](desktop-composite-models.md) esetében a növekményes frissítés csak az SQL Server, az Azure SQL Database, az SQL Data Warehouse, az Oracle és a Teradata adatforrásokhoz támogatott.
+A prémium szintű kapacitáshoz tartozó [XMLA-végpontok](service-premium-connect-tools.md) engedélyezhetők az olvasási/írási műveletekhez, ami jelentős előnyökkel járhat a növekményes frissítésre nézve. Az XMLA-végpontokon keresztül végezhető frissítési műveletekre nem vonatkozik a [naponta 48 frissítést](refresh-data.md#data-refresh) megengedő korlátozás, és nem érvényes az [ütemezett frissítések időtúllépési korlátja](refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout), ez pedig hasznos lehet növekményes frissítés esetén.
 
+### <a name="refresh-management-with-sql-server-management-studio-ssms"></a>Frissítéskezelés az SQL Server Management Studio (SSMS) használatával
+
+Az XMLA-végpontok olvasásának/írásának engedélyezezése esetén az SSMS felhasználható a növekményes frissítési szabályzatok által generált partíciók megtekintésére és kezelésére.
+
+![Partíciók az SSMS-ben](media/service-premium-incremental-refresh/ssms-partitions.png)
+
+#### <a name="refresh-historical-partitions"></a>Előzménypartíciók frissítése
+
+Ez lehetővé teszi például, hogy egy olyan adott előzménypartíció frissítése, amely nem a növekményes tartományban van, visszamenőleges frissítést végezzen anélkül, hogy az összes előzményadatot frissítenie kellene.
+
+#### <a name="override-incremental-refresh-behavior"></a>Növekményes frissítési viselkedés felülbírálása
+
+Az SSMS használatával emellett a növekményes frissítések meghívásának módja is jobban szabályozható a [Táblázatos modell parancsnyelve (TMSL)](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) és a [Táblázatos objektummodell (TOM)](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current) használatával. Rákattinthat például a jobb gombbal egy táblára az SSMS Object Explorerben, majd kiválaszthatja a **Tábla feldolgozása** menüpontot. Ez után a **Szkript** gombra kattintva frissítési TMSL-parancsot generálhat.
+
+![A Szkript gomb a Tábla feldolgozása párbeszédpanelen](media/service-premium-incremental-refresh/ssms-process-table.png)
+
+A frissítési TMSL-parancsba beszúrhatja az alábbi paramétereket a növekményes frissítés alapértelmezett viselkedésének felülbírálásához.
+
+- **applyRefreshPolicy** – Ha egy táblához növekményes frissítési szabályzat van definiálva, az applyRefreshPolicy paraméter határozza meg, hogy ez a szabályzat alkalmazva legyen-e. Ha a szabályzat nincs alkalmazva, a feldolgozás teljes folyamata változatlanul hagyja a partíció-definíciókat, és a tábla minden partíciója teljesen frissítve lesz. Az alapértelmezett érték true (igaz).
+
+- **effectiveDate** – Egy növekményes frissítési szabályzatnak az alkalmazása esetén ismernie kell az aktuális dátumot az előzménytartomány és a növekményes tartomány mozgó intervallumainak meghatározásához. Az effectiveDate paraméter lehetővé teszi az aktuális dátum felülírását. Ez jól használható tesztelésre, bemutatókhoz és olyan üzleti helyzetekben, ahol az adatok egy múltbeli vagy jövőbeli dátumig vannak növekményesen frissítve (például a jövőre vonatkozó költségvetés esetében). Alapértelmezett értéke az [aktuális dátum](#current-date).
+
+```json
+{ 
+  "refresh": {
+    "type": "full",
+
+    "applyRefreshPolicy": true,
+    "effectiveDate": "12/31/2013",
+
+    "objects": [
+      {
+        "database": "IR_AdventureWorks", 
+        "table": "FactInternetSales" 
+      }
+    ]
+  }
+}
+```
+
+### <a name="custom-queries-for-detect-data-changes"></a>Egyéni lekérdezések adatváltozások észleléséhez
+
+A TMSL és/vagy TOM használatával felülbírálható a viselkedés az adatváltozások észlelésekor. Azon felül, hogy ezzel elkerülhető az utoljára frissített oszlopnak a memóriabeli gyorsítótárban való megőrzése, olyan megoldások is lehetővé válnak, ahol ETL-folyamatok egy konfigurációs/utasítási táblát készítenek elő azzal a céllal, hogy csak a frissítést igénylő partíciók legyenek megjelölve. Ez sokkal hatékonyabb növekményes frissítési folyamatot eredményezhet, amelyben csak a szükséges időszakok vannak frissítve, függetlenül attól, hogy milyen régen történt adatfrissítés.
+
+A pollingExpression lehet egy egyszerű M-kifejezés, vagy egy másik M-lekérdezés neve. Skalárértéket kell visszaadnia, és minden partícióhoz végre lesz hajtva. Ha a visszaadott érték eltér attól, ami az utolsó növekményes frissítéskor volt, a partíció teljes feldolgozásra lesz megjelölve.
+
+A következő példa a teljes 120 hónapos előzménytartományban vizsgálja a visszamenőleges módosításokat. Amiatt, hogy 10 év helyett 120 hónap van megadva, az adattömörítés esetleg kevésbé lesz hatékony, de így nem szükséges egy teljes évi előzményt frissíteni, ami nagyobb költséggel járna, ha egy hónapot is elég lenne frissíteni a visszamenőleges változások miatt.
+
+```json
+"refreshPolicy": {
+    "policyType": "basic",
+    "rollingWindowGranularity": "month",
+    "rollingWindowPeriods": 120,
+    "incrementalGranularity": "month",
+    "incrementalPeriods": 120,
+    "pollingExpression": "<M expression or name of custom polling query>",
+    "sourceExpression": [
+    "let ..."
+    ]
+}
+```
+
+## <a name="metadata-only-deployment"></a>Üzembe helyezés csak metaadatokkal
+
+Ha egy PBIX-fájlnak a Power BI Desktopból egy Power BI szolgáltatásbeli munkaterületre való közzétételekor már létezik azonos nevű adathalmaz, akkor a rendszer megerősítést kér a meglévő adathalmaz felülírásához.
+
+![Adathalmaz felülírásának megerősítése](media/service-premium-incremental-refresh/replace-dataset-prompt.png)
+
+Előfordulhat, hogy nem szeretné felülírni az adathalmazt, főleg növekményes frissítés esetén. Az adathalmaz a Power BI Desktopban sokkal kisebb lehet, mint a szolgáltatásban. Ha a szolgáltatásbeli adathalmazra növekményes frissítési szabályzat van alkalmazva, az több évnyi előzményadatot is tartalmazhat, amely elveszik, ha az adathalmazt felülírja. Az összes előzményadat frissítése órákig tarthat, és rendszerleállást okozhat a felhasználók számára.
+
+Érdemesebb inkább csak metaadatokkal végrehajtani az üzembe helyezést. Így az új objektumok az előzményadatok elvesztése nélkül helyezhetők el. Ha például új mértékeket vett fel, elég az új mértékeket üzembe helyeznie anélkül, hogy frissítenie kellene az adatokat, ezzel pedig sok időt takarít meg.
+
+Ha olvasásra/írásra van konfigurálva, az XMLA-végpont biztosítja a kompatibilitást az ezt megvalósító eszközökkel. Az ALM Toolkit például egy Power BI-adathalmazokhoz használható sémakülönbözeti eszköz, amely felhasználható arra, hogy csak metaadatokat helyezzen üzembe.
+
+Az ALM Toolkit legújabb verzióját az [Analysis Services Git-adattárból](https://github.com/microsoft/Analysis-Services/releases) töltheti le és telepítheti. A dokumentációra mutató hivatkozások és a támogathatóságra vonatkozó információk a Súgó szalagon keresztül érhetők el. A csak metaadatokkal végzett üzembe helyezés végrehajtásához végezzen összehasonlítást, és jelölje ki forrásként a futó Power BI Desktop-példányt, célként pedig a szolgáltatásban meglévő adathalmazt. Vizsgálja meg a megjelenő különbségeket, és hagyja ki a növekményes frissítési partíciók frissítést, vagy használja a Lehetőségek párbeszédpanelt a partíciók táblafrissítésekhez való megtartásához. A kijelölés ellenőrzésével biztosítsa a célmodell integritását, majd hajtsa végre a frissítést.
+
+![ALM Toolkit](media/service-premium-incremental-refresh/alm-toolkit.png)
+
+## <a name="see-also"></a>További információ
+
+[Adathalmaz-kapcsolat az XMLA-végponttal](service-premium-connect-tools.md)   
+[Frissítési forgatókönyvekkel kapcsolatos hibák elhárítása](refresh-troubleshooting-refresh-scenarios.md)   

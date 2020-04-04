@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 04/01/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 281d5b616b58fce4326e6d719502e443c249372a
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: 0f01a6da3bb0d829d396861814f71d33ba69f22f
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80403172"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80550921"
 ---
 # <a name="connect-to-project-online-data-through-power-bi-desktop"></a>Kapcsolódás Project Online-adatokhoz a Power BI Desktopon keresztül
 A Project Online-adatokhoz kapcsolódhat a Power BI Desktopon keresztül.
@@ -31,7 +31,10 @@ A Project Online-adatokhoz kapcsolódhat a Power BI Desktopon keresztül.
    
    Ha a Project Web App-hely címe a *https://\<bérlő_neve\>.sharepoint.com/sites/pwa* címhez hasonló, az OData-csatorna számára a *https://\<bérlő_neve\>.sharepoint.com/sites/pwa/\_api/Projectdata* címet adja meg.
    
-   Ebben a példában a `https://contoso.sharepoint.com/sites/pwa/default.aspx` címet használjuk.
+   Ebben a példában a következőket használjuk:
+
+    `https://contoso.sharepoint.com/sites/pwa/default.aspx`
+
 5. A Power BI Desktop megkéri, hogy jelentkezzen be az Office 365-fiókjával. Válassza a Szervezeti fiók elemet, és adja meg a hitelesítő adatait.
    
    ![](media/desktop-project-online-connect-to-data/image.png)

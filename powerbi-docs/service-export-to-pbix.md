@@ -6,20 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 04/01/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: de7a01f70d179237c45205447f564b3833db2156
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 15a4d88ac9de5d50caeb975afa8ad1758246031f
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881819"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80551081"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Jelentés letöltése a Power BI szolgáltatásból Power BI Desktop-fájlba (Előzetes verzió)
 A Power BI Desktopban közzétehet egy jelentést ( *.pbix*-fájlt) a helyi számítógépről a Power BI szolgáltatásban. A Power BI-jelentések az ellenkező irányban is működnek: Letöltheti őket a Power BI szolgáltatásból a Power BI Desktopba. A Power BI-jelentések kiterjesztése mindkét esetben .pbix.
 
-Néhány korlátozást és szempontot figyelembe kell venni – ezekről a cikk későbbi szakaszában lesz szó.
+Néhány korlátozást figyelembe kell venni – ezekről a cikk [Megfontolandó szempontok és hibaelhárítás](#considerations-and-troubleshooting) című szakaszában lesz szó.
 
 ![Fájl legördülő menü](media/service-export-to-pbix/power-bi-file-export.png)
 
@@ -55,6 +55,7 @@ A .pbix-fájlnak a Power BI szolgáltatásból történő letöltésekor figyele
 * Letöltött fájlok megnyitásához mindig a Power BI Desktop legújabb verzióját használja. A letöltött .pbix-fájlok olykor nem nyílnak meg a Power BI Desktop régebbi verzióiban.
 * Ha a rendszergazdája kikapcsolta az adatok letöltésének lehetőségét, akkor ez a funkció nem jelenik meg a Power BI szolgáltatásban.
 * Növekményes frissítéssel rendelkező adathalmazt nem lehet .pbix-fájlba letölteni.
+* Ha Power BI-jelentést hoz létre egy munkaterületen lévő adathalmaz alapján, majd egy másik munkaterületen teszi közzé, Ön és a felhasználói sem tudják majd letölteni azt. A letöltés funkció ilyen esetben jelenleg nem támogatott.
 
 ## <a name="next-steps"></a>Következő lépések
 Tekintse meg a **Guy in a Cube** csatorna erről a funkcióról szóló egyperces videóját:

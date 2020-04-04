@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 03/26/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1caa68ac00f9821979f741bf3266514fcb33c36a
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: f53f7a1e51ce1cb17c337569ba770ac2b5643d19
+ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381169"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80329667"
 ---
 # <a name="what-is-power-bi-premium"></a>Mi az a Power BI Premium?
 
-A Power BI Premium dedikált és továbbfejlesztett erőforrásokat biztosít vállalata számára a Power BI szolgáltatás futtatásához. Például:
+A Power BI Premiummal dedikált és magasabb szintű erőforrásokat szerezhet be vállalata számára, így a vállalati felhasználók jobb teljesítménnyel és válaszképességgel használhatják a Power BI szolgáltatást. Power BI Premium előfizetéssel Ön és a vállalata felhasználói többek között a következőkhöz férhetnek hozzá:
 
 > [!div class="checklist"]
 > * Nagyobb méretek és teljesítmény
@@ -29,13 +29,16 @@ A Power BI Premium dedikált és továbbfejlesztett erőforrásokat biztosít v�
 > * Régiónkénti adattárolás (Multi-Geo) támogatása
 > * Adatok megosztása bárkivel, felhasználónkénti licencek vásárlása nélkül
 
+
+![Adminisztrációs portál](media/service-premium-what-is/premium-admin-portal.png) 
+
 Ez a cikk a Power BI Premium fő funkcióit ismerteti. Ahol szükséges, megadjuk a részletesebb információkat nyújtó cikkekre mutató hivatkozásokat. A Power BI Proról és a Power BI Premiumról további információt a [Power BI díjszabása](https://powerbi.microsoft.com/pricing/) témakör _Power BI-funkciók összehasonlítása_ szakaszában talál.
 
 ## <a name="subscriptions-and-licensing"></a>Előfizetések és licencelés
 
 A Power BI Premium bérlői szintű Office 365-előfizetés, amely két SKU- (termékváltozat-) családban érhető el:
 
-- **P** termékváltozatok (P1-P3) beágyazáshoz és nagyvállalati funkciókhoz, havi vagy éves kötelezettségvállalással, havi számlázással. Ezek tartalmaznak egy licencet a Power BI jelentéskészítő kiszolgáló helyszíni telepítéséhez.
+- **P** termékváltozatok (P1-P5) beágyazáshoz és nagyvállalati funkciókhoz, havi vagy éves kötelezettségvállalással, havi számlázással. Ezek tartalmaznak egy licencet a Power BI jelentéskészítő kiszolgáló helyszíni telepítéséhez.
 
 - **EM** termékváltozatok (EM1-EM3) _szervezeti_ beágyazáshoz, éves kötelezettségvállalással, havi számlázással. Az EM1 és az EM2 SKU csak mennyiségi licenccsomagban érhető el. Ezek közvetlenül nem megvásárolhatók.
 
@@ -81,6 +84,8 @@ Az egyes Premium termékváltozatok (és a megfelelően méretezett A termékvá
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
+| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
 > [!NOTE]
@@ -229,13 +234,14 @@ További információ: [Power BI-licencelés](service-admin-licensing-organizati
 
 ## <a name="analysis-services-in-power-bi-premium-preview"></a>Power BI Prémium Analysis Services (előzetes verzió)
 
-A háttérben a nagyvállalatoknál már bizonyított Microsoft **Analysis Services Veripaq motor** működteti a Power BI-adathalmazokat. Az Analysis Services ügyfélkódtárakkal és a nyílt szabványú XMLA protokollt támogató API-kkal biztosítja a programozhatóságot és az ügyfélalkalmazások és -eszközök támogatását. A Power BI Premium-adathalmazok jelenleg *csak olvasási* műveleteket támogatnak Microsoftos és külső ügyfélalkalmazásoktól és eszközöktől, **XMLA-végpontokon** keresztül. 
+A háttérben a nagyvállalatoknál már bizonyított Microsoft **Analysis Services Veripaq motor** működteti a Power BI Premium-munkaterületeket és -adathalmazokat. Az Analysis Services ügyfélkódtárakkal és a nyílt szabványú XMLA protokollt támogató API-kkal biztosítja a programozhatóságot és az ügyfélalkalmazások és -eszközök támogatását. A Power BI Premium-kapacitások adathalmazainak számítási feladatai **XMLA-végponton** keresztül alapértelmezés szerint *csak olvasási* műveleteket támogatnak microsoftos és külső ügyfélalkalmazásoktól és eszközöktől. A kapacitás-rendszergazdák azt is eldönthetik, hogy letiltják vagy engedélyezik a végponton keresztüli *olvasási/írási* műveleteket.
 
-Az olyan Microsoft-eszközök, mint az SQL Server Management Studio és az SQL Server Profiler, valamint az olyan külső eszközök, mint a DAX Studio és az adatvizualizációs alkalmazások XMLA, DAX, MDX, DMV-k és TraceEventek használatával csatlakozhatnak a Premium-adathalmazokhoz és kérdezhetik le azokat. 
+Csak olvasási hozzáféréssel az olyan Microsoft-eszközök, mint az SQL Server Management Studio (SSMS) és az SQL Server Profiler, valamint az olyan külső eszközök, mint a DAX Studio és az adatvizualizációs alkalmazások XMLA, DAX, MDX, DMV-k és TraceEventek használatával csatlakozhatnak a Premium-adathalmazokhoz és kérdezhetik le azokat. Olvasási/írási hozzáféréssel az olyan vállalati adatmodellezési eszközök, mint az Analysis Services-projektbővítménnyel használt Visual Studio vagy a nyílt forráskódú Tabular Editor, adathalmazként helyezhetnek üzembe táblázatos modelleket egy prémium szintű munkaterületen. Az olyan eszközökkel pedig, mint az SSMS, a rendszergazdák a Táblázatos modell parancsnyelve (TMSL) használatával írhatnak szkripteket a metaadatok módosításához és a speciális adatfrissítési forgatókönyvekhez. 
+
+További információ: [Adathalmaz-kapcsolat az XMLA-végponttal](service-premium-connect-tools.md).
 
 ![SSMS](media/service-premium-what-is/connect-tools-ssms-dax.png)
 
-További információ: [Csatlakozás adathalmazokhoz ügyfélalkalmazásokkal és -eszközökkel](service-premium-connect-tools.md).
 
 ## <a name="next-steps"></a>Következő lépések
 

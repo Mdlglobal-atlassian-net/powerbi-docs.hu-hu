@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9338bc914c7f4e4afd826bcd3e3452e7c7a3ef35
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 403537f8cd18948c99cc4dffb911009771a8b806
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040444"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404733"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Adatfolyamok létrehozása és használata a Power BI-ban
 
@@ -32,7 +32,7 @@ Egy adatfolyam használata három fő lépésből áll:
 2. Az adatfolyamba behozni kívánt adatok frissítési gyakoriságának ütemezése
 3. Az adathalmaz kiépítése az adatfolyam és a Power BI Desktop használatával 
 
-A következő fejezetek sorra veszik ezeket a lépéseket, és ismertetik az egyes lépések végrehajtásához kínált eszközöket. Kezdjünk hozzá.
+A következő fejezetek sorra veszik ezeket a lépéseket, és ismertetik az egyes lépések végrehajtásához kínált eszközöket. Tegyük meg az első lépéseket!
 
 ## <a name="creating-a-dataflow"></a>Adatfolyam létrehozása
 Adatfolyam létrehozásához nyissa meg a Power BI szolgáltatást egy böngészőben, majd válasszon egy **munkaterületet** a bal oldali navigációs panelen (a *saját munkaterületen* nem érhetők el adatfolyamok a Power BI szolgáltatásban), ahogy az alábbi ábrán is látható. Új munkaterületet is létrehozhat, amelyben aztán létrehozhatja új adatfolyamát. 
@@ -150,9 +150,9 @@ Előfordulhat, hogy az adatfolyamok adatforrásaihoz való kapcsolódás problé
 
 * **Salesforce-összekötő** – Salesforce-próbafiók adatfolyamokkal való használata csatlakozási hibát eredményez, amely nem ad meg további információt. A probléma elkerülhető, ha éles vagy fejlesztői Salesforce-fiókot használ a teszteléshez.
 
-* **SharePoint-összekötő** – A SharePoint-webhely legfelső szintű címét kell megadnia, almappák és dokumentumok nélkül. Használhat például a következőhöz hasonló hivatkozást: https://microsoft.sharepoint.com/teams/ObjectModel/ 
+* **SharePoint-összekötő** – A SharePoint-webhely legfelső szintű címét kell megadnia, almappák és dokumentumok nélkül. Használhat például a következőhöz hasonló hivatkozást: `https://microsoft.sharepoint.com/teams/ObjectModel/` 
 
-* **JSON-fájlösszekötő** – jelenleg csak alapszintű hitelesítéssel csatlakozhat JSON-fájlhoz.  JSON-fájlhoz való csatlakozás az URL-ben megadott hitelesítő adatok használatával (például https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg...) jelenleg **nem** támogatott.  
+* **JSON-fájlösszekötő** – jelenleg csak alapszintű hitelesítéssel csatlakozhat JSON-fájlhoz.  JSON-fájlhoz való csatlakozás az URL-ben megadott hitelesítő adatok használatával (például `https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg`...) jelenleg **nem** támogatott.  
 
 * **Azure SQL Data Warehouse** – Az adatfolyamok jelenleg nem támogatják az Azure Active Directory (AAD) alapú hitelesítést az Azure SQL Data Warehouse esetén. Ebben az esetben használjon alapszintű hitelesítést.
 

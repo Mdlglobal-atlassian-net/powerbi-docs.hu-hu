@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 156b00c7f7287f12397afea422a38f3870d6c399
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 51c9b8a570abf2686abe9b26a4d9e111e8ef022a
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858399"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404641"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Szállítói minőségelemzési minta a Power BI-hoz: Bemutató megtekintése
 
@@ -62,7 +62,7 @@ A Szállítói minőségelemzési mintát a Power BI Desktoppal való használat
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Excel-munkafüzet letöltése ehhez a mintához
 
-Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529779) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták megtekintése magában az Excelben](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) című cikkben olvashat részletesen.
+Ha a minta adatforrását is szeretné megtekinteni, használja az [Excel-munkafüzetként](https://go.microsoft.com/fwlink/?LinkId=529779) letölthető változatát. A munkafüzet megtekinthető és módosítható Power View-lapokat tartalmaz. A nyers adatok megtekintéséhez engedélyezze az Adatok Elemzése bővítményeket, majd válassza a **Power Pivot > Kezelés** lehetőséget. A Power View és a Power Pivot bővítmények engedélyezéséről az [Excel-minták vizsgálata az Excelben](sample-datasets.md#explore-excel-samples-inside-excel) című cikkben olvashat részletesen.
 
 ## <a name="downtime-caused-by-defective-materials"></a>Hibás anyagok által okozott állásidő
 Nézzük meg a hibás anyagok által okozott állásidők elemzését, és hogy mely gyártók voltak a felelősek.  
@@ -147,7 +147,7 @@ Azokat az anyagokat kezelik a legjobban, amelyek a legkevesebb állásidőt okoz
 
    ![Q&A-kérdés: anyagtípus, év és összes üzemen kívüli perc megjelenítése](media/sample-supplier-quality/supplier13.png)
 
-   Megfigyelheti, hogy a nyersanyagok által okozott állásidők nagyjából megegyeztek 2013-ban és 2014-ben, dacára annak, hogy 2014-ben sokkal több nyersanyag volt hibás. Úgy tűnik, hogy 2014-ben a hibás nyersanyagok megnövekedett száma nem vonta maga után a hibás nyersanyagok által okozott állásidő növekedését.
+   Megfigyelheti, hogy a nyersanyagok által okozott állásidők nagyjából megegyeztek 2013-ban és 2014-ben, dacára annak, hogy 2014-ben sokkal több nyersanyag volt hibás. Úgy tűnik, hogy 2014-ben a hibás nyersanyagok megnövekedett száma nem vonta maga után a hibás nyersanyagok által okozott állásidő növekedését ebben az évben.
 
 ### <a name="compare-defects-to-downtime-month-to-month"></a>Hibák és állásidő összehasonlítása hónapról hónapra
 Nézzünk meg egy másik, szintén a hibák összesített számához kapcsolódó irányítópult-csempét.  
@@ -161,14 +161,14 @@ Nézzünk meg egy másik, szintén a hibák összesített számához kapcsolód�
     Nézzük meg, hogy ez maga után vont-e egy azonos mértékű növekedést az állásidő perceiben.  
 2. Írja be a keresőmezőbe a *total downtime minutes by month and year as a line chart* (állásidő összesített percei, hónapok és évek szerint, vonaldiagramként) kérdést.  
 
-   ![Kérdés: Állásidő összesített percei, hónapok és évek szerint, vonaldiagramként](media/sample-supplier-quality/supplier15.png)
+   ![Q&A-kérdés: Állásidő összesített percei, hónapok és évek szerint, vonaldiagramként](media/sample-supplier-quality/supplier15.png)
 
    Az állásidő perceinek júniusi és októberi ugrásszerű növekedésén kívül a hibák száma nem eredményezett jelentős növekedést az állásidőben. Ez azt mutatja, hogy jól kezeljük a hibás anyagokat.  
 3. A diagram irányítópultra való kitűzéséhez válassza a gombostű ikont ![Gombostű ikon](media/sample-supplier-quality/pin.png) a kérdésmező fölött.  
 4. A kiugró hónapok vizsgálatához tegyen fel különböző kérdéseket, például a *total downtime minutes in October by plant*(állásidő összesített percei októberben üzemek szerint) kérdést, hogy megnézze az októberi állásidő perceit anyagtípusok szerint, az üzemek helyszíne szerint, kategória szerint stb. 
 5. A bal felső sarokban válassza a **Kilépés a Q&A részből** lehetőséget az irányítópulthoz való visszatéréshez.
 
-## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Csatlakozás az adatokhoz
+## <a name="next-steps-connect-to-your-data"></a>További lépések: Csatlakozás az adatokhoz
 Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
 
 Reméljük, hogy ez a bemutató segített megérteni a mintaadatok Power BI irányítópultok, Q&A és jelentések segítségével történő elemzését. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).
