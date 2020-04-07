@@ -254,8 +254,14 @@
           items:
             - name: Csatlakozás a szolgáltatásokhoz alkalmazásokkal
               href: ../service-connect-to-services.md
+            - name: A COVID-19 USA-beli nyomon követésére szolgáló jelentés
+              href: service-connect-to-covid-19-tracking.md
+            - name: Jelentés a válsághelyzettel kapcsolatos kommunikációról
+              href: service-connect-to-crisis-communication-presence-report.md
             - name: GitHub
               href: ../service-connect-to-github.md
+            - name: Kórházi sürgősségi döntéstámogatási irányítópult
+              href: service-connect-to-health-emergency-response.md
             - name: Microsoft fenntarthatósági kalkulátor
               href: ../service-connect-to-microsoft-sustainability-calculator.md
             - name: Office365Mon
