@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 69f498239b80dd7445898528aeb09396d0046689
-ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
+ms.openlocfilehash: 4df77ee94ee72e2104b7964f1835b446bde6b676
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79526095"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621493"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Online kurzus: Többoldalas Power BI-jelentések egy nap alatt
 
@@ -88,6 +88,5 @@ Hamarosan közzé fogjuk tenni a PowerPoint-bemutatót és a gyakorlati laboroka
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
 - Oktatóanyag: [Lapszámozott jelentés létrehozása és feltöltése a Power BI szolgáltatásba](paginated-reports-quickstart-aw.md)
-- Üzemeltetett laborgyakorlat: [Többoldalas Microsoft Power BI-jelentés létrehozása](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

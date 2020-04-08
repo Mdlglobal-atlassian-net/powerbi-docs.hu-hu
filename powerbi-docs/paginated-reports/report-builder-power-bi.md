@@ -9,18 +9,16 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 5ef6068135e8adcbfd242ca4a6491396101d214e
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 0118bc427ce58f48d50b3e8ed4e918bf66c6e8fc
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78923011"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621525"
 ---
 # <a name="power-bi-report-builder"></a>Power BI Jelentéskészítő
 
  A Power BI Report Builderrel lapszámozott jelentéseket hozhat létre.  Lapszámozott jelentések tervezésekor létrehoz egy jelentésdefiníciót, amely megszabja, hogy milyen adatokat kell lekérni, honnan, és hol kell azokat megjeleníteni. A jelentés futtatásakor a jelentésfeldolgozó a megadott jelentésdefiníció és a lekért adatok a jelentés elrendezésével való egyesítésével létrehozza a jelentést. A jelentés előnézetét a Jelentéskészítőben tekintheti meg. Ezután közzéteheti a jelentést a Power BI szolgáltatásban.
-
-Próbálja ki a [Laborgyakorlat: Többoldalas Microsoft Power BI-jelentés létrehozása](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208) anyagot.
 
 Szívesebben tanulna videókból? Tekintse meg a Power BI fő programmenedzsere, Chris Finlan által vezetett, a Power BI lapszámozott jelentéseiről szóló videósorozatot YouTube-on.
 
@@ -30,13 +28,13 @@ A következő lapszámozott jelentés sor- és oszlopcsoportokat, értékgörbé
 
 ![Lapszámozott jelentés a Power BI szolgáltatásban](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-##  <a name="JumpStartReptCreation"></a> Jelentések hatékony készítése  
+##  <a name="jump-start-report-creation"></a><a name="JumpStartReptCreation"></a> Jelentések hatékony készítése  
  
 -   **Kezdje a Táblázat, a Mátrix vagy a Diagram varázslóval**. Hozzon létre egy adatforrás-kapcsolatot, mezők húzásával hozzon létre egy adathalmaz-lekérdezést, válasszon ki egy elrendezést és stílust, valamint szabja testre a jelentést.  
   
 -   **A Térkép varázslóval** olyan jelentéseket készíthet, amelyek összesített adatokat jelenítenek meg egy földrajzi vagy geometriai háttér előtt. A térképadatok lehetnek egy Transact-SQL-lekérdezés térbeli adatai vagy Shapefile formátumú Environmental Systems Research Institute, Inc. (ESRI-) adatok. Emellett egy Microsoft Bingből származó térképcsempét is beállíthat háttérnek.  
 
-##  <a name="DesignRept"></a> A jelentés megtervezése  
+##  <a name="design-your-report"></a><a name="DesignRept"></a> A jelentés megtervezése  
   
 -   **Lapszámozott jelentések létrehozása táblázattal, mátrixszal, diagrammal és szabad formátumú elrendezéssel.** Létrehozhat táblázatos jelentéseket oszlopalapú adatokhoz, mátrixjelentéseket (például kereszttáblás jelentéseket vagy kimutatásokat) összesített adatokhoz, valamint szabad formátumú jelentéseket minden máshoz. A jelentések további jelentéseket és diagramokat, valamint listákat, grafikákat és dinamikus webalkalmazások vezérlőit foglalhatják magukban.  
   
@@ -52,7 +50,7 @@ A következő lapszámozott jelentés sor- és oszlopcsoportokat, értékgörbé
   
 -   **Beágyazhat és hivatkozhat képeket** és egyéb erőforrásokat, így külső tartalmat is.  
   
-##  <a name="ManageRpt"></a> A jelentés kezelése  
+##  <a name="manage-your-report"></a><a name="ManageRpt"></a> A jelentés kezelése  
   
 -   **A jelentés definícióját mentheti** a számítógépen vagy a jelentéskészítő kiszolgálón, ahol kezelheti és megosztatja másokkal.  
   
@@ -63,5 +61,4 @@ A következő lapszámozott jelentés sor- és oszlopcsoportokat, értékgörbé
 ## <a name="next-steps"></a>Következő lépések
 
 - [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)
-- Próbálja ki a [Laborgyakorlat: Többoldalas Microsoft Power BI-jelentés létrehozása](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
 - Tekintse meg a Power BI fő programmenedzsere, Chris Finlan által vezetett, a [Power BI lapszámozott jelentéseiről szóló videósorozatot](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) YouTube-on

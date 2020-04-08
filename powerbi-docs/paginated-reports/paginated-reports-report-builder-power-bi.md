@@ -8,20 +8,18 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
-ms.openlocfilehash: 7ab9ac60e416502f69401fcea87a697f53176448
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: 924c2850efe1e9e09a8f6f350be616695ab061ea
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404789"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621557"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Mik a lapszámozott jelentések a Power BI Premiumban?
 
 A lapszámozott jelentések, melyek az SQL Server Reporting Services szabványos jelentéstípusát képviselik már régóta, mostantól elérhetők a Power BI szolgáltatásban. Ezek a jelentések kinyomtathatók vagy megoszthatók. Lapszámozottnak hívjuk őket, mert egy oldalon jól megjeleníthetők. Minden adatot egy táblázatban jelenítenek meg, akkor is, ha az több oldalon keresztül fut. Az oldalak elrendezése pontosan vezérelhető egészen az utolsó pixelig. A lapszámozott jelentések az SQL Server Reporting Services RDL-jelentéseinek technológiáján alapulnak. A Jelentéskészítő a lapszámozott jelentések létrehozásának különálló eszköze. 
 
 A lapszámozott jelentések számos oldalból állhatnak. Ez a jelentés például 563 oldalas. Mindegyik oldal pontosan egy számlát tartalmaz, valamint ismétlődő fejlécekből és élőlábakból áll.
-
-Próbálja ki a [Laborgyakorlat: Többoldalas Microsoft Power BI-jelentés létrehozása](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208) anyagot.
 
 ![Lapszámozott](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
@@ -87,5 +85,4 @@ További információ: [Feliratkozás és mások feliratkoztatása lapszámozott
 - [A Power BI Jelentéskészítő telepítése a Microsoft letöltőközpontból](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Oktatóanyag: Lapszámozott jelentés létrehozása](paginated-reports-quickstart-aw.md)
 - [Adatok megadása közvetlenül többoldalas jelentésben](paginated-reports-enter-data.md)
-- [Laborgyakorlat: Többoldalas Microsoft Power BI-jelentés létrehozása](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
-- [Oktatóanyag: Lapszámozott Power BI-jelentések beágyazása egy alkalmazásba az ügyfelek számára](../developer/embed-paginated-reports-customers.md).
+- [Oktatóanyag: Lapszámozott Power BI-jelentések beágyazása egy alkalmazásba az ügyfelek számára](../developer/embed-paginated-reports-customers.md)
