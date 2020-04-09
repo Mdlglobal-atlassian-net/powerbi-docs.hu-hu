@@ -137,12 +137,12 @@ Most adjunk hozzá egy harmadik dimenziót.
 
     A jelölőalakzat alakja megváltoztatható rombuszra, háromszögre vagy négyszögre. A különböző jelölőalakzatok használata az egyes vonalakhoz megkönnyíti a jelentés használóinak a vonalak (vagy területek) elkülönítését egymástól.
 
-1. Nyissa meg az Elemzés panelt ![Az Elemzés panel ikonjának képernyőképe.](media/power-bi-visualization-scatter/power-bi-analytics.png) további információk hozzáadásához a vizualizációhoz.  
-    - Adjon hozzá egy középérték-vonalat. Válassza a **Középérték-vonal** > **Hozzáadás** lehetőséget. Alapértelmezés szerint a Power BI az *Értékesítés Négyzetláb szerint* értékhez ad hozzá középérték-vonalat. Ez nem túl hasznos, mert láthatjuk, hogy 10 adatpont áll rendelkezésre, és tudjuk, hogy a középérték úgy jön létre, hogy mindegyik oldalon öt-öt adatpont található. Ehelyett váltsa a **Mérték** beállítást a *Teljes értékesítés %-os szórása* értékre.  
+1. Nyissa meg az Elemzés panelt, ![Az Elemzés panel ikonjának képernyőképe.](media/power-bi-visualization-scatter/power-bi-analytics.png) ahol további információkat adhat hozzá a vizualizációhoz.  
+    - Adjon hozzá egy középértékvonalat. Válassza a **Középérték-vonal** > **Hozzáadás** lehetőséget. Alapértelmezés szerint a Power BI az *Értékesítés Négyzetláb szerint* értékhez ad hozzá középérték-vonalat. Ez nem túl hasznos, mert láthatjuk, hogy 10 adatpont áll rendelkezésre, és tudjuk, hogy a középérték úgy jön létre, hogy mindegyik oldalon öt-öt adatpont található. Ehelyett váltsa a **Mérték** beállítást a *Teljes értékesítés %-os szórása* értékre.  
 
         ![A buborékdiagram képernyőképe a hozzáadott középérték-vonallal.](media/power-bi-visualization-scatter/power-bi-analytics-median.png)
 
-    - Szimmetrikus árnyékolást adhat hozzá annak megjelenítéséhez, hogy mely pontokon nagyobb az x tengelyen mért érték az y tengelyhez képest, és fordítva. Ha az Elemzés panelen bekapcsolja a szimmetrikus árnyékolást, Power BI szimmetrikusan jeleníti meg a pontdiagram hátterét az aktuális tengely alsó és felső határai alapján. Ez egy gyors módszer annak azonosítására, hogy egy adatpont melyik tengelymértéket részesíti előnyben, különösen akkor, ha az x és az y tengely tengelytartománya eltér.
+    - Szimmetrikus árnyékolást adhat hozzá annak megjelenítéséhez, hogy mely pontokon nagyobb az x tengelyen mért érték az y tengelyhez képest, és fordítva. Ha az Elemzés panelen bekapcsolja a szimmetrikus árnyékolást, a Power BI szimmetrikusan jeleníti meg a pontdiagram hátterét az aktuális tengely alsó és felső határai alapján. Ez egy gyors módszer annak azonosítására, hogy egy adatpont melyik tengelymértéket részesíti előnyben, különösen akkor, ha az x és az y tengely tengelytartománya eltér.
 
         a. Módosítsa a **Teljes értékesítés %-os szórása** beállítást a **Tavalyi bruttó nyereség (%)** értékre
 

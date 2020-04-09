@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: ee3cfec0c735ad52f9a036e75f61c1ab0400567b
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 043f27a2fb695811ac867689b4a63efdefded2e6
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75217812"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802049"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Vonalkód beolvasása saját eszközzel a Power BI mobilalkalmazásból
 Beolvashatja a való világbeli vonalkódokat, hogy közvetlenül a szűrt BI-adatokhoz jusson a Power BI mobilalkalmazásban.
@@ -21,9 +21,9 @@ Beolvashatja a való világbeli vonalkódokat, hogy közvetlenül a szűrt BI-ad
 
 A következőkre vonatkozik:
 
-| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | 
-|:--- |:--- |
-| iPhone | Android (telefon, táblagép) | 
+| ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![iPadek](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Android rendszerű telefon](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Android rendszerű táblagép](././media/mobile-apps-qr-code/android-logo-40-px.png) |
+|:--- |:--- |:--- |:--- |
+|iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |
 
 Tegyük fel, hogy az egyik munkatársa [megcímkézett egy vonalkódmezőt egy jelentésben a Power BI Desktopban](../../desktop-mobile-barcodes.md), majd megosztotta ezt a jelentést Önnel. 
 
@@ -55,18 +55,18 @@ Bárhogy is van, koppintson az ikonra, és megnyílik egy kisméretű menü úsz
 ## <a name="issues-with-scanning-a-barcode"></a>Problémák a vonalkód beolvasásakor
 Íme néhány üzenet, melyeket egy termék vonalkódjának beolvasásakor láthat.
 
-### <a name="couldnt-filter-report"></a>„Couldn’t filter report...” (Nem lehetett szűrni a jelentést...)
+### <a name="couldnt-filter-report"></a>„A jelentés szűrése nem sikerült...”
 A jelentés, amelynek a szűrését választotta olyan adatmodellen alapul, amely ezt a vonalkódértéket nem tartalmazza. A „mineral water” (ásványvíz) termék például nem szerepel a jelentésben.  
 
 ### <a name="allsome-of-the-visuals-in-the-report-dont-contain-any-value"></a>A jelentés vizualizációi vagy azok egy része semmilyen értéket sem tartalmaz
 A beolvasott vonalkódérték megtalálható a modellben, de a jelentés vizualizációi vagy azok egy része ezt az értéket nem tartalmazza, ezért a szűrés üres állapotot ad vissza. Próbáljon meg más jelentésoldalakon keresni, vagy szerkessze a jelentést a Power BI Desktopban, hogy tartalmazza ezt az értéket. 
 
-### <a name="looks-like-you-dont-have-any-reports-that-can-be-filtered-by-barcodes"></a>„Looks like you don’t have any reports that can be filtered by barcodes.” (Úgy tűnik, nem rendelkezik egyetlen, vonalkód alapján szűrhető jelentéssel sem.)
+### <a name="looks-like-you-dont-have-any-reports-that-can-be-filtered-by-barcodes"></a>„Úgy tűnik, hogy nem rendelkezik olyan jelentéssel, amelyet vonalkódok alapján lehetne szűrni.”
 Ez azt jelenti, hogy nincs egyetlen jelentés sem, amelyben engedélyezett lenne a vonalkódok használata. A vonalkódolvasó csak azokat a jelentéseket tudja szűrni, amelyekben van **Barcode** (Vonalkód) megjelölésű oszlop.  
 
 Győződjön meg róla, hogy Ön vagy a jelentés tulajdonosa **Barcode** (Vonalkód) címkével látott el egy oszlopot a Power BI Desktopban. További tudnivalók a [vonalkódmezők Power BI Desktopban való címkézéséről](../../desktop-mobile-barcodes.md)
 
-### <a name="couldnt-filter-report---looks-like-this-barcode-doesnt-exist-in-the-report-data"></a>„Couldn’t filter report - Looks like this barcode doesn't exist in the report data.” (Nem lehetett szűrni a jelentést – úgy tűnik ez a vonalkód nincs benne a jelentésadatokban.)
+### <a name="couldnt-filter-report---looks-like-this-barcode-doesnt-exist-in-the-report-data"></a>„A jelentés szűrése nem sikerült – Úgy tűnik, ez a vonalkód nem szerepel a jelentés adatai között.”
 A jelentés, amelynek a szűrését választotta olyan adatmodellen alapul, amely ezt a vonalkódértéket nem tartalmazza. A „mineral water” (ásványvíz) termék például nem szerepel a jelentésben. Beolvashat egy másik terméket, választhat másik jelentést (ha több jelentés is rendelkezésre áll), vagy megtekintheti a jelentést szűrés nélkül. 
 
 ## <a name="next-steps"></a>Következő lépések

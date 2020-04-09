@@ -24,7 +24,7 @@ Az importálási modellekbe töltött tömörített és optimalizált adatok, a 
 A VertiPaq tárolási összetevő által elért hatékonyság mellett is fontos a modellbe betöltött adatmennyiség minimalizálására törekedni. Ez különösen így van a nagy modellek vagy olyan modellek esetén, amelyek idővel várhatóan nagyra növekednek. Emellett szól egyebek mellett as következő négy meggyőző érv:
 
 - A kapacitás esetleg nem támogatja a nagyobb méretű modelleket. A megosztott kapacitások legfeljebb 1 GB, a prémium szintű kapacitások legfeljebb 13 GB méretű modellt képesek üzemeltetni. További információt a [Nagyméretű adathalmazok Power BI Premium-támogatása](../service-premium-large-datasets.md) című cikk kínál.
-- A kisebb modellek csökkentik a kapacitás erőforrásai, elsősorban a memória iránti igényt. Így több modell hosszabb időtartam alatt tölthető be egyidejűleg, csökkentve a kiürítések számát. További információ: [Prémium szintű kapacitások kezelése](../service-premium-capacity-manage.md).
+- A kisebb modellek csökkentik a kapacitás erőforrásai, elsősorban a memória iránti igényt. Így egyszerre több modell hosszabb időre tölthető be, csökkentve a kiürítések számát. További információ: [Prémium szintű kapacitások kezelése](../service-premium-capacity-manage.md).
 - Kisebb modellekkel gyorsabb adatfrissítés érhető el, ez pedig a jelentéskészítés kisebb késését és az adathalmaz gyorsabb frissítését eredményezi, valamint kevésbé terheli a forrásrendszer és a kapacitás erőforrásait.
 - A táblák sorainak alacsonyabb száma a számítások gyorsabb kiértékelését eredményezi, ez pedig a teljesítmény általános javulásában mutatkozhat meg.
 
