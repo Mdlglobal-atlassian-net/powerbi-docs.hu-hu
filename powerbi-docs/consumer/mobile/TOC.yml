@@ -60,6 +60,8 @@
               href: mobile-apps-view-phone-report.md
             - name: Helyszíni jelentések megtekintése a mobilalkalmazásokban
               href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+            - name: 'Védelem a Face ID, a Touch ID, PIN-kód vagy ujjlenyomat-azonosító használatával'
+              href: mobile-native-secure-access.md
             - name: Tartalomhoz való hozzáférés külső szervezetből (B2B)
               href: mobile-apps-b2b.md
             - name: QR-kód szkennelése a Power BI számára a telefonnal
@@ -76,8 +78,6 @@
           items:
             - name: Első lépések az iOS-alkalmazással
               href: mobile-iphone-app-get-started.md
-            - name: 'Védelem a Face ID, a Touch ID vagy PIN-kód használatával'
-              href: mobile-ios-native-secure-access.md
             - name: Q&A virtuális elemző az iOS-es mobilalkalmazásokban
               href: mobile-apps-ios-qna.md
             - name: Power BI mobilalkalmazás-integráció Siri-parancsikonokkal
@@ -90,6 +90,10 @@
           items:
             - name: Első lépések az Android-alkalmazással
               href: mobile-android-app-get-started.md
+            - name: Android-alkalmazások parancsikonjainak használata
+              href: mobile-app-quick-access-shortcuts.md
+            - name: Tartalom keresése és elérése a Google Search szolgáltatással
+              href: mobile-app-find-access-google-search.md
             - name: A „vállalati SSL-tanúsítványa nem megbízható” hiba elhárítása
               href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
             - name: A „frissíteni kell az Android System Webview alkalmazást” hiba elhárítása
