@@ -2,18 +2,17 @@
 title: A Power BI alkalmazáskonfigurációs beállításai
 description: A Power BI viselkedésének testreszabása MDM-eszközzel
 author: paulinbar
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/07/2020
+ms.date: 04/05/2020
 ms.author: painbar
-ms.openlocfilehash: 1991381f8b2917fe3bc61a8be22fbdf44e706d71
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: ce147be4c23b738e1a09296a5d798fb0f94efe13
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79205550"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802026"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>A Power BI alkalmazás távoli konfigurálása mobileszköz-kezelési (MDM-) eszközzel
 
@@ -22,7 +21,7 @@ Az iOS és az Android rendszerhez készült Power BI Mobile alkalmazás olyan be
 A Power BI Mobile alkalmazás a következő konfigurációs forgatókönyveket támogatja:
 
 * Jelentéskészítő kiszolgáló konfigurálása (iOS és Android)
-* Adatvédelmi beállítások (iOS)
+* Adatvédelmi beállítások (iOS és Android)
 * Interakciós beállítások (iOS és Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>A jelentéskészítő kiszolgáló konfigurálása (iOS és Android)
@@ -36,13 +35,16 @@ Az iOS és Android rendszerhez készült Power BI alkalmazással a rendszergazd�
 | com.microsoft.powerbi.mobile.ServerDisplayName | Sztring | [nem kötelező]<br><br>Az alapértelmezett érték „Report server” („Jelentéskészítő kiszolgáló”)<br><br>Az alkalmazásban használt rövid név a kiszolgáló azonosítására. |
 | com.microsoft.powerbi.mobile.OverrideServerDetails | Logikai érték | [nem kötelező]<br><br>Az alapértelmezett érték True (Igaz). Ha értéke True (Igaz), felülbírálja a Jelentéskészítő kiszolgálónak a mobileszközön lévő definícióját. A már konfigurált meglévő kiszolgálók törölve lesznek. A felülbírálás True értékre állítása azt is megakadályozza, hogy a felhasználó eltávolítsa ezt a konfigurációt.<br><br>Ha „False” (Hamis) értéket használ, akkor a leküldött értékek hozzáadódnak, a már meglévő beállítások pedig megmaradnak. Ha az adott kiszolgálói URL-cím már konfigurálva van a mobilalkalmazásban, akkor az alkalmazás ezt a konfigurációt változatlanul hagyja. Az alkalmazás nem kéri fel a felhasználót, hogy újra hitelesítse magát ugyanazon a kiszolgálón. |
 
-## <a name="data-protection-settings-ios"></a>Adatvédelmi beállítások (iOS)
+## <a name="data-protection-settings-ios-and-android"></a>Adatvédelmi beállítások (iOS és Android)
 
-Az iOS-hez készült Power BI alkalmazással a rendszergazdák testreszabhatják a biztonsági és adatvédelmi beállítások alapértelmezett konfigurációját. Megkövetelheti a felhasználóktól, hogy Face ID-t, Touch ID-t vagy hitelesítő kódot használjanak a Power BI alkalmazáshoz.
+Az iOS-hez és Androidhoz készült Power BI mobilalkalmazással a rendszergazdák testreszabhatják a biztonsági és adatvédelmi beállítások alapértelmezett konfigurációját. iOS rendszeren megkövetelheti a felhasználóktól, hogy Face ID-t, Touch ID-t vagy hitelesítő kódot használjanak a Power BI mobilalkalmazáshoz. Android rendszeren megkövetelheti a felhasználóktól, hogy biometrikus hitelesítést használjanak (ujjlenyomat-azonosító).
 
 | Kulcs | Típus | Leírás |
 |---|---|---|
-| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Logikai érték | Az alapértelmezett érték False (Hamis). <br><br>Az alkalmazás használatához megkövetelhetők biometrikus adatok, például a TouchID vagy a FaceID használata. Ez esetben ezekre is szükség van a hitelesítésen felül.<br><br>Alkalmazásvédelmi szabályzatok használata esetén a Microsoft azt javasolja, hogy tiltsa le ezt a beállítást, így elkerülhetők a kettős hozzáférési kérelmek. |
+| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Logikai érték | Az alapértelmezett érték False (Hamis). <br><br>Az alkalmazás használatához megkövetelhető biometrikus adatok, például a TouchID vagy a FaceID (iOS) illetve ujjlenyomat-azonosító (Android) használata. Ez esetben ezekre is szükség van a hitelesítésen felül.<br><br>Alkalmazásvédelmi szabályzatok használata esetén a Microsoft azt javasolja, hogy tiltsa le ezt a beállítást, így elkerülhetők a kettős hozzáférési kérelmek. |
+
+>[!NOTE]
+>Az adatvédelmi beállítások csak a biometrikus hitelesítést támogató Android-eszközökön lesznek alkalmazva.
 
 ## <a name="interaction-settings-ios-and-android"></a>Interakciós beállítások (iOS és Android)
 
